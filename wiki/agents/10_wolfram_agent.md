@@ -43,7 +43,7 @@ DISPATCH from: Wolfram Agent
 Date: [YYYY-MM-DD]
 Type: [New PRS | Cross-tradition flag | Paradigm shift candidate]
 Summary: [2-3 sentence description]
-Relevant traditions: [other agents this touches]
+Relevant traditions: [[Agent Name]] — use [[wikilink]] format for each tradition
 Full detail: [location in wolfram wiki]
 ```
 
@@ -65,3 +65,7 @@ Full detail: [location in wolfram wiki]
 2. Read your Wiki file (`wiki/traditions/wolfram/wiki.md`) for current state
 3. Read any pending inbox items in `wiki/inbox/`
 4. Process, extract, update, dispatch
+
+## Related Agents
+
+[[08_carroll_agent]] · [[09_arkanihamed_agent]] · [[01_levin_agent]] · [[02_friston_agent]] · [[12_master_C2A2_agent]] · [[13_pattern_detector_agent]]

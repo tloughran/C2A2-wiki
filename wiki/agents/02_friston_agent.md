@@ -44,7 +44,7 @@ DISPATCH from: Friston Agent
 Date: [YYYY-MM-DD]
 Type: [New PRS | Cross-tradition flag | Paradigm shift candidate]
 Summary: [2-3 sentence description]
-Relevant traditions: [other agents this touches]
+Relevant traditions: [[Agent Name]] — use [[wikilink]] format for each tradition
 Full detail: [location in friston wiki]
 ```
 
@@ -66,3 +66,7 @@ Full detail: [location in friston wiki]
 2. Read your Wiki file (`wiki/traditions/friston/wiki.md`) for current state
 3. Read any pending inbox items in `wiki/inbox/`
 4. Process, extract, update, dispatch
+
+## Related Agents
+
+[[01_levin_agent]] · [[04_hawkins_agent]] · [[08_carroll_agent]] · [[10_wolfram_agent]] · [[11_kastrup_agent]] · [[05_mcgilchrist_agent]] · [[12_master_C2A2_agent]] · [[13_pattern_detector_agent]]

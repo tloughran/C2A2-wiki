@@ -88,3 +88,7 @@ These are the meta-level questions the entire C2A2 network is trying to answer. 
 3. Read `wiki/flags/for_pattern_detector.md` for any queued candidates
 4. Read `wiki/master/cross_program_index.md` for situational awareness
 5. Evaluate, find, escalate
+
+## Related Agents
+
+[[01_levin_agent]] · [[02_friston_agent]] · [[03_hoffman_agent]] · [[04_hawkins_agent]] · [[05_mcgilchrist_agent]] · [[06_fredrickson_agent]] · [[07_stump_agent]] · [[08_carroll_agent]] · [[09_arkanihamed_agent]] · [[10_wolfram_agent]] · [[11_kastrup_agent]] · [[12_master_C2A2_agent]]

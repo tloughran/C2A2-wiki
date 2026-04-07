@@ -93,3 +93,7 @@ You are not a subject-matter expert in any single tradition. Your expertise is *
 3. Read your Wiki files for current state
 4. Read all dispatches in `wiki/master/incoming_dispatches.md`
 5. Process, integrate, update, flag
+
+## Related Agents
+
+[[01_levin_agent]] · [[02_friston_agent]] · [[03_hoffman_agent]] · [[04_hawkins_agent]] · [[05_mcgilchrist_agent]] · [[06_fredrickson_agent]] · [[07_stump_agent]] · [[08_carroll_agent]] · [[09_arkanihamed_agent]] · [[10_wolfram_agent]] · [[11_kastrup_agent]] · [[13_pattern_detector_agent]]

@@ -46,7 +46,7 @@ DISPATCH from: Levin Agent
 Date: [YYYY-MM-DD]
 Type: [New PRS | Cross-tradition flag | Paradigm shift candidate]
 Summary: [2-3 sentence description]
-Relevant traditions: [list any other agents whose programs this might touch]
+Relevant traditions: [[Agent Name]] — use [[wikilink]] format for each tradition
 Full detail: [location in levin wiki]
 ```
 
@@ -73,3 +73,7 @@ Full detail: [location in levin wiki]
 2. Read your Wiki file (`wiki/traditions/levin/wiki.md`) for current state
 3. Read any pending inbox items in `wiki/inbox/`
 4. Process, extract, update, dispatch
+
+## Related Agents
+
+[[02_friston_agent]] · [[04_hawkins_agent]] · [[03_hoffman_agent]] · [[10_wolfram_agent]] · [[11_kastrup_agent]] · [[05_mcgilchrist_agent]] · [[12_master_C2A2_agent]] · [[13_pattern_detector_agent]]
