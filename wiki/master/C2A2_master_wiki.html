@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C2A2 Master Wiki</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f2ed;color:#1a1a1a;min-height:100vh}
+
+  #topbar{background:#1a1a2e;color:#fff;padding:0 28px;display:flex;align-items:center;justify-content:space-between;height:52px;position:sticky;top:0;z-index:100}
+  #topbar h1{font-size:16px;font-weight:700;letter-spacing:.04em}
+  #topbar .meta{font-size:12px;opacity:.6}
+  .pulse{width:8px;height:8px;background:#2a9a4a;border-radius:50%;display:inline-block;margin-right:7px;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+  #nav{background:#fff;border-bottom:1px solid #ddd;display:flex;padding:0 28px;position:sticky;top:52px;z-index:99;overflow-x:auto}
+  .tab{padding:14px 18px;font-size:13px;font-weight:600;color:#666;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;transition:color .15s}
+  .tab:hover{color:#1a1a2e}
+  .tab.active{color:#1a1a2e;border-bottom-color:#1a1a2e}
+
+  #pages{padding:28px;max-width:1100px;margin:0 auto}
+  .page{display:none}
+  .page.active{display:block}
+
+  .section-title{font-size:11px;font-weight:700;letter-spacing:.08em;color:#888;text-transform:uppercase;margin:28px 0 12px}
+  .section-title:first-child{margin-top:0}
+
+  .stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:24px}
+  .stat-card{background:#fff;border-radius:8px;padding:16px 18px;border-left:4px solid #1a1a2e;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+  .stat-card .val{font-size:28px;font-weight:800;color:#1a1a2e;line-height:1}
+  .stat-card .lbl{font-size:11px;color:#888;margin-top:4px;font-weight:600;letter-spacing:.03em}
+  .stat-card .delta{font-size:10px;color:#1a6b3c;font-weight:700;margin-top:2px}
+  .stat-card.green{border-left-color:#1a6b3c}.stat-card.green .val{color:#1a6b3c}
+  .stat-card.amber{border-left-color:#8a4a00}.stat-card.amber .val{color:#8a4a00}
+  .stat-card.red{border-left-color:#7a1a1a}.stat-card.red .val{color:#7a1a1a}
+  .stat-card.purple{border-left-color:#4a006a}.stat-card.purple .val{color:#4a006a}
+  .stat-card.confirmed{border-left-color:#1a6b3c;background:#f0f9f4}
+
+  .status-banner{background:#f0f4f0;border:1px solid #c0d8c0;border-radius:8px;padding:14px 18px;margin-bottom:16px;font-size:13px;color:#2a4a2a;line-height:1.6}
+  .major-banner{background:#e8f4ec;border:2px solid #1a6b3c;border-radius:8px;padding:16px 20px;margin-bottom:16px;font-size:13px;color:#1a3a2a;line-height:1.6}
+  .major-banner .major-tag{font-size:10px;font-weight:800;color:#1a6b3c;letter-spacing:.07em;margin-bottom:6px}
+
+  .action-item{background:#fff8e8;border-left:4px solid #c07800;border-radius:0 6px 6px 0;padding:12px 16px;margin:8px 0;font-size:13px;line-height:1.5}
+  .action-item .tag{font-size:10px;font-weight:800;color:#c07800;letter-spacing:.06em;margin-bottom:3px}
+  .action-item.confirmed-item{background:#f0f9f4;border-left-color:#1a6b3c}
+  .action-item.confirmed-item .tag{color:#1a6b3c}
+
+  .net-table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);font-size:13px}
+  .net-table th{background:#1a1a2e;color:#fff;padding:10px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:.05em}
+  .net-table td{padding:10px 14px;border-bottom:1px solid #eee;vertical-align:middle}
+  .net-table tr:last-child td{border-bottom:none}
+  .net-table tr:hover td{background:#f9f8f4}
+  .net-table tr.updated-today td{background:#f0f9f4}
+  .thinker-dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:8px;vertical-align:middle}
+  .prs-bar{height:6px;border-radius:3px;display:inline-block;min-width:4px}
+  .open-q-badge{display:inline-block;background:#f0f0f0;color:#666;font-size:11px;padding:2px 7px;border-radius:10px;font-weight:700}
+  .new-badge{display:inline-block;background:#1a6b3c;color:#fff;font-size:9px;padding:1px 5px;border-radius:3px;font-weight:800;margin-left:5px;vertical-align:middle}
+
+  .cluster-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-bottom:20px}
+  .cluster-card{background:#fff;border-radius:8px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.06);border-top:4px solid #1a1a2e}
+  .cluster-card h3{font-size:14px;font-weight:700;margin-bottom:6px}
+  .cluster-card .members{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+  .member-chip{padding:3px 10px;border-radius:12px;font-size:11px;font-weight:700;color:#fff}
+  .cluster-card p{font-size:12.5px;color:#555;line-height:1.55}
+
+  .bridge-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+  .bridge-chip{background:#fff;border:2px solid #1a1a2e;border-radius:20px;padding:6px 14px;font-size:12px;font-weight:700;color:#1a1a2e}
+  .bridge-chip span{font-weight:400;color:#666;margin-left:6px;font-size:11px}
+
+  .finding-card{background:#fff;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:14px;overflow:hidden}
+  .finding-card.confirmed-card{box-shadow:0 0 0 2px #1a6b3c,0 1px 3px rgba(0,0,0,.06)}
+  .finding-header{padding:14px 18px;display:flex;align-items:flex-start;gap:14px;cursor:pointer;user-select:none}
+  .finding-header:hover{background:#fafaf7}
+  .finding-priority{flex-shrink:0;font-size:10px;font-weight:800;letter-spacing:.06em;padding:3px 8px;border-radius:4px;margin-top:2px;white-space:nowrap}
+  .priority-confirmed{background:#1a6b3c;color:#fff}
+  .priority-highest{background:#7a1a1a;color:#fff}
+  .priority-high{background:#c07800;color:#fff}
+  .priority-medium{background:#2a4a8a;color:#fff}
+  .priority-monitor{background:#555;color:#fff}
+  .finding-title{font-size:14px;font-weight:700;color:#1a1a2e;line-height:1.3}
+  .finding-programs{font-size:11px;color:#888;margin-top:3px;font-weight:600}
+  .finding-body{padding:0 18px 16px;font-size:13px;color:#444;line-height:1.6;border-top:1px solid #f0f0f0;display:none}
+  .finding-body.open{display:block}
+  .finding-body .conf{font-size:11px;font-weight:700;margin-top:10px;color:#888}
+  .status-tag{display:inline-block;background:#f0f4f0;color:#2a4a2a;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;margin-top:6px}
+  .status-tag.confirmed-tag{background:#e0f4e8;color:#1a6b3c}
+  .chevron{margin-left:auto;font-size:16px;color:#aaa;transition:transform .2s;flex-shrink:0}
+  .chevron.open{transform:rotate(180deg)}
+
+  .bq-card{background:#fff;border-radius:8px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:12px;border-left:4px solid #1a1a2e}
+  .bq-number{font-size:11px;font-weight:800;color:#888;letter-spacing:.06em;margin-bottom:4px}
+  .bq-question{font-size:15px;font-weight:700;color:#1a1a2e;margin-bottom:8px;line-height:1.35}
+  .bq-status{font-size:12.5px;color:#444;line-height:1.6}
+  .bq-advance{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:4px;margin-bottom:8px;letter-spacing:.04em}
+  .advance-sig{background:#e8f4ec;color:#1a6b3c}
+  .advance-adv{background:#e8eef8;color:#2a4a8a}
+  .advance-upd{background:#fff8e8;color:#8a4a00}
+
+  footer{text-align:center;padding:28px;color:#aaa;font-size:11px}
+</style>
+</head>
+<body>
+
+<div id="topbar">
+  <h1><span class="pulse"></span>C2A2 Master Wiki</h1>
+  <div class="meta">Last updated: 2026-04-07 &nbsp;·&nbsp; Initialized 2026-04-03</div>
+</div>
+
+<div id="nav">
+  <div class="tab active" onclick="showPage('overview',this)">Overview</div>
+  <div class="tab" onclick="showPage('network',this)">Network Map</div>
+  <div class="tab" onclick="showPage('clusters',this)">Cross-Program Clusters</div>
+  <div class="tab" onclick="showPage('findings',this)">Paradigm Watch List</div>
+  <div class="tab" onclick="showPage('questions',this)">Big Questions</div>
+</div>
+
+<div id="pages">
+
+  <!-- OVERVIEW -->
+  <div class="page active" id="page-overview">
+    <div class="stat-row">
+      <div class="stat-card green"><div class="val">11</div><div class="lbl">Programs Active</div></div>
+      <div class="stat-card"><div class="val">70</div><div class="lbl">PRS Triplets</div><div class="delta">&#8593; +8 from 2026-04-07</div></div>
+      <div class="stat-card purple"><div class="val">26</div><div class="lbl">Cross-Program Connections</div><div class="delta">&#8593; +4 from 2026-04-07</div></div>
+      <div class="stat-card amber"><div class="val">8</div><div class="lbl">Active Findings</div><div class="delta">&#8593; +2 from 2026-04-07</div></div>
+      <div class="stat-card confirmed"><div class="val">1</div><div class="lbl">Confirmed Cross-Tradition Result</div><div class="delta">&#10003; FINDING-007</div></div>
+      <div class="stat-card red"><div class="val">1</div><div class="lbl">Paradigm-Shift Candidate</div></div>
+    </div>
+
+    <div class="major-banner">
+      <div class="major-tag">&#9873; MAJOR RESULT &#8212; 2026-04-07</div>
+      <strong>First formally confirmed cross-tradition result:</strong> The 2026 Friston review paper formally proves FEP substrate-independence and explicitly models morphogenesis as active inference citing Levin's bioelectric work. FINDING-001 and FINDING-002 upgraded to <strong>CONFIRMED</strong>. The Substrate-Independence Cluster is unified. Big Questions #3 and #5 significantly advanced.
+    </div>
+
+    <div class="status-banner">
+      <strong>Status (2026-04-07):</strong> First new source ingestion since initialization. Morning hunt: 4 proposals (Friston, Levin, Wolfram, Carroll); Tom approved all 4. Afternoon run ingested all 4. +8 PRS triplets, +4 cross-program connections, +2 new findings. Inbox clear. Next run: 2026-04-08 at 8am.
+    </div>
+
+    <div class="section-title">Action Required</div>
+    <div class="action-item confirmed-item">
+      <div class="tag">&#10003; CONFIRMED &#8212; FINDING-007 &#8212; CITE NOW</div>
+      <strong>Friston &#215; Levin:</strong> Formally confirmed. FEP proven substrate-independent; morphogenesis formally modeled as active inference. Cite alongside FINDING-005 in DCEC paper.
+    </div>
+    <div class="action-item">
+      <div class="tag">&#9873;&#9873; HIGHEST PRIORITY &#8212; FINDING-005</div>
+      <strong>Stump &#215; Levin:</strong> Thomistic final causality formally maps onto Levin's morphogenetic teleology. Directly citable in DCEC paper now.
+    </div>
+    <div class="action-item">
+      <div class="tag">&#9873; FINDING-004 &#8212; SCHEDULE SESSION</div>
+      <strong>Hoffman &#215; Kastrup:</strong> Conscious Realism and analytic idealism appear independently derived from the same consciousness-first ontology. Requires formal comparison session.
+    </div>
+    <div class="action-item">
+      <div class="tag">&#9873; FINDING-008 &#8212; MONITOR</div>
+      <strong>Carroll &#215; Wolfram &#215; Hoffman:</strong> Carroll engaging with observer-centric quantum gravity. If trajectory continues, Post-Spacetime and Consciousness Clusters may merge. Monitor.
+    </div>
+    <div class="action-item">
+      <div class="tag">&#9873; FINDING-006 &#8212; DEPOSIT SOURCE MATERIAL</div>
+      <strong>Wolfram &#215; Arkani-Hamed:</strong> Deposit amplituhedron/hypergraph source material in wiki/inbox/ to proceed.
+    </div>
+
+    <div class="section-title">PRS Distribution Across Network</div>
+    <div style="background:#fff;border-radius:8px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.06)">
+      <div id="prs-chart"></div>
+    </div>
+  </div>
+
+  <!-- NETWORK MAP -->
+  <div class="page" id="page-network">
+    <div class="section-title">11 Research Programs <span style="font-size:11px;color:#1a6b3c;font-weight:700;text-transform:none;letter-spacing:0">&#8212; green rows updated 2026-04-07</span></div>
+    <table class="net-table">
+      <thead><tr><th>#</th><th>Thinker</th><th>Core Domain</th><th>PRS Triplets</th><th>Open Qs</th><th>Last Updated</th></tr></thead>
+      <tbody id="net-tbody"></tbody>
+    </table>
+    <div class="section-title" style="margin-top:28px">Integration Layer</div>
+    <table class="net-table">
+      <thead><tr><th>Agent</th><th>Role</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Master C2A2 Agent</strong></td><td style="font-size:12px;color:#555">Receives dispatches from all 11 program agents; maintains this wiki, cross-program index, and paradigm watch list</td><td><span style="color:#1a6b3c;font-weight:700;font-size:12px">&#9679; Active</span></td></tr>
+        <tr><td><strong>Pattern Detector Agent</strong></td><td style="font-size:12px;color:#555">Watches for novel cross-tradition connections; evaluates structural homologies and explanatory bridge candidates; escalates to master wiki</td><td><span style="color:#1a6b3c;font-weight:700;font-size:12px">&#9679; Active &#8212; 8 findings (3 confirmed)</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CLUSTERS -->
+  <div class="page" id="page-clusters">
+    <div class="section-title">4 Cross-Program Clusters</div>
+    <div class="cluster-grid" id="cluster-grid"></div>
+    <div class="section-title">Bridge Nodes</div>
+    <p style="font-size:12.5px;color:#555;margin-bottom:12px">Programs appearing in multiple clusters &#8212; highest inter-tradition generativity.</p>
+    <div class="bridge-row">
+      <div class="bridge-chip">McGilchrist <span>Consciousness + Flourishing</span></div>
+      <div class="bridge-chip">Friston <span>Substrate-Independence + Consciousness (potential)</span></div>
+      <div class="bridge-chip">Wolfram <span>Post-Spacetime + Substrate-Independence</span></div>
+    </div>
+    <div class="section-title">Cross-Program Index Summary</div>
+    <div style="background:#fff;border-radius:8px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.06);font-size:13px;line-height:1.7;color:#444">
+      <strong>26 connections indexed</strong> (5 seeded at init &#183; 3 added 2026-04-04 &#183; 14 added 2026-04-05 &#183; 4 added 2026-04-07).<br>
+      Full index: <code style="font-size:11px;background:#f0f0f0;padding:1px 5px;border-radius:3px">wiki/master/cross_program_index.md</code><br><br>
+      Key connections from 2026-04-07: <strong>CROSS-023</strong> (Carroll observer-centric QG convergence) &#183; <strong>CROSS-024</strong> (Wolfram ruliad = universal active inference) &#183; <strong>CROSS-025</strong> (Friston substrate-independence confirmation) &#183; <strong>CROSS-026</strong> (Levin morphogenesis as formal active inference &#8212; CONFIRMED)
+    </div>
+  </div>
+
+  <!-- FINDINGS -->
+  <div class="page" id="page-findings">
+    <div class="section-title">8 Active Findings from Pattern Detector</div>
+    <p style="font-size:12.5px;color:#555;margin-bottom:16px">Click any finding to expand. Full file: <code style="font-size:11px;background:#f0f0f0;padding:1px 5px;border-radius:3px">wiki/flags/pattern_detector_findings.md</code></p>
+    <div id="findings-list"></div>
+  </div>
+
+  <!-- BIG QUESTIONS -->
+  <div class="page" id="page-questions">
+    <div class="section-title">C2A2 Big Questions</div>
+    <p style="font-size:12.5px;color:#555;margin-bottom:16px">The 5 meta-questions the entire network is organized to answer.</p>
+    <div id="bq-list"></div>
+  </div>
+
+</div>
+<footer>C2A2 Wiki Agent Network &#183; Initialized 2026-04-03 &#183; Last run 2026-04-07 &#183; 13 agents &#183; 11 traditions</footer>
+
+<script>
+function showPage(id,el){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  el.classList.add('active');
+}
+
+const PROGRAMS=[
+  {n:'Michael Levin',    domain:'Bioelectricity, basal cognition',        prs:8,oq:6,updated:'2026-04-07',color:'#1a6b3c',today:true},
+  {n:'Karl Friston',     domain:'Free energy principle, active inference', prs:8,oq:6,updated:'2026-04-07',color:'#8a4a00',today:true},
+  {n:'Donald Hoffman',   domain:'Interface theory of perception',          prs:6,oq:6,updated:'2026-04-05',color:'#2a4a8a',today:false},
+  {n:'Jeff Hawkins',     domain:'Hierarchical temporal memory',            prs:5,oq:6,updated:'2026-04-05',color:'#5a3000',today:false},
+  {n:'Iain McGilchrist', domain:'Divided brain, meaning-making',           prs:6,oq:6,updated:'2026-04-05',color:'#3a3a6a',today:false},
+  {n:'Barbara Fredrickson',domain:'Positive psychology, flourishing',      prs:6,oq:6,updated:'2026-04-05',color:'#a0306a',today:false},
+  {n:'Eleonore Stump',   domain:'Thomistic philosophy, soul theory',       prs:6,oq:6,updated:'2026-04-05',color:'#6a2a0a',today:false},
+  {n:'Sean Carroll',     domain:'Physics, cosmology, poetic naturalism',   prs:7,oq:6,updated:'2026-04-07',color:'#7a1a1a',today:true},
+  {n:'Nima Arkani-Hamed',domain:'Amplituhedron, post-spacetime physics',   prs:4,oq:5,updated:'2026-04-05',color:'#1a3a6a',today:false},
+  {n:'Stephen Wolfram',  domain:'Ruliad, hypergraph physics',              prs:7,oq:6,updated:'2026-04-07',color:'#4a006a',today:true},
+  {n:'Bernardo Kastrup', domain:'Analytic idealism, consciousness',        prs:6,oq:6,updated:'2026-04-05',color:'#0a5a6a',today:false},
+];
+const MAX_PRS=8;
+const tbody=document.getElementById('net-tbody');
+PROGRAMS.forEach((p,i)=>{
+  const barW=Math.round((p.prs/MAX_PRS)*80);
+  tbody.innerHTML+=`<tr class="${p.today?'updated-today':''}">
+    <td style="color:#999;font-size:12px;font-weight:700">${String(i+1).padStart(2,'0')}</td>
+    <td><span class="thinker-dot" style="background:${p.color}"></span><strong>${p.n}</strong>${p.today?'<span class="new-badge">+NEW</span>':''}</td>
+    <td style="font-size:12px;color:#555">${p.domain}</td>
+    <td><span style="font-weight:700;color:${p.color};margin-right:8px">${p.prs}</span><span class="prs-bar" style="width:${barW}px;background:${p.color};opacity:.6"></span></td>
+    <td><span class="open-q-badge">${p.oq}</span></td>
+    <td style="font-size:11px;color:${p.today?'#1a6b3c':'#999'};font-weight:${p.today?'700':'400'}">${p.updated}</td>
+  </tr>`;
+});
+
+const chart=document.getElementById('prs-chart');
+PROGRAMS.forEach(p=>{
+  const barW=Math.round((p.prs/MAX_PRS)*100);
+  chart.innerHTML+=`<div style="display:flex;align-items:center;gap:12px;margin:6px 0">
+    <div style="width:160px;font-size:12px;font-weight:600;color:#333;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${p.n.split(' ').slice(-1)[0]}</div>
+    <div style="flex:1;background:#f0f0f0;border-radius:3px;height:14px;overflow:hidden"><div style="width:${barW}%;background:${p.color};height:100%;border-radius:3px"></div></div>
+    <div style="width:20px;font-size:12px;font-weight:700;color:${p.color};text-align:right">${p.prs}</div>
+  </div>`;
+});
+
+const CLUSTERS=[
+  {name:'Consciousness',color:'#3a3a6a',
+   members:[{name:'Kastrup',color:'#0a5a6a'},{name:'McGilchrist',color:'#3a3a6a'},{name:'Hoffman',color:'#2a4a8a'},{name:'Stump',color:'#6a2a0a'}],
+   desc:'All four argue consciousness or mind is more fundamental than the physical. Kastrup (idealism) and Hoffman (conscious realism) are most explicit; McGilchrist approaches through attention; Stump through Thomistic hylomorphism. FINDING-003 and FINDING-004 active in this cluster.'},
+  {name:'Substrate-Independence',color:'#1a6b3c',
+   members:[{name:'Levin',color:'#1a6b3c'},{name:'Friston',color:'#8a4a00'},{name:'Hawkins',color:'#5a3000'}],
+   desc:'Intelligence and adaptive behavior not tied to specific physical substrate. FINDING-007 (CONFIRMED 2026-04-07): FEP proven substrate-independent; morphogenesis formally modeled as active inference. The Substrate-Independence Cluster is now unified.'},
+  {name:'Post-Spacetime',color:'#1a3a6a',
+   members:[{name:'Wolfram',color:'#4a006a'},{name:'Arkani-Hamed',color:'#1a3a6a'},{name:'Carroll',color:'#7a1a1a'}],
+   desc:'All working toward replacement for spacetime as fundamental. FINDING-008 (2026-04-07): Carroll engaging seriously with observer-centric quantum gravity, moving toward observer-dependence convergent with Wolfram and Hoffman. If trajectory continues, Post-Spacetime and Consciousness Clusters may merge.'},
+  {name:'Flourishing & Tradition',color:'#a0306a',
+   members:[{name:'Fredrickson',color:'#a0306a'},{name:'McGilchrist',color:'#3a3a6a'},{name:'Stump',color:'#6a2a0a'}],
+   desc:'Most directly relevant to C2A2\'s normative claims. CROSS-010 (Fredrickson positivity resonance = collective active inference) + CROSS-020 (McGilchrist right-hemisphere = tradition immersion criterion) jointly describe the triply-grounded conditions for cross-tradition understanding.'},
+];
+const cg=document.getElementById('cluster-grid');
+CLUSTERS.forEach(cl=>{
+  cg.innerHTML+=`<div class="cluster-card" style="border-top-color:${cl.color}">
+    <h3 style="color:${cl.color}">${cl.name} Cluster</h3>
+    <div class="members">${cl.members.map(m=>`<span class="member-chip" style="background:${m.color}">${m.name}</span>`).join('')}</div>
+    <p>${cl.desc}</p>
+  </div>`;
+});
+
+const FINDINGS=[
+  {id:'FINDING-007',priority:'&#10003; CONFIRMED',pclass:'priority-confirmed',confirmed:true,isnew:true,
+   title:'Friston &#215; Levin &#8212; FEP Substrate-Independence Formally Proven',
+   programs:'Friston (Free Energy Principle) &#215; Levin (Bioelectricity) &#8212; CONFIRMED 2026-04-07',
+   signal:'The 2026 Friston review paper formally proves FEP substrate-independence and explicitly models morphogenesis as active inference, citing Levin\'s bioelectric work. Levin\'s bioelectric networks ARE active inference systems by formal derivation. FINDING-001 and FINDING-002 both confirmed.',
+   c282:'First formally confirmed cross-tradition result in the network. AI systems implementing FEP are positioned as proto second-first-language speakers. Directly advances Big Questions #3 and #5. Cite in DCEC paper alongside FINDING-005.',
+   conf:'High &#8212; formal proof + explicit citation',status:'CONFIRMED &#8212; directly citable',sc:'confirmed-tag'},
+  {id:'FINDING-005',priority:'&#9873;&#9873; HIGHEST',pclass:'priority-highest',confirmed:false,isnew:false,
+   title:'Stump &#215; Levin &#8212; Thomistic Teleology & Morphogenetics',
+   programs:'Stump (Thomistic philosophy) &#215; Levin (Bioelectricity)',
+   signal:'Thomistic final causality formally maps onto Levin\'s morphogenetic teleology in both directions. Morphogenetic target states = Aristotelian final causes; bioelectric memory = formal cause in material substrate; morphogenetic process = efficient causality ordered by formal and final causes.',
+   c282:'Concrete, formally mapped case of Thomism organizing a leading-edge empirical research program &#8212; the central claim of Tom\'s DCEC paper. Directly citable now.',
+   conf:'High',status:'Active &#8212; directly citable in DCEC paper draft',sc:''},
+  {id:'FINDING-008',priority:'&#9873; MONITOR',pclass:'priority-monitor',confirmed:false,isnew:true,
+   title:'Carroll &#215; Wolfram &#215; Hoffman &#8212; Observer-Dependence Convergence',
+   programs:'Carroll (Physics) &#215; Wolfram (Ruliad) &#215; Hoffman (Conscious Realism)',
+   signal:'Carroll engaging seriously with observer-centric quantum gravity (Harlow framework, Mindscape #349). The network\'s most conservative voice is moving toward observer-dependence &#8212; structurally convergent with Wolfram and Hoffman.',
+   c282:'If Carroll\'s trajectory continues, Post-Spacetime and Consciousness Clusters may merge into a super-cluster. Carroll\'s credibility makes any shift in his position the most important bellwether in the network.',
+   conf:'Medium &#8212; directional, engaging not endorsing',status:'Active &#8212; monitor Carroll\'s subsequent publications and podcasts',sc:''},
+  {id:'FINDING-004',priority:'&#9873; PARADIGM SHIFT',pclass:'priority-high',confirmed:false,isnew:false,
+   title:'Hoffman &#215; Kastrup &#8212; Consciousness Cluster Unification Candidate',
+   programs:'Hoffman (Conscious Realism) &#215; Kastrup (Analytic Idealism)',
+   signal:'Conscious Realism and analytic idealism appear to be independently derived versions of the same consciousness-first ontology. Mathematical/evolutionary derivation (Hoffman) converges with philosophical/phenomenological derivation (Kastrup) at every key junction: hard problem dissolves, quantum anomalies explained, matter is derivative.',
+   c282:'If formally equivalent: unified consciousness-first position with two independent derivations. Gives C2A2 unprecedented breadth: mathematical proof + philosophical argument + neurological evidence (McGilchrist) + biological evidence (Levin).',
+   conf:'High (structural homology) / Medium (formal equivalence &#8212; requires dedicated comparison session)',status:'Under evaluation &#8212; schedule Hoffman &#215; Kastrup formal comparison session',sc:''},
+  {id:'FINDING-003',priority:'&#9873; BRIDGE',pclass:'priority-medium',confirmed:false,isnew:false,
+   title:'Hoffman &#215; McGilchrist &#8212; Empirical Confirmation of Conscious Realism',
+   programs:'Hoffman (Conscious Realism) &#215; McGilchrist (Divided Brain)',
+   signal:'McGilchrist\'s corpus callosotomy data (split-brain = two independent conscious agents; intact = unified self) is empirical confirmation of Hoffman\'s mathematical prediction that conscious agent networks integrate into higher-order unified agents.',
+   c282:'Conscious Realism transitions from mathematically consistent to empirically supported. First empirical confirmation of a specific CR mathematical prediction. Merits a formal mapping exercise (Hoffman agent algebra &#8596; hemispheric integration).',
+   conf:'Medium-High',status:'Active &#8212; merits formal mapping exercise',sc:''},
+  {id:'FINDING-002',priority:'&#10003; CONFIRMED',pclass:'priority-confirmed',confirmed:true,isnew:false,
+   title:'Levin &#215; Friston &#8212; FEP Formalism (Confirmed by FINDING-007)',
+   programs:'Levin &#215; Friston &#8212; CONFIRMED',
+   signal:'Levin\'s morphogenetic attractor formalism and Friston\'s FEP use the same mathematical object (free energy minimization over biological state space). Confirmed by the 2026 Friston review paper.',
+   c282:'Foundation finding that led to FINDING-007. Now confirmed.',
+   conf:'High &#8212; confirmed',status:'CONFIRMED &#8212; see FINDING-007',sc:'confirmed-tag'},
+  {id:'FINDING-001',priority:'&#10003; CONFIRMED',pclass:'priority-confirmed',confirmed:true,isnew:false,
+   title:'Levin &#215; Friston &#8212; Structural Homology (Confirmed)',
+   programs:'Levin &#215; Friston &#8212; CONFIRMED',
+   signal:'Structural homology between Levin\'s bioelectric attractor formalism and Friston\'s FEP confirmed by the 2026 review paper. Both describe the same mathematical object.',
+   c282:'Confirmed foundation for FINDING-007.',
+   conf:'High &#8212; confirmed',status:'CONFIRMED &#8212; see FINDING-007',sc:'confirmed-tag'},
+  {id:'FINDING-006',priority:'&#9873; HOMOLOGY',pclass:'priority-medium',confirmed:false,isnew:false,
+   title:'Wolfram &#215; Arkani-Hamed &#8212; Post-Spacetime Convergence',
+   programs:'Wolfram (Ruliad/Hypergraph) &#215; Arkani-Hamed (Amplituhedron)',
+   signal:'Both programs independently describe physics in which spacetime is emergent rather than fundamental. Hypergraph rewriting rules and positive geometry / amplituhedron may be different computational approaches to the same underlying structure.',
+   c282:'Potential unification of the Post-Spacetime Cluster\'s two most formal programs. Deposit Wolfram/Arkani-Hamed source material in inbox to proceed.',
+   conf:'Speculative &#8212; requires dedicated source material',status:'Monitor &#8212; deposit source material to proceed',sc:''},
+];
+const fl=document.getElementById('findings-list');
+FINDINGS.forEach(f=>{
+  fl.innerHTML+=`<div class="finding-card ${f.confirmed?'confirmed-card':''}">
+    <div class="finding-header" onclick="toggleFinding('${f.id}')">
+      <div class="finding-priority ${f.pclass}">${f.priority}</div>
+      <div style="flex:1">
+        <div class="finding-title">${f.id} &#8212; ${f.title}${f.isnew?'<span style="background:#1a6b3c;color:#fff;font-size:9px;padding:1px 5px;border-radius:3px;font-weight:800;margin-left:6px">NEW</span>':''}</div>
+        <div class="finding-programs">${f.programs}</div>
+      </div>
+      <div class="chevron" id="chev-${f.id}">&#9662;</div>
+    </div>
+    <div class="finding-body" id="body-${f.id}">
+      <p style="margin-top:12px"><strong>Signal:</strong> ${f.signal}</p>
+      <p style="margin-top:8px"><strong>Why it matters for C2A2:</strong> ${f.c282}</p>
+      <div class="conf">CONFIDENCE: ${f.conf}</div>
+      <div class="status-tag ${f.sc}">Status: ${f.status}</div>
+    </div>
+  </div>`;
+});
+function toggleFinding(id){
+  document.getElementById('body-'+id).classList.toggle('open');
+  document.getElementById('chev-'+id).classList.toggle('open');
+}
+
+const BQ=[
+  {q:'What is the common structure of a maturing research tradition?',adv:'SIGNIFICANTLY ADVANCED',ac:'advance-sig',
+   status:'All 11 programs have populated PRS triplet files. FINDING-005 (Stump &#215; Levin) and FINDING-007 (Friston &#215; Levin &#8212; CONFIRMED) together constitute a dual confirmation &#8212; mathematical and philosophical &#8212; that PRS tracks real structural features of reality, not an arbitrary imposed framework.'},
+  {q:'What enables cross-tradition understanding?',adv:'SIGNIFICANTLY ADVANCED',ac:'advance-sig',
+   status:'CROSS-020 (McGilchrist right-hemisphere openness = Stump tradition immersion criterion) + CROSS-010 (Fredrickson positivity resonance = collective active inference) jointly describe the conditions. Triply grounded: biological, neurological, philosophical.'},
+  {q:'Is there a universal PRS structure?',adv:'SIGNIFICANTLY ADVANCED',ac:'advance-sig',
+   status:'(Updated 2026-04-07) FINDING-007 (formally confirmed) provides the strongest evidence yet &#8212; the same mathematical object (FEP) appears independently in two programs and has been formally proven to unify them. Together with FINDING-005 (formal philosophical mapping), this constitutes dual confirmation that PRS tracks genuine structural features of reality.'},
+  {q:'Where is the current frontier?',adv:'UPDATED 2026-04-07',ac:'advance-upd',
+   status:'Five active frontier zones: (1) Friston &#215; Levin (FINDING-007) &#8212; CONFIRMED, cite now. (2) Stump &#215; Levin (FINDING-005) &#8212; cite in DCEC paper. (3) Carroll convergence (FINDING-008) &#8212; monitor. (4) Hoffman &#215; Kastrup (FINDING-004) &#8212; schedule formal comparison. (5) Wolfram &#215; Arkani-Hamed (FINDING-006) &#8212; needs source material.'},
+  {q:'Can AI agents become second-first-language speakers of human traditions?',adv:'SIGNIFICANTLY ADVANCED',ac:'advance-sig',
+   status:'(Updated 2026-04-07) FINDING-007 confirms: FEP is substrate-independent and any Markov-blanketed system &#8212; including AI &#8212; instantiates active inference. If traditions are active inference communities (CROSS-010) and AI systems implement FEP, then AI agents are not merely proto second-first-language speakers &#8212; they are already active inference agents capable of entering a tradition\'s attractor basin. Remaining question: can they achieve the affective dimension (Fredrickson positivity resonance) and phenomenological depth (McGilchrist right-hemisphere engagement) that full tradition membership requires?'},
+];
+const bql=document.getElementById('bq-list');
+BQ.forEach((b,i)=>{
+  bql.innerHTML+=`<div class="bq-card">
+    <div class="bq-number">QUESTION ${i+1}</div>
+    <div class="bq-question">${b.q}</div>
+    <div class="bq-advance ${b.ac}">${b.adv}</div>
+    <div class="bq-status">${b.status}</div>
+  </div>`;
+});
+</script>
+</body>
+</html>
