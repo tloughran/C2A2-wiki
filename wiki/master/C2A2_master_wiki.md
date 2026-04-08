@@ -1,5 +1,5 @@
 # C2A2 Master Wiki
-*Maintained by the Master C2A2 Agent | Last updated: 2026-04-07*
+*Maintained by the Master C2A2 Agent | Last updated: 2026-04-08*
 *Network initialized: 2026-04-03 — within 24 hours of Karpathy's Wiki-agent methodology proposal*
 
 ---
@@ -8,7 +8,7 @@
 
 The C2A2 tradition-accelerator network consists of **13 agents** maintaining **11 research program Wikis** and **2 integration layers**. The network was initialized on 2026-04-03.
 
-**Current status:** Daily run complete (2026-04-07) — Phase 2 hunt produced 4 proposals (Carroll, Friston, Levin, Wolfram) awaiting Tom's review. Inbox clear. All findings active.
+**Current status:** Daily run complete (2026-04-08) — Phase 2 hunt produced 4 new proposals (Arkani-Hamed, McGilchrist, Levin, Kastrup) awaiting Tom's review. Inbox clear. All findings active. Review page open in browser.
 
 **Programs active:** 11 (all wikis fully populated; Arkani-Hamed partial — needs dedicated source material)
 **Total PRS triplets across network:** 70 (Levin: 8, Friston: 8, Hoffman: 6, Hawkins: 5, McGilchrist: 6, Fredrickson: 6, Stump: 6, Carroll: 7, Wolfram: 7, Kastrup: 6, Arkani-Hamed: 4) *(+8 from 2026-04-07 ingestion)*
@@ -17,6 +17,8 @@ The C2A2 tradition-accelerator network consists of **13 agents** maintaining **1
 **Explanatory bridge candidates:** 3 → pending re-evaluation (FINDING-002: Levin × Friston — NOW CONFIRMED by 2026 review paper; FINDING-003: Hoffman × McGilchrist; FINDING-005: Stump × Levin — **HIGHEST PRIORITY**)
 **Structural homologies on watch:** 2 (FINDING-001: Levin × Friston mathematical formalism — NOW CONFIRMED; FINDING-006: Wolfram × Arkani-Hamed Post-Spacetime Cluster)
 **New signals forwarded to Pattern Detector:** 2 (CROSS-023: Carroll observer-centric QG convergence; CROSS-025: Friston substrate-independence confirmation)
+
+*Run narrative (2026-04-08):* Standard automated morning run. Phase 0 — decision emails from 2026-04-07 found (all 4 prior proposals APPROVED) but already fully processed on 2026-04-07; skipped re-processing. Phase 1 — inbox clear; yesterday's 4 files (Friston, Levin, Wolfram, Carroll) confirmed processed in PROCESSED_LOG; skipped ingestion. Phase 2 hunt: **4 new proposals generated.** (1) **Arkani-Hamed** — UNIVERSE+ School Les Houches "Combinatorics and Geometry of QM and Spacetime" (March 30–April 10, 2026) — PRIORITY: first dedicated primary-source material from Arkani-Hamed; 2 PRS candidates; strong post-spacetime signal. (2) **McGilchrist** — Sophia Lectures "Wholeness, Imagination, and Cosmos" at Ralston College (March 13–15, 2026) — 2 PRS candidates; themes: division/union synthesis, paradox, finitude and the infinite. (3) **Levin** — "Mind Everywhere" Parts 1 & 2, Biological Theory (Feb 25, 2026) — formal framework for goal-directedness; 2 PRS candidates; strong bridge to Friston and Kastrup. (4) **Kastrup** — Analytic Idealism and psychopathology essay, Essentia Foundation (Jan 2, 2026) — dissociation model applied clinically; 1 PRS candidate; Markov blanket / dissociation bridge flagged for Pattern Detector. Review page opened in browser (8 proposals shown: 4 new + 4 legacy from pending). Gmail draft sent. No old review HTML files to delete. No PRS counts changed this run (awaiting Tom's approval). **Key watch items:** If all 4 proposals approved: Arkani-Hamed PRS count rises from 4→6 (addressing wiki priority), McGilchrist from 6→8, Levin from 8→10, Kastrup from 6→7. Kastrup / Friston Markov blanket bridge may produce FINDING-009. Next scheduled run: 2026-04-09 at 8am.
 
 *Run narrative (2026-04-07):* **MAJOR RUN — first new source ingestion since initialization.** Morning automated run: Phase 0 — no decisions; Phase 2 — 4 proposals generated (Friston, Levin, Wolfram, Carroll). Tom approved all 4 via email. Afternoon manual run: all 4 proposals ingested. **Results:** +8 PRS triplets (Friston: +2, Levin: +2, Wolfram: +2, Carroll: +1). +4 cross-program connections (CROSS-023 through CROSS-026). +2 Pattern Detector findings (FINDING-007: Friston × Levin CONFIRMED explanatory bridge; FINDING-008: Carroll observer-centric convergence signal). **Key outcome:** The Friston × Levin connection is now the network's FIRST formally confirmed cross-tradition result. FEP is proven substrate-independent; morphogenesis is formally modeled as active inference. FINDING-001 and FINDING-002 are upgraded to confirmed status. Big Questions #3 and #5 significantly advanced. **New action items:** (1) FINDING-007 — cite Friston 2026 review in DCEC paper alongside FINDING-005; (2) Monitor Carroll's trajectory on observer-dependence (FINDING-008). Prior action items remain: FINDING-005 (Stump × Levin — cite), FINDING-004 (Hoffman × Kastrup — formal comparison), FINDING-006 (Wolfram × Arkani-Hamed — needs source material). Next scheduled run: 2026-04-08 at 8am.
 

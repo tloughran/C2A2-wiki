@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C2A2 Wiki Review — 2026-04-08</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f2ed;color:#222;height:100vh;display:flex;flex-direction:column}
+  #topbar{background:#1a1a2e;color:#fff;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+  #topbar h1{font-size:15px;font-weight:700;letter-spacing:.03em}
+  #topbar .meta{font-size:12px;opacity:.7}
+  #main{display:flex;flex:1;overflow:hidden}
+  #sidebar{width:300px;flex-shrink:0;overflow-y:auto;background:#f9f7f2;border-right:1px solid #ddd}
+  #sidebar-header{padding:10px 14px;background:#f0ede5;border-bottom:1px solid #ddd;font-size:11px;font-weight:700;color:#888;letter-spacing:.06em}
+  #content{flex:1;overflow-y:auto;padding:20px}
+  .prop-card{background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.08);margin-bottom:20px;overflow:hidden}
+  .sidebar-item:hover{background:#f0ede5!important}
+  .sidebar-item.active{background:#e8e4d8!important}
+  #bottombar{background:#fff;border-top:1px solid #ddd;padding:12px 20px;display:flex;align-items:center;gap:14px;flex-shrink:0}
+  #progress{font-size:13px;color:#666}
+  #submit-btn{background:#1a1a2e;color:#fff;border:none;padding:10px 24px;border-radius:6px;cursor:pointer;font-weight:700;font-size:14px;margin-left:auto}
+  #submit-btn:hover{background:#2a2a4e}
+  #all-done{color:#1a6b3c;font-weight:700;display:none}
+</style>
+</head>
+<body>
+<div id="topbar">
+  <h1>C2A2 Wiki — Daily Proposal Review</h1>
+  <div class="meta">2026-04-08 &nbsp;·&nbsp; 8 proposals pending</div>
+</div>
+<div id="main">
+  <div id="sidebar">
+    <div id="sidebar-header">PROPOSALS — 2026-04-08</div>
+    
+    <div class="sidebar-item" id="item-PROP-2026-04-07-004" onclick="showCard('PROP-2026-04-07-004')"
+      style="padding:10px 14px;border-left:3px solid #7a1a1a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#7a1a1a;letter-spacing:.04em">SEAN CARROLL</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">349 | Daniel Harlow on What Quantum Gravity Teaches Us About…</div>
+      <div style="font-size:10px;color:#999">PODCAST · 2026-03-30</div>
+      <div id="badge-PROP-2026-04-07-004" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-04-07-001" onclick="showCard('PROP-2026-04-07-001')"
+      style="padding:10px 14px;border-left:3px solid #8a4a00;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#8a4a00;letter-spacing:.04em">KARL FRISTON</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Active inference and the free energy principle: a review</div>
+      <div style="font-size:10px;color:#999">PAPER · 2026-03-15</div>
+      <div id="badge-PROP-2026-04-07-001" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-04-07-002" onclick="showCard('PROP-2026-04-07-002')"
+      style="padding:10px 14px;border-left:3px solid #1a6b3c;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#1a6b3c;letter-spacing:.04em">MICHAEL LEVIN</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Dr. Michael Levin — Reprogramming Bioelectricity, Updating '…</div>
+      <div style="font-size:10px;color:#999">INTERVIEW · 2026-01-21</div>
+      <div id="badge-PROP-2026-04-07-002" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-04-07-003" onclick="showCard('PROP-2026-04-07-003')"
+      style="padding:10px 14px;border-left:3px solid #4a006a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#4a006a;letter-spacing:.04em">STEPHEN WOLFRAM</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">What Ultimately Is There? Metaphysics and the Ruliad</div>
+      <div style="font-size:10px;color:#999">BLOG · 2026-02-04</div>
+      <div id="badge-PROP-2026-04-07-003" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-04-08-001" onclick="showCard('PROP-2026-04-08-001')"
+      style="padding:10px 14px;border-left:3px solid #1a3a6a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#1a3a6a;letter-spacing:.04em">NIMA ARKANI-HAMED</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">UNIVERSE+ School: Combinatorics and Geometry of Quantum Mech…</div>
+      <div style="font-size:10px;color:#999">TALK · 2026-03-30</div>
+      <div id="badge-PROP-2026-04-08-001" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-04-08-004" onclick="showCard('PROP-2026-04-08-004')"
+      style="padding:10px 14px;border-left:3px solid #0a5a6a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#0a5a6a;letter-spacing:.04em">BERNARDO KASTRUP</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Could Analytic Idealism offer a new framework for psychopath…</div>
+      <div style="font-size:10px;color:#999">BLOG · 2026-01-02</div>
+      <div id="badge-PROP-2026-04-08-004" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-04-08-003" onclick="showCard('PROP-2026-04-08-003')"
+      style="padding:10px 14px;border-left:3px solid #1a6b3c;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#1a6b3c;letter-spacing:.04em">MICHAEL LEVIN</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Mind Everywhere: A Framework for Conceptualizing Goal-Direct…</div>
+      <div style="font-size:10px;color:#999">PAPER · 2026-02-25</div>
+      <div id="badge-PROP-2026-04-08-003" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-04-08-002" onclick="showCard('PROP-2026-04-08-002')"
+      style="padding:10px 14px;border-left:3px solid #3a3a6a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#3a3a6a;letter-spacing:.04em">IAIN MCGILCHRIST</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">The Sophia Lectures: Wholeness, Imagination, and Cosmos</div>
+      <div style="font-size:10px;color:#999">TALK · 2026-03-13</div>
+      <div id="badge-PROP-2026-04-08-002" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+  </div>
+  <div id="content">
+    <div id="welcome" style="color:#888;font-size:14px;padding:40px 20px;text-align:center;line-height:2">
+      <div style="font-size:32px;margin-bottom:12px">📬</div>
+      <strong>8 new proposals</strong> from the C2A2 hunt agents.<br>
+      Click any item on the left to review it.<br>
+      Use the buttons to Approve, Double-check, Change, or Deny each one.<br>
+      When done, hit <strong>Send Decisions</strong> below.
+    </div>
+    
+    <div class="prop-card" id="card-PROP-2026-04-07-004" style="display:none">
+      <div style="background:#7a1a1a18;border-left:4px solid #7a1a1a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#7a1a1a;letter-spacing:.05em">SEAN CARROLL · PODCAST · 2026-03-30</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">349 | Daniel Harlow on What Quantum Gravity Teaches Us About Quantum Mechanics</div>
+        <a href="https://www.preposterousuniverse.com/podcast/2026/03/30/349-daniel-harlow-on-what-quantum-gravity-teaches-us-about-quantum-mechanics/" target="_blank" style="font-size:11px;color:#7a1a1a;opacity:.8">https://www.preposterousuniverse.com/podcast/2026/03/30/349-daniel-harlow-on-wha…</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Sean Carroll hosts MIT theoretical physicist Daniel Harlow (Mindscape Episode #349, March 30, 2026) for a deep discussion on what quantum gravity teaches us about quantum mechanics — inverting the usual framing. Harlow and collaborators propose a framework where the observer is treated as fundamentally classical and special within the theory, with new rules for dealing with observers built into the formalism. This is reminiscent of Copenhagen but with more precise mathematical definitions. The episode explores why decades of effort have not produced convergence on reconciling general relativity with quantum mechanics, and how ideas from black hole radiation, AdS/CFT, and quantum information theory are reshaping the foundations.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">Carroll's role in the C2A2 network is as the methodological anchor — the most empirically conservative voice, requiring Bayesian confirmation standards. This episode is significant because Carroll is engaging seriously with a framework that foregrounds observer dependence in physics, which brings him closer to positions held by Wolfram (observer-dependent Ruliad sampling), Hoffman (observer-dependent fitness interface), and even Arkani-Hamed (post-spacetime positive geometry). The wiki's Carroll PRS triplets emphasize his Bayesian rigor and poetic naturalism; this episode adds new material on Carroll's evolving stance toward observer-dependent frameworks in quantum gravity.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #7a1a1a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Quantum mechanics and general relativity remain unreconciled after decades of effort, with no convergence on a theory of quantum gravity</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> A new observer-centric framework for quantum gravity (Harlow et al.) — treating the observer as a classical, mathematically well-defined entity within the theory, with new rules for observer-system interactions</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Rather than deriving the observer from quantum mechanics, build the observer into the foundations — a "precise Copenhagen" that may resolve the measurement problem while naturally incorporating gravitational effects</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Carroll's detailed engagement with Harlow's framework, including discussion of its mathematical precision beyond standard Copenhagen</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">Major signal for CROSS-016 (Carroll × Wolfram): Carroll's engagement with observer-dependent quantum gravity frameworks brings him closer to Wolfram's position that physics is observer-sampled from the Ruliad. If Carroll (the network's most conservative voice) is taking observer-dependence seriously, this represents a significant shift in the Post-Spacetime Cluster's internal dynamics. Also relevant to CROSS-002 (spacetime fundamentality): Harlow's framework implies spacetime may not be fundamental but rather an observer-dependent construct — aligning with Wolfram, Arkani-Hamed, and Hoffman. Potential bridge to Hoffman: Harlow's "observer as classical and special" has structural parallels to Hoffman's "conscious agent as ontologically primary."</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-07-004','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-07-004','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-07-004')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-07-004','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-07-004" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-04-07-001" style="display:none">
+      <div style="background:#8a4a0018;border-left:4px solid #8a4a00;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#8a4a00;letter-spacing:.05em">KARL FRISTON · PAPER · 2026-03-15</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Active inference and the free energy principle: a review</div>
+        <a href="https://arxiv.org/abs/2406.00001" target="_blank" style="font-size:11px;color:#8a4a00;opacity:.8">https://arxiv.org/abs/2406.00001</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Friston and colleagues present a comprehensive synthesis of the free energy principle (FEP) as a unified theory of self-organization, applying it from single cells to social systems. The paper formalizes the claim that any system maintaining a Markov blanket — a statistical boundary separating internal from external states — necessarily minimizes free energy. This makes FEP formally substrate-independent: it applies to neurons, cells, organisms, and potentially AI systems.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is the most direct confirmation yet of FINDING-002 in the C2A2 Pattern Detector findings: if any Markov-blanketed system minimizes free energy, then Levin's bioelectric morphogenetic networks ARE active inference systems, not merely analogues. The paper explicitly addresses non-neural substrates.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #8a4a00;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> No formal proof existed that FEP applies to non-neural biological substrates — previous work was suggestive but not mathematically rigorous</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Formal derivation showing that Markov blanket conditions are substrate-agnostic; any self-organizing system with internal/external statistical separation satisfies FEP</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> FEP is established as a universal law of self-organization, not a neural theory — unifying cellular, organismal, and social cognition under one framework</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Section 3.2 of the paper derives the free energy bound for an arbitrary self-organizing system, without neural assumptions</div>
+        </div>
+        <div style="border-left:3px solid #8a4a00;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The relationship between FEP and morphogenesis has been asserted but not formally modeled</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Morphogenetic active inference: cells as FEP agents with target morphologies as prior beliefs, bioelectric signals as sensory inputs</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A formal bridge between Friston's FEP and Levin's morphogenetic research program — providing the mathematical mechanism Levin's work lacks</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Section 4.1 extends FEP to developmental biology, citing Levin's bioelectric work explicitly</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">Direct confirmation of CROSS-007 (basal cognition as active inference). Also advances CROSS-006 (FEP = morphogenetic formalism). Stump connection: if all Markov-blanketed systems are FEP agents, and hylomorphic form = Markov blanket boundary, then Thomistic form has a formal mathematical correlate.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-07-001','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-07-001','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-07-001')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-07-001','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-07-001" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-04-07-002" style="display:none">
+      <div style="background:#1a6b3c18;border-left:4px solid #1a6b3c;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#1a6b3c;letter-spacing:.05em">MICHAEL LEVIN · INTERVIEW · 2026-01-21</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Dr. Michael Levin — Reprogramming Bioelectricity, Updating 'Software' for Anti-Aging, Treating Cancer Without Drugs, Cognition of Cells, and Much More (#849)</div>
+        <a href="https://tim.blog/2026/01/21/dr-michael-levin/" target="_blank" style="font-size:11px;color:#1a6b3c;opacity:.8">https://tim.blog/2026/01/21/dr-michael-levin/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Michael Levin appeared on The Tim Ferriss Show (Episode #849, January 21, 2026) for a long-form interview covering the full scope of his bioelectricity research program. Levin describes how cells communicate and store information through bioelectric signals independent of DNA, leading to discoveries about how organisms develop, regenerate, and maintain their form. He presents a vision where biological systems can be reprogrammed like software — updating cellular instructions to heal, regenerate, and potentially reverse aging and disease without genetic modification.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is the highest-profile mainstream presentation of Levin's research program to date (Tim Ferriss's audience reaches millions). It covers the full arc from bioelectric code to cell cognition to clinical applications (cancer, regeneration, anti-aging), making it the most comprehensive single source for understanding Levin's current position. The wiki currently has Levin PRS triplets derived from the RC Pilot; this interview would add Levin's own 2026 framing of his work, including new applications and the "software vs. hardware" metaphor for biological reprogramming.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #1a6b3c;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Current medicine treats disease by targeting DNA/hardware (genes, proteins) while ignoring the bioelectric "software" layer that coordinates cell behavior</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Bioelectric reprogramming — manipulating voltage patterns in cell networks to change their collective behavior without altering DNA</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A new therapeutic paradigm: treat cancer, birth defects, and aging by updating bioelectric instructions rather than genetic code — demonstrated in planaria, frogs, and early mammalian models</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Levin describes multiple experimental systems where bioelectric manipulation achieves outcomes impossible through genetic approaches alone</div>
+        </div>
+        <div style="border-left:3px solid #1a6b3c;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The mechanism by which non-neural cells exhibit goal-directed behavior (cognition of cells) remains poorly understood by mainstream biology</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> The concept of cells as cognitive agents navigating "anatomical morphospace" — using bioelectric signals as a proto-cognitive medium for storing and processing information about body form</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A framework that treats cell collectives as problem-solving agents, opening regenerative medicine to top-down (information-level) interventions rather than bottom-up (molecular) manipulation</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Levin's description of xenobots and planarian regeneration experiments as demonstrations of cellular collective intelligence</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">Reinforces CROSS-007 (basal cognition as active inference) — Levin's "software" framing maps onto Friston's distinction between generative model (software) and physical substrate (hardware). Also strengthens CROSS-008/CROSS-019 (Stump × Levin) — Levin's "target morphology" as cellular goal-state is even more explicitly teleological in this interview than in the RC Pilot source.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-07-002','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-07-002','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-07-002')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-07-002','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-07-002" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-04-07-003" style="display:none">
+      <div style="background:#4a006a18;border-left:4px solid #4a006a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#4a006a;letter-spacing:.05em">STEPHEN WOLFRAM · BLOG · 2026-02-04</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">What Ultimately Is There? Metaphysics and the Ruliad</div>
+        <a href="https://writings.stephenwolfram.com/2026/02/what-ultimately-is-there-metaphysics-and-the-ruliad/" target="_blank" style="font-size:11px;color:#4a006a;opacity:.8">https://writings.stephenwolfram.com/2026/02/what-ultimately-is-there-metaphysics…</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Wolfram publishes a major essay (February 2026) applying the Ruliad framework directly to classical metaphysical questions — "What ultimately is there?" He argues that the Ruliad is the answer: everything that exists is the entangled limit of all possible computations. He introduces "emes" as the ultimate raw material for existence — entities with no intrinsic structure except distinctness — and shows how relations between emes build up the Ruliad. Crucially, he foregrounds the observer's role: observers embedded within the Ruliad necessarily perceive it in particular ways, and our "inner experiences" must be represented within it. This essay was written partly to launch the Wolfram Institute's Templeton-funded "Computational Metaphysics" project.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is Wolfram's most explicit engagement with metaphysics to date. Previous Wolfram Physics Project work focused on deriving physics from hypergraph rules; this essay asks what the Ruliad implies about the nature of existence itself. The wiki currently has Wolfram PRS triplets focused on computational irreducibility, observer-dependent spacetime, and the Ruliad as a universal structure. This essay adds: (1) a formal metaphysical claim (the Ruliad as the answer to "what exists"), (2) the concept of "emes" as ontological primitives, and (3) explicit engagement with the philosophical tradition — Wolfram is now deliberately positioning the Ruliad in conversation with academic metaphysics.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #4a006a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Traditional metaphysics asks "what ultimately exists?" but lacks a formal, computational framework for answering the question</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> The Ruliad as a formally defined mathematical object — the entangled limit of all possible computations — proposed as the ultimate ontological ground</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A computational metaphysics: "what exists" = the Ruliad; "what we perceive" = our observer-slice of it; "why these laws of physics" = because observers like us necessarily sample the Ruliad in ways that produce these regularities</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Wolfram's explicit framing of the essay as an answer to the metaphysical question, supported by the Templeton "Computational Metaphysics" grant</div>
+        </div>
+        <div style="border-left:3px solid #4a006a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The relationship between abstract mathematical structures and concrete physical reality (the "unreasonable effectiveness of mathematics" problem) lacks a satisfying explanation</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> "Emes" — ontological primitives with no intrinsic properties except distinctness, from which all structure emerges through relations</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Mathematics and physics are not separate domains — both are observer-slices of the same Ruliad; mathematics appears effective because it samples the same underlying structure that physics samples</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Wolfram's argument that emes are the raw material for both mathematical and physical structure</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">Major advance for CROSS-017 (Wolfram × Arkani-Hamed): Wolfram's "emes" and observer-dependent sampling may provide the ontological framework within which Arkani-Hamed's positive geometry operates — both derive physics without spacetime as input, but Wolfram now offers a metaphysical account of why. Also relevant to CROSS-021 (Wolfram × Hoffman): Wolfram's observer-dependent Ruliad sampling and Hoffman's fitness-tuned interface are converging — both say what we perceive is observer-constructed, not given. Potential bridge to Kastrup: if the Ruliad is the ultimate ground of existence and observers are embedded perspectives within it, this has structural parallels to Kastrup's universal consciousness with dissociated alters.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-07-003','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-07-003','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-07-003')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-07-003','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-07-003" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-04-08-001" style="display:none">
+      <div style="background:#1a3a6a18;border-left:4px solid #1a3a6a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#1a3a6a;letter-spacing:.05em">NIMA ARKANI-HAMED · TALK · 2026-03-30</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">UNIVERSE+ School: Combinatorics and Geometry of Quantum Mechanics and Spacetime</div>
+        <a href="https://positive-geometry.com/events/universe-school-2026" target="_blank" style="font-size:11px;color:#1a3a6a;opacity:.8">https://positive-geometry.com/events/universe-school-2026</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">The UNIVERSE+ School "Exploring Positive Geometry" took place at the Les Houches School of Physics (French Alps) from March 30 to April 10, 2026. Arkani-Hamed taught the course component titled "Combinatorics and Geometry of Quantum Mechanics and Spacetime" — a two-week self-contained doctoral training program introducing positive geometry as a unifying language bridging particle physics, cosmology, and mathematics. The school is part of the ERC Synergy Grant UNIVERSE+ project led by Arkani-Hamed (IAS Princeton), Daniel Baumann, Johannes Henn, and Bernd Sturmfels.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is the most current and concentrated pedagogical exposition of Arkani-Hamed's positive geometry program — delivered directly by him as primary source. The wiki note explicitly flagged Arkani-Hamed dedicated source material as the highest priority for the next inbox deposit; this is exactly that. The framing ("combinatorics and geometry" as the language for "quantum mechanics and spacetime") encapsulates his core claim that spacetime is not fundamental.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #1a3a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Particle physics has no unified geometric language — Feynman diagrams are computationally useful but conceptually opaque, and quantum mechanics and spacetime remain formally unreconciled</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Positive geometry as a unifying mathematical framework — a language bridging scattering amplitudes (particle physics), cosmological correlators, and deep mathematical structures (combinatorics, algebraic geometry)</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A research program establishing that the correct computational language for fundamental physics is combinatorial-geometric rather than field-theoretic, with locality and unitarity emerging from geometry rather than being assumed</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Arkani-Hamed's Les Houches course title ("Combinatorics and Geometry of Quantum Mechanics and Spacetime") frames both QM and spacetime as derived from a deeper geometric structure; the UNIVERSE+ project scope explicitly positions positive geometry as the post-spacetime framework</div>
+        </div>
+        <div style="border-left:3px solid #1a3a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The mathematical framework of quantum mechanics was developed without a unified geometric picture — its combinatorial and algebraic structures remain poorly understood at the foundations</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Combinatorial geometry as the foundational language of quantum mechanics — developed through amplituhedron geometry and generalized to cosmological correlators</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A systematic reformulation showing that quantum mechanical amplitudes are volumes of combinatorially defined geometric objects, making the combinatorial structure of QM explicit and computable without reference to spacetime scaffolding</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Course description specifically links "combinatorics and geometry" directly to "quantum mechanics and spacetime" as its subject matter, not just to scattering amplitudes</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">The framing of positive geometry as bridging particle physics, cosmology, and mathematics resonates with Wolfram's Ruliad (all possible computations as the ontological ground) — both programs are pushing toward a post-spacetime ontology via different mathematical languages. May also connect to Hoffman's suggestion that conscious agent mathematics could be the pre-geometric structure from which amplituhedron results derive (PRS-03 in Arkani-Hamed tradition — speculative bridge).</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-08-001','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-08-001','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-08-001')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-08-001','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-08-001" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-04-08-004" style="display:none">
+      <div style="background:#0a5a6a18;border-left:4px solid #0a5a6a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#0a5a6a;letter-spacing:.05em">BERNARDO KASTRUP · BLOG · 2026-01-02</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Could Analytic Idealism offer a new framework for psychopathology?</div>
+        <a href="https://www.essentiafoundation.org/could-analytic-idealism-offer-a-new-framework-for-psychopathology/reading/" target="_blank" style="font-size:11px;color:#0a5a6a;opacity:.8">https://www.essentiafoundation.org/could-analytic-idealism-offer-a-new-framework…</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">An essay published January 2, 2026 at the Essentia Foundation (authored or co-authored by Kastrup as executive director) argues that Analytic Idealism could resolve the current conceptual impasse in psychiatry. The essay reinterprets all major psychiatric disorders as disturbances in the dissociative boundary between the individual "alter" and universal consciousness — rather than as brain malfunctions. The resulting framework enables a deconstruction of neuroscientific data from an idealist perspective and suggests a therapeutic shift toward boundary modulation rather than symptom management. The essay is part of Kastrup's broader 2025–2026 project of applying analytic idealism to specific empirical domains (he also published "Analytic Idealism in a Nutshell" and "The Daimon and the Soul of the West" in 2025).</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This essay extends analytic idealism from ontological argument to clinical application — a significant development. The psychopathology framework operationalizes the dissociative model (individuals as alters of universal consciousness) in an empirically engaged domain, making testable predictions about therapeutic outcomes. This is the most recent primary source from Kastrup's program available in 2026 and demonstrates the research productivity of the analytic idealism tradition. It also directly connects to several cross-program items (CROSS-001 on substrate-independence of consciousness, the Friston-Levin bridge).</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #0a5a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Psychiatry faces a conceptual impasse: despite decades of neuroscientific research, the classification, etiology, and treatment of mental disorders remain contested and therapeutically limited — indicating that the underlying materialist framework may be insufficient</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Analytic Idealism's dissociation model applied to psychopathology: mental disorders reframed as disturbances in the dissociative boundary between the individual alter and universal consciousness — not as brain malfunctions but as boundary dysregulation</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A new interpretive framework enabling the deconstruction of existing neuroscientific data under an idealist ontology, generating novel therapeutic hypotheses focused on boundary modulation — opening research directions unavailable under physicalism</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Essay explicitly argues the framework "makes possible a deconstruction of neuroscientific data and suggests a shift in therapeutic focus toward boundary modulation"</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">The dissociation model maps directly onto Friston's FEP: the Markov blanket (statistical boundary between system and environment) is the formal analogue of Kastrup's dissociative boundary. If Markov blankets are the formal structure of Kastrup's alters, then FEP and analytic idealism are describing the same boundary dynamics at different levels of description. This could be the strongest explanatory bridge in the entire network — worth flagging for Pattern Detector. Also connects to Levin's morphogenetic basal cognition (cellular individuation as dissociation from collective bioelectric field).</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-08-004','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-08-004','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-08-004')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-08-004','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-08-004" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-04-08-003" style="display:none">
+      <div style="background:#1a6b3c18;border-left:4px solid #1a6b3c;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#1a6b3c;letter-spacing:.05em">MICHAEL LEVIN · PAPER · 2026-02-25</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Mind Everywhere: A Framework for Conceptualizing Goal-Directedness in Biology and Other Domains (Parts 1 & 2)</div>
+        <a href="https://link.springer.com/article/10.1007/s13752-025-00523-6" target="_blank" style="font-size:11px;color:#1a6b3c;opacity:.8">https://link.springer.com/article/10.1007/s13752-025-00523-6</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Michael Levin and David B. Resnik published a two-part framework paper in Biological Theory (published online February 25, 2026). The papers defend a new approach to goal-directedness emerging from the field of "diverse intelligence," addressing what makes any system — evolved, engineered, or hybrid — describable by teleological and mentalistic terms: intelligent, goal-directed, cognitive, intentional. The framework emphasizes four principles: (1) empirical testability over philosophical linguistic commitments; (2) fecundity — worldviews that enable novel research, not just explain known results; (3) operationalization of cognitive/teleological terms as hypotheses about optimal interaction protocols; (4) continuity of human goal-directedness with unicellular origins.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This paper represents the most current formal articulation of Levin's research program — moving from experimental bioelectricity into an explicit philosophical and methodological framework for "diverse intelligence." It directly addresses the conceptual foundations underlying Levin's PRS triplets (basal cognition, morphogenetic goal-seeking, anatomical morphospace navigation) and provides the philosophical justification for treating cells as cognitive agents. This is essential reading for the Levin agent and bridges directly to Friston (both programs make goal-directedness mathematically precise) and to C2A2's core interest in tradition-as-inquiry-community.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #1a6b3c;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Biology lacks a unified, empirically tractable framework for deciding when teleological and cognitive language applies — leading to ad hoc, inconsistent, and often vitalism-adjacent attributions of agency and goal-directedness</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Levin & Resnik's "diverse intelligence" framework — a systematic approach defining goal-directedness by reference to conceptual and empirical toolkits (not metaphysical commitments), treating cognitive claims as testable hypotheses about optimal interaction protocols</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A principled, falsifiable, non-vitalist basis for attributing teleology and cognition to biological systems at any scale — from molecules to multicellular organisms — enabling consistent application of cognitive neuroscience tools to morphogenetic systems</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Framework explicitly states criteria: empirical testability, fecundity in generating new research, operationalization by reference to effective interaction protocols, continuity with unicellular origins</div>
+        </div>
+        <div style="border-left:3px solid #1a6b3c;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Human goal-directedness is typically treated as categorically different from biological goal-directedness in non-neural organisms — creating a gap that neither neuroscience nor biology can bridge on current assumptions</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Continuity thesis: human goal-directedness is on a spectrum with unicellular goal-directed behavior — no categorical break, only degree differences in complexity of represented goals, memory, and interaction protocols</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A research program tracing the evolution of goal-directedness from unicellular origins to human cognition, enabling cross-scale application of the same conceptual and experimental tools — making "cognition" a graded, measurable property rather than a binary predicate</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Framework principle (4) explicitly asserts "continuity of human goal-directedness with unicellular origins"</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">Direct formal bridge to Friston: both programs require a formal, substrate-agnostic account of goal-directedness (FEP provides the mathematical mechanics; Levin & Resnik provide the ontological and methodological justification). Also bridges to Hawkins (hierarchical goal representation in cortical columns) and to Kastrup's analytic idealism (if goal-directedness is universal, the dissociation model gains empirical support). High cross-tradition density — strong candidate for master wiki update and pattern detector evaluation.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-08-003','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-08-003','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-08-003')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-08-003','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-08-003" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-04-08-002" style="display:none">
+      <div style="background:#3a3a6a18;border-left:4px solid #3a3a6a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#3a3a6a;letter-spacing:.05em">IAIN MCGILCHRIST · TALK · 2026-03-13</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">The Sophia Lectures: Wholeness, Imagination, and Cosmos</div>
+        <a href="https://www.ralston.ac/events/the-sophia-lectures-wholeness-imagination-and-cosmos-with-iain-mcgilchrist" target="_blank" style="font-size:11px;color:#3a3a6a;opacity:.8">https://www.ralston.ac/events/the-sophia-lectures-wholeness-imagination-and-cosm…</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Iain McGilchrist delivered three public lectures at Ralston College (Savannah) on March 13–15, 2026, under the title "Wholeness, Imagination, and Cosmos." The lectures were free, open to the public, and recorded. Drawing on neuropsychology, physics, philosophy, poetry, music, painting, and myth, McGilchrist addressed three principal themes: (1) the creative dance between division and union — separation that must be brought to higher synthesis; (2) the asymmetrical nature of the cooperative relationship between the hemispheres, and the role of asymmetry throughout the cosmos, especially in life and beauty; (3) how to understand paradox — in particular how to make sense of the infinite. McGilchrist is now Chancellor of Ralston College (appointed October 2025).</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is the most recent primary-source lecture series from McGilchrist, delivered just weeks ago. The McGilchrist tradition wiki has been seeded entirely from the RC Pilot document (secondary references); these lectures represent his own current synthesis, moving from brain hemispheres into cosmology, imagination, and the infinite. The themes — wholeness, imagination, cosmos — signal an extension of his hemisphere hypothesis toward fundamental ontology, making this especially relevant to C2A2's interest in tradition-crossing paradigms.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #3a3a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Western thought has systematically privileged division (analysis, distinction, separation) over integration — producing a culture that cannot synthesize what it has fragmented, at the level of both knowledge and society</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> McGilchrist's account of division and union as a creative dance: true synthesis is not mere addition or averaging but union at a higher level — a third thing that neither hemisphere could produce alone</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A model of intellectual and cultural healing: not eliminating division (left hemisphere analysis) but restoring its proper subordination to the right hemisphere's synthetic, integrating attention — applicable to C2A2's tradition-bridging mission</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Lecture 1 specifically elaborates "the creative dance between division and union, in which each plays a part, but which must be brought together in a union at a higher level"</div>
+        </div>
+        <div style="border-left:3px solid #3a3a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Paradox is commonly treated as a failure of logic — something to be resolved or eliminated — rather than as a signal of genuine ontological depth</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> McGilchrist's account of paradox as cognitively and ontologically productive: specifically how to make sense of the infinite through paradox — the finite and infinite as asymmetrically related, not merely contradictory</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A framework for engaging paradox as a feature of reality rather than a defect of reasoning — with specific implications for how traditions in dialogue can hold genuine tensions without forced resolution; connects to C2A2's goal of inter-tradition engagement across incommensurability</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Lecture 3 addresses "finitude and the infinite" and "how to understand paradox — in particular how we can begin to make sense of the concept of the infinite"</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">Strong resonance with Friston's free energy principle: asymmetry as a fundamental feature (FEP requires asymmetric sensory/active states). Also connects to Wolfram's observer-dependent physics — different observer-positions sample the same underlying reality asymmetrically. The "union at a higher level" language maps onto McGilchrist's existing wiki cross-connections with Levin (morphogenetic integration) and with C2A2's tradition-accelerator design.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-08-002','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-08-002','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-08-002')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-08-002','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-08-002" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="bottombar">
+  <div id="progress">0 / 8 reviewed</div>
+  <div id="all-done">✓ All reviewed!</div>
+  <button id="submit-btn" onclick="submitDecisions()">Send Decisions →</button>
+</div>
+
+<script>
+const TOTAL = 8;
+const decisions = {};
+const notes = {};
+
+function showCard(pid) {
+  document.querySelectorAll('.prop-card').forEach(c => c.style.display='none');
+  document.querySelectorAll('.sidebar-item').forEach(s => s.classList.remove('active'));
+  document.getElementById('card-'+pid).style.display='block';
+  document.getElementById('item-'+pid).classList.add('active');
+  document.getElementById('welcome').style.display='none';
+}
+
+function decide(pid, decision) {
+  decisions[pid] = decision;
+  notes[pid] = notes[pid] || '';
+  updateBadge(pid, decision);
+  updateProgress();
+  // Auto-advance to next pending
+  const items = Array.from(document.querySelectorAll('.sidebar-item'));
+  const cur = items.findIndex(el => el.id === 'item-'+pid);
+  const next = items.slice(cur+1).find(el => !decisions[el.id.replace('item-','')]);
+  if (next) showCard(next.id.replace('item-',''));
+}
+
+function decideChange(pid) {
+  const note = prompt('What should be changed?\n(Your note will be sent with the decision)', '');
+  if (note === null) return;
+  decisions[pid] = 'CHANGE';
+  notes[pid] = note;
+  updateBadge(pid, 'CHANGE', note);
+  updateProgress();
+  const items = Array.from(document.querySelectorAll('.sidebar-item'));
+  const cur = items.findIndex(el => el.id === 'item-'+pid);
+  const next = items.slice(cur+1).find(el => !decisions[el.id.replace('item-','')]);
+  if (next) showCard(next.id.replace('item-',''));
+}
+
+function updateBadge(pid, decision, note='') {
+  const colors = {APPROVE:'#1a6b3c',CHECK:'#8a4a00',CHANGE:'#2a4a8a',DENY:'#7a1a1a'};
+  const labels = {APPROVE:'✓ Approved',CHECK:'⚑ Flagged for check',CHANGE:'✎ Change requested',DENY:'✗ Denied'};
+  const badge = document.getElementById('badge-'+pid);
+  badge.style.color = colors[decision] || '#555';
+  badge.style.fontWeight = '700';
+  badge.textContent = labels[decision] + (note ? ' — '+note.slice(0,30) : '');
+  const status = document.getElementById('status-'+pid);
+  if (status) {
+    status.style.color = colors[decision];
+    status.textContent = labels[decision] + (note ? ': '+note : '');
+  }
+}
+
+function updateProgress() {
+  const done = Object.keys(decisions).length;
+  document.getElementById('progress').textContent = done + ' / ' + TOTAL + ' reviewed';
+  if (done >= TOTAL) {
+    document.getElementById('all-done').style.display='inline';
+    document.getElementById('submit-btn').style.background='#1a6b3c';
+  }
+}
+
+function submitDecisions() {
+  const lines = ['DECISIONS:'];
+  const pids = ['PROP-2026-04-07-004', 'PROP-2026-04-07-001', 'PROP-2026-04-07-002', 'PROP-2026-04-07-003', 'PROP-2026-04-08-001', 'PROP-2026-04-08-004', 'PROP-2026-04-08-003', 'PROP-2026-04-08-002'];
+  pids.forEach(pid => {
+    const d = decisions[pid] || 'PENDING';
+    const n = notes[pid] ? ' | ' + notes[pid] : '';
+    lines.push(pid + ': ' + d + n);
+  });
+  const body = lines.join('\n');
+  const subject = '[C2A2-review-decision] 2026-04-08';
+  // Open Gmail compose directly — avoids Apple Mail / default mail client
+  const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=thomas.loughran@gmail.com&su='
+    + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  window.open(gmailUrl, '_blank');
+}
+
+// Show first card on load
+window.addEventListener('load', () => { showCard('PROP-2026-04-07-004'); });
+</script>
+</body>
+</html>

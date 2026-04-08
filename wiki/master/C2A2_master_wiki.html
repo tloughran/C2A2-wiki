@@ -123,7 +123,7 @@
       <div class="stat-card green"><div class="val">11</div><div class="lbl">Programs Active</div></div>
       <div class="stat-card"><div class="val">70</div><div class="lbl">PRS Triplets</div><div class="delta">&#8593; +8 from 2026-04-07</div></div>
       <div class="stat-card purple"><div class="val">26</div><div class="lbl">Cross-Program Connections</div><div class="delta">&#8593; +4 from 2026-04-07</div></div>
-      <div class="stat-card amber"><div class="val">8</div><div class="lbl">Active Findings</div><div class="delta">&#8593; +2 from 2026-04-07</div></div>
+      <div class="stat-card amber"><div class="val">9</div><div class="lbl">Active Findings</div><div class="delta">&#8593; +3 from 2026-04-07</div></div>
       <div class="stat-card confirmed"><div class="val">1</div><div class="lbl">Confirmed Cross-Tradition Result</div><div class="delta">&#10003; FINDING-007</div></div>
       <div class="stat-card red"><div class="val">1</div><div class="lbl">Paradigm-Shift Candidate</div></div>
     </div>
@@ -157,6 +157,10 @@
     <div class="action-item">
       <div class="tag">&#9873; FINDING-006 &#8212; DEPOSIT SOURCE MATERIAL</div>
       <strong>Wolfram &#215; Arkani-Hamed:</strong> Deposit amplituhedron/hypergraph source material in wiki/inbox/ to proceed.
+    </div>
+    <div class="action-item">
+      <div class="tag">&#9873;&#9873; FINDING-009 &#8212; UNIFYING THESIS</div>
+      <strong>Distributed Logos:</strong> Full arc from Friston (thermodynamic agency) through Levin, Hoffman, Wolfram, Hawkins, McGilchrist, Fredrickson, Tononi to Rohr/Wright now articulated. Carroll's physicalism explicitly framed as rival program. Concept page upgraded from seed to developing.
     </div>
 
     <div class="section-title">PRS Distribution Across Network</div>
@@ -203,7 +207,7 @@
 
   <!-- FINDINGS -->
   <div class="page" id="page-findings">
-    <div class="section-title">8 Active Findings from Pattern Detector</div>
+    <div class="section-title">9 Active Findings from Pattern Detector</div>
     <p style="font-size:12.5px;color:#555;margin-bottom:16px">Click any finding to expand. Full file: <code style="font-size:11px;background:#f0f0f0;padding:1px 5px;border-radius:3px">wiki/flags/pattern_detector_findings.md</code></p>
     <div id="findings-list"></div>
   </div>
@@ -287,53 +291,59 @@ CLUSTERS.forEach(cl=>{
 });
 
 const FINDINGS=[
+  {id:'FINDING-009',priority:'&#9873;&#9873; HIGHEST',pclass:'priority-highest',confirmed:false,isnew:true,
+   title:'Distributed Logos &#8212; Unifying Thesis Articulated Across All Scales',
+   programs:'Friston &#215; Levin &#215; Hoffman &#215; Wolfram &#215; Hawkins &#215; McGilchrist &#215; Fredrickson &#215; Tononi &#215; Rohr/Wright vs. Carroll',
+   signal:'The Distributed Logos thesis &#8212; that rational order (logos) is distributed at every scale of organization from thermodynamics through cells, brains, communities, and cosmos &#8212; now has a fully articulated arc tracing a continuous thread through all 11 programs. Friston grounds agency thermodynamically (entropy becomes agency); Levin demonstrates bioelectric cognition pre-dating neurons; Hoffman and Wolfram independently argue reality is constituted by conscious/computational agents; Hawkins and McGilchrist show multi-agent architecture within brains; Fredrickson identifies love as the resonance signature of successful integration; Tononi provides the formal measure (Phi) by which participation is graded; Rohr/Wright supply the theological culmination (Universal Christ as unified conscious field). Carroll\'s physicalism is explicitly framed as the rival research program.',
+   C2A2:'This is the central thesis of the entire RC project. The morning walk integration (2026-04-07) demonstrated that the arc holds continuously from thermodynamic foundation to theological culmination. Key insight: Tononi\'s Phi quantifies what Aquinas called graded participatio. The concept page (distributed-logos.md) has been upgraded from seed to developing with full per-thinker sections.',
+   conf:'High (structural) / Medium (formal unification across scales pending)',status:'Active &#8212; concept page developing; formal gap-between-scales analysis needed',sc:''},
   {id:'FINDING-007',priority:'&#10003; CONFIRMED',pclass:'priority-confirmed',confirmed:true,isnew:true,
    title:'Friston &#215; Levin &#8212; FEP Substrate-Independence Formally Proven',
    programs:'Friston (Free Energy Principle) &#215; Levin (Bioelectricity) &#8212; CONFIRMED 2026-04-07',
    signal:'The 2026 Friston review paper formally proves FEP substrate-independence and explicitly models morphogenesis as active inference, citing Levin\'s bioelectric work. Levin\'s bioelectric networks ARE active inference systems by formal derivation. FINDING-001 and FINDING-002 both confirmed.',
-   c282:'First formally confirmed cross-tradition result in the network. AI systems implementing FEP are positioned as proto second-first-language speakers. Directly advances Big Questions #3 and #5. Cite in DCEC paper alongside FINDING-005.',
+   C2A2:'First formally confirmed cross-tradition result in the network. AI systems implementing FEP are positioned as proto second-first-language speakers. Directly advances Big Questions #3 and #5. Cite in DCEC paper alongside FINDING-005.',
    conf:'High &#8212; formal proof + explicit citation',status:'CONFIRMED &#8212; directly citable',sc:'confirmed-tag'},
   {id:'FINDING-005',priority:'&#9873;&#9873; HIGHEST',pclass:'priority-highest',confirmed:false,isnew:false,
    title:'Stump &#215; Levin &#8212; Thomistic Teleology & Morphogenetics',
    programs:'Stump (Thomistic philosophy) &#215; Levin (Bioelectricity)',
    signal:'Thomistic final causality formally maps onto Levin\'s morphogenetic teleology in both directions. Morphogenetic target states = Aristotelian final causes; bioelectric memory = formal cause in material substrate; morphogenetic process = efficient causality ordered by formal and final causes.',
-   c282:'Concrete, formally mapped case of Thomism organizing a leading-edge empirical research program &#8212; the central claim of Tom\'s DCEC paper. Directly citable now.',
+   C2A2:'Concrete, formally mapped case of Thomism organizing a leading-edge empirical research program &#8212; the central claim of Tom\'s DCEC paper. Directly citable now.',
    conf:'High',status:'Active &#8212; directly citable in DCEC paper draft',sc:''},
   {id:'FINDING-008',priority:'&#9873; MONITOR',pclass:'priority-monitor',confirmed:false,isnew:true,
    title:'Carroll &#215; Wolfram &#215; Hoffman &#8212; Observer-Dependence Convergence',
    programs:'Carroll (Physics) &#215; Wolfram (Ruliad) &#215; Hoffman (Conscious Realism)',
    signal:'Carroll engaging seriously with observer-centric quantum gravity (Harlow framework, Mindscape #349). The network\'s most conservative voice is moving toward observer-dependence &#8212; structurally convergent with Wolfram and Hoffman.',
-   c282:'If Carroll\'s trajectory continues, Post-Spacetime and Consciousness Clusters may merge into a super-cluster. Carroll\'s credibility makes any shift in his position the most important bellwether in the network.',
+   C2A2:'If Carroll\'s trajectory continues, Post-Spacetime and Consciousness Clusters may merge into a super-cluster. Carroll\'s credibility makes any shift in his position the most important bellwether in the network.',
    conf:'Medium &#8212; directional, engaging not endorsing',status:'Active &#8212; monitor Carroll\'s subsequent publications and podcasts',sc:''},
   {id:'FINDING-004',priority:'&#9873; PARADIGM SHIFT',pclass:'priority-high',confirmed:false,isnew:false,
    title:'Hoffman &#215; Kastrup &#8212; Consciousness Cluster Unification Candidate',
    programs:'Hoffman (Conscious Realism) &#215; Kastrup (Analytic Idealism)',
    signal:'Conscious Realism and analytic idealism appear to be independently derived versions of the same consciousness-first ontology. Mathematical/evolutionary derivation (Hoffman) converges with philosophical/phenomenological derivation (Kastrup) at every key junction: hard problem dissolves, quantum anomalies explained, matter is derivative.',
-   c282:'If formally equivalent: unified consciousness-first position with two independent derivations. Gives C2A2 unprecedented breadth: mathematical proof + philosophical argument + neurological evidence (McGilchrist) + biological evidence (Levin).',
+   C2A2:'If formally equivalent: unified consciousness-first position with two independent derivations. Gives C2A2 unprecedented breadth: mathematical proof + philosophical argument + neurological evidence (McGilchrist) + biological evidence (Levin).',
    conf:'High (structural homology) / Medium (formal equivalence &#8212; requires dedicated comparison session)',status:'Under evaluation &#8212; schedule Hoffman &#215; Kastrup formal comparison session',sc:''},
   {id:'FINDING-003',priority:'&#9873; BRIDGE',pclass:'priority-medium',confirmed:false,isnew:false,
    title:'Hoffman &#215; McGilchrist &#8212; Empirical Confirmation of Conscious Realism',
    programs:'Hoffman (Conscious Realism) &#215; McGilchrist (Divided Brain)',
    signal:'McGilchrist\'s corpus callosotomy data (split-brain = two independent conscious agents; intact = unified self) is empirical confirmation of Hoffman\'s mathematical prediction that conscious agent networks integrate into higher-order unified agents.',
-   c282:'Conscious Realism transitions from mathematically consistent to empirically supported. First empirical confirmation of a specific CR mathematical prediction. Merits a formal mapping exercise (Hoffman agent algebra &#8596; hemispheric integration).',
+   C2A2:'Conscious Realism transitions from mathematically consistent to empirically supported. First empirical confirmation of a specific CR mathematical prediction. Merits a formal mapping exercise (Hoffman agent algebra &#8596; hemispheric integration).',
    conf:'Medium-High',status:'Active &#8212; merits formal mapping exercise',sc:''},
   {id:'FINDING-002',priority:'&#10003; CONFIRMED',pclass:'priority-confirmed',confirmed:true,isnew:false,
    title:'Levin &#215; Friston &#8212; FEP Formalism (Confirmed by FINDING-007)',
    programs:'Levin &#215; Friston &#8212; CONFIRMED',
    signal:'Levin\'s morphogenetic attractor formalism and Friston\'s FEP use the same mathematical object (free energy minimization over biological state space). Confirmed by the 2026 Friston review paper.',
-   c282:'Foundation finding that led to FINDING-007. Now confirmed.',
+   C2A2:'Foundation finding that led to FINDING-007. Now confirmed.',
    conf:'High &#8212; confirmed',status:'CONFIRMED &#8212; see FINDING-007',sc:'confirmed-tag'},
   {id:'FINDING-001',priority:'&#10003; CONFIRMED',pclass:'priority-confirmed',confirmed:true,isnew:false,
    title:'Levin &#215; Friston &#8212; Structural Homology (Confirmed)',
    programs:'Levin &#215; Friston &#8212; CONFIRMED',
    signal:'Structural homology between Levin\'s bioelectric attractor formalism and Friston\'s FEP confirmed by the 2026 review paper. Both describe the same mathematical object.',
-   c282:'Confirmed foundation for FINDING-007.',
+   C2A2:'Confirmed foundation for FINDING-007.',
    conf:'High &#8212; confirmed',status:'CONFIRMED &#8212; see FINDING-007',sc:'confirmed-tag'},
   {id:'FINDING-006',priority:'&#9873; HOMOLOGY',pclass:'priority-medium',confirmed:false,isnew:false,
    title:'Wolfram &#215; Arkani-Hamed &#8212; Post-Spacetime Convergence',
    programs:'Wolfram (Ruliad/Hypergraph) &#215; Arkani-Hamed (Amplituhedron)',
    signal:'Both programs independently describe physics in which spacetime is emergent rather than fundamental. Hypergraph rewriting rules and positive geometry / amplituhedron may be different computational approaches to the same underlying structure.',
-   c282:'Potential unification of the Post-Spacetime Cluster\'s two most formal programs. Deposit Wolfram/Arkani-Hamed source material in inbox to proceed.',
+   C2A2:'Potential unification of the Post-Spacetime Cluster\'s two most formal programs. Deposit Wolfram/Arkani-Hamed source material in inbox to proceed.',
    conf:'Speculative &#8212; requires dedicated source material',status:'Monitor &#8212; deposit source material to proceed',sc:''},
 ];
 const fl=document.getElementById('findings-list');
@@ -349,7 +359,7 @@ FINDINGS.forEach(f=>{
     </div>
     <div class="finding-body" id="body-${f.id}">
       <p style="margin-top:12px"><strong>Signal:</strong> ${f.signal}</p>
-      <p style="margin-top:8px"><strong>Why it matters for C2A2:</strong> ${f.c282}</p>
+      <p style="margin-top:8px"><strong>Why it matters for C2A2:</strong> ${f.C2A2}</p>
       <div class="conf">CONFIDENCE: ${f.conf}</div>
       <div class="status-tag ${f.sc}">Status: ${f.status}</div>
     </div>
