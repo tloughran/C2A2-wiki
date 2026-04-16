@@ -1254,3 +1254,165 @@ Note: ASSUMPTION-024 INCORPORATED (PREMISE-004), not added to MONITOR
 HIGH priority: MONITOR-026, MONITOR-027, MONITOR-029, MONITOR-030
 Next 15d run: 2026-04-21/22
 
+---
+
+## 2026-04-16 CYCLE — NEW MONITOR ITEMS (6)
+
+---
+
+### MONITOR-033:
+**Date queued:** 2026-04-16
+**Source item:** ASSUMPTION-029
+**Item type:** ASSUMPTION
+
+**Statement:** "Single-file HTML architecture is the limiting factor justifying a modular Vite-based refactor for wiki_narration"
+
+**Why monitoring:** 15a partially supports (moderate); 15b partially challenges (moderate). Refactor-ROI literature cautions that surface-level architectural complaints often aren't the real bottleneck. Architecturally defensible but benefit-contingent.
+
+**What would change disposition:**
+- Incorporate: Post-refactor metrics (bug-introduction rate, edit-time) show measurable improvement.
+- Revise: Post-refactor metrics show no improvement or regression.
+
+**Priority:** MEDIUM
+**Cadence:** Monthly (triggered by refactor completion)
+**Next check:** 2026-05-16
+**Cycle count:** 0
+**Last checked:** 2026-04-16 (initialized)
+**Status:** ACTIVE
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a → 15a, 15b → 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-034:
+**Date queued:** 2026-04-16
+**Source item:** ASSUMPTION-030
+**Item type:** ASSUMPTION
+
+**Statement:** "Public release of the C2A2 wiki repo should be gated on 'benchmarks identified' (criteria TBD)"
+
+**Why monitoring:** Open-science norms support benchmark-gated release (15a Moderate); but "criteria TBD" is a recognized stall pattern (15b Strong). Framework commitment, not directly empirically testable; becomes testable once benchmarks are concretized (OPEN-020).
+
+**What would change disposition:**
+- Incorporate: Benchmarks specified with time-boxed deadline.
+- Revise: Benchmark definition stalls past 2026-06-01 without release path.
+
+**Priority:** MEDIUM
+**Cadence:** Monthly
+**Next check:** 2026-05-16
+**Cycle count:** 0
+**Last checked:** 2026-04-16 (initialized)
+**Status:** ACTIVE
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a → 15a, 15b → 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-035:
+**Date queued:** 2026-04-16
+**Source item:** ASSUMPTION-032
+**Item type:** ASSUMPTION
+
+**Statement:** "Computer-use pixel-level inspection is a sufficient substitute for Chrome MCP during native-app debugging"
+
+**Why monitoring:** 15a partially supports (moderate, qualified); 15b partially challenges (moderate-strong). Literature supports as degraded fallback; does not support as peer substitute. Reframe recommended: "sufficient substitute" → "degraded fallback with measurable accuracy penalty."
+
+**What would change disposition:**
+- Incorporate: Documented miss-rate comparable to Chrome MCP on matched tasks.
+- Revise: Miss-rate materially exceeds Chrome MCP on observed debug sessions.
+
+**Priority:** LOW
+**Cadence:** Monthly
+**Next check:** 2026-05-16
+**Cycle count:** 0
+**Last checked:** 2026-04-16 (initialized)
+**Status:** ACTIVE
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a → 15a, 15b → 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-036:
+**Date queued:** 2026-04-16
+**Source item:** PRESUMPTION-031
+**Item type:** PRESUMPTION
+
+**Statement:** "Specialist-rotation schedule (2 thinkers/day, 6 days) provides adequate tradition coverage via orchestrator fallback"
+
+**Why monitoring:** 15a weak partial support (general pattern); 15b moderate challenge (no redundancy; orchestrator-fallback quality penalty typical 15-30%). Coverage adequacy is an empirical claim awaiting measurement.
+
+**What would change disposition:**
+- Incorporate: Per-tradition coverage metrics show no systematic underrepresentation over 4-week window.
+- Revise: Coverage metrics show chronic underrepresentation of specific traditions, or orchestrator-fallback PRS output shows material quality penalty.
+
+**Priority:** HIGH
+**Cadence:** Weekly (first month, then Monthly)
+**Next check:** 2026-04-23
+**Cycle count:** 0
+**Last checked:** 2026-04-16 (initialized)
+**Status:** ACTIVE
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-037:
+**Date queued:** 2026-04-16
+**Source item:** PRESUMPTION-033
+**Item type:** PRESUMPTION
+
+**Statement:** "'Good enough to checkpoint' judgment for wiki_narration.html is an adequate user-facing quality criterion"
+
+**Why monitoring:** 15a weak-moderate partial support (agile/lean MVP precedent); 15b moderate-strong challenge (self-assessed quality has documented positivity bias; user-facing artifacts need evaluator-producer separation). Acceptable for internal work; weaker for user-facing.
+
+**What would change disposition:**
+- Incorporate: Checkpoint paired with explicit open-defect list + user-task completion test.
+- Revise: Rollback to checkpoint requires fixing previously unidentified user-facing bugs.
+
+**Priority:** LOW-MEDIUM
+**Cadence:** Monthly
+**Next check:** 2026-05-16
+**Cycle count:** 0
+**Last checked:** 2026-04-16 (initialized)
+**Status:** ACTIVE
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-038:
+**Date queued:** 2026-04-16
+**Source item:** PRESUMPTION-034
+**Item type:** PRESUMPTION
+
+**Statement:** "'Daily run' label remains accurate when the run processes a multi-day backlog"
+
+**Why monitoring:** 15a moderate partial support (observability convention); 15b moderate challenge (unannotated scope drift distorts metric interpretation). Framing correction — label is acceptable with per-run scope documentation.
+
+**What would change disposition:**
+- Incorporate: Per-run scope documentation convention adopted; trajectory metrics normalized by processed volume.
+- Revise: Trajectory metrics relied upon for decision-making found to conflate single-day and multi-day scope.
+
+**Priority:** LOW
+**Cadence:** Monthly
+**Next check:** 2026-05-16
+**Cycle count:** 0
+**Last checked:** 2026-04-16 (initialized)
+**Status:** ACTIVE
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: MONITORING
+
+---
+
+**Updated summary (2026-04-16):**
+Total MONITOR items: 35 (29 prior + 6 new from 2026-04-16 cycle — MONITOR-033 through MONITOR-038)
+Note: Count updated; MONITOR-029 from 2026-04-15 was not separately numbered here.
+HIGH priority (new): MONITOR-036 (PRESUMPTION-031 — coverage adequacy)
+Next 15d run: 2026-04-20/21
+

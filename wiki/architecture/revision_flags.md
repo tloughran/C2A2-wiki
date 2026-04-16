@@ -751,3 +751,167 @@ Both 15a (no support — LLMs are stateless, no native inter-session memory) and
 **SYSTEMIC-RISK-FLAG (2026-04-15):**
 Items PRESUMPTION-024, ASSUMPTION-022, ASSUMPTION-024, ASSUMPTION-026, PRESUMPTION-020 share common vulnerability: all depend on genuineness of LLM-generated cross-tradition patterns. If LLM outputs reflect training data biases rather than genuine structural properties, all five items are compromised simultaneously. Recommend: null hypothesis testing + external validation before treating any as confirmed.
 
+
+---
+
+## 2026-04-16 CYCLE — NEW REVISE ITEMS (5)
+
+---
+
+### REVISE-[new]: ASSUMPTION-028
+**Date flagged:** 2026-04-16
+**Source item:** ASSUMPTION-028
+**Item type:** ASSUMPTION
+**Urgency:** HIGH
+
+**Statement:** "Batch 45-file ingestion is equivalent in quality to incremental 5-file daily ingestion"
+
+**What is at risk:**
+- Quality of April 16 PRS extractions across the 45 ingested files
+- FINDING-013–017 (pattern-detector findings derived from these extractions) — possibly inherit degradation
+- Trajectory metrics that compare April 16 to prior single-ingestion days
+
+**Evidence summary:**
+15a found only weak-moderate partial support; no direct literature supports equivalence. 15b found strong challenge — the decision-fatigue 82-study systematic review and LLM session-drift literature both predict degradation over sustained batches, and this is the same cluster that already flagged ASSUMPTION-027 and PRESUMPTION-026 as REVISE.
+
+**Recommended action:**
+1. A/B sample of files from the 45-file batch: re-extract incrementally, compare PRS-field agreement.
+2. Tag FINDING-013–017 with batch-ingestion provenance marker to make inherited risk visible downstream.
+3. Set an operational threshold on future backlog sizes (e.g., maximum 15 files/session) pending evidence of equivalence.
+
+**Status:** OPEN — awaits Tom review
+**Priority:** HIGH
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-[new]: ASSUMPTION-031
+**Date flagged:** 2026-04-16
+**Source item:** ASSUMPTION-031
+**Item type:** ASSUMPTION
+**Urgency:** HIGH (CRITICAL — SYSTEMIC-RISK cluster)
+
+**Statement:** "Parallel subagent processing preserves per-tradition PRS-extraction quality"
+
+**What is at risk:**
+- Validity of per-tradition extractions from parallel subagent runs
+- FINDING-013–017 (derived from parallel subagent output)
+- Any Phase 2a architectural commitments predicated on subagent parallelism preserving quality
+
+**Evidence summary:**
+15a moderate partial support (multi-agent literature endorses parallel specialists when tasks cleanly decomposable). 15b strong challenge — parallel LLM calls with shared backbone and similar prompts produce correlated outputs, not independent. This is the specific mechanism underlying the SYSTEMIC-RISK-FLAG cluster on LLM pattern genuineness.
+
+**Recommended action:**
+1. Pair this REVISE with PRESUMPTION-029 review (shared test).
+2. Design and run re-extraction experiment with prompt-diversified parallel subagents; compare finding rates.
+3. Add a null-baseline: scrambled/adversarial prompts — finding rate under null sets the floor.
+4. Hold Phase 2a commitments premised on FINDING-013–017 pending this test.
+
+**Status:** OPEN — awaits Tom review
+**Priority:** HIGHEST (CRITICAL)
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-[new]: PRESUMPTION-029
+**Date flagged:** 2026-04-16
+**Source item:** PRESUMPTION-029
+**Item type:** PRESUMPTION
+**Urgency:** HIGH (CRITICAL — SYSTEMIC-RISK cluster)
+
+**Statement:** "April 16 pattern-detector findings (13–17) are genuine signals, not artifacts of correlated subagent prompting"
+
+**What is at risk:**
+- FINDING-013, 014, 015, 016, 017 directly
+- Any downstream paper drafts, architectural decisions, or Phase 2a commitments premised on these findings
+- Extended SYSTEMIC-RISK-FLAG cluster credibility (PRESUMPTION-020, 024; ASSUMPTION-022, 024, 026, 031)
+
+**Evidence summary:**
+15a NO-SUPPORT-FOUND — the specific positive test (null-baseline, diverse-prompt genuineness comparison) has not been performed, and no literature provides equivalent. NOVELTY flagged. 15b STRONGLY CHALLENGED — apophenia, LLM hallucination, and correlated-prompt contamination literature all converge on the conclusion that shared-backbone parallel subagents produce correlated outputs by construction.
+
+**Recommended action:**
+1. **Required before Phase 2a premised on these findings:** Run null-baseline + diverse-prompt re-extraction test.
+2. Mark FINDING-013–017 as PROVISIONAL until the test completes.
+3. Treat the re-extraction protocol as the beginning of a general C2A2 null-baseline methodology.
+4. Document the test design as a candidate original contribution (NOVELTY flag — no prior literature).
+
+**Status:** OPEN — awaits Tom review
+**Priority:** HIGHEST (CRITICAL)
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-[new]: PRESUMPTION-030
+**Date flagged:** 2026-04-16
+**Source item:** PRESUMPTION-030
+**Item type:** PRESUMPTION
+**Urgency:** HIGH
+
+**Statement:** "The 8-day version-control gap (April 8–16, 189 uncommitted files) was cosmetic rather than structurally significant"
+
+**What is at risk:**
+- Provenance-protocol integrity for the gap window
+- Reliability of April 15 "fully operational" operational-health claim (measured against unversioned baseline)
+- Audit trail and reproducibility guarantees for architectural artifacts modified during the gap
+
+**Evidence summary:**
+15a NO-SUPPORT-FOUND — SE literature is essentially unanimous that VCS discipline is structural. 15b STRONGLY CHALLENGED with the same consensus. The presumption directly conflicts with C2A2's own PROVENANCE protocol, which requires chain-of-custody for all artifacts.
+
+**Recommended action:**
+1. Immediate commit + tag of current state.
+2. Document known in-gap state transitions (which files changed when; who/what touched them).
+3. Establish a commit cadence enforcement mechanism (pre-session check; scheduled reminder; automated nightly commit for in-progress work).
+4. Re-qualify any April 8–16 operational-health metrics as measured against an unversioned baseline.
+
+**Status:** OPEN — awaits Tom review
+**Priority:** HIGH
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-[new]: PRESUMPTION-032
+**Date flagged:** 2026-04-16
+**Source item:** PRESUMPTION-032
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM (mirrors PRESUMPTION-023 pattern)
+
+**Statement:** "Morning-handoff channel failures (Gmail stale, Chrome extension down) are isolated events rather than a systemic degradation of Tom's intent-signal"
+
+**What is at risk:**
+- Fidelity of Tom's intent signal reaching the agents
+- Agent prioritization aligning with Tom's actual priorities
+- Silent drift if common-cause dependency exists between the channels
+
+**Evidence summary:**
+15a NO-SUPPORT-FOUND (weak) — reliability literature permits independence but requires common-cause analysis. 15b CHALLENGED (strong) — same-day concurrent failures with plausibly shared auth/identity/network dependencies have a higher prior for common cause. This mirrors PRESUMPTION-023 (already REVISE).
+
+**Recommended action:**
+1. Common-cause analysis: timestamps, error codes, dependency graph.
+2. Add aggregated cross-channel health telemetry.
+3. Explicit "intent-signal integrity" step in morning handoff (verify with Tom that agents have latest intent).
+4. Escalation mechanism when ≥2 channels degrade in the same session.
+
+**Status:** OPEN — awaits Tom review
+**Priority:** MEDIUM
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+**Updated summary (2026-04-16):**
+Total REVISE items: 25 (20 prior + 5 new from 2026-04-16 cycle)
+HIGH priority (new): ASSUMPTION-028, ASSUMPTION-031 (CRITICAL), PRESUMPTION-029 (CRITICAL), PRESUMPTION-030
+MEDIUM priority (new): PRESUMPTION-032
+
+SYSTEMIC-RISK-FLAG cluster (extended): ASSUMPTION-022, 024, 026, 031; PRESUMPTION-020, 024, 029
+→ Re-extraction experiment with null-baseline is elevated from PROPOSED to REQUIRED for any Phase 2a decision premised on April 16 findings.
+
