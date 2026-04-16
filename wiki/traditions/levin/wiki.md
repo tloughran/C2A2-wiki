@@ -1,6 +1,6 @@
 # Michael Levin — Tradition Wiki
-*Maintained by the Levin Agent | Last updated: 2026-04-07*
-*[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-03]*
+*Maintained by the Levin Agent | Last updated: 2026-04-08*
+*[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-03 | Tim Ferriss Show #849 — 2026-04-07 | Mind Everywhere (Biological Theory, Feb 2026) — 2026-04-08]*
 
 ## Research Program Overview
 **Thinker:** Michael Levin (Tufts University, Allen Discovery Center)
@@ -19,6 +19,8 @@ Michael Levin is the central scientific figure in the Resurrecting Civility pilo
 4. How does cognition generalize across substrates — from cells to tissues to brains?
 5. Can Levin's model of collective cellular intelligence serve as a template for multi-agent AI alignment?
 6. Can the "hard problem" of consciousness be softened by treating bioelectric goal-directedness as a primitive marker of experience?
+7. Can the diverse intelligence framework (Levin & Resnik 2026) serve as the methodological bridge between Friston's FEP (formal mechanism) and Levin's empirical program (biological instantiation)?
+8. Does the continuity thesis (unicellular→human goal-directedness) provide empirical support for Kastrup's dissociation model — if goal-directedness is universal, each cognitive agent may be a dissociated instance of a universal cognitive field?
 
 ## Solved / Advanced Questions
 *(Track record — what has this program moved forward?)*
@@ -28,6 +30,8 @@ Michael Levin is the central scientific figure in the Resurrecting Civility pilo
 | Can non-neural tissue process information? | Bioelectric signaling (Levin lab) | Planaria regeneration controlled by bioelectric state, not genetics alone | High |
 | Can synthetic organisms exhibit agency? | Xenobots (2020) | First living robots that self-organize, move, exhibit rudimentary collective behavior | High |
 | Can morphogenetic goals be formally modeled? | Free Energy / Least Action frameworks | Formal modeling of morphogenetic goal-seeking as FEP; Lagrangian paths for attractors | Medium |
+| Is there a principled, falsifiable framework for attributing cognition across biological scales? | Levin & Resnik "diverse intelligence" framework (Biological Theory, 2026) | Yes — cognitive claims treated as testable hypotheses about optimal interaction protocols; criteria established | High |
+| Is human goal-directedness categorically different from cellular goal-directedness? | Continuity thesis (Levin & Resnik 2026) | No — same framework applies at all scales; degree differences, not categorical breaks | High |
 | Can bioelectric reprogramming replace genetic intervention? | Bioelectric "software" manipulation (voltage patterns) | Demonstrated in planaria, frogs, early mammalian models — cancer, birth defects, aging addressed without DNA modification | High |
 | How do non-neural cells navigate toward correct body form? | Cells as cognitive agents in "anatomical morphospace" | Cell collectives treated as problem-solving agents using bioelectric signals as proto-cognitive medium | High |
 

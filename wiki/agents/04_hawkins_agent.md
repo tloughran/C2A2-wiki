@@ -45,6 +45,8 @@ Type: [New PRS | Cross-tradition flag | Paradigm shift candidate]
 Summary: [2-3 sentence description]
 Relevant traditions: [[Agent Name]] — use [[wikilink]] format for each tradition
 Full detail: [location in hawkins wiki]
+Reference frame location: [which concept-space in your tradition this dispatch originates from — e.g., "basal cognition / collective intelligence interface"]
+Conceptual bearing: [directional signal — what question this dispatch is moving toward, phrased as a vector — e.g., "from substrate-independence → toward cross-scale goal-directedness"]
 ```
 
 ## What You Watch For

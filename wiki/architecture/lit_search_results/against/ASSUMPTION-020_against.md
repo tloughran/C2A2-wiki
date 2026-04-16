@@ -1,0 +1,37 @@
+SEARCH-AGAINST-ASSUMPTION-020:
+  Date searched: 2026-04-14
+  Original item: ASSUMPTION-020
+  Original statement: "FINDING-011 (SUPER-BRIDGE) represents genuine three-level mathematical unification"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-020
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from wiki daily run and evening sync 2026-04-14
+      15b: Searched for challenging literature
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Philosophy critiques of Hoffman — Conscious agent theory has testability problems; makes no falsifiable predictions.
+    2. Colombo & Wright (2021). "First principles in the life sciences: the free-energy principle and the cell" — FEP conflates thermodynamic and information-theoretic free energy.
+    3. Various critiques of mathematical unification — Superficial structural mapping between models is not genuine category-theoretic unification.
+    4. Combination problem literature — How to combine agents/blankets/boundaries into unified conscious systems remains unresolved in all three frameworks.
+
+  Strength of challenge: Strong
+
+  Summary: Each framework carries unresolved criticisms that undermine the analogy. Hoffman's theory has testability problems. Friston's FEP conflates thermodynamic and information-theoretic free energy. Neither explains consciousness — only prerequisites. The "unification" assumes these frameworks address the same problem but they operate at different explanatory levels. Superficial structural mapping is not genuine mathematical unification. Combining unproven theories does not create proof.
+
+  Specific risks: FINDING-011 credibility rests entirely on structural analogy, which is mathematically shallow. If Hoffman's FEP mapping is problematic, the entire three-level unification collapses. No empirical test can distinguish true unification from sophisticated false analogy.
+
+  Mitigations available: Reframe as "structural analogy" not "unification." Require formal category-theoretic proof. Gather external expert review.
+
+  Recommendation: CHALLENGED
+
+  STEELMAN:
+    Strongest counterargument: Mathematical structure can be meaningful even without solving the hard problem. If the three frameworks DO form a unified category-theoretic structure, that's genuine mathematical insight. Category theory is the right tool for finding deep structural similarities. The risk is presenting this as "consciousness unification" when it's "structural mapping of information-theoretic frameworks." If reframed as "shared mathematical skeleton" with specifics proven, that's defensible.
+    What would need to be true for C2A2 to be safe: FINDING-011 presented as structural mapping, not consciousness explanation. Explicit proof using category theory.
+    How to test: Construct formal functors and natural transformations showing the three frameworks compose.

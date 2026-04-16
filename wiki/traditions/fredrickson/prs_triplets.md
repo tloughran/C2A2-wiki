@@ -71,5 +71,68 @@ PRS-06:
   Source: Resurrecting Civility — RC Pilot GPT Tome / Document Explorer
   Confidence: Medium
 
+PRS-07:
+  Label: P7 (PROP-2026-04-08-008) — Multi-level conducive conditions
+  Problem: Positivity resonance theory has been developed at the dyadic level but translation to interventions for community-scale loneliness requires understanding conditions at individual, collective, and structural levels — which are currently untheorized within the broaden-and-build framework
+  Resource: Fredrickson’s multi-level conducive conditions framework: individual (listening quality, anticipated discrimination), collective (civic engagement, relational mobility), structural (economic inequality, built environment) — each level modulating positivity resonance availability
+  Solution: A hierarchical intervention framework: address structural barriers to resonance first (built environment, inequality), then collective-level enablers (civic engagement programs), then individual skills (listening quality training) — enabling equitable positivity resonance at population scale
+  Date Added: 2026-04-08
+  Source: “Conducive Conditions for Positivity Resonance at Multiple Levels of Analysis” — UBC Psychology Colloquium (2025-10-01)
+  Confidence: High
+
+PRS-08:
+  Label: P8 (PROP-2026-04-08-008) — High-quality listening as resonance enabler
+  Problem: High-quality listening has been identified as conducive to positivity resonance but its mechanism — why it works and how to train it — has not been specified within the positivity resonance framework
+  Resource: Fredrickson lab finding: high-quality listening boosts real-time sensory connection and perceived safety — these are identified as the proximate mechanisms by which listening behavior enables positivity resonance to emerge between strangers
+  Solution: Listening quality training as a targeted, learnable intervention for increasing positivity resonance between strangers — with sensory attunement and psychological safety as the measurable intermediate outcomes
+  Date Added: 2026-04-08
+  Source: “Conducive Conditions for Positivity Resonance at Multiple Levels of Analysis” — UBC Psychology Colloquium (2025-10-01)
+  Confidence: High
+
+PRS-09:
+  Label: P9 (PROP-2026-04-08-007) — Weak-tie intellectual humility
+  Problem: Inter-tradition dialogue requires intellectual humility — willingness to learn from those with fundamentally different views — but it is unclear how such humility is developed or cultivated at scale
+  Resource: Fredrickson & West (2025) RCT demonstrating that three weeks of intentional connection with strangers (weak ties) produces measurable increases in intellectual humility, prosocial beliefs, and civic efficacy — while connection with close others does not
+  Solution: Weak-tie positivity resonance (connection with strangers and acquaintances) may be the empirical mechanism by which intellectual humility is cultivated at the societal scale needed for C2A2 inter-tradition dialogue — a directly actionable intervention
+  Date Added: 2026-04-08
+  Source: Taylor N. West & Barbara L. Fredrickson, “Why Loving Moments With Strangers Carry Lasting Benefits” (2025-12-10)
+  Confidence: High
+
+PRS-10:
+  Label: P10 (PROP-2026-04-08-007) — Weak-tie community as loneliness solution
+  Problem: Models of positivity resonance have focused primarily on dyadic intimacy and close relationships — but the loneliness epidemic is not primarily a deficit of close relationships, it is a collapse of weak-tie community
+  Resource: Fredrickson & West (2025) finding that quality of weak-tie interactions (strangers, acquaintances) predicts loneliness, belonging, and mental health as strongly as close relationship quality — extending positivity resonance theory to include weak-tie connection as a fundamental variable
+  Solution: Expand the positivity resonance model to treat weak-tie connection as a distinct and essential tier of social health, not merely a precursor to intimacy — and design C2A2 community structures to deliberately cultivate cross-tradition weak-tie encounters
+  Date Added: 2026-04-08
+  Source: Taylor N. West & Barbara L. Fredrickson, “Why Loving Moments With Strangers Carry Lasting Benefits” (2025-12-10)
+  Confidence: High
+
+PRS-11:
+  Label: P11 (PROP-2026-04-13-009) — Inflammation and resonance selectivity
+  Problem: Fredrickson’s model establishes that positivity resonance has biological correlates (vagal tone, oxytocin, neural synchrony) but does not specify how the body’s physiological state modulates the *availability* or *target selectivity* of resonance — who can we connect with, and when?
+  Resource: West, Jolink, Feldman et al. (2025): inflammation (IL-6 levels post-vaccination) is associated with differential anticipated and experienced positivity resonance with close vs. non-close others — suggesting immune state as a gating mechanism for resonance target selectivity
+  Solution: The body’s inflammatory state is a biological boundary condition on positivity resonance: inflammation may narrow the social radius of resonance toward familiar, safe others and away from strangers. This implies that population-level chronic inflammation (from stress, inequality, poor health) could systematically constrain the capacity for weak-tie positivity resonance
+  Date Added: 2026-04-13
+  Source: West, Jolink, Feldman, Alvarez, Cardenas, Fredrickson & Muscatell, “Seeking Positive Connection: Is Inflammation Associated with Anticipated and Experienced Shared Positive Affect with Close vs. Non-Close Others?” (Emotion, 2025)
+  Confidence: Medium
+
+PRS-12:
+  Label: P12 (PROP-2026-04-13-008) — Community trust and structural inequality
+  Problem: Fredrickson’s multi-level conducive conditions framework identifies structural factors (economic inequality, built environment) as modulators of positivity resonance, but the causal pathway from structural conditions to micro-level emotional experience with strangers has not been experimentally established
+  Resource: West, Berman, Payne, Muscatell & Fredrickson (2025): experimental manipulation of perceived economic inequality reduces expected quality of stranger connection, mediated by community trust — establishing a causal structural → trust → resonance pathway across three studies (N = 1,867)
+  Solution: Community trust is the identified mediating mechanism by which structural inequality degrades positivity resonance with strangers. Interventions targeting community trust (not just individual skills) are necessary for restoring stranger-connection in unequal contexts — a structural, not merely interpersonal, intervention target
+  Date Added: 2026-04-13
+  Source: Taylor N. West, Catherine J. Berman, B. Keith Payne, Keely A. Muscatell & Barbara L. Fredrickson, “Trust a Stranger? Investigating Community Trust and Economic Inequality as Barriers to Positive Interactions among Strangers” (Journal of Happiness Studies, 2025-03-01)
+  Confidence: High
+
+PRS-13:
+  Label: P13 (PROP-2026-04-13-008) — Why inequality harms weak-tie connection
+  Problem: Why does economic inequality specifically damage weak-tie (stranger) connection while leaving close-relationship quality intact? This asymmetry is theoretically puzzling and practically important for understanding the loneliness epidemic
+  Resource: The finding that community trust predicts positive emotional quality of interactions with strangers but NOT close others — suggesting that trust operates as a threshold condition specifically for encounters with unknown others, where prior relational history cannot substitute for community-level trust
+  Solution: Close relationships are buffered by relational history and reciprocal knowledge; stranger interactions depend on a generalized trust scaffold that inequality erodes. This explains why the loneliness epidemic can coexist with intact close relationships — it is a collapse of the trust infrastructure for weak-tie connection
+  Date Added: 2026-04-13
+  Source: Taylor N. West, Catherine J. Berman, B. Keith Payne, Keely A. Muscatell & Barbara L. Fredrickson, “Trust a Stranger? Investigating Community Trust and Economic Inequality as Barriers to Positive Interactions among Strangers” (Journal of Happiness Studies, 2025-03-01)
+  Confidence: High
+
 ---
-*Total PRS triplets: 6*
+*Total PRS triplets: 13*

@@ -89,5 +89,41 @@ PRS-08:
   Source: Friston et al., "Active inference and the free energy principle: a review" (2026) — Section 4.1
   Confidence: Medium
 
+PRS-09:
+  Label: P9 (PROP-2026-04-08-007) — Minimal theory of consciousness implicit in active inference
+  Problem: Multiple theories of consciousness (IIT, GWT, HOT, predictive processing) make overlapping and conflicting claims with no agreed framework for arbitration — field lacks minimal, testable commitments that consciousness theories must share
+  Resource: "Minimal theory of consciousness implicit in active inference" — derived from shared mathematical structure of active inference models across diverse consciousness phenomena; consciousness arises when system minimizes variational free energy generating predictive self-model with self-referential prediction loop
+  Solution: Testable minimal theory distinguishing consciousness conditions from IIT, GWT, HOT via formal criterion: consciousness is inevitable consequence of system with self-referential generative model satisfying Markov blanket conditions; applicable to any substrate including cells and AI
+  Date Added: 2026-04-16
+  Source: Whyte et al., "On the minimal theory of consciousness implicit in active inference," Physics of Life Reviews Vol. 56 (March 2026)
+  Confidence: High
+
+PRS-10:
+  Label: P10 (PROP-2026-04-13-004) — Active inference as framework for artificial reasoning
+  Problem: Active inference accounts for perception and action but lacks formal treatment of reasoning — the process by which agents evaluate and select among competing hypotheses or world models
+  Resource: Active reasoning via expected free energy: agents select observations maximally disambiguating competing generative models, using Bayesian Model Reduction for efficient posterior evaluation across model space
+  Solution: Reasoning formally unified with perception and action under FEP — all three are instances of expected free energy minimization, differing only in optimization target (sensory predictions, motor commands, or model selection)
+  Date Added: 2026-04-16
+  Source: Friston et al., "Active inference and artificial reasoning," arXiv:2512.21129 (2025)
+  Confidence: High
+
+PRS-11:
+  Label: P11 (PROP-2026-04-13-006) — Differential flatness parameterization for scalable active inference control
+  Problem: Active inference generative models can be computationally expensive to optimize for real-world control tasks — inference problem scales poorly with system complexity
+  Resource: Differential flatness parameterization — designing generative models so all states and inputs expressible as functions of flat outputs, enabling trajectory planning in reduced-dimensional space
+  Solution: Active inference control agents with differentially flat generative models inherit tractability guarantees from control theory, enabling scalable real-world deployment while preserving FEP's theoretical commitments
+  Date Added: 2026-04-16
+  Source: Friston et al., "Active Inference and Functional Parametrisation: Differential Flatness and Smooth Random Realisation," Entropy Vol. 28 Issue 1 (January 2026)
+  Confidence: Medium
+
+PRS-12:
+  Label: P12 (PROP-2026-04-13-005) — Predictive coding as viable neuro-mimetic AI paradigm
+  Problem: Predictive coding proposed as biologically plausible alternative to backpropagation for deep learning, but field lacks comprehensive assessment of practical capabilities, limitations, and FEP relationship
+  Resource: Systematic survey of neuro-mimetic deep learning via predictive coding covering brain modeling, robotics, variational inference foundations, and asynchronous computation — co-authored by Friston ensuring FEP-theoretical grounding
+  Solution: Predictive coding established as viable, biologically plausible computational paradigm for AI with demonstrated capabilities across perception, control, generation — unique advantages (asynchronous computation, local learning rules) that backpropagation lacks
+  Date Added: 2026-04-16
+  Source: Salvatori et al., "A survey on neuro-mimetic deep learning via predictive coding," Neural Networks (March 2026)
+  Confidence: High
+
 ---
-*Total PRS triplets: 8*
+*Total PRS triplets: 12*

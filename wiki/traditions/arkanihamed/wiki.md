@@ -1,6 +1,6 @@
 # Nima Arkani-Hamed — Tradition Wiki
-*Maintained by the Nima Arkani-Hamed Agent | Last updated: 2026-04-05*
-*[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05 (partial — referenced in Hoffman section; no dedicated PRS section in current source)]*
+*Maintained by the Nima Arkani-Hamed Agent | Last updated: 2026-04-08*
+*[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05 (partial) | UNIVERSE+ School Les Houches lectures — 2026-04-08 (first dedicated primary source)]*
 
 ## Research Program Overview
 **Thinker:** Nima Arkani-Hamed (IAS Princeton, Harvard)
@@ -18,6 +18,8 @@ Nima Arkani-Hamed appears in the RC Pilot document primarily as the physicist wh
 3. Can the non-spacetime structure of amplituhedron physics be related to Wolfram's hypergraph framework?
 4. What is the relationship between the amplituhedron's pre-geometric structure and Hoffman's conscious agent mathematics?
 5. Is 'mathematical beauty' (inevitability of result) a valid epistemic criterion in pre-empirical fundamental physics?
+6. Can positive geometry be extended to cosmological correlators as a universal language for both QM and spacetime? (UNIVERSE+ 2026 program)
+7. Is there a connection between positive geometry's combinatorial structures and Wolfram's rulial graph — two independent post-spacetime programs converging on similar structures?
 
 ## Solved / Advanced Questions
 *(Track record)*
@@ -26,6 +28,8 @@ Nima Arkani-Hamed appears in the RC Pilot document primarily as the physicist wh
 |----------|---------------------|--------------|------------|
 | Can particle scattering be computed without spacetime scaffolding? | Amplituhedron (Arkani-Hamed & Trnka 2013) | Yes — full scattering amplitude computation in N=4 SYM without locality/unitarity as inputs | High |
 | Is spacetime fundamental? | On-shell methods and positive geometry | Strongly challenged — locality and unitarity are derived, suggesting spacetime is not rock-bottom | High |
+| Is there a positive geometry framework more general than the amplituhedron? | UNIVERSE+ program (2026) — positive geometry covering cosmological correlators | Yes — amplituhedron is one instance of a broader framework encompassing QM and spacetime | High |
+| Can QM amplitudes be expressed as geometric volumes without spacetime? | Amplituhedron geometry generalized to cosmological correlators | Yes — demonstrated in N=4 SYM; UNIVERSE+ extends to cosmology | Medium |
 
 ## PRS Triplets
 *See `prs_triplets.md` for full list*

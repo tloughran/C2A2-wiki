@@ -89,5 +89,68 @@ PRS-08:
   Source: Tim Ferriss Show #849, Michael Levin interview (January 21, 2026)
   Confidence: High
 
+PRS-09:
+  Label: P9 (PROP-2026-04-08-003) — Principled framework for cognitive attribution across scales
+  Problem: Biology lacks a unified, empirically tractable framework for deciding when teleological and cognitive language applies — leading to ad hoc attributions of agency and goal-directedness
+  Resource: Levin & Resnik's "diverse intelligence" framework — a systematic approach defining goal-directedness by reference to conceptual and empirical toolkits (not metaphysical commitments), treating cognitive claims as testable hypotheses about optimal interaction protocols; published in Biological Theory, February 25, 2026
+  Solution: A principled, falsifiable, non-vitalist basis for attributing teleology and cognition to biological systems at any scale — from molecules to multicellular organisms — enabling consistent application of cognitive neuroscience tools to morphogenetic systems
+  Date Added: 2026-04-08
+  Source: Levin & Resnik, "Mind Everywhere: A Framework for Conceptualizing Goal-Directedness in Biology and Other Domains (Parts 1 & 2)," Biological Theory, 2026-02-25
+  Confidence: High
+
+PRS-10:
+  Label: P10 (PROP-2026-04-08-003) — Continuity of human and unicellular goal-directedness
+  Problem: Human goal-directedness is typically treated as categorically different from biological goal-directedness in non-neural organisms — creating a gap that neither neuroscience nor biology can bridge on current assumptions
+  Resource: Continuity thesis: human goal-directedness is on a spectrum with unicellular goal-directed behavior — no categorical break, only degree differences in complexity of represented goals, memory, and interaction protocols
+  Solution: A research program tracing goal-directedness from unicellular origins to human cognition, enabling cross-scale application of the same conceptual and experimental tools — making "cognition" a graded, measurable property rather than a binary predicate; resolves the mechanistic gap between molecular biology and cognitive science
+  Date Added: 2026-04-08
+  Source: Levin & Resnik, "Mind Everywhere," Biological Theory, 2026-02-25 (framework principle 4: "continuity of human goal-directedness with unicellular origins")
+  Confidence: High
+
+PRS-11:
+  Label: P11 (PROP-2026-04-08-005) — Cancer as dissociative identity disorder of the body
+  Problem: Cancer is modeled as genetic hardware failure (somatic mutation), which misses the bioelectrical software layer governing cooperative cell behavior — leading to treatments targeting symptoms rather than organizational breakdown
+  Resource: Reframing cancer as "dissociative identity disorder of the body" — the bioelectric network fails to maintain collective identity and cells revert to selfish unicellular behavior, losing integration into organismal community
+  Solution: A therapeutic paradigm targeting restoration of bioelectric identity coherence in tumor microenvironments — conceptually continuous with psychiatric frameworks of dissociation at the cellular scale, opening new pharmacological and electrophysiological treatment vectors
+  Date Added: 2026-04-16
+  Source: Mayim Bialik's Breakdown podcast, Michael Levin interview (March 10, 2026)
+  Confidence: High
+
+PRS-12:
+  Label: P12 (PROP-2026-04-08-005) — Mind blindness as epistemic obstacle
+  Problem: Science and medicine systematically fail to recognize intelligence in non-standard substrates (xenobots, cell collectives, morphogenetic fields) — a cognitive bias termed "mind blindness" — creating barriers to leveraging diverse intelligence in medicine and AI
+  Resource: Mind blindness as formal epistemic obstacle: failure to apply cognitive/teleological vocabulary to entities that don't resemble human/animal nervous systems, even when functional profiles warrant it; C2A2 tradition-accelerator explicitly designed to overcome this
+  Solution: Research and communication program to overcome mind blindness using synthetic organisms as model systems for training researchers and AI agents to interact with, predict, and collaborate with unconventional cognitive systems
+  Date Added: 2026-04-16
+  Source: Mayim Bialik's Breakdown podcast, Michael Levin interview (March 10, 2026)
+  Confidence: High
+
+PRS-13:
+  Label: P13 (PROP-2026-04-08-006) — Search efficiency as substrate-agnostic intelligence metric
+  Problem: Biological intelligence is asserted but not measurable — cognitive claims for non-neural systems remain contested because no quantitative metric for "how intelligent" a system is exists across substrates
+  Resource: Search efficiency metric: log₁₀(cost of random walk / cost of biological agent policy) in problem space — measures orders-of-magnitude savings over maximal-entropy search, applicable to any system navigating any problem space
+  Solution: Substrate-agnostic, empirically measurable definition of intelligence placing amoebae, planaria, neurons, and communities on continuous scale — empirical results showing 200× to sextillion-fold efficiency gains even in "simple" organisms
+  Date Added: 2026-04-16
+  Source: Chis-Ciure & Levin, "Cognition all the way down 2.0," Synthese Vol. 206 (2025)
+  Confidence: High
+
+PRS-14:
+  Label: P14 (PROP-2026-04-13-002) — Evolution with memory via diffusion-model evolutionary strategy
+  Problem: Evolutionary algorithms lack memory — each generation starts fresh, losing subtle correlations and historical information that could accelerate convergence
+  Resource: CHARLES-D framework — integrating diffusion models (which retain learned data distributions) with evolutionary algorithms, giving evolution "deep memory" across generations
+  Solution: Evolutionary optimization with memory and conditional generation achieves faster convergence to high-fitness solutions while maintaining diversity, with computational analogue to Levin's biological thesis that evolution works better when agents can remember and predict
+  Date Added: 2026-04-16
+  Source: Hartl, Zhang, Hazan, & Levin, "Heuristically Adaptive Diffusion-Model Evolutionary Strategy," Advanced Science (2026)
+  Confidence: High
+
+PRS-15:
+  Label: P15 (PROP-2026-04-13-001, PROP-2026-04-13-003) — Neurobots and bioelectric-gene expression coupling
+  Problem: Two complementary gaps: (1) Can engineered living systems develop functional nervous systems that self-organize without evolutionary templates? (2) Mechanism by which bioelectric states control gene expression at multicellular level lacks formal computational modeling
+  Resource: (1) Neurobots — xenobot-derived organisms with implanted neural precursor cells self-organizing into functional neural networks; (2) Computational model of bioelectricity-transcription interplay showing membrane potential shifts enable gene expression state transitions and community effects scale single-cell control to multicellular coordination
+  Solution: Integrated framework showing neural and non-neural cognition on continuum; formal predictive model for top-down bioelectric control of gene expression generating testable predictions about membrane voltage, polarization state, and multicellular gene coordination
+  Date Added: 2026-04-16
+  Source: Fotowat, Levin et al., "Engineered Living Systems with Self-Organizing Neural Networks," Advanced Science (2026); Cervera, Levin & Mafe, "Top-down perspectives on cell membrane potential and protein transcription," Scientific Reports Vol. 16 (2026)
+  Confidence: High
+
 ---
-*Total PRS triplets: 8*
+*Total PRS triplets: 15*

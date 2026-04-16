@@ -71,5 +71,68 @@ PRS-06:
   Source: Resurrecting Civility — RC Pilot GPT Tome / Document Explorer
   Confidence: Medium
 
+PRS-07:
+  Label: P7 (Inbox — Hoffman/Prakash Trace Logic Talk, Thoughtforms Life) — Trace logic as multiscale logic of minimal surprise
+  Problem: No unified formal framework exists for multiscale collective intelligence — existing models (IIT, active inference, Global Workspace) each capture one scale or aspect but lack a single mathematical object that generates all of them
+  Resource: Trace logic — a partial order on all Markov chains defined by the trace operation (M ≤ N iff M is the zero-surprise view of N); globally non-Boolean but locally Boolean for any fixed chain; generates a 2^n-element Boolean logic of observer windows for any n-state system
+  Solution: A single mathematical definition (trace order) yields a multiscale logic of minimal surprise for arbitrary dynamical systems, positioning ITP, Conscious Realism, active inference, and quantum logic as special cases or limiting descriptions of trace-logic dynamics
+  Date Added: 2026-04-14
+  Source: Hoffman & Prakash, "A Multiscale Logic of Collective Intelligence," Thoughtforms Life (Levin, host), April 2026
+  Confidence: High
+
+PRS-08:
+  Label: P8 (Inbox — Hoffman/Prakash Trace Logic Talk) — Recursive agency as policy on the trace logic itself
+  Problem: The conscious agent theory's original notion of agency (perception-decision-action 6-tuple) lacks a recursive, scale-free mechanism for constructing deeper levels of agency, meta-agency, and self
+  Resource: Recursive trace logic — agency is formalized as a Markov matrix (policy) operating on the trace logic of observer windows; meta-policies are policies on policies; the recursion generates an infinite hierarchy of trace logics, each with novel structure
+  Solution: A recursive notion of agency where actions = changes in which observer window you adopt, policies = probabilistic strategies over windows, and meta-policies = strategies over strategies — yielding a mathematically precise hierarchy from proto-agency (goal-directed Markov convergence) through full recursive self-modeling
+  Date Added: 2026-04-14
+  Source: Hoffman & Prakash, "A Multiscale Logic of Collective Intelligence," Thoughtforms Life (Levin, host), April 2026
+  Confidence: High
+
+PRS-09:
+  Label: P9 (Inbox — Hoffman/Prakash Trace Logic Talk) — λ₂ intelligence metric and community structure
+  Problem: Intelligence lacks a formally derived, substrate-independent quantitative metric that captures both convergence rate (how fast a system achieves its goal) and community structure (how nested sub-goals relate to the overarching goal)
+  Resource: λ₂ (the second-largest eigenvalue of a Markov matrix) as a derived intelligence metric; connection to Levin's measure K; community structure of Markov chains (eigenvector analysis) as formal model of sub-goal hierarchy
+  Solution: A quantitative intelligence metric that applies at any scale of the trace-logic hierarchy, connects to empirical measures of biological intelligence, and captures the tradeoff between speed-to-goal and sub-goal flexibility through community structure analysis
+  Date Added: 2026-04-14
+  Source: Hoffman & Prakash, "A Multiscale Logic of Collective Intelligence," Thoughtforms Life (Levin, host), April 2026
+  Confidence: Medium
+
+PRS-10:
+  Label: P10 (Inbox — Hoffman/Prakash Trace Logic Talk) — Trace blankets subsume Markov blankets; FEP as special case of trace logic
+  Problem: Friston's Markov blankets (defined for directed acyclic graphs) do not capture the full structure of agent/environment boundaries in cyclic, dynamical systems — and the relationship between conscious agent theory and active inference is unclear
+  Resource: Trace blankets — the boundary structure induced by the trace order on interacting agent systems; defined for Markov chains (cyclic graphs with probability labels), strictly generalizing Markov blankets from acyclic to cyclic graphs
+  Solution: A formal demonstration that Friston's active inference / Markov blanket formalism is a special case or limiting description of the more general trace-logic framework — grounding FEP within conscious agent theory and establishing that active inference agents ARE conscious agents at a specific level of description
+  Date Added: 2026-04-14
+  Source: Hoffman & Prakash, "A Multiscale Logic of Collective Intelligence," Thoughtforms Life (Levin, host), April 2026
+  Confidence: Medium-High
+
+PRS-11:
+  Label: P11 (PROP-2026-04-08-007) — Quantum Interface Theory: quantum mechanics as interface phenomena
+  Problem: Quantum mechanics treated as fundamental description of physical reality, but features (superposition, entanglement, observer effects) resist interpretation for 100 years — no consensus on what QM says reality actually is
+  Resource: Quantum Interface Theory (QIT) — quantum-mechanical features are artifacts of perceptual interface; what conscious agents observe when interacting with network of other conscious agents through fitness-tuned interface
+  Solution: QM reinterpreted as precise mathematical description of interface itself rather than reality beyond interface — resolves measurement problem and observer-dependence by locating them in agent's interface, not physical reality; decoherence becomes interface rendering operation
+  Date Added: 2026-04-16
+  Source: Prentner, "Quantum Interface Theory: From Conscious Agents to Quantum Dynamics," Journal of Consciousness Studies Vol. 33 Issue 1 (2026)
+  Confidence: High
+
+PRS-12:
+  Label: P12 (PROP-2026-04-08-007) — Quantum conscious agents formalism bridges algebra and physics
+  Problem: Conscious agent framework (from "Fusions of Consciousness," 2023) describes agent dynamics in abstract mathematical terms, but connection to actual mathematical structure of physics (Hilbert spaces, operators, density matrices) remains informal
+  Resource: "Quantum conscious agents" formalism — mapping Markovian conscious agent dynamics onto quantum state spaces via decorated permutations, treating measurement as quantum instrument
+  Solution: Precise mathematical bridge between Hoffman's conscious agent algebra and quantum mechanics, grounding QIT in established formalism rather than analogy; connects to amplituhedron research program
+  Date Added: 2026-04-16
+  Source: Prentner, "Quantum Interface Theory," Journal of Consciousness Studies (2026)
+  Confidence: High
+
+PRS-13:
+  Label: P13 (PROP-2026-04-14-002) — Spacetime bounds on unified consciousness
+  Problem: Conscious Realism lacks constraints on which physical systems can support unified consciousness — without bounds, theory risks unfalsifiability; scale limits undetermined
+  Resource: Chord and Arpeggio conditions — mathematical formalizations deriving size limits for conscious systems from signal speed, exchange architecture, and temporal window constraints; D ≤ κvθ as hard constraint under Chord condition
+  Solution: Principled, physics-grounded framework for determining which systems (biological, artificial, hybrid) can support unified conscious experience; constrains cloud-hosted AI and brain-computer interfaces by co-instantiation and latency; makes Conscious Realism empirically constrainable
+  Date Added: 2026-04-16
+  Source: Hoffman, "Spacetime Bounds on Consciousness," Preprints.org (March 13, 2026)
+  Confidence: High
+
 ---
-*Total PRS triplets: 6*
+*Total PRS triplets: 13*

@@ -71,5 +71,50 @@ PRS-06:
   Source: Resurrecting Civility — RC Pilot GPT Tome / Document Explorer
   Confidence: Medium
 
+PRS-07:
+  Label: P7 (PROP-2026-04-08-004) — Analytic Idealism applied to psychopathology
+  Problem: Psychiatry faces a conceptual impasse: despite decades of neuroscientific research, mental disorders remain contested and therapeutically limited — indicating the underlying materialist framework may be insufficient
+  Resource: Analytic Idealism's dissociation model applied clinically: mental disorders reframed as disturbances in the dissociative boundary between the individual alter and universal consciousness — not brain malfunctions but boundary dysregulation; published at Essentia Foundation, January 2, 2026
+  Solution: A new interpretive framework enabling deconstruction of existing neuroscientific data under an idealist ontology, generating novel therapeutic hypotheses focused on boundary modulation — opening research directions unavailable under physicalism
+  Date Added: 2026-04-08
+  Source: "Could Analytic Idealism offer a new framework for psychopathology?" Essentia Foundation, 2026-01-02
+  Confidence: Medium
+
+PRS-08:
+  Label: P8 (PROP-2026-04-08-007) — The Daimon as principle of individuation
+  Problem: Analytic idealism risks appearing as unfounded speculation if it cannot account for why individuals have different characters, callings, and destinies — if all individual minds are alters of one universal consciousness, what explains the specificity and irreducibility of personal identity?
+  Resource: Kastrup's "The Daimon and the Soul of the West" (Iff Books/Simon & Schuster, September 2025): the Daimon as the principle of individuation — each individual is not merely a generic dissociated alter but a specifically characterized one, with its own Daimonic signature
+  Solution: A philosophically grounded account of personal identity, character, and vocation consistent with consciousness monism — the tension between "we are all one consciousness" and "I am irreducibly myself" is dissolved through the Daimonic model of patterned, meaningful dissociation
+  Date Added: 2026-04-16
+  Source: "The Daimon and the Soul of the West: Finding Identity, Meaning, and Purpose in a Sacrificial Life" (Kastrup, 2025); PROP-2026-04-08-007
+  Confidence: High
+
+PRS-09:
+  Label: P9 (PROP-2026-04-09-002) — Representation versus participatory encounter
+  Problem: Kastrup's "dashboard of perception" metaphor — individual minds as screens presenting representations of universal consciousness — faces the objection that representation implies a mechanistic data-reading relation, missing the qualitative "participation" and genuine encounter that characterize lived conscious experience
+  Resource: Iain McGilchrist's counter-proposal (With Reality in Mind dialogue, April 7, 2026): perception is participatory, not representational — the perceiver is embedded in a field of consciousness, and the encounter is real two-way contact, not one-way display-reading
+  Solution: Kastrup's analytic idealism may need refinement to distinguish two modes of "screening": (a) left-hemisphere mode (data-reading, representation, abstraction) — genuinely dashboard-like; (b) right-hemisphere mode (participation, encounter, embeddedness) — ontologically primary; this incorporates McGilchrist's hemispheric distinction into Kastrup's framework
+  Date Added: 2026-04-16
+  Source: "Iain McGilchrist, Bernardo Kastrup: to perceive is to participate in reality" (With Reality in Mind, April 7, 2026); PROP-2026-04-09-002
+  Confidence: Medium
+
+PRS-10:
+  Label: P10 (PROP-2026-04-15-005) — Idealism as empirical consciousness science framework
+  Problem: Analytic idealism risks being dismissed as unfalsifiable metaphysics if it cannot engage productively with empirical neuroscience — specifically, it needs to show how consciousness-first ontology generates testable predictions that differ from physicalist alternatives
+  Resource: The Koch-Kastrup dialogue (Essentia Foundation, February 20, 2026): Christof Koch's Integrated Information Theory provides empirically grounded consciousness science; the convergence of psychedelic experiences across individuals as a potential empirical window into shared consciousness substrate
+  Solution: A possible bridge between IIT and analytic idealism: high-Φ states could correspond to porous dissociative boundaries; dissociation degree correlates with integrated information measurements — making idealism testable against IIT while respecting both frameworks' empirical rigor
+  Date Added: 2026-04-16
+  Source: "The danger of Idealism: A broad conversation with Bernardo Kastrup — Essentia Foundation (with Christof Koch)" (February 20, 2026); PROP-2026-04-15-005
+  Confidence: Speculative
+
+PRS-11:
+  Label: P11 (PROP-2026-04-15-004) — Continuation of idealist time debate
+  Problem: If time is illusory within analytic idealism (time is a representation in universal consciousness, not ontologically real), then the traditions that humans participate in — with their genuine historical depth and cross-generational transmission — lack ontological grounding beyond phenomenal appearance
+  Resource: Second Kastrup-McGilchrist dialogue (With Reality in Mind, April 14, 2026) — continuing the tensions identified in the April 7 session, expected to develop the representation/participation debate and introduce the daimon concept as a bridge between systematic and personal philosophy
+  Solution: For analytic idealism to support C2A2's tradition-accelerator project, Kastrup may need to develop an account of why temporal structure of traditions is not merely illusory — perhaps via the argument that patterned dissociation (the alter's structure) is itself temporal in a way that is real within universal consciousness
+  Date Added: 2026-04-16
+  Source: "Iain McGilchrist & Bernardo Kastrup in conversation — With Reality in Mind (Session 2)" (April 14, 2026); PROP-2026-04-15-004
+  Confidence: Speculative
+
 ---
-*Total PRS triplets: 6*
+*Total PRS triplets: 11*

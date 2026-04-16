@@ -16,6 +16,16 @@
               "icon": "lucide-git-fork",
               "title": "Graph view"
             }
+          },
+          {
+            "id": "452f3f08a7e93e51",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
         ]
       }
@@ -179,12 +189,43 @@
   },
   "active": "1bf1ef4eb79334e6",
   "lastOpenFiles": [
-    "review/2026-04-08_review.html",
-    "inbox/proposals/pending/2026-04-08_kastrup_idealism-psychopathology.md",
-    "inbox/proposals/pending/2026-04-08_levin_mind-everywhere-goal-directedness.md",
-    "inbox/proposals/pending/2026-04-08_mcgilchrist_sophia-lectures-wholeness-cosmos.md",
-    "inbox/proposals/pending/2026-04-08_arkanihamed_universe-school-les-houches.md",
-    "Untitled.canvas",
-    "master/C2A2_master_wiki.md"
+    "architecture/lit_search_results/against/ASSUMPTION-005_against.md",
+    "wiki_narration.html",
+    "architecture/daily_sync/chat_to_cowork/2026-04-16_chat_summary.md",
+    "review/2026-04-16_review.html",
+    "inbox/proposals/pending/2026-04-16_carroll_oliver-self-knowing.md",
+    "inbox/proposals/pending/2026-04-16_levin_platonic-space-symposium.md",
+    "flags/cross_signals_2026-04-16_batch2.md",
+    "flags/cross_signals_2026-04-16_batch1.md",
+    "flags/cross_signals_2026-04-16_batch3.md",
+    "review/archive/2026-04-14_decisions.md",
+    "inbox/2026-04-15_mcgilchrist_unbelievable-faith-meaning-crisis-culture.md",
+    "inbox/2026-04-15_mcgilchrist_seen-unseen-philosophical-influencers.md",
+    "inbox/2026-04-15_mcgilchrist_auron-macintyre-modernity-rewires-brain.md",
+    "inbox/2026-04-15_kastrup_mcgilchrist-wrim-session2-april14.md",
+    "inbox/2026-04-15_kastrup_koch-mystical-experience-essentia.md",
+    "inbox/2026-04-14_hoffman_spacetime-bounds-consciousness.md",
+    "inbox/2026-04-14_hawkins_thousand-brains-systems-evaluation.md",
+    "inbox/2026-04-13_wolfram_future-qa-consciousness-ai.md",
+    "inbox/2026-04-13_wolfram_foundation-tool-cag-llm.md",
+    "inbox/2026-04-13_stump_seven-cardinal-virtues-holy-spirit.md",
+    "inbox/2026-04-13_levin_topdown-membrane-potential-transcription.md",
+    "inbox/2026-04-13_levin_neurobots-self-organizing-neural-networks.md",
+    "inbox/2026-04-13_levin_charles-d-diffusion-evolutionary-strategy.md",
+    "inbox/2026-04-13_friston_neuro-mimetic-predictive-coding-survey.md",
+    "inbox/2026-04-13_friston_differential-flatness-active-inference.md",
+    "inbox/2026-04-13_friston_active-inference-artificial-reasoning.md",
+    "inbox/2026-04-13_fredrickson_trust-stranger-community-inequality.md",
+    "inbox/2026-04-13_fredrickson_inflammation-positivity-resonance-close-nonclose.md",
+    "review/2026-04-14_review.html",
+    "inbox alias",
+    "inbox/ISME version - 4 Models of Cultural Exchange - Loughran.docx",
+    "inbox/ISME 2025 draft presentation.pptx",
+    "architecture/AGENT-15b-COMPLETION-REPORT.txt",
+    "review/RC_",
+    "review/untitled folder",
+    "Untitled.base",
+    "Untitled 1.canvas",
+    "Untitled.canvas"
   ]
 }

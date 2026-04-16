@@ -109,7 +109,7 @@ prop_cards = ""
 sidebar_items = ""
 
 for i, p in enumerate(proposals):
-    pid   = p.get("proposal_id", f"PROP-{run_date}-{i+1:03d}")
+    pid   = f"PROP-{run_date}-{i+1:03d}"  # Always sequential — agent-assigned IDs collide
     thinker = p.get("thinker", "Unknown")
     title = p.get("source_title", "Untitled")
     stype = p.get("source_type", "source").upper()
@@ -296,7 +296,7 @@ function updateProgress() {{
 
 function submitDecisions() {{
   const lines = ['DECISIONS:'];
-  const pids = {list(p.get('proposal_id', f'PROP-{run_date}-{i+1:03d}') for i,p in enumerate(proposals))!r};
+  const pids = {[f'PROP-{run_date}-{i+1:03d}' for i in range(len(proposals))]!r};
   pids.forEach(pid => {{
     const d = decisions[pid] || 'PENDING';
     const n = notes[pid] ? ' | ' + notes[pid] : '';

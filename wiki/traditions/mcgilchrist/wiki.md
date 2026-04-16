@@ -1,6 +1,6 @@
 # Iain McGilchrist — Tradition Wiki
-*Maintained by the Iain McGilchrist Agent | Last updated: 2026-04-05*
-*[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05]*
+*Maintained by the Iain McGilchrist Agent | Last updated: 2026-04-08*
+*[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05 | Sophia Lectures (Ralston College, March 2026) — 2026-04-08]*
 
 ## Research Program Overview
 **Thinker:** Iain McGilchrist (Psychiatrist, neuroscientist, literary scholar)
@@ -19,6 +19,8 @@ Iain McGilchrist is the tradition's phenomenologist and neurologist of culture, 
 4. What institutional practices cultivate right-hemisphere openness in academic discourse?
 5. Is there a neuroscientific basis for second-first-language learning as McGilchrist would describe it?
 6. Can McGilchrist's attention theory be formalized in terms compatible with Friston's precision-weighted prediction?
+7. Is the "creative dance between division and union" (Sophia Lectures 2026) the same process as morphogenetic integration in Levin's program — both producing a "third thing" that neither component alone could generate?
+8. How does McGilchrist's account of paradox as ontologically productive relate to Wolfram's observer-dependent sampling of the Ruliad — two ways of accounting for the co-presence of the infinite and the finite?
 
 ## Solved / Advanced Questions
 *(Track record)*
@@ -28,6 +30,8 @@ Iain McGilchrist is the tradition's phenomenologist and neurologist of culture, 
 | Do the two hemispheres model the world differently? | The Master and His Emissary (2009) | Yes — empirically confirmed hemispheric asymmetry in cognitive style, not just function | High |
 | Can multiple conscious units integrate into a single self? | Corpus callosotomy evidence | Yes — split-brain patients show two independent conscious agents that integrate when connected | High |
 | Is relational perception prior to analytic abstraction? | Neurological account of right-hemisphere primacy | Yes — right hemisphere discloses reality first; left hemisphere is derivative | Medium |
+| Can synthesis transcend mere addition of divided parts? | Sophia Lectures 2026 — "union at a higher level" — Lecture 1 | Yes — creative synthesis produces a third thing qualitatively beyond its components, with implications for inter-tradition dialogue | High |
+| Is paradox a sign of logical failure or ontological depth? | Sophia Lectures 2026 — Lecture 3 on finitude and the infinite | Ontological depth — paradox marks genuine asymmetric relations between levels of reality | Medium |
 
 ## PRS Triplets
 *See `prs_triplets.md` for full list*

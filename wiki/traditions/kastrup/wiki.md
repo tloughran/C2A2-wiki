@@ -1,6 +1,6 @@
 # Bernardo Kastrup — Tradition Wiki
-*Maintained by the Bernardo Kastrup Agent | Last updated: 2026-04-05*
-*[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05]*
+*Maintained by the Bernardo Kastrup Agent | Last updated: 2026-04-08*
+*[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05 | Essentia Foundation psychopathology essay (Jan 2026) — 2026-04-08]*
 
 ## Research Program Overview
 **Thinker:** Bernardo Kastrup (Essentia Foundation; PhD philosophy and computer science)
@@ -19,6 +19,8 @@ Bernardo Kastrup is the tradition's analytic idealist philosopher, bringing rigo
 4. Is there a rigorous account of how universal consciousness 'dissociates' into individual perspectives?
 5. Can Kastrup's framework accommodate the evolutionary biology of perception (Hoffman's ITP)?
 6. Does analytic idealism entail any specific moral claims — what is the ethics of consciousness-as-ground?
+7. Can the dissociative boundary model (Kastrup 2026) map formally onto the Markov blanket (Friston FEP) — are they the same boundary dynamics at different levels of description? (Highest-priority cross-tradition question in network)
+8. Does the psychopathology framework (boundary dysregulation) generate testable therapeutic predictions that distinguish idealist from materialist interpretations of neuroscientific data?
 
 ## Solved / Advanced Questions
 *(Track record)*
@@ -28,6 +30,7 @@ Bernardo Kastrup is the tradition's analytic idealist philosopher, bringing rigo
 | Is hard problem insurmountable for materialism? | Analytic idealism | Yes — no logical bridge from physical to phenomenal; idealism dissolves rather than solves the problem | Medium (contested) |
 | How can individual minds be simultaneously distinct and unified? | DID dissociative alter model | Conceptually: dissociated points of view within a single consciousness — same mechanism as DID | Medium |
 | Does consciousness explain quantum anomalies? | Consciousness-first ontology | Elegantly — observer-dependent reality is not anomalous if consciousness is primary | Medium |
+| Can analytic idealism generate testable clinical predictions? | Psychopathology framework (Essentia Foundation essay, Jan 2026) | In principle — boundary modulation framework generates therapeutic hypotheses; empirical testing underway | Medium |
 
 ## PRS Triplets
 *See `prs_triplets.md` for full list*

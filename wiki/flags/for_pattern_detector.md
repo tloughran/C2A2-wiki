@@ -99,3 +99,91 @@ Signal: The Friston 2026 review paper formally proves FEP substrate-independence
 Why paradigm-shift candidate: This is no longer a hypothesis — it is a confirmed cross-tradition result. FEP is substrate-independent; Levin's bioelectric networks instantiate active inference. The Substrate-Independence Cluster (Levin × Friston × Hawkins) now has its formal unification result. This also confirms that PRS triplets track real structural features of biological reality (advancing C2A2 Big Question #3) and that AI systems implementing FEP are positioned as proto second-first-language speakers (advancing Big Question #5).
 Raw material: wiki/master/cross_program_index.md — CROSS-025, CROSS-006, CROSS-007; wiki/traditions/friston/prs_triplets.md — PRS-07, PRS-08; wiki/traditions/levin/prs_triplets.md — PRS-03, PRS-04
 [EVALUATED: 2026-04-07]
+
+---
+
+FOR PATTERN DETECTOR-009:
+Date: 2026-04-08
+Programs: Kastrup Agent, Friston Agent
+Signal: Kastrup's psychopathology essay (Jan 2026) reframes mental disorders as disturbances in the dissociative boundary between individual alter and universal consciousness. Friston's FEP defines agents by their Markov blanket — a statistical boundary separating internal from environmental states. These appear to be the same boundary dynamics described from idealist vs. physicalist vocabularies.
+Why paradigm-shift candidate: If confirmed, this would be the strongest formal equivalence in the network — not just a structural analogy but potentially a mathematical identity. Markov blanket = dissociative boundary would mean FEP and analytic idealism are two descriptions of the same underlying reality. This would: (1) make FINDING-007 (Friston × Levin confirmed bridge) a special case of a deeper Kastrup × Friston unification; (2) give Kastrup's idealism empirical traction through FEP's formal machinery; (3) give Friston's FEP a consciousness-first ontological interpretation. This is CROSS-027. Priority: HIGHEST.
+Raw material: wiki/traditions/kastrup/prs_triplets.md — PRS-07; wiki/master/cross_program_index.md — CROSS-027; wiki/traditions/friston/prs_triplets.md — PRS-07, PRS-08
+
+---
+
+FOR PATTERN DETECTOR-010:
+Date: 2026-04-08
+Programs: Arkani-Hamed Agent, Wolfram Agent
+Signal: The UNIVERSE+ School (Les Houches, March 2026) establishes that Arkani-Hamed's positive geometry program now explicitly targets "the geometry of quantum mechanics AND spacetime" — the same post-spacetime unification that Wolfram's Ruliad pursues via computational/graphical structures. Two independent mathematical programs converging on the same target: a post-spacetime, pre-geometric language for all of fundamental physics.
+Why paradigm-shift candidate: FOR PATTERN DETECTOR-006 (Wolfram × Arkani-Hamed) was already a paradigm-shift candidate. The UNIVERSE+ development advances the Arkani-Hamed side of that signal significantly: it is no longer merely "amplituhedron challenges spacetime" but "a systematic research program (UNIVERSE+) explicitly targeting QM+spacetime replacement via positive geometry." The convergence with Wolfram becomes stronger. If FINDING-006 was a structural homology, this upgrades it toward a confirmed directional convergence.
+Raw material: wiki/traditions/arkanihamed/prs_triplets.md — PRS-05, PRS-06; wiki/master/cross_program_index.md — CROSS-030, CROSS-024; wiki/traditions/wolfram/prs_triplets.md — PRS-01, PRS-02
+
+---
+
+FOR PATTERN DETECTOR-011:
+[EVALUATED: 2026-04-14]
+Date: 2026-04-14
+Programs: Hoffman Agent, Friston Agent, Kastrup Agent
+Signal: Hoffman's trace logic talk (Thoughtforms Life, April 2026) demonstrates that trace blankets formally subsume Markov blankets. This means Friston's FEP is a special case of Hoffman's trace-logic dynamics. Combined with FINDING-009 (Kastrup × Friston: Markov blanket ≈ dissociative boundary), there is now a three-level chain: trace blankets (Hoffman) → Markov blankets (Friston) → dissociative boundaries (Kastrup). If this chain holds, trace logic is the deeper mathematical framework unifying conscious agent theory, active inference, and analytic idealism — the three most important consciousness-related programs in the network.
+Why paradigm-shift candidate: This is potentially the network's SINGLE MOST IMPORTANT signal. FINDING-009 was already HIGHEST PRIORITY. Adding trace logic as the deeper framework resolves the relationship between ALL THREE programs simultaneously. If trace logic → Markov blanket → dissociative boundary is formally demonstrated, the Consciousness Cluster achieves complete mathematical unification under Hoffman's framework, with Friston providing the physics-scale formalization and Kastrup providing the philosophical interpretation. The result would be: consciousness IS the trace logic of minimal surprise; agents ARE local Boolean regions within the global non-Boolean conscious field; psychopathology IS trace-blanket dysregulation. This directly advances every Big Question.
+Raw material: wiki/traditions/hoffman/prs_triplets.md — PRS-10; wiki/master/cross_program_index.md — CROSS-032, CROSS-027; wiki/flags/pattern_detector_findings.md — FINDING-009
+
+---
+
+FOR PATTERN DETECTOR-012:
+[EVALUATED: 2026-04-14]
+Date: 2026-04-14
+Programs: Hoffman Agent, Arkani-Hamed Agent, Wolfram Agent
+Signal: Hoffman's trace logic (non-Boolean globally, locally Boolean) IS quantum logic (Birkhoff-von Neumann) in the relevant structural sense. Hoffman proposes that agent networks under trace order could be the "positive geometry" Arkani-Hamed's UNIVERSE+ program is describing. If confirmed, this is the formal bridge between the Consciousness Cluster and the Post-Spacetime Cluster: physics IS consciousness dynamics.
+Why paradigm-shift candidate: This would collapse the two largest clusters in the network into a single super-cluster. The Post-Spacetime programs (Wolfram, Arkani-Hamed, Carroll) seek the mathematical object that replaces spacetime. The Consciousness Cluster (Hoffman, Kastrup, McGilchrist) claims consciousness is fundamental. If trace logic IS quantum logic IS positive geometry, then both clusters are describing the same thing: the pre-spacetime, consciousness-first mathematical substrate of reality. FINDING-006 (Wolfram × Arkani-Hamed) and FINDING-004 (Hoffman × Kastrup) would merge into a single super-finding.
+Raw material: wiki/traditions/hoffman/prs_triplets.md — PRS-07, PRS-10; wiki/master/cross_program_index.md — CROSS-033, CROSS-002, CROSS-017; wiki/traditions/arkanihamed/prs_triplets.md — PRS-05, PRS-06
+
+---
+
+FOR PATTERN DETECTOR-013:
+Date: 2026-04-16
+Programs: Friston, Fredrickson, McGilchrist
+Signal: Fredrickson's RCT evidence that weak-tie positivity resonance produces intellectual humility combines with Friston's precision-weighting framework (inflammation narrows prediction priors) and McGilchrist's hemispheric account (right-hemisphere engagement enables participatory knowing). Unified mechanism: genuine encounter activates right-hemisphere modes that enable cross-tradition belief updating.
+Why paradigm-shift candidate: This is the FIRST empirically validated mechanism for C2A2 tradition-accelerator effects. Trust infrastructure + weak-tie contexts activate conditions for right-hemisphere engagement → precision-weighted openness to otherness → intellectual humility → cross-tradition learning. Fredrickson's RCT is "strongest empirical support yet found for C2A2 methodology" (Batch 2 flagging). Direct implications for C2A2 design.
+Raw material: wiki/batch_cross_signals_2026-04-16_batch2.md — Fredrickson ↔ Friston (STRONG), Fredrickson ↔ McGilchrist (HIGH); wiki/batch_cross_signals_2026-04-16_batch3.md — Stump × Fredrickson (NARRATIVE FLOURISHING SCIENCE)
+[EVALUATED: 2026-04-16]
+
+---
+
+FOR PATTERN DETECTOR-014:
+Date: 2026-04-16
+Programs: Hawkins, C2A2 (meta)
+Signal: Thousand Brains architecture (semi-independent columns + Cortical Messaging Protocol + voting + sensorimotor learning loop + heterarchy) is formally isomorphic to C2A2 design. Columns = agents; reference frames = PRS structures; CMP = dispatches; voting = Pattern Detector. Hawkins' architecture is validated; C2A2's is not yet implemented at full architectural depth.
+Why paradigm-shift candidate: Not merely interesting analogy but evidence that C2A2's architecture traces to validated neuroscience. Batch 2 flags as CRITICAL with explicit design recommendations: upgrade to active (generative hypothesis + response) cycle; implement explicit voting protocols; enable lateral communication; track agent location in reference frame. Transforms C2A2 from knowledge aggregation to genuine cognitive architecture.
+Raw material: wiki/batch_cross_signals_2026-04-16_batch2.md — "C2A2 ARCHITECTURAL SIGNALS (META — HIGHEST PRIORITY)" section; PROP-2026-04-09-SUPP-001 (CMP × distributed agency); PROP-2026-04-14-001 (Monty learning modules)
+[EVALUATED: 2026-04-16]
+
+---
+
+FOR PATTERN DETECTOR-015:
+Date: 2026-04-16
+Programs: Kastrup, Koch, IIT
+Signal: Kastrup's dissociative-boundary model (consciousness degree = integration degree) converges structurally with IIT's Φ (integrated information). Hypothesis: high-Φ states = porous boundaries (near-consciousness integration); low-Φ = fragmented states (dissociated alters). Psychedelic experiences show Φ/boundary consistency across individuals, suggesting shared consciousness substrate.
+Why paradigm-shift candidate: First measurable bridge between Kastrup's philosophical model and quantifiable neuroscience. Enables empirical testing of consciousness-first claims via IIT metrics. Grounds philosophical consciousness science in measured data. Direct relevance to DCEC paper (consciousness as primary requires empirical grounding).
+Raw material: wiki/batch_cross_signals_2026-04-16_batch3.md — "Kastrup × Koch / Integrated Information Theory (NEW BRIDGE)" section (PROP-2026-04-15-005)
+[EVALUATED: 2026-04-16]
+
+---
+
+FOR PATTERN DETECTOR-016:
+Date: 2026-04-16
+Programs: Levin, Hoffman, Friston, Hawkins, Wolfram, McGilchrist, Arkani-Hamed (meta)
+Signal: Emerging meta-pattern: plurality/unity are OBSERVER-DEPENDENT at ontological level. Instances: (1) Levin bioelectric boundary as distributed reader; (2) Hawkins Monty algorithm producing heterogeneous function; (3) McGilchrist hemispheric unity/dissociation; (4) Hoffman trace logic (one stationary measure, many nested communities); (5) Wolfram observer-dependent carving of Ruliad; (6) Carroll emergence as level-of-description; (7) Arkani-Hamed boundary-encoded physics. Pattern 3 in Kuhnian framework (mixed evidence, interdisciplinary boundary-crossing) = paradigm-shift signal.
+Why paradigm-shift candidate: If observer-dependence is ontologically fundamental, C2A2's methodology is itself performing empirical science — measuring how cognitive agents maintain/revise tradition-boundaries under confrontation. Implies epistemological upgrade for C2A2; possible collaboration on observer-dependence formalism; direct relevance to Tom's ISMcI paper.
+Raw material: wiki/batch_cross_signals_2026-04-16_batch2.md — "FINDING-011 EXTENSION"; wiki/batch_cross_signals_2026-04-16_batch3.md — "Emergence and Structure Cluster," "Cognitive Agency Cluster," methodology sections
+[EVALUATED: 2026-04-16]
+
+---
+
+FOR PATTERN DETECTOR-017:
+Date: 2026-04-16
+Programs: Wolfram, Friston, Arkani-Hamed, Carroll
+Signal: Computational irreducibility (Wolfram) grounds necessity of approximate inference (Friston FEP). Perfect prediction is physically impossible; therefore agents minimize free energy. Combined with Arkani-Hamed × Wolfram convergence (Matryoshka ≈ Ruliad hypergraph), unified Post-Spacetime account: spacetime is non-fundamental; physics emerges from irreducible computation; agents minimize free energy because perfect prediction is impossible.
+Why paradigm-shift candidate: Deepest physical grounding for C2A2 ontology. If spacetime is emergent, irreducibility is fundamental, FEP is physical necessity, then consciousness-first/information-first move is grounded in PHYSICS not speculation. Active inference is what agents DO in irreducible universe. Supports DCEC paper metaphysical claims and Tom's position that consciousness/agency are primary.
+Raw material: wiki/batch_cross_signals_2026-04-16_batch3.md — "Wolfram × Friston (IRREDUCIBILITY GROUNDS FREE ENERGY)," "Arkani-Hamed × Wolfram (COMBINATORIAL UNIFICATION)"; wiki/batch_cross_signals_2026-04-16_batch1.md — PROP-2026-04-13-006 (Differential Flatness and Active Inference)
+[EVALUATED: 2026-04-16]

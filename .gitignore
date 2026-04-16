@@ -1,0 +1,40 @@
+# macOS
+.DS_Store
+
+# Obsidian — personal workspace state (content files are still tracked)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+
+# Nested projects (have their own repos)
+claude-mem/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Node / build artifacts
+node_modules/
+dist/
+build/
+.vite/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Secrets / env
+.env
+.env.local
+*.key
+*.pem
+
+# Temporary / scratch
+*.tmp
+*.bak
+scratch/

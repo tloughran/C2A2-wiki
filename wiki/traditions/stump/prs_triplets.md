@@ -71,5 +71,32 @@ PRS-06:
   Source: Resurrecting Civility — RC Pilot GPT Tome / Document Explorer
   Confidence: Medium
 
+PRS-07:
+  Label: P7 (PROP-2026-04-08-001) — Narrative cognition and philosophical epistemology
+  Problem: Analytic theology has been dominated by propositional argumentation, but many theological traditions transmit their core insights primarily through narrative, and this form of knowledge is philosophically undertheorized
+  Resource: Stump and Wolfe's edited volume on "Biblical Narratives and Human Flourishing": demonstrating that "narrative cognition" is a philosophical category — knowledge about human flourishing conveyed through and only fully accessible via engagement with specific narratives (not reducible to propositional summaries)
+  Solution: A methodology for narrative biblical exegesis that is philosophically rigorous — enabling analytic theology to engage narrative traditions on their own terms without either reducing them to arguments or abandoning analytical standards
+  Date Added: 2026-04-16
+  Source: "Biblical Narratives and Human Flourishing: Knowledge Through Narrative" (Stump & Wolfe, Routledge 2025); PROP-2026-04-08-001
+  Confidence: High
+
+PRS-08:
+  Label: P8 (PROP-2026-04-08-002) — Suffering reframed through narrative phenomenology
+  Problem: Propositional theodicy cannot capture what biblical narratives know about suffering — the cognitive form of the knowledge matters, not just the content
+  Resource: Stump's "Grains of Wheat" (OUP 2024/25): biblical narratives provide a possible-world argument for the compatibility of divine love and permitted suffering — not as abstract theodicy but as demonstrated through the experiential arc of persons the reader comes to know
+  Solution: Biblical narratives enable second-personal narrative knowledge of suffering that is irreducible to propositional argument — stories teach what arguments cannot, because stories engage both intellect and imagination in the reader's becoming-acquainted with suffering agents
+  Date Added: 2026-04-16
+  Source: "Grains of Wheat: Suffering and Biblical Narratives" (Stump, Oxford University Press 2024/25); PROP-2026-04-08-002
+  Confidence: High
+
+PRS-09:
+  Label: P9 (PROP-2026-04-13-001) — Virtue as cooperative causality
+  Problem: Contemporary virtue ethics typically treats virtues as stable character traits or habits, but Aquinas's account embeds the virtues within a metaphysics of the soul's powers and their transformation by grace — this richer framework is underexplored
+  Resource: Stump's exposition of Aquinas on the seven cardinal virtues (Thomistic Institute podcast, January 2026): the Holy Spirit perfects the soul's natural powers, enabling the agent to will and act virtuously in a way that is genuinely the agent's own
+  Solution: A philosophical psychology of virtue that is simultaneously naturalistic (virtues perfect natural powers) and theological (grace operates within the natural order) — providing a non-reductive account of moral transformation where agency and divine causality cooperatively constitute virtue
+  Date Added: 2026-04-16
+  Source: "The Seven Cardinal Virtues and the Indwelling Holy Spirit" (Stump, Thomistic Institute podcast 2026-01-30); PROP-2026-04-13-001
+  Confidence: Medium
+
 ---
-*Total PRS triplets: 6*
+*Total PRS triplets: 9*
