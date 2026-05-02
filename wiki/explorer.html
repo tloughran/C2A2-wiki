@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C2A2 Community Dialogue Accelerator/Detector System</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; overflow: hidden; background: #0a0a0f; }
+
+  /* ── TAB BAR: two rows, 88 px total ── */
+  #tab-bar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 88px;
+    z-index: 99999;
+    background: #111118;
+    display: flex;
+    flex-direction: column;
+    overflow: visible; /* let construction tooltip bleed below */
+  }
+
+  /* ROW 1 — brand + chapter tabs + record button */
+  #row1 {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 4px;
+    border-bottom: 1px solid #2a2a3a;
+    flex-shrink: 0;
+    overflow: visible;
+  }
+
+  /* ROW 2 — sub-tabs under Community Accelerator Tools */
+  #row2 {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 2px;
+    background: #0d0d15;
+    border-bottom: 1px solid #2a2a3a;
+    flex-shrink: 0;
+  }
+
+  /* BRAND */
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    margin-right: 18px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .brand-c2a2 {
+    color: #C9A84C;
+    font-weight: 800;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+  .brand-full {
+    color: #6a604e;
+    font-size: 11px;
+    font-family: -apple-system, sans-serif;
+    letter-spacing: 0.3px;
+  }
+
+  /* CHAPTER TABS (row 1) */
+  .chap-btn {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: #666;
+    padding: 6px 14px;
+    font-size: 12.5px;
+    font-family: -apple-system, sans-serif;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    cursor: default;
+    position: relative;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .chap-btn.active {
+    color: #C9A84C;
+    border-bottom-color: #C9A84C;
+  }
+  /* stub = dimmed, unresponsive, construction tooltip on hover */
+  .chap-btn.stub {
+    opacity: 0.38;
+  }
+  .chap-btn.stub::after {
+    content: '🚧  Under Construction';
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: repeating-linear-gradient(
+      -45deg,
+      #f5c800 0px, #f5c800 9px,
+      #1a1300 9px, #1a1300 18px
+    );
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    padding: 5px 13px;
+    border-radius: 3px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.85);
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+    z-index: 100000;
+  }
+  .chap-btn.stub:hover::after { opacity: 1; }
+
+  /* SUB-TABS (row 2) */
+  .tab-btn {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: #666;
+    cursor: pointer;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-family: -apple-system, sans-serif;
+    letter-spacing: 0.4px;
+    transition: color 0.15s, border-color 0.15s;
+    white-space: nowrap;
+  }
+  .tab-btn:hover { color: #aaa; }
+  .tab-btn.active { color: #C9A84C; border-bottom-color: #C9A84C; }
+
+  /* row2 section label */
+  .row2-label {
+    font-size: 10px;
+    color: #3a3a50;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-family: -apple-system, sans-serif;
+    flex-shrink: 0;
+  }
+
+  #content-frame {
+    position: fixed;
+    top: 88px; left: 0; right: 0; bottom: 0;
+    border: none;
+    width: 100%;
+    height: calc(100% - 88px);
+  }
+
+/* ── RECORDING (moved from wiki_narration.html) ── */
+#btn-record {
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid #3a3a4a;
+  color: #ccc;
+  cursor: pointer;
+  padding: 5px 14px;
+  font-size: 12px;
+  font-family: -apple-system, sans-serif;
+  letter-spacing: 0.4px;
+  border-radius: 4px;
+  height: 30px;
+  line-height: 1;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+#btn-record:hover { background: #1a1a2a; border-color: #5a5a6a; color: #fff; }
+#btn-record.active { background: #C45B5B; border-color: #C45B5B; color: #fff; }
+
+/* RECORDING COMPLETE MODAL */
+#recording-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); z-index: 1100; justify-content: center; align-items: center; }
+#recording-modal.visible { display: flex; }
+#recording-content { background: #15151f; border: 1px solid #3a3a4a; border-radius: 10px; padding: 28px 32px; width: 380px; max-width: 92%; text-align: center; box-shadow: 0 8px 32px rgba(0,0,0,0.6); }
+#recording-content h2 { color: #4ade80; margin: 0 0 10px; font-size: 20px; }
+#recording-content .rec-info { color: #ccc; font-size: 14px; margin-bottom: 20px; line-height: 1.7; }
+#recording-content .btn-row { display: flex; gap: 10px; justify-content: center; }
+#recording-content .btn-save { background: #4ade80; border: none; color: #0a0a0f; padding: 9px 22px; border-radius: 5px; cursor: pointer; font-size: 14px; font-weight: 700; }
+#recording-content .btn-save:hover { background: #6ee7a0; }
+#recording-content .btn-dismiss { background: #1a1a2a; border: 1px solid #3a3a4a; color: #ccc; padding: 9px 18px; border-radius: 5px; cursor: pointer; font-size: 14px; }
+#recording-content .btn-dismiss:hover { background: #2a2a3a; }
+
+/* LIVE REC INDICATOR */
+#rec-indicator { display: none; position: fixed; top: 12px; left: 50%; transform: translateX(-50%); background: rgba(10,10,15,0.88); border: 1px solid #C45B5B; border-radius: 20px; padding: 5px 14px; z-index: 999; font-size: 13px; color: #fff; align-items: center; gap: 7px; pointer-events: none; }
+#rec-indicator.visible { display: flex; }
+#rec-dot { width: 9px; height: 9px; background: #C45B5B; border-radius: 50%; animation: recBlink 1s step-start infinite; flex-shrink: 0; }
+@keyframes recBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0.15; } }
+</style>
+</head>
+<body>
+
+<div id="tab-bar">
+
+  <!-- ROW 1: system identity + four chapter tabs + record button -->
+  <div id="row1">
+    <span class="brand">
+      <span class="brand-c2a2">C2A2</span>
+      <span class="brand-full">Community Dialogue Accelerator/Detector System</span>
+    </span>
+    <button class="chap-btn stub">Community Explorer</button>
+    <button class="chap-btn stub">Community AI Education</button>
+    <button class="chap-btn active">Community Accelerator Tools</button>
+    <button class="chap-btn stub">Community Interaction</button>
+    <button id="btn-record" onclick="toggleRecord()">&#9679; Record</button>
+  </div>
+
+  <!-- ROW 2: sub-tools within Community Accelerator Tools -->
+  <div id="row2">
+    <span class="row2-label">Accelerator&nbsp;Tools</span>
+    <button class="tab-btn active" data-src="wiki_narration.html">Sociogram</button>
+    <button class="tab-btn" data-src="prs_3d.html">3D PRS</button>
+    <button class="tab-btn" data-src="agents_tab.html">Agent Map</button>
+    <button class="tab-btn" data-src="summa_explorer.html">Curriculum Tools</button>
+  </div>
+
+</div>
+
+<iframe id="content-frame"
+        name="content-frame"
+        src="wiki_narration.html"
+        allow="autoplay; microphone; camera"
+        sandbox="allow-scripts allow-same-origin allow-forms allow-modals allow-popups-to-escape-sandbox allow-downloads">
+</iframe>
+
+<script>
+(function() {
+  var frame = document.getElementById('content-frame');
+  var buttons = document.querySelectorAll('.tab-btn');
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      frame.setAttribute('src', btn.getAttribute('data-src'));
+      buttons.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+    });
+  });
+})();
+</script>
+
+
+<!-- RECORDING COMPLETE MODAL -->
+<div id="recording-modal">
+  <div id="recording-content">
+    <h2>&#x2713; Recording Complete</h2>
+    <div class="rec-info" id="rec-details"></div>
+    <div class="btn-row">
+      <button class="btn-save" onclick="downloadRecording()">&#8659; Save to Downloads</button>
+      <button class="btn-dismiss" onclick="dismissRecordingModal()">Dismiss</button>
+    </div>
+  </div>
+</div>
+
+<!-- LIVE REC INDICATOR -->
+<div id="rec-indicator"><span id="rec-dot"></span>&nbsp;<span>REC</span>&nbsp;<span id="rec-timer">0:00</span></div>
+
+
+<script>
+// ── RECORDING (moved from wiki_narration.html) ──
+var isRecording = false;
+var mediaRecorder = null;
+var recordedChunks = [];
+var recordingStream = null;
+var micStream = null;
+var recordingBlob = null;
+var recordingMimeType = 'video/webm';
+var recordingStartTime = null;
+var recTimerInterval = null;
+
+function toggleRecord() {
+  if (isRecording) {
+    stopRecording();
+  } else {
+    startRecording();
+  }
+}
+
+async function startRecording() {
+  try {
+    // 1. Screen capture (video + optional system audio)
+    var screenStream = await navigator.mediaDevices.getDisplayMedia({
+      video: { displaySurface: 'browser', frameRate: 30 },
+      audio: true,
+      preferCurrentTab: true
+    });
+    recordingStream = screenStream;
+
+    // 2. Microphone (audio) — separate request so screen-share dialog isn't confused
+    micStream = null;
+    try {
+      micStream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
+    } catch (e) {
+      console.warn('Microphone not available, recording video only:', e);
+    }
+
+    // 3. Combine tracks into one stream
+    var tracks = screenStream.getTracks().slice();
+    if (micStream) {
+      micStream.getAudioTracks().forEach(function(t) { tracks.push(t); });
+    }
+    var combinedStream = new MediaStream(tracks);
+
+    // 4. Clean up mic when screen share ends via browser UI
+    screenStream.getVideoTracks()[0].addEventListener('ended', function() {
+      if (micStream) { micStream.getTracks().forEach(function(t) { t.stop(); }); micStream = null; }
+      if (isRecording) stopRecording();
+    });
+
+    recordedChunks = [];
+    recordingBlob = null;
+
+    recordingMimeType = 'video/webm;codecs=vp9,opus';
+    if (!MediaRecorder.isTypeSupported(recordingMimeType)) {
+      recordingMimeType = 'video/webm;codecs=vp8,opus';
+      if (!MediaRecorder.isTypeSupported(recordingMimeType)) {
+        recordingMimeType = 'video/webm';
+      }
+    }
+
+    mediaRecorder = new MediaRecorder(combinedStream, { mimeType: recordingMimeType });
+
+    mediaRecorder.ondataavailable = function(e) {
+      if (e.data && e.data.size > 0) recordedChunks.push(e.data);
+    };
+
+    mediaRecorder.onstop = function() {
+      recordingBlob = new Blob(recordedChunks, { type: recordingMimeType });
+      recordedChunks = [];
+      showRecordingCompleteModal(recordingBlob);
+    };
+
+    mediaRecorder.start(1000); // collect data every second
+    isRecording = true;
+    recordingStartTime = Date.now();
+
+    // Show live REC indicator with elapsed timer
+    var recInd = document.getElementById('rec-indicator');
+    if (recInd) recInd.classList.add('visible');
+    var timerEl = document.getElementById('rec-timer');
+    if (timerEl) timerEl.textContent = '0:00';
+    recTimerInterval = setInterval(function() {
+      var elapsed = Math.floor((Date.now() - recordingStartTime) / 1000);
+      var m = Math.floor(elapsed / 60);
+      var s = elapsed % 60;
+      if (timerEl) timerEl.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+    }, 500);
+
+    var btn = document.getElementById('btn-record');
+    btn.classList.add('active');
+    btn.textContent = 'Stop';
+    btn.style.background = '#C45B5B';
+    btn.style.borderColor = '#C45B5B';
+    btn.style.color = '#fff';
+  } catch (err) {
+    console.log('Recording cancelled or failed:', err);
+  }
+}
+
+function stopRecording() {
+  if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+    mediaRecorder.stop();
+  }
+  if (micStream) {
+    micStream.getTracks().forEach(function(t) { t.stop(); });
+    micStream = null;
+  }
+  if (recordingStream) {
+    recordingStream.getTracks().forEach(function(t) { t.stop(); });
+    recordingStream = null;
+  }
+  if (recTimerInterval) { clearInterval(recTimerInterval); recTimerInterval = null; }
+  var recInd = document.getElementById('rec-indicator');
+  if (recInd) recInd.classList.remove('visible');
+  isRecording = false;
+  var btn = document.getElementById('btn-record');
+  btn.classList.remove('active');
+  btn.textContent = '\u25cf Record';
+  btn.style.background = '';
+  btn.style.borderColor = '';
+  btn.style.color = '';
+}
+
+function showRecordingCompleteModal(blob) {
+  var sizeMB = (blob.size / (1024 * 1024)).toFixed(2);
+  var durationSec = recordingStartTime ? Math.floor((Date.now() - recordingStartTime) / 1000) : 0;
+  var m = Math.floor(durationSec / 60);
+  var s = durationSec % 60;
+  var durationStr = m + ':' + (s < 10 ? '0' : '') + s;
+  var ext = recordingMimeType.indexOf('webm') !== -1 ? 'webm' : 'mp4';
+  var ts = new Date().toISOString().slice(0, 10);
+  var filename = 'c2a2-narration-' + ts + '.' + ext;
+  var details = document.getElementById('rec-details');
+  if (details) {
+    details.innerHTML = 'Duration: <strong>' + durationStr + '</strong> &nbsp;&middot;&nbsp; Size: <strong>' + sizeMB + ' MB</strong><br><span style="color:#888;font-size:12px;font-family:monospace;">' + filename + '</span>';
+  }
+  document.getElementById('recording-modal').classList.add('visible');
+}
+
+function downloadRecording() {
+  if (!recordingBlob) return;
+  var ext = recordingMimeType.indexOf('webm') !== -1 ? 'webm' : 'mp4';
+  var ts = new Date().toISOString().slice(0, 10);
+  var filename = 'c2a2-narration-' + ts + '.' + ext;
+  var url = URL.createObjectURL(recordingBlob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(function() { URL.revokeObjectURL(url); }, 60000);
+  dismissRecordingModal();
+}
+
+function dismissRecordingModal() {
+  document.getElementById('recording-modal').classList.remove('visible');
+  recordingBlob = null;
+}
+</script>
+
+</body>
+</html>
