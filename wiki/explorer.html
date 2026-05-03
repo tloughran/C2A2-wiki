@@ -266,6 +266,7 @@ var mediaRecorder = null;
 var recordedChunks = [];
 var recordingStream = null;
 var micStream = null;
+var audioCtx = null;      // AudioContext used to mix tab + mic audio
 var recordingBlob = null;
 var recordingMimeType = 'video/webm';
 var recordingStartTime = null;
@@ -297,16 +298,30 @@ async function startRecording() {
       console.warn('Microphone not available, recording video only:', e);
     }
 
-    // 3. Combine tracks into one stream
-    var tracks = screenStream.getTracks().slice();
-    if (micStream) {
-      micStream.getAudioTracks().forEach(function(t) { tracks.push(t); });
-    }
-    var combinedStream = new MediaStream(tracks);
+    // 3. Mix tab audio + mic through AudioContext so MediaRecorder gets one
+    //    combined audio track.  Without this, Chrome's MediaRecorder silently
+    //    records only the FIRST audio track in the stream and drops the rest.
+    audioCtx = new AudioContext();
+    var mixDest = audioCtx.createMediaStreamDestination();
 
-    // 4. Clean up mic when screen share ends via browser UI
-    screenStream.getVideoTracks()[0].addEventListener('ended', function() {
+    var tabAudioTracks = screenStream.getAudioTracks();
+    if (tabAudioTracks.length > 0) {
+      var tabSource = audioCtx.createMediaStreamSource(new MediaStream(tabAudioTracks));
+      tabSource.connect(mixDest);
+    }
+    if (micStream) {
+      var micSource = audioCtx.createMediaStreamSource(micStream);
+      micSource.connect(mixDest);
+    }
+
+    // Single video track + single mixed audio track
+    var videoTrack = screenStream.getVideoTracks()[0];
+    var combinedStream = new MediaStream([videoTrack, mixDest.stream.getAudioTracks()[0]]);
+
+    // 4. Clean up mic + AudioContext when screen share ends via browser UI
+    videoTrack.addEventListener('ended', function() {
       if (micStream) { micStream.getTracks().forEach(function(t) { t.stop(); }); micStream = null; }
+      if (audioCtx) { audioCtx.close(); audioCtx = null; }
       if (isRecording) stopRecording();
     });
 
@@ -372,6 +387,7 @@ function stopRecording() {
     recordingStream.getTracks().forEach(function(t) { t.stop(); });
     recordingStream = null;
   }
+  if (audioCtx) { audioCtx.close(); audioCtx = null; }
   if (recTimerInterval) { clearInterval(recTimerInterval); recTimerInterval = null; }
   var recInd = document.getElementById('rec-indicator');
   if (recInd) recInd.classList.remove('visible');
