@@ -82,14 +82,18 @@
     position: relative;
     transition: color 0.15s, border-color 0.15s;
   }
+  .chap-btn:hover { color: #ccc; }
   .chap-btn.active {
     color: #C9A84C;
     border-bottom-color: #C9A84C;
   }
+  .chap-btn.active:hover { color: #e0b85c; }
   /* stub = dimmed, unresponsive, construction tooltip on hover */
   .chap-btn.stub {
     opacity: 0.38;
+    transition: color 0.15s, border-color 0.15s, opacity 0.15s;
   }
+  .chap-btn.stub:hover { opacity: 0.75; }
   .chap-btn.stub::after {
     content: '🚧  Under Construction';
     position: absolute;
