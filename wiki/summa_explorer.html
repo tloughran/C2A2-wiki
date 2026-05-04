@@ -458,7 +458,7 @@ html, body {
    CONSTANTS
 ═══════════════════════════════════════════ */
 const VAULT_BASE_LOCAL = '../../Summa 2026 in a Year/vault';
-const VAULT_BASE_PROD  = '../summa/vault';
+const VAULT_BASE_PROD  = 'https://tloughran.github.io/Summa-2026-wiki/vault';
 
 const PART_ORDER = ['I', 'I-II', 'II-II', 'III'];
 const PART_META  = {
@@ -482,12 +482,14 @@ var currentMode     = 'transcript';
 var showArticles    = true;
 
 /* ═══════════════════════════════════════════
-   INIT — try LOCAL then PROD
+   INIT — try LOCAL then PROD on file://, PROD then LOCAL otherwise
 ═══════════════════════════════════════════ */
 async function init() {
   var loaded    = false;
   var lastError = '';
-  var bases     = [VAULT_BASE_LOCAL, VAULT_BASE_PROD];
+  var bases     = (window.location.protocol === 'file:')
+                    ? [VAULT_BASE_LOCAL, VAULT_BASE_PROD]
+                    : [VAULT_BASE_PROD, VAULT_BASE_LOCAL];
 
   for (var i = 0; i < bases.length; i++) {
     var base = bases[i];
