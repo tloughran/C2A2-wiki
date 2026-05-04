@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C2A2 — Agent Ecosystem</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 100%; height: 100%; overflow: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #111118; color: #e0e0e0;
+}
+#app { display: flex; flex-direction: column; height: 100vh; }
+
+/* ── HEADER ── */
+#header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 0 16px;
+  background: #1e1e2a; border-bottom: 1px solid #383848;
+  height: 48px; flex-shrink: 0;
+}
+#header .title { font-size: 15px; font-weight: 700; color: #D4B85A; white-space: nowrap; }
+#header .subtitle { font-size: 11px; color: #777; white-space: nowrap; }
+#header .spacer { flex: 1; }
+#time-display {
+  font-size: 12px; color: #aaa; font-family: 'Courier New', monospace;
+  background: #252535; padding: 4px 10px; border-radius: 4px; min-width: 90px;
+  text-align: center;
+}
+#progress-bar-wrap {
+  width: 140px; height: 8px; background: #252535; border-radius: 4px;
+  cursor: pointer; position: relative; flex-shrink: 0;
+}
+#progress-bar {
+  height: 100%; width: 0%; background: #D4B85A; border-radius: 4px;
+  pointer-events: none;
+}
+#progress-bar-wrap:hover #progress-bar { background: #EAC55E; }
+.ctrl-btn {
+  background: #252535; border: 1px solid #484858; color: #e0e0e0;
+  padding: 5px 12px; border-radius: 4px; cursor: pointer;
+  font-size: 12px; font-family: inherit;
+  transition: background 0.12s, color 0.12s;
+}
+.ctrl-btn:hover { background: #383848; }
+.ctrl-btn.active { background: #D4B85A; color: #111118; border-color: #D4B85A; font-weight: 600; }
+.ctrl-btn.narrate-on { background: #3a5a7e; color: #7ec0ee; border-color: #5a8aba; font-weight: 600; }
+.ctrl-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+#speed-label { font-size: 11px; color: #777; }
+#speed-select {
+  background: #252535; border: 1px solid #484858; color: #e0e0e0;
+  padding: 4px 6px; border-radius: 4px; font-size: 12px; font-family: inherit;
+  cursor: pointer;
+}
+
+/* ── CONTENT ── */
+#content-area { display: flex; flex: 1; overflow: hidden; min-height: 0; }
+
+/* ── LEGEND ── */
+#legend {
+  width: 152px; flex-shrink: 0; position: relative;
+  background: #181824; border-right: 1px solid #252538;
+  overflow-y: auto; overflow-x: hidden;
+  padding: 10px 8px; font-size: 11px;
+  min-width: 80px; max-width: 300px;
+}
+#legend h3 { color: #777; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+.legend-item {
+  display: flex; align-items: center; gap: 7px;
+  padding: 4px 5px; border-radius: 4px; cursor: default;
+  transition: background 0.1s;
+}
+.legend-item:hover { background: #252535; }
+.legend-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+.legend-label { color: #bbb; line-height: 1.3; flex: 1; }
+.legend-count {
+  background: #252535; color: #777; font-size: 9px;
+  padding: 1px 5px; border-radius: 8px; min-width: 18px; text-align: center;
+}
+.legend-hr { border: none; border-top: 1px solid #252538; margin: 8px 0; }
+#agent-summary { color: #666; font-size: 10px; line-height: 1.6; }
+/* Legend resize handle — right edge */
+#legend-resize-handle {
+  position: absolute; right: 0; top: 0; bottom: 0; width: 6px;
+  cursor: ew-resize; z-index: 10;
+  background: transparent; transition: background 0.15s;
+}
+#legend-resize-handle:hover { background: rgba(201,168,76,0.2); }
+
+/* ── CANVAS WRAPPER ── */
+#canvas-wrapper {
+  flex: 1; position: relative; overflow: hidden;
+  display: flex; align-items: center; justify-content: flex-start;
+}
+#main-canvas { display: block; }
+
+/* ── TOOLTIP ── */
+#tooltip {
+  position: fixed;
+  background: rgba(22,22,36,0.96); border: 1px solid #484858; border-radius: 6px;
+  padding: 8px 12px; font-size: 12px;
+  pointer-events: none; z-index: 300; display: none;
+  max-width: 240px; line-height: 1.4;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+#tooltip .tt-name { font-weight: 700; color: #e0e0e0; margin-bottom: 3px; }
+#tooltip .tt-badge {
+  display: inline-block; padding: 1px 7px; border-radius: 3px;
+  font-size: 10px; font-weight: 600; margin-bottom: 4px;
+}
+#tooltip .tt-sched { color: #888; font-size: 11px; }
+
+/* ── DETAIL PANEL (floating) ── */
+#detail-panel {
+  position: fixed;
+  top: 60px; right: 16px;
+  width: 300px; min-width: 220px; max-width: 600px;
+  background: #181824; border: 1px solid #383848; border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+  display: none; flex-direction: column;
+  z-index: 200; overflow: hidden;
+  user-select: none;
+}
+#detail-panel.open { display: flex; }
+.det-resize-handle {
+  position: absolute; left: 0; top: 0; bottom: 0; width: 6px;
+  cursor: ew-resize; z-index: 2;
+  background: transparent; transition: background 0.15s;
+  border-radius: 8px 0 0 8px;
+}
+.det-resize-handle:hover { background: rgba(201,168,76,0.18); }
+.det-header {
+  display: flex; align-items: center; gap: 8px;
+  padding: 9px 12px 9px 14px;
+  background: #1e1e2a; border-bottom: 1px solid #252538;
+  cursor: move; flex-shrink: 0;
+}
+.det-drag-handle {
+  color: #383860; font-size: 15px; cursor: move; flex-shrink: 0;
+  line-height: 1; letter-spacing: 2px; transition: color 0.15s;
+}
+.det-header:hover .det-drag-handle { color: #777; }
+.det-header-title { flex: 1; font-size: 10px; color: #555; text-transform: uppercase; letter-spacing: 0.8px; }
+.det-close {
+  background: none; border: 1px solid #383848; color: #666; font-size: 12px;
+  cursor: pointer; padding: 2px 7px; border-radius: 4px; font-family: inherit;
+  flex-shrink: 0; transition: color 0.12s, background 0.12s;
+}
+.det-close:hover { color: #ccc; background: #252535; border-color: #484858; }
+.det-body { overflow-y: auto; padding: 12px 14px 16px 16px; flex: 1; }
+.det-name { font-size: 15px; font-weight: 700; color: #e0e0e0; margin-bottom: 3px; padding-top: 2px; }
+.det-id { font-size: 10px; color: #666; font-family: monospace; margin-bottom: 10px; }
+.det-badge { display: inline-block; padding: 3px 10px; border-radius: 3px; font-size: 11px; font-weight: 600; margin-bottom: 14px; }
+.det-lbl { color: #777; font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 13px; margin-bottom: 4px; }
+.det-val { color: #ccc; font-size: 13px; line-height: 1.55; }
+.thinker-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.thinker-chip { background: #252535; border: 1px solid #484858; color: #ccc; padding: 2px 9px; border-radius: 3px; font-size: 11px; }
+.det-hr { border: none; border-top: 1px solid #252538; margin: 14px 0; }
+.det-produces { background: #1e1e2a; border-radius: 6px; padding: 10px 12px; font-size: 12px; color: #888; line-height: 1.55; font-style: italic; }
+.det-fire-times { display: flex; flex-wrap: wrap; gap: 4px; }
+.det-fire-chip { background: #222230; border: 1px solid #383848; color: #999; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-family: monospace; }
+
+/* ── NARRATION STRIP ── */
+#narration-strip {
+  background: #0f0f18; border-top: 1px solid #252538;
+  flex-shrink: 0; overflow: hidden;
+  position: relative;
+  /* height controlled entirely by JS */
+}
+/* Narration strip resize handle — top edge */
+#narr-resize-handle {
+  position: absolute; left: 0; right: 0; top: 0; height: 6px;
+  cursor: ns-resize; z-index: 10;
+  background: transparent; transition: background 0.15s;
+}
+#narr-resize-handle:hover { background: rgba(201,168,76,0.2); }
+#narr-inner { padding: 7px 16px 7px 16px; height: 100%; display: flex; flex-direction: column; }
+
+/* Activity log mode */
+#narr-log-area { display: flex; flex-direction: column; gap: 0; flex: 1; overflow: hidden; }
+#narr-title-row { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; flex-shrink: 0; }
+#narr-title { font-size: 9px; color: #555; text-transform: uppercase; letter-spacing: 1.5px; }
+.narr-event { display: flex; align-items: baseline; gap: 8px; padding: 1px 0; font-size: 11px; opacity: 1; transition: opacity 0.4s; }
+.narr-event.old { opacity: 0.4; }
+.narr-event.older { opacity: 0.2; }
+.narr-time { color: #666; font-family: monospace; font-size: 10px; min-width: 58px; }
+.narr-badge { display: inline-block; padding: 1px 7px; border-radius: 3px; font-size: 9px; font-weight: 700; white-space: nowrap; flex-shrink: 0; }
+.narr-text { color: #999; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.narr-text strong { color: #ccc; font-weight: 600; }
+
+/* Narration panel mode */
+#narr-panel { display: none; flex-direction: column; flex: 1; overflow: hidden; }
+#narr-panel-title-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; flex-shrink: 0; }
+#narr-panel-label { font-size: 9px; color: #383860; text-transform: uppercase; letter-spacing: 1.5px; flex: 1; }
+#btn-mute {
+  background: none; border: none; color: #555; font-size: 14px;
+  cursor: pointer; padding: 0 2px; line-height: 1;
+  transition: color 0.15s;
+}
+#btn-mute:hover { color: #999; }
+#btn-mute.muted { color: #D46E6E; }
+#btn-skip {
+  background: none; border: none; color: #555; font-size: 13px;
+  cursor: pointer; padding: 0 2px; line-height: 1;
+  transition: color 0.15s;
+}
+#btn-skip:hover { color: #D4B85A; }
+#btn-skip:disabled { color: #444; cursor: not-allowed; }
+#narr-panel-header { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; flex-shrink: 0; }
+#narr-panel-badge { display: inline-block; padding: 2px 9px; border-radius: 3px; font-size: 10px; font-weight: 700; flex-shrink: 0; }
+#narr-panel-name { font-size: 13px; font-weight: 700; color: #e0e0e0; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#narr-panel-time { font-size: 10px; color: #666; font-family: monospace; flex-shrink: 0; }
+#narr-panel-text { font-size: 12px; color: #9090b0; line-height: 1.65; overflow: hidden; flex: 1; }
+
+/* Hide/show panels based on mode */
+.narrate-mode #narr-log-area { display: none; }
+.narrate-mode #narr-panel     { display: flex; }
+
+/* ── IDLE HINT ── */
+#idle-hint {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+  text-align: center; color: #555; pointer-events: none;
+}
+#idle-hint .ih-icon { font-size: 48px; margin-bottom: 10px; opacity: 0.3; }
+#idle-hint .ih-text { font-size: 13px; color: #666; }
+#idle-hint.hidden { display: none; }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <!-- HEADER -->
+  <div id="header">
+    <div class="title">C2A2 — Agent Ecosystem</div>
+    <div class="subtitle">Weekly Schedule · 25 Agents</div>
+    <div class="spacer"></div>
+    <div id="progress-bar-wrap" title="Click or drag to seek"><div id="progress-bar"></div></div>
+    <div id="time-display">Sun 00:00</div>
+    <button class="ctrl-btn" id="btn-play">▶ Play</button>
+    <button class="ctrl-btn" id="btn-pause" disabled>⏸ Pause</button>
+    <button class="ctrl-btn" id="btn-reset">↺ Reset</button>
+    <button class="ctrl-btn" id="btn-narrate" title="Narration mode — slow walk with spoken descriptions">⬡ Narrate</button>
+    <span id="speed-label">Speed:</span>
+    <select id="speed-select">
+      <option value="10">10×</option>
+      <option value="60" selected>60×</option>
+      <option value="360">360×</option>
+      <option value="720">720×</option>
+    </select>
+  </div>
+
+  <!-- CONTENT -->
+  <div id="content-area">
+
+    <!-- LEGEND (resizable) -->
+    <div id="legend">
+      <div id="legend-resize-handle"></div>
+      <h3>Categories</h3>
+      <div id="legend-items"></div>
+      <div class="legend-hr"></div>
+      <div id="agent-summary"></div>
+    </div>
+
+    <!-- CANVAS -->
+    <div id="canvas-wrapper">
+      <canvas id="main-canvas"></canvas>
+      <div id="idle-hint">
+        <div class="ih-icon">⏱</div>
+        <div class="ih-text">Press Play to animate<br>a full week of agent activity</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- NARRATION STRIP (resizable) -->
+  <div id="narration-strip">
+    <div id="narr-resize-handle"></div>
+    <div id="narr-inner">
+
+      <!-- Activity log (normal mode) -->
+      <div id="narr-log-area">
+        <div id="narr-title-row">
+          <span id="narr-title">▸ Activity Log</span>
+        </div>
+        <div id="narr-log"></div>
+      </div>
+
+      <!-- Narration panel (narrate mode) -->
+      <div id="narr-panel">
+        <div id="narr-panel-title-row">
+          <span id="narr-panel-label">▸ Now Narrating</span>
+          <button id="btn-skip" title="Skip to next agent  ⏭" disabled>⏭</button>
+          <button id="btn-mute" title="Mute / unmute narration voice">🔊</button>
+        </div>
+        <div id="narr-panel-header">
+          <span id="narr-panel-badge"></span>
+          <span id="narr-panel-name">—</span>
+          <span id="narr-panel-time"></span>
+        </div>
+        <div id="narr-panel-text">Press Play (or drag the progress bar) to begin narration.</div>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- #app -->
+
+<!-- DETAIL PANEL (floating) -->
+<div id="detail-panel">
+  <div class="det-resize-handle" id="det-resize-handle"></div>
+  <div class="det-header" id="det-header">
+    <span class="det-drag-handle">⠿</span>
+    <span class="det-header-title">Agent Detail</span>
+    <button class="det-close" id="det-close">✕</button>
+  </div>
+  <div class="det-body">
+    <div class="det-name" id="det-name"></div>
+    <div class="det-id" id="det-id"></div>
+    <div id="det-badge-wrap"></div>
+    <div class="det-lbl">Schedule</div>
+    <div class="det-val" id="det-schedule"></div>
+    <div class="det-lbl">Fires on</div>
+    <div class="det-fire-times" id="det-fire-times"></div>
+    <div class="det-lbl">Description</div>
+    <div class="det-val" id="det-description"></div>
+    <div id="det-thinkers-wrap" style="display:none">
+      <div class="det-lbl">Thinkers</div>
+      <div class="thinker-chips" id="det-thinkers"></div>
+    </div>
+    <div class="det-hr"></div>
+    <div class="det-lbl">What it produces</div>
+    <div class="det-produces" id="det-produces"></div>
+  </div>
+</div>
+
+<!-- TOOLTIP -->
+<div id="tooltip">
+  <div class="tt-name" id="tt-name"></div>
+  <div id="tt-badge-wrap"></div>
+  <div class="tt-sched" id="tt-sched"></div>
+</div>
+
+<script>
+'use strict';
+
+// ============================================================
+// AGENT DATA
+// ============================================================
+const AGENTS = [
+  {
+    taskId:'bosco-archive-heartbeat',
+    description:'BOSCO archive heartbeat — enriches snippet-only emails with full bodies (Gmail mode) or fast-archives from metadata (fallback). SMS Tom a status report.',
+    schedule:'Every 2 days at 2:00 AM',
+    category:'project', days:[0,2,4,6], hour:2, minute:0,
+    narration:'BOSCO fires every other day at 2 AM, one of the overnight custodians keeping communication context intact. It enriches snippet-only emails with full bodies in Gmail mode, or performs fast metadata archiving as a fallback. Its SMS status report arrives silently, giving Tom a low-interruption pulse on email hygiene before the thinker agents wake.'
+  },
+  {
+    taskId:'morning-project-status',
+    description:'Delivers a spoken morning status update on all active projects during 7–10 AM dispatch sessions, and on request at any time',
+    schedule:'Daily at 8:09 AM',
+    category:'bridge', days:[0,1,2,3,4,5,6], hour:8, minute:9,
+    narration:'The Morning Project Status agent fires at 8:09 AM, in the heart of the dispatch window. It synthesises all active project states into a spoken briefing, bridging overnight background work into Tom\'s waking day. It doubles as an on-demand dashboard — ask it any time and it tells you where everything stands.'
+  },
+  {
+    taskId:'agentic-cost-tracker',
+    description:'Tracks and reports estimated usage costs for all active scheduled agents, presented as a named list with monthly totals',
+    schedule:'Monday at 5:35 AM',
+    category:'infrastructure', days:[1], hour:5, minute:35,
+    narration:'The Agentic Cost Tracker runs once a week on Monday at 5:35 AM, shortly after the Levin and Friston thinker pair has deposited its proposals. It tallies estimated usage costs for every active scheduled agent, presenting a named list with monthly totals. This agent is the financial conscience of the ecosystem.'
+  },
+  {
+    taskId:'execution-assistant',
+    description:'Executes tasks and action items from Tom\'s planning conversations without requiring him to switch between conversation and execution',
+    schedule:'Manual only',
+    category:'project', days:[], hour:null, minute:null,
+    narration:'The Execution Assistant is manual-only — it has no fixed schedule and never appears in the weekly sweep. It fires on demand when Tom needs action items executed without switching context, bridging planning conversations directly into task completion. In the grid it appears in the legend as a reminder that not all agency is scheduled.'
+  },
+  {
+    taskId:'morning-system-health',
+    description:'Daily 6 AM Mac system health check — CPU, memory, top processes, disk usage, saved as a rolling 3-day report',
+    schedule:'Daily at 6:03 AM',
+    category:'infrastructure', days:[0,1,2,3,4,5,6], hour:6, minute:3,
+    narration:'The Morning System Health agent fires at 6:03 AM, one of the first infrastructure checks after the overnight thinker agents. It runs a Mac health sweep covering CPU, memory, top processes, and disk usage, and saves a rolling three-day report. It gives the entire ecosystem a physical substrate to stand on.'
+  },
+  {
+    taskId:'c282-wiki-agent-daily-run',
+    description:'C2A2 Wiki orchestrator — daily run: process decisions, ingest inbox, hunt new sources, generate review page, Gmail draft, cleanup, git commit',
+    schedule:'Daily at 4:34 AM',
+    category:'c2a2-pipeline', days:[0,1,2,3,4,5,6], hour:4, minute:34,
+    narration:'The C2A2 Wiki Orchestrator is the metabolic heartbeat of the entire system, firing at 4:34 AM every day after the overnight thinker agents have deposited their proposals. It processes pending decisions, ingests the inbox, hunts new sources, generates a review page, creates a Gmail draft for Tom, and commits to git. Everything downstream depends on this agent running cleanly.'
+  },
+  {
+    taskId:'openstory-version-check',
+    description:'Weekly check for OpenStory upstream git updates (Rust+Vite, ~/Documents/Non-Claude Projects/OpenStory, master branch)',
+    schedule:'Monday at 5:37 AM',
+    category:'infrastructure', days:[1], hour:5, minute:37,
+    narration:'The OpenStory Version Check runs every Monday at 5:37 AM, two minutes after the Agentic Cost Tracker. It polls the OpenStory upstream git repository for new commits on the master branch of the Rust and Vite project. This lightweight watchdog ensures the codebase stays in sync without requiring manual monitoring.'
+  },
+  {
+    taskId:'morning-walk-cowork-handoff',
+    description:'Reads morning walk planning notes from Gmail, C2A2 wiki state, and pending proposals — synthesizes a daily briefing file for the Cowork session',
+    schedule:'Daily at 9:10 AM',
+    category:'bridge', days:[0,1,2,3,4,5,6], hour:9, minute:10,
+    narration:'The Morning Walk to Cowork Handoff fires at 9:10 AM, eighteen minutes after the Chat scrape agent. It reads Tom\'s morning walk planning notes from Gmail, checks C2A2 wiki state and pending proposals, and synthesises everything into a single daily briefing file. This file becomes the opening context for the Cowork session.'
+  },
+  {
+    taskId:'c2a2-agent-levin-friston',
+    description:'C2A2 Monday agents — Levin + Friston hunt new papers and write proposals to pending/',
+    schedule:'Monday at 3:04 AM',
+    category:'c2a2-thinker', days:[1], hour:3, minute:4,
+    thinkers:['Levin','Friston'],
+    narration:'The first thinker pair of the week fires at 3:04 AM Monday. Levin and Friston represent the biological and computational faces of the mind-body question — Levin from bioelectric cognition, Friston from free energy and active inference. They hunt new papers and write proposals to the pending folder, seeding the week\'s inquiry.'
+  },
+  {
+    taskId:'c2a2-agent-hawkins-hoffman',
+    description:'C2A2 Tuesday agents — Hawkins + Hoffman hunt new papers and write proposals to pending/',
+    schedule:'Tuesday at 3:04 AM',
+    category:'c2a2-thinker', days:[2], hour:3, minute:4,
+    thinkers:['Hawkins','Hoffman'],
+    narration:'Hawkins and Hoffman take the early Tuesday slot at 3:04 AM. Hawkins brings the Thousand Brains theory of hierarchical cortical memory; Hoffman contributes conscious realism and interface theory. Together they probe the boundary between computational structure and phenomenal experience, depositing proposals before sunrise.'
+  },
+  {
+    taskId:'c2a2-agent-mcgilchrist-kastrup',
+    description:'C2A2 Wednesday agents — McGilchrist + Kastrup hunt new papers and write proposals to pending/',
+    schedule:'Wednesday at 3:07 AM',
+    category:'c2a2-thinker', days:[3], hour:3, minute:7,
+    thinkers:['McGilchrist','Kastrup'],
+    narration:'McGilchrist and Kastrup fire at 3:07 AM Wednesday. McGilchrist brings the divided brain\'s master and emissary framework; Kastrup argues for analytic idealism, that reality is fundamentally mental. Their combined lens interrogates the relationship between hemispheric structure and the nature of consciousness itself.'
+  },
+  {
+    taskId:'c2a2-agent-stump-fredrickson',
+    description:'C2A2 Thursday agents — Stump + Fredrickson hunt new papers and write proposals to pending/',
+    schedule:'Thursday at 3:04 AM',
+    category:'c2a2-thinker', days:[4], hour:3, minute:4,
+    thinkers:['Stump','Fredrickson'],
+    narration:'Stump and Fredrickson fire at 3:04 AM Thursday. Eleonore Stump brings analytic theology and the question of suffering and union with God; Barbara Fredrickson contributes positive psychology and broaden-and-build theory. Their pairing explores the intersection of meaning, flourishing, and transcendence.'
+  },
+  {
+    taskId:'c2a2-agent-carroll-arkanihamed',
+    description:'C2A2 Friday agents — Carroll + Arkani-Hamed hunt new papers and write proposals to pending/',
+    schedule:'Friday at 3:07 AM',
+    category:'c2a2-thinker', days:[5], hour:3, minute:7,
+    thinkers:['Carroll','Arkani-Hamed'],
+    narration:'Carroll and Arkani-Hamed take the Friday 3:07 AM slot, the physics pairing of the week. Sean Carroll brings naturalism, quantum mechanics, and the arrow of time; Nima Arkani-Hamed brings amplituhedron geometry and deep skepticism of spacetime fundamentality. They probe the outer edges of physical ontology.'
+  },
+  {
+    taskId:'c2a2-agent-wolfram',
+    description:'C2A2 Saturday agent — Wolfram hunts new papers and writes proposals to pending/',
+    schedule:'Saturday at 3:07 AM',
+    category:'c2a2-thinker', days:[6], hour:3, minute:7,
+    thinkers:['Wolfram'],
+    narration:'Wolfram fires alone at 3:07 AM Saturday, the only solo thinker in the weekly rotation. His computational universe hypothesis and ruliad concept require a distinctive approach, exploring whether the universe is a giant computation and what that implies for observer theory and physical law. The solo slot reflects the idiosyncratic scope of his framework.'
+  },
+  {
+    taskId:'c2a2-agent-wright-rohr',
+    description:'C2A2 Sunday agents — N.T. Wright + Richard Rohr hunt new sources and write proposals to pending/. Completes the 13-thinker network.',
+    schedule:'Sunday at 3:13 AM',
+    category:'c2a2-thinker', days:[0], hour:3, minute:13,
+    thinkers:['Wright','Rohr'],
+    narration:'Wright and Rohr close the thinker rotation on Sunday at 3:13 AM, completing the thirteen-thinker network. N.T. Wright brings New Testament scholarship and Christian realism; Richard Rohr brings contemplative theology and the perennial tradition. They ground the epistemic network in spiritual and historical depth, bridging to the orchestrator that follows.'
+  },
+  {
+    taskId:'c2a2-self-awareness-daily',
+    description:'C2A2 self-awareness pipeline — end-of-day run: Agent 14a extracts assumptions, Agent 14b detects presumptions, seeds lit search queue for 15a/15b',
+    schedule:'Daily at 11:37 PM',
+    category:'c2a2-pipeline', days:[0,1,2,3,4,5,6], hour:23, minute:37,
+    narration:'At 11:37 PM the self-awareness pipeline closes the day. Agent 14a extracts implicit assumptions from the day\'s wiki activity; Agent 14b detects presumptions that may need challenge. Their output seeds the lit search queue that fires just after midnight, creating a continuous loop of epistemic self-correction.'
+  },
+  {
+    taskId:'c2a2-lit-search-pipeline',
+    description:'C2A2 lit search pipeline — evening run: Agent 15a searches FOR, Agent 15b searches AGAINST, Agent 15c dispositions results',
+    schedule:'Daily at 12:39 AM',
+    category:'c2a2-pipeline', days:[0,1,2,3,4,5,6], hour:0, minute:39,
+    narration:'The Lit Search Pipeline fires at 12:39 AM, seeded by the self-awareness agents that ran fifty minutes prior. Agent 15a searches for evidence supporting identified assumptions; Agent 15b searches against them; Agent 15c dispositions the results into the wiki. This adversarial search structure is the system\'s immune response to confirmation bias.'
+  },
+  {
+    taskId:'c2a2-deferred-action-monitor',
+    description:'C2A2 Agent 16 — early-morning deferred action check: scan needs_review/, check watch list conditions, route resolved items',
+    schedule:'Daily at 2:33 AM',
+    category:'c2a2-pipeline', days:[0,1,2,3,4,5,6], hour:2, minute:33,
+    narration:'The Deferred Action Monitor runs at 2:33 AM, slotted between the lit search pipeline and the overnight thinker agents. It scans the needs review folder, checks watch-list conditions, and routes any resolved items forward. This agent prevents deferred work from accumulating silently — it is the system\'s follow-through mechanism.'
+  },
+  {
+    taskId:'c2a2-periodic-monitor-weekly',
+    description:'C2A2 Agent 15d — weekly periodic monitor: re-check MONITOR items, re-verify INCORPORATED premises, track evidence trajectories',
+    schedule:'Sunday at 3:33 AM',
+    category:'c2a2-pipeline', days:[0], hour:3, minute:33,
+    narration:'The Periodic Monitor runs once a week on Sunday at 3:33 AM, twenty minutes after Wright and Rohr. It re-checks monitor items in the wiki, re-verifies incorporated premises, and tracks evidence trajectories over time. This weekly audit catches drift that daily agents would miss, keeping the knowledge network epistemically honest.'
+  },
+  {
+    taskId:'c2a2-morning-chat-scrape',
+    description:'Morning Chat→Cowork sync — scrape today\'s daily walk Chat conversation from claude.ai, summarize key points into a dated .md for Cowork context',
+    schedule:'Daily at 8:52 AM',
+    category:'bridge', days:[0,1,2,3,4,5,6], hour:8, minute:52,
+    narration:'The Chat to Cowork Scrape fires at 8:52 AM, eighteen minutes before the Cowork Handoff. It scrapes the day\'s daily walk Chat conversation from claude.ai, summarises the key points, and saves a dated markdown file for Cowork context. This ensures the morning walk conversation doesn\'t disappear into the Chat interface.'
+  },
+  {
+    taskId:'c2a2-evening-cowork-to-chat',
+    description:'Evening Cowork→Chat sync — generate day\'s progress summary from Cowork session, save as .md, and paste into daily walk Chat conversation on claude.ai',
+    schedule:'Daily at 6:38 PM',
+    category:'bridge', days:[0,1,2,3,4,5,6], hour:18, minute:38,
+    narration:'The Cowork to Chat Sync fires at 6:38 PM, completing the daily context loop. It generates a summary of the day\'s Cowork session progress and pastes it into the daily walk Chat conversation. This bridge ensures continuity between the structured Cowork workspace and the more conversational Chat interface.'
+  },
+  {
+    taskId:'weekly-agent-ecosystem-report',
+    description:'Sunday 8pm weekly roundup: plain-English count of all agents, what each does, how they relate, and a stranded-agent audit',
+    schedule:'Sunday at 10:39 PM',
+    category:'infrastructure', days:[0], hour:22, minute:39,
+    narration:'The Weekly Ecosystem Report fires at 10:39 PM Sunday, one of the last scheduled tasks of the week. It generates a plain-English account of all agents — what each does, how they relate, and a stranded-agent audit to catch anything disconnected from the broader system. This is the system\'s weekly retrospective.'
+  },
+  {
+    taskId:'summa-2026-nightly-verification',
+    description:'Nightly verification of Summa 2026 synthesis notes against the RC Karpathy Wiki — citation drift, convention sweeps, length policy, new-pairing candidates.',
+    schedule:'Daily at 11:06 PM',
+    category:'summa', days:[0,1,2,3,4,5,6], hour:23, minute:6,
+    narration:'The Summa Nightly Verification fires at 11:06 PM, thirty-one minutes before the self-awareness pipeline. It checks Summa 2026 synthesis notes against the RC Karpathy Wiki for citation drift, convention sweeps, length policy compliance, and new pairing candidates. It guards the integrity of the cross-referenced synthesis layer.'
+  },
+  {
+    taskId:'summa-2026-daily-batch',
+    description:'Daily batch for Summa 2026 — fetches scheduled episodes\' transcripts via tactiq.io, drafts contemporary-parallel syntheses against the C2A2 wiki, updates Days.md and Pace tracker.',
+    schedule:'Daily at 5:02 AM',
+    category:'summa', days:[0,1,2,3,4,5,6], hour:5, minute:2,
+    narration:'The Summa Daily Batch fires at 5:02 AM, twenty-eight minutes after the C2A2 orchestrator. It fetches scheduled episode transcripts, drafts contemporary-parallel syntheses against the C2A2 wiki, and updates Days.md and the Pace tracker. This agent is the primary writer in the Summa 2026 project.'
+  },
+  {
+    taskId:'korbyt-tasks',
+    description:'Project-specific Korbyt task execution agent — handles outstanding items from Tom\'s Korbyt workspace queue',
+    schedule:'Manual only',
+    category:'project', days:[], hour:null, minute:null,
+    narration:'The Korbyt Task Agent is manual-only, appearing in the legend but never on the weekly grid. It handles outstanding items from Tom\'s Korbyt workspace queue, executing project-specific tasks on demand. Like the Execution Assistant, it operates outside the scheduled ecosystem, firing only when explicitly called.'
+  }
+];
+
+// ============================================================
+// CATEGORY METADATA
+// ============================================================
+const CAT = {
+  'c2a2-thinker':   { label:'C2A2 Thinkers',   color:'#5CA4D8', bg:'rgba(92,164,216,0.20)',  short:'Thinkers'  },
+  'c2a2-pipeline':  { label:'C2A2 Pipelines',  color:'#B080D4', bg:'rgba(176,128,212,0.20)', short:'Pipelines' },
+  'summa':          { label:'Summa',            color:'#D4B85A', bg:'rgba(212,184,90,0.20)',  short:'Summa'     },
+  'bridge':         { label:'Bridge / Sync',    color:'#5CBD7D', bg:'rgba(92,189,125,0.20)', short:'Bridge'    },
+  'infrastructure': { label:'Infrastructure',   color:'#D46E6E', bg:'rgba(212,110,110,0.20)',  short:'Infra'     },
+  'project':        { label:'Project-specific', color:'#9EAEBE', bg:'rgba(158,174,190,0.20)',short:'Project'   }
+};
+
+const PRODUCES = {
+  'c2a2-thinker':   'Research proposals written to pending/ folder. Each proposal links a newly found paper or source to an existing wiki node, ready for orchestrator review.',
+  'c2a2-pipeline':  'Updated C2A2 wiki files, routed proposals, review pages, Gmail drafts, and git commits that advance the epistemic network.',
+  'summa':          'Draft synthesis notes and updated Pace tracker entries in the Summa 2026 workspace, cross-referenced against the C2A2 wiki.',
+  'bridge':         'Synchronization .md files and spoken briefings that carry context between Chat, Cowork, and the filesystem.',
+  'infrastructure': 'System health reports, cost summaries, version alerts, and ecosystem audit logs stored as rolling files.',
+  'project':        'Project-specific outputs — varies by task configuration and current assignment queue.'
+};
+
+const FRIENDLY_NAMES = {
+  'bosco-archive-heartbeat':       'BOSCO Archive Heartbeat',
+  'morning-project-status':        'Morning Project Status',
+  'agentic-cost-tracker':          'Agentic Cost Tracker',
+  'execution-assistant':           'Execution Assistant',
+  'morning-system-health':         'Morning System Health',
+  'c282-wiki-agent-daily-run':     'C2A2 Wiki Orchestrator',
+  'openstory-version-check':       'OpenStory Version Check',
+  'morning-walk-cowork-handoff':   'Morning Walk → Cowork',
+  'c2a2-agent-levin-friston':      'Levin + Friston',
+  'c2a2-agent-hawkins-hoffman':    'Hawkins + Hoffman',
+  'c2a2-agent-mcgilchrist-kastrup':'McGilchrist + Kastrup',
+  'c2a2-agent-stump-fredrickson':  'Stump + Fredrickson',
+  'c2a2-agent-carroll-arkanihamed':'Carroll + Arkani-Hamed',
+  'c2a2-agent-wolfram':            'Wolfram',
+  'c2a2-agent-wright-rohr':        'Wright + Rohr',
+  'c2a2-self-awareness-daily':     'C2A2 Self-Awareness',
+  'c2a2-lit-search-pipeline':      'C2A2 Lit Search',
+  'c2a2-deferred-action-monitor':  'C2A2 Deferred Actions',
+  'c2a2-periodic-monitor-weekly':  'C2A2 Periodic Monitor',
+  'c2a2-morning-chat-scrape':      'Chat → Cowork Scrape',
+  'c2a2-evening-cowork-to-chat':   'Cowork → Chat Sync',
+  'weekly-agent-ecosystem-report': 'Weekly Ecosystem Report',
+  'summa-2026-nightly-verification':'Summa Nightly Verify',
+  'summa-2026-daily-batch':        'Summa Daily Batch',
+  'korbyt-tasks':                  'Korbyt Task Agent'
+};
+
+function fname(id) { return FRIENDLY_NAMES[id] || id.replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase()); }
+
+const DAYS_ABBR = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const TOTAL_MIN = 7 * 24 * 60;
+// Narration speed: 57.6 sim-min/real-sec ≈ 25 sec per simulated day (~3 min for a week)
+const NARRATE_SPEED = 57.6;
+
+// Narration strip heights
+let narrNormalH   = 80;   // height in normal/log mode
+let narrExpandH   = 148;  // height in narrate mode
+// These update when the user drags
+
+// ============================================================
+// LAYOUT
+// ============================================================
+const PAD_L = 52, PAD_T = 32, PAD_R = 16, PAD_B = 16;
+const DOT_R = 6.5;
+let ROW_H   = 72;
+
+// ============================================================
+// STATE
+// ============================================================
+let canvas, ctx, wrapper;
+let cW = 800, cH = 600, gW = 700;
+let agentDots = [], pulses = [];
+let isPlaying = false, animId = null, lastTs = null;
+let currentMin = 0;
+let speed = 60;
+let selectedAgent = null;
+let narEvents = [];
+let narrateMode = false;
+let prevNarrAgent = null;
+
+// Narrate-mode agent-by-agent queue
+let narrQueue        = [];   // sorted [{agent, tof, day}] for all scheduled firings
+let narrAgentIndex   = 0;    // current position in narrQueue
+let narrAdvanceTimer = null; // pending setTimeout handle between agents (post-speech gap)
+let narrSilentTimer  = null; // pending setTimeout when TTS is muted (fake reading delay)
+let seekDragStopped  = false; // true once stopSpeech has been called for the current drag
+// Gap between agents after speech ends.
+// Future hook: replace with an inactivity-wait when semantic search is wired in.
+const NARRATE_AGENT_GAP_MS = 500;
+
+// Drag/resize state
+let panelDrag    = null;
+let panelResize  = null;
+let legendResize = null;
+let narrResize   = null;
+let pbDragging   = false;
+
+// ============================================================
+// TTS — Web Speech API
+// ============================================================
+let ttsEnabled       = true;
+let ttsDebounceTimer = null;
+let preferredVoice   = null;   // cached after voices load
+let narrTick         = 0;      // generation counter — incremented on cancel so stale callbacks no-op
+const synth = window.speechSynthesis;
+
+function resolveVoice() {
+  const voices = synth ? synth.getVoices() : [];
+  if (!voices.length) return;
+  preferredVoice =
+    voices.find(v => /en[_-](GB|AU|IE)/i.test(v.lang) && !/Google/.test(v.name)) ||
+    voices.find(v => /en[_-]US/i.test(v.lang)  && /samantha/i.test(v.name))      ||
+    voices.find(v => /en/i.test(v.lang));
+}
+
+// onEnd callback is optional; used by advanceNarrAgent to chain agents.
+// When muted, simulates reading time before calling onEnd so narrate mode
+// doesn't zip through agents silently.
+function speakNarration(text, onEnd) {
+  const wc = text.trim().split(/\s+/).length;
+  const silentMs = Math.max(2000, wc * 400); // ~150 wpm, min 2 s
+  if (!synth) {
+    if (onEnd) narrSilentTimer = setTimeout(onEnd, silentMs);
+    return;
+  }
+  synth.cancel();
+  if (!ttsEnabled) {
+    if (onEnd) narrSilentTimer = setTimeout(onEnd, silentMs);
+    return;
+  }
+  narrSilentTimer = null; // entering real-TTS mode; no fake timer active
+  const thisTick = ++narrTick;
+  const utt = new SpeechSynthesisUtterance(text);
+  utt.rate = 0.88; utt.pitch = 1.0; utt.volume = 1.0;
+  if (preferredVoice) utt.voice = preferredVoice;
+  if (onEnd) {
+    utt.onend  = ()  => { if (narrTick === thisTick) onEnd(); };
+    utt.onerror = (e) => { if (narrTick === thisTick && e.error !== 'interrupted' && e.error !== 'canceled') onEnd(); };
+  }
+  // Small delay after cancel() — Chrome needs a tick to clear its synthesis queue
+  // before speak() or it can corrupt the macOS SpeechSynthesisServer state.
+  setTimeout(() => { if (narrTick === thisTick) synth.speak(utt); }, 30);
+}
+
+function speakDebounced(text, delay) {
+  if (ttsDebounceTimer) clearTimeout(ttsDebounceTimer);
+  ttsDebounceTimer = setTimeout(() => speakNarration(text), delay || 650);
+}
+
+function stopSpeech() {
+  ++narrTick;  // invalidate any pending TTS callbacks
+  if (ttsDebounceTimer) { clearTimeout(ttsDebounceTimer); ttsDebounceTimer = null; }
+  if (narrAdvanceTimer) { clearTimeout(narrAdvanceTimer); narrAdvanceTimer = null; }
+  if (narrSilentTimer)  { clearTimeout(narrSilentTimer);  narrSilentTimer  = null; }
+  if (synth) synth.cancel();
+}
+
+// ============================================================
+// PRECOMPUTE DOTS
+// ============================================================
+function computeDots() {
+  agentDots = [];
+  const scheds = AGENTS.filter(a => a.hour !== null);
+  for (const a of scheds) {
+    for (const d of a.days) {
+      agentDots.push({ agent:a, day:d, xFrac:(a.hour*60+a.minute)/(24*60), cx:0, cy:0, yOff:0 });
+    }
+  }
+  const byDay = {};
+  for (const dot of agentDots) (byDay[dot.day] = byDay[dot.day]||[]).push(dot);
+  for (const row of Object.values(byDay)) {
+    row.sort((a,b)=>a.xFrac-b.xFrac);
+    const placed = [];
+    for (const dot of row) {
+      const x = PAD_L + dot.xFrac * gW;
+      let yOff = 0, tries = 0, collide = true;
+      while (collide && tries < 8) {
+        collide = false;
+        for (const p of placed) {
+          const dx = x-p.x, dy = yOff-p.y;
+          if (Math.sqrt(dx*dx+dy*dy) < DOT_R*2.4) {
+            collide = true;
+            yOff = p.y + (yOff>=p.y?1:-1)*DOT_R*2.5;
+            break;
+          }
+        }
+        tries++;
+      }
+      dot.yOff = Math.max(-(ROW_H/2-DOT_R-2), Math.min(ROW_H/2-DOT_R-2, yOff));
+      placed.push({x, y:dot.yOff});
+    }
+  }
+  updateDotPositions();
+}
+
+function updateDotPositions() {
+  for (const dot of agentDots) {
+    dot.cx = PAD_L + dot.xFrac * gW;
+    dot.cy = PAD_T + dot.day * ROW_H + ROW_H/2 + dot.yOff;
+  }
+}
+
+// ============================================================
+// LEGEND
+// ============================================================
+function buildLegend() {
+  const counts = {};
+  for (const a of AGENTS) counts[a.category] = (counts[a.category]||0)+1;
+  const el = document.getElementById('legend-items');
+  el.innerHTML = '';
+  for (const [k,v] of Object.entries(CAT)) {
+    const n = counts[k]||0;
+    const row = document.createElement('div');
+    row.className = 'legend-item';
+    row.innerHTML = '<span class="legend-dot" style="background:'+v.color+'"></span>'
+      +'<span class="legend-label">'+v.label+'</span>'
+      +'<span class="legend-count">'+n+'</span>';
+    el.appendChild(row);
+  }
+  const sched = AGENTS.filter(a=>a.hour!==null).length;
+  const manual = AGENTS.filter(a=>a.hour===null).length;
+  document.getElementById('agent-summary').innerHTML =
+    AGENTS.length+' agents total<br>'+sched+' scheduled<br>'+manual+' manual';
+}
+
+// ============================================================
+// CANVAS DRAWING
+// ============================================================
+function draw(now) {
+  ctx.clearRect(0,0,cW,cH);
+  ctx.fillStyle = '#111118'; ctx.fillRect(0,0,cW,cH);
+
+  const curDay = Math.min(6, Math.floor(currentMin/(24*60)));
+  const minInDay = currentMin%(24*60);
+
+  if (isPlaying || currentMin > 0) {
+    ctx.fillStyle = 'rgba(212,184,90,0.06)';
+    ctx.fillRect(PAD_L, PAD_T+curDay*ROW_H, gW, ROW_H);
+  }
+  for (let h=0; h<=24; h++) {
+    const x = PAD_L+(h/24)*gW, major=h%6===0;
+    ctx.strokeStyle=major?'#28283e':'#1c1c30'; ctx.lineWidth=major?1:0.5;
+    ctx.beginPath(); ctx.moveTo(x,PAD_T); ctx.lineTo(x,PAD_T+7*ROW_H); ctx.stroke();
+  }
+  for (let d=0; d<=7; d++) {
+    const y=PAD_T+d*ROW_H;
+    ctx.strokeStyle='#242436'; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(PAD_L,y); ctx.lineTo(PAD_L+gW,y); ctx.stroke();
+  }
+  ctx.textAlign='center';
+  for (const [h,lbl] of [[0,'midnight'],[4,'4 AM'],[8,'8 AM'],[12,'noon'],[16,'4 PM'],[20,'8 PM'],[24,'midnight']]) {
+    const x=PAD_L+(h/24)*gW;
+    ctx.fillStyle='#484862'; ctx.font='9px Inter,sans-serif'; ctx.fillText(lbl,x,PAD_T-10);
+    ctx.strokeStyle='#2e2e48'; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(x,PAD_T-4); ctx.lineTo(x,PAD_T); ctx.stroke();
+  }
+  ctx.textAlign='right';
+  for (let d=0; d<7; d++) {
+    const y=PAD_T+d*ROW_H+ROW_H/2, active=(isPlaying||currentMin>0)&&d===curDay;
+    ctx.fillStyle=active?'#D4B85A':'#4a4a6e';
+    ctx.font=active?'bold 11px Inter,sans-serif':'11px Inter,sans-serif';
+    ctx.fillText(DAYS_ABBR[d],PAD_L-7,y+4);
+  }
+
+  const PULSE_DUR=1400;
+  pulses=pulses.filter(p=>now-p.t0<PULSE_DUR);
+  for (const p of pulses) {
+    const prog=(now-p.t0)/PULSE_DUR, r=DOT_R+prog*28, alpha=(1-prog)*0.65;
+    const hex=Math.round(alpha*255).toString(16).padStart(2,'0');
+    ctx.beginPath(); ctx.arc(p.cx,p.cy,r,0,Math.PI*2);
+    ctx.strokeStyle=p.color+hex; ctx.lineWidth=2; ctx.stroke();
+  }
+
+  for (const dot of agentDots) {
+    const c=CAT[dot.agent.category]?.color||'#aaa', sel=dot.agent===selectedAgent;
+    if(sel){ctx.shadowBlur=14; ctx.shadowColor=c;}
+    ctx.beginPath(); ctx.arc(dot.cx,dot.cy,DOT_R,0,Math.PI*2);
+    ctx.fillStyle=sel?c:c+'BB'; ctx.fill();
+    ctx.strokeStyle=sel?'#ffffff':c+'88'; ctx.lineWidth=sel?2:1; ctx.stroke();
+    ctx.shadowBlur=0;
+  }
+
+  const manualAgents=AGENTS.filter(a=>a.hour===null);
+  if (manualAgents.length>0) {
+    ctx.fillStyle='#383848';
+    ctx.fillRect(PAD_L,PAD_T+7*ROW_H+2,gW,PAD_B-2);
+    ctx.fillStyle='#666'; ctx.font='10px Inter,sans-serif'; ctx.textAlign='left';
+    ctx.fillText('Manual only: '+manualAgents.map(a=>fname(a.taskId)).join(' · '), PAD_L+6, PAD_T+7*ROW_H+PAD_B-5);
+  }
+
+  if (isPlaying || currentMin > 0) {
+    const sx=PAD_L+(minInDay/(24*60))*gW;
+    const rTop=PAD_T+curDay*ROW_H, rBot=rTop+ROW_H;
+    const grad=ctx.createLinearGradient(sx-12,0,sx+12,0);
+    grad.addColorStop(0,'rgba(201,168,76,0)');
+    grad.addColorStop(0.45,'rgba(212,184,90,0.15)');
+    grad.addColorStop(0.5,'rgba(212,184,90,0.26)');
+    grad.addColorStop(0.55,'rgba(212,184,90,0.15)');
+    grad.addColorStop(1,'rgba(201,168,76,0)');
+    ctx.fillStyle=grad; ctx.fillRect(sx-12,rTop,24,ROW_H);
+    ctx.strokeStyle='rgba(212,184,90,0.85)'; ctx.lineWidth=1.5;
+    ctx.beginPath(); ctx.moveTo(sx,rTop); ctx.lineTo(sx,rBot); ctx.stroke();
+    ctx.fillStyle='#D4B85A';
+    ctx.beginPath(); ctx.moveTo(sx-5,rTop-1); ctx.lineTo(sx+5,rTop-1); ctx.lineTo(sx,rTop+7); ctx.closePath(); ctx.fill();
+  }
+}
+
+// ============================================================
+// ANIMATION LOOP
+// ============================================================
+function animate(ts) {
+  if (!isPlaying) return;
+
+  if (narrateMode) {
+    // Narrate mode: time is advanced by advanceNarrAgent(), not here.
+    // This loop only runs to animate pulse rings.
+    draw(ts);
+    animId = requestAnimationFrame(animate);
+    return;
+  }
+
+  // Normal mode: continuous time advancement
+  if (lastTs===null) lastTs=ts;
+  const dt=ts-lastTs; lastTs=ts;
+  const prev=currentMin;
+  currentMin=Math.min(TOTAL_MIN-0.001, currentMin+(dt/1000)*speed);
+  checkFirings(prev,currentMin,ts);
+  updateTimeHUD();
+  draw(ts);
+  if (currentMin>=TOTAL_MIN-0.001) {
+    isPlaying=false; lastTs=null; updateButtons(); draw(ts); return;
+  }
+  animId=requestAnimationFrame(animate);
+}
+
+function checkFirings(prev,curr,ts) {
+  for (const dot of agentDots) {
+    const tof=dot.day*24*60+dot.agent.hour*60+dot.agent.minute;
+    if (tof>prev && tof<=curr) {
+      const c=CAT[dot.agent.category]?.color||'#aaa';
+      pulses.push({cx:dot.cx,cy:dot.cy,color:c,t0:ts});
+      pushNarr(dot.agent,tof);
+    }
+  }
+}
+
+function pushNarr(agent,tof) {
+  const d=Math.floor(tof/(24*60)), t=tof%(24*60);
+  const h=Math.floor(t/60), m=Math.floor(t%60);
+  const ts=DAYS_ABBR[d]+' '+String(h).padStart(2,'0')+':'+String(m).padStart(2,'0');
+  narEvents.unshift({ts,agent});
+  if(narEvents.length>3) narEvents.pop();
+  renderNarr();
+}
+
+function renderNarr() {
+  const log=document.getElementById('narr-log');
+  log.innerHTML='';
+  const ages=['','old','older'];
+  narEvents.forEach((ev,i)=>{
+    const meta=CAT[ev.agent.category]||{color:'#aaa',bg:'#252535',short:'?'};
+    const d=document.createElement('div');
+    d.className='narr-event '+(ages[i]||'older');
+    d.innerHTML='<span class="narr-time">'+ev.ts+'</span>'
+      +'<span class="narr-badge" style="background:'+meta.bg+';color:'+meta.color+'">'+meta.short+'</span>'
+      +'<span class="narr-text"><strong>'+fname(ev.agent.taskId)+'</strong> — '
+      +ev.agent.description.substring(0,90)+(ev.agent.description.length>90?'…':'')+'</span>';
+    log.appendChild(d);
+  });
+}
+
+// ============================================================
+// NARRATE QUEUE — agent-by-agent playback
+// ============================================================
+function buildNarrQueue() {
+  narrQueue = [];
+  for (const a of AGENTS) {
+    if (a.hour === null) continue;
+    for (const d of a.days) {
+      narrQueue.push({ agent:a, tof: d*24*60 + a.hour*60 + a.minute, day:d });
+    }
+  }
+  narrQueue.sort((a,b) => a.tof - b.tof);
+}
+
+// Jump to agent[narrAgentIndex], fire pulse, update panel, speak, then schedule next.
+function advanceNarrAgent() {
+  if (!isPlaying || !narrateMode) return;
+  if (narrAgentIndex >= narrQueue.length) {
+    isPlaying = false; lastTs = null;
+    updateButtons();
+    return;
+  }
+  // Refresh skip-button state each time we land on a new agent.
+  const skipBtn = document.getElementById('btn-skip');
+  if (skipBtn) skipBtn.disabled = (narrAgentIndex >= narrQueue.length - 1);
+
+  const item = narrQueue[narrAgentIndex];
+
+  // Move sweep line to this agent's fire time
+  currentMin = item.tof;
+  updateTimeHUD();
+
+  // Pulse ring on the canvas dot
+  const dot = agentDots.find(d => d.agent === item.agent && d.day === item.day);
+  if (dot) {
+    const c = CAT[item.agent.category]?.color || '#aaa';
+    pulses.push({ cx:dot.cx, cy:dot.cy, color:c, t0:performance.now() });
+  }
+
+  // Activity log
+  pushNarr(item.agent, item.tof);
+
+  // Narration panel
+  const meta    = CAT[item.agent.category] || { color:'#aaa', bg:'#252535', short:'?' };
+  const t       = item.tof % (24*60);
+  const timeStr = DAYS_ABBR[item.day]+' '+String(Math.floor(t/60)).padStart(2,'0')+':'+String(Math.floor(t%60)).padStart(2,'0');
+  const badge   = document.getElementById('narr-panel-badge');
+  badge.textContent = meta.short; badge.style.background = meta.bg; badge.style.color = meta.color;
+  document.getElementById('narr-panel-name').textContent = fname(item.agent.taskId);
+  document.getElementById('narr-panel-time').textContent = timeStr;
+  const narText = item.agent.narration || item.agent.description;
+  document.getElementById('narr-panel-text').textContent = narText;
+  prevNarrAgent = item.agent;
+
+  draw(performance.now());
+
+  // Speak; when speech ends, wait the gap then step to the next agent.
+  speakNarration(narText, () => {
+    if (!isPlaying || !narrateMode) return;
+    narrAgentIndex++;
+    narrAdvanceTimer = setTimeout(advanceNarrAgent, NARRATE_AGENT_GAP_MS);
+  });
+}
+
+// ============================================================
+// NARRATION MODE
+// ============================================================
+function findCurrentNarrAgent() {
+  let best=null, bestTof=-1;
+  for (const a of AGENTS) {
+    if (a.hour===null) continue;
+    for (const d of a.days) {
+      const tof=d*24*60+a.hour*60+a.minute;
+      if (tof<=currentMin && tof>bestTof) { bestTof=tof; best={agent:a,tof,day:d}; }
+    }
+  }
+  return best;
+}
+
+// Updates the narration panel DOM for the agent nearest to currentMin.
+// Pure visual update — all speech is driven exclusively by advanceNarrAgent().
+function updateNarrPanel() {
+  const found=findCurrentNarrAgent();
+  if (!found) {
+    document.getElementById('narr-panel-name').textContent='—';
+    document.getElementById('narr-panel-badge').textContent='';
+    document.getElementById('narr-panel-time').textContent='';
+    document.getElementById('narr-panel-text').textContent='Press Play (or drag the progress bar) to begin narration.';
+    prevNarrAgent=null;
+    return;
+  }
+  if (found.agent === prevNarrAgent) return; // already showing this agent
+  prevNarrAgent=found.agent;
+
+  const meta=CAT[found.agent.category]||{color:'#aaa',bg:'#252535',short:'?'};
+  const t=found.tof%(24*60);
+  const timeStr=DAYS_ABBR[found.day]+' '+String(Math.floor(t/60)).padStart(2,'0')+':'+String(Math.floor(t%60)).padStart(2,'0');
+  const badge=document.getElementById('narr-panel-badge');
+  badge.textContent=meta.short; badge.style.background=meta.bg; badge.style.color=meta.color;
+  document.getElementById('narr-panel-name').textContent=fname(found.agent.taskId);
+  document.getElementById('narr-panel-time').textContent=timeStr;
+  document.getElementById('narr-panel-text').textContent=found.agent.narration||found.agent.description;
+}
+
+function setNarrateMode(on) {
+  // If switching modes while playing, pause first for a clean state
+  if (isPlaying) {
+    isPlaying=false; lastTs=null;
+    if(animId) cancelAnimationFrame(animId);
+    stopSpeech();
+    updateButtons();
+  }
+  narrateMode=on;
+  const btn=document.getElementById('btn-narrate');
+  const strip=document.getElementById('narration-strip');
+  if (on) {
+    btn.classList.add('narrate-on');
+    btn.textContent='⬡ Narrating';
+    strip.classList.add('narrate-mode');
+    strip.style.height=narrExpandH+'px';
+    prevNarrAgent=null;
+    updateNarrPanel();
+  } else {
+    btn.classList.remove('narrate-on');
+    btn.textContent='⬡ Narrate';
+    strip.classList.remove('narrate-mode');
+    strip.style.height=narrNormalH+'px';
+    prevNarrAgent=null;
+    stopSpeech();
+  }
+}
+
+function rebuildNarrLog() {
+  narEvents=[];
+  const allFired=[];
+  for (const a of AGENTS) {
+    if (a.hour===null) continue;
+    for (const d of a.days) {
+      const tof=d*24*60+a.hour*60+a.minute;
+      if (tof<=currentMin) allFired.push({agent:a,tof,day:d});
+    }
+  }
+  allFired.sort((a,b)=>b.tof-a.tof);
+  for (const item of allFired.slice(0,3)) {
+    const t=item.tof%(24*60), h=Math.floor(t/60), m=Math.floor(t%60);
+    const ts=DAYS_ABBR[item.day]+' '+String(h).padStart(2,'0')+':'+String(m).padStart(2,'0');
+    narEvents.push({ts,agent:item.agent});
+  }
+  renderNarr();
+}
+
+// ============================================================
+// HUD
+// ============================================================
+function updateTimeHUD() {
+  const d=Math.min(6,Math.floor(currentMin/(24*60))), t=currentMin%(24*60);
+  const h=Math.floor(t/60), m=Math.floor(t%60);
+  document.getElementById('time-display').textContent=
+    DAYS_ABBR[d]+' '+String(h).padStart(2,'0')+':'+String(m).padStart(2,'0');
+  document.getElementById('progress-bar').style.width=(currentMin/TOTAL_MIN*100).toFixed(2)+'%';
+}
+
+// ============================================================
+// TOOLTIP
+// ============================================================
+const tooltipEl=document.getElementById('tooltip');
+let hoveredDot=null;
+
+function findDotAt(mx,my) {
+  let best=null, bd=DOT_R+6;
+  for (const dot of agentDots) {
+    const d=Math.hypot(dot.cx-mx,dot.cy-my);
+    if(d<bd){bd=d;best=dot;}
+  }
+  return best;
+}
+
+function canvasCoords(e) {
+  const r=canvas.getBoundingClientRect();
+  return [(e.clientX-r.left)*(cW/r.width),(e.clientY-r.top)*(cH/r.height)];
+}
+
+// ============================================================
+// DETAIL PANEL
+// ============================================================
+function showDetail(agent) {
+  const meta=CAT[agent.category]||{color:'#aaa',bg:'#252535',label:'Unknown'};
+  document.getElementById('det-name').textContent=fname(agent.taskId);
+  document.getElementById('det-id').textContent=agent.taskId;
+  document.getElementById('det-badge-wrap').innerHTML=
+    '<span class="det-badge" style="background:'+meta.bg+';color:'+meta.color+'">'+meta.label+'</span>';
+  document.getElementById('det-schedule').textContent=agent.schedule;
+  document.getElementById('det-description').textContent=agent.description;
+  const ftEl=document.getElementById('det-fire-times');
+  if (agent.days&&agent.days.length>0&&agent.hour!==null) {
+    ftEl.innerHTML=agent.days.map(d=>{
+      const hh=String(agent.hour).padStart(2,'0'), mm=String(agent.minute).padStart(2,'0');
+      return '<span class="det-fire-chip">'+DAYS_ABBR[d]+' '+hh+':'+mm+'</span>';
+    }).join('');
+    if (agent.days.length===7) ftEl.innerHTML=
+      '<span class="det-fire-chip">Every day</span> '
+      +'<span class="det-fire-chip">'+String(agent.hour).padStart(2,'0')+':'+String(agent.minute).padStart(2,'0')+'</span>';
+  } else {
+    ftEl.innerHTML='<span class="det-fire-chip">Manual / on demand</span>';
+  }
+  const tw=document.getElementById('det-thinkers-wrap');
+  if (agent.thinkers&&agent.thinkers.length>0) {
+    tw.style.display='block';
+    document.getElementById('det-thinkers').innerHTML=
+      agent.thinkers.map(t=>'<span class="thinker-chip">'+t+'</span>').join('');
+  } else { tw.style.display='none'; }
+  document.getElementById('det-produces').textContent=PRODUCES[agent.category]||'(to be filled in)';
+  document.getElementById('detail-panel').classList.add('open');
+}
+
+function hideDetail() {
+  document.getElementById('detail-panel').classList.remove('open');
+  selectedAgent=null;
+}
+
+// ============================================================
+// CONTROLS
+// ============================================================
+function updateButtons() {
+  const atEnd=currentMin>=TOTAL_MIN-1;
+  document.getElementById('btn-play').disabled=isPlaying||atEnd;
+  document.getElementById('btn-play').classList.toggle('active',isPlaying);
+  document.getElementById('btn-pause').disabled=!isPlaying;
+  // Skip is only useful while narrating and not on the final agent.
+  const skipBtn=document.getElementById('btn-skip');
+  skipBtn.disabled = !(isPlaying && narrateMode && narrAgentIndex < narrQueue.length - 1);
+}
+
+// ============================================================
+// RESIZE CANVAS
+// ============================================================
+function resize() {
+  const wr=wrapper.getBoundingClientRect();
+  cW=Math.floor(wr.width);
+  const availH=Math.floor(wr.height);
+  ROW_H=Math.max(55,Math.min(90,Math.floor((availH-PAD_T-PAD_B-24)/7)));
+  cH=PAD_T+7*ROW_H+PAD_B+24;
+  gW=cW-PAD_L-PAD_R;
+  canvas.width=cW; canvas.height=cH;
+  canvas.style.width=cW+'px'; canvas.style.height=cH+'px';
+  computeDots();
+  draw(performance.now());
+}
+
+// ============================================================
+// INIT
+// ============================================================
+function init() {
+  canvas=document.getElementById('main-canvas');
+  ctx=canvas.getContext('2d');
+  wrapper=document.getElementById('canvas-wrapper');
+
+  const legendEl    = document.getElementById('legend');
+  const narrStrip   = document.getElementById('narration-strip');
+  const detPanel    = document.getElementById('detail-panel');
+  const detHeader   = document.getElementById('det-header');
+  const detResizeHdl= document.getElementById('det-resize-handle');
+  const legResizeHdl= document.getElementById('legend-resize-handle');
+  const narrResHdl  = document.getElementById('narr-resize-handle');
+  const pbWrap      = document.getElementById('progress-bar-wrap');
+
+  // Set initial narration strip height (JS-managed from here on)
+  narrStrip.style.height = narrNormalH+'px';
+
+  // ── Canvas events ──
+  canvas.addEventListener('click', function(e) {
+    const [mx,my]=canvasCoords(e);
+    const hit=findDotAt(mx,my);
+    if (hit) {
+      if(isPlaying){isPlaying=false;lastTs=null;if(animId)cancelAnimationFrame(animId);updateButtons();}
+      selectedAgent=hit.agent;
+      showDetail(hit.agent);
+      document.getElementById('idle-hint').classList.add('hidden');
+      draw(performance.now());
+    } else {
+      selectedAgent=null; hideDetail(); draw(performance.now());
+    }
+  });
+
+  canvas.addEventListener('mousemove', function(e) {
+    const [mx,my]=canvasCoords(e);
+    const hit=findDotAt(mx,my);
+    canvas.style.cursor=hit?'pointer':'crosshair';
+    if(hit&&hit!==hoveredDot){
+      hoveredDot=hit;
+      const meta=CAT[hit.agent.category]||{color:'#aaa',bg:'#252535',short:'?'};
+      document.getElementById('tt-name').textContent=fname(hit.agent.taskId);
+      document.getElementById('tt-badge-wrap').innerHTML=
+        '<span class="tt-badge" style="background:'+meta.bg+';color:'+meta.color+'">'+meta.label+'</span>';
+      document.getElementById('tt-sched').textContent=hit.agent.schedule;
+      tooltipEl.style.display='block';
+    } else if(!hit){hoveredDot=null;tooltipEl.style.display='none';}
+    if(hit){
+      const tx=e.clientX+14,ty=e.clientY-10;
+      tooltipEl.style.left=Math.min(tx,window.innerWidth-260)+'px';
+      tooltipEl.style.top=Math.max(10,ty)+'px';
+    }
+  });
+  canvas.addEventListener('mouseleave',()=>{tooltipEl.style.display='none';hoveredDot=null;canvas.style.cursor='crosshair';});
+
+  // ── Play / Pause / Reset ──
+  document.getElementById('btn-play').addEventListener('click',()=>{
+    if (currentMin>=TOTAL_MIN-1) { currentMin=0; narEvents=[]; pulses=[]; renderNarr(); updateTimeHUD(); }
+    document.getElementById('idle-hint').classList.add('hidden');
+    isPlaying=true; lastTs=null; updateButtons();
+    if (narrateMode) {
+      // Agent-by-agent mode: build the queue, find start, then kick off the chain.
+      // The rAF loop runs in parallel just for pulse animations.
+      buildNarrQueue();
+      narrAgentIndex = narrQueue.findIndex(item => item.tof >= currentMin);
+      if (narrAgentIndex < 0) narrAgentIndex = 0;
+      advanceNarrAgent();
+      animId = requestAnimationFrame(animate);
+    } else {
+      animId = requestAnimationFrame(animate);
+    }
+  });
+  document.getElementById('btn-pause').addEventListener('click',()=>{
+    isPlaying=false; lastTs=null;
+    if(animId) cancelAnimationFrame(animId);
+    stopSpeech();
+    updateButtons(); draw(performance.now());
+  });
+  document.getElementById('btn-reset').addEventListener('click',()=>{
+    isPlaying=false; lastTs=null;
+    if(animId) cancelAnimationFrame(animId);
+    stopSpeech();
+    currentMin=0; narEvents=[]; pulses=[]; narrAgentIndex=0;
+    selectedAgent=null; hideDetail(); prevNarrAgent=null;
+    renderNarr(); updateTimeHUD(); updateButtons();
+    document.getElementById('idle-hint').classList.remove('hidden');
+    if(narrateMode) updateNarrPanel();
+    draw(performance.now());
+  });
+  document.getElementById('speed-select').addEventListener('change',function(){speed=parseInt(this.value,10);});
+  document.getElementById('det-close').addEventListener('click',()=>{hideDetail();draw(performance.now());});
+
+  // ── Narrate toggle ──
+  document.getElementById('btn-narrate').addEventListener('click',()=>setNarrateMode(!narrateMode));
+
+  // ── Skip agent ──
+  document.getElementById('btn-skip').addEventListener('click', function() {
+    if (!isPlaying || !narrateMode) return;
+    if (narrAgentIndex >= narrQueue.length - 1) return;
+    // Tear down current speech/timers cleanly, then immediately step forward.
+    stopSpeech();
+    narrAgentIndex++;
+    advanceNarrAgent();
+  });
+
+  // ── Mute toggle ──
+  document.getElementById('btn-mute').addEventListener('click',function(){
+    ttsEnabled = !ttsEnabled;
+    if (!ttsEnabled) {
+      // MUTING — do NOT call stopSpeech() (that would kill the narrate chain).
+      // Instead: invalidate the current TTS utterance's callback, cancel synth,
+      // then start a silent-reading timer so the chain keeps advancing without sound.
+      ++narrTick;
+      if (synth) synth.cancel();
+      if (isPlaying && narrateMode && narrAdvanceTimer === null && narrAgentIndex < narrQueue.length) {
+        // We were mid-speech. Start a fake-reading timer for the current agent
+        // so narrate progress continues silently.
+        const narText = (narrQueue[narrAgentIndex].agent.narration || narrQueue[narrAgentIndex].agent.description);
+        const wc = narText.trim().split(/\s+/).length;
+        narrSilentTimer = setTimeout(() => {
+          if (!isPlaying || !narrateMode) return;
+          narrAgentIndex++;
+          narrAdvanceTimer = setTimeout(advanceNarrAgent, NARRATE_AGENT_GAP_MS);
+        }, Math.max(2000, wc * 400));
+      }
+      // If narrAdvanceTimer is already running (in the between-agent gap), it will
+      // fire naturally and advanceNarrAgent() will pick up with ttsEnabled=false.
+      this.textContent='🔇'; this.classList.add('muted');
+    } else {
+      // UNMUTING — cancel the silent timer and immediately speak the current agent.
+      this.textContent='🔊'; this.classList.remove('muted');
+      if (isPlaying && narrateMode) {
+        stopSpeech(); // clears narrSilentTimer + narrAdvanceTimer; tick++ is harmless (no live TTS)
+        advanceNarrAgent();
+      }
+    }
+  });
+
+  // ── Progress bar scrubbing ──
+  let narrSeekRestartTimer = null;
+  function seekToFrac(clientX) {
+    const rect=pbWrap.getBoundingClientRect();
+    const frac=Math.max(0,Math.min(1,(clientX-rect.left)/rect.width));
+    currentMin=frac*TOTAL_MIN;
+    document.getElementById('idle-hint').classList.add('hidden');
+    updateTimeHUD();
+    rebuildNarrLog();
+    if (narrateMode) {
+      // Stop speech only ONCE at drag start — not on every pixel.
+      // Repeated cancel()/speak() calls corrupt Chrome's SpeechSynthesisServer.
+      if (!seekDragStopped) { stopSpeech(); seekDragStopped=true; }
+      prevNarrAgent=null;
+      updateNarrPanel(); // visual-only panel update, no speech
+      if (isPlaying) {
+        if (narrSeekRestartTimer) clearTimeout(narrSeekRestartTimer);
+        narrSeekRestartTimer = setTimeout(() => {
+          if (!isPlaying || !narrateMode) return;
+          buildNarrQueue();
+          narrAgentIndex = narrQueue.findIndex(item => item.tof >= currentMin);
+          if (narrAgentIndex < 0) narrAgentIndex = 0;
+          advanceNarrAgent();
+        }, 700);
+      }
+    }
+    draw(performance.now());
+  }
+  pbWrap.addEventListener('mousedown',function(e){pbDragging=true;seekDragStopped=false;seekToFrac(e.clientX);e.preventDefault();});
+
+  // ── Legend resize (right edge) ──
+  legResizeHdl.addEventListener('mousedown',function(e){
+    legendResize={startX:e.clientX,startWidth:legendEl.offsetWidth};
+    e.preventDefault(); e.stopPropagation();
+  });
+
+  // ── Narration strip resize (top edge) ──
+  narrResHdl.addEventListener('mousedown',function(e){
+    const currentH = narrStrip.offsetHeight;
+    narrResize={startY:e.clientY,startHeight:currentH};
+    narrStrip.style.transition='none'; // suppress animation during drag
+    e.preventDefault(); e.stopPropagation();
+  });
+
+  // ── Detail panel drag ──
+  detHeader.addEventListener('mousedown',function(e){
+    if(e.target.classList.contains('det-close'))return;
+    const rect=detPanel.getBoundingClientRect();
+    panelDrag={startX:e.clientX,startY:e.clientY,startLeft:rect.left,startTop:rect.top};
+    e.preventDefault();
+  });
+
+  // ── Detail panel resize (left edge) ──
+  detResizeHdl.addEventListener('mousedown',function(e){
+    const rect=detPanel.getBoundingClientRect();
+    panelResize={startX:e.clientX,startWidth:rect.width,startRight:rect.right};
+    e.preventDefault(); e.stopPropagation();
+  });
+
+  // ── Global mousemove ──
+  document.addEventListener('mousemove',function(e){
+    if (pbDragging) { seekToFrac(e.clientX); }
+    if (legendResize) {
+      const dx=e.clientX-legendResize.startX;
+      const newW=Math.max(80,Math.min(300,legendResize.startWidth+dx));
+      legendEl.style.width=newW+'px';
+      resize();
+    }
+    if (narrResize) {
+      const dy=e.clientY-narrResize.startY;
+      const newH=Math.max(40,Math.min(320,narrResize.startHeight-dy)); // up = taller
+      narrStrip.style.height=newH+'px';
+      // Update the stored heights for the current mode
+      if(narrateMode) narrExpandH=newH; else narrNormalH=newH;
+      resize();
+    }
+    if (panelDrag) {
+      const dx=e.clientX-panelDrag.startX, dy=e.clientY-panelDrag.startY;
+      const newLeft=Math.max(0,Math.min(window.innerWidth-60,panelDrag.startLeft+dx));
+      const newTop=Math.max(0,Math.min(window.innerHeight-60,panelDrag.startTop+dy));
+      detPanel.style.left=newLeft+'px'; detPanel.style.top=newTop+'px'; detPanel.style.right='auto';
+    }
+    if (panelResize) {
+      const dx=e.clientX-panelResize.startX;
+      const newW=Math.max(220,Math.min(600,panelResize.startWidth-dx));
+      const newLeft=Math.max(0,panelResize.startRight-newW);
+      detPanel.style.width=newW+'px'; detPanel.style.left=newLeft+'px'; detPanel.style.right='auto';
+    }
+  });
+
+  // ── Global mouseup ──
+  document.addEventListener('mouseup',function(){
+    pbDragging=false; panelDrag=null; panelResize=null; legendResize=null;
+    if(narrResize){ narrResize=null; narrStrip.style.transition=''; }
+  });
+
+  // ── Build & start ──
+  buildLegend();
+  computeDots();
+  const ro=new ResizeObserver(resize);
+  ro.observe(wrapper);
+  resize();
+  updateButtons();
+  updateTimeHUD();
+
+  // Cache the preferred voice (Chrome loads voices async; Safari/Firefox have them immediately)
+  if (synth) {
+    if (synth.onvoiceschanged !== undefined) synth.onvoiceschanged = resolveVoice;
+    resolveVoice(); // works immediately on Safari/Firefox
+  }
+}
+
+window.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>

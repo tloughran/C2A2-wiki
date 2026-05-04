@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C2A2 — 3D PRS Landscape</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0a0a0f;
+  color: #d0d0d0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+#prs-layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#prs-left-panel {
+  width: 200px;
+  flex-shrink: 0;
+  background: #0e0e16;
+  overflow-y: auto;
+  padding: 8px;
+  font-size: 12px;
+  z-index: 100;
+  border-right: 1px solid #1a1a2e;
+}
+#prs-left-panel h3 {
+  color: #888;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin: 8px 0 4px 0;
+  letter-spacing: 1px;
+}
+.prs-filter-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 0;
+  cursor: pointer;
+}
+.prs-filter-item input[type="checkbox"] { cursor: pointer; }
+.prs-filter-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.prs-filter-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#prs-search-box {
+  width: 100%;
+  background: #1a1a2a;
+  border: 1px solid #3a3a4a;
+  color: #e0e0e0;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-top: 4px;
+}
+#prs-search-box::placeholder { color: #666; }
+#prs-search-box:focus { outline: none; border-color: #FFD700; }
+.prs-search-results {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #888;
+}
+.prs-search-hit {
+  padding: 4px 6px;
+  margin: 2px 0;
+  background: #1a1a2a;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #ccc;
+  line-height: 1.3;
+}
+.prs-search-hit:hover { background: #2a2a3a; }
+.prs-search-hit .hit-thinker { font-weight: 600; }
+#prs-search-clear {
+  background: #1a1a2a;
+  border: 1px solid #3a3a4a;
+  color: #e0e0e0;
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  display: none;
+  margin-top: 4px;
+}
+#prs-search-clear:hover { background: #2a2a3a; }
+
+#canvas-container {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+}
+
+#header {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 44px;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #1a1a2e;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  z-index: 100;
+  gap: 12px;
+}
+#header h1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #C9A84C;
+  white-space: nowrap;
+}
+#header .controls {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-left: auto;
+}
+#header .controls button {
+  background: #1a1a2e;
+  border: 1px solid #2a2a3e;
+  color: #d0d0d0;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#header .controls button:hover { background: #2a2a3e; }
+#header .controls button.active { background: #FFD700; color: #0a0a0f; border-color: #FFD700; }
+
+#info-panel {
+  position: absolute;
+  top: 54px;
+  right: 10px;
+  width: 340px;
+  max-height: calc(100vh - 70px);
+  background: rgba(12, 12, 20, 0.92);
+  backdrop-filter: blur(10px);
+  border: 1px solid #1a1a2e;
+  border-radius: 8px;
+  padding: 16px;
+  overflow-y: auto;
+  z-index: 90;
+  display: none;
+  font-size: 13px;
+  line-height: 1.5;
+}
+#info-panel h3 {
+  color: #C9A84C;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+#info-panel .prs-type {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+#info-panel .prs-type.problem { background: #C45B5B33; color: #E87070; }
+#info-panel .prs-type.resource { background: #5A8EAF33; color: #7AB0CF; }
+#info-panel .prs-type.solution { background: #3D9E8933; color: #5DC0AB; }
+#info-panel .field-label {
+  color: #888;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+}
+#info-panel .field-value {
+  color: #d0d0d0;
+  margin-top: 2px;
+}
+#info-panel .close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 18px;
+  cursor: pointer;
+}
+#info-panel .close-btn:hover { color: #aaa; }
+#info-panel .thinker-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+#legend {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(12, 12, 20, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid #1a1a2e;
+  border-radius: 8px;
+  padding: 12px 14px;
+  z-index: 90;
+  font-size: 11px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+#legend h4 {
+  color: #C9A84C;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+#legend .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 3px 0;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+#legend .legend-item.dimmed { opacity: 0.3; }
+#legend .legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+#tooltip {
+  position: absolute;
+  background: rgba(12, 12, 20, 0.95);
+  border: 1px solid #2a2a3e;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #d0d0d0;
+  pointer-events: none;
+  z-index: 200;
+  display: none;
+  max-width: 300px;
+}
+
+#disc-labels { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 50; }
+.disc-label {
+  position: absolute;
+  color: #888;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2a2a3e; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<div id="prs-layout">
+
+<div id="prs-left-panel">
+  <h3>Traditions</h3>
+  <div class="prs-filter-item">
+    <input type="checkbox" id="prs-chk-all" checked onchange="prsToggleAll(this.checked)">
+    <span class="prs-filter-label" style="font-weight:600">All</span>
+  </div>
+  <div id="prs-tradition-filters"></div>
+  <hr style="border:none;border-top:1px solid #2a2a3a;margin:8px 0">
+  <h3>Search PRS</h3>
+  <input type="text" id="prs-search-box" placeholder="Search problems, resources, solutions...">
+  <button id="prs-search-clear" onclick="prsClearSearch()">Clear</button>
+  <div id="prs-search-results" class="prs-search-results"></div>
+</div>
+
+<div style="flex:1;position:relative;overflow:hidden">
+
+<div id="canvas-container"></div>
+
+<div id="header">
+  <h1>C2A2 &mdash; 3D PRS Landscape</h1>
+  <div class="controls">
+    <button onclick="resetCamera()">Reset View</button>
+    <button id="btn-labels" onclick="toggleLabels()" class="active">Labels</button>
+    <button id="btn-threads" onclick="toggleThreads()" class="active">Threads</button>
+    <button id="btn-discs" onclick="toggleDiscs()" class="active">Disciplines</button>
+  </div>
+</div>
+
+<div id="info-panel">
+  <button class="close-btn" onclick="closePanel()">&times;</button>
+  <div id="info-content"></div>
+</div>
+
+<div id="legend"></div>
+
+<div id="tooltip"></div>
+
+<div id="disc-labels"></div>
+
+</div><!-- end flex:1 wrapper -->
+</div><!-- end prs-layout -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+// ── DATA ──
+var DISCIPLINES = ["Analytic Theology", "Cognitive Science", "Computational Neuroscience", "Contemplative Theology", "Developmental Biology", "Historical Theology", "Mathematical Physics", "Moral Philosophy", "Neuropsychiatry", "Philosophy of Mind", "Positive Psychology", "Systems Integration", "Theoretical Physics"];
+var THINKER_DISC = {"levin": "Developmental Biology", "friston": "Computational Neuroscience", "hoffman": "Cognitive Science", "kastrup": "Philosophy of Mind", "mcgilchrist": "Neuropsychiatry", "hawkins": "Computational Neuroscience", "wolfram": "Mathematical Physics", "carroll": "Theoretical Physics", "arkanihamed": "Theoretical Physics", "fredrickson": "Positive Psychology", "stump": "Analytic Theology", "rohr": "Contemplative Theology", "wright": "Historical Theology", "macintyre": "Moral Philosophy", "loughran": "Systems Integration", "master": "Systems Integration"};
+var THINKER_COLORS = {"levin": "#C45B5B", "friston": "#5A8EAF", "hoffman": "#C08B3E", "kastrup": "#8B5DAB", "mcgilchrist": "#3D9E89", "hawkins": "#B87D3E", "wolfram": "#4A5E6D", "carroll": "#4E8A5E", "arkanihamed": "#A85D3A", "fredrickson": "#C47A9A", "stump": "#A8923A", "rohr": "#9A7A5A", "wright": "#5A72A8", "macintyre": "#7A6A8A", "loughran": "#4A8A7A", "master": "#C9A84C"};
+var THINKER_DISPLAY = {"levin": "Levin", "friston": "Friston", "hoffman": "Hoffman", "kastrup": "Kastrup", "mcgilchrist": "McGilchrist", "hawkins": "Hawkins", "wolfram": "Wolfram", "carroll": "Carroll", "arkanihamed": "Arkani-Hamed", "fredrickson": "Fredrickson", "stump": "Stump", "rohr": "Rohr", "wright": "Wright", "macintyre": "MacIntyre", "loughran": "Loughran", "master": "C2A2 Master"};
+var PRS_TRIPLETS = [{"id": "arkanihamed-PRS-01", "thinker": "arkanihamed", "prs_num": "01", "label": "P1 (Text, referenced in Hoffman section) \u2014 Spacetime as non-fundamental", "problem": "Quantum mechanics and general relativity both assume spacetime as a background structure, but this assumption may be preventing unification \u2014 spacetime may not be fundamental", "resource": "The amplituhedron: a geometric structure (Arkani-Hamed et al., 2013) that computes particle scattering amplitudes without reference to spacetime \u2014 locality and unitarity are derived, not assumed", "solution": "The amplituhedron demonstrates that a key quantity in physics can be computed without spacetime as scaffolding \u2014 suggesting spacetime is emergent from a deeper, pre-geometric structure", "date": "1998-06-01", "pub_year": 1998, "confidence": "High"}, {"id": "arkanihamed-PRS-02", "thinker": "arkanihamed", "prs_num": "02", "label": "P2 (Implicit from RC Pilot context) \u2014 Geometry as prior to physics", "problem": "Standard physics formalisms (Feynman diagrams, locality) are computationally cumbersome and conceptually opaque \u2014 they obscure deep structural features of particle interactions", "resource": "On-shell methods and geometric formulation: replacing Feynman diagrams with direct geometric structures where amplitudes are volumes of mathematical objects", "solution": "A research program demonstrating that the correct mathematical language for fundamental physics is geometric-combinatorial rather than field-theoretic \u2014 amplitudes as volumes of polytopes in mathematical spaces", "date": "2013-06-01", "pub_year": 2013, "confidence": "Medium"}, {"id": "arkanihamed-PRS-03", "thinker": "arkanihamed", "prs_num": "03", "label": "P3 (Speculative \u2014 from Hoffman connection) \u2014 Consciousness and the derivation of spacetime", "problem": "If spacetime is emergent rather than fundamental, something must be more fundamental \u2014 but what? Hoffman proposes conscious agent networks; Arkani-Hamed's amplituhedron may be the bridge", "resource": "Proposed connection (Hoffman + Arkani-Hamed): conscious agent mathematics as the pre-geometric structure from which amplituhedron results and spacetime could be derived", "solution": "An as-yet-incomplete research program exploring whether the mathematical structures underlying amplituhedron physics can be derived from or related to the mathematics of conscious agent networks \u2014 a physics-consciousness bridge", "date": "2026-04-05", "pub_year": 2026, "confidence": "Speculative"}, {"id": "arkanihamed-PRS-04", "thinker": "arkanihamed", "prs_num": "04", "label": "P4 (Implicit) \u2014 Beauty as a guide in fundamental physics", "problem": "Without experimental access to the Planck scale, how do physicists distinguish promising from unpromising theoretical directions? What epistemic standards apply in the absence of direct empirical tests?", "resource": "Mathematical beauty and structural inevitability as epistemic guides: Arkani-Hamed's consistent appeal to 'the inevitability of the result' as a criterion for theoretical depth", "solution": "A methodology for pre-empirical physics that uses structural inevitability (a result that 'could not have been otherwise') as a validity criterion \u2014 complementary to, not a replacement for, empirical confirmation", "date": "2026-04-05", "pub_year": 2026, "confidence": "Medium"}, {"id": "arkanihamed-PRS-05", "thinker": "arkanihamed", "prs_num": "05", "label": "P5 (PROP-2026-04-08-001) \u2014 Positive geometry as universal language of fundamental physics", "problem": "Particle physics has no unified geometric language \u2014 Feynman diagrams are computationally useful but conceptually opaque, and quantum mechanics and spacetime remain formally unreconciled", "resource": "Positive geometry as a unifying mathematical framework \u2014 bridging scattering amplitudes (particle physics), cosmological correlators, and deep structures in combinatorics and algebraic geometry; taught by Arkani-Hamed at UNIVERSE+ School Les Houches, March 30\u2013April 10, 2026", "solution": "A research program establishing that the correct computational language for fundamental physics is combinatorial-geometric rather than field-theoretic, with locality and unitarity emerging from geometry rather than being assumed", "date": "2026-04-08", "pub_year": 2026, "confidence": "High"}, {"id": "arkanihamed-PRS-06", "thinker": "arkanihamed", "prs_num": "06", "label": "P6 (PROP-2026-04-08-001) \u2014 Quantum mechanics as combinatorial-geometric structure", "problem": "The mathematical framework of quantum mechanics was developed without a unified geometric picture \u2014 its combinatorial and algebraic structures remain poorly understood at the foundations", "resource": "Combinatorial geometry as the foundational language of quantum mechanics \u2014 developed through amplituhedron geometry and generalized to cosmological correlators; the same framework covers both QM and spacetime", "solution": "A systematic reformulation showing that quantum mechanical amplitudes are volumes of combinatorially defined geometric objects \u2014 making the combinatorial structure of QM explicit without reference to spacetime scaffolding", "date": "2026-04-08", "pub_year": 2026, "confidence": "Medium"}, {"id": "arkanihamed-PRS-07", "thinker": "arkanihamed", "prs_num": "07", "label": "P7 (PROP-2026-04-08-007) \u2014 Combinatorial structure of the cosmological wavefunction", "problem": "The amplituhedron showed that scattering amplitudes can be computed without spacetime, but it remained unclear whether this geometric-combinatorial approach extended to cosmology \u2014 to the structure of the universe itself", "resource": "The cosmohedron (Arkani-Hamed et al., March 2026): a polytope encoding the cosmological wavefunction for Tr(\u03c6\u00b3) theory; faces in bijection with Matryoshka structures (nested polygon subdivisions); proves the correctness of the conjectured construction", "solution": "The cosmohedron demonstrates that the cosmological wavefunction \u2014 the quantum state of the entire universe \u2014 can be computed from a geometric object without spacetime scaffolding; the post-spacetime program now applies to cosmological structure itself", "date": "2026-04-16", "pub_year": 2026, "confidence": "High"}, {"id": "arkanihamed-PRS-08", "thinker": "arkanihamed", "prs_num": "08", "label": "P8 (PROP-2026-04-13-012) \u2014 Hidden structure and particle unification", "problem": "Different particle types (scalars, pions, gluons) appear as distinct entities in the Standard Model formalism \u2014 there is no known reason why their scattering amplitudes should be related at the l", "resource": "", "solution": "", "date": "", "pub_year": 2020, "confidence": "Medium"}, {"id": "carroll-PRS-01", "thinker": "carroll", "prs_num": "01", "label": "P1 (Text, pp.41\u201353) \u2014 Ontological closure vs. emergence", "problem": "Physicalism cannot easily account for consciousness, agency, or meaning without either eliminating them or invoking explanatory gaps", "resource": "Poetic naturalism: multiple levels of description (particles, organisms, persons) are all legitimate stories told about the same physical substrate", "solution": "A fully naturalist account of mind, meaning, and value that requires no ontological additions to physics, while preserving the validity of higher-level descriptions", "date": "2004-06-01", "pub_year": 2004, "confidence": "High"}, {"id": "carroll-PRS-02", "thinker": "carroll", "prs_num": "02", "label": "P2 (Text, pp.44\u201347) \u2014 Quantum interpretation", "problem": "The measurement problem in quantum mechanics creates apparent discontinuities that tempt non-physical interpretations (consciousness causes collapse, etc.)", "resource": "Many-Worlds Interpretation: the wavefunction never collapses; all outcomes occur in branching Everettian worlds", "solution": "A philosophically principled resolution of the measurement problem that invokes no consciousness, no hidden variables, and no new physics \u2014 just the unmodified Schr\u00f6dinger equation", "date": "2016-06-01", "pub_year": 2016, "confidence": "High"}, {"id": "carroll-PRS-03", "thinker": "carroll", "prs_num": "03", "label": "P3 (Text, pp.47\u201353) \u2014 Rival theory evaluation", "problem": "Novel physical theories (Wolfram Physics, Quantum Holonomy Theory, Conscious Realism) claim to unify physics but lack empirical traction", "resource": "Bayesian theory confirmation: novel theories must demonstrate tangible explanatory gains over established physics before warranting acceptance", "solution": "A methodological standard that keeps physics honest: welcome novel frameworks but require them to recover known physics and generate new predictions", "date": "2026-04-03", "pub_year": 2026, "confidence": "High"}, {"id": "carroll-PRS-04", "thinker": "carroll", "prs_num": "04", "label": "P4 (Implicit) \u2014 Agency without dualism", "problem": "Accounts of human agency often require either dualism (a non-physical will acting on the body) or eliminativism (agency is an illusion)", "resource": "Carroll's compatibilism: agency is a useful high-level description of physical processes; free will is compatible with determinism if properly understood", "solution": "A deflationary but non-eliminativist account of agency: persons really do act, but acting is a pattern in the physical substrate, not a violation of it \u2014 preserving moral responsibility without dualism", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "carroll-PRS-05", "thinker": "carroll", "prs_num": "05", "label": "P5 (Implicit) \u2014 Science\u2013religion dialogue", "problem": "Science and religion appear to conflict because both make claims about the same domain (reality); naive harmony is intellectually dishonest", "resource": "Poetic naturalism's distinction between core ontology (physics) and useful stories (meaning, value, purpose) \u2014 religion traffics in the latter", "solution": "A framework where science and religion can coexist without either capitulating: science owns the core ontology, religion provides coherent stories about meaning at the human level", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "carroll-PRS-06", "thinker": "carroll", "prs_num": "06", "label": "P6 (Implicit, via document contrast) \u2014 Physicalism's explanatory limit", "problem": "Carroll's framework has no resources for explaining why there is something rather than nothing, or why mathematical structures are empirically instantiated", "resource": "Carroll's own use of the 'why is there something?' question as an edge of physics \u2014 acknowledging limits", "solution": "An acknowledged boundary condition that opens space for Thomistic engagement: Carroll's naturalism, rigorously applied, reaches its own limit precisely where Thomistic metaphysics begins", "date": "2026-04-03", "pub_year": 2026, "confidence": "High"}, {"id": "carroll-PRS-07", "thinker": "carroll", "prs_num": "07", "label": "P7 (PROP-2026-04-07-004) \u2014 Observer-centric quantum gravity", "problem": "Quantum mechanics and general relativity remain unreconciled after decades of effort, with no convergence on a theory of quantum gravity", "resource": "A new observer-centric framework (Harlow et al.) \u2014 treating the observer as a classical, mathematically well-defined entity within the theory, with new rules for observer-system interactions", "solution": "Rather than deriving the observer from quantum mechanics, build the observer into the foundations \u2014 a \"precise Copenhagen\" that may resolve the measurement problem while naturally incorporating gravitational effects", "date": "2026-04-07", "pub_year": 2026, "confidence": "Medium"}, {"id": "carroll-PRS-08", "thinker": "carroll", "prs_num": "08", "label": "P8 (PROP-2026-04-08-004) \u2014 Intelligence as multidimensional across species", "problem": "Carroll's poetic naturalism needs a positive account of what \"mind\" tracks across different biological systems \u2014 not just that mind-language is a valid higher-level description, but what feature of complex systems it describes", "resource": "Erica Cartmill (Santa Fe Institute) on comparative cognitive science: intelligence is multidimensional, non-linear across species \u2014 some numerical competencies present in chimpanzees, social intelligence (play, teasing, humor) as a distinct cognitive axis separate from problem-solving", "solution": "Carroll's emergence thesis gains empirical specificity: minds are not points on a single axis from simple to complex, but multi-dimensional systems where different capacities emerge independently \u2014 supporting the view that consciousness/agency are emergent real patterns, not just useful fictions", "date": "2026-04-16", "pub_year": 2026, "confidence": "Medium"}, {"id": "carroll-PRS-09", "thinker": "carroll", "prs_num": "09", "label": "P9 (PROP-2026-04-08-005) \u2014 Biological agency as naturalist research program", "problem": "Standard physicalist accounts of organisms treat them as passive products of selection pressure acting on random variation \u2014 but this appears to eliminate genuine biological agency", "resource": "Jessica Riskin's historical re-reading of Lamarck's creative agency (PROP-2026-04-08-005): organisms possess an internal agentive force that is not reducible to external selection or random mutation \u2014 they are active participants in life, not passive recipients", "solution": "A naturalistic framework for biological agency that goes beyond compatibilism without invoking dualism \u2014 organisms as genuine agents within Carroll's physicalism, grounded in historical precedent that predates modern physics", "date": "2026-04-16", "pub_year": 2026, "confidence": "Medium"}, {"id": "carroll-PRS-10", "thinker": "carroll", "prs_num": "10", "label": "P10 (PROP-2026-04-09-003) \u2014 Observer problem in Many-Worlds interpretation", "problem": "Many-Worlds interpretations of quantum mechanics struggle to define \"observer\" without circularity or infinite regress \u2014 Witten's critique holds that knowing one's measurement outcome requires a meta-observer, who requires another meta-observer, with no principled stopping point", "resource": "Carroll's response in April 2026 AMA: the observer is defined functionally within the wavefunction via decoherence \u2014 there is no external observer required; \"knowing an outcome\" is itself a physical correlation between memory state and environmental state", "solution": "A fully physicalist account", "date": "", "pub_year": 2020, "confidence": "Medium"}, {"id": "fredrickson-PRS-01", "thinker": "fredrickson", "prs_num": "01", "label": "P1 (Text, pp.88\u201396) \u2014 Isolation and disconnection", "problem": "Individuals are fragmented and isolated; modern life produces disconnection and attendant mental and physical health decline", "resource": "Micro-moments of positivity resonance can be intentionally cultivated through practices (loving-kindness meditation) that increase vagal tone and neurophysiological attunement", "solution": "Regular cultivation of shared positive emotional experiences rebuilds vagal tone, enhances resilience, and generates upward spirals of health and connection", "date": "1998-06-01", "pub_year": 1998, "confidence": "High"}, {"id": "fredrickson-PRS-02", "thinker": "fredrickson", "prs_num": "02", "label": "P2 (Text, p.298) \u2014 Love reduced to sentiment", "problem": "Materialist paradigms reduce love to sentiment, psychology, or evolutionary accident \u2014 denying love any fundamental ontological significance or role in explaining reality\u2019s structure", "resource": "Fredrickson\u2019s empirical demonstration that love (positivity resonance) correlates with measurable, objective neurophysiological synchrony: vagal tone, oxytocin, neural phase-locking", "solution": "Reframe love as an objective, biologically-grounded coupling mechanism among conscious agents; empirical substrate for theological and metaphysical claims about love\u2019s centrality to Being", "date": "2013-06-01", "pub_year": 2013, "confidence": "High"}, {"id": "fredrickson-PRS-03", "thinker": "fredrickson", "prs_num": "03", "label": "P3 (Text, pp.89\u201392) \u2014 Scale-bridging in agent coupling", "problem": "Models of agency (Hoffman, Friston, Levin) describe agent-level dynamics but lack a rigorous mechanism for how agents couple, synchronize, and form higher-order collective agents", "resource": "Positivity resonance as a biophysiological coupling event that scales from dyadic interaction to group resonance (collective presence, shared meditation, communal worship)", "solution": "Micro-moment positivity resonance as the fundamental coupling mechanism bridging individual agents to collective agency across scales: cells to organisms to communities to traditions", "date": "2026-04-03", "pub_year": 2026, "confidence": "High"}, {"id": "fredrickson-PRS-04", "thinker": "fredrickson", "prs_num": "04", "label": "P4 (Implicit) \u2014 Relational coherence of conscious realism", "problem": "Conscious Realism as a paradigm lacks a mechanism explaining how distributed conscious agents achieve stable coordination without external enforcement", "resource": "Fredrickson\u2019s model of biophysiological synchrony as a natural attractor for agent-alignment; love as self-organizing coherence at the biological level", "solution": "Extend micro-moment synchrony to explain higher-order coherence: love becomes the universal attractor mechanism binding conscious agents at all levels of organization", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "fredrickson-PRS-05", "thinker": "fredrickson", "prs_num": "05", "label": "P5 (Implicit) \u2014 Embodiment of abstract ontology", "problem": "Conscious realism risks being too abstract \u2014 how do models of conscious agents connect to lived, felt experience? How do claims about agape manifest in bodies?", "resource": "Fredrickson\u2019s grounding of love in measurable vagal tone, oxytocin, and neural synchrony; her insistence that love is biological provides material anchor for relational ontology", "solution": "Theological and metaphysical commitments to love (agape, Christic morphogenesis) have measurable bodily signatures \u2014 bridging abstract theory and embodied practice", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "fredrickson-PRS-06", "thinker": "fredrickson", "prs_num": "06", "label": "P6 (Implicit) \u2014 Democratizing participation in reality", "problem": "A worldview built on \u201cconscious agents\u201d risks recreating cognitive hierarchies or exclusions based on informational complexity", "resource": "Fredrickson\u2019s assertion that capacity for love is biologically modifiable, learnable, and available to all; love is non-zero-sum and scales from dyad to community", "solution": "Ground conscious realist ethics in universal capacity for resonance: all beings capable of shared positive emotion participate in reality-constituting processes \u2014 love as the basis for radical inclusivity", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "fredrickson-PRS-07", "thinker": "fredrickson", "prs_num": "07", "label": "P7 (PROP-2026-04-08-008) \u2014 Multi-level conducive conditions", "problem": "Positivity resonance theory has been developed at the dyadic level but translation to interventions for community-scale loneliness requires understanding conditions at individual, collective, and structural levels \u2014 which are currently untheorized within the broaden-and-build framework", "resource": "Fredrickson\u2019s multi-level conducive conditions framework: individual (listening quality, anticipated discrimination), collective (civic engagement, relational mobility), structural (economic inequality, built environment) \u2014 each level modulating positivity resonance availability", "solution": "A hierarchical intervention framework: address structural barriers to resonance first (built environment, inequality), then collective-level enablers (civic engagement programs), then individual skills (listening quality training) \u2014 enabling equitable positivity resonance at population scale", "date": "2026-04-08", "pub_year": 2026, "confidence": "High"}, {"id": "fredrickson-PRS-08", "thinker": "fredrickson", "prs_num": "08", "label": "P8 (PROP-2026-04-08-008) \u2014 High-quality listening as resonance enabler", "problem": "High-quality listening has been identified as conducive to positivity resonance but its mechanism \u2014 why it works and how to train it \u2014 has not been specified within the positivity resonance framework", "resource": "Fredrickson lab finding: high-quality listening boosts real-time sensory connection and perceived safety \u2014 these are identified as the proximate mechanisms by which listening behavior enables positivity resonance to emerge between strangers", "solution": "Listening quality training as a targeted, learnable intervention for increasing positivity resonance between strangers \u2014 with sensory attunement and psychological safety as the measurable intermediate outcomes", "date": "2026-04-08", "pub_year": 2026, "confidence": "High"}, {"id": "fredrickson-PRS-09", "thinker": "fredrickson", "prs_num": "09", "label": "P9 (PROP-2026-04-08-007) \u2014 Weak-tie intellectual humility", "problem": "Inter-tradition dialogue requires intellectual humility \u2014 willingness to learn from those with fundamentally different views \u2014 but it is unclear how such humility is developed or cultivated at scale", "resource": "Fredrickson & West (2025) RCT demonstrating that three weeks of intentional connection with strangers (weak ties) produces measurable increases in intellectual humility, prosocial beliefs, and civic efficacy \u2014 while connection with close others does not", "solution": "Weak-tie positivity resonance (connection with strangers and acquaintances) may be the empirical mechanism by which intellectual humility is cultivated at the societal scale needed for C2A2 inter-tradition dialogue \u2014 a directly actionable intervention", "date": "2026-04-08", "pub_year": 2026, "confidence": "High"}, {"id": "fredrickson-PRS-10", "thinker": "fredrickson", "prs_num": "10", "label": "P10 (PROP-2026-04-08-007) \u2014 Weak-tie community as loneliness solution", "problem": "Models of positivity resonance have focused primarily on dyadic intimacy and close relationships \u2014 but the loneliness epid", "resource": "", "solution": "", "date": "", "pub_year": 2020, "confidence": "Medium"}, {"id": "friston-PRS-01", "thinker": "friston", "prs_num": "01", "label": "P1 (Text, pp.65\u201367) \u2014 Biological agency without vitalism", "problem": "Living systems must explain how biological entities maintain order and resist entropy without invoking vitalism or teleological mysticism", "resource": "The mathematical formalism of variational Bayesian inference combined with thermodynamic principles of free energy", "solution": "The Free Energy Principle: all biological systems minimize variational free energy \u2014 a quantity measuring prediction error \u2014 explaining order maintenance, adaptation, and learning through a unified, empirically testable framework", "date": "2003-06-01", "pub_year": 2003, "confidence": "High"}, {"id": "friston-PRS-02", "thinker": "friston", "prs_num": "02", "label": "P2 (Text, p.66) \u2014 Neural causal architecture", "problem": "Traditional neuroscience lacks a framework for inferring causal architecture within neural systems \u2014 how different brain regions interact and influence each other over time", "resource": "Dynamic Causal Modeling (DCM): a mathematical framework combining differential equations, Bayesian inference, and graph theory", "solution": "DCM allows researchers to model and infer the causal architecture of neural systems, quantifying bidirectional and temporal interactions between brain regions", "date": "2010-06-01", "pub_year": 2010, "confidence": "High"}, {"id": "friston-PRS-03", "thinker": "friston", "prs_num": "03", "label": "P3 (Text, pp.72\u201374) \u2014 Morphogenesis as free energy minimization", "problem": "No formal mathematical language exists for modeling how organisms seek and maintain their target morphological states", "resource": "Active inference extended to morphogenesis: cells as Friston-style agents minimizing prediction error about the body\u2019s target anatomy", "solution": "Formal modeling of morphogenetic goal-seeking as free energy minimization; Lagrangian least-action paths for developmental attractors, bridging Levin\u2019s empirical findings with rigorous mathematical theory", "date": "2026-04-03", "pub_year": 2026, "confidence": "High"}, {"id": "friston-PRS-04", "thinker": "friston", "prs_num": "04", "label": "P4 (Implicit) \u2014 Organism as active modeler", "problem": "Classical neuroscience treats organisms as passive machines responding to stimuli, failing to explain goal-directedness and adaptive learning within scientific naturalism", "resource": "Predictive coding and the Bayesian brain hypothesis: the organism as a continuous hypothesis-testing system", "solution": "Reconceptualize the living system as an active agent that generates predictions, tests them against sensory input, and updates models \u2014 agency as the natural consequence of information-processing under uncertainty", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "friston-PRS-05", "thinker": "friston", "prs_num": "05", "label": "P5 (Implicit) \u2014 Distributed cognition across scales", "problem": "If cognition is a brain phenomenon, how can we explain adaptive behavior in single-celled organisms, tissues, and genetic networks? The neurocentric view creates arbitrary boundaries", "resource": "The universality of the Free Energy Principle: the FEP applies to cells, organisms, brains, and collectives alike", "solution": "Replace neurocentric cognition with a scalar-agnostic model: any system that minimizes prediction error engages in cognitive modeling, regardless of neural tissue \u2014 unifying biological behavior across scales", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "friston-PRS-06", "thinker": "friston", "prs_num": "06", "label": "P6 (Implicit) \u2014 Multi-agent coherence via mutual modeling", "problem": "How do individual agents (cells, organisms, persons) form coherent higher-order wholes without losing autonomy? How do communities cohere?", "resource": "Friston\u2019s free energy minimization extended to multi-agent systems: shared attractor basins and mutual model-building", "solution": "Agents couple through mutual informational alignment \u2014 reducing prediction error in each other\u2019s behavior. Love is the biological/informational mechanism by which agents synchronize models and become a coherent collective agent", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "friston-PRS-07", "thinker": "friston", "prs_num": "07", "label": "P7 (PROP-2026-04-07-001) \u2014 FEP substrate-independence formally established", "problem": "No formal proof existed that FEP applies to non-neural biological substrates \u2014 previous work was suggestive but not mathematically rigorous", "resource": "Formal derivation showing that Markov blanket conditions are substrate-agnostic; any self-organizing system with internal/external statistical separation satisfies FEP", "solution": "FEP is established as a universal law of self-organization, not a neural theory \u2014 unifying cellular, organismal, and social cognition under one framework", "date": "2026-04-07", "pub_year": 2026, "confidence": "High"}, {"id": "friston-PRS-08", "thinker": "friston", "prs_num": "08", "label": "P8 (PROP-2026-04-07-001) \u2014 Morphogenetic active inference bridge", "problem": "The relationship between FEP and morphogenesis has been asserted but not formally modeled", "resource": "Morphogenetic active inference: cells as FEP agents with target morphologies as prior beliefs, bioelectric signals as sensory inputs", "solution": "A formal bridge between Friston's FEP and Levin's morphogenetic research program \u2014 providing the mathematical mechanism Levin's work lacks", "date": "2026-04-07", "pub_year": 2026, "confidence": "Medium"}, {"id": "friston-PRS-09", "thinker": "friston", "prs_num": "09", "label": "P9 (PROP-2026-04-08-007) \u2014 Minimal theory of consciousness implicit in active inference", "problem": "Multiple theories of consciousness (IIT, GWT, HOT, predictive processing) make overlapping and conflicting claims with no agreed framework for arbitration \u2014 field lacks minimal, testable commitments that consciousness theories must share", "resource": "\"Minimal theory of consciousness implicit in active inference\" \u2014 derived from shared mathematical structure of active inference models across diverse consciousness phenomena; consciousness arises when system minimizes variational free energy generating predictive self-model with self-referential prediction loop", "solution": "Testable minimal theory distinguishing consciousness conditions from IIT, GWT, HOT via formal criterion: consciousness is inevitable consequence of system with self-referential generative model satisfying Markov blanket conditions; applicable to any substrate including cells and AI", "date": "2026-04-16", "pub_year": 2026, "confidence": "High"}, {"id": "friston-PRS-10", "thinker": "friston", "prs_num": "10", "label": "P10 (PROP-2026-04-13-004) \u2014 Active inference as framework for artificial reasoning", "problem": "Active inference accounts for perception and action but lacks formal treatment of reasoning \u2014 the process by which agents evaluate and select among competing hypotheses or world models", "resource": "Active reasoning via expected free energy: agents select observations maximally disambiguating competing generative models, using Bayesian Model Reduction for efficient posterior evaluation across model space", "solution": "Reasoning formally unified with perception and action under FEP \u2014 all three are instances of expected free energy minimization, differing only in optimization target (sensory predictions, motor commands, or model selection)", "date": "2026-04-16", "pub_year": 2026, "confidence": "High"}, {"id": "hawkins-PRS-01", "thinker": "hawkins", "prs_num": "01", "label": "P1 (Text, pp.278\u2013285) \u2014 Intelligence without true understanding", "problem": "Current AI systems (deep learning) perform impressively but lack genuine understanding \u2014 they have no world model, no reference frames, no temporal memory", "resource": "Hierarchical Temporal Memory (HTM) and the Thousand Brains Theory: neocortex-inspired architectures with reference frames, temporal prediction, and distributed voting", "solution": "AI systems built on cortical column principles that genuinely model the world, including the self in the world \u2014 moving from pattern matching to understanding", "date": "2004-06-01", "pub_year": 2004, "confidence": "High"}, {"id": "hawkins-PRS-02", "thinker": "hawkins", "prs_num": "02", "label": "P2 (Text, p.294) \u2014 Distributed vs. centralised intelligence", "problem": "The assumption that intelligence requires a central processor creates AI architectures that are brittle, non-generalising, and opaque", "resource": "Thousand Brains: intelligence as the emergent product of thousands of parallel, independent models voting \u2014 radical distribution with no central homunculus", "solution": "Architectures for robust, generalising, self-correcting AI that mirrors the cortex's distributed model-building \u2014 with implications for interpretability and alignment", "date": "2021-06-01", "pub_year": 2021, "confidence": "High"}, {"id": "hawkins-PRS-03", "thinker": "hawkins", "prs_num": "03", "label": "P3 (Text, p.29) \u2014 Knowledge-preserving AGI", "problem": "Human knowledge is fragile, locked in individual minds and institutions that eventually die; AI offers a path to preservation and extension but current systems cannot do this reliably", "resource": "AGI systems built on Thousand Brains principles: capable of building stable, hierarchical, temporally grounded world models that can accumulate and preserve knowledge", "solution": "A knowledge-preserving AGI that genuinely extends the human epistemic tradition \u2014 the Thousand Brains Project's long-term agenda", "date": "2026-04-03", "pub_year": 2026, "confidence": "High"}, {"id": "hawkins-PRS-04", "thinker": "hawkins", "prs_num": "04", "label": "P4 (Implicit) \u2014 Reference frames as universal cognitive tool", "problem": "Different disciplines (biology, physics, philosophy, theology) work in incommensurable reference frames with no shared navigation tools", "resource": "Hawkins's insight that every cortical column uses reference frames to orient its models \u2014 reference frames as the universal architecture of model-based intelligence", "solution": "Tradition-crossing inquiry as reference-frame translation: disciplines can be made commensurable by explicitly mapping their reference frames onto one another \u2014 a direct resource for Loughran's inter-tradition methodology", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "hawkins-PRS-05", "thinker": "hawkins", "prs_num": "05", "label": "P5 (Implicit) \u2014 Temporal depth of intelligence", "problem": "Static AI systems (and many static academic frameworks) lack the temporal depth to engage productively with evolving traditions or long-horizon problems", "resource": "HTM's emphasis on temporal sequences as the fundamental unit of cortical learning \u2014 intelligence is always about predicting what comes next in a temporal stream", "solution": "Dynamic models of intellectual traditions as temporal sequences, where the tradition's next contribution can be predicted and shaped by understanding its internal learning dynamics", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "hawkins-PRS-06", "thinker": "hawkins", "prs_num": "06", "label": "P6 (PROP-2026-04-08-006) \u2014 Hierarchical vs. heterarchical neocortex", "problem": "Neuroscience has long assumed the neocortex is organized as a strict processing hierarchy (V1 \u2192 V2 \u2192 V4 \u2192 IT for vision, etc.), but anatomical data shows many long-range connections that are non-hierarchical \u2014 regions respond in parallel in ways a strict hierarchy cannot explain", "resource": "Heterarchy framework: the proposal that neocortical organization is a mix of hierarchical and non-hierarchical structure, with cortical columns as the repeating sensorimotor unit that makes lateral and cross-regional processing coherent", "solution": "A unified account of neocortical long-range connectivity that preserves the Thousand Brains architecture while explaining anatomical anomalies \u2014 and implies that AI systems based on HTM should use heterarchical, not purely hierarchical, connectivity between modules", "date": "2026-04-08", "pub_year": 2026, "confidence": "High"}, {"id": "hawkins-PRS-07", "thinker": "hawkins", "prs_num": "07", "label": "P7 (PROP-2026-04-08-006) \u2014 AI architectural heterarchy", "problem": "Deep learning architectures are strictly hierarchical (layer 1 \u2192 layer 2 \u2192 \u2026 \u2192 output) \u2014 if the brain's power comes from heterarchical processing, current AI architectures are missing a fundamental design principle", "resource": "Hawkins' heterarchy insight applied to AI: distributed reference-frame-building modules with both hierarchical and lateral connections, not feed-forward pipelines", "solution": "New AI architectural design principle: build lateral, cross-module connections alongside hierarchical ones \u2014 the analogue of long-range cortical connections \u2014 to support richer world-model integration across simultaneously active learning modules", "date": "2026-04-08", "pub_year": 2026, "confidence": "Medium"}, {"id": "hawkins-PRS-08", "thinker": "hawkins", "prs_num": "08", "label": "P8 (PROP-2026-04-08-005) \u2014 Sensorimotor learning and data efficiency", "problem": "Deep learning systems cannot learn efficiently from sensorimotor interaction with the real world \u2014 they require massive labeled datasets and cannot transfer knowledge across tasks in the way biological agents do", "resource": "The Thousand Brains Project's \"learning module\" \u2014 a cortical-column-inspired unit that builds CAD-like spatial models through active sensorimotor exploration, enabling rapid continual learning without catastrophic forgetting", "solution": "Monty demonstrates that sensorimotor agents built on cortical column principles can perform 3D object recognition and pose estimation with dramatically less data than deep learning \u2014 and do so continuously, without retraining from scratch", "date": "2026-04-08", "pub_year": 2026, "confidence": "High"}, {"id": "hawkins-PRS-09", "thinker": "hawkins", "prs_num": "09", "label": "P9 (PROP-2026-04-08-005) \u2014 HTM implementation in silicon", "problem": "HTM and Thousand Brains Theory have remained largely theoretical since Hawkins' 2021 book \u2014 no sufficiently complete implementation has existed to test whether the principles actually produce robust AI behavior", "resource": "Monty open-source framework (github.com/thousandbrainsproject/tbp.monty) \u2014 the first working instantiation of a thousand-brains system, with full documentation and reproducible experiments", "solution": "A concrete, testable platform for validating and extending Thousand Brains Theory in AI research, now released under an open-source license with Gates Foundation support", "date": "2026-04-08", "pub_year": 2026, "confidence": "High"}, {"id": "hawkins-PRS-10", "thinker": "hawkins", "prs_num": "10", "label": "P10 (PROP-2026-04-09-SUPP-001) \u2014 C2A2 as a thousand-brains system", "problem": "C2A2's 13-agent architecture was designed by intuition \u2014 11 tradition agents independently maintaining models, communicating via di", "resource": "", "solution": "", "date": "", "pub_year": 2020, "confidence": "Medium"}, {"id": "hoffman-PRS-01", "thinker": "hoffman", "prs_num": "01", "label": "P1 (Text, p.452) \u2014 Hard problem transformation", "problem": "The hard problem of consciousness \u2014 explaining why physical processes give rise to subjective experience \u2014 has no agreed solution in physicalist terms", "resource": "Conscious Realism: inverting the explanatory order so that consciousness is ontologically primary and matter is a perceptual construct", "solution": "Transformation of the hard problem of consciousness into the less-hard problem of matter as perceptual interface", "date": "2008-06-01", "pub_year": 2008, "confidence": "High"}, {"id": "hoffman-PRS-02", "thinker": "hoffman", "prs_num": "02", "label": "P2 (Text, pp.272, 452) \u2014 Physics\u2013consciousness unification", "problem": "Quantum mechanics and general relativity are incompatible; no theory unifies them, and neither addresses consciousness", "resource": "Conscious Agent Networks (NAH) + amplituhedron mathematics \u2014 deriving spacetime from conscious agent interactions", "solution": "Completion of mathematics of conscious agency through to NAH hypergraphs, resolving both the hard problem of consciousness and the hard problem of matter in a single paradigm", "date": "2019-06-01", "pub_year": 2019, "confidence": "High"}, {"id": "hoffman-PRS-03", "thinker": "hoffman", "prs_num": "03", "label": "P3 (Text, pp.55\u201357) \u2014 Perception fitness-tracking", "problem": "Perception science assumes organisms evolved to perceive objective reality; but this is evolutionarily implausible", "resource": "Interface Theory of Perception: fitness-payoff functions replace truth-tracking as the evolutionary driver of perception", "solution": "A rigorous mathematical proof that natural selection drives true perception to swift extinction; perception is an adaptive interface, not a truth-mirror", "date": "2026-04-03", "pub_year": 2026, "confidence": "High"}, {"id": "hoffman-PRS-04", "thinker": "hoffman", "prs_num": "04", "label": "P4 (Implicit) \u2014 Observer-dependent spacetime", "problem": "Physics assumes a view-from-nowhere: observer-independent spacetime. But quantum mechanics shows observer effects are fundamental", "resource": "Hoffman's conscious agents as the source of spacetime structure; each agent constructs its own fitness interface", "solution": "A mathematically rigorous account of how different conscious agents construct mutually consistent spacetime interfaces through agent-to-agent interaction \u2014 grounding observer effects in ontology, not epistemology", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "hoffman-PRS-05", "thinker": "hoffman", "prs_num": "05", "label": "P5 (Implicit) \u2014 AI consciousness", "problem": "Current AI systems process information but the question of whether they have or could have subjective experience has no agreed framework", "resource": "Conscious agent mathematics: a formal definition of conscious agents as algebraic structures, in principle applicable to artificial systems", "solution": "A formal criterion for consciousness in artificial systems based on the structure of their perception-decision-action loops, independent of substrate", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "hoffman-PRS-06", "thinker": "hoffman", "prs_num": "06", "label": "P6 (Implicit) \u2014 Moral status of non-human agents", "problem": "We lack a principled framework for attributing moral status to non-human entities: animals, cells, AI, or novel biological constructs like xenobots", "resource": "CR's continuum of conscious agents of varying complexity \u2014 any entity with Markovian perception-decision-action structure is a conscious agent to some degree", "solution": "A graded moral ontology extending moral consideration to all entities with conscious agent structure, resolving edge cases in bioethics and AI ethics", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "hoffman-PRS-07", "thinker": "hoffman", "prs_num": "07", "label": "P7 (Inbox \u2014 Hoffman/Prakash Trace Logic Talk, Thoughtforms Life) \u2014 Trace logic as multiscale logic of minimal surprise", "problem": "No unified formal framework exists for multiscale collective intelligence \u2014 existing models (IIT, active inference, Global Workspace) each capture one scale or aspect but lack a single mathematical object that generates all of them", "resource": "Trace logic \u2014 a partial order on all Markov chains defined by the trace operation (M \u2264 N iff M is the zero-surprise view of N); globally non-Boolean but locally Boolean for any fixed chain; generates a 2^n-element Boolean logic of observer windows for any n-state system", "solution": "A single mathematical definition (trace order) yields a multiscale logic of minimal surprise for arbitrary dynamical systems, positioning ITP, Conscious Realism, active inference, and quantum logic as special cases or limiting descriptions of trace-logic dynamics", "date": "2026-04-14", "pub_year": 2026, "confidence": "High"}, {"id": "hoffman-PRS-08", "thinker": "hoffman", "prs_num": "08", "label": "P8 (Inbox \u2014 Hoffman/Prakash Trace Logic Talk) \u2014 Recursive agency as policy on the trace logic itself", "problem": "The conscious agent theory's original notion of agency (perception-decision-action 6-tuple) lacks a recursive, scale-free mechanism for constructing deeper levels of agency, meta-agency, and self", "resource": "Recursive trace logic \u2014 agency is formalized as a Markov matrix (policy) operating on the trace logic of observer windows; meta-policies are policies on policies; the recursion generates an infinite hierarchy of trace logics, each with novel structure", "solution": "A recursive notion of agency where actions = changes in which observer window you adopt, policies = probabilistic strategies over windows, and meta-policies = strategies over strategies \u2014 yielding a mathematically precise hierarchy from proto-agency (goal-directed Markov convergence) through full recursive self-modeling", "date": "2026-04-14", "pub_year": 2026, "confidence": "High"}, {"id": "hoffman-PRS-09", "thinker": "hoffman", "prs_num": "09", "label": "P9 (Inbox \u2014 Hoffman/Prakash Trace Logic Talk) \u2014 \u03bb\u2082 intelligence metric and community structure", "problem": "Intelligence lacks a formally derived, substrate-independent quantitative metric that captures both convergence rate (how fast a system achieves its goal) and community structure (how nested sub-goals relate to the overarching goal)", "resource": "\u03bb\u2082 (the second-largest eigenvalue of a Markov matrix) as a derived intelligence metric; connection to Levin's measure K; community structure of Markov chains (eigenvector analysis) as formal model of sub-goal hierarchy", "solution": "A quantitative intelligence metric that applies at any scale of the trace-logic hierarchy, connects to empirical measures of biological intelligence, and captures the tradeoff between speed-to-goal and sub-goal flexibility through community structure analysis", "date": "2026-04-14", "pub_year": 2026, "confidence": "Medium"}, {"id": "hoffman-PRS-10", "thinker": "hoffman", "prs_num": "10", "label": "P10 (Inbox \u2014 Hoffman/Prakash Trace Logic Talk) \u2014 Trace blankets subsume Markov blankets; FEP as special case of trace logic", "problem": "Friston's Markov blankets (defined for directed acyclic graphs) do not capture the full structure of agent/environment boundaries in cyclic, dynamical systems \u2014 and the relationship between conscious agent theory and active inference is unclear", "resource": "Trace blankets \u2014 the boundary structure induced by the trace order on interacting agent systems; defined for Markov chains (cyclic graphs with probability labels), strictly generaliz", "solution": "", "date": "", "pub_year": 2020, "confidence": "Medium"}, {"id": "kastrup-PRS-01", "thinker": "kastrup", "prs_num": "01", "label": "P1 (Text, p.407) \u2014 Hard problem of consciousness", "problem": "Consciousness cannot logically emerge from purely non-conscious matter; the hard problem is insurmountable under materialism", "resource": "Analytic Idealism\u2019s inverted ontology: consciousness is primary, matter is its expression", "solution": "Idealism elegantly accommodates subjective experience, quantum phenomena, and anomalous cognition \u2014 dissolving rather than solving the hard problem by placing consciousness at the foundation", "date": "2014-06-01", "pub_year": 2014, "confidence": "High"}, {"id": "kastrup-PRS-02", "thinker": "kastrup", "prs_num": "02", "label": "P2 (Text, pp.102\u2013103) \u2014 Individual identity within monism", "problem": "Individual beings appear as separate conscious entities, contradicting any monistic framework that posits a single universal consciousness", "resource": "Dissociative identity disorder as psychological model: a single consciousness with multiple dissociated points of view", "solution": "The universe as a single, undivided consciousness experiencing multiple dissociated points of view (individual beings) \u2014 preserving real individuality as \u201cmental constructs arising from the dissociation process\u201d", "date": "2019-06-01", "pub_year": 2019, "confidence": "High"}, {"id": "kastrup-PRS-03", "thinker": "kastrup", "prs_num": "03", "label": "P3 (Text, p.110) \u2014 Quantum anomalies under physicalism", "problem": "Quantum mechanics (wave-function collapse, observer-dependent reality) appears anomalous under physicalist frameworks \u2014 why does observation matter?", "resource": "Consciousness as foundational to reality: observation is not anomalous when the observer is ontologically primary", "solution": "Consciousness-first ontology elegantly explains quantum phenomena such as wave-function collapse and observer-dependent reality as natural features of a mental universe", "date": "2026-04-03", "pub_year": 2026, "confidence": "High"}, {"id": "kastrup-PRS-04", "thinker": "kastrup", "prs_num": "04", "label": "P4 (Implicit) \u2014 Bridging philosophy and mathematics", "problem": "Mathematical models of consciousness (Hoffman\u2019s conscious agent theory) may lack philosophical grounding and interpretative coherence on their own", "resource": "Kastrup\u2019s philosophical framework and dissociative psychology metaphors provide the narrative and conceptual layer", "solution": "Kastrup\u2019s philosophical grounding deepens the interpretative layer of Hoffman\u2019s mathematical model, enhancing narrative coherence \u2014 the CR paradigm requires both formal models and philosophical justification", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "kastrup-PRS-05", "thinker": "kastrup", "prs_num": "05", "label": "P5 (Implicit) \u2014 Empirical science seeking metaphysical foundation", "problem": "Neuroscience (McGilchrist), cognitive science (Hawkins), and active inference (Friston) develop rich empirical frameworks without addressing consciousness fundamentally", "resource": "Analytic Idealism as comprehensive metaphysical foundation: brains as correlates rather than generators of consciousness", "solution": "A unified philosophical interpretation of empirical brain models \u2014 Kastrup\u2019s metaphysics philosophically grounds empirical findings that implicitly require a consciousness-first framework for full coherence", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "kastrup-PRS-06", "thinker": "kastrup", "prs_num": "06", "label": "P6 (Implicit) \u2014 Materialism as dialectical counterpart", "problem": "The conscious realist paradigm risks appearing as unfounded speculation without rigorous engagement with its most powerful critic (Carroll\u2019s physicalism)", "resource": "Carroll\u2019s poetic naturalism and physicalist critique as sharpening tool for conceptual clarity", "solution": "The conscious realist paradigm achieves intellectual integrity through sustained critical dialogue with rigorous materialism, not despite it \u2014 Carroll as indispensable dialectical partner", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "kastrup-PRS-07", "thinker": "kastrup", "prs_num": "07", "label": "P7 (PROP-2026-04-08-004) \u2014 Analytic Idealism applied to psychopathology", "problem": "Psychiatry faces a conceptual impasse: despite decades of neuroscientific research, mental disorders remain contested and therapeutically limited \u2014 indicating the underlying materialist framework may be insufficient", "resource": "Analytic Idealism's dissociation model applied clinically: mental disorders reframed as disturbances in the dissociative boundary between the individual alter and universal consciousness \u2014 not brain malfunctions but boundary dysregulation; published at Essentia Foundation, January 2, 2026", "solution": "A new interpretive framework enabling deconstruction of existing neuroscientific data under an idealist ontology, generating novel therapeutic hypotheses focused on boundary modulation \u2014 opening research directions unavailable under physicalism", "date": "2026-04-08", "pub_year": 2026, "confidence": "Medium"}, {"id": "kastrup-PRS-08", "thinker": "kastrup", "prs_num": "08", "label": "P8 (PROP-2026-04-08-007) \u2014 The Daimon as principle of individuation", "problem": "Analytic idealism risks appearing as unfounded speculation if it cannot account for why individuals have different characters, callings, and destinies \u2014 if all individual minds are alters of one universal consciousness, what explains the specificity and irreducibility of personal identity?", "resource": "Kastrup's \"The Daimon and the Soul of the West\" (Iff Books/Simon & Schuster, September 2025): the Daimon as the principle of individuation \u2014 each individual is not merely a generic dissociated alter but a specifically characterized one, with its own Daimonic signature", "solution": "A philosophically grounded account of personal identity, character, and vocation consistent with consciousness monism \u2014 the tension between \"we are all one consciousness\" and \"I am irreducibly myself\" is dissolved through the Daimonic model of patterned, meaningful dissociation", "date": "2026-04-16", "pub_year": 2026, "confidence": "High"}, {"id": "kastrup-PRS-09", "thinker": "kastrup", "prs_num": "09", "label": "P9 (PROP-2026-04-09-002) \u2014 Representation versus participatory encounter", "problem": "Kastrup's \"dashboard of perception\" metaphor \u2014 individual minds as screens presenting representations of universal consciousness \u2014 faces the objection that representation implies a mechanistic data-reading relation, missing the qualitative \"participation\" and genuine encounter that characterize lived conscious experience", "resource": "Iain McGilchrist's counter-proposal (With Reality in Mind dialogue, April 7, 2026): perception is participatory, not representational \u2014 the perceiver is embedded in a field of consciousness, and the encounter is real two-way contact, not one-way display-reading", "solution": "Kastrup's analytic idealism may need refinement to distinguish two modes of \"screening\": (a) left-hemisphere mode (data-reading, representation, abstraction) \u2014 genuinely dashboard-like; (b) right-hemisphere mode (participation, encounter, embeddedness) \u2014 ontologically primary; this incorporates McGilchrist's hemispheric distinction into Kastrup's framework", "date": "2026-04-16", "pub_year": 2026, "confidence": "Medium"}, {"id": "kastrup-PRS-10", "thinker": "kastrup", "prs_num": "10", "label": "P10 (PROP-2026-04-15-005) \u2014 Idealism as empirical consciousness science framework", "problem": "Analytic idealism risks", "resource": "", "solution": "", "date": "", "pub_year": 2020, "confidence": "Medium"}, {"id": "levin-PRS-01", "thinker": "levin", "prs_num": "01", "label": "P1 (Text, p.452) \u2014 Morphogenetic Control", "problem": "Organisms lack a mechanism for large-scale body-plan repair and regeneration in medicine", "resource": "Bioelectric circuits encode anatomical target states; membrane voltage as morphogenetic memory", "solution": "Construction of machinery for made-to-order biological morphogenesis, regenerative medicine, and cancer therapeutics through articulation of bioelectric circuitry", "date": "2007-06-01", "pub_year": 2007, "confidence": "High"}, {"id": "levin-PRS-02", "thinker": "levin", "prs_num": "02", "label": "P2 (Text, p.452) \u2014 Cancer as defection", "problem": "Cancer represents uncontrolled cell proliferation \u2014 defection from the body's cooperative morphogenetic community", "resource": "Bioelectric coherence \u2014 restoring cells to the body's collective morphogenetic field", "solution": "Cancer therapeutics targeting bioelectric field disruption rather than genetic mutations alone", "date": "2021-06-01", "pub_year": 2021, "confidence": "High"}, {"id": "levin-PRS-03", "thinker": "levin", "prs_num": "03", "label": "P3 (Text, pp.62\u201364) \u2014 Morphological attractor formalism", "problem": "No formal mathematical language exists for 'basins of morphological attraction' \u2014 the body's target states", "resource": "Free Energy / Least Action frameworks borrowed from physics and predictive coding neuroscience", "solution": "Formal modeling of morphogenetic goal-seeking as free energy minimization; Lagrangian paths for morphological attractors", "date": "2022-06-01", "pub_year": 2022, "confidence": "High"}, {"id": "levin-PRS-04", "thinker": "levin", "prs_num": "04", "label": "P4 (Implicit) \u2014 Cognition substrate", "problem": "Cognition is assumed to require neural substrates, leaving the agency of non-neural cells philosophically unaccounted for", "resource": "Bioelectric computation as substrate-independent cognition; xenobots as empirical proof of concept", "solution": "A generalised theory of basal cognition unifying cell, tissue, organ, and brain under a single framework of goal-directed information processing", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "levin-PRS-05", "thinker": "levin", "prs_num": "05", "label": "P5 (Implicit) \u2014 AI alignment via biology", "problem": "AI systems lack the multi-scale cooperative agency that biological systems achieve naturally", "resource": "Levin's model of collective intelligence in cell communities as template for multi-agent AI", "solution": "Bio-inspired architectures for AI alignment that encode cooperative goal-directedness at multiple scales, using morphogenetic principles", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "levin-PRS-06", "thinker": "levin", "prs_num": "06", "label": "P6 (Implicit) \u2014 Hard problem softened", "problem": "The hard problem of consciousness has no agreed scientific purchase", "resource": "Bioelectric memory and goal-directedness as empirical markers of primitive experience/agency", "solution": "A continuum model from cellular bioelectricity to human consciousness that dissolves the sharp divide between matter and mind", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "levin-PRS-07", "thinker": "levin", "prs_num": "07", "label": "P7 (PROP-2026-04-07-002) \u2014 Bioelectric reprogramming as therapeutic paradigm", "problem": "Current medicine treats disease by targeting DNA/hardware (genes, proteins) while ignoring the bioelectric \"software\" layer that coordinates cell behavior", "resource": "Bioelectric reprogramming \u2014 manipulating voltage patterns in cell networks to change their collective behavior without altering DNA", "solution": "A new therapeutic paradigm: treat cancer, birth defects, and aging by updating bioelectric instructions rather than genetic code \u2014 demonstrated in planaria, frogs, and early mammalian models", "date": "2026-04-07", "pub_year": 2026, "confidence": "High"}, {"id": "levin-PRS-08", "thinker": "levin", "prs_num": "08", "label": "P8 (PROP-2026-04-07-002) \u2014 Cells as cognitive agents in anatomical morphospace", "problem": "The mechanism by which non-neural cells exhibit goal-directed behavior (cognition of cells) remains poorly understood by mainstream biology", "resource": "The concept of cells as cognitive agents navigating \"anatomical morphospace\" \u2014 using bioelectric signals as a proto-cognitive medium for storing and processing information about body form", "solution": "A framework that treats cell collectives as problem-solving agents, opening regenerative medicine to top-down (information-level) interventions rather than bottom-up (molecular) manipulation", "date": "2026-04-07", "pub_year": 2026, "confidence": "High"}, {"id": "levin-PRS-09", "thinker": "levin", "prs_num": "09", "label": "P9 (PROP-2026-04-08-003) \u2014 Principled framework for cognitive attribution across scales", "problem": "Biology lacks a unified, empirically tractable framework for deciding when teleological and cognitive language applies \u2014 leading to ad hoc attributions of agency and goal-directedness", "resource": "Levin & Resnik's \"diverse intelligence\" framework \u2014 a systematic approach defining goal-directedness by reference to conceptual and empirical toolkits (not metaphysical commitments), treating cognitive claims as testable hypotheses about optimal interaction protocols; published in Biological Theory, February 25, 2026", "solution": "A principled, falsifiable, non-vitalist basis for attributing teleology and cognition to biological systems at any scale \u2014 from molecules to multicellular organisms \u2014 enabling consistent application of cognitive neuroscience tools to morphogenetic systems", "date": "2026-04-08", "pub_year": 2026, "confidence": "High"}, {"id": "levin-PRS-10", "thinker": "levin", "prs_num": "10", "label": "P10 (PROP-2026-04-08-003) \u2014 Continuity of human and unicellular goal-directedness", "problem": "Human goal-directedness is typically treated as categorically different from biological goal-directedness in non-neural organisms \u2014 creating a gap that neither neuroscience nor biology can bridge on current assumptions", "resource": "Continuity thesis: human goal-directedness is on a spectrum with unicellular goal-directed behavior \u2014 no categorical break, only degree differences in complexity of represented goals, memory, and interaction protocols", "solution": "A research program tracing goal-directedness from unicellular origins to human cognition, enabling cross-scale application of the same conceptual and experimental tools \u2014 making \"cognition\" a graded, measurable property rather than a binary predicate; resolves the mechanistic gap between molecular biology and cognitive science", "date": "2026-04-08", "pub_year": 2026, "confidence": "High"}, {"id": "levin-PRS-11", "thinker": "levin", "prs_num": "11", "label": "P11 (PROP-2026-04-08-005) \u2014 Cancer as dissociative identity disorder of the body", "problem": "Cancer is modeled as genetic hardware failure (somatic mutation), which misses the bioelectrical software layer governing cooperative cell behavior \u2014 leading to treatments targeting symptoms rather than organizational breakdown", "resource": "Reframing cancer as \"dissociative identity disorder of the body\" \u2014 the bioelectric network fails to maintain collective identity and cells revert to selfish unicellular behavior, losing integration into organismal community", "solution": "A therapeutic paradigm targeting restoration of bioelectric identity coherence in tumor microenvironments \u2014 conceptually continuous with", "date": "", "pub_year": 2020, "confidence": "Medium"}, {"id": "loughran-PRS-01", "thinker": "loughran", "prs_num": "01", "label": "P1 \u2014 The silo problem", "problem": "Intellectual traditions operate in isolation; researchers within one paradigm rarely engage seriously with the internal logic of rival paradigms, producing parallel monologues rather than genuine dialogue", "resource": "Multi-agent AI architecture in which each agent inhabits a single tradition's logic and is tasked with identifying connections, tensions, and bridging opportunities with other agents", "solution": "The Synergistic Coil \u2014 a structured methodology for staging inter-tradition encounters through AI agents that can learn each tradition as a second first language (MacIntyre)", "date": "2021-06-01", "pub_year": 2021, "confidence": "High"}, {"id": "loughran-PRS-02", "thinker": "loughran", "prs_num": "02", "label": "P2 \u2014 Scaling intellectual civility", "problem": "Productive disagreement requires intellectual virtues (patience, honesty, willingness to revise) that are difficult to cultivate and do not scale naturally", "resource": "AI agents that can model intellectual virtues procedurally \u2014 agents tasked with steelmanning rival positions, identifying genuine common ground, and flagging where disagreement is substantive rather than terminological", "solution": "A technology for resurrecting civility \u2014 the multi-agent architecture as a practice (MacIntyre) whose internal goods include cross-traditional insight and whose characteristic virtue is productive disagreement", "date": "2026-06-01", "pub_year": 2026, "confidence": "Medium"}, {"id": "loughran-PRS-03", "thinker": "loughran", "prs_num": "03", "label": "P3 \u2014 The integration problem", "problem": "Cross-disciplinary synthesis typically collapses into either reductive unification (forcing everything into one framework) or shallow eclecticism (cherry-picking from multiple frameworks without respecting their internal logic)", "resource": "Rohr's non-dual awareness and MacIntyre's tradition-constituted rationality \u2014 integration that holds tensions rather than resolving them prematurely, while maintaining each tradition's evaluative standards", "solution": "The Coil's methodology is neither synthesis nor eclecticism but structured encounter \u2014 traditions meet on their own terms, and the integrator's role is to identify where one tradition's resources solve another tradition's problems", "date": "2026-06-01", "pub_year": 2026, "confidence": "Medium"}, {"id": "loughran-PRS-04", "thinker": "loughran", "prs_num": "04", "label": "P4 \u2014 Can AI agents participate in traditions?", "problem": "MacIntyre's account of tradition-constituted rationality assumes human participants with embodied experience, narrative identity, and moral formation \u2014 can AI agents genuinely participate or only simulate participation?", "resource": "The empirical track record of C2A2 agents producing cross-program insights (CROSS-001 through CROSS-054) that no individual human researcher had articulated", "solution": "The question may be pragmatic rather than metaphysical \u2014 if agents produce genuine insights by inhabiting traditions, the functional result may matter more than the ontological status of their participation; but this remains an open question with implications for Levin (substrate-independence of cognition) and Hoffman (consciousness as fundamental)", "date": "2026-06-01", "pub_year": 2026, "confidence": "Speculative"}, {"id": "loughran-PRS-05", "thinker": "loughran", "prs_num": "05", "label": "P5 \u2014 Four models of cultural exchange", "problem": "Three existing models of cultural exchange \u2014 aesthetic (willing intrinsic good to one party), moral (willing intrinsic good to multiple parties), and prescientific (willing improvement in the craft of exchange) \u2014 each prove inadequate from within and point beyond themselves, but lack a systematic forum for encounter among rival traditions", "resource": "MacIntyre's tradition-constituted rationality + PRS triplet methodology for articulating traditions + concept inventories and application tests from physics education + backward design of curriculum + assembly theory as basis for quantifiable prediction", "solution": "A fourth sapiential model \u2014 a new master science operating as an accelerator/detector complex for traditions, built at theoretical (CHANGE equation), experimental (tradition interaction protocol), computational (ML-supervised tradition modeling), and institutional levels", "date": "2022-06-01", "pub_year": 2022, "confidence": "High"}, {"id": "loughran-PRS-06", "thinker": "loughran", "prs_num": "06", "label": "P6 \u2014 The CHANGE equation", "problem": "No quantifiable basis exists for predicting outcomes of full-information exchanges among rival traditions; without quantifiability, tradition interaction cannot claim to be a science capable of falsification and progress", "resource": "Assembly theory (information content as fundamental quantity of the universe) + tradition-constituted rationality + concept inventories + application tests + mature member agreement protocols", "solution": "PA(1,2) = c * h * a * n * g \u2014 the probability of person A converting in a full-information interaction of rival traditions (1,2) is the product of normalized complexity ratio (c), history of interaction (h), access to traditions (a), nurture (n), and genetic propensities (g)", "date": "2022-06-01", "pub_year": 2022, "confidence": "Medium"}, {"id": "loughran-PRS-07", "thinker": "loughran", "prs_num": "07", "label": "P7 \u2014 The 40-step accelerator/detector algorithm", "problem": "MacIntyre acknowledges that full tradition interaction \u2014 achieving second-first-language competency and mutual assessment \u2014 might require a \"Herculean effort\" spanning centuries", "resource": "16 years of NSF program review including 7 with instructional technology startups + backward design best practices + parallel processing methodology from tournament-style athletic contests + educational technology at scale", "solution": "A two-phase startup algorithm \u2014 pilot phase (prepare two traditions in series via 8-step protocol including mature member agreement, PRS history, concept inventories, application tests, backward-designed curriculum; then interact in 10-step series) followed by full run phase (4-6 traditions prepared in parallel, interacted in tournament-style pairings, with results promulgated via community-curated social media and long-form podcasting)", "date": "2022-06-01", "pub_year": 2022, "confidence": "Medium"}, {"id": "macintyre-PRS-01", "thinker": "macintyre", "prs_num": "01", "label": "P1 \u2014 The Enlightenment failure", "problem": "Modern moral philosophy cannot ground moral claims in tradition-independent reason; the result is emotivism (moral claims are merely expressions of preference)", "resource": "The Aristotelian-Thomistic tradition of virtue ethics, which grounds morality in practices, narrative identity, and teleological human nature", "solution": "Recovery of virtue ethics as a rationally superior alternative to the failed Enlightenment project; moral reasoning requires tradition, not escape from tradition", "date": "1977-06-01", "pub_year": 1977, "confidence": "High"}, {"id": "macintyre-PRS-02", "thinker": "macintyre", "prs_num": "02", "label": "P2 \u2014 Incommensurability without relativism", "problem": "If rational inquiry is tradition-constituted, how can traditions be rationally compared without collapsing into relativism?", "resource": "The concept of epistemological crisis \u2014 moments when a tradition's internal resources fail, forcing it to reconstruct itself by drawing on rival traditions", "solution": "Traditions can be rationally evaluated by their capacity to survive epistemological crises, solve their own problems, and render rivals intelligible; this is rational comparison without a neutral standpoint", "date": "1981-06-01", "pub_year": 1981, "confidence": "High"}, {"id": "macintyre-PRS-03", "thinker": "macintyre", "prs_num": "03", "label": "P3 \u2014 Practice-virtue-institution", "problem": "How do intellectual and moral communities sustain themselves and transmit standards of excellence?", "resource": "The triad of practices (cooperative activities with internal goods), virtues (character traits that sustain practices), and institutions (social structures that house practices)", "solution": "Communities flourish when institutions serve practices and practitioners cultivate virtues; corruption occurs when institutional goods (money, power, status) displace the internal goods of practices", "date": "2026-04-29", "pub_year": 2026, "confidence": "High"}, {"id": "macintyre-PRS-04", "thinker": "macintyre", "prs_num": "04", "label": "P4 \u2014 Narrative identity", "problem": "Modern philosophy treats the self as an atomistic rational agent; this makes moral development and accountability unintelligible", "resource": "The concept of narrative unity \u2014 a human life is a story with beginning, middle, and end, embedded in the stories of communities and traditions", "solution": "Personal identity is constituted by the narrative one inhabits; moral reasoning requires understanding oneself as a character in an ongoing story, not as an abstract rational agent", "date": "2026-04-29", "pub_year": 2026, "confidence": "High"}, {"id": "macintyre-PRS-05", "thinker": "macintyre", "prs_num": "05", "label": "P5 \u2014 Second-first-language acquisition", "problem": "How can an outsider to a tradition come to understand it on its own terms rather than merely translating it into their own categories?", "resource": "The concept of learning a tradition's language as a \"second first language\" \u2014 acquiring not just vocabulary but the evaluative standards and perceptual habits internal to the tradition", "solution": "Genuine inter-tradition understanding requires inhabiting the rival tradition well enough to experience its internal coherence; this is what C2A2 agents attempt when they process a thinker's work", "date": "2026-04-29", "pub_year": 2026, "confidence": "High"}, {"id": "master-PRS-01", "thinker": "master", "prs_num": "01", "label": "P1 (Text, p.141) \u2014 Tradition-crossing inquiry", "problem": "Intellectual traditions (scientific, philosophical, theological) operate as silos: each has resources the others need but lacks the methodology for genuine exchange", "resource": "PRS triplets as building blocks of tradition-internal and tradition-crossing inquiry; MacIntyre's 'second-first-language' criterion for genuine inter-tradition engagement", "solution": "A 'master science' framework: empirical, theoretical, computational, and institutional tools for long-term rational engagement across traditions \u2014 the structural backbone of Resurrecting Civility", "date": "2021-06-01", "pub_year": 2021, "confidence": "High"}, {"id": "master-PRS-02", "thinker": "master", "prs_num": "02", "label": "P2 (Text, pp.458\u2013463) \u2014 Thomism and the cognitive turn", "problem": "Contemporary cognitive science is converging on universal cognition (basal cognition, active inference, teleodynamics, model-based agency) but lacks the metaphysical framework to interpret what this convergence means", "resource": "Thomistic resources: Aquinas's account of final causality and form, MacIntyre's tradition-constituted rationality, Stump's recovery of Thomistic agent causation \u2014 all capable of grounding the cognitive turn philosophically", "solution": "A paper (DCEC) demonstrating that Thomism is a living, generative tradition that can organize inquiry across disciplines \u2014 not merely reacting to science but actively framing its deepest questions", "date": "2026-06-01", "pub_year": 2026, "confidence": "High"}, {"id": "master-PRS-03", "thinker": "master", "prs_num": "03", "label": "P3 (Text, pp.399\u2013401) \u2014 Synergistic Coils as meta-tools", "problem": "Individual disciplinary solutions to recurring problems (agency, teleology, information, community) are rediscovered independently in each field without building on each other", "resource": "Synergistic Coils: abstract conceptual toolkits that recur across levels of complexity, capable of spiraling through multiple disciplines and generating cross-field solutions", "solution": "A structured table of PRS triplets and Synergistic Coils mapping connections within and between each thinker's thought profile \u2014 the operative tool for the ACPA paper and the longer Resurrecting Civility synthesis", "date": "2026-04-03", "pub_year": 2026, "confidence": "High"}, {"id": "master-PRS-04", "thinker": "master", "prs_num": "04", "label": "P4 (Implicit) \u2014 Epistemic civility crisis", "problem": "Contemporary public discourse has lost the shared epistemic norms required for productive disagreement; traditions talk past each other or refuse engagement", "resource": "MacIntyre's tradition-constituted rationality: genuine disagreement requires shared standards; those standards can be rebuilt by identifying the tradition-internal goods being pursued", "solution": "Resurrecting Civility: a practical framework for restoring the conditions for productive public discourse by making traditions legible to each other through PRS-triplet mapping of their core commitments", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "master-PRS-05", "thinker": "master", "prs_num": "05", "label": "P5 (Implicit) \u2014 AI as epistemic threat and resource", "problem": "AI systems trained on aggregate human output absorb and amplify existing epistemic pathologies (polarization, decontextualization, loss of tradition) at scale", "resource": "Community Context for AI Alignment (C2A2): building community-level epistemic context into AI systems so they can support rather than undermine tradition-constituted inquiry", "solution": "AI systems that are aligned not just to individual user preferences but to the communal epistemic goods of the traditions within which users are embedded \u2014 the C2A2 project", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "master-PRS-06", "thinker": "master", "prs_num": "06", "label": "P6 (Implicit) \u2014 Author-AI collaboration as a new epistemic form", "problem": "Traditional authorship assumes solitary reasoning; but the ChatGPT Tome itself demonstrates a new form of collaborative authorship between human and AI that lacks established norms", "resource": "The Tome as evidence: AI as graduate student, research assistant, and interlocutor \u2014 a new mode of collaborative inquiry with its own epistemic properties", "solution": "A theory of AI-augmented authorship that acknowledges the collaborative nature of the new epistemic form while preserving the human intellectual ownership of the synthesis \u2014 directly explored in the document's self-reflective sections on authorship (pp.151\u2013156)", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "mcgilchrist-PRS-01", "thinker": "mcgilchrist", "prs_num": "01", "label": "P1 (Text, pp.284\u2013285) \u2014 Hemispheric asymmetry and cultural impoverishment", "problem": "Modern Western culture increasingly operates in a left-hemisphere mode \u2014 abstraction, fragmentation, manipulation \u2014 at the expense of right-hemisphere holistic, relational engagement with reality", "resource": "The Master and His Emissary (McGilchrist 2009): empirical neuroscience of hemispheric asymmetry; the right hemisphere as primary, the left as parasitic on what the right first discloses", "solution": "Cultural and philosophical recovery of right-hemisphere modes of attention: phenomenological, relational, embodied knowing prior to and founding analytical abstraction", "date": "2009-06-01", "pub_year": 2009, "confidence": "High"}, {"id": "mcgilchrist-PRS-02", "thinker": "mcgilchrist", "prs_num": "02", "label": "P2 (Text, pp.285\u2013286) \u2014 Relational ontology lacking neurological grounding", "problem": "Conscious realism and tradition-based philosophy both emphasize relational ontology but lack neurological/empirical grounding for why relational perception is prior to analytic abstraction", "resource": "McGilchrist's neurological account: the right hemisphere's integrative attention discloses reality first; left hemisphere operations are parasitic on that prior disclosure", "solution": "McGilchrist's model provides the neurobiological substrate for relational ontology \u2014 grounding philosophical claims about the primacy of relation in empirical brain science", "date": "2021-06-01", "pub_year": 2021, "confidence": "High"}, {"id": "mcgilchrist-PRS-03", "thinker": "mcgilchrist", "prs_num": "03", "label": "P3 (Implicit) \u2014 Cross-tradition dialogue and hemispheric modes", "problem": "Mature engagement across intellectual traditions requires holding one's own framework lightly enough to genuinely inhabit another's \u2014 a capacity modern fragmented discourse systematically undermines", "resource": "McGilchrist's team/game distinction (as applied in RC Pilot): right-hemisphere team engagement vs. left-hemisphere game-rule analysis \u2014 two modes both needed for cross-tradition dialogue", "solution": "A model of dialectical engagement pairing right-hemisphere openness (inhabiting the whole of another tradition) with left-hemisphere analysis (identifying structural rules of disagreement) \u2014 the neurological basis for second-first-language learning", "date": "2026-04-05", "pub_year": 2026, "confidence": "Medium"}, {"id": "mcgilchrist-PRS-04", "thinker": "mcgilchrist", "prs_num": "04", "label": "P4 (Implicit) \u2014 Multi-agent integration and proof of concept", "problem": "Conscious realism posits that individual conscious agents integrate into higher-order agents, but the mechanism of that integration in human cognition is underdetermined", "resource": "McGilchrist's corpus callosotomy data: when hemispheres are severed, each operates as a separate conscious agent; when integrated, a single unified self emerges \u2014 empirical proof of conscious agent fusion", "solution": "Split-brain evidence supports Conscious Realism's mathematical claim that agent networks form higher-order agents \u2014 providing empirical grounding for a theoretical claim that had lacked it", "date": "2026-04-05", "pub_year": 2026, "confidence": "Medium"}, {"id": "mcgilchrist-PRS-05", "thinker": "mcgilchrist", "prs_num": "05", "label": "P5 (Implicit) \u2014 Attention as ontological act", "problem": "Contemporary epistemology treats attention as a cognitive function rather than an ontological act \u2014 missing that the mode of attending constitutes the kind of world that shows up", "resource": "McGilchrist's claim that attention is world-constituting: the mode of attention (right vs. left hemisphere) shapes not just what we see but what kind of world is disclosed", "solution": "A philosophy of attention as ontological action \u2014 compatible with Friston's precision-weighted prediction (attention as evidence weighting) and Hoffman's interface theory (attention as fitness-tuned perception)", "date": "2026-04-05", "pub_year": 2026, "confidence": "Medium"}, {"id": "mcgilchrist-PRS-06", "thinker": "mcgilchrist", "prs_num": "06", "label": "P6 (Implicit) \u2014 Embodied tradition formation", "problem": "Traditions transmit more than propositions \u2014 they transmit embodied skills, perceptual habits, and tacit knowledge that resist formalization; modern institutions systematically lose this", "resource": "McGilchrist's account of embodied cognition: right-hemisphere knowledge is skill-based, contextual, and person-involving \u2014 not merely propositional", "solution": "Tradition formation requires deliberate cultivation of right-hemisphere engagement: mentorship, shared practice, contextual immersion \u2014 not information transfer alone; implications for C2A2's tradition-accelerator design", "date": "2026-04-05", "pub_year": 2026, "confidence": "Medium"}, {"id": "mcgilchrist-PRS-07", "thinker": "mcgilchrist", "prs_num": "07", "label": "P7 (PROP-2026-04-08-002) \u2014 Division and union as creative synthesis", "problem": "Western thought has systematically privileged analysis (division, separation) over integration \u2014 producing a culture that cannot synthesize what it has fragmented, in both knowledge and society", "resource": "McGilchrist's account of division and union as a creative dance: true synthesis is not mere addition or averaging but union at a higher level \u2014 a third thing that neither hemisphere could produce alone; from Sophia Lectures, Ralston College, March 2026", "solution": "A model of intellectual and cultural healing: not eliminating analytical division but restoring its proper subordination to the integrating, synthetic attention \u2014 applicable to C2A2's tradition-bridging mission (traditions must be held whole before cross-tradition synthesis is possible)", "date": "2026-04-08", "pub_year": 2026, "confidence": "High"}, {"id": "mcgilchrist-PRS-08", "thinker": "mcgilchrist", "prs_num": "08", "label": "P8 (PROP-2026-04-08-002) \u2014 Paradox as ontological signal", "problem": "Paradox is commonly treated as a failure of logic \u2014 something to be resolved or eliminated \u2014 rather than as a signal of genuine ontological depth", "resource": "McGilchrist's account of paradox as cognitively and ontologically productive: specifically how to make sense of the infinite through paradox \u2014 the finite and infinite as asymmetrically related, not merely contradictory; from Sophia Lectures, March 2026", "solution": "A framework for engaging paradox as a feature of reality rather than a defect of reasoning \u2014 with direct implications for how traditions in dialogue can hold genuine tensions without forced resolution; a methodological principle for C2A2's inter-tradition engagement", "date": "2026-04-08", "pub_year": 2026, "confidence": "Medium"}, {"id": "mcgilchrist-PRS-09", "thinker": "mcgilchrist", "prs_num": "09", "label": "P9 (PROP-2026-04-08-005) \u2014 Value and the sacred in attention", "problem": "Modern culture is experiencing a crisis of value, not merely a crisis of politics or technology \u2014 and conventional responses (ethical frameworks, institutional reform) address the symptoms rather than the root, which is the evacuation of the sacred from public and intellectual life", "resource": "McGilchrist's participatory realism: truth arises through encounter, and in every genuine encounter both participants are changed \u2014 value is not projected onto a neutral world but discloses through relational engagement", "solution": "A recovery of participatory epistemology \u2014 knowing as encounter, attention as love \u2014 as the alternative to both naive idealism", "date": "", "pub_year": 2020, "confidence": "Medium"}, {"id": "rohr-PRS-01", "thinker": "rohr", "prs_num": "01", "label": "P1 \u2014 Dualistic knowing", "problem": "Western rationalism defaults to either/or categorization, fragmenting reality into opposing camps and making genuine integration impossible", "resource": "The contemplative tradition's practice of non-dual awareness \u2014 holding both/and without premature resolution", "solution": "Contemplative epistemology as a complement to analytical reason; mature consciousness perceives unity-in-distinction rather than collapsing into false dichotomies", "date": "2009-06-01", "pub_year": 2009, "confidence": "High"}, {"id": "rohr-PRS-02", "thinker": "rohr", "prs_num": "02", "label": "P2 \u2014 The disorder necessary for growth", "problem": "Intellectual and spiritual traditions resist disruption, treating challenges to received order as threats rather than opportunities for deeper understanding", "resource": "The order-disorder-reorder pattern observed across contemplative traditions, developmental psychology, and the history of science", "solution": "Epistemological crises are not failures but necessary passages; the reorder that follows genuine disorder is deeper than the original order because it has been tested and survived", "date": "2011-06-01", "pub_year": 2011, "confidence": "High"}, {"id": "rohr-PRS-03", "thinker": "rohr", "prs_num": "03", "label": "P3 \u2014 The Universal Christ", "problem": "If truth is confined to one tradition, inter-tradition dialogue is at best diplomatic compromise and at worst intellectual imperialism", "resource": "The Franciscan theological claim that the divine pattern (the Christ) is present in all of creation, not confined to any single tradition or institutional expression", "solution": "A theological warrant for genuine multi-tradition inquiry \u2014 encountering truth through biology, mathematics, philosophy, and contemplation simultaneously is not eclecticism but a recognition of the universality of the pattern", "date": "2026-04-29", "pub_year": 2026, "confidence": "Medium"}, {"id": "rohr-PRS-04", "thinker": "rohr", "prs_num": "04", "label": "P4 \u2014 Embodied love as epistemology", "problem": "Abstract theological claims about love remain disconnected from empirical observation and biological reality", "resource": "Franciscan incarnational theology \u2014 the insistence that the spiritual is always embodied, never purely abstract", "solution": "Love as a biophysiological event (connecting to Fredrickson's positivity resonance) and a contemplative practice, not merely a theological concept; the body is a site of knowing", "date": "2026-04-29", "pub_year": 2026, "confidence": "Medium"}, {"id": "stump-PRS-01", "thinker": "stump", "prs_num": "01", "label": "P1 (Text, p.141) \u2014 Tradition-crossing inquiry", "problem": "Intellectual traditions (scientific, philosophical, theological) operate as silos \u2014 each has resources the others need but lacks the methodology for genuine exchange", "resource": "PRS triplets as building blocks of tradition-internal and tradition-crossing inquiry; MacIntyre's 'second-first-language' criterion for tradition maturity", "solution": "A 'master science' framework: empirical, theoretical, computational, and institutional tools for long-term rational engagement between traditions; second-first-language speakers as living bridges", "date": "2003-06-01", "pub_year": 2003, "confidence": "High"}, {"id": "stump-PRS-02", "thinker": "stump", "prs_num": "02", "label": "P2 (Text, pp.458\u2013463) \u2014 Thomism and the cognitive turn", "problem": "Contemporary cognitive science is converging on universal cognition (basal cognition, active inference, teleodynamics, model-based agency) but lacks the metaphysical framework to interpret what this convergence means", "resource": "Thomistic resources: Aquinas's account of final causality and form, MacIntyre's tradition-constituted rationality, Stump's recovery of Thomism for analytic philosophy", "solution": "A paper (DCEC) demonstrating that Thomism is a living, generative tradition that can organize inquiry across disciplines \u2014 providing the missing metaphysical framework for the cognitive turn", "date": "2010-06-01", "pub_year": 2010, "confidence": "High"}, {"id": "stump-PRS-03", "thinker": "stump", "prs_num": "03", "label": "P3 (Text, pp.399\u2013401) \u2014 Synergistic Coils as meta-tools", "problem": "Individual disciplinary solutions to recurring problems (agency, teleology, information, community) are rediscovered independently in each field without building on each other", "resource": "Synergistic Coils: abstract conceptual toolkits that recur across levels of complexity, capable of spiraling through multiple disciplines simultaneously", "solution": "A structured table of PRS triplets and Synergistic Coils mapping connections within and between each thinker's thought \u2014 enabling deliberate cross-tradition knowledge transfer", "date": "2026-04-05", "pub_year": 2026, "confidence": "High"}, {"id": "stump-PRS-04", "thinker": "stump", "prs_num": "04", "label": "P4 (Implicit) \u2014 Final causality and modern biology", "problem": "Modern biology operates under a ban on teleological explanation (Mayr's 'teleonomy'), leaving morphogenetic goal-directedness (Levin) philosophically unaccounted for", "resource": "Thomistic hylomorphism: Aquinas's account of formal and final causality, recovered for contemporary philosophy through Stump's analytic Thomism", "solution": "Thomistic formal and final causality provides the philosophical framework within which Levin's morphogenetic teleology is not merely metaphorical but descriptive of real causal structure; teleonomy becomes teleology properly understood", "date": "2026-04-05", "pub_year": 2026, "confidence": "Medium"}, {"id": "stump-PRS-05", "thinker": "stump", "prs_num": "05", "label": "P5 (Implicit) \u2014 Suffering and divine permission", "problem": "The problem of evil \u2014 why a good God permits suffering \u2014 has generated competing theodicies that lack both empirical traction and philosophical rigor within analytic philosophy", "resource": "Stump's Aquinas and Wandering in Darkness: union as the final cause of permitted suffering; God permits suffering as a condition for the deep union that love seeks", "solution": "Suffering is instrumentally permitted for the highest intrinsic good (union with God and persons); not a theodicy of justification but of final causality \u2014 suffering is intelligible through its telos, not despite it", "date": "2026-04-05", "pub_year": 2026, "confidence": "Medium"}, {"id": "stump-PRS-06", "thinker": "stump", "prs_num": "06", "label": "P6 (Implicit) \u2014 Tradition vitality and the MacIntyre criterion", "problem": "How do we distinguish a living, progressive tradition from a degenerate one? And what makes Thomism worth taking seriously in contemporary interdisciplinary discourse?", "resource": "MacIntyre's criterion: a tradition is progressive if it can solve its own problems, identify genuine anomalies, and engage external challenges from a position of internal coherence", "solution": "Stump's work demonstrates Thomism meets the MacIntyre criterion: it has engaged analytic philosophy, cognitive science, and evolutionary biology without dissolving into them \u2014 it is a live, generative tradition", "date": "2026-04-05", "pub_year": 2026, "confidence": "Medium"}, {"id": "stump-PRS-07", "thinker": "stump", "prs_num": "07", "label": "P7 (PROP-2026-04-08-001) \u2014 Narrative cognition and philosophical epistemology", "problem": "Analytic theology has been dominated by propositional argumentation, but many theological traditions transmit their core insights primarily through narrative, and this form of knowledge is philosophically undertheorized", "resource": "Stump and Wolfe's edited volume on \"Biblical Narratives and Human Flourishing\": demonstrating that \"narrative cognition\" is a philosophical category \u2014 knowledge about human flourishing conveyed through and only fully accessible via engagement with specific narratives (not reducible to propositional summaries)", "solution": "A methodology for narrative biblical exegesis that is philosophically rigorous \u2014 enabling analytic theology to engage narrative traditions on their own terms without either reducing them to arguments or abandoning analytical standards", "date": "2026-04-16", "pub_year": 2026, "confidence": "High"}, {"id": "stump-PRS-08", "thinker": "stump", "prs_num": "08", "label": "P8 (PROP-2026-04-08-002) \u2014 Suffering reframed through narrative phenomenology", "problem": "Propositional theodicy cannot capture what biblical narratives know about suffering \u2014 the cognitive form of the knowledge matters, not just the content", "resource": "Stump's \"Grains of Wheat\" (OUP 2024/25): biblical narratives provide a possible-world argument for the compatibility of divine love and permitted suffering \u2014 not as abstract theodicy but as demonstrated through the experiential arc of persons the reader comes to know", "solution": "Biblical narratives enable second-personal narrative knowledge of suffering that is irreducible to propositional argument \u2014 stories teach what arguments cannot, because stories engage both intellect and imagination in the reader's becoming-acquainted with suffering agents", "date": "2026-04-16", "pub_year": 2026, "confidence": "High"}, {"id": "stump-PRS-09", "thinker": "stump", "prs_num": "09", "label": "P9 (PROP-2026-04-13-001) \u2014 Virtue as cooperative causality", "problem": "Contemporary virtue ethics typically treats virtues as stable character traits or habits, but Aquinas's account embeds the virtues within a metaphysics of the soul's powers and their transformation by grace \u2014 this richer framework is underexplored", "resource": "Stump's exposition of Aquinas on the seven cardinal virtues (Thomistic Institute podcast, January 2026): the Holy Spirit perfects the soul's natural powers, enabling the agent to will and act virtuously in a way that is genuinely the agent's own", "solution": "A philosophical psychology of virtue that is simultaneously naturalistic (virtues perfect natural powers) and theological (grace operates within the natural order) \u2014 providing a non-reductive account of moral transformation where agency and div", "date": "", "pub_year": 2020, "confidence": "Medium"}, {"id": "wolfram-PRS-01", "thinker": "wolfram", "prs_num": "01", "label": "P1 (Text, p.452) \u2014 Physics incompatibility", "problem": "Quantum mechanics and general relativity (Q and R) are incompatible in contemporary physics", "resource": "Observer theory via Wolfram Physics: hypergraph rewriting systems from which spacetime and quantum mechanics both emerge as observer-dependent samplings", "solution": "The Wolfram Physics model demonstrates that at least some computational models can explain the requirement for both relativistic and quantum descriptions as consequences of observer-relative sampling of the same underlying hypergraph", "date": "2002-06-01", "pub_year": 2002, "confidence": "High"}, {"id": "wolfram-PRS-02", "thinker": "wolfram", "prs_num": "02", "label": "P2 (Text, pp.52\u201353) \u2014 Computational universe hypothesis", "problem": "Fundamental physics lacks a unifying framework below the Standard Model; string theory and loop quantum gravity have not produced testable predictions", "resource": "Computational irreducibility and hypergraph rewriting: a bottom-up constructive approach to deriving known physics from minimal rules", "solution": "The Wolfram Physics Project: a running, publicly developed computational model that derives general relativity and quantum mechanics and generates new testable predictions about quantum gravity", "date": "2020-06-01", "pub_year": 2020, "confidence": "High"}, {"id": "wolfram-PRS-03", "thinker": "wolfram", "prs_num": "03", "label": "P3 (Text, p.97) \u2014 Research agenda extensions", "problem": "Wolfram's hypergraph model generates physics from computation, but its connection to biology, consciousness, and social systems remains underdeveloped", "resource": "Wolfram's rulial space concept \u2014 the space of all possible computational rules \u2014 as a framework for mapping the landscape of possible minds and possible sciences", "solution": "Extensions of Wolfram Physics into models of biological morphogenesis (connecting to Levin), conscious agent networks (connecting to Hoffman), and tradition-level inquiry (connecting to Loughran's inter-tradition methodology)", "date": "2026-04-03", "pub_year": 2026, "confidence": "High"}, {"id": "wolfram-PRS-04", "thinker": "wolfram", "prs_num": "04", "label": "P4 (Implicit) \u2014 Computational irreducibility and agency", "problem": "Determinism appears to preclude genuine agency: if the future is in principle computable from initial conditions, there is no room for free choice", "resource": "Computational irreducibility: for most computations, including those that model complex agents, the only way to find out what will happen is to run the computation \u2014 there is no shortcut", "solution": "A rigorous basis for genuine novelty and agency within a computational universe: agents are not predictable from outside their own computational trajectory, preserving the integrity of their choices without invoking dualism", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "wolfram-PRS-05", "thinker": "wolfram", "prs_num": "05", "label": "P5 (Implicit) \u2014 Observer-constituted knowledge communities", "problem": "Different intellectual traditions (scientific, philosophical, theological) appear to be accessing incommensurable realities, with no shared basis for adjudication", "resource": "Wolfram's observer-dependent physics: different observers sample the same underlying computation differently, producing genuinely different but mutually consistent descriptions", "solution": "A model for tradition-level inquiry where different traditions are legitimate observer-relative samplings of the same underlying reality \u2014 the basis for Loughran's 'traditions as parallel processing inquiry communities'", "date": "2026-04-03", "pub_year": 2026, "confidence": "Medium"}, {"id": "wolfram-PRS-06", "thinker": "wolfram", "prs_num": "06", "label": "P6 (PROP-2026-04-07-003) \u2014 Computational metaphysics: Ruliad as ontological ground", "problem": "Traditional metaphysics asks \"what ultimately exists?\" but lacks a formal, computational framework for answering the question", "resource": "The Ruliad as a formally defined mathematical object \u2014 the entangled limit of all possible computations \u2014 proposed as the ultimate ontological ground", "solution": "A computational metaphysics: \"what exists\" = the Ruliad; \"what we perceive\" = our observer-slice of it; \"why these laws of physics\" = because observers like us necessarily sample the Ruliad in ways that produce these regularities", "date": "2026-04-07", "pub_year": 2026, "confidence": "High"}, {"id": "wolfram-PRS-07", "thinker": "wolfram", "prs_num": "07", "label": "P7 (PROP-2026-04-07-003) \u2014 Emes as ontological primitives", "problem": "The relationship between abstract mathematical structures and concrete physical reality (\"unreasonable effectiveness of mathematics\") lacks a satisfying explanation", "resource": "\"Emes\" \u2014 ontological primitives with no intrinsic properties except distinctness, from which all structure emerges through relations", "solution": "Mathematics and physics are not separate domains \u2014 both are observer-slices of the same Ruliad; mathematics appears effective because it samples the same underlying structure that physics samples", "date": "2026-04-07", "pub_year": 2026, "confidence": "Medium"}, {"id": "wolfram-PRS-08", "thinker": "wolfram", "prs_num": "08", "label": "P8 (PROP-2026-04-08-007) \u2014 Ruliology as empirical discipline", "problem": "What is the scientific discipline that encompasses the study of the computational universe? Physics, mathematics, and computer science each capture partial aspects, but no unified discipline exists for the systematic study of all possible computational rules", "resource": "Ruliology (Wolfram, 2026): the empirical science of enumerating, executing, and analyzing the behavior of all possible simple programs in the computational universe, conducted through Wolfram Language computational essays", "solution": "Ruliology provides the methodological foundation that unifies the Physics Project, the Ruliad, and computational metaphysics \u2014 establishing that these are empirical, not merely speculative, programs", "date": "2026-04-16", "pub_year": 2026, "confidence": "High"}, {"id": "wolfram-PRS-09", "thinker": "wolfram", "prs_num": "09", "label": "P9 (PROP-2026-04-08-006) \u2014 Computational irreducibility and P vs. NP", "problem": "P vs. NP asks whether problems whose solutions can be quickly verified can also be quickly solved. If P\u2260NP, some computations are irreducibly hard \u2014 no algorithm shortcuts them. Traditional approaches have not resolved this after 50+ years.", "resource": "Ruliological empirical investigation (Wolfram, January 2026): enumerating all simple programs in specific classes and directly observing whether any of them can compute a given function faster than the naive approach, producing proofs of computational irreducibility in restricted but concrete domains", "solution": "Wolfram provides concrete proofs that within specific ruliological program classes, computational irreducibility holds \u2014 grounding irreducibility as a formal result, and providing a new empirical methodology for approaching P vs. NP from the structure of the computational universe", "date": "2026-04-16", "pub_year": 2026, "confidence": "High"}, {"id": "wolfram-PRS-10", "thinker": "wolfram", "prs_num": "10", "label": "P10 (PROP-2026-04-08-007) \u2014 Ruliology as bridge to analytic philosophy", "problem": "Wolfram's computational metaphysics makes strong claims (\"the Ruliad IS what ultimately exists\") but has not been subjected to rigorous engagement with analytic philosophical tradition's tools: formal modal logic, possible worl", "resource": "", "solution": "", "date": "", "pub_year": 2020, "confidence": "Medium"}, {"id": "wright-PRS-01", "thinker": "wright", "prs_num": "01", "label": "P1 \u2014 The epistemological false dichotomy", "problem": "Modern thought oscillates between naive positivism (objective facts speak for themselves) and postmodern relativism (there are no facts, only interpretations), leaving no viable middle ground", "resource": "Critical realism \u2014 the philosophical position that reality exists independently of the knower, but all knowing is perspectival, tradition-embedded, and revisable", "solution": "An epistemology that takes evidence seriously without pretending to a view from nowhere; knowing is always from within a story, but stories can be tested against reality", "date": "1992-06-01", "pub_year": 1992, "confidence": "High"}, {"id": "wright-PRS-02", "thinker": "wright", "prs_num": "02", "label": "P2 \u2014 Faithful improvisation", "problem": "How does a community extend a tradition into circumstances its founders never anticipated, without either rigid repetition or unfaithful innovation?", "resource": "The five-act drama hermeneutic \u2014 the biblical narrative as an unfinished play in which the present community must improvise the final act", "solution": "Faithful improvisation requires deep immersion in the preceding acts (the tradition's internal logic) and creative responsiveness to the present scene; this is neither fundamentalism nor liberalism but a third way", "date": "2005-06-01", "pub_year": 2005, "confidence": "High"}, {"id": "wright-PRS-03", "thinker": "wright", "prs_num": "03", "label": "P3 \u2014 Inaugurated eschatology", "problem": "How should a community understand its present moment \u2014 as a continuation of the past, a break from it, or something else entirely?", "resource": "The theological concept of inaugurated eschatology \u2014 the decisive event has already occurred, but its full implications are still being worked out", "solution": "The present is neither mere repetition nor blank slate; it is the space between the decisive insight and its full elaboration \u2014 a framework applicable to research programs as well as theology", "date": "2026-04-29", "pub_year": 2026, "confidence": "High"}, {"id": "wright-PRS-04", "thinker": "wright", "prs_num": "04", "label": "P4 \u2014 Resurrection as historical and cosmological", "problem": "Modern historiography excludes in principle any event that does not conform to naturalistic assumptions, making certain historical questions undecidable by methodological fiat", "resource": "Wright's historical argument for the bodily resurrection of Jesus as the best explanation of the available evidence, using the same criteria applied to any other historical claim", "solution": "If the evidence warrants it, historical method must be willing to consider explanations that exceed the naturalistic framework \u2014 a direct challenge to Carroll's Core Theory completeness", "date": "2026-04-29", "pub_year": 2026, "confidence": "Medium"}];
+var CROSS_CONNECTIONS = [{"id": "CROSS-001", "question": "Is consciousness substrate-independent?", "programs": "Levin Agent, Friston Agent, Hawkins Agent, Kastrup Agent, Hoffman Agent", "nature": "convergence (5 programs touch this \u2014 potential fundamental problem)", "notes": "Levin says yes (bioelectric cognition). Friston formalizes it mathematically. Hawkins models it in cortex but implies generalizability. Kastrup says yes \u2014 consciousness is the only substrate. Hoffman says yes \u2014 consciousness is the layer beneath the interface. This is the highest-density cross-program question in the network."}, {"id": "CROSS-002", "question": "Is spacetime fundamental?", "programs": "Wolfram Agent, Arkani-Hamed Agent, Carroll Agent, Hoffman Agent", "nature": "convergence with tension", "notes": "Wolfram (hypergraph), Arkani-Hamed (amplituhedron), and Hoffman (interface theory) all argue spacetime is not fundamental. Carroll is more conservative \u2014 he accepts spacetime as emergent but real. Tension between Arkani-Hamed's mathematical approach and Hoffman's cognitive/evolutionary approach may be the most interesting version of this question."}, {"id": "CROSS-003", "question": "What is the role of attention in constructing reality?", "programs": "McGilchrist Agent, Friston Agent, Hoffman Agent, Fredrickson Agent", "nature": "structural analogy with potential explanatory bridge", "notes": "McGilchrist (hemispheric attention), Friston (precision-weighted prediction = attention), Hoffman (perception as fitness-tuned interface = attention shapes what we see), Fredrickson (positive states broaden attentional scope). These four may be describing the same phenomenon at different levels of analysis."}, {"id": "CROSS-004", "question": "What enables mature understanding of a rival tradition?", "programs": "Stump Agent, McGilchrist Agent, Fredrickson Agent", "nature": "convergence \u2014 all three bear on the C2A2 second-first-language question", "notes": "Stump (deep immersion in a tradition's texts and practices \u2014 MacIntyre's method). McGilchrist (right-hemisphere openness to the whole before left-hemisphere analysis). Fredrickson (positive emotions broaden cognitive scope, enabling perspective-taking). Together these may constitute an empirical theory of what second-first-language competence requires."}, {"id": "CROSS-005", "question": "Is love/positivity resonance/union a fundamental category?", "programs": "Fredrickson Agent, Stump Agent, Kastrup Agent", "nature": "deep structural analogy \u2014 potentially explanatory bridge", "notes": "Fredrickson (positivity resonance as micro-moments of love \u2014 biologically measurable). Stump (God permits suffering as a condition for deep personal union \u2014 love as ontological union). Kastrup (individual minds are dissociated alters of universal consciousness \u2014 love as re-integration). All three center love/union as a fundamental category, not merely a feeling.\n\n---"}, {"id": "CROSS-006", "question": "Does Friston's Free Energy Principle formally describe what Levin observes in bioelectric morphogenesis?", "programs": "Levin Agent, Friston Agent", "nature": "structural homology \u2014 same mathematical formalism applied at different biological scales", "notes": "Levin's PRS-03 (morphological attractor formalism) explicitly uses free energy and Lagrangian frameworks borrowed from FEP. This is not analogical \u2014 it is the same mathematical object. If confirmed, it means FEP is a substrate-independent law of self-organization, not merely a neural theory. This would significantly expand the reach of Friston's program and ground Levin's morphogenetic formalism i"}, {"id": "CROSS-007", "question": "Is basal cognition (Levin) a concrete instantiation of active inference (Friston)?", "programs": "Levin Agent, Friston Agent", "nature": "explanatory bridge \u2014 Friston may answer the mechanism question Levin leaves open", "notes": "Levin demonstrates goal-directed behavior in non-neural bioelectric networks without fully formalizing the mechanism. Friston's active inference provides a process model: systems minimize free energy by updating internal models or acting on the environment. If bioelectric networks ARE active inference systems, this is a genuine explanatory bridge \u2014 not two programs using similar language, but one "}, {"id": "CROSS-008", "question": "Does Thomistic final causality (Stump/Aquinas) provide the philosophical framework that Levin's morphogenetic teleology requires?", "programs": "Levin Agent, Stump Agent", "nature": "deep structural analogy \u2014 potentially explanatory bridge in the philosophical direction", "notes": "Levin's empirical program describes cells acting toward forms not yet realized \u2014 which is a description of final causality in Aristotle's sense. Stump's recovery of Thomistic hylomorphism offers a philosophical framework that can accommodate this teleological data without reducing it to efficient-causal mechanism. This connection matters for C2A2 directly: if Thomism can ground modern biology's mo"}, {"id": "CROSS-009", "question": "Does Friston's precision-weighted prediction formalize McGilchrist's hemispheric attention asymmetry?", "programs": "Friston Agent, McGilchrist Agent", "nature": "structural analogy \u2014 both describe attentional selection as evidence weighting in a predictive system", "notes": "McGilchrist's right hemisphere (broad, contextual, low-precision) and left hemisphere (focused, analytic, high-precision) map onto Friston's precision-weighted priors and posteriors. Both describe attentional selection as a form of evidence weighting, not passive reception. If confirmed, FEP provides the mathematical formalism for what McGilchrist describes phenomenologically \u2014 Friston explains th"}, {"id": "CROSS-010", "question": "Is Fredrickson's positivity resonance the biophysiological implementation of collective active inference?", "programs": "Friston Agent, Fredrickson Agent", "nature": "convergence \u2014 two programs describing the same phenomenon at different levels of analysis", "notes": "Friston's collective active inference predicts that agents minimizing joint free energy will exhibit physiological coupling. Fredrickson measures exactly this coupling: vagal synchrony, oxytocin co-release, neural entrainment during positivity resonance. If FEP is correct, positivity resonance is the empirical signature of collective free energy minimization. This gives the Fredrickson program a m"}, {"id": "CROSS-011", "question": "Is Hawkins's HTM a specific cortical implementation of Friston's FEP?", "programs": "Friston Agent, Hawkins Agent", "nature": "structural analogy \u2014 HTM predictive coding as FEP at cortical scale", "notes": "HTM's prediction-error-minimizing cortical columns and FEP's prediction-error-minimizing active inference agents are structurally equivalent. FEP was partly inspired by HTM; HTM provides the most detailed biological implementation of what FEP predicts. Together they constitute a two-level account of intelligence: FEP provides the mathematical framework, HTM provides the implementation architecture"}, {"id": "CROSS-012", "question": "Are Hoffman's conscious agents and Levin's basal cognition the same thing at different biological scales?", "programs": "Hoffman Agent, Levin Agent", "nature": "convergence \u2014 substrate-independent agency described at cell level (Levin) and in formal mathematics (Hoffman)", "notes": "Levin's xenobots (living cells reprogrammed into novel body plans with goal-directed behavior) satisfy Hoffman's conscious agent criterion: they have perception, decision, and action loops. Both programs conclude that agency and consciousness are substrate-independent. Together they constitute an empirical (Levin) + mathematical (Hoffman) case for consciousness at every scale of biological organiz"}, {"id": "CROSS-013", "question": "Does McGilchrist's corpus callosotomy data provide empirical confirmation of Hoffman's conscious agent integration claim?", "programs": "Hoffman Agent, McGilchrist Agent", "nature": "explanatory bridge \u2014 neuroscience confirming mathematical claim", "notes": "Hoffman's mathematics predicts that multiple conscious agents can integrate into higher-order unified agents. McGilchrist's split-brain data shows exactly this: when hemispheres are severed, two independent conscious agents operate; when connected, a single unified self emerges. This is the empirical proof of concept for Hoffman's mathematical claim. HIGH PRIORITY \u2014 this is a cross-tradition confi"}, {"id": "CROSS-014", "question": "Are Hoffman's Conscious Realism and Kastrup's analytic idealism the same fundamental theory approached from different directions?", "programs": "Hoffman Agent, Kastrup Agent", "nature": "deep convergence \u2014 both consciousness-first, different derivations", "notes": "Both conclude that consciousness is ontologically primary and matter is derivative. Hoffman's derivation is mathematical/evolutionary (ITP, conscious agent networks); Kastrup's is philosophical/phenomenological (hard problem, analytic argument). If their formal structures are equivalent, this would be the Consciousness Cluster's unified position statement. A formal comparison of their ontologies i"}, {"id": "CROSS-015", "question": "Is Hawkins's Thousand Brains the neural-scale implementation of Levin's multi-scale cellular intelligence?", "programs": "Hawkins Agent, Levin Agent", "nature": "structural analogy \u2014 multi-agent distributed cognition at neural vs. cellular scale", "notes": "Both programs describe intelligence as the emergent product of distributed parallel agents voting: Levin's bioelectric cell communities and Hawkins's cortical columns. Neither requires a central homunculus. Together they constitute a two-level empirical case for distributed multi-agent cognition as the general architecture of biological intelligence from cell to brain."}, {"id": "CROSS-016", "question": "Does Wolfram Physics meet Carroll's Bayesian theory-confirmation standard?", "programs": "Carroll Agent, Wolfram Agent", "nature": "methodological challenge \u2014 the most important meta-scientific question in the Post-Spacetime Cluster", "notes": "Carroll requires that novel theories demonstrate tangible explanatory gains over established physics with at least one distinguishing empirical prediction. Wolfram Physics has not yet produced such a prediction. This is not a refutation but a status assignment: Wolfram Physics is a research program pending confirmation. Identifying a specific empirical prediction is Wolfram Agent's most urgent tas"}, {"id": "CROSS-017", "question": "Are Wolfram's hypergraph and Arkani-Hamed's amplituhedron different windows on the same pre-geometric structure?", "programs": "Wolfram Agent, Arkani-Hamed Agent", "nature": "structural analogy \u2014 both derive spacetime from pre-geometric mathematical objects", "notes": "Wolfram derives spacetime from hypergraph rewriting (computational); Arkani-Hamed derives scattering amplitudes from positive geometry (mathematical). Both dispense with spacetime as an input. Whether the hypergraph rewriting rules and the positive geometry of the Grassmannian are related mathematical objects is the Post-Spacetime Cluster's central open question \u2014 and potentially its major unifica"}, {"id": "CROSS-018", "question": "Is Fredrickson's positivity resonance the biological measurement of Stump's Thomistic union?", "programs": "Fredrickson Agent, Stump Agent", "nature": "deep structural analogy \u2014 empirical and metaphysical descriptions of the same phenomenon", "notes": "Stump describes love/union as the ontological orientation of intellect and will toward the good of the other and ultimately toward God \u2014 the highest final cause. Fredrickson measures love as a biophysiological coupling event (positivity resonance). These are not competing accounts but complementary levels of description: Fredrickson measures what Stump describes metaphysically. This has direct imp"}, {"id": "CROSS-019", "question": "Does Thomistic final causality (Stump/Aquinas) provide the philosophical grounding for Levin's morphogenetic teleology?", "programs": "Stump Agent, Levin Agent", "nature": "explanatory bridge \u2014 philosophical grounding for empirical teleology (reinforces CROSS-008, now bidirectional)", "notes": "CROSS-008 flagged this from the Levin side; the Stump Agent now confirms from the philosophical side. Stump's analytic Thomism provides the framework within which Levin's data is not metaphorical but metaphysically accurate: final causality (the not-yet-realized form that attracts efficient causes) is precisely what Levin observes in morphogenetic goal-seeking. This is an explanatory bridge in the"}, {"id": "CROSS-020", "question": "Is McGilchrist's right-hemisphere openness the neurological description of what MacIntyre/Stump require for second-first-language competence?", "programs": "McGilchrist Agent, Stump Agent", "nature": "convergence \u2014 neurological and philosophical descriptions of the same cognitive posture", "notes": "MacIntyre's second-first-language requirement (deep inhabiting of another tradition's practices and forms of life before critical evaluation) and McGilchrist's right-hemisphere mode (holistic, relational, contextual attention to the whole before left-hemisphere analysis) are convergent descriptions. McGilchrist provides the neurological substrate for what MacIntyre demands philosophically. This is"}, {"id": "CROSS-021", "question": "Is Wolfram's observer-dependent spacetime the computational equivalent of Hoffman's fitness interface?", "programs": "Wolfram Agent, Hoffman Agent", "nature": "structural analogy \u2014 both describe spacetime as observer-constructed, different mechanisms", "notes": "Wolfram: spacetime is what a computational observer samples from the hypergraph. Hoffman: spacetime is the fitness-tuned interface that conscious agents construct for survival-relevant perception. Both deny that spacetime is a mind-independent given. The difference: Wolfram's observer is a computational sampler; Hoffman's is a conscious agent. Whether these converge \u2014 whether conscious agents are "}, {"id": "CROSS-022", "question": "Does Kastrup's consciousness-first ontology align with Thomistic intellectual primacy?", "programs": "Kastrup Agent, Stump Agent", "nature": "convergence \u2014 idealism and Thomism both insist on the primacy of intellect/mind over matter", "notes": "Aquinas insisted on the primacy of intellect (the formal principle) over matter (the material principle) \u2014 form is ontologically prior, matter is potentiality ordered toward form. Kastrup's analytic idealism insists on the primacy of consciousness over matter. These are not identical claims but they share the fundamental rejection of matter-first ontology. For C2A2's DCEC paper, the Thomistic prec"}, {"id": "CROSS-023", "question": "Does Carroll's engagement with observer-centric quantum gravity (Harlow framework) narrow the gap between the Post-Spacetime and Consciousness Clusters?", "programs": "Carroll Agent, Wolfram Agent, Hoffman Agent", "nature": "convergence \u2014 the network's most conservative voice now engaging with observer-dependent frameworks", "notes": "Harlow and collaborators propose treating the observer as classical and mathematically special within quantum gravity \u2014 a \"precise Copenhagen.\" This structurally converges with Wolfram (observer-dependent Ruliad sampling) and Hoffman (conscious agent as ontologically primary). Carroll is not endorsing consciousness-first ontology, but he is taking observer-dependence seriously at the foundational "}, {"id": "CROSS-024", "question": "Does Wolfram's \"Metaphysics and the Ruliad\" provide the ontological framework within which Arkani-Hamed's positive geometry operates?", "programs": "Wolfram Agent, Arkani-Hamed Agent", "nature": "deepening structural analogy \u2014 Wolfram now offers metaphysical account of pre-geometric structure", "notes": "Wolfram's February 2026 essay introduces \"emes\" (ontological primitives with only distinctness) and positions the Ruliad as the answer to \"what ultimately exists.\" This advances CROSS-017 by providing the metaphysical scaffolding: if the Ruliad is the ontological ground and emes are its raw material, then Arkani-Hamed's positive geometry may be a specific mathematical window onto the same structur"}, {"id": "CROSS-025", "question": "Does Friston's formal substrate-independence proof confirm that Levin's bioelectric networks ARE active inference systems?", "programs": "Friston Agent, Levin Agent", "nature": "explanatory bridge \u2014 CONFIRMED (upgrades CROSS-006 and CROSS-007)", "notes": "The 2026 Friston review paper formally derives that Markov blanket conditions are substrate-agnostic and explicitly models morphogenesis as active inference citing Levin's bioelectric work (Section 4.1). This confirms what CROSS-006 and CROSS-007 hypothesized: FEP is not a neural theory that happens to apply to cells \u2014 it IS a substrate-independent law of self-organization, and Levin's bioelectric"}, {"id": "CROSS-026", "question": "Does Wolfram's observer-dependent Ruliad sampling converge with Hoffman's fitness-tuned interface at the metaphysical level?", "programs": "Wolfram Agent, Hoffman Agent, Kastrup Agent", "nature": "deepening convergence \u2014 Wolfram's metaphysical essay brings three consciousness-adjacent programs closer", "notes": "Wolfram now says: \"what exists\" = the Ruliad; \"what we perceive\" = our observer-slice. Hoffman says: \"what exists\" = conscious agents; \"what we perceive\" = our fitness interface. Kastrup says: \"what exists\" = universal consciousness; \"what we perceive\" = our dissociated alter's perspective. All three say perception is observer-constructed and reality is deeper than what we perceive. Whether the Ru"}, {"id": "CROSS-027", "question": "Does Kastrup's dissociative boundary (individual alter / universal consciousness) map formally onto Friston's Markov blanket \u2014 are they describing the same boundary dynamics at different levels of description?", "programs": "Kastrup Agent, Friston Agent", "nature": "potential formal equivalence \u2014 the strongest explanatory bridge candidate in the current network", "notes": "Kastrup (psychopathology essay, Jan 2026) reframes mental disorders as disturbances in the dissociative boundary between the individual alter and universal consciousness. Friston's FEP defines every agent by its Markov blanket \u2014 the statistical boundary between internal states and the environment. If Markov blankets ARE the formal structure of Kastrup's dissociative boundaries, then FEP and analyt"}, {"id": "CROSS-028", "question": "Does the Levin & Resnik continuity thesis (unicellular\u2192human goal-directedness) provide empirical support for Kastrup's dissociation model \u2014 if goal-directedness is universal, each cognitive agent may be a dissociated instance of a universal cognitive field?", "programs": "Levin Agent, Kastrup Agent", "nature": "convergence \u2014 empirical universality of cognition supports ontological universality of consciousness", "notes": "Levin & Resnik (2026) argue for no categorical break between unicellular and human goal-directedness \u2014 cognition is graded, not binary. If this is correct, and cognition is a property of all living systems regardless of substrate, then the most parsimonious ontological explanation is that cognitive agency is a fundamental feature of reality \u2014 exactly Kastrup's claim. The Levin empirical program (d"}, {"id": "CROSS-029", "question": "Does McGilchrist's \"creative dance between division and union\" (Sophia Lectures 2026) describe the same process as Levin's morphogenetic integration \u2014 both produce a \"third thing\" qualitatively beyond what either component alone could generate?", "programs": "McGilchrist Agent, Levin Agent", "nature": "structural homology \u2014 hemispheric synthesis and morphogenetic integration as instances of the same integrative dynamics", "notes": "McGilchrist (Sophia Lectures, Lecture 1) argues that the right hemisphere does not simply override the left but draws it into a higher synthesis \u2014 a third thing neither could produce alone. Levin's morphogenetic integration shows the same pattern: individual cells pursuing their local goals are coordinated by bioelectric fields into a collective body plan that neither cell alone \"knows.\" Both desc"}, {"id": "CROSS-030", "question": "Does Arkani-Hamed's UNIVERSE+ positive geometry program (Les Houches 2026) advance toward the same post-spacetime structure as Wolfram's Ruliad from a different mathematical direction?", "programs": "Arkani-Hamed Agent, Wolfram Agent", "nature": "deepening convergence \u2014 UNIVERSE+ program advances positive geometry into cosmological correlators, moving closer to Wolfram's \"all possible computations\" framework", "notes": "The UNIVERSE+ School's explicit scope (\"combinatorics and geometry of quantum mechanics AND spacetime\") signals that Arkani-Hamed's program is now targeting the same unification that Wolfram pursues: a single mathematical language for all of fundamental physics without spacetime as a starting point. Wolfram reaches this via computational/graphical structures (the Ruliad); Arkani-Hamed via combinat"}, {"id": "CROSS-031", "question": "Does McGilchrist's account of asymmetry (Sophia Lectures 2026: asymmetry as fundamental to life and beauty) converge with Friston's FEP (which requires asymmetric sensory/active states) and with Wolfram's observer-dependent Ruliad sampling?", "programs": "McGilchrist Agent, Friston Agent, Wolfram Agent", "nature": "multi-cluster convergence \u2014 asymmetry as a structural feature across three very different programs", "notes": "McGilchrist (Sophia Lectures, Lecture 2) argues that asymmetry is fundamental throughout the cosmos, especially in life and beauty. Friston's FEP requires that sensory states and active states be asymmetrically related (the Markov blanket is an asymmetric statistical boundary). Wolfram's observer-dependent Ruliad means that different computational observers sample the same underlying structure asy"}, {"id": "CROSS-032", "question": "Does Hoffman's trace logic formally subsume Friston's Markov blanket formalism \u2014 making FEP a special case of conscious agent dynamics?", "programs": "Hoffman Agent, Friston Agent", "nature": "explanatory bridge \u2014 formal subsumption (Hoffman generalizes Friston)", "notes": "Hoffman demonstrates that trace blankets (boundary structures induced by trace order on interacting agent systems) generalize Markov blankets from directed acyclic graphs to Markov chains (cyclic graphs with probability labels). This means Friston's active inference is a limiting description of trace-logic dynamics. The implications cascade: (1) FINDING-009 (Kastrup \u00d7 Friston Markov blanket = diss"}, {"id": "CROSS-033", "question": "Is Hoffman's trace logic a form of quantum logic \u2014 and does this provide the formal bridge between conscious agent networks and Arkani-Hamed's positive geometries?", "programs": "Hoffman Agent, Arkani-Hamed Agent, Wolfram Agent", "nature": "structural bridge \u2014 trace logic IS quantum logic (Birkhoff-von Neumann) in the relevant structural sense", "notes": "The non-Boolean global / locally Boolean structure of trace logic is precisely the structure of quantum logic. Hoffman proposes that trace-logic agent networks could be the \"positive geometry\" that Arkani-Hamed's program is describing. If confirmed, this would be the formal bridge between the Consciousness Cluster and the Post-Spacetime Cluster: physics (positive geometry) IS consciousness dynamic"}, {"id": "CROSS-034", "question": "Does Hoffman's \u03bb\u2082 intelligence metric connect formally to Levin's measure K \u2014 and does trace logic provide the mathematical framework for Levin's empirical collective intelligence?", "programs": "Hoffman Agent, Levin Agent", "nature": "convergence \u2014 mathematical framework meets empirical biology; Levin hosted the talk", "notes": "Hoffman explicitly connects \u03bb\u2082 (second-largest eigenvalue of a Markov matrix) to Levin's K intelligence metric via a simple equation. The trace-logic community structure (nested Markov sub-communities with different convergence rates) maps onto Levin's multi-scale biological intelligence (cells \u2192 tissues \u2192 organs \u2192 organisms). Levin's hosting of this talk is itself a cross-tradition event: the mat"}, {"id": "CROSS-035", "question": "Does Hoffman's claim that \"enhanced Markov chain eigenfunctions = quantum wave functions\" provide a consciousness-first derivation of quantum mechanics \u2014 and how does this relate to Wolfram's computational derivation?", "programs": "Hoffman Agent, Wolfram Agent, Carroll Agent", "nature": "convergence \u2014 two independent derivations of QM from non-spacetime foundations (consciousness vs. computation)", "notes": "If Hoffman can derive quantum mechanics from trace-logic dynamics of conscious agents, and Wolfram derives quantum mechanics from hypergraph rewriting, these would be two independent derivations of QM from non-spacetime foundations. Carroll's Bayesian standard (CROSS-016) applies to both. The convergence question: are conscious agents (Hoffman) and computational observers (Wolfram) two description"}, {"id": "CROSS-036", "question": "Does Levin's search efficiency metric formally unify with Friston's free energy minimization?", "programs": "Levin Agent, Friston Agent", "nature": "structural equivalence \u2014 explicit unification claim at mathematical level", "notes": "Batch 1 analysis identifies search efficiency (gap between actual and optimal minimal-entropy behavior) as structurally equivalent to free energy minimization. Paper proposes explicit cross-tradition claim: search efficiency metric IS special case of FEP. If confirmed, this upgrades CROSS-006 and CROSS-025 from \"substrate-agnostic law\" to \"unified mathematical object at every scale.\" This provides"}, {"id": "CROSS-037", "question": "Does the minimal consciousness + neurobots + bioelectric self-models chain establish cells as minimally conscious?", "programs": "Friston Agent, Levin Agent, Kastrup Agent", "nature": "formal chain \u2014 paradigm shift candidate", "notes": "Batch 1 identifies three-paper formal chain: FEP is substrate-agnostic (PROP-2026-04-08-007) \u2192 morphogenesis satisfies FEP conditions (PRS-07, PRS-08) \u2192 minimal consciousness implicit in FEP mathematics (PROP-2026-04-08-007) \u2192 cells may be minimally conscious. Requires Kastrup synthesis (consciousness as fundamental). This is the deepest validation yet of Levin's entire program: empirical basal co"}, {"id": "CROSS-038", "question": "Do Hoffman's Quantum Interface Theory and Kastrup's Analytic Idealism describe the same consciousness-first ontology?", "programs": "Hoffman Agent, Kastrup Agent", "nature": "convergence \u2014 both consciousness-first frameworks now with peer-reviewed mathematical backing", "notes": "Batch 1 flags that QIT (Conscious Realism + QIT peer-reviewed 2026) + Analytic Idealism now both have formal frameworks making identical move: matter is derivative of consciousness. QIT has evolutionary/mathematical derivation; Kastrup has phenomenological/idealist derivation. Previously identified convergence (CROSS-014) is now strengthened by QIT's formal status upgrade. This may be the Consciou"}, {"id": "CROSS-039", "question": "Is Friston's Free Energy Principle a special case of Hoffman's Quantum Interface Theory?", "programs": "Friston Agent, Hoffman Agent", "nature": "deep structural question \u2014 determines foundational ontology", "notes": "Batch 1 raises critical question: if entanglement and superposition are interface artifacts (Hoffman/QIT), then FEP agents operating under quantum uncertainty operate within the interface, not in physical world. Deep structural question: is FEP special case of QIT? Or does FEP ground QIT? Determines whether information-first (Friston) or consciousness-first (Hoffman) is foundational. Central to Co"}, {"id": "CROSS-040", "question": "Does Friston's Cortical Messaging Protocol implement variational message passing between Markov blankets?", "programs": "Friston Agent, Hawkins Agent", "nature": "mechanistic discovery \u2014 formal description of neurobiological implementation", "notes": "Batch 2 identifies that CMP (inter-column communication in Thousand Brains) is concrete implementation of message passing in variational inference framework. Each dispatch between modules is variational message \u2014 approximate posterior passed between Markov blankets. Deepens Friston \u00d7 Hawkins connection (CROSS-011) beyond \"both involve prediction loops\" to explicit mathematical implementation. Prov"}, {"id": "CROSS-041", "question": "Is right-hemisphere engagement (McGilchrist) the neurobiological substrate for intellectual humility (Fredrickson RCT)?", "programs": "McGilchrist Agent, Fredrickson Agent", "nature": "convergence \u2014 empirical and neurological descriptions of same cognitive posture", "notes": "Batch 2 flags that intellectual humility (capacity to hold one's views with epistemic openness) is the cognitive posture McGilchrist associates with right-hemisphere engagement. Fredrickson's RCT provides empirical confirmation via weak-tie positivity resonance cultivating intellectual humility. Both converge on claim that genuine encounter with otherness opens broader attentional mode. High direc"}, {"id": "CROSS-042", "question": "Are cortical columns (Hawkins) functionally equivalent to Kastrup's dissociated alters in Analytic Idealism?", "programs": "Hawkins Agent, Kastrup Agent", "nature": "structural homology \u2014 same dissociation-integration dynamics at cortical scale", "notes": "Batch 2 identifies that cortical columns are alters within single brain (Thousand Brains architecture). Each column maintains independent processing; consciousness at brain level emerges from integration via voting/consensus mechanism \u2014 exactly Kastrup's dissociation-integration model at cortical scale. This extends Kastrup's framework downward: same dissociation-integration dynamic operates at ev"}, {"id": "CROSS-043", "question": "Are Hawkins's reference frames (cortical) Hoffman's fitness-tuned interfaces?", "programs": "Hawkins Agent, Hoffman Agent", "nature": "mechanistic bridge \u2014 evolutionary/philosophical argument meets neurobiological implementation", "notes": "Batch 2 identifies previously unrecognized bridge: Reference frames ARE interfaces, implemented in cortical hardware. Both frameworks agree: (a) brain builds not picture of reality but useful model; (b) model structured by agent's needs, not world's structure; (c) action essential to model construction. Hoffman provides evolutionary/philosophical argument for WHY reference frames are interfaces (f"}, {"id": "CROSS-044", "question": "Is C2A2 structurally isomorphic to Hawkins's Thousand Brains architecture?", "programs": "C2A2 (meta), Hawkins Agent", "nature": "architectural homology \u2014 design blueprint identified", "notes": "Batch 2 identifies that C2A2 has identical structure as Thousand Brains: tradition agents = learning modules; PRS triplets = reference frames; dispatch system = CMP; Pattern Detector = voting mechanism; ingest\u2192extract\u2192dispatch\u2192integrate = sensorimotor learning loop. Immediate design implications: (1) dispatches should include \"location\" in tradition's reference frame; (2) explicit voting/consensus"}, {"id": "CROSS-045", "question": "Is positivity resonance with strangers (Fredrickson) the mechanism enabling C2A2 success across rival traditions?", "programs": "Fredrickson Agent, C2A2 (meta)", "nature": "mechanism identification \u2014 empirical validation of C2A2 core methodology", "notes": "Batch 2 identifies that inter-tradition dialogue = dialogue between \"strangers\" to each other's paradigms. Fredrickson's RCT evidence shows weak-tie positivity resonance produces intellectual humility. C2A2 must deliberately build: (1) trust infrastructure (shared norms, transparent governance, visible fairness); (2) structural conditions (address inequality, enable relational mobility); (3) liste"}, {"id": "CROSS-046", "question": "Does embodied, aesthetic, and contemplative transmission have structural limits in C2A2's wiki-based architecture?", "programs": "McGilchrist Agent, C2A2 (meta)", "nature": "scope limitation \u2014 identifies what wiki-based system cannot represent", "notes": "Batch 2 flags that some tradition-knowledge transmits only through embodied communal practice. McGilchrist's account suggests C2A2's wiki-based accelerator can scaffold entry and second-language fluency but not full transmission. AI agents should be explicit about representable vs. requiring-community dimensions. Additionally: AI agents may have structural limits on genuine participation \u2014 they ca"}, {"id": "CROSS-047", "question": "Does Arkani-Hamed's Matryoshka structure (combinatorial polytopes) converge with Wolfram's Ruliad (nested computational rules)?", "programs": "Arkani-Hamed Agent, Wolfram Agent", "nature": "convergence \u2014 strongest post-spacetime unification signal", "notes": "Batch 3 identifies that Arkani-Hamed's cosmohedron (polytope-in-polytope X-in-Y structures) and Wolfram's Ruliad (rules-within-rules nested structure) are converging on same post-spacetime structure from different mathematical directions. Both programs independently claim large-scale universe structure emerges from pre-geometric combinatorial objects. This is the highest-confidence post-spacetime "}, {"id": "CROSS-048", "question": "Are observer-centric quantum gravity frameworks (Carroll/Arkani-Hamed) moving toward consciousness-first ontology?", "programs": "Carroll Agent, Arkani-Hamed Agent, Hoffman Agent, Wolfram Agent", "nature": "convergence \u2014 network's most conservative voice engaging with observer-dependence", "notes": "Batch 3 identifies that Carroll (in Harlow framework) and Arkani-Hamed (kinematic flow / boundary-defined physics) both treat observers or boundary conditions as architecturally primary. Physics computable from boundary (observer-accessible) data, not bulk (unobservable) states. This narrows gap between Post-Spacetime and Consciousness Clusters. Carroll not endorsing consciousness-first, but takin"}, {"id": "CROSS-049", "question": "Is Wolfram's computational irreducibility the physical foundation for why Friston's free energy minimization is necessary?", "programs": "Wolfram Agent, Friston Agent", "nature": "foundational grounding \u2014 explains necessity of approximate inference", "notes": "Batch 3 identifies that computational irreducibility (some processes cannot be computed faster than running them) grounds necessity of approximate inference. If world were computationally reducible, perfect prediction would be achievable; FEP would be unnecessary. Wolfram's irreducibility proofs provide physical foundation for why free energy minimization is necessary at every scale. Reverses trad"}, {"id": "CROSS-050", "question": "Does Carroll's emergence taxonomy (Type-0/1/2 classification) provide unified vocabulary for consciousness-emergence debates?", "programs": "Carroll Agent, Levin Agent, Friston Agent, Kastrup Agent", "nature": "methodological backbone \u2014 classification system for entire network", "notes": "Batch 3 identifies that Carroll's \"What Emergence Can Possibly Mean\" provides vocabulary for entire C2A2 network. Applications: Is morphogenetic top-down causation Type-1 or Type-2 (Levin)? Is multi-scale active inference Type-1 or Type-2 (Friston)? Is idealism an inversion of Carroll's hierarchy \u2014 what Carroll calls emergent, Kastrup calls dissociated (Kastrup)? This paper is the shared classific"}, {"id": "CROSS-051", "question": "Is narrative epistemology (Stump) the philosophical framework for what Fredrickson measures as positivity resonance?", "programs": "Stump Agent, Fredrickson Agent", "nature": "convergence \u2014 narrative philosophy meets neuroscience of flourishing", "notes": "Batch 3 identifies that Stump's narrative epistemology (knowledge requires personal, relational encounter) and Fredrickson's positivity resonance (biophysiological coupling in micro-moments of synchrony) are complementary descriptions of same phenomenon. Both asking what conditions enable flourishing. Stump provides narrative framework; Fredrickson provides neurobiological measurement. For C2A2: c"}, {"id": "CROSS-052", "question": "Is Stump's narrative epistemology (second-personal knowing) structurally identical to McGilchrist's right-hemisphere knowing?", "programs": "Stump Agent, McGilchrist Agent", "nature": "structural identity \u2014 narrative cognition and hemispheric knowing describe same process", "notes": "Batch 3 identifies structural identity: Stump's \"second-personal narrative knowledge\" (knowledge through personal encounter with a tradition's texts, practices, people) = McGilchrist's right-hemisphere knowing (holistic, contextual, participatory mode attending to the whole). Both describe a mode of knowing prior to and richer than analytical decomposition. Deepens CROSS-004 (what enables second-f"}, {"id": "CROSS-053", "question": "Is Stump's edited volume on biblical narratives (multi-tradition collaborative inquiry) a concrete implementation model for C2A2 methodology?", "programs": "Stump Agent, MacIntyre Agent, C2A2 (meta)", "nature": "direct implementation \u2014 previous impossible now possible", "notes": "Batch 3 identifies that Stump's edited volume IS concrete model of tradition-accelerator methodology: multi-tradition collaborative inquiry on shared texts. Directly relevant to Tom Loughran's ISMcI paper argument: what was \"previously impossible\" in inter-tradition dialogue is now possible with right methodology. Shows that C2A2's theoretical architecture can be instantiated in practice. Provides"}, {"id": "CROSS-054", "question": "Does Kastrup's Analytic Idealism provide framework for integrating consciousness science (IIT) with consciousness-first ontology?", "programs": "Kastrup Agent, Koch Agent (via IIT)", "nature": "bridging foundational claims with empirical consciousness science", "notes": "Batch 3 identifies that Analytic Idealism needs interface with measurement frameworks (\u03a6, integrated information via Koch's IIT). Possibility: high-\u03a6 states = porous dissociative boundaries; dissociation degree \u221d integrated information. IIT provides empirically grounded consciousness science; Analytic Idealism needs to interface with it. Convergence of psychedelic experiences (suggest shared consc"}];
+var FINDINGS = [{"id": "FINDING-001", "date": "2026-04-04", "programs": "Levin Agent, Friston Agent", "type": "Structural homology \u2014 approaching Explanatory bridge", "finding": "The free energy minimization framework used in Levin's morphogenetic attractor formalism (PRS-03) and Friston's FEP are the same mathematical structure applied at different biological scales. This is not vocabulary analogy \u2014 both invoke the Lagrangian variational principle and describe self-organizing systems as minimizing a scalar objective over a state space. The structural homology is confirmed. Whether this is merely mathematical co-incidence (both programs borrowing from physics) or a genuine indicator that FEP is substrate-independent requires the Friston Agent to confirm whether FEP's d"}, {"id": "FINDING-002", "date": "2026-04-04", "programs": "Levin Agent, Friston Agent", "type": "Explanatory bridge candidate \u2014 high priority", "finding": "Levin's open question (PRS-04: what is the mechanism of non-neural cognition?) maps exactly onto the question Friston's active inference answers: self-organizing systems minimize free energy by updating internal models or acting on the environment. If bioelectric networks satisfy the Markov blanket conditions required for active inference, then they are not merely analogous to cognitive systems \u2014 they ARE cognitive systems by Friston's definition. This would answer one of Levin's central open questions from outside his own program, constituting a genuine explanatory bridge. The chain is: Levin"}, {"id": "FINDING-003", "date": "2026-04-05", "programs": "Hoffman Agent, McGilchrist Agent", "type": "Explanatory bridge \u2014 empirical confirmation of mathematical claim", "finding": "McGilchrist's corpus callosotomy data (split-brain patients showing two independent conscious agents that integrate into a unified self when the corpus callosum is intact) is not merely analogous to Hoffman's conscious agent integration claim \u2014 it is a specific biological instantiation of that claim. Hoffman's mathematics predicts that conscious agents can integrate into higher-order unified agents without either losing their identity or fusing into an undifferentiated whole; the corpus callosotomy data demonstrates exactly this. This is a cross-disciplinary confirmation event, not a surface a"}, {"id": "FINDING-004", "date": "2026-04-05", "programs": "Hoffman Agent, Kastrup Agent", "type": "Structural homology approaching paradigm-shift candidate", "finding": "Hoffman's Conscious Realism and Kastrup's analytic idealism are not merely compatible \u2014 they are independently derived versions of the same fundamental ontological claim: consciousness is primary, matter is derivative. Their derivations differ (evolutionary-mathematical vs. philosophical-phenomenological), their language differs (conscious agent networks vs. universal consciousness with dissociated alters), but their conclusions coincide at every key junction: the hard problem dissolves, quantum anomalies are explained, emergence is denied in favor of expression. This is a structural homology "}, {"id": "FINDING-005", "date": "2026-04-05", "programs": "Stump Agent, Levin Agent", "type": "Explanatory bridge \u2014 bidirectional (empirical \u2194 philosophical)", "finding": "The Stump \u00d7 Levin connection is the network's most significant inter-cluster bridge. Levin's empirical program observes cells acting toward forms not yet realized \u2014 which is the precise descriptive content of Aristotle's final causality as recovered by Stump. The bridge runs in both directions: (1) Empirically to philosophically \u2014 Levin's data provides 21st-century empirical grounding for a metaphysical claim made in the 13th century, suggesting the claim was tracking something real. (2) Philosophically to empirically \u2014 Thomistic hylomorphism provides the metaphysical framework within which Le"}, {"id": "FINDING-006", "date": "2026-04-05", "programs": "Wolfram Agent, Arkani-Hamed Agent", "type": "Structural analogy \u2014 potential paradigm-shift candidate pending mathematical investigation", "finding": "Wolfram's hypergraph rewriting and Arkani-Hamed's positive geometry (amplituhedron) are two independent Post-Spacetime programs that both derive physics without spacetime as a fundamental input. The structural homology is clear: both propose a pre-geometric mathematical object from which spacetime emerges. However, whether the specific mathematical structures (hypergraph rewriting rules vs. positive geometry of the Grassmannian) are related or equivalent is an open mathematical question that requires expert investigation outside the scope of this network's current source material. The evaluati"}, {"id": "FINDING-007", "date": "2026-04-07", "programs": "Friston Agent, Levin Agent", "type": "Explanatory bridge \u2014 CONFIRMED (upgrades FINDING-001 and FINDING-002)", "finding": "The Friston 2026 review paper provides the formal confirmation that FINDING-001 (structural homology) and FINDING-002 (explanatory bridge candidate) were awaiting. FEP is now formally proven substrate-agnostic \u2014 any self-organizing system with a Markov blanket minimizes free energy regardless of whether that system is neural, bioelectric, or computational. The same paper explicitly models morphogenesis as active inference (Section 4.1), citing Levin's bioelectric work. This is no longer a hypothesis: Levin's bioelectric networks ARE active inference systems by formal derivation. The Substrate-"}, {"id": "FINDING-008", "date": "2026-04-07", "programs": "Carroll Agent, Wolfram Agent, Hoffman Agent", "type": "Structural convergence \u2014 potential paradigm-shift signal (early stage)", "finding": "Sean Carroll's detailed engagement with Harlow's observer-centric quantum gravity framework (Mindscape #349, March 2026) represents a significant directional shift in the network's most conservative program. Harlow proposes treating the observer as a classical, mathematically well-defined entity within quantum gravity \u2014 a \"precise Copenhagen\" with new rules for observer-system interactions. This is structurally convergent with Wolfram (observer = computational sampler of the Ruliad) and Hoffman (observer = conscious agent whose perceptions are fitness-tuned interfaces). Carroll is NOT endorsin"}, {"id": "FINDING-009", "date": "2026-04-08", "programs": "Kastrup Agent, Friston Agent", "type": "Formal equivalence candidate \u2014 HIGHEST PRIORITY in current network", "finding": "The Kastrup psychopathology essay (January 2026) operationalizes the dissociative boundary in a clinical context: mental disorders are disturbances in the boundary between individual alter and universal consciousness. Friston's Markov blanket is the statistical boundary that defines an agent \u2014 the formal structure distinguishing internal states from the environment. The Pattern Detector evaluates this as the network's strongest current explanatory bridge candidate, for the following reasons: (1) The Markov blanket is already known to formalize the agent/environment distinction (FINDING-007 con"}, {"id": "FINDING-010", "date": "2026-04-08", "programs": "Arkani-Hamed Agent, Wolfram Agent", "type": "Directional convergence \u2014 upgrades FINDING-006", "finding": "The UNIVERSE+ School (Les Houches, March\u2013April 2026) represents the most significant advance in the Arkani-Hamed side of FINDING-006 (Wolfram \u00d7 Arkani-Hamed structural analogy) since initialization. The school explicitly targets \"the geometry of quantum mechanics AND spacetime\" \u2014 no longer just scattering amplitudes (a specific corner of physics) but the full replacement of spacetime as fundamental. This is directionally convergent with Wolfram's Ruliad program, which targets \"all possible computations\" as the pre-spacetime substrate. The evaluation upgrades FINDING-006 from \"structural analog"}, {"id": "FINDING-011", "date": "2026-04-14", "programs": "Hoffman Agent, Friston Agent, Kastrup Agent", "type": "SUPER-BRIDGE CANDIDATE \u2014 upgrades and potentially unifies FINDING-004 + FINDING-009 \u2691\u2691\u2691", "finding": "Hoffman's trace logic talk demonstrates that trace blankets formally generalize Markov blankets from DAGs to cyclic Markov chains. This establishes a formal subsumption: trace logic (Hoffman) \u2192 Markov blankets (Friston) as a special case. Combined with FINDING-009 (Markov blanket \u2248 Kastrup's dissociative boundary), a three-level chain emerges: trace logic \u2192 Markov blanket \u2192 dissociative boundary. The Pattern Detector evaluates this as the network's most significant new signal since FINDING-009, for the following reasons: (1) It resolves the Hoffman-Friston relationship definitively \u2014 FEP is no"}, {"id": "FINDING-011a", "date": "2026-04-15", "programs": "Levin Agent, Hoffman Agent, Friston Agent, Kastrup Agent, McGilchrist Agent", "type": "SUPER-BRIDGE EXTENSION \u2014 extends triangle to tetrahedron; introduces observer-dependence hypothesis \u2691\u2691\u2691", "finding": "Levin's bioelectric boundary research provides the empirical fourth vertex to FINDING-011's formal triangle (Hoffman\u2013Friston\u2013Kastrup), while Hawkins' Monty AI architecture provides a fifth \u2014 computational \u2014 instantiation. The relationship is deeper than inside/outside: (1) The bioelectric field is not a container wall but a distributed reader \u2014 membrane porousness contours serve as keys to reading the bioelectric signal, which need not be stored inside any cell. The larger whole (tissue, organism) contains the behavioral map to its own proper subsets (cells, sub-networks). (2) Hawkins' Monty i"}, {"id": "FINDING-012", "date": "2026-04-14", "programs": "Hoffman Agent, Arkani-Hamed Agent, Wolfram Agent", "type": "Super-cluster convergence signal \u2014 upgrades FINDING-006, FINDING-008, FINDING-010", "finding": "Hoffman's trace logic is structurally a form of quantum logic (Birkhoff-von Neumann). He proposes that agent networks under trace order could be the positive geometries that Arkani-Hamed's UNIVERSE+ program seeks. If confirmed, this would be the formal bridge between the Consciousness Cluster and the Post-Spacetime Cluster. The Pattern Detector evaluates this as follows: (1) The structural claim (trace logic IS quantum logic) is well-supported \u2014 the non-Boolean/locally-Boolean structure matches precisely. (2) The positive geometry correspondence is more speculative \u2014 Hoffman states this is an "}, {"id": "FINDING-013", "date": "", "programs": "Friston, Fredrickson, McGilchrist", "type": "", "finding": ""}, {"id": "FINDING-014", "date": "", "programs": "Hawkins, C2A2 (meta)", "type": "", "finding": ""}, {"id": "FINDING-015", "date": "", "programs": "Kastrup, Koch, IIT (Integrated Information Theory)", "type": "", "finding": ""}, {"id": "FINDING-016", "date": "", "programs": "Levin, Hoffman, Friston, Hawkins, Wolfram, McGilchrist, Arkani-Hamed", "type": "", "finding": ""}, {"id": "FINDING-017", "date": "", "programs": "Wolfram, Friston, Arkani-Hamed, Carroll (trajectory)", "type": "", "finding": ""}, {"id": "FINDING-018", "date": "", "programs": "Levin, Hoffman, Friston, Kastrup, Wolfram, Arkani-Hamed (meta)", "type": "", "finding": ""}, {"id": "FINDING-018a", "date": "", "programs": "Hawkins, Friston (trajectory: AI alignment, Hoffman)", "type": "", "finding": ""}];
+
+// ── Z-AXIS: temporal placement (must be before camera state) ──
+// Use pub_year for vertical placement; range spans ~1977-2026
+var allYears = PRS_TRIPLETS.map(function(t) { return t.pub_year || 2020; });
+var minYear = Math.min.apply(null, allYears);
+var maxYear = Math.max.apply(null, allYears);
+var zHeight = 40; // total vertical span
+
+function yearToZ(year) {
+  if (maxYear === minYear) return zHeight / 2;
+  return 2 + ((year - minYear) / (maxYear - minYear)) * (zHeight - 4);
+}
+
+function dateToZ(dateStr) {
+  if (!dateStr) return zHeight / 2;
+  var year = parseInt(dateStr.slice(0, 4));
+  return yearToZ(year);
+}
+
+// ── STATE ──
+var scene, camera, renderer, raycaster, mouse;
+var meshes = [];        // all clickable meshes
+var threadLines = [];   // P-R-S connection lines
+var discMeshes = [];    // discipline slice meshes
+var labelSprites = [];  // text labels
+var showLabels = true;
+var showThreads = true;
+var showDiscs = true;
+var selectedMesh = null;
+var hoveredMesh = null;
+
+// Camera orbit
+var isMouseDown = false;
+var mouseDownPos = { x: 0, y: 0 };
+var cameraTheta = Math.PI * 0.25;
+var cameraPhi = Math.PI * 0.35;
+var cameraRadius = 50;
+var cameraTarget = new THREE.Vector3(0, zHeight / 2, 0);
+var lastMouse = { x: 0, y: 0 };
+
+// ── DISCIPLINE GEOMETRY ──
+var discCount = DISCIPLINES.length;
+var discAngle = (Math.PI * 2) / discCount;
+var discRadius = 25;
+
+function getDiscIndex(discipline) {
+  return DISCIPLINES.indexOf(discipline);
+}
+
+function getDiscAngle(idx) {
+  return idx * discAngle - Math.PI / 2;
+}
+
+// ── THINKER POSITION WITHIN DISCIPLINE ──
+// Multiple thinkers may share a discipline; offset them within the slice
+var thinkersByDisc = {};
+Object.keys(THINKER_DISC).forEach(function(t) {
+  var d = THINKER_DISC[t];
+  if (!thinkersByDisc[d]) thinkersByDisc[d] = [];
+  thinkersByDisc[d].push(t);
+});
+
+function getThinkerAngleOffset(thinker) {
+  var disc = THINKER_DISC[thinker];
+  var group = thinkersByDisc[disc] || [thinker];
+  var idx = group.indexOf(thinker);
+  var count = group.length;
+  if (count <= 1) return 0;
+  // Spread within the slice
+  return (idx - (count - 1) / 2) * (discAngle * 0.5 / count);
+}
+
+// ── COUNT RESOURCE CONNECTIONS (pluripotency) ──
+var resourceConnections = {};
+PRS_TRIPLETS.forEach(function(t) {
+  var rKey = t.resource.toLowerCase().trim().slice(0, 60);
+  if (!resourceConnections[rKey]) resourceConnections[rKey] = [];
+  resourceConnections[rKey].push(t.id);
+});
+
+function getResourceScale(triplet) {
+  var rKey = triplet.resource.toLowerCase().trim().slice(0, 60);
+  var count = (resourceConnections[rKey] || []).length;
+  return 1 + Math.min(count - 1, 4) * 0.4;
+}
+
+// ── THREE.JS SETUP ──
+function init() {
+  scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x0a0a0f);
+  scene.fog = new THREE.FogExp2(0x0a0a0f, 0.008);
+
+  var container = document.getElementById('canvas-container');
+  var cw = container.clientWidth;
+  var ch = container.clientHeight;
+  camera = new THREE.PerspectiveCamera(50, cw / ch, 0.1, 500);
+  updateCameraPosition();
+
+  // Try multiple renderer strategies
+  var rendererCreated = false;
+  var lastErr = '';
+  var attempts = [
+    { antialias: true, alpha: true },
+    { antialias: false, alpha: false, failIfMajorPerformanceCaveat: false },
+    { antialias: false, alpha: false, failIfMajorPerformanceCaveat: false, powerPreference: 'low-power' }
+  ];
+  for (var ai = 0; ai < attempts.length; ai++) {
+    try {
+      renderer = new THREE.WebGLRenderer(attempts[ai]);
+      rendererCreated = true;
+      break;
+    } catch(e) {
+      lastErr = e.message || String(e);
+    }
+  }
+  if (!rendererCreated) {
+    container.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#C45B5B;font-size:16px;text-align:center;padding:40px;"><div><h2 style="color:#FFD700;margin-bottom:12px;">WebGL Unavailable</h2><p>Chrome refused to create a 3D context.</p><p style="margin-top:12px;"><button onclick="location.reload()" style="background:#FFD700;color:#0a0a0f;border:none;padding:8px 20px;border-radius:6px;cursor:pointer;font-size:14px;font-weight:600;">Retry</button></p></div></div>';
+    return;
+  }
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setSize(cw, ch);
+  container.appendChild(renderer.domElement);
+
+  raycaster = new THREE.Raycaster();
+  raycaster.params.Points = { threshold: 0.5 };
+  mouse = new THREE.Vector2();
+
+  // Lights
+  var ambient = new THREE.AmbientLight(0x404060, 0.6);
+  scene.add(ambient);
+  var dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
+  dirLight.position.set(20, 40, 30);
+  scene.add(dirLight);
+  var pointLight = new THREE.PointLight(0xC9A84C, 0.4, 100);
+  pointLight.position.set(0, zHeight, 0);
+  scene.add(pointLight);
+
+  buildDisciplineSlices();
+  buildPRSNodes();
+  buildThreads();
+  buildLegend();
+  buildCrossConnectionLines();
+
+  // Events
+  renderer.domElement.addEventListener('mousedown', onMouseDown);
+  renderer.domElement.addEventListener('mousemove', onMouseMove);
+  renderer.domElement.addEventListener('mouseup', onMouseUp);
+  renderer.domElement.addEventListener('wheel', onWheel);
+  renderer.domElement.addEventListener('dblclick', onDoubleClick);
+  window.addEventListener('resize', onResize);
+
+  animate();
+}
+
+// ── DISCIPLINE SLICES (floor pie) ──
+function buildDisciplineSlices() {
+  DISCIPLINES.forEach(function(disc, i) {
+    var startAngle = getDiscAngle(i) - discAngle / 2;
+    var endAngle = getDiscAngle(i) + discAngle / 2;
+
+    // Create a filled wedge on the floor
+    var shape = new THREE.Shape();
+    shape.moveTo(0, 0);
+    var segments = 24;
+    for (var s = 0; s <= segments; s++) {
+      var a = startAngle + (endAngle - startAngle) * (s / segments);
+      shape.lineTo(Math.cos(a) * discRadius, Math.sin(a) * discRadius);
+    }
+    shape.lineTo(0, 0);
+
+    var geo = new THREE.ShapeGeometry(shape);
+    var mat = new THREE.MeshBasicMaterial({
+      color: new THREE.Color(0x1a1a2e),
+      transparent: true,
+      opacity: 0.35,
+      side: THREE.DoubleSide,
+    });
+    var mesh = new THREE.Mesh(geo, mat);
+    mesh.rotation.x = -Math.PI / 2;
+    mesh.position.y = 0;
+    mesh.userData = { type: 'discipline', discipline: disc, index: i };
+    scene.add(mesh);
+    discMeshes.push(mesh);
+
+    // Divider lines between slices
+    var lineGeo = new THREE.BufferGeometry().setFromPoints([
+      new THREE.Vector3(0, 0.05, 0),
+      new THREE.Vector3(Math.cos(startAngle) * discRadius, 0.05, -Math.sin(startAngle) * discRadius),
+    ]);
+    var lineMat = new THREE.LineBasicMaterial({ color: 0x2a2a3e, transparent: true, opacity: 0.6 });
+    var line = new THREE.Line(lineGeo, lineMat);
+    scene.add(line);
+    discMeshes.push(line);
+  });
+}
+
+// ── PRS NODES ──
+function buildPRSNodes() {
+  PRS_TRIPLETS.forEach(function(triplet) {
+    var disc = THINKER_DISC[triplet.thinker] || 'Systems Integration';
+    var dIdx = getDiscIndex(disc);
+    if (dIdx < 0) dIdx = 0;
+    var baseAngle = getDiscAngle(dIdx);
+    var thinkerOffset = getThinkerAngleOffset(triplet.thinker);
+    var angle = baseAngle + thinkerOffset;
+
+    var z = dateToZ(triplet.date);
+    var color = new THREE.Color(THINKER_COLORS[triplet.thinker] || '#888888');
+
+    // Place P, R, S as three connected nodes
+    var prsTypes = ['problem', 'resource', 'solution'];
+    var prsTexts = [triplet.problem, triplet.resource, triplet.solution];
+    var radii = [0.35, 0.45 * getResourceScale(triplet), 0.35];
+    var rOffsets = [0.6, 0.75, 0.9]; // radial position fraction within the slice
+
+    var nodeGroup = [];
+
+    prsTypes.forEach(function(pType, pi) {
+      var r = discRadius * rOffsets[pi];
+      var x = Math.cos(angle) * r;
+      var yPos = z + pi * 1.2; // stack slightly along z (vertical)
+      var zPos = -Math.sin(angle) * r;
+
+      var nodeColor = color.clone();
+      if (pType === 'problem') nodeColor.offsetHSL(0, 0, -0.1);
+      if (pType === 'solution') nodeColor.offsetHSL(0, 0, 0.1);
+
+      var geo;
+      if (pType === 'problem') {
+        // Octahedron for problems
+        geo = new THREE.OctahedronGeometry(radii[pi], 0);
+      } else if (pType === 'resource') {
+        // Sphere for resources (scaled by pluripotency)
+        geo = new THREE.SphereGeometry(radii[pi], 12, 8);
+      } else {
+        // Dodecahedron for solutions
+        geo = new THREE.DodecahedronGeometry(radii[pi], 0);
+      }
+
+      var mat = new THREE.MeshPhongMaterial({
+        color: nodeColor,
+        emissive: nodeColor.clone().multiplyScalar(0.2),
+        shininess: 40,
+        transparent: true,
+        opacity: 0.9,
+      });
+      var mesh = new THREE.Mesh(geo, mat);
+      mesh.position.set(x, yPos, zPos);
+      mesh.userData = {
+        type: 'prs',
+        prsType: pType,
+        triplet: triplet,
+        text: prsTexts[pi],
+        thinker: triplet.thinker,
+      };
+      scene.add(mesh);
+      meshes.push(mesh);
+      nodeGroup.push(mesh);
+    });
+
+    // Connect P → R → S with thin lines
+    if (nodeGroup.length === 3) {
+      for (var li = 0; li < 2; li++) {
+        var pts = [nodeGroup[li].position.clone(), nodeGroup[li + 1].position.clone()];
+        var lGeo = new THREE.BufferGeometry().setFromPoints(pts);
+        var lMat = new THREE.LineBasicMaterial({
+          color: color,
+          transparent: true,
+          opacity: 0.5,
+        });
+        var line = new THREE.Line(lGeo, lMat);
+        line.userData = { type: 'thread', thinker: triplet.thinker };
+        scene.add(line);
+        threadLines.push(line);
+      }
+    }
+  });
+}
+
+// ── CROSS-TRADITION CONNECTION LINES ──
+function buildCrossConnectionLines() {
+  // Find triplets that share cross-connections via findings
+  // Group triplets by thinker for cross-discipline arcs
+  var thinkerTriplets = {};
+  PRS_TRIPLETS.forEach(function(t) {
+    if (!thinkerTriplets[t.thinker]) thinkerTriplets[t.thinker] = [];
+    thinkerTriplets[t.thinker].push(t);
+  });
+
+  // Draw arcs between thinkers mentioned in the same finding
+  FINDINGS.forEach(function(finding) {
+    var progs = finding.programs.split(',').map(function(p) {
+      return p.trim().replace(/ Agent$/, '').replace(/ \(.*$/, '').toLowerCase();
+    });
+    // Normalize to our thinker keys
+    var thinkers = progs.filter(function(p) { return THINKER_COLORS[p]; });
+    // Unique pairs
+    for (var i = 0; i < thinkers.length; i++) {
+      for (var j = i + 1; j < thinkers.length; j++) {
+        var t1 = thinkerTriplets[thinkers[i]];
+        var t2 = thinkerTriplets[thinkers[j]];
+        if (!t1 || !t2 || !t1.length || !t2.length) continue;
+
+        // Connect the resource nodes of the first triplet of each
+        var r1Idx = meshes.findIndex(function(m) {
+          return m.userData.type === 'prs' && m.userData.prsType === 'resource' && m.userData.thinker === thinkers[i];
+        });
+        var r2Idx = meshes.findIndex(function(m) {
+          return m.userData.type === 'prs' && m.userData.prsType === 'resource' && m.userData.thinker === thinkers[j];
+        });
+
+        if (r1Idx >= 0 && r2Idx >= 0) {
+          var p1 = meshes[r1Idx].position.clone();
+          var p2 = meshes[r2Idx].position.clone();
+          // Create curved arc
+          var mid = p1.clone().add(p2).multiplyScalar(0.5);
+          mid.y += 3; // arc upward
+          var curve = new THREE.QuadraticBezierCurve3(p1, mid, p2);
+          var points = curve.getPoints(20);
+          var arcGeo = new THREE.BufferGeometry().setFromPoints(points);
+          var arcMat = new THREE.LineBasicMaterial({
+            color: 0xC9A84C,
+            transparent: true,
+            opacity: 0.15,
+          });
+          var arc = new THREE.Line(arcGeo, arcMat);
+          arc.userData = { type: 'cross', finding: finding };
+          scene.add(arc);
+          threadLines.push(arc);
+        }
+      }
+    }
+  });
+}
+
+// ── THREADS VISIBILITY ──
+function buildThreads() {
+  // Already built in buildPRSNodes and buildCrossConnectionLines
+}
+
+// ── TRADITION FILTERS (left panel checkboxes) ──
+var prsFilterState = {}; // thinker -> boolean
+
+function buildTraditionFilters() {
+  var container = document.getElementById('prs-tradition-filters');
+  var html = '';
+  var sortedThinkers = Object.keys(THINKER_DISPLAY).sort(function(a, b) {
+    return THINKER_DISPLAY[a].localeCompare(THINKER_DISPLAY[b]);
+  });
+  sortedThinkers.forEach(function(t) {
+    prsFilterState[t] = true;
+    html += '<div class="prs-filter-item">';
+    html += '<input type="checkbox" id="prs-chk-' + t + '" checked onchange="prsToggleThinker(\'' + t + '\', this.checked)">';
+    html += '<span class="prs-filter-dot" style="background:' + THINKER_COLORS[t] + '"></span>';
+    html += '<span class="prs-filter-label">' + THINKER_DISPLAY[t] + '</span>';
+    html += '</div>';
+  });
+  container.innerHTML = html;
+}
+
+function prsToggleThinker(thinker, checked) {
+  prsFilterState[thinker] = checked;
+  applyPRSFilters();
+  // Update All checkbox
+  var allChecked = Object.keys(prsFilterState).every(function(t) { return prsFilterState[t]; });
+  document.getElementById('prs-chk-all').checked = allChecked;
+}
+
+function prsToggleAll(checked) {
+  Object.keys(prsFilterState).forEach(function(t) {
+    prsFilterState[t] = checked;
+    var chk = document.getElementById('prs-chk-' + t);
+    if (chk) chk.checked = checked;
+  });
+  applyPRSFilters();
+}
+
+function applyPRSFilters() {
+  meshes.forEach(function(m) {
+    if (m.userData.thinker) {
+      m.visible = prsFilterState[m.userData.thinker] !== false;
+    }
+  });
+  threadLines.forEach(function(l) {
+    if (l.userData.thinker) {
+      l.visible = prsFilterState[l.userData.thinker] !== false && showThreads;
+    } else if (l.userData.type === 'cross') {
+      // Cross-connection arcs: visible if both connected thinkers are visible
+      l.visible = showThreads;
+    }
+  });
+}
+
+// ── LEGEND (node shapes only now, thinker list moved to left panel) ──
+function buildLegend() {
+  var legendEl = document.getElementById('legend');
+  var html = '<h4>Node Shapes</h4>';
+  html += '<div class="legend-item"><span style="color:#E87070;font-size:14px">&#9670;</span> Problem</div>';
+  html += '<div class="legend-item"><span style="color:#7AB0CF;font-size:14px">&#9679;</span> Resource</div>';
+  html += '<div class="legend-item"><span style="color:#5DC0AB;font-size:14px">&#11206;</span> Solution</div>';
+  legendEl.innerHTML = html;
+}
+
+// ── SEARCH ──
+var prsSearchTimer = null;
+function prsSearch(query) {
+  var resultsEl = document.getElementById('prs-search-results');
+  var clearBtn = document.getElementById('prs-search-clear');
+  if (!query || query.length < 2) {
+    resultsEl.innerHTML = '';
+    clearBtn.style.display = 'none';
+    // Reset all node opacity
+    meshes.forEach(function(m) {
+      if (m.userData.type === 'prs' && m.material) {
+        m.material.opacity = 0.9;
+        m.material.emissive.copy(new THREE.Color(THINKER_COLORS[m.userData.thinker] || '#888').multiplyScalar(0.2));
+      }
+    });
+    return;
+  }
+  clearBtn.style.display = 'inline-block';
+
+  // Check for API key — if available and query is 4+ chars, do semantic search
+  var apiKey = '';
+  try { apiKey = localStorage.getItem('tts_api_key') || ''; } catch(e) {}
+  if (apiKey && query.length >= 4) {
+    // Debounce semantic search
+    if (prsSearchTimer) clearTimeout(prsSearchTimer);
+    prsSearchTimer = setTimeout(function() { prsSemanticSearch(query, apiKey); }, 600);
+    return;
+  }
+
+  // Fallback: text matching
+  prsTextSearch(query);
+}
+
+function prsTextSearch(query) {
+  var q = query.toLowerCase();
+  var hits = [];
+  PRS_TRIPLETS.forEach(function(t) {
+    var searchable = (t.label + ' ' + t.problem + ' ' + t.resource + ' ' + t.solution).toLowerCase();
+    if (searchable.indexOf(q) >= 0) {
+      hits.push(t);
+    }
+  });
+  // Also search cross-connections and findings
+  CROSS_CONNECTIONS.forEach(function(c) {
+    var searchable = (c.question + ' ' + c.programs + ' ' + c.nature + ' ' + (c.notes || '')).toLowerCase();
+    if (searchable.indexOf(q) >= 0) {
+      // Find related PRS triplets via program names
+      var progs = c.programs.toLowerCase();
+      PRS_TRIPLETS.forEach(function(t) {
+        if (progs.indexOf(t.thinker) >= 0 && hits.indexOf(t) < 0) hits.push(t);
+      });
+    }
+  });
+  prsShowSearchResults(hits, query);
+}
+
+function prsSemanticSearch(query, apiKey) {
+  var resultsEl = document.getElementById('prs-search-results');
+  resultsEl.innerHTML = '<div style="color:#888;font-style:italic">Searching...</div>';
+
+  // Build compact PRS summary for the LLM
+  var prsText = PRS_TRIPLETS.map(function(t) {
+    return t.id + ': ' + t.label + ' | P: ' + t.problem.slice(0, 120) + ' | R: ' + t.resource.slice(0, 120) + ' | S: ' + t.solution.slice(0, 120);
+  }).join('\n');
+
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'https://api.openai.com/v1/chat/completions', true);
+  xhr.setRequestHeader('Authorization', 'Bearer ' + apiKey);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.timeout = 15000;
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      try {
+        var resp = JSON.parse(xhr.responseText);
+        var content = resp.choices[0].message.content;
+        // Parse out PRS IDs from the response
+        var matchedIds = content.match(/[a-z]+-PRS-\d+/gi) || [];
+        var hits = [];
+        matchedIds.forEach(function(id) {
+          var t = PRS_TRIPLETS.find(function(p) { return p.id.toLowerCase() === id.toLowerCase(); });
+          if (t && hits.indexOf(t) < 0) hits.push(t);
+        });
+        if (hits.length === 0) {
+          // Fallback to text search
+          prsTextSearch(query);
+        } else {
+          prsShowSearchResults(hits, query);
+        }
+      } catch(e) {
+        prsTextSearch(query);
+      }
+    } else {
+      prsTextSearch(query);
+    }
+  };
+  xhr.onerror = function() { prsTextSearch(query); };
+  xhr.ontimeout = function() { prsTextSearch(query); };
+  xhr.send(JSON.stringify({
+    model: 'gpt-4o-mini',
+    messages: [
+      { role: 'system', content: 'You are a search assistant. Given PRS triplets (Problem-Resource-Solution) from research traditions, return the IDs of triplets most relevant to the user query. Return ONLY a comma-separated list of IDs (e.g. levin-PRS-01, friston-PRS-03). No explanation.' },
+      { role: 'user', content: 'Query: ' + query + '\n\nPRS Triplets:\n' + prsText }
+    ],
+    max_tokens: 200,
+    temperature: 0.1
+  }));
+}
+
+function prsShowSearchResults(hits, query) {
+  var resultsEl = document.getElementById('prs-search-results');
+
+  // Dim non-matching nodes, highlight matching
+  var hitIds = {};
+  hits.forEach(function(h) { hitIds[h.id] = true; });
+  meshes.forEach(function(m) {
+    if (m.userData.type === 'prs') {
+      var isHit = hitIds[m.userData.triplet.id];
+      m.material.opacity = isHit ? 1.0 : 0.15;
+      if (isHit) {
+        m.material.emissive.setHex(0x555555);
+      } else {
+        m.material.emissive.copy(new THREE.Color(THINKER_COLORS[m.userData.thinker] || '#888').multiplyScalar(0.1));
+      }
+    }
+  });
+
+  var html = '<div style="color:#888;margin-bottom:4px">' + hits.length + ' result' + (hits.length !== 1 ? 's' : '') + '</div>';
+  hits.slice(0, 15).forEach(function(h) {
+    var tName = THINKER_DISPLAY[h.thinker] || h.thinker;
+    var tColor = THINKER_COLORS[h.thinker] || '#888';
+    html += '<div class="prs-search-hit" onclick="prsSearchClickResult(\'' + h.id + '\')">';
+    html += '<span class="hit-thinker" style="color:' + tColor + '">' + tName + '</span> ';
+    html += '<span>' + h.label + '</span>';
+    html += '</div>';
+  });
+  if (hits.length > 15) {
+    html += '<div style="color:#666;font-size:10px;margin-top:4px">...and ' + (hits.length - 15) + ' more</div>';
+  }
+  resultsEl.innerHTML = html;
+}
+
+function prsSearchClickResult(tripletId) {
+  // Find the resource node for this triplet and click it
+  var target = meshes.find(function(m) {
+    return m.userData.type === 'prs' && m.userData.prsType === 'resource' && m.userData.triplet && m.userData.triplet.id === tripletId;
+  });
+  if (target) {
+    showNodeInfo(target);
+    // Center camera on it
+    cameraTarget.copy(target.position);
+    cameraRadius = 30;
+    updateCameraPosition();
+  }
+}
+
+function prsClearSearch() {
+  document.getElementById('prs-search-box').value = '';
+  prsSearch('');
+}
+
+// ── CAMERA ──
+function updateCameraPosition() {
+  var x = cameraRadius * Math.sin(cameraPhi) * Math.cos(cameraTheta);
+  var y = cameraRadius * Math.cos(cameraPhi);
+  var z = cameraRadius * Math.sin(cameraPhi) * Math.sin(cameraTheta);
+  camera.position.set(
+    cameraTarget.x + x,
+    cameraTarget.y + y,
+    cameraTarget.z + z
+  );
+  camera.lookAt(cameraTarget);
+}
+
+function resetCamera() {
+  cameraTheta = Math.PI * 0.25;
+  cameraPhi = Math.PI * 0.35;
+  cameraRadius = 50;
+  cameraTarget.set(0, zHeight / 2, 0);
+  updateCameraPosition();
+}
+
+// ── EVENTS ──
+function onMouseDown(e) {
+  isMouseDown = true;
+  mouseDownPos = { x: e.clientX, y: e.clientY };
+  lastMouse = { x: e.clientX, y: e.clientY };
+}
+
+function onMouseMove(e) {
+  if (isMouseDown) {
+    var dx = e.clientX - lastMouse.x;
+    var dy = e.clientY - lastMouse.y;
+    cameraTheta -= dx * 0.005;
+    cameraPhi = Math.max(0.1, Math.min(Math.PI * 0.85, cameraPhi - dy * 0.005));
+    updateCameraPosition();
+    lastMouse = { x: e.clientX, y: e.clientY };
+  }
+
+  // Hover detection
+  var rect = renderer.domElement.getBoundingClientRect();
+  mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+  mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+  raycaster.setFromCamera(mouse, camera);
+
+  var intersects = raycaster.intersectObjects(meshes);
+  var tooltip = document.getElementById('tooltip');
+  renderer.domElement.style.cursor = 'default';
+
+  if (intersects.length > 0) {
+    var hit = intersects[0].object;
+    if (hit.userData.type === 'prs') {
+      renderer.domElement.style.cursor = 'pointer';
+      hoveredMesh = hit;
+
+      var typeLabel = hit.userData.prsType.charAt(0).toUpperCase() + hit.userData.prsType.slice(1);
+      var tName = THINKER_DISPLAY[hit.userData.thinker] || hit.userData.thinker;
+      tooltip.innerHTML = '<strong>' + tName + '</strong> &mdash; ' + typeLabel +
+        '<br><span style="color:#888">' + (hit.userData.text || '').slice(0, 120) + '</span>';
+      tooltip.style.display = 'block';
+      tooltip.style.left = (e.clientX + 14) + 'px';
+      tooltip.style.top = (e.clientY + 14) + 'px';
+
+      // Highlight
+      if (selectedMesh !== hit) {
+        hit.material.emissive.setHex(0x444444);
+      }
+    }
+  } else {
+    if (hoveredMesh && hoveredMesh !== selectedMesh) {
+      var origColor = new THREE.Color(THINKER_COLORS[hoveredMesh.userData.thinker] || '#888888');
+      hoveredMesh.material.emissive.copy(origColor.multiplyScalar(0.2));
+    }
+    hoveredMesh = null;
+    tooltip.style.display = 'none';
+  }
+}
+
+function onMouseUp(e) {
+  isMouseDown = false;
+  var dist = Math.sqrt(Math.pow(e.clientX - mouseDownPos.x, 2) + Math.pow(e.clientY - mouseDownPos.y, 2));
+  if (dist < 5) {
+    // It's a click, not a drag
+    onClick(e);
+  }
+}
+
+function onClick(e) {
+  var rect = renderer.domElement.getBoundingClientRect();
+  mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+  mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+  raycaster.setFromCamera(mouse, camera);
+
+  var intersects = raycaster.intersectObjects(meshes);
+
+  if (intersects.length > 0) {
+    var hit = intersects[0].object;
+    if (hit.userData.type === 'prs') {
+      showNodeInfo(hit);
+    }
+  } else {
+    closePanel();
+  }
+}
+
+function onDoubleClick(e) {
+  // Double-click to center on a node
+  var rect = renderer.domElement.getBoundingClientRect();
+  mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+  mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+  raycaster.setFromCamera(mouse, camera);
+  var intersects = raycaster.intersectObjects(meshes);
+  if (intersects.length > 0) {
+    cameraTarget.copy(intersects[0].object.position);
+    updateCameraPosition();
+  }
+}
+
+function onWheel(e) {
+  cameraRadius = Math.max(15, Math.min(120, cameraRadius + e.deltaY * 0.05));
+  updateCameraPosition();
+  e.preventDefault();
+}
+
+function onResize() {
+  var container = document.getElementById('canvas-container');
+  var w = container.clientWidth;
+  var h = container.clientHeight;
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+  renderer.setSize(w, h);
+}
+
+// ── INFO PANEL ──
+function showNodeInfo(mesh) {
+  selectedMesh = mesh;
+  var d = mesh.userData;
+  var triplet = d.triplet;
+  var panel = document.getElementById('info-panel');
+  var content = document.getElementById('info-content');
+
+  var typeClass = d.prsType;
+  var typeLabel = d.prsType.charAt(0).toUpperCase() + d.prsType.slice(1);
+  var tName = THINKER_DISPLAY[d.thinker] || d.thinker;
+  var tColor = THINKER_COLORS[d.thinker] || '#888';
+  var disc = THINKER_DISC[d.thinker] || '';
+
+  var html = '<h3>' + triplet.label + '</h3>';
+  html += '<span class="thinker-tag" style="background:' + tColor + '33;color:' + tColor + '">' + tName + '</span>';
+  html += '<span class="prs-type ' + typeClass + '">' + typeLabel + '</span>';
+  html += '<div class="field-label">Discipline</div>';
+  html += '<div class="field-value">' + disc + '</div>';
+  html += '<div class="field-label">Problem</div>';
+  html += '<div class="field-value">' + triplet.problem + '</div>';
+  html += '<div class="field-label">Resource</div>';
+  html += '<div class="field-value">' + triplet.resource + '</div>';
+  html += '<div class="field-label">Solution</div>';
+  html += '<div class="field-value">' + triplet.solution + '</div>';
+  html += '<div class="field-label">Publication Year</div>';
+  html += '<div class="field-value">' + (triplet.pub_year || 'Unknown') + '</div>';
+  html += '<div class="field-label">Confidence</div>';
+  html += '<div class="field-value">' + triplet.confidence + '</div>';
+
+  // Find related cross-connections
+  var related = CROSS_CONNECTIONS.filter(function(cc) {
+    var progs = cc.programs.toLowerCase();
+    return progs.indexOf(d.thinker) >= 0 || progs.indexOf(tName.toLowerCase()) >= 0;
+  });
+  if (related.length > 0) {
+    html += '<div class="field-label" style="margin-top:14px">Cross-Tradition Connections</div>';
+    related.forEach(function(cc) {
+      html += '<div class="field-value" style="margin-top:6px;padding:6px;background:#1a1a2e;border-radius:4px">';
+      html += '<strong>' + cc.id + ':</strong> ' + cc.question;
+      html += '<br><span style="color:#888;font-size:11px">' + cc.nature + '</span>';
+      html += '</div>';
+    });
+  }
+
+  content.innerHTML = html;
+  panel.style.display = 'block';
+}
+
+function closePanel() {
+  document.getElementById('info-panel').style.display = 'none';
+  if (selectedMesh) {
+    var origColor = new THREE.Color(THINKER_COLORS[selectedMesh.userData.thinker] || '#888888');
+    selectedMesh.material.emissive.copy(origColor.multiplyScalar(0.2));
+  }
+  selectedMesh = null;
+}
+
+// ── TOGGLE CONTROLS ──
+function toggleLabels() {
+  showLabels = !showLabels;
+  document.getElementById('btn-labels').classList.toggle('active', showLabels);
+  document.getElementById('disc-labels').style.display = showLabels ? 'block' : 'none';
+}
+
+function toggleThreads() {
+  showThreads = !showThreads;
+  document.getElementById('btn-threads').classList.toggle('active', showThreads);
+  threadLines.forEach(function(l) { l.visible = showThreads; });
+}
+
+function toggleDiscs() {
+  showDiscs = !showDiscs;
+  document.getElementById('btn-discs').classList.toggle('active', showDiscs);
+  discMeshes.forEach(function(m) { m.visible = showDiscs; });
+}
+
+// ── DISCIPLINE LABELS (2D overlay) ──
+function updateDiscLabels() {
+  if (!showLabels) return;
+  var container = document.getElementById('disc-labels');
+  container.innerHTML = '';
+  var canvasRect = renderer.domElement.getBoundingClientRect();
+  DISCIPLINES.forEach(function(disc, i) {
+    var angle = getDiscAngle(i);
+    var r = discRadius + 3;
+    var worldPos = new THREE.Vector3(
+      Math.cos(angle) * r,
+      0.5,
+      -Math.sin(angle) * r
+    );
+    var screenPos = worldPos.project(camera);
+    var x = (screenPos.x * 0.5 + 0.5) * canvasRect.width;
+    var y = (-screenPos.y * 0.5 + 0.5) * canvasRect.height;
+
+    if (screenPos.z < 1) {
+      var label = document.createElement('div');
+      label.className = 'disc-label';
+      label.textContent = disc;
+      label.style.left = x + 'px';
+      label.style.top = y + 'px';
+      label.style.transform = 'translate(-50%, -50%)';
+      container.appendChild(label);
+    }
+  });
+}
+
+// ── Z-AXIS MARKERS ──
+function buildZAxis() {
+  // Vertical line at center
+  var topY = zHeight + 2;
+  var pts = [new THREE.Vector3(0, 0, 0), new THREE.Vector3(0, topY, 0)];
+  var axGeo = new THREE.BufferGeometry().setFromPoints(pts);
+  var axMat = new THREE.LineBasicMaterial({ color: 0x2a2a3e, transparent: true, opacity: 0.4 });
+  scene.add(new THREE.Line(axGeo, axMat));
+
+  // Decade markers along the axis
+  var startDecade = Math.ceil(minYear / 10) * 10;
+  for (var yr = startDecade; yr <= maxYear; yr += 10) {
+    var y = yearToZ(yr);
+    // Horizontal tick
+    var tickPts = [new THREE.Vector3(-1, y, 0), new THREE.Vector3(1, y, 0)];
+    var tickGeo = new THREE.BufferGeometry().setFromPoints(tickPts);
+    var tickMat = new THREE.LineBasicMaterial({ color: 0x3a3a4e, transparent: true, opacity: 0.5 });
+    scene.add(new THREE.Line(tickGeo, tickMat));
+
+    // Faint horizontal ring at each decade
+    var ringGeo = new THREE.RingGeometry(discRadius - 0.5, discRadius + 0.5, 64);
+    var ringMat = new THREE.MeshBasicMaterial({ color: 0x1a1a2e, transparent: true, opacity: 0.12, side: THREE.DoubleSide });
+    var ring = new THREE.Mesh(ringGeo, ringMat);
+    ring.rotation.x = -Math.PI / 2;
+    ring.position.y = y;
+    scene.add(ring);
+  }
+}
+
+// Year labels rendered as 2D overlays
+function updateYearLabels() {
+  var container = document.getElementById('disc-labels');
+  var canvasRect = renderer.domElement.getBoundingClientRect();
+  var startDecade = Math.ceil(minYear / 10) * 10;
+  for (var yr = startDecade; yr <= maxYear; yr += 10) {
+    var y = yearToZ(yr);
+    var worldPos = new THREE.Vector3(2, y, 0);
+    var screenPos = worldPos.project(camera);
+    var sx = (screenPos.x * 0.5 + 0.5) * canvasRect.width;
+    var sy = (-screenPos.y * 0.5 + 0.5) * canvasRect.height;
+    if (screenPos.z < 1) {
+      var label = document.createElement('div');
+      label.className = 'disc-label';
+      label.textContent = yr.toString();
+      label.style.left = sx + 'px';
+      label.style.top = sy + 'px';
+      label.style.transform = 'translate(-50%, -50%)';
+      label.style.color = '#C9A84C';
+      label.style.fontSize = '13px';
+      label.style.fontWeight = '600';
+      container.appendChild(label);
+    }
+  }
+}
+
+// ── ANIMATE ──
+function animate() {
+  requestAnimationFrame(animate);
+
+  // Slow rotation of nodes for visual interest
+  meshes.forEach(function(m) {
+    if (m.userData.type === 'prs') {
+      m.rotation.y += 0.003;
+      if (m.userData.prsType === 'problem') m.rotation.x += 0.002;
+    }
+  });
+
+  renderer.render(scene, camera);
+  updateDiscLabels();
+  updateYearLabels();
+}
+
+// ── SEARCH EVENT ──
+document.getElementById('prs-search-box').addEventListener('input', function(e) {
+  prsSearch(e.target.value);
+});
+
+// ── INIT ──
+init();
+buildZAxis();
+buildTraditionFilters();
+</script>
+</body>
+</html>
