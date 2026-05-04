@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C2A2 — Summa Explorer</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 100%; height: 100%; overflow: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #0a0a0f; color: #e0e0e0;
+}
+#app { display: flex; flex-direction: column; height: 100vh; }
+
+/* ── HEADER ── */
+#header {
+  display: flex; align-items: center; gap: 8px;
+  padding: 0 16px;
+  background: #111118; border-bottom: 1px solid #2a2a3a;
+  height: 48px; flex-shrink: 0;
+}
+.hdr-title { font-size: 15px; font-weight: 700; color: #C9A84C; white-space: nowrap; }
+.hdr-subtitle { font-size: 11px; color: #444; white-space: nowrap; }
+.spacer { flex: 1; }
+
+/* ── MAIN ── */
+#main { display: flex; flex: 1; overflow: hidden; min-height: 0; }
+
+/* ── LEFT PANEL ── */
+#left-panel {
+  flex: 0 0 40%; min-width: 200px;
+  background: #0e0e16;
+  display: flex; flex-direction: column; overflow: hidden;
+}
+
+/* ── RESIZE DIVIDER ── */
+#resize-divider {
+  flex: 0 0 6px; width: 6px;
+  background: #0e0e16;
+  border-left: 1px solid #1a1a2e; border-right: 1px solid #1a1a2e;
+  cursor: col-resize; position: relative;
+  transition: background 0.12s;
+  flex-shrink: 0;
+}
+#resize-divider:hover, #resize-divider.dragging {
+  background: #161620;
+}
+#resize-divider::after {
+  content: ''; position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px; height: 36px;
+  background: #3a3020; border-radius: 1px;
+  opacity: 0; transition: opacity 0.14s;
+}
+#resize-divider:hover::after, #resize-divider.dragging::after { opacity: 1; }
+#left-top {
+  padding: 10px 14px 8px;
+  border-bottom: 1px solid #1a1a2a;
+  flex-shrink: 0;
+}
+#stats-line {
+  font-size: 11px; color: #555; margin-bottom: 7px; line-height: 1.5;
+}
+#stats-line .hi { color: #C9A84C; }
+#left-controls { display: flex; align-items: center; gap: 10px; }
+#left-controls label {
+  font-size: 11px; color: #777;
+  display: flex; align-items: center; gap: 5px; cursor: pointer;
+}
+#left-controls input[type="checkbox"] { cursor: pointer; accent-color: #C9A84C; }
+.ctrl-sm {
+  background: none; border: 1px solid #2a2a3a; color: #444;
+  font-size: 10px; padding: 2px 8px; border-radius: 3px; cursor: pointer;
+  font-family: inherit; margin-left: auto;
+  transition: color 0.12s, border-color 0.12s;
+}
+.ctrl-sm:hover { color: #999; border-color: #3a3a4a; }
+
+#tree-scroll { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 6px 0 20px; }
+
+/* ── PART ── */
+.part-section { margin-bottom: 1px; }
+.part-header {
+  display: flex; align-items: center; gap: 7px;
+  padding: 7px 14px 7px 12px;
+  cursor: pointer; user-select: none;
+  transition: background 0.1s;
+}
+.part-header:hover { background: #111118; }
+.part-arrow {
+  font-size: 10px; color: #5a4a10; width: 10px; flex-shrink: 0;
+  transition: transform 0.15s; display: inline-block;
+}
+.part-header.open .part-arrow { transform: rotate(90deg); }
+.part-name { font-size: 13px; font-weight: 700; color: #C9A84C; flex: 1; }
+.part-roman { font-size: 10px; color: #554a20; font-family: monospace; }
+.part-cnt {
+  font-size: 9px; padding: 1px 6px; border-radius: 10px;
+  background: #1a1a2a; color: #444;
+}
+.part-cnt.live { background: #1c1a08; color: #7a6a2a; }
+
+/* ── QUESTION LIST ── */
+.q-list { display: none; }
+.q-list.open { display: block; }
+
+/* ── QUESTION ROW ── */
+.q-wrap {}
+.q-row {
+  display: flex; align-items: center; gap: 6px;
+  padding: 4px 12px 4px 26px;
+  cursor: pointer; user-select: none;
+  transition: background 0.08s;
+}
+.q-row:hover { background: #0d0d14; }
+.q-arrow {
+  font-size: 9px; color: #333; width: 9px; flex-shrink: 0;
+  transition: transform 0.12s; display: inline-block;
+}
+.q-row.open .q-arrow { transform: rotate(90deg); }
+.q-num { font-size: 11px; color: #444; font-family: monospace; min-width: 34px; flex-shrink: 0; }
+.q-title-text { font-size: 12px; color: #555; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.q-row.live .q-title-text { color: #aaa; }
+.q-row.full .q-title-text { color: #c8c8c8; }
+.q-row.live .q-num { color: #666; }
+.q-badge {
+  font-size: 9px; padding: 1px 5px; border-radius: 8px; flex-shrink: 0;
+  background: #1a1a2a; color: #333;
+}
+.q-badge.partial { background: #1c1a08; color: #6a5a20; }
+.q-badge.full    { background: #151c08; color: #5a7820; }
+
+/* ── ARTICLE LIST ── */
+.a-list { display: none; }
+.a-list.open { display: block; }
+
+/* ── ARTICLE ROW ── */
+.a-row {
+  display: flex; align-items: center; gap: 6px;
+  padding: 3px 12px 3px 48px;
+  cursor: default; user-select: none;
+  transition: background 0.08s;
+}
+.a-row.avail { cursor: pointer; }
+.a-row.avail:hover { background: #0d0d14; }
+.a-row.sel { background: #161610 !important; }
+.a-dot { width: 5px; height: 5px; border-radius: 50%; background: #2a2a3a; flex-shrink: 0; }
+.a-row.avail .a-dot { background: #4a3a18; }
+.a-row.sel .a-dot { background: #C9A84C; }
+.a-num { font-size: 10px; color: #333; font-family: monospace; min-width: 22px; flex-shrink: 0; }
+.a-row.avail .a-num { color: #666; }
+.a-title-text { font-size: 11px; color: #3a3a3a; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.a-row.avail .a-title-text { color: #888; }
+.a-row.sel .a-title-text { color: #ccc; }
+.a-day-tag { font-size: 10px; color: #3a3020; font-family: monospace; flex-shrink: 0; }
+.a-row.avail .a-day-tag { color: #5a4a1a; }
+.a-pending-dot { width: 4px; height: 4px; border-radius: 50%; background: #222230; flex-shrink: 0; }
+
+/* ── RIGHT PANEL ── */
+#right-panel {
+  flex: 1; min-width: 0;
+  background: #0a0a0f;
+  display: flex; flex-direction: column; overflow: hidden;
+}
+
+/* ── LANDING INDEX VIEW ── */
+#welcome {
+  flex: 1; overflow-y: auto;
+}
+.landing-header {
+  padding: 18px 24px 14px;
+  border-bottom: 1px solid #1a1a2a;
+  background: #0e0e16;
+}
+.landing-title {
+  font-size: 15px; font-weight: 700; color: #C9A84C;
+  margin-bottom: 4px; letter-spacing: 0.01em;
+}
+.landing-subtitle {
+  font-size: 11px; color: #4a3a18;
+}
+.landing-part-block {
+  border-bottom: 1px solid #0f0f18;
+}
+.landing-part-head {
+  padding: 9px 24px 7px;
+  background: #0d0d14;
+  border-bottom: 1px solid #141420;
+  display: flex; align-items: center; gap: 8px;
+  cursor: pointer;
+}
+.landing-part-toggle {
+  font-size: 9px; color: #C9A84C; flex-shrink: 0; user-select: none;
+}
+.landing-part-name {
+  font-size: 12px; font-weight: 700; color: #9a8432; letter-spacing: 0.01em;
+}
+.landing-part-roman {
+  font-size: 10px; color: #443820; font-family: monospace;
+}
+.landing-coming-soon {
+  font-size: 10px; color: #2a2a3a; font-style: italic; margin-left: 4px;
+}
+.landing-q-block {
+  padding: 8px 24px 8px 32px;
+  border-bottom: 1px solid #0d0d12;
+}
+.landing-q-title {
+  font-size: 11px; color: #666; margin-bottom: 6px;
+}
+.landing-q-title .q-label {
+  font-family: monospace; color: #554a20;
+}
+.landing-articles {
+  display: flex; flex-wrap: wrap; gap: 5px;
+}
+.landing-art-link {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 10px; color: #7a6a2a;
+  background: #111008; border: 1px solid #222018;
+  border-radius: 4px; padding: 3px 9px;
+  cursor: pointer; text-decoration: none;
+  transition: color 0.1s, background 0.1s, border-color 0.1s;
+  white-space: nowrap; font-family: monospace;
+}
+.landing-art-link:hover {
+  color: #C9A84C; background: #181408; border-color: #3a3020;
+}
+.landing-art-day {
+  font-size: 9px; color: #4a3a18; font-family: sans-serif;
+}
+.landing-art-link:hover .landing-art-day { color: #7a6020; }
+.landing-art-unavail {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 10px; color: #2a2a3a;
+  background: #0e0e15; border: 1px solid #1a1a22;
+  border-radius: 4px; padding: 3px 9px;
+  white-space: nowrap; font-family: monospace;
+  cursor: default;
+}
+
+/* Content area */
+#content-area { flex: 1; display: none; flex-direction: column; overflow: hidden; }
+
+#content-meta {
+  padding: 11px 16px 9px;
+  background: #0e0e16; border-bottom: 1px solid #1a1a2e;
+  flex-shrink: 0;
+}
+.c-ref { font-size: 13px; font-weight: 700; color: #C9A84C; font-family: monospace; margin-bottom: 2px; }
+.c-title { font-size: 13px; color: #ccc; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.c-day { font-size: 11px; color: #4a4a4a; margin-bottom: 8px; }
+.toggle-row { display: flex; gap: 6px; }
+.tgl-btn {
+  background: #1a1a2a; border: 1px solid #2a2a3a; color: #555;
+  padding: 4px 12px; border-radius: 4px; cursor: pointer;
+  font-size: 11px; font-family: inherit;
+  transition: background 0.12s, color 0.12s, border-color 0.12s;
+}
+.tgl-btn:hover:not(:disabled) { background: #1e1e30; color: #aaa; }
+.tgl-btn.on { background: #1a180a; color: #C9A84C; border-color: #3a3020; }
+.tgl-btn:disabled { opacity: 0.25; cursor: not-allowed; }
+
+/* Spinner */
+#spinner {
+  display: none; padding: 40px;
+  text-align: center; color: #3a3a3a; font-size: 13px;
+}
+.spin-glyph {
+  display: inline-block;
+  animation: pulseFade 1.2s ease-in-out infinite;
+}
+@keyframes pulseFade { 0%,100%{opacity:0.2} 50%{opacity:0.8} }
+
+/* Markdown body */
+#md-body {
+  flex: 1; overflow-y: auto;
+  padding: 16px 20px 40px;
+  font-size: 13px; line-height: 1.72; color: #b8b8b8;
+  display: none;
+}
+#md-body h1 { font-size: 16px; color: #ddd; margin: 0 0 12px; font-weight: 600; line-height: 1.3; }
+#md-body h2 { font-size: 14px; color: #ccc; margin: 20px 0 8px; font-weight: 600;
+  border-bottom: 1px solid #1a1a2a; padding-bottom: 4px; }
+#md-body h3 { font-size: 13px; color: #bbb; margin: 16px 0 6px; font-weight: 600; }
+#md-body h4 { font-size: 12px; color: #aaa; margin: 12px 0 5px; font-weight: 600; }
+#md-body p  { margin-bottom: 10px; }
+#md-body blockquote {
+  border-left: 2px solid #3a3020; padding-left: 12px;
+  color: #777; margin: 10px 0; font-style: italic;
+}
+#md-body code {
+  background: #151520; padding: 1px 5px; border-radius: 3px;
+  font-size: 11px; font-family: 'Courier New', monospace; color: #aaa;
+}
+#md-body pre {
+  background: #0d0d18; border: 1px solid #1a1a2a;
+  padding: 10px 12px; border-radius: 4px; overflow-x: auto; margin: 10px 0;
+}
+#md-body pre code { background: none; padding: 0; }
+#md-body ul, #md-body ol { padding-left: 18px; margin-bottom: 10px; }
+#md-body li { margin-bottom: 3px; }
+#md-body a { color: #6a5a24; text-decoration: none; }
+#md-body a:hover { color: #C9A84C; }
+#md-body hr { border: none; border-top: 1px solid #1a1a2a; margin: 16px 0; }
+#md-body strong { color: #d0d0d0; font-weight: 600; }
+#md-body em { color: #aaa; }
+
+/* Error */
+#err-msg {
+  display: none; flex: 1;
+  padding: 32px; text-align: center;
+  color: #6a3030; font-size: 12px; line-height: 1.7;
+}
+#err-msg code { font-size: 11px; background: #111; padding: 2px 6px; border-radius: 3px; color: #888; }
+
+/* ── LEFT SUB-TABS ── */
+#left-subtabs {
+  display: flex; gap: 0;
+  margin: 6px 0 4px; border-bottom: 1px solid #1a1a2a;
+}
+.left-subtab {
+  background: none; border: none; outline: none;
+  font-size: 11px; font-family: inherit;
+  color: #555; cursor: pointer;
+  padding: 3px 12px 5px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.12s, border-color 0.12s;
+  letter-spacing: 0.01em;
+}
+.left-subtab:hover { color: #999; }
+.left-subtab.active { color: #C9A84C; border-bottom-color: #C9A84C; }
+
+/* ── SOCIOGRAM PLACEHOLDER PANEL ── */
+#sociogram-panel {
+  flex: 1; overflow-y: auto;
+  display: none; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 40px 24px;
+}
+#summa-sociogram-canvas {
+  /* Phase 3 insertion point — force-directed graph mounts here */
+  width: 100%; flex: 1; min-height: 100px;
+}
+.sg-placeholder {
+  text-align: center; max-width: 300px;
+}
+.sg-title {
+  font-size: 15px; color: #C9A84C; font-weight: 600;
+  margin-bottom: 8px; letter-spacing: 0.02em;
+}
+.sg-sub {
+  font-size: 12px; color: #555; line-height: 1.7;
+  margin-bottom: 14px;
+}
+.sg-note {
+  font-size: 11px; color: #3a3a3a; line-height: 1.65;
+  border-top: 1px solid #1a1a2a; padding-top: 12px;
+  font-style: italic;
+}
+</style>
+</head>
+<body>
+<div id="app">
+
+<!-- HEADER -->
+<div id="header">
+  <div class="hdr-title">C2A2 — Summa Explorer</div>
+  <div class="hdr-subtitle">Summa in a Year · Phase 1</div>
+  <div class="spacer"></div>
+</div>
+
+<!-- MAIN -->
+<div id="main">
+
+  <!-- LEFT PANEL -->
+  <div id="left-panel">
+    <div id="left-top">
+      <div id="stats-line">Loading index…</div>
+      <div id="left-subtabs">
+        <button class="left-subtab active" id="subtab-contents"  onclick="switchLeftTab('contents')">Contents</button>
+        <button class="left-subtab"        id="subtab-sociogram" onclick="switchLeftTab('sociogram')">Sociogram</button>
+      </div>
+      <div id="left-controls">
+        <label>
+          <input type="checkbox" id="show-articles" checked>
+          Show article level
+        </label>
+        <button class="ctrl-sm" onclick="collapseAll()">Collapse all</button>
+      </div>
+    </div>
+    <div id="tree-scroll">
+      <div id="tree"></div>
+    </div>
+    <div id="sociogram-panel">
+      <div id="summa-sociogram-canvas">
+        <!-- Phase 3 insertion point: force-directed graph attaches here -->
+        <div class="sg-placeholder">
+          <div class="sg-title">Sociogram — Phase 3</div>
+          <div class="sg-sub">
+            Force-directed article graph with thinker-colored edges.
+            Coming once article coverage reaches critical mass.
+          </div>
+          <div class="sg-note">
+            Will carry the same thinker color key and checkbox filters
+            as the Sociogram Narrator tab.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESIZE DIVIDER -->
+  <div id="resize-divider"></div>
+
+  <!-- RIGHT PANEL -->
+  <div id="right-panel">
+
+    <!-- Landing / index state (shown on load; rebuilt by buildLandingHTML()) -->
+    <div id="welcome">
+      <div class="landing-header">
+        <div class="landing-title">Summa Theologiae — Available Articles</div>
+        <div id="welcome-avail" class="landing-subtitle">Loading…</div>
+      </div>
+    </div>
+
+    <!-- Content state (shown after selecting an article) -->
+    <div id="content-area">
+      <div id="content-meta">
+        <div class="c-ref" id="c-ref">—</div>
+        <div class="c-title" id="c-title">—</div>
+        <div class="c-day" id="c-day">—</div>
+        <div class="toggle-row">
+          <button class="tgl-btn on" id="btn-transcript" onclick="switchMode('transcript')">Transcript</button>
+          <button class="tgl-btn"   id="btn-synthesis"  onclick="switchMode('synthesis')">Commentary</button>
+          <span style="flex:1"></span>
+          <button class="tgl-btn" id="btn-back-index" onclick="showLanding()" title="Return to article index">↩ Index</button>
+        </div>
+      </div>
+      <div id="spinner"><span class="spin-glyph">⬡</span> Fetching…</div>
+      <div id="md-body"></div>
+    </div>
+
+    <!-- Error state -->
+    <div id="err-msg"></div>
+
+  </div><!-- /right-panel -->
+
+</div><!-- /main -->
+</div><!-- /app -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+<script>
+/* ═══════════════════════════════════════════
+   CONSTANTS
+═══════════════════════════════════════════ */
+const VAULT_BASE_LOCAL = '../../Summa 2026 in a Year/vault';
+const VAULT_BASE_PROD  = '../summa/vault';
+
+const PART_ORDER = ['I', 'I-II', 'II-II', 'III'];
+const PART_META  = {
+  'I':     { name: 'Prima Pars',        roman: 'I'     },
+  'I-II':  { name: 'Prima Secundae',    roman: 'I-II'  },
+  'II-II': { name: 'Secunda Secundae',  roman: 'II-II' },
+  'III':   { name: 'Tertia Pars',       roman: 'III'   },
+};
+
+/* ═══════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════ */
+var landingHTML     = '';   // populated by buildLandingHTML() after index loads
+var vaultBase       = null;
+var indexData       = {};   // ref → entry
+var treeData        = {};   // partCode → { name, questions: { n → {…} } }
+var partOpen        = { 'I': true, 'I-II': false, 'II-II': false, 'III': false };
+var qOpen           = {};   // 'I.Q1' → bool
+var selectedRef     = null;
+var currentMode     = 'transcript';
+var showArticles    = true;
+
+/* ═══════════════════════════════════════════
+   INIT — try LOCAL then PROD
+═══════════════════════════════════════════ */
+async function init() {
+  var loaded    = false;
+  var lastError = '';
+  var bases     = [VAULT_BASE_LOCAL, VAULT_BASE_PROD];
+
+  for (var i = 0; i < bases.length; i++) {
+    var base = bases[i];
+    try {
+      var url  = encodeURI(base + '/refs/summa_index.json');
+      console.log('[Summa] Trying:', url);
+      var resp = await fetch(url);
+      if (resp.ok) {
+        indexData = await resp.json();
+        vaultBase = base;
+        loaded    = true;
+        console.log('[Summa] Loaded index from:', base, '—', Object.keys(indexData).length, 'entries');
+        break;
+      } else {
+        lastError = 'HTTP ' + resp.status + ' from ' + base;
+        console.warn('[Summa] Not found at:', url, '(' + resp.status + ')');
+      }
+    } catch (e) {
+      lastError = e.message || String(e);
+      console.warn('[Summa] Fetch error for', base + ':', lastError);
+    }
+  }
+
+  if (!loaded) {
+    console.error('[Summa] Could not load summa_index.json from any path. Last error:', lastError);
+
+    /* Small header error */
+    document.getElementById('stats-line').innerHTML =
+      '<span style="color:#884444">⚠ Could not load summa_index.json</span>';
+    document.getElementById('welcome-avail').textContent = 'Index unavailable';
+
+    /* Prominent error card inside the tree area — distinguish file:// vs HTTP 404 */
+    var isFileProtocol = window.location.protocol === 'file:';
+    var errHeading, errBody;
+    if (isFileProtocol) {
+      errHeading = '⚠ Cannot load via file://';
+      errBody =
+        '<div style="color:#555;margin-bottom:12px">You must serve this page over HTTP — opening it directly with <code>file://</code> blocks fetch requests.</div>' +
+        '<div style="color:#555;font-size:11px">Run the local server from your <strong style="color:#777">Projects/</strong> folder:<br>' +
+        '<code style="background:#111;padding:2px 6px;border-radius:3px;color:#888;font-size:10px">' +
+        'cd ~/Documents/Claude/Projects &amp;&amp; python3 -m http.server 8080' +
+        '</code><br>Then open <code style="color:#888">http://localhost:8080/RC%20Karpathy%20Wiki%20Project/wiki/summa_explorer.html</code></div>';
+    } else {
+      errHeading = '⚠ Index not found';
+      errBody =
+        '<div style="color:#555;margin-bottom:12px">Tried these URLs — neither responded with 200:</div>' +
+        '<div style="background:#0d0d14;border:1px solid #2a1a1a;border-radius:4px;padding:10px 12px;margin-bottom:12px;font-family:monospace;font-size:10px;color:#666;word-break:break-all">' +
+        '1. ' + esc(VAULT_BASE_LOCAL + '/refs/summa_index.json') + '<br>' +
+        '2. ' + esc(VAULT_BASE_PROD  + '/refs/summa_index.json') +
+        '</div>' +
+        '<div style="color:#555;font-size:11px">Run the local server from your <strong style="color:#777">Projects/</strong> folder:<br>' +
+        '<code style="background:#111;padding:2px 6px;border-radius:3px;color:#888;font-size:10px">' +
+        'cd ~/Documents/Claude/Projects &amp;&amp; python3 -m http.server 8080' +
+        '</code></div>';
+    }
+    document.getElementById('tree').innerHTML =
+      '<div style="padding:20px 16px;color:#664444;font-size:12px;line-height:1.8">' +
+      '<div style="font-size:13px;color:#884444;font-weight:600;margin-bottom:10px">' + errHeading + '</div>' +
+      errBody +
+      '<div style="color:#3a3a3a;font-size:10px;margin-top:10px">Or double-click <strong style="color:#444">launch_summa.command</strong> in Finder.</div>' +
+      '</div>';
+    return;
+  }
+
+  try {
+    buildTreeData();
+    buildLandingHTML();
+    renderStats();
+    renderTree();
+  } catch (e) {
+    console.error('[Summa] Error building tree:', e);
+    document.getElementById('stats-line').innerHTML =
+      '<span style="color:#884444">⚠ Error building tree: ' + esc(e.message) + '</span>';
+    document.getElementById('tree').innerHTML =
+      '<div style="padding:20px 16px;color:#664444;font-size:12px">' +
+      '<strong>Tree build error:</strong><br><code style="font-size:10px">' + esc(e.message) + '</code>' +
+      '</div>';
+  }
+}
+
+/* ═══════════════════════════════════════════
+   BUILD TREE DATA
+═══════════════════════════════════════════ */
+function buildTreeData() {
+  treeData = {};
+  var refs = Object.keys(indexData);
+  for (var i = 0; i < refs.length; i++) {
+    var ref   = refs[i];
+    var e     = indexData[ref];
+    var pc    = e.part_code;
+    var qnum  = e.question;
+
+    if (!treeData[pc]) {
+      treeData[pc] = { name: e.part, questions: {} };
+    }
+    var qs = treeData[pc].questions;
+    if (!qs[qnum]) {
+      qs[qnum] = {
+        num:            qnum,
+        title:          e.question_title || ('Question ' + qnum),
+        articles:       [],
+        availableCount: 0,
+        totalCount:     0
+      };
+    }
+    var q = qs[qnum];
+    q.articles.push({
+      ref:        ref,
+      articleNum: e.article,
+      title:      e.title,
+      day:        e.day,
+      available:  e.available,
+      transcript: e.transcript,
+      synthesis:  e.synthesis
+    });
+    q.totalCount++;
+    if (e.available) q.availableCount++;
+  }
+
+  // Sort articles numerically within each question
+  for (var pc in treeData) {
+    var qs = treeData[pc].questions;
+    for (var qn in qs) {
+      qs[qn].articles.sort(function(a, b) { return a.articleNum - b.articleNum; });
+    }
+  }
+}
+
+/* ═══════════════════════════════════════════
+   BUILD LANDING INDEX HTML
+═══════════════════════════════════════════ */
+function buildLandingHTML() {
+  var html =
+    '<div class="landing-header">' +
+      '<div class="landing-title">Summa Theologiae — Available Articles</div>' +
+      '<div id="welcome-avail" class="landing-subtitle">Loading…</div>' +
+    '</div>';
+
+  for (var i = 0; i < PART_ORDER.length; i++) {
+    var pc   = PART_ORDER[i];
+    var pd   = treeData[pc];
+    var meta = PART_META[pc];
+
+    var expanded    = (pc === 'I');
+    var bodyDisplay = expanded ? '' : ' style="display:none"';
+    var arrow       = expanded ? '&#9660;' : '&#9654;';
+
+    html += '<div class="landing-part-block">' +
+      '<div class="landing-part-head" data-part="' + esc(pc) + '">' +
+      '<span class="landing-part-toggle">' + arrow + '</span>' +
+      '<span class="landing-part-name">' + esc(meta.name) + '</span>' +
+      '<span class="landing-part-roman">(' + esc(meta.roman) + ')</span>';
+
+    if (!pd) {
+      html += '<span class="landing-coming-soon">Coming soon</span>';
+      html += '</div></div>';
+      continue;
+    }
+
+    var qNums = Object.keys(pd.questions).map(Number).sort(function(a, b) { return a - b; });
+    html += '</div>';  /* close part-head */
+
+    html += '<div id="landing-part-' + esc(pc) + '-body"' + bodyDisplay + '>';
+
+    for (var j = 0; j < qNums.length; j++) {
+      var q = pd.questions[qNums[j]];
+      /* show all questions, including those with no available articles yet */
+
+      html += '<div class="landing-q-block">' +
+        '<div class="landing-q-title"><span class="q-label">Q' + q.num + '</span> — ' + esc(q.title) + '</div>' +
+        '<div class="landing-articles">';
+
+      for (var k = 0; k < q.articles.length; k++) {
+        var art = q.articles[k];
+        if (art.available) {
+          html += '<a class="landing-art-link" data-ref="' + esc(art.ref) + '" href="#">' +
+            'A' + art.articleNum;
+          if (art.day) {
+            html += '<span class="landing-art-day">Day ' + art.day + '</span>';
+          }
+          html += '</a>';
+        } else {
+          html += '<span class="landing-art-unavail">A' + art.articleNum + '</span>';
+        }
+      }
+
+      html += '</div></div>';
+    }
+
+    html += '</div>';  /* close part-body */
+    html += '</div>';  /* close part-block */
+  }
+
+  landingHTML = html;
+  var welcome = document.getElementById('welcome');
+  welcome.innerHTML = html;
+
+  /* Single delegated click handler — survives innerHTML replacement */
+  welcome.addEventListener('click', function(e) {
+    var t = e.target;
+
+    /* Part header toggle */
+    var head = t.closest ? t.closest('.landing-part-head') : null;
+    if (!head) {
+      var tt = t;
+      while (tt && tt !== welcome) {
+        if (tt.classList && tt.classList.contains('landing-part-head')) { head = tt; break; }
+        tt = tt.parentNode;
+      }
+    }
+    if (head && head.dataset.part) {
+      var pc   = head.dataset.part;
+      var body = document.getElementById('landing-part-' + pc + '-body');
+      var tog  = head.querySelector('.landing-part-toggle');
+      if (body) {
+        var open = body.style.display !== 'none';
+        body.style.display = open ? 'none' : '';
+        if (tog) tog.innerHTML = open ? '&#9654;' : '&#9660;';
+      }
+      return;
+    }
+
+    /* Article link */
+    var link = t.closest ? t.closest('.landing-art-link') : null;
+    /* fallback for browsers without closest */
+    if (!link) {
+      while (t && t !== welcome) {
+        if (t.classList && t.classList.contains('landing-art-link')) { link = t; break; }
+        t = t.parentNode;
+      }
+    }
+    if (!link || !link.dataset.ref) return;
+    e.preventDefault();
+    loadArticle(link.dataset.ref);
+  });
+}
+
+/* ═══════════════════════════════════════════
+   SHOW LANDING (restore index view)
+═══════════════════════════════════════════ */
+function showLanding() {
+  /* Deselect any active article in the tree */
+  if (selectedRef) {
+    var prevEl = document.getElementById('arow-' + selectedRef);
+    if (prevEl) prevEl.classList.remove('sel');
+    selectedRef = null;
+  }
+  document.getElementById('content-area').style.display = 'none';
+  document.getElementById('err-msg').style.display      = 'none';
+  document.getElementById('welcome').style.display      = '';
+}
+
+/* ═══════════════════════════════════════════
+   STATS LINE + WELCOME
+═══════════════════════════════════════════ */
+function renderStats() {
+  var total     = Object.keys(indexData).length;
+  var available = 0;
+  var refs = Object.keys(indexData);
+  for (var i = 0; i < refs.length; i++) {
+    if (indexData[refs[i]].available) available++;
+  }
+
+  var inProgress = PART_ORDER.filter(function(pc) {
+    var pd = treeData[pc];
+    if (!pd) return false;
+    var qs = pd.questions;
+    return Object.keys(qs).some(function(n) { return qs[n].availableCount > 0; });
+  }).map(function(pc) { return PART_META[pc].name; });
+
+  var inProgressStr = inProgress.length > 0
+    ? inProgress.join(', ') + ' in progress'
+    : 'no parts started';
+
+  document.getElementById('stats-line').innerHTML =
+    '<span class="hi">' + available + '</span> of ' +
+    '<span class="hi">' + total + '</span>' +
+    ' articles available — ' + inProgressStr;
+
+  document.getElementById('welcome-avail').innerHTML =
+    available + ' of ' + total + ' articles available &middot; ' + inProgressStr;
+}
+
+/* ═══════════════════════════════════════════
+   RENDER TREE
+═══════════════════════════════════════════ */
+function renderTree() {
+  var container = document.getElementById('tree');
+  container.innerHTML = '';
+  var rendered = 0;
+  for (var i = 0; i < PART_ORDER.length; i++) {
+    var pc = PART_ORDER[i];
+    var pd = treeData[pc];
+    if (!pd) continue;
+    container.appendChild(buildPartEl(pc, pd));
+    rendered++;
+  }
+  if (rendered === 0) {
+    /* Index loaded but no parts matched PART_ORDER — show diagnostic */
+    var foundKeys = Object.keys(treeData).join(', ') || '(none)';
+    console.warn('[Summa] renderTree: no PART_ORDER matches. Keys in treeData:', foundKeys);
+    container.innerHTML =
+      '<div style="padding:20px 16px;color:#555;font-size:11px;line-height:1.8">' +
+      'Index loaded (' + Object.keys(indexData).length + ' entries) but no parts matched.<br>' +
+      'Expected part codes: I, I-II, II-II, III<br>' +
+      'Found: <code style="font-size:10px">' + esc(foundKeys) + '</code>' +
+      '</div>';
+  }
+}
+
+function buildPartEl(pc, pd) {
+  var totalAvail = 0, totalAll = 0;
+  var qkeys = Object.keys(pd.questions);
+  for (var i = 0; i < qkeys.length; i++) {
+    var q = pd.questions[qkeys[i]];
+    totalAvail += q.availableCount;
+    totalAll   += q.totalCount;
+  }
+  var isOpen = partOpen[pc];
+
+  var section = document.createElement('div');
+  section.className = 'part-section';
+  section.dataset.partCode = pc;
+
+  /* Part header */
+  var hdr = document.createElement('div');
+  hdr.className = 'part-header' + (isOpen ? ' open' : '');
+  hdr.dataset.pc = pc;
+  hdr.innerHTML =
+    '<span class="part-arrow">▶</span>' +
+    '<span class="part-name">' + PART_META[pc].name + '</span>' +
+    '<span class="part-roman">(' + PART_META[pc].roman + ')</span>' +
+    '<span class="part-cnt' + (totalAvail > 0 ? ' live' : '') + '">' +
+    totalAvail + '/' + totalAll + '</span>';
+  hdr.onclick = function() { togglePart(this.dataset.pc); };
+  section.appendChild(hdr);
+
+  /* Question list */
+  var qList = document.createElement('div');
+  qList.className = 'q-list' + (isOpen ? ' open' : '');
+  qList.id = 'qlist-' + pc;
+
+  var qNums = Object.keys(pd.questions).map(Number).sort(function(a,b){return a-b;});
+  for (var i = 0; i < qNums.length; i++) {
+    var q = pd.questions[qNums[i]];
+    qList.appendChild(buildQuestionEl(pc, q));
+  }
+  section.appendChild(qList);
+
+  return section;
+}
+
+function buildQuestionEl(pc, q) {
+  var qKey    = pc + '.Q' + q.num;
+  var isOpen  = qOpen[qKey] || false;
+  var hasAvail = q.availableCount > 0;
+  var isFull   = hasAvail && (q.availableCount === q.totalCount);
+
+  var wrap = document.createElement('div');
+  wrap.className = 'q-wrap';
+  wrap.id = 'qwrap-' + qKey;
+
+  /* Question row */
+  var row = document.createElement('div');
+  row.className = 'q-row' +
+    (isFull ? ' full' : hasAvail ? ' live' : '') +
+    (isOpen ? ' open' : '');
+  row.dataset.qkey = qKey;
+
+  var badgeCls = 'q-badge' + (isFull ? ' full' : hasAvail ? ' partial' : '');
+
+  row.innerHTML =
+    '<span class="q-arrow">▶</span>' +
+    '<span class="q-num">Q' + q.num + '</span>' +
+    '<span class="q-title-text">' + esc(q.title) + '</span>' +
+    '<span class="' + badgeCls + '">' + q.availableCount + '/' + q.totalCount + '</span>';
+
+  /* Capture q by value via closure */
+  (function(capturedQ, capturedRow, capturedWrap, capturedQKey) {
+    capturedRow.onclick = function() {
+      onClickQuestion(pc, capturedQ, capturedRow, capturedWrap, capturedQKey);
+    };
+  })(q, row, wrap, qKey);
+
+  wrap.appendChild(row);
+
+  /* Article list */
+  var aList = document.createElement('div');
+  aList.className = 'a-list' + (isOpen && showArticles ? ' open' : '');
+  aList.id = 'alist-' + qKey;
+
+  for (var i = 0; i < q.articles.length; i++) {
+    aList.appendChild(buildArticleEl(q.articles[i]));
+  }
+  wrap.appendChild(aList);
+
+  return wrap;
+}
+
+function buildArticleEl(art) {
+  var row = document.createElement('div');
+  var isSel = art.ref === selectedRef;
+  row.className = 'a-row' + (art.available ? ' avail' : '') + (isSel ? ' sel' : '');
+  row.id = 'arow-' + art.ref;
+  row.dataset.ref = art.ref;
+
+  var artTitle = art.title || ('Article ' + art.articleNum);
+  var dayStr   = art.day ? 'Day ' + art.day : '';
+
+  row.innerHTML =
+    '<span class="a-dot"></span>' +
+    '<span class="a-num">A' + art.articleNum + '</span>' +
+    '<span class="a-title-text">' + esc(artTitle) + '</span>' +
+    (art.available
+      ? '<span class="a-day-tag">' + dayStr + '</span>'
+      : '<span class="a-pending-dot"></span>');
+
+  if (art.available) {
+    (function(ref) {
+      row.onclick = function() { loadArticle(ref); };
+    })(art.ref);
+  }
+
+  return row;
+}
+
+/* ═══════════════════════════════════════════
+   TOGGLE PART
+═══════════════════════════════════════════ */
+function togglePart(pc) {
+  partOpen[pc] = !partOpen[pc];
+  var section = document.querySelector('.part-section[data-part-code="' + pc + '"]');
+  if (!section) {
+    /* fallback: find by scanning */
+    var all = document.querySelectorAll('.part-section');
+    for (var i = 0; i < all.length; i++) {
+      if (all[i].dataset.partCode === pc) { section = all[i]; break; }
+    }
+  }
+  if (!section) return;
+  var hdr   = section.querySelector('.part-header');
+  var qList = section.querySelector('.q-list');
+  if (hdr)   hdr.classList.toggle('open',   partOpen[pc]);
+  if (qList) qList.classList.toggle('open', partOpen[pc]);
+}
+
+/* ═══════════════════════════════════════════
+   TOGGLE QUESTION
+═══════════════════════════════════════════ */
+function onClickQuestion(pc, q, row, wrap, qKey) {
+  /* If articles hidden and q has available: shortcut to first available */
+  if (!showArticles) {
+    if (q.availableCount > 0) {
+      var first = null;
+      for (var i = 0; i < q.articles.length; i++) {
+        if (q.articles[i].available) { first = q.articles[i]; break; }
+      }
+      if (first) { loadArticle(first.ref); }
+    }
+    return;
+  }
+
+  qOpen[qKey] = !qOpen[qKey];
+  row.classList.toggle('open', qOpen[qKey]);
+  var aList = wrap.querySelector('.a-list');
+  if (aList) aList.classList.toggle('open', qOpen[qKey]);
+}
+
+/* ═══════════════════════════════════════════
+   COLLAPSE ALL
+═══════════════════════════════════════════ */
+function collapseAll() {
+  for (var i = 0; i < PART_ORDER.length; i++) {
+    partOpen[PART_ORDER[i]] = false;
+  }
+  qOpen = {};
+  renderTree();
+}
+
+/* ═══════════════════════════════════════════
+   SHOW ARTICLES TOGGLE
+═══════════════════════════════════════════ */
+document.getElementById('show-articles').addEventListener('change', function() {
+  showArticles = this.checked;
+  var lists = document.querySelectorAll('.a-list');
+  for (var i = 0; i < lists.length; i++) {
+    var qKey    = lists[i].id.replace('alist-', '');
+    var isQOpen = qOpen[qKey] || false;
+    lists[i].classList.toggle('open', isQOpen && showArticles);
+  }
+});
+
+/* ═══════════════════════════════════════════
+   LOAD ARTICLE (click on available article row)
+═══════════════════════════════════════════ */
+async function loadArticle(ref) {
+  var entry = indexData[ref];
+  if (!entry || !entry.available) return;
+
+  /* Update tree selection */
+  if (selectedRef) {
+    var prevEl = document.getElementById('arow-' + selectedRef);
+    if (prevEl) prevEl.classList.remove('sel');
+  }
+  selectedRef = ref;
+  var currEl = document.getElementById('arow-' + ref);
+  if (currEl) {
+    currEl.classList.add('sel');
+    currEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  }
+
+  /* Switch to content area */
+  document.getElementById('welcome').style.display      = 'none';
+  document.getElementById('err-msg').style.display      = 'none';
+  var ca = document.getElementById('content-area');
+  ca.style.display = 'flex';
+
+  /* Populate meta header */
+  document.getElementById('c-ref').textContent   = ref;
+  var qTitle  = entry.question_title || ('Question ' + entry.question);
+  var artTitle = entry.title;
+  document.getElementById('c-title').textContent =
+    artTitle ? artTitle : ('Article ' + entry.article + ' — ' + qTitle);
+  document.getElementById('c-day').textContent =
+    (entry.day ? 'Day ' + entry.day + '  ·  ' : '') + entry.part;
+
+  /* Toggle button states */
+  var btnT = document.getElementById('btn-transcript');
+  var btnS = document.getElementById('btn-synthesis');
+  btnT.disabled = !entry.transcript;
+  btnS.disabled = !entry.synthesis;
+
+  /* Ensure current mode is valid */
+  if (currentMode === 'transcript' && !entry.transcript && entry.synthesis) currentMode = 'synthesis';
+  if (currentMode === 'synthesis'  && !entry.synthesis  && entry.transcript) currentMode = 'transcript';
+  btnT.classList.toggle('on', currentMode === 'transcript');
+  btnS.classList.toggle('on', currentMode === 'synthesis');
+
+  await fetchContent(ref, currentMode);
+}
+
+/* ═══════════════════════════════════════════
+   SWITCH TRANSCRIPT / COMMENTARY
+═══════════════════════════════════════════ */
+async function switchMode(mode) {
+  if (!selectedRef) return;
+  var entry = indexData[selectedRef];
+  if (!entry) return;
+  if (mode === 'transcript' && !entry.transcript) return;
+  if (mode === 'synthesis'  && !entry.synthesis)  return;
+
+  currentMode = mode;
+  document.getElementById('btn-transcript').classList.toggle('on', mode === 'transcript');
+  document.getElementById('btn-synthesis').classList.toggle('on',  mode === 'synthesis');
+  await fetchContent(selectedRef, mode);
+}
+
+/* ═══════════════════════════════════════════
+   FETCH + RENDER CONTENT
+═══════════════════════════════════════════ */
+async function fetchContent(ref, mode) {
+  var entry    = indexData[ref];
+  var filePath = mode === 'transcript' ? entry.transcript : entry.synthesis;
+  if (!filePath) return;
+
+  /* Spinner on */
+  document.getElementById('spinner').style.display  = 'block';
+  document.getElementById('md-body').style.display  = 'none';
+  document.getElementById('err-msg').style.display  = 'none';
+
+  try {
+    var url  = encodeURI(vaultBase + '/' + filePath);
+    var resp = await fetch(url);
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    var raw = await resp.text();
+    var md  = stripFrontmatter(raw);
+
+    var mdEl = document.getElementById('md-body');
+    mdEl.innerHTML      = marked.parse(md);
+    mdEl.style.display  = 'block';
+    mdEl.scrollTop      = 0;
+    document.getElementById('spinner').style.display = 'none';
+  } catch (e) {
+    document.getElementById('spinner').style.display = 'none';
+    document.getElementById('md-body').style.display = 'none';
+    var errEl = document.getElementById('err-msg');
+    errEl.style.display = 'flex';
+    errEl.innerHTML =
+      '<div>' +
+      'Could not load <code>' + esc(filePath) + '</code><br><br>' +
+      '<span style="color:#555;font-size:11px">' +
+      'Error: ' + esc(e.message) + '<br><br>' +
+      'If opening via <code>file://</code>, serve the wiki folder with a local server:<br>' +
+      '<code>cd &quot;RC Karpathy Wiki Project/wiki&quot; &amp;&amp; python3 -m http.server 8080</code>' +
+      '</span>' +
+      '</div>';
+  }
+}
+
+/* ═══════════════════════════════════════════
+   HELPERS
+═══════════════════════════════════════════ */
+function stripFrontmatter(text) {
+  /* Strip YAML frontmatter between --- delimiters */
+  if (text.startsWith('---')) {
+    var end = text.indexOf('\n---', 3);
+    if (end !== -1) return text.slice(end + 4).replace(/^\r?\n/, '');
+    var end2 = text.indexOf('\r\n---', 3);
+    if (end2 !== -1) return text.slice(end2 + 5).replace(/^\r?\n/, '');
+  }
+  return text;
+}
+
+function esc(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+/* ═══════════════════════════════════════════
+   LEFT SUB-TAB SWITCHER
+═══════════════════════════════════════════ */
+var activeLeftTab = 'contents';
+
+function switchLeftTab(tab) {
+  if (tab === activeLeftTab) return;
+  activeLeftTab = tab;
+
+  var treeScroll     = document.getElementById('tree-scroll');
+  var sociogramPanel = document.getElementById('sociogram-panel');
+  var leftControls   = document.getElementById('left-controls');
+  var btnContents    = document.getElementById('subtab-contents');
+  var btnSociogram   = document.getElementById('subtab-sociogram');
+
+  if (tab === 'contents') {
+    treeScroll.style.display     = '';
+    sociogramPanel.style.display = 'none';
+    leftControls.style.display   = '';
+    btnContents.classList.add('active');
+    btnSociogram.classList.remove('active');
+  } else {
+    treeScroll.style.display     = 'none';
+    sociogramPanel.style.display = 'flex';
+    leftControls.style.display   = 'none';
+    btnContents.classList.remove('active');
+    btnSociogram.classList.add('active');
+  }
+}
+
+/* ═══════════════════════════════════════════
+   START
+═══════════════════════════════════════════ */
+init();
+
+/* ═══════════════════════════════════════════
+   RESIZE DIVIDER
+═══════════════════════════════════════════ */
+(function() {
+  var divider   = document.getElementById('resize-divider');
+  var leftPanel = document.getElementById('left-panel');
+  var mainEl    = document.getElementById('main');
+  var DEFAULT_LEFT_FRAC = 0.40;   // 40 / 60 default split
+
+  function setLeftWidth(px) {
+    var mainW = mainEl.getBoundingClientRect().width;
+    var minL  = 200;
+    var minR  = 200;
+    var maxL  = mainW * 0.80;
+    px = Math.max(minL, Math.min(maxL, px, mainW - minR - 6));
+    leftPanel.style.flex  = '0 0 ' + px + 'px';
+    leftPanel.style.width = px + 'px';
+  }
+
+  divider.addEventListener('mousedown', function(e) {
+    e.preventDefault();
+    divider.classList.add('dragging');
+    document.body.style.userSelect = 'none';
+    var startX = e.clientX;
+    var startW = leftPanel.getBoundingClientRect().width;
+
+    function onMove(ev) {
+      setLeftWidth(startW + (ev.clientX - startX));
+    }
+    function onUp() {
+      divider.classList.remove('dragging');
+      document.body.style.userSelect = '';
+      document.removeEventListener('mousemove', onMove);
+      document.removeEventListener('mouseup', onUp);
+    }
+    document.addEventListener('mousemove', onMove);
+    document.addEventListener('mouseup', onUp);
+  });
+
+  divider.addEventListener('dblclick', function() {
+    var mainW = mainEl.getBoundingClientRect().width;
+    leftPanel.style.flex  = '0 0 ' + (mainW * DEFAULT_LEFT_FRAC) + 'px';
+    leftPanel.style.width = (mainW * DEFAULT_LEFT_FRAC) + 'px';
+  });
+})();
+</script>
+</body>
+</html>

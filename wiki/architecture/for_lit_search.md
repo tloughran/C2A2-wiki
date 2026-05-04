@@ -432,32 +432,37 @@ SYSTEMIC-RISK-FLAG: PRESUMPTION-024, ASSUMPTION-022, 024, 026, PRESUMPTION-020 s
 ## Assumptions from Agent 14a (2026-04-16)
 
 [ASSUMPTION] ASSUMPTION-028: Batch 45-file ingestion is equivalent in quality to incremental 5-file daily ingestion
-  Status: [QUEUED]
-  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Status: [QUEUED] [SEARCHED-15a: 2026-04-16] [SEARCHED-15b: 2026-04-16] [DISPOSITIONED-15c: 2026-04-16]
+  15a result: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b result: CHALLENGED (Strong) | Disposition: REVISE (HIGH urgency)
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Item type=ASSUMPTION (stated)
   Search strategy: batch processing quality in NLP pipelines, backlog-clearing effects on extraction accuracy, volume-versus-quality in research-synthesis systems, decision fatigue across sustained extraction sessions
   Notes: Extends PRESUMPTION-026 / ASSUMPTION-027 batch-quality cluster from 16-item triage to 45-file ingestion. Proposed test: compare FINDING-013–017 reversal/revision rate against historical single-ingestion findings.
 
 [ASSUMPTION] ASSUMPTION-029: Single-file HTML architecture is the limiting factor justifying a modular Vite-based refactor for wiki_narration
-  Status: [QUEUED]
-  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Status: [QUEUED] [SEARCHED-15a: 2026-04-16] [SEARCHED-15b: 2026-04-16] [DISPOSITIONED-15c: 2026-04-16]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Item type=ASSUMPTION (stated)
   Search strategy: monolithic vs. modular frontend architecture, maintainability of LLM-generated single-file apps, refactor-cost-vs-feature-velocity tradeoffs, data-embedded HTML anti-patterns
   Notes: First architectural commitment for the visualization layer. Testable post-refactor via edit-reliability and bug-introduction-rate metrics.
 
 [ASSUMPTION] ASSUMPTION-030: Public release of the C2A2 wiki repo should be gated on "benchmarks identified" (criteria TBD)
-  Status: [QUEUED]
-  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Status: [QUEUED] [SEARCHED-15a: 2026-04-16] [SEARCHED-15b: 2026-04-16] [DISPOSITIONED-15c: 2026-04-16]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: PARTIALLY-CHALLENGED (Strong) | Disposition: MONITOR
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Item type=ASSUMPTION (stated)
   Search strategy: open-science release criteria, benchmark-gated publication practices, reproducibility thresholds for interdisciplinary research, release-readiness frameworks
   Notes: Becomes testable once benchmarks are specified. OPEN-020 tracks the definition question.
 
 [ASSUMPTION] ASSUMPTION-031: Parallel subagent processing preserves per-tradition PRS-extraction quality
-  Status: [QUEUED]
-  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Status: [QUEUED] [SEARCHED-15a: 2026-04-16] [SEARCHED-15b: 2026-04-16] [DISPOSITIONED-15c: 2026-04-16]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: CHALLENGED (Strong) | Disposition: REVISE (HIGH urgency — SYSTEMIC-RISK cluster)
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Item type=ASSUMPTION (stated)
   Search strategy: multi-agent task decomposition quality, prompt-correlation effects in parallel LLM calls, inter-rater reliability in LLM extraction, agent specialization vs. generalization tradeoffs
   Notes: Paired with PRESUMPTION-029 (subagent correlation may inflate findings). Re-extraction experiment proposed as test.
 
 [ASSUMPTION] ASSUMPTION-032: Computer-use pixel-level inspection is a sufficient substitute for Chrome MCP during native-app debugging
-  Status: [QUEUED]
-  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Status: [QUEUED] [SEARCHED-15a: 2026-04-16] [SEARCHED-15b: 2026-04-16] [DISPOSITIONED-15c: 2026-04-16]
+  15a result: PARTIALLY-SUPPORTED (Moderate, qualified) | 15b result: PARTIALLY-CHALLENGED (Moderate-Strong) | Disposition: MONITOR (reframe recommended: "degraded fallback" not "sufficient substitute")
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Item type=ASSUMPTION (stated)
   Search strategy: screen-reader vs. DOM-reader diagnostic accuracy, visual-only debugging effectiveness, tool-degradation compensation in software engineering workflows
   Notes: Infrastructure fallback pattern. Testable empirically via diagnosis accuracy comparisons.
 
@@ -466,53 +471,65 @@ SYSTEMIC-RISK-FLAG: PRESUMPTION-024, ASSUMPTION-022, 024, 026, PRESUMPTION-020 s
 ## Presumptions from Agent 14b (2026-04-16)
 
 [PRESUMPTION] PRESUMPTION-029: April 16 pattern-detector findings (13–17) are genuine signals, not artifacts of correlated subagent prompting
-  Status: [QUEUED]
-  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Status: [QUEUED] [SEARCHED-15a: 2026-04-16] [SEARCHED-15b: 2026-04-16] [DISPOSITIONED-15c: 2026-04-16]
+  15a result: NO-SUPPORT-FOUND + NOVELTY FLAG | 15b result: STRONGLY CHALLENGED (Strong) | Disposition: REVISE (HIGH urgency — CRITICAL; SYSTEMIC-RISK cluster)
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Risk: HIGH — extends PRESUMPTION-024 selection-effect concern to the wider findings stream
   Search strategy: apophenia under batch LLM processing, correlated-prompt contamination in multi-agent systems, inter-rater reliability under shared prompts, finding-rate baselines in automated pattern detection
 
 [PRESUMPTION] PRESUMPTION-030: The 8-day version-control gap (April 8–16, 189 uncommitted files) was cosmetic rather than structurally significant
-  Status: [QUEUED]
-  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Status: [QUEUED] [SEARCHED-15a: 2026-04-16] [SEARCHED-15b: 2026-04-16] [DISPOSITIONED-15c: 2026-04-16]
+  15a result: NO-SUPPORT-FOUND | 15b result: STRONGLY CHALLENGED (Strong) | Disposition: REVISE (HIGH urgency)
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Risk: MEDIUM-HIGH — silent corruption during the gap is unrecoverable if present; operational-health metrics (April 15 "fully operational") may have been measured against an unversioned baseline
   Search strategy: version-control discipline in research projects, silent file-corruption detection, CI-less development risks, audit-trail requirements for scientific software
 
 [PRESUMPTION] PRESUMPTION-031: Specialist-rotation schedule (2 thinkers/day, 6 days) provides adequate tradition coverage via orchestrator fallback
-  Status: [QUEUED]
-  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Status: [QUEUED] [SEARCHED-15a: 2026-04-16] [SEARCHED-15b: 2026-04-16] [DISPOSITIONED-15c: 2026-04-16]
+  15a result: PARTIALLY-SUPPORTED (Weak) | 15b result: CHALLENGED (Moderate) | Disposition: MONITOR (HIGH priority)
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Risk: MEDIUM — chronic under-representation of 6 traditions per week could bias the PRS distribution over time
   Search strategy: coverage adequacy in periodic-rotation systems, scheduler fairness metrics, specialist-vs-generalist extraction quality comparisons, queueing theory for rotation with fallback
 
 [PRESUMPTION] PRESUMPTION-032: Morning-handoff channel failures (Gmail stale, Chrome extension down) are isolated events rather than a systemic degradation of Tom's intent-signal
-  Status: [QUEUED]
-  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Status: [QUEUED] [SEARCHED-15a: 2026-04-16] [SEARCHED-15b: 2026-04-16] [DISPOSITIONED-15c: 2026-04-16]
+  15a result: NO-SUPPORT-FOUND (Weak) | 15b result: CHALLENGED (Strong) | Disposition: REVISE (MEDIUM urgency; mirrors PRESUMPTION-023)
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Risk: MEDIUM — if intent-capture is silently degraded, agent priorities drift from Tom's priorities
   Search strategy: cross-channel failure aggregation, operational telemetry in human-AI workflows, silent signal degradation, intent-capture reliability in ambient computing
 
 [PRESUMPTION] PRESUMPTION-033: "Good enough to checkpoint" judgment for wiki_narration.html is an adequate user-facing quality criterion
-  Status: [QUEUED]
-  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Status: [QUEUED] [SEARCHED-15a: 2026-04-16] [SEARCHED-15b: 2026-04-16] [DISPOSITIONED-15c: 2026-04-16]
+  15a result: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate-Strong) | Disposition: MONITOR
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Risk: LOW-MEDIUM — premature checkpoint anchors future rollbacks to a buggy baseline
   Search strategy: evaluator-producer separation in QA, definition-of-done in iterative development, self-assessed quality vs. user-task completion, LLM-as-judge biases
 
 [PRESUMPTION] PRESUMPTION-034: "Daily run" label remains accurate when the run processes a multi-day backlog
-  Status: [QUEUED]
-  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Status: [QUEUED] [SEARCHED-15a: 2026-04-16] [SEARCHED-15b: 2026-04-16] [DISPOSITIONED-15c: 2026-04-16]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (LOW priority — framing correction)
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Risk: LOW — affects trajectory-metric interpretability, not correctness
   Search strategy: naming conventions in periodic systems, temporal attribution in metric aggregation, label/scope drift in continuous pipelines
 
 ---
 
-**Total items: 64** (32 assumptions + 34 presumptions; +11 QUEUED today)
+**Total items: 64** (32 assumptions + 34 presumptions)
 
-Status distribution (2026-04-16, post-14a/14b sixth cycle):
-  Prior 53 items: SEARCHED and DISPOSITIONED (see April 15 summary above)
-  11 new items (ASSUMPTION-028–032 + PRESUMPTION-029–034): QUEUED for 15a/15b
+Status distribution (2026-04-16, post-14a/14b/15a/15b/15c sixth cycle):
+  All 64 items: SEARCHED and DISPOSITIONED
+  11 new items processed 2026-04-16 by 15a/15b/15c
 
-Pipeline status: 53 items complete. 11 new items in queue for next 15a/15b cycle.
-Next step: 15a and 15b process 11 new items. 15d monitors 29 MONITOR items (next: April 20-21). Tom reviews 3 REVISE items still outstanding from April 15 cycle.
-SYSTEMIC-RISK-FLAG (extended): PRESUMPTION-029 extends the "genuineness of LLM-generated cross-tradition patterns" cluster (PRESUMPTION-024, 020; ASSUMPTION-022, 024, 026) to the multi-subagent batch case. Re-extraction experiment proposed as first internal test.
-OPERATIONAL-DRIFT-FLAG (new): PRESUMPTION-030, 031, 032 form a new cluster surfacing silent degradation across version-control, specialist-coverage, and intent-capture channels. Aggregated escalation mechanism is absent (OPEN-022).
+  Cumulative disposition totals (64 items):
+    INCORPORATE: 4 (unchanged — ASSUMPTION-005, 009, 012, 024)
+    MONITOR: 35 (+6 today: ASSUMPTION-029, 030, 032; PRESUMPTION-031, 033, 034)
+    REVISE: 25 (+5 today: ASSUMPTION-028, 031; PRESUMPTION-029, 030, 032)
+    QUEUED: 0
+
+Pipeline status: All 64 items complete. 0 items in queue.
+Next step: 15d monitors 35 MONITOR items (next: April 20-21). Tom reviews 25 REVISE items (8 outstanding from prior cycles, 5 new today; PRESUMPTION-029 and ASSUMPTION-031 are CRITICAL-urgency SYSTEMIC-RISK items).
+SYSTEMIC-RISK-FLAG (extended): PRESUMPTION-029 and ASSUMPTION-031 extend the "genuineness of LLM-generated cross-tradition patterns" cluster (PRESUMPTION-024, 020; ASSUMPTION-022, 024, 026) to the multi-subagent batch case. Re-extraction experiment now recommended as required, not proposed.
+OPERATIONAL-DRIFT-FLAG (confirmed): PRESUMPTION-030 (VCS gap), 031 (rotation coverage), 032 (channel failures) all produced CHALLENGED/STRONGLY CHALLENGED dispositions. Aggregated escalation mechanism is absent (OPEN-022); recommend elevating.
 
 Pipeline status: 42 items complete. 11 items in queue for next 15a/15b cycle.
 Next step: 15a and 15b process 11 new items. 15d monitors 23 MONITOR items weekly (next: April 20).
