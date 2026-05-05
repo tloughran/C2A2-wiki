@@ -431,9 +431,6 @@ def build_connections(files):
     fp_set = {f["filepath"] for f in files}
 
     # PRS-DELTA (a) — sibling edges: traditions/<X>/prs_triplets.md ↔ traditions/<X>/wiki.md
-    # Treat as wikilink type so they survive the 2500-edge cap. Brings the PRS
-    # content layer into the Sociogram graph (it was previously degree 0–1 even
-    # though it's the substantive triplet store).
     sibling_edges = []
     for f in files:
         trad = _tradition_of(f["filepath"])
@@ -447,6 +444,56 @@ def build_connections(files):
                     "bridge": "same",
                 })
     wikilink_edges.extend(sibling_edges)
+
+    # ── PASS C: SUMMA-SPECIFIC STRUCTURAL EDGES ──
+    # Day-continuity: Day-N synthesis → Day-(N+1) synthesis. Treats the Summa
+    # commentary as a temporal spine so the day cluster has internal cohesion
+    # without relying solely on shared-ID coincidence.
+    # Question-continuity: within a single Question that spans multiple days,
+    # each adjacent pair of days gets an edge. Q.5 covers Days 4 and 5, etc.
+    # Both are wikilink-typed so they survive Score-mode reranking with strong
+    # priority and are visually unambiguous (gold).
+    summa_synth = [f for f in files if f.get("summa_kind") == "synthesis" and f.get("summa_day") is not None]
+    summa_synth_by_day = {f["summa_day"]: f for f in summa_synth}
+    for day in sorted(summa_synth_by_day.keys()):
+        nxt = summa_synth_by_day.get(day + 1)
+        if nxt:
+            wikilink_edges.append({
+                "source": summa_synth_by_day[day]["filepath"],
+                "target": nxt["filepath"],
+                "type": "wikilink",
+                "subtype": "summa-day-continuity",
+                "bridge": "same",
+            })
+    # Question-continuity. Group day-files by question; within each question's
+    # day list, link adjacent days. (Avoids double-linking with day-continuity
+    # because we use a separate seen-set.)
+    summa_q_to_days = defaultdict(list)
+    for f in summa_synth:
+        for q in f.get("summa_questions", []):
+            summa_q_to_days[q].append(f["summa_day"])
+    seen_q_pairs = set()
+    for q, day_list in summa_q_to_days.items():
+        ds = sorted(set(day_list))
+        for i in range(len(ds) - 1):
+            a, b = ds[i], ds[i + 1]
+            if (a, b) in seen_q_pairs:
+                continue
+            seen_q_pairs.add((a, b))
+            # Skip if already covered by day-continuity (a + 1 == b)
+            if a + 1 == b:
+                continue
+            sa = summa_synth_by_day.get(a)
+            sb = summa_synth_by_day.get(b)
+            if sa and sb:
+                wikilink_edges.append({
+                    "source": sa["filepath"],
+                    "target": sb["filepath"],
+                    "type": "wikilink",
+                    "subtype": "summa-question-continuity",
+                    "bridge": "same",
+                    "question": q,
+                })
 
     # Thinker-mention edges: bridge prose mentions of a surname back to the
     # tradition wiki page. Architecture/inbox/etc. → tradition is the dominant
@@ -540,6 +587,10 @@ def parse_summa_vault(summa_path):
             by_synth[synth_rel].append(entry)
 
     nodes = []
+    # We also annotate each synthesis node with its day + question numbers so
+    # build_connections() can produce day-continuity and question-continuity
+    # edges later. Stored under the JSON `summa_meta` field; not used by C2A2
+    # logic, only by Summa-specific edge construction.
     for synth_rel in sorted(by_synth.keys()):
         synth_full = summa_root / synth_rel
         if not synth_full.exists():
@@ -557,9 +608,11 @@ def parse_summa_vault(summa_path):
         first_title = (entries[0].get("question_title") or "") if entries else ""
         title = f"Day {day:03d}: {first_title}" if day else extract_title(content)
 
-        # Synthesized filepath that won't collide with anything in the C2A2 wiki.
-        # Group is "summa" — drives the color and the Structure-section checkbox.
-        node_path = f"summa/{synth_rel}"  # e.g. "summa/synthesis/Day-002 - Does God Exist - Contemporary.md"
+        node_path = f"summa/{synth_rel}"
+        # Distinct question numbers covered by this synthesis day
+        questions = sorted({
+            e.get("question") for e in entries if e.get("question") is not None
+        })
 
         nodes.append({
             "filepath": node_path,
@@ -572,7 +625,39 @@ def parse_summa_vault(summa_path):
             "thinker_mentions": extract_thinker_mentions(content),
             "size_bytes": len(content.encode("utf-8")),
             "content": content[:1500],
+            # Summa-specific metadata for Pass-C edge construction
+            "summa_kind": "synthesis",
+            "summa_day":  day,
+            "summa_questions": questions,
         })
+
+    # PASS C — also include refs/*.md as Summa nodes. The most important is
+    # `refs/Karpathy wiki bridges.md` which explicitly cross-walks Summa days
+    # to C2A2 PRS triplets and traditions; it'll act as a hub node bridging
+    # the two vaults. Other refs files (e.g. genealogy maps) join too.
+    refs_dir = summa_root / "refs"
+    if refs_dir.is_dir():
+        for ref_md in sorted(refs_dir.glob("*.md")):
+            try:
+                content = ref_md.read_text(encoding="utf-8", errors="replace")
+            except Exception:
+                content = ""
+            node_path = f"summa/refs/{ref_md.name}"
+            nodes.append({
+                "filepath": node_path,
+                "filename": ref_md.name,
+                "directory": "summa",
+                "date": "",
+                "title": extract_title(content) or ref_md.stem,
+                "wikilinks": extract_wikilinks(content),
+                "references": extract_references(content),
+                "thinker_mentions": extract_thinker_mentions(content),
+                "size_bytes": len(content.encode("utf-8")),
+                "content": content[:1500],
+                "summa_kind": "refs",
+                "summa_day": None,
+                "summa_questions": [],
+            })
 
     return nodes
 
