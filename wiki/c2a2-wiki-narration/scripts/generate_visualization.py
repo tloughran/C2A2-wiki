@@ -354,6 +354,15 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
           <option value="discipline-year">Discipline × Year</option>
         </select>
       </label>
+      <label style="font-size:11px;display:flex;align-items:center;gap:4px;cursor:pointer;" title="Picks which edges count as 'top' when there are more edges than fit on screen. Zoom in to see weaker edges.">Score:
+        <select id="score-mode" onchange="setScoreMode(this.value)" style="font-size:11px;background:#1a1a2a;color:#e0e0e0;border:1px solid #3a3a4a;border-radius:3px;padding:1px 3px;">
+          <option value="balanced" selected>Balanced</option>
+          <option value="connected">Connected</option>
+          <option value="cross-tradition">Cross-tradition</option>
+          <option value="editorial">Editorial</option>
+        </select>
+      </label>
+      <button id="btn-edge-help" onclick="toggleEdgeHelp(event)" style="width:18px;height:18px;border-radius:50%;background:#1a1a2a;color:#888;border:1px solid #3a3a4a;font-size:11px;font-weight:600;cursor:pointer;padding:0;line-height:16px;text-align:center;" title="How adaptive edge density works">?</button>
       <span style="width:1px;height:20px;background:#3a3a4a;"></span>
       <button id="btn-history" onclick="startTour('history')">History</button>
       <button id="btn-recent" onclick="startTour('recent')">Recent</button>
@@ -410,6 +419,21 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
       <div id="tooltip"></div>
       <div id="limit-warning" style="display:none;position:absolute;bottom:8px;left:50%;transform:translateX(-50%);background:#8B4513;color:#fff;padding:6px 16px;border-radius:6px;font-size:12px;z-index:20;white-space:nowrap;"></div>
       <div id="graph-status" style="position:absolute;bottom:8px;left:8px;font-size:11px;color:#666;z-index:10;"></div>
+      <div id="edge-status" style="position:absolute;bottom:8px;left:50%;transform:translateX(-50%);font-size:11px;color:#888;z-index:10;background:rgba(20,20,30,0.7);padding:2px 8px;border-radius:3px;border:1px solid #2a2a3e;"></div>
+      <!-- Adaptive-density help popover (anchor-positioned just below the toolbar) -->
+      <div id="edge-help-popover" style="display:none;position:absolute;top:42px;right:8px;width:340px;background:#14141e;border:1px solid #3a3a4a;border-radius:6px;padding:12px 28px 12px 14px;z-index:250;font-size:11.5px;line-height:1.5;color:#d0d0d0;box-shadow:0 4px 16px rgba(0,0,0,0.55);">
+        <button onclick="toggleEdgeHelp(event)" style="position:absolute;top:4px;right:6px;background:transparent;border:none;color:#888;font-size:18px;line-height:1;cursor:pointer;padding:2px 6px;">&times;</button>
+        <div style="font-size:11px;font-weight:600;color:#C9A84C;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.6px;">How edge density adapts</div>
+        <p style="margin:4px 0;">The graph holds many more edges than fit on screen. The renderer shows the top edges by score, and weaker ones fade in as you (a) zoom in or (b) narrow filters by checking off types/traditions/structure.</p>
+        <p style="margin:6px 0 4px 0;"><strong style="color:#f0f0f0;">Score modes</strong> change which edges count as "top":</p>
+        <ul style="margin:6px 0 0 0;padding-left:18px;">
+          <li style="margin-bottom:4px;"><strong>Balanced</strong>: combines structural density, edge type, multiplicity, and cross-bucket bridging.</li>
+          <li style="margin-bottom:4px;"><strong>Connected</strong>: pure structural density — surfaces the hubs.</li>
+          <li style="margin-bottom:4px;"><strong>Cross-tradition</strong>: privileges edges that bridge between traditions or between traditions and architecture.</li>
+          <li style="margin-bottom:4px;"><strong>Editorial</strong>: privileges explicit connections (wikilinks > mentions > references).</li>
+        </ul>
+        <p style="margin:8px 0 0 0;font-size:10.5px;color:#888;">Edge counts shown bottom-center: visible / total surviving cuts. Hover any edge for its type, bridge, and reference ID.</p>
+      </div>
       <div id="edge-legend" style="position:absolute;top:8px;right:8px;background:rgba(20,20,30,0.85);border:1px solid #2a2a3e;border-radius:5px;padding:6px 10px;font-size:10px;color:#ccc;line-height:1.6;z-index:15;pointer-events:none;">
         <div style="font-weight:600;color:#888;text-transform:uppercase;letter-spacing:0.5px;font-size:9px;margin-bottom:3px;">Edges</div>
         <div><span style="display:inline-block;width:18px;height:2px;background:#C9A84C;vertical-align:middle;margin-right:4px;"></span>Wikilink</div>
@@ -536,6 +560,52 @@ var EDGE_COLOR = {
 };
 var showEdgeType   = { wikilink: true, mention: true, reference: true };
 var showEdgeBridge = { cross: true, same: true };
+
+// ── ADAPTIVE EDGE DENSITY (Pass A) ──
+// Visible edge count = top-N by score from cut-survivors, where N grows with
+// zoom. Mode picks the score formula. Switching mode/zoom/cuts re-evaluates
+// visibility without rerunning the force simulation — positions stay stable.
+var scoreMode = 'balanced';                  // 'balanced' | 'connected' | 'cross-tradition' | 'editorial'
+var BASE_EDGE_BUDGET = 2500;                 // edges visible at 1× zoom
+var currentZoomScale = 1.0;                  // updated by the zoom handler
+var _zoomRafPending = false;                 // rAF debouncer for zoom→re-render
+
+function computeEdgeScore(e) {
+  var deg = e.score_deg || 0;
+  var t   = e.score_type || 1;
+  var b   = e.score_bridge || 0;
+  switch (scoreMode) {
+    case 'connected':       return deg;
+    case 'cross-tradition': return b * 5 + deg;
+    case 'editorial':       return t * 5 + deg;
+    case 'balanced':
+    default:                return deg + t + b;
+  }
+}
+function visibilityBudget() {
+  // Logarithmic growth: each ×2 zoom roughly doubles budget, capped at 4× base.
+  var growth = Math.max(1, Math.min(4, currentZoomScale));
+  return Math.floor(BASE_EDGE_BUDGET * growth);
+}
+function setScoreMode(value) {
+  scoreMode = value;
+  applyEdgeFilters();
+}
+function toggleEdgeHelp(ev) {
+  if (ev) ev.stopPropagation();
+  var pop = document.getElementById('edge-help-popover');
+  if (!pop) return;
+  pop.style.display = (pop.style.display === 'block') ? 'none' : 'block';
+}
+// Click-outside-to-close for the edge-help popover.
+document.addEventListener('click', function(ev) {
+  var pop = document.getElementById('edge-help-popover');
+  var btn = document.getElementById('btn-edge-help');
+  if (!pop || pop.style.display !== 'block') return;
+  if (pop.contains(ev.target)) return;
+  if (btn && btn.contains(ev.target)) return;
+  pop.style.display = 'none';
+});
 
 // ── LAYOUT MODE (force semantics) ──
 // 'free' = pure d3 force layout (positions are emergent, no encoded meaning).
@@ -836,13 +906,40 @@ function syncEdgesMaster() {
   if (m) m.checked = allOn;
 }
 function applyEdgeFilters() {
-  d3.selectAll('.link-line')
-    .attr('display', function(d) {
-      var t = d.type || 'reference';
-      var b = d.bridge || 'cross';
-      var on = (showEdgeType[t] !== false) && (showEdgeBridge[b] !== false);
-      return on ? null : 'none';
-    });
+  // Visibility = (passes type-cut) AND (passes bridge-cut) AND (in top-N by score)
+  // where N grows with zoom. Score is recomputed per active mode each call so a
+  // mode change re-ranks instantly without touching the force simulation.
+  var bucket = activeLinks || [];
+  // Step 1: filter by type/bridge cuts
+  var allowed = bucket.filter(function(e) {
+    var t = e.type || 'reference';
+    var b = e.bridge || 'cross';
+    return (showEdgeType[t] !== false) && (showEdgeBridge[b] !== false);
+  });
+  // Step 2: rank by current-mode score
+  allowed.forEach(function(e) { e._renderScore = computeEdgeScore(e); });
+  allowed.sort(function(a, b) { return b._renderScore - a._renderScore; });
+  // Step 3: top-N where N = visibility budget (zoom-scaled)
+  var budget = Math.min(visibilityBudget(), allowed.length);
+  var visibleSet = new Set();
+  for (var i = 0; i < budget; i++) {
+    var e = allowed[i];
+    var key = e.source.id ? e.source.id + '|' + e.target.id : e.source + '|' + e.target;
+    visibleSet.add(key);
+  }
+  // Step 4: paint
+  d3.selectAll('.link-line').attr('display', function(d) {
+    var t = d.type || 'reference';
+    var b = d.bridge || 'cross';
+    var typeBridgeOk = (showEdgeType[t] !== false) && (showEdgeBridge[b] !== false);
+    var key = d.source.id ? d.source.id + '|' + d.target.id : d.source + '|' + d.target;
+    return (typeBridgeOk && visibleSet.has(key)) ? null : 'none';
+  });
+  // Step 5: status indicator
+  var statusEl = document.getElementById('edge-status');
+  if (statusEl) {
+    statusEl.textContent = budget + ' / ' + bucket.length + ' edges';
+  }
 }
 
 // ── GRAPH CONTROLS ──
@@ -1028,6 +1125,16 @@ function initGraph() {
 
   zoomBehavior = d3.zoom().scaleExtent([0.05, 8]).on('zoom', function(event) {
     graphG.attr('transform', event.transform);
+    // Track current zoom so the adaptive-density renderer can grow the visible
+    // edge budget as the user zooms in. Debounced via rAF below.
+    currentZoomScale = event.transform.k;
+    if (!_zoomRafPending) {
+      _zoomRafPending = true;
+      requestAnimationFrame(function() {
+        _zoomRafPending = false;
+        applyEdgeFilters();
+      });
+    }
   });
   svg.call(zoomBehavior);
 
@@ -1195,6 +1302,10 @@ function rebuildGraph() {
       });
     if (holdForces) simulation.stop();
   }
+
+  // Apply adaptive-density edge visibility once the DOM is in place. This is
+  // the first render; subsequent calls happen on zoom / mode / cut changes.
+  applyEdgeFilters();
 
   // Auto-narrate based on current visibility (unless in timeline tour mode)
   if (!currentTrack) generateContextNarration();
