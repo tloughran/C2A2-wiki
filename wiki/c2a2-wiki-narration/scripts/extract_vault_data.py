@@ -497,18 +497,134 @@ def build_connections(files):
     }
 
 
+def parse_summa_vault(summa_path):
+    """Parse a Summa Theologiae vault (separate repo) and return file-node entries
+    that integrate into the C2A2 graph as the 'summa' group.
+
+    The Summa vault has a different structure from the C2A2 wiki:
+      <vault>/refs/summa_index.json   — article→day mapping
+      <vault>/synthesis/Day-NNN - <Title> - Contemporary.md  — commentary nodes
+      <vault>/transcripts/Day-NNN - <Title>.md              — raw transcripts
+
+    We treat each synthesis file as a node (one per day; ~50 days at full
+    coverage). Existing edge logic (build_connections) automatically produces
+    Summa↔C2A2 edges via shared IDs (PRS-NN, FINDING-NN, CROSS-NN, etc.) and
+    via thinker-name mentions in the synthesis prose. Transcripts could become
+    nodes too in a future pass, but synthesis carries the substantive
+    cross-tradition signal and keeps the Summa-side node count modest.
+    """
+    summa_root = Path(summa_path)
+    if not summa_root.is_dir():
+        print(f"Warning: --summa path {summa_path} does not exist; skipping",
+              file=sys.stderr)
+        return []
+
+    index_path = summa_root / "refs" / "summa_index.json"
+    if not index_path.exists():
+        print(f"Warning: Summa index not found at {index_path}; skipping",
+              file=sys.stderr)
+        return []
+
+    try:
+        index = json.loads(index_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        print(f"Warning: failed to parse Summa index: {e}", file=sys.stderr)
+        return []
+
+    # Group articles by their synthesis file (day). Capture the day's
+    # representative title from the first article in each group.
+    by_synth = defaultdict(list)
+    for article_key, entry in index.items():
+        synth_rel = entry.get("synthesis")
+        if synth_rel:
+            by_synth[synth_rel].append(entry)
+
+    nodes = []
+    for synth_rel in sorted(by_synth.keys()):
+        synth_full = summa_root / synth_rel
+        if not synth_full.exists():
+            # Quietly skip days the user hasn't pushed yet — keeps the local
+            # extraction tolerant of partial coverage.
+            continue
+        try:
+            content = synth_full.read_text(encoding="utf-8", errors="replace")
+        except Exception:
+            content = ""
+
+        entries = by_synth[synth_rel]
+        day = entries[0].get("day") if entries else None
+        # Title preference: first article's question_title; fallback to filename
+        first_title = (entries[0].get("question_title") or "") if entries else ""
+        title = f"Day {day:03d}: {first_title}" if day else extract_title(content)
+
+        # Synthesized filepath that won't collide with anything in the C2A2 wiki.
+        # Group is "summa" — drives the color and the Structure-section checkbox.
+        node_path = f"summa/{synth_rel}"  # e.g. "summa/synthesis/Day-002 - Does God Exist - Contemporary.md"
+
+        nodes.append({
+            "filepath": node_path,
+            "filename": synth_full.name,
+            "directory": "summa",
+            "date": "",  # Summa entries are dated by day-number, not Gregorian date
+            "title": title,
+            "wikilinks": extract_wikilinks(content),
+            "references": extract_references(content),
+            "thinker_mentions": extract_thinker_mentions(content),
+            "size_bytes": len(content.encode("utf-8")),
+            "content": content[:1500],
+        })
+
+    return nodes
+
+
+def _parse_args(argv):
+    """Tiny CLI parser. Positional arg = primary vault. --summa <path> = optional
+    second vault (Summa Theologiae companion). Returns (vault_path, summa_path)."""
+    vault_path = None
+    summa_path = None
+    i = 1
+    while i < len(argv):
+        a = argv[i]
+        if a == "--summa" and i + 1 < len(argv):
+            summa_path = argv[i + 1]
+            i += 2
+        elif a.startswith("--"):
+            print(f"Unknown flag: {a}", file=sys.stderr)
+            sys.exit(2)
+        else:
+            if vault_path is None:
+                vault_path = a
+            else:
+                print(f"Unexpected arg: {a}", file=sys.stderr)
+                sys.exit(2)
+            i += 1
+    return vault_path, summa_path
+
+
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python3 extract_vault_data.py /path/to/vault", file=sys.stderr)
+        print("Usage: python3 extract_vault_data.py /path/to/vault [--summa /path/to/summa/vault]",
+              file=sys.stderr)
         sys.exit(1)
 
-    vault_path = sys.argv[1]
-    if not os.path.isdir(vault_path):
-        print(f"Error: {vault_path} is not a directory", file=sys.stderr)
+    vault_path, summa_path = _parse_args(sys.argv)
+    if not vault_path or not os.path.isdir(vault_path):
+        print(f"Error: primary vault {vault_path} is not a directory", file=sys.stderr)
         sys.exit(1)
 
-    # Core scan
+    # Core scan of the C2A2 wiki
     files = scan_vault(vault_path)
+
+    # Optional: append Summa nodes if --summa was given. They join the same
+    # `files` list so existing edge construction (shared-IDs, thinker-mentions)
+    # automatically produces Summa↔C2A2 edges.
+    if summa_path:
+        summa_nodes = parse_summa_vault(summa_path)
+        if summa_nodes:
+            print(f"Summa: added {len(summa_nodes)} synthesis nodes from {summa_path}",
+                  file=sys.stderr)
+            files.extend(summa_nodes)
+
     timeline = build_timeline(files)
     connections = build_connections(files)
 

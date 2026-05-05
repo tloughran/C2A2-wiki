@@ -28,6 +28,7 @@ COLORS = {
     'sessions': '#8A9098',
     'root': '#9A9A9A',
     'tools': '#4E9EA8',
+    'summa': '#A89B6E',           # parchment — Summa Theologiae companion vault (Pass B)
     'traditions/levin':       '#C45B5B',
     'traditions/friston':     '#5A8EAF',
     'traditions/hoffman':     '#C08B3E',
@@ -51,6 +52,7 @@ COLORS = {
 LABEL_OVERRIDES = {
     'master':                 'Master',
     'architecture/changelog': 'Changelog',
+    'summa':                  'Summa',
     'traditions/mcgilchrist': 'McGilchrist',
     'traditions/macintyre':   'MacIntyre',
     'traditions/arkanihamed': 'Arkani-Hamed',
