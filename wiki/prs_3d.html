@@ -19,7 +19,74 @@ body {
   display: flex;
   height: 100vh;
   width: 100vw;
+  position: relative;     /* anchor for help popover and similar overlays */
 }
+
+/* "How filters work" help — small ? button + lightweight popover (not modal) */
+.prs-help-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6px;
+}
+#prs-help-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #1a1a2a;
+  border: 1px solid #3a3a4a;
+  color: #888;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  line-height: 18px;
+  text-align: center;
+}
+#prs-help-btn:hover, #prs-help-btn.active {
+  background: #2a2a3a;
+  color: #C9A84C;
+  border-color: #C9A84C;
+}
+#prs-help-popover {
+  position: fixed;
+  top: 70px;          /* below the page header band */
+  left: 212px;        /* just outside the 200px left panel */
+  width: 300px;
+  background: #14141e;
+  border: 1px solid #3a3a4a;
+  border-radius: 6px;
+  padding: 12px 28px 12px 14px;
+  z-index: 250;
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: #d0d0d0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.55);
+}
+.prs-help-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #C9A84C;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+#prs-help-popover p { margin: 4px 0; }
+#prs-help-popover ul { margin: 6px 0 0 0; padding-left: 18px; }
+#prs-help-popover li { margin-bottom: 5px; }
+#prs-help-popover strong { color: #f0f0f0; }
+.prs-help-close {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  background: transparent;
+  border: none;
+  color: #888;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+.prs-help-close:hover { color: #C9A84C; }
 
 #prs-left-panel {
   width: 200px;
@@ -86,7 +153,7 @@ body {
 }
 .prs-search-hit:hover { background: #2a2a3a; }
 .prs-search-hit .hit-thinker { font-weight: 600; }
-#prs-search-clear {
+#prs-search-clear, #prs-search-reset {
   background: #1a1a2a;
   border: 1px solid #3a3a4a;
   color: #e0e0e0;
@@ -94,10 +161,12 @@ body {
   border-radius: 4px;
   cursor: pointer;
   font-size: 11px;
-  display: none;
   margin-top: 4px;
+  margin-right: 4px;
 }
-#prs-search-clear:hover { background: #2a2a3a; }
+#prs-search-clear { display: none; }   /* Search-only Clear: shown when a query is active */
+#prs-search-reset { display: inline-block; }  /* Always available */
+#prs-search-clear:hover, #prs-search-reset:hover { background: #2a2a3a; }
 
 #canvas-container {
   position: absolute;
@@ -279,6 +348,9 @@ body {
 <div id="prs-layout">
 
 <div id="prs-left-panel">
+  <div class="prs-help-row">
+    <button id="prs-help-btn" onclick="prsToggleHelp(event)" aria-label="How filters work" title="How filters work">?</button>
+  </div>
   <h3>Traditions</h3>
   <div class="prs-filter-item">
     <input type="checkbox" id="prs-chk-all" checked onchange="prsToggleAll(this.checked)">
@@ -286,10 +358,46 @@ body {
   </div>
   <div id="prs-tradition-filters"></div>
   <hr style="border:none;border-top:1px solid #2a2a3a;margin:8px 0">
+  <h3>Edges</h3>
+  <div class="prs-filter-item">
+    <input type="checkbox" id="prs-chk-edges" checked onchange="prsToggleEdges(this.checked)">
+    <span class="prs-filter-label" style="font-weight:600">Edges (threads)</span>
+  </div>
+  <hr style="border:none;border-top:1px solid #2a2a3a;margin:8px 0">
+  <h3>Disciplines</h3>
+  <div class="prs-filter-item">
+    <input type="checkbox" id="prs-chk-all-discs" checked onchange="prsToggleAllDiscs(this.checked)">
+    <span class="prs-filter-label" style="font-weight:600">All</span>
+  </div>
+  <div id="prs-discipline-filters"></div>
+  <hr style="border:none;border-top:1px solid #2a2a3a;margin:8px 0">
+  <h3>Years</h3>
+  <div class="prs-filter-item">
+    <input type="checkbox" id="prs-chk-all-years" checked onchange="prsToggleAllYears(this.checked)">
+    <span class="prs-filter-label" style="font-weight:600">All</span>
+  </div>
+  <div id="prs-year-filters"></div>
+  <hr style="border:none;border-top:1px solid #2a2a3a;margin:8px 0">
   <h3>Search PRS</h3>
   <input type="text" id="prs-search-box" placeholder="Search problems, resources, solutions...">
   <button id="prs-search-clear" onclick="prsClearSearch()">Clear</button>
+  <button id="prs-search-reset" onclick="prsResetAll()" title="Restore the full dataset (all Traditions, Disciplines, Years, Edges, search)">Reset</button>
   <div id="prs-search-results" class="prs-search-results"></div>
+</div>
+
+<!-- Help popover (sibling of left panel so it isn't clipped by overflow-y: auto) -->
+<div id="prs-help-popover" style="display:none;" role="dialog" aria-label="How filters work">
+  <button class="prs-help-close" onclick="prsToggleHelp(event)" aria-label="Close">&times;</button>
+  <div class="prs-help-title">How filters work</div>
+  <div>
+    <p><strong>Each section filters independently.</strong></p>
+    <ul>
+      <li>Within a section (e.g. Traditions), checked items are included &mdash; select Levin + Hoffman to show both.</li>
+      <li>Across sections (Traditions &times; Disciplines &times; Years), a data point must pass every active section simultaneously.</li>
+      <li>Edges only connect two nodes that are both visible (turn off the Edges box to hide them all).</li>
+      <li>Checking everything shows the full dataset. <strong>Reset</strong> restores that state from anywhere.</li>
+    </ul>
+  </div>
 </div>
 
 <div style="flex:1;position:relative;overflow:hidden">
@@ -301,8 +409,7 @@ body {
   <div class="controls">
     <button onclick="resetCamera()">Reset View</button>
     <button id="btn-labels" onclick="toggleLabels()" class="active">Labels</button>
-    <button id="btn-threads" onclick="toggleThreads()" class="active">Threads</button>
-    <button id="btn-discs" onclick="toggleDiscs()" class="active">Disciplines</button>
+    <!-- Threads/Disciplines top buttons removed: superseded by left-panel Edges and Disciplines sections -->
   </div>
 </div>
 
@@ -354,10 +461,15 @@ var scene, camera, renderer, raycaster, mouse;
 var meshes = [];        // all clickable meshes
 var threadLines = [];   // P-R-S connection lines
 var discMeshes = [];    // discipline slice meshes
+var decadeRings = [];   // tagged with userData.decade for per-year filter
 var labelSprites = [];  // text labels
 var showLabels = true;
 var showThreads = true;
-var showDiscs = true;
+// (showDiscs removed — discipline visibility now lives entirely in prsDiscState, set by left-panel checkboxes.)
+// Per-item filter state — populated by buildDisciplineFilters / buildYearFilters
+var prsDiscState = {};   // discipline name -> bool
+var prsYearState = {};   // decade (number) -> bool
+var prsDecades = [];     // [1980, 1990, 2000, ...]
 var selectedMesh = null;
 var hoveredMesh = null;
 
@@ -601,7 +713,12 @@ function buildPRSNodes() {
           opacity: 0.5,
         });
         var line = new THREE.Line(lGeo, lMat);
-        line.userData = { type: 'thread', thinker: triplet.thinker };
+        line.userData = {
+          type: 'thread',
+          thinker: triplet.thinker,
+          mesh1: nodeGroup[li],
+          mesh2: nodeGroup[li + 1]
+        };
         scene.add(line);
         threadLines.push(line);
       }
@@ -656,7 +773,14 @@ function buildCrossConnectionLines() {
             opacity: 0.15,
           });
           var arc = new THREE.Line(arcGeo, arcMat);
-          arc.userData = { type: 'cross', finding: finding };
+          arc.userData = {
+            type: 'cross',
+            finding: finding,
+            thinker1: thinkers[i],
+            thinker2: thinkers[j],
+            mesh1: meshes[r1Idx],
+            mesh2: meshes[r2Idx]
+          };
           scene.add(arc);
           threadLines.push(arc);
         }
@@ -707,20 +831,137 @@ function prsToggleAll(checked) {
   applyPRSFilters();
 }
 
+// ── Centralised node-visibility predicate ──
+// Three filter axes — Traditions × Disciplines × Years — compose with AND.
+// Edges are NOT considered here; this predicate is for nodes only.
+function prsNodeVisible(mesh) {
+  if (!mesh || !mesh.userData) return true;
+  var thinker = mesh.userData.thinker;
+  if (thinker && prsFilterState[thinker] === false) return false;
+  if (thinker) {
+    var disc = THINKER_DISC[thinker];
+    if (disc && prsDiscState[disc] === false) return false;
+  }
+  var triplet = mesh.userData.triplet;
+  if (triplet && triplet.pub_year) {
+    var dec = Math.floor(triplet.pub_year / 10) * 10;
+    if (prsYearState[dec] === false) return false;
+  }
+  return true;
+}
+
 function applyPRSFilters() {
+  // Pass 1 — nodes: composed AND of tradition × discipline × year.
   meshes.forEach(function(m) {
-    if (m.userData.thinker) {
-      m.visible = prsFilterState[m.userData.thinker] !== false;
+    if (m.userData && m.userData.type === 'prs') {
+      m.visible = prsNodeVisible(m);
     }
   });
+  // Pass 2 — edges: never connect to a hidden node. Edges flag gates the whole class.
   threadLines.forEach(function(l) {
-    if (l.userData.thinker) {
-      l.visible = prsFilterState[l.userData.thinker] !== false && showThreads;
-    } else if (l.userData.type === 'cross') {
-      // Cross-connection arcs: visible if both connected thinkers are visible
-      l.visible = showThreads;
+    if (!showThreads) { l.visible = false; return; }
+    var m1 = l.userData && l.userData.mesh1;
+    var m2 = l.userData && l.userData.mesh2;
+    // Both endpoints must exist and be visible after Pass 1.
+    l.visible = !!(m1 && m2 && m1.visible && m2.visible);
+  });
+}
+
+// ── DISCIPLINES (per-discipline filter section) ──
+function prsBuildDisciplineFilters() {
+  var container = document.getElementById('prs-discipline-filters');
+  if (!container) return;
+  var html = '';
+  DISCIPLINES.forEach(function(disc) {
+    prsDiscState[disc] = true;
+    var safeId = 'prs-chk-disc-' + disc.replace(/\s+/g, '-').toLowerCase();
+    html += '<div class="prs-filter-item">';
+    html += '<input type="checkbox" id="' + safeId + '" checked onchange="prsToggleDisc(\'' + disc.replace(/'/g, "\\'") + '\', this.checked)">';
+    html += '<span class="prs-filter-label">' + disc + '</span>';
+    html += '</div>';
+  });
+  container.innerHTML = html;
+}
+
+function prsToggleDisc(disc, checked) {
+  prsDiscState[disc] = checked;
+  applyDiscFilters();
+  applyPRSFilters();   // Disciplines is a data cut: re-evaluate nodes & edges
+  // Sync section master
+  var allChecked = DISCIPLINES.every(function(d) { return prsDiscState[d]; });
+  document.getElementById('prs-chk-all-discs').checked = allChecked;
+}
+
+function prsToggleAllDiscs(checked) {
+  DISCIPLINES.forEach(function(d) {
+    prsDiscState[d] = checked;
+    var safeId = 'prs-chk-disc-' + d.replace(/\s+/g, '-').toLowerCase();
+    var cb = document.getElementById(safeId);
+    if (cb) cb.checked = checked;
+  });
+  applyDiscFilters();
+  applyPRSFilters();   // Disciplines is a data cut: re-evaluate nodes & edges
+}
+
+function applyDiscFilters() {
+  // Discipline wedges — the structural framework. Independent of Tradition/Year cuts:
+  // a wedge shows iff its discipline checkbox is on.
+  discMeshes.forEach(function(m) {
+    if (m.userData && m.userData.discipline) {
+      m.visible = prsDiscState[m.userData.discipline] !== false;
     }
   });
+  // Discipline labels follow the same per-discipline state (gated in updateDiscLabels).
+}
+
+// ── YEARS (per-decade filter section) ──
+function prsBuildYearFilters() {
+  var container = document.getElementById('prs-year-filters');
+  if (!container) return;
+  var html = '';
+  prsDecades.forEach(function(yr) {
+    prsYearState[yr] = true;
+    html += '<div class="prs-filter-item">';
+    html += '<input type="checkbox" id="prs-chk-year-' + yr + '" checked onchange="prsToggleYear(' + yr + ', this.checked)">';
+    html += '<span class="prs-filter-label">' + yr + 's</span>';
+    html += '</div>';
+  });
+  container.innerHTML = html;
+}
+
+function prsToggleYear(yr, checked) {
+  prsYearState[yr] = checked;
+  applyYearFilters();
+  applyPRSFilters();   // Years is a data cut: re-evaluate nodes & edges
+  var allChecked = prsDecades.every(function(d) { return prsYearState[d]; });
+  document.getElementById('prs-chk-all-years').checked = allChecked;
+}
+
+function prsToggleAllYears(checked) {
+  prsDecades.forEach(function(yr) {
+    prsYearState[yr] = checked;
+    var cb = document.getElementById('prs-chk-year-' + yr);
+    if (cb) cb.checked = checked;
+  });
+  applyYearFilters();
+  applyPRSFilters();   // Years is a data cut: re-evaluate nodes & edges
+}
+
+function applyYearFilters() {
+  decadeRings.forEach(function(d) {
+    var on = prsYearState[d.decade] !== false;
+    if (d.ring) d.ring.visible = on;
+    if (d.tick) d.tick.visible = on;
+  });
+  // Year labels are gated in updateYearLabels at draw time.
+}
+
+// ── EDGES (left-panel checkbox) ──
+// Edges are a function of visible nodes — no edge to a hidden node is ever drawn.
+// This handler just flips the Edges flag and re-runs the centralised filter pass.
+function prsToggleEdges(checked) {
+  showThreads = checked;
+  applyPRSFilters();
 }
 
 // ── LEGEND (node shapes only now, thinker list moved to left panel) ──
@@ -891,6 +1132,69 @@ function prsSearchClickResult(tripletId) {
 function prsClearSearch() {
   document.getElementById('prs-search-box').value = '';
   prsSearch('');
+}
+
+// "How filters work" popover. Lightweight (not modal): click ? to open, click ?
+// or × or anywhere outside to close. Description below must remain accurate to
+// applyPRSFilters / prsNodeVisible / prsToggleEdges semantics.
+function prsToggleHelp(ev) {
+  if (ev) ev.stopPropagation();
+  var pop = document.getElementById('prs-help-popover');
+  var btn = document.getElementById('prs-help-btn');
+  if (!pop) return;
+  var isOpen = pop.style.display === 'block';
+  pop.style.display = isOpen ? 'none' : 'block';
+  if (btn) btn.classList.toggle('active', !isOpen);
+}
+// Click-outside-to-close. Registered once at script load.
+document.addEventListener('click', function(ev) {
+  var pop = document.getElementById('prs-help-popover');
+  var btn = document.getElementById('prs-help-btn');
+  if (!pop || pop.style.display !== 'block') return;
+  if (pop.contains(ev.target)) return;
+  if (btn && btn.contains(ev.target)) return;
+  pop.style.display = 'none';
+  if (btn) btn.classList.remove('active');
+});
+
+// Reset the entire visualization — every cut on every axis returns to default.
+// This is distinct from prsClearSearch, which only clears the search-box cut.
+function prsResetAll() {
+  // Traditions: every thinker back to checked
+  Object.keys(prsFilterState).forEach(function(t) {
+    prsFilterState[t] = true;
+    var cb = document.getElementById('prs-chk-' + t);
+    if (cb) cb.checked = true;
+  });
+  var allMaster = document.getElementById('prs-chk-all');
+  if (allMaster) allMaster.checked = true;
+  // Disciplines: every discipline back to checked
+  DISCIPLINES.forEach(function(d) {
+    prsDiscState[d] = true;
+    var safeId = 'prs-chk-disc-' + d.replace(/\s+/g, '-').toLowerCase();
+    var cb = document.getElementById(safeId);
+    if (cb) cb.checked = true;
+  });
+  var discMaster = document.getElementById('prs-chk-all-discs');
+  if (discMaster) discMaster.checked = true;
+  // Years: every decade back to checked
+  prsDecades.forEach(function(yr) {
+    prsYearState[yr] = true;
+    var cb = document.getElementById('prs-chk-year-' + yr);
+    if (cb) cb.checked = true;
+  });
+  var yearMaster = document.getElementById('prs-chk-all-years');
+  if (yearMaster) yearMaster.checked = true;
+  // Edges: back on
+  showThreads = true;
+  var edgesCb = document.getElementById('prs-chk-edges');
+  if (edgesCb) edgesCb.checked = true;
+  // Search: clear
+  prsClearSearch();
+  // Re-apply structure + node/edge cuts in the right order
+  applyDiscFilters();
+  applyYearFilters();
+  applyPRSFilters();
 }
 
 // ── CAMERA ──
@@ -1090,25 +1394,22 @@ function toggleLabels() {
   document.getElementById('disc-labels').style.display = showLabels ? 'block' : 'none';
 }
 
-function toggleThreads() {
-  showThreads = !showThreads;
-  document.getElementById('btn-threads').classList.toggle('active', showThreads);
-  threadLines.forEach(function(l) { l.visible = showThreads; });
-}
-
-function toggleDiscs() {
-  showDiscs = !showDiscs;
-  document.getElementById('btn-discs').classList.toggle('active', showDiscs);
-  discMeshes.forEach(function(m) { m.visible = showDiscs; });
-}
+// (toggleThreads and toggleDiscs removed with their top buttons —
+//  Edges visibility lives in prsToggleEdges, discipline visibility in prsToggleDisc / prsToggleAllDiscs.)
 
 // ── DISCIPLINE LABELS (2D overlay) ──
+// Always clears the shared label container at the top of the frame so year labels
+// (appended by updateYearLabels right after) don't accumulate, and so a stale label
+// can't survive a state change. Per-discipline rendering is gated by prsDiscState.
 function updateDiscLabels() {
-  if (!showLabels) return;
   var container = document.getElementById('disc-labels');
-  container.innerHTML = '';
+  if (container) container.innerHTML = '';
+  if (!showLabels || !container) return;
   var canvasRect = renderer.domElement.getBoundingClientRect();
   DISCIPLINES.forEach(function(disc, i) {
+    // Label visibility is a side effect of the discipline data cut.
+    // Default (undefined or true) → show; only an explicit false hides.
+    if (prsDiscState[disc] === false) return;
     var angle = getDiscAngle(i);
     var r = discRadius + 3;
     var worldPos = new THREE.Vector3(
@@ -1142,6 +1443,7 @@ function buildZAxis() {
   scene.add(new THREE.Line(axGeo, axMat));
 
   // Decade markers along the axis
+  prsDecades = [];
   var startDecade = Math.ceil(minYear / 10) * 10;
   for (var yr = startDecade; yr <= maxYear; yr += 10) {
     var y = yearToZ(yr);
@@ -1149,15 +1451,20 @@ function buildZAxis() {
     var tickPts = [new THREE.Vector3(-1, y, 0), new THREE.Vector3(1, y, 0)];
     var tickGeo = new THREE.BufferGeometry().setFromPoints(tickPts);
     var tickMat = new THREE.LineBasicMaterial({ color: 0x3a3a4e, transparent: true, opacity: 0.5 });
-    scene.add(new THREE.Line(tickGeo, tickMat));
+    var tickLine = new THREE.Line(tickGeo, tickMat);
+    tickLine.userData = { type: 'decade-tick', decade: yr };
+    scene.add(tickLine);
 
-    // Faint horizontal ring at each decade
+    // Faint horizontal ring at each decade — tagged so it can be filtered by year
     var ringGeo = new THREE.RingGeometry(discRadius - 0.5, discRadius + 0.5, 64);
     var ringMat = new THREE.MeshBasicMaterial({ color: 0x1a1a2e, transparent: true, opacity: 0.12, side: THREE.DoubleSide });
     var ring = new THREE.Mesh(ringGeo, ringMat);
     ring.rotation.x = -Math.PI / 2;
     ring.position.y = y;
+    ring.userData = { type: 'decade-ring', decade: yr };
+    decadeRings.push({ ring: ring, tick: tickLine, decade: yr });
     scene.add(ring);
+    prsDecades.push(yr);
   }
 }
 
@@ -1167,6 +1474,8 @@ function updateYearLabels() {
   var canvasRect = renderer.domElement.getBoundingClientRect();
   var startDecade = Math.ceil(minYear / 10) * 10;
   for (var yr = startDecade; yr <= maxYear; yr += 10) {
+    // Per-decade filter gating
+    if (prsYearState[yr] === false) continue;
     var y = yearToZ(yr);
     var worldPos = new THREE.Vector3(2, y, 0);
     var screenPos = worldPos.project(camera);
@@ -1213,6 +1522,8 @@ document.getElementById('prs-search-box').addEventListener('input', function(e) 
 init();
 buildZAxis();
 buildTraditionFilters();
+prsBuildDisciplineFilters();
+prsBuildYearFilters();
 </script>
 </body>
 </html>
