@@ -111,6 +111,33 @@ def truncate_at_boundary(text, max_chars):
 CONTENT_CAP = 10000
 
 
+_TAG_PREFIX_TO_KIND = [
+    ('FINDING-',     'finding'),
+    ('DECISION-',    'decision'),
+    ('CROSS-',       'cross'),
+    ('OPEN-',        'open'),
+    ('PRESUMPTION-', 'presumption'),
+    ('ASSUMPTION-',  'assumption'),
+    ('PRS-',         'prs'),
+    ('PROP-',        'prop'),
+    ('PREMISE-',     'premise'),
+]
+
+
+def has_tags_for_refs(refs):
+    """Reduce the per-file `references` list to a sorted list of distinct tag
+    KINDS (the user-facing categories the Sociogram filters on). Used by the
+    'Content tags' cut section in the left panel — a file is admitted under
+    that cut if it carries at least one tag whose kind is currently checked."""
+    kinds = set()
+    for r in refs or []:
+        for prefix, kind in _TAG_PREFIX_TO_KIND:
+            if r.startswith(prefix):
+                kinds.add(kind)
+                break
+    return sorted(kinds)
+
+
 def extract_thinker_mentions(content):
     """Whole-word match each tradition surname; return distinct tradition paths
     mentioned in the file. This bridges architecture-prose ↔ tradition-wiki —
@@ -382,6 +409,7 @@ def scan_vault(vault_path):
         date = extract_date_from_filename(md_file.name)
         if not date:
             date = extract_date_from_mtime(str(md_file))
+        refs = extract_references(content)
         files.append({
             "filepath": str(rel),
             "filename": md_file.name,
@@ -389,7 +417,10 @@ def scan_vault(vault_path):
             "date": date,
             "title": extract_title(content),
             "wikilinks": extract_wikilinks(content),
-            "references": extract_references(content),
+            "references": refs,
+            # has_tags: distinct tag KINDS (finding/decision/cross/open/…) the
+            # file references. Drives the left-panel "Content tags" cut section.
+            "has_tags": has_tags_for_refs(refs),
             # Computed on FULL content (before the [:1500] truncation that
             # follows) so prose mentions deep in long architecture docs still
             # produce edges to the named thinker's wiki page.
@@ -658,6 +689,7 @@ def parse_summa_vault(summa_path):
         else:
             title = extract_title(content)
 
+        synth_refs = extract_references(content)
         nodes.append({
             "filepath": node_path,
             "filename": synth_full.name,
@@ -665,7 +697,8 @@ def parse_summa_vault(summa_path):
             "date": "",  # Summa entries are dated by day-number, not Gregorian date
             "title": title,
             "wikilinks": extract_wikilinks(content),
-            "references": extract_references(content),
+            "references": synth_refs,
+            "has_tags": has_tags_for_refs(synth_refs),
             "thinker_mentions": extract_thinker_mentions(content),
             "size_bytes": len(content.encode("utf-8")),
             "content": truncate_at_boundary(content, CONTENT_CAP),
@@ -687,6 +720,7 @@ def parse_summa_vault(summa_path):
             except Exception:
                 content = ""
             node_path = f"summa/refs/{ref_md.name}"
+            ref_refs = extract_references(content)
             nodes.append({
                 "filepath": node_path,
                 "filename": ref_md.name,
@@ -694,7 +728,8 @@ def parse_summa_vault(summa_path):
                 "date": "",
                 "title": extract_title(content) or ref_md.stem,
                 "wikilinks": extract_wikilinks(content),
-                "references": extract_references(content),
+                "references": ref_refs,
+                "has_tags": has_tags_for_refs(ref_refs),
                 "thinker_mentions": extract_thinker_mentions(content),
                 "size_bytes": len(content.encode("utf-8")),
                 "content": truncate_at_boundary(content, CONTENT_CAP),

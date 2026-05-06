@@ -120,6 +120,12 @@ def build_graph_data(data):
             'group': group,
             'size': size,
             'content': sanitize_braces(f.get('content', '')),
+            # Pass G — surface the per-file content tag kinds so the left-panel
+            # "Content tags" cut can filter on them. Empty list = no tagged refs.
+            'has_tags': f.get('has_tags', []),
+            # Pass G — surface raw refs so the dynamic banner can count distinct
+            # FINDING-/DECISION-/CROSS-/OPEN- IDs visible in the cut survivors.
+            'references': f.get('references', []),
         })
 
     # Pass-A architecture: emit ALL edges with score COMPONENTS, not a single
@@ -360,9 +366,14 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
   <div id="header">
     <div class="title">C2A2 Wiki Narration</div>
     <div class="stats">
-      <span>""" + str(total_files) + """ files</span>
-      <span>""" + str(num_findings) + """ findings</span>
-      <span>""" + str(num_decisions) + """ decisions</span>
+      <!-- Dynamic banner counts (Pass G). visible/total updates as cuts change.
+           ? button opens an explainer popover next to the bar. -->
+      <span id="stat-files" title="Files visible / total"><span class="stat-cur">""" + str(total_files) + """</span> / <span class="stat-tot">""" + str(total_files) + """</span> files</span>
+      <span id="stat-findings" title="Findings visible / total"><span class="stat-cur">""" + str(num_findings) + """</span> / <span class="stat-tot">""" + str(num_findings) + """</span> findings</span>
+      <span id="stat-decisions" title="Decisions visible / total"><span class="stat-cur">""" + str(num_decisions) + """</span> / <span class="stat-tot">""" + str(num_decisions) + """</span> decisions</span>
+      <span id="stat-crosses" title="Cross-connections visible / total"><span class="stat-cur">0</span> / <span class="stat-tot">0</span> crosses</span>
+      <span id="stat-opens" title="Open questions visible / total"><span class="stat-cur">0</span> / <span class="stat-tot">0</span> opens</span>
+      <button id="btn-stats-help" onclick="toggleStatsHelp(event)" style="width:18px;height:18px;border-radius:50%;background:#1a1a2a;color:#888;border:1px solid #3a3a4a;font-size:11px;font-weight:600;cursor:pointer;padding:0;line-height:16px;text-align:center;margin-left:6px;" title="What do these counts mean?">?</button>
     </div>
     <div class="controls">
       <label style="font-size:11px;display:flex;align-items:center;gap:4px;cursor:pointer;"><input type="checkbox" id="chk-hold-forces" onchange="toggleHoldForces(this.checked)"> Hold</label>
@@ -391,6 +402,14 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
       <div class="brightness-control">
         <label>Brightness</label>
         <input type="range" id="brightness-slider" min="0.1" max="2" step="0.05" value="1" oninput="setBrightness(this.value)">
+      </div>
+      <!-- Date threshold slider (Pass G). Show only files added on or after the
+           selected date. Default leftmost = no threshold (all files). -->
+      <div class="date-control" style="display:flex;align-items:center;gap:6px;font-size:11px;">
+        <label title="Hide files added before this date" style="cursor:pointer;">Since:
+          <input type="range" id="date-slider" min="0" max="0" value="0" step="1" style="width:90px;vertical-align:middle;" oninput="setDateThreshold(this.value)">
+        </label>
+        <span id="date-slider-label" style="color:#888;font-size:10px;min-width:80px;">all dates</span>
       </div>
       <button id="btn-settings" onclick="openSettings()">&#9881;</button>
     </div>
@@ -434,6 +453,19 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
           <span style="display:inline-block;width:14px;height:0;border-top:1.5px dashed #aaa;vertical-align:middle;flex-shrink:0;"></span>
           <span class="filter-label">Within category</span>
         </div>
+        <hr>
+        <h3 style="display:flex;align-items:center;gap:4px;">
+          <input type="checkbox" id="chk-all-tags" onchange="toggleAllTags(this.checked)" style="margin-right:4px;cursor:pointer;">
+          <span>Content tags</span>
+          <button id="btn-tags-help" onclick="toggleTagsHelp(event)" style="margin-left:auto;width:16px;height:16px;border-radius:50%;background:#1a1a2a;color:#888;border:1px solid #3a3a4a;font-size:10px;font-weight:600;cursor:pointer;padding:0;line-height:14px;text-align:center;" title="How Content-tag cuts work">?</button>
+        </h3>
+        <!-- Default-OFF: leaving the section unchecked means "no tag cut applies",
+             so all files pass. Checking any tag NARROWS to files carrying ≥1 of
+             the checked tags. -->
+        <div class="filter-item"><input type="checkbox" id="chk-tag-finding" onchange="toggleTagKind('finding', this.checked)"><span class="filter-label">Findings <span style="color:#888;font-size:10px;">(FINDING-NN)</span></span></div>
+        <div class="filter-item"><input type="checkbox" id="chk-tag-decision" onchange="toggleTagKind('decision', this.checked)"><span class="filter-label">Decisions <span style="color:#888;font-size:10px;">(DECISION-NN)</span></span></div>
+        <div class="filter-item"><input type="checkbox" id="chk-tag-cross" onchange="toggleTagKind('cross', this.checked)"><span class="filter-label">Cross-connections <span style="color:#888;font-size:10px;">(CROSS-NN)</span></span></div>
+        <div class="filter-item"><input type="checkbox" id="chk-tag-open" onchange="toggleTagKind('open', this.checked)"><span class="filter-label">Open questions <span style="color:#888;font-size:10px;">(OPEN-NN)</span></span></div>
       </div>
       <!-- Edges-section help popover. position:fixed so the panel's overflow:auto can't clip it. -->
       <div id="edges-help-popover" style="display:none;position:fixed;top:200px;left:212px;width:320px;background:#14141e;border:1px solid #3a3a4a;border-radius:6px;padding:12px 28px 12px 14px;z-index:300;font-size:11.5px;line-height:1.5;color:#d0d0d0;box-shadow:0 4px 16px rgba(0,0,0,0.55);" role="dialog" aria-label="Edges section help">
@@ -446,6 +478,33 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
         </ul>
         <p style="margin:6px 0 4px 0;">An edge needs to pass <em>every</em> active cut to be allowed. Among allowed edges, the graph shows the highest-scored subset that fits the visibility budget.</p>
         <p style="margin:6px 0 0 0;font-size:10.5px;color:#aaa;">Adjacent controls: the <strong>Score</strong> picker (top toolbar) ranks the allowed edges; <strong>zoom</strong> sets the budget. The <strong>Mode</strong> picker is independent — it changes spatial layout, not which edges appear.</p>
+      </div>
+      <!-- Content-tags help popover (Pass G). -->
+      <div id="tags-help-popover" style="display:none;position:fixed;top:280px;left:212px;width:320px;background:#14141e;border:1px solid #3a3a4a;border-radius:6px;padding:12px 28px 12px 14px;z-index:300;font-size:11.5px;line-height:1.5;color:#d0d0d0;box-shadow:0 4px 16px rgba(0,0,0,0.55);" role="dialog" aria-label="Content tags help">
+        <button onclick="toggleTagsHelp(event)" aria-label="Close" style="position:absolute;top:4px;right:6px;background:transparent;border:none;color:#888;font-size:18px;line-height:1;cursor:pointer;padding:2px 6px;">&times;</button>
+        <div style="font-size:11px;font-weight:600;color:#C9A84C;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.6px;">Content tags</div>
+        <p style="margin:4px 0;">A separate cut from Traditions/Structure: these checkboxes filter to files that <em>contain</em> a particular kind of reference ID, regardless of where they sit in the directory tree.</p>
+        <ul style="margin:6px 0;padding-left:18px;">
+          <li style="margin-bottom:4px;"><strong>Findings</strong> — files referencing <code>FINDING-NN</code>: pattern-detector outputs across traditions.</li>
+          <li style="margin-bottom:4px;"><strong>Decisions</strong> — files referencing <code>DECISION-NN</code>: settled architectural commitments.</li>
+          <li style="margin-bottom:4px;"><strong>Cross-connections</strong> — files referencing <code>CROSS-NN</code>: explicit inter-tradition dialogue moments.</li>
+          <li style="margin-bottom:4px;"><strong>Open questions</strong> — files referencing <code>OPEN-NN</code>: unresolved inquiries.</li>
+        </ul>
+        <p style="margin:6px 0 0 0;font-size:10.5px;color:#aaa;">When no tag is checked, this section imposes no cut (everything passes). Checking any tag narrows to files carrying that tag (OR within the section). Combines with Tradition/Structure cuts via AND.</p>
+      </div>
+      <!-- Banner-stats help popover (Pass G). -->
+      <div id="stats-help-popover" style="display:none;position:fixed;top:50px;left:50%;transform:translateX(-50%);width:380px;background:#14141e;border:1px solid #3a3a4a;border-radius:6px;padding:12px 28px 12px 14px;z-index:300;font-size:11.5px;line-height:1.5;color:#d0d0d0;box-shadow:0 4px 16px rgba(0,0,0,0.55);" role="dialog" aria-label="Banner counts help">
+        <button onclick="toggleStatsHelp(event)" aria-label="Close" style="position:absolute;top:4px;right:6px;background:transparent;border:none;color:#888;font-size:18px;line-height:1;cursor:pointer;padding:2px 6px;">&times;</button>
+        <div style="font-size:11px;font-weight:600;color:#C9A84C;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.6px;">Banner counts</div>
+        <p style="margin:4px 0;">Each pair shows <strong>visible / total</strong>. The visible side updates as you change cuts; the total stays put as the corpus baseline.</p>
+        <ul style="margin:6px 0;padding-left:18px;">
+          <li style="margin-bottom:4px;"><strong>files</strong> — wiki files surviving every active cut.</li>
+          <li style="margin-bottom:4px;"><strong>findings</strong> — distinct <code>FINDING-NN</code> IDs referenced by visible files.</li>
+          <li style="margin-bottom:4px;"><strong>decisions</strong> — distinct <code>DECISION-NN</code> IDs referenced by visible files.</li>
+          <li style="margin-bottom:4px;"><strong>crosses</strong> — distinct <code>CROSS-NN</code> IDs referenced by visible files.</li>
+          <li style="margin-bottom:4px;"><strong>opens</strong> — distinct <code>OPEN-NN</code> IDs referenced by visible files.</li>
+        </ul>
+        <p style="margin:6px 0 0 0;font-size:10.5px;color:#aaa;">Cuts that change the visible numbers: Traditions, Structure, Content tags (left panel), Edges and Score (top toolbar), and the Since-date slider.</p>
       </div>
       <div id="left-page-viewer">
         <button class="dismiss-btn" onclick="dismissLeftPage()" title="Close">&times;</button>
@@ -622,6 +681,20 @@ var EDGE_COLOR = {
 var showEdgeType   = { wikilink: true, mention: true, reference: true };
 var showEdgeBridge = { cross: true, same: true };
 
+// ── CONTENT TAG CUTS (Pass G) ──
+// Each entry default-OFF. When ALL are off → no tag cut applies (every file
+// passes the section). When any is on → only files whose has_tags array
+// contains at least one of the on-kinds pass the cut. OR-within-section,
+// AND-composes with Tradition/Structure cuts.
+var showTagKind = { finding: false, decision: false, cross: false, open: false };
+
+// ── DATE THRESHOLD CUT (Pass G) ──
+// dateThreshold === null → no cut. Otherwise: a YYYY-MM-DD string; only files
+// with date >= threshold are admitted. Sourced from the toolbar slider; the
+// slider is auto-populated with the corpus's distinct date range.
+var dateThreshold = null;
+var ALL_DATES = [];                            // populated at init from NODES
+
 // ── ADAPTIVE EDGE DENSITY (Pass A) ──
 // Visible edge count = top-N by score from cut-survivors, where N grows with
 // zoom. Mode picks the score formula. Switching mode/zoom/cuts re-evaluates
@@ -668,12 +741,18 @@ function toggleEdgesHelp(ev) {
 }
 // Click-outside-to-close for both edge popovers.
 document.addEventListener('click', function(ev) {
-  ['edge-help-popover', 'edges-help-popover'].forEach(function(id) {
+  // Click-outside-to-close for every popover that exists at module-init time.
+  var POPOVER_BUTTON_IDS = {
+    'edge-help-popover':  'btn-edge-help',
+    'edges-help-popover': 'btn-edges-help',
+    'stats-help-popover': 'btn-stats-help',
+    'tags-help-popover':  'btn-tags-help',
+  };
+  Object.keys(POPOVER_BUTTON_IDS).forEach(function(id) {
     var pop = document.getElementById(id);
     if (!pop || pop.style.display !== 'block') return;
     if (pop.contains(ev.target)) return;
-    var btnId = id === 'edge-help-popover' ? 'btn-edge-help' : 'btn-edges-help';
-    var btn = document.getElementById(btnId);
+    var btn = document.getElementById(POPOVER_BUTTON_IDS[id]);
     if (btn && btn.contains(ev.target)) return;
     pop.style.display = 'none';
   });
@@ -1012,11 +1091,12 @@ function applyEdgeFilters() {
     var key = d.source.id ? d.source.id + '|' + d.target.id : d.source + '|' + d.target;
     return (typeBridgeOk && visibleSet.has(key)) ? null : 'none';
   });
-  // Step 5: status indicator
+  // Step 5: status indicator + dynamic banner counts (Pass G)
   var statusEl = document.getElementById('edge-status');
   if (statusEl) {
     statusEl.textContent = budget + ' / ' + bucket.length + ' edges';
   }
+  updateBannerCounts();
 }
 
 // ── GRAPH CONTROLS ──
@@ -1055,6 +1135,117 @@ function fitAll() {
   var cx = (xMin + xMax) / 2, cy = (yMin + yMax) / 2;
   var transform = d3.zoomIdentity.translate(w / 2 - cx * scale, h / 2 - cy * scale).scale(scale);
   d3.select('#graph-svg').transition().duration(750).call(zoomBehavior.transform, transform);
+}
+
+// ── CONTENT TAG CUTS (Pass G) — handlers + node-passes-tag-cut helper ──
+function toggleAllTags(checked) {
+  ['finding','decision','cross','open'].forEach(function(k) {
+    showTagKind[k] = checked;
+    var cb = document.getElementById('chk-tag-' + k);
+    if (cb) cb.checked = checked;
+  });
+  rebuildGraph();
+}
+function toggleTagKind(kind, checked) {
+  showTagKind[kind] = checked;
+  // Sync section master
+  var anyOn = ['finding','decision','cross','open'].some(function(k) { return showTagKind[k]; });
+  var allOn = ['finding','decision','cross','open'].every(function(k) { return showTagKind[k]; });
+  var master = document.getElementById('chk-all-tags');
+  if (master) {
+    master.checked = allOn;
+    master.indeterminate = anyOn && !allOn;
+  }
+  rebuildGraph();
+}
+function nodePassesTagCut(node) {
+  // Default behaviour when no tag is checked: section imposes no cut.
+  var anyOn = showTagKind.finding || showTagKind.decision || showTagKind.cross || showTagKind.open;
+  if (!anyOn) return true;
+  var tags = node.has_tags || [];
+  for (var i = 0; i < tags.length; i++) {
+    if (showTagKind[tags[i]]) return true;
+  }
+  return false;
+}
+
+// ── DATE THRESHOLD (Pass G) ──
+function setDateThreshold(idx) {
+  idx = parseInt(idx, 10);
+  if (!ALL_DATES.length || idx <= 0) {
+    dateThreshold = null;
+    var lbl0 = document.getElementById('date-slider-label');
+    if (lbl0) lbl0.textContent = 'all dates';
+  } else {
+    dateThreshold = ALL_DATES[Math.min(idx, ALL_DATES.length - 1)];
+    var lbl = document.getElementById('date-slider-label');
+    if (lbl) lbl.textContent = '≥ ' + dateThreshold;
+  }
+  rebuildGraph();
+}
+function nodePassesDateCut(node) {
+  if (!dateThreshold) return true;
+  var d = node.date || '';
+  return d && d >= dateThreshold;
+}
+
+// ── BANNER COUNT UPDATER (Pass G) ──
+// Recomputes visible-vs-total counts for files / findings / decisions /
+// crosses / opens. Visible = referenced by a visible node.
+function updateBannerCounts() {
+  if (!activeNodes) return;
+  // Files
+  var fCur = activeNodes.length;
+  var fTot = NODES.length;
+  // Distinct ID kinds visible in the active set
+  var visFinding = new Set(), visDecision = new Set(), visCross = new Set(), visOpen = new Set();
+  activeNodes.forEach(function(n) {
+    var refs = n.references || [];
+    for (var i = 0; i < refs.length; i++) {
+      var r = refs[i];
+      if (r.indexOf('FINDING-') === 0) visFinding.add(r);
+      else if (r.indexOf('DECISION-') === 0) visDecision.add(r);
+      else if (r.indexOf('CROSS-') === 0) visCross.add(r);
+      else if (r.indexOf('OPEN-') === 0) visOpen.add(r);
+    }
+  });
+  // Totals (whole corpus)
+  var totFinding = new Set(), totDecision = new Set(), totCross = new Set(), totOpen = new Set();
+  NODES.forEach(function(n) {
+    var refs = n.references || [];
+    for (var i = 0; i < refs.length; i++) {
+      var r = refs[i];
+      if (r.indexOf('FINDING-') === 0) totFinding.add(r);
+      else if (r.indexOf('DECISION-') === 0) totDecision.add(r);
+      else if (r.indexOf('CROSS-') === 0) totCross.add(r);
+      else if (r.indexOf('OPEN-') === 0) totOpen.add(r);
+    }
+  });
+  function setStat(id, cur, tot) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var c = el.querySelector('.stat-cur'); if (c) c.textContent = cur;
+    var t = el.querySelector('.stat-tot'); if (t) t.textContent = tot;
+  }
+  setStat('stat-files',     fCur,             fTot);
+  setStat('stat-findings',  visFinding.size,  totFinding.size);
+  setStat('stat-decisions', visDecision.size, totDecision.size);
+  setStat('stat-crosses',   visCross.size,    totCross.size);
+  setStat('stat-opens',     visOpen.size,     totOpen.size);
+}
+
+// ── BANNER + TAGS HELP POPOVER TOGGLES (Pass G) ──
+function toggleStatsHelp(ev) {
+  if (ev) ev.stopPropagation();
+  var pop = document.getElementById('stats-help-popover');
+  if (!pop) return;
+  pop.style.display = (pop.style.display === 'block') ? 'none' : 'block';
+}
+function toggleTagsHelp(ev) {
+  if (ev) ev.stopPropagation();
+  var pop = document.getElementById('tags-help-popover');
+  if (!pop) return;
+  pop.style.display = (pop.style.display === 'block') ? 'none' : 'block';
 }
 
 // ── LAYOUT MODE (force semantics) ──
@@ -1325,7 +1516,14 @@ function rebuildGraph() {
 
   // Filter to visible nodes only — assign to the module-scoped variable so
   // applyEdgeFilters() can see it. Was `var activeNodes = ...` (function-local).
-  activeNodes = NODES.filter(function(n) { return groupVisibility[n.group]; });
+  // Pass G — node admission requires passing every active cut: group, content
+  // tag (default-no-cut), and date threshold (default-no-cut).
+  activeNodes = NODES.filter(function(n) {
+    if (!groupVisibility[n.group]) return false;
+    if (!nodePassesTagCut(n)) return false;
+    if (!nodePassesDateCut(n)) return false;
+    return true;
+  });
   var activeIds = {};
   activeNodes.forEach(function(n) { activeIds[n.id] = true; });
 
@@ -2242,7 +2440,18 @@ window.addEventListener('resize', clampFooterHeight);
 // ── INIT ──
 document.addEventListener('DOMContentLoaded', function() {
   buildFilters();
+  // Pass G — populate the date slider from NODES' distinct date set.
+  var dateSet = new Set();
+  NODES.forEach(function(n) { if (n.date) dateSet.add(n.date); });
+  ALL_DATES = Array.from(dateSet).sort();
+  var slider = document.getElementById('date-slider');
+  if (slider) {
+    slider.min = 0;
+    slider.max = ALL_DATES.length;   // index N = "latest" (= showing only newest day)
+    slider.value = 0;                // default: no threshold
+  }
   initGraph();
+  updateBannerCounts();
   // generateContextNarration is called automatically by rebuildGraph
   // Two-stage fit: first pass at 800ms gets the user onto a populated cluster
   // before the simulation has fully settled; second pass at 2500ms re-fits.
