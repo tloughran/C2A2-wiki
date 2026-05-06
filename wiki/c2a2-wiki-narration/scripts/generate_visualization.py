@@ -395,14 +395,38 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
         <h3><input type="checkbox" id="chk-all-structure" checked onchange="toggleSection('structure', this.checked)" style="margin-right:4px;cursor:pointer;"> Structure</h3>
         <div id="structure-filters"></div>
         <hr>
-        <h3><input type="checkbox" id="chk-all-edges" checked onchange="toggleAllEdges(this.checked)" style="margin-right:4px;cursor:pointer;"> Edges</h3>
+        <h3 style="display:flex;align-items:center;gap:4px;">
+          <input type="checkbox" id="chk-all-edges" checked onchange="toggleAllEdges(this.checked)" style="margin-right:4px;cursor:pointer;">
+          <span>Edges</span>
+          <button id="btn-edges-help" onclick="toggleEdgesHelp(event)" style="margin-left:auto;width:16px;height:16px;border-radius:50%;background:#1a1a2a;color:#888;border:1px solid #3a3a4a;font-size:10px;font-weight:600;cursor:pointer;padding:0;line-height:14px;text-align:center;" title="How the Edges filters work">?</button>
+        </h3>
         <div style="font-size:10px;color:#888;margin:2px 0 2px 4px;">By type — color</div>
         <div class="filter-item"><input type="checkbox" id="chk-edge-wikilink" checked onchange="toggleEdgeType('wikilink', this.checked)"><span class="filter-dot" style="background:#C9A84C"></span><span class="filter-label">Wikilink</span></div>
         <div class="filter-item"><input type="checkbox" id="chk-edge-mention" checked onchange="toggleEdgeType('mention', this.checked)"><span class="filter-dot" style="background:#5B9A8B"></span><span class="filter-label">Mention</span></div>
         <div class="filter-item"><input type="checkbox" id="chk-edge-reference" checked onchange="toggleEdgeType('reference', this.checked)"><span class="filter-dot" style="background:#5A6878"></span><span class="filter-label">Reference</span></div>
         <div style="font-size:10px;color:#888;margin:6px 0 2px 4px;">By bridge — line style</div>
-        <div class="filter-item"><input type="checkbox" id="chk-edge-cross" checked onchange="toggleEdgeBridge('cross', this.checked)"><span class="filter-label">Crosses categories <span style="color:#888;font-size:10px">(solid)</span></span></div>
-        <div class="filter-item"><input type="checkbox" id="chk-edge-same" checked onchange="toggleEdgeBridge('same', this.checked)"><span class="filter-label">Within category <span style="color:#888;font-size:10px">(dashed)</span></span></div>
+        <div class="filter-item">
+          <input type="checkbox" id="chk-edge-cross" checked onchange="toggleEdgeBridge('cross', this.checked)">
+          <span style="display:inline-block;width:14px;height:0;border-top:1.5px solid #aaa;vertical-align:middle;flex-shrink:0;"></span>
+          <span class="filter-label">Crosses categories</span>
+        </div>
+        <div class="filter-item">
+          <input type="checkbox" id="chk-edge-same" checked onchange="toggleEdgeBridge('same', this.checked)">
+          <span style="display:inline-block;width:14px;height:0;border-top:1.5px dashed #aaa;vertical-align:middle;flex-shrink:0;"></span>
+          <span class="filter-label">Within category</span>
+        </div>
+      </div>
+      <!-- Edges-section help popover. position:fixed so the panel's overflow:auto can't clip it. -->
+      <div id="edges-help-popover" style="display:none;position:fixed;top:200px;left:212px;width:320px;background:#14141e;border:1px solid #3a3a4a;border-radius:6px;padding:12px 28px 12px 14px;z-index:300;font-size:11.5px;line-height:1.5;color:#d0d0d0;box-shadow:0 4px 16px rgba(0,0,0,0.55);" role="dialog" aria-label="Edges section help">
+        <button onclick="toggleEdgesHelp(event)" aria-label="Close" style="position:absolute;top:4px;right:6px;background:transparent;border:none;color:#888;font-size:18px;line-height:1;cursor:pointer;padding:2px 6px;">&times;</button>
+        <div style="font-size:11px;font-weight:600;color:#C9A84C;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.6px;">Edges — how the filters compose</div>
+        <p style="margin:4px 0;">Each checkbox here is a <strong style="color:#f0f0f0;">cut</strong>: a hard include/exclude on which edges are <em>allowed</em> to appear. They compose with AND.</p>
+        <ul style="margin:6px 0;padding-left:18px;">
+          <li style="margin-bottom:5px;"><strong>By type</strong> — color encodes how the edge was inferred. Wikilink (gold) = explicit <code>[[link]]</code> in source. Mention (sage) = architecture prose names a thinker. Reference (slate) = co-citation of a shared ID like <code>FINDING-NN</code>.</li>
+          <li style="margin-bottom:5px;"><strong>By bridge</strong> — line style encodes scope. Solid = the edge crosses category boundaries (tradition ↔ architecture, Summa ↔ tradition). Dashed = both endpoints are in the same category (e.g. sibling files in one tradition).</li>
+        </ul>
+        <p style="margin:6px 0 4px 0;">An edge needs to pass <em>every</em> active cut to be allowed. Among allowed edges, the graph shows the highest-scored subset that fits the visibility budget.</p>
+        <p style="margin:6px 0 0 0;font-size:10.5px;color:#aaa;">Adjacent controls: the <strong>Score</strong> picker (top toolbar) ranks the allowed edges; <strong>zoom</strong> sets the budget. The <strong>Mode</strong> picker is independent — it changes spatial layout, not which edges appear.</p>
       </div>
       <div id="left-page-viewer">
         <button class="dismiss-btn" onclick="dismissLeftPage()">&times;</button>
@@ -539,6 +563,11 @@ var showHoverNames = false;
 var holdForces = false;
 var edgesVisible = true;
 var groupVisibility = {};
+// Hoisted to module scope so applyEdgeFilters() (also module-scoped) can read
+// the current cut-survivors. Was function-local inside rebuildGraph(), causing
+// every Score-mode change and Edge-type checkbox to throw ReferenceError.
+var activeLinks = [];
+var activeNodes = [];
 var currentTrack = null;
 var currentSegmentIndex = 0;
 var isPlaying = false;
@@ -594,19 +623,30 @@ function setScoreMode(value) {
   applyEdgeFilters();
 }
 function toggleEdgeHelp(ev) {
+  // Top-toolbar Score-mode help popover (explains adaptive density / score modes).
   if (ev) ev.stopPropagation();
   var pop = document.getElementById('edge-help-popover');
   if (!pop) return;
   pop.style.display = (pop.style.display === 'block') ? 'none' : 'block';
 }
-// Click-outside-to-close for the edge-help popover.
+function toggleEdgesHelp(ev) {
+  // Left-panel Edges-section help popover (explains type/bridge cuts).
+  if (ev) ev.stopPropagation();
+  var pop = document.getElementById('edges-help-popover');
+  if (!pop) return;
+  pop.style.display = (pop.style.display === 'block') ? 'none' : 'block';
+}
+// Click-outside-to-close for both edge popovers.
 document.addEventListener('click', function(ev) {
-  var pop = document.getElementById('edge-help-popover');
-  var btn = document.getElementById('btn-edge-help');
-  if (!pop || pop.style.display !== 'block') return;
-  if (pop.contains(ev.target)) return;
-  if (btn && btn.contains(ev.target)) return;
-  pop.style.display = 'none';
+  ['edge-help-popover', 'edges-help-popover'].forEach(function(id) {
+    var pop = document.getElementById(id);
+    if (!pop || pop.style.display !== 'block') return;
+    if (pop.contains(ev.target)) return;
+    var btnId = id === 'edge-help-popover' ? 'btn-edge-help' : 'btn-edges-help';
+    var btn = document.getElementById(btnId);
+    if (btn && btn.contains(ev.target)) return;
+    pop.style.display = 'none';
+  });
 });
 
 // ── LAYOUT MODE (force semantics) ──
@@ -709,7 +749,12 @@ function inlineFormat(text) {
 
 // ── RENDERING LIMITS ──
 var MAX_NODES = 2000;
-var MAX_EDGES = 3000;
+// Safety ceiling on edges in the DOM. Set far above any realistic cut-survivor
+// count so it never fires in practice. The real visibility lever is the
+// score-based budget in applyEdgeFilters() (2,500 at 1× zoom, growing with zoom).
+// If activeLinks ever exceeds this ceiling, the slice keeps the top by initial
+// Balanced score rather than alphabetic order — so degradation is graceful.
+var MAX_EDGES = 30000;
 var WARN_NODES = 1600;
 var WARN_EDGES = 2500;
 
@@ -1085,6 +1130,8 @@ function showLeftPage(node) {
 
 function dismissLeftPage() {
   document.getElementById('left-page-viewer').style.display = 'none';
+  // Restore filters when the file viewer is dismissed.
+  expandFilterPanel();
 }
 
 function toggleFilterPanel() {
@@ -1092,6 +1139,22 @@ function toggleFilterPanel() {
   var arrow = document.getElementById('sf-arrow');
   body.classList.toggle('collapsed');
   arrow.classList.toggle('collapsed');
+}
+
+// Programmatic collapse/expand. Edge click → collapse so the file viewer
+// pane below it is immediately visible. Node click or graph-background click
+// → expand so the color key / cut checkboxes return automatically.
+function collapseFilterPanel() {
+  var body = document.getElementById('filter-body');
+  var arrow = document.getElementById('sf-arrow');
+  if (body && !body.classList.contains('collapsed')) body.classList.add('collapsed');
+  if (arrow && !arrow.classList.contains('collapsed')) arrow.classList.add('collapsed');
+}
+function expandFilterPanel() {
+  var body = document.getElementById('filter-body');
+  var arrow = document.getElementById('sf-arrow');
+  if (body) body.classList.remove('collapsed');
+  if (arrow) arrow.classList.remove('collapsed');
 }
 
 // ── TOOLTIP ──
@@ -1140,6 +1203,14 @@ function initGraph() {
   });
   svg.call(zoomBehavior);
 
+  // Background click on the SVG (not bubbled from a node or edge — those use
+  // event.stopPropagation()) restores the Select-Files filter panel. Pairs
+  // with the edge-click collapse: clicking an edge hides filters to show the
+  // file viewer; clicking anywhere else on the graph brings filters back.
+  svg.on('click.expandfilters', function(event) {
+    expandFilterPanel();
+  });
+
   // Build node lookup
   NODES.forEach(function(n) { nodeById[n.id] = n; });
 
@@ -1171,22 +1242,34 @@ function rebuildGraph() {
   // Stop existing simulation
   if (simulation) { simulation.stop(); simulation = null; }
 
-  // Filter to visible nodes only
-  var activeNodes = NODES.filter(function(n) { return groupVisibility[n.group]; });
+  // Filter to visible nodes only — assign to the module-scoped variable so
+  // applyEdgeFilters() can see it. Was `var activeNodes = ...` (function-local).
+  activeNodes = NODES.filter(function(n) { return groupVisibility[n.group]; });
   var activeIds = {};
   activeNodes.forEach(function(n) { activeIds[n.id] = true; });
 
-  // Filter edges
-  var activeLinks = [];
+  // Filter edges — same hoisting note. activeLinks now holds the cut-surviving
+  // edge set. Pass-A architecture: instead of a hard MAX_EDGES alphabetic slice
+  // (which threw away high-score cross-vault edges), score-rank first and keep
+  // the top-MAX_EDGES. applyEdgeFilters then applies the zoom-based visibility
+  // budget on the DOM-rendered subset.
+  activeLinks = [];
   if (edgesVisible) {
     LINKS.forEach(function(l) {
       var sid = typeof l.source === 'object' ? l.source.id : l.source;
       var tid = typeof l.target === 'object' ? l.target.id : l.target;
       if (activeIds[sid] && activeIds[tid]) activeLinks.push(l);
     });
+    // Safety net only — with MAX_EDGES = 30000 this never fires for current
+    // data. Kept score-aware so any future runaway dataset degrades gracefully.
+    // No warning banner: applyEdgeFilters() and the bottom-center status
+    // indicator already report visible/total truthfully.
     if (activeLinks.length > MAX_EDGES) {
+      activeLinks.forEach(function(e) {
+        e._initialScore = (e.score_deg || 0) + (e.score_type || 1) + (e.score_bridge || 0);
+      });
+      activeLinks.sort(function(a, b) { return b._initialScore - a._initialScore; });
       activeLinks = activeLinks.slice(0, MAX_EDGES);
-      showLimitWarning('Edge limit reached: showing ' + MAX_EDGES + ' of available edges.');
     }
   }
 
@@ -1237,6 +1320,10 @@ function rebuildGraph() {
     })
     .on('mouseout', hideTooltip)
     .on('click', function(event, d) {
+      // Edge click: collapse the Select-Files panel so the file viewer below
+      // it is immediately visible with the source node's content.
+      event.stopPropagation();
+      collapseFilterPanel();
       var sn = nodeById[d.source.id || d.source];
       var tn = nodeById[d.target.id || d.target];
       if (sn) showLeftPage(sn);
@@ -1262,6 +1349,10 @@ function rebuildGraph() {
     })
     .on('mouseout', hideTooltip)
     .on('click', function(event, d) {
+      // Node click: ensure filters are expanded again — the right-side panel
+      // is the one being updated, so the color key / cuts return.
+      event.stopPropagation();
+      expandFilterPanel();
       showRightPanel(d);
     })
     .call(d3.drag()

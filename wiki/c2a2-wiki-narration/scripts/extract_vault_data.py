@@ -78,6 +78,39 @@ THINKER_PATHS = {
 }
 
 
+def truncate_at_boundary(text, max_chars):
+    """Sentence-aware (then word-aware) truncation. Mirrors the JS helper used
+    in the narration panel; applied here so file-content previews shown in the
+    Sociogram's left/right panels don't end mid-sentence. Files smaller than
+    max_chars pass through unchanged; the cap only fires for very large files
+    (presumptions.md, lit_search_returns.md, etc.) where preview length must be
+    capped for JSON-payload reasons. The user can still open the file directly
+    in Obsidian for the full text."""
+    if not text or len(text) <= max_chars:
+        return text
+    sliced = text[:max_chars]
+    last_sentence = max(
+        sliced.rfind('. '),
+        sliced.rfind('? '),
+        sliced.rfind('! '),
+        sliced.rfind('.\n'),
+        sliced.rfind('?\n'),
+        sliced.rfind('!\n'),
+    )
+    if last_sentence > max_chars * 0.6:
+        return sliced[:last_sentence + 1] + '\n\n*[content truncated at sentence boundary; open file in Obsidian for full text]*'
+    last_space = sliced.rfind(' ')
+    if last_space > max_chars * 0.5:
+        return sliced[:last_space] + '…\n\n*[content truncated; open file in Obsidian for full text]*'
+    return sliced + '…'
+
+
+# Maximum chars of file content to embed in a node's preview. Set well above
+# typical file size so most files pass through whole; only the largest
+# architecture documents get truncated, and at sentence boundaries.
+CONTENT_CAP = 10000
+
+
 def extract_thinker_mentions(content):
     """Whole-word match each tradition surname; return distinct tradition paths
     mentioned in the file. This bridges architecture-prose ↔ tradition-wiki —
@@ -362,7 +395,7 @@ def scan_vault(vault_path):
             # produce edges to the named thinker's wiki page.
             "thinker_mentions": extract_thinker_mentions(content),
             "size_bytes": len(content.encode('utf-8')),
-            "content": content[:1500],
+            "content": truncate_at_boundary(content, CONTENT_CAP),
         })
     return files
 
@@ -624,7 +657,7 @@ def parse_summa_vault(summa_path):
             "references": extract_references(content),
             "thinker_mentions": extract_thinker_mentions(content),
             "size_bytes": len(content.encode("utf-8")),
-            "content": content[:1500],
+            "content": truncate_at_boundary(content, CONTENT_CAP),
             # Summa-specific metadata for Pass-C edge construction
             "summa_kind": "synthesis",
             "summa_day":  day,
@@ -653,7 +686,7 @@ def parse_summa_vault(summa_path):
                 "references": extract_references(content),
                 "thinker_mentions": extract_thinker_mentions(content),
                 "size_bytes": len(content.encode("utf-8")),
-                "content": content[:1500],
+                "content": truncate_at_boundary(content, CONTENT_CAP),
                 "summa_kind": "refs",
                 "summa_day": None,
                 "summa_questions": [],
