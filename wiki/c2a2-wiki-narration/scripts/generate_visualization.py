@@ -178,6 +178,21 @@ def build_graph_data(data):
     for e in reference_edges:
         _emit(e['source'], e['target'], 'reference', e.get('bridge'), reference=e.get('reference'))
 
+    # ── PAYLOAD COMPRESSION: intern link source/target as integer indices ──
+    # Each link previously stored two ~80-char filepath strings. Replacing them
+    # with integer indices into NODES drops ~165 bytes per link; with ~14k links
+    # that's ~2.3 MB off the inline JSON. The HTML template restores the string
+    # IDs once at script load (single pass before any code touches LINKS), so
+    # this is purely a payload-size optimization — no behavior change.
+    path_to_idx = {n['id']: i for i, n in enumerate(nodes)}
+    for link in links:
+        s = link['source']
+        t = link['target']
+        if isinstance(s, str) and s in path_to_idx:
+            link['source'] = path_to_idx[s]
+        if isinstance(t, str) and t in path_to_idx:
+            link['target'] = path_to_idx[t]
+
     return nodes, links
 
 
@@ -273,6 +288,8 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
 #left-page-viewer .page-title { font-weight: 700; color: #FFD700; font-size: 13px; margin-bottom: 4px; }
 #left-page-viewer .page-path { font-size: 10px; color: #666; margin-bottom: 8px; }
 #left-page-viewer .dismiss-btn { background: none; border: none; color: #888; cursor: pointer; float: right; font-size: 14px; }
+#left-page-viewer .popout-btn { background: none; border: 1px solid #3a3a4a; color: #888; cursor: pointer; float: right; font-size: 11px; padding: 1px 6px; border-radius: 4px; margin-right: 4px; }
+#left-page-viewer .popout-btn:hover { background: #2a2a3a; color: #ccc; }
 
 /* GRAPH AREA */
 #graph-container { flex: 1; position: relative; overflow: hidden; }
@@ -298,6 +315,8 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
 #right-panel .page-content .wikilink:hover { color: #6ab0f9; }
 #right-panel .dismiss-btn { background: none; border: 1px solid #3a3a4a; color: #e0e0e0; cursor: pointer; font-size: 14px; float: right; padding: 2px 8px; border-radius: 4px; }
 #right-panel .dismiss-btn:hover { background: #2a2a3a; }
+#right-panel .popout-btn { background: none; border: 1px solid #3a3a4a; color: #888; cursor: pointer; float: right; font-size: 12px; padding: 2px 8px; border-radius: 4px; margin-right: 4px; }
+#right-panel .popout-btn:hover { background: #2a2a3a; color: #ccc; }
 
 /* TOOLTIP */
 #tooltip { position: absolute; background: rgba(20,20,35,0.95); border: 1px solid #3a3a4a; border-radius: 6px; padding: 8px 12px; font-size: 12px; pointer-events: auto; z-index: 100; display: none; max-width: 250px; }
@@ -429,7 +448,8 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
         <p style="margin:6px 0 0 0;font-size:10.5px;color:#aaa;">Adjacent controls: the <strong>Score</strong> picker (top toolbar) ranks the allowed edges; <strong>zoom</strong> sets the budget. The <strong>Mode</strong> picker is independent — it changes spatial layout, not which edges appear.</p>
       </div>
       <div id="left-page-viewer">
-        <button class="dismiss-btn" onclick="dismissLeftPage()">&times;</button>
+        <button class="dismiss-btn" onclick="dismissLeftPage()" title="Close">&times;</button>
+        <button class="popout-btn" onclick="popoutPage('left')" title="Open in new window">&#x2197;</button>
         <div class="page-title" id="left-page-title"></div>
         <div class="page-path" id="left-page-path"></div>
         <div class="page-content" id="left-page-content"></div>
@@ -476,7 +496,8 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
 
     <!-- RIGHT PANEL -->
     <div id="right-panel">
-      <button class="dismiss-btn" onclick="dismissRightPanel()">&times;</button>
+      <button class="dismiss-btn" onclick="dismissRightPanel()" title="Close">&times;</button>
+      <button class="popout-btn" onclick="popoutPage('right')" title="Open in new window">&#x2197;</button>
       <div class="page-title" id="right-page-title"></div>
       <div class="page-path" id="right-page-path"></div>
       <div class="page-content" id="right-page-content"></div>
@@ -546,6 +567,15 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
 // ── DATA CONSTANTS ──
 const NODES = """ + nodes_json + """;
 const LINKS = """ + links_json + """;
+// Decode integer-interned link source/target back to string IDs. The extractor
+// emits indices into NODES (saves ~2.3 MB of JSON payload over filepath strings);
+// d3.forceSimulation expects string IDs once .id() is configured, so we restore
+// them here in a single pass before any code reads LINKS. Mutates LINKS in place.
+for (var __li = 0; __li < LINKS.length; __li++) {
+  var __l = LINKS[__li];
+  if (typeof __l.source === 'number') __l.source = NODES[__l.source].id;
+  if (typeof __l.target === 'number') __l.target = NODES[__l.target].id;
+}
 const FINDINGS = """ + findings_json + """;
 const DECISIONS = """ + decisions_json + """;
 const CROSS_CONNECTIONS = """ + cross_json + """;
@@ -1106,7 +1136,13 @@ function openNodeByLabel(label) {
   if (node) showRightPanel(node);
 }
 
+// Track currently-displayed nodes in each panel so the pop-out button has
+// the data it needs to open a standalone reading window.
+var currentLeftNode = null;
+var currentRightNode = null;
+
 function showRightPanel(node) {
+  currentRightNode = node;
   var panel = document.getElementById('right-panel');
   document.getElementById('right-page-title').textContent = node.label || node.id;
   document.getElementById('right-page-path').textContent = node.id;
@@ -1121,11 +1157,56 @@ function dismissRightPanel() {
 }
 
 function showLeftPage(node) {
+  currentLeftNode = node;
   var viewer = document.getElementById('left-page-viewer');
   document.getElementById('left-page-title').textContent = node.label || node.id;
   document.getElementById('left-page-path').textContent = node.id;
   document.getElementById('left-page-content').innerHTML = renderMarkdown(node.content || '');
   viewer.style.display = 'block';
+}
+
+// Pop-out: open the current panel's file in a separate browser window for
+// distraction-free, full-width reading. Especially useful for long Curriculum
+// Tools content (Summa commentaries up to 10K chars). Window is self-contained
+// (inline CSS, no cross-origin), closes via its own button or browser chrome.
+function popoutPage(side) {
+  var node = (side === 'right') ? currentRightNode : currentLeftNode;
+  if (!node) return;
+  var w = window.open('', '_blank', 'width=900,height=720');
+  if (!w) {
+    alert('Popup was blocked by the browser. Allow popups for this site to use the pop-out window.');
+    return;
+  }
+  var title = escapeHtml(node.label || node.id || 'Untitled');
+  var path  = escapeHtml(node.id || '');
+  var body  = renderMarkdown(node.content || '');
+  var html = '<!DOCTYPE html><html><head>' +
+    '<meta charset="utf-8">' +
+    '<title>' + title + '</title>' +
+    '<style>' +
+      'body{background:#0a0a0f;color:#e0e0e0;font-family:"Segoe UI",system-ui,sans-serif;max-width:760px;margin:0 auto;padding:28px 32px 80px;line-height:1.6;}' +
+      'h1{color:#FFD700;font-size:22px;margin:0 0 4px;}' +
+      'h2{color:#ddd;font-size:18px;margin:18px 0 6px;}' +
+      'h3{color:#ccc;font-size:15px;margin:14px 0 4px;}' +
+      '.path{color:#666;font-size:12px;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid #2a2a3a;font-family:monospace;word-break:break-all;}' +
+      '.close{position:fixed;top:12px;right:16px;background:#1a1a2a;color:#ccc;border:1px solid #3a3a4a;border-radius:4px;padding:4px 12px;cursor:pointer;font-size:13px;z-index:1000;}' +
+      '.close:hover{background:#2a2a3a;color:#fff;}' +
+      'strong{color:#fff;}em{color:#aaa;font-style:italic;}' +
+      'code{background:#1a1a2a;padding:1px 5px;border-radius:3px;font-family:monospace;font-size:13px;}' +
+      'pre{background:#1a1a2a;padding:10px 14px;border-radius:4px;overflow-x:auto;}' +
+      'pre code{padding:0;background:none;}' +
+      'a,.wikilink{color:#4A90D9;}' +
+      'ul,ol{padding-left:22px;}li{margin:3px 0;}' +
+      'p{margin:8px 0;}hr{border:none;border-top:1px solid #2a2a3a;margin:18px 0;}' +
+    '</style></head><body>' +
+    '<button class="close" onclick="window.close()">&times; Close</button>' +
+    '<h1>' + title + '</h1>' +
+    '<div class="path">' + path + '</div>' +
+    body +
+    '</body></html>';
+  w.document.open();
+  w.document.write(html);
+  w.document.close();
 }
 
 function dismissLeftPage() {

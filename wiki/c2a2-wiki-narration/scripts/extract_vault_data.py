@@ -637,15 +637,26 @@ def parse_summa_vault(summa_path):
 
         entries = by_synth[synth_rel]
         day = entries[0].get("day") if entries else None
-        # Title preference: first article's question_title; fallback to filename
-        first_title = (entries[0].get("question_title") or "") if entries else ""
-        title = f"Day {day:03d}: {first_title}" if day else extract_title(content)
 
         node_path = f"summa/{synth_rel}"
         # Distinct question numbers covered by this synthesis day
         questions = sorted({
             e.get("question") for e in entries if e.get("question") is not None
         })
+
+        # Title format: "Contemporary commentary on Summa Question N" (singular)
+        # or "Contemporary commentary on Summa Questions N, M" (multi-question).
+        # Falls back to filename / Day-N when question metadata is unavailable.
+        if questions:
+            if len(questions) == 1:
+                title = f"Contemporary commentary on Summa Question {questions[0]}"
+            else:
+                qs_str = ", ".join(str(q) for q in questions)
+                title = f"Contemporary commentary on Summa Questions {qs_str}"
+        elif day:
+            title = f"Day {day:03d}"
+        else:
+            title = extract_title(content)
 
         nodes.append({
             "filepath": node_path,
