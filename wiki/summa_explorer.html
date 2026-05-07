@@ -457,8 +457,7 @@ html, body {
 /* ═══════════════════════════════════════════
    CONSTANTS
 ═══════════════════════════════════════════ */
-const VAULT_BASE_LOCAL = '../../Summa 2026 in a Year/vault';
-const VAULT_BASE_PROD  = 'https://tloughran.github.io/Summa-2026-wiki/vault';
+const VAULT_BASE = './vault';   /* vault/ lives alongside this file in the repo */
 
 const PART_ORDER = ['I', 'I-II', 'II-II', 'III'];
 const PART_META  = {
@@ -482,68 +481,57 @@ var currentMode     = 'transcript';
 var showArticles    = true;
 
 /* ═══════════════════════════════════════════
-   INIT — try LOCAL then PROD on file://, PROD then LOCAL otherwise
+   INIT — vault/ lives alongside this file; works on GitHub Pages and local HTTP
 ═══════════════════════════════════════════ */
 async function init() {
   var loaded    = false;
   var lastError = '';
-  var bases     = (window.location.protocol === 'file:')
-                    ? [VAULT_BASE_LOCAL, VAULT_BASE_PROD]
-                    : [VAULT_BASE_PROD, VAULT_BASE_LOCAL];
 
-  for (var i = 0; i < bases.length; i++) {
-    var base = bases[i];
-    try {
-      var url  = encodeURI(base + '/refs/summa_index.json');
-      console.log('[Summa] Trying:', url);
-      var resp = await fetch(url);
-      if (resp.ok) {
-        indexData = await resp.json();
-        vaultBase = base;
-        loaded    = true;
-        console.log('[Summa] Loaded index from:', base, '—', Object.keys(indexData).length, 'entries');
-        break;
-      } else {
-        lastError = 'HTTP ' + resp.status + ' from ' + base;
-        console.warn('[Summa] Not found at:', url, '(' + resp.status + ')');
-      }
-    } catch (e) {
-      lastError = e.message || String(e);
-      console.warn('[Summa] Fetch error for', base + ':', lastError);
+  try {
+    var url  = encodeURI(VAULT_BASE + '/refs/summa_index.json');
+    console.log('[Summa] Loading index from:', url);
+    var resp = await fetch(url);
+    if (resp.ok) {
+      indexData = await resp.json();
+      vaultBase = VAULT_BASE;
+      loaded    = true;
+      console.log('[Summa] Loaded index —', Object.keys(indexData).length, 'entries');
+    } else {
+      lastError = 'HTTP ' + resp.status + ' from ' + url;
+      console.warn('[Summa] Not found at:', url, '(' + resp.status + ')');
     }
+  } catch (e) {
+    lastError = e.message || String(e);
+    console.warn('[Summa] Fetch error:', lastError);
   }
 
   if (!loaded) {
-    console.error('[Summa] Could not load summa_index.json from any path. Last error:', lastError);
+    console.error('[Summa] Could not load summa_index.json. Error:', lastError);
 
     /* Small header error */
     document.getElementById('stats-line').innerHTML =
       '<span style="color:#884444">⚠ Could not load summa_index.json</span>';
     document.getElementById('welcome-avail').textContent = 'Index unavailable';
 
-    /* Prominent error card inside the tree area — distinguish file:// vs HTTP 404 */
+    /* Prominent error card */
     var isFileProtocol = window.location.protocol === 'file:';
     var errHeading, errBody;
     if (isFileProtocol) {
       errHeading = '⚠ Cannot load via file://';
       errBody =
         '<div style="color:#555;margin-bottom:12px">You must serve this page over HTTP — opening it directly with <code>file://</code> blocks fetch requests.</div>' +
-        '<div style="color:#555;font-size:11px">Run the local server from your <strong style="color:#777">Projects/</strong> folder:<br>' +
+        '<div style="color:#555;font-size:11px">Run the local server from your <strong style="color:#777">wiki/</strong> folder:<br>' +
         '<code style="background:#111;padding:2px 6px;border-radius:3px;color:#888;font-size:10px">' +
-        'cd ~/Documents/Claude/Projects &amp;&amp; python3 -m http.server 8080' +
-        '</code><br>Then open <code style="color:#888">http://localhost:8080/RC%20Karpathy%20Wiki%20Project/wiki/summa_explorer.html</code></div>';
+        'cd &quot;RC Karpathy Wiki Project/wiki&quot; &amp;&amp; python3 -m http.server 8080' +
+        '</code><br>Then open <code style="color:#888">http://localhost:8080/explorer.html</code></div>';
     } else {
       errHeading = '⚠ Index not found';
       errBody =
-        '<div style="color:#555;margin-bottom:12px">Tried these URLs — neither responded with 200:</div>' +
+        '<div style="color:#555;margin-bottom:12px">Could not load:</div>' +
         '<div style="background:#0d0d14;border:1px solid #2a1a1a;border-radius:4px;padding:10px 12px;margin-bottom:12px;font-family:monospace;font-size:10px;color:#666;word-break:break-all">' +
-        '1. ' + esc(VAULT_BASE_LOCAL + '/refs/summa_index.json') + '<br>' +
-        '2. ' + esc(VAULT_BASE_PROD  + '/refs/summa_index.json') +
+        esc(VAULT_BASE + '/refs/summa_index.json') +
         '</div>' +
-        '<div style="color:#555;font-size:11px">Run the local server from your <strong style="color:#777">Projects/</strong> folder:<br>' +
-        '<code style="background:#111;padding:2px 6px;border-radius:3px;color:#888;font-size:10px">' +
-        'cd ~/Documents/Claude/Projects &amp;&amp; python3 -m http.server 8080' +
-        '</code></div>';
+        '<div style="color:#555;font-size:11px">Error: ' + esc(lastError) + '</div>';
     }
     document.getElementById('tree').innerHTML =
       '<div style="padding:20px 16px;color:#664444;font-size:12px;line-height:1.8">' +
