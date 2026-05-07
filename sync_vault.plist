@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.tloughran.summa-vault-sync</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/sync_vault.sh</string>
+  </array>
+
+  <!-- Runs daily at 21:00 local time — after the day's recording session -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>   <integer>21</integer>
+    <key>Minute</key> <integer>0</integer>
+  </dict>
+
+  <!-- Skip if the machine is asleep; catch up at next wake -->
+  <key>StandardOutPath</key>
+  <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/sync_vault.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/sync_vault.log</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>
