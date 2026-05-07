@@ -66,12 +66,33 @@ def scan_vault(vault_dir):
         day = int(m.group(1))
         meta = parse_frontmatter(os.path.join(trans_dir, fname))
         ref = meta.get("summa_ref", "")
-        qs  = [int(x) for x in re.findall(r"Q\.(\d+)", ref)]
-        if not qs:
-            # Fallback: no ref, just assign by day ordering
+        if not ref:
             continue
+
+        # Parse pars from summa_ref for pars-aware matching
+        pars_map = {
+            "prima pars":       "I",
+            "prima secundae":   "I-II",
+            "secunda secundae": "II-II",
+            "tertia pars":      "III",
+        }
+        ref_lower = ref.lower()
+        pars_code = next((code for pat, code in pars_map.items()
+                          if pat in ref_lower), None)
+        if not pars_code:
+            continue
+
+        # Parse Q-numbers: handles "Q.9 + Q.10", "Q.9-10", "Q.65 + Q.66"
+        qs = set()
+        for token in re.findall(r"Q\.(\d+)(?:-(\d+))?", ref):
+            start = int(token[0])
+            end   = int(token[1]) if token[1] else start
+            qs.update(range(start, end + 1))
+        if not qs:
+            continue
+
         day_trans[day]     = "transcripts/" + fname
-        day_questions[day] = set(qs)
+        day_questions[day] = (pars_code, qs)  # store pars alongside questions
 
     for fname in sorted(os.listdir(synth_dir)):
         m = re.match(r"Day-(\d+)", fname)
@@ -86,26 +107,30 @@ def scan_vault(vault_dir):
 def reindex(vault_dir, index_path):
     day_trans, day_synth, day_questions = scan_vault(vault_dir)
 
-    # Build question -> day mapping (first-wins for duplicates: lower day takes priority)
+    # Build (pars, question) -> day mapping; first-wins for duplicates (lower day)
     q_to_day = {}
     for day in sorted(day_questions.keys()):
-        for q in day_questions[day]:
-            if q not in q_to_day:
-                q_to_day[q] = day
+        pars_code, qs = day_questions[day]
+        for q in qs:
+            key = (pars_code, q)
+            if key not in q_to_day:
+                q_to_day[key] = day
 
     with open(index_path, encoding="utf-8") as f:
         index = json.load(f)
 
     updated = 0
     for key, entry in index.items():
-        km = re.match(r"[^.]+\.Q(\d+)\.", key)
+        km = re.match(r"([^.]+)\.Q(\d+)\.", key)
         if not km:
             continue
-        qnum = int(km.group(1))
-        if qnum not in q_to_day:
+        pars_prefix = km.group(1)
+        qnum        = int(km.group(2))
+        lookup      = (pars_prefix, qnum)
+        if lookup not in q_to_day:
             continue
 
-        day    = q_to_day[qnum]
+        day    = q_to_day[lookup]
         t_path = day_trans.get(day)
         s_path = day_synth.get(day)
 
