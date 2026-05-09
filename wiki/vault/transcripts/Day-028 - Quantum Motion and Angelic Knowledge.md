@@ -12,7 +12,7 @@ segment_count: 428
 caption_kind: asr
 language: en
 fetched_at: 2026-05-02
-fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
+fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-028 - Quantum Motion and Angelic Knowledge - Contemporary]]"
 fidelity_checked: false
 last_qc_at: "2026-05-05T21:32:38"

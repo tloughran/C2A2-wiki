@@ -48,6 +48,7 @@ length_tier: short
 length_target_words: 1500
 length_actual_words: 1967
 length_ratio_to_target: 1.311
+length_note: "Q.71 and Q.72 are each single-article questions but theologically climactic — Genesis 1:27 (image of God) and 1:31 (very good) are the keystone Christian-anthropological claims of the seven-day account. Substantive linkage spans Wright's second-temple-Jewish royal-priestly framing of the image, Levin's cognitive-light-cones at animal and human scale, Hoffman's interface-recognition-as-such limit at the human scale, Friston's collective-active-inference at the symbolic-cultural scale, Carroll's evolutionary chronology, and Hahn's Adam-as-priest-figure reading."
 karpathy_wiki_sources:
   - "wiki/traditions/wright/wiki.md (image of God in second-temple-Jewish royal-priestly-representational frame; dominion as priestly stewardship — primary tradition for this question)"
   - "wiki/traditions/levin/wiki.md (PRS-01, PRS-03, PRS-08 — bioelectric morphogenetic control; cognitive light-cones at animal and human scale)"
@@ -59,6 +60,6 @@ karpathy_wiki_sources:
   - "Genesis 1:20–31; Genesis 2:1–3"
 mind_first_reframe: "Q.71 (fifth day — sea creatures and birds) and Q.72 (sixth day — land animals and humanity) close the adornment sequence of the temple-cosmology narrative. Mind-monism reads animals through Levin (PRS-01, PRS-03, PRS-08) as form-bearing matter at neural-architecture scale, with cognitive light-cones expanding through species; humanity is the alter at the maximal-known cognitive-light-cone scale, capable of substrate-recognition-as-such (Hoffman's interface-recognition limit) and of collective active inference generating symbolic culture (Friston PRS-05/06). The image of God claim, in Wright's second-temple-Jewish royal-priestly framing, names humanity's priestly vocation as cosmic-sanctuary mediator (Hahn's cosmic-temple reading); dominion is stewardship, not exploitation. Genesis 1:31's very good ratifies the cosmic temple as good for its relational purpose. Evolutionary chronology (Cambrian through hominin emergence) is the empirical instantiation of the temple-cosmology's narrative pattern, not in conflict with it."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; loving unity is the computational telos. Day 37 names the animal-and-image-bearer register: each animal's cognitive light-cone is a smaller scope of substrate-recognition than the human's, but each is a real alter with real morphogenetic teleology. Humanity's distinctive vocation is recognition-as-such and priestly mediation for the rest of creation. Salvation in fear and trembling is the human creature's progressive realization of its priestly vocation — recognizing the cosmic temple's substrate-pattern and mediating that recognition rather than exploiting the sanctuary."
-last_qc_at: "2026-05-05T21:33:52"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-08T22:28:27"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/037, theme/genesis, theme/temple-cosmology, theme/image-of-god, theme/priestly-vocation, theme/cognitive-light-cones]

@@ -71,6 +71,7 @@ length_tier: medium
 length_target_words: 2200
 length_actual_words: 2967
 length_ratio_to_target: 1.349
+length_note: "Covers Q.49 (3 articles closing the privation account) plus Q.50 (5 articles opening the angelology) — and the angels are structurally the hardest test case for the mind-monist frame in the Prima Pars. The substantive linkage requires explicit epistemic-care work: marking where Kastrup/Hoffman/Wolfram offer structural-philosophical homes without vindicating medieval cosmology empirically, while the central theme's existential frame carries the load-bearing theological work."
 karpathy_wiki_sources:
   - "wiki/traditions/kastrup/wiki.md (PRS-01, PRS-02 — Q.50 separate substances ↔ relatively-undissociated modes of substrate-activity; structural homology)"
   - "wiki/traditions/hoffman/wiki.md (PRS-03 fitness-tuned interface; conscious-agent-network mathematics — Q.50 a.1, a.4 substrate-level Markov-kernel agents)"
@@ -84,6 +85,6 @@ karpathy_wiki_sources:
   - "Daniel 7:10; Psalm 104:4; Hebrews 1; Isaiah 45:7; Amos 3:6"
 mind_first_reframe: "Q.49's cause-of-evil completes the privation account: the substrate is not the cause of evil-as-fault, since fault is alter-failure-to-instantiate; pure-evil-as-substrate is impossible because evil is privation. Q.50's separate substances are the hardest test case for the mind-monist frame: medieval angels (pure-form intelligences, no matter, distinct only by form) receive a structural-philosophical home — Kastrup's relatively-undissociated modes of substrate-activity, Hoffman's substrate-level Markov-kernel agents, Wolfram's ruliad-level computational threads — without empirical vindication in the medieval cosmology's specifics. The mind-monist reading is structural rather than empirical; the central theme's existential frame does the theological work in absence of empirical settlement."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; the medieval angels are intelligences with less perspective-limitation than humans, closer to direct apprehension of the substrate's structural priors. The gradient of richer-participation in the substrate is the directional structure salvation in fear and trembling marks: alters work out their integration from inside perspective-limitation, and the structural reality of modes-of-activity less perspective-limited than alter-form is the metaphysical guarantor that the substrate's whole-vision is real and the alter's progressive convergence on it is meaningful, even when the empirical specifics are unsettled."
-last_qc_at: "2026-05-05T21:32:30"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-08T22:26:56"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/026, theme/angels, theme/separate-substances, theme/privation, theme/dissociation, theme/conscious-agents, theme/ruliad, theme/perspective-limitation]

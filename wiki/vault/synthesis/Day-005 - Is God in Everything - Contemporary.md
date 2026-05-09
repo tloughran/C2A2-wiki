@@ -87,6 +87,6 @@ karpathy_wiki_sources:
   - "Augustine, *Confessions* X.27 — *late have I loved thee, O Beauty so ancient and so new* — the central-theme citation"
 mind_first_reframe: "Aquinas's *a thing is where it operates* (Q.8 a.1) becomes Hoffman's interface theory at full strength: spatial location is constituted by operations under the species-specific interface, not the other way around. *More inmost to us than we are to ourselves* is the precise classical formulation of Kastrup's mind-monism — the substrate is closer to the alter than the alter's own consciousness, because consciousness is one mode of expression of the substrate, not a thing that *contains* the substrate. *Infinite as not-limited-by-essence-or-matter* (Q.7 a.1) is exactly the form mind-monism's primitive must take: not a very big mind but mind *as ontological primitive*."
 central_theme_thread: "Augustine's *thou wert within me, and I outside* is the central theme stated in the first person: the perspective-limited agent fails to recognize the unconditioned ground precisely *because* it is too inmost to be perceived under the icons of the interface. Salvation is the agent's progressive recognition of the substrate it has been participating in all along — Wright's covenant inclusion as the corporate form, Rohr's contemplative recognition as the personal form, mind-monism's reintegration of alter and mind-at-large as the metaphysical form."
-last_qc_at: null
-last_qc_outcome: null
+last_qc_at: "2026-05-08T18:03:03"
+last_qc_outcome: "pass"
 tags: [synthesis, day/005, theme/infinity, theme/divine-immanence, theme/divine-omnipresence, theme/interface-theory]
