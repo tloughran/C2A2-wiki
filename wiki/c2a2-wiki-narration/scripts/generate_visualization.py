@@ -365,16 +365,10 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
   <!-- HEADER -->
   <div id="header">
     <div class="title">C2A2 Wiki Narration</div>
-    <div class="stats">
-      <!-- Dynamic banner counts (Pass G). visible/total updates as cuts change.
-           ? button opens an explainer popover next to the bar. -->
-      <span id="stat-files" title="Files visible / total"><span class="stat-cur">""" + str(total_files) + """</span> / <span class="stat-tot">""" + str(total_files) + """</span> files</span>
-      <span id="stat-findings" title="Findings visible / total"><span class="stat-cur">""" + str(num_findings) + """</span> / <span class="stat-tot">""" + str(num_findings) + """</span> findings</span>
-      <span id="stat-decisions" title="Decisions visible / total"><span class="stat-cur">""" + str(num_decisions) + """</span> / <span class="stat-tot">""" + str(num_decisions) + """</span> decisions</span>
-      <span id="stat-crosses" title="Cross-connections visible / total"><span class="stat-cur">0</span> / <span class="stat-tot">0</span> crosses</span>
-      <span id="stat-opens" title="Open questions visible / total"><span class="stat-cur">0</span> / <span class="stat-tot">0</span> opens</span>
-      <button id="btn-stats-help" onclick="toggleStatsHelp(event)" style="width:18px;height:18px;border-radius:50%;background:#1a1a2a;color:#888;border:1px solid #3a3a4a;font-size:11px;font-weight:600;cursor:pointer;padding:0;line-height:16px;text-align:center;margin-left:6px;" title="What do these counts mean?">?</button>
-    </div>
+    <!-- Stats pills removed 2026-05-11: header was overflowing at 1200px viewport
+         and the same numbers are echoed at the bottom-left of the canvas
+         ("N nodes, E edges") and update with filters there. -->
+
     <div class="controls">
       <label style="font-size:11px;display:flex;align-items:center;gap:4px;cursor:pointer;"><input type="checkbox" id="chk-hold-forces" onchange="toggleHoldForces(this.checked)"> Hold</label>
       <label style="font-size:11px;display:flex;align-items:center;gap:4px;cursor:pointer;"><input type="checkbox" id="chk-hover-names" onchange="toggleHoverNames(this.checked)"> Names</label>
@@ -492,20 +486,8 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
         </ul>
         <p style="margin:6px 0 0 0;font-size:10.5px;color:#aaa;">When no tag is checked, this section imposes no cut (everything passes). Checking any tag narrows to files carrying that tag (OR within the section). Combines with Tradition/Structure cuts via AND.</p>
       </div>
-      <!-- Banner-stats help popover (Pass G). -->
-      <div id="stats-help-popover" style="display:none;position:fixed;top:50px;left:50%;transform:translateX(-50%);width:380px;background:#14141e;border:1px solid #3a3a4a;border-radius:6px;padding:12px 28px 12px 14px;z-index:300;font-size:11.5px;line-height:1.5;color:#d0d0d0;box-shadow:0 4px 16px rgba(0,0,0,0.55);" role="dialog" aria-label="Banner counts help">
-        <button onclick="toggleStatsHelp(event)" aria-label="Close" style="position:absolute;top:4px;right:6px;background:transparent;border:none;color:#888;font-size:18px;line-height:1;cursor:pointer;padding:2px 6px;">&times;</button>
-        <div style="font-size:11px;font-weight:600;color:#C9A84C;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.6px;">Banner counts</div>
-        <p style="margin:4px 0;">Each pair shows <strong>visible / total</strong>. The visible side updates as you change cuts; the total stays put as the corpus baseline.</p>
-        <ul style="margin:6px 0;padding-left:18px;">
-          <li style="margin-bottom:4px;"><strong>files</strong> — wiki files surviving every active cut.</li>
-          <li style="margin-bottom:4px;"><strong>findings</strong> — distinct <code>FINDING-NN</code> IDs referenced by visible files.</li>
-          <li style="margin-bottom:4px;"><strong>decisions</strong> — distinct <code>DECISION-NN</code> IDs referenced by visible files.</li>
-          <li style="margin-bottom:4px;"><strong>crosses</strong> — distinct <code>CROSS-NN</code> IDs referenced by visible files.</li>
-          <li style="margin-bottom:4px;"><strong>opens</strong> — distinct <code>OPEN-NN</code> IDs referenced by visible files.</li>
-        </ul>
-        <p style="margin:6px 0 0 0;font-size:10.5px;color:#aaa;">Cuts that change the visible numbers: Traditions, Structure, Content tags (left panel), Edges and Score (top toolbar), and the Since-date slider.</p>
-      </div>
+      <!-- Banner-stats help popover removed 2026-05-11 along with the stats pills. -->
+
       <div id="left-page-viewer">
         <button class="dismiss-btn" onclick="dismissLeftPage()" title="Close">&times;</button>
         <button class="popout-btn" onclick="popoutPage('left')" title="Open in new window">&#x2197;</button>
@@ -1746,6 +1728,8 @@ function extractOverview(group) {
   // Pull the core claim and summary from the content
   var content = wikiNode.content;
   var claim = '';
+  var paradigm = '';
+  var summary = '';
   var lines = content.split('\\n');
   for (var li = 0; li < lines.length; li++) {
     if (!claim && lines[li].indexOf('Core claim:') !== -1) claim = lines[li].split('Core claim:')[1].trim();

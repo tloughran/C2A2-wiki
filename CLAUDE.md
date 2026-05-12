@@ -9,6 +9,8 @@
 3. Report specific observations to the user ("ToC loads with N entries, article click works, no console errors")
 4. Wait for explicit user sign-off before pushing
 
+**Default localhost target for "pop the local" / visual review is `http://localhost:8080/explorer.html`** — the full system shell with the chapter + accelerator-tool tab bar. `wiki_narration.html` alone is just the Sociogram iframe content and has no tab bar by design; loading it directly looks like the bar is broken when it isn't.
+
 **This rule applies to:** C2A2-wiki, any Summa repository, and any other GitHub repo touched in this Claude account.
 
 **Rationale:** We pushed `adbd456` without local HTTP review (2025-05-07) and the user reported unexpected behavior. A 30-second local check would have caught it.
