@@ -100,3 +100,37 @@ Ratio metrics require larger sample sizes for reliable estimation than differenc
 **Risk level:** MODERATE
 
 **Recommendation:** Before reporting health metrics, verify sufficient sample size. Implement minimum sample size thresholds (e.g., n=100); report confidence intervals rather than point estimates; consider Bayesian approaches for small-sample robustness.
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-008 (RE-TRIGGER cycle 1):
+  Date searched: 2026-04-27
+  Original item: PRESUMPTION-008
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b → 15c → 15d → 15b] (cycle 1)
+    Original item: PRESUMPTION-008
+    Item type: PRESUMPTION
+    Transform at each step:
+      14b (cycle 0): Originally extracted/inferred
+      15b (cycle 0): Searched for challenging literature → see prior result block above
+      15c (cycle 0): Initial disposition issued
+      15d: Re-triggered on weekly cadence (2026-04-26 trigger; processed 2026-04-27)
+      15b (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED (refreshed; no new challenging literature surfaced this cycle)
+
+  New evidence weighed: No new challenging literature has surfaced in the week since the last cycle. The prior result stands as the operative finding. The system's challenge profile for this item is unchanged.
+
+  Sources (new / refreshed): No new sources this cycle.
+
+  Strength of challenge: Unchanged from prior cycle.
+
+  Summary: Cycle-1 refresh confirms the prior cycle's finding. The challenging literature base has not materially shifted in the past week; no new disconfirmatory sources surfaced during this automated cycle. The recommendation carries forward unchanged.
+
+  Specific risks: Unchanged from prior cycle.
+
+  Mitigations available: Unchanged from prior cycle.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)

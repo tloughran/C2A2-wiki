@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C2A2 Wiki Review — 2026-04-18</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f2ed;color:#222;height:100vh;display:flex;flex-direction:column}
+  #topbar{background:#1a1a2e;color:#fff;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+  #topbar h1{font-size:15px;font-weight:700;letter-spacing:.03em}
+  #topbar .meta{font-size:12px;opacity:.7}
+  #main{display:flex;flex:1;overflow:hidden}
+  #sidebar{width:300px;flex-shrink:0;overflow-y:auto;background:#f9f7f2;border-right:1px solid #ddd}
+  #sidebar-header{padding:10px 14px;background:#f0ede5;border-bottom:1px solid #ddd;font-size:11px;font-weight:700;color:#888;letter-spacing:.06em}
+  #content{flex:1;overflow-y:auto;padding:20px}
+  .prop-card{background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.08);margin-bottom:20px;overflow:hidden}
+  .sidebar-item:hover{background:#f0ede5!important}
+  .sidebar-item.active{background:#e8e4d8!important}
+  #bottombar{background:#fff;border-top:1px solid #ddd;padding:12px 20px;display:flex;align-items:center;gap:14px;flex-shrink:0}
+  #progress{font-size:13px;color:#666}
+  #submit-btn{background:#1a1a2e;color:#fff;border:none;padding:10px 24px;border-radius:6px;cursor:pointer;font-weight:700;font-size:14px;margin-left:auto}
+  #submit-btn:hover{background:#2a2a4e}
+  #all-done{color:#1a6b3c;font-weight:700;display:none}
+</style>
+</head>
+<body>
+<div id="topbar">
+  <h1>C2A2 Wiki — Daily Proposal Review</h1>
+  <div class="meta">2026-04-18 &nbsp;·&nbsp; 10 proposals pending</div>
+</div>
+<div id="main">
+  <div id="sidebar">
+    <div id="sidebar-header">PROPOSALS — 2026-04-18</div>
+    
+    <div class="sidebar-item" id="item-PROP-2026-04-18-001" onclick="showCard('PROP-2026-04-18-001')"
+      style="padding:10px 14px;border-left:3px solid #7a1a1a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#7a1a1a;letter-spacing:.04em">SEAN CARROLL</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Mindscape 350: J. Eric Oliver on The Self and How to Know It</div>
+      <div style="font-size:10px;color:#999">PODCAST · 2026-04-13</div>
+      <div id="badge-PROP-2026-04-18-001" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-04-18-002" onclick="showCard('PROP-2026-04-18-002')"
+      style="padding:10px 14px;border-left:3px solid #a0306a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#a0306a;letter-spacing:.04em">BARBARA FREDRICKSON</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Conducive Conditions for Positivity Resonance at Multiple Le…</div>
+      <div style="font-size:10px;color:#999">TALK · 2025-03-20</div>
+      <div id="badge-PROP-2026-04-18-002" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-04-18-003" onclick="showCard('PROP-2026-04-18-003')"
+      style="padding:10px 14px;border-left:3px solid #a0306a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#a0306a;letter-spacing:.04em">BARBARA FREDRICKSON</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Why Loving Moments With Strangers Carry Lasting Benefits</div>
+      <div style="font-size:10px;color:#999">PAPER · 2025-12-10</div>
+      <div id="badge-PROP-2026-04-18-003" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-04-18-004" onclick="showCard('PROP-2026-04-18-004')"
+      style="padding:10px 14px;border-left:3px solid #1a6b3c;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#1a6b3c;letter-spacing:.04em">MICHAEL LEVIN</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Symposium on the Platonic Space + A Short Argument on Platon…</div>
+      <div style="font-size:10px;color:#999">BLOG · 2026-01-15</div>
+      <div id="badge-PROP-2026-04-18-004" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-04-18-005" onclick="showCard('PROP-2026-04-18-005')"
+      style="padding:10px 14px;border-left:3px solid #6a2a0a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#6a2a0a;letter-spacing:.04em">ELEONORE STUMP</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Biblical Narratives and Human Flourishing: Knowledge Through…</div>
+      <div style="font-size:10px;color:#999">PAPER · 2025-01-01</div>
+      <div id="badge-PROP-2026-04-18-005" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-04-18-006" onclick="showCard('PROP-2026-04-18-006')"
+      style="padding:10px 14px;border-left:3px solid #6a2a0a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#6a2a0a;letter-spacing:.04em">ELEONORE STUMP</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Grains of Wheat: Suffering and Biblical Narratives</div>
+      <div style="font-size:10px;color:#999">PAPER · 2024-10-01</div>
+      <div id="badge-PROP-2026-04-18-006" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-04-18-007" onclick="showCard('PROP-2026-04-18-007')"
+      style="padding:10px 14px;border-left:3px solid #6a2a0a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#6a2a0a;letter-spacing:.04em">ELEONORE STUMP</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Suffering and Flourishing — Thomistic Institute Podcast with…</div>
+      <div style="font-size:10px;color:#999">PODCAST · 2026-01-01</div>
+      <div id="badge-PROP-2026-04-18-007" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-04-18-008" onclick="showCard('PROP-2026-04-18-008')"
+      style="padding:10px 14px;border-left:3px solid #7a1a1a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#7a1a1a;letter-spacing:.04em">SEAN CARROLL</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Mindscape AMA | April 2026 — Wheeler-DeWitt, Timeless Univer…</div>
+      <div style="font-size:10px;color:#999">PODCAST · 2026-04-06</div>
+      <div id="badge-PROP-2026-04-18-008" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-04-18-009" onclick="showCard('PROP-2026-04-18-009')"
+      style="padding:10px 14px;border-left:3px solid #4a006a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#4a006a;letter-spacing:.04em">STEPHEN WOLFRAM</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Stephen Wolfram & Matt Mullenweg: AI, and What Frontier Labs…</div>
+      <div style="font-size:10px;color:#999">TALK · 2026-03-27</div>
+      <div id="badge-PROP-2026-04-18-009" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-04-18-010" onclick="showCard('PROP-2026-04-18-010')"
+      style="padding:10px 14px;border-left:3px solid #4a006a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#4a006a;letter-spacing:.04em">STEPHEN WOLFRAM</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Philosophy Discussion with Stephen Wolfram and Luz Christoph…</div>
+      <div style="font-size:10px;color:#999">TALK · 2026-04-08</div>
+      <div id="badge-PROP-2026-04-18-010" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+  </div>
+  <div id="content">
+    <div id="welcome" style="color:#888;font-size:14px;padding:40px 20px;text-align:center;line-height:2">
+      <div style="font-size:32px;margin-bottom:12px">📬</div>
+      <strong>10 new proposals</strong> from the C2A2 hunt agents.<br>
+      Click any item on the left to review it.<br>
+      Use the buttons to Approve, Double-check, Change, or Deny each one.<br>
+      When done, hit <strong>Send Decisions</strong> below.
+    </div>
+    
+    <div class="prop-card" id="card-PROP-2026-04-18-001" style="display:none">
+      <div style="background:#7a1a1a18;border-left:4px solid #7a1a1a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#7a1a1a;letter-spacing:.05em">SEAN CARROLL · PODCAST · 2026-04-13</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Mindscape 350: J. Eric Oliver on The Self and How to Know It</div>
+        <a href="https://www.preposterousuniverse.com/podcast/" target="_blank" style="font-size:11px;color:#7a1a1a;opacity:.8">https://www.preposterousuniverse.com/podcast/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Sean Carroll hosts political scientist J. Eric Oliver for a Mindscape episode exploring the nature of the self — what it is, how we construct and know it, and what cognitive and social science reveals about self-knowledge. Oliver brings an empirical social science perspective to questions about personal identity, self-deception, and the constructed nature of the self-concept.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">Carroll's engagement with the self-concept through a social science lens complements his ongoing physicalist account of consciousness and observers. This episode may reveal how Carroll's poetic naturalism handles the "hard problem" at the personal identity level — relevant to the network's consciousness debates and to C2A2's core question about how individuals within traditions understand themselves and each other.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #7a1a1a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The nature of the self is contested across philosophy, psychology, neuroscience, and social science — with no consensus on whether the self is a real entity, a useful fiction, or an emergent construct</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Empirical social science perspective on self-knowledge — treating the self as a constructed narrative that can be studied through behavioral and cognitive data rather than resolved through metaphysics</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A naturalist research program on the self that sidesteps metaphysical commitments (does the self "really" exist?) in favor of studying how self-knowledge functions, fails, and can be improved — consistent with Carroll's poetic naturalism</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Mindscape episode 350 (April 13, 2026)</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">**McGilchrist (strong):** McGilchrist argues the self is known primarily through right-hemisphere participatory engagement, not left-hemisphere analytical construction. Social science approaches to self-knowledge may reveal which hemisphere's mode is dominant.
+
+**Kastrup (moderate):** Kastrup would argue the self-as-construct view misses that the self is a genuine dissociated alter of universal consciousness — not merely a narrative construction.
+
+**Hoffman (moderate):** Hoffman's conscious agents are selves at every scale — the social science of self-knowledge may be studying the interface through which conscious agents represent themselves to themselves.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-18-001','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-18-001','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-18-001')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-18-001','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-18-001" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-04-18-002" style="display:none">
+      <div style="background:#a0306a18;border-left:4px solid #a0306a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#a0306a;letter-spacing:.05em">BARBARA FREDRICKSON · TALK · 2025-03-20</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Conducive Conditions for Positivity Resonance at Multiple Levels of Analysis</div>
+        <a href="https://psych.ubc.ca/events/event/colloquium-with-dr-barbara-fredrickson/" target="_blank" style="font-size:11px;color:#a0306a;opacity:.8">https://psych.ubc.ca/events/event/colloquium-with-dr-barbara-fredrickson/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Fredrickson presented at UBC a new multi-level framework for understanding what enables positivity resonance. The framework identifies conducive conditions at three levels: individual-level (anticipated discrimination, high-quality listening), collective-level (civic engagement, relational mobility), and structural-level (economic inequality, the built environment). This represents a significant evolution of the positivity resonance program from dyadic psychology to a multi-scale social science.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is a major theoretical advance — Fredrickson is scaling positivity resonance from a dyadic phenomenon to a multi-level systems phenomenon. For C2A2, this is crucial: the conditions for productive inter-tradition dialogue are not just interpersonal but structural and collective. This framework gives the C2A2 project a way to think about what institutional and environmental conditions make tradition-crossing dialogue possible.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #a0306a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Positivity resonance research has focused on individual/dyadic interactions — but what structural and collective conditions enable or inhibit these micro-moments of connection at scale?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> A multi-level framework identifying conducive conditions at individual, collective, and structural levels of analysis</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Positivity resonance is not just a psychological event but a multi-scale phenomenon shaped by civic engagement, economic inequality, relational mobility, and the built environment — enabling intentional design of resonance-conducive communities</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: UBC colloquium explicitly presented the multi-level framework as the latest evolution of her research program</div>
+        </div>
+        <div style="border-left:3px solid #a0306a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Economic inequality and anticipated discrimination suppress positive social interactions — but the mechanism linking structural factors to micro-moments of connection is unclear</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Fredrickson's finding that community trust predicts the emotional quality of interactions with strangers but not close others</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Structural factors (inequality, discrimination) act as filters on positivity resonance with weak-tie and stranger interactions — the connections most relevant to inter-tradition dialogue</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Related research on community trust and stranger interactions from Fredrickson's lab</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Levin connection (strong)**: Multi-level conducive conditions map directly onto Levin's multi-scale agency — just as bioelectric signals create conducive conditions for morphogenetic goal-directedness at different scales, social structures create conducive conditions for positivity resonance at different scales
+- **Friston connection**: Collective-level conducive conditions for positivity resonance are essentially shared priors in the active inference framework — civic engagement and relational mobility shape the generative models that communities use to predict each other's behavior
+- **C2A2 direct relevance**: This framework provides actionable design principles for C2A2 communities — what structural conditions must be in place for productive inter-tradition dialogue? Fredrickson's multi-level analysis gives the project a concrete research agenda</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-18-002','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-18-002','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-18-002')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-18-002','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-18-002" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-04-18-003" style="display:none">
+      <div style="background:#a0306a18;border-left:4px solid #a0306a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#a0306a;letter-spacing:.05em">BARBARA FREDRICKSON · PAPER · 2025-12-10</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Why Loving Moments With Strangers Carry Lasting Benefits</div>
+        <a href="https://greatergood.berkeley.edu/article/item/why_loving_moments_with_strangers_carry_lasting_benefits" target="_blank" style="font-size:11px;color:#a0306a;opacity:.8">https://greatergood.berkeley.edu/article/item/why_loving_moments_with_strangers_…</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Research by Taylor N. West and Barbara Fredrickson (December 2025) demonstrates that brief moments of positive connection with strangers build a kinder, more cooperative society. The findings show that micro-moments of positivity resonance with strangers — people with no prior social ties — generate prosocial tendencies that extend beyond the interaction itself, contributing to broader social cohesion and cooperation.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is the empirical grounding for inter-tradition dialogue in C2A2. If positivity resonance with strangers (people from outside your social group, your tradition) generates lasting prosocial effects and social cohesion, then the C2A2 project has direct empirical support for its claim that cross-tradition encounters — encounters between "strangers" from different intellectual traditions — can build cooperation and mutual understanding.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #a0306a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Does positive connection with out-group members (strangers, people from different traditions) produce lasting prosocial effects, or are the benefits limited to in-group interaction?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> West & Fredrickson's finding that positivity resonance with strangers generates prosocial tendencies and contributes to social cohesion</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Micro-moments of positivity resonance with strangers carry lasting benefits for cooperation and social cohesion — the mechanism scales beyond in-group interaction to inter-group and inter-tradition contexts</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: December 2025 research publication showing stranger-interaction effects on prosocial behavior</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Stump/MacIntyre connection (very strong)**: MacIntyre's second-first-language criterion requires engagement with intellectual "strangers" — members of rival traditions. Fredrickson's finding that positive engagement with strangers builds cooperation provides the empirical mechanism for what MacIntyre describes philosophically. This is a high-value C2A2 bridge.
+- **Levin connection**: Strangers achieving positivity resonance is analogous to Levin's finding that cells from different organisms can coordinate bioelectrically when placed in the right conditions — the "conducive conditions" matter more than prior relationship
+- **Kastrup connection**: Positivity resonance between strangers as a moment of consciousness re-integration — dissociated alters (separate traditions) beginning to re-connect through shared positive experience</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-18-003','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-18-003','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-18-003')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-18-003','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-18-003" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-04-18-004" style="display:none">
+      <div style="background:#1a6b3c18;border-left:4px solid #1a6b3c;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#1a6b3c;letter-spacing:.05em">MICHAEL LEVIN · BLOG · 2026-01-15</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Symposium on the Platonic Space + A Short Argument on Platonic Space</div>
+        <a href="https://thoughtforms.life/symposium-on-the-platonic-space/" target="_blank" style="font-size:11px;color:#1a6b3c;opacity:.8">https://thoughtforms.life/symposium-on-the-platonic-space/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Michael Levin organized the first interdisciplinary symposium on "Platonic Space" — a structured, non-physical space of patterns (mathematical objects, forms of anatomy, physiology, and behavior) that in-form the biosphere. The symposium brought together representatives from philosophy, biology, physics, computer science, and mathematics. A companion blog post ("A Short Argument on Platonic Space") articulates Levin's core claim: that variable-agency patterns exist in a Platonic space and in-form physics, biology, computer science, and cognitive science — going beyond both pure physicalism and standard emergence accounts.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This represents Levin's most explicit philosophical statement about the ontological foundations of his research program. Platonic Space is his answer to the question "where do the patterns come from?" — neither genetic programs nor environmental inputs fully explain the forms that biological systems adopt. This positions Levin's work as making ontological claims that parallel (and potentially bridge to) Hoffman's conscious realism, Kastrup's idealism, and Wolfram's Ruliad.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #1a6b3c;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#555;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium-High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Neither genetics nor environment fully explains the rich, reliable patterns of form and behavior in biology — the space of possible forms appears structured in ways that current physicalism cannot account for</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Platonic Space — a structured, non-physical space of patterns with varying degrees of agency, detected as anatomical, physiological, and behavioral forms in the biosphere; related to but going beyond mathematical Platonism</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A research program investigating Platonic Space as a genuine ontological category — providing a framework for why certain forms recur across substrates, why morphogenetic targets exist, and why cognition-like properties appear at scales from cells to organisms</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Symposium organized with participants from philosophy, biology, physics, CS, and mathematics; Levin's 40+ years of thinking on this topic</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">**Hoffman (very strong):** Platonic Space is structurally analogous to Hoffman's space of conscious agents — both posit non-physical structured spaces as ontologically real. If Platonic patterns are conscious agents at some level, the Levin-Hoffman bridge becomes a formal identity.
+
+**Kastrup (strong):** Platonic Space patterns with agency resonate with Kastrup's universal mind generating dissociated alters — are these patterns the "thoughts" of universal consciousness?
+
+**Wolfram (strong):** The Ruliad as the space of all possible computations may BE Platonic Space — both are structured spaces of patterns from which observers extract specific forms. Wolfram's computational metaphysics may provide the formal framework for Levin's intuition.
+
+**Stump (moderate):** Thomistic forms (substantial forms, formal causation) are a historical precedent for Platonic Space — Stump's tradition has been articulating this ontological category for centuries.
+
+**Carroll (tension):** Carroll's poetic naturalism would resist adding Platonic Space as an ontological level — challenging Carroll to show how physicalism accounts for the pattern structures Levin identifies.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-18-004','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-18-004','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-18-004')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-18-004','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-18-004" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-04-18-005" style="display:none">
+      <div style="background:#6a2a0a18;border-left:4px solid #6a2a0a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#6a2a0a;letter-spacing:.05em">ELEONORE STUMP · PAPER · 2025-01-01</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Biblical Narratives and Human Flourishing: Knowledge Through Narrative</div>
+        <a href="https://www.amazon.com/Biblical-Narratives-Flourishing-Routledge-Systematic/dp/1032727810" target="_blank" style="font-size:11px;color:#6a2a0a;opacity:.8">https://www.amazon.com/Biblical-Narratives-Flourishing-Routledge-Systematic/dp/1…</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">An edited volume (Routledge, co-edited with Judith Wolfe) in the series Routledge Studies in Analytic and Systematic Theology. The volume explores the thesis that biblical narratives transmit a distinctive kind of knowledge relevant to human flourishing — non-propositional, second-person knowledge that cannot be reduced to doctrinal claims.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This volume extends Stump's "Franciscan knowledge" program into a collaborative, multi-author format — showing that her narrative epistemology is generating a research program, not just a single-author thesis. This is direct evidence of tradition vitality by the MacIntyre criterion: Stump's program is producing new questions and attracting new inquirers.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #6a2a0a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The relationship between narrative and human flourishing lacks a rigorous philosophical framework — narrative theology remains disconnected from empirical flourishing research</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> A multi-author research program building on Stump's Franciscan knowledge theory, connecting narrative epistemology to flourishing</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Biblical narratives provide knowledge-through-narrative that is constitutive of (not merely instrumental to) human flourishing — knowing persons through their stories is itself a form of flourishing</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Edited volume with multiple contributors developing the narrative-flourishing connection</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Fredrickson connection (strong)**: If narrative knowledge contributes to flourishing, and Fredrickson's research shows that flourishing involves positivity resonance, then shared narrative engagement may be a mechanism for positivity resonance — a direct bridge between Stump and Fredrickson
+- **McGilchrist connection**: Narrative as a right-hemisphere mode of knowing — McGilchrist would predict that narrative knowledge is more fundamental than propositional knowledge, exactly as Stump argues
+- **C2A2 methodology**: This volume validates the C2A2 approach of using structured narratives (the RC Pilot document, the tradition Wikis) as pedagogical tools for inter-tradition learning</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-18-005','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-18-005','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-18-005')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-18-005','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-18-005" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-04-18-006" style="display:none">
+      <div style="background:#6a2a0a18;border-left:4px solid #6a2a0a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#6a2a0a;letter-spacing:.05em">ELEONORE STUMP · PAPER · 2024-10-01</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Grains of Wheat: Suffering and Biblical Narratives</div>
+        <a href="https://academic.oup.com/book/59654" target="_blank" style="font-size:11px;color:#6a2a0a;opacity:.8">https://academic.oup.com/book/59654</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Stump's latest major work (Oxford University Press, 2024) examines seven biblical narratives—Job, Samson, Abraham, Mary of Bethany, the temptations and passion of Christ, and Ecclesiastes—arguing they yield a single emergent story in which human suffering is "defeated" by a good that outweighs it and could not be obtained without it. The book extends her narrative methodology from *Wandering in Darkness* and centers on non-propositional knowledge transmitted through stories.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is a direct sequel to *Wandering in Darkness* and represents the most significant extension of Stump's theodicy program since 2010. It deepens the claim that narrative knowledge is philosophically irreducible—a claim with immediate implications for how the C2A2 project structures its pedagogical tools and inter-tradition dialogues.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #6a2a0a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Propositional philosophy of religion cannot capture the full meaning of suffering narratives — something is lost in abstraction</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Stump's theory of "Franciscan knowledge" (non-propositional, second-person) applied systematically to seven biblical narratives</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Narrative-mediated knowledge is philosophically rigorous and irreducible to propositions; it provides a form of understanding suffering that propositional theodicy cannot</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The book argues that the emergent story across seven narratives reveals a good for suffering that "could not be gotten without the suffering, not even in a world without the Fall"</div>
+        </div>
+        <div style="border-left:3px solid #6a2a0a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The problem of evil remains philosophically unresolved when treated only through analytic argument</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> A unified reading of Hebrew Bible and New Testament suffering narratives as a single emergent story</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Suffering is "defeated" — not justified but redeemed — through a telos of personal union that requires vulnerability and loss as preconditions</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The book examines Job, Samson, Abraham, Mary of Bethany, Christ's temptations and passion, and Ecclesiastes as variations on a single theme</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **McGilchrist connection**: Stump's insistence on non-propositional, narrative knowledge aligns directly with McGilchrist's right-hemisphere mode of knowing — both argue that the left-hemisphere's propositional reduction misses what matters most
+- **Fredrickson connection**: The telos of suffering in Stump is personal union — structurally identical to Fredrickson's positivity resonance as the biological basis of love-as-connection
+- **Kastrup connection**: Suffering as a condition for deeper consciousness-integration maps onto Kastrup's dissociative idealism — suffering as the tension point where dissociated alters begin to re-integrate</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-18-006','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-18-006','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-18-006')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-18-006','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-18-006" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-04-18-007" style="display:none">
+      <div style="background:#6a2a0a18;border-left:4px solid #6a2a0a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#6a2a0a;letter-spacing:.05em">ELEONORE STUMP · PODCAST · 2026-01-01</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Suffering and Flourishing — Thomistic Institute Podcast with Fr. Gregory Pine, O.P.</div>
+        <a href="https://podcast.thomisticinstitute.org/suffering-and-flourishing-eleonore-stump/" target="_blank" style="font-size:11px;color:#6a2a0a;opacity:.8">https://podcast.thomisticinstitute.org/suffering-and-flourishing-eleonore-stump/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">A long-form conversation between Stump and Fr. Gregory Pine on the Thomistic Institute podcast, exploring the relationship between suffering and human flourishing. Stump discusses how stories illuminate the arcs of human lives and how suffering, understood through a Thomistic lens, can be a condition for — not an obstacle to — flourishing.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is Stump's most recent public-facing articulation of her core program, making the suffering-flourishing connection explicit in a way that directly bridges her philosophical work and the C2A2 project's normative claims. The podcast format also makes it accessible as a pedagogical resource for tradition-learners.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #6a2a0a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The relationship between suffering and flourishing is typically framed as oppositional — flourishing is what happens when suffering stops</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Stump's Thomistic account of suffering as instrumentally ordered to a higher good (personal union / beatitudo), articulated in accessible podcast format</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Suffering and flourishing are not opposed but teleologically linked — suffering can be a condition for the deepest forms of human flourishing, understood as union with persons and with God</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Podcast discussion explicitly connects suffering narratives to human flourishing through Thomistic final causality</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Fredrickson connection (strong)**: Fredrickson's flourishing research provides the empirical substrate for what Stump describes philosophically — if flourishing involves positivity resonance (love-as-connection), and Stump argues suffering enables deeper union, then suffering may paradoxically create conditions for deeper positivity resonance
+- **Friston connection**: The suffering-flourishing link maps onto active inference — organisms must navigate prediction errors (suffering) to reach better generative models (flourishing)</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-18-007','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-18-007','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-18-007')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-18-007','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-18-007" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-04-18-008" style="display:none">
+      <div style="background:#7a1a1a18;border-left:4px solid #7a1a1a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#7a1a1a;letter-spacing:.05em">SEAN CARROLL · PODCAST · 2026-04-06</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Mindscape AMA | April 2026 — Wheeler-DeWitt, Timeless Universe, and Boltzmann Brain Suppression</div>
+        <a href="https://www.preposterousuniverse.com/podcast/2026/04/06/ama-april-2026/" target="_blank" style="font-size:11px;color:#7a1a1a;opacity:.8">https://www.preposterousuniverse.com/podcast/2026/04/06/ama-april-2026/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">In the April 2026 Mindscape AMA, Sean Carroll engages a cluster of questions on cosmology, quantum gravity, and the foundations of time: whether the universe is fundamentally a static wavefunction (Wheeler-DeWitt equation) with time emerging as a component, whether basis selection in a consistent-histories framework mathematically suppresses Boltzmann brain amplitudes relative to classical-looking states, and whether a universe that settles into a stationary de Sitter quantum state should cease producing Boltzmann brains at all. Carroll articulates a physicalist line consistent with his long-standing position: timelessness at the fundamental level is compatible with the apparent passage of time; Boltzmann-brain worries are real but can be defused by the right quantum-state dynamics rather than by invoking consciousness or anthropic selection.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This discussion is distinct from the MWI-observer material already captured in PRS-10 (from the same AMA) and fills a gap in Carroll's wiki: his current position on the **emergence of time** from a timeless Wheeler-DeWitt wavefunction, and on whether **Boltzmann brain cosmological pathologies** threaten his quantum-state-centric naturalism. Both are long-running Carroll concerns (his 2017 "Why Boltzmann Brains Are Bad" paper; his blog post history on timeless universes) that are here updated to a 2026 public articulation. They directly feed his poetic-naturalism program at the cosmology/fundamental-physics interface and are essential for evaluating his stance against the Post-Spacetime Cluster (Arkani-Hamed, Wolfram) where time is also derived rather than fundamental.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #7a1a1a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> If time is not fundamental and the universe is a static Wheeler-DeWitt wavefunction with "moments" appearing as components, how does the apparent directional flow and lawful ordering of physical time arise without being put in by hand?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Carroll's 2026 AMA reformulation — a basis selection in the universal wavefunction such that branches hosting observers, records, and lawful physics have concentrated amplitude, while branches hosting Boltzmann-brain-like fluctuations are mathematically suppressed</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A timeless quantum cosmology in which the arrow of time, the reality of observers, and the rarity of Boltzmann brains all emerge from the structure of the wavefunction plus a principled basis choice — preserving poetic naturalism (higher-level descriptions real but emergent) at the cosmological scale</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: AMA April 2026 responses on the Wheeler-DeWitt equation, timeless universe, and consistent-histories basis selection</div>
+        </div>
+        <div style="border-left:3px solid #7a1a1a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The Boltzmann brain problem threatens any cosmology in which entropy fluctuations over long timescales could produce more disembodied observers than evolved ones — undermining the evidential status of our own observations</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Carroll's argument that a universe settling into a stationary de Sitter quantum state does not keep producing Boltzmann brains, because the stationary state has no further fluctuation dynamics in the relevant sense</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A defusal of the Boltzmann-brain threat that rests on quantum-cosmological dynamics rather than anthropic fine-tuning — keeping the Core Theory intact and preserving the epistemic reliability of ordinary observers</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: AMA April 2026 response on Boltzmann brains in stationary de Sitter cosmology (consistent with Carroll & Aguirre 2017)</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">**Arkani-Hamed (strong):** Arkani-Hamed's post-spacetime program (PRS-05, PRS-09) treats time as emergent from combinatorial-geometric structures (kinematic flow, cosmohedra). Carroll's Wheeler-DeWitt route is a *different* — and older — path to the same conclusion that time is not fundamental. The two converge on "time is emergent" from opposite methodologies (quantum cosmology vs. positive geometry). This narrows the gap between the Physicalist Cluster and the Post-Spacetime Cluster on the status of time, while preserving tension on the status of observers.
+
+**Wolfram (moderate):** Wolfram's rulial sampling also involves observer-dependence in a timeless computational substrate. Carroll's AMA remarks on basis selection as the source of apparent time have a structural analogue in Wolfram's "observers carve out time from the Ruliad."
+
+**Hoffman / Kastrup (productive tension):** Carroll's defusal of Boltzmann brains via stationary de Sitter dynamics is explicitly consciousness-free — the observer has no special physical role, contra Hoffman's conscious agents and Kastrup's primary consciousness. This is a test case for whether a fully physicalist quantum cosmology can handle observer-weighting without granting consciousness fundamental status.
+
+**Friston (speculative):** Friston's free-energy / surprise-minimization account could, in principle, provide the basis-selection rule Carroll gestures at — observers are branches where predictive coherence is maintained. Worth flagging to Friston Agent as a possible convergence point on "why this basis and not another."</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-18-008','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-18-008','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-18-008')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-18-008','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-18-008" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-04-18-009" style="display:none">
+      <div style="background:#4a006a18;border-left:4px solid #4a006a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#4a006a;letter-spacing:.05em">STEPHEN WOLFRAM · TALK · 2026-03-27</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Stephen Wolfram & Matt Mullenweg: AI, and What Frontier Labs Are Getting Wrong (dev/ai/nyc, Automattic)</div>
+        <a href="https://luma.com/yb2jnbho" target="_blank" style="font-size:11px;color:#4a006a;opacity:.8">https://luma.com/yb2jnbho</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Fireside chat between Wolfram and Matt Mullenweg (Automattic) framed explicitly as a critique of what frontier AI labs "are getting wrong." The discussion takes up the future of AI and the web through the lens of "computation and openness" — continuing Wolfram's 2026 arc (PRS-11, Foundation Tool for LLMs, February 2026) that LLMs alone are the wrong unit of analysis: what endures is the computational substrate that can be composed with language models, not the language models themselves. Wolfram's advisory role at Automattic (announced late 2025) provides the institutional backdrop: an established open-web platform is partnering with Wolfram's computation stack to argue that frontier-lab scaling is an incomplete strategy.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">Within Wolfram's tradition this is the clearest public statement yet that the Wolfram program claims a direct diagnostic on frontier AI: the path to reliable, generative artificial intelligence runs through computational-augmented generation (CAG) and rulial-space navigation, not through scaling transformer pre-training. It operationalizes the rulial-space / computational-observer framework (PRS-03, PRS-05, PRS-12) as an active critique of the dominant industry paradigm, and supplies the first public "what frontier labs get wrong" articulation from inside the Wolfram program.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #4a006a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Frontier AI labs are scaling LLMs with the expectation that sufficiently large pre-trained transformers will yield reliable, general-purpose intelligence. Hallucination, brittleness in computation, and lack of verifiability persist. Is scaling the right trajectory — or is there a categorical gap between statistical next-token prediction and actual computation?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> The Wolfram framing (March 27, 2026 Mullenweg conversation) that LLMs and symbolic computation are complementary, not competing — with the Wolfram Language / Foundation Tool (PRS-11) as the computational backbone that LLMs cannot become by scaling. "Computation and openness" positioned as the missing frontier-lab commitments.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> An explicit alternative research-and-industry program: LLM + CAG (computation-augmented generation) + open infrastructure, where the LLM is treated as a navigator of rulial space and the computational tool supplies the ground truth the navigator cannot produce. This is positioned not as a complement to frontier labs but as a correction of what they are structurally missing.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: dev/ai/nyc session title and framing, March 27, 2026; Wolfram's advisor role at Automattic; consistency with PRS-11 (Foundation Tool, Feb 2026).</div>
+        </div>
+        <div style="border-left:3px solid #4a006a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#7a1a1a;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Speculative</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The structural pairing of "open web" (Mullenweg/Automattic) with "open computation" (Wolfram) asks a question that frontier labs mostly avoid: does openness of the computational substrate matter for the long-run epistemic health of AI-mediated knowledge, or is closed/commercial frontier scaling sufficient?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> The Wolfram × Automattic alignment — a public pairing of open-web infrastructure and open computational tooling as a unified alternative to closed frontier-lab stacks. Wolfram frames AI as a civilizational issue of computational access, not merely model quality.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A combined open-web / open-computation stack that is substantively different from frontier-lab offerings: traceable computation, auditable knowledge, and open composability. For C2A2, this is the first time the Wolfram framework has been explicitly paired with an open-publishing platform at institutional scale.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Event framing and Automattic/Wolfram institutional pairing; no full transcript available.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Carroll (Bayesian confirmation):** Wolfram's "frontier labs are getting it wrong" claim is itself subject to Carroll's standard — the argument will be strongest when it names specific tasks where CAG demonstrably outperforms a scaled LLM on a prediction frontier labs cannot match. Connects to CROSS-016.
+- **Arkani-Hamed / Post-Spacetime cluster:** Both Wolfram and Arkani-Hamed hold that the right primitive is combinatorial/computational rather than the "bulk" (for Arkani-Hamed, bulk spacetime; for Wolfram here, bulk transformer weights). The Mullenweg conversation is another instance of Wolfram taking the "bulk is emergent, primitives are elsewhere" move seriously — this time applied to AI, not to spacetime. Deepens CROSS-047/CROSS-048.
+- **Kastrup / Hoffman (consciousness-first):** Wolfram's implicit claim is that frontier labs confuse the interface (the conversational LLM surface) with the reality (the computational substrate). Structurally this echoes Hoffman's interface theory of perception (CROSS-021, CROSS-026) and Kastrup's "perception is a dissociated alter's window." If frontier labs over-identify the surface with the thing, Hoffman and Kastrup would say they are making a category error already familiar in consciousness studies.
+- **Karpathy (C2A2 methodological origin):** Direct methodological resonance with the C2A2 founding move — Karpathy's Wiki-for-agents thesis (the reason this network exists) and Wolfram's "computation, not just LLMs" are two versions of the same underlying critique: LLM context is the wrong unit; stable, externalized, queryable structure is the right one. Both point to the same architectural answer. Flag for Master Agent.
+- **C2A2 (meta):** The Wolfram × Automattic pairing is structurally similar to what C2A2 is: an open-infrastructure plus open-computation play. Worth noting as a real-world reference implementation in the ambient environment.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-18-009','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-18-009','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-18-009')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-18-009','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-18-009" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-04-18-010" style="display:none">
+      <div style="background:#4a006a18;border-left:4px solid #4a006a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#4a006a;letter-spacing:.05em">STEPHEN WOLFRAM · TALK · 2026-04-08</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Philosophy Discussion with Stephen Wolfram and Luz Christopher Seiberth [Ep. 2]</div>
+        <a href="https://livestreams.stephenwolfram.com/" target="_blank" style="font-size:11px;color:#4a006a;opacity:.8">https://livestreams.stephenwolfram.com/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Second installment of Wolfram's new dialogue series with professional philosophers (following the Mark Jago Ep. 1, 2026-03-13 — see PRS-10). Wolfram speaks with Luz Christopher Seiberth (Potsdam), a Sellars scholar whose research program "Hypergraphing the Space of Reason" applies the hypergraph formalism — explicitly at Wolfram's (2021) suggestion that we can "get underneath" concepts by modelling their constituents — to the Sellarsian/Brandomian "space of reasons." Seiberth treats steps in the space of reasons as argument-map-based movements along contextually confined paths through a hypergraph; a "conceptual scheme" becomes a sub-area of the hypergraph acting as a contextual boundary for projecting classes of objects.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is the Wolfram framework migrating out of fundamental physics and into analytic philosophy of mind and language — the hypergraph is being used to model *inferential* structure (the pragmatist/inferentialist space of reasons), not just *physical* structure. It is the most explicit example yet of Wolfram's "rulial space = map of all possible minds and all possible disciplines" thesis (PRS-03, PRS-05) being operationalized by a non-physicist in a rival intellectual tradition. It extends the Wolfram × philosophy engagement opened by the Templeton "Computational Metaphysics" grant (PRS-06) and the Mark Jago dialogue (PRS-10) from metaphysics into epistemology.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #4a006a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Sellars' and Brandom's "space of reasons" is a foundational metaphor in analytic philosophy of mind — but lacks a formal model. How do we make rigorous sense of inferential movements, contextual boundaries, and "conceptual schemes" as structural objects rather than loose metaphors?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Seiberth's hypergraphing of the space of reasons — hypergraphs (per Wolfram 2021) as the substructure beneath the concept of reasoning-space, with inferential steps modelled as argument-map-based paths and conceptual schemes modelled as sub-area boundaries.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A formal-philosophical research program in which the Wolfram hypergraph becomes the shared mathematical language for both (a) fundamental physics (Wolfram Physics Project) and (b) the structure of rational inference (Seiberth). If the same formal object underlies both spacetime and the space of reasons, this is a strong empirical argument for the Ruliad thesis (PRS-06) from the philosophy side.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Seiberth's research page (UiB Philosophy); Ep. 2 dialogue, April 8, 2026</div>
+        </div>
+        <div style="border-left:3px solid #4a006a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The Wolfram Physics Project and the Ruliad have been criticized for lacking engagement with rigorous philosophical frameworks — is the Ruliad thesis ontologically serious, or is it physicist-style metaphysics without the professional philosophical tools?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> An ongoing, multi-episode dialogue series (Jago, March 13; Seiberth, April 8) in which Wolfram submits his computational metaphysics to progressive philosophical scrutiny — modal logic/impossible-worlds semantics (Jago), then Sellarsian inferentialism and Kantian transcendental argument (Seiberth, whose book Intentionality in Sellars takes a transcendental-account approach).</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A dialogue-structured track record showing Wolfram's framework can accept, survive, and be enriched by stress-testing from multiple live philosophical traditions — and can absorb philosophers whose work itself adopts the hypergraph formalism (Seiberth). The series format itself is a C2A2-shaped deliverable: a live, recorded, iterative inter-tradition dialogue.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Two episodes of a new series within ~4 weeks; Seiberth's independent adoption of Wolfram's hypergraph suggestion.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Stump / MacIntyre (analytic philosophy, tradition-constituted rationality):** Seiberth's Sellarsian "space of reasons" is close cousin to MacIntyre's tradition-constituted rationality — both treat rationality as embedded in contextually bounded inferential practices rather than as a view-from-nowhere. If Seiberth's hypergraph-of-reasons can represent tradition-bounded inference, this is a direct formal model for what C2A2 is trying to build. Possible new CROSS candidate: "Is the hypergraph of the space of reasons the formal structure of tradition-constituted rationality?" Bridges Wolfram ↔ Stump/MacIntyre.
+- **Hoffman (trace logic / conscious-agent networks):** Hoffman's trace logic (CROSS-032, CROSS-033) generalizes Markov blankets via structures on graphs; Seiberth's conceptual-scheme-as-sub-area-of-hypergraph generalizes conceptual containers via structures on hypergraphs. Two independent uses of graph/hypergraph combinatorics to model boundaries of cognitive/inferential activity.
+- **Carroll (Bayesian confirmation / methodology):** The dialogue series is itself a response to CROSS-016 / the confirmation-standard challenge — Wolfram is now showing the program can engage rigorously with external rational scrutiny, which is part (but not all) of what Carroll demands.
+- **Kastrup (consciousness-first ontology):** Seiberth's "Arguments as Vehicles for the Space of Intelligence" (LSE, forthcoming talk) treats arguments themselves as substrate-independent vehicles — structurally parallel to Kastrup's treatment of minds as dissociated instances of a shared structure.
+- **Levin:** Seiberth uses hypergraph substructure to get underneath a high-level concept ("the space of reasons") the way Levin uses bioelectric substructure to get underneath morphogenetic form. The same philosophical move — metaphysical substrate as graph — now runs across three traditions (Wolfram physics, Seiberth inference, Levin morphogenesis).
+- **Note for cross_program_index.md:** this proposal opens a genuinely new Wolfram ↔ analytic-philosophy corridor that is not represented in CROSS-001 through CROSS-054. Recommend the Master Agent treat this as a candidate for a new CROSS entry on approval.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-04-18-010','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-04-18-010','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-04-18-010')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-04-18-010','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-04-18-010" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="bottombar">
+  <div id="progress">0 / 10 reviewed</div>
+  <div id="all-done">✓ All reviewed!</div>
+  <button id="submit-btn" onclick="submitDecisions()">Send Decisions →</button>
+</div>
+
+<script>
+const TOTAL = 10;
+const decisions = {};
+const notes = {};
+
+function showCard(pid) {
+  document.querySelectorAll('.prop-card').forEach(c => c.style.display='none');
+  document.querySelectorAll('.sidebar-item').forEach(s => s.classList.remove('active'));
+  document.getElementById('card-'+pid).style.display='block';
+  document.getElementById('item-'+pid).classList.add('active');
+  document.getElementById('welcome').style.display='none';
+}
+
+function decide(pid, decision) {
+  decisions[pid] = decision;
+  notes[pid] = notes[pid] || '';
+  updateBadge(pid, decision);
+  updateProgress();
+  // Auto-advance to next pending
+  const items = Array.from(document.querySelectorAll('.sidebar-item'));
+  const cur = items.findIndex(el => el.id === 'item-'+pid);
+  const next = items.slice(cur+1).find(el => !decisions[el.id.replace('item-','')]);
+  if (next) showCard(next.id.replace('item-',''));
+}
+
+function decideChange(pid) {
+  const note = prompt('What should be changed?\n(Your note will be sent with the decision)', '');
+  if (note === null) return;
+  decisions[pid] = 'CHANGE';
+  notes[pid] = note;
+  updateBadge(pid, 'CHANGE', note);
+  updateProgress();
+  const items = Array.from(document.querySelectorAll('.sidebar-item'));
+  const cur = items.findIndex(el => el.id === 'item-'+pid);
+  const next = items.slice(cur+1).find(el => !decisions[el.id.replace('item-','')]);
+  if (next) showCard(next.id.replace('item-',''));
+}
+
+function updateBadge(pid, decision, note='') {
+  const colors = {APPROVE:'#1a6b3c',CHECK:'#8a4a00',CHANGE:'#2a4a8a',DENY:'#7a1a1a'};
+  const labels = {APPROVE:'✓ Approved',CHECK:'⚑ Flagged for check',CHANGE:'✎ Change requested',DENY:'✗ Denied'};
+  const badge = document.getElementById('badge-'+pid);
+  badge.style.color = colors[decision] || '#555';
+  badge.style.fontWeight = '700';
+  badge.textContent = labels[decision] + (note ? ' — '+note.slice(0,30) : '');
+  const status = document.getElementById('status-'+pid);
+  if (status) {
+    status.style.color = colors[decision];
+    status.textContent = labels[decision] + (note ? ': '+note : '');
+  }
+}
+
+function updateProgress() {
+  const done = Object.keys(decisions).length;
+  document.getElementById('progress').textContent = done + ' / ' + TOTAL + ' reviewed';
+  if (done >= TOTAL) {
+    document.getElementById('all-done').style.display='inline';
+    document.getElementById('submit-btn').style.background='#1a6b3c';
+  }
+}
+
+function submitDecisions() {
+  const lines = ['DECISIONS:'];
+  const pids = ['PROP-2026-04-18-001', 'PROP-2026-04-18-002', 'PROP-2026-04-18-003', 'PROP-2026-04-18-004', 'PROP-2026-04-18-005', 'PROP-2026-04-18-006', 'PROP-2026-04-18-007', 'PROP-2026-04-18-008', 'PROP-2026-04-18-009', 'PROP-2026-04-18-010'];
+  pids.forEach(pid => {
+    const d = decisions[pid] || 'PENDING';
+    const n = notes[pid] ? ' | ' + notes[pid] : '';
+    lines.push(pid + ': ' + d + n);
+  });
+  const body = lines.join('\n');
+  const subject = '[C2A2-review-decision] 2026-04-18';
+  // Open Gmail compose directly — avoids Apple Mail / default mail client
+  const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=thomas.loughran@gmail.com&su='
+    + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  window.open(gmailUrl, '_blank');
+}
+
+// Show first card on load
+window.addEventListener('load', () => { showCard('PROP-2026-04-16-002'); });
+</script>
+</body>
+</html>

@@ -1579,6 +1579,437 @@ ASSUMPTION-087:
       14a: Extracted from PROP-2026-05-05-005 framing in the Hawkins+Hoffman session.
     Current status: UNTESTED
 
+ASSUMPTION-088:
+  Date identified: 2026-05-08
+  Statement: An org-monthly-usage-limit interrupt occurring on a personal-account Cowork session is treated as a real, work-blocking quota event (not a misclassification by the system to be ignored). When the explorer-fix Cowork session was interrupted twice with "You've hit your org's monthly usage limit," Tom clarified "this is not an org account...I have one, but this isn't it" and the working assumption became that synthesis must be deferred to a later session rather than retried immediately.
+  Context: C2A2 explorer bug-fix Cowork session 2026-05-08 (local_56cc4dfb). Codex 5.5 external review pasted in; assistant hit org-limit twice within the same session containing only one user message + the review; synthesis (composite action plan) was queued, not produced. Cowork-summary explicitly records "the session hit an org-monthly-usage-limit interrupt twice."
+  Type: methodological / infrastructure
+  Related decisions: ASSUMPTION-071 (browser-auth as agent-prohibited), candidate DECISION-026 (sandbox-infrastructure escalation track — undrafted)
+  Testability: testable empirically (audit subsequent personal-account Cowork sessions for org-limit interrupts; correlate with actual usage; check whether the messaging is misclassification or a true quota event)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-088
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local_56cc4dfb session; Tom's clarifying turn ("this is not an org account...I have one, but this isn't it") + the assistant's two org-limit interrupts.
+    Current status: UNTESTED
+
+ASSUMPTION-089:
+  Date identified: 2026-05-08
+  Statement: Two-source composite synthesis (internal report + external-LLM review) is the appropriate next step for the explorer bug-and-design pipeline — neither source is dropped or used in isolation; both are read together and a composite action plan is built across them.
+  Context: C2A2 explorer bug-fix Cowork session 2026-05-08 (local_56cc4dfb). Tom's user message: "Here's input from another agent (codex 5.5): Read, compare to the report you wrote, synthesize, and generate a detailed action plan based on that composite." This is the first explicit articulation of a two-source-composite protocol for the explorer track and parallels the briefing-layer's multi-source ingestion pattern.
+  Type: methodological / epistemic
+  Related decisions: ASSUMPTION-086 (specialist-self-claims as primary cross-tradition signal — analogous epistemic move at a different layer); candidate DECISION-022 (briefing-layer audit contract)
+  Testability: testable empirically (compare outputs of compositional vs. picked-one synthesis on a held-out review pair); testable via literature (multi-source review-aggregation frameworks in software-engineering and meta-analysis)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-089
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Tom's verbatim instruction in the local_56cc4dfb session (single-message turn, before org-limit hit).
+    Current status: UNTESTED
+
+ASSUMPTION-090:
+  Date identified: 2026-05-08
+  Statement: Within the explorer bug-fix track, the highest-priority entry point is the smallest-fix-first item — specifically the two-line `extractOverview()` var-declaration fix in `wiki_narration.html` (line ~1502/1503) — because it is high-confidence, low-effort, and stops Chrome from logging an uncaught exception every page-load. Smoke-test scaffolding is the second priority; a responsive fallback shell is the third.
+  Context: Cowork-to-chat summary 2026-05-08 (local_feb53918), "For Morning Discussion" item 1: "Recommendation: do (b) first — the bug-fix is high-confidence and low-effort, and shipping it stops Chrome from logging an uncaught exception every page-load. Then add the smoke-test script before tackling the responsive shell." This articulates an explicit prioritization heuristic that mirrors Codex 5.5's "Best next move" trio (fix bug → add smoke-test → responsive fallback) without separately validating that Codex's priorities reflect Tom's project context (PRESUMPTION-115 surfaces this).
+  Type: architectural / methodological
+  Related decisions: candidate DECISION-026 (sandbox-infrastructure escalation track), ASSUMPTION-082 (3-layer RC Explorer architecture — `wiki_narration.html` is the L1 instrument)
+  Testability: testable empirically (does the two-line fix eliminate the uncaught exception in Chrome DevTools console? does the smoke-test catch a regression on the next code change? does mobile usage at 390×844 succeed under a responsive shell?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-090
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the cowork-to-chat summary's "Recommendation: do (b) first" formulation, traced to Codex 5.5's prioritization trio.
+    Current status: UNTESTED
+
+ASSUMPTION-091:
+  Date identified: 2026-05-08
+  Statement: The proposal pipeline accepts off-cadence specialist proposal filings — that is, a Stump or Fredrickson proposal can land in `inbox/proposals/pending/` on a Friday (assigned-Thursday slot for both) without weekday-coordination friction. Off-cadence and on-cadence filings are treated identically by downstream review-page rendering and approval-rate tracking.
+  Context: Five new pending proposals filed today dated 2026-05-08 (Friday): Stump × meaning-of-suffering Pine dialogue (Stump = assigned-Thursday slot), Fredrickson × *Positively in Sync* (Thursday slot), Fredrickson × *Positive Emotions Cornerstones* Oxford 2025 (Thursday slot), Arkani-Hamed × single-minus gluon/graviton GPT-5.2 (Friday slot), Carroll × Mindscape 351 Singer-utilitarianism (Friday slot). Three of five are off-weekday-cadence. Cowork summary treats them uniformly: "These will land on the next review page." Extends ASSUMPTION-079 (same-day catch-up framing) at the per-proposal level.
+  Type: methodological / operational
+  Related decisions: ASSUMPTION-079 (same-day catch-up framing), ASSUMPTION-011 (specialist-first scheduling)
+  Testability: testable empirically (audit downstream review-page render and approval rates for off-cadence vs. on-cadence proposals over N weeks; check pattern-detector findings for systematic bias)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-091
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from `wiki/inbox/proposals/pending/` directory listing for 2026-05-08 (5 files; 3 off-cadence) + cowork-summary uniform-treatment phrasing.
+    Current status: UNTESTED
+
+ASSUMPTION-092:
+  Date identified: 2026-05-08
+  Statement: A 3-day master-narrative absence (2026-05-06 → 2026-05-08) for the wiki-orchestrator daily run is most plausibly attributable to the Anthropic-side daemon link-count = 1 silent-skip bug (ASSUMPTION-080/081) — i.e., the bug diagnosed on 2026-05-05 has not been fixed Anthropic-side, and the wiki-orchestrator daily task is itself link-count = 1 affected. This is treated as the working hypothesis pending a manual link-count check.
+  Context: Cowork-to-chat summary 2026-05-08, Pipeline Status section: "Master-narrative gap: today's wiki run did NOT produce a 2026-05-08 master-narrative entry; gap = 3 days (2026-05-06 → 2026-05-08), echoing the OPEN-038 cluster — worth checking whether the daemon link-count = 1 bug (ASSUMPTION-081) is implicated." Also "For Morning Discussion" item 4: "Worth checking whether the wiki-orchestrator daily task itself is link-count = 1 affected — if it is, the bug Tom planned to file Anthropic-side ... is now actively re-blocking the wiki, not just the Summa side."
+  Type: empirical / infrastructure
+  Related decisions: ASSUMPTION-080, ASSUMPTION-081, OPEN-038 (master-narrative-gap escalation question), candidate DECISION-026 (sandbox-infrastructure escalation track)
+  Testability: testable empirically (`stat -c %h /path/to/wiki-orchestrator-daily-task.scheduled-task` to count links; if =1, retry via `update_scheduled_task --fireAt`; observe whether master-narrative resumes)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-092
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the cowork-to-chat summary's master-narrative-gap framing tied directly to ASSUMPTION-081 as the working hypothesis.
+    Current status: UNTESTED
+
+ASSUMPTION-093:
+  Date identified: 2026-05-08
+  Statement: Saturday-morning rerun is the standard closure path for queued-but-stalled weekday scheduled tasks. The 1pm Friday register-cleanup task (local_1d6dddab), the Sunday-Wright/Rohr task (local_a89665bd, hit org-limit), and the sewing-agent-weekly task (local_6e3f64f1, hit org-limit) all stalled today; cowork-summary "What's Next" frames the resolution as "Saturday specialist agent slot ... could be picked up as a non-scheduled session" or "drop it into a Saturday session this weekend."
+  Context: Cowork-to-chat summary 2026-05-08, "What's Next: Tomorrow (Sat 2026-05-09)" section + "For Morning Discussion" item 2 ("when does it close? ... (b) drop it into a Saturday session this weekend"). The convention has been operative across multiple prior weeks but is articulated explicitly here for the first time as an end-of-week catch-up policy.
+  Type: methodological / operational
+  Related decisions: ASSUMPTION-079 (catch-up framing), ASSUMPTION-011 (specialist-first scheduling)
+  Testability: testable empirically (audit weekend-rerun success rates for stalled weekday tasks over N weeks; compare time-to-closure for Saturday-rerun vs. Monday-rerun vs. drop)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-093
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the cowork-to-chat summary's "What's Next" weekend-disposition framing for three stalled scheduled tasks today.
+    Current status: UNTESTED
+
+ASSUMPTION-094:
+  Date identified: 2026-05-08
+  Statement: Sandbox-infrastructure constraints aggregated across two active projects (C2A2 + Summa-2026) accumulate to a single-escalation threshold around N≥5 distinct constraints, justifying a combined escalation note to Anthropic rather than parallel per-channel reports. The current count: egress allowlist + mount topology + .git/index.lock (~22 days) + daemon link-count = 1 silent-skip + Summa YouTube IP-block = 5.
+  Context: Cowork-to-chat summary 2026-05-08, "For Morning Discussion" item 3: "The Summa YouTube IP-block today plus the existing C2A2 OPEN-039 cluster (egress allowlist; mount topology; .git/index.lock at ~22 days; daemon link-count = 1 silent-skip) is now ≥5 distinct sandbox infrastructure constraints across two active projects. PRESUMPTION-075 (workaround-as-permanent) is increasingly costly. Question: file a single combined escalation note to Anthropic this week, or hold for one more cycle's worth of repro data?" Also "What's Next" item 3.
+  Type: methodological / normative
+  Related decisions: OPEN-039 (sandbox-infrastructure-escalation cluster), candidate DECISION-026 (sandbox-infrastructure escalation track), ASSUMPTION-078 (two parallel sandbox-infrastructure failure modes both user-fixable)
+  Testability: testable empirically (compare resolution-rate for combined vs. parallel escalation reports historically); testable via literature (incident-aggregation policy in vendor escalation procedures)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-094
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary's "≥5 distinct sandbox infrastructure constraints" formulation and the explicit single-vs-parallel escalation question.
+    Current status: UNTESTED
+
+ASSUMPTION-095:
+  Date identified: 2026-05-08
+  Statement: YouTube IP-blocking the agent sandbox via `youtube-transcript-api` (IpBlocked / RequestBlocked errors across all six days reviewed) is a SYSTEMIC ESCALATION (not a transient failure), blocking Step-4 transcript-fidelity checks for all 65 Summa pairs in the Summa vault. The classification is "systemic" rather than "transient" because the same IP-block reproduces across multiple days and multiple transcript IDs.
+  Context: Cowork-to-chat summary 2026-05-08, "What Was Accomplished Today" final paragraph: "an earlier sweep on Days 6–11 surfaced a systemic ESCALATION: YouTube is IP-blocking the agent sandbox via `youtube-transcript-api` (IpBlocked / RequestBlocked across all six days), so Step-4 transcript-fidelity checks cannot run for any of the 65 pairs in the Summa vault. This mirrors the C2A2 OPEN-039 sandbox-infrastructure-escalation cluster."
+  Type: empirical / infrastructure / cross-project
+  Related decisions: OPEN-039 (sandbox-infrastructure-escalation cluster — Summa YouTube IP-block joins as 5th channel), ASSUMPTION-094 (combined-escalation threshold)
+  Testability: testable empirically (re-attempt `youtube-transcript-api` calls from agent sandbox vs. local laptop; correlate with Anthropic IP allocation; reproduce on N additional transcript IDs)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-095
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Summa-2026 QC-sweep classification report of 2026-05-08 (six-pair priority-2 sweep + Days 6–11 sweep — both surfaced via cowork-summary cross-project section).
+    Current status: UNTESTED
+
+ASSUMPTION-096:
+  Date identified: 2026-05-09
+  Statement: Four SYSTEMIC-RISK flags surfaced in a single 15a/15b/15c lit-search cycle constitute the "densest single cycle on record" — a pattern-strength signal warranting cluster-level remediation rather than per-item triage. Three of the four flags are recurrence flags (SELF-AWARENESS-META 4th recurrence; specialist/external primary-signal recurrence at new layer; three-recurrence discipline cluster); only the review-aggregation 3-item structural gap is a first observation.
+  Context: Cowork-to-chat summary 2026-05-09, second paragraph: "the largest cluster of SYSTEMIC-RISK flags in any one lit-search cycle to date — four flags, three of them recurrence flags." Reinforced under "Pipeline Status" and explicitly connected to today's lit-search-pipeline cycle output.
+  Type: methodological / metrics
+  Related decisions: ASSUMPTION-073 (REVISE heuristic), ASSUMPTION-072 (single-cycle drain), candidate DECISION-027 (specialist-recognition adjudication tier — scope extension flagged today), candidate DECISION-026 (sandbox-infrastructure escalation)
+  Testability: testable empirically (compare cluster-level vs. per-item remediation outcomes on next 4-flag-cycle, or audit historical cycle-density vs. follow-through rate); testable via literature (alert-fatigue / cluster-alerting frameworks in SRE practice)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-096
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-09 framing of today's lit-search cycle as "densest on record" + the four-flag taxonomy.
+    Current status: UNTESTED
+
+ASSUMPTION-097:
+  Date identified: 2026-05-09
+  Statement: Three independent third-recurrences in a single batch — registration (PRESUMPTION-105), canonization (PRESUMPTION-106), fallback (PRESUMPTION-111) — are coherent enough to bundle into a single "Core Operational Discipline" architectural sprint. The bundling assumption is that cross-cluster remediation efficiencies outweigh smaller-bite triage benefits.
+  Context: Cowork-to-chat summary 2026-05-09, item 7 of "What's Next": "Bundle Three-recurrence discipline cluster (registration / canonization / fallback) into 'Core Operational Discipline' architectural sprint — explicit recommendation from today's lit-search." Repeated in "For Morning Discussion" item 3.
+  Type: architectural / methodological
+  Related decisions: PRESUMPTION-105, PRESUMPTION-106, PRESUMPTION-111, candidate DECISION-022 (briefing-layer audit contract — adjacent), candidate DECISION-026
+  Testability: testable empirically (track sprint-level vs. item-level remediation completion rate on a held-out cluster); testable via literature (architectural-debt cluster-remediation patterns)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-097
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-09 explicit lit-search recommendation + "What's Next" item 7 + "For Morning Discussion" item 3.
+    Current status: UNTESTED
+
+ASSUMPTION-098:
+  Date identified: 2026-05-09
+  Statement: A REVISE-flag for the third consecutive 15c cycle (≤25h stall watchdog: 2026-04-21 anchor, 2026-04-26 reflag, 2026-05-09 third reflag) constitutes "arguably stronger than the typical canonization threshold" — i.e., third-recurrence at fixed-cycle cadence is sufficient evidence to canonize a candidate-decision as a numbered DECISION-NNN this week.
+  Context: Cowork-to-chat summary 2026-05-09, "For Morning Discussion" item 1: "the ≤25h stall watchdog is now arguably stronger than the typical canonization threshold." Frames the question to Tom as binary: canonize as DECISION-NNN this week, or remain a candidate-decision pending more data.
+  Type: methodological / governance
+  Related decisions: PRESUMPTION-035 (threshold-free flag invocation), PRESUMPTION-052 (recurrence-without-escalation), PRESUMPTION-069 (silence-not-tracked anchor), PRESUMPTION-108 (today's third-recurrence on this exact line), candidate DECISION-022 (briefing-layer audit contract)
+  Testability: testable empirically (track canonization-rate at N=3 recurrence vs. N=4 / N=5 across other clusters; audit time-to-recurrence-suppression once canonized vs. not); testable via literature (governance-trigger-threshold designs in SRE / quality-management)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-098
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-09 "For Morning Discussion" item 1 framing the third-recurrence-as-canonization signal as a stated commitment.
+    Current status: UNTESTED
+
+ASSUMPTION-099:
+  Date identified: 2026-05-09
+  Statement: DECISION-027 candidate scope can be extended to cover the external-tool-review layer (Codex / external-LLM prioritization adoption) — i.e., specialist self-attribution (original DECISION-027 candidate) and external-LLM prioritization adoption (today's PRESUMPTION-115 SYSTEMIC-RISK extension) are "arguably the same epistemic-weight protocol applied to two different source types." Bundling them keeps the protocol unified; splitting them tracks the empirical surface separately.
+  Context: Cowork-to-chat summary 2026-05-09, "Pipeline Status" line for Decisions: "DECISION-027 candidate scope today was implicitly extended to external-tool-review layer (per PRESUMPTION-115 SYSTEMIC-RISK)." Made fully explicit in "For Morning Discussion" item 2 as the binary unify-or-split question.
+  Type: architectural / governance
+  Related decisions: PRESUMPTION-074 (specialist-recognition reliability — original SYSTEMIC-RISK), PRESUMPTION-115 (external-tool-review layer extension), ASSUMPTION-086 (specialist-self-claims as primary cross-tradition signal), candidate DECISION-027
+  Testability: testable via literature (review-aggregation framework taxonomies that distinguish source-types); testable empirically (audit DECISION-027 application to a held-out specialist event vs. external-tool-review event under both unified and split protocols)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-099
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-09 implicit-extension statement under "Key Decisions Made" + the explicit unify-or-split question in "For Morning Discussion" item 2.
+    Current status: UNTESTED
+
+ASSUMPTION-100:
+  Date identified: 2026-05-09
+  Statement: Saturday Wolfram's two specialist proposals reinforcing the Levin × Hoffman × Wolfram three-way ontological convergence (CROSS-007 / CROSS-025 / CROSS-031 / CROSS-049 / CROSS-051) constitute "the highest-leverage cross-tradition signal of the week" — a strength-claim that warrants prioritized Pattern-Detector deep-pass scheduling (potentially out-of-band before the standard review cycle).
+  Context: Cowork-to-chat summary 2026-05-09, "For Morning Discussion" item 5: "Saturday Wolfram delivered three-way ontological convergence reinforcement ... This is the highest-leverage cross-tradition signal of the week." Question to Tom posed as binary: schedule a Pattern Detector deep-pass before the standard review cycle, or let them flow through normally.
+  Type: empirical / cross-tradition
+  Related decisions: ASSUMPTION-086 (specialist-self-claims as primary cross-tradition signal), PRESUMPTION-074 (specialist-recognition reliability), CROSS-007, CROSS-025, CROSS-031, CROSS-049, CROSS-051
+  Testability: testable empirically (audit Pattern-Detector findings before vs. after deep-pass on these two proposals; compare to baseline standard-cycle finding-rate); testable via literature (cross-domain concept-convergence detection metrics)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-100
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-09 "For Morning Discussion" item 5 highest-leverage-of-week claim + the explicit out-of-band scheduling question.
+    Current status: UNTESTED
+
+ASSUMPTION-101:
+  Date identified: 2026-05-09
+  Statement: The Chrome MCP "Tabs can only be moved to and from normal windows" error (which has now blocked both the morning chat-scrape and the evening cowork-to-chat sync today, in addition to a 2026-05-08 occurrence) is an environment-state issue (popup-only / app-window-only / DevTools-detached Chrome sessions) rather than a Chrome-MCP defect. The root-cause attribution rests on a Codex-style external-LLM diagnostic.
+  Context: Cowork-to-chat summary 2026-05-09, "For Morning Discussion" item 6: "the Codex-style external-LLM diagnostic suggests it's an environment-state issue (popup-only Chrome sessions) rather than a Chrome-MCP defect." Question to Tom posed as binary: add a `pre-scrape-ensure-normal-window` step, or document the pre-condition.
+  Type: empirical / infrastructure
+  Related decisions: ASSUMPTION-071 (browser-auth as agent-prohibited), PRESUMPTION-038 (browser-state self-clearing), PRESUMPTION-111 (cowork-to-chat sync no-fallback), candidate DECISION-026 (sandbox-infrastructure escalation)
+  Testability: testable empirically (correlate scrape-success-rate with Chrome window-type-mix at scrape time across N≥10 future runs; produce an `ensure-normal-window` script and observe the success-rate delta); testable via literature (Chrome extension / MCP-protocol tab-group requirements documentation)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-101
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-09 "For Morning Discussion" item 6 environment-state attribution + the cross-references to today's chat-scrape failure note (`architecture/daily_sync/chat_to_cowork/2026-05-09_chat_summary.md`).
+    Current status: UNTESTED
+
+ASSUMPTION-102:
+  Date identified: 2026-05-09
+  Statement: A 20-item EOD lit-search batch (8 ASSUMPTIONs + 12 PRESUMPTIONs) draining 100% in a single morning 15a/15b/15c cycle constitutes the operational baseline for lit-search throughput at the present queue scale — a positive instance of ASSUMPTION-072's "single-cycle backlog drain" claim, now generalized from the 5-day backlog case to the prior-day's-EOD-batch case.
+  Context: Cowork-to-chat summary 2026-05-09, second paragraph: "The C2A2 lit-search pipeline then ran end-to-end on the 20-item batch and dispositioned it cleanly: 11 MONITOR (MONITOR-088 through MONITOR-098) + 9 REVISE + 0 INCORPORATE." Reinforced under "Pipeline Status": "Today's batch (20 items) drained 100% in one cycle."
+  Type: methodological / operational
+  Related decisions: ASSUMPTION-072 (5-day backlog drain), ASSUMPTION-073 (REVISE heuristic), DECISION-012 (15c agent), DECISION-013 (15d agent)
+  Testability: testable empirically (track single-cycle drain rate across N≥4 future EOD batches; record cycle wall-time; compare to historical 2026-04-27 5-day drain); testable via literature (queueing-theory throughput baselines for human-augmented review pipelines)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-102
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-09 disposition narrative + "Pipeline Status" baseline framing.
+    Current status: UNTESTED
+
+ASSUMPTION-103:
+  Date identified: 2026-05-09
+  Statement: Today's c2a2-self-awareness-daily run firing on schedule (alongside seven sibling scheduled tasks: c2a2-lit-search-pipeline, c2a2-agent-wolfram, c2a2-deferred-action-monitor, scheduler-health-check, c2a2-morning-walk-cowork-handoff, c2a2-morning-chat-scrape, c2a2-evening-cowork-to-chat) constitutes a positive data point against the ASSUMPTION-080/081/092 daemon-link-count = 1 silent-skip regression hypothesis for THIS task. Per-task evidence (this task fired) is treated as evidence about the regression hypothesis at the task-level granularity it operates on.
+  Context: Cowork-to-chat summary 2026-05-09, "Pipeline Status": "Daemon link-count = 1 silent-skip bug (ASSUMPTION-081): today's run is itself a positive data point — c2a2-self-awareness-daily, c2a2-lit-search-pipeline, c2a2-agent-wolfram, c2a2-deferred-action-monitor, scheduler-health-check, c2a2-morning-walk-cowork-handoff, c2a2-morning-chat-scrape, and c2a2-evening-cowork-to-chat all fired — no daemon-bug evidence today."
+  Type: empirical / infrastructure
+  Related decisions: ASSUMPTION-080, ASSUMPTION-081, ASSUMPTION-092, PRESUMPTION-114
+  Testability: testable empirically (`stat -c %h` audit of all 28 enabled scheduled tasks; correlate link-count = 1 vs. fire-rate over N weeks; audit per-task selectivity of regression incidents)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-103
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-09 "Pipeline Status" daemon-bug paragraph framing today's 8-task fire-rate as a positive data point.
+    Current status: UNTESTED
+
+ASSUMPTION-104:
+  Date identified: 2026-05-10
+  Statement: Sunday 2026-05-10 was a "first-Rohr / first-Wright pending day + clean self-awareness pipeline drain day + sewing-agent first weekly run day" — the day-shape is characterized by three concurrent first-occurrences (first-ever Rohr proposals, first-ever Wright proposals, first weekly sewing-agent run) plus a clean lit-search drain plus a 5th-consecutive failed evening cowork-to-chat delivery.
+  Context: Cowork-to-chat summary 2026-05-10, opening paragraph: "The headline event is that the inbox pending queue grew from 29 → 34 with the first-ever Rohr (×2) and Wright (×3) proposals — the explicit acceptance/defer call for these is now blocking the master network's expansion to N=13 traditions (per OPEN-036, candidate DECISION-025/026)."
+  Type: methodological / metrics
+  Related decisions: ASSUMPTION-079 (catch-up framing), ASSUMPTION-091 (off-cadence-as-on-cadence), DECISION-026 (Wright/Rohr addition candidate)
+  Testability: testable empirically (audit how often three concurrent-first day-shapes occur; track downstream effect on review-throughput; compare to baseline operational-drain days)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-104
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-10 opening narrative as the canonical day-shape characterization.
+    Current status: UNTESTED
+
+ASSUMPTION-105:
+  Date identified: 2026-05-10
+  Statement: User-privacy rules prohibit password-based login on Tom's behalf — this is articulated as a binding operating constraint that surfaces as the proximal cause of the 5th consecutive failed evening cowork-to-chat delivery (Chrome MCP successfully attached and `tabs_context_mcp(createIfEmpty: true)` returned a fresh tab without the "normal windows" error this evening, but claude.ai redirected to /login and the agent cannot perform password-based authentication).
+  Context: Cowork-to-chat summary 2026-05-10, DELIVERY STATUS block: "Navigation to https://claude.ai succeeded but immediately redirected to https://claude.ai/login — Tom is signed out of claude.ai in this Chrome profile. I cannot perform a password-based login on Tom's behalf (prohibited per `user_privacy` rules)."
+  Type: operational / governance
+  Related decisions: ASSUMPTION-071 (browser-auth as agent-prohibited), ASSUMPTION-109 (cowork-to-chat sync standalone DECISION trigger), PRESUMPTION-125 (no severity ladder)
+  Testability: framework commitment (user-privacy is a foundational rule; not directly testable, but operationally codifiable as a precondition check that fails fast before browser navigation attempts)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-105
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-10 DELIVERY STATUS block as explicit binding operating constraint surfaced under failure-mode rotation.
+    Current status: UNTESTED
+
+ASSUMPTION-106:
+  Date identified: 2026-05-10
+  Statement: ASSUMPTION-items REVISE rate of 0/8 for the SECOND consecutive cycle (2026-05-09 morning + 2026-05-10 morning, both on prior-day's-EOD batches) confirms that ASSUMPTIONs are characteristically "operational/diagnostic-pattern items" that disposition to MONITOR rather than REVISE — a stable epistemic-weight pattern, not a single-cycle artifact.
+  Context: Cowork-to-chat summary 2026-05-10, paragraph 4: "ASSUMPTIONs 8/8 → MONITOR-099 through 107 (ASSUMPTION REVISE rate 0/8 for the second consecutive cycle); PRESUMPTIONs 1/12 MONITOR + 11/12 REVISE (92%, the highest single-cycle REVISE rate to date)."
+  Type: methodological / metrics
+  Related decisions: ASSUMPTION-073 (PRESUMPTION + strong-challenge → REVISE heuristic), ASSUMPTION-102 (single-cycle drain baseline), ASSUMPTION-107 (record REVISE rate)
+  Testability: testable empirically (track ASSUMPTION REVISE rate over N≥4 future cycles; compare to PRESUMPTION REVISE rate trajectory; check whether disposition-by-item-type pattern persists or whether today's cycle composition was unusual)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-106
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-10 paragraph 4 disposition-by-item-type framing as a now-stabilized cross-cycle pattern.
+    Current status: UNTESTED
+
+ASSUMPTION-107:
+  Date identified: 2026-05-10
+  Statement: 92% PRESUMPTION REVISE rate (11 of 12) is "the highest single-cycle REVISE rate to date" — a record-density disposition signal that exceeds yesterday's 9 of 12 (75%), itself the prior peak.
+  Context: Cowork-to-chat summary 2026-05-10, paragraph 4: "PRESUMPTIONs 1/12 MONITOR + 11/12 REVISE (92%, the highest single-cycle REVISE rate to date)."
+  Type: methodological / metrics
+  Related decisions: ASSUMPTION-096 (densest-cycle structural pattern), ASSUMPTION-106 (ASSUMPTION REVISE rate stability), PRESUMPTION-116 (densest-cycle without normalization), PRESUMPTION-129 (record-rate without normalization)
+  Testability: testable empirically (normalize REVISE rate by batch composition; control for item-source uniformity; track over N≥4 cycles); testable via literature (metric-design / SPC superlative-claim audit patterns)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-107
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-10 paragraph 4 record-rate framing as a stated superlative claim about cycle-disposition.
+    Current status: UNTESTED
+
+ASSUMPTION-108:
+  Date identified: 2026-05-10
+  Statement: ASSUMPTION-098's three-recurrence governance threshold for DECISION-NNN canonization is now satisfied URGENT-this-week for DECISION-027 scope extension to cover the external-tool-review layer (PRESUMPTION-121 SYSTEMIC-RISK now N=5 across 30 days at the chat-scrape Chrome-MCP-diagnostic layer) — a concrete trigger of yesterday's stated canonization protocol.
+  Context: Cowork-to-chat summary 2026-05-10, paragraph 4 SYSTEMIC-RISK #1: "Specialist/external-source primary-signal cluster — second-layer recurrence in <24h (PRESUMPTION-121 HIGH). Cumulative N=5 across 30 days at the chat-scrape Chrome-MCP-diagnostic layer. ASSUMPTION-098 three-recurrence governance threshold for DECISION-NNN canonization is now satisfied URGENT this week."
+  Type: governance / methodological
+  Related decisions: ASSUMPTION-098 (three-recurrence threshold), ASSUMPTION-099 (DECISION-027 scope extension), DECISION-027 (specialist self-attribution adjudication candidate), PRESUMPTION-121 (external-LLM diagnostic uptake)
+  Testability: testable empirically (track whether canonization is actually triggered this week; audit governance-trigger-to-canonization lag time over N≥3 future trigger events); testable via process (audit whether the three-recurrence count is consistently applied across cluster-cousin failures per PRESUMPTION-135)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-108
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-10 paragraph 4 SYSTEMIC-RISK #1 as the first concrete activation of ASSUMPTION-098's stated canonization protocol.
+    Current status: UNTESTED
+
+ASSUMPTION-109:
+  Date identified: 2026-05-10
+  Statement: PRESUMPTION-125's fourth-recurrence cowork-to-chat sync failure (now 5th consecutive after today's evening sign-in-redirect failure) with no severity-ladder articulation constitutes a confirmed empirical anti-pattern requiring standalone DECISION canonization — distinct from DECISION-027 scope.
+  Context: Cowork-to-chat summary 2026-05-10, paragraph 4 SYSTEMIC-RISK #2: "Cowork-to-chat sync cluster — fourth recurrence (PRESUMPTION-125 HIGH). Flat-severity confirmed empirical anti-pattern; standalone DECISION candidate."
+  Type: governance / operational
+  Related decisions: ASSUMPTION-071 (browser-auth as agent-prohibited), ASSUMPTION-098 (three-recurrence threshold), ASSUMPTION-105 (user-privacy login prohibition), PRESUMPTION-038 (billing bug self-clear), PRESUMPTION-111 (third-consecutive cowork-to-chat sync failure), PRESUMPTION-125 (4th-consecutive no-severity-ladder)
+  Testability: testable empirically (canonize a severity-ladder protocol and track whether escalation actually fires; compare cumulative cost of recurrence vs. cost of programmatic fix over N≥4 future weeks)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-109
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-10 paragraph 4 SYSTEMIC-RISK #2 as a confirmed-empirical-anti-pattern claim distinct from the DECISION-027 scope-extension claim.
+    Current status: UNTESTED
+
+ASSUMPTION-110:
+  Date identified: 2026-05-10
+  Statement: Sewing agent's first weekly run produced the canonical inaugural connectivity baseline — orphans=766, sparse=2, connected=17, total=785 (out of 785 vault pages) — appended as the inaugural row of `architecture/metrics/connectivity_log.csv` (file created this run); this is the first quantified measurement of the C2A2 vault's [[wikilink]]-graph connectivity.
+  Context: Cowork-to-chat summary 2026-05-10, sewing agent paragraph: "produced a baseline connectivity snapshot: orphans=766, sparse=2, connected=17, total=785 — appended as the inaugural row of `architecture/metrics/connectivity_log.csv` (file created this run)."
+  Type: architectural / metrics
+  Related decisions: DECISION-019 (sewing agent introduction), PRESUMPTION-130 (sewing agent threshold definitions), PRESUMPTION-139 (sensitivity-threshold gap)
+  Testability: testable empirically (re-measure weekly; compare against future baseline-corrected cohort post-backlink-injection-pass; audit threshold definitions against external graph-connectivity literature)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-110
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-10 sewing-agent paragraph as the file-creation event that establishes the canonical metric.
+    Current status: UNTESTED
+
+ASSUMPTION-111:
+  Date identified: 2026-05-10
+  Statement: First-ever Rohr (×2) + Wright (×3) pending proposals are blocking master network expansion to N=13 traditions — the explicit accept/defer call on these proposals is the immediate precondition for any DECISION-026 finalization, and DECISION-026 in turn is the precondition for the master network's N=11 → N=13 expansion (per OPEN-036, candidate DECISION-025/026).
+  Context: Cowork-to-chat summary 2026-05-10, paragraph 1: "the explicit acceptance/defer call for these is now blocking the master network's expansion to N=13 traditions (per OPEN-036, candidate DECISION-025/026)." Reinforced under "Key Decisions Made": "The arrival of first-ever Rohr + Wright pending proposals additionally forces the DECISION-026 decision into the path: until Tom decides accept/defer, the master network cannot expand to N=13 traditions."
+  Type: architectural / governance
+  Related decisions: OPEN-036, DECISION-025 (candidate), DECISION-026 (Wright/Rohr addition candidate), ASSUMPTION-104 (day-shape characterization), PRESUMPTION-128 (workflow accommodation), PRESUMPTION-137 (first-ever as decision gate)
+  Testability: testable via process (track decision-time from first-pending-arrival to canonization; audit blocking-effect against parallel-pipeline progress)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-111
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-10 opening paragraph and Key Decisions Made section as the canonical blocking-relationship claim.
+    Current status: UNTESTED
+
+ASSUMPTION-112:
+  Date identified: 2026-05-10
+  Statement: SELF-MEASUREMENT (Goodhart) cluster is now a confirmed architectural recursive-self-observation pattern — INCORPORATE rate is structurally at 0% across two consecutive cycles while throughput metrics (cycle-time, items-dispositioned-per-cycle, REVISE-rate) all show "improvement"; PRESUMPTION-123 + ASSUMPTION-102 + ASSUMPTION-096 form the cluster the system has surfaced about its own potential Goodhart failure.
+  Context: Cowork-to-chat summary 2026-05-10, paragraph 4 SYSTEMIC-RISK #3: "SELF-MEASUREMENT (Goodhart) cluster (PRESUMPTION-123 + ASSUMPTION-102 + ASSUMPTION-096). System celebrating throughput while INCORPORATE rate stays at 0% across two consecutive cycles." Reinforced in "For Morning Discussion" item 3: "PRESUMPTION-123 + ASSUMPTION-102 + ASSUMPTION-096 form a recursive self-observation cluster — the system has surfaced its own Goodhart failure."
+  Type: methodological / epistemic
+  Related decisions: PRESUMPTION-123 (throughput-as-success-metric), ASSUMPTION-102 (single-cycle drain baseline), ASSUMPTION-096 (densest-cycle remediation), ASSUMPTION-098 (three-recurrence threshold), PRESUMPTION-129 (record-rate without normalization)
+  Testability: testable empirically (audit whether INCORPORATE criterion change increases rate without sacrificing quality; pilot a Pattern-Detector "validated premise" alternative path; compare narrative framing pre/post adjustment); testable via literature (Goodhart-effect mitigation patterns in long-running review pipelines)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-112
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-10 paragraph 4 SYSTEMIC-RISK #3 + "For Morning Discussion" item 3 as a stated architectural-recursive-self-observation claim.
+    Current status: UNTESTED
+
+Key event (2026-05-10): Nine new assumptions extracted on a Sunday whose dominant signature was three concurrent first-occurrences (first-ever Rohr ×2 + Wright ×3 pending proposals + first weekly sewing-agent run) plus a clean self-awareness lit-search drain (9 MONITOR + 11 REVISE + 0 INCORPORATE; densest-cycle structural pattern from 2026-05-09 replicated) plus a 5th-consecutive failed evening cowork-to-chat delivery (sign-in-redirect after the "normal windows" failure mode resolved this evening for the first time in 2 days). Today's nine new items cluster in four families. **(1) DAY-SHAPE + LOGIN-PROHIBITION cluster** — ASSUMPTION-104 (day-shape characterization with three concurrent-firsts), ASSUMPTION-105 (user-privacy rules prohibit password-based login as binding operating constraint surfacing as 5th-consecutive failure cause). **(2) DISPOSITION-PATTERN-AS-EPISTEMIC-WEIGHT cluster** — ASSUMPTION-106 (ASSUMPTION 0/8 REVISE rate stable across 2 cycles confirms operational/diagnostic-pattern characterization), ASSUMPTION-107 (92% PRESUMPTION REVISE rate as record-density disposition signal). The cluster generalizes ASSUMPTION-073's REVISE-heuristic into a cross-cycle disposition-by-item-type pattern. **(3) GOVERNANCE-TRIGGER-ACTIVATION cluster** — ASSUMPTION-108 (DECISION-027 scope extension URGENT-this-week per ASSUMPTION-098 three-recurrence threshold satisfied at N=5/30 days), ASSUMPTION-109 (PRESUMPTION-125 4th-recurrence requires standalone DECISION canonization distinct from DECISION-027). The cluster operationalizes yesterday's stated canonization protocol (ASSUMPTION-098) for the first time. **(4) NEW-METRIC + BLOCKING + SELF-MEASUREMENT cluster** — ASSUMPTION-110 (sewing agent canonical inaugural connectivity baseline 766/2/17/785), ASSUMPTION-111 (Wright/Rohr first-ever pendings blocking N=13 expansion via DECISION-026 precondition chain), ASSUMPTION-112 (SELF-MEASUREMENT Goodhart cluster confirmed as architectural recursive-self-observation pattern across two consecutive cycles at 0% INCORPORATE). The cluster combines a brand-new metrics primitive (connectivity), a new blocking-relationship claim (N=13 expansion gated by 5 pendings), and the day's headline architectural-recursive item (the system surfacing its own Goodhart-failure-candidate). Pattern note: today's 9 assumptions are dominated by methodological / metrics items (5 of 9: 104, 106, 107, 110, 112) plus 2 governance items (108, 109) — extending the methodological-heavy signature of operational-throughput days with a new governance-trigger-activation sub-signature for the first time. Today's 12-to-9 presumption-to-assumption ratio (1.33:1) is moderate — below 2026-04-27 / 2026-05-08 / 2026-05-09 record (1.5:1) but above 2026-05-05's 1.22:1. The execution-day character (clean lit-search drain + sewing-agent first-run + Wright/Rohr first-pendings + 5th-consecutive evening failure) generates both novel content-architecture commitments (ASSUMPTION-110, 111, 112 all introduce architectural primitives) and operational-principle articulations (ASSUMPTION-104, 105, 108, 109).
+
+Key event (2026-05-09): Eight new assumptions extracted on a Saturday lit-search-disposition + Saturday-Wolfram + self-awareness-backfill day whose primary architectural signal was the lit-search 15a/15b/15c pipeline producing four SYSTEMIC-RISK flags in a single cycle (the densest single cycle on record), three of them recurrence flags. Today's eight new items cluster in three families. **(1) Lit-search-cycle-output epistemic-weight cluster** — ASSUMPTION-096 (4-SYSTEMIC-RISK density warrants cluster-level remediation), ASSUMPTION-098 (third-recurrence at fixed-cycle cadence as canonization threshold), ASSUMPTION-099 (DECISION-027 scope extension to external-tool-review layer). All three were surfaced from today's lit-search returns and the cowork-to-chat summary's "For Morning Discussion" items 1–2 questioning Tom's input on cluster-level disposition. **(2) Architectural-sprint and cross-tradition-signal cluster** — ASSUMPTION-097 (Three-recurrence discipline cluster bundleable as "Core Operational Discipline" sprint) and ASSUMPTION-100 (Saturday Wolfram three-way ontological convergence as week's highest-leverage cross-tradition signal) articulate two prioritization commitments — one for architectural-discipline track, one for content-architecture track. **(3) Operational-baseline cluster** — ASSUMPTION-101 (Chrome MCP "normal windows" error as environment-state issue, not Chrome-MCP defect, per Codex-style diagnostic), ASSUMPTION-102 (20-item EOD-batch single-cycle drain as operational baseline), ASSUMPTION-103 (today's 8-task fire-rate as positive evidence against daemon-link-count regression for THIS task). The cluster generalizes ASSUMPTION-072's single-cycle-drain claim, articulates a Chrome-MCP root-cause attribution, and locks in a per-task evidence frame for the daemon-bug hypothesis. Pattern note: today's 8 assumptions are dominated by methodological / metrics items (5 of 8: 096, 097, 098, 102, 103) — extending the methodological-heavy signature of operational-throughput days (2026-04-21, 2026-04-27, 2026-05-05, 2026-05-08). Today's standalone empirical/infrastructure item is ASSUMPTION-101 (Chrome-MCP environment-state attribution), the lit-search-disposition character generates more *cycle-output-articulation* than *content-architecture* claims — except for ASSUMPTION-100 (Saturday Wolfram cross-tradition signal) which is the day's standalone content-architecture item with cross-tradition bearing. Today's 12-to-8 presumption-to-assumption ratio (1.5:1) ties 2026-04-27 and 2026-05-08 as joint-record. The execution surface today was unusually clean (8/8 scheduled tasks fired, lit-search drained 100% in one cycle, self-awareness-backfill closed yesterday's surface), inverting yesterday's three-stall-day pattern.
+
+Key event (2026-05-08): Eight new assumptions extracted on a Friday review-decision intake day plus three queued-but-stalled scheduled tasks (1pm register cleanup, sewing-agent-weekly, Wright/Rohr Sunday agent — the latter two hit personal-account org-limit immediately) plus a substantive Codex 5.5 external review of the C2A2 explorer pasted into Cowork session local_56cc4dfb whose composite synthesis was queued at end of session. Today's eight new items cluster in three families. **(1) Personal-account org-limit + composite-synthesis cluster** — ASSUMPTION-088 (org-monthly-usage-limit interrupt on personal-account Cowork session treated as work-blocking, not misclassification), ASSUMPTION-089 (two-source composite synthesis: internal report + external-LLM review), ASSUMPTION-090 (smallest-fix-first prioritization for explorer track — `extractOverview()` two-line var-declaration fix as the high-confidence, low-effort entry point, then smoke-test, then responsive fallback). All three surfaced from the local_56cc4dfb explorer-fix session and the cowork-to-chat summary (local_feb53918) "For Morning Discussion" item 1. **(2) Sandbox-infrastructure escalation cluster** — ASSUMPTION-092 (3-day master-narrative absence attributable to daemon link-count = 1 bug regression hypothesis), ASSUMPTION-094 (N≥5 sandbox-infrastructure constraints aggregated across C2A2 + Summa = single-escalation threshold), ASSUMPTION-095 (YouTube IP-block as SYSTEMIC ESCALATION joining OPEN-039 as 5th channel). The combined OPEN-039 cluster now spans scheduling (daemon link-count) + filesystem (mount-topology + .git/index.lock 22-day age) + networking (egress allowlist + Summa YouTube IP-block) + authentication (browser-auth) — five canonical channels across two active projects. **(3) Operational-cadence-articulation cluster** — ASSUMPTION-091 (off-cadence specialist proposal filings treated as on-cadence for downstream review-page rendering and approval tracking), ASSUMPTION-093 (Saturday-morning rerun as standard closure path for queued-but-stalled weekday scheduled tasks). Both extend ASSUMPTION-079 (same-day catch-up framing) at the per-proposal and per-task levels. Pattern note: today's 8 assumptions are dominated by methodological items (6 of 8: 088, 089, 090, 091, 093, 094) — continuing the methodological-heavy signature of operational-throughput days (2026-04-21, 2026-04-27, 2026-05-05). The execution-day character (review-decision intake + 5 new pending proposals + 3 stalled scheduled tasks + Codex external-review queued + Summa cross-project QC throughput) again generates more *operational-principle-articulation* than *content-architecture* claims — except for ASSUMPTION-095 which is the day's standalone empirical/infrastructure item with cross-project bearing. Today's "stalled task" surface area is the largest yet observed in a single day (3 of 4 scheduled C2A2-related tasks stalled or hit org-limit immediately; only the cowork-to-chat sync ran to completion and even that failed delivery to claude.ai per ASSUMPTION-071 / PRESUMPTION-111).
+
 Key event (2026-05-05): Nine new assumptions extracted on a daemon-catch-up Tuesday whose primary architectural signal was all six weekday-assigned C2A2 specialist agents executing in a single 15:35–16:35 UTC window after Tom's Claude restart cleared the daemon outage. Today's nine new items cluster in four families. **(1) Daemon-bug discovery cluster** — ASSUMPTION-080 (link count > 1 fires; link count = 1 silently skips, an Anthropic-side bug), ASSUMPTION-081 (`update_scheduled_task --fireAt` is a working workaround), ASSUMPTION-079 (same-day catch-up of all six weekly specialist runs is treated as functionally equivalent to spread-across-week distribution). All three surfaced from the Summa-updating-agents session (local_40871db5) Tom-facing diagnosis. **(2) Vision-articulation cluster** — ASSUMPTION-082 (3-layer RC Explorer architecture with 5 integration steps; Community Explorer = Tool #1; AI Heartbeat = Tool #2 urgent rebuild) is the day's most consequential architectural item: it is the first time the L1/L2/L3 model with explicit integration steps has been recorded as a stated assumption. ASSUMPTION-083 (filter semantics: within section = OR, across sections = AND, edges require both endpoints visible) is a UX-spec articulation surfaced by the explorer help-popover review. **(3) Specialist-output norms cluster** — ASSUMPTION-084 (empty-handed orchestrator Phase 2 = valid result not failure mode), ASSUMPTION-085 ("FROM thinker himself" quality filter operative across all specialist slots; Hawkins 0-proposal honest-null re-affirmed), ASSUMPTION-086 (specialist-self-claims of "strongest bridge / candidate shared substrate / parallels C2A2 architecture" treated as primary cross-tradition signal without an adjudication step) extend the BRIEFING-LAYER-EPISTEMIC-COMMITMENTS pattern to the specialist-output layer. ASSUMPTION-086 is in tension with PRESUMPTION-074's prior SYSTEMIC-RISK flag on specialist-recognition reliability. **(4) Institutional-maturity entry mode** — ASSUMPTION-087 (TRACE Institute launch as research-program-level alliance signal) introduces a new proposal-type granularity beyond paper-level. Pattern note: today's 9 assumptions are dominated by methodological items (6 of 9: 079, 080, 081, 084, 085, 086) — continuing the methodological-heavy signature of operational-throughput days (2026-04-21, 2026-04-27). The execution-day character (daemon catch-up + 6 specialist runs + walk-thread architectural articulation) again generates more *operational-principle-articulation* than *content-architecture* claims — except for ASSUMPTION-082 which is the day's standalone architectural item.
 
 Key event (2026-04-27): Eight new assumptions extracted on an execution-heavy Monday whose primary architectural signal was the C2A2 lit-search pipeline draining the 5-day backlog (58 items processed; 19 new + 39 re-triggered) and INCORPORATING ASSUMPTION-068 → PREMISE-012 and ASSUMPTION-069 → PREMISE-013. Today's eight new items cluster in three families: **(1) infrastructure-gap normative articulation** — ASSUMPTION-071 (browser-auth as agent-prohibited; first explicit two-instance same-day articulation across morning chat scrape + evening sync) and ASSUMPTION-078 (two parallel sandbox-infrastructure failure modes today, both treated as user-fixable) extend the OPEN-039 sandbox-infrastructure-escalation cluster from yesterday with a third channel (auth) that joins egress and mount-topology. **(2) lit-search pipeline self-articulation** — ASSUMPTION-072 (5-day backlog drainable in single cycle), ASSUMPTION-073 (PRESUMPTION + strong-challenge → REVISE heuristic explicit), and ASSUMPTION-074 (no-new-evidence carry-forward as PREMISE-006-extension to refresh case) form a new LIT-SEARCH-LAYER-EPISTEMIC-COMMITMENTS cluster, parallel to the BRIEFING-LAYER cluster (ASSUMPTION-046, 047, 048, 057, 058, 059, 060). **(3) design-project authorial reframing** — ASSUMPTION-076 (PRS triplets are Tom's re-description, not tradition's self-voice; "PRS-NN in the Stump-tradition wiki" not "Stump's PRS-NN") and ASSUMPTION-077 (synthesis-to-transcript ±5% policy) are direct Tom-stated commitments from the continuing design-project session. ASSUMPTION-076 has high downstream consequence: it recasts the ground beneath ASSUMPTION-067 (Stump-as-supplier-of-live-metaphysics) — if PRS triplets are Tom's framing, the specialist's reading of Stump-via-PRS is reading Tom's frame back to itself (see PRESUMPTION-089 for the recursive-reading risk). **(4) specialist cadence override** — ASSUMPTION-075 (Levin "significant work not yet captured" criterion overrides 30-day window) is the first explicit specialist-level deviation from the cadence rule, surfaced from today's Monday Levin+Friston specialist slot. Pattern note: today's 8 assumptions are dominated by methodological items (5 of 8: 071, 072, 073, 074, 077; 078 partial) — a return to the methodological-heavy signature of 2026-04-21 after Sunday's architectural/empirical signature. The execution-day character (pipeline drain + scheduled-task throughput) generates more *operational-principle-articulation* than *content-architecture* claims.

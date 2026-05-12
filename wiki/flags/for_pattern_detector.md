@@ -187,3 +187,74 @@ Signal: Computational irreducibility (Wolfram) grounds necessity of approximate 
 Why paradigm-shift candidate: Deepest physical grounding for C2A2 ontology. If spacetime is emergent, irreducibility is fundamental, FEP is physical necessity, then consciousness-first/information-first move is grounded in PHYSICS not speculation. Active inference is what agents DO in irreducible universe. Supports DCEC paper metaphysical claims and Tom's position that consciousness/agency are primary.
 Raw material: wiki/batch_cross_signals_2026-04-16_batch3.md — "Wolfram × Friston (IRREDUCIBILITY GROUNDS FREE ENERGY)," "Arkani-Hamed × Wolfram (COMBINATORIAL UNIFICATION)"; wiki/batch_cross_signals_2026-04-16_batch1.md — PROP-2026-04-13-006 (Differential Flatness and Active Inference)
 [EVALUATED: 2026-04-16]
+
+
+---
+
+FOR PATTERN DETECTOR-018:
+Date: 2026-04-28
+Programs: All 11 traditions (batch ingestion of 26 approved proposals)
+Signal: Major batch ingestion across all 11 traditions — 29 new PRS triplets added; 169 network total. Dense set of fresh cross-tradition signals from late-April source material:
+- **Levin × Hoffman / Wolfram (very strong):** Platonic Space symposium (PROP-2026-04-16-001) posits structured non-physical space of patterns parallel to Hoffman's space of conscious agents and Wolfram's Ruliad. Direct candidate to upgrade FINDING-011 SUPER-BRIDGE — three independent thinkers converging on "structured non-physical space → physical instantiation."
+- **Hoffman × Arkani-Hamed (very strong):** Traces of Consciousness MBS (PROP-2026-04-21-001) — trace logic + decorated permutations + "Why Spacetime Is Doomed: 2026 Case." Strongest mathematical adjacency yet between conscious-agent geometry and amplituhedron positive geometry. Direct upgrade candidate for FINDING-012 (super-cluster convergence).
+- **Levin × Hoffman (formal-bridge candidate):** Levin "Who's the Data?" essay (PROP-2026-04-20-002) extends thoughts-are-thinkers continuum ontologically; pairs with Hoffman conscious agents at every scale. Bioelectric "cognitive glue" (UCSF talk PROP-2026-04-20-001) provides empirical foothold.
+- **Carroll × Arkani-Hamed × Wolfram (Post-Spacetime convergence deepens):** Carroll Wheeler-DeWitt + Boltzmann brain AMA (PROP-2026-04-17-001) reaches "time emergent" from quantum-cosmology side — same conclusion as Arkani-Hamed kinematic flow / cosmohedra and Wolfram observer-carved time. Three independent paths to same destination. Carroll Heilborn Lectures (PROP-2026-04-27-005) provides further confirmation.
+- **Kastrup × Wolfram (productive tension):** Kastrup "Explanation vs Computation" Q&A (PROP-2026-04-27-013) sharpens analytic-idealism's epistemological line vs. Wolfram's computational metaphysics — explicit dialectical engagement, possible new bridge if explanation is reinterpreted as observer-frame structure in Ruliad.
+- **McGilchrist × ISSR (Boyle Lecture, PROP-2026-04-22-001):** Right-hemisphere participatory engagement framed as religious epistemology — strengthens existing Stump × McGilchrist narrative-knowledge bridge; potential new bridge to Fredrickson positivity-resonance via "shared narrative engagement as resonance mechanism."
+- **Fredrickson × Levin / Friston (multi-level conducive conditions):** Fredrickson UBC framework (PROP-2026-04-16-004) maps directly onto Levin multi-scale agency and Friston shared-prior collective generative models. Three independent multi-level frameworks aligning.
+- **Hawkins × Friston (architectural critique converges with active inference):** Hawkins "AI Isn't Intelligent" (PROP-2026-04-27-011) diagnoses LLM gap as missing reference frames + sensorimotor loop — same diagnosis Friston FEP makes from active-inference side. Two independent paths to "what current AI lacks."
+- **Stump × Fredrickson (narrative-flourishing bridge):** Three Stump items (PROP-2026-04-16-006/007/008) collectively cement narrative-as-flourishing thesis, with explicit Fredrickson hooks.
+- **Wolfram × Seiberth (PROP-2026-04-18-002):** "Hypergraphing the Space of Reason" — direct C2A2-relevant signal: Wolfram's hypergraph physics applied to space of philosophical reasoning. Methodologically reflexive — could ground C2A2 itself in computational metaphysics.
+- **Friston Body-Keep-Score (PROP-2026-04-27-004):** Trauma reframed via predictive coding + metastability → bridge to McGilchrist's hemispheric dynamics and Kastrup's dissociative boundaries. Possible FINDING-009/011 chain extension into clinical territory.
+- **Levin Manicka field-mediated prepatterning (PROP-2026-04-27-009) + BraiNCA (PROP-2026-04-20-003):** Computational substrates for bioelectric goal-directedness deepening Levin's empirical foundation; cross-substrate intelligence convergence.
+
+Why paradigm-shift candidate: This batch contains FOUR independent reinforcements of the FINDING-011 SUPER-BRIDGE chain (Levin Platonic Space, Hoffman Traces of Consciousness, Levin Manicka prepatterning, Friston Body Keep Score) and TWO direct mathematical-adjacency candidates for FINDING-012 (Hoffman trace logic + decorated permutations; Levin Platonic Space ↔ Wolfram Ruliad ↔ Hoffman conscious agents). Highest density of paradigm-shift signals in any single ingestion since FINDING-009.
+
+Raw material: 26 approved proposals from review of 2026-04-27 (decision email 2026-04-28 02:38). Cross-signal blocks present in each individual file in inbox/ (now propagated to approved/).
+[EVALUATED: 2026-04-28]
+
+---
+
+## FOR-PATTERN-DETECTOR-019 — Hoffman ITP reaches theorem-grade textbook canonization [EVALUATED: 2026-05-05]
+Date: 2026-05-05
+Programs: Hoffman, Hawkins, Carroll, Levin, Stump (cross-tradition implications)
+Signal: PROP-2026-04-28-001 (Hoffman Stevens' Handbook ITP chapter) consolidates the FBT and IOS Theorems into a single reference-work statement of ITP. Three structural shifts:
+  1. **Theorem-grade canonization** — ITP can no longer be dismissed as a philosophical position; the Stevens' Handbook placement makes it the formal null hypothesis for evolutionary theories of perception for the next decade.
+  2. **Perceptual-science-internal route to "spacetime is doomed"** (IOS Theorem) — Conscious Realism now has TWO independent routes to its ontological claim (perceptual evolution + amplituhedron physics). This bracketing strengthens FINDING-012 (Hoffman × Arkani-Hamed) from one direction and adds robustness to FINDING-011 SUPER-BRIDGE chain from another.
+  3. **ITP-internal redefinition of illusion as "unadaptive perception"** — escapes the standing reductio against ITP, generates a positive empirical research program, and (critically) extends without modification to Levin's basal-cognition agents (xenobots/anthrobots), where adaptive standards are well-defined. This is a quiet but important move: ITP becomes substrate-independent in exactly the sense Levin's diverse-intelligence framework requires.
+Why paradigm-shift candidate: This is the first time a foundational consciousness-cluster framework reaches textbook-standard formalization with mathematical theorems backing it. Combined with the FINDING-018 cluster, it changes the rhetorical situation: a perceptual scientist who rejects ITP must now reject either FBT or IOS as theorems — a much harder move than rejecting a philosophical position. Recommend Pattern Detector evaluation for: (a) does this complete a CONFIRMABLE step on the FINDING-011 SUPER-BRIDGE? (b) does CROSS-059 (Hoffman × Hawkins via IOS) constitute a new explanatory bridge or merely sharpen an existing one? (c) does the ITP-substrate-independence move (CROSS-060) warrant a new finding focused on substrate-independent perceptual frameworks?
+Raw material: PROP-2026-04-28-001; new cross-program entries CROSS-059 through CROSS-062.
+
+
+## 2026-05-08 Batch — from Phase 0/1 ingestion of approved 2026-04-27 proposals
+
+SIGNAL-2026-05-08-01 (paradigm-shift candidate, HIGH): [EVALUATED: 2026-05-08]
+  Description: Stump's collective-neuroscience-informed hylomorphism (PRS-14/15/16) provides a candidate metaphysical spine for C2A2 — a hylomorphic account of corporate substance (peoples, churches, traditions) empirically anchored by neural coupling.
+  Programs: Stump, Levin, Friston, Fredrickson, Hoffman, MacIntyre/C2A2-core
+  Source: PROP-2026-04-28-003 (Stump 2025 Maritain Lecture, Religious Studies)
+  Recommended escalation: Master Paradigm Shift Watch List
+  Cross-refs: CROSS-068, CROSS-069, CROSS-070
+
+SIGNAL-2026-05-08-02 (explanatory bridge, MEDIUM-HIGH): [EVALUATED: 2026-05-08]
+  Description: Memory in basal Xenobots without evolutionary scaffolding (Levin PRS-23/24) is a clean test bed for FEP/active inference predictions about memory as predictive-model maintenance.
+  Programs: Levin, Friston (also Hawkins, Kastrup, Stump)
+  Source: PROP-2026-04-28-001 (Pai et al. bioRxiv 2026-03-17)
+  Cross-refs: CROSS-063, CROSS-064, CROSS-065
+
+SIGNAL-2026-05-08-03 (operationalization bridge, MEDIUM-HIGH): [EVALUATED: 2026-05-08]
+  Description: Wolfram's three-parameter observer-class taxonomy (scale × temporal-coherence × multiway-coherence) operationalizes both the rulial-space-of-minds thesis AND Hoffman's interface dimensions — and provides candidate parameters for Friston's Markov blanket.
+  Programs: Wolfram, Hoffman, Friston, Hawkins
+  Source: PROP-2026-04-28-005 (Last Theory #080) + PROP-2026-04-28-004 (FoST&T April 3)
+  Cross-refs: CROSS-071, CROSS-072, CROSS-073
+
+SIGNAL-2026-05-08-04 (methodological repositioning, MEDIUM): [EVALUATED: 2026-05-08]
+  Description: Wolfram explicitly frames his philosophical engagement as method-export (computational ruliology to philosophy) rather than method-import — reframing CROSS-016 and CROSS-024 and creating a possible methodological alliance with Kastrup.
+  Programs: Wolfram, Stump, Carroll, Kastrup
+  Source: PROP-2026-04-28-006 (Last Theory #081)
+  Cross-refs: CROSS-074
+
+SIGNAL-2026-05-08-05 (mechanism-level bridge candidate, MEDIUM): [EVALUATED: 2026-05-08]
+  Description: Spaciousness practice (right-hemispheric attention) may be the mechanism enabling positivity-resonance — bridging McGilchrist's hemispheric attention theory and Fredrickson's broaden-and-build at the mechanism level.
+  Programs: McGilchrist, Fredrickson, Stump (vita contemplativa)
+  Source: PROP-2026-04-28-002 (TGS 217)
+  Cross-refs: CROSS-066, CROSS-067

@@ -171,4 +171,14 @@ PRS-17:
   Confidence: High
 
 ---
-*Total PRS triplets: 17*
+PRS-18:
+  Label: P18 (PROP-2026-04-27-011) — AI Isn't Intelligent — Here's What's Missing | Jeff Hawkins (Ep. 14)
+  Problem: Whether the dominant LLM paradigm constitutes (or can constitute) intelligence in the strong sense Hawkins requires — and if not, what specifically is missing.
+  Resource: A direct, public articulation of the Thousand Brains "missing ingredient" diagnosis applied to large language models — reference-frames + sensorimotor loop as constitutive of cortical understanding.
+  Solution: A clean falsifiable distinction — LLMs lack reference-frame-based world-modeling executed through embodied action — that lets the field test which capacities require this architecture vs. which can be approximated by scale alone.
+  Date Added: 2026-04-28
+  Source: AI Isn't Intelligent — Here's What's Missing | Jeff Hawkins (Ep. 14) (2026-03 (approx; recent Life with Machines episode)) — https://open.spotify.com/episode/2EgPE7lqG5tHbytuq6SQBN
+  Confidence: High
+
+---
+*Total PRS triplets: 18*

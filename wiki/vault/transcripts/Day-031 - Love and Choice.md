@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-031 - Love and Choice - Contemporary]]"
 fidelity_checked: false
-last_qc_at: "2026-05-05T21:33:03"
+last_qc_at: "2026-05-11T20:20:46"
 last_qc_outcome: "pass"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/031, pars/I]

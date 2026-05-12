@@ -126,4 +126,22 @@ PRS-12:
   Confidence: High
 
 ---
-*Total PRS triplets: 12*
+PRS-13:
+  Label: P13 (PROP-2026-04-27-009) — The Body Does Not Keep the Score: Trauma, Predictive Coding, and the Restoration
+  Problem: The popular "body keeps the score" model of trauma localizes traumatic memory in body tissues, but this framing lacks mechanistic grounding in computational/systems neuroscience
+  Resource: Metastability — the formal property of a system to flexibly transition between multiple coherent attractor states under active-inference dynamics
+  Solution: Reframe trauma as a degradation of metastability (collapse into rigid attractor states or chaotic non-attractors); reframe recovery as restoration of flexible state-switching under FEP
+  Date Added: 2026-04-28
+  Source: The Body Does Not Keep the Score: Trauma, Predictive Coding, and the Restoration of Metastability (2026-04 (April 2026, fresh)) — https://www.frontiersin.org/journals/systems-neuroscience
+  Confidence: High
+PRS-14:
+  Label: P14 (PROP-2026-04-27-010) — Karl Friston Legacy Interview (with Mark Solms and Jeremy Holmes, hosted by Jane
+  Problem: How do mental symptoms form, persist, and resolve under active inference — and why are they resistant to direct correction?
+  Resource: Friston's articulation of symptoms as locally optimal but globally suboptimal predictive states (Bayesian attractors) that resist update because updating itself increases short-term free energy
+  Solution: A formal account of symptom-formation as Bayesian self-trapping, suggesting therapeutic interventions must reduce the cost of belief revision rather than directly challenge symptomatic beliefs
+  Date Added: 2026-04-28
+  Source: Karl Friston Legacy Interview (with Mark Solms and Jeremy Holmes, hosted by Jane O'Rourke) (2026-04-23 (released; recorded 2026-02-10)) — https://mindinmind.org.uk/recordings/karl-friston-legacy-interview/
+  Confidence: High
+
+---
+*Total PRS triplets: 14*

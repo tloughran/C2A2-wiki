@@ -7,15 +7,16 @@ summa_ref: Prima Pars, Q.12
 duration_seconds: 1778
 word_count: 4491
 raw_asr_word_count: 4491
+length_tier: long
 segment_count: 622
 caption_kind: asr
 language: en
 fetched_at: 2026-05-05
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-007 - The Beatific Vision - Contemporary]]"
-fidelity_checked: false
-last_qc_at: "2026-05-05T21:31:50"
-last_qc_outcome: "pass"
+fidelity_checked: true
+last_qc_at: "2026-05-09T16:22:45"
+last_qc_outcome: "rewrote"
 tags: [summa, day/007, pars/I]
 ---
 

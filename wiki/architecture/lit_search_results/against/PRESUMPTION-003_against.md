@@ -100,3 +100,37 @@ Metadata fields are presumed useful but typically go unused. SAR research shows 
 **Risk level:** LOW-TO-MODERATE
 
 **Recommendation:** Audit the protocol; measure actual field usage. Remove fields with <20% usage; make frequently-used fields first-class, rarely-used fields optional. Re-evaluate token budget allocation based on actual usage patterns.
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-003 (RE-TRIGGER cycle 1):
+  Date searched: 2026-04-27
+  Original item: PRESUMPTION-003
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b → 15c → 15d → 15b] (cycle 1)
+    Original item: PRESUMPTION-003
+    Item type: PRESUMPTION
+    Transform at each step:
+      14b (cycle 0): Originally extracted/inferred
+      15b (cycle 0): Searched for challenging literature → see prior result block above
+      15c (cycle 0): Initial disposition issued
+      15d: Re-triggered on weekly cadence (2026-04-26 trigger; processed 2026-04-27)
+      15b (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED (refreshed; no new challenging literature surfaced this cycle)
+
+  New evidence weighed: No new challenging literature has surfaced in the week since the last cycle. The prior result stands as the operative finding. The system's challenge profile for this item is unchanged.
+
+  Sources (new / refreshed): No new sources this cycle.
+
+  Strength of challenge: Unchanged from prior cycle.
+
+  Summary: Cycle-1 refresh confirms the prior cycle's finding. The challenging literature base has not materially shifted in the past week; no new disconfirmatory sources surfaced during this automated cycle. The recommendation carries forward unchanged.
+
+  Specific risks: Unchanged from prior cycle.
+
+  Mitigations available: Unchanged from prior cycle.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)

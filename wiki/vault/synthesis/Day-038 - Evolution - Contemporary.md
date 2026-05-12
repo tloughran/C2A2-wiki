@@ -55,6 +55,7 @@ pairs_with: "[[Day-038 - Evolution]]"
 length_tier: medium
 length_target_words: 2200
 length_actual_words: 2623
+length_note: "Six articles (Q.73 a.1–a.3 + Q.74 a.1–a.3) + three load-bearing substantive themes — Evolution (Q.73 a.2 keystone with Humani Generis magisterial framing + Levin/Carroll empirical mid-scale), divine rest (Q.73 a.2 substrate's self-possession), and Trinitarian Genesis 1:1–2 (Q.74 a.3 substrate's internal relationality via Wright second-temple + Rohr Universal Christ). Substantive linkage doing real bridging work per the 2026-05-05 substantive-integrity clause. Within ±25%."
 length_ratio_to_target: 1.192
 karpathy_wiki_sources:
   - "wiki/traditions/wright/wiki.md (sabbath theology; Trinitarian reading of Genesis 1:1–2 in second-temple-Jewish frame; new-creation eschatology — primary tradition for this question)"
@@ -69,6 +70,6 @@ karpathy_wiki_sources:
   - "Genesis 2:1–3; Genesis 1:1–2; John 1:1–3; Hebrews 4:1–11; Revelation 21:1–4; Romans 8:18–25"
 mind_first_reframe: "Q.73 (seventh day — completion and divine rest) and Q.74 (all seven days in common, including the evolution question and the Trinitarian reading of Genesis 1:1–2) close the seven-day arc. Mind-monism reads evolution and Genesis-as-temple-cosmology as not in conflict: evolution is the temporal-causal mechanism by which the substrate's morphogenetic pattern (Levin PRS-01, PRS-03, PRS-08) gets instantiated under the arrow of time (Carroll PRS-04, PRS-07); Genesis 1 is the theological narrative of what creation is regardless of mechanism (Wright temple-cosmology). Aquinas's virtual-presence-as-potential claim philosophically anticipates the biological position; Humani Generis (1950) authorizes the body-open-to-evolution distinction from rational-soul-immediately-created. The rational soul under mind-monism is the alter's mode-of-participation in mind-at-large at the human cognitive scale, not a material-emergent thing — preserving immediate-creation structurally without medieval substantialism. Q.73's divine rest is the substrate's self-possession-and-self-recognition; sabbath consecrates the cosmic temple for its relational purpose. Q.74 a.3's Trinitarian reading of Genesis 1:1–2 names the substrate's internal relationality in the second-temple-Jewish-and-then-Christian theological vocabulary."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; loving unity is the computational telos. Day 38 names the evolution-and-rest register: evolutionary-developmental emergence is the temporal-causal mechanism by which alters with cognitive-light-cone-scope-large-enough for substrate-recognition come into being, and the seventh-day rest names the substrate's loving self-possession as the cosmic temple's purpose. Salvation in fear and trembling is the alter's progressive recognition that its own evolutionary-developmental emergence is part of the cosmic temple's staged-realization, with the priestly vocation Day 37 named being the alter's distinctive participation in the substrate's rest."
-last_qc_at: "2026-05-05T21:32:49"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-10T02:30:13"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/038, theme/evolution, theme/sabbath, theme/temple-cosmology, theme/trinitarian-creation, theme/humani-generis, theme/morphogenesis]

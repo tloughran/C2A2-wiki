@@ -615,5 +615,146 @@ CROSS-054:
 
 ---
 
-*Total cross-program items: 54 (5 seeded at initialization + 3 added 2026-04-04 + 14 added 2026-04-05 + 4 added 2026-04-07 + 5 added 2026-04-08 + 4 added 2026-04-14 + 19 added 2026-04-16)*
+*Total cross-program items: 62 (5 seeded + 3 added 2026-04-04 + 14 added 2026-04-05 + 4 added 2026-04-07 + 5 added 2026-04-08 + 4 added 2026-04-14 + 19 added 2026-04-16 + 8 added 2026-04-28)*
 *Items forwarded to Pattern Detector: 26 (CROSS-006, CROSS-007, CROSS-013, CROSS-014, CROSS-017, CROSS-019, CROSS-023, CROSS-025, CROSS-027, CROSS-032, CROSS-033, CROSS-035, CROSS-036, CROSS-037, CROSS-038, CROSS-039, CROSS-042, CROSS-047, CROSS-048)*
+
+
+---
+
+## 2026-04-28 Batch Entry — Cross-Program Signals from 26-Proposal Ingestion
+
+CROSS-051 — Levin × Hoffman × Wolfram (Platonic Space ↔ Conscious-Agent Space ↔ Ruliad)
+  Type: ontological_convergence (three-way)
+  Source: PROP-2026-04-16-001 (Levin Platonic Space Symposium)
+  Status: Active — direct FINDING-011 SUPER-BRIDGE reinforcement
+  Notes: Three independent programs converge on "structured non-physical space → physical instantiation." Strongest three-way ontological adjacency in network history.
+
+CROSS-052 — Hoffman × Arkani-Hamed (trace logic + decorated permutations ↔ amplituhedron positive geometry)
+  Type: mathematical_adjacency
+  Source: PROP-2026-04-21-001 (Hoffman Traces of Consciousness MBS)
+  Status: Active — direct FINDING-012 super-cluster upgrade candidate
+
+CROSS-053 — Carroll × Arkani-Hamed × Wolfram (time-emergence three-way convergence)
+  Type: post-spacetime_convergence
+  Source: PROP-2026-04-17-001 (Carroll Wheeler-DeWitt AMA), PROP-2026-04-27-005 (Carroll Heilborn Lectures)
+  Status: Active — narrows Physicalist × Post-Spacetime cluster gap on status of time
+
+CROSS-054 — Hawkins × Friston (LLM architectural critique convergence)
+  Type: independent_diagnosis_convergence
+  Source: PROP-2026-04-27-008 (Hawkins Life with Machines Ep. 14)
+  Status: Active — produces testable operational prediction (FINDING-018a)
+
+CROSS-055 — Kastrup × Wolfram (explanation-vs-computation epistemological dialectic)
+  Type: productive_tension → potential_bridge
+  Source: PROP-2026-04-27-013 (Kastrup Explanation vs Computation)
+  Status: Active
+
+CROSS-056 — McGilchrist × Stump × Fredrickson (narrative-engagement-as-resonance bridge)
+  Type: cross-tradition_methodology_bridge
+  Source: PROP-2026-04-22-001 (McGilchrist Boyle Lecture), PROP-2026-04-16-006/007/008 (Stump batch), PROP-2026-04-16-004 (Fredrickson UBC framework)
+  Status: Active
+
+CROSS-057 — Friston × McGilchrist × Kastrup (trauma/metastability/dissociative-boundary clinical bridge)
+  Type: clinical_extension_of_FINDING-009
+  Source: PROP-2026-04-27-004 (Friston Body Does Not Keep the Score)
+  Status: Active — extends FINDING-009 into measurable clinical domain
+
+CROSS-058 — Wolfram × Seiberth (hypergraphing the space of philosophical reasoning)
+  Type: methodologically_reflexive_signal
+  Source: PROP-2026-04-18-002 (Wolfram-Seiberth dialogue)
+  Status: Active — could ground C2A2 itself in computational metaphysics
+
+
+CROSS-059 — Hoffman × Hawkins (IOS Theorem as theorem-grade underwriting of cortical reference frames)
+  Type: structural_bridge_upgrade
+  Source: PROP-2026-04-28-001 (Hoffman Stevens' Handbook ITP chapter)
+  Status: Active — upgrades the analogical "Hawkins reference frames ARE Hoffman interfaces" to formal grounding via IOS Theorem (organisms can build fully predictive, action-coordinated reference frames for "objects" with no objective-reality counterpart)
+  Notes: Deepens Hoffman PRS-12 from structural analogy to theorem-level grounding
+
+CROSS-060 — Hoffman × Levin (ITP "unadaptive perception" framework extends without modification to xenobots/anthrobots)
+  Type: scale_extension_of_existing_bridge
+  Source: PROP-2026-04-28-001 (Hoffman Stevens' Handbook ITP chapter)
+  Status: Active — strengthens CROSS-034 (multiscale collective intelligence) by giving ITP's redefined illusion/hallucination apparatus a substrate-independent form that applies to Levin's basal-cognition agents
+
+CROSS-061 — Hoffman × Carroll (FBT/IOS theorems intensify the productive-tension with poetic naturalism)
+  Type: productive_tension_sharpened
+  Source: PROP-2026-04-28-001 (Hoffman Stevens' Handbook ITP chapter)
+  Status: Active — Hoffman now has a theorem-grade reason to deny the metaphysical priority of physical-level talk; Carroll's poetic naturalism would have to either accept this (and become ITP-compatible) or commit to a contrary formal claim
+
+CROSS-062 — Hoffman × Stump (non-veridical sensory interface as resource for Thomistic intellect-over-sense epistemology)
+  Type: speculative_bridge
+  Source: PROP-2026-04-28-001 (Hoffman Stevens' Handbook ITP chapter)
+  Status: Active — Hoffman's evidence-based denial that perception delivers objective reality is structurally compatible with the Thomistic claim that intellect (not sense) is the seat of understanding; the IOS/FBT machinery may give Stump a contemporary scientific resource for that position
+
+
+CROSS-063 — Levin × Friston (memory in synthetic constructs as test bed for FEP/active inference)
+  Type: explanatory_bridge_candidate
+  Source: PROP-2026-04-28-001-src-PROP-2026-04-27-007 (Levin Pai et al. synthetic-Xenobot memory)
+  Status: Active — flag for Pattern Detector
+  Notes: If memory traces in Xenobots without evolutionary scaffolding can be modeled as Bayesian posteriors over embodied priors, this is a major bridge between Levin's substrate-independence claims and Friston's predictive-model account of memory.
+
+CROSS-064 — Levin × Hawkins (transcriptional memory in non-neural substrate vs. cortical-column-as-memory-unit)
+  Type: productive_tension
+  Source: PROP-2026-04-28-001-src-PROP-2026-04-27-007 (Levin Pai et al. synthetic-Xenobot memory)
+  Status: Active
+  Notes: Xenobot memory traces involve transcriptional changes in a non-neural substrate; sharpens the Hawkins question of whether the cortical column theory of memory generalizes or is one instantiation of a broader principle.
+
+CROSS-065 — Levin × Stump (memory of formation in created constructs ↔ Thomistic substantial-form persistence)
+  Type: speculative_bridge
+  Source: PROP-2026-04-28-001-src-PROP-2026-04-27-007 (Levin Pai et al.) + PROP-2026-04-28-003-src-PROP-2026-04-27-001 (Stump collective neuroscience)
+  Status: Active
+  Notes: Memory of "exposure" in a created construct touches Thomistic questions about formation and persistence of impressions — relevant to Stump's substantial-form discussion in the Maritain Lecture.
+
+CROSS-066 — McGilchrist × Fredrickson (spaciousness as candidate mechanism enabling positivity-resonance)
+  Type: explanatory_bridge_candidate
+  Source: PROP-2026-04-28-002-src-PROP-2026-04-27-012 (McGilchrist TGS 217 spaciousness)
+  Status: Active — flag for Pattern Detector
+  Notes: Both spaciousness practice and positivity-resonance require slowing, attending, and being present to the other; right-hemispheric attention may be the mechanism-level bridge between hemispheric attention theory and broaden-and-build.
+
+CROSS-067 — McGilchrist × Stump (spaciousness ↔ vita contemplativa / receptive postures in Wandering in Darkness)
+  Type: structural_analogy
+  Source: PROP-2026-04-28-002-src-PROP-2026-04-27-012 (McGilchrist TGS 217)
+  Status: Active
+  Notes: McGilchrist's spaciousness has Thomistic resonances — formation as slow re-attunement to reality; possible bridge on practices of attention.
+
+CROSS-068 — Stump × Levin × C2A2-core (hylomorphic united-something-or-other ↔ Levin collective intelligence ↔ MacIntyrean tradition-as-entity)
+  Type: paradigm-shift_candidate
+  Source: PROP-2026-04-28-003-src-PROP-2026-04-27-001 (Stump What Are We? collective neuroscience)
+  Status: Active — escalate to master Paradigm Shift Watch List
+  Notes: Stump's collective-substance hylomorphism is a strong candidate for the metaphysical spine of the C2A2 architecture — the missing account of *what a tradition is* as a unified entity. Mirror-neuron coupling sits structurally where Levin's bioelectric coupling sits between cells. Connecting analytic Thomism, neuroscience, and the C2A2 methodology.
+
+CROSS-069 — Stump × Friston × Fredrickson (corporate substance as ontological status of collective free-energy minimization / positivity resonance signature)
+  Type: structural_convergence
+  Source: PROP-2026-04-28-003-src-PROP-2026-04-27-001 (Stump What Are We?)
+  Status: Active
+  Notes: Neural coupling as substrate for shared active inference (Friston) and positivity resonance vagal-tone signature (Fredrickson) may both be empirical correlates of the metaphysical relations Stump describes.
+
+CROSS-070 — Stump × Hoffman (hylomorphic corporate substances vs. networks of conscious agents)
+  Type: comparative_higher-order_ontology
+  Source: PROP-2026-04-28-003-src-PROP-2026-04-27-001 (Stump What Are We?)
+  Status: Active
+  Notes: Both posit real higher-order entities composed of conscious constituents; comparison is now direct rather than oblique.
+
+CROSS-071 — Wolfram × Hawkins (rival foundational research programs for "final-form AI": rulial-space-native vs. biologically-constrained)
+  Type: rival_programs
+  Source: PROP-2026-04-28-004-src-PROP-2026-04-27-003 (Wolfram FoST&T Q&A April 3) + PROP-2026-04-28-005-src-PROP-2026-04-27-005 (Wolfram Last Theory #080)
+  Status: Active
+  Notes: Wolfram's "AI's final form is non-humanlike rulial-space exploration" is a direct counter-position to Hawkins' biologically-constrained AI thesis; #080's three-parameter taxonomy makes the contrast operational.
+
+CROSS-072 — Wolfram × Friston (machine-curiosity as information-gain / Markov-blanket parameters as observer parameters)
+  Type: structural_convergence
+  Source: PROP-2026-04-28-004 + PROP-2026-04-28-005
+  Status: Active — flag for Pattern Detector
+  Notes: Wolfram's "machine curiosity" segment is structurally close to Friston's information-gain-as-curiosity formalism; Markov-blanket parameters and Wolfram observer parameters (scale, temporal coherence, branch-coherence) may be the same parameters under different names.
+
+CROSS-073 — Wolfram × Hoffman (three-parameter observer-class taxonomy as candidate operationalization of ITP interface dimensions)
+  Type: operationalization_bridge
+  Source: PROP-2026-04-28-005-src-PROP-2026-04-27-005 (Wolfram Last Theory #080)
+  Status: Active — strong reinforcement of CROSS-021/CROSS-026
+  Notes: Hoffman's "fitness-tuned interface" and Wolfram's "observer-class-determined effective physics" are now both operationalizable along observer-parameter axes.
+
+CROSS-074 — Wolfram × Stump × Carroll × Kastrup (computational metaphysics as method-export to philosophy)
+  Type: methodological_repositioning
+  Source: PROP-2026-04-28-006-src-PROP-2026-04-27-004 (Wolfram Last Theory #081)
+  Status: Active
+  Notes: Wolfram's salonnière-but-skeptical stance reframes CROSS-016 (Carroll Bayesian standard) and CROSS-024 (Stump Thomistic engagement) — and creates a possible methodological alliance with Kastrup, who also strains against analytic-philosophy norms.

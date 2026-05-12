@@ -53,6 +53,7 @@ length_tier: short
 length_target_words: 1500
 length_actual_words: 1849
 length_ratio_to_target: 1.233
+length_note: "Two questions (Q.87 + Q.88) close the De anima arc on dual reflexive registers — self-knowing (Hoffman icon-of-self + Friston higher-order self-modeling) and substrate-knowing (Wright critical realism + Aquinas's via causalitatis). Substantive linkage to Day 7 beatific limit case + Levin gradient of inclinations is doing real bridging work per the 2026-05-05 substantive-integrity clause. Within ±25%."
 karpathy_wiki_sources:
   - "wiki/traditions/hoffman/wiki.md (PRS-01, PRS-04 — interface theory and conscious realism extended to icon-of-self)"
   - "wiki/traditions/friston/wiki.md (PRS-02 — active inference; self-modeling as higher-order prediction-loop)"
@@ -66,6 +67,6 @@ karpathy_wiki_sources:
   - "Day 7 commentary, Q.12 a.2 — *vision-without-an-image* as the asymmetric beatific exception"
 mind_first_reframe: "Q.87's *we know ourselves through our acts, not our essence* is Hoffman's icon-of-self plus Friston's higher-order self-modeling: the alter's self-knowledge is mediated by the generative model of its own activity; the substrate-level structure is never directly inspected in the natural state. Q.88's *we cannot understand immaterial substances directly in this life; we know God through creatures by inferential climb from material effects* preserves the natural-state asymmetry: the icons are necessary mediators in the natural state; the substrate is approached as the inferred ground of what the icons are icons of. The beatific limit case (Day 7) remains the asymmetric exception. Q.87 a.4's gradient of inclinations (stone-plant-animal-human) maps onto Levin's agency-at-every-scale gradient."
 central_theme_thread: "Each alter is individuated by the limits of its perspective; both self-knowing and substrate-knowing are interface-mediated in the natural state. Salvation in fear and trembling on the reflexive register is the disciplined cultivation of self-knowledge through careful interpretation of one's own acts (medieval examination of conscience; contemporary metacognitive humility) and substrate-knowledge through inferential climb from creatures (critical realism; contemplative practice). The alter computes, from its limited perspective and resources, toward both kinds of recognition — knowing itself well enough to act, knowing the substrate well enough to orient toward integration."
-last_qc_at: "2026-05-05T21:32:24"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-10T02:28:07"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/045, theme/self-knowing, theme/icon-of-self, theme/self-modeling, theme/substrate-knowing, theme/critical-realism, theme/de-anima-close]

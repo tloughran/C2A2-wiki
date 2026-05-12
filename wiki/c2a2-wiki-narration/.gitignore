@@ -1,0 +1,21 @@
+# Generated output (regenerate from scripts)
+output/wiki_narration.html
+
+# Extracted vault data (large, regenerate from vault)
+vault_data*.json
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Archives
+*.zip

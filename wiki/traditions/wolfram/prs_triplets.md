@@ -126,4 +126,71 @@ PRS-12:
   Confidence: Speculative
 
 ---
-*Total PRS triplets: 12*
+PRS-13:
+  Label: P13 (PROP-2026-04-18-002) — Stephen Wolfram & Matt Mullenweg: AI, and What Frontier Labs Are Getting Wrong (
+  Problem: Frontier AI labs are scaling LLMs with the expectation that sufficiently large pre-trained transformers will yield reliable, general-purpose intelligence. Hallucination, brittleness in computation, and lack of verifiability persist. Is scaling the right trajectory — or is there a categorical gap between statistical next-token prediction and actual computation?
+  Resource: The Wolfram framing (March 27, 2026 Mullenweg conversation) that LLMs and symbolic computation are complementary, not competing — with the Wolfram Language / Foundation Tool (PRS-11) as the computational backbone that LLMs cannot become by scaling. "Computation and openness" positioned as the missing frontier-lab commitments.
+  Solution: An explicit alternative research-and-industry program: LLM + CAG (computation-augmented generation) + open infrastructure, where the LLM is treated as a navigator of rulial space and the computational tool supplies the ground truth the navigator cannot produce. This is positioned not as a complement to frontier labs but as a correction of what they are structurally missing.
+  Date Added: 2026-04-28
+  Source: Stephen Wolfram & Matt Mullenweg: AI, and What Frontier Labs Are Getting Wrong (dev/ai/nyc, Automattic) (2026-03-27) — https://luma.com/yb2jnbho
+  Confidence: Medium
+PRS-14:
+  Label: P14 (PROP-2026-04-18-001) — Philosophy Discussion with Stephen Wolfram and Luz Christopher Seiberth [Ep. 2]
+  Problem: Sellars' and Brandom's "space of reasons" is a foundational metaphor in analytic philosophy of mind — but lacks a formal model. How do we make rigorous sense of inferential movements, contextual boundaries, and "conceptual schemes" as structural objects rather than loose metaphors?
+  Resource: Seiberth's hypergraphing of the space of reasons — hypergraphs (per Wolfram 2021) as the substructure beneath the concept of reasoning-space, with inferential steps modelled as argument-map-based paths and conceptual schemes modelled as sub-area boundaries.
+  Solution: A formal-philosophical research program in which the Wolfram hypergraph becomes the shared mathematical language for both (a) fundamental physics (Wolfram Physics Project) and (b) the structure of rational inference (Seiberth). If the same formal object underlies both spacetime and the space of reasons, this is a strong empirical argument for the Ruliad thesis (PRS-06) from the philosophy side.
+  Date Added: 2026-04-28
+  Source: Philosophy Discussion with Stephen Wolfram and Luz Christopher Seiberth [Ep. 2] (2026-04-08) — https://livestreams.stephenwolfram.com/
+  Confidence: Medium
+
+PRS-15:
+  Label: P15 (PROP-2026-04-28-004 / src PROP-2026-04-27-003) — AI-knowledge as rulial-space-search geometry
+  Problem: AI systems produce outputs that pass as "knowledge" yet do not appear to satisfy traditional epistemic standards (justification, source-tracking, reproducibility). Is AI output knowledge, and if so, what kind, and with what warrant?
+  Resource: Wolfram's "What counts as knowledge with AI?" framing — treating AI-mediated outputs as moves through a slice of the Ruliad rather than as testimony from a knowledge-bearing agent, with the warrant question replaced by a question about the structure of the rulial-space path the AI traversed
+  Solution: A reframing of AI epistemology in which "knowledge with AI" is a status conferred by the *geometry of the rulial-space search* rather than by the AI's own credibility — making AI knowledge a second-order property of the human–AI pipeline, not of the AI alone
+  Date Added: 2026-05-08
+  Source: Future of Science and Technology Q&A (April 3, 2026) — https://livestreams.stephenwolfram.com/category/future-of-science-technology-qa/
+  Confidence: Medium
+PRS-16:
+  Label: P16 (PROP-2026-04-28-004, 2nd candidate) — Machine curiosity as non-humanlike rulial-space exploration
+  Problem: Most AI cognition is trained to imitate human styles of thought. Does this exhaust the space of cognition, or are there forms of "machine curiosity" and "new ways of thinking" that are native to the rulial space and orthogonal to human cognition?
+  Resource: Wolfram's "machine curiosity and new ways of thinking" segment — argues that present-day AI is mining a small humanlike pocket of the Ruliad and that further progress requires AI systems whose curiosity and search dynamics are not constrained by human-imitation training
+  Solution: A research-program suggestion that "AI's final form" is not a more-fluent humanlike system but a system exploring genuinely non-humanlike rulial regions — operationalizing the rulial-space-of-minds thesis as a specific research target rather than a metaphor
+  Date Added: 2026-05-08
+  Source: Future of Science and Technology Q&A (April 3, 2026)
+  Confidence: Medium
+PRS-17:
+  Label: P17 (PROP-2026-04-28-005 / src PROP-2026-04-27-005) — Three-parameter observer-class taxonomy
+  Problem: The rulial-space-of-minds thesis (PRS-03, PRS-05) is conceptually compelling but has lacked concrete worked examples. Without specific observer-classes to point at, "different observers sample the Ruliad differently" remains a slogan rather than a research agenda
+  Resource: Wolfram's three-parameter observer-class taxonomy (Last Theory #080): scale (molecule → planet), temporal coherence (instantaneous-state vs. light-delay-dominated), and multiway-coherence (single thread vs. multi-branch experience)
+  Solution: A first-pass operational map of the rulial-space-of-minds: observer types are points in (scale × temporal-coherence × multiway-coherence) space, and each generates a distinct effective physics — converting PRS-03/05 from a programmatic claim into a research agenda
+  Date Added: 2026-05-08
+  Source: The Last Theory Podcast #080 — How different observers think differently (2026-03-05) — https://lasttheory.com/podcast/080-how-different-observers-think-differently
+  Confidence: High
+PRS-18:
+  Label: P18 (PROP-2026-04-28-005, 2nd candidate) — Two-level reading of Principle of Computational Equivalence
+  Problem: Does the Principle of Computational Equivalence (PCE) imply that all sufficiently complex observers think the same way, making observer-class differentiation a mere surface phenomenon? If yes, the rulial-space-of-minds thesis collapses
+  Resource: Wolfram's argued resolution in #080: PCE applies to the *computational capability* of observers but not to the *experienced physics* of observers — two observers can be computationally equivalent and still inhabit incommensurable physics because they sample the underlying computation differently
+  Solution: A clarified two-level reading of PCE: (i) computational-capability — all observers above the universality threshold are equivalent in what they can in principle compute; (ii) experiential-physics — those observers can still inhabit profoundly different effective worlds depending on sampling parameters. The rulial-space-of-minds thesis lives at level (ii)
+  Date Added: 2026-05-08
+  Source: The Last Theory Podcast #080 — How different observers think differently (2026-03-05)
+  Confidence: Medium
+PRS-19:
+  Label: P19 (PROP-2026-04-28-006 / src PROP-2026-04-27-004) — Computational metaphysics as method-export to philosophy
+  Problem: Wolfram's computational metaphysics has been challenged to engage rigorously with analytic philosophy. There is an unstated meta-question: must the computational program adopt analytic philosophy's methodology to count as having engaged it, or can it engage from outside that methodology?
+  Resource: Wolfram's stated methodological self-description (Last Theory #081): the philosopher's mode of argument feels under-determined ("too much wiggling") relative to the discipline of running computational experiments; his engagement with philosophers is salonnière-style hosting, not internal adoption of philosophical method
+  Solution: A reframing of the computational-metaphysics program as proposing a *new* methodology to philosophy — empirical ruliology applied to ontological questions — rather than as an attempt to satisfy analytic philosophy on its own terms. This converts the Jago/Seiberth dialogues from "compliance with philosophical scrutiny" into "method-export from computation to philosophy"
+  Date Added: 2026-05-08
+  Source: The Last Theory Podcast #081 — Wolfram on philosophy (2026-03-22) — https://lasttheory.com/podcast/081-wolfram-on-philosophy
+  Confidence: Medium
+PRS-20:
+  Label: P20 (PROP-2026-04-28-006, 2nd candidate) — Computational cash-out as criterion for substantive metaphysical disagreement
+  Problem: How does the Wolfram program adjudicate between competing philosophical accounts of its own central objects (the Ruliad, observers, emes) when those accounts use the formal vocabulary of analytic philosophy?
+  Resource: Wolfram's implicit criterion in #081 — a philosophical formulation is taken seriously to the extent that it can be cashed out in or constrained by computational experiment; pure verbal/formal manipulation without computational cash-out is treated as the "wiggling" he distrusts
+  Solution: A two-tier evaluation: (i) does the philosophical formulation produce a different prediction inside ruliology / observer theory? If yes, treat it as substantive. (ii) If no, treat it as one of many equivalent verbal frames over the same underlying computational structure
+  Date Added: 2026-05-08
+  Source: The Last Theory Podcast #081 — Wolfram on philosophy (2026-03-22)
+  Confidence: Speculative
+
+---
+*Total PRS triplets: 20*

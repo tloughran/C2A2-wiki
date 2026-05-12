@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "source_pdf_offset_from_book": 5,
+    "comment": "PDF page = book page + 5. TOC verified by Tom 2026-05-07: Preface front matter + Introduction + 10 numbered Chapters. Annotated commentary file covers PDF pp. 5-178 only — Chapters IX and X have no annotations and are kept as structural placeholders."
+  },
+  "chapters": [
+    {"id": "preface", "number": -1, "title": "Preface (front matter)",                                                              "pdf_pages": [1, 5],     "title_confidence": "verified"},
+    {"id": "intro",   "number": 0,  "title": "Introduction",                                                                        "pdf_pages": [6, 13],    "title_confidence": "verified"},
+    {"id": "ch-1",    "number": 1,  "title": "Adam Gifford's Project in Context",                                                   "pdf_pages": [14, 36],   "title_confidence": "verified"},
+    {"id": "ch-2",    "number": 2,  "title": "Genealogies and Subversions",                                                         "pdf_pages": [37, 62],   "title_confidence": "verified"},
+    {"id": "ch-3",    "number": 3,  "title": "Too Many Thomisms?",                                                                  "pdf_pages": [63, 86],   "title_confidence": "verified"},
+    {"id": "ch-4",    "number": 4,  "title": "The Augustinian Conception of Moral Enquiry",                                         "pdf_pages": [87, 109],  "title_confidence": "verified"},
+    {"id": "ch-5",    "number": 5,  "title": "Aristotle and/or/against Augustine: Rival Traditions of Enquiry",                     "pdf_pages": [110, 131], "title_confidence": "verified"},
+    {"id": "ch-6",    "number": 6,  "title": "Aquinas and the Rationality of Tradition",                                            "pdf_pages": [132, 153], "title_confidence": "verified"},
+    {"id": "ch-7",    "number": 7,  "title": "In the Aftermath of Defeated Tradition",                                              "pdf_pages": [154, 174], "title_confidence": "verified"},
+    {"id": "ch-8",    "number": 8,  "title": "Tradition against Encyclopaedia: Enlightened Morality as the Superstition of Modernity", "pdf_pages": [175, 200], "title_confidence": "verified"},
+    {"id": "ch-9",    "number": 9,  "title": "Tradition against Genealogy: Who Speaks to Whom?",                                    "pdf_pages": [201, 220], "title_confidence": "verified"},
+    {"id": "ch-10",   "number": 10, "title": "Reconceiving the University as an Institution and the Lecture as a Genre",            "pdf_pages": [221, 241], "title_confidence": "verified"}
+  ]
+}

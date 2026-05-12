@@ -14,10 +14,10 @@ language: en
 fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-026 - The Angels - Contemporary]]"
-fidelity_checked: false
-last_qc_at: "2026-05-05T21:32:30"
-last_qc_outcome: "pass"
-render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
+fidelity_checked: true
+last_qc_at: "2026-05-11T12:27:38"
+last_qc_outcome: "rewrote"
+render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/026, pars/I]
 ---
 # Day 26 — The Angels
@@ -36,6 +36,10 @@ tags: [summa, day/026, pars/I]
 
 [00:00:38] in these podcasts as a second revised Edition translated by the fathers of the English Dominican Province and so here
 
+### Q.49 — The cause of evil
+
+**Article 1 — Whether good can be the cause of evil**
+
 [00:00:44] we go article one can good be the cause of evil remember our definition of goodness from episode 4 the essence of goodness consists in this that it is in some way desirable being under the aspect of desirability being as considered to some will is goodness in reality goodness and being are identical so if we could rephrase this question ask yourself are existing things the cause of evil and the answer is yes for an evil man to murder he must exist the
 
 [00:01:17] actions which cause the murder these things must also exist the murderer's being his actions considered as existing are good but considered as lacking some rectitude in the will which they ought to have makes these actions in this man evil is good the cause of evil not directly because again evil in itself is just a missing an absence a privation of virtue or right intention absences don't have causes because they don't have
@@ -43,6 +47,8 @@ tags: [summa, day/026, pars/I]
 [00:01:47] being which is why Dionysius says in this article evil has no cause but then Aquinas responds there is no possible source of evil except good both of those statements are true and it is the purpose of this article to show both that they are true and not contradictory together evil has a cause because there must be a reason why there is an absence in this evil man's intention or in his actions but the absence itself does not have a cause because it is just that an
 
 [00:02:20] absence in Aquinas his words for evil is the absence of good which is natural and due to a thing but that anything fail from a natural and due disposition can come only from some cause drawing it out of its proper disposition therefore we can say yes some good or some existing thing can be the cause of evil or missing things in others good can be the
+
+**Article 2 — Whether the supreme good, God, is the cause of evil**
 
 [00:02:49] cause of evil article two whether the Supreme good God is the cause of evil here we will have to distinguish like we did in the previous article evil essentially as the privation of the good God cannot be the cause of because evil as an absence has no cause has no being strictly speaking here we hear the words of the book of wisdom where it says do not invite death by the error of your life nor bring on destruction by The Works of your hands because God did not
 
@@ -56,17 +62,27 @@ tags: [summa, day/026, pars/I]
 
 [00:05:22] can a man be pure before his maker even in his servants he puts no trust and his angels he charges with error how much more those who dwell in houses of clay whose Foundation is in the dust who are crushed before the moth between morning and evening they are destroyed they perish forever without any regarding it for affliction does not come from the dust nor does trouble Sprout from the ground but man is born to trouble as the
 
+**Article 3 — Whether there is one supreme evil which is the cause of every evil**
+
 [00:05:50] Sparks Fly upward article three whether there be one supreme evil which is the cause of every evil heroinas will contrast the Christian religion with what is normally termed dualism it will always be tempting possibly in every generation to try and solve the problem of evil why there exists a good God and Evil in the world by simply positing a second God a second evil God just as powerful as the first yet evil and then to say that the struggle between the two is the cause of evil in this world but
 
 [00:06:20] there can to only be one God which was the subject of episodes 3 and 7 and there definitely could never be some completely evil anything because evil as the absence of the good if it was pure and unmixed with any good thing it would simply be nothing non-existence pure evil equals non-existence that follows from the definition of evil as well as the definition of good which is being but under the aspect of desirability Aquinas responds to this article saying the Supreme good or we could say the
 
 [00:06:52] primary first good is the cause of every being therefore there cannot be any principle opposed to it as the cause of evils Aquinas will continue explaining those however who upheld two principles one good and the other evil fell into this error because they failed to consider the universal cause of all being and considered only the particular causes of particular effects if they found a thing hurtful to something by the power of its own nature they thought that the very nature of that thing was evil as for instance like if one should
 
-[00:07:24] say that the nature of fire was evil because it burnt the house of a poor man the Judgment however of the goodness of anything does not depend upon its order to any particular thing but first rather upon what is in itself and second on its order to the whole universe wherein every part has its own perfectly ordered place and with that we proceed to our next section in the suo which is the Angels here Aquinas gives us a preo to this section as well as the two other
+[00:07:24] say that the nature of fire was evil because it burnt the house of a poor man the Judgment however of the goodness of anything does not depend upon its order to any particular thing but first rather upon what is in itself and second on its order to the whole universe wherein every part has its own perfectly ordered place
+
+### Q.50 — The substance of the angels
+
+and with that we proceed to our next section in the suo which is the Angels here Aquinas gives us a preo to this section as well as the two other
 
 [00:07:55] sections which will follow it by saying now we consider the distinction of Corporal and spiritual creatures firstly the purely spiritual creature which in Holy scripture is called an Angel Second the creature holy corporeal thirdly the composite creature corporeal and
 
-[00:08:13] spiritual which is man first question whether an angel is altogether incorporeal incorporeal is the technical term for not bodily or not Material first of all do angels exist and I would say setting aside Revelation since God exists who cannot be perfected then the only reason for anything else to exist would be to manifest God or to glorify him and without Angels there would be a categorical hole in that manifestation it would go from God existence itself to
+[00:08:13] spiritual which is man
+
+**Article 1 — Whether an angel is altogether incorporeal**
+
+first question whether an angel is altogether incorporeal incorporeal is the technical term for not bodily or not Material first of all do angels exist and I would say setting aside Revelation since God exists who cannot be perfected then the only reason for anything else to exist would be to manifest God or to glorify him and without Angels there would be a categorical hole in that manifestation it would go from God existence itself to
 
 [00:08:44] limited destructible material stuff which is US everything down here but what about non-material stuff if God is interested in manifesting himself which he obviously is he's not going to do it in a halfhazard incomplete way and without incorporeal creatures that goodness would not be manifested in an entire category of being and the best kind of beings to manifest God's goodness because they are much closer to God in their being than anything else
 
@@ -76,7 +92,11 @@ tags: [summa, day/026, pars/I]
 
 [00:10:18] Angels in Psalm 104 he says he makes his angels Spirits angelist or angel in the Latin simply means messenger so angels are incorporeal messengers they are are entirely immaterial intellectual
 
-[00:10:32] substances our next article whether an angel is composed of matter and form now what do these words mean I will simply repeat what we said in episode two on matter and form where we encountered it as a question in regard to God so to quote here Werner Heisenberg Nobel Prize winner especially for his work in quantum physics he says regarding the Aristotelian concepts of matter and form we can say that the matter of Aristotle which is mere potential should be
+[00:10:32] substances
+
+**Article 2 — Whether an angel is composed of matter and form**
+
+our next article whether an angel is composed of matter and form now what do these words mean I will simply repeat what we said in episode two on matter and form where we encountered it as a question in regard to God so to quote here Werner Heisenberg Nobel Prize winner especially for his work in quantum physics he says regarding the Aristotelian concepts of matter and form we can say that the matter of Aristotle which is mere potential should be
 
 [00:11:03] compared to our concept of energy which gets into actuality by means of the form when the elementary particle is created so physicists like Werner Heisenberg are trying to find the absolute bottom of material stuff what is the most fundamental thing which everything material is made up of now Heisenberg thinks that's energy it may very well not be energy there's good reasons for thinking it wouldn't be but whatever it is at that very bottom of which all
 
@@ -94,6 +114,8 @@ tags: [summa, day/026, pars/I]
 
 [00:14:44] chemicals and the synapses of the brain but what you and I know is not particular but the general abstract the immaterial notion of love peace and Justice and we can do that because there is an immaterial aspect to us namely the mind a faculty of the Soul now if that was a lot in a small amount of time don't worry because we'll get into all of that again on AIS treatment on man when we go over the soul and the mind
 
+**Article 3 — Whether the angels exist in any great number**
+
 [00:15:14] specifically article 3 whether the angels exist in any great number well it is written in the Book of Daniel chapter 7 Thrones were placed and one that was Ancient of Days took a seat a thousand thousand served him and 10,000 times 10,000 stood before him the court sat in judgment which Aquinas takes to be the Angels now Aquinas's argument here is that since the Perfection of the universe is intended by God both material and immaterial things then
 
 [00:15:46] there should be more of the better kinds of things in it and the best kind of things short of God is the Angels naturally speaking and therefore there should be many of them Aquinas writes since it is the Perfection of the universe that God chiefly intends in the creation of things the more perfect some things are and so much greater in excess are they created by God now as embodies such excess is observed in regard to their
@@ -104,6 +126,8 @@ tags: [summa, day/026, pars/I]
 
 [00:17:18] material your body is yours my body is mine they are different therefore we are different so how does that work with the angels which brings us to our next
 
+**Article 4 — Whether the angels differ in species**
+
 [00:17:28] article Article 4 or whether the Angels differ in species is every Angel within one species let's say the species of Angel like you and I are of the species of human or are they different species like a rabbit is different in nature from a dog and the answer is not only is each Angel a different species than the other but they have to be because again if they weren't they would not be distinct you and I we share the same
 
 [00:17:58] nature Essence which we call human and then differ because we have different material but angels have no material therefore for them to be distinct at all they must be distinct by species Aquinas writes things as agree in species but differ in number agree in form but are distinguished materially so that's us human beings if therefore the Angels be not composed of matter and form as was said above it follows that it is impossible for two angels to be of one
@@ -111,6 +135,8 @@ tags: [summa, day/026, pars/I]
 [00:18:31] species how do they differ in species since they are all identical in being incorporeal creatures they differ according to what Aquinas says more or less imperfection more or less similar to God in this question we're not saying by Grace or love or imitation but simply according to their nature are they more or less in being goodness Oneness and we could say the rest of the transcendentals as we've covered in previous
 
 [00:19:00] podcasts the last article of this
+
+**Article 5 — Whether the angels are incorruptible**
 
 [00:19:02] episode Article 5 whether the angels are Incorruptible yes because we destroy things by pulling them apart whether that's a tree or an atom or anything else we separate the composite what was a moment ago composed together we pull into its individual pieces of things that are material this means affecting the material until it loses its form until the form can no longer inform that
 
@@ -122,4 +148,9 @@ tags: [summa, day/026, pars/I]
 
 ## Notes
 
-<!-- TODO: editor's marginalia — questions, surprising moves, terms to look up, candidate bridges to C2A2 thinkers. Two to seven bullets. -->
+- Q.49 a.1 — Habash's compact formulation: *good can be the cause of evil indirectly*, because evil is the privation of a good that *ought to be there*, and the cause is an existing thing whose action *fails* in some respect. The Dionysian *evil has no cause* and Aquinas's *there is no possible source of evil except good* are reconciled by the privation-vs-existing-cause distinction. This is the cleanest medieval philosophy-of-defective-action statement Habash has reached so far.
+- Q.49 a.2 lands the *God is the cause of pain-as-penalty but not of fault* doctrine (continuing the Q.48 a.5–6 division). The Job quotation (4:12–21, the Eliphaz speech) is read as canonical Catholic gravitas; worth noting that in Wright's reading the Eliphaz speeches are rebuked by God at the end of Job, so the cosmic-disciplinary frame here would be theologically more secure if anchored in Hebrews 12 (which Habash also cites). Synthesis can mark this asymmetry.
+- Q.50 a.1's argument-for-angels-by-completeness ("without angels there would be a categorical hole in the manifestation of God's goodness") is Habash's deduction-by-completeness. This is the angelology locus where Kastrup (mind-at-large dissociated at scales without bodies), Wolfram (pure-information substrates), Hoffman (conscious-agent networks at scales we don't perceive) jointly supply the contemporary structural-philosophical home — none of them empirically vindicate angels but all give the medieval ontology a home that doesn't require disembodied substantialism.
+- Q.50 a.2's Heisenberg quote on Aristotelian matter as energy/potentiality is now Habash's fourth invocation in five days. This is the recurring physics-bridge spine — Levin/Carroll/Arkani-Hamed cluster should anchor the synthesis whenever it appears.
+- Q.50 a.2 also delivers Habash's most concise *mind-is-not-material* argument: we know universals (love, peace, justice) abstractly, but every material thing is particular; therefore the knower is in part immaterial. This is the medieval argument for an immaterial intellectual faculty. Bridge candidates: Hawkins HTM (concept formation as compression/abstraction over particulars — gives the empirical mid-scale that's compatible with materialism), Kastrup (universals as patterns in mind-at-large — non-material in the strict-substance sense Aquinas means).
+- Q.50 a.3–4's *each angel its own species* is structurally important: it removes the matter-as-principle-of-individuation move for non-material intellects, so angels are individuated by *form-difference alone* — closer to Kastrup's *alters-as-perspectives-within-mind-at-large* (each alter individuated by its perspective-pattern, not by a separate material instantiation) than to anything in biology. Hoffman's conscious-agent-network framework provides the mid-scale formalism, again as structural-philosophical home rather than empirical vindication.

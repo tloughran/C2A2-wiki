@@ -7,15 +7,16 @@ summa_ref: Prima Pars, Q.9-10
 duration_seconds: 978
 word_count: 2425
 raw_asr_word_count: 2425
+length_tier: medium
 segment_count: 353
 caption_kind: asr
 language: en
 fetched_at: 2026-05-05
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-006 - Does God Change - Contemporary]]"
-fidelity_checked: false
-last_qc_at: "2026-05-05T21:31:46"
-last_qc_outcome: "pass"
+fidelity_checked: true
+last_qc_at: "2026-05-09T16:22:35"
+last_qc_outcome: "rewrote"
 tags: [summa, day/006, pars/I]
 ---
 

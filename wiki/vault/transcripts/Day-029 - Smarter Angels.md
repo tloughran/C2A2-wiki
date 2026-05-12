@@ -14,10 +14,10 @@ language: en
 fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-029 - Smarter Angels - Contemporary]]"
-fidelity_checked: false
-last_qc_at: "2026-05-05T21:32:41"
-last_qc_outcome: "pass"
-render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
+fidelity_checked: true
+last_qc_at: "2026-05-11T12:32:14"
+last_qc_outcome: "rewrote"
+render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/029, pars/I]
 ---
 # Day 29 — Smarter Angels
@@ -36,11 +36,21 @@ tags: [summa, day/029, pars/I]
 
 [00:00:38] knowledge of immaterial things the translation that I always use in these podcasts is a second revised Edition translated by the fathers of the English Dominican Province and so here we go and we begin with an inquiry into the medium through which Angelic knowledge is
 
-[00:00:53] conducted article one whether the Angels know all things by their substance only God knows all things in knowing himself Aquinas will answer this question in relatively few words saying this is proper to the Divine Essence which is infinite simply and perfectly to comprise all things in itself therefore God Alone knows all things by his Essence but an angel cannot know all things by his Essence and his intellect must be perfected by some species in
+[00:00:53] conducted
+
+### Q.55 — The medium of the angelic knowledge
+
+**Article 1 — Whether the angels know all things by their substance**
+
+article one whether the Angels know all things by their substance only God knows all things in knowing himself Aquinas will answer this question in relatively few words saying this is proper to the Divine Essence which is infinite simply and perfectly to comprise all things in itself therefore God Alone knows all things by his Essence but an angel cannot know all things by his Essence and his intellect must be perfected by some species in
 
 [00:01:24] order to know things what do we mean by species here which is a perfect segue
 
-[00:01:29] into our second article whether the Angels understand by species drawn from things as we said in the last episode when I know the tree out in the world it is because the essence which makes it to be a tree out there and makes me to know it in my mind is essentially identical the essence of trees whether out there in the world or in my mind is the same it just exists in different ways the essence of tree out there makes things
+[00:01:29] into our second article
+
+**Article 2 — Whether the angels understand by species drawn from things**
+
+whether the Angels understand by species drawn from things as we said in the last episode when I know the tree out in the world it is because the essence which makes it to be a tree out there and makes me to know it in my mind is essentially identical the essence of trees whether out there in the world or in my mind is the same it just exists in different ways the essence of tree out there makes things
 
 [00:02:00] actually particular trees but in my mind that Essence exists in an abstract not particular kind of way in forming my mind which is what allows me to understand not just this tree in front of me but the general notion the species the nature of tree so that I can recognize a tree when I see it it's what allows me to imagine trees or to dream about trees it is because I get the gist or the abstract concept of what makes a
 
@@ -52,7 +62,11 @@ tags: [summa, day/029, pars/I]
 
 [00:04:05] things they must receive their knowledge
 
-[00:04:08] directly from God article three whether the higher Angels understand by more Universal species than the lower Angels now I think personally this is kind of a cool question here we are asking if the Perfection of knowledge consists in its universality phrased another way is the smarter Angel the one who knows knows more but with less or who knows more through a simpler more universally applicable concept and the answer is yes
+[00:04:08] directly from God
+
+**Article 3 — Whether the higher angels understand by more universal species than the lower**
+
+article three whether the higher Angels understand by more Universal species than the lower Angels now I think personally this is kind of a cool question here we are asking if the Perfection of knowledge consists in its universality phrased another way is the smarter Angel the one who knows knows more but with less or who knows more through a simpler more universally applicable concept and the answer is yes
 
 [00:04:40] think about God who knows everything possible or actual by knowing one entirely simple idea himself his Essence and as things move down the chain on intellectual Perfection their knowledge becomes less and less simple and less and less universally encompassing here are Quan's words the higher the angel is by so much the fewer species will he be
 
@@ -60,7 +74,13 @@ tags: [summa, day/029, pars/I]
 
 [00:05:43] things from few all of that was Aquinas is words now my words imagine what a brilliant mind like St Thomas Aquinas understood in understanding just one truth for example that God exists think of how many other truths a whole universe of truths he would have grasped or seen in knowing that one truth seeing through that one truth but for us regular people we do have to be shown Peace by piece each individual
 
-[00:06:15] consequence of that truth every other truth which flows inevitably from it yet for Angels or for the Angelic doctor a term the church has given to St Thomas Aquinas many truths are simply seen or it tued in knowing that one truth we move on to question 56 the Angel's knowledge of immaterial things article one whether an angel knows himself because the angel himself is immaterial Let Us return to how we know things we take particular things we see with our
+[00:06:15] consequence of that truth every other truth which flows inevitably from it yet for Angels or for the Angelic doctor a term the church has given to St Thomas Aquinas many truths are simply seen or it tued in knowing that one truth we move on to
+
+### Q.56 — The angel's knowledge of immaterial things
+
+**Article 1 — Whether an angel knows himself**
+
+question 56 the Angel's knowledge of immaterial things article one whether an angel knows himself because the angel himself is immaterial Let Us return to how we know things we take particular things we see with our
 
 [00:06:47] eyes then we see them in the mind with our imagination and then we pull the general immaterial abstract Essence from that image we see trees with our eyes we imagine them in the mind and then we abstract the idea of tree from that image this essence or form nature of tree then informs the mind that's how we know what a tree is now the intellect of the Angel is naturally and always United to itself its being which is itself an
 
@@ -68,9 +88,13 @@ tags: [summa, day/029, pars/I]
 
 [00:07:50] some time to chew on and Aquinas's words so therefore if in the order of intelligible beings there be any subsisting intelligible form it will understand itself and since an angel is immaterial he is a subsisting form and consequently he is actually intelligible hence it follows that he understands himself by his form which is his substance hopefully between my explanation of those words and the excerpt itself this article whether an angel knows himself will be clear
 
+**Article 2 — Whether one angel knows another**
+
 [00:08:23] article two whether one Angel knows another the answer is yes and the how is God as Aquinas writes God impressed upon the Angelic mind the images of the things which he produced in their own natural being now in the word of God from eternity there existed the forms of all spiritual creatures so in every one of these spiritual creatures the form of all things both Corporal and spiritual were impressed by the word of God in
 
 [00:08:53] other words God in making all things through his word through the word of God then impress presses this knowledge of creatures into the mind of angels all things pre-exist in the mind of God therefore he can share that knowledge or pour that knowledge into angels we could say more on how these forms differ from the Angel's knowledge of itself but I will refer one to the text if they would like to dig deeper into this article
+
+**Article 3 — Whether an angel knows God by his own natural principles**
 
 [00:09:20] article three in our last article of this question whether an angel knows God by his own natural principles Aquinas writes the angel are mightier in knowledge than men yet men can know God through their natural principles according to Romans 1:19 what is known of God is Manifest to them therefore much more so can the Angels Aquinas says here there are three ways one can know a thing the first one knows it because the thing itself is United to the mind this
 
@@ -84,4 +108,9 @@ tags: [summa, day/029, pars/I]
 
 ## Notes
 
-<!-- TODO: editor's marginalia — questions, surprising moves, terms to look up, candidate bridges to C2A2 thinkers. Two to seven bullets. -->
+- Q.55 a.1 establishes the directional asymmetry at the cognitive level: only God knows-all-things-by-knowing-himself; every creature (including angels) needs *species* (intelligible forms in the mind) to know things. This is the same directional asymmetry the central theme keeps marking — substrate-is-self-knowing; alters know-by-acquiring. The synthesis can use this to anchor the central theme cleanly.
+- Q.55 a.2's *angels receive intelligible species by divine infusion* (rather than by abstraction from sensibles, as we do) is the day's structurally important claim — angelic cognition is *receptive of pre-formed structure* rather than *abstractive from particulars*. Bridge: Kastrup on alters as containing structural priors of mind-at-large (no need to derive what is constitutively present); Wolfram on substrate-structure as already-present-in-the-ruliad rather than constructed.
+- Q.55 a.3 is the day's smartest cognitive move: *higher angels know more by fewer, more universal species*. This is the *compression* claim — knowing more by fewer simpler representations. Bridge: Friston's free-energy minimization framework explicitly takes *compression* (minimum description length) as the objective; Hawkins HTM is the empirical instantiation of cortical compression-hierarchies; CROSS-011 (Friston × Hawkins) is the mature empirical-and-formal home for the medieval *higher-angels-know-by-fewer-species* claim. *This is among the project's cleanest cognitive-empirical contacts with medieval angelology so far.*
+- Q.56 a.1's *angel knows itself because its form is its substance and its substance is intelligible* is a structural argument: self-knowledge for a subsisting form is immediate. Bridge: this is structurally analogous to the *self-knowing substrate* claim in Kastrup (mind-at-large's self-acknowledgment is internal to its mind-nature); for the Augustine-inflected self-knowledge tradition, the Stump bridge (faith-as-knowledge-of-persons reading self-knowledge as the most basic form of personal knowing) is the relevant Thomistic interlocutor.
+- Q.56 a.2's *angels know one another through divinely impressed species of all creatures* makes God the *medium of inter-angelic cognition*. This preserves the strong directional asymmetry: alters know other alters only via the substrate's mediating pattern-active stance. Mind-monist translation: alters are individuated within mind-at-large; inter-alter knowledge is mediated by the shared substrate.
+- Q.56 a.3's *three modes of knowing* (by union, by abstracted likeness, by inference from effects) is the schematic that frames how angels-know-God: angel-knowledge-of-God is via *the angel as image-of-God* (mode B with mode A flavor). For us, the natural-theology approach is mode C (knowing the Painter from the paintings). Romans 1:19–20 ("what is known of God is manifest to them") is Habash's scriptural anchor; Wright on natural theology in Romans 1 is the appropriate bridge.

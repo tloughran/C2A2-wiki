@@ -180,4 +180,31 @@ PRS-18:
   Confidence: Speculative
 
 ---
-*Total PRS triplets: 18*
+PRS-19:
+  Label: P19 (PROP-2026-04-22-001) — ISSR 2026 Boyle Lecture on Science and Religion — Dr Iain McGilchrist
+  Problem: Hemispheric theory has been received primarily as cultural diagnosis (The Matter With Things, Master and Emissary) rather than as a contribution to the technical science-and-religion conversation; its epistemic status within that discipline has been ambiguous
+  Resource: Delivery of the 2026 ISSR Boyle Lecture with formal respondents drawn from theology (Gregersen, Oldfield), philosophy of biology (Reiss), religious experience studies (van Emmerik), and AI/theology (Dorobantu) — locating hemispheric theory inside the peer-reviewed science-and-religion field
+  Solution: Institutional upgrade of hemispheric theory from cultural polemic to research program in science-and-religion — establishing the divided brain as a tractable variable in theological-scientific inquiry and opening a channel for McGilchrist's claims to be tested and critiqued by working practitioners in the field
+  Date Added: 2026-04-28
+  Source: ISSR 2026 Boyle Lecture on Science and Religion — Dr Iain McGilchrist (2026-04-16) — https://www.youtube.com/watch?v=uEZdpGkolqE
+  Confidence: Medium
+
+PRS-20:
+  Label: P20 (PROP-2026-04-28-002 / src PROP-2026-04-27-012) — Spaciousness as right-hemispheric remediation
+  Problem: Left-hemisphere dominance obscures abstract values (truth, goodness, beauty) — but what intervention actually re-engages right-hemispheric attention at scale, both individually and culturally?
+  Resource: The category of *spaciousness* — a structured practice of slowness, silence, deep listening, and refusal of productivity-pressure — articulated as a corrective targeted specifically at the right-hemisphere attentional mode
+  Solution: A prescriptive bridge from the divided-brain diagnosis to a culturally tractable practice — making the McGilchrist framework actionable as therapeutic counter-discipline rather than only as critique
+  Date Added: 2026-05-08
+  Source: Wisdom in a World in Crisis — TGS 217 with Nate Hagens (2026-03-24) — https://www.thegreatsimplification.com/episode/217-iain-mcgilchrist
+  Confidence: High
+PRS-21:
+  Label: P21 (PROP-2026-04-28-002, 2nd candidate) — Hemispheric attention as polycrisis cause variable
+  Problem: How does the McGilchrist diagnosis engage with the polycrisis / Great Simplification framing of contemporary breakdown (climate, polarization, meaning-loss)?
+  Resource: Long-form dialogue with Nate Hagens situating left-hemisphere dominance as a *cause variable* in polycrisis dynamics, not just a co-symptom
+  Solution: A synthesis claim — that civilizational responses to the polycrisis that ignore hemispheric attentional structure will systematically miss the right-hemispheric goods (relationship, embeddedness, meaning) whose loss is itself a driver of the crisis
+  Date Added: 2026-05-08
+  Source: Wisdom in a World in Crisis — TGS 217 with Nate Hagens (2026-03-24) — https://www.thegreatsimplification.com/episode/217-iain-mcgilchrist
+  Confidence: Medium
+
+---
+*Total PRS triplets: 21*

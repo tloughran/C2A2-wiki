@@ -117,4 +117,22 @@ PRS-11:
   Confidence: Speculative
 
 ---
-*Total PRS triplets: 11*
+PRS-12:
+  Label: P12 (PROP-2026-04-22-002) — Bernardo Kastrup on the state of the consciousness debate
+  Problem: Analytic idealism is often received as one metaphysical option among many (physicalism, panpsychism, IIT, dual-aspect monism) without a clear articulation from Kastrup of what specifically distinguishes his position from each rival, and where the live disagreements versus terminological disagreements lie
+  Resource: A "state of the debate" long-form interview (March 2026) in which Kastrup maps the current consciousness conversation explicitly and positions analytic idealism against each major rival, likely including updated commentary post-Koch dialogue
+  Solution: A synthesized articulation of analytic idealism's distinctive claims versus (a) physicalism — the hard problem is insurmountable, (b) panpsychism — combination problem remains unsolved, (c) IIT — Φ is a correlate, not a cause, (d) dual-aspect monism — unnecessary duplication; providing the C2A2 master wiki with a compact reference for how Kastrup locates himself in the consciousness field
+  Date Added: 2026-04-28
+  Source: Bernardo Kastrup on the state of the consciousness debate (2026-03-04) — https://www.youtube.com/watch?v=IJtcx8FaoW4
+  Confidence: Medium
+PRS-13:
+  Label: P13 (PROP-2026-04-27-013) — Explanation vs Computation — Q&A with Bernardo Kastrup
+  Problem: Computational and predictive models of reality (including ruliological / physicalist programs) routinely substitute simulation for explanation — leaving the question of whether they track reality unanswered.
+  Resource: An explicit demarcation criterion — *explanation* (accounting for why the phenomenon must be so) vs. *computation* (predicting that the phenomenon is so) — as the test for whether a metaphysics is realism-eligible.
+  Solution: An epistemological filter that sharpens the analytic-idealism program: idealism is preferred because it minimizes the residual brute-fact / explanatory-gap remainder, not because of greater predictive scope.
+  Date Added: 2026-04-28
+  Source: Explanation vs Computation — Q&A with Bernardo Kastrup (2026-04-21) — https://www.withrealityinmind.com/explanation-computation/
+  Confidence: High
+
+---
+*Total PRS triplets: 13*

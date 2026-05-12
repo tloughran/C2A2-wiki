@@ -14,11 +14,11 @@ language: en
 fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-013 - Predestination - Contemporary]]"
-fidelity_checked: false
-last_qc_at: "2026-05-05T21:32:19"
-last_qc_outcome: "pass"
-render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
-tags: [summa, day/013, pars/I]
+fidelity_checked: true
+last_qc_at: "2026-05-10T20:26:08"
+last_qc_outcome: "rewrote"
+render_pass: structural-pass-2026-05-10  # article-block headers and Notes added; prose preserved verbatim from auto-render
+tags: [summa, day/013, pars/I, q/23, q/24, theme/predestination, theme/election, theme/book-of-life]
 ---
 # Day 13 — Predestination
 
@@ -44,13 +44,23 @@ tags: [summa, day/013, pars/I]
 
 [00:02:47] seeking me I appeared openly to those who did not ask me putting those two statements together the first says that God does not command the impossible so pray and God will list ass IST you the second statement reminds us that even our desire and our Act of prayer is itself a gift of God and must be given from God for us to do so so let's dive
 
+### Q.23 — Predestination
+
+**Article 1 — Whether men are predestined by God**
+
 [00:03:13] in first article are men predestined by God as it says in Romans 8:29 For Those whom he fornew he also predestined to be conformed to the image of his son if men are to achieve an end higher than their nature which is the I ific Vision then they're going to need to be directed to that end they're going to need some help assistance to get there in the same way that if an arrow is going to hit the target it's going to need some help from the Archer because arrows don't naturally speed on their way towards
 
 [00:03:45] Targets this directing like the direction ordering or plan which is in the mind of God like Providence is the providential plan of those who will attain the beatific Vision ACC according to God's design this is our foundation from which we turn to the more intricate
 
-[00:04:06] questions second article does predestination Mark or place something on the predestined predestination is in the mind of God not something residing on the predestin as St Thomas says predestination is a kind of type of The Ordering of some persons toward Eternal salvation existing in the Divine mind and in another statement from the Summa pred destination is the forn knowledge of God's benefits but forn knowledge is not in the things forn but in the person
+[00:04:06] questions
+
+**Article 2 — Whether predestination places anything in the predestined**
+
+second article does predestination Mark or place something on the predestined predestination is in the mind of God not something residing on the predestin as St Thomas says predestination is a kind of type of The Ordering of some persons toward Eternal salvation existing in the Divine mind and in another statement from the Summa pred destination is the forn knowledge of God's benefits but forn knowledge is not in the things forn but in the person
 
 [00:04:37] who for knows them therefore predestination is in the one who predestines and not in the predestined
+
+**Article 3 — Whether God reprobates any man**
 
 [00:04:44] so moving on article 3 whether God rejects anyone as God says through Malachi chapter 1 Jacob I have loved but Esau I hated Aquinas says God does reject some destination is a part of Providence to Providence however it belongs to permit certain defects in those things which are subject to Providence thus as men are ordained to eternal life through the Providence of God it likewise is part of that
 
@@ -60,7 +70,11 @@ tags: [summa, day/013, pars/I]
 
 [00:06:16] article therefore as predestination includes God's will to confer Grace and Glory so also reprobation includes the will to permit a person to fall into sin and to impose the punishment of damnation on account
 
-[00:06:32] of that sin article four or the predestined God's elect the word elect in English we take from the Latin electus which means chosen so the question is are the predestined to Heaven chosen by God Scripture says Ephesians 1:4 he chose us from the foundation of the world that we should be holy and blameless before him here Aquinas reminds us of the conversation about God's love in previous episodes
+[00:06:32] of that sin
+
+**Article 4 — Whether the predestined are chosen (elect) by God**
+
+article four or the predestined God's elect the word elect in English we take from the Latin electus which means chosen so the question is are the predestined to Heaven chosen by God Scripture says Ephesians 1:4 he chose us from the foundation of the world that we should be holy and blameless before him here Aquinas reminds us of the conversation about God's love in previous episodes
 
 [00:07:03] that goodness in things causes us to love those things but it's the opposite with God his love is the cause of a thing's goodness love is willing the good for something or someone and so God's love is the reason for anything having any amount of good that it does and if some things have more good or a particular kind of good it is because God has loved them in some particular or
 
@@ -68,7 +82,11 @@ tags: [summa, day/013, pars/I]
 
 [00:08:07] precedes election in the order of reason and election precedes predestination whence all the predestinate are objects
 
-[00:08:16] of election and love Article 5 is the forn knowledge of merits the cause of our predestination unfortunately this is an easy misunderstanding in the minds of many Christians some will go so far as to agree that based on faith and reason the God chooses some for eternal life permits some to fall short of eternal life but then they will take the Miss step and say the reason why this man is
+[00:08:16] of election and love
+
+**Article 5 — Whether foreknowledge of merits is the cause of predestination**
+
+Article 5 is the forn knowledge of merits the cause of our predestination unfortunately this is an easy misunderstanding in the minds of many Christians some will go so far as to agree that based on faith and reason the God chooses some for eternal life permits some to fall short of eternal life but then they will take the Miss step and say the reason why this man is
 
 [00:08:46] chosen for Heaven is because of the good God knew he would choose or the good God knew he would do as if the cause of the man's predestination is the man and not God against this St Paul says in Titus 3:5 God saved us not because of Deeds Done by us in righteousness but in virtue of his own Mercy Aquinas is so upset by the false notion I just alluded
 
@@ -88,7 +106,13 @@ tags: [summa, day/013, pars/I]
 
 [00:12:57] and to ponder that parable of Matthew 20
 
-[00:13:00] article 6 is predestination certain this is a simple yes based on everything said in this episode and the last episodes episodes before that Aquinas says predestination is the forn knowledge and preparation of the benefits of God by which whosoever are freed will most certainly be freed but how many will be saved Aquinas gives two quotes worth giving and explaining the first quote is concerning the number of all the
+**Article 6 — Whether predestination is certain**
+
+[00:13:00] article 6 is predestination certain this is a simple yes based on everything said in this episode and the last episodes episodes before that Aquinas says predestination is the forn knowledge and preparation of the benefits of God by which whosoever are freed will most certainly be freed
+
+**Article 7 — Whether the number of the predestined is certain**
+
+but how many will be saved Aquinas gives two quotes worth giving and explaining the first quote is concerning the number of all the
 
 [00:13:30] predestined some say that so many men will be saved as Angels fell some so many as Angels were left others as many as the number of angels created by God it is however better to say to God Alone is known the number for whom is reserved Eternal happiness Aquinas is saying we don't know and we shouldn't ask but then almost in the same breath he gives us not a number of the predestined but according to him what looks like his best guess on the percentage of humanity
 
@@ -100,7 +124,11 @@ tags: [summa, day/013, pars/I]
 
 [00:15:35] heaven and end which is way above our natural our nature the biotypic vision to see God as he is if you broke this analogy down in numbers it would be something like 24% or less will enter into heaven if we take the analogy
 
-[00:15:52] literally article 8 can predestination be furthered by holy prayer the wrong answers to this question would be first of all to say that prayer is meaningless or Superfluous when it comes to the Salvation of us or others because the number of predestin is certain this would be contrary to scripture contrary to Jesus Christ contrary to the Catholic faith all of which exhort us to pray for our salvation and others the other error would be at the opposite extreme to say
+[00:15:52] literally
+
+**Article 8 — Whether predestination can be furthered by the prayers of the saints**
+
+article 8 can predestination be furthered by holy prayer the wrong answers to this question would be first of all to say that prayer is meaningless or Superfluous when it comes to the Salvation of us or others because the number of predestin is certain this would be contrary to scripture contrary to Jesus Christ contrary to the Catholic faith all of which exhort us to pray for our salvation and others the other error would be at the opposite extreme to say
 
 [00:16:23] that our prayers change God or they change Providence or they change predestination all of which is impossible based on what has been set up to this point we must then distinguish which is the characteristic Brilliance of Aquinas to separate the truth from the perceived errors it may be shrouded in the truth is when it comes to predestination there is the choice and will of God concerning the predestined which cannot be changed and is based on God's goodness not on us then there is
 
@@ -112,7 +140,11 @@ tags: [summa, day/013, pars/I]
 
 [00:18:29] the Latin here means obtain that which God has disposed to be fulfilled by our prayers and other words that by asking men may deserve to receive what God Almighty from eternity has disposed to give as Gregory the Great says wow that is a wondrous logical mystery
 
+### Q.24 — The Book of Life
+
 [00:18:55] our next question on the Book of Life what is The Book of Life what kind of life does it refer to can a person be blotted out of it these are divisions
+
+**Article 1 — Whether the Book of Life is the same as predestination**
 
 [00:19:03] within the question the first article what is The Book of Life as it is written in the Book of Revelation and I saw the dead Great and Small standing Before the Throne and books were opened also another book was opened which is The Book of Life and if anyone's name was not found written in the Book of Life he was thrown into the Lake of Fire so it is an image or a metaphor for the reality of the elect or predestined whose names exist in the mind of God from all eternity in Aquinas's words
 
@@ -120,9 +152,17 @@ tags: [summa, day/013, pars/I]
 
 [00:20:07] God's Providence and predestination the
 
-[00:20:09] next article does The Book of Life regard only the life of Glory of the predestined in a word from Aquinas The Book of Life is the knowledge of predestination but predestination does not regard the life of Grace except so far as it is directed to glory for those who are not predestined who have Grace and yet fail to obtain Glory The Book of Life altogether is only soall in regard
+[00:20:09]
 
-[00:20:38] to the life of Glory article three can anyone be blotted out of The Book of Life this would be another way of saying can the predestined ruin their own predestination by God's grace and assistance Those whom he has infallibly determined to bring to heaven will certainly be brought to heaven without destroying their free will but through their Free Will Remember sin is a missing or a lack which can be granted by God's permission but men can also be
+**Article 2 — Whether the Book of Life regards only the life of glory of the predestined**
+
+next article does The Book of Life regard only the life of Glory of the predestined in a word from Aquinas The Book of Life is the knowledge of predestination but predestination does not regard the life of Grace except so far as it is directed to glory for those who are not predestined who have Grace and yet fail to obtain Glory The Book of Life altogether is only soall in regard
+
+[00:20:38] to the life of Glory
+
+**Article 3 — Whether anyone can be blotted out of the Book of Life**
+
+article three can anyone be blotted out of The Book of Life this would be another way of saying can the predestined ruin their own predestination by God's grace and assistance Those whom he has infallibly determined to bring to heaven will certainly be brought to heaven without destroying their free will but through their Free Will Remember sin is a missing or a lack which can be granted by God's permission but men can also be
 
 [00:21:10] certainly protected from it by God's grace and Providence therefore in the truest sense no one can be blotted out of the book of life but the expression is used in scripture someone being blotted out of the book of life for those who were destined to Heaven not absolutely but in a qualified sense yet failed to attain Heaven that would be for example someone who was baptized who via their baptism are destined to heaven but then through mortal sin fail to
 
@@ -134,4 +174,9 @@ tags: [summa, day/013, pars/I]
 
 ## Notes
 
-<!-- TODO: editor's marginalia — questions, surprising moves, terms to look up, candidate bridges to C2A2 thinkers. Two to seven bullets. -->
+- Habash front-loads the **Trent + Orange boundary pair** ("for God commands not impossibilities... God's grace itself brings to pass that grace be invoked by us") as the infallible boundaries to think within, then returns to them at the close. The structural move — name the orthodox boundary, then probe the mystery within — is itself the directional-asymmetry of substrate-stance shown in pedagogical form. Bridge to Stump (faith-as-knowledge-of-persons within tradition-bounded inquiry) and to Wright (covenant-frame as the boundary within which Pauline election is read).
+- The **insania mentis** line — Aquinas calling it "of insane mind" to think foreknown-merits cause predestination — is the strongest medieval expression of directional-asymmetry: the gift is causally upstream of the perfection. Bridge to Friston (priors over preferred states are causally upstream of policy selection) and to Levin (cognitive light cones — the goal-state pattern is upstream of the trajectory).
+- The **rabbit-analogy / "minority of minority" / 24%-figure** at a.7 is a candidate ESCALATION-to-Tom locus: Aquinas's quasi-statistical estimate is read by Habash literally. Wright's reading of Romans 9–11 (universal eventual mercy through Israel) and Rohr's apokatastatic horizon are candidate counterweights without contradicting the directional-asymmetry. The mind-monist frame can hold both: the gift is universal in horizon, asymmetric in the alter's working-out.
+- Habash's reading of **Q.24 a.3** — names "blotted out" in scripture refers to those baptized-and-fallen who are directed-but-not-predestined — is a careful preservation of the difference between the Book of Life as predestination (infallible) and as grace-direction (defeasible). This double sense of the "Book" is a candidate bridge to Hoffman (icon-substrate distinction: the Book at the icon-scale registers names that the substrate-scale ordering may not include) and to Wright on the covenant community as the people-in-via.
+- The **closing typo: "we have just covered questions 22 and 23"** — Habash misstates the day's coverage (Q.23 + Q.24, per frontmatter and opening). Not a typo-cleanup item because it preserves what Habash actually said; future structural pass might add a `[sic]` annotation if desired.
+- The **Matthew 20 vineyard parable** at the close of Q.23 is Habash's primary devotional anchor for the asymmetry; worth keeping for Day-N theology-of-just-work pairs (II-II Q.61 commutative justice and II-II Q.122 the precepts of justice) where the "I will give to this last as much as to thee" line returns.

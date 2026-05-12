@@ -14,11 +14,11 @@ language: en
 fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-020 - The Gift of God - Contemporary]]"
-fidelity_checked: false
-last_qc_at: "2026-05-05T21:33:47"
-last_qc_outcome: "pass"
-render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
-tags: [summa, day/020, pars/I]
+fidelity_checked: true
+last_qc_at: "2026-05-11T04:28:09"
+last_qc_outcome: "rewrote"
+render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
+tags: [summa, day/020, pars/I, q/37, q/38, theme/trinity, theme/holy-spirit, theme/love, theme/gift]
 ---
 # Day 20 — The Gift of God
 
@@ -36,7 +36,13 @@ tags: [summa, day/020, pars/I]
 
 [00:00:38] the person of the Holy Spirit as gift the translation that I always use in these podcasts is a second and revised Edition translated by the fathers of the English Dominican Province and so here
 
-[00:00:49] we go article one whether love is the proper name of the holy spirit in these last few episodes we've been very careful to distinguish what we say of God essentially and what we say of God personally why that distinction is important is because everything in God is one where there is no opposition of relation so love as an action willing the good willing the good of the other or of oneself as an action outside of God like creating us willing our good loving us would have to be set of the
+[00:00:49] we go
+
+### Q.37 — The person of the Holy Spirit as Love
+
+**Article 1 — Whether "Love" is the proper name of the Holy Spirit**
+
+article one whether love is the proper name of the holy spirit in these last few episodes we've been very careful to distinguish what we say of God essentially and what we say of God personally why that distinction is important is because everything in God is one where there is no opposition of relation so love as an action willing the good willing the good of the other or of oneself as an action outside of God like creating us willing our good loving us would have to be set of the
 
 [00:01:21] entire Trinity an act of the entire Trinity because everything God does he does as Trinity all the three persons are included there is no distinction between them in that respect but love as an imminent action as an action within the godhead that is not distinct from his essence or nature because he has no parts yet implies a relation between the lover and the object loved a relation which must be subsistent or exist in
 
@@ -48,7 +54,11 @@ tags: [summa, day/020, pars/I]
 
 [00:03:25] Spirit Wind breath is an apt name for this third person of the Trinity as Aquinas will say earlier in the Summa the thing loved is in the lover as that which inclines and to some extent intrinsically impels the lover toward
 
-[00:03:42] the thing loved article two whether the father and the son love each other by the Holy Ghost again we must return to that distinction between what we are saying of God essentially or according to his nature and what we are saying of three persons identical to that nature yet relation Ally distinct if we are talking about God essentially then the persons are identical to the one Divine will which is identical to the one divine nature therefore it would be
+[00:03:42] the thing loved
+
+**Article 2 — Whether the Father and the Son love each other by the Holy Ghost**
+
+article two whether the father and the son love each other by the Holy Ghost again we must return to that distinction between what we are saying of God essentially or according to his nature and what we are saying of three persons identical to that nature yet relation Ally distinct if we are talking about God essentially then the persons are identical to the one Divine will which is identical to the one divine nature therefore it would be
 
 [00:04:13] wrong to say the father and the son love each other by the Holy Ghost the Divine will is one among the three persons but if we are using the word love to say that the holy spirit is the person which proceedes by way of love from the father and the son if we are saying that the love of the father and the son terminates or concludes within the godhead in the person of the Holy Spirit then there is a sense which we can say
 
@@ -56,13 +66,21 @@ tags: [summa, day/020, pars/I]
 
 [00:05:16] help make that any clear lrange adds confirmation is found in a rather remote analogy parents are said to love each other by their son since the son is the Terminus of their love in the sense that we say that a tree flowers with flowers enough about flowers on to question 38 the name of the Holy Spirit as gift
 
+### Q.38 — The person of the Holy Spirit as Gift
+
+**Article 1 — Whether "Gift" is a personal name**
+
 [00:05:39] article one whether gift is a personal name we see the Divine referred to as gift in verses like Romans 5:5 where it says and hope does not put us to shame because God's love has been poured into our hearts through the Holy Spirit who has been given to us Jesus will say in John 4:10 if you knew the gift of God and who it is that is saying to you give me a drink you would have asked him and he would have given you living water in
 
 [00:06:09] this article we are only asking if gift can be used as a name referring to a person or the persons of the Trinity not if it applies to one person more than
 
 [00:06:18] another that'll be the next article to this question L Grange gives us a great summary response the word gift implies the aptitude to be given an aptitude toward the giver and to him to whom the gift is made but any Divine person can be given by another in as much as it proceeds from that person and a Divine person may be possessed by a rational Creature if the creature also is given the ability to enjoy that Divine person therefore the name gift is a personal
 
-[00:06:50] name or belongs to a Divine person to be given and to be a gift which allows us to move on to our final article of this question in this episode article too whether gift is the proper name of the Holy Spirit Aquinas his response as to be begotten is for the son to be from the father so for the Holy Spirit to be the gift of God is to proceed from the father and son but the Holy Spirit receives his proper name from the fact that he proceeds from Father and Son
+[00:06:50] name or belongs to a Divine person to be given and to be a gift which allows us to move on to our final article of this question in this episode
+
+**Article 2 — Whether "Gift" is the proper name of the Holy Spirit**
+
+article too whether gift is the proper name of the Holy Spirit Aquinas his response as to be begotten is for the son to be from the father so for the Holy Spirit to be the gift of God is to proceed from the father and son but the Holy Spirit receives his proper name from the fact that he proceeds from Father and Son
 
 [00:07:22] therefore a gift is the proper name of the Holy Spirit the name gift is proper to the holy spirit because before we give something to someone we will them good in the mind we have this act of the will proceeding a handing over of a gift which is love and because the person of the holy spirit is the person who proceeds by way of love in God and can be said to be the love shared between the Father and Son it is fitting for the
 
@@ -72,4 +90,9 @@ tags: [summa, day/020, pars/I]
 
 ## Notes
 
-<!-- TODO: editor's marginalia — questions, surprising moves, terms to look up, candidate bridges to C2A2 thinkers. Two to seven bullets. -->
+- The opening *essential vs personal* distinction (Q.37 a.1) is doing heavy lifting throughout — when love is taken as a *transient action* (creating, willing the good of creatures), it is essential and ascribed to the whole Trinity; when love is taken as an *immanent action* terminating in a *subsistent relation*, it is personal and names the Holy Spirit.
+- Q.37 a.1's *the thing loved is in the lover as that which inclines and to some extent intrinsically impels the lover toward the thing loved* — note the proto-Friston/affective-inference cousin: love-as-priors-that-pull-the-agent-toward-the-object.
+- Q.37 a.2 — Aquinas's *tree flowers by its flower* analogy: a non-causal terminus-of-action shape. Bridge to Levin's substrate-pattern-as-bioelectric-terminus or to Friston preferred-state-distributions-as-terminus-of-active-inference.
+- Q.38 a.1 — Lagrange's reformulation: *gift implies aptitude to be given* — an interesting structural shape (gift presupposes both giver-relation and recipient-aptitude). Bridge to Fredrickson's positivity-resonance (PRS-02): love-as-dyadic-resonance requires a recipient whose substrate can receive the resonance.
+- Q.38 a.2 — *the Holy Spirit receives his proper name from the fact that he proceeds from Father and Son* — the love-precedes-gift sequence (Q.37 → Q.38) is Aquinas's tight Trinitarian shape. Wright on Romans 5:5 (*love poured into our hearts through the Holy Spirit who has been given to us*) is the load-bearing scriptural anchor.
+- Romans 5:5 + John 4:10 (*the gift of God*) — Habash cites both verbatim. The Wright/Rohr theological-ground-truth pair is well-served by this article: Wright on *poured into our hearts* covenantal-incorporation, Rohr on the Spirit-as-cosmic-gift in *The Universal Christ*.

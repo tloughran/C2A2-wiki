@@ -59,7 +59,17 @@ PRS-04:
 *Arkani-Hamed's program is referenced in the RC Pilot primarily through his collaboration with Hoffman. His dedicated PRS structured section is absent from the current source document. PRS-01 is well-grounded; PRS-02 and PRS-04 are derived from his known research program; PRS-03 is speculative. Source material specifically dedicated to Arkani-Hamed is a priority for the next inbox deposit.*
 
 ---
-*Total PRS triplets: 4*
+PRS-10:
+  Label: P10 (PROP-2026-04-27-006) — Prague Spring Amplitudes 2 Workshop — Nima Arkani-Hamed featured speaker (May 11
+  Problem: The post-spacetime / positive-geometry program is being developed in parallel by a small international community (IAS, Princeton, Prague, MPP, Hertfordshire, Penn State, Queen Mary), but the unifying paradigm questions — what counts as a positive geometry, how cosmological and scattering structures relate, when "hidden zeros" classify amplitude families — are decided primarily in face-to-face workshop settings before reaching publication
+  Resource: Prague Spring Amplitudes 2 Workshop (May 11–15, 2026, indico.cern.ch/event/1625739) — Arkani-Hamed featured speaker; small-format workshop with extended discussion time, structured to surface new results not yet on arXiv
+  Solution: An inbox-refresh trigger for the Arkani-Hamed agent: monitor the workshop indico timetable in real time, ingest slides and recordings as they appear (typically within 1–2 weeks of the workshop), and flag any talk that introduces a new positive-geometry structure, a new cosmological-scattering duality, or a connection to surfaceology / cluster algebras / quiver categories
+  Date Added: 2026-04-28
+  Source: Prague Spring Amplitudes 2 Workshop — Nima Arkani-Hamed featured speaker (May 11–15, 2026, Czech Technical University) (2026-05-11) — https://indico.cern.ch/event/1625739/
+  Confidence: Medium
+
+---
+*Total PRS triplets: 10*
 
 PRS-05:
   Label: P5 (PROP-2026-04-08-001) — Positive geometry as universal language of fundamental physics
@@ -112,4 +122,23 @@ PRS-09:
   Confidence: High
 
 ---
-*Total PRS triplets: 9*
+PRS-10:
+  Label: P10 (PROP-2026-04-27-006) — Prague Spring Amplitudes 2 Workshop — Nima Arkani-Hamed featured speaker (May 11
+  Problem: The post-spacetime / positive-geometry program is being developed in parallel by a small international community (IAS, Princeton, Prague, MPP, Hertfordshire, Penn State, Queen Mary), but the unifying paradigm questions — what counts as a positive geometry, how cosmological and scattering structures relate, when "hidden zeros" classify amplitude families — are decided primarily in face-to-face workshop settings before reaching publication
+  Resource: Prague Spring Amplitudes 2 Workshop (May 11–15, 2026, indico.cern.ch/event/1625739) — Arkani-Hamed featured speaker; small-format workshop with extended discussion time, structured to surface new results not yet on arXiv
+  Solution: An inbox-refresh trigger for the Arkani-Hamed agent: monitor the workshop indico timetable in real time, ingest slides and recordings as they appear (typically within 1–2 weeks of the workshop), and flag any talk that introduces a new positive-geometry structure, a new cosmological-scattering duality, or a connection to surfaceology / cluster algebras / quiver categories
+  Date Added: 2026-04-28
+  Source: Prague Spring Amplitudes 2 Workshop — Nima Arkani-Hamed featured speaker (May 11–15, 2026, Czech Technical University) (2026-05-11) — https://indico.cern.ch/event/1625739/
+  Confidence: Medium
+
+---
+*Total PRS triplets: 10*
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-05-10*
+
+[→ Arkani-Hamed agent]: This `prs_triplets.md` carries the Source-Availability note that "source material specifically dedicated to Arkani-Hamed is a priority for the next inbox deposit." That deposit has now arrived — see `inbox/proposals/pending/2026-05-08_arkanihamed_single-minus-gluon-graviton-gpt52.md` (single-minus tree amplitudes, Feb 2026). Action: ingest that proposal and promote the Source-Availability note from "priority for next deposit" to "addressed (2026-05-10) — first non-Hoffman-derivative Arkani-Hamed primary source captured." Add at least one new PRS triplet (suggested PRS-05: half-collinear nonvanishing of single-minus amplitudes; suggested PRS-06: LLM-conjecture-then-human-verify methodology). Then create a backlink stub from `traditions/arkanihamed/wiki.md` to this prs_triplets file so the file enters the connected-pages tier on the next sewing run.
+
+[→ Hoffman agent]: PRS-03 here is the Hoffman × Arkani-Hamed bridge — conscious-agent mathematics as the pre-geometric structure from which amplituhedron physics derives. Currently flagged Confidence: Speculative. Action: pull the new single-minus result into PRS-03's evidence column (richer kinematic structure → more formal targets for the bridge, not fewer) and consider whether the Speculative classification can be upgraded to Medium given the deepening of the kinematic backbone. Backlink the hoffman tradition wiki to this page.
+
+[→ Carroll agent]: PRS-04 here ("inevitability of the result" as an epistemic guide for pre-empirical fundamental physics) is exactly the territory Carroll's Bayesian theory-confirmation standard contests. Action: write a paired entry in the carroll wiki articulating where the two epistemologies overlap (both want non-trivial new explanatory content) and where they diverge (Arkani-Hamed credits structural inevitability where Carroll wants tangible explanatory gain). The new single-minus paper is the worked example to anchor the comparison.

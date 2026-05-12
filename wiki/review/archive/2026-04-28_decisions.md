@@ -1,0 +1,35 @@
+# Decisions — 2026-04-28
+
+- PROP-2026-04-27-001: APPROVE — 2026-04-16_carroll_oliver-self-knowing.md
+- PROP-2026-04-27-002: APPROVE — 2026-04-16_fredrickson_conducive-conditions-multilevel.md
+- PROP-2026-04-27-003: APPROVE — 2026-04-16_fredrickson_strangers-prosocial-cooperation.md
+- PROP-2026-04-27-004: APPROVE — 2026-04-16_levin_platonic-space-symposium.md
+- PROP-2026-04-27-005: APPROVE — 2026-04-16_stump_biblical-narratives-human-flourishing.md
+- PROP-2026-04-27-006: APPROVE — 2026-04-16_stump_grains-of-wheat.md
+- PROP-2026-04-27-007: APPROVE — 2026-04-16_stump_suffering-flourishing-thomistic-institute.md
+- PROP-2026-04-27-008: APPROVE — 2026-04-17_carroll_ama-wheeler-dewitt-boltzmann.md
+- PROP-2026-04-27-009: APPROVE — 2026-04-18_wolfram_mullenweg-frontier-labs-critique.md
+- PROP-2026-04-27-010: APPROVE — 2026-04-18_wolfram_seiberth-hypergraphing-space-of-reason.md
+- PROP-2026-04-27-011: APPROVE — 2026-04-20_levin_bioelectric-interface-ucsf.md
+- PROP-2026-04-27-012: APPROVE — 2026-04-20_levin_bioelectrical-interfaces-beyond-excitable-cells.md
+- PROP-2026-04-27-013: APPROVE — 2026-04-20_levin_brainca-neural-cellular-automata.md
+- PROP-2026-04-27-014: APPROVE — 2026-04-20_levin_whos-the-data-thoughts-thinkers.md
+- PROP-2026-04-27-015: CHECK — 2026-04-21_carroll_singer-mindscape-351.md
+- PROP-2026-04-27-016: APPROVE — 2026-04-21_hoffman_traces-of-consciousness-mbs.md
+- PROP-2026-04-27-017: APPROVE — 2026-04-22_kastrup_state-of-consciousness-debate.md
+- PROP-2026-04-27-018: APPROVE — 2026-04-22_mcgilchrist_issr-boyle-lecture.md
+- PROP-2026-04-27-019: APPROVE — 2026-04-27_arkanihamed_prague-spring-amplitudes-2.md
+- PROP-2026-04-27-020: APPROVE — 2026-04-27_carroll_heilborn-lecture-series.md
+- PROP-2026-04-27-021: APPROVE — 2026-04-27_fredrickson_micro-intervention-virtual-human.md
+- PROP-2026-04-27-022: APPROVE — 2026-04-27_friston_body-keep-score-metastability.md
+- PROP-2026-04-27-023: APPROVE — 2026-04-27_friston_mindinmind-legacy-interview.md
+- PROP-2026-04-27-024: APPROVE — 2026-04-27_hawkins_life-with-machines-ep14.md
+- PROP-2026-04-27-025: APPROVE — 2026-04-27_hoffman_homehope-symposium-2026.md
+- PROP-2026-04-27-026: APPROVE — 2026-04-27_kastrup_explanation-vs-computation.md
+- PROP-2026-04-27-027: APPROVE — 2026-04-27_levin_manicka-field-mediated-prepatterning.md
+- PROP-2026-04-27-028: PENDING (left in pending/) — 2026-04-27_levin_pai-synthetic-memory-biorxiv.md
+- PROP-2026-04-27-029: PENDING (left in pending/) — 2026-04-27_mcgilchrist_great-simplification-spaciousness.md
+- PROP-2026-04-27-030: PENDING (left in pending/) — 2026-04-27_stump_what-are-we-collective-neuroscience.md
+- PROP-2026-04-27-031: PENDING (left in pending/) — 2026-04-27_wolfram_future-science-tech-qa-april3.md
+- PROP-2026-04-27-032: PENDING (left in pending/) — 2026-04-27_wolfram_last-theory-080-observers-think-differently.md
+- PROP-2026-04-27-033: PENDING (left in pending/) — 2026-04-27_wolfram_last-theory-081-philosophy.md

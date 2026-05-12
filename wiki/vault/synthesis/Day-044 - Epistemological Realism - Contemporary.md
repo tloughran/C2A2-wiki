@@ -71,6 +71,7 @@ length_tier: medium
 length_target_words: 2200
 length_actual_words: 2695
 length_ratio_to_target: 1.225
+length_note: "Twelve articles (Q.85 a.1–a.8 + Q.86 a.1–a.4) with Q.85 a.2 (the that-by-which / that-which distinction) doing keystone epistemological-realism work; substantive convergence of medieval adequatio rei et intellectus, Wright critical realism, Hoffman interface-theory structural-realism, and Friston FEP adequacy-tracking under one architectural roof is doing real bridging work per the 2026-05-05 substantive-integrity clause. Within ±25%."
 karpathy_wiki_sources:
   - "wiki/traditions/hoffman/wiki.md (PRS-01 interface theory; PRS-04 conscious realism — phantasm-as-icon; structural-realism move on Q.85 a.2)"
   - "wiki/traditions/hawkins/wiki.md (PRS-02 — HTM cortical-column prediction; abstraction as compression of invariants; CROSS-011 Hawkins × Friston)"
@@ -83,6 +84,6 @@ karpathy_wiki_sources:
   - "rohr (canonical fallback): *The Universal Christ* — phantasm as icon-of-divine-pattern"
 mind_first_reframe: "Q.85 a.1's abstraction-from-phantasms is the cortical hierarchy's invariant-extraction operation under FEP (HTM-as-cortical-FEP, CROSS-011); the icons are not the underlying reality, but the structural priors the cortex extracts from them track real patterns in what-the-icons-are-icons-of. Q.85 a.2's that-by-which / that-which distinction is the structural-realism move: real reference to the substrate's structure through the alter's interface, adequate-for-action under FEP, neither naive veridicality nor constructivist anti-realism. The medieval adequatio rei et intellectus survives as critical realism (Wright) plus interface-theory structural-realism (Hoffman) plus FEP adequacy-tracking (Friston). Q.86's distinctions (singulars indirectly, universals directly; contingents through sense, necessities through intellect; future through causes) map onto the cortical architecture's bottom-up particularizing and top-down abstracting operations."
 central_theme_thread: "Each alter's knowing is real reference under perspective-limitation: the icons (phantasms) are not the underlying reality, but the structural priors the cortex extracts from them track real patterns in the substrate. Salvation in fear and trembling on the epistemological register is the disciplined cultivation of cognitive practice under awareness that one's icons are perspective-limited but not therefore disconnected from the substrate's pattern; the alter's progressive refinement of its generative model toward better fit is the cognitive form of working-out-salvation."
-last_qc_at: "2026-05-05T21:33:39"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-10T02:28:35"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/044, theme/abstraction, theme/epistemological-realism, theme/critical-realism, theme/interface-theory, theme/cortical-hierarchy, theme/adequacy-tracking]

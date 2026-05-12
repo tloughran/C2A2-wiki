@@ -70,6 +70,7 @@ length_tier: medium
 length_target_words: 2200
 length_actual_words: 2450
 length_ratio_to_target: 1.11
+length_note: "13-article density (Q.93 a.1-9 image-doctrine + Q.94 a.1-4 first-man cognition) at the Prima Pars anthropological climax; the threefold image-mode (nature/grace/glory) carries the central-theme calibration in its keystone anthropological form, and Q.94's transparent-interface analysis sets the prelapsarian initial conditions for the salvation-as-un-opacification arc. Substantive linkage justifies ratio 1.11 within ±25%."
 karpathy_wiki_sources:
   - "wiki/traditions/levin/wiki.md (PRS-04 cognition substrate; diverse-intelligence framework — Q.93's three grades of likeness updated as continuous cognitive-light-cone gradient)"
   - "wiki/traditions/friston/wiki.md (PRS-07 substrate-independence of FEP; PRS-08 morphogenetic active inference — Q.93 a.4 threefold image-mode as progressive generative-model alignment)"
@@ -83,6 +84,6 @@ karpathy_wiki_sources:
   - "Genesis 1:26-27, 2:19, 3:1-7; Ephesians 4:23-24; 1 Timothy 2:14; 1 Corinthians 15:45-49"
 mind_first_reframe: "Q.93's image-doctrine is the medieval anthropological expression of what mind-monism names as alter-as-substrate-likeness. *Image* is *likeness derived directionally* from substrate to alter — Hoffman's conscious-agent network with mind-at-large as the prior the individual nodes derive their type from. The threefold image-mode (nature, grace, glory) maps onto progressive alignment of the alter's generative model with the substrate's structure (Friston framework), with charity-as-precision-weighting orienting the alignment. Q.93 a.7's *threefold cognitive act images Trinity* finds the cognitive-architecture analog in McGilchrist's right-hemispheric whole-grasping, left-hemispheric articulated-knowing, and integrated coordination. Q.94's first-man cognition is structurally a *transparent interface* alter — substrate-aware in a way the species-typical fall has opacified for us. The fall is the dispositional shift (interior pride) that re-weighted the alter's precision toward self-maintenance and away from substrate-alignment, opacifying the interface."
 central_theme_thread: "Day 48 is the Prima Pars's anthropological climax. Every alter is in the image of the substrate by *natural aptitude* (substrate-likeness given with individuation); some alters move into the image *by conformity of grace* (substrate-alignment via charity-as-precision-weighting); the blessed alters reach the image *by likeness of glory* (substrate-direct cognition at limit case). *Salvation in fear and trembling* is the progressive movement through these three grades, and Aquinas's calibration here is the central-theme operationalization in anthropological form. The first-man cognition Q.94 describes is the *initial conditions*: a transparent-interface alter, free of the species-typical opacities the fall introduced. Salvation is the progressive un-opacification, the charity-driven re-orientation of precision-weighting toward substrate-alignment, with glorified vision at the limit case where the interface is lifted entirely."
-last_qc_at: "2026-05-05T21:32:39"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-10T14:31:12"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/048, theme/image-of-god, theme/three-grades, theme/imago-dei, theme/first-man-cognition, theme/fall]

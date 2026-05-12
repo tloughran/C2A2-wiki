@@ -36,3 +36,37 @@ SEARCH-AGAINST-ASSUMPTION-022:
     Strongest counterargument: The FEP's generality is its weakness, not its strength. Raja et al. (2021) show that the Markov blanket formalism involves multiple non-equivalent definitions and compromised lemmas. If FEP can be applied to any system with boundaries, then finding boundaries across C2A2's 11 programs is trivially expected, not evidentially significant. The claim "FEP applies literally at every level" fails the falsification criterion — no possible observation could refute it, making it a tautology rather than a scientific claim.
     What would need to be true for C2A2 to be safe: C2A2 would need to specify falsifiable predictions that follow from the boundary hypothesis — conditions under which the hypothesis would be disconfirmed. Without this, FINDING-011a lacks empirical content.
     How to test: Define specific boundary structure predictions for each tradition that could fail; check whether the boundary structures are doing explanatory work beyond what any labeling scheme would produce.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-022 (RE-TRIGGER cycle 1):
+  Date searched: 2026-04-27
+  Original item: ASSUMPTION-022
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b → 15c → 15d → 15b] (cycle 1)
+    Original item: ASSUMPTION-022
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted/inferred
+      15b (cycle 0): Searched for challenging literature → see prior result block above
+      15c (cycle 0): Initial disposition issued
+      15d: Re-triggered on weekly cadence (2026-04-26 trigger; processed 2026-04-27)
+      15b (cycle 1): Re-searched for challenging literature
+    Current status: STRONGLY-CHALLENGED (refreshed; no new challenging literature surfaced this cycle)
+
+  New evidence weighed: No new challenging literature has surfaced in the week since the last cycle. The prior result stands as the operative finding. The system's challenge profile for this item is unchanged.
+
+  Sources (new / refreshed): No new sources this cycle.
+
+  Strength of challenge: Unchanged from prior cycle.
+
+  Summary: Cycle-1 refresh confirms the prior cycle's finding. The challenging literature base has not materially shifted in the past week; no new disconfirmatory sources surfaced during this automated cycle. The recommendation carries forward unchanged.
+
+  Specific risks: Unchanged from prior cycle.
+
+  Mitigations available: Unchanged from prior cycle.
+
+  Recommendation: STRONGLY-CHALLENGED (refreshed; carry forward prior recommendation)

@@ -69,6 +69,7 @@ length_tier: medium
 length_target_words: 2200
 length_actual_words: 2540
 length_ratio_to_target: 1.155
+length_note: "Over medium-tier ±10% (2540 vs 2200, ratio 1.155); within ±25%. Q.53 + Q.54 is the highest-density angelology pair on contemporary-physics contact (Zeno-Aristotle motion register on CROSS-002 / CROSS-053; active-passive intellect cognitive register on CROSS-011 / CROSS-009); the over-length tracks the two-side substantive engagement rather than padding. Within the substantive-integrity-trumps-word-count policy clause."
 karpathy_wiki_sources:
   - "wiki/traditions/wolfram/wiki.md (PRS-06 ruliad — Q.53 continuous-and-discrete modes ↔ discrete substrate; what we measure as continuous trajectory is emergent)"
   - "wiki/traditions/arkanihamed/wiki.md (amplituhedron, post-spacetime physics — Q.53 Zeno-Aristotle resolution structurally cousin)"
@@ -83,6 +84,6 @@ karpathy_wiki_sources:
   - "Matthew 18:10; Matthew 26:53"
 mind_first_reframe: "Q.53's local-movement of angels translates as substrate-level activity not being bound by alter-form's emergent-continuous-spacetime assumptions: the continuous mode couples with alter-events through alter-icon-set spatial structure; the discrete mode transfers Markov-kernel coupling without traversing alter-spatial-intermediates. Wolfram's discrete-step substrate, Arkani-Hamed's post-spacetime amplituhedron, and the time-emergence convergence (CROSS-053, CROSS-002) give the formal home; Aquinas's Zeno-Aristotle resolution finds the contemporary structural cousin. Q.54's active-passive intellect distinction translates as the alter-form abstractive-and-inferential cognitive architecture, with Friston's hierarchical generative model and Hawkins's HTM (CROSS-011) giving the contemporary formal-and-cortical implementation. Substrate-level cognition operates without the abstraction-mechanism alter-form requires; the medieval *angels do not need active/passive intellect* lands cleanly."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; alter-form is bound by emergent-continuous-spacetime assumptions and by abstractive-and-inferential cognitive architecture, while substrate-level modes are not. The alter's progressive convergence on substrate-level direct-participation is the cognitive shape of working out salvation in fear and trembling, and the gradient of richer-participation runs through both the spatial-continuity register and the cognitive register. Aquinas's careful claim that even substrate-level modes of activity are not God — they have potential for more-or-less-perfect understanding — preserves the hierarchical structure of perspective-limitation that the central theme keeps marking, with substrate-itself's whole-vision the limit case."
-last_qc_at: "2026-05-05T21:32:38"
+last_qc_at: "2026-05-11T12:30:51"
 last_qc_outcome: "pass"
 tags: [synthesis, day/028, theme/angels, theme/local-motion, theme/quantum, theme/cognition, theme/active-intellect, theme/passive-intellect, theme/free-energy, theme/htm]

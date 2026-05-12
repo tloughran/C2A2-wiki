@@ -14,10 +14,10 @@ language: en
 fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-024 - The Creator and the Creation - Contemporary]]"
-fidelity_checked: false
-last_qc_at: "2026-05-05T21:31:38"
-last_qc_outcome: "pass"
-render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
+fidelity_checked: true
+last_qc_at: "2026-05-11T12:23:01"
+last_qc_outcome: "rewrote"
+render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/024, pars/I]
 ---
 # Day 24 — The Creator and the Creation
@@ -36,11 +36,17 @@ tags: [summa, day/024, pars/I]
 
 [00:00:38] translation that I always use in these podcasts is the second revised Edition translated by the fathers of the English Dominican Province and so here we go
 
+### Q.45 — Creation
+
+**Article 1 — Whether to create is to make something from nothing**
+
 [00:00:47] article one whether to create is to make something from nothing interestingly lrange here comments that the word barah in the Hebrew created is limited to God in the Old Testament so that would seem to denote an exclusivity of the term to the Divine to create Aquinas will say that we use the word create primarily to denote the action of God making anything from what was nothing before now that would make us fashioners or designers or fabricators of what is already existing
 
 [00:01:20] material yet we can also be called creators in that we bring what was not before into being like we bring into being water out of what what was dihydrogen and dioxygen but even here we're working with already existing material and so that's very different than what we mean by the term creation as referred to the Creator as one who brings into being from nothing God as Creator ex nio out of nothing is beautifully Illustrated in regard to our creation and all else in second macbes
 
 [00:01:52] chapter 7 when just before seven brothers are killed for their faith their mother encourages them with these words I do not know how you came into being in my womb it was not I who gave you life and breath nor I who set in order the elements within each of you therefore the creator of the world who shaped the beginning of man and devised the origin of all things will in his Mercy give life and breath back to you again since you now forget yourselves
+
+**Article 2 — Whether God can create anything**
 
 [00:02:23] for the sake of his laws article two whether God can create anything well only God can create anything if creation is as we have defined it to bring into existence from nothing but we're getting
 
@@ -56,6 +62,8 @@ tags: [summa, day/024, pars/I]
 
 [00:05:09] is the universal cause of all being hence it is necessary to say that God brings things into being from nothing if one is looking for more on aqu Quan's reference to it has been shown before I would listen to episode two where we
 
+**Article 3 — Whether creation is anything in the creature**
+
 [00:05:23] find Aquinas is five ways article three whether creation is anything in the creature fair warning this is a remarkably profound article and if this is your first day of the podcast as opposed to your 24th day it may be especially difficult to understand first remember when we were talking about the Trinity I gave the example of pushing a stone when I push a stone it places myself in the stone in a relationship let's say relation to one another a relationship which can be described as
 
 [00:05:56] me the actor pushing the stone and the stone the patient the other side of that action or stone being pushed now I I know that description might sound unnecessarily philosophical but it's really important for this article for the stone there is the one change the stone moving and two relations me as pushing the stone the other as Stone
@@ -66,7 +74,11 @@ tags: [summa, day/024, pars/I]
 
 [00:07:29] to
 
+**Article 4 — Whether to be created belongs to composite and subsisting things**
+
 [00:07:30] relation Article 4 whether to be created belongs to composite and subsisting things you and I are composite we are composed of our nature Essence formed species and our particular material as the church says we are Body Soul composite so the answer to this question is very straightforward anything besides God is some composition of existence limited by its Essence and so yes to be created belongs to the composite and
+
+**Article 5 — Whether to create belongs to God alone**
 
 [00:07:58] subsisting thing Article 5 whether belongs to God Alone to create Augustine says neither good nor bad angels can create anything much less therefore can any other creatures for time sake I will note one piece of this article to sufficiently show that God Alone can create that is the more impoverished the material of which something is made out of the harder or more powerful the Craftsman must be to impart its form to form it think about the difficulty of
 
@@ -74,15 +86,21 @@ tags: [summa, day/024, pars/I]
 
 [00:09:02] all power it's going to take omnipotence to draw something out of nothing to draw something out of nothing is the most powerful thing imaginable to bridge that distance from nothing to anything that's going to take an unlimited amount of power and that is God God Alone is the creator as the letter to the Hebrews States for every house is built by someone but the Builder of all things
 
+**Article 6 — Whether to create is proper to any person**
+
 [00:09:29] things is God article six whether to create is proper to any person because of course we would be remiss without an article or two on the Trinity after all Aquinas doesn't want to make it too easy on us Dionysius says that all things caused are the common work of the whole godhead then Aquinas writes to create belongs to God according to his being that is his Essence which is common to the three persons hence to create is not proper to any one person but is common
 
 [00:10:00] to the whole Trinity yet at the same time Aquinas will say now the Craftsman Works through the word conceived in his mind and through the love of his will regarding some object hence also God the Father made the creature through his word which is his son and through his love which is the Holy Spirit and so the processions of the persons are a kind of image of how creatures produce things in as much as they include the essential attributes knowledge and will
+
+**Article 7 — Whether in creatures is necessarily found a trace of the Trinity**
 
 [00:10:29] article 7 whether in creatures is necessarily found a trace of the Trinity as we know from Genesis chter 1 God says let us make man in our image and likeness here Aquinas distinguishes between non-rational things which bear a trace of the Trinity and rational beings which can be more appropriately called an image of the Trinity everything created here Bears a trace of the Trinity like your footprint in the sand would point to you having walked there it would be trace of you any particular
 
 [00:11:01] being by existing points to being itself uncreated existence which is its maker in this way inanimate things they bear the trace of God their creator but you and I are an image by the faculties of intellect and will which bear in some way a resemblance to those processions of the Trinity as Aquinas writes now the processions of the Divine persons are referred to the acts of intellect and will as was said before for the Sun
 
 [00:11:33] proceedes as the word of the intellect and the Holy Spirit proceeds as love of the will therefore in rational creatures possessing intellect and will there is found the representation of the Trinity by way of image and as much as there is found in them the word conceived and
+
+**Article 8 — Whether creation is mingled with works of nature and art**
 
 [00:11:51] love preceding article 8 whether creation is mingled with works of Nature and art phrased another way when you make a table out of a tree that would be an example of Art in this case non-natural non-substantial form of a thing or when we make H2O in the lab water out of two hydrogen atoms and two oxygen atoms that would be an example of nature an essential substantial formed
 
@@ -96,6 +114,10 @@ tags: [summa, day/024, pars/I]
 
 [00:14:32] of our material cannot be found or drawn out of the matter it does actually have to be created X NE hello or out of nothing by God himself that form then informs the pre-existing material we move on to question 46 the beginning of
 
+### Q.46 — The beginning of the duration of creatures
+
+**Article 1 — Whether the universe of creatures always existed**
+
 [00:14:47] the duration of creatures Article 1 has the universe always existed this question has no less than 10 objections and responses that is abnormal you we're normally looking at some somewhere between three to five objections and responses so this is a complicated question or maybe Aquinas wanted to be very thorough with it and I'm sure some people would be very interested in it I will direct The Listener to the text if they want to go line by line on this question but in brief aquan does not try and prove temporal beginning of the universe by reason alone because in his
 
 [00:15:19] day that simply could not be done there are good reasons today for proving a temporal beginning of the universe but in Aquinas's day that just wasn't the case Aquinas will even admit the possibility based on reason alone that the world could have always existed yet would have to still be caused by God in another one of his Works he will quote Augustine to this effect saying imagine they say a foot that has been in the dust since eternity a footprint has
@@ -104,9 +126,13 @@ tags: [summa, day/024, pars/I]
 
 [00:16:21] says in John 17 Proverbs 8 glorify me oh Father with thyself with the glory which I had before before the world was Proverbs 8 the Lord possessed me in the beginning of his ways before he had made
 
+**Article 2 — Whether it is an article of faith that the world began**
+
 [00:16:37] anything from the beginning article two whether it is an article of faith that the world began which we kind of already covered Aquinas is more explicit here because again in his day one could not prove by reason alone that the world had a beginning yet he was not worried about that or how long the universe had existed when proving the existence of God specifically because each of Aquinas's five ways work whether or not this universe had a temporal beginning or not Aquinas answers this question with the following words the articles of
 
 [00:17:08] faith cannot be proved demonstrably because faith is of things that appear not that's Hebrews 11 but that God is the creator of the world hence that the world began is an Article of Faith Moses prophesied of the past saying in the beginning God created heaven and earth in which words the newness of the world is stated therefore the newness of the world is known only by Revelation and therefore it cannot be proved
+
+**Article 3 — Whether the creation of things was in the beginning of time**
 
 [00:17:37] demonstratively article three whether the creation of things was in the beginning of time the Nuance of this question is presented by Aquinas in the following phrase things are said to be created in the beginning of time not as if the beginning of time were a measure of creation but because together with time Heaven and Earth were created time or a measure of change begins with the
 
@@ -116,4 +142,9 @@ tags: [summa, day/024, pars/I]
 
 ## Notes
 
-<!-- TODO: editor's marginalia — questions, surprising moves, terms to look up, candidate bridges to C2A2 thinkers. Two to seven bullets. -->
+- Habash centers the creation/change distinction: change has a continuous subject; creation does not. Aquinas's Q.45 a.3 hinge — "creation places something in the creature according to relation" — is the metaphysical center of the day. Bridge: Levin (form as causally real, PRS-04 morphogenetic teleology) and Kastrup (creature-as-dissociated-content-of-mind-at-large) both reframe "relation-to-Creator" in a mind-monist register more cleanly than substantialist hylomorphism does.
+- The 2 Maccabees 7:22–23 maternal-encouragement passage is read aloud at length as the canonical Catholic *ex nihilo* proof-text. Worth noting on the Wright bridge: Wright tends to anchor creation-ex-nihilo in John 1 + Romans 4:17 rather than in the deuterocanon, so the canonical anchor here is Catholic-distinctive.
+- Q.45 a.3's stone-and-relation example re-uses Habash's Day-18–22 Trinity machinery (relation = subject + terminus + foundation). The creature-as-pure-relation move is theologically dense: creatures don't add to the *quantity* of being; they exist *toward* their Creator. Hoffman's interface theory (the creature *is* its relational profile from the Creator's perspective) is the closest contemporary echo.
+- The Heisenberg/energy aside at Q.45 a.8 ("forms pre-exist in matter; Heisenberg would call that energy in potentiality") is Habash's third invocation of Heisenberg in five days. Levin (form), Carroll (energy-as-substrate), Arkani-Hamed (post-spacetime fundamentality) are the three-way bridge to anchor the synthesis here.
+- Q.46 a.1 is unusually large (10 objections — Habash flags it as "abnormal"; normal is 3–5). He doesn't walk every objection but engages the core: an eternal universe is *thinkable* by reason; a *temporal* beginning is held by faith. This is a *partial* treatment rather than a *skip* — synthesis can engage the central move without owing every objection.
+- The Augustine footprint argument (foot-in-dust-since-eternity / footprint-coeval-but-caused) is Aquinas's clean separation of *temporal* posteriority from *causal* posteriority. The cosmological argument survives a Big-Bang-skeptical reading because the Creator-cause relation is not a temporal-priority relation. Carroll's wiki node on the arrow of time is the right cross-check.

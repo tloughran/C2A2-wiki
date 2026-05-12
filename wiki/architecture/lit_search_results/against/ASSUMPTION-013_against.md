@@ -99,3 +99,37 @@ Cross-tradition signals are prone to apophenia (seeing meaningful patterns where
 **Risk level:** HIGH
 
 **Recommendation:** Implement multi-step validation for cross-tradition signals: (1) computational signal, (2) domain expert review, (3) negative evidence search. Treat signals as hypotheses, not conclusions. Measure false-positive rates empirically and recalibrate thresholds accordingly.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-013 (RE-TRIGGER cycle 1):
+  Date searched: 2026-04-27
+  Original item: ASSUMPTION-013
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b → 15c → 15d → 15b] (cycle 1)
+    Original item: ASSUMPTION-013
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted/inferred
+      15b (cycle 0): Searched for challenging literature → see prior result block above
+      15c (cycle 0): Initial disposition issued
+      15d: Re-triggered on weekly cadence (2026-04-26 trigger; processed 2026-04-27)
+      15b (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED (refreshed; no new challenging literature surfaced this cycle)
+
+  New evidence weighed: No new challenging literature has surfaced in the week since the last cycle. The prior result stands as the operative finding. The system's challenge profile for this item is unchanged.
+
+  Sources (new / refreshed): No new sources this cycle.
+
+  Strength of challenge: Unchanged from prior cycle.
+
+  Summary: Cycle-1 refresh confirms the prior cycle's finding. The challenging literature base has not materially shifted in the past week; no new disconfirmatory sources surfaced during this automated cycle. The recommendation carries forward unchanged.
+
+  Specific risks: Unchanged from prior cycle.
+
+  Mitigations available: Unchanged from prior cycle.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)

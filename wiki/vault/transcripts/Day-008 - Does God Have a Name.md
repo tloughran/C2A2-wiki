@@ -7,15 +7,16 @@ summa_ref: Prima Pars, Q.13
 duration_seconds: 1533
 word_count: 4095
 raw_asr_word_count: 4095
+length_tier: long
 segment_count: 595
 caption_kind: asr
 language: en
 fetched_at: 2026-05-05
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-008 - Does God Have a Name - Contemporary]]"
-fidelity_checked: false
-last_qc_at: "2026-05-05T21:31:54"
-last_qc_outcome: "pass"
+fidelity_checked: true
+last_qc_at: "2026-05-09T16:22:57"
+last_qc_outcome: "rewrote"
 tags: [summa, day/008, pars/I]
 ---
 

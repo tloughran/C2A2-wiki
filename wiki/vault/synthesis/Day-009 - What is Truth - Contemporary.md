@@ -65,6 +65,7 @@ length_tier: medium
 length_target_words: 2200
 length_actual_words: 2540
 length_ratio_to_target: 1.155
+length_note: "Over ±10% (1.155). Multi-question dense day: covers Q.15 a.1, a.3 (divine ideas, the privation rider) plus Q.16 a.2, a.4, a.5, a.6 (truth, transcendentals chain, two-direction adaequatio). The directional-asymmetry move (substrate-truth ↓, creature-truth ↑) is doing substantive linkage on Friston / Kastrup / Wolfram / Hoffman / McGilchrist / Wright / Rohr; trimming would lose the load-bearing structural-isomorphism bridges."
 karpathy_wiki_sources:
   - "wiki/traditions/wolfram/wiki.md (PRS-06 ruliad as ontological ground — Q.15 many ideas one essence ↔ many threads one totality)"
   - "wiki/traditions/kastrup/wiki.md (PRS-01, PRS-02 — directional-asymmetry of essence-one/ideas-many ↔ mind-at-large-one/alters-many)"
@@ -81,6 +82,6 @@ karpathy_wiki_sources:
   - "John 14:6 — *I am the way, the truth, and the life*; John 18:38 — Pilate's question"
 mind_first_reframe: "Q.15's divine ideas — many in relation to creatables, one in identity with the divine essence — translate as the structural priors of mind-at-large considered under the alter-perspective relation: one substrate, many patterns under the proportional relation of conditioned-thing-to-substrate. Q.16's adaequatio rei et intellectus runs in two directions: creature-mind ← creature-thing ← divine-mind on the alter side, substrate-mind = substrate-thing on the substrate side. Friston's free-energy framework is the contemporary formal home for creature-truth at any scale; the substrate-truth limit is what active inference looks like when the generative model is identical to the substrate's structure (Day 7 limit). The transcendentals — being, oneness, goodness, beauty, truth — are aspects of the single substrate under different relations to creatures."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; salvation in fear and trembling on the cognitive register is the alter's progressive conformity-of-mind-to-thing within its perspective limitation, working out a knowing-of-the-truth that runs upward from creature-thing to divine-mind even as the substrate sees the whole at once. The asymmetry between alter-truth (perspectival, perspectival-but-real, revisable) and substrate-truth (identity of mind and structure, one act) is the structural condition of agency itself; the medieval transcendentals doctrine and the contemporary mind-monist convergence on patterns in the substrate are working the same problem."
-last_qc_at: "2026-05-09T00:20:51"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-10T22:28:19"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/009, theme/divine-ideas, theme/truth, theme/transcendentals, theme/critical-realism, theme/active-inference, theme/hemispheric-modes]

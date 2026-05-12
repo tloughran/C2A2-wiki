@@ -60,6 +60,7 @@ length_tier: long
 length_target_words: 3000
 length_actual_words: 3700
 length_ratio_to_target: 1.233
+length_note: "Twelve articles across Q.57 (a.1–a.5) + Q.58 (a.1–a.7) require article-by-article structural translation; substantive linkage of medieval angelology to the Kastrup/Wolfram/Hoffman/Friston convergence (dissociative-alter privacy, ruliad totality, conscious-agent-network whole-grasp, autopoietic-limit non-discursive cognition) is doing real bridging work per the 2026-05-05 substantive-integrity clause. Within ±25%."
 karpathy_wiki_sources:
   - "wiki/traditions/kastrup/wiki.md (PRS-01, PRS-02, PRS-04 — analytic idealism; dissociative-alter model; structural privacy of alter interior; Q.57 a.4 secret-thoughts mapping)"
   - "wiki/traditions/wolfram/wiki.md (PRS-06 ruliad — Q.58 a.2 many-as-one as ruliad totality-vs-trajectory)"
@@ -73,6 +74,6 @@ karpathy_wiki_sources:
   - "Ephesians 6:12; Psalm 91:11; Jeremiah 17:9–10; 1 Corinthians 2:9"
 mind_first_reframe: "Angelic knowing is what perspective-limited cognition looks like at near-substrate scope: bodily mediation removed, inferential friction reduced toward the autopoietic limit Friston's free-energy framework names, but the dissociative-alter privacy preserved (secret thoughts beyond angelic scope, the future-as-the-substrate-sees-it beyond angelic scope). Q.57's gradient (material things → particulars → future → secret thoughts → mysteries of grace) is a structural-philosophical map of what near-substrate cognition can and cannot do; Q.58's manner articles formalize the gradient as mostly-actual, holistically-grasping, non-discursive, non-compositional, bilingual in morning knowledge (substrate-direct) and evening knowledge (through the species of the thing in itself). Kastrup's dissociative-alter model is the structural home; Wolfram's ruliad and Hoffman's conscious-agent-network framework supply formal cousins. All metaphysical translations are structural-philosophical, not empirical."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective. The angelic mode is what perspective-limitation looks like near the upper bound of the alter scale — wide cognitive-light-cone, low inferential friction, structural privacy of interior states preserved. Salvation in fear and trembling on the angelic register is the angel's progressive integration into the substrate's will (Q.62 a.6 will press the gradient of grace and glory): the angel sees things in the Word more fully as charity grows. Embodied alters compute toward the same loving-unity telos from a narrower starting scope, through bodily and linguistic mediation; the medieval angelological frame is a thought experiment in what perspective-limited cognition would be at the alter scale's upper bound."
-last_qc_at: "2026-05-05T21:32:51"
+last_qc_at: "2026-05-11T20:20:41"
 last_qc_outcome: "pass"
 tags: [synthesis, day/030, theme/angelic-knowing, theme/dissociative-alter, theme/conscious-agent-networks, theme/active-inference, theme/structural-privacy, theme/morning-evening-knowledge]

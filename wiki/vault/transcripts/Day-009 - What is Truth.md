@@ -7,15 +7,16 @@ summa_ref: Prima Pars, Q.16-17
 duration_seconds: 1292
 word_count: 3216
 raw_asr_word_count: 3216
+length_tier: medium
 segment_count: 460
 caption_kind: asr
 language: en
 fetched_at: 2026-05-05
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-009 - What is Truth - Contemporary]]"
-fidelity_checked: false
-last_qc_at: null
-last_qc_outcome: null
+fidelity_checked: true
+last_qc_at: "2026-05-09T16:23:11"
+last_qc_outcome: "rewrote"
 tags: [summa, day/009, pars/I]
 ---
 

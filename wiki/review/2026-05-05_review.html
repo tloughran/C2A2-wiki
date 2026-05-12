@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C2A2 Wiki Review — 2026-05-05</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f2ed;color:#222;height:100vh;display:flex;flex-direction:column}
+  #topbar{background:#1a1a2e;color:#fff;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+  #topbar h1{font-size:15px;font-weight:700;letter-spacing:.03em}
+  #topbar .meta{font-size:12px;opacity:.7}
+  #main{display:flex;flex:1;overflow:hidden}
+  #sidebar{width:300px;flex-shrink:0;overflow-y:auto;background:#f9f7f2;border-right:1px solid #ddd}
+  #sidebar-header{padding:10px 14px;background:#f0ede5;border-bottom:1px solid #ddd;font-size:11px;font-weight:700;color:#888;letter-spacing:.06em}
+  #content{flex:1;overflow-y:auto;padding:20px}
+  .prop-card{background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.08);margin-bottom:20px;overflow:hidden}
+  .sidebar-item:hover{background:#f0ede5!important}
+  .sidebar-item.active{background:#e8e4d8!important}
+  #bottombar{background:#fff;border-top:1px solid #ddd;padding:12px 20px;display:flex;align-items:center;gap:14px;flex-shrink:0}
+  #progress{font-size:13px;color:#666}
+  #submit-btn{background:#1a1a2e;color:#fff;border:none;padding:10px 24px;border-radius:6px;cursor:pointer;font-weight:700;font-size:14px;margin-left:auto}
+  #submit-btn:hover{background:#2a2a4e}
+  #all-done{color:#1a6b3c;font-weight:700;display:none}
+</style>
+</head>
+<body>
+<div id="topbar">
+  <h1>C2A2 Wiki — Daily Proposal Review</h1>
+  <div class="meta">2026-05-05 &nbsp;·&nbsp; 10 proposals pending</div>
+</div>
+<div id="main">
+  <div id="sidebar">
+    <div id="sidebar-header">PROPOSALS — 2026-05-05</div>
+    
+    <div class="sidebar-item" id="item-PROP-2026-05-05-001" onclick="showCard('PROP-2026-05-05-001')"
+      style="padding:10px 14px;border-left:3px solid #1a6b3c;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#1a6b3c;letter-spacing:.04em">MICHAEL LEVIN</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Behavioral, Physiological, and Transcriptional Mechanisms of…</div>
+      <div style="font-size:10px;color:#999">PAPER · 2026-03-17</div>
+      <div id="badge-PROP-2026-05-05-001" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-05-05-002" onclick="showCard('PROP-2026-05-05-002')"
+      style="padding:10px 14px;border-left:3px solid #3a3a6a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#3a3a6a;letter-spacing:.04em">IAIN MCGILCHRIST</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Wisdom in a World in Crisis: The Counterintuitive Need to Sl…</div>
+      <div style="font-size:10px;color:#999">PODCAST · 2026-03-24</div>
+      <div id="badge-PROP-2026-05-05-002" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-05-05-003" onclick="showCard('PROP-2026-05-05-003')"
+      style="padding:10px 14px;border-left:3px solid #6a2a0a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#6a2a0a;letter-spacing:.04em">ELEONORE STUMP</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">What are we? Collective neuroscience, metaphysics, and theol…</div>
+      <div style="font-size:10px;color:#999">PAPER · 2025</div>
+      <div id="badge-PROP-2026-05-05-003" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-05-05-004" onclick="showCard('PROP-2026-05-05-004')"
+      style="padding:10px 14px;border-left:3px solid #4a006a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#4a006a;letter-spacing:.04em">STEPHEN WOLFRAM</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Future of Science and Technology Q&A (April 3, 2026)</div>
+      <div style="font-size:10px;color:#999">TALK · 2026-04-03</div>
+      <div id="badge-PROP-2026-05-05-004" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-05-05-005" onclick="showCard('PROP-2026-05-05-005')"
+      style="padding:10px 14px;border-left:3px solid #4a006a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#4a006a;letter-spacing:.04em">STEPHEN WOLFRAM</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">The Last Theory Podcast #080 — How different observers think…</div>
+      <div style="font-size:10px;color:#999">PODCAST · 2026-03-05</div>
+      <div id="badge-PROP-2026-05-05-005" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-05-05-006" onclick="showCard('PROP-2026-05-05-006')"
+      style="padding:10px 14px;border-left:3px solid #4a006a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#4a006a;letter-spacing:.04em">STEPHEN WOLFRAM</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">The Last Theory Podcast #081 — Wolfram on philosophy</div>
+      <div style="font-size:10px;color:#999">PODCAST · 2026-03-22</div>
+      <div id="badge-PROP-2026-05-05-006" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-05-05-007" onclick="showCard('PROP-2026-05-05-007')"
+      style="padding:10px 14px;border-left:3px solid #7a1a1a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#7a1a1a;letter-spacing:.04em">SEAN CARROLL</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Mindscape 347 — Andrew Guthrie Ferguson on How Your Data Wil…</div>
+      <div style="font-size:10px;color:#999">PODCAST · 2026-03-16</div>
+      <div id="badge-PROP-2026-05-05-007" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-05-05-008" onclick="showCard('PROP-2026-05-05-008')"
+      style="padding:10px 14px;border-left:3px solid #8a4a00;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#8a4a00;letter-spacing:.04em">KARL FRISTON</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Active Inference: A method for Phenotyping Agency in AI syst…</div>
+      <div style="font-size:10px;color:#999">PAPER · 2026-04-25</div>
+      <div id="badge-PROP-2026-05-05-008" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-05-05-009" onclick="showCard('PROP-2026-05-05-009')"
+      style="padding:10px 14px;border-left:3px solid #4a006a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#4a006a;letter-spacing:.04em">STEPHEN WOLFRAM</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Future of Science and Technology Q&A (April 24, 2026)</div>
+      <div style="font-size:10px;color:#999">TALK · 2026-04-24</div>
+      <div id="badge-PROP-2026-05-05-009" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-05-05-010" onclick="showCard('PROP-2026-05-05-010')"
+      style="padding:10px 14px;border-left:3px solid #4a006a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#4a006a;letter-spacing:.04em">STEPHEN WOLFRAM</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Fireside Chat at South Park Commons (March 19, 2026)</div>
+      <div style="font-size:10px;color:#999">TALK · 2026-03-19</div>
+      <div id="badge-PROP-2026-05-05-010" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+  </div>
+  <div id="content">
+    <div id="welcome" style="color:#888;font-size:14px;padding:40px 20px;text-align:center;line-height:2">
+      <div style="font-size:32px;margin-bottom:12px">📬</div>
+      <strong>10 new proposals</strong> from the C2A2 hunt agents.<br>
+      Click any item on the left to review it.<br>
+      Use the buttons to Approve, Double-check, Change, or Deny each one.<br>
+      When done, hit <strong>Send Decisions</strong> below.
+    </div>
+    
+    <div class="prop-card" id="card-PROP-2026-05-05-001" style="display:none">
+      <div style="background:#1a6b3c18;border-left:4px solid #1a6b3c;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#1a6b3c;letter-spacing:.05em">MICHAEL LEVIN · PAPER · 2026-03-17</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Behavioral, Physiological, and Transcriptional Mechanisms of Memory in a Synthetic Living Construct</div>
+        <a href="https://www.biorxiv.org/content/10.64898/2026.03.17.712168v1" target="_blank" style="font-size:11px;color:#1a6b3c;opacity:.8">https://www.biorxiv.org/content/10.64898/2026.03.17.712168v1</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Pai, Traer, Sperry, Zeng & Levin (bioRxiv, March 2026) demonstrate that basal Xenobots — autonomously motile constructs derived from Xenopus embryonic ectodermal explants — exhibit memory of brief chemical exposures (Xenopus embryonic cell extract and ATP) that manifests as distinct, specific, and persistent changes in behavior, physiology, and gene expression. The paper provides multi-level evidence (behavioral assays + physiological recordings + transcriptional profiling) that synthetic living constructs without evolutionary selection histories nonetheless implement learning-like processes, pushing the empirical envelope on substrate-independent cognition.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is a direct empirical advance on Levin's core program: it shows memory — long thought to require neural circuitry shaped by evolutionary history — emerging in a de novo biological construct that has none. It extends the basal cognition framework from "agency without neurons" to "memory without selection history," tightening the case that information-processing capacities are properties of bioelectric/transcriptional networks per se rather than of evolved biological lineages.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #1a6b3c;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Memory has been theoretically tied to either (a) neural substrates or (b) evolved organisms whose memory mechanisms were shaped by selection — leaving open whether memory is intrinsic to living material or requires that historical scaffolding</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Multi-level assay of basal Xenobots (behavioral + physiological + transcriptional) before and after chemical exposure to embryonic cell extract and ATP</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Empirical demonstration that synthetic living constructs without evolutionary history implement specific, persistent memory traces — generalizing memory as a property of bioelectric/transcriptional networks rather than an exclusive feature of evolved nervous systems</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Distinct behavioral state changes after brief chemical exposure correlated with measurable physiological and transcriptional signatures specific to the stimulus (per bioRxiv abstract)</div>
+        </div>
+        <div style="border-left:3px solid #1a6b3c;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> How do we operationalize and detect memory in non-standard biological systems where conventional behavioral assays may not apply?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Triangulation methodology — behavioral + physiological + transcriptional readouts cross-validating each other as evidence of a memory trace</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A reproducible multi-level protocol for attributing memory to novel biological constructs that meets Levin & Resnik's "diverse intelligence" framework criteria (testable hypotheses about interaction protocols)</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Methodological structure of the Pai et al. study explicitly combines three independent evidence streams</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Friston (strong):** Memory in basal Xenobots without evolutionary scaffolding is a clean test bed for FEP/active inference predictions about memory as predictive model maintenance — flag for Friston Agent. If memory traces in Xenobots can be modeled as Bayesian posteriors over embodied priors, this is a major bridge.
+- **Hawkins (medium):** The transcriptional component of memory in a non-neural substrate creates tension with Hawkins' cortical-column-as-memory-unit framing — does the cortical column theory of memory generalize, or is it one instantiation of a broader principle?
+- **Kastrup (speculative):** If memory does not require evolutionary history, the question of *whose* memory the Xenobot has becomes acute — does the dissociation/idealism framing offer a cleaner ontology than emergentist accounts?
+- **Stump (medium):** Memory of "exposure" in a created construct touches Thomistic questions about formation and the persistence of impressions in created beings — relevant to the substantial-form discussions in Stump's work.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-05-001','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-05-001','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-05-001')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-05-001','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-05-001" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-05-05-002" style="display:none">
+      <div style="background:#3a3a6a18;border-left:4px solid #3a3a6a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#3a3a6a;letter-spacing:.05em">IAIN MCGILCHRIST · PODCAST · 2026-03-24</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Wisdom in a World in Crisis: The Counterintuitive Need to Slow Down and Find Spaciousness with Iain McGilchrist | TGS 217</div>
+        <a href="https://www.thegreatsimplification.com/episode/217-iain-mcgilchrist" target="_blank" style="font-size:11px;color:#3a3a6a;opacity:.8">https://www.thegreatsimplification.com/episode/217-iain-mcgilchrist</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">On *The Great Simplification* (Ep. 217), Nate Hagens hosts McGilchrist for a discussion on how left-hemisphere dominance obscures our perception of value — particularly abstract goods like truth, goodness, and beauty — and how the corrective is to deliberately cultivate "spaciousness": slowness, silence, deep listening, and resistance to the productivity mania of contemporary culture. McGilchrist links this practice directly to right-hemisphere modes of attention and frames it as a civilizational therapeutic, not merely a personal one. The episode also engages crisis dynamics (climate, polarization, meaning-loss) through the lens of *The Matter With Things*.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is McGilchrist applying the divided-brain framework to a *practice* — spaciousness as a remediation for left-hemisphere capture. It's a conversion of his theoretical apparatus into prescriptive form, which is exactly the move that builds research-program track record under MacIntyrean criteria (a tradition advances by showing what *to do* given its diagnosis). It also positions the McGilchrist program in direct conversation with the Great Simplification community (Hagens' polycrisis ecosystem) — broadening the program's interlocutors beyond the usual philosophy / theology axis.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #3a3a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Left-hemisphere dominance obscures abstract values (truth, goodness, beauty) — but what intervention actually re-engages right-hemispheric attention at scale, both individually and culturally?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> The category of *spaciousness* — a structured practice of slowness, silence, deep listening, and refusal of productivity-pressure — articulated as a corrective targeted specifically at the right-hemisphere attentional mode.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A prescriptive bridge from the divided-brain diagnosis to a culturally tractable practice — making the McGilchrist framework actionable as therapeutic counter-discipline rather than only as critique.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: McGilchrist's explicit framing in the episode of spaciousness as the deliberate cultivation of right-hemispheric attention.</div>
+        </div>
+        <div style="border-left:3px solid #3a3a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> How does the McGilchrist diagnosis engage with the polycrisis / Great Simplification framing of contemporary breakdown (climate, polarization, meaning-loss)?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Long-form dialogue with Nate Hagens situating left-hemisphere dominance as a *cause variable* in polycrisis dynamics, not just a co-symptom.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A synthesis claim — that civilizational responses to the polycrisis that ignore hemispheric attentional structure will systematically miss the right-hemispheric goods (relationship, embeddedness, meaning) whose loss is itself a driver of the crisis.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The episode's structural argument linking attention-mode to civilizational trajectory.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Fredrickson (strong):** Spaciousness practice is a candidate mechanism for what enables positivity-resonance in Fredrickson's framework — both require slowing, attending, and being present to the other. Worth flagging for Fredrickson Agent as a possible mechanism-level bridge between hemispheric attention theory and broaden-and-build.
+- **Stump (medium):** McGilchrist's spaciousness has Thomistic resonances with the *vita contemplativa* and the receptive postures Stump treats in *Wandering in Darkness* — formation as a slow re-attunement to reality. Possible McGilchrist × Stump bridge on practices of attention.
+- **Kastrup (speculative):** Right-hemispheric attention as a perceptual mode that *participates* rather than *manipulates* echoes Kastrup's recent McGilchrist conversations on perception-as-participation. Reinforces existing CROSS connections.
+- **Hawkins (speculative):** If reference-frames + sensorimotor loops are constitutive of cortical understanding (Hawkins), what is the architectural correlate of the McGilchrist hemispheric distinction? Open question worth flagging.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-05-002','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-05-002','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-05-002')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-05-002','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-05-002" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-05-05-003" style="display:none">
+      <div style="background:#6a2a0a18;border-left:4px solid #6a2a0a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#6a2a0a;letter-spacing:.05em">ELEONORE STUMP · PAPER · 2025</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">What are we? Collective neuroscience, metaphysics, and theology</div>
+        <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/07A6C257D4989D012727761323C1EC52/S0034412525100814a.pdf/what_are_we_collective_neuroscience_metaphysics_and_theology.pdf" target="_blank" style="font-size:11px;color:#6a2a0a;opacity:.8">https://www.cambridge.org/core/services/aop-cambridge-core/content/view/07A6C257…</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Stump's published version of her 2025 Maritain Lecture (Notre Dame) appears in the Cambridge journal *Religious Studies* (DOI prefix S0034412525). The paper takes recent neuroscience of the mirror-neuron system and other "collective neuroscience" findings as evidence that human persons are constitutively related to one another at the neural level, and argues that explaining what we are requires a metaphysics of *united somethings-or-others* — composite entities that include human persons as constituents without dissolving them. Stump deploys hylomorphism to ground philosophical and theological notions of "a people," communal guilt and shame, the church as the body of Christ, and human perfection as likeness to a triune God.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is Stump's most direct treatment to date of the Thomistic metaphysics of *collective entities* — exactly the conceptual pivot the C2A2 framework needs to ground its claims about traditions, communities, and second-first-language speakers as intelligible *kinds*. It moves Stump's program past individual hylomorphism (soul as form of body) into the metaphysics of supra-individual wholes that are nonetheless real, formed entities. Not yet captured in the wiki and arguably the most important new Stump piece for the C2A2 project.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #6a2a0a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Contemporary metaphysics has no rigorous account of supra-individual wholes (peoples, communities, the church) that can include persons as constituents without either reducing the whole to an aggregate or dissolving the persons into a collective</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Thomistic hylomorphism extended via collective-neuroscience findings (mirror-neuron system, neural coupling, shared affective-cognitive substrate) to model "united somethings-or-others" as genuinely formed composite entities</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A hylomorphic metaphysics of the collective — peoples, communal guilt and shame, the church-as-body-of-Christ — in which the supra-individual whole has a real form that organizes its human constituents without dissolving their personhood</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Stump explicitly argues that mirror-neuron-system findings make possible "a kind of direct and immediate knowledge" between persons that requires metaphysical accommodation in a theory of what we are</div>
+        </div>
+        <div style="border-left:3px solid #6a2a0a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Theological claims about "the body of Christ" and "the people of God" are routinely treated as either metaphors or ecclesiological shorthand because no rigorous metaphysics of corporate persons is available in modern philosophy</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Stump's collective-neuroscience-informed hylomorphism, in which neural-level interpersonal coupling provides the empirical anchor for a metaphysics of corporate substance</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A non-metaphorical reading of "body of Christ" and analogous corporate-person claims — these become claims about real hylomorphic composites, empirically grounded but not reducible to neural mechanism</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The lecture explicitly addresses "the church as the body of Christ" and "the understanding of human perfection as a likeness to a triune God" as test cases for the proposed metaphysics</div>
+        </div>
+        <div style="border-left:3px solid #6a2a0a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 3 — <span style="background:#7a1a1a;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Speculative</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> MacIntyre's tradition-constituted rationality posits the tradition as a real bearer of inquiry, but lacks a metaphysical account of how a tradition is one thing — an entity whose constituents are persons but whose inquiry exceeds any individual's</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Hylomorphic collective-substance framework: the tradition as a united-something-or-other whose form organizes its human constituents' inquiry over time</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A Thomistic-MacIntyrean metaphysics of tradition: traditions are real composite entities, not aggregates of individual minds; their persistence across generations is form-persistence, not just memetic survival — directly serving the C2A2 architecture</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Implicit in the framework — the lecture's apparatus naturally extends from "people," "church," and "communal guilt" to MacIntyrean traditions, though Stump does not explicitly draw this extension here</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Levin Agent**: Collective neuroscience as a neural-level instance of Levin's collective-intelligence framework — mirror-neuron coupling sits structurally where Levin's bioelectric coupling sits between cells. Stump's hylomorphic reading of corporate substance may be exactly the metaphysics Levin's empirical findings need.
+- **Friston Agent**: Neural coupling as a substrate for shared active inference — Stump's metaphysics of corporate substance gives ontological status to what Friston describes as collective free-energy minimization.
+- **Fredrickson Agent**: Direct convergence — positivity resonance is a candidate empirical correlate of the neural coupling Stump invokes; Fredrickson's vagal-tone and oxytocin findings may be the measurable signature of the metaphysical relations Stump describes.
+- **Hoffman Agent**: Stump's hylomorphic corporate substances vs. Hoffman's networks of conscious agents — both posit real higher-order entities composed of conscious constituents; the comparison is now direct rather than oblique.
+- **MacIntyre / C2A2 core**: Strong candidate for the metaphysical spine of the C2A2 architecture — provides the missing account of *what a tradition is* as a unified entity. **Flag this for the master agent** as a paradigm-shift candidate connecting analytic Thomism, neuroscience, and the C2A2 methodology.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-05-003','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-05-003','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-05-003')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-05-003','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-05-003" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-05-05-004" style="display:none">
+      <div style="background:#4a006a18;border-left:4px solid #4a006a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#4a006a;letter-spacing:.05em">STEPHEN WOLFRAM · TALK · 2026-04-03</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Future of Science and Technology Q&A (April 3, 2026)</div>
+        <a href="https://livestreams.stephenwolfram.com/category/future-of-science-technology-qa/" target="_blank" style="font-size:11px;color:#4a006a;opacity:.8">https://livestreams.stephenwolfram.com/category/future-of-science-technology-qa/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">A 1h26m unscripted live Q&A in which Wolfram addressed (per published topic list): "What counts as knowledge with AI?", "Machine curiosity and new ways of thinking", "How will future humans look at our science?", "AI's final form", and "Exploring space and beyond." This sits inside Wolfram's regular livestream cadence and treats AI epistemology, machine cognition, and the historical positioning of present-day science as a single bundle — a recurring Wolfram move that connects the Ruliad / Computational Metaphysics framework to operational claims about AI as a knowledge-production system.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">The April 3 livestream is the freshest Wolfram public engagement on the AI-knowledge axis to be added to the wiki since the Foundation/CAG/LLM material (PRS-11) and the Mullenweg frontier-labs critique (PROP-2026-04-18-001). It is particularly valuable because Wolfram is staking a position on what AI-mediated knowledge actually is — a question the wiki's master agent has been tracking as a Wolfram-distinctive thread. The "machine curiosity and new ways of thinking" segment is the most novel reportable strand: Wolfram is starting to talk about cognition styles that are *not* human-imitative but rulial-space-native, which is a meaningful extension of the rulial-space-of-minds thesis (PRS-03, PRS-05).</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #4a006a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> AI systems produce outputs that pass as "knowledge" yet do not appear to satisfy traditional epistemic standards (justification, source-tracking, reproducibility). Is AI output knowledge, and if so, what kind, and with what warrant?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Wolfram's "What counts as knowledge with AI?" framing — treating AI-mediated outputs as moves through a slice of the Ruliad rather than as testimony from a knowledge-bearing agent, with the warrant question replaced by a question about the structure of the rulial-space path the AI traversed.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A reframing of AI epistemology in which "knowledge with AI" is a status conferred by the *geometry of the rulial-space search* rather than by the AI's own credibility — making AI knowledge a second-order property of the human–AI pipeline, not of the AI alone. Bridges Wolfram framework to standard epistemology in a fresh way.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: April 3 livestream topic listed by Wolfram livestream archive.</div>
+        </div>
+        <div style="border-left:3px solid #4a006a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Most AI cognition is trained to imitate human styles of thought. Does this exhaust the space of cognition, or are there forms of "machine curiosity" and "new ways of thinking" that are native to the rulial space and orthogonal to human cognition?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Wolfram's "machine curiosity and new ways of thinking" segment — argues that present-day AI is mining a small humanlike pocket of the Ruliad and that further progress requires AI systems whose curiosity and search dynamics are not constrained by human-imitation training.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A research-program suggestion that "AI's final form" is not a more-fluent humanlike system but a system exploring genuinely non-humanlike rulial regions — operationalizing the rulial-space-of-minds thesis as a specific research target rather than a metaphor.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: April 3 livestream topic list, "machine curiosity" and "AI's final form" segments.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Hawkins (Thousand Brains / Monty):** Wolfram's "AI's final form is non-humanlike rulial-space exploration" is a direct counter-position to Hawkins' biologically-constrained AI thesis (Hawkins PRS-06 through PRS-17 in the 2026-04-16 batch). A new CROSS candidate: "Two rival foundational research programs for what 'final-form AI' should look like — biologically constrained (Hawkins) vs. rulial-space-native (Wolfram)."
+- **Carroll (emergence and methodology):** Wolfram's framing of AI knowledge as a property of the rulial-space search path — not the AI itself — bears on Carroll's "what emergence can possibly mean" engagement (Carroll PRS-08 through PRS-11). Both are gesturing at a relational/structural account of higher-level properties.
+- **Friston (active inference as reasoning):** Wolfram's "machine curiosity" segment is structurally close to Friston's information-gain-as-curiosity formalism (Friston PRS-09, the "active inference and artificial reasoning" paper). Both define curiosity as a search property of the agent–world system, not a psychological state.
+- **Arkani-Hamed (positive geometry):** Continues the convergence flagged in CROSS-030 / FINDING-010 — Wolfram's framing of the Ruliad as the substrate space inside which AI knowledge moves is structurally cousin to Arkani-Hamed's positive geometry as the substrate inside which physical amplitudes live.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-05-004','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-05-004','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-05-004')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-05-004','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-05-004" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-05-05-005" style="display:none">
+      <div style="background:#4a006a18;border-left:4px solid #4a006a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#4a006a;letter-spacing:.05em">STEPHEN WOLFRAM · PODCAST · 2026-03-05</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">The Last Theory Podcast #080 — How different observers think differently</div>
+        <a href="https://lasttheory.com/podcast/080-how-different-observers-think-differently" target="_blank" style="font-size:11px;color:#4a006a;opacity:.8">https://lasttheory.com/podcast/080-how-different-observers-think-differently</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Mark Jeffery interviews Stephen Wolfram on how observer characteristics (size, time-scale, multiway-mind topology) determine the structure of the physics that observer perceives. Wolfram works through three concrete thought experiments: (1) planet-sized brains for whom the finite speed of light forces a different conception of space and time — the "fiction of an instantaneous state of space" would be untenable; (2) molecule-sized brains for whom thermal motion would no longer look random, and the heat death of the universe would be a richly structured prospect; (3) "multiway minds" able to hold multiple branches of the multiway graph simultaneously, producing multiple parallel threads of experience. The pivotal question raised: does the Principle of Computational Equivalence force all observers to think the same way, or does observer-scale genuinely differentiate the cognitive style of an observer-class? Wolfram tilts toward the latter — observer-scale matters because we think the way we think because we are the way we are.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is the most concrete extension of Wolfram's Observer Theory the wiki has captured since the February 2026 "Metaphysics and the Ruliad" essay (PRS-06, PRS-07). It moves the rulial-space-of-minds thesis (PRS-03, PRS-05) from abstract claim to operationalizable thought experiment: each observer type is a *specific path through rulial space*, and Wolfram shows what physics looks like when that path is varied along one parameter (size, time-scale, multiway-coherence). It also tightens the connection between Wolfram's observer theory and the question of cognitive style — making this episode a direct upstream input to the "machine curiosity / new ways of thinking" thread captured in PROP-2026-04-27-003 (today's earlier Wolfram proposal). Together #080 and the April 3 livestream show Wolfram converging on a single research target: the systematic study of non-human-imitative observer-classes inside the Ruliad.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #4a006a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The rulial-space-of-minds thesis (PRS-03, PRS-05) is conceptually compelling but has lacked concrete worked examples. Without specific observer-classes to point at, "different observers sample the Ruliad differently" remains a slogan rather than a research agenda.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Wolfram's three-parameter observer-class taxonomy (Last Theory #080): scale (molecule → planet), temporal coherence (instantaneous-state vs. light-delay-dominated), and multiway-coherence (single thread vs. multi-branch experience). Each parameter generates a specific, describable physics for the observer-class that holds it.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A first-pass operational map of the rulial-space-of-minds: observer types are points in (scale × temporal-coherence × multiway-coherence) space, and each generates a distinct effective physics. This converts PRS-03 / PRS-05 from a programmatic claim into a research agenda — one can now ask "what other parameters foliate observer-space?" and "what physics does each foliation produce?"</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Direct from the episode: planet-brain → finite-c-dominated spacetime; molecule-brain → non-random thermal motion / interesting heat death; multiway-brain → parallel threads of experience.</div>
+        </div>
+        <div style="border-left:3px solid #4a006a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Does the Principle of Computational Equivalence (PCE) imply that all sufficiently complex observers think the same way, making observer-class differentiation a mere surface phenomenon? If yes, the rulial-space-of-minds thesis collapses; if no, the thesis is substantive.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Wolfram's argued resolution in #080: PCE applies to the *computational capability* of observers but not to the *experienced physics* of observers. Two observers can be computationally equivalent in the strong sense and still inhabit incommensurable physics because they sample the underlying computation differently.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A clarified two-level reading of PCE: (i) computational-capability level — all observers above the universality threshold are equivalent in what they can in principle compute; (ii) experiential-physics level — observers above the threshold can still inhabit profoundly different effective worlds depending on their sampling parameters. The rulial-space-of-minds thesis lives at level (ii).</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Episode framing: "if we were much larger-scale, much smaller-scale or if we had multiway minds, then we'd think very differently" — Wolfram explicitly affirming variation despite PCE.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Hoffman (interface theory):** Direct convergence with CROSS-021 / CROSS-026. Hoffman's "fitness-tuned interface" and Wolfram's "observer-class-determined effective physics" are now both operationalizable along observer-parameter axes. Wolfram's three-parameter taxonomy (scale, temporal coherence, multiway coherence) could be a candidate operationalization of Hoffman's interface dimensions. Strong flag for the Hoffman Agent — this episode may give Hoffman empirical content for what otherwise is an evolutionary-functional claim.
+- **Hawkins (Thousand Brains / Monty):** Sharpens the Hawkins ↔ Wolfram tension already noted in PROP-2026-04-27-003. Hawkins constrains AI cognition to a biologically realistic observer-class (mammal-cortex-scale, single-thread, light-delay-irrelevant). Wolfram in #080 is now explicitly outlining the *space outside* that constraint — and arguing that physics looks different from inside other observer-classes. The CROSS candidate from PROP-2026-04-27-003 ("biologically constrained vs. rulial-space-native AI") is reinforced and given more concrete content.
+- **Friston (active inference):** Friston's Markov blanket formalism describes the boundary that constitutes an observer; Wolfram's #080 describes how that boundary's *parameters* (scale, temporal coherence, branch-coherence) determine the observer's effective physics. Possible explanatory bridge: the Markov-blanket parameters and the Wolfram observer parameters may be the same parameters under different names. Worth Pattern-Detector evaluation alongside CROSS-032 (Hoffman trace-blanket ⊇ Markov blanket).
+- **McGilchrist (asymmetry):** CROSS-031 already notes that asymmetry appears as a structural feature in McGilchrist, Friston, and Wolfram. Episode #080 strengthens this: the "multiway mind" thought experiment makes branching/asymmetry the constitutive feature of single-threaded vs. multi-threaded cognition. McGilchrist's hemispheric asymmetry may be the special case of single-thread cognition with internal branch-suppression.
+- **Cross-program index check:** This proposal directly speaks to CROSS-021, CROSS-026, CROSS-031, and CROSS-032 — and provides additional content for the open paradigm-shift candidate FINDING-010 (observer-dependence as a cluster-spanning convergence). Tagging accordingly for Master Agent attention.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-05-005','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-05-005','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-05-005')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-05-005','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-05-005" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-05-05-006" style="display:none">
+      <div style="background:#4a006a18;border-left:4px solid #4a006a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#4a006a;letter-spacing:.05em">STEPHEN WOLFRAM · PODCAST · 2026-03-22</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">The Last Theory Podcast #081 — Wolfram on philosophy</div>
+        <a href="https://lasttheory.com/podcast/081-wolfram-on-philosophy" target="_blank" style="font-size:11px;color:#4a006a;opacity:.8">https://lasttheory.com/podcast/081-wolfram-on-philosophy</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Mark Jeffery interviews Stephen Wolfram on the relationship between physics and philosophy. The episode's headline finding: Wolfram, despite his ongoing Templeton-funded "Computational Metaphysics" project and his new Salonnière series with professional philosophers (Jago, Seiberth), publicly voices a working skepticism about analytic-philosophical method — saying he is "much more at home in the concrete world of computer experiments than in the arguments of philosophers" and that when he looks at standard philosophical arguments he often "can't tell if they make sense or not. There's too much wiggling." The episode positions this not as dismissal but as a methodological tension Wolfram is actively living with as he engages traditional philosophy.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is a meta-level update on Wolfram's program: it tells us how Wolfram himself reads the engagement with professional philosophy that the wiki has been tracking through PROP-2026-04-18-002 (Seiberth dialogue), PRS-10 (Mark Jago dialogue), and PRS-06/PRS-07 (the "Metaphysics and the Ruliad" essay). Wolfram is signaling that he wants the philosophical scrutiny but does not concede the philosophers' methodological framing — he is bringing computational/empirical method *into* philosophy rather than translating his work *into* analytic philosophy's terms. This is a programmatic stance that has not yet been recorded in the wiki and that will shape how the Master Agent reads the entire computational-metaphysics dispatch line.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #4a006a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Wolfram's computational metaphysics has been challenged to engage rigorously with analytic philosophy (PRS-10, the Jago dialogue). But there is an unstated meta-question: must the computational program adopt analytic philosophy's methodology to count as having engaged it, or can it engage from outside that methodology?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Wolfram's stated methodological self-description (Last Theory #081): the philosopher's mode of argument feels under-determined ("too much wiggling") relative to the discipline of running computational experiments and observing what they actually do. His engagement with philosophers is a salonnière-style hosting, not an internal adoption of philosophical method.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A reframing of the computational-metaphysics program as proposing a *new* methodology to philosophy — empirical ruliology applied to ontological questions — rather than as an attempt to satisfy analytic philosophy on its own terms. This is consequential: it converts the Jago/Seiberth dialogues from "compliance with philosophical scrutiny" into "method-export from computation to philosophy."</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Direct quotes from Last Theory #081 host's framing: Wolfram "much more at home in the concrete world of computer experiments than in the arguments of philosophers"; "When I look at the arguments, I can't tell if they make sense or not. There's too much wiggling."</div>
+        </div>
+        <div style="border-left:3px solid #4a006a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#7a1a1a;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Speculative</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> How does the Wolfram program adjudicate between competing philosophical accounts of its own central objects (the Ruliad, observers, emes) when those accounts use the formal vocabulary of analytic philosophy (modal logic, possible worlds, truth-makers)?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Wolfram's implicit criterion in #081 — a philosophical formulation is taken seriously to the extent that it can be cashed out in or constrained by computational experiment. Pure verbal/formal manipulation without computational cash-out is treated as the "wiggling" he distrusts.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A two-tier evaluation: (i) does the philosophical formulation produce a different prediction inside ruliology / observer theory? If yes, treat it as substantive. (ii) If no, treat it as one of many equivalent verbal frames over the same underlying computational structure. This sets an operational test for what counts as a genuine metaphysical disagreement vs. a mere notational dispute.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Inferred from the contrast Wolfram draws between philosophical argument and computational experiment in #081, combined with the structure of his Mark Jago and Seiberth dialogues (he repeatedly returns the conversation to what computations would actually have to do).</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Stump (Thomistic philosophy):** Direct relevance to CROSS-024. If Wolfram's engagement with philosophy is "method-export not method-import," this changes the terms of any Wolfram × Stump bridge — Stump's Thomistic categories cannot be expected to constrain the Ruliad framework directly; the productive direction is the reverse (Stump-style metaphysical claims being re-expressed as candidate ruliological structures). Worth flagging to the Stump Agent.
+- **Carroll (methodology):** Carroll's Bayesian confirmation standard (CROSS-016) was already the Post-Spacetime Cluster's most active methodological challenge to Wolfram. Episode #081 reveals Wolfram's general stance toward external methodological standards — he respectfully resists adopting them. This sharpens CROSS-016: the question is not whether Wolfram Physics can satisfy Bayesian confirmation in Carroll's terms, but whether ruliology constitutes a competing standard of confirmation that Carroll's framework would need to recognize.
+- **Kastrup (idealism):** Kastrup is a philosopher whose work also strains against analytic-philosophy norms. There may be an unexpected methodological alliance here — both Wolfram and Kastrup are accused of insufficient engagement with analytic philosophy and both are pursuing their programs anyway. Flag for Kastrup Agent.
+- **Cross-program index check:** This proposal does not address an existing CROSS open question directly, but it modifies the *terms* of CROSS-016, CROSS-024, and CROSS-026 — all of which assume Wolfram is moving toward philosophical engagement; #081 says he is, but on his terms, not philosophy's.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-05-006','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-05-006','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-05-006')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-05-006','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-05-006" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-05-05-007" style="display:none">
+      <div style="background:#7a1a1a18;border-left:4px solid #7a1a1a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#7a1a1a;letter-spacing:.05em">SEAN CARROLL · PODCAST · 2026-03-16</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Mindscape 347 — Andrew Guthrie Ferguson on How Your Data Will Be Used Against You</div>
+        <a href="https://www.preposterousuniverse.com/podcast/2026/03/16/347-andrew-guthrie-ferguson-on-how-your-data-will-be-used-against-you/" target="_blank" style="font-size:11px;color:#7a1a1a;opacity:.8">https://www.preposterousuniverse.com/podcast/2026/03/16/347-andrew-guthrie-fergu…</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Mindscape episode 347 (March 16, 2026) — Carroll interviews law professor Andrew Guthrie Ferguson (George Washington University Law School) about his book *Your Data Will Be Used Against You: Policing in the Age of Self-Surveillance*. The episode covers the legal-epistemic terrain of how data emitted by smart devices becomes evidence available to authorities, the concept of "self-surveillance," and how this evidence type will reshape courts and police investigations. This is a Carroll-as-host episode rather than a solo, but the framing and emphasis place it inside Carroll's "physics of information / poetic naturalism" continuum applied to social-epistemic structures.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">Carroll's tradition has been heavily weighted toward physics, cosmology, and emergence in the wiki. This episode is an instance of Carroll deploying his methodological commitments — the conviction that the world is intelligible from a structural-informational standpoint and that ethical/legal questions are continuous with empirical structure — to a non-physics domain. It complements the recent Carroll AMA April 2026 (already in wiki) and Heilborn lecture series entries by demonstrating Carroll's interest in how poetic naturalism behaves when applied to socio-legal architectures of accountability. The Ferguson interview is also a useful seed for cross-program signals about agency and surveillance that connect to Friston / Hawkins agency phenotyping.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #7a1a1a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> As consumer devices generate dense streams of behavioral and locational data, the legal and epistemic frameworks that govern evidence have not caught up. When does data emitted by a person constitute testimony, observation, or admission — and against what warrant standards should it be admissible?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Ferguson's "self-surveillance" framing — data is treated not as testimony given but as a continuous low-friction emission, requiring a fresh legal-epistemic category that is neither speech nor mere observation.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A reframing of digital evidence as a hybrid epistemic object whose evidential weight depends on the inferential pipeline (sensor → log → query → retrieval) rather than on a discrete moment of communication. This pulls evidence theory toward a process / pipeline model that is structurally cousin to Carroll's emergence-as-pipeline thinking.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Mindscape 347 episode discussion of self-surveillance, courts, and evidence reform.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Friston (agency phenotyping):** Self-surveillance-derived evidence is essentially behavioral phenotyping at scale. The Wilson et al. agency-phenotyping paper (PROP-2026-05-04-001) uses empowerment to read off agency from action–observation channels — the legal system is doing a coarser version of this on humans. Pipeline / channel framing is shared.
+- **Hawkins (sensorimotor reference frames):** Ferguson's "data emitted by smart devices" is data about a sensorimotor agent's reference-frame trajectories. Hawkins' framework would predict that such data is highly inferential about cognitive state, supporting Ferguson's concerns about evidential power.
+- **Wolfram (rulial-space search):** Self-surveillance evidence retrieval is a query path through a rulial-space of behavioral possibilities. Wolfram's "geometry of search path" framing of AI knowledge (PROP-2026-04-27-003 PRS-CANDIDATE-01) applies directly to evidence retrieval — both are second-order properties of pipelines.
+- **Stump (narrative and accountability):** Self-surveillance evidence is *non-narrative* — it bypasses the agent's own account of their actions. This is a sharp contrast to Stump's narrative-knowledge thesis: a juridical regime built on self-surveillance is built on the structural opposite of Stumpian Franciscan knowledge.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-05-007','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-05-007','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-05-007')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-05-007','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-05-007" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-05-05-008" style="display:none">
+      <div style="background:#8a4a0018;border-left:4px solid #8a4a00;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#8a4a00;letter-spacing:.05em">KARL FRISTON · PAPER · 2026-04-25</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Active Inference: A method for Phenotyping Agency in AI systems?</div>
+        <a href="https://arxiv.org/abs/2604.23278" target="_blank" style="font-size:11px;color:#8a4a00;opacity:.8">https://arxiv.org/abs/2604.23278</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">A new arxiv paper (April 25, 2026) by Wilson, Constant, Albarracin, Hinrichs, Moore, Polani, and Friston proposing active inference as a framework for "phenotyping" agency in AI systems. The paper offers a minimal definition of agency built from three criteria — intentionality (action grounded in beliefs and desires), rationality (normatively coherent action entailed by a world model), and explainability (action causally traceable to internal states) — and instantiates these as a partially observable Markov decision process under variational free-energy minimization. Using a canonical T-maze paradigm, they show how empowerment (channel capacity between actions and anticipated observations) serves as an operational metric distinguishing zero-, intermediate-, and high-agency phenotypes.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is the freshest Friston-co-authored extension of active inference into the AI agency / alignment territory since the "Active Inference and Artificial Reasoning" paper (already in the wiki). It reframes the alignment-relevant question "is this AI system an agent?" as a *measurable phenotypic question* rather than a definitional one. The paper directly bridges Friston's clinical "computational phenotyping" tradition (used in computational psychiatry to characterize humans) with the AI agency debate — making this a methodologically reflexive use of active inference. It strengthens the wiki's account of how Friston's program is migrating from neuroscience into AI characterization without losing its variational core.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #8a4a00;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The proliferation of agentic AI has outpaced the conceptual tools needed to characterize agency in computational systems. Existing definitions (autonomy, goal-directedness) are too coarse to distinguish degrees or kinds of agency, and don't yield operational metrics.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> A three-criterion minimal definition of agency (intentionality, rationality, explainability) instantiated as a POMDP under expected-free-energy minimization, with empowerment (action–observation channel capacity) as the operational metric.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A "computational phenotyping" methodology for AI agency — agency becomes a measurable, graded property along a spectrum (zero, intermediate, high) rather than a binary or discursive label, and the same variational framework that phenotypes humans in computational psychiatry phenotypes AI systems.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: arxiv 2604.23278, T-maze experimental section showing empowerment-graded agency phenotypes.</div>
+        </div>
+        <div style="border-left:3px solid #8a4a00;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#555;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium-High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> AI systems can be trained on objectives that imitate goal-directed behavior without satisfying the structural conditions that would warrant calling them agents (i.e. without intentional-rational-explainable structure). How do we tell apart "behaviorally agent-like" systems from "structurally agent-like" systems?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Empowerment as a structural-rather-than-behavioral metric — it measures the capacity of the agent's action policies to causally constrain anticipated observations, regardless of whether external behavior looks goal-directed.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A way to dissolve the "looks like an agent" / "is an agent" ambiguity in AI systems by grounding the answer in the geometry of the agent's generative model, not in its behavioral output.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: T-maze structural-manipulation experiments distinguishing behaviorally similar systems with different empowerment profiles.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Hawkins (Thousand Brains / sensorimotor agency):** Phenotyping agency by structural conditions of the generative model maps directly onto Hawkins' "intelligence requires sensorimotor reference frames" thesis (FINDING-018a). Both programs converge on a structural rather than behavioral definition of agency. New CROSS candidate.
+- **Levin (multi-scale agency):** Levin's "competent subunits making decisions" framework already invites a Friston-style phenotyping. The Wilson et al. method could be applied to bioelectrically-mediated cellular collectives — a testable bridge.
+- **Wolfram (rulial-space cognition):** Wolfram's "AI's final form" as non-humanlike rulial-space exploration (PROP-2026-04-27-003) and Friston's empowerment metric are complementary — Friston gives the metric, Wolfram gives the substrate. A possible joint operationalization.
+- **Stump / McGilchrist (agency and narrative):** Empowerment-as-channel-capacity is silent on whether the agency phenotype is narratively coherent, which is what Stump (PRS on biblical narratives) and McGilchrist (right-hemisphere participatory engagement) treat as essential. A useful contrast point.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-05-008','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-05-008','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-05-008')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-05-008','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-05-008" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-05-05-009" style="display:none">
+      <div style="background:#4a006a18;border-left:4px solid #4a006a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#4a006a;letter-spacing:.05em">STEPHEN WOLFRAM · TALK · 2026-04-24</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Future of Science and Technology Q&A (April 24, 2026)</div>
+        <a href="https://livestreams.stephenwolfram.com/category/future-of-science-technology-qa/" target="_blank" style="font-size:11px;color:#4a006a;opacity:.8">https://livestreams.stephenwolfram.com/category/future-of-science-technology-qa/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">The April 24, 2026 installment of Wolfram's regular Future of Science and Technology Q&A livestream — three weeks after the April 3 entry already in pending review (PROP-2026-04-27-003). This continues Wolfram's running public-facing exploration of AI epistemology, machine cognition, the rulial-space framing of knowledge, and the philosophical implications of his computational metaphysics. Treating the April 24 livestream as its own datum (rather than a continuation of April 3) is justified because Wolfram uses these livestreams to advance positions iteratively — each session produces a slightly sharper formulation than the last.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is the most recent Wolfram livestream in the wiki's tracking window. Together with the April 3 entry (PROP-2026-04-27-003) and the late-March Mullenweg / Seiberth / South Park Commons engagements (April 18 batch, plus the new South Park Commons proposal below), it forms a four-data-point sequence over six weeks that lets the Wolfram agent track *trajectory* in his AI / Ruliad framing — not just isolated positions. The comparative reading across these sessions is more valuable than any single one.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #4a006a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#555;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium (depends on live content of April 24)</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Wolfram's framing of AI knowledge as a property of rulial-space search paths (April 3 livestream) is a strong claim. Does it survive iterative refinement? What objections has Wolfram fielded between April 3 and April 24, and how has the framing sharpened?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> The April 24 livestream as a follow-on data point in a publicly-recorded longitudinal Q&A, where Wolfram is forced to refine in response to live audience pushback.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Treating the Wolfram public-Q&A series as an evolving research artifact rather than as a set of independent talks — the wiki agent reads them as a single trajectory and can flag when Wolfram's position changes substantively versus rhetorically.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: April 24 livestream listing on stephenwolfram.com livestream archive; pattern from prior Q&A sessions.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **All thinkers:** Treating public Q&A series as longitudinal data is a methodological move that could apply equally to Levin's interview cadence, McGilchrist's Ralston podcast series, Hoffman's Mind-Body Solution appearances, and Friston's lecture circuit. A meta-finding: the wiki should track speaker *trajectories*, not just speaker positions.
+- **Hawkins (sensorimotor cognition vs. rulial-space cognition):** Continuation of the rivalry flagged in PROP-2026-04-27-003 cross-signals.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-05-009','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-05-009','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-05-009')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-05-009','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-05-009" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-05-05-010" style="display:none">
+      <div style="background:#4a006a18;border-left:4px solid #4a006a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#4a006a;letter-spacing:.05em">STEPHEN WOLFRAM · TALK · 2026-03-19</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Fireside Chat at South Park Commons (March 19, 2026)</div>
+        <a href="https://www.stephenwolfram.com/publications/2026/03/19/fireside-chat-at-south-park-commons/" target="_blank" style="font-size:11px;color:#4a006a;opacity:.8">https://www.stephenwolfram.com/publications/2026/03/19/fireside-chat-at-south-pa…</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Wolfram's March 19, 2026 fireside chat at South Park Commons (a tech / startup community space). Long-form conversational format with a Silicon Valley audience focused on practitioners — distinct from the Q&A livestreams (which face general public) and academic talks. The South Park Commons format historically pulls Wolfram toward concrete, near-term claims about AI, computation, and the practical infrastructure for rulial-space exploration. This one likely covers the same ground as the April 3 / April 24 Q&As but pitched at a developer / founder audience.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">The wiki currently has Wolfram material biased toward (a) the philosophical end (Ruliad metaphysics) and (b) the academic end (Hypergraphing the Space of Reason, P vs NP ruliological). The South Park Commons fireside chat is a *practitioner-facing* engagement — the Wolfram agent should track this register because it is where Wolfram's framework becomes a tooling claim rather than a philosophical claim. This complements the Mullenweg / frontier-labs critique (already in inbox) which is a similar register from a different venue.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #4a006a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#555;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium (depends on chat content)</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Wolfram's rulial-space / computational metaphysics is a framework. Translating it into practitioner-relevant claims about how to build AI systems is a separate challenge — the framework is large and abstract; the claims need to be concrete.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> The South Park Commons fireside chat as a venue where Wolfram is forced to compress the framework into actionable founder / engineer language.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A practitioner-facing summary of what the rulial-space view recommends for AI system design — likely overlapping with but distinct from the Mullenweg critique. Useful for the wiki agent to track the gap between Wolfram-the-philosopher and Wolfram-the-tool-builder.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: stephenwolfram.com publications page listing.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Hawkins (Numenta / Thousand Brains Project as practitioner-facing):** Hawkins' Monty implementation (Dec 2025 meetup) is the analogous practitioner-facing artifact for his framework. South Park Commons fireside is the Wolfram counterpart. A new CROSS candidate: comparing the two thinkers' translation strategies from theory to tool.
+- **Friston (Active Inference as practical AI methodology):** The phenotyping paper (PROP-2026-05-04-001) is Friston's framework becoming a measurement tool. Wolfram at South Park Commons is similar register-shift — both are theory-becoming-instrument moves.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-05-010','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-05-010','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-05-010')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-05-010','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-05-010" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="bottombar">
+  <div id="progress">0 / 10 reviewed</div>
+  <div id="all-done">✓ All reviewed!</div>
+  <button id="submit-btn" onclick="submitDecisions()">Send Decisions →</button>
+</div>
+
+<script>
+const TOTAL = 10;
+const decisions = {};
+const notes = {};
+
+function showCard(pid) {
+  document.querySelectorAll('.prop-card').forEach(c => c.style.display='none');
+  document.querySelectorAll('.sidebar-item').forEach(s => s.classList.remove('active'));
+  document.getElementById('card-'+pid).style.display='block';
+  document.getElementById('item-'+pid).classList.add('active');
+  document.getElementById('welcome').style.display='none';
+}
+
+function decide(pid, decision) {
+  decisions[pid] = decision;
+  notes[pid] = notes[pid] || '';
+  updateBadge(pid, decision);
+  updateProgress();
+  // Auto-advance to next pending
+  const items = Array.from(document.querySelectorAll('.sidebar-item'));
+  const cur = items.findIndex(el => el.id === 'item-'+pid);
+  const next = items.slice(cur+1).find(el => !decisions[el.id.replace('item-','')]);
+  if (next) showCard(next.id.replace('item-',''));
+}
+
+function decideChange(pid) {
+  const note = prompt('What should be changed?\n(Your note will be sent with the decision)', '');
+  if (note === null) return;
+  decisions[pid] = 'CHANGE';
+  notes[pid] = note;
+  updateBadge(pid, 'CHANGE', note);
+  updateProgress();
+  const items = Array.from(document.querySelectorAll('.sidebar-item'));
+  const cur = items.findIndex(el => el.id === 'item-'+pid);
+  const next = items.slice(cur+1).find(el => !decisions[el.id.replace('item-','')]);
+  if (next) showCard(next.id.replace('item-',''));
+}
+
+function updateBadge(pid, decision, note='') {
+  const colors = {APPROVE:'#1a6b3c',CHECK:'#8a4a00',CHANGE:'#2a4a8a',DENY:'#7a1a1a'};
+  const labels = {APPROVE:'✓ Approved',CHECK:'⚑ Flagged for check',CHANGE:'✎ Change requested',DENY:'✗ Denied'};
+  const badge = document.getElementById('badge-'+pid);
+  badge.style.color = colors[decision] || '#555';
+  badge.style.fontWeight = '700';
+  badge.textContent = labels[decision] + (note ? ' — '+note.slice(0,30) : '');
+  const status = document.getElementById('status-'+pid);
+  if (status) {
+    status.style.color = colors[decision];
+    status.textContent = labels[decision] + (note ? ': '+note : '');
+  }
+}
+
+function updateProgress() {
+  const done = Object.keys(decisions).length;
+  document.getElementById('progress').textContent = done + ' / ' + TOTAL + ' reviewed';
+  if (done >= TOTAL) {
+    document.getElementById('all-done').style.display='inline';
+    document.getElementById('submit-btn').style.background='#1a6b3c';
+  }
+}
+
+function submitDecisions() {
+  const lines = ['DECISIONS:'];
+  const pids = ['PROP-2026-05-05-001', 'PROP-2026-05-05-002', 'PROP-2026-05-05-003', 'PROP-2026-05-05-004', 'PROP-2026-05-05-005', 'PROP-2026-05-05-006', 'PROP-2026-05-05-007', 'PROP-2026-05-05-008', 'PROP-2026-05-05-009', 'PROP-2026-05-05-010'];
+  pids.forEach(pid => {
+    const d = decisions[pid] || 'PENDING';
+    const n = notes[pid] ? ' | ' + notes[pid] : '';
+    lines.push(pid + ': ' + d + n);
+  });
+  const body = lines.join('\n');
+  const subject = '[C2A2-review-decision] 2026-05-05';
+  // Open Gmail compose directly — avoids Apple Mail / default mail client
+  const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=thomas.loughran@gmail.com&su='
+    + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  window.open(gmailUrl, '_blank');
+}
+
+// Show first card on load
+window.addEventListener('load', () => { showCard('PROP-2026-04-27-007'); });
+</script>
+</body>
+</html>

@@ -135,4 +135,30 @@ PRS-13:
   Confidence: High
 
 ---
-*Total PRS triplets: 13*
+PRS-14:
+  Label: P14 (PROP-2026-04-16-004) — Conducive Conditions for Positivity Resonance at Multiple Levels of Analysis
+  Problem: Positivity resonance research has focused on individual/dyadic interactions — but what structural and collective conditions enable or inhibit these micro-moments of connection at scale?
+  Resource: A multi-level framework identifying conducive conditions at individual, collective, and structural levels of analysis
+  Solution: Positivity resonance is not just a psychological event but a multi-scale phenomenon shaped by civic engagement, economic inequality, relational mobility, and the built environment — enabling intentional design of resonance-conducive communities
+  Date Added: 2026-04-28
+  Source: Conducive Conditions for Positivity Resonance at Multiple Levels of Analysis (2025-03-20) — https://psych.ubc.ca/events/event/colloquium-with-dr-barbara-fredrickson/
+  Confidence: High
+PRS-15:
+  Label: P15 (PROP-2026-04-16-005) — Why Loving Moments With Strangers Carry Lasting Benefits
+  Problem: Does positive connection with out-group members (strangers, people from different traditions) produce lasting prosocial effects, or are the benefits limited to in-group interaction?
+  Resource: West & Fredrickson's finding that positivity resonance with strangers generates prosocial tendencies and contributes to social cohesion
+  Solution: Micro-moments of positivity resonance with strangers carry lasting benefits for cooperation and social cohesion — the mechanism scales beyond in-group interaction to inter-group and inter-tradition contexts
+  Date Added: 2026-04-28
+  Source: Why Loving Moments With Strangers Carry Lasting Benefits (2025-12-10) — https://greatergood.berkeley.edu/article/item/why_loving_moments_with_strangers_carry_lasting_benefits
+  Confidence: High
+PRS-16:
+  Label: P16 (PROP-2026-04-27-002) — Improving social connection with weak ties and strangers: effects of a new micro
+  Problem: Even when the importance of weak-tie connection is empirically established, no controlled, scalable intervention has been demonstrated to *raise the quality* of stranger and acquaintance interactions in real life
+  Resource: A brief two-component micro-intervention combining a psychoeducational video on connection with a planning conversation with a virtual human, in which participants form if-then implementation intentions for stranger interactions
+  Solution: Demonstrated experimental evidence (RCT, N = 335) that a brief, deliverable-at-scale intervention raises subsequent weak-tie interaction quality and reduces loneliness — providing a reproducible recipe for cultivating population-scale positivity resonance
+  Date Added: 2026-04-28
+  Source: Improving social connection with weak ties and strangers: effects of a new micro-intervention on interaction quality and social behavior (2025) — https://www.tandfonline.com/doi/full/10.1080/17439760.2024.2394451
+  Confidence: High
+
+---
+*Total PRS triplets: 16*

@@ -153,4 +153,79 @@ PRS-15:
   Confidence: High
 
 ---
-*Total PRS triplets: 15*
+PRS-16:
+  Label: P16 (PROP-2026-04-16-001) — Symposium on the Platonic Space + A Short Argument on Platonic Space
+  Problem: Neither genetics nor environment fully explains the rich, reliable patterns of form and behavior in biology — the space of possible forms appears structured in ways that current physicalism cannot account for
+  Resource: Platonic Space — a structured, non-physical space of patterns with varying degrees of agency, detected as anatomical, physiological, and behavioral forms in the biosphere; related to but going beyond mathematical Platonism
+  Solution: A research program investigating Platonic Space as a genuine ontological category — providing a framework for why certain forms recur across substrates, why morphogenetic targets exist, and why cognition-like properties appear at scales from cells to organisms
+  Date Added: 2026-04-28
+  Source: Symposium on the Platonic Space + A Short Argument on Platonic Space (2026-01-15) — https://thoughtforms.life/symposium-on-the-platonic-space/
+  Confidence: Medium-High
+PRS-17:
+  Label: P17 (PROP-2026-04-20-001) — The Bioelectric Interface to the Collective Intelligence of Morphogenesis: devel
+  Problem: How do cell collectives coordinate large-scale anatomical outcomes (organ location, size, shape) that no single cell can specify?
+  Resource: Bioelectric pattern memory — spatial distributions of transmembrane voltage that persist across cell divisions and encode target morphology
+  Solution: Treat bioelectricity as *cognitive glue*: a mechanism that constitutes a collective knower above the level of individual cells, analogous to how it constitutes neural computation in the brain
+  Date Added: 2026-04-28
+  Source: The Bioelectric Interface to the Collective Intelligence of Morphogenesis: development, regeneration, cancer, and beyond (2026 (recent)) — https://thoughtforms-life.aipodcast.ing/the-bioelectric-interface-to-the-collective-intelligence-of-morphogenesis-by-michael-levin/
+  Confidence: High
+PRS-18:
+  Label: P18 (PROP-2026-04-20-001, 2nd candidate) — The Bioelectric Interface to the Collective Intelligence of Morphogenesis: devel
+  Problem: Cancer, birth defects, and regenerative failure as disorders of anatomical goal-direction rather than (or in addition to) genetic dysfunction
+  Resource: Bioelectric read/write interface — experimental platforms that measure and rewrite voltage patterns to redirect morphogenesis without editing DNA
+  Solution: Anatomical reprogramming as a therapeutic modality: engineer outcomes by editing the collective's *goal state* rather than its genetic substrate; reframes cancer as a *decision problem* for the cell collective
+  Date Added: 2026-04-28
+  Source: The Bioelectric Interface to the Collective Intelligence of Morphogenesis: development, regeneration, cancer, and beyond (2026 (recent)) — https://thoughtforms-life.aipodcast.ing/the-bioelectric-interface-to-the-collective-intelligence-of-morphogenesis-by-michael-levin/
+  Confidence: High
+PRS-19:
+  Label: P19 (PROP-2026-04-20-004) — Bioelectrical Interfaces Beyond Excitable Cells: Cancer, Aging, and Gene Express
+  Problem: Bioelectric interface technology has been developed almost exclusively for excitable cells (neurons, cardiomyocytes), leaving the vast majority of tissue — including tumor, senescent, and epithelial cells — without a hardware platform for reading and writing bioelectric state, despite theoretical predictions that voltage patterns govern their behavior too
+  Resource: Next-generation solid-state bioelectrical interfaces — microelectrode arrays, organic electrochemical transistors, and conducting polymer scaffolds — adapted for non-excitable cell populations, with demonstrated capabilities for voltage-driven control of gene expression, proliferation, and cell-state transitions
+  Solution: A materials-science research and translation program targeting three domains — cancer (bioelectric phenotype reversion), aging (senescent-cell bioelectric modulation), and gene-expression control — that operationalizes the Levin program's therapeutic paradigm by delivering clinically-relevant hardware for non-excitable tissue
+  Date Added: 2026-04-28
+  Source: Bioelectrical Interfaces Beyond Excitable Cells: Cancer, Aging, and Gene Expression Modulation (2026-04-08) — https://doi.org/10.1002/admi.202500999
+  Confidence: High
+PRS-20:
+  Label: P20 (PROP-2026-04-20-003) — BraiNCA: brain-inspired neural cellular automata and applications to morphogenes
+  Problem: Classical Neural Cellular Automata model morphogenesis with purely local update rules, but cannot account for the goal-directed, coordinated behavior observed in real cell collectives — especially behavior requiring selective information routing across tissue
+  Resource: BraiNCA — Neural Cellular Automata augmented with attention mechanisms, long-range hub connections, and cortical-style modular regions, inspired by brain architecture
+  Solution: A computational substrate demonstrating that biologically realistic collective cognition requires brain-like features (attention, non-locality, modularity); successfully applied to morphogenetic target-pattern problems and motor control, providing a formal model of why the same architectural principles operate at cellular and neural scales
+  Date Added: 2026-04-28
+  Source: BraiNCA: brain-inspired neural cellular automata and applications to morphogenesis and motor control (2026-04) — https://arxiv.org/abs/2604.01932
+  Confidence: Medium-High
+PRS-21:
+  Label: P21 (PROP-2026-04-20-002) — Who's the data? Implications of thoughts-are-thinkers continuum for developmenta
+  Problem: How to reconcile distributed agency (many scales of thinking) with the apparent need for discrete thinkers to host thoughts?
+  Resource: Thoughts-are-thinkers continuum — a graded ontology where cognitive content and cognitive agents are poles of one continuum rather than distinct kinds
+  Solution: Treat developmental bioelectric patterns as minimal thinkers; the question "who is the data for?" becomes misframed — the data IS a (low-grade) data-using agent
+  Date Added: 2026-04-28
+  Source: Who's the data? Implications of thoughts-are-thinkers continuum for developmental bioelectricity (2026 (recent essay)) — https://thoughtforms.life/whos-the-data-implications-of-thoughts-are-thinkers-continuum-for-developmental-bioelectricity/
+  Confidence: Medium-High
+PRS-22:
+  Label: P22 (PROP-2026-04-27-008) — Field-mediated bioelectric basis of morphogenetic prepatterning
+  Problem: Bioelectric *signaling* has been well-characterized at the cell-cell level, but a formal account of the bioelectric *field* — the macroscopic object that organizes morphogenesis — has been missing
+  Resource: Synergetics-based coarse-graining: a mathematical framework that projects fine-grained membrane voltage patterns into a field representation that exhibits emergent prepattern complexity
+  Solution: Formal derivation that the electrostatic field actively contributes to morphogenetic prepatterning — not merely as a passive readout of cell states but as a generative factor enhancing pattern complexity
+  Date Added: 2026-04-28
+  Source: Field-mediated bioelectric basis of morphogenetic prepatterning (2025-10 (final version released; significant work not yet captured in wiki)) — https://www.cell.com/cell-reports-physical-science/fulltext/S2666-3864(25)00464-3
+  Confidence: High
+
+PRS-23:
+  Label: P23 (PROP-2026-04-28-001 / src PROP-2026-04-27-007) — Memory in synthetic Xenobots without evolutionary scaffolding
+  Problem: Memory has been theoretically tied to neural substrates and/or to organisms whose memory mechanisms were shaped by selection — leaving open whether memory is intrinsic to living material or requires that historical scaffolding
+  Resource: Multi-level assay of basal Xenobots (behavioral + physiological + transcriptional) before and after chemical exposure to embryonic cell extract and ATP (Pai, Traer, Sperry, Zeng & Levin, bioRxiv 2026-03-17)
+  Solution: Empirical demonstration that synthetic living constructs without evolutionary history implement specific, persistent memory traces — generalizing memory as a property of bioelectric/transcriptional networks rather than an exclusive feature of evolved nervous systems
+  Date Added: 2026-05-08
+  Source: Behavioral, Physiological, and Transcriptional Mechanisms of Memory in a Synthetic Living Construct (2026-03-17) — https://www.biorxiv.org/content/10.64898/2026.03.17.712168v1
+  Confidence: High
+PRS-24:
+  Label: P24 (PROP-2026-04-28-001, 2nd candidate) — Triangulation methodology for memory in non-standard biological systems
+  Problem: How do we operationalize and detect memory in non-standard biological systems where conventional behavioral assays may not apply?
+  Resource: Triangulation methodology — behavioral + physiological + transcriptional readouts cross-validating each other as evidence of a memory trace
+  Solution: A reproducible multi-level protocol for attributing memory to novel biological constructs that meets Levin & Resnik's "diverse intelligence" framework criteria (testable hypotheses about interaction protocols)
+  Date Added: 2026-05-08
+  Source: Behavioral, Physiological, and Transcriptional Mechanisms of Memory in a Synthetic Living Construct (2026-03-17) — https://www.biorxiv.org/content/10.64898/2026.03.17.712168v1
+  Confidence: High
+
+---
+*Total PRS triplets: 24*

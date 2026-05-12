@@ -2252,3 +2252,472 @@ All queued items now carry SEARCHED-15a/15b/DISPOSITIONED-15c tags.
 **Pipeline status:** items QUEUED awaiting next 15a/15b cycle (Monday 2026-05-11 batch).
 **Run timestamp:** 2026-05-05 (c2a2-periodic-monitor-weekly scheduled task; 15d Run 4)
 
+
+## 2026-05-08 c2a2-self-awareness-daily run — new items queued
+
+[ASSUMPTION] ASSUMPTION-088: Personal-account org-monthly-usage-limit interrupt is treated as work-blocking quota event, not a misclassification
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → MONITOR (MONITOR-088; priority MEDIUM; wire-level inspection on next interrupt)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-088; Item type=ASSUMPTION (stated)
+  Routing: 15a (LLM API quota / throttling literature; account-tier classification policies); 15b (alternative explanations — service-side vs. usage-pattern attribution; misclassification-vs-true-quota literature)
+  Priority: MEDIUM-HIGH (load-bearing for explorer-fix track resumption)
+
+[ASSUMPTION] ASSUMPTION-089: Two-source composite synthesis (internal report + external-LLM review) is the appropriate next step
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → MONITOR (MONITOR-089; priority MEDIUM-HIGH; review-aggregation cluster; weekly cadence)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-089; Item type=ASSUMPTION (stated)
+  Routing: 15a (multi-source review aggregation in software engineering and meta-analysis); 15b (cross-LLM bias-overlap literature; review-composition failure modes)
+  Priority: MEDIUM
+
+[ASSUMPTION] ASSUMPTION-090: Smallest-fix-first prioritization for explorer track — extractOverview() two-line fix is the high-confidence entry point
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → MONITOR (MONITOR-090; priority MEDIUM; entanglement risk with MONITOR-082 RC Explorer)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-090; Item type=ASSUMPTION (stated)
+  Routing: 15a (defect-prioritization heuristics in maintenance literature); 15b (counter-evidence on smallest-fix-first being suboptimal vs. strategic-fix-first)
+  Priority: MEDIUM
+
+[ASSUMPTION] ASSUMPTION-091: Off-cadence specialist proposal filings treated as on-cadence for downstream rendering and approval-rate tracking
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → MONITOR (MONITOR-091; priority MEDIUM; uniform-treatment cluster with ASSUMPTION-079 / PRESUMPTION-113)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-091; Item type=ASSUMPTION (stated)
+  Routing: 15a (work-item cadence-vs-quality literature in agile / Kanban / scrum); 15b (cadence-coupling literature on quality drift under variable scheduling)
+  Priority: MEDIUM
+
+[ASSUMPTION] ASSUMPTION-092: 3-day master-narrative absence attributable to daemon link-count = 1 silent-skip bug regression hypothesis
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → MONITOR (MONITOR-092; priority MEDIUM-HIGH; alternative-cause enumeration required; weekly cadence)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-092; Item type=ASSUMPTION (stated)
+  Routing: 15a (scheduled-task daemon failure modes; cron / launchd / systemd timer regression patterns); 15b (alternative cause enumeration for missing scheduled-task fires)
+  Priority: MEDIUM-HIGH (load-bearing for sandbox-infrastructure escalation)
+
+[ASSUMPTION] ASSUMPTION-093: Saturday-morning rerun is the standard closure path for queued-but-stalled weekday scheduled tasks
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → MONITOR (MONITOR-093; priority LOW-MEDIUM; "the standard" framing softens to "one option among several")]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-093; Item type=ASSUMPTION (stated)
+  Routing: 15a (catch-up-scheduling and weekly-cycle closure patterns); 15b (counter-evidence on weekend-rerun success rates vs. drop)
+  Priority: MEDIUM
+
+[ASSUMPTION] ASSUMPTION-094: Cross-project sandbox-infrastructure constraints accumulate to single-escalation threshold around N≥5
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → MONITOR (MONITOR-094; priority MEDIUM; depends on PRESUMPTION-110 layer-verification REVISE)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-094; Item type=ASSUMPTION (stated)
+  Routing: 15a (incident-aggregation policy in vendor escalation; bug-bundling vs. atomic reporting); 15b (counter-evidence on combined-vs-parallel escalation resolution rates)
+  Priority: HIGH (drives Anthropic-side escalation timing)
+
+[ASSUMPTION] ASSUMPTION-095: YouTube IP-blocking the agent sandbox via youtube-transcript-api is a SYSTEMIC ESCALATION
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → MONITOR (MONITOR-095; priority MEDIUM-HIGH; alternative-path enumeration required before SYSTEMIC commitment; weekly cadence)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-095; Item type=ASSUMPTION (stated)
+  Routing: 15a (cloud-provider IP-block behavior; YouTube API access patterns from CI/sandbox environments); 15b (alternative diagnoses — transient blocks, rate limits, geo-IP filtering)
+  Priority: MEDIUM-HIGH
+
+[PRESUMPTION] PRESUMPTION-104: Org-vs-personal naming presumed misclassification despite same throttling behavior
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → MONITOR (MONITOR-096; priority MEDIUM; heuristic exception — operational equivalence; not REVISE despite PRESUMPTION + moderate challenge)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-104; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (account-tier-vs-message-wording literature in SaaS quota systems); 15b (counter-evidence on naming-as-classification-signal)
+  Priority: MEDIUM
+
+[PRESUMPTION] PRESUMPTION-105: "Queued at end-of-session" presumed to persist across sessions without registry entry
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → REVISE (urgency MEDIUM-HIGH; third recurrence of cross-session-persistence cluster: PRESUMPTION-046 / 043 / 105)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-105; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (work-item handoff protocols; session-boundary persistence in agent systems); 15b (drop-rate evidence for unregistered queued items)
+  Priority: MEDIUM-HIGH (extends PRESUMPTION-046 / PRESUMPTION-043 cluster)
+
+[PRESUMPTION] PRESUMPTION-106: Protocol-routine vs. architectural DECISION-NNN canonization criterion presumed self-evident, never written
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → REVISE (urgency MEDIUM; third recurrence of implicit-decision-drift cluster: PRESUMPTION-098 / 041 / 106)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-106; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (decision-classification frameworks in architecture-decision-records / ADR practice); 15b (inter-rater reliability literature on decision-categorization)
+  Priority: MEDIUM (extends PRESUMPTION-098 / PRESUMPTION-041 implicit-decision-drift cluster)
+
+[PRESUMPTION] PRESUMPTION-107: Two same-session org-limit interrupts presumed Anthropic-side service issue, not usage-pattern issue
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → REVISE (urgency MEDIUM-HIGH; service-side-default attribution at N=2 is documented availability bias; joint with PRESUMPTION-104)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-107; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (LLM API throttling instrumentation; usage-pattern attribution in cloud APIs); 15b (counter-evidence on service-vs-pattern attribution for repeated quota errors)
+  Priority: MEDIUM-HIGH
+
+[PRESUMPTION] PRESUMPTION-108: Three-stall-day human-noticing presumed sufficient closure; no automated stall-pattern alert
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → REVISE (urgency HIGH; SELF-AWARENESS-META cluster recurrence: PRESUMPTION-035 / 052 / 108; predicted by PRESUMPTION-069 anchor)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-108; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (operational-monitoring threshold design; SRE alert-policy literature); 15b (counter-evidence on human-noticing failure rates at high-stall-volume days)
+  Priority: MEDIUM-HIGH (extends PRESUMPTION-035 / PRESUMPTION-052 monitoring-meta cluster)
+
+[PRESUMPTION] PRESUMPTION-109: External-LLM review treated as compositionally equivalent to internal review without epistemic-weight protocol
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → REVISE (urgency MEDIUM-HIGH; review-aggregation cluster: ASSUMPTION-089 / PRESUMPTION-109 / PRESUMPTION-115)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-109; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (multi-LLM review-aggregation literature; cross-model bias-correlation studies); 15b (training-data-overlap / shared-blind-spot literature)
+  Priority: MEDIUM (extends PRESUMPTION-014 / PRESUMPTION-020 cross-tradition signal validity cluster)
+
+[PRESUMPTION] PRESUMPTION-110: Cross-project sandbox constraints presumed same-architectural-layer for combined-escalation purposes
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → REVISE (urgency MEDIUM; load-bearing for ASSUMPTION-094 N≥5 bundling; layer-verification step required)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-110; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (incident-classification framework literature; layered failure-surface taxonomies); 15b (counter-evidence on combined-bug-report dilution)
+  Priority: MEDIUM (load-bearing for ASSUMPTION-094)
+
+[PRESUMPTION] PRESUMPTION-111: Third-consecutive cowork-to-chat sync failure presumed not to warrant fallback channel design
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → REVISE (urgency MEDIUM-HIGH; third recurrence of cowork-to-chat sync cluster: ASSUMPTION-071 / PRESUMPTION-038 / PRESUMPTION-111)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-111; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (channel-resilience / fallback-design literature for browser-auth-required workflows); 15b (counter-evidence on three-strikes thresholds for workaround design)
+  Priority: MEDIUM-HIGH (extends ASSUMPTION-071 / PRESUMPTION-038 cluster)
+
+[PRESUMPTION] PRESUMPTION-112: Deferred items of differing work-character presumed structurally similar for "weekend-or-Monday" disposition
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → MONITOR (MONITOR-097; priority LOW-MEDIUM; heuristic exception — moderate not strong challenge; class-tagging is low-cost remediation)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-112; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (deferred-task taxonomy literature; work-character differentiation in queueing systems); 15b (counter-evidence on undifferentiated-disposition slowing higher-leverage items)
+  Priority: LOW-MEDIUM
+
+[PRESUMPTION] PRESUMPTION-113: Off-cadence specialist proposal filings presumed same baseline expectations as on-cadence filings
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → MONITOR (MONITOR-098; priority LOW-MEDIUM; heuristic exception — moderate not strong challenge; cadence-flag is low-cost remediation)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-113; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (cadence-vs-quality literature in research-output / agile / scrum); 15b (counter-evidence on off-cadence work-product variance)
+  Priority: LOW-MEDIUM (extends ASSUMPTION-091)
+
+[PRESUMPTION] PRESUMPTION-114: Master-narrative-gap cause attribution presumed most-likely the daemon link-count = 1 bug over alternative failure modes
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → REVISE (urgency MEDIUM; recency-priority cause attribution is documented availability bias; joint with ASSUMPTION-092 MONITOR-092)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-114; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (causal-attribution heuristics; recency bias in failure-mode diagnosis); 15b (counter-evidence on alternative-explanations enumeration)
+  Priority: MEDIUM (load-bearing for ASSUMPTION-092)
+
+[PRESUMPTION] PRESUMPTION-115: Codex 5.5 prioritization adopted near-verbatim without project-context adjudication
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-09] [SEARCHED-15b: 2026-05-09] [DISPOSITIONED-15c: 2026-05-09 → REVISE (urgency HIGH; recurrence of 2026-04-27 PRESUMPTION-074 SYSTEMIC-RISK at external-tool-review layer; DECISION-027 candidate scope extension)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-115; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (review-aggregation frameworks weighting reviewers by domain familiarity); 15b (counter-evidence on cross-LLM prioritization-adoption failure modes)
+  Priority: MEDIUM (extends PRESUMPTION-074 SYSTEMIC-RISK at external-tool-review layer)
+
+---
+
+**Total newly queued items this run:** 20 (8 ASSUMPTIONs + 12 PRESUMPTIONs)
+**All at cycle 0 (first 15a/15b dispatch)**
+**Pipeline status:** items QUEUED awaiting next 15a/15b cycle (target Monday 2026-05-11 batch)
+**Run timestamp:** 2026-05-08 EOD (c2a2-self-awareness-daily scheduled task)
+**Run note:** Bottom-of-day catch-up after 2-day 14a/14b silence (2026-05-06, 2026-05-07 not run — likely attributable to ASSUMPTION-092 working hypothesis: daemon link-count = 1 regression). 2-day gap is shorter than the 7-day gap closed by 2026-05-05 run.
+
+
+## 2026-05-09 c2a2-self-awareness-daily run — new items queued
+
+[ASSUMPTION] ASSUMPTION-096: 4 SYSTEMIC-RISK flags in a single 15a/15b/15c cycle constitute the "densest single cycle on record" — pattern-strength signal warranting cluster-level remediation
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → MONITOR (MONITOR-099; priority MEDIUM; density signal valid; superlative requires normalization disclosure per PRESUMPTION-116)]
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-096; Item type=ASSUMPTION (stated)
+  Routing: 15a (alert-fatigue / cluster-alerting frameworks in SRE; metric-density signal-design); 15b (counter-evidence on cluster-density as actionable signal vs. noise)
+  Priority: MEDIUM-HIGH (load-bearing for "Core Operational Discipline" sprint candidate)
+
+[ASSUMPTION] ASSUMPTION-097: Three-recurrence discipline cluster (registration / canonization / fallback) is bundleable as a single "Core Operational Discipline" architectural sprint
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → MONITOR (MONITOR-100; priority MEDIUM-HIGH; meta-level coupling weaker than literature requires; implementation-substrate verification precondition per PRESUMPTION-117)]
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-097; Item type=ASSUMPTION (stated)
+  Routing: 15a (architectural-debt cluster-remediation patterns; sprint-bundle vs. atomic-track outcomes); 15b (counter-evidence on bundling distinct remediation surfaces)
+  Priority: MEDIUM-HIGH (Tom's morning-discussion question about sprint greenlight)
+
+[ASSUMPTION] ASSUMPTION-098: Third-consecutive REVISE-flag (≤25h stall watchdog: 04-21 / 04-26 / 05-09) is sufficient evidence to canonize a candidate-decision as DECISION-NNN this week
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → MONITOR (MONITOR-101; priority MEDIUM-HIGH; recurrence threshold satisfied; PRESUMPTION-106 unresolved + calendar-pressure framing concern; canonization-circularity SYSTEMIC-RISK)]
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-098; Item type=ASSUMPTION (stated)
+  Routing: 15a (governance-trigger-threshold designs in SRE / quality-management; recurrence-as-promotion signal); 15b (counter-evidence on recurrence-count thresholds for promotion vs. mere accumulation)
+  Priority: MEDIUM-HIGH (load-bearing for SELF-AWARENESS-META 4th-recurrence resolution)
+
+[ASSUMPTION] ASSUMPTION-099: DECISION-027 candidate scope can be extended to cover external-tool-review layer — specialist self-attribution + external-LLM prioritization adoption are presumed same epistemic-weight protocol
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → MONITOR (MONITOR-102; priority MEDIUM-HIGH; substrate-coupling vs failure-mode differentiation tension; PRESUMPTION-118 asymmetric-reversibility analysis required before commitment)]
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-099; Item type=ASSUMPTION (stated)
+  Routing: 15a (review-aggregation framework taxonomies that distinguish source-types); 15b (counter-evidence on unified vs. per-source-type adjudication tiers)
+  Priority: MEDIUM-HIGH (Tom's morning-discussion question about unify vs. split DECISION-027 / DECISION-028)
+
+[ASSUMPTION] ASSUMPTION-100: Saturday Wolfram three-way ontological convergence (Levin × Hoffman × Wolfram) is "the highest-leverage cross-tradition signal of the week" — Pattern-Detector deep-pass scheduling priority claim
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → MONITOR (MONITOR-103; priority MEDIUM; substrate convergence plausible; superlative needs operational definition per PRESUMPTION-119; out-of-band scheduling needs policy per PRESUMPTION-120)]
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-100; Item type=ASSUMPTION (stated)
+  Routing: 15a (cross-domain concept-convergence detection metrics; out-of-band scheduling for high-leverage content); 15b (counter-evidence on selection-effects of out-of-band Pattern-Detector deep-passes)
+  Priority: MEDIUM (Tom's morning-discussion question about out-of-band deep-pass scheduling)
+
+[ASSUMPTION] ASSUMPTION-101: Chrome MCP "normal windows" error is environment-state issue (popup-only Chrome sessions), not Chrome-MCP defect — Codex-style external-LLM-diagnostic root-cause attribution
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → MONITOR (MONITOR-104; priority MEDIUM-HIGH; attribution well-supported; uptake-process is recurring SYSTEMIC-RISK pattern via PRESUMPTION-121 second-layer recurrence in <24h)]
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-101; Item type=ASSUMPTION (stated)
+  Routing: 15a (Chrome extension / MCP-protocol tab-group requirements; environment-state vs. defect attribution patterns); 15b (counter-evidence on external-LLM diagnostic reliability for browser/MCP errors)
+  Priority: MEDIUM-HIGH (active recurrence; gates next chat-scrape and cowork-to-chat sync deliveries)
+
+[ASSUMPTION] ASSUMPTION-102: 20-item EOD lit-search batch draining 100% in single morning 15a/15b/15c cycle constitutes operational baseline for lit-search throughput at present queue scale
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → MONITOR (MONITOR-105; priority MEDIUM; single-cycle is positive evidence not baseline; throughput-only Goodhartable per PRESUMPTION-123; SELF-MEASUREMENT cluster)]
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-102; Item type=ASSUMPTION (stated)
+  Routing: 15a (queueing-theory throughput baselines for human-augmented review pipelines; cycle-time-as-baseline metrics); 15b (counter-evidence on throughput-only baselines missing quality drift)
+  Priority: MEDIUM
+
+[ASSUMPTION] ASSUMPTION-103: Today's 8-scheduled-task fire-rate is itself sufficient positive data point against the daemon-link-count = 1 regression hypothesis for THIS task (per-task-positive-evidence framing)
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → MONITOR (MONITOR-106; priority MEDIUM; per-task framing supported; cross-task generalization concern per PRESUMPTION-124)]
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-103; Item type=ASSUMPTION (stated)
+  Routing: 15a (per-task vs. cross-task evidence frames in scheduled-task health monitoring); 15b (counter-evidence on per-task evidence transferability across selectively-affected tasks)
+  Priority: MEDIUM (joint with ASSUMPTION-092 re-validation)
+
+[PRESUMPTION] PRESUMPTION-116: "Densest cycle on record" framing presumes cycle-density is meaningful comparison metric without batch-size or topic-mix normalization
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → REVISE (urgency MEDIUM; PRESUMPTION + strong challenge + NO-SUPPORT; metric-design / bibliometric / SPC / Goodhart literatures uniform; joint with ASSUMPTION-096 MONITOR-099)]
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-116; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (metric-design literature on density vs. rate normalization; superlative-claim audit patterns); 15b (counter-evidence on cycle-density as informative across heterogeneous batches)
+  Priority: LOW-MEDIUM
+
+[PRESUMPTION] PRESUMPTION-117: "Core Operational Discipline" sprint presumes registration / canonization / fallback share enough remediation-substrate to bundle
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → REVISE (urgency MEDIUM; PRESUMPTION + strong challenge; meta-level coupling weaker than literature requires; joint with ASSUMPTION-097 MONITOR-100)]
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-117; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (architectural-debt cluster-vs-atomic remediation outcomes; remediation-surface taxonomies); 15b (counter-evidence on bundled-sprint completion vs. parallel-track completion)
+  Priority: MEDIUM (load-bearing for ASSUMPTION-097 sprint endorsement)
+
+[PRESUMPTION] PRESUMPTION-118: DECISION-027 unify-vs-split presumed reversible at low epistemic cost (no asymmetric-reversibility risk acknowledged)
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → REVISE (urgency MEDIUM-HIGH; PRESUMPTION + strong challenge + NO-SUPPORT; Bezos / Nygard / AntiPatterns uniform; load-bearing for ASSUMPTION-099 URGENT canonization decision this week)]
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-118; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (architecture-decision-record reversibility cost asymmetry literature; ADR forward-vs-backward revision patterns); 15b (counter-evidence on retroactive ADR splitting / merging cost)
+  Priority: MEDIUM (load-bearing for ASSUMPTION-099)
+
+[PRESUMPTION] PRESUMPTION-119: "Highest-leverage signal of the week" presumes leverage is single-axis-measurable without operational definition
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → REVISE (urgency MEDIUM; PRESUMPTION + strong challenge + NO-SUPPORT; canonical Goodhart precondition; operational-definition cluster with PRESUMPTION-116, ASSUMPTION-100)]
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-119; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (operational-definition literature for "leverage" / "impact" in research-output contexts; cross-domain convergence metrics); 15b (counter-evidence on multi-axis leverage divergence)
+  Priority: LOW-MEDIUM
+
+[PRESUMPTION] PRESUMPTION-120: Out-of-band Pattern-Detector deep-pass scheduling presumed policy-free — no specification for non-standard insertion priority or capacity competition
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → REVISE (urgency MEDIUM; PRESUMPTION + strong challenge + NO-SUPPORT; selection-effect / OS-scheduling / distributed-systems uniform; recurrence of PRESUMPTION-029 multi-subagent batch inflation pattern)]
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-120; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (selection-effect literature on out-of-band content prioritization; scheduling-policy design); 15b (counter-evidence on out-of-band scheduling fairness vs. baseline-discoverable content)
+  Priority: MEDIUM (extends PRESUMPTION-029 multi-subagent batch inflation cluster)
+
+[PRESUMPTION] PRESUMPTION-121: Codex-style external-LLM diagnostic for Chrome MCP error presumed reliable enough to skip independent project-context adjudication — DIRECT EXTENSION OF PRESUMPTION-115 SYSTEMIC-RISK to chat-scrape failure-mode layer
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → REVISE (urgency HIGH; PRESUMPTION + strong challenge + NO-SUPPORT; SYSTEMIC-RISK third instance; second-layer recurrence in <24h; DECISION-027 scope extension URGENT this week per ASSUMPTION-098 governance trigger)]
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-121; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (review-aggregation frameworks for external-LLM diagnostic uptake; cross-LLM diagnostic-reliability literature); 15b (counter-evidence on external-LLM root-cause-attribution failure modes)
+  Priority: HIGH (SYSTEMIC-RISK recurrence at second layer in 24 hours; extends PRESUMPTION-074 / PRESUMPTION-115 cluster)
+
+[PRESUMPTION] PRESUMPTION-122: Documentation-for-Tom presumed to count as "fix" for recurring scheduled-task pre-condition without programmatic enforcement
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → REVISE (urgency MEDIUM-HIGH; PRESUMPTION + strong challenge + NO-SUPPORT; SRE / human-factors / org-formalization uniform; documentation-as-fix cluster with PRESUMPTION-125 / 126)]
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-122; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (documentation-vs-enforcement literature in operational reliability; social-contract vs. system-fix patterns); 15b (counter-evidence on documentation-only remediation success rates)
+  Priority: LOW-MEDIUM (extends PRESUMPTION-108 / PRESUMPTION-111 STALLED-TASK-CLOSURE cluster)
+
+[PRESUMPTION] PRESUMPTION-123: "100% drained in one cycle" celebrates throughput while INCORPORATE rate stays at 0 and REVISE backlog grows — throughput presumed right success metric
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → REVISE (urgency MEDIUM-HIGH; PRESUMPTION + strong challenge + NO-SUPPORT; canonical Goodhart instance; SELF-MEASUREMENT cluster across two consecutive cycles)]
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-123; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (review-pipeline metric-design literature; throughput-vs-quality-vs-follow-through balanced-scorecard patterns); 15b (counter-evidence on throughput-only metric drift in long-running review pipelines)
+  Priority: MEDIUM (extends PRESUMPTION-035 threshold-free flag invocation cluster)
+
+[PRESUMPTION] PRESUMPTION-124: Today's 8-task fire-rate treated as global negative inference for daemon-link-count regression — wiki-orchestrator status today not in evidence frame
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → REVISE (urgency MEDIUM; PRESUMPTION + strong challenge + NO-SUPPORT; selection-bias literature uniform; joint with ASSUMPTION-103 MONITOR-106 + ASSUMPTION-092 MONITOR-092)]
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-124; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (per-task vs. cross-task evidence-frame literature in failure-mode diagnosis; selectively-affected scheduled-task patterns); 15b (counter-evidence on global-from-partial inference for selectively-affected systems)
+  Priority: MEDIUM (load-bearing for ASSUMPTION-103; joint with PRESUMPTION-114)
+
+[PRESUMPTION] PRESUMPTION-125: 4th-consecutive cowork-to-chat sync failure presumed not to escalate severity beyond N=3 threshold — no recurrence-counter; no severity ladder
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → REVISE (urgency HIGH; PRESUMPTION + strong challenge + NO-SUPPORT; SYSTEMIC-RISK 4th-recurrence cowork-to-chat sync cluster; ITIL/SRE/ISO 9001 uniform; standalone DECISION candidate per ASSUMPTION-098 governance trigger)]
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-125; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (incident-management severity-ladder design; recurrence-counter-driven escalation patterns); 15b (counter-evidence on flat-disposition systems for recurring same-mode failures)
+  Priority: MEDIUM-HIGH (4th recurrence of cowork-to-chat sync cluster: ASSUMPTION-071 / PRESUMPTION-038 / PRESUMPTION-111 / PRESUMPTION-125)
+
+[PRESUMPTION] PRESUMPTION-126: PROCESSED_LOG reconciliation (6 historical entries appended) presumed one-time backfill without completeness check or audit-trigger schedule
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → REVISE (urgency LOW-MEDIUM; PRESUMPTION + strong challenge + NO-SUPPORT; data-quality / database / audit literatures uniform; documentation-as-fix cluster)]
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-126; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (data-completeness audit patterns in operational data systems; system-of-record drift detection); 15b (counter-evidence on one-time-backfill sufficiency)
+  Priority: LOW-MEDIUM
+
+[PRESUMPTION] PRESUMPTION-127: Today's McGilchrist off-cadence filing presumed routinely absorbable without raising 2-day off-cadence pattern flag
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → MONITOR (MONITOR-107; priority LOW-MEDIUM; heuristic exception — moderate not strong challenge; cluster observability is the gap, low-cost remediation)]
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-127; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (cadence-vs-quality coupling literature in research-output / agile / scrum); 15b (counter-evidence on multi-day off-cadence pattern indicator-rate)
+  Priority: LOW-MEDIUM (extends ASSUMPTION-091 / PRESUMPTION-113 off-cadence cluster)
+
+---
+
+**Total newly queued items this run:** 20 (8 ASSUMPTIONs + 12 PRESUMPTIONs)
+**All at cycle 0 (first 15a/15b dispatch)**
+**Pipeline status:** items QUEUED awaiting next 15a/15b cycle (target Monday 2026-05-11 batch)
+**Run timestamp:** 2026-05-09 EOD (c2a2-self-awareness-daily scheduled task)
+**Run note:** Saturday lit-search-disposition + Saturday-Wolfram + self-awareness-backfill day. Today's 14a/14b run produced 20 newly QUEUED items (joins yesterday's 20 already DISPOSITIONED today). Lit-search queue post-run: 20 items at cycle 0 from today's run + 49 still-queued items from 2026-05-05 EOD seeding + 57 RE-TRIGGERed cohort awaiting next 15d cycle = ~126 active items. PRESUMPTION-121 flagged HIGH priority as the second-layer recurrence of PRESUMPTION-115's external-LLM-uptake SYSTEMIC-RISK in 24 hours — strongest single signal in this batch.
+
+---
+
+## 2026-05-10 RUN COMPLETE — c2a2-lit-search-pipeline (Sunday morning drain)
+
+**Run timestamp:** 2026-05-10 (autonomous scheduled-task run; no human review in-loop)
+**Items processed:** 20 (8 ASSUMPTIONs ASSUMPTION-096..103 + 12 PRESUMPTIONs PRESUMPTION-116..127, all from 2026-05-09 EOD batch)
+**Pipeline:** Agents 15a + 15b + 15c (all three executed)
+
+### Disposition summary
+- **INCORPORATE:** 0 (0%)
+- **MONITOR:** 9 (45%) — MONITOR-099 (ASSUMPTION-096), MONITOR-100 (ASSUMPTION-097), MONITOR-101 (ASSUMPTION-098), MONITOR-102 (ASSUMPTION-099), MONITOR-103 (ASSUMPTION-100), MONITOR-104 (ASSUMPTION-101), MONITOR-105 (ASSUMPTION-102), MONITOR-106 (ASSUMPTION-103), MONITOR-107 (PRESUMPTION-127 heuristic exception)
+- **REVISE:** 11 (55%) — PRESUMPTION-116, 117, 118, 119, 120, 121 (HIGH), 122, 123, 124, 125 (HIGH), 126
+
+### Item-type breakdown
+- ASSUMPTIONs (8): 0 INCORPORATE, 8 MONITOR, 0 REVISE  → ASSUMPTION REVISE rate 0/8 (0%) for the second consecutive cycle
+- PRESUMPTIONs (12): 0 INCORPORATE, 1 MONITOR (PRESUMPTION-127 heuristic exception), 11 REVISE  → PRESUMPTION REVISE rate 11/12 (92%)
+
+### SYSTEMIC RISKS flagged
+1. **Specialist/external-source primary-signal cluster — second-layer recurrence in <24h** (PRESUMPTION-121 HIGH): cumulative N=5 across 30 days; DECISION-027 scope extension URGENT this week per ASSUMPTION-098 governance trigger
+2. **Cowork-to-chat sync cluster — fourth recurrence** (PRESUMPTION-125 HIGH): flat-severity confirmed empirical anti-pattern; standalone DECISION candidate
+3. **SELF-MEASUREMENT (Goodhart) cluster** (PRESUMPTION-123 + ASSUMPTION-102 + ASSUMPTION-096): system celebrating throughput while INCORPORATE rate stays at 0% across two consecutive cycles
+4. **Decision-governance circularity** (ASSUMPTION-098 + PRESUMPTION-106 unresolved): canonization-this-week presupposes the canonization criterion that PRESUMPTION-106 was REVISE'd for
+
+### NOVELTY flags
+None this run — all 20 items have at least partial literature attestation in the AGAINST direction; 10 PRESUMPTIONs have NO-SUPPORT in the FOR direction with strong AGAINST attestation, indicating well-documented anti-patterns rather than novel territory.
+
+### Files updated this run
+- `lit_search_results/for/ASSUMPTION-{096..103}_for.md` (8 new); `PRESUMPTION-{116..127}_for.md` (12 new) → 20 total
+- `lit_search_results/against/ASSUMPTION-{096..103}_against.md` (8 new); `PRESUMPTION-{116..127}_against.md` (12 new) → 20 total
+- `lit_search_returns.md` — 2026-05-10 RUN section appended with all 20 dispositions, 4 SYSTEMIC-RISK flags, cycle observations, and next-actions surfacing
+- `monitor_queue.md` — MONITOR-099 through MONITOR-107 (9 entries) appended; total now 107 (98 + 9)
+- `revision_flags.md` — 11 REVISE entries appended in 2026-05-10 cycle section (cumulative 2026-05-10 REVISE backlog: +11)
+- `for_lit_search.md` — all 20 items updated with [SEARCHED-15a: 2026-05-10] [SEARCHED-15b: 2026-05-10] [DISPOSITIONED-15c: 2026-05-10 → ...] tags
+
+### Queue state post-run
+- 0 QUEUED items from 2026-05-09 EOD batch (all 20 drained)
+- 57 RE-TRIGGER items from 2026-05-05 cohort remain queued for next 15d-aligned 15a/15b cycle (target 2026-05-11/12 per their `next_check` schedule)
+- 49 still-queued items from 2026-05-05 EOD seeding noted in 2026-05-09 batch summary appear (on inspection) to have already been DISPOSITIONED in the 2026-05-05 run; the "49 still-queued" reference in the 2026-05-09 EOD note is best read as the 49 of 57 RE-TRIGGER items in cycle 1/2 plus other carry-forwards. No additional unprocessed cycle-0 items found.
+
+### Cycle-level observation
+The 2026-05-10 cycle replicates the 2026-05-09 cycle's structural pattern: 0 INCORPORATE, dominant PRESUMPTION REVISE rate (92%), and emergence of SYSTEMIC-RISK flags at the same throughput-vs-architectural-progress fault line. The principal new signal is PRESUMPTION-121 — second-layer recurrence in <24h of PRESUMPTION-115's external-LLM-uptake SYSTEMIC-RISK at the chat-scrape Chrome-MCP-diagnostic layer, satisfying ASSUMPTION-098's three-recurrence governance threshold for promotion to DECISION-NNN this week. The secondary signal is PRESUMPTION-125 — fourth recurrence of the cowork-to-chat sync cluster with no severity-ladder, also satisfying the governance threshold for standalone DECISION canonization. The throughput-vs-architectural-progress gap (PRESUMPTION-123 / ASSUMPTION-102 / ASSUMPTION-096) is now self-referentially observed across two consecutive cycles: throughput-only metric celebrates while the architectural-progress proxy (INCORPORATE rate) remains structurally at 0%.
+
+
+## 2026-05-10 c2a2-self-awareness-daily run — new items queued
+
+[ASSUMPTION] ASSUMPTION-104: Sunday 2026-05-10 day-shape — "first-Rohr / first-Wright pending day + clean self-awareness pipeline drain day + sewing-agent first weekly run day" with three concurrent first-occurrences
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-108, LOW-MEDIUM)
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-104; Item type=ASSUMPTION (stated)
+  Routing: 15a (day-shape characterization patterns in operational-history literature; concurrent-first-event clustering); 15b (counter-evidence on day-shape claims as meaningful operational metrics)
+  Priority: LOW-MEDIUM
+
+[ASSUMPTION] ASSUMPTION-105: User-privacy rules prohibit password-based login on Tom's behalf — binding operating constraint surfacing as 5th-consecutive evening sync delivery failure cause
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: SUPPORTED (Strong) | 15b result: PARTIALLY-CHALLENGED (Weak — challenge applies to framing-without-remediation, not constraint) | Disposition: INCORPORATE (PREMISE-015, MEDIUM-HIGH)
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-105; Item type=ASSUMPTION (stated)
+  Routing: 15a (agent-autonomy boundary literature for credential-handling; user-privacy as binding constraint); 15b (counter-evidence on credential-delegation patterns and consent-based login)
+  Priority: MEDIUM-HIGH (load-bearing for ASSUMPTION-109 standalone DECISION canonization)
+
+[ASSUMPTION] ASSUMPTION-106: ASSUMPTION REVISE rate 0/8 for SECOND consecutive cycle confirms ASSUMPTIONs are characteristically operational/diagnostic-pattern items
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-109, MEDIUM). NOTE: self-referentially falsified by ASSUMPTION-107 REVISE this same cycle.
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-106; Item type=ASSUMPTION (stated)
+  Routing: 15a (cross-cycle disposition-pattern literature; item-type-as-epistemic-weight signal); 15b (counter-evidence on disposition-pattern stability across heterogeneous batches)
+  Priority: MEDIUM (joint with ASSUMPTION-073 / PRESUMPTION-129)
+
+[ASSUMPTION] ASSUMPTION-107: 92% PRESUMPTION REVISE rate is highest single-cycle REVISE rate to date — record-density disposition signal exceeding yesterday's 75% prior peak
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b result: CHALLENGED (Strong) | Disposition: REVISE (MEDIUM). FIRST ASSUMPTION REVISE in three cycles.
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-107; Item type=ASSUMPTION (stated)
+  Routing: 15a (metric-design / SPC superlative-claim audit patterns; record-density disposition signals); 15b (counter-evidence on REVISE-rate-as-record without normalization for batch-composition)
+  Priority: LOW-MEDIUM (joint with ASSUMPTION-096 / PRESUMPTION-129)
+
+[ASSUMPTION] ASSUMPTION-108: ASSUMPTION-098 three-recurrence governance threshold satisfied URGENT-this-week for DECISION-027 scope extension to external-tool-review layer (PRESUMPTION-121 N=5/30 days)
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-110, HIGH; substrate-decomposition gate via PRESUMPTION-134 REVISE)
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-108; Item type=ASSUMPTION (stated)
+  Routing: 15a (governance-trigger-activation patterns in SRE / quality-management; recurrence-threshold-to-canonization audit literature); 15b (counter-evidence on three-recurrence thresholds as adequate canonization triggers; alternative threshold designs)
+  Priority: HIGH (URGENT-this-week canonization trigger; load-bearing for DECISION-027 scope extension)
+
+[ASSUMPTION] ASSUMPTION-109: PRESUMPTION-125 4th-recurrence cowork-to-chat sync requires standalone DECISION canonization distinct from DECISION-027 scope
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-111, HIGH; substrate-decomposition gate via PRESUMPTION-134 REVISE)
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-109; Item type=ASSUMPTION (stated)
+  Routing: 15a (incident-management severity-ladder design; recurrence-counter-driven escalation patterns); 15b (counter-evidence on standalone-DECISION-vs-cluster-canonization for recurring same-mode failures)
+  Priority: HIGH (URGENT-this-week canonization trigger; PRESUMPTION-134 alternation-substrate concern joint)
+
+[ASSUMPTION] ASSUMPTION-110: Sewing agent's first weekly run produced canonical inaugural connectivity baseline (orphans=766, sparse=2, connected=17, total=785)
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-112, MEDIUM)
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-110; Item type=ASSUMPTION (stated)
+  Routing: 15a (graph-connectivity baseline-setting in vault / wiki / knowledge-graph literature; first-observation-establishes-baseline conventions); 15b (counter-evidence on first-run-as-canonical-baseline; threshold-design dependency for connectivity metrics)
+  Priority: MEDIUM (load-bearing for PRESUMPTION-130 / PRESUMPTION-139 metric-design audit)
+
+[ASSUMPTION] ASSUMPTION-111: First-ever Rohr (×2) + Wright (×3) pending proposals are blocking master network expansion to N=13 traditions (precondition for DECISION-026)
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-113, MEDIUM-HIGH)
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-111; Item type=ASSUMPTION (stated)
+  Routing: 15a (organizational decision-ordering for admissions processes; precondition-chain analysis); 15b (counter-evidence on first-ever-pendings-as-blocking; alternative orderings for tradition-canonization)
+  Priority: MEDIUM-HIGH (load-bearing for DECISION-026; joint with PRESUMPTION-128 / PRESUMPTION-137 competing-presumptions pair)
+
+[ASSUMPTION] ASSUMPTION-112: SELF-MEASUREMENT (Goodhart) cluster confirmed as architectural recursive-self-observation pattern across two consecutive cycles at 0% INCORPORATE
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: SUPPORTED (Strong) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-114, MEDIUM-HIGH). NOTE: 0% INCORPORATE assertion partially falsified by ASSUMPTION-105 INCORPORATE this same cycle.
+  Provenance: Origin=14a; Chain=[14a→15a,15b→15c]; Original item: ASSUMPTION-112; Item type=ASSUMPTION (stated)
+  Routing: 15a (Goodhart-effect mitigation patterns in long-running review pipelines; self-observation cluster design); 15b (counter-evidence on throughput-vs-INCORPORATE rate as Goodhart-vulnerable framings)
+  Priority: MEDIUM-HIGH (architectural recursive-self-observation; SELF-MEASUREMENT cluster confirmed)
+
+[PRESUMPTION] PRESUMPTION-128: Wright/Rohr pending proposals can be reviewed under existing pending-proposals workflow without first canonizing DECISION-026 — workflow-accommodation for not-yet-canonized traditions presumed
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-115, MEDIUM — heuristic exception: competing-pair with PRESUMPTION-137)
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-128; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (organizational decision-ordering / committed-cost effects in admissions processes); 15b (counter-evidence on workflow-accommodation for pre-canonization candidates)
+  Priority: MEDIUM (competes with PRESUMPTION-137; load-bearing for ASSUMPTION-111)
+
+[PRESUMPTION] PRESUMPTION-129: 92% PRESUMPTION REVISE rate as "record" comparison metric without normalization for batch composition — SECOND-LAYER recurrence of PRESUMPTION-116 superlative-without-normalization within 24h
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Strong) | Disposition: REVISE (MEDIUM-HIGH). Three-layer cluster recurrence with ASSUMPTION-107.
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-129; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (metric-design / SPC superlative-claim audit patterns across heterogeneous-batch settings); 15b (counter-evidence on REVISE-rate-as-meaningful-comparison without normalization)
+  Priority: LOW-MEDIUM (extends PRESUMPTION-116 cluster at second layer; SELF-MEASUREMENT cluster joint with ASSUMPTION-112)
+
+[PRESUMPTION] PRESUMPTION-130: Sewing agent's threshold definitions for "orphan" / "sparse" / "connected" accepted as canonical baseline without external validation
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Moderate-Strong) | Disposition: REVISE (MEDIUM)
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-130; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (graph-connectivity threshold-design literature; first-run metric-design validation patterns); 15b (counter-evidence on agent-defined thresholds without external benchmarking)
+  Priority: MEDIUM (load-bearing for ASSUMPTION-110; joint with PRESUMPTION-139)
+
+[PRESUMPTION] PRESUMPTION-131: Sewing agent's "agent judgment call" to exclude architecture-root tracking files as routing targets defensible without user review — autonomous-agent boundary-setting authority presumed
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-116, LOW-MEDIUM — heuristic exception: bounded autonomy + convention-alignment)
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-131; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (autonomous-agent boundary-setting authority literature; routing-target inclusion/exclusion policy); 15b (counter-evidence on agent-judgment-call autonomy without explicit policy)
+  Priority: LOW-MEDIUM (joint with PRESUMPTION-130; sewing-agent first weekly run cluster)
+
+[PRESUMPTION] PRESUMPTION-132: Three new bridge notes in synthesis/ folder constitute valid cross-tradition synthesis without explicit human-review trigger
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Moderate-Strong) | Disposition: REVISE (MEDIUM-HIGH). PREMISE-VIOLATION-FLAG: contradicts PREMISE-014 author-mediation commitment.
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-132; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (agent-generated synthesis content review-trigger patterns; cross-tradition signal validation); 15b (counter-evidence on agent-generated bridges without external review)
+  Priority: MEDIUM-HIGH (extends PRESUMPTION-024 selection-effect cluster to new agent-generated-bridges layer)
+
+[PRESUMPTION] PRESUMPTION-133: "Documentation-only approach is not converging" framing presumes a programmatic fix would converge — implicit unsupported counterfactual
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-117, MEDIUM — heuristic exception: strategy-switching is canonical)
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-133; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (remediation-strategy comparison literature; counterfactual-evidence requirements for switching strategies); 15b (counter-evidence on programmatic-fix convergence assumption)
+  Priority: MEDIUM (joint with PRESUMPTION-122 documentation-as-fix cluster)
+
+[PRESUMPTION] PRESUMPTION-134: PRESUMPTION-121 + PRESUMPTION-125 alternation presumes independent failure surfaces — but both rely on shared infrastructure substrate (Chrome MCP + claude.ai login state)
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Strong) | Disposition: REVISE (HIGH; substrate-decomposition gate for ASSUMPTION-108 + ASSUMPTION-109)
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-134; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (cluster-naming-vs-substrate-decomposition literature; root-cause-analysis for rotating failure modes); 15b (counter-evidence on cluster-identifier independence at infrastructure layer)
+  Priority: MEDIUM-HIGH (challenges basis for treating ASSUMPTION-108 / ASSUMPTION-109 as separate DECISIONs)
+
+[PRESUMPTION] PRESUMPTION-135: Morning chat-scrape 3rd consecutive day reaches three-recurrence canonization threshold per ASSUMPTION-098 but presumed absorbed under PRESUMPTION-121 cluster without explicit subsumption rule
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-118, MEDIUM — heuristic exception: substrate-decomposition is upstream fix)
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-135; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (governance-subsumption rules for cluster-membership; cluster-membership-vs-individual-recurrence canonization patterns); 15b (counter-evidence on cluster-absorption of recurrence-counts)
+  Priority: MEDIUM (load-bearing for ASSUMPTION-098 governance protocol consistency)
+
+[PRESUMPTION] PRESUMPTION-136: Two HIGH-urgency DECISION canonization triggers firing same day can both be resolved within same week — week-carrying-capacity presumed without consultation/availability check
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Moderate) | Disposition: REVISE (MEDIUM)
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-136; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (DECISION-canonization throughput per week literature; urgent-stack-capacity audit patterns); 15b (counter-evidence on multi-DECISION week throughput without quality-regression)
+  Priority: MEDIUM (load-bearing for ASSUMPTION-108 / ASSUMPTION-109 URGENT canonization; SELF-MEASUREMENT cluster joint)
+
+[PRESUMPTION] PRESUMPTION-137: 5 first-ever Rohr/Wright pendings carry distinctive epistemic weight requiring meta-level (DECISION-026) accept/defer before standard pending-proposals workflow — "first-ever" framing as decision gate
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-119, MEDIUM — heuristic exception: competing-pair with PRESUMPTION-128)
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-137; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (first-occurrence-as-decision-gate literature in admissions processes; uniqueness-as-significance audit); 15b (counter-evidence on first-ever framing as canonization-gate vs. standard-workflow-accommodation)
+  Priority: MEDIUM (competes with PRESUMPTION-128; first explicit competing-presumptions pair in registry)
+
+[PRESUMPTION] PRESUMPTION-138: Three scheduled runs still in flight at evening-sync time presumed to complete overnight without intervention — extrapolated from yesterday's behavior; no per-task verification step
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Strong) | Disposition: REVISE (MEDIUM-HIGH)
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-138; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (per-task-vs-cross-task evidence-frame literature in failure-mode diagnosis; in-flight-task verification patterns); 15b (counter-evidence on historic-completion-rate-as-current-completion-likelihood extrapolation)
+  Priority: LOW-MEDIUM (extends PRESUMPTION-124 per-task-vs-cross-task cluster at in-flight-tasks layer)
+
+[PRESUMPTION] PRESUMPTION-139: Sewing-agent-recommended one-time backlink-injection pass presumed to make connectivity metric "sensitive" — sensitivity threshold not specified
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-11] [SEARCHED-15b: 2026-05-11] [DISPOSITIONED-15c: 2026-05-11]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Moderate) | Disposition: REVISE (LOW-MEDIUM; joint with PRESUMPTION-130)
+  Provenance: Origin=14b; Chain=[14b→15a,15b→15c]; Original item: PRESUMPTION-139; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (metric-sensitivity threshold literature in graph-connectivity contexts; binary-sensitivity-vs-graded-design); 15b (counter-evidence on intervention-without-sensitivity-threshold-specification)
+  Priority: LOW-MEDIUM (joint with PRESUMPTION-130 / ASSUMPTION-110)
+
+**Total newly queued items this run:** 21 (9 ASSUMPTIONs + 12 PRESUMPTIONs)
+**All at cycle 0 (first 15a/15b dispatch)**
+**Pipeline status:** items QUEUED awaiting next 15a/15b cycle (target Monday 2026-05-11 batch)
+**Run timestamp:** 2026-05-10 EOD (c2a2-self-awareness-daily scheduled task)
+**Run note:** On-cadence following second-consecutive single-day-drain morning 15c cycle. Today's cluster signature includes the FIRST EXPLICIT COMPETING-PRESUMPTIONS PAIR (PRESUMPTION-128 vs PRESUMPTION-137) and TWO URGENT DECISION canonization triggers (ASSUMPTION-108, ASSUMPTION-109) firing the same day per ASSUMPTION-098 governance threshold satisfaction.
+
+## 2026-05-11 c2a2-lit-search-pipeline run — drain notice
+
+All 21 items queued in the 2026-05-10 EOD batch above (ASSUMPTION-104 through ASSUMPTION-112; PRESUMPTION-128 through PRESUMPTION-139) have been searched by 15a, searched by 15b, and dispositioned by 15c on 2026-05-11. See `lit_search_returns.md` for the cycle's RETURN/DISPOSITION summaries and SYSTEMIC-RISK flags.
+
+- 1 INCORPORATE (ASSUMPTION-105 → PREMISE-015) — first INCORPORATE in three consecutive cycles
+- 12 MONITOR (MONITOR-108 through MONITOR-119)
+- 8 REVISE (ASSUMPTION-107; PRESUMPTION-129, 130, 132, 134, 136, 138, 139) — first ASSUMPTION REVISE in three consecutive cycles
+
+**Queue state post-run:** 0 QUEUED items from 2026-05-10 EOD batch (all 21 drained). Re-trigger cohort from 2026-05-05 (57 items, next_check 2026-05-12 per Run 4) is the next 15a/15b workload.

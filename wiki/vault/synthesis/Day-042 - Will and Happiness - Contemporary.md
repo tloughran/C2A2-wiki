@@ -60,6 +60,7 @@ length_tier: medium
 length_target_words: 2200
 length_actual_words: 2644
 length_ratio_to_target: 1.202
+length_note: "Eight articles (Q.81 a.1–a.3 + Q.82 a.1–a.5) integrate sensitive appetite + will into one active-inference loop; Q.82 a.1 keystone (necessity-of-willing-happiness as constitutive-orientation-toward-target-distribution under FEP) and Q.82 a.3 (love-of-substrate higher than knowing-the-icon via Hoffman) doing dense substantive linkage per the 2026-05-05 substantive-integrity clause. Within ±25%."
 karpathy_wiki_sources:
   - "wiki/traditions/friston/wiki.md (PRS-02 — active inference perception-action loop; PRS-04 — expected free energy with pragmatic and epistemic terms)"
   - "wiki/traditions/fredrickson/wiki.md (PRS-04 — positivity resonance, broaden-and-build empirical instantiation of love-desire-joy on concupiscible polarity)"
@@ -71,6 +72,6 @@ karpathy_wiki_sources:
   - "rohr (canonical fallback): *The Universal Christ* — every appetition truthfully traced is appetition for the always-already pattern"
 mind_first_reframe: "Q.81's sensuality (concupiscible-and-irascible) and Q.82's will are aspects of one inferential system at different timescales, abstraction-levels, and precision-weightings. Concupiscible-irascible is the pragmatic-preference vs. resistance-and-overcoming structure of active inference under obstacle; the will is the slow, universal-good-targeting policy of the same loop. Q.82 a.1's necessity-of-willing-happiness is the constitutive-orientation-toward-target-distribution that makes any agent an agent under FEP; happiness is the substrate's loving-unity pattern partially recognized in the alter's particular targets. Q.82 a.3's love-of-God-higher-than-knowledge-of-God is the claim that reaching-out toward the substrate is more fundamental than knowing-the-icon. Q.82 a.4's mutual movement of will and intellect is the coupled-priors-and-posteriors structure of one inferential loop, not a stacked hierarchy."
 central_theme_thread: "Each alter's appetites individuate it from other alters by what its generative model recognizes as good for it. The constitutive orientation toward happiness is the formal-structural form of the loving-unity attractor: every agent under FEP is necessarily oriented toward its target distribution, and that target distribution is a partial recognition of the substrate's pattern. Salvation in fear and trembling on the appetitive register is the progressive recognition that the alter's ultimate target is the substrate's loving-unity itself, beyond the misidentified substitutes (pleasure-as-such, power-as-such, money-as-such) the alter may have settled for from its limited perspective."
-last_qc_at: "2026-05-05T21:33:23"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-10T02:29:41"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/042, theme/will, theme/happiness, theme/active-inference, theme/concupiscible-irascible, theme/passions, theme/preference-structure]

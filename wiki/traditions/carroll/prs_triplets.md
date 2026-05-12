@@ -117,4 +117,38 @@ PRS-11:
   Confidence: High
 
 ---
-*Total PRS triplets: 11*
+PRS-12:
+  Label: P12 (PROP-2026-04-16-002) — Mindscape 350: J. Eric Oliver on The Self and How to Know It
+  Problem: The nature of the self is contested across philosophy, psychology, neuroscience, and social science — with no consensus on whether the self is a real entity, a useful fiction, or an emergent construct
+  Resource: Empirical social science perspective on self-knowledge — treating the self as a constructed narrative that can be studied through behavioral and cognitive data rather than resolved through metaphysics
+  Solution: A naturalist research program on the self that sidesteps metaphysical commitments (does the self "really" exist?) in favor of studying how self-knowledge functions, fails, and can be improved — consistent with Carroll's poetic naturalism
+  Date Added: 2026-04-28
+  Source: Mindscape 350: J. Eric Oliver on The Self and How to Know It (2026-04-13) — https://www.preposterousuniverse.com/podcast/
+  Confidence: Medium
+PRS-13:
+  Label: P13 (PROP-2026-04-17-001) — Mindscape AMA | April 2026 — Wheeler-DeWitt, Timeless Universe, and Boltzmann Br
+  Problem: If time is not fundamental and the universe is a static Wheeler-DeWitt wavefunction with "moments" appearing as components, how does the apparent directional flow and lawful ordering of physical time arise without being put in by hand?
+  Resource: Carroll's 2026 AMA reformulation — a basis selection in the universal wavefunction such that branches hosting observers, records, and lawful physics have concentrated amplitude, while branches hosting Boltzmann-brain-like fluctuations are mathematically suppressed
+  Solution: A timeless quantum cosmology in which the arrow of time, the reality of observers, and the rarity of Boltzmann brains all emerge from the structure of the wavefunction plus a principled basis choice — preserving poetic naturalism (higher-level descriptions real but emergent) at the cosmological scale
+  Date Added: 2026-04-28
+  Source: Mindscape AMA | April 2026 — Wheeler-DeWitt, Timeless Universe, and Boltzmann Brain Suppression (2026-04-06) — https://www.preposterousuniverse.com/podcast/2026/04/06/ama-april-2026/
+  Confidence: Medium
+PRS-14:
+  Label: P14 (PROP-2026-04-27-005) — Heilborn Lecture Series 2026 — Sean Carroll (3 lectures): Explaining the Arrow o
+  Problem: Classical spacetime, locality, and the Born rule are typically *assumed* in standard quantum mechanics formulations rather than derived — leaving the relation between Hilbert space structure and the spatiotemporal world unexplained
+  Resource: Carroll's "extracting the universe from the wave function" program (Heilborn Lecture 2, April 23, 2026): a derivation strategy in which space, locality, and probability emerge from features of the universal wavefunction itself, building on his earlier work (Carroll & Singh, "Mad-Dog Everettianism") and the Cao-Carroll-Michalakis bulk-entanglement-gravity line
+  Solution: A program in which Hilbert space is taken as fundamental and spacetime, locality, and the Born rule are derived as emergent features — preserving Many-Worlds while answering the standard objection that MWI offers no positive account of where space comes from
+  Date Added: 2026-04-28
+  Source: Heilborn Lecture Series 2026 — Sean Carroll (3 lectures): Explaining the Arrow of Time / Extracting the Universe from the Wave Function / The Many Worlds of Quantum Mechanics (2026-04-22) — https://physics.northwestern.edu/events/heilborn-lectures/
+  Confidence: High
+PRS-15:
+  Label: P15 (PROP-2026-04-27-005, 2nd candidate) — Heilborn Lecture Series 2026 — Sean Carroll (3 lectures): Explaining the Arrow o
+  Problem: The arrow of time is universal in macroscopic experience but does not appear in the time-symmetric microscopic laws — physics needs to explain why entropy was lower in the past without smuggling in extra structure
+  Resource: Carroll's Past Hypothesis program, restated in Heilborn Lecture 1 (April 22, 2026): treat the low-entropy initial state of the observable universe as a cosmological boundary condition that grounds the thermodynamic arrow without modifying dynamics
+  Solution: A unified cosmological-thermodynamic account where the arrow of time supervenes on a single boundary condition rather than on time-asymmetric laws — preserving Carroll's poetic naturalism (multiple legitimate descriptions of the same underlying physics) while giving "the past" a precise physical referent
+  Date Added: 2026-04-28
+  Source: Heilborn Lecture Series 2026 — Sean Carroll (3 lectures): Explaining the Arrow of Time / Extracting the Universe from the Wave Function / The Many Worlds of Quantum Mechanics (2026-04-22) — https://physics.northwestern.edu/events/heilborn-lectures/
+  Confidence: High
+
+---
+*Total PRS triplets: 15*

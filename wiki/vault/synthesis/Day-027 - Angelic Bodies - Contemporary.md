@@ -65,6 +65,7 @@ length_tier: medium
 length_target_words: 2200
 length_actual_words: 2579
 length_ratio_to_target: 1.172
+length_note: "Over medium-tier ±10% (2579 vs 2200, ratio 1.172); within ±25%. Q.51 + Q.52 carries the angelology's substrate-level-activity-manifesting-in-alter-perspectival-space pair as one structural argument (bodies-as-interface, place-as-coupling-scope, joint vs parallel substrate-level coupling on CROSS-010 and CROSS-051); over-length tracks the dense multi-article coverage rather than padding. Within the substantive-integrity-trumps-word-count policy clause."
 karpathy_wiki_sources:
   - "wiki/traditions/hoffman/wiki.md (PRS-03 fitness-tuned interface — Q.51 body as alter-form interface mechanism; Q.52 place as feature of alter-icon-set; Q.51 a.2 manifestation as icon-level event)"
   - "wiki/traditions/kastrup/wiki.md (PRS-01, PRS-02 — Q.51 substrate-level activity producing icon-level events without alter-form embodiment)"
@@ -78,6 +79,6 @@ karpathy_wiki_sources:
   - "Genesis 18; Tobit; Mark 5; Matthew 18:10; Daniel 10"
 mind_first_reframe: "Q.51's angels-without-native-bodies translates as the alter-form-specific bodily interface mechanism not being a feature of intellectual creature as such — humans participate in mind-at-large through fitness-tuned sensory mediation; substrate-level modes of activity participate more directly. Q.51 a.2's assumed-body manifestation translates as substrate-level activity coupling with alter-perceptual events and producing icon-level events in the alter's interface without substantially being the angel's mode of being. Q.52's angels-in-place translates as coupling-scope rather than quantitative containment: the medieval one-place-at-a-time maps onto the finite Markov-kernel of a substrate-level mode; joint-action vs parallel-coupling map onto the network combinatorics of substrate-level agent composition (CROSS-010, CROSS-051). Empirical anchorage remains absent at the angelology-specific level; structural-philosophical homology is coherent within mind-monism."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; the substrate's pattern-active loving stance reaches every spatial region of the alter-cosmos through substrate-level modes of activity that couple with alter-events. Alters work out their integration with the substrate's loving stance under the structural assurance that they are not isolated from it — alter-isolation is alter-perspectival rather than substrate-real. Joint substrate-level activity producing unified alter-events gives the structural form of the people of God gathered by joint substrate-loving-stance; the corporate dimension of salvation in fear and trembling is the mind-monist inheritance of the medieval claim that the substrate's reach is everywhere."
-last_qc_at: "2026-05-05T21:32:34"
+last_qc_at: "2026-05-11T12:28:59"
 last_qc_outcome: "pass"
 tags: [synthesis, day/027, theme/angels, theme/manifestation, theme/place, theme/coupling, theme/interface, theme/joint-action, theme/perspective-limitation]
