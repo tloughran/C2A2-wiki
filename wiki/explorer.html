@@ -148,6 +148,28 @@
     flex-shrink: 0;
   }
 
+  /* Summa progress pill — lives next to Curriculum Tools tab.
+     Shows the LAST CONTINUOUS DAY (no gaps below it) out of 308,
+     plus a warning if any gaps exist below the high-water mark. */
+  .summa-progress {
+    font-size: 10px;
+    color: #888;
+    background: #15151e;
+    border: 1px solid #2a2a3a;
+    border-radius: 10px;
+    padding: 2px 9px;
+    margin-left: 10px;
+    letter-spacing: 0.3px;
+    font-family: -apple-system, sans-serif;
+    cursor: help;
+    white-space: nowrap;
+    transition: color 0.15s, border-color 0.15s;
+    align-self: center;
+  }
+  .summa-progress:hover { color: #C9A84C; border-color: #4a4a5a; }
+  .summa-progress .sp-num { color: #C9A84C; font-weight: 600; }
+  .summa-progress .sp-gap-warn { color: #d48a4a; font-weight: 600; }
+
   #content-frame {
     position: fixed;
     top: 88px; left: 0; right: 0; bottom: 0;
@@ -219,6 +241,9 @@
     <button class="tab-btn" data-src="prs_3d.html">3D PRS</button>
     <button class="tab-btn" data-src="agents_tab.html">Agent Map</button>
     <button class="tab-btn" data-src="summa_explorer.html">Curriculum Tools</button>
+    <span class="summa-progress" id="summa-progress"
+          title="Last continuous day (no gaps below it) out of the 308-day plan. Click to open the coverage gap audit."
+          onclick="window.open('vault/refs/missing_days.md','_blank')">…</span>
   </div>
 
 </div>
@@ -243,6 +268,51 @@
       btn.classList.add('active');
     });
   });
+})();
+
+// ── SUMMA PROGRESS PILL ──
+// Fetches the curriculum index and shows the LAST CONTINUOUS DAY
+// (no gaps below it) out of 308, plus a count of below-HW gaps if any.
+// This is the honest-progress indicator: a high-water-mark alone overstates
+// completion when gaps exist below it. See wiki/vault/refs/missing_days.md.
+//
+// INTRO_DAYS = days that exist as recorded transcripts but have no
+// Summa article mappings (orientation, intro, intermission, recap, etc.).
+// They are not "gaps" — they are real days with content of a non-article kind.
+// Day 1 (Introduction) is currently the only known case; expand this list
+// as the series progresses, or migrate to a days_present.json produced by
+// the sync pipeline if it grows beyond a handful of entries.
+(function() {
+  var INTRO_DAYS = [1];
+  var el = document.getElementById('summa-progress');
+  if (!el) return;
+  fetch('vault/refs/summa_index.json', { cache: 'no-store' })
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      var days = {};
+      Object.keys(data).forEach(function(k) {
+        var v = data[k];
+        if (v && v.day != null) days[v.day] = true;
+      });
+      INTRO_DAYS.forEach(function(d) { days[d] = true; });
+      var present = Object.keys(days).map(Number).sort(function(a,b){return a-b;});
+      if (!present.length) { el.textContent = 'no data'; return; }
+      var hw = present[present.length - 1];
+      var continuous = 0;
+      for (var i = 1; i <= hw; i++) {
+        if (days[i]) continuous = i;
+        else break;
+      }
+      var gaps = 0;
+      for (var j = 1; j <= hw; j++) if (!days[j]) gaps++;
+      var html = '<span class="sp-num">Day ' + continuous + '</span> of 308 continuous';
+      if (gaps > 0) {
+        html += ' · <span class="sp-gap-warn">' + gaps + ' gap' +
+                (gaps === 1 ? '' : 's') + '</span> below Day ' + hw;
+      }
+      el.innerHTML = html;
+    })
+    .catch(function() { el.textContent = '(progress unavailable)'; });
 })();
 </script>
 
