@@ -495,6 +495,27 @@ async function init() {
       indexData = await resp.json();
       vaultBase = VAULT_BASE;
       loaded    = true;
+
+      // Inject Day 1 Introduction as a synthetic entry. The lecture exists
+      // on disk (transcripts/Day-001 - Introduction.md, synthesis/Day-001 -
+      // Introduction - Contemporary.md) but is absent from summa_index.json
+      // because that index is keyed by Part.Q.A and intro days carry no
+      // Summa article mapping. See wiki/vault/refs/missing_days.md.
+      indexData['Day1'] = {
+        part: 'Introduction',
+        part_code: 'INTRO',
+        question: null,
+        question_title: null,
+        article: null,
+        title: 'Day 1 — Introduction',
+        day: 1,
+        transcript: 'transcripts/Day-001 - Introduction.md',
+        synthesis: 'synthesis/Day-001 - Introduction - Contemporary.md',
+        latin: null,
+        english: null,
+        available: true
+      };
+
       console.log('[Summa] Loaded index —', Object.keys(indexData).length, 'entries');
     } else {
       lastError = 'HTTP ' + resp.status + ' from ' + url;
@@ -767,6 +788,27 @@ function renderStats() {
 function renderTree() {
   var container = document.getElementById('tree');
   container.innerHTML = '';
+
+  // Day 1 Introduction row — renders above Prima Pars as a single
+  // clickable leaf (no arrow, no question list). See init() for the
+  // synthetic indexData['Day1'] entry that drives this.
+  var introEntry = indexData['Day1'];
+  if (introEntry && introEntry.available) {
+    var introSec = document.createElement('div');
+    introSec.className = 'part-section';
+    introSec.dataset.partCode = 'INTRO';
+    var introHdr = document.createElement('div');
+    introHdr.className = 'part-header';
+    introHdr.id = 'arow-Day1';
+    introHdr.innerHTML =
+      '<span class="part-arrow" style="visibility:hidden">▶</span>' +
+      '<span class="part-name" style="font-style:italic;font-weight:600">Day 1 — Introduction</span>' +
+      '<span class="part-cnt live">1/1</span>';
+    introHdr.onclick = function() { loadArticle('Day1'); };
+    introSec.appendChild(introHdr);
+    container.appendChild(introSec);
+  }
+
   var rendered = 0;
   for (var i = 0; i < PART_ORDER.length; i++) {
     var pc = PART_ORDER[i];
