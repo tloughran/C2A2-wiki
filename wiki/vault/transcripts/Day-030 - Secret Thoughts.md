@@ -14,10 +14,10 @@ language: en
 fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-030 - Secret Thoughts - Contemporary]]"
-fidelity_checked: false
-last_qc_at: "2026-05-11T20:20:41"
-last_qc_outcome: "pass"
-render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
+fidelity_checked: true
+last_qc_at: "2026-05-12T07:45:37"
+last_qc_outcome: "rewrote"
+render_pass: structural-pass-2026-05-12  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/030, pars/I]
 ---
 # Day 30 — Secret Thoughts
@@ -36,11 +36,19 @@ tags: [summa, day/030, pars/I]
 
 [00:00:37] manner of angelic knowledge the translation that I always use in these podcasts is a second revised Edition translated by the fathers of the English Dominican Province and so here we go
 
+### Q.57 — The angels' knowledge of material things
+
+**Article 1 — Whether the angels know material things**
+
 [00:00:48] article one whether the Angels know material things it will help at the outset of this article to distinguish it from the article that will immediately follow it this article is asking do angels know those things that exist in the material world do angels know Humanity or other species of animals plant Etc that's not so difficult of a question but in the following article we will ask not do angels know the general essence of material things or humanness helium the various species of dogs but do angels know the individuals within
 
 [00:01:21] those species do angels know you and I the particulars within each category and that's a much more difficult question to answer but we begin here do angels know material things aana says yes writing the angels are intellectual beings therefore as God knows material things by his Essence so do the Angels know them for as much as they are in the Angels by their intelligible species the essence of human or a likeness of it is
 
-[00:01:51] poured into the mind of the Angel by God for just as the idea of human nature exists in the mind of God through which creates human beings so to we can Infuse that idea or abstract essence of humanity into the mind of angels now that's pretty straightforward the next article is less straightforward article two whether an angel knows particular things the problem here is the one given by Aristotle in the first objection within this article Aristotle writes the sense has for its object singulars but
+[00:01:51] poured into the mind of the Angel by God for just as the idea of human nature exists in the mind of God through which creates human beings so to we can Infuse that idea or abstract essence of humanity into the mind of angels now that's pretty straightforward the next article is less straightforward
+
+**Article 2 — Whether an angel knows singulars**
+
+article two whether an angel knows particular things the problem here is the one given by Aristotle in the first objection within this article Aristotle writes the sense has for its object singulars but
 
 [00:02:25] the intellect universals in other words sight knows this particular tan colored shaped thing in front of me the Mind knows the abstract essence of it and the two combined is how you know this particular tan shaped human being in front of you the sense senses the particular the Mind knows the general the abstract but Angels don't have senses so how do they know the particular material things God knows
 
@@ -50,13 +58,19 @@ tags: [summa, day/030, pars/I]
 
 [00:04:00] mind of the carpenter before he goes out and makes that table and so God can impart that knowledge into the mind of angels and in a manner that not only reveals to them Humanity in general as we said before but also the particular material of each particular person which combined with that General essence or nature constitutes you and I God can do this because he is the Creator sustainer and thereby knower of all the aspects of you and I at any moment and so can impart again that knowledge to his
 
-[00:04:29] angels article 3 whether Angels know the future the future can be known in two ways the first way is by looking at the various causes and anticipating the effect if I let go of this Stone it will fall hence I can predict the future but this knowledge is by no means infallible I could let go of the stone and a gust of wind carry it away for all I know this is an imperfect way of predicting the future we can even take these kinds of guesses with rational creatures if I say x to my cooworker worker why will
+[00:04:29] angels 
+**Article 3 — Whether the angels know the future**
+
+article 3 whether Angels know the future the future can be known in two ways the first way is by looking at the various causes and anticipating the effect if I let go of this Stone it will fall hence I can predict the future but this knowledge is by no means infallible I could let go of the stone and a gust of wind carry it away for all I know this is an imperfect way of predicting the future we can even take these kinds of guesses with rational creatures if I say x to my cooworker worker why will
 
 [00:05:01] inevitably follow but again that's not infallibly certain this kind of knowing the future both ourselves and the angels share and the angels are much better at it because their intellect is more impressive more universally cognizant than ours is the second way one can know the future is how God knows the future by knowing himself and by seeing in himself all of time from beginning to its end in one single glance as Aquinas says God sees all things in his eternity which being simple is present to all
 
 [00:05:32] time and Embraces all time and therefore God's one glance is cast over all things which happen in all time as present before him but the mind of an Angel and every created intellect fall far short of God's eternity hence the future as it is in itself cannot be known by any
 
-[00:05:52] created intellect Article 4 whether Angels know secret thoughts we begin with the words of scripture Aquinas writes what is proper to God does not belong to the angels but it is proper to God to read the secrets of Hearts according to Jeremiah 179 the heart is perverse above all things and unsearchable who can know it I am the Lord who searches the heart therefore Angels do not know the secrets of Hearts I don't know about you but I'm not so concerned about the good Angels knowing
+[00:05:52] created intellect 
+**Article 4 — Whether the angels know the secret thoughts of the heart**
+
+Article 4 whether Angels know secret thoughts we begin with the words of scripture Aquinas writes what is proper to God does not belong to the angels but it is proper to God to read the secrets of Hearts according to Jeremiah 179 the heart is perverse above all things and unsearchable who can know it I am the Lord who searches the heart therefore Angels do not know the secrets of Hearts I don't know about you but I'm not so concerned about the good Angels knowing
 
 [00:06:23] my secret thoughts but the not good Angels which makes this question interesting aquan Says angels whether good or evil can in one way know our secret thoughts but in another way they cannot know our secret thoughts they can know our secret thoughts if we give them away by a change in our countenance a change in our actions or other bodily changes Augustine says that demons sometimes with the greatest faculty learn man's dispositions not only when expressed by speech but even when conceived in thought when the soul
 
@@ -66,7 +80,10 @@ tags: [summa, day/030, pars/I]
 
 [00:07:59] the Ephesians for we are not contending against flesh and blood but against the principalities against the powers against the world rulers of this present Darkness against the spiritual host of wickedness in the Heavenly places
 
-[00:08:13] Article 5 whether the Angels know the mysteries of Grace did the Angels know before the world was made about the Incarnation the institution of the sacraments Aquinas his response is grounded in scripture especially St Paul who says in the letter to Ephesians none of the rulers of this age understood this for if they had they would not have crucified the Lord Of Glory but as it is written what no I has Seen Nor Ear heard nor the heart of man conceived what God has prepared for those who love him God
+[00:08:13] 
+**Article 5 — Whether the angels know the mysteries of grace**
+
+Article 5 whether the Angels know the mysteries of Grace did the Angels know before the world was made about the Incarnation the institution of the sacraments Aquinas his response is grounded in scripture especially St Paul who says in the letter to Ephesians none of the rulers of this age understood this for if they had they would not have crucified the Lord Of Glory but as it is written what no I has Seen Nor Ear heard nor the heart of man conceived what God has prepared for those who love him God
 
 [00:08:44] has revealed to us through the spirit Aquinas explains the knowledge of the Angels which renders them blessed is the knowledge whereby they see the word and things in the word by such Vision they know mysteries of Grace but not all the Myster Mysteries nor do they all know them equally but just as God Wills them to learn by Revelation yet so that the higher Angels beholding the Divine wisdom more clearly learn more and deeply mysteries in the vision of God which Mysteries they communicate to the
 
@@ -74,19 +91,31 @@ tags: [summa, day/030, pars/I]
 
 [00:09:47] from the beginning even the higher Angels learn these afterwards and we move on to question 58 the manner of
 
-[00:09:54] angelic knowledge the first article whether the Angel's intellect is sometimes in potential sometimes in act consider how our intellects work sometimes we are actually thinking about God but sometimes only potentially sometimes we're thinking about cleaning the dishes or solving a dilemma at work but at all times we have the potential to begin thinking about God and that potential is something very real about us that is not to be found in the stone or in plants or in other animals we also have the
+[00:09:54] angelic knowledge
+
+### Q.58 — The manner of angelic knowledge
+
+**Article 1 — Whether the angel's intellect is sometimes in potentiality, sometimes in act**
+
+the first article whether the Angel's intellect is sometimes in potential sometimes in act consider how our intellects work sometimes we are actually thinking about God but sometimes only potentially sometimes we're thinking about cleaning the dishes or solving a dilemma at work but at all times we have the potential to begin thinking about God and that potential is something very real about us that is not to be found in the stone or in plants or in other animals we also have the
 
 [00:10:24] potential to learn and to understand more than we currently do we could learn more English vocabulary church history we have the potential and once we learn those things that potential becomes actual it becomes actualized in us this article asks is this the same with the angels Aquinas's response distinguishes between What Angels know via their nature and via the beatific Vision regarding the first they do not learn but immediately understand themselves as well as other things through that
 
 [00:10:55] understanding like the existence of God as we've said before but they can consider different things at different times like we do so there is that potential in them also then when it comes to divinely revealed things angels have both the potential to learn and the potential to consider different aspects of that Revelation at different times as they gaze beatifically into the Trinity
 
-[00:11:16] article two whether an angel can understand many things at the same time Aquinas gives us our guiding principle to this question in the following words to understand many things as one is so to speak to understand one thing so when you understand the one thing a house notice how many other things you also understand at that same time what a roof is foundation door ceiling in this way the angel can understand many things and understanding the one Triune God through
+[00:11:16] 
+**Article 2 — Whether an angel can understand many things at the same time**
+
+article two whether an angel can understand many things at the same time Aquinas gives us our guiding principle to this question in the following words to understand many things as one is so to speak to understand one thing so when you understand the one thing a house notice how many other things you also understand at that same time what a roof is foundation door ceiling in this way the angel can understand many things and understanding the one Triune God through
 
 [00:11:48] the bepic vision as Aquinas writes by such knowledge as the angels have of things through the word they know all things under one intelligible species which is is the Divine Essence therefore as regards such knowledge they know all things at once then aquatus will explain that according to the Angel's natural knowledge that knowledge although infused by God we would not call Supernatural because it's not beyond their natural powers to understand like the beatific Vision in this manner of
 
 [00:12:18] knowing still the angels can know many things and knowing one thing one idea like us with the house but that knowledge is limited to the scope of which that one idea pertains in Aquinas's words gilby translation he says but as regards the knowledge which angels have of things through the intelligible likenesses with which their minds are naturally endowed they can know such things simultaneously as are included in one such likeness but not those that are not so included article
 
-[00:12:50] three whether an angel's knowledge is discursive in this article we encounter a distinction which Aquinas will make later in the Summa and a Fuller way between what we call the act of understanding and the act of reasoning that's in question 79 of this prap pars he'll give that distinction in these words for to understand is simply to apprehend intelligible truth and to reason is to advance from one thing understood to another so as to know an
+[00:12:50] 
+**Article 3 — Whether the angel's knowledge is discursive**
+
+three whether an angel's knowledge is discursive in this article we encounter a distinction which Aquinas will make later in the Summa and a Fuller way between what we call the act of understanding and the act of reasoning that's in question 79 of this prap pars he'll give that distinction in these words for to understand is simply to apprehend intelligible truth and to reason is to advance from one thing understood to another so as to know an
 
 [00:13:21] intelligible truth this act of advancing piece by piece from a fundamental premise to its logical conclusion or from a general truth to any specific number of Truth which follow from it is what we mean in this article by discursive knowledge a couple examples would be like moving from the truth that the good ought to be done and evil avoided to the conclusion that therefore one should love and obey God above all things or moving from the premise all men are mortal to Socrates as a man
 
@@ -94,13 +123,19 @@ tags: [summa, day/030, pars/I]
 
 [00:14:25] feebleness of their intellectual light for if they possess the fullness of intellectual light like the Angels then in the first aspect of principles they would at once comprehend their whole range by perceiving whatever could be
 
-[00:14:39] reasoned out from them Article 4 whether the Angels understand by composing and dividing as human beings we compose and divide in our comparison of the predicate with the subject as an example take the English sentence containing the subject man and the predicate the adjective good in connecting them or comparing them to one another we can say either man is good that would be what
+[00:14:39] reasoned out from them 
+**Article 4 — Whether the angels understand by composing and dividing**
+
+Article 4 whether the Angels understand by composing and dividing as human beings we compose and divide in our comparison of the predicate with the subject as an example take the English sentence containing the subject man and the predicate the adjective good in connecting them or comparing them to one another we can say either man is good that would be what
 
 [00:15:09] Aquinas means by composition composing uniting the two with the verb is or we could say man is not good this would be an example of dividing separating the two Notions from each other by the words is not do angels understand things by bringing them together or dividing them in this way as we do and aquana says they do not because in the apprehension of a thing in knowing the truth of the subject they know the
 
 [00:15:39] predicate as virtually contained within it an angel doesn't have to put the thought together sin is evil to know it to be true the angel would simply know in knowing what sin is the subject the composite truth that it is evil as being virtually contained within it Angels do not compose or divide they do not reason they understand things in a more simple
 
-[00:16:05] total intuitive way Article Five whether there can be falsehood in the intellect of an Angel this article we will answer quite briefly but the consequences of it are much farther reaching than solely a treatment on the Angels epistemological certainty or the reliability of human cognition as we know it is also at stake in this question but first the response to the article in the then a brief aside on its broader reaching relevance Aquinas writes Aristotle says that the intelligence is always true Augustine
+[00:16:05] total intuitive way 
+**Article 5 — Whether there can be falsehood in the angel's intellect**
+
+Article Five whether there can be falsehood in the intellect of an Angel this article we will answer quite briefly but the consequences of it are much farther reaching than solely a treatment on the Angels epistemological certainty or the reliability of human cognition as we know it is also at stake in this question but first the response to the article in the then a brief aside on its broader reaching relevance Aquinas writes Aristotle says that the intelligence is always true Augustine
 
 [00:16:38] likewise says that nothing but what is true can be the object of intelligence therefore there can be neither deception nor falsehood in the Angel's knowledge let us take sight as an example the eye sees colored things accurately no one really argues with that and it must be the case both that blue is an objective reality of blue things and that our eye apprehends that reality accurately or else we would have to say we have no
 
@@ -114,11 +149,19 @@ tags: [summa, day/030, pars/I]
 
 [00:19:12] reception of some Essence like the eye simply receiving color and for more on that I would check out the text but we
 
-[00:19:19] will keep moving article six whether there is a morning and an evening knowledge in the Angels Aquinas writes the expression morning and evening knowledge was is devised by Augustine as in the Ordinary Day morning is the beginning and evening the close of the day so the knowledge of the things in the angels as they exist in the word the second person of the Trinity is called mourning knowledge and the knowledge of the very being of the thing created as it stands in its own nature is termed evening knowledge and that's probably
+[00:19:19] will keep moving
+
+**Article 6 — Whether there is morning and evening knowledge in the angels**
+
+article six whether there is a morning and an evening knowledge in the Angels Aquinas writes the expression morning and evening knowledge was is devised by Augustine as in the Ordinary Day morning is the beginning and evening the close of the day so the knowledge of the things in the angels as they exist in the word the second person of the Trinity is called mourning knowledge and the knowledge of the very being of the thing created as it stands in its own nature is termed evening knowledge and that's probably
 
 [00:19:50] sufficient for this article so moving on
 
-[00:19:52] to our last article article 7 whether the morning and evening knowledge are one Augustine says there is a vast difference between knowing anything as it is in the word of God and as it is in its own nature so that the former belongs to the morning and the latter to the evening then Aquinas explains if therefore it be called evening knowledge in so far as when the Angels behold the word they know the being which things have in their proper nature then the morning and the evening knowledge are essentially one and the same and only
+[00:19:52] to our last article
+
+**Article 7 — Whether the morning and the evening knowledge are one**
+
+article 7 whether the morning and evening knowledge are one Augustine says there is a vast difference between knowing anything as it is in the word of God and as it is in its own nature so that the former belongs to the morning and the latter to the evening then Aquinas explains if therefore it be called evening knowledge in so far as when the Angels behold the word they know the being which things have in their proper nature then the morning and the evening knowledge are essentially one and the same and only
 
 [00:20:23] differ as to the things known if it be called evening knowledge in so far as through innate ideas they know the being which things have in their own Natures then the morning and the evening knowledge differ thus Agustin seems to understand it when he assigns one as inferior to the other so morning knowledge and evening knowledge is not different in what is being known by the angel such as Humanity it is only the medium through which it is known in mourning knowledge Angels know us through knowing the one simple God
 
@@ -128,4 +171,10 @@ tags: [summa, day/030, pars/I]
 
 ## Notes
 
-<!-- TODO: editor's marginalia — questions, surprising moves, terms to look up, candidate bridges to C2A2 thinkers. Two to seven bullets. -->
+- Q.57 a.1 — *do angels know material things?* — sets the receptivity frame: angels know material essences by *infused intelligible species*, not by abstraction. The medieval shape is *the carpenter's idea of the table pre-exists in the carpenter's mind*. Bridge: Kastrup on alters as participating in pre-existing structural priors of mind-at-large; Wolfram on the ruliad as already containing every form.
+- Q.57 a.2 — particulars-not-just-essences — is the article that exposes Aristotle's universal-vs-singular bifurcation as artifact of embodied alter-cognition. The angel reaches singulars not by abstracting from sense but by participating in the substrate's *causing* of singularity. Bridge: Levin on the substrate's full determination of the particular; Hoffman's interface theory on icons vs. conscious-agent-network reality.
+- Q.57 a.4 — *secret thoughts* — is the load-bearing article for the central theme: Aquinas marks the *limit* of angelic knowing at the immaterial faculties of intellect and will. Even fallen angels cannot read the heart by direct inspection; they read only what we externalize via bodily change, imagination, daydream. Bridge: Kastrup's dissociative-alter framework explicitly preserves alter-interiority within a unified substrate. Spiritual-warfare framing: Ephesians 6:12 ("we are not contending against flesh and blood but against the principalities ...") preserves the structural privacy of the embodied alter's freedom.
+- Q.57 a.5 — *graded mysteries of grace* — names the gradient Q.58 will systematize: higher angels see more of the substrate's structural priors and *enlighten* lower angels by inducement rather than compulsion. Bridge: Wright's five-act hermeneutic (improvising faithfully within an unfolding plan); Rohr's *Universal Christ* (unveiling, not new revelation).
+- Q.58 a.2 — *to know many things as one is to know one thing* — is the cleanest contact with right-hemispheric whole-grasping (McGilchrist) at near-substrate scope; angelic whole-grasp is, structurally, what right-hemispheric attention does at the upper bound of the alter scale.
+- Q.58 a.3 — *non-discursive knowing* — preserves the active-inference reading: discursivity is the symptom of incomplete model-environment alignment; non-discursive cognition is the autopoietic limit Friston's FEP frames. The medieval phrase *feebleness of intellectual light* maps onto *high free energy in the generative model*.
+- Q.58 a.5 — *can there be falsehood in the angelic intellect?* — sets up Day 33: the demon's cognitive defect is downstream of a *volitional* refusal to subject the intellect to the divine plan. The structural setup is — error becomes possible when the alter's will perversely orients away from substrate-integration.

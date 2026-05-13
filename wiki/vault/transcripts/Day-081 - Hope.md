@@ -1,0 +1,60 @@
+---
+day: 81
+video_id: AQjjElwX1Ek
+url: https://www.youtube.com/watch?v=AQjjElwX1Ek
+title: Hope
+summa_ref: "Prima Secundae, Q.40-41"
+duration_seconds: 916
+word_count: 2497
+segment_count: 359
+caption_kind: asr
+language: en
+fetched_at: 2026-05-12
+fetch_path: yt-dlp (auto-captions)
+synthesis: "[[Day-081 - Hope - Contemporary]]"
+tags: [summa, day/081, pars/I-II, q/40, q/41]
+---
+
+# Day 81 — Hope
+
+*Aquinas, Summa Theologiae, Prima Secundae, Q.40 (hope and despair) and Q.41 (fear in itself). The two opening members of the irascible passions.*
+
+[00:00] Day 81 — questions 40 and 41 of the Prima Secundae, of the irascible passions, and first of hope and despair, and of fear in itself.
+
+[00:56] **Article 1 (Q.40): Whether hope is the same as desire or cupidity.** First, the definition of cupidity, which is a distinction within the broader category of desire. Earlier Aquinas writes: "Concupiscence of such pleasurable things is said to be not natural and is more wont to be called cupidity." We call *natural* desires (as passions) those which follow from our nature as animal; *non-natural* desires (like the desire for money, or a prestigious watch) we are more apt to call cupidities since they are desires in some way being shaped by reason. So is hope the same as desire or cupidity? **No.** Hope is distinguished from the passion of desire, natural or non-natural, in this way: hope's object must be something *arduous and difficult to obtain*. We do not speak of anyone hoping for trifles which are in one's power to have at any time. Hope differs from desire — which regards the future good absolutely — by adding the aspect of difficulty. Moreover, hope *presupposes* desire, just as all irascible passions presuppose passions of the concupiscible faculty.
+
+[02:22] **Article 2: Whether hope is in the apprehensive or in the appetitive power.** Hope is in the appetitive. Aquinas: "Hope denotes a certain stretching out of the appetite towards good; it evidently belongs to the appetitive power, since movement towards things belongs properly to the appetite, whereas the action of the cognitive power is accomplished not by the movement of the knower towards things, but rather according as the things known are in the knower." When we know what a tree is, we take the form of the tree into the mind; when we love the tree, we are drawn outwards towards the tree as existing in the world. Apprehension takes things in; appetite draws us outward. Hope is a stretching outward — therefore appetitive.
+
+[03:38] **Article 3: Whether hope is in dumb animals.** Yes. The sensitive appetite follows from sensual apprehension; animals have sensual apprehension (external senses — sight, hearing, touch; internal — imagination, instinct); therefore we should expect the sensitive irascible passion of hope in them, and we find it. Aquinas's proof: "If a dog see a hare, or a hawk see a bird, too far off, it makes no movement towards it, as having no hope to catch it; whereas if it be near, it makes a movement towards it, as being in hopes of catching it." If there were only desire in irrational animals, we would not see a distinction in action keyed precisely to the estimated likelihood of acquiring the object. That distinction is the signature of hope.
+
+[04:48] **Article 4: Whether despair is contrary to hope.** Yes. Hope is the movement of the soul *toward* the arduous future good as attainable; despair is the movement of the soul *away from* the arduous future good as unattainable. Both have the arduous future good as their object, but under contrary aspects. We experience this in ourselves: the change of feeling between the moment one expects to win the race, the moment one realizes one cannot, and the moment one has lost — hope, despair, sorrow, all in quick succession. Aquinas: "The object of hope, which is the arduous good, has the character of a principle of attraction if it be considered in the light of something attainable; but in so far as it is considered as unobtainable it has the character of a principle of repulsion. And this is how despair stands in regard to its object: it implies a movement of withdrawal; and consequently it is contrary to hope as withdrawal is contrary to approach."
+
+[06:04] **Article 5: Whether experience is a cause of hope.** Yes — in two ways. (1) Experience can add to a person's capabilities: experience reading English is the cause of hoping to understand Shakespeare. (2) Experience gives the impression that some good is attainable: a basketball team experienced in winning is apt to hope to win the next game. But experience can also work against hope: a team experienced in losing may, on account of that very experience, have *greater* cause for despair. Experience cuts both ways.
+
+[07:10] **Article 6: Whether hope abounds in young men and drunkards.** Aristotle: "Drunken men are hopeful, and the young are full of hope." Aquinas: "Youths, on account of the heat of their nature, are full of spirit, and through inexperience of obstacles as well as of their own shortcomings easily count a thing possible, and consequently are of good hope. Two of these causes are also found in those who are in drink: viz. heat and high spirits on account of wine, and heedlessness of dangers and shortcomings. For the same reason, foolish and thoughtless persons attempt everything, and are full of hope."
+
+[07:41] **Article 7: Whether hope is a cause of love.** Normally love causes hope — one must first love a promotion before hoping for it. But sometimes hope causes love: the hope of getting a promotion may cause us to love the coworker who could help us obtain it. Aquinas: "In so far as hope regards one through whom something becomes possible to us, love is caused by hope and not vice versa; because by the very fact that we hope that good will accrue to us through someone, we are moved towards him as to our own good, and thus we begin to love him."
+
+[08:51] **Article 8: Whether hope is a help or a hindrance to action.** A help — in two ways. (1) Its object is specifically the arduous-yet-possible good, which focuses attention and aids action. (2) Hope elicits pleasure (per Q.32 / Day 77), which both makes present action more enjoyable and promises future joy.
+
+[09:21] **Question 41 — Fear in itself. Article 1: Whether fear is a passion of the soul.** Yes. In the broadest use of *passion* (the reception of anything by something passive) one could call any change a passion; but following Aquinas we reserve the term for an undergoing in the appetite accompanied by bodily change — i.e. the sensitive appetite. Fear is such an undergoing: it produces a bodily contraction (a shrinking away). Its object is a possible future evil surrounding some supposed arduous good. Aquinas: "Fear, since it regards evil, belongs to the appetitive power, which of itself regards good and evil; moreover it belongs to the sensitive appetite, for it is accompanied by a certain transmutation or bodily change, i.e. contraction, as Damascene says."
+
+[10:33] **Article 2: Whether fear is a special passion.** Yes — distinct, not identical to any other irascible passion. Fear's unique place is that its object is a future evil under the aspect of *difficult* and *non-resistible*. Example: the fear of a charging lion — perceived as a possible future evil to oneself which cannot realistically be resisted. (As an aside the host offers a chart of all the emotions on request from austin@thinkcatholic.org.)
+
+[11:35] **Article 3: Whether there is a natural fear.** The question: is there a kind of fear that could apply to every created thing, from inanimate matter to the highest angel — as we can in some degenerate sense speak of "love" or "desire" in the falling stone? No. Even in its most rudimentary form, fear requires *apprehension of perceived evils*, which is not found in beings devoid of sensual apprehension. Aquinas: "The other passions of the soul denote certain movements whereto the natural inclination is in no wise sufficient — this is due either to the fact that perception or knowledge is essential to these passions, or else is because such-like movements are contrary to the very nature of natural inclination. For instance, despair flies from good on account of some difficulty, and fear shrinks from repelling a contrary evil, both of which are contrary to the inclination of nature. Wherefore such-like passions are in no way ascribed to inanimate beings."
+
+[13:11] **Article 4: Whether the species of fear is suitably assigned.** Aquinas gives six: laziness, shamefacedness, shame, amazement, stupor, and anxiety — three keyed to action, three to things. **Action-keyed:** *laziness* (fear of toil in action), *shame* (fear regarding an action already done), *shamefacedness* (fear of disgrace regarding something about to be done). **Thing-keyed:** *amazement* (fearful awe at the sheer magnitude of a thing), *stupor* (fear at the magnitude of a thing's wickedness), *anxiety* (fear at the magnitude of unknown possible misfortunes).
+
+[14:48] That brings us to the end of Q.40 and Q.41.
+
+## Notes
+
+- **Article 3 of Q.40 (hope in dumb animals)** is the most interesting opening for synthesis. Aquinas's proof — the dog moves only if the hare is near enough to be caught — is a behavioral signature of *expected utility under uncertainty*. That is precisely Friston's active inference structure: the agent's action policy is selected on the expected free energy, which folds in both desirability and feasibility. The dog with low feasibility estimate does not act; the dog with high feasibility does. Hope = behavioral access to the action policy.
+- **Article 4 (despair contrary to hope)**: hope and despair share an object (the arduous future good) but differ in *aspect* (attainable vs. unattainable). This is the structure of a *prior* under active inference: same world, different precision-weighting on the policy's feasibility prior. Despair is not the *absence* of hope but the *contrary precision*. The synthesis: clinical despair is not a "lack" but a learned prior of unattainability.
+- **Article 5 (experience cuts both ways)**: the team experienced in losing has greater cause for despair. This is exactly the Bayesian update — accumulated negative evidence sharpens the prior toward unattainability. Useful for the synthesis: hope and despair both grow with experience, depending on what the evidence says.
+- **Article 6 (hope abounds in youth and drunkards)**: inexperience of obstacles plus heat-of-nature = high prior on attainability. The synthesis can note that this is *not* a moral compliment — Aquinas is describing a structural feature, not a virtue. The mature agent has the same hope but with calibrated priors.
+- **Article 7 (hope can cause love)**: this is the interpersonal motivation finding — we orient affectively toward those who make our goals possible. Fredrickson's positivity resonance / weak-tie social trust is the empirical mechanism.
+- **Q.41 Article 1**: fear has somatic signature (contraction). PNI / autonomic literature; sympathetic activation. Fear is in the body, not just the model.
+- **Q.41 Article 2**: fear's object = future evil + difficult + non-resistible. Three precision conditions: time-orientation, valence, agency-availability. Take any one away and you get a different passion (anger if resistible; sorrow if present; aversion if easy).
+- **Q.41 Article 3 (no natural fear in inanimate things)**: fear requires apprehension. This is the appetite/cognition boundary — under mind-monism, the question becomes about where in the scale of agents apprehension begins (Levin: every cell? every collective?), which Aquinas leaves open by tying fear to *sensual* apprehension.
+- **Q.41 Article 4 (six species)**: a useful taxonomy. *Anxiety* singled out as fear of the magnitude of *unknown* possible misfortunes — this is exactly the predictive-processing definition of anxiety (high uncertainty + low precision). The synthesis can lean hard on this article for the modern clinical mapping.

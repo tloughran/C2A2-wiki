@@ -15,7 +15,7 @@ fetched_at: 2026-05-05
 fetch_path: "tactiq.io via Chrome MCP (catch-up batch)"
 synthesis: "[[Day-046 - Knowledge After Death - Contemporary]]"
 fidelity_checked: false
-last_qc_at: "2026-05-05T21:32:29"
+last_qc_at: "2026-05-13T00:20:04"
 last_qc_outcome: "pass"
 render_pass: auto-catchup-2026-05-05
 tags: [summa, day/046, pars/I]
