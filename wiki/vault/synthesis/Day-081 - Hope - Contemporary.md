@@ -81,5 +81,5 @@ karpathy_wiki_sources:
   - "traditions/stump/ — PRS-04 final causality; PRS-09 faith-as-knowledge-of-persons; *Wandering in Darkness*"
 evidence_strength_summary: "Active-inference and broaden-and-build are empirically robust; intolerance-of-uncertainty as the diagnostic core of clinical anxiety is empirically supported; hemispheric account is clinically grounded; the conscious-realist-monist reframe of appetite as policy-machinery is metaphysically speculative; Wright's inaugurated eschatology and Rohr's contemplative integration are theologically attested."
 tags: [synthesis, day/081, theme/hope, theme/despair, theme/irascible-passions, theme/policy-precision]
-last_qc_at: "2026-05-12T18:29:06"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-14T20:21:39"
+last_qc_outcome: "pass"

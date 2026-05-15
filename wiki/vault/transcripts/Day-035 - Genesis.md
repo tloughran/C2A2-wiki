@@ -3,7 +3,7 @@ day: 35
 video_id: TzA9QvbYKt0
 url: https://www.youtube.com/watch?v=TzA9QvbYKt0
 title: Genesis
-summa_ref: Prima Pars, Q.67 + Q.68
+summa_ref: Prima Pars, Q.67 + Q.68  # Habash verbally says "65 and 66" but reads the Q.67/Q.68 titles ("work of distinction in itself"; "work of the second day") and covers that material. Q.65-66 were Day 34; Day 36 picks up Q.69-70. Cadence and content confirm Q.67-68.
 duration_seconds: 1113
 word_count: 3205
 raw_asr_word_count: 3205
@@ -18,7 +18,7 @@ fidelity_checked: true
 last_qc_at: "2026-05-12T12:21:35"
 last_qc_outcome: "rewrote"
 render_pass: structural-pass-2026-05-12  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render; corrected summa_ref from misread Q.65+66 to actual Q.67+68
-tags: [summa, day/035, pars/I]
+tags: [summa, day/035, pars/I, q/67, q/68]
 ---
 # Day 35 — Genesis
 

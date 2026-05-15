@@ -3,7 +3,7 @@ day: 8
 video_id: tnVPg1ylcYQ
 url: https://www.youtube.com/watch?v=tnVPg1ylcYQ
 title: Does God Have a Name?
-summa_ref: Prima Pars, Q.13
+summa_ref: Prima Pars, Q.13 + Q.14
 duration_seconds: 1533
 word_count: 4095
 raw_asr_word_count: 4095
@@ -17,7 +17,7 @@ synthesis: "[[Day-008 - Does God Have a Name - Contemporary]]"
 fidelity_checked: true
 last_qc_at: "2026-05-09T16:22:57"
 last_qc_outcome: "rewrote"
-tags: [summa, day/008, pars/I]
+tags: [summa, day/008, pars/I, q/13, q/14]
 ---
 
 # Day 8 — Does God Have a Name?

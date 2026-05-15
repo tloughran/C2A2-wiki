@@ -3,7 +3,7 @@ day: 62
 video_id: UZTLwrED2r0
 url: https://www.youtube.com/watch?v=UZTLwrED2r0
 title: The Pursuit of Happiness
-summa_ref: Prima Pars, Q.2 + Q.3
+summa_ref: Prima Secundae, Q.2 + Q.3
 duration_seconds: 1325
 word_count: 3405
 raw_asr_word_count: 3405
@@ -14,11 +14,11 @@ language: en
 fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-062 - The Pursuit of Happiness - Contemporary]]"
-fidelity_checked: false
-last_qc_at: null
-last_qc_outcome: null
+fidelity_checked: true
+last_qc_at: "2026-05-14T08:23:32"
+last_qc_outcome: "pass"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
-tags: [summa, day/062, pars/I]
+tags: [summa, day/062, pars/I-II, q/2, q/3]
 ---
 # Day 62 — The Pursuit of Happiness
 

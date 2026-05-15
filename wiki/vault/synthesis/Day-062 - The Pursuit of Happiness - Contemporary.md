@@ -16,8 +16,8 @@ length_ratio_to_target: 0.768
 length_note: "Substantively complete at 1690 words; the negative-arguments register over Q.2–Q.3's 16 exclusion articles is structurally compact and the convergent-multi-tradition reading does not need padding to land."
 mind_first_reframe: "Aquinas's exclusion arguments diagnose mis-located goods under perspective-limitation, and the contemplative-union conclusion preserves as the alter's integrative act of becoming-aligned with mind-at-large's own integrative dynamics — beatific vision under Kastrup is full-alignment with the substrate-source."
 central_theme_thread: "Each excluded candidate-good fails because flourishing is the alter's integrative act of union with the substrate-source's loving unity; the daily task is to recognize the diagnostic of mis-location through hedonic adaptation, narrowed openness, and dispositional fixity."
-last_qc_at: "2026-05-09T14:29:38"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-14T08:23:32"
+last_qc_outcome: "pass"
 tags: [synthesis, day/062, theme/happiness, theme/material-vs-formal-good]
 ---
 # Day 62 — Contemporary Parallel: *The Negative Argument — What Happiness Is Not, and Why That Matters*

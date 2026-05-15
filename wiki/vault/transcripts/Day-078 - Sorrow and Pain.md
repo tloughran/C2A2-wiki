@@ -6,11 +6,16 @@ title: Sorrow and Pain
 summa_ref: "Prima Secundae, Q.34-35"
 duration_seconds: 724
 word_count: 1880
+raw_asr_word_count: 1992
+length_tier: short
 segment_count: 188
 caption_kind: asr
 language: en
 fetched_at: 2026-05-11
 fetch_path: chrome-mcp via tactiq.io
+fidelity_checked: true
+last_qc_at: "2026-05-14T16:26:53"
+last_qc_outcome: "rewrote"
 synthesis: "[[Day-078 - Sorrow and Pain - Contemporary]]"
 tags: [summa, day/078, pars/I-II, q/34, q/35]
 ---
@@ -18,6 +23,8 @@ tags: [summa, day/078, pars/I-II, q/34, q/35]
 # Day 78 — Sorrow and Pain
 
 *Aquinas, Summa Theologiae, Prima Secundae, Q.34 (goodness and malice of pleasures) and Q.35 (pain or sorrow in itself).*
+
+## Transcript
 
 [00:00] Day 78 — questions 34 and 35 of the Prima Secundae, of the goodness and malice of pleasures and of pain or sorrow in itself.
 

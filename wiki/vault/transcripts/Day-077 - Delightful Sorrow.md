@@ -6,11 +6,16 @@ title: Delightful Sorrow
 summa_ref: "Prima Secundae, Q.32-33"
 duration_seconds: 875
 word_count: 2240
+raw_asr_word_count: 2500
+length_tier: medium
 segment_count: 222
 caption_kind: asr
 language: en
 fetched_at: 2026-05-11
 fetch_path: chrome-mcp via tactiq.io
+fidelity_checked: true
+last_qc_at: "2026-05-14T16:26:49"
+last_qc_outcome: "rewrote"
 synthesis: "[[Day-077 - Delightful Sorrow - Contemporary]]"
 tags: [summa, day/077, pars/I-II, q/32, q/33]
 ---
@@ -18,6 +23,8 @@ tags: [summa, day/077, pars/I-II, q/32, q/33]
 # Day 77 — Delightful Sorrow
 
 *Aquinas, Summa Theologiae, Prima Secundae, Q.32 (cause of pleasure) and Q.33 (effects of pleasure).*
+
+## Transcript
 
 [00:00] Day 77 — covering questions 32 and 33 of the Prima Secundae, of the cause of pleasure and of the effects of pleasure.
 

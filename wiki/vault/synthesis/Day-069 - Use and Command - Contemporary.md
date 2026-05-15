@@ -17,8 +17,8 @@ length_note: "Q.16 (use, 4 articles) + Q.17 (acts commanded by the will, 9 artic
 mind_first_reframe: "Aquinas's Q.16-17 substrate-of-command map preserves with remarkable structural fidelity under hierarchical active inference (Friston) + multi-scale agency (Levin) + cognitive-appraisal of emotion (Fredrickson): each layer's controllability is exactly what its constitutive autonomy permits, and the medieval 'one human act' integrating command-and-commanded is the integrated multi-layer policy-selection that *is* the alter's action."
 central_theme_thread: "The alter's salvation in fear and trembling operates through a layered-control architecture in which deliberate command reaches some layers directly (motor) and others only via the management of attention and apprehension; the daily-task structure of spiritual practices is the leverage of attention-management on the lower layers (Wright on renewing-the-mind, Rohr on contemplative cultivation, Fredrickson on positive-affect-induction), with second-personal care (Stump) surfacing the diagnostic the alter cannot surface from inside."
 tags: [synthesis, day/069, theme/execution, theme/layered-control, theme/command]
-last_qc_at: "2026-05-09T18:29:54"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-14T12:25:25"
+last_qc_outcome: "pass"
 ---
 # Day 69 — Contemporary Parallel: *The Layered Control Architecture of Execution*
 

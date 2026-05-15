@@ -6,13 +6,18 @@ title: Morality
 summa_ref: Prima Secundae, Q.18 + Q.19
 duration_seconds: 1620
 word_count: 4083
+raw_asr_word_count: 4047
+length_tier: long
 segment_count: 600
 caption_kind: asr
 language: en
 fetched_at: 2026-05-09
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-070 - Morality - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/070, pars/I-II, q/18, q/19]
+last_qc_at: "2026-05-14T12:25:36"
+last_qc_outcome: "rewrote"
 ---
 # Day 70 — Morality
 
@@ -20,7 +25,9 @@ tags: [summa, day/070, pars/I-II, q/18, q/19]
 
 Today's episode covers Prima Secundae Q.18 (the good and evil of human acts in general — 11 articles) and Q.19 (the goodness and malice of the interior act of the will — 10 articles). This is the moral-evaluation arc proper: object, circumstances, end, and reason as the rule by which voluntary action is judged morally good or evil.
 
-## Q.18 — The good and evil of human acts in general
+## Transcript
+
+### Q.18 — The good and evil of human acts in general
 
 **a.1 — Whether every human action is good.** No. Evil is privation — a lacking of the goodness or being proper to a thing (cf. ep.25). A human action lacking proper goodness in regard to its object, circumstances, or intended end is an evil action.
 
@@ -44,7 +51,7 @@ Today's episode covers Prima Secundae Q.18 (the good and evil of human acts in g
 
 **a.11 — Whether every circumstance that makes an action better or worse places a moral action in a species of good or evil.** No. Some circumstances merely *aggravate* — stealing a larger or smaller amount changes the magnitude of the evil but not its species.
 
-## Q.19 — The goodness and malice of the interior act of the will
+### Q.19 — The goodness and malice of the interior act of the will
 
 **a.1 — Whether the goodness of the will depends on the object.** Yes. *In so far as the good in question is in accord with reason, it enters the moral order and causes moral goodness in the act of the will.*
 

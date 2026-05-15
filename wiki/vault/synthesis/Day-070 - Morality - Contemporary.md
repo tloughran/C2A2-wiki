@@ -17,8 +17,8 @@ length_note: "Q.18 (11 articles) + Q.19 (10 articles) treated as the moral-evalu
 mind_first_reframe: "Q.19 a.10's formal/material distinction — the alter wills the universal good *formally* and the particular good *materially* — maps onto active-inference's terminal-prior-vs-instrumental-prior distinction (Friston); privation-theory of evil (Q.18 a.1) preserves under Levin's form-as-bioelectric-pattern as deficient morphogenesis; erring-conscience (Q.19 a.5-6) is the perspective-limitation made operational, with second-personal-knowing (Stump) the structural mode of correction across alters of differing apprehension."
 central_theme_thread: "Today is the central-theme load-bearing keystone day: each conscious agent is individuated by perspective-limitation while constitutively directed-formally toward the universal good (the substrate-source's integrative dynamics), and salvation in fear and trembling is the daily-task work of cultivating apprehension under second-person care, maintaining formal alignment when material judgment is partial or erring, and holding the formal-unity of all alters' direction-toward-the-universal-good even when material disagreement persists — the Dominican-fasting example (Q.19 a.10) is the medieval articulation of exactly this individuation-by-perspective-with-formal-unity structure."
 tags: [synthesis, day/070, theme/moral-evaluation, theme/conformity-to-divine-will, theme/erring-conscience, central-theme-load-bearing]
-last_qc_at: "2026-05-09T18:30:03"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-14T12:25:36"
+last_qc_outcome: "pass"
 ---
 # Day 70 — Contemporary Parallel: *Moral Evaluation, Erring Conscience, and Formal-vs-Material Conformity to the Substrate-Source*
 

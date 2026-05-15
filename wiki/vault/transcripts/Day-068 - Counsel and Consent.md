@@ -6,13 +6,18 @@ title: Counsel and Consent
 summa_ref: Prima Secundae, Q.14 + Q.15
 duration_seconds: 751
 word_count: 2050
+raw_asr_word_count: 1987
+length_tier: short
 segment_count: 285
 caption_kind: asr
 language: en
 fetched_at: 2026-05-09
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-068 - Counsel and Consent - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/068, pars/I-II, q/14, q/15]
+last_qc_at: "2026-05-14T12:25:14"
+last_qc_outcome: "rewrote"
 ---
 # Day 68 — Counsel and Consent
 
@@ -20,7 +25,9 @@ tags: [summa, day/068, pars/I-II, q/14, q/15]
 
 Today's episode covers Prima Secundae Q.14 (counsel, which precedes choice — 6 articles) and Q.15 (consent, an act of the will with regard to the means — 4 articles). The "ballroom dance" between intellect and will continues: counsel is the intellect's *investigation* of means; consent is the will's *approval* of those means.
 
-## Q.14 — Counsel
+## Transcript
+
+### Q.14 — Counsel
 
 **a.1 — Whether counsel is an inquiry.** Yes — counsel is a kind of investigation into the most suitable means to some end. *There is much uncertainty in things that have to be done because actions are concerned with contingent singulars; now in things doubtful and uncertain the reason does not pronounce judgment without previous inquiry; wherefore the reason must of necessity institute an inquiry before deciding on the objects of choice, and this inquiry is called counsel.* The dance between intellect and will: choice is strictly an act of the will following intellect's consideration; counsel is strictly an act of intellect motivated by what is desired by the will.
 
@@ -34,7 +41,7 @@ Today's episode covers Prima Secundae Q.14 (counsel, which precedes choice — 6
 
 **a.6 — Whether the process of counsel is indefinite.** No. From either end of the process — the end-goal or the reasoner — counsel is bounded. The chandelier needs a definite ceiling; the chain of reasoning needs a definite terminus. *Just as a chandelier cannot be held off the ground by an endless series of chain lengths above it without some definite singular ultimate ceiling, so too counsel cannot even begin without a very definite singular end-goal.*
 
-## Q.15 — Consent
+### Q.15 — Consent
 
 **a.1 — Whether consent is an act of the appetitive or of the apprehensive power.** Of the appetitive — the will. *Consentire — to consent — is to feel with, literally; and this implies a certain union to the object of consent. Hence the will, to which it belongs to tend to the thing itself, is more properly said to consent.* Important distinction from choice: *choice includes something that consent has not, namely a certain relation to something to which something else is preferred. And therefore after consent there still remains a choice.* By counsel several means may be found conducive to the end and through approval consent given to each — but after approving many we give preference to one by *choosing* it.
 

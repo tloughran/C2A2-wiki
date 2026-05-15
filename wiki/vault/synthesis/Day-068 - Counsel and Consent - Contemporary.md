@@ -17,8 +17,8 @@ length_note: "Q.14 (counsel, 6 articles) and Q.15 (consent, 4 articles) treated 
 mind_first_reframe: "Counsel is the alter's analytic-backward-inference under expected-free-energy minimization (Friston, Q.14 a.5); consent is HTM-style multi-policy parallel approval before commitment (Hawkins, Q.15 a.1-3); both are bounded by perspective-limited resources (Levin, Q.14 a.6) and structurally extended through friend-and-instrument second-personal-knowing (Stump, Q.14 a.3)."
 central_theme_thread: "Salvation in fear and trembling under perspective-limitation includes the daily-task work of deliberating well under bounded resources; Q.14 a.3's friend-and-instrument extension functions as extended-cognition that lets the alter's deliberation reach further than its own bounded resources alone permit, and Q.15's consent-then-choice structure is the perspective-limited alter approving multiple viable mean-policies before commitment, never reducing options to one until the further volitional act."
 tags: [synthesis, day/068, theme/deliberation, theme/bounded-rationality, theme/extended-cognition]
-last_qc_at: "2026-05-09T18:29:45"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-14T12:25:14"
+last_qc_outcome: "pass"
 ---
 # Day 68 — Contemporary Parallel: *Counsel as Analytic Backward-Inference and Consent as Multi-Policy Approval*
 

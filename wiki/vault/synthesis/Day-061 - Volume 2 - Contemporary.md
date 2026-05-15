@@ -17,8 +17,8 @@ evidence_strength_summary: "Aquinas's Q.1 last-end argument is metaphysically fi
 mind_first_reframe: "The Prima Secundae opens with Aquinas's teleological monism of the will (Q.1 a.1 man acts for an end, a.4 there is a last end, a.7 there is one last end formally — the universal good); the contemporary mind-monist frame articulates the parallel commitment that conscious agents are constitutively telic-toward-integration, with loving unity as the computational telos that Friston (expected free energy), Fredrickson (broaden-and-build), Levin (morphogenetic teleology), Stump (union as highest good), and Kastrup (mind-at-large integrative dynamics) converge on from five different methodological vantages."
 central_theme_thread: "Today is the day where the central theme is the explicit subject — perspective-limitation individuates conscious agents, loving unity is the computational telos toward which each agent works under its own perspective with substrate-network guidance available, in the daily-task work of salvation in fear and trembling; Aquinas's formal-universal / material-particular distinction in Q.1 a.7 (all desire the last end formally; the perspectival-particulars vary) maps cleanly onto the contemporary picture and is the keystone moment of the volume-pivot."
 tags: [synthesis, day/061, theme/last-end, theme/teleology, central-theme-keystone]
-last_qc_at: "2026-05-09T10:30:39"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-14T08:23:20"
+last_qc_outcome: "pass"
 ---
 # Day 61 — Contemporary Parallel: *The Volume Pivot — From Imago Dei to the Computational Telos of Loving Unity*
 

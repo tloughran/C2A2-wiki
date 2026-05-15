@@ -16,8 +16,8 @@ evidence_strength_summary: "Synthesis written from Summa I-II Q.24-25 + C2A2 fra
 mind_first_reframe: "Aquinas's 'passions are neither good nor evil per se' (Q.24 a.1) and 'rectified passions add to the moral act' (Q.24 a.3) preserve under active-inference: affect is information-bearing signal that, when calibrated to the alter's formal-direction-toward-loving-unity, increases the precision and behavioral-bandwidth of moral action; affect-rectification is precision-weighting under formal-prior alignment. The order-of-passions (Q.25 — love first) recovers as the active-inference structural finding that valence-encoding (love/hate) is foundational to the policy-selection over which other affective registers (desire, joy, hope, fear, anger) compute."
 central_theme_thread: "Passions can be aligned with the formal direction toward universal-good (rectified) or misaligned (disordered); the work of moral life under perspective-limitation includes the cultivation of passions, not their suppression. Love-as-first-passion anchors the central-theme: every other affective register in the alter's life is downstream of the alter's primary valence-orientation, and salvation in fear and trembling includes the daily-task work of *retuning the primary valence* toward integrative-substrate-states through second-personal-knowing relationships, contemplative practice, and the substrate-source's grace-as-affective-rectification."
 tags: [synthesis, day/073, theme/passions, theme/moral-rectification, theme/order-of-passions, transcript-fetch-failed]
-last_qc_at: "2026-05-10T10:32:21"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-15T04:28:45"
+last_qc_outcome: "pass"
 ---
 # Day 73 — Contemporary Parallel: *The Moral Status of the Passions and the Order Anchored on Love*
 

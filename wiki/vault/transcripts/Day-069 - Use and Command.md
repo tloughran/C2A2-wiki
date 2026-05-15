@@ -6,13 +6,18 @@ title: Use and Command
 summa_ref: Prima Secundae, Q.16 + Q.17
 duration_seconds: 813
 word_count: 2070
+raw_asr_word_count: 2045
+length_tier: medium
 segment_count: 290
 caption_kind: asr
 language: en
 fetched_at: 2026-05-09
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-069 - Use and Command - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/069, pars/I-II, q/16, q/17]
+last_qc_at: "2026-05-14T12:25:25"
+last_qc_outcome: "rewrote"
 ---
 # Day 69 — Use and Command
 
@@ -20,7 +25,9 @@ tags: [summa, day/069, pars/I-II, q/16, q/17]
 
 This episode closes the Summa's intricate breakdown of human action by treating *use* (Q.16, the will applying chosen means to execution — 4 articles) and *command* (Q.17, the act of reason that directs the executing power — 9 articles). Habash follows the Gilby translation in rendering the Latin *usus* as **application** when the meaning is "applying the will to execute the means."
 
-## Q.16 — Use (Application)
+## Transcript
+
+### Q.16 — Use (Application)
 
 **a.1 — Whether use is an act of the will.** *Application is to refer that which is the object of application to the obtaining of something else.* It is the applying of the will to the execution of some means for the sake of the end. *It is evident that first and principally application belongs to the will as first mover, to the reason as directing, and to the other powers as executing the operation, which powers are compared to the will which applies them to act as the instruments are compared to the principal agent.* The full sequence: counsel's decision (reason's judgment) → choice (will) → reason commands the executing power → the will applies that power to fulfill the command.
 
@@ -30,7 +37,7 @@ This episode closes the Summa's intricate breakdown of human action by treating 
 
 **a.4 — Whether application precedes choice.** No — application *follows* choice. *The motion of the will to the execution of the work precedes execution but follows choice.* So use stands between choice and execution.
 
-## Q.17 — The Acts Commanded by the Will
+### Q.17 — The Acts Commanded by the Will
 
 **a.1 — Whether command is an act of reason or of the will.** *Command is an act of the reason, presupposing an act of the will, in virtue of which the reason by its command moves the power to the execution of the act.* Command — coming after choice but before application — moves the will *by intimating and declaring*. This is an act of reason.
 

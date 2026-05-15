@@ -6,18 +6,25 @@ title: Habits
 summa_ref: "Prima Secundae, Q.48-49"
 duration_seconds: 898
 word_count: 2378
+raw_asr_word_count: 2366
+length_tier: medium
 segment_count: 342
 caption_kind: asr
 language: en
 fetched_at: 2026-05-12
 fetch_path: yt-dlp (auto-captions)
 synthesis: "[[Day-085 - Habits - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/085, pars/I-II, q/48, q/49]
+last_qc_at: "2026-05-15T08:22:11"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 85 — Habits
 
 *Aquinas, Summa Theologiae, Prima Secundae, Q.48 (effects of anger — closing the passions tract) and Q.49 (habits in general — opening the habits tract).*
+
+## Transcript
 
 [00:00] Day 85 — questions 48 and 49 of the Prima Secundae, of the effects of anger and of habits in general as to their substance.
 

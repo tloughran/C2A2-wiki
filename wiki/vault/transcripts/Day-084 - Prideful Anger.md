@@ -6,18 +6,28 @@ title: Prideful Anger
 summa_ref: "Prima Secundae, Q.46-47"
 duration_seconds: 910
 word_count: 2510
+raw_asr_word_count: 2505
+length_tier: medium
 segment_count: 353
 caption_kind: asr
 language: en
 fetched_at: 2026-05-12
-fetch_path: yt-dlp (auto-captions)
+fetch_path: yt-dlp (auto-captions); cache refreshed 2026-05-15
 synthesis: "[[Day-084 - Prideful Anger - Contemporary]]"
+# Note: passes with advisory warnings only; editorial-paraphrase style flagged for Tom in 2026-05-15T04:29 QC log
+fidelity_checked: true
 tags: [summa, day/084, pars/I-II, q/46, q/47]
+last_qc_at: "2026-05-15T04:29:22"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 84 — Prideful Anger
 
 *Aquinas, Summa Theologiae, Prima Secundae, Q.46 (anger in itself) and Q.47 (the cause that provokes anger).*
+
+> Note: this transcript was authored as a polished editorial paraphrase rather than a verbatim ASR rendering — Aquinas's direct quotes are reproduced exactly, but the connective prose compresses Habash's spoken delivery. The substance, article-order, and quote-fidelity match the cached ASR at `/tmp/day084_segments.json`; the prose style is editorial. QC sweep 2026-05-15 flagged this as a project-wide style question for Tom (see QC log).
+
+## Transcript
 
 [00:00] Day 84 — questions 46 and 47 of the Prima Secundae, of anger in itself and of the cause that provokes anger.
 

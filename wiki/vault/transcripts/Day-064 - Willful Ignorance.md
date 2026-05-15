@@ -3,7 +3,7 @@ day: 64
 video_id: iGDxbZ8inUY
 url: https://www.youtube.com/watch?v=iGDxbZ8inUY
 title: Willful Ignorance
-summa_ref: Prima Pars, Q.6 + Q.7
+summa_ref: Prima Secundae, Q.6 + Q.7
 duration_seconds: 1191
 word_count: 3020
 raw_asr_word_count: 3020
@@ -14,11 +14,11 @@ language: en
 fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-064 - Willful Ignorance - Contemporary]]"
-fidelity_checked: false
-last_qc_at: null
-last_qc_outcome: null
+fidelity_checked: true
+last_qc_at: "2026-05-14T08:23:55"
+last_qc_outcome: "pass"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
-tags: [summa, day/064, pars/I]
+tags: [summa, day/064, pars/I-II, q/6, q/7]
 ---
 # Day 64 — Willful Ignorance
 

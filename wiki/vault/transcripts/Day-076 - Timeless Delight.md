@@ -6,11 +6,16 @@ title: Timeless Delight
 summa_ref: "Prima Secundae, Q.30-31"
 duration_seconds: 1023
 word_count: 2520
+raw_asr_word_count: 2773
+length_tier: medium
 segment_count: 252
 caption_kind: asr
 language: en
 fetched_at: 2026-05-11
 fetch_path: chrome-mcp via tactiq.io
+fidelity_checked: true
+last_qc_at: "2026-05-14T16:26:44"
+last_qc_outcome: "rewrote"
 synthesis: "[[Day-076 - Timeless Delight - Contemporary]]"
 tags: [summa, day/076, pars/I-II, q/30, q/31]
 ---
@@ -18,6 +23,8 @@ tags: [summa, day/076, pars/I-II, q/30, q/31]
 # Day 76 — Timeless Delight
 
 *Aquinas, Summa Theologiae, Prima Secundae, Q.30 (concupiscence/desire) and Q.31 (delight considered in itself).*
+
+## Transcript
 
 [00:00] Hello, my name is Austin Habash, founder of Think Catholic, and you're listening to the Summa Podcast where we study St. Thomas Aquinas's *Summa Theologiae* in a way simple and insightful for anyone to understand. The *Summa in a Year* podcast is brought to you by Think Catholic; taking two questions of the *Summa* a day, we'll seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith. This is Day 76 — covering questions 30 and 31 of the Prima Secundae, that is, of concupiscence and of delight considered in itself.
 

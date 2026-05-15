@@ -14,9 +14,9 @@ language: en
 fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-056 - The Order of Demons - Contemporary]]"
-fidelity_checked: false
-last_qc_at: null
-last_qc_outcome: null
+fidelity_checked: true
+last_qc_at: "2026-05-14T04:20:30"
+last_qc_outcome: "pass"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/056, pars/I]
 ---

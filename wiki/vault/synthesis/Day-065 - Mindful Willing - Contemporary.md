@@ -16,8 +16,8 @@ length_ratio_to_target: 0.682
 length_note: "Q.8–Q.9 (9 articles) treated thematically as the causal architecture of policy-selection. The medieval formal-vs-material distinction at the will-level and the multi-source movement of the will (intellect, passion, self-movement, exterior bodies, God) are structurally well-paired with the hierarchical-prior frame, so the prose stays compact at 1500 words while doing the substantive bridging work."
 mind_first_reframe: "The will's formal directedness toward the universal good preserves under hierarchical active inference (terminal vs. instrumental priors); the multi-source movement of the will is the multi-source causal architecture of policy-selection, with the substrate-source's primary causation operating *through* secondary causes rather than against them."
 central_theme_thread: "The will is constitutively perspective-limited but formally directed toward the universal good; the daily task is to coordinate intellect, passion, self-movement, and the substrate-network's pedagogy so that the alter's actual policy-selection aligns with the substrate-source's loving unity rather than mis-locating the universal good in particular candidates."
-last_qc_at: "2026-05-09T14:30:19"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-14T08:24:08"
+last_qc_outcome: "pass"
 tags: [synthesis, day/065, theme/will-structure, theme/means-and-end]
 ---
 # Day 65 — Contemporary Parallel: *The Structure of the Will and What Moves It*

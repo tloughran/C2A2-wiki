@@ -6,13 +6,18 @@ title: Intention and Choice
 summa_ref: Prima Secundae, Q.12 + Q.13
 duration_seconds: 1025
 word_count: 2600
+raw_asr_word_count: 2624
+length_tier: medium
 segment_count: 380
 caption_kind: asr
 language: en
 fetched_at: 2026-05-09
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-067 - Intention and Choice - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/067, pars/I-II, q/12, q/13]
+last_qc_at: "2026-05-14T12:25:02"
+last_qc_outcome: "rewrote"
 ---
 # Day 67 — Intention and Choice
 
@@ -20,7 +25,9 @@ tags: [summa, day/067, pars/I-II, q/12, q/13]
 
 Today's episode covers Prima Secundae Q.12 (intention as an act of the will) and Q.13 (choice as the act of the will with regard to the means). Together they articulate the distinction between *willing the end* (volition, intention, enjoyment) and *willing the means* (choice, consent, use), with intention as the bridge.
 
-## Q.12 — Intention
+## Transcript
+
+### Q.12 — Intention
 
 **a.1 — Whether intention is an act of the intellect or of the will.** There are three acts of the will regarding the end: *volition* (willing something simply, like health), *intention* (willing the end as the term toward which something else is ordered), and *enjoyment* (the will's resting in the end). Aquinas: *intention as the very word denotes signifies to tend to something; consequently intention belongs first and principally to that which moves to the end. Now the will moves all the other powers of the soul to the end; wherefore it is evident that intention properly speaking is an act of the will.*
 
@@ -32,7 +39,7 @@ Today's episode covers Prima Secundae Q.12 (intention as an act of the will) and
 
 **a.5 — Whether intention is within the competency of irrational animals.** No, strictly speaking. They cannot understand goals as goals to be intended. But they have built-in tendings — *moved to an end not as though they thought that they can gain the end by this movement (this belongs to one that intends), but through desiring the end by natural instinct.* The stone tends toward union by gravitational motion; the bee toward making a beehive; dogs and rabbits by instinctual tendency.
 
-## Q.13 — Choice
+### Q.13 — Choice
 
 Aquinas's preamble: *we must now consider the acts of the will with regard to the means. There are three of them: to choose, to consent, and to use. And choice is preceded by counsel.*
 

@@ -14,8 +14,8 @@ language: en
 fetched_at: 2026-05-05
 fetch_path: "tactiq.io via Chrome MCP (catch-up batch)"
 synthesis: "[[Day-050 - The Tree of Life - Contemporary]]"
-fidelity_checked: false
-last_qc_at: "2026-05-05T21:32:46"
+fidelity_checked: true
+last_qc_at: "2026-05-14T00:21:20"
 last_qc_outcome: "pass"
 render_pass: auto-catchup-2026-05-05
 tags: [summa, day/050, pars/I]

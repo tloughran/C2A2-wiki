@@ -6,6 +6,8 @@ title: Hope
 summa_ref: "Prima Secundae, Q.40-41"
 duration_seconds: 916
 word_count: 2497
+raw_asr_word_count: 2489
+length_tier: medium
 segment_count: 359
 caption_kind: asr
 language: en
@@ -13,11 +15,16 @@ fetched_at: 2026-05-12
 fetch_path: yt-dlp (auto-captions)
 synthesis: "[[Day-081 - Hope - Contemporary]]"
 tags: [summa, day/081, pars/I-II, q/40, q/41]
+fidelity_checked: true
+last_qc_at: "2026-05-14T20:21:39"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 81 — Hope
 
 *Aquinas, Summa Theologiae, Prima Secundae, Q.40 (hope and despair) and Q.41 (fear in itself). The two opening members of the irascible passions.*
+
+## Transcript
 
 [00:00] Day 81 — questions 40 and 41 of the Prima Secundae, of the irascible passions, and first of hope and despair, and of fear in itself.
 

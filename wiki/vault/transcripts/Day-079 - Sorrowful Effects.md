@@ -6,6 +6,8 @@ title: Sorrowful Effects
 summa_ref: "Prima Secundae, Q.36-37"
 duration_seconds: 547
 word_count: 1430
+raw_asr_word_count: 1468
+length_tier: short
 segment_count: 138
 caption_kind: asr
 language: en
@@ -13,11 +15,16 @@ fetched_at: 2026-05-11
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-079 - Sorrowful Effects - Contemporary]]"
 tags: [summa, day/079, pars/I-II, q/36, q/37]
+fidelity_checked: true
+last_qc_at: "2026-05-14T20:21:30"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 79 — Sorrowful Effects
 
 *Aquinas, Summa Theologiae, Prima Secundae, Q.36 (causes of sorrow/pain) and Q.37 (effects of pain or sorrow).*
+
+## Transcript
 
 [00:00] Day 79 — questions 36 and 37 of the Prima Secundae, of the causes of sorrow or pain and the effects of pain or sorrow.
 

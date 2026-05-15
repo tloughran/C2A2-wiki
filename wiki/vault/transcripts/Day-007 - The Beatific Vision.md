@@ -3,7 +3,7 @@ day: 7
 video_id: T9KB82N-mmQ
 url: https://www.youtube.com/watch?v=T9KB82N-mmQ
 title: The Beatific Vision
-summa_ref: Prima Pars, Q.12
+summa_ref: Prima Pars, Q.11 + Q.12
 duration_seconds: 1778
 word_count: 4491
 raw_asr_word_count: 4491
@@ -17,7 +17,7 @@ synthesis: "[[Day-007 - The Beatific Vision - Contemporary]]"
 fidelity_checked: true
 last_qc_at: "2026-05-09T16:22:45"
 last_qc_outcome: "rewrote"
-tags: [summa, day/007, pars/I]
+tags: [summa, day/007, pars/I, q/11, q/12]
 ---
 
 # Day 7 — The Beatific Vision

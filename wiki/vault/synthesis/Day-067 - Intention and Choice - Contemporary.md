@@ -16,8 +16,8 @@ length_ratio_to_target: 0.736
 length_note: "Q.12–Q.13 (11 articles) treated thematically as the hierarchical-prior structure of practical reasoning. The medieval bridge-act-of-intention plus practical-syllogism-conclusion-of-choice maps tightly onto active-inference's hierarchical generative models, so the bridging prose stays compact while preserving every keystone move (Q.12 a.4 single-act-multi-object, Q.13 a.3 conclusions-become-principles, Q.13 a.6 freedom-only-among-particulars)."
 mind_first_reframe: "Intention is the alter's hierarchical-prior commitment to a terminal-or-midpoint terminus carrying the as-ordered-toward-the-perfect-good formal character; choice is the conclusion of practical inference at the bottom of the hierarchical chain — Aquinas's medieval architecture maps onto active inference's hierarchical generative models without remainder."
 central_theme_thread: "Salvation in fear and trembling is the practical-rationality computation under perspective-limitation: the alter is bound at the terminal-prior of the perfect-good and free at the level of mean-policies, and this iterated computation under tradition-bound rationality and the substrate-network's pedagogy is the daily-task work of becoming."
-last_qc_at: "2026-05-09T14:30:19"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-14T12:25:02"
+last_qc_outcome: "pass"
 tags: [synthesis, day/067, theme/intention, theme/choice, theme/practical-syllogism]
 ---
 # Day 67 — Contemporary Parallel: *Intention as Hierarchical Terminus and Choice as the Conclusion of Practical Inference*

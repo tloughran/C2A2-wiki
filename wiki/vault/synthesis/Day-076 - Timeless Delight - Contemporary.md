@@ -18,7 +18,7 @@ karpathy_wiki_sources:
   - "master/cross_program_index.md CROSS-005 (love as ontological category)"
 evidence_strength_summary: "Q.31 a.2's claim that delight in an unchangeable good is outside time receives speculative metaphysical support from Kastrup/Hoffman (idealism + interface theory) and a strong empirical analogue in 'flow' research; Aquinas's distinction of joy/delight (a.3) is reframed empirically by predictive-processing accounts of valence; the touch/sight ordering (a.6) reads as Hoffman-style fitness-tuned channels — speculative bridge."
 tags: [synthesis, day/076, theme/timeless-delight, theme/perspective-limitation]
-last_qc_at: "2026-05-11T18:29:18"
+last_qc_at: "2026-05-14T16:26:44"
 last_qc_outcome: "pass"
 ---
 

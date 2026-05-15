@@ -3,7 +3,7 @@ day: 65
 video_id: fiFHwWClP_E
 url: https://www.youtube.com/watch?v=fiFHwWClP_E
 title: Mindful Willing
-summa_ref: Prima Pars, Q.8
+summa_ref: Prima Secundae, Q.8 + Q.9
 duration_seconds: 832
 word_count: 2211
 raw_asr_word_count: 2211
@@ -14,11 +14,11 @@ language: en
 fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-065 - Mindful Willing - Contemporary]]"
-fidelity_checked: false
-last_qc_at: null
-last_qc_outcome: null
+fidelity_checked: true
+last_qc_at: "2026-05-14T08:24:08"
+last_qc_outcome: "pass"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
-tags: [summa, day/065, pars/I]
+tags: [summa, day/065, pars/I-II, q/8, q/9]
 ---
 # Day 65 — Mindful Willing
 

@@ -17,8 +17,8 @@ evidence_strength_summary: "Hawkins on concept formation empirically grounded in
 mind_first_reframe: "Aquinas's striking Q.117 a.1 distinction — the teacher provides exterior help but the act of abstracting the universal is the learner's own — preserves cleanly under contemporary mind-monism: HTM concept-formation, active-inference learning, McGilchrist's both-hemispheres pedagogy, and Stump's second-personal-knowing all locate the principal cause of understanding in the learner's own predictive-inference machinery, with the teacher optimizing input-stream informativeness given the learner's current model-state."
 central_theme_thread: "Each agent's understanding is irreducibly the agent's own work under perspective-limitation; the teacher who genuinely loves the learner is the teacher who provides resources for the learner's own constitutive inferential work, recognizing that each new agent is a new perspective on the loving unity, not a derivative of prior agents — a teaching-and-learning relation that is itself an instance of loving unity under perspective-difference."
 tags: [synthesis, day/060, theme/teaching-as-second-person, theme/abstraction]
-last_qc_at: "2026-05-09T10:30:36"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-14T04:22:03"
+last_qc_outcome: "pass"
 ---
 # Day 60 — Contemporary Parallel: *Teaching as Resource-Provision for the Learner's Own Inferential Work*
 

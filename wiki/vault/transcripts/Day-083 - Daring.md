@@ -6,18 +6,28 @@ title: Daring
 summa_ref: "Prima Secundae, Q.44-45"
 duration_seconds: 505
 word_count: 1403
+raw_asr_word_count: 1397
+length_tier: short
 segment_count: 203
 caption_kind: asr
 language: en
 fetched_at: 2026-05-12
-fetch_path: yt-dlp (auto-captions)
+fetch_path: yt-dlp (auto-captions); cache refreshed 2026-05-15
 synthesis: "[[Day-083 - Daring - Contemporary]]"
+# Note: passes with advisory warnings only; editorial-paraphrase style flagged for Tom in 2026-05-15T04:29 QC log
+fidelity_checked: true
 tags: [summa, day/083, pars/I-II, q/44, q/45]
+last_qc_at: "2026-05-15T04:29:22"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 83 — Daring
 
 *Aquinas, Summa Theologiae, Prima Secundae, Q.44 (effects of fear) and Q.45 (daring).*
+
+> Note: this transcript was authored as a polished editorial paraphrase rather than a verbatim ASR rendering — Aquinas's direct quotes are reproduced exactly, but the connective prose compresses Habash's spoken delivery. The substance, article-order, and quote-fidelity match the cached ASR at `/tmp/day083_segments.json`; the prose style is editorial. QC sweep 2026-05-15 flagged this as a project-wide style question for Tom (see QC log).
+
+## Transcript
 
 [00:00] Day 83 — questions 44 and 45 of the Prima Secundae, of the effects of fear and of daring.
 

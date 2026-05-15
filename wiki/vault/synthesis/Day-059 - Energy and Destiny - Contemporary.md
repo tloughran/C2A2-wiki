@@ -1,7 +1,7 @@
 ---
 day: 59
 title: "Energy and Destiny (Contemporary)"
-pairs_with: "[[Day-059 - Energy & Destiny]]"
+pairs_with: "[[Day-059 - Energy and Destiny]]"
 length_target_words: 2200
 length_actual_words: 1660
 length_ratio_to_target: 0.75
@@ -17,7 +17,7 @@ evidence_strength_summary: "Aquinas's anti-occasionalist commitment is metaphysi
 mind_first_reframe: "Aquinas's anti-occasionalist commitment in Q.115 a.1 — that physical things really cause physical effects within the substrate-source's primary causation — becomes the layered-ontology commitment of contemporary mind-monism: Levin's bioelectric pattern, Wolfram's computational substrate, Carroll's poetic naturalism, and Arkani-Hamed's effective field theories all converge on real causal efficacy at every emergent level, with fate (Q.116) read as substrate-prior bounding the alter's policy-space rather than displacing agency."
 central_theme_thread: "Perspective-limitation under the central-theme reading presupposes real agency in the embodied alter; today shows that the substrate's prior-structure (what the medieval frame names fate, what Wright's Romans 8 names providence) constrains but does not erase the alter's free policy-selection, and that the alter's working-out of salvation operates within a substrate-given context whose pattern is the cosmic-Christ pattern toward which all things tend."
 tags: [synthesis, day/059, theme/causal-realism, theme/fate-and-providence]
-last_qc_at: "2026-05-10T06:31:01"
+last_qc_at: "2026-05-14T04:21:41"
 last_qc_outcome: "rewrote"
 ---
 # Day 59 — Contemporary Parallel: *Causal Realism in Created Agents and the Computational Substrate of Fate*

@@ -16,8 +16,8 @@ length_ratio_to_target: 0.732
 length_note: "Q.6–Q.7 (12 articles) treated thematically as the structural-and-diagnostic apparatus of voluntary action. Aquinas's voluntariness/circumstances frame is structurally near-identical to the contemporary action-under-uncertainty frame, so the prose stays compact while the willed-ignorance keystone moves get the load-bearing attention; substantive integrity is preserved at 1610 words."
 mind_first_reframe: "Voluntariness preserves under active inference (the alter's policy-selection from a principle within the agent under terminal-prior knowledge), and willed ignorance is the alter's left-hemispheric refusal of disruptive information — distinguishable as predatory (culpable) versus protective (developmentally-tractable) under Kastrup's dissociation frame."
 central_theme_thread: "The daily task includes catching one's own willed ignorance — the alter's openness to second-person diagnostic surfacing under the substrate-network's pedagogical care is the integrity-of-becoming under perspective-limitation, while closure-against-the-diagnostic compounds the limitation rather than working with it."
-last_qc_at: "2026-05-09T14:30:00"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-14T08:23:55"
+last_qc_outcome: "pass"
 tags: [synthesis, day/064, theme/voluntariness, theme/willed-ignorance, theme/circumstances]
 ---
 # Day 64 — Contemporary Parallel: *Voluntariness, Willed Ignorance, and the Architecture of Human Acts*

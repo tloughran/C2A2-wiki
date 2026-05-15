@@ -6,17 +6,24 @@ title: Enjoyment
 summa_ref: Prima Secundae, Q.10 + Q.11
 duration_seconds: 638
 word_count: 1733
+raw_asr_word_count: 1695
+length_tier: short
 segment_count: 232
 caption_kind: asr
 language: en
 fetched_at: 2026-05-09
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-066 - Enjoyment - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/066, pars/I-II, q/10, q/11]
+last_qc_at: "2026-05-14T08:24:22"
+last_qc_outcome: "pass"
 ---
 # Day 66 — Enjoyment
 
 > Episode: <https://www.youtube.com/watch?v=bEf6DId1Z4E>
+
+## Transcript
 
 Today's episode covers Prima Secundae Q.10 (the manner in which the will is moved) and Q.11 (enjoyment as an act of the will). Habash takes us through eight articles total — four on what moves the will (its own nature, its object, the lower appetite, the exterior mover God) and four on enjoyment (which power has it, which creatures have it, whether it is only of the last end, whether it is only of the end possessed).
 

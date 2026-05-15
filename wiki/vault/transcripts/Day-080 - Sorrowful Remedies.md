@@ -6,6 +6,8 @@ title: Sorrowful Remedies
 summa_ref: "Prima Secundae, Q.38-39"
 duration_seconds: 693
 word_count: 1820
+raw_asr_word_count: 1876
+length_tier: short
 segment_count: 175
 caption_kind: asr
 language: en
@@ -13,11 +15,16 @@ fetched_at: 2026-05-11
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-080 - Sorrowful Remedies - Contemporary]]"
 tags: [summa, day/080, pars/I-II, q/38, q/39]
+fidelity_checked: true
+last_qc_at: "2026-05-14T20:21:35"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 80 — Sorrowful Remedies
 
 *Aquinas, Summa Theologiae, Prima Secundae, Q.38 (remedies of sorrow/pain) and Q.39 (goodness and malice of sorrow/pain).*
+
+## Transcript
 
 [00:00] Day 80 — questions 38 and 39 of the Prima Secundae, the remedies of sorrow or pain, and the goodness and malice of sorrow or pain.
 

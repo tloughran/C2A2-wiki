@@ -14,8 +14,8 @@ language: en
 fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-045 - Self-Understanding - Contemporary]]"
-fidelity_checked: false
-last_qc_at: "2026-05-13T00:19:54"
+fidelity_checked: true
+last_qc_at: "2026-05-13T12:21:53"
 last_qc_outcome: "pass"
 render_pass: auto-catchup-2026-05-04  # auto-rendered; QC pass should add Q.N/article headers, polish prose, write Notes
 tags: [summa, day/045, pars/I]
