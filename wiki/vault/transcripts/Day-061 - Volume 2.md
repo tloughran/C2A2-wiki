@@ -3,7 +3,7 @@ day: 61
 video_id: xcOZZNmW-2U
 url: https://www.youtube.com/watch?v=xcOZZNmW-2U
 title: Volume 2
-summa_ref: Prima Pars, Q.119
+summa_ref: Prima Pars, Q.119 + Prima Secundae, Q.1
 duration_seconds: 1228
 word_count: 3193
 raw_asr_word_count: 3193
@@ -18,7 +18,7 @@ fidelity_checked: true
 last_qc_at: "2026-05-14T08:23:20"
 last_qc_outcome: "pass"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
-tags: [summa, day/061, pars/I]
+tags: [summa, day/061, pars/I, pars/I-II, q/119, q/1]
 ---
 # Day 61 — Volume 2
 
