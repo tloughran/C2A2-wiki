@@ -490,7 +490,7 @@ async function init() {
   try {
     var url  = encodeURI(VAULT_BASE + '/refs/summa_index.json');
     console.log('[Summa] Loading index from:', url);
-    var resp = await fetch(url);
+    var resp = await fetch(url, { cache: 'no-store' });
     if (resp.ok) {
       indexData = await resp.json();
       vaultBase = VAULT_BASE;

@@ -45,7 +45,12 @@ def parse_frontmatter(path):
             break
         m = re.match(r'^(\w+):\s*(.+)', line)
         if m:
-            meta[m.group(1).strip()] = m.group(2).strip().strip('"')
+            value = m.group(2).strip()
+            # Strip YAML inline comments: "...value...  # comment" → "...value..."
+            # (must be at least one space before the #, to keep '#' inside strings).
+            if ' #' in value:
+                value = value.split(' #', 1)[0].rstrip()
+            meta[m.group(1).strip()] = value.strip('"')
 
     return meta
 
@@ -69,30 +74,54 @@ def scan_vault(vault_dir):
         if not ref:
             continue
 
-        # Parse pars from summa_ref for pars-aware matching
-        pars_map = {
-            "prima pars":       "I",
-            "prima secundae":   "I-II",
-            "secunda secundae": "II-II",
-            "tertia pars":      "III",
-        }
-        ref_lower = ref.lower()
-        pars_code = next((code for pat, code in pars_map.items()
-                          if pat in ref_lower), None)
-        if not pars_code:
-            continue
+        # Parse pars-aware (pars, question) pairs from summa_ref.
+        # Supports multi-part transition days where one episode spans a part
+        # boundary, e.g. "Prima Pars, Q.119 + Prima Secundae, Q.1" (Day 61
+        # in the podcast — Volume 2 opener). Each '+'-segment is parsed
+        # independently for its own part marker; questions within a segment
+        # inherit that segment's part. Order-sensitive lookup of part names
+        # (longer keys first) so "secunda secundae" wins over "secundae".
+        # Order matters: longer Latin forms first, then abbreviations
+        # ordered longest-prefix-first ("ii-ii" before "i-ii" so the inner
+        # "i-ii" substring of "ii-ii" doesn't mis-match). Bare "i" is
+        # deliberately omitted — too ambiguous given how it appears inside
+        # "i-ii" and "ii-ii"; Prima Pars days should use the full form.
+        pars_map = [
+            ("prima pars",       "I"),
+            ("prima secundae",   "I-II"),
+            ("secunda secundae", "II-II"),
+            ("tertia pars",      "III"),
+            ("ii-ii",            "II-II"),
+            ("i-ii",             "I-II"),
+            ("iii",              "III"),
+        ]
 
-        # Parse Q-numbers: handles "Q.9 + Q.10", "Q.9-10", "Q.65 + Q.66"
-        qs = set()
-        for token in re.findall(r"Q\.(\d+)(?:-(\d+))?", ref):
-            start = int(token[0])
-            end   = int(token[1]) if token[1] else start
-            qs.update(range(start, end + 1))
-        if not qs:
+        qs_pairs = set()
+        # Walk segments left-to-right, carrying the most recently declared
+        # part forward. This handles three common shapes:
+        #   "Prima Pars, Q.117 + Q.118"          → both Q's attribute to I
+        #   "Prima Secundae, Q.2 + Q.3"          → both Q's attribute to I-II
+        #   "Prima Pars, Q.119 + Prima Secundae, Q.1"  → Q.119→I, Q.1→I-II
+        current_pars = None
+        for segment in ref.split("+"):
+            seg_lower = segment.lower()
+            seg_pars = next((code for pat, code in pars_map
+                             if pat in seg_lower), None)
+            if seg_pars:
+                current_pars = seg_pars
+            if current_pars is None:
+                continue  # haven't seen any part name yet — skip
+            # Parse Q-numbers: handles "Q.9 + Q.10", "Q.9-10", "Q.65 + Q.66"
+            for token in re.findall(r"Q\.(\d+)(?:-(\d+))?", segment):
+                start = int(token[0])
+                end   = int(token[1]) if token[1] else start
+                for q in range(start, end + 1):
+                    qs_pairs.add((current_pars, q))
+        if not qs_pairs:
             continue
 
         day_trans[day]     = "transcripts/" + fname
-        day_questions[day] = (pars_code, qs)  # store pars alongside questions
+        day_questions[day] = qs_pairs  # set of (pars_code, q) tuples
 
     for fname in sorted(os.listdir(synth_dir)):
         m = re.match(r"Day-(\d+)", fname)
@@ -110,9 +139,7 @@ def reindex(vault_dir, index_path):
     # Build (pars, question) -> day mapping; first-wins for duplicates (lower day)
     q_to_day = {}
     for day in sorted(day_questions.keys()):
-        pars_code, qs = day_questions[day]
-        for q in qs:
-            key = (pars_code, q)
+        for key in day_questions[day]:    # set of (pars_code, q) tuples
             if key not in q_to_day:
                 q_to_day[key] = day
 
@@ -156,6 +183,35 @@ def reindex(vault_dir, index_path):
 
     total_available = sum(1 for v in index.values() if v.get("available"))
     print(f"reindex_vault: {updated} entries updated, {total_available} total available")
+
+    # ─── Gap audit: warn on suspicious holes in availability ─────────────
+    # For each part, if any question in [1..max_available_q] is *not* marked
+    # available, surface it. This catches the failure mode where a transcript's
+    # summa_ref drops a part (e.g. a part-transition day declaring only
+    # "Prima Pars, Q.119" when it actually covers Q.119 + I-II.Q.1).
+    # Soft warning to stderr — doesn't fail the run; the launchd job continues.
+    by_part_qs = {}
+    for key, entry in index.items():
+        km = re.match(r"([^.]+)\.Q(\d+)\.", key)
+        if not km:
+            continue
+        pars_prefix = km.group(1)
+        qnum        = int(km.group(2))
+        by_part_qs.setdefault(pars_prefix, {}).setdefault(qnum, []).append(entry)
+    for pars_prefix, qs in sorted(by_part_qs.items()):
+        avail_qs = [q for q, entries in qs.items()
+                    if any(e.get("available") for e in entries)]
+        if not avail_qs:
+            continue
+        max_q = max(avail_qs)
+        missing = sorted(q for q in range(1, max_q + 1)
+                         if q in qs and q not in avail_qs)
+        if missing:
+            print(f"reindex_vault: WARNING {pars_prefix} has gap(s) below "
+                  f"highest available Q.{max_q}: missing Q.{missing} — "
+                  f"check whether a transition day's summa_ref is incomplete",
+                  file=sys.stderr)
+
     return updated
 
 
