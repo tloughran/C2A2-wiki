@@ -6,6 +6,8 @@ title: Malice
 summa_ref: Prima Secundae, Q.78-79
 duration_seconds: 780
 word_count: 2380
+raw_asr_word_count: 1968
+length_tier: medium
 segment_count: 305
 caption_kind: asr
 language: en
@@ -13,13 +15,18 @@ fetched_at: 2026-05-15
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-100 - Malice - Contemporary]]"
 tags: [summa, day/100, pars/I-II, q/78, q/79]
+fidelity_checked: true
+last_qc_at: "2026-05-15T20:23:39"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 100 — Malice
 
 Day 100 covers I-II Q.78 (*the cause of sin which is malice*) and Q.79 (*the external causes of sin*). Q.78 distinguishes *sin through malice* from sin through ignorance and sin through passion: malice is "choosing an evil as evil for the sake of some other good" (a.1), it is implied whenever one acts from a vicious habit (a.2), can occur without habit (a.3), and is graver than sin through passion (a.4). Q.79 then turns to *external* causes: whether God is a cause of sin (a.1, no, neither directly nor by withholding due assistance), whether the *act* of sin is from God (a.2, yes — as God is cause of every act qua act — but not the *defect* in the act, which is from the will), whether God causes spiritual blindness and hardness of heart (a.3, only by *just* withdrawal of grace), and whether these are directed to salvation (a.4, not necessarily for the blinded, but always to some good — the martyrs' good in the case of tyrants' sin, the glory of God's justice in the case of the lost).
 
-## Q.78 — The cause of sin which is malice
+## Transcript
+
+### Q.78 — The cause of sin which is malice
 
 [00:34] Day 100. Today's questions Q.78 and Q.79 of the Prima Secundae — the cause of sin which is malice and the external causes of sin.
 
@@ -31,7 +38,7 @@ Day 100 covers I-II Q.78 (*the cause of sin which is malice*) and Q.79 (*the ext
 
 [06:21] **Article 4 — whether it is more grievous to sin through certain malice than through passion.** Yes. "He that sins through passion is induced through the passion to choose what he would not choose were it not for the passion. On the other hand, he that sins through certain malice chooses evil of his own accord... so that his choosing, of which he has full control, is the principle of his sin." The man who kills for theft (malice) is graver than the man who kills in rage (passion) — more diabolical, more deliberate, more revealing of habitual disorder.
 
-## Q.79 — External causes of sin
+### Q.79 — External causes of sin
 
 [07:39] **Article 1 — whether God is a cause of sin.** No — neither directly nor indirectly. God inclines all things to their proper good and to himself. He cannot indirectly cause sin by withholding grace except *justly*, in response to a creature's having forfeited its claim by its own prior evil. (Treated more in subsequent articles.)
 

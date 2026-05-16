@@ -6,6 +6,8 @@ title: Sinful Causes
 summa_ref: Prima Secundae, Q.74-75
 duration_seconds: 951
 word_count: 2780
+raw_asr_word_count: 2649
+length_tier: medium
 segment_count: 380
 caption_kind: asr
 language: en
@@ -13,13 +15,18 @@ fetched_at: 2026-05-15
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-098 - Sinful Causes - Contemporary]]"
 tags: [summa, day/098, pars/I-II, q/74, q/75]
+fidelity_checked: true
+last_qc_at: "2026-05-15T20:23:19"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 98 — Sinful Causes
 
 Day 98 covers I-II Q.74 (*the subject of sin* — which faculty/power is the seat of sin) and Q.75 (*the causes of sin in general*). Q.74 walks down the powers: the will (a.1, primary subject because sin must be voluntary), other powers under the will (a.2), sensuality (a.3, can host sin; a.4, cannot host *mortal* sin), reason itself (a.5-10, including the technical questions of *morose delectation*, *consent to delectation*, and the distinction between higher and lower reason in venial vs. mortal sin). Q.75 then asks about causes: whether sin has a cause at all (given evil is privation — a.1), an internal cause (a.2, reason/will proximate, imagination/sensitive-appetite remote), an external cause (a.3, can influence but cannot compel), and whether one sin causes another (a.4, in all four causal modes).
 
-## Q.74 — Subject of sin
+## Transcript
+
+### Q.74 — Subject of sin
 
 [00:30] Day 98. Today: Q.74 and Q.75 of the Prima Secundae — the subject of sin and the causes of sin in general.
 
@@ -43,7 +50,7 @@ Day 98 covers I-II Q.74 (*the subject of sin* — which faculty/power is the sea
 
 [08:42] **Article 10 — whether venial sin can be in the higher reason as such.** Yes — a sudden movement of unbelief in an article of faith that arises before the eternal law is consulted, and is then immediately rejected, is venial. If the movement *remains after deliberation*, it becomes mortal.
 
-## Q.75 — Causes of sin in general
+### Q.75 — Causes of sin in general
 
 [10:00] **Article 1 — whether sin has a cause.** Yes — even though evil itself is privation (Q.18 / Day 25), there must be a *reason* for the absence of right order. "The will lacking the direction of the rule of reason and of the Divine Law, and intent on some mutable good, causes the act of sin directly and the inordinate of the act indirectly and beside the intention; for the lack of order in the act results from the lack of direction in the will." The act has a positive cause; the disorder is a privation traceable to the will's failure to direct.
 

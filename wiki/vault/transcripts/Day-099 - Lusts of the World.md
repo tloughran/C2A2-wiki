@@ -6,6 +6,8 @@ title: Lusts of the World
 summa_ref: Prima Secundae, Q.76-77
 duration_seconds: 991
 word_count: 3050
+raw_asr_word_count: 2685
+length_tier: medium
 segment_count: 410
 caption_kind: asr
 language: en
@@ -13,13 +15,18 @@ fetched_at: 2026-05-15
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-099 - Lusts of the World - Contemporary]]"
 tags: [summa, day/099, pars/I-II, q/76, q/77]
+fidelity_checked: true
+last_qc_at: "2026-05-15T20:23:30"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 99 — Lusts of the World
 
 Day 99 covers I-II Q.76 (*the causes of sin in particular* — specifically ignorance) and Q.77 (*the cause of sin on the part of the sensitive appetite*). Q.76 walks ignorance carefully: ignorance *can* cause sin (a.1); ignorance is itself a sin when culpable (a.2 — vincible vs. invincible); ignorance does not always excuse from sin (a.3); ignorance diminishes sin to the extent it reduces voluntariness (a.4). Q.77 then asks how the passions cause sin: whether the will is moved by passion of the sensitive appetite (a.1, indirectly), whether reason can be overcome by passion against its knowledge (a.2, yes), whether such sin is a "sin of weakness" (a.3), whether self-love is the source of every sin (a.4, yes), whether the Johannine triad — concupiscence of the flesh / concupiscence of the eyes / pride of life — fittingly names the causes (a.5), whether passion alleviates a sin (a.6, can both lessen and aggravate), whether passion excuses altogether (a.7, only when it removes voluntariness entirely), whether passion-driven sin can still be mortal (a.8, yes).
 
-## Q.76 — Causes of sin in particular (ignorance)
+## Transcript
+
+### Q.76 — Causes of sin in particular (ignorance)
 
 [01:00] **Article 1 — whether ignorance can be a cause of sin.** Yes. Augustine: "some sin through ignorance." The example: a man is restrained from parricide both by knowing that killing one's father is wrong (universal principle) and by knowing that *this* man is his father (particular circumstance). Ignorance of either could enable the act. Acts 17 — Paul on the Greeks: "the times of ignorance God overlooked but now he commands all men everywhere to repent."
 
@@ -29,7 +36,7 @@ Day 99 covers I-II Q.76 (*the causes of sin in particular* — specifically igno
 
 [06:06] **Article 4 — whether ignorance diminishes a sin.** Yes — to the extent it reduces voluntariness. Paul on his pre-conversion blasphemy: "I received mercy because I had acted ignorantly in unbelief" (1 Tim 1:13). The drunkard's later sins are *somewhat* diminished by his impaired reason, but not excused, because the drunkenness was voluntary in the first place.
 
-## Q.77 — Cause of sin on the part of the sensitive appetite
+### Q.77 — Cause of sin on the part of the sensitive appetite
 
 [07:13] **Article 1 — whether the will is moved by a passion of the sensitive appetite.** Not directly — the will follows reason, not the passions. But passion can move the will *indirectly*: (a) by fixating attention on a particular object (the smell of food drawing thought to the nearby restaurant); (b) by distracting or diluting focus, degrading the quality of deliberation.
 
