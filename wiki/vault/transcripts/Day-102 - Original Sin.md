@@ -15,7 +15,8 @@ fetched_at: 2026-05-16
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-102 - Original Sin - Contemporary]]"
 tags: [summa, day/102, pars/I-II, q/82-83]
-last_qc_at: "2026-05-17T00:40:28"
+fidelity_checked: true
+last_qc_at: "2026-05-18T20:23:53"
 last_qc_outcome: "rewrote"
 ---
 # Day 102 — Original Sin
@@ -25,6 +26,8 @@ last_qc_outcome: "rewrote"
 **Caption kind:** YouTube auto-generated (ASR); light cleanup applied.
 
 ---
+
+## Transcript
 
 [00:05] hello my name is Austin Habash the founder of think Catholic and you're listening to the Summa in year podcast where we study St Thomas Aquinas Summa
 

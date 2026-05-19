@@ -15,8 +15,8 @@ fetched_at: 2026-05-05
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-009 - What is Truth - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-09T16:23:11"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-19T00:23:16"
+last_qc_outcome: "pass"
 tags: [summa, day/009, pars/I]
 ---
 

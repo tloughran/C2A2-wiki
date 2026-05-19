@@ -18,7 +18,7 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (CROSS-027 Kastrup × Friston Markov blanket; line 482 cortical-columns-as-alters)"
 evidence_strength_summary: "Empirical: vagal-tone collapse under isolation (Fredrickson), hemispheric asymmetry under stress (McGilchrist), bioelectric coupling at non-neural scales (Levin). Formal: free-energy minimization under perturbed priors (Friston). Speculative: demonology-as-topology-of-mind-at-large (Kastrup-style alters); the cosmological claim that interfering sub-agents exist by structural necessity. Theological: Wright on second-temple cosmology of the powers; Rohr on the shadow."
 tags: [synthesis, day/101, theme/temptation, theme/perception-as-interface]
-last_qc_at: "2026-05-17T00:40:09"
+last_qc_at: "2026-05-18T20:22:49"
 last_qc_outcome: "rewrote"
 ---
 
@@ -73,7 +73,7 @@ The Q.80–81 locus is one of the cleanest illustrations of the project's centra
 - *Fredrickson PRS-01 + Love 2.0* — empirical anchor for "the passions narrow attention": vagal-tone collapse under isolation is the measurable correlate of Aquinas's "the passions make whatever their object is seem more suitable to us." *(Empirical, high confidence)*
 - *McGilchrist PRS-01 + corpus-callosotomy* — within-agent topology of attention: left-hemispheric closure under stress maps the field of "fragmented goods" classical temptation literature describes; right-hemispheric reopening is the within-agent correlate of contemplative practice. *(Empirical, mid confidence on the cultural-scale extrapolation; high on within-individual.)*
 - *Kastrup × Friston (CROSS-027) and cortical-columns-as-alters extension* — the metaphysical move that lets demonology become topology-of-mind-at-large: alters at the cortical scale supply the down-scaling pattern; the same dissociation–integration dynamic at supra-individual scales is the speculative bridge. *(Formal / speculative)*
-- *Wright on second-temple "powers"* — guards the reframe against deflationary dismissal: the New Testament treats supra-individual loci of evil as real and pastorally addressable, not as primitive cosmology to be discarded. *(Theological, primary on this point.)*
+- *Wright on second-temple "powers"* — guards the reframe against deflationary dismissal: the New Testament treats supra-individual loci of evil as real and pastorally addressable, not as primitive cosmology to be discarded. *(Scriptural-theological.)*
 
 ## Where this leaves us
 

@@ -15,7 +15,8 @@ fetched_at: 2026-05-16
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-101 - Satan's Influence - Contemporary]]"
 tags: [summa, day/101, pars/I-II, q/80-81]
-last_qc_at: "2026-05-17T00:40:09"
+fidelity_checked: true
+last_qc_at: "2026-05-18T20:22:49"
 last_qc_outcome: "rewrote"
 ---
 # Day 101 — Satan's Influence
@@ -25,6 +26,8 @@ last_qc_outcome: "rewrote"
 **Caption kind:** YouTube auto-generated (ASR); light cleanup applied.
 
 ---
+
+## Transcript
 
 [00:04] hello my name is Austin Habash the founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas Summa Theologiae
 
