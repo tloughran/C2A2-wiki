@@ -358,9 +358,159 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
 #settings-content button:hover { background: #2a2a3a; }
 #settings-content button.primary { background: #FFD700; color: #0a0a0f; border-color: #FFD700; }
 .error-text { color: #FF4444; font-size: 12px; margin-top: 4px; }
+
+/* Mobile notice strip — hidden by default; revealed at ≤640px (see media block). */
+#mobile-notice { display: none; }
+
+/* ── MOBILE READABILITY (≤640px) ──
+   First-pass mobile pathway, 2026-05-19. Honest scope: the Sociogram is
+   viewable on a phone (pan, pinch, tap nodes, play tours, read articles),
+   but filtering and the heavier edge-density controls require a desktop.
+   A small notice strip explains this. Above 640px nothing changes. */
+@media (max-width: 640px) {
+  /* HEADER — keep, but reduce overcrowding and bump touch targets */
+  #header {
+    padding: 6px 10px;
+    height: 52px;
+    gap: 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  #header .title { font-size: 14px; flex-shrink: 0; }
+  #header .controls { gap: 6px; flex-shrink: 0; align-items: center; }
+  /* Hide the secondary controls — filtering happens on desktop */
+  #header .controls .brightness-control,
+  #header .controls .date-control,
+  #header .controls label[title*="Free: positions"],
+  #header .controls label[title*="which edges"],
+  #header .controls #btn-edge-help {
+    display: none;
+  }
+  /* Hide the vertical separators between control groups */
+  #header .controls span[style*="background:#3a3a4a"] { display: none; }
+  #header .controls button {
+    min-height: 38px;
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  /* LEFT PANEL — hidden on mobile (filtering requires a larger screen) */
+  #left-panel { display: none; }
+  .resize-handle#left-resize { display: none; }
+
+  /* GRAPH CONTAINER fills the freed space */
+  #graph-container { width: 100%; }
+
+  /* RIGHT PANEL — full-screen overlay when shown by existing JS */
+  #right-panel {
+    position: fixed;
+    top: 52px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 250;
+    padding: 14px 16px;
+  }
+  #right-panel .page-title { font-size: 17px; }
+  #right-panel .page-content { font-size: 15px; line-height: 1.7; }
+  #right-panel .page-content h1 { font-size: 19px; }
+  #right-panel .page-content h2 { font-size: 17px; }
+  #right-panel .page-content h3 { font-size: 15px; }
+  #right-panel .dismiss-btn {
+    min-height: 44px; min-width: 44px;
+    font-size: 18px; padding: 6px 14px;
+  }
+  #right-panel .popout-btn {
+    min-height: 44px; min-width: 44px;
+    font-size: 14px; padding: 6px 12px;
+  }
+  .resize-handle#right-resize { display: none; }
+
+  /* TOOLTIP — wider on mobile so titles don't truncate awkwardly */
+  #tooltip { font-size: 13px; padding: 10px 14px; max-width: 88vw; }
+
+  /* EDGE LEGEND — smaller, move out of common tap zones.
+     !important needed because the element has inline top/right in the body markup. */
+  #edge-legend {
+    font-size: 9px !important;
+    padding: 4px 7px !important;
+    top: auto !important;
+    bottom: 80px !important;
+    right: 6px !important;
+    left: auto !important;
+  }
+
+  /* HELP POPOVERS — undo hardcoded desktop positions */
+  #edges-help-popover,
+  #tags-help-popover,
+  #edge-help-popover {
+    position: fixed !important;
+    top: 76px !important;
+    left: 6px !important;
+    right: 6px !important;
+    width: auto !important;
+    max-width: none !important;
+    font-size: 13px;
+  }
+
+  /* FOOTER — collapse to essentials: narration text + tour controls only */
+  #footer-resize { display: none; }
+  #footer {
+    height: 76px;
+    min-height: 76px;
+    padding: 6px 10px;
+    gap: 8px;
+  }
+  #timeline-slider { display: none; }
+  #narration-text { font-size: 13px; padding: 4px 6px; }
+  /* Hide the search row on mobile.
+     !important needed because the div has inline display:flex in the body markup. */
+  #footer-search-row { display: none !important; }
+  #footer .footer-controls { gap: 4px; }
+  #footer .footer-controls button {
+    min-height: 40px;
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+  #footer .footer-controls select {
+    min-height: 40px;
+    padding: 4px 6px;
+    font-size: 13px;
+  }
+
+  /* SETTINGS MODAL — full-width on phone */
+  #settings-content { width: 92%; padding: 20px 18px; }
+  #settings-content h2 { font-size: 16px; }
+  #settings-content button { min-height: 40px; padding: 8px 14px; }
+
+  /* MOBILE NOTICE STRIP — visible only at this breakpoint */
+  #mobile-notice {
+    display: block;
+    position: fixed;
+    top: 52px;
+    left: 0;
+    right: 0;
+    background: rgba(20, 20, 35, 0.92);
+    color: #C9A84C;
+    font-size: 11px;
+    padding: 4px 10px;
+    text-align: center;
+    z-index: 50;
+    border-bottom: 1px solid #3a3a4a;
+    pointer-events: none;
+    letter-spacing: 0.2px;
+  }
+  /* Push the graph below the notice strip */
+  #main { padding-top: 24px; }
+}
 </style>
 </head>
 <body>
+<!-- Mobile preview notice — visible only at ≤640px (see #mobile-notice in CSS).
+     Sized and positioned by the mobile media block. Single short line, no controls. -->
+<div id="mobile-notice">Mobile preview · pan and tap nodes · filters require a larger screen</div>
 <div id="app">
   <!-- HEADER -->
   <div id="header">
@@ -552,7 +702,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
     <input type="range" id="timeline-slider" min="0" max="0" value="0" oninput="onTimelineSlide(this.value)">
     <div style="flex:1;display:flex;flex-direction:column;gap:4px;min-width:0;height:100%;">
       <div id="narration-text">Ready. Check groups in Select Files to explore.</div>
-      <div style="display:flex;gap:4px;">
+      <div id="footer-search-row" style="display:flex;gap:4px;">
         <input type="text" id="search-input" placeholder="Search files, findings, connections..." style="flex:1;background:#1a1a2a;border:1px solid #3a3a4a;color:#e0e0e0;padding:3px 8px;border-radius:4px;font-size:12px;" onkeydown="if(event.key==='Enter')runSearch()">
         <button onclick="runSearch()" style="background:#1a1a2a;border:1px solid #3a3a4a;color:#e0e0e0;padding:3px 8px;border-radius:4px;cursor:pointer;font-size:11px;">Search</button>
         <button onclick="document.getElementById('search-input').value='';runSearch();" style="background:#1a1a2a;border:1px solid #3a3a4a;color:#e0e0e0;padding:3px 8px;border-radius:4px;cursor:pointer;font-size:11px;">Clear</button>

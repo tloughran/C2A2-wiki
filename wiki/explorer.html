@@ -215,6 +215,88 @@
 #rec-indicator.visible { display: flex; }
 #rec-dot { width: 9px; height: 9px; background: #C45B5B; border-radius: 50%; animation: recBlink 1s step-start infinite; flex-shrink: 0; }
 @keyframes recBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0.15; } }
+
+/* HELP BUTTON */
+#btn-help {
+  margin-left: auto;
+  background: #0a0a0f;
+  border: 1px solid #2a2a3a;
+  color: #888;
+  cursor: pointer;
+  padding: 4px 10px;
+  font-size: 13px;
+  font-family: -apple-system, sans-serif;
+  border-radius: 4px;
+  height: 26px;
+  line-height: 1;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+#btn-help:hover { color: #C9A84C; border-color: #4a4a5a; }
+
+/* HELP MODAL */
+#help-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 1200; justify-content: center; align-items: center; }
+#help-card { background: #12121c; border: 1px solid #2a2a3a; border-radius: 10px; padding: 28px 32px; width: 520px; max-width: 92%; position: relative; box-shadow: 0 8px 32px rgba(0,0,0,0.6); }
+#help-title { color: #C9A84C; font-size: 17px; font-family: Georgia, serif; font-weight: 700; margin: 0 0 14px; }
+#help-body { color: #ccc; font-size: 13.5px; font-family: -apple-system, sans-serif; line-height: 1.7; margin: 0; }
+#help-close { position: absolute; top: 12px; right: 16px; background: transparent; border: none; color: #666; font-size: 20px; cursor: pointer; line-height: 1; padding: 2px 6px; }
+#help-close:hover { color: #C9A84C; }
+
+/* ── MOBILE READABILITY (≤640px) ──
+   First-pass mobile pathway, 2026-05-19. Goal is not full optimization;
+   the page should signal that mobile was thought about. We hide the
+   stubbed chapter row (3 of 4 buttons are Under Construction anyway),
+   keep only the working sub-tab row, and make every touch target ≥44px
+   per Apple HIG. The Sociogram itself has its own mobile rules in the
+   wiki_narration.html generator. Above 640px nothing changes. */
+@media (max-width: 640px) {
+  #tab-bar { height: 48px; }
+  #row1 { display: none; }                       /* hide brand + stub chapter tabs + Record */
+  #row2 {
+    height: 48px;
+    padding: 0 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .row2-label { display: none; }                 /* "Accelerator Tools" prefix */
+  .summa-progress { display: none; }             /* progress pill moves out of header */
+  .tab-btn {
+    font-size: 14px;
+    padding: 12px 14px;
+    min-height: 44px;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+  #btn-help {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 4px 12px;
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+  #content-frame {
+    top: 48px;
+    height: calc(100% - 48px);
+  }
+  /* Help modal: full-width on phone, easier dismiss */
+  #help-card { width: 92%; padding: 20px 18px; }
+  #help-title { font-size: 16px; }
+  #help-body { font-size: 14px; line-height: 1.6; }
+  #help-close {
+    font-size: 26px;
+    padding: 8px 12px;
+    min-height: 44px;
+    min-width: 44px;
+    top: 6px;
+    right: 6px;
+  }
+  /* Recording modal: cellular phones can't usefully screen-share anyway,
+     but keep it readable if a tablet falls into this breakpoint. */
+  #recording-content { width: 92%; padding: 22px 18px; }
+}
 </style>
 </head>
 <body>
@@ -238,12 +320,13 @@
   <div id="row2">
     <span class="row2-label">Accelerator&nbsp;Tools</span>
     <button class="tab-btn active" data-src="wiki_narration.html">Sociogram</button>
-    <button class="tab-btn" data-src="prs_3d.html">3D PRS</button>
-    <button class="tab-btn" data-src="agents_tab.html">Agent Map</button>
-    <button class="tab-btn" data-src="summa_explorer.html">Curriculum Tools</button>
     <span class="summa-progress" id="summa-progress"
           title="Last continuous day (no gaps below it) out of the 308-day plan. Click to open the coverage gap audit."
           onclick="window.open('vault/refs/missing_days.md','_blank')">…</span>
+    <button class="tab-btn" data-src="prs_3d.html">3D PRS</button>
+    <button class="tab-btn" data-src="agents_tab.html">Agent Map</button>
+    <button class="tab-btn" data-src="summa_explorer.html">Curriculum Tools</button>
+    <button id="btn-help" onclick="showHelp()" title="About this view">?</button>
   </div>
 
 </div>
@@ -316,6 +399,15 @@
 })();
 </script>
 
+
+<!-- HELP MODAL -->
+<div id="help-modal" onclick="if(event.target===this)closeHelp()">
+  <div id="help-card">
+    <button id="help-close" onclick="closeHelp()">&#x00D7;</button>
+    <div id="help-title"></div>
+    <p id="help-body"></p>
+  </div>
+</div>
 
 <!-- RECORDING COMPLETE MODAL -->
 <div id="recording-modal">
@@ -509,6 +601,37 @@ function downloadRecording() {
 function dismissRecordingModal() {
   document.getElementById('recording-modal').classList.remove('visible');
   recordingBlob = null;
+}
+
+// ── HELP MODAL ──
+function showHelp() {
+  var active = document.querySelector('#row2 .tab-btn.active');
+  var src = active ? active.getAttribute('data-src') : '';
+  var descriptions = {
+    'wiki_narration.html': {
+      title: 'Sociogram',
+      body: 'A force-directed graph of the RC Wiki knowledge base — 1,600+ nodes representing wiki articles, connected by wikilinks, mentions, and shared references. Filter by thinker tradition or structural category to explore conceptual neighborhoods. Click any node to read its article; click an edge to see both endpoints. Use the edge controls to show or hide link types and adjust force attraction.'
+    },
+    'summa_explorer.html': {
+      title: 'Curriculum Tools',
+      body: 'The Summa 2026 curriculum dashboard — tracking daily synthesis progress through Austin Habash\'s 308-episode podcast series. Shows which days have been synthesized, coverage gaps, and the current continuous-day high-water mark. Each synthesis ties Habash\'s specific episode content to the RC Wiki thinker network.'
+    },
+    'prs_3d.html': {
+      title: '3D PRS',
+      body: 'A three-dimensional visualization of the Pluripotent Resource Space — the conceptual architecture underlying the RC framework. Nodes represent core constructs; edges encode structural relationships. Rotate and zoom to explore the topology of the idea space.'
+    },
+    'agents_tab.html': {
+      title: 'Agent Map',
+      body: 'A live map of the autonomous agents running the C2A2 system — daily synthesis batch, QC sweep, commentary reviewer, nightly verification, and wiki update agents. Shows each agent\'s last run time, output status, and task schedule.'
+    }
+  };
+  var info = descriptions[src] || { title: 'C2A2 Explorer', body: 'Community Dialogue Accelerator/Detector System — an integrated suite of visualization and analysis tools for the RC Wiki knowledge base.' };
+  document.getElementById('help-title').textContent = info.title;
+  document.getElementById('help-body').textContent = info.body;
+  document.getElementById('help-modal').style.display = 'flex';
+}
+function closeHelp() {
+  document.getElementById('help-modal').style.display = 'none';
 }
 </script>
 
