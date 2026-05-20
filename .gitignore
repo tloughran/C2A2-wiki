@@ -37,6 +37,7 @@ build/
 # Temporary / scratch
 *.tmp
 *.bak
+*.bak*
 scratch/
 
 # Private — quarantined files that should never be in the public repo
