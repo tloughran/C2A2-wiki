@@ -7,7 +7,10 @@ source_title: "Does Positivity Resonance Signify Love? Markers of Positivity Res
 source_url: https://onlinelibrary.wiley.com/doi/10.1111/pere.70008
 source_date: 2025-01-01
 searched_on: 2026-05-05
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-009
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

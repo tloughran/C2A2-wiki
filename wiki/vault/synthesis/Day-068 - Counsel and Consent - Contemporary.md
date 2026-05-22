@@ -17,8 +17,8 @@ length_note: "Q.14 (counsel, 6 articles) and Q.15 (consent, 4 articles) treated 
 mind_first_reframe: "Counsel is the alter's analytic-backward-inference under expected-free-energy minimization (Friston, Q.14 a.5); consent is HTM-style multi-policy parallel approval before commitment (Hawkins, Q.15 a.1-3); both are bounded by perspective-limited resources (Levin, Q.14 a.6) and structurally extended through friend-and-instrument second-personal-knowing (Stump, Q.14 a.3)."
 central_theme_thread: "Salvation in fear and trembling under perspective-limitation includes the daily-task work of deliberating well under bounded resources; Q.14 a.3's friend-and-instrument extension functions as extended-cognition that lets the alter's deliberation reach further than its own bounded resources alone permit, and Q.15's consent-then-choice structure is the perspective-limited alter approving multiple viable mean-policies before commitment, never reducing options to one until the further volitional act."
 tags: [synthesis, day/068, theme/deliberation, theme/bounded-rationality, theme/extended-cognition]
-last_qc_at: "2026-05-14T12:25:14"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-21T18:31:41"
+last_qc_outcome: "rewrote"
 ---
 # Day 68 — Contemporary Parallel: *Counsel as Analytic Backward-Inference and Consent as Multi-Policy Approval*
 
@@ -42,7 +42,7 @@ The problem (P): how does the alter, under perspective-limitation, deliberate we
 
 **Hawkins on HTM multi-policy approval before commitment.** Cortical-architecture: multiple candidate-patterns can be active simultaneously before one is selected for action. The medieval *consent approves several viable means; choice picks one* preserves cleanly under multi-arm-bandit decision structures: the agent entertains multiple feasible policies (consent-mode); selection (choice-mode) is the further commitment.
 
-**Stump on deliberation extending to friend-and-instrument.** Q.14 a.3 articulates a beautiful early version of *extended cognition*: deliberation extends across the affective and instrumental boundaries of the self when the other is one-with-the-self by friendship or instrumentality. Stump's second-personal-knowing frame is the theological-philosophical primary on this extension.
+**Stump on deliberation extending to friend-and-instrument.** Q.14 a.3 articulates a beautiful early version of *extended cognition*: deliberation extends across the affective and instrumental boundaries of the self when the other is one-with-the-self by friendship or instrumentality. Stump's second-personal-knowing frame is the theological-philosophical resource for this extension.
 
 **Levin on multi-scale agency and bounded deliberation.** The bounded character of counsel (Q.14 a.6 — the chandelier-needs-a-ceiling argument) preserves under bounded-rationality and resource-limited computation. Multi-scale agentic systems do not deliberate over arbitrarily-large state-spaces; bounded resource budgets force structured, finite deliberation.
 
@@ -64,7 +64,7 @@ Today's day articulates the *bounded-resource computation* register of the centr
 
 The friend-extension of counsel is doing keystone work: the alter's daily-task computation is *not done in isolation*; the alter's beloveds and the instruments of the alter's life are part of the alter's extended deliberation-system. This is the central-theme commitment that *we work out our salvation aware of our limitations and our need for guidance* concretized at the deliberation register.
 
-Wright on covenanted-community as the locus of friend-extended deliberation. Rohr on contemplative-prayer as the alter's deliberate alignment of analytic-backward-inference under the substrate-source's primary causation. Stump on faith-as-second-personal-knowing as the friend-extension's theological-philosophical primary. MacIntyre on tradition-bound rationality as the inherited resource for analytic-backward-inference under bounded resources.
+Wright on covenanted-community as the locus of friend-extended deliberation. Rohr on contemplative-prayer as the alter's deliberate alignment of analytic-backward-inference under the substrate-source's primary causation. Stump on faith-as-second-personal-knowing as the friend-extension's theological-philosophical resource. MacIntyre on tradition-bound rationality as the inherited resource for analytic-backward-inference under bounded resources.
 
 The consent/choice distinction is also central-theme-load-bearing: *the alter sees multiple viable mean-policies* under counsel and *approves them all* (consent) before *selecting one* (choice). Even after consent, *there still remains a choice* — the further commitment to *this* mean-policy rather than others. The alter's perspective-limitation does not reduce options to one; it leaves multiple viable mean-policies, and the alter's commitment is what reduces them.
 
@@ -73,8 +73,8 @@ The consent/choice distinction is also central-theme-load-bearing: *the alter se
 - **Friston-tradition wiki, PRS on expected-free-energy and analytic-backward-inference.** Active-inference formalism for analytic counsel. *Mature formal frame.*
 - **McGilchrist-tradition wiki, PRS on bi-hemispheric coordination.** Right-gestalt + left-analysis in deliberation. *Strong neuropsychiatric.*
 - **Hawkins-tradition wiki, PRS on HTM multi-policy parallel activation.** Cortical-architecture for consent-mode parallel approval. *Strong empirical.*
-- **Stump-tradition wiki, PRS on second-personal extending and tradition-bound rationality.** Theological-philosophical primary on friend-and-instrument extension of deliberation. *Book-length argument.*
-- **Levin-tradition wiki, PRS on bounded multi-scale agency.** Empirical primary on bounded computation at biological scales. *Strong empirical.*
+- **Stump-tradition wiki, PRS on second-personal extending and tradition-bound rationality.** Theological-philosophical resource for friend-and-instrument extension of deliberation. *Book-length argument.*
+- **Levin-tradition wiki, PRS on bounded multi-scale agency.** Empirical resource for bounded computation at biological scales. *Strong empirical.*
 - **Friston-tradition wiki, on bounded rationality.** Computational anchor.
 - **Wright, *Paul and the Faithfulness of God*.** Covenanted-community as friend-extended deliberation locus. *Scriptural-historical.*
 - **Rohr, *The Universal Christ*.** Contemplative-prayer as deliberation-alignment. *Contemplative theological.*

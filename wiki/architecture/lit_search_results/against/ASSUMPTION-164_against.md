@@ -1,0 +1,35 @@
+SEARCH-AGAINST-ASSUMPTION-164:
+  Date searched: 2026-05-18
+  Original item: ASSUMPTION-164
+  Original statement: "2026-05-16 chat-scrape success = fourth consecutive day; crosses 'credible stability' threshold; weakens PRESUMPTION-159 on chat-scrape axis."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-164
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15b: Searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Reason (1990) 'Human Error' — distinction between symptom-success and cause-resolution; multiple symptom-successes do not prove cause-resolution.
+    2. Hollnagel (2014) 'Safety-II' — 'absence of failure' is not 'presence of safety'; the surface that's been working may not be the surface that was at risk.
+
+  Strength of challenge: Moderate
+
+  Summary: Chat-scrape success is a single-surface metric; PRESUMPTION-159 named a cluster-wide concern (Chrome-MCP architectural fragility). Four successes on one surface is weak evidence about the cluster. PRESUMPTION-190 explicitly challenges this inference.
+
+  Specific risks: (a) Confidence built on single-surface evidence may mask cluster-wide vulnerability; (b) the 4-day record may itself be ending or be artifact of bypassed failure mode.
+
+  Mitigations available: (a) Measure cluster-wide reliability, not just chat-scrape; (b) explicit failure-mode taxonomy before declaring stability.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: ASSUMPTION-164
+    Strongest counterargument: The strongest case against: the inference 'chat-scrape stable → Chrome-MCP cluster healthier' commits the surface-success fallacy. Single-surface evidence is the cheapest evidence and the easiest to misread.
+

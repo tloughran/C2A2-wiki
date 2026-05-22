@@ -1,0 +1,38 @@
+SEARCH-AGAINST-ASSUMPTION-139:
+  Date searched: 2026-05-15
+  Original item: ASSUMPTION-139
+  Original statement: "Documentation carries the rationality standards; framework's normative commitments (honesty layer, PRS, perspective lattice) come bundled with toolkit, not opt-in"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-139
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from toolkit-bundling commitment
+      15b: Searched for counter-evidence on opt-in vs bundled normative commitments in toolkit adoption
+    Current status: PARTIALLY-CHALLENGED (Moderate)
+
+  Sources:
+    1. FLOSS fork history — when toolkits bundle normative commitments forks proliferate (e.g., LibreOffice fork from OpenOffice over governance norms; MariaDB from MySQL); bundling does not prevent stripping.
+    2. Adoption-friction studies (Lerner & Tirole 2002 "Some Simple Economics of Open Source"; West 2003) — bundled normative commitments reduce adoption when adopters don't share the values.
+    3. Lessig (1999) "Code: And Other Laws of Cyberspace" — code-as-law is real but contestable; users route around normative code via configuration, forks, or alternative tools.
+    4. Anti-pattern: "Convention over configuration" frameworks (Rails) bundle defaults but allow override; pure bundling without override paths is rejected in practice.
+    5. PRESUMPTION-paired: "Comes bundled" framing presumes the toolkit/content seam (ASSUMPTION-132) is clean enough to distinguish "bundled normative" from "swappable content" — this is contested.
+    6. Empirical: Wikipedia neutrality norms are bundled but routinely violated; norms-in-documentation are aspirational without enforcement layer.
+
+  Strength of challenge: Moderate
+
+  Summary: Bundling normative commitments is canonical for tradition-transmitting frameworks (per 15a) but the FLOSS record shows bundling without override paths produces forks, adoption friction, and route-around behavior. "Comes bundled with toolkit, not opt-in" is the right direction but the implementation needs to distinguish bundled-and-overridable (Rails convention-over-configuration) from bundled-and-mandatory (pure license enforcement). The honesty layer, PRS, and perspective lattice are different in this respect: honesty layer can be bundled-overridable (users can disable epistemic marks but defaults are on); PRS is more like a methodological commitment than a code feature; perspective lattice is structural. Moderate challenge: the universal "not opt-in" framing is over-strong; the right framing is "bundled by default with override paths for principled disagreement."
+
+  Specific risks: (a) Forks strip the normative layer; (b) Adoption friction when adopters don't share values; (c) "Not opt-in" without override path produces route-around; (d) PRS as methodological commitment vs. perspective lattice as structural commitment vs. honesty layer as runtime layer — these have different enforcement surfaces and shouldn't be treated uniformly.
+
+  Mitigations available: (a) Distinguish bundled-mandatory from bundled-default-overridable; (b) License terms for the structural commitments; (c) Sensible defaults + override paths for runtime commitments; (d) Documentation explicit about which commitments are normative vs. operational; (e) Federation contract terms for cross-instance enforcement.
+
+  Recommendation: PARTIALLY-CHALLENGED (Moderate) — bundling is canonical; uniform "not opt-in" framing risks over-strict enforcement that produces forks/route-around
+
+  STEELMAN:
+    Item: ASSUMPTION-139
+    Strongest counterargument: "Comes bundled with toolkit, not opt-in" treats three distinct commitment-classes (honesty layer = runtime, PRS = methodological, perspective lattice = structural) as uniform. The FLOSS record shows that bundled-without-override produces forks and adoption friction; bundled-default-overridable (Rails convention-over-configuration) preserves the normative direction without producing route-around. The honesty layer can reasonably be "default-on, override-allowed"; the perspective lattice is structural and harder to override; PRS is a methodological commitment that lives in documentation. Uniform "not opt-in" framing is over-strict.
+    What would need to be true for C2A2 to be safe: (a) Distinguish bundled-mandatory from bundled-default-overridable per commitment-class; (b) Documentation explicit about override paths; (c) License terms for structural commitments; (d) Adoption-friction audit at Pathway 22 (individual-deployment).
+    How to test: Trial bundling at Pathway 22; measure adoption rate vs. opt-in alternative on a sample population.

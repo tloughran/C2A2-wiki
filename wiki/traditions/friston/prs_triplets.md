@@ -143,5 +143,23 @@ PRS-14:
   Source: Karl Friston Legacy Interview (with Mark Solms and Jeremy Holmes, hosted by Jane O'Rourke) (2026-04-23 (released; recorded 2026-02-10)) — https://mindinmind.org.uk/recordings/karl-friston-legacy-interview/
   Confidence: High
 
+PRS-15:
+  Label: P15 (PROP-2026-05-11-004) — Active inference as formal validation of Boyd's full OODA loop
+  Problem: Boyd's original OODA loop has been linearized into a four-step procedural diagram in popular doctrine, losing the implicit feedback pathways and generative-model dynamics Boyd's actual sketch contained — leaving practitioners without a formal account of what "orientation" actually is or how it updates under uncertainty
+  Resource: Friston's reconstruction of Boyd's full OODA sketch in active-inference vocabulary: Markov blanket as the boundary defining the OODA-running self, generative model as Boyd's "orientation," the two implicit feedback pathways as forward (prediction) and inverse (action) free-energy minimization
+  Solution: A formal validation of Boyd's full OODA loop as a special case of active inference — providing OODA practitioners with the mathematical language to model, measure, and engineer orientation dynamics, and providing the active-inference community with a battle-tested cognitive framework as a target application domain
+  Date Added: 2026-05-13
+  Source: Karl Friston Decodes the Real OODA Loop (No Way Out Podcast #164, 2026-04-28) — https://thewhirl.substack.com/p/karl-friston-validates-boyds-real-ooda-loop
+  Confidence: High
+
+PRS-16:
+  Label: P16 (PROP-2026-05-11-004, 2nd candidate) — Expected free energy as unified mathematics of risk + ambiguity
+  Problem: Practitioners in finance, conflict, and competitive strategy have intuitive distinctions between *risk* (knowable distributions) and *ambiguity* (volatility of distributions themselves) but lack a unified formal account that ties both to the same generative-model mechanism
+  Resource: Active-inference identification: risk = KL divergence between prior preferences and predicted outcomes; ambiguity = volatility of the predictive distribution; expected free energy = unified mathematics of decision under both
+  Solution: A single formalism collapsing risk and ambiguity into one optimization target (expected free energy minimization) — provides a normative theory of decision under uncertainty that subsumes Knightian risk/ambiguity distinctions and opens active inference to direct calibration against market and operational decision data
+  Date Added: 2026-05-13
+  Source: Karl Friston Decodes the Real OODA Loop (No Way Out Podcast #164, 2026-04-28) — https://thewhirl.substack.com/p/karl-friston-validates-boyds-real-ooda-loop
+  Confidence: High
+
 ---
-*Total PRS triplets: 14*
+*Total PRS triplets: 16*

@@ -20,8 +20,8 @@ evidence_strength_summary: "Augustine's 'think with assent' read as joint intell
 mind_first_reframe: "Faith is a single integrated active-inference operation by which a generative model containing the wider mind as a high-precision node is held — 'thinking with assent' is cognitive engagement and volitional commitment as one model-based act rather than two faculties; the necessity above natural reason follows from the interface's structural insufficiency to deliver what it presupposes."
 central_theme_thread: "Faith is where the central claim becomes operational at the personal level — the structural opening of the perspective-limited agent to what its interface cannot deliver but presupposes, the entry condition for cooperation with the wider mind that grace installed."
 tags: [synthesis, day/119, theme/faith, theme/epistemology]
-last_qc_at: "2026-05-19T16:23:00"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-21T12:22:36"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 119 — The Act of Faith (Contemporary Parallel)
@@ -48,7 +48,7 @@ Aquinas's "to think with assent" reads cleanly inside this architecture. The thi
 
 Hoffman's interface theory handles the necessity-above-natural-reason claim. The interface compresses an underlying reality that the interface cannot directly represent; the agent's natural perceptual and inferential apparatus operates entirely within the interface. Any orientation of the agent toward what the interface presupposes (the underlying reality) must be a state the interface itself does not generate. This is precisely Aquinas's point that faith exceeds natural reason: not because revelation is arbitrarily added, but because the interface's own structure rules out the agent's reaching its underlying reality through purely interface-internal operations.
 
-Stump's PRS-13 (Tom's PRS-form record of Stump's "knowledge of persons" framing) reads faith as the kind of knowing that obtains between persons in mutual openness, not as propositional belief about a remote object. The Augustine formula's "assent" then is not assent to a proposition; it is the relational commitment that constitutes knowing-another-person. This preserves the cognitive character of faith (one does know the person) while explaining why the knowing exceeds what proposition-by-proposition inference can ground. The wiki entry is Tom's PRS-form description of Stump's move, not Stump's own self-description.
+PRS-13 in the Stump-tradition wiki (Tom's PRS-form record of Stump's "knowledge of persons" framing) reads faith as the kind of knowing that obtains between persons in mutual openness, not as propositional belief about a remote object. The Augustine formula's "assent" then is not assent to a proposition; it is the relational commitment that constitutes knowing-another-person. This preserves the cognitive character of faith (one does know the person) while explaining why the knowing exceeds what proposition-by-proposition inference can ground. The wiki entry is Tom's PRS-form description of Stump's move, not Stump's own self-description.
 
 Kastrup's analytic idealism gives the metaphysical reading of why such relational knowing is possible across the dissociative barrier. Two alters of one ground are not strangers; the ground is common. The barrier prevents direct access but does not abolish the underlying shared identity. Faith is the alter's recognition — under the right conditions — that the wider mind is not other than itself in the way the dissociative interface represents. Wright's reading of Pauline pistis as covenant-fidelity captures the same point in scriptural register: faith is fidelity-to-the-relation, not assent-to-the-information.
 

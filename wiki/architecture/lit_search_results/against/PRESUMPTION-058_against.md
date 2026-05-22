@@ -37,3 +37,38 @@ SEARCH-AGAINST-PRESUMPTION-058:
     Strongest counterargument: Reversing a prior decision without recording its original rationale is an ADR anti-pattern: it eliminates decision-archaeology, making any future revisit start from zero. Coupling the split to the caching rollout compounds the problem — if post-rollout quality regresses, attribution becomes impossible (was it caching or the split?). The split itself may be correct; the PROCESS around the split is literature-challenged on two axes: skipped rationale-review and coupled-change risk. Fixes are low-cost: a brief rationale note and either staged rollout or pre-defined rollback triggers.
     What would need to be true for C2A2 to be safe: Brief rationale note recorded; rollout staged OR explicit pre-defined rollback triggers; cross-tradition-signal corridor monitored for the first 4 weeks.
     How to test: Track cross-tradition-signal generation rate from Levin and Friston separately over 4 weeks post-split; compare against the prior joint-entry weeks; any corridor atrophy signals the split was net-negative.
+
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-058 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-17
+  Original item: PRESUMPTION-058
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b→15a,15b→15c→15d→15a,15b→15c]
+    Original item: PRESUMPTION-058
+    Item type: PRESUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-05): re-triggered on weekly cadence; next_check 2026-05-12 elapsed
+      15b (cycle 1, 2026-05-17): re-searched for challenging literature
+    Current status: refresh; no new challenging literature surfaced this cycle.
+
+  Run context: Daily-pipeline drain of 15d-owned cohort (see SYSTEMIC-RISK-FLAG in lit_search_returns.md 2026-05-17 RUN section). 15d schedule failure since 2026-05-05.
+
+  New evidence weighed: No new challenging literature has surfaced in the past week+. The prior cycles' challenge profile stands.
+
+  Sources (new / refreshed): No new sources this cycle.
+
+  Strength of challenge: Unchanged from prior cycle.
+
+  Summary: Cycle-1 refresh confirms the prior cycle's finding. The challenging literature base has not materially shifted; no new disconfirmatory sources surfaced during this automated cycle.
+
+  Specific risks: Unchanged from prior cycle.
+
+  Mitigations available: Unchanged from prior cycle.
+
+  Recommendation: refreshed; carry forward prior recommendation

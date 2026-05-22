@@ -1,0 +1,35 @@
+SEARCH-AGAINST-PRESUMPTION-169:
+  Date searched: 2026-05-15
+  Original item: PRESUMPTION-169
+  Original statement: "Portability arc 5-pathway decomposition (toolkit/federation/institutional/departmental/individual) presumes scale-of-deployment cut is right; alternative cuts (open-source vs proprietary; vertical vs horizontal-craft; commercial vs academic) unconsidered"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-169
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from Portability arc taxonomy framing
+      15b: Searched for counter-evidence on scale-of-deployment-only ontology of toolkit adoption
+    Current status: NO-CHALLENGE-FOUND (Weak)
+
+  Sources:
+    1. Scale-of-deployment is a defensible primary axis for portability planning — it maps cleanly to deployment effort (toolkit-only is lightest; individual-on-laptop is heaviest in different ways).
+    2. Counter-pattern: the alternative cuts (open vs. proprietary, etc.) can be orthogonal modifiers to scale, not replacements; scale-as-primary-axis with orthogonal modifiers is a viable design.
+    3. Christensen (1997) "Innovator's Dilemma" — adoption is often scale-driven; scale-of-deployment is a canonical adoption-axis.
+
+  Strength of challenge: Weak
+
+  Summary: The presumption flags an unconsidered set of alternative cuts; the literature supports the alternatives but does not refute scale-of-deployment as a legitimate primary axis. The presumption is right to flag the consideration gap, but it would be wrong to treat the scale-axis choice as a failure. Weak challenge: the inference is correct in direction; the disposition should be audit-and-document, not reject.
+
+  Specific risks: (a) Treating scale-of-deployment as exclusive axis when alternatives are orthogonal modifiers; (b) Foreclosing alternative cuts that may matter (open vs. proprietary in Pathway 22 individual deployment).
+
+  Mitigations available: (a) Audit alternative cuts (open vs. proprietary; commercial vs. academic) as modifiers to the scale axis; (b) Document the scale-axis choice and the alternatives considered; (c) Per-pathway audit at Pathway 22 (individual-deployment) for open/proprietary modifier impact.
+
+  Recommendation: NO-CHALLENGE-FOUND (Weak) — inference correct; remediation is consideration-audit not axis-change
+
+  STEELMAN:
+    Item: PRESUMPTION-169
+    Strongest counterargument: The scale-of-deployment axis is defensible as primary, but the consideration-gap is real. The right remediation is not to change the axis but to add modifiers (open/proprietary; commercial/academic) as orthogonal dimensions to the scale primary. The presumption-as-inference is correct but the implication "we picked the wrong cut" overshoots — the cut is right; the unconsidered modifiers need to be added.
+    What would need to be true for C2A2 to be safe: (a) Modifier axes documented; (b) Per-pathway audit for modifier impact.
+    How to test: At Pathway 22, document the open/proprietary modifier — check whether it materially changes pathway requirements.

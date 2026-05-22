@@ -1,0 +1,38 @@
+SEARCH-AGAINST-ASSUMPTION-124:
+  Date searched: 2026-05-14
+  Original item: ASSUMPTION-124
+  Original statement: "Generative-canvas library set is D3 + three.js + Plotly + bare canvas/WebGL"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-124
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from library catalog decision
+      15b: Searched for counter-evidence on closed enumeration and omitted alternatives
+    Current status: PARTIALLY-CHALLENGED
+
+  Sources:
+    1. Observable Plot (Bostock 2022+) — explicit successor to D3 for typical plots; lower LLM-codegen complexity than raw D3.
+    2. Vega-Lite (Satyanarayan et al. 2017) — grammar-of-graphics declarative API is widely considered the right LLM-codegen target.
+    3. deck.gl (Uber 2017+) — canonical geo/large-data WebGL; the bare-WebGL alternative is implementation overhead.
+    4. ECharts (Apache 2017+) — high-quality alternative with smaller bundle than Plotly for many cases.
+    5. Library-set sizing concern — four libraries is heavy; LLM-codegen surface multiplies with library count.
+    6. PRESUMPTION-157 paired — closed-enumeration without comparison.
+
+  Strength of challenge: Moderate
+
+  Summary: The chosen libraries are not wrong, but the set is heavier than necessary and omits LLM-codegen-friendly options (Vega-Lite, Observable Plot). For generative AI workflows where the LLM writes plot code, declarative grammars (Vega-Lite) and high-level abstractions (Observable Plot) reduce error rate substantially. deck.gl subsumes the bare-WebGL slot for geo / large-data. Moderate challenge: the catalog is defensible but un-optimized for the generative-canvas use case.
+
+  Specific risks: (a) LLM-codegen error rate higher on D3 than Vega-Lite; (b) Library-set sizing increases bundle and complexity; (c) Bare-WebGL is implementation overhead vs. deck.gl; (d) Closed enumeration without comparison.
+
+  Mitigations available: (a) Add Vega-Lite as primary declarative target; (b) Use Observable Plot for typical plots, fall to D3 only as needed; (c) Replace bare-WebGL with deck.gl; (d) Trim Plotly if Vega-Lite covers the workload.
+
+  Recommendation: PARTIALLY-CHALLENGED (Moderate) — catalog choice is defensible but un-optimized for generative-canvas workflows
+
+  STEELMAN:
+    Item: ASSUMPTION-124
+    Strongest counterargument: For a generative-canvas use case where an LLM writes plot code, the right library landscape is dominated by declarative grammars (Vega-Lite) and high-level abstractions (Observable Plot), not raw D3. The chosen set optimizes flexibility at the cost of LLM-codegen reliability. Library-set sizing matters: four libraries multiply complexity and bundle size; LLMs make more errors when the API surface is larger. The conservative move is to add Vega-Lite (primary), keep Observable Plot as the D3 successor, replace bare-WebGL with deck.gl, and reassess whether Plotly is still needed.
+    What would need to be true for C2A2 to be safe: (a) Library-set audited against generative-canvas use case; (b) LLM-codegen error rate measured per library; (c) Bundle size and API surface explicitly weighed.
+    How to test: Have an LLM generate the same plot in D3, Plotly, and Vega-Lite; measure error rate and result fidelity.

@@ -29,3 +29,35 @@ SEARCH-FOR-ASSUMPTION-089:
   Caveats: (a) Multi-LLM ensemble literature warns of training-data-overlap and shared-blind-spot effects — internal C2A2 reports written via LLM and external Codex review may share blind spots (this is PRESUMPTION-109 / PRESUMPTION-115 territory); (b) "appropriate next step" is stronger than "necessary next step" — literature supports it as minimum, not as the unique next step; (c) two-source synthesis without explicit weighting protocol is suboptimal vs. weighted aggregation.
 
   Recommendation: PARTIALLY-SUPPORTED (canonical as minimum-review pattern; epistemic-weight protocol needed to convert to unconditional support)
+
+---
+
+SEARCH-FOR-ASSUMPTION-089 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-089
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-089
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from review-aggregation decision
+      15a (cycle 0): Searched for supporting literature → PARTIALLY-SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~10-day gap on multi-source review or multi-LLM ensemble.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-SUPPORTED finding stands. Two-source synthesis still canonical as minimum.
+
+  Caveats: Epistemic-weight protocol still needed for full support.
+
+  Recommendation: PARTIALLY-SUPPORTED (refreshed; carry forward prior recommendation)

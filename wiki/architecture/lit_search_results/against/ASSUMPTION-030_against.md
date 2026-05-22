@@ -36,3 +36,36 @@ SEARCH-AGAINST-ASSUMPTION-030:
     Strongest counterargument: Benchmark-gating with undefined criteria is a recognized stall pattern. For novel interdisciplinary methodology, appropriate benchmarks may not yet exist — gating on their definition may produce indefinite delay or benchmark-shopping. Open-science literature argues early release with clear caveats is often higher-value than benchmark-gated release.
     What would need to be true for C2A2 to be safe: Time-boxed benchmark-definition work; clear fallback release path if benchmarks remain undefined.
     How to test: Is there a defined deadline for benchmark identification? Does the release-gate have an explicit escape clause?
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-030 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-030
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-030
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted as release-gating commitment
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new challenging literature in the ~5-week gap. Stall-pattern concern persists.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Strong)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. "TBD criteria" remains structurally fragile.
+
+  Caveats: Time-boxing benchmark work and adding escape clause would mitigate the concern.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

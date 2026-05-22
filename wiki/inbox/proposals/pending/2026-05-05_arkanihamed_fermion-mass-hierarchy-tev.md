@@ -7,7 +7,10 @@ source_title: "Generating the fermion mass hierarchy at the TeV scale"
 source_url: https://arxiv.org/abs/2602.17754
 source_date: 2026-02-19
 searched_on: 2026-05-05
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-006
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

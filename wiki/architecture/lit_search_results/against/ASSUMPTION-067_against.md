@@ -38,3 +38,38 @@ SEARCH-AGAINST-ASSUMPTION-067:
     Strongest counterargument: The bridge is an LLM-generated pairing that finds surface affinity (both speak about persons-in-relation) and treats it as a metaphysics-empirics synergy. But Fredrickson's RCT effects are individual-level and dose-response in form, while Stump's hylomorphic-corporate-substance metaphysics is at the level of constituted wholes. Reading the former as evidence for the latter is a level-confusion that the literature on methodological individualism vs. holism explicitly warns against. The internal inconsistency with same-day ASSUMPTION-063 (which demotes Stump on metaphysics) further indicates the pairing is structurally unstable.
     What would need to be true for C2A2 to be safe: (a) The Stump-Fredrickson pairing is checked against any actual literature pairing the two; (b) the level-of-analysis is made explicit; (c) the ASSUMPTION-063/067 tension is resolved by Tom rather than papered over.
     How to test: Search for any peer-reviewed paper or book chapter that cites both Stump and Fredrickson; if none exists, the pairing is novel and should not be treated as a literature-grounded bridge until C2A2 produces its own independent operational test.
+
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-067 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-17
+  Original item: ASSUMPTION-067
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a→15a,15b→15c→15d→15a,15b→15c]
+    Original item: ASSUMPTION-067
+    Item type: ASSUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-05): re-triggered on weekly cadence; next_check 2026-05-12 elapsed
+      15b (cycle 1, 2026-05-17): re-searched for challenging literature
+    Current status: refresh; no new challenging literature surfaced this cycle.
+
+  Run context: Daily-pipeline drain of 15d-owned cohort (see SYSTEMIC-RISK-FLAG in lit_search_returns.md 2026-05-17 RUN section). 15d schedule failure since 2026-05-05.
+
+  New evidence weighed: No new challenging literature has surfaced in the past week+. The prior cycles' challenge profile stands.
+
+  Sources (new / refreshed): No new sources this cycle.
+
+  Strength of challenge: Unchanged from prior cycle.
+
+  Summary: Cycle-1 refresh confirms the prior cycle's finding. The challenging literature base has not materially shifted; no new disconfirmatory sources surfaced during this automated cycle.
+
+  Specific risks: Unchanged from prior cycle.
+
+  Mitigations available: Unchanged from prior cycle.
+
+  Recommendation: refreshed; carry forward prior recommendation

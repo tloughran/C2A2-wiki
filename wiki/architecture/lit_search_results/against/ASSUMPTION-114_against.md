@@ -1,0 +1,37 @@
+SEARCH-AGAINST-ASSUMPTION-114:
+  Date searched: 2026-05-13
+  Original item: ASSUMPTION-114
+  Original statement: "Weekly-cadence / single-watch-item-over-7-days deferred-action-monitor protocol cadence is validated; load-bearing fix per WATCH-001 was the diagnostic method (ASSUMPTION-113), not the cadence"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-114
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-05-12 EOD WATCH-001 method-vs-cadence root-cause attribution
+      15b: Searched for counter-evidence on method-vs-cadence root-cause-attribution from single-instance success
+    Current status: PARTIALLY-CHALLENGED
+
+  Sources:
+    1. Wheeler (2000) "Understanding Variation" — N=1 success does not validate any operational parameter; the "fix" attribution may be confounded by simultaneous changes (e.g., the watched podcast actually published a transcript at the time it would have anyway).
+    2. Rasmussen (1983) — method-vs-cadence attribution from single instance is ambiguous; the canonical disambiguation is counterfactual testing, which N=1 cannot provide.
+    3. Box (2015) — Nyquist-aligned sampling depends on the underlying change-process spectrum; podcast transcript-publication rates vary by show (daily-publishing news podcasts ≠ weekly long-form ≠ episodic specials); a single weekly cadence is unlikely to be Nyquist-aligned for all show types.
+    4. Pearl (2009) "Causality" — counterfactual claims ("the load-bearing fix was the method, not the cadence") require causal structure; the single-instance evidence is consistent with multiple causal stories.
+    5. C2A2-internal: PRESUMPTION-143 (this cycle, paired) — first-end-to-end-cycle as protocol validation is the same single-data-point pattern; the two claims conflate.
+
+  Strength of challenge: Moderate
+
+  Summary: The challenge is moderate. The method-vs-cadence attribution is a counterfactual claim that the single resolution episode cannot establish. The "validated" cadence framing extrapolates an N=1 success to a protocol-level claim — SPC discipline (Wheeler), causal-inference discipline (Pearl), and human-factors discipline (Rasmussen) all challenge this move. Daily-publishing or burst-publishing podcasts may be under-sampled by weekly cadence in ways the C2A2 episode cannot reveal.
+
+  Specific risks: (a) Weekly cadence under-samples high-velocity podcasts, producing systematic latency for watches on those shows; (b) Method-vs-cadence attribution is counterfactual — the "fix" may have been confounded by independent publishing; (c) Joint with PRESUMPTION-143 single-data-point maturity claim; (d) "Validated" framing forecloses earlier-cadence experiment that might reveal cadence-error remained masked behind method-error.
+
+  Mitigations available: (a) Reframe as "weekly cadence is the operating default pending counterfactual test"; (b) per-show cadence assessment (high-velocity vs. weekly vs. episodic); (c) explicit counterfactual experiment (set a parallel daily-cadence watch, compare latency to detect); (d) demote "validated" to "consistent with one successful resolution."
+
+  Recommendation: PARTIALLY-CHALLENGED (Moderate) — method-vs-cadence attribution is counterfactual; "validated" overstates at N=1
+
+  STEELMAN:
+    Item: ASSUMPTION-114
+    Strongest counterargument: The N=1 resolution episode is consistent with multiple causal stories: (a) method was the binding constraint and cadence was already adequate; (b) cadence was inadequate and only happened to work because the podcast published late enough to be caught; (c) both contributed and the false-positive-to-true-positive transition tells us nothing about cadence specifically. Pearl's counterfactual discipline says you cannot resolve these stories without an experiment. Calling the cadence "validated" when the next high-velocity-podcast watch may fail under the same cadence is premature.
+    What would need to be true for C2A2 to be safe: (a) Counterfactual cadence experiment performed; (b) per-show cadence calibration; (c) demote framing to "consistent with one resolution."
+    How to test: Run a parallel daily-cadence watch on a high-velocity podcast for the same period; measure time-to-detect; compare to weekly.

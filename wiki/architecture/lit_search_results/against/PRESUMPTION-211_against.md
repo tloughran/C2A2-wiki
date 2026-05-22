@@ -1,0 +1,38 @@
+SEARCH-AGAINST-PRESUMPTION-211:
+  Date searched: 2026-05-20
+  Original item: PRESUMPTION-211
+  Original statement: "File-on-disk == durably persisted — commit responsibility is unowned."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-211
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — writes treated as durable once on disk; no agent owns the commit/push step that actually persists them.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Harder, T. & Reuter, A. (1983). "Principles of Transaction-Oriented Database Recovery" (ACM Computing Surveys). — The Durability (D) of ACID requires a committed, recoverable write; an uncommitted on-disk file is not durable.
+    2. Chacon, S. & Straub, B. "Pro Git." — Work in the working tree is not preserved until committed (and pushed for off-machine durability); uncommitted/un-pushed work is routinely lost.
+    3. Write-ahead-logging / fsync literature (e.g., Pillai et al. 2014, "All File Systems Are Not Created Equal," OSDI). — "On disk" does not even guarantee crash-durability without fsync, let alone version durability.
+    4. Ownership / RACI for operational steps (SRE practice). — An unowned commit responsibility means the durability step has no one accountable; it will be skipped.
+
+  Strength of challenge: Strong
+
+  Summary: The challenge is strong and the presumption is CRITICAL: durability requires a committed (and pushed) write, not merely a file on disk, and an unowned commit step will be silently skipped. This is the root of the recurring VCS morass (ASSUMPTION-188/189/190) — generated content sits on disk, no agent owns committing it, and it is lost or overwritten. ACID durability, git semantics, and fsync research all refute file-on-disk == persisted. Sits in SYSTEMIC-RISK-FLAG D and continues PRESUMPTION-199/REVISE-024.
+
+  Specific risks: Generated wiki/PRS/artifact content lost on regeneration or sandbox teardown; the 716/356 staging morass; silent data loss because no one owns the commit.
+
+  Mitigations available: Assign explicit commit ownership (one serialized committer — couples REVISE-033); treat on-disk as staged-not-durable; emit a write-receipt only after commit+push; alarm on uncommitted age.
+
+  Recommendation: CHALLENGED (REVISE, CRITICAL)
+
+  STEELMAN:
+    Item: PRESUMPTION-211
+    Strongest counterargument: Durability means committed-and-recoverable, not present-in-the-working-tree; an uncommitted file is one regeneration or teardown away from gone, and an unowned commit step guarantees it will sometimes not happen. This is the mechanism behind the recurring VCS morass.
+    What would need to be true for C2A2 to be safe: Safe once a single owner/serialized committer commits+pushes, on-disk is treated as not-yet-durable, and write-receipts are emitted only post-commit.
+    How to test: Write a file, do not commit, trigger a regenerating agent or sandbox teardown; if the file is lost, file-on-disk != persisted is demonstrated.

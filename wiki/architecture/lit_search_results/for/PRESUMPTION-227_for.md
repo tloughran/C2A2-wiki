@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-227:
+  Date searched: 2026-05-21
+  Original item: PRESUMPTION-227
+  Original statement: "Cross-tab interaction uniformity outweighs per-view-optimal (3D-native) affordances."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a]
+    Original item: PRESUMPTION-227
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred: the design presumes uniform interaction across tabs is preferable to per-view-optimal (e.g., 3D-native) affordances.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E / REVISE-040 noted)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Nielsen (1994) heuristic "Consistency and standards." — Consistency reduces learning cost; supports uniform interaction as a default.
+    2. Norman, "The Design of Everyday Things." — Consistent mappings aid transfer of learning across views.
+
+  Strength of support: Moderate
+
+  Summary: Consistency is a well-established usability principle (Nielsen, Norman): uniform interactions lower learning cost and support transfer across tabs, giving moderate support for uniformity as a default.
+
+  Caveats: Consistency is a default heuristic, not an override of task/context fit.
+
+  Recommendation: PARTIALLY-SUPPORTED

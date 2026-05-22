@@ -7,7 +7,10 @@ source_title: "Spacetime Bounds on Consciousness [v2]"
 source_url: https://www.preprints.org/manuscript/202602.1708
 source_date: 2026-04 (v2 update; v1 was 2026-03-13)
 searched_on: 2026-05-05
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-012
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-147:
+  Date searched: 2026-05-13
+  Original item: PRESUMPTION-147
+  Original statement: "Three-event narrative segmentation presumes event-discreteness corresponds to actual architectural state-changes — no criteria for 'structurally interesting' vs. 'operationally routine'"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-147
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from 2026-05-12 three-event-narrative without segmentation criteria
+      15b: Searched for counter-evidence on three-event framings systematically suppressing smaller-but-relevant changes
+    Current status: CHALLENGED
+
+  Sources:
+    1. Allspaw (2016) — explicit event-classification criteria (severity, scope, novelty) are canonical for operational reporting; segmentation-by-narrative-coherence produces systematic blind spots.
+    2. Boltanski & Thévenot (2006) — narrative coherence imposes worth-ordering that may not match system state-change structure.
+    3. Pentland & Feldman (2005) — narrative reports systematically simplify underlying processes; three-event framings are particularly prone to compression.
+    4. Cognitive psychology: "rule of three" / "three-act structure" — narrative-tradition bias toward three-event chunking is well-documented (Robert McKee story structure, Aristotle Poetics) but is independent of architectural state-change structure.
+    5. C2A2-internal: PRESUMPTION-036 single-cluster-framing cluster — prior precedent for the narrative-segmentation-as-architectural-claim anti-pattern.
+
+  Strength of challenge: Moderate
+
+  Summary: The challenge is moderate. Allspaw post-mortem methodology, Boltanski-Thévenot justification theory, Pentland-Feldman routine-narrative gap, and cognitive-psychology rule-of-three convergence: three-event narrative segmentation is biased toward narrative coherence rather than state-change accuracy. Joint with PRESUMPTION-036 cluster.
+
+  Specific risks: (a) Architectural decisions based on three-event narratives systematically miss smaller-but-relevant changes; (b) Three-act structure bias inflates apparent narrative tidiness; (c) Joint with PRESUMPTION-036 cluster recurrence; (d) No explicit criteria means the segmentation is non-reproducible.
+
+  Mitigations available: (a) Explicit tier-criteria (severity, scope, novelty) for event classification; (b) full-event-log alongside narrative-summary; (c) joint remediation with PRESUMPTION-036; (d) reproducibility test — different agents/authors produce same segmentation given same criteria.
+
+  Recommendation: CHALLENGED (Moderate) — recurrence at narrative-segmentation layer; joins PRESUMPTION-036 cluster
+
+  STEELMAN:
+    Item: PRESUMPTION-147
+    Strongest counterargument: Three-event narrative segmentation is biased toward narrative coherence (rule-of-three, three-act structure) rather than architectural state-change structure. Allspaw, Boltanski-Thévenot, and Pentland-Feldman all document that narrative reports systematically simplify underlying processes. Without explicit tier-criteria, the segmentation is non-reproducible — different authors would produce different three-event lists from the same source material. Architectural decisions inheriting the narrative segmentation inherit the cognitive bias.
+    What would need to be true for C2A2 to be safe: (a) Explicit tier-criteria; (b) full-event-log accompanying narrative; (c) reproducibility test.
+    How to test: Same-source independent segmentation by multiple agents; compare consistency.

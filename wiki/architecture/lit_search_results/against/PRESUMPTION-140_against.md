@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-140:
+  Date searched: 2026-05-13
+  Original item: PRESUMPTION-140
+  Original statement: "Empty active watch list framed as positive signal without intake-coverage audit — absence-as-success without considering Agent 16 intake heuristic narrowness"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-140
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from 2026-05-12 EOD empty-watch-list-as-positive without coverage audit
+      15b: Searched for counter-evidence on watch-list-emptiness as unambiguously positive signal
+    Current status: CHALLENGED
+
+  Sources:
+    1. Beyer (2016) SRE Ch. 4 — absence-of-alerts is operationally indistinguishable from broken-detection without independent coverage check; treating it as positive is documented anti-pattern.
+    2. Hollnagel (2012) "Safety-I vs Safety-II" — Safety-I treats absence as success; Safety-II requires evidence the system is detecting what should be detected; the C2A2 framing is Safety-I.
+    3. Mason (2008) surveillance epidemiology — zero-count requires disambiguation between "no-cases" and "no-surveillance"; the canonical disambiguation is coverage audit.
+    4. Agent 16 intake heuristic: per the Agent 16 definition, watches are created from deferred-action surfaces in chat logs; the heuristic is selective (only items meeting specific framing patterns surface as watches). An empty watch list may mean "no qualifying items" OR "heuristic missed qualifying items" — these are operationally distinct.
+    5. C2A2-internal: PRESUMPTION-069 silence-not-tracked cluster — prior REVISE for the same anti-pattern at the silence-detection layer.
+
+  Strength of challenge: Strong
+
+  Summary: The challenge is strong. SRE absence-of-alerts framing, Hollnagel Safety-I/II distinction, surveillance-epidemiology coverage-audit discipline, and the Agent 16 intake heuristic's known selectivity converge: an empty watch list without coverage audit is operationally indistinguishable from broken-intake. The presumption joins the PRESUMPTION-069 silence-not-tracked cluster at the empty-watch-list layer.
+
+  Specific risks: (a) Broken intake heuristic produces empty watch lists that are interpreted as positive; (b) silent operational degradation; (c) Joint with PRESUMPTION-069 cluster — recurrence pattern; (d) Agent 16 intake heuristic narrowness is a known structural concern that this framing forecloses.
+
+  Mitigations available: (a) Intake-coverage audit on a sample of chat logs (does Agent 16 detect what a human would flag?); (b) explicit "empty list = positive OR broken intake" framing in reporting; (c) periodic coverage-test schedule; (d) demote "positive signal" framing to "no items surfaced; coverage pending audit."
+
+  Recommendation: CHALLENGED (Strong)
+
+  STEELMAN:
+    Item: PRESUMPTION-140
+    Strongest counterargument: An empty active watch list is ambiguous between (a) the system is detecting correctly and there are no items to track and (b) the intake heuristic is too narrow and is missing items that should be tracked. Without an orthogonal coverage check, these two possibilities are operationally indistinguishable. Agent 16's intake heuristic is selective by design — it only surfaces items matching specific deferred-action framing patterns. Reporting an empty list as a positive signal implicitly endorses (a) as the operative interpretation, but the canonical SRE / surveillance discipline says (b) must be ruled out first. This is the textbook Safety-I framing that Hollnagel critiques.
+    What would need to be true for C2A2 to be safe: (a) Coverage audit on a sample of chat logs; (b) explicit acknowledgment of the (a)-vs-(b) ambiguity in reporting; (c) periodic coverage-test cadence.
+    How to test: Sample 20 chat-log days; manually identify deferred-action surfaces; compare to Agent 16 surfaced count; measure recall.

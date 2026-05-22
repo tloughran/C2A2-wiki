@@ -28,3 +28,35 @@ SEARCH-FOR-ASSUMPTION-032:
   Caveats: Visual-only debugging has documented accuracy penalties (often cited at 20-40% in head-to-head GUI agent benchmarks). It is a fallback, not a peer.
   
   Recommendation: PARTIALLY-SUPPORTED
+
+---
+
+SEARCH-FOR-ASSUMPTION-032 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-032
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-032
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from session — tool-degradation compensation
+      15a (cycle 0): Searched for supporting literature → PARTIALLY-SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new supporting literature in the ~5-week gap. Visual-agent literature stable.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate, qualified)
+
+  Summary: Prior PARTIALLY-SUPPORTED finding stands. "Sufficient substitute for some scenarios" still the accurate framing.
+
+  Caveats: For native-app debugging specifically, computer-use is the right tier per current MCP guidance.
+
+  Recommendation: PARTIALLY-SUPPORTED (refreshed; carry forward prior recommendation)

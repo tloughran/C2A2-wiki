@@ -1,0 +1,36 @@
+SEARCH-AGAINST-PRESUMPTION-183:
+  Date searched: 2026-05-18
+  Original item: PRESUMPTION-183
+  Original statement: "Maildir-style file-folder coordination presumed to scale beyond single non-Claude producer; priority-field deferred 'until more than one producer' names the assumption only to defer it."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-183
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15b: Searched for challenging literature
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. DZone 'Conflict Resolution: Using Last-Write-Wins vs. CRDTs' — under multi-producer concurrent edits, file-folder coordination needs vector clocks or CRDTs; Maildir provides atomic delivery but not ordered processing.
+    2. Wikipedia 'CRDT' — file-folder multi-producer coordination has known failure modes (clock drift, ordering) that Maildir doesn't address.
+    3. C2A2-internal PRESUMPTION-002 (CRITICAL transfer-validity cluster) — explicit pattern that file-coordination patterns transfer with unstated boundary conditions.
+
+  Strength of challenge: Moderate
+
+  Summary: Maildir scales for atomic delivery but the broader pattern (folder-as-queue with prioritization, ordering, fair-share) does not inherit Maildir's scaling properties. The 'priority-field deferred until more than one producer' move names the un-audited assumption and parks it — which is fine as a flag, problematic as a plan.
+
+  Specific risks: (a) Second-producer addition triggers ordering or priority needs that the architecture has not solved; (b) the deferral may outlast the trigger if not actively monitored.
+
+  Mitigations available: (a) Set explicit trigger condition: 'before second producer is added, audit priority/ordering needs'; (b) re-evaluate transition path to vector-clock or queue-service.
+
+  Recommendation: CHALLENGED
+
+  STEELMAN:
+    Item: PRESUMPTION-183
+    Strongest counterargument: Naming the assumption only to defer it is a known software-engineering anti-pattern (technical-debt-without-payoff-plan). It's better than not naming, but worse than naming + plan. The literature on technical debt (Cunningham 1992) is clear that named debt without payoff schedule tends to accumulate, not resolve.
+

@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-147:
+  Date searched: 2026-05-13
+  Original item: PRESUMPTION-147
+  Original statement: "Three-event narrative segmentation presumes event-discreteness corresponds to actual architectural state-changes — no criteria for 'structurally interesting' vs. 'operationally routine'"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-147
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from 2026-05-12 three-event-narrative framing without segmentation criteria
+      15a: Searched for narrative-segmentation patterns in operational reporting and event-tier criteria in change-tracking systems
+    Current status: NO-SUPPORT-FOUND
+
+  Sources:
+    1. (None found endorsing narrative-segmentation as architectural-state-change tracking without explicit tier-criteria.)
+    2. Allspaw (2016) post-mortem methodology — explicit event-classification criteria (severity, scope, novelty) are canonical for operational reporting; segmentation-by-narrative-coherence is anti-pattern.
+    3. Boltanski & Thévenot (2006) "On Justification" — narrative coherence imposes a worth-ordering on events that may not match the system-internal state-change structure; sociological precedent for the concern.
+    4. Pentland & Feldman (2005) "Organizational routines as a unit of analysis" — narrative reports of routines systematically simplify the underlying process; the gap is empirical.
+    5. C2A2-internal: PRESUMPTION-036 (single-cluster-framing cluster) — prior precedent for narrative-segmentation-as-architectural-claim anti-pattern.
+
+  Strength of support: None
+
+  Summary: No literature endorses narrative-segmentation as architectural-state-change tracking without explicit tier-criteria. Allspaw post-mortem methodology, Boltanski-Thévenot justification theory, and Pentland-Feldman routine-narrative gap research converge: narrative coherence systematically diverges from underlying state-change structure unless explicit criteria force alignment. Joins PRESUMPTION-036 single-cluster-framing cluster.
+
+  Caveats: For executive-summary or stakeholder-communication purposes, narrative segmentation is appropriate — but the C2A2 case uses the narrative as architectural input to subsequent decisions, where the divergence matters.
+
+  Recommendation: NO-SUPPORT-FOUND — narrative-segmentation without explicit criteria is anti-pattern; joins PRESUMPTION-036 cluster

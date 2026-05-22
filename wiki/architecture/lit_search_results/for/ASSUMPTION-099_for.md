@@ -29,3 +29,35 @@ SEARCH-FOR-ASSUMPTION-099:
   Caveats: (a) Unification is canonical only when failure-modes are sufficiently similar; if specialist self-attribution and external-LLM prioritization fail in different ways, separate ADRs are preferred; (b) PRESUMPTION-118 captures the asymmetric-reversibility risk — unifying-then-splitting is documented as more costly than starting split; (c) scope unification at decision-time foregrounds substrate; scope unification post-hoc risks rationalizing distinct decisions as "the same".
 
   Recommendation: PARTIALLY-SUPPORTED (substrate-coupling is real but failure-mode differentiation should be assessed before unifying; per PRESUMPTION-118, asymmetric-reversibility analysis is the canonical guard)
+
+---
+
+SEARCH-FOR-ASSUMPTION-099 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-099
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-099
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from DECISION-027 scope-extension question
+      15a (cycle 0): Searched for supporting literature → PARTIALLY-SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~9-day gap on review-aggregation tier classification.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-SUPPORTED finding stands. Scope unification canonical when failure modes share class.
+
+  Caveats: Asymmetric-reversibility analysis still the guard.
+
+  Recommendation: PARTIALLY-SUPPORTED (refreshed; carry forward prior recommendation)

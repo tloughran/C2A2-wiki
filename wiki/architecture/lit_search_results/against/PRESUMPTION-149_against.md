@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-149:
+  Date searched: 2026-05-13
+  Original item: PRESUMPTION-149
+  Original statement: "Agent 16 'flag, do not unilaterally merge' norm without decision-criteria for safely-automatable overlap — agent-autonomy bound stated as policy without elaboration"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-149
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from 2026-05-12 Agent 16 flag-not-merge norm without elaboration
+      15b: Searched for counter-evidence on flag-not-merge defaults as conservative-but-correct
+    Current status: PARTIALLY-CHALLENGED
+
+  Sources:
+    1. Amodei et al. (2016) — bounded autonomy with human-in-loop for irreversible actions is canonical; the flag-not-merge default itself is well-supported.
+    2. Russell & Norvig (2020) — conservative defaults for novel-action authority is convention; default itself is supported.
+    3. C2A2-internal: PRESUMPTION-131 (MONITOR-116 — agent-judgment-call autonomy cluster) — prior precedent. The structural concern is policy-by-accretion: multiple agent-autonomy bounds stated as policy without elaboration accumulate into a non-articulated governance posture.
+    4. The norm itself is correct; the absence of elaboration is the issue. "Conservative-but-correct" defaults can hide that the boundary between "flag" and "merge" is operationally undefined; an agent encountering a clearly-safely-automatable case has no criterion to use.
+    5. Joint with PRESUMPTION-131 cluster — third recurrence of agent-autonomy-without-policy at the Agent 16 merge layer.
+
+  Strength of challenge: Moderate
+
+  Summary: The challenge is moderate. The conservative default is well-supported (Amodei, Russell-Norvig); the structural concern is that the policy lacks elaboration. The presumption joins PRESUMPTION-131 cluster as recurrence at the merge-authority layer. The cumulative concern (policy-by-accretion across agent-autonomy bounds) is the cluster signature, not the individual norm.
+
+  Specific risks: (a) Policy-by-accretion: multiple agent-autonomy bounds without elaboration accumulate into non-articulated governance posture; (b) Cumulative cluster recurrence (PRESUMPTION-131 → PRESUMPTION-149 at Agent 16 layer); (c) Operationally, agent has no decision-criterion for the "safely-automatable" boundary; (d) Default is correct in principle but un-articulated boundary is the structural concern.
+
+  Mitigations available: (a) Document decision-criteria for the flag-vs-merge boundary; (b) explicit "always flag" as the operating default with criteria for any future safely-automatable case; (c) joint cluster remediation with PRESUMPTION-131; (d) policy specification before agent operationalization.
+
+  Recommendation: PARTIALLY-CHALLENGED (Moderate) — conservative default is correct; absence of elaboration is structural concern; joins PRESUMPTION-131 cluster
+
+  STEELMAN:
+    Item: PRESUMPTION-149
+    Strongest counterargument: The conservative flag-not-merge default is well-supported by AI-safety and agent-design literature, but the presumption concerns the absence of elaboration around the boundary. Multiple agent-autonomy bounds stated as policy without elaboration (PRESUMPTION-131 already MONITORed) accumulate into a non-articulated governance posture. An agent encountering a clearly-safely-automatable case has no criterion to use; the operational default works only because the boundary is never actually tested. Cluster recurrence at the merge-authority layer indicates the pattern is structural rather than incidental.
+    What would need to be true for C2A2 to be safe: (a) Documented decision-criteria for flag-vs-merge boundary; (b) explicit "always flag" with future-safely-automatable criteria; (c) joint cluster remediation.
+    How to test: Track agent-autonomy bound statements across C2A2 agent definitions; count those without elaboration; if >2, the policy-by-accretion concern is empirically supported.

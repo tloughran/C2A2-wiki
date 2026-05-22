@@ -1,0 +1,37 @@
+SEARCH-AGAINST-ASSUMPTION-125:
+  Date searched: 2026-05-14
+  Original item: ASSUMPTION-125
+  Original statement: "Unsaid-edges scoring uses two filters (how-often × how-important) with Low × High emphasized as strongest research-program candidate"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-125
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from unsaid-edges scoring design
+      15b: Searched for counter-evidence on UI emphasis priming attention and Low × High framing
+    Current status: PARTIALLY-CHALLENGED
+
+  Sources:
+    1. Tversky & Kahneman (1974) and Kahneman (2011) "Thinking, Fast and Slow" — UI emphasis primes attention; emphasis is not a neutral encoding of importance.
+    2. Few (2013) "Information Dashboard Design" — emphasis without empirical warrant biases user attention and can be self-fulfilling.
+    3. Christensen (1997) on innovation — Low × High framing privileges one innovation theory; High × High (deepening) is also a research-program driver.
+    4. Swanson (1986) on undiscovered-public-knowledge — supports Low × High as a target, but only after frequency × importance calibration; uncalibrated scores produce noise.
+    5. PRESUMPTION-158 paired — quadrant-emphasis as normative operationalization.
+
+  Strength of challenge: Moderate
+
+  Summary: UI emphasis is a recognized framing device. Operationalizing a normative theory ("Low × High = research-program candidate") as UI emphasis without empirical validation creates a self-fulfilling prophecy — users attend to the emphasized quadrant, find research programs there, and confirm the design choice. Alternative quadrant readings (High × High = deepening) are also legitimate. Moderate challenge — two-filter design is sound; quadrant emphasis is the load-bearing concern.
+
+  Specific risks: (a) UI emphasis biases user attention; (b) Self-fulfilling validation of Low × High; (c) Alternative quadrants under-attended; (d) Uncalibrated scores may produce noise.
+
+  Mitigations available: (a) Neutral-encoding control condition; (b) Empirical validation against actual research programs; (c) Multi-quadrant emphasis with explicit user-mode switching; (d) Calibration of frequency × importance against ground truth.
+
+  Recommendation: PARTIALLY-CHALLENGED (Moderate) — two-filter design supported; UI emphasis is normative and needs empirical warrant
+
+  STEELMAN:
+    Item: ASSUMPTION-125
+    Strongest counterargument: Operationalizing a normative claim ("Low × High = research-program candidate") as UI emphasis without empirical warrant creates a self-fulfilling prophecy. Users attend to the emphasized quadrant and find research programs there because that's where they're looking. The alternative quadrants (High × High deepening, Low × Low cleanup) are legitimate research-program drivers and are under-attended by design. The decision should either provide empirical warrant (validate against actual research programs) or move to neutral encoding (no quadrant emphasis).
+    What would need to be true for C2A2 to be safe: (a) Empirical warrant for Low × High emphasis; or (b) Neutral encoding; or (c) Multi-mode UI where user chooses quadrant focus.
+    How to test: Validate Low × High picks against actual research programs in the historical corpus; compare to other quadrants.

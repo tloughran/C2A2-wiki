@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-194:
+  Date searched: 2026-05-20
+  Original item: ASSUMPTION-194
+  Original statement: "prs_3d generator is not idempotent — must be fed template, never a built file."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-194
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from session: prs_3d generator confirmed non-idempotent; must consume the template, never a previously built file.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Reproducible-builds / hermetic-build literature (Bazel docs; Lamb & Zacchiroli 2021, "Reproducible Builds," IEEE Software). — Generators that consume their own output drift; feeding the canonical source/template each time is the standard discipline.
+    2. Infrastructure-as-code idempotence (Ansible/Terraform design docs). — Non-idempotent transforms must be guarded by always operating from the declared source, never from a derived state.
+    3. C2A2 CLAUDE.md note. — Documented same-pattern non-idempotence for wiki_narration (generator fed template, never a built file) — internal precedent confirming the constraint class.
+
+  Strength of support: Strong
+
+  Summary: That a code/artifact generator can be non-idempotent and must therefore consume the source template rather than a previously built file is a well-established constraint, and C2A2 already documents the identical pattern for wiki_narration. The premise correctly identifies a real determinism constraint and the correct discipline (template-in, never build-in). Support is strong and reinforced by internal precedent.
+
+  Caveats: Support is for the constraint and the discipline; 15b notes idempotence is sometimes cheap to add, which would remove the constraint rather than just guard it.
+
+  Recommendation: SUPPORTED

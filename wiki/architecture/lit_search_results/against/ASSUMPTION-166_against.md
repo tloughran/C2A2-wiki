@@ -1,0 +1,35 @@
+SEARCH-AGAINST-ASSUMPTION-166:
+  Date searched: 2026-05-18
+  Original item: ASSUMPTION-166
+  Original statement: "c2a2-lit-search-pipeline 2026-05-16 ran on cadence + produced documented null run + refused to drain 57-item RE-TRIGGER cohort + surfaced upstream gap; Pathway-14 honesty-layer success on permissive criterion."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-166
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15b: Searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Hollnagel (2014) 'Safety-II' — 'absence of dishonesty' is not 'presence of honesty'; transparency under stress requires active disclosure, not just non-falsification.
+    2. Whistleblower/disclosure literature (Miceli & Near, 1992) — passive non-misrepresentation falls short of active disclosure standards in normative-framework invocations.
+
+  Strength of challenge: Weak-Moderate
+
+  Summary: The success claim depends on which honesty-criterion is being applied. A permissive criterion (didn't pretend; didn't fabricate work) is satisfied. An active criterion (escalated the upstream cause; flagged the systemic risk) is satisfied only partially. The framing of 'success' should specify which criterion.
+
+  Specific risks: (a) Criterion-creep — naming as 'success' under a softer criterion than the framework usually invokes; (b) systemic-risk under-escalation if active disclosure was warranted but skipped.
+
+  Mitigations available: (a) Specify criterion explicitly when invoking Pathway-14; (b) escalate upstream gap actively, not just document it.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: ASSUMPTION-166
+    Strongest counterargument: The strongest case against: 'Pathway-14 success' is a load-bearing term. Using it on a permissive criterion when the framework canonically invokes an active one is criterion-creep. PRESUMPTION-195 catches this precisely.
+

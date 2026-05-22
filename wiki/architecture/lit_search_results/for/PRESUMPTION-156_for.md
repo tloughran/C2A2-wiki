@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-156:
+  Date searched: 2026-05-14
+  Original item: PRESUMPTION-156
+  Original statement: "Ephemeral-by-default + Pin-this presumes users will notice valuable plots in real time and remember to pin; opposite default not considered"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-156
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced via inference from ASSUMPTION-123 ephemeral-by-default mechanism without inverse-default audit
+      15a: Searched for ephemeral-vs-persistent defaults UX literature and derivative-realization use cases
+    Current status: SUPPORTED
+
+  Sources:
+    1. Thaler & Sunstein (2008) "Nudge" — default effects literature: defaults are sticky; the choice of default carries normative weight.
+    2. Jupyter notebook cell-output persistence research (2020-2024) — persistence-by-default reduces lost-work events for derivative-recognition use cases.
+    3. Nielsen Norman Group on save-as-explicit-vs-implicit (2018-2022) — both directions have valid use cases; the design must match the dominant user mode.
+    4. Re-finding behavior research (Bruce et al. 2004; Capra & Pérez-Quiñones 2005) — users routinely fail to recognize derivative value in real time.
+
+  Strength of support: Strong
+
+  Summary: Default-direction is a recognized load-bearing design choice (Nudge literature). For exploratory tools where value is realized in real time, ephemeral-by-default is appropriate. For derivative-realization tools where value emerges on retrospective review, persistent-by-default is more appropriate. The presumption correctly identifies that the inverse-default audit was not performed and the dominant user mode was not characterized. Strong support for the inference.
+
+  Caveats: (a) The dominant user mode may genuinely be real-time recognition; the audit may confirm ASSUMPTION-123; (b) Persistent-by-default has storage and clutter costs; (c) Hybrid (auto-persist with auto-cleanup) is a third design path not considered.
+
+  Recommendation: SUPPORTED — default-direction audit is a recognized design step; the inference identifies a real gap

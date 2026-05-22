@@ -37,3 +37,36 @@ SEARCH-AGAINST-ASSUMPTION-095:
     Strongest counterargument: SYSTEMIC ESCALATION is the strongest severity tier; it requires "no client-side workaround within affected layer" by ITIL standard. Alternative paths (proxy support, self-hosted access, OAuth flow) are not yet enumerated; without that enumeration, the SYSTEMIC claim is premature. The youtube-transcript-api issue tracker shows many cases initially flagged as systemic that were eventually downgraded to transient or version-related.
     What would need to be true for C2A2 to be safe: (a) alternative-diagnosis enumeration (transient/rate-limit/geo/version); (b) alternative-path enumeration (proxy/OAuth/self-hosted); (c) temporal-stability confirmation (block persists across multi-day window).
     How to test: Test the call with proxy / alternate IP / different library version / over multiple days; if all paths fail consistently, SYSTEMIC is confirmed; if one succeeds, severity downgrades.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-095 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-095
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-095
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from sandbox YouTube-block diagnosis
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~10-day gap. Alternate-diagnosis options stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Weak-Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. Alternate-path enumeration concern persists.
+
+  Caveats: Internal empirical test would resolve faster.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-155:
+  Date searched: 2026-05-14
+  Original item: PRESUMPTION-155
+  Original statement: "First-class-wiki-citizen machinery presumed to generalize to perspectives without auditing transfer condition (does Sociogram / structure-group code path assume thinker/PRS schema?)"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-155
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced via inference from ASSUMPTION-122 first-class extension without machinery-transfer audit
+      15a: Searched for machinery-transfer audit patterns in extensible schemas
+    Current status: SUPPORTED
+
+  Sources:
+    1. Liskov Substitution Principle (Liskov & Wing 1994) — type extension without checking sub-type covariance is a canonical correctness risk.
+    2. Fowler (2003) "Patterns of Enterprise Application Architecture" — schema extension audits are recommended whenever new entity types share existing affordances.
+    3. Schema-evolution literature (Roddick 1995; Nascimento & Dias 2013) — explicit transfer-condition documentation is endorsed for safely-extensible schemas.
+    4. "Tag-as-type" vs. "type-as-schema" distinction (Codd 1970 tradition; modern tagged-vs-typed content systems) — the implicit-vs-explicit-type discipline is a known design tradeoff.
+
+  Strength of support: Strong
+
+  Summary: Machinery-transfer-audit before applying existing code paths to new entity types is well-supported by Liskov substitution, schema-evolution practice, and enterprise-architecture literature. The presumption correctly identifies that ASSUMPTION-122's "first-class citizen" claim requires this audit to be sound. Strong support for the inference.
+
+  Caveats: (a) Tag-based first-class typing has flexibility benefits — too-strict typing can be its own anti-pattern; (b) The audit may confirm safe extension (in which case the presumption is satisfied); (c) Code-path-by-code-path audit is expensive — a structural test may suffice.
+
+  Recommendation: SUPPORTED — machinery-transfer audit is a recognized prerequisite; the inference identifies a real gap

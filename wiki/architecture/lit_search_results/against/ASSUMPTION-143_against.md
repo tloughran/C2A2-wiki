@@ -1,0 +1,36 @@
+SEARCH-AGAINST-ASSUMPTION-143:
+  Date searched: 2026-05-15
+  Original item: ASSUMPTION-143
+  Original statement: "Agent 16 finalized WATCH-001 bookkeeping cleanup; 3 new pending proposals staged (2 Fredrickson, 1 Stump); active watch list at 0"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-143
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Agent 16 operational summary
+      15b: Searched for counter-evidence on watch-list-at-0 baseline interpretation
+    Current status: NO-CHALLENGE-FOUND (Weak)
+
+  Sources:
+    1. SRE practice — "queue at 0" is ambiguous between "no work" and "no detection coverage"; baseline-construction is canonical concern (Wickens 2002 attention research; Hollnagel 2014 Safety-II).
+    2. SELF-MEASUREMENT cluster (carry-forward from PRESUMPTION-160 etc.) — "0 count" is a self-measurement signal that requires baseline context.
+    3. Counter-pattern within 15b: the descriptive claim is largely operational reporting; the watch-list-at-0 phrasing is the interpretive gap, not a literature challenge to the underlying observation.
+    4. 3 pending proposals staged is itself a non-zero work signal; the "active watch list at 0" claim coexists with active pipeline work.
+
+  Strength of challenge: Weak
+
+  Summary: The descriptive claim is sound; the watch-list-at-0 interpretation has a baseline-construction concern but does not have direct literature challenge. The 3 pending proposals staged is itself a counter-signal to the "at 0" framing (work continues; the queue is cleaned but the pipeline is not idle). Weak challenge: the assumption is mostly operational reporting; the load-bearing concern is the SELF-MEASUREMENT-cluster recurrence of "0 count" as a positive signal without baseline.
+
+  Specific risks: (a) "Watch list at 0" interpreted as positive signal without detection-coverage baseline; (b) SELF-MEASUREMENT cluster recurrence (PRESUMPTION-160 carry-forward); (c) Co-occurring 3 pending proposals undercuts the "at 0" framing.
+
+  Mitigations available: (a) Baseline detection-coverage audit; (b) Clarify "watch list at 0" vs. "pipeline at non-zero"; (c) Avoid SELF-MEASUREMENT-cluster recurrence framing.
+
+  Recommendation: NO-CHALLENGE-FOUND (Weak) — descriptive claim sound; SELF-MEASUREMENT-cluster carry-forward
+
+  STEELMAN:
+    Item: ASSUMPTION-143
+    Strongest counterargument: The descriptive claim is correct; the load-bearing question is whether "watch list at 0" should be cited as a positive operational signal. The SELF-MEASUREMENT cluster (PRESUMPTION-160 carry-forward) flags that "0 count" requires baseline context. The 3 pending proposals coexisting with the "at 0" framing means the pipeline is not actually idle — just the WATCH bucket is cleared. Cleaner framing: "WATCH-001 closed; 3 items in pending pipeline; no active watch items."
+    What would need to be true for C2A2 to be safe: (a) Detection-coverage baseline documented; (b) Per-bucket reporting (WATCH vs. pending vs. active) explicit; (c) Avoid SELF-MEASUREMENT-cluster recurrence.
+    How to test: Track WATCH/pending/active counts over 4 weeks; check whether "0 count" reliably correlates with "no work" or with "detection coverage gap."

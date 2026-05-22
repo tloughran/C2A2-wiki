@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-192:
+  Date searched: 2026-05-18
+  Original item: PRESUMPTION-192
+  Original statement: "Composer-draft preservation note presumes the unsent Tom-draft will eventually be useful; preservation without classification runs against Pathway-14 honesty-layer's accurate-classification commitment."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-192
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Archival-science literature (Cook 2013) — preservation default is reasonable when classification cost is high relative to storage cost.
+    2. Loss-aversion (Kahneman & Tversky 1979) — preservation default aligns with cognitive bias toward retention.
+
+  Strength of support: Weak
+
+  Summary: Preservation defaults are reasonable in archival contexts; loss-aversion makes them psychologically attractive.
+
+  Caveats: Reasonableness of the default is not the same as it satisfying Pathway-14's active-classification commitment.
+
+  Recommendation: PARTIALLY-SUPPORTED

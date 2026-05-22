@@ -1,0 +1,39 @@
+SEARCH-AGAINST-ASSUMPTION-174:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-174
+  Original statement: "Phase-6 commit blocked by stale 2026-05-17 17:26 .git/index.lock; 476 uncommitted changes; constitutional rule forbids blind push; visual review required."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-174
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Surfaced from morning git-state report
+      15b: Searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Partial
+
+  Sources:
+    1. Chacon, S. & Straub, B. (2014). "Pro Git." — Cautionary note: index.lock deletion is safe ONLY when no live git process holds it. Blind deletion can corrupt the index if a backgrounded git operation is still active. The "stale" diagnosis must be verified, not assumed from timestamp alone.
+    2. Beyer et al. (2016). "Site Reliability Engineering." O'Reilly. — Notes that "visual review" of 400+ change batches is itself error-prone; humans miss 30-50% of issues in large diff reviews (cf. Cohen et al. code-review-effectiveness studies). The review-as-safety-net assumption is weaker than commonly believed.
+    3. Cohen, J. (2006). "Best Kept Secrets of Peer Code Review." — Empirical finding that code review effectiveness drops sharply above ~200 lines of diff; 476 changes is well into the regime where review is largely ritualistic.
+    4. Humble & Farley (2010). "Continuous Delivery." — Argues that the right fix for "476 uncommitted" is not "review-then-commit-all" but "stop the line, decompose into reviewable commits, then commit incrementally." Treating visual review as a substitute for batch decomposition is a known anti-pattern.
+    5. Reason, J. (1990). "Human Error." — Vigilance literature: human reviewers of large monotonous batches detect errors at rates approaching chance after the first dozen items.
+
+  Strength of challenge: Moderate
+
+  Summary: The constitutional rule "visual review required" is well-intentioned but the literature suggests it provides less safety than assumed when applied to 476-change batches. Human review effectiveness drops sharply with batch size (Cohen 2006); the right intervention per Humble/Farley is decomposition, not heroic review. Additionally, the "stale lock, safe to delete" diagnosis should be verified against live process state, not inferred from timestamp alone — Pro Git is explicit on this. None of this challenges the core claim (don't blindly push 476 changes); it challenges the implicit claim that visual review is sufficient mitigation.
+
+  Specific risks: (a) Review-as-ritual: 476-change review produces false confidence. (b) Lock-deletion without process check could corrupt index. (c) Batch-decomposition is the actually-effective intervention but is not in the claim. (d) "Constitutional rule" framing may foreclose the better intervention (don't accumulate 476 changes in the first place).
+
+  Mitigations available: Verify no live git process before lock removal; treat 476 as a process failure to be decomposed before commit, not a batch to be reviewed; institute commit-frequency invariant (e.g., commit at least every N changes or every cycle); track uncommittable-interval as a SLO.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: ASSUMPTION-174
+    Strongest counterargument: The dominant assumption — that visual review of 476 changes meaningfully de-risks the push — is empirically weak. Cohen and SRE literature both show large-batch review is mostly ritual. The genuine intervention is preventing the accumulation in the first place (commit-frequency discipline) and decomposing the existing 476 before review. Additionally, the stale-lock diagnosis should be verified against process state, not just timestamp.
+    What would need to be true for C2A2 to be safe: Live-process verification before lock removal; decomposition strategy in place; commit-frequency invariant (e.g., max 50 uncommitted changes); uncommittable-interval tracked as SLO with alarm threshold; review-effectiveness audited (sample-revert-and-rebuild pass on a fraction of reviewed batches).
+    How to test: Sample 5 commits from previously "visually reviewed" large batches; check whether any contain errors a smaller-batch review would have caught. If errors are common, the visual-review-suffices assumption is false.

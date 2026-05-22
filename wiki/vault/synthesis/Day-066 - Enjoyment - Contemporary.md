@@ -15,8 +15,8 @@ evidence_strength_summary: "Friston on policy-necessity-under-perfect-good is ma
 length_ratio_to_target: 0.980
 mind_first_reframe: "Necessity-toward-the-perfect-good plus latitude-among-partial-goods is exactly what active inference predicts under hierarchical priors with one fully-determining terminal; enjoyment is the alter's substrate-direct rest in the apprehended good — perfect in the eschatological state of full alignment with mind-at-large, imperfect-anticipatory through this-life contemplation, prayer, sacrament, and positivity-resonance."
 central_theme_thread: "The work of becoming-aligned with loving unity is itself shot through with anticipatory enjoyment; the alter's daily task is to receive present positivity-resonance and contemplative-rest as real partial substrate-presence rather than distraction from the eschatological completion."
-last_qc_at: "2026-05-14T08:24:22"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-21T18:31:40"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/066, theme/enjoyment, theme/rest-in-the-good]
 ---
 # Day 66 — Contemporary Parallel: *Enjoyment as the Substrate-Direct Rest of the Will and the Imperfect Anticipations of It*
@@ -72,10 +72,10 @@ Today's day articulates a load-bearing implication of the central theme: *the wo
 - **Friston-tradition wiki, PRS on policy-necessity-under-prior-perfectness.** Formal correlate of *will cannot not will the perfect good*. *Mature formalism.*
 - **Fredrickson-tradition wiki, PRS on positivity-resonance and cardiac-vagal coherence.** Empirical anchor for rest-in-the-good. *Strong empirical.*
 - **McGilchrist-tradition wiki, PRS on right-hemispheric reception.** Hemispheric anchor for delight. *Strong neuropsychiatric.*
-- **Stump-tradition wiki, PRS on union and second-personal-knowing.** Theological-philosophical primary on enjoyment-of-God. *Book-length argument.*
+- **Stump-tradition wiki, PRS on union and second-personal-knowing.** Theological-philosophical resource for enjoyment-of-God. *Book-length argument.*
 - **Kastrup-tradition wiki, alter-substrate communion.** Mind-monist anchor for substrate-resonance. *Philosophical-conceptual.*
 - **Hoffman-tradition wiki, on substrate-direct-mode access at limit.** *Philosophical-mathematical.*
-- **Wright, *Surprised by Hope*; *The Resurrection of the Son of God*.** Scriptural-historical primary on present-anticipatory joy. *Scriptural-historical.*
+- **Wright, *Surprised by Hope*; *The Resurrection of the Son of God*.** Scriptural-historical resource for present-anticipatory joy. *Scriptural-historical.*
 - **Rohr, *The Universal Christ*; *Immortal Diamond*.** Contemplative-presence frame. *Contemplative theological.*
 - **Augustine, *Confessions* X.27; Song of Songs 3:4; John of the Cross, *Ascent of Mount Carmel*.**
 

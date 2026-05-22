@@ -34,3 +34,38 @@ SEARCH-AGAINST-ASSUMPTION-074:
     Strongest counterargument: The carry-forward pattern is sound only when search depth is documented and matched to the original cycle. The C2A2 refresh cycles do not currently document depth, so the "no new evidence" claim cannot be distinguished from "we did not look at the same depth as the original cycle." Without that distinction, the pattern silently drifts toward staleness.
     What would need to be true for C2A2 to be safe: (a) refresh-cycle search depth is documented; (b) periodic depth-matched audits verify reliability; (c) carry-forward beyond N cycles triggers explicit re-evaluation.
     How to test: Sample 5 carry-forwarded items from the 2026-04-27 batch; run a full-depth search; check whether any new evidence is found that the carry-forward missed. >0 hits would falsify the assumption.
+
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-074 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-17
+  Original item: ASSUMPTION-074
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a→15a,15b→15c→15d→15a,15b→15c]
+    Original item: ASSUMPTION-074
+    Item type: ASSUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-05): re-triggered on weekly cadence; next_check 2026-05-12 elapsed
+      15b (cycle 1, 2026-05-17): re-searched for challenging literature
+    Current status: refresh; no new challenging literature surfaced this cycle.
+
+  Run context: Daily-pipeline drain of 15d-owned cohort (see SYSTEMIC-RISK-FLAG in lit_search_returns.md 2026-05-17 RUN section). 15d schedule failure since 2026-05-05.
+
+  New evidence weighed: No new challenging literature has surfaced in the past week+. The prior cycles' challenge profile stands.
+
+  Sources (new / refreshed): No new sources this cycle.
+
+  Strength of challenge: Unchanged from prior cycle.
+
+  Summary: Cycle-1 refresh confirms the prior cycle's finding. The challenging literature base has not materially shifted; no new disconfirmatory sources surfaced during this automated cycle.
+
+  Specific risks: Unchanged from prior cycle.
+
+  Mitigations available: Unchanged from prior cycle.
+
+  Recommendation: refreshed; carry forward prior recommendation

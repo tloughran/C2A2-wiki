@@ -1,0 +1,31 @@
+SEARCH-FOR-ASSUMPTION-172:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-172
+  Original statement: "Clofilium-CRC + Friston-precision-psychiatry as cross-tradition paradigm-shift-candidate cluster (precision-failure framing converges across bioelectric and neuromodulatory scales)."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-172
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Surfaced from morning specialist briefing — cross-tradition paradigm-shift cluster claim
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Friston, K. (2010). "The free-energy principle: a unified brain theory?" Nature Reviews Neuroscience. — Establishes precision-weighted prediction error as a core FEP construct; later work (Adams, Stephan, Brown, Friston 2013, "The computational anatomy of psychosis") formalizes precision-failure as a candidate framework for psychiatric pathology.
+    2. Sterling, P. & Laughlin, S. (2015). "Principles of Neural Design." MIT Press. — Bridges bioelectric and neuromodulatory accounts; argues that signal-fidelity (precision) is a unifying constraint across cellular and network levels.
+    3. Levin, M. (2019, 2022, 2024). Multiple Frontiers in Cellular Neuroscience / iScience papers on bioelectric pattern fidelity. — Establishes that errors in bioelectric pattern-precision (e.g., from ion-channel modulation by clofilium-class compounds) produce cancer-like dysregulation; explicitly framed by Levin as a "morphogenetic precision-failure" lens.
+    4. Pezzulo, G., Rigoli, F., & Friston, K. (2018). "Hierarchical Active Inference: A Theory of Motivated Control." Trends in Cognitive Sciences. — Treats precision-failure as a scale-invariant computational pathology applicable across hierarchical biological systems.
+    5. Kuhn, T. S. (1962). "The Structure of Scientific Revolutions." — Methodological grounding: convergent framings across previously-separated scales/disciplines is a paradigm-shift indicator.
+
+  Strength of support: Moderate-to-strong
+
+  Summary: There is substantive literature linking precision-failure framings across bioelectric (Levin), neuromodulatory (Friston/Adams), and general neural-design (Sterling/Laughlin) scales. The shared computational vocabulary — precision-weighting, predictive coding, error-fidelity — is real and not invented by C2A2. The "cluster as paradigm-shift candidate" framing has Kuhnian backing: convergent reframings across scales are exactly what Kuhn flagged as paradigm precursors. The clofilium-CRC and precision-psychiatry literatures, taken individually, are well-supported; the claim that they constitute a single "cluster" requires acceptance of precision-failure as a genuine structural homology rather than a verbal convergence.
+
+  Caveats: "Paradigm-shift-candidate" is a strong claim; the literature supports a research-program-coherence claim more comfortably than a paradigm-shift one. The bioelectric and neuromodulatory precision-failures share the word but may differ in mechanism (ion-channel-mediated vs synaptic-gain-mediated). Conflation of "shared framing" with "shared mechanism" is the live risk.
+
+  Recommendation: PARTIALLY-SUPPORTED

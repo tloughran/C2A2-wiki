@@ -20,7 +20,7 @@ evidence_strength_summary: "Hebrews 11:1 read as joint cognitive-volitional stat
 mind_first_reframe: "Charity-as-form-of-faith is, under mind-monism, the active de-dissociation of the alter from its ground — what makes the held cognitive structure operative as a real relational coupling between alter and ground; Levin's empirical re-grounding of form licenses the strong hylomorphic reading, and positivity resonance gives the measurable biology."
 central_theme_thread: "The lifeless/living distinction is the central claim at the personal level — faith provides the cognitive structure for cooperation; charity makes the cooperation operative; without charity the agent has the map but not the journey toward the loving unity that is the computational telos."
 tags: [synthesis, day/120, theme/faith, theme/charity, theme/form]
-last_qc_at: "2026-05-19T16:23:03"
+last_qc_at: "2026-05-21T12:22:36"
 last_qc_outcome: "pass"
 ---
 

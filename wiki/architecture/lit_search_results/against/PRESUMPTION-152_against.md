@@ -1,0 +1,35 @@
+SEARCH-AGAINST-PRESUMPTION-152:
+  Date searched: 2026-05-14
+  Original item: PRESUMPTION-152
+  Original statement: "~10-30 ms broker-side edge overhead presumed accurate without measurement; 'dwarfed by LLM/TTS latency' claim presumed without auditing those floors"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-152
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced via inference from ASSUMPTION-120 estimate-without-measurement
+      15b: Searched for counter-evidence on engineering-estimate-as-precondition framing
+    Current status: NO-CHALLENGE-FOUND
+
+  Sources:
+    1. Vendor-published Cloudflare Workers benchmarks (2024-2025) are reliable for median-case — the estimate is not invented.
+    2. LLM streaming latency floors (200-800 ms) are also vendor-published and benchmarked.
+    3. The "conditional on validation" clause in ASSUMPTION-120 partially preempts the presumption.
+
+  Strength of challenge: Weak
+
+  Summary: The published benchmark data give the estimate enough basis to be a defensible starting point for a conditional commitment. ASSUMPTION-120's "conditional on validation" clause preempts the strongest version of the presumption. The presumption's concern stands but is partially addressed by the existing conditional framing.
+
+  Specific risks: None substantial — the audit is already gated.
+
+  Mitigations available: Validation gate is in place; presumption mainly emphasizes its enforcement.
+
+  Recommendation: NO-CHALLENGE-FOUND — presumption is correctly identifying the gate; the gate is already specified
+
+  STEELMAN:
+    Item: PRESUMPTION-152
+    Strongest counterargument: ASSUMPTION-120's "conditional on validation" clause already makes the validation gate explicit; the presumption is redundant with the assumption's own caveat.
+    What would need to be true for C2A2 to be safe: Validation gate is enforced (measurement performed before commitment).
+    How to test: Confirm validation is in the implementation checklist.

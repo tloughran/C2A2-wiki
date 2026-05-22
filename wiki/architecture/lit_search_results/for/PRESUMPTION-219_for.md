@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-219:
+  Date searched: 2026-05-20
+  Original item: PRESUMPTION-219
+  Original statement: "The EOD 14a/14b pass scales to growing session volume — unbounded-read assumption."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-219
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — the EOD 14a/14b summarization pass presumed to scale to growing session volume, reading all sessions unbounded.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Current operation. — At present session volume the unbounded EOD read completes; weak support that it works today.
+    2. Batch-summarization practice. — Daily batch passes are a standard and adequate pattern at moderate volume.
+
+  Strength of support: Weak
+
+  Summary: At today's volume the unbounded EOD read works, giving weak, present-tense support. But 'works now' is not 'scales': the supportive evidence is an existence proof at current scale, not a scaling argument. The presumption assumes the unbounded read continues to hold as session volume grows, which the supportive direction cannot establish.
+
+  Caveats: Support is for current volume only; it says nothing about behavior as volume grows.
+
+  Recommendation: PARTIALLY-SUPPORTED (at current volume only)

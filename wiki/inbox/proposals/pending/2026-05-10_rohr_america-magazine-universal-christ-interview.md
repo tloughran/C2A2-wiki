@@ -7,7 +7,10 @@ source_title: "Interview: Richard Rohr and the Universal Christ" (America Magazi
 source_url: https://www.americamagazine.org/podcasts/2026/02/02/interview-richard-rohr-and-the-universal-christ/
 source_date: 2026-02-02
 searched_on: 2026-05-10
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-032
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

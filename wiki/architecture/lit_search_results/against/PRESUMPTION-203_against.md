@@ -1,0 +1,36 @@
+SEARCH-AGAINST-PRESUMPTION-203:
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-203
+  Original statement: "lit_search_results/-as-in-scope-for-sewing-agent — connectivity-graph conflates two structurally different layers (auto-generated derivative vs human/tradition-authored)."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: PRESUMPTION-203
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14a: Inferred from connectivity-tracker scope discussion
+      15a: Searched for supporting literature
+      15b: Searched for challenging evidence
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Partial
+
+  Sources:
+    1. Newman, M.E.J., 2010. "Networks: An Introduction." Oxford UP — default-include traversal has the virtue of being assumption-free; aggressive exclusion is itself a modeling choice with hidden costs.
+    2. Brandes, U. & Erlebach, T., 2005. "Network Analysis: Methodological Foundations." Springer LNCS — argues that pre-metric filtering can mask phenomena; recording the unfiltered baseline alongside any filtered view is the safer practice.
+    3. Sherif, M. et al., 2019 (Wombat / link-discovery) — even auto-generated nodes can host real connectivity signal (e.g., when an auto-generated note happens to cross-cite); blanket exclusion loses this.
+
+  Strength of challenge: Weak-to-Moderate
+
+  Specific risks:
+    - Excluding lit_search_results/ might mask cases where derivative notes do form bridges (e.g., a _for.md citing both Friston and Levin is itself a low-grade bridge artifact).
+    - Stratification adds maintenance burden; if the project doesn't keep both metrics up to date, the "stratified" view degrades to a single-view answer with extra steps.
+    - "Conflates" is a strong word — the connectivity metric is what it is; the question is whether it answers the question someone is asking. Default-include is benign if the question is "total graph health."
+
+  Mitigations available:
+    - Report both metrics (with and without lit_search_results/) in the weekly row.
+    - Treat the difference as a diagnostic, not an error.
+    - Avoid framing one scope as "right" and the other as "conflation."
+
+  Recommendation: PARTIALLY-CHALLENGED

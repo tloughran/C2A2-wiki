@@ -1,0 +1,30 @@
+SEARCH-FOR-PRESUMPTION-174:
+  Date searched: 2026-05-15
+  Original item: PRESUMPTION-174
+  Original statement: "Pathway 25 self-loop ('Pathway 25 visualizes itself') treated as UX concern in Open Questions ('probably fine'); structural recursive-fixed-point question elided"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-174
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from Pathway 25 self-loop framing
+      15a: Searched for recursive self-reference in autopoietic systems; fixed-point theorems; Hofstadter on strange loops
+    Current status: SUPPORTED (Strong)
+
+  Sources:
+    1. Hofstadter (1979, 2007) "Gödel, Escher, Bach" / "I Am a Strange Loop" — recursive self-reference has structural consequences (strange loops, fixed points, tangled hierarchies); not just UX.
+    2. Maturana & Varela (1980) "Autopoiesis and Cognition" — autopoietic systems with self-reference have specific structural properties; the self-reference is constitutive, not decorative.
+    3. Tarski (1936) — formal self-reference produces undecidability; semantic closure has structural consequences.
+    4. Russell (1908) — Russell's paradox: self-reference at the set level produces paradox; type theory is the canonical mitigation.
+    5. Fixed-point theorems (Banach 1922; Brouwer 1909) — self-referential maps have fixed points under specific conditions; "Pathway 25 visualizes itself" is a self-referential map and the fixed-point conditions matter.
+    6. C2A2-internal: PRESUMPTION-165 carry-forward — recursive frame without termination concern; PRESUMPTION-180 — recursive self-application surface grew today.
+
+  Strength of support: Strong
+
+  Summary: Self-reference is structurally non-trivial across multiple traditions: logic (Tarski, Russell), mathematics (fixed-point theorems), cognitive science (Hofstadter), and systems theory (Maturana-Varela). Treating "Pathway 25 visualizes itself" as UX concern elides the structural recursive-fixed-point question: under what conditions does this self-referential map have a fixed point? Is the fixed point useful or pathological? The presumption is well-grounded. PRESUMPTION-165 and PRESUMPTION-180 cluster recurrence confirms the recursive-self-application surface is growing across the system, not contained.
+
+  Caveats: (a) Not every self-reference produces pathology — strange loops can be productive (Hofstadter's argument); (b) The presumption flags an unexamined question, not a confirmed failure; (c) Cluster: joins PRESUMPTION-165 recursive-frame, PRESUMPTION-180 multi-pathway recursive load.
+
+  Recommendation: SUPPORTED (Strong) — structural recursive-fixed-point question is well-grounded; UX-framing elides the structural concern

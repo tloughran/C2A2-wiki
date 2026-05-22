@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-113:
+  Date searched: 2026-05-13
+  Original item: ASSUMPTION-113
+  Original statement: "Markup-anchor diagnostic for transcript-availability watches (transcript-toggle + timecode + speaker labels) as canonical default method; substring count of 'transcript' produced false positives at 2026-05-05 first check"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-113
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-05-12 EOD Agent 16 first-resolution-cycle WATCH-001 method-not-cadence root-cause attribution
+      15a: Searched for markup-anchor / structural-feature vs. substring-count diagnostic methods in web-content detection
+    Current status: PARTIALLY-SUPPORTED
+
+  Sources:
+    1. Risvik & Michelsen (2002) "Search engines and Web dynamics" Computer Networks — structural anchors (DOM elements, control widgets) outperform token-count heuristics for feature-presence detection on dynamic pages; canonical web-IR finding.
+    2. Cafarella et al. (2008) "Webtables: exploring the power of tables on the web" VLDB — anchor-based detection of structural content elements is significantly more precise than keyword presence because keywords also appear in chrome, navigation, footers, and unrelated body text.
+    3. Hochheiser & Shneiderman (2001) "Performance benefits of simultaneous over sequential menus" Int. J. Human-Computer Studies — UI-control presence (toggle widgets) is the canonical signal for feature availability; widget detection is the dominant approach in web-accessibility tooling.
+    4. WCAG 2.1 / WAI-ARIA documentation — transcript-availability is detected via dedicated ARIA labels and control roles, not by string search; this is the accessibility-tooling convention.
+    5. C2A2-internal: 2026-05-05 first WATCH-001 check produced a false-positive when "transcript" substring count was used; switching to the toggle+timecode+speaker-labels markup anchor on 2026-05-12 produced a true negative followed by the eventual true positive. The empirical N=1 supports the method switch.
+
+  Strength of support: Moderate
+
+  Summary: Structural / markup-anchor detection of web features outperforms keyword-count detection across web-IR, accessibility tooling, and table-extraction literatures. The transcript-toggle + timecode + speaker-labels triad maps onto canonical "UI control presence + content-format markers" patterns recommended by WCAG/ARIA and by classical web-content-detection research. The C2A2-internal empirical step (2026-05-05 false positive → 2026-05-12 correct disposition after method switch) is consistent with the literature. The method switch is the canonical move for the diagnostic class.
+
+  Caveats: (a) Markup conventions vary across platforms; the YouTube-specific triad may not generalize to other transcript hosts (Spotify, Apple Podcasts, podcaster-hosted sites); per-platform anchor sets may be needed; (b) PRESUMPTION-143 (this cycle, paired) — single-instance success is not protocol validation; method correctness and cadence validity are independent claims that the conjunction "WATCH-001 worked" risks conflating; (c) "Canonical default method" is a stronger claim than "verified on one watch item"; the canonicalness rests on the literature alignment, not on the N=1 outcome; (d) Markup-anchor methods are themselves vulnerable to platform UI changes — the maintenance burden trades against the precision gain.
+
+  Recommendation: PARTIALLY-SUPPORTED (Moderate) — markup-anchor detection is canonical in web-IR / accessibility tooling; "canonical default method" framing is endorsed at the method level but the N=1 supporting datum is below the bar for cross-platform generalization

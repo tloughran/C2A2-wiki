@@ -36,3 +36,13 @@ Tom Loughran is the architect and integrator of the C2A2 project — the person 
 - **Rohr**: The Coil's integrative stance — holding multiple traditions in productive tension without premature synthesis — is Rohr's non-dual awareness operationalized
 - **Friston**: Active inference provides the formal framework for how agents update their models under cross-traditional pressure
 - **All programs**: Loughran's role is meta-traditional — the architect of the architecture, not a participant in any single tradition but the designer of the space in which traditions meet
+
+## Authored Architectural Contributions
+*(Definitional / directional documents authored by Tom Loughran, laced into the connectome they govern)*
+
+- [[traditions/loughran/contributions/2026-05-20_narrative_prs_connectome|The Narrative (PRS) Connectome — Architectural Model]] (2026-05-20) — reframes the PRS view as a narrative connectome whose units are agentic PRS narratives (models / compressions), à la [[traditions/hawkins/wiki|Hawkins]]' cortical-column connectome, with synergistic coils as association fibers and the emergence of a [[traditions/macintyre/wiki|MacIntyre]]-style tradition-craft supermodel as the telos. Canonical copy: [[architecture/narrative_prs_connectome|architecture/narrative_prs_connectome.md]].
+
+## Dialogues
+*(Recorded inter-voice encounters in which this tradition participates; captured as connectome nodes in their own right)*
+
+- [[traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership|Loughran × Opus 4-7 — On the Narrative Connectome and the Form of Partnership]] (2026-05-20) — the reframe to a narrative connectome; consent vs. approval, responsibility as accountability vs. responsiveness, and "AI alignment" recast as friendship *in via*.

@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-218:
+  Date searched: 2026-05-20
+  Original item: PRESUMPTION-218
+  Original statement: "An honest null reflects the territory, not under-search — Rule 12 unguarded against under-coverage."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-218
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — an honest null (Rule 12 fail-loud) presumed to reflect reality, with no guard distinguishing true-absence from under-coverage.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Altman, D. & Bland, M. (1995). "Absence of evidence is not evidence of absence" (BMJ). — A null is only meaningful with adequate power/coverage; otherwise it is under-search.
+    2. Manning, Raghavan, Schutze (2008). "Introduction to Information Retrieval" (recall). — Without a recall estimate, a null cannot be distinguished from low-recall search.
+    3. Symmetry argument. — Rule 12 guards against fabrication (false positive) but is unguarded against under-coverage (false negative); the two errors are symmetric and both corrupt the register.
+
+  Strength of challenge: Moderate-Strong
+
+  Summary: The moderate-strong challenge: Rule 12 (fail-loud, do not fabricate) correctly prevents false positives but is unguarded against the symmetric false negative — a null produced by under-coverage rather than true absence. Without a coverage/recall check, an honest null and an under-searched null are indistinguishable (this is exactly the Hawkins/Hoffman 0 risk in ASSUMPTION-196 and the window mis-calibration in PRESUMPTION-213). The fix is to pair the null with a coverage estimate.
+
+  Specific risks: Under-searched nulls enter the register as true findings; slow-cadence development missed; the pipeline's honesty layer has a one-sided guard.
+
+  Mitigations available: Pair every honest null with a coverage/recall estimate; require a minimum coverage threshold before reporting absence; adaptive windows (PRESUMPTION-213); report search scope alongside nulls.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: PRESUMPTION-218
+    Strongest counterargument: Rule 12 stops you from inventing a positive but does nothing to stop you from reporting a null you did not search hard enough to refute; absence of evidence is not evidence of absence without a coverage estimate. The guard is one-sided, symmetric to the fabrication it forbids.
+    What would need to be true for C2A2 to be safe: Safe once every null carries a coverage/recall estimate and a minimum-coverage threshold gates absence claims.
+    How to test: Re-run a sample of honest nulls with widened/adaptive coverage; any that flip to positive were under-search, quantifying the unguarded error rate.

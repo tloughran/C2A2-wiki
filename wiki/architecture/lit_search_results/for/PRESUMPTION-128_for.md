@@ -27,3 +27,35 @@ SEARCH-FOR-PRESUMPTION-128:
   Caveats: (a) PRESUMPTION-137 (this cycle, competing) — "first-ever" framing carries distinctive epistemic weight requiring meta-level decision first; (b) Workflow-accommodation may quietly canonize the unprocessed precedent (path-dependence anti-pattern); (c) "Existing workflow" applicability is implicit — workflow may not have anticipated meta-level cases; (d) ASSUMPTION-111 (this cycle) is the paired stated-claim that takes the opposite position.
 
   Recommendation: PARTIALLY-SUPPORTED (Moderate) — workflow-accommodation has strong general support; the competing PRESUMPTION-137 first-ever-as-gate framing must be reconciled
+
+---
+
+SEARCH-FOR-PRESUMPTION-128 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-128
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: PRESUMPTION-128
+    Item type: PRESUMPTION
+    Transform at each step:
+      14b (cycle 0): Originally surfaced from competing-presumptions pair
+      15a (cycle 0): Searched for supporting literature → PARTIALLY-SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~8-day gap on Lean/progressive-elaboration.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-SUPPORTED finding stands. Workflow-accommodation still supported in general.
+
+  Caveats: Competing PRESUMPTION-137 reconciliation still pending.
+
+  Recommendation: PARTIALLY-SUPPORTED (refreshed; carry forward prior recommendation)

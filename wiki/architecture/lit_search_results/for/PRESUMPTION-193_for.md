@@ -1,0 +1,27 @@
+SEARCH-FOR-PRESUMPTION-193:
+  Date searched: 2026-05-18
+  Original item: PRESUMPTION-193
+  Original statement: "Cowork-summary 'Assumptions: 144 / Presumptions: 182 cumulative on disk' vs grep-by-ID ASSUMPTION-157 / PRESUMPTION-182 — 13-item discrepancy on assumptions invisible to summary author; self-reporting without verification step. Joins SELF-MEASUREMENT Goodhart cluster."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-193
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15a: Searched for supporting literature
+    Current status: NO-SUPPORT-FOUND
+
+  Supporting evidence found: No
+
+  Sources:
+    1. No literature supports unverified self-report as a reliable counting protocol.
+
+  Strength of support: None
+
+  Summary: No supporting evidence for the unverified-count default.
+
+  Caveats: Same hidden-framing pattern as 187/188/189/190.
+
+  Recommendation: NO-SUPPORT-FOUND

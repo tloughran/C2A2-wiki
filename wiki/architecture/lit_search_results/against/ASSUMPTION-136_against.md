@@ -1,0 +1,39 @@
+SEARCH-AGAINST-ASSUMPTION-136:
+  Date searched: 2026-05-15
+  Original item: ASSUMPTION-136
+  Original statement: "Pathway 25 commits agent as co-explorer, not oracle; query-response is 'the wrong mode'; annotation co-authored; counterfactual integration structural"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-136
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Pathway 25 meta-visualization commitment
+      15b: Searched for counter-evidence on user mode-preference distributions
+    Current status: PARTIALLY-CHALLENGED (Moderate)
+
+  Sources:
+    1. Russell et al. (1993) "The Cost Structure of Sensemaking" — co-exploration has high cognitive cost; users often prefer query-response for efficiency even in sense-making contexts.
+    2. Pirolli & Card (2005) "The Sensemaking Process and Leverage Points for Analyst Technology" — analysts shift between exploration and exploitation modes; forcing co-exploration mode is inefficient when user has clear query.
+    3. Khurana et al. (2024) "Why Johnny Can't Prompt: How Non-AI Experts Try (and Fail) to Design LLM Prompts" — many users prefer oracle/transactional mode; co-exploration framing requires user training.
+    4. Tversky (1981, 2018) — cognitive economy: users default to lowest-cost mode; co-exploration is higher cost.
+    5. Default-mode preference studies (Hertz 2023, Anthropic UX 2025) — mode preference varies by task, time pressure, and user expertise. "Wrong mode" claim universalizes a context-specific preference.
+    6. PRESUMPTION-172 paired — forced co-exploration friction unmodeled.
+    7. Counter-pattern: Bret Victor's "Inventing on Principle" co-exploration is celebrated but adoption remains narrow; most production AI tools retain query-response defaults because user surveys show preference.
+
+  Strength of challenge: Moderate
+
+  Summary: User-mode-preference distributions in HCI show high variance: some tasks/users prefer co-exploration; others prefer oracle/query-response for efficiency. "Query-response is the wrong mode" universalizes a context-specific preference and risks forcing co-exploration on users who don't want it. The empirical record (Russell, Pirolli-Card, Khurana et al.) is that users shift modes; the right design supports both. Pathway 25 (meta-visualization of pathways) is a sense-making context where co-exploration is reasonable default, but the universal "wrong mode" claim over-extends. PRESUMPTION-172 paired (forced co-exploration friction) is the load-bearing concern. Moderate challenge: commitment is sound for default-mode-in-sense-making contexts; "wrong mode" framing is over-broad.
+
+  Specific risks: (a) Users who prefer oracle mode are friction-loaded; (b) Time-constrained queries become inefficient; (c) "Wrong mode" framing precludes mode-switching; (d) Annotation co-authorship adds UX cost.
+
+  Mitigations available: (a) Mode-switching affordance (toggle between co-explore / oracle); (b) Default to co-exploration in sense-making views; allow oracle in transactional views; (c) PRESUMPTION-172 user-mode survey before lattice-wide rollout; (d) Reframe "wrong mode" as "wrong default for Pathway 25 contexts" — narrower, defensible claim.
+
+  Recommendation: PARTIALLY-CHALLENGED (Moderate) — co-exploration default sound; "wrong mode" universalization risks forced-mode friction
+
+  STEELMAN:
+    Item: ASSUMPTION-136
+    Strongest counterargument: "Query-response is the wrong mode" presumes user always wants co-exploration. The HCI sensemaking literature consistently shows that users shift modes — exploration when uncertain, exploitation/oracle when clear. Forcing co-exploration on users who have clear queries produces measurable friction (Russell cost structure). The right design supports both modes and intelligently defaults; the wrong design hard-codes one. The commitment is right for default-mode-in-Pathway-25-context but wrong as a universal claim.
+    What would need to be true for C2A2 to be safe: (a) Mode-switching affordance; (b) Default co-exploration scoped to Pathway 25 (not lattice-wide); (c) User-mode survey informing default selection.
+    How to test: Deploy both modes (oracle / co-explore toggle) and measure user mode-switch rates over time.

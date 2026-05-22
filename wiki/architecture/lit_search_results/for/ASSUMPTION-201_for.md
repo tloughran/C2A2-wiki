@@ -1,0 +1,30 @@
+SEARCH-FOR-ASSUMPTION-201:
+  Date searched: 2026-05-21
+  Original item: ASSUMPTION-201
+  Original statement: "The PRS view is a narrative connectome; a triplet is a complete model and, equivalently, a compression (corollary routed, not the framing)."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a]
+    Original item: ASSUMPTION-201
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the narrative_prs_connectome guiding doc: the PRS view is framed as a narrative connectome and a triplet asserted to be both a complete model and a compression.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E / REVISE-040 noted)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Schank, R. & Abelson, R. (1977). "Scripts, Plans, Goals and Understanding." — Narratives function as schematic, compressed models of stereotyped event sequences.
+    2. Bruner, J. (1991). "The Narrative Construction of Reality," Critical Inquiry. — Narrative is a fundamental mode of cognition that models experience.
+    3. Hawkins, J. (2021). "A Thousand Brains." — Each cortical column learns a complete reference-frame model; analogical support for a bounded unit (triplet) as a complete model.
+    4. Mandler & Johnson (1977) story grammars; Schmidhuber (2009) compression-as-understanding. — Stories compress regularities; the comprehension-as-compression lineage.
+
+  Strength of support: Moderate
+
+  Summary: There is solid grounding for narrative-as-model (scripts, schemas, story grammars, Bruner) and for the analogy that a bounded unit can be a complete model (Hawkins' cortical columns). The compression half also has a lineage (Schmidhuber). Support is partial because the literature treats narrative models as schematic and selective, not complete, and the testable compression form is deferred to ASSUMPTION-208/PRESUMPTION-222.
+
+  Caveats: 'Complete' is stronger than the literature warrants (schemas are selective); the connectome framing is itself the load-bearing analogy (PRESUMPTION-221).
+
+  Recommendation: PARTIALLY-SUPPORTED

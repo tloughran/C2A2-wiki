@@ -1,0 +1,35 @@
+SEARCH-AGAINST-ASSUMPTION-192:
+  Date searched: 2026-05-20
+  Original item: ASSUMPTION-192
+  Original statement: "CLAUDE.md viz stats stale — actual ~1,533 nodes / 36,608 edges / ~15.4 MB."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-192
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from session: CLAUDE.md viz statistics found stale vs the actual generated artifact (~1,533 nodes / 36,608 edges / ~15.4 MB).
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: NO-CHALLENGE-FOUND
+
+  Challenging evidence found: Weak
+
+  Sources:
+    1. Spolsky, J. (2000). "Painless Functional Specifications." — Some embedded figures are intentionally illustrative/approximate and not meant to track exactly; weak counter to treating every drift as a defect.
+
+  Strength of challenge: Weak
+
+  Summary: There is no real challenge to the staleness claim. The only weak counter is that some doc figures are deliberately approximate, but here the figures drove a design judgment (the payload-diet deferral), so accuracy matters and 'approximate is fine' does not apply. The 15b routing question — whether the deferred payload-diet judgment still holds at the corrected size — is a separate downstream question, not a challenge to staleness.
+
+  Specific risks: If the corrected size changes the payload-diet calculus, a decision was made on stale inputs.
+
+  Mitigations available: Re-evaluate the payload-diet deferral against ~15.4 MB; auto-derive the stats so the next decision uses live numbers.
+
+  Recommendation: NO-CHALLENGE-FOUND
+
+  STEELMAN:
+    Item: ASSUMPTION-192
+    Strongest counterargument: Embedded doc stats are often approximate by design, so drift is not always a defect. But this drift fed a real decision (payload-diet deferral), which makes accuracy load-bearing and the staleness a genuine problem.
+    What would need to be true for C2A2 to be safe: Safe if the payload-diet judgment is re-checked at the corrected size and the stats are auto-derived going forward.
+    How to test: Diff documented vs artifact-derived stats in CI; fail if they diverge beyond a tolerance.

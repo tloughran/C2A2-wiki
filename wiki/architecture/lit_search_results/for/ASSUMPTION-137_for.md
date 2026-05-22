@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-137:
+  Date searched: 2026-05-15
+  Original item: ASSUMPTION-137
+  Original statement: "Pathway 13 (Under-Development Visualizer) is architecturally distinct from Pathway 25 (Meta-Visualization of Pathways); different audiences and data substrates"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-137
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Pathway 25 architectural-distinctness commitment
+      15a: Searched for visualization-pathway scoping in multi-audience tooling
+    Current status: SUPPORTED (Moderate)
+
+  Sources:
+    1. Munzner (2014) "Visualization Analysis and Design" — task/audience-driven visualization design: distinct audience + distinct data substrate = distinct visualization. Pathway 13 (development tracking) and Pathway 25 (meta-visualization of pathway-as-objects) have different tasks/substrates by this framework.
+    2. Card, Mackinlay, Shneiderman (1999) "Readings in Information Visualization" — multi-audience design: technical/dev audience vs. researcher/methodological audience justify distinct tools.
+    3. Tufte (1990, 2003) — visualization-per-task principle: forcing two distinct tasks into one tool reduces signal.
+    4. Bertin (1983) "Semiology of Graphics" — substrate-driven design: nodes-as-pathways (Pathway 25) vs. nodes-as-development-state (Pathway 13) are semantically different graphical objects.
+    5. Software engineering literature: Visualization tools commonly split development-tracking dashboards (e.g., GitHub project views, Jira boards) from architectural-overview tools (e.g., dependency graphs, architecture-decision-record viewers).
+
+  Strength of support: Moderate
+
+  Summary: The audience/substrate-driven distinction is supported by canonical visualization design literature (Munzner, Card et al., Tufte). Pathway 13 (development state tracking) and Pathway 25 (meta-visualization of pathways-as-architectural-objects) target different audiences (dev-team vs. methodologist/researcher) and different substrates (development-state data vs. pathway-as-conceptual-object data). The architectural-distinctness claim is sound under canonical visualization design principles. Support is Moderate (not Strong) because the distinction's *sustainability* depends on user-population overlap (PRESUMPTION-paired concerns).
+
+  Caveats: (a) PRESUMPTION-174 paired — Pathway 25 self-loop ("visualizes itself") raises structural recursive-fixed-point question that may blur audience distinction; (b) User-population overlap is empirical question — same user may want both views; (c) "Architecturally distinct" should not preclude shared visualization primitives (D3, shared force-layout); (d) Maintenance cost of two distinct tools.
+
+  Recommendation: SUPPORTED (Moderate) — audience/substrate distinction is canonical; sustainability depends on user-population separation

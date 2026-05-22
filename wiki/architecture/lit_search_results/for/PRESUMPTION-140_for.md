@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-140:
+  Date searched: 2026-05-13
+  Original item: PRESUMPTION-140
+  Original statement: "Empty active watch list framed as positive signal without intake-coverage audit — absence-as-success without considering Agent 16 intake heuristic narrowness"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-140
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from 2026-05-12 EOD empty-watch-list-as-positive framing without intake-coverage check
+      15a: Searched for intake-criterion coverage audit literature and absence-as-coverage-failure detection patterns
+    Current status: NO-SUPPORT-FOUND
+
+  Sources:
+    1. (None found supporting empty-output-as-positive-signal without intake-coverage verification.)
+    2. Beyer (2016) SRE Ch. 4 — "absence of alerts" can mean (a) system is healthy or (b) detection is broken; the two are operationally indistinguishable without independent coverage check. Treating absence as positive without the coverage check is documented anti-pattern.
+    3. Mason (2008) "Cost-effective health surveillance" — disease-surveillance literature explicitly addresses the "zero-count from no-cases vs. zero-count from no-surveillance" ambiguity; coverage audit is the canonical disambiguation step.
+    4. Hollnagel (2012) "Safety-I and Safety-II" — Safety-I treats absence as success; Safety-II requires evidence that the system is detecting what should be detected, not just lack of incidents.
+    5. PRESUMPTION-069 (silence-not-tracked cluster) — C2A2-internal precedent for the absence-as-success anti-pattern at the silence-detection layer.
+
+  Strength of support: None
+
+  Summary: No literature supports treating an empty active-watch list as a positive signal without an intake-coverage audit. The SRE "absence of alerts" framing, surveillance-epidemiology coverage-audit discipline, and Hollnagel's Safety-I/Safety-II distinction converge on the same conclusion: zero-output without coverage verification is operationally indistinguishable from broken-detection. This presumption extends the C2A2-internal PRESUMPTION-069 silence-not-tracked cluster to the empty-watch-list layer.
+
+  Caveats: For low-stakes domains where coverage is independently verified by other means, absence-as-success is operationally defensible; the C2A2 case (Agent 16 intake heuristic with no orthogonal coverage check) does not satisfy that condition.
+
+  Recommendation: NO-SUPPORT-FOUND — empty-output-as-positive without coverage audit is a documented anti-pattern; the presumption fits the absence-as-success cluster (PRESUMPTION-069 lineage)

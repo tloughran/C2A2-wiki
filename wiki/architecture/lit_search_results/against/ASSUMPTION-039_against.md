@@ -40,3 +40,36 @@ SEARCH-AGAINST-ASSUMPTION-039:
     Strongest counterargument: The assumption universalizes over "all Chrome profiles and states," but the tier is enforced by a finite app-category check that depends on process/window identity. The set of "Chrome-like" processes is larger and more configurable than the set matched by any static rule. In the edge cases where the check misses (alternate channels, debug wrappers, enterprise reconfiguration), the route-elimination logic built on this assumption fails silently.
     What would need to be true for C2A2 to be safe: The route-elimination logic should depend on the post-request_access return value (which reports tier empirically for the granted app), not on a design-time universal.
     How to test: Launch Chrome in alternate channels and configurations; observe the tier returned by request_access.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-039 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-039
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-039
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from route-elimination logic
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new challenging literature in the ~5-week gap. Alternate-Chrome-channel and remote-debug edge-case concerns stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Weak-to-Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. Universal claim still weak; default-case claim still strong.
+
+  Caveats: Empirical request_access return values per channel/profile would settle this.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

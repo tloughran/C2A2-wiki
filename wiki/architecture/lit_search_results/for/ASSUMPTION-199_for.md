@@ -1,0 +1,28 @@
+SEARCH-FOR-ASSUMPTION-199:
+  Date searched: 2026-05-20
+  Original item: ASSUMPTION-199
+  Original statement: "Lit-pipeline cycle-1 carry-forward (no net-new search, low yield) + training-corpus citation convention."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-199
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from session: lit-pipeline adopted cycle-1 carry-forward (refresh searches assumed low-yield, no net-new search) plus a training-corpus citation convention.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Cache-invalidation / TTL-by-velocity practice (Fielding 2000, HTTP caching; CDN freshness models). — Carrying forward results for low-velocity data within a TTL is a sound cost-benefit policy.
+    2. Petroni, F. et al. (2019). "Language Models as Knowledge Bases?" (EMNLP). — Parametric (training-corpus) knowledge is rich and reliable for well-established, frequently-attested facts — which describes most of this cycle's CS/epistemics premises.
+
+  Strength of support: Moderate
+
+  Summary: Both halves have qualified support. Carry-forward without net-new search is a defensible cost-benefit policy for low-velocity topics within a TTL, and training-corpus citation is reliable for well-established, high-frequency knowledge (which most of this pipeline's foundational premises are). Support is moderate, not strong, because both depend on a condition — low field velocity / well-attested facts — that does not hold uniformly across items.
+
+  Caveats: Support holds for low-velocity / well-attested topics; it explicitly does NOT extend to fast-moving fields or recency-dependent claims (15b, PRESUMPTION-214/215).
+
+  Recommendation: PARTIALLY-SUPPORTED (conditional on low velocity / well-attested topic)

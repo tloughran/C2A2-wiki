@@ -37,3 +37,36 @@ SEARCH-AGAINST-ASSUMPTION-099:
     Strongest counterargument: Specialist self-attribution and external-LLM prioritization fail in different ways. Specialist self-attribution fails by confirmation bias in own-output evaluation; external-LLM prioritization fails by training-data overlap and prompt-sensitivity. The two require distinct guards: specialist self-attribution needs independent adjudication tier; external-LLM prioritization needs cross-LLM divergence test. Unifying scope hides this differentiation. Asymmetric-reversibility analysis (PRESUMPTION-118) shows that split is the cheap initial state — start split and merge later if substrate-coupling proves dominant; starting unified and splitting later is more expensive due to downstream coupling that accumulates while the unified ADR is in force.
     What would need to be true for C2A2 to be safe: (a) Failure-mode differentiation explicitly documented; (b) asymmetric-reversibility analysis completed; (c) substrate-coupling at the implementation level (not meta-level) verified before unification.
     How to test: Specify the guards each ADR scope would need; check whether they overlap at the implementation level or only at the meta-level; if meta-level only, split is preferred.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-099 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-099
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-099
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from DECISION-027 scope-extension question
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~9-day gap. Per-source failure-mode differentiation concern stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. Split-then-merge remains the literature-favored sequencing.
+
+  Caveats: Failure-mode mapping would resolve faster than further search.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

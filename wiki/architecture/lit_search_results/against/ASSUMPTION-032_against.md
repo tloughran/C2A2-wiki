@@ -36,3 +36,36 @@ SEARCH-AGAINST-ASSUMPTION-032:
     Strongest counterargument: GUI-agent benchmarks consistently show 20-40% performance degradation for visual-only agents versus DOM-aware agents. "Sufficient substitute" overstates what the literature supports; "degraded fallback" is the accurate framing. Using pixel inspection as a peer substitute risks missing bugs that require structural visibility.
     What would need to be true for C2A2 to be safe: Explicit acknowledgment that pixel-inspection is a fallback with measurable accuracy penalty; preference for Chrome MCP or dedicated MCPs when available.
     How to test: Log diagnoses where pixel-only was used; compare to ground-truth root causes; measure miss rate.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-032 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-032
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-032
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from session
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new challenging literature in the ~5-week gap. Visual-vs-DOM benchmark gap stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate-Strong)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. "Sufficient" framing remains too strong; "degraded fallback" still accurate.
+
+  Caveats: For genuinely native-app scenarios (no DOM available), pixel-inspection is the only option.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

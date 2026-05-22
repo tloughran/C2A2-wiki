@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-149:
+  Date searched: 2026-05-13
+  Original item: PRESUMPTION-149
+  Original statement: "Agent 16 'flag, do not unilaterally merge' norm without decision-criteria for safely-automatable overlap — agent-autonomy bound stated as policy without elaboration"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-149
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from 2026-05-12 Agent 16 flag-not-merge norm stated without decision-criteria
+      15a: Searched for agent-autonomy bound-setting literature and merge-vs-flag default policies in automated review pipelines
+    Current status: PARTIALLY-SUPPORTED
+
+  Sources:
+    1. Amodei et al. (2016) "Concrete Problems in AI Safety" — bounded-autonomy with human-in-loop for irreversible or high-stakes actions is canonical AI-safety practice; "flag, don't merge" is the appropriate default.
+    2. Russell & Norvig (2020) — agent design with explicit operating envelope; conservative defaults for novel-action authority is convention.
+    3. GitHub / GitLab PR-review defaults — code-merge requires reviewer approval; flag-not-merge is canonical software-engineering practice for non-trivial change.
+    4. Bryar & Carr (2021) — Amazon two-way-door / one-way-door distinction; "flag" preserves the two-way-door property, "merge" makes it one-way.
+    5. C2A2-internal: PRESUMPTION-131 (MONITOR-116 — agent-judgment-call autonomy cluster) — prior precedent for the agent-autonomy-without-policy concern; this is recurrence at the Agent 16 merge-authority layer.
+
+  Strength of support: Moderate
+
+  Summary: Conservative flag-not-merge default is canonically supported by AI-safety (Amodei), agent-design (Russell-Norvig), software-engineering PR-review practice, and Amazon two-way/one-way door reasoning. The norm itself is well-supported. The presumption surfaces the absence of decision-criteria for the "safely-automatable" boundary — i.e., when, if ever, the agent could move from "flag" to "merge." Joins PRESUMPTION-131 agent-judgment-call autonomy cluster.
+
+  Caveats: (a) The literature supports the conservative default but does not require enumerated criteria; "flag everything" is the safe default; (b) The presumption is about the absence of elaboration, not about the wrongness of the conservative default — these can both be defensible; (c) Joint with PRESUMPTION-131 MONITOR-116 cluster — pattern of agent-autonomy bound-setting without policy specification.
+
+  Recommendation: PARTIALLY-SUPPORTED (Moderate) — the conservative default is well-supported; absence of elaboration is the structural concern, not the policy itself

@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-144:
+  Date searched: 2026-05-13
+  Original item: PRESUMPTION-144
+  Original statement: "Vault Linker Agent seven-category reference taxonomy (wikilink, summa-day, summa-question, thinker-mention, prs-ref, scripture, cross) presumed complete without audit for missing categories"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-144
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from 2026-05-12 Vault Linker Agent definition closed-category taxonomy assumption
+      15a: Searched for cross-reference taxonomy completeness in document-link systems and enumeration-as-exhaustiveness audit patterns
+    Current status: NO-SUPPORT-FOUND
+
+  Sources:
+    1. (None found endorsing closed enumerated reference taxonomies as default-complete without empirical sampling.)
+    2. Hjørland (2017) "Classification" Encyclopedia of Knowledge Organization — closed enumerative classification systems require periodic empirical audit; no enumeration is provably complete a priori.
+    3. Foskett (1996) "Subject Approach to Information" — facet-analysis and post-coordination as alternative to enumeration; closed enumerations are documented to miss boundary cases.
+    4. Hodge (2000) "Systems of Knowledge Organization for Digital Libraries" CLIR — empirical sampling against existing corpus is the canonical completeness check; closed-list-as-complete is anti-pattern.
+    5. C2A2-internal: pre-implementation flag for Vault Linker Agent — the seven-category list has not yet been validated against actual vault content; the presumption is forward-looking.
+
+  Strength of support: None
+
+  Summary: No literature endorses closed enumerated taxonomies as complete without empirical audit. Hjørland's classification theory, Foskett's facet analysis, and Hodge's KOS digital-library literature all require periodic empirical sampling against the corpus to detect missing categories. The seven-category list is plausible but the absence of an empirical sampling check is the structural concern.
+
+  Caveats: For narrow, well-defined domains where the category set is externally specified (e.g. ISBN format), closed enumerations are complete by construction. The C2A2 vault is not such a domain — reference types arise organically from authoring practice; empirical sampling is the canonical disambiguation.
+
+  Recommendation: NO-SUPPORT-FOUND — closed enumeration without empirical audit is unsupported; pre-implementation flag is the appropriate response

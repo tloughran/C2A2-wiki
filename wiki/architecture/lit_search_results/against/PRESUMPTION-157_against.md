@@ -1,0 +1,35 @@
+SEARCH-AGAINST-PRESUMPTION-157:
+  Date searched: 2026-05-14
+  Original item: PRESUMPTION-157
+  Original statement: "Generative-canvas library set presumed right catalog without comparison against Observable Plot / deck.gl / regl / vega-lite / P5.js / Mapbox GL JS / ECharts"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-157
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced via inference from closed enumeration
+      15b: Searched for counter-evidence on closed-enumeration justification against omitted alternatives
+    Current status: NO-CHALLENGE-FOUND
+
+  Sources:
+    1. Library-set sizing concern: more libraries multiply complexity. The chosen four may already be too many — adding more is the wrong direction.
+    2. D3 + three.js + Plotly are field-tested; the choice is conservative.
+    3. The omitted alternatives may not all be necessary; selective addition (e.g., Vega-Lite for declarative codegen) would address the concern without full open enumeration.
+
+  Strength of challenge: Weak
+
+  Summary: The presumption is well-founded as a closed-enumeration concern. Some counter-pressure exists (set-sizing), but it actually supports the presumption's concern: the chosen catalog should be justified explicitly against alternatives, including the option of dropping some current entries.
+
+  Specific risks: None substantial.
+
+  Mitigations available: Comparison-and-justification document.
+
+  Recommendation: NO-CHALLENGE-FOUND — presumption inference is sound
+
+  STEELMAN:
+    Item: PRESUMPTION-157
+    Strongest counterargument: Adding libraries multiplies complexity; the chosen four are field-tested and may already be too many. The presumption's framing as "missing alternatives" is the wrong direction.
+    What would need to be true for C2A2 to be safe: Catalog justified explicitly; both additions and subtractions considered.
+    How to test: Compare LLM-codegen error rates across candidates; measure bundle and complexity costs.

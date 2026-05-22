@@ -374,3 +374,146 @@ Signal: SIGNAL-2026-05-08-05. McGilchrist's TGS 217 "spaciousness" (PROP-2026-04
 Evidence: Cross-refs CROSS-066, CROSS-067.
 Status: Active
 Implications for C2A2: If hemispheric attention is the mechanism behind positivity-resonance, the C2A2 attention-cluster gains a unified mechanism story spanning McGilchrist, Fredrickson, and Stump — strengthening CROSS-003 (attention as reality-construction).
+
+---
+
+FINDING-025:
+Date: 2026-05-13
+Priority: HIGH
+Type: program_convergence + C2A2_structural_mirror
+Title: SUTI as C2A2's "Detection" Function in Microcosm
+Programs: Levin (primary); Friston, Hoffman, Kastrup, C2A2-core
+Signal: SIGNAL-2026-05-13-01. Levin's SUTI program (PROP-2026-05-11-001, PRS-25) names and operationalizes a research apparatus that is structurally identical to the C2A2 accelerator-detector's "detector" function: a coordinated effort to surface intelligences (or traditions) that mainstream classification schemes cannot see. The detection apparatus is supplied externally by Friston's Phenotyping-Agency-in-AI criteria (PROP-2026-05-04-001); the target taxonomy mirrors Hoffman's interface-theory predictions for non-evolved interfaces (xenobots/anthrobots without evolutionary fitness function); Kastrup's dissociation/alters-of-mind-at-large hypothesis becomes empirically testable if cognitive agents proliferate at every scale.
+Evidence: SUTI essay (Jan 2026, thoughtforms.life) + Lex Fridman #486 (PROP-2026-05-11-003) confirm SUTI is a named program, not a methodological aside; Levin lists six candidate categories with associated detection protocols.
+Status: Active — ESCALATE to Master Paradigm Shift Watch List
+Implications for C2A2: SUTI is the closest external analog to C2A2 we have observed. It supplies (a) a working vocabulary for the "detect intelligences across substrates" function and (b) a downstream user community for the C2A2 detection apparatus. Recommend a dedicated SUTI × C2A2 architectural-comparison session.
+
+---
+
+FINDING-026:
+Date: 2026-05-13
+Priority: MEDIUM-HIGH
+Type: mechanism-level_bridge
+Title: Aging-as-Metastability-Loss — Bioelectric and Neurodynamic Convergence
+Programs: Levin, Friston
+Signal: SIGNAL-2026-05-13-02. Sediqi & Levin (PROP-2026-05-11-002, PRS-26/27) show that cellular senescence is marked by loss of spatial Vmem organization in human keratinocytes. This is structurally analogous to Friston's metastability collapse (PRS-13): healthy tissue is flexibly multi-attractor in bioelectric state space; senescent tissue collapses into rigid attractors. Recovery (via pinacidil hyperpolarization) is structurally identical to Friston's recovery account of metastability restoration.
+Evidence: Vmem heterogeneity reduction + reduced pharmacological responsiveness in senescent cells (iScience PMC12496192). Cross-ref CROSS-076.
+Status: Active
+Implications for C2A2: A second formal bridge between Levin and Friston (after FINDING-001/007), now operating at the *aging* timescale rather than developmental. Suggests a unified dynamical-systems formalism (metastability) spans morphogenesis, neural function, and senescence. Strengthens the Substrate-Independence Cluster.
+
+---
+
+FINDING-027:
+Date: 2026-05-13
+Priority: MEDIUM
+Type: mechanism-level_bridge_candidate
+Title: Vmem → IL-6 — A Bioelectric Hook into Inflammaging and Positivity-Resonance
+Programs: Levin, Fredrickson
+Signal: SIGNAL-2026-05-13-03. PRS-26 shows that voltage modulation in senescent keratinocytes selectively enhances IL-6 (not IL-1α, not IL-8) — cytokine-level specificity rather than blunt depolarization. IL-6 is the canonical inflammaging cytokine and a known biomarker for psychosocial stress in Fredrickson's broaden-and-build / positivity-resonance literature.
+Evidence: Sediqi & Levin iScience paper; Fredrickson's earlier work tying IL-6 trajectories to positivity-resonance frequency.
+Status: Active — speculative but mechanistically specific
+Implications for C2A2: First candidate biophysical pathway by which a Levin-style cellular intervention could couple to a Fredrickson-style flourishing measurement. If validated, opens a "bioelectric-to-flourishing" pipeline rare in the literature.
+
+---
+
+FINDING-028:
+Date: 2026-05-13
+Priority: MEDIUM-HIGH
+Type: substrate_convergence
+Title: Diverse Intelligence Extends into the Formal/Algorithmic Domain
+Programs: Levin (primary); Friston, Wolfram
+Signal: SIGNAL-2026-05-13-04. Levin's "intelligence in sorting algorithms" thought experiment (PRS-28, from Lex Fridman #486) operationalizes the search-efficiency intelligence metric (Chis-Ciure & Levin PRS-13) in a purely formal substrate. This produces three-way convergence: (a) Levin extends his own framework past biology; (b) Friston FEP applies — sorting algorithms minimize prediction error about sorted state; (c) Wolfram-style computational-substrate-of-mind reads any goal-completing computation as a candidate cognitive agent.
+Evidence: Lex Fridman #486 thought experiment + Chis-Ciure/Levin search-efficiency formalism (PRS-13) + ongoing Wolfram observer-class taxonomy (PRS-15..18). Cross-ref CROSS-079.
+Status: Active — reinforces FINDING-001/002 (Friston × Levin) and FINDING-006 (Post-Spacetime cluster).
+Implications for C2A2: Strengthens the case that PRS structure is substrate-independent (Big Question #3) by displaying it in algorithmic substrate. Also softens the boundary between AI agents and human traditions — relevant to Big Question #5.
+
+---
+
+FINDING-029:
+Date: 2026-05-13
+Priority: HIGH
+Type: C2A2_empirical_grounding
+Title: Ideas-as-Living-Agents — Empirical Anchor for Traditions-as-Cognitive-Entities
+Programs: Levin (primary); Hoffman, MacIntyre/C2A2-core
+Signal: SIGNAL-2026-05-13-05. Levin (Lex Fridman #486, PRS-29) frames memories and ideas as quasi-living entities — propagating, recombining, competing for substrate, exhibiting evolution-like dynamics. This extends diverse-intelligence into cultural/cognitive content for the first time. Structurally identical to MacIntyre's account of a *tradition*: a self-perpetuating bundle of practices, narratives, and judgments. Hoffman's Trace Institute work (PROP-2026-05-05-005) supplies candidate formal apparatus.
+Evidence: Direct articulation in Lex Fridman interview; coherent with PRS-21 (thoughts-are-thinkers continuum) extended into cultural content. Cross-ref CROSS-080.
+Status: Active — ESCALATE to Master Paradigm Shift Watch List
+Implications for C2A2: This is the most direct empirical/biological grounding for the C2A2 architectural premise (traditions as cognitive agents) we have seen. The MacIntyre tradition concept now has a Levin-program empirical analog. Recommend citation in any DCEC/MacIntyre paper that asserts traditions are cognitive entities.
+
+---
+
+FINDING-030:
+Date: 2026-05-13
+Priority: HIGH
+Type: methodological_unification + quantitative_C2A2_detector_candidate
+Title: Active Inference as OODA — Quantitative Inter-Tradition Divergence Metric
+Programs: Friston (primary); Levin, Hawkins, MacIntyre/C2A2-core
+Signal: SIGNAL-2026-05-13-06. Friston's formal validation of Boyd's full OODA loop (No Way Out #164, PRS-15) makes active inference a *decision-theoretic* substrate. Cascading implications: (a) Levin's morphogenetic OODA loops become literal active-inference applications (not metaphors), strengthening FINDING-001/002; (b) Hawkins's cortical-column predictive modeling becomes a behavioral-level reading of HTM through OODA's "orientation"; (c) MacIntyre's rival traditions are competing orientations updating against each other under information pressure — the formal structure is now identical; (d) Friston's KL-divergence risk/ambiguity formalism (PRS-16) gives C2A2 a quantitative measure of inter-tradition orientation divergence.
+Evidence: No Way Out #164 podcast + substack writeup; explicit mapping of Markov blanket → OODA self, generative model → orientation, two implicit pathways → forward/inverse free-energy minimization. Cross-ref CROSS-081.
+Status: Active — ESCALATE to Master Paradigm Shift Watch List — operational C2A2 detector metric
+Implications for C2A2: This is the *first* candidate quantitative metric for the C2A2 "detector" function: KL divergence between two traditions' prior preferences and predicted outcomes. If two traditions are active-inference systems with different generative models, their KL divergence is a meaningful scalar that can be tracked across interactions. This converts the C2A2 detector from qualitative to quantitative.
+
+---
+
+FINDING-031:
+Date: 2026-05-13
+Priority: LOW-MEDIUM
+Type: speculative_cross_cluster_bridge
+Title: Information-Theoretic Bridge — FEP × Carroll × Arkani-Hamed
+Programs: Friston, Carroll, Arkani-Hamed
+Signal: SIGNAL-2026-05-13-07. Friston's KL-divergence formalization of decision under uncertainty (PRS-16) is information-theoretic and substrate-agnostic — same mathematical form appears in Carroll's work on emergent agency from physics and Arkani-Hamed's interest in observer-dependent information bounds. Weak signal.
+Evidence: Same-mathematical-object pattern across three thinkers, no direct cross-citation yet. Cross-ref CROSS-082.
+Status: Active — monitor only
+Implications for C2A2: If reinforced over the next 6–12 months, could open a Physicalist × Post-Spacetime × FEP super-cluster. Currently below escalation threshold.
+
+---
+
+FINDING-032:
+Date: 2026-05-17
+Priority: HIGH
+Type: intra-cluster_disagreement_now_operationalizable
+Title: Kastrup–Levin Dialogue Establishes First Internal Axis of the Consciousness-as-Fundamental Cluster
+Programs: Kastrup, Levin (primary); McGilchrist, Hoffman, Stump as adjacent
+Signal: SIGNAL-2026-05-17-01. The May 12, 2026 two-hour With Reality in Mind dialogue is the first high-profile two-thinker public engagement on the central open question of the consciousness-as-fundamental cluster: whether individuation is scale-continuous (Levin) or discrete-dissociative (Kastrup). Both agree consciousness is not produced by matter; they diverge sharply on whether nested cognitive scales generate genuine subjective vantage points at every level or only at boundary-defined alters.
+Evidence: Direct two-thinker dialogue (structured: hour one Levin presents, hour two Kastrup presses on individuation). Kastrup PRS-14/15/16 + Levin PRS-30/31 capture both sides on record. Cross-refs CROSS-083, CROSS-084, CROSS-085.
+Status: Active — ESCALATE to Master Paradigm Shift Watch List
+Implications for C2A2: First articulated internal axis of the consciousness-as-fundamental cluster — replacing the network's prior flattened "both consciousness-cluster" treatment with a tractable, operationalizable disagreement. Deciding factor: the criterion that determines what counts as a dissociative boundary. This becomes the load-bearing question for the AI-membership decision under both views.
+
+---
+
+FINDING-033:
+Date: 2026-05-17
+Priority: HIGH
+Type: three_way_independent_convergence
+Title: McGilchrist × Kastrup × Hoffman Independent Convergence on AI-Consciousness Limits
+Programs: McGilchrist, Kastrup, Hoffman (primary); C2A2-core
+Signal: SIGNAL-2026-05-17-02. Three top-tier consciousness thinkers now publicly articulate principled structural limits on AI consciousness from three independent metaphysical starting points: neurology + participatory realism (McGilchrist, Closer to Truth 2026-05-10), analytic idealism dissociation (Kastrup, With Reality in Mind 2026-05-12), and interface theory (Hoffman, longstanding). Convergence is on a structural conclusion arrived at independently — a strong evidential pattern.
+Evidence: McGilchrist PRS-22/23/24 + Kastrup PRS-16 + Hoffman existing PRS on conscious-agents primary. Cross-ref CROSS-086. Reinforces CROSS-001 (consciousness substrate-independence).
+Status: Active — ESCALATE to Master Paradigm Shift Watch List
+Implications for C2A2: External philosophical warrant for the C2A2 architectural decision that AI agents accelerate processing and pattern detection but do not participate as mature members in traditions. The decision is now backed by three independent metaphysical traditions arriving at compatible structural limits, not just by engineering conservatism.
+
+---
+
+FINDING-034:
+Date: 2026-05-17
+Priority: MEDIUM-HIGH
+Type: ontology_demarcation_resolves_open_question
+Title: McGilchrist's Explicit Consciousness-as-Fundamental Commitment Yields Six-Position Taxonomy
+Programs: McGilchrist (primary); Kastrup, Hoffman, Stump
+Signal: SIGNAL-2026-05-17-03. McGilchrist's Closer to Truth Deep Ontology segment (2026-05-08) publicly commits to consciousness-as-ontologically-primary while distinguishing his "participatory realism" from both panpsychism and Kastrupian analytic idealism on grounds of relational realism. Resolves the open question in McGilchrist's wiki.md about whether his program makes a fundamental-ontology commitment.
+Evidence: Direct on-camera statements in the Deep Ontology segment, plus PRS-25/26 capturing the demarcation move. Cross-refs CROSS-087 (vs. Carroll), CROSS-088 (vs. Stump).
+Status: Active — update master taxonomy
+Implications for C2A2: Six-position taxonomy of consciousness-as-fundamental views now usable by the Master agent: physicalism / panpsychism / idealism (Kastrup) / interface (Hoffman) / participatory realism (McGilchrist) / hylomorphism (Stump). Each has different implications for cross-tradition dialogue and AI agency.
+
+---
+
+FINDING-035:
+Date: 2026-05-17
+Priority: MEDIUM-HIGH
+Type: C2A2_design_pattern_candidate
+Title: "Native Epistemic Standards" as Required Section in Every Tradition Wiki
+Programs: McGilchrist (primary); Stump
+Signal: SIGNAL-2026-05-17-04. McGilchrist's "laziness of the left hemisphere mindset" Substack essay (2026-04-01) defends right-hemisphere epistemic norms against critics applying left-hemisphere standards as the only valid lens. Structurally identical to Stump's work on second-first-language tradition immersion: traditions must be entered on their own terms.
+Evidence: McGilchrist PRS-27/28 + Stump existing PRS on tradition immersion. Cross-ref CROSS-089.
+Status: Active — ESCALATE as architecture flag
+Implications for C2A2: Directly portable design pattern — each tradition wiki should include an explicit "native epistemic standards" section so AI agents and human visitors enter the tradition under its own norms rather than under the default norms of their entering tradition. Low-cost, high-value addition. Recommend Tom queue as next-sprint architecture task.

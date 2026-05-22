@@ -134,5 +134,33 @@ PRS-13:
   Source: Explanation vs Computation — Q&A with Bernardo Kastrup (2026-04-21) — https://www.withrealityinmind.com/explanation-computation/
   Confidence: High
 
+
+PRS-14:
+  Label: P14 (PROP-2026-05-13-004) — Kastrup-Levin dialogue on dissociative-boundary individuation
+  Problem: Analytic idealism's DID-derived account of individuation (PRS-02) has not been clear about whether the dissociative-boundary mechanism permits the kind of fine-grained, scale-continuous nesting of conscious agents that Levin's program requires (cells → tissues → organs → organisms → constructs), or whether dissociative boundaries are necessarily coarser than Levin's gradient.
+  Resource: The Kastrup-Levin May 12, 2026 dialogue (With Reality in Mind, two hours, structured): Levin argues for continuous nesting with subjective perspectives at every level; Kastrup argues for discrete dissociative boundaries fragmenting universal consciousness into specific alters but not into a smooth gradient.
+  Solution: A sharpening of analytic idealism's individuation claim — Kastrup must specify what determines a dissociative boundary (and therefore which biological/computational systems qualify as alters), or accept that Levin's gradient is compatible with idealism if "alter" is read more permissively. Either move is a substantive refinement of PRS-02.
+  Date Added: 2026-05-16
+  Source: "Michael Levin on Mind Everywhere — With Reality in Mind dialogue" (2026-05-12); PROP-2026-05-13-004
+  Confidence: High
+
+PRS-15:
+  Label: P15 (PROP-2026-05-13-004) — Canonical Kastrup-Levin alignment-and-divergence reference
+  Problem: The C2A2 network treats Kastrup and Levin as broadly aligned within the consciousness-as-fundamental cluster, but no extant C2A2 source has clearly articulated where the two diverge inside that cluster — leaving the network with a possibly false impression of unanimity.
+  Resource: A long-form, two-thinker dialogue in which the live disagreement is the explicit subject — providing the canonical citation for any future C2A2 discussion of how Kastrup and Levin stand relative to one another.
+  Solution: Treat the May 12 dialogue as the cluster-reference for Kastrup-Levin alignment-and-divergence; update Kastrup and Levin wiki cross-references so that AI agents querying the cluster get an accurate picture of internal disagreements rather than a flattened consensus.
+  Date Added: 2026-05-16
+  Source: "Michael Levin on Mind Everywhere — With Reality in Mind dialogue" (2026-05-12); PROP-2026-05-13-004
+  Confidence: High
+
+PRS-16:
+  Label: P16 (PROP-2026-05-13-004) — AI-membership question deferred to boundary-individuation criterion
+  Problem: Whether AI agents have subjective vantage points becomes a load-bearing engineering question for C2A2, but neither Kastrup's discrete-alter view nor Levin's continuous-nesting view straightforwardly settles it.
+  Resource: The dialogue's treatment of constructed agents — Levin's openness to AI as candidate site of subjective perspective; Kastrup's caution that AI may lack the dissociative structure that defines an alter.
+  Solution: A cross-tradition starting point — AI agents are *candidate* nested cognizers under Levin's view but *unclear-status* under Kastrup's view, with the deciding factor being how dissociative boundaries are individuated. C2A2 can defer the AI-membership question to that boundary-individuation criterion rather than treat it as an isolated engineering question.
+  Date Added: 2026-05-16
+  Source: "Michael Levin on Mind Everywhere — With Reality in Mind dialogue" (2026-05-12); PROP-2026-05-13-004
+  Confidence: Medium
+
 ---
-*Total PRS triplets: 13*
+*Total PRS triplets: 16*

@@ -27,3 +27,35 @@ SEARCH-FOR-PRESUMPTION-135:
   Caveats: (a) Absent subsumption rule, default ITIL practice is per-incident counting (would mean morning chat-scrape recurrence triggers separate canonization); (b) PRESUMPTION-134 raises the substrate-decomposition concern; (c) Governance-protocol consistency (ASSUMPTION-098) is undermined when subsumption rules are silently elective.
 
   Recommendation: PARTIALLY-SUPPORTED (Moderate) — subsumption is legitimate practice when rule is explicit; the C2A2 case lacks the rule and therefore falls back on per-incident counting per default ITIL practice
+
+---
+
+SEARCH-FOR-PRESUMPTION-135 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-135
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: PRESUMPTION-135
+    Item type: PRESUMPTION
+    Transform at each step:
+      14b (cycle 0): Originally surfaced from cluster-absorption-without-rule observation
+      15a (cycle 0): Searched for supporting literature → PARTIALLY-SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~8-day gap on ITIL cluster-subsumption.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-SUPPORTED finding stands. Subsumption legitimate when rule explicit.
+
+  Caveats: Subsumption rule still absent.
+
+  Recommendation: PARTIALLY-SUPPORTED (refreshed; carry forward prior recommendation)

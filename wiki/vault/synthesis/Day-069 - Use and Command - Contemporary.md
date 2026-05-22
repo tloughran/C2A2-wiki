@@ -17,8 +17,8 @@ length_note: "Q.16 (use, 4 articles) + Q.17 (acts commanded by the will, 9 artic
 mind_first_reframe: "Aquinas's Q.16-17 substrate-of-command map preserves with remarkable structural fidelity under hierarchical active inference (Friston) + multi-scale agency (Levin) + cognitive-appraisal of emotion (Fredrickson): each layer's controllability is exactly what its constitutive autonomy permits, and the medieval 'one human act' integrating command-and-commanded is the integrated multi-layer policy-selection that *is* the alter's action."
 central_theme_thread: "The alter's salvation in fear and trembling operates through a layered-control architecture in which deliberate command reaches some layers directly (motor) and others only via the management of attention and apprehension; the daily-task structure of spiritual practices is the leverage of attention-management on the lower layers (Wright on renewing-the-mind, Rohr on contemplative cultivation, Fredrickson on positive-affect-induction), with second-personal care (Stump) surfacing the diagnostic the alter cannot surface from inside."
 tags: [synthesis, day/069, theme/execution, theme/layered-control, theme/command]
-last_qc_at: "2026-05-14T12:25:25"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-21T18:31:41"
+last_qc_outcome: "rewrote"
 ---
 # Day 69 — Contemporary Parallel: *The Layered Control Architecture of Execution*
 
@@ -81,7 +81,7 @@ Wright on *renewing the mind* (Romans 12:2) as the deliberate management of appr
 - **McGilchrist-tradition wiki, PRS on hemispheric account of willed action.** Bi-hemispheric integration at action-level. *Strong neuropsychiatric.*
 - **Hawkins-tradition wiki, PRS on HTM hierarchical motor control.** Cortical-and-subcortical architecture for command-cascade. *Strong empirical.*
 - **Fredrickson-tradition wiki, PRS on cognitive-appraisal of emotion and broaden-and-build.** Empirical anchor for passion-via-apprehension. *Strong empirical.*
-- **Stump-tradition wiki, PRS on second-personal-knowing as diagnostic intervention.** Theological-philosophical primary on the leverage-point of attention. *Book-length argument.*
+- **Stump-tradition wiki, PRS on second-personal-knowing as diagnostic intervention.** Theological-philosophical resource for the leverage-point of attention. *Book-length argument.*
 - **Wright, Romans 12:1-2; *Paul and the Faithfulness of God*.** *Renewing of the mind* as scriptural-historical anchor. *Scriptural-historical primary.*
 - **Rohr, *The Universal Christ*; *Falling Upward*.** Contemplative-practice as attention-cultivation. *Contemplative theological.*
 - **Augustine, *Confessions* VIII; *De libero arbitrio*; Gregory of Nyssa, *De hominis opificio*.**

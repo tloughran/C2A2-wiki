@@ -34,7 +34,7 @@ tags: [summa, day/009, pars/I]
 
 ## Transcript
 
-[00:00:05] hello my name is Austin habish the founder of think Catholic and you're listening to the Suma New Year podcast where we study St Thomas aquinus Suma theologia in a way simple and insightful for anyone to understand the Suma and year podcast is brought to you by think Catholic taking two questions of the Suma a day we'll seek to summarize St Thomas's responses discovering the Brilliance of aquinus and his Catholic faith this is day nine so let's get started we're covering today questions
+[00:00:05] hello my name is Austin habish the founder of think Catholic and you're listening to the Summa New Year podcast where we study St Thomas aquinus Summa theologia in a way simple and insightful for anyone to understand the Summa and year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of aquinus and his Catholic faith this is day nine so let's get started we're covering today questions
 
 [00:00:35] 15 and 16 of the Prima pars that is on ideas number 15 which exist in his knowledge and Truth number 16 in God for knowledge is of things that are true the translation that I always use in these podcasts is the second revised Edition translated by the fathers of the English Dominican Province and so let's get started the Divine ideas now I assume the plural use of the word idea which is a word we derive from Greek and synonymous with the word Forma
 
@@ -64,7 +64,7 @@ tags: [summa, day/009, pars/I]
 
 [00:07:23] question whether there are ideas of all that God knows besides evil which God knows is not by an idea but through the knowledge of goodness and noting where that good is lacking its privation following our definition of evil in the last episode but regarding everything else aquanus responds but God has the proper types of all things that he knows and therefore he has ideas of all things known by him that's it for the Divine ideas now we get to ask the question
 
-[00:07:53] pontious pilate asked our Lord 2,000 years ago what is truth personally I'm excited to get into this question as we round out our transcendentals within the Suma we started with being then Oneness or Unity then goodness then Beauty now we turn to truth and we begin with the question of location where is truth is it in things or only in the mind now since aanus says that there are various definitions of truth I think the simplest way to explain this article to
+[00:07:53] pontious pilate asked our Lord 2,000 years ago what is truth personally I'm excited to get into this question as we round out our transcendentals within the Summa we started with being then Oneness or Unity then goodness then Beauty now we turn to truth and we begin with the question of location where is truth is it in things or only in the mind now since aanus says that there are various definitions of truth I think the simplest way to explain this article to
 
 [00:08:25] answer it is to say both especially if we use the definition given by aquinus and I'm going to give the definition in Latin because it's important with definitions like this to remember aquinus is actual words that is Veritas estao re intellectus in English that can be translated truth is the equality adequation of the thing and the mind
 
@@ -82,7 +82,7 @@ tags: [summa, day/009, pars/I]
 
 [00:12:03] color that's out in the world falsity becomes possible at the moment when I either affirm or deny when I can affirm or deny what is simply being received and because this is where falsity becomes possible we must also say that this is where truth and its fullest sense occurs in the mind in the affirmation or the denial of what is in in the truth as known is what this is or affirmed to be true to close this
 
-[00:12:36] section with a word from the editors in the famous black fr's gilby edition of the Suma to explain this the commentator says it is a matter of knowing an active operation by employing the Conformity that a true judgment expresses the comparison of thought and object is therefore only implicit in the actual ual attainment of Truth which is a formal identity of mind and object so far as known so giving the
+[00:12:36] section with a word from the editors in the famous black fr's gilby edition of the Summa to explain this the commentator says it is a matter of knowing an active operation by employing the Conformity that a true judgment expresses the comparison of thought and object is therefore only implicit in the actual ual attainment of Truth which is a formal identity of mind and object so far as known so giving the
 
 [00:13:09] last sentence in this intricate and nuanced question to aquinus he says therefore properly speaking truth resides in the intellect composing and dividing a not in the senses nor in the intellect merely knowing what a thing is that's uh simple apprehension so next article whether the true and being are convertible terms I'm going to translate our Latin here Conor instead of convertible we just don't use that word anymore to
 

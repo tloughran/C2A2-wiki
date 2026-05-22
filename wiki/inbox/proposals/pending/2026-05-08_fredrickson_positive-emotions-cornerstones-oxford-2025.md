@@ -7,7 +7,10 @@ source_title: "Positive Emotions: Key Scientific Contributions and the Stories B
 source_url: https://academic.oup.com/book/60710
 source_date: 2025-09-17
 searched_on: 2026-05-08
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-025
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

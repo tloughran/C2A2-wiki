@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-216:
+  Date searched: 2026-05-20
+  Original item: PRESUMPTION-216
+  Original statement: "Each recurring failure deserves its own point-guard — vs systemic integrity ownership."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-216
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — recurring failures each addressed with a bespoke point-guard, without a single owner of systemic integrity.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Defense-in-depth (NIST; Anderson 2008, "Security Engineering"). — Layered, independent controls are a legitimate strategy; multiple guards can be sound.
+    2. Reason, J. (1990). "Human Error" (Swiss-cheese model). — Multiple independent barriers catch failures that any single barrier misses; supports having several guards.
+
+  Strength of support: Moderate
+
+  Summary: There is moderate support for multiple guards as defense-in-depth: layered, independent barriers genuinely catch more failures than a single one. Each point-guard, taken alone, is often a correct fail-safe (as in ASSUMPTION-191). The support is for guards as a layer, not for 'a bespoke guard per failure' as the primary integrity strategy in place of ownership.
+
+  Caveats: Support is for layered guards as defense-in-depth, not for point-guards as a substitute for systemic integrity ownership.
+
+  Recommendation: PARTIALLY-SUPPORTED (guards-as-layer, not as-strategy)

@@ -1,0 +1,35 @@
+SEARCH-AGAINST-PRESUMPTION-151:
+  Date searched: 2026-05-14
+  Original item: PRESUMPTION-151
+  Original statement: "ISME-critical / not-ISME-critical classification as binary; no graduated criticality scale; no sub-set fallback"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-151
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced via inference from binary critical framing
+      15b: Searched for counter-evidence on indivisible-demo framing producing brittle delivery
+    Current status: NO-CHALLENGE-FOUND
+
+  Sources:
+    1. MoSCoW prioritization tradition — graduated criticality is canonical; binary classifications are widely flagged as impoverished.
+    2. For small N (here N=6), binary may be defensible — the only counter to the presumption is the "small N" exemption.
+    3. Indivisible demos do exist (e.g., a hardware-software co-demo) — sometimes the demo is genuinely indivisible.
+
+  Strength of challenge: None-to-Weak
+
+  Summary: The presumption identifies a recognized release-planning anti-pattern. Counter-evidence is weak — the only defense of binary classification is small-N or genuine indivisibility, both of which the C2A2 design should make explicit if they apply. The inference stands.
+
+  Specific risks: None substantial.
+
+  Mitigations available: Sub-set fallback specification; graduated criticality.
+
+  Recommendation: NO-CHALLENGE-FOUND — presumption inference is sound
+
+  STEELMAN:
+    Item: PRESUMPTION-151
+    Strongest counterargument: For small N (6 critical pathways) the binary classification has lower marginal cost; graduated criticality may be over-engineering. But this defense requires the indivisibility claim to be explicit; the presumption is exactly about its being implicit.
+    What would need to be true for C2A2 to be safe: Explicit indivisibility claim or explicit fallback set.
+    How to test: Ask "if we lose pathway X under timeline compression, do we still demo?"

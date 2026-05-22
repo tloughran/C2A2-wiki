@@ -35,3 +35,36 @@ SEARCH-AGAINST-ASSUMPTION-111:
     Strongest counterargument: The "blocking precondition" framing assumes a serialized dependency between tradition canonization (DECISION-026) and proposal review. The progressive-elaboration / pilot-without-canonization literature endorses an alternative: accommodate the pendings under existing workflow, learn operationally what tradition-admission criteria matter, and let DECISION-026 maturate from that operational evidence. Treating pendings as "blocked" creates a queue that may stall and imports calendar-pressure into a meta-level decision that benefits from deliberation. The competing PRESUMPTION-128 (workflow-accommodation) reflects this alternative as a legitimate, literature-supported choice.
     What would need to be true for C2A2 to be safe: (a) Parallel-track allowance; (b) explicit reconciliation of competing PRESUMPTION-128 vs. PRESUMPTION-137; (c) decision-paced rather than calendar-paced commitment.
     How to test: Check whether Rohr/Wright pendings progress before DECISION-026 canonization; whether DECISION-026 deliberation benefits from operational data from pilot accommodations.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-111 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-111
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-111
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from blocking-precondition claim
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~8-day gap. Progressive-elaboration alternative still applies.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. Serialized-dependency framing still under-supported.
+
+  Caveats: Internal reconciliation of PRESUMPTION-128 / 137 would resolve faster.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

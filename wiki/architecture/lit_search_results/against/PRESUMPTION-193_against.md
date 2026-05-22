@@ -1,0 +1,36 @@
+SEARCH-AGAINST-PRESUMPTION-193:
+  Date searched: 2026-05-18
+  Original item: PRESUMPTION-193
+  Original statement: "Cowork-summary 'Assumptions: 144 / Presumptions: 182 cumulative on disk' vs grep-by-ID ASSUMPTION-157 / PRESUMPTION-182 — 13-item discrepancy on assumptions invisible to summary author; self-reporting without verification step. Joins SELF-MEASUREMENT Goodhart cluster."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-193
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15b: Searched for challenging literature
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Goodhart's Law (Wikipedia; CNA 2022; signaling-and-meaning literature, Oxford JCMC 2023) — when self-reported counts become operational targets, they cease to reflect the underlying state.
+    2. FORRT Goodhart's Law glossary — explicit canonical formulation: 'When a measure becomes a target, it ceases to be a good measure.'
+    3. C2A2-internal SELF-MEASUREMENT Goodhart cluster (PRESUMPTION-180, ASSUMPTION-143) — recurrent pattern of measure-of-measurement drift.
+
+  Strength of challenge: Moderate
+
+  Summary: Self-reported counts diverging from grep-by-ID is direct evidence of Goodhart drift. The 13-item discrepancy on assumptions invisible to the summary author is the canonical symptom. Joining the SELF-MEASUREMENT cluster makes this the N-th instance; cluster pattern is strong evidence.
+
+  Specific risks: (a) Downstream decisions made on inaccurate counts; (b) Pathway-14 honesty-layer commitment undermined by un-verified summaries; (c) cluster recurrence at every audited layer.
+
+  Mitigations available: (a) Verification step before self-report (grep-by-ID at summary time); (b) cluster-level: 'measurement requires verification protocol' commitment.
+
+  Recommendation: CHALLENGED
+
+  STEELMAN:
+    Item: PRESUMPTION-193
+    Strongest counterargument: The strongest case: self-reporting without verification is the documented mechanism by which measures decouple from the state they're meant to measure. The 13-item discrepancy is direct evidence; it would have been catchable by a 30-second grep.
+

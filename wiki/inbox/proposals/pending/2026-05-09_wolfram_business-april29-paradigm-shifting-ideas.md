@@ -7,7 +7,10 @@ source_title: "Business, Innovation and Managing Life Q&A (April 29, 2026)"
 source_url: https://www.youtube.com/watch?v=IIwf71zseTc
 source_date: 2026-04-29
 searched_on: 2026-05-09
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-029
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

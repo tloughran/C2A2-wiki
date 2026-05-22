@@ -603,3 +603,887 @@ User-privacy rules prohibit password-based login by software agents on the user'
 
 ---
 
+
+## 2026-05-13 RUN — No new INCORPORATE items
+
+The 2026-05-13 c2a2-lit-search-pipeline run produced **0 INCORPORATE** out of 16 dispositioned items (4 MONITOR + 12 REVISE). No additions to the validated-premises register this cycle.
+
+**Self-referential signal:** PRESUMPTION-148 (this cycle, REVISE) flagged the SELF-MEASUREMENT cluster's third-layer recurrence at the proposal-queue-depth layer; this cycle's 0% INCORPORATE rate re-instates the pattern that ASSUMPTION-112 (MONITOR-114) named as the cluster signature. The 2026-05-11 cycle broke the pattern at 1/21 (4.8%); the 2026-05-13 cycle returns it to 0/16. Across the four-cycle window (2026-05-09, 2026-05-10, 2026-05-11, 2026-05-13), INCORPORATE rate is 1/66 (1.5%) — the cluster pattern's recurrence is now structurally well-observed.
+
+**Cycle-level observation on the register:** the validated-premises register has not received new entries in three of the last four cycles. The structural concern is whether the disposition-criteria are calibrated correctly: if the criteria are correct, the upstream 14a/14b extractions are producing well-formed-but-still-not-validation-ready items; if the criteria are too strict, the register is starving and downstream commitments lack canonical premise grounding. Joint with PRESUMPTION-148 cluster — the proposal-queue and the premise-register are both at-risk of intake-vs-disposition imbalance under different framings.
+
+**Items closest to INCORPORATE this cycle (but not crossed):** ASSUMPTION-118 (15a SUPPORTED Strong; gated on PRESUMPTION-134 substrate-decomposition + PRESUMPTION-145 redesign-vs-discard comparison). If substrate-decomposition is performed and the cost-benefit comparison is documented before the next 15d review (2026-05-20), MONITOR-122 may transition to INCORPORATE on that schedule.
+
+---
+
+
+## 2026-05-14 RUN — 4 INCORPORATE items (PREMISE-016 through PREMISE-019)
+
+The 2026-05-14 c2a2-lit-search-pipeline run produced **4 INCORPORATE** out of 30 dispositioned items (13.3% — first non-zero INCORPORATE cycle since 2026-05-11; the 2026-05-13 cycle produced 0). The 17-pathway architectural articulation pass surfaced four assumptions with strong canonical literature backing.
+
+---
+
+### PREMISE-016:
+**Date validated:** 2026-05-14  
+**Source item:** ASSUMPTION-120  
+**Item type:** ASSUMPTION  
+
+**Validated statement:**  
+Cloudflare Workers is an appropriate broker hosting platform for C2A2 streaming-LLM/TTS workloads, conditional on streaming-latency validation. The ~5-30 ms edge overhead reported in Cloudflare's published benchmarks is dwarfed by LLM streaming first-token latency floors (200-800 ms) and TTS first-audio floors (150-400 ms). The platform is the canonical edge-broker for stateless request-response workloads.
+
+**Supporting evidence:**
+- Cloudflare Workers documentation and published benchmarks (2024-2025) — sub-50 ms cold-start, ~5-15 ms warm-path edge overhead
+- OpenAI / Anthropic streaming API published latency floors (200-800 ms first-token)
+- ElevenLabs / Cartesia TTS streaming benchmarks (150-400 ms first-audio)
+- Fielding (2000) REST dissertation; Burns et al. (2016) "Designing Distributed Systems" — edge placement canonical for stateless brokers
+- C2A2-internal: PREMISE-008 substrate-edge alignment principle
+
+**Challenges noted:**
+- p99 tail-latency under load may differ substantially from median (median-case benchmark concern)
+- Workers-specific lock-in (Durable Objects, KV, Worker APIs) creates migration cost
+- WebSocket time limits and Durable Objects pricing introduce non-trivial constraints
+- PRESUMPTION-152 (paired, MONITOR-131) — estimate-without-measurement gate
+
+**Confidence:** Moderate (conditional-on-validation framing is load-bearing)
+
+**Applicable to:**
+- Broker hosting decision for ISME demo and beyond
+- Streaming-LLM dispatch path
+- TTS streaming path
+- Any C2A2 stateless request-response component at the edge
+
+**Re-check due:** 2026-08-14 (Quarterly via 15d — platform performance is empirically stable; quarterly review sufficient)
+
+**Status:** ACTIVE (with explicit operational caveat: deployment requires p50/p95/p99 latency validation under realistic voice-dialogue load; portable-broker abstraction recommended to preserve reversibility)
+
+**Rationale:** 15a SUPPORTED Strong; 15b PARTIALLY-CHALLENGED Moderate. Per heuristic: "15a strong support + 15b weak-moderate challenge → lean INCORPORATE with caveats noted" — canonical INCORPORATE case. The conditional clause in ASSUMPTION-120 itself preserves the right epistemic posture. Caveats become the load-bearing implementation discipline (p99 measurement, portable abstraction).
+
+---
+
+### PREMISE-017:
+**Date validated:** 2026-05-14  
+**Source item:** ASSUMPTION-124  
+**Item type:** ASSUMPTION  
+
+**Validated statement:**  
+The generative-canvas library set (D3 + three.js + Plotly + bare canvas/WebGL) covers the canonical 2026 web-visualization landscape — declarative analytics (Plotly), low-level web grammar (D3), 3D/WebGL (three.js), and bare-metal canvas/WebGL for performance edges. The choice is field-tested and consistent with C2A2-internal production precedent (wiki_narration.html D3 v7).
+
+**Supporting evidence:**
+- Bostock (2011-2024) D3.js documentation and case studies — canonical low-level web visualization grammar
+- three.js + WebGL community (2010-2025) — dominant high-level WebGL library
+- Plotly community benchmarks (2023-2025) — production analytics dashboards
+- State of JS / State of Frontend 2024-2025 surveys — chosen libraries are first-tier
+- C2A2-internal wiki_narration.html (D3 v7) — production precedent
+
+**Challenges noted:**
+- LLM-codegen surface is larger than necessary (Vega-Lite or Observable Plot would reduce error rate for typical plots)
+- Library-set sizing concern — four libraries multiply bundle and complexity
+- deck.gl may subsume bare-WebGL for geo / large-data
+- PRESUMPTION-157 (paired, MONITOR-136) — alternatives comparison gap
+
+**Confidence:** High
+
+**Applicable to:**
+- Pathway 05 whiteboard plots
+- All generative-visualization codegen paths
+- C2A2 dashboard and reporting surfaces
+
+**Re-check due:** 2026-11-14 (Quarterly via 15d — library ecosystem is stable; longer re-check appropriate)
+
+**Status:** ACTIVE (with explicit operational caveat: library-set comparison audit recommended via PRESUMPTION-157 MONITOR-136; additive selection of Vega-Lite / Observable Plot for LLM-codegen-heavy paths may be considered without disturbing core)
+
+**Rationale:** 15a SUPPORTED Strong; 15b PARTIALLY-CHALLENGED Moderate. Library landscape is mature and choice is conservative. Challenges target LLM-codegen optimization rather than catalog validity — addressable as caveats. Heuristic: strong support + moderate challenge → INCORPORATE with caveats.
+
+---
+
+### PREMISE-018:
+**Date validated:** 2026-05-14  
+**Source item:** ASSUMPTION-129  
+**Item type:** ASSUMPTION  
+
+**Validated statement:**  
+Nightly alignment-agent unidirectional sync from authoritative `architecture/` ground-truth to derivative `wiki/Architecture/` mirror, with diff-detection and flag-on-drift, is the appropriate pattern when the single-writer invariant is enforced. The pattern parallels Summa `sync_vault.sh` + launchd C2A2-internal precedent and is consistent with canonical unidirectional-sync practice (git/rsync/Lamport).
+
+**Supporting evidence:**
+- Git / rsync / unison documentation — canonical unidirectional sync with diff + overwrite under single-writer
+- Allspaw & Robbins (2010) "Web Operations" — declared ground-truth + scheduled sync is the resilient pattern for derivative invariants
+- Lamport (1978) — single-writer invariant is the correctness condition
+- Obsidian-syncthing community patterns (2023-2025) — vault-mirror sync with conflict-flag-on-drift
+- C2A2-internal: Summa `sync_vault.sh` + launchd precedent
+
+**Challenges noted:**
+- Mirror-side edits could occur via direct editing or other agents (PRESUMPTION-162, paired, MONITOR-139)
+- Silent overwrite is canonical failure mode if single-writer invariant is not enforced
+- "Flag in next session archive" surfaces problem after the fact
+
+**Confidence:** Moderate-High (conditional on single-writer enforcement)
+
+**Applicable to:**
+- Alignment-agent sync protocol
+- Any architecture/wiki sync pair
+- Generalizable to other ground-truth/mirror invariants
+
+**Re-check due:** 2026-08-14 (Quarterly via 15d)
+
+**Status:** ACTIVE (with explicit operational caveat: single-writer invariant must be technically enforced — filesystem read-only on mirror, or pre-overwrite diff with confirmation, or alternative protection. The "flag in next session archive" is not sufficient on its own.)
+
+**Rationale:** 15a SUPPORTED Strong; 15b PARTIALLY-CHALLENGED Moderate. Architecture is canonical under its precondition; precondition is the load-bearing implementation discipline. Heuristic: strong support + moderate challenge → INCORPORATE with caveats.
+
+---
+
+### PREMISE-019:
+**Date validated:** 2026-05-14  
+**Source item:** ASSUMPTION-130  
+**Item type:** ASSUMPTION  
+
+**Validated statement:**  
+The honesty layer (Pathway 14) is a first-class architectural commitment of C2A2: epistemic-status marks on claims are surfaced as a primary affordance, not buried in footers. The commitment aligns with IPCC scientific-uncertainty conventions, responsible-AI model-card practice, Tufte's data-graphics conventions, and Floridi/Nguyen on epistemic transparency.
+
+**Supporting evidence:**
+- IPCC AR5+ uncertainty-marking guidance — confidence/likelihood markers are first-class in canonical scientific reporting
+- Anthropic / OpenAI model-card practices (2023-2025) — surfacing uncertainty is dominant pattern in responsible AI output
+- Tufte (1990, 2006) — visibility of provenance and uncertainty is a design virtue
+- Floridi (2013), Nguyen (2020) — visible epistemic status is load-bearing for epistemic responsibility
+- C2A2-internal: PROVENANCE header protocol (already-validated first-class commitment pattern)
+
+**Challenges noted:**
+- Universal first-class marking can produce over-saturation invisibility / warning-blindness (alarm-fatigue concern, PRESUMPTION-163, paired, MONITOR-140)
+- "First-class" is ambiguous — must distinguish "available and prominent where relevant" from "uniformly emphasized on every claim"
+- Graduated marking (high-confidence default-unmarked, deviations emphasized) is the canonical safety-engineering compromise
+
+**Confidence:** High (for commitment-class designation); Moderate (for implementation — graduated marking required)
+
+**Applicable to:**
+- Pathway 14 honesty-layer design
+- All C2A2 output surfaces (chat, narration, reports, wiki)
+- Decision records and operational claims
+- Generalizable to other epistemic-transparency commitments
+
+**Re-check due:** 2026-08-14 (Quarterly via 15d)
+
+**Status:** ACTIVE (with explicit operational caveat: implementation must be graduated — high-confidence claims default-unmarked, deviations emphasized — to avoid over-saturation invisibility. Universal-emphasis implementation would not satisfy the commitment, despite appearing to honor it.)
+
+**Rationale:** 15a SUPPORTED Strong; 15b PARTIALLY-CHALLENGED Moderate. The challenge targets implementation uniformity, not commitment-class. Graduated marking captures the intent with better attention economics. Heuristic: strong support + moderate challenge → INCORPORATE with caveats.
+
+---
+
+**Cycle-level observation:** the 2026-05-14 cycle produced 4 INCORPORATEs — the first non-zero cycle since 2026-05-11 — and breaks the SELF-MEASUREMENT Goodhart cluster pattern that recurred across 4 of the last 5 cycles. The 17-pathway architectural articulation pass surfaced four items with strong canonical literature backing (broker hosting, library set, sync protocol, honesty layer). Pre-implementation architectural articulation passes are predicted to be more INCORPORATE-likely than operational-incident passes; this prediction is supported by the cycle data.
+
+---
+
+### PREMISE-020:
+**Date validated:** 2026-05-15  
+**Source item:** ASSUMPTION-132  
+**Item type:** ASSUMPTION  
+
+**Validated statement:**  
+Toolkit / content separation (Pathway 18) is a first-class architectural commitment for the C2A2 toolkit-extraction work: the framework / content seam must be designed cleanly enough that the parameterizable subset of content can be swapped without code modification. This commitment is load-bearing for the 18 → 25 portability arc; the seam is canonical software engineering practice (Parnas information-hiding; MVC; FLOSS framework precedent).
+
+**Supporting evidence:**
+- Parnas (1972) "On the Criteria to Be Used in Decomposing Systems into Modules" — canonical information-hiding formulation
+- Reenskaug (1979) MVC and successors — 40+ year canonical pattern for framework/content separation
+- Hunt & Thomas (1999) "The Pragmatic Programmer" — DRY and orthogonality
+- Fowler (2003) "Patterns of Enterprise Application Architecture" — separation of concerns
+- FLOSS precedents: Django, Rails, Hugo, Apache Wicket — successful toolkit-extractions maintained the seam
+
+**Challenges noted:**
+- Brooks (1986) "No Silver Bullet" — essential complexity (e.g., tradition-specific reasoning) resists clean extraction into reusable primitives; some content is method, not data
+- Brooks (1995) — second-system effect: toolkit-from-demonstration extraction can over-generalize and misidentify what was load-bearing in the original
+- C2A2-specific: honesty layer, lattice methodology, and tradition agents contain essential-complexity content that may not parameterize fully (PRESUMPTION challenge, paired audit recommended)
+
+**Confidence:** High (for commitment-class designation); Moderate (for the universal "swap without touching code" framing — requires essential-complexity carve-out)
+
+**Applicable to:**
+- Pathway 18 toolkit extraction
+- Pathways 19-22 portability arc (federation/institutional/departmental/individual)
+- All future framework/content boundaries in C2A2
+
+**Re-check due:** 2026-08-15 (Quarterly via 15d; load-bearing for portability arc and tied to Pathway 18 implementation milestone)
+
+**Status:** ACTIVE (with explicit operational caveat: distinguish "content as data" — parameterizable, swappable — from "content as method" — extension-point-based, requires authorship not configuration. Pathway 18 must document the essential-complexity carve-out explicitly. "Non-optional" applies to the seam; "swap without touching code" applies only to the parameterizable subset.)
+
+**Rationale:** 15a SUPPORTED Strong (50+ years of canonical separation-of-concerns literature; multiple FLOSS framework precedents); 15b PARTIALLY-CHALLENGED Moderate (essential-complexity content resists parameterization; second-system extraction risks). Heuristic: strong support + moderate challenge → INCORPORATE with caveats. The challenge targets the universal "swap without touching code" framing, not the commitment to the seam.
+
+---
+
+### PREMISE-021:
+**Date validated:** 2026-05-15  
+**Source item:** ASSUMPTION-134  
+**Item type:** ASSUMPTION  
+
+**Validated statement:**  
+C2A2's federation pattern defaults to OFF with selective per-topic per-peer sharing and attribution-by-default. The "structural not aspirational" framing is implemented as default-OFF (enforced in code) plus attribution-by-default with violation-defederation (rather than the over-strong "mandatory attribution" claim). The commitment aligns with W3C ActivityPub / Verifiable Credentials patterns, GDPR data-minimization, FAIR academic-data sharing, and Nudge default-design.
+
+**Supporting evidence:**
+- Thaler & Sunstein (2008) "Nudge" — defaults have outsized adoption effect; opt-in defaults preserve agency
+- ActivityPub / Mastodon (W3C 2018) — canonical fediverse default-off + per-instance allowlist precedent
+- Academic data-sharing (DataONE, ICPSR, FAIR principles) — default-off with explicit opt-in per dataset
+- W3C Verifiable Credentials 2.0 (2025) — selective disclosure with attribution
+- GDPR Article 5 — opt-in attribution as privacy-preserving default
+- Norman (2013) — "structural not aspirational" matches affordance-design literature
+
+**Challenges noted:**
+- "Mandatory attribution" cannot be technically enforced beyond originating instance (ActivityPub, Creative Commons, GDPR enforcement records all show attribution-loss is the norm at multi-hop federation)
+- Default-off can produce under-federation if not paired with opt-in affordances
+- Per-topic per-peer granularity has UI complexity cost
+- Selective disclosure preserves the originating signature but cannot prevent downstream re-publication without attribution
+
+**Confidence:** High (for default-off commitment); Moderate (for attribution implementation — must be "attribution-by-default + violation-defederation" rather than "mandatory attribution")
+
+**Applicable to:**
+- Pathway 19 federation
+- Pathway 20-22 institutional/departmental/individual deployment
+- All cross-instance content exchange
+
+**Re-check due:** 2026-08-15 (Quarterly via 15d)
+
+**Status:** ACTIVE (with explicit operational caveat: reframe "mandatory attribution" as "attribution-by-default + violation-defederation"; adopt W3C VC linked-data proofs to preserve attribution across hops; document defederation policy for attribution violations; pair with PRESUMPTION-paired audit items).
+
+**Rationale:** 15a SUPPORTED Strong (multiple converging literatures: behavioral economics, W3C standards, academic data-sharing, GDPR, affordance design); 15b PARTIALLY-CHALLENGED Moderate (attribution enforceability is limited beyond originating instance). Heuristic: strong support + moderate challenge → INCORPORATE with caveats.
+
+---
+
+### PREMISE-022:
+**Date validated:** 2026-05-15  
+**Source item:** ASSUMPTION-135  
+**Item type:** ASSUMPTION  
+
+**Validated statement:**  
+Meta-crafts (governance, project management, conflict resolution, facilitation, evaluation) are committed as first-class traditions in C2A2's perspective lattice, not as policy layers external to substantive traditions. The commitment aligns with MacIntyre's tradition-as-practice framework, Ostrom's empirical governance studies, Dewey's evaluation-as-inquiry, Habermas's communicative-action, and Schwartzman's facilitation-as-craft.
+
+**Supporting evidence:**
+- MacIntyre (1981) "After Virtue" and (1988) "Whose Justice? Which Rationality?" — practices and traditions are first-class; politics-as-tradition argument is canonical
+- Ostrom (1990) "Governing the Commons" — empirical demonstration that commons-governance is a tradition with substantive content (8 design principles)
+- Dewey (1916, 1929) — evaluation is itself a substantive inquiry tradition, not external scoring
+- Habermas (1981) "Theory of Communicative Action" — communicative practices are constitutive
+- Schwartzman (1986) "The Meeting" — facilitation as substantive craft
+- C2A2-internal: aligns with MacIntyre lineage commitment
+
+**Challenges noted:**
+- Substantive/meta-craft boundary is contested (Schatzki, Bourdieu, Stout): practice theory denies the sharp boundary; the distinction is constituted, not given
+- Boundary cases (theology, political philosophy) are foundational tensions, not boundary-case-handling (PRESUMPTION-171, paired)
+- Adding meta-craft traditions expands lattice coordination cost
+- Recursive load (PRESUMPTION-180) — meta-crafts are reflective on substantive crafts, generating recursion that compounds
+
+**Confidence:** High (for first-class commitment); Moderate (for sharp boundary — must accept that the distinction is constituted and requires ongoing arbitration)
+
+**Applicable to:**
+- Pathway 24 governance commitments
+- Perspective lattice composition
+- All meta-craft inclusion decisions
+
+**Re-check due:** 2026-08-15 (Quarterly via 15d)
+
+**Status:** ACTIVE (with explicit operational caveat: the substantive/meta-craft distinction is constituted, not given. Implementation must accommodate boundary cases — theology, political philosophy — as foundational tensions rather than treating them as exceptions. PRESUMPTION-171 paired audit recommended. Recursive load from meta-craft reflection must be bounded; PRESUMPTION-180 cluster carry-forward.)
+
+**Rationale:** 15a SUPPORTED Strong (multiple converging philosophical traditions: MacIntyre, Ostrom, Dewey, Habermas); 15b PARTIALLY-CHALLENGED Moderate (boundary cases contested in practice theory; recursive load real). Heuristic: strong support + moderate challenge → INCORPORATE with caveats. The challenge targets boundary-sharpness, not commitment-class.
+
+---
+
+**Cycle-level observation:** the 2026-05-15 cycle produced 3 INCORPORATEs (ASSUMPTION-132 toolkit/content separation; ASSUMPTION-134 federation default-OFF; ASSUMPTION-135 meta-crafts first-class) — second consecutive non-zero INCORPORATE cycle. Across the six-cycle window (2026-05-09 / 10 / 11 / 13 / 14 / 15), the INCORPORATE rate is now 8/125 (6.4%); the 2026-05-14 and 2026-05-15 cycles together contribute 7 of the 8. Both cycles were driven by architectural-articulation passes (17-pathway pass on 05-13 EOD; breadth-arc 18-25 pass on 05-14 EOD). The pattern that pre-implementation architectural articulation passes are more INCORPORATE-likely than operational-incident passes is now confirmed across two cycles.
+
+---
+
+
+
+---
+
+## 2026-05-18 cycle additions (5 INCORPORATE items)
+
+Five new premises validated from the 2026-05-17 cohort, all clustered around the Path-2 worker architecture (vault-safety-boundary cluster) plus the missed-cycle/ownership-boundary documentation pair. This is the largest single-cycle infrastructure-grounding event since 2026-05-15.
+
+---
+
+### PREMISE-023:
+**Date validated:** 2026-05-18  
+**Source item:** ASSUMPTION-158  
+**Item type:** ASSUMPTION  
+
+**Validated statement:**  
+Folder-as-queue + worker-script is an acceptable integration architecture for adding a non-Claude LLM agent to the C2A2 vault at the current scale (N=1 worker, batch latency tolerance). The pattern is canonical at this scale; operational-maturity gaps will surface at the boundaries (multi-producer, contention) and are tracked under PRESUMPTION-183.
+
+**Supporting evidence:**
+- Inbox/Outbox pattern (Wikipedia; Jovanović 2023, milanjovanovic.tech) — file-/table-based queues with at-least-once semantics are a mature integration pattern for decoupling producers and consumers.
+- Alaiy (Medium 2024) 'How I Taught My LLM to Queue Up and Chill' — explicit working pattern of LLM-as-row-processor pulling from a queue (SQS analog); validates the LLM-worker-from-queue topology.
+- SoftwareMill 'Microservices 101: Transactional Outbox and Inbox' — confirms queue-based decoupling is preferred over in-process tool-call coupling for heterogeneous-runtime workers.
+
+**Challenges noted:** The chosen-architecture claim is supportable at the topology level but vulnerable on operational-maturity grounds. Production queue services exist precisely because rolling-your-own queue surfaces predictable failure modes (lost messages, double-processing, ordering, visibility timeouts) that file-folder coordination cannot natively address. The 'Path 2 chosen' decision optimizes for inspection-and-simplicity over operational robustness — a tradeoff the literature considers defensible at small N but suboptimal at scale.
+
+**Confidence:** Moderate
+
+**Applicable to:** DECISION-036 (candidate); Path-2 worker; non-Claude LLM integrations; any folder-queue-based agent pattern across C2A2
+
+**Re-check due:** 2026-08-18 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate). Heuristic application: Topology has Strong literature support; operational caveats are real but addressable within scope (one producer, vault-safety boundary). The decision is well-bounded; INCORPORATE with explicit scope-and-scale conditions noted.
+
+---
+
+### PREMISE-024:
+**Date validated:** 2026-05-18  
+**Source item:** ASSUMPTION-160  
+**Item type:** ASSUMPTION  
+
+**Validated statement:**  
+Filesystem-scope-locking of worker agents to dedicated inbox/outbox/done/failed folders with Maildir-style naming is a canonical, well-grounded vault-safety boundary. The pattern aligns with mainstream agent-sandboxing literature (Cursor, Bunnyshell, Vercel) and proven file-coordination conventions (Maildir). Full safety requires complementary boundaries (network, resource, process) tracked separately.
+
+**Supporting evidence:**
+- Cursor 'Implementing a secure sandbox for local agents' (cursor.com/blog/agent-sandboxing) — filesystem boundary is the first and most cited principle of agent sandboxing.
+- Bunnyshell 'Coding Agent Sandbox' guide — isolated filesystem, least-privilege scope, ephemeral lifecycle as canonical components.
+- Vercel 'Security boundaries in agentic architectures' — explicit treatment of scope-locking and write-permission narrowing.
+- Penligent 'Sandboxes for Coding Agents' — independent confirmation that filesystem-scope is the primary safety boundary.
+- Maildir specification (Bernstein, qmail/courier-mta lineage) — well-documented file-naming convention with atomic-delivery properties.
+
+**Challenges noted:** None of substance; see _against.md file.
+
+**Confidence:** High
+
+**Applicable to:** DECISION-036; all worker-agent designs in C2A2; vault-safety boundary cluster; any non-Claude LLM integration
+
+**Re-check due:** 2026-08-18 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b NO-CHALLENGE-FOUND (None). Heuristic application: Strong literature support, no credible challenge to the core commitment. The boundary is well-grounded and aligns with canonical sandboxing practice. Incorporate; track related boundaries (network, resource, credentials) as separate items.
+
+---
+
+### PREMISE-025:
+**Date validated:** 2026-05-18  
+**Source item:** ASSUMPTION-165  
+**Item type:** ASSUMPTION  
+
+**Validated statement:**  
+c2a2-self-awareness-daily missed 2 consecutive cycles on 2026-05-15 and 2026-05-16; the 3-consecutive on-cadence streak was broken; the 2026-05-17 run was the resumption. The operational fact is documented and load-bearing for OPEN-047; the cause-classification (pipeline-failure vs. rate-mismatch) is a separate question handled under PRESUMPTION-187.
+
+**Supporting evidence:**
+- Shaped 'Best Practices in Data Ingestion' — explicit identification that scheduled-task misses are first-line indicators of pipeline-state problems requiring classification.
+- Microsoft 'Pipeline failure and error message' (Azure Data Factory) — operational guidance that missed cycles must be classified before resolution, not assumed.
+- Beyer et al. (2016) SRE Book — 'visibility-of-stall' is the first SRE objective; documented misses with timestamps is the canonical form.
+- C2A2-internal: documented timestamps make the claim falsifiable and audit-friendly.
+
+**Challenges noted:** None of substance; see _against.md file.
+
+**Confidence:** High
+
+**Applicable to:** OPEN-047; pipeline-reliability audit; substrate-decomposition cluster; pipeline-fault-classification protocol
+
+**Re-check due:** 2026-06-18 (Monthly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b NO-CHALLENGE-FOUND (None). Heuristic application: Documented operational fact; well-grounded in SRE-style reporting. The inferential framing question is handled separately (PRESUMPTION-187). Incorporate the fact; classify the cause separately.
+
+---
+
+### PREMISE-026:
+**Date validated:** 2026-05-18  
+**Source item:** ASSUMPTION-167  
+**Item type:** ASSUMPTION  
+
+**Validated statement:**  
+Long-unowned RE-TRIGGER cohorts in C2A2 should be classified as ownership-boundary problems (unassigned accountability), not item-ageing problems (items getting stale). This reframe aligns with mainstream data-pipeline-reliability literature on ownership gaps; remediation requires owner assignment, not item-by-item action.
+
+**Supporting evidence:**
+- Extract.to 'Why your data pipeline keeps breaking' — explicit identification of unclear ownership as the root cause of pipeline fragility.
+- Astronomer 'Data Products: It's not what you call them' — 'every dataset should have an owner. When you depend on someone else's table, you should know who to contact when it changes.' Direct parallel to unowned-cohort situation.
+- Closeloop 'Why Data Pipelines Fail and How Enterprise Teams Fix Them' — emphasizes that organizational and ownership gaps, not just technical issues, are the root causes of pipeline fragility.
+
+**Challenges noted:** None of substance; see _against.md file.
+
+**Confidence:** High
+
+**Applicable to:** OPEN-046; cohort-ownership protocol; substrate-decomposition cluster; any long-running unowned queue across C2A2 pipelines
+
+**Re-check due:** 2026-08-18 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b NO-CHALLENGE-FOUND (None). Heuristic application: Reframe is strongly supported by data-pipeline-ownership literature. No credible challenge. Incorporate the reframe; OPEN-046 tracks the follow-through.
+
+---
+
+### PREMISE-027:
+**Date validated:** 2026-05-18  
+**Source item:** ASSUMPTION-170  
+**Item type:** ASSUMPTION  
+
+**Validated statement:**  
+The five hard prohibitions codified in agents.md (write outside scope; delete without confirmation; edit without read; silent conflict-merge; skip failure-logging) constitute a well-grounded canonical set of vault-safety-boundary primitives, aligned with mainstream agent-sandboxing literature (Cursor, Bunnyshell, Vercel, OpenAI). The set is necessary but not sufficient; additional boundaries (network, resource, credentials) round out a complete safety posture.
+
+**Supporting evidence:**
+- Cursor 'Implementing a secure sandbox for local agents' — explicit list of must-have boundaries for coding agents: scope, deletion, read-before-write, conflict, audit.
+- Bunnyshell 'Coding Agent Sandbox' — confirms same boundary list as canonical agent-safety practice.
+- Vercel 'Security boundaries in agentic architectures' — confirms the five-prohibition pattern as widely adopted; calls these 'first-line agent safety primitives.'
+- OpenAI 'Sandbox Agents' (developers.openai.com) — fail-loud-on-violation is the canonical enforcement pattern.
+- Reason (1990) 'Human Error' — failure-logging is the load-bearing component for incident analysis; cannot be skipped.
+
+**Challenges noted:** None of substance; see _against.md file.
+
+**Confidence:** High
+
+**Applicable to:** DECISION-036; all worker-agent designs in C2A2; vault-safety-boundary cluster; agents.md SSOT pattern
+
+**Re-check due:** 2026-08-18 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b NO-CHALLENGE-FOUND (None). Heuristic application: Strong literature support across multiple converging sources; no credible challenge to the prohibitions themselves. Incorporate as a canonical vault-safety-boundary statement; track completeness audit separately.
+
+---
+
+**Cycle-level observation:** the 2026-05-18 cycle produced 5 INCORPORATEs (ASSUMPTION-158, ASSUMPTION-160, ASSUMPTION-165, ASSUMPTION-167, ASSUMPTION-170) — third consecutive non-zero INCORPORATE cycle. Across the seven-cycle window (2026-05-09 / 10 / 11 / 13 / 14 / 15 / 18), INCORPORATE rate is now 13/151 (8.6%). Five-item cycles are rare; the pattern is driven by the Path-2 vault-safety-boundary cluster (3 of 5) plus pipeline-state documentation (2 of 5). The pre-implementation-articulation-passes-are-more-INCORPORATE-likely pattern (from prior cycle observation) is reinforced: today's items came from a self-awareness pass over yesterday's substantive infrastructure work, not from operational incidents.
+
+---
+
+### PREMISE-028:
+**Date validated:** 2026-05-19  
+**Source item:** ASSUMPTION-173  
+**Item type:** ASSUMPTION  
+**Priority:** LOW  
+
+**Validated statement:**  
+Future-dated lecture announcements warrant follow-up monitoring-task scheduling rather than past-tense treatment, provided the announcement passes a significance-triage filter to avoid muda.
+
+**Supporting evidence:**
+- Forward-looking content-curation patterns in academic media monitoring (Becker et al. 2009 on event-detection).
+- Calendar-based content workflows in newsroom and research-monitoring tooling.
+
+**Challenges noted:** Risk of muda (Lean waste) if every future-dated announcement triggers monitoring; significance-triage filter required.
+
+**Confidence:** Moderate
+
+**Applicable to:** Monitor-queue agent; content-curation workflow design.
+
+**Re-check due:** 2026-08-19 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Weak-Moderate). Sound principle with operational caveat encoded.
+
+---
+
+### PREMISE-029:
+**Date validated:** 2026-05-19  
+**Source item:** ASSUMPTION-174  
+**Item type:** ASSUMPTION  
+**Priority:** HIGH  
+
+**Validated statement:**  
+Phase-6 commit blocked by stale .git/index.lock requires recovery before push; the constitutional rule forbidding blind push of 476 uncommitted changes is sound, BUT "visual review of all 476" is ineffective per cognitive-load literature and requires decomposition into per-file or per-phase review.
+
+**Supporting evidence:**
+- Pro Git (Chacon & Straub) on index.lock recovery.
+- SRE & DevOps literature on checkpoint discipline (Beyer et al. 2016 "Site Reliability Engineering").
+
+**Challenges noted:** Cohen et al. literature on visual-review at N>20 is ineffective; decomposition required.
+
+**Confidence:** High
+
+**Applicable to:** VCS workflow; Phase-N commit protocol; couples to revision in PRESUMPTION-199/REVISE-024.
+
+**Re-check due:** 2026-08-19 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b PARTIALLY-CHALLENGED (Moderate; visual-review-at-scale critique). Core principle correct; review modality needs revision.
+
+---
+
+### PREMISE-030:
+**Date validated:** 2026-05-19  
+**Source item:** ASSUMPTION-176  
+**Item type:** ASSUMPTION  
+**Priority:** LOW  
+
+**Validated statement:**  
+Near-duplicate Q&A pairs in tradition-specific pending queues warrant dedup before review; at N=2, "show-both" is cheaper than automated collapse and preserves human judgment.
+
+**Supporting evidence:**
+- Near-duplicate detection literature (Manku et al. 2007; Broder 1997 shingling).
+- Curation hygiene patterns in scholarly databases.
+
+**Challenges noted:** Auto-collapse risk at low N; show-both preserves reviewer agency.
+
+**Confidence:** High
+
+**Applicable to:** Wolfram pending; per-tradition pending queues; review workflow.
+
+**Re-check due:** 2026-08-19 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b PARTIALLY-CHALLENGED (Weak-Moderate; auto-collapse cost). Standard hygiene with operational caveat.
+
+---
+
+### PREMISE-031:
+**Date validated:** 2026-05-19  
+**Source item:** ASSUMPTION-178  
+**Item type:** ASSUMPTION  
+**Priority:** HIGH  
+
+**Validated statement:**  
+Three-way orchestrator/briefing/specialist contradiction on Monday Levin+Friston output is a real and reproducible inter-agent state-visibility failure; descriptive observation is sound. Remediation lives in the linked PRESUMPTION-196/REVISE-021 path (write-receipt manifest).
+
+**Supporting evidence:**
+- Distributed-systems inconsistency literature (Brewer CAP; Helland 2015 "Immutability changes everything").
+- Event-sourcing patterns (Fowler).
+
+**Challenges noted:** None of substance for the descriptive claim itself.
+
+**Confidence:** High
+
+**Applicable to:** Inter-agent state-visibility design; couples to REVISE-021 (PRESUMPTION-196) and REVISE-030 (PRESUMPTION-204).
+
+**Re-check due:** 2026-08-19 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b NO-CHALLENGE-FOUND. Clean INCORPORATE; descriptive validity not in dispute.
+
+---
+
+### PREMISE-032:
+**Date validated:** 2026-05-19  
+**Source item:** ASSUMPTION-181  
+**Item type:** ASSUMPTION  
+**Priority:** MEDIUM  
+
+**Validated statement:**  
+Connectivity-metric scope conflates auto-generated derivative content with human/tradition-authored content; stratification recommended. Soften "entirely" to "predominantly" for the +338 orphan jump attribution and report both layered metrics.
+
+**Supporting evidence:**
+- Vault content-type taxonomy patterns in knowledge-graph metrics (Bryl & Bizer).
+- Separate-derived-from-authored stratification in scholarly graphs.
+
+**Challenges noted:** Default-include traversal is a benign convention in some tooling; the case here is the conflation, not the inclusion.
+
+**Confidence:** High
+
+**Applicable to:** Connectivity-metric reporting; couples to PRESUMPTION-203/PREMISE-035 (two-metric reporting).
+
+**Re-check due:** 2026-08-19 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b PARTIALLY-CHALLENGED (Weak-Moderate). Stratification recommendation sound with epistemic-precision caveat.
+
+---
+
+### PREMISE-033:
+**Date validated:** 2026-05-19  
+**Source item:** ASSUMPTION-184  
+**Item type:** ASSUMPTION  
+**Priority:** LOW-MEDIUM  
+
+**Validated statement:**  
+Cowork-to-chat delivery via document.execCommand('insertText', ...) on ProseMirror contenteditable succeeds where type-with-newlines path misfires; workaround is technically sound and well-attested in ProseMirror community discussions.
+
+**Supporting evidence:**
+- ProseMirror documentation on input handling.
+- Browser-automation discussions of contenteditable input dispatch (Puppeteer/Playwright user notes).
+
+**Challenges noted:** execCommand deprecation risk in long-term Chromium roadmap; need documented fallback.
+
+**Confidence:** High
+
+**Applicable to:** SKILL.md update for cowork-to-chat delivery; durable-memory pipeline reliability.
+
+**Re-check due:** 2026-08-19 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b PARTIALLY-CHALLENGED (Weak-Moderate; deprecation horizon). Document conditions and fallback as caveat.
+
+---
+
+### PREMISE-034:
+**Date validated:** 2026-05-19  
+**Source item:** ASSUMPTION-185  
+**Item type:** ASSUMPTION  
+**Priority:** MEDIUM  
+
+**Validated statement:**  
+Pulte Pre-Test Pack four-contamination-mode verification frame (temporal/author/specificity/scoring-grain) plus graded scoring 0/0.5/1 is methodologically sound and C2A2-transferable for bridge-claim and cadence-discipline pre-registration. Transferability of relative weights addressed in PRESUMPTION-205/MONITOR-196.
+
+**Supporting evidence:**
+- Pre-registration literature (Nosek et al. 2018 "Preregistration revolution"; Munafò et al. 2017 "Manifesto for reproducible science").
+- Contamination-mode taxonomies in research-prediction work.
+
+**Challenges noted:** Four-mode portability across institute-id domains untested (handled separately in PRESUMPTION-205).
+
+**Confidence:** High
+
+**Applicable to:** Cross-project methodology import; bridge-claim and cadence-discipline pre-registration in C2A2.
+
+**Re-check due:** 2026-08-19 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b PARTIALLY-CHALLENGED (Weak-Moderate). Frame is methodologically sound; weight-calibration is the separate question.
+
+---
+
+### PREMISE-035:
+**Date validated:** 2026-05-19  
+**Source item:** PRESUMPTION-203  
+**Item type:** PRESUMPTION  
+**Priority:** MEDIUM  
+
+**Validated statement:**  
+Two-metric stratified reporting (auto-generated derivative vs human/tradition-authored) for vault connectivity is the textbook fix for the layer-conflation in PRESUMPTION-203; low cost, high clarity gain.
+
+**Supporting evidence:**
+- Knowledge-graph metrics literature.
+- Layered-metric reporting standards (DCAT, schema.org content typing).
+
+**Challenges noted:** Default-include traversal as benign convention; mitigated by reporting both.
+
+**Confidence:** High
+
+**Applicable to:** Connectivity-metric reporting; couples to PREMISE-032 (ASSUMPTION-181).
+
+**Re-check due:** 2026-08-19 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b PARTIALLY-CHALLENGED (Weak-Moderate). Notable: this is a PRESUMPTION-class INCORPORATE — extra epistemic weight because the system was unaware of the presumption and surfacing it produced a clean fix.
+
+---
+
+### PREMISE-036:
+**Date validated:** 2026-05-19  
+**Source item:** PRESUMPTION-208  
+**Item type:** PRESUMPTION  
+**Priority:** MEDIUM  
+
+**Validated statement:**  
+FC26 308-day corpus horizon should add a lightweight re-review trigger (e.g., Day 150 checkpoint) rather than full slack/recovery budget articulation; addresses planning-fallacy risk at low ceremony cost.
+
+**Supporting evidence:**
+- Planning-fallacy literature (Kahneman & Tversky 1979; Buehler et al. 1994).
+- Long-horizon publication commitments in scholarly project management.
+
+**Challenges noted:** Re-review trigger could become ritualized; mitigated by single checkpoint at Day 150.
+
+**Confidence:** High
+
+**Applicable to:** FC26 abstract closure; long-horizon publication discipline.
+
+**Re-check due:** 2026-08-19 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b PARTIALLY-CHALLENGED (Weak). PRESUMPTION-class INCORPORATE; surfacing the no-slack presumption produced an actionable remediation.
+
+---
+
+**2026-05-19 cycle additions to validated_premises:**
+
+Total PREMISEs: 36 (27 prior + 9 new — PREMISE-028 through PREMISE-036).
+
+INCORPORATE rate this cycle (excluding cycle-1 refreshes): 9/28 = 32%.
+
+Cohort breakdown: Cohort B contributed 4 INCORPORATEs (PREMISE-028, -029, -030, -031); Cohort C contributed 5 INCORPORATEs (PREMISE-032 through -036).
+
+PRESUMPTION-class INCORPORATEs (extra epistemic weight): PREMISE-035 (PRESUMPTION-203) and PREMISE-036 (PRESUMPTION-208). Both surfaced presumptions produced clean operational fixes.
+
+Couplings: PREMISE-029 ↔ REVISE-024 (visual-review-of-N decomposition needed); PREMISE-031 ↔ REVISE-021/REVISE-030 (write-receipt manifest is the linked remediation); PREMISE-032 ↔ PREMISE-035 (stratified reporting pair).
+
+---
+
+
+**2026-05-20 cycle additions to validated_premises (PREMISE-037..041):**
+
+### PREMISE-037:
+**Date validated:** 2026-05-20
+**Source item:** ASSUMPTION-186
+**Item type:** ASSUMPTION
+**Priority:** HIGH
+
+**Validated statement:**
+Queue-depth alarms and conservation-gate throttles must operate on deduplicated counts; a count corrupted by a known bug is a measurement artifact and must not drive control logic until reconciled.
+
+**Supporting evidence:**
+- Redman, T. (2001). "Data Quality: The Field Guide." — Duplicate records are a primary source of inflated counts; deduplication is a precondition for any count-driven decision.
+- Batini, C. & Scannapieco, M. (2006). "Data Quality: Concepts, Methodologies and Techniques." — Record-linkage / dedup is the canonical remedy for count corruption from repeated entities.
+
+**Challenges noted:** No credible body of literature defends acting on a raw count known to contain duplicate records. The only weak counter is pragmatic: dedup has cost, and if the alarm threshold has wide margin the artifact may not change the decision. Here it did change the decision (drove a conservation-gate throttl
+
+**Confidence:** High
+
+**Applicable to:** Conservation-gate throttle; pending-queue alarm; couples PRESUMPTION-210 (queue-depth proxy) and PRESUMPTION-212 (documented==true).
+
+**Re-check due:** 2026-08-20 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b NO-CHALLENGE-FOUND (Weak). Strong support, no real challenge, and the artifact already drove a real control action — exactly the case where the generalizable hygiene premise should enter the validated register. Specific counts flagged for re-confirmation post-fix.
+
+---
+### PREMISE-038:
+**Date validated:** 2026-05-20
+**Source item:** ASSUMPTION-188
+**Item type:** ASSUMPTION
+**Priority:** HIGH
+
+**Validated statement:**
+Git commits for the vault are routed through the trusted host shell by policy (least-privilege); the sandbox is not permitted to write .git under current ACL + a removable stale-lock condition. 'Cannot' is a policy/config state, not an impossibility, and remains revisable.
+
+**Supporting evidence:**
+- NIST SP 800-190 (2017). "Application Container Security Guide." — Read-only / restricted-write root filesystems for sandboxed execution are a recommended hardening pattern; write restriction on VCS metadata is consistent with least privilege.
+- GitOps / CI conventions (Weaveworks, 2017; "Continuous Delivery," Humble & Farley 2010). — Commits originating from a trusted runner/host rather than ephemeral sandboxes is an established, intentional convention.
+
+**Challenges noted:** The challenge targets the framing, not the practice: 'cannot write .git' overstates a situation that is really 'is not currently permitted to, by ACL + a removable stale lock.' Both contributors (ACL and stale lock) are configurable/clearable. Conflating a configuration choice with an impossibility 
+
+**Confidence:** Moderate
+
+**Applicable to:** Commit/persistence workflow; couples ASSUMPTION-189 (lock root cause), ASSUMPTION-190 (sync_vault.sh), PRESUMPTION-211 (durability ownership).
+
+**Re-check due:** 2026-08-20 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b PARTIALLY-CHALLENGED (Moderate). The operational premise (commits routed through the host shell) is well-grounded and already in use; the challenge is to the word 'cannot,' which I incorporate with an explicit reframing rather than rejecting the practice. Moderate (not High) confidence because the mechanism (ACL vs stale lock) overlaps the unresolved REVISE-033 root cause.
+
+---
+### PREMISE-039:
+**Date validated:** 2026-05-20
+**Source item:** ASSUMPTION-191
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+
+**Validated statement:**
+Fail-closed build guards (refuse Summa-less sociogram builds; .gitignore *.bak* to exclude backup artifacts) are validated local invariants and should be retained; their consolidation under single build-integrity ownership is tracked separately (PRESUMPTION-216 / MONITOR-206).
+
+**Supporting evidence:**
+- Saltzer, J. & Schroeder, M. (1975). "The Protection of Information in Computer Systems." — Fail-safe defaults: deny/refuse on a missing precondition rather than proceed into a degraded state.
+- Humble, J. & Farley, D. (2010). "Continuous Delivery." — Build-time invariants / guard checks that fail the build on a violated precondition are a core deployment-safety pattern.
+
+**Challenges noted:** The challenge is not to the guards themselves (which are sound) but to the pattern they exemplify: a growing collection of per-failure point-guards can substitute for systemic integrity ownership and grow the maintenance surface (this is the explicit subject of PRESUMPTION-216). The two guards here 
+
+**Confidence:** High
+
+**Applicable to:** regen_sociogram.sh build path; vault commit hygiene; couples PRESUMPTION-216.
+
+**Re-check due:** 2026-08-20 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b PARTIALLY-CHALLENGED (Weak-Moderate). The two specific guards are textbook fail-safe defaults with no challenge at the guard level; the only objection (point-guard proliferation) is a distinct presumption dispositioned at MONITOR-206. Incorporate the guards as validated practice with a forward-pointer to the systemic concern.
+
+---
+### PREMISE-040:
+**Date validated:** 2026-05-20
+**Source item:** ASSUMPTION-192
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM-HIGH
+
+**Validated statement:**
+Artifact-derived statistics (node/edge/byte counts) must be auto-generated from the live artifact rather than hand-maintained in documentation; hand-copied stats drift and have already driven a decision (payload-diet deferral) on stale inputs. Re-evaluate that deferral at the corrected ~15.4 MB.
+
+**Supporting evidence:**
+- Parnas, D. (1994). "Software Aging" (ICSE). — Documentation drifts out of sync with the system it describes unless actively maintained; stale embedded stats are a canonical instance.
+- Lehman, M. (1980). "Programs, Life Cycles, and Laws of Software Evolution." — Continuing change guarantees documentation divergence absent a reconciliation process.
+
+**Challenges noted:** There is no real challenge to the staleness claim. The only weak counter is that some doc figures are deliberately approximate, but here the figures drove a design judgment (the payload-diet deferral), so accuracy matters and 'approximate is fine' does not apply. The 15b routing question — whether t
+
+**Confidence:** High
+
+**Applicable to:** CLAUDE.md / docs maintenance; payload-diet deferral; couples ASSUMPTION-193, PRESUMPTION-212 (REVISE-039).
+
+**Re-check due:** 2026-08-20 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b NO-CHALLENGE-FOUND (Weak). Strong support, no challenge, and the staleness already affected a design decision — the generalizable premise (artifact stats must be auto-derived, not hand-maintained) belongs in the validated register. The downstream payload-diet re-check is noted as an action.
+
+---
+### PREMISE-041:
+**Date validated:** 2026-05-20
+**Source item:** ASSUMPTION-194
+**Item type:** ASSUMPTION
+**Priority:** LOW-MEDIUM
+
+**Validated statement:**
+The prs_3d generator is non-idempotent and must consume the source template, never a built file; this constraint should be enforced by a fail-closed input guard (refuse built-file inputs) rather than by operator discipline alone. Mirrors the documented wiki_narration non-idempotence constraint.
+
+**Supporting evidence:**
+- Reproducible-builds / hermetic-build literature (Bazel docs; Lamb & Zacchiroli 2021, "Reproducible Builds," IEEE Software). — Generators that consume their own output drift; feeding the canonical source/template each time is the standard discipline.
+- Infrastructure-as-code idempotence (Ansible/Terraform design docs). — Non-idempotent transforms must be guarded by always operating from the declared source, never from a derived state.
+
+**Challenges noted:** The weak-moderate challenge: non-idempotence is often a fixable property, and encoding 'must be fed template, never a built file' as a permanent operating rule substitutes human discipline for a design fix. A rule that depends on always remembering not to feed a built file will eventually be violate
+
+**Confidence:** High
+
+**Applicable to:** prs_3d generation; mirrors wiki_narration; couples PRESUMPTION-216 (point-guard consolidation).
+
+**Re-check due:** 2026-11-20 (Quarterly; low-medium stakes)
+
+**Status:** ACTIVE
+
+**Rationale:** 15a SUPPORTED (Strong); 15b PARTIALLY-CHALLENGED (Weak-Moderate). The non-idempotence constraint is real, strongly supported, and matches an existing validated internal pattern (wiki_narration). Incorporate it as a known constraint with the 15b mitigation folded in: enforce the rule with a fail-closed input guard rather than relying on operator memory.
+
+---
+
+Total new PREMISEs this run: 5 (PREMISE-037 through PREMISE-041). PRESUMPTION-class INCORPORATEs: 0.
+
+---
+
+### PREMISE-042:
+**Date validated:** 2026-05-21
+**Source item:** ASSUMPTION-205
+**Item type:** ASSUMPTION
+
+**Validated statement:**
+Genuine cross-tradition intellectual convergence is predominantly analogical/structural rather than verbatim/lexical; literal shared-resource overlap will therefore be sparse and systematically undercount true convergence (the vocabulary problem). SCOPE: this premise covers the analogical-convergence principle only; the specific '3 literal hubs' count is NOT validated and is quarantined to PRESUMPTION-228 (REVISE-046) pending entity-resolution sensitivity analysis.
+
+**Supporting evidence:**
+- Gentner, D. (1983). "Structure-Mapping," Cognitive Science. — Cross-domain convergence is relational/structural, not surface/lexical; foundational support that real convergence is analogical.
+- Hofstadter & Sander (2013). "Surfaces and Essences." — Analogy as the core of cross-domain conceptual connection; literal lexical overlap is the exception.
+
+**Challenges noted:** The cited evidence (3 literal hubs) is naming/normalization-dependent and artifact-prone (PRESUMPTION-228); and some convergence is literal (shared formal results), so 'not verbatim' is not exhaustive.
+
+**Confidence:** Moderate
+
+**Applicable to:** DECISION-040 (convergence-is-analogical stance — use the principle, not the raw count); cross-tradition coil/hub detection; ASSUMPTION-206 (lexical detection will undercount by the same vocabulary-problem logic).
+
+**Re-check due:** 2026-08-21 (Quarterly)
+
+**Status:** ACTIVE
+
+**Rationale:** Strong support for the principle with only a weak/measurement-scoped challenge -> INCORPORATE with caveats. Confidence Moderate (not High) because the item as written fuses a strong principle with an artifact-prone count; the count is explicitly excluded and routed to PRESUMPTION-228. Consistency-checked against ASSUMPTION-005/006 (traditions/PRS as imperfect units): no contradiction — this premise asserts the FORM of convergence, not that traditions are crisp.
+
+---
+### PREMISE-043:
+**Date validated:** 2026-05-21
+**Source item:** ASSUMPTION-206
+**Item type:** ASSUMPTION
+
+**Validated statement:**
+Precision-first lexical/string-matching detection is a sound v1 baseline for generative-coil detection, PROVIDED its output (e.g., the 17 chains) is treated as a high-precision LOWER BOUND, not a complete count; recall is known to be low (vocabulary problem) and must be estimated and then addressed by the planned v2 semantic/embedding stage.
+
+**Supporting evidence:**
+- Baseline-first ML practice (Zinkevich, "Rules of Machine Learning"). — A high-precision lexical baseline before semantic models is standard, low-risk staging.
+- Manning, Raghavan & Schutze, "Introduction to Information Retrieval." — Exact match gives high precision, low recall; appropriate for a precision-first v1.
+
+**Challenges noted:** Lexical recall is low (Furnas vocabulary problem); the 17-chain count understates true coils until recall is measured or v2 lands.
+
+**Confidence:** High
+
+**Applicable to:** Coil-detection pipeline; OPEN-059; couples PREMISE-042 (the vocabulary problem implies undercount of literal overlap).
+
+**Re-check due:** 2026-11-21 (Quarterly; low-medium stakes)
+
+**Status:** ACTIVE
+
+**Rationale:** Strong support for staged precision-first detection; the only challenge (low recall) is explicitly anticipated by the v2 plan. INCORPORATE at High confidence with the 15b mitigation folded in (treat v1 as a lower bound; measure recall). Consistency-checked: reinforces PREMISE-042 (literal overlap undercounts).
+
+---
+
+Total new PREMISEs this run: 2 (PREMISE-042, PREMISE-043). PRESUMPTION-class INCORPORATEs: 0 (both INCORPOREATEs are ASSUMPTIONs).
+
+---

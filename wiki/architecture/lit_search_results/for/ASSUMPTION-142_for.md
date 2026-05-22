@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-142:
+  Date searched: 2026-05-15
+  Original item: ASSUMPTION-142
+  Original statement: "27 KB integrative paper + 2 Chat-Claude 'review' files written today alongside 8 pathway docs; parallel content stream not subject to decisions.md canonization gate"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-142
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-05-14 EOD content-stream observation
+      15a: Searched for per-day reference-doc cadence patterns in architecture-discovery work
+    Current status: PARTIALLY-SUPPORTED (Moderate)
+
+  Sources:
+    1. Nygard (2007/2017) "Documenting Architecture Decisions" — ADRs are formal commitments; parallel exploratory writing (essays, notes, reviews) is canonical and not subject to ADR gating. Two-stream content is recognized.
+    2. Tufte (1990) "small multiples" / canonical scientific notebook practice — exploratory writing alongside formal record is foundational scientific tradition (Newton, Darwin, Faraday notebooks).
+    3. Whitehead (1929) "Process and Reality" — process of thought includes provisional articulation streams that don't immediately become canonical commitments.
+    4. C2A2-internal: prior days have produced reference docs (pathway sketches, review essays) alongside formal commitments; the parallel-stream pattern is established.
+    5. ADR practice (Mockus 2002, Fowler 2014): not all writing becomes a Decision; reference notes, design sketches, and exploratory essays sit outside the formal commitment register.
+
+  Strength of support: Moderate
+
+  Summary: The two-stream pattern (formal commitments via decisions.md canonization; exploratory content via reference docs, essays, reviews) is canonical in ADR practice, scientific notebook tradition, and process philosophy. The observation that 27 KB of integrative paper + 2 reviews exists in parallel to 8 pathway docs is descriptively accurate and the framing as "parallel content stream not subject to canonization gate" matches ADR practice. Moderate support: the pattern is recognized; the load-bearing concern is whether the parallel stream stays parallel or silently migrates content into the canonical stream (PRESUMPTION-166 paired carry-forward).
+
+  Caveats: (a) PRESUMPTION-166 carry-forward — implicit-decision-drift at pathway-doc layer is the recurring concern; parallel content with no canonization gate can produce drift into normative claims; (b) PRESUMPTION-175 paired — review-labeling integrity; (c) 27 KB + 2 reviews + 8 pathway docs in one day is a heavy content day relative to 8-week runway; attention-budget concern (PRESUMPTION-173); (d) "Not subject to canonization gate" must be enforced — review docs labeled as such must not be cited as canonical.
+
+  Recommendation: PARTIALLY-SUPPORTED (Moderate) — two-stream pattern canonical; load-bearing concern is drift-prevention

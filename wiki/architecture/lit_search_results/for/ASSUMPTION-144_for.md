@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-144:
+  Date searched: 2026-05-15
+  Original item: ASSUMPTION-144
+  Original statement: "Today's 14a/14b run not visible in changelog at evening-sync write-time; sequential evening-sync → 14a/14b cadence is by design but downstream-readability cost"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-144
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-05-14 evening-sync observation
+      15a: Searched for sequential vs parallel pipeline-ordering for end-of-day artifacts
+    Current status: SUPPORTED (Moderate)
+
+  Sources:
+    1. SRE pipeline ordering (Beyer et al. 2016) — sequential pipelines simplify dependency management but produce lag; recognized canonical tradeoff.
+    2. Reinertsen (2009) — sequential vs. parallel scheduling: sequential reduces coordination overhead at cost of latency; downstream-readability cost is documented.
+    3. Build-system literature (Make, Bazel) — sequential vs. parallel scheduling tradeoffs are foundational; sequential is simpler/safer but slower.
+    4. CI/CD practice — log/artifact aggregation lag in sequential pipelines is canonical concern; standard mitigation is "in-progress" markers in interim artifacts.
+    5. C2A2-internal: evening-sync runs first by design (broader scope), 14a/14b runs after; this is sequential by intent.
+
+  Strength of support: Moderate
+
+  Summary: Sequential ordering is canonical when scope-dependent (broader-scope first) or when output of one stage feeds the next. The "by design but downstream-readability cost" framing is honest about the tradeoff. Moderate support: the cadence is defensible; the load-bearing concern is whether the lag-between-summary-and-canonical-record produces user friction (downstream readers consulting the changelog before 14a/14b run see incomplete state).
+
+  Caveats: (a) Downstream-readability cost is real (a reader at evening-sync time sees N items; one hour later there are N + new 14a/14b items); (b) "By design" should not preclude in-progress markers that signal "14a/14b run in progress"; (c) Sequential ordering can be reconsidered if downstream-readability cost compounds.
+
+  Recommendation: SUPPORTED (Moderate) — sequential ordering by design is canonical; in-progress marker mitigation is the load-bearing UX concern

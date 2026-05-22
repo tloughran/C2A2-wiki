@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-115:
+  Date searched: 2026-05-13
+  Original item: ASSUMPTION-115
+  Original statement: "PROP-2026-05-12-001 ('Hoffman's Law' Edge.org response) is the cleanest single-page public framing of the Hoffman program in 2026"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-115
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-05-12 PROP-2026-05-12-001 proposal-content evaluation
+      15a: Searched for research-program-formalism compactness and single-source-vs-multi-source articulation as quality signals
+    Current status: PARTIALLY-SUPPORTED
+
+  Sources:
+    1. Lakatos (1970) "Falsification and the Methodology of Scientific Research Programmes" — research programs benefit from a compact "hard core" statement; single-page formulations are the conventional vehicle for hard-core articulation.
+    2. Kuhn (1962/1996) "The Structure of Scientific Revolutions" — paradigms are characterized in part by exemplar statements; compact public framings serve as exemplars that anchor downstream interpretation.
+    3. Edge.org "Annual Question" format — by editorial design, responses are compact (≈300-1500 words) and have produced canonically-cited single-page framings of multiple research programs (Dennett, Pinker, Hoffman past responses); the format is purpose-built for the role ASSUMPTION-115 ascribes.
+    4. Hoffman (2019) "The Case Against Reality" — book-length articulation; substantively richer but not "single-page"; the comparison favors the Edge response on compactness dimension specifically.
+    5. C2A2-internal: prior Hoffman sources in vault (TED talks, interviews, ITP technical papers) are either multi-page technical (less compact) or oral/transcript (less self-contained); the Edge response's single-page-with-self-containment combination is the local optimum on the compactness axis.
+
+  Strength of support: Moderate
+
+  Summary: Compact single-page framings of research programs are canonically valuable per Lakatos/Kuhn philosophy-of-science; the Edge.org format is purpose-built to produce such framings and has done so for multiple programs. The Edge "Hoffman's Law" response has the structural features (single-page, self-contained, author-authored) that the literature endorses for the "cleanest single-page framing" role. The local comparison against other available 2026 Hoffman sources favors the Edge response on the specific compactness dimension named in the assumption.
+
+  Caveats: (a) PRESUMPTION-141 (this cycle, paired) — third-layer recurrence of the superlative-without-normalization pattern; "cleanest" is a superlative whose denominator (what set of candidate sources was compared) is implicit; (b) Compactness-as-virtue is one quality dimension; depth, technical precision, and recency are others on which book-length or technical sources may outperform; the assumption privileges compactness without explicitly trading off other dimensions; (c) "Single-page" framings can over-simplify and may mislead readers into thinking the program is more settled than it is — Kuhn's exemplar caution; (d) The "in 2026" temporal qualifier assumes no later sources will displace the Edge response within the year — testable but unverified.
+
+  Recommendation: PARTIALLY-SUPPORTED (Moderate) — compact single-page framing is canonically valuable and the Edge response is structurally appropriate for the role; the superlative "cleanest" lacks an explicit comparison set and is the third-layer recurrence of an anti-pattern flagged in this same cycle's PRESUMPTION-141

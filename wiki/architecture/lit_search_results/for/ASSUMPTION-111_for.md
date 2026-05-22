@@ -27,3 +27,35 @@ SEARCH-FOR-ASSUMPTION-111:
   Caveats: (a) PRESUMPTION-128 (this cycle, competing) — workflow-accommodation may handle pendings without first canonizing DECISION-026; competing-presumption pair (P-128 vs. P-137); (b) "Blocking" framing assumes serialized dependency — concurrent / interleaved processing is the project-management alternative; (c) PRESUMPTION-137 (this cycle, supporting) — "first-ever" framing as decision-gate is the paired presumption; (d) DECISION-026 itself is candidate, not canonized — recursion risk: the precondition assumes the canonization mechanism is in place.
 
   Recommendation: PARTIALLY-SUPPORTED (Moderate) — precondition-chain framing is canonical; the competing PRESUMPTION-128 / PRESUMPTION-137 pair must be reconciled before workflow commitment
+
+---
+
+SEARCH-FOR-ASSUMPTION-111 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-111
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-111
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from pending-proposals precondition observation
+      15a (cycle 0): Searched for supporting literature → PARTIALLY-SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~8-day gap on first-of-type admission gating.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-SUPPORTED finding stands. Precondition-chain framing remains canonical.
+
+  Caveats: PRESUMPTION-128 / PRESUMPTION-137 reconciliation still pending.
+
+  Recommendation: PARTIALLY-SUPPORTED (refreshed; carry forward prior recommendation)

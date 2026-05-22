@@ -101,3 +101,36 @@ Publication arrival is not uniform; research follows seasonal cycles (peaks in s
 **Risk level:** MODERATE
 
 **Recommendation:** Implement adaptive scheduling that adjusts polling frequency based on observed publication rates. Monitor publication peaks/valleys; increase frequency during surges. Track information freshness; adjust if developments are too stale.
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-012 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-012
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: PRESUMPTION-012
+    Item type: PRESUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally inferred from C2A2 scheduled monitoring design
+      15a (cycle 0): Searched for challenging literature → CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new challenging literature surfaced in the ~5 weeks since the prior cycle. Adaptive-scheduling consensus remains stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior CHALLENGED finding stands. Adaptive scheduling remains the literature-preferred approach for uneven publication arrival rates.
+
+  Caveats: Magnitude of harm from fixed cadence remains domain-specific and unmeasured for C2A2.
+
+  Recommendation: CHALLENGED (refreshed; carry forward prior recommendation)
+

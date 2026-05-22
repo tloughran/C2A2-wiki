@@ -1,0 +1,37 @@
+SEARCH-AGAINST-ASSUMPTION-196:
+  Date searched: 2026-05-20
+  Original item: ASSUMPTION-196
+  Original statement: "Hawkins/Hoffman 0 proposals is the correct signal (Rule 12), not a search failure."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-196
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from session: 0 proposals for Hawkins/Hoffman reported as an honest null (Rule 12 fail-loud), asserted to reflect reality not under-search.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Altman, D. & Bland, M. (1995). "Absence of evidence is not evidence of absence" (BMJ). — A 0 result is only informative if the search had adequate power/coverage; otherwise it is under-search, not absence.
+    2. Barabasi, A.-L. (2005). "The origin of bursts and heavy tails in human dynamics" (Nature). — Human/scholarly output is bursty; a fixed 30-day window can return 0 for a slow- or bursty-cadence thinker who is in fact active.
+    3. Manning, Raghavan, Schutze (2008). "Introduction to Information Retrieval" (recall). — A null without a recall/coverage estimate cannot distinguish true-absence from low-recall search.
+
+  Strength of challenge: Moderate-Strong
+
+  Summary: The challenge is moderate-strong and targets the inferential leap, not the principle: a 0 is only a true-null if search coverage was adequate, and a fixed 30-day window applied to bursty publication processes can return 0 for an active-but-slow-cadence thinker (Hawkins/Hoffman). Without a coverage/recall estimate, the 0 is consistent with under-search (the symmetric failure to fabrication — PRESUMPTION-218). This links to the window-calibration concern in PRESUMPTION-213.
+
+  Specific risks: Treating an under-search 0 as a true null suppresses real development for slow-cadence thinkers; symmetric error to fabrication.
+
+  Mitigations available: Pair the honest null with a coverage/recall check (was the window adequate for this thinker's cadence?); per-thinker adaptive windows (PRESUMPTION-213); report search-scope alongside the 0.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: ASSUMPTION-196
+    Strongest counterargument: Rule 12 correctly forbids fabricating a nonzero, but it is unguarded against the opposite error: reporting a 0 that reflects an under-powered 30-day window rather than the territory. For bursty/slow-cadence thinkers, absence of evidence in a fixed window is not evidence of absence.
+    What would need to be true for C2A2 to be safe: Safe if the 0 is accompanied by a coverage estimate showing the window was adequate for that thinker's cadence.
+    How to test: Widen the window for Hawkins/Hoffman (or use an adaptive window) and re-run; if still 0, the true-null is supported; if not, it was under-search.

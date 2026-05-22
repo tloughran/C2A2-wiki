@@ -1,0 +1,28 @@
+SEARCH-FOR-ASSUMPTION-164:
+  Date searched: 2026-05-18
+  Original item: ASSUMPTION-164
+  Original statement: "2026-05-16 chat-scrape success = fourth consecutive day; crosses 'credible stability' threshold; weakens PRESUMPTION-159 on chat-scrape axis."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-164
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Nelson (1982) 'Probability, Statistics, and Quality of Service' — consecutive-success thresholds in reliability statistics typically require N=5-7 for credible stability claims at moderate failure rates.
+    2. SRE literature (Beyer et al. 2016) — operational stability is measured over windows that account for failure-mode period; 4 days is informative but not definitive.
+
+  Strength of support: Moderate
+
+  Summary: Four consecutive successes increases confidence in stability but the literature is consistent that 4 is below the canonical 'stable pattern' threshold. The framing 'crosses credible stability' is mildly overstated; 'increases confidence toward credible stability' would be more defensible.
+
+  Caveats: Reliability inference requires understanding the underlying failure-mode period. If the failure mode has a 7-day or 14-day period, 4 consecutive successes prove nothing about cycle-boundary failures.
+
+  Recommendation: PARTIALLY-SUPPORTED

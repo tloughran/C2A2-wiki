@@ -1,0 +1,36 @@
+SEARCH-AGAINST-ASSUMPTION-163:
+  Date searched: 2026-05-18
+  Original item: ASSUMPTION-163
+  Original statement: "worker.py is ~60 lines, one-shot, no daemon, no retry logic, fail-loud; C1–C5 PASS at 2026-05-16T20:49:13 UTC; meets Rules 2 (Simplicity) and 12 (Fail Loud)."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-163
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15b: Searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. AWS Builders' Library 'Timeouts, retries and backoff with jitter' — argues that judicious retries (with backoff and jitter) are essential for handling transient failures, which are the common case in distributed systems.
+    2. Azure Architecture Center 'Transient Fault Handling' — explicit framing that no-retry is an anti-pattern for transient errors.
+    3. ByteByteGo 'A Guide to Retry Pattern in Distributed Systems' — error classification (transient vs. permanent) is the load-bearing primitive; one-shot conflates the two.
+
+  Strength of challenge: Moderate
+
+  Summary: The mainstream cloud-systems literature treats no-retry as unfavorable except where transient failures are rare. For an LLM-API-calling worker, transient failures (rate limits, network blips, provider 5xx) are expected. Fail-loud is correct at shake-out; the absence of any retry plan becomes a problem when operational frequency increases.
+
+  Specific risks: (a) Transient API failures become fatal; (b) operator fatigue from re-running for known-recoverable errors; (c) sample bias — failures that succeed on retry never get measured.
+
+  Mitigations available: (a) Add idempotent-retry around the LLM-API call specifically (narrowest possible scope); (b) keep fail-loud at the orchestration level; (c) classify errors when transient-failure frequency surfaces.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: ASSUMPTION-163
+    Strongest counterargument: The strongest case against: 'fail-loud + no retry' is correct only at shake-out scale. The literature is clear that this is a starter pattern, not an operational pattern. Naming the C1-C5 PASS at a single timestamp is point-evidence; it does not demonstrate operational stability.
+

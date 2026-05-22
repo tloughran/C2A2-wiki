@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-162:
+  Date searched: 2026-05-14
+  Original item: PRESUMPTION-162
+  Original statement: "Alignment-agent unidirectional sync (`architecture/` → `wiki/Architecture/`) presumes mirror-side edits will not occur; bidirectional merge with conflict-resolution not considered"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-162
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced via inference from ASSUMPTION-129 unidirectional sync mechanism
+      15a: Searched for vault-mirror sync protocols and silent-overwrite failure modes
+    Current status: SUPPORTED
+
+  Sources:
+    1. CAP theorem (Brewer 2000) — bidirectional sync introduces consistency-availability tradeoffs that unidirectional sync avoids; the choice is well-known.
+    2. Git / Mercurial / Fossil distributed-VCS literature — merge conflicts on bidirectional sync are a recognized cost.
+    3. Obsidian-syncthing community (2023-2025) — silent-overwrite incidents on unidirectional sync are well-documented when mirror-side edits accidentally occur.
+    4. Lamport (1978) clocks paper — single-writer invariant is the canonical condition for unidirectional sync correctness.
+
+  Strength of support: Strong
+
+  Summary: The single-writer invariant is well-known to be the correctness condition for unidirectional sync. When mirror-side edits can occur, silent overwrite is the canonical failure mode. The presumption correctly identifies that ASSUMPTION-129 does not enforce single-writer; mirror-side edits could occur via direct file editing or another agent. Strong support for the inference.
+
+  Caveats: (a) If mirror-side write access is technically prevented (read-only, hooks), the presumption is satisfied; (b) Bidirectional merge has its own cost; the right answer may be enforcing single-writer rather than adding merge; (c) "Flag on drift" partially addresses this — but flag-after-overwrite is too late.
+
+  Recommendation: SUPPORTED — single-writer condition needs to be made explicit; inference identifies a real gap

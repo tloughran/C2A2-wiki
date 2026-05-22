@@ -7,7 +7,10 @@ source_title: "Interparental Positivity Spillover Theory: How Parents' Positive 
 source_url: https://journals.sagepub.com/doi/10.1177/17456916231220626
 source_date: 2025-07-01
 searched_on: 2026-05-05
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-010
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

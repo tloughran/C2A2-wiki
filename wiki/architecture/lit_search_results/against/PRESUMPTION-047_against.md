@@ -40,3 +40,36 @@ SEARCH-AGAINST-PRESUMPTION-047:
     Strongest counterargument: User-directedness is a norm, not a universal requirement. For idempotent, pre-established routes, default-to-lowest-friction is defensible and is Cowork's own advice for recurring tasks. The universal form of the presumption trades off against parked-session backlog (PRESUMPTION-043), friction fatigue, and the usability principle that review cost should scale with decision stakes. The right form of the presumption is "first-time cross-account ingestion is user-directed; repeat ingestion on a known path can default-to-lowest-friction." This is the context-sensitive form that the HCI literature actually supports.
     What would need to be true for C2A2 to be safe: Weaken the universal to a first-time-vs-repeat distinction; pair with a retention policy (PRESUMPTION-043 remediation); calibrate against observed parked-session cost.
     How to test: Track parked-session count over 4 weeks under current enumerate-and-wait posture; if count grows monotonically without resolution, the universal form is factually creating backlog.
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-047 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-047
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: PRESUMPTION-047
+    Item type: PRESUMPTION
+    Transform at each step:
+      14b (cycle 0): Originally inferred as route-selection presumption
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new challenging literature in the ~5-week gap. Elicitation-fatigue and context-appropriate-automation literature stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Weak-Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. Universal form still tradeable; contextual form still supported.
+
+  Caveats: Empirical parked-session-count measurement would be more informative than further literature.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

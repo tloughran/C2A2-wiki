@@ -7,7 +7,10 @@ source_title: "Fireside Chat at South Park Commons (March 19, 2026)"
 source_url: https://www.stephenwolfram.com/publications/2026/03/19/fireside-chat-at-south-park-commons/
 source_date: 2026-03-19
 searched_on: 2026-05-04
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-005
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

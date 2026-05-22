@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-182:
+  Date searched: 2026-05-15
+  Original item: PRESUMPTION-182
+  Original statement: "'Cowork drafts, Tom amends' pattern naturalizes Tom as canonical validator; non-Carpathi-instance ratification protocol absent; human-in-the-loop Carpathi-instance-specific"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-182
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from Cowork-drafted attribution observation
+      15a: Searched for governance roles in FLOSS toolkits; BDFL patterns and their portability
+    Current status: SUPPORTED (Strong)
+
+  Sources:
+    1. Lerner & Tirole (2002) "Some Simple Economics of Open Source" — single-validator (BDFL) governance is canonical in early FLOSS but does not port to multi-instance federation.
+    2. Linux/Linus, Python/Guido, etc. — BDFL governance has clear portability issues; succession and multi-instance ratification require explicit protocols.
+    3. Eghbal (2020) "Working in Public" — sustained FLOSS frameworks evolve from BDFL to community governance; the transition requires explicit ratification protocol.
+    4. Ostrom (1990) — common-pool resource governance requires explicit ratification protocols at multi-instance scale; BDFL-style single-validator does not scale.
+    5. C2A2-internal: Carpathi-instance-specific human-in-the-loop is the current state; non-Carpathi-instance ratification is unspecified. Cluster: PRESUMPTION-175 (writing-pass-as-claim-making), PRESUMPTION-176 (review-labeling), PRESUMPTION-166 (carry-forward implicit-decision-drift).
+
+  Strength of support: Strong
+
+  Summary: Single-validator governance pattern is well-documented in FLOSS history (BDFL); portability concerns are canonical (Eghbal, Lerner-Tirole). Multi-instance ratification requires explicit protocol (Ostrom). The presumption identifies a load-bearing gap: Pathway 18 (toolkit extraction), Pathway 19 (federation), Pathway 22 (individual deployment) all assume non-Carpathi instances will work but no ratification protocol exists. Strong support: the inference is well-grounded; MEDIUM-HIGH priority is appropriate.
+
+  Caveats: (a) BDFL governance is functional in early-stage FLOSS; the presumption is about portability not current-state; (b) Cluster: PRESUMPTION-175/176/166 carry-forward concerns; (c) Joins Pathway 18/19/22 commitments.
+
+  Recommendation: SUPPORTED (Strong) — single-validator-portability concern is well-grounded; ratification-protocol audit is load-bearing

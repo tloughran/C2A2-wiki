@@ -1,0 +1,38 @@
+SEARCH-AGAINST-ASSUMPTION-199:
+  Date searched: 2026-05-20
+  Original item: ASSUMPTION-199
+  Original statement: "Lit-pipeline cycle-1 carry-forward (no net-new search, low yield) + training-corpus citation convention."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-199
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from session: lit-pipeline adopted cycle-1 carry-forward (refresh searches assumed low-yield, no net-new search) plus a training-corpus citation convention.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Kandpal, N. et al. (2023). "Large Language Models Struggle to Learn Long-Tail Knowledge" (ICML). — Parametric knowledge is unreliable for long-tail/recent facts; a training-corpus-only citation convention systematically misses these.
+    2. Lewis, P. et al. (2020). "Retrieval-Augmented Generation" (NeurIPS). — For knowledge that changes or is long-tail, retrieval (live search) materially outperforms parametric recall.
+    3. Knowledge-cutoff effect (well documented). — A training-corpus citation convention cannot, by construction, surface anything after the model cutoff; carry-forward compounds this by also skipping live refresh.
+    4. Maynez et al. (2020); Ji et al. (2023). — Parametric-only citation raises the risk of plausible-but-fabricated references, the symmetric danger to ASSUMPTION-198.
+
+  Strength of challenge: Strong
+
+  Summary: The challenge is strong and self-referential: a training-corpus-only citation convention plus uniform carry-forward systematically misses post-cutoff and long-tail evidence and raises fabricated-citation risk. For fast-moving fields the 'low-yield' assumption fails — the refresh gap is exactly where new evidence appears. This is precisely the method this run is using, so the challenge applies to the pipeline's own epistemic backbone (links PRESUMPTION-214 carry-forward and PRESUMPTION-215 training-corpus stand-in).
+
+  Specific risks: The self-awareness pipeline grounds premises on stale/parametric evidence and misses disconfirming or updating literature; fabricated citations enter the register; the system over-trusts its own training-corpus recall.
+
+  Mitigations available: Stratify by field velocity: live-search refresh for fast-moving / recency-dependent items, carry-forward only for low-velocity ones; label every citation's provenance (training-corpus vs live); periodic live-literature audit of a sample.
+
+  Recommendation: CHALLENGED (REVISE)
+
+  STEELMAN:
+    Item: ASSUMPTION-199
+    Strongest counterargument: A training-corpus-only convention with uniform carry-forward cannot, by construction, see post-cutoff or long-tail evidence and is prone to fabricated citations; for fast-moving fields the 'refresh is low-yield' premise is false precisely where it matters. The pipeline is grounding its self-knowledge on its own parametric recall — the exact failure mode it exists to catch.
+    What would need to be true for C2A2 to be safe: Safe if citation provenance is labeled and live-search refresh is applied to velocity-sensitive items, with carry-forward reserved for low-velocity, well-attested topics.
+    How to test: Take a sample of carry-forward items in fast-moving subfields; run a live search; measure how often net-new evidence appears. Nonzero yield falsifies the uniform low-yield assumption.

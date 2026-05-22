@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-222:
+  Date searched: 2026-05-21
+  Original item: PRESUMPTION-222
+  Original statement: "Narrative compression == information-theoretic compression — description length presumed definable/computable over PRS triplets."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a]
+    Original item: PRESUMPTION-222
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred: the system equates narrative 'compression' with information-theoretic compression, presuming a definable/computable description length over PRS triplets.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E / REVISE-040 noted)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Koutra et al. (2014) "VoG: Summarizing graphs using MDL"; Akoglu et al. — MDL-based graph summarization gives a concrete, computable description length over graph structure; a triplet graph could be summarized this way.
+    2. Language-model codelength: Shannon cross-entropy/perplexity; Deletang et al. (2023) "Language Modeling Is Compression." — A computable proxy for narrative description length exists.
+    3. Li & Vitanyi, algorithmic information theory. — Conceptual basis equating description length and information content.
+
+  Strength of support: Moderate
+
+  Summary: Computable PROXIES for narrative/graph compression do exist — MDL graph summarization and LM cross-entropy codelength are both concrete and computable over text/graphs. So the presumption is not hopeless: a definable, computable description-length proxy over PRS triplets is achievable.
+
+  Caveats: These are proxies tied to a chosen model/coding scheme; they are not the canonical Kolmogorov description length, and different schemes give different answers.
+
+  Recommendation: PARTIALLY-SUPPORTED (proxy only)

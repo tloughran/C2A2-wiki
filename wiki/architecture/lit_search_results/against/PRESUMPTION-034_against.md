@@ -36,3 +36,36 @@ SEARCH-AGAINST-PRESUMPTION-034:
     Strongest counterargument: Observability literature consistently warns against unannotated scope drift in periodic-job labels. Trajectory metrics aggregated over heterogeneous-scope runs can produce misleading trends. The label persistence is operationally defensible only when scope is documented per run.
     What would need to be true for C2A2 to be safe: Per-run scope documentation; normalization of trajectory metrics by processed volume.
     How to test: Compare trajectory metrics with and without scope-normalization; check whether any apparent trends are artifacts of mixed-scope labeling.
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-034 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-034
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: PRESUMPTION-034
+    Item type: PRESUMPTION
+    Transform at each step:
+      14b (cycle 0): Originally inferred as labeling-accuracy presumption
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new challenging literature in the ~5-week gap. Scope-drift / metric-interpretation concern stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. Unannotated scope-drift remains a recognized reproducibility risk.
+
+  Caveats: Per-run scope annotation is the cheap mitigation.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

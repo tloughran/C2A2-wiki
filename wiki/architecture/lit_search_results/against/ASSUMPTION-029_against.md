@@ -36,3 +36,36 @@ SEARCH-AGAINST-ASSUMPTION-029:
     Strongest counterargument: Frontend architectural refactors justified by "monolithic structure" frequently fail to improve outcomes because the real bottleneck is usually data model or test coverage. The claim that single-file architecture is THE limiting factor is a strong causal claim that the literature does not specifically support. Without baseline metrics, the refactor may absorb effort without corresponding benefit.
     What would need to be true for C2A2 to be safe: Metrics measured before the refactor (bug rate, edit latency, feature velocity) showing the single-file structure is the dominant driver; post-refactor re-measurement confirming improvement.
     How to test: Pre/post bug rate, edit-time, LLM-edit-success-rate; change-failure-rate comparison.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-029 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-029
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-029
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted as architectural commitment
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new challenging literature in the ~5-week gap. Refactor-ROI and premature-modularization evidence stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. "Limiting factor" causal claim still under-evidenced; symptom-vs-cause concern persists.
+
+  Caveats: Concrete pre/post measurement remains the only path to resolution.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

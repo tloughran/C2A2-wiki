@@ -1,0 +1,27 @@
+SEARCH-FOR-PRESUMPTION-209:
+  Date searched: 2026-05-20
+  Original item: PRESUMPTION-209
+  Original statement: "A single agent's directory scan is authoritative — no reconciliation layer across counting agents."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-209
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — counts taken from one agent's directory scan treated as ground truth, with no reconciliation across counting agents.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: NO-SUPPORT-FOUND
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Single-source-of-truth design (Helland 2005, "Data on the Outside vs. Data on the Inside"). — There is mild support for designating ONE authoritative source — but the literature means a reconciled canonical store, not "whichever agent happened to scan."
+
+  Strength of support: Weak
+
+  Summary: Little supports treating one agent's ad-hoc directory scan as authoritative. The closest legitimate idea — a single source of truth — actually argues for a reconciled canonical store with write-receipts, not for trusting any single reader's snapshot. The supportive direction yields only a weak, mis-fitting analog; the presumption as stated (no reconciliation layer) finds essentially no support.
+
+  Caveats: The single-source-of-truth concept supports a canonical reconciled store, which is the OPPOSITE of trusting an arbitrary single scan.
+
+  Recommendation: NO-SUPPORT-FOUND

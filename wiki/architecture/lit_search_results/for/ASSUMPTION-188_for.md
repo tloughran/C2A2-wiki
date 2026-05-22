@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-188:
+  Date searched: 2026-05-20
+  Original item: ASSUMPTION-188
+  Original statement: "Sandbox cannot write .git; commits must come from host shell (ACL + stale lock)."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-188
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from session: sandbox git writes failed (ACL + stale lock); commits routed through host shell.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. NIST SP 800-190 (2017). "Application Container Security Guide." — Read-only / restricted-write root filesystems for sandboxed execution are a recommended hardening pattern; write restriction on VCS metadata is consistent with least privilege.
+    2. GitOps / CI conventions (Weaveworks, 2017; "Continuous Delivery," Humble & Farley 2010). — Commits originating from a trusted runner/host rather than ephemeral sandboxes is an established, intentional convention.
+    3. Saltzer, J. & Schroeder, M. (1975). "The Protection of Information in Computer Systems." — Least-privilege: an execution context should not hold write authority over state it is not responsible for durably persisting.
+
+  Strength of support: Strong
+
+  Summary: The operational practice — route commits through the trusted host shell rather than the ephemeral sandbox — is strongly supported by container-hardening and CI/CD convention. Restricting a sandbox's write authority over .git is a recognized least-privilege posture, and commit-from-trusted-host is standard GitOps practice. The premise's operational core is sound.
+
+  Caveats: The literature supports the practice; it does not support the strong word 'cannot' (see 15b) — write authority is a configuration choice, not a hard impossibility.
+
+  Recommendation: SUPPORTED (operational practice); 'cannot' should read 'is-not-configured-to'

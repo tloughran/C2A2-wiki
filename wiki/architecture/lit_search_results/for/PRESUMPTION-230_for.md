@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-230:
+  Date searched: 2026-05-21
+  Original item: PRESUMPTION-230
+  Original statement: "Confirming gating logic + data == confirming rendered behavior — UX symptom dispositioned by data-reasoning over reproduced observation."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a]
+    Original item: PRESUMPTION-230
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred: a UX symptom was dispositioned by reasoning over gating logic + data, presuming that confirming logic/data equals confirming the rendered behavior.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E / REVISE-040 noted)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Formal verification / static analysis. — Reasoning about logic + inputs can establish properties without running the UI in some cases.
+    2. Specification-based verification. — If behavior is fully determined by the verified logic, logic-level confirmation can suffice.
+
+  Strength of support: Weak-Moderate
+
+  Summary: Weak-moderate support: in systems where rendered behavior is fully determined by the verified logic, logic+data reasoning can establish correctness. So the approach is not always invalid.
+
+  Caveats: Holds only when the render layer adds no behavior of its own — rarely true for browser UX (CSS, layout, event timing).
+
+  Recommendation: PARTIALLY-SUPPORTED (only when the render layer is behavior-neutral)

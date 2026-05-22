@@ -7,7 +7,10 @@ source_title: "Online Generalised Predictive Coding"
 source_url: https://arxiv.org/abs/2605.02675
 source_date: 2026-05
 searched_on: 2026-05-05
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-011
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

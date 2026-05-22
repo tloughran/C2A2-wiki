@@ -27,3 +27,35 @@ SEARCH-FOR-ASSUMPTION-106:
   Caveats: (a) N=2 cycles is below SPC pattern-confirmation threshold; "confirms" overstates; (b) Batch composition is not normalized — ASSUMPTIONs and PRESUMPTIONs are extracted from the same source material and may have different complexity distributions independent of stated/unstated; (c) ASSUMPTION REVISE rate may reflect 14a's selection bias (extracting only well-formed claims) rather than item-type epistemic weight per se; (d) The self-referential observation pattern (the system measuring its own pattern-stability) is itself Goodhart-vulnerable.
 
   Recommendation: PARTIALLY-SUPPORTED — the theoretical grounding is sound; the empirical confirmation-strength is overstated at N=2; framing should shift from "confirms" to "is consistent with the predicted pattern from explicit/tacit knowledge literature"
+
+---
+
+SEARCH-FOR-ASSUMPTION-106 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-106
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-106
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from second-consecutive 0/8 REVISE pattern
+      15a (cycle 0): Searched for supporting literature → PARTIALLY-SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~8-day gap on explicit/tacit knowledge or SPC pattern-confirmation.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Weak-Moderate)
+
+  Summary: Prior PARTIALLY-SUPPORTED finding stands. Theoretical grounding sound; confirmation-strength still overstated at N=2.
+
+  Caveats: Additional cycles since may have raised N — internal recount would update faster.
+
+  Recommendation: PARTIALLY-SUPPORTED (refreshed; carry forward prior recommendation)

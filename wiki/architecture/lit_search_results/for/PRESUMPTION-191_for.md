@@ -1,0 +1,27 @@
+SEARCH-FOR-PRESUMPTION-191:
+  Date searched: 2026-05-18
+  Original item: PRESUMPTION-191
+  Original statement: "'10-minute desk action' for DECISION-032/033/034 canonization presumes (a) PREMISE-backing materially strengthens canonization readiness and (b) Tom's endorsement is the bottleneck; ignores listed formalization-blockers."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-191
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. ADR literature (Nygard 2011) — PREMISE-backing does materially strengthen canonization readiness, all else equal.
+
+  Strength of support: Weak
+
+  Summary: PREMISE-backing is a positive readiness signal; the broader claim is not.
+
+  Caveats: PREMISE-backing is necessary but not sufficient; other blockers exist (OPEN items, dependent presumptions).
+
+  Recommendation: PARTIALLY-SUPPORTED

@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-202:
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-202
+  Original statement: "queue-depth-as-review-urgency presumption; 42-pending framing recommends Tom-reviews-more (throughput-side intervention) without decomposing into generation-rate vs throughput-capacity."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-202
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — implicit equivalence "deep queue = reviewer should surge"
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Weak-partial
+
+  Sources:
+    1. Little, J. D. C. (1961). L=λW theorem. — Queue depth IS one of the natural urgency proxies; some support for treating depth as a signal warranting attention.
+    2. Goldratt (1984). "The Goal." — TOC: a deep queue at a station is a bottleneck signal warranting investigation; partial support for the "queue depth signals action" framing.
+    3. Reinertsen (2009). "Principles of Product Development Flow." — Queue depth IS the high-leverage operational metric; support for treating it as actionable.
+
+  Strength of support: Weak
+
+  Summary: There is some support for treating queue depth as actionable, but the literature uniformly says "actionable on which side?" — generation-rate, throughput-rate, or both. The presumption as stated (queue-depth → Tom-reviews-more without decomposition) finds little direct support. The closest legitimate version of the claim is "queue depth signals investigation," which is much weaker than "queue depth signals throughput surge."
+
+  Caveats: Support is for queue-depth-as-signal, not queue-depth-as-throughput-prescription. The decomposition step the presumption skips is required by the literature.
+
+  Recommendation: PARTIALLY-SUPPORTED (only the signaling half; the prescription half is unsupported)

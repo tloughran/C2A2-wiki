@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-186:
+  Date searched: 2026-05-18
+  Original item: PRESUMPTION-186
+  Original statement: "Pace-and-shape framing presumes architectural-breadth work and demo-path work are zero-sum on Tom's bandwidth; 'probably not both' closes off the compose-or-interfere question."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-186
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. DEA-ZSG (Lins et al. 2003) — zero-sum framing applies when production units cannot compose; some real-world resource-allocation cases match.
+    2. Critical Chain (Goldratt 1997) — under deadline pressure, multitasking has documented quality cost.
+
+  Strength of support: Moderate
+
+  Summary: Zero-sum framing is correct in some real-world cases; under deadline pressure, multitasking does have documented quality cost.
+
+  Caveats: Whether zero-sum applies here depends on whether breadth and demo work compose; this has not been tested.
+
+  Recommendation: PARTIALLY-SUPPORTED

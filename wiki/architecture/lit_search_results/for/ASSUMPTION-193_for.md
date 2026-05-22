@@ -1,0 +1,28 @@
+SEARCH-FOR-ASSUMPTION-193:
+  Date searched: 2026-05-20
+  Original item: ASSUMPTION-193
+  Original statement: "PRS network grown to 231/90/35 + 32-coil layer (from 133/54/20); 231-vs-225 divergence."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-193
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from session: PRS network counts grown to 231/90/35 + 32-coil layer; a 231-vs-225 divergence noted across sources.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Vogels, W. (2009). "Eventually Consistent" (CACM). — In a system with multiple count sources, transient divergence between sources is expected and reconcilable; the growth + divergence pattern is normal.
+    2. Newman, M. (2010). "Networks: An Introduction." — Growing networks accrue structural layers (here a 32-coil layer); count growth across node/edge/bridge tiers is standard graph-evolution behavior.
+
+  Strength of support: Moderate
+
+  Summary: The growth claim (133/54/20 -> 231/90/35 + a 32-coil layer) is consistent with normal knowledge-graph evolution and is moderately supported as a structural pattern. The 231-vs-225 divergence is the live issue: count differences across sources are expected under eventual consistency and are reconcilable, which partially supports the premise that the divergence is real and benign-pending-reconciliation.
+
+  Caveats: Support is for the pattern; the specific counts and which source is authoritative are internal and unreconciled.
+
+  Recommendation: PARTIALLY-SUPPORTED

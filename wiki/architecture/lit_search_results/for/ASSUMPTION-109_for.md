@@ -27,3 +27,35 @@ SEARCH-FOR-ASSUMPTION-109:
   Caveats: (a) PRESUMPTION-134 (this cycle) is the paired explicit challenge: PRESUMPTION-121 and PRESUMPTION-125 may share substrate (Chrome MCP + claude.ai login state) — substrate-decomposition before splitting is the literature-endorsed sequence; (b) Standalone DECISION canonization without implementation commitment is documentation-as-fix (PRESUMPTION-122 anti-pattern); (c) Calendar-paced URGENT canonization is not endorsed by ADR literature; (d) Two HIGH-urgency canonizations same week (PRESUMPTION-136 this cycle) raises week-carrying-capacity concern.
 
   Recommendation: PARTIALLY-SUPPORTED (Moderate) — splitting on substrate is canonical; the substrate-decomposition (PRESUMPTION-134) and week-capacity (PRESUMPTION-136) prerequisites must be resolved before standalone canonization
+
+---
+
+SEARCH-FOR-ASSUMPTION-109 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-109
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-109
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from standalone-DECISION distinction
+      15a (cycle 0): Searched for supporting literature → PARTIALLY-SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~8-day gap on splitting-vs-lumping ADR strategies.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-SUPPORTED finding stands. Splitting-on-substrate canonical.
+
+  Caveats: Substrate-decomposition prerequisite remains.
+
+  Recommendation: PARTIALLY-SUPPORTED (refreshed; carry forward prior recommendation)

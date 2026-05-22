@@ -7,7 +7,10 @@ source_title: "Future of Science and Technology Q&A (April 24, 2026)"
 source_url: https://livestreams.stephenwolfram.com/category/future-of-science-technology-qa/
 source_date: 2026-04-24
 searched_on: 2026-05-04
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-004
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

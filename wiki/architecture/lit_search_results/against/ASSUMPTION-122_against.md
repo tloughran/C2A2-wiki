@@ -1,0 +1,37 @@
+SEARCH-AGAINST-ASSUMPTION-122:
+  Date searched: 2026-05-14
+  Original item: ASSUMPTION-122
+  Original statement: "Eager-tier perspective-lattice content lives in vault at `wiki/Perspectives/` with structure-group tag (first-class wiki citizen)"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-122
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from perspective-lattice architecture pass
+      15b: Searched for counter-evidence on first-class extension without machinery audit
+    Current status: CHALLENGED
+
+  Sources:
+    1. Liskov & Wing (1994) substitution principle — extending machinery to a new entity type without checking sub-type covariance is a canonical correctness risk.
+    2. C2A2-internal: Sociogram and structure-group code paths were built assuming thinker / PRS schema — implicit schema dependencies likely.
+    3. Schema-evolution research (Cleve & Hainaut 2007) — implicit-schema extensions break silently; explicit audits are required.
+    4. Codd (1970) and modern type-vs-tag debates — tag-based typing flexibility comes at the cost of weaker invariants.
+    5. PRESUMPTION-155 paired — machinery-transfer audit gap.
+
+  Strength of challenge: Moderate
+
+  Summary: The "first-class citizen" framing presumes existing code paths will work for perspectives. But existing Sociogram and structure-group code was built for thinkers and PRS triplets; implicit schema dependencies are likely. Tag-based extension without an audit will produce silent breakage at code paths that assume thinker / PRS fields. The presumption-paired audit (PRESUMPTION-155) is exactly the missing step. Moderate challenge — the storage pattern is fine; the machinery-transfer is the load-bearing concern.
+
+  Specific risks: (a) Sociogram code paths break on perspectives; (b) Structure-group tag namespace collisions; (c) Eager-tier may be the wrong tier for some perspective content; (d) "First-class" creates expectations of full feature parity that may not hold.
+
+  Mitigations available: (a) Machinery-transfer audit before commitment; (b) Schema-introspection layer; (c) Graduated tier (eager for some perspectives, lazy for others); (d) Explicit feature-parity contract.
+
+  Recommendation: CHALLENGED (Moderate) — machinery-transfer audit is the load-bearing gap
+
+  STEELMAN:
+    Item: ASSUMPTION-122
+    Strongest counterargument: "First-class citizen" promises feature parity with existing first-class entities (thinkers, PRS triplets). But the existing machinery has implicit schema dependencies that were never documented. Extending without an audit produces silent breakage at code paths that assume thinker / PRS fields. The Liskov substitution principle is the canonical statement of this risk. The correct sequence is: machinery-transfer audit → schema-introspection layer → graduated tiering → feature-parity contract → commitment.
+    What would need to be true for C2A2 to be safe: (a) Machinery audit completed; (b) Schema dependencies surfaced and addressed; (c) Feature-parity contract explicit.
+    How to test: Walk every code path that touches thinker/PRS and check whether it handles perspective schema.

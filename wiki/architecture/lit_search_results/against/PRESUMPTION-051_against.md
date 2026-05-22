@@ -41,3 +41,38 @@ SEARCH-AGAINST-PRESUMPTION-051:
     Strongest counterargument: The claim would be defensible with an as-of label and a documented as-of convention. Without them, the digest emits a number that implicitly claims EOD completeness and silently isn't. This is a low-severity but high-visibility inaccuracy — Tom reads the digest and learns to trust that number or not; if he eventually notices it's wrong on overlap days, trust in the digest as a whole degrades. The fix is cheap (add a timestamp or delay the email) and the cost of *not* fixing it is a slow-burn trust erosion.
     What would need to be true for C2A2 to be safe: Add as-of labeling or delay until siblings complete; document the as-of convention; track whether Tom ever catches the inaccuracy.
     How to test: Over 4 weeks, sample the daily pending-proposal count at digest-send-time and again at midnight; measure the reconciliation delta on overlap days.
+
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-051 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-17
+  Original item: PRESUMPTION-051
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b→15a,15b→15c→15d→15a,15b→15c]
+    Original item: PRESUMPTION-051
+    Item type: PRESUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-05): re-triggered on weekly cadence; next_check 2026-05-12 elapsed
+      15b (cycle 1, 2026-05-17): re-searched for challenging literature
+    Current status: refresh; no new challenging literature surfaced this cycle.
+
+  Run context: Daily-pipeline drain of 15d-owned cohort (see SYSTEMIC-RISK-FLAG in lit_search_returns.md 2026-05-17 RUN section). 15d schedule failure since 2026-05-05.
+
+  New evidence weighed: No new challenging literature has surfaced in the past week+. The prior cycles' challenge profile stands.
+
+  Sources (new / refreshed): No new sources this cycle.
+
+  Strength of challenge: Unchanged from prior cycle.
+
+  Summary: Cycle-1 refresh confirms the prior cycle's finding. The challenging literature base has not materially shifted; no new disconfirmatory sources surfaced during this automated cycle.
+
+  Specific risks: Unchanged from prior cycle.
+
+  Mitigations available: Unchanged from prior cycle.
+
+  Recommendation: refreshed; carry forward prior recommendation

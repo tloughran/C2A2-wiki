@@ -1,0 +1,39 @@
+SEARCH-AGAINST-ASSUMPTION-135:
+  Date searched: 2026-05-15
+  Original item: ASSUMPTION-135
+  Original statement: "Meta-crafts (governance, project management, conflict resolution, facilitation, evaluation) committed as first-class traditions in perspective lattice, not policy layers"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-135
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Pathway 24 meta-crafts commitment
+      15b: Searched for counter-evidence on substantive/meta-craft boundary sharpness
+    Current status: PARTIALLY-CHALLENGED (Moderate)
+
+  Sources:
+    1. Schatzki (1996, 2002) "Social Practices" / "The Site of the Social" — practice theory blurs the meta/substantive distinction; all practices have meta-craft components and all meta-crafts have substantive content. The sharp boundary may be a category error.
+    2. Stout (2004) "Democracy and Tradition" — democratic governance is both meta-craft (regulating other practices) and substantive tradition (with its own goods); shows the categories are not clean.
+    3. Project management literature (PMBOK, Scrum, etc.) — PM is sometimes treated as toolkit/policy, sometimes as craft; the boundary is contested in practice.
+    4. Bourdieu (1977) "Outline of a Theory of Practice" — habitus and field theory: meta-craft and substantive craft are constituted relationally, not as types.
+    5. Counter-pattern: Treating meta-crafts as first-class adds N traditions to the perspective lattice without proportional benefit if the meta-crafts are themselves under-specified.
+    6. PRESUMPTION-171 paired — boundary cases (theology, political philosophy) treated as boundary-case-handling rather than foundational tension.
+    7. Conway's Law applied: organizing the lattice around meta-crafts will shape the system to reify the meta/substantive boundary that may not exist in the underlying domain.
+
+  Strength of challenge: Moderate
+
+  Summary: The meta-craft/substantive-craft distinction has substantive support in MacIntyre but is contested in adjacent practice-theory literature (Schatzki, Bourdieu, Stout). Boundary cases — theology (substantive doctrine + governance craft), political philosophy (substantive theory + meta-craft of public reasoning), evaluation (substantive standards + procedural craft) — are not boundary cases at all; they are the rule. The "first-class, not policy layers" framing is sound at MacIntyrean ideal-typing but risks under-specifying the actual structure of practice. PRESUMPTION-171 paired concern is the load-bearing audit item. Moderate challenge: not refuting the commitment, but flagging that the boundary requires ongoing arbitration, not bright-line specification.
+
+  Specific risks: (a) Boundary cases blur the lattice structure; (b) Adding 5 meta-craft traditions without proportional methodology specification produces shallow lattice extensions; (c) Reifying meta/substantive distinction may obscure how traditions actually work; (d) Recursive load (PRESUMPTION-180) — meta-crafts are reflective on substantive crafts, generating recursion that compounds.
+
+  Mitigations available: (a) PRESUMPTION-171 boundary audit (theology, political philosophy as test cases); (b) Treat meta-craft inclusion as provisional — first-pass slot in lattice with second-pass methodology specification; (c) Explicit recursive-depth bound (which meta-crafts apply reflectively to which substantive crafts); (d) Adopt Schatzki/Bourdieu relational framing internally even if MacIntyre framing is canonical externally.
+
+  Recommendation: PARTIALLY-CHALLENGED (Moderate) — commitment sound at MacIntyrean ideal-typing; boundary cases require ongoing arbitration; PRESUMPTION-171 audit is load-bearing
+
+  STEELMAN:
+    Item: ASSUMPTION-135
+    Strongest counterargument: "Meta-crafts as first-class traditions, not policy layers" presumes a sharp boundary between substantive crafts (those that have content) and meta-crafts (those that regulate other crafts). The practice-theory literature (Schatzki, Bourdieu) and the MacIntyre tradition itself (in Stout's reading) actually deny this boundary: all practices have meta-craft components (e.g., the practice of philosophy includes the practice of public reasoning), and all meta-crafts have substantive content (e.g., facilitation has substantive doctrine about good-faith engagement). The first-class commitment is right in the direction it points but wrong in the boundary it implies.
+    What would need to be true for C2A2 to be safe: (a) Boundary cases (theology, political philosophy) tested explicitly; (b) Meta-craft methodology specified before lattice instantiation; (c) Recursive-application bound documented.
+    How to test: Run a perspective-lattice synthesis on a theology + governance topic; observe whether the meta-craft/substantive split clarifies or muddles the analysis.

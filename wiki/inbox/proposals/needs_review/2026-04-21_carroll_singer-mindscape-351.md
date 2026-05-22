@@ -7,11 +7,17 @@ source_title: "Mindscape 351: Peter Singer on Maximizing Good for All Sentient C
 source_url: https://www.preposterousuniverse.com/podcast/2026/04/20/351-peter-singer-on-maximizing-good-for-all-sentient-creatures/
 source_date: 2026-04-20
 searched_on: 2026-04-21
-status: pending
+status: superseded
 tracked_by: agent-16
 tracked_on: 2026-05-05
 tracking_id: WATCH-001
+resolved_by: agent-16
+resolved_on: 2026-05-12
+resolution: condition-met
+superseded_by: inbox/proposals/pending/2026-04-21_carroll_singer-mindscape-351.md
 ---
+
+> [SUPERSEDED — Agent 16, 2026-05-14] This copy is the pre-resolution version. WATCH-001 was resolved on 2026-05-12: the Mindscape 351 transcript is now published and the proposal has been re-queued for re-review at `inbox/proposals/pending/2026-04-21_carroll_singer-mindscape-351.md` (with resolution annotations). The 2026-05-12 run did not delete this file (the bash sandbox lacks delete permission on the user's workspace). This stub marks the file as superseded so no agent or human treats it as a live needs_review item. Full provenance: `wiki/deferred/resolved/2026-05-12_WATCH-001.md`. Safe to delete manually.
 
 > [TRACKED-16: 2026-05-05] CHECK disposition recorded 2026-04-28. Tracked by Agent 16 as WATCH-001. Condition: Mindscape episode 351 transcript published (PRS-CANDIDATE-03 noted "specifics depend on transcript"). Check method: weekly fetch of source URL looking for in-page transcript markup. First check 2026-05-05: page fetched (332KB) but transcript markers not clearly identifiable in extracted JSON text (single-line JSON; could not decisively determine). Recording as INCONCLUSIVE. Next scheduled check: 2026-05-12.
 

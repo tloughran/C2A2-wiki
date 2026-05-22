@@ -1,0 +1,36 @@
+SEARCH-AGAINST-PRESUMPTION-194:
+  Date searched: 2026-05-18
+  Original item: PRESUMPTION-194
+  Original statement: "Branch-point-at-terminus presumed to be appropriate end-state for productive Chat sessions; may be Claude's accurate read OR generation-time artifact (Claude generates options rather than picking, deferring synthesis to Tom)."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-194
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15b: Searched for challenging literature
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Sparkling Logic 'LLMs in Decision Management' — LLMs can both generate and select; defaulting to generation-only is leaving capability on the table.
+    2. Towards Data Science 'Probabilistic Multi-Variant Reasoning' — LLMs can produce weighted options with selection rationale; the generation-without-selection default is one mode among several.
+    3. C2A2-internal Carpathi-instance-specific-validator cluster (PRESUMPTION-182) — pattern of single-validator dependencies that branch-point-at-terminus extends.
+
+  Strength of challenge: Weak-Moderate
+
+  Summary: Branch-point-at-terminus may be principled deferral or may be unmotivated option-dump. Distinguishing requires looking at whether Claude could have selected with criterion. Defaulting without checking is generation-time artifact, not accurate read.
+
+  Specific risks: (a) Bandwidth offload to Tom that could have been handled in-session; (b) accumulation of unselected options as cognitive debt; (c) joins single-validator cluster.
+
+  Mitigations available: (a) When Claude generates options, also generate selection-criterion or selection-rationale; (b) test in a few cases whether the deferral was principled.
+
+  Recommendation: CHALLENGED
+
+  STEELMAN:
+    Item: PRESUMPTION-194
+    Strongest counterargument: The strongest case: 'productive Chat session ends at branch point' may be true description, but its acceptance as appropriate end-state is the question. Some branch points are deferral; others are option-dump.
+

@@ -1,0 +1,38 @@
+SEARCH-AGAINST-PRESUMPTION-221:
+  Date searched: 2026-05-21
+  Original item: PRESUMPTION-221
+  Original statement: "The connectome is the right master-metaphor — neural/Hawkins structure presumed to transfer to narratives without a transfer-condition check."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15b]
+    Original item: PRESUMPTION-221
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred: the connectome/neural metaphor (Hawkins) is adopted as the master structuring metaphor for narratives with no explicit transfer-condition check.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E / REVISE-040 noted)
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Tallis (2011) "Aping Mankind"; Legrenzi & Umilta (2011) "Neuromania." — Sustained critique of importing neuro-frameworks where substrate/justification is absent; the "neuro-" prefix as unearned authority.
+    2. Bullmore & Sporns (2012) "The economy of brain network organization." — Connectome-specific measures assume wiring/metabolic cost constraints that narratives lack; transfer fails for those measures.
+    3. Telesford et al. (2011) small-worldness sensitivity; Fortunato & Barthelemy (2007) resolution limit. — Connectome metrics are null-model-fragile even within neuroscience.
+    4. The presumption's own gap: no transfer-condition check was performed; Gentner warns surface-label analogies without shared relational structure mislead.
+
+  Strength of challenge: Strong
+
+  Summary: The challenge is strong and load-bearing. The connectome metaphor does structural work for ALL downstream metrics (ASSUMPTION-201/202, PRESUMPTION-229), yet brain-specific measures depend on wiring/metabolic constraints absent in narrative graphs, several connectome metrics are fragile even in neuroscience, and no transfer-condition check exists. This is a designer-unaware presumption with high leverage.
+
+  Specific risks: An entire metric suite (integration, hubs, small-worldness, scaling) could be invalid or artifactual if the connectome analogy does not transfer.
+
+  Mitigations available: Run an explicit transfer-condition audit: list each connectome metric, state the brain assumption it relies on, accept only those whose assumptions hold for a curated narrative graph; prefer generic graph measures with stated null models.
+
+  Recommendation: CHALLENGED (strong)
+
+  STEELMAN:
+    Item: PRESUMPTION-221
+    Strongest counterargument: Network science is domain-general, but connectome neuroscience is not — its signature measures presuppose physical wiring economy and developmental constraints narratives lack; adopting 'connectome' rather than 'generic graph' as the master metaphor imports a battery of brain-specific, null-model-fragile metrics without checking a single transfer condition, so the metaphor may be generating structure rather than finding it.
+    What would need to be true for C2A2 to be safe: Only metrics whose underlying assumptions are independently justified for a narrative graph are used, each with an explicit null model.
+    How to test: For each metric, compare observed values against degree-preserving random null models on the narrative graph; metrics indistinguishable from null are artifacts.

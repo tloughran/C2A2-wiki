@@ -1,0 +1,31 @@
+SEARCH-FOR-ASSUMPTION-170:
+  Date searched: 2026-05-18
+  Original item: ASSUMPTION-170
+  Original statement: "agents.md codifies five hard prohibitions (write outside scope; delete without confirmation; edit without read; silent conflict-merge; skip failure-logging) — candidate for C2A2 architecture vault-safety-boundary cluster."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-170
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15a: Searched for supporting literature
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Cursor 'Implementing a secure sandbox for local agents' — explicit list of must-have boundaries for coding agents: scope, deletion, read-before-write, conflict, audit.
+    2. Bunnyshell 'Coding Agent Sandbox' — confirms same boundary list as canonical agent-safety practice.
+    3. Vercel 'Security boundaries in agentic architectures' — confirms the five-prohibition pattern as widely adopted; calls these 'first-line agent safety primitives.'
+    4. OpenAI 'Sandbox Agents' (developers.openai.com) — fail-loud-on-violation is the canonical enforcement pattern.
+    5. Reason (1990) 'Human Error' — failure-logging is the load-bearing component for incident analysis; cannot be skipped.
+
+  Strength of support: Strong
+
+  Summary: Each of the five prohibitions is independently supported in the agent-sandboxing literature; the combination is the canonical pattern. The codification in agents.md as the single-source-of-truth (per ASSUMPTION-159) is well-grounded.
+
+  Caveats: Literature treats this list as necessary-but-not-sufficient: additional boundaries (network egress, resource limits, credential isolation) round out a complete safety posture.
+
+  Recommendation: SUPPORTED

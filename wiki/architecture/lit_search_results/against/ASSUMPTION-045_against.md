@@ -41,3 +41,36 @@ SEARCH-AGAINST-ASSUMPTION-045:
     Strongest counterargument: The 60-day window is an unaudited hyperparameter masquerading as a policy. The literature on per-author variance strongly predicts that a single window under-fits prolific authors (Friston-class) and over-fits infrequent ones. Treating "no new material" as equivalent to "well-covered" imports the same null-as-success blind spot the system has already flagged as a cluster. The briefing-layer claim collapses two distinct claims (freshness and coverage-adequacy) into one unaudited shorthand.
     What would need to be true for C2A2 to be safe: Either (a) disaggregate the two claims and report them separately; (b) derive per-thinker windows from observed publication rates; (c) require cross-source coverage validation before the "well-covered" label is emitted.
     How to test: Run per-thinker coverage audit against a primary-source corpus for 4+ thinkers; measure false-positive rate of "well-covered" label on thinkers that actually had recent primary-source material outside the checked sources.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-045 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-045
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-045
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from briefing-layer coverage-freshness claim
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new challenging literature in the ~4-week gap. Per-author-variance and null-as-success concerns stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. Fixed-window-anti-pattern critique still applies.
+
+  Caveats: Cross-source validation would mitigate the source-blindspot risk.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

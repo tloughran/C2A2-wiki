@@ -1,0 +1,40 @@
+SEARCH-AGAINST-ASSUMPTION-183:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-183
+  Original statement: "FC26 abstract Revision-2 closed as submission-ready; corpus horizon stated as 'Day 100 of 308, full commentary by July 2026.'"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-183
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Surfaced from FC26-abstract editorial closure note
+      15a: Searched for supporting literature
+      15b: Searched for challenging evidence
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Buehler, R., Griffin, D., Ross, M., 1994. "Exploring the 'planning fallacy.'" J. Personality and Social Psychology 67(3) — canonical planning-fallacy literature: people systematically underestimate completion time, especially for long-horizon, novel, single-author projects. Day-100/308 with a fixed July 2026 date is a textbook planning-fallacy setup.
+    2. Kahneman, D., 2011. "Thinking, Fast and Slow." Farrar — ch. on the planning fallacy and reference-class forecasting; explicit recommendation that any long-horizon commitment include base-rate-derived slack.
+    3. Flyvbjerg, B., 2008. "Curbing optimism bias and strategic misrepresentation in planning." European Planning Studies 16(1) — reference-class forecasting evidence that "Day-N of M" claims without recovery budget underperform their stated dates by 1.3-3x routinely.
+    4. Lakens, D. & Evers, E., 2014. "Sailing from the Seas of Chaos into the Corridor of Stability." Perspectives on Psychological Science — when commitments lack pre-stated stop-rules or slack, ad-hoc revision becomes the norm and the original commitment loses signaling value.
+
+  Strength of challenge: Moderate
+
+  Specific risks:
+    - Closing as "submission-ready" with no articulated slack budget for missed cycles (and today's 2-cycle gap is already on the books, see ASSUMPTION-183/208 link) makes the July 2026 commitment fragile.
+    - Submission-ready closure should not double as a closure of the cadence-risk question; the two are separable.
+    - If the corpus horizon slips, the Day-100/308 commitment becomes a hostage to fortune cited against the project later.
+
+  Mitigations available:
+    - Add explicit slack budget: "tolerates N skipped cycles before commitment is reviewed."
+    - State a re-review trigger date (e.g., Day 150) rather than a single completion date.
+    - Decouple "abstract submission-ready" from "corpus-horizon commitment."
+
+  STEELMAN:
+    The strongest version is: closure with a stated horizon, even without slack budget, is a discipline improvement over open-ended commitment. As a pre-registration of intention it is valuable. The challenge is to the implied robustness of "Day 100 of 308, by July 2026" as if the horizon were a forecast rather than an aspiration. Re-cast as aspiration with conditions, it survives.
+
+  Recommendation: PARTIALLY-CHALLENGED

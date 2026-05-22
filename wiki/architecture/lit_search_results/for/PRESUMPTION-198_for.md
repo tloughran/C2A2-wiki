@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-198:
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-198
+  Original statement: "specialist-as-bridge-detector presumption; PROP-003 cross-tradition bridge claims to 5+ traditions are sole-source from Levin/Friston specialist without confirmation from receiving-tradition specialists."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-198
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — sole-source bridge-claim acceptance
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Weak-partial
+
+  Sources:
+    1. Lakatos, I. (1970). "Falsification and the Methodology of Scientific Research Programmes." — Allows that bridging hypotheses can originate in one programme and later receive cross-confirmation; partial support for accepting an initial sole-source claim as a candidate bridge.
+    2. Polanyi, M. (1966). "The Tacit Dimension." — Skilled judges in one domain can perceive resonances in another that are not immediately visible to specialists in the receiving domain; weak support for the specialist-as-bridge-detector role.
+    3. Klein, G. (1998). "Sources of Power." — Expert pattern-recognition can detect cross-domain analogies; conditional support if the specialist is calibrated in the receiving traditions.
+
+  Strength of support: Weak
+
+  Summary: There is limited support in philosophy-of-science and expert-cognition literature for the idea that a specialist in one tradition can detect bridges to others as a research hypothesis. Lakatos's research-programmes framework treats such bridging as a normal stage of theory development. But all this support treats the sole-source claim as a candidate or hypothesis, not as an established bridge. The presumption as stated (5+ tradition bridges accepted from a single specialist without receiving-tradition validation) goes well beyond what this literature supports.
+
+  Caveats: Support is for sole-source claims as candidates, not as confirmed bridges. The PROP-003 step from "candidate" to "claim" needs cross-validation.
+
+  Recommendation: PARTIALLY-SUPPORTED (only as candidate/hypothesis status, not as confirmed bridge)

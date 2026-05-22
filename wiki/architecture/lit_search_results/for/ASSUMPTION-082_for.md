@@ -29,3 +29,35 @@ SEARCH-FOR-ASSUMPTION-082:
   Caveats: (a) Layered architectures are well-supported in general, but specific layer boundaries are application-specific and need empirical validation; (b) the Tool #1 / Tool #2 urgency claim rests on Tom's prioritization without separate adjudication; (c) literature warns that layer abstractions tend to leak — the assumption presumes coherent layers without specifying isolation tests.
 
   Recommendation: SUPPORTED (architectural skeleton is canonical; specific layer assignments and urgency ranking inherit weaker individual support and warrant explicit validation)
+
+---
+
+SEARCH-FOR-ASSUMPTION-082 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-082
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-082
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from RC-Explorer architecture proposal
+      15a (cycle 0): Searched for supporting literature → SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~2-week gap on layered KM architectures.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate-Strong)
+
+  Summary: Prior SUPPORTED finding stands. Architectural skeleton remains canonical.
+
+  Caveats: Layer-assignment specifics still benefit from empirical validation.
+
+  Recommendation: SUPPORTED (refreshed; carry forward prior recommendation)

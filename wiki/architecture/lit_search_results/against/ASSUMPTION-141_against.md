@@ -1,0 +1,37 @@
+SEARCH-AGAINST-ASSUMPTION-141:
+  Date searched: 2026-05-15
+  Original item: ASSUMPTION-141
+  Original statement: "Evening cowork-to-chat browser delivery FAILED (Chrome MCP offline); degraded-mode protocol invoked (visible failure flag in summary header)"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-141
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-05-14 operational summary
+      15b: Searched for counter-evidence on recurring failure modes framed as credential issues
+    Current status: NO-CHALLENGE-FOUND on the assumption-as-stated; PARTIALLY-CHALLENGED (Weak) on the implicit framing
+
+  Sources:
+    1. The factual claim (Chrome MCP offline, degraded-mode invoked) is descriptive observation, not a claim that requires literature challenge.
+    2. PRESUMPTION-177 paired — the implicit framing ("Chrome MCP offline today, after one good day yesterday — likely credential") is the part that has literature challenge (Reason 1990, Allspaw, SRE).
+    3. Reason (1990) — recurring failure framed as user-level/credential cause masks system-level cause; "swiss cheese" model.
+    4. Allspaw (2009) — recurrence within one cycle indicates system-level cause, not user-level.
+    5. SRE practice — second consecutive incident of same type indicates an architectural failure mode; the "degraded-mode protocol invoked" is the right immediate response, but the recurrence framing in PRESUMPTION-177 is the load-bearing concern.
+
+  Strength of challenge: Weak (on the assumption as stated); literature concern is on PRESUMPTION-177
+
+  Summary: The assumption is a descriptive operational observation (Chrome MCP offline; degraded-mode invoked; flag visible) and the literature endorses the degraded-mode-with-visible-flag protocol (per 15a). The challenge is not on the assumption-as-stated but on the implicit framing it inherits from prior days: that this is a "credential issue" rather than a recurring architectural failure mode. That framing is contested by PRESUMPTION-177 paired (load-bearing). The factual claim itself is unchallenged.
+
+  Specific risks: (a) Implicit framing as credential issue rather than recurring architectural failure mode (PRESUMPTION-177 paired); (b) Degraded-mode-protocol-as-routine normalizes the failure mode; (c) Recurring failure without root-cause analysis.
+
+  Mitigations available: (a) Resolve PRESUMPTION-177 framing question; (b) Track Chrome-MCP failure rate; (c) Architectural review of Chrome-MCP dependency surface; (d) Fall-back path that doesn't depend on Chrome-MCP.
+
+  Recommendation: NO-CHALLENGE-FOUND on the assumption as stated; PARTIALLY-CHALLENGED on inherited framing (paired with PRESUMPTION-177)
+
+  STEELMAN:
+    Item: ASSUMPTION-141
+    Strongest counterargument: The assumption is a correct descriptive observation that the degraded-mode protocol was invoked. The challenge is not on this descriptive claim but on the broader narrative it slots into: that Chrome-MCP failures are credential-layer issues rather than architectural failure modes. PRESUMPTION-177 carries this challenge. The assumption itself is sound; the framing that surrounds it needs the audit.
+    What would need to be true for C2A2 to be safe: (a) PRESUMPTION-177 framing resolved; (b) Chrome-MCP failure rate tracked; (c) Architectural review of Chrome-MCP dependency.
+    How to test: Run Chrome-MCP-dependent task for 14 days; record failure rate; classify each failure as credential vs. architectural.

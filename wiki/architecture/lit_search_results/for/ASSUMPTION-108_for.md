@@ -27,3 +27,35 @@ SEARCH-FOR-ASSUMPTION-108:
   Caveats: (a) Upstream dependency: ASSUMPTION-098 is MONITOR-101, not yet INCORPORATE — circularity risk; (b) PRESUMPTION-106 from prior cycle flagged that canonization criterion is not self-evident — not yet resolved; (c) URGENT-this-week calendar pressure is not endorsed by ADR literature, which emphasizes implementation-paired canonization over calendar-paced commitment; (d) PRESUMPTION-134 (this cycle) is the paired challenge: failure-surface independence presumed for treating ASSUMPTION-108 / ASSUMPTION-109 as separate DECISIONs is itself questionable.
 
   Recommendation: PARTIALLY-SUPPORTED (Moderate) — recurrence-trigger pattern is canonical; structural caveat is upstream-dependency-not-yet-INCORPORATE plus PRESUMPTION-134 substrate-decomposition challenge
+
+---
+
+SEARCH-FOR-ASSUMPTION-108 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-108
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-108
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from URGENT-this-week canonization trigger
+      15a (cycle 0): Searched for supporting literature → PARTIALLY-SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~8-day gap on ITIL/SRE three-recurrence canonicalization.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-SUPPORTED finding stands. Recurrence-trigger pattern still canonical.
+
+  Caveats: Upstream-dependency and substrate-decomposition concerns persist.
+
+  Recommendation: PARTIALLY-SUPPORTED (refreshed; carry forward prior recommendation)

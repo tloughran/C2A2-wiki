@@ -29,3 +29,35 @@ SEARCH-FOR-ASSUMPTION-025:
   Caveats: Observer-dependent ontology remains contentious in philosophy. The physics support comes from theoretical frameworks that are themselves not yet empirically validated. The transfer from physics/philosophy to C2A2's computational context has not been validated. The literature supports the philosophical position but does not validate its application to multi-agent AI systems.
   
   Recommendation: PARTIALLY-SUPPORTED
+
+---
+
+SEARCH-FOR-ASSUMPTION-025 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-025
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-025
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from session — observer-dependent ontology claim
+      15a (cycle 0): Searched for supporting literature → PARTIALLY-SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new supporting literature in the ~5-week gap. Hoffman, relational QM, HoTT-RO, and closed-universe quantum gravity work remain the standing pro-citations; no major 2026 publication has shifted the balance.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-SUPPORTED finding stands. Observer-dependent ontology still has substantive theoretical backing within specific frameworks but is not consensus. Operationalization gap for C2A2 persists.
+
+  Caveats: Domain transfer from physics/philosophy to AI architecture remains unvalidated.
+
+  Recommendation: PARTIALLY-SUPPORTED (refreshed; carry forward prior recommendation)

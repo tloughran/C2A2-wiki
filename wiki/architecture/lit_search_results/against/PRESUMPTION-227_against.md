@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-227:
+  Date searched: 2026-05-21
+  Original item: PRESUMPTION-227
+  Original statement: "Cross-tab interaction uniformity outweighs per-view-optimal (3D-native) affordances."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15b]
+    Original item: PRESUMPTION-227
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred: the design presumes uniform interaction across tabs is preferable to per-view-optimal (e.g., 3D-native) affordances.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E / REVISE-040 noted)
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Grudin (1989) "The case against user interface consistency." — Consistency can harm usability when contexts differ; uniformity is not an unqualified good.
+    2. 2D vs 3D interaction affordances differ fundamentally (Hand 1997; Munzner on 3D pitfalls). — Camera control, occlusion, navigation; forcing 2D-style interaction onto a 3D view degrades it.
+    3. In-system corroboration: the zoom/blank-space bug in the 3D view. — Evidence that uniform interaction misfits the 3D context.
+
+  Strength of challenge: Moderate-Strong
+
+  Summary: Moderate-strong challenge: Grudin's classic argument shows consistency can be the wrong default when contexts genuinely differ, and 2D/3D views have fundamentally different interaction needs. The system's own zoom/blank-space bug corroborates that uniform interaction misfits the 3D view. Uniformity-as-priority is contestable; context-appropriateness may win for the 3D tab.
+
+  Specific risks: The 3D view remains awkward/buggy because it inherits 2D interaction defaults.
+
+  Mitigations available: Allow per-view affordances where dimensionality demands (3D camera/orbit); keep uniformity where it does not conflict; treat the zoom bug as a symptom.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: PRESUMPTION-227
+    Strongest counterargument: Grudin showed consistency is not an unconditional good, and 3D interaction has irreducibly different needs (orbit, depth, occlusion) than 2D; the live zoom/blank-space bug is the predicted symptom of forcing uniform interaction onto a dimensionally different view, so uniformity-as-priority is likely the wrong default for the 3D tab.
+    What would need to be true for C2A2 to be safe: Uniformity is kept only where it does not conflict with dimensional affordances, with 3D-native controls where it does.
+    How to test: Usability test 3D-native vs uniform controls on the 3D view; compare task time/errors and whether the zoom bug recurs.

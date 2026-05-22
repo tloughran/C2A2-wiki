@@ -2004,6 +2004,110 @@ ASSUMPTION-112:
       14a: Extracted from cowork-summary 2026-05-10 paragraph 4 SYSTEMIC-RISK #3 + "For Morning Discussion" item 3 as a stated architectural-recursive-self-observation claim.
     Current status: UNTESTED
 
+ASSUMPTION-113:
+  Date identified: 2026-05-12
+  Statement: Markup-anchor diagnostic for transcript-availability watches (transcript-toggle text + timecode + speaker labels co-occurrence) is the canonical default method; substring count of the bare word "transcript" produced false positives in the 2026-05-05 first check and should not be used. Method validated on its first application against WATCH-001 (Carroll/Singer Mindscape-351) and recommended for canonization as the default-for-transcript-availability-watches pattern.
+  Context: Cowork-to-chat summary 2026-05-12, paragraph "WATCH-001 RESOLVED" + Agent 16 run summary 2026-05-12: "the markup-anchor diagnostic method recommended after the inconclusive 2026-05-05 first check (...) worked on its first application." Reinforced in "For Morning Discussion" item 1: "the method recommendation (markup-anchor anchors rather than substring count) was the load-bearing fix... if other CHECK dispositions accumulate in coming weeks, the markup-anchor method recommendation should be canonized as a default-for-transcript-availability-watches pattern."
+  Type: methodological
+  Related decisions: DECISION-022 (Agent 16 deferred-action-monitor introduction), DECISION-024 candidate (specialist-task turn-cap), PRESUMPTION-095 (Phase-2 zero-result presumed exhaustion not method-failure)
+  Testability: testable empirically (track false-positive rate of markup-anchor vs. substring-count across N≥3 future transcript-availability CHECK dispositions; audit speaker-label coverage on non-Carroll-style podcast transcripts)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-113
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-12 WATCH-001 paragraph + Agent 16 run summary "method lesson preserved" as a stated canonical-method recommendation.
+    Current status: UNTESTED
+
+ASSUMPTION-114:
+  Date identified: 2026-05-12
+  Statement: The weekly-cadence / single-watch-item-over-7-days deferred-action-monitor protocol cadence itself is validated; WATCH-001's 2026-05-05 inconclusive-then-2026-05-12-resolved pattern shows the cadence worked. The load-bearing fix was the diagnostic method (ASSUMPTION-113), not the cadence — so cadence policy should not be revised on the basis of WATCH-001 alone.
+  Context: Cowork-to-chat summary 2026-05-12, "For Morning Discussion" item 1: "is the deferred-action-monitor protocol the right cadence (weekly check, single watch item over 7 days)? The 2026-05-05 inconclusive-then-2026-05-12-resolved pattern suggests the method recommendation (markup-anchor anchors rather than substring count) was the load-bearing fix; the cadence itself worked."
+  Type: methodological / governance
+  Related decisions: DECISION-022 (Agent 16 deferred-action-monitor introduction), ASSUMPTION-113 (markup-anchor method canonization), PRESUMPTION-143 (one-end-to-end-cycle protocol-validation gap)
+  Testability: testable empirically (track WATCH disposition latency across N≥3 future CHECK items; audit whether weekly cadence misses urgent items that would benefit from shorter cadence; compare against an alternative shorter-cadence pilot)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-114
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-12 "For Morning Discussion" item 1 as a stated cadence-validation claim with explicit method-vs-cadence root-cause attribution.
+    Current status: UNTESTED
+
+ASSUMPTION-115:
+  Date identified: 2026-05-12
+  Statement: PROP-2026-05-12-001 (Hoffman Edge.org "Hoffman's Law") is the cleanest single-page public framing of the Hoffman program in 2026, with two candidate PRS triplets (PRS-CANDIDATE-01 at Medium-High confidence, PRS-CANDIDATE-02 at Medium confidence) and six cross-tradition signals (Arkani-Hamed/Wolfram, Kastrup, Carroll, Levin, Stump, Friston). Treated as load-bearing content-architecture item for this week's review cycle.
+  Context: Cowork-to-chat summary 2026-05-12, paragraph 2 + "For Morning Discussion" item 2: "PROP-2026-05-12-001 is the cleanest single-page public framing of the Hoffman program in 2026. Two PRS candidates with Medium-High and Medium confidence."
+  Type: empirical / content-architecture
+  Related decisions: ASSUMPTION-100 (Saturday Wolfram three-way ontological convergence as week's highest-leverage cross-tradition signal — comparable framing), PRESUMPTION-141 (single-page-consolidation-as-virtue), PRESUMPTION-119 (single-axis leverage measurement)
+  Testability: testable empirically (track whether PROP-2026-05-12-001 produces more downstream cross-tradition signals than the average proposal over 30 days post-review; audit "cleanest single-page" claim against prior Hoffman Edge.org / podcast / paper sources for consolidation comparison)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-115
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-12 paragraph 2 + "For Morning Discussion" item 2 as a stated superlative claim about content-architecture importance.
+    Current status: UNTESTED
+
+ASSUMPTION-116:
+  Date identified: 2026-05-12
+  Statement: PRS-CANDIDATE-01 of PROP-2026-05-12-001 reframes the TOE project itself — Hoffman's Law is treated as methodological precondition (not competing alternative) to physics-side TOEs (Arkani-Hamed, Wolfram, Carroll). If accepted into the network, this changes how cross-tradition signals to those three traditions are read going forward: they become pre-foundational rather than peer programs at the same level. The reframing is structurally significant for the master network and warrants a Pattern Detector deep-pass before standard review (similar to the Wolfram pair from ASSUMPTION-100).
+  Context: Cowork-to-chat summary 2026-05-12, paragraph 2: "PRS-CANDIDATE-01 reframes the TOE project itself (Hoffman's Law as methodological precondition, not alternative, to physics-side TOEs)." Reinforced in "For Morning Discussion" item 2: "The PRS-CANDIDATE-01 reframing of the TOE project (Hoffman's Law as methodological precondition rather than competing alternative) is structurally significant — if accepted, it changes how cross-tradition signals to Arkani-Hamed/Wolfram/Carroll are read going forward (they become pre-foundational rather than peer programs). Worth thinking about whether this candidate triplet warrants a Pattern Detector deep-pass before standard review, similar to the Wolfram pair from ASSUMPTION-100."
+  Type: architectural / content-architecture
+  Related decisions: ASSUMPTION-100 (Saturday Wolfram cross-tradition signal precedent), ASSUMPTION-115 (PROP-2026-05-12-001 cleanest-public-framing claim), PRESUMPTION-142 (one-way reframing without inverse acceptance check)
+  Testability: testable via literature (whether established TOE projects (Arkani-Hamed, Wolfram, Carroll) explicitly accept or reject the pre-foundational placement; whether the methodological-precondition framing has prior articulation in philosophy-of-physics literature); testable empirically (do specialist re-reads of Arkani-Hamed/Wolfram/Carroll under the reframed lens produce different cross-tradition signals than under the peer-program lens?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-116
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-12 paragraph 2 + "For Morning Discussion" item 2 as a stated structural-reframing claim with explicit downstream consequence.
+    Current status: UNTESTED
+
+ASSUMPTION-117:
+  Date identified: 2026-05-12
+  Statement: The 14a/14b skipped-EOD-slot pattern (now at 5 consecutive misses including today's pre-overnight-fire state and the unfired 2026-05-11 slot) has satisfied the ASSUMPTION-098 three-recurrence governance threshold for DECISION-NNN canonization in its own right and should fold into the same DECISION as the per-task verification protocol from PRESUMPTION-138. This is the second concrete activation of ASSUMPTION-098's stated canonization protocol (after ASSUMPTION-108).
+  Context: Cowork-to-chat summary 2026-05-12, "For Morning Discussion" item 5: "The 14a/14b skipped-EOD-slot pattern is approaching three-recurrence governance threshold under ASSUMPTION-098 in its own right. If today is the 5th consecutive miss (we'll know in the morning), that's well past the canonization trigger and should fold into the same DECISION as the per-task verification protocol from PRESUMPTION-138." Reinforced in the opening box: "the 5th consecutive day at its EOD slot — past PRESUMPTION-138's threshold."
+  Type: governance / methodological
+  Related decisions: ASSUMPTION-098 (three-recurrence threshold), ASSUMPTION-108 (DECISION-027 scope extension URGENT-this-week — first activation), ASSUMPTION-109 (cowork-to-chat sync standalone DECISION — second activation), PRESUMPTION-138 (in-flight-task verification gap), PRESUMPTION-124 (per-task evidence frame)
+  Testability: testable empirically (track whether DECISION-NNN is actually canonized within the URGENT-this-week window from today; audit cumulative count of governance-threshold-satisfied items vs. canonized DECISIONs over next 3 cycles); testable via process (compare with ASSUMPTION-108 / ASSUMPTION-109's canonization-lag trajectory)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-117
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-12 "For Morning Discussion" item 5 + opening box as a stated governance-trigger-activation claim. Second concrete activation of ASSUMPTION-098.
+    Current status: UNTESTED
+
+ASSUMPTION-118:
+  Date identified: 2026-05-12
+  Statement: Token-based delegation workflow redesign for the chat-scrape sign-in barrier is now operationally warranted — 6 consecutive failed days via the same blocker, and PREMISE-015's operational caveat explicitly states the workflow itself must be redesigned. First step proposed: enumerate candidate connector/OAuth options against the actual claude.ai surface; longer-term consideration whether wiki-side tooling should pivot to a file-based handoff via the workspace folder (both directions) rather than chat-UI scraping at all.
+  Context: Cowork-to-chat summary 2026-05-12, "For Morning Discussion" item 6: "Token-based delegation workflow redesign for the chat-scrape sign-in barrier — this is now 6 consecutive days failed via the same blocker, and PREMISE-015's operational caveat explicitly states the workflow itself must be redesigned. Suggested first step: enumerate the candidate connector/OAuth options available against the actual claude.ai surface, even just to scope what 'token-based delegation' would look like operationally. The morning walk is a good place to think about whether the wiki-side tooling should pivot to a different sync mechanism entirely (file-based handoff via the workspace folder both ways, rather than scraping the chat UI)."
+  Type: architectural / operational
+  Related decisions: PREMISE-015 (user-privacy / no-password-delegation), ASSUMPTION-105 (user-privacy login prohibition), ASSUMPTION-109 (cowork-to-chat sync standalone DECISION candidate), PRESUMPTION-125 (4th-consecutive cowork-to-chat sync failure), PRESUMPTION-145 (chat-scrape framed as token-delegation problem rather than mechanism-existence question)
+  Testability: testable empirically (track whether a token-based path is actually scoped within the URGENT-this-week window; pilot a file-based-handoff alternative as a parallel scope-test); testable via process (audit prior connector/OAuth options enumeration efforts for unblocking precedents)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-118
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-12 "For Morning Discussion" item 6 as a stated operational-redesign claim, building on PREMISE-015 INCORPORATEd 2026-05-11.
+    Current status: UNTESTED
+
+Key event (2026-05-12): Six new assumptions extracted on a Tuesday whose dominant signature was three concurrent structural events: (1) Agent 16 closed its first end-to-end resolution cycle (WATCH-001 RESOLVED, active watch list empty for first time since 2026-05-05), (2) first Hoffman pending since the sewing-agent flag (PROP-2026-05-12-001 "Hoffman's Law" — six cross-tradition signals, TOE-reframing PRS candidate), and (3) Summa-side shipping plus SUMMA_EXPLORER_IMPROVEMENTS planning doc capture. Today's six new items cluster in three families. **(1) DEFERRED-ACTION-MONITOR METHOD CANONIZATION cluster** — ASSUMPTION-113 (markup-anchor diagnostic as canonical default for transcript-availability watches) and ASSUMPTION-114 (weekly cadence validated; method-not-cadence is the load-bearing fix per WATCH-001). The cluster operationalizes Agent 16's first end-to-end resolution into method-vs-cadence root-cause attribution. **(2) HOFFMAN-PROPOSAL CONTENT-ARCHITECTURE cluster** — ASSUMPTION-115 (PROP-2026-05-12-001 as cleanest single-page Hoffman-program framing in 2026) and ASSUMPTION-116 (PRS-CANDIDATE-01 reframes Arkani-Hamed/Wolfram/Carroll as pre-foundational rather than peer programs; warrants Pattern-Detector deep-pass per ASSUMPTION-100 precedent). The cluster is today's standalone content-architecture pair — the first since ASSUMPTION-100 / ASSUMPTION-082 paired Wolfram and the L1/L2/L3 RC Explorer architecture. **(3) GOVERNANCE-TRIGGER + REDESIGN-MANDATE cluster** — ASSUMPTION-117 (14a/14b skipped-EOD-slot pattern satisfies ASSUMPTION-098 three-recurrence threshold; second concrete activation of stated canonization protocol after ASSUMPTION-108) and ASSUMPTION-118 (token-based delegation workflow redesign mandated; 6-consecutive-failure threshold met against PREMISE-015's explicit redesign-required caveat). The cluster extends 2026-05-10's GOVERNANCE-TRIGGER-ACTIVATION sub-signature with a second activation of the same protocol — and adds the first PREMISE-015-grounded operational-redesign mandate. Pattern note: today's 6 assumptions are dominated by methodological / governance items (4 of 6: 113, 114, 117, 118) plus 2 content-architecture items (115, 116) — extending the methodological-heavy signature of operational-throughput days while also producing the first paired content-architecture commitments since 2026-05-09. Today's 10-to-6 presumption-to-assumption ratio (1.67:1) is the new joint-record (tying nothing prior; exceeding 2026-04-27 / 2026-05-08 / 2026-05-09 record of 1.5:1) — the deferred-action-cycle + cross-tradition-reframing + governance-trigger character generates a higher-than-average density of unstated dependencies relative to stated commitments. Note: today's run also picks up the 2026-05-11 EOD slot which was skipped (no 2026-05-11 changelog on disk); per ASSUMPTION-117 / PRESUMPTION-138 framing, the carry-forward is acknowledged but not backfilled.
+
 Key event (2026-05-10): Nine new assumptions extracted on a Sunday whose dominant signature was three concurrent first-occurrences (first-ever Rohr ×2 + Wright ×3 pending proposals + first weekly sewing-agent run) plus a clean self-awareness lit-search drain (9 MONITOR + 11 REVISE + 0 INCORPORATE; densest-cycle structural pattern from 2026-05-09 replicated) plus a 5th-consecutive failed evening cowork-to-chat delivery (sign-in-redirect after the "normal windows" failure mode resolved this evening for the first time in 2 days). Today's nine new items cluster in four families. **(1) DAY-SHAPE + LOGIN-PROHIBITION cluster** — ASSUMPTION-104 (day-shape characterization with three concurrent-firsts), ASSUMPTION-105 (user-privacy rules prohibit password-based login as binding operating constraint surfacing as 5th-consecutive failure cause). **(2) DISPOSITION-PATTERN-AS-EPISTEMIC-WEIGHT cluster** — ASSUMPTION-106 (ASSUMPTION 0/8 REVISE rate stable across 2 cycles confirms operational/diagnostic-pattern characterization), ASSUMPTION-107 (92% PRESUMPTION REVISE rate as record-density disposition signal). The cluster generalizes ASSUMPTION-073's REVISE-heuristic into a cross-cycle disposition-by-item-type pattern. **(3) GOVERNANCE-TRIGGER-ACTIVATION cluster** — ASSUMPTION-108 (DECISION-027 scope extension URGENT-this-week per ASSUMPTION-098 three-recurrence threshold satisfied at N=5/30 days), ASSUMPTION-109 (PRESUMPTION-125 4th-recurrence requires standalone DECISION canonization distinct from DECISION-027). The cluster operationalizes yesterday's stated canonization protocol (ASSUMPTION-098) for the first time. **(4) NEW-METRIC + BLOCKING + SELF-MEASUREMENT cluster** — ASSUMPTION-110 (sewing agent canonical inaugural connectivity baseline 766/2/17/785), ASSUMPTION-111 (Wright/Rohr first-ever pendings blocking N=13 expansion via DECISION-026 precondition chain), ASSUMPTION-112 (SELF-MEASUREMENT Goodhart cluster confirmed as architectural recursive-self-observation pattern across two consecutive cycles at 0% INCORPORATE). The cluster combines a brand-new metrics primitive (connectivity), a new blocking-relationship claim (N=13 expansion gated by 5 pendings), and the day's headline architectural-recursive item (the system surfacing its own Goodhart-failure-candidate). Pattern note: today's 9 assumptions are dominated by methodological / metrics items (5 of 9: 104, 106, 107, 110, 112) plus 2 governance items (108, 109) — extending the methodological-heavy signature of operational-throughput days with a new governance-trigger-activation sub-signature for the first time. Today's 12-to-9 presumption-to-assumption ratio (1.33:1) is moderate — below 2026-04-27 / 2026-05-08 / 2026-05-09 record (1.5:1) but above 2026-05-05's 1.22:1. The execution-day character (clean lit-search drain + sewing-agent first-run + Wright/Rohr first-pendings + 5th-consecutive evening failure) generates both novel content-architecture commitments (ASSUMPTION-110, 111, 112 all introduce architectural primitives) and operational-principle articulations (ASSUMPTION-104, 105, 108, 109).
 
 Key event (2026-05-09): Eight new assumptions extracted on a Saturday lit-search-disposition + Saturday-Wolfram + self-awareness-backfill day whose primary architectural signal was the lit-search 15a/15b/15c pipeline producing four SYSTEMIC-RISK flags in a single cycle (the densest single cycle on record), three of them recurrence flags. Today's eight new items cluster in three families. **(1) Lit-search-cycle-output epistemic-weight cluster** — ASSUMPTION-096 (4-SYSTEMIC-RISK density warrants cluster-level remediation), ASSUMPTION-098 (third-recurrence at fixed-cycle cadence as canonization threshold), ASSUMPTION-099 (DECISION-027 scope extension to external-tool-review layer). All three were surfaced from today's lit-search returns and the cowork-to-chat summary's "For Morning Discussion" items 1–2 questioning Tom's input on cluster-level disposition. **(2) Architectural-sprint and cross-tradition-signal cluster** — ASSUMPTION-097 (Three-recurrence discipline cluster bundleable as "Core Operational Discipline" sprint) and ASSUMPTION-100 (Saturday Wolfram three-way ontological convergence as week's highest-leverage cross-tradition signal) articulate two prioritization commitments — one for architectural-discipline track, one for content-architecture track. **(3) Operational-baseline cluster** — ASSUMPTION-101 (Chrome MCP "normal windows" error as environment-state issue, not Chrome-MCP defect, per Codex-style diagnostic), ASSUMPTION-102 (20-item EOD-batch single-cycle drain as operational baseline), ASSUMPTION-103 (today's 8-task fire-rate as positive evidence against daemon-link-count regression for THIS task). The cluster generalizes ASSUMPTION-072's single-cycle-drain claim, articulates a Chrome-MCP root-cause attribution, and locks in a per-task evidence frame for the daemon-bug hypothesis. Pattern note: today's 8 assumptions are dominated by methodological / metrics items (5 of 8: 096, 097, 098, 102, 103) — extending the methodological-heavy signature of operational-throughput days (2026-04-21, 2026-04-27, 2026-05-05, 2026-05-08). Today's standalone empirical/infrastructure item is ASSUMPTION-101 (Chrome-MCP environment-state attribution), the lit-search-disposition character generates more *cycle-output-articulation* than *content-architecture* claims — except for ASSUMPTION-100 (Saturday Wolfram cross-tradition signal) which is the day's standalone content-architecture item with cross-tradition bearing. Today's 12-to-8 presumption-to-assumption ratio (1.5:1) ties 2026-04-27 and 2026-05-08 as joint-record. The execution surface today was unusually clean (8/8 scheduled tasks fired, lit-search drained 100% in one cycle, self-awareness-backfill closed yesterday's surface), inverting yesterday's three-stall-day pattern.
@@ -2013,3 +2117,1595 @@ Key event (2026-05-08): Eight new assumptions extracted on a Friday review-decis
 Key event (2026-05-05): Nine new assumptions extracted on a daemon-catch-up Tuesday whose primary architectural signal was all six weekday-assigned C2A2 specialist agents executing in a single 15:35–16:35 UTC window after Tom's Claude restart cleared the daemon outage. Today's nine new items cluster in four families. **(1) Daemon-bug discovery cluster** — ASSUMPTION-080 (link count > 1 fires; link count = 1 silently skips, an Anthropic-side bug), ASSUMPTION-081 (`update_scheduled_task --fireAt` is a working workaround), ASSUMPTION-079 (same-day catch-up of all six weekly specialist runs is treated as functionally equivalent to spread-across-week distribution). All three surfaced from the Summa-updating-agents session (local_40871db5) Tom-facing diagnosis. **(2) Vision-articulation cluster** — ASSUMPTION-082 (3-layer RC Explorer architecture with 5 integration steps; Community Explorer = Tool #1; AI Heartbeat = Tool #2 urgent rebuild) is the day's most consequential architectural item: it is the first time the L1/L2/L3 model with explicit integration steps has been recorded as a stated assumption. ASSUMPTION-083 (filter semantics: within section = OR, across sections = AND, edges require both endpoints visible) is a UX-spec articulation surfaced by the explorer help-popover review. **(3) Specialist-output norms cluster** — ASSUMPTION-084 (empty-handed orchestrator Phase 2 = valid result not failure mode), ASSUMPTION-085 ("FROM thinker himself" quality filter operative across all specialist slots; Hawkins 0-proposal honest-null re-affirmed), ASSUMPTION-086 (specialist-self-claims of "strongest bridge / candidate shared substrate / parallels C2A2 architecture" treated as primary cross-tradition signal without an adjudication step) extend the BRIEFING-LAYER-EPISTEMIC-COMMITMENTS pattern to the specialist-output layer. ASSUMPTION-086 is in tension with PRESUMPTION-074's prior SYSTEMIC-RISK flag on specialist-recognition reliability. **(4) Institutional-maturity entry mode** — ASSUMPTION-087 (TRACE Institute launch as research-program-level alliance signal) introduces a new proposal-type granularity beyond paper-level. Pattern note: today's 9 assumptions are dominated by methodological items (6 of 9: 079, 080, 081, 084, 085, 086) — continuing the methodological-heavy signature of operational-throughput days (2026-04-21, 2026-04-27). The execution-day character (daemon catch-up + 6 specialist runs + walk-thread architectural articulation) again generates more *operational-principle-articulation* than *content-architecture* claims — except for ASSUMPTION-082 which is the day's standalone architectural item.
 
 Key event (2026-04-27): Eight new assumptions extracted on an execution-heavy Monday whose primary architectural signal was the C2A2 lit-search pipeline draining the 5-day backlog (58 items processed; 19 new + 39 re-triggered) and INCORPORATING ASSUMPTION-068 → PREMISE-012 and ASSUMPTION-069 → PREMISE-013. Today's eight new items cluster in three families: **(1) infrastructure-gap normative articulation** — ASSUMPTION-071 (browser-auth as agent-prohibited; first explicit two-instance same-day articulation across morning chat scrape + evening sync) and ASSUMPTION-078 (two parallel sandbox-infrastructure failure modes today, both treated as user-fixable) extend the OPEN-039 sandbox-infrastructure-escalation cluster from yesterday with a third channel (auth) that joins egress and mount-topology. **(2) lit-search pipeline self-articulation** — ASSUMPTION-072 (5-day backlog drainable in single cycle), ASSUMPTION-073 (PRESUMPTION + strong-challenge → REVISE heuristic explicit), and ASSUMPTION-074 (no-new-evidence carry-forward as PREMISE-006-extension to refresh case) form a new LIT-SEARCH-LAYER-EPISTEMIC-COMMITMENTS cluster, parallel to the BRIEFING-LAYER cluster (ASSUMPTION-046, 047, 048, 057, 058, 059, 060). **(3) design-project authorial reframing** — ASSUMPTION-076 (PRS triplets are Tom's re-description, not tradition's self-voice; "PRS-NN in the Stump-tradition wiki" not "Stump's PRS-NN") and ASSUMPTION-077 (synthesis-to-transcript ±5% policy) are direct Tom-stated commitments from the continuing design-project session. ASSUMPTION-076 has high downstream consequence: it recasts the ground beneath ASSUMPTION-067 (Stump-as-supplier-of-live-metaphysics) — if PRS triplets are Tom's framing, the specialist's reading of Stump-via-PRS is reading Tom's frame back to itself (see PRESUMPTION-089 for the recursive-reading risk). **(4) specialist cadence override** — ASSUMPTION-075 (Levin "significant work not yet captured" criterion overrides 30-day window) is the first explicit specialist-level deviation from the cadence rule, surfaced from today's Monday Levin+Friston specialist slot. Pattern note: today's 8 assumptions are dominated by methodological items (5 of 8: 071, 072, 073, 074, 077; 078 partial) — a return to the methodological-heavy signature of 2026-04-21 after Sunday's architectural/empirical signature. The execution-day character (pipeline drain + scheduled-task throughput) generates more *operational-principle-articulation* than *content-architecture* claims.
+
+ASSUMPTION-119:
+  Date identified: 2026-05-13
+  Statement: The seventeen-pathway architectural inventory (Pathway 00 Broker through Pathway 17 Agent as Developed Participant) plus a living index (`pathways.md`) plus two held bright pins (AI personhood under conscious-realist-monism; half-million-word podcast transcript corpus) constitutes the first end-to-end articulation of the C2A2 system Tom intends to demo at ISME July 8-10 and continue developing publicly afterward. Six pathways are explicitly marked ISME-critical: 00 Broker, 01 Voice Dialogue, 02 Ambient Viz, 03 Probing Channel, and 08 Prepared Presentation (with tightening of the demo through 04 / 06 / 14).
+  Context: Cowork-to-chat summary 2026-05-13, "What Was Accomplished Today" paragraph 1: "Wednesday 2026-05-13 was an architectural-pathway discovery day... produced 17 architectural pathway documents (`00_broker.md` through `17_agent_developed_participant.md`) plus a living index (`pathways.md`) plus a 44 KB source-dialogue archive... Six pathways are marked ISME-critical: 00 Broker, 01 Voice Dialogue, 02 Ambient Viz, 03 Probing Channel, and 08 Prepared Presentation." Reinforced in "For Morning Discussion" item 1: "The 17-pathway inventory is the architectural milestone of the project so far."
+  Type: architectural / methodological
+  Related decisions: DECISION-026 (candidate — broker hosting), DECISION-027 (candidate — Twilio SMS one-tap), DECISION-028 through 031 (candidate — pathway-doc decisions), OPEN-040 (candidate — ISME demo build sequence), PRESUMPTION-150, PRESUMPTION-151
+  Testability: testable empirically (audit whether the 17-pathway inventory survives ISME demo as a stable architectural commitment, or whether subsequent sessions produce items NOT covered by the inventory; track ISME-critical-subset coverage of demo content); testable via process (compare pathway-doc commitment-weight against decisions.md canonization-weight over N≥3 future architectural commits)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-119
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-13 paragraph 1 + "For Morning Discussion" item 1 as the canonical day-shape characterization for the pathway-inventory milestone.
+    Current status: UNTESTED
+
+ASSUMPTION-120:
+  Date identified: 2026-05-13
+  Statement: Cloudflare Workers is the chosen broker hosting platform, conditional on streaming-latency validation: ~10-30 ms broker-side edge overhead is presumed dwarfed by LLM + TTS provider latency floors; the paid plan ($5/mo) gives 30 s CPU + unlimited requests. Fallback to AWS Lambda + ALB is noted in Pathway 00 if first-token latency exceeds ~200 ms in the validation test.
+  Context: Cowork-to-chat summary 2026-05-13, "Key Decisions Made" + Pathway 00 (Broker) decision record: "Broker hosting: Cloudflare Workers (conditional on streaming-latency validation). Edge-distributed; ~10-30 ms broker-side overhead is dwarfed by LLM + TTS provider latency. Paid plan ($5/mo) gives 30 s CPU + unlimited requests." Validation test specified in "What's Next" item 4: "round-trip a single 1-token Claude streaming call through a Worker stub from a coffee-shop wifi connection and from the Notre Dame campus network; measure first-token latency. If under ~200 ms, decision is unconditional."
+  Type: architectural / operational
+  Related decisions: DECISION-026 (candidate — broker hosting on Cloudflare Workers), Pathway 00 (Broker), OPEN-040 (candidate — Cloudflare-Workers-vs-AWS-Lambda streaming-latency conditional), PRESUMPTION-152
+  Testability: testable empirically (run the 30-minute streaming-latency test from coffee-shop wifi + Notre Dame campus network; measure first-token latency distribution; audit "dwarfed by" claim against measured LLM-side and TTS-side latency floors); testable via literature (edge-vs-region-hosted broker latency profiles for streaming LLM/TTS workloads)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-120
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-13 "Key Decisions Made" + Pathway 00 decision record as a stated operational-platform commitment with explicit conditional and fallback.
+    Current status: UNTESTED
+
+ASSUMPTION-121:
+  Date identified: 2026-05-13
+  Statement: Phone confirmation for external-escalation gating uses Twilio SMS one-tap signed link (NOT reply-keyword). Rationale: "no typing at the moment of approval"; webhook co-located on the same Cloudflare Worker as the broker. This frames external-escalation human-in-the-loop as a single-tap-on-mobile primitive.
+  Context: Cowork-to-chat summary 2026-05-13, "Key Decisions Made" + Pathway 00: "Phone confirmation for external-escalation gating: Twilio SMS one-tap signed link (not reply-keyword). No typing at the moment of approval. Webhook co-located on the same Cloudflare Worker as the broker."
+  Type: architectural / UX / operational
+  Related decisions: DECISION-027 (candidate — Twilio SMS one-tap), Pathway 00 (Broker), Pathway 12 (Community Outreach Automation), PRESUMPTION-153, PRESUMPTION-154
+  Testability: testable empirically (pilot the SMS one-tap flow against a sample of external-escalation events; measure approval latency, false-tap rate, signed-link integrity); testable via process (audit signed-link security against an adversarial-token-replay attack model)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-121
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-13 "Key Decisions Made" + Pathway 00 as a stated UX commitment with explicit alternative (reply-keyword) rejected on a stated rationale.
+    Current status: UNTESTED
+
+ASSUMPTION-122:
+  Date identified: 2026-05-13
+  Statement: Eager-tier perspective-lattice content lives in the vault at `wiki/Perspectives/` with a Perspectives structure-group tag, making perspective lattices first-class wiki citizens (Sociogram-retrievable; addressable by the voice agent during dialogue) rather than ephemeral cache artifacts.
+  Context: Cowork-to-chat summary 2026-05-13, "Key Decisions Made" pathway-doc decision (i): "Perspectives in vault: eager-tier perspective-lattice content lives at `wiki/Perspectives/` with a structure-group tag (first-class wiki citizens)."
+  Type: architectural
+  Related decisions: DECISION-028 (candidate — Perspectives in vault), Pathway 04 (Perspective Lattice), PRESUMPTION-155
+  Testability: testable empirically (audit whether eager-tier content actually emerges as a stable Perspectives folder structure post-implementation; track Sociogram-retrieval rate of perspective-lattice content vs. non-lattice content); testable via process (compare vault-as-first-class against ephemeral-cache alternatives for retrieval-latency and consistency-of-reference)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-122
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-13 "Key Decisions Made" + Pathway 04 as a stated content-location decision with explicit first-class-citizen framing.
+    Current status: UNTESTED
+
+ASSUMPTION-123:
+  Date identified: 2026-05-13
+  Statement: Whiteboard plots (Pathway 05) are ephemeral by default with a "Pin this" promotion-to-vault primitive and per-plot export buttons (PNG / SVG / HTML / CSV / PDF). The default-ephemeral / opt-in-persistence policy treats plot-output as a transient by-product of conversation unless explicitly promoted.
+  Context: Cowork-to-chat summary 2026-05-13, "Key Decisions Made" pathway-doc decision (ii): "Whiteboard ephemerality: plots are ephemeral by default with 'Pin this' promotion to vault and per-plot export buttons (PNG / SVG / HTML / CSV / PDF)."
+  Type: architectural / UX
+  Related decisions: DECISION-029 (candidate — whiteboard ephemerality), Pathway 05 (Whiteboard), PRESUMPTION-156
+  Testability: testable empirically (track pin-rate vs. plot-output-rate over N≥4 weeks of operation; audit whether ephemeral-by-default produces under-retention of valuable plots that the user later wishes to recover); testable via process (compare against an opposite-default ("persistent by default, swipe to discard") UX with the same primitives)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-123
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-13 "Key Decisions Made" + Pathway 05 as a stated UX-default decision with explicit promotion primitive.
+    Current status: UNTESTED
+
+ASSUMPTION-124:
+  Date identified: 2026-05-13
+  Statement: Generative-canvas (Pathway 06) library set is D3 + three.js + Plotly + bare canvas/WebGL. This enumeration is treated as the working library catalog the code-writing agent generates against for custom on-request visualization.
+  Context: Cowork-to-chat summary 2026-05-13, "Key Decisions Made" pathway-doc decision (iii): "Generative-canvas library set: D3 + three.js + Plotly + bare canvas/WebGL." Pathway 06 frontmatter reinforces.
+  Type: architectural / tooling
+  Related decisions: DECISION-030 (candidate — generative-canvas library set), Pathway 06 (Generative Canvas), PRESUMPTION-157
+  Testability: testable empirically (track gaps where the generative agent reaches outside the enumerated set during real demos; track library-substitution rate over N≥4 weeks); testable via literature (compare against Observable Plot, deck.gl, regl, vega-lite as omitted alternatives — what are their relative strengths for the generative-canvas use case?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-124
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-13 "Key Decisions Made" + Pathway 06 as a stated library-catalog decision.
+    Current status: UNTESTED
+
+ASSUMPTION-125:
+  Date identified: 2026-05-13
+  Statement: Unsaid-edges scoring (Pathway 07) uses two filters — how-often (frequency of mention) × how-important (weight of mention) — with the Low × High quadrant (rarely mentioned but important when mentioned) visually emphasized as the strongest research-program candidate. This is a normative scoring commitment baked into the visualization itself.
+  Context: Cowork-to-chat summary 2026-05-13, "Key Decisions Made" pathway-doc decision (iv): "Unsaid-edges scoring: two filters (how-often × how-important); Low × High visually emphasized as the strongest research-program candidate."
+  Type: methodological / architectural / normative
+  Related decisions: DECISION-031 (candidate — unsaid-edges scoring), Pathway 07 (Unsaid Edges), PRESUMPTION-158
+  Testability: testable empirically (pilot the Low × High emphasis on N≥4 known research-program-seed edges from the existing CROSS register; measure precision of "research-program candidate" judgment against subsequent program development); testable via literature (compare two-filter scoring against richer multi-attribute scoring in research-gap-detection systems)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-125
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-13 "Key Decisions Made" + Pathway 07 as a stated scoring-mechanism decision with explicit quadrant-emphasis.
+    Current status: UNTESTED
+
+ASSUMPTION-126:
+  Date identified: 2026-05-13
+  Statement: The seven-day evening cowork-to-chat delivery drought is broken — Tom signing into claude.ai in the Chrome profile paired with the extension cleared the proximal blocker. The fix is treated as durable enough to recharacterize the chat-scrape redesign discussion as proceeding from "working-channel framing" rather than "broken-channel framing," even though PRESUMPTION-134 substrate-decomposition remains load-bearing for the larger redesign question.
+  Context: Cowork-to-chat summary 2026-05-13, opening delivery-status block: "DELIVERY STATUS: SUCCEEDED — first successful evening cowork-to-chat delivery in 7 days... The 7-day delivery drought is broken. This also clears the operational stagnation pattern that PREMISE-015's caveat had been accumulating against; PRESUMPTION-134 substrate-decomposition still load-bearing, but the chat-scrape redesign discussion can now proceed from working-channel rather than broken-channel framing."
+  Type: operational / empirical
+  Related decisions: ASSUMPTION-105 (user-privacy login prohibition), ASSUMPTION-118 (token-based delegation workflow redesign), PREMISE-015, PRESUMPTION-125 (cowork-to-chat sync failure cluster), PRESUMPTION-145 (chat-scrape framed as token-delegation), PRESUMPTION-159
+  Testability: testable empirically (track evening-sync delivery success-rate over next N≥7 days post-fix; measure failure-mode rotation if sign-in lapses; compare against pre-fix 7-consecutive-failure baseline); testable via process (audit "working-channel framing" claim against the actual durability of the underlying sign-in state)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-126
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork-summary 2026-05-13 opening delivery-status block as an explicit claim about both the proximal fix and its framing-effect on the redesign discussion.
+    Current status: UNTESTED
+
+ASSUMPTION-127:
+  Date identified: 2026-05-13
+  Statement: Today's wiki agent daily run (C2A2 wiki daily run 2026-05-13) ingested 4 files producing +7 PRS triplets (Levin 24→29, Friston 14→16), +8 cross entries (CROSS-075..082), and +7 Pattern Detector findings (FINDING-025..031); the network state at EOD is 213 PRS / 86 cross / 33 findings. Three new HIGH-priority escalations were tagged today: FINDING-025 (SUTI = C2A2 detection function in microcosm), FINDING-029 (ideas-as-living-agents → traditions-as-cognitive-entities), and FINDING-030 (active-inference-as-OODA → first quantitative C2A2 detector via KL-divergence).
+  Context: Wiki agent daily run report 2026-05-13: "Network: 213 PRS triplets · 86 cross-program connections · 33 active findings. HIGH escalations today: FINDING-025 (SUTI = C2A2 detection function in microcosm), FINDING-029 (ideas-as-living-agents → traditions-as-cognitive-entities), FINDING-030 (active-inference-as-OODA → first quantitative C2A2 detector via KL-divergence)."
+  Type: empirical / operational / metrics
+  Related decisions: DECISION-010 (Pattern Detector agent), ASSUMPTION-082 (3-layer RC Explorer), ASSUMPTION-115 (single-page consolidation framings), PRESUMPTION-160
+  Testability: testable empirically (track HIGH-finding promotion rate to paradigm-shift candidates over N≥4 future runs; audit "first quantitative detector" claim by attempting to operationalize KL-divergence as a C2A2 detector); testable via literature (active-inference-OODA homology in computational neuroscience and management science)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-127
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from wiki agent daily run report 2026-05-13 as the canonical network-state delta + HIGH-escalation triple.
+    Current status: UNTESTED
+
+ASSUMPTION-128:
+  Date identified: 2026-05-13
+  Statement: FINDING-030 ("active-inference-as-OODA → first quantitative C2A2 detector via KL-divergence") represents the first quantitative C2A2 detection-function candidate — a methodological commitment that KL-divergence between an agent's active-inference distribution and an OODA-cycle decision distribution can operationalize the C2A2 "tradition acceleration" signal.
+  Context: Wiki agent daily run report 2026-05-13, HIGH escalations list: "FINDING-030 (active-inference-as-OODA → first quantitative C2A2 detector via KL-divergence)." Reinforced in morning walk briefing references to FINDING-030 KL-divergence operationalization as a new task.
+  Type: methodological / empirical
+  Related decisions: FINDING-030 (Pattern Detector finding), DECISION-010 (Pattern Detector agent), ASSUMPTION-127, PRESUMPTION-161
+  Testability: testable empirically (operationalize KL-divergence on a sample of existing PRS triplets in Levin / Friston traditions; measure whether the metric distinguishes "accelerating" from "non-accelerating" tradition pairs); testable via literature (active-inference / OODA homology validity in cross-discipline transfer; KL-divergence as a tradition-comparison metric)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-128
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from wiki agent daily run report 2026-05-13 HIGH escalations list + morning walk briefing operationalization task as a stated methodological-quantification claim.
+    Current status: UNTESTED
+
+ASSUMPTION-129:
+  Date identified: 2026-05-13
+  Statement: An alignment-agent scheduled task runs nightly to diff the ground-truth pathway directory (`architecture/`) against its vault mirror (`wiki/Architecture/`), copy ground-truth → mirror on drift, and flag the change in the next session archive. The pattern is explicitly described as parallel to the existing Summa `sync_vault.sh` + launchd job.
+  Context: pathways.md preamble: "A scheduled alignment agent runs nightly, diffs the two locations, copies ground-truth → mirror on drift, and flags the change in the next session archive. Pattern parallels the existing Summa `sync_vault.sh` + launchd job." Plus dream-conversation session note (Task 8 remaining): "Stand up nightly alignment script (needs your input on schedule + launchd location; pattern parallels Summa `sync_vault.sh`)."
+  Type: architectural / operational / tooling
+  Related decisions: Pathway 00 (Broker — substrate framing), Task 8 (not-yet-scheduled), PRESUMPTION-162
+  Testability: testable empirically (after the alignment-agent is stood up, track drift-detection rate vs. drift-introduction rate; audit "ground-truth → mirror" directionality against actual edit events to either location); testable via process (compare unidirectional sync against bidirectional merge with conflict-resolution)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-129
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from pathways.md preamble as the canonical alignment-agent protocol description.
+    Current status: UNTESTED
+
+ASSUMPTION-130:
+  Date identified: 2026-05-13
+  Statement: The honesty layer (Pathway 14) is a first-class architectural commitment: visible epistemic-status marks on every claim, not buried footers. This frames provenance-and-confidence as primary UI material rather than as audit-only metadata.
+  Context: pathways.md inventory entry: "14 — Honesty layer — *outlined.* First-class visible epistemic-status marks on every claim, not buried footers." Reinforced in cowork-summary 2026-05-13 paragraph 1 enumeration: "a first-class honesty layer surfacing epistemic-status marks on every claim."
+  Type: methodological / epistemic / architectural
+  Related decisions: Pathway 14 (Honesty Layer), Provenance Protocol (ASSUMPTION vs PRESUMPTION marker), PRESUMPTION-163
+  Testability: testable empirically (measure user-attention-on-epistemic-marks via gaze-tracking or click-through on disclosed-vs-buried provenance affordances; audit whether the honesty surface produces measurable user-behavior differences from the audit-only baseline); testable via literature (epistemic-marking visibility patterns in journalism, scientific publishing, and AI-output UI)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-130
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from pathways.md inventory entry + cowork-summary 2026-05-13 paragraph 1 as a stated UI-primacy claim about epistemic surfaces.
+    Current status: UNTESTED
+
+Key event (2026-05-13): Twelve new assumptions extracted on an architectural-pathway-discovery Wednesday whose primary structural event was the "dream conversation" between Tom and the Cowork agent (Sarah) — fourteen voice-dictated dispatch beats producing 17 pathway documents (00 Broker through 17 Agent as Developed Participant) plus a living index plus a 44 KB source-dialogue archive plus six in-pass decisions (2 operational + 4 pathway-doc) candidate for promotion to DECISION-026 through 031. The day also broke the 7-consecutive-day evening cowork-to-chat delivery drought (first SUCCEEDED delivery since 2026-05-05 after Tom signed into the paired Chrome profile), ran a clean wiki agent daily Phase 0-6 cycle (+7 PRS / +8 CROSS / +7 findings; 3 new HIGH escalations including FINDING-030 as the first quantitative C2A2 detector candidate via KL-divergence), and surfaced the architectural milestone framing: "the traditions of intellectual inquiry the project exists to accelerate include the tradition of its own becoming." Today's 12 new items cluster in four families. **(1) PATHWAY-INVENTORY MILESTONE cluster** — ASSUMPTION-119 (17-pathway inventory + 6-ISME-critical demo set as architectural milestone) is the day's structural-pattern anchor. **(2) PATHWAY-00-DERIVED OPERATIONAL DECISIONS cluster** — ASSUMPTION-120 (Cloudflare Workers broker hosting conditional on streaming-latency validation) and ASSUMPTION-121 (Twilio SMS one-tap signed link for external-escalation gating). These are the first operational-platform commitments since DECISION-012 (15c agent introduction). **(3) PATHWAY-DOC-DERIVED CONTENT-ARCHITECTURE DECISIONS cluster** — ASSUMPTION-122 (Perspectives in vault as first-class wiki citizens), ASSUMPTION-123 (whiteboard ephemerality + Pin-this promotion + per-plot export), ASSUMPTION-124 (D3 + three.js + Plotly + bare canvas/WebGL library set), ASSUMPTION-125 (unsaid-edges two-filter scoring with Low × High emphasis as research-program candidate). These four pathway-doc decisions are co-promoted as DECISION-028 through 031 candidates. **(4) OPERATIONAL-CHANNEL + NETWORK-DELTA + ALIGNMENT-AGENT + HONESTY-LAYER cluster** — ASSUMPTION-126 (7-day evening cowork-to-chat drought broken; PREMISE-015 stagnation pattern cleared at operational layer), ASSUMPTION-127 (wiki agent daily run network delta +7/+8/+7 with three new HIGH escalations), ASSUMPTION-128 (FINDING-030 KL-divergence as first quantitative C2A2 detector candidate), ASSUMPTION-129 (nightly alignment-agent protocol for ground-truth-to-vault-mirror sync paralleling Summa `sync_vault.sh`), ASSUMPTION-130 (honesty layer as first-class UI commitment rather than audit-only metadata). Pattern note: today's 12 assumptions are dominated by architectural/operational items (10 of 12: 119, 120, 121, 122, 123, 124, 126, 127, 129, 130) — inverting the methodological-heavy signature of operational-throughput days and producing the first architectural-discovery-day signature in the registry (no prior day has produced this many architectural-primitives commitments in a single run). The pathway-inventory + 7-day-drought-broken + KL-divergence-quantitative-detector + alignment-agent-protocol-articulation combination yields more *architectural-primitive-introduction* than *operational-principle-articulation* claims for the first time since 2026-04-20 (DECISION-023 caching-architecture day). Today's 18-to-12 presumption-to-assumption ratio (1.5:1) is on the prior ceiling — exceeded only by 2026-05-12's 1.67:1 joint-record. The architectural-discovery character generates a high density of design-choice presumptions (alternatives unconsidered; scoring-curve normatives unexamined; broker-as-substrate as the unstated common ground for multiple URGENT canonization triggers) at a rate that approaches but does not exceed yesterday's deferred-action-monitor + first-Hoffman-pending + Summa-shipping combination.
+
+ASSUMPTION-131:
+  Date identified: 2026-05-14
+  Statement: Eight new pathway documents (18 Portability toolkit, 19 Optional interoperability, 20 Institutional scale, 21 Departmental integration, 22 Individual second brain, 23 Branching counterfactuals, 24 Meta-crafts governance, 25 Meta-visualization of pathways) emerged from this morning's walk and were drafted as full pathway markdown files by Cowork during the day. The pathway inventory extends from 17 to 25 across three new structure groups: Portability arc (18-22), Learning and governance (23-24), System self-reference (25).
+  Context: pathways.md inventory entry (post-update): "Pathways 18–25 added from morning walk 2026-05-14 (Tom / Claude.ai chat, 'Morning planning walk'). Source dialogue: `morning_walk_2026-05-14.md`." Cowork evening-sync summary 2026-05-14: "8 new pathway documents drafted (`18_portability_toolkit.md` through `25_meta_visualization_pathways.md`), extending yesterday's 17-pathway inventory to 25 across three new structure groups (Portability arc, Learning and governance, System self-reference)."
+  Type: architectural / structural / inventory
+  Related decisions: ASSUMPTION-119 (17-pathway inventory milestone), DECISION-028..031 candidates (pathway-doc decisions), PRESUMPTION-168
+  Testability: testable empirically (track how many of pathways 18-25 attract independent commits, file edits, or per-pathway DECISIONs over N≥4 weeks; measure whether the structure-group cuts predict cross-pathway dependency density); testable via process (compare 25-pathway extension cadence against 17-pathway inventory cadence)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-131
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from updated pathways.md inventory and Cowork evening-sync summary 2026-05-14 as the day's primary structural delta over yesterday's 17-pathway milestone.
+    Current status: UNTESTED
+
+ASSUMPTION-132:
+  Date identified: 2026-05-14
+  Statement: Toolkit / content separation (Pathway 18) is non-optional: "Without it the project remains a single demonstration rather than a methodology others can adopt. The 18 → 25 arc collapses if 18 fails." The framework/content seam must be clean enough to swap content without touching code — no hardcoded references to Aquinas, Levin, MacIntyre, or any specific thinker in the framework layer.
+  Context: `18_portability_toolkit.md` Decisions section: "Toolkit separation is non-optional. Without it the project remains a single demonstration rather than a methodology others can adopt. The 18 → 25 arc collapses if 18 fails. Framework / content separation must be clean enough to swap content without touching code. No hardcoded references to Aquinas, Levin, MacIntyre, or any specific thinker in the framework layer. Configuration drives all substantive choices."
+  Type: architectural / methodological
+  Related decisions: Pathway 18 (Portability toolkit), Pathway 19/20/21/22 (downstream — depend on 18), PRESUMPTION-179
+  Testability: testable empirically (attempt instantiation of a second, internal-only framework instance with different thinkers; track how many code-level edits are required vs. configuration-level edits — clean separation predicts a high ratio of config-edits to code-edits); testable via process (line-by-line audit of current repo to identify the framework/content seam)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-132
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from `18_portability_toolkit.md` Decisions section as the load-bearing architectural commitment of the entire portability arc.
+    Current status: UNTESTED
+
+ASSUMPTION-133:
+  Date identified: 2026-05-14
+  Statement: File-based handoff (signed JSON drops over HTTPS) is the primary wire format for inter-instance federation under Pathway 19 — per PRESUMPTION-145 as cited explicitly. Persistent OAuth-token-mediated APIs are demoted to a secondary or non-default option. The architectural commitment from Pathway 00 (broker as scope enforcer) extends to inter-instance queries: each request is a discrete, signed, scope-checked event.
+  Context: `19_optional_interoperability.md`: "PRESUMPTION-145 (file-based handoff as simpler primary path) directly informs the wire-format choice here; the architecture should follow that lead rather than default to OAuth-token-mediated APIs." Decisions section: "File-based handoff is the primary wire format (per PRESUMPTION-145). Signed JSON drops over HTTPS are simpler, more inspectable, and less brittle than persistent OAuth-token-mediated APIs."
+  Type: architectural / operational
+  Related decisions: Pathway 19 (Optional interoperability), Pathway 00 (Broker), PRESUMPTION-145 (file-based handoff alternative), ASSUMPTION-118 (token-based delegation workflow redesign), PRESUMPTION-170
+  Testability: testable empirically (after first inter-instance prototype, measure round-trip latency, error rate, and inspectability of file-based vs token-based handoffs); testable via literature (federation wire-format tradeoffs in distributed systems, scientific data exchange standards, ActivityPub)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-133
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from `19_optional_interoperability.md` Purpose and Decisions sections as the explicit cross-pathway design commitment extending PRESUMPTION-145 to federation.
+    Current status: UNTESTED
+
+ASSUMPTION-134:
+  Date identified: 2026-05-14
+  Statement: Federation under Pathway 19 defaults to OFF; "optionality is structural, not aspirational. An instance that simply runs and never federates is a fully legitimate use of the framework. Federation is an affordance, not an expectation." Selective sharing is per-topic, per-peer; not a binary public/private flag. Attribution is mandatory; silent absorption of peer material is a federation failure mode.
+  Context: `19_optional_interoperability.md` Decisions section: "Optionality is structural, not aspirational. Federation defaults to off. An instance that simply runs and never federates is a fully legitimate use of the framework. Federation is an affordance, not an expectation." Plus: "Selective sharing is per-topic, per-peer. Not a binary public/private flag." Plus: "Attribution is mandatory. Peer material in local results always carries the peer's identity, honesty-layer markings, and source link. Federation that obscures provenance defeats the purpose."
+  Type: architectural / normative / governance
+  Related decisions: Pathway 19, Pathway 18 (precondition), Pathway 14 (honesty-layer markings carry across), PRESUMPTION-176, PRESUMPTION-182
+  Testability: testable empirically (after federation prototype, measure default-off behavior under common configurations; audit any instance that federates without explicit opt-in as a defect); testable via literature (federation default-off precedents in academic networks, ActivityPub fediverse design)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-134
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from `19_optional_interoperability.md` Decisions section as the federation default-off + mandatory-attribution commitment.
+    Current status: UNTESTED
+
+ASSUMPTION-135:
+  Date identified: 2026-05-14
+  Statement: Pathway 24 commits to meta-crafts (governance, project management, conflict resolution, facilitation, evaluation) as first-class traditions in the perspective lattice, not as policy layers or operational scaffolding. Each meta-craft gets the same lattice treatment as substantive traditions — eager-tier overview, key thinkers, internal-debate map, apprenticeship trajectory, PRS framing. Connective rendering in the Sociogram makes the cross-cutting nature visible.
+  Context: `24_meta_crafts_governance.md` Decisions section: "Meta-crafts are first-class traditions, not policy layers. Governance, project management, conflict resolution, facilitation, evaluation get the same lattice treatment as substantive traditions. They are not subordinate." Plus: "Connective rendering in the Sociogram. Visually distinct overlay, edges to every substantive tradition." Plus: "Operational integration is non-optional. The system's own governance is held to the same standards it asks substantive traditions to meet."
+  Type: architectural / methodological / normative
+  Related decisions: Pathway 24 (Meta-crafts), Pathway 04 (Perspective lattice), Pathway 17 (Agent participant — accountability to meta-craft community), PRESUMPTION-171, PRESUMPTION-181
+  Testability: testable empirically (after Pathway 24 prototype, audit whether registering governance as a perspective-lattice tradition produces different system behavior than treating it as a policy layer); testable via literature (MacIntyre's tradition-constituted-inquiry treatment of governance; tradition-of-practices vs. craft-as-substantive-domain in After Virtue and Three Rival Versions of Moral Enquiry)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-135
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from `24_meta_crafts_governance.md` Decisions section as the central architectural commitment elevating meta-crafts to first-class tradition status.
+    Current status: UNTESTED
+
+ASSUMPTION-136:
+  Date identified: 2026-05-14
+  Statement: Pathway 25 (Meta-visualization of pathways) commits to the agent as "co-explorer, not oracle. Pathway 25 is where Pathway 17's continuity-of-character is most visible. The agent thinks alongside the user, dwells on the question, draws on prior conversations. Query-response is the wrong mode." The visualization is co-authored — both user and agent annotate; the agent's annotations carry honesty-layer markings; counterfactual integration (Pathway 23) is structural, not optional.
+  Context: `25_meta_visualization_pathways.md` Decisions section: "The agent is a co-explorer, not an oracle. Pathway 25 is where Pathway 17's continuity-of-character is most visible. The agent thinks alongside the user, dwells on the question, draws on prior conversations. Query-response is the wrong mode." Plus: "Annotation is co-authored. Both user and agent annotate." Plus: "Counterfactual integration is structural, not optional."
+  Type: architectural / methodological / UX
+  Related decisions: Pathway 25, Pathway 17 (Agent as developed participant), Pathway 14 (Honesty layer), Pathway 23 (Branching counterfactuals), PRESUMPTION-172, PRESUMPTION-180
+  Testability: testable empirically (after Pathway 25 prototype, instrument user-session traces for query-response-mode vs co-exploration-mode preference distributions; measure agent-revision-rate in conversations about pathways); testable via literature (co-creative AI interface design; conversational-agent oracle-vs-collaborator framing in HCI)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-136
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from `25_meta_visualization_pathways.md` Decisions section as the central UX-and-architectural commitment for the meta-visualization pathway.
+    Current status: UNTESTED
+
+ASSUMPTION-137:
+  Date identified: 2026-05-14
+  Statement: Pathway 13 (Under-Development Visualizer) is architecturally distinct from Pathway 25 (Meta-Visualization of Pathways) — different audiences (GitHub contributors vs intellectual co-explorers), different data substrates (commits / PRs / contributors vs pathway dependency / annotation / counterfactual branches), same project. Drafted decision is "distinct" rather than "merged."
+  Context: `25_meta_visualization_pathways.md` Purpose section: "The architectural distinction from Pathway 13 (Under-Development Visualizer) is real: 13 is for GitHub contributors and shows code-level development; 25 is for intellectual co-exploration of the pathway space itself." Plus Open Questions: "Is this the same as Pathway 13 (Under-Development Visualizer) or distinct? (Drafted decision: distinct. Pathway 13 is for GitHub contributors; Pathway 25 is for intellectual co-exploration with the agent.)"
+  Type: architectural / scoping
+  Related decisions: Pathway 13, Pathway 25, PRESUMPTION-168 (8-pathway enumeration)
+  Testability: testable empirically (after both pathways prototype, measure user-population overlap; if substantially same users use both, the distinct-pathway claim is weakened); testable via process (audit whether the data substrates and UX affordances actually diverge as predicted or converge in practice)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-137
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from `25_meta_visualization_pathways.md` Purpose + Open Questions as the drafted distinct-pathway scoping commitment between Pathway 13 and Pathway 25.
+    Current status: UNTESTED
+
+ASSUMPTION-138:
+  Date identified: 2026-05-14
+  Statement: Pathways 18-25 are a "deliberate post-ISME breadth arc, not demo-path advancement" — explicitly NOT on the ISME July 8-10, 2026 critical path. This frames today's drafting work as an allocation choice during the 8-week runway: post-ISME breadth was prioritized over additional ISME-critical-pathway work today.
+  Context: Cowork evening-sync summary 2026-05-14 morning-walk briefing: "pathways 18–25 are a deliberate post-ISME breadth arc, not demo-path advancement — allocation question for the 8-week runway." Also confirmed in `18_portability_toolkit.md` frontmatter (`isme_critical: no`) through `25_meta_visualization_pathways.md` frontmatter (`isme_critical: no`).
+  Type: methodological / strategic / scheduling
+  Related decisions: ASSUMPTION-119 (6 ISME-critical pathways from yesterday — unchanged today), PRESUMPTION-173, PRESUMPTION-178
+  Testability: testable empirically (track during the 8-week runway whether pathway-18-25 work continues at today's cadence or recedes as ISME-critical pathways accelerate; measure attention-share via commit timestamps and pathway-doc edit timestamps over the next 8 weeks); testable via process (compare post-ISME-breadth vs ISME-critical-path commitment ratios in subsequent days against the explicit "deliberate breadth arc" framing)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-138
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Cowork evening-sync summary 2026-05-14 "For tomorrow's walk" flag #1 and pathway-doc frontmatter as the explicit post-ISME-breadth allocation claim.
+    Current status: UNTESTED
+
+ASSUMPTION-139:
+  Date identified: 2026-05-14
+  Statement: Documentation carries the rationality standards (Pathway 18): the onboarding documentation is not just a technical guide — it invites adopters into MacIntyrean tradition-constituted inquiry as the system's normative shape. "Adopting the framework without engaging the rationality standards produces a different (and weaker) instance." The framework's normative commitments (honesty layer, PRS, perspective lattice) come bundled with the toolkit, not as opt-in afterthoughts.
+  Context: `18_portability_toolkit.md` Decisions section: "Documentation carries the rationality standards. Not just a technical guide — the onboarding documentation invites adopters into MacIntyrean tradition-constituted inquiry as the system's normative shape. Adopting the framework without engaging the rationality standards produces a different (and weaker) instance."
+  Type: methodological / normative / pedagogical
+  Related decisions: Pathway 18, Pathway 14 (Honesty layer), Pathway 04 (Perspective lattice), PRESUMPTION-179, PRESUMPTION-182
+  Testability: testable empirically (after toolkit release, audit adopter-instances for honesty-layer presence and PRS-framework use; measure whether instances that skip the documentation produce measurably weaker outputs); testable via literature (normative-content-in-software-toolkits patterns in pedagogy and FLOSS communities)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-139
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from `18_portability_toolkit.md` Decisions section as the documentation-as-normative-vehicle commitment.
+    Current status: UNTESTED
+
+ASSUMPTION-140:
+  Date identified: 2026-05-14
+  Statement: Morning chat-scrape succeeded for the second consecutive day; the sign-in fix from 2026-05-13 is holding. The previous 7-consecutive-day failure pattern (2026-05-05 through 2026-05-12) has cleared at the operational layer. Two data points (today + yesterday) are not yet a stable pattern, but the trajectory is consistent with sustained success.
+  Context: Cowork evening-sync summary 2026-05-14: "Morning chat-scrape succeeded for the second consecutive day — sign-in fix from 2026-05-13 is holding." Plus morning chat-scrape session local_995d8b5d: "The scrape succeeded for the first time in 9 days — the sign-in barrier flagged on 2026-05-05/09/10/13 has cleared."
+  Type: operational / empirical
+  Related decisions: ASSUMPTION-126 (yesterday's drought-broken claim), PRESUMPTION-159 (sign-in fix framed as architectural fix), PRESUMPTION-177
+  Testability: testable empirically (track morning chat-scrape success/failure for N≥5 more consecutive days; if streak continues, ASSUMPTION-126/140 pattern stabilizes; if any single failure, the "sign-in fix holding" claim weakens and PRESUMPTION-159 re-fires); testable via process (audit which proximal failure modes the sign-in fix actually addresses vs. which it only masks)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-140
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Cowork evening-sync summary 2026-05-14 + morning chat-scrape session local_995d8b5d as the second consecutive on-cadence success following yesterday's drought-breaking event.
+    Current status: UNTESTED
+
+ASSUMPTION-141:
+  Date identified: 2026-05-14
+  Statement: Evening cowork-to-chat browser delivery FAILED today — Chrome MCP extension is offline (paired Chrome profile not signed in or extension not connected). The summary file was written with a visible failure flag in the header rather than silently delivered. The degraded-mode protocol is: write the .md file with visible failure flag, await user remediation, do not attempt automatic recovery.
+  Context: Cowork evening-sync session local_6c8ab387: "Chrome MCP extension is not connected, so browser delivery to Chat is not possible. Updating the summary file header to flag this for Tom." Plus: "Browser delivery: SKIPPED. Claude-in-Chrome reported no connected browsers — the paired Chrome extension is offline. The summary header now carries a visible failure flag so it's not silent."
+  Type: operational / empirical / failure-mode
+  Related decisions: ASSUMPTION-126 (yesterday's drought-broken), ASSUMPTION-140 (chat-scrape side success), PRESUMPTION-159 (sign-in fix framing), PRESUMPTION-177
+  Testability: testable empirically (track frequency of Chrome-MCP-extension-offline failures over next N≥7 days; audit whether the same proximal cause that took 7 days to fix last time recurs and at what cadence); testable via process (compare visible-failure-flag protocol against silent-skip baseline for user remediation response time)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-141
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Cowork evening-sync session local_6c8ab387 final assistant message as the explicit degraded-mode protocol invocation.
+    Current status: UNTESTED
+
+ASSUMPTION-142:
+  Date identified: 2026-05-14
+  Statement: A 27 KB integrative paper (`2026-05-14_carpathi_wiki_paper.md`) and two verbatim Chat-Claude review files (`2026-05-14_pathways_18-25_review.md`, `2026-05-14_comprehensive_overview_review.md`) were written today alongside the 8 new pathway docs. The architecture/ directory accumulates per-day reference documents (paper + reviews + walk archive) alongside the pathway-doc and per-day-changelog cadence — a parallel content stream not subject to the architecture/decisions.md canonization gate.
+  Context: Architecture directory listing shows files created today: `2026-05-14_carpathi_wiki_paper.md` (27,613 bytes), `2026-05-14_comprehensive_overview_review.md` (5,130 bytes), `2026-05-14_pathways_18-25_review.md` (2,924 bytes), `morning_walk_2026-05-14.md` (7,727 bytes). Cowork evening-sync summary: "Two Chat-Claude verbatim review files preserved (`2026-05-14_pathways_18-25_review.md`, `2026-05-14_comprehensive_overview_review.md`) plus the walk transcript archive (`morning_walk_2026-05-14.md`) and a 27 KB integrative paper."
+  Type: operational / content-architecture / governance
+  Related decisions: ASSUMPTION-131 (8 new pathways), DECISION-028..031 candidates, PRESUMPTION-175, PRESUMPTION-176
+  Testability: testable empirically (audit growth rate of architecture/ root-level per-day reference docs vs. growth rate of canonized decisions/pathways over next N≥4 weeks; measure whether parallel content stream produces functional artifacts or accumulates as low-attention residue); testable via process (compare the canonization-gate-bypass pattern of per-day reference docs with PRESUMPTION-041 implicit-decision drift)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-142
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from architecture directory listing + Cowork evening-sync summary as the parallel content stream alongside pathway docs.
+    Current status: UNTESTED
+
+ASSUMPTION-143:
+  Date identified: 2026-05-14
+  Statement: Agent 16 (deferred-action monitor) finalized WATCH-001 bookkeeping cleanup today; 3 new pending proposals staged (2 Fredrickson, 1 Stump). The active watch list remains at 0 with the cleanup pass complete; the deferred-action layer remains operational but with no active items pending.
+  Context: Cowork evening-sync summary 2026-05-14: "Agent 16 finalized WATCH-001 bookkeeping cleanup; 3 new pending proposals staged (2 Fredrickson, 1 Stump)." Continues prior pipeline state from 2026-05-13 metrics snapshot.
+  Type: operational / empirical
+  Related decisions: DECISION-016 (Agent 16 introduction), PRESUMPTION-140 (intake-coverage audit gap — unchanged)
+  Testability: testable empirically (track Agent 16 active-watch-list utilization over N≥4 weeks; audit whether new intake actually exercises the deferred-action machinery or whether the watch list remains at 0 baseline); testable via process (compare new-pending-proposal cadence — 2 Fredrickson + 1 Stump today — against weekly intake distribution patterns)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-143
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Cowork evening-sync summary 2026-05-14 Pipeline state bullet as the Agent 16 + new-pending-proposal status delta.
+    Current status: UNTESTED
+
+ASSUMPTION-144:
+  Date identified: 2026-05-14
+  Statement: Today's 14a/14b run was NOT visible in changelog at evening-sync write-time: "today's 14a/14b EOD fire not yet visible in changelog at sync time." The evening-sync runs before the 14a/14b run; the 14a/14b run produces today's changelog after the evening-sync writes its summary. This is by design — evening-sync precedes self-awareness fire — but it means the evening-sync summary cannot reference today's 14a/14b outputs.
+  Context: Cowork evening-sync summary 2026-05-14: "today's 14a/14b EOD fire not yet visible in changelog at sync time."
+  Type: operational / scheduling / governance
+  Related decisions: 14a/14b cadence, ASSUMPTION-117 (skipped-EOD-slot pattern — broken yesterday at on-cadence fire)
+  Testability: testable empirically (audit whether downstream readers of the evening-sync summary mis-interpret the absence of today's 14a/14b output as a skipped run; measure friction in next-morning briefing assembly when 14a/14b changelog lags behind evening-sync summary); testable via process (compare sequential evening-sync → 14a/14b vs. parallel evening-sync ∥ 14a/14b cadences for downstream-readability tradeoffs)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-144
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Cowork evening-sync summary 2026-05-14 as an explicit cadence-ordering claim about the evening-sync / 14a/14b sequence.
+    Current status: UNTESTED
+
+ASSUMPTION-145:
+  Date identified: 2026-05-15
+  Statement: Pathway 26 (Research Suggestions per Thinker) is the project's outbound channel to the 15 thinkers — the system "develops and is prepared to communicate concrete research suggestions, together with rationale" to each of Levin, Friston, Hoffman, Kastrup, McGilchrist, Hawkins, Wolfram, Carroll, Arkani-Hamed, Fredrickson, Stump, Rohr, Wright, MacIntyre, Loughran. The pathway exists "because the project's claim to be an accelerator/detector system for developing communities into sustained and articulate traditions is hollow if the system has no productive output back to the thinkers whose traditions it has been articulating." Pathway 26 is positioned as the analogous outbound channel to Pathways 11–13 (episode publishing, community outreach, under-development view) but addressed to the thinkers themselves.
+  Context: `architecture/26_research_suggestions_per_thinker.md` Purpose section (created 2026-05-15, status: outlined). Originating prompt from Tom: "Dev Pathway 26 (or so): Develop and communicate research suggestions for each thinker, together with rationale." Framing constraint: "All I want for Dev Pathway 26 is an md file conformal to the full pathway set."
+  Type: architectural / methodological / strategic
+  Related decisions: ASSUMPTION-119 (17-pathway inventory — now 26), Pathway 11 (episode publishing), Pathway 12 (community outreach), Pathway 13 (under-development view), Pathway 14 (honesty layer), Pathway 15 (apprentice mode), Pathway 17 (agent-developed participant), PRESUMPTION-183, PRESUMPTION-186, PRESUMPTION-192
+  Testability: testable empirically (after dossier drafting, measure suggestion-uptake / response rate from thinkers approached; audit whether suggestions read as continuity-with-program vs unsolicited-reframe via thinker feedback); testable via literature (outbound-research-recommendation patterns in inter-disciplinary collaboration; meta-scientific advisory roles)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-145
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from `26_research_suggestions_per_thinker.md` Purpose section as the project's first explicit outbound-to-thinkers commitment. Direct quote from Pathway 26 Purpose used as the rationale anchor.
+    Current status: UNTESTED
+
+ASSUMPTION-146:
+  Date identified: 2026-05-15
+  Statement: Naming convention is now on record (from morning-walk Chat-Claude session, captured in chat_summary 2026-05-15): the *Carpathi Wiki* is the general approach / methodology; the *Resurrecting Civility (RC) Carpathi Wiki* is the file-name of this particular instantiation; the public name of the same thing is the **C2A2 Wiki**; its visualization tool is the **C2A2 Explorer**. Tom established the four-name taxonomy for the chat record. Tom flagged uncertainty about whether the naming would persist across chat sessions unless they were working in a chat-project context — a workflow concern Cowork should note.
+  Context: Chat summary 2026-05-15 morning walk: "Tom established for the chat record: the Carpathi Wiki is the general approach/methodology; the Resurrecting Civility (RC) Carpathi Wiki is the file-name of this particular instantiation; the public name of the same thing is the C2A2 Wiki, and its visualization tool is the C2A2 Explorer."
+  Type: architectural / naming / governance
+  Related decisions: All pathway-doc / vault-organization decisions, PRESUMPTION-188
+  Testability: testable empirically (audit usage of all four terms across the vault for consistency / drift over N≥4 weeks; measure whether any of the four terms get mixed up downstream); testable via process (compare the four-name taxonomy against Tom's flagged persistence-concern across non-project Chat sessions)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-146
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from chat_summary 2026-05-15 as a Tom-on-record clarification of the four-name taxonomy with workflow caveat.
+    Current status: UNTESTED
+
+ASSUMPTION-147:
+  Date identified: 2026-05-15
+  Statement: Pathway 26 commits to one file per thinker (mirroring the `wiki/traditions/{thinker}/` structure) — "not a single monolithic document. This makes dossiers maintainable independently and lets each thinker's dossier evolve as their own work and the project's understanding does." Each dossier lands as `wiki/traditions/{thinker}/research_suggestions.md` alongside the tradition wiki itself, with a parallel cross-thinker network view ("a map of which suggestions implicate which other thinkers").
+  Context: `26_research_suggestions_per_thinker.md` Decisions taken section: "One file per thinker, mirroring the tradition wiki structure. Not a single monolithic document." Function set #1 (per-thinker dossier) and #2 (cross-thinker network view).
+  Type: architectural / data-model
+  Related decisions: ASSUMPTION-145 (Pathway 26 opening), tradition wiki structure, PRESUMPTION-193
+  Testability: testable empirically (track maintenance cadence per-thinker dossier vs monolithic-document alternative if a sample is drafted both ways); testable via process (compare the per-thinker file structure against the monolithic-document alternative for editor friction and update-cadence)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-147
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from `26_research_suggestions_per_thinker.md` Decisions taken first bullet as the explicit per-thinker file-structure commitment.
+    Current status: UNTESTED
+
+ASSUMPTION-148:
+  Date identified: 2026-05-15
+  Statement: Each suggestion in Pathway 26 carries an explicit two-faced rationale — *continuity with the thinker's existing program* (so the suggestion reads as a natural extension, not an unsolicited reframe) and *unlocked-value for the C2A2 network* (what cross-tradition synthesis the suggestion would enable). The two faces are equally weighted; "the project does not subordinate the thinker's research interests to its own synthesis aims." This is the substantive shape of how a suggestion gets to count as a suggestion at all.
+  Context: `26_research_suggestions_per_thinker.md` Function set #3 (Rationale layer) and Decisions taken #2: "Continuity + unlocked-value as a two-faced rationale. Suggestions are framed to be productive from the thinker's existing program as much as for the C2A2 synthesis. The pathway does not subordinate the thinker's research interests to the project's."
+  Type: methodological / normative / epistemic
+  Related decisions: ASSUMPTION-145, ASSUMPTION-149 (soft thinker-voice convention), Pathway 14 (honesty layer), PRESUMPTION-184, PRESUMPTION-186
+  Testability: testable empirically (after dossier-drafting, audit per-suggestion: does the rationale articulate both faces in roughly equal proportion? do thinker readers identify the continuity face as accurate?); testable via process (compare equally-weighted vs project-prioritized rationale framings for suggestion-uptake rates)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-148
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Pathway 26 Function set #3 + Decisions taken #2 as the explicit two-faced equal-weighting commitment with anti-subordination clause.
+    Current status: UNTESTED
+
+ASSUMPTION-149:
+  Date identified: 2026-05-15
+  Statement: The soft thinker-voice convention (criterion M) — established earlier in the same Cowork session in the context of Summa 2026 QC work — applies to Pathway 26: the dossiers cite the thinker's work as a resource without classifying the thinker into hard role-categories ("X is THE authority on Y"). "The same principle that governs the Summa 2026 synthesis prose governs the research-suggestions dossiers." Pathway 26 emerged immediately after the criterion M work as its natural complement.
+  Context: `26_research_suggestions_per_thinker.md` Decisions taken #4: "Soft thinker-voice convention applies (M criterion). Per `summa_thinker_voice_convention.md`, the dossiers cite the thinker's work as a resource; they do not classify the thinker into hard role-categories." Provenance section: "The pathway emerged immediately after the criterion M work… having done the work of receiving each tradition carefully, the project now has something productive to send back."
+  Type: methodological / normative / pedagogical
+  Related decisions: ASSUMPTION-148 (two-faced rationale), summa_thinker_voice_convention.md (criterion M), PRESUMPTION-184
+  Testability: testable empirically (audit dossier prose for hard role-classifications across the 15 thinkers; measure whether the soft convention holds at scale); testable via process (compare soft-convention vs hard-classification drafts for thinker-feedback tone)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-149
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from `26_research_suggestions_per_thinker.md` Decisions taken #4 and Provenance section as the criterion-M-applies-to-Pathway-26 transfer commitment.
+    Current status: UNTESTED
+
+ASSUMPTION-150:
+  Date identified: 2026-05-15
+  Statement: Three INCORPORATEs landed today in the 15c dispositioning pass — PREMISE-016 (toolkit/content separation, from ASSUMPTION-132); PREMISE-017 (federation default-OFF, from ASSUMPTION-134); PREMISE-018 (meta-crafts first-class, from ASSUMPTION-135). This is "the first non-trivial PREMISE batch in weeks" — the PREMISE register grew from 15 to 18; second consecutive non-zero INCORPORATE cycle. Three of the four candidate DECISIONs from yesterday (DECISION-032/033/034) now have INCORPORATEd PREMISE backing, materially strengthening their canonization case.
+  Context: Cowork evening-sync summary 2026-05-15: "three new INCORPORATEs — the first non-trivial PREMISE batch in weeks — validating yesterday's load-bearing breadth-arc commitments (toolkit/content separation, federation default-OFF, meta-crafts first-class). PREMISE register grew from 15 to 18." Validated_premises.md cycle-level observation: "the 2026-05-15 cycle produced 3 INCORPORATEs."
+  Type: operational / empirical / pipeline
+  Related decisions: DECISION-032 candidate (toolkit/content separation), DECISION-033 candidate (federation default-OFF), DECISION-034 candidate (meta-crafts first-class), ASSUMPTION-132, ASSUMPTION-134, ASSUMPTION-135, PRESUMPTION-195
+  Testability: testable empirically (track DECISION-032/033/034 canonization timing against the PREMISE-backing; measure whether PREMISE-backed candidate DECISIONs are canonized faster than non-PREMISE-backed candidates); testable via process (audit whether the INCORPORATE-as-canonization-strengthening pattern holds across additional cycles)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-150
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Cowork evening-sync summary 2026-05-15 + validated_premises.md cycle-level observation as the three-INCORPORATE batch event.
+    Current status: UNTESTED
+
+ASSUMPTION-151:
+  Date identified: 2026-05-15
+  Statement: Pre-implementation architectural-articulation passes are substantially more INCORPORATE-likely than operational-incident passes — the combined 14+15 cycle rate is now 7/59 ≈ 11.9%, "well above prior baseline." The 2026-05-14 and 2026-05-15 cycles together contribute 7 of the 8 INCORPORATEs in the six-cycle window (2026-05-09 / 10 / 11 / 13 / 14 / 15); both cycles were driven by architectural-articulation passes (17-pathway pass on 05-13 EOD; breadth-arc 18-25 pass on 05-14 EOD). The pattern that pre-implementation architectural articulation is more INCORPORATE-likely than operational-incident analysis "is now confirmed across two cycles."
+  Context: Cowork evening-sync summary 2026-05-15. Validated_premises.md cycle-level observation: "The pattern that pre-implementation architectural articulation passes are more INCORPORATE-likely than operational-incident passes is now confirmed across two cycles."
+  Type: methodological / empirical / pipeline-rate
+  Related decisions: ASSUMPTION-150 (today's three INCORPORATEs), PRESUMPTION-195 (cycle-specific small-N caveat)
+  Testability: testable empirically (track INCORPORATE rate per cycle over the next N≥6 cycles, broken down by cycle-type architectural-articulation vs operational-incident; if the differential persists, the pattern stabilizes as a process insight); testable via process (audit which architectural-articulation features predict INCORPORATE likelihood — claim density, scope, level of generality)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-151
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Cowork evening-sync summary 2026-05-15 + validated_premises.md cycle-level observation as the architectural-articulation-vs-operational-incident INCORPORATE-rate differential claim.
+    Current status: UNTESTED
+
+ASSUMPTION-152:
+  Date identified: 2026-05-15
+  Statement: Morning chat-scrape succeeded for the third consecutive day; the sign-in fix from 2026-05-13 is now holding across three data points (05-13, 05-14, 05-15). The trajectory moves "from 'two data points, not yet a stable pattern' toward credible stability." If tomorrow's scrape also succeeds, four data points across four days starts to support the architectural-fix-via-credential framing rather than the architectural-fragility framing. PRESUMPTION-159's "credential-vs-architectural" question weakens with each successful day.
+  Context: Cowork evening-sync summary 2026-05-15: "Morning chat-scrape succeeded for the third consecutive day (sign-in fix from 2026-05-13 now holding across three data points — moving from 'two data points, not yet a stable pattern' toward credible stability)." Morning chat-scrape session local_c78d3054 successful execution.
+  Type: operational / empirical / pattern-stability
+  Related decisions: ASSUMPTION-126 (drought-broken claim), ASSUMPTION-140 (second consecutive success), PRESUMPTION-159 (sign-in fix framing), PRESUMPTION-177 (Chrome-MCP recurrence pattern)
+  Testability: testable empirically (track morning chat-scrape success/failure for N≥4 more consecutive days; if streak continues at N≥7 the credential-fix-holding claim approaches stable-pattern status); testable via process (audit which proximal failure modes the sign-in fix actually addresses vs masks)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-152
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Cowork evening-sync summary 2026-05-15 + morning chat-scrape session local_c78d3054 as the third consecutive on-cadence success.
+    Current status: UNTESTED
+
+ASSUMPTION-153:
+  Date identified: 2026-05-15
+  Statement: Wiki narration visualization was regenerated twice today — once for a Summa flag pass (backup `wiki_narration.html.bak.20260515-pre-summa-flag` at 19:27 UTC) and once for a Q1 regen (backup `wiki_narration.html.bak.20260515-pre-q1-regen` at 20:24 UTC). The narration HTML is now ~15.3 MB. A `summa_explorer.html` update at 19:45 UTC sits between the two regens. The label "pre-q1-regen" implies a known Q1-ish change being made to the visualization.
+  Context: Cowork evening-sync summary 2026-05-15 "Files Created or Modified" section: `wiki_narration.html.bak.20260515-pre-summa-flag` (19:27 UTC), `wiki_narration.html.bak.20260515-pre-q1-regen` (20:24 UTC), `wiki_narration.html` (20:24 UTC, ~15.3 MB), `summa_explorer.html` (19:45 UTC).
+  Type: operational / content-architecture
+  Related decisions: Wiki narration visualization pipeline (per CLAUDE.md), Summa-side content stream (ASSUMPTION-154 today's parallel), PRESUMPTION-189
+  Testability: testable empirically (audit the diff between `pre-summa-flag` and `pre-q1-regen` backups to identify what Q1 refers to and what was changed in each pass); testable via process (compare the file-size growth across regens against the validation pipeline's tracked metrics)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-153
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Cowork evening-sync summary 2026-05-15 Files Created or Modified section as the two-backup-step visualization regen sequence.
+    Current status: UNTESTED
+
+ASSUMPTION-154:
+  Date identified: 2026-05-15
+  Statement: Substantial Summa parallel content stream today — 30 Summa Day-NN transcripts touched (Days 7, 8, 35, 61–65, 73–75, 82–100 spanning the second-volume / virtues / sins arc) by the Summa commentary reviewer + Summa qc sweep + Summa 2026 daily batch sessions. Combined with today's visualization regen + summa_explorer.html update, today shows that the Summa-side work has its own daily cadence that isn't reflected in the C2A2 architecture register. The C2A2 / Summa boundary is the principle; today is a high-volume Summa-side day that potentially accumulates decisions outside the canonical decision register.
+  Context: Cowork evening-sync summary 2026-05-15: "30 Summa Day-NN transcripts touched (Days 7, 8, 35, 61–65, 73–75, 82–100 spanning the second-volume / virtues / sins arc) by the Summa commentary reviewer + Summa qc sweep + Summa 2026 daily batch sessions." Session list shows multiple concurrent Summa sessions: "Summa 2026 nightly verification" (running), "Summa commentary reviewer" (running), "Summa qc sweep" (idle), plus prior "Summa commentary reviewer" / "Summa qc sweep" sessions.
+  Type: operational / content-architecture / governance
+  Related decisions: C2A2/Summa boundary principle, ASSUMPTION-142 (parallel content stream pattern from 2026-05-14), PRESUMPTION-189 (Q1 referent ambiguity)
+  Testability: testable empirically (audit Summa-side decisions accumulating per week against canonical-decision-register entries; measure whether Summa-side decisions surface in C2A2 architectural register at any cadence); testable via process (compare boundary-functional vs boundary-leaking patterns across the next N≥4 weeks)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-154
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Cowork evening-sync summary 2026-05-15 Files Modified Summa section + active session list as the Summa-side parallel-cadence event.
+    Current status: UNTESTED
+
+ASSUMPTION-155:
+  Date identified: 2026-05-15
+  Statement: Substrate-decomposition gate entered its fourth consecutive cycle without closure today — PRESUMPTION-134 REVISE 2026-05-11; PRESUMPTION-159 REVISE 2026-05-14; PRESUMPTION-177 REVISE 2026-05-15 (today). It is "the strongest unresolved-cluster signal in the entire system." Each cycle adds another REVISE entry (134 → 159 → 177) without closure. The recommended action sequence (enumerate Chrome-MCP dependency surface; classify recent failures credential-vs-architectural; identify fall-back paths; reframe degraded-mode protocol output to stop pre-classifying failures as credential before evidence) is in `revision_flags.md`. Joint with Pathway 14 honesty-layer commitment (PREMISE-019). ISME demo-readiness load-bearing.
+  Context: Cowork evening-sync summary 2026-05-15: "Substrate-decomposition gate: fourth consecutive cycle without closure (PRESUMPTION-134 REVISE 2026-05-11; PRESUMPTION-159 REVISE 2026-05-14; PRESUMPTION-177 REVISE 2026-05-15) — strongest unresolved-cluster signal in the system, HIGH urgency for Tom's review." Same source: "the honesty-layer commitment in PREMISE-019 (Pathway 14) requires accurate failure classification; continuing to pre-classify Chrome-MCP recurrences as 'likely credential' without evidence is a quiet violation of that commitment."
+  Type: operational / architectural / methodological / failure-mode
+  Related decisions: PRESUMPTION-134 (origin), PRESUMPTION-159 (sign-in fix framing), PRESUMPTION-177 (Chrome-MCP recurrence), Pathway 14 (honesty layer / PREMISE-019), ASSUMPTION-141, PRESUMPTION-190
+  Testability: testable empirically (execute the recommended action sequence and measure whether it closes the gate; track whether Chrome-MCP-offline pattern continues to recur after the audit); testable via process (audit the four-cycle non-closure pattern itself — what makes this gate persist across cycles when other gates close)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-155
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Cowork evening-sync summary 2026-05-15 + revision_flags.md fourth-cycle entry as the substrate-decomposition-gate-fourth-cycle event.
+    Current status: UNTESTED
+
+ASSUMPTION-156:
+  Date identified: 2026-05-15
+  Statement: Pathway 26's calibration-sample plan is "one thinker first, reviewed before the others." Three candidates are noted in the pathway-doc open questions: Stump (the thinker-voice work is freshest), Friston (most-cited in the formal-architecture syntheses), or Wright (the scriptural-historical pole). "A reasonable choice is one thinker from each substantive cluster (formal / metaphysical / theological / experimental) as initial calibration." The choice is deferred to the late-next-week prioritization discussion.
+  Context: `26_research_suggestions_per_thinker.md` Open questions section "Sequencing across the 15." Status section: "Calibration-sample drafting (one thinker first, reviewed before the others) is the obvious first concrete step. Three candidates for the calibration sample are noted in the open questions; choice deferred. No dossiers exist yet."
+  Type: methodological / scheduling / strategic
+  Related decisions: ASSUMPTION-145 (Pathway 26 opening), PRESUMPTION-191 (Wright/Rohr pendings blocking N=13)
+  Testability: testable empirically (after calibration draft, audit whether the single-thinker-first approach surfaces issues that scale to all 15, or whether the 15 require sufficiently distinct treatment that one-thinker-first is uninformative); testable via process (compare one-thinker-calibration vs cross-thinker-sample-of-3 protocols)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-156
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from `26_research_suggestions_per_thinker.md` Open questions + Status as the calibration-sample-first-then-others commitment.
+    Current status: UNTESTED
+
+ASSUMPTION-157:
+  Date identified: 2026-05-15
+  Statement: A new pending proposal was staged today: `inbox/proposals/pending/2026-05-15_carroll_mindscape-353-roth-moral-economics.md`. This extends the pending proposals count by +1 (was ~43 yesterday, now ~44). The new proposal is in the Carroll tradition arc, referencing Mindscape episode 353 with Roth on moral economics. Five Wright/Rohr first-evers from 2026-05-10 still block N=13 expansion (per ASSUMPTION-111); today's Carroll proposal is in the existing N=11 set, not the pending N=13.
+  Context: Cowork evening-sync summary 2026-05-15 Files Created section: "`inbox/proposals/pending/2026-05-15_carroll_mindscape-353-roth-moral-economics.md` — NEW pending proposal." Pipeline status: "Pending proposals: ~44 (was 43; +1 today: Carroll Mindscape 353 — Roth moral economics)."
+  Type: operational / empirical / intake
+  Related decisions: ASSUMPTION-143 (Agent 16 + new pendings pattern from 2026-05-14), ASSUMPTION-111 (Wright/Rohr blocking N=13), PRESUMPTION-191
+  Testability: testable empirically (track pending-proposal cadence over N≥4 weeks broken down by tradition; measure whether Carroll-Mindscape-podcast intake is becoming a recurring channel); testable via process (compare new-pending-proposal cadence across traditions for intake-distribution patterns)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-157
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Cowork evening-sync summary 2026-05-15 Files Created section as the +1 pending-proposal delta with Carroll-arc attribution.
+    Current status: UNTESTED
+
+
+# ─── 2026-05-17 c2a2-self-awareness-daily run (14a) ───
+# Source: chat_to_cowork/2026-05-16_chat_summary.md + cowork_to_chat/2026-05-16_cowork_summary.md
+# (both generated 2026-05-17 UTC). Substantive C2A2 work was 2026-05-16's
+# Multi-agent Obsidian+DeepSeek thread + the meta-signal of 2 consecutive missed
+# 14a/14b fires. This run also acknowledges 2026-05-15 EOD content remained
+# un-ingested by 14a/14b; that day is left as carry-forward (handled separately
+# when the gap-recovery decision is made by Tom).
+
+ASSUMPTION-158:
+  Date identified: 2026-05-17
+  Statement: For adding a non-Claude LLM agent to the same vault, the chosen architecture is **Path 2**: DeepSeek-Flash via API driving a worker script that reads a job-folder queue. Path 1 (in-Obsidian plugin + local DeepSeek via Ollama) was rated "free, local, not really agentic"; Path 3 (DeepSeek through an MCP-capable third-party harness like Cline / Continue / OpenCode pointed at the same MCP servers Claude uses) was rated "most elegant, currently requires harness debugging because DeepSeek's tool-call reliability lags its reasoning." Recommendation: start with Path 2; "Path 3 worth doing *after* Path 2 is paying off, not before."
+  Context: chat_to_cowork/2026-05-16_chat_summary.md Key Discussion Points (architectural paths laid out + recommendation paragraph). The Multi-agent Obsidian/DeepSeek thread (~17:50–21:00 UTC, Opus 4.7 Adaptive) on 2026-05-16.
+  Type: architectural / operational / infrastructure
+  Related decisions: PREMISE-016 (toolkit/content separation), DECISION-032 candidate (toolkit/content separation), Pathway 18 (Portability), PRESUMPTION-183, PRESUMPTION-184, PRESUMPTION-185, PRESUMPTION-189
+  Testability: testable empirically (run Path 2 against a real vault workload; measure throughput, failure modes, review-bottleneck rates; if Path 2 "pays off" then trial Path 3 against the same workload); testable via process (audit whether the three-path framing covers the architectural space or whether unconsidered alternatives — agent inside Obsidian via Continue, MCP-router daemon, polyglot CI-style queue — should have been on the list)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-158
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from chat_to_cowork/2026-05-16_chat_summary.md as the three-path architectural framing + Path-2 recommendation.
+    Current status: UNTESTED
+
+ASSUMPTION-159:
+  Date identified: 2026-05-17
+  Statement: `agents.md` is the operating contract for any non-Claude LLM agent on the C2A2 vault. It imports Tom's 12 rules verbatim with a one-line analogy note ("code"→"notes", "codebase"→"vault", "tests"→"verification") and attaches vault-specific corollaries to Rules 5, 8, and 9 where the coding-to-vault mapping is non-obvious. The MindStudio reference appeared in the conversation as the editable-control-plane analogy: both Claude agents and the DeepSeek worker read the same `agents.md` for policy — single source of truth for behavior, one place to edit when policy changes.
+  Context: chat_to_cowork/2026-05-16_chat_summary.md Key Discussion Points (agents.md description) + C2A2-Specific Items (MindStudio editable-control-plane analogy).
+  Type: architectural / governance / operational
+  Related decisions: PREMISE-016 (toolkit/content separation reinforcement), ASSUMPTION-158, PRESUMPTION-184 (12-rules transfer-validity)
+  Testability: testable empirically (after N≥4 weeks of multi-agent operation, audit whether agents.md actually functions as single source of truth — does a policy edit in agents.md propagate to all agent behavior? are there agent-specific overrides that bypass the contract?); testable via process (compare single-source-of-truth governance vs per-agent-contract governance for drift over time)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-159
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from chat_to_cowork/2026-05-16_chat_summary.md as the agents.md single-source-of-truth commitment with 12-rule import and MindStudio analogy.
+    Current status: UNTESTED
+
+ASSUMPTION-160:
+  Date identified: 2026-05-17
+  Statement: The DeepSeek worker is **scope-locked to `_agents/deepseek/`** (inbox / outbox / done / failed). It "never writes to live vault content; promotion is a human-or-Claude review step." Output filenames follow Maildir-style convention: `{YYYYMMDD-HHMMSS}_{task}_{job-stem}.md` so outputs sort naturally and grep cleanly. The vault-safety boundary is the architectural commitment: the worker's blast radius is bounded by the folder scope and the no-write-to-live-content rule.
+  Context: chat_to_cowork/2026-05-16_chat_summary.md Planning Notes & Priorities (scope-lock statement + Maildir convention).
+  Type: architectural / operational / safety
+  Related decisions: PREMISE-016 (toolkit/content separation), ASSUMPTION-158, ASSUMPTION-170 (hard prohibitions in agents.md), PRESUMPTION-183 (Maildir-pattern scaling), PRESUMPTION-185 (Claude-as-reviewer-bottleneck)
+  Testability: testable empirically (after the worker runs against the real vault, audit git history — did the worker ever write outside `_agents/deepseek/`? did any promotion bypass the human-or-Claude review step?); testable via process (compare scope-locked vs scope-unlocked agent architectures for safety / damage-recovery / governance load)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-160
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from chat_to_cowork/2026-05-16_chat_summary.md Planning Notes section as the scope-lock + Maildir convention + no-write-to-live-content commitment.
+    Current status: UNTESTED
+
+ASSUMPTION-161:
+  Date identified: 2026-05-17
+  Statement: The Path-2 sandboxed-worker architecture is **C2A2 architectural infrastructure (reusable post-ISME), not pathway content**. It explicitly reinforces PREMISE-016 (toolkit/content separation) by adding a second, non-Claude LLM agent to the same vault under a strict sandbox. The cowork summary frames it: "today's Chat-side DeepSeek/Obsidian work explicitly leans on the spirit of DECISION-032 (toolkit/content separation), making canonization even more grounded."
+  Context: cowork_to_chat/2026-05-16_cowork_summary.md For Morning Discussion section ("Today's Chat work is reusable architecture, not pathway content"); chat_to_cowork/2026-05-16_chat_summary.md C2A2-Specific Items ("architectural infrastructure for C2A2, not pathway content").
+  Type: architectural / classification / governance
+  Related decisions: PREMISE-016, DECISION-032 candidate (toolkit/content separation), ASSUMPTION-158, ASSUMPTION-159, ASSUMPTION-160
+  Testability: testable empirically (after N≥4 weeks, audit whether the agents.md + worker.py infrastructure is reused by another agent / another instance / another vault, validating the reusability claim); testable via process (compare classification-as-infrastructure vs classification-as-pathway-content for canonization weight + downstream-priority effects)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-161
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from both 2026-05-16 daily-sync summaries as the explicit infrastructure-not-content classification of the multi-agent work + the PREMISE-016 reinforcement claim.
+    Current status: UNTESTED
+
+ASSUMPTION-162:
+  Date identified: 2026-05-17
+  Statement: Coordination primitives for the multi-agent shared-vault pattern, as practical state of the art: **MCP as shared protocol; Git on the vault as universal undo / conflict layer; folder-scoped agent assignments** (no scheduler, no lock manager — last-write-wins; Git mitigates damage but does not prevent it). A `priority:` field on job frontmatter was explicitly deferred "until there's more than one producer."
+  Context: chat_to_cowork/2026-05-16_chat_summary.md Key Discussion Points (coordination primitives bullet) + Open Questions (priority field deferred).
+  Type: architectural / operational / coordination
+  Related decisions: ASSUMPTION-158, ASSUMPTION-160, PRESUMPTION-183 (Maildir/folder-scoping at scale)
+  Testability: testable empirically (after multi-producer operation begins — even Claude + DeepSeek both producing — measure last-write-wins collision rate; track Git-as-undo recovery work); testable via literature (multi-agent file-folder coordination patterns; CRDTs vs last-write-wins vs lock-managers for low-collision shared workspaces)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-162
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from chat_to_cowork/2026-05-16_chat_summary.md as the coordination-primitives state-of-the-art bullet.
+    Current status: UNTESTED
+
+ASSUMPTION-163:
+  Date identified: 2026-05-17
+  Statement: `worker.py` is **~60 lines, one-shot, no daemon, no retry logic, fail-loud**. Test-run output visible in the thread at 2026-05-16T20:49:13 UTC: C1–C5 checks (file routing inbox→done/failed, frontmatter parsing, fail-loud contract, vault-safety boundary, outbox filename pattern) all PASS, with `git status` showing zero changes outside `_agents/`. The worker meets Rules 2 (Simplicity First) and 12 (Fail Loud) of the operating contract.
+  Context: chat_to_cowork/2026-05-16_chat_summary.md Key Discussion Points (worker.py description + test-run output).
+  Type: architectural / operational / verification
+  Related decisions: ASSUMPTION-158, ASSUMPTION-159 (agents.md as contract), ASSUMPTION-160, ASSUMPTION-170 (hard prohibitions audited by C4 vault-safety check)
+  Testability: testable empirically (run the worker against larger / more pathological inputs; track whether fail-loud behavior holds, whether no-retry causes data loss in transient-network scenarios, whether the ~60-line scope sustains as use-cases expand); testable via process (compare one-shot / no-retry vs daemon / retry-with-backoff architectures for failure visibility vs reliability)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-163
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from chat_to_cowork/2026-05-16_chat_summary.md as the worker.py shape (~60 lines, one-shot, fail-loud) and the C1–C5 PASS evidence.
+    Current status: UNTESTED
+
+ASSUMPTION-164:
+  Date identified: 2026-05-17
+  Statement: Morning chat-scrape succeeded on **2026-05-16 — the FOURTH consecutive successful day** (05-13 / 14 / 15 / 16). Per ASSUMPTION-152's threshold ("if tomorrow's scrape also succeeds, four data points across four days starts to support the architectural-fix-via-credential framing rather than the architectural-fragility framing"), today is that fourth data point. PRESUMPTION-159's "credential-vs-architectural" question continues to weaken on the chat-scrape axis specifically, though it remains intact for the broader Chrome-MCP cluster (which is still the load-bearing substrate-decomposition gate concern).
+  Context: cowork_to_chat/2026-05-16_cowork_summary.md What Was Accomplished Today ("morning chat-scrape succeeded for the **fourth consecutive day** (05-13 / 14 / 15 / 16)") + Pipeline Status (Chat-scrape line) + For Morning Discussion (fourth-consecutive-day reframe).
+  Type: operational / empirical / pattern-stability
+  Related decisions: ASSUMPTION-126 (drought-broken claim), ASSUMPTION-140, ASSUMPTION-152 (third-consecutive + four-day threshold), PRESUMPTION-159 (credential-vs-architectural), PRESUMPTION-177 (Chrome-MCP recurrence), PRESUMPTION-190 (binary-frame critique)
+  Testability: testable empirically (track morning chat-scrape success/failure for N≥7 more consecutive days; if streak continues at N≥7-total the credential-fix-holding claim crosses to stable-pattern status; if it breaks, the architectural-fragility framing strengthens); testable via process (audit which proximal failure modes the sign-in fix actually addresses vs masks; whether the surviving failure modes have shifted to other Chrome-MCP surfaces)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-164
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork_to_chat/2026-05-16_cowork_summary.md as the fourth-consecutive on-cadence chat-scrape event crossing ASSUMPTION-152's threshold.
+    Current status: UNTESTED
+
+ASSUMPTION-165:
+  Date identified: 2026-05-17
+  Statement: The c2a2-self-awareness-daily (14a/14b) scheduled task has now **missed TWO consecutive cycles** (2026-05-15 EOD and 2026-05-16 EOD). No `architecture/changelog/2026-05-15_changes.md` or `2026-05-16_changes.md` exists; no `architecture/metrics/2026-05-15_snapshot.md` or `2026-05-16_snapshot.md` exists. Yesterday's three-consecutive-on-cadence streak (which had "substantially demoted ASSUMPTION-117's residual urgency") is broken. The pipeline that converts Chat-side architectural work into the assumption/presumption registers and feeds the 15a/15b/15c disposition cycle did not fire for two cycles. (Self-referential note: this current run — 2026-05-17 — is the resumption.)
+  Context: cowork_to_chat/2026-05-16_cowork_summary.md What Was Accomplished Today + Pipeline Status + For Morning Discussion (two-consecutive-missed-cycles is the biggest pipeline signal); plus on-disk verification: changelog/ directory's latest file is `2026-05-14_changes.md`, metrics/ directory's latest file is `2026-05-14_snapshot.md`.
+  Type: operational / meta-architectural / pipeline-health
+  Related decisions: ASSUMPTION-117 (residual-urgency demotion reversed), Agent 14a/14b scheduled-task design, ASSUMPTION-166 (lit-search pipeline ran), PRESUMPTION-187 (pipeline-failure-vs-rate-mismatch frame)
+  Testability: testable empirically (verify whether tonight's 2026-05-17 fire produces both a changelog and a snapshot; track the next N≥7 cycles for stable on-cadence behavior; if recurrence persists, escalate from credential / scheduler-state to a pipeline-design question per PRESUMPTION-187); testable via process (audit scheduler-task logs and last-fire timestamps for both 14a/14b and other end-of-day tasks; compare to identify whether this is task-specific or scheduler-wide)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-165
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork_to_chat/2026-05-16_cowork_summary.md as the two-consecutive-missed-cycles signal, confirmed against on-disk changelog/ and metrics/ directories. This run extracts it from within the resumed pipeline.
+    Current status: UNTESTED
+
+ASSUMPTION-166:
+  Date identified: 2026-05-17
+  Statement: c2a2-lit-search-pipeline **ran on cadence on 2026-05-16** (~06:00 local) and produced a documented **null run**: 0 newly QUEUED items, no INCORPORATE / MONITOR / REVISE writes, explicit empty-queue status block appended to `for_lit_search.md` and a corresponding 2026-05-16 RUN section in `lit_search_returns.md`. The pipeline **refused to drain the 57-item RE-TRIGGER cohort** via the daily pipeline (correct boundary discipline per the daily / 15d separation). The honesty-layer behavior here is good — the pipeline did not paper over its empty input; it surfaced the upstream-gap (14a/14b not fired) and the unowned-overdue cohort as items the next 14a/14b run should consider extracting.
+  Context: cowork_to_chat/2026-05-16_cowork_summary.md What Was Accomplished + For Morning Discussion (system surfaced its own gap correctly); for_lit_search.md tail (2026-05-16 empty-queue status block); ASSUMPTION's source rationale section in for_lit_search.md.
+  Type: operational / methodological / pipeline-discipline
+  Related decisions: Pathway 14 (honesty layer / PREMISE-019), ASSUMPTION-165 (14a/14b missed), ASSUMPTION-167 (RE-TRIGGER cohort), PRESUMPTION-188 (15d-as-fixable-cadence vs unbuilt-component), PRESUMPTION-195 (honesty-layer success-criterion permissive vs active)
+  Testability: testable empirically (track next N≥3 cycles for similar null-run discipline if upstream remains empty; audit whether the pipeline's escalation behavior strengthens or stays static); testable via process (compare null-run-with-status vs no-run-at-all vs forced-drain protocols for upstream-failure-surfacing)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-166
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-05-16 lit-search-pipeline null-run as a clean honesty-layer instantiation under Pathway 14's commitments.
+    Current status: UNTESTED
+
+ASSUMPTION-167:
+  Date identified: 2026-05-17
+  Statement: The 57-item RE-TRIGGER cohort from 2026-05-05 (`next_check: 2026-05-12`) is now **4 days overdue**, carry-forward in its **seventh consecutive daily 15a/15b/15c run without drain**, with no visible 15d-monitor evidence in 7+ runs. The lit-search empty-queue note offers the reframe: this is not an item-ageing problem (the items themselves haven't degraded) but an **ownership-boundary problem** — who actually processes them: daily 15c, weekly 15d, or a scheduled task that doesn't exist.
+  Context: cowork_to_chat/2026-05-16_cowork_summary.md What Was Accomplished + Pipeline Status + For Morning Discussion (57 RE-TRIGGER items as process-fragility data point); for_lit_search.md 2026-05-16 RUN section ("RE-TRIGGER items still QUEUED from 2026-05-05 cohort: 57").
+  Type: operational / pipeline-ownership / process
+  Related decisions: ASSUMPTION-166, PRESUMPTION-188 (15d-existence question), PRESUMPTION-134/159/177 (substrate-decomposition gate, joins cluster)
+  Testability: testable empirically (5-minute verification: does `c2a2-15d-monitor` scheduled task exist? when was its last fire? does its design include the RE-TRIGGER cohort as a 15d-owned input?); testable via process (compare unowned-cohort lifetimes against explicitly-owned-cohort lifetimes for the same task type)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-167
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork_to_chat/2026-05-16_cowork_summary.md + for_lit_search.md 2026-05-16 RUN section as the unowned-overdue-cohort signal at 4-days overdue.
+    Current status: UNTESTED
+
+ASSUMPTION-168:
+  Date identified: 2026-05-17
+  Statement: DECISION-032/033/034 canonization is now in **second-day carry-forward**. All three candidates have INCORPORATEd PREMISE backing as of 2026-05-15 15c (PREMISE-016 toolkit/content separation; PREMISE-017 federation default-OFF; PREMISE-018 meta-crafts first-class). Today's Chat-side DeepSeek/Obsidian work explicitly leans on the spirit of DECISION-032 (toolkit/content separation), strengthening canonization's grounding. The canonization is described in the cowork summary as "a ~10-minute desk action that closes three architectural commitments." Walk-time discussion or shortly after is the obvious slot.
+  Context: cowork_to_chat/2026-05-16_cowork_summary.md Key Decisions Made + What's Next #3 + For Morning Discussion ("DECISION-032/033/034 canonization is now in second-day carry-forward").
+  Type: operational / governance / canonization
+  Related decisions: DECISION-032/033/034 (candidate), ASSUMPTION-150 (today's three INCORPORATEs), PREMISE-016/017/018, PRESUMPTION-191 (10-minute-desk-action understated)
+  Testability: testable empirically (track whether canonization actually closes on the next walk or extends to a third / fourth carry-forward day; if canonization extends, audit the actual gating work to compare against the 10-minute estimate); testable via process (compare PREMISE-backed-candidate-DECISION canonization timing against non-PREMISE-backed candidates from prior cycles)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-168
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork_to_chat/2026-05-16_cowork_summary.md as the second-day-carry-forward state of DECISION-032/033/034 with the today-work strengthens-canonization observation.
+    Current status: UNTESTED
+
+ASSUMPTION-169:
+  Date identified: 2026-05-17
+  Statement: The pace-and-shape concern is now on its **fourth consecutive evening surfacing** (2026-05-13 sync-probe → 2026-05-14 evening sync → 2026-05-15 evening sync → 2026-05-16 evening sync). Each surfacing has been more concrete. The current data: three consecutive days have added architectural breadth and infrastructure (Pathways 18–26 + today's DeepSeek/Obsidian work) without advancing the ISME demo critical path (00, 01, 02, 03, 08, + tightening of 04/06/14). 8-week runway intact but unchanged. The cowork summary frames it: "the system has been generating architecturally-rich post-ISME work at a rate that the 14a/14b ingestion pipeline can't sustain — and today the ingestion pipeline visibly broke. That's not coincidence-shaped."
+  Context: cowork_to_chat/2026-05-16_cowork_summary.md For Morning Discussion ("Pace-and-shape question, now on its fourth consecutive evening surfacing").
+  Type: methodological / strategic / risk
+  Related decisions: ASSUMPTION-138 (deliberate post-ISME breadth arc), ASSUMPTION-119 (6 ISME-critical pathways), ASSUMPTION-165 (14a/14b missed cycles), PRESUMPTION-178 (ISME-runway-without-risk-register), PRESUMPTION-186 (pace-and-shape zero-sum framing)
+  Testability: testable empirically (audit weekly hours allocated to demo-path vs breadth/infrastructure work over the next 4 weeks against a stated allocation target; if no allocation target is set, the audit measures the implicit allocation); testable via process (compare pace-and-shape resurfacing without explicit reset vs explicit weekly allocation contracts)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-169
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from cowork_to_chat/2026-05-16_cowork_summary.md as the fourth-consecutive-evening pace-and-shape surfacing with the rate-mismatch-not-coincidence observation.
+    Current status: UNTESTED
+
+ASSUMPTION-170:
+  Date identified: 2026-05-17
+  Statement: `agents.md` codifies five hard prohibitions for any LLM agent operating on the C2A2 vault, candidate for lifting into the C2A2 architecture register's vault-safety-boundary cluster if not already there: (a) DeepSeek worker writing outside `_agents/deepseek/`; (b) any agent deleting notes without explicit confirmation; (c) any agent editing notes without first reading them (Rule 8); (d) silent merge of conflicting notes (Rule 7); (e) skipping logging on failure (Rule 12).
+  Context: chat_to_cowork/2026-05-16_chat_summary.md C2A2-Specific Items (five-prohibition list with explicit "candidate for lifting into the C2A2 architecture register" framing).
+  Type: architectural / safety / governance
+  Related decisions: ASSUMPTION-159 (agents.md as contract), ASSUMPTION-160 (scope-lock), ASSUMPTION-163 (fail-loud), PREMISE-016, PRESUMPTION-184 (12-rules transfer)
+  Testability: testable empirically (after multi-agent operation begins, audit git history for any of the five prohibitions being violated; track confirmation-rate on (b) deletion-prompts; track read-before-edit fidelity on (c)); testable via process (compare the five hard prohibitions against published multi-agent-on-shared-storage safety guidelines for completeness)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-170
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from chat_to_cowork/2026-05-16_chat_summary.md C2A2-Specific Items as the five-prohibition register-lift candidate list.
+    Current status: UNTESTED
+
+ASSUMPTION-171:
+  Date identified: 2026-05-18
+  Statement: Levin's January 2026 paper "Cognition Spaces: natural, artificial, and hybrid" (Solé/Levin, arXiv:2601.12837) is a major framework with unusually rich cross-tradition signals, justifying its inclusion under the agent's "significant work not yet captured" filter despite being outside the 30-day publication window. The specialist agent explicitly bridged it to Friston (Markov-blanket types), Hoffman (ITP/fitness geometry), Hawkins (neural space sub-region), Wolfram (ruliad slicing), Kastrup (basal aneural region), and to C2A2 itself (human-AI hybrid as the accelerator-detector's native domain).
+  Context: Levin/Friston specialist agent (local_630c5f21) PROP output, 2026-05-18 Monday run; agent's autonomous-choices section: "I included Levin's January 2026 'Cognition Spaces' paper as a 'significant work not yet captured' per the filter — it was published outside the 30-day window but represents a major framework not present in approved/pending and is unusually rich in cross-tradition signals."
+  Type: methodological / cross-tradition / curation-rule
+  Related decisions: ASSUMPTION-138 (post-ISME breadth arc), Pathway 13 (Pattern Detector), CROSS-tradition bridge cluster
+  Testability: testable empirically (audit how many "out-of-window inclusion" choices made by specialist agents in the next N≥10 runs survive Tom's review vs how many are rejected as scope-creep); testable via process (compare specialist-agent inclusion-rule (window + exception) against a strict-window-only rule for proposal quality)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-171
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the Levin/Friston specialist agent's 2026-05-18 run report and PROP-003 cross-tradition-bridge listing.
+    Current status: UNTESTED
+
+ASSUMPTION-172:
+  Date identified: 2026-05-18
+  Statement: Levin's Clofilium ionoceutical paper (colorectal cancer, OSF 10.31219/osf.io/w5dq7_v1) and Friston's announced Cambridge "Precision Psychiatry" talk (28 May 2026) together constitute a strong cross-tradition signal: both reframe pathology as a failure of precision/coherence at different scales (cell-collective bioelectric coherence ↔ neuromodulatory precision-weighting). The specialist explicitly flagged this in PROP-003 as a paradigm-shift-candidate cluster.
+  Context: Levin/Friston specialist agent (local_630c5f21) 2026-05-18 Monday run; cross-tradition-signals-noted section of the run summary.
+  Type: empirical / cross-tradition / paradigm-shift-candidate
+  Related decisions: CROSS-016/021/024 (quantum biology and precision-class bridges), ASSUMPTION-171, Pathway 13 (Pattern Detector)
+  Testability: testable via literature (audit whether precision-failure framings in bioelectric and neuromodulatory pathology research converge or diverge at the level of mechanism/measurement; search for cross-citations between Levin-school and Friston-school in the past 24 months); testable empirically (track whether PROP-003's bridge claim survives Phase-3 reviewer scrutiny in C2A2's own cross-tradition disposition cycle)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-172
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the Levin/Friston specialist agent's 2026-05-18 cross-tradition-signals annotation on PROP-003.
+    Current status: UNTESTED
+
+ASSUMPTION-173:
+  Date identified: 2026-05-18
+  Statement: Future-dated lecture announcements (such as Friston's 28 May 2026 Cambridge talk) warrant scheduling a follow-up monitoring task to capture the recording after delivery, rather than treating them as past-tense evidence. The specialist agent explicitly flagged this in the autonomous-choices section and recommended the orchestrator schedule a follow-up.
+  Context: Levin/Friston specialist agent (local_630c5f21), 2026-05-18 run, autonomous-choices: "The Friston proposal is a forward-looking talk announcement (lecture is 2026-05-28); I flagged this explicitly and recommended the orchestrator schedule a follow-up monitoring task to capture the recording afterward."
+  Type: methodological / curation-rule / scheduling
+  Related decisions: Pathway 16 (durable memory), Pathway 17 (agent-developed participant), monitor_queue.md cadence
+  Testability: testable empirically (audit whether forward-looking talk-announcement proposals reliably trigger a follow-up monitor entry; if not, the recommendation lives in the proposal narrative without operational effect); testable via process (compare proposals that include follow-up monitor entries against those that don't for downstream completion rate)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-173
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the Levin/Friston specialist agent's 2026-05-18 autonomous-choices section as a forward-looking-talk-handling rule.
+    Current status: UNTESTED
+
+ASSUMPTION-174:
+  Date identified: 2026-05-18
+  Statement: The C2A2 wiki orchestrator's Phase-6 commit-and-push is currently BLOCKED by a stale `.git/index.lock` file from 2026-05-17 17:26 that the Linux sandbox cannot remove. 476 uncommitted changes have accumulated across many days. Even if the lock cleared, CLAUDE.md's constitutional rule forbids blind push — visual local-HTTP review is required. The orchestrator surfaced this rather than attempting workaround, which is correct under the constitutional rule but raises the question of whether daily orchestrator runs that produce 0 new content should generate any wiki write at all (vs the current pattern of producing a review HTML and Gmail draft every day regardless).
+  Context: C282 wiki orchestrator run (local_2a76d5fd), 2026-05-18: "Phase 6 (commit + push) BLOCKED by stale `.git/index.lock` from 2026-05-17 17:26 that the sandbox can't remove. 476 uncommitted changes have accumulated across many days."
+  Type: operational / governance / pipeline-discipline
+  Related decisions: CLAUDE.md constitutional rule (visual review required before push), Pathway 14 (honesty layer), ASSUMPTION-159 (agents.md as contract)
+  Testability: testable empirically (count days between orchestrator runs that successfully commit vs runs blocked by lock-or-review-pending; identify lock-clearance-cadence; track whether 476-change accumulation is a one-off or a steady-state); testable via process (compare always-commit-on-content vs commit-only-if-review-passed protocols for accumulation-curve shape)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-174
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the C282 wiki orchestrator's 2026-05-18 run report as a process-fragility marker at the commit-discipline / accumulation boundary.
+    Current status: UNTESTED
+
+ASSUMPTION-175:
+  Date identified: 2026-05-18
+  Statement: The pending review queue is now at 42 — the largest in network history — and worth Tom's prioritized review pass. The morning walk handoff briefing explicitly flagged this as a top-of-priorities item. The 42 is a single-day high water mark distinct from the steady-state 30-day-window proposal volume; it reflects review-throughput lag rather than proposal-generation acceleration.
+  Context: Morning walk handoff (local_b1594599) briefing 2026-05-18: "pending queue is at 42 — the largest in network history"; C282 wiki orchestrator (local_2a76d5fd): "Pending review queue is at 42 (largest in network history). Worth Tom's prioritized review pass."
+  Type: operational / throughput / review-discipline
+  Related decisions: Pathway 25 (meta-visualization), ASSUMPTION-138 (post-ISME breadth arc), ASSUMPTION-169 (pace-and-shape concern)
+  Testability: testable empirically (track pending-queue-depth over the next N≥14 days; identify whether 42 is the steady-state peak or whether it continues to grow; identify Tom's review-throughput in proposals/day); testable via process (compare prioritized-review-pass-on-flag vs FIFO-only protocols for queue-depth-recovery time)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-175
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the morning walk handoff briefing and C282 wiki orchestrator's 2026-05-18 priority-flag on the 42-item review queue.
+    Current status: UNTESTED
+
+ASSUMPTION-176:
+  Date identified: 2026-05-18
+  Statement: The Wolfram pending queue contains two near-duplicate Q&A pairs that should be deduplicated before Tom reviews. The morning walk briefing surfaces this as a pre-review hygiene step. Near-duplicate identification was performed by the orchestrator/briefing pass without explicit similarity-threshold articulation; the deduplication recommendation is normative (duplicate-pairs reduce review-load without losing information) but treats duplicates as strict-improvement removals.
+  Context: Morning walk handoff (local_b1594599) briefing 2026-05-18: "Wolfram pending queue has two near-duplicate Q&A pairs that should be deduped before review."
+  Type: operational / methodological / review-hygiene
+  Related decisions: Pathway 25 (meta-visualization), Pathway 13 (Pattern Detector), ASSUMPTION-175 (42-queue)
+  Testability: testable empirically (audit whether the two flagged Q&A pairs are in fact substitutable, or whether one captures information the other does not; track downstream loss-events from past deduplications); testable via process (compare auto-dedup vs reviewer-confirms-then-dedup protocols for false-positive-rate on duplicate detection)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-176
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the morning walk handoff briefing's 2026-05-18 Wolfram-dedup recommendation.
+    Current status: UNTESTED
+
+ASSUMPTION-177:
+  Date identified: 2026-05-18
+  Statement: The c2a2-periodic-monitor-weekly (15d) ran today on a weekly-catchup cadence — its first fire since 2026-05-05 — resolving the schedule-failure flagged by yesterday's SYSTEMIC-RISK-FLAG-NEW. 30 items were re-queued for first-time cycle-1 re-trigger; 57 items were skipped because yesterday's exceptional daily-pipeline drain already refreshed them (advisory next 15d check 2026-05-24). The 3 stale-watch items (MONITOR-040, 042, 044) remain at cycle 3, one cycle from formal escalation (≥4 = STALE-MONITOR-FLAG). This partially addresses but does not close PRESUMPTION-188 (15d-as-fixable-cadence vs unbuilt-component) or OPEN-046 (does c2a2-15d-monitor exist?) — today's fire confirms it exists, but the schedule-reliability question remains.
+  Context: C2A2 periodic monitor weekly run (local_8cbad424), 2026-05-18: "Weekly catchup run (first 15d fire since 2026-05-05; resolves the schedule-failure flagged by 15a/15b/15c yesterday). Items processed: 30 ... Items skipped: 57 ... Stale-monitor flags: None formally issued."
+  Type: operational / pipeline-health / scheduling
+  Related decisions: PRESUMPTION-188, OPEN-046, ASSUMPTION-167 (RE-TRIGGER cohort ownership), SYSTEMIC-RISK-FLAG-NEW
+  Testability: testable empirically (track next N≥4 weekly 15d fires for on-cadence behavior; if recurrence-of-skip occurs, escalate from credential/scheduler-state to a deeper schedule-reliability question); testable via process (audit scheduler logs for 15d task definition and last-fire history; compare against 14a/14b cadence pattern)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-177
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-05-18 c2a2-periodic-monitor-weekly run report (catchup-fire resolves yesterday's SYSTEMIC-RISK-FLAG-NEW partially).
+    Current status: UNTESTED
+
+ASSUMPTION-178:
+  Date identified: 2026-05-18
+  Statement: The C2A2 wiki orchestrator and the Levin/Friston specialist disagree about today's specialist output: the orchestrator (and the morning walk handoff drawing on orchestrator state) reports "the Monday Levin+Friston specialist slot did NOT produce proposals today — only Wolfram-tagged proposals dated today appeared in `pending/`. Worth checking that cron." Yet the specialist itself (local_630c5f21) reports "C2A2 MONDAY AGENTS — 2026-05-18 — Levin Agent: 2 proposals written / Friston Agent: 1 proposals written / Total: 3 proposals added to pending/". The discrepancy may be ordering (orchestrator ran before specialist completed) or storage (specialist proposals written but with a tag/path the orchestrator's pending/-scan does not see). Either way, an inter-agent state-visibility gap is operative.
+  Context: Morning walk handoff briefing (local_b1594599): "Levin+Friston specialist slot appears to have produced nothing today despite being a Monday — orchestrator's run narrative recommends checking their cron"; C282 wiki orchestrator (local_2a76d5fd): "The Monday Levin+Friston specialist slot did **not** produce proposals today — only Wolfram-tagged proposals dated today appeared in `pending/`. Worth checking that cron"; Levin/Friston specialist (local_630c5f21): 3 proposals written report.
+  Type: operational / inter-agent / state-visibility
+  Related decisions: PRESUMPTION-187 (pipeline-failure-vs-rate-mismatch), Pathway 14 (honesty layer), ASSUMPTION-159 (agents.md as contract)
+  Testability: testable empirically (5-minute verification: do the Levin/Friston specialist's 3 proposals actually appear under pending/ at the time of the orchestrator's scan? what tag/path do they use? does the orchestrator's pending/-scan look in the right place?); testable via process (compare run-ordering options (orchestrator-first / specialist-first / parallel) for state-visibility correctness)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-178
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the three-way contradiction across today's orchestrator, morning walk handoff, and Levin/Friston specialist run reports.
+    Current status: UNTESTED
+
+ASSUMPTION-179:
+  Date identified: 2026-05-18
+  Statement: The C2A2 sewing-agent weekly run (local_57fed042) scanned `inbox/proposals/pending/` and processed "all seven 2026-05-18 inbox proposals (three Rohr, three Wright, one Friston)." This is a partial empirical resolution of OPEN-049: the proposals DO exist under `pending/`, so the C2A2 wiki orchestrator's earlier "Monday Levin+Friston specialist slot did NOT produce proposals today" report (local_2a76d5fd) is a scan-coverage / tag-filter / path-scope failure, not a write-failure on the specialist side. The morning briefing's "worth checking that cron" suggestion (relayed in local_b1594599) is therefore misdirected.
+  Context: C2A2 sewing-agent weekly run report (local_57fed042), 2026-05-18 EOD: "10 pages received Agentic Calls (52 calls total): one Levin PRS-triplets file, one Loughran-papers README, one MacIntyre tradition wiki ... and all seven 2026-05-18 inbox proposals (three Rohr, three Wright, one Friston)."
+  Type: operational / inter-agent / state-visibility / OPEN-049-partial-resolution
+  Related decisions: ASSUMPTION-178, PRESUMPTION-196, OPEN-049, Pathway 14 (honesty layer)
+  Testability: testable empirically (the proposals were observed in `pending/` by sewing-agent; the orchestrator's miss is now diagnosable as a scan-vs-write contract failure rather than a scheduling failure — next step is to capture both the orchestrator's exact scan command/filter and the path layout the specialists actually wrote to, and reconcile)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-179
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the EOD sewing-agent weekly run (local_57fed042) as the post-midday empirical witness that the orchestrator/briefing's morning miscategorization was a scan-coverage problem, not a missing-output problem.
+    Current status: UNTESTED
+
+ASSUMPTION-180:
+  Date identified: 2026-05-18
+  Statement: A second-order count discrepancy compounds OPEN-049: the sewing-agent's pending/-scan sees "three Rohr, three Wright, one Friston" (so: 0 Levin / 1 Friston / 6 weekend-rotation), while the Levin/Friston specialist's own run report (local_630c5f21) claims "Levin Agent: 2 proposals written / Friston Agent: 1 proposals written / Total: 3 proposals added to pending/." Three reconciliation candidates: (a) the specialist's "Levin: 2" count is a claim that did not result in actual writes under `pending/`; (b) the 2 Levin proposals were written to a different path (e.g., a tradition-subdir or a tag the sewing-agent's loop also misses); (c) the Friston count agrees across both views and is therefore the controlled value, isolating the discrepancy to the Levin output.
+  Context: Levin/Friston specialist (local_630c5f21) and sewing-agent (local_57fed042) cross-tabulation; only the Friston count (=1) is concordant across both scans.
+  Type: operational / inter-agent / output-counting
+  Related decisions: ASSUMPTION-178, ASSUMPTION-179, PRESUMPTION-196, OPEN-049, OPEN-052 (new)
+  Testability: testable empirically (5-15 minute audit: `ls -la inbox/proposals/pending/` filtered by 2026-05-18 + Levin-tagged files; cross-check against the specialist's claimed write list and against the sewing-agent's processed-page list)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-180
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted as the second-order discrepancy isolated by cross-tabulating the Levin/Friston specialist's run-report counts against the sewing-agent's pending/-scan processed-page list.
+    Current status: UNTESTED
+
+ASSUMPTION-181:
+  Date identified: 2026-05-18
+  Statement: 2026-05-18 connectivity row appended to `architecture/metrics/connectivity_log.csv`: `2026-05-18,1104,2,17,1123`. Orphan-count jumped +338 vs 2026-05-10. The sewing-agent's own diagnosis: "the entire jump is the newly-in-scope `architecture/lit_search_results/` corpus (754 auto-generated lit-search files). Recommend adding that path to the agent's exclusion list in a future run — flagged in the log."
+  Context: Sewing-agent run (local_57fed042), connectivity-log diff vs 2026-05-10 prior row.
+  Type: operational / metrics-scope / sewing-agent-configuration
+  Related decisions: Pathway 13 (Pattern Detector), Pathway 25 (meta-visualization), DECISION-036-cluster
+  Testability: testable via process (exclude `architecture/lit_search_results/` from sewing-agent's traversal in next run; verify orphan count drops by ~338); testable empirically (compare connectivity row N vs N+1 across exclusion-vs-inclusion to quantify the lit_search_results/ scope contribution)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-181
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the sewing-agent's self-reported scope-diagnosis of the +338 orphan jump.
+    Current status: UNTESTED
+
+ASSUMPTION-182:
+  Date identified: 2026-05-18
+  Statement: The sewing-agent wrote three new substantive cross-tradition bridge notes to `synthesis/` on 2026-05-18: (a) `friston_levin_bridge.md` — precision-weighting as substrate-agnostic FEP core; neuromodulator-precision in brains ≅ Vmem-precision in cell collectives ("Strongest empirical bridge in today's batch"); (b) `mcgilchrist_rohr_bridge.md` — Rohr's three 2026-05-18 proposals operationalize three components of McGilchrist's hemispheric account; (c) `wright_rohr_bridge.md` — Wright's *ruach* × Rohr's Universal Christ as the same participatory move in different scriptural registers, plus the cruciform-suffering convergence.
+  Context: Sewing-agent run report (local_57fed042); the three bridge notes are reported as the run's substantive synthesis output.
+  Type: empirical / cross-tradition / structural-homology
+  Related decisions: ASSUMPTION-172 (PROP-003 paradigm-shift candidate), Pathway 13 (Pattern Detector), OPEN-051, OPEN-053 (new), PRESUMPTION-198, PRESUMPTION-207 (new)
+  Testability: testable via process (Pattern-Detector / Pathway-13 instantiation should re-derive or refute these bridges as independent confirmation); testable empirically (receiving-tradition specialists should confirm or contest each bridge from their side)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-182
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the sewing-agent's three-bridge-note synthesis output as the second meaningful cross-tradition bridge cluster of the day (joining PROP-003 from this morning).
+    Current status: UNTESTED
+
+ASSUMPTION-183:
+  Date identified: 2026-05-18
+  Statement: The FC26 conference abstract Revision 2 was closed as submission-ready (paper-sketches session local_ea04730f). The abstract states a corpus horizon: "agents running since early April 2026, through Day 100 of 308, full commentary by July 2026." The terms "empirically prefigured" (¶1 load-bearing position) and "published thought of" (¶2) were installed; HTM was spelled out; Hoffman attribution on the discharge section was confirmed.
+  Context: Paper sketches session (local_ea04730f): "The abstract is in submission-ready shape from my side." Cross-confirmed by the evening cowork-to-chat session (local_3ea0d368) "FC26 abstract (local_ea04730f) — Revision 2 closed out, submission-ready."
+  Type: empirical / publication-commitment / horizon-articulation
+  Related decisions: ASSUMPTION-168 (canonization momentum), DECISION-036 carry-forward, Pathway 22 (individual second brain), Pathway 24 (meta-crafts governance)
+  Testability: testable via process (FC26 submission acceptance/rejection is the immediate test; the 308-day horizon is testable as a cadence-discipline measurement against today's 2-cycle gap and any future gaps)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-183
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the FC26-abstract Revision-2 closure as a publication-commitment + 308-day-corpus-horizon assumption pair.
+    Current status: UNTESTED
+
+ASSUMPTION-184:
+  Date identified: 2026-05-18
+  Statement: Cowork-to-chat delivery via `document.execCommand('insertText', ...)` on the ProseMirror contenteditable works where the morning's `type`-with-newlines path misfired (local_3ea0d368): "Used `document.execCommand('insertText', ...)` on the ProseMirror contenteditable rather than the `type`-with-newlines path that misfired this morning — that fix is now recorded in the file footer as a SKILL.md update recommendation."
+  Context: Evening cowork-to-chat session (local_3ea0d368): successful single-message delivery to "Morning planning walk" thread (chat ID `ed8b7056-407d-4a71-8fae-62b08e9613e0`).
+  Type: methodological / tooling / SKILL.md-update-pending
+  Related decisions: Pathway 16 (durable memory), Pathway 8 (prepared presentation), morning briefing pipeline
+  Testability: testable empirically (next N≥3 cowork-to-chat sends using `insertText` should succeed; if `type`-with-newlines is retried for a control, it should re-fail; if `insertText` fails on a future send, the working-condition hypothesis tightens or breaks)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-184
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the evening cowork-to-chat session's explicit method-substitution and SKILL.md-update-recommendation note.
+    Current status: UNTESTED
+
+ASSUMPTION-185:
+  Date identified: 2026-05-18
+  Statement: Cross-project verification methodology — the Pulte Pre-Test Pack (local_26b6c078, Keough School Obsidian Wiki Project) installs graded scoring (0 / 0.5 / 1) with per-prediction rationale, and addresses four contamination modes (temporal: pre-write deadlines; author: separation of writer and tester; specificity: named pairs not clusters; scoring-grain: graded not binary). Healthy expected total stated as 3.0–4.0 / 5.0 — a 5.0 reads as "predictions too loose," not "methodology validated." This methodology is C2A2-transferable for pre-registering predictions on bridge claims (PROP-003 cluster, OPEN-051) and on cadence-discipline (ASSUMPTION-117 streak, ASSUMPTION-168 carry-forward).
+  Context: Pulte Pre-Test Pack session (local_26b6c078): "five named-pair predictions with named-pair specificity, graded scoring (0 / 0.5 / 1), independent confidence ratings, and a per-prediction rationale field. Expected healthy total: 3.0–4.0 / 5.0."
+  Type: methodological / cross-project-transfer / verification-framework
+  Related decisions: OPEN-051 (cross-specialist confirmation), Pathway 14 (honesty layer), Pathway 13 (Pattern Detector), Pathway 24 (meta-crafts governance)
+  Testability: testable via process (apply the four-contamination-mode framework to a C2A2 pre-registration on PROP-003 bridge survival rate and compare to current sole-source baseline); testable empirically (track whether C2A2 graded-scoring on bridges produces healthy 3.0–4.0/5.0 totals vs the 5.0-as-too-loose failure mode)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-185
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the Pulte Pre-Test Pack session as a cross-project methodology-transfer assumption whose four-contamination-mode frame is C2A2-applicable.
+    Current status: UNTESTED
+
+ASSUMPTION-186:
+  Date identified: 2026-05-19
+  Statement: The "51 pending — largest in network history" alarm is a measurement artifact, not a real backlog. 36 of the 51 files in `wiki/inbox/proposals/pending/` are stale duplicates that also exist in `approved/` (genuine unreviewed = 15). [stated] cleanup-stale-pending-proposals session: "36 filenames appear in both ... All 36 are stale duplicates in `pending/` that should be removed. After cleanup, `pending/` will hold 15 files (51 − 36)." The morning chat-scrape independently framed the same inflation as possible "reflection lag, not a real backlog."
+  Context: cleanup-stale-pending-proposals (local_2837a01f, report-only) + morning chat scrape (local_251ff746) + C282 orchestrator (local_a328c51c) which suspended Phase-2 hunts on the inflated 51 count under the conservation principle.
+  Type: empirical / operational
+  Related decisions: DECISION-036 candidate, conservation-principle Phase-2 gating
+  Testability: testable empirically (run the comm -12 dedup; confirm pending drops to 15; confirm orchestrator's next-run conservation gate flips once the count is corrected)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-186
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the cleanup session's duplicate-count finding cross-checked against the orchestrator's conservation-gate decision and the chat-scrape's reflection-lag framing.
+    Current status: UNTESTED
+
+ASSUMPTION-187:
+  Date identified: 2026-05-19
+  Statement: The 2026-05-18 `generate_review_page.py` overwrite-bug fix may be incomplete — the cleanup found 36 duplicates where the task expected 35; one new collision has appeared since the fix. [stated] "the task said 35, I found 36. One extra duplicate has appeared since the 2026-05-18 fix ... if the bug is meant to be fully fixed, that's worth a quick look at `generate_review_page.py` before you trust the count won't grow again."
+  Context: cleanup-stale-pending-proposals session (local_2837a01f); Rule 7 surfaced-conflict note.
+  Type: methodological / tooling
+  Related decisions: DECISION-036 candidate (review-page generation)
+  Testability: testable empirically (inspect generate_review_page.py write path; re-run a review cycle and check whether new pending/approved collisions reappear)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-187
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the cleanup session's 36-vs-35 discrepancy flag.
+    Current status: UNTESTED
+
+ASSUMPTION-188:
+  Date identified: 2026-05-19
+  Statement: The sandbox cannot write to `.git`; commits/pushes must happen from Tom's host shell. [stated] C282 orchestrator: "Phase 6: BLOCKED — sandbox cannot write to `.git` (stale 39-hour lock from 2026-05-17 cannot be removed; every git object-write hits 'Operation not permitted'). The file changes ARE on disk; commit/push will need to happen from Tom's host shell." Confirmed empirically the same day: Tom's host-shell push landed clean (b2c5af2..46cebd3) and the host-run sync_vault.sh pushed clean (3709adc..b2c5af2).
+  Context: C282 orchestrator (local_a328c51c) Phase-6 block + debug-wiki-push (local_9dec9408) + mobile-visibility (local_29d859a8) host-shell successes.
+  Type: architectural / operational
+  Related decisions: DECISION-036 candidate (Path-2 sandboxed worker), OPEN-050
+  Testability: testable empirically (already partially grounded — host-shell commits succeed; sandbox object-writes fail with ACL "Operation not permitted")
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-188
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the orchestrator's Phase-6 block statement, corroborated by two same-day host-shell push successes.
+    Current status: UNTESTED
+
+ASSUMPTION-189:
+  Date identified: 2026-05-19
+  Statement: The recurring `.git/index.lock` plus the ~716–720-uncommitted / 356-staged "morass" is caused by scheduled commit agents colliding or silently failing — not a one-off lock. [stated] debug-wiki-push: "The 720-uncommitted / 356-staged morass + recurring index.lock — the scheduled commit agents look like they're colliding or silently failing. That's the real systemic issue behind both today's locks and the staged pile-up." Corroborated by the mobile-visibility session's log evidence of the 2026-05-18 21:00 scheduled run dying on `index.lock: File exists`.
+  Context: debug-wiki-push (local_9dec9408) + mobile-visibility sync_vault.log (local_29d859a8) + orchestrator stale-lock block (local_a328c51c).
+  Type: architectural / operational
+  Related decisions: OPEN-050, DECISION-036 candidate
+  Testability: testable empirically (instrument the scheduled commit agents; check for concurrent git invocations and lock contention; confirm whether disabling overlap clears the recurrence)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-189
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the debug session's systemic diagnosis, corroborated by the dated lock-failure log lines in the sync_vault run.
+    Current status: UNTESTED
+
+ASSUMPTION-190:
+  Date identified: 2026-05-19
+  Statement: Hardening `sync_vault.sh` to `git commit --only ... -- wiki/vault/` makes the 21:00 scheduled run safe to fire unattended — it physically cannot pull the staged pile into a sync push. [stated] mobile-visibility: "the commit is now `commit --only ... -- wiki/vault/`, so it physically cannot pull the staged pile into a sync push ... the 21:00 scheduled run is safe to fire unattended going forward — no need to disable it." Grounded same-day: the hardened run committed exactly 80 files, all under `wiki/vault/`, and pushed clean.
+  Context: mobile-visibility session (local_29d859a8), Tom-interactive; sync_vault.sh patch + verified run.
+  Type: methodological / tooling
+  Related decisions: OPEN-050, ASSUMPTION-189
+  Testability: testable empirically (monitor the next N≥3 unattended 21:00 sync runs; confirm each commits only wiki/vault/ paths and leaves the architecture/ pile untouched)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-190
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the sync_vault.sh hardening claim and its same-day verified clean run.
+    Current status: UNTESTED
+
+ASSUMPTION-191:
+  Date identified: 2026-05-19
+  Statement: Two recurrence-prevention guards landed today: `regen_sociogram.sh` refuses to write a Summa-less Sociogram build, and `.gitignore *.bak*` prevents backup files being committed. [stated] debug-wiki-push: "regen_sociogram.sh — future regens can't drop `--summa` (it refuses to write a Summa-less build) ... Backups can no longer be committed (`*.bak*` ignored)."
+  Context: debug-wiki-push (local_9dec9408); Sociogram Summa-node restoration (119 Summa commentary nodes confirmed in committed build).
+  Type: methodological / tooling (guard)
+  Related decisions: Pathway 16 (durable memory), wiki_narration regeneration workflow
+  Testability: testable empirically (attempt a regen without --summa and confirm refusal; attempt to commit a *.bak file and confirm it is ignored)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-191
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the debug session's two stated guard mechanisms.
+    Current status: UNTESTED
+
+ASSUMPTION-192:
+  Date identified: 2026-05-19
+  Statement: The project CLAUDE.md visualization figures are stale — the narration graph is actually ~1,533 nodes / 36,608 edges / ~15.4 MB, not the documented "1,647 nodes / ~3,000 edges / ~4 MB"; the discrepancy makes the cellular/payload-diet concern materially worse. [stated] evening cowork-to-chat: "the CLAUDE.md viz figures are stale — the graph is actually 1,533 nodes / 36,608 edges and the file is ~15.4 MB, not '1,647 / ~3,000 / 4 MB.' That makes the cellular/payload-diet concern materially worse than the deferred pin assumed." (Stats corrected in CLAUDE.md and the device-freedom pin in the mobile-visibility session.)
+  Context: evening cowork-to-chat (local_8456902d) + mobile-visibility CLAUDE.md correction (local_29d859a8).
+  Type: empirical / documentation-integrity
+  Related decisions: payload-diet pathway (deferred), Pathway 18 (portability toolkit)
+  Testability: testable empirically (count nodes/edges in the current wiki_narration.html and compare to CLAUDE.md as-corrected)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-192
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the evening session's stale-stat discovery and the mobile session's same-day CLAUDE.md correction.
+    Current status: UNTESTED
+
+ASSUMPTION-193:
+  Date identified: 2026-05-19
+  Statement: The PRS-triplet network has grown to 231 triplets / 90 cross-program connections / 35 findings (from the frozen 2026-05-05 baseline of 133 / 54 / 20), with a new 32-connection "synergistic-coil" structural-bridge layer. [stated] PRS-triplet-viz review: "231 triplets (was 133), 90 cross-program connections (was 54), 35 findings (was 20), and a new synergistic-coil layer — 32 structural-bridge connections drawn as cyan arcs." (Note: the C282 orchestrator's same-day network line reported 225 triplets / ~90 cross-program connections / 35 findings — a 231-vs-225 triplet-count divergence; see PRESUMPTION-212.)
+  Context: Review-PRS-triplet-visualization (local_a20a370b) + C282 orchestrator network line (local_a328c51c).
+  Type: empirical
+  Related decisions: Pathway 13 (Pattern Detector), prs_3d visualization
+  Testability: testable empirically (run extract_prs_data.py and reconcile the 231 vs 225 triplet count against the vault)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-193
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the PRS-3d review session's growth figures; flagged the cross-source triplet-count divergence with the orchestrator.
+    Current status: UNTESTED
+
+ASSUMPTION-194:
+  Date identified: 2026-05-19
+  Statement: The prs_3d generator is NOT idempotent — it must be fed `template_prs_3d.html`, never an already-built file. [stated] PRS-triplet-viz review: "the generator is **not idempotent** — always feed it `template_prs_3d.html`, never an already-built file."
+  Context: Review-PRS-triplet-visualization (local_a20a370b); regeneration-pipeline construction.
+  Type: methodological / tooling (constraint)
+  Related decisions: prs_3d visualization workflow; wiki_narration regeneration workflow (parallel non-idempotence risk)
+  Testability: testable empirically (feed an already-built file to the generator and confirm corruption / double-injection)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-194
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the PRS-3d review session's stated tooling constraint.
+    Current status: UNTESTED
+
+ASSUMPTION-195:
+  Date identified: 2026-05-19
+  Statement: Two PRS data-integrity quirks are real and worth a later cleanup: a duplicate `PRS-10` in `arkanihamed/prs_triplets.md`, and `CROSS-051–054` existing under both header styles in `cross_program_index.md`. [stated] PRS-triplet-viz review: "two data quirks it flags are real and worth a later cleanup — a duplicate `PRS-10` in `arkanihamed/prs_triplets.md`, and `CROSS-051–054` existing under both header styles in `cross_program_index.md`."
+  Context: Review-PRS-triplet-visualization (local_a20a370b); validate_prs_3d.py count-integrity flags.
+  Type: empirical / data-integrity
+  Related decisions: Pathway 13 (Pattern Detector input quality)
+  Testability: testable empirically (grep the two source files; confirm the duplicate and dual-header entries)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-195
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the validator's two flagged data quirks.
+    Current status: UNTESTED
+
+ASSUMPTION-196:
+  Date identified: 2026-05-19
+  Statement: The Hawkins/Hoffman Tuesday slot bringing 0 proposals is the correct signal, not a search failure — the 30-day window fell in a quiet stretch where the recent Hoffman/Hawkins bursts are already ingested. [stated] Tuesday specialist: "Per Rule 12 (Fail loud) — I will not fabricate proposals to hit a target ... Bringing zero proposals today is the correct signal, not a search failure."
+  Context: C2A2 Tuesday specialist (local_46845ec5); honest null after exhaustive arXiv/podcast/preprint search.
+  Type: methodological / epistemic
+  Related decisions: tradition-specialist quality filter; Rule 12 (fail-loud)
+  Testability: testable empirically (audit search coverage; confirm no in-window Hawkins/Hoffman-authored work was missed)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-196
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the Tuesday specialist's explicit Rule-12 honest-null statement.
+    Current status: UNTESTED
+
+ASSUMPTION-197:
+  Date identified: 2026-05-19
+  Statement: Pathway 27 (Universal Search & Ask) rests on a "one-index-two-surfaces" architecture: a single `entity_index.json` drives both client-side deterministic Search and broker-backed honesty-layer-disciplined Ask, plus render-time canonical auto-hyperlinking; Search + hyperlinking ship before July 8 (broker-independent), Ask stages after the broker and honesty layer land. [stated] debug-wiki-push, drafting Pathway 27: "Search ≠ hyperlinks ... but driven by one `entity_index.json` ... Search + hyperlinking ship before July 8 (broker-independent, table-stakes); Ask stages after the broker and honesty layer land."
+  Context: debug-wiki-push (local_9dec9408); new architecture doc `27_universal_search_and_ask.md` (status: drafted; depends_on broker, perspective_lattice, honesty_layer; enables recursive_episode, apprentice_mode; isme_critical: yes).
+  Type: architectural
+  Related decisions: DECISION-037 candidate (adopt Pathway 27), Pathway 00 (broker), Pathway 14 (honesty layer)
+  Testability: testable empirically (build entity_index.json; verify one index can serve all three surfaces without freshness/determinism conflict — see PRESUMPTION-217)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-197
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the Pathway-27 draft's one-index-two-surfaces design rationale and ISME staging.
+    Current status: UNTESTED
+
+ASSUMPTION-198:
+  Date identified: 2026-05-19
+  Statement: 32 fabricated transcripts must be re-fetched before the July 8 publicize date; the commentaries are verified sound, so the problem is transcript-only. [stated] debug-wiki-push: "Re-fetch the **32 fabricated transcripts** (commentaries verified sound, so it's transcript-only) before the July 8 publicize date."
+  Context: debug-wiki-push (local_9dec9408); fabrication-guard work earlier in the day (silent-fabrication guard among "three recurrence traps").
+  Type: empirical / integrity
+  Related decisions: Pathway 14 (honesty layer), QC fabrication guard
+  Testability: testable empirically (enumerate the 32 transcripts; re-fetch and diff against fabricated versions; confirm commentary soundness is unaffected)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-198
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the debug session's transcript-fabrication remediation note.
+    Current status: UNTESTED
+
+ASSUMPTION-199:
+  Date identified: 2026-05-19
+  Statement: The lit-search pipeline's cycle-1 RE-TRIGGER refresh uses a carry-forward convention ("no new evidence in refresh gap; carry-forward") rather than expensive net-new web searches with low expected yield; and grounding citations draw on the model's training-knowledge corpus per the pipeline's established convention. [stated] lit-search-pipeline run: "for most items, recorded 'no new evidence in refresh gap; carry-forward' rather than attempting expensive net-new web searches with low expected yield ... Cited sources drew on training-knowledge corpus ... per the pipeline's established knowledge-search convention."
+  Context: c2a2-lit-search-pipeline (local_c7bf1973); 30 Cohort-A re-trigger items all MONITOR-continued via carry-forward.
+  Type: methodological
+  Related decisions: 15a/15b search convention, MONITOR cycle protocol
+  Testability: testable empirically (spot-check carry-forwarded items for missed updates; compare training-corpus citations against a live-search control for a sample)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-199
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the lit-pipeline run's stated autonomous cost-benefit and citation-source choices.
+    Current status: UNTESTED
+
+ASSUMPTION-200:
+  Date identified: 2026-05-19
+  Statement: Four Sunday-cron tasks (`c2a2-agent-wright-rohr`, `c2a2-sewing-agent-weekly`, `weekly-agent-ecosystem-report`, `c2a2-periodic-monitor-weekly`) fired as a single Monday-afternoon catch-up burst (2026-05-18 ~13:43–13:56 UTC) instead of their Sunday slots; this warrants a re-check next Sunday to confirm on-time firing. [stated] scheduler-health-check: "Four Sunday-cron tasks ... all last ran on Monday 2026-05-18 ~13:43–13:56 UTC instead of their Sunday slots — looks like a single Monday-afternoon catch-up burst. Worth a glance next Sunday."
+  Context: scheduler-health-check (local_d41a0c72); 29 enabled tasks otherwise healthy.
+  Type: operational / cadence
+  Related decisions: ASSUMPTION-117 (cadence discipline), 15d periodic monitor schedule
+  Testability: testable empirically (observe whether the four tasks fire on Sunday 2026-05-24/25 vs slip to Monday catch-up again)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-200
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the scheduler-health-check's Sunday-cron catch-up observation.
+    Current status: UNTESTED
+
+ASSUMPTION-201:
+  Date identified: 2026-05-20
+  Statement: The view called "3D PRS" is not a chart of triplets but a **narrative connectome** — the connected unit is the agentic PRS narrative (agent → goal → problem → resource → solution → outcome), read as a complete little model and, equivalently, a compression; three connectomes share one architecture (neural: neurons/axons; Hawkins/Thousand Brains: cortical columns/voting fibers; narrative: PRS narratives/shared-resource + coil fibers). [stated] narrative_prs_connectome.md: "It is a connectome — and specifically a narrative connectome ... a triplet is a model ... and, equivalently, a compression ... This is exactly the status Hawkins grants the cortical column."
+  Context: Review-PRS-triplet-visualization (local_a20a370b); Tom-authored guiding document `architecture/narrative_prs_connectome.md` (status: architecturally guiding).
+  Type: architectural / epistemic
+  Related decisions: DECISION-038 (adopt connectome model), prs_3d → Narrative Connectome rebuild
+  Testability: framework commitment (the connectome framing is largely a modeling stance, not testable); but the embedded compression sub-claim (a PRS narrative is an information-theoretic compression) is testable via literature — see ASSUMPTION-208 and PRESUMPTION-222
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-201
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the guiding document's thesis as the day's load-bearing conceptual reframe.
+    Current status: UNTESTED
+
+ASSUMPTION-202:
+  Date identified: 2026-05-20
+  Statement: The synergistic coils are **association fibers** — long-range connections that bind otherwise-separate narrative regions into a larger whole — not decoration; a tradition is a densely interconnected module of narratives, and a coil is the fiber that lets two modules begin to function as one. [stated] narrative_prs_connectome.md: "the coils are not decoration; they are association fibers."
+  Context: Review-PRS-triplet-visualization (local_a20a370b); the connectome model's account of the cross-tradition coil layer (32 coils in the live build).
+  Type: architectural / methodological
+  Related decisions: DECISION-038, DECISION-040 (coils as the convergence instrument), Pathway 04 (perspective lattice), traditions/loughran (Synergistic Coil)
+  Testability: framework commitment (the fiber framing) with a testable corollary — whether coil density between two modules tracks any independent measure of those traditions integrating (testable empirically)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-202
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the guiding document's elevation of coils from decoration to association fibers.
+    Current status: UNTESTED
+
+ASSUMPTION-203:
+  Date identified: 2026-05-20
+  Statement: A visualization is only ever as good as the model of what is being visualized that drives it; therefore the Connectome's perspective/control set must be **re-derived from the model**, aiming for parity of *richness* with the Sociogram, not parity of *controls*. [stated] narrative_prs_connectome.md Directive 2: "Parity of richness with the Sociogram, not parity of controls"; "We cannot decide what to visualize until we are clear about what we are visualizing."
+  Context: Review-PRS-triplet-visualization (local_a20a370b); Directive 2 of the guiding document; seeds OPEN-058 (perspective set).
+  Type: methodological
+  Related decisions: DECISION-038, OPEN-058 (perspective set to derive from the model)
+  Testability: framework commitment (a design principle, not literature-testable directly); the proposed perspective set it generates is empirically evaluable for usefulness
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-203
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the guiding document's model-driven-visualization principle and Directive 2.
+    Current status: UNTESTED
+
+ASSUMPTION-204:
+  Date identified: 2026-05-20
+  Statement: A coil's "altitude" should encode **discovery-time** (when the bridging insight was formed — ~2026 for nearly all current coils), not the age of the ideas it joins; pinning coils to the founding era is why they "sink" and never reach the recent band. This is the first concrete test of "axis follows model." [stated] narrative_prs_connectome.md: "A coil should sit where its bridging insight was formed (discovery-time ...), not at the age of the ideas it joins ... the concrete first test of 'axis follows model.'"
+  Context: Review-PRS-triplet-visualization (local_a20a370b); implemented as Phase 1 of the connectome rebuild (coil altitude moved to the ~2026 discovery-year band).
+  Type: methodological / architectural
+  Related decisions: DECISION-039 (coil altitude = discovery-time), OPEN-057 (node vertical-axis semantics)
+  Testability: testable empirically (audit each coil's discovery-year vs the founding-era it previously inherited; confirm the visual band shift matches the intended semantics)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-204
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the guiding document's open-decisions section and the Phase-1 implementation note.
+    Current status: UNTESTED
+
+ASSUMPTION-205:
+  Date identified: 2026-05-20
+  Statement: Cross-tradition convergence is **analogical, not verbatim** — only **3** literal cross-tradition resource hubs exist (no resource is shared by more than 2 traditions); therefore the coil layer (association fibers), not shared resources, is the project's real convergence instrument. [stated] 2026-05-20 cowork summary / Phase-2 finding: "only 3 literal cross-tradition hubs exist (max 2 traditions per resource), confirming traditions converge analogically, not verbatim."
+  Context: Review-PRS-triplet-visualization (local_a20a370b); Phase-2 convergence-hub implementation (resources shared across ≥2 traditions glow gold) and its empirical finding.
+  Type: empirical
+  Related decisions: DECISION-040 (convergence is analogical; coils are the convergence instrument), ISME/FC26 framing of "convergence"
+  Testability: testable empirically (re-run the shared-resource hub detector; confirm the count of 3 and the max-2-traditions ceiling are not artifacts of resource naming/normalization — see PRESUMPTION-228)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-205
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the Phase-2 convergence-hub empirical finding.
+    Current status: UNTESTED
+
+ASSUMPTION-206:
+  Date identified: 2026-05-20
+  Statement: Generative-coil detection is **lexical-first (v1)** — 17 directed solution→resource handoffs found by lexical matching — with semantic/embedding detection deferred to v2. [stated] 2026-05-20 cowork summary: "Phase 3 generative coils — 17 directed solution→resource handoffs (lexical v1; semantic/embedding is v2)."
+  Context: Review-PRS-triplet-visualization (local_a20a370b); Phase-3 generative-coil layer (17 chains rendered live); verified to react to the time slider (15 of 17 chains have a 2026 endpoint).
+  Type: methodological / tooling
+  Related decisions: DECISION-041 (lexical-first generative detection), OPEN-059 (semantic generative detection v2)
+  Testability: testable empirically (compare lexical-v1 generative chains against a semantic/embedding detector on the same corpus; measure precision/recall of the lexical approach)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-206
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the Phase-3 generative-coil implementation choice and its stated v1/v2 staging.
+    Current status: UNTESTED
+
+ASSUMPTION-207:
+  Date identified: 2026-05-20
+  Statement: The telos of the narrative connectome is the **emergence of a master science** — Aristotle's architectonic, Aquinas's sapientia, MacIntyre's tradition-craft — and there is **not one** master science but **rivals**: each mature tradition articulates its own, and they meet through coils as rivals-and-complements, never as a single convergent whole; "master" is architectonic (ordering), never dominating. [stated] narrative_prs_connectome.md: "What the connectome ultimately lets us watch is emergence ... a master science ... there is not one master science but rivals ... 'Master' here is architectonic (ordering), never dominating."
+  Context: Review-PRS-triplet-visualization (local_a20a370b); the guiding document's telos section.
+  Type: epistemic / normative
+  Related decisions: DECISION-038, DECISION-040, OPEN-061 (connectome reframe as ISME/FC26 paper spine)
+  Testability: framework commitment (not testable — a teleological/philosophical stance integrating Aristotle, Aquinas, MacIntyre); the historical claim that mature traditions articulate architectonic sciences is partially testable via the history/philosophy of science literature
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-207
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the guiding document's telos section; tagged as framework commitment with a partially-testable historical corollary.
+    Current status: UNTESTED
+
+ASSUMPTION-208:
+  Date identified: 2026-05-20
+  Statement: Progress is **better compression** — a later narrative that predicts/explains more of the same problem-space with less — so a forming master science should be visible as the connectome's **total description length falling even as it covers more**; this reconnects to Friston (free-energy minimization as compression), Wolfram (computational irreducibility as the incompressible limit), and the original RC-pilot ambition of quantifying progress through chained PRS triplets. [stated] narrative_prs_connectome.md: "progress is better compression ... A master science forming should be visible as the connectome's total description length falling even as it covers more."
+  Context: Review-PRS-triplet-visualization (local_a20a370b); the guiding document's compression/entropy thread (proposed by Claude, adopted into the model).
+  Type: epistemic / empirical
+  Related decisions: DECISION-038, connectome metrics proposal (degree/modularity/fiber-density/path-length)
+  Testability: testable via literature (MDL/algorithmic information theory; free-energy-as-compression) and testable empirically (define and compute a description-length proxy over the triplet corpus over time) — but rests on PRESUMPTION-222 (narrative compression ≡ information-theoretic compression)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-208
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the guiding document's compression/entropy thread as a testable progress metric proposal.
+    Current status: UNTESTED
+
+ASSUMPTION-209:
+  Date identified: 2026-05-20
+  Statement: Interaction behavior should form a **common behavior cluster across tabs** — the Connectome's node/edge/"?" interactions should match the Sociogram's: node click → that file in the right panel (filters stay); edge click → collapse the left filters and show the two connected files at once (source left, target right); any new click dismisses; empty-space click restores filters; "?" toggles open/closed. [stated] Tom: "Keep checking for ways to stay within/produce a common behavior cluster across tabs"; "port the functionality of the down button/up-on-edge-click behavior ... just as in sociogram."
+  Context: Review-PRS-triplet-visualization (local_a20a370b); the Sociogram two-panel + dismiss-on-new-click model ported to the Connectome (built via the generator, staged in review, then promoted to live).
+  Type: methodological / UX
+  Related decisions: DECISION-042 (common interaction cluster + review-before-promote), Sociogram interaction model
+  Testability: framework commitment (a UX consistency directive); evaluable empirically via cross-tab usability testing
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-209
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Tom's repeated common-behavior-cluster directive and the Sociogram-port implementation.
+    Current status: UNTESTED
+
+ASSUMPTION-210:
+  Date identified: 2026-05-20
+  Statement: For edge clicks, showing the **two endpoint narratives for all edge types** (uniform behavior), with the edge's own nature/year as a small header, is preferable to showing edge metadata — accepting the stated honesty caveat that for **synergistic coils and cross-links** (which bridge whole traditions) the two files are the *representative* narrative of each bridged tradition, not idea-precise endpoints. [stated] Claude proposed and Tom confirmed ("go please"): "show the two endpoint narratives for all edge types (uniform behavior = the common cluster you want), and tuck the edge's own label/nature as a small header."
+  Context: Review-PRS-triplet-visualization (local_a20a370b); the two-panel edge port; explicit honesty note that tradition-bridging edges use representative narratives.
+  Type: methodological / UX
+  Related decisions: DECISION-042, ASSUMPTION-209
+  Testability: framework commitment (a UX uniformity choice); the representative-narrative substitution's fidelity is the subject of PRESUMPTION-226
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-210
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the proposed-and-confirmed uniform two-endpoint edge behavior, including its stated representative-narrative caveat.
+    Current status: UNTESTED
+
+ASSUMPTION-211:
+  Date identified: 2026-05-20
+  Statement: Tom's guiding/definitional documents are placed **both** in `architecture/` and as a copy in his thinker file `traditions/loughran/`, and laced into the connectome via wikilinks, so the project's own guiding narratives become nodes in the connectome they govern — "the system documents itself inside itself." [stated] narrative_prs_connectome.md Directive 3: "placed both here (architecture/) and as a copy in his thinker file (traditions/loughran/) ... the system documents itself inside itself."
+  Context: Review-PRS-triplet-visualization (local_a20a370b); Directive 3 (author-contribution convention) of the guiding document.
+  Type: architectural / methodological
+  Related decisions: DECISION-038 (author-contribution convention), Pathway 04 (perspective lattice)
+  Testability: framework commitment (a documentation/authorship convention); its self-referential consequence is examined in PRESUMPTION-224
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-211
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the guiding document's author-contribution convention (Directive 3).
+    Current status: UNTESTED

@@ -7,7 +7,10 @@ source_title: "AMA | May 2026 — Sean Carroll's Mindscape"
 source_url: https://www.preposterousuniverse.com/podcast/2026/05/04/ama-may-2026/
 source_date: 2026-05-04
 searched_on: 2026-05-05
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-007
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

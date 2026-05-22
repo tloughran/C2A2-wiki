@@ -27,9 +27,9 @@ last_qc_outcome: "pass"
 
 ## Transcript
 
-[00:05] hello my name is Austin Habish the founder of Think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas a Suma Theologiae in a way simple and insightful for
+[00:05] hello my name is Austin Habish the founder of Think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas a Summa Theologiae in a way simple and insightful for
 
-[00:15] anyone to understand the Suma podcast is brought to you by Think Catholic taking two questions of the Suma a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas
+[00:15] anyone to understand the Summa podcast is brought to you by Think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas
 
 [00:27] and his Catholic faith this day 88 so let's get started we're covering today questions 54 and 55 of the Prima suunde that is of the distinction of habits and of the virtues as to their
 
@@ -111,7 +111,7 @@ last_qc_outcome: "pass"
 
 [08:51] Augustine virtue is a good quality of the Mind by which we live righteously of which no one can make bad use which God works in us without us first of all this is a good definition for the infused
 
-[09:05] virtues theological virtues such as faith hope and charity which are infused by God and we will discuss later in the Suma and so St Thomas tells us that if you drop that last part which God works
+[09:05] virtues theological virtues such as faith hope and charity which are infused by God and we will discuss later in the Summa and so St Thomas tells us that if you drop that last part which God works
 
 [09:16] in us without us then we have a suitable definition for the virtues in general so breaking down that definition first it says virtue is a good quality of the mind this is to distinguish op operative
 

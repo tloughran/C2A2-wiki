@@ -1,0 +1,30 @@
+SEARCH-FOR-PRESUMPTION-205:
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-205
+  Original statement: "Cross-project methodology-transfer (Kroc→Pulte→C2A2) presumes four contamination modes' relative weights are constant across institute-id domains."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: PRESUMPTION-205
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14a: Inferred from Pulte Pre-Test Pack cross-project transfer notice
+      15a: Searched for supporting literature
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Cartwright, N., 2007. "Hunting Causes and Using Them: Approaches in Philosophy and Economics." Cambridge UP — discusses "external validity" of methods: a method validated in one context does not transfer with constant weights to another; the local conditions that make a method work are part of its applicability.
+    2. Cronbach, L. & Shapiro, K., 1982. "Designing Evaluations of Educational and Social Programs." Jossey-Bass — classic treatment of methodology transfer across institutional contexts; relative weights of validity threats demonstrably vary by domain.
+    3. Munafò, M.R. et al., 2017. "A manifesto for reproducible science." Nature Human Behaviour 1 — explicitly notes that reproducibility-supporting methods (preregistration, contamination-mode taxonomies) need recalibration when ported to new domains.
+    4. Devezer, B. et al., 2021. "The case for formal methodology in scientific reform." Royal Society Open Science 8 — argues for explicit domain-recalibration of methodological frames when transferring between research contexts.
+
+  Strength of support: Strong
+
+  Summary: The presumption that four-contamination-mode relative weights are constant across institute-id domains is exactly the kind of unstated assumption that methodology-transfer literature flags as risky. Cartwright's "external validity" treatment and the Munafò manifesto both explicitly endorse recalibration on transfer rather than assumed portability. The presumption — that this should be examined — is well-supported.
+
+  Caveats: The presumption is about weight constancy, not frame-applicability. The four modes themselves may transfer (frame is portable); the relative weighting may not (calibration is local). These are separable questions.
+
+  Recommendation: SUPPORTED

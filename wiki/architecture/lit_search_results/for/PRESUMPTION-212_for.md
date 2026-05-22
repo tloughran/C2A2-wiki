@@ -1,0 +1,27 @@
+SEARCH-FOR-PRESUMPTION-212:
+  Date searched: 2026-05-20
+  Original item: PRESUMPTION-212
+  Original statement: "The documented number == the true number — registers presumed consistent and current."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-212
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — documented counts (CLAUDE.md, PRS registers) trusted as current and consistent with the artifacts they describe.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: NO-SUPPORT-FOUND
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Single-source-of-truth ideal (docs-as-code). — Aspirationally, documented == true is the goal; but the literature treats this as something to ENFORCE via auto-derivation, not something that holds by default.
+
+  Strength of support: Weak
+
+  Summary: The aspiration that documented numbers equal true numbers is the goal of single-source-of-truth practice, but no literature supports assuming it holds without an enforcement mechanism. On the contrary, the documented==true assumption is exactly what software-aging research says will fail. The supportive direction yields only an aspirational goal, not evidence the presumption is safe.
+
+  Caveats: The ideal supports enforcing equality (auto-derive), not presuming it.
+
+  Recommendation: NO-SUPPORT-FOUND

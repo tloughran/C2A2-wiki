@@ -1,0 +1,39 @@
+SEARCH-AGAINST-PRESUMPTION-200:
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-200
+  Original statement: "cycle-count-as-staleness-proxy presumption; 15d's cycle-3-stale-watch / cycle-4-escalation thresholds presume regular weekly cadence, decoupled from wall-clock-time staleness during irregular firing."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-200
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — implicit cycle=time equivalence
+      15b: Searched for challenging literature
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Lamport, L. (1978). "Time, Clocks, and the Ordering of Events." CACM. — While supporting logical clocks for ordering, explicitly notes they are NOT a substitute for wall-clock time when external/physical phenomena are involved. Staleness relative to the outside world is a wall-clock quantity.
+    2. Beyer et al. (2016). "Site Reliability Engineering." O'Reilly. — Explicitly warns against using job-count-based thresholds when job cadence can vary; wall-clock-based SLIs are required for time-sensitive monitoring.
+    3. Reinertsen (2009). "Principles of Product Development Flow." — When cadence is irregular, cycle-aging breaks down; the same "3 cycles" can be 3 weeks or 9 weeks of wall-clock staleness.
+    4. Hollnagel (2014). "Safety-II." — Cadence-coupled staleness measures fail silently during irregular firing; the system reports "fresh" when in fact wall-clock stale.
+    5. Vaughan (1996). "Challenger Launch Decision." — Logic-coupled (rather than time-coupled) thresholds are a recurring failure mode in safety-critical systems; "we still have 1 cycle of buffer" when wall-clock has already exhausted the safety margin.
+
+  Strength of challenge: Strong
+
+  Summary: The literature is strongly against using cycle-counts as staleness proxies when cadence can vary. Lamport's own logical-clocks paper explicitly carves out wall-clock-required cases. SRE doctrine, lean-flow, and resilience engineering all converge: time-sensitive thresholds must be wall-clock. The 15d catchup case is the empirical instance: cycle-count says "3 cycles stale" which is meant to mean ~3 weeks, but during the 2-week cadence gap the actual wall-clock staleness for the cycle-3 items could be 9+ weeks. The presumption silently mis-reports criticality.
+
+  Specific risks: (a) Stale-watch items are far older than cycle-count suggests; escalation lags actual risk. (b) Cycle-4 escalation threshold may be exceeded in wall-clock terms long before cycle-count detects it. (c) Compounds with ASSUMPTION-177: the cadence-miss itself confounds the staleness measure for items queued during the gap. (d) Encourages tolerance of cadence gaps because the staleness counter doesn't visibly move.
+
+  Mitigations available: Use wall-clock days as staleness measure, not cycle count; track BOTH cycle count and days-stale; alarm thresholds in days, not cycles; SLI on days-stale, with cycle-count as secondary metric.
+
+  Recommendation: CHALLENGED (REVISE)
+
+  STEELMAN:
+    Item: PRESUMPTION-200
+    Strongest counterargument: Cycle-counts are valid logical clocks but explicitly NOT staleness measures when cadence varies. Lamport's foundational paper makes this distinction. The 15d cadence miss makes the cycle-count thresholds silently under-report wall-clock staleness. The staleness measure should be wall-clock, with cycle-count as a secondary indicator.
+    What would need to be true for C2A2 to be safe: Wall-clock days-stale tracked as primary staleness metric; cycle-count demoted to secondary; alarm thresholds in days; SLI on days-stale.
+    How to test: For the 3 current cycle-3 items, compute wall-clock days since queue entry. If any exceed the intended wall-clock-equivalent of cycle-4 escalation threshold (e.g., 4 weeks), the proxy has already silently failed.

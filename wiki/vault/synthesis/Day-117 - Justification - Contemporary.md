@@ -21,8 +21,8 @@ evidence_strength_summary: "Prevenient grace claim: theological. Friston prior-s
 mind_first_reframe: "Aquinas's 'God alone causes grace' reads, under active-inference + mind-monism, as the architectural fact that an agent cannot install from inside its own prior a prior including the wider mind — that re-prioring belongs to the embedding system; agent/wider-mind cooperation is internal to one ground, not bilateral between two substances."
 central_theme_thread: "The cooperation architecture (prevenient grace, free will, first grace not meritable, subsequent merit real) is the central claim's working-out-of-salvation-in-fear-and-trembling: perspective-limitations real, resources installed from outside, the transcending still requires the agent's work."
 tags: [synthesis, day/117, theme/grace, theme/causation, theme/free-will]
-last_qc_at: "2026-05-19T16:22:50"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-21T12:22:35"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 117 — Justification (Contemporary Parallel)
@@ -49,7 +49,7 @@ Hoffman's interface theory reaches the same conclusion from a different directio
 
 Kastrup's analytic idealism gives the cleanest metaphysical reading. The agent is a dissociated alter of a wider mind. The dissociative barrier *is* the agent's perspective-limitation. The alter cannot dissolve its own barrier, because the barrier is constitutive of its being an alter. Any thinning of the barrier is, from the wider-mind side, the wider mind permitting more of itself to be available to the alter. From the alter's side this looks exactly like Aquinas's prevenient grace: the alter finds itself disposed toward what was previously unavailable, without having moved itself there.
 
-Levin's morphogenetic teleology supplies the empirical analogue. Cells in a developing tissue do not earn their fate; the morphogenetic field assigns it. But the cells are not passive — they perform the work of differentiation, division, and migration that the field directs. Field and cell are not in causal competition; they are different levels of one causal structure. Aquinas's account of how prevenient grace and free will cooperate without canceling either has the same shape as this field/cell relationship. Stump's PRS-04 explicitly recovers this point.
+Levin's morphogenetic teleology supplies the empirical analogue. Cells in a developing tissue do not earn their fate; the morphogenetic field assigns it. But the cells are not passive — they perform the work of differentiation, division, and migration that the field directs. Field and cell are not in causal competition; they are different levels of one causal structure. Aquinas's account of how prevenient grace and free will cooperate without canceling either has the same shape as this field/cell relationship. PRS-04 in the Stump-tradition wiki explicitly recovers this point.
 
 The Stump-tradition wiki (PRS-02, PRS-04) supplies the philosophical bridgework that Tom Loughran's PRS-form was built to expose: the contemporary cognitive turn lacks the metaphysical framework Aquinas already developed for exactly this kind of dual-level causation. The wiki's recording is Tom's PRS-form re-description of Stump's move, not Stump's own self-description.
 

@@ -7,7 +7,10 @@ source_title: "God's Homecoming: The Forgotten Promise of Future Renewal — Bib
 source_url: https://ntwrightpage.com/2026/01/23/gods-homecoming/
 source_date: 2026-02-17
 searched_on: 2026-05-10
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-035
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

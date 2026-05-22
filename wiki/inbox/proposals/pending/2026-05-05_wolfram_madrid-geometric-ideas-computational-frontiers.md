@@ -7,7 +7,10 @@ source_title: "Stephen Wolfram at Universidad Complutense de Madrid — closing 
 source_url: https://www.stephenwolfram.com/publications/2026/02/20/stephen-wolfram-at-universidad-complutense-de-madrid/
 source_date: 2026-02-20
 searched_on: 2026-05-05
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-021
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

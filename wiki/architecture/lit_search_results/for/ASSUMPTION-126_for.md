@@ -1,0 +1,27 @@
+SEARCH-FOR-ASSUMPTION-126:
+  Date searched: 2026-05-14
+  Original item: ASSUMPTION-126
+  Original statement: "7-day evening cowork-to-chat delivery drought broken via Tom signing into claude.ai in paired Chrome profile; redesign discussion can proceed from working-channel framing"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-126
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-05-13 cowork-to-chat sync recovery context
+      15a: Searched for credential-layer-workaround durability in long-running sync failures
+    Current status: PARTIALLY-SUPPORTED
+
+  Sources:
+    1. Sherwood (1999) and Verma (2014) operational-incident-recovery literature — sign-in / credential refresh is a routine first-line recovery for browser-mediated automation; resolution-via-credential-refresh is common.
+    2. Selenium / Playwright community documentation (2022-2025) — sign-in lapse is the dominant failure mode for chat-scrape and browser-mediated workflows; restoring sign-in is the canonical recovery.
+    3. C2A2-internal: PRESUMPTION-121 / PRESUMPTION-125 / PREMISE-015 cluster — cowork-to-chat sync drought has been intermittent; this is the recurring substrate.
+
+  Strength of support: Moderate
+
+  Summary: Sign-in restoration as recovery for browser-mediated automation is well-supported as an immediate fix. Working-channel framing is appropriate as long as the conversation is the operational target. Support is moderate for the "channel restored" claim. PRESUMPTION-159 (paired) raises the legitimate concern that sign-in fix is a credential-layer workaround, not an architectural-layer fix — and the 7-day drought pattern suggests an architectural root cause that sign-in does not address.
+
+  Caveats: (a) PRESUMPTION-159 — credential-layer fix may not be durable; sign-in state lapses recurrently; (b) Substrate-decomposition gap (PRESUMPTION-134 REVISE) unresolved; if substrate is shared with other failure clusters, sign-in restoration is symptomatic; (c) "Drought broken" is a single-data-point claim; durability requires N consecutive successful days; (d) Tied to ASSUMPTION-118 token-delegation redesign — the architectural fix path.
+
+  Recommendation: PARTIALLY-SUPPORTED — channel-restored claim is well-supported as a momentary fact; durability claim requires PRESUMPTION-159 + PRESUMPTION-134 audits

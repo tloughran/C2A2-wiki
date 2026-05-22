@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-158:
+  Date searched: 2026-05-18
+  Original item: ASSUMPTION-158
+  Original statement: "Path 2 (DeepSeek-Flash via API + worker script reading job-folder queue) is the chosen architecture for adding a non-Claude LLM agent to the same vault."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-158
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Inbox/Outbox pattern (Wikipedia; Jovanović 2023, milanjovanovic.tech) — file-/table-based queues with at-least-once semantics are a mature integration pattern for decoupling producers and consumers.
+    2. Alaiy (Medium 2024) 'How I Taught My LLM to Queue Up and Chill' — explicit working pattern of LLM-as-row-processor pulling from a queue (SQS analog); validates the LLM-worker-from-queue topology.
+    3. SoftwareMill 'Microservices 101: Transactional Outbox and Inbox' — confirms queue-based decoupling is preferred over in-process tool-call coupling for heterogeneous-runtime workers.
+
+  Strength of support: Moderate
+
+  Summary: Folder-as-queue with worker-process-as-consumer is a canonical integration pattern with strong literature backing. The specific instantiation (LLM as worker reading inbox folder, writing outbox) is novel only in detail; the topology is well-established. Path 1 (in-Obsidian + Ollama) gives up the producer/consumer decoupling that the literature treats as essential; Path 3 (MCP harness) adds coupling at the harness layer. The chosen pattern aligns with mature distributed-systems practice.
+
+  Caveats: Literature treats file-folder queues as durable but slow; suitable for batch/asynchronous workloads, not for low-latency interactive cases. The 'right architecture' claim is contingent on workload characteristics matching this profile. Most queue literature assumes a queue service (SQS, RabbitMQ); folder-as-queue trades performance for simplicity and inspection.
+
+  Recommendation: PARTIALLY-SUPPORTED

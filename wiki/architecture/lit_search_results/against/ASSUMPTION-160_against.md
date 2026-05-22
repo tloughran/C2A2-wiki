@@ -1,0 +1,35 @@
+SEARCH-AGAINST-ASSUMPTION-160:
+  Date searched: 2026-05-18
+  Original item: ASSUMPTION-160
+  Original statement: "DeepSeek worker scope-locked to `_agents/deepseek/` (inbox/outbox/done/failed); never writes to live vault content; Maildir-style filename convention; vault-safety boundary as the architectural commitment."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-160
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15b: Searched for challenging literature
+    Current status: NO-CHALLENGE-FOUND
+
+  Challenging evidence found: No
+
+  Sources:
+    1. Sandboxing literature is uniformly positive on filesystem-scope-locking. No counter-evidence found that scope-locking is inferior to alternatives.
+    2. Maildir is well-regarded; the only published critique (relative to message-queue services) is performance under high concurrency — not applicable at C2A2 scale.
+
+  Strength of challenge: None
+
+  Summary: No literature challenges the core commitment. The closest critiques are (a) scope-lock alone is incomplete (other sandbox boundaries also needed) — but C2A2 documents this explicitly via ASSUMPTION-170's five-prohibition list — and (b) Maildir performance — not a constraint at this scale. The boundary is well-grounded.
+
+  Specific risks: (a) Worker process could escape scope via shell-out or symlink traversal — but this is a vulnerability in implementation, not in the commitment; (b) credentials accessible from worker context are a separate concern.
+
+  Mitigations available: (a) Symlink-traversal audit; (b) implementation review per ASSUMPTION-170 five-prohibition list; (c) credential isolation under separate audit.
+
+  Recommendation: NO-CHALLENGE-FOUND
+
+  STEELMAN:
+    Item: ASSUMPTION-160
+    Strongest counterargument: The strongest case against: 'scope-lock as the architectural commitment' overstates filesystem-scope's role in safety. Real safety requires the full sandbox stack (filesystem + network + resource + process). The commitment names the most important boundary but leaves the others implicit.
+

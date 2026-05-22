@@ -35,3 +35,36 @@ SEARCH-AGAINST-PRESUMPTION-137:
     Strongest counterargument: First-of-type as decision gate is one of multiple legitimate framings; progressive-elaboration / pilot-process literatures support the alternative (workflow accommodation generates operational learning that informs canonization). The "distinctive epistemic weight" claim is meta-level and requires explicit criteria — absent the criteria, the framing risks special-pleading. The competing PRESUMPTION-128 reflects a genuine unreconciled tradeoff. The hybrid path (pilot accommodation with explicit reversibility note) preserves both framings' benefits.
     What would need to be true for C2A2 to be safe: (a) Reversibility characteristics specified; (b) "distinctive epistemic weight" criteria explicit; (c) competing PRESUMPTION-128 reconciled; (d) hybrid path considered.
     How to test: Read DECISION-026 candidate to check reversibility characteristics; audit reconciliation of competing presumptions.
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-137 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-137
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: PRESUMPTION-137
+    Item type: PRESUMPTION
+    Transform at each step:
+      14b (cycle 0): Originally surfaced from first-ever-as-decision-gate framing
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~8-day gap. Progressive-elaboration alternative still applies.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. Hybrid path still viable.
+
+  Caveats: Internal reconciliation would resolve faster.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

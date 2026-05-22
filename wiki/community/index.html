@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C2A2 Community Explorer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="cc-rebuild">
+  <div class="page">
+
+    <!-- ── MASTHEAD: search/ask is the primary action ───────────────── -->
+    <header class="cc-masthead">
+      <div class="cc-masthead-head">
+        <p class="cc-eyebrow">C2A2 · Align-with-small-communities</p>
+        <h1 class="cc-title">Community Explorer</h1>
+        <p class="cc-tagline">An instrument communities use on themselves first — clarify your Goals, Problems, Resources, and Solutions; find peers and be found; and (later) track whether AI helps you make progress.</p>
+      </div>
+
+      <div class="cc-searchbar">
+        <input class="cc-search-input" id="search-input" type="text" autocomplete="off" spellcheck="false" placeholder="Search communities, narratives, problems, resources, solutions, countries…">
+        <button class="cc-search-go" id="apply-search" type="button">Search</button>
+        <button class="cc-search-clear" id="clear-search" type="button">Clear</button>
+      </div>
+      <div class="cc-search-status subtle" id="search-status">Search spans names, type/subtype, geography, hosts, narratives, and all PRS fields. Use quotes for exact phrases.</div>
+
+      <details class="cc-ask">
+        <summary>Ask in plain language <span class="message-pill" id="assistant-transport-pill">Built-in engine</span></summary>
+        <div class="cc-ask-body">
+          <p class="subtle">The built-in engine answers from the dataset; if your OpenAI key is set (shared across the C2A2 tabs), results are AI-enriched. No keys are stored on the public page.</p>
+          <textarea id="ai-query-input" rows="2" placeholder="e.g. interdisciplinary communities in Canada with social-innovation goals"></textarea>
+          <div class="inline-actions">
+            <button class="inline-button" id="run-ai-query" type="button">Ask</button>
+            <button class="inline-button subtle-button" id="clear-ai-query" type="button">Clear</button>
+            <button class="inline-button subtle-button" id="clear-ai-conversation" type="button">Reset thread</button>
+          </div>
+          <label class="toggle-label"><input type="checkbox" id="allow-external-search"> Allow wider search beyond the dataset</label>
+          <div class="search-status subtle" id="external-search-note"></div>
+          <div class="conversation-shell">
+            <div class="conversation-toolbar">
+              <div class="conversation-status">
+                <strong id="assistant-mode-label">Assistant ready</strong>
+                <span class="subtle" id="ai-query-status"></span>
+              </div>
+            </div>
+            <div class="conversation-scroll" id="ai-conversation"></div>
+          </div>
+        </div>
+      </details>
+    </header>
+
+    <!-- ── SLIM STAT LINE ───────────────────────────────────────────── -->
+    <div class="cc-statline">
+      <span><strong id="hero-record-count">0</strong> communities</span>
+      <span class="dot">·</span>
+      <span><strong id="hero-type-count">0</strong> types</span>
+      <span class="dot">·</span>
+      <span><strong id="hero-subtype-count">0</strong> subtypes</span>
+      <span class="dot">·</span>
+      <span><strong id="hero-country-count">0</strong> countries</span>
+      <span class="cc-statline-note subtle">Every record is <em>inferred seed</em> until a community claims and refines its own profile.</span>
+    </div>
+
+    <!-- ── SLIM FILTER CHIP ROW ─────────────────────────────────────── -->
+    <div class="cc-chiprow">
+      <div class="cc-chip-types" id="type-pills"></div>
+      <div class="cc-chip-spacer"></div>
+      <label class="cc-chip-country">
+        <span class="subtle">Country</span>
+        <select id="country-select"></select>
+      </label>
+      <button class="cc-chip-more" id="toggle-filter-panel" type="button" aria-expanded="false" aria-controls="filter-panel">+ Filter</button>
+      <button class="cc-chip-reset" id="reset-filters" type="button">Reset</button>
+    </div>
+    <div class="cc-active-filters" id="active-filters"></div>
+
+    <!-- ── +FILTER PANEL (collapsible; relocated controls live here) ─── -->
+    <div class="cc-filter-panel" id="filter-panel" hidden>
+      <div class="cc-filter-col">
+        <h4>Subtype</h4>
+        <div class="pill-cloud" id="subtype-pills"></div>
+      </div>
+      <div class="cc-filter-col cc-filter-narrow">
+        <label class="control-label" for="source-select">Source directory</label>
+        <select id="source-select"></select>
+        <label class="control-label" for="sort-select">Sort</label>
+        <select id="sort-select">
+          <option value="name-asc">Name A–Z / relevance when searching</option>
+          <option value="relevance">Search relevance</option>
+          <option value="name-desc">Name Z–A</option>
+          <option value="type-subtype">Type → subtype → name</option>
+          <option value="country-name">Country → name</option>
+          <option value="source-name">Source → name</option>
+          <option value="host-name">Host → name</option>
+        </select>
+        <label class="toggle-label"><input type="checkbox" id="manual-only"> Manually curated slice only</label>
+        <label class="toggle-label"><input type="checkbox" id="geo-only"> Global / Unspecified geographies only</label>
+      </div>
+    </div>
+
+    <!-- ── MODE TABS (peer modes; Cards is the front door) ──────────── -->
+    <nav class="cc-tabs" aria-label="Community Explorer modes">
+      <button class="cc-tab active" data-view="cards" type="button">Cards</button>
+      <button class="cc-tab" data-view="map" type="button">Map</button>
+      <button class="cc-tab" data-view="prs" type="button">PRS</button>
+      <button class="cc-tab" data-view="overview" type="button">Overview</button>
+    </nav>
+
+    <main class="cc-content">
+      <!-- ── CARDS (default) — discovery + peer-finding canvas ──────── -->
+      <div id="cc-view-cards">
+        <div class="cc-card-status subtle" id="cc-card-status"></div>
+        <div class="cc-card-grid" id="cc-card-grid"></div>
+      </div>
+
+      <!-- ── MAP (reuses community-views.js renderMap) ──────────────── -->
+      <div id="cc-view-map" hidden>
+        <section class="chart-card">
+          <div class="section-header">
+            <div>
+              <h2>Global map</h2>
+              <div class="subtle" id="cc-map-status">Communities placed near their country centroid.</div>
+            </div>
+          </div>
+          <div id="cc-map"></div>
+        </section>
+      </div>
+
+      <!-- ── PRS (reuses community-views.js renderPRS) ──────────────── -->
+      <div id="cc-view-prs" hidden>
+        <section class="results-card">
+          <div class="section-header">
+            <div>
+              <h2>Problem &middot; Resource &middot; Solution triplets</h2>
+              <div class="subtle">Compare how the visible communities frame their problems, resources, and solutions.</div>
+            </div>
+          </div>
+          <div class="cc-prs-controls">
+            <input class="search-input" id="cc-prs-search" type="text" placeholder="Filter PRS text: mistrust, mentorship, open standards&hellip;">
+            <div class="cc-prs-focus-row">
+              <button class="cc-prs-focus active" data-focus="all" type="button">All</button>
+              <button class="cc-prs-focus" data-focus="problems" type="button">Problems</button>
+              <button class="cc-prs-focus" data-focus="resources" type="button">Resources</button>
+              <button class="cc-prs-focus" data-focus="solutions" type="button">Solutions</button>
+            </div>
+          </div>
+          <div class="cc-prs-count subtle" id="cc-prs-count"></div>
+          <div id="cc-prs-list"></div>
+        </section>
+      </div>
+
+      <!-- ── OVERVIEW — analytics + power table (moved off the front door) -->
+      <div id="cc-view-overview" hidden>
+        <section class="metrics-grid" id="metrics"></section>
+
+        <section class="chart-card">
+          <div class="section-header">
+            <div>
+              <h2>Type × subtype heatmap</h2>
+              <div class="subtle">How the visible slice distributes across the taxonomy.</div>
+            </div>
+          </div>
+          <div id="heatmap"></div>
+        </section>
+
+        <section class="chart-grid">
+          <section class="chart-card">
+            <div class="section-header"><h2>Subtype distribution</h2><div class="subtle">Click a bar to filter.</div></div>
+            <div id="subtype-bars"></div>
+          </section>
+          <section class="chart-card">
+            <div class="section-header"><h2>Country distribution</h2><div class="subtle">Top visible geographies.</div></div>
+            <div id="country-bars"></div>
+          </section>
+          <section class="chart-card">
+            <div class="section-header"><h2>Growth opportunities</h2><div class="subtle">Useful next actions for enrichment.</div></div>
+            <div id="growth-insights"></div>
+          </section>
+          <section class="chart-card">
+            <div class="section-header"><h2>Source coverage</h2><div class="subtle">Where the current visible slice came from.</div></div>
+            <div id="source-bars"></div>
+          </section>
+        </section>
+
+        <section class="results-card">
+          <div class="section-header">
+            <div>
+              <h2>All visible communities (table)</h2>
+              <div class="subtle">Power view. Select a row to inspect narrative, PRS, and provenance.</div>
+            </div>
+            <div>
+              <label class="control-label" for="page-size" style="margin-bottom: 6px;">Rows per page</label>
+              <select id="page-size">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+              </select>
+            </div>
+          </div>
+          <div class="results-toolbar">
+            <div id="results-count"></div>
+          </div>
+          <div class="results-layout">
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Community</th>
+                    <th>Type</th>
+                    <th>Subtype</th>
+                    <th>Country</th>
+                    <th>Source</th>
+                    <th>Verified site</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+                <tbody id="results-body"></tbody>
+              </table>
+            </div>
+            <aside class="detail-panel" id="detail-panel"></aside>
+          </div>
+          <div class="pagination" id="pagination"></div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ── DEV / EXPORT (collapsed; off the front door) ─────────────── -->
+    <details class="cc-dev">
+      <summary>Dev / Export &amp; data notes</summary>
+      <div class="cc-dev-body">
+        <p class="subtle">Built from the rebuilt working dataset rather than live re-crawling. Many narratives are subtype-grounded working descriptions anchored to official site identity; most email fields read <em>none located</em>. All 855 records are <strong>inferred seed</strong> — the honesty layer marks them as such until a community claims its own profile.</p>
+        <div class="inline-actions">
+          <button class="action-button" id="download-csv">Download filtered CSV</button>
+          <button class="action-button" id="download-json">Download filtered JSON</button>
+          <button class="action-button" id="copy-share-link">Copy share link</button>
+        </div>
+      </div>
+    </details>
+
+    <footer id="footer-meta"></footer>
+  </div>
+
+  <!-- ── GPRS SELF-ARTICULATION READER (right-side drawer) ──────────── -->
+  <div class="cc-reader" id="cc-reader" hidden aria-hidden="true">
+    <div class="cc-reader-backdrop" data-cc-reader-close></div>
+    <aside class="cc-reader-panel" role="dialog" aria-modal="true" aria-label="Community profile">
+      <button class="cc-reader-close" type="button" data-cc-reader-close aria-label="Close profile">×</button>
+      <div class="cc-reader-body" id="cc-reader-body"></div>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="data.js"></script>
+  <script src="search-core.js"></script>
+  <script src="ai-query-core.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+  <script src="country_coordinates.js"></script>
+  <script src="community-views.js"></script>
+  <script src="community-cards.js"></script>
+</body>
+</html>

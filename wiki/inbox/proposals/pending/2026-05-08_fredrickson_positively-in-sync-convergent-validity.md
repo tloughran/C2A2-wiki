@@ -7,7 +7,10 @@ source_title: "Positively in-sync: Convergent validity across three distinct ass
 source_url: https://doi.org/10.1177/02654075251359408
 source_date: 2025-01-01
 searched_on: 2026-05-08
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-026
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

@@ -1,0 +1,38 @@
+SEARCH-AGAINST-PRESUMPTION-204:
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-204
+  Original statement: "Sewing-agent's pending/-scan-as-ground-truth — inverts morning's PRESUMPTION-196 (orchestrator-as-ground-truth) without auditing whether the two scans use identical path/filter/timing coverage."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-204
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by detecting an unstated inversion of PRESUMPTION-196
+      15a: Searched for supporting literature
+      15b: Searched for challenging evidence
+    Current status: NO-CHALLENGE-FOUND
+
+  Challenging evidence found: No
+
+  Sources:
+    1. Pragmatic operational literature (e.g., Allspaw 2012, Nygard 2018) — does not contest the principle; at best argues that some operational decisions must be made on best-available evidence even when ground truth is unattainable. This is a pragmatic concession, not a refutation.
+    2. Eventual-consistency literature (Bailis & Ghodsi 2013) — explicitly endorses using "best available observer" for some decisions, but never elevates that observer to "ground truth" status. The presumption stands.
+
+  Strength of challenge: None (weak pragmatic counter only)
+
+  Specific risks: (these are risks of NOT honoring the presumption)
+    - Continuing to oscillate between "orchestrator-as-truth" and "sewing-agent-as-truth" without manifest reconciliation will produce alternating diagnoses with no learning.
+    - Pattern Detector will receive signal from whichever agent was "ground truth" last, creating a path-dependent and unstable knowledge base.
+    - Circular signal risk (see PRESUMPTION-207) compounds: if sewing-agent ratifies bridges and is also ground-truth-for-counts, the system loses independent checks.
+
+  Mitigations available:
+    - Mandate a write-receipt manifest emitted by each writer agent.
+    - Run path/filter/timing coverage diff between orchestrator and sewing-agent before any "X is ground truth" claim.
+    - Adopt a stance of "no single agent is ground truth; the manifest is ground truth; agents are observers."
+
+  STEELMAN:
+    The strongest version of the contested presumption is: "in the absence of a manifest, the agent with the larger and more recent scan is the best provisional ground truth." This is defensible as an operational heuristic but not as an epistemic commitment. The problem flagged is the silent epistemic commitment — naming it provisional makes the heuristic safe; leaving it implicit makes it the same error PRESUMPTION-196 made in the opposite direction.
+
+  Recommendation: NO-CHALLENGE-FOUND (the presumption stands — revision warranted)

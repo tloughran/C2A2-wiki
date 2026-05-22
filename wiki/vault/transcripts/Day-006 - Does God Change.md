@@ -32,7 +32,7 @@ tags: [summa, day/006, pars/I]
 
 ## Transcript
 
-[00:00:05] hello my name is Austin habish the founder of think Catholic and you're listening to the Suma and year podcast where we study St Thomas aquinus Suma theologia in a way simple and insightful for anyone to understand the Su year podcast is brought to you by think Catholic taking two questions of the Suma a day will seek to summarize St Thomas's responses discovering the Brilliance of aquinus and his Catholic faith this is day six so let's get started we're covering today questions 9 and 10 of the Prima pars which is God's
+[00:00:05] hello my name is Austin habish the founder of think Catholic and you're listening to the Summa and year podcast where we study St Thomas aquinus Summa theologia in a way simple and insightful for anyone to understand the Su year podcast is brought to you by think Catholic taking two questions of the Summa a day will seek to summarize St Thomas's responses discovering the Brilliance of aquinus and his Catholic faith this is day six so let's get started we're covering today questions 9 and 10 of the Prima pars which is God's
 
 [00:00:41] immutability and his eternity which follows upon his immutability the translation that I always use in these podcasts is the second and revised Edition translated by the fathers of the English Dominican Province so let's get started question n the first article whether God is altogether mutable can God change this is the present question and it's tempting to say yes think about the many times we hear in scripture God changing his mind he changes his will to do the prayers of others the discussion on Providence and prayer will come later
 
@@ -70,7 +70,7 @@ tags: [summa, day/006, pars/I]
 
 [00:10:24] such as 2 and 2 equals 4 that a thing cannot be and not be at the same time in the same respect what we call the principle of non-contradiction these we call Eternal truths not contingent upon other things here aquinus distinguishes between that one thing wholly immutable without beginning either temporally or causally which is God and those things which are included in his eternity like Eternal truths because they're in the mind of God the Eternal mind truth
 
-[00:10:56] exists in the mind we'll see truth later in the Suma those things which possess a kind of immutability through their object of knowledge like the Saints in heaven who in thinking about God according to Augustine as regards their vision of the word the second person of the Trinity no changing thoughts exist in the Saints that's something to ponder and those things which are Eternal in the manner of not having an end like the fire of Hell or immaterial spirit article number
+[00:10:56] exists in the mind we'll see truth later in the Summa those things which possess a kind of immutability through their object of knowledge like the Saints in heaven who in thinking about God according to Augustine as regards their vision of the word the second person of the Trinity no changing thoughts exist in the Saints that's something to ponder and those things which are Eternal in the manner of not having an end like the fire of Hell or immaterial spirit article number
 
 [00:11:30] four whether eternity differs from time absolutely the answer to this is succinctly made by St Thomas thus he says as eternity is the proper measure of permanent being so time is the proper measure of movement eternity is simultaneously whole but time has before and after therefore Time and Eternity are not the same thing much more complicated than that brief article is the one that follows it which asks what is the difference between time and AV eternity now AV eternity is normally the
 
@@ -88,7 +88,7 @@ tags: [summa, day/006, pars/I]
 
 [00:15:33] fitting to include the changing things underneath within the time of that top changing thing to include them within the time of its very own before and after that would be our Master Clock let's say of which all the other changing things before it would find their measure within this last article is kind of a doy which may be why quanus looks slightly hesitant about it as well but this is questions 9 and 10 of the
 
-[00:16:06] first part of the Suma which is his immutability and his eternity again my name is Austin habish with think Catholic and I cannot wait to see you tomorrow [Music]
+[00:16:06] first part of the Summa which is his immutability and his eternity again my name is Austin habish with think Catholic and I cannot wait to see you tomorrow [Music]
 
 ## Notes
 

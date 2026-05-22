@@ -1,0 +1,28 @@
+SEARCH-FOR-ASSUMPTION-190:
+  Date searched: 2026-05-20
+  Original item: ASSUMPTION-190
+  Original statement: "sync_vault.sh `commit --only -- wiki/vault/` makes the 21:00 run safe unattended."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-190
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from session: path-scoped commit (--only -- wiki/vault/) adopted to make the 21:00 sync safe unattended; one clean run observed.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Git documentation, git-commit(1) (--only / --include, pathspec semantics). — `--only <paths>` commits exactly the named paths regardless of the rest of the index; the mechanism does scope the commit as intended.
+    2. "Continuous Delivery," Humble & Farley (2010). — Narrowing the blast radius of an automated, unattended operation (here, path-scoping) is a recognized safety practice.
+
+  Strength of support: Moderate
+
+  Summary: `git commit --only -- wiki/vault/` does what the premise claims at the mechanism level: it commits only the named pathspec, ignoring other staged changes. Scoping an unattended commit to a known-safe subtree is a sound blast-radius-reduction practice. One clean run is consistent with the mechanism but is not yet evidence of reliability under the conditions that break it.
+
+  Caveats: Support is for the mechanism and the practice; 'safe unattended' is a reliability claim that needs repeated confirmation (N>=3) and depends on edge cases (15b).
+
+  Recommendation: PARTIALLY-SUPPORTED (mechanism sound; reliability unproven at N=1)

@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-210:
+  Date searched: 2026-05-20
+  Original item: PRESUMPTION-210
+  Original statement: "Raw queue depth is a valid proxy for 'generate more?' — no decomposition before throttling."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-210
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — generation throttling keyed off raw queue depth, without decomposing into generation-rate vs throughput-capacity.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Little, J. (1961). "A Proof for the Queuing Formula L = lambda W." — Queue length relates to arrival rate and wait; depth IS one legitimate signal worth attending to.
+    2. Reinertsen, D. (2009). "Principles of Product Development Flow." — Queue depth is a high-leverage operational metric; weak support for treating it as actionable.
+
+  Strength of support: Weak
+
+  Summary: There is weak support for queue depth as a signal worth attending to (Little's law; flow literature). But the same sources insist the actionable question is 'on which side' — arrival/generation rate vs service/throughput rate. The presumption (raw depth -> generate-more decision without decomposition) finds only the signaling half supported, not the prescription. This mirrors PRESUMPTION-202/ASSUMPTION-186.
+
+  Caveats: Support is for depth-as-signal, not depth-as-generation-decision; decomposition is required by the same literature.
+
+  Recommendation: PARTIALLY-SUPPORTED (signaling half only)

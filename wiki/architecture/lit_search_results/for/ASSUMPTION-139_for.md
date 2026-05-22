@@ -1,0 +1,31 @@
+SEARCH-FOR-ASSUMPTION-139:
+  Date searched: 2026-05-15
+  Original item: ASSUMPTION-139
+  Original statement: "Documentation carries the rationality standards; framework's normative commitments (honesty layer, PRS, perspective lattice) come bundled with toolkit, not opt-in"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-139
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Pathway 18 toolkit-bundling commitment
+      15a: Searched for normative-content-in-software-toolkits patterns in pedagogy and FLOSS
+    Current status: SUPPORTED (Moderate-Strong)
+
+  Sources:
+    1. MacIntyre (1981) "After Virtue" — practices carry their own internal goods and standards; framework that transmits a tradition must carry the tradition's standards.
+    2. Stallman / FSF Four Freedoms — FLOSS toolkits bundle normative commitments (license, freedom-preserving distribution rules); pattern is canonical.
+    3. Ostrom (1990) — institutional design principles (the "8 principles") are bundled with the tradition they describe; can't be separated from operationalization.
+    4. Bourdieu (1977) — habitus is transmitted through embedded practice; explicit-but-optional normative content is reliably under-internalized.
+    5. Pedagogical literature on values-in-tools: Papert "Mindstorms" — Logo carried constructionist epistemology by design, not as opt-in policy.
+    6. Wikipedia neutrality policy, Mastodon code-of-conduct — successful federated platforms bundle normative commitments with the toolkit.
+    7. C2A2-internal: Pathway 14 (honesty layer) is itself a normative commitment that must be bundled to function; opt-in honesty is decorative.
+
+  Strength of support: Moderate-to-Strong
+
+  Summary: Bundling normative commitments with the toolkit is well-supported across multiple traditions: MacIntyre's practice-internal-goods, FLOSS Four Freedoms, Ostrom's institutional design, Bourdieu's habitus, constructionist pedagogy, and federation-platform norms (Wikipedia, Mastodon). The "documentation carries rationality standards" framing aligns with constructionist learning and FLOSS license enforcement. Opt-in normative content is reliably under-internalized (Bourdieu, Stallman). Moderate-to-Strong support: the bundling commitment is canonical for traditions that aim to transmit standards, not just functionality.
+
+  Caveats: (a) Bundled normative commitments can be perceived as ideological imposition; this raises adoption-friction concerns; (b) Forking will strip the normative layer if it's not technically enforced; (c) PRESUMPTION-paired concern (opt-in vs bundled tradeoffs) needs explicit audit; (d) "Comes bundled with toolkit" must be enforceable — license terms, dependency requirements, or default-not-removable code paths.
+
+  Recommendation: SUPPORTED (Moderate-Strong) — bundled normative commitments are canonical for tradition-transmitting frameworks; enforcement mechanism is the load-bearing implementation concern

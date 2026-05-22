@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-213:
+  Date searched: 2026-05-20
+  Original item: PRESUMPTION-213
+  Original statement: "Absence-in-30-day-window == absence-of-development — window assumed well-calibrated to each thinker."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-213
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — a fixed 30-day search window applied uniformly, with absence in-window read as absence-of-development regardless of a thinker's cadence.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Barabasi, A.-L. (2005). "The origin of bursts and heavy tails in human dynamics" (Nature). — Human/scholarly output is bursty with heavy-tailed inter-event times; a fixed window mis-samples slow/bursty producers.
+    2. Altman, D. & Bland, M. (1995). "Absence of evidence is not evidence of absence" (BMJ). — In-window absence is only absence-of-development if the window is adequately powered for that producer.
+    3. Non-stationary time-series sampling literature. — A single fixed window across heterogeneous processes systematically under-samples the slow ones.
+
+  Strength of challenge: Moderate-Strong
+
+  Summary: The moderate-strong challenge: scholarly output is bursty and heavy-tailed, so a fixed 30-day window calibrated to fast-cadence thinkers will read 'absence' for slow- or bursty-cadence thinkers who are in fact developing (this is the mechanism behind the Hawkins/Hoffman 0 in ASSUMPTION-196). Absence-in-window equals absence-of-development only if the window is powered for that thinker's cadence. Per-thinker adaptive windows are indicated (echoes MONITOR-051).
+
+  Specific risks: Slow-cadence thinkers' development is systematically missed; the 0-proposal signal (ASSUMPTION-196) is misread as a true null.
+
+  Mitigations available: Per-thinker adaptive windows sized to each thinker's historical inter-event time; report window-vs-cadence adequacy alongside any absence.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: PRESUMPTION-213
+    Strongest counterargument: Output is bursty; a window tuned to fast producers under-samples slow ones, turning 'we did not look long enough' into a false 'nothing happened.' A uniform 30-day window cannot be well-calibrated to thinkers with different cadences.
+    What would need to be true for C2A2 to be safe: Safe if each thinker's window is sized to their historical cadence (adaptive), with adequacy reported.
+    How to test: For each thinker, compare 30-day-window hit-rate against their historical inter-event time; thinkers whose cadence exceeds 30 days are being under-sampled.

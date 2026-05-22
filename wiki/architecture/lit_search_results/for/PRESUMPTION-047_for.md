@@ -29,3 +29,35 @@ SEARCH-FOR-PRESUMPTION-047:
   Caveats: User-directedness preserves sovereignty but can leave sessions parked indefinitely if the user does not return to provide direction (paired PRESUMPTION-043). The pattern is supported as a norm but interacts with the parked-session retention problem. The "enumerate-and-wait" half of the pattern benefits from a parallel policy for what happens to enumerations that are never resolved.
 
   Recommendation: SUPPORTED (pattern itself; pairs with PRESUMPTION-043 for retention policy)
+
+---
+
+SEARCH-FOR-PRESUMPTION-047 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-047
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: PRESUMPTION-047
+    Item type: PRESUMPTION
+    Transform at each step:
+      14b (cycle 0): Originally inferred as route-selection presumption
+      15a (cycle 0): Searched for supporting literature → SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new supporting literature in the ~5-week gap. User-sovereignty / human-in-the-loop literature stable.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate-Strong)
+
+  Summary: Prior SUPPORTED finding stands. Pattern still well-grounded; retention pairing with PRESUMPTION-043 still needed.
+
+  Caveats: Universal-vs-contextual form distinction (per against-side) is the key remaining tension.
+
+  Recommendation: SUPPORTED (refreshed; carry forward prior recommendation)

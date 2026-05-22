@@ -7,7 +7,10 @@ source_title: "God and Science: Francis Collins and N.T. Wright in Conversation"
 source_url: https://oxfordpastorate.org/index.php?p=events/god-and-science-francis-collins-and-n-t-wright-in-conversation
 source_date: 2026-04-24
 searched_on: 2026-05-10
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-033
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

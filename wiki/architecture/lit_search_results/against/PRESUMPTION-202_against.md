@@ -1,0 +1,40 @@
+SEARCH-AGAINST-PRESUMPTION-202:
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-202
+  Original statement: "queue-depth-as-review-urgency presumption; 42-pending framing recommends Tom-reviews-more (throughput-side intervention) without decomposing into generation-rate vs throughput-capacity."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-202
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — implicit "deep queue → throughput surge" inference
+      15b: Searched for challenging literature
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Reinertsen (2009). "Principles of Product Development Flow." — Direct challenge: arrival-rate management is usually the higher-leverage intervention; throughput-surge on the bottleneck (human) is counterproductive in the medium run.
+    2. Anderson (2010). "Kanban." — WIP limits are arrival-side controls; "queue too deep → stop the line" is the recommended response, not "reviewer works harder."
+    3. Goldratt (1990). "The Haystack Syndrome." — Bottleneck subordination: the bottleneck (human reviewer) should be protected, not surged; arrival rate is what scales.
+    4. Demarco (2001). "Slack." — Human reviewers under sustained throughput-surge collapse in quality; the throughput intervention is self-defeating beyond a small range.
+    5. Hollnagel (2014). "Safety-II in Practice." — Queue depth is a signal that demands decomposition: what is generation rate, what is service rate, what is the gap? Skipping decomposition leads to the wrong intervention.
+    6. Bertsekas, D. & Gallager, R. (1992). "Data Networks." — Classical queueing-theory text: queue depth's diagnostic value comes from joint inspection of arrival and service rates; depth alone underdetermines the intervention.
+
+  Strength of challenge: Strong
+
+  Summary: The challenge is strong and well-established. Lean (Reinertsen, Anderson), TOC (Goldratt), human-factors (Demarco), resilience-engineering (Hollnagel), and classical queueing theory (Bertsekas/Gallager) converge: queue depth without decomposition into arrival and service components is an under-determined signal. Defaulting to "Tom reviews more" is the worst-of-options because it (a) treats human capacity as elastic, (b) masks the generation-rate problem, and (c) encourages unbounded generation. This is the same critique as ASSUMPTION-175 from the presumption side.
+
+  Specific risks: (a) Treats Tom as elastic; (b) Masks generation-rate driver; (c) Sets precedent for queue-depth → reviewer-surge cycle; (d) Compounds with PRESUMPTION-201: agents measuring their own output volume + queue depth triggering reviewer surge = generation grows unchecked while reviewer grinds; (e) Burnout / quality-collapse risk; (f) Foreclosing of the actually-effective intervention (arrival throttle).
+
+  Mitigations available: Decompose queue depth into arrival rate and service rate components per cycle; report both alongside depth; arrival-throttle policy triggered at depth thresholds before reviewer-surge; reserve reviewer-surge for emergencies; Tom-capacity treated as fixed ceiling; alarm on arrival-rate trend, not just depth.
+
+  Recommendation: CHALLENGED (REVISE)
+
+  STEELMAN:
+    Item: PRESUMPTION-202
+    Strongest counterargument: Defaulting to throughput-surge on the human reviewer is the wrong intervention by the lights of every lean/TOC/queueing-theory body of work. Queue depth requires decomposition; the actionable response depends on whether arrival rate is rising, service rate is falling, or both. Skipping the decomposition pushes the system toward the failure mode where the reviewer is the only available lever and gets ground down.
+    What would need to be true for C2A2 to be safe: Arrival rate and service rate tracked separately; decomposition reported alongside depth; arrival-throttle policy at depth thresholds; reviewer-surge reserved for emergencies; Tom-capacity treated as fixed.
+    How to test: Decompose the 42-pending into arrival-rate trend (items/day generated over past 30 days) and service-rate trend (items/day reviewed). If arrival is rising while service is flat, throttle is the right intervention. If service is falling while arrival is flat, investigate service-side. Depth alone does not tell you which.

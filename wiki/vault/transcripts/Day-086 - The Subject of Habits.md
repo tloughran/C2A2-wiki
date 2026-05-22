@@ -29,7 +29,7 @@ last_qc_outcome: "pass"
 
 [00:04] hello my name is Austin Habish the founder of Think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas assuma Theologiae in a way simple and insightful for
 
-[00:15] anyone to understand the Summa podcast is brought to you by Think Catholic taking two questions of the Suma a day we'll seek to summarize St Thomas's responses discovering the Brilliance of
+[00:15] anyone to understand the Summa podcast is brought to you by Think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of
 
 [00:25] aquinus and his Catholic faith this day 86 so let's get started we're covering today questions 50 and 51 of the primis aunde that is of the subject of habits and of the cause of habits as to their
 
@@ -73,7 +73,7 @@ last_qc_outcome: "pass"
 
 [04:54] them for in so far as they obey reason and in the power of sensitive appetite habits do not exist except according as they act at the command of the reason and as succinctly put in the gilby
 
-[05:11] translation of the Suma The Faculty which is acted upon acquires dispositions the repetitive sensitive faculties can have dispositions because they are acted upon by the rational will
+[05:11] translation of the Summa The Faculty which is acted upon acquires dispositions the repetitive sensitive faculties can have dispositions because they are acted upon by the rational will
 
 [05:26] but the cognitive sense faculties so think abouty hearing touch cannot have dispositions because they are not acted upon but rather act upon the rational cognitive faculties so in brief things
 
@@ -135,7 +135,7 @@ last_qc_outcome: "pass"
 
 [11:47] particular natural dispositions to Chastity or meekness St Thomas says and lastly in regard to the repetitive power St Thomas will say we do not have natural dispositions unless what we mean
 
-[12:00] by habit of the will is and this is a quote from a later part of the Suma the nurseries of moral virtues in so far as there is in the will a natural appetite for good in accordance with reason
+[12:00] by habit of the will is and this is a quote from a later part of the Summa the nurseries of moral virtues in so far as there is in the will a natural appetite for good in accordance with reason
 
 [12:14] Article 2 whether any habit is caused by acts our guiding principle for this article is the following from Aquinas everything that is passive and moved by another is disposed by the action of the
 
@@ -159,7 +159,7 @@ last_qc_outcome: "pass"
 
 [14:31] sanctifying Grace habits in the intellect and the will which are in this life requisite for us to have a knowledge of this beatific goal and a proper inclination to it these infused
 
-[14:44] habits faith hope and charity for example which we will cover in turn later in the Suma aan says in this article there are some habits by which man is disposed to an end which exceeds
+[14:44] habits faith hope and charity for example which we will cover in turn later in the Summa aan says in this article there are some habits by which man is disposed to an end which exceeds
 
 [14:57] the proportion of human nature namely the ultimate and perfect happiness of man and since habits need to be in proportion with that to which man is disposed by them therefore it is
 

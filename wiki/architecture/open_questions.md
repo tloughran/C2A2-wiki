@@ -275,3 +275,207 @@ OPEN-039:
   Context: PRESUMPTION-075, ASSUMPTION-055 (Phase 6 sandbox-unreachable repo), ASSUMPTION-070 (308-episode count, dependent on Chrome path), candidate DECISION-023 (caching/execution protocol), candidate DECISION-025. The pattern is now multi-failure: today is the third confirmed sandbox-infrastructure constraint (egress, mount-topology, .git/index.lock). The case for escalation is accumulating.
   Related decisions: candidate DECISION-023, OPEN-035, ASSUMPTION-055, ASSUMPTION-075 (NEW)
   Status: Open — priority Medium-High (independently low-risk; combined with OPEN-035 escalation may be High)
+
+OPEN-040 (candidate — pathway 00 streaming-latency conditional):
+  Date opened: 2026-05-13
+  Question: What is the first-token streaming latency through a Cloudflare Workers broker stub for a 1-token Claude streaming call, measured (a) from a coffee-shop wifi connection and (b) from the Notre Dame campus network? Is the latency under ~200 ms across both conditions? If not, what is the latency profile of the AWS Lambda + ALB fallback?
+  Why it matters: DECISION-026 (broker hosting on Cloudflare Workers) is conditional on this measurement. PRESUMPTION-152 flags the ~10-30 ms broker-side edge overhead estimate as unverified pre-decision; the validation test is the deciding artifact for whether the broker hosting decision unconditionalizes.
+  Related items: DECISION-026 (candidate), ASSUMPTION-120, PRESUMPTION-152, Pathway 00 (Broker)
+  Status: Open
+  Estimated effort: 30 minutes (test execution) + 10 minutes (write-up)
+  Target resolution: Before next significant Pathway 00 build step (broker stub deployment)
+
+OPEN-041 (candidate — recursive self-application termination condition):
+  Date opened: 2026-05-13
+  Question: The 2026-05-13 dream-conversation framing "the traditions of intellectual inquiry the project exists to accelerate include the tradition of its own becoming" introduces a recursive self-application: C2A2 is a tradition accelerated by C2A2. What is the termination condition or stable fixed point of this recursion? If the system becomes better at accelerating itself than at accelerating its external traditions (Levin, Friston, Hoffman, Kastrup, ...), is that success or pathology?
+  Why it matters: PRESUMPTION-165 flags this as joining the SELF-MEASUREMENT Goodhart cluster at the meta-tradition layer. The "tradition of its own becoming" frame is now the operating frame for the next eight weeks (through ISME). If the frame lacks a termination condition, downstream prioritization can drift toward self-acceleration over external acceleration — the worst-case Goodhart outcome at the meta-tradition layer.
+  Related items: ASSUMPTION-119, ASSUMPTION-112 (SELF-MEASUREMENT Goodhart confirmation), PRESUMPTION-123, PRESUMPTION-148, PRESUMPTION-165, FINDING-025 (SUTI = C2A2 detection function in microcosm)
+  Status: Open
+  Estimated effort: 1-2 hours for philosophical-architectural decomposition; 1 week for proxy-metric design
+  Target resolution: Before ISME 2026 demo (July 8-10) — at minimum, the operating-frame should have an articulated termination condition or known-pathology mitigation by then
+
+OPEN-042 (candidate — AI-personhood-under-CRM bright-pin engagement plan and operational-gravity audit):
+  Date opened: 2026-05-13
+  Question: The "AI personhood under conscious-realist-monism" bright pin is held with deliberate brightness pending direct philosophical engagement. PRESUMPTION-164 flags that the held position already shapes Pathway 14 (honesty layer) and Pathway 17 (agent as developed participant) framing — i.e., the pin has operational gravity even though formally undecided. (a) What is the engagement plan for the pin (when will it be directly engaged philosophically, and by whom)? (b) Which downstream architectural choices currently rest on the held-but-undecided commitment, and which of those would need re-architecting if the personhood claim were rejected?
+  Why it matters: HIGH-risk new item this run per PRESUMPTION-164. Multiple downstream pathway dependencies on a held but undecided commitment is a brittle foundation; the engagement plan and operational-gravity audit together convert the brittleness into either a stable commitment or a managed dependency.
+  Related items: ASSUMPTION-130 (honesty layer), Pathway 14, Pathway 17, PRESUMPTION-164, Two Bright Pins (pathways.md)
+  Status: Open
+  Estimated effort: 30-60 minutes for operational-gravity audit (which pathway-doc decisions rest on the pin); engagement plan timeline TBD by Tom
+  Target resolution: Operational-gravity audit within next 14 days; engagement plan timeline before ISME 2026 demo
+
+OPEN-043 (candidate — pathway-doc Cowork-draft vs walk-content audit):
+  Date opened: 2026-05-14
+  Question: Of the 8 pathway docs Cowork drafted today (18 Portability through 25 Meta-visualization), each containing ~5-piece function sets, architecture sketches, 5+ "Decisions taken," and 5+ open questions, how much of the content (line-by-line) is grounded in the morning walk transcript vs. extrapolated by Cowork from the project's prior architectural context? The walk transcript contains 2-3 sentence sketches per pathway in Summary 1 plus a 1-2 sentence framing in Summary 2. The pathway docs are ~100 lines each. What is the Cowork-attribution rate per pathway, and how many of the drafted "Decisions" survive Tom's amendment pass unchanged?
+  Why it matters: PRESUMPTION-175 flags this gap — substantive Cowork-authored architectural commitments enter the registry at near-canonical weight via pathway-doc-Decisions sections, with only metadata-level acknowledgment of the authorship gap. If Tom's amendment pass diverges substantially, the apparent agreement is artifactual.
+  Related items: PRESUMPTION-175, PRESUMPTION-176 (Chat-Claude "review" file labeling), PRESUMPTION-166 (parallel pattern at 17-pathway batch), ASSUMPTION-131..139 (today's pathway-doc-derived assumptions)
+  Status: Open
+  Estimated effort: 2-3 hours for line-by-line audit per pathway × 8 pathways = ~20 hours total; or sampled audit on 2-3 pathways for proportional estimate ≈ 5-8 hours
+  Target resolution: Before any of today's pathway-doc decisions get promoted to canonical DECISION-NNN status
+
+OPEN-044 (candidate — federation wire-format transfer-validity audit for ASSUMPTION-133):
+  Date opened: 2026-05-14
+  Question: ASSUMPTION-133 commits to file-based handoff (signed JSON over HTTPS) as the primary wire format for inter-instance federation, citing PRESUMPTION-145 as precedent. PRESUMPTION-145 originated from the laptop-to-Chat handoff (intra-user / single-machine-tree) context. PRESUMPTION-170 flags the transfer-validity question: what are the conditions under which file-based-handoff design choices from the intra-user context generalize to inter-organizational federation (different hosts, security domains, key management, update cadences)? Is the file-based commitment robust at federation scale, or does it need to be re-evaluated against persistent-API alternatives in the inter-instance context?
+  Why it matters: PRESUMPTION-170 (joins PRESUMPTION-002 CRITICAL transfer-validity cluster). If the file-based commitment has failure modes at federation scale (replay attacks, signature key management, file-staleness, peer-discovery latency) that don't appear in the single-user context, ASSUMPTION-133 is fragile. The audit converts a citation-based architectural commitment into either a validated transfer or a context-dependent commitment.
+  Related items: ASSUMPTION-133, PRESUMPTION-170, PRESUMPTION-145, PRESUMPTION-002 (CRITICAL transfer-validity cluster), Pathway 19 (Optional interoperability), Pathway 00 (Broker)
+  Status: Open
+  Estimated effort: 4-6 hours for federation wire-format threat-model audit; 8-12 hours for prototype testing against a peer instance with different security domain
+  Target resolution: Before any Pathway 19 federation prototype work begins; ideally before next DECISION-019 (federation wire-format) canonization
+
+OPEN-045 (candidate — Carpathi-instance-specific human-validator portability):
+  Date opened: 2026-05-14
+  Question: Across all 8 pathway docs (18-25), the "Cowork-drafted; sequencing subject to Tom's amendment" pattern presumes Tom as the canonical validator. PRESUMPTION-182 flags this as Carpathi-instance-specific — a governance role naturalized by default in the Carpathi instance. As the framework scales toward federation (Pathway 19), institutional deployment (Pathway 20), and individual second brains (Pathway 22), what protocol replaces "Tom's amendment" for non-Carpathi instances? Is the single-human-validator role inherent to the framework, or replaceable with community-vote, BDFL-style governance, or some other ratification protocol?
+  Why it matters: Without an explicit protocol, adopter instances either drift toward Carpathi-style single-validator governance (which may not fit their context) or stall on framework-decision questions. This is a Pathway 18/19/24 portability question; Pathway 24's meta-craft-governance content is the natural home for the answer.
+  Related items: PRESUMPTION-182, PRESUMPTION-166 (parallel pathway-doc commitment without canonization), Pathway 18 (Toolkit), Pathway 19 (Federation), Pathway 24 (Meta-crafts governance), ASSUMPTION-131..139 (today's pathway-doc decisions)
+  Status: Open
+  Estimated effort: 2-3 hours to draft a governance-role-portability section for Pathway 24; longer if community-input is sought
+  Target resolution: Before toolkit release (Pathway 18 instantiation guide); ideally addressed in Pathway 24's drafting pass before the framework is released for external adoption
+
+
+
+OPEN-046 (candidate — does c2a2-15d-monitor exist as a scheduled task at all):
+  Date opened: 2026-05-17
+  Question: The 57-item RE-TRIGGER cohort from 2026-05-05 (`next_check: 2026-05-12`) is now 4 days overdue, carry-forward through 7+ consecutive daily 15a/15b/15c runs without drain. The cowork summary recommends "verify the 15d cadence" framing — but the lit-search note from the same day says "No `c2a2-15d-monitor` scheduled-task evidence is visible in this session's accessible scope." (a) Does `c2a2-15d-monitor` (or any equivalent task) exist as a scheduled task? (b) If yes, what is its cadence and last-fire timestamp? (c) If no, was 15d-cohort ownership ever explicitly designed, or is the daily/15d split an aspirational architecture that was never built out? (d) If unbuilt, what is the migration path: build 15d, expand daily 15c to own RE-TRIGGER drain, or re-design the cohort-lifecycle protocol?
+  Why it matters: PRESUMPTION-188 flags this as 15d-as-fixable-cadence-vs-unbuilt-component — the same pattern as the substrate-decomposition cluster (PRESUMPTION-134/159/177): pre-classifying a failure as the less-expensive cause before the diagnosis is in. If 15d was never built, no "5-minute cadence check" can resolve the cohort; the fix is structural, not operational.
+  Related items: ASSUMPTION-167, PRESUMPTION-188, PRESUMPTION-134, PRESUMPTION-159, PRESUMPTION-177, ASSUMPTION-166 (lit-search null-run discipline)
+  Status: Open
+  Estimated effort: 5 minutes to query the scheduler directly for any 15d-named task; 30-60 minutes to design the migration path if 15d is unbuilt; longer if a build is needed
+  Target resolution: Within the next 7 days — the cohort grows older every cycle without ownership clarity
+
+OPEN-047 (candidate — daily 14a/14b cadence vs Chat-side architectural production rate-mismatch):
+  Date opened: 2026-05-17
+  Question: The c2a2-self-awareness-daily (14a/14b) scheduled task missed 2026-05-15 EOD and 2026-05-16 EOD before resuming on 2026-05-17 (this run). The cowork summary's framing is "verify the scheduler fired and run a heavier-than-usual catch-up." PRESUMPTION-187 raises an alternative reading: the Chat-side architectural production rate (8 new pathway docs on 2026-05-14; today's multi-agent infrastructure) may structurally exceed what a daily Cowork ingestion window can sustain. (a) Was the missed-cycle cause scheduler-state / credential / environment, or was it structural rate-mismatch (e.g., token-budget exhaustion mid-run, scope-too-large for daily cadence)? (b) If structural, what is the ingestion-contract redesign — batch processing? deferred ingest? Cowork-side throttle on Chat-derived work? smaller per-day chunks with multi-day catch-up? (c) What is the relationship to ASSUMPTION-169 (pace-and-shape question on fourth-consecutive evening surfacing) — is the missed-cycle a symptom of the breadth-arc / demo-path tension or a separate event?
+  Why it matters: PRESUMPTION-187 maps this to the substrate-decomposition cluster's failure-mode-classification pattern: pre-classifying as the cheaper cause before the diagnosis is in. If Tom diagnoses "scheduler problem" and fixes the schedule, an underlying rate-mismatch (if real) re-surfaces as recurrent missed cycles or shallow ingestions. The honest classification matters for Pathway 14.
+  Related items: ASSUMPTION-165, ASSUMPTION-169, PRESUMPTION-187, PRESUMPTION-186 (pace-and-shape zero-sum), Pathway 14 (honesty layer / accurate failure-mode classification)
+  Status: Open
+  Estimated effort: 30-60 minutes to inspect scheduler logs + tonight's catch-up run output; 1-2 hours to design alternative ingestion contracts if rate-mismatch is supported
+  Target resolution: Within the next 7 days — if missed cycles recur, the structural-rate-mismatch reading strengthens regardless
+
+OPEN-048 (candidate — DeepSeek-as-LLM-provider under Pathway 19 federation / peer-trust governance):
+  Date opened: 2026-05-17
+  Question: The Path-2 sandboxed-worker architecture (DECISION-036 candidate) imports DeepSeek-Flash on cost and capability grounds, without examining the federation / peer-trust / data-flow concerns enumerated for Pathway 19 (PRESUMPTION-189). (a) What vault content (excerpts, prompts, metadata) gets sent to DeepSeek's API in the course of normal worker operation? (b) Does any of that content overlap with content Pathway 19 federation would mark as not-for-default-sharing? (c) Does DeepSeek's model-provenance (jurisdiction, training data, governance) raise concerns under the same framework that motivates Pathway 19's federation-default-off + signed-JSON wire format commitments? (d) If yes, what is the protocol for LLM-provider trust attestations that parallels the inter-instance trust attestation work?
+  Why it matters: The toolkit-extraction path (Pathway 18) and the federation path (Pathway 19) both inherit any provider-trust questions unresolved at infrastructure layer. If the data-flow surface to DeepSeek raises governance concerns under Pathway 19's own framings, the architectural infrastructure quietly built today re-opens questions Pathway 19 was set up to close.
+  Related items: ASSUMPTION-158, PRESUMPTION-189, Pathway 19 (Optional interoperability), Pathway 18 (Toolkit), PRESUMPTION-170 (federation wire-format transfer-validity), DECISION-033 (federation default-off)
+  Status: Open
+  Estimated effort: 2-3 hours for a data-flow audit + governance-protocol-parallel analysis; longer if a formal provider-trust attestation protocol needs drafting
+  Target resolution: Before any non-Claude LLM provider is used on substantive vault content (i.e., promotion of any worker output to live vault); before Pathway 18 toolkit extraction
+
+
+OPEN-049 (candidate — orchestrator-vs-specialist state-visibility contradiction):
+  Date opened: 2026-05-18
+  Question: Today's three-way contradiction across the C2A2 wiki orchestrator (local_2a76d5fd: "Monday Levin+Friston specialist slot did NOT produce proposals today"), the morning walk handoff (local_b1594599: echoes the same framing), and the Levin/Friston specialist itself (local_630c5f21: reports 3 proposals written to `pending/`). (a) At the time the orchestrator's Phase-2 pending/-scan ran, were the specialist's 3 proposals physically present under `pending/`, or were they at a different path (e.g., a tradition-specific subdirectory)? (b) If physically present, why did the orchestrator's scan miss them — tag-filter, path-scope, ordering race? (c) If at a different path, when did the convention of specialist-writes-to-pending/ get re-routed and was that change visible to the orchestrator? (d) What is the correct fix: orchestrator scan re-coverage, specialist write-receipt manifest, run-ordering guarantee, or all three?
+  Why it matters: PRESUMPTION-196 flags this as a pending-scan-as-output-ground-truth presumption. If scan-vs-output discrepancy is steady-state, the orchestrator systematically miscategorizes specialist outputs as missing, the morning briefing relays the miscategorization, and Tom's morning intervention space (the "worth checking cron" line) is misdirected from the real problem (state-visibility) to a phantom problem (scheduler). This is a Pathway-14 honesty-layer instance — the briefing is honest about what it sees, but what it sees is wrong.
+  Related items: ASSUMPTION-178, PRESUMPTION-196, PRESUMPTION-187 (pipeline-failure-vs-rate-mismatch), Pathway 14 (honesty layer)
+  Status: Open
+  Estimated effort: 5-15 minutes to physically check `pending/` after a Monday specialist run and compare against the orchestrator's scan output; 30-60 minutes to design a write-receipt manifest protocol if scan-divergence is confirmed
+  Target resolution: Before next Monday (2026-05-25) — when the Levin/Friston Monday slot fires again, the same discrepancy is likely to recur and Tom's morning briefing should not relay it a second time
+
+OPEN-050 (candidate — uncommittable-state-extended-interval protocol):
+  Date opened: 2026-05-18
+  Question: The C2A2 wiki has accumulated 476 uncommitted changes since the .git/index.lock orphaned on 2026-05-17 17:26. CLAUDE.md constitutionally forbids blind push; the lock cannot be cleared from inside the sandbox. (a) What is the protocol for orchestrator and other daily-pipeline writes during an extended uncommittable interval? Continue writing (current behavior, risks accumulation-corruption per PRESUMPTION-199) or pause writes pending Tom's manual lock-clear-plus-review? (b) Is 476 changes a one-off or a steady-state pattern of long lock-clear intervals? (c) Should daily pipelines that produce 0 new content (today's orchestrator wrote 0 new proposals) skip the commit-step entirely, reducing the always-accumulating churn? (d) What does Pathway 14's honesty-layer commit-discipline parameter look like — is it "commit when committable" or "checkpoint-discipline equal to write-discipline"?
+  Why it matters: PRESUMPTION-199 flags this as uncommitted-state-is-safe-indefinitely, with a Critical risk rating: 476-day-accumulation is precisely the state in which sandbox-restart or partial-write leaves the vault inconsistent without git as a recovery anchor. The constitutional rule preserves visual-review correctly but is silent on checkpoint discipline during extended pauses.
+  Related items: ASSUMPTION-174, PRESUMPTION-199, CLAUDE.md constitutional rule, Pathway 14 (honesty layer)
+  Status: Open
+  Estimated effort: 15-30 minutes for Tom to manually clear the .git/index.lock and walk through visual review of the 476 changes; 1-2 hours to design a check-pointing protocol that handles extended uncommittable intervals more gracefully
+  Target resolution: Within the next 3 days — the lock is preventing the daily commit-discipline that all downstream agents (15a/15b/15c, 15d, 16, sewing-agent) depend on for ground-truth state
+
+OPEN-051 (candidate — cross-specialist confirmation for bridge claims):
+  Date opened: 2026-05-18
+  Question: PROP-003 (Levin Clofilium + Friston Cambridge) asserts bridges to Hoffman/Hawkins/Wolfram/Kastrup/Carroll as a sole-source claim by the Levin/Friston specialist. The Pattern Detector (Pathway 13) will inherit these bridges as structural-homology signal. (a) Does the system have, or should it have, a cross-specialist confirmation step where the receiving-tradition specialist confirms or denies receptivity to the bridge? (b) What is the false-positive cost of sole-source bridges — do they inflate cross-tradition signal counts and bias the Pattern Detector toward over-bridging? (c) What is the run-cost trade-off — confirmation multiplies runs by N (number of bridged traditions) but improves signal quality. Is the trade-off bounded by selecting only "paradigm-shift candidate" bridges for confirmation, leaving "surface analogies" and "structural homologies" as sole-source? (d) What is the relationship to PROP-003's "explicit cross-tradition signal" tag — is that tag itself the sole-source asserter, or does it incorporate a confirmation step?
+  Why it matters: PRESUMPTION-198 flags this as specialist-as-bridge-detector. The current sole-source pattern saves runs but may overcount bridges; downstream pipelines (Pattern Detector, cross-tradition-stage gating) operate on inflated bridge counts. If false-positive rate is high, the Pattern Detector's structural-homology output becomes noise-dominated.
+  Related items: ASSUMPTION-172, PRESUMPTION-198, Pathway 13 (Pattern Detector), CROSS-016/021/024 cluster
+  Status: Open
+  Estimated effort: 2-4 hours to design a cross-specialist confirmation protocol and a paradigm-shift-candidate-only routing rule; longer if a formal bridge-quality metric needs to be defined
+  Target resolution: Before the Pattern Detector (Pathway 13) is instantiated for Phase-3 cross-tradition processing — the choice of sole-source vs cross-specialist shapes the Pattern Detector's input distribution
+
+
+OPEN-052 (candidate — Levin-zero / Friston-one count discrepancy on Monday 2026-05-18):
+  Date opened: 2026-05-18
+  Question: A second-order count discrepancy compounds OPEN-049. The sewing-agent's EOD pending/-scan (local_57fed042) sees 7 proposals (3 Rohr / 3 Wright / 1 Friston — therefore 0 Levin), while the Levin/Friston specialist's own run report (local_630c5f21) claims "Levin Agent: 2 proposals written / Friston Agent: 1 proposals written / Total: 3." The Friston count agrees across both views (=1); the discrepancy is isolated to the 2 claimed Levin proposals. (a) Where are the 2 Levin proposals — a tradition-subdir (e.g., `inbox/proposals/pending/levin/`), a tag-filter the sewing-agent also misses, or never-actually-written? (b) Is the specialist's "Levin: 2" count a claim that did not result in actual writes (run-report-overcount), or are the writes at a path neither scanning agent currently covers? (c) What is the minimum write-receipt protocol that would let both the orchestrator and the sewing-agent reconcile their counts against a manifest emitted by the specialist itself?
+  Why it matters: OPEN-049 partial resolution (ASSUMPTION-179) confirmed proposals exist at `pending/` and shifted the diagnosis from "specialist write-failure" to "orchestrator scan-coverage failure." The new sub-question rebalances that: at least 2 of the specialist's claimed writes are not visible to the sewing-agent's deeper scan either. Without resolving OPEN-052, the OPEN-049 fix (orchestrator scan re-coverage) does not address the residual disagreement, and the inter-agent state-visibility problem remains larger than today's morning diagnosis named.
+  Related items: ASSUMPTION-178, ASSUMPTION-179, ASSUMPTION-180, PRESUMPTION-196, PRESUMPTION-204, OPEN-049, Pathway 14 (honesty layer)
+  Status: Open
+  Estimated effort: 5-15 minutes for direct shell audit (`ls -la inbox/proposals/pending/` filtered by 2026-05-18 mtime + Levin tag, plus a recursive search for Levin-tagged files anywhere under `inbox/proposals/`); 30-60 minutes to design a specialist-emits-write-receipt manifest protocol if the Levin proposals are confirmed missing-from-pending/
+  Target resolution: Before next Monday (2026-05-25) — when the Levin/Friston Monday slot fires again, the count discrepancy is likely to recur unless resolved alongside OPEN-049
+
+OPEN-053 (candidate — sewing-agent vs Pattern-Detector bridge-ratification scope):
+  Date opened: 2026-05-18
+  Question: The sewing-agent (local_57fed042) wrote three substantive cross-tradition bridge notes to `synthesis/` on 2026-05-18 (ASSUMPTION-182) without Pattern-Detector (Pathway 13) confirmation — the same sole-source architectural pattern OPEN-051 raised for the Levin/Friston specialist's PROP-003 bridges, now extended to a second agent class (PRESUMPTION-207). (a) Should bridge ratification be split by agent: sewing-agent ratifies connectivity-bridges (within-vault structural links), Pattern Detector ratifies cross-tradition-bridges (structural-homology + paradigm-shift claims)? (b) Should the Pattern Detector ratify all bridges regardless of source, with the sewing-agent's role downgraded to candidate-bridge-discovery? (c) Should both routes coexist, but with explicit weighting (e.g., sewing-agent bridges enter synthesis/ as "candidate" until Pattern-Detector pass; Pattern-Detector confirms or rejects)? (d) How does the resolution of OPEN-053 interact with OPEN-051 — are they instances of the same architectural question (cross-specialist-confirmation), or do they have different cost-benefit profiles that warrant different routing rules?
+  Why it matters: The sewing-agent's three bridges (Friston×Levin precision-weighting "strongest empirical bridge in today's batch", McGilchrist×Rohr hemispheric-operationalization, Wright×Rohr *ruach*×Universal-Christ) are substantive enough that they will be read as cross-tradition signal by every downstream pipeline (Pattern Detector, cross-tradition-stage gating, the master agent's morning briefing). If they enter synthesis/ as de-facto ratified, the Pattern Detector inherits a pre-ratified bridge corpus instead of computing one independently, creating a circular-signal risk (PRESUMPTION-207 Medium-High).
+  Related items: ASSUMPTION-172, ASSUMPTION-182, PRESUMPTION-198, PRESUMPTION-207, OPEN-051, Pathway 13 (Pattern Detector)
+  Status: Open
+  Estimated effort: 2-4 hours to design a bridge-ratification protocol that separates connectivity-discovery from pattern-detection-confirmation (likely combined with OPEN-051 in a single design pass); longer if a formal bridge-quality metric needs to be defined that distinguishes connectivity-bridges from cross-tradition-bridges
+  Target resolution: Before the Pattern Detector (Pathway 13) is instantiated for Phase-3 cross-tradition processing — same gate as OPEN-051; the two open questions should be resolved together
+
+
+OPEN-054 (candidate — demo-path vs pathway-expansion: the "both" default):
+  Date opened: 2026-05-19
+  Question: For the next two weeks, where does Tom's scarce attention go — the demo path (ISME-critical, ship-by-July-8 surfaces) or pathway-expansion (new architecture docs like Pathway 27)? The morning chat-scrape surfaced this as overdue: "Tom owes the walk a real answer on demo-path vs. pathway-expansion for the next two weeks — 'both' has been the default and isn't working." (a) Are the two genuinely competing for the same resource, or are they sequenceable/composable (e.g., Search + hyperlinking from Pathway 27 are themselves ISME-critical and ship pre-July-8)? (b) What is the minimal demo-path critical path (per evening cowork: per-tradition syntheses 0/12 starting Hawkins×Friston; README ~30 min; FC26 Rev2 submission-ready)? (c) What expansion work is cheap enough to interleave without displacing the demo path?
+  Why it matters: A standing "both" allocation with no explicit priority is producing drift on both axes; the chat-scrape names it as the strategic decision blocking focused execution. See PRESUMPTION-220 for the unexamined either/or framing.
+  Related items: ASSUMPTION-197 (Pathway 27 ISME staging), ASSUMPTION-183 (FC26 horizon), PRESUMPTION-220, Pathway 27, ISME critical path
+  Status: Open
+  Estimated effort: 15-30 minutes for Tom to set an explicit two-week priority; this is a judgment call, not an analysis task
+  Target resolution: This week — it gates how every subsequent session allocates effort
+
+OPEN-055 (candidate — queue-count reconciliation / write-receipt manifest, generalized):
+  Date opened: 2026-05-19
+  Question: Today produced four different pictures of the same pending queue: the orchestrator and morning-walk briefing both report 51 pending (and the orchestrator throttled Phase-2 hunts on it); the cleanup scan reports 36 stale duplicates → 15 genuine; the chat-scrape calls it possible "reflection lag." This is the same scan-as-ground-truth pattern OPEN-049/052 raised for proposal counts, now hitting the review-queue count and driving an actual generation-throttling decision. (a) Should the system adopt a single write-receipt / manifest layer that every counting agent reconciles against, rather than each agent trusting its own directory scan? (b) Should the conservation-principle Phase-2 gate validate the pending count against the known duplicate bug before acting on it? (c) How does this unify with OPEN-049/052's proposal-count reconciliation — is it one manifest protocol or two?
+  Why it matters: An agent (the orchestrator) made a real operational decision (suspend hunts) on a count corrupted by a known-but-unfixed duplicate bug. Until counts are reconciled against a manifest, every count-driven gate inherits the corruption. This is the structural fix behind lit-pipeline SYSTEMIC-RISK-FLAG A (inter-agent ground-truth oscillation) and B (closed-loop ratification).
+  Related items: ASSUMPTION-186, ASSUMPTION-187, PRESUMPTION-209, PRESUMPTION-210, OPEN-049, OPEN-052, lit-pipeline SYSTEMIC-RISK-FLAG A/B
+  Status: Open
+  Estimated effort: 30-60 minutes to specify a write-receipt manifest protocol shared across orchestrator / sewing-agent / cleanup / chat-scrape; longer to retrofit each agent's count step to reconcile against it
+  Target resolution: Before next Monday (2026-05-25) — the count-driven conservation gate fires again on the next orchestrator run (2026-05-20)
+
+OPEN-056 (candidate — commit ownership: who clears the pile and commits architecture/ changes):
+  Date opened: 2026-05-19
+  Question: OPEN-050 asked for an uncommittable-state protocol; today sharpens it from "lock protocol" to "ownership + collision." The sandbox cannot write `.git` (ASSUMPTION-188); scheduled commit agents appear to collide / silently fail (ASSUMPTION-189); only Tom's host shell commits succeed; and the architecture/ set plus ~716 entries sit uncommitted while new uncommitted state is generated daily. (a) Which single actor owns committing architecture/ changes, given no sandbox agent can? (b) Should scheduled commit agents be serialized (a lock-aware queue) to stop colliding? (c) Should path-targeted commits (the pattern that worked twice today: `git add <specific files>` / `commit --only -- <path>`) become the mandated convention to avoid the staged-morass? (d) What is the trigger for draining the 716-pile before it grows further?
+  Why it matters: This is lit-pipeline SYSTEMIC-RISK-FLAG D (VCS hygiene, CRITICAL) and continues PRESUMPTION-199. Two host-shell pushes landed clean today, but the underlying ownership gap and agent-collision recurrence remain; the next stale lock will re-block the orchestrator's Phase-6 again.
+  Related items: ASSUMPTION-188, ASSUMPTION-189, ASSUMPTION-190, PRESUMPTION-211, PRESUMPTION-216, OPEN-050, lit-pipeline SYSTEMIC-RISK-FLAG D, REVISE-024 (CRITICAL)
+  Status: Open
+  Estimated effort: 15-30 minutes to clear the current pile via path-targeted host-shell commits; 1-2 hours to serialize the scheduled commit agents and mandate path-targeted-commit convention
+  Target resolution: Within 3 days — the lock recurrence keeps re-blocking downstream commit discipline; partially mitigated today but not closed
+
+
+OPEN-057 (candidate — node vertical-axis semantics under the connectome model):
+  Date opened: 2026-05-20
+  Question: Coil altitude now encodes discovery-time (DECISION-039), but nodes still encode publication year. Under the narrative-connectome model, what should the node vertical axis mean? The honest candidates the model surfaces are publication year (current), narrative/developmental time (when an idea entered its tradition), or connectome-time (when narratives wired together). (a) Which is most faithful to "axis follows model," and does the model uniquely determine one (see PRESUMPTION-225) or admit several toggleable axes? (b) How should node altitude relate to coil altitude so the two are coherent in the same 3D space? (c) Does any candidate require new data the vault does not yet carry (e.g., per-idea entered-tradition dates)?
+  Why it matters: This is the next concrete "axis follows model" step after coils. Picking node altitude by available data rather than by the model would reintroduce exactly the mismatch DECISION-039 fixed for coils. PRESUMPTION-225 flags the risk of presuming a single correct axis where several are defensible.
+  Related items: ASSUMPTION-204, DECISION-039, PRESUMPTION-225, narrative_prs_connectome.md (open decisions)
+  Status: Open
+  Estimated effort: 30-60 minutes for Tom to choose the axis semantics from the model; additional implementation time if a candidate requires new per-node date data
+  Target resolution: Next connectome work session — it gates the node layer's altitude and any "by emergence over time" perspective
+
+OPEN-058 (candidate — the perspective set to derive from the connectome model):
+  Date opened: 2026-05-20
+  Question: Directive 2 (ASSUMPTION-203) calls for re-deriving the Connectome's perspective set from the model with parity of richness (not controls) to the Sociogram. The draft candidate lenses are: by-tradition (module view), by-shared-resource (pluripotency/hubs), by-coil (association-fiber view), by-emergence-over-time, by-convergence (Hawkins-style voting), and by-problem-kind; plus connectome metrics (degree/hubs, modularity, cross-module fiber density, path length). (a) Which lenses ship first, and which are ISME-critical vs. later? (b) Do the convergence/emergence lenses need a paired rivalry/divergence lens to avoid the convergence-emphasis tilt (PRESUMPTION-223)? (c) Are the proposed connectome metrics measuring found structure or imposed structure (PRESUMPTION-221), and which are defensible to report?
+  Why it matters: The perspective set operationalizes the whole connectome reframe; it is where the model becomes usable. The normative-tilt and analogy-transfer presumptions land here concretely.
+  Related items: ASSUMPTION-203, ASSUMPTION-201, PRESUMPTION-221, PRESUMPTION-223, DECISION-038, Sociogram control set, Pathway 04
+  Status: Open
+  Estimated effort: 2-4 hours to specify and prioritize the lens set + metric suite; longer to implement each lens
+  Target resolution: This/next connectome work session; sequence against the ISME demo path (OPEN-054)
+
+OPEN-059 (candidate — semantic generative-coil detection, v2):
+  Date opened: 2026-05-20
+  Question: Generative coils are detected lexically in v1 (17 chains; DECISION-041). What is the v2 semantic/embedding detector, and how is it validated? (a) Which embedding model / similarity threshold defines a solution→resource handoff? (b) How is v2 precision/recall measured against the lexical v1 baseline and against human-judged handoffs? (c) Does semantic detection materially change the count or the convergence picture (DECISION-040), and does it need the reproduced-behavior verification standard PRESUMPTION-230 flags?
+  Why it matters: Lexical v1 likely under-recalls genuine generative handoffs; the generative layer feeds the "watch a master science accrete" claim. A weak detector under- or over-states emergence.
+  Related items: ASSUMPTION-206, DECISION-041, PRESUMPTION-230, DECISION-040
+  Status: Open
+  Estimated effort: 4-8 hours for a v2 embedding detector + a precision/recall harness against the lexical baseline
+  Target resolution: After the demo-path priorities are set (OPEN-054); not blocking the live build
+
+OPEN-060 (candidate — add the verdict/outcome beat to the narrative unit?):
+  Date opened: 2026-05-20
+  Question: The agentic PRS narrative is "agent → goal → problem → resource → solution → outcome," but the current data model centers the problem-resource-solution triplet. Should the verdict/outcome beat (how it turned out) be added as a first-class field of the narrative unit? (a) Is this a data-model change requiring re-extraction across all 231 triplets? (b) Does the outcome beat enable the compression/progress metric (ASSUMPTION-208) by giving each narrative a measurable resolution? (c) What is the migration cost and is it ISME-critical?
+  Why it matters: The connectome model describes a six-beat narrative while the data carries a three-part triplet; the gap affects what the "complete model/compression" claim (ASSUMPTION-201) can actually rest on. Adding the beat is a structural data change, not a visualization tweak.
+  Related items: ASSUMPTION-201, ASSUMPTION-208, narrative_prs_connectome.md (the unit), PRS triplet schema
+  Status: Open
+  Estimated effort: 1-2 hours to scope the schema change + re-extraction cost; substantially more to execute re-extraction across the corpus
+  Target resolution: Decide scope before any re-extraction; not blocking current build
+
+OPEN-061 (candidate — is the connectome reframe the ISME/FC26 paper spine or a parallel track?):
+  Date opened: 2026-05-20
+  Question: The connectome reframe (DECISION-038) is a conceptual escalation, not just a rename — the tool is now answerable to a stated model (narrative connectome → emergence of a master science). Is this the load-bearing frame for the ISME/FC26 paper, or a parallel track? (a) Should it fold into the paper's spine rather than sit beside it? (b) If it becomes the spine, which existing paper claims (PRS quantification of progress, cross-tradition convergence) re-narrate under the connectome model, and which presumptions (221/222/223/228) must be resolved before the paper rests on them? (c) What is the cost of committing the paper to a frame authored the same day it became guiding (PRESUMPTION-224)?
+  Why it matters: This is the day's top morning-walk item. Folding the connectome into the paper spine is high-leverage but commits the paper to claims (compression metric, analogical convergence, connectome metrics) that have not passed the lit gate. A parallel-track choice de-risks the paper but may waste the reframe's integrative power.
+  Related items: DECISION-038, ASSUMPTION-201, ASSUMPTION-205, ASSUMPTION-207, ASSUMPTION-208, PRESUMPTION-221, PRESUMPTION-222, PRESUMPTION-223, PRESUMPTION-224, PRESUMPTION-228, OPEN-054 (demo-path allocation), 2026-05-14_carpathi_wiki_paper.md
+  Status: Open
+  Estimated effort: 30-60 minutes for Tom's strategic call on the morning walk; substantial downstream paper-revision effort if it becomes the spine
+  Target resolution: This week — it shapes both the paper and the demo-path allocation (OPEN-054)

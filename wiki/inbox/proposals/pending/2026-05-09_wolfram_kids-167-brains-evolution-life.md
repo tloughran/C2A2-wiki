@@ -7,7 +7,10 @@ source_title: "Science & Technology Q&A for Kids (and others) [Episode 167]"
 source_url: https://www.youtube.com/watch?v=nD2UPqqugVU
 source_date: 2026-05-01
 searched_on: 2026-05-09
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-030
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

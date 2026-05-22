@@ -1,0 +1,31 @@
+SEARCH-FOR-ASSUMPTION-175:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-175
+  Original statement: "Pending review queue at 42 — largest in network history — warrants Tom's prioritized review pass."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-175
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Surfaced from morning queue-depth report
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Little, J. D. C. (1961). "A Proof for the Queueing Formula: L = λW." Operations Research. — Foundational: queue length grows when arrival rate exceeds service rate; sustained growth requires intervention on either side.
+    2. Kingman, J. F. C. (1961). "The single server queue in heavy traffic." Mathematical Proceedings of the Cambridge Philosophical Society. — Heavy-traffic queues show super-linear delay growth; intervening before saturation is much cheaper than after.
+    3. Reinertsen, D. (2009). "The Principles of Product Development Flow." — Lean/flow literature: queue depth is the single best predictor of cycle-time degradation; reducing queue depth is high-leverage.
+    4. Anderson, D. J. (2010). "Kanban: Successful Evolutionary Change for Your Technology Business." — WIP limits and pull systems: queue-depth alarms should trigger throttle on new generation or surge on throughput.
+    5. Goldratt, E. M. (1984). "The Goal." — Theory of constraints: pending review queue is a candidate bottleneck; bottleneck attention is the highest-leverage intervention.
+
+  Strength of support: Moderate
+
+  Summary: Queueing theory and lean/flow literature strongly support the claim that a record-high queue depth warrants intervention. Little's law and Kingman's heavy-traffic results both predict accelerating cycle-time degradation as queues grow. The specific claim — "Tom's prioritized review pass" — is supported as a throughput-side intervention, though the literature would also note (and PRESUMPTION-202 explicitly flags) that arrival-rate reduction is an equally legitimate response. The "warrants intervention" core is strong; the specific choice of intervention is weaker.
+
+  Caveats: The literature supports "intervene" but is agnostic about which side (generation vs throughput). Reinertsen and Anderson both emphasize that queue-depth signals can call for either pull-throttling or capacity surge, depending on cost structure. Defaulting to "Tom reviews more" implicitly treats Tom-capacity as elastic, which it is not.
+
+  Recommendation: PARTIALLY-SUPPORTED

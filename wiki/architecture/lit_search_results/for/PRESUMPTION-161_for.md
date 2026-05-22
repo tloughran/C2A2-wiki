@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-161:
+  Date searched: 2026-05-14
+  Original item: PRESUMPTION-161
+  Original statement: "KL-divergence as C2A2 detector presumes active-inference/OODA homology is robust enough for cross-discipline metric transfer; PRESUMPTION-002 and PRESUMPTION-080 transfer-validity clusters not first audited"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-161
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced via inference from ASSUMPTION-128 cross-discipline metric transfer without homology audit
+      15a: Searched for active-inference / OODA homology validity in computational neuroscience, decision theory, military operations research
+    Current status: SUPPORTED
+
+  Sources:
+    1. Parr, Pezzulo, Friston (2022) "Active Inference" — homology to other decision cycles (including OODA) is treated as analogy, not formal homology.
+    2. Sutton & Barto (2018) "Reinforcement Learning" — cross-framework metric transfer requires explicit conditions for validity.
+    3. PRESUMPTION-002 (Thousand Brains transfer) and PRESUMPTION-080 (other transfer-validity) — existing C2A2 transfer-validity cluster.
+    4. Cartwright (1999) "The Dappled World" — cross-domain principle transfer requires explicit reidentification of relevant similarity; informal analogy is not sufficient.
+
+  Strength of support: Strong
+
+  Summary: Cross-discipline metric transfer without explicit homology audit is a recognized scientific-method risk (Cartwright). Active inference ↔ OODA mapping is informal in the literature. The presumption correctly identifies that ASSUMPTION-128's "KL-divergence as C2A2 detector" inherits the transfer-validity questions from PRESUMPTION-002 and PRESUMPTION-080. Strong support for the inference.
+
+  Caveats: (a) The homology audit may confirm validity; (b) KL-divergence itself is well-founded within active inference; transfer is the load-bearing step; (c) The presumption cluster (PRESUMPTION-002 / 080 / 161) is structural — addressing the cluster may resolve multiple items.
+
+  Recommendation: SUPPORTED — cross-discipline transfer audit is canonical; inference is correct

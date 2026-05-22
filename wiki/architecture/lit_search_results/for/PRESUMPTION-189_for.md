@@ -1,0 +1,27 @@
+SEARCH-FOR-PRESUMPTION-189:
+  Date searched: 2026-05-18
+  Original item: PRESUMPTION-189
+  Original statement: "DeepSeek-Flash imported on cost/capability grounds without examining Pathway-19 federation / peer-trust / data-sovereignty implications of LLM-provider choice."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-189
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15a: Searched for supporting literature
+    Current status: NO-SUPPORT-FOUND
+
+  Supporting evidence found: No
+
+  Sources:
+    1. No literature supports the default of cost/capability-only LLM selection bypassing governance.
+
+  Strength of support: None
+
+  Summary: No literature supports the design choice; it is a default omission.
+
+  Caveats: Same as 187/188 — absence of support consistent with hidden gap.
+
+  Recommendation: NO-SUPPORT-FOUND

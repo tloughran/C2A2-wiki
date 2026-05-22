@@ -1,0 +1,36 @@
+SEARCH-AGAINST-PRESUMPTION-192:
+  Date searched: 2026-05-18
+  Original item: PRESUMPTION-192
+  Original statement: "Composer-draft preservation note presumes the unsent Tom-draft will eventually be useful; preservation without classification runs against Pathway-14 honesty-layer's accurate-classification commitment."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-192
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15b: Searched for challenging literature
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Cook (2013) 'Evidence, Memory, Identity' — archival best-practice favors classification at the time of preservation, not deferred classification.
+    2. C2A2-internal PREMISE-019 (Pathway-14 honesty-layer) — explicit accurate-classification commitment; preservation without classification violates the active criterion.
+    3. Goodhart's Law literature (CNA 2022; signaling-and-meaning literature) — unclassified preservation tends to drift toward forgotten-storage, not used-archive.
+
+  Strength of challenge: Weak-Moderate
+
+  Summary: Preservation without classification is the default that Pathway-14 specifically pushes against. The 'will eventually be useful' inference is the documented forgotten-storage anti-pattern. Pattern is real but stakes are LOW (operational cost small).
+
+  Specific risks: (a) Drift toward forgotten-storage; (b) accumulation without retrieval; (c) Pathway-14 criterion-creep at LOW stakes joins the criterion-creep cluster (PRESUMPTION-195).
+
+  Mitigations available: (a) Classify at preservation time (3 categories: in-progress, superseded, archive); (b) periodic audit of preserved drafts for actual reuse.
+
+  Recommendation: CHALLENGED
+
+  STEELMAN:
+    Item: PRESUMPTION-192
+    Strongest counterargument: The strongest case: preservation without classification is the soft option that defers the hard decision. Pathway-14 calls for active classification; this presumption shows the framework is not being applied where stakes are LOW. Pattern matters more than stakes.
+

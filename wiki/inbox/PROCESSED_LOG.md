@@ -144,3 +144,61 @@ Stray inbox files NOT counted as wiki ingest material (skipped intentionally —
 - c2a2_hoffman_levin_multiscale_proposal.md
 - hoffman_levin_transcript_raw.md
 - pending_hoffman_multiscale.md
+
+---
+
+## Ingest — 2026-05-13 (run-time)
+
+Four files newly approved by Tom's 2026-05-11 decision email and copied into inbox/ by Phase 0:
+
+| File | Tradition | PRS added | Source |
+| --- | --- | --- | --- |
+| 2026-05-11_levin_suti-search-unconventional-terrestrial-intelligence.md | Levin | PRS-25 | SUTI essay, thoughtforms.life (Jan 2026) |
+| 2026-05-11_levin_sediqi-bioelectric-senescing-keratinocytes.md | Levin | PRS-26, PRS-27 | Sediqi & Levin, iScience (Dec 2025) |
+| 2026-05-11_levin_lex-fridman-486-alien-intelligence.md | Levin | PRS-28, PRS-29 | Lex Fridman Podcast #486 (2025-11-30) |
+| 2026-05-11_friston_no-way-out-164-ooda-active-inference.md | Friston | PRS-15, PRS-16 | No Way Out Podcast #164 (2026-04-28) |
+
+**Per-tradition net changes:**
+- Levin: +5 → 29 total
+- Friston: +2 → 16 total
+
+**Total PRS network capacity: 179 triplets** (was 172).
+
+**New cross-program entries:** CROSS-075 through CROSS-082 (8 new). Cross-program total: 82.
+
+**Pattern Detector findings written:** FINDING-025 through FINDING-031 (7 new).
+
+**Escalations to Master Paradigm Shift Watch List (HIGH priority):**
+- FINDING-025 — SUTI as C2A2's "detection" function in microcosm (Levin × Friston × Hoffman × Kastrup × C2A2-core)
+- FINDING-029 — Ideas-as-living-agents as empirical anchor for traditions-as-cognitive-entities (Levin × MacIntyre/C2A2-core)
+- FINDING-030 — Active inference as OODA — first quantitative C2A2 detector metric candidate via KL-divergence risk/ambiguity formalism (Friston × Levin × Hawkins × MacIntyre/C2A2-core)
+
+---
+
+## Ingest — 2026-05-17 (Sunday reconciliation run)
+
+Four inbox files dated 2026-05-13 that had been left unprocessed in PROCESSED_LOG.md were reconciled today. PROP-2026-05-13-004 (Kastrup-Levin dialogue) had its Kastrup-side PRS triplets already integrated on 2026-05-16 from a partial prior run; today's run completed the Levin-side parallel ingest, cross-program entries, and pattern-detector evaluation. The three McGilchrist files were fully unprocessed and are now ingested.
+
+| File | Tradition(s) | PRS added | Source |
+| --- | --- | --- | --- |
+| 2026-05-13_kastrup_with-reality-in-mind-levin-mind-everywhere.md | Kastrup (already done 2026-05-16), Levin (new today) | Kastrup PRS-14/15/16 (prior); Levin PRS-30, PRS-31 (today) | With Reality in Mind dialogue (2026-05-12) |
+| 2026-05-13_mcgilchrist_closer-to-truth-can-ai-become-conscious.md | McGilchrist | PRS-22, PRS-23, PRS-24 | Closer to Truth (2026-05-10) |
+| 2026-05-13_mcgilchrist_closer-to-truth-consciousness-deep-ontology.md | McGilchrist | PRS-25, PRS-26 | Closer to Truth (2026-05-08) |
+| 2026-05-13_mcgilchrist_substack-laziness-left-hemisphere.md | McGilchrist | PRS-27, PRS-28 | iainmcgilchrist.substack.com (2026-04-01) |
+
+**Per-tradition net changes (this run):**
+- McGilchrist: +7 → 28 total
+- Levin: +2 → 31 total
+
+**Total PRS network capacity: 222 triplets** (was 213).
+
+**New cross-program entries:** CROSS-083 through CROSS-090 (8 new). Cross-program total: 90.
+
+**Pattern Detector findings written:** FINDING-032 through FINDING-035 (4 new).
+
+**Escalations to Master Paradigm Shift Watch List (HIGH priority):**
+- FINDING-032 — Kastrup–Levin dialogue establishes first internal axis of the consciousness-as-fundamental cluster (Kastrup × Levin; McGilchrist, Hoffman, Stump adjacent)
+- FINDING-033 — McGilchrist × Kastrup × Hoffman independent convergence on AI-consciousness limits as external philosophical warrant for the C2A2 human/AI division of labor
+
+**Architecture flag escalation:**
+- FINDING-035 — "Native Epistemic Standards" as required section in every tradition wiki (McGilchrist × Stump; portable C2A2 design pattern)

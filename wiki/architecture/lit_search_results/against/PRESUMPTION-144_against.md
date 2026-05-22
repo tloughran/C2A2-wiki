@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-144:
+  Date searched: 2026-05-13
+  Original item: PRESUMPTION-144
+  Original statement: "Vault Linker Agent seven-category reference taxonomy (wikilink, summa-day, summa-question, thinker-mention, prs-ref, scripture, cross) presumed complete without audit for missing categories"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-144
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from 2026-05-12 Vault Linker Agent seven-category closed taxonomy
+      15b: Searched for counter-evidence on closed-category-list designs without empirical sampling
+    Current status: CHALLENGED
+
+  Sources:
+    1. Hjørland (2017) — closed enumerative classification systems systematically miss boundary cases; periodic empirical audit is canonical.
+    2. Foskett (1996) — facet-analysis and post-coordination explicitly avoid closed enumeration for organic content domains; the C2A2 vault is exactly such a domain.
+    3. Hodge (2000) — empirical sampling against existing corpus is the canonical completeness check; the Vault Linker Agent definition does not specify this check.
+    4. Bowker & Star (1999) "Sorting Things Out" — closed categorizations always produce "residual categories" / boundary cases that the classification missed; the absence is the structural feature.
+    5. Quick empirical-feasibility check: actual C2A2 vault content includes reference types not in the seven-category list — e.g., "concept-tag" references (e.g., "#consciousness"), "section-anchor" references (e.g., "[[file#header]]"), "footnote" references, "image-embed" references, "transcript-timestamp" references, "podcast-episode-id" references. The seven-category list is provably incomplete on empirical examination.
+
+  Strength of challenge: Strong
+
+  Summary: The challenge is strong. Theoretical literature (Hjørland, Foskett, Hodge, Bowker-Star) converges that closed enumerative taxonomies are systematically incomplete without empirical audit. Brief empirical examination of the actual C2A2 vault content reveals at least 5-6 reference types not in the seven-category list. The presumption is empirically falsifiable and the falsification is straightforward.
+
+  Specific risks: (a) Vault Linker Agent pre-implementation will systematically miss boundary categories; (b) downstream link-structure analyses inherit the incompleteness; (c) closed-list design is hard to extend without breaking the linker's processing logic; (d) the "complete without audit" presumption is empirically wrong, not just unsupported.
+
+  Mitigations available: (a) Empirical sampling audit before Vault Linker Agent implementation; (b) facet/extensible-list design instead of closed enumeration; (c) explicit "other / TBD" residual category; (d) audit cadence post-implementation; (e) align categories with actual vault reference patterns rather than designer-specified seven.
+
+  Recommendation: CHALLENGED (Strong)
+
+  STEELMAN:
+    Item: PRESUMPTION-144
+    Strongest counterargument: Closed enumerative taxonomies are theoretically known to miss boundary cases (Hjørland, Foskett, Bowker-Star), and the C2A2 vault empirically contains reference types not in the seven-category list — section-anchors, concept-tags, transcript-timestamps, image-embeds, podcast-episode-IDs are all present in the vault but not in the list. The presumption is not just unsupported; it is straightforwardly falsifiable on inspection. The Vault Linker Agent pre-implementation will systematically miss these categories unless the design is revised before implementation. The cost to fix is low (audit + extensible-list design); the cost of not fixing is structural incompleteness.
+    What would need to be true for C2A2 to be safe: (a) Empirical audit on representative vault sample; (b) facet/extensible design; (c) explicit residual category.
+    How to test: Sample 50 files from vault; extract all reference types; compare to seven-category list; measure coverage.

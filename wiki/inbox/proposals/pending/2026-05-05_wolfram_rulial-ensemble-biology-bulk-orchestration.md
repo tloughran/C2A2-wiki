@@ -7,7 +7,10 @@ source_title: "What's Special about Life? Bulk Orchestration and the Rulial Ense
 source_url: https://writings.stephenwolfram.com/2025/11/whats-special-about-life-bulk-orchestration-and-the-rulial-ensemble-in-biology-and-beyond/
 source_date: 2025-11-11
 searched_on: 2026-05-05
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-022
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

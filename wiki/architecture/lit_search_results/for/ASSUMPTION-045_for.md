@@ -28,3 +28,35 @@ SEARCH-FOR-ASSUMPTION-045:
   Caveats: (a) 60 days is a convention, not derived from a coverage-decay measurement on Tom's actual source corpus; (b) per-thinker variance in publication cadence is not accounted for — a prolific author can emit in a month what another emits in a year, so a single global window is a coarse filter; (c) the claim requires that "primary-source material" is itself well-defined per thinker, which is not audited.
 
   Recommendation: PARTIALLY-SUPPORTED (general shape supported; specific 60-day threshold is an unaudited hyperparameter)
+
+---
+
+SEARCH-FOR-ASSUMPTION-045 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-045
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-045
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from briefing-layer coverage-freshness claim
+      15a (cycle 0): Searched for supporting literature → PARTIALLY-SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new supporting literature in the ~4-week gap. Recency-window and specialist-task-gating literature stable.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-SUPPORTED finding stands. Shape supported; 60-day threshold still unaudited.
+
+  Caveats: Per-thinker calibration would improve faster than literature search.
+
+  Recommendation: PARTIALLY-SUPPORTED (refreshed; carry forward prior recommendation)

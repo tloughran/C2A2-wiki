@@ -27,9 +27,9 @@ last_qc_outcome: "pass"
 
 ## Transcript
 
-[00:04] hello my name is Austin Habish the founder of Think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas of Suma Theologiae in a way simple and insightful
+[00:04] hello my name is Austin Habish the founder of Think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas of Summa Theologiae in a way simple and insightful
 
-[00:14] for anyone to understand the Suma podcast is brought to you by think Catholic taking two questions of the Suma a day we seek to summarize St Thomas's responses discovering the
+[00:14] for anyone to understand the Summa podcast is brought to you by think Catholic taking two questions of the Summa a day we seek to summarize St Thomas's responses discovering the
 
 [00:24] Brilliance of Aquinas and his Catholic faith is day 89 so let's get started we today questions 56 and 57 of the Prima suunde that is of the subject of virtue and of the intellectual virtues the
 
@@ -159,7 +159,7 @@ last_qc_outcome: "pass"
 
 [13:33] affected towards things ordained to the end in this virtue is Prudence consequently Prudence is a virtue necessary to lead a good life and now article six our last article whether
 
-[13:48] ubia CIS and N are virtues annexed to prudence and I hope I'm pronouncing those correctly first of all what do we mean by annexed virtues to quote Aquinas later in the Suma he writes two points
+[13:48] ubia CIS and N are virtues annexed to prudence and I hope I'm pronouncing those correctly first of all what do we mean by annexed virtues to quote Aquinas later in the Summa he writes two points
 
 [14:02] must be considered about the virtues annexed to a principal virtue the first is that these virtues have something in common with the principal virtue and the second is that in some respect they fall
 

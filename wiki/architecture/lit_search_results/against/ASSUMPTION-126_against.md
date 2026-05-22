@@ -1,0 +1,38 @@
+SEARCH-AGAINST-ASSUMPTION-126:
+  Date searched: 2026-05-14
+  Original item: ASSUMPTION-126
+  Original statement: "7-day evening cowork-to-chat delivery drought broken via Tom signing into claude.ai in paired Chrome profile; redesign discussion can proceed from working-channel framing"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-126
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from sync recovery context
+      15b: Searched for counter-evidence on once-fixed-stays-fixed framing against credential lapse rate
+    Current status: CHALLENGED
+
+  Sources:
+    1. Rasmussen (1997) and Reason (1990) Swiss-cheese — symptomatic fix masks root cause; canonical post-incident concern.
+    2. Sign-in-state lapse rate empirical data (Selenium/Playwright community 2023-2025) — credential drift produces recurrence on a half-life measured in days to weeks.
+    3. C2A2-internal: 7-day drought is a long failure window; the recurrence pattern is the operational tell.
+    4. Allspaw & Robbins (2010) — "fixed by restart" / "fixed by re-login" are textbook examples of symptomatic-not-root-cause fixes.
+    5. PRESUMPTION-159 paired — credential-vs-architectural layer.
+    6. PRESUMPTION-134 (REVISE, unresolved) — substrate-decomposition gap.
+
+  Strength of challenge: Strong
+
+  Summary: The "drought broken" claim is a single-data-point durability assertion based on a credential-layer fix. Credential refresh has well-documented half-life behavior; recurrence is expected unless the architectural cause is addressed. The 7-day drought duration itself indicates substrate-level fragility (PRESUMPTION-134 unresolved). Working-channel framing is acceptable for the moment but should not foreclose the redesign path (ASSUMPTION-118 / PREMISE-015). Strong challenge.
+
+  Specific risks: (a) Recurrence within days to weeks; (b) Architectural cause unaddressed; (c) Single-data-point durability claim; (d) Substrate-decomposition gap unresolved.
+
+  Mitigations available: (a) Multi-day durability test; (b) Proceed with token-delegation redesign (ASSUMPTION-118) in parallel; (c) Substrate decomposition (PRESUMPTION-134); (d) Demote "drought broken" to "momentarily restored."
+
+  Recommendation: CHALLENGED (Strong) — credential-layer-as-architectural-fix is a recognized anti-pattern
+
+  STEELMAN:
+    Item: ASSUMPTION-126
+    Strongest counterargument: "Drought broken via sign-in" is the textbook example of confusing symptomatic fix with root cause. Sign-in lapses have well-documented half-life behavior; recurrence is the expected pattern. The 7-day drought duration is itself evidence that the failure is substrate-level, not credential-level. Treating the current sign-in success as durable is over-extrapolation from a single data point. The conservative move is to demote the claim to "momentarily restored" and continue the architectural-layer fix (ASSUMPTION-118 token-delegation redesign + PRESUMPTION-134 substrate-decomposition) on the assumption that recurrence is expected.
+    What would need to be true for C2A2 to be safe: (a) Multi-day durability confirmation (e.g., 14 consecutive successful days); (b) Substrate-decomposition complete; (c) Architectural fix on track.
+    How to test: Track success rate over 14+ days; correlate with sign-in-state events; measure recurrence half-life.

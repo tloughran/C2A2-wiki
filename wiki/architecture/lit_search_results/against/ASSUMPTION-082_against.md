@@ -37,3 +37,36 @@ SEARCH-AGAINST-ASSUMPTION-082:
     Strongest counterargument: Layered architectures are easy to draw and hard to enforce. Every deployed multi-layer knowledge system in the literature shows layer leakage; the question is not whether RC Explorer's layers will leak but where. Asserting Tool #1 / Tool #2 / urgent without cost-of-delay derivation locks in a prioritization that may be inverted by what implementation reveals. Architecture diagrams are hypotheses; treating them as plans before implementation feedback is a documented anti-pattern.
     What would need to be true for C2A2 to be safe: (a) Layer boundaries explicitly tested with cross-layer-item examples; (b) tool prioritization derived from cost-of-delay rather than asserted; (c) the 5 integration steps treated as testable rather than fixed.
     How to test: List 5 candidate items that could plausibly belong to multiple layers; ask the architecture which layer each belongs to; if the answers feel forced, the layer abstraction is leaking and needs revision.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-082 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-082
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-082
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from RC-Explorer architecture proposal
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~2-week gap. Layer-leakage and cost-of-delay critiques stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. Skeleton canonical; ranking/coherence remain weakly supported.
+
+  Caveats: Layer-isolation tests remain the cheap mitigation.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

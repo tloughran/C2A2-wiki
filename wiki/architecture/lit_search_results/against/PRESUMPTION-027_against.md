@@ -29,3 +29,35 @@ SEARCH-AGAINST-PRESUMPTION-027:
   Mitigations available: Target researchers known to be interested in cross-disciplinary work; lead with specific, validated findings relevant to each recipient's research; include concrete questions rather than broad invitations; accept 5-10% response rate as realistic expectation.
   
   Recommendation: PARTIALLY-CHALLENGED
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-027 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-027
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: PRESUMPTION-027
+    Item type: PRESUMPTION
+    Transform at each step:
+      14b (cycle 0): Originally surfaced as unstated outreach presumption
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new challenging literature in the ~5-week gap. PI inbox-triage and declining cold-email response rates remain stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. Realistic engagement-rate expectation remains low; "substantive" engagement remains rarer still.
+
+  Caveats: Empirical pilot data would update this faster than literature search.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)

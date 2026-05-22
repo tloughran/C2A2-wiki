@@ -37,3 +37,38 @@ SEARCH-AGAINST-ASSUMPTION-052:
     Strongest counterargument: Cost-reduction projections for caching architectures consistently miss their target by 20-40% in published production cases. The 70-80% projection is an optimistic point-estimate that compounds three unaudited presumptions — any one failing pushes the actual number down. Moreover, per-session savings degrade as the vault's daily activity grows, so the "as the vault grows" clause cuts both ways: aggregate savings accumulate but per-session savings attenuate. A realistic plan would treat 70-80% as the optimistic ceiling and 40-60% as the likely realized outcome, with instrumentation to detect divergence.
     What would need to be true for C2A2 to be safe: Realized-cost instrumentation on deploy; a documented trigger threshold below which the architecture would be revisited; no implicit pressure to confirm rather than measure.
     How to test: Instrument per-session cost before rollout; measure 4-week post-rollout; compare realized-vs-projected; if < 60% of projection, investigate.
+
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-052 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-17
+  Original item: ASSUMPTION-052
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a→15a,15b→15c→15d→15a,15b→15c]
+    Original item: ASSUMPTION-052
+    Item type: ASSUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-05): re-triggered on weekly cadence; next_check 2026-05-12 elapsed
+      15b (cycle 1, 2026-05-17): re-searched for challenging literature
+    Current status: refresh; no new challenging literature surfaced this cycle.
+
+  Run context: Daily-pipeline drain of 15d-owned cohort (see SYSTEMIC-RISK-FLAG in lit_search_returns.md 2026-05-17 RUN section). 15d schedule failure since 2026-05-05.
+
+  New evidence weighed: No new challenging literature has surfaced in the past week+. The prior cycles' challenge profile stands.
+
+  Sources (new / refreshed): No new sources this cycle.
+
+  Strength of challenge: Unchanged from prior cycle.
+
+  Summary: Cycle-1 refresh confirms the prior cycle's finding. The challenging literature base has not materially shifted; no new disconfirmatory sources surfaced during this automated cycle.
+
+  Specific risks: Unchanged from prior cycle.
+
+  Mitigations available: Unchanged from prior cycle.
+
+  Recommendation: refreshed; carry forward prior recommendation

@@ -7,7 +7,10 @@ source_title: "Is there a moon when no one is looking? On Rovelli & Relational Q
 source_url: https://www.withrealityinmind.com/rovelli-relational-quantum-mechanics/
 source_date: 2026-04-29
 searched_on: 2026-05-05
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-015
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

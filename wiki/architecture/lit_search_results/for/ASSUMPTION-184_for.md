@@ -1,0 +1,30 @@
+SEARCH-FOR-ASSUMPTION-184:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-184
+  Original statement: "Cowork-to-chat delivery via `document.execCommand('insertText', ...)` on ProseMirror contenteditable succeeds where `type`-with-newlines path misfires; SKILL.md update pending."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: ASSUMPTION-184
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14b: Surfaced from cowork-to-chat delivery method comparison
+      15a: Searched for supporting literature
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. ProseMirror documentation (Marijn Haverbeke), prosemirror.net — explicitly notes that ProseMirror intercepts DOM mutations and reconstructs them via its own transaction model; raw key events with newlines are interpreted via plugin-mediated handlers (often as paragraph splits rather than literal \n insertion).
+    2. WICG / W3C Editing Working Group, "Input Events Level 2" spec (whatwg.org) — `execCommand('insertText')` triggers a `beforeinput` event of inputType `insertText` that editing frameworks like ProseMirror handle via a single dispatch path, more reliably than synthesized keystrokes.
+    3. Discussions on the ProseMirror discuss forum (discuss.prosemirror.net) and CodeMirror issues — multiple reports that programmatic newline insertion via `type` is unreliable across versions, while `insertText` (or the newer `dispatchTransaction` API) is the canonical interop seam.
+    4. Selenium / Playwright maintainer threads — well-known issue that synthesized key events do not always produce expected text in ProseMirror/Slate/Draft.js editors; the recommended workaround is exactly `execCommand('insertText', false, value)`.
+
+  Strength of support: Strong (for the empirical claim; weak for the long-term portability)
+
+  Summary: The technical claim is well-supported by ProseMirror's documented internals and the W3C Input Events spec. Synthesized key events targeting ProseMirror reliably misbehave on newlines because ProseMirror intercepts and reinterprets them; `insertText` fires a beforeinput event that ProseMirror's input plugin handles cleanly. This is a known browser-automation pattern.
+
+  Caveats: `execCommand` is officially deprecated (though still functional in all major browsers); long-term the recommended path is `InputEvent` dispatch directly or framework-specific APIs. SKILL.md update should note both the working workaround and its deprecated status.
+
+  Recommendation: SUPPORTED

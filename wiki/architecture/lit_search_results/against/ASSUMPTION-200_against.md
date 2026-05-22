@@ -1,0 +1,35 @@
+SEARCH-AGAINST-ASSUMPTION-200:
+  Date searched: 2026-05-20
+  Original item: ASSUMPTION-200
+  Original statement: "Four Sunday-cron tasks fired Monday catch-up instead of Sunday; re-check next Sunday."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-200
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from session: four Sunday-scheduled cron tasks fired Monday as catch-up rather than on Sunday; flagged to re-check next Sunday.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: NO-CHALLENGE-FOUND
+
+  Challenging evidence found: Weak
+
+  Sources:
+    1. Scheduler-reliability literature. — A repeating Monday-shift (rather than a one-time catch-up) would indicate a timezone/DST or schedule-definition bug rather than benign catch-up; weak counter pending the next occurrence.
+
+  Strength of challenge: Weak
+
+  Summary: There is essentially no challenge: the catch-up explanation is consistent with how persistent schedulers behave. The only weak counter is that if the Monday firing recurs, it is a real scheduling bug (timezone/DST/definition error) rather than a one-time catch-up — which is exactly why the premise schedules a re-check. The 15b routing question ('Monday-burst is expected catch-up') actually supports the premise.
+
+  Specific risks: If it recurs, four tasks are systematically firing a day late (cadence drift), affecting any day-sensitive downstream step.
+
+  Mitigations available: Re-check next Sunday (already planned); inspect timezone/DST and schedule definitions if it recurs.
+
+  Recommendation: NO-CHALLENGE-FOUND
+
+  STEELMAN:
+    Item: ASSUMPTION-200
+    Strongest counterargument: If the Monday firing is a one-time catch-up after a missed wake, it is benign; if it recurs, it is a timezone/DST or schedule-definition bug. The only way to tell is the next occurrence, which the premise already plans to check.
+    What would need to be true for C2A2 to be safe: Safe if next Sunday the four tasks fire on Sunday; recurrence indicates a real bug.
+    How to test: Observe next Sunday's run; on-time firing confirms benign catch-up, a second Monday-shift confirms a scheduling bug.

@@ -7,7 +7,10 @@ source_title: "Iain McGilchrist — Consciousness and Life After Death?"
 source_url: https://closertotruth.com/video/mcgia-008/
 source_date: 2026-05-03
 searched_on: 2026-05-05
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-018
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-183:
+  Date searched: 2026-05-18
+  Original item: PRESUMPTION-183
+  Original statement: "Maildir-style file-folder coordination presumed to scale beyond single non-Claude producer; priority-field deferred 'until more than one producer' names the assumption only to defer it."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-183
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Maildir specification (Bernstein) — designed for atomic delivery in multi-producer contexts; widely deployed in IMAP servers handling concurrent producers.
+    2. courier-imap and dovecot operational history — Maildir scales empirically to multi-producer scenarios in production mail systems.
+
+  Strength of support: Weak-Moderate
+
+  Summary: Maildir is provably multi-producer-safe in its design and history; per-message atomic-rename is the durable property. At Maildir's mail-system scale, it scales fine.
+
+  Caveats: Maildir solves new-file collisions, not edit collisions. The C2A2 use is closer to mail (write-once, read-many) than to shared-document editing, which is in its favor. But priority-ordering and contention are not Maildir concerns; they are deferred separately.
+
+  Recommendation: PARTIALLY-SUPPORTED

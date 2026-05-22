@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-146:
+  Date searched: 2026-05-13
+  Original item: PRESUMPTION-146
+  Original statement: "Loughran papers on-disk without processing-trigger — content-architecture artifact treated as load-bearing despite not-yet-ingested status"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-146
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from 2026-05-12 Loughran-papers on-disk-pending-ingest framing as load-bearing artifact
+      15a: Searched for specialist-pipeline trigger-condition literature and on-disk-as-processed vs. on-disk-pending patterns
+    Current status: NO-SUPPORT-FOUND
+
+  Sources:
+    1. (None found endorsing on-disk-pending status as load-bearing without explicit ingest-trigger criterion.)
+    2. PMBOK 7th ed. — work-in-progress vs. completed-work distinction; treating WIP as completed inflates apparent throughput and creates schedule risk.
+    3. Reinertsen (2009) "The Principles of Product Development Flow" — explicit hand-off triggers between pipeline stages are canonical; implicit "it's on disk so it counts" patterns produce systematic latency.
+    4. Lean Software Development (Poppendieck 2003) — make-ready inventory distinct from delivered value; on-disk-pending is make-ready, not delivered.
+    5. C2A2-internal: PRESUMPTION-128 (MONITOR-115 — workflow-accommodation cluster) — joint with the workflow-accommodation-without-canonization pattern; ASSUMPTION-111 (MONITOR-113) Wright/Rohr blocking has the same structural shape (on-disk artifacts treated as load-bearing without explicit ingest commitment).
+
+  Strength of support: None
+
+  Summary: No literature endorses on-disk-pending status as load-bearing without explicit ingest-trigger criterion. PMBOK WIP-vs-complete distinction, Reinertsen flow principles, and Lean make-ready discipline converge: pre-ingest artifacts are inventory, not delivered value. Treating Loughran papers as load-bearing without an explicit ingest trigger is process-asymmetry with the Wright/Rohr pending-proposal case (ASSUMPTION-111 MONITOR-113).
+
+  Caveats: For specialist domains where the load-bearing weight is the existence-of-artifact (not its processing), on-disk-pending may be operationally sufficient — but the C2A2 case treats the papers as informing future synthesis, which requires processing, not just existence.
+
+  Recommendation: NO-SUPPORT-FOUND — on-disk-pending as load-bearing without trigger is process-asymmetry anti-pattern; joins PRESUMPTION-128 workflow-accommodation cluster

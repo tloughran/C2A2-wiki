@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-187:
+  Date searched: 2026-05-20
+  Original item: ASSUMPTION-187
+  Original statement: "generate_review_page.py fix may be incomplete — 36 vs expected 35; +1 collision post-fix."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-187
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from session: post-fix verification showed 36 where 35 expected; residual +1 collision.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Yin, Z. et al. (2011). "How Do Fixes Become Bugs?" (ESEC/FSE). — Empirically, a substantial fraction of bug fixes are incorrect or incomplete; partial fixes leaving a residual are common.
+    2. Brooks, F. (1995). "The Mythical Man-Month" (anniv. ed.). — Fix-introduces-new-defect dynamics: the probability a fix is complete and side-effect-free is well below 1.
+    3. Gu, Z. et al. (2010). "Has the bug really been fixed?" (ICSE). — Verification that a fix fully resolves the symptom is a distinct, often-skipped step.
+
+  Strength of support: Strong
+
+  Summary: The premise that a fix may be incomplete — evidenced by a residual +1 collision against the expected post-fix count — is strongly supported. Software-engineering research consistently finds that fixes are frequently partial and that a small residual after a fix is a classic incomplete-fix signature rather than guaranteed noise. The literature endorses treating the off-by-one as a live hypothesis until traced.
+
+  Caveats: Support is for 'incomplete fixes are common and must be verified,' not for the conclusion that this specific +1 is a defect (it could be a benign collision).
+
+  Recommendation: SUPPORTED (warrants verification, not conclusion)

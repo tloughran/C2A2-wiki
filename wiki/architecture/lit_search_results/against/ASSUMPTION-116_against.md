@@ -1,0 +1,37 @@
+SEARCH-AGAINST-ASSUMPTION-116:
+  Date searched: 2026-05-13
+  Original item: ASSUMPTION-116
+  Original statement: "PRS-CANDIDATE-01 of PROP-2026-05-12-001 reframes Arkani-Hamed/Wolfram/Carroll as pre-foundational rather than peer programs — structurally significant for master network; warrants Pattern Detector deep-pass per ASSUMPTION-100 precedent"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-116
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-05-12 PRS-CANDIDATE-01 cross-program reframing claim
+      15b: Searched for counter-evidence on Arkani-Hamed/Wolfram/Carroll acceptance of pre-foundational placement
+    Current status: CHALLENGED
+
+  Sources:
+    1. Carroll, S. (2010) "From Eternity to Here"; (2016) "The Big Picture"; (2022) "The Biggest Ideas in the Universe" — explicit naturalist / poetic-naturalist positioning. Carroll's program is foundational about physical structure; the claim that perception is pre-foundational is a category Carroll explicitly rejects (multiple podcast episodes on Mindscape with critics of Hoffman, e.g., Episode #91 with Daniel Dennett, where Carroll defends realism against Hoffman-style framings).
+    2. Wolfram, S. (2002) "A New Kind of Science"; Wolfram Physics Project (2020-) — meta-framework comprehensiveness claim is explicit; Wolfram positions the computational substrate as foundational, not as derived from perception. Pre-foundational reframing would be rejected on Wolfram's own framework-completeness grounds.
+    3. Arkani-Hamed, N. (Cornell Messenger Lectures 2010; Caltech 2014; "Why is there a Macroscopic World?" 2021) — explicit positioning of geometric/symmetry principles as foundational; the Amplituhedron program treats spacetime itself as derived from amplitude structure. Pre-foundational placement behind perception-framework would be substantively rejected.
+    4. Goldenfeld & Kadanoff (1999) "Simple lessons from complexity" Science — emergence framings where higher-level constructs are "pre-foundational" to lower-level descriptions are widely contested in philosophy of physics; the asymmetric direction Hoffman claims is one position in an active debate, not consensus.
+    5. C2A2-internal: PRESUMPTION-142 (this cycle, paired, MEDIUM-HIGH) — one-way reframing without inverse-acceptance; PRESUMPTION-002 CRITICAL cluster + PRESUMPTION-074 SYSTEMIC-RISK cluster; today's highest-risk new item joins both clusters.
+
+  Strength of challenge: Strong
+
+  Summary: The challenge is strong. The three programs being reframed have explicit philosophical positioning that would substantively reject pre-foundational placement. Carroll defends realism explicitly against Hoffman; Wolfram's computational substrate is by his own framing foundational; Arkani-Hamed's geometric/symmetry program is also explicitly foundational. The reframing is analytically possible but the consent question — would these programs accept this placement — has overwhelming prima facie evidence that the answer is no. The assumption authorizes a Pattern Detector deep-pass on a structural claim that the affected programs would reject.
+
+  Specific risks: (a) Pattern Detector deep-pass routed on contested philosophical premise inflates the cluster's downstream influence; (b) C2A2 master network commits to a structural placement that other tradition agents (Arkani-Hamed, Wolfram, Carroll) should be expected to dispute; (c) Joint with PRESUMPTION-142 — the one-way reframing pattern is the cluster signature; (d) Cross-tradition transfer-validity (PRESUMPTION-002 CRITICAL) is the upstream cluster — this assumption is a new instance of the recurring vulnerability.
+
+  Mitigations available: (a) Run inverse-acceptance check before deep-pass (assemble strongest case for each program's rejection of the reframing); (b) document the contested status explicitly in PRS-CANDIDATE-01; (c) demote "structurally significant" to "structurally proposed pending engagement with the three programs"; (d) request specialist (Arkani-Hamed, Wolfram, Carroll) agent reactions before Pattern Detector deep-pass.
+
+  Recommendation: CHALLENGED (Strong) — substantive evidence each named program would reject pre-foundational placement; one-way reframing in multi-cluster SYSTEMIC-RISK zone
+
+  STEELMAN:
+    Item: ASSUMPTION-116
+    Strongest counterargument: Reframing three first-tier physics TOE programs as pre-foundational to Hoffman's perception framework is a strong philosophical move that requires substantive engagement with the programs being reframed. All three programs have explicit, well-documented foundational claims that the reframing would contradict. Carroll has publicly engaged Hoffman-style positions and rejected them. Wolfram's framework-completeness claim explicitly subordinates other frameworks to his, not the reverse. Arkani-Hamed's geometric/structural-realist commitments are foundational, not derivative. Authorizing a Pattern Detector deep-pass on a structural claim that the three named programs would substantively reject treats the C2A2-internal reframing as an established structural fact rather than as a contested philosophical proposal. Joint with PRESUMPTION-142 and the broader PRESUMPTION-002 CRITICAL + PRESUMPTION-074 SYSTEMIC-RISK clusters, this is today's highest-risk new item.
+    What would need to be true for C2A2 to be safe: (a) Inverse-acceptance check performed (strongest case for each program's rejection assembled and weighed); (b) PRS-CANDIDATE-01 demoted from "structural significance" to "contested structural proposal"; (c) specialist-agent (Arkani-Hamed/Wolfram/Carroll) responses solicited before deep-pass; (d) Pattern Detector deep-pass gated on engagement evidence.
+    How to test: Engage each named program's actual articulations; document whether each would accept pre-foundational placement on its own terms; weight against the C2A2-internal reframing.

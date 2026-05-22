@@ -35,3 +35,36 @@ SEARCH-AGAINST-ASSUMPTION-101:
     Strongest counterargument: The environment-state attribution may be correct, but the ASSUMPTION conflates two questions: (a) is the diagnosis right? and (b) was the diagnosis adopted via a sound process? The C2A2 cluster has now had 4 instances of "Chrome MCP fails in some session, succeeds in another" — this pattern is consistent with pure-environment-state AND with defect-conditional-on-environment. Distinguishing them requires positive defect-detection (test with normal windows present and confirm success) rather than absence-of-defect-evidence. Adopting the external-LLM diagnostic near-verbatim without that test is the PRESUMPTION-115 / 121 SYSTEMIC-RISK pattern at the chat-scrape failure-mode layer.
     What would need to be true for C2A2 to be safe: (a) Positive defect-detection test designed and run; (b) independent project-context adjudication of the external diagnostic; (c) documentation of the test that distinguishes pure-environment-state from defect-conditional-on-environment.
     How to test: Open a normal Chrome window and re-run the MCP call; if it succeeds, environment-state is confirmed; if it fails, the defect-conditional-on-environment alternative is supported and the diagnosis needs revision.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-101 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-101
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-101
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from Chrome MCP error attribution
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~9-day gap. Defect-conditional-on-environment alternative still applies.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. Foreclosure concern persists.
+
+  Caveats: Positive defect-detection test would resolve faster than further search.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

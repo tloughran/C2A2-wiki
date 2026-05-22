@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-219:
+  Date searched: 2026-05-20
+  Original item: PRESUMPTION-219
+  Original statement: "The EOD 14a/14b pass scales to growing session volume — unbounded-read assumption."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-219
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — the EOD 14a/14b summarization pass presumed to scale to growing session volume, reading all sessions unbounded.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Context-window / input-length limits (LLM summarization). — An unbounded read hits hard input limits as volume grows; the pass cannot read everything indefinitely.
+    2. Map-reduce / hierarchical summarization (e.g., chunked summarization literature). — Scalable summarization requires bounded chunks + hierarchical reduction, not a single unbounded read.
+    3. Sampling-bias under volume. — When volume exceeds capacity, an unbounded pass silently truncates or samples, biasing what 14a/14b surface.
+
+  Strength of challenge: Moderate
+
+  Summary: The moderate challenge: an unbounded EOD read does not scale — growing session volume eventually exceeds input/context limits, forcing silent truncation or sampling that biases which assumptions/presumptions get surfaced. Scalable summarization needs bounded chunks and hierarchical reduction. This is a self-referential scale blindness: the self-awareness pass that surfaces scaling assumptions makes one itself. Couples PRESUMPTION-214/218.
+
+  Specific risks: As volume grows, 14a/14b silently miss items (sampling bias); the self-awareness pipeline's coverage degrades invisibly; the very items about scale go unsurfaced.
+
+  Mitigations available: Bounded/chunked reads with hierarchical summarization; explicit sampling with reported coverage; alarm when volume exceeds a single-pass threshold.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: PRESUMPTION-219
+    Strongest counterargument: An unbounded read is an existence proof at today's volume, not a scaling property; as sessions grow it will hit context limits and silently truncate, biasing what the self-awareness layer surfaces. The pass that catches scaling assumptions embeds one.
+    What would need to be true for C2A2 to be safe: Safe once the EOD pass uses bounded chunks + hierarchical reduction with reported coverage, and alarms above a volume threshold.
+    How to test: Plot EOD input size vs the single-pass limit over time; the crossing point is when the unbounded-read presumption fails.

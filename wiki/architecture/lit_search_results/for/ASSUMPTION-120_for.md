@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-120:
+  Date searched: 2026-05-14
+  Original item: ASSUMPTION-120
+  Original statement: "Cloudflare Workers is chosen broker hosting platform, conditional on streaming-latency validation; ~10-30 ms edge overhead presumed dwarfed by LLM + TTS provider latency floors"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-120
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from broker-hosting decision context; conditional-on-validation framing recorded
+      15a: Searched for edge-vs-region-hosted broker latency profiles and Cloudflare Workers production deployments for LLM/TTS workloads
+    Current status: SUPPORTED
+
+  Sources:
+    1. Cloudflare (2024-2025) Workers documentation and published benchmarks — sub-50ms cold-start, ~5-15 ms warm-path overhead in worldwide edge locations.
+    2. OpenAI / Anthropic streaming API documentation (2025) — first-token latency floors in the 200-800 ms range for typical models; long-output streaming dominates total latency.
+    3. ElevenLabs / Cartesia TTS streaming benchmarks (2025) — first-audio latency floors typically 150-400 ms for low-latency TTS streaming.
+    4. Fielding (2000) REST dissertation, and Burns et al. (2016) "Designing Distributed Systems" — edge placement is the canonical pattern when the broker is stateless and the workload is request-response.
+    5. C2A2-internal: PREMISE-008 substrate-edge alignment principle.
+
+  Strength of support: Strong
+
+  Summary: The "edge overhead dwarfed by provider latency floors" claim is well-supported by published Cloudflare Workers benchmarks (~5-30 ms) compared with LLM streaming first-token latencies (200-800 ms) and TTS first-audio floors (150-400 ms). Cloudflare Workers is a canonical choice for stateless brokers; the conditional-on-validation framing is methodologically sound. Strong support for the platform choice; the validation gate is the right epistemic posture.
+
+  Caveats: (a) PRESUMPTION-152 (paired) — the 10-30 ms estimate is not measured at moment-of-decision; pre-deployment validation must confirm; (b) WebSocket / bidirectional streaming has edge-specific gotchas (long-lived connection limits, regional failover); (c) Durable Objects required if any session state crosses requests — not factored into the simple-broker assumption.
+
+  Recommendation: SUPPORTED — strong literature and platform-benchmark backing; PRESUMPTION-152 validation gate is the right posture

@@ -1,0 +1,31 @@
+SEARCH-FOR-ASSUMPTION-160:
+  Date searched: 2026-05-18
+  Original item: ASSUMPTION-160
+  Original statement: "DeepSeek worker scope-locked to `_agents/deepseek/` (inbox/outbox/done/failed); never writes to live vault content; Maildir-style filename convention; vault-safety boundary as the architectural commitment."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-160
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15a: Searched for supporting literature
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Cursor 'Implementing a secure sandbox for local agents' (cursor.com/blog/agent-sandboxing) — filesystem boundary is the first and most cited principle of agent sandboxing.
+    2. Bunnyshell 'Coding Agent Sandbox' guide — isolated filesystem, least-privilege scope, ephemeral lifecycle as canonical components.
+    3. Vercel 'Security boundaries in agentic architectures' — explicit treatment of scope-locking and write-permission narrowing.
+    4. Penligent 'Sandboxes for Coding Agents' — independent confirmation that filesystem-scope is the primary safety boundary.
+    5. Maildir specification (Bernstein, qmail/courier-mta lineage) — well-documented file-naming convention with atomic-delivery properties.
+
+  Strength of support: Strong
+
+  Summary: Scope-locked filesystem access is the most heavily supported safety pattern in the agent-sandboxing literature (Cursor, Bunnyshell, Vercel all converge). The 'never writes to live vault content' commitment is the canonical least-privilege application. The Maildir filename convention is a 25-year-old proven pattern for atomic delivery in concurrent-read/write contexts. The combination is strongly grounded.
+
+  Caveats: Sandboxing literature is consistent that filesystem scope is necessary but not sufficient — network egress, resource limits, and process boundaries also matter. The C2A2 commitment addresses filesystem only; other boundaries are implicit (worker runs in Tom's shell environment with whatever credentials/network access that grants).
+
+  Recommendation: SUPPORTED

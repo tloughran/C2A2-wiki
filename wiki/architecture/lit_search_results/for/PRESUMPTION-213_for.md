@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-213:
+  Date searched: 2026-05-20
+  Original item: PRESUMPTION-213
+  Original statement: "Absence-in-30-day-window == absence-of-development — window assumed well-calibrated to each thinker."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-213
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — a fixed 30-day search window applied uniformly, with absence in-window read as absence-of-development regardless of a thinker's cadence.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Fixed-window monitoring practice. — Fixed observation windows are a common, operationally simple default; weak support for using one.
+    2. Recency-weighting in information retrieval. — A 30-day window is a reasonable recency proxy for fast-cadence sources.
+
+  Strength of support: Weak
+
+  Summary: Using a fixed 30-day window is operationally common and reasonable for fast-cadence thinkers, giving weak support. But the support is conditional on the window matching the source's cadence; the presumption assumes a single window is well-calibrated to ALL thinkers, which the supportive literature does not endorse. Support is weak and conditional.
+
+  Caveats: Support holds only where the 30-day window matches the thinker's actual publication cadence.
+
+  Recommendation: PARTIALLY-SUPPORTED (conditional on cadence match)

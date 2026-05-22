@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-168:
+  Date searched: 2026-05-15
+  Original item: PRESUMPTION-168
+  Original statement: "25-pathway extended inventory presents 3 structure groups (Portability/Learning-governance/System-self-reference) as conceptual; cuts may reflect walk-pacing rather than underlying structure"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-168
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as unstated presumption from breadth-arc taxonomy framing
+      15a: Searched for structure-group taxonomy stability over inventory extensions
+    Current status: SUPPORTED (Moderate)
+
+  Sources:
+    1. Bowker & Star (1999) "Sorting Things Out: Classification and Its Consequences" — early taxonomic cuts often reflect drafting cadence, not underlying structure; testable empirically by re-derivation.
+    2. Brooks (1995) Mythical Man-Month — second-system effect: structure-group taxonomies generated during single drafting sessions are unstable.
+    3. Conway (1968) — Conway's Law: structure-groups reflect cognitive organization of the drafting session.
+    4. Cross-domain taxonomy literature (Lakoff 1987 "Women, Fire, and Dangerous Things") — categories generated under cognitive constraint reflect the constraint, not the domain.
+    5. PRESUMPTION-150 (17-pathway closed-enumeration) carry-forward — recurring closed-enumeration concern at the next inventory cut.
+
+  Strength of support: Moderate (the presumption-as-inference is well-supported by taxonomy literature)
+
+  Summary: The presumption that structure-group cuts may reflect walk-pacing rather than underlying domain structure is well-supported by classification/taxonomy literature. Bowker-Star, Brooks, Conway, and Lakoff all converge: taxonomies generated in single drafting sessions reflect the session's cognitive structure. The PRESUMPTION-150 (17-pathway closed-enumeration) carry-forward shows this is a recurring concern. Moderate support for the inference; the inference itself is well-founded.
+
+  Caveats: (a) The presumption is an inference, not yet a confirmed failure; structure-groups may turn out to be stable on second pass; (b) Walk-pacing influence does not preclude useful taxonomy — it just means the taxonomy needs second-pass audit; (c) Cluster recurrence: joins PRESUMPTION-150 closed-enumeration cluster.
+
+  Recommendation: SUPPORTED (Moderate) — inference is well-grounded; second-pass audit recommended

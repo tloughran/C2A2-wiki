@@ -1,0 +1,30 @@
+SEARCH-FOR-ASSUMPTION-205:
+  Date searched: 2026-05-21
+  Original item: ASSUMPTION-205
+  Original statement: "Cross-tradition convergence is analogical not verbatim — only 3 literal shared-resource hubs (max 2 traditions each)."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a]
+    Original item: ASSUMPTION-205
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted: claim that convergence across traditions is analogical/structural rather than literal, evidenced by only 3 literal shared-resource hubs.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E / REVISE-040 noted)
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Gentner, D. (1983). "Structure-Mapping," Cognitive Science. — Cross-domain convergence is relational/structural, not surface/lexical; foundational support that real convergence is analogical.
+    2. Hofstadter & Sander (2013). "Surfaces and Essences." — Analogy as the core of cross-domain conceptual connection; literal lexical overlap is the exception.
+    3. Wilson (1998) "Consilience"; Klein (1990) interdisciplinarity. — Convergence across fields manifests as structural correspondence, rarely shared terminology.
+    4. Furnas et al. (1987) "The vocabulary problem." — Independent thinkers name the same concept differently, so literal-string overlap drastically undercounts true convergence (explains "only 3 literal hubs").
+
+  Strength of support: Strong
+
+  Summary: The conceptual claim — that genuine cross-tradition convergence is predominantly analogical/structural rather than verbatim — is strongly supported across analogy theory (Gentner; Hofstadter), consilience/interdisciplinarity studies, and the vocabulary problem (Furnas), which predicts exactly that literal shared-resource hubs will be sparse. The sparse literal-hub count is consistent with, but not itself strong evidence for, the principle.
+
+  Caveats: The '3 literal hubs' figure is a property of the naming/normalization method, not independent evidence (routes to PRESUMPTION-228); the principle stands on the analogy literature, not the count.
+
+  Recommendation: SUPPORTED (principle); numeric basis separately CHALLENGED via PRESUMPTION-228

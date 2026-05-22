@@ -38,3 +38,38 @@ SEARCH-AGAINST-ASSUMPTION-064:
     Strongest counterargument: The C2A2 framework was built around science/philosophy traditions whose internal structure (working scientists, falsifiable claims, peer-reviewed empirical contestation) supports the PRS-triplet primitive. N.T. Wright and Richard Rohr operate in registers (biblical scholarship and contemplative spirituality) where the operative primitives are different — exegetical method, hermeneutic stance, contemplative practice — and forcing them into a PRS triplet may either distort the new traditions or weaken the primitive's meaning. Without native curation matching the original 11's depth, the new entries are de-facto canonical-works-fallback (PRESUMPTION-076), and the cross-tradition density metric (PRESUMPTION-073) loses its calibration.
     What would need to be true for C2A2 to be safe: (a) Either confirm PRS-triplet transfers operationally to theology-traditions, or introduce a separate primitive for them; (b) ensure native curation matches the original 11's depth before downstream syntheses depend on the new entries; (c) re-derive r at N=13 with explicit calibration notes.
     How to test: Construct a PRS-triplet decomposition for Wright using only his Christian Origins series and at least three independent secondary sources; if the decomposition is contested or feels strained, the primitive transfer is failing.
+
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-064 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-17
+  Original item: ASSUMPTION-064
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a→15a,15b→15c→15d→15a,15b→15c]
+    Original item: ASSUMPTION-064
+    Item type: ASSUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-05): re-triggered on weekly cadence; next_check 2026-05-12 elapsed
+      15b (cycle 1, 2026-05-17): re-searched for challenging literature
+    Current status: refresh; no new challenging literature surfaced this cycle.
+
+  Run context: Daily-pipeline drain of 15d-owned cohort (see SYSTEMIC-RISK-FLAG in lit_search_returns.md 2026-05-17 RUN section). 15d schedule failure since 2026-05-05.
+
+  New evidence weighed: No new challenging literature has surfaced in the past week+. The prior cycles' challenge profile stands.
+
+  Sources (new / refreshed): No new sources this cycle.
+
+  Strength of challenge: Unchanged from prior cycle.
+
+  Summary: Cycle-1 refresh confirms the prior cycle's finding. The challenging literature base has not materially shifted; no new disconfirmatory sources surfaced during this automated cycle.
+
+  Specific risks: Unchanged from prior cycle.
+
+  Mitigations available: Unchanged from prior cycle.
+
+  Recommendation: refreshed; carry forward prior recommendation

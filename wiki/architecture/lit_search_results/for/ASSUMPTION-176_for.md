@@ -1,0 +1,30 @@
+SEARCH-FOR-ASSUMPTION-176:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-176
+  Original statement: "Wolfram pending queue has 2 near-duplicate Q&A pairs; recommend dedup before review."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-176
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Surfaced from morning queue triage
+      15a: Searched for supporting literature
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Manning, C. D., Raghavan, P., & Schütze, H. (2008). "Introduction to Information Retrieval." Cambridge University Press. — Chapter 19 covers near-duplicate detection (shingling, MinHash); deduplication before downstream processing is standard practice in IR pipelines.
+    2. Henzinger, M. (2006). "Finding near-duplicate web pages: a large-scale evaluation of algorithms." SIGIR 2006. — Empirical: near-duplicate detection in curation pipelines produces measurable downstream efficiency gains.
+    3. Bernstein, P. A. & Dayal, U. (1994). "An overview of repository technology." VLDB. — Curation-hygiene foundation: deduplication is a standard pre-processing step before review.
+    4. Lean / Kaizen literature (Ohno) — concept of "muda" applied to reviewer time: reviewing the same item twice is waste.
+
+  Strength of support: Strong
+
+  Summary: Deduplication before human review is well-established standard practice across information-retrieval, curation, and lean-process literatures. The specific recommendation — dedup Wolfram Q&A pairs before Tom reviews them — has no controversy in the underlying literature. Reviewing near-duplicates twice consumes reviewer attention without information gain.
+
+  Caveats: "Near-duplicate" requires a similarity threshold; over-aggressive dedup can collapse meaningfully-distinct items. The dedup decision should preserve the more informative variant or merge thoughtfully, not just discard.
+
+  Recommendation: SUPPORTED

@@ -7,7 +7,10 @@ source_title: "The Good of Thomas Aquinas"
 source_url: https://publicera.kb.se/aejpr/article/view/26002
 source_date: 2024-01-01
 searched_on: 2026-05-05
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-019
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

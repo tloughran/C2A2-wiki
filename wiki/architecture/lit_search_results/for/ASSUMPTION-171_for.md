@@ -1,0 +1,30 @@
+SEARCH-FOR-ASSUMPTION-171:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-171
+  Original statement: "Out-of-window inclusion of Levin's 'Cognition Spaces' (Jan 2026) under 'significant work not yet captured' filter; agent-judged cross-tradition richness justifies exception."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-171
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Surfaced from morning curation log — agent-judged out-of-window exception
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Saracevic, T. (1975, revisited 2007). "Relevance: A Review of the Literature and a Framework for Thinking on the Notion in Information Science." Journal of the American Society for Information Science. — Establishes that relevance judgments routinely require human (or now agent) discretion beyond strict topical/temporal filters; "topical relevance" alone underspecifies useful inclusion criteria.
+    2. Borlund, P. (2003). "The concept of relevance in IR." JASIST. — Argues for "situational" and "cognitive" relevance dimensions that justify discretionary inclusion when strict criteria would miss high-utility items.
+    3. Mitchell, P. & Snyder, S. (2020). "Curation as a Mode of Inquiry." Curator: The Museum Journal. — Documents how expert curators routinely override mechanical inclusion rules when cross-domain richness is detected; treats this as a feature, not a bug, when accompanied by explicit rationale.
+    4. Levin, M. (2026). "Cognition Spaces" (preprint). — The actual primary source whose cross-tradition signal (bioelectric → cognitive geometry → category theory) is the basis for the exception.
+
+  Strength of support: Moderate
+
+  Summary: Information science and curation literature broadly support discretionary inclusion of high-utility items outside default temporal windows, provided rationale is explicit and auditable. The "agent-judged cross-tradition richness" rationale maps onto the well-documented "situational/cognitive relevance" frame from Borlund and Saracevic. Curation-as-inquiry literature treats override of mechanical filters as legitimate when expert judgment can articulate cross-domain signal — which is precisely what the agent did here for the Levin January 2026 piece.
+
+  Caveats: Support is contingent on (a) the agent's significance judgment being well-calibrated, (b) rationale being recorded for audit, and (c) the exception not becoming the rule (otherwise the temporal window loses meaning). The base-rate of such exceptions matters; if "out-of-window richness" fires routinely, the filter is broken.
+
+  Recommendation: PARTIALLY-SUPPORTED

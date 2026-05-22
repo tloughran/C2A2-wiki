@@ -34,3 +34,38 @@ SEARCH-AGAINST-PRESUMPTION-086:
     Strongest counterargument: "Without breakdown" elides PREMISE-013's explicit conditions. The presumption applies the principle at scales the conditions were never tested at. As collision count grows, downstream consumers may receive different referents under the same ID across time without a redirect mechanism.
     What would need to be true for C2A2 to be safe: Specify an explicit collision-count upper bound; audit rename-mapping persistence; add HTTP-301-style redirect entries for renamed IDs.
     How to test: Sample 5 cross-references in older wiki content; check whether each resolves to the post-rename target. Any failure falsifies the no-breakdown claim.
+
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-086 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-17
+  Original item: PRESUMPTION-086
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b→15a,15b→15c→15d→15a,15b→15c]
+    Original item: PRESUMPTION-086
+    Item type: PRESUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-05): re-triggered on weekly cadence; next_check 2026-05-12 elapsed
+      15b (cycle 1, 2026-05-17): re-searched for challenging literature
+    Current status: refresh; no new challenging literature surfaced this cycle.
+
+  Run context: Daily-pipeline drain of 15d-owned cohort (see SYSTEMIC-RISK-FLAG in lit_search_returns.md 2026-05-17 RUN section). 15d schedule failure since 2026-05-05.
+
+  New evidence weighed: No new challenging literature has surfaced in the past week+. The prior cycles' challenge profile stands.
+
+  Sources (new / refreshed): No new sources this cycle.
+
+  Strength of challenge: Unchanged from prior cycle.
+
+  Summary: Cycle-1 refresh confirms the prior cycle's finding. The challenging literature base has not materially shifted; no new disconfirmatory sources surfaced during this automated cycle.
+
+  Specific risks: Unchanged from prior cycle.
+
+  Mitigations available: Unchanged from prior cycle.
+
+  Recommendation: refreshed; carry forward prior recommendation

@@ -1,0 +1,41 @@
+SEARCH-AGAINST-PRESUMPTION-199:
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-199
+  Original statement: "uncommitted-state-is-safe-indefinitely presumption; 476-uncommittable-change accumulation tolerated without explicit checkpoint discipline."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-199
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — implicit tolerance for uncommitted accumulation
+      15b: Searched for challenging literature
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Humble, J. & Farley, D. (2010). "Continuous Delivery." Addison-Wesley. — Direct challenge: uncommitted-state is risky, recoverable only with effort, and large uncommitted batches make review and rollback expensive. Continuous-delivery doctrine is "commit small, commit often."
+    2. Beyer et al. (2016). "Site Reliability Engineering." O'Reilly. — Treats uncommitted local state as a single-point-of-failure: disk corruption, accidental deletion, or process crash loses all uncommitted work. SRE practice is to commit-frequently as a basic resilience measure.
+    3. Chacon & Straub (2014). "Pro Git." — Explicitly warns that working-tree state is not part of any backup/replication path until committed; uncommitted accumulation is a brittleness multiplier.
+    4. Allspaw, J. (2009). "10+ Deploys Per Day." Velocity. — Small-commit discipline as a foundational operational practice.
+    5. Reason, J. (1990). "Human Error." — Latent failures accumulate during cadence gaps; 476 uncommitted changes are 476 unrecoverable items if the working tree corrupts.
+    6. Hollnagel (2014). "Safety-II." — Resilience-engineering principle: brittleness compounds silently in long uncommitted intervals; absence of failure during the interval is not evidence of safety.
+    7. Vaughan (1996). "Challenger Launch Decision." — Normalization of deviance: each "we accumulated 400+ uncommitted changes and nothing bad happened" makes the next accumulation easier to tolerate.
+
+  Strength of challenge: Strong
+
+  Summary: The challenge is overwhelming. Every body of literature touching VCS hygiene, continuous delivery, SRE, and resilience engineering converges: uncommitted state is a single-point-of-failure that grows in cost with accumulation. The 476-change figure is well beyond any literature's notion of acceptable accumulation. Disk corruption, accidental rm, process crash, or simply rebuild-from-fresh would lose 476 changes; the recovery cost is potentially catastrophic. The CRITICAL urgency flag is appropriate.
+
+  Specific risks: (a) Catastrophic loss on disk corruption, rm, or crash; (b) Review becomes impractical, increasing the chance of commit-without-review (which is what the constitutional rule forbids — and yet here we are); (c) Rollback granularity is destroyed (cannot revert to a state from yesterday because there are no commits from yesterday); (d) Normalization of deviance — pattern repeats with worse outcomes; (e) Compounds with ASSUMPTION-174 (review-of-476 is ineffective per Cohen 2006); (f) PRESUMPTION-196 invisibility compounds — uncommitted files are also outside the orchestrator's scan path in some configurations.
+
+  Mitigations available: Mandatory checkpoint commits (commit at most every N changes or every cycle); SLI on uncommittable-interval with hard alarm at 50/100 changes; decomposition strategy for the current 476; "commit-frequency invariant" added to constitutional rules; backup of working-tree as a safety net.
+
+  Recommendation: CHALLENGED (CRITICAL urgency — REVISE)
+
+  STEELMAN:
+    Item: PRESUMPTION-199
+    Strongest counterargument: There is no published defense of tolerating 476 uncommitted changes. VCS, CD, SRE, and resilience-engineering literature all treat this as a basic operational failure. The current state is one disk corruption or accidental rm away from catastrophic loss. The cost of a single failure mode triggering here is the loss of all 476 changes — potentially weeks of work. The fact that no failure has occurred yet is not evidence of safety; it is evidence of luck.
+    What would need to be true for C2A2 to be safe: Mandatory checkpoint commits enforced; SLI on uncommittable-interval; alarm threshold (e.g., 50 changes or 24 hours, whichever first); decomposition strategy for current 476; commit-frequency invariant codified.
+    How to test: Simulate disk corruption / rm of working tree at current state; measure recovery cost. The cost is the upper bound on the risk that is currently being run.

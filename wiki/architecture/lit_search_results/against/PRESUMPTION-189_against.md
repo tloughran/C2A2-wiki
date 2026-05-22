@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-189:
+  Date searched: 2026-05-18
+  Original item: PRESUMPTION-189
+  Original statement: "DeepSeek-Flash imported on cost/capability grounds without examining Pathway-19 federation / peer-trust / data-sovereignty implications of LLM-provider choice."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-189
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15b: Searched for challenging literature
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Nezhar.com 'Beyond Vendor Lock-In: A Framework for LLM Sovereignty' — explicit governance framework for LLM-provider selection that the cost/capability default bypasses.
+    2. ProgressiveRobot 'Sovereign AI' — data-residency and jurisdiction concerns canonical in LLM-provider decisions.
+    3. arxiv 2503.04745 'Sovereign Large Language Models' — explicit treatment of jurisdiction-aware LLM-provider governance.
+    4. RapidData 'Sovereign LLM Platforms' — tiered-sovereignty model that the cost-only choice ignores.
+
+  Strength of challenge: Moderate
+
+  Summary: Cost/capability-only LLM-provider selection bypasses the sovereignty/federation/peer-trust framework that Pathway 19 explicitly invokes. DeepSeek-Flash is a cross-jurisdiction provider; the implications (data residency, peer trust if federated, sovereignty in international development contexts where Tom works) are real considerations that the import decision didn't audit.
+
+  Specific risks: (a) Cross-pathway gap between DECISION-036 (worker architecture) and Pathway 19 (federation/sovereignty); (b) downstream rework if a federation participant has sovereignty constraints incompatible with DeepSeek.
+
+  Mitigations available: (a) Pathway-19 audit of LLM-provider choice; (b) document the trade-off: cost/capability today; sovereignty implications under Pathway-19 review.
+
+  Recommendation: CHALLENGED
+
+  STEELMAN:
+    Item: PRESUMPTION-189
+    Strongest counterargument: The strongest case: LLM-provider choice is a governance decision wearing the clothes of a cost/capability decision. Pathway 19 has framework for this; not invoking it is an under-audit.
+

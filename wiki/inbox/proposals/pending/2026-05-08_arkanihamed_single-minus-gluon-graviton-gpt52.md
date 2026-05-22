@@ -7,7 +7,10 @@ source_title: "Single-minus gluon tree amplitudes are nonzero (Guevara, Lupsasca
 source_url: https://arxiv.org/abs/2602.12176
 source_date: 2026-02-12
 searched_on: 2026-05-08
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-023
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-162:
+  Date searched: 2026-05-18
+  Original item: ASSUMPTION-162
+  Original statement: "Coordination primitives for multi-agent shared-vault: MCP shared protocol; Git as universal undo/conflict layer; folder-scoped agent assignments; no scheduler, no lock manager — last-write-wins."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-162
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Git documentation and 25-year operational history — git-as-conflict-layer is well-attested and validated by widespread practice.
+    2. Folder-scoping as coordination primitive: Bunnyshell/Vercel sandboxing literature (cited above) confirms folder boundaries are a canonical multi-agent coordination primitive.
+    3. Shapiro et al. (2011) 'A comprehensive study of Convergent and Commutative Replicated Data Types' — at low concurrency with folder partitioning, last-write-wins is acceptable; classical result.
+
+  Strength of support: Moderate
+
+  Summary: Folder-partitioning + git-versioning is a coherent low-coordination pattern. At N=1 producer per folder (the current C2A2 scale), last-write-wins reduces to no-conflict because writes never overlap. The 'no scheduler, no lock manager' choice is defensible under the Rule-2 simplicity discipline. Git provides retroactive conflict resolution when partition discipline fails.
+
+  Caveats: All literature support is conditional on partitioning being clean. 'Last-write-wins' is a benign label when there are no concurrent writes; it becomes a data-loss policy when concurrency surfaces (PRESUMPTION-183 explicitly flags this).
+
+  Recommendation: PARTIALLY-SUPPORTED

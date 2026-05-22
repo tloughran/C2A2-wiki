@@ -1,0 +1,37 @@
+SEARCH-AGAINST-ASSUMPTION-197:
+  Date searched: 2026-05-20
+  Original item: ASSUMPTION-197
+  Original statement: "Pathway 27 one-index-two-surfaces architecture + ISME staging (Search/links pre-July-8; Ask post-broker)."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-197
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from session: Pathway 27 design — one entity index serving two surfaces, with ISME staging (Search/links before July 8; Ask after the broker).
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Young, G. / Fowler, M. — CQRS (Command Query Responsibility Segregation). — When read surfaces have divergent requirements (search relevance vs RAG retrieval vs deterministic linking), separate read models often beat one shared index.
+    2. Lewis, P. et al. (2020). "Retrieval-Augmented Generation" (NeurIPS). — Ask-style retrieval needs dense/semantic retrieval and freshness guarantees that a links/search inverted index may not provide.
+    3. Sadalage, P. & Fowler, M. (2012). "NoSQL Distilled" (polyglot persistence). — Forcing divergent access patterns onto one store is a known source of compromise.
+
+  Strength of challenge: Moderate-Strong
+
+  Summary: The moderate-strong counter: search, deterministic linking, and Ask (RAG) impose partly incompatible requirements (relevance ranking vs exact joins vs semantic retrieval + freshness). CQRS and polyglot-persistence experience warns that one index serving all three tends to compromise each. The staging plan partly mitigates this by deferring Ask until after the broker, but the premise that one index suffices for all three is the contestable part (PRESUMPTION-217).
+
+  Specific risks: Building Ask on the search/links index forces a late, costly split; or Ask quality is compromised to fit the shared index.
+
+  Mitigations available: Validate Ask retrieval requirements before committing to the shared index; design the index boundary so an Ask-specific read model (e.g., a vector store) can be added without re-architecting (the staging already helps).
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: ASSUMPTION-197
+    Strongest counterargument: Search relevance, exact-join linking, and RAG retrieval are three different read problems; CQRS exists precisely because one model rarely serves divergent reads well. One index for all three risks compromising each, with the cost surfacing late when Ask is added.
+    What would need to be true for C2A2 to be safe: Safe if Ask's retrieval requirements are validated against the shared index before the broker, with a fallback to a dedicated Ask read model.
+    How to test: Prototype Ask retrieval on the proposed index with representative queries; measure retrieval quality vs a dedicated vector store before committing.

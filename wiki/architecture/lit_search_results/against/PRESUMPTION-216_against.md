@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-216:
+  Date searched: 2026-05-20
+  Original item: PRESUMPTION-216
+  Original statement: "Each recurring failure deserves its own point-guard — vs systemic integrity ownership."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-216
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — recurring failures each addressed with a bespoke point-guard, without a single owner of systemic integrity.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Ishikawa, K. (1986). "Guide to Quality Control"; Toyota 5-Whys. — Root-cause analysis: treating each symptom with a point fix masks the shared cause that re-emerges elsewhere.
+    2. Cunningham, W. (1992). "The WyCash Portfolio" (technical debt). — Accreting bespoke guards grows the maintenance surface; each guard is future maintenance and a drift risk.
+    3. Observed pattern: ASSUMPTION-187/189/191 are three point-guards this cycle. — The whack-a-mole shape is present in-system.
+
+  Strength of challenge: Moderate-Strong
+
+  Summary: The moderate-strong challenge: a strategy of one bespoke point-guard per recurring failure is whack-a-mole — it treats symptoms, grows the maintenance surface (technical debt), and substitutes for a single owner of systemic integrity who would find shared root causes. This cycle alone added several point-guards (ASSUMPTION-187/189/191), several of which trace to a common VCS/persistence root (PRESUMPTION-211). The guards are individually fine; the strategy without ownership is the risk.
+
+  Specific risks: Unbounded growth of bespoke guards; no owner of shared root causes; guards drift out of sync; the real cause (e.g., unowned commit, PRESUMPTION-211) persists beneath the patches.
+
+  Mitigations available: Designate a single owner of build/persistence integrity; require each new point-guard to reference a root-cause analysis; consolidate guards into shared invariant sets; track guard count as a debt metric.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: PRESUMPTION-216
+    Strongest counterargument: Point-guards are fine as a layer but ruinous as a strategy: without an owner doing root-cause analysis, each recurring failure spawns another patch while the shared cause (e.g., the unowned commit step, PRESUMPTION-211) survives. The maintenance surface grows and the system mistakes patches for integrity.
+    What would need to be true for C2A2 to be safe: Safe if guards are paired with single-owner root-cause analysis and periodic consolidation, not used as the primary integrity mechanism.
+    How to test: Track the count of bespoke guards over time and how many trace to a shared root; monotonic growth without consolidation confirms the whack-a-mole pattern.

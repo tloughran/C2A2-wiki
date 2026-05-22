@@ -1,0 +1,30 @@
+SEARCH-FOR-PRESUMPTION-203:
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-203
+  Original statement: "lit_search_results/-as-in-scope-for-sewing-agent — connectivity-graph conflates two structurally different layers (auto-generated derivative vs human/tradition-authored)."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: PRESUMPTION-203
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14a: Inferred from connectivity-tracker scope discussion as an unstated assumption
+      15a: Searched for supporting literature
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Paulheim, H., 2017. "Knowledge graph refinement: A survey of approaches and evaluation methods." Semantic Web 8(3) — explicit: aggregate KG metrics must stratify by provenance layer; conflating curated and derived produces uninterpretable numbers.
+    2. Hogan, A. et al., 2021. "Knowledge Graphs." ACM Computing Surveys 54(4) — surveys schema/instance and authored/derived stratification; recommends separate metrics per kind as baseline.
+    3. Färber, M. et al., 2018. "Linked data quality of DBpedia, Freebase, OpenCyc, Wikidata, and YAGO." Semantic Web 9(1) — demonstrates that quality metrics computed without stratification systematically misrepresent the curated layer's actual health.
+    4. Bizer, C. et al., 2009. "DBpedia — A crystallization point for the Web of Data." Web Semantics 7(3) — DBpedia's own quality reporting separates manually-curated assertions from automatically-extracted ones, precisely because conflation distorts interpretation.
+
+  Strength of support: Strong
+
+  Summary: Knowledge-graph literature uniformly recommends stratifying metrics by content provenance. Treating lit_search_results/ (auto-generated, no expectation of being wikilinked-in) as in-scope for connectivity metrics that measure authored-corpus health is a textbook conflation. The presumption — that this should be examined — is well-supported.
+
+  Caveats: "In-scope" vs "out-of-scope" is a binary that misses a middle ground: report both metrics (stratified) rather than choose one scope and discard the other.
+
+  Recommendation: SUPPORTED

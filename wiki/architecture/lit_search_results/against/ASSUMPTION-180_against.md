@@ -1,0 +1,36 @@
+SEARCH-AGAINST-ASSUMPTION-180:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-180
+  Original statement: "Levin/Friston count discrepancy — sewing-agent sees 0 Levin / 1 Friston in pending/; specialist claims Levin:2 / Friston:1 / Total:3; only Friston count is concordant."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: ASSUMPTION-180
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14b: Surfaced from sewing-agent vs specialist run-report reconciliation
+      15a: Searched for supporting literature
+      15b: Searched for challenging evidence
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Brewer, E., 2000/2012. "CAP twelve years later." IEEE Computer 45(2) — single-observer counts in any partitioned system are unreliable proxies for "what's there"; the assumption that scanner-count is the truth and claim-count is the lie reverses without independent confirmation, which is just a symmetric error.
+    2. Gray, J. & Reuter, A., 1993. "Transaction Processing: Concepts and Techniques." Morgan Kaufmann — distinction between intent (claim), action (write), and observation (scan); a discrepancy among any two does not localize blame to one without the third leg (the manifest/receipt).
+    3. Burns, B. et al., 2016. "Borg, Omega, and Kubernetes." CACM 59(5) — controller-vs-actual reconciliation literature: discrepancies are routine and not diagnostic of "writer lied" until you've ruled out (a) scanner under-counted, (b) write completed after scan, (c) name normalization mismatch (e.g., "Levin" file tagged differently).
+
+  Strength of challenge: Moderate
+
+  Specific risks:
+    - The 2 claimed Levin files may exist but be filed under names the scanner's filter does not recognize as "Levin" (tradition-tag mismatch, filename convention drift).
+    - Race condition: the specialist's claim may post-date the scan; "0 Levin at scan-time" is consistent with "2 Levin written after scan-time."
+    - Treating the specialist's run-report as systematically wrong on a 2-out-of-3 basis is a strong claim that needs a path-resolution audit before adoption.
+
+  Mitigations available:
+    - Have the specialist emit per-write receipts including absolute path, timestamp, and content hash.
+    - Have the sewing-agent log its exact glob/filter and timestamp window.
+    - Run the scan again strictly after the specialist completes, with broadened filters (tradition-agnostic), before declaring discordance.
+
+  Recommendation: PARTIALLY-CHALLENGED

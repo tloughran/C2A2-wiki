@@ -7,7 +7,10 @@ source_title: "TRACE Institute — moonshot research initiative led by Donald Ho
 source_url: https://www.donalddhoffman.com/
 source_date: 2025-11 to 2026 (homepage updated 2025-11-27; institutional positioning continues into 2026)
 searched_on: 2026-05-05
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-013
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

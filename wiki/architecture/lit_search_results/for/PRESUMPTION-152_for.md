@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-152:
+  Date searched: 2026-05-14
+  Original item: PRESUMPTION-152
+  Original statement: "~10-30 ms broker-side edge overhead presumed accurate without measurement at moment of decision; 'dwarfed by LLM/TTS latency' claim presumed without auditing those floors either"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-152
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced via inference from ASSUMPTION-120 conditional-on-validation framing
+      15a: Searched for engineering-estimate-as-precondition vs. measurement-driven validation
+    Current status: SUPPORTED
+
+  Sources:
+    1. Knuth (1974) — "premature optimization is the root of all evil" — the converse is also: premature commitment based on un-measured estimates is a recognized engineering risk.
+    2. Brendan Gregg (2020) "Systems Performance" — published numbers in vendor documentation are typically median-case; production overhead has long-tail behavior that median estimates obscure.
+    3. Beyer et al. (2016) "Site Reliability Engineering" (Google SRE book) — measurement-before-commitment is the canonical SRE pattern; estimates without measurement carry risk proportional to their use.
+    4. The Twelve-Factor App / cloud-native methodology — empirical-validation-before-deployment is the default expectation.
+
+  Strength of support: Strong
+
+  Summary: Engineering-estimate-as-precondition without empirical validation is a recognized risk pattern. The presumption correctly identifies that ASSUMPTION-120's "conditional on streaming-latency validation" clause is exactly the right epistemic posture — but the presumption surfaces that the audit must include both the broker edge overhead AND the LLM/TTS provider latency floors. Strong support for the inference.
+
+  Caveats: (a) Vendor-documented numbers (Cloudflare ~5-30 ms warm-path) are a defensible starting estimate; the presumption's concern is about treating estimate-as-validated; (b) Validation cost is non-trivial — pre-deployment latency tests require sustained load; (c) The "dwarfed" claim has empirical support in published benchmarks (LLM streaming 200-800 ms vs. edge 5-30 ms is a clear ratio).
+
+  Recommendation: SUPPORTED — the audit-before-commitment posture is correct; validation gate is load-bearing

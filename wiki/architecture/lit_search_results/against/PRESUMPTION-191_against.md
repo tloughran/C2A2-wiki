@@ -1,0 +1,36 @@
+SEARCH-AGAINST-PRESUMPTION-191:
+  Date searched: 2026-05-18
+  Original item: PRESUMPTION-191
+  Original statement: "'10-minute desk action' for DECISION-032/033/034 canonization presumes (a) PREMISE-backing materially strengthens canonization readiness and (b) Tom's endorsement is the bottleneck; ignores listed formalization-blockers."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-191
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15b: Searched for challenging literature
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. ADR literature (Nygard; subsequent practice) — readiness audit must check supersession, naming, dependency before canonization.
+    2. C2A2-internal: candidate-status fields list specific blockers (OPEN-043, OPEN-044, OPEN-045, PRESUMPTION-171) that the 10-minute estimate ignores.
+    3. Brooks (1995) 'No Silver Bullet' — accidental complexity in formalization is non-trivial; '10-minute' framings systematically underestimate it.
+
+  Strength of challenge: Moderate
+
+  Summary: The estimate ignores documented blockers. PREMISE-backing is one readiness signal; the listed OPEN items are others. The presumption that Tom's-endorsement-as-bottleneck is the only remaining barrier is contradicted by the candidate-status fields themselves.
+
+  Specific risks: (a) Acting on the estimate under-audits the canonization; (b) repeated carry-forward continues because the real blockers persist.
+
+  Mitigations available: (a) Enumerate blockers explicitly before canonization; (b) treat PREMISE-backing as one signal among several, not as readiness.
+
+  Recommendation: CHALLENGED
+
+  STEELMAN:
+    Item: PRESUMPTION-191
+    Strongest counterargument: The strongest case: '10-minute desk action' is an aspirational framing that smuggles a readiness claim. The candidate-status fields name specific blockers that contradict the readiness claim.
+

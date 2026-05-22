@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-186:
+  Date searched: 2026-05-20
+  Original item: ASSUMPTION-186
+  Original statement: "The 51-pending alarm is a measurement artifact — 36 stale duplicates; genuine unreviewed = 15."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-186
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from session: pending-queue alarm investigated; 51 nominal decomposed to 36 stale duplicates + 15 genuine.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Redman, T. (2001). "Data Quality: The Field Guide." — Duplicate records are a primary source of inflated counts; deduplication is a precondition for any count-driven decision.
+    2. Batini, C. & Scannapieco, M. (2006). "Data Quality: Concepts, Methodologies and Techniques." — Record-linkage / dedup is the canonical remedy for count corruption from repeated entities.
+    3. Kimball, R. & Caserta, J. (2004). "The Data Warehouse ETL Toolkit." — Dedup is a mandatory ETL stage precisely because raw counts mislead control logic.
+
+  Strength of support: Strong
+
+  Summary: The generalizable premise — that a raw queue count corrupted by known duplicate entries is a measurement artifact, not a true backlog — is strongly and uncontroversially supported across data-quality literature. Deduplication before acting on a count is treated as a precondition, not an optimization. The specific decomposition (36 stale + 15 genuine) is an internal measurement the literature cannot confirm, but the pattern (a known bug inflating a metric that then drives a control action) is textbook.
+
+  Caveats: Literature supports the principle (dedup before count-driven action), not the specific 36/15 split, which is self-measured and should be re-counted after the dedup fix lands.
+
+  Recommendation: SUPPORTED (principle); specific counts self-verified

@@ -7,7 +7,10 @@ source_title: "From Cancer to AI Alignment: Tackling Externalities Through Homeo
 source_url: https://doi.org/10.20944/preprints202604.0056.v1
 source_date: 2026-04
 searched_on: 2026-05-05
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-017
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

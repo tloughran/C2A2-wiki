@@ -1,0 +1,39 @@
+SEARCH-AGAINST-ASSUMPTION-175:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-175
+  Original statement: "Pending review queue at 42 — largest in network history — warrants Tom's prioritized review pass."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-175
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Surfaced from morning queue-depth report
+      15b: Searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Reinertsen, D. (2009). "Principles of Product Development Flow." — Argues that throughput-side capacity-surge is usually the WRONG response to queue-depth signals when arrival rate exceeds sustainable service rate; the long-run fix is arrival-throttling, not heroics on the throughput side.
+    2. Anderson, D. J. (2010). "Kanban." — WIP limits explicitly invert the "more reviewer effort" reflex: when queue is high, stop letting new items in. Reviewing more is a short-term mitigation that masks a structural imbalance.
+    3. Goldratt, E. M. (1990). "The Haystack Syndrome." — Bottleneck-management literature: surging the human bottleneck without protecting it is counterproductive; the bottleneck should be subordinated-to, not overworked.
+    4. Demarco, T. (2001). "Slack: Getting Past Burnout, Busywork, and the Myth of Total Efficiency." — Reviews-as-bottleneck literature: pushing human reviewers harder leads to quality collapse and burnout; the throughput intervention is self-defeating beyond a small range.
+    5. Hollnagel, E. (2014). "Safety-II in Practice." — Resilience-engineering perspective: high queue depth signals upstream over-generation; treating it as a downstream-throughput problem misallocates the intervention.
+
+  Strength of challenge: Moderate-to-strong
+
+  Summary: The literature broadly disagrees with the implicit "more Tom-review" intervention. Lean (Reinertsen, Anderson), TOC (Goldratt), and resilience engineering (Hollnagel) converge: queue-depth signals primarily call for arrival-rate throttling, not throughput surge. Demarco adds the burnout-and-quality-collapse dimension specific to human reviewers. The assumption that "Tom prioritizes review" is the right intervention conflates queue-depth-as-symptom with queue-depth-as-actionable; the actionable response is usually upstream.
+
+  Specific risks: (a) Reviewer burnout / quality collapse; (b) Treats Tom-capacity as elastic when it is in fact the system bottleneck; (c) Masks the upstream generation-rate problem so it persists; (d) Sets precedent that queue-depth always = Tom-reviews-more, encouraging unbounded generation. (PRESUMPTION-202 names this exact issue.)
+
+  Mitigations available: Decompose queue-depth into generation-rate and service-rate components; institute generation throttle (e.g., agents stop generating new items when pending > N); reserve Tom's review pass for triage rather than full processing; track Tom's review-rate as a hard ceiling, not a target.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: ASSUMPTION-175
+    Strongest counterargument: The literature says queue-depth alarms primarily call for arrival-throttling, not reviewer surge. Defaulting to "Tom reviews more" treats human capacity as elastic, encourages unbounded generation, and masks the structural problem. The right intervention is to throttle the agents producing the items, not surge the human reviewing them.
+    What would need to be true for C2A2 to be safe: Generation-rate and service-rate tracked separately; throttle policy on agent generation triggered before Tom-surge; Tom-capacity treated as fixed; PRESUMPTION-202 resolved before this intervention is repeated.
+    How to test: Compare two cycles where queue >= 40: one where intervention is Tom-review-surge, one where intervention is agent-generation-throttle. Measure 30-day queue trajectory under each.

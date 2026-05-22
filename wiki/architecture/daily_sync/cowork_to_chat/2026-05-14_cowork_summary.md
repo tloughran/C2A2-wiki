@@ -1,0 +1,59 @@
+# Cowork Progress Summary — 2026-05-14
+*Generated at 22:39 UTC by the evening cowork-to-chat scheduled task, for tomorrow's morning walk Chat context.*
+
+> **⚠ Browser delivery to Chat SKIPPED.** Claude-in-Chrome extension is not connected (no browsers registered at sync time). This .md file is the only deliverable for today's sync. For tomorrow's walk to have evening context, either (a) paste the summary into Chat manually before the walk, or (b) sign into the paired Chrome profile and re-trigger the evening sync. Pattern note: today is the first evening-sync browser-delivery failure since 2026-05-13 ended the prior 7-day drought via the sign-in fix; if tomorrow's morning chat-scrape also fails, the credential-layer cleared yesterday has regressed and PRESUMPTION-159 needs another revisit.
+
+## What Was Accomplished Today
+
+Today was a **pathway-arc extension and consolidation day**, anchored by Tom's morning walk Chat dialogue ("Morning planning walk", https://claude.ai/chat/ed8b7056-407d-4a71-8fae-62b08e9613e0). Pathways 18–25 emerged from that walk and were drafted into the architecture register, extending yesterday's 00–17 inventory into a 25-pathway map covering portability, federation, institutional scale, individual use, branching/counterfactuals, meta-crafts/governance, and meta-visualization of the pathway space itself. Eight new pathway documents (`18_portability_toolkit.md` through `25_meta_visualization_pathways.md`) were drafted by Cowork at 18:18 UTC and the living index (`pathways.md`) was updated 21:09 with the new "Portability arc", "Learning and governance", and "System self-reference" groupings, plus an updated provenance note crediting the morning walk. The walk transcript itself was archived to `morning_walk_2026-05-14.md`, and two Chat-Claude verbatim review statements were preserved as separate files (`2026-05-14_pathways_18-25_review.md` and `2026-05-14_comprehensive_overview_review.md`) — the latter being the integrative narrative tying all 25 pathways to MacIntyre's tradition-constituted rational inquiry framework. A 27 KB integrative paper (`2026-05-14_carpathi_wiki_paper.md`) was also produced. In parallel, the morning chat-scrape (`chat_to_cowork/2026-05-14_chat_summary.md`) succeeded — the first successful scrape in 9 days — confirming yesterday's sign-in fix is holding. Agent 16 completed bookkeeping cleanup of WATCH-001 (resolved 2026-05-12, but watch_list.md and needs_review/ were inconsistent until today's reconciliation); the file in `needs_review/` is now marked `superseded` and is safe for Tom to delete manually. Three new proposals were staged into `inbox/proposals/pending/` (two Fredrickson, one Stump). The 14a/14b on-cadence EOD self-awareness fire for 2026-05-14 has not yet appeared in the changelog directory at the time of this sync — it may still be queued for tonight; today's 14a/14b ingestion of the 25-pathway expansion will produce a substantial assumption/presumption batch when it runs.
+
+## Key Decisions Made
+
+No new numbered DECISION-NNN entries were canonized today — `decisions.md` is unchanged at DECISION-031 candidate (last entry from 2026-05-13). Yesterday's six candidates (DECISION-026 through 031: Cloudflare Workers broker hosting, Twilio SMS one-tap, Perspectives-in-vault, whiteboard ephemerality, generative-canvas library set, unsaid-edges two-filter scoring) remain pending Tom's canonization pass. The 8 pathway-doc decisions implicit in pathways 18–25 are at "drafted, not yet validated in walk dialogue" status — surfaced as decisions only by virtue of having been written, awaiting tomorrow's 14a/14b assumption extraction.
+
+## New Open Questions
+
+No new OPEN-NNN entries appended to `open_questions.md` today (`open_questions.md` mtime is from yesterday's run). Three OPENs from yesterday remain candidates (OPEN-040 Cloudflare-Workers streaming-latency conditional resolution, OPEN-041 recursive self-application termination condition, OPEN-042 AI-personhood-under-CRM bright-pin engagement plan). The 25-pathway expansion will almost certainly generate new OPENs when 14a/14b runs tonight — likely candidates: scope-of-portability (Pathway 18 framework/content seam definition), federation governance model (Pathway 19), Notre Dame stakeholder mapping (Pathway 20–21), and the recursion question that Pathway 25 makes acute (the meta-visualization of the pathway space puts the system in dialogue with itself in a way that may compound OPEN-041's termination-condition concern).
+
+## Files Created or Modified
+
+Eight new pathway documents under `architecture/`: `18_portability_toolkit.md`, `19_optional_interoperability.md`, `20_institutional_scale.md`, `21_departmental_integration.md`, `22_individual_second_brain.md`, `23_branching_counterfactuals.md`, `24_meta_crafts_governance.md`, `25_meta_visualization_pathways.md`. Three derived/source files: `morning_walk_2026-05-14.md` (walk dialogue archive), `2026-05-14_pathways_18-25_review.md` (Chat-Claude clean enumeration), `2026-05-14_comprehensive_overview_review.md` (Chat-Claude integrative narrative). One paper: `2026-05-14_carpathi_wiki_paper.md` (27 KB). Index update: `pathways.md` extended to 25 pathways + 2 bright pins, with new structure-group headers. Bookkeeping: `wiki/deferred/watch_list.md` (WATCH-001 moved to resolved index), `inbox/proposals/approved/2026-04-21_carroll_singer-mindscape-351.md` (status reconciled), `inbox/proposals/needs_review/2026-04-21_carroll_singer-mindscape-351.md` (marked superseded). Three new pending proposals: `2026-05-14_fredrickson_high-quality-listening-strangers-comm-psych.md`, `2026-05-14_fredrickson_social-media-posts-in-person-connections.md`, `2026-05-14_stump_seven-deadly-sins-thomistic-institute.md`. Chat sync: `daily_sync/chat_to_cowork/2026-05-14_chat_summary.md` (first successful scrape in 9 days). Lit search side: a batch of `lit_search_results/against/` files for ASSUMPTION-119..130 and PRESUMPTION-150..167 (yesterday's 14a/14b batch being worked by 15a/15b).
+
+## Pipeline Status
+
+- Pathways: 25 drafted (was 17) + 2 bright pins held.
+- Assumptions: 130 cumulative (no new today on disk; 14a/14b run for 2026-05-14 is pending — expect a substantial batch from the 8-pathway expansion).
+- Presumptions: 167 cumulative (same caveat).
+- Validated premises: 15 cumulative (no change today).
+- Lit search queue: 30 newly QUEUED items from yesterday's 14a/14b batch, partially worked through today by 15a/15b (against-side files written for ASSUMPTION-119..130 and PRESUMPTION-150..167). 15c dispositioning still pending.
+- Deferred / watch list: 0 active items (WATCH-001 cleanup finalized today; intake clean across all three channels).
+- Pending proposals: 43 (was 40; +3 today: 2 Fredrickson, 1 Stump). 5 Wright/Rohr first-evers from 2026-05-10 still block N=13 expansion per ASSUMPTION-111.
+- Pattern Detector findings: 33 (unchanged today; wiki agent daily run did not produce a Phase 1 ingestion delta today on the schedule visible to this sync).
+- Decisions register: 25 numbered + 6 candidates (DECISION-026..031 from yesterday); 8 implicit pathway-doc decisions from pathways 18–25 not yet candidated.
+- 14a/14b: today's on-cadence EOD fire is not yet visible in `changelog/`; may still be queued.
+
+## What's Next
+
+Immediate next steps for tomorrow and this week, in priority order based on yesterday's cowork-to-chat handoff and today's expansion:
+
+1. **Today's 14a/14b EOD fire** — verify it runs tonight and ingests the 25-pathway expansion. Two consecutive on-cadence fires (yesterday + today) would begin to demote ASSUMPTION-117's URGENT canonization recommendation.
+2. **DECISION-026..031 canonization pass** — Tom's endorsement on yesterday's six candidates remains the next-step item from yesterday's handoff, and the 8 new pathway-doc decisions implicit in 18–25 will queue behind that pass.
+3. **30-minute Cloudflare Workers streaming-latency probe** — converts DECISION-026 (broker hosting) from conditional to unconditional; still on the action list from yesterday.
+4. **PRESUMPTION-134 substrate-decomposition note** — ~10 minutes; unblocks 3 URGENT canonization triggers (ASSUMPTION-108/109/117).
+5. **Wright/Rohr pendings + OPEN-036/037** — the 5 first-evers from 2026-05-10 continue to block N=13 expansion; nothing moved on this today.
+6. **ISME-critical demo path** — the demo set remains pathways 00, 01, 02, 03, 08 with tightening of 04/06/14. None of pathways 18–25 are flagged `isme_critical: yes`, so today's work is post-ISME architecture rather than demo-path advancement; this is worth surfacing on the morning walk.
+
+## For Morning Discussion
+
+The most important items for tomorrow's morning-walk Chat conversation:
+
+- **Pathway-arc shape.** Pathways 18–25 are a coherent "post-ISME breadth arc" — none are on the ISME demo critical path. The morning walk that produced them was deliberately exploratory rather than ISME-narrowing. Is the right framing for tomorrow's walk to (a) continue the breadth arc (next direction set, or a deeper drill into one of 18–25), or (b) re-narrow onto the six ISME-critical pathways and tighten the demo? The 8-week ISME runway (July 8–10) makes this a real allocation question.
+- **Recursion compounding.** Pathway 25 (meta-visualization of pathways) makes OPEN-041 (recursive self-application termination condition, from yesterday) more acute, not less: the system is now drafting documents about its own pathway space, with Cowork drafting "function sets" and "architecture sketches" for pathway docs whose source-of-truth status is the morning-walk dialogue. PRESUMPTION-165 SELF-MEASUREMENT Goodhart cluster should be re-read with this in mind on tomorrow's walk.
+- **Chat-Claude / Cowork divergence.** Today's two review files (`2026-05-14_pathways_18-25_review.md` and `2026-05-14_comprehensive_overview_review.md`) are Chat-Claude's verbatim framing of pathways 18–25. Cowork's pathway documents are richer and more architecturally specific. The divergence between "what Chat-Claude said on the walk" and "what Cowork drafted afterward" is structurally interesting — it is, in microcosm, the same gap Chat-Claude flagged yesterday as the groundedness question ("is the apparatus on disk or partly aspirational?"). Worth surfacing as a meta-observation rather than ignoring.
+- **Bright pin retention.** Both bright pins (AI personhood under CRM; half-million-word podcast corpus) remain held with deliberate brightness in the updated `pathways.md`. OPEN-042 (engagement plan for the AI-personhood pin) was queued yesterday and has not been engaged today. The pin's operational gravity (PRESUMPTION-164) is now further increased by pathways 17 and 25 (both of which lean on personhood-adjacent claims for the "AI participant" framing).
+- **Today's chat-scrape worked.** The 9-day failure of the morning scrape cleared yesterday with Tom's sign-in fix and held again today — second consecutive success. The sync-pipeline-redesign question that PRESUMPTION-159 flagged (credential-layer-vs-architectural-layer) is now testable: if scrape and cowork-to-chat both hold for another 3–5 days without a credential intervention, the case for treating this as architectural rather than credential weakens; if they fail again, the redesign case strengthens. Worth tracking but not yet acting on.
+- **Pace question carried over.** Chat-Claude's pace-and-shape question from yesterday's chat scrape ("is Tom in fact comfortable with the pace and surface area") is unanswered and material. Today's 8 new pathways + 1 paper + 2 review files + 3 new proposals continues the high-tempo signature. Worth Tom checking in with himself on the walk.
+
+---
+
+*Generated by `c2a2-evening-cowork-to-chat` scheduled task at 2026-05-14 22:39 UTC. The .md file is the primary deliverable; browser delivery to Chat is attempted next.*

@@ -758,3 +758,99 @@ CROSS-074 — Wolfram × Stump × Carroll × Kastrup (computational metaphysics 
   Source: PROP-2026-04-28-006-src-PROP-2026-04-27-004 (Wolfram Last Theory #081)
   Status: Active
   Notes: Wolfram's salonnière-but-skeptical stance reframes CROSS-016 (Carroll Bayesian standard) and CROSS-024 (Stump Thomistic engagement) — and creates a possible methodological alliance with Kastrup, who also strains against analytic-philosophy norms.
+
+CROSS-075 — Levin × Friston × Hoffman × Kastrup × C2A2 (SUTI as detection-program convergence)
+  Type: structural_convergence + program_alignment
+  Source: PROP-2026-05-11-001 (Levin SUTI essay)
+  Status: Active — flag for Pattern Detector
+  Notes: SUTI's "search for non-standard intelligences" is structurally the detection function the C2A2 accelerator-detector system performs for traditions. Friston's substrate-agnostic agency criteria (Wilson/Constant/Albarracin "Phenotyping Agency in AI", PROP-2026-05-04-001) supply the formal detection apparatus; Hoffman's interface theory predicts what xenobots-without-evolutionary-fitness-function interfaces look like; Kastrup's dissociation model becomes empirically testable if cognitive agents proliferate at every scale.
+
+CROSS-076 — Levin × Friston (Vmem-organization loss as bioelectric metastability collapse)
+  Type: mechanism-level_bridge
+  Source: PROP-2026-05-11-002 (Sediqi & Levin senescing keratinocytes)
+  Status: Active — flag for Pattern Detector
+  Notes: Loss of spatial Vmem organization in senescing keratinocytes is structurally analogous to Friston's metastability collapse (Friston PRS-13). Healthy tissue = flexibly multi-attractor in Vmem space; senescent tissue = collapse into rigid attractor. Aging-as-metastability-loss unifies Levin's bioelectric and Friston's neurodynamic accounts of degeneration under a single dynamical formalism.
+
+CROSS-077 — Levin × Fredrickson (Vmem control of IL-6 as bioelectric-to-psychophysiological bridge)
+  Type: mechanism-level_bridge_candidate
+  Source: PROP-2026-05-11-002 (Sediqi & Levin senescing keratinocytes)
+  Status: Active — speculative
+  Notes: IL-6 is the canonical inflammaging cytokine and a known biomarker for psychosocial stress; Fredrickson's positivity-resonance literature ties IL-6 to social-affective state. Sediqi & Levin show IL-6 is selectively under Vmem control. Provides a candidate biophysical mechanism through which cellular bioelectricity could couple to whole-organism psychophysiological flourishing markers.
+
+CROSS-078 — Levin × Stump (morphostatic information loss as substrate-level reading of disintegration)
+  Type: explanatory_bridge_candidate
+  Source: PROP-2026-05-11-002 (Sediqi & Levin senescing keratinocytes)
+  Status: Active
+  Notes: The morphostatic-information-loss theory of aging reads naturally onto Thomistic/Stumpian language of bodily disintegration — the body's "order toward" its end gradually dissolving. Reinforces FINDING-005 (Stump × Levin) by extending Thomistic teleology from morphogenesis into senescence.
+
+CROSS-079 — Levin × Friston × Wolfram (algorithmic intelligence in sorting routines — substrate-agnostic agency)
+  Type: structural_convergence
+  Source: PROP-2026-05-11-003 (Lex Fridman #486)
+  Status: Active
+  Notes: Levin's sorting-algorithm intelligence example softens the mind/algorithm boundary in three converging ways: (a) extends Levin's search-efficiency intelligence metric (PRS-13) to formal/algorithmic systems; (b) is directly compatible with FEP — sorting algorithms can be modeled as primitive active-inference agents minimizing prediction error about sorted state; (c) is a Wolfram-style computational-substrate claim — every computation achieving a target state is a candidate cognitive agent. Reinforces FINDING-001/002 (Friston × Levin formal bridge) and the Wolfram/Levin substrate convergence.
+
+CROSS-080 — Levin × Hoffman × MacIntyre/C2A2 (ideas-as-living-agents = traditions-as-cognitive-entities)
+  Type: structural_convergence + C2A2_grounding
+  Source: PROP-2026-05-11-003 (Lex Fridman #486)
+  Status: Active — flag for Pattern Detector — HIGH C2A2 RELEVANCE
+  Notes: Levin's "memories and ideas as quasi-living entities" — propagating, recombining, competing for substrate — is structurally what MacIntyre says a *tradition* is. This is the first time Levin's diverse-intelligence framework has been extended to cultural/cognitive content explicitly. Provides empirical ground for treating traditions as cognitive agents and connects to Hoffman's Trace Institute work on agent-formal structure (PROP-2026-05-05-005).
+
+CROSS-081 — Friston × Levin × Hawkins × C2A2 (Active inference as OODA — adversarial decision-substrate for traditions)
+  Type: methodological_unification
+  Source: PROP-2026-05-11-004 (No Way Out #164)
+  Status: Active — flag for Pattern Detector
+  Notes: Friston's formal validation of Boyd's full OODA loop makes active inference a *decision-theoretic* substrate, not just a perception/action one. Levin's cell collectives running morphogenetic OODA loops become a literal application; Hawkins's cortical-column predictive modeling becomes a behavioral-level reading of HTM via OODA's "orientation"; MacIntyre's rival traditions become competing orientations updating against each other under information pressure. The risk/ambiguity formalism (KL-divergence) may give C2A2 a quantitative measure of inter-tradition orientation divergence.
+
+CROSS-082 — Friston × Carroll × Arkani-Hamed (KL-divergence formalism connects active inference to thermodynamic information theory)
+  Type: speculative_bridge
+  Source: PROP-2026-05-11-004 (No Way Out #164)
+  Status: Active — speculative
+  Notes: Friston's identification of risk as KL divergence between prior preferences and predicted outcomes echoes thermodynamic information-theoretic accounts of physical processes. Potentially connects to Carroll's emergent-agency-from-physics work and Arkani-Hamed's observer-dependent information bounds. Weak signal but worth monitoring for Physicalist × FEP coupling.
+
+CROSS-083 — Kastrup × Levin (canonical alignment-and-divergence reference within consciousness-as-fundamental cluster)
+  Type: structural_disagreement_within_cluster
+  Source: PROP-2026-05-13-004 (With Reality in Mind dialogue 2026-05-12)
+  Status: Active — flag for Pattern Detector — HIGH PRIORITY
+  Notes: The May 12, 2026 two-hour dialogue is the canonical reference for where Kastrup and Levin converge (consciousness is not produced by matter) and where they diverge (continuous nesting of conscious agents vs. discrete dissociative boundaries). Replaces the C2A2 network's prior flattened "both consciousness-cluster" treatment with a tractable, operationalizable disagreement. Connects to PRS-14, 15, 16 (Kastrup) and PRS-30, 31 (Levin).
+
+CROSS-084 — Kastrup × Levin × McGilchrist (three-way pairwise individuation question within consciousness-as-fundamental cluster)
+  Type: structural_convergence_of_disagreements
+  Source: PROP-2026-05-13-004 + PRS-13 (McGilchrist) + PROP-2026-05-13-002 (McGilchrist Deep Ontology)
+  Status: Active — flag for Pattern Detector
+  Notes: The Kastrup–Levin disagreement on dissociative-boundary individuation and the McGilchrist–Kastrup disagreement on representational-vs-participatory perception are both arguments inside the consciousness-as-fundamental cluster about *what individuation looks like under consciousness-primary metaphysics*. Worth treating as candidates for a single deeper question.
+
+CROSS-085 — Kastrup × Levin × Hoffman (three-way comparison on agent individuation now tractable)
+  Type: speculative_bridge
+  Source: PROP-2026-05-13-004 + Hoffman interface theory's combination operation
+  Status: Active
+  Notes: Hoffman's interface theory implicitly takes a position on agent individuation (conscious agents combine into larger conscious agents via a specific mathematical operation) that differs from both Kastrup's discrete-alter view and Levin's continuous-nesting view. With the May 12 dialogue on record, three-way Kastrup–Levin–Hoffman comparison on individuation becomes possible in a way it was not a week ago.
+
+CROSS-086 — McGilchrist × Kastrup × Hoffman (convergence on AI-consciousness *limits* from three different metaphysical starting points)
+  Type: structural_convergence
+  Source: PROP-2026-05-13-001 (McGilchrist Closer to Truth AI-consciousness) + PROP-2026-05-13-004
+  Status: Active — flag for Pattern Detector — HIGH PRIORITY
+  Notes: McGilchrist (neurology + participatory realism), Kastrup (analytic idealism dissociation), and Hoffman (interface theory) now all publicly articulate principled structural limits on AI consciousness from independent metaphysical starting points. Reinforces CROSS-001 (consciousness substrate-independence) and provides external philosophical warrant for the C2A2 human/AI division of labor.
+
+CROSS-087 — McGilchrist × Carroll (sharpest opposite-pole axis on consciousness ontology)
+  Type: productive_tension_sharpened
+  Source: PROP-2026-05-13-002 (McGilchrist Deep Ontology)
+  Status: Active
+  Notes: With McGilchrist's "consciousness is the stuff of the cosmos" now publicly on record, the McGilchrist–Carroll axis is the cleanest contemporary instance of consciousness-as-fundamental vs. poetic naturalism. Useful as the maximum-leverage productive-tension reference in the master wiki.
+
+CROSS-088 — McGilchrist × Stump (Thomistic relational realism as historical analogue to participatory realism)
+  Type: speculative_bridge
+  Source: PROP-2026-05-13-002 + PRS-13/14 (Stump)
+  Status: Active — speculative
+  Notes: Thomistic relational realism (substance + relation, not substance alone) is the closest historical analogue to McGilchrist's explicitly-relational consciousness-as-fundamental position. Worth flagging as a cross-tradition resonance for the consciousness cluster.
+
+CROSS-089 — McGilchrist × Stump (native epistemic standards as cross-tradition design principle)
+  Type: methodological_convergence
+  Source: PROP-2026-05-13-003 (McGilchrist Substack on left-hemisphere laziness)
+  Status: Active — flag for Pattern Detector
+  Notes: McGilchrist's defense of right-hemisphere epistemic norms against critics applying left-hemisphere standards is structurally identical to Stump's own work on second-first-language tradition immersion: traditions must be entered on their own terms. Directly portable to C2A2 wiki design — each tradition wiki should expose its native epistemic standards explicitly.
+
+CROSS-090 — McGilchrist × Wolfram (asymmetric-methodology critique applied to ruliological program)
+  Type: productive_tension
+  Source: PROP-2026-05-13-003 (McGilchrist Substack)
+  Status: Active — speculative
+  Notes: Wolfram's computational/ruliological framing operates in a clearly left-hemisphere methodological register (decomposition, formalization, exhaustive enumeration). McGilchrist's asymmetric-application critique may surface a structural objection against ruliology that has not yet been articulated within the C2A2 wiki — that the program's methodology systematically excludes the right-hemispheric features of the phenomena it claims to explain.

@@ -1,0 +1,30 @@
+SEARCH-FOR-ASSUMPTION-179:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-179
+  Original statement: "Sewing-agent's pending/-scan confirms 7 proposals exist (3 Rohr / 3 Wright / 1 Friston) — partial empirical resolution of OPEN-049; orchestrator's miss is scan-coverage failure, not write-failure."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: ASSUMPTION-179
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14b: Surfaced from late-session sewing-agent run-report on pending/-directory scan
+      15a: Searched for supporting literature
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Fowler, M., 2017. "What do you mean by 'Event-Driven'?" martinfowler.com — distinguishes event-notification, event-carried state transfer, event sourcing, and CQRS; supports the claim that re-scan of durable state (pending/) is a legitimate source of truth recovery when one observer drops events.
+    2. Helland, P., 2015. "Immutability Changes Everything." Communications of the ACM 59(1):64-70 — argues durable, append-only artifacts (here: files in pending/) constitute the most reliable ground truth; ephemeral process logs are derivative and subject to coverage gaps.
+    3. Kleppmann, M., 2017. "Designing Data-Intensive Applications." O'Reilly, ch. 5 & 11 — write-ahead logs and durable artifacts dominate process state for reliable system-of-record purposes; two readers may disagree on count purely from coverage differences (timing, path filters), and the union-of-readers heuristic is a recognized reconciliation pattern.
+    4. Nygard, M., 2018. "Release It! 2nd ed." Pragmatic Bookshelf, ch. on observability — operational reality: agent-internal counters drift from durable state; periodic re-scan of canonical storage is a standard remediation.
+
+  Strength of support: Strong
+
+  Summary: The claim that durable artifacts in pending/ constitute a more reliable ground truth than an orchestrator's in-process counter is a textbook event-sourcing / immutability principle. When two readers disagree on counts of durable items, the standard diagnostic is to check scan coverage (path roots, filters, timing windows) before assuming write-failure — this matches Kleppmann's and Nygard's treatments. The sewing-agent acting as a second independent scanner producing a different (higher) count is precisely the failure mode these texts predict: the orchestrator's counter is a derived view, not the system of record. Treating partial-resolution of OPEN-049 from this second scan as legitimate evidence is methodologically sound.
+
+  Caveats: Second-scan-confirmation is necessary but not sufficient — see PRESUMPTION-204 for the symmetric risk that the second scan also has coverage gaps; manifest-of-writes (write-receipt) would be strictly stronger ground truth than either scan.
+
+  Recommendation: SUPPORTED

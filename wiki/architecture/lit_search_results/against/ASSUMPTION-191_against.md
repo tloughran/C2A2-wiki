@@ -1,0 +1,36 @@
+SEARCH-AGAINST-ASSUMPTION-191:
+  Date searched: 2026-05-20
+  Original item: ASSUMPTION-191
+  Original statement: "regen_sociogram.sh refuses Summa-less builds; .gitignore *.bak* blocks backup commits."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-191
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from session: build guard (refuse Summa-less builds) and .gitignore *.bak* added as point guards.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Partial
+
+  Sources:
+    1. Cunningham, W. (1992). "The WyCash Portfolio Management System" (technical-debt metaphor). — Accumulating one point-guard per failure grows the maintenance surface; guards are not free.
+    2. Ishikawa, K. (1986). "Guide to Quality Control" (root-cause analysis). — Point fixes that treat symptoms can mask a systemic cause that re-emerges elsewhere.
+
+  Strength of challenge: Weak-Moderate
+
+  Summary: The challenge is not to the guards themselves (which are sound) but to the pattern they exemplify: a growing collection of per-failure point-guards can substitute for systemic integrity ownership and grow the maintenance surface (this is the explicit subject of PRESUMPTION-216). The two guards here are individually correct; the weak-moderate challenge is about the aggregate strategy, which is dispositioned separately.
+
+  Specific risks: Each new failure spawns another bespoke guard; no single owner of build/artifact integrity; guards drift out of sync with the pipeline.
+
+  Mitigations available: Keep the guards (they are correct) but track them under a single build-integrity owner; fold into a shared pre-build invariant check rather than scattered scripts (see PRESUMPTION-216 / MONITOR-206).
+
+  Recommendation: PARTIALLY-CHALLENGED (strategy-level, not guard-level)
+
+  STEELMAN:
+    Item: ASSUMPTION-191
+    Strongest counterargument: The individual guards are right, but 'each recurring failure deserves its own point-guard' is a strategy that grows unboundedly and hides the absence of a single integrity owner. The challenge belongs to the pattern, not these two checks.
+    What would need to be true for C2A2 to be safe: Safe if the guards are consolidated under one build-integrity invariant set with an owner, rather than accreting as independent scripts.
+    How to test: Count the number of bespoke guards over time; if it grows monotonically without consolidation, the systemic concern (PRESUMPTION-216) is confirmed.

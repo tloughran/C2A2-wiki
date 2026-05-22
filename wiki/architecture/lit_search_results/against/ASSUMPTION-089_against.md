@@ -37,3 +37,36 @@ SEARCH-AGAINST-ASSUMPTION-089:
     Strongest counterargument: When both sources are LLMs (or LLM-produced), training-data overlap creates correlated errors that two-source synthesis cannot detect. Cochrane methodology requires source-independence; LLM-on-LLM does not satisfy independence. "Appropriate" overstates what the literature supports — minimum-review pattern, not optimal. Combined with the absence of an epistemic-weight protocol (PRESUMPTION-109) and near-verbatim adoption (PRESUMPTION-115), the structural pattern is single-source-dominance dressed as two-source synthesis.
     What would need to be true for C2A2 to be safe: (a) third source with different training corpus or human reviewer; (b) explicit epistemic-weight protocol; (c) local adjudication that diverges from verbatim adoption.
     How to test: Run the same review through a third LLM (different family); measure agreement vs. disagreement; if all three agree on prioritization, supportive case strengthens; if disagreement is observed, single-LLM-dominance is confirmed.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-089 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-089
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-089
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from review-aggregation decision
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~10-day gap. Cross-LLM bias-correlation concern stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. "Appropriate" still overstates without weighting protocol.
+
+  Caveats: Third-LLM cross-check is the cheap empirical test.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

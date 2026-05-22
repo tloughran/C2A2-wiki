@@ -109,7 +109,12 @@ prop_cards = ""
 sidebar_items = ""
 
 for i, p in enumerate(proposals):
-    pid   = f"PROP-{run_date}-{i+1:03d}"  # Always sequential — agent-assigned IDs collide
+    # Use the file's own proposal_id as the stable display ID — never renumber.
+    # proposal_id is assigned once at creation and never changes, so decision
+    # emails always refer to the same ID regardless of when reviews are generated.
+    # Fallback to a sequential ID only for files that predate this field.
+    pid = p.get("proposal_id") or f"PROP-{run_date}-{i+1:03d}"
+
     thinker = p.get("thinker", "Unknown")
     title = p.get("source_title", "Untitled")
     stype = p.get("source_type", "source").upper()

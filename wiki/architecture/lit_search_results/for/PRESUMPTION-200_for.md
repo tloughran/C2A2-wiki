@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-200:
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-200
+  Original statement: "cycle-count-as-staleness-proxy presumption; 15d's cycle-3-stale-watch / cycle-4-escalation thresholds presume regular weekly cadence, decoupled from wall-clock-time staleness during irregular firing."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-200
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — implicit cycle=time equivalence
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Lamport, L. (1978). "Time, Clocks, and the Ordering of Events." CACM. — Logical clocks (cycle counts) are valid orderings within a single process; for many systems, logical clocks are operationally sufficient.
+    2. Allen, D. (2001). "Getting Things Done." — Task-aging by review-cycle is an established practice; works adequately when cycles are reasonably regular.
+    3. Reinertsen, D. (2009). "Principles of Product Development Flow." — WIP-aging by sprint/cycle is common and acceptable when cadence is bounded.
+
+  Strength of support: Weak
+
+  Summary: There is some support for using logical-cycle counts as staleness proxies when cadence is reasonably regular. Lamport's logical-clocks framework legitimizes cycle-counts as an ordering. GTD and Lean practice use cycle-aging as an operational shortcut. But all support is conditional on cadence regularity, which is precisely what is in question here (the 15d weekly monitor missed two weeks). The presumption is supportable as a default but fragile in the precise circumstances surfaced.
+
+  Caveats: Support is conditional on regular cadence. When cadence is irregular (as here), the presumption is at best partial.
+
+  Recommendation: PARTIALLY-SUPPORTED (conditional on cadence regularity)

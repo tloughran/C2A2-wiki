@@ -30,3 +30,35 @@ SEARCH-AGAINST-ASSUMPTION-025:
   Mitigations available: Specify testable predictions that follow from observer-dependent identity for C2A2; define what observations would disconfirm the claim; treat as a "lens" or heuristic rather than a literal ontological commitment.
   
   Recommendation: PARTIALLY-CHALLENGED
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-025 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-025
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-025
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from session
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new challenging literature in the ~5-week gap. Realist mainstream remains stable; operationalization-gap concern is unaddressed.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. Realist majority position and operationalization gap remain the central challenges.
+
+  Caveats: Without testable predictions for C2A2, the claim continues to risk being unfalsifiable as architecture premise.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)

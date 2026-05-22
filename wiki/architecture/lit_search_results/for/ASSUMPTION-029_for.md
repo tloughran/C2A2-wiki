@@ -28,3 +28,35 @@ SEARCH-FOR-ASSUMPTION-029:
   Caveats: Single-file may be a symptom of, not the cause of, maintainability problems; refactor benefits depend heavily on execution quality. Small apps (<1000 LoC) often see no benefit from Vite-style build tooling.
   
   Recommendation: PARTIALLY-SUPPORTED
+
+---
+
+SEARCH-FOR-ASSUMPTION-029 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-029
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-029
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted as architectural commitment
+      15a (cycle 0): Searched for supporting literature → PARTIALLY-SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new supporting literature in the ~5-week gap. Vite/modular frontend evidence stable.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-SUPPORTED finding stands. General direction supported; "THE limiting factor" claim still requires empirical comparison.
+
+  Caveats: Pre-refactor baseline metrics would settle this faster than literature search.
+
+  Recommendation: PARTIALLY-SUPPORTED (refreshed; carry forward prior recommendation)

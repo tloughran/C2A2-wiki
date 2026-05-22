@@ -1,0 +1,36 @@
+SEARCH-AGAINST-ASSUMPTION-169:
+  Date searched: 2026-05-18
+  Original item: ASSUMPTION-169
+  Original statement: "Pace-and-shape concern on fourth consecutive evening surfacing; 3 consecutive days added architectural breadth without advancing ISME demo critical path; 'rate-mismatch ... not coincidence-shaped.'"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-169
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15b: Searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Csikszentmihalyi (1996) 'Creativity' — creative-work bandwidth is not always zero-sum with execution-work; cognitive priming from breadth can accelerate depth.
+    2. DEA-ZSG models (search result) — zero-sum framing is appropriate when units don't compose; when breadth-work primes critical-path, the framing is wrong.
+    3. Brooks (1995) — 'no silver bullet' — caution about treating pace-and-shape as a simple optimization.
+
+  Strength of challenge: Moderate
+
+  Summary: The zero-sum framing is contested. Some breadth-work feeds critical-path (architectural articulation often de-risks demo). Treating all breadth-vs-demo allocation as zero-sum risks suppressing productive composition. The pattern (4 consecutive evenings) is real; the interpretation (zero-sum interference) is the contested step.
+
+  Specific risks: (a) Premature suppression of breadth-work that would have accelerated demo path; (b) the pace-and-shape framing itself consuming bandwidth that demo-path needs.
+
+  Mitigations available: (a) Test the zero-sum assumption: examine whether breadth-work has had any downstream demo-path impact; (b) reserve fixed minimum demo-path time per day rather than treating breadth as the variable to suppress.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: ASSUMPTION-169
+    Strongest counterargument: PRESUMPTION-186 captures the strongest case: 'pace-and-shape' presumes zero-sum without testing the compose-or-interfere question. Closing off composition prematurely may itself be the rate-mismatch problem.
+

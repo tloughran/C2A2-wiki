@@ -1,0 +1,37 @@
+SEARCH-AGAINST-ASSUMPTION-118:
+  Date searched: 2026-05-13
+  Original item: ASSUMPTION-118
+  Original statement: "Token-based delegation workflow redesign for chat-scrape sign-in barrier now operationally warranted (6 consecutive failed days; PREMISE-015 explicit redesign-required caveat)"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-118
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-05-12 EOD 6-consecutive-day chat-scrape failure pattern + PREMISE-015 explicit redesign caveat
+      15b: Searched for counter-evidence on redesign-vs-discard mechanism-existence question
+    Current status: PARTIALLY-CHALLENGED
+
+  Sources:
+    1. Goldratt (1984) "The Goal" / theory-of-constraints — when a workflow's binding constraint is a hard external policy (here: user-privacy / no-password-delegation), the conventional move is to redesign or discard, NOT to assume redesign as default. The "warranted" framing presumes redesign rather than triggering the redesign-vs-discard comparison.
+    2. Christensen (1997) — sunk-cost in existing-mechanism redesign is the predominant failure mode of incumbent-process improvement; token-based redesign may inherit the assumptions that made chat-scrape the chosen mechanism originally.
+    3. Bryar & Carr (2021) — Amazon ADR requires explicit "do nothing" / "discard" option consideration; PRESUMPTION-145 (this cycle, paired, MEDIUM-HIGH) flags the file-based-handoff alternative as parenthetical rather than co-equal.
+    4. C2A2-internal: PRESUMPTION-134 (REVISE 2026-05-11, HIGH, unresolved) — substrate-decomposition gate; if the 6 consecutive failures share substrate with other failure clusters, redesigning the chat-scrape locally may not be the load-bearing fix.
+    5. Estimating-implementation-cost gap — the assumption does not estimate the redesign cost; OAuth Connector integration is non-trivial; the cost-benefit comparison vs. file-based-handoff or mechanism-discard is missing.
+
+  Strength of challenge: Moderate
+
+  Summary: The challenge is moderate. PREMISE-015 commits the system to redesign-around-the-constraint and the canonical authentication literature endorses token-based delegation — these are strong supporting factors. But the assumption frames redesign as the operationally warranted default without explicitly comparing it to mechanism-discard or file-based-handoff (PRESUMPTION-145). Substrate-decomposition gap (PRESUMPTION-134) is unresolved; if the failure has shared substrate, redesigning the local mechanism may not address the root cause. Implementation cost is unestimated.
+
+  Specific risks: (a) Redesign-default without comparison may commit substantial implementation effort to a mechanism whose value-delivered does not justify the cost; (b) Substrate-decomposition gap means redesign may not address the root failure; (c) Joint with PRESUMPTION-145 — the parenthetical-alternative framing is the structural concern; (d) Sunk-cost in existing-mechanism inheritance.
+
+  Mitigations available: (a) Explicit redesign-vs-discard comparison with cost estimates; (b) substrate-decomposition first (resolves PRESUMPTION-134 dependency); (c) demote "warranted" to "warranted pending substrate-decomposition and cost-benefit comparison"; (d) co-equal framing of file-based-handoff and OAuth Connector options.
+
+  Recommendation: PARTIALLY-CHALLENGED (Moderate) — redesign path is well-supported by PREMISE-015 + authentication literature; substrate-decomposition gap and missing cost-benefit comparison are load-bearing concerns
+
+  STEELMAN:
+    Item: ASSUMPTION-118
+    Strongest counterargument: PREMISE-015 (INCORPORATEd 2026-05-11) committed the system to redesign-around-the-constraint, but the commitment was to "token-based delegation OR equivalent" — the alternative paths (file-based-handoff, mechanism-discard) were preserved in the premise. Treating redesign as warranted without explicitly weighing the alternatives risks first-option bias (Goldratt, Christensen, Bryar-Carr). The substrate-decomposition gate (PRESUMPTION-134 REVISE) is unresolved; if the 6 consecutive failures share substrate with the chat-scrape-sync cluster, the local redesign may not be the load-bearing fix. The conservative move is to gate the redesign on substrate-decomposition AND an explicit cost-benefit comparison against discard and file-based-handoff.
+    What would need to be true for C2A2 to be safe: (a) Substrate-decomposition completed; (b) explicit cost-benefit comparison against alternatives; (c) framing demoted to "warranted pending these checks."
+    How to test: Estimate OAuth Connector integration effort; compare to file-based-handoff implementation effort; weigh against value-delivered.

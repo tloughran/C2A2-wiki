@@ -1,0 +1,36 @@
+SEARCH-AGAINST-PRESUMPTION-165:
+  Date searched: 2026-05-14
+  Original item: PRESUMPTION-165
+  Original statement: "'Tradition of its own becoming' recursive frame presumes recursive self-application is unproblematic; no termination condition"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-165
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced via inference from recursive self-application framing
+      15b: Searched for counter-evidence on recursive-frame-without-termination producing prioritization drift
+    Current status: PARTIALLY-CHALLENGED
+
+  Sources:
+    1. Hofstadter (1979) — strange loops are sometimes productive (productive self-reference is a recognized pattern).
+    2. MacIntyre tradition — traditions persist across centuries via self-application; termination is not the appropriate criterion.
+    3. Autopoiesis literature — self-application is a defining feature of living systems, not a pathology.
+    4. The presumption may be over-applying CS-termination intuitions to a non-CS domain.
+
+  Strength of challenge: Moderate
+
+  Summary: The presumption's CS-termination framing may not be the right model for tradition-formation. Traditions are not programs; "termination" is not the appropriate success criterion. The recursive framing has substantive precedent in MacIntyre and autopoiesis. Moderate challenge — the meta-Goodhart concern stands, but the no-termination-condition framing is the weaker part of the presumption.
+
+  Specific risks: (a) The presumption may import CS-termination intuitions inappropriately; (b) Recursive self-application is a feature of living traditions, not a bug; (c) The meta-Goodhart concern stands but is separable from termination.
+
+  Mitigations available: (a) Distinguish meta-Goodhart from termination; (b) Adopt productive-recursion criteria (Hofstadter-style) rather than termination; (c) Audit recursive self-application for productivity.
+
+  Recommendation: PARTIALLY-CHALLENGED (Moderate) — meta-Goodhart concern stands; CS-termination framing is the weaker part
+
+  STEELMAN:
+    Item: PRESUMPTION-165
+    Strongest counterargument: Tradition-formation is not program execution; "termination condition" is the wrong success criterion. MacIntyre's traditions persist precisely through self-application. The recursive frame has substantive precedent. The meta-Goodhart concern is real but is distinct from the termination concern and should be framed in terms of productive-recursion criteria.
+    What would need to be true for C2A2 to be safe: Productive-recursion criteria adopted; meta-Goodhart concern addressed in its own terms.
+    How to test: Audit recursive self-application for productivity vs. pathology.

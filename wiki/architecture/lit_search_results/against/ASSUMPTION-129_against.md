@@ -1,0 +1,37 @@
+SEARCH-AGAINST-ASSUMPTION-129:
+  Date searched: 2026-05-14
+  Original item: ASSUMPTION-129
+  Original statement: "Nightly alignment-agent protocol diffs `architecture/` ground-truth vs. `wiki/Architecture/` mirror, copies ground-truth → mirror on drift, flags in next session archive; pattern parallels Summa `sync_vault.sh` + launchd"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-129
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from alignment-agent design
+      15b: Searched for counter-evidence on ground-truth-overwrites-mirror without merge protocol
+    Current status: PARTIALLY-CHALLENGED
+
+  Sources:
+    1. Lamport (1978) clock paper / CAP — unidirectional sync requires the single-writer invariant; the invariant is not enforced in ASSUMPTION-129.
+    2. Obsidian-syncthing community (2023-2025) — silent-overwrite incidents are well-documented when mirror-side edits occur (intentionally or accidentally).
+    3. Norman (2013) error-tolerant design — flag-on-drift is recognition, not prevention; "flags in next session archive" means user discovers overwrite after the fact.
+    4. Git diff-and-merge tradition — when bidirectional edits are possible, merge is required.
+    5. PRESUMPTION-162 paired — mirror-side edits not prevented.
+
+  Strength of challenge: Moderate
+
+  Summary: Unidirectional sync is correct under single-writer; ASSUMPTION-129 does not enforce single-writer at the mirror. Mirror-side edits can occur via direct editing or other agents. Silent overwrite is the canonical failure mode. "Flags in next session archive" surfaces the problem too late. Moderate challenge — the architecture is well-formed under its preconditions; the precondition is not enforced.
+
+  Specific risks: (a) Silent overwrite of mirror-side edits; (b) Detection delayed to next session; (c) Single-writer invariant not enforced; (d) Conflict-resolution not specified.
+
+  Mitigations available: (a) Enforce mirror read-only via filesystem permissions or hook; (b) Pre-overwrite diff with explicit confirmation; (c) Backup mirror-state before overwrite; (d) Bidirectional sync with conflict markers.
+
+  Recommendation: PARTIALLY-CHALLENGED (Moderate) — single-writer invariant must be enforced or sync must be bidirectional with merge
+
+  STEELMAN:
+    Item: ASSUMPTION-129
+    Strongest counterargument: Unidirectional sync from authoritative source to derivative mirror is correct only when the mirror is technically read-only. ASSUMPTION-129 does not enforce this. Mirror-side edits can occur — by direct user editing, by other agents that don't know the convention, by accident. When they do, the next nightly sync silently overwrites. The "flag in next session archive" is recognition, not prevention; user discovers the loss after it has occurred. The conservative move is to make the mirror technically read-only (filesystem permissions, pre-commit hook) or to add a pre-overwrite diff with confirmation.
+    What would need to be true for C2A2 to be safe: (a) Mirror technically read-only; or (b) Pre-overwrite diff with confirm; or (c) Bidirectional sync with merge.
+    How to test: Edit a file in mirror, run sync, check whether edit is preserved or silently lost.

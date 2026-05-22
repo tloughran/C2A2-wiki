@@ -37,3 +37,38 @@ SEARCH-AGAINST-PRESUMPTION-073:
     Strongest counterargument: Any N-dependent metric is by definition affected by changes in N; the question is whether the effect is large enough to matter. With heterogeneous additions (theology-traditions joining science-traditions), the density-of-connections from new nodes will systematically be lower, pulling r down. Without explicit re-calibration, the post-N=13 r may be misread as a degradation when it's a transition artifact.
     What would need to be true for C2A2 to be safe: (a) Pre/post-transition r values are computed and compared; (b) the transition effect is decomposed (homogeneity-driven vs. real change); (c) downstream consumers of r are taught about the transition.
     How to test: Compute r at the moment of transition with both 11-tradition and 13-tradition denominators; the gap is the calibration-effect. If the gap is large, "without affecting" is locally falsified.
+
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-073 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-17
+  Original item: PRESUMPTION-073
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b→15a,15b→15c→15d→15a,15b→15c]
+    Original item: PRESUMPTION-073
+    Item type: PRESUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-05): re-triggered on weekly cadence; next_check 2026-05-12 elapsed
+      15b (cycle 1, 2026-05-17): re-searched for challenging literature
+    Current status: refresh; no new challenging literature surfaced this cycle.
+
+  Run context: Daily-pipeline drain of 15d-owned cohort (see SYSTEMIC-RISK-FLAG in lit_search_returns.md 2026-05-17 RUN section). 15d schedule failure since 2026-05-05.
+
+  New evidence weighed: No new challenging literature has surfaced in the past week+. The prior cycles' challenge profile stands.
+
+  Sources (new / refreshed): No new sources this cycle.
+
+  Strength of challenge: Unchanged from prior cycle.
+
+  Summary: Cycle-1 refresh confirms the prior cycle's finding. The challenging literature base has not materially shifted; no new disconfirmatory sources surfaced during this automated cycle.
+
+  Specific risks: Unchanged from prior cycle.
+
+  Mitigations available: Unchanged from prior cycle.
+
+  Recommendation: refreshed; carry forward prior recommendation

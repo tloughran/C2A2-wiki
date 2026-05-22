@@ -1,0 +1,38 @@
+SEARCH-AGAINST-PRESUMPTION-220:
+  Date searched: 2026-05-20
+  Original item: PRESUMPTION-220
+  Original statement: "On-cadence firing == healthy pipeline — no input/output-validity check paired to cadence."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-220
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — pipeline health inferred from on-cadence firing (the N=3 streak), with no input/output-validity check paired to liveness.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Goodhart, C. (1975) / Strathern, M. (1997). "Goodhart's Law." — When cadence becomes the health target, it ceases to measure health; firing on time is gameable/uninformative about output validity.
+    2. Lamport, L. (1977). "Proving the Correctness of Multiprocess Programs." — Liveness and safety are distinct properties; satisfying liveness (it fires) says nothing about safety/correctness (it produces valid output).
+    3. Beyer, B. et al. (2016). "SRE" (golden signals: latency, traffic, errors, saturation). — Health requires error/quality signals, not just that the job ran.
+    4. Observed: this cycle's defects (phantom 51-pending alarm, fabricated transcripts, count discrepancies) occurred on a healthy N=3 cadence. — On-cadence firing coincided with multiple validity failures.
+
+  Strength of challenge: Strong
+
+  Summary: The challenge is strong: on-cadence firing is liveness, not health, and equating them is a textbook Goodhart/proxy-metric failure (liveness vs safety, Lamport). This cycle is the proof — the N=3 cadence streak coincided with a phantom alarm, fabricated transcripts, and count discrepancies; the pipeline fired perfectly while producing invalid outputs. Without an input/output-validity check paired to cadence, 'healthy pipeline' is unmeasured. Anchors the Goodhart SELF-MEASUREMENT cluster (FLAG C) with PRESUMPTION-201.
+
+  Specific risks: A perfectly-on-cadence pipeline producing invalid outputs is reported as healthy; validity failures (like today's) go unflagged by the health signal; cadence is gamed as the target.
+
+  Mitigations available: Pair cadence with input/output-validity checks (schema/sanity/coverage on what 14a/14b/15x produce); report error/quality signals alongside liveness; treat cadence as necessary-not-sufficient for health.
+
+  Recommendation: CHALLENGED (REVISE)
+
+  STEELMAN:
+    Item: PRESUMPTION-220
+    Strongest counterargument: On-cadence firing proves the pipeline is alive, not that it is correct; equating them is Goodhart's law and a liveness-vs-safety confusion. This very cycle fired on cadence while emitting a phantom alarm and fabricated transcripts — liveness was green while validity was red.
+    What would need to be true for C2A2 to be safe: Safe once cadence is paired with output-validity checks and quality/error signals, with cadence treated as necessary but not sufficient.
+    How to test: Audit outputs from on-cadence runs for validity failures; today's defects on a green cadence already demonstrate the decoupling.

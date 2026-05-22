@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-183:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-183
+  Original statement: "FC26 abstract Revision-2 closed as submission-ready; corpus horizon stated as 'Day 100 of 308, full commentary by July 2026.'"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-183
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Surfaced from FC26-abstract editorial closure note
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Nosek, B. et al., 2018. "The preregistration revolution." PNAS 115(11) — pre-stated horizons (Day N of M, completion by date) are good-practice; locking the horizon at submission-time supports later credibility evaluation.
+    2. Munafò, M.R. et al., 2017. "A manifesto for reproducible science." Nature Human Behaviour 1 — emphasizes stating commitments at the time of pre-registration; "submission-ready" status with explicit Day-N counter and target date matches the manifesto's recommendations.
+    3. Lakens, D., 2019. "The value of preregistration for psychological science: A conceptual analysis." Japanese Psychological Review 62 — distinguishes "pre-registered timeline" (good) from "pre-registered timeline with no slack budget" (fragile); supports the closure as a discipline move while flagging the missing slack budget (see 15b).
+
+  Strength of support: Moderate
+
+  Summary: Declaring submission-ready closure with a stated Day-N/M horizon is consistent with preregistration best practice. The discipline of naming a number (Day 100/308) and a date (July 2026) creates an auditable commitment, which is what the open-science literature recommends. The closure itself is a defensible move.
+
+  Caveats: The literature also recommends articulating slack/recovery budget alongside the horizon claim — see PRESUMPTION-208 and 15b for ASSUMPTION-183. Closure without slack budget is weaker than closure with one.
+
+  Recommendation: PARTIALLY-SUPPORTED

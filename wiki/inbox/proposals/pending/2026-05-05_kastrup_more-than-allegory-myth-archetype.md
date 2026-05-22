@@ -7,7 +7,10 @@ source_title: "We need a mildly schizophrenic relationship to myth — Q&A on Mo
 source_url: https://www.withrealityinmind.com/more-than-allegory-recording/
 source_date: 2026-04-14
 searched_on: 2026-05-05
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-014
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

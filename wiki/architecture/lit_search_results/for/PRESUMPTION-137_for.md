@@ -27,3 +27,35 @@ SEARCH-FOR-PRESUMPTION-137:
   Caveats: (a) Competing PRESUMPTION-128 has its own support (Lean/Kaizen progressive elaboration); the literature endorses both positions in different contexts; (b) The first-ever-as-gate framing is most defensible when the admission has long-term commitment implications — which tradition admission does; (c) "Distinctive epistemic weight" is a meta-level claim that risks special-pleading without explicit criteria for what counts as distinctive.
 
   Recommendation: PARTIALLY-SUPPORTED (Moderate) — first-of-type-as-gate is canonical for high-commitment admissions; the competing PRESUMPTION-128 pair requires explicit reconciliation
+
+---
+
+SEARCH-FOR-PRESUMPTION-137 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-137
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: PRESUMPTION-137
+    Item type: PRESUMPTION
+    Transform at each step:
+      14b (cycle 0): Originally surfaced from first-ever-as-decision-gate framing
+      15a (cycle 0): Searched for supporting literature → PARTIALLY-SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~8-day gap on first-of-type admission gating.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-SUPPORTED finding stands. First-of-type-as-gate canonical for high-commitment admissions.
+
+  Caveats: Competing PRESUMPTION-128 reconciliation still pending.
+
+  Recommendation: PARTIALLY-SUPPORTED (refreshed; carry forward prior recommendation)

@@ -1,0 +1,38 @@
+SEARCH-AGAINST-PRESUMPTION-223:
+  Date searched: 2026-05-21
+  Original item: PRESUMPTION-223
+  Original statement: "Making integration visible/attractive is value-neutral — convergence-emphasis views presumed not to bias toward convergence over preserved rivalry."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15b]
+    Original item: PRESUMPTION-223
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred: the design presumes that emphasizing integration/convergence in the visualization is value-neutral and does not bias users toward convergence over preserved rivalry.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E / REVISE-040 noted)
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Tversky & Kahneman (1981) framing effects. — How options are presented changes inferences/choices; emphasis is not neutral.
+    2. Pandey et al. (2014) "How Deceptive Are Deceptive Visualizations?"; Correll (2019) "Ethical Dimensions of Visualization." — Visual emphasis/salience demonstrably shapes conclusions.
+    3. Attention/salience (Wolfe; Healey & Enns). — Visually prominent items are preferentially encoded; making convergence attractive privileges it pre-attentively.
+    4. Monmonier, "How to Lie with Maps." — Every representation foregrounds and suppresses; neutrality is not available.
+
+  Strength of challenge: Strong
+
+  Summary: The challenge is strong and well established: framing effects, visualization-ethics studies, and attention research all show that emphasis and salience shape inference. A view that makes integration visible/attractive will bias toward reading convergence as more prevalent/important than preserved rivalry, regardless of intent. A passive pluralism guard in text cannot offset what the visual hierarchy does, because salience operates pre-attentively.
+
+  Specific risks: The system could systematically over-represent convergence and under-represent incommensurability/rivalry, undermining ASSUMPTION-207's pluralism and producing self-confirming 'unity.'
+
+  Mitigations available: Treat the design as non-neutral by default; give rivalry/incommensurability equal salience (color/size/position parity); audit for convergence tilt; A/B test inference outcomes.
+
+  Recommendation: CHALLENGED (strong)
+
+  STEELMAN:
+    Item: PRESUMPTION-223
+    Strongest counterargument: Decades of framing and visualization-ethics research establish that salience is never neutral; a convergence-emphasis view will bias users toward convergence pre-attentively, so a passive 'pluralism guard' in text cannot offset what the visual hierarchy does, and the system risks manufacturing the very unity ASSUMPTION-207 hopes to observe.
+    What would need to be true for C2A2 to be safe: Rivalry and convergence are given measured visual parity and the tilt is audited.
+    How to test: A/B test — do users shown the view over-estimate convergence vs a parity-balanced control?

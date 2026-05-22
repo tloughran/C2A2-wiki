@@ -37,3 +37,36 @@ SEARCH-AGAINST-ASSUMPTION-080:
     Strongest counterargument: One observation is one data point. The silent-skip symptom is consistent with at least four distinct bug-classes, and the literature consistently warns against single-symptom-to-single-cause attribution. The link-count partition is the simplest hypothesis that fits, but simplicity is not evidence — and committing to "Anthropic-side bug" forecloses the more likely possibility that the failure is path-dependent or race-conditioned within the user's own workflow.
     What would need to be true for C2A2 to be safe: (a) Multi-cycle observation confirming the link-count predicate; (b) controlled test with single-link tasks created via at least two distinct paths; (c) explicit ruling out of race / clock-skew / persistence alternatives.
     How to test: Create three single-link tasks via different creation paths; observe whether all three skip uniformly. If yes, link-count partition is supported. If no, path-dependent or race-conditioned alternative is more plausible.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-080 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-080
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-080
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from silent-skip diagnosis
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~2-week gap. Race/clock-skew/persistence-dropout alternatives still apply.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. Single-symptom-to-single-cause caution persists.
+
+  Caveats: Controlled multi-path test would resolve faster than literature search.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

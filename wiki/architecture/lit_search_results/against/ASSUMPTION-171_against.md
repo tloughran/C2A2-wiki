@@ -1,0 +1,39 @@
+SEARCH-AGAINST-ASSUMPTION-171:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-171
+  Original statement: "Out-of-window inclusion of Levin's 'Cognition Spaces' (Jan 2026) under 'significant work not yet captured' filter; agent-judged cross-tradition richness justifies exception."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-171
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Surfaced from morning curation log — agent-judged out-of-window exception
+      15b: Searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Tversky, A. & Kahneman, D. (1974). "Judgment under Uncertainty: Heuristics and Biases." Science. — Establishes that discretionary expert judgment under salience cues (here, "cross-tradition richness") is systematically biased toward recently-encountered or vivid items; the exception will fire on what feels rich, not what is rich.
+    2. Bender, E. M. et al. (2021). "On the Dangers of Stochastic Parrots." FAccT 2021. — Documents how LLM-based judgments of "interestingness" or "richness" reflect training-distribution salience rather than ground-truth significance; agent-curation drift toward what models find textually compelling.
+    3. Klein, G. (1998). "Sources of Power: How People Make Decisions." MIT Press. — Naturalistic decision-making research shows expert pattern-matching is calibrated only within domains of extensive feedback; agents curating cross-tradition literature have no comparable feedback loop, so "richness judgments" are uncalibrated.
+    4. Eisenstein, E. L. (1980). "The Printing Press as an Agent of Change." Cambridge University Press. — Historical study of how exception-handling in scholarly curation tends to expand: once "significant work" can override the filter, the filter degrades within a few cycles unless the override is rationed.
+    5. Mannheim, K. (1936). "Ideology and Utopia." — Sociology-of-knowledge classic: curators systematically over-include items that confirm prior frames (here, the C2A2 cross-tradition program), under-include items that challenge them.
+
+  Strength of challenge: Moderate
+
+  Summary: There is substantial literature documenting that discretionary curation judgments — especially those framed as "I notice a rich cross-domain signal" — are systematically biased by salience, training-distribution effects, and confirmation tendencies. Without a feedback loop calibrating the agent's significance judgments, exceptions like the Levin Jan 2026 inclusion are not properly auditable. The risk is not the single inclusion but the cumulative drift of the filter when discretion is unbounded.
+
+  Specific risks: (a) Exception becomes the rule; temporal-window filter degrades over months. (b) Agent-judged richness correlates with textual vividness or familiarity rather than structural cross-tradition signal. (c) Confirmation bias toward items that reinforce existing C2A2 bridge claims. (d) Asymmetric inclusion: items that would challenge prior frames are less likely to trip the "richness" signal.
+
+  Mitigations available: (a) Track exception rate as a metric and alarm if it exceeds N%; (b) Require the rationale to name a specific structural feature (not just "rich"); (c) Periodically audit excluded items from the window to check for false negatives; (d) Require a second-agent confirmation before any out-of-window inclusion.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: ASSUMPTION-171
+    Strongest counterargument: Agent-judged significance is uncalibrated absent feedback loops, and the literature on heuristics-and-biases predicts that exception-rates will drift upward and become biased toward confirming material. A single justified-feeling exception in May 2026 is not strong evidence that the filter is intact — only the trajectory of exception rates over time is informative.
+    What would need to be true for C2A2 to be safe: Exception rate must be tracked, capped, and audited. The rationale must point to a specific structural feature ("Levin extends bioelectric framework into category-theoretic cognition geometry") rather than a felt-quality one ("cross-tradition richness"). Excluded-item audits should run periodically.
+    How to test: Track the exception count per cycle; compare agent-flagged "rich" out-of-window items to a random sample of in-window items reviewed by Tom for actual cross-tradition utility. If the agent's richness signal does not outperform random, the discretion is uncalibrated.

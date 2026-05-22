@@ -66,9 +66,13 @@ N=$(echo "$CHANGED" | grep -c . || true)
 git add wiki/vault/
 
 DATE=$(date '+%Y-%m-%d')
+# Commit ONLY wiki/vault/ — never a bare `git commit` here. The working tree can
+# carry unrelated pre-staged changes (e.g. the architecture/ pathway set); a bare
+# commit would sweep all of them into this push. --only restricts the commit to the
+# vault paths regardless of what else is staged. (Hardened 2026-05-19.)
 git -c user.name="Tom Loughran" \
     -c user.email="thomas.loughran@gmail.com" \
-    commit -m "Summa vault sync ${DATE} (${N} file(s) updated)"
+    commit --only -m "Summa vault sync ${DATE} (${N} file(s) updated)" -- wiki/vault/
 
 log "Committed ${N} change(s). Pushing…"
 

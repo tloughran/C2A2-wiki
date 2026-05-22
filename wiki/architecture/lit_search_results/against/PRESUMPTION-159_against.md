@@ -1,0 +1,35 @@
+SEARCH-AGAINST-PRESUMPTION-159:
+  Date searched: 2026-05-14
+  Original item: PRESUMPTION-159
+  Original statement: "'7-day delivery drought broken' presumes sign-in fix is durable root cause; credential-layer workaround framed as architectural-layer fix"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-159
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced via inference from ASSUMPTION-126 durability claim
+      15b: Searched for counter-evidence on once-fixed-stays-fixed framing
+    Current status: NO-CHALLENGE-FOUND
+
+  Sources:
+    1. Post-incident-analysis literature (Reason 1990; Allspaw 2010) confirms the symptomatic-vs-root-cause distinction.
+    2. Sometimes sign-in IS the root cause (e.g., a one-time SSO migration) — partial counter.
+    3. Recurrence rate is empirical; the presumption is testable.
+
+  Strength of challenge: Weak
+
+  Summary: The presumption is well-founded. The narrow counter (sometimes sign-in is the root cause) is empirically testable and does not preempt the audit.
+
+  Specific risks: None substantial.
+
+  Mitigations available: Multi-day durability test; root-cause analysis.
+
+  Recommendation: NO-CHALLENGE-FOUND — presumption inference is sound
+
+  STEELMAN:
+    Item: PRESUMPTION-159
+    Strongest counterargument: Sometimes sign-in restoration is itself the root cause (e.g., one-time auth state corruption); the architectural-layer concern is premature.
+    What would need to be true for C2A2 to be safe: Multi-day durability test confirms or refutes recurrence.
+    How to test: 14-day success-rate measurement.

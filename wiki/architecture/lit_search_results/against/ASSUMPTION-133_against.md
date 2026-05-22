@@ -1,0 +1,39 @@
+SEARCH-AGAINST-ASSUMPTION-133:
+  Date searched: 2026-05-15
+  Original item: ASSUMPTION-133
+  Original statement: "File-based handoff (signed JSON over HTTPS) is the primary wire format for inter-instance federation per PRESUMPTION-145; OAuth-token APIs demoted"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-133
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Pathway 19 federation wire-format commitment
+      15b: Searched for counter-evidence on file-based-handoff failure modes at federation scale
+    Current status: CHALLENGED (Moderate)
+
+  Sources:
+    1. ActivityPub deployment lessons (Mastodon outages, instance defederation events 2022-2025) — signed-JSON federation has documented failure modes: key compromise, replay, replay-protection-bypass via clock skew.
+    2. Anderson (2008) "Security Engineering" — key management is the unsolved problem of cryptographic federation; signed-JSON inherits this.
+    3. NIST SP 800-57 — key lifecycle management at federation scale requires HSM, rotation, revocation infrastructure; signed-JSON-only deployments often skip this.
+    4. ATProto known issues — replay attacks via timestamp manipulation; record-deletion semantics ambiguous in federation context.
+    5. OAuth 2.1 (RFC 9700, 2024+) — for live-query flows, OAuth-token APIs handle revocation and short-lived authorization better than signed-JSON archival exchange; "demotion" may discard the wrong capability for the wrong use case.
+    6. SOLID protocol production issues — file-based federation suffers staleness; eventual-consistency semantics under-documented.
+    7. PRESUMPTION-170 paired — transfer-validity audit from intra-user (origin context) to inter-org federation is unaudited.
+
+  Strength of challenge: Moderate
+
+  Summary: Signed JSON over HTTPS is canonical at federation scale but carries documented failure modes that deployments routinely under-handle: key management at multi-organization scale, replay protection, revocation, and staleness semantics. The "OAuth-token APIs demoted" framing risks discarding the right tool for live-query flows. The "primary wire format" framing is defensible for archival exchange but not for all federation operations. PRESUMPTION-170 paired concern (transfer from intra-user to inter-org context) is the load-bearing audit gap. Moderate challenge: not refuting the choice, but flagging that the implementation surface is larger than the assumption acknowledges.
+
+  Specific risks: (a) Key management at multi-org scale unaudited; (b) Replay attacks (clock skew, nonce reuse); (c) Revocation semantics ambiguous in file-based federation; (d) Staleness — file-based handoff is archival, not live; live-query flows still need OAuth; (e) "Demotion" of OAuth may be over-broad if it precludes live-query use cases.
+
+  Mitigations available: (a) Explicit key-management protocol (rotation, revocation, HSM/HMAC); (b) Replay protection (timestamps + nonces + windowed-validation); (c) Hybrid model: signed-JSON for archival/sync; OAuth for live-query; (d) PRESUMPTION-170 transfer-validity audit; (e) Adopt W3C Verifiable Credentials proof libraries to inherit hardened replay/revocation.
+
+  Recommendation: CHALLENGED (Moderate) — wire format choice ok; security surface and OAuth-demotion scope need audit
+
+  STEELMAN:
+    Item: ASSUMPTION-133
+    Strongest counterargument: "Signed JSON over HTTPS" is the right archival-exchange primitive but is being framed as a universal wire format that demotes OAuth. OAuth and signed-JSON solve different problems: OAuth handles delegated authorization to live resources with revocation; signed-JSON handles content authenticity for archival/sync flows. The "primary / demoted" framing implies they are substitutable — they are not. A multi-instance federation needs both: signed-JSON for content sync (per ActivityPub), OAuth for live cross-instance queries (per FAPI 2.0). The assumption risks under-specifying the federation surface.
+    What would need to be true for C2A2 to be safe: (a) Hybrid wire-format model documented explicitly; (b) Key-management protocol specified; (c) Replay/revocation/staleness semantics specified; (d) PRESUMPTION-170 transfer-validity audit completed.
+    How to test: Enumerate the federation operations (sync, query, subscribe, revoke) and check which wire format is appropriate for each.

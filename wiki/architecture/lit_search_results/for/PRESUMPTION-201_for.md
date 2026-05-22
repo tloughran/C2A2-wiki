@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-201:
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-201
+  Original statement: "morning-briefing-write-as-success vs Tom-action-as-success presumption; briefing-write counter is measured, action-rate is not, gap is invisible. (SELF-MEASUREMENT Goodhart cluster.)"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-201
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — implicit success-equals-write
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Weak-partial
+
+  Sources:
+    1. Drucker, P. F. (1954). "The Practice of Management." — Operational metrics on activities (writes, outputs) are an acceptable interim proxy when outcome metrics are hard to measure; partial support for using briefing-write as a tracked metric while better measures are developed.
+    2. ITIL v4 Service Management — output-volume metrics are widely used in operations as easy-to-collect proxies; conditional support if augmented with outcome metrics over time.
+    3. SRE literature (Beyer 2016) — instrumentation often begins with what is easy to count; partial support for tracking briefing-writes as an initial SLI.
+
+  Strength of support: Weak
+
+  Summary: There is weak support for tracking briefing-writes as an interim operational metric. Drucker's management literature, ITIL, and SRE all acknowledge that output-volume metrics are starting points. But all this support treats output-volume as interim and requires that outcome metrics be developed alongside. The presumption as stated (briefing-write IS success, action-rate is invisible) goes beyond this support — the literature treats output-only metrics as scaffolding, not as success criteria.
+
+  Caveats: Support is only for interim-tracking, not for treating output-volume as the definition of success. The "action-rate is not measured" half of the presumption is the failure mode the literature warns about.
+
+  Recommendation: PARTIALLY-SUPPORTED (only as interim metric; not as success definition)

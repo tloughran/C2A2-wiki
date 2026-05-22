@@ -1,0 +1,37 @@
+SEARCH-AGAINST-ASSUMPTION-120:
+  Date searched: 2026-05-14
+  Original item: ASSUMPTION-120
+  Original statement: "Cloudflare Workers is chosen broker hosting platform, conditional on streaming-latency validation; ~10-30 ms edge overhead presumed dwarfed by LLM + TTS provider latency floors"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-120
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from broker-hosting decision context
+      15b: Searched for counter-evidence on edge-broker viability under voice-dialogue streaming load
+    Current status: PARTIALLY-CHALLENGED
+
+  Sources:
+    1. Cloudflare Workers limits documentation — WebSocket time limits, CPU time limits, and Durable Objects pricing introduce non-trivial constraints for long-running streaming sessions.
+    2. Akamai EdgeWorkers vs. Cloudflare comparative benchmarks (2024) — long-tail latency (p99) under load can spike 100-300 ms; the "10-30 ms" estimate is median-case.
+    3. WebRTC / WebSocket streaming literature — long-lived stateful connections at edge can hit regional failover and cold-restart edge cases that increase tail latency.
+    4. Lock-in concern — Workers-specific APIs (Durable Objects, KV) create migration cost if the platform choice is wrong.
+    5. PRESUMPTION-152 paired — estimate-without-measurement risk.
+
+  Strength of challenge: Moderate
+
+  Summary: While median-case edge overhead is dwarfed by LLM/TTS latency, the assumption ignores p99/tail behavior and platform-specific constraints (WebSocket limits, Durable Objects cost). Lock-in to Workers-specific APIs is a long-term concern. The conditional-on-validation framing is correct posture, but the "dwarfed" claim presents the favorable case without acknowledging the failure modes. Moderate challenge.
+
+  Specific risks: (a) p99 latency under voice-dialogue load may not be acceptable; (b) Workers-specific lock-in if migration becomes necessary; (c) WebSocket limits and Durable Objects cost not factored; (d) Regional failover behavior unmeasured.
+
+  Mitigations available: (a) p99 latency validation, not just median; (b) Platform-portable broker abstraction; (c) Explicit measurement of WebSocket lifecycle and Durable Objects cost; (d) Test regional failover before commitment.
+
+  Recommendation: PARTIALLY-CHALLENGED — platform choice is defensible; validation must cover tail latency and lock-in
+
+  STEELMAN:
+    Item: ASSUMPTION-120
+    Strongest counterargument: The "dwarfed by LLM/TTS latency floors" framing is true at median but obscures the tail-latency risk that determines real voice-dialogue quality. Voice users notice 95th-percentile glitches, not median performance. Workers-specific lock-in (Durable Objects, KV, Worker-specific APIs) creates migration cost if validation reveals problems. The conditional clause is the right posture, but the validation must include p99/p99.9 measurements under realistic voice load, regional failover behavior, and a portable-broker fallback plan.
+    What would need to be true for C2A2 to be safe: (a) p99 latency measured under load and within budget; (b) Worker-specific lock-in minimized; (c) Regional failover tested.
+    How to test: Load test with realistic voice-dialogue traffic; measure p50/p95/p99/p99.9; force a region failure and measure recovery.

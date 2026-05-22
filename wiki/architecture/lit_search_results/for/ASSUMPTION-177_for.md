@@ -1,0 +1,30 @@
+SEARCH-FOR-ASSUMPTION-177:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-177
+  Original statement: "15d weekly periodic monitor ran today as catchup (first fire since 2026-05-05); 30 re-queued; 3 cycle-3 stale-watch items; partially addresses SYSTEMIC-RISK-FLAG-NEW."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-177
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Surfaced from morning monitor-fire report
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. ITIL v4 Service Operation literature — catchup runs of scheduled monitoring are a recognized recovery pattern; the run is a partial mitigation but does not fully substitute for missed cycles' staleness signal.
+    2. Beyer et al. (2016). "Site Reliability Engineering." O'Reilly. — Treats scheduled-job missed-fires as a class of operational event needing both recovery (run the catchup) and analysis (why was the cadence missed). The catchup-as-mitigation framing is standard.
+    3. Hollnagel, E. (2014). "Safety-II in Practice." — Resilience engineering: out-of-band recovery actions partially restore the system but expose the underlying brittleness; "partial addressing" framing is appropriate.
+    4. Reason, J. (1990). "Human Error." — Latent failures accumulate during cadence gaps; catchup partially flushes the backlog but cannot fully reconstruct what would have been detected with normal cadence.
+
+  Strength of support: Moderate
+
+  Summary: Operations and resilience literature support both halves of the claim: catchup runs are a legitimate partial mitigation, and they do not fully substitute for missed periodic cycles. The "partially addresses SYSTEMIC-RISK-FLAG-NEW" framing is exactly the cautious framing the literature recommends — explicitly acknowledging incomplete coverage rather than declaring resolved.
+
+  Caveats: The literature would also recommend root-cause analysis of why the weekly cadence was missed for two weeks; catchup-without-RCA leaves the failure mode intact.
+
+  Recommendation: PARTIALLY-SUPPORTED

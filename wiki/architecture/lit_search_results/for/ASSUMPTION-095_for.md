@@ -29,3 +29,35 @@ SEARCH-FOR-ASSUMPTION-095:
   Caveats: (a) "SYSTEMIC" classification is well-supported but can be downgraded if alternate access paths exist (e.g., self-hosted proxy, OAuth-authenticated access from non-sandbox IP) — these are mitigations, not refutations; (b) supportive literature distinguishes systemic blocks (per-IP-range) from rate limits (per-account, transient); the C2A2 case is the former, which the literature treats as canonical SYSTEMIC; (c) escalation literature pairs SYSTEMIC classification with a defined escalation path — N=5 bundling (ASSUMPTION-094) is one such path.
 
   Recommendation: SUPPORTED (SYSTEMIC ESCALATION classification matches standard severity criteria; alternate-path enumeration is the recommended adjacent practice)
+
+---
+
+SEARCH-FOR-ASSUMPTION-095 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-095
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-095
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from sandbox YouTube-block diagnosis
+      15a (cycle 0): Searched for supporting literature → SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~10-day gap. Sandbox-IP block pattern remains documented.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Strong)
+
+  Summary: Prior SUPPORTED finding stands. SYSTEMIC ESCALATION classification still matches ITIL criteria.
+
+  Caveats: Alternate-path enumeration remains the adjacent practice.
+
+  Recommendation: SUPPORTED (refreshed; carry forward prior recommendation)

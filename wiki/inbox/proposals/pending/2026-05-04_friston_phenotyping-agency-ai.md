@@ -7,7 +7,10 @@ source_title: "Active Inference: A method for Phenotyping Agency in AI systems?"
 source_url: https://arxiv.org/abs/2604.23278
 source_date: 2026-04-25
 searched_on: 2026-05-04
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-003
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

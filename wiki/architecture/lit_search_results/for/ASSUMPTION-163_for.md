@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-163:
+  Date searched: 2026-05-18
+  Original item: ASSUMPTION-163
+  Original statement: "worker.py is ~60 lines, one-shot, no daemon, no retry logic, fail-loud; C1–C5 PASS at 2026-05-16T20:49:13 UTC; meets Rules 2 (Simplicity) and 12 (Fail Loud)."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-163
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Brooks 'No Silver Bullet' — argues against unnecessary complexity; aligns with Rule 2.
+    2. Suchman (1987) 'Plans and Situated Actions' — situated-action critique of pre-planned recovery logic; fail-loud has philosophical backing for systems where humans are in the loop.
+    3. The Twelve-Factor App (Wiggins) — single-purpose, ephemeral processes are canonical for cloud workers; one-shot pattern matches.
+
+  Strength of support: Moderate
+
+  Summary: One-shot + fail-loud is canonical for human-in-the-loop systems where retry-without-supervision could mask important signals. The 60-line size is well within the 'small enough to fully reason about' threshold. The pattern explicitly trades availability for visibility — a legitimate tradeoff during shake-out phases when problems should surface, not be hidden.
+
+  Caveats: Pattern is appropriate for early/shake-out phases; literature suggests it should be revisited once operational characteristics stabilize. The 'meets Rules 2 and 12' claim is true at this size and stage.
+
+  Recommendation: PARTIALLY-SUPPORTED

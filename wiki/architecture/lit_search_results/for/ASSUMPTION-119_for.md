@@ -1,0 +1,28 @@
+SEARCH-FOR-ASSUMPTION-119:
+  Date searched: 2026-05-14
+  Original item: ASSUMPTION-119
+  Original statement: "The seventeen-pathway architectural inventory + 6-ISME-critical demo set + 2 bright pins constitutes the first end-to-end architectural articulation of C2A2 for the ISME July 8-10 demo"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-119
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-05-13 articulation pass; pathway inventory + ISME-critical subset + bright pins enumerated in single dispatch
+      15a: Searched for completeness-of-inventory practice in architectural pre-demo articulations; demo-set definition patterns
+    Current status: PARTIALLY-SUPPORTED
+
+  Sources:
+    1. Nygard (2018) "Release It!" — pre-release architectural inventories produced under demo pressure are routinely the first end-to-end articulation; the artifact is the articulation.
+    2. Bryar & Carr (2021) "Working Backwards" — Amazon press-release-first method endorses single-pass articulation under a demo target as a forcing function for end-to-end coherence.
+    3. Hohpe (2016) "The Architect Elevator" — multi-layer architectural articulation is typically driven into a coherent inventory only by an upcoming external event; the demo is the function.
+    4. C2A2-internal: parallel pattern in PREMISE-001 (traditions-as-units) where multi-source articulation produced the first coherent inventory.
+
+  Strength of support: Moderate
+
+  Summary: The literature endorses the pattern that a forcing-function event (a demo, a press release, a customer review) is typically what produces the first end-to-end architectural inventory. ASSUMPTION-119 instantiates this pattern. Support is moderate (not strong) because the literature endorses the practice but does not certify any particular inventory as complete — the inventory being articulated under a deadline is the supported claim, not its completeness.
+
+  Caveats: (a) Closed-enumeration risk (PRESUMPTION-150, paired) — "17 pathways" without an audit for missing pathways inherits the closed-set-as-completeness anti-pattern; (b) "First end-to-end" is a self-claim and resists external validation; (c) The 6-ISME-critical subset is binary (PRESUMPTION-151, paired) — no graduated criticality.
+
+  Recommendation: PARTIALLY-SUPPORTED — the forcing-function articulation pattern is well-supported; the completeness sub-claim is not

@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-169:
+  Date searched: 2026-05-18
+  Original item: ASSUMPTION-169
+  Original statement: "Pace-and-shape concern on fourth consecutive evening surfacing; 3 consecutive days added architectural breadth without advancing ISME demo critical path; 'rate-mismatch ... not coincidence-shaped.'"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-169
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Project-portfolio management literature (Cooper, Edgett, Kleinschmidt 2001) — explicit identification that 'breadth-work' and 'depth-work' compete for fixed bandwidth; allocation-imbalance is a known failure mode under deadline pressure.
+    2. Goldratt (1997) 'Critical Chain' — Theory of Constraints applied to project management; critical-path attention is the load-bearing concern under deadline pressure.
+    3. 4-consecutive-evening pattern is statistical signal under canonical reliability thresholds (Nelson 1982).
+
+  Strength of support: Moderate
+
+  Summary: The literature supports both (a) breadth/depth allocation under deadline pressure is a known concern, and (b) recurrent signals (4 consecutive evenings) should be treated as patterns, not coincidences. The 'not coincidence-shaped' framing aligns with reliability-statistics conventions.
+
+  Caveats: PRESUMPTION-186 challenges the zero-sum framing; the literature on critical-chain and creative-work has cases where breadth-work feeds critical-path rather than competing with it.
+
+  Recommendation: PARTIALLY-SUPPORTED

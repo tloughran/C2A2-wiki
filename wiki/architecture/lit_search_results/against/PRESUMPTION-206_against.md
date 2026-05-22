@@ -1,0 +1,39 @@
+SEARCH-AGAINST-PRESUMPTION-206:
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-206
+  Original statement: "Inter-model disagreement (Opus + Claude) as useful signal — presumes independent observations rather than correlated noise from shared training/RLHF lineage."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-206
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session use of inter-model agreement as credibility heuristic
+      15a: Searched for supporting literature
+      15b: Searched for challenging evidence
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Partial
+
+  Sources:
+    1. Wang, X. et al., 2023. "Self-consistency improves chain of thought reasoning in language models." ICLR — demonstrates that even within a single model, sampled disagreement carries useful signal; same-family disagreement is not zero-information.
+    2. Cobbe, K. et al., 2021. "Training Verifiers to Solve Math Word Problems." arXiv — ensemble-of-same-model approaches outperform single-shot meaningfully, suggesting intra-family disagreement is more than pure noise.
+    3. Bai, Y. et al., 2022. "Constitutional AI" (Anthropic) — discusses the structured ways same-family models still produce divergent outputs on contested questions, supporting at least partial information value of intra-family disagreement.
+
+  Strength of challenge: Moderate (against the strong version "no useful signal"; weak against the calibrated version)
+
+  Specific risks:
+    - Treating intra-family disagreement as proxy for inter-family or inter-architecture disagreement overstates evidence value.
+    - "Both Opus and Claude agree" is closer to "this model lineage agrees with itself" than to "independent observers concur."
+    - Confident treatment of intra-family agreement as ground-truth confirmation creates a closed inference loop that doesn't actually escape training-distribution priors.
+
+  Mitigations available:
+    - When inter-model agreement is used as a signal, name it as "intra-family" or "inter-family" explicitly.
+    - Discount the weight of intra-family agreement appropriately (the deep-ensemble literature suggests something like 0.3-0.6x the weight of truly independent observers, depending on training overlap).
+    - When higher confidence is needed, supplement with a non-LLM check (citation, scan, empirical test).
+
+  STEELMAN:
+    The strongest version is: intra-family disagreement carries non-zero signal (per Wang et al.), so it is "useful" in the literal sense. The presumption fails only when this useful-but-weak signal is treated as if it were the signal from independent observers. Calibrated use survives; uncalibrated treatment as independence does not.
+
+  Recommendation: PARTIALLY-CHALLENGED (presumption stands at the calibration level, not at the zero-signal level)

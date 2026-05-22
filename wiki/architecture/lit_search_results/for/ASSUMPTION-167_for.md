@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-167:
+  Date searched: 2026-05-18
+  Original item: ASSUMPTION-167
+  Original statement: "57-item RE-TRIGGER cohort from 2026-05-05 (next_check 2026-05-12) now 4 days overdue, 7+ consecutive carry-forward without drain, no visible 15d evidence; reframed as ownership-boundary problem not item-ageing problem."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-167
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15a: Searched for supporting literature
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Extract.to 'Why your data pipeline keeps breaking' — explicit identification of unclear ownership as the root cause of pipeline fragility.
+    2. Astronomer 'Data Products: It's not what you call them' — 'every dataset should have an owner. When you depend on someone else's table, you should know who to contact when it changes.' Direct parallel to unowned-cohort situation.
+    3. Closeloop 'Why Data Pipelines Fail and How Enterprise Teams Fix Them' — emphasizes that organizational and ownership gaps, not just technical issues, are the root causes of pipeline fragility.
+
+  Strength of support: Strong
+
+  Summary: The reframe (ownership-boundary problem, not item-ageing problem) aligns precisely with mainstream data-pipeline-reliability literature. Unowned-queue lifetimes are a known organizational anti-pattern with clear remediation guidance: assign explicit owner, set escalation path, monitor accountability. The 4-days-overdue + 7+-consecutive-carry-forward record is the canonical symptom.
+
+  Caveats: Literature treats this as a known problem with known fixes; the reframe identifies the correct layer but does not in itself resolve the situation.
+
+  Recommendation: SUPPORTED

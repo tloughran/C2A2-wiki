@@ -1,0 +1,30 @@
+SEARCH-FOR-PRESUMPTION-206:
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-206
+  Original statement: "Inter-model disagreement (Opus + Claude) as useful signal — presumes independent observations rather than correlated noise from shared training/RLHF lineage."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-206
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session use of inter-model agreement as a credibility heuristic
+      15a: Searched for supporting literature
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Dietterich, T.G., 2000. "Ensemble methods in machine learning." Multiple Classifier Systems, LNCS — foundational result: ensemble accuracy improves only to the degree base classifiers err independently; correlated errors collapse the benefit. The presumption that independence matters is well-grounded.
+    2. Lakshminarayanan, B., Pritzel, A., Blundell, C., 2017. "Simple and Scalable Predictive Uncertainty Estimation Using Deep Ensembles." NeurIPS — demonstrates that even deep ensembles trained with different random seeds (let alone same-family models) retain substantial correlated error; raises the bar on what counts as "independent" observation.
+    3. Lin, S. et al., 2024. "Generating with confidence: Uncertainty quantification for black-box large language models." TMLR — shows inter-LLM disagreement does carry signal, but the signal-to-noise ratio depends strongly on whether models are from the same family / training pipeline.
+    4. Kuhn, L., Gal, Y., Farquhar, S., 2023. "Semantic uncertainty: Linguistic invariances for uncertainty estimation in natural language generation." ICLR — formal treatment of disagreement-as-uncertainty in LLMs, supporting the use of inter-model disagreement as a signal but with explicit caveats about shared training.
+
+  Strength of support: Strong (for the presumption-as-presumption — i.e., this is exactly the question one should be asking)
+
+  Summary: The ensemble literature is unambiguous that "disagreement as signal" requires independence, and the LLM-specific uncertainty literature is rapidly catching up to the result that intra-family disagreement (Opus + Claude variants from the same family) is correlated noise rather than truly independent observation. The presumption — that inter-model disagreement is being treated as more informative than it is — is well-supported as a real risk worth examining.
+
+  Caveats: Disagreement still carries SOME signal; the question is calibration, not zero-vs-one. A reduced-weight version of "inter-model agreement boosts confidence" remains defensible.
+
+  Recommendation: SUPPORTED

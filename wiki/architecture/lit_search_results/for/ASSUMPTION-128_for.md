@@ -1,0 +1,28 @@
+SEARCH-FOR-ASSUMPTION-128:
+  Date searched: 2026-05-14
+  Original item: ASSUMPTION-128
+  Original statement: "FINDING-030 (active-inference-as-OODA → KL-divergence) is first quantitative C2A2 detector candidate"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-128
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from FINDING-030 Pattern-Detector output
+      15a: Searched for active-inference / OODA homology validity and KL-divergence as tradition-comparison metric
+    Current status: PARTIALLY-SUPPORTED
+
+  Sources:
+    1. Friston (2010, 2017) free-energy principle — active inference is formally specified using KL-divergence between predicted and observed distributions; the KL-divergence operationalization is canonical within active inference.
+    2. Boyd (1976 — "Destruction and Creation"; 1995 OODA) — OODA loop is a heuristic decision cycle; the formal mapping between active inference and OODA is informal in the literature.
+    3. Parr, Pezzulo, Friston (2022) "Active Inference: The Free Energy Principle in Mind, Brain, and Behavior" — discusses active inference's relationship to other decision cycles but treats OODA only as analogy.
+    4. KL-divergence as cross-tradition metric is a natural fit if both traditions can be expressed as probability distributions over claim-spaces — but this expressibility is itself a non-trivial claim.
+
+  Strength of support: Moderate
+
+  Summary: KL-divergence as a quantitative metric within active inference is canonical (Friston). The cross-discipline transfer (active-inference ↔ OODA ↔ C2A2 tradition-comparison) is supported by analogy but not by formal proof in the literature. Friston-Parr-Pezzulo discuss OODA only as analogy. Support is moderate: the metric itself is well-founded; the homology claim that licenses the cross-discipline transfer is informal. PRESUMPTION-161 (paired) flags this transfer-validity audit gap correctly.
+
+  Caveats: (a) PRESUMPTION-161 — homology audit not performed; PRESUMPTION-002 (Thousand Brains → multi-agent AI) and PRESUMPTION-080 transfer-validity clusters not first audited; (b) "First quantitative" claim is a meta-claim that requires the rest of the registry to support; (c) Expressibility of traditions as probability distributions over claim-spaces is itself a load-bearing assumption.
+
+  Recommendation: PARTIALLY-SUPPORTED — KL-divergence within active inference is well-grounded; the cross-discipline transfer (PRESUMPTION-161) is the load-bearing gap

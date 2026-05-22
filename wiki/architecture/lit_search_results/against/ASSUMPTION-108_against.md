@@ -35,3 +35,36 @@ SEARCH-AGAINST-ASSUMPTION-108:
     Strongest counterargument: The three-recurrence pattern is canonical but does not by itself authorize URGENT-this-week canonization. The Bryar-Carr Amazon practice and Nygard ADR literature both explicitly warn against calendar-paced commitment — quality of deliberation is the load-bearing variable. The substrate-decomposition challenge (PRESUMPTION-134) means the recurrence-counter may be inflated: if PRESUMPTION-121 and PRESUMPTION-125 share Chrome MCP + claude.ai login state substrate, the apparent independent recurrence is a common-cause-failure artifact rather than a substrate-validated trigger. The upstream ASSUMPTION-098 threshold itself remains MONITOR — relying on it before it is INCORPORATEd is circular.
     What would need to be true for C2A2 to be safe: (a) Substrate-decomposition completed; (b) ASSUMPTION-098 INCORPORATEd; (c) week-carrying-capacity consultation with Tom; (d) calendar-pace replaced with implementation-pace.
     How to test: Check whether substrate-decomposition is documented; whether ASSUMPTION-098 status changes from MONITOR to INCORPORATE; whether Tom is consulted about week-carrying-capacity.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-108 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-108
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-108
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from URGENT-this-week canonization trigger
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~8-day gap. Calendar-paced anti-pattern concern stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. Calendar-paced canonization remains under-supported.
+
+  Caveats: Substrate-decomposition (PRESUMPTION-134) status update would resolve faster.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

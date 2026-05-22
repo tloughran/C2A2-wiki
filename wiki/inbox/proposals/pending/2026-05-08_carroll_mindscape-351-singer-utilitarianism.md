@@ -7,7 +7,10 @@ source_title: "Mindscape 351 | Peter Singer on Maximizing Good for All Sentient 
 source_url: https://www.preposterousuniverse.com/podcast/
 source_date: 2026-04-20
 searched_on: 2026-05-08
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-024
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

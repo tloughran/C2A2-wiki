@@ -35,3 +35,36 @@ SEARCH-AGAINST-ASSUMPTION-106:
     Strongest counterargument: The 0/8 pattern is observed but the framing as "confirms" applies a strength of inference that the data does not warrant. By SPC discipline, two consecutive points do not confirm a process pattern; by selection-bias logic, the ASSUMPTION extraction process by 14a is the alternative explanation not ruled out by the observation. By Goodhart logic, observing the pattern is the first step toward optimizing-against-the-pattern, which corrupts the very item-type-epistemic-weight signal the assumption purports to confirm.
     What would need to be true for C2A2 to be safe: (a) Sample size ≥7 cycles; (b) batch-composition normalization disclosed; (c) selection-bias alternative explicitly addressed (e.g., per-item-complexity controls); (d) explicit guard against self-validation feedback loop.
     How to test: Track ASSUMPTION REVISE rate across next ≥5 cycles with batch-composition disclosure; check whether per-item-complexity controls preserve the pattern.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-106 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-106
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-106
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from second-consecutive 0/8 REVISE pattern
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~8-day gap. SPC threshold and selection-bias concerns stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. "Confirms" verb still overstrong at low N.
+
+  Caveats: ≥7-cycle sample remains the threshold.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

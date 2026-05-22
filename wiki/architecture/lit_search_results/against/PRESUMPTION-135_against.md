@@ -35,3 +35,36 @@ SEARCH-AGAINST-PRESUMPTION-135:
     Strongest counterargument: Cluster-absorption without an explicit subsumption rule is documented anti-pattern across SRE (Beyer), ITIL Problem Management, and Nygard's release-engineering literature. The C2A2 case lacks the rule. Default ITIL practice would count morning chat-scrape as an independent recurrence — which would itself meet the three-recurrence canonization threshold for a distinct DECISION. Cluster-absorption is the discretionary move; without rule, the discretion is exercised case-by-case, which corrupts ASSUMPTION-098 governance protocol consistency.
     What would need to be true for C2A2 to be safe: (a) Explicit subsumption rule; (b) substrate-decomposition; (c) parallel-track counters.
     How to test: Audit whether subsumption rule exists in PRESUMPTION-121 cluster definition; check whether morning chat-scrape is counted separately or absorbed; whether the decision is rule-based or discretionary.
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-135 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-135
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: PRESUMPTION-135
+    Item type: PRESUMPTION
+    Transform at each step:
+      14b (cycle 0): Originally surfaced from cluster-absorption-without-rule observation
+      15a (cycle 0): Searched for challenging literature → CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~8-day gap. Cluster-absorption-without-rule remains documented anti-pattern.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior CHALLENGED finding stands. Default per-incident counting still applies absent rule.
+
+  Caveats: Cheapest fix is to write the subsumption rule.
+
+  Recommendation: CHALLENGED (refreshed; carry forward prior recommendation)
+

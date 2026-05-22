@@ -1,0 +1,30 @@
+SEARCH-FOR-ASSUMPTION-173:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-173
+  Original statement: "Future-dated lecture announcements warrant follow-up monitoring-task scheduling rather than past-tense treatment."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-173
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Surfaced from morning curation — forward-looking content scheduling decision
+      15a: Searched for supporting literature
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Allen, D. (2001). "Getting Things Done." — Foundational GTD treatment of "tickler files" and time-deferred follow-up: future-dated commitments belong in a scheduling system, not an action queue.
+    2. ITIL v4 service management literature — change-management and deferred-work patterns: forward-dated events require scheduled review tasks; treating not-yet-happened events as completed is a known error mode.
+    3. Klein, G. & Hoffman, R. (2008). "Macrocognition, mental models, and cognitive task analysis methodology." — Naturalistic decision-making framework: temporal-tense fidelity in records is necessary for accurate situation awareness; past-tense treatment of future events degrades downstream reasoning.
+    4. Provenance / temporal-data literature (Moreau & Missier, W3C PROV-O, 2013) — distinguishes record-time, event-time, observation-time; conflating future-event with past-event records corrupts provenance graphs.
+
+  Strength of support: Moderate
+
+  Summary: GTD, ITIL, and naturalistic-decision-making literatures all support deferred-task scheduling for future-dated commitments. The principle is uncontroversial: a lecture announced for a future date should generate a tickler/monitor task (review actual content when it occurs) rather than a backfill of past-tense notes pretending the lecture happened. Provenance literature adds the temporal-tense-fidelity dimension: corrupt time tagging corrupts downstream queries.
+
+  Caveats: Cost-benefit varies by item significance. For most casual future-dated mentions, the monitor task may be overhead with little payoff. The assumption is generally sound but should be applied selectively rather than as a blanket rule.
+
+  Recommendation: SUPPORTED

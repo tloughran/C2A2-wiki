@@ -40,3 +40,36 @@ SEARCH-AGAINST-PRESUMPTION-039:
     Strongest counterargument: Designer-guessed trigger taxonomies are empirically known to under-cover real user utterances. The invisible failure mode (Tom gives up and starts fresh) is the one the plugin cannot detect or self-correct. A 5-phrase set is a reasonable first pass but not "representative." Assertions of representativeness without corpus grounding are indistinguishable from designer confidence bias.
     What would need to be true for C2A2 to be safe: Either a corpus-grounded expansion of the trigger set, or an instrumented miss-log that enables iteration, or both.
     How to test: Scan prior session starts for resumption utterances; compare against the taxonomy; compute coverage. Log future near-miss utterances.
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-039 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-039
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: PRESUMPTION-039
+    Item type: PRESUMPTION
+    Transform at each step:
+      14b (cycle 0): Originally inferred as designer-guessed trigger taxonomy
+      15a (cycle 0): Searched for challenging literature → CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new challenging literature in the ~5-week gap. Voice-assistant taxonomy-miss literature stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior CHALLENGED finding stands. Silent-miss invisibility remains the central concern.
+
+  Caveats: Instrumented miss-log would update faster than literature search.
+
+  Recommendation: CHALLENGED (refreshed; carry forward prior recommendation)
+

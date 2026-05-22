@@ -1,0 +1,36 @@
+SEARCH-AGAINST-ASSUMPTION-198:
+  Date searched: 2026-05-20
+  Original item: ASSUMPTION-198
+  Original statement: "32 fabricated transcripts to re-fetch before July 8 (transcript-only; commentaries sound)."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-198
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from session: 32 fabricated transcripts identified for re-fetch before July 8; scope asserted as transcript-only, with commentaries judged sound.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Provenance-propagation principle (Buneman et al. 2001; Cheney et al. 2009, "Provenance in Databases"). — Derived artifacts inherit the contamination of their inputs; if commentaries were generated from fabricated transcripts, they are contaminated (garbage-in-garbage-out).
+    2. Maynez et al. (2020); Ji et al. (2023), "Survey of Hallucination in NLG." — Downstream summaries/commentaries built on hallucinated source text carry the hallucination forward, often invisibly.
+
+  Strength of challenge: Moderate-Strong
+
+  Summary: The moderate-strong counter targets the scoping claim 'commentaries sound': if any of the 32 commentaries were derived from the fabricated transcripts, they inherit the fabrication by provenance propagation. Asserting commentaries are sound without checking their derivation lineage is the risk. The challenge is not to the re-fetch (which is right) but to the assumption that contamination is confined to transcripts.
+
+  Specific risks: Contaminated commentaries pass the July-8 gate because they were assumed sound; fabrication propagates into the published corpus.
+
+  Mitigations available: Trace each commentary's provenance to confirm it was NOT derived from a fabricated transcript before declaring it sound; re-verify commentaries linked to the 32; treat commentary-soundness as a check, not an assumption.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: ASSUMPTION-198
+    Strongest counterargument: Derived artifacts inherit their inputs' defects: any commentary generated from one of the 32 fabricated transcripts is contaminated regardless of how sound it reads. 'Transcript-only; commentaries sound' is an assumption about contamination scope that must be verified by lineage, not asserted.
+    What would need to be true for C2A2 to be safe: Safe once each commentary's provenance is traced and shown to be independent of the fabricated transcripts (or re-derived after re-fetch).
+    How to test: For each of the 32, list commentaries derived from it; re-verify those commentaries against the re-fetched transcript before the July-8 gate.

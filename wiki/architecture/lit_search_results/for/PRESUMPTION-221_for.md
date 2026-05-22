@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-221:
+  Date searched: 2026-05-21
+  Original item: PRESUMPTION-221
+  Original statement: "The connectome is the right master-metaphor — neural/Hawkins structure presumed to transfer to narratives without a transfer-condition check."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a]
+    Original item: PRESUMPTION-221
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred: the connectome/neural metaphor (Hawkins) is adopted as the master structuring metaphor for narratives with no explicit transfer-condition check.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E / REVISE-040 noted)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Newman (2010) "Networks"; Barabasi (2016). — Network/graph formalisms are genuinely domain-general; many systems are validly modeled as graphs.
+    2. Gentner structure-mapping (1983). — Analogies are valid when relational structure is shared; gives criteria under which the connectome analogy could transfer.
+    3. Semantic-network / knowledge-graph tradition (Sowa; Quillian). — Narrative/knowledge structures are legitimately representable as networks, supporting a generic network metaphor.
+
+  Strength of support: Moderate
+
+  Summary: A generic network/graph metaphor for narrative/knowledge structures is well supported — graphs are domain-general and semantic networks are an established representation, and structure-mapping gives criteria for valid analogy. Support is partial because this licenses a generic graph, not specifically the brain connectome with its specialized measures.
+
+  Caveats: Support is for 'network', not for 'connectome-specific' measures (rich club, small-worldness, association-fiber semantics), which carry brain-specific assumptions.
+
+  Recommendation: PARTIALLY-SUPPORTED (generic network only)

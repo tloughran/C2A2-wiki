@@ -7,7 +7,10 @@ source_title: "Mindscape 347 — Andrew Guthrie Ferguson on How Your Data Will B
 source_url: https://www.preposterousuniverse.com/podcast/2026/03/16/347-andrew-guthrie-ferguson-on-how-your-data-will-be-used-against-you/
 source_date: 2026-03-16
 searched_on: 2026-05-04
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-002
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-151:
+  Date searched: 2026-05-14
+  Original item: PRESUMPTION-151
+  Original statement: "ISME-critical / not-ISME-critical classification as binary; no graduated criticality scale; no sub-set fallback for the six ISME-critical pathways"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-151
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced via inference from binary critical/not-critical framing of demo set
+      15a: Searched for graded-criticality vs. binary classifications in demo and release planning
+    Current status: SUPPORTED
+
+  Sources:
+    1. MoSCoW prioritization (DSDM 1990s; Clegg & Barker 1994) — Must / Should / Could / Won't is the canonical graduated criticality scale for release planning; binary is widely considered impoverished.
+    2. Cohn (2005) "Agile Estimating and Planning" — graduated story-priority is endorsed over binary classification.
+    3. Bryar & Carr (2021) — Amazon's MVP framing explicitly distinguishes minimum-viable from full-feature; graduated criticality.
+    4. Indivisible-demo / single-package framing is a known brittleness pattern (Beck 1999 "XP" — bundled releases vs. incremental).
+
+  Strength of support: Strong
+
+  Summary: Graduated criticality (MoSCoW) is the canonical pattern for release planning. Binary critical/not-critical classifications are widely recognized as impoverished — they conflate "needed for demo" with "needed for full release," and they offer no fallback sub-set under timeline compression. The presumption correctly identifies a real anti-pattern. Strong support for the inference.
+
+  Caveats: (a) Binary classification may be appropriate when N is very small (e.g., 6) and the demo is genuinely indivisible; (b) The "fallback sub-set" question is a real load-bearing concern under timeline risk; (c) Graduated criticality has its own overhead — too-many-levels can be paralysis.
+
+  Recommendation: SUPPORTED — binary classification is a recognized anti-pattern in release planning; the presumption identifies a real risk

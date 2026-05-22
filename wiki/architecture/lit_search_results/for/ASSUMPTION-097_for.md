@@ -29,3 +29,35 @@ SEARCH-FOR-ASSUMPTION-097:
   Caveats: (a) Bundling only outperforms atomic tracks when substrate-coupling is verified; PRESUMPTION-117 captures the verification gap; (b) sprint-bundle scope creep is a documented failure mode — clear scope boundary is required; (c) bundling distinct surfaces (registration ≠ canonization in some codifications) can dilute focus and slow each.
 
   Recommendation: SUPPORTED (with caveat that substrate-coupling verification per PRESUMPTION-117 is the precondition for bundling rather than parallel atomic tracks)
+
+---
+
+SEARCH-FOR-ASSUMPTION-097 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-097
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-097
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from recurrence-cluster observation
+      15a (cycle 0): Searched for supporting literature → SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~9-day gap on bundled-discipline-debt remediation.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior SUPPORTED finding stands. Bundling pattern remains canonical for substrate-coupled discipline clusters.
+
+  Caveats: Implementation-substrate verification still the precondition.
+
+  Recommendation: SUPPORTED (refreshed; carry forward prior recommendation)

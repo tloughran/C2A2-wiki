@@ -1,0 +1,28 @@
+SEARCH-FOR-ASSUMPTION-168:
+  Date searched: 2026-05-18
+  Original item: ASSUMPTION-168
+  Original statement: "DECISION-032/033/034 canonization in second-day carry-forward; all three PREMISE-backed; described as '~10-minute desk action that closes three architectural commitments.'"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-168
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. C2A2-internal PREMISE-016/017/018 — validated premises exist (2026-05-15 cycle).
+    2. Decision-archiving practice (general engineering): ADR (Architecture Decision Record) literature treats canonization as low-cost once rationale is settled.
+
+  Strength of support: Weak-Moderate
+
+  Summary: Once premises are validated, formalizing the decision they back is typically low-cost — the heavy lifting is the rationale, not the documentation. The '10-minute desk action' framing is plausible if rationale is genuinely settled.
+
+  Caveats: PRESUMPTION-191 explicitly challenges both (a) PREMISE-backing-as-readiness and (b) Tom's-endorsement-as-bottleneck.
+
+  Recommendation: PARTIALLY-SUPPORTED

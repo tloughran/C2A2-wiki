@@ -1,0 +1,36 @@
+SEARCH-AGAINST-ASSUMPTION-181:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-181
+  Original statement: "Connectivity row 2026-05-18 = (1104, 2, 17, 1123); +338 orphan jump vs 2026-05-10 attributed entirely to in-scope lit_search_results/ corpus (754 auto-generated files); exclusion-list update recommended."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-181
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Surfaced from connectivity-tracker weekly row inspection
+      15a: Searched for supporting literature
+      15b: Searched for challenging evidence
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Partial
+
+  Sources:
+    1. Newman, M.E.J., 2010. "Networks: An Introduction." Oxford UP, ch. 7 — orphan/leaf counts in heterogeneous graphs can shift for many reasons simultaneously (deletion, re-tagging, rename); attributing "entirely" to one cohort without a controlled diff is unsafe.
+    2. Leskovec, J. et al., 2008. "Statistical properties of community structure in large social and information networks." WWW — small structural perturbations (renames, broken wikilinks) can produce orphan-count jumps disproportionate to actual content changes.
+    3. Ehrlinger, L. & Wöß, W., 2016. "Towards a Definition of Knowledge Graphs." SEMANTiCS — argues that excluding auto-generated content from connectivity metrics can mask real degradation in the authored layer if exclusion is overbroad.
+
+  Strength of challenge: Weak-to-Moderate
+
+  Specific risks:
+    - "Attributed entirely" overstates: some of the +338 may come from authored notes that lost links between 05-10 and 05-18 (broken wikilinks from renames, etc.).
+    - Exclusion-list updates can become a habit that hides real orphan-creation in the authored corpus; a stratified two-metric view (with-derivative, authored-only) is safer than exclusion alone.
+    - Default-include traversal has the benefit of being conservative; aggressively excluding cohorts risks invisible drift.
+
+  Mitigations available:
+    - Report both metrics (raw + excluded) in the weekly row.
+    - Run a one-time controlled diff: delete derivative cohort from copy, recompute, compare to claimed +338.
+    - Add a rename-tracking sub-metric so wikilink breakage from renames doesn't masquerade as orphan-creation.
+
+  Recommendation: PARTIALLY-CHALLENGED

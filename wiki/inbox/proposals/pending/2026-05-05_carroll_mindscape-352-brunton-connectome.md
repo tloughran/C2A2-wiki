@@ -7,7 +7,10 @@ source_title: "352 | Bing Brunton on Connecting the Connectome to the Body — S
 source_url: https://www.preposterousuniverse.com/podcast/2026/04/27/352-bing-brunton-on-connecting-the-connectome-to-the-body/
 source_date: 2026-04-27
 searched_on: 2026-05-05
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-008
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

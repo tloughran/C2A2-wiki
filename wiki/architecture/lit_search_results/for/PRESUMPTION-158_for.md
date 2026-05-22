@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-158:
+  Date searched: 2026-05-14
+  Original item: PRESUMPTION-158
+  Original statement: "'Low × High is strongest research-program candidate' is a normative claim operationalized as UI emphasis; alternative quadrant readings not audited"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-158
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced via inference from ASSUMPTION-125 UI-emphasis claim without quadrant-comparison audit
+      15a: Searched for quadrant-emphasis training-effects in dashboard UI
+    Current status: SUPPORTED
+
+  Sources:
+    1. Tversky & Kahneman (1974) framing effects — UI emphasis primes attention; the emphasis is a normative operationalization.
+    2. Few (2009) "Now You See It" — dashboard emphasis is a normative design choice that shapes user attention and decision; should be justified.
+    3. Innovation studies on quadrant analysis (Christensen 1997; McGrath 2014) — Low × High is one of several quadrant readings; emphasis should be empirically warranted.
+    4. C2A2-internal: Sociogram structural-importance × frequency precedent — quadrant emphasis exists there too.
+
+  Strength of support: Moderate
+
+  Summary: UI emphasis is a recognized framing device that shapes attention. Operationalizing a normative claim ("Low × High = strongest research-program candidate") as UI emphasis without empirical justification is a recognized framing-effect concern. The presumption correctly flags this as a load-bearing design choice. Support is moderate — the inference is correct, but UI emphasis is sometimes a legitimate-and-acceptable normative choice.
+
+  Caveats: (a) UI emphasis is unavoidable — every dashboard makes some choice; (b) The presumption's concern is about the choice being un-audited, not about it being wrong; (c) Empirical validation against actual research programs would resolve the concern.
+
+  Recommendation: SUPPORTED — UI-emphasis-as-normative-operationalization is a recognized concern; inference is correct

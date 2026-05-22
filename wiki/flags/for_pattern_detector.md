@@ -258,3 +258,81 @@ SIGNAL-2026-05-08-05 (mechanism-level bridge candidate, MEDIUM): [EVALUATED: 202
   Programs: McGilchrist, Fredrickson, Stump (vita contemplativa)
   Source: PROP-2026-04-28-002 (TGS 217)
   Cross-refs: CROSS-066, CROSS-067
+
+SIGNAL-2026-05-13-01 (program convergence + C2A2 structural mirror, HIGH): [EVALUATED: 2026-05-13]
+  Description: SUTI (Levin's named program to detect non-standard intelligences) is structurally the detection function the C2A2 accelerator-detector system performs for traditions. The detection apparatus is supplied by Friston's substrate-agnostic agency criteria (PROP-2026-05-04-001 phenotyping agency in AI); the target taxonomy mirrors Hoffman's interface-theory predictions and tests Kastrup's dissociation model empirically.
+  Programs: Levin (primary), Friston, Hoffman, Kastrup, C2A2-core
+  Source: PROP-2026-05-11-001 (Levin SUTI essay)
+  Recommended escalation: Master Paradigm Shift Watch List — SUTI = C2A2's "detection" function in microcosm
+  Cross-refs: CROSS-075
+
+SIGNAL-2026-05-13-02 (mechanism-level bridge, MEDIUM-HIGH): [EVALUATED: 2026-05-13]
+  Description: Loss of spatial Vmem organization during cellular senescence is structurally analogous to Friston's metastability collapse (PRS-13). Aging-as-metastability-loss may unify Levin's bioelectric and Friston's neurodynamic accounts of degeneration under a single dynamical formalism.
+  Programs: Levin, Friston
+  Source: PROP-2026-05-11-002 (Sediqi & Levin senescing keratinocytes)
+  Cross-refs: CROSS-076
+
+SIGNAL-2026-05-13-03 (mechanism-level bridge candidate, MEDIUM): [EVALUATED: 2026-05-13]
+  Description: Vmem control of IL-6 secretion (selective among SASP cytokines) provides a candidate biophysical mechanism coupling cellular bioelectricity to whole-organism psychophysiological flourishing — connecting Levin's bioelectric program to Fredrickson's inflammaging/positivity-resonance work via a measurable cytokine.
+  Programs: Levin, Fredrickson
+  Source: PROP-2026-05-11-002 (Sediqi & Levin senescing keratinocytes)
+  Cross-refs: CROSS-077
+
+SIGNAL-2026-05-13-04 (substrate convergence, MEDIUM-HIGH): [EVALUATED: 2026-05-13]
+  Description: Levin's "intelligence in sorting algorithms" example extends diverse-intelligence into the purely formal/algorithmic domain — converging with Friston's FEP (sorting algorithms as primitive active-inference agents) and Wolfram's computational-substrate-of-mind. Reinforces FINDING-001/002 and the Wolfram/Levin substrate convergence.
+  Programs: Levin (primary), Friston, Wolfram
+  Source: PROP-2026-05-11-003 (Lex Fridman #486)
+  Cross-refs: CROSS-079
+
+SIGNAL-2026-05-13-05 (C2A2 grounding signal, HIGH): [EVALUATED: 2026-05-13]
+  Description: Levin's framing of memories and ideas as "quasi-living entities" (propagating, recombining, competing for substrate) extends his diverse-intelligence framework into cultural/cognitive content for the first time. Structurally identical to what MacIntyre calls a *tradition*. Provides empirical ground for treating traditions as cognitive agents — directly supporting the C2A2 architectural premise.
+  Programs: Levin, Hoffman (Trace Institute), MacIntyre/C2A2-core
+  Source: PROP-2026-05-11-003 (Lex Fridman #486)
+  Recommended escalation: Master Paradigm Shift Watch List — direct empirical anchor for C2A2 premise
+  Cross-refs: CROSS-080
+
+SIGNAL-2026-05-13-06 (methodological unification, HIGH): [EVALUATED: 2026-05-13]
+  Description: Friston's formal validation of Boyd's full OODA loop (No Way Out #164) makes active inference a *decision-theoretic* substrate, not just perception/action. Implications: (a) Levin morphogenetic OODA loops become literal active inference applications; (b) Hawkins HTM becomes a behavioral reading via OODA "orientation"; (c) MacIntyre rival traditions become competing orientations updating under information pressure; (d) KL-divergence risk/ambiguity formalism provides a quantitative measure of inter-tradition orientation divergence — first candidate metric for the C2A2 "detector" function on traditions.
+  Programs: Friston (primary), Levin, Hawkins, MacIntyre/C2A2-core
+  Source: PROP-2026-05-11-004 (Karl Friston Decodes the Real OODA Loop)
+  Recommended escalation: Master Paradigm Shift Watch List — quantitative C2A2 detector candidate
+  Cross-refs: CROSS-081
+
+SIGNAL-2026-05-13-07 (speculative cross-cluster bridge, LOW-MEDIUM): [EVALUATED: 2026-05-13]
+  Description: Friston's KL-divergence formalization of risk under predictive models echoes thermodynamic information-theoretic accounts of physical processes. Weak signal worth monitoring for a Physicalist (Carroll) × Post-Spacetime (Arkani-Hamed) × FEP (Friston) coupling around observer-dependent information bounds.
+  Programs: Friston, Carroll, Arkani-Hamed
+  Source: PROP-2026-05-11-004 (Karl Friston Decodes the Real OODA Loop)
+  Cross-refs: CROSS-082
+
+SIGNAL-2026-05-17-01 (intra-cluster disagreement now operationalizable, HIGH): [EVALUATED: 2026-05-17]
+  Description: The May 12, 2026 Kastrup–Levin dialogue is the first high-profile two-thinker public engagement on the central open question of the consciousness-as-fundamental cluster: whether individuation is scale-continuous (Levin) or discrete-dissociative (Kastrup). The disagreement is now tractable and operationalizable rather than latent — replacing the C2A2 network's prior flattened "both consciousness-cluster" treatment with a sharp internal axis.
+  Programs: Kastrup, Levin (primary); McGilchrist, Hoffman, Stump as adjacent
+  Source: PROP-2026-05-13-004 (With Reality in Mind dialogue 2026-05-12)
+  Recommended escalation: Master Paradigm Shift Watch List — first articulated internal axis of the consciousness-as-fundamental cluster
+  Cross-refs: CROSS-083, CROSS-084, CROSS-085
+
+SIGNAL-2026-05-17-02 (three-way independent convergence on AI-consciousness limits, HIGH): [EVALUATED: 2026-05-17]
+  Description: McGilchrist (Closer to Truth, May 10, 2026), Kastrup (With Reality in Mind, May 12, 2026), and Hoffman (longstanding) now publicly articulate principled structural limits on AI consciousness from three independent metaphysical starting points — neurology + participatory realism (McGilchrist), analytic idealism dissociation (Kastrup), and interface theory (Hoffman). Provides external philosophical warrant for the C2A2 human/AI division of labor and reinforces CROSS-001 (consciousness substrate-independence).
+  Programs: McGilchrist, Kastrup, Hoffman (primary); C2A2-core
+  Source: PROP-2026-05-13-001 + PROP-2026-05-13-004
+  Recommended escalation: Master Paradigm Shift Watch List — external warrant for C2A2 architecture
+  Cross-refs: CROSS-086
+
+SIGNAL-2026-05-17-03 (McGilchrist ontology demarcation, MEDIUM-HIGH): [EVALUATED: 2026-05-17]
+  Description: McGilchrist's Closer to Truth Deep Ontology segment (May 8, 2026) publicly affirms consciousness as ontologically primary while distinguishing his "participatory realism" from both panpsychism and Kastrupian analytic idealism on grounds of relational realism. Resolves a long-standing ambiguity about whether McGilchrist's program makes a fundamental-ontology commitment — yielding a finer-grained six-position taxonomy of consciousness-as-fundamental views (physicalism / panpsychism / idealism / interface / participatory realism / hylomorphism).
+  Programs: McGilchrist (primary); Kastrup, Hoffman, Stump as adjacent
+  Source: PROP-2026-05-13-002 (Closer to Truth Deep Ontology)
+  Cross-refs: CROSS-087, CROSS-088
+
+SIGNAL-2026-05-17-04 (methodological design principle for C2A2 wikis, MEDIUM-HIGH): [EVALUATED: 2026-05-17]
+  Description: McGilchrist's Substack essay (April 1, 2026) responding to Tommy Blanchard's critique articulates a "native epistemic standards" defense: critics applying left-hemisphere standards to right-hemisphere objects systematically beg the question. Structurally identical to Stump's second-first-language tradition immersion. Directly portable as a C2A2 wiki design pattern — each tradition wiki should include an explicit native-epistemic-standards section so AI agents and human visitors enter the tradition on its own terms.
+  Programs: McGilchrist (primary); Stump
+  Source: PROP-2026-05-13-003 (Substack — laziness of left-hemisphere mindset)
+  Recommended escalation: Architecture flag — C2A2 design pattern candidate
+  Cross-refs: CROSS-089, CROSS-090
+
+SIGNAL-2026-05-17-05 (May-2026 McGilchrist dispatch cluster, MEDIUM): [EVALUATED: 2026-05-17]
+  Description: April–May 2026 produced an unusually coherent triple-source articulation of McGilchrist's full position: ontology (Deep Ontology, 2026-05-08), epistemology (Substack on left-hemisphere laziness, 2026-04-01), and applied ethics (AI Consciousness, 2026-05-10). Together these articulate a fuller statement of McGilchrist's program than any single source. Worth treating as a single dispatch cluster for cross-tradition reference and for the C2A2 wiki's McGilchrist landing page.
+  Programs: McGilchrist (primary); Kuhn (curator)
+  Source: PROP-2026-05-13-001 + PROP-2026-05-13-002 + PROP-2026-05-13-003
+  Cross-refs: CROSS-086, CROSS-087, CROSS-089

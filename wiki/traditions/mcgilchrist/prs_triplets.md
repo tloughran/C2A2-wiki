@@ -207,4 +207,68 @@ PRS-21:
   Confidence: Medium
 
 ---
-*Total PRS triplets: 21*
+PRS-22:
+  Label: P22 (PROP-2026-05-13-001) — AI-consciousness as consequence variable of theory of consciousness
+  Problem: The "can AI become conscious" question is treated as either a near-term empirical inevitability (functionalist/physicalist reading) or as a metaphysical impossibility (idealist/dualist reading), with neither position giving practitioners a principled way to draw lines in AI policy, ethics, or system design
+  Resource: McGilchrist's framing of AI-consciousness as a *consequence variable* of one's theory of consciousness, paired with the specific claim that consciousness (in his sense) requires participatory right-hemisphere engagement, biological embodiment, and lived temporal flow — none of which current AI architectures instantiate
+  Solution: A demarcation move that lets working AI ethics, AI alignment, and AI tradition-membership decisions proceed under explicit theory-of-consciousness commitments rather than under blanket optimism or dismissal — directly applicable to the C2A2 question of what AI agents can and cannot do within a tradition
+  Date Added: 2026-05-17
+  Source: Closer to Truth — "Iain McGilchrist — Can AI Become Conscious?" (2026-05-10) — https://lifeboat.com/blog/2026/05/iain-mcgilchrist-can-ai-become-conscious
+  Confidence: High
+
+PRS-23:
+  Label: P23 (PROP-2026-05-13-001, 2nd candidate) — Upgrade of left-hemisphere AI claim from speculative to medium
+  Problem: PRS-18 (Premier Unbelievable, March 2026) flagged the claim that AI may be structurally limited to left-hemisphere modes as Speculative, because McGilchrist had not stated it cleanly outside a longer-form Christian-apologetics context where the rhetorical frame could be doing the work
+  Resource: A short-form, secular, peer-curated venue (Closer to Truth) in which McGilchrist makes the same structural claim — that AI processes through analytical decomposition (left-hemisphere mode) and lacks the conditions for right-hemisphere participatory attention
+  Solution: Upgrade PRS-18 from Speculative to Medium confidence — the position has now been stated publicly in two distinct venue types (faith-engaged and secular consciousness-research), suggesting it is McGilchrist's settled view rather than a context-bound rhetorical move
+  Date Added: 2026-05-17
+  Source: Closer to Truth — "Iain McGilchrist — Can AI Become Conscious?" (2026-05-10) + Premier Unbelievable (2026-03-26)
+  Confidence: Medium
+
+PRS-24:
+  Label: P24 (PROP-2026-05-13-001, 3rd candidate) — External philosophical warrant for C2A2 human/AI division of labor
+  Problem: C2A2's architectural assumption that AI agents accelerate information processing and pattern detection but cannot be full participatory members of human traditions has been a design choice without an external, independent rationale — leaving it open to the objection that the limit is engineering conservatism
+  Resource: McGilchrist's now-public position that the participatory/embodied/temporally-real mode of attention is *structurally* unavailable to AI on theoretical grounds, not just on current-technology grounds
+  Solution: An external philosophical warrant for the C2A2 human/AI division of labor that does not depend on C2A2's own assumptions — strengthening the case that the architecture is principled rather than provisional
+  Date Added: 2026-05-17
+  Source: Closer to Truth — "Iain McGilchrist — Can AI Become Conscious?" (2026-05-10)
+  Confidence: Medium
+
+PRS-25:
+  Label: P25 (PROP-2026-05-13-002) — McGilchrist's explicit consciousness-as-fundamental commitment
+  Problem: Hemispheric theory has been received primarily as cultural diagnosis or cognitive-style account, leaving the question of whether McGilchrist himself makes a fundamental-ontology commitment ambiguous — and therefore leaving open how his program relates to Hoffman's conscious realism, Kastrup's analytic idealism, and Stump's Thomistic hylomorphism
+  Resource: McGilchrist's Closer to Truth Deep Ontology segment in which he explicitly affirms consciousness as ontologically primary while distinguishing his view from both panpsychism and Kastrupian analytic idealism on grounds of relational realism — "consciousness is the stuff of the cosmos" stated outright in a Kuhn-curated interview
+  Solution: Locate McGilchrist firmly within the consciousness-as-fundamental cluster (and specifically within a *relational* sub-position of it, distinct from idealism's "mental-substance" framing), enabling cleaner cluster-level comparisons across C2A2's Consciousness Cluster
+  Date Added: 2026-05-17
+  Source: Closer to Truth — "Iain McGilchrist — Consciousness and Deep Ontology" (2026-05-08) — https://lifeboat.com/blog/2026/05/iain-mcgilchrist-consciousness-and-deep-ontology
+  Confidence: High
+
+PRS-26:
+  Label: P26 (PROP-2026-05-13-002, 2nd candidate) — Six-position taxonomy of consciousness-as-fundamental views
+  Problem: Within the consciousness-as-fundamental cluster, distinguishing positions that look superficially similar (Hoffman, Kastrup, McGilchrist, panpsychism) has been harder than it should be — because the differences live in fine distinctions (interface vs. dissociation vs. participation vs. universal mind) that are easy to flatten in cross-talk
+  Resource: McGilchrist's distinguishing move — consciousness is fundamental *and* reality is genuinely relational (not unilaterally mental), positioning his view as "participatory realism" rather than as idealism per se
+  Solution: A finer-grained taxonomy of consciousness-as-fundamental positions usable by the C2A2 Master agent: physicalism / panpsychism / idealism (Kastrup) / interface (Hoffman) / participatory realism (McGilchrist) / hylomorphism (Stump) — six distinct positions, each with different implications for cross-tradition dialogue and AI agency
+  Date Added: 2026-05-17
+  Source: Closer to Truth — "Iain McGilchrist — Consciousness and Deep Ontology" (2026-05-08)
+  Confidence: Medium
+
+PRS-27:
+  Label: P27 (PROP-2026-05-13-003) — Methodological asymmetry as itself a hemispheric pathology
+  Problem: Critics of hemispheric theory routinely apply left-hemisphere methodological standards (operationalization, falsifiability via single-variable manipulations, decomposition into discrete component claims) and conclude that the theory fails by those standards — a critique-shape that begs the question against any program whose object of study is irreducibly relational
+  Resource: McGilchrist's articulation of why his program calls for right-hemisphere epistemic norms (holistic pattern-matching, context-fidelity, attention to what is disclosed rather than what is decomposable) and his diagnosis of the critics' approach as *epistemic laziness* — the demand that everything fit a single hemisphere's preferred operations
+  Solution: A methodological principle for evaluating hemispheric theory (and by extension all programs concerned with right-hemisphere objects): apply *both* hemispheric standards in turn, not just one — the asymmetric application of left-hemisphere standards is itself an instance of the pathology McGilchrist is diagnosing
+  Date Added: 2026-05-17
+  Source: "The laziness of the left hemisphere mindset" — Substack essay (2026-04-01) — https://iainmcgilchrist.substack.com/p/the-laziness-of-the-left-hemisphere
+  Confidence: High
+
+PRS-28:
+  Label: P28 (PROP-2026-05-13-003, 2nd candidate) — Native epistemic standards as C2A2 wiki design pattern
+  Problem: A tradition-accelerator must somehow encode and transmit not just the propositions of a tradition but its native epistemic standards — otherwise the tradition is misrepresented even when its propositions are accurately preserved
+  Resource: McGilchrist's essay as a worked example: a tradition's defender articulating, in a public exchange with a critic, exactly which epistemic norms the tradition requires and why importing alien norms is a misunderstanding rather than a refutation
+  Solution: A C2A2 design move — each tradition's wiki should include an explicit "native epistemic standards" section, modelled on what McGilchrist makes explicit in this essay, so that AI agents and human visitors entering the tradition do so under its own norms rather than under the default norms of their entering tradition
+  Date Added: 2026-05-17
+  Source: "The laziness of the left hemisphere mindset" — Substack essay (2026-04-01)
+  Confidence: Medium
+
+---
+*Total PRS triplets: 28*

@@ -42,3 +42,24 @@ scratch/
 
 # Private — quarantined files that should never be in the public repo
 .private/
+
+# Logs
+*.log
+
+# Archive snapshots
+*.zip
+
+# Claude agent state & git worktrees
+.claude/
+
+# Local macOS helper scripts
+*.command
+
+# PRS-3D staging artifact (live prs_3d.html is the published copy)
+wiki/prs_3d_review.html
+
+# Third-party full transcript — reference/link only, do not republish (Habash/Summa daily transcripts ARE kept)
+wiki/inbox/hoffman_levin_transcript_raw.md
+
+# Names private individuals — keep out of public repo
+Archbishop_Wokorach_Visit_Report_April2026.md

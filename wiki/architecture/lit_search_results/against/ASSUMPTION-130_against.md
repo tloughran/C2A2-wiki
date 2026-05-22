@@ -1,0 +1,38 @@
+SEARCH-AGAINST-ASSUMPTION-130:
+  Date searched: 2026-05-14
+  Original item: ASSUMPTION-130
+  Original statement: "Honesty layer (Pathway 14) is first-class architectural commitment — visible epistemic-status marks on every claim, not buried footers"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-130
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Pathway 14 design
+      15b: Searched for counter-evidence on universal-marking producing over-saturation invisibility
+    Current status: PARTIALLY-CHALLENGED
+
+  Sources:
+    1. Cvach (2012) "Monitor alarm fatigue" — universal saliency produces saturation; selectively emphasized signals retain salience.
+    2. Joint Commission alarm-management standards (2013+) — graduated marking endorsed over universal marking.
+    3. Wickens (2002) attention research — selective attention has bandwidth limits; over-marking exceeds bandwidth.
+    4. Tufte (1990, 2003) — "chartjunk" and visual saturation reduce signal.
+    5. PRESUMPTION-163 paired — over-saturation invisibility not audited.
+    6. "First-class" may be confused with "uniformly emphasized" — these are distinct.
+
+  Strength of challenge: Moderate
+
+  Summary: Universal first-class marking on every claim risks over-saturation invisibility. Alarm-fatigue research is canonical: when everything is flagged, nothing is. The presumption-paired concern is that the design's intent (first-class commitment) is correct but the implementation (every claim marked uniformly) is the failure mode. Graduated marking — high-confidence claims unmarked, low-confidence claims emphasized — captures the intent with better attention economics. Moderate challenge.
+
+  Specific risks: (a) Over-saturation invisibility; (b) Visual clutter undermining content; (c) Compliance ≠ effectiveness; (d) "First-class" semantics ambiguous.
+
+  Mitigations available: (a) Graduated marking by confidence; (b) Default-unmarked for high-confidence claims, mark only the deviations; (c) Density-aware UI; (d) Distinguish "first-class commitment" from "uniformly emphasized."
+
+  Recommendation: PARTIALLY-CHALLENGED (Moderate) — commitment is sound; implementation must be graduated
+
+  STEELMAN:
+    Item: ASSUMPTION-130
+    Strongest counterargument: "Visible epistemic-status marks on every claim" sounds like first-class commitment but, implemented uniformly, becomes saturation-invisibility — the alarm-fatigue failure mode that safety engineering has spent decades learning to avoid. The right implementation is graduated: high-confidence claims unmarked (the unmarked state means "this carries the system's default confidence"), and only deviations are marked. This is first-class commitment to honesty AND attention-economy. "Every claim" framing is the load-bearing risk.
+    What would need to be true for C2A2 to be safe: (a) Graduated marking design; (b) Default-confidence baseline established; (c) Marking density audited.
+    How to test: Show users sample output with universal-marking and graduated-marking; measure attention to and action on flagged claims.

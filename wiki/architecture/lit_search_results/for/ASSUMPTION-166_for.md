@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-166:
+  Date searched: 2026-05-18
+  Original item: ASSUMPTION-166
+  Original statement: "c2a2-lit-search-pipeline 2026-05-16 ran on cadence + produced documented null run + refused to drain 57-item RE-TRIGGER cohort + surfaced upstream gap; Pathway-14 honesty-layer success on permissive criterion."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-166
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Beyer et al. (2016) SRE Book — null-result reporting is canonical operational discipline; honest no-op is treated as success.
+    2. Honesty-in-self-report literature (academic-integrity tradition: see National Academies report on Research Integrity, 2017) — accurate classification of no-action-taken is a positive epistemic property.
+    3. C2A2-internal: PREMISE-019 (Pathway-14 honesty layer) is the framework being applied.
+
+  Strength of support: Moderate
+
+  Summary: The null-run discipline (run on cadence, find no work, report that) is canonical good-practice. The boundary discipline (refused to drain cross-cohort items) is consistent with separation-of-concerns discipline. The 'Pathway-14 honesty success' claim is plausible on a permissive criterion.
+
+  Caveats: PRESUMPTION-195 explicitly challenges the criterion choice (permissive vs. active). The claim works only if 'didn't pretend' is the right success-criterion; that itself is contested.
+
+  Recommendation: PARTIALLY-SUPPORTED

@@ -38,3 +38,38 @@ SEARCH-AGAINST-ASSUMPTION-065:
     Strongest counterargument: The amplituhedron and Mad-Dog-Everettian programs share rhetorical commitments (spacetime is doomed; emergence is real) but differ at the technical layer (positive-geometric scattering reformulation vs. decoherence-based branching). Treating them as the same paradigm shift is an LLM-pattern-matching success at the surface and a category error at the substance. The "most significant 2026 signal" framing is itself unsupported by any external ranking; without that ranking, the assumption loses its operational bite (which downstream syntheses to prioritize).
     What would need to be true for C2A2 to be safe: (a) Specialist-agent claims about convergence are checked against actual technical-content comparisons; (b) "most significant" rankings are flagged as synthesizer judgments rather than literature consensus.
     How to test: Read three pages from a recent Arkani-Hamed amplituhedron paper and three pages from a recent Carroll emergent-spacetime paper; identify the technical primitive each is using. If they don't share a common primitive, "convergence" is a surface analogy.
+
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-065 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-17
+  Original item: ASSUMPTION-065
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a→15a,15b→15c→15d→15a,15b→15c]
+    Original item: ASSUMPTION-065
+    Item type: ASSUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-05): re-triggered on weekly cadence; next_check 2026-05-12 elapsed
+      15b (cycle 1, 2026-05-17): re-searched for challenging literature
+    Current status: refresh; no new challenging literature surfaced this cycle.
+
+  Run context: Daily-pipeline drain of 15d-owned cohort (see SYSTEMIC-RISK-FLAG in lit_search_returns.md 2026-05-17 RUN section). 15d schedule failure since 2026-05-05.
+
+  New evidence weighed: No new challenging literature has surfaced in the past week+. The prior cycles' challenge profile stands.
+
+  Sources (new / refreshed): No new sources this cycle.
+
+  Strength of challenge: Unchanged from prior cycle.
+
+  Summary: Cycle-1 refresh confirms the prior cycle's finding. The challenging literature base has not materially shifted; no new disconfirmatory sources surfaced during this automated cycle.
+
+  Specific risks: Unchanged from prior cycle.
+
+  Mitigations available: Unchanged from prior cycle.
+
+  Recommendation: refreshed; carry forward prior recommendation

@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-130:
+  Date searched: 2026-05-14
+  Original item: ASSUMPTION-130
+  Original statement: "Honesty layer (Pathway 14) is first-class architectural commitment — visible epistemic-status marks on every claim, not buried footers"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-130
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Pathway 14 honesty-layer design pass
+      15a: Searched for epistemic-marking visibility patterns in scientific publishing and AI-output UI
+    Current status: SUPPORTED
+
+  Sources:
+    1. IPCC / scientific-uncertainty-marking standards (IPCC 2010 AR5+ uncertainty guidance) — confidence/likelihood markers are first-class in canonical scientific reporting; the practice is endorsed.
+    2. Anthropic / OpenAI model-card practices (2023-2025) — surfacing uncertainty and limitations as first-class is the dominant pattern in responsible AI output design.
+    3. Tufte (1990, 2006) "Visual Display..." — visibility of provenance and uncertainty is a design virtue; "small multiples" and explicit uncertainty bands are first-class data-graphics conventions.
+    4. Floridi (2013) and Nguyen (2020) on epistemic transparency — visible epistemic status is a load-bearing component of epistemic responsibility.
+    5. C2A2-internal: parallel pattern with PROVENANCE header protocol (provenance_protocol.md) — already-validated first-class commitment pattern.
+
+  Strength of support: Strong
+
+  Summary: First-class visible epistemic-status marking is well-supported across scientific-uncertainty literature, responsible-AI practice, data visualization, and epistemic transparency philosophy. The "not buried footers" framing aligns with IPCC and model-card conventions. Strong support for the commitment-class designation. PRESUMPTION-163 (paired) raises the legitimate operational concern that universal marking can produce over-saturation invisibility — this is a known failure mode that the design must address.
+
+  Caveats: (a) PRESUMPTION-163 — universal marking risks over-saturation invisibility / warning-blindness; (b) "First-class" requires sustained design discipline — not just an architectural commitment statement; (c) Tradeoff: density of marking vs. visual clutter; (d) Compliance does not equal effectiveness — marks must be read and acted on.
+
+  Recommendation: SUPPORTED — commitment is well-supported by canonical practice; PRESUMPTION-163 over-saturation audit is the load-bearing implementation concern

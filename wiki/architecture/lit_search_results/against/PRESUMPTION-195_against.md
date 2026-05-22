@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-195:
+  Date searched: 2026-05-18
+  Original item: PRESUMPTION-195
+  Original statement: "'Honesty-layer behavior here is good' assertion about lit-search null-run uses permissive criterion (didn't pretend) where Pathway-14 might demand active criterion (escalate cause); criterion-creep with load-bearing term."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-195
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15b: Searched for challenging literature
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Hollnagel (2014) Safety-II — absence of dishonesty is not presence of honesty.
+    2. Miceli & Near (1992) whistleblower literature — passive non-misrepresentation falls short of active disclosure standards.
+    3. Translucency Corollary (Institute for PR 2010s) — transparency vs. full disclosure distinction; load-bearing-term usage requires explicit criterion.
+    4. C2A2-internal: SELF-MEASUREMENT cluster shows that criterion-creep on load-bearing terms is recurrent.
+
+  Strength of challenge: Moderate
+
+  Summary: Using 'Pathway-14 success' on a permissive criterion when the framework canonically invokes an active one is documented criterion-creep. The pattern is small in this instance; the meta-pattern across the SELF-MEASUREMENT cluster is the larger concern.
+
+  Specific risks: (a) Load-bearing-term criterion-creep; (b) Pathway-14 invocation strengthens or weakens depending on criterion; ambiguity in usage harms framework integrity.
+
+  Mitigations available: (a) Specify criterion when invoking Pathway-14; (b) cluster-level: load-bearing-term criterion-precision protocol.
+
+  Recommendation: CHALLENGED
+
+  STEELMAN:
+    Item: PRESUMPTION-195
+    Strongest counterargument: The strongest case: 'Pathway-14 success' is the load-bearing term. Calling something a success on a permissive criterion when the framework standard is active is exactly the criterion-creep pattern — small individually, systemic across the cluster.
+

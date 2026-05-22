@@ -37,3 +37,36 @@ SEARCH-AGAINST-ASSUMPTION-098:
     Strongest counterargument: Three-recurrence is canonical as a NECESSARY trigger for promotion but is documented as INSUFFICIENT without substrate articulation, remediation-feasibility analysis, and cadence-governed timing. The "this week" framing imports calendar pressure that the ADR literature explicitly cautions against. The unresolved PRESUMPTION-106 (canonization criterion not self-evident) means the canonization mechanism itself is not articulated — canonizing under an unarticulated criterion is the failure mode that PRESUMPTION-106 was REVISE'd for. Canonization without paired implementation commitment is documentation-as-fix (PRESUMPTION-122 failure mode).
     What would need to be true for C2A2 to be safe: (a) PRESUMPTION-106 resolved (canonization criterion articulated); (b) implementation commitment paired with canonization; (c) cadence-governed timing replaces calendar pressure.
     How to test: Check whether the canonization criterion is documented; check whether the canonization will be paired with concrete implementation commitment; check whether the "this week" framing reflects calendar pressure or genuine cadence.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-098 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-098
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-098
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from third-recurrence REVISE pattern
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~9-day gap. Calendar-pressure and documentation-as-fix concerns stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Weak-Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. "Sufficient" still overstates without resolution of PRESUMPTION-106.
+
+  Caveats: Internal canonization-criterion articulation would resolve faster.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

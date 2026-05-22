@@ -7,7 +7,10 @@ source_title: "The Meaning of Suffering & Human Flourishing w/ Fr. Gregory Pine,
 source_url: https://podcast.thomisticinstitute.org/videos/the-meaning-of-suffering-human-flourishing-w-fr-gregory-pine-op-prof-eleonore-stump/
 source_date: 2026-01-30
 searched_on: 2026-05-08
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-027
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

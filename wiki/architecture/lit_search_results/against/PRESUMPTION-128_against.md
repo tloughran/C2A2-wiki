@@ -35,3 +35,36 @@ SEARCH-AGAINST-PRESUMPTION-128:
     Strongest counterargument: Workflow-accommodation before canonization is a sound Lean/Kaizen practice for reversible operational decisions, but tradition admission is a meta-level move with distinctive epistemic implications (per Bevir, MacIntyre, Kuhn). The path-dependence literature warns that informal accommodation creates precedent that quietly constrains formal decision later — what gets accommodated in practice tends to be what gets canonized in policy. Bypassing DECISION-026 deliberation through workflow accommodation risks lock-in by precedent that the author-mediation commitment (PREMISE-014) was meant to prevent.
     What would need to be true for C2A2 to be safe: (a) Explicit "pilot" framing with reversibility commitment; (b) Tom-deliberation per accommodation; (c) explicit reconciliation with competing PRESUMPTION-137.
     How to test: Track whether Rohr/Wright pendings produce informal canonization precedent before DECISION-026; whether DECISION-026 deliberation is constrained by prior accommodations.
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-128 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-128
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: PRESUMPTION-128
+    Item type: PRESUMPTION
+    Transform at each step:
+      14b (cycle 0): Originally surfaced from competing-presumptions pair
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~8-day gap. Path-dependence and meta-level admission concerns stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. Lock-in-by-precedent risk persists.
+
+  Caveats: Explicit pilot framing would mitigate.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

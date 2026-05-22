@@ -35,3 +35,36 @@ SEARCH-AGAINST-ASSUMPTION-109:
     Strongest counterargument: Standalone DECISION canonization is appropriate only when the cluster has been substrate-decomposed and the independence claim is supported. PRESUMPTION-134 explicitly raises that the cowork-to-chat-sync cluster shares Chrome MCP + claude.ai login state substrate with PRESUMPTION-121 — making independence questionable. By Vesely common-cause-failure analysis, splitting two substrate-coupled failure modes inflates apparent reliability. By Nygard ADR discipline, the standalone-DECISION canonization without substrate-discipline produces ADR sprawl. By Kotter/Goldratt, two HIGH-urgency canonizations same week is over-commitment.
     What would need to be true for C2A2 to be safe: (a) Substrate-decomposition documents independence; (b) carrying-capacity consulted; (c) implementation-paced.
     How to test: Audit whether substrate-decomposition is performed; check whether DECISION-027 and standalone-DECISION end up referring to overlapping infrastructure components (revealing the substrate-shared pattern post-canonization).
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-109 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-109
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-109
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from standalone-DECISION distinction
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~8-day gap. Common-cause-failure analysis concern stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. Substrate-decomposition gap remains.
+
+  Caveats: Internal substrate-mapping would resolve faster.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

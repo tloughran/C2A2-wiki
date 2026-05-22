@@ -27,9 +27,9 @@ last_qc_outcome: "pass"
 
 ## Transcript
 
-[00:04] hello my name is Austin Habish the founder of Think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas Suma Theologiae in a way simple and insightful for
+[00:04] hello my name is Austin Habish the founder of Think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas Summa Theologiae in a way simple and insightful for
 
-[00:15] anyone to understand the Summa podcast is brought to you by Think Catholic taking two questions of the Suma a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas
+[00:15] anyone to understand the Summa podcast is brought to you by Think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas
 
 [00:27] and his Catholic faith is day 87 so let's get started we're covering today questions 52 and 53 of the Primus Secundae that is of the increase of habits and how habits are corrupted or diminished
 
@@ -47,7 +47,7 @@ last_qc_outcome: "pass"
 
 [01:50] knowledge of Latin let's say or can recall and use that knowledge more quickly and efficiently in this way the Habit is more intense in him as St Thomas says in so far as equal science
 
-[02:04] or health is participated more in one than in another according to a diverse aptitude arising either from nature or from Custom and as the gilby Suma will comment in the same article in the case
+[02:04] or health is participated more in one than in another according to a diverse aptitude arising either from nature or from Custom and as the gilby Summa will comment in the same article in the case
 
 [02:17] in point a has a greater knowledge than b if a knows more than b let's a particular rules of a particular science but if a and b both know the same number of rules a May possess the same
 

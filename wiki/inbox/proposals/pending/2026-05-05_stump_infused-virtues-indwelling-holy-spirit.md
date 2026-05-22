@@ -7,7 +7,10 @@ source_title: "Aquinas's Ethics: the Infused Virtues and the Indwelling Holy Spi
 source_url: https://www.cambridge.org/core/journals/new-blackfriars/article/abs/aquinass-ethics-the-infused-virtues-and-the-indwelling-holy-spirit/21AE70818540F023E8BE4D6FE81F1B98
 source_date: 2025-01-01
 searched_on: 2026-05-05
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-020
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

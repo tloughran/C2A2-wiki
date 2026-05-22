@@ -16,8 +16,8 @@ length_ratio_to_target: 0.736
 length_note: "Q.12–Q.13 (11 articles) treated thematically as the hierarchical-prior structure of practical reasoning. The medieval bridge-act-of-intention plus practical-syllogism-conclusion-of-choice maps tightly onto active-inference's hierarchical generative models, so the bridging prose stays compact while preserving every keystone move (Q.12 a.4 single-act-multi-object, Q.13 a.3 conclusions-become-principles, Q.13 a.6 freedom-only-among-particulars)."
 mind_first_reframe: "Intention is the alter's hierarchical-prior commitment to a terminal-or-midpoint terminus carrying the as-ordered-toward-the-perfect-good formal character; choice is the conclusion of practical inference at the bottom of the hierarchical chain — Aquinas's medieval architecture maps onto active inference's hierarchical generative models without remainder."
 central_theme_thread: "Salvation in fear and trembling is the practical-rationality computation under perspective-limitation: the alter is bound at the terminal-prior of the perfect-good and free at the level of mean-policies, and this iterated computation under tradition-bound rationality and the substrate-network's pedagogy is the daily-task work of becoming."
-last_qc_at: "2026-05-14T12:25:02"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-21T18:31:40"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/067, theme/intention, theme/choice, theme/practical-syllogism]
 ---
 # Day 67 — Contemporary Parallel: *Intention as Hierarchical Terminus and Choice as the Conclusion of Practical Inference*
@@ -71,8 +71,8 @@ Wright on covenanted-community as the locus where mean-policy-computation is sha
 - **Friston-tradition wiki, PRS on hierarchical generative models and expected-free-energy minimization.** Formalism for hierarchical-prior practical syllogism. *Mature formal frame.*
 - **Hoffman-tradition wiki, PRS on interface integration of multi-channel substrate input.** Single-act-multi-object structural primary. *Philosophical-mathematical.*
 - **McGilchrist-tradition wiki, PRS on hemispheric integration vs. analysis.** Right-end-gestalt and left-mean-analysis. *Strong neuropsychiatric.*
-- **Stump-tradition wiki, PRS on will-as-faculty-of-the-good and tradition-bound rationality.** Theological-philosophical primary on volitional structure. *Book-length argument.*
-- **Levin-tradition wiki, PRS on diverse intelligences and instinctual tending.** Empirical primary on tending-without-representing at biological scales. *Strong empirical.*
+- **Stump-tradition wiki, PRS on will-as-faculty-of-the-good and tradition-bound rationality.** Theological-philosophical resource for volitional structure. *Book-length argument.*
+- **Levin-tradition wiki, PRS on diverse intelligences and instinctual tending.** Empirical resource for tending-without-representing at biological scales. *Strong empirical.*
 - **Hawkins-tradition wiki, on goal-representation in HTM.** Cortical-architecture for hierarchical priors. *Strong empirical.*
 - **Wright, *Paul and the Faithfulness of God*.** Covenant-as-tradition shaping practical reasoning. *Scriptural-historical.*
 - **Rohr, *The Universal Christ*.** Contemplative-prayer as alignment-of-computation. *Contemplative theological.*

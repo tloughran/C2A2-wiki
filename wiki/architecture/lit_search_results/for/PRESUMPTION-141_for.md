@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-141:
+  Date searched: 2026-05-13
+  Original item: PRESUMPTION-141
+  Original statement: "'Cleanest single-page public framing' presumes single-page consolidation is a virtue per se — third-layer recurrence of superlative-without-normalization pattern (PRESUMPTION-116 / PRESUMPTION-119 lineage)"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-141
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from 2026-05-12 PROP-2026-05-12-001 evaluation framing presuming compactness as virtue per se
+      15a: Searched for compactness-as-program-maturity literature and multi-source vs. single-source articulation as quality signals
+    Current status: NO-SUPPORT-FOUND
+
+  Sources:
+    1. (None found endorsing single-page consolidation as virtue per se without organic-development comparison or normalization across sources.)
+    2. Galison (1997) "Image and Logic" — research programs articulate through multiple register layers (image tradition, logic tradition, instrument tradition); compactness is one register, not a maturity signal.
+    3. Knorr-Cetina (1999) "Epistemic Cultures" — different research cultures produce different articulation forms; compactness/single-pageness is culture-specific, not universal virtue.
+    4. Bornmann & Mutz (2015) — citation analysis methodology: comparing sources requires explicit normalization for type, length, and venue; unnormalized "cleanest" superlatives are bibliometrically indefensible.
+    5. C2A2-internal: PRESUMPTION-116 (REVISE 2026-05-10) → PRESUMPTION-129 (REVISE 2026-05-11) → ASSUMPTION-107 (REVISE 2026-05-11) — unnormalized-superlative anti-pattern cluster; PRESUMPTION-141 is the third-layer recurrence at the compactness-as-virtue layer.
+
+  Strength of support: None
+
+  Summary: No literature endorses single-page consolidation as virtue per se without comparison across source-types. Galison's image/logic/instrument register diversity and Knorr-Cetina's epistemic-culture variation both undermine universal-compactness-as-virtue. Bornmann-Mutz citation methodology requires explicit normalization for any comparative-quality claim; "cleanest" without denominator is bibliometrically indefensible. The C2A2-internal recurrence pattern (third-layer of the same anti-pattern in 4 days) is structural rather than incidental.
+
+  Caveats: For specific use-cases (executive summary, single-page poster, Twitter-thread-length explanation), compactness is the explicit success criterion — context-conditional virtue. But the assumption frames compactness as virtue per se, not as conditional success criterion.
+
+  Recommendation: NO-SUPPORT-FOUND — compactness-as-virtue-per-se is unsupported; PRESUMPTION-141 is third-layer recurrence of the unnormalized-superlative cluster

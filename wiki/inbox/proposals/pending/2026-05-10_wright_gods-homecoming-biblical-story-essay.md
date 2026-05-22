@@ -7,7 +7,10 @@ source_title: "God's Homecoming: The Biblical Story We Were Never Taught"
 source_url: https://ntwrightpage.com/2026/03/04/gods-homecoming-the-biblical-story-we-were-never-taught/
 source_date: 2026-03-04
 searched_on: 2026-05-10
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-034
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

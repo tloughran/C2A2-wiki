@@ -1,0 +1,37 @@
+SEARCH-AGAINST-ASSUMPTION-162:
+  Date searched: 2026-05-18
+  Original item: ASSUMPTION-162
+  Original statement: "Coordination primitives for multi-agent shared-vault: MCP shared protocol; Git as universal undo/conflict layer; folder-scoped agent assignments; no scheduler, no lock manager — last-write-wins."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-162
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15b: Searched for challenging literature
+    Current status: STRONGLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Wikipedia 'Conflict-free replicated data type' — explicit warning: 'Using the latest write risks data loss, since timestamps across distributed systems can drift or arrive out of order.'
+    2. DZone 'Conflict Resolution: Using Last-Write-Wins vs. CRDTs' — LWW is documented as a conflict-resolution policy with known failure modes; CRDTs or vector clocks are preferred for correctness.
+    3. Issue #4857 in super-productivity (2024 GitHub) — empirical case study of multi-device JSON-file LWW causing data loss; cited as canonical evidence of the failure mode in real systems.
+    4. Iankduncan 'The CRDT Dictionary' (2025) — comprehensive treatment; LWW achieves convergence only under monotonic-globally-unique clocks, an assumption distributed systems cannot guarantee.
+
+  Strength of challenge: Strong
+
+  Summary: 'Last-write-wins' is a documented anti-pattern in the multi-producer literature. The CRDT and version-vector communities treat LWW as a known-bad default. The claim works at C2A2's current N=1 scale because there are no concurrent writes, but the architectural commitment names a coordination policy that the literature warns against scaling.
+
+  Specific risks: (a) Silent data loss if two writers ever touch the same file; (b) clock-drift between writers (Claude session vs. DeepSeek worker) can mis-order writes; (c) Git provides undo only if someone notices the loss; (d) Maildir filename uniqueness handles new-file collisions but not edit collisions.
+
+  Mitigations available: (a) Strict folder partitioning to make concurrent writes impossible; (b) periodic git status audit; (c) plan transition to CRDT or vector-clock pattern before second producer is added (joins PRESUMPTION-183).
+
+  Recommendation: STRONGLY-CHALLENGED
+
+  STEELMAN:
+    Item: ASSUMPTION-162
+    Strongest counterargument: The strongest case against: the 'no scheduler, no lock manager' choice is correct only because partitioning is perfect. The moment partitioning is imperfect — and partitioning in shared-vault contexts is rarely perfect — LWW becomes silent data loss. Naming the policy as a primitive normalizes a documented anti-pattern.
+

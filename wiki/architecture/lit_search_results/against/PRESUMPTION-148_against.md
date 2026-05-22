@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-148:
+  Date searched: 2026-05-13
+  Original item: PRESUMPTION-148
+  Original statement: "Proposal-queue +2-today framing as positive throughput is third-layer recurrence of SELF-MEASUREMENT Goodhart cluster — generalizes ASSUMPTION-112 to proposal-pending-count queue"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-148
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from 2026-05-12 proposal-queue +2-today positive-throughput framing
+      15b: Searched for counter-evidence on proposal-queue-depth as throughput signal without intake-vs-disposition normalization
+    Current status: CHALLENGED
+
+  Sources:
+    1. Little's Law (Kingman 1961; Reinertsen 2009) — queue arrival must balance with service rate; growing queue depth is by construction a negative throughput signal absent matching disposition rate.
+    2. Reinertsen (2009) — WIP-growth is explicit anti-signal; intake-throughput-celebration without disposition-throughput-matching is documented cognitive bias.
+    3. Goodhart (1975) / Strathern (1997) — when intake-count becomes a target, dispositioning effort routes away from disposition toward intake; canonical Goodhart at the queue layer.
+    4. C2A2-internal: ASSUMPTION-112 (MONITOR-114 — SELF-MEASUREMENT cluster anchor) + PRESUMPTION-123 (REVISE 2026-05-10) + PRESUMPTION-129 (REVISE 2026-05-11) + ASSUMPTION-107 (REVISE 2026-05-11). PRESUMPTION-148 is third-layer recurrence at the proposal-pending-count queue.
+    5. Most actionable architectural item per 14b extraction note — the proposal-pending-count is operationally measurable and the intake-vs-disposition balance is empirically testable today.
+
+  Strength of challenge: Strong
+
+  Summary: The challenge is strong. Little's Law, Reinertsen flow principles, and Goodhart/Strathern converge: queue-depth-growth without disposition-balance is anti-signal, not positive throughput. PRESUMPTION-148 is third-layer recurrence of the SELF-MEASUREMENT cluster at the proposal-pending-count queue. The cluster has now reached multi-layer recurrence (REVISE-rate, REVISE-rate-as-second-layer, proposal-queue-depth) within the same anti-pattern signature.
+
+  Specific risks: (a) Intake-count celebrated as positive metric while disposition lags; (b) Goodhart at proposal-queue layer (intake routes effort away from disposition); (c) Third-layer cluster recurrence indicates structural pattern; (d) Most actionable architectural item per 14b extraction.
+
+  Mitigations available: (a) Disposition-rate paired metric (proposal-throughput = dispositions / day, not intake / day); (b) ratio-metric (intake:disposition ratio with explicit target); (c) qualitative-veto on intake-celebration without disposition match; (d) joint remediation with ASSUMPTION-112 + PRESUMPTION-123 + PRESUMPTION-129 SELF-MEASUREMENT cluster; (e) Goodhart-mitigation paired metric per Beyer (2016) SRE design.
+
+  Recommendation: CHALLENGED (Strong) — third-layer cluster recurrence; most actionable architectural item this batch
+
+  STEELMAN:
+    Item: PRESUMPTION-148
+    Strongest counterargument: Queue-depth-growth is by construction (Little's Law) a negative throughput signal unless disposition-rate matches intake-rate. Reinertsen flow principles, Goodhart, and Strathern all converge: intake-count celebration without disposition-balance is the canonical Goodhart pattern at the queue layer. PRESUMPTION-148 is third-layer recurrence of the SELF-MEASUREMENT cluster — the cluster has already produced four REVISEs (PRESUMPTION-123, PRESUMPTION-129, ASSUMPTION-107, and now PRESUMPTION-148 if dispositioned REVISE) and the anti-pattern is structurally established. The remediation is canonical: paired metric (intake:disposition ratio), qualitative-veto, multi-metric SLI/SLO design per Beyer SRE.
+    What would need to be true for C2A2 to be safe: (a) Disposition-rate paired metric; (b) ratio-metric with explicit target; (c) qualitative-veto on intake celebration; (d) joint cluster remediation.
+    How to test: Track proposal intake-rate and disposition-rate side by side over next 10 cycles; verify that "throughput" framings reflect both, not just intake.

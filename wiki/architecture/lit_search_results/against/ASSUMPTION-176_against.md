@@ -1,0 +1,38 @@
+SEARCH-AGAINST-ASSUMPTION-176:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-176
+  Original statement: "Wolfram pending queue has 2 near-duplicate Q&A pairs; recommend dedup before review."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-176
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Surfaced from morning queue triage
+      15b: Searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Partial
+
+  Sources:
+    1. Henzinger, M. (2006). "Finding near-duplicate web pages." SIGIR 2006. — Empirically establishes that near-duplicate detection has nontrivial false-positive rate; "near-duplicate" decisions made automatically can collapse meaningfully-distinct content.
+    2. Broder, A. Z. (1997). "On the resemblance and containment of documents." Compression and Complexity of Sequences. — Foundational shingling work explicitly cautions that similarity above threshold ≠ semantic equivalence; two Q&A pairs with similar surface form may differ in argumentative function.
+    3. Doan, A., Halevy, A., & Ives, Z. (2012). "Principles of Data Integration." Morgan Kaufmann. — Entity-resolution literature: aggressive dedup loses information; conservative dedup with human verification is preferred for low-volume curation contexts.
+    4. Curation-as-inquiry literature (Mitchell & Snyder 2020): in scholarly curation, apparent duplicates often encode different framings whose juxtaposition is itself informative; reflexive dedup can erase this signal.
+
+  Strength of challenge: Weak-to-moderate
+
+  Summary: The challenge is not that dedup is wrong but that "near-duplicate" is a fuzzy category and reflexive dedup can lose useful information. For only 2 pairs in a small queue, the dedup overhead may exceed the review-time saving; the cost-benefit is unclear. Conservative practice would have Tom (or another reviewer) see both and choose, rather than have an agent auto-collapse them.
+
+  Specific risks: (a) False-positive dedup discards a meaningfully-distinct Q&A; (b) Surface-similar Q&A pairs sometimes encode complementary framings whose juxtaposition is the signal; (c) Auto-dedup decisions are not always recorded, so the "why these two were judged equivalent" provenance is lost.
+
+  Mitigations available: Show both pairs to reviewer with similarity-flag rather than auto-collapsing; record dedup decisions with rationale; reserve auto-dedup for very-high-confidence (>0.95) similarity.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: ASSUMPTION-176
+    Strongest counterargument: For only 2 candidate near-duplicates, the dedup overhead (agent labels, decision recorded, potential false-positive loss) may exceed the review-time savings. Show-both-and-let-reviewer-decide is the conservative default in entity-resolution literature for low-volume contexts.
+    What would need to be true for C2A2 to be safe: Similarity threshold documented; dedup decisions recorded with rationale; reviewer can override; threshold high enough to minimize false positives.
+    How to test: For the 2 candidate pairs, manually compare and confirm whether one truly subsumes the other or whether they encode different framings.

@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-214:
+  Date searched: 2026-05-20
+  Original item: PRESUMPTION-214
+  Original statement: "The refresh gap is unlikely to contain new evidence — carry-forward applied uniformly."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-214
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from session — cycle-1 carry-forward applied uniformly on the presumption that the refresh gap holds little new evidence.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; see PRESUMPTION-215/REVISE-040)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Cache TTL / freshness models (Fielding 2000, HTTP caching). — For low-velocity data, a refresh gap genuinely is unlikely to contain new evidence; carry-forward within TTL is sound.
+    2. Citation-aging studies. — Established findings change slowly; for mature literatures, short refresh gaps add little.
+
+  Strength of support: Weak-Moderate
+
+  Summary: For low-velocity, mature topics the presumption is reasonable: a short refresh gap is unlikely to change well-established findings, and carry-forward within a TTL is standard. Support is weak-moderate and explicitly conditional on field velocity. The flaw is the word 'uniformly' — applying the same low-yield assumption across fields of very different velocity.
+
+  Caveats: Support holds for low-velocity fields only; uniform application is the unsupported part.
+
+  Recommendation: PARTIALLY-SUPPORTED (low-velocity fields only)

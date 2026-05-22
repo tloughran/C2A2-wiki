@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-142:
+  Date searched: 2026-05-13
+  Original item: PRESUMPTION-142
+  Original statement: "PRS-CANDIDATE-01's one-way Arkani-Hamed/Wolfram/Carroll reframing accepted without inverse-acceptance check — would those traditions accept pre-foundational placement?"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-142
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from 2026-05-12 PRS-CANDIDATE-01 one-way reframing
+      15b: Searched for counter-evidence on Arkani-Hamed/Wolfram/Carroll acceptance of pre-foundational placement
+    Current status: CHALLENGED
+
+  Sources:
+    1. Carroll (Mindscape Podcast Episodes #91 with Dennett; #135 with Hoffman directly) — Carroll engaged Hoffman's interface theory directly and rejected pre-foundational placement on substantive grounds (poetic-naturalist commitments make physical structure foundational; perception is a derivative natural-kind).
+    2. Wolfram (NKS 2002; Physics Project 2020-) — meta-framework comprehensiveness: Wolfram explicitly positions the computational substrate as foundational. Pre-foundational reframing would invert his framework-completeness claim.
+    3. Arkani-Hamed ("Why Is There a Macroscopic World?" 2021; Cornell Messenger Lectures 2010) — geometric/symmetry-principles-as-foundational is the explicit positioning; Amplituhedron program derives spacetime from amplitude structure, the opposite directionality from Hoffman's reframing.
+    4. MacIntyre (1988) — cross-tradition claims require translation through the framework being repositioned; one-way reframing without engagement is documented anti-pattern for tradition-comparison.
+    5. C2A2-internal: PRESUMPTION-002 (cross-tradition transfer-validity CRITICAL cluster, REVISE) + PRESUMPTION-074 (specialist-recognition SYSTEMIC-RISK cluster) — PRESUMPTION-142 is the latest recurrence at the four-program TOE-hierarchy layer.
+
+  Strength of challenge: Strong
+
+  Summary: The challenge is strong. All three named programs have explicit, public, well-documented positions that would substantively reject pre-foundational placement behind Hoffman's perception framework. Carroll has engaged Hoffman directly on Mindscape and defended realism. Wolfram's framework-completeness claim inverts the reframing's directionality. Arkani-Hamed's geometric/structural-realist commitments are foundational, not derivative. MacIntyre cross-tradition methodology requires substantive engagement. PRESUMPTION-142 joins the existing PRESUMPTION-002 CRITICAL + PRESUMPTION-074 SYSTEMIC-RISK clusters as today's highest-risk new item.
+
+  Specific risks: (a) Cross-tradition transfer-validity cluster reaches new TOE-hierarchy layer; (b) C2A2 master network commits to a structural placement that other tradition agents would dispute; (c) one-way reframing without engagement is the textbook cluster signature; (d) Pattern Detector deep-pass (ASSUMPTION-116 routing) compounds the unconsented reframing's downstream weight.
+
+  Mitigations available: (a) Inverse-acceptance check (assemble strongest case for each program's rejection of pre-foundational placement); (b) explicit engagement protocol — solicit specialist agent (Arkani-Hamed/Wolfram/Carroll) responses; (c) PRS-CANDIDATE-01 demoted from "structural significance" to "contested structural proposal"; (d) joint remediation with ASSUMPTION-116 (same cluster); (e) extend PRESUMPTION-002 cluster remediation to this layer.
+
+  Recommendation: CHALLENGED (Strong) — today's highest-risk new item joins two prior CRITICAL/SYSTEMIC-RISK clusters; substantive evidence each named program would reject the reframing
+
+  STEELMAN:
+    Item: PRESUMPTION-142
+    Strongest counterargument: Reframing three first-tier physics TOE programs as pre-foundational to Hoffman's perception framework without inverse-acceptance check is exactly the pattern that PRESUMPTION-002 (cross-tradition transfer-validity, CRITICAL) was REVISE'd for. Each named program has explicit, public, well-documented foundational claims that would invert or contradict the reframing's directionality. Carroll has publicly engaged Hoffman and rejected pre-foundational placement on his program. Wolfram's framework-completeness claim explicitly subordinates other frameworks to his. Arkani-Hamed's geometric/structural-realist commitments are foundational, not derivative. The MacIntyre cross-tradition methodology requires translation through the framework being repositioned — one-way reframing without engagement is the documented anti-pattern. PRESUMPTION-142 joins the existing CRITICAL + SYSTEMIC-RISK clusters and warrants HIGH-urgency REVISE.
+    What would need to be true for C2A2 to be safe: (a) Inverse-acceptance check performed and weighed; (b) specialist-agent (Arkani-Hamed/Wolfram/Carroll) responses solicited; (c) PRS-CANDIDATE-01 demoted to contested-proposal status; (d) joint remediation with ASSUMPTION-116.
+    How to test: Submit the pre-foundational reframing to each named program's actual articulations; document acceptance/rejection on each program's own terms.

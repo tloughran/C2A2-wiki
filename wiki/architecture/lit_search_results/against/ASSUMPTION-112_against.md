@@ -35,3 +35,36 @@ SEARCH-AGAINST-ASSUMPTION-112:
     Strongest counterargument: The SELF-MEASUREMENT cluster is a real and well-grounded concern, but the claim that two consecutive cycles "confirm" the pattern over-extends the evidence. SPC discipline requires ≥7 cycles for pattern confirmation; selection-bias literature suggests batch composition may be the operative explanation; the recursive-confirmation move (observing the cluster confirms the cluster) is itself a Goodhart-vulnerable self-validation. The cluster prediction is testable — a cycle with high INCORPORATE rate would falsify it — but the confirmation claim is currently asserting before the falsification test has been run.
     What would need to be true for C2A2 to be safe: (a) ≥7 cycles before confirmation language; (b) batch-composition controls; (c) explicit falsification test (what cycle outcome would disconfirm); (d) recursive-confirmation guard.
     How to test: Track INCORPORATE rate across next 5 cycles; check whether cycles with PRESUMPTION-light batch composition show higher INCORPORATE rate (would support selection-bias alternative); check whether falsification test is documented.
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-112 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-112
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-112
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from cross-cycle cluster-confirmation claim
+      15a (cycle 0): Searched for challenging literature → PARTIALLY-CHALLENGED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for challenging literature
+    Current status: PARTIALLY-CHALLENGED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~8-day gap. Selection-bias and SPC-threshold concerns stable.
+
+  Sources (new / refreshed): none
+
+  Strength of challenge: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-CHALLENGED finding stands. "Confirmed" verb still overstrong; additional cycles since may have updated N.
+
+  Caveats: Internal cycle-count update would resolve faster than further literature.
+
+  Recommendation: PARTIALLY-CHALLENGED (refreshed; carry forward prior recommendation)
+

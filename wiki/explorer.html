@@ -309,9 +309,9 @@
       <span class="brand-c2a2">C2A2</span>
       <span class="brand-full">Community Dialogue Accelerator/Detector System</span>
     </span>
-    <button class="chap-btn stub">Community Explorer</button>
+    <button class="chap-btn" id="chap-community" data-src="community/index.html">Community Explorer</button>
     <button class="chap-btn stub">Community AI Education</button>
-    <button class="chap-btn active">Community Accelerator Tools</button>
+    <button class="chap-btn active" id="chap-tools">Community Accelerator Tools</button>
     <button class="chap-btn stub">Community Interaction</button>
     <button id="btn-record" onclick="toggleRecord()">&#9679; Record</button>
   </div>
@@ -323,7 +323,7 @@
     <span class="summa-progress" id="summa-progress"
           title="Last continuous day (no gaps below it) out of the 308-day plan. Click to open the coverage gap audit."
           onclick="window.open('vault/refs/missing_days.md','_blank')">…</span>
-    <button class="tab-btn" data-src="prs_3d.html">3D PRS</button>
+    <button class="tab-btn" data-src="prs_3d.html">Narrative Connectome</button>
     <button class="tab-btn" data-src="agents_tab.html">Agent Map</button>
     <button class="tab-btn" data-src="summa_explorer.html">Curriculum Tools</button>
     <button id="btn-help" onclick="showHelp()" title="About this view">?</button>
@@ -346,10 +346,34 @@
     btn.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
-      frame.setAttribute('src', btn.getAttribute('data-src'));
+      frame.setAttribute('src', btn.getAttribute('data-src') + '?v=' + Date.now());
       buttons.forEach(function(b) { b.classList.remove('active'); });
       btn.classList.add('active');
     });
+  });
+
+  // ── CHAPTER SWITCHING ──
+  // "Community Explorer" is its own full page (its own controls), so it loads
+  // into the iframe and the Accelerator-Tools sub-tab row (row2) is hidden.
+  // "Community Accelerator Tools" restores row2 and shows its active sub-tab.
+  var row2 = document.getElementById('row2');
+  var chapBtns = document.querySelectorAll('.chap-btn');
+  var chapCommunity = document.getElementById('chap-community');
+  var chapTools = document.getElementById('chap-tools');
+  function setActiveChapter(btn) {
+    chapBtns.forEach(function(b) { if (!b.classList.contains('stub')) b.classList.remove('active'); });
+    btn.classList.add('active');
+  }
+  if (chapCommunity) chapCommunity.addEventListener('click', function() {
+    frame.setAttribute('src', chapCommunity.getAttribute('data-src') + '?v=' + Date.now());
+    if (row2) row2.style.display = 'none';
+    setActiveChapter(chapCommunity);
+  });
+  if (chapTools) chapTools.addEventListener('click', function() {
+    if (row2) row2.style.display = '';
+    var active = document.querySelector('#row2 .tab-btn.active') || document.querySelector('#row2 .tab-btn');
+    if (active) frame.setAttribute('src', active.getAttribute('data-src') + '?v=' + Date.now());
+    setActiveChapter(chapTools);
   });
 })();
 
@@ -605,9 +629,19 @@ function dismissRecordingModal() {
 
 // ── HELP MODAL ──
 function showHelp() {
-  var active = document.querySelector('#row2 .tab-btn.active');
-  var src = active ? active.getAttribute('data-src') : '';
+  var chapCommunity = document.getElementById('chap-community');
+  var src;
+  if (chapCommunity && chapCommunity.classList.contains('active')) {
+    src = 'community/index.html';
+  } else {
+    var active = document.querySelector('#row2 .tab-btn.active');
+    src = active ? active.getAttribute('data-src') : '';
+  }
   var descriptions = {
+    'community/index.html': {
+      title: 'Community Explorer',
+      body: 'A faceted directory of 855 real-world communities (Academic, Corporate, Ideological), each carrying a Problem-Resource-Solution triplet. Filter by type, subtype, country, or source, and inspect each community\'s organizing-principle summary. Ask in plain language: the built-in engine answers from the dataset, and answers are AI-enriched when an OpenAI key is present (shared with the other tabs). This is the Pathway-20 substrate: the C2A2 method applied to communities rather than thinkers.'
+    },
     'wiki_narration.html': {
       title: 'Sociogram',
       body: 'A force-directed graph of the RC Wiki knowledge base — 1,600+ nodes representing wiki articles, connected by wikilinks, mentions, and shared references. Filter by thinker tradition or structural category to explore conceptual neighborhoods. Click any node to read its article; click an edge to see both endpoints. Use the edge controls to show or hide link types and adjust force attraction.'
@@ -617,8 +651,8 @@ function showHelp() {
       body: 'The Summa 2026 curriculum dashboard — tracking daily synthesis progress through Austin Habash\'s 308-episode podcast series. Shows which days have been synthesized, coverage gaps, and the current continuous-day high-water mark. Each synthesis ties Habash\'s specific episode content to the RC Wiki thinker network.'
     },
     'prs_3d.html': {
-      title: '3D PRS',
-      body: 'A three-dimensional visualization of the Pluripotent Resource Space — the conceptual architecture underlying the RC framework. Nodes represent core constructs; edges encode structural relationships. Rotate and zoom to explore the topology of the idea space.'
+      title: 'Narrative (PRS) Connectome',
+      body: 'A narrative connectome of the C2A2 traditions: each node is an agentic PRS narrative — a small model (problem → resource → solution) — and edges are shared resources plus the synergistic coils that bridge traditions. Read it as the emergence of rival master sciences. Rotate and zoom to explore.'
     },
     'agents_tab.html': {
       title: 'Agent Map',

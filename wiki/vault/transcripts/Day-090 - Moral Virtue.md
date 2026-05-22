@@ -27,9 +27,9 @@ last_qc_outcome: "pass"
 
 ## Transcript
 
-[00:04] hello my name is Austin Habish the founder of Think Catholic and you're listening to the Suma podcast where we study St Thomas Aquinas ass Suma Theologiae in a way simple and insightful for
+[00:04] hello my name is Austin Habish the founder of Think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas ass Summa Theologiae in a way simple and insightful for
 
-[00:15] anyone to understand the Suma year podcast is brought to you by think Catholic taking two questions of the Suma a day we seek to summarize St Thomas's responses discovering the
+[00:15] anyone to understand the Summa year podcast is brought to you by think Catholic taking two questions of the Summa a day we seek to summarize St Thomas's responses discovering the
 
 [00:25] Brilliance of Aquinas and his Catholic faith is day 90 so let's get started we're covering today questions 58 and 59 of the Prima Secundae that is how the moral virtues differ for one another and
 

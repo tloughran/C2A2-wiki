@@ -1,0 +1,35 @@
+SEARCH-AGAINST-PRESUMPTION-155:
+  Date searched: 2026-05-14
+  Original item: PRESUMPTION-155
+  Original statement: "First-class-wiki-citizen machinery presumed to generalize to perspectives without auditing transfer condition"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-155
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced via inference from ASSUMPTION-122 extension without audit
+      15b: Searched for counter-evidence on first-class extension producing silent breakage
+    Current status: NO-CHALLENGE-FOUND
+
+  Sources:
+    1. Liskov substitution principle (Liskov & Wing 1994) — type extension without subtype audit is canonical risk.
+    2. Some machinery may already be schema-agnostic — partial defense.
+    3. Tag-based typing accommodates many extensions naturally — partial defense.
+
+  Strength of challenge: Weak
+
+  Summary: The presumption is well-founded. Counter-arguments (some machinery is schema-agnostic; tag-based typing tolerates extensions) only show that some code paths may pass the audit, not that the audit is unneeded.
+
+  Specific risks: None substantial.
+
+  Mitigations available: Machinery audit.
+
+  Recommendation: NO-CHALLENGE-FOUND — presumption inference is sound
+
+  STEELMAN:
+    Item: PRESUMPTION-155
+    Strongest counterargument: Tag-based typing was chosen for the C2A2 vault precisely for schema flexibility; many code paths may already work without modification.
+    What would need to be true for C2A2 to be safe: Audit confirms which code paths are schema-agnostic and which assume thinker/PRS.
+    How to test: Walk every code path; classify as schema-agnostic vs. schema-dependent.

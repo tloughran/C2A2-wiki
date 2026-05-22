@@ -28,3 +28,35 @@ SEARCH-FOR-ASSUMPTION-030:
   Caveats: Benchmark-gating can become a perpetual-stall mechanism if criteria are never concretized; open-science literature also warns against over-gating that prevents beneficial early sharing. The "criteria TBD" flag in the queue item is the risky part.
   
   Recommendation: PARTIALLY-SUPPORTED (pending concretization of benchmarks)
+
+---
+
+SEARCH-FOR-ASSUMPTION-030 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-030
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-030
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted as release-gating commitment
+      15a (cycle 0): Searched for supporting literature → PARTIALLY-SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new supporting literature in the ~5-week gap. Open-science benchmark-gating norms stable.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-SUPPORTED finding stands. Principle is well-supported; "TBD criteria" remains the at-risk part.
+
+  Caveats: Internal action (concretize benchmarks) would update faster than literature search.
+
+  Recommendation: PARTIALLY-SUPPORTED (refreshed; carry forward prior recommendation)

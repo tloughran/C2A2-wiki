@@ -7,7 +7,10 @@ source_title: "Episode 648: Iain McGilchrist — unSILOed Podcast with Greg LaBl
 source_url: https://www.unsiloedpodcast.com/episodes/iain-mcgilchrist
 source_date: 2026-05-05
 searched_on: 2026-05-09
-status: pending
+status: approved
+prop_id: PROP-2026-05-18-028
+decision: APPROVE
+decided_at: 2026-05-12
 ---
 
 ## Summary

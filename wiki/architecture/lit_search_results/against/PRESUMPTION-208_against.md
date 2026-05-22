@@ -1,0 +1,36 @@
+SEARCH-AGAINST-PRESUMPTION-208:
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-208
+  Original statement: "FC26 308-day corpus horizon presumes once-daily-per-tradition rotation will hold steady to July 2026 — no slack/recovery budget articulated against today's 2-cycle gap (N=2 cadence streak)."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: PRESUMPTION-208
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14a: Inferred from FC26 horizon claim without articulated slack
+      15a: Searched for supporting literature
+      15b: Searched for challenging evidence
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Partial
+
+  Sources:
+    1. Boehm, B., 1981. "Software Engineering Economics." Prentice Hall — argues that excessive up-front budget articulation can constrain delivery flexibility; some commitments work better as aspirations with continuous re-planning than as budgeted forecasts.
+    2. Beck, K., 2000. "Extreme Programming Explained." Addison-Wesley — agile tradition argues against fixed-horizon commitments altogether in favor of short-cycle replanning; from this view, the 308-day horizon itself is the problem, not the missing slack.
+    3. Cohn, M., 2005. "Agile Estimating and Planning." Prentice Hall — distinction between commitments and forecasts; a stated horizon is sometimes deliberately under-budgeted to maintain stretch.
+
+  Strength of challenge: Weak
+
+  Specific risks (of over-honoring the presumption):
+    - Requiring explicit slack budget on every long-horizon claim creates ceremony overhead that may not match the stakes.
+    - An articulated slack budget can become a self-fulfilling delay (Parkinson's law).
+    - The 2-cycle gap (N=2) may itself be noise rather than signal; demanding budget against single gaps could over-tighten the system.
+
+  Mitigations available (lighter-weight than full slack budget):
+    - State a re-review trigger (e.g., "if Day 150 is reached without a refreshed horizon, revisit").
+    - Track cadence-gap distribution over time; only escalate to slack-budget articulation if gap-rate exceeds a threshold.
+    - Distinguish "commitment" from "forecast" in language when restating the horizon.
+
+  Recommendation: PARTIALLY-CHALLENGED (the presumption stands — articulating *some* form of recovery condition is warranted — but the lightweight version, e.g., re-review trigger, may suffice over full slack budget)

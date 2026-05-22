@@ -2759,3 +2759,955 @@ Note on cluster critical-mass signal: The SELF-AWARENESS-META cluster at 10 memb
 - ASSUMPTION REVISE rate is 1/9 (11%) — first non-zero ASSUMPTION REVISE in three consecutive cycles. PRESUMPTION REVISE rate is 7/12 (58%) — markedly lower than 2026-05-10's 92% due to five heuristic-exception MONITORs this cycle. Watch heuristic-exception rate for sustainability.
 - **INCORPORATE rate is 1/21 (4.8%) — first non-zero INCORPORATE rate in three consecutive cycles** (2026-05-09 and 2026-05-10 both produced 0 INCORPORATE). ASSUMPTION-105 → PREMISE-015 (user-privacy no-password-delegation constraint). Partial falsification of ASSUMPTION-112 (MONITOR-114) SELF-MEASUREMENT cluster's "0% INCORPORATE confirmation" framing.
 
+
+## 2026-05-13 CYCLE — 12 new REVISE items
+
+### REVISE-[new]: ASSUMPTION-115
+- **Date flagged:** 2026-05-13
+- **Item type:** ASSUMPTION
+- **Urgency:** MEDIUM
+- **15a (FOR):** PARTIALLY-SUPPORTED (strength: Moderate)
+- **15b (AGAINST):** CHALLENGED (strength: Strong)
+- **What is at risk / Recommended action:** ASSUMPTION + moderate support + strong challenge → REVISE. "Cleanest single-page" is a superlative without comparison set, measurement, or denominator — structurally identical to PRESUMPTION-116 / PRESUMPTION-129 / ASSUMPTION-107 prior REVISEs. The unnormalized-superlative anti-pattern has now produced four REVISEs across stated/unstated forms at rate-comparison and source-comparison layers within 4 days — satisfies ASSUMPTION-098 three-recurrence governance threshold at the cluster level. Canonical remediations: specify comparison set explicitly; operationalize "cleanest" with measurement; specify audience; demote framing to "best identified general-audience compact framing among [list]." Joint with PRESUMPTION-141 (same cycle).
+- **Awaiting Tom review.**
+
+---
+
+### REVISE-[new]: ASSUMPTION-116
+- **Date flagged:** 2026-05-13
+- **Item type:** ASSUMPTION
+- **Urgency:** HIGH (joint with PRESUMPTION-142; joins PRESUMPTION-002 CRITICAL + PRESUMPTION-074 SYSTEMIC-RISK clusters)
+- **15a (FOR):** PARTIALLY-SUPPORTED (strength: Moderate)
+- **15b (AGAINST):** CHALLENGED (strength: Strong)
+- **What is at risk / Recommended action:** ASSUMPTION + moderate support + strong challenge → REVISE. Reframing Arkani-Hamed/Wolfram/Carroll as pre-foundational without inverse-acceptance check joins the cross-tradition transfer-validity CRITICAL cluster (PRESUMPTION-002) and specialist-recognition SYSTEMIC-RISK cluster (PRESUMPTION-074). Substantive evidence each named program would reject pre-foundational placement on its own foundational commitments (Carroll's poetic-naturalism; Wolfram's framework-completeness; Arkani-Hamed's geometric/structural-realism). Authorizing a Pattern Detector deep-pass on contested philosophical premise inflates the cluster's downstream weight. Canonical remediations: run inverse-acceptance check before deep-pass; solicit specialist (Arkani-Hamed/Wolfram/Carroll) agent reactions; demote "structurally significant" to "structurally proposed pending engagement"; joint cluster remediation with PRESUMPTION-002 + PRESUMPTION-074.
+- **Awaiting Tom review.**
+
+---
+
+### REVISE-[new]: ASSUMPTION-117
+- **Date flagged:** 2026-05-13
+- **Item type:** ASSUMPTION
+- **Urgency:** MEDIUM-HIGH (compounds ASSUMPTION-108 first-activation gates at second activation)
+- **15a (FOR):** PARTIALLY-SUPPORTED (strength: Moderate)
+- **15b (AGAINST):** CHALLENGED (strength: Strong)
+- **What is at risk / Recommended action:** ASSUMPTION + moderate support + strong challenge → REVISE. Second activation of ASSUMPTION-098 governance threshold compounds the circular-dependency that gated the first activation (ASSUMPTION-108 MONITOR-110: governance rule itself MONITORed not INCORPORATEd). Substrate-decomposition gate (PRESUMPTION-134 REVISE 2026-05-11, HIGH urgency, unresolved) applies: 5 consecutive skips may be a single common-cause failure misclassified as five. Skip-vs-failure ambiguity unaddressed — PRESUMPTION-138 (REVISE 2026-05-11) flagged the historic-extrapolation anti-pattern for the same registry. Canonical remediations: block second activation until ASSUMPTION-098 is INCORPORATE; substrate-decomposition first; explicit skip-vs-failure rule clarification; reframe "second activation" as "second pending-activation pending governance-rule validation."
+- **Awaiting Tom review.**
+
+---
+
+### REVISE-[new]: PRESUMPTION-140
+- **Date flagged:** 2026-05-13
+- **Item type:** PRESUMPTION
+- **Urgency:** MEDIUM
+- **15a (FOR):** NO-SUPPORT-FOUND (strength: None)
+- **15b (AGAINST):** CHALLENGED (strength: Strong)
+- **What is at risk / Recommended action:** PRESUMPTION + strong challenge + NO-SUPPORT → REVISE. Empty active watch list framed as positive signal without intake-coverage audit contradicts SRE (Beyer absence-of-alerts), surveillance epidemiology (Mason zero-count disambiguation), and Hollnagel Safety-I/Safety-II distinction. Joins PRESUMPTION-069 silence-not-tracked cluster at the empty-watch-list layer. Canonical remediations: intake-coverage audit on chat-log sample; explicit "empty list = positive OR broken intake" framing; periodic coverage-test schedule; demote framing to "no items surfaced; coverage pending audit."
+- **Awaiting Tom review.**
+
+---
+
+### REVISE-[new]: PRESUMPTION-141
+- **Date flagged:** 2026-05-13
+- **Item type:** PRESUMPTION
+- **Urgency:** MEDIUM (third-layer recurrence; cluster-level governance trigger)
+- **15a (FOR):** NO-SUPPORT-FOUND (strength: None)
+- **15b (AGAINST):** CHALLENGED (strength: Strong)
+- **What is at risk / Recommended action:** PRESUMPTION + strong challenge + NO-SUPPORT → REVISE. Third-layer recurrence of unnormalized-superlative anti-pattern at source-comparison layer (after rate-comparison recurrences in PRESUMPTION-116, PRESUMPTION-129, ASSUMPTION-107). With ASSUMPTION-115 (same cycle), cluster reaches four-layer breadth in 4 days — extends and confirms the SYSTEMIC-RISK-FLAG raised 2026-05-11. The cluster has now satisfied ASSUMPTION-098 three-recurrence governance threshold at the cluster level twice over. Canonical remediations: reporting-template guards for superlative claims; normalization-disclosure requirement; anti-pattern canonization as DECISION-NNN candidate; Goodhart-mitigation paired-metric.
+- **Awaiting Tom review.**
+
+---
+
+### REVISE-[new]: PRESUMPTION-142
+- **Date flagged:** 2026-05-13
+- **Item type:** PRESUMPTION
+- **Urgency:** HIGH (today's highest-risk new item; joint with ASSUMPTION-116; joins two prior CRITICAL/SYSTEMIC-RISK clusters)
+- **15a (FOR):** NO-SUPPORT-FOUND (strength: None)
+- **15b (AGAINST):** CHALLENGED (strength: Strong)
+- **What is at risk / Recommended action:** PRESUMPTION + strong challenge + NO-SUPPORT → REVISE. One-way reframing of three first-tier physics TOE programs as pre-foundational to Hoffman without inverse-acceptance check is the exact pattern PRESUMPTION-002 (CRITICAL) was REVISE'd for. Substantive examination of each named program's actual articulations (Carroll Mindscape Ep #91/#135; Wolfram Physics Project framework-completeness; Arkani-Hamed Amplituhedron-derives-spacetime) gives overwhelming prima facie evidence the inverse-acceptance test would fail for all three. MacIntyre cross-tradition methodology requires substantive engagement. Canonical remediations: inverse-acceptance check (assemble strongest case for each program's rejection); specialist-agent (Arkani-Hamed/Wolfram/Carroll) responses solicited before Pattern Detector deep-pass; PRS-CANDIDATE-01 demoted to contested-proposal status; joint cluster remediation with PRESUMPTION-002 + PRESUMPTION-074.
+- **Awaiting Tom review.**
+
+---
+
+### REVISE-[new]: PRESUMPTION-143
+- **Date flagged:** 2026-05-13
+- **Item type:** PRESUMPTION
+- **Urgency:** MEDIUM (joint with ASSUMPTION-113 + ASSUMPTION-114 single-data-point conjunction)
+- **15a (FOR):** NO-SUPPORT-FOUND (strength: None)
+- **15b (AGAINST):** CHALLENGED (strength: Strong)
+- **What is at risk / Recommended action:** PRESUMPTION + strong challenge + NO-SUPPORT → REVISE. Single-data-point maturity claim ("first end-to-end resolution cycle" framing) contradicts SRE production-readiness review (Beyer Ch. 27), SPC pattern-confirmation discipline (Wheeler), Hollnagel drift-into-failure mechanism, and PMBOK operational-readiness criteria. C2A2-internal track record shows first-cycle-success-then-degradation pattern (cowork-to-chat-sync had successful first cycle then degraded into the 6-consecutive-day failure underlying ASSUMPTION-118). Joins PRESUMPTION-040 operational-readiness cluster. Joint with ASSUMPTION-113 (MONITOR-120) and ASSUMPTION-114 (MONITOR-121) single-data-point conjunction — three items together inflate the maturity claim. Canonical remediations: demote framing to "first successful instance pending broader validation"; multi-cycle acceptance criteria; drift-into-failure guards; joint remediation with ASSUMPTION-113 + ASSUMPTION-114.
+- **Awaiting Tom review.**
+
+---
+
+### REVISE-[new]: PRESUMPTION-144
+- **Date flagged:** 2026-05-13
+- **Item type:** PRESUMPTION
+- **Urgency:** MEDIUM (pre-implementation flag for Vault Linker Agent; empirically falsifiable)
+- **15a (FOR):** NO-SUPPORT-FOUND (strength: None)
+- **15b (AGAINST):** CHALLENGED (strength: Strong)
+- **What is at risk / Recommended action:** PRESUMPTION + strong challenge + NO-SUPPORT → REVISE. Closed seven-category taxonomy presumed complete contradicts Hjørland classification theory, Foskett facet-analysis, Hodge KOS digital-library literature, Bowker-Star Sorting Things Out. Brief empirical examination of actual C2A2 vault content reveals at least 5-6 reference types not in the seven-category list (section-anchors, concept-tags, transcript-timestamps, image-embeds, podcast-episode-IDs, footnotes). The presumption is empirically falsifiable on inspection — straightforward test would falsify. Canonical remediations: empirical audit on representative vault sample before implementation; facet/extensible-list design replacing closed enumeration; explicit "other / TBD" residual category; audit cadence post-implementation; align categories with actual vault reference patterns. Pre-implementation flag: fix before Vault Linker Agent is built rather than after.
+- **Awaiting Tom review.**
+
+---
+
+### REVISE-[new]: PRESUMPTION-145
+- **Date flagged:** 2026-05-13
+- **Item type:** PRESUMPTION
+- **Urgency:** MEDIUM-HIGH (structural counterpart to ASSUMPTION-118 MONITOR-122; substrate-decomposition gate cluster)
+- **15a (FOR):** NO-SUPPORT-FOUND (strength: None)
+- **15b (AGAINST):** CHALLENGED (strength: Strong)
+- **What is at risk / Recommended action:** PRESUMPTION + strong challenge + NO-SUPPORT → REVISE. First-option bias: chat-scrape sign-in barrier framed as token-delegation problem without explicit redesign-vs-discard-vs-file-handoff comparison contradicts Goldratt theory-of-constraints, Christensen sunk-cost analysis, Bryar-Carr Amazon ADR practice. PREMISE-015 itself preserved alternative paths ("token-based delegation OR equivalent"); narrower-than-premise reading is the structural concern. PRESUMPTION-134 (REVISE 2026-05-11, HIGH, unresolved) substrate-decomposition gate applies — if substrate is shared, local redesign is not root-cause fix. Canonical remediations: explicit redesign-vs-discard-vs-file-handoff comparison with cost estimates; substrate-decomposition first; PREMISE-015 read at full breadth; joint remediation with ASSUMPTION-118 (MONITOR-122) and PRESUMPTION-134 cluster.
+- **Awaiting Tom review.**
+
+---
+
+### REVISE-[new]: PRESUMPTION-146
+- **Date flagged:** 2026-05-13
+- **Item type:** PRESUMPTION
+- **Urgency:** MEDIUM (third recurrence of on-disk-as-load-bearing-without-trigger pattern)
+- **15a (FOR):** NO-SUPPORT-FOUND (strength: None)
+- **15b (AGAINST):** CHALLENGED (strength: Moderate)
+- **What is at risk / Recommended action:** PRESUMPTION + moderate challenge + NO-SUPPORT → REVISE. Loughran papers on-disk-without-processing-trigger contradicts Reinertsen flow principles, Poppendieck Lean WIP-without-trigger anti-pattern, and PMBOK completed-vs-in-progress distinction. Third recurrence of on-disk-as-load-bearing-without-trigger pattern (after PRESUMPTION-128 and ASSUMPTION-111). Per-thinker asymmetry is unique structural concern: Wright/Rohr pending proposals are explicitly "blocking" (ASSUMPTION-111 MONITOR-113) while Loughran papers are "not-yet-ingested without urgency" — same on-disk status, different operational treatment. Canonical remediations: explicit ingest trigger for Loughran papers (date, event, or workflow signal); per-thinker policy parity across Wright/Rohr/Loughran; WIP visualization; joint remediation with PRESUMPTION-128 workflow-accommodation cluster.
+- **Awaiting Tom review.**
+
+---
+
+### REVISE-[new]: PRESUMPTION-147
+- **Date flagged:** 2026-05-13
+- **Item type:** PRESUMPTION
+- **Urgency:** LOW-MEDIUM
+- **15a (FOR):** NO-SUPPORT-FOUND (strength: None)
+- **15b (AGAINST):** CHALLENGED (strength: Moderate)
+- **What is at risk / Recommended action:** PRESUMPTION + moderate challenge + NO-SUPPORT → REVISE. Three-event narrative segmentation without explicit tier-criteria contradicts Allspaw post-mortem methodology, Boltanski-Thévenot worth-ordering critique, Pentland-Feldman routine-narrative simplification gap, and cognitive-psychology rule-of-three bias (McKee, Aristotle Poetics). Joins PRESUMPTION-036 single-cluster-framing cluster. Without explicit criteria, segmentation is non-reproducible. Canonical remediations: explicit tier-criteria (severity, scope, novelty); full-event-log alongside narrative-summary; reproducibility test; joint remediation with PRESUMPTION-036 cluster.
+- **Awaiting Tom review.**
+
+---
+
+### REVISE-[new]: PRESUMPTION-148
+- **Date flagged:** 2026-05-13
+- **Item type:** PRESUMPTION
+- **Urgency:** MEDIUM-HIGH (third-layer SELF-MEASUREMENT Goodhart cluster recurrence; most actionable architectural item this cycle)
+- **15a (FOR):** NO-SUPPORT-FOUND (strength: None)
+- **15b (AGAINST):** CHALLENGED (strength: Strong)
+- **What is at risk / Recommended action:** PRESUMPTION + strong challenge + NO-SUPPORT → REVISE. Proposal-queue +2-today framing as positive throughput contradicts Little's Law (queue arrival must balance with service rate), Reinertsen flow principles (WIP-growth as anti-signal), and Goodhart/Strathern (intake-count as target diverts effort from disposition). Third-layer recurrence of SELF-MEASUREMENT cluster at proposal-pending-count queue (after ASSUMPTION-112 MONITOR-114 cluster anchor, PRESUMPTION-123 REVISE 2026-05-10, PRESUMPTION-129 REVISE 2026-05-11, ASSUMPTION-107 REVISE 2026-05-11). Cluster now reaches multi-layer recurrence across REVISE-rate-as-target, REVISE-rate-as-confirmed, and proposal-queue-depth-as-positive — three distinct queue-and-rate layers within one anti-pattern signature. Canonical remediations: disposition-rate paired metric (proposal-throughput = dispositions/day, not intake/day); ratio-metric (intake:disposition ratio with explicit target); qualitative-veto on intake-celebration without disposition-match; joint cluster remediation with ASSUMPTION-112 + PRESUMPTION-123 + PRESUMPTION-129; multi-metric SLI/SLO design per Beyer SRE.
+- **Awaiting Tom review.**
+
+---
+
+**2026-05-13 REVISE summary:**
+- 12 new REVISE entries: ASSUMPTION-116 + PRESUMPTION-142 (HIGH — cross-tradition reframing cluster); PRESUMPTION-145 + PRESUMPTION-148 + ASSUMPTION-117 (MEDIUM-HIGH); ASSUMPTION-115 + PRESUMPTION-140 + PRESUMPTION-141 + PRESUMPTION-143 + PRESUMPTION-144 + PRESUMPTION-146 (MEDIUM); PRESUMPTION-147 (LOW-MEDIUM)
+- **Three ASSUMPTION REVISEs this cycle** (ASSUMPTION-115, ASSUMPTION-116, ASSUMPTION-117) — second consecutive cycle with non-zero ASSUMPTION REVISE rate (3/6 = 50%), markedly elevated relative to prior 0/8 + 0/8 + 1/9 sequence. PRESUMPTION REVISE rate is 9/10 (90%) — back to the 2026-05-10 high range; heuristic-exception rate fell from 5/12 (42%) to 1/10 (10%) at the PRESUMPTION layer.
+- Cluster signals:
+  1. **Unnormalized-superlative anti-pattern reaches four-layer breadth across stated/unstated forms within 4 days** (PRESUMPTION-116 → PRESUMPTION-129 → ASSUMPTION-107 → PRESUMPTION-141 + ASSUMPTION-115): extends and confirms the SYSTEMIC-RISK-FLAG raised 2026-05-11. The cluster has now satisfied ASSUMPTION-098 three-recurrence governance threshold at the cluster level twice over (across rate-comparison AND source-comparison layers). DECISION-NNN canonization candidacy strengthens.
+  2. **Cross-tradition transfer-validity cluster reaches new TOE-hierarchy layer** (PRESUMPTION-142 + ASSUMPTION-116): joins PRESUMPTION-002 CRITICAL + PRESUMPTION-074 SYSTEMIC-RISK; today's highest-risk new items. Pattern Detector deep-pass routing on contested philosophical premise compounds the cluster's downstream weight.
+  3. **SELF-MEASUREMENT Goodhart cluster reaches proposal-queue-depth layer** (PRESUMPTION-148): third-layer recurrence after rate-comparison layers; most actionable architectural item per 14b extraction. Cluster now spans REVISE-rate-as-target + REVISE-rate-as-confirmed + proposal-queue-depth-as-positive.
+  4. **Single-data-point conjunction at Agent 16 protocol layer** (ASSUMPTION-113 MONITOR-120 + ASSUMPTION-114 MONITOR-121 + PRESUMPTION-143 REVISE): three-item conjunction inflating the protocol-maturity claim. Method, cadence, and protocol-maturity are independent claims that the conjunction risks conflating.
+  5. **Substrate-decomposition gate carries forward unresolved** (PRESUMPTION-134 REVISE 2026-05-11 + new ASSUMPTION-117 REVISE + new ASSUMPTION-118 MONITOR-122 + new PRESUMPTION-145 REVISE): four-item cluster across two cycles. Substrate-decomposition is the load-bearing prerequisite for at least three this-cycle dispositions.
+  6. **Closed-taxonomy pre-implementation flag** (PRESUMPTION-144): empirically falsifiable on inspection; pre-implementation rather than post-implementation REVISE — a useful precedent for catching design errors before they ship.
+- **INCORPORATE rate is 0/16 (0%) — back to 0% after the 2026-05-11 cycle broke the streak.** ASSUMPTION-112 (MONITOR-114) SELF-MEASUREMENT cluster prediction temporarily restored: this cycle would re-instate the "0% INCORPORATE" pattern that PRESUMPTION-148 (also this cycle, REVISE) flags as the cluster signature. Self-referential signal — the cluster predicts the cycle that produces the prediction's confirmation.
+
+---
+
+## 2026-05-14 REVISE entries (4 items: 2 ASSUMPTION + 2 paired PRESUMPTION)
+
+### REVISE-[new]: ASSUMPTION-126
+- **Date flagged:** 2026-05-14
+- **Item type:** ASSUMPTION
+- **Urgency:** HIGH (joint with PRESUMPTION-159; joins substrate-decomposition cluster carry-forward; ASSUMPTION-118 MONITOR-122 path remains the architectural-layer fix)
+- **15a (FOR):** PARTIALLY-SUPPORTED (Moderate)
+- **15b (AGAINST):** CHALLENGED (Strong)
+- **What is at risk:** Treating credential-layer sign-in restoration as "drought broken" risks foreclosing the architectural-layer fix (ASSUMPTION-118 token-delegation redesign) and treating recurrence as a fresh failure rather than as the expected pattern. Working-channel framing then becomes the operational baseline, and the 7-day drought is effectively rationalized as "fixed." Substrate-decomposition gate (PRESUMPTION-134 REVISE 2026-05-11, unresolved) compounds the risk: if the failure shares substrate with other failure clusters, sign-in restoration is symptomatic, not curative.
+- **Recommended action:**
+  1. **Demote framing immediately:** "drought broken" → "momentarily restored; durability under observation."
+  2. **Multi-day durability test:** track success rate over 14+ days; correlate with sign-in-state events.
+  3. **Continue ASSUMPTION-118 path in parallel:** the architectural-layer fix is not preempted by the credential-layer restoration; token-delegation redesign proceeds.
+  4. **Prosecute PRESUMPTION-134 substrate-decomposition** (already on REVISE backlog from 2026-05-11): if substrate is shared, credential-layer fix is the wrong layer.
+  5. **Root-cause analysis** on the 7-day drought before treating it as resolved: what allowed sign-in state to lapse for 7 consecutive days? What changed at the moment of restoration?
+- **Awaiting Tom review.**
+
+### REVISE-[new]: PRESUMPTION-159 (paired with ASSUMPTION-126)
+- **Date flagged:** 2026-05-14
+- **Item type:** PRESUMPTION
+- **Urgency:** HIGH (paired with ASSUMPTION-126; same cluster)
+- **15a (FOR):** SUPPORTED (Strong)
+- **15b (AGAINST):** NO-CHALLENGE-FOUND (Weak)
+- **What is at risk:** Credential-layer-as-architectural-layer-fix confusion is canonical post-incident-analysis anti-pattern (Reason 1990 Swiss-cheese; Allspaw 2010; SRE postmortem culture). If the sign-in fix is framed as durable root-cause, the system loses the operational signal that PRESUMPTION-134 substrate-decomposition is unresolved.
+- **Recommended action:** Joint remediation with ASSUMPTION-126: demote framing; multi-day durability test; continue architectural-layer fix path; substrate-decomposition audit.
+- **Awaiting Tom review.**
+
+### REVISE-[new]: ASSUMPTION-128
+- **Date flagged:** 2026-05-14
+- **Item type:** ASSUMPTION
+- **Urgency:** HIGH (joins PRESUMPTION-002 + PRESUMPTION-080 + PRESUMPTION-161 transfer-validity cluster — multi-cycle carry-forward)
+- **15a (FOR):** PARTIALLY-SUPPORTED (Moderate)
+- **15b (AGAINST):** STRONGLY-CHALLENGED (Strong)
+- **What is at risk:** "FINDING-030 is first quantitative C2A2 detector" status is over-claimed. Three unaudited transfers underlie the claim: (1) active-inference ↔ OODA is informal analogy in literature (Parr/Pezzulo/Friston 2022 treat it as analogy, not formal homology); (2) traditions-as-probability-distributions is itself a load-bearing assumption that has not been validated; (3) comparable-claim-spaces is the precondition for KL-divergence to be meaningful as a cross-tradition metric, and this precondition has not been established. Without these preconditions, KL-divergence produces numbers but not signal. Treating it as a deployed detector imports unaudited transfers into the system's operational layer.
+- **Recommended action:**
+  1. **Demote claim:** "first quantitative C2A2 detector" → "candidate quantitative formalization pending transfer-validity audit."
+  2. **Prosecute PRESUMPTION-002 / PRESUMPTION-080 / PRESUMPTION-161 transfer-validity cluster:** these have been on the MONITOR/REVISE backlog and are now load-bearing.
+  3. **Pilot validation:** Run KL-divergence on known-similar and known-different tradition pairs (e.g., Kuhn vs. Lakatos as known-similar; Aquinas vs. logical positivism as known-different); check whether the metric tracks expert judgment.
+  4. **Operationalization audit:** before any further use, document how a "tradition" becomes a probability distribution; over what claim-space; how comparability across claim-spaces is established.
+- **Awaiting Tom review.**
+
+### REVISE-[new]: PRESUMPTION-161 (paired with ASSUMPTION-128)
+- **Date flagged:** 2026-05-14
+- **Item type:** PRESUMPTION
+- **Urgency:** HIGH (paired with ASSUMPTION-128; same transfer-validity cluster)
+- **15a (FOR):** SUPPORTED (Strong)
+- **15b (AGAINST):** NO-CHALLENGE-FOUND (Weak)
+- **What is at risk:** Cross-discipline metric transfer without explicit homology audit is canonical scientific-method concern (Cartwright 1999 "The Dappled World"). The PRESUMPTION-002 / PRESUMPTION-080 / PRESUMPTION-161 cluster represents three unresolved transfer-validity audits accumulating in the system. SYSTEMIC-RISK: cross-discipline transfers continue to enter faster than audits close them.
+- **Recommended action:** Joint remediation with ASSUMPTION-128. Audit the transfer-validity cluster as a single operational item; PRESUMPTION-002 (Thousand Brains → multi-agent AI) is the load-bearing top of the cluster.
+- **Awaiting Tom review.**
+
+---
+
+**2026-05-14 REVISE summary:**
+- 4 new REVISE entries: ASSUMPTION-126 + paired PRESUMPTION-159 (HIGH; credential-vs-architectural-layer); ASSUMPTION-128 + paired PRESUMPTION-161 (HIGH; transfer-validity cluster).
+- **ASSUMPTION REVISE rate this cycle:** 2/12 (16.7%) — markedly lower than the 2026-05-13 rate (3/6 = 50%). The 17-pathway articulation pass produced fewer REVISEs and more INCORPORATEs than recent operational-incident cycles.
+- **PRESUMPTION REVISE rate this cycle:** 2/18 (11.1%) — substantially lower than the 2026-05-13 rate (9/10 = 90%). Most PRESUMPTIONs received MONITOR rather than REVISE because their inferences are supported but the underlying design choices have caveats addressable as monitoring rather than revision.
+- **Cluster signals:**
+  1. **Substrate-decomposition gate carries forward unresolved into its third cycle** (PRESUMPTION-134 REVISE 2026-05-11; new ASSUMPTION-126 REVISE + PRESUMPTION-159 REVISE + PRESUMPTION-167 MONITOR-144 this cycle). The cluster is now ~5 items across three cycles. Substrate-decomposition is the load-bearing prerequisite for an increasing share of dispositions.
+  2. **Transfer-validity cluster extends to KL-divergence layer** (new ASSUMPTION-128 REVISE + PRESUMPTION-161 REVISE; joins PRESUMPTION-002 CRITICAL + PRESUMPTION-080). Cross-discipline transfers continue to accumulate faster than the audit closes them.
+- **INCORPORATE rate is 4/30 (13.3%) — first non-zero INCORPORATE cycle since 2026-05-11.** Cycle's INCORPORATE-richness is concentrated in pre-implementation architectural articulation items (broker hosting, library set, sync protocol, honesty layer) — articulation passes produce more INCORPORATE-likely items than operational-incident passes.
+
+---
+
+## 2026-05-15 REVISE additions (Agent 15c)
+
+### REVISE-[new]: PRESUMPTION-177
+**Date flagged:** 2026-05-15
+**Source item:** PRESUMPTION-177
+**Item type:** PRESUMPTION (unstated — surfaced by inference)
+**Origin:** 14b (2026-05-14 EOD)
+**Provenance chain:** [14b → 15a, 15b → 15c]
+**Current status:** REVISION-FLAGGED
+
+**Statement:** Chrome-MCP-offline failure today recurs after only one successful day; degraded-mode protocol treats the recurrence as a credential issue rather than as a recurring architectural failure mode.
+
+**Disposition:** REVISE — joint with PRESUMPTION-159 REVISE (2026-05-14, unresolved) and substrate-decomposition cluster (PRESUMPTION-134 REVISE 2026-05-11, unresolved)
+
+**15a result:** SUPPORTED (Strong) — credential-vs-architectural distinction is canonical post-incident-analysis (Reason 1990 "Human Error"; Allspaw 2009; Beyer et al. 2016 SRE; Hollnagel 2014 Safety-II); PRESUMPTION-159 carry-forward is the same pattern.
+
+**15b result:** NO-CHALLENGE-FOUND (Weak) — counter-patterns exist (some recurrence is genuinely credential-layer; N=2 is below canonical "recurring pattern" threshold) but do not refute the inference, especially given the PRESUMPTION-159 cluster carry-forward making this a second data point.
+
+**Reasoning for REVISE:** PRESUMPTION with strong inference paired with an unresolved REVISE cluster (PRESUMPTION-159, PRESUMPTION-134 substrate-decomposition gate) inherits REVISE per disposition heuristic. The recurrence of Chrome-MCP failure after only one good day is direct evidence of the recurring architectural failure mode that PRESUMPTION-159 named. Framing the recurrence as "Chrome MCP offline" (credential-layer) rather than as "Chrome-MCP-dependency architectural fragility" perpetuates the documented anti-pattern.
+
+**What is at risk:**
+- Continued operational drift on Chrome-MCP-dependent pathways (cowork-to-chat delivery; browser-mediated outputs)
+- Substrate-decomposition cluster (PRESUMPTION-134 REVISE 2026-05-11, PRESUMPTION-159 REVISE 2026-05-14, PRESUMPTION-167 MONITOR-146, ASSUMPTION-126 REVISE 2026-05-14) — now extending into fourth cycle without closure
+- Pathway 14 honesty-layer commitment (PREMISE-019) requires that recurring failures be classified accurately
+- Demo-readiness (ISME July 8-10, 2026) — Chrome-MCP-dependent demo paths carry recurrence risk
+
+**Recommended action for Tom's review:**
+1. **Resolve substrate-decomposition gate** — the cluster is now in its fourth cycle without closure. The PRESUMPTION-134 audit is the load-bearing item. Sub-steps:
+   - Enumerate Chrome-MCP dependency surface (which pathways/agents depend on Chrome-MCP being online)
+   - Classify each Chrome-MCP failure in the past 14 days as credential-vs-architectural
+   - Identify fall-back paths that don't depend on Chrome-MCP
+2. **Reframe operational reporting** — replace "Chrome MCP offline (likely credential)" with "Chrome-MCP-dependent path failed; failure mode pending classification" in degraded-mode protocol output
+3. **Bound the credential-vs-architectural distinction** — explicit criteria for when a recurrence becomes architectural (e.g., 2nd recurrence within N days)
+4. **Address Pathway 14 implication** — the honesty-layer commitment requires accurate failure classification; recurrence-as-credential framing without evidence violates the commitment
+
+**Urgency:** HIGH (joint with PRESUMPTION-159; substrate-decomposition cluster fourth-cycle carry-forward; ISME demo-readiness load-bearing)
+
+**Awaiting Tom review.**
+
+---
+
+**2026-05-15 REVISE summary:**
+- 1 new REVISE entry: PRESUMPTION-177 (HIGH; recurring-failure-as-credential; joint with PRESUMPTION-159 REVISE 2026-05-14 carry-forward and PRESUMPTION-134 substrate-decomposition REVISE 2026-05-11 carry-forward).
+- **ASSUMPTION REVISE rate this cycle:** 0/14 (0%) — no new ASSUMPTION REVISEs. ASSUMPTION-140 (sign-in fix holding) was a candidate but the framing concern lives in PRESUMPTION-177 paired; ASSUMPTION-140 received MONITOR with cluster-membership noted.
+- **PRESUMPTION REVISE rate this cycle:** 1/15 (6.7%) — substantially lower than the 2026-05-14 rate (2/18 = 11.1%) and the 2026-05-13 rate (9/10 = 90%). The breadth-arc 18-25 pass surfaced more presumptions about commitments-in-design than about operational failures, producing more MONITORs than REVISEs.
+- **Cluster signals:**
+  1. **Substrate-decomposition gate enters its fourth consecutive cycle without closure** (PRESUMPTION-134 REVISE 2026-05-11; PRESUMPTION-159 REVISE 2026-05-14; new PRESUMPTION-177 REVISE this cycle). The cluster now spans four cycles with at least one new entry per cycle. This is the strongest unresolved-cluster signal in the system.
+  2. **CRITICAL transfer-validity cluster extends to federation wire-format** (new ASSUMPTION-133 MONITOR-148 + new PRESUMPTION-170 MONITOR-160; joins PRESUMPTION-002 + PRESUMPTION-080 + PRESUMPTION-161 + ASSUMPTION-128 prior). Cluster has been open since 2026-04-13 without closure.
+  3. **Writing-pass-as-claim-making cluster grew this cycle** — four new MONITOR items (155, 165, 166, 171) form a new cluster joint with PRESUMPTION-166 carry-forward.
+  4. **Recursive-self-application cluster** — PRESUMPTION-180 multi-pathway recursive load (MONITOR-169 HIGH) extends a prior cluster (PRESUMPTION-165, PRESUMPTION-148) — recursive load growing.
+- **INCORPORATE rate is 3/29 (10.3%) — second consecutive non-zero INCORPORATE cycle.** Combined 2026-05-14 + 2026-05-15 INCORPORATE rate is 7/59 (11.9%), strongly above the prior baseline. Both cycles were driven by architectural-articulation passes; the pattern is now confirmed across two cycles.
+
+
+
+---
+
+## 2026-05-18 cycle additions (2 REVISE items)
+
+Both REVISE items in this cycle (PRESUMPTION-187, PRESUMPTION-188) extend the CRITICAL substrate-decomposition cluster (now N=5+ unresolved instances). Both flag the pre-classification anti-pattern recurring at new layers (pipeline-failure-vs-rate-mismatch; cadence-fix-vs-unbuilt-component). Cluster-level remediation is overdue.
+
+---
+
+### REVISE-[new]: PRESUMPTION-187
+**Date flagged:** 2026-05-18
+**Source item:** PRESUMPTION-187
+**Item type:** PRESUMPTION (unstated — surfaced by inference)
+**Origin:** 14b (2026-05-17 EOD)
+**Provenance chain:** [14b → 15a, 15b → 15c]
+**Current status:** REVISION-FLAGGED
+
+**Statement:** '14a/14b ingestion pipeline visibly stalled' framing presumes pipeline-failure (scheduler/credential/environment) rather than rate-mismatch (Chat-side production exceeds daily ingestion capacity); pipeline-failure framing operationally simpler, chosen by default.
+
+**Disposition:** REVISE — joins CRITICAL substrate-decomposition cluster (PRESUMPTION-134 REVISE 2026-05-11 unresolved; PRESUMPTION-159 REVISE 2026-05-14 unresolved; PRESUMPTION-177 REVISE 2026-05-15 unresolved)
+
+**15a result:** NO-SUPPORT-FOUND (None)
+
+**15b result:** STRONGLY-CHALLENGED (Strong) — Defaulting to pipeline-failure framing without classification is the exact pattern the substrate-decomposition cluster catches. The literature on incident analysis (Reason; Hollnagel) treats pre-classification as a known mode of failure-attribution error. The presumption joins a cluster now at N=4+ instances; pattern strength is strong.
+
+**Reasoning for REVISE:** PRESUMPTION + Strong challenge + cluster-membership in CRITICAL substrate-decomposition cluster (now N=4+). Per 15c heuristic: PRESUMPTION with strong challenge → lean REVISE with HIGH urgency. The cluster pattern is itself the systemic risk; this instance is one more data point that the pre-classification anti-pattern is recurring.
+
+**What is at risk:** (a) OPEN-047 (pipeline reliability audit) may fix the wrong layer; (b) the substrate-decomposition cluster pattern continues; (c) Pathway-14 honesty-layer commitment (PREMISE-019) requires accurate cause classification.
+
+**Recommended action for Tom's review:** 1. Diagnose the missed cycles before fixing: confirm scheduler fired vs. didn't; confirm 14a/14b ran vs. didn't; confirm input rate. 2. Cluster-level: establish pre-classification protocol that treats rate-mismatch as a peer candidate to pipeline-failure for all missed-cycle reports. 3. Tom's review of substrate-decomposition cluster as a whole (now N=4+ instances; not closing).
+
+**Urgency:** HIGH
+
+---
+
+### REVISE-[new]: PRESUMPTION-188
+**Date flagged:** 2026-05-18
+**Source item:** PRESUMPTION-188
+**Item type:** PRESUMPTION (unstated — surfaced by inference)
+**Origin:** 14b (2026-05-17 EOD)
+**Provenance chain:** [14b → 15a, 15b → 15c]
+**Current status:** REVISION-FLAGGED
+
+**Statement:** 'Verify 15d cadence' framing presumes c2a2-15d-monitor exists; lit-search note same day says 'no scheduled-task evidence visible'; cadence-fix-vs-unbuilt-component is the same pre-classification pattern.
+
+**Disposition:** REVISE — joins CRITICAL substrate-decomposition cluster (PRESUMPTION-134 REVISE 2026-05-11 unresolved; PRESUMPTION-159 REVISE 2026-05-14 unresolved; PRESUMPTION-177 REVISE 2026-05-15 unresolved)
+
+**15a result:** NO-SUPPORT-FOUND (None)
+
+**15b result:** STRONGLY-CHALLENGED (Strong) — Verifying cadence on an unbuilt component is the exact substrate-decomposition anti-pattern. The same-day evidence already shows the component is not visible; the framing persists despite contradicting evidence. Cluster N=4+ now joined by N=5.
+
+**Reasoning for REVISE:** PRESUMPTION + Strong challenge + cluster-membership + same-day contradicting evidence already on disk. Per 15c heuristic: PRESUMPTION with strong challenge → REVISE with HIGH urgency. This is the most clearly-falsifiable instance of the cluster pattern.
+
+**What is at risk:** (a) OPEN-046 + OPEN-047 may both be working on framing-questions about a component that doesn't exist; (b) cluster-level pattern recurrence.
+
+**Recommended action for Tom's review:** 1. Verify c2a2-15d-monitor scheduled task existence (5-minute audit). 2. If not built: build it (or document the decision not to build it as an architectural commitment). 3. Cluster-level: existence-before-property protocol for all subsequent component-audit invocations.
+
+**Urgency:** HIGH
+
+---
+
+**2026-05-18 cycle additions to revision_flags:**
+
+2 new REVISE items (PRESUMPTION-187, PRESUMPTION-188), both joining the CRITICAL substrate-decomposition cluster. The cluster is now at N=5+ unresolved instances; cluster-level remediation (pre-classification-protocol commitment) is overdue and should be elevated.
+
+---
+
+### REVISE-020:
+**Date flagged:** 2026-05-19
+**Source item:** ASSUMPTION-172
+**Item type:** ASSUMPTION
+**Urgency:** HIGH
+
+**Statement:** "Clofilium-CRC + Friston-precision-psychiatry as cross-tradition paradigm-shift-candidate cluster (precision-failure framing converges across bioelectric and neuromodulatory scales)."
+
+**What is at risk:**
+- DECISION-013 (cross-tradition bridge promotion)
+- Pattern Detector input quality
+- Over-claiming paradigm-shift status on vocabulary-convergence basis only
+
+**Evidence summary:** 15a found PARTIALLY-SUPPORTED (Moderate-strong; precision-weighting framings are real in both literatures); 15b found CHALLENGED (Strong; vocabulary-convergence ≠ structural-homology per Galison's "trading zone" critique; the two scales involve substantively different physical substrates).
+
+**Recommended action:** Downgrade "paradigm-shift cluster" framing to "framing-convergence-monitor"; require receiving-specialist (FEP, bioelectric) confirmation before promoting beyond hypothesis. Couples to PRESUMPTION-198/REVISE-023.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-021:
+**Date flagged:** 2026-05-19
+**Source item:** PRESUMPTION-196
+**Item type:** PRESUMPTION
+**Urgency:** HIGH
+
+**Statement:** "pending/-scan as output-ground-truth presumption; orchestrator treats absence-in-scan as evidence-of-absence-in-output without bounding scan-coverage or run-ordering."
+
+**What is at risk:**
+- All multi-agent state-visibility decisions in C2A2
+- OPEN-049 cascade
+- Downstream Pattern Detector input integrity
+
+**Evidence summary:** 15a found PARTIALLY-SUPPORTED (Weak; scan-as-truth acceptable as fallback only); 15b found CHALLENGED (Strong; textbook anti-pattern per distributed-systems literature — Helland, Kleppmann; event-sourcing and write-ahead-log patterns established as standard).
+
+**Recommended action:** Introduce write-receipt/manifest protocol as primary ground-truth layer; deprecate scan-as-truth pattern across all orchestrator/specialist/sewing-agent interactions. Couples to PRESUMPTION-204/REVISE-030 (symmetric error) and PREMISE-031 (ASSUMPTION-178 descriptive validation).
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-022:
+**Date flagged:** 2026-05-19
+**Source item:** PRESUMPTION-197
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** "agent-significance-judgment-as-bounded presumption; out-of-window exception filter grants unbounded inclusion discretion when agent can articulate cross-tradition signals."
+
+**What is at risk:**
+- Curation drift
+- Out-of-window inclusion rate unbounded
+- Carpathi-instance-validator cluster
+
+**Evidence summary:** 15a found PARTIALLY-SUPPORTED (Weak; articulation as a sanity-check is supported); 15b found CHALLENGED (Strong; articulation ≠ calibration per agent-evaluation literature; need ground-truth comparator).
+
+**Recommended action:** Add Tom-acceptance gate for out-of-window inclusions; cap exception rate at empirically-derived threshold; couple to PRESUMPTION-182 (Carpathi cluster).
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-023:
+**Date flagged:** 2026-05-19
+**Source item:** PRESUMPTION-198
+**Item type:** PRESUMPTION
+**Urgency:** HIGH
+
+**Statement:** "specialist-as-bridge-detector presumption; PROP-003 cross-tradition bridge claims to 5+ traditions are sole-source from Levin/Friston specialist without confirmation from receiving-tradition specialists."
+
+**What is at risk:**
+- Pattern Detector input integrity
+- Over-claimed cross-tradition bridges that propagate into downstream paradigm-shift candidates
+
+**Evidence summary:** 15a found PARTIALLY-SUPPORTED (Weak; specialist as detection layer is fine); 15b found CHALLENGED (Strong; sole-source bridge claims are hypotheses, not findings, per STS replication literature — Collins; Latour on closure).
+
+**Recommended action:** Mandatory cross-specialist confirmation step before bridge claim is published; mark sole-source bridges as "proposed pending cross-specialist confirmation" at agent write-time. Couples to PRESUMPTION-207/REVISE-032 (sewing-agent variant).
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-024:
+**Date flagged:** 2026-05-19
+**Source item:** PRESUMPTION-199
+**Item type:** PRESUMPTION
+**Urgency:** CRITICAL
+
+**Statement:** "uncommitted-state-is-safe-indefinitely presumption; 476-uncommittable-change accumulation tolerated without explicit checkpoint discipline."
+
+**What is at risk:**
+- Catastrophic data loss from one disk corruption or accidental rm event
+- Loss of 476 uncommitted edits including Phase-6 work
+
+**Evidence summary:** 15a found NO-SUPPORT-FOUND (no literature defends extended-uncommitted state as safe); 15b found CHALLENGED (Strong; SRE/DevOps literature — Beyer et al., Forsgren et al. "Accelerate" — well-attested loss modes from extended uncommitted state).
+
+**Recommended action:** URGENT — adopt structured intermediate-commit protocol to bound uncommitted state at e.g. N<50; constitutional "no blind push" rule needs amendment to permit checkpoint commits that are not pushes; visual-review-of-N decomposition per Cohen (couples to PREMISE-029).
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-025:
+**Date flagged:** 2026-05-19
+**Source item:** PRESUMPTION-200
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** "cycle-count-as-staleness-proxy presumption; 15d's cycle-3-stale-watch / cycle-4-escalation thresholds presume regular weekly cadence, decoupled from wall-clock-time staleness during irregular firing."
+
+**What is at risk:**
+- Escalation discipline silently under-reports during cadence gaps
+- Normalized deviance from stale-watch protocol
+
+**Evidence summary:** 15a found PARTIALLY-SUPPORTED (Weak; cycle-count proxy valid when cadence holds); 15b found CHALLENGED (Strong; documented failure mode when cadence is irregular — SRE escalation-threshold design literature).
+
+**Recommended action:** Add wall-clock-days as secondary staleness measure; escalate on whichever crosses threshold first. Couples to PRESUMPTION-188.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-026:
+**Date flagged:** 2026-05-19
+**Source item:** PRESUMPTION-201
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM-HIGH
+
+**Statement:** "morning-briefing-write-as-success vs Tom-action-as-success presumption; briefing-write counter is measured, action-rate is not, gap is invisible."
+
+**What is at risk:**
+- Goodhart SELF-MEASUREMENT cluster compounds
+- System appears productive while drifting from purpose
+- Briefing optimization without outcome accountability
+
+**Evidence summary:** 15a found PARTIALLY-SUPPORTED (Weak; briefing-write as interim metric defensible only as bootstrap); 15b found CHALLENGED (Strong; textbook Goodhart — Strathern, Muller "Tyranny of Metrics"; agent-self-measurement antipatterns).
+
+**Recommended action:** Add Tom-action-rate as outcome metric; pair every briefing-write count with downstream action-completion count; remove briefing-write as standalone success signal. Couples to PRESUMPTION-148/165/180/193 (SELF-MEASUREMENT cluster).
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-027:
+**Date flagged:** 2026-05-19
+**Source item:** PRESUMPTION-202
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** "queue-depth-as-review-urgency presumption; 42-pending framing recommends Tom-reviews-more (throughput-side intervention) without decomposing into generation-rate vs throughput-capacity."
+
+**What is at risk:**
+- Reviewer surge prescription treats Tom as elastic
+- Underlying mismatch (generation > service rate) goes unaddressed
+
+**Evidence summary:** 15a found PARTIALLY-SUPPORTED (Weak; depth as signal valid); 15b found CHALLENGED (Strong; queue theory — Kingman's formula, Little's law; depth signals investigation of arrival vs service rate, not throughput-side intervention).
+
+**Recommended action:** Decompose queue depth into arrival rate and service rate; if arrival > service, the fix is upstream (slower generation or higher reviewer capacity), not "more Tom-reviewing." Couples to ASSUMPTION-175/MONITOR-192, PRESUMPTION-186.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-028:
+**Date flagged:** 2026-05-19
+**Source item:** ASSUMPTION-182
+**Item type:** ASSUMPTION
+**Urgency:** HIGH
+
+**Statement:** "Three new substantive cross-tradition bridge notes written to synthesis/ by sewing-agent — Friston×Levin (precision-weighting substrate-agnostic FEP), McGilchrist×Rohr (hemispheric-operationalization), Wright×Rohr (ruach×Universal-Christ + cruciform-suffering)."
+
+**What is at risk:**
+- Pattern Detector input quality
+- Bridges promoted to synthesis/ without ratification
+- Wright×Rohr conflates pneumatology with cosmic Christology per theological literature
+
+**Evidence summary:** 15a found SUPPORTED (Strong/Moderate/Moderate per bridge); 15b found PARTIALLY-CHALLENGED (Moderate; substrate-agnostic FEP has documented limits; alternate hemispheric models exist; pneumatology-vs-Christology mapping disputes are real).
+
+**Recommended action:** Mark all three bridges as "proposed pending cross-specialist confirmation"; require receiving-tradition specialist sign-off before synthesis/ promotion. Wright×Rohr specifically needs theological-specialist disambiguation. Couples to PRESUMPTION-207/REVISE-032.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-029:
+**Date flagged:** 2026-05-19
+**Source item:** ASSUMPTION-183
+**Item type:** ASSUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** "FC26 abstract Revision-2 closed as submission-ready; corpus horizon stated as 'Day 100 of 308, full commentary by July 2026.'"
+
+**What is at risk:**
+- Planning-fallacy exposure on 308-day single-author commitment
+- Today's 2-cycle cadence gap silently strains the commitment without surfacing the strain
+
+**Evidence summary:** 15a found PARTIALLY-SUPPORTED (Moderate; submission-ready closure protocols sound); 15b found PARTIALLY-CHALLENGED (Moderate; long-horizon single-author commitments without slack budget systematically miss per planning-fallacy literature).
+
+**Recommended action:** Add slack/re-review trigger (couples to PRESUMPTION-208/PREMISE-036's Day-150 checkpoint); rephrase commitment with conditional ("contingent on cadence X holding"). The submission-ready closure itself is sound; the corpus-horizon framing needs softening.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-030:
+**Date flagged:** 2026-05-19
+**Source item:** PRESUMPTION-204
+**Item type:** PRESUMPTION
+**Urgency:** HIGH
+
+**Statement:** "Sewing-agent's pending/-scan-as-ground-truth — inverts morning's PRESUMPTION-196 (orchestrator-as-ground-truth) without auditing whether the two scans use identical path/filter/timing coverage."
+
+**What is at risk:**
+- Symmetric error to PRESUMPTION-196
+- Ground-truth role oscillates agent-to-agent within a single day
+- Every downstream agent inherits the latest oscillation
+
+**Evidence summary:** 15a found SUPPORTED (Strong; this is a real inversion that the system has documented); 15b found NO-CHALLENGE-FOUND (no literature defends scan-as-truth replacement by another scan-as-truth).
+
+**Recommended action:** Same as REVISE-021 — introduce write-receipt manifest layer; deprecate ANY scan-as-truth pattern regardless of which agent does the scanning. Core systemic fix.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-031:
+**Date flagged:** 2026-05-19
+**Source item:** PRESUMPTION-206
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** "Inter-model disagreement (Opus + Claude) as useful signal — presumes independent observations rather than correlated noise from shared training/RLHF lineage."
+
+**What is at risk:**
+- Over-weighting concurrence as confirmation when intra-family models share training data and RLHF preferences
+- Correlated-noise problem in ensembling literature
+
+**Evidence summary:** 15a found SUPPORTED (Strong; inter-model agreement IS a signal); 15b found PARTIALLY-CHALLENGED (Moderate; Dietterich on ensemble independence; Lakshminarayanan on deep ensembles; recent LLM-ensembling literature documenting correlated errors within model family).
+
+**Recommended action:** Discount intra-family agreement weight; when invoking inter-model concurrence as signal, name the independence level explicitly (e.g., "Opus + Sonnet concurrence at intra-family level only"); reserve high-weight concurrence claims for cross-family pairs.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-032:
+**Date flagged:** 2026-05-19
+**Source item:** PRESUMPTION-207
+**Item type:** PRESUMPTION
+**Urgency:** HIGH
+
+**Statement:** "Sewing-agent-as-bridge-ratification-authority — extends PRESUMPTION-198's sole-source-bridge-detector pattern to a second agent class without re-asking the cross-specialist confirmation question; creates circular-signal risk into Pattern Detector."
+
+**What is at risk:**
+- Closed-loop ratification spreads from specialist agents to sewing-agent class
+- Pattern Detector input integrity doubles in risk surface
+- Any new agent class would inherit the pattern by default
+
+**Evidence summary:** 15a found SUPPORTED (Strong; this is the documented extension); 15b found NO-CHALLENGE-FOUND (no literature defends agent-class-extension of detection-equals-ratification pathology).
+
+**Recommended action:** Mandatory "proposed pending cross-specialist confirmation" provenance label at agent write-time for ALL bridge claims regardless of source agent class; explicit ratification-vs-detection boundary in architecture-decision-record form. Couples to PRESUMPTION-198/REVISE-023, ASSUMPTION-182/REVISE-028.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+**2026-05-19 cycle additions to revision_flags:**
+
+Total REVISEs: 32 (19 prior + 13 new — REVISE-020 through REVISE-032).
+
+REVISE rate this cycle (excluding cycle-1 refreshes): 13/28 = 46% (notably high; dominated by PRESUMPTION-side clusters surfaced today).
+
+HIGH/CRITICAL urgency: REVISE-024 (CRITICAL — PRESUMPTION-199 VCS hygiene); REVISE-020 (HIGH — ASSUMPTION-172 paradigm-shift overclaim); REVISE-021 (HIGH — PRESUMPTION-196 scan-as-truth); REVISE-023 (HIGH — PRESUMPTION-198 sole-source bridges); REVISE-028 (HIGH — ASSUMPTION-182 unratified bridges); REVISE-030 (HIGH — PRESUMPTION-204 scan-as-truth inversion); REVISE-032 (HIGH — PRESUMPTION-207 closed-loop ratification spread). REVISE-026 MEDIUM-HIGH (PRESUMPTION-201 Goodhart).
+
+Cluster identification:
+- Ground-truth oscillation cluster: REVISE-021 + REVISE-030 (both polarities of scan-as-truth)
+- Closed-loop ratification cluster: REVISE-023 + REVISE-028 + REVISE-032 (spreading across agent classes)
+- Goodhart SELF-MEASUREMENT cluster: REVISE-026 + REVISE-027 (joins prior PRESUMPTION-148/165/180/193 cluster)
+- VCS hygiene cluster: REVISE-024 (couples to PREMISE-029 visual-review-decomposition)
+
+All REVISEs status AWAITING-REVIEW per protocol — require Tom's response before status changes.
+
+---
+
+
+**2026-05-20 cycle additions to revision_flags (REVISE-033..041):**
+
+### REVISE-033:
+**Date flagged:** 2026-05-20
+**Source item:** ASSUMPTION-189
+**Item type:** ASSUMPTION
+**Urgency:** HIGH
+
+**Statement:** "Recurring index.lock + 716/356 morass caused by colliding/silently-failing scheduled commit agents."
+
+**What is at risk:** The 21:00 sync run, all scheduled commit agents, vault durability; recurrence corrupts staging state (716/356 morass).
+
+**Evidence summary:** 15a found SUPPORTED (Strong); 15b found PARTIALLY-CHALLENGED (Moderate). 15a SUPPORTED (Strong; collision is a real, common mechanism); 15b PARTIALLY-CHALLENGED (Moderate; credible alternative causes share the symptom and it is under-instrumented). Both directions converge on the same remediation: serialize + instrument.
+
+**Recommended action:** Serialize every scheduled git operation behind a single exclusive lock (flock); add per-agent commit + lock-acquire/release logging; add a guarded stale-lock clear on startup; re-evaluate after one week of logged runs. Couples ASSUMPTION-188, ASSUMPTION-190, PRESUMPTION-211 (REVISE-038), PRESUMPTION-216.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-034:
+**Date flagged:** 2026-05-20
+**Source item:** ASSUMPTION-198
+**Item type:** ASSUMPTION
+**Urgency:** MEDIUM-HIGH
+
+**Statement:** "32 fabricated transcripts to re-fetch before July 8 (transcript-only; commentaries sound)."
+
+**What is at risk:** Pathway-14 honesty layer; the July-8 publicize gate; corpus integrity if contaminated commentaries pass as sound.
+
+**Evidence summary:** 15a found SUPPORTED (Strong); 15b found PARTIALLY-CHALLENGED (Moderate-Strong). 15a SUPPORTED (Strong; re-fetch is the right repair); 15b PARTIALLY-CHALLENGED (Moderate-Strong; the 'commentaries sound' scope is unverified and contamination propagates to derived artifacts). The action item (re-fetch) is sound but the contamination-scope assumption needs revision before the gate.
+
+**Recommended action:** Before July 8: (1) proceed with the 32-transcript re-fetch; (2) for each fabricated transcript, enumerate commentaries derived from it and re-verify them against the re-fetched source; (3) replace the blanket 'commentaries sound' assumption with a per-commentary provenance check. Couples Pathway-14, ASSUMPTION-199 (citation provenance).
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-035:
+**Date flagged:** 2026-05-20
+**Source item:** ASSUMPTION-199
+**Item type:** ASSUMPTION
+**Urgency:** HIGH
+
+**Statement:** "Lit-pipeline cycle-1 carry-forward (no net-new search, low yield) + training-corpus citation convention."
+
+**What is at risk:** All 15a/15b grounding quality; the validated_premises register; couples PRESUMPTION-214 (MONITOR-205) and PRESUMPTION-215 (REVISE-040); symmetric to ASSUMPTION-198 fabrication concern.
+
+**Evidence summary:** 15a found PARTIALLY-SUPPORTED (Moderate); 15b found CHALLENGED (Strong). 15a PARTIALLY-SUPPORTED (Moderate; defensible for low-velocity/well-attested topics); 15b CHALLENGED (Strong; fails for fast-moving/long-tail, raises fabricated-citation risk, self-referential to the pipeline's own method). The asymmetry favors revision.
+
+**Recommended action:** Stratify refresh by field velocity (live search for fast-moving/recency-dependent items; carry-forward only for low-velocity well-attested ones); label every citation as training-corpus or live-verified; schedule a periodic live-literature audit of a carry-forward sample to empirically test the low-yield assumption. SYSTEMIC-RISK-FLAG E (epistemic-grounding method).
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-036:
+**Date flagged:** 2026-05-20
+**Source item:** PRESUMPTION-209
+**Item type:** PRESUMPTION
+**Urgency:** HIGH
+
+**Statement:** "A single agent's directory scan is authoritative — no reconciliation layer across counting agents."
+
+**What is at risk:** Conservation-gate decisions, Pattern Detector input integrity, OPEN-055; all count-driven control logic.
+
+**Evidence summary:** 15a found NO-SUPPORT-FOUND (Weak); 15b found CHALLENGED (Strong). 15a NO-SUPPORT-FOUND (Weak; single-source-of-truth actually argues for reconciliation); 15b CHALLENGED (Strong; CAP/consensus/read-repair + observed split-brain discrepancies). Clear asymmetry against the presumption.
+
+**Recommended action:** Introduce a reconciliation layer as source of truth: write-receipt manifest, inter-agent count agreement, and alarms on disagreement; treat any single scan as a proposal pending reconciliation. Couples PRESUMPTION-196/REVISE-021, PRESUMPTION-204/REVISE-030, ASSUMPTION-186, OPEN-055. SYSTEMIC-RISK-FLAG A.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-037:
+**Date flagged:** 2026-05-20
+**Source item:** PRESUMPTION-210
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM-HIGH
+
+**Statement:** "Raw queue depth is a valid proxy for 'generate more?' — no decomposition before throttling."
+
+**What is at risk:** Generation throttling logic; conservation gate; OPEN-055; compounds ASSUMPTION-186 and PRESUMPTION-202.
+
+**Evidence summary:** 15a found PARTIALLY-SUPPORTED (Weak); 15b found CHALLENGED (Strong). 15a PARTIALLY-SUPPORTED (Weak; signaling half only); 15b CHALLENGED (Strong; decomposition required by all flow/TOC literature). Strong asymmetry; mirrors the already-REVISEd PRESUMPTION-202.
+
+**Recommended action:** Decompose queue depth into generation-rate and throughput-rate components per cycle; key the generate-more decision off the rate gap, not raw depth; report all three. Couples PRESUMPTION-202, ASSUMPTION-186, OPEN-055.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-038:
+**Date flagged:** 2026-05-20
+**Source item:** PRESUMPTION-211
+**Item type:** PRESUMPTION
+**Urgency:** CRITICAL
+
+**Statement:** "File-on-disk == durably persisted — commit responsibility is unowned."
+
+**What is at risk:** All generated vault/PRS/artifact content; OPEN-056; the entire commit/persistence pipeline; couples ASSUMPTION-188/189/190, REVISE-033.
+
+**Evidence summary:** 15a found NO-SUPPORT-FOUND (Weak); 15b found CHALLENGED (Strong). 15a NO-SUPPORT-FOUND (Weak); 15b CHALLENGED (Strong, CRITICAL; ACID-D, git semantics, fsync research, ownership). Maximal asymmetry against the presumption.
+
+**Recommended action:** Assign explicit, single, serialized commit ownership; redefine durability as committed+pushed (not on-disk); emit write-receipts only post-commit; alarm on uncommitted-content age; treat the working tree as staged-not-durable everywhere. Couples REVISE-033 (serialization), PRESUMPTION-199/REVISE-024, OPEN-056. SYSTEMIC-RISK-FLAG D (CRITICAL).
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-039:
+**Date flagged:** 2026-05-20
+**Source item:** PRESUMPTION-212
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** "The documented number == the true number — registers presumed consistent and current."
+
+**What is at risk:** All register-driven decisions; Pattern Detector input quality; couples ASSUMPTION-192/193, PREMISE-040, OPEN-055.
+
+**Evidence summary:** 15a found NO-SUPPORT-FOUND (Weak); 15b found CHALLENGED (Strong). 15a NO-SUPPORT-FOUND (Weak; ideal supports enforcement not assumption); 15b CHALLENGED (Strong; software-aging + two same-cycle realized instances). Asymmetry against the presumption, with in-system proof.
+
+**Recommended action:** Auto-derive documented figures from their artifacts; add register-vs-artifact reconciliation/divergence checks (CI or scheduled); treat documented numbers as claims requiring validation; alarm on divergence. Couples PREMISE-040 (auto-derive stats), ASSUMPTION-193 (MONITOR-199), PRESUMPTION-209. SYSTEMIC-RISK-FLAG A.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-040:
+**Date flagged:** 2026-05-20
+**Source item:** PRESUMPTION-215
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM-HIGH
+
+**Statement:** "Training-corpus is an adequate stand-in for live literature when grounding premises."
+
+**What is at risk:** The entire 15a/15b grounding layer and validated_premises register; epistemic credibility of the self-awareness pipeline; couples ASSUMPTION-198 (fabrication), ASSUMPTION-199, PRESUMPTION-214.
+
+**Evidence summary:** 15a found PARTIALLY-SUPPORTED (Moderate); 15b found CHALLENGED (Strong). 15a PARTIALLY-SUPPORTED (Moderate; adequate for well-attested facts); 15b CHALLENGED (Strong; long-tail/recency failure + fabrication risk; self-applying to this run). Asymmetry favors revision with a scoping carve-out.
+
+**Recommended action:** Label every citation's provenance (training-corpus vs live-verified); require live literature search for recency-dependent or long-tail premises; live-verify a sample of high-stakes citations; reserve training-corpus grounding for well-attested foundations. SYSTEMIC-RISK-FLAG E (epistemic-grounding method). Note: applies to this run's own citations.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-041:
+**Date flagged:** 2026-05-20
+**Source item:** PRESUMPTION-220
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** "On-cadence firing == healthy pipeline — no input/output-validity check paired to cadence."
+
+**What is at risk:** Pipeline-health reporting; the self-measurement layer; ASSUMPTION-117/200 (cadence claims); couples PRESUMPTION-201, FLAG C.
+
+**Evidence summary:** 15a found PARTIALLY-SUPPORTED (Weak); 15b found CHALLENGED (Strong). 15a PARTIALLY-SUPPORTED (Weak; liveness only); 15b CHALLENGED (Strong; Goodhart, liveness-vs-safety, with same-cycle proof that cadence-green coincided with validity-red). Strong asymmetry, in-system demonstrated.
+
+**Recommended action:** Pair cadence-liveness with input/output-validity checks (schema/sanity/coverage on 14a/14b/15x outputs); report error/quality signals alongside liveness; treat on-cadence firing as necessary-but-not-sufficient for health. Couples PRESUMPTION-201/REVISE-026 (Goodhart cluster), ASSUMPTION-117/200. SYSTEMIC-RISK-FLAG C.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Current status: REVISION-FLAGGED
+
+---
+
+Total new REVISEs this run: 9 (REVISE-033 through REVISE-041). CRITICAL: REVISE-038 (PRESUMPTION-211). HIGH: REVISE-033, REVISE-035, REVISE-036. All status AWAITING-REVIEW per protocol (require Tom's response before status changes).
+
+Clusters: FLAG A ground-truth oscillation (REVISE-036, REVISE-039); FLAG D VCS/persistence (REVISE-033, REVISE-038 CRITICAL); FLAG E epistemic-grounding NEW (REVISE-035, REVISE-040); FLAG C Goodhart (REVISE-041); queue-decomposition (REVISE-037 + prior PRESUMPTION-202); corpus-integrity (REVISE-034).
+
+---
+
+### REVISE-042:
+**Date flagged:** 2026-05-21
+**Source item:** ASSUMPTION-208
+**Item type:** ASSUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** Progress = better compression; a forming master science shows as total description length falling while coverage rises.
+
+**What is at risk:** The entire progress-measurement layer and any decision tying 'compression' to 'progress'; the proposed headline metric. Gated by PRESUMPTION-222 (REVISE-044).
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Moderate; real compression-as-progress lineage). 15b CHALLENGED (Strong; ill-defined/uncomputable total description length, paradigm-incommensurability, gameability, plus counterexamples where progress adds machinery). Asymmetry against, on a high-stakes headline metric resting on an unvalidated presumption.
+
+**Recommended action:** Do NOT adopt description-length as THE progress metric. Demote to a single explicitly-labeled, computable proxy (LM cross-entropy codelength or MDL graph summarization) used as one indicator, paired with a coverage/fidelity guard; validate the proxy against independently-judged progress before any headline use. Resolve PRESUMPTION-222 first.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-043:
+**Date flagged:** 2026-05-21
+**Source item:** PRESUMPTION-221
+**Item type:** PRESUMPTION
+**Urgency:** HIGH
+
+**Statement:** The connectome is the right master-metaphor — neural/Hawkins structure presumed to transfer to narratives without a transfer-condition check.
+
+**What is at risk:** The whole connectome metric suite: ASSUMPTION-201 (connectome framing), ASSUMPTION-202 (association-fiber/integration), PRESUMPTION-229 (metrics at scale). The analogy is load-bearing and unchecked.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Moderate; generic network metaphor only). 15b CHALLENGED (Strong; brain-specific measures presuppose physical constraints narratives lack, connectome metrics are null-model-fragile, and no transfer check exists). Designer-unaware presumption load-bearing for the whole metric suite.
+
+**Recommended action:** Before any connectome metric informs a decision, run a one-time transfer-condition audit: for each metric, state the brain-specific assumption it relies on (wiring economy, developmental constraint) and accept only those whose assumptions hold for a curated narrative graph; default to generic graph measures with explicit degree-preserving null models. Re-label 'connectome' as heuristic where assumptions fail.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-044:
+**Date flagged:** 2026-05-21
+**Source item:** PRESUMPTION-222
+**Item type:** PRESUMPTION
+**Urgency:** HIGH
+
+**Statement:** Narrative compression == information-theoretic compression — description length presumed definable/computable over PRS triplets.
+
+**What is at risk:** ASSUMPTION-208's headline progress metric and any 'compression' claim about the corpus; the connectome compression sub-claim in ASSUMPTION-201.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Moderate; computable proxies — LM codelength, MDL graph summarization — exist). 15b CHALLENGED (Strong; no canonical/computable description length, scheme-dependence, syntax != meaning). Designer-unaware presumption gating a headline metric.
+
+**Recommended action:** Drop the identity. Commit to a single explicitly-labeled, computable proxy (LM cross-entropy codelength OR MDL graph summarization), fix and publish its coding scheme, and validate it against independently-judged progress. Treat it as a scheme-relative indicator, never as 'the' narrative compression. Resolve before ASSUMPTION-208's metric is used.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-045:
+**Date flagged:** 2026-05-21
+**Source item:** PRESUMPTION-223
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** Making integration visible/attractive is value-neutral — convergence-emphasis views presumed not to bias toward convergence over preserved rivalry.
+
+**What is at risk:** The pluralism commitment in ASSUMPTION-207; the credibility of any 'convergence is increasing' reading drawn from the viz; self-confirming unification.
+
+**Evidence summary:** 15a NO-SUPPORT-FOUND (Weak; neutrality is only an aspiration). 15b CHALLENGED (Strong; framing effects, viz-ethics, attention/salience all show emphasis shapes inference). Clear asymmetry: no support for neutrality, strong evidence against it.
+
+**Recommended action:** Stop treating the convergence-emphasis design as value-neutral. Give preserved rivalry/incommensurability visual parity with convergence (color/size/position), audit the view for convergence tilt, and A/B test whether viewers over-estimate convergence vs a balanced control. The text-level pluralism guard is insufficient against pre-attentive salience.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-046:
+**Date flagged:** 2026-05-21
+**Source item:** PRESUMPTION-228
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** The "3 literal hubs" finding reflects the territory, not the resource-naming/normalization method (measurement-artifact risk).
+
+**What is at risk:** DECISION-040 (convergence-is-analogical) if it relies on the '3 hubs' count; the evidence basis cited for ASSUMPTION-205 (the principle is INCORPORATED as PREMISE-042, but the count is quarantined here).
+
+**Evidence summary:** 15a NO-SUPPORT-FOUND (Weak; only conditional support under controlled vocabulary, which is not documented). 15b CHALLENGED (Strong; vocabulary problem, entity resolution, in-system FLAG A measurement-integrity history). Strong asymmetry against trusting the raw count.
+
+**Recommended action:** Before DECISION-040 firms, run entity resolution / normalization on shared-resource names and a sensitivity analysis re-counting literal hubs under >=3 reasonable normalization schemes; report stability. Use the analogical-convergence PRINCIPLE (PREMISE-042), not the raw literal count, as the decision basis.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+Total new REVISEs this run: 5 (REVISE-042 through REVISE-046). HIGH urgency: REVISE-043, REVISE-044. All status AWAITING-REVIEW per protocol (require Tom's response before status changes).
+Clusters: FLAG F connectome-analogy transfer (REVISE-043 HIGH); FLAG G compression-metric definability (REVISE-042, REVISE-044 HIGH); FLAG A measurement-integrity continuation (REVISE-046); convergence-emphasis neutrality (REVISE-045).
+
+---

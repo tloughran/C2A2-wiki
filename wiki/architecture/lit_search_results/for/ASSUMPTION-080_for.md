@@ -29,3 +29,35 @@ SEARCH-FOR-ASSUMPTION-080:
   Caveats: (a) The bug-class is supported, but the specific Anthropic attribution rests on C2A2's own observations and the absence of alternative explanations; (b) literature warns that silent-skip patterns are easy to misattribute — clock skew, race conditions, and persistence dropouts often produce identical symptoms; (c) the partition-by-link-count predicate is one of several count-predicates that could explain the observation.
 
   Recommendation: PARTIALLY-SUPPORTED (bug-class strongly supported; specific link-count partition needs disambiguation against alternative count-predicates)
+
+---
+
+SEARCH-FOR-ASSUMPTION-080 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-080
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: ASSUMPTION-080
+    Item type: ASSUMPTION
+    Transform at each step:
+      14a (cycle 0): Originally extracted from silent-skip diagnosis
+      15a (cycle 0): Searched for supporting literature → PARTIALLY-SUPPORTED
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Weekly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED, refreshed; no change
+
+  New evidence weighed: No new literature in the ~2-week gap on scheduler silent-skip bug-classes.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (Moderate)
+
+  Summary: Prior PARTIALLY-SUPPORTED finding stands. Bug-class still supported; specific attribution still warrants disambiguation.
+
+  Caveats: Empirical multi-cycle observation is the cheapest path to resolution.
+
+  Recommendation: PARTIALLY-SUPPORTED (refreshed; carry forward prior recommendation)

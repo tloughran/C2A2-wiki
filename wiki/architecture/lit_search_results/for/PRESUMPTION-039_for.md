@@ -26,3 +26,35 @@ SEARCH-FOR-PRESUMPTION-039:
   Caveats: The presumption could become supportable with a short audit (corpus of Tom's actual resumption phrasings from prior sessions) or a feedback loop that logs missed triggers. Without either, literature support is absent.
 
   Recommendation: NO-SUPPORT-FOUND
+
+---
+
+SEARCH-FOR-PRESUMPTION-039 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-19
+  Original item: PRESUMPTION-039
+  Original statement: (see prior cycle for full statement)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a → 15c → 15d → 15a] (cycle 1)
+    Original item: PRESUMPTION-039
+    Item type: PRESUMPTION
+    Transform at each step:
+      14b (cycle 0): Originally inferred as designer-guessed trigger taxonomy
+      15a (cycle 0): Searched for supporting literature → NO-SUPPORT-FOUND
+      15c (cycle 0): Initial disposition issued → MONITOR
+      15d: Re-triggered on Monthly cadence (2026-05-18 trigger; processed 2026-05-19)
+      15a (cycle 1): Re-searched for supporting literature
+    Current status: NO-SUPPORT-FOUND, refreshed; no change
+
+  New evidence weighed: No new supporting literature in the ~5-week gap. Designer-guessed taxonomy gap persists.
+
+  Sources (new / refreshed): none
+
+  Strength of support: Unchanged from prior cycle (None)
+
+  Summary: Prior NO-SUPPORT-FOUND finding stands. Corpus-grounded validation still the only path to support.
+
+  Caveats: Internal corpus audit would resolve faster than literature search.
+
+  Recommendation: NO-SUPPORT-FOUND (refreshed; carry forward prior recommendation)

@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-206:
+  Date searched: 2026-05-21
+  Original item: ASSUMPTION-206
+  Original statement: "Generative-coil detection is lexical-first (v1, 17 chains); semantic/embedding is v2."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a]
+    Original item: ASSUMPTION-206
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted: staged detection plan — v1 lexical/string-matching (17 chains found), v2 semantic/embedding.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E / REVISE-040 noted)
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Baseline-first ML practice (Zinkevich, "Rules of Machine Learning"). — A high-precision lexical baseline before semantic models is standard, low-risk staging.
+    2. Manning, Raghavan & Schutze, "Introduction to Information Retrieval." — Exact match gives high precision, low recall; appropriate for a precision-first v1.
+    3. Furnas et al. (1987) "The vocabulary problem." — Predicts low lexical recall, which is exactly why v2 semantic/embeddings is the correct next stage; supports the staging.
+
+  Strength of support: Strong
+
+  Summary: Lexical-first detection is sound engineering: exact/string matching gives high-precision, auditable results appropriate for a v1, and deferring semantic/embedding methods to v2 is the standard precision-then-recall progression. The literature both supports the staging and predicts the limitation (low recall) that v2 is meant to fix.
+
+  Caveats: The 17-chain count is a precision-biased lower bound on true coils; recall is unknown until v2 (or a labeled sample) exists.
+
+  Recommendation: SUPPORTED

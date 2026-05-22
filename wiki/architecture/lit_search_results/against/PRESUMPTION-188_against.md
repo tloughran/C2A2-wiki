@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-188:
+  Date searched: 2026-05-18
+  Original item: PRESUMPTION-188
+  Original statement: "'Verify 15d cadence' framing presumes c2a2-15d-monitor exists; lit-search note same day says 'no scheduled-task evidence visible'; cadence-fix-vs-unbuilt-component is the same pre-classification pattern."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-188
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Extracted/Surfaced from 2026-05-17 c2a2-self-awareness-daily run (resumed cycle)
+      15b: Searched for challenging literature
+    Current status: STRONGLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Reason (1990) — pre-classification of failure mode without state-check is canonical incident-analysis error.
+    2. SRE literature (Beyer et al.) — verify-existence before verify-cadence is the standard operational debug sequence.
+    3. C2A2-internal: lit-search note same day says 'no scheduled-task evidence visible' — direct contradiction of the existence presumption.
+    4. Substrate-decomposition cluster — PRESUMPTION-188 is the same pre-classification pattern as PRESUMPTION-187 and the broader cluster.
+
+  Strength of challenge: Strong
+
+  Summary: Verifying cadence on an unbuilt component is the exact substrate-decomposition anti-pattern. The same-day evidence already shows the component is not visible; the framing persists despite contradicting evidence. Cluster N=4+ now joined by N=5.
+
+  Specific risks: (a) Auditing cadence on something that doesn't exist wastes effort; (b) leaves the real problem (component not built) unaddressed; (c) extends substrate-decomposition cluster.
+
+  Mitigations available: (a) Verify existence first: does c2a2-15d-monitor scheduled task exist? (b) cluster-level remediation as in PRESUMPTION-187.
+
+  Recommendation: STRONGLY-CHALLENGED
+
+  STEELMAN:
+    Item: PRESUMPTION-188
+    Strongest counterargument: The strongest case: 'verify cadence' presumes the thing exists. Lit-search note says it doesn't. The framing should be 'verify existence; if exists, verify cadence; if not, build before verifying.' This is the canonical existence-before-property check.
+

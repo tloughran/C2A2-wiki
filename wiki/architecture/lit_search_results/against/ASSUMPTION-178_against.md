@@ -1,0 +1,31 @@
+SEARCH-AGAINST-ASSUMPTION-178:
+  Date searched: 2026-05-19
+  Original item: ASSUMPTION-178
+  Original statement: "Three-way orchestrator/briefing/specialist contradiction on Monday Levin+Friston output; orchestrator's pending/-scan reports 0, specialist reports 3 written."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-178
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Surfaced from morning state-comparison
+      15b: Searched for challenging literature
+    Current status: NO-CHALLENGE-FOUND
+
+  Challenging evidence found: No
+
+  Sources:
+    1. Lamport, L. (1978). "Time, Clocks, and the Ordering of Events in a Distributed System." CACM. — Cited in support; no published challenge to the structural inevitability of inter-agent state disagreement absent protocol.
+    2. Brewer, E. (2000). CAP theorem. — Cited in support; no challenge to the existence of the disagreement, only debates about which trade-off to pick.
+    3. Russell & Norvig (2020). "AI: A Modern Approach." — Standard text; treats inter-agent disagreement as default.
+
+  Strength of challenge: None
+
+  Summary: The descriptive claim (orchestrator reports 0, specialist reports 3) is a factual observation, not a contested model. The literature on distributed/multi-agent systems uniformly treats such disagreements as structurally expected. There is no published position contesting the existence or significance of such three-way contradictions.
+
+  Specific risks: None to the descriptive claim itself. (The downstream remediation — choosing source-of-truth — has live disagreements, which are addressed in PRESUMPTION-196.)
+
+  Mitigations available: N/A — claim is descriptive.
+
+  Recommendation: NO-CHALLENGE-FOUND

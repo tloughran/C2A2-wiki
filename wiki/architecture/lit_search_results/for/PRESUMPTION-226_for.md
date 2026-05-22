@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-226:
+  Date searched: 2026-05-21
+  Original item: PRESUMPTION-226
+  Original statement: "Representative-narrative substitution preserves a tradition-bridging edge's meaning — users presumed to read tradition-level bridges correctly from two specific files."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a]
+    Original item: PRESUMPTION-226
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred: a tradition-level bridging edge is rendered via two specific representative narrative files; presumed users read it as a tradition-level bridge, not an idea-level link.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E / REVISE-040 noted)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Rosch (1975) prototype/exemplar theory. — People reason about categories via representative exemplars; a representative narrative can stand for a tradition.
+    2. Landmark-based navigation / synecdoche in viz. — Part-for-whole is a common, often effective communicative device.
+
+  Strength of support: Weak-Moderate
+
+  Summary: There is weak-moderate support that a representative exemplar can evoke a category (prototype theory) and that part-for-whole encoding can communicate effectively. So representative-narrative substitution is not unreasonable.
+
+  Caveats: Effective evocation depends on the exemplar being recognized AS representative; otherwise it reads literally.
+
+  Recommendation: PARTIALLY-SUPPORTED
