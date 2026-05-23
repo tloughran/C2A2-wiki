@@ -16,8 +16,8 @@ length_ratio_to_target: 0.682
 length_note: "Q.8–Q.9 (9 articles) treated thematically as the causal architecture of policy-selection. The medieval formal-vs-material distinction at the will-level and the multi-source movement of the will (intellect, passion, self-movement, exterior bodies, God) are structurally well-paired with the hierarchical-prior frame, so the prose stays compact at 1500 words while doing the substantive bridging work."
 mind_first_reframe: "The will's formal directedness toward the universal good preserves under hierarchical active inference (terminal vs. instrumental priors); the multi-source movement of the will is the multi-source causal architecture of policy-selection, with the substrate-source's primary causation operating *through* secondary causes rather than against them."
 central_theme_thread: "The will is constitutively perspective-limited but formally directed toward the universal good; the daily task is to coordinate intellect, passion, self-movement, and the substrate-network's pedagogy so that the alter's actual policy-selection aligns with the substrate-source's loving unity rather than mis-locating the universal good in particular candidates."
-last_qc_at: "2026-05-14T08:24:08"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-22T17:07:54"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/065, theme/will-structure, theme/means-and-end]
 ---
 # Day 65 — Contemporary Parallel: *The Structure of the Will and What Moves It*
@@ -74,12 +74,12 @@ Wright on covenanted-community as the locus of will-formation. Rohr on contempla
 
 - **Friston-tradition wiki, PRS on hierarchical generative models.** Active-inference frame for end-and-means policy. *Mature formalism.*
 - **McGilchrist-tradition wiki, PRS on hemispheric coordination in willed action.** Reception-and-analysis coordination. *Strong neuropsychiatric evidence.*
-- **Stump-tradition wiki, PRS on will-as-faculty-of-the-good.** Theological-philosophical primary on volitional structure. *Book-length argument.*
+- **Stump-tradition wiki, PRS on will-as-faculty-of-the-good.** Theological-philosophical resource on volitional structure. *Book-length argument.*
 - **Hawkins-tradition wiki, PRS on HTM goal-representation.** Cortical-architecture frame for goal-encoding. *Strong empirical.*
 - **Levin-tradition wiki, PRS on multi-scale agency.** Will-analog at biological scales. *Strong empirical.*
 - **Kastrup-tradition wiki, on substrate-source-as-primary-mover.** Mind-monist frame for the medieval primary-cause-of-will claim. *Philosophical-conceptual.*
-- **Wright, *Paul and the Faithfulness of God*.** Scriptural-historical primary on covenant-formation of the will. *Scriptural-historical.*
-- **Rohr, *The Universal Christ*; contemplative-prayer tradition.** Contemplative-tradition primary on multi-source alignment under substrate-source. *Contemplative theological.*
+- **Wright, *Paul and the Faithfulness of God*.** Scriptural-historical resource on covenant-formation of the will. *Scriptural-historical.*
+- **Rohr, *The Universal Christ*; contemplative-prayer tradition.** Contemplative-tradition resource on multi-source alignment under substrate-source. *Contemplative theological.*
 - **Aristotle, *Nicomachean Ethics* III.** Aquinas's interlocutor.
 
 ## Where this leaves us

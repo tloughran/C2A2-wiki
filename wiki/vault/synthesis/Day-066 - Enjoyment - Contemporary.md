@@ -15,8 +15,8 @@ evidence_strength_summary: "Friston on policy-necessity-under-perfect-good is ma
 length_ratio_to_target: 0.980
 mind_first_reframe: "Necessity-toward-the-perfect-good plus latitude-among-partial-goods is exactly what active inference predicts under hierarchical priors with one fully-determining terminal; enjoyment is the alter's substrate-direct rest in the apprehended good — perfect in the eschatological state of full alignment with mind-at-large, imperfect-anticipatory through this-life contemplation, prayer, sacrament, and positivity-resonance."
 central_theme_thread: "The work of becoming-aligned with loving unity is itself shot through with anticipatory enjoyment; the alter's daily task is to receive present positivity-resonance and contemplative-rest as real partial substrate-presence rather than distraction from the eschatological completion."
-last_qc_at: "2026-05-21T18:31:40"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-23T00:24:04"
+last_qc_outcome: "pass"
 tags: [synthesis, day/066, theme/enjoyment, theme/rest-in-the-good]
 ---
 # Day 66 — Contemporary Parallel: *Enjoyment as the Substrate-Direct Rest of the Will and the Imperfect Anticipations of It*

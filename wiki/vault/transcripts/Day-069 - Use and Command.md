@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-069 - Use and Command - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/069, pars/I-II, q/16, q/17]
-last_qc_at: "2026-05-21T08:21:09"
+last_qc_at: "2026-05-23T00:24:05"
 last_qc_outcome: "pass"
 ---
 # Day 69 — Use and Command

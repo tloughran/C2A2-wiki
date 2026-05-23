@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-057 - Angels and Men - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-14T04:20:57"
+last_qc_at: "2026-05-22T07:56:50"
 last_qc_outcome: "pass"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/057, pars/I]

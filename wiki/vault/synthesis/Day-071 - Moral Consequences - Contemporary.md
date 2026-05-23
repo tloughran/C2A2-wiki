@@ -16,8 +16,8 @@ evidence_strength_summary: "Synthesis written from Summa I-II Q.20-21 text + C2A
 mind_first_reframe: "Q.20's interior-act/exterior-act unity preserves under active inference: the generative model and its extension into action-on-the-world are not two separate moral bearers but one act under two registers — formal alignment + material instantiation. Q.21's consequences register the alter's contribution to the substrate-network's integrative dynamics, with merit/demerit as the substrate-source's evaluative signal of contribution-to-loving-unity vs. contribution-to-disintegration."
 central_theme_thread: "Each alter's external act extends its formal alignment + material judgment outward into the substrate-network where it becomes data-input for other alters' generative models; consequences are how the alter participates in shaping the substrate's integrative dynamics for other alters; salvation in fear and trembling now extends to the alter's responsibility for the perspective-limited downstream effects of its acts on alters whose perspective the acting alter cannot fully see."
 tags: [synthesis, day/071, theme/external-act, theme/consequences, theme/substrate-network-extension]
-last_qc_at: "2026-05-14T12:25:51"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-22T17:09:33"
+last_qc_outcome: "rewrote"
 ---
 # Day 71 — Contemporary Parallel: *External Acts, Consequences, and the Substrate-Network Extension of Moral Form*
 
@@ -68,7 +68,7 @@ The central theme says that conscious agents are individuated by perspective-lim
 - **Friston-tradition wiki, PRS on active inference and unity-of-perception-and-action.** Mature formalism for the interior/exterior unity of Q.20.
 - **Friston-tradition wiki, on expected free energy under outcome-uncertainty.** Formalism for Q.20 a.5's foreseen-consequences register.
 - **Levin-tradition wiki, PRS on form-extension into morphogenetic field.** Empirical anchor for substrate-level pattern-propagation.
-- **Stump-tradition wiki, PRS on willed-evil and double-effect.** Theological-philosophical primary on the structure of accountability for foreseen-but-unintended effects.
+- **Stump-tradition wiki, PRS on willed-evil and double-effect.** Theological-philosophical account of the structure of accountability for foreseen-but-unintended effects.
 - **Fredrickson-tradition wiki, PRS on positivity-resonance contagion.** Empirical anchor for affective-substrate consequence-propagation.
 - **McGilchrist-tradition wiki, PRS on hemispheric integration of feedback loops.** Bi-hemispheric integration at the act-consequence level.
 - **Wright on covenanted-community as locus of distributed consequence-reception.** *Surprised by Hope* on resurrection-and-renewal as the cosmic backdrop for the merit-register.

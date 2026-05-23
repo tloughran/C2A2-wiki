@@ -17,7 +17,7 @@ evidence_strength_summary: "Aquinas's anti-occasionalist commitment is metaphysi
 mind_first_reframe: "Aquinas's anti-occasionalist commitment in Q.115 a.1 — that physical things really cause physical effects within the substrate-source's primary causation — becomes the layered-ontology commitment of contemporary mind-monism: Levin's bioelectric pattern, Wolfram's computational substrate, Carroll's poetic naturalism, and Arkani-Hamed's effective field theories all converge on real causal efficacy at every emergent level, with fate (Q.116) read as substrate-prior bounding the alter's policy-space rather than displacing agency."
 central_theme_thread: "Perspective-limitation under the central-theme reading presupposes real agency in the embodied alter; today shows that the substrate's prior-structure (what the medieval frame names fate, what Wright's Romans 8 names providence) constrains but does not erase the alter's free policy-selection, and that the alter's working-out of salvation operates within a substrate-given context whose pattern is the cosmic-Christ pattern toward which all things tend."
 tags: [synthesis, day/059, theme/causal-realism, theme/fate-and-providence]
-last_qc_at: "2026-05-14T04:21:41"
+last_qc_at: "2026-05-22T07:59:27"
 last_qc_outcome: "rewrote"
 ---
 # Day 59 — Contemporary Parallel: *Causal Realism in Created Agents and the Computational Substrate of Fate*
@@ -64,7 +64,7 @@ What is *firm vs. speculative*: Levin's bioelectric-pattern is empirically robus
 
 Today's day touches the central theme through the *agency-under-perspective-limitation-within-real-causal-network* register. The embodied alter's perspective-limitation is real because the embodied alter is a real causal agent within a real causal network; its limited apprehension of the substrate-priors is what it has to work with; its free policy-selection within those priors is what *salvation in fear and trembling* names. Fate is not the absence of agency; it is the substrate-given context within which agency operates.
 
-Wright on providence (his Romans 8 readings) is the load-bearing scriptural primary on this register: the *all things working together for good* is the substrate-prior pattern, not a violation of agency. Rohr on cosmic-Christ-as-pattern is the contemplative primary: the substrate's pattern is the cosmic-Christ pattern toward which all things tend.
+Wright on providence (his Romans 8 readings) grounds this register scripturally: the *all things working together for good* is the substrate-prior pattern, not a violation of agency. Rohr on cosmic-Christ-as-pattern reads the substrate's pattern as the cosmic-Christ pattern toward which all things tend.
 
 ## Bridges
 
@@ -75,7 +75,7 @@ Wright on providence (his Romans 8 readings) is the load-bearing scriptural prim
 - **Friston-tradition wiki, PRS on constraint-as-prior.** Fate as substrate-prior bounding policy-space. *Active inference formalism; growing empirical.*
 - **Wright, Romans 8 readings; *Paul and the Faithfulness of God*.** Providence-without-determinism scriptural anchor. *Scriptural-historical primary.*
 - **Rohr, *The Universal Christ*.** Cosmic-Christ pattern as substrate-prior. *Contemplative theological.*
-- **Stump-tradition wiki on Thomistic interlocution.** Counterpoint on hylomorphic vs. computational metaphysics; useful for tracking the *what does the reframing change* question. *Thomistic counterpoint, not metaphysical primary.*
+- **Stump-tradition wiki on Thomistic interlocution.** Tracks the hylomorphic frame as it meets the computational one; useful for the *what does the reframing change* question. *Thomistic-tradition reception of the reframe.*
 - **Newton, *Principia*; Ed Feser on occasionalism; Wisdom 8:1.**
 
 ## Where this leaves us

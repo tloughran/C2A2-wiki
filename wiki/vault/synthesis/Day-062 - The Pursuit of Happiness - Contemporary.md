@@ -16,8 +16,8 @@ length_ratio_to_target: 0.768
 length_note: "Substantively complete at 1690 words; the negative-arguments register over Q.2–Q.3's 16 exclusion articles is structurally compact and the convergent-multi-tradition reading does not need padding to land."
 mind_first_reframe: "Aquinas's exclusion arguments diagnose mis-located goods under perspective-limitation, and the contemplative-union conclusion preserves as the alter's integrative act of becoming-aligned with mind-at-large's own integrative dynamics — beatific vision under Kastrup is full-alignment with the substrate-source."
 central_theme_thread: "Each excluded candidate-good fails because flourishing is the alter's integrative act of union with the substrate-source's loving unity; the daily task is to recognize the diagnostic of mis-location through hedonic adaptation, narrowed openness, and dispositional fixity."
-last_qc_at: "2026-05-14T08:23:32"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-22T17:07:53"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/062, theme/happiness, theme/material-vs-formal-good]
 ---
 # Day 62 — Contemporary Parallel: *The Negative Argument — What Happiness Is Not, and Why That Matters*
@@ -66,17 +66,17 @@ Today's day is the *negative-and-positive* statement of the central theme. Negat
 
 *Salvation in fear and trembling* under perspective-limitation includes the daily-task work of *recognizing the diagnostic of mis-location*. When the alter notices that a particular pursued good has produced the hedonic-adaptation pattern (Fredrickson) or has narrowed the alter's openness (McGilchrist) or has settled the alter's prior into a dispositional-fixity (Friston), the alter has diagnostic data that this candidate is *not* the universal good. The substrate-network's pedagogical care includes presenting these diagnostic patterns to the alter at tractable scales.
 
-Wright's *Surprised by Hope* is the load-bearing scriptural primary on the *what is wrong with our contemporary candidates* register — Wright is unsparing about consumerism, prestige-capture, fame-seeking, and pleasure-as-end. Rohr's *Falling Upward* extends: the first half of life often pursues these candidates, and the *falling* into the second half is precisely the diagnostic experience of their failure that opens the alter to the contemplative mode.
+Wright's *Surprised by Hope* bears directly on the *what is wrong with our contemporary candidates* register — Wright is unsparing about consumerism, prestige-capture, fame-seeking, and pleasure-as-end. Rohr's *Falling Upward* extends: the first half of life often pursues these candidates, and the *falling* into the second half is precisely the diagnostic experience of their failure that opens the alter to the contemplative mode.
 
 ## Bridges
 
 - **Fredrickson-tradition wiki, PRS on hedonic adaptation and broaden-and-build.** Empirical diagnostic for non-substantive candidates. *Strong empirical evidence.*
-- **Stump-tradition wiki, PRS on union and second-personal knowing.** Theological-philosophical primary on what happiness substantively is. *Book-length argument; theological-philosophical.*
+- **Stump-tradition wiki, PRS on union and second-personal knowing.** Theological-philosophical resource on what happiness substantively is. *Book-length argument; theological-philosophical.*
 - **Friston-tradition wiki, PRS on terminal vs. instrumental goals.** Means-end formalism. *Mature formal frame.*
 - **Kastrup-tradition wiki, PRS on mind-as-ground.** Metaphysical anchor for full-alignment integrative-act. *Philosophical-conceptual.*
 - **Levin-tradition wiki, PRS on integration as telos.** Multi-scale-agency frame for contemplative union. *Strong empirical at biological scale.*
 - **Wright, *Surprised by Hope*; *Paul and the Faithfulness of God*.** Scriptural diagnosis of mis-located goods; *resurrection-and-new-creation* as the proper telos. *Scriptural-historical primary.*
-- **Rohr, *The Universal Christ*; *Falling Upward*.** Contemplative-tradition primary on the structure of conversion from candidate-pursuit to substrate-source-union. *Contemplative theological.*
+- **Rohr, *The Universal Christ*; *Falling Upward*.** Contemplative-tradition resource on the structure of conversion from candidate-pursuit to substrate-source-union. *Contemplative theological.*
 - **Augustine, *Confessions*; Aristotle, *Nicomachean Ethics* I.** Aquinas's interlocutors.
 
 ## Where this leaves us
