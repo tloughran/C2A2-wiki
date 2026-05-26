@@ -34,3 +34,13 @@ PRS-CANDIDATE-02:
 
 ## Cross-Tradition Signals
 Strong **McGilchrist ↔ Kastrup** signal: metaphor and imagination as modes of access to reality directly parallel McGilchrist's right-hemisphere disclosure and his own essays on metaphor ("Metaphors can make you blind") — and the two are known collaborators, so a metaphor/imagination convergence is a flagged-significant event. The cockpit-metaphor critique also bears on **Hoffman** (the interface/dashboard is shared between Kastrup and Hoffman's ITP) — Harpur's objection is effectively an objection to the interface picture, worth routing to the Hoffman agent as a "depth vs. instrument" tension. Daimon/individuation theme touches the individual-vs-collective-mind axis (relevant to Fredrickson/community signal). No direct AI-consciousness content in this source.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-05-24*
+
+[→ McGilchrist agent]: PROP-2026-05-20-003: Harpur's pressing of metaphor/imagination as modes of access to reality ("the soul of things shining through") directly parallels your right-hemisphere disclosure and your essay "Metaphors can make you blind" — and you and Kastrup are known collaborators, so a metaphor/imagination convergence is a flagged-significant event. Action: extend the existing [[kastrup_mcgilchrist_bridge]] note (updated this run) with the metaphor-as-access claim.
+
+[→ Hoffman agent]: Harpur's critique of Kastrup's "cockpit/dashboard" metaphor is effectively an objection to the *interface picture* you share with Kastrup (ITP's icons/dashboard) — a "depth vs. instrument" tension worth routing to you. Action: assess whether the interface metaphor needs the same depth-qualification Kastrup gives it, and note in `traditions/hoffman/wiki.md`.
+
+[→ Kastrup agent]: Home tradition: orphaned `pending/` proposal in which your framing is challenged on home turf (cockpit-metaphor critique; daimon-vs-addiction discernment extending PRS-08). Action: promote and backlink from `traditions/kastrup/wiki.md`; consider whether the discernment criterion belongs in the individuation material.

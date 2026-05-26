@@ -202,3 +202,93 @@ Four inbox files dated 2026-05-13 that had been left unprocessed in PROCESSED_LO
 
 **Architecture flag escalation:**
 - FINDING-035 — "Native Epistemic Standards" as required section in every tradition wiki (McGilchrist × Stump; portable C2A2 design pattern)
+
+---
+
+## Backlog flagged — 2026-05-25 (NOT ingested; deferred)
+
+The daily run detected **36 files in `inbox/` that are not in this log** and whose PRS
+content is absent from the tradition wikis. 35 are `status: approved` (Tom's 2026-05-13
+decision batch, source-dated 2026-04-21 → 2026-05-12); the older-dated files in that
+batch were never ingested after the 2026-05-17 reconciliation handled only the four
+2026-05-13-dated files. Since 2026-05-13 no decision email has been processed, so the
+pipeline never cycled and the backlog persisted across the 05-18/19/20/24 runs.
+
+**This run deliberately deferred the bulk ingest** rather than perform a 35-file /
+~90-triplet mutation unattended. Full breakdown and recommended next action:
+`wiki/flags/ingest_backlog_2026-05-25.md`. Network counts are UNCHANGED this run
+(still 222 triplets / 90 cross-program as of 2026-05-17). One Singer/Mindscape-351
+file (2026-04-21) is a resolved duplicate of the approved 2026-05-08 version.
+
+---
+
+## Daily-run note — 2026-05-26 (Tuesday, Hawkins+Hoffman specialist slot)
+
+No ingestion this run. 36-file inbox backlog (same as 2026-05-25; source-dated
+2026-04-21 → 2026-05-12) confirmed unchanged via PROCESSED_LOG diff. Flag at
+`wiki/flags/ingest_backlog_2026-05-25.md` updated with `last_re_checked: 2026-05-26`.
+Phase 2 Hawkins + Hoffman searches returned only out-of-window or non-thinker-authored
+material; 0 proposals written. Pending queue unchanged at 28. Network totals unchanged:
+222 PRS triplets · 90 cross-program · 35 findings.
+
+---
+
+## Late-day addendum — 2026-05-26 17:42 ET (attended Phase-0 pass)
+
+Tom processed 25 APPROVE decisions in an interactive Cowork session. Files moved per spec
+(`inbox/proposals/pending/` → `inbox/proposals/approved/`, with copies queued to `inbox/`).
+**These 25 files are NOT yet ingested into tradition wikis** — they sit in `inbox/` awaiting
+the focused attended ingest pass that will drain the (now 61-file) backlog. Tracking here so
+the next ingest run can pick them up:
+
+- 2026-05-14_fredrickson_high-quality-listening-strangers-comm-psych.md
+- 2026-05-14_fredrickson_social-media-posts-in-person-connections.md
+- 2026-05-14_stump_seven-deadly-sins-thomistic-institute.md
+- 2026-05-15_carroll_mindscape-353-roth-moral-economics.md
+- 2026-05-16_wolfram_business-innovation-april29-paradigm.md
+- 2026-05-16_wolfram_future-science-tech-april24-quantum.md
+- 2026-05-18_friston_precision-psychiatry-cambridge.md
+- 2026-05-18_levin_clofilium-colorectal-cancer-ionoceutical.md
+- 2026-05-18_levin_cognition-spaces-natural-artificial-hybrid.md
+- 2026-05-18_rohr_everything-belongs-s4-type1-bielecki.md
+- 2026-05-18_rohr_finding-a-place-to-stand.md
+- 2026-05-18_rohr_liberation-from-egos-agenda.md
+- 2026-05-20_kastrup_harpur-literal-as-metaphor.md
+- 2026-05-20_mcgilchrist_good-beautiful-true-sheldonian.md
+- 2026-05-20_mcgilchrist_sex-differences-hemispheres.md
+- 2026-05-22_carroll_mindscape-354-list-free-will-levels.md
+- 2026-05-23_wolfram_business-may13-ownerless-ai-accountability.md
+- 2026-05-23_wolfram_future-science-tech-may15-scientific-method.md
+- 2026-05-24_rohr_for-love-of-the-earth.md
+- 2026-05-24_rohr_psalms-songs-of-exile.md
+- 2026-05-24_wright_ask-ntw-may4-lost-tribes-exile.md
+- 2026-05-24_wright_biologos-new-creation-breaking-in.md
+- 2026-05-24_wright_vision-of-ephesians.md
+- 2026-05-25_levin_brains-and-where-else-consciousness-embodiments.md
+- 2026-05-25_levin_cognitive-glues-economics-collective-intelligence.md
+
+Inbox backlog: 36 → 61. See `wiki/flags/ingest_backlog_2026-05-25.md` for the escalation note.
+
+---
+
+## Late-day addendum #2 — 2026-05-26 EOD (3 Wrights added; prior-36 confirmed go-live)
+
+Tom approved the 3 N.T. Wright items that had shown as Pending in the review-page UI:
+- 2026-05-18_wright_adam-eve-hominids-april5.md
+- 2026-05-18_wright_ask-ntw-may11-confused-age.md
+- 2026-05-18_wright_dove-descending-ruach-psalms.md
+
+Approval queue is now **0**. Today's total approvals: 28 (not 25).
+
+Tom additionally confirmed the prior 36-file ingest backlog (source-dated 2026-04-21 →
+2026-05-12) is intended for go-live. The prior `pending/ → approved/ + inbox/` moves
+from the 2026-05-13 decision batch — uncommitted to git since then — are folded into
+this commit, truing up git state to match the on-disk filesystem.
+
+**Ingest queue now: 62 real proposals** (34 prior + 28 from today, plus 2 stub files
+in inbox/ that are not real proposals). PRS extraction into tradition wikis remains
+deferred to a focused attended session — flagged for the next sessions of work.
+
+This commit does NOT add new PRS triplets to tradition wikis. Network triplet, cross-
+program, and finding counts remain at **222 / 90 / 35**. They will update in the
+attended ingest session(s) that follow.
