@@ -1,0 +1,36 @@
+SEARCH-AGAINST-ASSUMPTION-236:
+  Date searched: 2026-05-27
+  Original item: ASSUMPTION-236
+  Original statement: A reliable ~1-week-cadence "sit-down day" is the right operational target for draining human-terminating queues; the design question is what mechanism reliably triggers such a sit-down.
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-236
+    Item type: ASSUMPTION (stated)
+    Transform at each function step:
+      14a: Extracted.
+      15b: Searched for challenging literature on cadence selection and trigger mechanisms.
+    Current status: PARTIALLY-CHALLENGED (Weak-Moderate)
+
+  Sources:
+    1. Queueing theory — weekly cadence puts max-age at ~7 days, which may be too long for HIGH-urgency items; cadence should be set by item-urgency, not by reviewer-preference.
+    2. Gollwitzer (1999) implementation intentions — trigger mechanisms have well-documented failure modes; weekly intent-only triggers fail ~50% in the literature.
+    3. SRE on-call — weekly rotation works when there's a TEAM; solo-PI weekly cadence has no rotation safety net.
+    4. C2A2-internal: FLAG I HIGH items (REVISE-050/053) have urgency that exceeds weekly cadence; weekly cadence is too slow for the highest-urgency tier.
+
+  Strength of challenge: Weak-Moderate
+
+  Summary: Weekly cadence is reasonable for routine items but inadequate for HIGH-urgency items. Trigger-mechanism literature warns that intent-based weekly triggers have high failure rates. The assumption is right at the level of "regular cadence is needed" but wrong if interpreted as "weekly is sufficient for all tiers."
+
+  Specific risks: (a) HIGH-urgency items wait up to 7 days under weekly cadence — too slow for some classes; (b) intent-based weekly triggers have 50% failure rate; without a structural trigger, the cadence won't hold; (c) solo-PI lacks the rotation safety net that makes weekly cadence work in SRE.
+
+  Mitigations available: (a) Tiered cadence (HIGH = daily; MED = weekly; LOW = monthly); (b) structural trigger (calendar block, paired commitment, escalation-on-miss); (c) explicit safe-default for HIGH items if cadence misses.
+
+  Recommendation: PARTIALLY-CHALLENGED (Weak-Moderate)
+
+  STEELMAN:
+    Item: ASSUMPTION-236
+    Strongest counterargument: Weekly cadence is fine for routine but too slow for HIGH-urgency items. Implementation-intention literature predicts weekly-intent triggers fail half the time without structural support. Solo-PI weekly cadence lacks the rotation safety net that makes weekly cadence work in industrial settings.
+    What would need to be true for C2A2 to be safe: Tiered cadence; structural trigger; HIGH-item safe-default.
+    How to test: Track time-to-resolution by urgency tier. If HIGH items wait >7 days, weekly cadence is too slow for that tier.

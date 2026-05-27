@@ -36,3 +36,33 @@ SEARCH-AGAINST-ASSUMPTION-140:
     Strongest counterargument: The factual claim ("two consecutive successful chat-scrapes") is correct, but the inferential claim ("sign-in fix is holding") makes a broader credential-layer stability claim that same-day data refutes. PRESUMPTION-177 records Chrome-MCP failure today; ASSUMPTION-141 records evening cowork-to-chat failure today. The credential-layer is not "holding" — one sub-system within it is. The honest framing would be "morning chat-scrape sub-system: 2/2 successes; other credential-layer sub-systems: failures observed today." The over-extension is the failure mode.
     What would need to be true for C2A2 to be safe: (a) Restrict claim to chat-scrape sub-system; (b) PRESUMPTION-159 substrate-decomposition audit resolved before credential-layer stability claims; (c) Per-sub-system failure tracking; (d) N ≥ 7 before "holding" inference.
     How to test: Track all credential-layer-dependent sub-systems (chat-scrape, Chrome-MCP, cowork-to-chat, sign-in) over the next 7 days; check whether all are stable, not just chat-scrape.
+
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-140 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-25
+  Original item: ASSUMPTION-140
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a->15a,15b->15c->15d->15a,15b->15c] (cycle 1)
+    Original item: ASSUMPTION-140
+    Item type: ASSUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-24): re-triggered on weekly cadence (MONITOR-153 cycle 1)
+      15b (cycle 1, 2026-05-25): re-searched for challenging literature
+    Current status: refresh; no new challenging literature surfaced this cycle.
+
+  Run context: On-cadence c2a2-lit-search-pipeline processing of the 2026-05-24 15d weekly RE-TRIGGER cohort (15d fired on schedule 2026-05-24; normal hand-off into the daily pipeline, not an exceptional drain).
+
+  New evidence weighed: No new challenging literature surfaced since the last cycle. Prior cycles' findings stand; item remains in its established disposition until new operational evidence (from C2A2's own runs) or new external literature alters the picture.
+  Sources (new / refreshed): No new sources this cycle.
+  Strength of challenge: Unchanged from prior cycle.
+  Summary: Cycle-1 refresh confirms the prior cycle's finding; the challenging literature base has not materially shifted. Recommendation carries forward unchanged.
+  Caveats: Automated weekly refresh is bounded by the LLM's capacity to surface genuinely new external evidence; a human-driven scan or operational evidence from C2A2's own runs is the more sensitive signal for status change.
+  Specific risks: Unchanged from prior cycle.
+  Mitigations available: Unchanged from prior cycle.
+  Recommendation: refreshed; carry forward prior recommendation

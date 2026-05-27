@@ -3709,3 +3709,465 @@ ASSUMPTION-211:
     Transform at each step:
       14a: Extracted from the guiding document's author-contribution convention (Directive 3).
     Current status: UNTESTED
+
+ASSUMPTION-212:
+  Date identified: 2026-05-22
+  Statement: A connectome build is safe to promote to live when its graph data is byte-identical to the approved file and `node --check` passes — data-integrity plus JS-syntax integrity (plus Tom's visual review) constitute the release gate.
+  Context: PRS Narrative Connectome 2-panel UI bundle (local_a20a370b) — "validated (data byte-identical to the approved file, `node --check` clean), promoted to live, reviewed by Tom, pushed (`fc79739`)."
+  Type: methodological
+  Related decisions: DECISION-043, DECISION-042
+  Testability: framework commitment (methodological release standard; its reproduced-behavior gap is testable — see PRESUMPTION-231)
+  Status: GROUNDED (operationalized as the promotion gate this session)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-212
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated validation+promote sequence of the connectome 2-panel bundle.
+    Current status: GROUNDED
+
+ASSUMPTION-213:
+  Date identified: 2026-05-22
+  Statement: The connectome's needed interaction layer = a two-panel edge-cluster view + "?" pop-ups + node click-to-toggle (collapse) + edge-picking (Three.js raycast) + brightness and "Year ≥" time sliders — completing the ported Sociogram interaction cluster.
+  Context: PRS Narrative Connectome bundle shipped this session (local_a20a370b); finishes the cross-tab interaction model adopted in DECISION-042.
+  Type: architectural (UX)
+  Related decisions: DECISION-043, DECISION-042
+  Related assumptions: ASSUMPTION-209, ASSUMPTION-210
+  Testability: framework commitment (design/UX stance)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-213
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the enumerated interaction-bundle feature set promoted to live.
+    Current status: UNTESTED
+
+ASSUMPTION-214:
+  Date identified: 2026-05-22
+  Statement: A single self-contained handoff document (`TWO_SUMMA_EXPERIMENT_BRIEF.md`) can carry an experiment's full context — project paths, PRS+tradition schema, design, success criteria, guardrails — into a cold-start chat, making the experiment portable across sessions ("open the new chat, attach that file, say go").
+  Context: Two-summa experiment scoped to Option #3 to be run in a fresh chat (local_a20a370b); brief written to project root.
+  Type: methodological
+  Related decisions: DECISION-044
+  Related: architecture/18_portability_toolkit.md
+  Testability: testable empirically (does the cold-start chat reproduce the originating intent without the prior session's state?)
+  Status: SEARCHED -- 15c disposition: MONITOR (MONITOR-220, 2026-05-23); see for_lit_search.md / monitor_queue.md
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-214
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the decision to hand off the experiment via a self-contained brief to a fresh chat.
+    Current status: SEARCHED
+
+ASSUMPTION-215:
+  Date identified: 2026-05-22
+  Statement: A "Conscious-Realist-Monist summa" can be constructed as a genuine rival to the Thomist summa, and the two can be run head-to-head to produce evidence about how richly-informed traditions interact.
+  Context: Two-summa experiment design (Option #3), briefed in TWO_SUMMA_EXPERIMENT_BRIEF.md (local_a20a370b) — Thomist summa vs. Conscious-Realist-Monist summa.
+  Type: epistemic / empirical
+  Related decisions: DECISION-044
+  Related open questions: OPEN-062
+  Testability: testable via literature (tradition rivalry & commensurability — MacIntyre) and empirically (the experiment itself)
+  Status: PARTIALLY-CHALLENGED -- 15c disposition: REVISE (REVISE-047 HIGH, 2026-05-23, AWAITING-REVIEW); SYSTEMIC-RISK-FLAG H; see revision_flags.md
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-215
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated two-summa head-to-head premise; the day's most substantive new conceptual stake.
+    Current status: PARTIALLY-CHALLENGED
+
+ASSUMPTION-216:
+  Date identified: 2026-05-22
+  Statement: The Aquinas<->Levin teleology seam (with specific Summa source days) is the right focal cross-tradition bridge for the two-summa head-to-head.
+  Context: TWO_SUMMA_EXPERIMENT_BRIEF.md names the Aquinas<->Levin teleology seam as the experiment's focal connection (local_a20a370b).
+  Type: architectural / empirical
+  Related decisions: DECISION-044
+  Related assumptions: ASSUMPTION-215, ASSUMPTION-205, ASSUMPTION-207
+  Testability: testable (is this dyad the most evidentially productive seam? compare against alternatives)
+  Status: SEARCHED -- 15c disposition: MONITOR (MONITOR-221, 2026-05-23); see for_lit_search.md / monitor_queue.md
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-216
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the brief's selection of a single focal teleology seam.
+    Current status: SEARCHED
+
+ASSUMPTION-217:
+  Date identified: 2026-05-22
+  Statement: Embedding the 307 "Principal research areas" faculty summaries directly in the KSGA sociogram's node data (self-contained node panels) is preferable to linking out — the node panel should carry its own content.
+  Context: KSGA sociogram regeneration (local_26b6c078) — "research summaries are now in the data ... clicking a faculty node will now show their summary in the right panel"; index.html grew 1.3 -> 1.9 MB.
+  Type: architectural / methodological
+  Related decisions: DECISION-045
+  Testability: framework commitment (design stance; its scaling cost is testable — see PRESUMPTION-236)
+  Status: GROUNDED (implemented in the regenerated sociogram)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-217
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the deliberate choice to embed faculty summaries inline in the node data.
+    Current status: GROUNDED
+
+ASSUMPTION-218:
+  Date identified: 2026-05-22
+  Statement: Repository publishability is decidable per-artifact at the designer's discretion — curated artifacts are tracked/published (eulogy in, Habash transcripts in) while raw/sensitive material is kept out (Archbishop report out, Hoffman x Levin raw transcript stop-tracked), enforced via a root `.gitignore`.
+  Context: Repo-hygiene pass in the connectome session (local_a20a370b) — explicit per-file publish/untrack calls plus a new root .gitignore.
+  Type: methodological (with normative dimension)
+  Related decisions: DECISION-046
+  Related presumptions: PRESUMPTION-237
+  Testability: framework commitment (governance stance; underlying criterion is unstated — see PRESUMPTION-237)
+  Status: GROUNDED (acted on this session)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-218
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the enumerated publish/untrack decisions; the governing criterion behind them is left to 14b.
+    Current status: GROUNDED
+
+ASSUMPTION-219:
+  Date identified: 2026-05-22
+  Statement: The connectome thread is complete enough to close and hand off cleanly to the two-summa experiment — shipping the bundle and executing the deferred push (`fc79739`) marks the thread "done."
+  Context: End of the connectome session (local_a20a370b) — "the connectome thread can now hand off cleanly to the two-summa experiment."
+  Type: methodological / operational
+  Related decisions: DECISION-043, DECISION-044
+  Related open questions: OPEN-056 (commit-ownership)
+  Testability: framework commitment (operational judgment of thread completion)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-219
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit close-and-pivot framing at session end.
+    Current status: UNTESTED
+
+ASSUMPTION-220:
+  Date identified: 2026-05-23
+  Statement: PRS-triplet candidates can be validly generated from a talk's announced topic list and runtime metadata when the full transcript cannot be retrieved — provided confidence is capped at Medium and the candidate is explicitly flagged for transcript verification before promotion to a numbered PRS triplet.
+  Context: Both 2026-05-23 Wolfram intake proposals (PROP-2026-05-23-001 future-science-tech; PROP-2026-05-23-002 business/ownerless-AI) state in their Methodological Notes that the transcript could not be fetched, so candidates were derived from the published topic list and capped at Medium/Speculative confidence. Surfaced on an automated-pipeline day with no interactive Tom session (see daily_sync/cowork_to_chat/2026-05-23_cowork_summary.md).
+  Type: methodological
+  Related decisions: (none; tradition-intake methodology)
+  Related presumptions: PRESUMPTION-242
+  Testability: testable via literature (do topic-list/metadata-derived summaries reliably proxy full-source content?) and empirically (compare a topic-list-derived candidate against the same talk's transcript when it becomes available)
+  Status: SEARCHED -- 15c disposition (2026-05-24): MONITOR (MONITOR-229 Medium/Weekly); 15a PARTIALLY-SUPPORTED (Moderate) / 15b PARTIALLY-CHALLENGED (Moderate) -- symmetric mixed evidence; staged metadata->PRS is sound but precondition-bound (verification must run; scope inferences to topic-level). Promote to INCORPORATE once proxy fidelity is measured on a labeled sample. Couples PRESUMPTION-242 + verification-gate items 240/243. See lit_search_returns.md (Batch 2026-05-24).
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-220
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit methodological self-disclosure in both 2026-05-23 Wolfram proposals (topic-list-derived, transcript unavailable, Medium-capped).
+      15a/15b/15c (2026-05-24): searched FOR/AGAINST and dispositioned -> MONITOR-229; mirrored here by the 2026-05-24 14a run.
+    Current status: SEARCHED
+
+ASSUMPTION-221:
+  Date identified: 2026-05-23
+  Statement: Accountability for C2A2's own autonomous ("ownerless") tradition agents should be located in the human-AI deployment-and-verification pipeline -- specifically Tom's review gate as the verification layer -- rather than in any agent's internal predictability or in a single owner.
+  Context: PROP-2026-05-23-002 (Wolfram, "accountability for ownerless AI") surfaces this as a meta-signal to the Master agent: Wolfram's framing is "usable as a primary-source warrant for how C2A2 should locate accountability (deployment + Tom's review gate as the verification layer)." Agent-surfaced by the Wolfram specialist, not yet a Tom-adopted design commitment.
+  Type: architectural / normative (governance)
+  Related decisions: (candidate governance stance; not yet a numbered DECISION)
+  Related presumptions: PRESUMPTION-243, PRESUMPTION-240
+  Related open questions: OPEN-065
+  Testability: testable via literature (AI governance / accountability for autonomous agents; human-in-the-loop responsibility allocation) and empirically (does the review gate, in practice, function as the accountability layer?)
+  Status: SEARCHED -- 15c disposition (2026-05-24): MONITOR (MONITOR-230 High/Weekly, INCORPORATE-pending-precondition); 15a SUPPORTED (Strong, locus -- meaningful-human-control, Santoni de Sio & van den Hoven 2018 [live-verified]; reinforced by Wolfram computational irreducibility) / 15b PARTIALLY-CHALLENGED (Moderate, conditional -- accountability requires an *exercised* gate; Green 2022 [live-verified], Elish 2019 moral crumple zone). Locus strongly supported; the operative precondition (an exercised, reason-responsive gate) is currently unmet (4-day signout; REVISE-050/051; SYSTEMIC-RISK-FLAG I). Promote to validated_premises.md once REVISE-050/051 resolve. See lit_search_returns.md (Batch 2026-05-24).
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-221
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the PROP-2026-05-23-002 meta-signal proposing the deployment+review-gate locus of accountability; flagged as agent-surfaced and awaiting human design adoption.
+      15a/15b/15c (2026-05-24): searched FOR/AGAINST (key governance citations live-verified) and dispositioned -> MONITOR-230, INCORPORATE-pending-precondition; mirrored here by the 2026-05-24 14a run.
+    Current status: SEARCHED (INCORPORATE-pending-precondition)
+
+ASSUMPTION-222:
+  Date identified: 2026-05-24
+  Statement: Thematically convergent tradition-intake proposals that arrive in the same weekly batch -- specifically the Wright exegetical exile + Rohr contemplative exile + Stump corporate-substance cluster -- should be promoted into the network as a single unit rather than as separate proposals, on the grounds that together they articulate one paradigm-bridge (the Summa 2026 "loving unity as telos / reconciliation-without-erasure" theme).
+  Context: 2026-05-24 sewing-agent weekly run (architecture/sewing_agent_log.md, item #3): "The Wright + Rohr exile/restoration + Stump corporate-substance cluster is, together, a direct articulation of the Summa 2026 central theme ... and is worth promoting as a unit rather than as three separate proposals." Agent-surfaced on an automated-pipeline day with no interactive Tom session; not yet a Tom-adopted promotion decision.
+  Type: methodological
+  Related decisions: (tradition-intake / synthesis-promotion methodology; not yet a numbered DECISION)
+  Related presumptions: PRESUMPTION-244
+  Testability: testable via literature (whether thematically clustered units are better knowledge-integration units than atomic items; theory-building/synthesis methodology) and empirically (does unit-promotion yield more durable/used bridge notes than item-by-item promotion?)
+  Status: SEARCHED -- 15c disposition (2026-05-25): REVISE (REVISE-052; 15a PARTIALLY-SUPPORTED/Moderate, 15b CHALLENGED/Strong). The "promote as a single unit" rule is challenged at the structural-validity level (mono-method / common-batch variance, Campbell & Fiske 1959; Podsakoff et al. 2003). Recommended revision: require a cross-method / cross-occasion discriminant check before unit-promotion (re-elicit each source independently and confirm the bridge co-emerges), or promote individually and let convergence emerge via independent routing. See revision_flags.md REVISE-052 and lit_search_returns.md (Batch 2026-05-25).
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-222
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the sewing agent's explicit "promote as a unit" recommendation in the 2026-05-24 weekly log.
+      15a/15b/15c (2026-05-25): searched FOR/AGAINST and dispositioned -> REVISE-052; mirrored here by the 2026-05-25 14a run.
+    Current status: SEARCHED (REVISE-052 AWAITING-REVIEW)
+
+ASSUMPTION-223:
+  Date identified: 2026-05-24
+  Statement: When a MONITOR item reaches cycle 4 with stable evidence and its blocker is an un-run empirical/paired test rather than unsettled literature, further weekly literature-search cycles are low-yield; the item should be STALE-flagged, downgraded (Weekly->Monthly), and escalated to a human for the empirical test.
+  Context: 2026-05-24 15d periodic-monitor weekly run (review/15d_run_report_2026-05-24.md): first-ever STALE-MONITOR flags on ASSUMPTION-035, ASSUMPTION-037, PRESUMPTION-037 at cycle 4 -- "All three share a root cause: the blocker is an un-run empirical/paired test, not an unsettled literature, so further weekly literature cycles are low-yield."
+  Type: methodological
+  Related decisions: (monitor-cadence / stale-escalation policy; not yet a numbered DECISION)
+  Related presumptions: PRESUMPTION-245
+  Testability: testable empirically (do cycle-4+ literature re-searches on empirically-blocked items in fact yield no new dispositions?) and via literature (diminishing returns of repeated search; matching evidence-type to question-type in systematic review)
+  Status: SEARCHED -- 15c disposition (2026-05-25): MONITOR (MONITOR-233 Medium/Weekly, INCORPORATE-pending-precondition); 15a SUPPORTED/Strong (diminishing returns / Cooper & Hedges 2009; matching evidence-type to question-type; SRE escalation practice Beyer et al. 2016) / 15b PARTIALLY-CHALLENGED/Moderate (the escalation leg presumes a reachable human endpoint contradicted by the current outage). The "stop-and-escalate" half is well-supported; the "escalation works" half couples to PRESUMPTION-245 -> REVISE-053 (escalation into the same dark gate). Promote to validated_premises.md once the human-endpoint precondition is satisfied (OPEN-066 / REVISE-053 resolve). See lit_search_returns.md (Batch 2026-05-25).
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-223
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 15d stale-flag rationale (the empirical-blocker-vs-literature-blocker distinction).
+      15a/15b/15c (2026-05-25): searched FOR/AGAINST and dispositioned -> MONITOR-233, INCORPORATE-pending-precondition; mirrored here by the 2026-05-25 14a run.
+    Current status: SEARCHED (INCORPORATE-pending-precondition)
+
+ASSUMPTION-224:
+  Date identified: 2026-05-24
+  Statement: The connectivity/orphan metric should exclude `architecture/lit_search_results/` (the per-item *_for / *_against corpus), because that content is machine-generated material the Sewing Agent does not route; including it makes the orphan count fail to track real routing progress.
+  Context: 2026-05-24 sewing-agent weekly run (architecture/sewing_agent_log.md, item #1): orphan count climbing 766 -> 1104 -> 1409, "dominated by content the Sewing Agent does not route"; recommendation (renewed from 2026-05-18) to exclude `architecture/lit_search_results/` "analogous to the existing architecture/metrics/ and review/archive/ exclusions." Standing Tom-decision item.
+  Type: methodological / measurement
+  Related decisions: (connectivity-metric definition; Tom-decision candidate, not yet a numbered DECISION)
+  Related presumptions: PRESUMPTION-246
+  Testability: testable empirically (recompute the orphan trend with the exclusion and check whether it then tracks thinker-agent routing actions) -- largely a measurement-definition choice
+  Status: SEARCHED -- 15c disposition (2026-05-25): MONITOR (MONITOR-234 Low-Medium/Monthly); 15a PARTIALLY-SUPPORTED/Moderate (metric-scoping practice in software analytics) / 15b PARTIALLY-CHALLENGED/Moderate-Strong (the underlying validity of backlink-density as integration proxy is itself contested -- couples PRESUMPTION-246 / MONITOR-236; Goodhart family). The exclusion change is local and cheap; the metric's overall validity is the deeper issue. Recommended: run the cheap exclusion as a measurement-definition update AND treat the metric validity question on the monthly monitor. See lit_search_returns.md (Batch 2026-05-25).
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-224
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the renewed sewing-agent connectivity-metric recommendation.
+      15a/15b/15c (2026-05-25): searched FOR/AGAINST and dispositioned -> MONITOR-234; mirrored here by the 2026-05-25 14a run.
+    Current status: SEARCHED
+
+ASSUMPTION-225:
+  Date identified: 2026-05-25
+  Statement: A 34-file / approximately 90-PRS-triplet / 12-tradition ingestion is too large and error-prone to execute unattended at the tail of the daily cycle; it belongs in a focused, ideally attended ingestion session where IDs, counts, cross-program entries, and pattern-detector evaluation can be reconciled and verified.
+  Context: 2026-05-25 unattended daily-orchestrator run (flags/ingest_backlog_2026-05-25.md): the orchestrator detected 36 unrecorded files in `inbox/`, 35 of them approved (effective unique items = 34) from the 2026-05-13 decision batch, and DEFERRED rather than executed the ingest -- "deliberately deferred, not skipped." The flag explicitly cites caution-over-speed and fail-loud, and recommends an attended pass.
+  Type: methodological / operational
+  Related decisions: (deferred-action policy on bulk ingest; not yet a numbered DECISION)
+  Related presumptions: PRESUMPTION-248
+  Related open questions: OPEN-066 (the deferred-to-attended path terminates at the same dark gate)
+  Testability: testable empirically (compare attended vs unattended bulk-ingest error rates at varying batch sizes; measure recovery cost when an unattended run does err)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-225
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit "deliberately deferred, not skipped" + "belongs in a focused (ideally attended) session" rationale in `flags/ingest_backlog_2026-05-25.md`.
+    Current status: UNTESTED
+
+ASSUMPTION-226:
+  Date identified: 2026-05-25
+  Statement: A daily-walk Chat conversation occurring on a day with no Cowork desktop session should be counted as an interactive Tom session for daily-shape framing and changelog/metrics purposes; framing such a day as "no interactive session" because Cowork did not fire is a Rule-12 fail-loud violation (silently overrunning the actual day-shape).
+  Context: 2026-05-25 evening cowork-to-chat agent self-correction (architecture/daily_sync/cowork_to_chat/2026-05-25_cowork_summary.md): "I had originally written it up as a third automated-pipeline day, no interactive session. That's true for *Cowork desktop* sessions, but you did have a daily-walk *Chat* session -- so I revised the summary to reflect both, rather than leaving the inaccurate 'no interactive session' claim (fail-loud)."
+  Type: methodological / measurement
+  Related decisions: (day-shape classification; the "interactive Tom session" definition used by both 14a/14b daily framing and the cadence-streak counter)
+  Related presumptions: PRESUMPTION-249
+  Testability: testable empirically (does treating Chat as interactive vs not change the extracted-item count / composition; does it change the presumption:assumption ratio's signal of "automated day" vs "human day"?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-226
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim from the cowork-to-chat agent's explicit framing-correction self-disclosure in the 2026-05-25 evening sync.
+    Current status: UNTESTED
+
+ASSUMPTION-227:
+  Date identified: 2026-05-25
+  Statement: A daily-sync delivery to Tom should LEAD with whichever finding closes the loop on the morning walk's open question (when one exists), not the chronologically-first or sectional-default item; closing an open Tom-Chat thread takes priority over standard report ordering.
+  Context: 2026-05-25 evening cowork-to-chat agent (same source): "I led the delivery with that answer to close the loop." The choice was explicit and architecturally framed: when the morning walk surfaced a specific question (here: lagging-metric vs real consumption gap on the ~40 approved proposals), the evening delivery is structured to answer that question first.
+  Type: methodological / communicative-design
+  Related decisions: (daily-sync message-ordering policy; not yet a numbered DECISION)
+  Related presumptions: PRESUMPTION-250
+  Testability: testable empirically (compare uptake / action rates of loop-closing-first messages vs default-ordered messages over a multi-week sample)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-227
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the cowork-to-chat agent's stated ordering choice in the 2026-05-25 evening sync.
+    Current status: UNTESTED
+
+ASSUMPTION-228:
+  Date identified: 2026-05-25
+  Statement: The C2A2 community-model GPRS articulation (goals / problems / resources have-tap-need / solutions) is structurally homologous to Levin & Lyons' "shared model of relative scarcities" as the cognitive glue of a collective; the price-system-as-template thesis therefore supplies an external, peer-reviewed mechanism for how a C2A2 community coordinates and accelerates.
+  Context: PROP-2026-05-25-001 (Levin & Lyons, "Cognitive glues are shared models of relative scarcities"; inbox/proposals/pending/2026-05-25_levin_cognitive-glues-economics-collective-intelligence.md) cross-tradition signals -- "Loughran / C2A2 master -- strong: This paper is nearly a theoretical charter for the C2A2 community model (self-first GPRS articulation: goals / problems / resources have-tap-need / solutions). 'Resources have-tap-need' is literally a relative-scarcity model. Levin & Lyons supply an external, peer-reviewed mechanism for why a community that shares a scarcity model can coordinate and accelerate. Flag as a paradigm-relevant import for the Community Explorer / GPRS framing." Agent-surfaced by the Levin specialist; not yet a Tom-adopted import.
+  Type: architectural / epistemic
+  Related decisions: (Community Explorer / GPRS framing as scarcity-model coordination; not yet a numbered DECISION)
+  Related presumptions: PRESUMPTION-251
+  Testability: testable via literature (collective-intelligence / coordination-under-scarcity; market-as-information-system theory; FEP precision-weighting as scarcity allocation) and empirically (does the C2A2 community in fact exhibit price-like signals among participants, or only Tom-as-conductor coordination?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-228
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit "theoretical charter ... resources have-tap-need is literally a relative-scarcity model" framing in the Levin specialist's cross-tradition signals.
+    Current status: UNTESTED
+
+ASSUMPTION-229:
+  Date identified: 2026-05-25
+  Statement: Leading theories of consciousness are substrate-permissive in principle -- their brain-focus is a convention of imagination rather than a theoretical necessity -- so the substrate-independence thesis is portable from cognition to consciousness for purposes of the C2A2 master's load-bearing AI-membership question (PRS-31).
+  Context: PROP-2026-05-25-002 (Rouleau & Levin, "Brains and where else?"; inbox/proposals/pending/2026-05-25_levin_brains-and-where-else-consciousness-embodiments.md) cross-tradition signals -- "Loughran / C2A2 master -- relevant: strengthens the load-bearing AI-membership question (PRS-31) -- if consciousness theories are substrate-permissive in principle, the case for AI agents as candidate sites of subjective perspective gets stronger on the Levin side of the deferred criterion." Cited evidence: "the operations and functional principles described or predicted by most theories of consciousness are remarkably similar, with the focus on brains being more driven by convention and limitations of imagination than by any specific content of existing theories."
+  Type: architectural / epistemic
+  Related decisions: (AI-membership criterion for the C2A2 master; not yet a numbered DECISION)
+  Related presumptions: (none registered yet; couples deferred-criterion presumption cluster)
+  Testability: testable via literature (the Rouleau & Levin 2026 mapping itself; IIT / GWT / HOT / AST substrate requirements; counter-arguments for genuine neural specificity in consciousness)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-229
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the Rouleau & Levin paper's central claim as adopted by the Levin specialist's cross-tradition signal to the C2A2 master, with the consciousness/AI-membership coupling stated explicitly.
+    Current status: UNTESTED
+
+ASSUMPTION-230:
+  Date identified: 2026-05-26
+  Statement: When the Gmail decision-email body and the review-page state disagree about proposal-approval values, the review-page state (verified by direct paste into Cowork plus Tom's verbal confirmation) is authoritative; the email body is non-authoritative until the decision-email generator is fixed.
+  Context: 2026-05-26 attended Cowork session at 17:42 ET (review/archive/2026-05-26_decisions.md): the 17:25Z Gmail decision-email carried all-PENDING values despite the review page showing 25 approvals. Tom pasted the review-page state directly into Cowork; the 25 APPROVE decisions were executed from that paste plus a verbal "approve all 28" intent. The cowork-to-chat summary explicitly flags: "This deserves a numbered DECISION tomorrow (review-page state is the source of truth when email and page disagree), plus a UI/workflow fix on the decision-email-generation side."
+  Type: methodological / operational
+  Related decisions: (candidate; not yet a numbered DECISION; flagged for DECISION-048 tomorrow)
+  Related presumptions: PRESUMPTION-254
+  Testability: testable empirically (audit past Gmail decision-email runs against their paired review-page states; measure mismatch rate and identify the misfire condition)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-230
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the cowork-to-chat summary section "Key Decisions Made" + "For Morning Discussion #2" explicit framing; corroborated by the 2026-05-26 attended-session archive note ("the email body was *not* used as the authority -- the review-page state and Tom's verbal confirmation were").
+    Current status: UNTESTED
+
+ASSUMPTION-231:
+  Date identified: 2026-05-26
+  Statement: Tom's stated intent ("approve all 28 from the start") is sufficient to reclassify items that the review-page UI showed as Pending; verbal/textual intent applies retroactively to status-field state and overrides UI categorization within the same attended session.
+  Context: 2026-05-26 attended Cowork session: after the initial 25-APPROVE batch was executed from the pasted review-page state, Tom issued an explicit "include 3 Wrights" follow-up; these were the 3 N.T. Wright items that had appeared as Pending in the review-page UI but whose inclusion was Tom's intent from the start. All 3 were reclassified to APPROVE in the same session. (Source: review/archive/2026-05-26_decisions.md.)
+  Type: methodological / operational
+  Related decisions: (related to candidate DECISION-048; not yet numbered)
+  Related presumptions: PRESUMPTION-254, PRESUMPTION-258
+  Testability: framework commitment (operational policy for handling intent-vs-UI mismatches) -- not directly testable as a literature claim; testable empirically by tracking how often verbal-intent corrections later prove inconsistent with the originally-stated UI state
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-231
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 3-Wright follow-up framing in the cowork-to-chat summary ("Tom's intent had been 'approve all 28' from the start") and the archive note's explicit reclassification record.
+    Current status: UNTESTED
+
+ASSUMPTION-232:
+  Date identified: 2026-05-26
+  Statement: Tom confirms that the prior 36-file ingest backlog (source-dated 2026-04-21 to 2026-05-12, moved pending/->approved/+inbox/ by the 2026-05-13 batch but never committed) is intended for go-live; today's commit folds those previously-uncommitted moves in, truing up git state to match on-disk filesystem.
+  Context: 2026-05-26 attended Cowork session (flags/ingest_backlog_2026-05-25.md updated in place; review/archive/2026-05-26_decisions.md): Tom explicitly confirmed go-live intent for the prior 36-file backlog. The HIGH-severity ingest-backlog flag was updated with the EOD addendum ("escalated 2026-05-26 17:42 ET -> reaffirmed 2026-05-26 EOD"). Ingest queue total after today's confirmation + today's 28: 62 real proposals + 2 stub-file artifacts across 12 traditions.
+  Type: architectural / operational
+  Related decisions: (operational go-live confirmation; not a new numbered DECISION; settles the ambiguity raised by ASSUMPTION-225 / PRESUMPTION-248)
+  Related assumptions: ASSUMPTION-225 (defer-to-attended policy)
+  Related presumptions: PRESUMPTION-248 (defer-as-bottleneck-relabel), PRESUMPTION-252 (approval-vs-ingest decoupling)
+  Testability: framework commitment (intent-confirmation; not directly literature-testable); operational outcome testable empirically (does the next focused-attended PRS-extraction session in fact ingest all 62 within Tom's planned 2-3-hour block, or does scope creep / batch error force partial completion?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-232
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the cowork-to-chat summary's headline statement ("Tom also explicitly confirmed go-live intent for the prior 36-file backlog") + the in-place flag update note. Settles the prior day's "defer to attended" ambiguity for the approval/commit half of the pipeline; the PRS-extraction half remains deferred.
+    Current status: UNTESTED
+
+ASSUMPTION-233:
+  Date identified: 2026-05-26
+  Statement: A focused ingest of ~62 proposals across 12 traditions is best executed as tradition-batched sub-runs (wolfram first, then levin, then rohr, then carroll, then wright, then fredrickson, then mcgilchrist, then stump, then friston, then hoffman, then kastrup, then arkanihamed) rather than a monolithic single pass, with natural break-points at each tradition boundary.
+  Context: 2026-05-26 evening cowork-to-chat summary "What's Next #1" + "For Morning Discussion #3": "Recommended cadence: 2-3 hour dedicated block, run by tradition-batch (wolfram first, then levin, then rohr, then carroll, ...)" -- explicitly orders the 12 traditions and predicts "an hour per top-3 tradition, half an hour per long-tail."
+  Type: methodological / operational
+  Related decisions: (focused-ingest cadence design; not yet a numbered DECISION)
+  Related assumptions: ASSUMPTION-225 (defer-to-attended)
+  Related presumptions: PRESUMPTION-255, PRESUMPTION-258
+  Testability: testable empirically (compare batch-error rates of tradition-batched ingest vs monolithic ingest on labeled samples; measure per-tradition completion times against the predicted "hour for top-3 / half-hour for long-tail" model)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-233
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim from the cowork-to-chat summary's "tradition-batch cadence" recommendation and the explicit ordering of the 12 traditions.
+    Current status: UNTESTED
+
+ASSUMPTION-234:
+  Date identified: 2026-05-26
+  Statement: The first tradition-batch in the focused-ingest session (wolfram = 10 files) functions as a protocol test-run -- its outcome (per-file processing time, error rate, cross-program-index update correctness, pattern-detector behavior) dictates whether the same cadence carries through to the remaining 11 traditions or whether the protocol needs revision before continuing.
+  Context: 2026-05-26 evening cowork-to-chat summary "For Morning Discussion #3": "The first batch (wolfram = 10 files) is also the test-run for the protocol." The 12-tradition ordering is structured so that the largest tradition (wolfram, 10 files) is processed first, giving the most statistical power for protocol validation before the remaining 52 files commit to the same cadence.
+  Type: methodological
+  Related decisions: (focused-ingest protocol-validation cadence; not yet a numbered DECISION)
+  Related assumptions: ASSUMPTION-233
+  Related presumptions: PRESUMPTION-255
+  Testability: testable empirically (compare wolfram-batch outcomes against the cadence assumed for tradition-batches 2-12; measure whether wolfram-batch errors generalize or are tradition-specific; track whether the cadence is in fact revised after wolfram-batch)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-234
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit "test-run for the protocol" framing in the cowork-to-chat summary.
+    Current status: UNTESTED
+
+ASSUMPTION-235:
+  Date identified: 2026-05-26
+  Statement: The underlying bottleneck for human-terminating queues (REVISE, STALE, INCORPORATE-pending, deferred-ingest) is sit-down availability -- demonstrated today by a 10-second re-login that ended a 6-day signout and was immediately followed by an attended Cowork session draining two queues to zero in minutes -- not queue/policy design; the queue/policy fix REVISE-053 (unified needs-Tom queue + age/escalation/safe-default tiers) is real and lit-validated, but secondary to the sit-down-arrival problem.
+  Context: 2026-05-26 evening cowork-to-chat summary "For Morning Discussion #1": "What flipped this open: the 10-second re-login that ended the 6-day signout -- and a single attended Cowork session immediately drained two human-terminating queues. This is the empirical answer to OPEN-066: the queue/policy fix is *real* (and now lit-validated as REVISE-053), but the underlying bottleneck genuinely is a sit-down, not a queue-design issue."
+  Type: architectural / scaling
+  Related decisions: (extends DECISION-048 candidate; addresses OPEN-066 with an empirical answer)
+  Related open questions: OPEN-066 (which routes share the bottleneck), OPEN-067 (NEW: how to make sit-down arrival reliable on a useful cadence)
+  Related presumptions: PRESUMPTION-256, PRESUMPTION-258
+  Related assumptions: ASSUMPTION-225 (defer-to-attended); PRESUMPTION-240/245/248 (the three prior bottleneck-route findings)
+  Testability: testable empirically (track future signouts: do they all resolve in ~10 seconds? do attended sessions consistently drain queues in minutes? track human-terminating-queue age vs sit-down-event frequency)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-235
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim from the cowork-to-chat summary's "For Morning Discussion" framing of today's empirical finding. This is the central architectural claim of the day: the bottleneck diagnosis shifts from queue-design to attention-arrival.
+    Current status: UNTESTED
+
+ASSUMPTION-236:
+  Date identified: 2026-05-26
+  Statement: A reliable ~1-week-cadence "sit-down day" is the right operational target for draining human-terminating queues; the design question prompted by the 6-day signout is what mechanism reliably triggers such a sit-down on that cadence, given that today's drainage happened only because a re-login event accidentally co-occurred with sufficient block-time and Tom's intent to clear queues.
+  Context: 2026-05-26 evening cowork-to-chat summary "For Morning Discussion #1": "The right design question on the walk is: what makes a 'sit-down day' reliably arrive on a 1-week cadence, given the 6-day signout was the actual failure mode (not the absence of a queue)?" The 1-week cadence is named explicitly as the target.
+  Type: architectural / operational
+  Related decisions: (design-target for sit-down-arrival mechanism; not yet a numbered DECISION)
+  Related open questions: OPEN-067 (NEW)
+  Related assumptions: ASSUMPTION-235
+  Related presumptions: PRESUMPTION-256, PRESUMPTION-257
+  Testability: testable empirically (track inter-arrival times of attended Cowork sessions over 6-12 weeks; measure variance; check whether any deliberate triggering mechanism in fact stabilizes the 1-week cadence)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-236
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the cowork-to-chat summary's explicit "1-week cadence" target and the framing of the design question as a triggering-mechanism problem.
+    Current status: UNTESTED

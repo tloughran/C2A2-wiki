@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-216:
+  Date searched: 2026-05-23
+  Original item: ASSUMPTION-216
+  Original statement: "The Aquinas<->Levin teleology seam is the right focal cross-tradition bridge for the two-summa head-to-head."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a]
+    Original item: ASSUMPTION-216
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted as the chosen focal bridge for the head-to-head.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Flyvbjerg (2006) "Five Misunderstandings About Case-Study Research." — Information-oriented selection of paradigmatic/critical cases is methodologically legitimate; a focal seam can be chosen for its richness.
+    2. Levin (2019, 2022) bioelectric goal-directedness; Levin & Dennett "cognition all the way down." — Teleology/goal-directedness is a genuinely live, substantive theme in Levin's program.
+    3. Aristotelian-Thomist final causation (Aquinas, ST I q.44 a.4; Feser on the four causes). — Teleology is central to the Thomist side too, so the topic is shared rather than imported.
+
+  Strength of support: Moderate
+
+  Summary: Teleology is a substantively shared topic across the two sides — final causation is load-bearing for Aquinas, and goal-directedness is load-bearing for Levin — so the seam is not arbitrary. Case-selection methodology supports choosing a paradigmatic seam for a focused comparison. Support is partial because "shared topic" does not guarantee "same concept" (the FOR case establishes relevance, not commensurability; see 15b on equivocation) and "right/most productive" is asserted, not compared (see PRESUMPTION-235).
+
+  Caveats: Relevance of the seam is well-supported; its optimality and conceptual unity are not.
+
+  Recommendation: PARTIALLY-SUPPORTED

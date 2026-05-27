@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-239:
+  Date searched: 2026-05-23
+  Original item: PRESUMPTION-239
+  Original statement: "The reviewer presumes the transcript_authenticity_check FABRICATION verdict on fidelity-passing summary renders is a false-positive, not a real signal."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a]
+    Original item: PRESUMPTION-239
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred: the reviewer dismissed a FABRICATION verdict on fidelity-passing summary renders as classifier error.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Abstractive vs extractive summarization: abstractive renders legitimately differ in surface form while preserving content. — A verbatim/extractive-tuned authenticity classifier will fire false positives on faithful abstractive summaries.
+    2. Classifier-evaluation practice (precision/recall, base rates). — Single positive verdicts on out-of-distribution inputs (summary form) are exactly where false-positive rates spike; error analysis is the standard adjudication.
+    3. Distribution-shift literature: a detector trained on one render type degrades on another, producing systematic, explicable false positives.
+
+  Strength of support: Moderate
+
+  Summary: There is a principled reason the verdict COULD be a false positive: a fabrication/authenticity classifier built for verbatim transcripts is out of distribution on abstractive summary renders, where surface divergence is expected even when fidelity holds, and such conditions are classic false-positive territory. So the reviewer's hypothesis is plausible. Support is moderate, not strong, because plausibility is not adjudication: the supportive case argues the verdict MIGHT be noise, not that it IS — establishing that requires the labeled error analysis 15b demands.
+
+  Caveats: Support licenses "treat as candidate false-positive pending analysis," not "dismiss." Acting on the dismissal before adjudication is unsupported.
+
+  Recommendation: PARTIALLY-SUPPORTED

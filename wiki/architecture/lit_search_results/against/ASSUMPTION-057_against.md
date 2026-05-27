@@ -37,3 +37,33 @@ SEARCH-AGAINST-ASSUMPTION-057:
     Strongest counterargument: Making a rule visible does not make the rule correct. PRISMA item 8 explicitly requires stated inclusion/exclusion criteria PLUS per-item classification documentation; this rule has the first but not the second. The "subsumed" and "downgraded" classifications are themselves unstated criteria, creating nested unaudited judgment — the same structural problem PRESUMPTION-053 identified (an audit-criterion log is missing). The task-file itself has an internal inconsistency (references both "6 excluded findings" and lists 8: 001-004, 006-008, 010), which is itself evidence that the rule has not been audited against its application. Absent a per-item log and second-order criteria, stating the rule creates the appearance of audit without the substance.
     What would need to be true for C2A2 to be safe: Per-item classification log for each excluded finding with classification reason and date; stated second-order criteria for "subsumed" and "downgraded"; re-qualification check for subsequently-active excluded items.
     How to test: Audit the 6 (or 8) excluded findings against the stated rule; verify each classification is correct; scan for any excluded finding with activity since exclusion date that should re-qualify.
+
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-057 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-25
+  Original item: ASSUMPTION-057
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a->15a,15b->15c->15d->15a,15b->15c] (cycle 1)
+    Original item: ASSUMPTION-057
+    Item type: ASSUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-24): re-triggered on monthly cadence (MONITOR-059 cycle 1)
+      15b (cycle 1, 2026-05-25): re-searched for challenging literature
+    Current status: refresh; no new challenging literature surfaced this cycle.
+
+  Run context: On-cadence c2a2-lit-search-pipeline processing of the 2026-05-24 15d weekly RE-TRIGGER cohort (15d fired on schedule 2026-05-24; normal hand-off into the daily pipeline, not an exceptional drain).
+
+  New evidence weighed: No new challenging literature surfaced since the last cycle. Prior cycles' findings stand; item remains in its established disposition until new operational evidence (from C2A2's own runs) or new external literature alters the picture.
+  Sources (new / refreshed): No new sources this cycle.
+  Strength of challenge: Unchanged from prior cycle.
+  Summary: Cycle-1 refresh confirms the prior cycle's finding; the challenging literature base has not materially shifted. Recommendation carries forward unchanged.
+  Caveats: Automated weekly refresh is bounded by the LLM's capacity to surface genuinely new external evidence; a human-driven scan or operational evidence from C2A2's own runs is the more sensitive signal for status change.
+  Specific risks: Unchanged from prior cycle.
+  Mitigations available: Unchanged from prior cycle.
+  Recommendation: refreshed; carry forward prior recommendation

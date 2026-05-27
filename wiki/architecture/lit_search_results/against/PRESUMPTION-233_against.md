@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-233:
+  Date searched: 2026-05-23
+  Original item: PRESUMPTION-233
+  Original statement: "The head-to-head presumes the two summae are commensurable enough to be compared on shared criteria — against the project's own MacIntyrean incommensurability commitment."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15b]
+    Original item: PRESUMPTION-233
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred: the experiment scores two summae on shared criteria.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. MacIntyre (1988) "Whose Justice? Which Rationality?": there is no tradition-neutral standard of rationality. — Any "shared criteria" scorecard must be drawn from SOME tradition, so it is not neutral ground; it tilts the contest.
+    2. Kuhn (1962) and Feyerabend (1975): incommensurable paradigms lack a common measure. — Standards of what counts as success/evidence are themselves paradigm-relative.
+    3. The project's own pluralism commitment (ASSUMPTION-207). — Imposing shared criteria contradicts the system's stated refusal to flatten rival traditions to a common metric; the experiment would violate its own design value.
+
+  Strength of challenge: Strong
+
+  Summary: The strongest challenge is internal: the project is MacIntyrean and pluralist (ASSUMPTION-207), and MacIntyre denies exactly the tradition-neutral "shared criteria" the head-to-head presumes. Any neutral-looking scorecard is in fact drawn from one tradition's notion of success, so scoring two summae against it smuggles in a winner. This is not merely an abstract worry; it means a "shared-criteria" head-to-head cannot yield the unbiased evidence it promises. The supportive route (MacIntyre's epistemological-crisis comparison) is a DIFFERENT method and is not what "shared criteria" describes.
+
+  Specific risks: The experiment's headline result is determined by whose criteria were chosen as "shared," producing pseudo-evidence that confirms the criteria-author's tradition.
+
+  Mitigations available: Replace neutral-scorecard scoring with MacIntyre's tradition-internal test (does each tradition resolve the other's epistemological crises in its own terms?); if shared criteria are unavoidable, declare their provenance and run the comparison under each tradition's criteria separately and report both.
+
+  Recommendation: CHALLENGED (strong)
+
+  STEELMAN:
+    Item: PRESUMPTION-233
+    Strongest counterargument: On the project's own MacIntyrean and pluralist commitments there is no tradition-neutral standard of rationality, so "shared criteria" for scoring two summae cannot be neutral — they are one tradition's success-conditions in disguise. A head-to-head decided on such criteria measures conformity to the chosen yardstick, not the relative strength of the traditions, and thereby contradicts the very pluralism (ASSUMPTION-207) the system is built to protect.
+    What would need to be true for C2A2 to be safe: The comparison uses tradition-internal standards (each tradition judged on whether it can resolve the rival's crises in its own terms), not an imposed neutral scorecard.
+    How to test: Ask whether the comparison criteria could themselves be contested by either tradition. If yes, they are not neutral and the head-to-head is tilted.

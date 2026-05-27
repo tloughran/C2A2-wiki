@@ -1,0 +1,37 @@
+SEARCH-AGAINST-ASSUMPTION-216:
+  Date searched: 2026-05-23
+  Original item: ASSUMPTION-216
+  Original statement: "The Aquinas<->Levin teleology seam is the right focal cross-tradition bridge for the two-summa head-to-head."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15b]
+    Original item: ASSUMPTION-216
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted as the chosen focal bridge.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Equivocation on "teleology": Aristotelian-Thomist final causation is metaphysically robust (ends as real causes in nature), whereas Levin/Dennett goal-directedness is cybernetic/deflationary ("as-if" agency, homeostatic setpoints). — The seam may join two different concepts under one word.
+    2. Gentner (1983) structure-mapping: a good analogy requires shared relational structure, not shared labels. — Surface lexical match ("teleology") without structural match is a weak bridge.
+    3. Case-selection critique (Seawright & Gerring 2008): a focal case asserted as "right" without comparison risks selection bias (couples PRESUMPTION-235).
+
+  Strength of challenge: Moderate
+
+  Summary: The main challenge is conceptual equivocation: Thomist final causation and Levin's goal-directedness share a word but may not share the relational structure a productive analogy needs — Levin's teleology is explicitly deflationary, Aquinas's is not. If the seam rests on the shared term rather than shared structure, the head-to-head could generate pseudo-agreement or pseudo-conflict that is really a translation artifact. Secondarily, "right/most productive" is asserted without weighing alternative seams.
+
+  Specific risks: The flagship cross-tradition bridge turns on an equivocation, so any "convergence" or "tension" the experiment reports at this seam is an artifact of using one word for two concepts.
+
+  Mitigations available: Disambiguate the two teleology concepts up front (robust final cause vs cybernetic goal-directedness) and map relational structure, not vocabulary; weigh >=2 candidate seams (PRESUMPTION-235) before committing.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: ASSUMPTION-216
+    Strongest counterargument: "Teleology" names a metaphysically robust doctrine of final causes in Aquinas and an explicitly deflationary, as-if goal-directedness in Levin/Dennett; treating the seam as a single bridge mistakes lexical overlap for structural homology (Gentner), so the focal case is built on an equivocation and cannot be the "right" bridge until the two concepts are shown to share relational structure.
+    What would need to be true for C2A2 to be safe: The two teleologies are explicitly disambiguated and shown to share enough relational structure to support analogical mapping; the seam is chosen over weighed alternatives.
+    How to test: Write the structure-map for each side; if the relational roles (what causes what, in virtue of what) do not align, the seam is lexical, not structural.

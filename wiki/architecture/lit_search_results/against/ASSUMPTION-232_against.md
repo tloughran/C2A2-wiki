@@ -1,0 +1,34 @@
+SEARCH-AGAINST-ASSUMPTION-232:
+  Date searched: 2026-05-27
+  Original item: ASSUMPTION-232
+  Original statement: Tom confirms the prior 36-file ingest backlog (source-dated 2026-04-21 → 2026-05-12) is intended for go-live; today's commit folds the previously-uncommitted moves into git state.
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-232
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted.
+      15b: Searched for challenging literature on deferred-approval and retroactive intent.
+    Current status: NO-CHALLENGE-FOUND (Weak)
+
+  Sources:
+    1. Counter: ITIL emergency-change governance — retroactive approval is permitted but with elevated review requirements; a 21-day span between source-date and commit warrants more than verbal confirmation.
+    2. SOX / SOC2 — retroactive attestation of state is permitted but the audit-trail should document WHY the commit was deferred, not only that it was approved.
+
+  Strength of challenge: Weak
+
+  Summary: The challenge is weak. The pattern (retroactive attestation + true-up commit) is well-supported industrially. The main caveat is that the AUDIT TRAIL should document why the commit was deferred, not only that it was eventually approved.
+
+  Specific risks: (a) If the deferral was itself a Rule-12 fail-loud event (file moves committed only weeks later), the audit trail should reflect that; (b) the 21-day span suggests deferred-attended-attention is recurring (PRESUMPTION-248 territory).
+
+  Mitigations available: (a) Audit-trail entry explaining the deferral; (b) shorter feedback loop between move + commit.
+
+  Recommendation: NO-CHALLENGE-FOUND (the assumption stands; audit-trail completeness is the only concern)
+
+  STEELMAN:
+    Item: ASSUMPTION-232
+    Strongest counterargument: The retroactive attestation pattern is fine, but the deferral itself is a symptom — 21 days between move and commit indicates the commit step was waiting for attention that was scarce. The same FLAG I pattern is implicit in the deferral.
+    What would need to be true for C2A2 to be safe: Audit-trail entry documenting the deferral cause; shorter normal move-to-commit window.
+    How to test: Track move-to-commit lag over time; if median >7 days, the deferral pattern is structural.

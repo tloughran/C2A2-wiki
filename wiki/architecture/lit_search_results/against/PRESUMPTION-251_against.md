@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-251:
+  Date searched: 2026-05-27
+  Original item: PRESUMPTION-251
+  Original statement: Importing Levin & Lyons' "cognitive glue = shared scarcity model" thesis as a charter for C2A2's community-model GPRS framing presumes C2A2 is a Markov-blanketed coordination problem of subunits-with-private-models — but today's C2A2 is one human plus agents with content flowing top-down; the price-system analogy may apply only at target-state.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-251
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced.
+      15b: Searched for challenging literature on minimum-N and top-down vs peer-to-peer architectural mismatches.
+    Current status: CHALLENGED (Moderate)
+
+  Sources:
+    1. Hayek (1945) explicit limit-case — Hayek's argument depends on many independent agents with distributed private information; with N=1 + tools the analysis becomes degenerate.
+    2. Schelling (1960) "The Strategy of Conflict" — coordination phenomena depend on multiple interacting agents with independent decision-making; analogy import to top-down architectures imports the wrong mechanism.
+    3. Sims et al. / FEP critique literature — FEP-as-coordination loses bite when the "agents" are not actually independent (e.g., when content flows top-down from one designer).
+    4. Granovetter (1985) embeddedness — small-community coordination is dominated by trust/reciprocity not price-information, exactly when the price-system analogy is most ambiguous.
+    5. Domain-transfer caveats (Gentner 1983) — analogy import without explicit mapping is anti-pattern; mapping a many-agent price system onto a one-human-many-agents architecture is precisely the structural-mismatch case.
+
+  Strength of challenge: Moderate
+
+  Summary: Multiple sources converge: the price-system analogy applies to many independent agents with distributed private info; present-state C2A2 lacks this structure. Importing the analogy at present-state risks structural mismatch. The challenge is well-supported.
+
+  Specific risks: (a) Architectural decisions today may be made on the basis of a target-state analogy that does not apply, creating mismatch; (b) the analogy may foreclose attention to mechanisms that DO apply at present-state (trust, reciprocity, Tom-mediated coordination); (c) at target-state the analogy may still need explicit mapping (Gentner).
+
+  Mitigations available: (a) Hold the homology claim as target-state-conditional; (b) at present-state, use coordination metaphors appropriate to N=1+tools (mentoring / authoring); (c) document the source-target mapping before importing the analogy as a charter.
+
+  Recommendation: CHALLENGED (Moderate)
+
+  STEELMAN:
+    Item: PRESUMPTION-251
+    Strongest counterargument: The price-system / Hayekian analogy is parameterized on many-independent-agents-with-private-info. Present-state C2A2 has one human plus agents with top-down content. Importing the analogy at present-state imports the wrong mechanism for the architecture in front of us, and risks foreclosing attention to mechanisms that actually apply (mentoring, authoring, trust-routing). At target-state the analogy is plausibly more apt but still requires explicit Gentner-style mapping.
+    What would need to be true for C2A2 to be safe: Hold ASSUMPTION-228 as target-state-conditional; at present-state, document the actual coordination mechanism in use; if the analogy is imported, do explicit source-target mapping.
+    How to test: List the price-system mechanism components (price signals, voluntary exchange, distributed private info); ask whether each maps to a present-state C2A2 component. If most do not map, the analogy is not present-state-applicable.

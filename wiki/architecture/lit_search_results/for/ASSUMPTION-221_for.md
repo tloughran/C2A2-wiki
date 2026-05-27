@@ -1,0 +1,30 @@
+SEARCH-FOR-ASSUMPTION-221:
+  Date searched: 2026-05-24
+  Original item: ASSUMPTION-221
+  Original statement: "C2A2 should locate accountability for its own autonomous ('ownerless') agents in the deployment-and-verification pipeline (Tom's review gate), not in agent-internal predictability."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a]
+    Original item: ASSUMPTION-221
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted as a governance commitment about where accountability for ownerless agents resides.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted; high-stakes governance citations live-verified 2026-05-24 per REVISE-040)
+    Current status: SUPPORTED (in principle; conditional on an exercised gate)
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Matthias (2004) "The responsibility gap: ascribing responsibility for the actions of learning automata." Ethics & Information Technology 6(3). — When an agent's behavior is not predictable, fault-based responsibility located in internal predictability breaks down; this motivates relocating accountability to the design/deployment chain.
+    2. Santoni de Sio & van den Hoven (2018) "Meaningful Human Control over Autonomous Systems: A Philosophical Account." Frontiers in Robotics and AI 5:15. (live-verified 2026-05-24) — The "tracking" and "tracing" conditions locate control and responsibility along the chain of design and operation, i.e., in the pipeline, not in the system's internal states.
+    3. Nissenbaum (1996) "Accountability in a computerized society." Science and Engineering Ethics. — Against the "many hands" problem, accountability must be designed-in procedurally rather than read off internal behavior.
+    4. Wolfram (computational irreducibility; A New Kind of Science, and recent observer/computation essays). — If agent behavior is computationally irreducible (unpredictable short of running it), internal predictability is the wrong locus for accountability and outcome-verification is the tractable one — a direct grounding for "not in agent-internal predictability."
+
+  Strength of support: Strong (for the design-locus principle)
+
+  Summary: There is strong, near-consensus support in AI governance for locating accountability in the sociotechnical oversight/deployment layer rather than in a system's internal predictability. This is precisely the "meaningful human control" answer to the responsibility gap, and it is independently reinforced by Wolfram's computational irreducibility: you cannot extract accountability from prediction of an irreducible process, so a verification gate over outcomes is the right place. The principle C2A2 states is well grounded.
+
+  Caveats: All of this support is conditional on the gate's tracking and tracing conditions actually being met — the gate must be *exercised*. The literature grounds the *locus* of accountability, not the stronger claim that any nominal/unexercised gate suffices. That stronger claim is exactly what PRESUMPTION-243 challenges, and the gate's current 4-day absence (PRESUMPTION-240) means the precondition for this premise is presently unmet. Support is therefore "Strong in principle, precondition-gated in practice."
+
+  Recommendation: SUPPORTED (in principle; conditional on an exercised review gate)

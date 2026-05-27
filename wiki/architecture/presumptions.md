@@ -4531,3 +4531,580 @@ PRESUMPTION-230:
     Transform at each step:
       14b: Inferred from a user-reported UX symptom being dispositioned by data/logic reasoning in place of a reproduced on-screen observation.
     Current status: UNTESTED
+
+PRESUMPTION-231:
+  Date surfaced: 2026-05-22
+  Statement: [inferred] Byte-identical graph data plus a passing `node --check` (plus a human eyeball review) is presumed to entail correct *rendered* behavior of the new interaction widgets — edge-picking, node click-toggle, the brightness/year sliders. The bundle was promoted on data-identity + JS-syntax + Tom's visual review, but no automated interaction test reproduces each widget's behavior.
+  Evidence it was operative: the stated release gate (ASSUMPTION-212) is "data byte-identical to the approved file, node --check clean, reviewed by Tom" — none of which exercises the raycast/toggle/slider event paths.
+  Why it was unstated: when data integrity and syntax both pass and the page looks right, "it renders" feels proven; the gap between "compiles + data correct" and "every interaction observed working" is the verification-standard substitution that hides in confident shipping.
+  Type: methodological
+  Related decisions: ASSUMPTION-212, DECISION-043, PRESUMPTION-230, PRESUMPTION-218 (same family)
+  Testability: testable empirically (a reproduced-behavior check or interaction test on the live build: do edge-pick / toggle / sliders each behave as specified?)
+  Risk if wrong: Low-Medium — promoting on data+syntax can ship a real interaction bug marked "verified"; directly re-instantiates the PRESUMPTION-230/218 pattern.
+  Status: SEARCHED -- 15c disposition: MONITOR (MONITOR-222, 2026-05-23); see for_lit_search.md / monitor_queue.md
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-231
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a UI bundle promoted to live on data-identity + node --check + visual review, with no interaction-level test in the gate.
+    Current status: SEARCHED
+
+PRESUMPTION-232:
+  Date surfaced: 2026-05-22
+  Statement: [inferred] The two-summa experiment's portability presumes a cold-start chat will share enough tacit context — the project's frame, conventions, the operator's intent — that nothing load-bearing is lost when the only carrier is a single brief file.
+  Evidence it was operative: the brief was treated as "self-contained" and the launch plan is "open the new chat, attach that file, say go" (ASSUMPTION-214) — no provision for context the brief cannot encode.
+  Why it was unstated: portability is treated as already-solved (the portability toolkit, architecture/18); the residual tacit-knowledge gap is invisible precisely because the brief feels complete.
+  Type: methodological / epistemic
+  Related decisions: ASSUMPTION-214, DECISION-044
+  Testability: testable empirically (run the cold-start chat; measure whether it reproduces intent or asks for context the brief omitted)
+  Risk if wrong: Medium — a brief that omits tacit context produces an experiment that drifts from intent, and the drift may not be obvious until results are in.
+  Status: SEARCHED -- 15c disposition: MONITOR (MONITOR-223, 2026-05-23); see for_lit_search.md / monitor_queue.md
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-232
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the "self-contained brief -> say go" handoff plan treating portability as complete.
+    Current status: SEARCHED
+
+PRESUMPTION-233:
+  Date surfaced: 2026-05-22
+  Statement: [inferred] The head-to-head presumes the two summae are *commensurable enough to be compared* — that a Thomist and a Conscious-Realist-Monist summa can be set against each other on shared criteria without one tradition's terms framing the contest. (MacIntyre's own thesis, a project mentor-source, is that rival traditions may be incommensurable.)
+  Evidence it was operative: the experiment's whole form is a "head-to-head" with "success criteria" (ASSUMPTION-215) — which presupposes a neutral-enough comparison ground.
+  Why it was unstated: comparison is the natural shape of an experiment; that the comparison ground might itself belong to one tradition is exactly the kind of framing a head-to-head does not pause to examine.
+  Type: epistemic
+  Related decisions: ASSUMPTION-215, DECISION-044, ASSUMPTION-207 (rival, non-converging master sciences)
+  Testability: testable via literature (MacIntyre on tradition rivalry/incommensurability; commensurability debates in philosophy of science)
+  Risk if wrong: Medium-High — if the two summae are incommensurable, a head-to-head with shared "success criteria" may smuggle one tradition's standards in as neutral, biasing the very evidence the experiment is meant to produce.
+  Status: PARTIALLY-CHALLENGED -- 15c disposition: REVISE (REVISE-048 HIGH, 2026-05-23, AWAITING-REVIEW); SYSTEMIC-RISK-FLAG H; see revision_flags.md
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-233
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the head-to-head framing against the project's own MacIntyrean commitment to potentially incommensurable rival traditions.
+    Current status: PARTIALLY-CHALLENGED
+
+PRESUMPTION-234:
+  Date surfaced: 2026-05-22
+  Statement: [inferred] The experiment presumes a "Conscious-Realist-Monist summa" already exists, or can be assembled in a form parallel to the Thomist summa, even though "what exactly counts as Summa 2" is left as a downstream open item.
+  Evidence it was operative: the experiment is briefed, scoped, and ready to launch with the Summa-2 definition deferred (OPEN-062) — i.e., its existence/assemblability is taken for granted while its definition is pending.
+  Why it was unstated: the Thomist Summa is a fixed historical corpus; treating "Summa 2" as symmetrically available imports that givenness onto a corpus that does not yet exist in the same form.
+  Type: structural / methodological
+  Related decisions: ASSUMPTION-215, DECISION-044, OPEN-062
+  Testability: testable empirically (attempt to assemble Summa-2; observe whether a parallel corpus can in fact be produced)
+  Risk if wrong: Medium — if Summa-2 cannot be assembled to parallel the Thomist Summa, the head-to-head is asymmetric (a fixed corpus vs. an ad-hoc construction) and the comparison is unfair by construction.
+  Status: SEARCHED -- 15c disposition: MONITOR (MONITOR-224, 2026-05-23); see for_lit_search.md / monitor_queue.md
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-234
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the experiment being launch-ready while Summa-2's definition/existence is still open.
+    Current status: SEARCHED
+
+PRESUMPTION-235:
+  Date surfaced: 2026-05-22
+  Statement: [inferred] Choosing the Aquinas<->Levin teleology seam as the focal bridge presumes this dyad is the most evidentially productive of the available cross-tradition seams; alternatives (other thinker pairs, other shared problems) were not weighed in the brief.
+  Evidence it was operative: a single seam is named as *the* focal connection (ASSUMPTION-216) with no comparison set or selection rationale recorded.
+  Why it was unstated: the Aquinas<->Levin teleology link is salient in the project (it recurs in the connectome and Summa work), so it presents itself as the obvious seam without a felt need to justify it against alternatives.
+  Type: methodological
+  Related decisions: ASSUMPTION-216, DECISION-044
+  Testability: testable (compare the evidential yield of the Aquinas<->Levin seam against other candidate seams)
+  Risk if wrong: Low-Medium — an absent-alternatives choice; if a different seam is more productive, the experiment under-samples the interaction space, but the cost is opportunity rather than error.
+  Status: SEARCHED -- 15c disposition: MONITOR (MONITOR-225, 2026-05-23); see for_lit_search.md / monitor_queue.md
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-235
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a single focal seam named without a weighed alternative set.
+    Current status: SEARCHED
+
+PRESUMPTION-236:
+  Date surfaced: 2026-05-22
+  Statement: [inferred] Embedding faculty summaries inline (index.html 1.3 -> 1.9 MB) presumes the self-contained-panel benefit outweighs the page-weight/load cost, and that inline growth stays acceptable as the vault and faculty set grow.
+  Evidence it was operative: the 1.3 -> 1.9 MB jump was accepted as a "content win" with no page-weight budget, load-time check, or ceiling discussed (ASSUMPTION-217).
+  Why it was unstated: at current size the page still loads fine, so the cost is not yet felt; the scaling question is invisible until a larger vault makes it concrete.
+  Type: scaling
+  Related decisions: ASSUMPTION-217, DECISION-045, PRESUMPTION-229 (connectome scale blindness — same family)
+  Testability: testable empirically (measure load time / memory as embedded content grows; set a size budget)
+  Risk if wrong: Low-Medium — inline embedding that is fine at 1.9 MB may degrade load/interactivity as the faculty corpus grows, exactly when the sociogram is most useful.
+  Status: SEARCHED -- 15c disposition: MONITOR (MONITOR-226, 2026-05-23); see for_lit_search.md / monitor_queue.md
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-236
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an accepted single-file size jump with no scaling ceiling discussed.
+    Current status: SEARCHED
+
+PRESUMPTION-237:
+  Date surfaced: 2026-05-22
+  Statement: [inferred] The publish/untrack calls rest on an unstated, stable criterion of what is "publishable" vs. "private" (eulogy in / Archbishop report out / Habash in / Hoffman x Levin transcript stop-tracked). Each decision is individually explicit, but the governing rule is tacit and could classify future artifacts inconsistently.
+  Evidence it was operative: four per-artifact calls were made in one pass (ASSUMPTION-218) with no articulated rule connecting them.
+  Why it was unstated: each call felt obvious in the moment ("of course this stays out"), so the shared criterion behind them never needed stating — the classic normative-smuggling pattern.
+  Type: normative
+  Related decisions: ASSUMPTION-218, DECISION-046
+  Testability: testable (articulate the criterion; check whether it reproduces these four calls and resolves edge cases consistently)
+  Risk if wrong: Medium — without an explicit publishability rule, future artifacts may be tracked or excluded inconsistently, including accidental publication of sensitive material.
+  Status: SEARCHED -- 15c disposition: MONITOR (MONITOR-227, 2026-05-23); see for_lit_search.md / monitor_queue.md
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-237
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a set of explicit per-file publish decisions with no stated governing criterion.
+    Current status: SEARCHED
+
+PRESUMPTION-238:
+  Date surfaced: 2026-05-22
+  Statement: [inferred] Parking the git-history scrub presumes the already-committed history of the Hoffman x Levin transcript poses acceptable residual exposure while parked — stop-tracking the file is presumed sufficient in the interim even though the content remains in committed history, and no trigger is set for when "parked" becomes unacceptable.
+  Evidence it was operative: the scrub was scoped but deliberately not executed (DECISION-047); the file was stop-tracked, which only affects future commits.
+  Why it was unstated: stop-tracking feels like "handled," so the distinction between "removed going forward" and "still in history" is easy to elide; a success-criteria gap (no defined failure condition for the parked state).
+  Type: methodological / risk
+  Related decisions: DECISION-047, DECISION-046, ASSUMPTION-218, OPEN-064
+  Testability: testable (inspect git history for the transcript's presence; assess exposure under repo-publicity scenarios)
+  Risk if wrong: Medium — if the repo is made more public while the scrub is parked, sensitive content remains retrievable from history; the absent trigger means nothing forces the scrub before that happens.
+  Status: PARTIALLY-CHALLENGED -- 15c disposition: REVISE (REVISE-049 MED, 2026-05-23, AWAITING-REVIEW); see revision_flags.md
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-238
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a scrub parked after stop-tracking, with no stated condition converting parked into must-run.
+    Current status: PARTIALLY-CHALLENGED
+
+PRESUMPTION-239:
+  Date surfaced: 2026-05-22
+  Statement: [inferred] The Summa-reviewer escalation presumes the `transcript_authenticity_check` FABRICATION verdict on fidelity-passing summary-form renders is a classifier *false-positive*, not a real signal — i.e., that summary-form fidelity and "authenticity" are separable and the classifier is mis-tuned, rather than that summary renders genuinely lose authenticity.
+  Evidence it was operative: the reviewer keeps looping Days 66-115 and re-escalating the same blocker ~20x on the premise that the FABRICATION flag is wrong; the sweep treats the flagged renders as fine.
+  Why it was unstated: from inside the reviewer's frame the renders "pass fidelity," so the classifier "must be" wrong; the alternative — that summary-form rendering does lose something the classifier is right to catch — is not entertained.
+  Type: methodological / epistemic
+  Related decisions: OPEN-063, Rule 12 (fail loud), PRESUMPTION-230 (verification-standard family)
+  Testability: testable empirically (audit a sample of FABRICATION-flagged summary renders against source for actual fidelity loss; characterize the classifier's error rate)
+  Risk if wrong: Medium — if the classifier is sometimes right, treating it as a uniform false-positive would wave through genuinely low-fidelity renders; if it is wrong, the reviewer wastes runs re-escalating. Either way the premise is currently untested.
+  Status: SEARCHED -- 15c disposition: MONITOR (MONITOR-228, 2026-05-23); see for_lit_search.md / monitor_queue.md
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-239
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the reviewer's repeated escalation premised on the authenticity classifier being a false-positive, with the converse never entertained.
+    Current status: SEARCHED
+
+PRESUMPTION-240:
+  Date surfaced: 2026-05-23
+  Statement: [inferred] The AWAITING-REVIEW gating of all REVISE flags (today REVISE-047/048/049, two of them HIGH-urgency and self-undermining) presumes the human review gate is reliably available to close the loop -- yet that gate has been effectively absent for four consecutive days (claude.ai signed out since 2026-05-20; no interactive Tom session today). High-urgency self-corrections can therefore sit unactioned indefinitely while the pipeline keeps generating more.
+  Evidence it was operative: the lit pipeline raised REVISE-047/048 (HIGH) and SYSTEMIC-RISK-FLAG H today and set them to AWAITING-REVIEW per protocol ("require Tom's response before status changes"); meanwhile the morning chat-scrape and the evening cowork-to-chat both failed for the 4th straight day on a signed-out session, so no human is reading or actioning the flags.
+  Why it was unstated: the protocol's "AWAITING-REVIEW until Tom responds" reads as a safety feature, so the implicit dependency on the human actually being available to respond is never named as a failure mode; the cadence keeps firing, which feels like the system working.
+  Type: methodological / scaling
+  Related decisions: DECISION-044 (gated by the unactioned REVISE-047/048), DECISION-047 (challenged by the unactioned REVISE-049)
+  Related assumptions: ASSUMPTION-221 (accountability located in the review gate)
+  Related open questions: OPEN-065
+  Testability: testable empirically (measure REVISE-flag age / AWAITING-REVIEW backlog and human-response latency over time) and via literature (human-in-the-loop reliability; alert fatigue; bottleneck failure in review-gated automation)
+  Risk if wrong: High -- the project's self-correction machinery depends on a gate that is silently failing; HIGH-urgency, self-undermining flags (e.g., that the two-summa experiment cannot yield unbiased evidence) accumulate with no mechanism forcing a response, so the system's most important findings are the least likely to be acted on.
+  Status: CHALLENGED -- 15c disposition (2026-05-24): REVISE (REVISE-050 HIGH, AWAITING-REVIEW); 15a PARTIALLY-SUPPORTED (Weak, conditional -- reliability holds only WHEN availability is engineered: SRE on-call/escalation/SLA, Beyer et al. 2016) / 15b CHALLENGED (Strong -- unbounded-queue growth (Little's Law), alarm fatigue (Cvach 2012), automation complacency (Parasuraman & Manzey 2010), oversight-not-performed (Green 2022); the 4-day absence is direct disconfirming data). The unstated "gate is reliably available" assumption is refuted; the vulnerability is confirmed. Anchors SYSTEMIC-RISK-FLAG I. See revision_flags.md / lit_search_returns.md (Batch 2026-05-24).
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-240
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the AWAITING-REVIEW protocol's dependence on human availability against the four-day claude.ai signout and the no-interactive-session day.
+      15a/15b/15c (2026-05-24): searched FOR/AGAINST and dispositioned -> REVISE-050 (HIGH); mirrored here by the 2026-05-24 14b run.
+    Current status: CHALLENGED (gate-availability assumption refuted; REVISE-050 raised)
+
+PRESUMPTION-241:
+  Date surfaced: 2026-05-23
+  Statement: [inferred] Running the full daily cadence (14a/14b self-awareness, 15a/15b/15c lit pipeline, Summa batch, tradition-agent intake, the two syncs) on a day with zero human design input presumes the daily extraction cadence remains meaningful -- and that "one day" is the right granularity -- even when there was nothing new for a human to have decided.
+  Evidence it was operative: today was an automated-pipeline day with no interactive Tom session, yet every scheduled agent fired and this 14a/14b run is itself producing a changelog/metrics snapshot for a day whose new architectural content is almost entirely the pipeline's evaluation of prior items plus two intake proposals.
+  Why it was unstated: a daily schedule, once set, runs unconditionally; "should this fire today?" is not a question the cadence asks, so the assumption that daily granularity is always appropriate stays invisible.
+  Type: methodological / scaling
+  Related decisions: ASSUMPTION-117 (cadence / residual-urgency family)
+  Related presumptions: PRESUMPTION-240
+  Testability: testable empirically (compare yield of human-active vs automated-only days; assess whether event-triggered rather than fixed-daily firing would lose anything) and via literature (monitoring-cadence design; event- vs schedule-driven pipelines)
+  Risk if wrong: Low-Medium -- over-firing wastes automated capacity and dilutes the registries with low-information days; the more interesting failure is the opposite, that a fixed daily cadence can mask a missing human (PRESUMPTION-240) by looking productive.
+  Status: SEARCHED -- 15c disposition (2026-05-24): MONITOR (MONITOR-231 Low-Med/Monthly); 15a PARTIALLY-SUPPORTED (Moderate -- regular heartbeat maintains freshness/surfaces drift; "absence of change" is informative) / 15b PARTIALLY-CHALLENGED (Moderate -- over-sampling an unchanged signal adds cost not information; self-referential-drift risk). Balanced and self-illustrating (this very daily firing is what surfaced 240/243). Possible resolution: lightweight quiet-day heartbeat vs full input-day run. Cadence family with ASSUMPTION-117. See lit_search_returns.md (Batch 2026-05-24).
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-241
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the full cadence firing on a no-human-design day.
+      15a/15b/15c (2026-05-24): searched FOR/AGAINST and dispositioned -> MONITOR-231; mirrored here by the 2026-05-24 14b run.
+    Current status: SEARCHED
+
+PRESUMPTION-242:
+  Date surfaced: 2026-05-23
+  Statement: [inferred] Deriving PRS candidates from a talk's announced topic list (ASSUMPTION-220) presumes the topic list is a faithful proxy for the talk's actual content -- that nothing in the unfetched transcript would alter, qualify, or contradict the candidate beyond what a Medium-confidence cap already hedges.
+  Evidence it was operative: both proposals built candidate problem/resource/solution triplets and cross-tradition signals from segment titles alone, treating the announced topics as adequate evidence (capped at Medium/Speculative) rather than as mere pointers.
+  Why it was unstated: capping confidence at Medium feels like sufficient acknowledgment of the gap, so the distinct question -- whether a title reliably stands in for its segment's content -- is not separately examined.
+  Type: epistemic / methodological
+  Related assumptions: ASSUMPTION-220
+  Related decisions: (tradition-intake methodology)
+  Testability: testable empirically (for talks where transcripts later become available, measure how often topic-list-derived candidates survive transcript verification unchanged)
+  Risk if wrong: Low-Medium -- if titles are weak proxies, intake accumulates candidates that systematically mis-state a talk's content; the Medium cap limits but does not eliminate the propagation risk if such candidates are later promoted.
+  Status: SEARCHED -- 15c disposition (2026-05-24): MONITOR (MONITOR-232 Medium/Weekly); 15a PARTIALLY-SUPPORTED (Weak-Moderate -- metadata carries thematic signal: IR title/abstract-as-surrogate, Blei et al. 2003 LDA) / 15b CHALLENGED (Moderate -- surrogate divergence (Pitkin 1999, Boutron 2010), label != relational structure (Gentner 1983), faithfulness risk (Maynez 2020)). Faithful for topic, challenged at the resolution/significance layer; the Medium cap labels but does not correct systematic proxy bias. Cheap scoped fix: leave resolution/significance unfilled pending transcript. Designer-unaware twin of ASSUMPTION-220 (MONITOR-229). See lit_search_returns.md (Batch 2026-05-24).
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-242
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred as the designer-unaware twin of ASSUMPTION-220 -- the proxy-fidelity gap beneath topic-list extraction.
+      15a/15b/15c (2026-05-24): searched FOR/AGAINST and dispositioned -> MONITOR-232 (net leans PARTIALLY-CHALLENGED at the claim-structure layer); mirrored here by the 2026-05-24 14b run.
+    Current status: SEARCHED
+
+PRESUMPTION-243:
+  Date surfaced: 2026-05-23
+  Statement: [inferred] Locating C2A2's accountability in "Tom's review gate as the verification layer" (ASSUMPTION-221) presumes that review gate is actually exercised -- but with claude.ai signed out four days and REVISE flags sitting AWAITING-REVIEW, the presumed verification layer is currently a no-op, so an accountability story that rests on it is, right now, unwarranted.
+  Evidence it was operative: PROP-2026-05-23-002 offers the review gate as the warrant for how the project locates accountability, on the same day the cowork-to-chat sync reports the gate has been unreachable for four consecutive days.
+  Why it was unstated: "Tom reviews everything" is the project's background assumption of control, so the gap between the gate existing and the gate being exercised is not noticed when the accountability claim is made.
+  Type: normative / methodological
+  Related assumptions: ASSUMPTION-221
+  Related presumptions: PRESUMPTION-240
+  Related open questions: OPEN-065
+  Testability: testable empirically (audit what fraction of agent-generated proposals/flags actually pass through a human review action vs. accumulate unreviewed)
+  Risk if wrong: Medium-High -- if accountability is claimed to rest on a gate that is not exercised, the project both overstates its governance and leaves autonomous-agent output effectively unreviewed -- precisely the "ownerless AI" problem the proposal meant to answer.
+  Status: SUPPORTED -- 15c disposition (2026-05-24): REVISE (REVISE-051 MED-HIGH, AWAITING-REVIEW); 15a SUPPORTED (Strong -- accountability requires an *exercised* control: Green 2022, Santoni de Sio & van den Hoven 2018 tracking condition, COSO/SOC operating-effectiveness, Elish 2019 [live-verified]) / 15b NO-CHALLENGE-FOUND (Weak -- the "standing-authority / periodic-review suffices" counter covers brief bounded gaps, not an open-ended multi-day no-op with HIGH items queued). The vulnerability is well-supported and currently active; the REVISE is raised against the related design claim (ASSUMPTION-221), not against this item. Co-anchors SYSTEMIC-RISK-FLAG I. See revision_flags.md / lit_search_returns.md (Batch 2026-05-24).
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-243
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred as the normative twin of ASSUMPTION-221, against the four-day review-gate outage.
+      15a/15b/15c (2026-05-24): searched FOR/AGAINST (key citations live-verified) and dispositioned -> REVISE-051 (MED-HIGH); vulnerability SUPPORTED; mirrored here by the 2026-05-24 14b run.
+    Current status: SUPPORTED (vulnerability confirmed; REVISE-051 raised against ASSUMPTION-221)
+
+PRESUMPTION-244:
+  Date surfaced: 2026-05-24
+  Statement: [inferred] Treating the same-week Wright/Rohr/Stump thematic convergence as a real structural unity worth unit-promotion (ASSUMPTION-222) presumes the convergence reflects homology in the source traditions rather than an artifact of the intake pipeline itself -- all nine proposals were generated by the same agentic process in one weekly batch and scored by the same bridge-detection method, so the co-occurrence could be induced by shared retrieval/prompting/timing rather than by the traditions independently arriving at one theme.
+  Evidence it was operative: the sewing log builds the "promote as a unit" case from proposals that all entered through the same 2026-05-24 weekly sewing run and were scored by the same >0.5 thinker-overlap method; no check distinguishes tradition-level convergence from pipeline-level co-sampling.
+  Why it was unstated: when several items independently "point the same way," the convergence feels like discovered signal, so the question of whether the discovery method manufactured the alignment is not raised.
+  Type: epistemic / methodological
+  Related assumptions: ASSUMPTION-222
+  Testability: testable empirically (do the same convergences appear when proposals are generated by independent pipelines / different weeks / different prompts? control for batch and method) and via literature (confirmation/clustering artifacts in automated literature synthesis)
+  Risk if wrong: Medium -- unit-promoting a pipeline artifact would harden a method-induced pattern into a load-bearing "central theme," and later cross-tradition survival tests would inherit the bias.
+  Status: SEARCHED -- 15c disposition (2026-05-25): MONITOR (MONITOR-235 Medium/Weekly); 15a SUPPORTED/Strong (mono-method-bias / Campbell & Fiske 1959; Podsakoff et al. 2003) / 15b PARTIALLY-CHALLENGED/Moderate (convergence can be genuine when independence holds; not a refutation, the documented caveat). The presumption is well-supported as a caution; together with the parent ASSUMPTION-222 -> REVISE-052 it specifies the discriminant-validity check the unit-promotion rule needs.
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-244
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred as the designer-unaware twin of ASSUMPTION-222 -- the convergence-vs-artifact gap beneath the "promote as a unit" recommendation.
+      15a/15b/15c (2026-05-25): searched FOR/AGAINST and dispositioned -> MONITOR-235; mirrored here by the 2026-05-25 14a/14b run.
+    Current status: SEARCHED
+
+PRESUMPTION-245:
+  Date surfaced: 2026-05-24
+  Statement: [inferred] The 15d stale-escalation rule (ASSUMPTION-223) -- "downgrade and escalate to Tom for the empirical test" -- presumes a human endpoint actually available to run those tests; but the same review-gate outage that stalls the REVISE backlog (PRESUMPTION-240 / REVISE-050) also terminates these escalations, so "escalate for empirical test" converts a literature-stall into a human-stall rather than resolving it.
+  Evidence it was operative: on 2026-05-24 the 15d run escalated three cycle-4 items (ASSUMPTION-035/037, PRESUMPTION-037) to Tom for empirical testing on the same day the cowork-to-chat sync reports the human gate has been dark five days; both routes (REVISE review and stale-escalation) terminate at the same unavailable human, but only the REVISE route is recognized as stalled.
+  Why it was unstated: "escalate to the human" reads as closing the loop, so the shared dependency on the human actually acting -- the very dependency PRESUMPTION-240 already surfaced for REVISEs -- is not re-examined for escalations.
+  Type: methodological / scaling
+  Related assumptions: ASSUMPTION-223
+  Related presumptions: PRESUMPTION-240
+  Related open questions: OPEN-065, OPEN-066
+  Testability: testable empirically (track escalation-to-Tom age and action latency alongside REVISE-flag age; do escalated empirical tests get run, or accumulate at the same gate?)
+  Risk if wrong: Medium-High -- if escalations pile up at the same dark gate, the STALE mechanism only relabels a stall; combined with the REVISE backlog, multiple HIGH-value queues are all blocked on one absent human while each is locally framed as "handled."
+  Status: SUPPORTED -- 15c disposition (2026-05-25): REVISE (REVISE-053 MED-HIGH; 15a SUPPORTED/Strong on the vulnerability; 15b NO-CHALLENGE-FOUND/Weak). The vulnerability is confirmed: escalation to a saturated/absent endpoint relabels the bottleneck. REVISE-053 raises against the broader design (extends SYSTEMIC-RISK-FLAG I; answers OPEN-066) with recommended remedy = a single "needs-Tom" queue + age/escalation policy + safe-default tier vs must-wait tier + out-of-band escalation that does not itself depend on the gate.
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-245
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred by coupling ASSUMPTION-223 (stale-escalation) to the active gate outage (PRESUMPTION-240) -- both routes share one human bottleneck.
+      15a/15b/15c (2026-05-25): searched FOR/AGAINST and dispositioned -> REVISE-053 (vulnerability SUPPORTED; the REVISE targets the multi-queue routing design, not this item); mirrored here by the 2026-05-25 14a/14b run.
+    Current status: SUPPORTED (vulnerability confirmed; REVISE-053 raised against the multi-queue routing design)
+
+PRESUMPTION-246:
+  Date surfaced: 2026-05-24
+  Statement: [inferred] Excluding `architecture/lit_search_results/` so the orphan count "tracks real routing progress" (ASSUMPTION-224) presumes backlink-density is itself a valid proxy for knowledge integration -- i.e., that an orphan page is genuinely unintegrated. But much of the corpus (changelogs, queues, result files, machine logs) is operational/archival and was never meant to be wikilinked, so a rising orphan count may be measuring growth in machine-generated artifacts, not a failure of integration; the proposed fix (exclude one folder) treats a symptom of a deeper metric-validity question.
+  Evidence it was operative: the sewing log notes the orphan tier is "dominated by content the Sewing Agent does not route" and proposes excluding one folder, yet continues to treat the orphan metric as the connectivity health signal for the whole (increasingly machine-generated) vault.
+  Why it was unstated: backlink-density is the inherited, easy-to-compute connectivity metric, so whether it is the right health signal for a mostly-automated corpus is not asked -- only which folders to exclude from it.
+  Type: epistemic / methodological
+  Related assumptions: ASSUMPTION-224
+  Related presumptions: PRESUMPTION-201 (Goodhart / metric-as-target family)
+  Testability: testable empirically (correlate backlink-density with an independent integration measure -- e.g., whether a note is ever cited by a downstream synthesis or decision) and via literature (validity of graph-connectivity metrics for knowledge bases / documentation health)
+  Risk if wrong: Low-Medium -- chasing the orphan number (even folder-corrected) could drive busywork backlinking of content that does not need integration, a Goodhart risk.
+  Status: SEARCHED -- 15c disposition (2026-05-25): MONITOR (MONITOR-236 Low-Medium/Monthly); 15a SUPPORTED/Strong (graph-connectivity as a meaningful but limited documentation-health signal) / 15b PARTIALLY-CHALLENGED/Weak-Moderate (validity limits of backlink-density; Goodhart risk; metrics for mostly-machine-generated corpora). Couples ASSUMPTION-224 / MONITOR-234; Goodhart family with PRESUMPTION-201. The folder-exclusion fix is reasonable as a measurement-definition update but does not resolve the deeper metric-validity question; monthly monitor is appropriate.
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-246
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred as the designer-unaware twin of ASSUMPTION-224 -- the metric-validity gap beneath the folder-exclusion fix.
+      15a/15b/15c (2026-05-25): searched FOR/AGAINST and dispositioned -> MONITOR-236; mirrored here by the 2026-05-25 14a/14b run.
+    Current status: SEARCHED
+
+PRESUMPTION-247:
+  Date surfaced: 2026-05-24
+  Statement: [inferred] Running 14a's "stated assumption extraction" on an automated-pipeline day -- when the only "transcript" is other agents' output (sewing log, 15d report, lit returns, intake proposals) -- presumes that an autonomous agent's stated rationale carries the same epistemic status as a designer's stated assumption, i.e., that "stated by an agent" == "a considered design commitment the designers are aware of." On a no-human day there is no designer in the loop, so items tagged ASSUMPTION (stated) today were stated by agents, not by Tom -- blurring the very ASSUMPTION/PRESUMPTION distinction the provenance protocol exists to protect.
+  Evidence it was operative: today's ASSUMPTION-222/223/224 are extracted verbatim from agent logs (sewing, 15d) with no human present; yesterday's ASSUMPTION-220/221 were already hedged "agent-surfaced, not yet a Tom-adopted commitment," yet they enter the same registry under the "stated" marker the protocol defines as "original designers were explicitly aware of this premise."
+  Why it was unstated: the pipeline's job is to extract from "the day's transcript," and on automated days the agent outputs simply ARE the transcript, so the substitution of agent-stated for designer-stated is made silently by the cadence.
+  Type: methodological / epistemic
+  Related assumptions: ASSUMPTION-221, ASSUMPTION-222, ASSUMPTION-223, ASSUMPTION-224
+  Related presumptions: PRESUMPTION-241 (cadence-on-no-human-days)
+  Testability: testable via literature (provenance / epistemic-status frameworks for machine-generated vs human-authored claims) and methodologically (introduce an explicit "agent-stated vs Tom-stated" sub-tag and measure how often agent-stated assumptions are later endorsed or repudiated by Tom)
+  Risk if wrong: Medium -- if agent-stated rationales accumulate under the "designer-aware" marker, the protocol's central epistemic-honesty distinction (ASSUMPTION = designer knew; PRESUMPTION = surfaced after the fact) erodes, and downstream consumers over-weight agent opinions as designer commitments.
+  Status: SUPPORTED -- 15c disposition (2026-05-25): REVISE (REVISE-054 MED; 15a SUPPORTED/Strong on the vulnerability; 15b NO-CHALLENGE-FOUND/Weak). The vulnerability is confirmed: machine-generated and human-authored claims warrant distinct epistemic status. REVISE-054 raises against the provenance protocol with recommended remedy = introduce an explicit "agent-stated" sub-tag and a downgrade rule until Tom-endorsement; treat as PRESUMPTION-grade until endorsed.
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-247
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Self-referential inference about this run's own extraction conditions (no human in the loop; agent output serving as the transcript) -- the kind of self-referential signal 14a/14b are briefed to watch for.
+      15a/15b/15c (2026-05-25): searched FOR/AGAINST and dispositioned -> REVISE-054 (vulnerability SUPPORTED; the REVISE targets the provenance protocol, not this item); mirrored here by the 2026-05-25 14a/14b run.
+    Current status: SUPPORTED (vulnerability confirmed; REVISE-054 raised against the provenance protocol)
+
+PRESUMPTION-248:
+  Date surfaced: 2026-05-25
+  Statement: [inferred] Deferring the 34-item ingest backlog to a "focused, ideally attended" session (ASSUMPTION-225) presumes an attended session will in fact occur on a useful timescale. But the same human gate that has been dark 5-6 days is the bottleneck for any attended action -- so "deliberately deferred to attended" is structurally identical to "queued behind the dark gate" (REVISE backlog, STALE escalations, INCORPORATE-pending preconditions). The deferral may be a third instance of the OPEN-066 / SYSTEMIC-RISK-FLAG I human-stall pattern, not a remedy for it.
+  Evidence it was operative: the ingest-backlog flag was raised on 2026-05-25 and explicitly recommends "a focused (ideally attended) ingestion session" on the same day the cowork-to-chat summary reports 5 REVISE flags, 3 STALE escalations, and 28 pending proposals all awaiting Tom; the flag's deferral logic treats "attended" as the working constraint without naming that the constraint is the very bottleneck flagged elsewhere as the project's #1 systemic risk.
+  Why it was unstated: "wait for an attended session" reads as a cautious, professional posture (Rule 1, Rule 12), so the question of whether attendance will actually arrive on a useful timescale is not asked.
+  Type: methodological / scaling
+  Related assumptions: ASSUMPTION-225
+  Related presumptions: PRESUMPTION-240, PRESUMPTION-245
+  Related open questions: OPEN-066, OPEN-065
+  Testability: testable empirically (measure the age of "deferred to attended" items vs other Tom-queue items; do they age at the same rate as REVISE/STALE backlog or faster?)
+  Risk if wrong: HIGH -- 34 approved-but-uningested items represent ~90 PRS triplets across 12 traditions; if they wait 5+ days like the REVISE backlog, downstream synthesis and cross-tradition routing operate on a knowingly-stale tradition wiki state.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-248
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred by coupling ASSUMPTION-225 (defer-to-attended) to the active gate outage; the deferral target is the same gate that is failing for REVISE/STALE.
+    Current status: UNTESTED
+
+PRESUMPTION-249:
+  Date surfaced: 2026-05-25
+  Statement: [inferred] Counting a daily-walk Chat conversation as "interactive" in the same register as a Cowork desktop session (ASSUMPTION-226) presumes the two surfaces produce comparable architectural-history content. But Chat walks are typically shorter, voice-driven (paraphrased into text), artifact-light, and harder to capture mechanically (today's morning scrape failed entirely; the conversation was only captured via live read in the evening sync). Items extracted from a paraphrased Chat may misrepresent Tom's exact framing in ways that Cowork transcripts -- which are full-fidelity text -- would not.
+  Evidence it was operative: the evening cowork agent's only access to today's Chat conversation was a live read via the Chrome extension JS extract; the morning automated scrape failed because Tom was signed out. The summary's quotation of Tom's question ("how to verify whether the apparent backlog is a lagging metric or a real consumption problem") is paraphrase, not transcript text; the cadence and ASSUMPTION extraction operates on that paraphrase.
+  Why it was unstated: counting Chat as interactive is the right fail-loud correction (PRESUMPTION-247 already worried about agent-stated vs designer-stated), and the framing-correction reads as conservative -- so the fidelity gap between a live read and a scraped transcript is not separately surfaced.
+  Type: epistemic / methodological
+  Related assumptions: ASSUMPTION-226
+  Related presumptions: PRESUMPTION-247 (agent-stated vs designer-aware), PRESUMPTION-241 (cadence-on-no-human-days)
+  Testability: testable empirically (compare paired Chat-vs-Cowork extractions on days when both occur -- do they produce the same ASSUMPTION text, or do paraphrase-induced drifts show up?)
+  Risk if wrong: Medium -- item-extraction fidelity; affects the ASSUMPTION/PRESUMPTION distinction PRESUMPTION-247 already protects. A Chat-paraphrase tagged "stated by Tom" carries weight that a 14b-inferred presumption would not.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-249
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the gap between the cowork agent's framing correction (Chat counts as interactive) and the actual capture path (live read, paraphrased; not a full transcript).
+    Current status: UNTESTED
+
+PRESUMPTION-250:
+  Date surfaced: 2026-05-25
+  Statement: [inferred] The "lead with the loop-closing finding" rule (ASSUMPTION-227) presumes that Tom retains his morning-walk question salient enough to recognize an evening loop-closure as such -- and that the evening sync reaches him within that salience window. If the gap is days (as during multi-day signouts), or if the morning question was one of many open threads, loop-closing-first becomes loop-claiming-first: the message foregrounds an answer to a question Tom may not remember asking, possibly displacing a finding that better matches his current attention.
+  Evidence it was operative: today's evening sync leads with the ingest-backlog finding because it answers the morning question; this works only because Tom logged in during the day and the gap was short (single-day same-thread context). The rule does not condition on the gap or on the number of competing open threads.
+  Why it was unstated: closing the loop is intuitively the right rhetorical move, so the question of whether the loop is still actually open in Tom's attention is not asked.
+  Type: epistemic / methodological / communicative-design
+  Related assumptions: ASSUMPTION-227
+  Testability: testable empirically (measure recall of the morning question against the evening sync's lead item, varying the delay and the number of competing open threads; A/B test loop-closing-first vs default ordering)
+  Risk if wrong: Low-Medium -- communicative-design fidelity; can mislead the daily-sync's ordering to optimize for an attentional state that no longer holds.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-250
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred as the designer-unaware twin of ASSUMPTION-227 -- the attention-salience gap beneath the "lead with loop-closure" rule.
+    Current status: UNTESTED
+
+PRESUMPTION-251:
+  Date surfaced: 2026-05-25
+  Statement: [inferred] Importing Levin & Lyons' "cognitive glue = shared scarcity model" thesis as a theoretical charter for the C2A2 community-model GPRS framing (ASSUMPTION-228) presumes that the C2A2 community is, in the relevant sense, a Markov-blanketed coordination problem of subunits-with-private-models-and-mutual-compatibility. But C2A2 today is essentially one human (Tom) plus a tree of agents, with content flowing top-down from Tom rather than peer-to-peer among independent participants. The price-system analogy applies once C2A2 has many independent human participants with private goals; today's structure may not yet exhibit the coordination-under-scarcity Levin & Lyons describe, so the import may be premature.
+  Evidence it was operative: the Levin specialist's cross-tradition signal flags the import as "strong" for the Community Explorer / GPRS framing without naming that the Community Explorer is currently conceptual and the actual operating C2A2 is one human plus agents; the homology is asserted at a target-state level, not a present-state level.
+  Why it was unstated: the GPRS articulation reads as already implementing scarcity-model coordination at the design level, so the gap between the design and the operating reality (single human, top-down) is not separately noted.
+  Type: architectural / scaling
+  Related assumptions: ASSUMPTION-228
+  Testability: testable via literature (when does price-system coordination apply vs not; coordination theory at small group sizes; minimum-N for emergent shared-scarcity signaling) and empirically (does today's C2A2 system in fact exhibit price-like signaling among participants, or only Tom-as-conductor coordination?)
+  Risk if wrong: Medium -- importing a multi-agent coordination thesis to justify a present-day single-human architecture risks treating future-state homology as if it explained current operation; later metrics could be designed for the wrong regime.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-251
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred as the designer-unaware twin of ASSUMPTION-228 -- the present-vs-target-state gap beneath the cognitive-glue import.
+    Current status: UNTESTED
+
+PRESUMPTION-252:
+  Date surfaced: 2026-05-25
+  Statement: [inferred] The "approved" status counter for proposals (today: 131 approved, 26 pending after dedup, 0 denied) is silently misaligned with the underlying tradition-wiki state -- 34 of the approved are not yet in the tradition wikis (ingest backlog). "Approved" reads as "ingested into the network" but actually means "approved and possibly-ingested-or-not." Decisions and metrics that consume the approved-count (intake-velocity dashboards, the "approved" sociogram tier, downstream synthesis priority) implicitly presume approval == ingestion, which the current Phase-1 reconciliation logic does not guarantee.
+  Evidence it was operative: the daily orchestrator reported approved=131 / pending=26 in the same run as it raised the HIGH-severity flag showing 34 of those 131 approved are absent from the tradition wikis (verified by grep). Both numbers ship through the same status field without flagging that the field has two distinct meanings in different consumers.
+  Why it was unstated: the approval gate (Tom's decision email) is treated as the terminal state in proposal-tracking, so the ingest step that follows is assumed reliable; "approved means in the system" is a natural reading when the approval-to-ingest gap normally closes within hours.
+  Type: epistemic / measurement
+  Related assumptions: (the approval-status data model; not separately tagged)
+  Related presumptions: PRESUMPTION-201 (Goodhart / metric-as-target family), PRESUMPTION-246 (metric-validity for mostly-machine-generated corpora)
+  Testability: testable empirically (split the "approved" counter into approved-only vs approved-and-ingested for the past 6 months and recompute intake-velocity / time-to-ingest; check whether downstream synthesis decisions inherit the gap)
+  Risk if wrong: Medium-High -- today's flag demonstrates the gap is large enough (34 of 131 = 26%) to mislead the daily orchestrator's earlier framing; any consumer using "approved-count" as a proxy for tradition-wiki coverage is silently miscounting.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-252
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the contradiction between the daily-orchestrator's approved=131 count and the new flag's finding that 34 of those are absent from the tradition wikis -- a status-field-meaning mismatch exposed by today's flag.
+    Current status: UNTESTED
+
+PRESUMPTION-253:
+  Date surfaced: 2026-05-25
+  Statement: [inferred] Tom's morning-walk framing of the backlog question -- "lagging metric vs real consumption problem" -- presumes the two categories are exhaustive. But today's flag identifies a third category: a pipeline-reconciliation logic error (the 2026-05-17 reconciliation matched only 05-13-dated files, missing the older-dated approved files in the same batch). Items can be "really present in the inbox" AND "actually approved" AND "not yet consumed" because of a date-window mismatch in the reconciliation, distinct from a lag and distinct from a reviewer-attention gap. Treating the question as a 2-way choice may have channeled the answer to "real consumption gap" too quickly when the precise diagnosis is "reconciliation-window mismatch nested inside a real consumption gap."
+  Evidence it was operative: the cowork-to-chat summary frames today's loop-closure as the answer to the morning's lagging-vs-real-consumption question and resolves it as "real consumption gap"; the ingest-backlog flag's "Why it happened (likely)" section names a specific reconciliation logic bug (date-window mismatch) -- a finer category than either of Tom's two options.
+  Why it was unstated: framing the question as a binary often is just shorthand from the asker; the responder is expected to map the available answer onto one of the offered categories rather than insist on a third. The third category surfaces only when the diagnostic detail is examined.
+  Type: epistemic / methodological
+  Related assumptions: (the binary "lagging vs real" framing; not separately tagged)
+  Testability: testable empirically (audit other reconciliation batches and Phase-1 ingest cycles for similar date-window mismatches; do reconciliation logic errors show up under "consumption gap" framings systematically?)
+  Risk if wrong: Low-Medium -- diagnostic-fidelity; bears on whether the chosen remedy (a focused ingest pass) targets the right cause or only the symptom (the reconciliation rule itself needs to handle older-dated approved items in newer decision batches).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-253
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the gap between Tom's morning two-way framing and the flag's three-way diagnostic (lag / consumption-gap / reconciliation-logic-error).
+    Current status: UNTESTED
+
+PRESUMPTION-254:
+  Date surfaced: 2026-05-26
+  Statement: [inferred] The "review-page state is authoritative over the Gmail decision-email body" rule (ASSUMPTION-230) presumes the review-page state is itself reliable; but today's 3-Wright follow-up is direct evidence that the review-page UI also misled (3 items showed as Pending despite Tom's intent to approve all 28 from the start). The proposed rule -- "review-page > email" -- handles the email-misfire case but not the UI-misfire case; the more general rule may need to be "stated human intent overrides both UI and email when those disagree with intent."
+  Evidence it was operative: the cowork-to-chat summary lays out the two failures separately (the 17:25Z email all-PENDING; the review-page UI showing 3 Wrights as Pending) but proposes only the "review-page > email" rule as the methodological clarification candidate for DECISION-048; the symmetric question (when does the UI itself need to be overridden?) is not raised as a separate rule.
+  Why it was unstated: the two UI failures occurred in the same session and were resolved by the same mechanism (Tom's verbal correction), so they read as one situation; the difference -- email-data vs UI-data -- is salient, the difference -- automated-source vs human-displayed -- is not.
+  Type: epistemic / methodological
+  Related assumptions: ASSUMPTION-230, ASSUMPTION-231
+  Testability: testable empirically (audit historical sessions for UI-vs-intent mismatches; measure rate and identify whether the UI's failure modes correlate with the email's failure modes or are independent)
+  Risk if wrong: Medium -- if the UI fails differently from the email and the rule only addresses the email, a future session in which the email is correct but the UI is wrong will have no operative remedy.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-254
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred as the designer-unaware twin of ASSUMPTION-230 -- the UI-vs-intent gap beneath the "review-page > email" rule.
+    Current status: UNTESTED
+
+PRESUMPTION-255:
+  Date surfaced: 2026-05-26
+  Statement: [inferred] The "hour per top-3 tradition, half-hour per long-tail" per-tradition time model (ASSUMPTION-233/234) presumes per-tradition processing time scales linearly with file count and is roughly uniform across traditions, but the 12 traditions span very different theoretical complexity (e.g., wolfram with computational-irreducibility-driven PRS extraction vs simpler thinker imports). A more complex tradition with fewer files may take longer than a less complex tradition with more files; the cadence model treats tradition-complexity as schedule-time-equivalent.
+  Evidence it was operative: the cowork-to-chat summary names file-counts and times (wolfram 10 / hour for top-3; long-tail half-hour) without naming any tradition-complexity factor; the protocol-validation framing (ASSUMPTION-234) treats wolfram-batch outcomes as predictive for traditions 2-12 without conditioning on whether wolfram is representative.
+  Why it was unstated: file-count is the easy-to-quantify scheduling variable, so the harder-to-estimate complexity-per-file factor is not separately named; the protocol-validation step is intended to catch this empirically, but the test-run is one tradition only.
+  Type: methodological / scaling
+  Related assumptions: ASSUMPTION-233, ASSUMPTION-234
+  Testability: testable empirically (record per-file processing time across tradition-batches; correlate with file-count vs per-tradition complexity metrics -- e.g., PRS triplet count per file, cross-program-index touches per file)
+  Risk if wrong: Medium -- a 2-3-hour planned block could overrun if 2-3 of the 12 traditions consume hour-each instead of half-hour-each, pushing the focused-attended session past the time budget and triggering the very deferral PRESUMPTION-248 already identified as a bottleneck-relabel.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-255
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the gap between the cadence model's file-count basis and the absence of any tradition-complexity factor in the time-estimates.
+    Current status: UNTESTED
+
+PRESUMPTION-256:
+  Date surfaced: 2026-05-26
+  Statement: [inferred] The "1-week-cadence sit-down" target (ASSUMPTION-236) and the "sit-down availability is the bottleneck" diagnosis (ASSUMPTION-235) presume future signout / attention-outage events will have the same 10-second-resolvable failure mode as the 2026-05-22 to 2026-05-26 outage. But the resolution mode (a re-login) is specific to the particular signout cause; a different cause (browser session corruption, MFA expiry, OAuth token expiry, network/ICANN issue, or an unrelated executive-function dip not tied to a signout at all) may not be 10-second-resolvable, in which case the queue-draining-by-attended-session mechanism observed today does not generalize.
+  Evidence it was operative: the cowork-to-chat summary names the re-login as the unblocking event without separately surfacing that the next outage may have a different mechanism; the "1-week cadence" target inherits the same implicit uniform-failure-mode assumption.
+  Why it was unstated: the recent outage is the salient mental model, so its mechanism is implicitly generalized; the heterogeneity of attention-failure-modes is not in scope for the today-was-a-good-day framing.
+  Type: methodological / scaling
+  Related assumptions: ASSUMPTION-235, ASSUMPTION-236
+  Related presumptions: PRESUMPTION-240 (gate-reliably-available; CHALLENGED), PRESUMPTION-245 (escalation-into-same-dark-gate), PRESUMPTION-248 (defer-as-bottleneck-relabel)
+  Testability: testable empirically (categorize the next 6 attention-outage events by failure mode and resolution time; check whether the 10-second-resolvable category is in fact dominant or an outlier)
+  Risk if wrong: Medium-High -- if the next outage is not 10-second-resolvable, the queue-drainage mechanism observed today does not apply, and OPEN-067's "sit-down cadence" design must address a heterogeneous-failure-mode space rather than a uniform-re-login one.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-256
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the implicit failure-mode generalization beneath ASSUMPTION-235 + ASSUMPTION-236 and the recent outage's specific re-login resolution.
+    Current status: UNTESTED
+
+PRESUMPTION-257:
+  Date surfaced: 2026-05-26
+  Statement: [inferred] The Rule-12 gap surfaced today (no 2026-05-25_changes.md or 2026-05-25_snapshot.md was written despite the registries advancing with ASSUMPTIONs 225-229 and PRESUMPTIONs 248-253) is direct evidence that the 14a/14b artifact-write step can fail silently while the registries-advance step succeeds. This is a Rule-12 fail-loud violation embedded in the very pipeline that exists to extract Rule-12 violations; surfacing the gap on 2026-05-26 does not, by itself, prevent a recurrence today or tomorrow unless the artifact-write path is separately fault-checked. The same pattern may already be operating silently in other 14a/14b registry-update paths (e.g., for_lit_search.md updates without lit_search_returns.md updates).
+  Evidence it was operative: the cowork-to-chat summary names the gap as a "Rule-12 fail-loud gap" and recommends investigation "before tonight's 05-26 EOD run"; the gap was visible from registry-vs-changelog divergence, not from any pipeline error log -- the pipeline did not flag its own incomplete run.
+  Why it was unstated: the 14a/14b cadence model presumes registries and dated artifacts move together; the registry-update succeeds first, and the artifact-write step is treated as routine; a silent failure between them is invisible until a human checks the next day.
+  Type: methodological / self-referential
+  Related assumptions: (the 14a/14b pipeline's artifact-write step; not separately tagged)
+  Related presumptions: PRESUMPTION-241 (cadence-on-no-human-days), PRESUMPTION-247 (agent-stated-as-designer-aware) -- self-referential pipeline-integrity family
+  Testability: testable empirically (cross-check, for the past 30 days, every registry-advance event against its dated-changelog/snapshot pair; report any solo-registry-advance or solo-artifact-write events) and methodologically (add an explicit fail-loud check inside the 14a/14b pipeline that errors if a registry advances without a paired dated artifact, or vice versa)
+  Risk if wrong: Medium-High -- the 14a/14b pipeline is the project's primary self-awareness mechanism; if its own artifact-write step fails silently, every other Rule-12 finding it produces is itself uncertified.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-257
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Self-referential inference about the pipeline's own integrity, prompted by the 2026-05-25 gap surfaced in the cowork-to-chat summary; the kind of self-referential signal 14a/14b are briefed to watch for.
+    Current status: UNTESTED
+
+PRESUMPTION-258:
+  Date surfaced: 2026-05-26
+  Statement: [inferred] Today's headline framing -- "the approval backlog is cleared" -- presumes that the act of approval, by itself, is a real contribution to the network state. But the network counts (222 PRS triplets / 90 cross-program / 35 findings) moved by exactly zero today; the day's action advanced the intake-pipeline state (proposals approved + committed) but did not advance the network state (PRS triplets, cross-program-index, findings). The cleared-backlog framing silently re-instantiates the approved-status-vs-ingested-state decoupling already surfaced as PRESUMPTION-252; the network-meaningful work (62-proposal PRS extraction) remains pending and itself instantiates PRESUMPTION-248 (defer-as-bottleneck-relabel) at a larger scale than the original 34-file deferral.
+  Evidence it was operative: the cowork-to-chat summary's "Pipeline Status" line confirms "Network counts unchanged" alongside the "approved: 159 (was 131; +28)" change; both numbers are reported as equivalent good news without flagging that the intake-state advance and the network-state stasis represent two different things.
+  Why it was unstated: clearing a queue feels like progress, and the approval count is the visible intake-pipeline metric; the network-state metric did not move so it is implicitly treated as "next session's concern," not as "today's headline obscures the gap."
+  Type: epistemic / measurement
+  Related assumptions: ASSUMPTION-232 (go-live confirmation of prior 36); ASSUMPTION-225 (defer-to-attended); ASSUMPTION-235 (sit-down-availability-as-bottleneck)
+  Related presumptions: PRESUMPTION-252 (approved-vs-ingested decoupling), PRESUMPTION-248 (defer-as-bottleneck-relabel)
+  Testability: testable empirically (track the time-to-ingest from today's 28 approvals + the prior 36 go-live confirmations; if the focused-attended PRS-extraction session is delayed by N days, measure how N grows; check whether headline metrics reported as "cleared" correspond to network-state advance)
+  Risk if wrong: Medium-High -- the headline-clearance framing is the rhetorical structure of today's cowork-to-chat delivery and tomorrow's morning discussion; if it obscures a pending PRS-extraction stall, the same deferral-as-bottleneck-relabel pattern PRESUMPTION-248 surfaced for 34 files may now operate at 62 files with less attention.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-258
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred by coupling today's network-counts-unchanged note to the headline-clearance framing and to the prior-day decoupling presumptions (PRESUMPTION-252, PRESUMPTION-248).
+    Current status: UNTESTED
+
+PRESUMPTION-259:
+  Date surfaced: 2026-05-26
+  Statement: [inferred] The "binary framing false dichotomy" pattern surfaced on 2026-05-25 as PRESUMPTION-253 (lagging vs real-consumption when the actual cause was a reconciliation-window logic error) recurs in today's "queue-design vs sit-down-availability" framing (ASSUMPTION-235's empirical answer to OPEN-066). The summary frames the bottleneck as "queue-design vs sit-down," but a third category -- the heterogeneous-failure-mode space surfaced as PRESUMPTION-256 -- is again subordinated to the binary. Treating the two-way choice as exhaustive may channel tomorrow's design discussion toward "make sit-downs more reliable" without separately exploring "make queue-policies more resilient to varying outage mechanisms."
+  Evidence it was operative: the cowork-to-chat summary structures the morning-discussion item as a two-way choice ("queue-design vs sit-down"), reaches a conclusion ("sit-down is the bottleneck"), and then asks about cadence-arrival -- without separately surfacing that REVISE-053 (the queue-design fix) and the sit-down-cadence question might be complements rather than alternatives.
+  Why it was unstated: the binary frame is convenient for headline delivery and tracks the empirical observation (one re-login drained the queue); the complement-vs-alternative question requires holding two design targets simultaneously, which the morning-walk briefing format does not invite.
+  Type: epistemic / methodological / communicative-design
+  Related assumptions: ASSUMPTION-235, ASSUMPTION-236, ASSUMPTION-227 (loop-closing-first delivery)
+  Related presumptions: PRESUMPTION-253 (binary-framing false dichotomy -- direct recurrence)
+  Testability: testable empirically (audit the past 6 cowork-to-chat summaries for binary-framing structures; check whether subsequent design discussions in fact considered a third option that was subordinated by the binary) and via literature (premature-closure / either-or fallacy in incident analysis and design discussions)
+  Risk if wrong: Low-Medium -- diagnostic-fidelity; bears on whether tomorrow's morning-discussion explores REVISE-053 and the sit-down-cadence question as complements (both needed) or as alternatives (one wins).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-259
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred as a recurrence of PRESUMPTION-253's binary-framing pattern in today's queue-design-vs-sit-down framing; coupled to PRESUMPTION-256's heterogeneous-failure-mode finding.
+    Current status: UNTESTED

@@ -1,0 +1,27 @@
+SEARCH-FOR-PRESUMPTION-256:
+  Date searched: 2026-05-27
+  Original item: PRESUMPTION-256
+  Original statement: The 1-week-cadence sit-down target and the sit-down-availability bottleneck diagnosis presume future signout/attention-outage events share the 10-second-resolvable failure mode of the 2026-05-22 to 2026-05-26 outage; alternate failure modes (browser/MFA/OAuth/ICANN/non-signout exec-function dips) may not be 10-second-resolvable.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-256
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced — failure-mode-homogeneity presumption.
+      15a: Searched for supporting literature on representativeness of recent failure mode for future failure modes.
+    Current status: PARTIALLY-SUPPORTED (Weak)
+
+  Sources:
+    1. Kahneman & Tversky (1974) "Availability heuristic" — recent events are weighted heavily in future prediction; this is sometimes well-calibrated (when distributions are stationary).
+    2. Operational-reliability literature (Beyer SRE) — assuming the most recent failure mode is the dominant one is sometimes correct in low-variance failure regimes.
+    3. Bayes (Pearl 2009) — when prior is uninformative, the most recent observation is a defensible point-estimate.
+
+  Strength of support: Weak
+
+  Summary: There is limited supportive case for treating the most-recent failure mode as the operative one — primarily under stationary-distribution assumptions. The supportive case is weak because real failure modes in solo-PI tooling are heterogeneous (OAuth, browser, network, exec-function, mood).
+
+  Caveats: (a) Support requires distribution stationarity, which the literature does not support for solo-PI tooling; (b) the supportive case is essentially "what else can you do with N=1?" — pragmatic but weak; (c) the supportive case argues only that the diagnosis is *defensible*, not that it is *correct*.
+
+  Recommendation: PARTIALLY-SUPPORTED (Weak)

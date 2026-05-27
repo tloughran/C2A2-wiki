@@ -4289,3 +4289,885 @@ A sync input `daily_sync/chat_to_cowork/2026-05-21_chat_summary.md` is present o
 **Total items processed this run:** 0
 **Total daily-cycle items remaining in queue post-run:** 0
 **Run timestamp:** 2026-05-22 ~05:47 UTC (c2a2-lit-search-pipeline scheduled task; automated; no human-in-the-loop)
+
+
+---
+
+## 2026-05-22 — c2a2-self-awareness-daily (14a/14b) batch
+
+Run note: execution-and-handoff day (two interactive threads — connectome 2-panel ship + two-summa brief; KSGA sociogram regen — plus automated passes). Operationally broad rather than conceptually deep. 8 ASSUMPTIONs (212-219) + 9 PRESUMPTIONs (231-239) extracted; 12 testable items routed below (3 ASSUMPTIONs: 214, 215, 216 + 9 PRESUMPTIONs: 231-239); 5 ASSUMPTIONs held as framework/design/operational commitments (212, 213, 217, 218, 219). The two highest-leverage testable items are PRESUMPTION-233 (commensurability of rival summae — against the project's own MacIntyrean incommensurability commitment) and ASSUMPTION-215 (a Conscious-Realist-Monist summa can be built as a genuine rival), which together gate whether the two-summa head-to-head can produce unbiased evidence. NOTE (scope/fail-loud): this is a 14a/14b extraction-and-routing pass only; the lit pipeline (15a/15b/15c) is a separate scheduled task and ran a clean null run earlier today (2026-05-22 ~05:47 UTC) — these items await the next 15a/15b cycle. NOTE (cadence): the 2026-05-21 EOD 14a/14b fire did not occur (no 2026-05-21 changelog/snapshot); this run resumes the cadence after a one-day gap.
+
+[ASSUMPTION] ASSUMPTION-214: A single self-contained handoff document can carry an experiment's full context into a cold-start chat, making the experiment portable across sessions.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-23] [SEARCHED-15b: 2026-05-23] [DISPOSITIONED-15c: 2026-05-23 -> MONITOR (MONITOR-220 Med-High, Weekly; cold-start brief-portability test before DECISION-044 launch; couples PRESUMPTION-232)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-214; Item type=ASSUMPTION (stated)
+  Search strategy: prompt/context portability; cold-start handoff fidelity; documentation-as-interface; reproducibility of agent tasks from a spec; tacit-knowledge transfer limits
+  Priority: MEDIUM (couples PRESUMPTION-232; gates DECISION-044 launch)
+
+[ASSUMPTION] ASSUMPTION-215: A "Conscious-Realist-Monist summa" can be constructed as a genuine rival to the Thomist summa and the two run head-to-head to produce evidence.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-23] [SEARCHED-15b: 2026-05-23] [DISPOSITIONED-15c: 2026-05-23 -> REVISE (REVISE-047 HIGH; constructed-corpus-as-tradition mismatch + home-team/refereeing bias; FLAG H; gates DECISION-044/OPEN-062)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-215; Item type=ASSUMPTION (stated)
+  Search strategy: MacIntyre on rival traditions and tradition-constituted enquiry; can a synthetic/constructed corpus rival a historical canon; comparative theology/philosophy method; summa as a genre; adversarial-collaboration experiment design
+  Priority: HIGH (day's top conceptual stake; couples PRESUMPTION-233/234; gates DECISION-044, OPEN-062)
+
+[ASSUMPTION] ASSUMPTION-216: The Aquinas<->Levin teleology seam is the right focal cross-tradition bridge for the two-summa head-to-head.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-23] [SEARCHED-15b: 2026-05-23] [DISPOSITIONED-15c: 2026-05-23 -> MONITOR (MONITOR-221 Low-Med, Monthly; teleology equivocation risk; couples PRESUMPTION-235; FLAG H)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-216; Item type=ASSUMPTION (stated)
+  Search strategy: Aristotelian-Thomist teleology vs. Levin's goal-directedness/agential materials; teleology in developmental biology; selecting focal cases in cross-disciplinary comparison; productivity criteria for analogy seams
+  Priority: MEDIUM-LOW (couples PRESUMPTION-235)
+
+[PRESUMPTION] PRESUMPTION-231: Byte-identical data + node --check (+ eyeball review) is presumed to entail correct rendered behavior of new interaction widgets; no interaction test reproduces the behaviors.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-23] [SEARCHED-15b: 2026-05-23] [DISPOSITIONED-15c: 2026-05-23 -> MONITOR (MONITOR-222 Low-Med, Weekly; add interaction smoke test; re-instantiates 230/218; Rule 12)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-231; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (verification standards; "works as designed" vs "observed working"; UI interaction testing/raycast-event testing); 15b (counter-evidence that data+syntax+visual review suffices for interaction correctness)
+  Priority: LOW-MEDIUM (re-instantiates PRESUMPTION-230/218; joins Rule 12)
+
+[PRESUMPTION] PRESUMPTION-232: Experiment portability presumes a cold-start chat shares enough tacit context that nothing load-bearing is lost when the only carrier is a single brief.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-23] [SEARCHED-15b: 2026-05-23] [DISPOSITIONED-15c: 2026-05-23 -> MONITOR (MONITOR-223 Med, Weekly; tacit-loss test on first cold start; couples ASSUMPTION-214)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-232; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (tacit vs explicit knowledge; documentation completeness; context handoff in LLM workflows); 15b (counter-evidence that a written brief reliably reproduces task intent without prior state)
+  Priority: MEDIUM (couples ASSUMPTION-214)
+
+[PRESUMPTION] PRESUMPTION-233: The head-to-head presumes the two summae are commensurable enough to be compared on shared criteria — against the project's own MacIntyrean incommensurability commitment.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-23] [SEARCHED-15b: 2026-05-23] [DISPOSITIONED-15c: 2026-05-23 -> REVISE (REVISE-048 HIGH; no tradition-neutral shared criteria — self-contradicts ASSUMPTION-207; FLAG H; gates unbiased evidence)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-233; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (commensurability/incommensurability in philosophy of science; neutral comparison ground; cross-tradition evaluation methods); 15b (MacIntyre and others on the impossibility of tradition-neutral standards — counter-evidence the comparison ground is neutral)
+  Priority: HIGH (couples ASSUMPTION-215, ASSUMPTION-207; gates whether the experiment yields unbiased evidence)
+
+[PRESUMPTION] PRESUMPTION-234: The experiment presumes a "Summa 2" already exists or can be assembled parallel to the Thomist summa, though "what counts as Summa 2" is open.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-23] [SEARCHED-15b: 2026-05-23] [DISPOSITIONED-15c: 2026-05-23 -> MONITOR (MONITOR-224 Med, Weekly; define Summa-2 (OPEN-062) + control corpus asymmetry; FLAG H)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-234; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (corpus construction; can a contemporary synthesis parallel a historical canon; asymmetry in comparative corpora); 15b (counter-evidence that a fixed-corpus vs constructed-corpus comparison is fair)
+  Priority: MEDIUM (couples ASSUMPTION-215, OPEN-062)
+
+[PRESUMPTION] PRESUMPTION-235: Choosing the Aquinas<->Levin seam presumes it is the most evidentially productive seam; alternatives were not weighed (absent-alternatives).
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-23] [SEARCHED-15b: 2026-05-23] [DISPOSITIONED-15c: 2026-05-23 -> MONITOR (MONITOR-225 Low-Med, Monthly; weigh >=2 candidate seams; FLAG H)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-235; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (case-selection methodology; how focal cases are justified in comparative work); 15b (counter-evidence that a single un-compared seam is an adequate basis)
+  Priority: LOW-MEDIUM (couples ASSUMPTION-216)
+
+[PRESUMPTION] PRESUMPTION-236: Inline-embedding faculty summaries (index.html 1.3 -> 1.9 MB) presumes self-containment outweighs page-weight/scaling cost as the corpus grows.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-23] [SEARCHED-15b: 2026-05-23] [DISPOSITIONED-15c: 2026-05-23 -> MONITOR (MONITOR-226 Low-Med, Weekly; true-now/false-in-limit; page-weight budget+trigger; joins PRESUMPTION-229 scaling family)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-236; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (single-file web-app scalability; inline-data vs lazy-load tradeoffs; load-time budgets); 15b (counter-evidence that inline embedding stays performant at scale)
+  Priority: LOW-MEDIUM (joins PRESUMPTION-229 scaling family)
+
+[PRESUMPTION] PRESUMPTION-237: The publish/untrack calls rest on an unstated, stable publishability criterion; the governing rule is tacit (normative smuggling).
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-23] [SEARCHED-15b: 2026-05-23] [DISPOSITIONED-15c: 2026-05-23 -> MONITOR (MONITOR-227 Med, Weekly; write publishability criterion; couples ASSUMPTION-218)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-237; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (data-governance/classification policy; explicit vs implicit publication criteria; research-data sharing ethics); 15b (counter-evidence that per-case publish decisions are safe without an articulated rule)
+  Priority: MEDIUM (couples ASSUMPTION-218, DECISION-046)
+
+[PRESUMPTION] PRESUMPTION-238: Parking the history scrub presumes acceptable residual exposure while parked; stop-tracking presumed sufficient interim mitigation; no trigger set (success-criteria gap).
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-23] [SEARCHED-15b: 2026-05-23] [DISPOSITIONED-15c: 2026-05-23 -> REVISE (REVISE-049 MED; stop-tracking != history removal; set hard pre-publicity scrub trigger; couples DECISION-047/OPEN-064)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-238; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (git history sanitization; secret/PII remediation practice; stop-tracking vs history-rewrite; risk of content remaining in history); 15b (counter-evidence that deferring a scrub after stop-tracking is low-risk)
+  Priority: MEDIUM (couples DECISION-047, OPEN-064)
+
+[PRESUMPTION] PRESUMPTION-239: The reviewer presumes the transcript_authenticity_check FABRICATION verdict on fidelity-passing summary renders is a false-positive, not a real signal.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-23] [SEARCHED-15b: 2026-05-23] [DISPOSITIONED-15c: 2026-05-23 -> MONITOR (MONITOR-228 Med-High, Weekly; adjudicate via labeled error analysis before trusting false-positive; OPEN-063; Rule 12)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-239; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Routing: 15a (classifier error analysis; fidelity vs authenticity of summary-form renders; abstractive-summary faithfulness/hallucination detection); 15b (counter-evidence that summary-form renders preserve authenticity / that the classifier is uniformly wrong)
+  Priority: MEDIUM (couples OPEN-063, Rule 12; verification-standard family)
+
+**Total newly queued items this batch:** 12 routed (3 ASSUMPTIONs: 214, 215, 216 + 9 PRESUMPTIONs: 231-239); 5 ASSUMPTIONs held as framework/design/operational commitments (212, 213, 217, 218, 219).
+**All at cycle 0 (first 15a/15b dispatch).**
+**Pipeline status:** items QUEUED awaiting next 15a/15b cycle.
+**Run timestamp:** 2026-05-22 EOD (c2a2-self-awareness-daily).
+
+
+---
+
+## Batch 2026-05-23 (Agents 14a/14b -- automated-pipeline-day extraction)
+
+*Day shape: no interactive Tom session; new items are the two Wolfram-intake methodology/governance assumptions and four presumptions surfaced from the automated activity. The 2026-05-22 batch (ASSUMPTION-214/215/216 + PRESUMPTION-231-239) was already SEARCHED + DISPOSITIONED-15c on 2026-05-23 -- see entries above; not re-routed.*
+
+[ASSUMPTION] ASSUMPTION-220: PRS candidates can be validly generated from a talk's announced topic list / runtime metadata when the transcript is unavailable, if confidence is capped at Medium and flagged for transcript verification.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-24] [SEARCHED-15b: 2026-05-24] [DISPOSITIONED-15c: 2026-05-24 -> MONITOR (MONITOR-229 Med, Weekly; staged metadata->PRS valid only if verification enforced; scope to topic-level fields; validate proxy fidelity on labeled sample; couples PRESUMPTION-242 + verification-gate 240/243)]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-220; Item type=ASSUMPTION (stated)
+  Search strategy: faithfulness of metadata/abstract/topic-list-derived summaries vs. full source; abstractive-summary fidelity; do titles proxy content; evidence standards for secondary-source extraction
+  Priority: LOW-MEDIUM (tradition-intake methodology; couples PRESUMPTION-242)
+
+[ASSUMPTION] ASSUMPTION-221: C2A2 should locate accountability for its own autonomous ("ownerless") agents in the deployment-and-verification pipeline (Tom's review gate), not in agent-internal predictability.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-24] [SEARCHED-15b: 2026-05-24] [DISPOSITIONED-15c: 2026-05-24 -> MONITOR (MONITOR-230 High, Weekly; locus SUPPORTED-in-principle (Strong, meaningful-human-control) but precondition (exercised gate) currently unmet; INCORPORATE-pending resolution of REVISE-050/051; FLAG I)]
+  15a result: SUPPORTED (Strong, in principle) | 15b result: PARTIALLY-CHALLENGED (Moderate, conditional) | Disposition: MONITOR
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-221; Item type=ASSUMPTION (stated)
+  Search strategy: AI governance & accountability for autonomous agents; responsibility gaps / "many hands"; human-in-the-loop responsibility allocation; verification-layer-as-accountability; Wolfram on computational irreducibility & agency
+  Priority: MEDIUM (governance; couples PRESUMPTION-240/243, OPEN-065)
+
+[PRESUMPTION] PRESUMPTION-240: The AWAITING-REVIEW gating of REVISE flags presumes the human review gate is reliably available -- but it has been absent four consecutive days; HIGH-urgency self-corrections can sit unactioned.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-24] [SEARCHED-15b: 2026-05-24] [DISPOSITIONED-15c: 2026-05-24 -> REVISE (REVISE-050 HIGH; review gate absent 4 days = unbounded-queue/oversight failure; add SLA+escalation+timeout/safe-default for AWAITING-REVIEW HIGH items; Rule 12 fail-loud; FLAG I)]
+  15a result: PARTIALLY-SUPPORTED (Weak, conditional) | 15b result: CHALLENGED (Strong) | Disposition: REVISE
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-240; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (human-in-the-loop reliability; review-gated automation; escalation design); 15b (counter-evidence that human-gated review queues stay healthy without availability guarantees / SLAs)
+  Priority: HIGH (couples ASSUMPTION-221, OPEN-065; the gate that the project's self-correction depends on is silently failing)
+
+[PRESUMPTION] PRESUMPTION-241: Firing the full daily cadence on a day with zero human design input presumes daily granularity stays meaningful when there was nothing for a human to have decided.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-24] [SEARCHED-15b: 2026-05-24] [DISPOSITIONED-15c: 2026-05-24 -> MONITOR (MONITOR-231 Low-Med, Monthly; daily heartbeat has real absence/drift-detection value (caught 240/243) but full run over-samples quiet days; consider event-trigger/quiet-day heartbeat; cadence family ASSUMPTION-117)]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-241; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (monitoring-cadence design; event-driven vs schedule-driven pipelines; right-sizing observation frequency); 15b (counter-evidence that fixed-daily firing is harmless / always appropriate)
+  Priority: LOW-MEDIUM (couples PRESUMPTION-240; cadence family with ASSUMPTION-117)
+
+[PRESUMPTION] PRESUMPTION-242: Topic-list-derived PRS candidates (ASSUMPTION-220) presume the topic list is a faithful proxy for the talk's actual content beyond what a Medium cap hedges.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-24] [SEARCHED-15b: 2026-05-24] [DISPOSITIONED-15c: 2026-05-24 -> MONITOR (MONITOR-232 Med, Weekly; topic list faithful for topic, not for resolution/significance; leave those fields unfilled-pending-transcript; designer-unaware twin of ASSUMPTION-220/MONITOR-229)]
+  15a result: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b result: CHALLENGED (Moderate) | Disposition: MONITOR
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-242; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (do segment titles/abstracts predict segment content; proxy reliability); 15b (counter-evidence that titles are reliable stand-ins for content)
+  Priority: LOW-MEDIUM (designer-unaware twin of ASSUMPTION-220)
+
+[PRESUMPTION] PRESUMPTION-243: Locating accountability in "Tom's review gate" (ASSUMPTION-221) presumes the gate is exercised; with the 4-day signout it is currently a no-op, so the accountability story is presently unwarranted.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-24] [SEARCHED-15b: 2026-05-24] [DISPOSITIONED-15c: 2026-05-24 -> REVISE (REVISE-051 MED-HIGH; nominal/unexercised gate != accountability (operating-effectiveness/tracking fail); exercise gate or downgrade claim to latent + no-irreversible-action-while-parked; couples 240/221; FLAG I)]
+  15a result: SUPPORTED (Strong; vulnerability real) | 15b result: NO-CHALLENGE-FOUND (Weak) | Disposition: REVISE
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-243; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (accountability requires an exercised control, not a nominal one; governance theatre / control effectiveness); 15b (counter-evidence that a nominal review gate suffices for accountability)
+  Priority: MEDIUM-HIGH (normative twin of ASSUMPTION-221; couples PRESUMPTION-240)
+
+**Total newly queued items this batch:** 6 routed (2 ASSUMPTIONs: 220, 221 + 4 PRESUMPTIONs: 240-243). All testable; 0 held.
+**All at cycle 0 (first 15a/15b dispatch).**
+**Pipeline status:** items QUEUED awaiting next 15a/15b cycle.
+**Run timestamp:** 2026-05-23 EOD (c2a2-self-awareness-daily).
+
+## 2026-05-24 — 15d RE-TRIGGER cycle (weekly, 15d periodic-monitor run)
+
+*75 items re-queued by Agent 15d for continuing/first 15a/15b search. Scheduled weekly `c2a2-periodic-monitor-weekly` run. These items had next_check <= 2026-05-24 and were NOT already re-queued by the 2026-05-18 catchup cohort (whose next check is 2026-05-25). The 57-item 2026-05-17 exceptional daily-drain cohort carried advisory next 15d check 2026-05-24 and is folded into this run (its native weekly cadence). Monthly cycle SKIPPED (today is day 24; first Sunday of June = 2026-06-07).*
+
+**Cohort composition:** 68 weekly cycle items + 4 monthly items now due + 3 cycle-4 stale items (MONITOR-040 ASSUMPTION-035, MONITOR-042 ASSUMPTION-037, MONITOR-044 PRESUMPTION-037) — formally STALE-MONITOR-FLAGGED this run (DOWNGRADE -> LOW-PRIORITY-MONITOR; ESCALATE to Tom). See monitor_queue.md 2026-05-24 run section.
+
+[ASSUMPTION] ASSUMPTION-003: Independent FOR/AGAINST search prevents confirmation bias
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-001 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH
+  Notes: Refresh for MONITOR-001 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-006: PRS triplet (Problem-Representation-Solution) captures research progress
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-002 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-002 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-008: 2/3 consensus threshold meaningful
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-004 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-004 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-013: Cross-tradition signals are reliable indicators
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-005 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH
+  Notes: Refresh for MONITOR-005 cycle 3. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-001: Splitting 14 into 14a/14b improves quality
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-006 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-006 cycle 3. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-002: Thousand Brains transfers intact to multi-agent AI
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-007 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH
+  Notes: Refresh for MONITOR-007 cycle 3. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-003: Reference frame fields will be useful not noise
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-008 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: LOW
+  Notes: Refresh for MONITOR-008 cycle 3. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-004: 2/3 threshold optimal
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-009 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-009 cycle 3. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-005: Separating FOR/AGAINST prevents bias without introducing others
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-010 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH
+  Notes: Refresh for MONITOR-010 cycle 3. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-008: Health metric r computable without excessive samples
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-011 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-011 cycle 3. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-010: Agent 16 can detect conditions via web search
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-012 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH
+  Notes: Refresh for MONITOR-012 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-010: Finite typology of cross-paradigm connecting memes (displacement phrasings) exists
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-014 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-014 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-011: Specialist-agent-first / orchestrator-fallback scheduling is the right division of labor
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-015 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-015 cycle 3. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-009: Provenance overhead is justified by benefit; will be adopted and used by agents/humans
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-016 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: LOW
+  Notes: Refresh for MONITOR-016 cycle 3. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-014: Cross-tradition signals from agents are structurally meaningful, not just surface associations
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-017 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH
+  Notes: Refresh for MONITOR-017 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-014: The INCORPORATE/MONITOR/REVISE disposition framework is the right decision structure for closing the self-awareness loop.
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-018 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: Medium
+  Notes: Refresh for MONITOR-018 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-015: Running a potentially biased pipeline (FOR/AGAINST) is better than not running one at all.
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-019 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH (epistemic integrity of entire pipeline depends on this)
+  Notes: Refresh for MONITOR-019 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-016: Literature search results should gate implementation decisions (Phase 2a pause).
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-020 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH (directly affects Phase 2a timeline)
+  Notes: Refresh for MONITOR-020 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-017: AI synthesis is complementary to human validation; AI does first-pass synthesis, humans validate.
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-021 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH
+  Notes: Refresh for MONITOR-021 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-018: Pausing Phase 2a is lower-risk than proceeding with unresolved agent-differentiation strategy
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-022 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-022 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-019: Literature absence during paradigm shifts is expected (Kuhnian interpretation) — not evidence of novelty
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-023 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH
+  Notes: Refresh for MONITOR-023 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-020: FINDING-011 (SUPER-BRIDGE) represents genuine three-level mathematical unification
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-024 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH (CRITICAL for system credibility)
+  Notes: Refresh for MONITOR-024 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-021: Cross-tradition signals from Hawkins agent (Monty↔active inference, Monty↔cellular cognition) are structural
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-025 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH
+  Notes: Refresh for MONITOR-025 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-022: The inside/outside boundary is the fundamental structure shared across all 11 C2A2 programs; FEP applies literally at every level
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-026 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH (CRITICAL for system credibility — most significant stated claim)
+  Notes: Refresh for MONITOR-026 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-023: Full Phase 2a rollout (33 agents) is a justified commitment bet
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-027 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH
+  Notes: Refresh for MONITOR-027 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-026: C2A2 as new empirical methodology (treating traditions as cognitive agents generates genuine behavioral data)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-029 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH (CRITICAL for C2A2's value proposition)
+  Notes: Refresh for MONITOR-029 cycle 3. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-025: Phase 2a unpause was justified by epistemic progress, not just operational cleanup
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-030 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH
+  Notes: Refresh for MONITOR-030 cycle 3. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-031: Specialist-rotation schedule (2 thinkers/day, 6 days) provides adequate tradition coverage via orchestrator fallback
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-036 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH
+  Notes: Refresh for MONITOR-036 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-035: Cross-session handoff via ~/Documents/Claude/Handoffs/latest.md + SessionStart hook will reliably orient Saturday Dispatch
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 4] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-044 cycle 4; no new evidence; carry-forward; STALE-MONITOR carried (Monthly))]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 4; Cadence: Monthly (DOWNGRADE — LOW-PRIORITY-MONITOR); Next 15d check: 2026-06-21
+  Priority: HIGH (paired with PRESUMPTION-037/MONITOR-044 for weekend test)
+  Notes: Refresh for MONITOR-040 cycle 4. Prior next_check 2026-05-24. STALE-MONITOR-FLAG raised (cycle 4, evidence stable). Blocker is test-design/empirical, not literature -- DOWNGRADE to monthly LOW-PRIORITY-MONITOR; escalated to Tom. Re-triggered this cycle for completeness; literature search expected low-yield.
+
+[ASSUMPTION] ASSUMPTION-037: Saturday Dispatch code-work (four per-date input loaders + per_date_extras + {date_extras}) is pure Python, API-free, weekend-tractable
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 4] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-042 cycle 4; no new evidence; carry-forward; STALE-MONITOR carried (Monthly))]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 4; Cadence: Monthly (DOWNGRADE — LOW-PRIORITY-MONITOR); Next 15d check: 2026-06-21
+  Priority: LOW (single-shot test — now extended: pivot-on-arrival means execution half of paired test did not run as originally scoped)
+  Notes: Refresh for MONITOR-042 cycle 4. Prior next_check 2026-05-24. STALE-MONITOR-FLAG raised (cycle 4, evidence stable). Blocker is test-design/empirical, not literature -- DOWNGRADE to monthly LOW-PRIORITY-MONITOR; escalated to Tom. Re-triggered this cycle for completeness; literature search expected low-yield.
+
+[ASSUMPTION] ASSUMPTION-038: Pattern-based session-name filter (C2a2, morning-health, wiki-agent-daily, heartbeats, dated prefixes) reliably identifies automated sessions
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-043 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-043 cycle 3. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-037: File-based handoff (Handoffs/latest.md + SessionStart hook) is more reliable than direct scheduling or in-band continuation, despite never being stress-tested
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 4] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-044 cycle 4; no new evidence; carry-forward; STALE-MONITOR carried (Monthly))]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 4; Cadence: Monthly (DOWNGRADE — LOW-PRIORITY-MONITOR); Next 15d check: 2026-06-21
+  Priority: HIGH
+  Notes: Refresh for MONITOR-044 cycle 4. Prior next_check 2026-05-24. STALE-MONITOR-FLAG raised (cycle 4, evidence stable). Blocker is test-design/empirical, not literature -- DOWNGRADE to monthly LOW-PRIORITY-MONITOR; escalated to Tom. Re-triggered this cycle for completeness; literature search expected low-yield.
+
+[ASSUMPTION] ASSUMPTION-041: Google Drive connector is the most durable route for recurrent ND-account ChatGPT scrapes
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-047 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-047 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-042: Five consecutive Chrome-extension connection failures across three calendar days is 'not transient' (manual-intervention threshold)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-048 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-048 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-044: DECISION-021 loading half (Handoffs/latest.md + SessionStart hook) reliably orients Dispatch sessions
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-044 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH (paired with MONITOR-044 / PRESUMPTION-037 for the weekend-test evaluation; execution-half test is specifically outstanding)
+  Notes: Refresh for MONITOR-049 cycle 3. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-051: 'Pending proposals: 12' count emitted before sibling specialist task completes is valid EOD state
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-052 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: LOW-MEDIUM (cheap remediation available; paired with CROSS-TASK-COORDINATION cluster)
+  Notes: Refresh for MONITOR-052 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-049: Session = one agent run" (the caching-architecture's unit of cacheable work is a single agent invocation)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 2] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-053 cycle 2; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM (caching-rollout 2026-04-27 depends on session-definition working; hybrid-policy is a cheap fix if needed)
+  Notes: Refresh for MONITOR-053 cycle 2. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-050: Static prefix for the caching architecture is the 49 RC Wiki files (at load time)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-054 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 3; Cadence: Monthly; Next 15d check: 2026-06-21
+  Priority: MEDIUM-HIGH (directly gates the 2026-04-27 caching rollout; cheap audit cost)
+  Notes: Refresh for MONITOR-054 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-052: 70-80% cost reduction is the expected caching-architecture benefit
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 2] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-055 cycle 2; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM (headline number of the rollout; worth measuring but not blocking)
+  Notes: Refresh for MONITOR-055 cycle 2. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-055: Binary partition (agents in / agents out) is the correct design shape for the caching architecture
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-056 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Monthly; Next 15d check: 2026-06-21
+  Priority: LOW-MEDIUM (reversible; cheap remediation via rationale note; low-stakes)
+  Notes: Refresh for MONITOR-056 cycle 1. Prior next_check 2026-05-20.
+
+[PRESUMPTION] PRESUMPTION-058: Splitting the Levin+Friston joint entry without reviewing its original rationale is correct
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 2] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-057 cycle 2; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: LOW-MEDIUM (reversible; cheap remediation; primary risk is archaeology loss, secondary risk is attribution failure)
+  Notes: Refresh for MONITOR-057 cycle 2. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-055: Phase 6 git commit fails because the sandbox mount topology does not include the repo path at all
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 2] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-058 cycle 2; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM-HIGH (directly gates the 2026-04-27 caching rollout Phase 6 commit path; paired with PRESUMPTION-061 REVISE)
+  Notes: Refresh for MONITOR-058 cycle 2. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-057: The 17→11 findings filter uses the rule 'Active or Highest Priority, excluding subsumed/downgraded'
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-059 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Monthly; Next 15d check: 2026-06-21
+  Priority: MEDIUM (unaudited-filter cluster member; cheap remediation via spot-check; compounds with PRESUMPTION-053 and PRESUMPTION-067)
+  Notes: Refresh for MONITOR-059 cycle 1. Prior next_check 2026-05-21.
+
+[PRESUMPTION] PRESUMPTION-065: The two simultaneously-running 'Morning' scheduled tasks are treated as independent data points for DECISION-024's empirical case
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-060 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Monthly; Next 15d check: 2026-06-21
+  Priority: LOW-MEDIUM (reversible; cheap remediation via DECISION-024 note; primary risk is cumulative evidence-basis inflation across multiple decisions sharing this pattern)
+  Notes: Refresh for MONITOR-060 cycle 1. Prior next_check 2026-05-21.
+
+[PRESUMPTION] PRESUMPTION-066: User-attention reallocation (external visit crowding out C2A2 this week) does not need its own DECISION-NNN tracking
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-061 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: LOW-MEDIUM (short-window, reversible; cheap remediation; compounds with PRESUMPTION-041 precedent)
+  Notes: Refresh for MONITOR-061 cycle 3. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-068: Today's successful Chrome MCP double-success represents a resolved auth state rather than a transient window
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-062 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM (reversible; cheap remediation; ties to Chrome-singleton risk PRESUMPTION-059)
+  Notes: Refresh for MONITOR-062 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-064: (see MONITOR-063 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 2] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-063 cycle 2; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH
+  Notes: Refresh for MONITOR-063 cycle 2. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-065: (see MONITOR-064 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 2] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-064 cycle 2; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-064 cycle 2. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-066: (see MONITOR-065 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 2] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-065 cycle 2; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: LOW-MEDIUM
+  Notes: Refresh for MONITOR-065 cycle 2. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-067: (see MONITOR-066 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 2] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-066 cycle 2; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH
+  Notes: Refresh for MONITOR-066 cycle 2. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-072: (see MONITOR-067 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 2] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-067 cycle 2; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-067 cycle 2. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-073: (see MONITOR-068 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 2] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-068 cycle 2; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM-HIGH
+  Notes: Refresh for MONITOR-068 cycle 2. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-077: (see MONITOR-069 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 3] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-069 cycle 3; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH
+  Notes: Refresh for MONITOR-069 cycle 3. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-071: (see MONITOR-070 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 2] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-070 cycle 2; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM-HIGH
+  Notes: Refresh for MONITOR-070 cycle 2. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-072: (see MONITOR-071 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 2] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-071 cycle 2; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-071 cycle 2. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-073: (see MONITOR-072 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 2] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-072 cycle 2; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-072 cycle 2. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-074: (see MONITOR-073 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 2] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-073 cycle 2; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-073 cycle 2. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-075: (see MONITOR-074 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 2] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-074 cycle 2; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM-HIGH
+  Notes: Refresh for MONITOR-074 cycle 2. Prior next_check 2026-05-24.
+
+[PRESUMPTION] PRESUMPTION-086: (see MONITOR-076 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 2] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-076 cycle 2; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM
+  Notes: Refresh for MONITOR-076 cycle 2. Prior next_check 2026-05-24.
+
+[ASSUMPTION] ASSUMPTION-118: (see MONITOR-122 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-122 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH (PREMISE-015 follow-through; substrate-decomposition gate)
+  Notes: Refresh for MONITOR-122 cycle 1. Prior next_check 2026-05-20.
+
+[ASSUMPTION] ASSUMPTION-121: (see MONITOR-126 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-126 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH (security-relevant; joint with MONITOR-134 PRESUMPTION-153 threat-model gap and MONITOR-135 PRESUMPTION-154 modality-comparison gap)
+  Notes: Refresh for MONITOR-126 cycle 1. Prior next_check 2026-05-21.
+
+[ASSUMPTION] ASSUMPTION-127: (see MONITOR-130 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-130 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM (joint with MONITOR-140 PRESUMPTION-160; joins SELF-MEASUREMENT Goodhart cluster)
+  Notes: Refresh for MONITOR-130 cycle 1. Prior next_check 2026-05-21.
+
+[PRESUMPTION] PRESUMPTION-153: (see MONITOR-134 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-134 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH — security (joint with MONITOR-126 ASSUMPTION-121 and MONITOR-135 PRESUMPTION-154)
+  Notes: Refresh for MONITOR-134 cycle 1. Prior next_check 2026-05-21.
+
+[PRESUMPTION] PRESUMPTION-154: (see MONITOR-135 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-135 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM-HIGH (joint with MONITOR-126 ASSUMPTION-121 and MONITOR-134 PRESUMPTION-153)
+  Notes: Refresh for MONITOR-135 cycle 1. Prior next_check 2026-05-21.
+
+[PRESUMPTION] PRESUMPTION-160: (see MONITOR-140 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-140 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH — SELF-MEASUREMENT Goodhart cluster recurrence (joint with MONITOR-130 ASSUMPTION-127; joins cluster anchored at ASSUMPTION-112 MONITOR-114)
+  Notes: Refresh for MONITOR-140 cycle 1. Prior next_check 2026-05-21.
+
+[PRESUMPTION] PRESUMPTION-167: (see MONITOR-146 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-146 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH — substrate-decomposition gate (joint with PRESUMPTION-134 REVISE 2026-05-11 unresolved; cluster carry-forward)
+  Notes: Refresh for MONITOR-146 cycle 1. Prior next_check 2026-05-21.
+
+[ASSUMPTION] ASSUMPTION-133: (see MONITOR-148 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-148 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH — security-relevant (joint with PRESUMPTION-170 HIGH; CRITICAL transfer-validity cluster)
+  Notes: Refresh for MONITOR-148 cycle 1. Prior next_check 2026-05-22.
+
+[ASSUMPTION] ASSUMPTION-138: (see MONITOR-151 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-151 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM (testable empirically over 8-week runway; joint with PRESUMPTION-173, PRESUMPTION-178)
+  Notes: Refresh for MONITOR-151 cycle 1. Prior next_check 2026-05-22.
+
+[ASSUMPTION] ASSUMPTION-140: (see MONITOR-153 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-153 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM-HIGH — credential-layer sub-system stability; joint with PRESUMPTION-159 REVISE (carry-forward) and PRESUMPTION-177 REVISE (this cycle)
+  Notes: Refresh for MONITOR-153 cycle 1. Prior next_check 2026-05-22.
+
+[PRESUMPTION] PRESUMPTION-170: (see MONITOR-160 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-160 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH — CRITICAL transfer-validity cluster member; joint with ASSUMPTION-133 MONITOR-148
+  Notes: Refresh for MONITOR-160 cycle 1. Prior next_check 2026-05-22.
+
+[PRESUMPTION] PRESUMPTION-173: (see MONITOR-163 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-163 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM — runway cognitive-bandwidth; joint with ASSUMPTION-138 MONITOR-151 and PRESUMPTION-178 MONITOR-168
+  Notes: Refresh for MONITOR-163 cycle 1. Prior next_check 2026-05-22.
+
+[PRESUMPTION] PRESUMPTION-175: (see MONITOR-165 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-165 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM-HIGH — writing-pass-as-claim-making cluster; joint with ASSUMPTION-142 MONITOR-155, PRESUMPTION-176, PRESUMPTION-182
+  Notes: Refresh for MONITOR-165 cycle 1. Prior next_check 2026-05-22.
+
+[PRESUMPTION] PRESUMPTION-178: (see MONITOR-168 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-168 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: MEDIUM-HIGH — 8-week runway risk register; joint with ASSUMPTION-138 MONITOR-151 and PRESUMPTION-173 MONITOR-163
+  Notes: Refresh for MONITOR-168 cycle 1. Prior next_check 2026-05-22.
+
+[PRESUMPTION] PRESUMPTION-180: (see MONITOR-169 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-169 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH — multi-pathway recursive load; SELF-MEASUREMENT cluster member; joins PRESUMPTION-165, PRESUMPTION-148, PRESUMPTION-174 MONITOR-164, PRESUMPTION-160 carry-forward
+  Notes: Refresh for MONITOR-169 cycle 1. Prior next_check 2026-05-22.
+
+[PRESUMPTION] PRESUMPTION-181: (see MONITOR-170 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-05-24, cycle 1] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR refresh (MONITOR-170 cycle 1; no new evidence; carry-forward)]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-05-31
+  Priority: HIGH — bright-pin dependency extension; joint with PRESUMPTION-164 MONITOR-143 (carry-forward)
+  Notes: Refresh for MONITOR-170 cycle 1. Prior next_check 2026-05-22.
+
+## Batch 2026-05-24 (Agents 14a/14b -- automated-pipeline-day extraction)
+
+*Day shape: no interactive Tom session (claude.ai signed out a 5th day). New items are extracted from the day's automated agent output -- the weekly sewing run, the 15d periodic-monitor run, and this run's own self-referential conditions. The 2026-05-23 batch (ASSUMPTION-220/221 + PRESUMPTION-240-243) was SEARCHED + DISPOSITIONED-15c on 2026-05-24 (0 INCORPORATE / 4 MONITOR / 2 REVISE; SYSTEMIC-RISK-FLAG I) -- see Batch 2026-05-24 in lit_search_returns.md; not re-routed here.*
+
+[ASSUMPTION] ASSUMPTION-222: Thematically convergent same-week intake proposals (Wright exile + Rohr exile + Stump corporate-substance) should be promoted into the network as a single unit, because together they articulate one paradigm-bridge (Summa 2026 "loving unity as telos").
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> REVISE (REVISE-052; 15a PARTIALLY-SUPPORTED/Moderate, 15b CHALLENGED/Strong)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-222; Item type=ASSUMPTION (stated)
+  Search strategy: theory-building / synthesis methodology; clustered-vs-atomic units of knowledge integration; whether thematic clustering improves downstream reuse; convergence as evidence vs artifact
+  Priority: LOW-MEDIUM (synthesis-promotion methodology; couples PRESUMPTION-244)
+
+[ASSUMPTION] ASSUMPTION-223: When a MONITOR item reaches cycle 4 with stable evidence and the blocker is an un-run empirical/paired test (not unsettled literature), further weekly literature cycles are low-yield; STALE-flag, downgrade Weekly->Monthly, and escalate to a human for the empirical test.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR (MONITOR-233; 15a SUPPORTED/Strong, 15b PARTIALLY-CHALLENGED/Moderate)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-223; Item type=ASSUMPTION (stated)
+  Search strategy: diminishing returns of repeated literature search; matching evidence-type to question-type (systematic-review methodology); when to stop searching and run an experiment
+  Priority: MEDIUM (monitor-cadence / stale-escalation policy; couples PRESUMPTION-245; bears on the 3 first STALE flags)
+
+[ASSUMPTION] ASSUMPTION-224: The connectivity/orphan metric should exclude `architecture/lit_search_results/` (machine-generated, unrouted) so the orphan count tracks real routing progress.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR (MONITOR-234; 15a PARTIALLY-SUPPORTED/Moderate, 15b PARTIALLY-CHALLENGED/Moderate-Strong)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-224; Item type=ASSUMPTION (stated)
+  Search strategy: validity of graph-connectivity / backlink-density metrics for knowledge bases; what counts as an "integrated" node; metric scoping and exclusion practices
+  Priority: LOW-MEDIUM (measurement-definition; couples PRESUMPTION-246; renewed Tom-decision candidate)
+
+[PRESUMPTION] PRESUMPTION-244: Treating same-week thematic convergence as real tradition-level unity (ASSUMPTION-222) presumes the convergence is homology in the sources, not an artifact of one shared intake pipeline/batch/method.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR (MONITOR-235; 15a SUPPORTED/Strong, 15b PARTIALLY-CHALLENGED/Moderate)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-244; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (genuine cross-domain convergence as evidence of structural homology); 15b (confirmation/clustering artifacts in automated literature synthesis; batch/method-induced co-occurrence)
+  Priority: MEDIUM (designer-unaware twin of ASSUMPTION-222)
+
+[PRESUMPTION] PRESUMPTION-245: The 15d stale-escalation rule (ASSUMPTION-223) presumes an available human endpoint, but the same review-gate outage stalling the REVISE backlog (PRESUMPTION-240/REVISE-050) also terminates these escalations -- converting a literature-stall into a human-stall.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> REVISE (REVISE-053; 15a SUPPORTED/Strong, 15b NO-CHALLENGE-FOUND/Weak)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-245; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (escalation as a valid stall-resolution mechanism); 15b (counter-evidence: escalation to a saturated/absent endpoint just relabels the bottleneck; multi-queue convergence on one reviewer)
+  Priority: MEDIUM-HIGH (couples PRESUMPTION-240, ASSUMPTION-223; OPEN-066)
+
+[PRESUMPTION] PRESUMPTION-246: Excluding lit_search_results/ so the orphan count "tracks routing" (ASSUMPTION-224) presumes backlink-density is a valid proxy for integration at all -- but much of the corpus is operational/archival and never meant to be linked, so the metric may measure machine-log growth, not integration failure.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> MONITOR (MONITOR-236; 15a SUPPORTED/Strong, 15b PARTIALLY-CHALLENGED/Weak-Moderate)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-246; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (graph-connectivity as a meaningful documentation-health signal); 15b (validity limits of backlink-density; Goodhart risk; metrics for mostly-machine-generated corpora)
+  Priority: LOW-MEDIUM (designer-unaware twin of ASSUMPTION-224; Goodhart family with PRESUMPTION-201)
+
+[PRESUMPTION] PRESUMPTION-247: Extracting "stated assumptions" from agent output on a no-human day presumes an agent's stated rationale == a designer-aware commitment -- blurring the ASSUMPTION (designer-aware) vs PRESUMPTION (surfaced-after-the-fact) distinction the provenance protocol exists to protect.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-25] [SEARCHED-15b: 2026-05-25] [DISPOSITIONED-15c: 2026-05-25 -> REVISE (REVISE-054; 15a SUPPORTED/Strong, 15b NO-CHALLENGE-FOUND/Weak)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-247; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (provenance / epistemic-status frameworks distinguishing machine-generated from human-authored claims); 15b (counter-evidence that agent-stated and human-stated premises warrant equal epistemic weight)
+  Priority: MEDIUM (self-referential; couples PRESUMPTION-241; bears on protocol integrity)
+
+**Total newly queued items this batch:** 7 routed (3 ASSUMPTIONs: 222-224 + 4 PRESUMPTIONs: 244-247). All testable; 0 held.
+**All at cycle 0 (first 15a/15b dispatch).**
+**Pipeline status:** items QUEUED awaiting next 15a/15b cycle.
+**Run timestamp:** 2026-05-24 EOD (c2a2-self-awareness-daily).
+
+## Batch 2026-05-25 (Agents 14a/14b -- mixed-shape day: Chat session + automated agent output)
+
+*Day shape: claude.ai sign-in restored during the day; Tom had a daily-walk Chat session (Morning planning walk thread; topic = ingest backlog: "lagging metric vs real consumption problem") but no Cowork desktop session. New items extracted from: the morning Chat walk (loop-closing question), the evening cowork-to-chat self-correcting framing choices, the HIGH-severity ingest-backlog flag, the 2 new Levin proposals (Levin & Lyons cognitive-glues / Rouleau & Levin substrate-permissive consciousness), Agent 16 closure of WATCH-001, and the Summa reviewer's 5-stale-commentaries finding. The 2026-05-24 batch (ASSUMPTION-222/223/224 + PRESUMPTION-244-247) was SEARCHED + DISPOSITIONED-15c on 2026-05-25 (0 INCORPORATE / 4 MONITOR / 3 REVISE; SYSTEMIC-RISK-FLAG I extended) -- see Batch 2026-05-25 in lit_search_returns.md (queued upstream); not re-routed here.*
+
+[ASSUMPTION] ASSUMPTION-225: A 34-file / ~90-PRS-triplet / 12-tradition ingestion is too large and error-prone to execute unattended at the tail of the daily cycle; it belongs in a focused, ideally attended ingestion session where IDs, counts, cross-program entries, and pattern-detector evaluation can be reconciled and verified.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-237; 15a SUPPORTED/Moderate-Strong, 15b PARTIALLY-CHALLENGED/Weak-Moderate; INCORPORATE-pending-precondition)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-225; Item type=ASSUMPTION (stated)
+  Search strategy: bulk-ingest error rates in attended vs unattended pipelines; batch-size scaling laws for data-migration error; the operations-research literature on attended vs unattended bulk operations
+  Priority: MEDIUM (couples PRESUMPTION-248 and OPEN-066; bears on the deferred-action design)
+
+[ASSUMPTION] ASSUMPTION-226: A daily-walk Chat conversation occurring on a day with no Cowork desktop session should be counted as an interactive Tom session for daily-shape framing and changelog/metrics purposes; framing such a day as "no interactive session" is a Rule-12 fail-loud violation.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-238; 15a SUPPORTED/Moderate, 15b PARTIALLY-CHALLENGED/Moderate; sub-typing remedy)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-226; Item type=ASSUMPTION (stated)
+  Search strategy: provenance and channel-equivalence frameworks across communication surfaces (text vs voice vs paraphrase); transcript-fidelity differences across capture modalities; methodological standards for classifying interaction types in mixed-modality research
+  Priority: MEDIUM (couples PRESUMPTION-249, PRESUMPTION-247; bears on the day-shape classifier the cadence-streak counter uses)
+
+[ASSUMPTION] ASSUMPTION-227: A daily-sync delivery to Tom should LEAD with whichever finding closes the loop on the morning walk's open question (when one exists), not the chronologically-first or sectional-default item.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-239; 15a SUPPORTED/Strong, 15b PARTIALLY-CHALLENGED/Weak; INCORPORATE-pending-loop-detection)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-227; Item type=ASSUMPTION (stated)
+  Search strategy: message-ordering and primacy effects in executive briefings; "answer-first" delivery heuristics (Minto pyramid); communicative-design literature on closing open threads vs respecting standard report ordering
+  Priority: LOW-MEDIUM (couples PRESUMPTION-250; communicative-design policy)
+
+[ASSUMPTION] ASSUMPTION-228: The C2A2 community-model GPRS articulation is structurally homologous to Levin & Lyons' "shared model of relative scarcities" as cognitive glue; the price-system-as-template thesis supplies an external, peer-reviewed mechanism for how a C2A2 community coordinates and accelerates.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-240; 15a PARTIALLY-SUPPORTED/Moderate, 15b PARTIALLY-CHALLENGED/Moderate; target-state-conditional)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-228; Item type=ASSUMPTION (stated)
+  Search strategy: collective-intelligence and coordination-under-scarcity (Hayek's price-as-information; Ostrom's commons coordination; FEP precision-weighting as scarcity allocation); applicability conditions of market-as-information-system models to small-N collectives; minimum-N for emergent shared-scarcity signaling
+  Priority: MEDIUM (couples PRESUMPTION-251; architectural import from PROP-2026-05-25-001)
+
+[ASSUMPTION] ASSUMPTION-229: Leading theories of consciousness are substrate-permissive in principle -- their brain-focus is a convention of imagination rather than a theoretical necessity -- so the substrate-independence thesis is portable from cognition to consciousness for purposes of the C2A2 master's load-bearing AI-membership question (PRS-31).
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> REVISE (REVISE-055; 15a PARTIALLY-SUPPORTED/Moderate, 15b PARTIALLY-CHALLENGED/Moderate-Strong; PRS-31 architectural)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-229; Item type=ASSUMPTION (stated)
+  Search strategy: Rouleau & Levin (2026) substrate-requirements mapping; IIT / GWT / HOT / AST substrate analyses; counter-arguments for genuine neural specificity in consciousness (e.g., neural-network-specific properties; pre-reflective embodiment); the philosophy-of-mind multiple-realizability literature
+  Priority: MEDIUM-HIGH (architectural; bears directly on the PRS-31 AI-membership criterion)
+
+[PRESUMPTION] PRESUMPTION-248: Deferring the 34-item ingest backlog to a "focused, ideally attended" session (ASSUMPTION-225) presumes an attended session will in fact occur on a useful timescale; but the same human gate that has been dark 5-6 days is the bottleneck for any attended action -- so the deferral may be a third instance of the OPEN-066 / SYSTEMIC-RISK-FLAG I human-stall pattern, not a remedy for it.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> REVISE (REVISE-056; 15a PARTIALLY-SUPPORTED/Weak, 15b CHALLENGED/Moderate-Strong; FLAG I 3rd-route)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-248; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (defer-to-attended as a valid policy when attention is reliably available); 15b (multi-queue convergence on one reviewer; deferral-as-bottleneck-relabel; the project's own SYSTEMIC-RISK-FLAG I as evidence)
+  Priority: HIGH (extends SYSTEMIC-RISK-FLAG I to a third route; couples ASSUMPTION-225, PRESUMPTION-240, PRESUMPTION-245, OPEN-066)
+
+[PRESUMPTION] PRESUMPTION-249: Counting a daily-walk Chat conversation as "interactive" in the same register as a Cowork desktop session (ASSUMPTION-226) presumes the two surfaces produce comparable architectural-history content, but Chat walks are paraphrased into text, artifact-light, and harder to capture mechanically; items extracted from a paraphrased Chat may misrepresent Tom's exact framing.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-248; 15a PARTIALLY-SUPPORTED/Weak-Moderate, 15b CHALLENGED/Moderate; fidelity-loss family)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-249; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (capture-modality equivalence; paraphrase-as-acceptable-evidence in qualitative research); 15b (transcript-fidelity gaps; paraphrase drift in human-AI dialog logging)
+  Priority: MEDIUM (couples ASSUMPTION-226, PRESUMPTION-247, PRESUMPTION-241; bears on item-extraction fidelity)
+
+[PRESUMPTION] PRESUMPTION-250: The "lead with the loop-closing finding" rule (ASSUMPTION-227) presumes Tom retains the morning-walk question salient enough to recognize an evening loop-closure as such; with longer gaps or many competing open threads, loop-closing-first becomes loop-claiming-first.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-249; 15a SUPPORTED/Moderate, 15b PARTIALLY-CHALLENGED/Moderate; structural-prompt remedy)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-250; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (closing-open-loops as well-supported communicative-design pattern); 15b (attention-salience decay over multi-day gaps; primacy-of-current-attention over remembered-question)
+  Priority: LOW-MEDIUM (designer-unaware twin of ASSUMPTION-227)
+
+[PRESUMPTION] PRESUMPTION-251: Importing Levin & Lyons' "cognitive glue = shared scarcity model" thesis as a theoretical charter for the C2A2 community-model GPRS framing (ASSUMPTION-228) presumes C2A2 is, in the relevant sense, a Markov-blanketed coordination problem of subunits-with-private-models -- but today's C2A2 is one human plus agents, with content flowing top-down; the price-system analogy may apply only at target-state, not present-state.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-250; 15a PARTIALLY-SUPPORTED/Weak-Moderate, 15b CHALLENGED/Moderate; target-state-conditional)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-251; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (substrate-independent applicability of coordination-under-scarcity; FEP coordination at any group size including N=1+agents); 15b (minimum-N for emergent price-like signaling; top-down vs peer-to-peer architectural mismatches; conditions under which price-system models do NOT apply)
+  Priority: MEDIUM (architectural transfer-validity; couples ASSUMPTION-228 and the broader Loughran-master integration project)
+
+[PRESUMPTION] PRESUMPTION-252: The "approved" status counter for proposals is silently misaligned with the underlying tradition-wiki state -- 34 of 131 approved (26%) are not yet in the tradition wikis; "approved" reads as "ingested" but means "approved and possibly-ingested-or-not."
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> REVISE (REVISE-057; 15a SUPPORTED/Strong, 15b NO-CHALLENGE-FOUND/Weak; Goodhart/measurement-validity)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-252; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (process-state-machine modeling: explicit terminal states; ETL ingest-status invariants); 15b (status-field semantic-drift; Goodhart applied to approval counters; measurement-validity in approval-vs-ingest decoupled pipelines)
+  Priority: MEDIUM-HIGH (measurement-validity; today's flag exhibits a 26% gap; couples PRESUMPTION-246, PRESUMPTION-201 Goodhart family)
+
+[PRESUMPTION] PRESUMPTION-253: Tom's morning-walk binary framing of the backlog question -- "lagging metric vs real consumption problem" -- presumes the two categories are exhaustive, but today's flag identifies a third (a pipeline-reconciliation date-window logic error nested inside a real consumption gap).
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-251; 15a SUPPORTED/Moderate, 15b CHALLENGED/Moderate sustains presumption; diagnostic-fidelity)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-253; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (binary categorization as legitimate first-pass diagnostic); 15b (premature closure / either-or fallacy in diagnosis; the value of preserving a third "neither" category in incident analysis)
+  Priority: LOW-MEDIUM (diagnostic-fidelity; bears on remedy targeting)
+
+**Total newly queued items this batch:** 11 routed (5 ASSUMPTIONs: 225-229 + 6 PRESUMPTIONs: 248-253). All testable; 0 held.
+**All at cycle 0 (first 15a/15b dispatch).**
+**Pipeline status:** items QUEUED awaiting next 15a/15b cycle.
+**Run timestamp:** 2026-05-25 EOD (c2a2-self-awareness-daily).
+
+## Batch 2026-05-26 (Agents 14a/14b -- mixed-shape day: attended Cowork session at 17:42 ET + commit + automated agent output)
+
+*Day shape: claude.ai sign-in restored; Tom ran an attended Cowork session at 17:42 ET and approved all 28 pending proposals (25 + 3-Wright follow-up; approval queue 26 -> 0); the prior 36-file ingest backlog (2026-04-21 -> 2026-05-12) was confirmed go-live and committed in the same day. PRS extraction itself remains deferred to a focused attended session. New items extracted from: the attended approval session (review/archive/2026-05-26_decisions.md), the in-place flag update (flags/ingest_backlog_2026-05-25.md), the cowork-to-chat summary's morning-discussion framing, and the day's surfaced Rule-12 gap (no 2026-05-25_changes.md or 2026-05-25_snapshot.md). The 2026-05-25 batch (ASSUMPTION-225-229 + PRESUMPTION-248-253) is QUEUED upstream awaiting next 15a/15b cycle; not re-routed here.*
+
+[ASSUMPTION] ASSUMPTION-230: When the Gmail decision-email body and the review-page state disagree about proposal-approval values, the review-page state (verified by direct paste into Cowork plus Tom's verbal confirmation) is authoritative; the email body is non-authoritative until the decision-email generator is fixed.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-241; 15a SUPPORTED/Strong, 15b PARTIALLY-CHALLENGED/Weak-Moderate; 3-way reconciliation)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-230; Item type=ASSUMPTION (stated)
+  Search strategy: data-source authority hierarchies in approval/decision pipelines (system-of-record vs derived-views; ETL audit-trail invariants); UI-vs-email-mismatch handling in workflow automation; system-of-truth selection when redundant channels diverge
+  Priority: MEDIUM (couples PRESUMPTION-254; bears on candidate DECISION-048)
+
+[ASSUMPTION] ASSUMPTION-231: Tom's stated intent ("approve all 28 from the start") is sufficient to reclassify items the review-page UI showed as Pending; verbal/textual intent applies retroactively to status-field state and overrides UI categorization within the same attended session.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-242; 15a PARTIALLY-SUPPORTED/Moderate, 15b PARTIALLY-CHALLENGED/Moderate; audit-trail remedy)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-231; Item type=ASSUMPTION (stated)
+  Search strategy: intent-vs-record-state arbitration in HCI / annotation workflows; treatment of verbal corrections during human-in-the-loop sessions; the philosophy/HCI literature on "speech acts as authoritative state changes"
+  Priority: LOW-MEDIUM (operational policy; couples PRESUMPTION-254, PRESUMPTION-258)
+
+[ASSUMPTION] ASSUMPTION-232: Tom confirms the prior 36-file ingest backlog (source-dated 2026-04-21 -> 2026-05-12) is intended for go-live; today's commit folds the previously-uncommitted moves into git state, truing it up to on-disk filesystem.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-243; 15a SUPPORTED/Moderate-Strong, 15b NO-CHALLENGE-FOUND/Weak; act-done, monthly cadence)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-232; Item type=ASSUMPTION (stated)
+  Search strategy: change-management / consent-for-prior-actions in workflow systems; deferred-approval policies in data pipelines; the operations-research literature on retroactive intent confirmation
+  Priority: MEDIUM (settles part of ASSUMPTION-225 / PRESUMPTION-248 ambiguity; couples PRESUMPTION-252, PRESUMPTION-258)
+
+[ASSUMPTION] ASSUMPTION-233: A focused ingest of ~62 proposals across 12 traditions is best executed as tradition-batched sub-runs (wolfram -> levin -> rohr -> carroll -> wright -> fredrickson -> mcgilchrist -> stump -> friston -> hoffman -> kastrup -> arkanihamed) rather than a monolithic single pass.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-244; 15a SUPPORTED/Strong, 15b NO-CHALLENGE-FOUND/Weak; pending focused-ingest validation)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-233; Item type=ASSUMPTION (stated)
+  Search strategy: batch-vs-streaming ingest design; batch-size and natural-break-point selection in data-migration pipelines; failure-isolation through tradition/domain partitioning vs flat batching
+  Priority: MEDIUM (operational design; couples ASSUMPTION-234, PRESUMPTION-255)
+
+[ASSUMPTION] ASSUMPTION-234: The first tradition-batch in the focused-ingest session (wolfram = 10 files) functions as a protocol test-run; its outcome dictates whether the same cadence carries through to the remaining 11 traditions.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-245; 15a SUPPORTED/Strong w-caveats, 15b PARTIALLY-CHALLENGED/Moderate; canary-representativeness)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-234; Item type=ASSUMPTION (stated)
+  Search strategy: canary-batch / pilot-run design in production migrations; representativeness of test-batches when traditions/domains vary in complexity; protocol-validation methodology
+  Priority: LOW-MEDIUM (couples ASSUMPTION-233, PRESUMPTION-255)
+
+[ASSUMPTION] ASSUMPTION-235: The underlying bottleneck for human-terminating queues is sit-down availability (demonstrated today by a 10-second re-login that ended a 6-day signout, immediately followed by an attended session draining two queues to zero in minutes), not queue/policy design.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-246; 15a SUPPORTED/Strong, 15b PARTIALLY-CHALLENGED/Moderate; HIGH; INCORPORATE-pending-reframe)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-235; Item type=ASSUMPTION (stated)
+  Search strategy: attention-availability vs process-design in human-in-the-loop systems; queue-theory under intermittent server availability; the empirical evidence base for "fix the human's calendar" vs "fix the queue" in oversight pipelines
+  Priority: HIGH (architectural -- this is today's central claim; bears on OPEN-066 / OPEN-067 / SYSTEMIC-RISK-FLAG I; couples PRESUMPTION-256, PRESUMPTION-258)
+
+[ASSUMPTION] ASSUMPTION-236: A reliable ~1-week-cadence "sit-down day" is the right operational target for draining human-terminating queues; the design question is what mechanism reliably triggers such a sit-down on that cadence.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-247; 15a SUPPORTED/Moderate, 15b PARTIALLY-CHALLENGED/Weak-Moderate; HIGH; tiered-cadence)]
+  Provenance: Origin=14a; Chain=[14a]; Original item: ASSUMPTION-236; Item type=ASSUMPTION (stated)
+  Search strategy: weekly-cadence design in solo-PI workflows; trigger-action models for reliable attention-arrival; calendar-vs-notification vs ritual mechanisms in maker-time literature
+  Priority: HIGH (couples ASSUMPTION-235; bears on OPEN-067)
+
+[PRESUMPTION] PRESUMPTION-254: The "review-page state is authoritative over Gmail" rule (ASSUMPTION-230) presumes the review-page UI is itself reliable, but the 3-Wright follow-up showed the UI also misled within the same session; the rule handles the email-misfire case but not the UI-misfire case.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-252; 15a SUPPORTED/Moderate, 15b CHALLENGED/Moderate sustains presumption; 3-way)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-254; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (system-of-record selection when redundant channels diverge -- review-page-state-as-authoritative); 15b (UI-state-as-authoritative failure modes; rendering-vs-data divergence in HCI; cases where stated intent must override BOTH email AND UI)
+  Priority: MEDIUM (couples ASSUMPTION-230, ASSUMPTION-231; bears on DECISION-048 candidate scope)
+
+[PRESUMPTION] PRESUMPTION-255: The per-tradition time model ("hour per top-3, half-hour per long-tail"; ASSUMPTION-233/234) presumes per-tradition processing time scales linearly with file count and is roughly uniform across traditions, but the 12 traditions span very different theoretical complexity.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-253; 15a PARTIALLY-SUPPORTED/Moderate, 15b CHALLENGED/Moderate sustains presumption; complexity-multipliers)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-255; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (file-count as adequate first-order proxy for ingest time at this batch size); 15b (per-tradition complexity factors that confound file-count-only estimates; canary-representativeness limits when domains vary)
+  Priority: MEDIUM (couples ASSUMPTION-233/234; risk of time-budget overrun during the focused-attended session)
+
+[PRESUMPTION] PRESUMPTION-256: The 1-week-cadence sit-down target (ASSUMPTION-236) and the sit-down-availability bottleneck diagnosis (ASSUMPTION-235) presume future signout/attention-outage events share the 10-second-resolvable failure mode of the 2026-05-22 to 2026-05-26 outage; alternate failure modes (browser/MFA/OAuth/ICANN/non-signout exec-function dips) may not be 10-second-resolvable.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> REVISE (REVISE-058; 15a PARTIALLY-SUPPORTED/Weak, 15b CHALLENGED/Moderate-Strong; FLAG I multi-mode)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-256; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (representativeness of recent-failure-mode for future-failure-modes in operational reliability literature); 15b (failure-mode heterogeneity in solo-PI tooling; multi-mechanism outage analysis; risk of generalizing from a single observed resolution mode)
+  Priority: MEDIUM-HIGH (couples ASSUMPTION-235/236; bears on OPEN-067 design)
+
+[PRESUMPTION] PRESUMPTION-257: The 2026-05-25 Rule-12 gap surfaced today (registries advanced ASSUMPTIONs 225-229 / PRESUMPTIONs 248-253 but no 2026-05-25_changes.md or 2026-05-25_snapshot.md was written) is direct evidence the 14a/14b artifact-write step can fail silently while the registries-advance step succeeds -- a Rule-12 fail-loud violation embedded in the pipeline that exists to detect Rule-12 violations.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> REVISE (REVISE-059; 15a SUPPORTED/Strong, 15b NO-CHALLENGE-FOUND/Weak; self-referential Rule-12)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-257; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (write-vs-commit atomicity and idempotence guarantees in audit-trail systems; ETL invariant-checking patterns); 15b (silent-partial-failure pathology in distributed pipelines; meta-monitoring patterns for self-monitoring systems)
+  Priority: MEDIUM-HIGH (self-referential pipeline-integrity; couples PRESUMPTION-241, PRESUMPTION-247)
+
+[PRESUMPTION] PRESUMPTION-258: The "approval backlog is cleared" headline presumes approval, by itself, is a real network contribution; today network counts (222/90/35) moved by zero -- intake-pipeline state advanced but network state did not. The headline silently re-instantiates the approved-vs-ingested decoupling (PRESUMPTION-252) and risks letting the pending 62-proposal PRS-extraction stall under the same deferral-as-bottleneck-relabel pattern (PRESUMPTION-248) at larger scale.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-254; 15a PARTIALLY-SUPPORTED/Weak, 15b CHALLENGED/Moderate sustains presumption; Goodhart-headline)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-258; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (intake-pipeline metrics as legitimate progress indicators distinct from downstream state); 15b (Goodhart applied to clearance metrics; the asymmetric visibility of intake-state vs network-state in dashboards; risk of headline-framing obscuring the next bottleneck)
+  Priority: MEDIUM-HIGH (couples PRESUMPTION-252, PRESUMPTION-248; bears on whether the PRS-extraction deferral receives adequate attention next session)
+
+[PRESUMPTION] PRESUMPTION-259: The "queue-design vs sit-down-availability" binary framing in today's morning-discussion structure is a direct recurrence of PRESUMPTION-253's binary-framing false-dichotomy pattern; the heterogeneous-failure-mode third category (PRESUMPTION-256) is again subordinated, channeling tomorrow's design discussion toward one of two options instead of holding REVISE-053 and the sit-down-cadence design as complements.
+  Status: [QUEUED] [SEARCHED-15a: 2026-05-27] [SEARCHED-15b: 2026-05-27] [DISPOSITIONED-15c: 2026-05-27 -> MONITOR (MONITOR-255; 15a SUPPORTED/Moderate, 15b CHALLENGED/Moderate sustains presumption; recurrence of P-253)]
+  Provenance: Origin=14b; Chain=[14b]; Original item: PRESUMPTION-259; Item type=PRESUMPTION (unstated -- surfaced by inference)
+  Routing: 15a (binary categorization as legitimate first-pass diagnostic in incident analysis); 15b (premature-closure / either-or fallacy; the diagnostic value of preserving a "neither" category; complement-vs-alternative analysis in design discussions)
+  Priority: LOW-MEDIUM (diagnostic-fidelity; recurrence of PRESUMPTION-253)
+
+**Total newly queued items this batch:** 13 routed (7 ASSUMPTIONs: 230-236 + 6 PRESUMPTIONs: 254-259). All testable; 0 held.
+**All at cycle 0 (first 15a/15b dispatch).**
+**Pipeline status:** items QUEUED awaiting next 15a/15b cycle.
+**Run timestamp:** 2026-05-26 EOD (c2a2-self-awareness-daily).

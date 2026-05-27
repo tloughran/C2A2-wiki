@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-253:
+  Date searched: 2026-05-27
+  Original item: PRESUMPTION-253
+  Original statement: Tom's morning-walk binary framing of the backlog question — "lagging metric vs real consumption problem" — presumes the two categories are exhaustive, but today's flag identifies a third (a pipeline-reconciliation date-window logic error nested inside a real consumption gap).
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-253
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced — binary framing as exhaustive presumption.
+      15a: Searched for supporting literature on binary categorization as legitimate first-pass diagnostic.
+    Current status: SUPPORTED (Moderate)
+
+  Sources:
+    1. Kahneman & Tversky (1974) "Judgment under Uncertainty" — initial binary framings are recognized as legitimate cognitive shortcuts for triage, with caveats.
+    2. Allen (1995) "Getting Things Done" — initial binary triage (action vs reference) is a productive first pass; multi-category refinement comes later.
+    3. Klein (1999) "Sources of Power" — naturalistic decision-making frequently uses initial binary framing followed by recognition-primed elaboration; the binary is a starting point not an endpoint.
+    4. Triage protocols in emergency medicine — binary or low-N initial categorization is standard practice as a first pass.
+
+  Strength of support: Moderate
+
+  Summary: Binary categorization is supported as a *first-pass* diagnostic in cognitive psychology and decision-making research. The presumption here defends an initial binary as legitimate. The deeper claim (that the third category emerged) is consistent with the literature: binary triage is followed by elaboration, not treated as exhaustive.
+
+  Caveats: (a) Support is for binary-as-first-pass, not binary-as-final; (b) the specific 14b challenge (premature closure) is the recognized failure mode; (c) the support and challenge are not strictly opposed — both can be true simultaneously.
+
+  Recommendation: SUPPORTED (Moderate; first-pass binary diagnostic is supported)

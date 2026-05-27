@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-252:
+  Date searched: 2026-05-27
+  Original item: PRESUMPTION-252
+  Original statement: The "approved" status counter for proposals is silently misaligned with the underlying tradition-wiki state — 34 of 131 approved (26%) are not yet in the tradition wikis; "approved" reads as "ingested" but means "approved and possibly-ingested-or-not."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-252
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced — measurement-validity gap (approval ≠ ingest).
+      15a: Searched for supporting literature on process-state-machine modeling and ETL invariants.
+    Current status: SUPPORTED (Strong)
+
+  Sources:
+    1. Kimball & Ross (2013) "The Data Warehouse Toolkit" — explicit ETL state separation between "accepted" and "loaded" is foundational; conflating them is a recognized anti-pattern.
+    2. Fowler et al. (2001) PEAA — state-machine modeling requires distinct terminal states for each meaningful process stage.
+    3. Goodhart (1975) / Strathern (1997) — when a measure becomes the target, its underlying validity drifts; "approved" used as the headline metric while ingest lags is a textbook surrogation pattern.
+    4. C2A2-internal: PRESUMPTION-201 Goodhart family already in registry; PRESUMPTION-246 surrogation pattern is the same family.
+
+  Strength of support: Strong
+
+  Summary: The presumption identifies a well-known anti-pattern: collapsed state-machine terminal states + headline-metric surrogation. ETL literature requires distinct approval / ingest states; Goodhart predicts that headline conflation will erode the measure. The C2A2-internal Goodhart-family flag confirms the pattern recurs in the project.
+
+  Caveats: (a) Support is for the gap-existence, not for any particular remedy; (b) the 26% figure is one data point; the deeper claim (silent decoupling) is broader; (c) supportive evidence here is for the *vulnerability* being real.
+
+  Recommendation: SUPPORTED (Strong; the gap is well-documented as a recognized pattern)

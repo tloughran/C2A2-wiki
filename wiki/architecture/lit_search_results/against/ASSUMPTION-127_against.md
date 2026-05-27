@@ -35,3 +35,33 @@ SEARCH-AGAINST-ASSUMPTION-127:
     Strongest counterargument: Recording the counts is fine, but the implicit "3 HIGH = normal" interpretation lacks the baseline that statistical process control would require. Sudden shifts in classifier output rates are the textbook signal of criterion drift; without baseline comparison, the system cannot distinguish content-density-up from criterion-loosened. The SELF-MEASUREMENT Goodhart cluster (recurring) is the structural concern: when escalation rate becomes a tracked metric, it tends to drift. The conservative move is to build a per-day baseline, flag deviations explicitly, and require a periodic criterion-stability audit on the HIGH escalation set.
     What would need to be true for C2A2 to be safe: (a) Per-day baseline established; (b) Control-limits set; (c) Criterion-stability audit cadence.
     How to test: Build baseline from historical daily runs; compute control limits; check whether 3-in-a-day is within or beyond.
+
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-127 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-25
+  Original item: ASSUMPTION-127
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a->15a,15b->15c->15d->15a,15b->15c] (cycle 1)
+    Original item: ASSUMPTION-127
+    Item type: ASSUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-24): re-triggered on weekly cadence (MONITOR-130 cycle 1)
+      15b (cycle 1, 2026-05-25): re-searched for challenging literature
+    Current status: refresh; no new challenging literature surfaced this cycle.
+
+  Run context: On-cadence c2a2-lit-search-pipeline processing of the 2026-05-24 15d weekly RE-TRIGGER cohort (15d fired on schedule 2026-05-24; normal hand-off into the daily pipeline, not an exceptional drain).
+
+  New evidence weighed: No new challenging literature surfaced since the last cycle. Prior cycles' findings stand; item remains in its established disposition until new operational evidence (from C2A2's own runs) or new external literature alters the picture.
+  Sources (new / refreshed): No new sources this cycle.
+  Strength of challenge: Unchanged from prior cycle.
+  Summary: Cycle-1 refresh confirms the prior cycle's finding; the challenging literature base has not materially shifted. Recommendation carries forward unchanged.
+  Caveats: Automated weekly refresh is bounded by the LLM's capacity to surface genuinely new external evidence; a human-driven scan or operational evidence from C2A2's own runs is the more sensitive signal for status change.
+  Specific risks: Unchanged from prior cycle.
+  Mitigations available: Unchanged from prior cycle.
+  Recommendation: refreshed; carry forward prior recommendation

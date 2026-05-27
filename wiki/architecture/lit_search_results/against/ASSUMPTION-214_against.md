@@ -1,0 +1,37 @@
+SEARCH-AGAINST-ASSUMPTION-214:
+  Date searched: 2026-05-23
+  Original item: ASSUMPTION-214
+  Original statement: "A single self-contained handoff document can carry an experiment's full context into a cold-start chat, making the experiment portable across sessions."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15b]
+    Original item: ASSUMPTION-214
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the two-summa cold-start brief packaging.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Polanyi (1966) "The Tacit Dimension." — "We know more than we can tell"; load-bearing knowledge resists full explicit articulation, so a written brief cannot carry all of it.
+    2. Collins (2001) "Tacit Knowledge, Trust and the Q of Sapphire" / TEA-laser studies. — Experiments famously could NOT be replicated from written reports alone; tacit, person-to-person transfer was required.
+    3. Reproducibility crisis (Baker 2016, Nature; Open Science Collaboration 2015). — Even detailed methods sections routinely fail to reproduce results, evidence that documents under-carry context.
+
+  Strength of challenge: Moderate-Strong
+
+  Summary: The strongest empirical case against full-context portability is the replication literature: experiments often cannot be reproduced from their written record alone (Collins), because experimental competence is partly tacit (Polanyi) and specifications are constitutively incomplete. For an LLM cold start the risk is amplified — the model lacks the human reader's shared background that normally fills documentation gaps. The claim "full context" is therefore too strong; "enough context, sometimes, after iteration" is the defensible version.
+
+  Specific risks: The two-summa experiment launches from a brief that silently omits a load-bearing detail, producing a run that looks faithful but diverges from intent — and the divergence is hard to detect precisely because the omission was invisible.
+
+  Mitigations available: Treat the brief as a hypothesis to be tested: cold-start it, diff the resulting setup against the author's intent, and iterate; keep a "what a reader must already know" appendix; version the brief as defects are found.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: ASSUMPTION-214
+    Strongest counterargument: Decades of replication research show that written records systematically under-carry the tacit competence needed to reproduce experimental work; "full context in one document" is precisely the assumption the reproducibility crisis falsified. A cold-start chat is the worst case because it has none of the shared human background that normally repairs documentation gaps.
+    What would need to be true for C2A2 to be safe: The experiment's load-bearing context is genuinely explicit and verifiable, and the brief has survived at least one real cold-start reproduction test.
+    How to test: Hand the brief to a fresh chat with no extra steering; have the author flag every place the run diverged from intent. Non-zero load-bearing divergences falsify "full context."

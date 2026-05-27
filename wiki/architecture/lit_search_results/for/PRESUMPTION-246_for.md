@@ -1,0 +1,30 @@
+SEARCH-FOR-PRESUMPTION-246:
+
+  Date searched: 2026-05-25
+  Original item: PRESUMPTION-246
+  Original statement: "Excluding lit_search_results/ so the orphan count "tracks routing" (ASSUMPTION-224) presumes backlink-density is a valid proxy for integration at all -- but much of the corpus is operational/archival and never meant to be linked, so the metric may measure machine-log growth, not integration failure."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a]
+    Original item: PRESUMPTION-246
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: original inference of unstated presumption
+      15a: Searched for supporting literature (cycle 0)
+    Current status: SEARCHED
+
+  Supporting evidence found: Yes (the vulnerability is well-supported)
+
+  Sources:
+    1. Goodhart, C. (1975); Strathern, M. (1997). — Once backlink density is used as the integration target, it is subject to corruption and ceases to measure integration well.
+    2. Manheim, D. & Garrabrant, S. (2018). "Categorizing Variants of Goodhart's Law." arXiv. — Proxies diverge from goals (regressive/extremal Goodhart); a structural proxy like backlink density is vulnerable when much of the corpus is non-linkable by design.
+    3. Construct-validity literature (Cronbach & Meehl, 1955). — A proxy must be validated against the construct it stands in for; an unvalidated structural count may measure corpus growth, not integration.
+
+  Strength of support: Strong
+
+  Summary: The presumption — that backlink density may not be a valid integration proxy at all, because much of the corpus is operational/archival and never meant to be linked — is well-supported by Goodhart's Law and construct-validity theory. Counting backlinks over a corpus dominated by machine-generated, non-linkable material risks measuring machine-log growth rather than integration failure.
+
+  Caveats: Backlink density is not worthless; it is a weak but non-zero signal. The presumption supports validating/contextualizing the proxy, not abandoning all connectivity measurement.
+
+  Recommendation: SUPPORTED

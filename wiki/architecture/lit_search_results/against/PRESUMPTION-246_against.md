@@ -1,0 +1,38 @@
+SEARCH-AGAINST-PRESUMPTION-246:
+
+  Date searched: 2026-05-25
+  Original item: PRESUMPTION-246
+  Original statement: "Excluding lit_search_results/ so the orphan count "tracks routing" (ASSUMPTION-224) presumes backlink-density is a valid proxy for integration at all -- but much of the corpus is operational/archival and never meant to be linked, so the metric may measure machine-log growth, not integration failure."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15b]
+    Original item: PRESUMPTION-246
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: original inference of unstated presumption
+      15b: Searched for challenging literature (cycle 0)
+    Current status: SEARCHED
+
+  Challenging evidence found: Partial
+
+  Sources:
+    1. Knowledge-graph / documentation-health practice. — Connectivity and backlink density are widely and usefully used as coarse integration indicators; they are not meaningless.
+    2. PageRank / centrality literature (Page et al., 1999). — Link structure carries real information about a node's embeddedness in a corpus.
+    3. Pragmatic-metric arguments. — A cheap, imperfect proxy can still be decision-useful if its limits are understood.
+
+  Strength of challenge: Weak-Moderate
+
+  Summary: The counter is that backlink density is a legitimate, if coarse, integration signal and should not be dismissed wholesale; the right response to its limits is contextualization (report alongside other signals, exclude non-linkable material on principled grounds), not abandonment. This challenges the strong reading of the presumption ("not a valid proxy at all") while conceding its weak reading ("a noisy proxy that must be validated").
+
+  Specific risks: Over-applying the presumption could leave C2A2 with no integration signal at all, losing a cheap health indicator.
+
+  Mitigations available: Keep backlink density but pair it with an independent integration check and report excluded vs included counts (the same mitigation as ASSUMPTION-224).
+
+  STEELMAN:
+    Item: PRESUMPTION-246
+    Strongest counterargument (against the presumption): Every metric is imperfect; demanding full construct validation before using backlink density would paralyze measurement. A coarse proxy, transparently caveated, beats no signal.
+    What would need to be true for C2A2 to be safe: The proxy is reported with its known limits and cross-checked occasionally, so it informs without being reified.
+    How to test: Correlate backlink density against a hand-coded integration sample; a reasonable correlation licenses continued (caveated) use.
+
+  Recommendation: PARTIALLY-CHALLENGED

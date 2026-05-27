@@ -479,3 +479,96 @@ OPEN-061 (candidate — is the connectome reframe the ISME/FC26 paper spine or a
   Status: Open
   Estimated effort: 30-60 minutes for Tom's strategic call on the morning walk; substantial downstream paper-revision effort if it becomes the spine
   Target resolution: This week — it shapes both the paper and the demo-path allocation (OPEN-054)
+
+OPEN-062 (candidate — what counts as "Summa 2", and what is the head-to-head output form?):
+  Date opened: 2026-05-22
+  Question: The two-summa experiment (DECISION-044) is briefed and ready to launch, but its first open item is unresolved: (a) what exactly counts as "Summa 2" — the Conscious-Realist-Monist summa — and in what form does it have to exist (assembled corpus? generated on demand? a defined day-set parallel to the Thomist Summa source days)? (b) What form does the two-summa head-to-head output take (a scored comparison, a dialogue transcript, a connectome overlay, a paper section)?
+  Why it matters: This is the single design call gating the experiment's launch; ASSUMPTION-215 (a CRM summa can be built as a genuine rival) and PRESUMPTION-233/234 (commensurability; Summa-2 assemblable) all land here concretely. The experiment cannot start in the fresh chat until it is settled.
+  Related items: ASSUMPTION-215, ASSUMPTION-216, DECISION-044, PRESUMPTION-233, PRESUMPTION-234, TWO_SUMMA_EXPERIMENT_BRIEF.md, ASSUMPTION-207 (master-science telos)
+  Status: Open
+  Estimated effort: 30-60 minutes for Tom's design call before launching the #3 chat
+  Target resolution: At launch of the two-summa #3 experiment chat
+
+OPEN-063 (candidate — tune the transcript_authenticity_check classifier to unblock the Summa reviewer?):
+  Date opened: 2026-05-22
+  Question: The Summa Layer-4 commentary reviewer is structurally out of new work and has escalated the same blocker ~20x: the `transcript_authenticity_check` returns FABRICATION false-positives on fidelity-passing summary-form renders, looping the sweep on Days 66-115. (a) Should the classifier be tuned so summary-form fidelity is not read as fabrication? (b) Should the reviewer be granted read access to the C2A2 wiki for bridge-id checks, which it has also requested? (c) Until tuned, is the reviewer just churning below the writer frontier (so its runs should be paused)?
+  Why it matters: An EOD agent is consuming runs to re-escalate a known false-positive; this is wasted automated capacity and a measurement-integrity issue (a classifier flagging good output as fabricated) adjacent to the prior integrity cluster.
+  Related items: PRESUMPTION-239, Summa Layer-4 commentary reviewer, vault/_index/QC log.md, Rule 12 (fail loud)
+  Status: Open
+  Estimated effort: 1-3 hours to inspect the classifier's summary-form handling and retune or add an exemption; minutes to grant wiki read access
+  Target resolution: This week — the reviewer is blocked until then
+
+OPEN-064 (candidate — execute or leave parked the git-history scrub?):
+  Date opened: 2026-05-22
+  Question: A git-history scrub of the stop-tracked Hoffman x Levin raw transcript plus four old narration zips was scoped and parked (DECISION-047). (a) Execute the scrub now, or leave it parked? (b) What is the trigger that should force execution (e.g., before the repo is made more public / before any public README ships)? (c) Is stop-tracking sufficient interim mitigation given the content remains in committed history?
+  Why it matters: Stop-tracking does not remove the content from history; the residual exposure is presumed acceptable while parked (PRESUMPTION-238) but no stated condition converts "parked" into "must run." Repo-publicity moves (public README is on the carried-work list) would change the calculus.
+  Related items: DECISION-047, DECISION-046, ASSUMPTION-218, PRESUMPTION-238
+  Status: Open
+  Estimated effort: 30-60 minutes to run a history scrub (filter-repo) + force-push coordination if executed; minutes to set a trigger condition if left parked
+  Target resolution: Before any repo-publicity step (e.g., public README)
+
+
+---
+
+## 2026-05-23 status update (Agent 14a -- automated-pipeline day; no new numbered question except OPEN-065)
+
+- OPEN-062 (what is "Summa 2" / output form) -- SHARPENED by today's lit disposition REVISE-047: the first fork is now explicit -- is Summa-2 a *genuine rival tradition* (which, by the project's own MacIntyrean definition, a freshly constructed corpus is not) or a *declared constructed synthesis* (framed honestly as such)? Settle before any DECISION-044 launch.
+- OPEN-064 (execute or park the git-history scrub) -- RECOMMENDED ANSWER from REVISE-049: set a hard trigger (rewrite history via git-filter-repo/BFG before ANY repo-publicity step) and keep the repo private until then; stop-tracking is not removal. Convert OPEN-064's intent from a note into a gate.
+- OPEN-063 (tune the transcript_authenticity_check classifier) -- carried; the Summa Layer-4 reviewer continues to churn (PRESUMPTION-239 -> MONITOR-228 this batch).
+
+OPEN-065 (candidate -- how should the self-awareness pipeline behave when the human review gate is unavailable?):
+  Date opened: 2026-05-23
+  Question: The lit pipeline raised two HIGH-urgency, self-undermining REVISE flags today (REVISE-047/048, SYSTEMIC-RISK-FLAG H) and set them -- per protocol -- to AWAITING-REVIEW pending Tom's response. But claude.ai has been signed out four consecutive days, no interactive session occurred, and both daily syncs failed, so nothing is actioning the flags. (a) Should HIGH-urgency / SYSTEMIC-RISK flags have an escalation path that does not depend on the same (currently broken) browser sync -- e.g., an out-of-band alert, or holding the gated decision rather than letting the cadence move on? (b) Should the pipeline throttle generating new flags while a backlog of unactioned HIGH flags exists, to avoid pile-up? (c) What is the maximum acceptable AWAITING-REVIEW age before a flag is auto-escalated?
+  Why it matters: The project's self-correction depends on a human gate (ASSUMPTION-221; PRESUMPTION-240/243). A silently-failing gate means the system's most important findings are the least likely to be acted on, while the cadence keeps producing more -- the failure looks like productivity.
+  Related items: ASSUMPTION-221, PRESUMPTION-240, PRESUMPTION-243, REVISE-047, REVISE-048, REVISE-049, SYSTEMIC-RISK-FLAG H, DECISION-044, the 4-day claude.ai signout
+  Status: Open
+  Estimated effort: 30-60 minutes to design an out-of-band escalation / backlog-age trigger; minutes to re-login and clear the immediate backlog
+  Target resolution: This week -- and a re-login today restores the immediate path
+
+---
+
+## 2026-05-24 status update (Agent 14a/14b -- automated-pipeline day; +1 new question OPEN-066)
+
+- OPEN-065 (how should the pipeline behave when the review gate is unavailable?) -- now has a concrete recommended answer from today's lit disposition REVISE-050: add an explicit SLA + escalation + timeout/safe-default for HIGH AWAITING-REVIEW items, plus an "oldest-unactioned-REVISE age" metric so a multi-day stall cannot pass unnoticed. Still Open pending Tom (the answer itself sits behind the gate it describes -- the self-referential bind). 5th day of signout.
+- OPEN-062 / OPEN-063 / OPEN-064 -- carried, unchanged this run.
+
+OPEN-066 (candidate -- when ALL human-terminating routes share one bottleneck, how should the pipeline route them?):
+  Date opened: 2026-05-24
+  Question: OPEN-065 framed the outage as a problem for the REVISE review gate. Today's 15d run shows the bottleneck is broader: STALE-MONITOR escalations (ASSUMPTION-035/037, PRESUMPTION-037 -- "run the empirical test or retire the premise") terminate at the *same* unavailable human as the REVISE backlog. So the question generalizes: (a) Should there be a single "needs-Tom" queue with one age/escalation policy across REVISEs, STALE escalations, and INCORPORATE-pending precondition items (e.g., ASSUMPTION-221/MONITOR-230)? (b) Is there a tier of self-corrections that can proceed under conservative safe-defaults without any human action (e.g., auto-pause an affected capability), versus a tier that must wait? (c) When multiple HIGH-value queues all block on one person, does the cadence keep generating more, throttle, or consolidate?
+  Why it matters: If escalation is the system's answer to a stall (ASSUMPTION-223) but escalation routes into the same dark gate (PRESUMPTION-245), "escalate to Tom" only relabels the stall. The project now has at least three queues (REVISE, STALE, INCORPORATE-pending) silently waiting on one human, each locally framed as "handled."
+  Related items: ASSUMPTION-223, PRESUMPTION-245, PRESUMPTION-240, REVISE-050, REVISE-051, MONITOR-230, OPEN-065, SYSTEMIC-RISK-FLAG I, the 5-day claude.ai signout
+  Status: Open
+  Estimated effort: folds into the OPEN-065 escalation design (30-60 min) -- mainly a matter of unifying the queue and policy rather than building a second mechanism
+  Target resolution: with OPEN-065, this week
+
+## 2026-05-25 status update (Agent 14a/14b -- mixed-shape day: Chat session + automated agent output; 0 new questions)
+
+- OPEN-066 -- now extended by a FOURTH human-terminating route surfaced today: the **deferred ingest backlog** (PRESUMPTION-248 / ASSUMPTION-225). 34 approved-but-uningested items have been "deliberately deferred to an attended session," meaning they now wait on the same human as the REVISE backlog (5 items), STALE escalations (3 items), INCORPORATE-pending precondition items (e.g., MONITOR-230), and the 28 pending decision proposals. The 2026-05-25 lit pipeline confirmed PRESUMPTION-245's vulnerability (SUPPORTED) and raised REVISE-053 with explicit remedy = single "needs-Tom" queue + age/escalation policy + safe-default tier + out-of-band escalation. OPEN-066 thus has a concrete, externally-validated answer; what remains is Tom's action on the queue design itself.
+- OPEN-065 -- continues with REVISE-050's recommended SLA + escalation + timeout/safe-default + oldest-unactioned-age metric. claude.ai sign-in was RESTORED today; first opportunity in 6 days for action on the backlog.
+- OPEN-062 / OPEN-063 / OPEN-064 -- carried, unchanged this run.
+- No new OPEN question registered today: the day's epistemic content extends OPEN-066 rather than introducing a new line of inquiry.
+
+## 2026-05-26 status update (Agent 14a/14b -- mixed-shape day: attended Cowork session at 17:42 ET + commit + automated agent output; 1 new question)
+
+### OPEN-067 (NEW, 2026-05-26): How does the project reliably trigger an attended Tom "sit-down day" on a ~1-week cadence?
+
+**Background.** The 2026-05-22 to 2026-05-26 outage (a claude.ai signout, 6 days dark) was empirically diagnosed today as the actual failure mode for all human-terminating routes -- not queue/policy design. The diagnosis was confirmed in minutes: a 10-second re-login + a single attended Cowork session at 17:42 ET drained two queues (28 pending proposals + the prior 36-file go-live backlog confirmation) to zero. ASSUMPTION-235 records the empirical finding; ASSUMPTION-236 names the 1-week-cadence target.
+
+**The question.** Given that REVISE-053 (the unified needs-Tom queue + age/escalation policy + safe-default tiers) is real and lit-validated but secondary to the sit-down-arrival problem, what mechanism makes an attended sit-down reliably arrive on a useful cadence? The 6-day signout suggests three sub-questions:
+
+  1. **Failure-mode-uniformity.** Today's outage was 10-second-resolvable. Will future outages share this resolution mode, or do they span a heterogeneous failure-mode space (browser session corruption, MFA/OAuth expiry, network/ICANN, executive-function dips not tied to a signout at all)? (See PRESUMPTION-256.)
+  2. **Triggering mechanism.** What event (an external reminder, a calendar block, a daily ritual, an out-of-band escalation, etc.) reliably converts "I should sit down with C2A2" into "I am sitting down with C2A2" -- on a cadence shorter than the 6-day outage window? Is the right answer infrastructural (better notification / scheduling) or behavioral (carved time in Tom's week)?
+  3. **Complement vs alternative.** Does REVISE-053 (queue-design fix) and the sit-down-cadence design (this question) form a complement (both needed) or alternatives (one wins)? (See PRESUMPTION-259 on binary-framing recurrence.)
+
+**Coupled items.** ASSUMPTION-235, ASSUMPTION-236; PRESUMPTION-256, PRESUMPTION-258, PRESUMPTION-259; OPEN-066 (the queue/policy half of the same problem); REVISE-050, REVISE-053 (the queue-policy remediations); SYSTEMIC-RISK-FLAG I (the systemic root).
+
+**Status:** Open
+**Estimated effort:** medium -- mixed infrastructural and behavioral; not solvable by code alone
+**Target resolution:** initial design discussion on tomorrow's morning walk (2026-05-27); first mechanism in place within 2 weeks
+
+### Status of carried questions (no new action this run; status notes only)
+
+- **OPEN-066** -- the empirical answer landed today: a sit-down session DOES drain all four human-terminating routes in minutes once Tom arrives. REVISE-053 (queue/policy design) is therefore confirmed *real but secondary*. OPEN-066 is **not closed** -- the queue-policy fix is still wanted -- but it is now coupled to OPEN-067 as the harder design question.
+- **OPEN-065** -- REVISE-050's SLA + escalation + timeout + oldest-unactioned-age metric remains AWAITING-REVIEW; the gate is now OPEN, so Tom's first opportunity to action this is the next attended session.
+- **OPEN-062 / OPEN-063 / OPEN-064** -- carried, unchanged.
+- **Candidate DECISION-048 (NEW today; not yet numbered):** "The review-page state (verified by direct paste plus verbal confirmation) is the authoritative source-of-truth for proposal-approval values when the Gmail decision-email body disagrees; the email-body misfire condition is a UI/workflow bug to fix on the decision-email-generation side." Surfaces from today's 17:25Z all-PENDING email-vs-25-APPROVE-review-page mismatch (ASSUMPTION-230); the cowork-to-chat summary explicitly tags this as DECISION-048-candidate for tomorrow. Also touches: ASSUMPTION-231 (intent overrides UI categorization) and PRESUMPTION-254 (UI itself is not always reliable; the rule may need to be "stated intent overrides both"). AWAITING-TOM-NUMBERING.

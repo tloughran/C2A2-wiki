@@ -37,3 +37,33 @@ SEARCH-AGAINST-ASSUMPTION-138:
     Strongest counterargument: "Deliberate post-ISME breadth arc, not demo-path advancement" is the right framing but does not constitute a mitigation. The cognitive-bandwidth and WIP/throughput literature is clear: adding work to a constrained runway degrades throughput regardless of how the work is labeled. The 2026-05-14 record itself — 8 pathway docs drafted in one day inside an 8-week runway — is direct evidence that the framing alone doesn't prevent breadth allocation during runway. The honest acknowledgment in "allocation question for 8-week runway" is correct but the implementation needs WIP caps, time-boxing, or return-to-demo-track gates to actually enforce the post-demo framing.
     What would need to be true for C2A2 to be safe: (a) WIP cap on breadth-arc work during runway; (b) Time-box breadth work to specific days; (c) Probability-weighted runway plan (PRESUMPTION-178); (d) Demo-critical-progress days tracked as primary metric.
     How to test: Count breadth-arc-doc days vs. demo-critical-progress days over the 8-week runway; check whether the ratio stays within plan.
+
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-138 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-25
+  Original item: ASSUMPTION-138
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a->15a,15b->15c->15d->15a,15b->15c] (cycle 1)
+    Original item: ASSUMPTION-138
+    Item type: ASSUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-24): re-triggered on weekly cadence (MONITOR-151 cycle 1)
+      15b (cycle 1, 2026-05-25): re-searched for challenging literature
+    Current status: refresh; no new challenging literature surfaced this cycle.
+
+  Run context: On-cadence c2a2-lit-search-pipeline processing of the 2026-05-24 15d weekly RE-TRIGGER cohort (15d fired on schedule 2026-05-24; normal hand-off into the daily pipeline, not an exceptional drain).
+
+  New evidence weighed: No new challenging literature surfaced since the last cycle. Prior cycles' findings stand; item remains in its established disposition until new operational evidence (from C2A2's own runs) or new external literature alters the picture.
+  Sources (new / refreshed): No new sources this cycle.
+  Strength of challenge: Unchanged from prior cycle.
+  Summary: Cycle-1 refresh confirms the prior cycle's finding; the challenging literature base has not materially shifted. Recommendation carries forward unchanged.
+  Caveats: Automated weekly refresh is bounded by the LLM's capacity to surface genuinely new external evidence; a human-driven scan or operational evidence from C2A2's own runs is the more sensitive signal for status change.
+  Specific risks: Unchanged from prior cycle.
+  Mitigations available: Unchanged from prior cycle.
+  Recommendation: refreshed; carry forward prior recommendation

@@ -28,3 +28,31 @@ SEARCH-FOR-ASSUMPTION-057:
   Caveats: (a) Support is conditional on the rule being audited against its excluded set (FINDING-001, 002, 003, 004, 006, 007, 008, 010); the rule may be stated correctly but applied incorrectly; (b) the stated rule does not specify who adjudicates "subsumed" and "downgraded" — the classification criterion is nested one level deeper and may itself be unaudited; (c) moving from PRESUMPTION to ASSUMPTION is a visibility improvement but not an audit — it means the rule can now be audited, not that it has been.
 
   Recommendation: PARTIALLY-SUPPORTED (rule pattern has strong precedent; specific application still requires audit against the 6 excluded findings; stating the rule is necessary but not sufficient)
+
+
+---
+
+SEARCH-FOR-ASSUMPTION-057 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-25
+  Original item: ASSUMPTION-057
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a->15a,15b->15c->15d->15a,15b->15c] (cycle 1)
+    Original item: ASSUMPTION-057
+    Item type: ASSUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-24): re-triggered on monthly cadence (MONITOR-059 cycle 1)
+      15a (cycle 1, 2026-05-25): re-searched for supporting literature
+    Current status: refresh; no new supporting literature surfaced this cycle.
+
+  Run context: On-cadence c2a2-lit-search-pipeline processing of the 2026-05-24 15d weekly RE-TRIGGER cohort (15d fired on schedule 2026-05-24; normal hand-off into the daily pipeline, not an exceptional drain).
+
+  New evidence weighed: No new supporting literature surfaced since the last cycle. Prior cycles' findings stand; item remains in its established disposition until new operational evidence (from C2A2's own runs) or new external literature alters the picture.
+  Sources (new / refreshed): No new sources this cycle.
+  Strength of support: Unchanged from prior cycle.
+  Summary: Cycle-1 refresh confirms the prior cycle's finding; the supporting literature base has not materially shifted. Recommendation carries forward unchanged.
+  Caveats: Automated weekly refresh is bounded by the LLM's capacity to surface genuinely new external evidence; a human-driven scan or operational evidence from C2A2's own runs is the more sensitive signal for status change.
+  Recommendation: refreshed; carry forward prior recommendation

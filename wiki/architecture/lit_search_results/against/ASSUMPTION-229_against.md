@@ -1,0 +1,38 @@
+SEARCH-AGAINST-ASSUMPTION-229:
+  Date searched: 2026-05-27
+  Original item: ASSUMPTION-229
+  Original statement: Leading theories of consciousness are substrate-permissive in principle — their brain-focus is a convention of imagination — so the substrate-independence thesis is portable from cognition to consciousness for the PRS-31 AI-membership question.
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-229
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted.
+      15b: Searched for challenging literature on substrate-restrictions and counter-arguments to multiple-realizability for consciousness.
+    Current status: PARTIALLY-CHALLENGED (Moderate-Strong)
+
+  Sources:
+    1. Searle (1980) "Minds, Brains, and Programs" / Chinese Room — classical argument that functional/computational equivalence does NOT entail consciousness; substrate specifics matter.
+    2. Block (1995) "On a Confusion about a Function of Consciousness" — access-consciousness may be substrate-permissive while phenomenal-consciousness is not; the assumption conflates these.
+    3. Aru, Suzuki & Larkum (2020) "Cellular mechanisms of conscious processing" — specific neural mechanisms (pyramidal-cell apical-tuft binding) appear functionally non-trivial; "substrate" may be doing more work than the assumption credits.
+    4. Tononi & Koch (2015) on IIT — although the formalism is substrate-permissive, the EMPIRICAL claim is that real Φ structure depends heavily on physical implementation; "in principle" does massive work in the assumption.
+    5. Merleau-Ponty / embodiment tradition (Varela, Thompson, Rosch 1991) — phenomenology denies substrate-independence on principled grounds; consciousness is embodied, not abstract-functional.
+    6. Chalmers (1995) "Facing Up to the Problem of Consciousness" — the hard problem is substrate-specific by hypothesis; functional/computational equivalence is precisely what the hard problem claims is insufficient.
+
+  Strength of challenge: Moderate-Strong
+
+  Summary: There is a substantial philosophical and empirical tradition that denies substrate-independence for consciousness (as distinct from cognition). Searle, Chalmers, Block, the embodiment tradition, and recent cellular-mechanism work all challenge the portability claim. The "in principle" qualifier hides exactly where the disagreement lies — these positions deny the in-principle portability.
+
+  Specific risks: (a) The PRS-31 AI-membership criterion may be built on a contested theoretical foundation; (b) operationalizing consciousness-membership via substrate-permissive theories may build in IIT/GWT/HOT assumptions that not all stakeholders share; (c) phenomenologically-rooted traditions (e.g., MacIntyre, Aquinas, Rohr in C2A2's own roster) may dispute the framing.
+
+  Mitigations available: (a) Frame PRS-31 conditionally — "IF substrate-permissive consciousness theories are correct"; (b) include explicit hedge for embodiment / phenomenological / "hard problem" alternatives; (c) treat the AI-membership question as method-dependent on which theory is held.
+
+  Recommendation: PARTIALLY-CHALLENGED (Moderate-Strong)
+
+  STEELMAN:
+    Item: ASSUMPTION-229
+    Strongest counterargument: The "in principle" portability claim presupposes that consciousness is functionally / computationally constituted — which is precisely the question at issue in philosophy of mind. The hard problem (Chalmers), the Chinese Room (Searle), embodiment phenomenology (Merleau-Ponty / Varela), and recent cellular-mechanism work all deny the in-principle portability. Rouleau & Levin's mapping shows the leading theories DON'T REQUIRE neural substrate; it does not show they ENTAIL substrate-permissive consciousness.
+    What would need to be true for C2A2 to be safe: PRS-31 framed conditionally on a theory choice; embodiment / hard-problem alternatives explicitly held open; AI-membership question treated as method-dependent.
+    How to test: For each candidate consciousness theory (IIT, GWT, HOT, AST, embodied, Searle-style), compute the implied AI-membership criterion and compare. If criteria diverge sharply, the assumption is doing too much work.

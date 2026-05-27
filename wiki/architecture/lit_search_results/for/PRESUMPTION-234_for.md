@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-234:
+  Date searched: 2026-05-23
+  Original item: PRESUMPTION-234
+  Original statement: "The experiment presumes a 'Summa 2' already exists or can be assembled parallel to the Thomist summa, though 'what counts as Summa 2' is open."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a]
+    Original item: PRESUMPTION-234
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred: the head-to-head presumes an assemblable parallel corpus.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Systematic-theology / constructive-synthesis practice (e.g., modern systematic theologies assembled as comprehensive corpora). — Comprehensive syntheses are routinely assembled in the present.
+    2. Corpus-construction methodology (anthology/canon formation studies). — Curated corpora can be built to a stated scope and serve as comparison objects.
+    3. The project's own wiki: 14 tradition corpora + assumption/premise registries already constitute substantial assembled material for a Conscious-Realist-Monist synthesis.
+
+  Strength of support: Weak-Moderate
+
+  Summary: Assembling a parallel comprehensive corpus is feasible in principle and the project already holds much of the raw material. Constructive theology and corpus-construction practice show that present-day syntheses can be built deliberately. Support is weak-moderate because feasibility of assembly does not establish parity with a 700-year canon, and the unit itself is undefined ("what counts as Summa 2" is open per OPEN-062), so the supportive case cannot yet point to a fixed object.
+
+  Caveats: Support is for "assemblable," not for "fair/parallel" — the asymmetry concern (15b) is untouched, and the definitional gap remains open.
+
+  Recommendation: PARTIALLY-SUPPORTED

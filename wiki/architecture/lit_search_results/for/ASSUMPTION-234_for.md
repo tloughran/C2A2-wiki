@@ -1,0 +1,28 @@
+SEARCH-FOR-ASSUMPTION-234:
+  Date searched: 2026-05-27
+  Original item: ASSUMPTION-234
+  Original statement: The first tradition-batch in the focused-ingest session (wolfram = 10 files) functions as a protocol test-run; its outcome dictates whether the same cadence carries through to the remaining 11 traditions.
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-234
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-05-26 attended session.
+      15a: Searched for supporting literature on canary-batch / pilot-run design.
+    Current status: SUPPORTED (Strong; with caveats on representativeness)
+
+  Sources:
+    1. Beyer et al. (2016) SRE — explicit canary deployment as the dominant pattern for graduated rollout; first cohort serves as protocol validation.
+    2. Humble & Farley (2010) — "pilot wave" pattern; first batch validates pipeline mechanics before full rollout.
+    3. Cohen et al. (2009) (Healthcare quality improvement) — pilot-cohort selection criteria emphasize moderate complexity over best-case or worst-case.
+    4. C2A2-internal: matches prior canary patterns elsewhere in the project (e.g., the 2026-04-27 caching rollout).
+
+  Strength of support: Strong (for the pattern); Moderate (for the specific canary choice)
+
+  Summary: Canary / pilot-batch is a strongly supported industrial pattern. Wolfram-first is a defensible canary choice if its complexity is representative — and the 10-file size is a reasonable test scale. The assumption matches industrial best practice for graduated rollout.
+
+  Caveats: (a) Wolfram may not be representative of all 12 traditions (PRESUMPTION-255 raises this); (b) canary validity requires explicit pass/fail criteria — not yet documented; (c) "carries through" presumes uniformity that PRESUMPTION-255 challenges.
+
+  Recommendation: SUPPORTED (Strong with caveats)

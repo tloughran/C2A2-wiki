@@ -1,0 +1,38 @@
+SEARCH-AGAINST-PRESUMPTION-241:
+  Date searched: 2026-05-24
+  Original item: PRESUMPTION-241
+  Original statement: "Firing the full daily cadence on a day with zero human design input presumes daily granularity stays meaningful when there was nothing for a human to have decided."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15b]
+    Original item: PRESUMPTION-241
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as the unstated cadence assumption (daily firing stays meaningful regardless of human input).
+      15b: Searched for counter-evidence that fixed-daily firing is harmless/always appropriate (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Sampling-rate / Nyquist-Shannon reasoning (and control-theory observation design). — Sampling faster than the underlying signal changes adds cost, not information; on zero-input days the "design signal" did not change, so a full daily run is over-sampling.
+    2. Event-driven vs. schedule-driven architecture literature. — For sparse, bursty inputs, event-triggered processing dominates fixed schedules on signal-to-noise and resource use; fixed daily firing is a known mismatch for sparse human input.
+    3. Alarm/alert fatigue (Cvach 2012; Sendelbach & Funk 2013) and the "cry wolf" effect. — Frequent low-information runs dilute attention to the runs that matter, degrading the value of the output channel.
+    4. Self-referential/observer-loop risk (drift of a system that observes its own automated activity). — Firing the full self-awareness pipeline on a no-human-input day means it largely observes its own prior automated output (note: PRESUMPTION-240/243 were themselves surfaced from automated activity), risking manufactured findings and metric theatre.
+
+  Strength of challenge: Moderate
+
+  Summary: Fixed daily firing on zero-input days is a recognized cadence mismatch: it over-samples a signal that did not change, dilutes attention via low-information runs, and -- for a self-awareness pipeline -- risks a self-referential loop in which the system mostly re-processes its own automated activity. None of this makes daily firing catastrophic, but it does challenge the presumption that daily granularity "stays meaningful" with nothing for a human to have decided.
+
+  Specific risks: Low-signal daily runs generate volume that obscures high-signal items; the pipeline manufactures observations about its own observations (drift); reviewer attention (already the binding constraint -- see validated PREMISE on human-review-capacity bottleneck) is spent on near-empty days.
+
+  Mitigations available: Event/threshold-triggered firing; a reduced "quiet-day" run (heartbeat-only) when no human input is detected; right-size cadence to the rate of meaningful design change (couples cadence family ASSUMPTION-117).
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: PRESUMPTION-241
+    Strongest counterargument: A self-awareness pipeline that only fires when a human acts cannot observe the failure mode "the human stopped acting" -- which is exactly the failure that PRESUMPTION-240/243 surfaced this very batch. So a fixed heartbeat that runs even on zero-input days is not noise; it is the only way the system notices its own gate going dark. Event-driven firing keyed to human input would have been blind to a four-day human absence.
+    What would need to be true for the presumption to hold (daily is wasteful): The cost/noise of daily runs on quiet days exceeds the value of the heartbeat's drift-and-absence detection. If absence-detection is valuable (it just was), daily firing is justified -- but a *full* pipeline run may still be the wrong instrument vs. a lightweight heartbeat.
+    How to test: Compare information yield (novel, actioned items) of zero-input-day runs vs. input-day runs over a window; if quiet-day yield is ~0 except for absence/drift signals, replace the full run with a heartbeat that still catches those signals.

@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-220:
+  Date searched: 2026-05-24
+  Original item: ASSUMPTION-220
+  Original statement: "PRS candidates can be validly generated from a talk's announced topic list / runtime metadata when the transcript is unavailable, if confidence is capped at Medium and flagged for transcript verification."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a]
+    Original item: ASSUMPTION-220
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted as a tradition-intake methodology commitment (metadata-derived PRS with a Medium cap + verification flag).
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Page et al. (2021) "The PRISMA 2020 statement" (and Moher et al. 2009). — Two-stage screening (title/abstract triage, then full-text confirmation) is standard, validated evidence-synthesis methodology; a provisional candidate from a surrogate, flagged for full-source verification, is exactly this pattern.
+    2. Informative-abstract / IR surrogate literature (ANSI/NISO Z39.14 informative-abstract standard). — Abstracts and structured metadata are designed as faithful content surrogates and carry retrievable content signal.
+    3. Selective-prediction / calibrated-abstention literature (defer/abstain when confidence is low). — Capping confidence at Medium and routing to verification is a recognized epistemic safeguard against asserting beyond a source's warrant.
+
+  Strength of support: Moderate
+
+  Summary: The literature supports a *staged* extraction method: a provisional candidate drawn from a surrogate (title/abstract/runtime metadata), explicitly confidence-capped and routed to full-source verification, is precisely the PRISMA two-pass screening pattern. Metadata demonstrably carries content signal, so topic-list-derived PRS candidates are not baseless. Support is Moderate rather than Strong because the validity is contingent on the verification step actually being executed, and because PRS recovery requires the argumentative move (problem -> resolution -> significance), which a surrogate names less reliably than it names topics (see 15b).
+
+  Caveats: Support holds only if "flagged for transcript verification" is reliably executed downstream; the Medium cap labels uncertainty but does not remove systematic proxy error. The verification hedge couples to PRESUMPTION-240/243 (the review gate that would perform verification is currently absent), and to PRESUMPTION-242 (its designer-unaware twin).
+
+  Recommendation: PARTIALLY-SUPPORTED

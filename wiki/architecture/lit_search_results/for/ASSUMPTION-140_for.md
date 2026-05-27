@@ -27,3 +27,31 @@ SEARCH-FOR-ASSUMPTION-140:
   Caveats: (a) N=2 below stability-claim threshold; (b) PRESUMPTION-177 paired — Chrome MCP failed today; credential-layer is not fully restored at the system level; (c) "Holding" suggests an inference the sample doesn't support; (d) Joint with ASSUMPTION-141 (evening cowork-to-chat failed) — same day shows partial-success, not full-success; (e) PRESUMPTION-159 carry-forward — credential-layer-as-architectural-fix anti-pattern remains under REVISE.
 
   Recommendation: PARTIALLY-SUPPORTED (Weak-Moderate) — two data points are honest; "holding" inference is provisional; load-bearing concern is the credential-vs-architectural framing
+
+
+---
+
+SEARCH-FOR-ASSUMPTION-140 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-25
+  Original item: ASSUMPTION-140
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a->15a,15b->15c->15d->15a,15b->15c] (cycle 1)
+    Original item: ASSUMPTION-140
+    Item type: ASSUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-24): re-triggered on weekly cadence (MONITOR-153 cycle 1)
+      15a (cycle 1, 2026-05-25): re-searched for supporting literature
+    Current status: refresh; no new supporting literature surfaced this cycle.
+
+  Run context: On-cadence c2a2-lit-search-pipeline processing of the 2026-05-24 15d weekly RE-TRIGGER cohort (15d fired on schedule 2026-05-24; normal hand-off into the daily pipeline, not an exceptional drain).
+
+  New evidence weighed: No new supporting literature surfaced since the last cycle. Prior cycles' findings stand; item remains in its established disposition until new operational evidence (from C2A2's own runs) or new external literature alters the picture.
+  Sources (new / refreshed): No new sources this cycle.
+  Strength of support: Unchanged from prior cycle.
+  Summary: Cycle-1 refresh confirms the prior cycle's finding; the supporting literature base has not materially shifted. Recommendation carries forward unchanged.
+  Caveats: Automated weekly refresh is bounded by the LLM's capacity to surface genuinely new external evidence; a human-driven scan or operational evidence from C2A2's own runs is the more sensitive signal for status change.
+  Recommendation: refreshed; carry forward prior recommendation

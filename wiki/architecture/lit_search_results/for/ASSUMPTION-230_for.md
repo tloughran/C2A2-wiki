@@ -1,0 +1,28 @@
+SEARCH-FOR-ASSUMPTION-230:
+  Date searched: 2026-05-27
+  Original item: ASSUMPTION-230
+  Original statement: When Gmail decision-email body and review-page state disagree about proposal-approval values, the review-page state (verified by direct paste + Tom's verbal confirmation) is authoritative; the email body is non-authoritative until the decision-email generator is fixed.
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-230
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-05-26 attended approval session.
+      15a: Searched for supporting literature on data-source authority hierarchies and system-of-record selection.
+    Current status: SUPPORTED (Strong)
+
+  Sources:
+    1. Kimball & Ross (2013) "The Data Warehouse Toolkit" — explicit system-of-record selection is required when redundant channels exist; derived views (like emails) are NOT authoritative.
+    2. Fowler et al. (2001) PEAA — "Single Source of Truth" pattern: when channels diverge, the closest-to-write-path channel is canonical.
+    3. ISO 27001 / data-governance literature — audit-trail authority follows the system-of-record principle; secondary notifications are advisory.
+    4. C2A2-internal: the review page IS the write target; the email is a derived notification — selection logic matches industrial standard.
+
+  Strength of support: Strong
+
+  Summary: Selecting the system-of-record over derived notifications when they diverge is the dominant data-governance pattern. The review page is the actual write target; the email is a derived view. The assumption matches industrial best practice; the verbal-confirmation step adds an additional verification layer that exceeds minimum.
+
+  Caveats: (a) Support is for selecting authoritatively between two existing channels; (b) when BOTH the email AND the UI mislead (the 3-Wright case — PRESUMPTION-254), this rule alone is insufficient; (c) the "until fixed" qualifier is important — the right long-run remedy is generator alignment, not perpetual UI-priority.
+
+  Recommendation: SUPPORTED (Strong)

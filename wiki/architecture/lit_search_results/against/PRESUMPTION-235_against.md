@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-235:
+  Date searched: 2026-05-23
+  Original item: PRESUMPTION-235
+  Original statement: "Choosing the Aquinas<->Levin seam presumes it is the most evidentially productive seam; alternatives were not weighed (absent-alternatives)."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15b]
+    Original item: PRESUMPTION-235
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred: the focal seam was asserted as best without comparison.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Seawright & Gerring (2008) "Case Selection Techniques in Case Study Research." — Selecting a case without comparing it to the candidate set invites selection bias; "most productive" is unwarranted absent that comparison.
+    2. Confirmation/selection bias literature (Nickerson 1998). — Investigators tend to pick the case most likely to flatter their hypothesis; an un-compared focal choice is a textbook vector for this.
+    3. Garden-of-forking-paths / researcher-degrees-of-freedom (Gelman & Loken 2013). — Unjustified analytic choices (here, which seam) inflate the chance the result is an artifact of the choice.
+
+  Strength of challenge: Moderate
+
+  Summary: With alternatives unweighed, the claim that Aquinas<->Levin is the "most productive" seam is unsupported and exposed to selection bias: the seam may have been chosen because it is the most rhetorically congenial to the designer's Conscious-Realist-Monist thesis rather than the most evidentially productive. This is a researcher-degree-of-freedom that can manufacture a favorable result. The challenge is moderate (not strong) because the seam is plausibly a good one; the problem is the absence of justification, which is cheap to remedy.
+
+  Specific risks: The flagship seam is a hidden forking-path: a different seam might show tension where this one shows convergence, so the result reflects the choice, not the traditions.
+
+  Mitigations available: Weigh 2-3 candidate seams against an explicit productivity criterion and record why this one was chosen; ideally run a second seam as a robustness check.
+
+  Recommendation: CHALLENGED (moderate)
+
+  STEELMAN:
+    Item: PRESUMPTION-235
+    Strongest counterargument: "Most evidentially productive" is an empirical comparative claim made without any comparison; unjustified case selection is a known vector for confirmation bias and researcher degrees of freedom, so an un-compared focal seam can produce a result that is an artifact of the (possibly hypothesis-flattering) choice rather than a finding about the traditions.
+    What would need to be true for C2A2 to be safe: The seam is selected against an explicit productivity criterion over a weighed candidate set, and ideally a second seam serves as a robustness check.
+    How to test: Run the comparison on an alternative seam; if the qualitative conclusion flips, the choice was load-bearing and the original selection needs justification.

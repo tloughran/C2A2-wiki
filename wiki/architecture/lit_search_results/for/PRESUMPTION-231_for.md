@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-231:
+  Date searched: 2026-05-23
+  Original item: PRESUMPTION-231
+  Original statement: "Byte-identical data + node --check (+ eyeball review) is presumed to entail correct rendered behavior of new interaction widgets; no interaction test reproduces the behaviors."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a]
+    Original item: PRESUMPTION-231
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the promote-to-live gate (data-identity + syntax-check + visual review) used for new interaction widgets.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Static analysis / type-checking literature (e.g., node --check as a parse/syntax gate). — Syntax and data integrity checks reliably catch a real class of defects before runtime.
+    2. Formal-methods principle: when output is fully determined by verified inputs+logic, properties can be established without execution.
+    3. Data-diff regression practice (golden-master / approval testing on data). — Byte-identical data confirms the data layer did not regress.
+
+  Strength of support: Weak-Moderate
+
+  Summary: The gate is sound for what it actually covers: byte-identical data rules out data regressions and node --check rules out syntax/parse errors, and where rendered behavior is fully determined by the verified data+logic, reasoning can stand in for execution. So the approach is not empty. Support is only weak-moderate because interaction behavior (event handling, hit-testing, raycasting, layout) is generally NOT fully determined by the checked layers, so the entailment to "correct rendered behavior" overreaches.
+
+  Caveats: Support covers data and syntax correctness, not emergent interaction correctness; the gap is exactly what 15b targets.
+
+  Recommendation: PARTIALLY-SUPPORTED

@@ -173,3 +173,93 @@ The strict spec rule (write a bridge note when a single page has 2+ thinkers sco
 ---
 
 *Next scheduled run: weekly (per `c2a2-sewing-agent-weekly` task).*
+
+---
+
+# Sewing Agent Run — 2026-05-24 08:45 UTC
+
+*Automated weekly run (`c2a2-sewing-agent-weekly`). Tom not present; executed autonomously, append-only.*
+
+## Connectivity snapshot
+
+| metric | 2026-05-10 | 2026-05-18 | 2026-05-24 (this run, before) | 2026-05-24 (after) |
+|---|---|---|---|---|
+| orphan (0 backlinks) | 766 | 1104 | 1409 | 1407 |
+| sparse (1–2) | 2 | 2 | 289 | 297 |
+| connected (3+) | 17 | 17 | 33 | 33 |
+| total pages | 785 | 1123 | 1731 | 1737 |
+
+CSV row appended to `architecture/metrics/connectivity_log.csv`: `2026-05-24,1409,289,33,1731` (pre-run counts, per the established log convention).
+
+The +6 to total and the orphan/sparse shift between before/after are this run's own additions: 6 new bridge notes were created, each made reachable (sparse, 1 backlink) by the `[[bridge]]` reference embedded in its anchor page's agentic calls. Net: 2 pages left the orphan tier into sparse this run beyond the 6 new files (the two appended-to bridges gained backlinks).
+
+## Pages processed (9 of up to 10)
+
+All nine are `pending/` proposal orphans (0 backlinks before; **still 0 after** — see note below):
+
+| page | thinkers addressed | backlinks before→after |
+|---|---|---|
+| `inbox/proposals/pending/2026-05-24_rohr_for-love-of-the-earth.md` | Kastrup, Hoffman, Levin, Wright, Rohr | 0→0 |
+| `inbox/proposals/pending/2026-05-24_rohr_psalms-songs-of-exile.md` | Wright, Friston, Fredrickson, Rohr | 0→0 |
+| `inbox/proposals/pending/2026-05-24_wright_ask-ntw-may4-lost-tribes-exile.md` | Rohr, Stump, Wright | 0→0 |
+| `inbox/proposals/pending/2026-05-24_wright_biologos-new-creation-breaking-in.md` | Kastrup, Hoffman, Carroll, Stump, Wright | 0→0 |
+| `inbox/proposals/pending/2026-05-24_wright_vision-of-ephesians.md` | Stump, Rohr, Levin, Hoffman, Wright | 0→0 |
+| `inbox/proposals/pending/2026-05-23_wolfram_business-may13-ownerless-ai-accountability.md` | Levin, Carroll, Wolfram, C2A2 master | 0→0 |
+| `inbox/proposals/pending/2026-05-22_carroll_mindscape-354-list-free-will-levels.md` | Kastrup, Hoffman, Friston, Stump, Carroll, C2A2 master | 0→0 |
+| `inbox/proposals/pending/2026-05-20_kastrup_harpur-literal-as-metaphor.md` | McGilchrist, Hoffman, Kastrup | 0→0 |
+| `inbox/proposals/pending/2026-05-20_mcgilchrist_good-beautiful-true-sheldonian.md` | Stump, Kastrup, Fredrickson, McGilchrist | 0→0 |
+
+**Why before→after is 0→0 for the processed pages:** agentic calls are *outbound* routing signals embedded in the orphan; they do not create *inbound* backlinks to the orphan itself. A processed proposal leaves the orphan tier only when a thinker agent acts on a call and adds a backlink from its tradition wiki (or when the proposal is promoted out of `pending/`). The Sewing Agent's deliverable is the routing signal; the connection is the downstream agent's action. This is the same behavior as prior runs and is the correct division of labor — but it means the orphan count will not fall from sewing alone until the thinker agents process their queues (see Tom-attention items).
+
+### 10th slot — deliberately not filled
+
+`traditions/levin/prs_triplets.md` was the planned 10th page (a `traditions/` orphan with rich Levin/Friston content). On inspection it **already carries a full `## Agentic Calls` section from the 2026-05-18 run** — including a Friston/PRS-03 call and a Levin self-backlink housekeeping call that are functionally identical to what this run would have added. Per the no-duplicate constraint, no new calls were injected; the page is left untouched. Its 2026-05-18 calls remain **unprocessed** (the page is still a graph orphan), which is itself a Tom-attention item below. The run therefore processed 9 pages rather than forcing a 10th.
+
+## Agentic calls injected — 39 total across 9 pages
+
+By recipient: Wright 5, Kastrup 5, Stump 5, Hoffman 5, Rohr 4, Levin 3, Carroll 3, Friston 2, Fredrickson 2, McGilchrist 2, C2A2 master 2, Wolfram 1.
+
+Every call references specific page content (PROP-ids, PRS-CANDIDATE numbers, named episodes/books, or specific passages) and gives a concrete next-action (open/extend a named bridge note, file a CROSS-NN flag, backlink from a named tradition wiki, promote out of `pending/`, queue transcript verification, or surface to the architecture discussion).
+
+## Bridge notes written — 8 (6 new, 2 extended)
+
+Six of the nine processed pages had ≥2 thinkers scoring >0.5; the remaining three (psalms-exile, lost-tribes-exile, kastrup-metaphor) converged onto bridge-pairs that already existed, so were handled as extensions rather than new files.
+
+**New:**
+1. `synthesis/carroll_kastrup_bridge.md` — non-reductive physicalism (Carroll/List) as the formal dual of analytic idealism (Kastrup). Anchor: PROP-2026-05-22-001. Claim: same anti-reductionism, opposite monism; near-indistinguishable on first-person experience, divergent only on the base. Open Q: is there any deciding test, or is the choice underdetermined?
+2. `synthesis/kastrup_rohr_bridge.md` — cosmic-Christ-in-creation (Rohr) as the contemplative articulation of mind-at-large (Kastrup). Anchor: PROP-2026-05-24-005. Open Q: does Rohr's reunion-telos contradict Kastrup's dissociative-boundary structure (separateness: wound or feature?).
+3. `synthesis/kastrup_wright_bridge.md` — Wright's genre-aware critical realism vs. Kastrup's idealist realism on "what really happened"; resurrection-as-transformed-physicality as the seam. Anchor: PROP-2026-05-24-002. Open Q: can "transformed physicality" satisfy Wright's determinate-past realism and Kastrup's idealism at once? (Three-way node with Carroll flagged.)
+4. `synthesis/stump_wright_bridge.md` — Wright's "one new humanity" (Eph 2) as the scriptural exemplar of Stump's corporate-substance metaphysics; unity-in-distinction. Anchor: PROP-2026-05-24-001. Open Q: membership/persistence criterion for the corporate subject, and whether C2A2 itself qualifies.
+5. `synthesis/levin_wolfram_bridge.md` — accountability for "ownerless AI" (Wolfram) = homeostatic alignment of autonomous cellular agents (Levin); same problem, different substrate. Anchor: PROP-2026-05-23-002 (flagged as a NEW cross-node). Open Q: is there a computational analog of Levin's shared low-dimensional goal-state (a "Vmem for ownerless AI")? **Provisional** — source PRS is Speculative pending transcript.
+6. `synthesis/mcgilchrist_stump_bridge.md` — the transcendentals as real-in-being (Stump/Aquinas) but disclosed-through-right-hemisphere-attention (McGilchrist). Anchor: PROP-2026-05-20-002. Open Q: if access to the Good is attentionally gated and unevenly distributed, can the transcendentals function as common ground for inter-tradition dialogue?
+
+**Extended (appended dated sections, append-only):**
+7. `synthesis/wright_rohr_bridge.md` — added the **exile/restoration** convergence (PROP-2026-05-24-003 exegetical + PROP-2026-05-24-004 contemplative), a third distinct claim alongside the existing pneumatology and suffering claims. Open Q ties exile-end to unity-in-distinction (cross-refs the new stump_wright note).
+8. `synthesis/kastrup_mcgilchrist_bridge.md` — added the **metaphor/imagination-as-access** theme (PROP-2026-05-20-003; Harpur's cockpit-metaphor critique). Surfaces a depth-vs-instrument tension that may fall on the interface picture as such (routed to Hoffman).
+
+## Anything unusual / worth Tom's attention
+
+1. **Orphan count is still climbing (766 → 1104 → 1409) and sewing alone cannot reverse it.** The metric is dominated by content the Sewing Agent does not route: a quick scan shows `architecture/lit_search_results/` (the `*_for.md` / `*_against.md` corpus) plus `architecture/` changelog/queue files account for the bulk of the orphan tier. The 2026-05-18 report already recommended **excluding `architecture/lit_search_results/` from the connectivity metric** (analogous to the existing `architecture/metrics/` and `review/archive/` exclusions). That recommendation is renewed and is now the single highest-leverage change for making the orphan number track real routing progress. Tom-decision item.
+
+2. **The deeper problem: agentic calls do not move the orphan needle by themselves.** All 9 processed proposals are still 0-backlink orphans after processing, because the calls await downstream thinker-agent action. The 2026-05-18 calls appear largely unprocessed too (`traditions/levin/prs_triplets.md` is still orphan despite a self-backlink call written 6 days ago; the 14 tradition `wiki.md` files remain almost entirely outside the `[[wikilink]]` graph). **Recommendation, renewed from 2026-05-10/05-18:** a one-time mechanical backlink-injection pass — from each tradition's `wiki.md` to its own `prs_triplets.md`, and from each tradition `wiki.md` to the bridge notes that name it — would do more for connectivity in one pass than several sewing runs of routing signals. This is mechanical enough to script and does not need the model. Tom-decision item.
+
+3. **The exile convergence is the cleanest same-run paradigm-bridge this batch.** PROP-2026-05-24-003 (Wright, exegetical) and PROP-2026-05-24-004 (Rohr, contemplative) land on the identical exile/restoration motif in the same week — and it dovetails with the corporate-substance bridge (end-of-exile = reconciliation-without-erasure, not dissolution). The Wright + Rohr exile/restoration + Stump corporate-substance cluster is, together, a direct articulation of the Summa 2026 central theme ("loving unity as telos") and is worth promoting as a unit rather than as three separate proposals.
+
+4. **A recurring "separateness: wound or feature?" question now spans three bridge notes** (kastrup_rohr, wright_rohr exile, and the daimon/individuation thread). Rohr's contemplative telos wants separateness healed; Kastrup's dissociative metaphysics and Wright's reconciliation-without-erasure want it preserved-and-redeemed. This is a genuine unresolved tension at the heart of the network's central theme and may deserve a dedicated `synthesis/individuation_vs_reunion.md` master note next run.
+
+5. **Two C2A2-master calls were filed this run** (on the Wolfram "ownerless AI" and Carroll "agency-without-consciousness" proposals). Both bear directly and unusually on the project's own architecture — Wolfram on *where to locate accountability for autonomous agents* (the C2A2 tradition-agents are the literal case), and List/Carroll on *whether AI agents can count as agents without solving machine consciousness*. These are governance/architecture inputs, not just thinker content; worth reading directly rather than leaving in the agent queue.
+
+6. **`synthesis/levin_wolfram_bridge.md` is provisional.** Its source proposal's load-bearing PRS candidate is Speculative pending verification of the May 13 livestream transcript. Treat the bridge as a flagged hypothesis until the transcript is ingested.
+
+## Files modified or created this run
+
+- `architecture/metrics/connectivity_log.csv` — one row appended.
+- 9 proposal pages — `## Agentic Calls` section appended to each (39 calls; listed above).
+- `synthesis/` — 6 new bridge notes created, 2 existing bridge notes extended (append-only).
+- `architecture/sewing_agent_log.md` — this report appended.
+
+No existing content was deleted or overwritten. `architecture/metrics/` and `review/archive/` were excluded from processing per spec.
+
+---
+
+*Next scheduled run: weekly (per `c2a2-sewing-agent-weekly` task).*

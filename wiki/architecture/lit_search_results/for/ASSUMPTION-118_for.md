@@ -27,3 +27,31 @@ SEARCH-FOR-ASSUMPTION-118:
   Caveats: (a) PRESUMPTION-145 (this cycle, paired, MEDIUM-HIGH) — token-delegation is one redesign path; file-based-handoff and mechanism-discard are alternatives that ASSUMPTION-118 frames as parenthetical. The "warranted" framing presumes redesign rather than replacement; (b) Implementation cost not estimated — token-based redesign has authentication-flow integration cost that may be substantial relative to the chat-scrape value-delivered, raising mechanism-discard as a serious option; (c) "6 consecutive failed days" operational signal is consistent with prior PRESUMPTION-125 cluster (4th-recurrence per ASSUMPTION-109 MONITOR-111); substrate-decomposition gate (PRESUMPTION-134 REVISE) still load-bearing — if substrate is shared, the redesign may not be the local problem; (d) MEDIUM-HIGH priority, joint with PRESUMPTION-145 + ASSUMPTION-109 + PRESUMPTION-125; reads jointly.
 
   Recommendation: SUPPORTED — PREMISE-015 commits the system to this redesign; canonical authentication literature endorses the path; the load-bearing risks are the redesign-vs-replacement decision (PRESUMPTION-145) and the unresolved substrate-decomposition (PRESUMPTION-134), not the warrant itself
+
+
+---
+
+SEARCH-FOR-ASSUMPTION-118 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-25
+  Original item: ASSUMPTION-118
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a->15a,15b->15c->15d->15a,15b->15c] (cycle 1)
+    Original item: ASSUMPTION-118
+    Item type: ASSUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-24): re-triggered on weekly cadence (MONITOR-122 cycle 1)
+      15a (cycle 1, 2026-05-25): re-searched for supporting literature
+    Current status: refresh; no new supporting literature surfaced this cycle.
+
+  Run context: On-cadence c2a2-lit-search-pipeline processing of the 2026-05-24 15d weekly RE-TRIGGER cohort (15d fired on schedule 2026-05-24; normal hand-off into the daily pipeline, not an exceptional drain).
+
+  New evidence weighed: No new supporting literature surfaced since the last cycle. Prior cycles' findings stand; item remains in its established disposition until new operational evidence (from C2A2's own runs) or new external literature alters the picture.
+  Sources (new / refreshed): No new sources this cycle.
+  Strength of support: Unchanged from prior cycle.
+  Summary: Cycle-1 refresh confirms the prior cycle's finding; the supporting literature base has not materially shifted. Recommendation carries forward unchanged.
+  Caveats: Automated weekly refresh is bounded by the LLM's capacity to surface genuinely new external evidence; a human-driven scan or operational evidence from C2A2's own runs is the more sensitive signal for status change.
+  Recommendation: refreshed; carry forward prior recommendation

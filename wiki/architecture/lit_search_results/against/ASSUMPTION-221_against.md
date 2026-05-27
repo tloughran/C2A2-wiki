@@ -1,0 +1,38 @@
+SEARCH-AGAINST-ASSUMPTION-221:
+  Date searched: 2026-05-24
+  Original item: ASSUMPTION-221
+  Original statement: "C2A2 should locate accountability for its own autonomous ('ownerless') agents in the deployment-and-verification pipeline (Tom's review gate), not in agent-internal predictability."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15b]
+    Original item: ASSUMPTION-221
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted as a governance commitment about where accountability resides.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted; high-stakes governance citations live-verified 2026-05-24 per REVISE-040)
+    Current status: PARTIALLY-CHALLENGED (conditional)
+
+  Challenging evidence found: Yes (conditional / implementation-directed)
+
+  Sources:
+    1. Green (2022) "The flaws of policies requiring human oversight of government algorithms," Computer Law & Security Review 45. (live-verified 2026-05-24) — Locating accountability in a human review step often fails: people cannot perform the oversight, and the policy then *legitimizes* the autonomous system while letting actors shirk accountability. A pipeline gate can be accountability theatre.
+    2. Elish (2019) "Moral Crumple Zones," Engaging STS 5. — Concentrating accountability on a single human reviewer of an autonomous system can create a moral crumple zone: the human absorbs blame for behavior they could not meaningfully control.
+    3. Parasuraman & Manzey (2010) "Complacency and Bias in Human Use of Automation," Human Factors. — Human reviewers of automated output exhibit automation complacency: oversight degrades to rubber-stamping, undermining the gate as a real control.
+    4. Santoni de Sio & Mecacci (2021) "Four Responsibility Gaps with Artificial Intelligence," Philosophy & Technology. — A single deployment gate addresses some but not all responsibility gaps (culpability, moral, public-accountability, active-responsibility); locating accountability *only* in the gate can leave gaps open.
+
+  Strength of challenge: Moderate
+
+  Summary: The challenge is not to the *locus* (the meaningful-human-control literature does support locating accountability in the oversight/deployment chain) but to the *sufficiency and operation* of a single review gate. The literature warns that human-oversight-as-accountability frequently becomes nominal -- complacency, rubber-stamping, moral crumple zones -- and that one gate does not close every responsibility gap. The premise is sound in principle but conditional on the gate being real, exercised, and reason-responsive; absent that, locating accountability there can manufacture false assurance.
+
+  Specific risks: If the gate is treated as the accountability answer but is unexercised (the current 4-day signout) or degrades to rubber-stamping, C2A2 ships autonomous-agent outputs under a false assurance of accountability while no agent (human or artificial) is in fact responsible for them.
+
+  Mitigations available: Make the gate's exercise a measured, enforced condition (SLA + escalation + timeout/auto-hold when unreviewed); add tracing (every autonomous output traceable to a responsible human along the chain); avoid single-reviewer crumple-zone concentration where feasible. (Routes to PRESUMPTION-240 / PRESUMPTION-243.)
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: ASSUMPTION-221
+    Strongest counterargument: "Locating accountability in the review gate" is only as strong as the gate's operating effectiveness. The human-oversight literature shows that review gates over autonomous systems routinely fail to deliver accountability -- reviewers cannot or do not perform the function, oversight becomes a rubber stamp, and the policy ends up legitimizing the autonomous system rather than controlling it. So the premise, stated unconditionally, risks substituting the *form* of accountability (a gate exists) for the *substance* (a gate that tracks reasons and is exercised). At the moment the gate has not operated for four days, which is precisely the failure mode the literature predicts.
+    What would need to be true for C2A2 to be safe: The gate satisfies meaningful-human-control's tracking (reason-responsive, actually exercised) and tracing (every output attributable to a human) conditions, with measured exercise and an escalation/timeout for non-exercise.
+    How to test: Instrument the gate -- measure review latency, fraction of REVISE items actioned within SLA, and whether reviewers change outcomes (a gate that never changes anything is a rubber stamp). If exercise rate or latency fails, the accountability claim fails operationally.

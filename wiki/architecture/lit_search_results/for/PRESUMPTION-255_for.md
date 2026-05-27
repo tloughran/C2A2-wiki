@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-255:
+  Date searched: 2026-05-27
+  Original item: PRESUMPTION-255
+  Original statement: The per-tradition time model ("hour per top-3, half-hour per long-tail"; ASSUMPTION-233/234) presumes per-tradition processing time scales linearly with file count and is roughly uniform across traditions, but the 12 traditions span very different theoretical complexity.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-255
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced — uniformity presumption in time-budgeting.
+      15a: Searched for supporting literature on file-count as adequate first-order proxy for ingest time.
+    Current status: PARTIALLY-SUPPORTED (Moderate)
+
+  Sources:
+    1. COCOMO / Boehm (1981) software-effort estimation — initial first-order estimates by size (LOC or files) are validated as starting points before complexity factors are applied.
+    2. Function-Point Analysis (Albrecht 1979) — file/object count is a recognized first-order effort proxy in domain-uniform contexts.
+    3. Lean software-effort estimation — within a single workflow, count-based estimates are reasonably accurate when type-variance is bounded.
+    4. C2A2-internal: prior tradition-ingest sessions have shown roughly linear file-count scaling within a single tradition.
+
+  Strength of support: Moderate
+
+  Summary: File-count as first-order time proxy is a documented practice (COCOMO basic, function-point analysis) — supportive at the first-order level. The presumption's defense is that the uniformity is a *first-order approximation* good enough for budgeting; the literature supports this.
+
+  Caveats: (a) Support is for first-order, NOT for predicting overruns; (b) all the estimation literature warns that complexity factors should be applied for accuracy, which is exactly what PRESUMPTION-255 surfaces; (c) the support direction here is "file-count IS a usable first-pass proxy" — not "uniformity holds."
+
+  Recommendation: PARTIALLY-SUPPORTED (Moderate; first-order proxy is supported)

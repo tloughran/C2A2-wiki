@@ -27,3 +27,31 @@ SEARCH-FOR-PRESUMPTION-175:
   Caveats: (a) Cowork-drafted content can still be high-quality; the concern is about provenance, not quality; (b) "Subject to amendment" is honest disclosure even if not amendment; (c) Cluster: PRESUMPTION-166 (carry-forward), PRESUMPTION-176 (paired today), PRESUMPTION-182 (Tom-as-validator pattern).
 
   Recommendation: SUPPORTED (Strong) — writing-pass-as-claim-making concern is well-grounded; selective canonization gate is load-bearing
+
+
+---
+
+SEARCH-FOR-PRESUMPTION-175 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-25
+  Original item: PRESUMPTION-175
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b->15a,15b->15c->15d->15a,15b->15c] (cycle 1)
+    Original item: PRESUMPTION-175
+    Item type: PRESUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-24): re-triggered on weekly cadence (MONITOR-165 cycle 1)
+      15a (cycle 1, 2026-05-25): re-searched for supporting literature
+    Current status: refresh; no new supporting literature surfaced this cycle.
+
+  Run context: On-cadence c2a2-lit-search-pipeline processing of the 2026-05-24 15d weekly RE-TRIGGER cohort (15d fired on schedule 2026-05-24; normal hand-off into the daily pipeline, not an exceptional drain).
+
+  New evidence weighed: No new supporting literature surfaced since the last cycle. Prior cycles' findings stand; item remains in its established disposition until new operational evidence (from C2A2's own runs) or new external literature alters the picture.
+  Sources (new / refreshed): No new sources this cycle.
+  Strength of support: Unchanged from prior cycle.
+  Summary: Cycle-1 refresh confirms the prior cycle's finding; the supporting literature base has not materially shifted. Recommendation carries forward unchanged.
+  Caveats: Automated weekly refresh is bounded by the LLM's capacity to surface genuinely new external evidence; a human-driven scan or operational evidence from C2A2's own runs is the more sensitive signal for status change.
+  Recommendation: refreshed; carry forward prior recommendation

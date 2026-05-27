@@ -26,3 +26,31 @@ SEARCH-FOR-PRESUMPTION-154:
   Caveats: (a) For external escalation specifically (phone-as-out-of-band), SMS has a defensible "in-band-failure-isolation" justification that the in-cowork-confirmation alternative does not have; (b) Comparison-cost vs. choice-clarity tradeoff exists; (c) The presumption is correctly framing this as a process gap, not necessarily a wrong-mechanism gap.
 
   Recommendation: SUPPORTED — modality-comparison gap is real; the inference identifies a recognized anti-pattern
+
+
+---
+
+SEARCH-FOR-PRESUMPTION-154 (RE-TRIGGER cycle 1):
+  Date searched: 2026-05-25
+  Original item: PRESUMPTION-154
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b->15a,15b->15c->15d->15a,15b->15c] (cycle 1)
+    Original item: PRESUMPTION-154
+    Item type: PRESUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-24): re-triggered on weekly cadence (MONITOR-135 cycle 1)
+      15a (cycle 1, 2026-05-25): re-searched for supporting literature
+    Current status: refresh; no new supporting literature surfaced this cycle.
+
+  Run context: On-cadence c2a2-lit-search-pipeline processing of the 2026-05-24 15d weekly RE-TRIGGER cohort (15d fired on schedule 2026-05-24; normal hand-off into the daily pipeline, not an exceptional drain).
+
+  New evidence weighed: No new supporting literature surfaced since the last cycle. Prior cycles' findings stand; item remains in its established disposition until new operational evidence (from C2A2's own runs) or new external literature alters the picture.
+  Sources (new / refreshed): No new sources this cycle.
+  Strength of support: Unchanged from prior cycle.
+  Summary: Cycle-1 refresh confirms the prior cycle's finding; the supporting literature base has not materially shifted. Recommendation carries forward unchanged.
+  Caveats: Automated weekly refresh is bounded by the LLM's capacity to surface genuinely new external evidence; a human-driven scan or operational evidence from C2A2's own runs is the more sensitive signal for status change.
+  Recommendation: refreshed; carry forward prior recommendation

@@ -1,0 +1,39 @@
+SEARCH-AGAINST-PRESUMPTION-242:
+  Date searched: 2026-05-24
+  Original item: PRESUMPTION-242
+  Original statement: "Topic-list-derived PRS candidates (ASSUMPTION-220) presume the topic list is a faithful proxy for the talk's actual content beyond what a Medium cap hedges."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15b]
+    Original item: PRESUMPTION-242
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as the designer-unaware twin of ASSUMPTION-220 (the proxy-fidelity assumption).
+      15b: Searched for counter-evidence that titles are reliable stand-ins for content (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: CHALLENGED (Moderate) -- the proxy-fidelity worry is well-founded
+
+  Challenging evidence found: Yes (the evidence supports the presumption's concern)
+
+  Note on polarity: 15b was routed to find counter-evidence that titles are reliable stand-ins. Such counter-evidence *confirms* the presumption (that the proxy is not faithful beyond a Medium hedge).
+
+  Sources:
+    1. Pitkin et al. (1999), JAMA; Boutron et al. (2010), JAMA. — Even authored abstracts diverge from and "spin" the full source; titles/topic lists are thinner and therefore weaker proxies.
+    2. Gentner (1983) structure-mapping (analogical inference). — A label is not its relational structure; mapping from a topic label to a claim-structure (PRS) imports structure the label does not carry.
+    3. Maynez et al. (2020), ACL; Kryscinski et al. (2020) "Evaluating the Factual Consistency of Abstractive Text Summarization" (FactCC). — Generating content from impoverished source is the regime where unsupported/hallucinated content is most frequent; a topic list is maximally impoverished relative to a transcript.
+
+  Strength of challenge: Moderate
+
+  Summary: Titles and topic lists are reliable proxies for *topic*, not for the claim-level content PRS requires. The surrogate-fidelity literature shows systematic divergence even for richer surrogates (abstracts), and the summarization-faithfulness literature shows that generating claims from thin source is exactly where hallucination concentrates. So "faithful proxy beyond what a Medium cap hedges" is challenged specifically at the resolution/significance layer -- the part that distinguishes a PRS from a topic tag.
+
+  Specific risks: Resolution/significance fields of topic-list-derived PRS encode the extractor's inference, not the speaker's actual claim, mislabeled at Medium confidence; if such items are incorporated without transcript verification, the corpus accrues plausible-but-unattested content. The Medium cap is a label, not a correction for systematic proxy bias.
+
+  Mitigations available: Confine topic-list-derived PRS to topic-level fields; treat resolution/significance as UNFILLED-pending-transcript rather than Medium-inferred; make transcript verification a hard precondition for incorporation (couples ASSUMPTION-220 and the verification-gate items PRESUMPTION-240/243).
+
+  Recommendation: CHALLENGED (Moderate)
+
+  STEELMAN:
+    Item: PRESUMPTION-242
+    Strongest counterargument: For well-structured academic talks, the announced segment titles are authored previews of the argument and often do encode the move (e.g., "Why X fails" announces a problem; "A bioelectric resolution" announces a resolution). In that genre the topic list is a better-than-random proxy even for PRS structure, and a Medium cap plus a verification flag is a proportionate hedge. The presumption may over-generalize from impoverished-source summarization to a genre where titles are unusually informative.
+    What would need to be true for C2A2 to be safe: The talk genre reliably encodes argumentative moves in its segment titles, AND resolution/significance fields are either supported by such titles or left unfilled until transcript verification.
+    How to test: On talks with transcripts, measure agreement between title-derived and transcript-derived resolution/significance; stratify by genre (structured academic talk vs. informal). If agreement is high only for structured talks, scope ASSUMPTION-220 to that genre.

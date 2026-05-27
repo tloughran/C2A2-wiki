@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-238:
+  Date searched: 2026-05-23
+  Original item: PRESUMPTION-238
+  Original statement: "Parking the history scrub presumes acceptable residual exposure while parked; stop-tracking presumed sufficient interim mitigation; no trigger set (success-criteria gap)."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15b]
+    Original item: PRESUMPTION-238
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from stop-tracking now + deferring (parking) the git-history scrub with no trigger.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Git internals + GitHub remediation docs: git history is immutable; gitignore/git rm --cached does NOT remove already-committed content. — Stop-tracking leaves the content fully recoverable via history/reflog/old commits.
+    2. Secret/PII remediation best practice (git-filter-repo, BFG Repo-Cleaner; "treat any committed secret as compromised"). — Proper remediation requires history rewrite AND, for secrets, rotation; deferral leaves the exposure live.
+    3. Risk-management (NIST SP 800-30): risk acceptance must be explicit, bounded, and triggered. — "No trigger set" is an unbounded acceptance — a success-criteria gap (Rule 12 / fail-loud).
+
+  Strength of challenge: Strong
+
+  Summary: The challenge is firm and well-established: stop-tracking only prevents future commits; everything already in history remains recoverable, so "stop-tracking = sufficient interim mitigation" is false for anyone who can read the repo or its future public form. Deferring the scrub is defensible only if the repo stays private AND the risk acceptance is explicit, bounded, and trigger-gated — but "no trigger set" means the acceptance is open-ended and the scrub may never happen. This is the most security-consequential item in the batch; for sensitive content (the Hoffman x Levin transcript, narration zips) the standard is to treat parked-and-exposed content as compromised.
+
+  Specific risks: Sensitive/consent-bearing content remains in git history and is exposed the instant the repo is shared/made public, with no trigger forcing remediation first; residual exposure during the parked window is unbounded.
+
+  Mitigations available: Set a hard, explicit trigger ("execute history scrub before ANY repo-publicity / sharing step"); make the risk acceptance explicit and time-boxed; decide now whether to rewrite history (git-filter-repo/BFG) and, for any secrets, rotate; confirm the repo is private until then.
+
+  Recommendation: CHALLENGED (strong)
+
+  STEELMAN:
+    Item: PRESUMPTION-238
+    Strongest counterargument: Git history is immutable, so stop-tracking does not remove already-committed content — it remains recoverable and becomes exposed the moment the repo is shared. Standard secret/PII remediation requires a history rewrite, and standard risk management requires risk acceptance to be explicit and trigger-gated; "park with no trigger" is therefore an unbounded acceptance of a live exposure, exactly the success-criteria gap fail-loud is meant to catch.
+    What would need to be true for C2A2 to be safe: The repo is and stays private until a scrub runs, AND an explicit hard trigger forces the scrub before any sharing/publicity step.
+    How to test: Attempt `git log --all -- <parked path>`; if the content is still retrievable, stop-tracking has not mitigated the exposure and only a history rewrite will.

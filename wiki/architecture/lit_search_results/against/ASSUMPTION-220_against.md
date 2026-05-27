@@ -1,0 +1,37 @@
+SEARCH-AGAINST-ASSUMPTION-220:
+  Date searched: 2026-05-24
+  Original item: ASSUMPTION-220
+  Original statement: "PRS candidates can be validly generated from a talk's announced topic list / runtime metadata when the transcript is unavailable, if confidence is capped at Medium and flagged for transcript verification."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15b]
+    Original item: ASSUMPTION-220
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted as a tradition-intake methodology commitment.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Pitkin, Branagan & Burmeister (1999) "Accuracy of data in abstracts of published research articles," JAMA. — Data in abstracts were inconsistent with or absent from the body in a large fraction of articles; surrogates systematically diverge from full source.
+    2. Boutron et al. (2010) "Reporting and interpretation of randomized controlled trials with statistically nonsignificant results for primary outcomes" (abstract "spin"), JAMA. — Abstracts/summaries routinely overstate or misframe content relative to the full source; a topic list is thinner still.
+    3. Maynez et al. (2020) "On Faithfulness and Factuality in Abstractive Summarization," ACL. — Generating a summary from an impoverished or partial source induces hallucinated/unsupported content; topic-list-only input maximizes this risk.
+
+  Strength of challenge: Moderate
+
+  Summary: A topic list / runtime metadata is a thin surrogate, and the surrogate-vs-full-source literature shows systematic divergence even for authored abstracts -- titles and agendas are thinner and pre-hoc (speakers deviate from announced agendas; auto-generated chapter markers are noisy). Critically, PRS extraction needs the argumentative move (problem -> resolution -> significance), which a topic label names but does not contain, so the generation step is exactly where hallucination risk is highest. A Medium cap labels uncertainty but does not correct systematic proxy bias, and "flagged for verification" only helps if verification actually runs.
+
+  Specific risks: Topic-list-derived PRS enter the corpus mislabeled as resolutions/significance the speaker never asserted; if the verification flag is never actioned (the review gate is currently absent -- PRESUMPTION-240/243), Medium-confidence artifacts ossify into apparent evidence.
+
+  Mitigations available: Restrict metadata-only PRS to topic-identification (not resolution/significance) claims; require the verification flag to be a hard gate before any incorporation; validate proxy fidelity on a labeled sample where both metadata-derived and transcript-derived PRS exist.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+  STEELMAN:
+    Item: ASSUMPTION-220
+    Strongest counterargument: A talk's announced topic list names topics, not claims; PRS is a claim-structure (a resolution to a problem, with significance), so deriving PRS from a topic list infers the very content the source omits. The Medium cap and verification flag are real safeguards only if verification is reliably performed -- and the same pipeline currently has a review gate that has not operated for four days, so the hedge is, in practice, unbacked. Without the verification step, metadata-derived PRS are confident-looking fabrications at Medium tag.
+    What would need to be true for C2A2 to be safe: (a) metadata-only PRS are scoped to topic-level claims and explicitly NOT to resolution/significance; (b) the verification flag is an enforced precondition for incorporation, not advisory; (c) measured proxy fidelity on a labeled sample is acceptably high.
+    How to test: On a sample of talks with transcripts, generate PRS from metadata-only and from transcript; measure agreement on problem/resolution/significance. If resolution/significance agreement is low, the assumption fails for those fields.

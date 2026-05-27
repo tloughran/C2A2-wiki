@@ -1,0 +1,35 @@
+SEARCH-AGAINST-PRESUMPTION-258:
+  Date searched: 2026-05-27
+  Original item: PRESUMPTION-258
+  Original statement: The "approval backlog is cleared" headline presumes approval, by itself, is a real network contribution; today network counts (222/90/35) moved by zero — intake-pipeline state advanced but network state did not. The headline silently re-instantiates the approved-vs-ingested decoupling (PRESUMPTION-252).
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-258
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced.
+      15b: Searched for challenging literature on Goodhart applied to clearance metrics.
+    Current status: CHALLENGED (Moderate — sustains the presumption)
+
+  Sources:
+    1. Goodhart (1975) / Strathern (1997) — when an intake metric becomes the headline, surrogation displaces the true target metric; well-documented across domains.
+    2. Lean / SRE — stage-throughput vs end-to-end metrics: ONE without the other invites surrogation.
+    3. C2A2-internal: PRESUMPTION-252 already established the approved-vs-ingested decoupling; PRESUMPTION-201 Goodhart family in registry.
+
+  Strength of challenge: Moderate (sustains the presumption)
+
+  Summary: The challenge to the presumption is essentially "intake metrics are legitimate" (PRESUMPTION-258's FOR direction). But the presumption-level claim is about headline-framing, which the surrogation literature directly supports. The presumption stands.
+
+  Specific risks: (a) Surrogation: "approval" becomes the success criterion; (b) the next bottleneck (PRS-extraction) gets less attention; (c) recurrence of the same decoupling pattern.
+
+  Mitigations available: (a) Headline both metrics; (b) prominent display of intake-vs-network lag; (c) explicit next-bottleneck framing in daily reports.
+
+  Recommendation: CHALLENGED (Moderate; presumption sustained)
+
+  STEELMAN:
+    Item: PRESUMPTION-258
+    Strongest counterargument (to the presumption): Intake-pipeline metrics ARE legitimate progress indicators; reporting approval clearance is not invalid.
+    What would need to be true for C2A2 to be safe (if relying on headline-framing): Both metrics visible in every headline framing; explicit next-bottleneck call-out.
+    How to test: Audit the daily reports; how many lead with "approval cleared" without "network state advanced"? Frequency quantifies the surrogation risk.

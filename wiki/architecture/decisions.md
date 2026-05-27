@@ -325,3 +325,68 @@ DECISION-042 (candidate — common interaction-behavior cluster across tabs + re
   Summary: The Sociogram's two-panel + dismiss-on-new-click model was ported faithfully to the Connectome so the tabs feel identical (ASSUMPTION-209), with edges rendering the two endpoint narratives uniformly for all edge types under an edge-nature/year header — accepting representative-narrative imprecision for tradition-bridging coils/cross-links (ASSUMPTION-210). Process commitment reaffirmed this session: the biggest UI/layout changes are staged in `prs_3d_review.html`, promoted to live (`prs_3d.html`) only after Tom's visual review, and the git push remains a Tom-side host-shell step.
   Category: UX / Process / PRS connectome
   Status: Candidate — formalization blocked on (a) acknowledgment of PRESUMPTION-226 (representative-narrative substitution may be over-read as idea-precise) and PRESUMPTION-227 (cross-tab uniformity may override 3D-native affordances — cf. the zoom/blank-space dismissal bug); (b) Tom's endorsement; (c) reconciliation with the standing commit-ownership question (OPEN-056) for the host-shell-push reservation. Related assumptions: ASSUMPTION-209, ASSUMPTION-210. Related presumptions: PRESUMPTION-226, PRESUMPTION-227. Related: DECISION-038, OPEN-056, Sociogram interaction model.
+
+DECISION-043 (candidate — ship the connectome 2-panel bundle + execute the deferred push):
+  Date: 2026-05-22 (surfaced by the Review-PRS-triplet-visualization session local_a20a370b)
+  Title: Ship the Narrative (PRS) Connectome 2-panel interaction bundle to live and execute the push that was deferred from 2026-05-20 (catch-up commit `fc79739`)
+  Summary: The connectome interaction bundle (two-panel edge-cluster view, "?" pop-ups, node click-to-toggle, edge-picking via Three.js raycast, brightness + "Year >=" sliders; ASSUMPTION-213) was validated against the release gate (graph data byte-identical to the approved file, `node --check` clean; ASSUMPTION-212), promoted to live (`prs_3d.html`), reviewed by Tom in the explorer, and pushed in commit `fc79739` — which finally carried the Narrative Connectome work deferred from 2026-05-20 to origin. With the bundle shipped, the connectome thread is treated as complete and handed off to the two-summa experiment (ASSUMPTION-219).
+  Category: UX / Process / PRS connectome
+  Status: Candidate — formalization blocked on (a) acknowledgment of PRESUMPTION-231 (data+syntax+eyeball promotion may not equal reproduced interaction-behavior verification — re-instantiates PRESUMPTION-230/218); (b) Tom's endorsement (review already given). Related assumptions: ASSUMPTION-212, ASSUMPTION-213, ASSUMPTION-219. Related presumptions: PRESUMPTION-231. Related: DECISION-042, DECISION-038, OPEN-056 (commit-ownership; the 05-20 deferred push is now resolved).
+
+DECISION-044 (candidate — run the two-summa head-to-head as Option #3 in a fresh chat):
+  Date: 2026-05-22 (surfaced by Review-PRS-triplet-visualization local_a20a370b; handoff written to TWO_SUMMA_EXPERIMENT_BRIEF.md)
+  Title: Run the two-summa experiment as Option #3 in a cold-start chat, handed off via a self-contained brief — Thomist summa vs. Conscious-Realist-Monist summa across the Aquinas<->Levin teleology seam
+  Summary: With the connectome shipped, Tom chose Option #3 for the two-summa head-to-head and asked to run it in a fresh chat. A self-contained handoff (`TWO_SUMMA_EXPERIMENT_BRIEF.md`, project root) was written carrying project context, all paths, the PRS+tradition schema, the #3 design, the Aquinas<->Levin teleology seam with specific Summa source days, success criteria, and guardrails (Obsidian-clobber, no-blind-push, publish decisions). Premise: a Conscious-Realist-Monist summa can be built as a genuine rival and compared head-to-head (ASSUMPTION-215, 216); the experiment is portable via a single brief (ASSUMPTION-214).
+  Category: Methodology / Experiment design / Traditions
+  Status: Candidate — formalization blocked on (a) OPEN-062 (what exactly counts as "Summa 2" and what form the head-to-head output takes — the brief's first open item); (b) acknowledgment of PRESUMPTION-233 (commensurability of rival summae), PRESUMPTION-234 (Summa-2 exists/assemblable), PRESUMPTION-232 (cold-start handoff loses no load-bearing tacit context), PRESUMPTION-235 (focal-seam chosen without weighing alternatives); (c) Tom launching the chat. Related assumptions: ASSUMPTION-214, ASSUMPTION-215, ASSUMPTION-216. Related presumptions: PRESUMPTION-232, PRESUMPTION-233, PRESUMPTION-234, PRESUMPTION-235. Related: ASSUMPTION-207 (master-science telos), DECISION-038.
+
+DECISION-045 (candidate — embed faculty research summaries in sociogram node data):
+  Date: 2026-05-22 (surfaced by the Assess-wiki-visualization-build-requirements session local_26b6c078; separate KSGA-sociogram repo)
+  Title: Embed the 307 "Principal research areas" faculty summaries directly in the KSGA sociogram's node data so node side-panels are self-contained
+  Summary: The KSGA sociogram was regenerated against the current vault (500 nodes / 911 links; 475 wikilink + 436 affiliation; 93 gold-ring central+institute faculty), and the 307 faculty research summaries were embedded directly in the graph data and now render in the node side-panel (ASSUMPTION-217). `index.html` grew 1.3 -> 1.9 MB; `node --check` SYNTAX OK; only `index.html` changed (the explorer iframes it). This is a separate repo from the C2A2 wiki.
+  Category: Architecture / Data model / Sociogram (separate repo)
+  Status: Candidate — formalization blocked on (a) acknowledgment of PRESUMPTION-236 (inline-embed self-containment benefit outweighs page-weight/scaling cost as the vault grows); (b) Tom-side close-out: the sandbox `git status` left a stale `.git/index.lock` — commit/push needs `rm -f .git/index.lock` first (push not yet at origin). Related assumptions: ASSUMPTION-217. Related presumptions: PRESUMPTION-236, PRESUMPTION-229 (scaling). Related: KSGA-sociogram repo, explorer iframe.
+
+DECISION-046 (candidate — per-artifact repo publish/untrack calls + root .gitignore):
+  Date: 2026-05-22 (surfaced by Review-PRS-triplet-visualization local_a20a370b; repo-hygiene pass)
+  Title: Make explicit per-artifact publish/untrack calls and add a root `.gitignore` — eulogy IN, Archbishop report OUT, Habash transcripts IN, Hoffman x Levin raw transcript stop-tracked
+  Summary: A repo-hygiene pass in the connectome session added a root `.gitignore` and made deliberate publish decisions per artifact (eulogy in, Archbishop report out, Habash transcripts in, Hoffman x Levin raw transcript stop-tracked); ASSUMPTION-218. The decisions are individually explicit; the governing criterion of "publishable vs. private" is tacit (PRESUMPTION-237).
+  Category: Process / Repo governance
+  Status: Candidate — formalization blocked on (a) acknowledgment of PRESUMPTION-237 (an unstated, stable publishability criterion is being applied); (b) Tom's endorsement. Related assumptions: ASSUMPTION-218. Related presumptions: PRESUMPTION-237. Related: DECISION-047 (parked history scrub of the stop-tracked transcript).
+
+DECISION-047 (candidate — park, do not execute, the git-history scrub):
+  Date: 2026-05-22 (surfaced by Review-PRS-triplet-visualization local_a20a370b)
+  Title: Park (do not run inline) the git-history scrub of the Hoffman x Levin raw transcript plus four old narration zips — scope it, do not execute it this session
+  Summary: A git-history scrub of the now-stop-tracked Hoffman x Levin transcript and four old narration zips was scoped and parked rather than executed. Stop-tracking removes the file going forward; the content remains in committed history until a scrub runs (PRESUMPTION-238 — the parked residual exposure is presumed acceptable in the interim, with no stated trigger for when "parked" becomes unacceptable).
+  Category: Process / Repo governance / Risk
+  Status: Candidate — formalization blocked on (a) OPEN-064 (execute or leave parked the history scrub); (b) acknowledgment of PRESUMPTION-238 (acceptable residual exposure while parked; success-criteria gap). Related assumptions: ASSUMPTION-218. Related presumptions: PRESUMPTION-238. Related: DECISION-046.
+
+
+---
+
+## 2026-05-23 status update (Agent 14a -- automated-pipeline day; no new numbered DECISIONs)
+
+No interactive Tom session occurred 2026-05-23; no new DECISION candidates were generated. Today's lit-pipeline dispositions bear on two existing candidates:
+
+- DECISION-044 (run the two-summa head-to-head) -- now GATED by today's HIGH-urgency lit flags REVISE-047 (ASSUMPTION-215) and REVISE-048 (PRESUMPTION-233), co-anchoring SYSTEMIC-RISK-FLAG H, both AWAITING-REVIEW. Do not launch until the comparability/refereeing objections are resolved: have an independent agent build/steelman Summa-2; pre-register losable criteria; use MacIntyre's tradition-internal epistemological-crisis test rather than a neutral scorecard. Also coupled to MONITOR-221/224/225.
+- DECISION-047 (park the git-history scrub) -- now CHALLENGED by REVISE-049 (PRESUMPTION-238, MED, AWAITING-REVIEW): stop-tracking does not remove already-committed content. Recommended conversion to a hard pre-publicity trigger (filter-repo/BFG before any public step; repo stays private until then). See OPEN-064.
+
+All three REVISEs are AWAITING-REVIEW; per PRESUMPTION-240 / OPEN-065 the review gate has been unavailable four days, so they are currently unactioned.
+
+---
+
+## 2026-05-24 status update (Agent 14a -- automated-pipeline day; no new numbered DECISIONs)
+
+No interactive Tom session occurred 2026-05-24 (claude.ai signed out a 5th consecutive day; both daily syncs failed). No new numbered DECISION was generated. Today's automated activity (lit pipeline 15a/15b/15c; periodic monitor 15d; weekly sewing agent; 5 new proposals) moves existing candidates and surfaces decision-candidates that are not yet numbered:
+
+- DECISION-044 (run the two-summa head-to-head) -- remains GATED by REVISE-047/048 (SYSTEMIC-RISK-FLAG H), still AWAITING-REVIEW. Unchanged this run.
+- DECISION-047 (park the git-history scrub) -- remains CHALLENGED by REVISE-049, still AWAITING-REVIEW. Unchanged this run.
+- NEW gating cluster: SYSTEMIC-RISK-FLAG I (REVISE-050 HIGH on PRESUMPTION-240; REVISE-051 MED-HIGH on PRESUMPTION-243) now gates the self-correction loop itself and the autonomous-agent accountability story. ASSUMPTION-221 (MONITOR-230) is INCORPORATE-pending-precondition: strong, live-verified literature support for locating accountability in the oversight/deployment layer, blocked from promotion to validated_premises.md until REVISE-050/051 resolve. REVISE-050 is partly self-fulfilling: deciding it *is* building the escalation that prevents the next silent stall. This flag answers OPEN-065.
+
+Decision-candidates surfaced today (agent-recommended; awaiting Tom; not yet numbered):
+- (A) Connectivity-metric definition: exclude `architecture/lit_search_results/` from the orphan/connectivity metric (ASSUMPTION-224; renewed sewing recommendation from 2026-05-18). Cheap, scriptable; see also PRESUMPTION-246 on the deeper metric-validity question.
+- (B) One-time mechanical backlink-injection pass: from each tradition `wiki.md` to its own `prs_triplets.md` and to the bridge notes naming it (renewed from 2026-05-10/05-18). Scriptable, no model needed; would move connectivity more than several sewing runs.
+- (C) Unit-promotion of the Wright + Rohr exile/restoration + Stump corporate-substance cluster as one paradigm-bridge (ASSUMPTION-222; sewing recommendation). Caveat per PRESUMPTION-244: confirm the convergence is tradition-level, not a pipeline/batch artifact, before hardening it as the "central theme."
+- (D) Three STALE-MONITOR escalations (ASSUMPTION-035/037, PRESUMPTION-037): run the un-run empirical/paired test, or retire the premise -- a Tom decision, not a literature question (ASSUMPTION-223). Caveat per PRESUMPTION-245: these escalations terminate at the same human gate currently blocking the REVISE backlog.
+
+All REVISE flags (047/048/049/050/051) are AWAITING-REVIEW; per PRESUMPTION-240/243 (now CHALLENGED/SUPPORTED) and OPEN-065/066 the review gate has been unavailable five days, so all are currently unactioned. A ~10-second re-login clears the immediate backlog.

@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-228:
+  Date searched: 2026-05-27
+  Original item: ASSUMPTION-228
+  Original statement: The C2A2 community-model GPRS articulation is structurally homologous to Levin & Lyons' "shared model of relative scarcities" as cognitive glue; the price-system-as-template thesis supplies an external, peer-reviewed mechanism for how a C2A2 community coordinates and accelerates.
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-228
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-05-25 EOD self-awareness daily.
+      15a: Searched for supporting literature on price-system-as-information, coordination-under-scarcity, and FEP precision-weighting.
+    Current status: PARTIALLY-SUPPORTED (Moderate)
+
+  Sources:
+    1. Hayek (1945) "The Use of Knowledge in Society" — the price system as decentralized information aggregation; the foundational claim that markets coordinate by surfacing distributed scarcity signals.
+    2. Ostrom (1990) "Governing the Commons" — small-N collectives demonstrably coordinate around shared scarcity models without full price systems, supporting analogous mechanism transfer.
+    3. Friston (2010) "The free-energy principle" — precision-weighting in FEP is mathematically analogous to scarcity-as-information allocation; same underlying coordination signal across substrates.
+    4. Levin & Lyons (2026) — the cited proposal itself: cognitive glues as shared models of relative scarcities, with explicit framing as substrate-permissive.
+    5. Smith & Foley (2008) "Classical thermodynamics and economic general equilibrium theory" — formal homologies between thermodynamic, biological, and economic resource-allocation systems support cross-domain transfer.
+
+  Strength of support: Moderate
+
+  Summary: Hayek/Ostrom/Friston/Levin&Lyons constitute a coherent multi-disciplinary basis for the price-system-as-information thesis being substrate-portable in principle. The structural homology claim has independent support from formal economics + FEP + commons-coordination literature. Transfer to C2A2 is plausible at target-state.
+
+  Caveats: (a) Support is at PRINCIPLE level; the homology may apply only at target-state when C2A2 is a multi-agent peer collective, not at present-state (one human + agents, top-down content flow) — this is the exact concern of PRESUMPTION-251; (b) Hayek and Ostrom describe mature systems, not bootstrap dynamics; (c) minimum-N conditions for emergent price-like signaling are not well characterized in the literature.
+
+  Recommendation: PARTIALLY-SUPPORTED (Moderate; in-principle support with scope condition)

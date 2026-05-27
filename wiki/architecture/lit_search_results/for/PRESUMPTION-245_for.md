@@ -1,0 +1,30 @@
+SEARCH-FOR-PRESUMPTION-245:
+
+  Date searched: 2026-05-25
+  Original item: PRESUMPTION-245
+  Original statement: "The 15d stale-escalation rule (ASSUMPTION-223) presumes an available human endpoint, but the same review-gate outage stalling the REVISE backlog (PRESUMPTION-240/REVISE-050) also terminates these escalations -- converting a literature-stall into a human-stall."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a]
+    Original item: PRESUMPTION-245
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: original inference of unstated presumption
+      15a: Searched for supporting literature (cycle 0)
+    Current status: SEARCHED
+
+  Supporting evidence found: Yes (the vulnerability is strongly supported)
+
+  Sources:
+    1. OnPage (2024), "The Silent Failure: When Monitoring Doesn't Wake the Right People." — Single-point-of-failure alerting: when the only recipient is unavailable, the alert is effectively lost; escalation helps only if a *reachable* next tier exists.
+    2. incident.io (2025) and Rootly (2025) on alert fatigue and escalation policy. — Escalating into a saturated or absent endpoint does not resolve incidents; it relabels them as "escalated" while time-to-resolution diverges.
+    3. Queueing theory (unbounded queue with no server) + Elish, M. (2019), "Moral Crumple Zones." — A queue whose only server is offline grows without bound; routing more classes of work to that one server ("needs-Tom") guarantees convergence on the bottleneck.
+
+  Strength of support: Strong
+
+  Summary: The presumption is strongly grounded: SRE/incident practice and elementary queueing both confirm that an escalation step is only as good as the availability of its target, and that funnelling multiple work-streams (REVISE backlog, STALE escalations, INCORPORATE-pending preconditions) onto one unavailable reviewer converts every one of them into the same stall. With the review gate dark five consecutive days, the STALE-escalation rule (ASSUMPTION-223) does exactly this — turning a literature-stall into a human-stall.
+
+  Caveats: The vulnerability is conditional on the human endpoint being unavailable; with a guaranteed/SLA-backed reviewer the escalation leg works as intended. It is therefore a design-precondition failure, not a logical impossibility.
+
+  Recommendation: SUPPORTED

@@ -1,0 +1,31 @@
+SEARCH-FOR-ASSUMPTION-226:
+  Date searched: 2026-05-27
+  Original item: ASSUMPTION-226
+  Original statement: A daily-walk Chat conversation on a day with no Cowork desktop session should count as an interactive Tom session for daily-shape framing; framing such a day as "no interactive session" is a Rule-12 fail-loud violation.
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-226
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-05-25 EOD self-awareness daily.
+      15a: Searched for supporting literature on channel-equivalence and multi-modality interaction classification.
+    Current status: SUPPORTED (Moderate)
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Olson & Olson (2000) "Distance Matters" — interaction quality across modalities is task-dependent, not modality-dependent; voice/walk channels can carry design-decision content equivalent to desktop channels for many task types.
+    2. Wickens (2008) Multiple Resource Theory — different modalities tap distinct cognitive resources; counting only one modality systematically undercounts cognitive engagement.
+    3. ISO 9241 series (HCI usability standards) — interaction is defined by purposeful exchange, not by hardware surface; the standards explicitly accommodate multi-modality classification.
+    4. Conversation-analysis tradition (Sacks, Schegloff, Jefferson 1974) — talk-in-interaction is the primary unit; transcript-fidelity questions are downstream of whether interaction occurred.
+    5. C2A2-internal: Rule-12 fail-loud preference favors over-counting interactions (including Chat walks) to under-counting.
+
+  Strength of support: Moderate
+
+  Summary: HCI and conversation-analysis literature support counting purposeful exchange as interaction regardless of surface. Multiple-resource theory and ISO standards explicitly support multi-modality classification. The assumption aligns with the dominant view that interaction = purposeful exchange, not = hardware surface.
+
+  Caveats: (a) Support is for "counts as interaction" not for "counts as equivalent" — fidelity caveats are real (PRESUMPTION-249 territory); (b) the cadence-streak counter design decision is downstream and may want a sub-type tag rather than a binary; (c) some methodological traditions (e.g., automated-only logging in distributed systems research) explicitly require machine-captured artifacts to count.
+
+  Recommendation: SUPPORTED (Moderate)

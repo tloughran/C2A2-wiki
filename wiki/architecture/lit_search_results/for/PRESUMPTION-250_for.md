@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-250:
+  Date searched: 2026-05-27
+  Original item: PRESUMPTION-250
+  Original statement: The "lead with the loop-closing finding" rule presumes Tom retains the morning-walk question salient enough to recognize an evening loop-closure as such; with longer gaps or many competing open threads, loop-closing-first becomes loop-claiming-first.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-250
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced — twin to ASSUMPTION-227; attention-salience precondition.
+      15a: Searched for supporting literature on closing-open-loops as well-supported communicative-design pattern.
+    Current status: SUPPORTED (Moderate)
+
+  Sources:
+    1. Zeigarnik (1927) "On finished and unfinished tasks" — incomplete tasks remain salient in memory longer than completed ones; the Zeigarnik effect supports the underlying premise that open loops have above-baseline salience.
+    2. Clark & Brennan (1991) "Grounding in Communication" — explicit reference to an open thread is the strongest mechanism for re-establishing common ground in resumed conversations.
+    3. Minto (2009) "The Pyramid Principle" — answer-first communication, when the answer maps to an open question, is the dominant best-practice pattern.
+    4. Grice (1975) — Maxim of Relation: a closing of an open loop is by construction maximally relevant.
+
+  Strength of support: Moderate
+
+  Summary: The communicative-design pattern of "close open loops first" has strong literature support; the Zeigarnik effect provides cognitive-psychology grounding that open loops remain salient. The presumption is in the SAME direction as the support (the rule works) — the qualifying clause about "many competing threads" is where support weakens.
+
+  Caveats: (a) Zeigarnik effect attenuates over time and under load; (b) with many competing threads, salience priority becomes ambiguous; (c) the support is for the *general principle*, not for an unbounded application.
+
+  Recommendation: SUPPORTED (Moderate; pattern is well-supported with degradation conditions noted)

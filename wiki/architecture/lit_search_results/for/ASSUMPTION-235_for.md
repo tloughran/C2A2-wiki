@@ -1,0 +1,28 @@
+SEARCH-FOR-ASSUMPTION-235:
+  Date searched: 2026-05-27
+  Original item: ASSUMPTION-235
+  Original statement: The underlying bottleneck for human-terminating queues is sit-down availability (demonstrated today by a 10-second re-login ending a 6-day signout, followed by an attended session draining two queues in minutes), not queue/policy design.
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-235
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-05-26 attended session — today's central claim.
+      15a: Searched for supporting literature on attention-availability vs process-design in human-in-the-loop systems.
+    Current status: SUPPORTED (Strong; partial — see scope)
+
+  Sources:
+    1. Kleinrock (1975) "Queueing Systems" — Little's Law and intermittent-server analysis: under intermittent server availability, increasing server-up time has greater throughput effect than improving service rate.
+    2. Goldratt (1984) "The Goal" — Theory of Constraints: the binding bottleneck is the binding bottleneck; non-bottleneck optimization yields little. If sit-down is the binding bottleneck, sit-down policy beats queue policy.
+    3. Beyer et al. (2016) SRE — on-call SLO design literature explicitly recognizes "operator presence" as a primary lever; reducing presence-failure modes outperforms queue redesign in many SRE deployments.
+    4. C2A2-internal: 2026-05-26 demonstration — 10-second re-login ended a 6-day stall, draining queues in minutes. Direct empirical support for the assumption.
+
+  Strength of support: Strong
+
+  Summary: Queueing theory (Little's Law / intermittent server) and Theory of Constraints both predict that when human availability is the binding bottleneck, throughput is dominated by availability, not by queue-side policy. The 2026-05-26 attended-session demonstration provides direct empirical support. The assumption matches both theoretical and empirical evidence.
+
+  Caveats: (a) Support is conditional on sit-down ACTUALLY being the binding bottleneck — Theory of Constraints warns that misidentifying the bottleneck wastes effort; (b) the failure mode that the binding constraint changes (e.g., to OAuth/MFA — PRESUMPTION-256) is not yet addressed; (c) "not queue/policy design" is the stronger claim — some queue/policy design is still needed (escalation, SLA — REVISE-050/053).
+
+  Recommendation: SUPPORTED (Strong; with caveats on bottleneck-identification stability)

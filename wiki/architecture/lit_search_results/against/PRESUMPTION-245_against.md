@@ -1,0 +1,36 @@
+SEARCH-AGAINST-PRESUMPTION-245:
+
+  Date searched: 2026-05-25
+  Original item: PRESUMPTION-245
+  Original statement: "The 15d stale-escalation rule (ASSUMPTION-223) presumes an available human endpoint, but the same review-gate outage stalling the REVISE backlog (PRESUMPTION-240/REVISE-050) also terminates these escalations -- converting a literature-stall into a human-stall."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15b]
+    Original item: PRESUMPTION-245
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: original inference of unstated presumption
+      15b: Searched for challenging literature (cycle 0)
+    Current status: SEARCHED
+
+  Challenging evidence found: No
+
+  Sources:
+    1. (Searched.) No literature was found arguing that escalation to an unavailable endpoint resolves a stall; the SRE/escalation literature uniformly assumes a reachable tier.
+
+  Strength of challenge: Weak
+
+  Summary: A disconfirmatory search found essentially no support for the position that routing more work to a single unavailable reviewer clears the backlog. The only partial counter is the trivial one — that *if* the human becomes available, the mechanism works — which concedes the presumption's conditional structure rather than challenging it.
+
+  Specific risks: None to the presumption; the risk is to the *system* if the presumption is ignored (multi-queue convergence on a dark gate; SYSTEMIC-RISK-FLAG I; OPEN-066).
+
+  Mitigations available: A single "needs-Tom" queue with one age/escalation policy and a safe-default tier that can proceed without the human for reversible, low-stakes items; out-of-band escalation that does not itself depend on the gate.
+
+  STEELMAN:
+    Item: PRESUMPTION-245
+    Strongest counterargument (against the presumption): One might argue the escalation still adds value by *recording* that human action is owed, preserving an audit trail even while unactioned. But this only supports honest queue accounting, not stall resolution; it does not rebut the core claim.
+    What would need to be true for C2A2 to be safe: A guaranteed, exercised human endpoint (or an explicit safe-default policy for items that can proceed without one).
+    How to test: Measure oldest-unactioned age across ALL human-terminating routes; if it grows, the convergence-on-one-bottleneck failure is confirmed.
+
+  Recommendation: NO-CHALLENGE-FOUND

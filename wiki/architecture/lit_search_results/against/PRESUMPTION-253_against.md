@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-253:
+  Date searched: 2026-05-27
+  Original item: PRESUMPTION-253
+  Original statement: Tom's morning-walk binary framing of the backlog question — "lagging metric vs real consumption problem" — presumes the two categories are exhaustive, but today's flag identifies a third (a pipeline-reconciliation date-window logic error nested inside a real consumption gap).
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-253
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced.
+      15b: Searched for challenging literature on premature closure / either-or fallacy.
+    Current status: CHALLENGED (Moderate — challenge supports the presumption)
+
+  Sources:
+    1. Klein (1999) "Sources of Power" — premature closure is a documented decision-making failure mode; sticking to binary framing past triage stage is the documented anti-pattern.
+    2. Beach (1990) "Image Theory" — image-fit decision-making warns against treating initial framings as exhaustive.
+    3. Mitroff & Linstone (1993) — "Type III error" (solving the wrong problem) often arises from premature binary framing.
+    4. Tversky & Kahneman (1981) framing effects — initial framings shape downstream search; binary frames often suppress third options.
+    5. C2A2-internal: PRESUMPTION-259 surfaces the recurrence of this exact pattern in the 2026-05-26 batch.
+
+  Strength of challenge: Moderate (this AGAINST direction confirms the presumption)
+
+  Summary: The premature-closure / either-or-fallacy literature directly supports the presumption's core claim: binary framings often suppress legitimate third categories. The 2026-05-26 surfacing of a third category (date-window logic error) is direct empirical confirmation. The presumption stands.
+
+  Specific risks: (a) The pattern recurs (PRESUMPTION-259 immediate evidence); (b) binary framing shapes remedy choice, so the remedy may target the wrong cause; (c) repeated binary framings without correction signal a stable cognitive habit.
+
+  Mitigations available: (a) Explicit "neither / both / third option" prompt in diagnosis; (b) require a structured triage step before binary framing; (c) post-incident review of binary framings to catch missed third options.
+
+  Recommendation: CHALLENGED (Moderate — presumption sustained)
+
+  STEELMAN:
+    Item: PRESUMPTION-253
+    Strongest counterargument (to the presumption): Binary framing is a legitimate first pass and the third category emerged through normal triage — the pattern WORKED. The presumption may over-pathologize a healthy cognitive shortcut.
+    What would need to be true for C2A2 to be safe (if relying on binary-first framing): A reliable second-pass triage that catches third options; the 2026-05-26 second-pass DID catch it, which is one data point in favor.
+    How to test: Track binary-frame incidents and whether a third option emerged; if third-option-rate is high (>20%), the binary framing is missing real distinctions.

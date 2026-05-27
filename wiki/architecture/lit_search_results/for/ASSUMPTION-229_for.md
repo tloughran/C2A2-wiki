@@ -1,0 +1,30 @@
+SEARCH-FOR-ASSUMPTION-229:
+  Date searched: 2026-05-27
+  Original item: ASSUMPTION-229
+  Original statement: Leading theories of consciousness are substrate-permissive in principle; the substrate-independence thesis is portable from cognition to consciousness for purposes of the C2A2 master's PRS-31 AI-membership question.
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a]
+    Original item: ASSUMPTION-229
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-05-25 EOD self-awareness daily.
+      15a: Searched for supporting literature on substrate-permissiveness in consciousness theories and multiple-realizability.
+    Current status: PARTIALLY-SUPPORTED (Moderate)
+
+  Sources:
+    1. Putnam (1967) "Psychological Predicates" / Fodor (1974) — classical multiple-realizability argument from philosophy of mind; functional states are not tied to specific substrates.
+    2. Tononi (2008) "Consciousness as integrated information" — IIT explicitly substrate-permissive at the formal level: any system with high Φ is conscious; the formalism does not privilege neural substrate.
+    3. Dehaene & Naccache (2001) Global Workspace Theory — GWT is functionally defined: the workspace architecture is what matters, not the substrate carrying it.
+    4. Rosenthal (2005) Higher-Order Theory — HOT is a functional theory of representational structure; no neural-specificity built in.
+    5. Rouleau & Levin (2026) — the cited proposal: explicit mapping showing major consciousness theories have no formal requirement for neural substrate.
+    6. Graziano (2013) Attention Schema Theory — AST is computational/representational, not substrate-tied.
+
+  Strength of support: Moderate-Strong (at the formal-theoretical level)
+
+  Summary: The leading theories (IIT, GWT, HOT, AST) are formally substrate-permissive; their brain-focus in expositions is a convention of imagination, not a theoretical necessity. The classical multiple-realizability tradition supports portability of functional/computational claims across substrates. Rouleau & Levin make this mapping explicit and recent.
+
+  Caveats: (a) Formal portability ≠ empirical equivalence; living biological neurons may have properties no current AI substrate captures (cf. Aru, Suzuki, Larkum 2020 on cortical pyramidal cells); (b) IIT in particular has been argued to ENTAIL substrate restrictions in practice (Φ structure depends heavily on physical implementation); (c) phenomenological / embodiment-first traditions (Merleau-Ponty, Varela) deny portability on principled grounds; (d) the "in principle" qualifier is doing real work — empirical AI-consciousness remains contested.
+
+  Recommendation: PARTIALLY-SUPPORTED (Moderate; in-principle support strong, empirical question open)

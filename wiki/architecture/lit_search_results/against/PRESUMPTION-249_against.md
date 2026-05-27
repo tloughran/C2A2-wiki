@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-249:
+  Date searched: 2026-05-27
+  Original item: PRESUMPTION-249
+  Original statement: Counting a daily-walk Chat conversation as "interactive" in the same register as a Cowork desktop session presumes the two surfaces produce comparable architectural-history content, but Chat walks are paraphrased into text, artifact-light, and harder to capture mechanically.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-249
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced.
+      15b: Searched for challenging literature on transcript-fidelity gaps and paraphrase drift.
+    Current status: CHALLENGED (Moderate)
+
+  Sources:
+    1. Pitkin et al. (1999) "Accuracy of Data in Abstracts of Published Research Articles" — paraphrased surrogates systematically diverge from full source; documented divergence rates.
+    2. Maynez et al. (2020) "On Faithfulness and Factuality in Abstractive Summarization" — abstractive summary introduces unfaithful content systematically; paraphrase loss is largest exactly at framing/wording level.
+    3. Boutron et al. (2010) — abstract-vs-source divergence in clinical literature; the same dynamic applies to paraphrased dialog capture.
+    4. Conversation Analysis tradition (Sacks/Schegloff/Jefferson) — verbatim transcript is requisite for any framing-level claim; paraphrase loses exactly the structural detail that distinguishes one interaction frame from another.
+    5. C2A2-internal: PRESUMPTION-241 / PRESUMPTION-247 — same family of fidelity-vs-source concerns; introspection-illusion issues amplified by paraphrase.
+
+  Strength of challenge: Moderate
+
+  Summary: The transcript-fidelity literature converges: paraphrased dialog capture systematically loses framing-level detail. For thematic claims this is acceptable (PRESUMPTION-249's FOR direction has some support). For ASSUMPTION/PRESUMPTION extraction (which depends on exact framing) the loss is at the worst place. The presumption is well-supported as a challenge to ASSUMPTION-226's equivalence claim.
+
+  Specific risks: (a) Items extracted from paraphrased Chat may misrepresent Tom's framing — direct hit on PRESUMPTION-247 family; (b) the more interesting items (designer-unaware framings) are exactly what gets lost in paraphrase; (c) the cadence-streak counter becomes ambiguous if interaction-type isn't sub-typed.
+
+  Mitigations available: (a) Verbatim transcript or audio for Chat walks; (b) sub-typed interaction class with explicit fidelity tag; (c) restrict item extraction to verbatim sources.
+
+  Recommendation: CHALLENGED (Moderate)
+
+  STEELMAN:
+    Item: PRESUMPTION-249
+    Strongest counterargument: Paraphrase systematically loses framing-level detail. The summarization-faithfulness literature is unambiguous: abstractive paraphrase introduces unfaithful content. For item extraction — which depends on framing — this is the worst-case content-type. Counting paraphrased Chat as equivalent to verbatim Cowork capture imports systematic bias into the assumption/presumption registries.
+    What would need to be true for C2A2 to be safe: Verbatim capture for any source used for item extraction; sub-typed interaction class with explicit fidelity tag; cadence-streak distinct from extraction-eligibility.
+    How to test: Compare item-extraction yield (framings flagged) from paraphrased Chat vs verbatim Cowork on matched-topic days. Divergence quantifies fidelity loss.

@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-215:
+  Date searched: 2026-05-23
+  Original item: ASSUMPTION-215
+  Original statement: "A 'Conscious-Realist-Monist summa' can be constructed as a genuine rival to the Thomist summa and the two run head-to-head to produce evidence."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a]
+    Original item: ASSUMPTION-215
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted as the day's top conceptual stake from the two-summa experiment scoping.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. MacIntyre (1988) "Whose Justice? Which Rationality?" and (1990) "Three Rival Versions of Moral Enquiry." — Rival comprehensive traditions can be articulated and rationally compared; MacIntyre himself stages a three-way head-to-head (encyclopaedia/genealogy/tradition).
+    2. Mellers, Hertwig & Kahneman (2001); Kahneman & Klein (2009) — adversarial collaboration. — A structured contest between rival positions is a recognized evidence-producing method.
+    3. Clooney (comparative theology); systematic-theology practice. — Comprehensive syntheses ("summae") are constructed in the present and set against historical canons.
+
+  Strength of support: Moderate
+
+  Summary: The idea that a comprehensive framework can be built and set against a rival to produce evidence has solid grounding: MacIntyre's own program compares rival versions of enquiry, adversarial collaboration formalizes rival-vs-rival as an evidence method, and comparative/systematic theology routinely constructs syntheses. So constructing a Conscious-Realist-Monist synthesis and comparing it to the Thomist Summa is not methodologically unprecedented. Support is only moderate because the cited authority (MacIntyre) also supplies the strongest objection (see 15b): a tradition is historically extended and socially embodied, which a freshly-built corpus is not.
+
+  Caveats: Support is for "rival comprehensive frameworks can be compared," not for "a constructed corpus is a tradition." The home-team risk (Conscious-Realist-Monism is the designer's own position) is not addressed by these sources.
+
+  Recommendation: PARTIALLY-SUPPORTED

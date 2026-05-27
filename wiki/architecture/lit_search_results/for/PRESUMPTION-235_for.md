@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-235:
+  Date searched: 2026-05-23
+  Original item: PRESUMPTION-235
+  Original statement: "Choosing the Aquinas<->Levin seam presumes it is the most evidentially productive seam; alternatives were not weighed (absent-alternatives)."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a]
+    Original item: PRESUMPTION-235
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred: the focal seam was asserted as best without comparison to alternatives.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: NO-SUPPORT-FOUND
+
+  Supporting evidence found: No (weak/conditional only)
+
+  Sources:
+    1. Flyvbjerg (2006); Eisenhardt (1989) theory-building from cases. — A focal/paradigm case CAN be justified, but the methodology requires articulating the selection rationale against the option space.
+    2. Seawright & Gerring (2008) "Case Selection Techniques." — Defensible case selection is explicitly comparative; it does not endorse asserting a single case as optimal without weighing alternatives.
+
+  Strength of support: Weak
+
+  Summary: The literature that could support a focal-seam choice in fact requires the very thing the presumption lacks: an explicit, comparative selection rationale. Methodologists endorse paradigmatic-case selection only when the choice is justified against the candidate set. Because alternatives were not weighed, there is essentially no positive support for "most productive" as asserted; at best the seam is defensible-if-justified.
+
+  Caveats: This is a NO-SUPPORT result, not a refutation — weighing 2-3 candidate seams would likely convert it to support.
+
+  Recommendation: NO-SUPPORT-FOUND

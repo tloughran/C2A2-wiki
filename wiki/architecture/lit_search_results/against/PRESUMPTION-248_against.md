@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-248:
+  Date searched: 2026-05-27
+  Original item: PRESUMPTION-248
+  Original statement: Deferring the 34-item ingest backlog to a "focused, ideally attended" session presumes an attended session will occur on a useful timescale; the same human gate that has been dark 5-6 days is the bottleneck — the deferral may be a third instance of OPEN-066 / FLAG I.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-248
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced.
+      15b: Searched for challenging literature on multi-queue convergence on one reviewer / deferral-as-bottleneck-relabel.
+    Current status: CHALLENGED (Moderate-Strong)
+
+  Sources:
+    1. Goldratt (1984) "The Goal" Theory of Constraints — when multiple workflows converge on a single bottleneck, relabeling work-types ("regular" vs "focused-attended") does NOT add capacity; it only segments queue.
+    2. Kleinrock (1975) queueing theory — under intermittent server availability, multi-class priority schemes that all wait for the same server do not improve average throughput.
+    3. Beyer et al. (2016) SRE — single-point-of-failure in human escalation chains is the canonical anti-pattern; "this work needs the attended human" + "the attended human is unavailable" is the documented failure pattern.
+    4. C2A2-internal: FLAG I explicitly documents this; the gate has been dark 5-6 days; REVISE-050/053 cluster.
+    5. Self-evidence: the 2026-05-26 attended session DID drain the approval queue — but PRS extraction (the 34-file backlog) was DEFERRED to a further attended session, exactly the recursion the presumption predicts.
+
+  Strength of challenge: Moderate-Strong
+
+  Summary: Theory of Constraints, queueing theory, and SRE single-point-of-failure analysis all converge: deferring work to a single, intermittent, unguaranteed reviewer does not add capacity — it relabels the bottleneck. The 2026-05-26 attended session is one favorable point but the deferred PRS work is a direct demonstration of the recursion. The presumption is well-supported as a challenge to the deferral policy.
+
+  Specific risks: (a) Recursion: each deferral pushes the constraint to the next "even more focused" attended session; (b) the gate stays dark; backlog ages; (c) "ideally attended" can become permanent deferral.
+
+  Mitigations available: (a) SLA on attended-session cadence; (b) progressive engineering of unattended-safe ingest preconditions; (c) escalation policy that bypasses the gate after N days.
+
+  Recommendation: CHALLENGED (Moderate-Strong)
+
+  STEELMAN:
+    Item: PRESUMPTION-248
+    Strongest counterargument: Multi-queue convergence on a single unreliable reviewer is queueing-theory canonical failure mode. The 2026-05-26 attended session demonstrates the pattern: approval queue cleared, PRS work deferred — work-type relabeled, not bottleneck eased. The same gate that has been dark 6 days is what the "ideally attended" session depends on. Without SLA + escalation, "ideally attended" is "indefinitely deferred."
+    What would need to be true for C2A2 to be safe: SLA + escalation policy + cadence guarantee + progressive engineering of unattended-safe alternatives. Until then, the deferral risks compounding FLAG I.
+    How to test: Track time-from-defer to attended-session-execution. If 7-day rolling p95 exceeds 14 days, the deferral pattern is failing.

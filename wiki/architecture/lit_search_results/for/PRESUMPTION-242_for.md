@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-242:
+  Date searched: 2026-05-24
+  Original item: PRESUMPTION-242
+  Original statement: "Topic-list-derived PRS candidates (ASSUMPTION-220) presume the topic list is a faithful proxy for the talk's actual content beyond what a Medium cap hedges."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a]
+    Original item: PRESUMPTION-242
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as the designer-unaware twin of ASSUMPTION-220 (the proxy-fidelity assumption beneath topic-list-derived PRS).
+      15a: Searched for supporting literature -- evidence that titles/topic lists predict content (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: PARTIALLY-SUPPORTED (Weak-Moderate)
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Information-retrieval surrogate literature (title+abstract as relevance/classification surrogate). — Titles and abstracts support reliable topic-level relevance judgments and document classification; metadata carries genuine thematic signal.
+    2. Blei, Ng & Jordan (2003) "Latent Dirichlet Allocation," JMLR (and topic-modeling more broadly). — Document themes are recoverable from limited text; a topic list is a compressed but real signal of thematic content.
+
+  Strength of support: Weak-Moderate
+
+  Summary: Topic lists carry genuine thematic signal and are adequate proxies for coarse *topic* identification, which is why they work for retrieval and classification. Support is Weak-Moderate because the proxy is being asked to do more than topic identification: PRS requires the resolution claim and its significance, which a topic label *names* but does not *contain*. The proxy is reliable for "what is this about," weaker for "what move did the speaker make and why it matters."
+
+  Caveats: Reliability of the proxy degrades exactly where PRS extraction needs it most (the argumentative move), so "faithful proxy beyond what a Medium cap hedges" is supported only at the topic-identification layer.
+
+  Recommendation: PARTIALLY-SUPPORTED (Weak-Moderate)

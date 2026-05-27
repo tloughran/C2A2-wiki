@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-248:
+  Date searched: 2026-05-27
+  Original item: PRESUMPTION-248
+  Original statement: Deferring the 34-item ingest backlog to a "focused, ideally attended" session presumes an attended session will occur on a useful timescale; the same human gate that has been dark 5-6 days is the bottleneck — so the deferral may be a third instance of the OPEN-066 / FLAG I human-stall pattern.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-248
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced — defer-to-attended as policy presupposes attended-availability.
+      15a: Searched for supporting literature on defer-to-attended as valid policy.
+    Current status: PARTIALLY-SUPPORTED (Weak)
+
+  Sources:
+    1. Beyer et al. (2016) "Site Reliability Engineering" — "human in the loop with SLA" is a documented valid pattern when human availability is engineered with on-call rotations and escalation paths.
+    2. NHS / aviation operating-procedure literature — deferring non-urgent action to scheduled review is acceptable IF the schedule is reliably exercised.
+    3. Hollnagel (2014) "Safety-I and Safety-II" — graceful degradation via deferral to attended review is a recognized resilience mechanism in well-designed systems.
+    4. C2A2-internal: the 2026-05-26 attended session DID occur and drained the approval queue (10-second re-login -> minutes to clear) — demonstrating defer-to-attended CAN work when sit-down materializes.
+
+  Strength of support: Weak (conditional on availability engineering)
+
+  Summary: Defer-to-attended is a valid pattern only when attended availability is engineered, not when it depends on unscheduled, unenforced reviewer presence. The 2026-05-26 attendance is one favorable data point but does not refute the FLAG I structural concern that the same single human gate is the multi-queue bottleneck. The supportive case is precondition-bound.
+
+  Caveats: (a) Support requires SLA + escalation + scheduled cadence — none currently documented in C2A2; (b) one favorable event (2026-05-26) does not establish the cadence; (c) Beyer's pattern explicitly assumes a *rotation*, which a solo-PI workflow cannot have without redesign.
+
+  Recommendation: PARTIALLY-SUPPORTED (Weak — supportive case is conditional and the precondition is not yet met)

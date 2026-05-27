@@ -1,0 +1,28 @@
+SEARCH-FOR-PRESUMPTION-240:
+  Date searched: 2026-05-24
+  Original item: PRESUMPTION-240
+  Original statement: "The AWAITING-REVIEW gating of REVISE flags presumes the human review gate is reliably available -- but it has been absent four consecutive days; HIGH-urgency self-corrections can sit unactioned."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a]
+    Original item: PRESUMPTION-240
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as the unstated availability assumption behind the AWAITING-REVIEW gate (evidence: 4 consecutive days with no human review).
+      15a: Searched for supporting literature -- evidence that human-gated / review-gated automation is reliably available (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted; high-stakes governance citations live-verified 2026-05-24 per REVISE-040)
+    Current status: PARTIALLY-SUPPORTED (Weak; conditional)
+
+  Supporting evidence found: Partial (conditional)
+
+  Sources:
+    1. Beyer et al. (2016) Site Reliability Engineering (Google). — Human-gated response is made reliable by explicit escalation policies, on-call rotations, and paging SLAs; i.e., availability is engineered, not assumed.
+    2. Human-in-the-loop effectiveness literature (when adequately resourced). — Staged human review adds genuine assurance in safety-critical pipelines *under adequate staffing and defined response windows*.
+
+  Strength of support: Weak
+
+  Summary: There is genuine support that a human review gate can be reliably available -- but the supportive literature conditions that reliability on exactly the mechanisms the presumption assumes without warrant: on-call coverage, escalation, and service-level guarantees. The design presumes "reliably available" with no such guarantee, and the supportive case therefore does not transfer: it argues for engineered availability, not for assuming availability. Support is Weak and strictly conditional.
+
+  Caveats: Without an SLA, escalation path, or timeout/auto-default for unreviewed HIGH-urgency items, "reliably available" is unsupported. The four-day observed absence is direct disconfirming data against the unconditioned form of the presumption.
+
+  Recommendation: PARTIALLY-SUPPORTED (Weak; conditional on availability guarantees that are absent)

@@ -1,0 +1,29 @@
+SEARCH-FOR-PRESUMPTION-237:
+  Date searched: 2026-05-23
+  Original item: PRESUMPTION-237
+  Original statement: "The publish/untrack calls rest on an unstated, stable publishability criterion; the governing rule is tacit (normative smuggling)."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a]
+    Original item: PRESUMPTION-237
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from per-artifact publish/untrack decisions made without an articulated rule.
+      15a: Searched for supporting literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Expertise / recognition-primed decision (Klein 1998). — Experienced practitioners can make reliable per-case classification calls via tacit pattern recognition, before any rule is written.
+    2. Data-governance practice (NIST/ISO data-classification): discretionary per-artifact classification is acceptable WHEN anchored to a defined policy.
+    3. Standards-of-practice in research data sharing (FAIR; IRB-style judgment). — Case-by-case publication judgments are normal in research workflows.
+
+  Strength of support: Weak-Moderate
+
+  Summary: Per-case publishability judgments are a normal and often reliable mode, especially for an experienced single decision-maker, and governance frameworks tolerate discretion. So the calls are not illegitimate on their face. Support is weak-moderate because every cited framework pairs discretion with a documented anchoring policy; tacit-only criteria are tolerated for expert single-operator workflows but not endorsed as stable or auditable (which is the 15b point).
+
+  Caveats: Support covers "expert per-case calls can be reliable," not "an unwritten criterion is stable/auditable as the team or corpus grows."
+
+  Recommendation: PARTIALLY-SUPPORTED

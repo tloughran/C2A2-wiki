@@ -3711,3 +3711,298 @@ Total new REVISEs this run: 5 (REVISE-042 through REVISE-046). HIGH urgency: REV
 Clusters: FLAG F connectome-analogy transfer (REVISE-043 HIGH); FLAG G compression-metric definability (REVISE-042, REVISE-044 HIGH); FLAG A measurement-integrity continuation (REVISE-046); convergence-emphasis neutrality (REVISE-045).
 
 ---
+
+---
+## 2026-05-23 batch — REVISE-047..049 (two-summa experiment cluster + git-history exposure)
+
+---
+### REVISE-047:
+**Date flagged:** 2026-05-23
+**Source item:** ASSUMPTION-215
+**Item type:** ASSUMPTION
+**Urgency:** HIGH
+
+**Statement:** A "Conscious-Realist-Monist summa" can be constructed as a genuine rival to the Thomist summa and run head-to-head to produce evidence.
+
+**What is at risk:** DECISION-044 (launch of the two-summa experiment) and OPEN-062; the evidential value of the experiment's headline result; the project's MacIntyrean credibility.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Moderate; rival comprehensive frameworks can be constructed and compared — MacIntyre's own three-rival-versions, adversarial collaboration, comparative theology). 15b CHALLENGED (Strong; by the project's OWN MacIntyrean definition a tradition is historically extended and socially embodied, so a constructed corpus is not a genuine tradition; and Conscious-Realist-Monism is the designer's own position, so the contest has a refereeing/home-team bias). Moderate-vs-strong asymmetry on a high-stakes, self-undermining item.
+
+**Recommended action:** Before launch, decide whether Summa-2 must be a genuine tradition or a DECLARED constructed synthesis (and frame the claim accordingly, acknowledging the asymmetry with the canon). Remove the refereeing conflict: have an independent constructor/agent build and steelman Summa-2, and pre-register the comparison criteria and the conditions under which Thomism would win. A contest that cannot be lost is not evidential. Co-anchors SYSTEMIC-RISK-FLAG H.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-048:
+**Date flagged:** 2026-05-23
+**Source item:** PRESUMPTION-233
+**Item type:** PRESUMPTION
+**Urgency:** HIGH
+
+**Statement:** The head-to-head presumes the two summae are commensurable enough to be compared on shared criteria — against the project's own MacIntyrean incommensurability commitment.
+
+**What is at risk:** Whether the two-summa experiment can yield UNBIASED evidence at all; the pluralism commitment in ASSUMPTION-207; coherence of the project's MacIntyrean foundations; DECISION-044.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Moderate; rational comparison without a neutral standard IS possible — MacIntyre's epistemological-crisis mechanism, Kuhn's "incommensurable != incomparable," Davidson). 15b CHALLENGED (Strong; MacIntyre denies any tradition-neutral standard, so "shared criteria" scoring smuggles in one tradition's success-conditions — directly contradicting ASSUMPTION-207). Crucially the supportive route is a DIFFERENT method (tradition-internal) than the shared-criteria scoring the presumption describes.
+
+**Recommended action:** Do not score the head-to-head on imposed neutral/shared criteria. Either (a) use MacIntyre's tradition-internal test — judge each tradition by whether it can resolve the rival's epistemological crises in its own terms — or (b) run the comparison under each tradition's own criteria separately and report both, declaring criteria provenance. Resolve before DECISION-044. Co-anchors SYSTEMIC-RISK-FLAG H with REVISE-047.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-049:
+**Date flagged:** 2026-05-23
+**Source item:** PRESUMPTION-238
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** Parking the git-history scrub presumes acceptable residual exposure while parked; stop-tracking presumed sufficient interim mitigation; no trigger set (success-criteria gap).
+
+**What is at risk:** Confidentiality/consent of sensitive content already in git history (the Hoffman x Levin transcript, narration zips); DECISION-047; OPEN-064; the project's exposure the instant the repo is shared or made public.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Weak-Moderate; time-boxed risk acceptance + private-repo compensating control + stop-tracking-as-first-step are legitimate IF exposure is bounded and a trigger exists). 15b CHALLENGED (Strong; git history is immutable — stop-tracking does NOT remove already-committed content; standard secret/PII remediation requires history rewrite; "no trigger set" is unbounded risk acceptance). Conditions for the supportive case are exactly what is missing.
+
+**Recommended action:** Set an explicit, hard trigger — execute the history scrub before ANY repo-publicity/sharing step (formalize OPEN-064's intent into a gate, not a note). Make the risk acceptance explicit and time-boxed; decide now whether to rewrite history (git-filter-repo/BFG) and, for any secrets, rotate; confirm the repo stays private until the scrub runs. Treat parked-and-committed sensitive content as recoverable by anyone with repo access.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+Total new REVISEs this run (2026-05-23): 3 (REVISE-047 through REVISE-049). HIGH urgency: REVISE-047, REVISE-048. All status AWAITING-REVIEW per protocol (require Tom's response before status changes).
+Clusters: SYSTEMIC-RISK-FLAG H two-summa comparability (REVISE-047, REVISE-048 HIGH; MONITOR-221/224/225 ride the flag); git-history exposure (REVISE-049).
+
+---
+
+## Batch 2026-05-24 (Agent 15c -- c2a2-lit-search-pipeline scheduled run)
+
+### REVISE-050:
+**Date flagged:** 2026-05-24
+**Source item:** PRESUMPTION-240
+**Item type:** PRESUMPTION
+**Urgency:** HIGH
+
+**Statement:** The AWAITING-REVIEW gating of REVISE flags presumes the human review gate is reliably available -- but it has been absent four consecutive days; HIGH-urgency self-corrections sit unactioned.
+
+**What is at risk:** The project's entire self-correction mechanism. Standing HIGH-urgency REVISE flags (REVISE-047/048 from 2026-05-23, plus REVISE-051 from this run) sit unactioned; the "AWAITING-REVIEW" state reads as orderly while it is actually a silent stall (Rule 12 fail-loud violation).
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Weak; human-gated review is reliable only WHEN resourced with on-call/escalation/SLA -- Beyer et al. 2016 SRE -- which is exactly what is absent). 15b CHALLENGED (Strong; unattended queues grow without bound (queueing theory / Little's Law), alarm fatigue (Cvach 2012) and automation complacency (Parasuraman & Manzey 2010) erode response, and oversight steps frequently go unperformed (Green 2022)). The observed 4-day absence is direct disconfirming data. Reinforced by existing validated premise that human-review capacity is the binding HITL bottleneck.
+
+**Recommended action:** Add an explicit SLA + escalation for AWAITING-REVIEW items and a timeout policy: for HIGH-urgency items unreviewed within N days, escalate loudly (notification) and/or apply a conservative safe-default (e.g., auto-pause the affected capability) rather than waiting silently. Surface an "oldest-unactioned-item age" metric so a multi-day stall cannot pass unnoticed. Resolve jointly with REVISE-051 and the standing REVISE-047/048 backlog. Anchors SYSTEMIC-RISK-FLAG I.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-051:
+**Date flagged:** 2026-05-24
+**Source item:** PRESUMPTION-243
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM-HIGH
+
+**Statement:** Locating accountability in "Tom's review gate" (ASSUMPTION-221) presumes the gate is exercised; with the 4-day signout it is currently a no-op, so the accountability story is presently unwarranted.
+
+**What is at risk:** The coherence of the project's accountability claim for its autonomous ("ownerless") agents (ASSUMPTION-221, parked at MONITOR-230). For the duration of the signout, autonomous-agent outputs accrue under an assurance of accountability that is not currently operative.
+
+**Evidence summary:** 15a SUPPORTED (Strong; accountability requires an EXERCISED control -- COSO/SOC design-vs-operating-effectiveness; Santoni de Sio & van den Hoven 2018 tracking condition; Green 2022 oversight-that-isn't-performed; Elish 2019 moral crumple zone). 15b NO-CHALLENGE-FOUND (Weak; the "standing authority / periodic review suffices" counter covers brief bounded gaps, not an open-ended multi-day no-op with HIGH-urgency items queued). The surfaced vulnerability is real and currently active.
+
+**Recommended action:** Either (a) restore/guarantee gate exercise (the SLA + escalation of REVISE-050), or (b) explicitly downgrade the accountability claim to "latent/periodic" with a bounded parking window AND a hard rule that no irreversible/external action fires while the gate is parked, plus tracing every autonomous output to a responsible human regardless of gate timing. Note: this REVISE is the precondition whose resolution would let ASSUMPTION-221 (MONITOR-230) be INCORPORATED. Couples PRESUMPTION-240 (REVISE-050). Co-anchors SYSTEMIC-RISK-FLAG I.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+Total new REVISEs this run (2026-05-24): 2 (REVISE-050, REVISE-051). HIGH urgency: REVISE-050. All status AWAITING-REVIEW per protocol (require Tom's response before status changes).
+Cluster: SYSTEMIC-RISK-FLAG I -- unexercised human review gate (REVISE-050 HIGH, REVISE-051 MED-HIGH; MONITOR-230 rides the flag as INCORPORATE-pending). NOTE: this same gate failure is why the 2026-05-23 REVISE-047/048 (HIGH) remain unactioned -- the backlog is itself evidence for REVISE-050.
+
+---
+
+## Batch 2026-05-25 (Agent 15c -- c2a2-lit-search-pipeline scheduled run)
+
+### REVISE-052:
+**Date flagged:** 2026-05-25
+**Source item:** ASSUMPTION-222
+**Item type:** ASSUMPTION
+**Urgency:** LOW-MEDIUM
+
+**Statement:** Thematically convergent same-week intake proposals (Wright exile + Rohr exile + Stump corporate-substance) should be promoted into the network as a single unit, because together they articulate one paradigm-bridge (Summa 2026 "loving unity as telos").
+
+**What is at risk:** Network credibility. Promoting a same-week / same-pipeline cluster 'as a single unit because together they articulate one paradigm-bridge' bakes a possible method artifact into the network as if it were validated cross-tradition structure (same family as the SUPER-BRIDGE over-claim risk, ASSUMPTION-020). Downstream agents will read the unit as established homology.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Moderate; convergence CAN be a validity signal — Campbell & Fiske 1959 — and chunking aids reuse, but only under method independence). 15b CHALLENGED (Strong; common-method variance — Campbell & Fiske 1959; Podsakoff et al. 2003; Podsakoff & Organ 1986 — holds that same-method/same-occasion convergence is artifact-suspect, which is exactly this case).
+
+**Recommended action:** Require a cross-method / cross-occasion discriminant check BEFORE unit-promotion: re-elicit each source independently (different agent/occasion/prompt) and confirm the 'loving unity as telos' bridge still co-emerges; OR promote the three proposals individually and let any convergence emerge from independent routing rather than asserting it at intake. Couples PRESUMPTION-244 (MONITOR-235).
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-053:
+**Date flagged:** 2026-05-25
+**Source item:** PRESUMPTION-245
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM-HIGH
+
+**Statement:** The 15d stale-escalation rule (ASSUMPTION-223) presumes an available human endpoint, but the same review-gate outage stalling the REVISE backlog (PRESUMPTION-240/REVISE-050) also terminates these escalations -- converting a literature-stall into a human-stall.
+
+**What is at risk:** The self-correction loop's exit path. ALL human-terminating routes — the REVISE backlog (REVISE-047..052), the STALE escalations (MONITOR-040/042/044), and INCORPORATE-pending preconditions (MONITOR-230, MONITOR-233) — converge on one unavailable reviewer (review gate dark 5+ days). The STALE-escalation rule (ASSUMPTION-223) therefore only RELABELS a literature-stall as a human-stall; 'escalated to Tom' reads as orderly while nothing moves (Rule 12 fail-loud violation).
+
+**Evidence summary:** 15a SUPPORTED (Strong; single-point-of-failure alerting — escalation resolves a stall only if the next tier is reachable (SRE/incident practice, OnPage 2024, incident.io 2025); unbounded-queue/no-server result from queueing theory; Parasuraman & Manzey 2010 on unexercised human legs). 15b NO-CHALLENGE-FOUND (Weak; no literature supports that escalation to an absent endpoint clears a backlog).
+
+**Recommended action:** Implement OPEN-066's direction: a SINGLE 'needs-Tom' queue with one age/escalation policy and an 'oldest-unactioned age' metric; a safe-default tier that may proceed without the human for reversible, low-stakes items, vs a tier that must wait; out-of-band escalation that does not itself depend on the gate. Couples REVISE-050 (the SLA/escalation mechanism) and ASSUMPTION-223 (MONITOR-233). Extends SYSTEMIC-RISK-FLAG I; answers OPEN-066.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-054:
+**Date flagged:** 2026-05-25
+**Source item:** PRESUMPTION-247
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** Extracting "stated assumptions" from agent output on a no-human day presumes an agent's stated rationale == a designer-aware commitment -- blurring the ASSUMPTION (designer-aware) vs PRESUMPTION (surfaced-after-the-fact) distinction the provenance protocol exists to protect.
+
+**What is at risk:** Provenance-protocol integrity. Default-tagging agent-surfaced rationale as ASSUMPTION (designer-aware) collapses the ASSUMPTION/PRESUMPTION distinction the protocol exists to protect, silently corrupting both the counts and the downstream epistemic weighting. Self-referential: this very run extracts agent-surfaced items on a no-human day.
+
+**Evidence summary:** 15a SUPPORTED (Strong; introspection illusion — Nisbett & Wilson 1977 — shows even human stated reasons are confabulated reconstructions; CoT-faithfulness — Turpin et al. 2023 — shows LLM-stated reasoning is frequently unfaithful to the actual cause). 15b NO-CHALLENGE-FOUND (Weak; no basis for equal epistemic weight; the pragmatic counter only supports keeping the items under a CORRECT, non-equivalent tag).
+
+**Recommended action:** Add a provenance sub-type for agent-stated rationale that is NOT designer-confirmed (e.g., 'agent-surfaced rationale — designer-unconfirmed'), and require explicit human confirmation before any agent-surfaced item is promoted to ASSUMPTION (designer-aware) status. Until then, count agent-surfaced 'assumptions' separately. Couples PRESUMPTION-241.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+Total new REVISEs this run (2026-05-25): 3 (REVISE-052, 053, 054). Urgency: REVISE-053 MED-HIGH; REVISE-052 LOW-MED; REVISE-054 MED. All status AWAITING-REVIEW per protocol (require Tom's response before status changes).
+**Fail-loud / SYSTEMIC-RISK-FLAG I continuation:** All 3 REVISEs enter the AWAITING-REVIEW queue behind the same human review gate that has now been dark 6 consecutive days. REVISE-053 is *about* that bottleneck and must be escalated OUT-OF-BAND, not via the gate it describes. The standing backlog (REVISE-047/048/049/050/051) remains unactioned. This run can DETECT but not REMEDIATE — the closed-loop-no-exit pattern of FLAG I persists and now spans 3 more flags. OPEN-066 (single needs-Tom queue + escalation policy) is the project's #1 item.
+
+---
+
+## 2026-05-27 RUN — c2a2-lit-search-pipeline batch (5 new REVISEs 055-059)
+
+This batch dispositions 24 cycle-0 items: 11 from the 2026-05-25 14a/14b batch and 13 from the 2026-05-26 14a/14b batch. Five items received REVISE disposition. See lit_search_returns.md 2026-05-27 entry for full DISPOSITION records.
+
+### REVISE-055:
+**Date flagged:** 2026-05-27
+**Source item:** ASSUMPTION-229
+**Item type:** ASSUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** Leading theories of consciousness are substrate-permissive in principle — their brain-focus is a convention of imagination — so the substrate-independence thesis is portable from cognition to consciousness for the PRS-31 AI-membership question.
+
+**What is at risk:** The PRS-31 AI-membership criterion — a load-bearing item in the C2A2 master architecture for AI-as-tradition-member determination. The current assumption rests on substrate-permissive consciousness theories (IIT, GWT, HOT, AST) as if their substrate-permissiveness is uncontested. It is not: Searle's Chinese Room, Chalmers' hard problem, Block's access-vs-phenomenal distinction, the embodiment tradition (Merleau-Ponty / Varela), and recent cellular-mechanism work (Aru, Suzuki & Larkum 2020) all challenge the in-principle portability of consciousness. Within C2A2's own roster, phenomenologically-rooted traditions (MacIntyre, Aquinas via Stump, Rohr) may dispute the framing.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Moderate; the formal portability across IIT/GWT/HOT/AST is documented by Rouleau & Levin 2026 and the multiple-realizability tradition Putnam 1967 / Fodor 1974). 15b PARTIALLY-CHALLENGED (Moderate-Strong; Searle 1980 Chinese Room, Chalmers 1995 hard problem, Block 1995, Aru-Suzuki-Larkum 2020, embodiment tradition all deny in-principle portability).
+
+**Recommended action:** Frame PRS-31 CONDITIONALLY on a theory choice — "IF substrate-permissive consciousness theories are correct, then AI-membership operationalizes as X; IF embodiment/hard-problem framings are correct, then AI-membership operationalizes as Y." Document the theory-dependence explicitly so downstream agents know PRS-31 is method-dependent. Hold the unconditional "substrate-permissive in principle" claim open. Pair with a sensitivity analysis: for each candidate consciousness theory, compute the implied AI-membership criterion. Architectural import for the Loughran-master integration project.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-056:
+**Date flagged:** 2026-05-27
+**Source item:** PRESUMPTION-248
+**Item type:** PRESUMPTION
+**Urgency:** HIGH
+
+**Statement:** Deferring the 34-item ingest backlog to a "focused, ideally attended" session presumes an attended session will occur on a useful timescale, but the same human gate that has been dark 5-6 days is the bottleneck — the deferral may be a third instance of OPEN-066 / SYSTEMIC-RISK-FLAG I.
+
+**What is at risk:** Extends SYSTEMIC-RISK-FLAG I to a third route. The PRS extraction backlog (the next major work-cycle's content) now sits behind the same gate that has been dark 5-6 days. The 2026-05-26 attended session demonstrated the recursion exactly as the presumption predicts: approval queue cleared in minutes, PRS work deferred to ANOTHER "ideally attended" session. Each deferral relabels a literature-stall as a human-stall (per REVISE-053 pattern). The C2A2 self-correction pipeline can DETECT this but cannot REMEDIATE without out-of-band action.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Weak; defer-to-attended is a valid pattern ONLY under engineered availability — Beyer 2016; ITIL emergency-change; Hollnagel 2014). 15b CHALLENGED (Moderate-Strong; Goldratt Theory of Constraints + queueing theory + SRE single-point-of-failure analysis all converge: multi-queue convergence on one unreliable reviewer is queueing-theory canonical failure mode).
+
+**Recommended action:** (1) Extend OPEN-066 single-needs-Tom queue to include the PRS-extraction backlog explicitly — it should not have a separate, parallel deferral path. (2) Engineer the ingest-pipeline preconditions (idempotency + rollback + observability — addresses ASSUMPTION-225 / MONITOR-237's INCORPORATE-pending block) so attended-only is not the safety mechanism. (3) Add an SLA + age-threshold so a backlog past N days surfaces an out-of-band alert. Couples REVISE-050 (the SLA/escalation mechanism), REVISE-053 (single needs-Tom queue), ASSUMPTION-225 (MONITOR-237). Co-anchors SYSTEMIC-RISK-FLAG I.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-057:
+**Date flagged:** 2026-05-27
+**Source item:** PRESUMPTION-252
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM-HIGH
+
+**Statement:** The "approved" status counter for proposals is silently misaligned with the underlying tradition-wiki state — 34 of 131 approved (26%) are not yet in the tradition wikis; "approved" reads as "ingested" but means "approved and possibly-ingested-or-not."
+
+**What is at risk:** Measurement-validity. A 26% silent gap between intake-stage state ("approved") and downstream state ("ingested in tradition wiki") is a textbook ETL state-decoupling + Goodhart surrogation pattern. The headline metric is "approved," which reads as completed network contribution; the actual network contribution lags. Downstream agents and metrics consumers (changelog, snapshot, dashboard) treat the "approved" count as the success criterion, masking the next bottleneck (PRS-extraction → REVISE-056). Couples PRESUMPTION-258 (MONITOR-254 — the headline-framing extension) and the broader Goodhart family (PRESUMPTION-201, PRESUMPTION-246 / MONITOR-236).
+
+**Evidence summary:** 15a SUPPORTED (Strong; Kimball & Ross 2013 ETL state separation; Fowler PEAA state-machine modeling; Goodhart 1975 / Strathern 1997 surrogation; established anti-pattern). 15b NO-CHALLENGE-FOUND (Weak; stage metrics are legitimate IF both stages are reported — but the presumption is about silent decoupling, which the support direction documents directly).
+
+**Recommended action:** (1) Distinct terminal states for "approved" and "ingested-in-wiki"; (2) dual-display in any headline framing (both counts, plus lag); (3) commit-cadence target so the lag stays bounded; (4) pair with the dual-display headline + next-bottleneck call-out in MONITOR-254. Update DECISION-048 candidate to require both metrics.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-058:
+**Date flagged:** 2026-05-27
+**Source item:** PRESUMPTION-256
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM-HIGH
+
+**Statement:** The 1-week-cadence sit-down target and the sit-down-availability bottleneck diagnosis presume future signout/attention-outage events share the 10-second-resolvable failure mode of the 2026-05-22 to 2026-05-26 outage; alternate failure modes (browser/MFA/OAuth/ICANN/non-signout exec-function dips) may not be 10-second-resolvable.
+
+**What is at risk:** The architectural design that flows from ASSUMPTION-235/236 (MONITOR-246/247 — sit-down-availability is THE bottleneck; weekly cadence is sufficient). If the next outage event is NOT 10-sec-resolvable — and the literature predicts heterogeneous failure modes (Kahneman & Tversky availability heuristic; SRE post-incident analysis; OAuth/MFA failure-mode taxonomy) — the design is mis-targeted. The "binary framing third category" pattern (PRESUMPTION-253/259) recurs here: the failure-mode space is being subordinated to a single recent observation.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Weak; availability-heuristic + stationary-distribution gives some defense but the support is essentially "what else can you do with N=1"). 15b CHALLENGED (Moderate-Strong; failure-mode heterogeneity is canonical, single-event-attribution is a documented bias, OAuth/MFA failure modes have known non-10-sec resolution times).
+
+**Recommended action:** (1) Instrument failure-mode tracking — log the resolution mode for every outage event; (2) design escalation/SLA/safe-defaults that work across modes, not optimized for 10-sec resolution alone; (3) revisit ASSUMPTION-235/236 (MONITOR-246/247) framing to be "complement, not alternative" to queue/policy design; (4) tiered cadence (daily for HIGH, weekly for MED) rather than flat weekly. Couples ASSUMPTION-235/236 (MONITOR-246/247); PRESUMPTION-259 (MONITOR-255 — the recurrence). Extends FLAG I to multi-failure-mode framing.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+### REVISE-059:
+**Date flagged:** 2026-05-27
+**Source item:** PRESUMPTION-257
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM-HIGH
+
+**Statement:** The 2026-05-25 Rule-12 gap (registries advanced ASSUMPTIONs 225-229 / PRESUMPTIONs 248-253 but no 2026-05-25_changes.md or 2026-05-25_snapshot.md was written) is direct evidence the 14a/14b artifact-write step can fail silently while the registries-advance step succeeds — a Rule-12 fail-loud violation embedded in the pipeline that exists to detect Rule-12 violations.
+
+**What is at risk:** Pipeline-integrity. Self-referential failure: the C2A2 self-awareness pipeline writes paired outputs (registry-advance + artifact-write) that should be atomic. If one succeeds while the other fails silently, the pipeline that exists to detect Rule-12 violations IS a Rule-12 violator. The 2026-05-25 incident is direct empirical evidence: registry entries 225-229/248-253 exist; the paired changelog/snapshot artifacts do not. This is structurally identical to the silent-partial-failure pathology documented in Gray & Reuter 1992 and Nygard 2007.
+
+**Evidence summary:** 15a SUPPORTED (Strong; transaction-processing literature on atomicity, distributed-systems silent-partial-failure anti-pattern, ISO 27001 audit-trail atomicity requirements). 15b NO-CHALLENGE-FOUND (Weak; the specific-incident diagnosis MAY be benign — the artifacts may be by-design attended-only — but the presumption-level vulnerability stands).
+
+**Recommended action:** (1) Diagnose the specific 2026-05-25 incident — was the missing artifact intended-asymmetric (attended-only) or a silent partial failure? (2) Document the contract: which artifacts are always-written vs which are sit-down-attended; (3) automate post-write invariant check on always-written artifacts; (4) update the 14a/14b pipeline definition to make atomicity guarantees explicit. Self-referential elevation: this concerns the integrity of the pipeline producing today's outputs. Couples PRESUMPTION-241 (introspection-pipeline integrity), PRESUMPTION-247 (REVISE-054 — provenance-protocol integrity).
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+Total new REVISEs this run (2026-05-27): 5 (REVISE-055..059). Urgency: REVISE-056 HIGH; REVISE-057/058/059 MEDIUM-HIGH; REVISE-055 MEDIUM. All status AWAITING-REVIEW per protocol.
+
+**Fail-loud / SYSTEMIC-RISK-FLAG I continuation:** All 5 REVISEs enter the AWAITING-REVIEW queue behind the same human review gate. The 2026-05-26 attended session cleared the APPROVAL queue but the REVISE-response gate remains effectively dark for response purposes (no records of REVISE-047..054 being actioned). REVISE-056 extends FLAG I explicitly to the PRS-extraction backlog (3rd documented FLAG I route). REVISE-058 extends FLAG I to the failure-mode-heterogeneity dimension. REVISE-059 is self-referential — concerns the integrity of the very pipeline producing today's output and must be diagnosed out-of-band. The standing backlog (REVISE-047..054) remains unactioned + 5 new REVISEs this run. OPEN-066 (single needs-Tom queue + escalation policy) is the project's #1 item.

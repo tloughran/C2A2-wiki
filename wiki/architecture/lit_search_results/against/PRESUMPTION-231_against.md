@@ -1,0 +1,37 @@
+SEARCH-AGAINST-PRESUMPTION-231:
+  Date searched: 2026-05-23
+  Original item: PRESUMPTION-231
+  Original statement: "Byte-identical data + node --check (+ eyeball review) is presumed to entail correct rendered behavior of new interaction widgets; no interaction test reproduces the behaviors."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15b]
+    Original item: PRESUMPTION-231
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the promote-to-live gate for new interaction widgets.
+      15b: Searched for challenging literature (training-corpus grounding per ASSUMPTION-199 convention; FLAG E noted)
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. "Works as designed != works": the spec/implementation/render gap. — Interaction defects (event wiring, hit-testing, raycasting, z-order, focus, slider edge cases) are emergent at the render/event layer, invisible to data-diff and parse-check.
+    2. UI test-automation practice (Selenium/Playwright; event-simulation testing). — The discipline exists precisely because syntax + data validity do not entail correct interaction behavior; you must drive the widget.
+    3. node --check semantics: it parses, it does not execute. — A file can parse cleanly and be byte-identical in data yet wire an event handler to the wrong target.
+
+  Strength of challenge: Strong
+
+  Summary: Byte-identical data rules out data regressions and node --check rules out syntax errors, but neither exercises the interaction layer where the new widgets actually live. Interaction bugs are emergent behaviors at render/event time; the only reliable way to confirm them is to reproduce the interaction (click-toggle, edge-pick, slider, pop-up) and observe. Eyeball review catches gross visual breakage but is unreliable for event-level correctness. So the entailment "checks pass -> rendered behavior correct" does not hold for interaction widgets. This re-instantiates PRESUMPTION-230/218 and engages Rule 12 (fail loud).
+
+  Specific risks: A new interaction widget ships "verified" while a click/edge-pick/slider path is silently broken for users; the self-measurement layer over-trusts data+syntax gating.
+
+  Mitigations available: Add a minimal interaction smoke test (scripted event simulation or a manual reproduce-the-interaction checklist) to the promote-to-live gate for any widget that introduces new event handling.
+
+  Recommendation: CHALLENGED (strong)
+
+  STEELMAN:
+    Item: PRESUMPTION-231
+    Strongest counterargument: Interaction correctness is an emergent property of the running render+event layer; data identity and a parse check certify layers below the bug surface, so they cannot entail that a new click-toggle, edge-pick, or slider behaves correctly. The entire UI-test-automation field exists because this entailment fails.
+    What would need to be true for C2A2 to be safe: Each new interaction behavior is exercised at least once (scripted or manual) and observed to do what it claims before promote-to-live.
+    How to test: For each new widget, run the interaction and confirm the observed effect; a single unreproduced interaction path falsifies the gate's sufficiency.
