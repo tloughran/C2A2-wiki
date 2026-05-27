@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-067 - Intention and Choice - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/067, pars/I-II, q/12, q/13]
-last_qc_at: "2026-05-23T00:24:04"
+last_qc_at: "2026-05-24T16:19:51"
 last_qc_outcome: "pass"
 ---
 # Day 67 — Intention and Choice

@@ -15,8 +15,8 @@ fetched_at: 2026-05-15
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com); cached at /tmp/day075_segments.json
 synthesis: "[[Day-075 - Hatred - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-15T04:29:03"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-24T12:21:30"
+last_qc_outcome: "pass"
 render_pass: qc-rewrote-2026-05-15
 tags: [summa, day/075, pars/I-II, q/28, q/29]
 ---

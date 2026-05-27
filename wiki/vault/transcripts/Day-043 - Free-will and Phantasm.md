@@ -15,7 +15,7 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-043 - Free-will and Phantasm - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-13T12:21:38"
+last_qc_at: "2026-05-25T20:19:10"
 last_qc_outcome: "pass"
 render_pass: auto-catchup-2026-05-04  # auto-rendered; QC pass should add Q.N/article headers, polish prose, write Notes
 tags: [summa, day/043, pars/I]

@@ -17,8 +17,8 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (CROSS-005 love as fundamental category; line 724 collective substance)"
 evidence_strength_summary: "Empirical: persistence of predictive-model bias after the precipitating event (well-supported in clinical work on trauma and habit); vagal-tone recovery through positivity-resonance practices (Fredrickson, high). Formal: Stump's collective-substance hylomorphism (mid evidence). Speculative: the analog of indulgence-economy in the network's framework -- 'merit transferability' as broaden-and-build amplification within a real corporate substance. Theological: Wright on the Pauline 'in Christ' as the locus of corporate restoration (high); Rohr on order-disorder-reorder (mid)."
 tags: [synthesis, day/104, theme/persistence-of-disorder, theme/restoration]
-last_qc_at: "2026-05-18T20:25:33"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-25T22:51:38"
+last_qc_outcome: "pass"
 ---
 
 # Day 104 — Punishment (Contemporary)

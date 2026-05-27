@@ -6,13 +6,18 @@ title: Who Has Faith
 summa_ref: II-II Q.4-5
 duration_seconds: 1021
 word_count: 2812
+raw_asr_word_count: 2795
+length_tier: medium
 segment_count: 393
 caption_kind: asr
 language: en
 fetched_at: 2026-05-19
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-120 - Who Has Faith - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/120, pars/2, q/4-5]
+last_qc_at: "2026-05-24T02:31:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 120 — Who Has Faith

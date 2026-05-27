@@ -6,13 +6,18 @@ title: Justification
 summa_ref: I-II Q.112-113
 duration_seconds: 1412
 word_count: 3715
+raw_asr_word_count: 3689
+length_tier: long
 segment_count: 525
 caption_kind: asr
 language: en
 fetched_at: 2026-05-19
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-117 - Justification - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/117, pars/1, q/112-113]
+last_qc_at: "2026-05-24T02:31:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 117 — Justification

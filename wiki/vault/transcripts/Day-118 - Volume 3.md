@@ -6,13 +6,18 @@ title: Volume 3
 summa_ref: Prima Secundae, Q.114 + Secunda Secundae, Q.1
 duration_seconds: 1506
 word_count: 4225
+raw_asr_word_count: 4206
+length_tier: long
 segment_count: 597
 caption_kind: asr
 language: en
 fetched_at: 2026-05-19
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-118 - Volume 3 - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/118, pars/I-II, pars/II-II, q/114, q/1]
+last_qc_at: "2026-05-24T02:31:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 118 — Volume 3

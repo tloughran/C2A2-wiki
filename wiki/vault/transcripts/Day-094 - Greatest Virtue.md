@@ -15,8 +15,8 @@ fetched_at: 2026-05-14
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-094 - Greatest Virtue - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-15T16:25:00"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-24T18:29:05"
+last_qc_outcome: "pass"
 tags: [summa, day/094, pars/I-II, q/66-67, equality-of-virtues, eschatology, wisdom, charity]
 ---
 

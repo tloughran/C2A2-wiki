@@ -6,13 +6,18 @@ title: Grace
 summa_ref: I-II Q.110-111
 duration_seconds: 1112
 word_count: 2970
+raw_asr_word_count: 2951
+length_tier: medium
 segment_count: 428
 caption_kind: asr
 language: en
 fetched_at: 2026-05-19
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-116 - Grace - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/116, pars/1, q/110-111]
+last_qc_at: "2026-05-24T02:31:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 116 — Grace

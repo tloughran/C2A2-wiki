@@ -16,8 +16,8 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-079 - Sorrowful Effects - Contemporary]]"
 tags: [summa, day/079, pars/I-II, q/36, q/37]
 fidelity_checked: true
-last_qc_at: "2026-05-14T20:21:30"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-24T08:20:40"
+last_qc_outcome: "pass"
 ---
 
 # Day 79 — Sorrowful Effects

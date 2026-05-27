@@ -16,8 +16,8 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-106 - Law - Contemporary]]"
 tags: [summa, day/106, pars/I-II, q/90, q/91]
 fidelity_checked: true
-last_qc_at: "2026-05-18T20:28:13"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-25T12:22:26"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 106 — Law (Q.90-91)
@@ -28,7 +28,7 @@ Aquinas opens the long Treatise on Law (I-II Q.90-108) that anchors the rest of 
 
 [00:01] **Article 1 — Whether law is something pertaining to reason.** Law stems from reason because it stems from our knowledge of (a) the first principle of practical reason ("good is to be done; evil avoided") and (b) particular judgments on what is in fact good or evil for us here and now. Aquinas's example: conscience is "knowledge applied to an individual case," a binding mandate stemming from the judgment of reason.
 
-[00:03] **Article 2 — Whether law is always directed to the common good.** Particular goals must find their root in some ultimate goal. So too particular laws must direct us toward our ultimate good, happiness — and because man is naturally a social animal achieving happiness with and through community, law must direct the individual as a member of that community. The common good is defined (citing Fister & Crean, *Integralism*) as a good shareable entirely by several persons without diminution — like truth or beauty. Aquinas: "Since every part is ordained to the whole as imperfect to perfect, and since one man is a part of the perfect community, the law must necessarily regard properly the relationship to universal happiness."
+[00:03] **Article 2 — Whether law is always directed to the common good.** Particular goals must find their root in some ultimate goal. So too particular laws must direct us toward our ultimate good, happiness — and because man is naturally a social animal achieving happiness with and through community, law must direct the individual as a member of that community. The common good is defined (citing Fimister & Crean, *Integralism*) as a good shareable entirely by several persons without diminution — like truth or beauty. Aquinas: "Since every part is ordained to the whole as imperfect to perfect, and since one man is a part of the perfect community, the law must necessarily regard properly the relationship to universal happiness."
 
 [00:05] **Article 3 — Whether the reason of any man is competent to make laws.** No: lawmaking belongs either to the whole people or to the public personage who has care of the whole people. Whoever is responsible for directing all to the end has the right to enact laws to that purpose.
 

@@ -16,8 +16,8 @@ fetched_at: 2026-05-18
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-110 - The Old Law - Contemporary]]"
 tags: [summa, day/110, pars/I-II, q/98, q/99]
-last_qc_at: "2026-05-19T04:25:05"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-24T20:21:49"
+last_qc_outcome: "pass"
 ---
 
 # Day 110 — The Old Law (Q.98-99)

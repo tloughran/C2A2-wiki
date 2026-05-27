@@ -6,13 +6,18 @@ title: The Act of Faith
 summa_ref: II-II Q.2-3
 duration_seconds: 1364
 word_count: 3602
+raw_asr_word_count: 3579
+length_tier: long
 segment_count: 517
 caption_kind: asr
 language: en
 fetched_at: 2026-05-19
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-119 - The Act of Faith - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/119, pars/2, q/2-3]
+last_qc_at: "2026-05-24T02:31:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 119 — The Act of Faith

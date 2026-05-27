@@ -16,7 +16,7 @@ fetched_at: 2026-05-18
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-113 - The Republic - Contemporary]]"
 tags: [summa, day/113, pars/I-II, q/104, q/105]
-last_qc_at: "2026-05-19T16:22:28"
+last_qc_at: "2026-05-24T20:21:50"
 last_qc_outcome: "pass"
 ---
 
