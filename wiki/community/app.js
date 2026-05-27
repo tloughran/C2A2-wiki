@@ -46,33 +46,60 @@
   const staticModeMessage = 'Add your OpenAI key to enable AI-enriched ranking; otherwise the built-in engine is used.';
   const unavailableServerMessage = 'AI enrichment is off. Add your OpenAI key (shared with the other C2A2 tabs) to turn it on.';
 
-  // -- Broker-ready key/LLM seam ------------------------------------------
-  // TODAY: client-side BYOK, reading the SAME localStorage key the other C2A2
-  // tabs use (tts_api_key) so one key entry lights up every tab.
-  // LATER: when the Pathway-00 broker exists, swap getKey()/callLLM() to route
-  // through it -- no caller changes required.
+  // -- Pathway-00 broker seam --------------------------------------------
+  // The Community Explorer talks to the cc-broker Edge Function, never to a
+  // model provider directly. The browser holds no provider key. The broker
+  // decides free pool (Tom's pool) vs BYO key vs deny per request, then
+  // forwards to OpenRouter. See PATHWAY00_BROKER_SPEC.md and
+  // supabase/functions/cc-broker/index.ts.
+  const BROKER_URL = 'https://akhcocmgfwybdovqeovd.supabase.co/functions/v1/cc-broker';
+  const DEVICE_ID_KEY = 'c2a2_device_id';
+  const getDeviceId = () => {
+    try {
+      let id = (localStorage.getItem(DEVICE_ID_KEY) || '').trim();
+      if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id)) {
+        id = (window.crypto && typeof crypto.randomUUID === 'function')
+          ? crypto.randomUUID()
+          : 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
+              const r = (Math.random() * 16) | 0;
+              return (c === 'x' ? r : (r & 0x3) | 0x8).toString(16);
+            });
+        localStorage.setItem(DEVICE_ID_KEY, id);
+      }
+      return id;
+    } catch (e) {
+      return '00000000-0000-4000-8000-000000000000';
+    }
+  };
+  // getKey() is preserved as a "user has registered a personal BYO key" signal
+  // the surrounding UI uses (transport pill, status text). It does NOT gate
+  // broker calls -- the free pool covers users without a key. UI cleanup
+  // (status pill copy, free-limit "add your key" panel) is step 2 of the swap.
   const C2A2_KEY_NAME = 'tts_api_key';
   const getKey = () => { try { return (localStorage.getItem(C2A2_KEY_NAME) || '').trim(); } catch (e) { return ''; } };
   const callLLM = async (opts) => {
-    const key = getKey();
-    if (!key) throw new Error('no-key');
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 20000);
     try {
-      const resp = await fetch('https://api.openai.com/v1/chat/completions', {
+      const resp = await fetch(BROKER_URL, {
         method: 'POST',
-        headers: { 'Authorization': 'Bearer ' + key, 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CC-Device': getDeviceId(),
+        },
         body: JSON.stringify({
-          model: opts.model || 'gpt-4o-mini',
-          messages: [{ role: 'system', content: opts.system }, { role: 'user', content: opts.user }],
-          max_tokens: opts.maxTokens || 500,
-          temperature: opts.temperature == null ? 0.1 : opts.temperature,
+          action: 'enrich',
+          system: opts.system,
+          user: opts.user,
+          model: opts.model,
         }),
         signal: controller.signal,
       });
-      if (!resp.ok) throw new Error('llm-http-' + resp.status);
+      if (resp.status === 402) throw new Error('free-limit');
+      if (resp.status === 429) throw new Error('rate-limited');
+      if (!resp.ok) throw new Error('broker-http-' + resp.status);
       const payload = await resp.json();
-      return (payload.choices && payload.choices[0] && payload.choices[0].message && payload.choices[0].message.content) || '';
+      return (payload && typeof payload.text === 'string') ? payload.text : '';
     } finally {
       clearTimeout(timer);
     }
@@ -471,8 +498,10 @@
       response = { status: 'error', assistantMode: 'error', answerMarkdown: 'The engine could not parse that query -- try rephrasing.', rankedMatches: [], evidence: [], followUpSuggestions: [], searchScope: 'database_only' };
     }
 
-    // 2) Optional AI enrichment when an OpenAI key is present (broker-ready seam).
-    if (getKey() && response && Array.isArray(response.rankedMatches) && response.rankedMatches.length) {
+    // 2) AI enrichment via the Pathway-00 broker (free pool by default, BYO
+    //    key after the device hits its daily cap). Failures fall through to
+    //    the deterministic engine via the catch below.
+    if (response && Array.isArray(response.rankedMatches) && response.rankedMatches.length) {
       try {
         const enriched = await enrichWithLLM(nextQuery, response);
         if (enriched) response = enriched;
