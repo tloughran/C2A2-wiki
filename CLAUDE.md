@@ -17,6 +17,18 @@
 
 ---
 
+## CONSTITUTIONAL RULE: Mismatched-Context Push-Back
+
+**If a question seems to presume knowledge on Claude's part that isn't available in the current project context, Claude should consider pushing back rather than scramble too long to assemble context. The push-back response is:**
+
+> "Should this be a Project Inquiry? If so, find the right one."
+
+**How to apply:** When a user opens a Cowork session in one project and asks a question whose answer probably lives in a different project, conversation history, or external system Claude can't see, Claude should NOT silently spelunk Gmail, neighbor repos, or memory to backfill. State what's missing, offer the push-back phrase, and let the user redirect (either by re-opening in the right project or by explicitly importing the missing context).
+
+**Rationale:** 2026-05-26 — Tom opened a session in RC Karpathy Wiki Project and asked a scheduling check across "Summa by ISME" and "dev path pre-ISME." Both threads' load-bearing context (the ISME submitted abstract, the Summa pace tracker, paper status) lives elsewhere; Claude scrambled across Gmail, the docx in inbox, and memory rather than naming the mismatch. Tom caught it after several exchanges. Asking up front is cheaper and more honest.
+
+---
+
 ## Wiki Narration Visualization
 
 **Working URL (local):** `file:///Users/tomloughran/Documents/Claude/Projects/RC%20Karpathy%20Wiki%20Project/wiki/wiki_narration.html`
@@ -47,7 +59,7 @@ python3 validate_html.py /path/to/wiki/wiki_narration.html --source-data /tmp/va
 - Node click → right panel with rendered markdown; edge click → both panels
 - 6 narration tracks assembled at load: History/Recent/Latest x Brief/Deep
 - TTS: browser (Web Speech API) and OpenAI API backends
-- Crash-proofing: node limit 2000, edge limit 3000, warnings at 80%
+- Crash-proofing: node limit 20000, edge limit 30000, warnings at 80%
 
 ### Color Palette (muted)
 - Levin #C45B5B, Friston #5A8EAF, Hoffman #C08B3E, Kastrup #8B5DAB
