@@ -78,6 +78,7 @@
   const C2A2_KEY_NAME = 'tts_api_key';
   const getKey = () => { try { return (localStorage.getItem(C2A2_KEY_NAME) || '').trim(); } catch (e) { return ''; } };
   const callLLM = async (opts) => {
+    const action = (opts && opts.action) || 'enrich';
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 20000);
     try {
@@ -88,18 +89,29 @@
           'X-CC-Device': getDeviceId(),
         },
         body: JSON.stringify({
-          action: 'enrich',
+          action: action,
           system: opts.system,
           user: opts.user,
           model: opts.model,
         }),
         signal: controller.signal,
       });
-      if (resp.status === 402) throw new Error('free-limit');
-      if (resp.status === 429) throw new Error('rate-limited');
-      if (!resp.ok) throw new Error('broker-http-' + resp.status);
-      const payload = await resp.json();
-      return (payload && typeof payload.text === 'string') ? payload.text : '';
+      let body = null;
+      try { body = await resp.json(); } catch (e) { body = null; }
+      if (resp.status === 402) {
+        const code = body && body.error === 'web_free_limit_reached' ? 'web-free-limit' : 'free-limit';
+        const err = new Error(code); err.body = body; throw err;
+      }
+      if (resp.status === 429) {
+        const err = new Error('rate-limited'); err.body = body; throw err;
+      }
+      if (resp.status === 502 && body && body.error === 'search_provider_down') {
+        const err = new Error('search-provider-down'); err.body = body; throw err;
+      }
+      if (!resp.ok) {
+        const err = new Error('broker-http-' + resp.status); err.body = body; throw err;
+      }
+      return body || {};
     } finally {
       clearTimeout(timer);
     }
@@ -427,7 +439,18 @@
     });
   };
 
-  const enrichWithLLM = async (query, base) => {
+  // System prompts for enrichWithLLM. The dataset prompt is the v1 contract.
+  // The web prompt is spec v2 §6.2: drop the "use only the provided candidates"
+  // constraint on the answer text (the broker's WEB_CONTEXT block carries the
+  // boundary instead), but still pick `ids` from the candidate set so the
+  // table ranking remains grounded in the dataset.
+  const ENRICH_SYSTEM_DATASET = 'You are a retrieval assistant for a directory of real-world communities. Each candidate line has an ID, name, Type/Subtype, Country, and Problem/Solution text. Pick the candidates most relevant to the user query. Reply with ONE JSON object and nothing else: {"ids":["C0808", ... up to 20, most relevant first], "answer":"2-3 sentence summary grounded ONLY in the chosen candidates"}. Use only the provided candidates; if none fit, return {"ids":[],"answer":"No strong match in the directory."}.';
+  const ENRICH_SYSTEM_WEB = 'You are a retrieval assistant for a directory of real-world communities. Each candidate line has an ID, name, Type/Subtype, Country, and Problem/Solution text. A WEB_CONTEXT block of up to 5 web search snippets will be appended below; you may consult it for the answer text. Pick the candidates most relevant to the user query. Reply with ONE JSON object and nothing else: {"ids":["C0808", ... up to 20, most relevant first], "answer":"2-4 sentence summary. When you draw on a web snippet, cite it by its numeric index in square brackets, e.g. [1] or [2]. Do not invent sources beyond the WEB_CONTEXT list."}. Pick ids only from the provided candidates; if no candidate fits, return {"ids":[],"answer":"No strong match in the directory."} -- you may still cite web snippets in the answer when relevant.';
+
+  const enrichWithLLM = async (query, base, opts) => {
+    const useWeb = opts && opts.forceDataset
+      ? false
+      : Boolean(state.allowExternalSearch);
     const ids0 = (base.rankedMatches || []).slice(0, 60).map((m) => m.communityId);
     const candidates = ids0.map((id) => dataById.get(id)).filter(Boolean);
     if (!candidates.length) return null;
@@ -436,21 +459,51 @@
       ' | P: ' + String(r.Problem_Statement || '').slice(0, 140) +
       ' | S: ' + String(r.Solution_Statement || '').slice(0, 140)
     ).join('\n');
-    const system = 'You are a retrieval assistant for a directory of real-world communities. Each candidate line has an ID, name, Type/Subtype, Country, and Problem/Solution text. Pick the candidates most relevant to the user query. Reply with ONE JSON object and nothing else: {"ids":["C0808", ... up to 20, most relevant first], "answer":"2-3 sentence summary grounded ONLY in the chosen candidates"}. Use only the provided candidates; if none fit, return {"ids":[],"answer":"No strong match in the directory."}.';
+    const system = useWeb ? ENRICH_SYSTEM_WEB : ENRICH_SYSTEM_DATASET;
     const user = 'Query: ' + query + '\n\nCandidates:\n' + summary;
-    const content = await callLLM({ system: system, user: user, maxTokens: 600 });
+    let payload;
+    try {
+      payload = await callLLM({
+        action: useWeb ? 'web_enrich' : 'enrich',
+        system: system,
+        user: user,
+      });
+    } catch (err) {
+      // Web branch only: cap-hit or Tavily-down -> one-shot dataset retry with banner.
+      // Spec v2 §6.4-6.5.
+      if (useWeb && (err.message === 'web-free-limit' || err.message === 'search-provider-down')) {
+        const banner = err.message === 'web-free-limit'
+          ? 'External search cap reached today -- showing in-dataset results.'
+          : 'External search unavailable -- showing in-dataset results.';
+        const fallback = await enrichWithLLM(query, base, { forceDataset: true });
+        if (fallback) {
+          fallback.warning = banner;
+          fallback.enrichmentNote = banner;
+          fallback.assistantMode = err.message === 'search-provider-down'
+            ? 'external-search-unavailable'
+            : 'database-only-after-cap';
+        }
+        return fallback;
+      }
+      throw err;
+    }
+    const content = typeof payload.text === 'string' ? payload.text : '';
     const jsonMatch = content.match(/\{[\s\S]*\}/);
     if (!jsonMatch) throw new Error('parse');
     const parsed = JSON.parse(jsonMatch[0]);
     const ids = Array.isArray(parsed.ids) ? parsed.ids.filter((id) => dataById.has(id)) : [];
     if (!ids.length) throw new Error('no-ids');
     const rankedMatches = ids.map((id, i) => ({ communityId: id, score: 1000 - i, reason: 'AI-ranked relevance' }));
+    const sources = useWeb && Array.isArray(payload.sources) ? payload.sources : null;
+    const footer = useWeb
+      ? '\n\n_AI-enriched with grounded web search (gpt-4o-mini + Tavily) over the built-in engine\'s candidate set -- verify each citation and source link._'
+      : '\n\n_AI-enriched ranking (gpt-4o-mini) over the built-in engine\'s candidate set -- verify against each community\'s source link._';
     return Object.assign({}, base, {
-      assistantMode: 'openai-enriched',
+      assistantMode: useWeb ? 'database-plus-web-cited' : 'openai-enriched',
       rankedMatches: rankedMatches,
       recommendedIds: ids,
-      answerMarkdown: (parsed.answer || base.answerMarkdown || '') +
-        '\n\n_AI-enriched ranking (gpt-4o-mini) over the built-in engine\'s candidate set -- verify against each community\'s source link._',
+      sources: sources,
+      answerMarkdown: (parsed.answer || base.answerMarkdown || '') + footer,
     });
   };
 
@@ -514,7 +567,13 @@
     state.aiPending = false;
     state.aiStatus = response.assistantMode === 'error' ? 'unavailable' : 'ok';
     state.aiError = response.enrichmentNote || '';
-    state.assistantTransport = response.assistantMode === 'openai-enriched' ? 'openai-enriched' : 'local-dataset';
+    state.assistantTransport = (
+      response.assistantMode === 'database-plus-web-cited' ? 'web-enriched'
+      : response.assistantMode === 'external-search-unavailable' ? 'external-search-unavailable'
+      : response.assistantMode === 'database-only-after-cap' ? 'openai-enriched'
+      : response.assistantMode === 'openai-enriched' ? 'openai-enriched'
+      : 'local-dataset'
+    );
     if (state.sort === 'name-asc') state.sort = 'relevance';
     addConversationMessage({
       role: 'assistant',
@@ -854,9 +913,12 @@
         : 'Assistant ready';
     if (els.assistantModeLabel) els.assistantModeLabel.textContent = transportLabel.replace(/-/g, ' ');
     if (els.assistantTransportPill) {
-      els.assistantTransportPill.textContent = state.assistantTransport === 'openai-enriched'
-        ? 'AI-enriched - gpt-4o-mini'
-        : 'Built-in engine';
+      els.assistantTransportPill.textContent = (
+        state.assistantTransport === 'web-enriched' ? 'AI-enriched + web - gpt-4o-mini + Tavily'
+        : state.assistantTransport === 'external-search-unavailable' ? 'External search unavailable'
+        : state.assistantTransport === 'openai-enriched' ? 'AI-enriched - gpt-4o-mini'
+        : 'Built-in engine'
+      );
     }
 
     if (state.aiStatus === 'unavailable') {
@@ -894,20 +956,56 @@
       return;
     }
 
+    // Spec v2 §6.3: when response.sources is present, render the body with
+    // [N] markers resolved to anchor links into the Sources list below.
+    const buildCitedBody = (text, sources) => {
+      if (!Array.isArray(sources) || !sources.length) return escapeHtml(text || '');
+      const parts = String(text || '').split(/(\[\d+\])/g);
+      return parts.map((segment) => {
+        const m = segment.match(/^\[(\d+)\]$/);
+        if (m) {
+          const n = parseInt(m[1], 10);
+          const src = sources[n - 1];
+          if (src && src.url) {
+            return '<sup class="citation"><a href="' + escapeHtml(src.url) + '" target="_blank" rel="noopener noreferrer">[' + n + ']</a></sup>';
+          }
+        }
+        return escapeHtml(segment);
+      }).join('');
+    };
+
     els.aiConversation.innerHTML = conversation.map((message) => {
       const response = message.response || {};
       const evidence = Array.isArray(response.evidence) ? response.evidence : [];
       const followUps = Array.isArray(response.followUpSuggestions) ? response.followUpSuggestions : [];
       const externalFindings = Array.isArray(response.externalFindings) ? response.externalFindings : [];
+      const sources = Array.isArray(response.sources) ? response.sources : [];
       const tags = [];
       if (message.role === 'assistant' && response.assistantMode) tags.push({ label: response.assistantMode, className: '' });
       if (message.role === 'assistant' && response.transport) tags.push({ label: response.transport, className: '' });
       if (message.role === 'assistant' && response.warning) tags.push({ label: response.warning, className: 'warning' });
+      const bodyHtml = (message.role === 'assistant' && sources.length)
+        ? buildCitedBody(message.text, sources)
+        : escapeHtml(message.text || '');
       return `
         <article class="conversation-message ${escapeHtml(message.role)}${message.id === 'pending' ? ' pending' : ''}">
           <div class="message-meta">${message.role === 'user' ? 'You' : 'Assistant'}</div>
-          <div class="message-body">${escapeHtml(message.text || '')}</div>
+          <div class="message-body">${bodyHtml}</div>
           ${tags.length ? `<div class="message-tags">${tags.map((tag) => `<span class="message-pill${tag.className ? ` ${tag.className}` : ''}">${escapeHtml(tag.label)}</span>`).join('')}</div>` : ''}
+          ${message.role === 'assistant' && sources.length ? `
+            <section class="message-section">
+              <h4>Sources</h4>
+              <ol class="message-list message-citations">
+                ${sources.map((src, i) => `
+                  <li id="cite-${i + 1}" class="message-item">
+                    <strong>[${i + 1}] ${escapeHtml(src.title || src.url || 'Source ' + (i + 1))}</strong>
+                    ${src.snippet ? `<div>${escapeHtml(src.snippet)}</div>` : ''}
+                    <a href="${escapeHtml(src.url || '')}" target="_blank" rel="noopener noreferrer">${escapeHtml(src.url || '')}</a>
+                  </li>
+                `).join('')}
+              </ol>
+            </section>
+          ` : ''}
           ${message.role === 'assistant' && evidence.length ? `
             <section class="message-section">
               <h4>Evidence</h4>
