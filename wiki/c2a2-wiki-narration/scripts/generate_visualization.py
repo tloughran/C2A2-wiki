@@ -204,6 +204,15 @@ def build_graph_data(data):
 
 def generate_html(data, nodes_json, links_json):
     """Generate the complete HTML visualization."""
+    # Inline the shared C2A2 search-pipeline module so the Sociogram remains
+    # self-contained. Single source of truth lives in wiki/lib/c2a2-search.js
+    # (loaded by every C2A2 surface; see app.js -> c2a2-search.js in the
+    # Community Explorer). DO NOT duplicate the module body in this template.
+    _script_dir = os.path.dirname(os.path.abspath(__file__))
+    _c2a2_search_path = os.path.normpath(os.path.join(_script_dir, '..', '..', 'lib', 'c2a2-search.js'))
+    with open(_c2a2_search_path, 'r', encoding='utf-8') as _f:
+        c2a2_search_js = _f.read()
+
     metadata = data.get('metadata', {})
     total_files = metadata.get('total_files', 0)
     findings = data.get('findings', [])
@@ -702,10 +711,12 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
     <input type="range" id="timeline-slider" min="0" max="0" value="0" oninput="onTimelineSlide(this.value)">
     <div style="flex:1;display:flex;flex-direction:column;gap:4px;min-width:0;height:100%;">
       <div id="narration-text">Ready. Check groups in Select Files to explore.</div>
-      <div id="footer-search-row" style="display:flex;gap:4px;">
-        <input type="text" id="search-input" placeholder="Search files, findings, connections..." style="flex:1;background:#1a1a2a;border:1px solid #3a3a4a;color:#e0e0e0;padding:3px 8px;border-radius:4px;font-size:12px;" onkeydown="if(event.key==='Enter')runSearch()">
+      <div id="footer-search-row" style="display:flex;gap:4px;align-items:center;flex-wrap:wrap;">
+        <input type="text" id="search-input" placeholder="Search files, findings, connections..." style="flex:1;min-width:200px;background:#1a1a2a;border:1px solid #3a3a4a;color:#e0e0e0;padding:3px 8px;border-radius:4px;font-size:12px;" onkeydown="if(event.key==='Enter')runSearch()">
         <button onclick="runSearch()" style="background:#1a1a2a;border:1px solid #3a3a4a;color:#e0e0e0;padding:3px 8px;border-radius:4px;cursor:pointer;font-size:11px;">Search</button>
         <button onclick="document.getElementById('search-input').value='';runSearch();" style="background:#1a1a2a;border:1px solid #3a3a4a;color:#e0e0e0;padding:3px 8px;border-radius:4px;cursor:pointer;font-size:11px;">Clear</button>
+        <label style="display:flex;align-items:center;gap:4px;font-size:11px;color:#bbb;cursor:pointer;"><input type="checkbox" id="search-ai-mode"> Ask AI</label>
+        <label style="display:flex;align-items:center;gap:4px;font-size:11px;color:#bbb;cursor:pointer;" title="Only used when Ask AI is on"><input type="checkbox" id="search-external"> Allow wider search</label>
       </div>
     </div>
     <div class="footer-controls">
@@ -753,6 +764,10 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
     </div>
   </div>
 </div>
+
+<script>
+""" + c2a2_search_js + """
+</script>
 
 <script>
 // ── DATA CONSTANTS ──
@@ -2195,13 +2210,22 @@ function buildNarrationTracks() {
 
 // ── SEARCH ──
 function runSearch() {
-  var query = document.getElementById('search-input').value.trim().toLowerCase();
-  if (!query) {
+  var raw = document.getElementById('search-input').value.trim();
+  if (!raw) {
     generateContextNarration();
     // Reset node highlights
     d3.selectAll('.node-circle').attr('opacity', brightness);
     return;
   }
+  // When "Ask AI" is on, route through the shared C2A2 broker pipeline
+  // (wiki/lib/c2a2-search.js, attached as window.C2A2Search). The external-
+  // search checkbox toggles 'enrich' vs 'web_enrich' inside the module.
+  var aiBox = document.getElementById('search-ai-mode');
+  if (aiBox && aiBox.checked) {
+    runSearchAI(raw);
+    return;
+  }
+  var query = raw.toLowerCase();
   // Search across node content, titles, and IDs
   var matches = NODES.filter(function(n) {
     if (!groupVisibility[n.group]) return false;
@@ -2250,6 +2274,90 @@ function runSearch() {
   }
 
   setNarrationText(parts.join(' '));
+}
+
+// runSearchAI: AI-routed search via the shared C2A2 broker pipeline.
+// Selects the top-30 visible nodes by simple term overlap as candidates, sends
+// them to the broker (action 'enrich' or 'web_enrich'), and renders the model's
+// chosen ids by dimming the rest. The cap-hit / Tavily-down fallback lives
+// inside window.C2A2Search.enrich (see wiki/lib/c2a2-search.js).
+var C2A2_SOC_SYSTEM_DATASET = 'You are a retrieval assistant for the C2A2 wiki sociogram. Each candidate line is a vault file: id | label | group | excerpt. Pick the most relevant ids and write a brief grounded answer using ONLY the candidates. Reply with ONE JSON object and nothing else: {"ids":["<id>", ... up to 12 most relevant], "answer":"2-3 sentence summary grounded in the candidates"}.';
+var C2A2_SOC_SYSTEM_WEB = 'You are a retrieval assistant for the C2A2 wiki sociogram. Each candidate line is a vault file: id | label | group | excerpt. A WEB_CONTEXT block of up to 5 web snippets will be appended. Pick the most relevant candidate ids and write a brief answer; when you draw on a web snippet, cite it [1], [2], etc. Pick ids only from the candidates. Reply with ONE JSON object: {"ids":["<id>", ... up to 12 most relevant], "answer":"2-4 sentence summary with bracket citations where applicable"}.';
+
+function runSearchAI(rawQuery) {
+  if (!window.C2A2Search || typeof window.C2A2Search.enrich !== 'function') {
+    setNarrationText('Search module not loaded.');
+    return;
+  }
+  var query = String(rawQuery || '').trim();
+  if (!query) return;
+  var extBox = document.getElementById('search-external');
+  var useWeb = !!(extBox && extBox.checked);
+
+  // Pre-rank visible nodes by term overlap; trim to 30 for the prompt budget.
+  var qTerms = query.toLowerCase().split(/\s+/).filter(Boolean);
+  var scored = [];
+  for (var i = 0; i < NODES.length; i++) {
+    var n = NODES[i];
+    if (!groupVisibility[n.group]) continue;
+    var hay = (n.label + ' ' + n.id + ' ' + (n.content || '')).toLowerCase();
+    var s = 0;
+    for (var j = 0; j < qTerms.length; j++) { if (hay.indexOf(qTerms[j]) !== -1) s++; }
+    if (s > 0) scored.push({n: n, s: s});
+  }
+  scored.sort(function(a, b) { return b.s - a.s; });
+  scored = scored.slice(0, 30);
+  if (!scored.length) {
+    setNarrationText('No visible nodes match "' + query + '". Try a different query or expand the filters at left.');
+    return;
+  }
+  var summary = scored.map(function(x) {
+    var n = x.n;
+    var snip = String(n.content || '').replace(/\\s+/g, ' ').slice(0, 200);
+    return n.id + ' | ' + n.label + ' | ' + n.group + ' | ' + snip;
+  }).join('\\n');
+  var userBlock = 'Query: ' + query + '\\n\\nCandidates:\\n' + summary;
+
+  setNarrationText('Asking C2A2 (' + (useWeb ? 'database + web' : 'database') + ') ...');
+
+  window.C2A2Search.enrich({
+    useWeb: useWeb,
+    dataset: {system: C2A2_SOC_SYSTEM_DATASET, user: userBlock},
+    web: useWeb ? {system: C2A2_SOC_SYSTEM_WEB, user: userBlock} : null,
+  }).then(function(res) {
+    var content = (res.payload && typeof res.payload.text === 'string') ? res.payload.text : '';
+    var m = content.match(/\{[\s\S]*\}/);
+    if (!m) { setNarrationText('AI returned a response that could not be parsed. Uncheck "Ask AI" to use local search.'); return; }
+    var parsed;
+    try { parsed = JSON.parse(m[0]); } catch (e) { setNarrationText('AI response JSON parse failed.'); return; }
+    var pickedIds = Array.isArray(parsed.ids) ? parsed.ids : [];
+    var pickedSet = {};
+    for (var k = 0; k < pickedIds.length; k++) pickedSet[pickedIds[k]] = true;
+
+    d3.selectAll('.node-circle')
+      .transition().duration(300)
+      .attr('opacity', function(d) {
+        if (!groupVisibility[d.group]) return 0;
+        return pickedSet[d.id] ? brightness : brightness * 0.1;
+      });
+
+    var modeLabel = res.mode === 'database-plus-web-cited' ? ' [web + database]'
+      : res.mode === 'database-only-after-cap' ? ' [database -- web cap reached]'
+      : res.mode === 'external-search-unavailable' ? ' [database -- web unavailable]'
+      : ' [database]';
+    var warning = res.warning ? (' ' + res.warning) : '';
+    var sourcesLine = '';
+    if (Array.isArray(res.payload && res.payload.sources) && res.payload.sources.length) {
+      sourcesLine = ' Sources: ' + res.payload.sources.map(function(s, i) {
+        return '[' + (i + 1) + '] ' + (s.title || s.url || '');
+      }).join(' | ');
+    }
+    var answer = parsed.answer || '(no answer text)';
+    setNarrationText('Ask "' + query + '"' + modeLabel + ':' + warning + ' ' + answer + sourcesLine);
+  }).catch(function(err) {
+    var code = (err && err.message) || 'unknown';
+    setNarrationText('AI request failed (' + code + '). Uncheck "Ask AI" to fall back to local search.');
+  });
 }
 
 // ── TOUR CONTROLS ──

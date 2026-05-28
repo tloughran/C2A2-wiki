@@ -52,70 +52,23 @@
   // decides free pool (Tom's pool) vs BYO key vs deny per request, then
   // forwards to OpenRouter. See PATHWAY00_BROKER_SPEC.md and
   // supabase/functions/cc-broker/index.ts.
-  const BROKER_URL = 'https://akhcocmgfwybdovqeovd.supabase.co/functions/v1/cc-broker';
-  const DEVICE_ID_KEY = 'c2a2_device_id';
-  const getDeviceId = () => {
-    try {
-      let id = (localStorage.getItem(DEVICE_ID_KEY) || '').trim();
-      if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id)) {
-        id = (window.crypto && typeof crypto.randomUUID === 'function')
-          ? crypto.randomUUID()
-          : 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
-              const r = (Math.random() * 16) | 0;
-              return (c === 'x' ? r : (r & 0x3) | 0x8).toString(16);
-            });
-        localStorage.setItem(DEVICE_ID_KEY, id);
-      }
-      return id;
-    } catch (e) {
-      return '00000000-0000-4000-8000-000000000000';
-    }
-  };
+  //
+  // Implementation lifted into wiki/lib/c2a2-search.js so the Sociogram and
+  // future Accelerator tabs share the same broker URL, device-id handling,
+  // error-code translation, and web-cap fallback. See that file for the API.
+  if (!window.C2A2Search) {
+    console.error('C2A2Search is not available. Load wiki/lib/c2a2-search.js before app.js.');
+    return;
+  }
+  const BROKER_URL = window.C2A2Search.BROKER_URL;
+  const getDeviceId = window.C2A2Search.getDeviceId;
   // getKey() is preserved as a "user has registered a personal BYO key" signal
   // the surrounding UI uses (transport pill, status text). It does NOT gate
   // broker calls -- the free pool covers users without a key. UI cleanup
   // (status pill copy, free-limit "add your key" panel) is step 2 of the swap.
   const C2A2_KEY_NAME = 'tts_api_key';
   const getKey = () => { try { return (localStorage.getItem(C2A2_KEY_NAME) || '').trim(); } catch (e) { return ''; } };
-  const callLLM = async (opts) => {
-    const action = (opts && opts.action) || 'enrich';
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 20000);
-    try {
-      const resp = await fetch(BROKER_URL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-CC-Device': getDeviceId(),
-        },
-        body: JSON.stringify({
-          action: action,
-          system: opts.system,
-          user: opts.user,
-          model: opts.model,
-        }),
-        signal: controller.signal,
-      });
-      let body = null;
-      try { body = await resp.json(); } catch (e) { body = null; }
-      if (resp.status === 402) {
-        const code = body && body.error === 'web_free_limit_reached' ? 'web-free-limit' : 'free-limit';
-        const err = new Error(code); err.body = body; throw err;
-      }
-      if (resp.status === 429) {
-        const err = new Error('rate-limited'); err.body = body; throw err;
-      }
-      if (resp.status === 502 && body && body.error === 'search_provider_down') {
-        const err = new Error('search-provider-down'); err.body = body; throw err;
-      }
-      if (!resp.ok) {
-        const err = new Error('broker-http-' + resp.status); err.body = body; throw err;
-      }
-      return body || {};
-    } finally {
-      clearTimeout(timer);
-    }
-  };
+  const callLLM = (opts) => window.C2A2Search.callBroker(opts);
 
   const typeOrder = ['Academic', 'Ideological', 'Corporate'];
   const countBy = (rows, key) => {
@@ -459,34 +412,16 @@
       ' | P: ' + String(r.Problem_Statement || '').slice(0, 140) +
       ' | S: ' + String(r.Solution_Statement || '').slice(0, 140)
     ).join('\n');
-    const system = useWeb ? ENRICH_SYSTEM_WEB : ENRICH_SYSTEM_DATASET;
-    const user = 'Query: ' + query + '\n\nCandidates:\n' + summary;
-    let payload;
-    try {
-      payload = await callLLM({
-        action: useWeb ? 'web_enrich' : 'enrich',
-        system: system,
-        user: user,
-      });
-    } catch (err) {
-      // Web branch only: cap-hit or Tavily-down -> one-shot dataset retry with banner.
-      // Spec v2 §6.4-6.5.
-      if (useWeb && (err.message === 'web-free-limit' || err.message === 'search-provider-down')) {
-        const banner = err.message === 'web-free-limit'
-          ? 'External search cap reached today -- showing in-dataset results.'
-          : 'External search unavailable -- showing in-dataset results.';
-        const fallback = await enrichWithLLM(query, base, { forceDataset: true });
-        if (fallback) {
-          fallback.warning = banner;
-          fallback.enrichmentNote = banner;
-          fallback.assistantMode = err.message === 'search-provider-down'
-            ? 'external-search-unavailable'
-            : 'database-only-after-cap';
-        }
-        return fallback;
-      }
-      throw err;
-    }
+    const userBlock = 'Query: ' + query + '\n\nCandidates:\n' + summary;
+    // Cap-hit / Tavily-down one-shot retry with banner lives in
+    // window.C2A2Search.enrich -- see wiki/lib/c2a2-search.js (spec v2 §6.4-6.5).
+    const enrichResult = await window.C2A2Search.enrich({
+      useWeb: useWeb,
+      dataset: { system: ENRICH_SYSTEM_DATASET, user: userBlock },
+      web: useWeb ? { system: ENRICH_SYSTEM_WEB, user: userBlock } : null,
+    });
+    const payload = enrichResult.payload;
+    const isWebMode = enrichResult.mode === 'database-plus-web-cited';
     const content = typeof payload.text === 'string' ? payload.text : '';
     const jsonMatch = content.match(/\{[\s\S]*\}/);
     if (!jsonMatch) throw new Error('parse');
@@ -494,17 +429,22 @@
     const ids = Array.isArray(parsed.ids) ? parsed.ids.filter((id) => dataById.has(id)) : [];
     if (!ids.length) throw new Error('no-ids');
     const rankedMatches = ids.map((id, i) => ({ communityId: id, score: 1000 - i, reason: 'AI-ranked relevance' }));
-    const sources = useWeb && Array.isArray(payload.sources) ? payload.sources : null;
-    const footer = useWeb
+    const sources = isWebMode && Array.isArray(payload.sources) ? payload.sources : null;
+    const footer = isWebMode
       ? '\n\n_AI-enriched with grounded web search (gpt-4o-mini + Tavily) over the built-in engine\'s candidate set -- verify each citation and source link._'
       : '\n\n_AI-enriched ranking (gpt-4o-mini) over the built-in engine\'s candidate set -- verify against each community\'s source link._';
-    return Object.assign({}, base, {
-      assistantMode: useWeb ? 'database-plus-web-cited' : 'openai-enriched',
+    const result = Object.assign({}, base, {
+      assistantMode: enrichResult.mode,
       rankedMatches: rankedMatches,
       recommendedIds: ids,
       sources: sources,
       answerMarkdown: (parsed.answer || base.answerMarkdown || '') + footer,
     });
+    if (enrichResult.warning) {
+      result.warning = enrichResult.warning;
+      result.enrichmentNote = enrichResult.warning;
+    }
+    return result;
   };
 
   const runAiQuery = async (value = '') => {
