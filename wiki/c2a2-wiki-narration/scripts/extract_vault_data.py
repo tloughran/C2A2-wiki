@@ -29,6 +29,40 @@ def extract_date_from_mtime(filepath):
     return datetime.fromtimestamp(mtime).strftime('%Y-%m-%d')
 
 
+def extract_fetched_at(filepath):
+    """Read a YAML frontmatter `fetched_at:` value (YYYY-MM-DD) from a markdown
+    file. Used by parse_summa_vault to anchor Summa synthesis nodes on the
+    Gregorian axis at the date Tom engaged the day (the transcript fetch date),
+    which matches the C2A2 wiki's date-slider semantics. Returns '' if the file
+    is missing or the field is absent."""
+    try:
+        with open(filepath, encoding="utf-8", errors="replace") as fh:
+            head = fh.read(2000)
+    except OSError:
+        return ""
+    m = re.search(r'^fetched_at:\s*(\d{4}-\d{2}-\d{2})', head, re.MULTILINE)
+    return m.group(1) if m else ""
+
+
+def extract_frontmatter_title(content):
+    """Read a YAML frontmatter `title:` value from a markdown file's leading
+    content block. Used for Habash transcript nodes (whose body is raw ASR
+    with no `# ` heading, so the generic extract_title falls through to junk).
+    Returns '' if no frontmatter title is present."""
+    m = re.match(r'---\n(.*?)\n---', content, re.DOTALL)
+    if not m:
+        return ""
+    fm = m.group(1)
+    tm = re.search(r'^title:\s*(.+?)\s*$', fm, re.MULTILINE)
+    if not tm:
+        return ""
+    val = tm.group(1).strip()
+    # Strip surrounding quotes if present
+    if (val.startswith('"') and val.endswith('"')) or (val.startswith("'") and val.endswith("'")):
+        val = val[1:-1]
+    return val
+
+
 def extract_title(content):
     for line in content.split('\n'):
         line = line.strip()
@@ -529,6 +563,21 @@ def build_connections(files):
                 "subtype": "summa-day-continuity",
                 "bridge": "same",
             })
+
+    # Transcript↔synthesis pair edges. One per day. Pulls the Habash transcript
+    # node and its contemporary commentary into the same visual clump under the
+    # force layout, and lets edge-click surface both in the read panel.
+    for f in files:
+        if f.get("summa_kind") == "transcript":
+            pair = f.get("summa_pair_synthesis")
+            if pair and pair in fp_set:
+                wikilink_edges.append({
+                    "source": f["filepath"],
+                    "target": pair,
+                    "type": "wikilink",
+                    "subtype": "summa-transcript-pair",
+                    "bridge": "same",
+                })
     # Question-continuity. Group day-files by question; within each question's
     # day list, link adjacent days. (Avoids double-linking with day-continuity
     # because we use a separate seen-set.)
@@ -668,6 +717,10 @@ def parse_summa_vault(summa_path):
 
         entries = by_synth[synth_rel]
         day = entries[0].get("day") if entries else None
+        transcript_rel = entries[0].get("transcript") if entries else None
+        node_date = ""
+        if transcript_rel:
+            node_date = extract_fetched_at(summa_root / transcript_rel)
 
         node_path = f"summa/{synth_rel}"
         # Distinct question numbers covered by this synthesis day
@@ -694,7 +747,7 @@ def parse_summa_vault(summa_path):
             "filepath": node_path,
             "filename": synth_full.name,
             "directory": "summa",
-            "date": "",  # Summa entries are dated by day-number, not Gregorian date
+            "date": node_date,  # transcript `fetched_at` = Gregorian date Tom engaged Day N
             "title": title,
             "wikilinks": extract_wikilinks(content),
             "references": synth_refs,
@@ -706,6 +759,59 @@ def parse_summa_vault(summa_path):
             "summa_kind": "synthesis",
             "summa_day":  day,
             "summa_questions": questions,
+        })
+
+    # PASS B — Habash transcripts. One node per day, paired 1:1 with the
+    # synthesis node above. We iterate the same `by_synth` keys so coverage
+    # tracks the index (and quietly skip days whose transcript file isn't
+    # on disk yet). Each transcript node carries the same fetched_at date as
+    # its synthesis (they share that field by construction), so the slider
+    # treats the pair as a coupled point on the Gregorian axis.
+    for synth_rel in sorted(by_synth.keys()):
+        entries = by_synth[synth_rel]
+        transcript_rel = entries[0].get("transcript") if entries else None
+        if not transcript_rel:
+            continue
+        tr_full = summa_root / transcript_rel
+        if not tr_full.exists():
+            continue
+        try:
+            tr_content = tr_full.read_text(encoding="utf-8", errors="replace")
+        except Exception:
+            tr_content = ""
+
+        day = entries[0].get("day")
+        questions = sorted({
+            e.get("question") for e in entries if e.get("question") is not None
+        })
+        tr_date = extract_fetched_at(tr_full)
+        # Title: prefer the Habash video title from frontmatter; fall back to
+        # filename stem. Prefix marks it as a transcript in node-card displays.
+        fm_title = extract_frontmatter_title(tr_content)
+        if fm_title:
+            tr_title = f"Habash transcript: {fm_title}"
+        else:
+            tr_title = f"Habash transcript: {tr_full.stem}"
+
+        tr_refs = extract_references(tr_content)
+        nodes.append({
+            "filepath": f"summa/{transcript_rel}",
+            "filename": tr_full.name,
+            "directory": "summa",
+            "date": tr_date,
+            "title": tr_title,
+            "wikilinks": extract_wikilinks(tr_content),
+            "references": tr_refs,
+            "has_tags": has_tags_for_refs(tr_refs),
+            "thinker_mentions": extract_thinker_mentions(tr_content),
+            "size_bytes": len(tr_content.encode("utf-8")),
+            "content": truncate_at_boundary(tr_content, CONTENT_CAP),
+            "summa_kind": "transcript",
+            "summa_day":  day,
+            "summa_questions": questions,
+            # Carry the paired synthesis filepath so PASS C edge-building can
+            # emit a transcript↔synthesis edge without re-grouping by day.
+            "summa_pair_synthesis": f"summa/{synth_rel}",
         })
 
     # PASS C — also include refs/*.md as Summa nodes. The most important is
@@ -785,7 +891,7 @@ def main():
     if summa_path:
         summa_nodes = parse_summa_vault(summa_path)
         if summa_nodes:
-            print(f"Summa: added {len(summa_nodes)} synthesis nodes from {summa_path}",
+            print(f"Summa: added {len(summa_nodes)} nodes (transcripts + synthesis + refs) from {summa_path}",
                   file=sys.stderr)
             files.extend(summa_nodes)
 
