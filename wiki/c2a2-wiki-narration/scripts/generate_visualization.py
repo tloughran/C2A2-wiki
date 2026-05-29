@@ -2209,12 +2209,98 @@ function buildNarrationTracks() {
 }
 
 // ── SEARCH ──
+// ── RELATIONAL FOCUS ENGINE (navigation increment 1, 2026-05-29) ──
+// Deterministic graph-state navigation. A "focus:" query isolates the node set
+// computed by edge traversal: entity-group nodes linked to target-group nodes
+// (and the target nodes they link to), heavy-fading everything else (and its
+// links) to 5% opacity in place. No reflow, no LLM, fully reversible via the
+// empty-query reset in runSearch(). Computes over the FULL link set (not the
+// old 30-candidate cap, not visible-only).
+// Syntax:  focus: <entityTokens> ~ <groupTokens>     e.g.  focus: levin ~ summa
+//   left of '~'  = entity tokens, resolved to tradition group keys
+//   right of '~' = structure-group tokens used as group keys
+//   relation fixed to "linked", action fixed to "isolate" in this increment.
+function resolveGroupKeys(tokens) {
+  // Map each whitespace token to a valid group key present in groupVisibility.
+  // Exact key wins; else 'traditions/<token>'; else first key containing token.
+  var keys = Object.keys(groupVisibility);
+  var out = [];
+  tokens.forEach(function(tok) {
+    tok = String(tok || '').trim().toLowerCase();
+    if (!tok) return;
+    if (groupVisibility.hasOwnProperty(tok)) { out.push(tok); return; }
+    var trad = 'traditions/' + tok;
+    if (groupVisibility.hasOwnProperty(trad)) { out.push(trad); return; }
+    for (var i = 0; i < keys.length; i++) {
+      if (keys[i].toLowerCase().indexOf(tok) !== -1) { out.push(keys[i]); return; }
+    }
+  });
+  return out;
+}
+function linkEndpointId(end) {
+  // Post-simulation, d3 swaps link source/target to node objects; pre-init they
+  // are string ids (restored at load). Normalize to the string id either way.
+  return (end && typeof end === 'object') ? end.id : end;
+}
+function runFocus(rawAfterPrefix) {
+  var sides = String(rawAfterPrefix || '').split('~');
+  if (sides.length < 2) {
+    setNarrationText('Focus syntax: focus: <entity> ~ <group>   e.g.  focus: levin ~ summa');
+    return;
+  }
+  var entityKeys = resolveGroupKeys(sides[0].split(/\s+/));
+  var groupKeys  = resolveGroupKeys(sides[1].split(/\s+/));
+  if (!entityKeys.length || !groupKeys.length) {
+    setNarrationText('Focus: could not resolve entity or group. Use traditions/<name> (e.g. levin) and a structure group (e.g. summa, master, architecture).');
+    return;
+  }
+  var A = {}, B = {};
+  for (var i = 0; i < NODES.length; i++) {
+    var g = NODES[i].group;
+    if (entityKeys.indexOf(g) !== -1) A[NODES[i].id] = true;
+    if (groupKeys.indexOf(g)  !== -1) B[NODES[i].id] = true;
+  }
+  var focus = {};
+  for (var k = 0; k < LINKS.length; k++) {
+    var sid = linkEndpointId(LINKS[k].source);
+    var tid = linkEndpointId(LINKS[k].target);
+    if (A[sid] && B[tid]) { focus[sid] = true; focus[tid] = true; }
+    if (A[tid] && B[sid]) { focus[tid] = true; focus[sid] = true; }
+  }
+  var focusCount = Object.keys(focus).length;
+  d3.selectAll('.node-circle')
+    .transition().duration(300)
+    .attr('opacity', function(d) {
+      if (!groupVisibility[d.group]) return 0;
+      return focus[d.id] ? brightness : brightness * 0.05;
+    });
+  d3.selectAll('.link-line')
+    .transition().duration(300)
+    .attr('opacity', function(d) {
+      var ls = linkEndpointId(d.source), lt = linkEndpointId(d.target);
+      return (focus[ls] && focus[lt]) ? Math.min(0.5 * brightness, 1) : (brightness * 0.05);
+    });
+  var lbl = entityKeys.join(', ') + ' ~ ' + groupKeys.join(', ');
+  if (!focusCount) {
+    setNarrationText('Focus "' + lbl + '": no linked pairs found (computed over the full graph). Check the group keys, or that both groups are enabled at left.');
+  } else {
+    setNarrationText('Focus "' + lbl + '": isolated ' + focusCount + ' nodes linked across the two sets. Clear the search box to restore.');
+  }
+}
+
 function runSearch() {
   var raw = document.getElementById('search-input').value.trim();
   if (!raw) {
     generateContextNarration();
-    // Reset node highlights
+    // Reset node + link highlights (restores a prior focus: fade too).
     d3.selectAll('.node-circle').attr('opacity', brightness);
+    d3.selectAll('.link-line').attr('opacity', Math.min(0.5 * brightness, 1));
+    return;
+  }
+  // Deterministic relational focus command (navigation increment 1). Explicit
+  // prefix never collides with substring search, and overrides AI mode.
+  if (raw.toLowerCase().indexOf('focus:') === 0) {
+    runFocus(raw.slice(raw.indexOf(':') + 1));
     return;
   }
   // When "Ask AI" is on, route through the shared C2A2 broker pipeline
@@ -2346,6 +2432,10 @@ function runSearchAI(rawQuery) {
       : res.mode === 'external-search-unavailable' ? ' [database -- web unavailable]'
       : ' [database]';
     var warning = res.warning ? (' ' + res.warning) : '';
+    // Name the model that answered, when the broker echoes it in the payload.
+    // (cc-broker must include payload.model for this to show; absent that it
+    // stays blank rather than echoing a redundant transport label.)
+    var modelLabel = (res.payload && res.payload.model) ? (' (model: ' + res.payload.model + ')') : '';
     var sourcesLine = '';
     if (Array.isArray(res.payload && res.payload.sources) && res.payload.sources.length) {
       sourcesLine = ' Sources: ' + res.payload.sources.map(function(s, i) {
@@ -2353,7 +2443,7 @@ function runSearchAI(rawQuery) {
       }).join(' | ');
     }
     var answer = parsed.answer || '(no answer text)';
-    setNarrationText('Ask "' + query + '"' + modeLabel + ':' + warning + ' ' + answer + sourcesLine);
+    setNarrationText('Ask "' + query + '"' + modeLabel + modelLabel + ':' + warning + ' ' + answer + sourcesLine);
   }).catch(function(err) {
     var code = (err && err.message) || 'unknown';
     setNarrationText('AI request failed (' + code + '). Uncheck "Ask AI" to fall back to local search.');
