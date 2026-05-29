@@ -18,8 +18,8 @@ karpathy_wiki_sources:
 mind_first_reframe: "Under conscious-realist monism the Q.66 hierarchy and Q.67 eschatological filter become a single sort: agent-dispositions sorted by how deeply they relate to what is ontologically fundamental. Interface-relative dispositions (Hoffman) and alter-local appetites (Kastrup) dissolve when the interface dissolves; charity — the relation to Mind-at-Large — and justice (will-rooted, pattern-content substrate-independent in Levin/Carroll's senses) persist. Aquinas's filter survives intact; the soul-body substrate metaphysics is reframed as interface-vs-underlying-mind."
 central_theme_thread: "Perspective-limitation is precisely what makes each agent a particular limited interface; the eschatological question is what remains when limitation dissolves. Loving unity remains. Charity is the disposition that *is* this relation already, in seed-form, under limitation — it persists because it is not a coping mechanism for limitation but the very thing limitation was scaffolding toward. Salvation as inclusion in the people united with God (Wright) names the agent's full participation in what charity already, in part, computes."
 evidence_strength_summary: "Wright's resurrection-of-the-body claims rest on historical-Jesus research — disputed but well-defended. Hoffman's interface theory of perception: speculative metaphysics built on rigorous evolutionary-game-theory simulations; the interface-claim about spacetime is contested. Kastrup's analytic idealism: coherent metaphysics, no decisive empirical falsifier. Levin's substrate-change work (planarian regeneration retaining trained behaviors): empirically firm at small scale, large extrapolations are speculative. The claim that charity is the disposition that survives interface-change is theological/metaphysical, supported by structural argument."
-last_qc_at: "2026-05-21T06:28:45"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-28T06:30:17"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/094, theme/equality-of-virtues, theme/eschatological-filter, theme/charity-remains]
 ---
 
@@ -74,7 +74,7 @@ Perspective-limitation individuates agents. Each agent's interface — its embod
 - **Hoffman (interface theory):** formalization of interface-relative vs. interface-underlying dispositions. Speculative-formal.
 - **Kastrup (analytic idealism):** ontological frame in which charity persists because it is the relation to what the alter is an alter of. Speculative-metaphysical.
 - **Levin (multi-scale agency, substrate-independence of pattern):** empirical analogue of Q.67's selective persistence. Empirical.
-- **Wright (canonical: resurrection of the body):** scriptural ground truth for "renewed, not abolished." Historiographic.
+- **Wright (canonical: resurrection of the body):** "renewed, not abolished" as the shape of resurrection-ontology. Historiographic.
 - **Rohr (canonical: Universal Christ):** charity as the eternal divine pattern. Contemplative.
 - **CROSS-08 (master index, interface-dissolution):** Tom's Synergistic Coil — one resource (interface-vs-substrate distinction) solves Aquinas's eschatology, Hoffman's metaphysics, and Kastrup's analytic idealism.
 

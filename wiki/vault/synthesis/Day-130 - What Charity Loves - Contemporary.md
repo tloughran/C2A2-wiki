@@ -6,6 +6,7 @@ length_target_words: 2200
 length_actual_words: 1907
 length_ratio_to_target: 0.867
 length_tier: medium
+length_note: "Came in under the 2200 medium target (0.867). Charity's growth (Q.24) and reach (Q.25) consolidate around two clean moves — the unbounded upward spiral and the concentric nested-agency ordo, completed by the Day-125-mirror demon-exclusion limit — with Fredrickson PRS-01/15 + Friston PRS-06 + Levin nested selves + Stump PRS-14/16 + Wright + Rohr PRS-03 each contributing exactly once. Per the project length policy, substantive integrity over word count."
 karpathy_wiki_sources:
   - "traditions/fredrickson/prs_triplets.md (PRS-01 upward spirals; PRS-06 democratizing participation / radical inclusivity; PRS-15 love of strangers and out-groups carries lasting prosocial benefit)"
   - "traditions/stump/prs_triplets.md (PRS-14 corporate hylomorphism; PRS-16 tradition as a united-something-or-other)"
@@ -17,8 +18,8 @@ evidence_strength_summary: "Charity's unbounded increase by deeper participation
 mind_first_reframe: "Charity grows without ceiling by ever-deeper participation, not accretion — an open upward spiral of coupling (Fredrickson PRS-01). Its object-order is the concentric structure of the loving whole: God, then one's own soul, then the neighbor's soul, then the body, each included in proportion to nearness to God — nested agency / proportioned coupling (Levin nested selves, Friston PRS-06, Stump PRS-14). Self and even body are included, not erased; sinners and enemies are included by loving the good of their nature; the one exclusion is the will finally fixed in evil — the Day-125 final-impenitence limit. The order is the ordo of 'every limited perspective contained in the simple whole.'"
 central_theme_thread: "Q.25 gives the central theme its ordo. 'When all limitations are removed, the simple whole is seen and every limited perspective is contained in it' — the order of charity is what that containment looks like from within: a concentric inclusion proportioned to nearness to God, embracing self, neighbor, body, stranger, even enemy, excluding only the perspective sealed against the whole."
 tags: [synthesis, day/130, theme/order-of-charity]
-last_qc_at: "2026-05-21T10:28:52"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-28T14:30:42"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 130 — Contemporary Parallel: The Order and Reach of the Loving Whole

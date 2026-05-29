@@ -17,7 +17,7 @@ evidence_strength_summary: "Sin against the Spirit as disabling one's own error-
 mind_first_reframe: "The sin against the Holy Spirit is the agent's disabling of its own error-correcting loop — despair kills the goal-prior, presumption mutes the error/precision signal, obstinacy and resisting-known-truth refuse the update (Friston PRS-04/09/10) — so its unforgivability is structural (the channel by which mercy would be received is switched off from the creature's side), not a limit in mercy; Q.15's blindness of mind and dullness of sense are channel-loss vs low precision (Hawkins), genuinely modulated by embodied appetite."
 central_theme_thread: "This sin is the exact negation of the central theme's clause that we work out salvation 'aware of our limitations and our need for guidance from those who perceive more of the whole': the limited perspective destroys its own capacity to receive correction, nailing shut the doorway that the agent's incompleteness was meant to open — the limit case of the whole project, in which the computation toward loving unity becomes unrecoverable because its very instruments (hope, fear, docility) have been dismantled."
 tags: [synthesis, day/125, theme/refusing-correction]
-last_qc_at: "2026-05-21T04:23:57"
+last_qc_at: "2026-05-28T06:30:16"
 last_qc_outcome: "pass"
 ---
 

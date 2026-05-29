@@ -86,5 +86,5 @@ karpathy_wiki_sources:
   - "traditions/wright/ — Romans 8; 1 Cor 15 resurrection horizon"
 evidence_strength_summary: "Predictive-processing fear/surprise, intolerance-of-uncertainty as anxiety mechanism, co-regulation reducing fear, and exposure-reduces-fear are all empirically robust. Hemispheric account is clinically supported. Hell-as-state-not-place is theological reading consistent with Wright and Rohr but not a unanimous Christian position."
 tags: [synthesis, day/082, theme/fear, theme/anxiety, theme/irascible-passions, theme/love-causes-fear]
-last_qc_at: "2026-05-21T02:28:15"
+last_qc_at: "2026-05-28T02:29:07"
 last_qc_outcome: "pass"

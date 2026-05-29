@@ -6,6 +6,7 @@ length_target_words: 2200
 length_actual_words: 1871
 length_ratio_to_target: 0.85
 length_tier: medium
+length_note: "Came in under the 2200 medium target (0.85). The episode's load is one mechanism (precision-on-divergence) read as the unifying account of the fourfold kinds of fear and the certainty-of-wayfarer puzzle — Friston PRS-04/16 + Wright already/not-yet + Stump PRS-09 all converge on it without redundancy. Per the project length policy, substantive integrity over word count."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler / precision; PRS-16 expected free energy = risk + ambiguity; PRS-10 active reasoning / model selection)"
   - "traditions/stump/prs_triplets.md (PRS-09 virtue as cooperative causality / gifts as grace perfecting natural powers)"
@@ -16,8 +17,8 @@ evidence_strength_summary: "Fear as the precision-weighting on the divergence si
 mind_first_reframe: "Fear is the precision the agent places on its divergence-from-target signal — the felt valuation of how much is at stake in missing the good. Servile fear weights punishment; filial fear weights separation from the beloved whole. As charity (the goal-prior's binding to the whole) grows, the weighting migrates from outcome-to-self toward relation-to-whole: servile fear fades, filial fear deepens. 'Fear of the Lord is the beginning of wisdom' = the orienting prior that there is a target worth not missing, present before any deliberation refines it."
 central_theme_thread: "Filial fear is 'fear and trembling' precisely calibrated: not terror of punishment but the reverent, increasing valuation of the whole one is being drawn into and could fall away from. It is the affective form of perspective-limitation taken seriously — the agent that knows how much it does not yet hold, and how much there is to lose."
 tags: [synthesis, day/127, theme/fear-as-precision]
-last_qc_at: "2026-05-21T10:28:52"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-28T14:30:17"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 127 — Contemporary Parallel: Fear as the Precision Signal

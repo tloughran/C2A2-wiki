@@ -21,8 +21,8 @@ evidence_strength_summary: "Prevenient grace claim: theological. Friston prior-s
 mind_first_reframe: "Aquinas's 'God alone causes grace' reads, under active-inference + mind-monism, as the architectural fact that an agent cannot install from inside its own prior a prior including the wider mind — that re-prioring belongs to the embedding system; agent/wider-mind cooperation is internal to one ground, not bilateral between two substances."
 central_theme_thread: "The cooperation architecture (prevenient grace, free will, first grace not meritable, subsequent merit real) is the central claim's working-out-of-salvation-in-fear-and-trembling: perspective-limitations real, resources installed from outside, the transcending still requires the agent's work."
 tags: [synthesis, day/117, theme/grace, theme/causation, theme/free-will]
-last_qc_at: "2026-05-21T12:22:35"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-28T16:21:56"
+last_qc_outcome: "pass"
 ---
 
 # Day 117 — Justification (Contemporary Parallel)

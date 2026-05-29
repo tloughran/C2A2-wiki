@@ -17,8 +17,8 @@ karpathy_wiki_sources:
 mind_first_reframe: "Under conscious-realist monism *infusion* does not require a supernatural-vs-natural ontological dualism: the theological virtues are scaffolded priors — dispositions supplied at the dissociative boundary (Kastrup), at cross-scale morphogenetic interfaces (Levin), or as hyperpriors set by developmental and cultural context (Friston) — that a limited agent cannot derive from inside its own optimization loop. Aquinas's categorical distinction (virtues whose formal object is God) survives intact; the substantialist account of infusion is reframed as boundary- or scale-supplied disposition."
 central_theme_thread: "The perspective-limited agent cannot derive from inside its own evidence stream the priors required to compute toward loving unity; those priors must be scaffolded from beyond it — divine or human, scaled-up or tradition-bound. The theological virtues name that scaffolding; Phil 2:12 (working out salvation in fear and trembling) is the existential shape this takes from the agent's side."
 evidence_strength_summary: "Wright's historical-Jesus and Pauline-corpus claims have strong-but-disputed historiographic standing. Stump on faith-as-second-personal: theological-philosophical, not empirical. Kastrup's analytic idealism: metaphysical argument with no decisive empirical falsifier, but high coherence with hard-problem-of-consciousness literature. Levin's morphogenetic scaffolding: empirically firm. Friston's active inference: empirically robust at the modeling level. The claim that infused virtue maps onto externally-scaffolded computational priors is speculative."
-last_qc_at: "2026-05-21T06:28:44"
-last_qc_outcome: "pass"
+last_qc_at: "2026-05-28T06:30:17"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/092, theme/infused-virtue, theme/grace-and-nature, theme/scaffolding]
 ---
 
@@ -34,7 +34,7 @@ A purely natural-virtue account of the moral agent confronts a hard limit: the a
 
 ## Resource
 
-Wright (canonical works: *Resurrection of the Son of God*, *Paul and the Faithfulness of God*, *Surprised by Hope*) supplies the scriptural ground truth for what faith, hope, and charity actually *are* in Christian usage. Critically: Wright reads πίστις (*pistis*) not as private-mental-assent but as **covenant-loyalty toward the God of Israel made present in the risen Jesus**, ἐλπίς (*hope*) as confident expectation of **new creation** (resurrection-of-the-body, renewed earth), and ἀγάπη (*charity*) as the cruciform, other-directed love that **embodies** that loyalty and hope in concrete community. This is not the medieval scholastic decomposition; it is the first-century covenant-renewal grammar.
+Wright (canonical works: *Resurrection of the Son of God*, *Paul and the Faithfulness of God*, *Surprised by Hope*) reads what faith, hope, and charity actually *are* in first-century Christian usage. Critically: Wright reads πίστις (*pistis*) not as private-mental-assent but as **covenant-loyalty toward the God of Israel made present in the risen Jesus**, ἐλπίς (*hope*) as confident expectation of **new creation** (resurrection-of-the-body, renewed earth), and ἀγάπη (*charity*) as the cruciform, other-directed love that **embodies** that loyalty and hope in concrete community. This is not the medieval scholastic decomposition; it is the first-century covenant-renewal grammar.
 
 Stump's PRS-form re-description of faith (PRS-09 in the Stump-tradition wiki) reads faith as **second-personal knowledge of a person** — knowledge-of (Francesca) rather than knowledge-that (a list of propositions about Francesca). This explains why Aquinas can say faith *precedes* love in the order of generation (you cannot love whom you do not know) while also placing charity ahead of faith in the order of perfection (the relationship deepens past mere acquaintance into union). Theological-philosophical, not empirical.
 
@@ -64,7 +64,7 @@ The deep central-theme question this article opens is: **whose perspective does 
 
 ## Bridges
 
-- **Wright (canonical: *Paul and the Faithfulness of God*, *Surprised by Hope*):** *pistis* as covenant-loyalty, hope as new creation, agape as cruciform action. Scriptural ground truth.
+- **Wright (canonical: *Paul and the Faithfulness of God*, *Surprised by Hope*):** *pistis* as covenant-loyalty, hope as new creation, agape as cruciform action. Historiographic.
 - **Stump, PRS-09 (faith as second-personal knowledge):** the philosophical engine connecting knowledge-of-persons to faith. Theological-philosophical.
 - **Kastrup (analytic idealism):** metaphysical frame in which "infusion" is intelligible without natural-supernatural dualism. Speculative-formal.
 - **Levin (morphogenetic teleology):** empirical demonstration that cross-scale scaffolding of competence is the biological norm. Empirical.
