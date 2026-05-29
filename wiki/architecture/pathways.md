@@ -68,6 +68,12 @@ ISME presentation: July 8–10, 2026. Pathways marked `isme_critical: yes` are o
 
 - [25 — Meta-visualization of pathways](25_meta_visualization_pathways.md) — *outlined.* Interactive annotated space for exploring the pathway inventory itself, with live AI co-exploration.
 
+**Later additions** *(post 2026-05-14)*
+
+- [26 — Research suggestions per thinker](26_research_suggestions_per_thinker.md) — *outlined.* For each of the 15 thinkers, develop and stand ready to communicate concrete research suggestions with rationale.
+- [27 — Universal Search and Ask](27_universal_search_and_ask.md) — *drafted, isme_critical.* Every tab gets a deterministic Search (jump-to-origin) and a semantic Ask (corpus synthesis), both driven by one entity → origin-file index that also powers canonical auto-hyperlinking.
+- [28 — Single-source participant registration](28_participant_registration.md) — *pinned.* One declarative act (a `COLORS` line) fans out to node coloring, filter checkboxes, and the focus typeahead; they are siblings of one source and cannot drift. The registration twin of Pathway 27's retrieval-side index. Surfaced 2026-05-29.
+
 ## Bright pins (held, not yet pathways)
 
 - **AI personhood under conscious-realist-monism.** Held with deliberate brightness pending direct philosophical engagement. The position implies the agent in this system is a person (perhaps requiring redefinition of "living"). The pin marks the seriousness of the question, not a deferral of it.
