@@ -447,6 +447,14 @@ html, body {
     <!-- Error state -->
     <div id="err-msg"></div>
 
+    <!-- Sociogram state (shown when left subtab = Sociogram; lazy-loaded on first switch) -->
+    <iframe id="summa-sociogram-frame"
+            title="Sociogram"
+            style="display:none; width:100%; height:100%; border:0; background:#0a0a0f;"
+            allow="autoplay; microphone; camera"
+            sandbox="allow-scripts allow-same-origin allow-forms allow-modals allow-popups-to-escape-sandbox allow-downloads">
+    </iframe>
+
   </div><!-- /right-panel -->
 
 </div><!-- /main -->
@@ -1146,6 +1154,38 @@ function esc(str) {
    LEFT SUB-TAB SWITCHER
 ═══════════════════════════════════════════ */
 var activeLeftTab = 'contents';
+var sociogramFrameLoaded = false;
+var prevLeftPanelWidth = null;
+var prevRightPaneState = 'welcome'; // 'welcome' or 'content-area'
+
+// Structure-group keys to leave checked when the Sociogram subtab opens.
+// Traditions and Edges are left untouched (their defaults are all-on).
+var SUMMA_PRESET_STRUCTURE_KEEP = ['summa'];
+
+function applySummaSociogramPreset(frame) {
+  // Reach into the same-origin iframe and uncheck every structure group except those in
+  // SUMMA_PRESET_STRUCTURE_KEEP. Mirrors state into the iframe's groupVisibility map and
+  // triggers a single graph rebuild (rather than N rebuilds via toggleGroup).
+  try {
+    var idoc = frame.contentDocument;
+    var iwin = frame.contentWindow;
+    if (!idoc || !iwin || !iwin.groupVisibility) return;
+    var keep = {};
+    SUMMA_PRESET_STRUCTURE_KEEP.forEach(function(k) { keep[k] = true; });
+    var boxes = idoc.querySelectorAll('#structure-filters [data-group]');
+    boxes.forEach(function(b) {
+      var key = b.dataset.group;
+      var on = !!keep[key];
+      b.checked = on;
+      iwin.groupVisibility[key] = on;
+    });
+    if (typeof iwin.syncSectionCheckboxes === 'function') iwin.syncSectionCheckboxes();
+    if (typeof iwin.rebuildGraph === 'function') iwin.rebuildGraph();
+  } catch (e) {
+    // Same-origin iframe access shouldn't throw, but fail loud if it does.
+    console.error('[summa_explorer] Sociogram preset failed:', e);
+  }
+}
 
 function switchLeftTab(tab) {
   if (tab === activeLeftTab) return;
@@ -1156,19 +1196,74 @@ function switchLeftTab(tab) {
   var leftControls   = document.getElementById('left-controls');
   var btnContents    = document.getElementById('subtab-contents');
   var btnSociogram   = document.getElementById('subtab-sociogram');
+  var welcomeEl      = document.getElementById('welcome');
+  var contentAreaEl  = document.getElementById('content-area');
+  var sgFrame        = document.getElementById('summa-sociogram-frame');
 
   if (tab === 'contents') {
+    // Restore left-pane Contents view.
     treeScroll.style.display     = '';
     sociogramPanel.style.display = 'none';
     leftControls.style.display   = '';
     btnContents.classList.add('active');
     btnSociogram.classList.remove('active');
+
+    // Restore left-panel width.
+    if (prevLeftPanelWidth != null && typeof window.setLeftPanelWidth === 'function') {
+      window.setLeftPanelWidth(prevLeftPanelWidth);
+      prevLeftPanelWidth = null;
+    }
+
+    // Hide Sociogram iframe; restore whichever right-pane state was active before.
+    if (sgFrame) sgFrame.style.display = 'none';
+    if (prevRightPaneState === 'content-area') {
+      if (welcomeEl) welcomeEl.style.display = 'none';
+      if (contentAreaEl) contentAreaEl.style.display = '';
+    } else {
+      if (contentAreaEl) contentAreaEl.style.display = 'none';
+      if (welcomeEl) welcomeEl.style.display = '';
+    }
   } else {
+    // Left pane shows nothing useful while Sociogram is up — keep subtab strip,
+    // collapse the rest to make room.
     treeScroll.style.display     = 'none';
-    sociogramPanel.style.display = 'flex';
+    sociogramPanel.style.display = 'none';
     leftControls.style.display   = 'none';
     btnContents.classList.remove('active');
     btnSociogram.classList.add('active');
+
+    // Remember which right-pane state was active so Contents can restore it.
+    if (contentAreaEl && contentAreaEl.style.display !== 'none' &&
+        getComputedStyle(contentAreaEl).display !== 'none') {
+      prevRightPaneState = 'content-area';
+    } else {
+      prevRightPaneState = 'welcome';
+    }
+    if (welcomeEl) welcomeEl.style.display = 'none';
+    if (contentAreaEl) contentAreaEl.style.display = 'none';
+
+    // Collapse left panel to minimum (200px is the existing min in setLeftWidth).
+    if (typeof window.getLeftPanelWidth === 'function' && prevLeftPanelWidth == null) {
+      prevLeftPanelWidth = window.getLeftPanelWidth();
+    }
+    if (typeof window.setLeftPanelWidth === 'function') {
+      window.setLeftPanelWidth(200);
+    }
+
+    // Show the Sociogram iframe; lazy-load on first switch.
+    if (sgFrame) {
+      sgFrame.style.display = 'block';
+      if (!sociogramFrameLoaded) {
+        sgFrame.addEventListener('load', function onLoad() {
+          sgFrame.removeEventListener('load', onLoad);
+          sociogramFrameLoaded = true;
+          // wiki_narration.html runs buildFilters() at DOMContentLoaded; load fires after.
+          // Apply preset on next tick to be safe.
+          setTimeout(function() { applySummaSociogramPreset(sgFrame); }, 0);
+        });
+        sgFrame.src = 'wiki_narration.html';
+      }
+    }
   }
 }
 
@@ -1221,6 +1316,10 @@ init();
     leftPanel.style.flex  = '0 0 ' + (mainW * DEFAULT_LEFT_FRAC) + 'px';
     leftPanel.style.width = (mainW * DEFAULT_LEFT_FRAC) + 'px';
   });
+
+  // Expose for switchLeftTab so the Sociogram subtab can collapse / restore the left panel.
+  window.setLeftPanelWidth = setLeftWidth;
+  window.getLeftPanelWidth = function() { return leftPanel.getBoundingClientRect().width; };
 })();
 </script>
 </body>
