@@ -297,6 +297,11 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
 .filter-item { display: flex; align-items: center; gap: 6px; padding: 2px 0; cursor: pointer; }
 .filter-item input[type="checkbox"] { cursor: pointer; }
 .filter-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+/* Friendly-label typeahead (navigation increment 1.5) — opens upward from the footer search box */
+#search-suggest { background: #14141f; border: 1px solid #3a3a4a; border-radius: 4px; max-height: 180px; overflow-y: auto; box-shadow: 0 -4px 12px rgba(0,0,0,0.5); z-index: 50; }
+#search-suggest .sg-head { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #888; padding: 4px 8px; border-bottom: 1px solid #2a2a3a; }
+#search-suggest .sg-row { display: flex; align-items: center; gap: 6px; padding: 4px 8px; cursor: pointer; font-size: 12px; color: #e0e0e0; }
+#search-suggest .sg-row:hover, #search-suggest .sg-row.active { background: #2a2a3a; }
 .filter-label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 #left-page-viewer { margin-top: 12px; border-top: 1px solid #2a2a3a; padding-top: 8px; display: none; }
 #left-page-viewer .page-content { max-height: calc(100vh - 200px); overflow-y: auto; font-size: 11px; line-height: 1.5; }
@@ -712,7 +717,10 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
     <div style="flex:1;display:flex;flex-direction:column;gap:4px;min-width:0;height:100%;">
       <div id="narration-text">Ready. Check groups in Select Files to explore.</div>
       <div id="footer-search-row" style="display:flex;gap:4px;align-items:center;flex-wrap:wrap;">
-        <input type="text" id="search-input" placeholder="Search files, findings, connections..." style="flex:1;min-width:200px;background:#1a1a2a;border:1px solid #3a3a4a;color:#e0e0e0;padding:3px 8px;border-radius:4px;font-size:12px;" onkeydown="if(event.key==='Enter')runSearch()">
+        <div id="search-wrap" style="position:relative;flex:1;min-width:200px;">
+          <input type="text" id="search-input" autocomplete="off" placeholder="Search, or type focus: to isolate links between groups" style="width:100%;background:#1a1a2a;border:1px solid #3a3a4a;color:#e0e0e0;padding:3px 8px;border-radius:4px;font-size:12px;" oninput="onSearchInput()" onkeydown="onSearchKey(event)" onblur="setTimeout(hideSuggest,150)">
+          <div id="search-suggest" style="display:none;position:absolute;bottom:calc(100% + 4px);left:0;right:0;"></div>
+        </div>
         <button onclick="runSearch()" style="background:#1a1a2a;border:1px solid #3a3a4a;color:#e0e0e0;padding:3px 8px;border-radius:4px;cursor:pointer;font-size:11px;">Search</button>
         <button onclick="document.getElementById('search-input').value='';runSearch();" style="background:#1a1a2a;border:1px solid #3a3a4a;color:#e0e0e0;padding:3px 8px;border-radius:4px;cursor:pointer;font-size:11px;">Clear</button>
         <label style="display:flex;align-items:center;gap:4px;font-size:11px;color:#bbb;cursor:pointer;"><input type="checkbox" id="search-ai-mode"> Ask AI</label>
@@ -2220,10 +2228,28 @@ function buildNarrationTracks() {
 //   left of '~'  = entity tokens, resolved to tradition group keys
 //   right of '~' = structure-group tokens used as group keys
 //   relation fixed to "linked", action fixed to "isolate" in this increment.
+var LABEL_TO_KEY = null;
+function labelToKey() {
+  // Friendly-label -> group-key lookup (lazy, built once). Lets resolveGroupKeys
+  // accept the human spellings the typeahead inserts ("Levin", "Arkani-Hamed",
+  // "Summa") and also fixes hand-typed hyphenated names whose key drops the
+  // hyphen ("Arkani-Hamed" -> traditions/arkanihamed, "McGilchrist" -> .../mcgilchrist).
+  if (LABEL_TO_KEY) return LABEL_TO_KEY;
+  LABEL_TO_KEY = {};
+  function add(arr) {
+    if (!arr) return;
+    arr.forEach(function(g) { if (g && g.label) LABEL_TO_KEY[g.label.toLowerCase()] = g.key; });
+  }
+  if (typeof TRADITION_GROUPS !== 'undefined') add(TRADITION_GROUPS);
+  if (typeof STRUCTURE_GROUPS !== 'undefined') add(STRUCTURE_GROUPS);
+  return LABEL_TO_KEY;
+}
 function resolveGroupKeys(tokens) {
   // Map each whitespace token to a valid group key present in groupVisibility.
-  // Exact key wins; else 'traditions/<token>'; else first key containing token.
+  // Exact key wins; else 'traditions/<token>'; else friendly label; else first
+  // key containing token.
   var keys = Object.keys(groupVisibility);
+  var labels = labelToKey();
   var out = [];
   tokens.forEach(function(tok) {
     tok = String(tok || '').trim().toLowerCase();
@@ -2231,6 +2257,7 @@ function resolveGroupKeys(tokens) {
     if (groupVisibility.hasOwnProperty(tok)) { out.push(tok); return; }
     var trad = 'traditions/' + tok;
     if (groupVisibility.hasOwnProperty(trad)) { out.push(trad); return; }
+    if (labels.hasOwnProperty(tok) && groupVisibility.hasOwnProperty(labels[tok])) { out.push(labels[tok]); return; }
     for (var i = 0; i < keys.length; i++) {
       if (keys[i].toLowerCase().indexOf(tok) !== -1) { out.push(keys[i]); return; }
     }
@@ -2286,6 +2313,110 @@ function runFocus(rawAfterPrefix) {
   } else {
     setNarrationText('Focus "' + lbl + '": isolated ' + focusCount + ' nodes linked across the two sets. Clear the search box to restore.');
   }
+}
+
+// ── FRIENDLY-LABEL TYPEAHEAD (navigation increment 1.5, 2026-05-29) ──
+// Discoverability layer over the focus: grammar so no category memorization is
+// needed. As the user types a "focus:" query, suggests real entity (tradition)
+// labels left of '~' and group (structure) labels right of '~', drawn from
+// TRADITION_GROUPS / STRUCTURE_GROUPS. Picking inserts the friendly label
+// (resolved by resolveGroupKeys' label map) and advances to the next slot;
+// completing the group slot auto-runs the focus. Deterministic, no LLM.
+var SUGGEST_ITEMS = [];   // current suggestion list [{key,label,color}]
+var SUGGEST_ACTIVE = -1;  // highlighted row index; -1 = none
+
+function parseFocusSlot(raw) {
+  // Which slot is the user editing? entity (before '~') or group (after it).
+  var s = String(raw || '');
+  if (s.toLowerCase().indexOf('focus:') !== 0) return { mode: 'none', token: '' };
+  var after = s.slice(s.indexOf(':') + 1);
+  var tildeAt = after.indexOf('~');
+  if (tildeAt === -1) return { mode: 'entity', token: after.trim() };
+  return { mode: 'group', token: after.slice(tildeAt + 1).trim() };
+}
+
+function onSearchInput() {
+  var el = document.getElementById('search-input');
+  var slot = parseFocusSlot(el.value);
+  if (slot.mode === 'none') { hideSuggest(); return; }
+  var source = (slot.mode === 'entity') ? TRADITION_GROUPS : STRUCTURE_GROUPS;
+  var tok = slot.token.toLowerCase();
+  var items = source.filter(function(g) {
+    return !tok || g.label.toLowerCase().indexOf(tok) !== -1 || g.key.toLowerCase().indexOf(tok) !== -1;
+  });
+  showSuggest(items, slot.mode);
+}
+
+function showSuggest(items, mode) {
+  SUGGEST_ITEMS = items;
+  SUGGEST_ACTIVE = -1;
+  var box = document.getElementById('search-suggest');
+  if (!box) return;
+  if (!items.length) { hideSuggest(); return; }
+  var head = (mode === 'entity') ? 'Entity (tradition) - who' : 'Group (structure) - where';
+  var html = '<div class="sg-head">' + head + '</div>';
+  items.forEach(function(g, i) {
+    html += '<div class="sg-row" data-i="' + i + '" onmousedown="acceptSuggest(' + i + ')">'
+          + '<span class="filter-dot" style="background:' + g.color + '"></span>'
+          + '<span>' + g.label + '</span></div>';
+  });
+  box.innerHTML = html;
+  box.style.display = 'block';
+}
+
+function hideSuggest() {
+  var box = document.getElementById('search-suggest');
+  if (box) { box.style.display = 'none'; box.innerHTML = ''; }
+  SUGGEST_ITEMS = [];
+  SUGGEST_ACTIVE = -1;
+}
+
+function highlightSuggest() {
+  var rows = document.querySelectorAll('#search-suggest .sg-row');
+  for (var i = 0; i < rows.length; i++) {
+    rows[i].className = 'sg-row' + (i === SUGGEST_ACTIVE ? ' active' : '');
+  }
+}
+
+function acceptSuggest(i) {
+  var g = SUGGEST_ITEMS[i];
+  if (!g) return;
+  var el = document.getElementById('search-input');
+  var raw = el.value;
+  var head = raw.slice(0, raw.indexOf(':') + 1);   // "focus:"
+  var after = raw.slice(raw.indexOf(':') + 1);
+  var tildeAt = after.indexOf('~');
+  if (tildeAt === -1) {
+    // entity slot: set it and advance to the group slot
+    el.value = head + ' ' + g.label + ' ~ ';
+    el.focus();
+    onSearchInput();
+  } else {
+    // group slot: complete the query and run it
+    var entitySide = after.slice(0, tildeAt).trim();
+    el.value = head + ' ' + entitySide + ' ~ ' + g.label;
+    hideSuggest();
+    runSearch();
+  }
+}
+
+function onSearchKey(e) {
+  var box = document.getElementById('search-suggest');
+  var open = box && box.style.display === 'block' && SUGGEST_ITEMS.length;
+  if (open && (e.key === 'ArrowDown' || e.key === 'ArrowUp')) {
+    e.preventDefault();
+    var n = SUGGEST_ITEMS.length;
+    SUGGEST_ACTIVE = (e.key === 'ArrowDown') ? (SUGGEST_ACTIVE + 1) % n : (SUGGEST_ACTIVE - 1 + n) % n;
+    highlightSuggest();
+    return;
+  }
+  if (e.key === 'Enter') {
+    if (open && SUGGEST_ACTIVE >= 0) { e.preventDefault(); acceptSuggest(SUGGEST_ACTIVE); return; }
+    hideSuggest();
+    runSearch();
+    return;
+  }
+  if (e.key === 'Escape') { hideSuggest(); }
 }
 
 function runSearch() {
