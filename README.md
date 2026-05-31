@@ -19,7 +19,7 @@ The system is built to do three things at once:
 
 - **Accelerate traditions** — hold each program deeply enough that an agent can carry on a mature internal conversation in its idiom.
 - **Detect cross-tradition structure** — surface convergences, conflicts, and formal bridges between programs (e.g., Hoffman's trace operator ↔ Levin's cognitive light cone).
-- **Stay methodologically self-aware** — a self-awareness pipeline continuously extracts the system's own assumptions and presumptions, runs literature searches for and against them, and dispositions the results, so the framework's commitments stay visible and revisable.
+- **Stay methodologically self-aware** — a self-awareness pipeline continuously extracts the system's own assumptions and presumptions, runs an automated adversarial stress-test (LLM-generated arguments for and against each, citations unverified) and dispositions the results, so the framework's commitments stay visible and revisable.
 
 ## The explorer
 
