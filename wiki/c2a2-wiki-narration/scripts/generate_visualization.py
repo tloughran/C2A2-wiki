@@ -352,7 +352,6 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
    anywhere from 60 px up to 60 % of viewport height. A window-resize listener
    re-clamps if the window shrinks below the dragged height. */
 #footer { display: flex; align-items: flex-start; gap: 12px; padding: 8px 16px; background: #111118; border-top: 1px solid #2a2a3a; min-height: 60px; height: 120px; flex-shrink: 0; overflow: hidden; }
-#timeline-slider { flex: 0 0 200px; margin-top: 4px; }
 #narration-text { flex: 1; font-size: 12px; color: #ccc; overflow-y: auto; padding: 4px 8px; background: #0e0e16; border-radius: 4px; line-height: 1.4; height: 100%; }
 #footer .footer-controls { display: flex; gap: 6px; align-items: center; flex-shrink: 0; }
 #footer .footer-controls button { background: #1a1a2a; border: 1px solid #3a3a4a; color: #e0e0e0; padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 12px; }
@@ -477,7 +476,6 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
     padding: 6px 10px;
     gap: 8px;
   }
-  #timeline-slider { display: none; }
   #narration-text { font-size: 13px; padding: 4px 6px; }
   /* Hide the search row on mobile.
      !important needed because the div has inline display:flex in the body markup. */
@@ -553,10 +551,6 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
         </select>
       </label>
       <button id="btn-edge-help" onclick="toggleEdgeHelp(event)" style="width:18px;height:18px;border-radius:50%;background:#1a1a2a;color:#888;border:1px solid #3a3a4a;font-size:11px;font-weight:600;cursor:pointer;padding:0;line-height:16px;text-align:center;" title="How adaptive edge density works">?</button>
-      <span style="width:1px;height:20px;background:#3a3a4a;"></span>
-      <button id="btn-history" onclick="startTour('history')">History</button>
-      <button id="btn-recent" onclick="startTour('recent')">Recent</button>
-      <button id="btn-latest" onclick="startTour('latest')">Latest</button>
       <div class="brightness-control">
         <label>Brightness</label>
         <input type="range" id="brightness-slider" min="0.1" max="2" step="0.05" value="1" oninput="setBrightness(this.value)">
@@ -713,9 +707,8 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
   <div id="footer-resize" onmousedown="startFooterResize(event)"></div>
   <!-- FOOTER -->
   <div id="footer">
-    <input type="range" id="timeline-slider" min="0" max="0" value="0" oninput="onTimelineSlide(this.value)">
     <div style="flex:1;display:flex;flex-direction:column;gap:4px;min-width:0;height:100%;">
-      <div id="narration-text">Ready. Check groups in Select Files to explore.</div>
+      <div id="narration-text">This is a knowledge graph inside the C2A2 Explorer (v1.0). The Community Context for AI Alignment (C2A2) project seeks to empower consensus-sized communities with AI acceleration tools, thus rendering a meaningful and measurable context for AI alignment with common community goals. This first instance brings together a range of thinkers &mdash; 15 or more &mdash; whose research touches up against, in one way or another, an emerging conscious realist paradigm for cross-disciplinary integration. In this knowledge graph, each node is a wiki file and each edge a link or shared reference. Filter by thinker or structure on the left, click on nodes or edges in the graph to pull up associated files, or ask a question below. User input will either filter the graph immediately (if a simple search query) or produce a meaningful LLM-driven response. Each user has a limited number of free semantic queries, with the option to continue using your own API key.</div>
       <div id="footer-search-row" style="display:flex;gap:4px;align-items:center;flex-wrap:wrap;">
         <div id="search-wrap" style="position:relative;flex:1;min-width:200px;">
           <input type="text" id="search-input" autocomplete="off" placeholder="Search, or type focus: to isolate links between groups" style="width:100%;background:#1a1a2a;border:1px solid #3a3a4a;color:#e0e0e0;padding:3px 8px;border-radius:4px;font-size:12px;" oninput="onSearchInput()" onkeydown="onSearchKey(event)" onblur="setTimeout(hideSuggest,150)">
@@ -728,16 +721,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
       </div>
     </div>
     <div class="footer-controls">
-      <button id="btn-play" onclick="togglePlay()">Play</button>
-      <button id="btn-reset" onclick="resetTour()">Reset</button>
-      <select id="speed-select" onchange="setSpeed(this.value)">
-        <option value="0.5">0.5x</option>
-        <option value="1" selected>1x</option>
-        <option value="1.5">1.5x</option>
-        <option value="2">2x</option>
-      </select>
-      <button id="btn-mute" onclick="toggleMute()">&#128266;</button>
-      <button id="btn-depth" onclick="toggleDepth()">Brief</button>
+      <button id="btn-mute" onclick="toggleMute()" title="Audio on/off: speak Ask-AI answers aloud">&#128266;</button>
     </div>
   </div>
 </div>
@@ -812,15 +796,10 @@ var groupVisibility = {};
 // every Score-mode change and Edge-type checkbox to throw ReferenceError.
 var activeLinks = [];
 var activeNodes = [];
-var currentTrack = null;
-var currentSegmentIndex = 0;
-var isPlaying = false;
-var playTimer = null;
 var playSpeed = 1;
 var isMuted = false;
-var isDeep = false;
 var brightness = 1;
-var narrationTracks = {};
+var IDLE_NARRATION = '';
 var simulation = null;
 var zoomBehavior = null;
 var nodeById = {};
@@ -1834,8 +1813,6 @@ function rebuildGraph() {
   // the first render; subsequent calls happen on zoom / mode / cut changes.
   applyEdgeFilters();
 
-  // Auto-narrate based on current visibility (unless in timeline tour mode)
-  if (!currentTrack) generateContextNarration();
 }
 
 function escapeAttr(s) {
@@ -1986,236 +1963,11 @@ function truncateAtBoundary(text, maxChars) {
 }
 
 // Generate a dynamic narration based on currently visible groups
-function generateContextNarration() {
-  var visibleTraditions = [];
-  var visibleStructure = [];
-  Object.keys(groupVisibility).forEach(function(gk) {
-    if (!groupVisibility[gk]) return;
-    if (gk.startsWith('traditions/')) visibleTraditions.push(gk);
-    else visibleStructure.push(gk);
-  });
-
-  var parts = [];
-  var deep = isDeep;
-
-  // No traditions visible — summarize structure groups
-  if (visibleTraditions.length === 0) {
-    if (visibleStructure.length === 0) {
-      setNarrationText('No groups selected. Check groups in Select Files to explore.');
-      return;
-    }
-    var structNodes = NODES.filter(function(n) { return groupVisibility[n.group]; });
-    parts.push('Viewing ' + structNodes.length + ' files across ' + visibleStructure.map(function(s) { return s.split('/').pop(); }).join(', ') + '.');
-    if (deep) {
-      // Pull recent cowork summary
-      var cwDates = Object.keys(COWORK_SUMMARIES).sort();
-      if (cwDates.length > 0) {
-        var latest = COWORK_SUMMARIES[cwDates[cwDates.length - 1]];
-        if (latest && latest.accomplished) parts.push('Latest session: ' + latest.accomplished.split('.').slice(0, 3).join('.') + '.');
-      }
-    }
-    setNarrationText(parts.join(' '));
-    return;
-  }
-
-  // Single tradition — deep overview
-  if (visibleTraditions.length === 1) {
-    var gk = visibleTraditions[0];
-    var name = gk.split('/')[1];
-    var displayName = name.charAt(0).toUpperCase() + name.slice(1);
-    var overview = extractOverview(gk);
-    if (overview) {
-      parts.push(displayName + ': ' + overview);
-    } else {
-      parts.push('Exploring ' + displayName + '.');
-    }
-    // Add findings for this tradition
-    var tFindings = FINDINGS_BY_GROUP[gk] || [];
-    if (tFindings.length > 0) {
-      if (deep) {
-        tFindings.slice(0, 4).forEach(function(f) {
-          parts.push(f.id + ' (' + f.type + '): ' + (f.short || truncateAtBoundary(f.finding, 200)));
-        });
-      } else {
-        parts.push(tFindings.length + ' findings: ' + tFindings.slice(0, 3).map(function(f) { return f.id; }).join(', ') + '.');
-      }
-    }
-    // Cross-connections this thinker participates in
-    var tCrosses = CROSSES_BY_GROUP[gk] || [];
-    if (tCrosses.length > 0) {
-      if (deep) {
-        parts.push('Cross-program questions involving ' + displayName + ':');
-        tCrosses.slice(0, 4).forEach(function(c) {
-          parts.push(c.id + ': ' + c.question + (c.notes ? ' (' + c.notes.slice(0, 120) + ')' : ''));
-        });
-      } else {
-        parts.push(tCrosses.length + ' cross-connections with other thinkers.');
-      }
-    }
-    setNarrationText(parts.join(' '));
-    return;
-  }
-
-  // Multiple traditions — overview of each + connections between them
-  parts.push('Comparing ' + visibleTraditions.length + ' thinkers: ' +
-    visibleTraditions.map(function(gk) {
-      return gk.split('/')[1].charAt(0).toUpperCase() + gk.split('/')[1].slice(1);
-    }).join(', ') + '.');
-
-  // Brief overview of each
-  visibleTraditions.forEach(function(gk) {
-    var name = gk.split('/')[1];
-    var displayName = name.charAt(0).toUpperCase() + name.slice(1);
-    var overview = extractOverview(gk);
-    if (overview) {
-      if (deep) {
-        parts.push(displayName + ': ' + overview);
-      } else {
-        // Just core claim for brief
-        var claim = overview.split('.')[0];
-        parts.push(displayName + ': ' + claim + '.');
-      }
-    }
-  });
-
-  // Shared cross-connections between visible thinkers
-  var sharedCrosses = findSharedCrosses(visibleTraditions);
-  if (sharedCrosses.length > 0) {
-    parts.push('--- Connections between them ---');
-    var limit = deep ? 6 : 3;
-    sharedCrosses.slice(0, limit).forEach(function(sc) {
-      if (deep) {
-        parts.push(sc.cross.id + ' (' + sc.cross.nature + '): ' + sc.cross.question + (sc.cross.notes ? '. ' + truncateAtBoundary(sc.cross.notes, 200) : ''));
-      } else {
-        parts.push(sc.cross.question);
-      }
-    });
-    if (sharedCrosses.length > limit) {
-      parts.push('...and ' + (sharedCrosses.length - limit) + ' more shared questions.');
-    }
-  }
-
-  // Shared findings
-  var sharedFindings = findRelevantFindings(visibleTraditions).filter(function(rf) { return rf.matchCount >= 2; });
-  if (sharedFindings.length > 0) {
-    parts.push('--- Shared findings ---');
-    var fLimit = deep ? 4 : 2;
-    sharedFindings.slice(0, fLimit).forEach(function(rf) {
-      if (deep) {
-        parts.push(rf.finding.id + ': ' + (rf.finding.short || truncateAtBoundary(rf.finding.finding, 200)));
-      } else {
-        parts.push(rf.finding.id + ' (' + rf.finding.type + ')');
-      }
-    });
-  }
-
-  setNarrationText(parts.join(' '));
-}
-
 function setNarrationText(text) {
   document.getElementById('narration-text').textContent = text;
 }
 
 // ── TIMELINE NARRATION (History/Recent/Latest) ──
-function buildNarrationTracks() {
-  var allDates = TIMELINE.map(function(t) { return t.date; }).sort();
-  if (allDates.length === 0) return;
-
-  // Get currently visible tradition names for scoping
-  var visibleTraditions = [];
-  Object.keys(groupVisibility).forEach(function(gk) {
-    if (groupVisibility[gk] && gk.startsWith('traditions/')) {
-      visibleTraditions.push(gk);
-    }
-  });
-
-  var findingsByDate = {};
-  FINDINGS.forEach(function(f) {
-    // Only include findings relevant to visible traditions
-    var progs = f.programs.toLowerCase();
-    var relevant = visibleTraditions.length === 0 || visibleTraditions.some(function(gk) {
-      return progs.indexOf(GROUP_TO_PROGRAMS[gk] || '') !== -1;
-    });
-    if (!relevant) return;
-    if (!findingsByDate[f.date]) findingsByDate[f.date] = [];
-    findingsByDate[f.date].push(f);
-  });
-
-  var decisionsByDate = {};
-  DECISIONS.forEach(function(d) {
-    if (!decisionsByDate[d.date]) decisionsByDate[d.date] = [];
-    decisionsByDate[d.date].push(d);
-  });
-
-  function buildTrack(dates, deep) {
-    var segments = [];
-    dates.forEach(function(date) {
-      var entry = TIMELINE.find(function(t) { return t.date === date; });
-      if (!entry) return;
-      var cw = COWORK_SUMMARIES[date];
-      var df = findingsByDate[date];
-      var dd = decisionsByDate[date];
-      var changelog = CHANGELOGS[date];
-
-      if (!deep) {
-        var briefText = '';
-        if (cw && cw.accomplished) {
-          briefText = date + ': ' + cw.accomplished.split('.').slice(0, 2).join('.') + '.';
-        } else if (df && df.length > 0) {
-          briefText = date + ': ' + df.map(function(f) { return f.id + ' (' + f.type + ')'; }).join('; ') + '.';
-        } else if (changelog) {
-          var clText = typeof changelog === 'string' ? changelog : (changelog.narrative || '');
-          if (clText) briefText = date + ': ' + clText.split('.').slice(0, 2).join('.') + '.';
-        }
-        if (briefText) segments.push({date: date, text: briefText});
-        return;
-      }
-
-      // Deep mode
-      var parts = [];
-      if (cw && cw.accomplished) parts.push(cw.accomplished);
-      if (changelog) {
-        var clText = typeof changelog === 'string' ? changelog : (changelog.narrative || '');
-        if (clText) parts.push(clText.slice(0, 400));
-      }
-      if (df) df.forEach(function(f) {
-        parts.push(f.id + ' (' + f.type + '): ' + (f.short || truncateAtBoundary(f.finding, 250)));
-      });
-      if (dd) dd.forEach(function(d) { parts.push('Decision ' + d.id + ': ' + d.title + '. ' + (d.summary || '')); });
-      if (cw && cw.discussion) parts.push('Discussion: ' + cw.discussion.slice(0, 300));
-      if (parts.length > 0) segments.push({date: date, text: date + ': ' + parts.join(' ')});
-    });
-    return segments;
-  }
-
-  narrationTracks['history_brief'] = buildTrack(allDates, false);
-  narrationTracks['history_deep'] = buildTrack(allDates, true);
-
-  var recent3 = allDates.slice(-3);
-  narrationTracks['recent_brief'] = buildTrack(recent3, false);
-  narrationTracks['recent_deep'] = buildTrack(recent3, true);
-
-  var latest = allDates.slice(-1);
-  narrationTracks['latest_brief'] = buildTrack(latest, false);
-  narrationTracks['latest_deep'] = buildTrack(latest, true);
-
-  // Add relevant cross-connections to deep tracks
-  var visibleCrosses = findSharedCrosses(visibleTraditions);
-  if (visibleCrosses.length > 0) {
-    var ccText = 'Key questions: ' + visibleCrosses.slice(0, 5).map(function(sc) { return sc.cross.question; }).join('; ');
-    ['history_deep', 'recent_deep', 'latest_deep'].forEach(function(key) {
-      if (narrationTracks[key] && narrationTracks[key].length > 0) {
-        var last = narrationTracks[key][narrationTracks[key].length - 1];
-        last.text += ' ' + ccText;
-      }
-    });
-  }
-
-  var slider = document.getElementById('timeline-slider');
-  slider.max = allDates.length - 1;
-  slider.value = allDates.length - 1;
-}
-
 // ── SEARCH ──
 // ── RELATIONAL FOCUS ENGINE (navigation increment 1, 2026-05-29) ──
 // Deterministic graph-state navigation. A "focus:" query isolates the node set
@@ -2567,7 +2319,7 @@ function onSearchKey(e) {
 function runSearch() {
   var raw = document.getElementById('search-input').value.trim();
   if (!raw) {
-    generateContextNarration();
+    setNarrationText(IDLE_NARRATION);
     // Reset node + link highlights (restores a prior focus: fade too).
     d3.selectAll('.node-circle').attr('opacity', brightness);
     d3.selectAll('.link-line').attr('opacity', Math.min(0.5 * brightness, 1));
@@ -2631,12 +2383,12 @@ function runSearch() {
   // Show semantic results
   if (matchedFindings.length > 0) {
     parts.push('Findings: ' + matchedFindings.slice(0, 3).map(function(f) {
-      return f.id + ': ' + (isDeep ? (f.short || truncateAtBoundary(f.finding, 200)) : f.type);
+      return f.id + ': ' + f.type;
     }).join('. '));
   }
   if (matchedCrosses.length > 0) {
     parts.push('Cross-connections: ' + matchedCrosses.slice(0, 3).map(function(c) {
-      return isDeep ? (c.id + ': ' + c.question + ' (' + truncateAtBoundary(c.notes, 100) + ')') : c.question;
+      return c.question;
     }).join('. '));
   }
   if (matches.length > 0 && matches.length <= 10) {
@@ -2730,130 +2482,17 @@ function runSearchAI(rawQuery) {
     }
     var answer = parsed.answer || '(no answer text)';
     setNarrationText('Ask "' + query + '"' + modeLabel + modelLabel + ':' + warning + ' ' + answer + sourcesLine);
+    TTS.speak(answer);
   }).catch(function(err) {
     var code = (err && err.message) || 'unknown';
     setNarrationText('AI request failed (' + code + '). Uncheck "Ask AI" to fall back to local search.');
   });
 }
 
-// ── TOUR CONTROLS ──
-function getTrackKey(mode) {
-  return mode + '_' + (isDeep ? 'deep' : 'brief');
-}
-
-function startTour(mode) {
-  // Rebuild tracks scoped to current visibility
-  buildNarrationTracks();
-  currentTrack = mode;
-  currentSegmentIndex = 0;
-  document.querySelectorAll('#header .controls button[id^="btn-h"], #header .controls button[id^="btn-r"], #header .controls button[id^="btn-l"]').forEach(function(b) { b.classList.remove('active'); });
-  var btnId = 'btn-' + mode;
-  var btn = document.getElementById(btnId);
-  if (btn) btn.classList.add('active');
-  showSegment();
-}
-
-function showSegment() {
-  if (!currentTrack) return;
-  var key = getTrackKey(currentTrack);
-  var track = narrationTracks[key];
-  if (!track || track.length === 0) {
-    setNarrationText('No timeline data for this mode with current filters.');
-    return;
-  }
-  if (currentSegmentIndex >= track.length) {
-    stopPlay();
-    return;
-  }
-  var seg = track[currentSegmentIndex];
-  setNarrationText(seg.text);
-  syncGraphToDate(seg.date);
-
-  var allDates = TIMELINE.map(function(t) { return t.date; }).sort();
-  var idx = allDates.indexOf(seg.date);
-  if (idx >= 0) document.getElementById('timeline-slider').value = idx;
-
-  if (!isMuted && TTS.enabled) {
-    TTS.speak(seg.text);
-  }
-}
-
-function togglePlay() {
-  if (isPlaying) {
-    stopPlay();
-  } else {
-    isPlaying = true;
-    document.getElementById('btn-play').textContent = 'Pause';
-    document.getElementById('btn-play').classList.add('active');
-    advancePlay();
-  }
-}
-
-function advancePlay() {
-  if (!isPlaying) return;
-  showSegment();
-  currentSegmentIndex++;
-  var key = getTrackKey(currentTrack || 'history');
-  var track = narrationTracks[key];
-  if (track && currentSegmentIndex < track.length) {
-    playTimer = setTimeout(advancePlay, 5000 / playSpeed);
-  } else {
-    stopPlay();
-  }
-}
-
-function stopPlay() {
-  isPlaying = false;
-  if (playTimer) clearTimeout(playTimer);
-  playTimer = null;
-  document.getElementById('btn-play').textContent = 'Play';
-  document.getElementById('btn-play').classList.remove('active');
-}
-
-function resetTour() {
-  stopPlay();
-  currentTrack = null;
-  currentSegmentIndex = 0;
-  document.querySelectorAll('#header .controls button[id^="btn-h"], #header .controls button[id^="btn-r"], #header .controls button[id^="btn-l"]').forEach(function(b) { b.classList.remove('active'); });
-  generateContextNarration();
-  d3.selectAll('.node-circle').attr('opacity', function(d) {
-    return groupVisibility[d.group] ? brightness : 0;
-  });
-}
-
-function setSpeed(val) {
-  playSpeed = parseFloat(val);
-}
-
 function toggleMute() {
   isMuted = !isMuted;
   document.getElementById('btn-mute').innerHTML = isMuted ? '&#128263;' : '&#128266;';
   if (isMuted) TTS.stop();
-}
-
-function toggleDepth() {
-  isDeep = !isDeep;
-  document.getElementById('btn-depth').textContent = isDeep ? 'Deep' : 'Brief';
-  if (currentTrack) {
-    buildNarrationTracks();
-    showSegment();
-  } else {
-    generateContextNarration();
-  }
-}
-
-function onTimelineSlide(val) {
-  var allDates = TIMELINE.map(function(t) { return t.date; }).sort();
-  var date = allDates[parseInt(val)];
-  if (date) {
-    syncGraphToDate(date);
-    var key = getTrackKey(currentTrack || 'history');
-    var track = narrationTracks[key];
-    if (track) {
-      var seg = track.find(function(s) { return s.date === date; });
-      if (seg) document.getElementById('narration-text').textContent = seg.text;
-    }
-  }
 }
 
 // ── TTS ──
@@ -3057,6 +2696,8 @@ window.addEventListener('resize', clampFooterHeight);
 
 // ── INIT ──
 document.addEventListener('DOMContentLoaded', function() {
+  var _nt0 = document.getElementById('narration-text');
+  IDLE_NARRATION = _nt0 ? _nt0.textContent : '';
   buildFilters();
   // Pass G — populate the date slider from NODES' distinct date set.
   var dateSet = new Set();
@@ -3070,7 +2711,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   initGraph();
   updateBannerCounts();
-  // generateContextNarration is called automatically by rebuildGraph
   // Two-stage fit: first pass at 800ms gets the user onto a populated cluster
   // before the simulation has fully settled; second pass at 2500ms re-fits.
   setTimeout(fitAll, 800);
