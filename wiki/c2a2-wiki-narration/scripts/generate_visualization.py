@@ -1012,7 +1012,7 @@ function inlineFormat(text) {
 }
 
 // ── RENDERING LIMITS ──
-var MAX_NODES = 2000;
+var MAX_NODES = 20000;
 // Safety ceiling on edges in the DOM. Set far above any realistic cut-survivor
 // count so it never fires in practice. The real visibility lever is the
 // score-based budget in applyEdgeFilters() (2,500 at 1× zoom, growing with zoom).
@@ -2296,13 +2296,13 @@ function runFocus(rawAfterPrefix) {
   }
   var focusCount = Object.keys(focus).length;
   d3.selectAll('.node-circle')
-    .transition().duration(300)
+    .interrupt()
     .attr('opacity', function(d) {
       if (!groupVisibility[d.group]) return 0;
       return focus[d.id] ? brightness : brightness * 0.05;
     });
   d3.selectAll('.link-line')
-    .transition().duration(300)
+    .interrupt()
     .attr('opacity', function(d) {
       var ls = linkEndpointId(d.source), lt = linkEndpointId(d.target);
       return (focus[ls] && focus[lt]) ? Math.min(0.5 * brightness, 1) : (brightness * 0.05);
@@ -2312,6 +2312,151 @@ function runFocus(rawAfterPrefix) {
     setNarrationText('Focus "' + lbl + '": no linked pairs found (computed over the full graph). Check the group keys, or that both groups are enabled at left.');
   } else {
     setNarrationText('Focus "' + lbl + '": isolated ' + focusCount + ' nodes linked across the two sets. Clear the search box to restore.');
+  }
+}
+
+// ── BARE-GUESS RELATIONAL NAVIGATION (navigation increment 1.6, 2026-05-29) ──
+// Lets the user drive the focus engine WITHOUT the "focus:" prefix, by typing
+// plain group names. Deterministic, no LLM — a strict parser in front of the
+// existing runFocus machinery. STRICT resolution (group keys / directory leaves
+// / friendly labels only, plus singular<->plural tolerance) and NO substring
+// fallback, so ordinary free-text search is untouched unless the WHOLE query
+// resolves to group names. One resolved group isolates it; two or more isolate
+// the nodes that link across them. Tag-cut vocabulary (e.g. "PRS", finding/
+// decision/cross/open) is intentionally NOT handled here — that lives in the
+// separate content-tag-cut subsystem and is deferred to a later increment.
+var BARE_INDEX = null;
+function bareGuessIndex() {
+  // Built once. Two passes so an exact spelling always beats a plural variant of
+  // some other group, regardless of object-key iteration order. Only LIVE groups
+  // (present in groupVisibility) are registered.
+  if (BARE_INDEX) return BARE_INDEX;
+  BARE_INDEX = {};
+  var exact = [];  // [spelling, key]
+  Object.keys(groupVisibility).forEach(function(key) {
+    exact.push([key.toLowerCase(), key]);
+    var leaf = (key.indexOf('/') !== -1) ? key.split('/').pop() : key;
+    exact.push([leaf.toLowerCase(), key]);
+  });
+  function addLabels(arr) {
+    if (!arr) return;
+    arr.forEach(function(g) { if (g && g.label) exact.push([g.label.toLowerCase(), g.key]); });
+  }
+  if (typeof TRADITION_GROUPS !== 'undefined') addLabels(TRADITION_GROUPS);
+  if (typeof STRUCTURE_GROUPS !== 'undefined') addLabels(STRUCTURE_GROUPS);
+  // Pass 1: exact spellings (live groups only). First registration wins.
+  exact.forEach(function(p) {
+    if (groupVisibility.hasOwnProperty(p[1]) && !BARE_INDEX.hasOwnProperty(p[0])) BARE_INDEX[p[0]] = p[1];
+  });
+  // Pass 2: singular/plural variants, never overwriting an exact spelling.
+  exact.forEach(function(p) {
+    if (!groupVisibility.hasOwnProperty(p[1])) return;
+    var s = p[0];
+    var alt = (s.charAt(s.length - 1) === 's') ? s.slice(0, -1) : s + 's';
+    if (alt && !BARE_INDEX.hasOwnProperty(alt)) BARE_INDEX[alt] = p[1];
+  });
+  return BARE_INDEX;
+}
+function strictResolveToken(tok) {
+  tok = String(tok || '').trim().toLowerCase();
+  if (!tok) return null;
+  var idx = bareGuessIndex();
+  return idx.hasOwnProperty(tok) ? idx[tok] : null;
+}
+function parseBareGuess(raw) {
+  // Tokenize on quotes / commas / whitespace (NOT hyphens yet — hyphen trap:
+  // "Arkani-Hamed" is one label). Resolve each whole token first; only if a token
+  // fails do we split it on internal hyphens and resolve the parts ("Levin-Friston").
+  // If ANY piece fails to resolve, return null so runSearch falls through to text
+  // search. Returns a deduped list of group keys, or null.
+  var pieces = String(raw).replace(/["']/g, ' ').split(/[\s,]+/);
+  var keys = [];
+  function push(k) { if (k && keys.indexOf(k) === -1) keys.push(k); }
+  for (var i = 0; i < pieces.length; i++) {
+    var p = pieces[i];
+    if (!p) continue;
+    var k = strictResolveToken(p);
+    if (k) { push(k); continue; }
+    if (p.indexOf('-') !== -1) {
+      var subs = p.split('-'), subKeys = [], ok = true;
+      for (var j = 0; j < subs.length; j++) {
+        if (!subs[j]) continue;
+        var sk = strictResolveToken(subs[j]);
+        if (sk) subKeys.push(sk); else { ok = false; break; }
+      }
+      if (ok && subKeys.length) { subKeys.forEach(push); continue; }
+    }
+    return null;  // a piece is not a group name → not a bare-guess command
+  }
+  return keys.length ? keys : null;
+}
+var NODE_GROUP = null;
+function nodeGroupMap() {
+  if (NODE_GROUP) return NODE_GROUP;
+  NODE_GROUP = {};
+  for (var i = 0; i < NODES.length; i++) NODE_GROUP[NODES[i].id] = NODES[i].group;
+  return NODE_GROUP;
+}
+function isolateGroups(keys) {
+  // Single-group (or unioned) isolate: named-group nodes bright, everything else
+  // faded in place. Links bright only when both endpoints are in the named set.
+  var inSet = {};
+  keys.forEach(function(k) { inSet[k] = true; });
+  var grp = nodeGroupMap();
+  var count = 0;
+  for (var i = 0; i < NODES.length; i++) {
+    if (inSet[NODES[i].group] && groupVisibility[NODES[i].group]) count++;
+  }
+  d3.selectAll('.node-circle')
+    .interrupt()
+    .attr('opacity', function(d) {
+      if (!groupVisibility[d.group]) return 0;
+      return inSet[d.group] ? brightness : brightness * 0.05;
+    });
+  d3.selectAll('.link-line')
+    .interrupt()
+    .attr('opacity', function(d) {
+      var s = linkEndpointId(d.source), t = linkEndpointId(d.target);
+      return (inSet[grp[s]] && inSet[grp[t]]) ? Math.min(0.5 * brightness, 1) : (brightness * 0.05);
+    });
+  var lbl = keys.join(', ');
+  if (!count) {
+    setNarrationText('Isolate "' + lbl + '": that group has no visible nodes (is it enabled at left?). Clear the search box to restore.');
+  } else {
+    setNarrationText('Isolate "' + lbl + '": ' + count + ' nodes shown, the rest faded. Clear the search box to restore.');
+  }
+}
+function linkGroups(keys) {
+  // N-group generalization of runFocus: isolate nodes that sit in one named group
+  // AND have at least one link to a node in a DIFFERENT named group. For exactly
+  // two groups this equals the focus: A~B behavior; it also handles 3+ uniformly.
+  var inSet = {};
+  keys.forEach(function(k) { inSet[k] = true; });
+  var grp = nodeGroupMap();
+  var focus = {};
+  for (var k = 0; k < LINKS.length; k++) {
+    var s = linkEndpointId(LINKS[k].source), t = linkEndpointId(LINKS[k].target);
+    var gs = grp[s], gt = grp[t];
+    if (inSet[gs] && inSet[gt] && gs !== gt) { focus[s] = true; focus[t] = true; }
+  }
+  var focusCount = Object.keys(focus).length;
+  d3.selectAll('.node-circle')
+    .interrupt()
+    .attr('opacity', function(d) {
+      if (!groupVisibility[d.group]) return 0;
+      return focus[d.id] ? brightness : brightness * 0.05;
+    });
+  d3.selectAll('.link-line')
+    .interrupt()
+    .attr('opacity', function(d) {
+      var s = linkEndpointId(d.source), t = linkEndpointId(d.target);
+      return (focus[s] && focus[t]) ? Math.min(0.5 * brightness, 1) : (brightness * 0.05);
+    });
+  var lbl = keys.join(' ↔ ');
+  if (!focusCount) {
+    setNarrationText('Link "' + lbl + '": no direct links found across these groups (computed over the full graph). Are all of them enabled at left?');
+  } else {
+    setNarrationText('Link "' + lbl + '": isolated ' + focusCount + ' nodes connecting the groups. Clear the search box to restore.');
   }
 }
 
@@ -2442,6 +2587,16 @@ function runSearch() {
     runSearchAI(raw);
     return;
   }
+  // Bare-guess relational navigation (increment 1.6, no "focus:" prefix, no LLM).
+  // Strict parse: only fires when EVERY token is a group name. One group isolates
+  // it; two or more isolate the nodes linking across them. A non-group query (any
+  // unresolved token) returns null and falls through to the text search below.
+  var bareKeys = parseBareGuess(raw);
+  if (bareKeys) {
+    if (bareKeys.length === 1) isolateGroups(bareKeys);
+    else linkGroups(bareKeys);
+    return;
+  }
   var query = raw.toLowerCase();
   // Search across node content, titles, and IDs
   var matches = NODES.filter(function(n) {
@@ -2452,7 +2607,7 @@ function runSearch() {
 
   // Highlight matching nodes
   d3.selectAll('.node-circle')
-    .transition().duration(300)
+    .interrupt()
     .attr('opacity', function(d) {
       if (!groupVisibility[d.group]) return 0;
       var haystack = (d.label + ' ' + d.id + ' ' + (d.content || '')).toLowerCase();
@@ -2552,7 +2707,7 @@ function runSearchAI(rawQuery) {
     for (var k = 0; k < pickedIds.length; k++) pickedSet[pickedIds[k]] = true;
 
     d3.selectAll('.node-circle')
-      .transition().duration(300)
+      .interrupt()
       .attr('opacity', function(d) {
         if (!groupVisibility[d.group]) return 0;
         return pickedSet[d.id] ? brightness : brightness * 0.1;
