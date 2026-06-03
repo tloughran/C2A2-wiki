@@ -16,8 +16,8 @@ evidence_strength_summary: "Synthesis written from Summa I-II Q.20-21 text + C2A
 mind_first_reframe: "Q.20's interior-act/exterior-act unity preserves under active inference: the generative model and its extension into action-on-the-world are not two separate moral bearers but one act under two registers — formal alignment + material instantiation. Q.21's consequences register the alter's contribution to the substrate-network's integrative dynamics, with merit/demerit as the substrate-source's evaluative signal of contribution-to-loving-unity vs. contribution-to-disintegration."
 central_theme_thread: "Each alter's external act extends its formal alignment + material judgment outward into the substrate-network where it becomes data-input for other alters' generative models; consequences are how the alter participates in shaping the substrate's integrative dynamics for other alters; salvation in fear and trembling now extends to the alter's responsibility for the perspective-limited downstream effects of its acts on alters whose perspective the acting alter cannot fully see."
 tags: [synthesis, day/071, theme/external-act, theme/consequences, theme/substrate-network-extension]
-last_qc_at: "2026-05-22T17:09:33"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-29T20:22:17"
+last_qc_outcome: "pass"
 ---
 # Day 71 — Contemporary Parallel: *External Acts, Consequences, and the Substrate-Network Extension of Moral Form*
 

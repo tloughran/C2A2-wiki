@@ -1,6 +1,6 @@
 # Day 2 — Contemporary Parallel: *Five Ways the Interface Implies Its Ground*
 
-This is the first day under the metaphysical guardrail. Where Aquinas asks *whether God exists*, the contemporary frame does not answer in his terms — it reframes. Mind / consciousness is the ontological primitive (Kastrup); perceived spacetime is a species-specific user interface (Hoffman); form is empirically real and scales as bioelectric pattern (Levin); active inference gives the formal dynamics of agents-with-goals under limited resources (Friston). Under that reframe, the Five Ways are not five proofs of an external entity. They are five facets of how a perspective-limited conscious agent finds the structure of its own experience implying an unconditioned ground. The argument's *form* — effect-to-cause, terminating in something unconditioned — survives. The argument's *substance* — what that unconditioned is — shifts decisively.
+This is the first day on which the metaphysical reframe bears its full weight. Where Aquinas asks *whether God exists*, the contemporary frame does not answer in his terms — it reframes. Mind / consciousness is the ontological primitive (Kastrup); perceived spacetime is a species-specific user interface (Hoffman); form is empirically real and scales as bioelectric pattern (Levin); active inference gives the formal dynamics of agents-with-goals under limited resources (Friston). Under that reframe, the Five Ways are not five proofs of an external entity. They are five facets of how a perspective-limited conscious agent finds the structure of its own experience implying an unconditioned ground. The argument's *form* — effect-to-cause, terminating in something unconditioned — survives. The argument's *substance* — what that unconditioned is — shifts decisively.
 
 ## What sacred doctrine becomes (Q.1)
 
@@ -76,6 +76,6 @@ karpathy_wiki_sources:
   - "rohr (canonical works — wiki node planned): *The Universal Christ* — divine pattern in matter from creation"
 mind_first_reframe: "Aquinas's Five Ways are not five proofs of an external entity but five facets of how a perspective-limited conscious agent finds the structure of its own experience implying an unconditioned ground; God-as-existence-itself becomes mind-at-large as ontological primitive, with each finite perspective dissociated from but contained within it."
 central_theme_thread: "Q.1 a.7 — 'we cannot know what God is in himself; we know him by his effects' — is the apophatic acknowledgment that conscious agents are individuated by the limitations of their perspective; loving unity (Aquinas's beatific vision; Wright's covenant inclusion; Rohr's Universal Christ; Kastrup's reintegration into mind-at-large) is the computational telos that finite agents work toward through limited resources."
-last_qc_at: "2026-05-24T22:28:06"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-01T04:24:16"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/002, theme/sacred-doctrine, theme/existence-of-god, theme/five-ways, theme/apophatic, theme/metaphysical-keystone]

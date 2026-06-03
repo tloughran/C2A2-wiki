@@ -16,7 +16,7 @@ length_ratio_to_target: 0.982
 mind_first_reframe: "Aquinas's question-pair (Q.70 fruits of the Spirit / Q.71 vice as contrary to nature) recovers as the experiential-and-structural signature of an agent's policy aligning with or departing from its constitutive goal-state: the fruits are the precision-weighted confirmation signal of policy success against a high-precision charity prior (Friston + Fredrickson), and vice is information loss — the agent decoupling from the wider conscious-agent network so that the positivity-resonance signal that would have measured successful coupling disappears."
 central_theme_thread: "Q.71 a.2's 'vice is contrary to nature' lands the central theme directly: vice is what happens when the limited rational agent optimizes for what looks-like-good from its perspective at the cost of what is-good for the wider whole it is part of; perspective-limitation alone is enough, absent the integrating signals. The fruits are the phenomenal signature of policy that does fit the wider whole — measurements, not rewards."
 tags: [synthesis, day/096, theme/virtue-vice-hinge, theme/perspective-coordination]
-last_qc_at: "2026-05-23T18:29:45"
+last_qc_at: "2026-05-31T02:26:57"
 last_qc_outcome: "pass"
 ---
 

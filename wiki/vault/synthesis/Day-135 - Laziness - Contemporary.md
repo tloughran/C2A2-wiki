@@ -17,8 +17,8 @@ evidence_strength_summary: "Hatred of God only of a misperceived God (Q.34 a.1) 
 mind_first_reframe: "Hatred and sloth are the two structural failure-modes of the perspective-bounded agent. Hatred cannot take goodness-itself as its object (Q.34 a.1); it can only target a misperceived whole — a distorted icon (Hoffman) or mind-at-large mistaken for a threat by the dissociated alter (Kastrup) — and at its limit it is the perspective finally sealing itself against the real whole (a.5: 'the completion of vice'), the terminus the whole charity arc has circled. Envy (a.6) is the zero-sum misreading of a non-zero-sum reality (Fredrickson PRS-06): another's good looks like my loss only when the whole is out of view. Sloth/acedia (Q.35) is the collapse of the goal-prior — the agent stuck in a low-energy local minimum, no longer drawn to the global attractor because the toil toward it registers as evil (Friston PRS-13/14) — the abandonment of the very computation toward loving unity that Day 133 named."
 central_theme_thread: "After naming the computation toward loving unity (Day 133) and its social protocol (Day 134), the project must name how it fails. Hatred is the refusal of the whole: mistaking one's partial perspective for the whole and turning against the real whole that reproves it — the perspective sealed from the inside, the final-impenitence limit. Sloth is the refusal of the work: abandoning the working-out-of-salvation because the perceived resource-cost is too high, the will settling into a local minimum where the good no longer attracts. Both are perspective-limitation gone terminal — one defending the partial against the whole, the other quitting the climb toward it. And both are reversible in via: the daughters of sloth (despair, faint-heartedness) are the giving-up cluster, but the door is locked only when, like the demons of Day 130, the will finally seals it from within."
 tags: [synthesis, day/135, theme/failure-modes]
-last_qc_at: "2026-05-22T18:29:39"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-05-30T08:19:59"
+last_qc_outcome: "pass"
 ---
 
 # Day 135 — Contemporary Parallel: How the Climb Fails — Sealing Off and Giving Up

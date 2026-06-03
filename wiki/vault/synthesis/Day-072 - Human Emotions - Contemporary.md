@@ -16,7 +16,7 @@ evidence_strength_summary: "Synthesis written from Summa I-II Q.22-23 + C2A2 fra
 mind_first_reframe: "Aquinas's eleven-passion catalog (Q.23) preserves under a contemporary appraisal-and-active-inference frame as the alter's distinct affective-modes of registering relational substrate-state: love/hate as primary valence; desire/aversion as future-orientation; joy/sorrow as present-state-evaluation [concupiscible]; hope/despair as future-attainability; fear/daring as threat-response; anger as obstruction-response [irascible]. The sensitive-appetite locus (Q.22) preserves as the embodied register that interfaces with intellective evaluation; affect is data, not noise."
 central_theme_thread: "Passions are the embodied-affective-interface through which the alter's perspective-limited apprehension of substrate-source-integration vs. dis-integration registers as feeling. Affect is computational signal of alignment-or-mismatch between current apprehension and felt-direction-toward-loving-unity; passions broaden the alter's repertoire (Fredrickson) when aligned with formal direction, narrow when misaligned. The alter's individuation-by-perspective-limitation is what produces affect at all — a fully integrated perspective would not need affect as signal."
 tags: [synthesis, day/072, theme/passions, theme/sensitive-appetite, theme/affective-interface]
-last_qc_at: "2026-05-22T17:09:34"
+last_qc_at: "2026-05-30T04:20:58"
 last_qc_outcome: "pass"
 ---
 # Day 72 — Contemporary Parallel: *Human Emotions, the Sensitive Appetite, and Affect as the Substrate-Network Integration Signal*
