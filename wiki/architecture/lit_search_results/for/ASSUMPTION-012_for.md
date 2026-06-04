@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Amershi, S., Cakmak, M., Knox, W. B., & Kulesza, T. (2014). "Power to the People: The Role of Humans in Interactive Machine Learning." AI Magazine, 35(4), 105-120. — Demonstrates that human approval/review is the limiting factor in human-in-the-loop systems; waiting for human decisions creates queue buildup.
-  
+
   2. Piorkowski, D., Wang, S., Yeh, J., & Chilimbi, T. (2021). "Towards the Automation of Content Moderation." In Proceedings of FAccT '21, 609-621. — Shows approval workflow queues grow unbounded without defined response times; human capacity is bottleneck, not computation.
-  
+
   3. Bussone, A., Stumpf, S., & O'Sullivan, B. (2015). "The Role of Explanations on Trust and Reliance in Clinical Decision Support Systems." In 2015 IEEE International Conference on Healthcare Informatics (ICHI), 160-169. — Clinical decision systems show human review is pacing constraint even when automated systems can generate results continuously.
 
 Strength of support: Strong

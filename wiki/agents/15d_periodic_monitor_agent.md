@@ -69,19 +69,19 @@ MONITOR-[NNN]:
   Date entered monitoring: [YYYY-MM-DD]
   Entered by: 15c (DISPOSITION-NNN)
   What would change disposition: [from 15c's assessment]
-  
+
   Cadence: [Weekly | Monthly (low-priority)]
   Cycle count: [N]
   Last checked: [YYYY-MM-DD]
   Next check: [YYYY-MM-DD]
-  
+
   Evidence trajectory:
     Supporting: [growing | stable | shrinking | none]
     Challenging: [growing | stable | shrinking | none]
     New sources since last cycle: [Yes/No — brief note if yes]
-  
+
   Status: [ACTIVE | LOW-PRIORITY | RESOLVED → INCORPORATE | RESOLVED → REVISE]
-  
+
   PROVENANCE:
     Origin: [14a or 14b]
     Chain: [14a → 15a, 15b → 15c → 15d] or similar

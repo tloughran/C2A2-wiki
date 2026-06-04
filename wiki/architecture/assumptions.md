@@ -4171,3 +4171,662 @@ ASSUMPTION-236:
     Transform at each step:
       14a: Extracted from the cowork-to-chat summary's explicit "1-week cadence" target and the framing of the design question as a triggering-mechanism problem.
     Current status: UNTESTED
+
+ASSUMPTION-237:
+  Date identified: 2026-05-27
+  Statement: The Supabase broker v4 `web_enrich` action wraps Tavily search results into a `WEB_CONTEXT` block appended to the system prompt before the OpenRouter call; the LLM cites sources with numeric `[n]` markers; the client receives `{text, source, model, freeRemaining, webRemaining, sources: [{url, title, snippet}]}` and is responsible for citation rendering.
+  Context: 2026-05-27 attended Cowork session ("Next steps" + "Supabase and Open Router integration" + "Next steps after push") culminating in the v4 contract proposal in the "Next steps" transcript. Numeric markers were Claude's explicit pick ("gpt-4o-mini handles them reliably and they're trivial to parse client-side"). Tom signed off on the broker live and the seam, per the closing of the Supabase session ("broker live, seam shipped, research-tier caps in place, all verified end-to-end").
+  Type: architectural
+  Related decisions: (broker-v4 web_enrich; pending Tom numbering as candidate DECISION-049 -- not yet filed)
+  Related assumptions: ASSUMPTION-238, ASSUMPTION-239, ASSUMPTION-240
+  Related presumptions: PRESUMPTION-260, PRESUMPTION-261
+  Testability: testable empirically (compare [n]-citation parsing reliability vs [title]-citation under gpt-4o-mini and other openrouter models; measure broker latency under WEB_CONTEXT-block-of-5-results vs no enrichment) and via literature (RAG retrieval-augmented-generation citation-rendering best practices)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-237
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the "Next steps" session contract proposal (request body, broker flow steps 1-8, response shape) and the "Supabase and Open Router integration" sign-off confirmation.
+    Current status: UNTESTED
+
+ASSUMPTION-238:
+  Date identified: 2026-05-27
+  Statement: The broker stays generic -- the `tab` request field (community | sociogram | connectome | agent_map | curriculum) is analytics-only and does NOT gate behavior server-side. Per-tab caps, per-tab templates, and per-tab routing live on the client as payload adapters and UI render adapters; if per-tab caps are wanted later, "that's a one-column-add to the schema."
+  Context: 2026-05-27 attended Cowork session ("Next steps" transcript): "**The `tab` field is purely analytics.** It does *not* gate behavior server-side (no per-tab caps, no per-tab template lookup). That keeps the broker generic." Flagged as one of two questions for sign-off; closed in the "Supabase and Open Router integration" session's "all verified end-to-end" message.
+  Type: architectural
+  Related decisions: (broker-v4 generic-routing commitment)
+  Related assumptions: ASSUMPTION-237
+  Related presumptions: PRESUMPTION-261, PRESUMPTION-268
+  Testability: testable empirically (measure whether downstream tab-specific behavior requirements appear within 6-12 weeks of broker-v4 ship; if they do, the "one-column-add" migration cost materializes) and via literature (generic-API vs domain-aware-API design tradeoffs in multi-tenant brokers)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-238
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the "Next steps" session "Two things I want to flag before sign-off" block and the analytics-only framing.
+    Current status: UNTESTED
+
+ASSUMPTION-239:
+  Date identified: 2026-05-27
+  Statement: The web_enrich action requires two new counter columns on the usage table (`web_asks`, `web_cost_cents`) and two new RPCs (`get_web_usage`, `increment_web_usage`) mirroring the existing dataset-enrich counters; hard daily caps are `WEB_DEVICE_DAILY_LIMIT = 20` per device and `WEB_GLOBAL_DAILY_CENTS_CAP = 300` ($3/day global), with separate counters from dataset enrich so the two pools do not contaminate each other.
+  Context: 2026-05-27 "Next steps" transcript broker-flow step 2 and the "Migration delta" block: explicit constants, explicit mirror-pattern, explicit separation rationale.
+  Type: architectural / operational
+  Related decisions: (broker-v4 web-counter migration; candidate DECISION-049-adjacent)
+  Related assumptions: ASSUMPTION-237
+  Related presumptions: PRESUMPTION-260
+  Testability: testable empirically (measure actual web_asks and web_cost_cents trajectories over the first 30 days of broker-v4 ship; check whether 20/device/day and $3/day global are over- or under-provisioned vs realized usage) and via literature (multi-tenant API cost-cap design in OpenAI-broker patterns)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-239
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit constants and migration-delta language in the "Next steps" contract proposal.
+    Current status: UNTESTED
+
+ASSUMPTION-240:
+  Date identified: 2026-05-27
+  Statement: The 2026-05-18 first-newline truncation bug (auto-send `type`-with-newlines path collapses to first-line-only; header sent alone, body cut at first `\n`) recurred today on the evening Cowork-to-Chat delivery; the 2026-05-18 diagnosis stands but "the fix did not land or was not attempted." The Tiptap/ProseMirror `execCommand('insertText')` path preserves paragraph breaks and is the correct re-send mechanism for truncated body messages.
+  Context: 2026-05-27 cowork_summary.md delivery-note header: "the first-newline truncation bug recurred (same shape as the 2026-05-18 incident...). Morning-walk Claude (Opus 4.7 Adaptive) immediately recognized the recurrence and stood by for the body. The body was re-delivered as a follow-up message via the Tiptap/ProseMirror `execCommand('insertText')` path (which inserts paragraph breaks properly) and Claude responded substantively. ... This is a Pathway-14 honesty-layer recurrence worth canonizing -- the auto-send `type`-with-newlines path collapses to first-line-only and has done so on at least two separate evening syncs nine days apart. The diagnosis from 05-18 stands; the fix did not land or was not attempted."
+  Type: methodological / operational / self-referential
+  Related decisions: (delivery-path remediation; not yet a numbered DECISION; was a Pathway-14 honesty-layer item on 2026-05-18)
+  Related assumptions: ASSUMPTION-242 (canonization-as-fix)
+  Related presumptions: PRESUMPTION-262, PRESUMPTION-263
+  Testability: testable empirically (instrument the next 10 evening Cowork-to-Chat deliveries; measure whether the truncation recurs under `type`-with-newlines and whether the `execCommand('insertText')` path holds 100% in the alternative) and methodologically (does naming-the-recurrence-in-the-md-header without a code-level fix correlate with non-recurrence on day N+9 or not?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-240
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim from the cowork_summary's delivery-note header, including the explicit "the fix did not land or was not attempted" framing.
+    Current status: UNTESTED
+
+ASSUMPTION-241:
+  Date identified: 2026-05-27
+  Statement: The operational rule "pasted review-page state is the source of truth; intent supersedes UI state when explicitly stated" is the right closure on the 2026-05-26 Gmail decision-email misfire loop on the operational side, ahead of any email-generation-side fix. The DECISION-048 candidate from yesterday (review-page state authoritative when Gmail decision-email body disagrees) is unchanged in shape today but extended in scope: "intent supersedes UI state when explicitly stated" (handling the 3-Wright case where the page UI itself was misleading).
+  Context: 2026-05-27 chat_summary.md "Action Items Mentioned" item 5: "File a numbered DECISION on review-page-state as source of truth." And the morning-thread "Open Questions" item: "Two-layer ground-truth problem from the Gmail misfire: the email body misled, AND the page UI misled on the 3 Wrights. Operational rule needs canonization before a generation-side fix lands." This refines DECISION-048-candidate (which was about review-page-vs-email) to also cover review-page-UI-vs-stated-intent.
+  Type: methodological / operational
+  Related decisions: DECISION-048 (still candidate; numbering owed)
+  Related assumptions: ASSUMPTION-231 (intent overrides UI categorization)
+  Related presumptions: PRESUMPTION-254 (UI itself not always reliable; rule may need to be "stated intent overrides both")
+  Testability: testable empirically (track the next 6 weeks of approval-flow events; count misfire incidents resolved by intent-supersedes-UI rule vs missed by it) and via literature (provenance / source-of-truth conventions in approval-workflow systems with multi-surface state)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-241
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the chat_summary's morning-thread Open Questions and Action Items canonization request.
+    Current status: UNTESTED
+
+ASSUMPTION-242:
+  Date identified: 2026-05-27
+  Statement: "Canonizing the truncation recurrence in the `.md` header as a Pathway-14 honesty-layer event" is a substantive response to a known broken path; the system explicitly notes "the auto-send `type`-with-newlines path is a known broken path that wasn't fixed after 05-18" and treats the canonization in the header as the action taken today on this matter (no code-level fix attempted on 2026-05-27).
+  Context: 2026-05-27 evening Cowork-to-Chat session transcript ("C2a2 evening cowork to chat") summary text: "The truncation recurrence is canonized in the `.md` header as a Pathway-14 honesty-layer event -- the auto-send `type`-with-newlines path is a known broken path that wasn't fixed after 05-18."
+  Type: methodological / self-referential
+  Related decisions: (no numbered DECISION; tacit policy decision to treat naming as the response)
+  Related assumptions: ASSUMPTION-240
+  Related presumptions: PRESUMPTION-263, PRESUMPTION-264
+  Testability: testable empirically (does the next evening sync attempt the `type`-with-newlines path again, and does it again truncate? if both yes, naming-as-action did not change behavior; if either no, naming had some operational effect) and via literature (whether "honesty-layer canonization" patterns in incident-response correlate with subsequent fix rates)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-242
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim from the evening cowork session's transcript framing of the canonization as the response.
+    Current status: UNTESTED
+
+ASSUMPTION-243:
+  Date identified: 2026-05-28
+  Statement: The Sociogram-tab AI search wired in today -- via a new shared `wiki/lib/c2a2-search.js` module that `community/app.js` delegates through, and that the narration generator's new "Ask AI" + "External" checkboxes feed a `runSearch` AI branch routed through the broker's `enrich` action -- is the per-tab adapter pattern the broker-v4 architecture (candidate DECISION-049) was designed to enable; today's working integration is the first demonstrated instance of the pattern.
+  Context: 2026-05-28 evening cowork-to-chat summary "What Was Accomplished Today" (headline build) + "Key Decisions Made" (NEW today, un-numbered: "AI-search-as-shared-module delegation pattern (per-tab consumers via c2a2-search.js; broker action `enrich` routed server-side; `[database]` mode label as proof of routing). This is the per-tab adapter pattern the broker-v4 design called for, now demonstrated working in the Sociogram tab.")
+  Type: architectural
+  Related decisions: DECISION-049 candidate (broker-v4 web_enrich architecture, from 2026-05-27); NEW today (un-numbered): AI-search-as-shared-module delegation pattern
+  Related assumptions: ASSUMPTION-237, ASSUMPTION-238, ASSUMPTION-244
+  Related presumptions: PRESUMPTION-267, PRESUMPTION-272
+  Testability: testable empirically (extend the same delegation pattern to Connectome, Agent Map, Curriculum Tools; measure whether per-tab payload-adapter code stays small and the shared module remains stable across the 4 tabs) and via literature (per-tab adapter patterns; shared-module + thin-consumer architectures in multi-surface web apps)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-243
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the cowork-to-chat summary's headline build statement and the explicit "this is the per-tab adapter pattern" framing in Key Decisions.
+    Current status: UNTESTED
+
+ASSUMPTION-244:
+  Date identified: 2026-05-28
+  Statement: End-to-end verification of the AI-search integration consisted of: a single happy-path query ("What does Karl Friston mean by the free energy principle") returning a database-routed answer through the broker; node-dimming behaving correctly; all 4 chapter tabs + 5 Accelerator sub-tabs intact; zero console errors. This is treated as sufficient evidence to stage the 5-file changeset and await Tom's push sign-off.
+  Context: 2026-05-28 evening cowork-to-chat summary: "End-to-end verification clean: a 'What does Karl Friston mean by the free energy principle' query returned a database-routed answer through the broker, node-dimming behaved, all 4 chapter tabs + 5 Accelerator sub-tabs intact, zero console errors. Changeset is staged and awaiting Tom's push sign-off (the constitutional no-blind-push rule held)."
+  Type: methodological / operational
+  Related decisions: NEW today (un-numbered): AI-search-as-shared-module delegation pattern; DECISION-049 candidate
+  Related assumptions: ASSUMPTION-243, ASSUMPTION-245
+  Related presumptions: PRESUMPTION-272
+  Testability: testable empirically (run the next 30 cross-tradition queries through the new path; measure whether single-happy-path-plus-tab-integrity predicts production reliability) and via literature (ship-readiness criteria for shared-module integrations; how many queries / coverage modes are typically required before a single-query test is treated as sufficient)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-244
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim from the evening summary's verification description.
+    Current status: UNTESTED
+
+ASSUMPTION-245:
+  Date identified: 2026-05-28
+  Statement: The constitutional "no-blind-push" rule held today: the 5-file AI-search changeset is staged and awaiting Tom's push sign-off; the agent did not push autonomously. This is the project's standing commitment that the git push remains a Tom-side host-shell step (cf. DECISION-042-candidate / DECISION-043-candidate process commitment from 2026-05-20/22).
+  Context: 2026-05-28 evening cowork-to-chat summary closing line on the AI-search build: "Changeset is staged and awaiting Tom's push sign-off (the constitutional no-blind-push rule held)." Also the "What's Next #1" item: "Tom's push sign-off on the AI-search shared-module changeset (5 files; verified working)."
+  Type: architectural / process / normative
+  Related decisions: DECISION-042 candidate, DECISION-043 candidate (process commitment to host-shell-push)
+  Related assumptions: ASSUMPTION-244
+  Related presumptions: PRESUMPTION-269
+  Testability: testable empirically (track over the next 5.5 weeks whether the no-blind-push rule continues to be honored, whether it ever becomes the bottleneck on a demo-path-shaped change, and whether the rule scales through ISME-pre-demo cadence) and via literature (constitutional-rule design in agentic systems; the cost of human-in-the-loop on the git push step)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-245
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit "constitutional no-blind-push rule held" framing.
+    Current status: UNTESTED
+
+ASSUMPTION-246:
+  Date identified: 2026-05-28
+  Statement: The swarm contract written to root `architecture/` as ground truth and mirrored into `wiki/architecture/swarm-contract.md` (so Obsidian picks it up) is the appropriate ground-truth document for the two new weekly watch agents (`connector-health-weekly`, `reviewer-review-weekly`); the architectural-reviewer is pinned in the contract's "Open additions (deferred)" section and in memory for post-ISME.
+  Context: 2026-05-28 evening cowork-to-chat summary "Files Created or Modified": "Swarm contract (NEW): `wiki/architecture/swarm-contract.md` (mirror of root architecture/)" + "Parallel deployments closed two long-standing watch agents... The swarm contract was written to root `architecture/` as ground truth and mirrored into `wiki/architecture/swarm-contract.md` so Obsidian picks it up; the architectural-reviewer was pinned for post-ISME."
+  Type: architectural / process
+  Related decisions: NEW today (un-numbered): two new weekly watch agents registered against swarm contract
+  Related assumptions: ASSUMPTION-247
+  Related presumptions: PRESUMPTION-270, PRESUMPTION-274
+  Testability: testable empirically (track over 12 weeks whether the root vs wiki mirror drift; whether either copy is ever updated independently; whether the two new watch agents in fact consult the contract on each run) and via literature (canonical-source vs mirrored-copy ground-truth patterns; the cost of double-source-of-truth in operational documentation)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-246
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit ground-truth + mirror language and the explicit pinning of the architectural-reviewer for post-ISME.
+    Current status: UNTESTED
+
+ASSUMPTION-247:
+  Date identified: 2026-05-28
+  Statement: The baseline-then-delta cadence pattern (Week 1 outputs are reference snapshots, not findings; real signal starts Week 2) is the right starting cadence for both new watch agents (`connector-health-weekly` first run 2026-05-31 Sun 06:19 local; `reviewer-review-weekly` first run 2026-06-01 Mon 06:37 local); the pattern follows the earlier janitor agent (`c2a2-wiki-janitor-weekly`, Sun 05:45 local).
+  Context: 2026-05-28 evening cowork-to-chat summary on the new agents: "both following the janitor's baseline-then-delta pattern (real signal Week 2)" + 2026-05-28 cleanup-agent-deployment session summary: "First-run baselines will look quiet. Both agents follow the janitor's baseline-then-delta pattern, so this Sunday/Monday's outputs are reference snapshots, not findings. Real signal starts the second weekend."
+  Type: methodological / operational
+  Related decisions: NEW today (un-numbered): scheduling decisions for the two new weekly watch agents
+  Related assumptions: ASSUMPTION-246
+  Related presumptions: PRESUMPTION-268
+  Testability: testable empirically (compare Week 1 vs Week 2 output of each new agent; verify that Week 1 surfaces no false-positive deltas because there is no prior state to compare against; measure whether "real signal Week 2" is actually achieved or whether the baseline takes longer to stabilize) and via literature (baseline-stabilization periods in monitoring-system rollouts; the cost of treating Week 1 as a non-finding window)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-247
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit "baseline-then-delta" framing and the noted parallel to the janitor agent's first-run behavior.
+    Current status: UNTESTED
+
+ASSUMPTION-248:
+  Date identified: 2026-05-28
+  Statement: The janitor agent's deliberate design choices -- dropped orphan/sparse detection (the sewing agent already owns this and writes `wiki/architecture/metrics/connectivity_log.csv`); dropped unreferenced-images / frontmatter-schema-drift / empty-section / dead-end-wikilink checks (no `attachments/` folder; schemas vary too much across node types for v1; the last two are heuristics with too many false positives) -- were surfaced as explicit design choices rather than skipped silently. Easy to add later.
+  Context: 2026-05-28 evening cowork-to-chat summary on the janitor: "Four janitor checks were dropped during build -- orphan/sparse (the sewing agent owns this), unreferenced-images, frontmatter-schema-drift, empty-section, dead-end-wikilink -- surfaced as deliberate design choices rather than skipped silently." Also the 2026-05-28 "Status and next steps" session transcript: "Decisions I made without asking, worth flagging: 1. Dropped orphan/sparse detection from janitor. Your `c2a2-sewing-agent-weekly` already owns that... Two agents reporting different opinions about the same orphan files would be its own polish problem. 2. Dropped unreferenced-images, frontmatter-schema-drift, empty-section, dead-end-wikilink. No `attachments/` folder exists; frontmatter schemas vary too much across node types for v1; the last two are heuristics that produce too many false positives. Easy to add later."
+  Type: architectural / methodological
+  Related decisions: NEW today (un-numbered): janitor-design check-set
+  Related assumptions: (none directly)
+  Related presumptions: PRESUMPTION-275
+  Testability: testable empirically (over 12 weeks, track whether any of the dropped check categories produces a real signal that the janitor + sewing agent pair misses, and whether the "easy to add later" claim holds when re-introduction is attempted) and via literature (linter/audit-tool check-set design; the cost of false-positive-heavy heuristics in self-awareness pipelines)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-248
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit "deliberate design choices rather than skipped silently" framing -- itself a Rule-12 fail-loud move.
+    Current status: UNTESTED
+
+ASSUMPTION-249:
+  Date identified: 2026-05-28
+  Statement: ISME is now ~5.5 weeks out; demo-path-shaped work continues to be the prioritization tiebreaker. The Sociogram-tab AI search wired today via shared `c2a2-search.js` delegation is "exactly the per-tab adapter pattern the broker-v4 architecture... was designed to enable" -- and is concretely good demo-path-shaped work shipping today.
+  Context: 2026-05-28 evening cowork-to-chat "For Morning Discussion #2": "Today's demo-path build was concretely good. The Sociogram-tab AI search via shared `c2a2-search.js` delegation is exactly the per-tab adapter pattern the broker-v4 architecture (candidate DECISION-049) was designed to enable. End-to-end verification clean; this is demo-path-shaped work shipping." Also "For Morning Discussion #1" closing: "...given ISME is now ~5.5 weeks out?" Yesterday's chat summary closing: "ISME is six weeks out. The demo path is still the demo path."
+  Type: methodological / scaling / operational
+  Related decisions: (prioritization-tiebreaker framing; not yet a numbered DECISION)
+  Related assumptions: ASSUMPTION-243, ASSUMPTION-250
+  Related presumptions: PRESUMPTION-267, PRESUMPTION-273
+  Testability: testable empirically (track over the next 5.5 weeks how many attended-session decisions are tiebroken by the demo-path heuristic; measure whether demo-readiness in fact arrives at ISME; check whether the heuristic obscures non-demo work that becomes load-bearing) and via literature (deadline-driven prioritization heuristics; demo-path-shaped tiebreakers in research-software contexts; how ISME-style external constraints affect attended-time allocation in human-in-the-loop systems)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-249
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit ISME ~5.5-week framing and the "demo-path-shaped work shipping" judgment.
+    Current status: UNTESTED
+
+ASSUMPTION-250:
+  Date identified: 2026-05-28
+  Statement: The 4th-consecutive-cycle FLAG-I recursion observed today (multiple attended Cowork sessions on AI-search wiring, agent registrations, janitor deployment, branch publishing, resume-session orientation, Physics Explorer attempt -- and PRS extraction did not happen) is strong enough empirical evidence to ask the second-order framing question explicitly: is "do the wolfram canary" actually the right framing, or is the demo-path infrastructure work in fact the higher-leverage attended-session use given ISME ~5.5 weeks out? REVISE-058's multi-failure-mode framing applies; the binary "PRS-extraction-or-failure" diagnosis may itself be the third-category subordination PRESUMPTION-259 keeps surfacing.
+  Context: 2026-05-28 evening cowork-to-chat summary "For Morning Discussion #1": "The FLAG-I recursion empirically advanced again. Today had multiple attended Cowork sessions (AI-search wiring, agent registrations, janitor deployment, branch publishing, resume-session orientation, Physics Explorer attempt) and PRS extraction did not happen. That's the 4th consecutive cycle of the FLAG-I pattern REVISE-056 (HIGH) named: when sit-down time arrives, it is spent on infrastructure rather than ingest, and the network-counts headline stays frozen at 222/90/35. The pattern is now strong enough to ask the second-order question explicitly..."
+  Type: methodological / architectural / self-referential
+  Related decisions: REVISE-056 (HIGH; AWAITING-REVIEW); REVISE-058 (MED-HIGH; AWAITING-REVIEW)
+  Related assumptions: ASSUMPTION-233, ASSUMPTION-234 (wolfram-as-test-run), ASSUMPTION-249
+  Related presumptions: PRESUMPTION-258 (network-counts-unchanged headline obscuring), PRESUMPTION-259 (binary-framing recurrence), PRESUMPTION-267, PRESUMPTION-275
+  Testability: testable empirically (over the next 5.5 weeks, log every attended-session minute by category; check whether demo-path infrastructure or PRS extraction is in fact the higher-leverage use by ISME-readiness metrics; compare the binary "PRS-or-not" framing's predictive validity against a multi-category framing) and via literature (deadline-driven prioritization under empirical evidence of consistent deferral; when "the binary itself is the bug" framings in incident-response succeed)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-250
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim from the "For Morning Discussion #1" second-order question framing -- the central architectural framing-shift candidate of the day.
+    Current status: UNTESTED
+
+ASSUMPTION-251:
+  Date identified: 2026-05-28
+  Statement: Three un-numbered DECISION candidates -- DECISION-048 (3rd cycle: review-page > email; intent > UI), DECISION-049 (2nd cycle: broker-v4 web_enrich architecture), and today's NEW un-numbered AI-search-delegation candidate (1st cycle) -- now constitute a "tracking blind spot of its own." If candidate-DECISIONs keep accumulating faster than they are numbered, the registry stops being the source of truth for what was decided -- exactly the failure mode the registry was built to prevent.
+  Context: 2026-05-28 evening cowork-to-chat summary "For Morning Discussion #6": "Three un-numbered DECISIONs is now a tracking blind spot of its own. DECISION-048 (3rd cycle), DECISION-049 (2nd cycle), and today's AI-search-delegation candidate all sit unnumbered. If candidate-DECISIONs keep accumulating faster than they're numbered, the registry stops being the source of truth for what was decided -- exactly the failure mode the registry was built to prevent."
+  Type: methodological / process / self-referential
+  Related decisions: DECISION-048 candidate, DECISION-049 candidate, NEW AI-search-delegation candidate (all un-numbered)
+  Related assumptions: (none directly)
+  Related presumptions: PRESUMPTION-271
+  Testability: testable empirically (track over 6 weeks whether candidate-DECISION accumulation rate exceeds numbering rate; measure whether un-numbered decisions land in cross-day discussions and obscure that the corresponding registry entry does not yet exist) and via literature (decision-registry hygiene patterns; the cost of candidate-vs-numbered status persistence in long-running engineering logs)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-251
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim from the "tracking blind spot of its own" framing.
+    Current status: UNTESTED
+
+ASSUMPTION-252:
+  Date identified: 2026-05-28
+  Statement: Tonight's c2a2-self-awareness-daily run is the next REVISE-059 atomicity test: the registries advance and the dated artifacts (`2026-05-28_changes.md` + `metrics/2026-05-28_snapshot.md`) must write together; the morning check is "do both files exist?" If yes, the cadence-streak advances to N=7/N=6 (registry-advance/dated-artifact); if no, REVISE-059's HIGH-urgency reading is empirically reinforced.
+  Context: 2026-05-28 evening cowork-to-chat summary "For Morning Discussion #4": "The REVISE-059 atomicity test is live for tonight too. Yesterday's chat summary flagged the 2026-05-25 dated-artifact gap as evidence the 14a/14b write-step can fail silently. Tonight's run (writing `2026-05-28_changes.md` + `metrics/2026-05-28_snapshot.md`) is the next instance of the same test. Morning check: do both files exist?"
+  Type: methodological / self-referential
+  Related decisions: REVISE-059 (MED-HIGH; AWAITING-REVIEW; from 2026-05-27)
+  Related assumptions: (none directly -- a meta-claim about this run)
+  Related presumptions: PRESUMPTION-264 (yesterday's), PRESUMPTION carried; this run's own atomicity surfaces a fresh PRESUMPTION below
+  Testability: testable empirically (verify after this run completes that both files exist with matching registry-advance counts) and architecturally (the implementation of the REVISE-059-recommended fail-loud check would be the structural answer)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-252
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the morning-discussion #4 framing of tonight's run as itself a live test.
+    Current status: UNTESTED
+
+ASSUMPTION-253:
+  Date identified: 2026-05-29
+  Statement: The Sociogram focus-fade bug is real -- not a hidden-tab testing artifact. Running `focus: l ~ s` in a foreground tab leaves edges lit: the isolate computes the correct node set (185 nodes) but the fade does not visually apply.
+  Context: Tom's verbatim foreground confirmation in the "Version 1.6 proceeding" session: "on focus: l ~ s: edges stay lit." This retired the agent's earlier hidden-tab probe (which had been confounded by Chrome's background-tab rAF throttling) and established the symptom independent of that confound.
+  Type: empirical
+  Related decisions: Sociogram v1.6 hold (candidate, un-numbered)
+  Related assumptions: ASSUMPTION-254, ASSUMPTION-255
+  Related presumptions: PRESUMPTION-277, PRESUMPTION-278
+  Testability: testable empirically (reproduce in a foreground tab across multiple queries/browsers; instrument opacity values post-transition)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-253
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim from Tom's foreground confirmation in the Version-1.6 session.
+    Current status: UNTESTED
+
+ASSUMPTION-254:
+  Date identified: 2026-05-29
+  Statement: The prime suspect for the focus-fade bug is the d3 `.transition()` opacity calls in `runFocus` (shared by the substring-search highlight and the 1.6 isolate/link path); the likely fix is to set opacity via plain `.attr('opacity')` instead of `.transition()`.
+  Context: "Version 1.6 proceeding" close-out: "Prime suspect is the `.transition()` opacity calls; likely fix is plain `.attr('opacity')`." The agent flagged loudly that the fix must be diagnosed in a foreground tab because the hidden-tab probe throttles rAF (which d3 transitions depend on).
+  Type: architectural / empirical
+  Related decisions: Sociogram v1.6 hold (candidate, un-numbered)
+  Related assumptions: ASSUMPTION-253
+  Related presumptions: PRESUMPTION-278
+  Testability: testable empirically (swap `.transition()` for `.attr('opacity')` in a foreground tab and observe whether the fade renders)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-254
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated fix-hypothesis in the Version-1.6 close-out.
+    Current status: UNTESTED
+
+ASSUMPTION-255:
+  Date identified: 2026-05-29
+  Statement: Version 1.6 (the bare-guess `focus: x ~ y` parser) is held deliberately -- coded into the generator and logic-validated 16/16, but not pushed and not regenerated into the live `wiki_narration.html` -- because 1.6's isolate/link share the same opacity mechanism as the confirmed focus-fade bug; shipping it now would ship a non-working fade.
+  Context: "Version 1.6 proceeding" close-out: "1.6 bare-guess parser is coded into the generator and logic-validated (16/16), but not pushed and not regenerated into the live file -- held deliberately, because 1.6's isolate/link share the same opacity mechanism as the now-confirmed focus-fade bug."
+  Type: architectural
+  Related decisions: Sociogram v1.6 hold (candidate, un-numbered)
+  Related assumptions: ASSUMPTION-253, ASSUMPTION-254, ASSUMPTION-262
+  Related presumptions: PRESUMPTION-279
+  Testability: framework commitment (a release-gating policy, not a literature claim) -- though the "ship nothing with a broken fade" priority is itself contestable (see PRESUMPTION-279)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-255
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the deliberate-hold rationale stated at session close.
+    Current status: UNTESTED
+
+ASSUMPTION-256:
+  Date identified: 2026-05-29
+  Statement: The Sociogram interaction model is locked: search/`focus:` is a transient highlight-in-place lens (dims non-matches, leaves the graph and simulation intact, reversible on clear); the filter checkboxes are hard filters that change what is actually in the graph; the two do not sync.
+  Context: Tom's verbatim instruction "leave the current model," locking the choice the agent had framed as two clean options (keep separate vs. make search drive visibility). Agent confirmation: "the model decision is locked: search stays a transient lens, checkboxes stay hard filters, no sync."
+  Type: architectural
+  Related decisions: Sociogram interaction-model decision (candidate, un-numbered)
+  Related assumptions: (none directly)
+  Related presumptions: PRESUMPTION-284
+  Testability: testable empirically (usability: do users correctly predict graph state when search and checkboxes disagree?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-256
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim from Tom's "leave the current model" instruction and the agent's lock-in confirmation.
+    Current status: UNTESTED
+
+ASSUMPTION-257:
+  Date identified: 2026-05-29
+  Statement: The recent Sociogram crash was purely memory pressure; a fresh browser renders the page fine and the edge cap was never the cause, so `MAX_EDGES=30000` stays.
+  Context: "Version 1.6 proceeding": "The crash was purely memory pressure -- fresh browser renders fine, edge cap was never the issue. Settled." Close-out: "the crash was just memory pressure -- `MAX_EDGES=30000` is fine, leave it."
+  Type: empirical / architectural
+  Related decisions: MAX_EDGES retained at 30000 (carry; CLAUDE.md records edge limit 3000 / MAX_EDGES 30000)
+  Related assumptions: (none directly)
+  Related presumptions: (none directly)
+  Testability: testable empirically (reproduce crash conditions; profile memory vs. edge-count to confirm pressure, not cap, is the failure mode)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-257
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the "settled" crash-diagnosis statements in the Version-1.6 session.
+    Current status: UNTESTED
+
+ASSUMPTION-258:
+  Date identified: 2026-05-29
+  Statement: Increment 1.5's deterministic friendly-label typeahead (jump-to-thinker, no LLM) is the correct substrate for Pathway-27 entity retrieval, and it replaces the earlier "library-science requirement" Tom had flagged.
+  Context: 2026-05-29 cowork summary: "Increment 1.5 -- the deterministic friendly-label typeahead (jump-to-thinker, no LLM, the Pathway-27 substrate) -- replaces the library-science requirement Tom flagged." Built, validated, and verified in both standalone and Summa-embedded copies; pushed to the feature branch.
+  Type: methodological / architectural
+  Related decisions: Sociogram increment 1.5 (pushed to feature branch)
+  Related assumptions: ASSUMPTION-259
+  Related presumptions: PRESUMPTION-285
+  Testability: testable empirically (do users locate thinkers faster/more accurately with the deterministic typeahead than with the prior approach?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-258
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the increment-1.5 description in the 2026-05-29 cowork summary.
+    Current status: UNTESTED
+
+ASSUMPTION-259:
+  Date identified: 2026-05-29
+  Statement: (Pathway 28 -- Single-Source Participant Registration) The entire tradition/structure vocabulary fans out from one Python dict, `COLORS`, in `generate_visualization.py`; the filter checkboxes and the focus typeahead are siblings of that one source and therefore cannot drift apart.
+  Context: 2026-05-29 cowork summary, pinning Pathway 28: "The entire tradition/structure vocabulary fans out from one Python dict, `COLORS`... the filter checkboxes and the focus typeahead are *siblings of one source* and cannot drift." Answers Tom's walk question "if I add a new thinker, does everything just pick them up?" -- yes, single-source.
+  Type: architectural
+  Related decisions: Pathway 28 (pinned principle, not a numbered DECISION)
+  Related assumptions: ASSUMPTION-260
+  Related presumptions: PRESUMPTION-280, PRESUMPTION-281
+  Testability: testable empirically (add a thinker via one COLORS line + regen and verify checkboxes and typeahead both pick it up with no other edits)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-259
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the pinned Pathway 28 principle in the 2026-05-29 cowork summary.
+    Current status: UNTESTED
+
+ASSUMPTION-260:
+  Date identified: 2026-05-29
+  Statement: Adding a participant to the Sociogram is a single-source operation: one `COLORS` line, plus the participant's vault files, plus a regeneration of the visualization.
+  Context: 2026-05-29 cowork summary: "Adding a participant is one `COLORS` line (+ vault files + regen)." A wrinkle was flagged as a Rule-12 violation: `get_group()` silently falls back to `'root'` for a directory absent from `COLORS`, so a thinker with files but no color line goes grey with no warning.
+  Type: architectural / methodological
+  Related decisions: Pathway 28 (pinned principle); Rule-12 get_group() fail-loud gap (open item)
+  Related assumptions: ASSUMPTION-259
+  Related presumptions: PRESUMPTION-280, PRESUMPTION-281
+  Testability: testable empirically (measure the actual edit-set required to register a participant; verify the regen step is the only non-COLORS action)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-260
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the single-source registration claim and its flagged Rule-12 wrinkle.
+    Current status: UNTESTED
+
+ASSUMPTION-261:
+  Date identified: 2026-05-29
+  Statement: The session-handoff rail (a gitignored `handoffs/sociogram-navigation.md` seeded with the full 1.6 pickup, plus a "read the handoff doc first on resume" rule in the project `CLAUDE.md`) fixes the next-session resume problem, because `CLAUDE.md` auto-loads into context and will steer the resume even though the resume skill itself still title-searches.
+  Context: "Sociogram navigation work" close-out: "because `CLAUDE.md` loads into my context automatically, the rule will steer the resume even though the resume skill itself still title-searches... next session, 'resume the sociogram work' lands on the handoff doc directly -- a bad auto-title can't derail it." Framed self-referentially as "Pathway 16 (durable conversational memory) in miniature, the system practicing its own thesis."
+  Type: methodological / architectural / self-referential
+  Related decisions: Session-handoff rail (NEW; gitignored doc + CLAUDE.md rule)
+  Related assumptions: (none directly)
+  Related presumptions: PRESUMPTION-282, PRESUMPTION-283
+  Testability: testable empirically (on the next "resume the sociogram work," observe whether the handoff doc is read first and whether a bad auto-title is in fact prevented from derailing)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-261
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the handoff-rail rationale stated at the navigation-session close.
+    Current status: UNTESTED
+
+ASSUMPTION-262:
+  Date identified: 2026-05-29
+  Statement: Logic-validating the 1.6 bare-guess parser 16/16 establishes parser-level correctness; the remaining visual/fade behavior is a separate, foreground-tab verification deferred behind the hold.
+  Context: "Version 1.6 proceeding": the 1.6 parser is "coded into the generator and logic-validated (16/16)" yet held because the fade (a rendering concern) is unverified. The split treats parser logic and visual rendering as independently verifiable.
+  Type: methodological
+  Related decisions: Sociogram v1.6 hold (candidate, un-numbered)
+  Related assumptions: ASSUMPTION-255
+  Related presumptions: PRESUMPTION-285
+  Testability: testable empirically (does 16/16 logic coverage predict correct end-to-end behavior, given the fade bug shows logic-passing code can be visually broken?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-262
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the logic-validated-but-held framing of the 1.6 parser.
+    Current status: UNTESTED
+
+ASSUMPTION-263:
+  Date identified: 2026-05-30
+  Statement: Re-authenticating claude.ai in the extension's Chrome profile is the single fix that restores the full daily sync loop -- both the morning intake scrape (which reads Tom's walk/Chat conversation into the pipeline) and the evening cowork-to-chat delivery (which posts the EOD summary back). One re-login unblocks both directions.
+  Context: Stated explicitly and independently by two autonomous agents on 2026-05-30. Morning scrape ("C2a2 morning chat scrape"): "To restore tomorrow's sync, Tom just needs to re-authenticate claude.ai in the Chrome profile the extension uses." Evening sync ("C2a2 evening cowork to chat"): "re-authenticating claude.ai in that Chrome profile is the top action item, and it unblocks the whole sync loop." Both runs failed for the same reason (Chrome logged out of claude.ai); the evening run characterized it as a "3-cycle outage."
+  Type: architectural / operational
+  Related decisions: (delivery-path / intake-path remediation; not a numbered DECISION; Pathway-14 honesty-layer adjacent)
+  Related assumptions: ASSUMPTION-240, ASSUMPTION-242 (truncation-bug delivery-path lineage)
+  Related presumptions: PRESUMPTION-287, PRESUMPTION-288, PRESUMPTION-289 (and the prior re-login-as-unblocking-event / uniform-failure-mode presumption surfaced 2026-05-26)
+  Testability: testable empirically (after the next re-auth, instrument the following morning scrape AND evening delivery: does a single re-login in fact restore both directions, or does either direction require a separate fix? does the outage recur with a different mechanism?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-263
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the matching stated remediation claim in both autonomous sync agents' close-out messages on 2026-05-30. Note: this is the *stated* 14a twin of the previously *inferred* uniform-failure-mode presumption (2026-05-26); routed as ASSUMPTION because it was articulated explicitly this cycle, with cross-reference to the presumption to avoid double-counting.
+    Current status: UNTESTED
+
+ASSUMPTION-264:
+  Date identified: 2026-05-31
+  Statement: Under a degraded/lagged session, intermediate tool-call return values (e.g., "message sent," "logged in") are not trustworthy; only a clean re-verification against ground state (a fresh reload showing the actual current state) is authoritative. When the two conflict, the clean re-check wins and the agent must not claim a result it cannot re-verify.
+  Context: Stated explicitly today by the evening cowork-to-chat agent during a degraded session whose tool I/O was severely lagged/batched. Its own words: "I cannot trust my earlier read that the message was sent ... Per fail-loud discipline, I must not claim a delivery I can't verify." It then treated a clean reload of claude.ai (which redirected to /login?from=logout, i.e. logged out) as authoritative over the earlier lagged reads that had *appeared* to show a logged-in tab and a sent message. The same degraded condition recurred from the sewing-agent run; the assumption is the agent's articulated rule for resolving it.
+  Type: methodological / epistemic
+  Related decisions: (Pathway-14 honesty-layer adjacent; fail-loud discipline, Rule 12; not a numbered DECISION)
+  Related assumptions: ASSUMPTION-263 (the re-auth fix this verification exposed)
+  Related presumptions: PRESUMPTION-291 (cross-day attribution echo), PRESUMPTION-292 (catch-the-false-positive), PRESUMPTION-293 (verifier-outside-the-fault)
+  Testability: testable empirically (instrument a degraded session: do clean-reload re-checks reliably diverge from, and correct, lagged intermediate reads? is the reload path itself immune to the same batched/lagged I/O, or can it return stale state too?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-264
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the evening sync agent's explicitly stated verification rule on 2026-05-31, articulated when it caught and corrected a lag-induced false "message sent" read. This is the *stated* 14a counterpart to the inferred PRESUMPTION-292/293 about whether that rule is structurally guaranteed and whether its verifier is itself fault-free.
+    Current status: UNTESTED
+
+ASSUMPTION-265:
+  Date identified: 2026-06-02
+  Statement: The daily-run git phase must not assume a healthy version-control state across unattended runs — a crashed process can leave a stale `.git/index.lock` that silently blocks all staging (no error surfaced to the run), so git operational integrity has to be checked and repaired each run rather than presumed from the absence of a thrown error.
+  Context: Stated explicitly today by the C2A2 wiki daily-run agent (2026-06-02, Phase 6/Git). Its own words: "I had to clear a stale `.git/index.lock` left over from a crashed process on 2026-05-29 that was silently blocking all git staging." The lock had been present and disabling staging since 2026-05-29; today's run detected it, quarantined the lock files via `mv` (the FUSE mount blocks `rm`), and restored `git status`. The agent paired this with the standing constitutional no-blind-push rule (600+ unrelated Summa-vault-sync files in the tree forbade an unattended auto-commit regardless).
+  Type: methodological / architectural
+  Related decisions: (constitutional no-blind-push rule; 2026-05-20 "large unrelated staged changes must not be auto-committed" note; not a numbered DECISION)
+  Related assumptions: ASSUMPTION-264 (degraded-session reads untrustworthy — same family: a step that appears to succeed may have silently failed)
+  Related presumptions: PRESUMPTION-294 (git-no-error == changes-tracked blind spot), PRESUMPTION-295 (indefinite deferral is cost-free)
+  Related open questions: OPEN-071 (NEW — pre-flight git integrity check)
+  Testability: testable empirically (instrument the daily-run git phase: does a stale index.lock reliably produce a silent staging failure with no surfaced error? does a pre-flight lock-detection + staging-verification step catch it? were the 2026-05-29..06-01 runs' "left staged-clean in working tree" claims actually false during the lock window?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-265
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-06-02 C2A2 wiki daily-run transcript (Phase 6/Git), where the agent stated it had cleared a stale index.lock from a 2026-05-29 crashed process that had been silently blocking all git staging. Genuinely new today (not an echo): corroborated by review/2026-06-02_review.html (created 16:21 today) confirming the run is today's. The stated lesson (verify git health, do not infer it from no-error) is the 14a counterpart to the inferred PRESUMPTION-294 about the prior days' silent staging failures.
+    Current status: UNTESTED
+
+---
+
+ASSUMPTION-266:
+  Date identified: 2026-06-02
+  Statement: Git staging in the wiki repo must use explicit file paths and never `git add -A`, because the working tree perpetually carries unrelated modified Summa-vault-sync files; staging by explicit path is the safeguard that keeps a commit (attended or unattended) from sweeping in unintended changes.
+  Context: Stated in the evening Sociogram session (2026-06-02). Agent's words: "the push runs at the Mac Mini with explicit paths only — never `git add -A`, since the tree has unrelated modified vault files." Re-affirmed when it built the commit command from two named files (generate_visualization.py, wiki_narration.html) only.
+  Type: methodological / architectural
+  Related decisions: (constitutional no-blind-push rule; 2026-05-20 "large unrelated staged changes must not be auto-committed" note)
+  Related assumptions: ASSUMPTION-265 (git-health-must-be-verified-not-inferred — same evening, same git phase)
+  Related presumptions: PRESUMPTION-297 (cross-repo correctness held by memory, not tooling)
+  Related open questions: OPEN-072 (cross-repo uncommitted-state interlock)
+  Testability: testable empirically / framework commitment (does explicit-path staging reliably prevent unintended commits given a perpetually-dirty tree? is the perpetual dirtiness itself the deeper hazard?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-266
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the evening Sociogram interactive session (2026-06-02, post-16:27 self-awareness run). The agent explicitly required explicit-path staging over `git add -A` because of the perpetually-dirty vault tree. Companion to ASSUMPTION-265 (verify git health) — both surfaced in the same evening git-phase that also hit a recurrence of the stale index.lock.
+    Current status: UNTESTED
+
+---
+
+ASSUMPTION-267:
+  Date identified: 2026-06-02
+  Statement: Raising the Sociogram render cap MAX_NODES from 2000 to 20000 is the correct crash-proofing setting — the prior 2000 cap was the operative limit that would have truncated the now-2529-node graph, and 20000 is treated as a safe ceiling that current and near-term data will not reach while keeping the force-directed render stable.
+  Context: Evening Sociogram session (2026-06-02). Stated: "Node cap — `MAX_NODES = 20000` active; can't fire at 2529 nodes (the old 2000 cap is gone)." Shipped in commit 7d56733. (Supersedes the CLAUDE.md crash-proofing baseline of node-limit 2000.)
+  Type: architectural / empirical
+  Related decisions: (Sociogram crash-proofing limits)
+  Related assumptions: ASSUMPTION-268 (foreground-tab review standard that signed this off)
+  Related presumptions: PRESUMPTION-299 (scale-blindness on the 10x cap raise)
+  Testability: testable empirically (characterize render/interaction performance from 2.5k to 20k nodes — is 20000 a safe ceiling or an untested one?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-267
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the evening Sociogram session. The 2000->20000 cap change was stated as design rationale ("can't fire at 2529 nodes; the old 2000 cap is gone") and shipped. The stated commitment is that 20000 is a safe ceiling; the untested span between 2.5k and 20k is the inferred counterpart PRESUMPTION-299.
+    Current status: UNTESTED
+
+---
+
+ASSUMPTION-268:
+  Date identified: 2026-06-02
+  Statement: A valid pre-push "constitutional review" requires live verification in a real foreground browser tab served over HTTP — not a headless or merely asserted check — with explicit observable evidence (numeric opacity split, cross-link node count, clean console across load and interaction) plus Tom's sign-off; this live-evidence standard is what licenses a push.
+  Context: Evening Sociogram session (2026-06-02). Stated: "Constitutional review complete — served over HTTP at `localhost:8080/explorer.html`, viewed in a real foreground Chrome tab"; "gated on your sign-off before any push (constitutional rule)." Evidence cited as sufficient: opacity split 2 bright / 2527 dim / 0 mid; 200 cross-linked nodes; no console errors across load + interaction.
+  Type: methodological
+  Related decisions: (constitutional review / no-blind-push rule)
+  Related assumptions: ASSUMPTION-265, ASSUMPTION-267
+  Related presumptions: PRESUMPTION-298 (single live spot-check generalizes to full correctness)
+  Testability: framework commitment (constitutional) / partly testable (does foreground-tab review catch defects a headless/asserted check misses, and how often?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-268
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the evening Sociogram session, where the agent articulated a specific evidential standard for the constitutional review (real foreground tab, served over HTTP, numeric + console evidence) as the precondition for sign-off and push. The inferred counterpart — that one isolate + one cross-link check generalizes to all cases — is PRESUMPTION-298.
+    Current status: UNTESTED
+
+---
+
+ASSUMPTION-269:
+  Date identified: 2026-06-03
+  Statement: Intake discipline — an unverified cross-tradition lead must be flagged and held, not captured, until a targeted confirmation search establishes it ("flag, do not yet ingest"). A plausible-but-unconfirmed connection is treated as a lead to be verified by a downstream agent, not as ingestible content.
+  Context: Stated in today's auto-ingested McGilchrist proposal (PROP-2026-06-03-001, 07:11), Cross-Tradition Signals section, regarding a possible McGilchrist↔Wolfram engagement: "UNVERIFIED LEAD — flag, do not yet ingest … A direct 2026 McGilchrist–Wolfram dialogue could NOT be confirmed … recommend the orchestrator or Wolfram agent run a targeted confirmation search before any capture." The same proposal contrasts this with a *confirmed* convergence (McGilchrist + Kastrup both reaching a negative verdict on AI consciousness) that it does record.
+  Type: methodological
+  Related decisions: (proposal-intake / provenance discipline; constitutional no-blind-capture norm)
+  Related assumptions: ASSUMPTION-264 (don't claim what you can't re-verify — here applied to intake rather than reporting)
+  Related presumptions: PRESUMPTION-302 (self-awareness/pipeline value on autonomous runs)
+  Testability: framework commitment (provenance discipline) / partly testable via literature (citation-verification and false-lead rates in automated knowledge-base intake)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-269
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-06-03 auto-ingested McGilchrist proposal (the only genuinely new 06-03 intake artifact). The proposal explicitly stated a hold-until-verified rule for the unconfirmed McGilchrist–Wolfram lead while recording only the confirmed McGilchrist–Kastrup convergence. Genuinely new today (not an echo): the proposal file is dated/searched 2026-06-03 and was ingested at 07:11. This is the stated intake-side counterpart to the "verify before you assert" family (ASSUMPTION-264/265).
+    Current status: UNTESTED
+
+---
+
+ASSUMPTION-270:
+  Date identified: 2026-06-03
+  Statement: An autonomous browser/sync agent must not authenticate as Tom; it will not sign in on his behalf. A lapsed claude.ai session is therefore a hard external blocker the pipeline cannot self-clear — re-auth is an attended-only action — so both the morning Chat→Cowork scrape and the evening Cowork→Chat delivery are designed to skip (and report) rather than restore the channel themselves.
+  Context: Re-stated across today's runs. Evening-sync agent (2026-06-03): "I won't sign in on your behalf, so browser delivery is skipped as expected." Morning scrape (12:53) hit `/login?from=logout` and produced no Chat context. The boundary is the proximate cause of the now-two-day, both-directions sync outage.
+  Type: normative / methodological (safety/autonomy boundary)
+  Related decisions: (autonomous-agent authority limits; human-in-the-loop boundary)
+  Related assumptions: ASSUMPTION-263 (re-auth is the single stated fix for dark intake)
+  Related presumptions: PRESUMPTION-300 (confirmed-down channel treated as recoverable, not a stop condition)
+  Related open questions: OPEN-073 (should a confirmed-down sync channel trip a degrade/halt/escalate state?)
+  Testability: framework commitment (safety boundary — agents should not assume user credentials) / partly testable via literature (human-in-the-loop authority limits; cost of agent-held vs human-held auth in unattended automation)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-270
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from today's evening-sync and morning-scrape transcripts, which each explicitly declined to sign in and skipped their channel. Distinct from ASSUMPTION-263 (which names re-auth as the fix): 270 names the *agent-side boundary* that makes re-auth attended-only, and thereby makes the lapsed session unrecoverable from inside the pipeline. The inferred counterpart — that the pipeline keeps producing into the dead channel anyway — is PRESUMPTION-300.
+    Current status: UNTESTED

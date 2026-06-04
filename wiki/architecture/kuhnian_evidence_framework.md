@@ -53,12 +53,12 @@ The morning session established a **four-category evidence framework** that rein
 
 The morning session used the **Levin/Hoffman trace logic** (information integration as trace geometry in cognitive systems) as a concrete example of Pattern 3 evidence:
 
-- **FOR (mixed)**: 
+- **FOR (mixed)**:
   - Levin's work on "minimal cognition" in slime molds and T-cell networks (strong within his papers).
   - Hoffman's "interface theory of perception" (established in perception literature, but niche).
   - A few interdisciplinary papers cite both authors' frameworks in novel combinations.
-  
-- **AGAINST (faint)**: 
+
+- **AGAINST (faint)**:
   - Classical neuroscience literature does not broadly engage with trace-geometry reformulation.
   - Cognitive science textbooks do not feature this as a standard model.
   - The faintness is not due to empirical refutation; it is due to the old paradigm not yet recognizing this as a canonical question.
@@ -213,6 +213,6 @@ The framework draws on:
 
 ---
 
-*Last updated: 2026-04-15*  
-*Initiated from: Morning walk discussion, 2026-04-14*  
+*Last updated: 2026-04-15*
+*Initiated from: Morning walk discussion, 2026-04-14*
 *Status: FRAMEWORK ESTABLISHED, AWAITING 15c CALIBRATION*

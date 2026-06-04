@@ -10,14 +10,14 @@
 ---
 
 ### MONITOR-001:
-**Date queued:** 2026-04-13  
-**Source item:** ASSUMPTION-003  
-**Item type:** ASSUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** ASSUMPTION-003
+**Item type:** ASSUMPTION
 
-**Statement:**  
+**Statement:**
 "Independent FOR/AGAINST search prevents confirmation bias"
 
-**Why monitoring:**  
+**Why monitoring:**
 While the independent search mechanism is theoretically defensible, strong evidence suggests role assignment (FOR/AGAINST) creates motivated reasoning and amplifies bias rather than preventing it. Role activation is a known psychological phenomenon that may undermine the intended debiasing mechanism.
 
 **What would change disposition:**
@@ -36,32 +36,32 @@ While the independent search mechanism is theoretically defensible, strong evide
 - Compare quality/objectivity metrics between FOR and AGAINST agents
 - Look for evidence of motivated reasoning in search selection or interpretation
 
-**Cycle count:** 1  
+**Cycle count:** 1
 **Last checked:** 2026-04-26 (RE-TRIGGER by 15d — cycle 1)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline — no prior data)  
-- Challenging: stable (baseline — no prior data)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline — no prior data)
+- Challenging: stable (baseline — no prior data)
+- New sources since last cycle: N/A (first cycle)
 
 **Status:** ACTIVE
 
 **Risk flags:** CRITICAL (Role-based bias amplification is foundational risk in 15a/15b architecture)
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14a; Chain: [14a→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 ---
 
 ### MONITOR-002:
-**Date queued:** 2026-04-13  
-**Source item:** ASSUMPTION-006  
-**Item type:** ASSUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** ASSUMPTION-006
+**Item type:** ASSUMPTION
 
-**Statement:**  
+**Statement:**
 "PRS triplet (Problem-Representation-Solution) captures research progress"
 
-**Why monitoring:**  
+**Why monitoring:**
 Both FOR and AGAINST support recognize PRS phases exist but neither claims they are sufficient or optimal. AGAINST sources identify non-linearity in research progress that PRS may not capture. Framework is useful heuristic but incomplete.
 
 **What would change disposition:**
@@ -80,30 +80,30 @@ Both FOR and AGAINST support recognize PRS phases exist but neither claims they 
 - Identify cases where progress does not fit PRS model
 - Develop extensions for non-linear progress patterns
 
-**Cycle count:** 1  
+**Cycle count:** 1
 **Last checked:** 2026-04-26 (RE-TRIGGER by 15d — cycle 1)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline)  
-- Challenging: stable (baseline)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline)
+- Challenging: stable (baseline)
+- New sources since last cycle: N/A (first cycle)
 
 **Status:** ACTIVE
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14a; Chain: [14a→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 ---
 
 ### MONITOR-003:
-**Date queued:** 2026-04-13  
-**Source item:** ASSUMPTION-007  
-**Item type:** ASSUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** ASSUMPTION-007
+**Item type:** ASSUMPTION
 
-**Statement:**  
+**Statement:**
 "AI agents can meaningfully instantiate traditions"
 
-**Why monitoring:**  
+**Why monitoring:**
 This is foundational to C2A2 research but touches unresolved questions in philosophy of mind: intentionality, understanding, embodiment. Deep challenge from Chinese Room and embodiment arguments. Should proceed empirically while flagging philosophical commitments.
 
 **What would change disposition:**
@@ -122,32 +122,32 @@ This is foundational to C2A2 research but touches unresolved questions in philos
 - Test whether agent outputs show understanding vs. mere pattern matching
 - Compare AI instantiation of traditions with human research practice
 
-**Cycle count:** 0  
-**Last checked:** 2026-04-13 (initialized)  
+**Cycle count:** 0
+**Last checked:** 2026-04-13 (initialized)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline)  
-- Challenging: stable (baseline)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline)
+- Challenging: stable (baseline)
+- New sources since last cycle: N/A (first cycle)
 
 **Status:** ACTIVE
 
 **Risk flags:** CRITICAL (Philosophical validity of entire C2A2 enterprise depends on this)
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14a; Chain: [14a→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 ---
 
 ### MONITOR-004:
-**Date queued:** 2026-04-13  
-**Source item:** ASSUMPTION-008  
-**Item type:** ASSUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** ASSUMPTION-008
+**Item type:** ASSUMPTION
 
-**Statement:**  
+**Statement:**
 "2/3 consensus threshold meaningful"
 
-**Why monitoring:**  
+**Why monitoring:**
 FOR support is qualified ("near-optimal under balanced error costs"). AGAINST correctly notes Arrow's theorem prevents universal optimality. Threshold is plausible heuristic but validity depends on assumptions about error costs and group size (N=3 is small).
 
 **What would change disposition:**
@@ -166,30 +166,30 @@ FOR support is qualified ("near-optimal under balanced error costs"). AGAINST co
 - Identify disagreements between 15a, 15b
 - Analyze whether 15c's net assessment with N=3 shows bias
 
-**Cycle count:** 1  
+**Cycle count:** 1
 **Last checked:** 2026-04-26 (RE-TRIGGER by 15d — cycle 1)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline)  
-- Challenging: stable (baseline)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline)
+- Challenging: stable (baseline)
+- New sources since last cycle: N/A (first cycle)
 
 **Status:** ACTIVE
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14a; Chain: [14a→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 ---
 
 ### MONITOR-005:
-**Date queued:** 2026-04-13  
-**Source item:** ASSUMPTION-013  
-**Item type:** ASSUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** ASSUMPTION-013
+**Item type:** ASSUMPTION
 
-**Statement:**  
+**Statement:**
 "Cross-tradition signals are reliable indicators"
 
-**Why monitoring:**  
+**Why monitoring:**
 FOR support is conditional on distinguishing structural from surface similarity. AGAINST raises serious concerns about apophenia (pattern hallucination) and false positives in signal detection. Semantic similarity is documented to be unreliable.
 
 **What would change disposition:**
@@ -211,17 +211,17 @@ FOR support is conditional on distinguishing structural from surface similarity.
 
 **Status:** ACTIVE
 
-**Cycle count:** 1  
+**Cycle count:** 1
 **Last checked:** 2026-04-26 (RE-TRIGGER by 15d — cycle 1)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline)  
-- Challenging: stable (baseline)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline)
+- Challenging: stable (baseline)
+- New sources since last cycle: N/A (first cycle)
 
 **Risk flags:** HIGH (Pattern-matching/apophenia is documented systemic risk)
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14a; Chain: [14a→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 ---
@@ -231,14 +231,14 @@ Origin: 14a; Chain: [14a→15a,15b→15c→15d]; Current status: MONITORING (cyc
 ---
 
 ### MONITOR-006:
-**Date queued:** 2026-04-13  
-**Source item:** PRESUMPTION-001  
-**Item type:** PRESUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** PRESUMPTION-001
+**Item type:** PRESUMPTION
 
-**Statement:**  
+**Statement:**
 "Splitting 14 into 14a/14b improves quality"
 
-**Why monitoring:**  
+**Why monitoring:**
 FOR shows specialist benefits but AGAINST correctly notes there is no baseline comparison. Cannot claim improvement without evidence that 14a+14b outperforms hypothetical unified 14. Coordination overhead is real cost.
 
 **What would change disposition:**
@@ -257,30 +257,30 @@ FOR shows specialist benefits but AGAINST correctly notes there is no baseline c
 - Compare output quality of split vs. hypothetical unified architecture
 - Analyze specialist specialization benefits
 
-**Cycle count:** 1  
+**Cycle count:** 1
 **Last checked:** 2026-04-26 (RE-TRIGGER by 15d — cycle 1)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline)  
-- Challenging: stable (baseline)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline)
+- Challenging: stable (baseline)
+- New sources since last cycle: N/A (first cycle)
 
 **Status:** ACTIVE
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14b; Chain: [14b→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 ---
 
 ### MONITOR-007:
-**Date queued:** 2026-04-13  
-**Source item:** PRESUMPTION-002  
-**Item type:** PRESUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** PRESUMPTION-002
+**Item type:** PRESUMPTION
 
-**Statement:**  
+**Statement:**
 "Thousand Brains transfers intact to multi-agent AI"
 
-**Why monitoring:**  
+**Why monitoring:**
 FOR claims core principles transfer with adaptation (vague). AGAINST identifies real structural gaps: embodiment missing, biological constraints don't map. This is foundational architectural assumption with CRITICAL risk flag. Proceed with caution and active testing.
 
 **What would change disposition:**
@@ -301,30 +301,30 @@ FOR claims core principles transfer with adaptation (vague). AGAINST identifies 
 
 **Status:** ACTIVE
 
-**Cycle count:** 1  
+**Cycle count:** 1
 **Last checked:** 2026-04-26 (RE-TRIGGER by 15d — cycle 1)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline)  
-- Challenging: stable (baseline)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline)
+- Challenging: stable (baseline)
+- New sources since last cycle: N/A (first cycle)
 
 **Risk flags:** CRITICAL (If transfer fails, entire architectural approach may need revision)
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14b; Chain: [14b→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 ---
 
 ### MONITOR-008:
-**Date queued:** 2026-04-13  
-**Source item:** PRESUMPTION-003  
-**Item type:** PRESUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** PRESUMPTION-003
+**Item type:** PRESUMPTION
 
-**Statement:**  
+**Statement:**
 "Reference frame fields will be useful not noise"
 
-**Why monitoring:**  
+**Why monitoring:**
 FOR support is conditional ("if accessed regularly"). AGAINST concern is practical: unused metadata degrades signal-to-noise. Utility depends entirely on actual usage patterns, which are empirical question not theoretical.
 
 **What would change disposition:**
@@ -343,30 +343,30 @@ FOR support is conditional ("if accessed regularly"). AGAINST concern is practic
 - Measure signal-to-noise with/without metadata
 - Evaluate whether fields should be retained, pruned, or redesigned
 
-**Cycle count:** 1  
+**Cycle count:** 1
 **Last checked:** 2026-04-26 (RE-TRIGGER by 15d — cycle 1)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline)  
-- Challenging: stable (baseline)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline)
+- Challenging: stable (baseline)
+- New sources since last cycle: N/A (first cycle)
 
 **Status:** ACTIVE
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14b; Chain: [14b→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 ---
 
 ### MONITOR-009:
-**Date queued:** 2026-04-13  
-**Source item:** PRESUMPTION-004  
-**Item type:** PRESUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** PRESUMPTION-004
+**Item type:** PRESUMPTION
 
-**Statement:**  
+**Statement:**
 "2/3 threshold optimal"
 
-**Why monitoring:**  
+**Why monitoring:**
 Same threshold as ASSUMPTION-008. FOR claims near-optimal under balanced costs; AGAINST notes no universal optimum and context-dependence. This requires context-specific analysis to determine when 2/3 is appropriate.
 
 **What would change disposition:**
@@ -384,30 +384,30 @@ Same threshold as ASSUMPTION-008. FOR claims near-optimal under balanced costs; 
 - Analyze whether 2/3 threshold is appropriate for each type
 - Develop decision-type-specific thresholds if needed
 
-**Cycle count:** 1  
+**Cycle count:** 1
 **Last checked:** 2026-04-26 (RE-TRIGGER by 15d — cycle 1)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline)  
-- Challenging: stable (baseline)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline)
+- Challenging: stable (baseline)
+- New sources since last cycle: N/A (first cycle)
 
 **Status:** ACTIVE
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14b; Chain: [14b→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 ---
 
 ### MONITOR-010:
-**Date queued:** 2026-04-13  
-**Source item:** PRESUMPTION-005  
-**Item type:** PRESUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** PRESUMPTION-005
+**Item type:** PRESUMPTION
 
-**Statement:**  
+**Statement:**
 "Separating FOR/AGAINST prevents bias without introducing others"
 
-**Why monitoring:**  
+**Why monitoring:**
 FOR claims it reduces search bias. AGAINST provides strong evidence that separation creates new bias through role activation and motivated reasoning. This is foundational architecture design with MEDIUM risk flag on pipeline integrity.
 
 **What would change disposition:**
@@ -428,30 +428,30 @@ FOR claims it reduces search bias. AGAINST provides strong evidence that separat
 
 **Status:** ACTIVE
 
-**Cycle count:** 1  
+**Cycle count:** 1
 **Last checked:** 2026-04-26 (RE-TRIGGER by 15d — cycle 1)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline)  
-- Challenging: stable (baseline)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline)
+- Challenging: stable (baseline)
+- New sources since last cycle: N/A (first cycle)
 
 **Risk flags:** MEDIUM (Architecture is built on this; if it fails, need major redesign)
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14b; Chain: [14b→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 ---
 
 ### MONITOR-011:
-**Date queued:** 2026-04-13  
-**Source item:** PRESUMPTION-008  
-**Item type:** PRESUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** PRESUMPTION-008
+**Item type:** PRESUMPTION
 
-**Statement:**  
+**Statement:**
 "Health metric r computable without excessive samples"
 
-**Why monitoring:**  
+**Why monitoring:**
 FOR says computable at n=30+ but reliability varies. AGAINST notes ratio metrics need 2-3x sample sizes. Validity depends on what "excessive" means in research context and what acceptable reliability level is.
 
 **What would change disposition:**
@@ -470,30 +470,30 @@ FOR says computable at n=30+ but reliability varies. AGAINST notes ratio metrics
 - Measure metric r reliability at different sample sizes
 - Determine if 2-3x multiplier is needed for adequate reliability
 
-**Cycle count:** 1  
+**Cycle count:** 1
 **Last checked:** 2026-04-26 (RE-TRIGGER by 15d — cycle 1)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline)  
-- Challenging: stable (baseline)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline)
+- Challenging: stable (baseline)
+- New sources since last cycle: N/A (first cycle)
 
 **Status:** ACTIVE
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14b; Chain: [14b→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 ---
 
 ### MONITOR-012:
-**Date queued:** 2026-04-13  
-**Source item:** PRESUMPTION-010  
-**Item type:** PRESUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** PRESUMPTION-010
+**Item type:** PRESUMPTION
 
-**Statement:**  
+**Statement:**
 "Agent 16 can detect conditions via web search"
 
-**Why monitoring:**  
+**Why monitoring:**
 FOR shows >90% detection for discrete, known changes. AGAINST identifies critical problem: false negatives and missed novel conditions. This capability is partial with known limitations.
 
 **What would change disposition:**
@@ -516,30 +516,30 @@ FOR shows >90% detection for discrete, known changes. AGAINST identifies critica
 
 **Status:** ACTIVE
 
-**Cycle count:** 1  
+**Cycle count:** 1
 **Last checked:** 2026-04-26 (RE-TRIGGER by 15d — cycle 1)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline)  
-- Challenging: stable (baseline)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline)
+- Challenging: stable (baseline)
+- New sources since last cycle: N/A (first cycle)
 
 **Risk flags:** HIGH (Related to PRESUMPTION-007's false assumption about literature gaps)
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14b; Chain: [14b→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 ---
 
 ### MONITOR-013:
-**Date queued:** 2026-04-13  
-**Source item:** PRESUMPTION-012  
-**Item type:** PRESUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** PRESUMPTION-012
+**Item type:** PRESUMPTION
 
-**Statement:**  
+**Statement:**
 "Fixed weekly schedule adequate"
 
-**Why monitoring:**  
+**Why monitoring:**
 FOR support is weak, acknowledging it works only if publication patterns are regular. AGAINST identifies real problem: publication patterns are uneven. Simple mismatch between design assumption and reality.
 
 **What would change disposition:**
@@ -558,17 +558,17 @@ FOR support is weak, acknowledging it works only if publication patterns are reg
 - Identify missed windows or delayed detections
 - Assess whether adaptive scheduling would improve timeliness
 
-**Cycle count:** 0  
-**Last checked:** 2026-04-13 (initialized)  
+**Cycle count:** 0
+**Last checked:** 2026-04-13 (initialized)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline)  
-- Challenging: stable (baseline)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline)
+- Challenging: stable (baseline)
+- New sources since last cycle: N/A (first cycle)
 
 **Status:** ACTIVE
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14b; Chain: [14b→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -578,14 +578,14 @@ Origin: 14b; Chain: [14b→15a,15b→15c→15d]; Current status: MONITORING (cyc
 ---
 
 ### MONITOR-014:
-**Date queued:** 2026-04-13  
-**Source item:** ASSUMPTION-010  
-**Item type:** ASSUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** ASSUMPTION-010
+**Item type:** ASSUMPTION
 
-**Statement:**  
+**Statement:**
 "Finite typology of cross-paradigm connecting memes (displacement phrasings) exists"
 
-**Why monitoring:**  
+**Why monitoring:**
 FOR support is weak-moderate. AGAINST raises moderate-strong concerns about whether connecting memes form a finite typology vs. open-ended continuum. Empirical question requiring testing against actual cross-tradition connections.
 
 **What would change disposition:**
@@ -604,30 +604,30 @@ FOR support is weak-moderate. AGAINST raises moderate-strong concerns about whet
 - Test whether typology converges or continues expanding
 - Compare with existing typologies in analogy/metaphor research
 
-**Cycle count:** 1  
+**Cycle count:** 1
 **Last checked:** 2026-04-26 (RE-TRIGGER by 15d — cycle 1)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline)  
-- Challenging: stable (baseline)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline)
+- Challenging: stable (baseline)
+- New sources since last cycle: N/A (first cycle)
 
 **Status:** ACTIVE
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14a; Chain: [14a→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 ---
 
 ### MONITOR-015:
-**Date queued:** 2026-04-13  
-**Source item:** ASSUMPTION-011  
-**Item type:** ASSUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** ASSUMPTION-011
+**Item type:** ASSUMPTION
 
-**Statement:**  
+**Statement:**
 "Specialist-agent-first / orchestrator-fallback scheduling is the right division of labor"
 
-**Why monitoring:**  
+**Why monitoring:**
 FOR partially supports with evidence from multi-agent scheduling literature. AGAINST challenges with concerns about rigidity and lack of empirical comparison with alternatives. Design choice needs validation.
 
 **What would change disposition:**
@@ -646,30 +646,30 @@ FOR partially supports with evidence from multi-agent scheduling literature. AGA
 - Monitor orchestrator fallback frequency
 - Compare scheduling performance with hypothetical alternatives
 
-**Cycle count:** 1  
+**Cycle count:** 1
 **Last checked:** 2026-04-26 (RE-TRIGGER by 15d — cycle 1)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline)  
-- Challenging: stable (baseline)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline)
+- Challenging: stable (baseline)
+- New sources since last cycle: N/A (first cycle)
 
 **Status:** ACTIVE
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14a; Chain: [14a→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 ---
 
 ### MONITOR-016:
-**Date queued:** 2026-04-13  
-**Source item:** PRESUMPTION-009  
-**Item type:** PRESUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** PRESUMPTION-009
+**Item type:** PRESUMPTION
 
-**Statement:**  
+**Statement:**
 "Provenance overhead is justified by benefit; will be adopted and used by agents/humans"
 
-**Why monitoring:**  
+**Why monitoring:**
 FOR partially supports with traceability literature showing value. AGAINST challenges with weak-moderate evidence about adoption failure in similar systems. Utility depends on actual usage patterns.
 
 **What would change disposition:**
@@ -688,30 +688,30 @@ FOR partially supports with traceability literature showing value. AGAINST chall
 - Measure decision quality with/without provenance data
 - Evaluate adoption rates over time
 
-**Cycle count:** 1  
+**Cycle count:** 1
 **Last checked:** 2026-04-26 (RE-TRIGGER by 15d — cycle 1)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline)  
-- Challenging: stable (baseline)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline)
+- Challenging: stable (baseline)
+- New sources since last cycle: N/A (first cycle)
 
 **Status:** ACTIVE
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14b; Chain: [14b→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 ---
 
 ### MONITOR-017:
-**Date queued:** 2026-04-13  
-**Source item:** PRESUMPTION-014  
-**Item type:** PRESUMPTION  
+**Date queued:** 2026-04-13
+**Source item:** PRESUMPTION-014
+**Item type:** PRESUMPTION
 
-**Statement:**  
+**Statement:**
 "Cross-tradition signals from agents are structurally meaningful, not just surface associations"
 
-**Why monitoring:**  
+**Why monitoring:**
 FOR partially supports with structure-mapping theory. AGAINST challenges with moderate-strong evidence about LLM tendency toward surface associations and apophenia risks. Core output quality depends on this distinction.
 
 **What would change disposition:**
@@ -731,36 +731,36 @@ FOR partially supports with structure-mapping theory. AGAINST challenges with mo
 - Develop structural vs. surface classification criteria
 - Measure precision/recall of structural signal detection
 
-**Cycle count:** 1  
+**Cycle count:** 1
 **Last checked:** 2026-04-26 (RE-TRIGGER by 15d — cycle 1)
 
-**Evidence trajectory:**  
-- Supporting: stable (baseline)  
-- Challenging: stable (baseline)  
-- New sources since last cycle: N/A (first cycle)  
+**Evidence trajectory:**
+- Supporting: stable (baseline)
+- Challenging: stable (baseline)
+- New sources since last cycle: N/A (first cycle)
 
 **Status:** ACTIVE
 
 **Risk flags:** HIGH (Core output quality depends on this)
 
-**PROVENANCE:**  
+**PROVENANCE:**
 Origin: 14b; Chain: [14b→15a,15b→15c→15d]; Current status: MONITORING (cycle 0)
 
 ---
 
 ## MONITOR QUEUE SUMMARY
 
-**Total items in MONITOR status:** 17  
-**Total ASSUMPTIONS in MONITOR:** 7 (003, 006, 007, 008, 010, 011, 013)  
-**Total PRESUMPTIONS in MONITOR:** 10 (001, 002, 003, 004, 005, 008, 009, 010, 012, 014)  
+**Total items in MONITOR status:** 17
+**Total ASSUMPTIONS in MONITOR:** 7 (003, 006, 007, 008, 010, 011, 013)
+**Total PRESUMPTIONS in MONITOR:** 10 (001, 002, 003, 004, 005, 008, 009, 010, 012, 014)
 
 **Priority breakdown:**
 - HIGH priority: 7 items (ASSUMPTION-003, -007, -013; PRESUMPTION-002, -005, -010, -014)
 - MEDIUM priority: 7 items (ASSUMPTION-006, -008, -010, -011; PRESUMPTION-001, -004, -008)
 - LOW priority: 3 items (PRESUMPTION-003, -009, -012)
 
-**Critical risk flags:** 2 items (ASSUMPTION-007, PRESUMPTION-002)  
-**High risk flags:** 5 items (ASSUMPTION-013; PRESUMPTION-005, -010, -014; + ASSUMPTION-003 role-bias)  
+**Critical risk flags:** 2 items (ASSUMPTION-007, PRESUMPTION-002)
+**High risk flags:** 5 items (ASSUMPTION-013; PRESUMPTION-005, -010, -014; + ASSUMPTION-003 role-bias)
 
 **Cadence breakdown:**
 - Weekly: 16 items (all except MONITOR-013)
@@ -777,18 +777,18 @@ Origin: 14b; Chain: [14b→15a,15b→15c→15d]; Current status: MONITORING (cyc
 ## 15d RUN LOG
 
 ### Run 1 — 2026-04-13 (Initial Setup)
-**Type:** First run / initialization  
-**Items processed:** 17 (all)  
-**Items re-queued for 15a/15b:** 0 (none overdue — all next_check dates are future)  
-**Monthly re-check:** Skipped (day 13 ≠ first Sunday of month)  
-**Stale items flagged:** 0 (all at cycle 0)  
+**Type:** First run / initialization
+**Items processed:** 17 (all)
+**Items re-queued for 15a/15b:** 0 (none overdue — all next_check dates are future)
+**Monthly re-check:** Skipped (day 13 ≠ first Sunday of month)
+**Stale items flagged:** 0 (all at cycle 0)
 **Actions taken:**
 - Added 4 missing MONITOR items from for_lit_search.md (ASSUMPTION-010, -011; PRESUMPTION-009, -014)
 - Initialized cycle count = 0 and evidence trajectory baselines for all 17 items
 - Added PROVENANCE chains to all entries
 - Corrected summary counts (was 13, now 17)
 - All items confirmed ACTIVE with appropriate cadence and next_check dates
-**Discrepancy noted:** ASSUMPTION-007 (MONITOR-003) is listed as REVISE in for_lit_search.md but exists as a MONITOR item in this queue. Flagged for 15c review — 15d does not change dispositions.  
+**Discrepancy noted:** ASSUMPTION-007 (MONITOR-003) is listed as REVISE in for_lit_search.md but exists as a MONITOR item in this queue. Flagged for 15c review — 15d does not change dispositions.
 **Next run due:** 2026-04-20
 
 ---
@@ -2549,133 +2549,133 @@ Per-item trajectory blocks remain unchanged from prior 15c dispositions; this 15
 ## 2026-04-27 RUN — New Monitor Items
 
 ### MONITOR-063:
-**Date added:** 2026-04-27  
-**Source item:** ASSUMPTION-064  
-**Item type:** ASSUMPTION  
-**Priority:** HIGH  
-**Cadence:** Weekly (first month, then evaluate)  
-**Next 15d check:** 2026-05-04  
+**Date added:** 2026-04-27
+**Source item:** ASSUMPTION-064
+**Item type:** ASSUMPTION
+**Priority:** HIGH
+**Cadence:** Weekly (first month, then evaluate)
+**Next 15d check:** 2026-05-04
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR (not INCORPORATE / not REVISE):** Wright/Rohr addition is defensible but raises heterogeneity (PRESUMPTION-080) and curation-asymmetry (PRESUMPTION-076) concerns. Watch for distortion as the new entries are operationalized.  
+**Reasoning for MONITOR (not INCORPORATE / not REVISE):** Wright/Rohr addition is defensible but raises heterogeneity (PRESUMPTION-080) and curation-asymmetry (PRESUMPTION-076) concerns. Watch for distortion as the new entries are operationalized.
 
-**What would change disposition:**  
+**What would change disposition:**
 - INCORPORATE: New supporting evidence resolves the partial challenges; structural dependencies (PRESUMPTIONs) become validated
 - REVISE: Operational evidence shows the assumption fails in practice; or Tom decides the challenge is decisive
 
 ---
 
 ### MONITOR-064:
-**Date added:** 2026-04-27  
-**Source item:** ASSUMPTION-065  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Weekly (first month, then evaluate)  
-**Next 15d check:** 2026-05-04  
+**Date added:** 2026-04-27
+**Source item:** ASSUMPTION-065
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Weekly (first month, then evaluate)
+**Next 15d check:** 2026-05-04
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR (not INCORPORATE / not REVISE):** Convergence framing is rhetorically supported and technically contested. The 'most significant 2026 signal' ranking is unsupported by literature. Watch for confirmation by independent expert.  
+**Reasoning for MONITOR (not INCORPORATE / not REVISE):** Convergence framing is rhetorically supported and technically contested. The 'most significant 2026 signal' ranking is unsupported by literature. Watch for confirmation by independent expert.
 
-**What would change disposition:**  
+**What would change disposition:**
 - INCORPORATE: New supporting evidence resolves the partial challenges; structural dependencies (PRESUMPTIONs) become validated
 - REVISE: Operational evidence shows the assumption fails in practice; or Tom decides the challenge is decisive
 
 ---
 
 ### MONITOR-065:
-**Date added:** 2026-04-27  
-**Source item:** ASSUMPTION-066  
-**Item type:** ASSUMPTION  
-**Priority:** LOW-MEDIUM  
-**Cadence:** Weekly (first month, then evaluate)  
-**Next 15d check:** 2026-05-04  
+**Date added:** 2026-04-27
+**Source item:** ASSUMPTION-066
+**Item type:** ASSUMPTION
+**Priority:** LOW-MEDIUM
+**Cadence:** Weekly (first month, then evaluate)
+**Next 15d check:** 2026-05-04
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR (not INCORPORATE / not REVISE):** Wolfram method-export framing fits self-description and dominant reception but understates imports. CROSS-016/024/026 should be re-examined under a method-circulation framing.  
+**Reasoning for MONITOR (not INCORPORATE / not REVISE):** Wolfram method-export framing fits self-description and dominant reception but understates imports. CROSS-016/024/026 should be re-examined under a method-circulation framing.
 
-**What would change disposition:**  
+**What would change disposition:**
 - INCORPORATE: New supporting evidence resolves the partial challenges; structural dependencies (PRESUMPTIONs) become validated
 - REVISE: Operational evidence shows the assumption fails in practice; or Tom decides the challenge is decisive
 
 ---
 
 ### MONITOR-066:
-**Date added:** 2026-04-27  
-**Source item:** ASSUMPTION-067  
-**Item type:** ASSUMPTION  
-**Priority:** HIGH  
-**Cadence:** Weekly (first month, then evaluate)  
-**Next 15d check:** 2026-05-04  
+**Date added:** 2026-04-27
+**Source item:** ASSUMPTION-067
+**Item type:** ASSUMPTION
+**Priority:** HIGH
+**Cadence:** Weekly (first month, then evaluate)
+**Next 15d check:** 2026-05-04
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)  
-**15b result:** CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)
+**15b result:** CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR (not INCORPORATE / not REVISE):** Stump+Fredrickson pairing has weak literature attestation and a level-of-analysis challenge. Same-day tension with ASSUMPTION-063 is unresolved. MONITOR pending Tom's resolution of the 063/067 tension.  
+**Reasoning for MONITOR (not INCORPORATE / not REVISE):** Stump+Fredrickson pairing has weak literature attestation and a level-of-analysis challenge. Same-day tension with ASSUMPTION-063 is unresolved. MONITOR pending Tom's resolution of the 063/067 tension.
 
-**What would change disposition:**  
+**What would change disposition:**
 - INCORPORATE: New supporting evidence resolves the partial challenges; structural dependencies (PRESUMPTIONs) become validated
 - REVISE: Operational evidence shows the assumption fails in practice; or Tom decides the challenge is decisive
 
 ---
 
 ### MONITOR-067:
-**Date added:** 2026-04-27  
-**Source item:** PRESUMPTION-072  
-**Item type:** PRESUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Weekly (first month, then evaluate)  
-**Next 15d check:** 2026-05-04  
+**Date added:** 2026-04-27
+**Source item:** PRESUMPTION-072
+**Item type:** PRESUMPTION
+**Priority:** MEDIUM
+**Cadence:** Weekly (first month, then evaluate)
+**Next 15d check:** 2026-05-04
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR (not INCORPORATE / not REVISE):** Catholic-Thomistic consumer is a defensible normative choice in tension with ASSUMPTION-005 pluralism. Should be made explicit (converted from PRESUMPTION to ASSUMPTION) rather than left implicit.  
+**Reasoning for MONITOR (not INCORPORATE / not REVISE):** Catholic-Thomistic consumer is a defensible normative choice in tension with ASSUMPTION-005 pluralism. Should be made explicit (converted from PRESUMPTION to ASSUMPTION) rather than left implicit.
 
-**What would change disposition:**  
+**What would change disposition:**
 - INCORPORATE: New supporting evidence resolves the partial challenges; structural dependencies (PRESUMPTIONs) become validated
 - REVISE: Operational evidence shows the assumption fails in practice; or Tom decides the challenge is decisive
 
 ---
 
 ### MONITOR-068:
-**Date added:** 2026-04-27  
-**Source item:** PRESUMPTION-073  
-**Item type:** PRESUMPTION  
-**Priority:** MEDIUM-HIGH  
-**Cadence:** Weekly (first month, then evaluate)  
-**Next 15d check:** 2026-05-04  
+**Date added:** 2026-04-27
+**Source item:** PRESUMPTION-073
+**Item type:** PRESUMPTION
+**Priority:** MEDIUM-HIGH
+**Cadence:** Weekly (first month, then evaluate)
+**Next 15d check:** 2026-05-04
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR (not INCORPORATE / not REVISE):** N=11→13 transition is tractable; 'without affecting' is too strong. Pair with explicit r-recalibration protocol at the boundary. Pairs with OPEN-005.  
+**Reasoning for MONITOR (not INCORPORATE / not REVISE):** N=11→13 transition is tractable; 'without affecting' is too strong. Pair with explicit r-recalibration protocol at the boundary. Pairs with OPEN-005.
 
-**What would change disposition:**  
+**What would change disposition:**
 - INCORPORATE: New supporting evidence resolves the partial challenges; structural dependencies (PRESUMPTIONs) become validated
 - REVISE: Operational evidence shows the assumption fails in practice; or Tom decides the challenge is decisive
 
 ---
 
 ### MONITOR-069:
-**Date added:** 2026-04-27  
-**Source item:** PRESUMPTION-077  
-**Item type:** PRESUMPTION  
-**Priority:** HIGH  
-**Cadence:** Weekly (first month, then evaluate)  
-**Next 15d check:** 2026-05-04  
+**Date added:** 2026-04-27
+**Source item:** PRESUMPTION-077
+**Item type:** PRESUMPTION
+**Priority:** HIGH
+**Cadence:** Weekly (first month, then evaluate)
+**Next 15d check:** 2026-05-04
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR (not INCORPORATE / not REVISE):** 4-day gap absorbability is plausible but unverified at 4-day scale. Treat as the empirical trigger to re-derive PREMISE-006 scaling-floor. Pairs with OPEN-038.  
+**Reasoning for MONITOR (not INCORPORATE / not REVISE):** 4-day gap absorbability is plausible but unverified at 4-day scale. Treat as the empirical trigger to re-derive PREMISE-006 scaling-floor. Pairs with OPEN-038.
 
-**What would change disposition:**  
+**What would change disposition:**
 - INCORPORATE: New supporting evidence resolves the partial challenges; structural dependencies (PRESUMPTIONs) become validated
 - REVISE: Operational evidence shows the assumption fails in practice; or Tom decides the challenge is decisive
 
@@ -2922,171 +2922,171 @@ Per-item trajectory blocks remain unchanged from prior 15c dispositions; this 15
 ## 2026-04-28 RUN — New Monitor Items
 
 ### MONITOR-070:
-**Date added:** 2026-04-28  
-**Source item:** ASSUMPTION-071  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM-HIGH  
-**Cadence:** Weekly (first month, then evaluate)  
-**Next 15d check:** 2026-05-05  
+**Date added:** 2026-04-28
+**Source item:** ASSUMPTION-071
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM-HIGH
+**Cadence:** Weekly (first month, then evaluate)
+**Next 15d check:** 2026-05-05
 
-**15a result:** SUPPORTED (strength: Strong) — for credential-entry version  
-**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate) — broader "any auth action" version overshoots literature  
+**15a result:** SUPPORTED (strength: Strong) — for credential-entry version
+**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate) — broader "any auth action" version overshoots literature
 
-**Reasoning for MONITOR (not INCORPORATE / not REVISE):** Credential-entry-prohibition is well-supported and aligns with delegated-authorization standards; the literal "agent-prohibited" framing for any auth-bearing action is too restrictive. Pre-issued tokens / pre-authenticated profiles are literature-endorsed substitutes that the policy as currently framed forecloses. Recommend reframing rather than reversing.  
+**Reasoning for MONITOR (not INCORPORATE / not REVISE):** Credential-entry-prohibition is well-supported and aligns with delegated-authorization standards; the literal "agent-prohibited" framing for any auth-bearing action is too restrictive. Pre-issued tokens / pre-authenticated profiles are literature-endorsed substitutes that the policy as currently framed forecloses. Recommend reframing rather than reversing.
 
-**What would change disposition:**  
+**What would change disposition:**
 - INCORPORATE: Reframed as "user-credential-entry is agent-prohibited; pre-issued tokens / pre-authenticated profiles are explicitly permitted under defined scope and audit"
 - REVISE: Operational evidence shows the broad framing blocks legitimate sync workflows where token-based workarounds would be safe
 
 ---
 
 ### MONITOR-071:
-**Date added:** 2026-04-28  
-**Source item:** ASSUMPTION-072  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Weekly (first month, then evaluate)  
-**Next 15d check:** 2026-05-05  
+**Date added:** 2026-04-28
+**Source item:** ASSUMPTION-072
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Weekly (first month, then evaluate)
+**Next 15d check:** 2026-05-05
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR:** Drainability is feasible at throughput level (operational precedent: 25-item and 57-item drains); the "no quality degradation" portion is the load-bearing presumption (PRESUMPTION-081 → REVISE). MONITOR the throughput claim while the quality concern is REVISEd separately.  
+**Reasoning for MONITOR:** Drainability is feasible at throughput level (operational precedent: 25-item and 57-item drains); the "no quality degradation" portion is the load-bearing presumption (PRESUMPTION-081 → REVISE). MONITOR the throughput claim while the quality concern is REVISEd separately.
 
-**What would change disposition:**  
+**What would change disposition:**
 - INCORPORATE: Pair with depth-per-item documentation and periodic quality-equivalence audit
 - REVISE: Quality audit shows systematic position-decay or anchoring effects in batch dispositions
 
 ---
 
 ### MONITOR-072:
-**Date added:** 2026-04-28  
-**Source item:** ASSUMPTION-073  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Weekly (first month, then evaluate)  
-**Next 15d check:** 2026-05-05  
+**Date added:** 2026-04-28
+**Source item:** ASSUMPTION-073
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Weekly (first month, then evaluate)
+**Next 15d check:** 2026-05-05
 
-**15a result:** SUPPORTED (strength: Moderate-Strong)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Weak)  
+**15a result:** SUPPORTED (strength: Moderate-Strong)
+**15b result:** PARTIALLY-CHALLENGED (strength: Weak)
 
-**Reasoning for MONITOR:** Tag-asymmetric heuristic is defensible and operationally consistent (13/14 PRESUMPTION + strong-challenge → REVISE) but the "spec rule" framing slightly overshoots the 15c definition's "lean toward" wording. Bayesian-coherence critique is principled but practical; pure asymmetry is reasonable given PRESUMPTION items have less prior scrutiny. Soften "spec rule" to "default heuristic with periodic audit."  
+**Reasoning for MONITOR:** Tag-asymmetric heuristic is defensible and operationally consistent (13/14 PRESUMPTION + strong-challenge → REVISE) but the "spec rule" framing slightly overshoots the 15c definition's "lean toward" wording. Bayesian-coherence critique is principled but practical; pure asymmetry is reasonable given PRESUMPTION items have less prior scrutiny. Soften "spec rule" to "default heuristic with periodic audit."
 
-**What would change disposition:**  
+**What would change disposition:**
 - INCORPORATE: Periodic audit of dispositions confirms asymmetric weighting is empirically warranted
 - REVISE: Audit shows mechanical application without case-by-case justification, or under-treatment of ASSUMPTION + strong-challenge cases
 
 ---
 
 ### MONITOR-073:
-**Date added:** 2026-04-28  
-**Source item:** ASSUMPTION-074  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Weekly (first month, then evaluate)  
-**Next 15d check:** 2026-05-05  
+**Date added:** 2026-04-28
+**Source item:** ASSUMPTION-074
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Weekly (first month, then evaluate)
+**Next 15d check:** 2026-05-05
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR:** Carry-forward null reporting is supported when paired with documented depth (Cochrane LSR; ISO 25024). The C2A2 refresh cycles do not currently document depth, which makes the version present in the assumption (un-paired) the challenged form. PRESUMPTION-082 surfaces the same gap from the unstated side and is REVISE-flagged. MONITOR the assumption while the underlying mechanism is REVISEd via PRESUMPTION-082.  
+**Reasoning for MONITOR:** Carry-forward null reporting is supported when paired with documented depth (Cochrane LSR; ISO 25024). The C2A2 refresh cycles do not currently document depth, which makes the version present in the assumption (un-paired) the challenged form. PRESUMPTION-082 surfaces the same gap from the unstated side and is REVISE-flagged. MONITOR the assumption while the underlying mechanism is REVISEd via PRESUMPTION-082.
 
-**What would change disposition:**  
+**What would change disposition:**
 - INCORPORATE: Refresh-cycle search depth is documented and (sample-)audited against original-cycle depth
 - REVISE: Depth-matched audit reveals systematic missed-evidence in carry-forwarded items
 
 ---
 
 ### MONITOR-074:
-**Date added:** 2026-04-28  
-**Source item:** ASSUMPTION-075  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM-HIGH  
-**Cadence:** Weekly (first month, then evaluate)  
-**Next 15d check:** 2026-05-05  
+**Date added:** 2026-04-28
+**Source item:** ASSUMPTION-075
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM-HIGH
+**Cadence:** Weekly (first month, then evaluate)
+**Next 15d check:** 2026-05-05
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR:** Expert-judgment override of fixed cadences is well-supported (Cochrane LSR; CDC surveillance) but consistently paired with audit/calibration mechanisms in literature. PRESUMPTION-087 surfaces the un-audited form as separate REVISE. MONITOR the override pattern while the audit gap is REVISEd. Compounds PRESUMPTION-074 specialist-recognition reliability concern flagged 2026-04-27 as SYSTEMIC-RISK.  
+**Reasoning for MONITOR:** Expert-judgment override of fixed cadences is well-supported (Cochrane LSR; CDC surveillance) but consistently paired with audit/calibration mechanisms in literature. PRESUMPTION-087 surfaces the un-audited form as separate REVISE. MONITOR the override pattern while the audit gap is REVISEd. Compounds PRESUMPTION-074 specialist-recognition reliability concern flagged 2026-04-27 as SYSTEMIC-RISK.
 
-**What would change disposition:**  
+**What would change disposition:**
 - INCORPORATE: Audit pattern paired with override (citation requirement, sample review, rate metric)
 - REVISE: Override drift evidence — overrides invoked without empirical trigger, or rate climbing over cycles
 
 ---
 
 ### MONITOR-075:
-**Date added:** 2026-04-28  
-**Source item:** ASSUMPTION-077  
-**Item type:** ASSUMPTION  
-**Priority:** LOW-MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-05-28  
+**Date added:** 2026-04-28
+**Source item:** ASSUMPTION-077
+**Item type:** ASSUMPTION
+**Priority:** LOW-MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-05-28
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR:** ±5% word-ratio policy has weak literature attestation; literature consistently treats synthesis length as density-tracking rather than length-tracking. Defensible as internal editorial discipline; not strongly literature-grounded. Low architectural consequence (derivative-project-internal policy; affects synthesis quality but not C2A2 wiki itself).  
+**Reasoning for MONITOR:** ±5% word-ratio policy has weak literature attestation; literature consistently treats synthesis length as density-tracking rather than length-tracking. Defensible as internal editorial discipline; not strongly literature-grounded. Low architectural consequence (derivative-project-internal policy; affects synthesis quality but not C2A2 wiki itself).
 
-**What would change disposition:**  
+**What would change disposition:**
 - INCORPORATE: Empirical evidence that ±5% works well for the heterogeneous source material across N=308 days
 - REVISE: Sample inspection shows distorted output across high-vs-low-density days
 
 ---
 
 ### MONITOR-076:
-**Date added:** 2026-04-28  
-**Source item:** PRESUMPTION-086  
-**Item type:** PRESUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Weekly (first month, then evaluate)  
-**Next 15d check:** 2026-05-05  
+**Date added:** 2026-04-28
+**Source item:** PRESUMPTION-086
+**Item type:** PRESUMPTION
+**Priority:** MEDIUM
+**Cadence:** Weekly (first month, then evaluate)
+**Next 15d check:** 2026-05-05
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)  
-**15b result:** CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)
+**15b result:** CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR:** PREMISE-013 already specifies the conditions (low collision rate, durable mapping, follow-renames); PRESUMPTION-086 surfaces the absence of an explicit cumulative-collisions upper bound. Moderate (not strong) challenge, and PREMISE-013's conditions are the safeguards. MONITOR rather than REVISE because the underlying premise is sound; the gap is in threshold specification.  
+**Reasoning for MONITOR:** PREMISE-013 already specifies the conditions (low collision rate, durable mapping, follow-renames); PRESUMPTION-086 surfaces the absence of an explicit cumulative-collisions upper bound. Moderate (not strong) challenge, and PREMISE-013's conditions are the safeguards. MONITOR rather than REVISE because the underlying premise is sound; the gap is in threshold specification.
 
-**What would change disposition:**  
+**What would change disposition:**
 - INCORPORATE: Explicit collision-count upper bound is added to PREMISE-013
 - REVISE: Sample of older wiki cross-references shows reference-rot from un-followed renames
 
 ---
 
 ### MONITOR-077:
-**Date added:** 2026-04-28  
-**Source item:** PRESUMPTION-090  
-**Item type:** PRESUMPTION  
-**Priority:** LOW-MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-05-28  
+**Date added:** 2026-04-28
+**Source item:** PRESUMPTION-090
+**Item type:** PRESUMPTION
+**Priority:** LOW-MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-05-28
 
-**15a result:** NO-SUPPORT-FOUND  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** NO-SUPPORT-FOUND
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR (not REVISE despite PRESUMPTION + moderate challenge):** Low architectural consequence (cosmetic-accuracy concern per 14b routing). The literal "accurate without validation" claim is unsupported, but the impact is bounded. MONITOR is appropriate; if cost decisions become decision-relevant, escalate to REVISE.  
+**Reasoning for MONITOR (not REVISE despite PRESUMPTION + moderate challenge):** Low architectural consequence (cosmetic-accuracy concern per 14b routing). The literal "accurate without validation" claim is unsupported, but the impact is bounded. MONITOR is appropriate; if cost decisions become decision-relevant, escalate to REVISE.
 
-**What would change disposition:**  
+**What would change disposition:**
 - INCORPORATE: Periodic validation cycle added (monthly sample of estimates vs actuals); deviation <10% confirms accuracy
 - REVISE: Cost decisions become decision-relevant for architecture, or sample shows >25% deviation
 
 ---
 
 ### MONITOR-078:
-**Date added:** 2026-04-28  
-**Source item:** PRESUMPTION-092  
-**Item type:** PRESUMPTION  
-**Priority:** LOW-MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-05-28  
+**Date added:** 2026-04-28
+**Source item:** PRESUMPTION-092
+**Item type:** PRESUMPTION
+**Priority:** LOW-MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-05-28
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Weak)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Weak)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR:** Bidirectional-feedback non-integration is the literature-documented gap, but architectural consequence is low-medium (derivative-project-side effect; OPEN-036 shadow-architecture extension). MONITOR while OPEN-036 cluster receives separate remediation track.  
+**Reasoning for MONITOR:** Bidirectional-feedback non-integration is the literature-documented gap, but architectural consequence is low-medium (derivative-project-side effect; OPEN-036 shadow-architecture extension). MONITOR while OPEN-036 cluster receives separate remediation track.
 
-**What would change disposition:**  
+**What would change disposition:**
 - INCORPORATE: Periodic integration cycle added; verification artifacts that implicate C2A2 events surface in changelog
 - REVISE: Sample of summa-2026 reports reveals C2A2-relevant signals that were silently lost
 
@@ -3105,39 +3105,39 @@ LOW-MEDIUM priority (new): MONITOR-075 (ASSUMPTION-077 — ±5% word ratio); MON
 ---
 
 ### MONITOR-079:
-**Date added:** 2026-05-05  
-**Source item:** ASSUMPTION-079  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-05  
+**Date added:** 2026-05-05
+**Source item:** ASSUMPTION-079
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-05
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR:** Statistical equivalence holds under stationarity preconditions; the preconditions are not currently tested in C2A2. Same-window catch-up shares environmental context that spread does not, and 2026-04-27 SYSTEMIC-RISK on specialist-recognition reliability is the failure mode the precondition gap could amplify. MONITOR while the preconditions are surfaced and tested.  
+**Reasoning for MONITOR:** Statistical equivalence holds under stationarity preconditions; the preconditions are not currently tested in C2A2. Same-window catch-up shares environmental context that spread does not, and 2026-04-27 SYSTEMIC-RISK on specialist-recognition reliability is the failure mode the precondition gap could amplify. MONITOR while the preconditions are surfaced and tested.
 
-**What would change disposition:**  
-- INCORPORATE: Stationarity preconditions tested across catch-up windows; within-cluster correlation measured and below baseline.  
+**What would change disposition:**
+- INCORPORATE: Stationarity preconditions tested across catch-up windows; within-cluster correlation measured and below baseline.
 - REVISE: Within-cluster correlation in catch-up cycles materially exceeds spread baseline; specialist outputs systematically more similar in catch-up than spread.
 
 ---
 
 ### MONITOR-080:
-**Date added:** 2026-05-05  
-**Source item:** ASSUMPTION-080  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM-HIGH  
-**Cadence:** Weekly  
-**Next 15d check:** 2026-05-12  
+**Date added:** 2026-05-05
+**Source item:** ASSUMPTION-080
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM-HIGH
+**Cadence:** Weekly
+**Next 15d check:** 2026-05-12
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR (load-bearing):** Bug-class is well-attested; specific link-count attribution rests on a single observation and excludes plausible alternatives (race conditions, clock skew, persistence dropouts). MEDIUM-HIGH because this attribution is load-bearing for ASSUMPTION-081 workaround scope and PRESUMPTION-102 cross-path determinism claim.  
+**Reasoning for MONITOR (load-bearing):** Bug-class is well-attested; specific link-count attribution rests on a single observation and excludes plausible alternatives (race conditions, clock skew, persistence dropouts). MEDIUM-HIGH because this attribution is load-bearing for ASSUMPTION-081 workaround scope and PRESUMPTION-102 cross-path determinism claim.
 
-**What would change disposition:**  
-- INCORPORATE: Multi-cycle observation confirms the link-count predicate and rules out alternatives.  
+**What would change disposition:**
+- INCORPORATE: Multi-cycle observation confirms the link-count predicate and rules out alternatives.
 - REVISE: Cross-path test reveals path-dependent partition; or controlled tests reveal race-condition signature.
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -3147,39 +3147,39 @@ LOW-MEDIUM priority (new): MONITOR-075 (ASSUMPTION-077 — ±5% word ratio); MON
 ---
 
 ### MONITOR-081:
-**Date added:** 2026-05-05  
-**Source item:** ASSUMPTION-081  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-05  
+**Date added:** 2026-05-05
+**Source item:** ASSUMPTION-081
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-05
 
-**15a result:** SUPPORTED (strength: Strong)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)  
+**15a result:** SUPPORTED (strength: Strong)
+**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)
 
-**Reasoning for MONITOR:** Workaround pattern is canonical and worked once on 2026-05-05 morning; fragility under underlying-bug patch is the unmitigated concern. Patch-detection step would convert MONITOR to INCORPORATE; without it, workaround risks ossifying.  
+**Reasoning for MONITOR:** Workaround pattern is canonical and worked once on 2026-05-05 morning; fragility under underlying-bug patch is the unmitigated concern. Patch-detection step would convert MONITOR to INCORPORATE; without it, workaround risks ossifying.
 
-**What would change disposition:**  
-- INCORPORATE: Patch-detection probe added to start of each catch-up cycle; workaround use frequency tracked.  
+**What would change disposition:**
+- INCORPORATE: Patch-detection probe added to start of each catch-up cycle; workaround use frequency tracked.
 - REVISE: Anthropic-side patch invisibly changes fireAt semantics; or workaround use frequency reveals ossification.
 
 ---
 
 ### MONITOR-082:
-**Date added:** 2026-05-05  
-**Source item:** ASSUMPTION-082  
-**Item type:** ASSUMPTION  
-**Priority:** HIGH  
-**Cadence:** Weekly  
-**Next 15d check:** 2026-05-12  
+**Date added:** 2026-05-05
+**Source item:** ASSUMPTION-082
+**Item type:** ASSUMPTION
+**Priority:** HIGH
+**Cadence:** Weekly
+**Next 15d check:** 2026-05-12
 
-**15a result:** SUPPORTED (strength: Moderate-Strong)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** SUPPORTED (strength: Moderate-Strong)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR (HIGH-priority — today's standalone architectural item):** Architectural skeleton (3 layers + 5 steps) is canonical; layer-isolation and Tool #1/#2 ordering inherit weaker support. PRESUMPTION-099 (coherence-without-test) is the operational form. HIGH priority because this is the principal architectural item from this run and pairs with PRESUMPTION-099 REVISE.  
+**Reasoning for MONITOR (HIGH-priority — today's standalone architectural item):** Architectural skeleton (3 layers + 5 steps) is canonical; layer-isolation and Tool #1/#2 ordering inherit weaker support. PRESUMPTION-099 (coherence-without-test) is the operational form. HIGH priority because this is the principal architectural item from this run and pairs with PRESUMPTION-099 REVISE.
 
-**What would change disposition:**  
-- INCORPORATE: Layer-isolation tests pass; Tool #1/#2 ranking derived from cost-of-delay; PRESUMPTION-099 REVISE addressed.  
+**What would change disposition:**
+- INCORPORATE: Layer-isolation tests pass; Tool #1/#2 ranking derived from cost-of-delay; PRESUMPTION-099 REVISE addressed.
 - REVISE: Layer-isolation tests reveal material leakage; Tool #1/#2 ordering inverts under implementation feedback.
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -3189,96 +3189,96 @@ LOW-MEDIUM priority (new): MONITOR-075 (ASSUMPTION-077 — ±5% word ratio); MON
 ---
 
 ### MONITOR-083:
-**Date added:** 2026-05-05  
-**Source item:** ASSUMPTION-083  
-**Item type:** ASSUMPTION  
-**Priority:** LOW-MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-05  
+**Date added:** 2026-05-05
+**Source item:** ASSUMPTION-083
+**Item type:** ASSUMPTION
+**Priority:** LOW-MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-05
 
-**15a result:** SUPPORTED (strength: Strong)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)  
+**15a result:** SUPPORTED (strength: Strong)
+**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)
 
-**Reasoning for MONITOR:** Within-OR / across-AND semantic is canonical (Hearst); operationalization details (inline cues, popover-vs-inline documentation) are weaker links. PRESUMPTION-101 (no automated test) is the load-bearing test gap and is REVISE-flagged. Low architectural consequence; remediation is low-cost.  
+**Reasoning for MONITOR:** Within-OR / across-AND semantic is canonical (Hearst); operationalization details (inline cues, popover-vs-inline documentation) are weaker links. PRESUMPTION-101 (no automated test) is the load-bearing test gap and is REVISE-flagged. Low architectural consequence; remediation is low-cost.
 
-**What would change disposition:**  
-- INCORPORATE: PRESUMPTION-101 REVISE addressed (snapshot test added); inline cues at section boundaries.  
+**What would change disposition:**
+- INCORPORATE: PRESUMPTION-101 REVISE addressed (snapshot test added); inline cues at section boundaries.
 - REVISE: User-error rate exceeds threshold; popover content drifts from implementation.
 
 ---
 
 ### MONITOR-084:
-**Date added:** 2026-05-05  
-**Source item:** ASSUMPTION-084  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-05  
+**Date added:** 2026-05-05
+**Source item:** ASSUMPTION-084
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-05
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR:** Null-acceptance with documented depth is canonical; the cross-phase compensation argument ("18 proposals already produced") is non-standard. PRESUMPTION-095 (no fallback variation) is the operational form and is REVISE-flagged. MONITOR while joint remediation with PRESUMPTION-095 proceeds.  
+**Reasoning for MONITOR:** Null-acceptance with documented depth is canonical; the cross-phase compensation argument ("18 proposals already produced") is non-standard. PRESUMPTION-095 (no fallback variation) is the operational form and is REVISE-flagged. MONITOR while joint remediation with PRESUMPTION-095 proceeds.
 
-**What would change disposition:**  
-- INCORPORATE: Phase-2 search-depth documentation added; fallback query-form variation in place.  
+**What would change disposition:**
+- INCORPORATE: Phase-2 search-depth documentation added; fallback query-form variation in place.
 - REVISE: Phase-2 fallback variation reveals method-bound nulls; cross-phase compensation argument continues to absorb the disambiguation prompt.
 
 ---
 
 ### MONITOR-085:
-**Date added:** 2026-05-05  
-**Source item:** ASSUMPTION-085  
-**Item type:** ASSUMPTION  
-**Priority:** LOW-MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-05  
+**Date added:** 2026-05-05
+**Source item:** ASSUMPTION-085
+**Item type:** ASSUMPTION
+**Priority:** LOW-MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-05
 
-**15a result:** SUPPORTED (strength: Strong)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)  
+**15a result:** SUPPORTED (strength: Strong)
+**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)
 
-**Reasoning for MONITOR:** Filter principle (no-commentary) is canonical in historiography and source criticism; operationalization conflates "primary source" with "from thinker himself." Hawkins specifically may be filter-induced null rather than corpus-induced. Low priority because the principle is sound; operational refinement is the remediation.  
+**Reasoning for MONITOR:** Filter principle (no-commentary) is canonical in historiography and source criticism; operationalization conflates "primary source" with "from thinker himself." Hawkins specifically may be filter-induced null rather than corpus-induced. Low priority because the principle is sound; operational refinement is the remediation.
 
-**What would change disposition:**  
-- INCORPORATE: Filter operationalized as "primary source" with explicit inclusion of co-authored / transcribed / institutional materials; honest-null events audited for filter-vs-corpus attribution.  
+**What would change disposition:**
+- INCORPORATE: Filter operationalized as "primary source" with explicit inclusion of co-authored / transcribed / institutional materials; honest-null events audited for filter-vs-corpus attribution.
 - REVISE: Re-run Hawkins specialist with broadened filter yields non-zero — original null was filter-induced; pattern across multiple specialists.
 
 ---
 
 ### MONITOR-086:
-**Date added:** 2026-05-05  
-**Source item:** ASSUMPTION-087  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-05  
+**Date added:** 2026-05-05
+**Source item:** ASSUMPTION-087
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-05
 
-**15a result:** SUPPORTED (strength: Moderate-Strong)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)  
+**15a result:** SUPPORTED (strength: Moderate-Strong)
+**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)
 
-**Reasoning for MONITOR:** Institutional-event tracking is canonical (Lakatos / Laudan / Whitley); single-event-equals-alliance-signal is not. Funding/PR artefacts are documented confounders. MONITOR while weighting and multi-event pattern detection are added.  
+**Reasoning for MONITOR:** Institutional-event tracking is canonical (Lakatos / Laudan / Whitley); single-event-equals-alliance-signal is not. Funding/PR artefacts are documented confounders. MONITOR while weighting and multi-event pattern detection are added.
 
-**What would change disposition:**  
-- INCORPORATE: Institutional events weighted lower than paper publications; multi-event pattern detection in place; funding/PR context annotated.  
+**What would change disposition:**
+- INCORPORATE: Institutional events weighted lower than paper publications; multi-event pattern detection in place; funding/PR context annotated.
 - REVISE: Single-event signals consistently fail to predict downstream paper-citation correlation.
 
 ---
 
 ### MONITOR-087:
-**Date added:** 2026-05-05  
-**Source item:** PRESUMPTION-103  
-**Item type:** PRESUMPTION  
-**Priority:** LOW  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-05  
+**Date added:** 2026-05-05
+**Source item:** PRESUMPTION-103
+**Item type:** PRESUMPTION
+**Priority:** LOW
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-05
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
-**Reasoning for MONITOR (not REVISE despite PRESUMPTION + moderate challenge):** Convention itself is canonical (Airflow logical-date); unstatedness is the gap. Heuristic exception based on low-cost / low-impact remediation. If downstream consumer count grows or label-mismatch errors surface in downstream agents, escalate to REVISE.  
+**Reasoning for MONITOR (not REVISE despite PRESUMPTION + moderate challenge):** Convention itself is canonical (Airflow logical-date); unstatedness is the gap. Heuristic exception based on low-cost / low-impact remediation. If downstream consumer count grows or label-mismatch errors surface in downstream agents, escalate to REVISE.
 
-**What would change disposition:**  
-- INCORPORATE: Convention documented in single visible location; output files annotated with execution-time alongside assignment-time.  
+**What would change disposition:**
+- INCORPORATE: Convention documented in single visible location; output files annotated with execution-time alongside assignment-time.
 - REVISE: Downstream agents observed misreading weekday labels; documentation debt grows monotonically with consumer count.
 
 ---
@@ -3394,39 +3394,39 @@ Per-item trajectory blocks in MONITOR-040, 042, 044 already reflect cycle 1 refr
 ## ITEMS ADDED — 2026-05-09 cycle (11 new MONITOR items: MONITOR-088 through MONITOR-098)
 
 ### MONITOR-088:
-**Date added:** 2026-05-09  
-**Source item:** ASSUMPTION-088  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-09  
+**Date added:** 2026-05-09
+**Source item:** ASSUMPTION-088
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-09
 
-**15a result:** SUPPORTED (strength: Moderate-Strong)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)  
+**15a result:** SUPPORTED (strength: Moderate-Strong)
+**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)
 
 **Reasoning for MONITOR:** Work-blocking quota framing is canonical (Anthropic / OpenAI / SRE / SaaS literatures); operational disposition is correct under either reading (true quota or misclassification). The challenge is to the foreclosure of the misclassification investigation that PRESUMPTION-104 / PRESUMPTION-107 identify, not to the operational disposition. MEDIUM cadence sufficient; remediation is wire-level inspection on next interrupt.
 
-**What would change disposition:**  
-- INCORPORATE: Wire-level confirmation of org-tier endpoint signature; explicit dual-naming-vs-misclassification protocol documented.  
+**What would change disposition:**
+- INCORPORATE: Wire-level confirmation of org-tier endpoint signature; explicit dual-naming-vs-misclassification protocol documented.
 - REVISE: Wire-level inspection reveals the response is from personal-tier endpoint with an unrelated UX label — confirming PRESUMPTION-104 misclassification framing.
 
 ---
 
 ### MONITOR-089:
-**Date added:** 2026-05-09  
-**Source item:** ASSUMPTION-089  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM-HIGH  
-**Cadence:** Weekly  
-**Next 15d check:** 2026-05-16  
+**Date added:** 2026-05-09
+**Source item:** ASSUMPTION-089
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM-HIGH
+**Cadence:** Weekly
+**Next 15d check:** 2026-05-16
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** Two-source synthesis is the literature minimum, not the optimum, for high-stakes review. PRESUMPTION-109 (compositional equivalence without weight protocol) and PRESUMPTION-115 (near-verbatim adoption of Codex 5.5) form a three-item review-aggregation cluster; the cluster's REVISE items make the ASSUMPTION-089 disposition contingent. MEDIUM-HIGH because the assumption is load-bearing for the explorer-fix synthesis path.
 
-**What would change disposition:**  
-- INCORPORATE: Epistemic-weight protocol added; third source (different LLM family or human reviewer) added; PRESUMPTION-109 and PRESUMPTION-115 REVISEs addressed.  
+**What would change disposition:**
+- INCORPORATE: Epistemic-weight protocol added; third source (different LLM family or human reviewer) added; PRESUMPTION-109 and PRESUMPTION-115 REVISEs addressed.
 - REVISE: Cross-LLM divergence test reveals shared-blind-spot effect material; near-verbatim adoption pattern recurs across cycles.
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -3436,58 +3436,58 @@ Per-item trajectory blocks in MONITOR-040, 042, 044 already reflect cycle 1 refr
 ---
 
 ### MONITOR-090:
-**Date added:** 2026-05-09  
-**Source item:** ASSUMPTION-090  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-09  
+**Date added:** 2026-05-09
+**Source item:** ASSUMPTION-090
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-09
 
-**15a result:** SUPPORTED (strength: Strong)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)  
+**15a result:** SUPPORTED (strength: Strong)
+**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)
 
 **Reasoning for MONITOR:** Smallest-fix-first is canonical; counter-evidence is conditional (fragile area, long-horizon). The two-line extractOverview() fix sits in the RC Explorer area which MONITOR-082 has at HIGH priority and PRESUMPTION-099 has at REVISE — entanglement risk is non-trivial. MEDIUM because the principle is sound; the operational guard is unit-test + isolation verification before merge.
 
-**What would change disposition:**  
-- INCORPORATE: Fix lands with unit test on extractOverview() and explicit layer-isolation verification per ASSUMPTION-082; no regression observed.  
+**What would change disposition:**
+- INCORPORATE: Fix lands with unit test on extractOverview() and explicit layer-isolation verification per ASSUMPTION-082; no regression observed.
 - REVISE: Fix introduces regression; or strategic-fix-first opportunity in RC Explorer materially dominates the smallest-fix entry point under cost-of-delay analysis.
 
 ---
 
 ### MONITOR-091:
-**Date added:** 2026-05-09  
-**Source item:** ASSUMPTION-091  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-09  
+**Date added:** 2026-05-09
+**Source item:** ASSUMPTION-091
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-09
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** Uniform treatment is canonical default but cadence-induced variance is documented under attention-budget constraints. Pairs with PRESUMPTION-113 (same baseline expectations) and ASSUMPTION-079 MONITOR-079 — three-item cluster around uniform-treatment-without-precondition-tests. The remediation is cadence-tagging on filings + cadence-sliced metric — low-cost and deferred.
 
-**What would change disposition:**  
-- INCORPORATE: Cadence flag on filings; pooled vs. cadence-sliced approval-rate variance below noise threshold.  
+**What would change disposition:**
+- INCORPORATE: Cadence flag on filings; pooled vs. cadence-sliced approval-rate variance below noise threshold.
 - REVISE: Cadence-sliced approval-rate reveals systematic difference exceeding noise threshold; downstream metrics carry observable bias.
 
 ---
 
 ### MONITOR-092:
-**Date added:** 2026-05-09  
-**Source item:** ASSUMPTION-092  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM-HIGH  
-**Cadence:** Weekly  
-**Next 15d check:** 2026-05-16  
+**Date added:** 2026-05-09
+**Source item:** ASSUMPTION-092
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM-HIGH
+**Cadence:** Weekly
+**Next 15d check:** 2026-05-16
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** Regression-hypothesis-as-working-assumption is appropriate first cut; "attributable to" framing overstates without alternative-cause enumeration. Pairs with PRESUMPTION-114 REVISE (recency-priority cause attribution) — the structural gap is the missing enumeration step. MEDIUM-HIGH because the attribution is load-bearing for the sandbox-infrastructure escalation track and pairs with the scheduler-workaround SYSTEMIC-RISK cluster.
 
-**What would change disposition:**  
-- INCORPORATE: Alternative-cause enumeration completed (≥3 alternatives examined and ruled out); diagnostic probe distinguishes link-count cause from alternatives.  
+**What would change disposition:**
+- INCORPORATE: Alternative-cause enumeration completed (≥3 alternatives examined and ruled out); diagnostic probe distinguishes link-count cause from alternatives.
 - REVISE: Diagnostic probe reveals different proximate cause; or alternative-cause enumeration cannot rule out plausible non-link-count causes.
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -3497,58 +3497,58 @@ Per-item trajectory blocks in MONITOR-040, 042, 044 already reflect cycle 1 refr
 ---
 
 ### MONITOR-093:
-**Date added:** 2026-05-09  
-**Source item:** ASSUMPTION-093  
-**Item type:** ASSUMPTION  
-**Priority:** LOW-MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-09  
+**Date added:** 2026-05-09
+**Source item:** ASSUMPTION-093
+**Item type:** ASSUMPTION
+**Priority:** LOW-MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-09
 
-**15a result:** SUPPORTED (strength: Strong)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)  
+**15a result:** SUPPORTED (strength: Strong)
+**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)
 
 **Reasoning for MONITOR:** Saturday-rerun is one canonical closure pattern, not "the standard"; counter-literature endorses Monday-with-tagging and automated-catch-up as equally valid. Low architectural consequence; remediation is reframing ("one option") + catch-up tagging on reruns.
 
-**What would change disposition:**  
-- INCORPORATE: Framing softened to "one closure option among several"; reruns explicitly tagged as catch-up for downstream metrics.  
+**What would change disposition:**
+- INCORPORATE: Framing softened to "one closure option among several"; reruns explicitly tagged as catch-up for downstream metrics.
 - REVISE: Saturday reruns observably degrade output quality vs. weekday baseline; or attention-state variance produces measurable downstream metric drift.
 
 ---
 
 ### MONITOR-094:
-**Date added:** 2026-05-09  
-**Source item:** ASSUMPTION-094  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-09  
+**Date added:** 2026-05-09
+**Source item:** ASSUMPTION-094
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-09
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** Bundling at N≥5 is canonical only when items share architectural layer + severity tier. The bundling decision rests on PRESUMPTION-110 (presumed same-layer without verification, REVISE) — the verification gap is the structural risk. Mixing ASSUMPTION-095 (SYSTEMIC ESCALATION) with non-SYSTEMIC items in the same bundle violates ITIL severity discipline.
 
-**What would change disposition:**  
-- INCORPORATE: Layer verification + severity-tier separation enforced; PRESUMPTION-110 REVISE addressed; SYSTEMIC items atomic-reported.  
+**What would change disposition:**
+- INCORPORATE: Layer verification + severity-tier separation enforced; PRESUMPTION-110 REVISE addressed; SYSTEMIC items atomic-reported.
 - REVISE: Bundling resolution rate degrades vs. atomic baseline by >25% per added item; layer verification reveals heterogeneity post-bundle.
 
 ---
 
 ### MONITOR-095:
-**Date added:** 2026-05-09  
-**Source item:** ASSUMPTION-095  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM-HIGH  
-**Cadence:** Weekly  
-**Next 15d check:** 2026-05-16  
+**Date added:** 2026-05-09
+**Source item:** ASSUMPTION-095
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM-HIGH
+**Cadence:** Weekly
+**Next 15d check:** 2026-05-16
 
-**15a result:** SUPPORTED (strength: Strong)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)  
+**15a result:** SUPPORTED (strength: Strong)
+**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)
 
 **Reasoning for MONITOR:** SYSTEMIC ESCALATION classification matches standard ITIL severity criteria for a confirmed structural IP block. Counter-literature requires alternative-diagnosis enumeration (transient/rate-limit/geo/version) and alternative-path enumeration (proxy/OAuth/self-hosted) before SYSTEMIC commitment. MEDIUM-HIGH because severity-tier discipline (ASSUMPTION-094 / PRESUMPTION-110 cluster) is downstream of this classification.
 
-**What would change disposition:**  
-- INCORPORATE: Alternative diagnoses ruled out via temporal-stability test; alternative paths (proxy/OAuth/library-version) tested and confirmed unavailable; SYSTEMIC severity confirmed empirically.  
+**What would change disposition:**
+- INCORPORATE: Alternative diagnoses ruled out via temporal-stability test; alternative paths (proxy/OAuth/library-version) tested and confirmed unavailable; SYSTEMIC severity confirmed empirically.
 - REVISE: One alternative path succeeds (e.g., proxy-via-self-hosted works) — severity downgrades to MAJOR or HIGH; or temporal pattern reveals transience.
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -3558,58 +3558,58 @@ Per-item trajectory blocks in MONITOR-040, 042, 044 already reflect cycle 1 refr
 ---
 
 ### MONITOR-096:
-**Date added:** 2026-05-09  
-**Source item:** PRESUMPTION-104  
-**Item type:** PRESUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-09  
+**Date added:** 2026-05-09
+**Source item:** PRESUMPTION-104
+**Item type:** PRESUMPTION
+**Priority:** MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-09
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR (heuristic exception — not REVISE despite PRESUMPTION + moderate challenge):** Misclassification is one defensible reading; intentional dual-naming is the alternative. Operational disposition (back-off-and-retry per ASSUMPTION-088) is correct under either reading; the gap is the unsupported attribution rather than a structural failure. Heuristic exception based on operational equivalence and low cost of investigation. If naming inspection reveals intentional dual-naming pattern, presumption is empirically refuted; escalate to REVISE.
 
-**What would change disposition:**  
-- INCORPORATE: Wire-level investigation confirms misclassification (not intentional dual-naming); reframed as confirmed misclassification rather than presumed.  
+**What would change disposition:**
+- INCORPORATE: Wire-level investigation confirms misclassification (not intentional dual-naming); reframed as confirmed misclassification rather than presumed.
 - REVISE: Wire-level inspection reveals intentional dual-naming pattern (e.g., legacy migration / early-access tier); presumption is empirically refuted.
 
 ---
 
 ### MONITOR-097:
-**Date added:** 2026-05-09  
-**Source item:** PRESUMPTION-112  
-**Item type:** PRESUMPTION  
-**Priority:** LOW-MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-09  
+**Date added:** 2026-05-09
+**Source item:** PRESUMPTION-112
+**Item type:** PRESUMPTION
+**Priority:** LOW-MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-09
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Weak)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Weak)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR (heuristic exception — not REVISE despite PRESUMPTION + moderate challenge):** Date-axis uniformity is canonical default; the gap is observable character variance not currently being differentiated. Companion to ASSUMPTION-091 / PRESUMPTION-113 uniform-treatment cluster. Low architectural consequence; remediation is class-tagging — low-cost. If high-leverage items are observably delayed by undifferentiated disposition, escalate to REVISE.
 
-**What would change disposition:**  
-- INCORPORATE: Class-tagging on deferred items; class-aware disposition rule documented.  
+**What would change disposition:**
+- INCORPORATE: Class-tagging on deferred items; class-aware disposition rule documented.
 - REVISE: Cost-of-delay calculation reveals material leakage on high-leverage items under undifferentiated disposition.
 
 ---
 
 ### MONITOR-098:
-**Date added:** 2026-05-09  
-**Source item:** PRESUMPTION-113  
-**Item type:** PRESUMPTION  
-**Priority:** LOW-MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-09  
+**Date added:** 2026-05-09
+**Source item:** PRESUMPTION-113
+**Item type:** PRESUMPTION
+**Priority:** LOW-MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-09
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR (heuristic exception — not REVISE despite PRESUMPTION + moderate challenge):** Cadence-independence is canonical default; the variance is small in steady state but non-zero under attention-budget constraints. Companion to ASSUMPTION-091 / PRESUMPTION-112 uniform-treatment cluster. Low architectural consequence; remediation is cadence-flag + variance test — low-cost.
 
-**What would change disposition:**  
-- INCORPORATE: Cadence flag on filings; pooled vs. sliced variance test below noise threshold.  
+**What would change disposition:**
+- INCORPORATE: Cadence flag on filings; pooled vs. sliced variance test below noise threshold.
 - REVISE: Variance test reveals systematic cadence-induced quality difference exceeding noise threshold.
 
 ---
@@ -3629,39 +3629,39 @@ LOW-MEDIUM priority (new): MONITOR-093 (ASSUMPTION-093 — Saturday rerun framin
 ## ITEMS ADDED — 2026-05-10 cycle (9 new MONITOR items: MONITOR-099 through MONITOR-107)
 
 ### MONITOR-099:
-**Date added:** 2026-05-10  
-**Source item:** ASSUMPTION-096  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-10  
+**Date added:** 2026-05-10
+**Source item:** ASSUMPTION-096
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-10
 
-**15a result:** SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** Density-as-signal is canonical (SRE / observability / aggregation alarm patterns) but the "densest single cycle on record" superlative requires normalization disclosure (PRESUMPTION-116 captures this concern at the metric layer). Cluster-level remediation triggered by density alone (without substrate-coupling verification) is the documented anti-pattern. The 4-flag count this cycle replicates the pattern, but per the PRESUMPTION-116 REVISE the comparison metric needs normalization. Load-bearing for ASSUMPTION-097 sprint claim — disposition contingent on substrate-coupling verification.
 
-**What would change disposition:**  
-- INCORPORATE: Per-item density (not per-cycle) used as canonical metric; batch-size and topic-mix disclosed at emission; baseline distribution reported.  
+**What would change disposition:**
+- INCORPORATE: Per-item density (not per-cycle) used as canonical metric; batch-size and topic-mix disclosed at emission; baseline distribution reported.
 - REVISE: Cluster-level remediation triggered by uncalibrated density produces effort allocation to substrate-uncoupled items; SPC trend test fails to confirm density spike.
 
 ---
 
 ### MONITOR-100:
-**Date added:** 2026-05-10  
-**Source item:** ASSUMPTION-097  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM-HIGH  
-**Cadence:** Weekly  
-**Next 15d check:** 2026-05-16  
+**Date added:** 2026-05-10
+**Source item:** ASSUMPTION-097
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM-HIGH
+**Cadence:** Weekly
+**Next 15d check:** 2026-05-16
 
-**15a result:** SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** Bundling is canonical when substrate-coupling is implementation-level (Tornhill / Fowler / Lehman-Belady). C2A2 cluster's coupling is meta-level (operational-discipline category) — the literature treats this as weaker bundling justification. PRESUMPTION-117 (REVISE this cycle) captures the verification gap. Implementation-substrate verification is the precondition; otherwise small-batch atomic delivery (DORA / Accelerate) is the literature-endorsed alternative. MEDIUM-HIGH because the sprint endorsement is Tom's morning-discussion question — load-bearing for sprint greenlight.
 
-**What would change disposition:**  
-- INCORPORATE: Implementation-substrate coupling verified across registration / canonization / fallback (shared code paths or shared remediation surface); sprint scope bounded explicitly with no creep.  
+**What would change disposition:**
+- INCORPORATE: Implementation-substrate coupling verified across registration / canonization / fallback (shared code paths or shared remediation surface); sprint scope bounded explicitly with no creep.
 - REVISE: Implementation-substrate analysis confirms meta-level-only coupling; small-batch atomic delivery shows lower coordination overhead than the proposed bundle in initial-week measurement.
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -3671,20 +3671,20 @@ LOW-MEDIUM priority (new): MONITOR-093 (ASSUMPTION-093 — Saturday rerun framin
 ---
 
 ### MONITOR-101:
-**Date added:** 2026-05-10  
-**Source item:** ASSUMPTION-098  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM-HIGH  
-**Cadence:** Weekly  
-**Next 15d check:** 2026-05-16  
+**Date added:** 2026-05-10
+**Source item:** ASSUMPTION-098
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM-HIGH
+**Cadence:** Weekly
+**Next 15d check:** 2026-05-16
 
-**15a result:** SUPPORTED (strength: Strong)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)  
+**15a result:** SUPPORTED (strength: Strong)
+**15b result:** PARTIALLY-CHALLENGED (strength: Weak-Moderate)
 
 **Reasoning for MONITOR:** Three-recurrence is canonical promotion threshold (SRE / ITIL / ISO 9001 / Juran QM); substrate articulated (≤25h stall watchdog). Concerns: (a) "this week" calendar pressure not endorsed by ADR literature; (b) PRESUMPTION-106 (canonization criterion not self-evident) remains unresolved — canonizing under unarticulated criterion is the failure mode PRESUMPTION-106 was REVISE'd for; (c) canonization without paired implementation commitment is documentation-as-fix (PRESUMPTION-122). Disposition contingent on PRESUMPTION-106 resolution and implementation-paired canonization. MEDIUM-HIGH because the governance trigger is being applied this week to PRESUMPTION-115 / PRESUMPTION-121 cluster (DECISION-027 scope extension).
 
-**What would change disposition:**  
-- INCORPORATE: PRESUMPTION-106 resolved (canonization criterion documented); canonization paired with concrete implementation commitment; cadence-driven scheduling rather than calendar pressure.  
+**What would change disposition:**
+- INCORPORATE: PRESUMPTION-106 resolved (canonization criterion documented); canonization paired with concrete implementation commitment; cadence-driven scheduling rather than calendar pressure.
 - REVISE: Canonization happens under unresolved PRESUMPTION-106 — the canonization circularity is empirically observed; or canonization happens without implementation commitment and the DECISION sits dormant.
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -3694,20 +3694,20 @@ LOW-MEDIUM priority (new): MONITOR-093 (ASSUMPTION-093 — Saturday rerun framin
 ---
 
 ### MONITOR-102:
-**Date added:** 2026-05-10  
-**Source item:** ASSUMPTION-099  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM-HIGH  
-**Cadence:** Weekly  
-**Next 15d check:** 2026-05-16  
+**Date added:** 2026-05-10
+**Source item:** ASSUMPTION-099
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM-HIGH
+**Cadence:** Weekly
+**Next 15d check:** 2026-05-16
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** Substrate-coupling supports unification (Cochrane / GRADE / ADR); failure-mode differentiation favors split (specialist self-attribution fails by confirmation bias; external-LLM prioritization fails by training-data overlap). PRESUMPTION-118 (asymmetric-reversibility risk, REVISE this cycle) is load-bearing — split is the cheap initial state. MEDIUM-HIGH because the scope decision is being made this week. Recommend asymmetric-reversibility analysis before commitment; default to start split unless analysis favors unify.
 
-**What would change disposition:**  
-- INCORPORATE: Asymmetric-reversibility analysis completed; failure-mode differentiation documented; scope decision (unify or split) justified by substrate analysis with explicit reversibility cost.  
+**What would change disposition:**
+- INCORPORATE: Asymmetric-reversibility analysis completed; failure-mode differentiation documented; scope decision (unify or split) justified by substrate analysis with explicit reversibility cost.
 - REVISE: Scope decision made without asymmetric-reversibility analysis (PRESUMPTION-118 failure mode empirically confirmed); downstream coupling accumulates and split becomes prohibitively expensive.
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -3717,39 +3717,39 @@ LOW-MEDIUM priority (new): MONITOR-093 (ASSUMPTION-093 — Saturday rerun framin
 ---
 
 ### MONITOR-103:
-**Date added:** 2026-05-10  
-**Source item:** ASSUMPTION-100  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-10  
+**Date added:** 2026-05-10
+**Source item:** ASSUMPTION-100
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-10
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** Substrate-level convergence detection is plausible (Levin × Hoffman × Wolfram have documented points of contact). The "highest-leverage of the week" superlative is uncalibrated without operational definition (PRESUMPTION-119, REVISE this cycle). Out-of-band Pattern-Detector deep-pass scheduling has selection-effect risks (PRESUMPTION-120, REVISE this cycle). Recurrence concern at convergence-detection self-tagging layer (PRESUMPTION-074 cluster). Operational-definition + scheduling policy + independent adjudication are the standard guards.
 
-**What would change disposition:**  
-- INCORPORATE: Operational definition of "leverage" with disclosed attributes; out-of-band scheduling policy with capacity-competition guard; independent adjudication of convergence-detection self-tagging.  
+**What would change disposition:**
+- INCORPORATE: Operational definition of "leverage" with disclosed attributes; out-of-band scheduling policy with capacity-competition guard; independent adjudication of convergence-detection self-tagging.
 - REVISE: Convergence under stricter granularity reveals it was commitment-overlap inflation; Pattern-Detector deep-pass items don't outperform on outcome (selection bias confirmed).
 
 ---
 
 ### MONITOR-104:
-**Date added:** 2026-05-10  
-**Source item:** ASSUMPTION-101  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM-HIGH  
-**Cadence:** Weekly  
-**Next 15d check:** 2026-05-16  
+**Date added:** 2026-05-10
+**Source item:** ASSUMPTION-101
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM-HIGH
+**Cadence:** Weekly
+**Next 15d check:** 2026-05-16
 
-**15a result:** SUPPORTED (strength: Moderate-Strong)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** SUPPORTED (strength: Moderate-Strong)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** Environment-state attribution itself is well-supported (Chromium docs + claude-in-chrome MCP docs); symptom shape (session-dependent) matches the documented environment-state failure mode. Concerns: (a) defect-conditional-on-environment is the alternative not yet ruled out (requires positive defect-detection test); (b) the uptake process — near-verbatim adoption from Codex without project-context adjudication — is the recurring SYSTEMIC-RISK pattern (PRESUMPTION-121, REVISE HIGH this cycle, second-layer recurrence in <24h). MEDIUM-HIGH because the diagnostic gates next chat-scrape and cowork-to-chat sync deliveries.
 
-**What would change disposition:**  
-- INCORPORATE: Positive defect-detection test passes (open normal Chrome window, MCP call succeeds); independent project-context adjudication of the external diagnostic completed.  
+**What would change disposition:**
+- INCORPORATE: Positive defect-detection test passes (open normal Chrome window, MCP call succeeds); independent project-context adjudication of the external diagnostic completed.
 - REVISE: Defect-conditional-on-environment confirmed (test reveals the defect manifests under specific environment); near-verbatim adoption uptake pattern recurs at next external-LLM diagnostic without independent adjudication.
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -3759,58 +3759,58 @@ LOW-MEDIUM priority (new): MONITOR-093 (ASSUMPTION-093 — Saturday rerun framin
 ---
 
 ### MONITOR-105:
-**Date added:** 2026-05-10  
-**Source item:** ASSUMPTION-102  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-10  
+**Date added:** 2026-05-10
+**Source item:** ASSUMPTION-102
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-10
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** Single-cycle drain is a positive data point but is not an operational baseline by SRE / DORA / queueing-theory standards (≥3 cycles + multi-metric required). Throughput-only baseline is Goodhartable (PRESUMPTION-123, REVISE this cycle). 0% INCORPORATE rate + growing REVISE backlog across two consecutive cycles (2026-05-09 and 2026-05-10) is the predicted Goodhart failure mode. Multi-cycle observation + INCORPORATE-rate / REVISE-backlog complement is the canonical baseline definition.
 
-**What would change disposition:**  
-- INCORPORATE: ≥3 consecutive cycles of stable drain rate observed; throughput paired with INCORPORATE-rate / REVISE-backlog / quality-drift metrics; queue-scale envelope explicitly specified.  
+**What would change disposition:**
+- INCORPORATE: ≥3 consecutive cycles of stable drain rate observed; throughput paired with INCORPORATE-rate / REVISE-backlog / quality-drift metrics; queue-scale envelope explicitly specified.
 - REVISE: Throughput maintained while INCORPORATE rate stays at 0% across additional cycles (Goodhart pattern confirmed); next-cycle throughput cannot scale to the queue-size envelope (e.g., RE-TRIGGER cohort + new items combined).
 
 ---
 
 ### MONITOR-106:
-**Date added:** 2026-05-10  
-**Source item:** ASSUMPTION-103  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-10  
+**Date added:** 2026-05-10
+**Source item:** ASSUMPTION-103
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-10
 
-**15a result:** SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** Per-task positive evidence is locally valid for THIS task by ASSUMPTION-080's partition (>1 fires; =1 silent skip). The concern is the "8-task fire-rate" framing aggregating across tasks and risking the cross-task generalization that PRESUMPTION-124 captures (REVISE this cycle). Pairs with ASSUMPTION-092 MONITOR-092 — wiki-orchestrator status today is the per-task evidence not in the aggregate frame. Per-task disaggregation + explicit per-task framing is the operational guard.
 
-**What would change disposition:**  
-- INCORPORATE: Per-task framing is canonicalized in the run summary template; per-task disaggregation includes wiki-orchestrator and other tasks of interest; aggregate fire-rate framed explicitly as "positive evidence about THESE tasks only".  
+**What would change disposition:**
+- INCORPORATE: Per-task framing is canonicalized in the run summary template; per-task disaggregation includes wiki-orchestrator and other tasks of interest; aggregate fire-rate framed explicitly as "positive evidence about THESE tasks only".
 - REVISE: Cross-task generalization persists in next run; wiki-orchestrator status reveals selectively-affected pattern that aggregate evidence missed.
 
 ---
 
 ### MONITOR-107:
-**Date added:** 2026-05-10  
-**Source item:** PRESUMPTION-127  
-**Item type:** PRESUMPTION  
-**Priority:** LOW-MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-10  
+**Date added:** 2026-05-10
+**Source item:** PRESUMPTION-127
+**Item type:** PRESUMPTION
+**Priority:** LOW-MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-10
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR (heuristic exception — not REVISE despite PRESUMPTION + moderate challenge):** Single off-cadence absorbability is canonical agile / SPC practice. The gap is at the cluster level — 3 off-cadence events in 4 days (ASSUMPTION-091, PRESUMPTION-113, PRESUMPTION-127) warrants observability flag even when individual events are absorbable. Observability ≠ escalation; observability is the canonical first step. Heuristic exception based on low-cost remediation (cadence-tag) and operational equivalence (absorbing the event itself remains correct). Joint with ASSUMPTION-091 MONITOR-091 + PRESUMPTION-113 MONITOR-098 (uniform-treatment cluster).
 
-**What would change disposition:**  
-- INCORPORATE: Cadence-tag on filings; cluster-flag at N-th off-cadence event in window; cadence-sliced approval-rate tracking.  
+**What would change disposition:**
+- INCORPORATE: Cadence-tag on filings; cluster-flag at N-th off-cadence event in window; cadence-sliced approval-rate tracking.
 - REVISE: Off-cadence cluster reaches 4+ events in 4-day window without observability flag; cadence-sliced approval rate reveals systematic difference.
 
 ---
@@ -3892,39 +3892,39 @@ Today's Sunday run (2026-05-10) is the regular weekly cadence; Run 4 was a Tuesd
 ## 2026-05-11 RUN — New MONITOR Items (12)
 
 ### MONITOR-108:
-**Date added:** 2026-05-11  
-**Source item:** ASSUMPTION-104  
-**Item type:** ASSUMPTION  
-**Priority:** LOW-MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-11  
+**Date added:** 2026-05-11
+**Source item:** ASSUMPTION-104
+**Item type:** ASSUMPTION
+**Priority:** LOW-MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-11
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** Day-shape characterization is supported as legitimate operational-history annotation mode (Klein, Pentland-Feldman, SRE post-mortem) but is challenged by narrative-coherence-bias literature (Kahneman, Taleb) when the concurrent-first-occurrence framing risks importing operator-bias into operational records. The pattern is a real descriptive signal but is not an analytical metric; the disposition is MONITOR for whether subsequent day-shape framings stay descriptive or migrate to metric/target status.
 
-**What would change disposition:**  
-- INCORPORATE: Day-shape characterizations are explicitly bracketed as "descriptive scaffolding"; reference-class comparison accompanies clustering claims.  
+**What would change disposition:**
+- INCORPORATE: Day-shape characterizations are explicitly bracketed as "descriptive scaffolding"; reference-class comparison accompanies clustering claims.
 - REVISE: Day-shape framings migrate to metric/target status; concurrent-first-occurrence is treated as causal-attribution signal without reference-class comparison.
 
 ---
 
 ### MONITOR-109:
-**Date added:** 2026-05-11  
-**Source item:** ASSUMPTION-106  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Weekly (joint with ASSUMPTION-112 SELF-MEASUREMENT cluster)  
-**Next 15d check:** 2026-05-18  
+**Date added:** 2026-05-11
+**Source item:** ASSUMPTION-106
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Weekly (joint with ASSUMPTION-112 SELF-MEASUREMENT cluster)
+**Next 15d check:** 2026-05-18
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Weak-Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** The asymmetric-REVISE-rate pattern (ASSUMPTION 0/8 vs PRESUMPTION 92%) is theoretically supported by Schön / Argyris-Schön / Polanyi explicit-vs-tacit knowledge literature. The C2A2 pattern (0/8 for ASSUMPTIONs, 92% for PRESUMPTIONs across 2 cycles) is consistent with the predicted asymmetry but "confirms" overstates at N=2 by SPC discipline. Selection-bias (14a extracts well-formed claims) is the alternative not ruled out. Self-referentially noteworthy: **this cycle's ASSUMPTION-107 was REVISE'd, falsifying the 0/8 streak claim mid-cycle** — the pattern this very assumption asserts is undermined by the same cycle's disposition outcomes.
 
-**What would change disposition:**  
-- INCORPORATE: ≥7 cycles of stable asymmetric pattern with batch-composition normalization disclosed; per-item-complexity controls preserve the pattern.  
+**What would change disposition:**
+- INCORPORATE: ≥7 cycles of stable asymmetric pattern with batch-composition normalization disclosed; per-item-complexity controls preserve the pattern.
 - REVISE: Pattern reverses or disappears across next 3 cycles (would indicate it was selection-bias artifact).
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -3934,20 +3934,20 @@ Today's Sunday run (2026-05-10) is the regular weekly cadence; Run 4 was a Tuesd
 ---
 
 ### MONITOR-110:
-**Date added:** 2026-05-11  
-**Source item:** ASSUMPTION-108  
-**Item type:** ASSUMPTION  
-**Priority:** HIGH (URGENT-this-week canonization trigger; substrate-decomposition gate)  
-**Cadence:** Weekly  
-**Next 15d check:** 2026-05-18  
+**Date added:** 2026-05-11
+**Source item:** ASSUMPTION-108
+**Item type:** ASSUMPTION
+**Priority:** HIGH (URGENT-this-week canonization trigger; substrate-decomposition gate)
+**Cadence:** Weekly
+**Next 15d check:** 2026-05-18
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** Three-recurrence governance threshold is canonical (ITIL, SRE, Nygard). The PRESUMPTION-121 N=5/30-days meets the threshold. However, structural concerns are load-bearing: (a) upstream ASSUMPTION-098 governance rule is itself MONITOR-101, not INCORPORATE — circular dependency; (b) PRESUMPTION-134 (this cycle, REVISE) substrate-decomposition challenge means the recurrence-counter may be inflated by common-cause failure; (c) calendar-paced URGENT-this-week framing is documented anti-pattern (Bryar-Carr, Nygard); (d) PRESUMPTION-136 (REVISE) week-carrying-capacity concern. Substrate-decomposition is the load-bearing prerequisite.
 
-**What would change disposition:**  
-- INCORPORATE: Substrate-decomposition documents independence; ASSUMPTION-098 INCORPORATEd; week-carrying-capacity consulted; implementation-pace replaces calendar-pace.  
+**What would change disposition:**
+- INCORPORATE: Substrate-decomposition documents independence; ASSUMPTION-098 INCORPORATEd; week-carrying-capacity consulted; implementation-pace replaces calendar-pace.
 - REVISE: DECISION-027 scope extension committed without substrate-decomposition; ADR sprawl ensues from cluster-identifier proliferation.
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -3957,20 +3957,20 @@ Today's Sunday run (2026-05-10) is the regular weekly cadence; Run 4 was a Tuesd
 ---
 
 ### MONITOR-111:
-**Date added:** 2026-05-11  
-**Source item:** ASSUMPTION-109  
-**Item type:** ASSUMPTION  
-**Priority:** HIGH (URGENT-this-week canonization trigger; substrate-decomposition gate)  
-**Cadence:** Weekly  
-**Next 15d check:** 2026-05-18  
+**Date added:** 2026-05-11
+**Source item:** ASSUMPTION-109
+**Item type:** ASSUMPTION
+**Priority:** HIGH (URGENT-this-week canonization trigger; substrate-decomposition gate)
+**Cadence:** Weekly
+**Next 15d check:** 2026-05-18
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** Standalone DECISION for distinct root cause is canonical when substrate-decomposition supports independence. The C2A2 case has not performed substrate-decomposition; PRESUMPTION-134 (REVISE this cycle) explicitly raises the shared-substrate concern (Chrome MCP + claude.ai login state). If substrate is shared, ASSUMPTION-108 and ASSUMPTION-109 reduce to one combined DECISION, easing week-carrying-capacity demand. Substrate-decomposition is the load-bearing prerequisite (same as MONITOR-110); these two MONITOR items move together.
 
-**What would change disposition:**  
-- INCORPORATE: Substrate-decomposition completed; independence documented; week-carrying-capacity consulted; implementation-pace replaces calendar-pace.  
+**What would change disposition:**
+- INCORPORATE: Substrate-decomposition completed; independence documented; week-carrying-capacity consulted; implementation-pace replaces calendar-pace.
 - REVISE: Standalone-DECISION canonized on cluster-identifier without substrate analysis; subsequent recurrence reveals shared-substrate root cause.
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -3980,39 +3980,39 @@ Today's Sunday run (2026-05-10) is the regular weekly cadence; Run 4 was a Tuesd
 ---
 
 ### MONITOR-112:
-**Date added:** 2026-05-11  
-**Source item:** ASSUMPTION-110  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-11  
+**Date added:** 2026-05-11
+**Source item:** ASSUMPTION-110
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-11
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** First-measurement-as-baseline is canonical when methodology and thresholds are documented and externally validated or convention-aligned. The sewing-agent run produced specific quantitative outputs but threshold definitions are not externally validated (PRESUMPTION-130, REVISE this cycle), sensitivity-threshold is unspecified (PRESUMPTION-139, REVISE), and second-run variance is not yet observable. The "canonical" framing is overstrong; "preliminary baseline pending threshold validation" is calibrated. Joint with PRESUMPTION-130 and PRESUMPTION-139 REVISEs.
 
-**What would change disposition:**  
-- INCORPORATE: Threshold definitions documented and convention-aligned; sensitivity-threshold specified; second-run variance estimated; "preliminary" → "canonical" upgrade.  
+**What would change disposition:**
+- INCORPORATE: Threshold definitions documented and convention-aligned; sensitivity-threshold specified; second-run variance estimated; "preliminary" → "canonical" upgrade.
 - REVISE: Second sewing-agent run produces materially different orphan-count without threshold change (would indicate measurement-instrument instability).
 
 ---
 
 ### MONITOR-113:
-**Date added:** 2026-05-11  
-**Source item:** ASSUMPTION-111  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM-HIGH  
-**Cadence:** Weekly  
-**Next 15d check:** 2026-05-18  
+**Date added:** 2026-05-11
+**Source item:** ASSUMPTION-111
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM-HIGH
+**Cadence:** Weekly
+**Next 15d check:** 2026-05-18
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR:** Precondition-chain framing for tradition-admission is supported by intellectual-history (Bevir, MacIntyre, Kuhn) and PMBOK precondition-chain analysis. However, the competing PRESUMPTION-128 (workflow-accommodation without canonization) and PRESUMPTION-137 (first-ever as decision gate) form an explicit unreconciled tradeoff — the first competing-presumptions pair in the registry. The "blocking" framing is one legitimate position; "informing" is the alternative. Reconciliation is the load-bearing follow-up.
 
-**What would change disposition:**  
-- INCORPORATE: PRESUMPTION-128 vs PRESUMPTION-137 reconciled with explicit reversibility characteristics specified; "blocking" framing endorsed or replaced with hybrid path.  
+**What would change disposition:**
+- INCORPORATE: PRESUMPTION-128 vs PRESUMPTION-137 reconciled with explicit reversibility characteristics specified; "blocking" framing endorsed or replaced with hybrid path.
 - REVISE: Path-dependence lock-in observed — Rohr/Wright pendings accumulate informal canonization precedent before DECISION-026 deliberation.
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -4022,20 +4022,20 @@ Today's Sunday run (2026-05-10) is the regular weekly cadence; Run 4 was a Tuesd
 ---
 
 ### MONITOR-114:
-**Date added:** 2026-05-11  
-**Source item:** ASSUMPTION-112  
-**Item type:** ASSUMPTION  
-**Priority:** MEDIUM-HIGH (SELF-MEASUREMENT cluster anchor; recursive-self-observation pattern)  
-**Cadence:** Weekly  
-**Next 15d check:** 2026-05-18  
+**Date added:** 2026-05-11
+**Source item:** ASSUMPTION-112
+**Item type:** ASSUMPTION
+**Priority:** MEDIUM-HIGH (SELF-MEASUREMENT cluster anchor; recursive-self-observation pattern)
+**Cadence:** Weekly
+**Next 15d check:** 2026-05-18
 
-**15a result:** SUPPORTED (strength: Strong)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** SUPPORTED (strength: Strong)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR (not INCORPORATE despite 15a Strong):** The SELF-MEASUREMENT / Goodhart cluster pattern is theoretically well-supported (Goodhart, Strathern, Lucas, Manheim-Garrabrant) and empirically observed across 2 cycles. **However**, "confirmed" is overstrong at N=2 by SPC discipline; the recursive-confirmation move (cluster observing itself) is itself Goodhart-vulnerable. The remediation (multi-metric SLI/SLO design with anti-Goodhart guards) is the load-bearing INCORPORATE-eligible follow-up, not the cluster-acknowledgment itself. **Additional self-referential signal:** this cycle produced 1 INCORPORATE (ASSUMPTION-105 → PREMISE-015), partially falsifying the "0% INCORPORATE" assertion at the cluster center — useful counter-evidence to the recursive-confirmation framing.
 
-**What would change disposition:**  
-- INCORPORATE: ≥7 cycles of confirmation language replaced with "consistent with predicted pattern"; multi-metric SLI/SLO design implemented with anti-Goodhart guards (paired-metric, ratio-metric, qualitative-veto).  
+**What would change disposition:**
+- INCORPORATE: ≥7 cycles of confirmation language replaced with "consistent with predicted pattern"; multi-metric SLI/SLO design implemented with anti-Goodhart guards (paired-metric, ratio-metric, qualitative-veto).
 - REVISE: Pattern reverses (INCORPORATE rate climbs significantly across next 3 cycles) — would indicate cluster diagnosis was selection-effect not Goodhart.
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -4045,20 +4045,20 @@ Today's Sunday run (2026-05-10) is the regular weekly cadence; Run 4 was a Tuesd
 ---
 
 ### MONITOR-115:
-**Date added:** 2026-05-11  
-**Source item:** PRESUMPTION-128  
-**Item type:** PRESUMPTION  
-**Priority:** MEDIUM (competes with PRESUMPTION-137 — explicit competing-presumptions pair)  
-**Cadence:** Weekly  
-**Next 15d check:** 2026-05-18  
+**Date added:** 2026-05-11
+**Source item:** PRESUMPTION-128
+**Item type:** PRESUMPTION
+**Priority:** MEDIUM (competes with PRESUMPTION-137 — explicit competing-presumptions pair)
+**Cadence:** Weekly
+**Next 15d check:** 2026-05-18
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR (heuristic exception — not REVISE despite PRESUMPTION + moderate challenge):** Workflow-accommodation before canonization is supported by Lean/Kaizen and PMBOK progressive-elaboration literatures. The competing PRESUMPTION-137 (first-ever-as-gate) is also legitimate; the two represent a genuine unreconciled tradeoff that the literature does not unambiguously resolve. Heuristic exception based on (a) PRESUMPTION-128 has explicit literature support not just absence-of-disconfirmation; (b) competing presumption indicates real tradeoff rather than anti-pattern. Joint with MONITOR-117 (PRESUMPTION-137).
 
-**What would change disposition:**  
-- INCORPORATE: Reversibility characteristics for Rohr/Wright pending accommodation are specified; reconciliation with PRESUMPTION-137 yields explicit policy; hybrid path (pilot-with-reversibility-note) operationalized.  
+**What would change disposition:**
+- INCORPORATE: Reversibility characteristics for Rohr/Wright pending accommodation are specified; reconciliation with PRESUMPTION-137 yields explicit policy; hybrid path (pilot-with-reversibility-note) operationalized.
 - REVISE: Path-dependence lock-in observed in practice; informal accommodation canonizes before DECISION-026 deliberation completes.
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -4068,58 +4068,58 @@ Today's Sunday run (2026-05-10) is the regular weekly cadence; Run 4 was a Tuesd
 ---
 
 ### MONITOR-116:
-**Date added:** 2026-05-11  
-**Source item:** PRESUMPTION-131  
-**Item type:** PRESUMPTION  
-**Priority:** LOW-MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-11  
+**Date added:** 2026-05-11
+**Source item:** PRESUMPTION-131
+**Item type:** PRESUMPTION
+**Priority:** LOW-MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-11
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR (heuristic exception — not REVISE despite PRESUMPTION + moderate challenge):** Bounded autonomy for narrow reversible decisions is supported in AI-safety (Amodei) and AI-architecture (Russell-Norvig) literatures. Convention-alignment with software-engineering ".gitignore" / index-exclusion practice supports the individual judgment call. The harder concern is cumulative — policy-by-accretion as multiple agent-judgment-calls accumulate. Heuristic exception based on (a) the individual call is defensible on convention grounds; (b) low blast-radius / high reversibility; (c) fix is cheap (document rationale, write brief policy). Joint with PRESUMPTION-130 REVISE cluster.
 
-**What would change disposition:**  
-- INCORPORATE: Rationale documented in sewing-agent definition; explicit routing-target inclusion/exclusion policy adopted; periodic audit cadence set.  
+**What would change disposition:**
+- INCORPORATE: Rationale documented in sewing-agent definition; explicit routing-target inclusion/exclusion policy adopted; periodic audit cadence set.
 - REVISE: Multiple agent-judgment-calls accumulate without policy specification (third such call would trigger ASSUMPTION-098 three-recurrence threshold for the agent-judgment-without-policy anti-pattern).
 
 ---
 
 ### MONITOR-117:
-**Date added:** 2026-05-11  
-**Source item:** PRESUMPTION-133  
-**Item type:** PRESUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Monthly  
-**Next 15d check:** 2026-06-11  
+**Date added:** 2026-05-11
+**Source item:** PRESUMPTION-133
+**Item type:** PRESUMPTION
+**Priority:** MEDIUM
+**Cadence:** Monthly
+**Next 15d check:** 2026-06-11
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR (heuristic exception — not REVISE despite PRESUMPTION + moderate challenge):** Remediation-strategy switching when current strategy is failing is canonical ITIL/Lean practice. The claim that the alternative "would converge" is a counterfactual under Pearl that requires causal model — but the legitimate framing ("documentation has not converged; programmatic enforcement is the conventional next step") is supported. Heuristic exception based on the practical reading (strategy-switching is canonical) vs. the strict reading (counterfactual-evidence required). Joint with PRESUMPTION-122 (REVISE 2026-05-10) documentation-as-fix cluster.
 
-**What would change disposition:**  
-- INCORPORATE: Explicit causal model for programmatic-fix convergence; pilot test performed; documentation-with-audit hybrid considered as third option.  
+**What would change disposition:**
+- INCORPORATE: Explicit causal model for programmatic-fix convergence; pilot test performed; documentation-with-audit hybrid considered as third option.
 - REVISE: Programmatic fix is committed without causal model and itself fails to converge (would confirm the unsupported counterfactual concern empirically).
 
 ---
 
 ### MONITOR-118:
-**Date added:** 2026-05-11  
-**Source item:** PRESUMPTION-135  
-**Item type:** PRESUMPTION  
-**Priority:** MEDIUM  
-**Cadence:** Weekly (joint with MONITOR-110, MONITOR-111 substrate-decomposition cluster)  
-**Next 15d check:** 2026-05-18  
+**Date added:** 2026-05-11
+**Source item:** PRESUMPTION-135
+**Item type:** PRESUMPTION
+**Priority:** MEDIUM
+**Cadence:** Weekly (joint with MONITOR-110, MONITOR-111 substrate-decomposition cluster)
+**Next 15d check:** 2026-05-18
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR (heuristic exception — not REVISE despite PRESUMPTION + moderate challenge):** Cluster-membership-as-subsumption is legitimate ITIL practice when the membership rule is canonically defined; default ITIL absent rule is per-incident counting. The C2A2 case lacks the rule. Heuristic exception based on (a) governance protocol consistency (ASSUMPTION-098) is the load-bearing concern, not the cluster-absorption itself; (b) substrate-decomposition (PRESUMPTION-134 REVISE this cycle) is the upstream fix that would resolve this presumption as a side effect. Joint with MONITOR-110, MONITOR-111 substrate-decomposition cluster.
 
-**What would change disposition:**  
-- INCORPORATE: Explicit subsumption rule specified in cluster definitions; substrate-decomposition completed; parallel-track per-incident counter maintained.  
+**What would change disposition:**
+- INCORPORATE: Explicit subsumption rule specified in cluster definitions; substrate-decomposition completed; parallel-track per-incident counter maintained.
 - REVISE: Cluster-absorption applied case-by-case without rule across additional cycles (governance protocol inconsistency confirmed).
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -4129,20 +4129,20 @@ Today's Sunday run (2026-05-10) is the regular weekly cadence; Run 4 was a Tuesd
 ---
 
 ### MONITOR-119:
-**Date added:** 2026-05-11  
-**Source item:** PRESUMPTION-137  
-**Item type:** PRESUMPTION  
-**Priority:** MEDIUM (competes with PRESUMPTION-128 — explicit competing-presumptions pair)  
-**Cadence:** Weekly  
-**Next 15d check:** 2026-05-18  
+**Date added:** 2026-05-11
+**Source item:** PRESUMPTION-137
+**Item type:** PRESUMPTION
+**Priority:** MEDIUM (competes with PRESUMPTION-128 — explicit competing-presumptions pair)
+**Cadence:** Weekly
+**Next 15d check:** 2026-05-18
 
-**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)  
-**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)  
+**15a result:** PARTIALLY-SUPPORTED (strength: Moderate)
+**15b result:** PARTIALLY-CHALLENGED (strength: Moderate)
 
 **Reasoning for MONITOR (heuristic exception — not REVISE despite PRESUMPTION + moderate challenge):** First-of-type-as-gate is supported by intellectual-history (Bevir, MacIntyre, Kuhn) and IT service-transition literatures for high-commitment admissions. The competing PRESUMPTION-128 (progressive elaboration) is also legitimate. Heuristic exception based on (a) explicit literature support beyond absence-of-disconfirmation; (b) competing-presumption indicates real tradeoff; (c) tradition admission is a low-reversibility decision, favoring the gate framing in the relevant context. Joint with MONITOR-115 (PRESUMPTION-128).
 
-**What would change disposition:**  
-- INCORPORATE: "Distinctive epistemic weight" criteria specified explicitly; reconciliation with PRESUMPTION-128 yields explicit policy; reversibility characteristics documented.  
+**What would change disposition:**
+- INCORPORATE: "Distinctive epistemic weight" criteria specified explicitly; reconciliation with PRESUMPTION-128 yields explicit policy; reversibility characteristics documented.
 - REVISE: Gate framing applied to high-reversibility decisions where progressive-elaboration would be preferred (would suggest framing is over-applied).
 
 **Cycle 1 refresh:** 2026-05-19 — re-triggered by 15d on 2026-05-18; both 15a and 15b ran cycle-1 search. No new supporting/challenging literature surfaced. Carry-forward MONITOR.
@@ -9018,3 +9018,2156 @@ This batch dispositions 24 cycle-0 items: 11 from the 2026-05-25 14a/14b batch (
 **Next weekly 15d run due:** 2026-06-03.
 **INCORPORATE-pending-precondition cluster:** MONITOR-237 (preconditions), MONITOR-239 (loop-detection), MONITOR-241 (3-way reconciliation), MONITOR-246 (reframe to complement-not-alternative).
 **FLAG I cluster (review-gate / sit-down-availability extension):** MONITOR-237, MONITOR-243, MONITOR-246, MONITOR-247, MONITOR-254 (+ REVISE-056, REVISE-058).
+
+---
+
+## 2026-05-28 RUN — MONITOR additions (MONITOR-256..263)
+
+### MONITOR-256:
+**Date added:** 2026-05-28
+**Source item:** ASSUMPTION-237
+**Item type:** ASSUMPTION
+**Priority:** Medium
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-04
+
+**Statement:** Supabase broker v4 `web_enrich` wraps Tavily top-5 in WEB_CONTEXT (system prompt) before OpenRouter call; numeric `[n]` citations; client receives structured response with sources.
+
+**15a result:** SUPPORTED (Moderate-Strong) — industry-standard RAG pattern (Lewis 2020; Perplexity / You.com).
+**15b result:** PARTIALLY-CHALLENGED (Moderate) — citation fabrication (Maynez 2020), Lost-in-the-Middle (Liu 2023), top-5 inadequate for scholarly (Adlakha 2023).
+
+**Reasoning for MONITOR:** Architectural pattern is sound; failure modes documented but bound applicability. INCORPORATE-pending-calibration: citation post-processing + A/B placement + K-calibration.
+
+**What would change disposition:** INCORPORATE if calibration sprint completes with adequate cross-tradition retrieval; REVISE if citation-fabrication rate exceeds 5% in audit.
+
+**Coupling:** PRESUMPTION-260 (REVISE-061 — direct calibration concern); ASSUMPTION-238 / MONITOR-257 (broker generic stance).
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-257:
+**Date added:** 2026-05-28
+**Source item:** ASSUMPTION-238
+**Item type:** ASSUMPTION
+**Priority:** Medium-Low
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-04
+
+**Statement:** Broker stays generic — the `tab` request field is analytics-only and does NOT gate behavior server-side; per-tab caps/templates/routing live on the client.
+
+**15a result:** SUPPORTED (Moderate) — Twelve-Factor / Stripe / AWS generic-broker pattern.
+**15b result:** PARTIALLY-CHALLENGED (Moderate) — compound-debt failure mode (Brown 2015); analytics-fields-drift-into-behavior anti-pattern.
+
+**Reasoning for MONITOR:** Industry pattern is sound but compound debt risk is documented. Cheap remedy: document migration trigger + light server-side validation of `tab` value (well-formed only).
+
+**What would change disposition:** INCORPORATE if 90-day audit shows no client-side `tab`-branching drift; REVISE if server-side migration becomes necessary under cost-class divergence.
+
+**Coupling:** ASSUMPTION-239 / MONITOR-258 (counter design); ASSUMPTION-237 / MONITOR-256 (broker v4 architecture).
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-258:
+**Date added:** 2026-05-28
+**Source item:** ASSUMPTION-239
+**Item type:** ASSUMPTION
+**Priority:** Medium
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-04
+
+**Statement:** Web counter columns `web_asks` and `web_cost_cents` are separate from dataset-enrich counters; hard caps WEB_DEVICE_DAILY_LIMIT=20 and WEB_GLOBAL_DAILY_CENTS_CAP=300.
+
+**15a result:** SUPPORTED (Moderate) — two-layer (device+global) defense-in-depth pattern is canonical (Beyer SRE; AWS).
+**15b result:** PARTIALLY-CHALLENGED (Weak-Moderate) — fixed-daily-cap false-positive throttling (Pang 2019); noisy-neighbor under global cap (Wang & Chen 2021).
+
+**Reasoning for MONITOR:** Structural design supported; specific cap VALUES (20, $3) are unvalidated configuration choices. 30-day post-ship calibration sprint is the documented remedy.
+
+**What would change disposition:** INCORPORATE if 30-day calibration validates values; REVISE if cap-hit-rate exceeds 10% legitimate use or aggregate cost exceeds 80% of $90/month target.
+
+**Coupling:** ASSUMPTION-238 / MONITOR-257 (broker generic stance).
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-259:
+**Date added:** 2026-05-28
+**Source item:** ASSUMPTION-240
+**Item type:** ASSUMPTION
+**Priority:** HIGH
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-04
+
+**Statement:** The 2026-05-18 first-newline truncation bug recurred 2026-05-27; 05-18 diagnosis stands; fix "did not land or was not attempted"; Tiptap/ProseMirror `execCommand('insertText')` path is the correct re-send mechanism.
+
+**15a result:** SUPPORTED (Moderate-Strong on diagnostic; Weak on framing) — ProseMirror docs + Tiptap GitHub issues confirm insertText-vs-typeKey divergence.
+**15b result:** PARTIALLY-CHALLENGED (Moderate) — Reason / Cook & Woods / Allspaw multi-causal-path; recurrence demands re-investigation, not re-execution.
+
+**Reasoning for MONITOR:** Both readings of recurrence require the same first action: trace the 2026-05-27 input path. Operational priority is HIGH (second-instance failure on a user-facing path). Couples PRESUMPTION-262 / REVISE-062.
+
+**What would change disposition:** INCORPORATE the fix-direction once input-path trace confirms; REVISE if trace shows different active path than 05-18.
+
+**Coupling:** PRESUMPTION-262 / REVISE-062 (multi-causal-path); ASSUMPTION-242 / REVISE-060 (honesty-layer canonization).
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-260:
+**Date added:** 2026-05-28
+**Source item:** ASSUMPTION-241
+**Item type:** ASSUMPTION
+**Priority:** Medium
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-04
+
+**Statement:** Operational rule "pasted review-page state = source of truth; intent supersedes UI state when explicitly stated" is the right closure on the Gmail-misfire loop ahead of generation-side fix; extends DECISION-048-candidate scope to review-page-UI-vs-stated-intent.
+
+**15a result:** PARTIALLY-SUPPORTED (Moderate) — canonization pattern (Fowler EAA; NIST audit; Parasuraman & Manzey).
+**15b result:** PARTIALLY-CHALLENGED (Moderate) — audit-trail gaps; "stopgap becomes permanent" (Bainbridge); intent-supersedes-UI asymmetrically riskier than "review-page over Gmail".
+
+**Reasoning for MONITOR:** Cheap remedy (explicit logging when intent overrides UI; time-limit on rule pending generation-side fix). Conditioned-INCORPORATE.
+
+**What would change disposition:** INCORPORATE if logging + time-limit are both implemented; REVISE if rule becomes permanent without underlying fix.
+
+**Coupling:** ASSUMPTION-230 / MONITOR-241; ASSUMPTION-231 / MONITOR-242 (review-page-as-authoritative family).
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-261:
+**Date added:** 2026-05-28
+**Source item:** PRESUMPTION-261
+**Item type:** PRESUMPTION
+**Priority:** Low-Medium
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-04
+
+**Statement:** [inferred] Four Accelerator sub-tabs (Sociogram / Connectome / Agent Map / Curriculum Tools) are stable enough to harden in per-tab payload/render adapters; broker stays generic on unexamined assumption these tab boundaries are right cuts.
+
+**15a result:** PARTIALLY-SUPPORTED (Weak) — general IA stability (Garrett 2010; NN/g).
+**15b result:** PARTIALLY-CHALLENGED (Weak-Moderate) — taxonomy drift (Krug; Norman); automation lock-in (Bainbridge); adapter rewrite cost (Brown 2015).
+
+**Reasoning for MONITOR:** Symmetric weak evidence; cheap remedy (light adapter interfaces; 90-day re-evaluation cadence; avoid deep investment in Curriculum Tools as highest-uncertainty tab).
+
+**What would change disposition:** INCORPORATE if 90-day audit shows stable taxonomy; REVISE if any tab requires re-cut.
+
+**Coupling:** ASSUMPTION-237 / MONITOR-256 (broker v4 architecture).
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-262:
+**Date added:** 2026-05-28
+**Source item:** PRESUMPTION-265
+**Item type:** PRESUMPTION
+**Priority:** Medium
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-04
+
+**Statement:** [inferred] REVISE-056's "62-proposal PRS-extraction backlog as 3rd FLAG-I route" treats route-count as bounded enumeration; deeper pattern may be that any non-trivial deferred item becomes a FLAG-I route, making route-count a process-fact (rate-per-cycle) rather than a state-fact.
+
+**15a result:** PARTIALLY-SUPPORTED (Weak) — discrete bounded-enumeration is canonical (Goldratt; ITIL).
+**15b result:** CHALLENGED (Moderate) — Little's Law / Reinertsen / Anderson kanban support rate-not-state framing; C2A2's 2 → 3 routes in 6 days is direct process-shape evidence.
+
+**Reasoning for MONITOR:** Cheap remedy (add rate-of-new-routes tracking; treat each route as evidence of process). Remediation is dashboard-hygiene; not architectural.
+
+**What would change disposition:** INCORPORATE if rate-tracking confirms stable state (no new routes for 30 days); REVISE if rate ≥ 0.2/day sustained.
+
+**Coupling:** PRESUMPTION-256 (REVISE-058); FLAG I cluster.
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-263:
+**Date added:** 2026-05-28
+**Source item:** PRESUMPTION-266
+**Item type:** PRESUMPTION
+**Priority:** Low-Medium
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-04
+
+**Statement:** [inferred] Two-Claude sync protocol (morning Opus 4.7 Adaptive "Sarah-mode" + evening Cowork Claude) presumes the two agents constitute distinct epistemic agents whose interaction adds value beyond a single-agent reflective pass; increment never separately verified.
+
+**15a result:** PARTIALLY-SUPPORTED (Moderate) — multi-agent reflection literature (Du 2023; Madaan 2023; Shao 2024) shows increment in some tasks.
+**15b result:** PARTIALLY-CHALLENGED (Moderate) — Chen et al. / Liang ablation studies show no increment in other tasks; same-model-family correlated-error caveat.
+
+**Reasoning for MONITOR:** Mixed evidence; cheap ablation test (7 days single-agent vs 7 days two-agent on same data). Verification is operationally simple.
+
+**What would change disposition:** INCORPORATE if ablation shows meaningful increment; REVISE if ablation shows no increment (Tom's time cost unrecovered).
+
+**Coupling:** Protocol-design family; bears on daily operational overhead.
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+**Total new MONITORs this run (2026-05-28):** 8 (MONITOR-256..263).
+**Distribution:** Weekly: 8; Monthly: 0.
+**Priority distribution:** HIGH: 1 (MONITOR-259 ASSUMPTION-240 truncation-recurrence); Medium: 4 (MONITOR-256/258/260/262); Medium-Low: 1 (MONITOR-257); Low-Medium: 2 (MONITOR-261/263).
+**Next weekly 15d run due:** 2026-06-04.
+**Broker-v4 cluster:** MONITOR-256/257/258/261 (architecture + counters + tab-stability — coordinated 30-90 day calibration cadence).
+**FLAG I cluster extensions:** MONITOR-259/262 (truncation-recurrence + route-rate-fact).
+
+---
+
+## 2026-05-29 RUN — MONITOR additions (MONITOR-264..276)
+
+### MONITOR-264:
+**Date added:** 2026-05-29
+**Source item:** ASSUMPTION-243
+**Item type:** ASSUMPTION
+**Priority:** Medium
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-05
+
+**Statement:** The Sociogram-tab AI search wired in today via shared `wiki/lib/c2a2-search.js` delegation is the per-tab adapter pattern broker-v4 (DECISION-049 candidate) was designed to enable; today's working integration is the first demonstrated instance.
+
+**15a result:** SUPPORTED (Moderate) — Gamma / Fowler / Martin / Newman adapter-and-broker pattern is industry-standard.
+**15b result:** PARTIALLY-CHALLENGED (Weak-Moderate) — N=1 "first demonstrated instance" framing precedes architectural validation per Brown / Bass; premature-abstraction risk per Hunt & Thomas.
+
+**Reasoning for MONITOR:** Pattern is sound; "first demonstrated instance" claim earns architectural validation only at N=2+. Cheap test: track adoption count across remaining 3 tabs over 30-60 days.
+
+**What would change disposition:** INCORPORATE if 2+ tabs adopt within 60 days with measured per-surface divergence justifying abstraction; REVISE if N=1 persists past 90 days with measurable adapter overhead.
+
+**Coupling:** ASSUMPTION-251 (un-numbered DECISION candidates); broker-v4 cluster (MONITOR-256/257/258/261).
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-265:
+**Date added:** 2026-05-29
+**Source item:** ASSUMPTION-244
+**Item type:** ASSUMPTION
+**Priority:** Medium
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-05
+
+**Statement:** End-to-end verification (single happy-path Friston query + node-dimming + tab integrity + zero console errors) is sufficient evidence to stage the 5-file changeset and await Tom's push sign-off.
+
+**15a result:** PARTIALLY-SUPPORTED (Weak-Moderate) — single-path smoke-test + human gate is defensible first gate per Beyer SRE / Forsgren.
+**15b result:** CHALLENGED (Moderate) — Beizer / Myers equivalence-class partitioning + BEIR/SPECTER multi-query benchmarking reject single-query-as-sufficient.
+
+**Reasoning for MONITOR:** Verification rubric expansion is cheap (3-5 query classes); blast radius limited (5-file changeset, human gate). Couples to PRESUMPTION-272 (REVISE-067 — query-class coverage). Conditional INCORPORATE pending rubric.
+
+**What would change disposition:** INCORPORATE if expanded rubric (3-5 query classes) is adopted; REVISE if next post-ship regression traces to single-path verification gap.
+
+**Coupling:** PRESUMPTION-272 (REVISE-067); broker-v4 cluster.
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-266:
+**Date added:** 2026-05-29
+**Source item:** ASSUMPTION-245
+**Item type:** ASSUMPTION
+**Priority:** Medium-High
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-05
+
+**Statement:** The constitutional "no-blind-push" rule held today (5-file changeset staged awaiting Tom's push sign-off; agent did not push autonomously).
+
+**15a result:** SUPPORTED (Moderate-Strong) — Christiano / Bai (Constitutional AI) / Amodei / Ngo support HITL gating on irreversible high-blast-radius actions.
+**15b result:** PARTIALLY-CHALLENGED (Weak-Moderate) — Bainbridge / Reason document constitutional-rule erosion under sustained deadline pressure; scaling concern for 5.5-week ISME window.
+
+**Reasoning for MONITOR:** Rule integrity strongly supported on the single-instance level; scaling concern lives in PRESUMPTION-269 / REVISE-066. Instrument push-gate stall-time as the relevant signal.
+
+**What would change disposition:** INCORPORATE if rule holds across multiple deadline-pressure cycles with stall-time within SLA; REVISE if sustained stall extends FLAG-I cluster (couples PRESUMPTION-269).
+
+**Coupling:** PRESUMPTION-269 (REVISE-066); SYSTEMIC-RISK-FLAG I cluster.
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-267:
+**Date added:** 2026-05-29
+**Source item:** ASSUMPTION-246
+**Item type:** ASSUMPTION
+**Priority:** Low-Medium
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-05
+
+**Statement:** Swarm contract written to root `architecture/` as ground truth + mirrored to `wiki/architecture/swarm-contract.md` is the ground-truth doc for the two new weekly watch agents; architectural-reviewer pinned for post-ISME.
+
+**15a result:** PARTIALLY-SUPPORTED (Moderate) — Nygard / Bass / Kleppmann support mirror conventions with consistency model.
+**15b result:** PARTIALLY-CHALLENGED (Moderate) — same literature requires drift-detection; symlink is canonical remediation; couples PRESUMPTION-270 / 274 (REVISE-068 / -069).
+
+**Reasoning for MONITOR:** Mirror pattern usable; drift-detection (file-hash equality check) is near-zero-cost remedy. Symlink remediation tracked under REVISE-068.
+
+**What would change disposition:** INCORPORATE if drift-detection added; REVISE if drift observed without remediation.
+
+**Coupling:** PRESUMPTION-270 (REVISE-068); PRESUMPTION-274 (REVISE-069 named-trigger deferral).
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-268:
+**Date added:** 2026-05-29
+**Source item:** ASSUMPTION-247
+**Item type:** ASSUMPTION
+**Priority:** Low-Medium
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-05
+
+**Statement:** Baseline-then-delta cadence (Week 1 = reference snapshot; real signal Week 2) is the right starting cadence for new watch agents.
+
+**15a result:** SUPPORTED (Moderate) — Beyer SRE / NIST / Chen anomaly-detection support baseline-then-delta as canonical pattern.
+**15b result:** PARTIALLY-CHALLENGED (Weak) — Chen / Box & Jenkins / Allspaw note one-cycle baselines insufficient for heterogeneous data; multi-cycle baselines preferred.
+
+**Reasoning for MONITOR:** Pattern sound; specific 1-week baseline is the calibration parameter to track. Cheap remedy (extend baseline if Week-1 variance high).
+
+**What would change disposition:** INCORPORATE if Week-1 baseline stabilizes (CV < threshold); REVISE if Week-3 still showing baseline-period anomalies.
+
+**Coupling:** New watch-agent rollout (Janitor + sibling weekly agent).
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-269:
+**Date added:** 2026-05-29
+**Source item:** ASSUMPTION-248
+**Item type:** ASSUMPTION
+**Priority:** Low-Medium
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-05
+
+**Statement:** Janitor's 5 dropped checks (orphan/sparse, unreferenced-images, frontmatter-schema-drift, empty-section, dead-end-wikilink) were deliberate design choices, surfaced rather than skipped silently. Easy to add later.
+
+**15a result:** SUPPORTED (Moderate) — Fowler / Cunningham / Beck support surfacing-over-skipping; Rule-12 fail-loud doctrine consistent.
+**15b result:** PARTIALLY-CHALLENGED (Weak-Moderate) — Cunningham / Brooks / Cockburn document "easy to add later" as systematic under-estimate; tech-debt accrual pattern.
+
+**Reasoning for MONITOR:** Surfacing-as-design-choice supported; "easy to add later" needs explicit re-add trigger criterion to discharge sandbagging risk.
+
+**What would change disposition:** INCORPORATE once explicit re-add triggers + estimated costs are recorded per dropped check; REVISE if 90 days elapse without revisit.
+
+**Coupling:** PRESUMPTION-248 (defer-as-bottleneck-relabel pattern) recurrence risk.
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-270:
+**Date added:** 2026-05-29
+**Source item:** ASSUMPTION-249
+**Item type:** ASSUMPTION
+**Priority:** Medium-High
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-05
+
+**Statement:** ISME is now ~5.5 weeks out; demo-path-shaped work is the prioritization tiebreaker.
+
+**15a result:** SUPPORTED (Moderate) — Goldratt / Reinertsen / Sutherland / Brooks support deadline-driven prioritization with demo-path tiebreaker.
+**15b result:** PARTIALLY-CHALLENGED (Weak-Moderate) — Brooks / DeMarco & Lister / Goldratt / Heath & Heath warn demo-path tiebreaking systematically defers non-demo load-bearing work; FLAG-I cluster (REVISE-056..058) is direct internal evidence.
+
+**Reasoning for MONITOR:** Tiebreaker-role supported; deferred non-demo work tracking owed. Couples PRESUMPTION-273 (REVISE-070 — implicit scope-renegotiation).
+
+**What would change disposition:** INCORPORATE if non-demo load-bearing work tracked + reserved capacity allocated; REVISE if FLAG-I cluster grows during pre-ISME period.
+
+**Coupling:** PRESUMPTION-273 (REVISE-070); FLAG-I cluster; ASSUMPTION-250 (MONITOR-271).
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-271:
+**Date added:** 2026-05-29
+**Source item:** ASSUMPTION-250
+**Item type:** ASSUMPTION
+**Priority:** HIGH
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-05
+
+**Statement:** 4th-consecutive-cycle FLAG-I recursion is strong empirical evidence to ask the second-order framing question: is "wolfram canary" the right framing, or is demo-path infrastructure in fact the higher-leverage attended-session use given ISME ~5.5 weeks out?
+
+**15a result:** SUPPORTED (Moderate-Strong) — Argyris / Senge / Schön / Reason / Cook & Woods support reframing-question on 4-instance recurrence as double-loop trigger.
+**15b result:** PARTIALLY-CHALLENGED (Moderate) — Klein / Kahneman / Argyris caution that framing-shifts under deadline pressure and inside closed registries are bias-prone; PRESUMPTION-275 vulnerability inherited.
+
+**Reasoning for MONITOR:** Asking the question is supported; acting on the new framing requires external check (Tom / Adaptive Sarah-mode). HIGH priority — central architectural framing-shift candidate. Couples PRESUMPTION-275 (REVISE-071).
+
+**What would change disposition:** INCORPORATE if external check (Tom / Adaptive) independently validates the demo-path-infrastructure framing; REVISE if reframing committed without external check (the PRESUMPTION-275 failure mode).
+
+**Coupling:** PRESUMPTION-275 (REVISE-071); PRESUMPTION-273 (REVISE-070); FLAG-I cluster; REVISE-063/064 self-referential elevation cluster.
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-272:
+**Date added:** 2026-05-29
+**Source item:** ASSUMPTION-251
+**Item type:** ASSUMPTION
+**Priority:** Medium
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-05
+
+**Statement:** Three un-numbered DECISION candidates (048 3rd cycle, 049 2nd cycle, AI-search-delegation 1st cycle) constitute a tracking blind spot of its own; registry stops being source of truth.
+
+**15a result:** SUPPORTED (Moderate) — Bass / Nygard / Brown ADR literature supports registry-hygiene-failure framing.
+**15b result:** PARTIALLY-CHALLENGED (Weak) — Nygard original ADR / Beck YAGNI / PRESUMPTION-271 frame numbering-ceremony-as-gate as equally valid alternative.
+
+**Reasoning for MONITOR:** Both framings are tractable. Cheap audit (do candidates have content-debt or ceremony-debt?) decides remediation direction. Couples PRESUMPTION-271 (audit-question framing).
+
+**What would change disposition:** INCORPORATE if audit + remediation (either lower-friction numbering or registry discipline) closes the 3-candidate backlog; REVISE if a 4th candidate accrues without resolution.
+
+**Coupling:** PRESUMPTION-271; ASSUMPTION-243 (DECISION-049 candidate).
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-273:
+**Date added:** 2026-05-29
+**Source item:** ASSUMPTION-252
+**Item type:** ASSUMPTION
+**Priority:** Medium-High
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-05
+
+**Statement:** Tonight's c2a2-self-awareness-daily run is the next REVISE-059 atomicity test; morning check is "do both 2026-05-28 dated artifacts exist?"
+
+**15a result:** SUPPORTED (Moderate) — Gray & Reuter / Kleppmann / Nygard / Beyer SRE support post-write external verification pattern.
+**15b result:** PARTIALLY-CHALLENGED (Weak-Moderate) — Goodhart / Hawthorne / Beyer SRE document internal-only verification systematically less reliable than external; couples REVISE-064 (PRESUMPTION-264).
+
+**Reasoning for MONITOR:** Verification pattern sound; the "morning check" being inside the same pipeline is the structural concern. Remediation (external out-of-band script) tracked under REVISE-064. Verification can run as-is until external script lands.
+
+**What would change disposition:** INCORPORATE once external out-of-band atomicity verification lands (REVISE-064 remediation); REVISE if internal-only check produces a false-positive (atomicity violation passes the morning-check).
+
+**Coupling:** REVISE-059 / REVISE-064; PRESUMPTION-275 (REVISE-071) self-referential observation cluster.
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-274:
+**Date added:** 2026-05-29
+**Source item:** PRESUMPTION-268
+**Item type:** PRESUMPTION
+**Priority:** Medium
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-05
+
+**Statement:** [inferred] Deploying two new weekly watch agents today addresses system-identified meta-problems rather than adding meta-layers to a human-bandwidth-constrained system; the net-value test for new-agent deployment is not separately defined.
+
+**15a result:** PARTIALLY-SUPPORTED (Weak-Moderate) — Hong / Park / Shao / Beyer SRE support meta-agent value under bounded conditions.
+**15b result:** PARTIALLY-CHALLENGED (Moderate) — Bainbridge / Beyer SRE toil / Hong canary-too-many / Park reflection-acting capacity all caution against added observation layers in capacity-constrained systems; FLAG-I bandwidth concern direct.
+
+**Reasoning for MONITOR:** Net-value test owed but not yet defined. Track watch-agent output → action conversion rate as the de facto signal; deploy with sunset criterion.
+
+**What would change disposition:** INCORPORATE if action-conversion rate ≥ threshold over 4 cycles; REVISE if 4 cycles produce zero actionable outputs (canary-too-many confirmed).
+
+**Coupling:** ASSUMPTION-246 (swarm contract); FLAG-I bandwidth cluster.
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-275:
+**Date added:** 2026-05-29
+**Source item:** PRESUMPTION-271
+**Item type:** PRESUMPTION
+**Priority:** Medium
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-05
+
+**Statement:** [inferred] ASSUMPTION-251's framing locates the failure on the registry side rather than on the friction-cost of DECISION-numbering; numbering may itself be a FLAG-I human-terminating gate.
+
+**15a result:** PARTIALLY-SUPPORTED (Weak-Moderate) — Nygard original ADR explicitly anticipates ceremony-as-gate failure mode.
+**15b result:** NO-CHALLENGE-FOUND (Weak) — literature largely supports the presumption; both framings can be jointly true.
+
+**Reasoning for MONITOR:** Audit-question framing is the right remediation: distinguish content-debt from ceremony-debt for the 3 un-numbered candidates. Couples MONITOR-272.
+
+**What would change disposition:** INCORPORATE once audit completes and remediation matches the actual failure-locus; REVISE if a 4th candidate accrues without remediation.
+
+**Coupling:** ASSUMPTION-251 (MONITOR-272).
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+### MONITOR-276:
+**Date added:** 2026-05-29
+**Source item:** PRESUMPTION-276
+**Item type:** PRESUMPTION
+**Priority:** Low-Medium
+**Cadence:** Weekly
+**Next 15d check:** 2026-06-05
+
+**Statement:** [inferred] Today's morning-discussion #3 treats absence of a morning-walk Chat entry as a sit-down-cadence finding; the morning's "where are we" content did engage in the bce11014 Cowork session, so the framing may be mis-categorizing a session-typing fact as an attendance gap.
+
+**15a result:** PARTIALLY-SUPPORTED (Weak) — HCI / DORA / Beyer SRE single-source telemetry literature supports the presumption's measurement-validity concern at a general level.
+**15b result:** PARTIALLY-CHALLENGED (Weak) — depends on construct definition: if "sit-down cadence" is defined as Chat-presence, morning-discussion #3 is correctly reporting; if it's defined as engagement-occurrence, the presumption is correct.
+
+**Reasoning for MONITOR:** Construct-definition is the lever. Cheap remedy: define "sit-down cadence" explicitly + align measurement.
+
+**What would change disposition:** INCORPORATE once construct + measurement are explicitly aligned; REVISE if cadence-findings continue to systematically under-count Cowork-only engagement.
+
+**Coupling:** PRESUMPTION-275 (REVISE-071) self-referential observation cluster.
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+---
+
+**Total new MONITORs this run (2026-05-29):** 13 (MONITOR-264..276).
+**Distribution:** Weekly: 13; Monthly: 0.
+**Priority distribution:** HIGH: 1 (MONITOR-271 ASSUMPTION-250 framing-shift candidate); Medium-High: 3 (MONITOR-266/270/273); Medium: 5 (MONITOR-264/265/269/272/274/275 — note 6 listed, one Medium-Low correction below); Low-Medium: 3 (MONITOR-267/268/269/276).
+**Next weekly 15d run due:** 2026-06-05.
+**FLAG-I cluster extensions:** MONITOR-266/270/271/273 (push-gate scaling + demo-path bias + framing-shift + self-referential atomicity).
+**Broker-v4 cluster extensions:** MONITOR-264/265 (per-tab adapter + verification-rubric calibration).
+**Watch-agent rollout cluster:** MONITOR-267/268/269/274 (mirror + baseline + dropped-checks + net-value test).
+**Registry-hygiene cluster:** MONITOR-272/275 (un-numbered candidates + ceremony-as-gate framing).
+
+
+---
+
+## New MONITORs — run 2026-05-30 (MONITOR-277..287)
+
+### MONITOR-277 — ASSUMPTION-253
+**Statement:** The Sociogram focus-fade bug is real (foreground focus: l~s -> edges stay lit; isolate computes 185 nodes but the fade does not render), not a hidden-tab testing artifact.
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Net:** d3 opacity-transition failures are real and documented, but a single foreground observation cannot exclude a render-context artifact; FOR and AGAINST are both Moderate and symmetric.
+**Reasoning for MONITOR:** Symmetric moderate evidence with a cheap decisive test available (multi-context foreground reproduction). Err toward MONITOR over premature INCORPORATE.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-06. Priority Medium (gates 1.6 push). What would change: multi-context reproduction -> INCORPORATE; context-bound -> REVISE. Couples PRESUMPTION-277/278.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-278 — ASSUMPTION-254
+**Statement:** The prime suspect for the fade bug is the d3 .transition() opacity calls; likely fix is plain .attr('opacity').
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Net:** The .attr() fix is mechanically plausible and a common remedy, but committing to one suspect pre-reproduction risks masking a selection/visibility cause.
+**Reasoning for MONITOR:** Cheap to de-risk by confirming the attribute-vs-pixel divergence before coding. MONITOR until the root cause is bisected.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-06. Priority Medium. Couples ASSUMPTION-253, ASSUMPTION-262.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-279 — ASSUMPTION-255
+**Statement:** v1.6 (bare-guess parser, logic-validated 16/16) is held -- not pushed, not regenerated -- because its isolate/link share the opacity mechanism of the confirmed fade bug; shipping now would ship a non-working fade.
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate-Strong)
+**Net:** Holding is safe but not the only safe option; feature-flag practice offers a cheaper partial release. ASSUMPTION (designer-aware) so not REVISE-grade, but the alternative is well-evidenced.
+**Reasoning for MONITOR:** Conservative hold is defensible; the unconsidered partial-release alternative is cheap. MONITOR with the flag-the-fade remedy noted; couples PRESUMPTION-279.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-06. Priority Low-Medium. What would change: if hold persists >1-2 cycles, escalate toward partial release.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-280 — ASSUMPTION-257
+**Statement:** The recent Sociogram crash was pure memory pressure, not the edge cap; MAX_EDGES=30000 stays.
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate-Strong)
+**Net:** Memory-pressure crashes are real, but the 'memory pressure NOT edge cap' dichotomy is unsound because SVG edges drive memory. Keeping the cap is reasonable; the causal claim is the weak part.
+**Reasoning for MONITOR:** Decision (keep MAX_EDGES) is low-risk; the causal attribution needs a profile. MONITOR with a heap-profiling remedy.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-06. Priority Low. Note the false-dichotomy framing; couples scaling concern PRESUMPTION-281.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-281 — ASSUMPTION-258
+**Statement:** Increment 1.5's deterministic friendly-label typeahead (no LLM) is the correct Pathway-27 substrate and replaces the earlier library-science requirement.
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate-Strong)
+**Net:** Deterministic typeahead is the right cheap first substrate, but the 'replaces library-science requirement' claim ignores a documented synonymy/recall gap that matters for cross-tradition naming.
+**Reasoning for MONITOR:** Substrate choice is sound now; the recall gap is a real future limit with a cheap mitigation (alias table). MONITOR.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-06. Priority Low-Medium. What would change: measured recall loss on cross-tradition queries -> add synonym layer (toward INCORPORATE) or REVISE if discovery degrades.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-282 — ASSUMPTION-259
+**Statement:** (Pathway 28) The tradition/structure vocabulary fans out from one COLORS dict; filter checkboxes and focus typeahead are siblings of that source and cannot drift.
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Strong)
+**Net:** SSOT prevents drift only for what COLORS masters; dir/frontmatter are additional surfaces and the silent 'root' fallback is an existing leak. The 'cannot drift' over-claim is the issue, plus a concrete fail-loud violation.
+**Reasoning for MONITOR:** ASSUMPTION (designer-aware) and the SSOT pattern is sound, so not REVISE-grade as a whole; but the silent-default leak is a real cheap-to-fix defect. MONITOR-HIGH with a fail-loud cleanup flagged.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-06. Priority HIGH. Cheap remedy: replace get_group->'root' silent fallback with a loud error; enumerate vocabulary surfaces. Couples PRESUMPTION-280 (REVISE-074).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-283 — ASSUMPTION-260
+**Statement:** Adding a participant is a single-source operation: one COLORS line + vault files + regen.
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Net:** A clean low-friction pattern at current N, but 'cheap' degrades with the color budget, regen size/time, and the silent grouping fallback.
+**Reasoning for MONITOR:** Works now; scaling and fail-loud caveats are real but not yet binding. MONITOR; couples ASSUMPTION-259, PRESUMPTION-281.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-06. Priority Medium. What would change: approaching N~12 -> plan non-color encoding (toward REVISE if not addressed).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-284 — ASSUMPTION-261
+**Statement:** The session-handoff rail (gitignored handoff doc + CLAUDE.md 'read handoff first on resume' rule) fixes next-session resume because CLAUDE.md auto-loads and steers the resume.
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate-Strong)
+**Net:** The rail follows best practice and should help, but 'fixes' overstates a probabilistic mechanism with no verification or failure mode.
+**Reasoning for MONITOR:** Helpful and cheap; the gap is the missing verification/failure-mode. MONITOR with a freshness-check remedy; couples PRESUMPTION-282 (REVISE-075).
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-06. Priority Medium. What would change: add adherence check -> INCORPORATE; observed silent skips -> REVISE.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-285 — ASSUMPTION-262
+**Statement:** 16/16 logic validation establishes 1.6 parser-level correctness; visual/fade behavior is a separate foreground-tab verification deferred behind the hold.
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate-Strong)
+**Net:** Logic/visual separation is sound, but '16/16 establishes correctness' overstates coverage adequacy, and the fade bug is a counterexample to logic-pass=working.
+**Reasoning for MONITOR:** Layering is legitimate; the sufficiency claim needs coverage evidence. MONITOR with mutation-testing remedy; couples PRESUMPTION-285 (REVISE-078).
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-06. Priority Low-Medium. What would change: mutation/coverage data -> INCORPORATE; weak coverage -> REVISE.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-286 — PRESUMPTION-279
+**Statement:** [inferred] Holding all of v1.6 presumes 'ship nothing with a broken fade' dominates shipping the validated parser with the fade disabled/flagged; partial release was not considered.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak) | **15b:** CHALLENGED (Moderate)
+**Net:** The hold is a defensible safe default but partial release was never weighed; stakes are low and the remedy is cheap.
+**Reasoning for MONITOR:** PRESUMPTION with a moderate (not strong) challenge and LOW-MEDIUM stakes; cheap flag remedy. Err toward MONITOR over adding to the REVISE backlog.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-06. Priority Low-Medium. What would change: hold persists >1-2 cycles -> REVISE toward partial release. Couples ASSUMPTION-255.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-287 — PRESUMPTION-281
+**Statement:** [inferred] 'One COLORS line + regen' presumes registration stays cheap at N=33/100 -- palette distinctness, regen time, ~20MB HTML size not examined as scaling costs.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak) | **15b:** CHALLENGED (Moderate-Strong)
+**Net:** Edit cost is O(1) but distinct-color budget (~10-12) and growing ~26MB artifact size are real scaling walls below the project's N targets. Not yet binding, so not REVISE, but a known design ceiling.
+**Reasoning for MONITOR:** Scaling limit is real and well-evidenced but not yet hit; cheap to plan for. MONITOR-HIGH with explicit color-ceiling and size flags.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-06. Priority HIGH. What would change: approaching N~12 distinct categories -> plan non-color encoding (toward REVISE if unaddressed). Couples ASSUMPTION-260.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-05-30):** 11 (MONITOR-277..287). Next weekly 15d run due: 2026-06-06.
+
+---
+
+## MONITOR — run 2026-05-31
+
+### MONITOR-288 — ASSUMPTION-263
+**Statement:** Re-authenticating claude.ai in the extension's Chrome profile is the single fix that restores BOTH daily-sync directions (morning intake scrape + evening cowork→chat delivery); one re-login unblocks both.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**Net:** Re-login is the canonical first action for shared-credential expiry, but "single fix that holds" is challenged by 3rd-cycle recurrence and extension-session fragility. Cheaply testable on next attended login.
+**Reasoning for MONITOR:** Low-cost-to-verify operational hypothesis; not yet verified (so not INCORPORATE) and needs no design change yet (so not REVISE) — just an empirical check.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-07. Priority HIGH (gates the whole loop). What would change: BOTH directions recover and hold ≥2 cycles -> INCORPORATE; recurrence after re-login -> REVISE (multi-cause RCA). Couples PRESUMPTION-288.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-289 — PRESUMPTION-288
+**Statement:** [inferred] The daily-sync architecture uses a single shared transport (Claude-in-Chrome on a live claude.ai session) for BOTH loop directions with no fallback — a common-mode SPOF.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** CHALLENGED (Moderate)
+**Net:** A single shared transport is a defensible KISS/YAGNI choice for a low-stakes personal pipeline, but it is a textbook common-mode SPOF that has actually fired 3 cycles. "Add redundancy" is a genuine cost-benefit call, not a clear refutation.
+**Reasoning for MONITOR:** Contested (stakes vs realized failure); err toward MONITOR over REVISE since redundancy-worth is a human cost-benefit judgment. Priority HIGH because the SPOF is active and the remedy is shared with REVISE-080.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-07. Priority HIGH. What would change: a 4th outage cycle, or evidence the outage silences the alert path too -> REVISE toward a diverse degraded-mode channel. Couples ASSUMPTION-263, PRESUMPTION-287/289; 2026-05-31 systemic-risk cluster.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-05-31):** 2 (MONITOR-288..289). Next weekly 15d run due: 2026-06-07.
+
+## 2026-05-31 — 15d Periodic Monitor weekly run
+
+**Run date:** 2026-05-31 (Sunday)
+**Agent:** 15d Periodic Monitor (scheduled `c2a2-periodic-monitor-weekly`)
+**Items in queue at run time:** 288 (MONITOR-001..289; MONITOR-123 reserved-unused)
+**Items due (operative next_check <= 2026-05-31; not resolved; not continuous/event-triggered):** 128
+**Re-queued for 15a/15b (weekly cohort, cycles 0-2):** 92 -> next 15d check 2026-06-07
+**Reaching staleness threshold (cycle 4) this run:** 36 -> STALE-MONITOR-FLAGGED + DOWNGRADED to LOW-PRIORITY-MONITOR (monthly), next 15d check 2026-06-28; NOT re-queued this cycle (per 2026-05-24 precedent)
+**Skipped (continuous/event-triggered):** 3 (MONITOR-003 continuous; MONITOR-041 per-incident; MONITOR-154 event-triggered)
+**Monthly INCORPORATED re-check cycle:** SKIPPED (day 31; monthly fires first Sunday, day 1-7; next 2026-06-07).
+**Data-hygiene note:** Per 2026-05-24 convention, per-entry `Next check` fields are NOT edited in place; authoritative scheduling lives in run-log REFRESH/FLAG blocks. Operative next_check per item = latest date assigned across all run-logs + the entry field.
+
+### Disposition semantics
+All weekly items: MONITOR continues; cycle +1; next 15d check 2026-06-07. Stale-downgraded items: cadence Weekly->Monthly, next 2026-06-28. 15d does NOT evaluate evidence — it re-triggers 15a/15b; 15c re-dispositions afterward.
+
+### Evidence trajectory (all processed items)
+- Supporting: stable — no new 15a returns evaluated this cycle (15d re-triggers, does not search).
+- Challenging: stable — no new 15b returns evaluated this cycle.
+- New sources since last cycle: pending 15a/15b on the re-triggered searches; assessed by 15c. For the 36 stale items the recurring cycle-1..3 outcome was 'no new evidence; carry-forward' — the basis for the downgrade below.
+
+### MONITOR REFRESH blocks (92 weekly items)
+
+### MONITOR REFRESH (ASSUMPTION-033, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-39
+- **Priority:** MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-049, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-53
+- **Priority:** MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-052, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-55
+- **Priority:** MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-058, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-57
+- **Priority:** LOW-MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-055, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-58
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-064, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-63
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-065, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-64
+- **Priority:** MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-066, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-65
+- **Priority:** LOW-MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-067, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-66
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-072, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-67
+- **Priority:** MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-073, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-68
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-071, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-70
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-072, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-71
+- **Priority:** MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-073, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-72
+- **Priority:** MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-074, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-73
+- **Priority:** MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-075, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-74
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-077, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-75
+- **Priority:** LOW-MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-086, cycle 3):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-76
+- **Priority:** MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 3 (advanced from 2)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-090, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-77
+- **Priority:** LOW-MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-092, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-78
+- **Priority:** LOW-MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-080, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-80
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-082, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-82
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-089, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-89
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-092, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-92
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-095, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-95
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-097, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-100
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-098, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-101
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-099, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-102
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-101, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-104
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-106, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-109
+- **Priority:** MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-108, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-110
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-109, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-111
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-111, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-113
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-112, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-114
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-128, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-115
+- **Priority:** MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-135, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-118
+- **Priority:** MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-137, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-119
+- **Priority:** MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-118, cycle 2):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-122
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 2 (advanced from 1)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-121, cycle 2):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-126
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 2 (advanced from 1)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-127, cycle 2):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-130
+- **Priority:** MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 2 (advanced from 1)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-153, cycle 2):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-134
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 2 (advanced from 1)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-154, cycle 2):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-135
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 2 (advanced from 1)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-160, cycle 2):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-140
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 2 (advanced from 1)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-167, cycle 2):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-146
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 2 (advanced from 1)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-133, cycle 2):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-148
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 2 (advanced from 1)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-138, cycle 2):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-151
+- **Priority:** MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 2 (advanced from 1)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-140, cycle 2):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-153
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 2 (advanced from 1)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-170, cycle 2):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-160
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 2 (advanced from 1)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-173, cycle 2):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-163
+- **Priority:** MEDIUM
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 2 (advanced from 1)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-175, cycle 2):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-165
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 2 (advanced from 1)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-178, cycle 2):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-168
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 2 (advanced from 1)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-180, cycle 2):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-169
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 2 (advanced from 1)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-181, cycle 2):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-170
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 2 (advanced from 1)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-159, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-172
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-162, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-174
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-169, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-179
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-184, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-181
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-186, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-183
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-189, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-184
+- **Priority:** MEDIUM-HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-179, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-194
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-180, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-195
+- **Priority:** HIGH
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-187, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-197
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-190, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-198
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-193, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-199
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-195, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-200
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-196, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-201
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-197, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-202
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-200, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-203
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-213, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-204
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-214, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-205
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-216, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-206
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-217, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-207
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-218, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-208
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-219, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-209
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-201, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-210
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-202, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-211
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-207, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-213
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-224, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-214
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-226, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-216
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-227, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-217
+- **Priority:** Low-Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-229, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-218
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-230, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-219
+- **Priority:** Low-Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-214, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-220
+- **Priority:** Medium-High
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-231, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-222
+- **Priority:** Low-Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-232, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-223
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-234, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-224
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-236, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-226
+- **Priority:** Low-Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-237, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-227
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-239, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-228
+- **Priority:** Medium-High
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-220, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-229
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (ASSUMPTION-221, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-230
+- **Priority:** High
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### MONITOR REFRESH (PRESUMPTION-242, cycle 1):
+- **Date:** 2026-05-31
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-232
+- **Priority:** Medium
+- **15d action:** RE-TRIGGER for 15a/15b (no evidence evaluated by 15d this cycle)
+- **Cycle:** 1 (advanced from 0)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-07
+
+### STALE-MONITOR-FLAGS (36 items — completed cycle 4, no evidence movement across cycles 1-3)
+
+*Agent-definition section 3: items through 4+ weekly cycles with no change in evidence. Each recurred as 'no new evidence; carry-forward' every prior cycle. Uniform recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly) to stop spending weekly cycles where the literature is not moving. HIGH/CRITICAL-priority members are additionally raised in the consolidated escalation block below for Tom's review.*
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-003 (MONITOR-1)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-006 (MONITOR-2)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-008 (MONITOR-4)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-013 (MONITOR-5)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-001 (MONITOR-6)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-002 (MONITOR-7)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-003 (MONITOR-8)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-004 (MONITOR-9)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-005 (MONITOR-10)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-008 (MONITOR-11)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-010 (MONITOR-12)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-010 (MONITOR-14)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-011 (MONITOR-15)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-009 (MONITOR-16)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-014 (MONITOR-17)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-014 (MONITOR-18)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-015 (MONITOR-19)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-016 (MONITOR-20)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-017 (MONITOR-21)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-018 (MONITOR-22)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-019 (MONITOR-23)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-020 (MONITOR-24)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-021 (MONITOR-25)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-022 (MONITOR-26)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-023 (MONITOR-27)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-026 (MONITOR-29)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-025 (MONITOR-30)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-031 (MONITOR-36)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-038 (MONITOR-43)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-041 (MONITOR-47)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-042 (MONITOR-48)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-044 (MONITOR-49)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-051 (MONITOR-52)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-066 (MONITOR-61)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-068 (MONITOR-62)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-077 (MONITOR-69)
+  Cycles completed: 4 (reached cycle 4 this run)
+  Last disposition: MONITOR (carry-forward, no new evidence) — re-triggered weekly since mid-April
+  Evidence trajectory: stable (no supporting/challenging movement, cycles 1-3)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (HIGH/CRITICAL — see consolidated escalation)
+  New cadence: Monthly; Next 15d check: 2026-06-28
+  Reasoning: 4 weekly cycles, identical 'no new evidence' outcome; weekly re-trigger no longer cost-effective.
+
+### CONSOLIDATED ESCALATION TO TOM — HIGH/CRITICAL stale cluster
+
+*19 of the 36 downgraded items are HIGH-priority (MONITOR-001 also CRITICAL-risk: role-based bias amplification). They are foundational 15a/15b/PRS architecture assumptions that have sat unresolved through 4 weekly cycles with no literature movement. 15d has downgraded them to monthly to stop the churn, but flags them as a cluster because persistent unresolved HIGH-stakes questions warrant a human decision rather than indefinite quiet monitoring.*
+
+**Decision requested from Tom (one of):** (a) accept monthly downgrade; (b) keep specific items on weekly; (c) take design action to resolve (e.g., the role-bias empirical comparison for MONITOR-001).
+
+**HIGH/CRITICAL stale cluster:** MONITOR-1 (ASSUMPTION-003), MONITOR-5 (ASSUMPTION-013), MONITOR-7 (PRESUMPTION-002), MONITOR-10 (PRESUMPTION-005), MONITOR-12 (PRESUMPTION-010), MONITOR-17 (PRESUMPTION-014), MONITOR-19 (ASSUMPTION-015), MONITOR-20 (ASSUMPTION-016), MONITOR-21 (ASSUMPTION-017), MONITOR-23 (ASSUMPTION-019), MONITOR-24 (ASSUMPTION-020), MONITOR-25 (ASSUMPTION-021), MONITOR-26 (ASSUMPTION-022), MONITOR-27 (ASSUMPTION-023), MONITOR-29 (ASSUMPTION-026), MONITOR-30 (PRESUMPTION-025), MONITOR-36 (PRESUMPTION-031), MONITOR-49 (ASSUMPTION-044), MONITOR-69 (PRESUMPTION-077)
+
+### Stale-downgrade list (now LOW-PRIORITY-MONITOR, monthly)
+MONITOR-1 (ASSUMPTION-003), MONITOR-2 (ASSUMPTION-006), MONITOR-4 (ASSUMPTION-008), MONITOR-5 (ASSUMPTION-013), MONITOR-6 (PRESUMPTION-001), MONITOR-7 (PRESUMPTION-002), MONITOR-8 (PRESUMPTION-003), MONITOR-9 (PRESUMPTION-004), MONITOR-10 (PRESUMPTION-005), MONITOR-11 (PRESUMPTION-008), MONITOR-12 (PRESUMPTION-010), MONITOR-14 (ASSUMPTION-010), MONITOR-15 (ASSUMPTION-011), MONITOR-16 (PRESUMPTION-009), MONITOR-17 (PRESUMPTION-014), MONITOR-18 (ASSUMPTION-014), MONITOR-19 (ASSUMPTION-015), MONITOR-20 (ASSUMPTION-016), MONITOR-21 (ASSUMPTION-017), MONITOR-22 (ASSUMPTION-018), MONITOR-23 (ASSUMPTION-019), MONITOR-24 (ASSUMPTION-020), MONITOR-25 (ASSUMPTION-021), MONITOR-26 (ASSUMPTION-022), MONITOR-27 (ASSUMPTION-023), MONITOR-29 (ASSUMPTION-026), MONITOR-30 (PRESUMPTION-025), MONITOR-36 (PRESUMPTION-031), MONITOR-43 (ASSUMPTION-038), MONITOR-47 (ASSUMPTION-041), MONITOR-48 (ASSUMPTION-042), MONITOR-49 (ASSUMPTION-044), MONITOR-52 (PRESUMPTION-051), MONITOR-61 (PRESUMPTION-066), MONITOR-62 (PRESUMPTION-068), MONITOR-69 (PRESUMPTION-077)
+
+**Total processed this run:** 128 (92 re-queued weekly + 36 stale-flagged/downgraded).
+**Run timestamp:** 2026-05-31 (c2a2-periodic-monitor-weekly scheduled task; autonomous; Tom not present at run time).
+
+
+
+## 2026-06-01 — 15c re-disposition of 15d 2026-05-31 RE-TRIGGER cohort (92 items)
+
+*Companion to the 15d 2026-05-31 RE-TRIGGER refresh entries above. 15a/15b refreshed all 92 items (no new sources); 15c re-dispositioned each as MONITOR (carry forward). No items resolved to INCORPORATE or REVISE this cycle. Trajectory stable across the cohort. Next 15d weekly check: 2026-06-07.*
+
+**Evidence trajectory (cohort-level):** Supporting=stable; Challenging=stable; New sources since last cycle=No.
+**Exception flagged (fail-loud):** Security cluster MONITOR entries for ASSUMPTION-121 (MONITOR ref) and PRESUMPTION-153 — challenging-evidence trajectory = STABLE-but-strong (2025–2026 anti-SMS-auth regulatory momentum continues to reaffirm the recorded challenge). Not auto-escalated to REVISE (no new evidence; human-review gate per 15c). Surfaced for Tom.
+
+Per-item 15c outcomes (all: MONITOR carried forward, cadence Weekly, last-checked 2026-06-01, next-check 2026-06-07):
+- ASSUMPTION-033 (MONITOR-39, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-049 (MONITOR-53, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-052 (MONITOR-55, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-058 (MONITOR-57, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-055 (MONITOR-58, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-064 (MONITOR-63, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-065 (MONITOR-64, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-066 (MONITOR-65, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-067 (MONITOR-66, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-072 (MONITOR-67, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-073 (MONITOR-68, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-071 (MONITOR-70, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-072 (MONITOR-71, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-073 (MONITOR-72, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-074 (MONITOR-73, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-075 (MONITOR-74, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-077 (MONITOR-75, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-086 (MONITOR-76, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-090 (MONITOR-77, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-092 (MONITOR-78, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-080 (MONITOR-80, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-082 (MONITOR-82, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-089 (MONITOR-89, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-092 (MONITOR-92, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-095 (MONITOR-95, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-097 (MONITOR-100, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-098 (MONITOR-101, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-099 (MONITOR-102, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-101 (MONITOR-104, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-106 (MONITOR-109, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-108 (MONITOR-110, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-109 (MONITOR-111, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-111 (MONITOR-113, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-112 (MONITOR-114, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-128 (MONITOR-115, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-135 (MONITOR-118, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-137 (MONITOR-119, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-118 (MONITOR-122, cycle 2, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-121 (MONITOR-126, cycle 2, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-127 (MONITOR-130, cycle 2, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-153 (MONITOR-134, cycle 2, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-154 (MONITOR-135, cycle 2, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-160 (MONITOR-140, cycle 2, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-167 (MONITOR-146, cycle 2, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-133 (MONITOR-148, cycle 2, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-138 (MONITOR-151, cycle 2, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-140 (MONITOR-153, cycle 2, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-170 (MONITOR-160, cycle 2, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-173 (MONITOR-163, cycle 2, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-175 (MONITOR-165, cycle 2, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-178 (MONITOR-168, cycle 2, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-180 (MONITOR-169, cycle 2, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-181 (MONITOR-170, cycle 2, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-159 (MONITOR-172, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-162 (MONITOR-174, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-169 (MONITOR-179, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-184 (MONITOR-181, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-186 (MONITOR-183, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-189 (MONITOR-184, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-179 (MONITOR-194, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-180 (MONITOR-195, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-187 (MONITOR-197, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-190 (MONITOR-198, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-193 (MONITOR-199, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-195 (MONITOR-200, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-196 (MONITOR-201, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-197 (MONITOR-202, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-200 (MONITOR-203, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-213 (MONITOR-204, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-214 (MONITOR-205, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-216 (MONITOR-206, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-217 (MONITOR-207, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-218 (MONITOR-208, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-219 (MONITOR-209, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-201 (MONITOR-210, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-202 (MONITOR-211, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-207 (MONITOR-213, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-224 (MONITOR-214, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-226 (MONITOR-216, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-227 (MONITOR-217, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-229 (MONITOR-218, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-230 (MONITOR-219, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-214 (MONITOR-220, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-231 (MONITOR-222, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-232 (MONITOR-223, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-234 (MONITOR-224, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-236 (MONITOR-226, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-237 (MONITOR-227, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-239 (MONITOR-228, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-220 (MONITOR-229, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-221 (MONITOR-230, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-242 (MONITOR-232, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+
+## New MONITOR items — run 2026-06-02
+
+### MONITOR-290 — PRESUMPTION-292
+**Statement:** [inferred] The honesty layer presumes the agent will reliably notice and override a degraded session's false success read; there is no structural guard independent of the agent choosing to re-verify — fail-loud is a disposition, not an enforced interlock.
+**Item type:** PRESUMPTION (unstated)
+**15a:** SUPPORTED (Moderate-Strong) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Net:** The hierarchy of controls ranks engineered/forcing-function guards above administrative ones (behavioral norms) precisely because the latter depend on operator compliance — strongly supporting the concern. But the hierarchy is a prioritization conditioned on feasibility and stakes; for a recoverable, single-operator pipeline a behavioral norm may be proportionate (YAGNI). Genuinely contested.
+**Reasoning for MONITOR:** Whether to add a mechanical interlock vs. rely on the fail-loud norm is a cost-benefit human judgment, not a clear refutation — err toward MONITOR over REVISE (15c heuristic). Priority MEDIUM-HIGH because the guard protects the honesty layer itself and the degraded-session condition is exactly when a behavior-only guard is least reliable.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-07. Priority MEDIUM-HIGH. What would change: any past or future degraded-session false "success" that the behavioral norm failed to catch -> REVISE toward a lightweight forcing function (block asserting "verified" without an out-of-band confirmation token). Couples ASSUMPTION-264 (PREMISE-045), PRESUMPTION-293 (REVISE-084, out-of-band requirement); 2026-06-02 no-independent-vantage cluster.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-06-02):** 1 (MONITOR-290). Next weekly 15d run due: 2026-06-07.
+
+## New MONITOR items — run 2026-06-02 (batch 2: 2026-06-02 EOD self-awareness batch)
+
+### MONITOR-291 — PRESUMPTION-295
+**Statement:** [inferred] The pipeline presumes deferring human-gated work is cost-free/reversible (36-file ingest backlog since 2026-05-26; 15-proposal review queue waiting on a decision email last seen 2026-05-13; network frozen at 222 triplets) with no accruing-cost accounting or escalation trip-wire.
+**Item type:** PRESUMPTION (unstated)
+**15a:** SUPPORTED (Moderate-Strong) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Net:** Cost-of-delay/queueing theory supports that deferral accrues cost and can age non-linearly into an incident (15a). But for irreversible, judgment-laden, human-gated work, "wait for Tom's decision" is the correct safe default and deferral carries option value (15b). One can hold BOTH "waiting is right" AND "the wait should be tracked + trip-wired."
+**Reasoning for MONITOR:** Genuinely contested — whether to act vs wait is Tom's judgment, so not REVISE; but the named gap (no cost accounting, no escalation trip-wire) is real, so not dismissable. Err toward MONITOR (15c heuristic). Priority MEDIUM-HIGH (the review queue is ~3 weeks old; couples the standing human-response-gate).
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-07. Priority MEDIUM-HIGH. What would change: a deferred item aging past the point where waiting cost plausibly exceeds action risk, OR a demonstrated harm from the freeze -> REVISE toward cost-of-delay accounting + a staleness escalation trip-wire. Couples OPEN-066, REVISE-081 (repetition-triggered escalation), PRESUMPTION-287/291/296.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-292 — PRESUMPTION-296
+**Statement:** [inferred] Phase 0 presumes decisions arrive only as dated `[C2A2-review-decision]` emails, so "no email" is read as "no decision"; on a blind-intake day the verbal/chat decision channel is dark and a verbally-given decision would be silently dropped.
+**Item type:** PRESUMPTION (unstated)
+**15a:** SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Net:** Shares the "absence != event" family (PRESUMPTION-287), so the concern is real IF decisions can arrive on more than one channel (15a). BUT a single authoritative channel-of-record is a deliberate, defensible constraint for a provenance-first system — auditable, dated, no reconciliation conflicts (15b). The whole question turns on whether the email-only constraint is INTENDED.
+**Reasoning for MONITOR:** Contested and resolvable by a single fact (does Tom ever decide verbally/in chat?), which is unknown at autonomous run time. Not REVISE (the email-only design may be correct policy); not INCORPORATE (the constraint is currently implicit, and could be silently lossy). Err toward MONITOR. Priority MEDIUM.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-07. Priority MEDIUM. What would change: confirmation Tom gives decisions verbally/in chat -> REVISE (add a capture path); confirmation email is the sole intended channel -> INCORPORATE the channel-of-record as an explicit, declared constraint. Couples PRESUMPTION-287 (REVISE-080), PRESUMPTION-295, OPEN-069.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-06-02, both batches):** 3 (MONITOR-290, MONITOR-291, MONITOR-292). Next weekly 15d run due: 2026-06-07.
+
+---
+
+## New MONITOR items — run 2026-06-03 (2026-06-02 evening Sociogram batch)
+
+### MONITOR-293 — PRESUMPTION-297
+**Statement:** [inferred] Cross-repo correctness is held by human memory + a handoff doc, not by tooling: the shipped/pushed Day-190 viz (wiki repo) depends on edits left UNCOMMITTED in the separate Summa 2026 repo, with no interlock binding the two.
+**Item type:** PRESUMPTION (unstated)
+**15a:** SUPPORTED (Strong) | **15b:** PARTIALLY-CHALLENGED (Weak-Moderate)
+**Net:** Cross-repo silent desync of dependent artifacts is a documented hazard with no transactional guarantee (15a strong). 15b disputes only remedy magnitude: for a single-author, low-frequency, two-repo workflow a handoff note may be a tolerable interlock and full cross-repo tooling is over-engineering. Disagreement is act-vs-wait, not real-vs-not.
+**Reasoning for MONITOR:** Real but unrealized exposure; remedy contested in magnitude. Err toward MONITOR over REVISE (no realized harm). Member of this run's High human-memory SYSTEMIC-RISK cluster.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-07. Priority MEDIUM-HIGH. What would change: a near-miss (a push that actually shipped depending on uncommitted Summa edits) OR rising coupling frequency -> REVISE toward a cheap pre-push "is the dependent repo clean?" check (not full interlock tooling). Couples ASSUMPTION-266 (PREMISE-047), SYSTEMIC-RISK 2026-06-03, OPEN-072.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-294 — PRESUMPTION-298
+**Statement:** [inferred] A single live spot-check generalizes to full correctness — the fade fix was verified on one isolate (`levin`) and one focus pair (`levin ~ summa`) and signed off as "works" for all isolates/foci.
+**Item type:** PRESUMPTION (unstated)
+**15a:** SUPPORTED (Moderate-Strong) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Net:** Both directions converge on one pivot: sufficiency of the spot-check depends entirely on whether the fade code path is uniform or branches on per-node properties (degree/links/focus). Uniform -> levin/levin~summa are valid equivalence-class representatives and exhaustive UI checking is YAGNI; branching -> untested boundaries (zero-link isolate, dense focus) are where it can break.
+**Reasoning for MONITOR:** Conditional on a checkable code fact unresolved at autonomous run time. Not INCORPORATE (partition unproven); not REVISE (no established defect). PRESUMPTION; risk conditional.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-07. Priority MEDIUM. What would change: reading the fade implementation resolves it — uniform single rule -> INCORPORATE the one-representative justification; branches on per-node properties -> REVISE to add boundary cases (zero-link isolate, max-degree focus). Couples ASSUMPTION-268 (PREMISE-048).
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-295 — PRESUMPTION-299
+**Statement:** [inferred] The 10x cap raise (2000->20000) presumes graceful performance across the whole new range; it was validated only against the present 2529-node case, with no characterization between ~2.5k and 20k nodes.
+**Item type:** PRESUMPTION (unstated)
+**15a:** SUPPORTED (Strong) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Net:** Both agree the 2.5k–20k range is uncharacterized and that D3/SVG render cliffs are real (15a strong). 15b disputes only TIMING: for a dataset that took ~190 days to reach 2529 nodes, characterizing now may be YAGNI, and a growth-triggered warning can substitute for an up-front sweep.
+**Reasoning for MONITOR:** Gap is real and agreed; the contest is test-now vs test-when-approaching. Tightly couples ASSUMPTION-267's REVISE-086 (the same measurement resolves both). Priority MEDIUM-HIGH as the load-bearing evidence under that REVISE.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-07. Priority MEDIUM-HIGH. What would change: node count approaching an unmeasured cliff, OR the next cap change, OR the REVISE-086 measurement landing -> fold into a cliff sweep and set the cap below the measured cliff; re-anchor the existing 80%-of-cap warning to the measured cliff. Couples ASSUMPTION-267 (REVISE-086), PRESUMPTION-298.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-06-03):** 3 (MONITOR-293, MONITOR-294, MONITOR-295). Next weekly 15d run due: 2026-06-07.
+
+## New MONITOR items — run 2026-06-04 (2026-06-03 EOD self-awareness batch)
+
+### MONITOR-296 — ASSUMPTION-270
+**Statement:** An autonomous browser/sync agent must not authenticate as Tom; a lapsed claude.ai session is therefore a hard external blocker the pipeline cannot self-clear (re-auth is attended-only).
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Strong) | **15b:** PARTIALLY-CHALLENGED (Moderate-Strong)
+**Net:** Two clauses (Rule 7). Clause 1 "must not authenticate as Tom" — strong, unchallenged. Clause 2 "therefore a lapsed session is a hard blocker the pipeline cannot self-clear" — challenged: standard M2M patterns (client-credentials, refresh tokens, token vaults, workload-identity federation) let unattended automation self-recover without being the user. BUT 15a's own least-privilege/excessive-agency literature warns any standing refreshable credential on an autonomous agent is added attack surface — a genuine capability-vs-surface tradeoff.
+**Reasoning for MONITOR:** Core boundary independently strong; the load-bearing clause is genuinely contested (self-recovery vs attack surface), not an established defect with a costless fix -> MONITOR over REVISE. Priority MEDIUM-HIGH (caused a real 06-03 hard block; anchors the silent-sync-degradation SYSTEMIC-RISK).
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-07. Priority MEDIUM-HIGH. What would change: recurring lapsed-session blocks -> REVISE toward a sync-scoped, least-privilege, revocable delegated credential (not Tom's identity); OR a decision that attended-only is the accepted posture -> INCORPORATE clause 1 explicitly. Couples PRESUMPTION-300 (MONITOR-297), ASSUMPTION-263, OPEN-073, SYSTEMIC-RISK 2026-06-04.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-297 — PRESUMPTION-300
+**Statement:** [inferred] A confirmed-down sync channel is treated as a recoverable inconvenience, not a stop condition — both 06-03 sync runs completed their full workflow against a known-dead channel, accumulating undeliverable state rather than halting/escalating.
+**Item type:** PRESUMPTION (unstated)
+**15a:** SUPPORTED (Strong) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Net:** Both converge on one pivot — is the accumulated undeliverable state a DURABLE, replayable, visibly-flagged dead-letter (defensible graceful degradation) or silent in-workflow residue no one replays (the circuit-breaker/dead-letter anti-pattern)? Confirmed-down = stop/escalate is established (15a); continue-and-queue is fine IF durable+escalated (15b).
+**Reasoning for MONITOR:** Conditional on a checkable fact (residue durability/escalation), unresolved at autonomous run time -> MONITOR (durability unproven -> not INCORPORATE; no established defect -> not REVISE). PRESUMPTION -> extra care. Member of the silent-sync-degradation SYSTEMIC-RISK with ASSUMPTION-270.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-07. Priority MEDIUM. What would change: inspect a sync run's residue — durable+replayable+escalated -> INCORPORATE the graceful-degradation justification; silent/unreplayable -> REVISE to add fail-loud escalation + durable dead-letter + auto-drain on recovery. Couples ASSUMPTION-270 (MONITOR-296), OPEN-069/073, SYSTEMIC-RISK 2026-06-04.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-298 — PRESUMPTION-301
+**Statement:** [inferred] Deferring activation of a staged capability is cost-free — Agents 17-20 / Sunday Tradition Synthesis Day exist as docs but won't run until an attended schedule edit; each skipped Sunday is presumed recoverable headroom.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Net:** Symmetric partials. 15a: built-but-inert = lean inventory/opportunity-cost waste, so deferral is NOT cost-free. 15b: staging-without-activation is recognized prudent strategy (dark launch / progressive rollout / YAGNI), and premature activation of half-fit agents on low-substance days is its own overproduction waste. Truth in the middle: deferral cost is real but small, partly offset by option value; the presumption's error is "cost-free," not the decision to defer.
+**Reasoning for MONITOR:** Two-sided with small contested magnitude; no established defect, no clear win from acting now -> MONITOR. PRESUMPTION. Actionable lever: convert open-ended deferral into a dated/triggered option.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-07. Priority LOW-MEDIUM. What would change: signs of decay/drift (staged Agents 17-20 / Sunday Synthesis going stale vs the evolved system) -> REVISE toward an activation trigger/date; OR sustained low marginal value -> accept deferral as a deliberate dark-launch hold (INCORPORATE the staging rationale). Couples PRESUMPTION-295.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-299 — PRESUMPTION-302
+**Statement:** [inferred] The self-awareness pipeline's epistemic value is presumed attendance-independent — it fires on a 2nd no-attended day as if autonomous-pipeline transcripts are equivalently informative to attended design sessions, risking thin/echo extraction.
+**Item type:** PRESUMPTION (unstated)
+**15a:** SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Net:** Meta-question: are autonomous-day transcripts informative enough to extract from? Both have force — 15a (alert-fatigue/signal-to-noise): firing on a no-substance day risks thin/echo extraction and self-referential inflation; 15b (anomaly-detection baseline): continuous capture establishes the normal and detects declining substance, and a "was there substance?" gate is a fragile meta-decision. Live instance: this run dispositions presumptions extracted on a 2nd no-attended day.
+**Reasoning for MONITOR:** Real, self-referential, unresolved; 15b's proposed fix (down-weight autonomous-origin items rather than gate the run) is attractive but unvalidated -> MONITOR over INCORPORATE/REVISE. PRESUMPTION + epistemic/self-referential -> extra care.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-07. Priority MEDIUM. What would change: evidence of echo-extraction (autonomous-day items disproportionately producing thin MONITORs that re-reference prior autonomous runs) -> REVISE toward tagging autonomous-origin items at lower epistemic weight and/or a substance threshold; OR autonomous-day items yielding genuinely novel dispositions -> continuous capture vindicated. Couples OPEN-069/070, PRESUMPTION-291, ASSUMPTION-269 (PREMISE-049).
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-06-04):** 4 (MONITOR-296, MONITOR-297, MONITOR-298, MONITOR-299). Next weekly 15d run due: 2026-06-07.

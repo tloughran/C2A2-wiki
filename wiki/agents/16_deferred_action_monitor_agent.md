@@ -86,22 +86,22 @@ WATCH-[NNN]:
   Channel: [review-conditional | agent-deferral | human-watch]
   Date added: [YYYY-MM-DD]
   Source: [proposal ID | hypothesis ID | Tom request]
-  
+
   Condition: [specific, checkable criterion]
   Check method: [web search for URL/title | check tradition wiki | check inbox | other]
   Check cadence: [Weekly | Biweekly | Monthly]
-  
+
   Last checked: [YYYY-MM-DD]
   Check count: [N]
   Result history: [brief log of check outcomes]
-  
+
   On resolution:
     Action: [re-queue proposal | route hypothesis | generate proposal | notify Tom | dispatch to agent]
     Destination: [file path or agent name]
     Context to attach: [what information to include when routing]
-  
+
   Status: [WATCHING | RESOLVED | STALE | CANCELLED]
-  
+
   PROVENANCE:
     Origin: [review decision | agent exchange | human request]
     Original item: [proposal ID, hypothesis text, or request text]

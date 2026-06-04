@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Graßer, F., Bamberg, T., Müller, F., Iribarren Sanchez, J., & Schäfer, L. (2024). "Harnessing Pre-trained Generalist Agents for Software Engineering Tasks." arXiv preprint arXiv:2312.15536. — Shows specialist agents outperform generalists on focused tasks; validates specialist-first principle when task specialization is clear.
-  
+
   2. Horling, B., & Lesser, V. (2004). "A Survey of Multi-Agent Organizational Paradigms." The Knowledge Engineering Review, 19(4), 281-316. — Comprehensive analysis showing that hierarchical specialist-first with orchestrator fallback reduces coordination overhead compared to purely generalist approaches.
-  
+
   3. Gawantka, R., Sander, T., & Scourfield, J. (2025). "Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks." arXiv preprint arXiv:2411.04468. — Demonstrates that specialist agents achieve 20% makespan improvement over generalists; orchestrator-managed delegation optimizes throughput.
 
 Strength of support: Moderate

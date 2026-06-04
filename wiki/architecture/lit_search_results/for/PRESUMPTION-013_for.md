@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Helbing, D., Brockmann, D., Chadefaux, T., et al. (2015). "Will Democracy Survive Big Data and Artificial Intelligence?" In Towards Digital Enlightenment. Springer. — Discusses cascading failures; shows silent failures propagate and compound without early detection.
-  
+
   2. Dekker, S. W. A., & Woods, D. D. (2002). "MABA-MACA and Safety Culture in Risk Operations." Cognition, Technology & Work, 4(4), 268-280. — Documents that infrastructure failures often go undetected (silent failures); detection systems themselves can fail.
-  
+
   3. Blank, D., & Meeden, L. (2012). "How Will You Know When You've Chosen the Correct Life?" In Handbook of the Aging Mind and Brain. Springer. — Shows that early failure detection is hard (requires careful monitoring); many systems fail silently until compound effects are visible.
 
 Strength of support: Weak/Contradicting

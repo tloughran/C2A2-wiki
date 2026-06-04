@@ -43,7 +43,7 @@ SEARCH-AGAINST-[ITEM-TYPE]-[NNN]:
   Date searched: [YYYY-MM-DD]
   Original item: [ASSUMPTION-NNN or PRESUMPTION-NNN]
   Original statement: [the claim being tested]
-  
+
   PROVENANCE:
     Origin: [14a or 14b]
     Chain: [14a → 15b] or [14b → 15b]
@@ -55,19 +55,19 @@ SEARCH-AGAINST-[ITEM-TYPE]-[NNN]:
     Current status: [CHALLENGED | PARTIALLY-CHALLENGED | NO-CHALLENGE-FOUND]
 
   Challenging evidence found: [Yes / Partial / No]
-  
+
   Sources:
     1. [Author(s), Year. "Title." Journal/Source. — 1-2 sentence summary of how it challenges the claim]
     2. [...]
-    
+
   Strength of challenge: [Strong | Moderate | Weak | None]
-  
+
   Summary: [3-5 sentences synthesizing what the literature says against this claim]
-  
+
   Specific risks: [what could go wrong for C2A2 if this assumption is false]
-  
+
   Mitigations available: [are there known ways to hedge against this risk?]
-  
+
   Recommendation: [CHALLENGED | PARTIALLY-CHALLENGED | NO-CHALLENGE-FOUND]
 ```
 

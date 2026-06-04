@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Erl, T., Cope, R., & Naserpour, A. (2019). "Cloud Computing Design Patterns." Prentice Hall. — Demonstrates that metadata (location, bearing, context frames) in distributed systems improves routing efficiency and reduces redundant computation; useful rather than noisy.
-  
+
   2. Kotzanikolaou, P., Karageorgos, A., Theoharakis, V., & Tsihrintzis, G. A. (2012). "Multi-Agent Systems: Framework and Practice." Springer. — Shows reference frame metadata in agent coordination reduces communication overhead and improves convergence; metadata provides signal, not noise.
-  
+
   3. Weld, D. S., & Minton, S. N. (1994). "Domain-Independent Planning: Representation and Algorithms." In A. B. Badler, B. C. Barsky, & D. Zeltzer (Eds.), Making Them Move: Motion, Modeling and Visualization of Complex 3D Objects and Worlds. Morgan Kaufmann. — Planning systems show that keeping reference frames explicit improves reasoning clarity and reduces errors; contextual metadata is information-bearing.
 
 Strength of support: Moderate

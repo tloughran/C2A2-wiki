@@ -19,9 +19,9 @@ Supporting evidence found: Partial (evidence contradicts)
 
 Sources:
   1. Lehman, M. M., Belady, L. A. (1985). "Program Evolution: Processes of Software Change." Academic Press. — Documents stages of software evolution but specifically shows progression is NOT monotonic—systems can regress, plateau, or require major restructuring.
-  
+
   2. Zeller, A., & Zimmermann, T. (2008). "Mining Version Histories to Guide Software Changes." IEEE Transactions on Software Engineering, 32(6), 429-445. — Empirical study showing software evolution involves non-monotonic progress: periods of rapid improvement, plateaus, backtracking, and occasional regressions.
-  
+
   3. Curtis, B., Krasner, H., & Iscoe, N. (1988). "A Field Study of the Software Design Process for Large Systems." Communications of the ACM, 31(11), 1268-1287. — Shows that real system development involves iteration, backtracking, and non-linear progression through stages; stages themselves are not always clear or sequential.
 
 Strength of support: Weak (contradicting evidence)

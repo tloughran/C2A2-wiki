@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Stanovich, K. E. & West, R. F. (2008). "On the relative independence of thinking biases and cognitive ability." Journal of Personality and Social Psychology, 94(4), 672-695. — Dual-process theory distinguishes analytic and intuitive reasoning; research shows conflict processing between systems can enable bias detection.
-  
+
   2. Klayman, J., & Ha, Y. W. (1987). "Confirmation, disconfirmation, and information in hypothesis testing." Psychological Review, 94(2), 211-228. — Classic study showing confirmation bias operates most strongly in information search; offers foundational model for understanding bias mechanisms.
-  
+
   3. Wood, D., & Fink, D. (2015). "Reasoning with biases and dual processes." Cognition, 94(4), 211-228. — Recent research on how analytic processes (independent from intuitive) can override biased pattern matching through deliberate systematic evaluation.
 
 Strength of support: Moderate

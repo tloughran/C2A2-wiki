@@ -41,7 +41,7 @@ SEARCH-FOR-[ITEM-TYPE]-[NNN]:
   Date searched: [YYYY-MM-DD]
   Original item: [ASSUMPTION-NNN or PRESUMPTION-NNN]
   Original statement: [the claim being tested]
-  
+
   PROVENANCE:
     Origin: [14a or 14b]
     Chain: [14a → 15a] or [14b → 15a]
@@ -53,17 +53,17 @@ SEARCH-FOR-[ITEM-TYPE]-[NNN]:
     Current status: [SUPPORTED | PARTIALLY-SUPPORTED | NO-SUPPORT-FOUND]
 
   Supporting evidence found: [Yes / Partial / No]
-  
+
   Sources:
     1. [Author(s), Year. "Title." Journal/Source. — 1-2 sentence summary of relevance]
     2. [...]
-    
+
   Strength of support: [Strong | Moderate | Weak | None]
-  
+
   Summary: [3-5 sentences synthesizing what the literature says in favor of this claim]
-  
+
   Caveats: [conditions under which support weakens, scope limitations, methodological concerns]
-  
+
   Recommendation: [SUPPORTED | PARTIALLY-SUPPORTED | NO-SUPPORT-FOUND]
 ```
 

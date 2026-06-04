@@ -52,34 +52,34 @@ DISPOSITION-[NNN]:
   Date: [YYYY-MM-DD]
   Item: [ASSUMPTION-NNN or PRESUMPTION-NNN]
   Item type: [ASSUMPTION (stated) or PRESUMPTION (unstated)]
-  
+
   15a result: [SUPPORTED | PARTIALLY-SUPPORTED | NO-SUPPORT-FOUND]
   15a strength: [Strong | Moderate | Weak | None]
   15b result: [CHALLENGED | PARTIALLY-CHALLENGED | NO-CHALLENGE-FOUND]
   15b strength: [Strong | Moderate | Weak | None]
-  
+
   Net assessment: [1-3 sentences weighing the evidence]
-  
+
   Disposition: [INCORPORATE | MONITOR | REVISE]
-  
+
   Reasoning: [2-4 sentences explaining the decision — what tipped the balance]
-  
+
   If INCORPORATE:
     Validated premise statement: [the premise as it should appear in the register]
     Confidence: [High | Moderate]
     Applicable to: [which decisions, agents, or system components this premise grounds]
     Re-check cadence: [Monthly | Quarterly — even INCORPORATED items get periodic review via 15d]
-    
+
   If MONITOR:
     What would change the disposition: [what new evidence would tip toward INCORPORATE or REVISE]
     Monitoring cadence: [Weekly — default for MONITOR items]
     Priority: [High | Medium | Low]
-    
+
   If REVISE:
     What is at risk: [which design decisions depend on this premise]
     Recommended action: [specific suggestion for Tom's review]
     Urgency: [High | Medium — how soon should this be addressed]
-  
+
   PROVENANCE:
     Origin: [14a or 14b]
     Chain: [14a → 15a, 15b → 15c] or [14b → 15a, 15b → 15c]

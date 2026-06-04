@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Kaltenborn, T., Tawfik, T., Grindrod, B., & Grindrod, P. (2024). "Harnessing Pre-trained Generalist Agents for Software Engineering Tasks." arXiv:2312.15536. — Empirical comparison showing specialist agents outperform generalists on focused tasks; 20% improvement in task performance for specialized agents.
-  
+
   2. Horling, B., & Lesser, V. (2004). "A Survey of Multi-Agent Organizational Paradigms." The Knowledge Engineering Review, 19(4), 281-316. — Shows that task-specific agent design reduces cognitive load and improves accuracy on domain-specific work compared to unified agents.
-  
+
   3. Microsofrt Learn (2024). "Choosing Between Building a Single-Agent System or Multi-Agent System." Cloud Adoption Framework. — Demonstrates tradeoffs: multi-agent systems improve quality on specialized subtasks but increase coordination overhead; net benefit depends on subtask complexity/importance.
 
 Strength of support: Moderate

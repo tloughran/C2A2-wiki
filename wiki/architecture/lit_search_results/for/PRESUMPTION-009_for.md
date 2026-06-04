@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Simmhan, Y. L., Plale, B., & Gannon, D. (2005). "A Survey of Data Provenance in e-Science." ACM SIGMOD Record, 34(3), 31-36. — Shows provenance systems provide critical value for reproducibility and debugging; overhead justified in research contexts.
-  
+
   2. Miles, S., Groth, P., Branco, M., & Moreau, L. (2008). "The Provenance of Electronic Data." Communications of the ACM, 51(4), 52-58. — Establishes that provenance overhead (typically 20-30% additional storage/compute) is justified for scientific work requiring auditability.
-  
+
   3. Freire, J., Koop, D., Santos, E., & Silva, C. T. (2008). "Provenance for Computational Tasks: A Survey." Computing in Science & Engineering, 10(3), 20-29. — Detailed analysis showing that provenance ROI depends on task domain—high value for research/compliance, lower value for real-time systems.
 
 Strength of support: Moderate

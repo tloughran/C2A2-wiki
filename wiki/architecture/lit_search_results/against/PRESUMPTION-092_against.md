@@ -34,3 +34,41 @@ SEARCH-AGAINST-PRESUMPTION-092:
     Strongest counterargument: One-way feedback is the documented organizational-learning gap. The summa-2026 nightly verification produces artifacts that, if they implicate C2A2 events, would be primary-project signals — but they currently flow only one direction. Over time, the shadow-architecture pattern compounds.
     What would need to be true for C2A2 to be safe: A periodic integration cycle is added; verification artifacts that implicate C2A2 events are surfaced in the C2A2 changelog.
     How to test: Sample summa-2026 nightly verification reports for the past 14 days; flag any that implicate C2A2 events that did not appear in C2A2 changelog. >0 confirms the gap.
+
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-092 (RE-TRIGGER cycle 1):
+  Date searched: 2026-06-01
+  Original item: PRESUMPTION-092
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b->15a,15b->15c->15d->15a,15b->15c]
+    Original item: PRESUMPTION-092
+    Item type: PRESUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-31): re-triggered on weekly cadence; next_check 2026-05-31 elapsed
+      15b (cycle 1, 2026-06-01): re-searched for challenging literature
+    Current status: refresh; no new challenging literature surfaced this cycle.
+
+  Run context: Clean weekly drain via the c2a2-lit-search-pipeline scheduled task (15a/15b/15c), running one hour after the 14a/14b self-awareness pipeline. Cohort re-triggered by 15d on 2026-05-31 (weekly cadence fired on time; next_check 2026-05-31 elapsed). Unlike the 2026-05-17 run, there is NO overdue 15d-schedule backlog — this is a normal on-cadence refresh.
+  Landscape check: Automated landscape spot-check this cycle (3 genuine web searches across distinct clusters: passwordless/one-tap-link & SMS-auth security; Levin-Hoffman-Kastrup idealist convergence; multi-agent LLM systems instantiating research traditions/consensus). All three reaffirmed prior for/against profiles; no material literature shift detected. Spot-check is a sample, not an exhaustive per-item search.
+
+  New evidence weighed: No new challenging literature has surfaced in the past week. The prior cycles' challenge profile stands.
+
+  Sources (new / refreshed): No new sources this cycle.
+
+  Strength of challenge: Unchanged from prior cycle.
+
+  Summary: Cycle-1 refresh confirms the prior cycle's finding. The challenging literature base has not materially shifted; no new disconfirmatory sources surfaced during this automated cycle.
+
+  Specific risks: Unchanged from prior cycle.
+
+  Mitigations available: Unchanged from prior cycle.
+
+  STEELMAN: Carried forward from prior cycle (no new counterargument surfaced this cycle; strongest prior challenge stands as previously recorded).
+
+  Recommendation: refreshed; carry forward prior recommendation (PARTIALLY-CHALLENGED (Moderate) — PRESUMPTION + moderate challenge → MONITOR/REVISE; given low-medium architectural consequence, MONITOR is appropriate)

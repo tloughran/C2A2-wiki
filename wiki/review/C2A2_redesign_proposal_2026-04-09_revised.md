@@ -22,12 +22,12 @@ Ten design changes follow, organized into six phases over approximately three we
 
 **The change:** Add two fields to the dispatch format in all 11 tradition agent definitions:
 ```
-Reference frame location: [which concept-space in your tradition this dispatch 
-                           originates from — e.g., "basal cognition / collective 
+Reference frame location: [which concept-space in your tradition this dispatch
+                           originates from — e.g., "basal cognition / collective
                            intelligence interface"]
-Conceptual bearing:       [directional signal — what question this dispatch is 
-                           moving toward, phrased as a vector — e.g., 
-                           "from substrate-independence → toward cross-scale 
+Conceptual bearing:       [directional signal — what question this dispatch is
+                           moving toward, phrased as a vector — e.g.,
+                           "from substrate-independence → toward cross-scale
                            goal-directedness"]
 ```
 
@@ -135,9 +135,9 @@ PRS-[number]:
   Problem: [...]
   Resource: [...]
   Solution: [...]
-  Displacement: [semantic phrasing of how R transforms P into S — the inferential 
-                 movement, expressed as a natural-language vector, e.g., 
-                 "from substrate-dependent cognition → through bioelectric signaling 
+  Displacement: [semantic phrasing of how R transforms P into S — the inferential
+                 movement, expressed as a natural-language vector, e.g.,
+                 "from substrate-dependent cognition → through bioelectric signaling
                  evidence → toward substrate-independent goal-directedness"]
   ...
 ```
@@ -248,7 +248,7 @@ PRS-[number]:
 
 **The insight:** When multiple traditions independently flag the same connection, that convergence should be counted. Furthermore, the system needs a health metric that balances internal coherence against cross-tradition openness.
 
-**The change:** Add voting layer to the Master Agent's integration run. Each cross-program item gets a vote count. Items crossing threshold (3+ agents) auto-promote to Pattern Detector. 
+**The change:** Add voting layer to the Master Agent's integration run. Each cross-program item gets a vote count. Items crossing threshold (3+ agents) auto-promote to Pattern Detector.
 
 **Health metric r:**
 ```
@@ -291,28 +291,28 @@ Stage 0 — Infrastructure (CURRENT):
 Stage 1 — Grounding:
   First 14a/14b cycle complete. First 15a/15b searches returned. First 15c dispositions issued.
   15d monitoring schedule established.
-  Benchmark: ≥5 assumptions + ≥5 presumptions surfaced, tested, and dispositioned. 
-  ≥1 item INCORPORATED into validated premises. PRS displacement vectors implemented. 
+  Benchmark: ≥5 assumptions + ≥5 presumptions surfaced, tested, and dispositioned.
+  ≥1 item INCORPORATED into validated premises. PRS displacement vectors implemented.
   Lateral channels operational. Self-awareness cycle time baselined.
 
 Stage 2 — Intra-tradition Consensus:
   Pilot cluster tripled. Consensus mechanism operational.
-  Benchmark: Consensus rate measurable (target: >0.6 agreement). Tripled agents 
+  Benchmark: Consensus rate measurable (target: >0.6 agreement). Tripled agents
   producing differentiated assessments.
 
 Stage 3 — Cross-tradition Dialogue:
   Active inquiry cycle operational on consensus outputs.
-  Benchmark: Cross-tradition hypothesis survival rate measurable. First r measurement 
+  Benchmark: Cross-tradition hypothesis survival rate measurable. First r measurement
   recorded. r statistically > 1.
 
 Stage 4 — Full Network:
   All 11 traditions tripled (33 agents). Voting protocol operational.
-  Benchmark: r measured across full network. Connection density > 5.0 per tradition. 
+  Benchmark: r measured across full network. Connection density > 5.0 per tradition.
   ≥2 paradigm-shift candidates confirmed.
 
 Stage 5 — Maturity:
   Stable r in healthy range. System generating novel knowledge (NOVEL flags).
-  Benchmark: Connecting meme typology emerging. C2A2 demonstrably functioning as a 
+  Benchmark: Connecting meme typology emerging. C2A2 demonstrably functioning as a
   Thousand Brains system. Environment model established for health optimization.
 ```
 

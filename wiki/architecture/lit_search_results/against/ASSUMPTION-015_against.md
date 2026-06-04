@@ -2,7 +2,7 @@ SEARCH-AGAINST-ASSUMPTION-015:
   Date searched: 2026-04-13
   Original item: ASSUMPTION-015
   Original statement: "Running a potentially biased pipeline (FOR/AGAINST) is better than not running one at all."
-  
+
   PROVENANCE:
     Origin: 14a
     Chain: [14a → 15b]
@@ -14,21 +14,21 @@ SEARCH-AGAINST-ASSUMPTION-015:
     Current status: CHALLENGED
 
   Challenging evidence found: Yes
-  
+
   Sources:
     1. Springer Journal of Computational Social Science, 2021. "Fooled by facts: quantifying anchoring bias through a large-scale experiment." — Anchoring bias persists even when anchors are implausible or irrelevant. Biased preliminary results create anchors that distort all downstream evaluations, operating automatically outside conscious awareness.
     2. PMC, 2024. "The power of past performance in multidimensional supplier evaluation: Debiasing anchoring bias and its knock-on effects." — Anchoring cascades across multiple dimensions: a low evaluation score on one dimension anchors subsequent scores on unrelated dimensions. Running a biased pipeline amplifies this cascade.
     3. Oxford Academic. "Epistemic Pollution" from Bad Beliefs: Why They Happen to Good People. — Epistemic pollution is systemic contamination of the informational environment with unreliable information. False preliminary results directly contaminate downstream decision-making; resulting "false confidence" makes the problem harder to detect.
     4. Frontiers in Public Health, 2026. "Distinguishing anchoring from confirmation bias in diagnostic vignette studies." — Biased evaluations trigger confirmation bias, where decision-makers actively seek information confirming biased preliminary results and dismiss contradictory evidence.
-    
+
   Strength of challenge: Strong
-  
+
   Summary: Extensive research demonstrates that a biased evaluation pipeline is often worse than having no evaluation at all. The bias does not remain localized to initial results; instead, it anchors and contaminates downstream decisions through epistemic pollution, cascading across dimensions, and triggering confirmation bias. The false confidence that "something is better than nothing" ignores the active harm of systematic distortion. Decision-makers facing uncertainty without preliminary data make probabilistic judgments; faced with misleading preliminary data, they anchor to false certainty and resist correction.
-  
+
   Specific risks: Biased pipeline results anchor all downstream architectural decisions. False confidence leads to premature lock-in. Confirmation bias filters out contradictory evidence. Decision paralysis if team later discovers bias but can't unwind anchored decisions.
-  
+
   Mitigations available: Pre-register evaluation criteria before running pipeline. Use blind or adversarial evaluation. Treat results as hypothesis-generating rather than decision-gating. Plan explicit debiasing reviews.
-  
+
   Recommendation: CHALLENGED
 
   STEELMAN:

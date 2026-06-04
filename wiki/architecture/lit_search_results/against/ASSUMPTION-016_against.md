@@ -2,7 +2,7 @@ SEARCH-AGAINST-ASSUMPTION-016:
   Date searched: 2026-04-13
   Original item: ASSUMPTION-016
   Original statement: "Literature search results should gate implementation decisions (Phase 2a pause)."
-  
+
   PROVENANCE:
     Origin: 14a
     Chain: [14a → 15b]
@@ -14,21 +14,21 @@ SEARCH-AGAINST-ASSUMPTION-016:
     Current status: CHALLENGED
 
   Challenging evidence found: Yes
-  
+
   Sources:
     1. ISACA, 2024. "How to Avoid Analysis Paralysis in Decision Making." — Analysis paralysis is an anti-pattern where prolonged deliberation prevents forward motion. Over-reliance on analytical techniques can be counterproductive.
     2. LinkedIn, 2024. Case study of mid-sized software firm spending over a year in design phase, constantly revising specs and evaluating architectures. Product was late and out-of-step with evolved customer needs.
     3. Software development literature. Agile methodologies explicitly avoid evidence-gating by promoting iterative cycles. Colin Powell's principle: act with 40-70% information rather than waiting for completeness.
     4. Leadership IQ. Analysis paralysis research. Over-reliance on data leads to cycle of seeking more input without coming to final decision. Cost of pause often exceeds benefit of additional evidence.
-    
+
   Strength of challenge: Strong
-  
+
   Summary: A substantial research base documents that evidence-gating architectural decisions creates analysis paralysis with measurable opportunity costs. The agile movement emerged partly as response to over-reliance on up-front analysis, demonstrating that iterative approaches with continuous refinement outperform wait-for-evidence models. Decision science literature supports acting with 40-70% information confidence. The empirical pattern: gating decisions on evidence searches delays implementation, misses windows, and locks in assumptions that become stale during the search period.
-  
+
   Specific risks: Implementation delay (each week of gating postpones learning from deployment). Information staling (assumptions change while evidence gathered). Opportunity cost. False precision from extended evidence search.
-  
+
   Mitigations available: Time-box evidence search (1-2 days max). Use evidence to inform risk assessment, not to gate decisions. Plan for iteration post-implementation. Adopt "MVP + iterate" model.
-  
+
   Recommendation: CHALLENGED
 
   STEELMAN:

@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Klayman, J., & Ha, Y. W. (1987). "Confirmation, Disconfirmation, and Information in Hypothesis Testing." Psychological Review, 94(2), 211-228. — Shows confirmation bias primarily operates in information search and interpretation; separating search (FOR/AGAINST) reduces bias at source.
-  
+
   2. Stanovich, K. E., & West, R. F. (2008). "On the Relative Independence of Thinking Biases and Cognitive Ability." Journal of Personality and Social Psychology, 94(4), 672-695. — Demonstrates independent systems can override biases but may introduce new biases (e.g., increased type II errors, missed evidence from under-searching AGAINST cases).
-  
+
   3. Munro, G. D., Ditto, P. H., Lockhart, J. L., Fazio, R. H., & Covey, D. P. (2002). "Biased Assimilation of Societal Risk Information." Basic and Applied Social Psychology, 24(1), 15-29. — Shows that searching for disconfirming evidence doesn't eliminate bias—selective interpretation can persist even with evidence available.
 
 Strength of support: Moderate

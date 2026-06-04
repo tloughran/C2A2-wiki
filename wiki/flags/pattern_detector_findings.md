@@ -258,7 +258,7 @@ Implications for C2A2: This is the deepest physical grounding yet for C2A2's ont
   - FINDING-004 (Consciousness Cluster unification, advanced by FINDING-011)
   - FINDING-012 (Consciousness/Post-Spacetime super-cluster, trace logic = quantum logic)
   - FINDING-017 (Post-Spacetime Irreducibility Cluster)
-*SUPER-BRIDGE candidates: 
+*SUPER-BRIDGE candidates:
   - FINDING-011 (⚑⚑⚑ trace logic → Markov blanket → dissociative boundary)
   - FINDING-011-EXT (Levin biological vertex; observer-dependent boundary hypothesis)
 *New bridges identified:

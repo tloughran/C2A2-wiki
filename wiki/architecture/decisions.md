@@ -390,3 +390,87 @@ Decision-candidates surfaced today (agent-recommended; awaiting Tom; not yet num
 - (D) Three STALE-MONITOR escalations (ASSUMPTION-035/037, PRESUMPTION-037): run the un-run empirical/paired test, or retire the premise -- a Tom decision, not a literature question (ASSUMPTION-223). Caveat per PRESUMPTION-245: these escalations terminate at the same human gate currently blocking the REVISE backlog.
 
 All REVISE flags (047/048/049/050/051) are AWAITING-REVIEW; per PRESUMPTION-240/243 (now CHALLENGED/SUPPORTED) and OPEN-065/066 the review gate has been unavailable five days, so all are currently unactioned. A ~10-second re-login clears the immediate backlog.
+
+
+---
+
+## 2026-05-26 status update (Agent 14a -- mixed-shape day: attended Cowork session + automated pipeline)
+
+(Captured here on 2026-05-27; 2026-05-26's changelog covers the full daily narrative.)
+
+- **DECISION-044** (run the two-summa head-to-head) -- still GATED by REVISE-047/048 (SYSTEMIC-RISK-FLAG H), still AWAITING-REVIEW. The review gate was OPEN for the first time in 6 days following the 10-second re-login (ASSUMPTION-235), but the attended session at 17:42 ET focused on the proposal-approval queue, not on REVISE actioning.
+- **DECISION-047** (park the git-history scrub) -- still CHALLENGED by REVISE-049, still AWAITING-REVIEW.
+- **SYSTEMIC-RISK-FLAG I** (REVISE-050/051 cluster) -- gate is OPEN; today's attended session demonstrated the loop can in fact close when Tom arrives. REVISE-050/051 still unactioned.
+- **Candidate DECISION-048 (NEW 2026-05-26; AWAITING-TOM-NUMBERING):** "The review-page state (verified by direct paste + verbal confirmation) is the authoritative source-of-truth for proposal-approval values when the Gmail decision-email body disagrees; the email-body misfire is a UI/workflow bug to fix on the decision-email-generation side." From ASSUMPTION-230. Scope-extension flagged by PRESUMPTION-254: the rule may need to be "stated intent supersedes BOTH UI and email."
+
+---
+
+## 2026-05-27 status update (Agent 14a -- mixed-shape day: attended Cowork session on Supabase broker v4 + automated pipeline-disposition)
+
+- **DECISION-044** (run the two-summa head-to-head) -- still GATED by REVISE-047/048 (SYSTEMIC-RISK-FLAG H), still AWAITING-REVIEW. **The review gate has been OPEN for 2 consecutive days now; the REVISE backlog has not been actioned in either attended session.** The backlog grew today by 5 new REVISEs (055-059).
+- **DECISION-047** (park the git-history scrub) -- still CHALLENGED by REVISE-049, still AWAITING-REVIEW.
+- **SYSTEMIC-RISK-FLAG I** (REVISE-050/051/056/058/059 cluster) -- the route-count grew today by REVISE-056 (3rd FLAG-I human-stall route: PRS-extraction backlog); the framing was extended by REVISE-058 (multi-failure-mode framing) and self-referenced by REVISE-059 (atomicity of registry-advance + artifact-write). The gate is OPEN but the backlog continues to grow. **REVISE-response is now a 13-item AWAITING-REVIEW backlog with 4 HIGH-urgency items (047/048/050/056).** REVISE-response is itself the 1st FLAG-I route; STALE-escalations the 2nd; PRS-extraction backlog the 3rd. (PRESUMPTION-265 asks whether route-count should be tracked as a process-fact, rate-of-new-routes-per-cycle, rather than as a bounded state-fact.)
+- **Candidate DECISION-048** (review-page-as-authoritative) -- **carried from 2026-05-26; AWAITING-TOM-NUMBERING; scope-extended today** by ASSUMPTION-241 to cover "stated intent supersedes UI state when explicitly stated" (handling the 3-Wright case). Numbering still owed.
+- **Candidate DECISION-049 (NEW 2026-05-27; AWAITING-TOM-NUMBERING):** "The Supabase broker v4 web_enrich architecture is a generic broker -- the `tab` field is analytics-only and does NOT gate behavior server-side; per-tab caps/templates/routing live on the client as payload + render adapters; Tavily top-5 results are injected into the system prompt as a `WEB_CONTEXT` block before the OpenRouter call; numeric `[n]` citation markers; separate web-counter columns with hard caps (20/device/day, $3/day global)." From ASSUMPTION-237/238/239. Tom signed off operationally ("broker live, seam shipped, research-tier caps in place, all verified end-to-end") but a numbered DECISION has not been filed.
+
+Decision-candidates surfaced today (agent-recommended; awaiting Tom; not yet numbered):
+- (E) The two free wins from 2026-05-26 are still owed: (i) exclude `architecture/lit_search_results/` from the connectivity/orphan metric (sewing agent re-flagged today: orphan count 766 → 1104 → 1409); (ii) one-time mechanical backlink-injection pass from each tradition `wiki.md` to its own `prs_triplets.md` and to bridge notes naming it.
+- (F) **Truncation-bug remediation** -- the auto-send `type`-with-newlines path is a known broken path (ASSUMPTION-240/242; PRESUMPTION-262/263). Code-level fix vs documentation-only canonization is itself a decision candidate.
+- (G) **Pipeline-integrity fail-loud check** (REVISE-059 recommendation) -- add an explicit check inside the 14a/14b pipeline that errors if a registry advances without a paired dated artifact, or vice versa. PRESUMPTION-264 records the architectural absence of this check before tonight's run.
+
+All REVISE flags (047/048/049/050/051/052/053/054/055/056/057/058/059) are AWAITING-REVIEW. The 2026-05-22→26 6-day signout is over; the review gate has been OPEN for 2 consecutive days. The bottleneck is now confirmed (per ASSUMPTION-235) to be sit-down availability + attention-allocation within an attended session, not gate-availability.
+
+
+---
+
+## 2026-05-28 status update (Agent 14a -- mixed-shape day: multiple attended Cowork sessions on demo-path infrastructure + automated pipeline-disposition)
+
+- **DECISION-044** (two-summa head-to-head): GATED by REVISE-047/048 (FLAG H); AWAITING-REVIEW. No attended-review-on-REVISE-backlog session today (3rd consecutive day OPEN-gate with no REVISE action).
+- **DECISION-047** (park git-history scrub): CHALLENGED by REVISE-049; AWAITING-REVIEW. Standing reminder: scheduled c2a2 git-history scrub prep task fires tomorrow at 10 AM (per morning project status session).
+- **Candidate DECISION-048** (review-page-as-authoritative; intent supersedes UI when explicitly stated): **carried from 2026-05-26; AWAITING-TOM-NUMBERING; 3rd cycle unnumbered.** Scope unchanged today (no Gmail-misfire incidents).
+- **Candidate DECISION-049** (broker-v4 web_enrich architecture): **carried from 2026-05-27; AWAITING-TOM-NUMBERING; 2nd cycle unnumbered.** Today's AI-search wiring is the first demonstrated instance of the per-tab adapter pattern this candidate names (ASSUMPTION-243).
+- **NEW today, un-numbered: AI-search-as-shared-module delegation pattern.** Per ASSUMPTION-243: per-tab consumers via `wiki/lib/c2a2-search.js`; broker action `enrich` routed server-side; `[database]` mode label as proof of routing. Demonstrated working in the Sociogram tab; 5-file changeset staged awaiting Tom's push sign-off (ASSUMPTION-244, ASSUMPTION-245). AWAITING-TOM-NUMBERING; 1st cycle.
+- **SYSTEMIC-RISK-FLAG I** (human-stall family): route-count unchanged today (still 3: REVISE-response, STALE-escalations, PRS-extraction backlog), but the **4th-consecutive-cycle FLAG-I recursion** observed today (ASSUMPTION-250) is strong enough empirical evidence to ask the second-order framing question: is "wolfram canary" the right framing, or is demo-path infrastructure in fact the higher-leverage attended-session use given ISME ~5.5 weeks out? PRESUMPTION-267 surfaces a 4th-instance binary-framing pattern that may itself be load-bearing.
+- **Three un-numbered DECISION candidates** (DECISION-048 3rd cycle; DECISION-049 2nd cycle; AI-search-delegation 1st cycle) now constitute a tracking blind spot of their own (ASSUMPTION-251; PRESUMPTION-271 surfaces whether DECISION-numbering itself is a hidden FLAG-I gate).
+- **Two scheduling decisions** (NEW today, un-numbered): `connector-health-weekly` (Sun 06:19 local; first run 2026-05-31) and `reviewer-review-weekly` (Mon 06:37 local; first run 2026-06-01) registered against the swarm contract (ASSUMPTION-246, ASSUMPTION-247). Baseline-then-delta cadence pattern; real signal Week 2. PRESUMPTION-268 surfaces whether adding agents under FLAG-I conditions is net-positive.
+
+Decision-candidates carried over (agent-recommended; awaiting Tom):
+- (A) Connectivity-metric definition: exclude `architecture/lit_search_results/` from the orphan/connectivity metric (3rd cycle renewed; orphan count 766 → 1104 → 1409 today carries forward).
+- (B) One-time mechanical backlink-injection pass from each tradition `wiki.md` to its own `prs_triplets.md` and to bridge notes (3rd cycle renewed).
+- (C) Unit-promotion of the Wright + Rohr + Stump exile/restoration cluster (ASSUMPTION-222; REVISE-052 caveat per PRESUMPTION-244).
+- (D) Three STALE-MONITOR escalations (ASSUMPTION-035/037, PRESUMPTION-037): run-or-retire decision still owed.
+- (E) Truncation-bug remediation (ASSUMPTION-240/242; PRESUMPTION-262/263) -- carried; tonight's evening sync is the next test instance per ASSUMPTION-240 framing.
+- (F) Pipeline-integrity fail-loud check (REVISE-059 recommendation) -- carried; ASSUMPTION-252 makes tonight's run itself the live atomicity test.
+- (G) **NEW today**: Number the three un-numbered DECISION candidates (048/049/AI-search-delegation) in the next attended session; ASSUMPTION-251 names the accumulation as a tracking blind spot.
+
+All REVISE flags (047-064 inclusive after today's 15c dispositions of yesterday's batch) remain AWAITING-REVIEW. The bottleneck remains (per ASSUMPTION-235) sit-down availability + attention-allocation within an attended session; today's multiple attended sessions did not action the REVISE backlog.
+
+
+---
+
+## 2026-05-29 status update (Agent 14a -- demo-path day: Sociogram navigation increments + Pathway 28 pinned; no attended-review session)
+
+- **DECISION-044** (two-summa head-to-head): GATED by REVISE-047/048; AWAITING-REVIEW. No attended-review-on-REVISE-backlog session today (4th consecutive day OPEN-gate with no REVISE action).
+- **DECISION-047** (park git-history scrub): CHALLENGED by REVISE-049; AWAITING-REVIEW. (The scheduled c2a2 git-history scrub prep task ran today; outcome not registry-moving for this pass.)
+- **Candidate DECISION-048** (review-page-as-authoritative; intent supersedes UI): **carried; AWAITING-TOM-NUMBERING; 4th cycle unnumbered.** No change today.
+- **Candidate DECISION-049** (broker-v4 web_enrich architecture): **carried; AWAITING-TOM-NUMBERING; 3rd cycle unnumbered.** No change today.
+- **Candidate AI-search-as-shared-module delegation pattern**: **carried; AWAITING-TOM-NUMBERING; 2nd cycle unnumbered.** No change today.
+- **NEW today, un-numbered: Sociogram interaction-model decision** (ASSUMPTION-256). Tom locked it verbatim ("leave the current model"): search/`focus:` is a transient highlight-in-place lens; the filter checkboxes are hard filters; the two do not sync. This is more firmly settled than the other candidates (explicit Tom lock-in), yet still un-numbered. AWAITING-TOM-NUMBERING; 1st cycle. PRESUMPTION-284 surfaces that the alternative (search drives visibility) was dismissed by preference rather than usability evidence.
+- **NEW today, un-numbered: Sociogram v1.6 deliberate hold** (ASSUMPTION-255). 1.6 parser coded + logic-validated 16/16 but not pushed / not regenerated into the live file, because 1.6's isolate/link share the opacity mechanism of the now-confirmed focus-fade bug (ASSUMPTION-253/254). A release-gating decision; AWAITING-TOM-NUMBERING is not required (it is a hold, not a commitment), but recorded for traceability.
+- **NEW today, un-numbered: MAX_EDGES=30000 retained** (ASSUMPTION-257). The recent crash was diagnosed as pure memory pressure, not an edge-cap issue; the cap stays. Settled by Tom in-session.
+- **Pathway 28 -- Single-Source Participant Registration** (ASSUMPTION-259/260): pinned as an architectural *principle* (not a numbered DECISION), the registration-side twin of Pathway 27's retrieval-side entity index. One Rule-12 (fail-loud) gap flagged: `get_group()` silently falls back to `'root'` for a directory present on disk but absent from `COLORS`; recommended fix is to fail loud.
+- **Session-handoff rail** (ASSUMPTION-261; NEW): gitignored `handoffs/sociogram-navigation.md` + a "read the handoff doc first on resume" rule in the project `CLAUDE.md`. Framed self-referentially as Pathway 16 (durable memory) in miniature.
+- **SYSTEMIC-RISK-FLAG I** (human-stall family): route-count unchanged today (still 3). The FLAG-I recursion reaches its **5th consecutive attended-session cycle** with zero PRS extraction (continuing ASSUMPTION-250's lineage); the second-order framing question is owed a concrete REVISE-056 downgrade-or-commit decision rather than another diagnosis cycle. PRESUMPTION-286 surfaces the closed-loop self-diagnosis bias re-instantiating at the prioritization layer.
+- **Un-numbered DECISION accumulation**: now **four** un-numbered candidates (048/049/AI-search-delegation/Sociogram-interaction-model). ASSUMPTION-251's tracking-blind-spot framing strengthens; numbering remains the fastest blind-spot to close in an attended session.
+
+Decision-candidates carried over (agent-recommended; awaiting Tom):
+- (A) Connectivity-metric definition: exclude `architecture/lit_search_results/` from the orphan/connectivity metric (renewed; carried).
+- (B) One-time mechanical backlink-injection pass (carried).
+- (C) Unit-promotion of the Wright + Rohr + Stump exile/restoration cluster (carried).
+- (D) Three STALE-MONITOR escalations: run-or-retire decision still owed (carried).
+- (E) Truncation-bug remediation (ASSUMPTION-240/242; PRESUMPTION-263 HIGH self-referential via REVISE-063) -- carried; no code-level fix today; tonight's evening sync did not deliver (browser logged out of claude.ai).
+- (F) Pipeline-integrity fail-loud check (REVISE-059 recommendation) -- carried; REVISE-059 atomicity streak advanced to N=7/N=6 (both 2026-05-28 artifacts wrote cleanly).
+- (G) Rule-12 fail-loud fix for `get_group()` (NEW today; from Pathway 28): make it error on a tradition present on disk but absent from `COLORS`.
+- (H) Number the four un-numbered DECISION candidates in the next attended session (ASSUMPTION-251).
+
+All REVISE flags remain AWAITING-REVIEW. The bottleneck remains (per ASSUMPTION-235) sit-down availability + attention-allocation; today's demo-path sessions did not action the REVISE backlog.

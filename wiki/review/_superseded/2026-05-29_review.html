@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C2A2 Wiki Review — 2026-05-29</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f2ed;color:#222;height:100vh;display:flex;flex-direction:column}
+  #topbar{background:#1a1a2e;color:#fff;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+  #topbar h1{font-size:15px;font-weight:700;letter-spacing:.03em}
+  #topbar .meta{font-size:12px;opacity:.7}
+  #main{display:flex;flex:1;overflow:hidden}
+  #sidebar{width:300px;flex-shrink:0;overflow-y:auto;background:#f9f7f2;border-right:1px solid #ddd}
+  #sidebar-header{padding:10px 14px;background:#f0ede5;border-bottom:1px solid #ddd;font-size:11px;font-weight:700;color:#888;letter-spacing:.06em}
+  #content{flex:1;overflow-y:auto;padding:20px}
+  .prop-card{background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.08);margin-bottom:20px;overflow:hidden}
+  .sidebar-item:hover{background:#f0ede5!important}
+  .sidebar-item.active{background:#e8e4d8!important}
+  #bottombar{background:#fff;border-top:1px solid #ddd;padding:12px 20px;display:flex;align-items:center;gap:14px;flex-shrink:0}
+  #progress{font-size:13px;color:#666}
+  #submit-btn{background:#1a1a2e;color:#fff;border:none;padding:10px 24px;border-radius:6px;cursor:pointer;font-weight:700;font-size:14px;margin-left:auto}
+  #submit-btn:hover{background:#2a2a4e}
+  #all-done{color:#1a6b3c;font-weight:700;display:none}
+</style>
+</head>
+<body>
+<div id="topbar">
+  <h1>C2A2 Wiki — Daily Proposal Review</h1>
+  <div class="meta">2026-05-29 &nbsp;·&nbsp; 8 proposals pending</div>
+</div>
+<div id="main">
+  <div id="sidebar">
+    <div id="sidebar-header">PROPOSALS — 2026-05-29</div>
+    
+    <div class="sidebar-item" id="item-PROP-2026-05-27-006" onclick="showCard('PROP-2026-05-27-006')"
+      style="padding:10px 14px;border-left:3px solid #1a3a6a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#1a3a6a;letter-spacing:.04em">NIMA ARKANI-HAMED</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Which Functions Admit a Positive Geometry? From Branch Cuts …</div>
+      <div style="font-size:10px;color:#999">PAPER · 2026-03-31</div>
+      <div id="badge-PROP-2026-05-27-006" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-05-27-005" onclick="showCard('PROP-2026-05-27-005')"
+      style="padding:10px 14px;border-left:3px solid #7a1a1a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#7a1a1a;letter-spacing:.04em">SEAN CARROLL</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Mindscape 355 | Solo: Looking Quantum Mechanics in the Eyeba…</div>
+      <div style="font-size:10px;color:#999">PODCAST · 2026-05-25</div>
+      <div id="badge-PROP-2026-05-27-005" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-05-27-004" onclick="showCard('PROP-2026-05-27-004')"
+      style="padding:10px 14px;border-left:3px solid #0a5a6a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#0a5a6a;letter-spacing:.04em">BERNARDO KASTRUP</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Archetypes, Daimons and the Western Mind — Patrick Harpur & …</div>
+      <div style="font-size:10px;color:#999">INTERVIEW · 2026-05-26</div>
+      <div id="badge-PROP-2026-05-27-004" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-05-27-003" onclick="showCard('PROP-2026-05-27-003')"
+      style="padding:10px 14px;border-left:3px solid #0a5a6a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#0a5a6a;letter-spacing:.04em">BERNARDO KASTRUP</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">The Limits of Understanding & Experience — Rupert Spira & Be…</div>
+      <div style="font-size:10px;color:#999">INTERVIEW · 2026-05-13</div>
+      <div id="badge-PROP-2026-05-27-003" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-05-27-002" onclick="showCard('PROP-2026-05-27-002')"
+      style="padding:10px 14px;border-left:3px solid #3a3a6a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#3a3a6a;letter-spacing:.04em">IAIN MCGILCHRIST</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">The Good, The Beautiful and The True — Sheldonian Theatre, O…</div>
+      <div style="font-size:10px;color:#999">TALK · 2026-05-02</div>
+      <div id="badge-PROP-2026-05-27-002" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-05-27-001" onclick="showCard('PROP-2026-05-27-001')"
+      style="padding:10px 14px;border-left:3px solid #3a3a6a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#3a3a6a;letter-spacing:.04em">IAIN MCGILCHRIST</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">The value of value</div>
+      <div style="font-size:10px;color:#999">BLOG · 2026-04-08</div>
+      <div id="badge-PROP-2026-05-27-001" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-05-28-001" onclick="showCard('PROP-2026-05-28-001')"
+      style="padding:10px 14px;border-left:3px solid #a0306a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#a0306a;letter-spacing:.04em">BARBARA FREDRICKSON</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">High-quality listening behaviors linked to social connection…</div>
+      <div style="font-size:10px;color:#999">PAPER · 2025-11-21</div>
+      <div id="badge-PROP-2026-05-28-001" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-05-29-001" onclick="showCard('PROP-2026-05-29-001')"
+      style="padding:10px 14px;border-left:3px solid #7a1a1a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#7a1a1a;letter-spacing:.04em">SEAN CARROLL</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Mindscape 354 | Christian List on Free Will and Levels of Re…</div>
+      <div style="font-size:10px;color:#999">PODCAST · 2026-05-18</div>
+      <div id="badge-PROP-2026-05-29-001" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+  </div>
+  <div id="content">
+    <div id="welcome" style="color:#888;font-size:14px;padding:40px 20px;text-align:center;line-height:2">
+      <div style="font-size:32px;margin-bottom:12px">📬</div>
+      <strong>8 new proposals</strong> from the C2A2 hunt agents.<br>
+      Click any item on the left to review it.<br>
+      Use the buttons to Approve, Double-check, Change, or Deny each one.<br>
+      When done, hit <strong>Send Decisions</strong> below.
+    </div>
+    
+    <div class="prop-card" id="card-PROP-2026-05-27-006" style="display:none">
+      <div style="background:#1a3a6a18;border-left:4px solid #1a3a6a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#1a3a6a;letter-spacing:.05em">NIMA ARKANI-HAMED · PAPER · 2026-03-31</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Which Functions Admit a Positive Geometry? From Branch Cuts to String Amplitudes</div>
+        <a href="https://arxiv.org/pdf/2603.28543" target="_blank" style="font-size:11px;color:#1a3a6a;opacity:.8">https://arxiv.org/pdf/2603.28543</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Co-authored paper extending the positive-geometry program from polytope-like canonical
+forms toward functions with non-trivial branch-cut structure — the analytic features that
+characterize string amplitudes and other physically realistic S-matrix objects. The paper
+asks the inverse question: rather than starting from a geometry and reading off a function,
+which classes of physical functions are even candidates for a positive-geometry origin?</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is the kind of move that determines whether the positive-geometry program scales from
+toy models (amplituhedron, associahedron) to the actual analytic structures of real-world
+QFT and string theory. If branch-cut-bearing functions admit positive geometries, the
+program's claim to be a candidate for "post-spacetime physics" becomes substantially
+sharper; if they don't, the program is bounded. Either resolution is high-value.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #1a3a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Whether positive geometry, as a candidate framework beyond spacetime/locality, can capture analytic structures (branch cuts) that physical amplitudes actually have.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Criteria for "admissibility" — a precise mathematical characterization of which functions can be expressed as canonical forms of a positive geometry.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A classification programme that lets practitioners check, for any candidate physical amplitude, whether a positive-geometry origin is in principle available.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Paper title and arXiv abstract framing the question as branch-cut → string-amplitude scope-extension.</div>
+        </div>
+        <div style="border-left:3px solid #1a3a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The amplituhedron program has been criticized as restricted to planar N=4 SYM — a beautiful but possibly idiosyncratic theory.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Extending the admissibility analysis to string amplitudes (which have richer analytic structure than rational planar N=4 amplitudes).</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A bridge between the amplituhedron-style positive-geometry program and the broader S-matrix bootstrap / string-amplitude community.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Paper subtitle explicitly couples "branch cuts" to "string amplitudes."</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Wolfram:** Both Arkani-Hamed and Wolfram take spacetime to be derived from a more
+  fundamental combinatorial/computational substrate. The positive-geometry route and the
+  ruliad/hypergraph route are competing answers to the same family of questions about
+  emergence of locality. Branch-cut-handling is a discriminating test case.
+- **Carroll:** Carroll's Mad-Dog Everett (this same proposal batch, PROP-2026-05-27-005)
+  takes Hilbert-space dynamics as fundamental. Positive geometry, by contrast, takes
+  combinatorial geometry as fundamental and derives even Hilbert-space-like objects. The
+  pair sets up a clean three-way contrast (Carroll / Arkani-Hamed / Wolfram) on what
+  "fundamental" means.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-27-006','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-27-006','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-27-006')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-27-006','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-27-006" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-05-27-005" style="display:none">
+      <div style="background:#7a1a1a18;border-left:4px solid #7a1a1a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#7a1a1a;letter-spacing:.05em">SEAN CARROLL · PODCAST · 2026-05-25</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Mindscape 355 | Solo: Looking Quantum Mechanics in the Eyeball</div>
+        <a href="https://www.preposterousuniverse.com/podcast/2026/05/25/355-solo-looking-quantum-mechanics-in-the-eyeball/" target="_blank" style="font-size:11px;color:#7a1a1a;opacity:.8">https://www.preposterousuniverse.com/podcast/2026/05/25/355-solo-looking-quantum…</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Carroll's solo episode lays out what he calls "Mad Dog Everettianism" — a maximally austere
+formulation of quantum mechanics where the only ontology is the universal wavefunction and
+the Schrödinger equation. He argues this minimalism, rather than being a limitation, is its
+explanatory virtue: branching, classicality, and the appearance of measurement all emerge
+without additional postulates. He defends the view against operational and Bohmian rivals.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">Carroll has been building a multi-year argument that poetic naturalism + Many-Worlds is the
+cleanest naturalist ontology. This is his most concentrated solo statement of the position
+since the 2019 *Something Deeply Hidden* arc, sharpened by responses to recent operational
+quantum foundations debates. It establishes a clear "minimalist realist" pole that other
+program agents (Hoffman's interface-theoretic, Kastrup's idealist, Arkani-Hamed's post-
+spacetime) will read against.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #7a1a1a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> What is the most parsimonious ontology consistent with the empirical success of quantum mechanics?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> "Mad Dog Everett" — wavefunction + Schrödinger equation as the only fundamental ingredients.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Branches, classicality, and measurement statistics are emergent derivations, not added structure.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Carroll's own framing of the episode as "super austere, bare-bones quantum mechanical theory."</div>
+        </div>
+        <div style="border-left:3px solid #7a1a1a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> How to distinguish a "naive observer" reading of measurement from a derivation of classicality from quantum dynamics alone.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Decoherence + branch-counting / self-locating-uncertainty arguments inside pure Schrödinger evolution.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Observers are subsystems whose classical-looking experience is a consequence of decoherence in a unitary global state — no collapse, no hidden variables required.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Solo episode treatment in the standard Carroll Everettian style.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Hoffman:** Carroll's "observers are decohered subsystems" stands in sharp tension with Hoffman's "observers are fundamental conscious agents and spacetime is the user interface." Worth flagging to the pattern detector as a paradigm-level disagreement about what kind of thing an observer is.
+- **Arkani-Hamed:** Both Carroll and Arkani-Hamed take spacetime/observers to be derived rather than fundamental, but from different directions (decoherence in Hilbert space vs. positive geometry beyond spacetime). Possible explanatory-bridge candidate.
+- **Kastrup:** Direct ontological opposition — Mad Dog Everett (physicalist wavefunction monism) vs. analytic idealism (mental monism). Useful as a clean negative bridge for inter-tradition dialogue.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-27-005','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-27-005','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-27-005')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-27-005','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-27-005" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-05-27-004" style="display:none">
+      <div style="background:#0a5a6a18;border-left:4px solid #0a5a6a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#0a5a6a;letter-spacing:.05em">BERNARDO KASTRUP · INTERVIEW · 2026-05-26</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Archetypes, Daimons and the Western Mind — Patrick Harpur & Bernardo Kastrup</div>
+        <a href="https://www.withrealityinmind.com/recording-patrick-harpur-bernardo-kastrup/" target="_blank" style="font-size:11px;color:#0a5a6a;opacity:.8">https://www.withrealityinmind.com/recording-patrick-harpur-bernardo-kastrup/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">A second dialogue between Kastrup and writer Patrick Harpur (author of *Daimonic Reality*) on the "With Reality in Mind" platform, May 26, 2026, focused on archetypes, daimons, and the Western mind. The first Harpur-Kastrup conversation (April 14, 2026) debated Kastrup's "cockpit" / dashboard metaphor for perception — Harpur arguing it was too restrictive, and the two discussing how poetry causes "the soul of things to shine through them." This second exchange takes the conversation deeper into the archetypal register: how daimons mediate between the human and the beyond, how to discern daimon from compulsion or addiction, and what the West has done to its capacity to recognize daimonic reality. The dialogue extends Kastrup's Daimon-and-Soul-of-the-West argument (PRS-08) by putting it in conversation with a tradition (Harpur's depth-psychological / Romantic / hermetic lineage) that has held the daimonic concept continuously through modernity.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">PRS-08 in the Kastrup wiki captures the Daimon-as-principle-of-individuation claim from Kastrup's 2025 book, but the book's reception inside the C2A2 cluster has been mostly internal — Kastrup defending the claim, with no sustained encounter with a non-analytic tradition that holds parallel concepts. The Harpur dialogues are that encounter. The April 14 exchange already produced a pressure point on the dashboard metaphor (echoed in McGilchrist PRS-13 on representation vs. participation); the May 26 exchange takes the daimonic concept itself as the explicit topic, with a partner who holds the concept from a different lineage. The discernment question ("how to discern daimon from addiction") is directly relevant to C2A2 governance — it is the same shape of question as "how to discern a mature tradition-member from a simulator of one."</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #0a5a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Kastrup's Daimon claim (PRS-08) has been received primarily inside the analytic-idealist framing — leaving open whether the concept survives encounter with the older Western traditions (Romantic, hermetic, depth-psychological) that have held something like it continuously, and whether those traditions identify aspects of the daimon that analytic idealism has missed</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> A second long-form Harpur-Kastrup dialogue focused explicitly on archetypes, daimons, and the Western mind — with Harpur drawing on a non-analytic Western lineage and Kastrup on analytic idealism, with the daimonic concept itself as the explicit topic rather than an example</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A sharpened daimon-account that is no longer purely Kastrup-internal — identifying which aspects of the daimon survive across the two registers (analytic-idealist and depth-psychological/Romantic) and which aspects belong to one register only; strengthens PRS-08 by giving it external philosophical warrant from a non-analytic tradition</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: This is the second Harpur-Kastrup exchange in six weeks, and the published framing names archetypes, daimons, and the Western mind as the explicit topics; the first dialogue already produced substantive disagreement on the dashboard metaphor, so a second exchange in the same series is unlikely to be ceremonial</div>
+        </div>
+        <div style="border-left:3px solid #0a5a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The C2A2 architecture must somehow handle discernment — how does one distinguish a mature tradition-member from a simulator, a genuine cross-tradition insight from a generated one, a daimonic call from a compulsion? The question has been posed but the wiki has no canonical resource for it</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> The Harpur-Kastrup discernment exchange (daimon vs. addiction) as a worked example of how a tradition treats discernment internally — a public conversation between a depth-psychological practitioner and an analytic idealist on exactly how the discrimination is made, in the case of a phenomenon (the daimonic call) that has analogues in many traditions</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A C2A2 design pattern for discernment workflows — drawing on the daimon-vs-addiction discrimination as a model for how a tradition-accelerator handles cases where surface phenomena are ambiguous between authentic and simulated/compulsive; usable for AI-agent membership decisions</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The first Harpur dialogue (April 14) is documented as having addressed "how to discern daimon from addiction" explicitly; the second exchange continues the series and is positioned to deepen rather than restart the discernment question</div>
+        </div>
+        <div style="border-left:3px solid #0a5a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 3 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Analytic idealism risks appearing as a *modern* metaphysics — distinguished from physicalism but not clearly distinguished from premodern animism or hermeticism — leaving open whether Kastrup's program is recovering Western traditions that already held something like analytic idealism, or proposing something genuinely new</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> A two-dialogue series with Harpur, a writer working within the depth-psychological / Romantic / hermetic Western lineage, in which Kastrup is asked to position analytic idealism relative to that lineage — not as an interlocutor's incidental question, but as the explicit subject across two long exchanges</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A clearer genealogy for analytic idealism — locating it as both a *recovery* of premodern Western insights and a *clarification* of them within contemporary philosophy of mind; gives C2A2 a finer-grained way to position Kastrup relative to other consciousness-as-fundamental positions (Hoffman = mathematical / interface; McGilchrist = neurobiological / hemispheric; Kastrup = analytic + Romantic recovery)</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Kastrup's 2025 book *The Daimon and the Soul of the West* is the trajectory-marker for this move; the Harpur dialogues are where the move gets tested against a representative of the lineage being recovered</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Stump**: The discernment-of-daimons / discernment-of-vocation question has a direct analogue in Stump's Thomistic treatment of vocation and the discernment of spirits. Strong cross-tradition flag — Aquinas's framework for vocation-discernment is one of the most developed in the Western tradition and would be a natural third voice in the discernment thread.
+- **McGilchrist** (close collaborator): Harpur's challenge to the dashboard metaphor (April 14, 2026) tracks the same challenge McGilchrist made (PRS-13, 2026-04-07). The Kastrup wiki should treat both as concurrent pressure on the same metaphor — a paradigm shift candidate within idealism.
+- **Hoffman** (interface theory): Hoffman's interface is the formalized cousin of Kastrup's dashboard; if both are under pressure from the participatory/daimonic counter-move, that pressure should be visible at the cluster level. Flag for the Master agent.
+- **Levin**: Levin's collective-intelligence agents and Harpur's daimonic agencies share a structural feature — non-human, partially-autonomous agents acting in concert with or contrary to a host. Whether the daimon-as-agent concept can be ported into the Levin/Friston substrate-independent agent framework is an open and potentially fruitful cross-cluster question.
+- **C2A2 AI-membership**: The discernment workflow is directly C2A2-relevant — flag strongly for the Master agent and Pattern Detector. Possible C2A2 paradigm-shift candidate: discernment-of-traditions as the structurally same problem as discernment-of-daimons-from-addictions.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-27-004','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-27-004','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-27-004')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-27-004','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-27-004" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-05-27-003" style="display:none">
+      <div style="background:#0a5a6a18;border-left:4px solid #0a5a6a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#0a5a6a;letter-spacing:.05em">BERNARDO KASTRUP · INTERVIEW · 2026-05-13</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">The Limits of Understanding & Experience — Rupert Spira & Bernardo Kastrup in conversation</div>
+        <a href="https://www.withrealityinmind.com/13th-may-rupert-spira-bernardo-kastrup/" target="_blank" style="font-size:11px;color:#0a5a6a;opacity:.8">https://www.withrealityinmind.com/13th-may-rupert-spira-bernardo-kastrup/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">A long-form dialogue between Kastrup and non-dual teacher Rupert Spira hosted on Kastrup's "With Reality in Mind" platform, May 13, 2026. The framing question — "Can we discard the intellect when we get the experience?" — explicitly stages analytic-philosophical knowing (Kastrup's home register) against contemplative-experiential awakening (Spira's home register), and asks what each is for once the other is available. The conversation extends Kastrup's months-long sequence of paired dialogues that has already produced the McGilchrist exchanges (PRS-09, PRS-11, PRS-13) and the Levin dialogue (PRS-14–PRS-16); this one pairs idealism with non-dual contemplative practice for the first time in the recent series.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">Kastrup's program has been comparatively under-developed on the question of *what understanding is good for, once consciousness is acknowledged as primary*. The Koch dialogue (PRS-10) addressed the empirical bridge to IIT; the Harpur and Levin dialogues addressed the daimon and continuous-nesting respectively. The Spira dialogue is the program's most direct engagement with the position that understanding itself may be soteriologically secondary — a position that resonates with McGilchrist's right-hemisphere primacy (PRS-01, PRS-13 in the McGilchrist wiki). Whether Kastrup concedes any soteriological role to non-conceptual awareness, or holds that analytic understanding is itself the route, is load-bearing for how analytic idealism positions itself relative to contemplative traditions — and relative to C2A2's question of whether AI agents (which can hold the analytic apparatus but have no candidate for non-conceptual awareness) can be mature tradition-members.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #0a5a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Analytic idealism has been articulated as a philosophical theory of consciousness without an explicit position on the soteriological status of analytic understanding itself — leaving open whether Kastrup holds that understanding leads to liberation, accompanies it, or is secondary to direct contemplative awareness</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> The Spira dialogue's explicit question "Can we discard the intellect when we get the experience?" — staged as a structured exchange between an analytic-philosophical idealist (Kastrup) and a non-dual contemplative teacher (Spira) who has converged on similar conclusions from a different starting point</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A sharpened statement of analytic idealism's soteriological commitments — clarifying whether the program is (a) primarily an intellectual cure for physicalism, (b) a propaedeutic for contemplative recognition, or (c) something else — directly relevant to C2A2's question of what AI agents can and cannot do within a tradition that has a contemplative dimension</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The dialogue's published framing names the limits-of-understanding question explicitly; this is the first time in Kastrup's recent dialogue sequence that the question has been put to him by a contemplative-tradition interlocutor rather than by a scientist (Koch), a hemispheric theorist (McGilchrist), or a biologist (Levin)</div>
+        </div>
+        <div style="border-left:3px solid #0a5a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Non-dual contemplative traditions and analytic idealism reach structurally similar conclusions (consciousness as fundamental, individual minds as derivative) from very different methods — and the network has not had a clean reference for how the two methods relate, and whether convergence at conclusions licenses any borrowing of resources between methods</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> The Spira-Kastrup dialogue as the canonical reference for analytic-idealist / non-dual convergence — Spira working from "the perspective of awareness" and Kastrup working from analytic philosophy of mind, with the dialogue explicitly addressing both the convergence and the methodological asymmetry</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A finer-grained cluster picture within the consciousness-as-fundamental cluster — non-dual contemplative (Spira), analytic idealist (Kastrup), and participatory realist (McGilchrist) as three distinct sub-positions sharing a fundamental-consciousness commitment but differing on method and on what each method is good for; extends the six-position taxonomy already noted in McGilchrist PRS-26</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The dialogue framing and the platform's prior characterization of the Kastrup-Spira series as "non-dual spirituality and analytical philosophy converging" suggests this is a long-running, structured comparison and not a one-off appearance</div>
+        </div>
+        <div style="border-left:3px solid #0a5a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 3 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> If consciousness is fundamental and intellectual understanding is at best secondary to direct recognition, what role can AI agents play in a tradition — given that an AI agent can hold the analytic apparatus but has no candidate for the non-conceptual awareness that the tradition treats as primary?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> The Spira dialogue's specific staging of the intellect/experience distinction — a distinction that maps directly onto Kastrup's existing skepticism about AI consciousness (left/right hemisphere parallel; representational/participatory; PRS-09)</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A direct C2A2-relevant claim: AI agents within a tradition whose epistemics include a contemplative dimension are limited in a different way than AI agents within a purely propositional tradition — they can scaffold and represent but cannot occupy the contemplative pole, and this is a *principled* limit, not an engineering one</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The framing question itself implies a contemplative pole that AI cannot occupy on any current architecture; whether Kastrup says so explicitly in the dialogue will be visible once a transcript is available</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **McGilchrist**: The intellect-vs-experience distinction in the Spira dialogue maps directly onto McGilchrist's left/right hemisphere distinction. Strong cross-tradition signal — flag for joint PRS update with McGilchrist's PRS-13 (participatory vs. representational) and PRS-25 (consciousness-as-fundamental commitment).
+- **Stump**: Spira's non-dual tradition is structurally different from Stump's Thomistic contemplative tradition, but both privilege direct knowing-by-acquaintance over discursive knowing. A three-way comparison (Spira / Stump / McGilchrist) on what non-discursive knowing is and is for would be valuable for the cluster.
+- **AI consciousness**: Direct C2A2-relevance signal — this dialogue is one of the cleanest available sources for the limits-of-AI-in-tradition question. Flag strongly for the Master agent and Pattern Detector.
+- **Hoffman**: Spira's non-dual position and Hoffman's conscious-realist interface theory share a "consciousness is the substance" thesis but diverge on whether to formalize. Worth flagging for cluster-level comparison.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-27-003','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-27-003','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-27-003')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-27-003','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-27-003" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-05-27-002" style="display:none">
+      <div style="background:#3a3a6a18;border-left:4px solid #3a3a6a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#3a3a6a;letter-spacing:.05em">IAIN MCGILCHRIST · TALK · 2026-05-02</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">The Good, The Beautiful and The True — Sheldonian Theatre, Oxford</div>
+        <a href="https://channelmcgilchrist.com/the-good-the-beautiful-and-the-true/" target="_blank" style="font-size:11px;color:#3a3a6a;opacity:.8">https://channelmcgilchrist.com/the-good-the-beautiful-and-the-true/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Two-day in-person event at the Sheldonian Theatre in Oxford on May 2–3, 2026 in which McGilchrist delivered two new long-form lectures — "The Value of Value" and "So How Do We Remake the World (Because We Can)?" — alongside guest speakers Martin Shaw (mythography), Angie Hobbs (ancient Greek philosophy), Jude Currivan (cosmology), and David Lorimer (Scientific and Medical Network). The central thesis: the good, the beautiful, and the true are not optional cultural preferences but are woven into the fabric of the cosmos. Recordings are issued to in-person and livestream ticket holders a few weeks after the event; public availability date is not yet established but the event itself has occurred.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is McGilchrist's first sustained institutional positioning of his program at the Sheldonian — the same venue that hosts the Boyle Lectures — and it is co-authored with named guest speakers from theology, classics, cosmology, and the Scientific and Medical Network. That stages McGilchrist's program as an inter-tradition assembly in its own right, not just as a single-author thesis. The two new lectures are direct successors to "The value of value" Substack essay (PROP-2026-05-27-001) and the second lecture ("So How Do We Remake the World") is, on the available description, the program's most explicit attempt at a *prescriptive* outcome — the move from diagnosis (Master and Emissary, Matter With Things) to active reconstruction.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #3a3a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> McGilchrist's program has been received primarily as cultural diagnosis (we are in a left-hemisphere world; here is how it went wrong); the constructive side ("what do we do") has been comparatively underspecified, leaving the program open to the charge that it is a diagnosis without a treatment plan</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> A dedicated lecture, "So How Do We Remake the World (Because We Can)?", framed as the second of the two-day Sheldonian event — explicitly prescriptive in framing, paired with multi-disciplinary respondents from theology, philosophy, cosmology, and integrative science</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> An institutional upgrade of hemispheric theory from diagnostic critique to a constructive program with named action-targets — relevant for C2A2 as a worked example of how a tradition steps from "we should rebalance" to "here is what rebalancing looks like in practice", which the tradition-accelerator must itself eventually do</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The event's published framing names two distinct lectures, the first analytical ("Value of Value") and the second prescriptive ("So How Do We Remake the World"); the recording is forthcoming so the exact prescriptive content is not yet auditable</div>
+        </div>
+        <div style="border-left:3px solid #3a3a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> McGilchrist's claim that the good, the beautiful, and the true are constitutive of the cosmos has been received mostly within the science-and-religion field; whether it engages classical philosophy and cosmology on their own terms has been less clear</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> The event roster — Angie Hobbs (ancient Greek philosophy / virtue ethics) and Jude Currivan (cosmologist; whole-world physics) appearing as named co-presenters rather than respondents — providing first-time cross-domain co-authorship of McGilchrist's value claim</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Cross-tradition triangulation evidence for the value-as-constitutive claim: the same thesis is now stated by McGilchrist (neuroscience/philosophy of mind), Hobbs (Aristotelian virtue tradition), and Currivan (post-materialist physics) in a shared institutional venue — strengthening the claim by showing it is not parochial to one discipline</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The event description names the four guest speakers as presenters, not respondents, and frames their contributions as substantive elaborations of McGilchrist's central thesis from each speaker's domain</div>
+        </div>
+        <div style="border-left:3px solid #3a3a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 3 — <span style="background:#7a1a1a;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Speculative</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> A tradition-accelerator like C2A2 must eventually move from mapping mature traditions to *staging* them — bringing them into the same room — and the question of what such a staging looks like in practice is open</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> The Sheldonian event as a worked example of single-thinker-centered cross-tradition staging: one host (McGilchrist), four named guest speakers from four distinct domains, two days, panel + Q&A — a format that C2A2's "second-first-language" pedagogy could draw on</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A format template for C2A2 tradition-encounter events — single-host, multi-domain-guest, paired diagnostic-and-prescriptive lectures, with recordings issued as a deliverable — adaptable to virtual format for the AI-agent variant</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The format itself is novel within McGilchrist's program (his previous public work has been mostly solo lectures or two-thinker dialogues); whether the format yields cross-domain integration or remains a curated set of parallel monologues will be answerable once the recordings are public</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Stump**: Hobbs on the floor with McGilchrist invites a direct comparison of Aristotelian virtue tradition (Stump's lineage) and McGilchrist's hemispheric framing — particularly on whether right-hemisphere attention names the same capacity that Aristotle calls *phronesis*. Flag for cross-reference once Hobbs's contribution is available.
+- **Currivan / Wolfram / Carroll**: Currivan as named cosmologist on the value claim is a direct echo of CROSS signals around physics-side participants in the consciousness-as-fundamental cluster. Worth flagging whether her contribution intersects with or diverges from Wolfram's observer-dependent ruliad path or Carroll's poetic naturalism.
+- **C2A2 staging format**: Strong C2A2-direct signal — the event format itself is a candidate template for how the tradition-accelerator does live cross-tradition convening. Flag for the Master agent / Pattern Detector.
+- **Recording-pending status**: This proposal cites an event that has occurred but whose recordings are not yet publicly available. The PRS triplets above should be treated as provisional pending recording release; a re-ingestion pass is warranted once the recordings post.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-27-002','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-27-002','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-27-002')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-27-002','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-27-002" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-05-27-001" style="display:none">
+      <div style="background:#3a3a6a18;border-left:4px solid #3a3a6a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#3a3a6a;letter-spacing:.05em">IAIN MCGILCHRIST · BLOG · 2026-04-08</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">The value of value</div>
+        <a href="https://iainmcgilchrist.substack.com/p/the-value-of-value" target="_blank" style="font-size:11px;color:#3a3a6a;opacity:.8">https://iainmcgilchrist.substack.com/p/the-value-of-value</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">McGilchrist's own Substack essay framing the question "what is true?" through the category of value — written as the discursive prelude to the May 2–3, 2026 Sheldonian "Good, Beautiful, True" event. The essay says explicitly that McGilchrist's own thinking has shifted recently, with value moving from a derived concept to a central one: value is not what minds project onto a neutral cosmos but a constitutive feature of reality available to right-hemispheric attention. It is shorter and more programmatic than the long-form trialogue captured in PRS-09 (Parallax interview, March 6, 2026), and it is a first-person McGilchrist text rather than a co-authored conversation.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">The existing wiki captures value/sacred via PRS-09 (Parallax, with Gafni & Stein) and PRS-17 (Premier Unbelievable, with secondary interviewer). This essay is McGilchrist on the same theme without the interlocutors shaping the frame — and with an explicit "my thinking has changed" signal. That makes it the cleanest source for the program's current state of the value claim, and it is the canonical authorial statement that the Sheldonian lectures (PROP-2026-05-27-002) elaborate.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #3a3a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> McGilchrist's value claim has been received primarily through co-authored interviews (Parallax trialogue, Unbelievable interview) where the interlocutors' framing partly shapes the position — leaving open whether the "value is constitutive" thesis is McGilchrist's settled view or an artifact of those conversations</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> First-person Substack essay in which McGilchrist explicitly flags that his own thinking has changed in recent years, with value moving from a derivative category to a fundamental one — and articulates this in his own voice without an interviewer's frame</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A canonical author-stated reference for the value-as-constitutive claim, suitable as the primary citation in any C2A2 discussion of where McGilchrist stands on value — superseding earlier interview-derived citations for that purpose</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The essay says McGilchrist's answer to "what is true?" would now "certainly have something to do with what we call value" and announces a two-day event devoted to exactly this question</div>
+        </div>
+        <div style="border-left:3px solid #3a3a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> A tradition's growth over time is hard to track when the only public record consists of interviews with shifting interlocutors — the underlying thinker's own trajectory gets obscured by the framing of each conversation</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> An author-maintained Substack as a longitudinal record of the program's evolution, with explicit "my thinking has changed" markers anchoring transitions — using McGilchrist's Substack as a model</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A C2A2 wiki design pattern — each tradition's wiki should privilege author-direct longitudinal sources (Substack, monographs, recorded solo lectures) over interviews when establishing the current state of the program, because direct sources show trajectory and interviews show snapshots</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The "value of value" essay reads as a trajectory-marker for the program; the value claim is now near the core rather than peripheral, and McGilchrist names the change explicitly</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Stump (hylomorphism)**: Value-as-constitutive maps onto Aquinas's transcendentals (verum, bonum, pulchrum convertible with ens). McGilchrist's essay is doing the hemispheric-neuroscience version of a Thomistic move; the convergence with PRS-25's six-position taxonomy (participatory realism vs. hylomorphism) deserves another pass.
+- **Kastrup**: Kastrup denies time and treats value as a quale within universal consciousness; McGilchrist treats value as ontologically real and temporally extended. The "value of value" essay sharpens this divergence and complements the existing Kastrup-McGilchrist PRS-13/PRS-14 record.
+- **Fredrickson**: Value-as-disclosure aligns with positivity resonance — both treat the encounter as the locus where value emerges rather than is projected.
+- **C2A2 Master**: The essay is also a procedural signal — it shows how a mature tradition uses author-direct longitudinal sources to mark its own trajectory. This is directly relevant to C2A2's "native epistemic standards" wiki design pattern (PRS-28).</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-27-001','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-27-001','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-27-001')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-27-001','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-27-001" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-05-28-001" style="display:none">
+      <div style="background:#a0306a18;border-left:4px solid #a0306a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#a0306a;letter-spacing:.05em">BARBARA FREDRICKSON · PAPER · 2025-11-21</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">High-quality listening behaviors linked to social connection between strangers</div>
+        <a href="https://www.nature.com/articles/s44271-025-00342-2" target="_blank" style="font-size:11px;color:#a0306a;opacity:.8">https://www.nature.com/articles/s44271-025-00342-2</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">West, Huston, Chandler, Zhou & Fredrickson (Communications Psychology, Nov 2025) report two pre-registered studies (total N = 646) showing that observable verbal listening behaviors — verbal validation and follow-up questions — predict faster conversational response times and other behavioral, third-party-observer, self-, and partner-reported markers of social connection between strangers. A simple social-connectedness intervention (vs. active control) increased follow-up-question frequency in Study 1's deep-talk conversations, and that increase mediated the intervention's effect on connection. In Study 2's small-talk extension, global listening behaviors replicated as predictors of behavioral and partner-reported connection, but verbal indicators alone were less consistent and the intervention did not raise listening behaviors in the small-talk context.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is the peer-reviewed empirical paper underlying the listening-quality findings previously captured only at colloquium level (existing PRS-08, from the 2025-10-01 UBC colloquium). It identifies a *behavioral* (not merely self-reported) intermediate that links a deliverable-at-scale intervention to positivity-resonance precursors — closing a gap in Fredrickson's program between her theoretical "perceived safety + real-time sensory connection" mechanism and the question of what trainable behaviors actually produce those conditions. It also surfaces a boundary condition (small-talk vs. deep-talk asymmetry) that the colloquium account did not.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #a0306a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Self-reported listening quality has long been theorized to enable positivity resonance, but until now the field lacked behavioral, observable, pre-registered evidence that specific listening behaviors mediate the link between a social-connectedness intervention and felt connection between strangers.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Two pre-registered studies (N = 646) coding observable verbal listening behaviors (verbal validation, follow-up questions) and global listening behaviors during deep-talk and small-talk conversations between strangers, paired with behavioral markers (response latency) and self-, partner-, and observer-reports of connection.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Verbal listening behaviors — especially follow-up questions — are behaviorally observable mediators of a brief social-connectedness intervention's effect on stranger connection in deep-talk contexts. Listening behavior thus becomes an empirically grounded, trainable, observable target for scaling positivity-resonance interventions, not just an inferred theoretical construct.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Study 1 deep-talk (N reported in supplement; pre-registered): frequency of verbal validation and follow-up questions predicted faster conversational response times and partner-, self-, and third-party-observer-rated connection; intervention condition asked more follow-up questions, mediating its effect on connection.</div>
+        </div>
+        <div style="border-left:3px solid #a0306a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Whether the behavioral pathway through listening generalizes from extended (deep-talk) encounters to the brief, casual encounters (small-talk) that dominate weak-tie life is unclear — and weak-tie connection has been theoretically identified as the locus of the loneliness epidemic (existing PRS-09, PRS-10).</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Study 2 replication-and-extension to small-talk format with the same intervention and listening coding scheme.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Global listening behaviors continue to predict behavioral and partner-reported connection in small talk, but verbal indicators are less consistent and the intervention does not raise listening behaviors. This is a substantive boundary condition: small-talk listening may rely on a holistic-attention channel that resists discrete verbal training, suggesting different intervention designs are needed for the weak-tie regime than for deep encounters.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Reported as Study 2 replication and extension; verbal listening indicators "less consistently linked" and "no evidence emerged that the intervention increased listening behaviors during small talk."</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **McGilchrist** — the small-talk/deep-talk asymmetry is suggestive of right-hemisphere global attention vs. left-hemisphere discrete-verbal capture. If global listening behaviors carry the small-talk signal while discrete verbal behaviors (validation, follow-up questions) carry the deep-talk signal, this maps onto McGilchrist's distinction between right-hemisphere holistic engagement and left-hemisphere segmented processing. Flag for cross-program dispatch.
+- **Friston** — follow-up questions are an explicit operationalization of active-inference precision-weighting: the questioner allocates inferential effort to refine her model of the partner. Connection follows from mutual model-refinement. Suggests a formal mapping from Fredrickson's "perceived safety + sensory connection" to Friston's shared-precision-allocation account of collective active inference.
+- **Stump** — Stump's narrative theology argues that knowledge of persons is acquired through second-personal engagement irreducible to propositions (PRS-07, PRS-08, PRS-11 in the Stump tradition). Follow-up questions are precisely the behavior that lets second-personal narrative knowledge build between strangers; the listening paper provides an empirical mechanism for what Stump describes philosophically. Potential C2A2-relevant bridge: tradition-internal apprenticeship may not just be "deep listening" in a metaphorical sense — it may share a behavioral signature with the listening behaviors Fredrickson's lab can now measure.
+- **C2A2 architecture** — the small-talk asymmetry is directly relevant. C2A2's accelerator/detector premise assumes that mature tradition members can engage richly across traditions. If the deep-talk regime carries the trainable listening signal but the small-talk regime does not, then C2A2 community-design must privilege extended-encounter formats over brief stranger interactions for tradition-crossing dialogue. This complicates earlier weak-tie optimism (existing PRS-09/PRS-10) and is worth flagging for the master agent.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-28-001','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-28-001','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-28-001')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-28-001','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-28-001" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-05-29-001" style="display:none">
+      <div style="background:#7a1a1a18;border-left:4px solid #7a1a1a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#7a1a1a;letter-spacing:.05em">SEAN CARROLL · PODCAST · 2026-05-18</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Mindscape 354 | Christian List on Free Will and Levels of Reality</div>
+        <a href="https://www.preposterousuniverse.com/podcast/2026/05/18/354-christian-list-on-free-will-and-levels-of-reality/" target="_blank" style="font-size:11px;color:#7a1a1a;opacity:.8">https://www.preposterousuniverse.com/podcast/2026/05/18/354-christian-list-on-fr…</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Carroll interviews philosopher/political scientist Christian List, who has developed arguably
+the most rigorous contemporary articulation of compatibilist free will. List's central claim:
+at the level of particles and fundamental laws, there is no freedom; at the level of human
+agents navigating the world, there is — and the reconciliation depends on a precise account
+of emergence and the relationship between levels of reality. The conversation frames levels
+as ontologically real strata, not merely descriptively convenient labels.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This episode is Carroll engaging directly with a sharpened version of his own compatibilism
+(currently PRS-04, Confidence: Medium) from a philosopher who has formalized the position
+beyond Carroll's own informal treatment. List's "levels of reality" framing is the same move
+that grounds Carroll's poetic naturalism (PRS-01) but pushed further: agents are not just a
+useful story, they are real at their level. This is the strongest external endorsement and
+upgrade-pressure on Carroll's compatibilism + emergence package since Carroll & Parola's
+emergence taxonomy paper (PRS-11). It connects Carroll's program directly to a live
+philosophical literature on metaphysics of levels.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #7a1a1a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Carroll's compatibilism (PRS-04) is a deflationary stance — agency is a useful high-level description — but lacks an articulated metaphysics of levels that would explain why higher-level agency claims are not merely epistemic conveniences.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Christian List's formal account of "levels of reality" as ontologically real strata where causal/agentive properties supervene on but are not reducible to lower-level descriptions; developed in *Why Free Will Is Real* (Harvard 2019) and updated in this conversation.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> An upgrade path from Carroll's informal compatibilism toward a metaphysically rigorous version where the reality of agency is grounded in a precise multi-level ontology — moving PRS-04's confidence from Medium toward High and explicitly linking it to PRS-01 (poetic naturalism) and PRS-11 (emergence taxonomy).</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Carroll's own episode framing: "List has arguably done the most to articulate the compatibilist perspective on free will... the reconciliation depends on thinking carefully about emergence and the relationship between levels of reality."</div>
+        </div>
+        <div style="border-left:3px solid #7a1a1a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Different traditions in C2A2 (Carroll, Friston, Levin, Hoffman, Kastrup, Stump) all rely on some notion of "levels" — physical/biological/cognitive/agentive — but no shared vocabulary lets them say whether they mean the same thing or are talking past each other.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> List's level-relative supervenience framework, in which higher-level facts are real if they figure ineliminably in the best causal explanation at their level — an operational criterion for "level realism."</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A shared cross-tradition vocabulary for "levels" claims: any agent in the C2A2 network can be asked whether their levels are List-real (ineliminable in best causal explanation) or merely descriptively convenient. Provides discrimination criteria parallel to Carroll & Parola's Type-1/Type-2 emergence distinction (PRS-11).</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Episode framing as "levels of reality" rather than "levels of description"; List's published account treats the question of level-realism as the central question for compatibilism.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Stump:** List's claim that agents are real at their level — not just useful fictions of
+  a lower-level reality — is the structural move Stump's Thomistic account also requires
+  (substantial forms acting at their level). Possible Carroll↔Stump bridge running through
+  List's secular metaphysics: a shared multi-level realism with different grounding stories.
+  Flag for the pattern detector as a candidate paradigm-spanning concept ("level-realism").
+
+- **Friston:** Friston's Markov-blanket hierarchies operationalize "levels" computationally;
+  List operationalizes them metaphysically. The pair sets up a question Friston has not
+  directly engaged: do FEP hierarchies have List-real agency at higher levels, or only
+  surface-level autonomy that bottoms out in lower-level dynamics?
+
+- **Levin / Hawkins:** Both program treat biological/cognitive agency as real-at-its-level
+  without committing to a formal multi-level ontology. List's framework would let either
+  program state its level-realism claims more precisely — and let Carroll meet them halfway
+  rather than reducing them to "useful stories."
+
+- **Kastrup:** Direct opposition. Kastrup's analytic idealism collapses Carroll's and List's
+  multi-level realism into a single mental level. Useful as a clean negative bridge — what
+  exactly does Kastrup deny when he denies that physical levels are real-at-their-level?
+
+- **Hoffman:** Hoffman also denies the reality of physical levels (they are interface), but
+  for different reasons than Kastrup. The Carroll/List vs. Hoffman/Kastrup split on
+  level-realism is one of the cleanest paradigm-level disagreements in the C2A2 network.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-05-29-001','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-05-29-001','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-05-29-001')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-05-29-001','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-05-29-001" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="bottombar">
+  <div id="progress">0 / 8 reviewed</div>
+  <div id="all-done">✓ All reviewed!</div>
+  <button id="submit-btn" onclick="submitDecisions()">Send Decisions →</button>
+</div>
+
+<script>
+const TOTAL = 8;
+const decisions = {};
+const notes = {};
+
+function showCard(pid) {
+  document.querySelectorAll('.prop-card').forEach(c => c.style.display='none');
+  document.querySelectorAll('.sidebar-item').forEach(s => s.classList.remove('active'));
+  document.getElementById('card-'+pid).style.display='block';
+  document.getElementById('item-'+pid).classList.add('active');
+  document.getElementById('welcome').style.display='none';
+}
+
+function decide(pid, decision) {
+  decisions[pid] = decision;
+  notes[pid] = notes[pid] || '';
+  updateBadge(pid, decision);
+  updateProgress();
+  // Auto-advance to next pending
+  const items = Array.from(document.querySelectorAll('.sidebar-item'));
+  const cur = items.findIndex(el => el.id === 'item-'+pid);
+  const next = items.slice(cur+1).find(el => !decisions[el.id.replace('item-','')]);
+  if (next) showCard(next.id.replace('item-',''));
+}
+
+function decideChange(pid) {
+  const note = prompt('What should be changed?\n(Your note will be sent with the decision)', '');
+  if (note === null) return;
+  decisions[pid] = 'CHANGE';
+  notes[pid] = note;
+  updateBadge(pid, 'CHANGE', note);
+  updateProgress();
+  const items = Array.from(document.querySelectorAll('.sidebar-item'));
+  const cur = items.findIndex(el => el.id === 'item-'+pid);
+  const next = items.slice(cur+1).find(el => !decisions[el.id.replace('item-','')]);
+  if (next) showCard(next.id.replace('item-',''));
+}
+
+function updateBadge(pid, decision, note='') {
+  const colors = {APPROVE:'#1a6b3c',CHECK:'#8a4a00',CHANGE:'#2a4a8a',DENY:'#7a1a1a'};
+  const labels = {APPROVE:'✓ Approved',CHECK:'⚑ Flagged for check',CHANGE:'✎ Change requested',DENY:'✗ Denied'};
+  const badge = document.getElementById('badge-'+pid);
+  badge.style.color = colors[decision] || '#555';
+  badge.style.fontWeight = '700';
+  badge.textContent = labels[decision] + (note ? ' — '+note.slice(0,30) : '');
+  const status = document.getElementById('status-'+pid);
+  if (status) {
+    status.style.color = colors[decision];
+    status.textContent = labels[decision] + (note ? ': '+note : '');
+  }
+}
+
+function updateProgress() {
+  const done = Object.keys(decisions).length;
+  document.getElementById('progress').textContent = done + ' / ' + TOTAL + ' reviewed';
+  if (done >= TOTAL) {
+    document.getElementById('all-done').style.display='inline';
+    document.getElementById('submit-btn').style.background='#1a6b3c';
+  }
+}
+
+function submitDecisions() {
+  const lines = ['DECISIONS:'];
+  const pids = ['PROP-2026-05-29-001', 'PROP-2026-05-29-002', 'PROP-2026-05-29-003', 'PROP-2026-05-29-004', 'PROP-2026-05-29-005', 'PROP-2026-05-29-006', 'PROP-2026-05-29-007', 'PROP-2026-05-29-008'];
+  pids.forEach(pid => {
+    const d = decisions[pid] || 'PENDING';
+    const n = notes[pid] ? ' | ' + notes[pid] : '';
+    lines.push(pid + ': ' + d + n);
+  });
+  const body = lines.join('\n');
+  const subject = '[C2A2-review-decision] 2026-05-29';
+  // Open Gmail compose directly — avoids Apple Mail / default mail client
+  const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=thomas.loughran@gmail.com&su='
+    + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  window.open(gmailUrl, '_blank');
+}
+
+// Show first card on load
+window.addEventListener('load', () => { showCard('PROP-2026-05-27-006'); });
+</script>
+</body>
+</html>

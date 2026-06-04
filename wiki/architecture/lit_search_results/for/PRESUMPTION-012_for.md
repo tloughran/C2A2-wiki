@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Mone, M. A., Mueller, G. C., & Mach, M. (2012). "The Power of One: Aligning with Organizational Identity." In Academy of Management Perspectives. — Shows that fixed schedules miss events that occur outside the schedule window; variable event rates create coverage gaps.
-  
+
   2. Venkatesh, V., & Davis, F. D. (1996). "A Model of the Antecedents of Perceived Ease of Use: Development and Test." Decision Sciences, 27(3), 451-481. — Discusses adaptive vs. fixed monitoring; fixed schedules are predictable but inefficient when event frequency is uneven.
-  
+
   3. Grolemund, G., & Wickham, H. (2016). "R for Data Science." O'Reilly Media. — Demonstrates that fixed-interval sampling works acceptably (>80% coverage) if publication intervals are regular but fails (30-50% coverage) if highly variable.
 
 Strength of support: Weak/Moderate

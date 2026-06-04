@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Gentner, D., & Markman, A. B. (1997). "Structure Mapping in Analogy and Similarity." American Psychologist, 52(1), 45-56. — Shows that genuine analogies involve relational structure mapping, not just attribute overlap; structural correspondence is meaningful.
-  
+
   2. Holyoak, K. J., & Thagard, P. (1995). "Mental Leaps: Analogy in Creative Thought." MIT Press. — Demonstrates that deep analogies (structurally coherent) transfer knowledge successfully while surface analogies do not; structural meaning is predictive.
-  
+
   3. Ross, B. H., & Warren, E. (1995). "Abstracting From Cases: The Effects of Problem Type on Transfer." Journal of the Experimental Psychology: Learning, Memory, and Cognition, 21(4), 904-924. — Shows that high-systematicity analogies (structural correspondence) predict successful transfer better than surface-similar cases.
 
 Strength of support: Moderate

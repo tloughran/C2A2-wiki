@@ -1,8 +1,8 @@
 # LITERATURE SEARCH RETURNS - AGENT 15b ADVERSARIAL SEARCH
 
-**Search date:** 2026-04-13  
-**Search direction:** AGAINST (disconfirmatory)  
-**Total items searched:** 25 (11 ASSUMPTIONS + 14 PRESUMPTIONS)  
+**Search date:** 2026-04-13
+**Search direction:** AGAINST (disconfirmatory)
+**Total items searched:** 25 (11 ASSUMPTIONS + 14 PRESUMPTIONS)
 **Challenge level distribution:** 3 CRITICAL, 7 HIGH, 10 MODERATE, 5 WEAK-TO-NONE
 
 ---
@@ -10,144 +10,144 @@
 ## ASSUMPTION RETURNS (11 total)
 
 ### RETURN-TO-14a/14b: ASSUMPTION-003
-**Original item:** ASSUMPTION-003  
-**Statement:** "Searching FOR and AGAINST independently prevents confirmation bias"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** STRONGLY CHALLENGED  
-**Strength:** STRONG  
-**Key source:** Druckman & Bolsen (2011); Taber & Lodge (2006); psychological literature on motivated reasoning  
-**Specific risk:** Role assignment (FOR/AGAINST) creates systematic motivated reasoning; the adversarial structure amplifies bias rather than preventing it. Both agents develop confidence in their positions, making independent evaluation impossible.  
-**Summary:** The FOR/AGAINST split assumes role independence prevents bias. But psychological research shows role assignment creates motivated reasoning and investment in position. The structure may introduce worse bias (adversarial bias) than the bias it tries to prevent. Recommend removing explicit role labels or implementing bias monitoring.  
+**Original item:** ASSUMPTION-003
+**Statement:** "Searching FOR and AGAINST independently prevents confirmation bias"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** STRONGLY CHALLENGED
+**Strength:** STRONG
+**Key source:** Druckman & Bolsen (2011); Taber & Lodge (2006); psychological literature on motivated reasoning
+**Specific risk:** Role assignment (FOR/AGAINST) creates systematic motivated reasoning; the adversarial structure amplifies bias rather than preventing it. Both agents develop confidence in their positions, making independent evaluation impossible.
+**Summary:** The FOR/AGAINST split assumes role independence prevents bias. But psychological research shows role assignment creates motivated reasoning and investment in position. The structure may introduce worse bias (adversarial bias) than the bias it tries to prevent. Recommend removing explicit role labels or implementing bias monitoring.
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-003_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: ASSUMPTION-004
-**Original item:** ASSUMPTION-004  
-**Statement:** "Self-awareness layer scales with decision complexity, not agent count"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** STRONGLY CHALLENGED  
-**Strength:** STRONG  
-**Key source:** Google AI (2026) "Towards a Science of Scaling Agent Systems"; MAST Study (2025); Arrow & Debreu (1954)  
-**Specific risk:** Coordination overhead between agents scales at least linearly with N, often quadratically. Each agent-to-agent handoff adds latency; error amplification reaches 17.2x in unstructured networks. Self-awareness layer becomes the bottleneck, not decision complexity.  
-**Summary:** The assumption that self-awareness scales with decision complexity contradicts multi-agent systems research. Communication complexity between N agents scales nonlinearly. Saturation point around N=4 agents means adding more agents beyond that increases overhead more than benefit. C2A2's architecture will hit coordination bottlenecks.  
+**Original item:** ASSUMPTION-004
+**Statement:** "Self-awareness layer scales with decision complexity, not agent count"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** STRONGLY CHALLENGED
+**Strength:** STRONG
+**Key source:** Google AI (2026) "Towards a Science of Scaling Agent Systems"; MAST Study (2025); Arrow & Debreu (1954)
+**Specific risk:** Coordination overhead between agents scales at least linearly with N, often quadratically. Each agent-to-agent handoff adds latency; error amplification reaches 17.2x in unstructured networks. Self-awareness layer becomes the bottleneck, not decision complexity.
+**Summary:** The assumption that self-awareness scales with decision complexity contradicts multi-agent systems research. Communication complexity between N agents scales nonlinearly. Saturation point around N=4 agents means adding more agents beyond that increases overhead more than benefit. C2A2's architecture will hit coordination bottlenecks.
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-004_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: ASSUMPTION-005
-**Original item:** ASSUMPTION-005  
-**Statement:** "Traditions are the right unit of analysis for organizing research progress"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** PARTIALLY CHALLENGED  
-**Strength:** MODERATE  
-**Key source:** Laudan (1977) "Progress and Its Problems"; Dogan & Pahre (1990) "Creative Marginality"; demarcation problem literature  
-**Specific risk:** Traditions have fuzzy boundaries and may fragment research that should be viewed as unified problem-space. Innovation occurs at inter-tradition boundaries, not within traditions. Alternative units (problems, methods) may be more fundamental.  
-**Summary:** Traditions are useful but not the most fundamental organizing unit. Problems, methods, and questions may better capture research organization. The demarcation problem extends to traditions: where does one end and another begin? Boundary instability will cause inconsistent organization.  
+**Original item:** ASSUMPTION-005
+**Statement:** "Traditions are the right unit of analysis for organizing research progress"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** PARTIALLY CHALLENGED
+**Strength:** MODERATE
+**Key source:** Laudan (1977) "Progress and Its Problems"; Dogan & Pahre (1990) "Creative Marginality"; demarcation problem literature
+**Specific risk:** Traditions have fuzzy boundaries and may fragment research that should be viewed as unified problem-space. Innovation occurs at inter-tradition boundaries, not within traditions. Alternative units (problems, methods) may be more fundamental.
+**Summary:** Traditions are useful but not the most fundamental organizing unit. Problems, methods, and questions may better capture research organization. The demarcation problem extends to traditions: where does one end and another begin? Boundary instability will cause inconsistent organization.
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-005_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: ASSUMPTION-006
-**Original item:** ASSUMPTION-006  
-**Statement:** "PRS triplet structure captures important aspects of research progress"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** PARTIALLY CHALLENGED  
-**Strength:** MODERATE  
-**Key source:** Kuhn (1962); Laudan (1977); Stegmüller (1976); Rescher (2003)  
-**Specific risk:** Linear triplet model misses loops, dead ends, paradigm shifts, and phase transitions. Progress is non-linear; PRS assumes forward-only movement. Oversimplifies complex research development.  
-**Summary:** PRS triplets capture one aspect of progress but miss non-linearity. Kuhn shows paradigm shifts are discontinuous; Stegmüller shows feedback loops are fundamental; Rescher shows progress can regress. Linear model will underrepresent complexity.  
+**Original item:** ASSUMPTION-006
+**Statement:** "PRS triplet structure captures important aspects of research progress"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** PARTIALLY CHALLENGED
+**Strength:** MODERATE
+**Key source:** Kuhn (1962); Laudan (1977); Stegmüller (1976); Rescher (2003)
+**Specific risk:** Linear triplet model misses loops, dead ends, paradigm shifts, and phase transitions. Progress is non-linear; PRS assumes forward-only movement. Oversimplifies complex research development.
+**Summary:** PRS triplets capture one aspect of progress but miss non-linearity. Kuhn shows paradigm shifts are discontinuous; Stegmüller shows feedback loops are fundamental; Rescher shows progress can regress. Linear model will underrepresent complexity.
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-006_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: ASSUMPTION-007
-**Original item:** ASSUMPTION-007  
-**Statement:** "AI agents can meaningfully instantiate research traditions"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** STRONGLY CHALLENGED  
-**Strength:** STRONG  
-**Key source:** Searle (1980) "Chinese Room"; Dennett (1995) on intentionality; Thompson (2007) "Mind in Life"; Wittgenstein (1953)  
-**Specific risk:** Meaningful instantiation requires embodied participation, intentional states, and community practice. Agents lack these; they can only simulate tradition-participation. Will create false confidence that agents "understand" traditions.  
-**Summary:** Philosophical arguments (Chinese Room, enactivism, pragmatism) show meaningful instantiation requires embodied history and intentional states. Text-based agents can index and analyze traditions but not meaningfully instantiate them. Frame as "tradition-analyzers" rather than "tradition-instantiators."  
+**Original item:** ASSUMPTION-007
+**Statement:** "AI agents can meaningfully instantiate research traditions"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** STRONGLY CHALLENGED
+**Strength:** STRONG
+**Key source:** Searle (1980) "Chinese Room"; Dennett (1995) on intentionality; Thompson (2007) "Mind in Life"; Wittgenstein (1953)
+**Specific risk:** Meaningful instantiation requires embodied participation, intentional states, and community practice. Agents lack these; they can only simulate tradition-participation. Will create false confidence that agents "understand" traditions.
+**Summary:** Philosophical arguments (Chinese Room, enactivism, pragmatism) show meaningful instantiation requires embodied history and intentional states. Text-based agents can index and analyze traditions but not meaningfully instantiate them. Frame as "tradition-analyzers" rather than "tradition-instantiators."
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-007_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: ASSUMPTION-008
-**Original item:** ASSUMPTION-008  
-**Statement:** "2/3 consensus threshold is meaningful for tripled agent agreement"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** MODERATE  
-**Key source:** Arrow (1951) Impossibility Theorem; Janis (1972) "Victims of Groupthink"; Moscovici (1974); Sunstein & Hastie (2014)  
-**Specific risk:** With N=3, 2/3 threshold systematically suppresses minority (1/3) voice. Small groups vulnerable to groupthink; supermajority voting amplifies polarization without improving accuracy. Threshold may be suboptimal.  
-**Summary:** 2/3 threshold not theoretically justified. Arrow's theorem proves no universal optimum. Janis shows small groups + supermajority = amplified groupthink. Threshold needs empirical validation; different thresholds optimal for different decision types.  
+**Original item:** ASSUMPTION-008
+**Statement:** "2/3 consensus threshold is meaningful for tripled agent agreement"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** MODERATE
+**Key source:** Arrow (1951) Impossibility Theorem; Janis (1972) "Victims of Groupthink"; Moscovici (1974); Sunstein & Hastie (2014)
+**Specific risk:** With N=3, 2/3 threshold systematically suppresses minority (1/3) voice. Small groups vulnerable to groupthink; supermajority voting amplifies polarization without improving accuracy. Threshold may be suboptimal.
+**Summary:** 2/3 threshold not theoretically justified. Arrow's theorem proves no universal optimum. Janis shows small groups + supermajority = amplified groupthink. Threshold needs empirical validation; different thresholds optimal for different decision types.
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-008_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: ASSUMPTION-009
-**Original item:** ASSUMPTION-009  
-**Statement:** "Displacement vectors enable meaningful cross-tradition pattern comparison"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** MODERATE-TO-STRONG  
-**Key source:** Gentner & Markman (1997); Barsalou (1999) "Perceptual Symbol Systems"; Widdows (2004); semantic embedding research  
-**Specific risk:** Semantic spaces are context-dependent, metric-dependent, and may not be Euclidean. Displacement vectors may capture spurious correlations without real structural similarity. Cross-tradition incomparability.  
-**Summary:** Displacement vectors assume Euclidean semantic space and direct comparability across traditions. But semantic spaces are constructed differently in different traditions. Vectors computed in tradition A may not compare to tradition B without renormalization. Spurious patterns likely.  
+**Original item:** ASSUMPTION-009
+**Statement:** "Displacement vectors enable meaningful cross-tradition pattern comparison"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** MODERATE-TO-STRONG
+**Key source:** Gentner & Markman (1997); Barsalou (1999) "Perceptual Symbol Systems"; Widdows (2004); semantic embedding research
+**Specific risk:** Semantic spaces are context-dependent, metric-dependent, and may not be Euclidean. Displacement vectors may capture spurious correlations without real structural similarity. Cross-tradition incomparability.
+**Summary:** Displacement vectors assume Euclidean semantic space and direct comparability across traditions. But semantic spaces are constructed differently in different traditions. Vectors computed in tradition A may not compare to tradition B without renormalization. Spurious patterns likely.
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-009_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: ASSUMPTION-010
-**Original item:** ASSUMPTION-010  
-**Statement:** "Finite typology of cross-paradigm connecting memes exists"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** PARTIALLY CHALLENGED  
-**Strength:** MODERATE-TO-STRONG  
-**Key source:** Holyoak & Thagard (2001); Gentner & Markman (1997); Hofstadter (2001); Lakoff (1980)  
-**Specific risk:** Analogy-making is dynamic and generative; new connection types emerge with paradigm shifts and new problems. Fixed typology will be incomplete and require continuous updating. Novel patterns will be missed.  
-**Summary:** Analogy-making is unbounded; new types emerge continuously. While some connections are common, new paradigms create new connecting patterns. Fixed typology is provisional at best. Recommend open typology with periodic revision.  
+**Original item:** ASSUMPTION-010
+**Statement:** "Finite typology of cross-paradigm connecting memes exists"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** PARTIALLY CHALLENGED
+**Strength:** MODERATE-TO-STRONG
+**Key source:** Holyoak & Thagard (2001); Gentner & Markman (1997); Hofstadter (2001); Lakoff (1980)
+**Specific risk:** Analogy-making is dynamic and generative; new connection types emerge with paradigm shifts and new problems. Fixed typology will be incomplete and require continuous updating. Novel patterns will be missed.
+**Summary:** Analogy-making is unbounded; new types emerge continuously. While some connections are common, new paradigms create new connecting patterns. Fixed typology is provisional at best. Recommend open typology with periodic revision.
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-010_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: ASSUMPTION-011
-**Original item:** ASSUMPTION-011  
-**Statement:** "Specialist-agent-first / orchestrator-fallback scheduling is the right division of labor"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** MODERATE  
-**Key source:** Kubiya AI (2025); Google AI (2026); Tacnode (2025); generalist vs. specialist research  
-**Specific risk:** Specialists fail catastrophically out-of-domain; orchestrator-fallback doesn't prevent cascading failures. Sequential reasoning tasks degrade 39-70% with specialist architecture. Generalists more robust despite lower precision.  
-**Summary:** Specialist-first works for parallelizable tasks but degrades sequential reasoning 39-70%. Generalists are more robust; specialists are brittle. Architecture choice is task-dependent. For sequential C2A2 tasks, specialists may degrade performance. Recommend hybrid approach or empirical comparison.  
+**Original item:** ASSUMPTION-011
+**Statement:** "Specialist-agent-first / orchestrator-fallback scheduling is the right division of labor"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** MODERATE
+**Key source:** Kubiya AI (2025); Google AI (2026); Tacnode (2025); generalist vs. specialist research
+**Specific risk:** Specialists fail catastrophically out-of-domain; orchestrator-fallback doesn't prevent cascading failures. Sequential reasoning tasks degrade 39-70% with specialist architecture. Generalists more robust despite lower precision.
+**Summary:** Specialist-first works for parallelizable tasks but degrades sequential reasoning 39-70%. Generalists are more robust; specialists are brittle. Architecture choice is task-dependent. For sequential C2A2 tasks, specialists may degrade performance. Recommend hybrid approach or empirical comparison.
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-011_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: ASSUMPTION-012
-**Original item:** ASSUMPTION-012  
-**Statement:** "Human review is the primary throughput constraint"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** MODERATE  
-**Key source:** Asyncsquad Labs (2025); DigitalOcean (2026); Understanding Data (2024); SuperAnnotate (2025)  
-**Specific risk:** Primary constraint may be agent output quality or automated evaluation, not human review. Optimizing review speed without improving automation will increase error rates. False constraint identification.  
-**Summary:** Human review is quality mechanism, not bottleneck. Real constraint is likely agent quality or automation effectiveness. Tiered evaluation (automated + sampling) more cost-effective than full human review. Optimize upstream before optimizing review.  
+**Original item:** ASSUMPTION-012
+**Statement:** "Human review is the primary throughput constraint"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** MODERATE
+**Key source:** Asyncsquad Labs (2025); DigitalOcean (2026); Understanding Data (2024); SuperAnnotate (2025)
+**Specific risk:** Primary constraint may be agent output quality or automated evaluation, not human review. Optimizing review speed without improving automation will increase error rates. False constraint identification.
+**Summary:** Human review is quality mechanism, not bottleneck. Real constraint is likely agent quality or automation effectiveness. Tiered evaluation (automated + sampling) more cost-effective than full human review. Optimize upstream before optimizing review.
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-012_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: ASSUMPTION-013
-**Original item:** ASSUMPTION-013  
-**Statement:** "Cross-tradition signals are reliable indicators of genuine connections"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** MODERATE-TO-STRONG  
-**Key source:** Shermer (2008); Spurious Correlations Survey (2024); Pennington et al. (2014); semantic similarity failures  
-**Specific risk:** Apophenia (seeing patterns where none exist) is pervasive in AI; semantic similarity has high false-positive rates. Signals are prone to spurious matches and surface-level correlation without structural alignment.  
-**Summary:** Cross-tradition signals prone to apophenia and false positives. Semantic similarity metrics unreliable. Once generated, false signals are hard to distinguish from genuine connections. Require multi-step validation and domain expert review.  
+**Original item:** ASSUMPTION-013
+**Statement:** "Cross-tradition signals are reliable indicators of genuine connections"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** MODERATE-TO-STRONG
+**Key source:** Shermer (2008); Spurious Correlations Survey (2024); Pennington et al. (2014); semantic similarity failures
+**Specific risk:** Apophenia (seeing patterns where none exist) is pervasive in AI; semantic similarity has high false-positive rates. Signals are prone to spurious matches and surface-level correlation without structural alignment.
+**Summary:** Cross-tradition signals prone to apophenia and false positives. Semantic similarity metrics unreliable. Once generated, false signals are hard to distinguish from genuine connections. Require multi-step validation and domain expert review.
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-013_against.md
 
 ---
@@ -155,183 +155,183 @@
 ## PRESUMPTION RETURNS (14 total)
 
 ### RETURN-TO-14a/14b: PRESUMPTION-001
-**Original item:** PRESUMPTION-001  
-**Statement:** "Splitting into 14a/14b improves quality"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** MODERATE-TO-STRONG  
-**Key source:** Google AI (2026); Tacnode (2025); MAST Study (2025); Williams (2012) "Why Teams Don't Work"  
-**Specific risk:** Coordination overhead (100-500ms per handoff, token multiplication) may exceed quality gains. Sequential reasoning degrades 39-70%. Split introduces integration failures without clear quality benefit.  
-**Summary:** Splitting agents introduces coordination costs that may not be justified by quality improvement. Baseline comparison against single unified agent not done. Recommend empirical comparison before deploying split architecture.  
+**Original item:** PRESUMPTION-001
+**Statement:** "Splitting into 14a/14b improves quality"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** MODERATE-TO-STRONG
+**Key source:** Google AI (2026); Tacnode (2025); MAST Study (2025); Williams (2012) "Why Teams Don't Work"
+**Specific risk:** Coordination overhead (100-500ms per handoff, token multiplication) may exceed quality gains. Sequential reasoning degrades 39-70%. Split introduces integration failures without clear quality benefit.
+**Summary:** Splitting agents introduces coordination costs that may not be justified by quality improvement. Baseline comparison against single unified agent not done. Recommend empirical comparison before deploying split architecture.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-001_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: PRESUMPTION-002
-**Original item:** PRESUMPTION-002  
-**Statement:** "Thousand Brains architecture transfers to multi-agent AI"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** MODERATE  
-**Key source:** Glover (2019) "Why Biological Inspired AI Fails"; Thompson (2007) "Mind in Life"; Levin & Dennett (2020)  
-**Specific risk:** Thousand Brains requires embodiment, sensorimotor coupling, and intrinsic goals. Disembodied text-based agents lack these. Transfer may carry biological constraints without understanding which are essential. Coordination overhead scales with N.  
-**Summary:** Biological transfer often fails (Glover). Thousand Brains principles may not translate to disembodied systems. Key constraints (embodiment, sensorimotor coupling) are absent. Verify which principles transfer before relying heavily on biological architecture.  
+**Original item:** PRESUMPTION-002
+**Statement:** "Thousand Brains architecture transfers to multi-agent AI"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** MODERATE
+**Key source:** Glover (2019) "Why Biological Inspired AI Fails"; Thompson (2007) "Mind in Life"; Levin & Dennett (2020)
+**Specific risk:** Thousand Brains requires embodiment, sensorimotor coupling, and intrinsic goals. Disembodied text-based agents lack these. Transfer may carry biological constraints without understanding which are essential. Coordination overhead scales with N.
+**Summary:** Biological transfer often fails (Glover). Thousand Brains principles may not translate to disembodied systems. Key constraints (embodiment, sensorimotor coupling) are absent. Verify which principles transfer before relying heavily on biological architecture.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-002_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: PRESUMPTION-003
-**Original item:** PRESUMPTION-003  
-**Statement:** "Reference_frame_location/conceptual_bearing fields are useful"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** WEAK-TO-MODERATE  
-**Key source:** SAR (2018); GitHub Issue (2024); metadata overhead research; signal-to-noise degradation  
-**Specific risk:** Protocol fields accessed <50% of time degrade signal-to-noise ratio, consume token budget, and add maintenance burden. Likely documentation debt without corresponding benefit.  
-**Summary:** Metadata fields presumed useful but likely unused. Token overhead unjustified unless accessed >80% of time. Recommend audit of actual field usage; remove or make optional if usage low.  
+**Original item:** PRESUMPTION-003
+**Statement:** "Reference_frame_location/conceptual_bearing fields are useful"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** WEAK-TO-MODERATE
+**Key source:** SAR (2018); GitHub Issue (2024); metadata overhead research; signal-to-noise degradation
+**Specific risk:** Protocol fields accessed <50% of time degrade signal-to-noise ratio, consume token budget, and add maintenance burden. Likely documentation debt without corresponding benefit.
+**Summary:** Metadata fields presumed useful but likely unused. Token overhead unjustified unless accessed >80% of time. Recommend audit of actual field usage; remove or make optional if usage low.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-003_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: PRESUMPTION-004
-**Original item:** PRESUMPTION-004  
-**Statement:** "2/3 threshold is optimal"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** MODERATE  
-**Key source:** Arrow (1951) Impossibility Theorem; Maskin & Sen (1999); Sunstein & Hastie (2014); Müller (2020)  
-**Specific risk:** Optimal threshold depends on problem structure and error-cost asymmetry. No universal optimum exists. 2/3 likely suboptimal without empirical justification.  
-**Summary:** Arrow's theorem proves no voting threshold universally optimal. Threshold depends on domain, cost-asymmetry between false positives and false negatives. 2/3 chosen without analysis of these factors. Needs empirical validation.  
+**Original item:** PRESUMPTION-004
+**Statement:** "2/3 threshold is optimal"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** MODERATE
+**Key source:** Arrow (1951) Impossibility Theorem; Maskin & Sen (1999); Sunstein & Hastie (2014); Müller (2020)
+**Specific risk:** Optimal threshold depends on problem structure and error-cost asymmetry. No universal optimum exists. 2/3 likely suboptimal without empirical justification.
+**Summary:** Arrow's theorem proves no voting threshold universally optimal. Threshold depends on domain, cost-asymmetry between false positives and false negatives. 2/3 chosen without analysis of these factors. Needs empirical validation.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-004_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: PRESUMPTION-005
-**Original item:** PRESUMPTION-005  
-**Statement:** "Separating FOR/AGAINST prevents bias without introducing others"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** STRONGLY CHALLENGED  
-**Strength:** STRONG  
-**Key source:** Druckman & Bolsen (2011); Taber & Lodge (2006); Moscovici (1974); Janis (1972); Hart, Stern, & Sundelius (1997)  
-**Specific risk:** Role assignment creates motivated reasoning and amplifies bias in opposite directions. Adversarial framing intensifies groupthink. Devil's advocate approach often backfires. Structure introduces worse bias than it prevents.  
-**Summary:** Psychological research strongly contradicts the presumption. Role assignment amplifies bias, not reduces it. Adversarial framing reorganizes groupthink along factional lines. Recommend removing explicit role labels, reframing as collaborative, implementing bias monitoring.  
+**Original item:** PRESUMPTION-005
+**Statement:** "Separating FOR/AGAINST prevents bias without introducing others"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** STRONGLY CHALLENGED
+**Strength:** STRONG
+**Key source:** Druckman & Bolsen (2011); Taber & Lodge (2006); Moscovici (1974); Janis (1972); Hart, Stern, & Sundelius (1997)
+**Specific risk:** Role assignment creates motivated reasoning and amplifies bias in opposite directions. Adversarial framing intensifies groupthink. Devil's advocate approach often backfires. Structure introduces worse bias than it prevents.
+**Summary:** Psychological research strongly contradicts the presumption. Role assignment amplifies bias, not reduces it. Adversarial framing reorganizes groupthink along factional lines. Recommend removing explicit role labels, reframing as collaborative, implementing bias monitoring.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-005_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: PRESUMPTION-006
-**Original item:** PRESUMPTION-006  
-**Statement:** "Developmental stages are monotonic"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** MODERATE  
-**Key source:** Kuhn (1962); Allen (2017); post-development theory; complexity theory; psychological research  
-**Specific risk:** Real development is non-linear with regressions, oscillations, and phase transitions. Monotonic assumption will misinterpret normal system behavior as failures. Paradigm shifts treated as breakdowns.  
-**Summary:** Contemporary developmental science rejects monotonic models. Real systems exhibit non-linearity, feedback loops, and discontinuities. C2A2's stage model should allow regressions and paradigm shifts as normal behavior, not failures.  
+**Original item:** PRESUMPTION-006
+**Statement:** "Developmental stages are monotonic"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** MODERATE
+**Key source:** Kuhn (1962); Allen (2017); post-development theory; complexity theory; psychological research
+**Specific risk:** Real development is non-linear with regressions, oscillations, and phase transitions. Monotonic assumption will misinterpret normal system behavior as failures. Paradigm shifts treated as breakdowns.
+**Summary:** Contemporary developmental science rejects monotonic models. Real systems exhibit non-linearity, feedback loops, and discontinuities. C2A2's stage model should allow regressions and paradigm shifts as normal behavior, not failures.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-006_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: PRESUMPTION-007
-**Original item:** PRESUMPTION-007  
-**Statement:** "Literature absence = NOVEL"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** STRONGLY CHALLENGED  
-**Strength:** STRONG  
-**Key source:** Rosenthal (1979) "File Drawer Problem"; Ioannidis (2005); publication bias research; Rooney & Williamson (2018)  
-**Specific risk:** Publication bias, file drawer problem, language/venue gaps mean absence from indexed literature ≠ novelty. Will false-positive NOVEL claims and miss true novelty with obscure prior art. Amplifies publication bias.  
-**Summary:** Literature absence is unreliable indicator of novelty. Systematic publication bias, gray literature, and language/venue coverage gaps mean much research is invisible to web search. Current definition of NOVEL is empirically false. Need sophisticated novelty detection with gray literature search and researcher interviews.  
+**Original item:** PRESUMPTION-007
+**Statement:** "Literature absence = NOVEL"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** STRONGLY CHALLENGED
+**Strength:** STRONG
+**Key source:** Rosenthal (1979) "File Drawer Problem"; Ioannidis (2005); publication bias research; Rooney & Williamson (2018)
+**Specific risk:** Publication bias, file drawer problem, language/venue gaps mean absence from indexed literature ≠ novelty. Will false-positive NOVEL claims and miss true novelty with obscure prior art. Amplifies publication bias.
+**Summary:** Literature absence is unreliable indicator of novelty. Systematic publication bias, gray literature, and language/venue coverage gaps mean much research is invisible to web search. Current definition of NOVEL is empirically false. Need sophisticated novelty detection with gray literature search and researcher interviews.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-007_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: PRESUMPTION-008
-**Original item:** PRESUMPTION-008  
-**Statement:** "Health metric r computable without excessive samples"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** MODERATE  
-**Key source:** Kish (1965); Julious & Machin (2005); Fieller (1954); small sample bias literature  
-**Specific risk:** Ratio metrics require 2-3x sample sizes of difference metrics for same power. Small samples (n<30) produce biased estimates, wide CI, unreliable conclusions. Confidence intervals non-symmetric, often underestimated.  
-**Summary:** Health metric r requires larger sample size than many practitioners expect. Small-sample bias is substantial. Confidence intervals extremely wide. C2A2 should implement minimum sample size thresholds or Bayesian approaches for small-sample robustness.  
+**Original item:** PRESUMPTION-008
+**Statement:** "Health metric r computable without excessive samples"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** MODERATE
+**Key source:** Kish (1965); Julious & Machin (2005); Fieller (1954); small sample bias literature
+**Specific risk:** Ratio metrics require 2-3x sample sizes of difference metrics for same power. Small samples (n<30) produce biased estimates, wide CI, unreliable conclusions. Confidence intervals non-symmetric, often underestimated.
+**Summary:** Health metric r requires larger sample size than many practitioners expect. Small-sample bias is substantial. Confidence intervals extremely wide. C2A2 should implement minimum sample size thresholds or Bayesian approaches for small-sample robustness.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-008_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: PRESUMPTION-009
-**Original item:** PRESUMPTION-009  
-**Statement:** "Provenance overhead is justified"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** WEAK-TO-MODERATE  
-**Key source:** IEEE (2012) traceability overhead; SBC/iSys (2024) documentation debt; metadata overhead research  
-**Specific risk:** Provenance tracking expensive (token consumption, maintenance burden). Likely unused >50% of time, creating technical debt. Overhead may exceed benefit unless usage >80%.  
-**Summary:** Presumed justified but unmeasured. Provenance maintenance is continuous cost; benefit unclear unless actively used. Recommend usage audit; make provenance optional/on-demand rather than mandatory.  
+**Original item:** PRESUMPTION-009
+**Statement:** "Provenance overhead is justified"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** WEAK-TO-MODERATE
+**Key source:** IEEE (2012) traceability overhead; SBC/iSys (2024) documentation debt; metadata overhead research
+**Specific risk:** Provenance tracking expensive (token consumption, maintenance burden). Likely unused >50% of time, creating technical debt. Overhead may exceed benefit unless usage >80%.
+**Summary:** Presumed justified but unmeasured. Provenance maintenance is continuous cost; benefit unclear unless actively used. Recommend usage audit; make provenance optional/on-demand rather than mandatory.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-009_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: PRESUMPTION-010
-**Original item:** PRESUMPTION-010  
-**Statement:** "Agent 16 can detect conditions via web search"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** MODERATE-TO-STRONG  
-**Key source:** Panther (2025); Corelight (2025); web monitoring limitations; false-negative research  
-**Specific risk:** Web monitoring has intrinsic false-negative rates (incomplete indexing, novel conditions, zero-day blindness, silent failures). Agent 16 will miss important developments without knowing it failed.  
-**Summary:** Automated web monitoring has fundamental limitations: false negatives from incomplete indexing, novel conditions, language/venue gaps. Agent 16 can catch common developments but will miss novel or obscure ones. Pair with human oversight or alternative detection.  
+**Original item:** PRESUMPTION-010
+**Statement:** "Agent 16 can detect conditions via web search"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** MODERATE-TO-STRONG
+**Key source:** Panther (2025); Corelight (2025); web monitoring limitations; false-negative research
+**Specific risk:** Web monitoring has intrinsic false-negative rates (incomplete indexing, novel conditions, zero-day blindness, silent failures). Agent 16 will miss important developments without knowing it failed.
+**Summary:** Automated web monitoring has fundamental limitations: false negatives from incomplete indexing, novel conditions, language/venue gaps. Agent 16 can catch common developments but will miss novel or obscure ones. Pair with human oversight or alternative detection.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-010_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: PRESUMPTION-011
-**Original item:** PRESUMPTION-011  
-**Statement:** "Agent quality filters sufficient without calibration"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** MODERATE-TO-STRONG  
-**Key source:** Google ML (2025); Galileo AI (2025); SuperAnnotate (2025); precision-recall trade-offs  
-**Specific risk:** Uncalibrated filters either generate alert fatigue (low false positives, high false negatives) or flood downstream (high false positives). Performance unpredictable; thresholds often arbitrary.  
-**Summary:** Uncalibrated filters ineffective; they optimize implicitly for one metric at expense of others. Require calibration against labeled validation data. Thresholds should balance precision-recall based on C2A2's cost structure for different error types.  
+**Original item:** PRESUMPTION-011
+**Statement:** "Agent quality filters sufficient without calibration"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** MODERATE-TO-STRONG
+**Key source:** Google ML (2025); Galileo AI (2025); SuperAnnotate (2025); precision-recall trade-offs
+**Specific risk:** Uncalibrated filters either generate alert fatigue (low false positives, high false negatives) or flood downstream (high false positives). Performance unpredictable; thresholds often arbitrary.
+**Summary:** Uncalibrated filters ineffective; they optimize implicitly for one metric at expense of others. Require calibration against labeled validation data. Thresholds should balance precision-recall based on C2A2's cost structure for different error types.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-011_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: PRESUMPTION-012
-**Original item:** PRESUMPTION-012  
-**Statement:** "Fixed weekly schedule adequate for uneven publication rhythms"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** MODERATE  
-**Key source:** ScienceDirect (2023); ACM (2023); adaptive scheduling research; publication frequency analysis  
-**Specific risk:** Publication arrival is uneven (seasonal, cyclical patterns); fixed schedule misses peaks and over-polls valleys. Information freshness suffers; resource efficiency poor.  
-**Summary:** Research publication follows seasonal/cyclical patterns. Fixed weekly polling suboptimal for variable-rate processes. Adaptive scheduling would improve freshness and efficiency. Recommend monitoring publication rates; adjust frequency dynamically.  
+**Original item:** PRESUMPTION-012
+**Statement:** "Fixed weekly schedule adequate for uneven publication rhythms"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** MODERATE
+**Key source:** ScienceDirect (2023); ACM (2023); adaptive scheduling research; publication frequency analysis
+**Specific risk:** Publication arrival is uneven (seasonal, cyclical patterns); fixed schedule misses peaks and over-polls valleys. Information freshness suffers; resource efficiency poor.
+**Summary:** Research publication follows seasonal/cyclical patterns. Fixed weekly polling suboptimal for variable-rate processes. Adaptive scheduling would improve freshness and efficiency. Recommend monitoring publication rates; adjust frequency dynamically.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-012_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: PRESUMPTION-013
-**Original item:** PRESUMPTION-013  
-**Statement:** "Infrastructure failures caught before compounding"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** STRONGLY CHALLENGED  
-**Strength:** STRONG  
-**Key source:** Medium (2025) silent failures; RudderStack (2025) cascading failures; Security Boulevard (2026); DEV Community (2025); Chaos Engineering  
-**Specific risk:** Silent failures (incorrect results without alerts) go undetected for months. Cascading failures compound across agents before detection. Passive monitoring insufficient; active failure detection required.  
-**Summary:** Silent infrastructure failures are common in complex pipelines; they're more dangerous than visible crashes. Passive monitoring alone is insufficient. C2A2 requires active failure detection (output validation, intentional injection, redundant monitoring) and cascading failure prevention.  
+**Original item:** PRESUMPTION-013
+**Statement:** "Infrastructure failures caught before compounding"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** STRONGLY CHALLENGED
+**Strength:** STRONG
+**Key source:** Medium (2025) silent failures; RudderStack (2025) cascading failures; Security Boulevard (2026); DEV Community (2025); Chaos Engineering
+**Specific risk:** Silent failures (incorrect results without alerts) go undetected for months. Cascading failures compound across agents before detection. Passive monitoring insufficient; active failure detection required.
+**Summary:** Silent infrastructure failures are common in complex pipelines; they're more dangerous than visible crashes. Passive monitoring alone is insufficient. C2A2 requires active failure detection (output validation, intentional injection, redundant monitoring) and cascading failure prevention.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-013_against.md
 
 ---
 
 ### RETURN-TO-14a/14b: PRESUMPTION-014
-**Original item:** PRESUMPTION-014  
-**Statement:** "Cross-tradition signals are structurally meaningful not surface"  
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** MODERATE-TO-STRONG  
-**Key source:** Gentner & Markman (1997, 2000); ArXiv (2406, 2411, 2604); Lakoff (1980); structure-mapping theory  
-**Specific risk:** LLMs struggle with far analogies (structural without surface overlap). Signals often reflect surface similarity without ensuring structural alignment. Inconsistent performance suggests surface-level recognition.  
-**Summary:** Gentner's structure-mapping theory distinguishes surface from structural analogy. LLMs excel at near analogies but fail on far ones. Cross-tradition signals may be surface-level spurious matches. Require explicit structure-mapping validation before treating signals as meaningful.  
+**Original item:** PRESUMPTION-014
+**Statement:** "Cross-tradition signals are structurally meaningful not surface"
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** MODERATE-TO-STRONG
+**Key source:** Gentner & Markman (1997, 2000); ArXiv (2406, 2411, 2604); Lakoff (1980); structure-mapping theory
+**Specific risk:** LLMs struggle with far analogies (structural without surface overlap). Signals often reflect surface similarity without ensuring structural alignment. Inconsistent performance suggests surface-level recognition.
+**Summary:** Gentner's structure-mapping theory distinguishes surface from structural analogy. LLMs excel at near analogies but fail on far ones. Cross-tradition signals may be surface-level spurious matches. Require explicit structure-mapping validation before treating signals as meaningful.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-014_against.md
 
 ---
@@ -386,17 +386,17 @@
 
 ---
 
-**Generated by Agent 15b (Adversarial Searcher)**  
-**Date: 2026-04-13**  
+**Generated by Agent 15b (Adversarial Searcher)**
+**Date: 2026-04-13**
 **Total sources consulted: 75+ peer-reviewed and industry sources**
 
 ---
 
 # LITERATURE SEARCH RETURNS - AGENT 15a SUPPORTIVE SEARCH
 
-**Search date:** 2026-04-13  
-**Search direction:** FOR (supportive)  
-**Total items searched:** 25 (11 ASSUMPTIONS + 14 PRESUMPTIONS)  
+**Search date:** 2026-04-13
+**Search direction:** FOR (supportive)
+**Total items searched:** 25 (11 ASSUMPTIONS + 14 PRESUMPTIONS)
 **Support distribution:** 3 SUPPORTED, 15 PARTIALLY-SUPPORTED, 7 NO-SUPPORT-FOUND
 
 ---
@@ -841,18 +841,18 @@
   Date: 2026-04-13
   Item: ASSUMPTION-014
   Item type: ASSUMPTION (stated)
-  
+
   15a result: PARTIALLY-SUPPORTED
   15a strength: Moderate
   15b result: PARTIALLY-CHALLENGED
   15b strength: Moderate
-  
+
   Net assessment: Evidence is balanced. Three-part disposition frameworks are well-established in M&E and triage literature (15a), but consistently underperform five-level systems in complex evaluation contexts (15b). Neither direction dominates.
-  
+
   Disposition: MONITOR
-  
+
   Reasoning: Both 15a and 15b present moderate evidence. The framework is not wrong, but it may be suboptimal. Since this is the first cycle of the framework's use, collecting operational data on reclassification rates and boundary cases will provide better signal than either literature direction alone. Monitor for empirical evidence that the three categories are insufficient.
-  
+
   If MONITOR:
     What would change the disposition: If >20% of items change categories within one review cycle, expand to 5-category system (INCORPORATE). If categories prove stable and adequate, INCORPORATE as-is.
     Monitoring cadence: Weekly
@@ -870,18 +870,18 @@
   Date: 2026-04-13
   Item: ASSUMPTION-015
   Item type: ASSUMPTION (stated)
-  
+
   15a result: SUPPORTED
   15a strength: Strong
   15b result: CHALLENGED
   15b strength: Strong
-  
+
   Net assessment: Genuinely contested. NIH evidence (15a) shows expertise-driven bias weakly dominates ignorance. But anchoring/epistemic pollution research (15b) shows biased preliminary results contaminate downstream reasoning. The key distinction: the NIH studies concern individual expert bias, while 15b concerns structurally biased pipelines — a different and arguably more dangerous phenomenon.
-  
+
   Disposition: MONITOR
-  
+
   Reasoning: Strong evidence both directions with a critical nuance: 15a's support applies to individual expertise, while 15b's challenge applies to structural/systematic bias. The FOR/AGAINST structure may fall into the latter category (structural bias) where the harms are larger. However, the pipeline is already running and its results exist — the question is now whether to treat those results as decision-gating or hypothesis-generating. MONITOR with explicit bias-awareness protocol.
-  
+
   If MONITOR:
     What would change the disposition: If independent (non-FOR/AGAINST) evaluation of a sample of items yields >30% different dispositions, the bias is decision-relevant (REVISE). If dispositions are stable across methods, INCORPORATE.
     Monitoring cadence: Weekly
@@ -899,18 +899,18 @@
   Date: 2026-04-13
   Item: ASSUMPTION-016
   Item type: ASSUMPTION (stated)
-  
+
   15a result: PARTIALLY-SUPPORTED
   15a strength: Moderate
   15b result: CHALLENGED
   15b strength: Strong
-  
+
   Net assessment: Evidence-gated development is standard practice (15a) but analysis paralysis is well-documented and the agile alternative is strongly supported (15b). The tension is real and context-dependent: gating is appropriate for irreversible high-stakes decisions, but counterproductive for reversible experimental deployments.
-  
+
   Disposition: MONITOR
-  
+
   Reasoning: This is a framework commitment rather than an empirically testable claim. The Phase 2a tripling pilot is experimental and reversible — closer to the agile "try and learn" model than to high-stakes irreversible design. The literature supports both positions depending on context. MONITOR rather than REVISE because the pause is time-bounded and the costs of delay are modest for this project.
-  
+
   If MONITOR:
     What would change the disposition: If the pause extends beyond 2 weeks without actionable decisions, the analysis-paralysis critique applies (REVISE to "time-box evidence reviews"). If the pause leads to design changes that prevent downstream failures, INCORPORATE.
     Monitoring cadence: Weekly
@@ -928,18 +928,18 @@
   Date: 2026-04-13
   Item: PRESUMPTION-015
   Item type: PRESUMPTION (unstated — surfaced by inference)
-  
+
   15a result: NO-SUPPORT-FOUND (Contradicted)
   15a strength: None
   15b result: CHALLENGED
   15b strength: Strong
-  
+
   Net assessment: Both 15a and 15b converge: no support found, fundamental contradiction from mathematical logic (Gödel) and epistemology (bootstrapping problem). This is a PRESUMPTION — designers were unaware of this circularity risk. The challenge is not empirical but logical/mathematical.
-  
+
   Disposition: REVISE
-  
+
   Reasoning: No support from any direction. Gödel's incompleteness theorems and the bootstrapping problem in epistemology establish that self-referential evaluation is fundamentally limited. The pipeline evaluated its own structural claims (ASSUMPTION-003, PRESUMPTION-005) using the structure those claims are about. This circularity is architecturally significant. REVISE with HIGH urgency — the pipeline needs external validation for self-referential items.
-  
+
   If REVISE:
     What is at risk: Epistemic integrity of all dispositions concerning the pipeline's own design (ASSUMPTION-003, PRESUMPTION-005, and now ASSUMPTION-015). Self-evaluation results should be treated as hypotheses, not conclusions.
     Recommended action: (1) Introduce external validation — have Tom or an independent single-agent evaluator assess self-referential items. (2) Mark all self-referential dispositions as PRELIMINARY. (3) Do not use self-referential dispositions to gate design changes.
@@ -957,18 +957,18 @@
   Date: 2026-04-13
   Item: PRESUMPTION-016
   Item type: PRESUMPTION (unstated — surfaced by inference)
-  
+
   15a result: NO-SUPPORT-FOUND (Contradicted)
   15a strength: None
   15b result: PARTIALLY-CHALLENGED
   15b strength: Moderate-Strong
-  
+
   Net assessment: No support found by 15a; systematic review methodology standards explicitly contradict single-day search adequacy. 15b confirms with moderate-strong evidence. The C2A2 pipeline's use of rapid single-pass search is a known methodological limitation.
-  
+
   Disposition: REVISE
-  
+
   Reasoning: Both directions indicate single-day search is insufficient for reliable dispositioning. This is a PRESUMPTION (designers were unaware they were assuming search adequacy). All existing dispositions should be marked PRELIMINARY rather than final. The pipeline itself acknowledges this is its second cycle — treating early dispositions as provisional is prudent.
-  
+
   If REVISE:
     What is at risk: Stability of all 25 prior dispositions and the 7 current dispositions. INCORPORATE items may flip; REVISE items may be false positives.
     Recommended action: (1) Label all dispositions as "rapid review — preliminary." (2) Plan second-pass searches on INCORPORATE and REVISE items using alternative search strategies. (3) Track disposition stability across cycles.
@@ -986,18 +986,18 @@
   Date: 2026-04-13
   Item: PRESUMPTION-017
   Item type: PRESUMPTION (unstated — surfaced by inference)
-  
+
   15a result: PARTIALLY-SUPPORTED (Weak — supports investigation, not dismissal)
   15a strength: Weak
   15b result: CHALLENGED
   15b strength: Strong
-  
+
   Net assessment: 15a's weak support is actually for investigating discrepancies (not for dismissing them as cosmetic). 15b provides strong evidence that small discrepancies are sentinel events in data pipelines. Both directions agree: the 2-item discrepancy warrants investigation, not dismissal.
-  
+
   Disposition: REVISE
-  
+
   Reasoning: Weak support from 15a + strong challenge from 15b → lean REVISE. Critically, even 15a's "support" was for investigating, not dismissing. The data engineering literature is unambiguous: small count mismatches are sentinel events. The 2-item discrepancy between monitor_queue.md (13 → corrected to 17 by 15d) and expected counts indicates the pipeline has a data routing issue that has already been partially addressed but needs root-cause investigation.
-  
+
   If REVISE:
     What is at risk: Data integrity of monitor_queue.md and downstream monitoring by Agent 15d. Items may be silently dropped, leaving assumptions unwatched.
     Recommended action: (1) Audit full data flow from 15c dispositions to monitor_queue.md and revision_flags.md. (2) Implement count assertions at each pipeline stage. (3) Root-cause the original 2-item discrepancy.
@@ -1015,18 +1015,18 @@
   Date: 2026-04-13
   Item: PRESUMPTION-018
   Item type: PRESUMPTION (unstated — surfaced by inference)
-  
+
   15a result: NO-SUPPORT-FOUND (Contradicted)
   15a strength: None
   15b result: CHALLENGED
   15b strength: Strong
-  
+
   Net assessment: Both directions converge: LLMs have no native inter-session memory. Chat is not a reliable memory channel. Context rot degrades accuracy even within sessions. The presumption is directly contradicted by LLM architecture.
-  
+
   Disposition: REVISE
-  
+
   Reasoning: No support from any direction; fundamental contradiction from LLM architecture research. This is a PRESUMPTION — designers were unaware they were relying on chat as persistent memory. The evening-to-morning sync mechanism needs a parallel persistent channel (wiki file, structured summary) rather than relying solely on Chat conversation.
-  
+
   If REVISE:
     What is at risk: Fidelity of evening-to-morning handoff. The 4 primed discussion topics from the evening sync may not all surface in the morning walk session. Critical items may be lost across session boundaries.
     Recommended action: (1) Write evening sync summaries to a persistent wiki file (e.g., wiki/architecture/session_handoffs/). (2) Morning walk sessions should load the handoff file explicitly rather than relying on Chat memory. (3) Track handoff fidelity — compare morning discussion topics against evening delivery.
@@ -1157,8 +1157,8 @@ SYSTEMIC-RISK-FLAG-003: CORRELATED INFRASTRUCTURE FAILURES
 
 # LITERATURE SEARCH RETURNS — FIFTH CYCLE (2026-04-15)
 
-**Search date:** 2026-04-15  
-**Items searched:** 11 (6 ASSUMPTIONS + 5 PRESUMPTIONS)  
+**Search date:** 2026-04-15
+**Items searched:** 11 (6 ASSUMPTIONS + 5 PRESUMPTIONS)
 **Pipeline agents:** 15a (FOR), 15b (AGAINST), 15c (Net Evaluator)
 
 ---
@@ -1166,92 +1166,92 @@ SYSTEMIC-RISK-FLAG-003: CORRELATED INFRASTRUCTURE FAILURES
 ## 15a RETURNS (Supportive Search)
 
 ### RETURN-TO-14a: ASSUMPTION-022
-**Search direction:** FOR (supportive)  
-**Result:** PARTIALLY-SUPPORTED  
-**Strength:** Moderate  
-**Key source:** Kirchhoff et al. (2018) Markov blankets of life; Group-level active inference (PMC 2025); Markov blanket density (arxiv 2025)  
-**Summary:** FEP literature supports multi-scale boundary applicability, but as modeling framework not universal law. "Applies literally at every level" exceeds what literature supports.  
+**Search direction:** FOR (supportive)
+**Result:** PARTIALLY-SUPPORTED
+**Strength:** Moderate
+**Key source:** Kirchhoff et al. (2018) Markov blankets of life; Group-level active inference (PMC 2025); Markov blanket density (arxiv 2025)
+**Summary:** FEP literature supports multi-scale boundary applicability, but as modeling framework not universal law. "Applies literally at every level" exceeds what literature supports.
 **Full results:** wiki/architecture/lit_search_results/for/ASSUMPTION-022_for.md
 
 ### RETURN-TO-14a: ASSUMPTION-023
-**Search direction:** FOR (supportive)  
-**Result:** PARTIALLY-SUPPORTED  
-**Strength:** Weak  
-**Key source:** Perpetual Pilot Trap literature (Agility-at-Scale 2025); KPMG AI Pulse Q1 2026  
-**Summary:** Some support for commitment over perpetual piloting, but 33 agents exceeds documented successful deployments. Support is indirect.  
+**Search direction:** FOR (supportive)
+**Result:** PARTIALLY-SUPPORTED
+**Strength:** Weak
+**Key source:** Perpetual Pilot Trap literature (Agility-at-Scale 2025); KPMG AI Pulse Q1 2026
+**Summary:** Some support for commitment over perpetual piloting, but 33 agents exceeds documented successful deployments. Support is indirect.
 **Full results:** wiki/architecture/lit_search_results/for/ASSUMPTION-023_for.md
 
 ### RETURN-TO-14a: ASSUMPTION-024
-**Search direction:** FOR (supportive)  
-**Result:** SUPPORTED  
-**Strength:** Moderate-Strong  
-**Key source:** Wimsatt (1981) Robustness; Kuorikoski & Marchionni Evidential Diversity; 2024 epistemic granularity  
-**Summary:** Triangulation/overdetermination is well-supported as confirmatory strategy. Key requirement: genuine independence of evidence streams.  
+**Search direction:** FOR (supportive)
+**Result:** SUPPORTED
+**Strength:** Moderate-Strong
+**Key source:** Wimsatt (1981) Robustness; Kuorikoski & Marchionni Evidential Diversity; 2024 epistemic granularity
+**Summary:** Triangulation/overdetermination is well-supported as confirmatory strategy. Key requirement: genuine independence of evidence streams.
 **Full results:** wiki/architecture/lit_search_results/for/ASSUMPTION-024_for.md
 
 ### RETURN-TO-14a: ASSUMPTION-025
-**Search direction:** FOR (supportive)  
-**Result:** PARTIALLY-SUPPORTED  
-**Strength:** Moderate  
-**Key source:** Hoffman Interface Theory; Lis (2025) HoTT-RO v2; Rovelli Relational QM; Maldacena (2024)  
-**Summary:** Substantive support within specific theoretical frameworks; active research frontier; not consensus.  
+**Search direction:** FOR (supportive)
+**Result:** PARTIALLY-SUPPORTED
+**Strength:** Moderate
+**Key source:** Hoffman Interface Theory; Lis (2025) HoTT-RO v2; Rovelli Relational QM; Maldacena (2024)
+**Summary:** Substantive support within specific theoretical frameworks; active research frontier; not consensus.
 **Full results:** wiki/architecture/lit_search_results/for/ASSUMPTION-025_for.md
 
 ### RETURN-TO-14a: ASSUMPTION-026
-**Search direction:** FOR (supportive)  
-**Result:** PARTIALLY-SUPPORTED + NOVELTY FLAG  
-**Strength:** Moderate  
-**Key source:** MABS Workshop Series (27 years); AI4ABM (ICLR 2023); ABM economics literature (2026)  
-**Summary:** ABM tradition supports agents-as-instruments; specific LLM-tradition-agent methodology is NOVEL.  
-**NOVELTY-FLAG:** No existing literature addresses treating intellectual traditions as LLM-instantiated cognitive agents.  
+**Search direction:** FOR (supportive)
+**Result:** PARTIALLY-SUPPORTED + NOVELTY FLAG
+**Strength:** Moderate
+**Key source:** MABS Workshop Series (27 years); AI4ABM (ICLR 2023); ABM economics literature (2026)
+**Summary:** ABM tradition supports agents-as-instruments; specific LLM-tradition-agent methodology is NOVEL.
+**NOVELTY-FLAG:** No existing literature addresses treating intellectual traditions as LLM-instantiated cognitive agents.
 **Full results:** wiki/architecture/lit_search_results/for/ASSUMPTION-026_for.md
 
 ### RETURN-TO-14a: ASSUMPTION-027
-**Search direction:** FOR (supportive)  
-**Result:** NO-SUPPORT-FOUND (Contradicting)  
-**Strength:** None  
-**Key source:** Decision fatigue systematic review (2025, 82 studies); Maier et al. 2025  
-**Summary:** Literature contradicts batch triage adequacy. 82-study review finds consistent degradation in serial processing.  
+**Search direction:** FOR (supportive)
+**Result:** NO-SUPPORT-FOUND (Contradicting)
+**Strength:** None
+**Key source:** Decision fatigue systematic review (2025, 82 studies); Maier et al. 2025
+**Summary:** Literature contradicts batch triage adequacy. 82-study review finds consistent degradation in serial processing.
 **Full results:** wiki/architecture/lit_search_results/for/ASSUMPTION-027_for.md
 
 ### RETURN-TO-14b: PRESUMPTION-024
-**Search direction:** FOR (supportive)  
-**Result:** PARTIALLY-SUPPORTED  
-**Strength:** Weak  
-**Key source:** Wimsatt (1981); Kuorikoski & Marchionni; general robustness analysis  
-**Summary:** General triangulation principle supports genuineness if independence holds. But C2A2's traditions share same LLM backbone — independence unestablished.  
+**Search direction:** FOR (supportive)
+**Result:** PARTIALLY-SUPPORTED
+**Strength:** Weak
+**Key source:** Wimsatt (1981); Kuorikoski & Marchionni; general robustness analysis
+**Summary:** General triangulation principle supports genuineness if independence holds. But C2A2's traditions share same LLM backbone — independence unestablished.
 **Full results:** wiki/architecture/lit_search_results/for/PRESUMPTION-024_for.md
 
 ### RETURN-TO-14b: PRESUMPTION-025
-**Search direction:** FOR (supportive)  
-**Result:** PARTIALLY-SUPPORTED  
-**Strength:** Weak  
-**Key source:** Perpetual Pilot Trap; decision theory under uncertainty  
-**Summary:** Indirect support for proceeding when progress made. Does not address operational-vs-epistemic readiness distinction.  
+**Search direction:** FOR (supportive)
+**Result:** PARTIALLY-SUPPORTED
+**Strength:** Weak
+**Key source:** Perpetual Pilot Trap; decision theory under uncertainty
+**Summary:** Indirect support for proceeding when progress made. Does not address operational-vs-epistemic readiness distinction.
 **Full results:** wiki/architecture/lit_search_results/for/PRESUMPTION-025_for.md
 
 ### RETURN-TO-14b: PRESUMPTION-026
-**Search direction:** FOR (supportive)  
-**Result:** NO-SUPPORT-FOUND (Contradicting)  
-**Strength:** None  
-**Key source:** Decision fatigue systematic review (2025, 82 studies)  
-**Summary:** Same as ASSUMPTION-027. Literature directly contradicts.  
+**Search direction:** FOR (supportive)
+**Result:** NO-SUPPORT-FOUND (Contradicting)
+**Strength:** None
+**Key source:** Decision fatigue systematic review (2025, 82 studies)
+**Summary:** Same as ASSUMPTION-027. Literature directly contradicts.
 **Full results:** wiki/architecture/lit_search_results/for/PRESUMPTION-026_for.md
 
 ### RETURN-TO-14b: PRESUMPTION-027
-**Search direction:** FOR (supportive)  
-**Result:** PARTIALLY-SUPPORTED  
-**Strength:** Weak-Moderate  
-**Key source:** Cold email response rate data (2025-2026); academic outreach literature  
-**Summary:** 3-5% baseline, 10%+ with personalization. Engagement possible but not assured.  
+**Search direction:** FOR (supportive)
+**Result:** PARTIALLY-SUPPORTED
+**Strength:** Weak-Moderate
+**Key source:** Cold email response rate data (2025-2026); academic outreach literature
+**Summary:** 3-5% baseline, 10%+ with personalization. Engagement possible but not assured.
 **Full results:** wiki/architecture/lit_search_results/for/PRESUMPTION-027_for.md
 
 ### RETURN-TO-14b: PRESUMPTION-028
-**Search direction:** FOR (supportive)  
-**Result:** NO-SUPPORT-FOUND  
-**Strength:** None  
-**Key source:** Queue theory; iterative pipeline literature  
-**Summary:** Zero-queue is transient, not stable endpoint. Framing correction.  
+**Search direction:** FOR (supportive)
+**Result:** NO-SUPPORT-FOUND
+**Strength:** None
+**Key source:** Queue theory; iterative pipeline literature
+**Summary:** Zero-queue is transient, not stable endpoint. Framing correction.
 **Full results:** wiki/architecture/lit_search_results/for/PRESUMPTION-028_for.md
 
 ---
@@ -1259,102 +1259,102 @@ SYSTEMIC-RISK-FLAG-003: CORRELATED INFRASTRUCTURE FAILURES
 ## 15b RETURNS (Adversarial Search)
 
 ### RETURN-TO-14a: ASSUMPTION-022
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** Strong  
-**Key source:** Raja et al. (2021) "Markov Blanket Trick"; Biehl et al. (2021); tautology critique  
-**Specific risk:** FEP universality claim may be tautological — if it "applies to everything," it explains nothing specifically.  
-**Summary:** Multiple formal critiques identify mathematical problems with blanket formalism. Scope inflation concern.  
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** Strong
+**Key source:** Raja et al. (2021) "Markov Blanket Trick"; Biehl et al. (2021); tautology critique
+**Specific risk:** FEP universality claim may be tautological — if it "applies to everything," it explains nothing specifically.
+**Summary:** Multiple formal critiques identify mathematical problems with blanket formalism. Scope inflation concern.
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-022_against.md
 
 ### RETURN-TO-14a: ASSUMPTION-023
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** Strong  
-**Key source:** Google Research (2025) agent scaling; enterprise deployment data (78% failure); 17x error amplification  
-**Specific risk:** Coordination tax saturates at N≈4; 33 agents is 6-8x beyond threshold.  
-**Summary:** Multi-agent scaling research strongly challenges 33-agent deployment viability.  
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** Strong
+**Key source:** Google Research (2025) agent scaling; enterprise deployment data (78% failure); 17x error amplification
+**Specific risk:** Coordination tax saturates at N≈4; 33 agents is 6-8x beyond threshold.
+**Summary:** Multi-agent scaling research strongly challenges 33-agent deployment viability.
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-023_against.md
 
 ### RETURN-TO-14a: ASSUMPTION-024
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** PARTIALLY-CHALLENGED  
-**Strength:** Moderate  
-**Key source:** LLM hallucination research (46% reasoning errors); epistemic granularity (2024); apophenia literature  
-**Specific risk:** If FINDING-004/009/011 share common LLM bias, convergence is spurious.  
-**Summary:** General principle valid but independence of C2A2 findings unestablished.  
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** PARTIALLY-CHALLENGED
+**Strength:** Moderate
+**Key source:** LLM hallucination research (46% reasoning errors); epistemic granularity (2024); apophenia literature
+**Specific risk:** If FINDING-004/009/011 share common LLM bias, convergence is spurious.
+**Summary:** General principle valid but independence of C2A2 findings unestablished.
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-024_against.md
 
 ### RETURN-TO-14a: ASSUMPTION-025
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** PARTIALLY-CHALLENGED  
-**Strength:** Moderate  
-**Key source:** Realist ontology (mainstream philosophy); classical mereology; domain transfer concerns  
-**Specific risk:** Minority position in philosophy; lacks clear operational implications for C2A2.  
-**Summary:** Contested philosophical position without consensus or operational meaning.  
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** PARTIALLY-CHALLENGED
+**Strength:** Moderate
+**Key source:** Realist ontology (mainstream philosophy); classical mereology; domain transfer concerns
+**Specific risk:** Minority position in philosophy; lacks clear operational implications for C2A2.
+**Summary:** Contested philosophical position without consensus or operational meaning.
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-025_against.md
 
 ### RETURN-TO-14a: ASSUMPTION-026
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** Strong  
-**Key source:** LLM hallucination (46% reasoning errors); KnowFM 2025 analogical hallucination workshop; AI agent hallucination survey  
-**Specific risk:** LLM "behavioral data" may be training-data artifacts, not genuine tradition behavior.  
-**Summary:** Hallucination literature directly challenges "genuine behavioral data" claim.  
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** Strong
+**Key source:** LLM hallucination (46% reasoning errors); KnowFM 2025 analogical hallucination workshop; AI agent hallucination survey
+**Specific risk:** LLM "behavioral data" may be training-data artifacts, not genuine tradition behavior.
+**Summary:** Hallucination literature directly challenges "genuine behavioral data" claim.
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-026_against.md
 
 ### RETURN-TO-14a: ASSUMPTION-027
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** Strong  
-**Key source:** Decision fatigue systematic review (82 studies); clinical decision-making biases; analyst forecast degradation  
-**Specific risk:** Later items in 16-item batch received heuristic processing; HIGH urgency items may be undertreated.  
-**Summary:** Serial processing degrades quality; batch triage produces lower-quality decisions.  
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** Strong
+**Key source:** Decision fatigue systematic review (82 studies); clinical decision-making biases; analyst forecast degradation
+**Specific risk:** Later items in 16-item batch received heuristic processing; HIGH urgency items may be undertreated.
+**Summary:** Serial processing degrades quality; batch triage produces lower-quality decisions.
 **Full results:** wiki/architecture/lit_search_results/against/ASSUMPTION-027_against.md
 
 ### RETURN-TO-14b: PRESUMPTION-024
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** Strong  
-**Key source:** Apophenia (Psychology Today); LLM hallucination (46%); KnowFM 2025; construct validity  
-**Specific risk:** Boundary convergence may be C2A2's largest false positive if selection effect.  
-**Summary:** System designed to find patterns will find them regardless of genuineness. SYSTEMIC-RISK-FLAG raised.  
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** Strong
+**Key source:** Apophenia (Psychology Today); LLM hallucination (46%); KnowFM 2025; construct validity
+**Specific risk:** Boundary convergence may be C2A2's largest false positive if selection effect.
+**Summary:** System designed to find patterns will find them regardless of genuineness. SYSTEMIC-RISK-FLAG raised.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-024_against.md
 
 ### RETURN-TO-14b: PRESUMPTION-025
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** Moderate-Strong  
-**Key source:** Enterprise scaling failure rates (78%); sunk cost literature; Gartner 40% cancellation prediction  
-**Specific risk:** Operational cleanup conflated with epistemic readiness; sunk cost bias.  
-**Summary:** Literature distinguishes operational from epistemic readiness; C2A2 may have conflated them.  
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** Moderate-Strong
+**Key source:** Enterprise scaling failure rates (78%); sunk cost literature; Gartner 40% cancellation prediction
+**Specific risk:** Operational cleanup conflated with epistemic readiness; sunk cost bias.
+**Summary:** Literature distinguishes operational from epistemic readiness; C2A2 may have conflated them.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-025_against.md
 
 ### RETURN-TO-14b: PRESUMPTION-026
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** CHALLENGED  
-**Strength:** Strong  
-**Key source:** Same as ASSUMPTION-027 (decision fatigue, 82 studies, surrogate decision-maker fatigue)  
-**Specific risk:** HIGH urgency items processed late in batch may have received inadequate deliberation.  
-**Summary:** Batch ≠ individual review quality. Strong, robust finding across 82 studies.  
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** CHALLENGED
+**Strength:** Strong
+**Key source:** Same as ASSUMPTION-027 (decision fatigue, 82 studies, surrogate decision-maker fatigue)
+**Specific risk:** HIGH urgency items processed late in batch may have received inadequate deliberation.
+**Summary:** Batch ≠ individual review quality. Strong, robust finding across 82 studies.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-026_against.md
 
 ### RETURN-TO-14b: PRESUMPTION-027
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** PARTIALLY-CHALLENGED  
-**Strength:** Moderate  
-**Key source:** Cold email response rates (3-5%); academic inbox triage; interdisciplinary collaboration barriers  
-**Specific risk:** Non-response most likely; "substantive engagement" requires exceptional outreach quality.  
-**Summary:** Low baseline rates; busy academics triage heavily; novel computational frameworks may be dismissed.  
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** PARTIALLY-CHALLENGED
+**Strength:** Moderate
+**Key source:** Cold email response rates (3-5%); academic inbox triage; interdisciplinary collaboration barriers
+**Specific risk:** Non-response most likely; "substantive engagement" requires exceptional outreach quality.
+**Summary:** Low baseline rates; busy academics triage heavily; novel computational frameworks may be dismissed.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-027_against.md
 
 ### RETURN-TO-14b: PRESUMPTION-028
-**Search direction:** AGAINST (disconfirmatory)  
-**Result:** PARTIALLY-CHALLENGED  
-**Strength:** Moderate  
-**Key source:** Queue theory; iterative pipeline design; fluid queuing models  
-**Specific risk:** "Completion" framing may cause premature relaxation of monitoring.  
-**Summary:** Zero-queue is transient in continuous-input systems. Framing correction, not serious risk.  
+**Search direction:** AGAINST (disconfirmatory)
+**Result:** PARTIALLY-CHALLENGED
+**Strength:** Moderate
+**Key source:** Queue theory; iterative pipeline design; fluid queuing models
+**Specific risk:** "Completion" framing may cause premature relaxation of monitoring.
+**Summary:** Zero-queue is transient in continuous-input systems. Framing correction, not serious risk.
 **Full results:** wiki/architecture/lit_search_results/against/PRESUMPTION-028_against.md
 
 ---
@@ -2659,8 +2659,8 @@ The fact that this no-op entry can be predicted from already-dispositioned PRESU
 ---
 
 # 2026-04-27 RUN — c2a2-lit-search-pipeline
-**Date:** 2026-04-27  
-**Items processed:** 57 (18 new + 39 re-triggered)  
+**Date:** 2026-04-27
+**Items processed:** 57 (18 new + 39 re-triggered)
 **Pipeline:** Agents 15a + 15b + 15c
 
 ## NEW ITEMS — Returns from 15a + 15b + 15c
@@ -6559,9 +6559,9 @@ Full per-item cycle-1 append blocks: see lit_search_results/for/<ITEM-ID>_for.md
 ---
 
 ## BATCH 2026-05-21 LIT-PIPELINE (Narrative Connectome cohort; dispositions 2026-05-21)
-**Search date:** 2026-05-21  
-**Items:** 17 (7 ASSUMPTIONs: 201,202,204-208 + 10 PRESUMPTIONs: 221-230) from the 2026-05-20 14a/14b batch  
-**Dispositions:** 2 INCORPORATE (PREMISE-042,043), 10 MONITOR (MONITOR-210..219), 5 REVISE (REVISE-042..046)  
+**Search date:** 2026-05-21
+**Items:** 17 (7 ASSUMPTIONs: 201,202,204-208 + 10 PRESUMPTIONs: 221-230) from the 2026-05-20 14a/14b batch
+**Dispositions:** 2 INCORPORATE (PREMISE-042,043), 10 MONITOR (MONITOR-210..219), 5 REVISE (REVISE-042..046)
 **Grounding:** training-corpus grounding per ASSUMPTION-199 convention; FLAG E / REVISE-040 noted
 
 ---
@@ -6569,21 +6569,21 @@ Full per-item cycle-1 append blocks: see lit_search_results/for/<ITEM-ID>_for.md
 ### ASSUMPTION-201 (ASSUMPTION)
 **Statement:** The PRS view is a narrative connectome; a triplet is a complete model and, equivalently, a compression (corollary routed, not the framing).
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Moderate  
-- Key source: Schank, R. & Abelson, R. (1977). "Scripts, Plans, Goals and Understanding." — Narratives function as schematic, compressed models of stereotyped event sequences.  
-- Summary: There is solid grounding for narrative-as-model (scripts, schemas, story grammars, Bruner) and for the analogy that a bounded unit can be a complete model (Hawkins' cortical columns). The compression half also has a lineage (Schmidhuber). Support is partial because the literature treats narrative models as schematic and selective, not complete, and the testable compression form is deferred to ASSUMPTION-208/PRESUMPTION-222.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Moderate
+- Key source: Schank, R. & Abelson, R. (1977). "Scripts, Plans, Goals and Understanding." — Narratives function as schematic, compressed models of stereotyped event sequences.
+- Summary: There is solid grounding for narrative-as-model (scripts, schemas, story grammars, Bruner) and for the analogy that a bounded unit can be a complete model (Hawkins' cortical columns). The compression half also has a lineage (Schmidhuber). Support is partial because the literature treats narrative models as schematic and selective, not complete, and the testable compression form is deferred to ASSUMPTION-208/PRESUMPTION-222.
 - Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-201_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: PARTIALLY-CHALLENGED | Strength: Moderate  
-- Key source: Box, G. (1976). "Science and Statistics." — "All models are wrong"; no triplet is "complete." Directly challenges the completeness claim.  
-- Specific risk: Treating a triplet as a 'complete model' invites over-reading — metrics that assume each triplet captures the whole when it is a curated fragment.  
-- Summary: The 'complete model' claim is the weak point: models are partial by definition (Box), story-grammar precedents positing complete slot-structures failed empirically (Black & Wilensky), and narrative is constitutively selective. The compression equivalence inherits description-length definability problems, and the connectome framing transfers a neural metaphor without a transfer-condition check (PRESUMPTION-221).  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: PARTIALLY-CHALLENGED | Strength: Moderate
+- Key source: Box, G. (1976). "Science and Statistics." — "All models are wrong"; no triplet is "complete." Directly challenges the completeness claim.
+- Specific risk: Treating a triplet as a 'complete model' invites over-reading — metrics that assume each triplet captures the whole when it is a curated fragment.
+- Summary: The 'complete model' claim is the weak point: models are partial by definition (Box), story-grammar precedents positing complete slot-structures failed empirically (Black & Wilensky), and narrative is constitutively selective. The compression equivalence inherits description-length definability problems, and the connectome framing transfers a neural metaphor without a transfer-condition check (PRESUMPTION-221).
 - Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-201_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-210 (Priority Medium, Weekly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate). Largely framework framing; the load-bearing testable parts are carried by ASSUMPTION-208 and PRESUMPTION-221/222.  
+DISPOSITION-15c: MONITOR -> MONITOR-210 (Priority Medium, Weekly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate). Largely framework framing; the load-bearing testable parts are carried by ASSUMPTION-208 and PRESUMPTION-221/222.
 - Reasoning: The contested element is the 'complete model' wording, not the framing's usefulness. MONITOR rather than INCORPORATE (the completeness claim is challenged) or REVISE (it is framework framing, not an operational error). Couples PRESUMPTION-221.
 
 ---
@@ -6591,21 +6591,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-210 (Priority Medium, Weekly)
 ### ASSUMPTION-202 (ASSUMPTION)
 **Statement:** Synergistic coils are association fibers binding narrative modules (testable corollary: coil density tracks independent integration).
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Moderate  
-- Key source: Sporns, O. (2010). "Networks of the Brain." — Long-range association fibers integrate functionally segregated modules; integration/segregation is a core, measurable property.  
-- Summary: The neuroscience is sound: association fibers bind segregated modules and integration is measurable via graph metrics, giving moderate analogical support for treating cross-tradition coils as integrators and for the density-tracks-integration corollary in principle.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Moderate
+- Key source: Sporns, O. (2010). "Networks of the Brain." — Long-range association fibers integrate functionally segregated modules; integration/segregation is a core, measurable property.
+- Summary: The neuroscience is sound: association fibers bind segregated modules and integration is measurable via graph metrics, giving moderate analogical support for treating cross-tradition coils as integrators and for the density-tracks-integration corollary in principle.
 - Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-202_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: PARTIALLY-CHALLENGED | Strength: Moderate  
-- Key source: Fortunato & Barthelemy (2007). "Resolution limit in community detection," PNAS. — Modularity-based integration/module measures are resolution-dependent; density-tracks-integration can be a resolution artifact.  
-- Specific risk: Coil-density metrics could be reported as 'integration' while actually measuring curation density or detection resolution.  
-- Summary: The analogy is challengeable on three fronts: integration/modularity metrics are resolution-dependent (Fortunato & Barthelemy), neural metaphors can impose structure absent a substrate match, and density is not the same as functional integration. The corollary risks circularity if coils are detected by co-occurrence and integration is then read off coil density.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: PARTIALLY-CHALLENGED | Strength: Moderate
+- Key source: Fortunato & Barthelemy (2007). "Resolution limit in community detection," PNAS. — Modularity-based integration/module measures are resolution-dependent; density-tracks-integration can be a resolution artifact.
+- Specific risk: Coil-density metrics could be reported as 'integration' while actually measuring curation density or detection resolution.
+- Summary: The analogy is challengeable on three fronts: integration/modularity metrics are resolution-dependent (Fortunato & Barthelemy), neural metaphors can impose structure absent a substrate match, and density is not the same as functional integration. The corollary risks circularity if coils are detected by co-occurrence and integration is then read off coil density.
 - Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-202_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-211 (Priority Medium, Weekly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate). The integration formalism transfers loosely, but resolution-dependence and circularity risk are real.  
+DISPOSITION-15c: MONITOR -> MONITOR-211 (Priority Medium, Weekly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate). The integration formalism transfers loosely, but resolution-dependence and circularity risk are real.
 - Reasoning: Moderate support meets moderate challenge; the corollary is testable but currently at risk of circularity. MONITOR with a concrete remediation. Joins PRESUMPTION-221 analogy-transfer.
 
 ---
@@ -6613,21 +6613,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-211 (Priority Medium, Weekly)
 ### ASSUMPTION-204 (ASSUMPTION)
 **Statement:** Coil altitude should encode discovery-time (~2026), not idea-age ("axis follows model").
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Moderate  
-- Key source: Snodgrass, R. (1999). "Developing Time-Oriented Database Applications" (valid-time vs transaction-time / bitemporal). — A system must choose which time it encodes; transaction/discovery time is a legitimate, decision-relevant axis.  
-- Summary: Choosing discovery/provenance time as the altitude axis is defensible: temporal-data theory recognizes multiple legitimate time axes, and provenance time is decision-relevant for 'what the system learned when.' Support is partial because the choice is genuinely underdetermined (PRESUMPTION-225) — idea-age is also defensible.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Moderate
+- Key source: Snodgrass, R. (1999). "Developing Time-Oriented Database Applications" (valid-time vs transaction-time / bitemporal). — A system must choose which time it encodes; transaction/discovery time is a legitimate, decision-relevant axis.
+- Summary: Choosing discovery/provenance time as the altitude axis is defensible: temporal-data theory recognizes multiple legitimate time axes, and provenance time is decision-relevant for 'what the system learned when.' Support is partial because the choice is genuinely underdetermined (PRESUMPTION-225) — idea-age is also defensible.
 - Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-204_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: PARTIALLY-CHALLENGED | Strength: Weak-Moderate  
-- Key source: Bitemporal modeling (Snodgrass). — Encoding only one time discards the other; if users care about idea-age, discovery-time misleads.  
-- Specific risk: Users may misread altitude as idea-age; lineage relationships get visually inverted.  
-- Summary: The main challenge is underdetermination: no single time axis is uniquely right (Munzner; bitemporal theory), and discovery-time can introduce a presentist distortion of intellectual lineage. The challenge is weak-moderate because discovery-time is a reasonable default, not an error.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: PARTIALLY-CHALLENGED | Strength: Weak-Moderate
+- Key source: Bitemporal modeling (Snodgrass). — Encoding only one time discards the other; if users care about idea-age, discovery-time misleads.
+- Specific risk: Users may misread altitude as idea-age; lineage relationships get visually inverted.
+- Summary: The main challenge is underdetermination: no single time axis is uniquely right (Munzner; bitemporal theory), and discovery-time can introduce a presentist distortion of intellectual lineage. The challenge is weak-moderate because discovery-time is a reasonable default, not an error.
 - Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-204_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-212 (Priority Low-Medium, Monthly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Weak-Moderate). Discovery-time is a reasonable but underdetermined default.  
+DISPOSITION-15c: MONITOR -> MONITOR-212 (Priority Low-Medium, Monthly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Weak-Moderate). Discovery-time is a reasonable but underdetermined default.
 - Reasoning: Low-stakes design choice with reasonable grounding but genuine underdetermination. MONITOR with a cheap fix (toggle). Joins OPEN-057, PRESUMPTION-225.
 
 ---
@@ -6635,21 +6635,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-212 (Priority Low-Medium, Monthly)
 ### ASSUMPTION-205 (ASSUMPTION)
 **Statement:** Cross-tradition convergence is analogical not verbatim — only 3 literal shared-resource hubs (max 2 traditions each).
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: SUPPORTED | Strength: Strong  
-- Key source: Gentner, D. (1983). "Structure-Mapping," Cognitive Science. — Cross-domain convergence is relational/structural, not surface/lexical; foundational support that real convergence is analogical.  
-- Summary: The conceptual claim — that genuine cross-tradition convergence is predominantly analogical/structural rather than verbatim — is strongly supported across analogy theory (Gentner; Hofstadter), consilience/interdisciplinarity studies, and the vocabulary problem (Furnas), which predicts exactly that literal shared-resource hubs will be sparse. The sparse literal-hub count is consistent with, but not itself strong evidence for, the principle.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: SUPPORTED | Strength: Strong
+- Key source: Gentner, D. (1983). "Structure-Mapping," Cognitive Science. — Cross-domain convergence is relational/structural, not surface/lexical; foundational support that real convergence is analogical.
+- Summary: The conceptual claim — that genuine cross-tradition convergence is predominantly analogical/structural rather than verbatim — is strongly supported across analogy theory (Gentner; Hofstadter), consilience/interdisciplinarity studies, and the vocabulary problem (Furnas), which predicts exactly that literal shared-resource hubs will be sparse. The sparse literal-hub count is consistent with, but not itself strong evidence for, the principle.
 - Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-205_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: PARTIALLY-CHALLENGED | Strength: Weak-Moderate  
-- Key source: Christen (2012) "Data Matching" (entity resolution). — Literal string-match counts are method-dependent; "only 3 literal hubs" may be a normalization artifact (PRESUMPTION-228), so the cited evidence is weak.  
-- Specific risk: If DECISION-040 relies on the literal-hub count rather than the principle, it rests on an artifact.  
-- Summary: There is no credible literature against the core principle (convergence is mainly analogical) — that is well established. The challenge is narrower and real: the specific evidence offered (3 literal hubs) is measurement-dependent and should not be load-bearing (PRESUMPTION-228). Also, 'analogical not verbatim' slightly overstates — some convergence is literal (shared formal results).  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: PARTIALLY-CHALLENGED | Strength: Weak-Moderate
+- Key source: Christen (2012) "Data Matching" (entity resolution). — Literal string-match counts are method-dependent; "only 3 literal hubs" may be a normalization artifact (PRESUMPTION-228), so the cited evidence is weak.
+- Specific risk: If DECISION-040 relies on the literal-hub count rather than the principle, it rests on an artifact.
+- Summary: There is no credible literature against the core principle (convergence is mainly analogical) — that is well established. The challenge is narrower and real: the specific evidence offered (3 literal hubs) is measurement-dependent and should not be load-bearing (PRESUMPTION-228). Also, 'analogical not verbatim' slightly overstates — some convergence is literal (shared formal results).
 - Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-205_against.md
 
-DISPOSITION-15c: INCORPORATE -> PREMISE-042 (Confidence Moderate)  
-- Net assessment: 15a SUPPORTED (Strong, for the principle); 15b PARTIALLY-CHALLENGED (Weak-Moderate, against the measurement only).  
+DISPOSITION-15c: INCORPORATE -> PREMISE-042 (Confidence Moderate)
+- Net assessment: 15a SUPPORTED (Strong, for the principle); 15b PARTIALLY-CHALLENGED (Weak-Moderate, against the measurement only).
 - Reasoning: Strong support for the principle with only a weak/measurement-scoped challenge -> INCORPORATE with caveats. Confidence Moderate (not High) because the item as written fuses a strong principle with an artifact-prone count; the count is explicitly excluded and routed to PRESUMPTION-228. Consistency-checked against ASSUMPTION-005/006 (traditions/PRS as imperfect units): no contradiction — this premise asserts the FORM of convergence, not that traditions are crisp.
 
 ---
@@ -6657,21 +6657,21 @@ DISPOSITION-15c: INCORPORATE -> PREMISE-042 (Confidence Moderate)
 ### ASSUMPTION-206 (ASSUMPTION)
 **Statement:** Generative-coil detection is lexical-first (v1, 17 chains); semantic/embedding is v2.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: SUPPORTED | Strength: Strong  
-- Key source: Baseline-first ML practice (Zinkevich, "Rules of Machine Learning"). — A high-precision lexical baseline before semantic models is standard, low-risk staging.  
-- Summary: Lexical-first detection is sound engineering: exact/string matching gives high-precision, auditable results appropriate for a v1, and deferring semantic/embedding methods to v2 is the standard precision-then-recall progression. The literature both supports the staging and predicts the limitation (low recall) that v2 is meant to fix.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: SUPPORTED | Strength: Strong
+- Key source: Baseline-first ML practice (Zinkevich, "Rules of Machine Learning"). — A high-precision lexical baseline before semantic models is standard, low-risk staging.
+- Summary: Lexical-first detection is sound engineering: exact/string matching gives high-precision, auditable results appropriate for a v1, and deferring semantic/embedding methods to v2 is the standard precision-then-recall progression. The literature both supports the staging and predicts the limitation (low recall) that v2 is meant to fix.
 - Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-206_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: PARTIALLY-CHALLENGED | Strength: Weak-Moderate  
-- Key source: Furnas et al. (1987) "The vocabulary problem." — Lexical matching misses the majority of semantically equivalent handoffs; "adequately recalls" is false for v1.  
-- Specific risk: Treating the 17-chain v1 result as complete (rather than a high-precision sample) would understate connectivity.  
-- Summary: The only real challenge is to 'adequately recalls': lexical detection has known low recall (vocabulary problem), so v1's 17 chains likely undercount true coils substantially. But the assumption explicitly concedes this by scheduling semantic detection as v2, so the challenge targets a claim the assumption does not make.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: PARTIALLY-CHALLENGED | Strength: Weak-Moderate
+- Key source: Furnas et al. (1987) "The vocabulary problem." — Lexical matching misses the majority of semantically equivalent handoffs; "adequately recalls" is false for v1.
+- Specific risk: Treating the 17-chain v1 result as complete (rather than a high-precision sample) would understate connectivity.
+- Summary: The only real challenge is to 'adequately recalls': lexical detection has known low recall (vocabulary problem), so v1's 17 chains likely undercount true coils substantially. But the assumption explicitly concedes this by scheduling semantic detection as v2, so the challenge targets a claim the assumption does not make.
 - Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-206_against.md
 
-DISPOSITION-15c: INCORPORATE -> PREMISE-043 (Confidence High)  
-- Net assessment: 15a SUPPORTED (Strong); 15b PARTIALLY-CHALLENGED (Weak-Moderate, recall only, already conceded by the v2 plan).  
+DISPOSITION-15c: INCORPORATE -> PREMISE-043 (Confidence High)
+- Net assessment: 15a SUPPORTED (Strong); 15b PARTIALLY-CHALLENGED (Weak-Moderate, recall only, already conceded by the v2 plan).
 - Reasoning: Strong support for staged precision-first detection; the only challenge (low recall) is explicitly anticipated by the v2 plan. INCORPORATE at High confidence with the 15b mitigation folded in (treat v1 as a lower bound; measure recall). Consistency-checked: reinforces PREMISE-042 (literal overlap undercounts).
 
 ---
@@ -6679,21 +6679,21 @@ DISPOSITION-15c: INCORPORATE -> PREMISE-043 (Confidence High)
 ### ASSUMPTION-207 (ASSUMPTION)
 **Statement:** Telos = emergence of a master science (architectonic/sapientia/tradition-craft); rival, non-converging master sciences meet via coils.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: SUPPORTED | Strength: Strong  
-- Key source: Aristotle, "Metaphysics" I & VI; "Nicomachean Ethics" I.2. — The architectonic science that orders the others (first philosophy / politics as architectonic).  
-- Summary: The teleology is well-grounded in its own sources: Aristotle's architectonic science, Aquinas's sapientia, and MacIntyre's tradition-constituted inquiry give a coherent, historically deep account of an ordering master science and of rival traditions. Notably, the 'rival, non-converging master sciences meet via coils' clause aligns with MacIntyre's anti-convergence stance, strengthening internal coherence.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: SUPPORTED | Strength: Strong
+- Key source: Aristotle, "Metaphysics" I & VI; "Nicomachean Ethics" I.2. — The architectonic science that orders the others (first philosophy / politics as architectonic).
+- Summary: The teleology is well-grounded in its own sources: Aristotle's architectonic science, Aquinas's sapientia, and MacIntyre's tradition-constituted inquiry give a coherent, historically deep account of an ordering master science and of rival traditions. Notably, the 'rival, non-converging master sciences meet via coils' clause aligns with MacIntyre's anti-convergence stance, strengthening internal coherence.
 - Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-207_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Strong  
-- Key source: Galison & Stump eds. (1996) "The Disunity of Science"; Dupre (1993) "The Disorder of Things"; Cartwright (1999) "The Dappled World." — Strong mainstream case that science is irreducibly plural/patchwork; no architectonic master science emerges.  
-- Specific risk: Designing toward an emergent master science could bias the system to manufacture false unification or suppress genuine incommensurability.  
-- Summary: The challenge is strong: disunity-of-science scholarship denies that mature inquiry yields an architectonic master science, and incommensurability (Kuhn, Feyerabend, even MacIntyre) challenges both stable rivalry and clean inter-tradition meeting. The historical corollary (do mature traditions actually produce master sciences?) is testable and the weight of cases favors disunity.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Strong
+- Key source: Galison & Stump eds. (1996) "The Disunity of Science"; Dupre (1993) "The Disorder of Things"; Cartwright (1999) "The Dappled World." — Strong mainstream case that science is irreducibly plural/patchwork; no architectonic master science emerges.
+- Specific risk: Designing toward an emergent master science could bias the system to manufacture false unification or suppress genuine incommensurability.
+- Summary: The challenge is strong: disunity-of-science scholarship denies that mature inquiry yields an architectonic master science, and incommensurability (Kuhn, Feyerabend, even MacIntyre) challenges both stable rivalry and clean inter-tradition meeting. The historical corollary (do mature traditions actually produce master sciences?) is testable and the weight of cases favors disunity.
 - Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-207_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-213 (Priority Medium, Weekly)  
-- Net assessment: 15a SUPPORTED (Strong, coherent telos) + 15b CHALLENGED (Strong, disunity-of-science / incommensurability) = CONTESTED.  
+DISPOSITION-15c: MONITOR -> MONITOR-213 (Priority Medium, Weekly)
+- Net assessment: 15a SUPPORTED (Strong, coherent telos) + 15b CHALLENGED (Strong, disunity-of-science / incommensurability) = CONTESTED.
 - Reasoning: Strong support meets strong challenge on a teleological commitment. Not INCORPORATE (empirically contested) and not REVISE (it is a stated regulative telos, not an operational decision) -> MONITOR. Couples PRESUMPTION-223 (convergence-emphasis neutrality).
 
 ---
@@ -6701,21 +6701,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-213 (Priority Medium, Weekly)
 ### ASSUMPTION-208 (ASSUMPTION)
 **Statement:** Progress = better compression; a forming master science shows as total description length falling while coverage rises.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Moderate  
-- Key source: Rissanen (1978) MDL; Wallace MML; Solomonoff/Kolmogorov. — Formal lineage equating model quality with shorter description at fixed coverage; compression-as-understanding.  
-- Summary: There is a real, respectable theoretical lineage (MDL/MML, free energy, compression-progress) for treating progress as better compression at fixed or rising coverage. As an intuition and a direction, it is moderately supported.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Moderate
+- Key source: Rissanen (1978) MDL; Wallace MML; Solomonoff/Kolmogorov. — Formal lineage equating model quality with shorter description at fixed coverage; compression-as-understanding.
+- Summary: There is a real, respectable theoretical lineage (MDL/MML, free energy, compression-progress) for treating progress as better compression at fixed or rising coverage. As an intuition and a direction, it is moderately supported.
 - Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-208_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Strong  
-- Key source: Grunwald (2007) "The Minimum Description Length Principle"; Kolmogorov uncomputability. — MDL requires a fixed model class & coding scheme; "total description length" over an open corpus is not well-defined (gates on PRESUMPTION-222).  
-- Specific risk: Adopting description-length as THE progress metric could drive over-compression, misreport progress, and penalize genuinely progressive complexity.  
-- Summary: The challenge is strong on two levels. Formally, there is no canonical, computable 'total description length' over a heterogeneous, paradigm-spanning corpus (Grunwald; Kolmogorov; Kuhn) — so the headline metric is ill-defined as stated. Substantively, progress is not always compression (major theories add machinery while extending reach) and a length target is gameable. The metric rests on PRESUMPTION-222, which is itself unvalidated.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Strong
+- Key source: Grunwald (2007) "The Minimum Description Length Principle"; Kolmogorov uncomputability. — MDL requires a fixed model class & coding scheme; "total description length" over an open corpus is not well-defined (gates on PRESUMPTION-222).
+- Specific risk: Adopting description-length as THE progress metric could drive over-compression, misreport progress, and penalize genuinely progressive complexity.
+- Summary: The challenge is strong on two levels. Formally, there is no canonical, computable 'total description length' over a heterogeneous, paradigm-spanning corpus (Grunwald; Kolmogorov; Kuhn) — so the headline metric is ill-defined as stated. Substantively, progress is not always compression (major theories add machinery while extending reach) and a length target is gameable. The metric rests on PRESUMPTION-222, which is itself unvalidated.
 - Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-208_against.md
 
-DISPOSITION-15c: REVISE -> REVISE-042 (Urgency MEDIUM)  
-- Net assessment: 15a Moderate (in-principle) vs 15b Strong (ill-defined and gameable as stated); high-stakes headline metric gated by PRESUMPTION-222.  
+DISPOSITION-15c: REVISE -> REVISE-042 (Urgency MEDIUM)
+- Net assessment: 15a Moderate (in-principle) vs 15b Strong (ill-defined and gameable as stated); high-stakes headline metric gated by PRESUMPTION-222.
 - Reasoning: Stated ASSUMPTION but the proposed headline metric is ill-defined as written and rests on an unvalidated presumption (222). Heuristic (high stakes, strong challenge, gating dependency) -> REVISE. Couples PRESUMPTION-222 (REVISE-044); SYSTEMIC-RISK-FLAG G.
 
 ---
@@ -6723,21 +6723,21 @@ DISPOSITION-15c: REVISE -> REVISE-042 (Urgency MEDIUM)
 ### PRESUMPTION-221 (PRESUMPTION)
 **Statement:** The connectome is the right master-metaphor — neural/Hawkins structure presumed to transfer to narratives without a transfer-condition check.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Moderate  
-- Key source: Newman (2010) "Networks"; Barabasi (2016). — Network/graph formalisms are genuinely domain-general; many systems are validly modeled as graphs.  
-- Summary: A generic network/graph metaphor for narrative/knowledge structures is well supported — graphs are domain-general and semantic networks are an established representation, and structure-mapping gives criteria for valid analogy. Support is partial because this licenses a generic graph, not specifically the brain connectome with its specialized measures.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Moderate
+- Key source: Newman (2010) "Networks"; Barabasi (2016). — Network/graph formalisms are genuinely domain-general; many systems are validly modeled as graphs.
+- Summary: A generic network/graph metaphor for narrative/knowledge structures is well supported — graphs are domain-general and semantic networks are an established representation, and structure-mapping gives criteria for valid analogy. Support is partial because this licenses a generic graph, not specifically the brain connectome with its specialized measures.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-221_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Strong  
-- Key source: Tallis (2011) "Aping Mankind"; Legrenzi & Umilta (2011) "Neuromania." — Sustained critique of importing neuro-frameworks where substrate/justification is absent; the "neuro-" prefix as unearned authority.  
-- Specific risk: An entire metric suite (integration, hubs, small-worldness, scaling) could be invalid or artifactual if the connectome analogy does not transfer.  
-- Summary: The challenge is strong and load-bearing. The connectome metaphor does structural work for ALL downstream metrics (ASSUMPTION-201/202, PRESUMPTION-229), yet brain-specific measures depend on wiring/metabolic constraints absent in narrative graphs, several connectome metrics are fragile even in neuroscience, and no transfer-condition check exists. This is a designer-unaware presumption with high leverage.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Strong
+- Key source: Tallis (2011) "Aping Mankind"; Legrenzi & Umilta (2011) "Neuromania." — Sustained critique of importing neuro-frameworks where substrate/justification is absent; the "neuro-" prefix as unearned authority.
+- Specific risk: An entire metric suite (integration, hubs, small-worldness, scaling) could be invalid or artifactual if the connectome analogy does not transfer.
+- Summary: The challenge is strong and load-bearing. The connectome metaphor does structural work for ALL downstream metrics (ASSUMPTION-201/202, PRESUMPTION-229), yet brain-specific measures depend on wiring/metabolic constraints absent in narrative graphs, several connectome metrics are fragile even in neuroscience, and no transfer-condition check exists. This is a designer-unaware presumption with high leverage.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-221_against.md
 
-DISPOSITION-15c: REVISE -> REVISE-043 (Urgency HIGH)  
-- Net assessment: 15a Moderate (generic network) vs 15b Strong (connectome-specific transfer unchecked). PRESUMPTION + strong challenge + maximal leverage.  
+DISPOSITION-15c: REVISE -> REVISE-043 (Urgency HIGH)
+- Net assessment: 15a Moderate (generic network) vs 15b Strong (connectome-specific transfer unchecked). PRESUMPTION + strong challenge + maximal leverage.
 - Reasoning: PRESUMPTION (designer-unaware) with a strong challenge that load-bears the entire connectome metric suite -> REVISE at HIGH urgency per the 15c heuristic for high-leverage unstated premises. Anchors SYSTEMIC-RISK-FLAG F.
 
 ---
@@ -6745,21 +6745,21 @@ DISPOSITION-15c: REVISE -> REVISE-043 (Urgency HIGH)
 ### PRESUMPTION-222 (PRESUMPTION)
 **Statement:** Narrative compression == information-theoretic compression — description length presumed definable/computable over PRS triplets.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Moderate  
-- Key source: Koutra et al. (2014) "VoG: Summarizing graphs using MDL"; Akoglu et al. — MDL-based graph summarization gives a concrete, computable description length over graph structure; a triplet graph could be summarized this way.  
-- Summary: Computable PROXIES for narrative/graph compression do exist — MDL graph summarization and LM cross-entropy codelength are both concrete and computable over text/graphs. So the presumption is not hopeless: a definable, computable description-length proxy over PRS triplets is achievable.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Moderate
+- Key source: Koutra et al. (2014) "VoG: Summarizing graphs using MDL"; Akoglu et al. — MDL-based graph summarization gives a concrete, computable description length over graph structure; a triplet graph could be summarized this way.
+- Summary: Computable PROXIES for narrative/graph compression do exist — MDL graph summarization and LM cross-entropy codelength are both concrete and computable over text/graphs. So the presumption is not hopeless: a definable, computable description-length proxy over PRS triplets is achievable.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-222_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Strong  
-- Key source: Kolmogorov complexity is uncomputable (Li & Vitanyi). — No canonical, scheme-independent description length; "narrative compression" has no unique value.  
-- Specific risk: A headline progress metric (ASSUMPTION-208) built on an undefined identity will produce numbers that look rigorous but are scheme-dependent artifacts not tracking meaning.  
-- Summary: The strong challenge: there is no canonical, computable description length (Kolmogorov uncomputability), MDL codelength is scheme-relative (Grunwald), and syntactic/graph codelength is not narrative meaning. So 'narrative compression == information-theoretic compression', as an identity, is false; only scheme-relative proxies exist, and they do not measure meaning. Since this gates ASSUMPTION-208's headline metric and is designer-unaware, the risk is high.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Strong
+- Key source: Kolmogorov complexity is uncomputable (Li & Vitanyi). — No canonical, scheme-independent description length; "narrative compression" has no unique value.
+- Specific risk: A headline progress metric (ASSUMPTION-208) built on an undefined identity will produce numbers that look rigorous but are scheme-dependent artifacts not tracking meaning.
+- Summary: The strong challenge: there is no canonical, computable description length (Kolmogorov uncomputability), MDL codelength is scheme-relative (Grunwald), and syntactic/graph codelength is not narrative meaning. So 'narrative compression == information-theoretic compression', as an identity, is false; only scheme-relative proxies exist, and they do not measure meaning. Since this gates ASSUMPTION-208's headline metric and is designer-unaware, the risk is high.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-222_against.md
 
-DISPOSITION-15c: REVISE -> REVISE-044 (Urgency HIGH)  
-- Net assessment: 15a Moderate (proxies exist) vs 15b Strong (no principled/canonical metric; gates ASSUMPTION-208). PRESUMPTION + strong challenge.  
+DISPOSITION-15c: REVISE -> REVISE-044 (Urgency HIGH)
+- Net assessment: 15a Moderate (proxies exist) vs 15b Strong (no principled/canonical metric; gates ASSUMPTION-208). PRESUMPTION + strong challenge.
 - Reasoning: PRESUMPTION (designer-unaware) gating the headline progress metric, with a strong challenge to the identity-as-stated; computable proxies exist, so the constructive path is a labeled, validated proxy -> REVISE at HIGH urgency. Couples ASSUMPTION-208 (REVISE-042); SYSTEMIC-RISK-FLAG G.
 
 ---
@@ -6767,21 +6767,21 @@ DISPOSITION-15c: REVISE -> REVISE-044 (Urgency HIGH)
 ### PRESUMPTION-223 (PRESUMPTION)
 **Statement:** Making integration visible/attractive is value-neutral — convergence-emphasis views presumed not to bias toward convergence over preserved rivalry.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: NO-SUPPORT-FOUND | Strength: Weak  
-- Key source: (Weak/indirect) Tufte, "The Visual Display of Quantitative Information" — the "show the data" ideal aspires to neutral presentation, but this is normative aspiration, not evidence that emphasis IS neutral.  
-- Summary: Essentially no support: the visualization and cognitive-science literatures do not hold that making something visible/attractive is value-neutral; if anything they assert the opposite. The most one can say is that neutrality is an aspiration (Tufte), not an established property.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: NO-SUPPORT-FOUND | Strength: Weak
+- Key source: (Weak/indirect) Tufte, "The Visual Display of Quantitative Information" — the "show the data" ideal aspires to neutral presentation, but this is normative aspiration, not evidence that emphasis IS neutral.
+- Summary: Essentially no support: the visualization and cognitive-science literatures do not hold that making something visible/attractive is value-neutral; if anything they assert the opposite. The most one can say is that neutrality is an aspiration (Tufte), not an established property.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-223_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Strong  
-- Key source: Tversky & Kahneman (1981) framing effects. — How options are presented changes inferences/choices; emphasis is not neutral.  
-- Specific risk: The system could systematically over-represent convergence and under-represent incommensurability/rivalry, undermining ASSUMPTION-207's pluralism and producing self-confirming 'unity.'  
-- Summary: The challenge is strong and well established: framing effects, visualization-ethics studies, and attention research all show that emphasis and salience shape inference. A view that makes integration visible/attractive will bias toward reading convergence as more prevalent/important than preserved rivalry, regardless of intent. A passive pluralism guard in text cannot offset what the visual hierarchy does, because salience operates pre-attentively.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Strong
+- Key source: Tversky & Kahneman (1981) framing effects. — How options are presented changes inferences/choices; emphasis is not neutral.
+- Specific risk: The system could systematically over-represent convergence and under-represent incommensurability/rivalry, undermining ASSUMPTION-207's pluralism and producing self-confirming 'unity.'
+- Summary: The challenge is strong and well established: framing effects, visualization-ethics studies, and attention research all show that emphasis and salience shape inference. A view that makes integration visible/attractive will bias toward reading convergence as more prevalent/important than preserved rivalry, regardless of intent. A passive pluralism guard in text cannot offset what the visual hierarchy does, because salience operates pre-attentively.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-223_against.md
 
-DISPOSITION-15c: REVISE -> REVISE-045 (Urgency MEDIUM)  
-- Net assessment: 15a NO-SUPPORT-FOUND + 15b Strong challenge = CHALLENGED. Designer-unaware normative presumption coupling ASSUMPTION-207.  
+DISPOSITION-15c: REVISE -> REVISE-045 (Urgency MEDIUM)
+- Net assessment: 15a NO-SUPPORT-FOUND + 15b Strong challenge = CHALLENGED. Designer-unaware normative presumption coupling ASSUMPTION-207.
 - Reasoning: The presumption (emphasis is value-neutral) is contradicted by well-established framing/salience research and has no support. As a designer-unaware presumption with normative stakes, REVISE: acknowledge non-neutrality and actively balance rivalry. Urgency MEDIUM (normative, not safety-critical). Couples ASSUMPTION-207 (MONITOR-213).
 
 ---
@@ -6789,21 +6789,21 @@ DISPOSITION-15c: REVISE -> REVISE-045 (Urgency MEDIUM)
 ### PRESUMPTION-224 (PRESUMPTION)
 **Statement:** A guiding doc can govern changes before its own claims are tested; self-documentation closes a ratification loop.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Moderate  
-- Key source: Constitutional/provisional governance; IETF RFC process. — Governing documents legitimately govern provisionally before full validation; bootstrapping authority is normal.  
-- Summary: There is moderate support that a guiding document can legitimately govern provisionally before all its claims are tested — constitutions, RFCs, and Lakatosian hard cores all work this way. Provisional governing authority is normal.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Moderate
+- Key source: Constitutional/provisional governance; IETF RFC process. — Governing documents legitimately govern provisionally before full validation; bootstrapping authority is normal.
+- Summary: There is moderate support that a guiding document can legitimately govern provisionally before all its claims are tested — constitutions, RFCs, and Lakatosian hard cores all work this way. Provisional governing authority is normal.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-224_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: PARTIALLY-CHALLENGED | Strength: Moderate  
-- Key source: Munchhausen trilemma / self-grounding circularity. — A document that authorizes its own claims cannot ratify itself without circularity.  
-- Specific risk: Load-bearing but unvalidated claims (PRESUMPTION-221/222) get operationalized because the doc asserting them is treated as ratified.  
-- Summary: The challenge is moderate: provisional authority is fine, but 'self-documentation closes a ratification loop' is circular — the doc cannot validate its own load-bearing claims, several of which (connectome, compression) are presently CHALLENGED. The fix is cheap: route the doc's testable claims through the same 14a/14b gate rather than exempting them.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: PARTIALLY-CHALLENGED | Strength: Moderate
+- Key source: Munchhausen trilemma / self-grounding circularity. — A document that authorizes its own claims cannot ratify itself without circularity.
+- Specific risk: Load-bearing but unvalidated claims (PRESUMPTION-221/222) get operationalized because the doc asserting them is treated as ratified.
+- Summary: The challenge is moderate: provisional authority is fine, but 'self-documentation closes a ratification loop' is circular — the doc cannot validate its own load-bearing claims, several of which (connectome, compression) are presently CHALLENGED. The fix is cheap: route the doc's testable claims through the same 14a/14b gate rather than exempting them.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-224_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-214 (Priority Medium, Weekly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate; provisional authority is normal); 15b PARTIALLY-CHALLENGED (Moderate; self-ratification is circular).  
+DISPOSITION-15c: MONITOR -> MONITOR-214 (Priority Medium, Weekly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate; provisional authority is normal); 15b PARTIALLY-CHALLENGED (Moderate; self-ratification is circular).
 - Reasoning: Provisional governance is legitimate; the only defect is the circular self-ratification, which is cheaply fixed by routing the doc's claims through the normal gate. MONITOR with a concrete trigger. Couples ASSUMPTION-211 (held framework).
 
 ---
@@ -6811,21 +6811,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-214 (Priority Medium, Weekly)
 ### PRESUMPTION-225 (PRESUMPTION)
 **Statement:** "Axis follows model" presumes a unique axis semantic where several (publication/narrative/connectome time) may be defensible.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: NO-SUPPORT-FOUND | Strength: Weak  
-- Key source: (Weak) Mackinlay (1986) APT; Stevens scales. — A data type/model constrains which encodings are *appropriate*, giving weak support that the model narrows axis choice — but it narrows, it does not uniquely fix.  
-- Summary: Weak support for the uniqueness claim: while data type constrains which encodings are appropriate (Mackinlay's APT), this narrows rather than uniquely fixes the axis. No literature supports a unique axis semantic following from a model.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: NO-SUPPORT-FOUND | Strength: Weak
+- Key source: (Weak) Mackinlay (1986) APT; Stevens scales. — A data type/model constrains which encodings are *appropriate*, giving weak support that the model narrows axis choice — but it narrows, it does not uniquely fix.
+- Summary: Weak support for the uniqueness claim: while data type constrains which encodings are appropriate (Mackinlay's APT), this narrows rather than uniquely fixes the axis. No literature supports a unique axis semantic following from a model.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-225_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: PARTIALLY-CHALLENGED | Strength: Moderate  
-- Key source: Bertin (1967) "Semiology of Graphics"; Munzner (2014). — Encodings are underdetermined by data; many valid mappings exist for the same model.  
-- Specific risk: Asserting a unique axis hides a design decision and may mismatch the user's task.  
-- Summary: Moderate challenge: the visualization literature is clear that a data model underdetermines its encoding (Bertin, Munzner, Mackinlay) and temporal theory recognizes multiple legitimate time axes. 'Axis follows model' overstates — several axes are defensible, so the design should expose a choice rather than assert uniqueness.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: PARTIALLY-CHALLENGED | Strength: Moderate
+- Key source: Bertin (1967) "Semiology of Graphics"; Munzner (2014). — Encodings are underdetermined by data; many valid mappings exist for the same model.
+- Specific risk: Asserting a unique axis hides a design decision and may mismatch the user's task.
+- Summary: Moderate challenge: the visualization literature is clear that a data model underdetermines its encoding (Bertin, Munzner, Mackinlay) and temporal theory recognizes multiple legitimate time axes. 'Axis follows model' overstates — several axes are defensible, so the design should expose a choice rather than assert uniqueness.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-225_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-215 (Priority Low-Medium, Monthly)  
-- Net assessment: 15a NO-SUPPORT-FOUND (Weak) + 15b PARTIALLY-CHALLENGED (Moderate). Encodings are underdetermined by the model; uniqueness is unsupported.  
+DISPOSITION-15c: MONITOR -> MONITOR-215 (Priority Low-Medium, Monthly)
+- Net assessment: 15a NO-SUPPORT-FOUND (Weak) + 15b PARTIALLY-CHALLENGED (Moderate). Encodings are underdetermined by the model; uniqueness is unsupported.
 - Reasoning: The uniqueness presumption is unsupported and mildly challenged, but the fix is cheap (toggle) and stakes are low-medium. MONITOR. Joins OPEN-057, DECISION-039, and ASSUMPTION-204 (MONITOR-212).
 
 ---
@@ -6833,21 +6833,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-215 (Priority Low-Medium, Monthly)
 ### PRESUMPTION-226 (PRESUMPTION)
 **Statement:** Representative-narrative substitution preserves a tradition-bridging edge's meaning — users presumed to read tradition-level bridges correctly from two specific files.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate  
-- Key source: Rosch (1975) prototype/exemplar theory. — People reason about categories via representative exemplars; a representative narrative can stand for a tradition.  
-- Summary: There is weak-moderate support that a representative exemplar can evoke a category (prototype theory) and that part-for-whole encoding can communicate effectively. So representative-narrative substitution is not unreasonable.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+- Key source: Rosch (1975) prototype/exemplar theory. — People reason about categories via representative exemplars; a representative narrative can stand for a tradition.
+- Summary: There is weak-moderate support that a representative exemplar can evoke a category (prototype theory) and that part-for-whole encoding can communicate effectively. So representative-narrative substitution is not unreasonable.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-226_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: PARTIALLY-CHALLENGED | Strength: Moderate  
-- Key source: Robinson (1950) ecological fallacy / level-of-analysis confusion. — Readers conflate the specific (two files) with the aggregate (tradition); the edge may be read at the wrong level.  
-- Specific risk: Tradition-level bridges are mis-read as narrow idea-level links, distorting the cross-tradition picture.  
-- Summary: Moderate challenge: substituting two specific files for a tradition-level relationship risks level-confusion (ecological fallacy) and synecdoche ambiguity — users may read an idea-level link rather than a tradition-level bridge. Whether the substitution preserves meaning is an empirical UX question, currently untested.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: PARTIALLY-CHALLENGED | Strength: Moderate
+- Key source: Robinson (1950) ecological fallacy / level-of-analysis confusion. — Readers conflate the specific (two files) with the aggregate (tradition); the edge may be read at the wrong level.
+- Specific risk: Tradition-level bridges are mis-read as narrow idea-level links, distorting the cross-tradition picture.
+- Summary: Moderate challenge: substituting two specific files for a tradition-level relationship risks level-confusion (ecological fallacy) and synecdoche ambiguity — users may read an idea-level link rather than a tradition-level bridge. Whether the substitution preserves meaning is an empirical UX question, currently untested.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-226_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-216 (Priority Medium, Weekly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate; exemplars evoke categories); 15b PARTIALLY-CHALLENGED (Moderate; ecological-fallacy/level-confusion). Empirical UX question.  
+DISPOSITION-15c: MONITOR -> MONITOR-216 (Priority Medium, Weekly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate; exemplars evoke categories); 15b PARTIALLY-CHALLENGED (Moderate; ecological-fallacy/level-confusion). Empirical UX question.
 - Reasoning: Plausible but empirically untested comprehension claim; cheap mitigation (level-labeling + exemplar marking) and a clear user-test trigger -> MONITOR. Couples ASSUMPTION-210 (held framework).
 
 ---
@@ -6855,21 +6855,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-216 (Priority Medium, Weekly)
 ### PRESUMPTION-227 (PRESUMPTION)
 **Statement:** Cross-tab interaction uniformity outweighs per-view-optimal (3D-native) affordances.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Moderate  
-- Key source: Nielsen (1994) heuristic "Consistency and standards." — Consistency reduces learning cost; supports uniform interaction as a default.  
-- Summary: Consistency is a well-established usability principle (Nielsen, Norman): uniform interactions lower learning cost and support transfer across tabs, giving moderate support for uniformity as a default.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Moderate
+- Key source: Nielsen (1994) heuristic "Consistency and standards." — Consistency reduces learning cost; supports uniform interaction as a default.
+- Summary: Consistency is a well-established usability principle (Nielsen, Norman): uniform interactions lower learning cost and support transfer across tabs, giving moderate support for uniformity as a default.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-227_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: PARTIALLY-CHALLENGED | Strength: Moderate-Strong  
-- Key source: Grudin (1989) "The case against user interface consistency." — Consistency can harm usability when contexts differ; uniformity is not an unqualified good.  
-- Specific risk: The 3D view remains awkward/buggy because it inherits 2D interaction defaults.  
-- Summary: Moderate-strong challenge: Grudin's classic argument shows consistency can be the wrong default when contexts genuinely differ, and 2D/3D views have fundamentally different interaction needs. The system's own zoom/blank-space bug corroborates that uniform interaction misfits the 3D view. Uniformity-as-priority is contestable; context-appropriateness may win for the 3D tab.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: PARTIALLY-CHALLENGED | Strength: Moderate-Strong
+- Key source: Grudin (1989) "The case against user interface consistency." — Consistency can harm usability when contexts differ; uniformity is not an unqualified good.
+- Specific risk: The 3D view remains awkward/buggy because it inherits 2D interaction defaults.
+- Summary: Moderate-strong challenge: Grudin's classic argument shows consistency can be the wrong default when contexts genuinely differ, and 2D/3D views have fundamentally different interaction needs. The system's own zoom/blank-space bug corroborates that uniform interaction misfits the 3D view. Uniformity-as-priority is contestable; context-appropriateness may win for the 3D tab.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-227_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-217 (Priority Low-Medium, Weekly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate; consistency principle) vs 15b PARTIALLY-CHALLENGED (Moderate-Strong; Grudin + dimensional difference + live bug).  
+DISPOSITION-15c: MONITOR -> MONITOR-217 (Priority Low-Medium, Weekly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate; consistency principle) vs 15b PARTIALLY-CHALLENGED (Moderate-Strong; Grudin + dimensional difference + live bug).
 - Reasoning: Consistency is a sound default but contestable when contexts differ, and there is corroborating in-system evidence (zoom bug). Low-medium stakes -> MONITOR with a defect-driven REVISE trigger.
 
 ---
@@ -6877,21 +6877,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-217 (Priority Low-Medium, Weekly)
 ### PRESUMPTION-228 (PRESUMPTION)
 **Statement:** The "3 literal hubs" finding reflects the territory, not the resource-naming/normalization method (measurement-artifact risk).
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: NO-SUPPORT-FOUND | Strength: Weak  
-- Key source: (Weak/conditional) Controlled-vocabulary/ontology practice (e.g., MeSH). — Literal counts can reflect the territory ONLY if a controlled vocabulary or canonical resource IDs are used; no such normalization is documented here.  
-- Summary: Weak/conditional support: literal counts can reflect the territory only if a controlled vocabulary or canonical resource identifiers are used. Absent stated normalization, there is no support that the raw literal-string count reflects the territory.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: NO-SUPPORT-FOUND | Strength: Weak
+- Key source: (Weak/conditional) Controlled-vocabulary/ontology practice (e.g., MeSH). — Literal counts can reflect the territory ONLY if a controlled vocabulary or canonical resource IDs are used; no such normalization is documented here.
+- Summary: Weak/conditional support: literal counts can reflect the territory only if a controlled vocabulary or canonical resource identifiers are used. Absent stated normalization, there is no support that the raw literal-string count reflects the territory.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-228_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Strong  
-- Key source: Furnas et al. (1987) "The vocabulary problem." — Independent authors name the same resource differently; literal matching massively undercounts and is naming-dependent.  
-- Specific risk: DECISION-040 ('convergence is analogical') could be firmed on an artifactual count; the true number of literal hubs could be higher or lower under different normalization.  
-- Summary: The challenge is strong: literal string-match hub counts are well known to be naming/normalization artifacts (vocabulary problem; entity resolution), so 'only 3 literal hubs' likely reflects the matching method rather than the territory. This directly threatens the evidence basis for ASSUMPTION-205 and feeds DECISION-040; it belongs to the measurement-integrity cluster (FLAG A).  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Strong
+- Key source: Furnas et al. (1987) "The vocabulary problem." — Independent authors name the same resource differently; literal matching massively undercounts and is naming-dependent.
+- Specific risk: DECISION-040 ('convergence is analogical') could be firmed on an artifactual count; the true number of literal hubs could be higher or lower under different normalization.
+- Summary: The challenge is strong: literal string-match hub counts are well known to be naming/normalization artifacts (vocabulary problem; entity resolution), so 'only 3 literal hubs' likely reflects the matching method rather than the territory. This directly threatens the evidence basis for ASSUMPTION-205 and feeds DECISION-040; it belongs to the measurement-integrity cluster (FLAG A).
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-228_against.md
 
-DISPOSITION-15c: REVISE -> REVISE-046 (Urgency MEDIUM)  
-- Net assessment: 15a NO-SUPPORT-FOUND + 15b Strong = CHALLENGED. Measurement-artifact risk feeding a pending decision; designer-unaware.  
+DISPOSITION-15c: REVISE -> REVISE-046 (Urgency MEDIUM)
+- Net assessment: 15a NO-SUPPORT-FOUND + 15b Strong = CHALLENGED. Measurement-artifact risk feeding a pending decision; designer-unaware.
 - Reasoning: PRESUMPTION (designer-unaware) with strong challenge that the headline '3 hubs' count is method-dependent, gating DECISION-040 and joining FLAG A -> REVISE. Urgency MEDIUM (matches item priority; gates a not-yet-firmed decision). Couples ASSUMPTION-205 (PREMISE-042 scope-exclusion), PRESUMPTION-212, FLAG A.
 
 ---
@@ -6899,21 +6899,21 @@ DISPOSITION-15c: REVISE -> REVISE-046 (Urgency MEDIUM)
 ### PRESUMPTION-229 (PRESUMPTION)
 **Statement:** The connectome viz + network-neuroscience metrics stay legible/meaningful at much larger N (scale blindness vs the 2000-node crash cap).
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate  
-- Key source: Holten (2006) hierarchical edge bundling; multiscale/hierarchical layouts. — Some techniques preserve legibility at larger N.  
-- Summary: Weak-moderate support that legibility can be preserved at scale IF the representation changes (edge bundling, hierarchical, matrix views). This supports feasibility, not the presumption that the CURRENT connectome viz/metrics persist unchanged.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+- Key source: Holten (2006) hierarchical edge bundling; multiscale/hierarchical layouts. — Some techniques preserve legibility at larger N.
+- Summary: Weak-moderate support that legibility can be preserved at scale IF the representation changes (edge bundling, hierarchical, matrix views). This supports feasibility, not the presumption that the CURRENT connectome viz/metrics persist unchanged.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-229_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Strong  
-- Key source: The "hairball" problem (Ghoniem et al. 2004). — Node-link diagrams become illegible as N/density grow; the current viz will degrade.  
-- Specific risk: Both the visualization and the metric values silently degrade as the corpus grows; conclusions drawn at large N may be artifacts of size.  
-- Summary: Strong challenge: node-link legibility collapses at scale (hairball), several connectome metrics are explicitly size/density-dependent (resolution limit; small-worldness normalization), and the system already enforces a 2000-node crash cap — direct evidence that scale is a live constraint. The failure is gradual/future but real.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Strong
+- Key source: The "hairball" problem (Ghoniem et al. 2004). — Node-link diagrams become illegible as N/density grow; the current viz will degrade.
+- Specific risk: Both the visualization and the metric values silently degrade as the corpus grows; conclusions drawn at large N may be artifacts of size.
+- Summary: Strong challenge: node-link legibility collapses at scale (hairball), several connectome metrics are explicitly size/density-dependent (resolution limit; small-worldness normalization), and the system already enforces a 2000-node crash cap — direct evidence that scale is a live constraint. The failure is gradual/future but real.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-229_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-218 (Priority Medium, Weekly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate; conditional on representation change) vs 15b CHALLENGED (Strong; hairball + size-dependent metrics + existing crash cap). True now, false in the limit.  
+DISPOSITION-15c: MONITOR -> MONITOR-218 (Priority Medium, Weekly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate; conditional on representation change) vs 15b CHALLENGED (Strong; hairball + size-dependent metrics + existing crash cap). True now, false in the limit.
 - Reasoning: Strong challenge but the failure is gradual/future and partly mitigated by the existing crash cap; per the 15c heuristic for 'true now, false in the limit', MONITOR with a concrete scale trigger rather than REVISE now. Joins ASSUMPTION-201, PRESUMPTION-221, crash-proofing caps; mirrors PRESUMPTION-219 scale handling.
 
 ---
@@ -6921,21 +6921,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-218 (Priority Medium, Weekly)
 ### PRESUMPTION-230 (PRESUMPTION)
 **Statement:** Confirming gating logic + data == confirming rendered behavior — UX symptom dispositioned by data-reasoning over reproduced observation.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate  
-- Key source: Formal verification / static analysis. — Reasoning about logic + inputs can establish properties without running the UI in some cases.  
-- Summary: Weak-moderate support: in systems where rendered behavior is fully determined by the verified logic, logic+data reasoning can establish correctness. So the approach is not always invalid.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+- Key source: Formal verification / static analysis. — Reasoning about logic + inputs can establish properties without running the UI in some cases.
+- Summary: Weak-moderate support: in systems where rendered behavior is fully determined by the verified logic, logic+data reasoning can establish correctness. So the approach is not always invalid.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-230_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Strong  
-- Key source: "Works as designed != works": the spec/implementation gap. — UX bugs are emergent at the render layer (browser/CSS/layout/event handling), not visible in gating logic.  
-- Specific risk: UX bugs are marked resolved while still visible to users; the self-measurement layer over-trusts logic-level reasoning.  
-- Summary: Strong challenge: rendered UX behavior is emergent at a layer the gating logic does not capture, so confirming logic+data does not confirm what the user sees. Best practice requires reproducing the rendered defect and observing the fix. Dispositioning a UX symptom by data-reasoning alone is a verification gap (symmetric to PRESUMPTION-218; engages Rule 12).  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Strong
+- Key source: "Works as designed != works": the spec/implementation gap. — UX bugs are emergent at the render layer (browser/CSS/layout/event handling), not visible in gating logic.
+- Specific risk: UX bugs are marked resolved while still visible to users; the self-measurement layer over-trusts logic-level reasoning.
+- Summary: Strong challenge: rendered UX behavior is emergent at a layer the gating logic does not capture, so confirming logic+data does not confirm what the user sees. Best practice requires reproducing the rendered defect and observing the fix. Dispositioning a UX symptom by data-reasoning alone is a verification gap (symmetric to PRESUMPTION-218; engages Rule 12).
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-230_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-219 (Priority Low-Medium, Weekly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate; only when render layer is behavior-neutral) vs 15b CHALLENGED (Strong; rendered UX is emergent; reproduced-defect discipline). Symmetric to PRESUMPTION-218.  
+DISPOSITION-15c: MONITOR -> MONITOR-219 (Priority Low-Medium, Weekly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate; only when render layer is behavior-neutral) vs 15b CHALLENGED (Strong; rendered UX is emergent; reproduced-defect discipline). Symmetric to PRESUMPTION-218.
 - Reasoning: Strong challenge and a real verification-discipline gap, but for consistency with the symmetric item PRESUMPTION-218 (dispositioned MONITOR-208) and given low-medium stakes and a cheap disciplinary fix, MONITOR with a reproduction-recurrence REVISE trigger. Engages Rule 12 (fail loud).
 
 ---
@@ -7013,21 +7013,21 @@ FLAG A CONTINUATION (measurement-integrity): ASSUMPTION-205 + PRESUMPTION-228 (l
 ### ASSUMPTION-214 (ASSUMPTION)
 **Statement:** A single self-contained handoff document can carry an experiment's full context into a cold-start chat (portability across sessions).
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Moderate  
-- Key source: Knuth (1984) literate programming; Donoho et al. (2009) reproducible research; design-doc/RFC practice. — Self-contained documents can transfer enough to reproduce work / intent.  
-- Summary: Real lineage for "one complete document carries the work" (literate programming, research compendia, RFC culture), but every tradition pairs it with strict completeness requirements. Support is partial and conditional on the brief actually being complete.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Moderate
+- Key source: Knuth (1984) literate programming; Donoho et al. (2009) reproducible research; design-doc/RFC practice. — Self-contained documents can transfer enough to reproduce work / intent.
+- Summary: Real lineage for "one complete document carries the work" (literate programming, research compendia, RFC culture), but every tradition pairs it with strict completeness requirements. Support is partial and conditional on the brief actually being complete.
 - Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-214_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: PARTIALLY-CHALLENGED | Strength: Moderate-Strong  
-- Key source: Collins TEA-laser replication studies; Polanyi (1966); reproducibility crisis (Baker 2016). — Experiments often cannot be reproduced from the written record alone; tacit context leaks.  
-- Specific risk: The brief silently omits a load-bearing detail; the cold-start run looks faithful but diverges from intent, undetectably.  
-- Summary: The replication literature is the strong counter: written records under-carry tacit competence, and a cold start has none of the human shared background that repairs documentation gaps. "Full context" is too strong; "enough, after iteration" is defensible.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: PARTIALLY-CHALLENGED | Strength: Moderate-Strong
+- Key source: Collins TEA-laser replication studies; Polanyi (1966); reproducibility crisis (Baker 2016). — Experiments often cannot be reproduced from the written record alone; tacit context leaks.
+- Specific risk: The brief silently omits a load-bearing detail; the cold-start run looks faithful but diverges from intent, undetectably.
+- Summary: The replication literature is the strong counter: written records under-carry tacit competence, and a cold start has none of the human shared background that repairs documentation gaps. "Full context" is too strong; "enough, after iteration" is defensible.
 - Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-214_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-220 (Priority Medium-High, Weekly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate-Strong). Directly testable by the launch itself.  
+DISPOSITION-15c: MONITOR -> MONITOR-220 (Priority Medium-High, Weekly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate-Strong). Directly testable by the launch itself.
 - Reasoning: Stated, designer-aware, and empirically self-testing (the cold-start either works or reveals gaps); the fix is cheap and iterative, so MONITOR over REVISE. Trigger: REVISE if the first cold-start launch loses load-bearing context. Couples PRESUMPTION-232; gates DECISION-044.
 
 ---
@@ -7035,21 +7035,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-220 (Priority Medium-High, Weekly)
 ### ASSUMPTION-215 (ASSUMPTION)
 **Statement:** A "Conscious-Realist-Monist summa" can be built as a genuine rival to the Thomist summa and run head-to-head for evidence. (Day's top conceptual stake.)
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Moderate  
-- Key source: MacIntyre (1988/1990) rival-versions comparison; Kahneman adversarial collaboration; comparative/systematic theology. — Rival comprehensive frameworks can be constructed and compared to produce evidence.  
-- Summary: Constructing a synthesis and contesting it against a rival is methodologically precedented (MacIntyre stages exactly such a contest; adversarial collaboration formalizes it). Support is only moderate because the same authority supplies the strongest objection.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Moderate
+- Key source: MacIntyre (1988/1990) rival-versions comparison; Kahneman adversarial collaboration; comparative/systematic theology. — Rival comprehensive frameworks can be constructed and compared to produce evidence.
+- Summary: Constructing a synthesis and contesting it against a rival is methodologically precedented (MacIntyre stages exactly such a contest; adversarial collaboration formalizes it). Support is only moderate because the same authority supplies the strongest objection.
 - Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-215_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Strong  
-- Key source: MacIntyre — a tradition is "an historically extended, socially embodied argument"; Kahneman & Klein (refereeing). — A constructed corpus is not a tradition; the new summa is the designer's own view, so the contest risks home-team bias.  
-- Specific risk: An experiment that "shows" Conscious-Realist-Monism competitive, but whose result is an artifact of building the rival to win and pitting an immature corpus against a stress-tested canon.  
-- Summary: Self-applying challenge: by the project's own MacIntyrean lights a tradition cannot be authored de novo, and the proponent should not referee its own contest. The head-to-head can produce the appearance of evidence while being structurally tilted.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Strong
+- Key source: MacIntyre — a tradition is "an historically extended, socially embodied argument"; Kahneman & Klein (refereeing). — A constructed corpus is not a tradition; the new summa is the designer's own view, so the contest risks home-team bias.
+- Specific risk: An experiment that "shows" Conscious-Realist-Monism competitive, but whose result is an artifact of building the rival to win and pitting an immature corpus against a stress-tested canon.
+- Summary: Self-applying challenge: by the project's own MacIntyrean lights a tradition cannot be authored de novo, and the proponent should not referee its own contest. The head-to-head can produce the appearance of evidence while being structurally tilted.
 - Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-215_against.md
 
-DISPOSITION-15c: REVISE -> REVISE-047 (Urgency HIGH)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate) vs 15b CHALLENGED (Strong); high-stakes stated assumption that gates DECISION-044/OPEN-062.  
+DISPOSITION-15c: REVISE -> REVISE-047 (Urgency HIGH)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate) vs 15b CHALLENGED (Strong); high-stakes stated assumption that gates DECISION-044/OPEN-062.
 - Reasoning: Moderate-vs-strong asymmetry on a high-stakes item whose challenge strikes the project's own commitments -> REVISE (not MONITOR). Recommend Tom decide whether Summa-2 must be a genuine tradition or a declared constructed synthesis, and remove the refereeing conflict (independent constructor / pre-registered win conditions). Anchors SYSTEMIC-RISK-FLAG H.
 
 ---
@@ -7057,21 +7057,21 @@ DISPOSITION-15c: REVISE -> REVISE-047 (Urgency HIGH)
 ### ASSUMPTION-216 (ASSUMPTION)
 **Statement:** The Aquinas<->Levin teleology seam is the right focal cross-tradition bridge for the head-to-head.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Moderate  
-- Key source: Flyvbjerg (2006) paradigmatic-case selection; Levin goal-directedness; Thomist final causation. — Teleology is a substantively shared topic; a focal seam can be legitimately chosen.  
-- Summary: The seam is not arbitrary — teleology is load-bearing on both sides. Case-selection methods support choosing a paradigmatic seam. Support is partial: "shared topic" is not "same concept," and "right/most productive" is asserted, not compared.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Moderate
+- Key source: Flyvbjerg (2006) paradigmatic-case selection; Levin goal-directedness; Thomist final causation. — Teleology is a substantively shared topic; a focal seam can be legitimately chosen.
+- Summary: The seam is not arbitrary — teleology is load-bearing on both sides. Case-selection methods support choosing a paradigmatic seam. Support is partial: "shared topic" is not "same concept," and "right/most productive" is asserted, not compared.
 - Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-216_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: PARTIALLY-CHALLENGED | Strength: Moderate  
-- Key source: Equivocation (Thomist robust final cause vs Levin/Dennett deflationary goal-directedness); Gentner (1983) structure-mapping. — A good analogy needs shared relational structure, not a shared word.  
-- Specific risk: The flagship bridge turns on an equivocation, so any "convergence/tension" reported there is a translation artifact.  
-- Summary: The two teleologies share a label but maybe not relational structure (Levin's is explicitly as-if). If the seam rests on the word, the head-to-head yields pseudo-agreement/conflict. Secondary: un-compared case selection.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: PARTIALLY-CHALLENGED | Strength: Moderate
+- Key source: Equivocation (Thomist robust final cause vs Levin/Dennett deflationary goal-directedness); Gentner (1983) structure-mapping. — A good analogy needs shared relational structure, not a shared word.
+- Specific risk: The flagship bridge turns on an equivocation, so any "convergence/tension" reported there is a translation artifact.
+- Summary: The two teleologies share a label but maybe not relational structure (Levin's is explicitly as-if). If the seam rests on the word, the head-to-head yields pseudo-agreement/conflict. Secondary: un-compared case selection.
 - Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-216_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-221 (Priority Low-Medium, Monthly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate). Relevance solid; conceptual unity and optimality unproven.  
+DISPOSITION-15c: MONITOR -> MONITOR-221 (Priority Low-Medium, Monthly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate). Relevance solid; conceptual unity and optimality unproven.
 - Reasoning: Moderate vs moderate, low-medium stakes; the equivocation is the thing to watch and is cheaply addressed by disambiguating the two teleology concepts before use. MONITOR; couples PRESUMPTION-235; joins FLAG H.
 
 ---
@@ -7079,21 +7079,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-221 (Priority Low-Medium, Monthly)
 ### PRESUMPTION-231 (PRESUMPTION)
 **Statement:** Byte-identical data + node --check + eyeball is presumed to entail correct rendered interaction behavior; no interaction test.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate  
-- Key source: Static analysis / golden-master data testing; formal-methods determinism principle. — The gate reliably covers data + syntax regressions.  
-- Summary: Sound for what it covers (data identity rules out data regressions; node --check rules out syntax errors), and where behavior is fully determined by verified layers, reasoning can substitute for execution. Weak-moderate because interaction behavior is not so determined.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+- Key source: Static analysis / golden-master data testing; formal-methods determinism principle. — The gate reliably covers data + syntax regressions.
+- Summary: Sound for what it covers (data identity rules out data regressions; node --check rules out syntax errors), and where behavior is fully determined by verified layers, reasoning can substitute for execution. Weak-moderate because interaction behavior is not so determined.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-231_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Strong  
-- Key source: "Works as designed != works"; UI test-automation practice (event simulation); node --check parses, does not execute. — Interaction bugs are emergent at render/event layer.  
-- Specific risk: A new widget ships "verified" while a click/edge-pick/slider path is silently broken.  
-- Summary: The checked layers sit below the bug surface; interaction correctness must be reproduced and observed. Eyeball review is unreliable for event-level correctness. Re-instantiates PRESUMPTION-230/218; engages Rule 12.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Strong
+- Key source: "Works as designed != works"; UI test-automation practice (event simulation); node --check parses, does not execute. — Interaction bugs are emergent at render/event layer.
+- Specific risk: A new widget ships "verified" while a click/edge-pick/slider path is silently broken.
+- Summary: The checked layers sit below the bug surface; interaction correctness must be reproduced and observed. Eyeball review is unreliable for event-level correctness. Re-instantiates PRESUMPTION-230/218; engages Rule 12.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-231_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-222 (Priority Low-Medium, Weekly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate); 15b CHALLENGED (Strong). Real verification-discipline gap, cheap fix.  
+DISPOSITION-15c: MONITOR -> MONITOR-222 (Priority Low-Medium, Weekly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate); 15b CHALLENGED (Strong). Real verification-discipline gap, cheap fix.
 - Reasoning: For consistency with the symmetric items PRESUMPTION-230 (MONITOR-219) and 218 (MONITOR-208), and given low-medium stakes and a cheap remedy (an interaction smoke test on the promote-to-live gate), MONITOR with a recurrence REVISE trigger. Joins the verification-standard family / Rule 12.
 
 ---
@@ -7101,21 +7101,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-222 (Priority Low-Medium, Weekly)
 ### PRESUMPTION-232 (PRESUMPTION)
 **Statement:** A cold-start chat shares enough tacit context that nothing load-bearing is lost when the only carrier is a single brief.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate  
-- Key source: IEEE-830 specification practice; reproducible-research compendia; rich context-prompt practice. — Complete written carriers can transfer intent without prior state.  
-- Summary: Precedent exists that a sufficiently complete carrier transfers task intent (specs, compendia, context prompts). Weak-moderate because completeness is the binding constraint and tacit background routinely leaks.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+- Key source: IEEE-830 specification practice; reproducible-research compendia; rich context-prompt practice. — Complete written carriers can transfer intent without prior state.
+- Summary: Precedent exists that a sufficiently complete carrier transfers task intent (specs, compendia, context prompts). Weak-moderate because completeness is the binding constraint and tacit background routinely leaks.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-232_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Strong  
-- Key source: Polanyi/Collins (tacit knowledge); Clark (1996) common ground; LLM prompt-sensitivity. — A cold start lacks the interactively-built common ground that repairs gaps.  
-- Specific risk: The cold-start run quietly reinterprets intent because a tacit prior never made it into the brief — invisibly, since the omission was unknown to the author.  
-- Summary: The load-bearing half of ASSUMPTION-214; "nothing load-bearing is lost" is very likely false in the strict sense. The open question is whether the loss is load-bearing here, which must be tested, not assumed.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Strong
+- Key source: Polanyi/Collins (tacit knowledge); Clark (1996) common ground; LLM prompt-sensitivity. — A cold start lacks the interactively-built common ground that repairs gaps.
+- Specific risk: The cold-start run quietly reinterprets intent because a tacit prior never made it into the brief — invisibly, since the omission was unknown to the author.
+- Summary: The load-bearing half of ASSUMPTION-214; "nothing load-bearing is lost" is very likely false in the strict sense. The open question is whether the loss is load-bearing here, which must be tested, not assumed.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-232_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-223 (Priority Medium, Weekly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate) vs 15b CHALLENGED (Strong); designer-unaware twin of ASSUMPTION-214.  
+DISPOSITION-15c: MONITOR -> MONITOR-223 (Priority Medium, Weekly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate) vs 15b CHALLENGED (Strong); designer-unaware twin of ASSUMPTION-214.
 - Reasoning: PRESUMPTION + strong challenge would lean REVISE, but the loss is empirically bounded by the very launch (cold-start + author divergence audit) and the item is tightly coupled to ASSUMPTION-214 (MONITOR-220). MONITOR with the explicit, loud note that "nothing lost" is unverified and must be tested before relying on the brief. Trigger: REVISE if a load-bearing divergence appears on first cold start.
 
 ---
@@ -7123,21 +7123,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-223 (Priority Medium, Weekly)
 ### PRESUMPTION-233 (PRESUMPTION)
 **Statement:** The two summae are commensurable enough to be compared on shared criteria — against the project's own MacIntyrean incommensurability commitment.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Moderate  
-- Key source: MacIntyre (1988) epistemological-crisis comparison; Kuhn (1983) incommensurability != incomparability; Davidson (1974). — Rational comparison without a neutral standard is possible.  
-- Summary: Comparison-enough is defensible AND available from within the project's own MacIntyreanism (crisis-resolution comparison). But that licenses tradition-internal comparison, not the "shared neutral criteria" the presumption actually describes.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Moderate
+- Key source: MacIntyre (1988) epistemological-crisis comparison; Kuhn (1983) incommensurability != incomparability; Davidson (1974). — Rational comparison without a neutral standard is possible.
+- Summary: Comparison-enough is defensible AND available from within the project's own MacIntyreanism (crisis-resolution comparison). But that licenses tradition-internal comparison, not the "shared neutral criteria" the presumption actually describes.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-233_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Strong  
-- Key source: MacIntyre — no tradition-neutral standard of rationality; Kuhn/Feyerabend; the project's own pluralism (ASSUMPTION-207). — Any "shared criteria" scorecard is one tradition's standards in disguise.  
-- Specific risk: The headline result is determined by whose criteria were chosen as "shared" — pseudo-evidence confirming the criteria-author's tradition.  
-- Summary: Internal, self-undermining challenge: a shared-criteria head-to-head cannot yield the unbiased evidence it promises and violates the system's own pluralism. The supportive route (MacIntyrean crisis test) is a different method than shared-criteria scoring.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Strong
+- Key source: MacIntyre — no tradition-neutral standard of rationality; Kuhn/Feyerabend; the project's own pluralism (ASSUMPTION-207). — Any "shared criteria" scorecard is one tradition's standards in disguise.
+- Specific risk: The headline result is determined by whose criteria were chosen as "shared" — pseudo-evidence confirming the criteria-author's tradition.
+- Summary: Internal, self-undermining challenge: a shared-criteria head-to-head cannot yield the unbiased evidence it promises and violates the system's own pluralism. The supportive route (MacIntyrean crisis test) is a different method than shared-criteria scoring.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-233_against.md
 
-DISPOSITION-15c: REVISE -> REVISE-048 (Urgency HIGH)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate) vs 15b CHALLENGED (Strong); designer-unaware PRESUMPTION; HIGH stakes; gates whether the experiment yields unbiased evidence.  
+DISPOSITION-15c: REVISE -> REVISE-048 (Urgency HIGH)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate) vs 15b CHALLENGED (Strong); designer-unaware PRESUMPTION; HIGH stakes; gates whether the experiment yields unbiased evidence.
 - Reasoning: PRESUMPTION + strong challenge + self-contradiction with ASSUMPTION-207 -> REVISE HIGH. Recommend: do not score on imposed neutral criteria; use MacIntyre's tradition-internal crisis-resolution test, or run under each tradition's own criteria and report both. Co-anchors SYSTEMIC-RISK-FLAG H with REVISE-047.
 
 ---
@@ -7145,21 +7145,21 @@ DISPOSITION-15c: REVISE -> REVISE-048 (Urgency HIGH)
 ### PRESUMPTION-234 (PRESUMPTION)
 **Statement:** A "Summa 2" already exists or can be assembled parallel to the Thomist summa (though "what counts as Summa 2" is open).
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate  
-- Key source: Constructive/systematic-theology synthesis; corpus-construction methodology; the project's existing 14-tradition corpora. — A parallel comprehensive corpus is assemblable, and much raw material exists.  
-- Summary: Assembling a parallel corpus is feasible in principle and partly already done. Weak-moderate because feasibility is not parity, and the unit is undefined (OPEN-062).  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+- Key source: Constructive/systematic-theology synthesis; corpus-construction methodology; the project's existing 14-tradition corpora. — A parallel comprehensive corpus is assemblable, and much raw material exists.
+- Summary: Assembling a parallel corpus is feasible in principle and partly already done. Weak-moderate because feasibility is not parity, and the unit is undefined (OPEN-062).
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-234_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: PARTIALLY-CHALLENGED | Strength: Moderate-Strong  
-- Key source: Corpus asymmetry (fixed centuries-tested canon vs present draft); MacIntyre on tradition maturation; undefined-construct problem (OPEN-062). — Comparing a finished artifact to an undefined draft is structurally unequal.  
-- Specific risk: A result that reflects "old canon vs new draft" (or a curated-to-win corpus) rather than a real comparison of worldviews.  
-- Summary: Asymmetry + definitional openness: whatever the result, it partly reflects the maturity/definition gap. Addressable by an explicit corpus-construction protocol and honest framing, hence moderate-strong not strong.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: PARTIALLY-CHALLENGED | Strength: Moderate-Strong
+- Key source: Corpus asymmetry (fixed centuries-tested canon vs present draft); MacIntyre on tradition maturation; undefined-construct problem (OPEN-062). — Comparing a finished artifact to an undefined draft is structurally unequal.
+- Specific risk: A result that reflects "old canon vs new draft" (or a curated-to-win corpus) rather than a real comparison of worldviews.
+- Summary: Asymmetry + definitional openness: whatever the result, it partly reflects the maturity/definition gap. Addressable by an explicit corpus-construction protocol and honest framing, hence moderate-strong not strong.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-234_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-224 (Priority Medium, Weekly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate); 15b PARTIALLY-CHALLENGED (Moderate-Strong). Asymmetry real but design-stage and addressable.  
+DISPOSITION-15c: MONITOR -> MONITOR-224 (Priority Medium, Weekly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate); 15b PARTIALLY-CHALLENGED (Moderate-Strong). Asymmetry real but design-stage and addressable.
 - Reasoning: The fix is design-stage (define Summa-2 via the already-open OPEN-062; control asymmetry) and the item belongs to the REVISE cluster anchored by 215/233; MONITOR rather than multiply REVISEs across the whole cluster. Joins SYSTEMIC-RISK-FLAG H. Trigger: REVISE if the experiment proceeds with an undefined or uncontrolled-asymmetry Summa-2.
 
 ---
@@ -7167,21 +7167,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-224 (Priority Medium, Weekly)
 ### PRESUMPTION-235 (PRESUMPTION)
 **Statement:** The Aquinas<->Levin seam is the most evidentially productive seam; alternatives were not weighed (absent-alternatives).
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: NO-SUPPORT-FOUND | Strength: Weak  
-- Key source: Flyvbjerg (2006); Seawright & Gerring (2008). — Defensible focal-case selection is explicitly comparative; it does not endorse asserting optimality without weighing alternatives.  
-- Summary: The very methods that could justify a focal seam require a comparative selection rationale the item lacks. No positive support for "most productive" as asserted; at best defensible-if-justified.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: NO-SUPPORT-FOUND | Strength: Weak
+- Key source: Flyvbjerg (2006); Seawright & Gerring (2008). — Defensible focal-case selection is explicitly comparative; it does not endorse asserting optimality without weighing alternatives.
+- Summary: The very methods that could justify a focal seam require a comparative selection rationale the item lacks. No positive support for "most productive" as asserted; at best defensible-if-justified.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-235_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Moderate  
-- Key source: Seawright & Gerring (2008); Nickerson (1998) confirmation bias; Gelman & Loken (2013) forking paths. — Un-compared case selection is a textbook bias vector.  
-- Specific risk: The flagship seam is a hidden forking-path; a different seam might show tension where this shows convergence.  
-- Summary: With alternatives unweighed, "most productive" is unsupported and exposed to selection bias (the seam may be the most hypothesis-flattering). Moderate, not strong, because the seam is plausibly good and the remedy is cheap.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Moderate
+- Key source: Seawright & Gerring (2008); Nickerson (1998) confirmation bias; Gelman & Loken (2013) forking paths. — Un-compared case selection is a textbook bias vector.
+- Specific risk: The flagship seam is a hidden forking-path; a different seam might show tension where this shows convergence.
+- Summary: With alternatives unweighed, "most productive" is unsupported and exposed to selection bias (the seam may be the most hypothesis-flattering). Moderate, not strong, because the seam is plausibly good and the remedy is cheap.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-235_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-225 (Priority Low-Medium, Monthly)  
-- Net assessment: 15a NO-SUPPORT-FOUND (Weak) vs 15b CHALLENGED (Moderate). Asymmetric toward the challenge but low-stakes and cheaply fixed.  
+DISPOSITION-15c: MONITOR -> MONITOR-225 (Priority Low-Medium, Monthly)
+- Net assessment: 15a NO-SUPPORT-FOUND (Weak) vs 15b CHALLENGED (Moderate). Asymmetric toward the challenge but low-stakes and cheaply fixed.
 - Reasoning: Per heuristic, weak-support + moderate-challenge could lean REVISE, but stakes are low-medium and the fix is a brief seam comparison; MONITOR coupled to ASSUMPTION-216, with a robustness-check recommendation (run a second seam). Joins SYSTEMIC-RISK-FLAG H.
 
 ---
@@ -7189,21 +7189,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-225 (Priority Low-Medium, Monthly)
 ### PRESUMPTION-236 (PRESUMPTION)
 **Statement:** Inline-embedding faculty summaries (1.3 -> 1.9 MB) — self-containment outweighs page-weight/scaling cost as the corpus grows.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Moderate (current-scale)  
-- Key source: Single-file self-contained web-app practice; HTTP Archive page-weight norms; round-trip elimination on high-latency links. — Self-containment buys portability/offline robustness; 1.9 MB is normal now.  
-- Summary: At current size the choice is well-justified, and the robustness benefits matter for the project's low-bandwidth contexts. Support is conditional/current-scale, not unconditional.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Moderate (current-scale)
+- Key source: Single-file self-contained web-app practice; HTTP Archive page-weight norms; round-trip elimination on high-latency links. — Self-containment buys portability/offline robustness; 1.9 MB is normal now.
+- Summary: At current size the choice is well-justified, and the robustness benefits matter for the project's low-bandwidth contexts. Support is conditional/current-scale, not unconditional.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-236_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: PARTIALLY-CHALLENGED | Strength: Moderate  
-- Key source: Performance-budget practice; lazy-loading/code-splitting consensus; main-thread/first-paint cost. — Inlining scales linearly, defeats caching, blocks first paint — worst on low-end clients.  
-- Specific risk: As the corpus grows, load/memory degrade silently on exactly the low-resource clients the project prioritizes.  
-- Summary: Fine now, but the presumption is about the trend; inlining the full corpus has no scaling ceiling. "True now, false in the limit"; joins the PRESUMPTION-229 scaling family the project already guards with crash caps.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: PARTIALLY-CHALLENGED | Strength: Moderate
+- Key source: Performance-budget practice; lazy-loading/code-splitting consensus; main-thread/first-paint cost. — Inlining scales linearly, defeats caching, blocks first paint — worst on low-end clients.
+- Specific risk: As the corpus grows, load/memory degrade silently on exactly the low-resource clients the project prioritizes.
+- Summary: Fine now, but the presumption is about the trend; inlining the full corpus has no scaling ceiling. "True now, false in the limit"; joins the PRESUMPTION-229 scaling family the project already guards with crash caps.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-236_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-226 (Priority Low-Medium, Weekly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate, current-scale); 15b PARTIALLY-CHALLENGED (Moderate). Gradual/future failure.  
+DISPOSITION-15c: MONITOR -> MONITOR-226 (Priority Low-Medium, Weekly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate, current-scale); 15b PARTIALLY-CHALLENGED (Moderate). Gradual/future failure.
 - Reasoning: Mirrors the PRESUMPTION-229 (MONITOR-218) scale handling: MONITOR with a concrete page-weight budget + switch-to-lazy-load trigger rather than REVISE now. RESOLVE once a budget/trigger lands; REVISE if first-paint degrades on a representative low-end client before then.
 
 ---
@@ -7211,21 +7211,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-226 (Priority Low-Medium, Weekly)
 ### PRESUMPTION-237 (PRESUMPTION)
 **Statement:** Publish/untrack calls rest on an unstated, stable publishability criterion; the governing rule is tacit (normative smuggling).
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate  
-- Key source: Klein (1998) recognition-primed decision; NIST/ISO data-classification (discretion-with-policy); FAIR/IRB case-by-case judgment. — Expert per-case publication calls can be reliable.  
-- Summary: Per-case judgments are a normal, often-reliable mode for a single expert operator. Weak-moderate because every framework pairs discretion with a documented anchoring policy; tacit-only is tolerated, not endorsed as stable/auditable.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+- Key source: Klein (1998) recognition-primed decision; NIST/ISO data-classification (discretion-with-policy); FAIR/IRB case-by-case judgment. — Expert per-case publication calls can be reliable.
+- Summary: Per-case judgments are a normal, often-reliable mode for a single expert operator. Weak-moderate because every framework pairs discretion with a documented anchoring policy; tacit-only is tolerated, not endorsed as stable/auditable.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-237_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Moderate  
-- Key source: NIST SP 800-60 / ISO 27001 A.8 data-classification; normative-smuggling critique; decision-reproducibility. — Publication decisions should follow an explicit written rule; tacit criteria drift and cannot be reviewed.  
-- Specific risk: An inconsistent or value-laden publish decision under a rule no one can inspect, with privacy/consent stakes (couples PRESUMPTION-238).  
-- Summary: Workable for one operator today but fragile by every governance standard: unauditable, inconsistent over time, silently value-laden. Moderate; the fix (write the criterion down) is cheap.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Moderate
+- Key source: NIST SP 800-60 / ISO 27001 A.8 data-classification; normative-smuggling critique; decision-reproducibility. — Publication decisions should follow an explicit written rule; tacit criteria drift and cannot be reviewed.
+- Specific risk: An inconsistent or value-laden publish decision under a rule no one can inspect, with privacy/consent stakes (couples PRESUMPTION-238).
+- Summary: Workable for one operator today but fragile by every governance standard: unauditable, inconsistent over time, silently value-laden. Moderate; the fix (write the criterion down) is cheap.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-237_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-227 (Priority Medium, Weekly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate); 15b CHALLENGED (Moderate). Real governance gap, cheap remedy.  
+DISPOSITION-15c: MONITOR -> MONITOR-227 (Priority Medium, Weekly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate); 15b CHALLENGED (Moderate). Real governance gap, cheap remedy.
 - Reasoning: PRESUMPTION + moderate challenge with a cheap fix and coupling to the framework commitment ASSUMPTION-218 -> MONITOR with a concrete recommendation (articulate + log the publishability criterion). Trigger: REVISE if an inconsistent/regretted publish decision surfaces.
 
 ---
@@ -7233,21 +7233,21 @@ DISPOSITION-15c: MONITOR -> MONITOR-227 (Priority Medium, Weekly)
 ### PRESUMPTION-238 (PRESUMPTION)
 **Statement:** Parking the history scrub presumes acceptable residual exposure while parked; stop-tracking presumed sufficient interim mitigation; no trigger set (success-criteria gap).
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate  
-- Key source: NIST SP 800-30 time-boxed risk acceptance; git rm --cached as a valid first step; private-repo compensating control. — Deferral can be defensible if exposure is bounded.  
-- Summary: Deferring a rewrite is defensible IF the repo stays private and risk acceptance is explicit and time-boxed. Stop-tracking correctly prevents recurrence. Conditional support — and the conditions (bounded exposure, explicit trigger) are exactly what is missing.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+- Key source: NIST SP 800-30 time-boxed risk acceptance; git rm --cached as a valid first step; private-repo compensating control. — Deferral can be defensible if exposure is bounded.
+- Summary: Deferring a rewrite is defensible IF the repo stays private and risk acceptance is explicit and time-boxed. Stop-tracking correctly prevents recurrence. Conditional support — and the conditions (bounded exposure, explicit trigger) are exactly what is missing.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-238_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Strong  
-- Key source: Git immutability + GitHub remediation docs; git-filter-repo/BFG ("treat committed content as compromised"); NIST risk-acceptance discipline. — Stop-tracking does NOT remove already-committed content; "no trigger" is unbounded acceptance.  
-- Specific risk: Sensitive/consent-bearing content (Hoffman x Levin transcript, narration zips) stays in history and is exposed the instant the repo is shared, with no trigger forcing remediation first.  
-- Summary: Well-established: stop-tracking only stops future commits; history remains recoverable, so "stop-tracking = sufficient" is false for anyone who can read the repo or its future public form. Most security-consequential item in the batch; engages Rule 12 (fail loud).  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Strong
+- Key source: Git immutability + GitHub remediation docs; git-filter-repo/BFG ("treat committed content as compromised"); NIST risk-acceptance discipline. — Stop-tracking does NOT remove already-committed content; "no trigger" is unbounded acceptance.
+- Specific risk: Sensitive/consent-bearing content (Hoffman x Levin transcript, narration zips) stays in history and is exposed the instant the repo is shared, with no trigger forcing remediation first.
+- Summary: Well-established: stop-tracking only stops future commits; history remains recoverable, so "stop-tracking = sufficient" is false for anyone who can read the repo or its future public form. Most security-consequential item in the batch; engages Rule 12 (fail loud).
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-238_against.md
 
-DISPOSITION-15c: REVISE -> REVISE-049 (Urgency MEDIUM)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate, conditional) vs 15b CHALLENGED (Strong); security/privacy stakes; "no trigger" is a genuine success-criteria gap.  
+DISPOSITION-15c: REVISE -> REVISE-049 (Urgency MEDIUM)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate, conditional) vs 15b CHALLENGED (Strong); security/privacy stakes; "no trigger" is a genuine success-criteria gap.
 - Reasoning: Strong, well-established challenge on a privacy-consequential item; OPEN-064 names the intent ("before any repo-publicity step") but it is not formalized as a hard gate and parked-window exposure is unbounded. REVISE (Medium): set an explicit hard pre-publicity scrub trigger, make the risk acceptance explicit/time-boxed, decide on history rewrite, keep repo private until then. Couples DECISION-047, OPEN-064.
 
 ---
@@ -7255,21 +7255,21 @@ DISPOSITION-15c: REVISE -> REVISE-049 (Urgency MEDIUM)
 ### PRESUMPTION-239 (PRESUMPTION)
 **Statement:** The transcript_authenticity_check FABRICATION verdict on fidelity-passing summary renders is a false-positive, not a real signal.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Moderate  
-- Key source: Abstractive-vs-extractive distinction; classifier base-rate/false-positive analysis; distribution-shift. — A verbatim-tuned authenticity classifier is out of distribution on abstractive summary renders, where surface divergence is expected.  
-- Summary: There is a principled reason the verdict COULD be a false positive (OOD input, expected surface divergence). Moderate, because plausibility is not adjudication: it argues the verdict might be noise, not that it is.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Moderate
+- Key source: Abstractive-vs-extractive distinction; classifier base-rate/false-positive analysis; distribution-shift. — A verbatim-tuned authenticity classifier is out of distribution on abstractive summary renders, where surface divergence is expected.
+- Summary: There is a principled reason the verdict COULD be a false positive (OOD input, expected surface divergence). Moderate, because plausibility is not adjudication: it argues the verdict might be noise, not that it is.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-239_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Moderate-Strong  
-- Key source: Maynez et al. (2020); Kryscinski et al. (2020) FactCC; Parasuraman & Riley (1997) automation complacency. — Abstractive summaries frequently hallucinate; dismissing an alarm without adjudication is a recognized failure mode.  
-- Specific risk: A genuinely fabricated/hallucinated summary render is shipped because its FABRICATION alarm was waved off as noise, corrupting authenticity guarantees.  
-- Summary: The presumption may be backwards: a FABRICATION verdict could be a true signal that the summary introduced unsupported content (a "fidelity" pass measures something different). Dismissing without a labeled error analysis self-undermines the project's own anti-fabrication commitment (ASSUMPTION-198).  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Moderate-Strong
+- Key source: Maynez et al. (2020); Kryscinski et al. (2020) FactCC; Parasuraman & Riley (1997) automation complacency. — Abstractive summaries frequently hallucinate; dismissing an alarm without adjudication is a recognized failure mode.
+- Specific risk: A genuinely fabricated/hallucinated summary render is shipped because its FABRICATION alarm was waved off as noise, corrupting authenticity guarantees.
+- Summary: The presumption may be backwards: a FABRICATION verdict could be a true signal that the summary introduced unsupported content (a "fidelity" pass measures something different). Dismissing without a labeled error analysis self-undermines the project's own anti-fabrication commitment (ASSUMPTION-198).
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-239_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-228 (Priority Medium-High, Weekly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate) vs 15b CHALLENGED (Moderate-Strong); honesty-critical signal; remediation already owned by OPEN-063.  
+DISPOSITION-15c: MONITOR -> MONITOR-228 (Priority Medium-High, Weekly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate) vs 15b CHALLENGED (Moderate-Strong); honesty-critical signal; remediation already owned by OPEN-063.
 - Reasoning: The dismissal is itself an unverified call on an honesty-critical signal; fail-loud leans toward forcing adjudication. MONITOR (Medium-High) rather than REVISE because OPEN-063 already owns the fix (classifier tuning + wiki read access), with the explicit, loud condition that the "false-positive" verdict must NOT be acted on until a labeled error analysis adjudicates it. Couples Rule 12 and the ASSUMPTION-198 fabrication-integrity family. Trigger: REVISE if any flagged render is published before adjudication.
 
 ---
@@ -7324,126 +7324,126 @@ NOVELTY (15a): None flagged. All 12 items have clear training-corpus literature 
 ### ASSUMPTION-220 (ASSUMPTION)
 **Statement:** PRS candidates can be validly generated from a talk's announced topic list / runtime metadata when the transcript is unavailable, if confidence is capped at Medium and flagged for transcript verification.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Moderate  
-- Key source: PRISMA two-stage screening (Page et al. 2021); informative-abstract/IR surrogate standards. -- A confidence-capped provisional candidate from a surrogate, flagged for full-source verification, is exactly the validated two-pass screening pattern.  
-- Summary: Metadata carries real content signal and staged extraction is methodologically legitimate; support is Moderate because validity hinges on verification actually running and PRS needs the argumentative move, not just topics.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Moderate
+- Key source: PRISMA two-stage screening (Page et al. 2021); informative-abstract/IR surrogate standards. -- A confidence-capped provisional candidate from a surrogate, flagged for full-source verification, is exactly the validated two-pass screening pattern.
+- Summary: Metadata carries real content signal and staged extraction is methodologically legitimate; support is Moderate because validity hinges on verification actually running and PRS needs the argumentative move, not just topics.
 - Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-220_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: PARTIALLY-CHALLENGED | Strength: Moderate  
-- Key source: Pitkin et al. (1999) & Boutron et al. (2010) abstract-vs-source divergence; Maynez et al. (2020) faithfulness. -- Thin surrogates systematically diverge from full source; generating claims from impoverished input maximizes hallucination.  
-- Specific risk: Topic-list PRS enter the corpus with resolution/significance the speaker never asserted; if the verification flag is never actioned (240/243), Medium-confidence artifacts ossify as evidence.  
-- Summary: Topic lists are faithful for topic, weak for the claim-structure PRS requires; the Medium cap labels but does not correct systematic proxy bias.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: PARTIALLY-CHALLENGED | Strength: Moderate
+- Key source: Pitkin et al. (1999) & Boutron et al. (2010) abstract-vs-source divergence; Maynez et al. (2020) faithfulness. -- Thin surrogates systematically diverge from full source; generating claims from impoverished input maximizes hallucination.
+- Specific risk: Topic-list PRS enter the corpus with resolution/significance the speaker never asserted; if the verification flag is never actioned (240/243), Medium-confidence artifacts ossify as evidence.
+- Summary: Topic lists are faithful for topic, weak for the claim-structure PRS requires; the Medium cap labels but does not correct systematic proxy bias.
 - Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-220_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-229 (Priority Medium, Weekly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate) vs 15b PARTIALLY-CHALLENGED (Moderate); symmetric mixed evidence on an active intake method.  
+DISPOSITION-15c: MONITOR -> MONITOR-229 (Priority Medium, Weekly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate) vs 15b PARTIALLY-CHALLENGED (Moderate); symmetric mixed evidence on an active intake method.
 - Reasoning: The pattern is sound but precondition-bound (verification must run; inferences scoped to topic-level). Cheap, scoped fix -> MONITOR not REVISE. Couples PRESUMPTION-242 (twin) and the verification-gate items 240/243. Promote to INCORPORATE once proxy fidelity is measured on a labeled sample and verification is enforced.
 
 ---
 ### ASSUMPTION-221 (ASSUMPTION)
 **Statement:** C2A2 should locate accountability for its own autonomous ("ownerless") agents in the deployment-and-verification pipeline (Tom's review gate), not in agent-internal predictability.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: SUPPORTED (in principle) | Strength: Strong  
-- Key source: Santoni de Sio & van den Hoven (2018) meaningful human control (tracking/tracing along the design-and-operation chain); Matthias (2004) responsibility gap; reinforced by Wolfram computational irreducibility. (live-verified)  
-- Summary: Near-consensus support for locating accountability in the oversight/deployment layer rather than internal predictability; Wolfram's irreducibility independently implies you cannot get accountability from predicting an irreducible process, so outcome-verification is the right locus.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: SUPPORTED (in principle) | Strength: Strong
+- Key source: Santoni de Sio & van den Hoven (2018) meaningful human control (tracking/tracing along the design-and-operation chain); Matthias (2004) responsibility gap; reinforced by Wolfram computational irreducibility. (live-verified)
+- Summary: Near-consensus support for locating accountability in the oversight/deployment layer rather than internal predictability; Wolfram's irreducibility independently implies you cannot get accountability from predicting an irreducible process, so outcome-verification is the right locus.
 - Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-221_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: PARTIALLY-CHALLENGED (conditional) | Strength: Moderate  
-- Key source: Green (2022) human-oversight policies fail / legitimize; Elish (2019) moral crumple zone; Parasuraman & Manzey (2010) complacency; Santoni de Sio & Mecacci (2021) four responsibility gaps. (live-verified)  
-- Specific risk: If the gate is treated as the accountability answer but is unexercised (current 4-day signout) or rubber-stamps, C2A2 ships autonomous outputs under false assurance with no one actually responsible.  
-- Summary: Challenge is to sufficiency/operation, not locus: a single review gate delivers accountability only if exercised and reason-responsive; otherwise it is theatre.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: PARTIALLY-CHALLENGED (conditional) | Strength: Moderate
+- Key source: Green (2022) human-oversight policies fail / legitimize; Elish (2019) moral crumple zone; Parasuraman & Manzey (2010) complacency; Santoni de Sio & Mecacci (2021) four responsibility gaps. (live-verified)
+- Specific risk: If the gate is treated as the accountability answer but is unexercised (current 4-day signout) or rubber-stamps, C2A2 ships autonomous outputs under false assurance with no one actually responsible.
+- Summary: Challenge is to sufficiency/operation, not locus: a single review gate delivers accountability only if exercised and reason-responsive; otherwise it is theatre.
 - Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-221_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-230 (Priority High, Weekly; INCORPORATE-pending-precondition)  
-- Net assessment: 15a SUPPORTED (Strong, in principle) vs 15b PARTIALLY-CHALLENGED (Moderate, conditional on an exercised gate). The strong support is for the *locus*; the challenge is that the *precondition* is currently unmet.  
+DISPOSITION-15c: MONITOR -> MONITOR-230 (Priority High, Weekly; INCORPORATE-pending-precondition)
+- Net assessment: 15a SUPPORTED (Strong, in principle) vs 15b PARTIALLY-CHALLENGED (Moderate, conditional on an exercised gate). The strong support is for the *locus*; the challenge is that the *precondition* is currently unmet.
 - Reasoning: Strong literature support would normally lean INCORPORATE, but the premise's operative precondition (an exercised, reason-responsive gate) is actively failing (4-day signout; REVISE-050/051; FLAG I). Per 15c's "err toward MONITOR; premature INCORPORATE is hard to reverse," parked at High as INCORPORATE-pending. Promote to validated_premises.md once REVISE-050/051 resolve. Consistency: complements (does not contradict) existing premise that human-review capacity is the binding HITL bottleneck.
 
 ---
 ### PRESUMPTION-240 (PRESUMPTION)
 **Statement:** The AWAITING-REVIEW gating of REVISE flags presumes the human review gate is reliably available -- but it has been absent four consecutive days; HIGH-urgency self-corrections sit unactioned.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Weak (conditional)  
-- Key source: Beyer et al. (2016) SRE escalation/on-call/SLA. -- Human-gated response is reliable only when availability is *engineered* (the mechanisms the design assumes without providing).  
-- Summary: Support for "reliably available" exists only under explicit availability guarantees, which are absent; the supportive case argues for engineered availability, not for assuming it.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Weak (conditional)
+- Key source: Beyer et al. (2016) SRE escalation/on-call/SLA. -- Human-gated response is reliable only when availability is *engineered* (the mechanisms the design assumes without providing).
+- Summary: Support for "reliably available" exists only under explicit availability guarantees, which are absent; the supportive case argues for engineered availability, not for assuming it.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-240_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Strong  
-- Key source: Queueing theory (Little's Law / unbounded queue); Cvach (2012) alarm fatigue; Parasuraman & Manzey (2010) complacency; Green (2022). -- Unattended queues grow without bound and human response degrades; the 4-day absence is queueing/oversight failure as predicted.  
-- Specific risk: HIGH-urgency self-corrections (incl. standing REVISE-047/048 and this run's REVISE-051) sit indefinitely; the self-correction mechanism is silently non-functional while appearing healthy.  
-- Summary: Essentially no support for "queues stay healthy without guarantees"; strong support for the opposite. The unstated availability assumption is unwarranted.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Strong
+- Key source: Queueing theory (Little's Law / unbounded queue); Cvach (2012) alarm fatigue; Parasuraman & Manzey (2010) complacency; Green (2022). -- Unattended queues grow without bound and human response degrades; the 4-day absence is queueing/oversight failure as predicted.
+- Specific risk: HIGH-urgency self-corrections (incl. standing REVISE-047/048 and this run's REVISE-051) sit indefinitely; the self-correction mechanism is silently non-functional while appearing healthy.
+- Summary: Essentially no support for "queues stay healthy without guarantees"; strong support for the opposite. The unstated availability assumption is unwarranted.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-240_against.md
 
-DISPOSITION-15c: REVISE -> REVISE-050 (Urgency HIGH)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Weak, conditional) vs 15b CHALLENGED (Strong); the precondition for the whole self-correction loop is actively failing with direct disconfirming data.  
+DISPOSITION-15c: REVISE -> REVISE-050 (Urgency HIGH)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Weak, conditional) vs 15b CHALLENGED (Strong); the precondition for the whole self-correction loop is actively failing with direct disconfirming data.
 - Reasoning: PRESUMPTION + strong challenge + active real-world failure -> REVISE HIGH (heuristic: weak support + strong challenge -> REVISE; PRESUMPTION strongly challenged -> REVISE). Rule 12 fail-loud: a silent multi-day stall must be surfaced. Recommend SLA + escalation + timeout/safe-default for AWAITING-REVIEW HIGH items. Anchors SYSTEMIC-RISK-FLAG I.
 
 ---
 ### PRESUMPTION-241 (PRESUMPTION)
 **Statement:** Firing the full daily cadence on a day with zero human design input presumes daily granularity stays meaningful when there was nothing for a human to have decided.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Moderate  
-- Key source: Continuous-monitoring/observability practice; SPC baselines. -- A regular heartbeat maintains freshness, surfaces drift, confirms liveness; "absence of change" is informative.  
-- Summary: Regular cadence has real value independent of human input; support is Moderate because it justifies *some* regular rhythm, not specifically a *full daily run* over alternatives.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Moderate
+- Key source: Continuous-monitoring/observability practice; SPC baselines. -- A regular heartbeat maintains freshness, surfaces drift, confirms liveness; "absence of change" is informative.
+- Summary: Regular cadence has real value independent of human input; support is Moderate because it justifies *some* regular rhythm, not specifically a *full daily run* over alternatives.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-241_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: PARTIALLY-CHALLENGED | Strength: Moderate  
-- Key source: Nyquist/observation-design reasoning; event-driven vs schedule-driven architecture; alarm fatigue (Cvach 2012). -- Over-sampling an unchanged signal adds cost not information and dilutes attention; self-awareness pipeline risks self-referential drift.  
-- Specific risk: Low-signal daily runs obscure high-signal items; the system manufactures observations of its own automated activity; reviewer attention (the binding constraint) spent on near-empty days.  
-- Summary: Daily firing on zero-input days is a cadence mismatch -- not catastrophic, but it challenges "daily granularity stays meaningful."  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: PARTIALLY-CHALLENGED | Strength: Moderate
+- Key source: Nyquist/observation-design reasoning; event-driven vs schedule-driven architecture; alarm fatigue (Cvach 2012). -- Over-sampling an unchanged signal adds cost not information and dilutes attention; self-awareness pipeline risks self-referential drift.
+- Specific risk: Low-signal daily runs obscure high-signal items; the system manufactures observations of its own automated activity; reviewer attention (the binding constraint) spent on near-empty days.
+- Summary: Daily firing on zero-input days is a cadence mismatch -- not catastrophic, but it challenges "daily granularity stays meaningful."
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-241_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-231 (Priority Low-Medium, Monthly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate) vs 15b PARTIALLY-CHALLENGED (Moderate); balanced, and self-illustrating -- this very pipeline's daily firing is what surfaced 240/243.  
+DISPOSITION-15c: MONITOR -> MONITOR-231 (Priority Low-Medium, Monthly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Moderate) vs 15b PARTIALLY-CHALLENGED (Moderate); balanced, and self-illustrating -- this very pipeline's daily firing is what surfaced 240/243.
 - Reasoning: The heartbeat's absence/drift-detection value (it caught the gate going dark) is a strong point FOR; the over-sampling/drift risk is a real point AGAINST. Balanced -> MONITOR (Low-Med, Monthly). Possible resolution: lightweight quiet-day heartbeat vs full input-day run. Cadence family with ASSUMPTION-117.
 
 ---
 ### PRESUMPTION-242 (PRESUMPTION)
 **Statement:** Topic-list-derived PRS candidates (ASSUMPTION-220) presume the topic list is a faithful proxy for the talk's actual content beyond what a Medium cap hedges.
 
-RETURN-TO-14a/14b (FOR / supportive):  
-- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate  
-- Key source: IR title/abstract-as-surrogate literature; Blei et al. (2003) LDA / topic modeling. -- Metadata carries genuine thematic signal; topic lists are adequate proxies for coarse topic identification.  
-- Summary: Reliable for "what is this about," weaker for "what move did the speaker make and why it matters" -- which is the PRS-defining part.  
+RETURN-TO-14a/14b (FOR / supportive):
+- Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+- Key source: IR title/abstract-as-surrogate literature; Blei et al. (2003) LDA / topic modeling. -- Metadata carries genuine thematic signal; topic lists are adequate proxies for coarse topic identification.
+- Summary: Reliable for "what is this about," weaker for "what move did the speaker make and why it matters" -- which is the PRS-defining part.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-242_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory):  
-- Result: CHALLENGED | Strength: Moderate  
-- Key source: Pitkin (1999)/Boutron (2010) surrogate divergence; Gentner (1983) structure-mapping (label != relational structure); Maynez (2020)/Kryscinski (2020) FactCC. -- Mapping a topic label to a claim-structure imports content the label does not carry; thin source maximizes hallucination.  
-- Specific risk: Resolution/significance fields encode the extractor's inference, not the speaker's claim, mislabeled at Medium; unverified incorporation accrues plausible-but-unattested content.  
-- Summary: Faithful for topic, challenged at the resolution/significance layer; Medium cap is a label, not a correction for systematic bias.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory):
+- Result: CHALLENGED | Strength: Moderate
+- Key source: Pitkin (1999)/Boutron (2010) surrogate divergence; Gentner (1983) structure-mapping (label != relational structure); Maynez (2020)/Kryscinski (2020) FactCC. -- Mapping a topic label to a claim-structure imports content the label does not carry; thin source maximizes hallucination.
+- Specific risk: Resolution/significance fields encode the extractor's inference, not the speaker's claim, mislabeled at Medium; unverified incorporation accrues plausible-but-unattested content.
+- Summary: Faithful for topic, challenged at the resolution/significance layer; Medium cap is a label, not a correction for systematic bias.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-242_against.md
 
-DISPOSITION-15c: MONITOR -> MONITOR-232 (Priority Medium, Weekly)  
-- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate) vs 15b CHALLENGED (Moderate); designer-unaware twin of ASSUMPTION-220.  
+DISPOSITION-15c: MONITOR -> MONITOR-232 (Priority Medium, Weekly)
+- Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate) vs 15b CHALLENGED (Moderate); designer-unaware twin of ASSUMPTION-220.
 - Reasoning: Challenge is Moderate (not Strong) and the fix is cheap and scoped (leave resolution/significance unfilled pending transcript), so MONITOR not REVISE -- with extra care per 15c because designers were unaware. Tracks with MONITOR-229; both ride the verification-gate dependency (240/243).
 
 ---
 ### PRESUMPTION-243 (PRESUMPTION)
 **Statement:** Locating accountability in "Tom's review gate" (ASSUMPTION-221) presumes the gate is exercised; with the 4-day signout it is currently a no-op, so the accountability story is presently unwarranted.
 
-RETURN-TO-14a/14b (FOR / supportive -- note: supports the *vulnerability claim*):  
-- Result: SUPPORTED | Strength: Strong  
-- Key source: Green (2022); Santoni de Sio & van den Hoven (2018) tracking condition; COSO/SOC operating-effectiveness; Elish (2019). (live-verified) -- Accountability requires an *exercised* control; a control not operating provides no assurance for the period it is down.  
-- Summary: The presumption is well-supported -- a 4-day no-op gate with HIGH-urgency items queued fails operating-effectiveness and tracking, so the accountability story is presently unwarranted.  
+RETURN-TO-14a/14b (FOR / supportive -- note: supports the *vulnerability claim*):
+- Result: SUPPORTED | Strength: Strong
+- Key source: Green (2022); Santoni de Sio & van den Hoven (2018) tracking condition; COSO/SOC operating-effectiveness; Elish (2019). (live-verified) -- Accountability requires an *exercised* control; a control not operating provides no assurance for the period it is down.
+- Summary: The presumption is well-supported -- a 4-day no-op gate with HIGH-urgency items queued fails operating-effectiveness and tracking, so the accountability story is presently unwarranted.
 - Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-243_for.md
 
-RETURN-TO-14a/14b (AGAINST / disconfirmatory -- counter that a nominal gate suffices):  
-- Result: NO-CHALLENGE-FOUND | Strength: Weak  
-- Key source: Oversight-as-standing-capacity / risk-based periodic audit. -- Covers brief, bounded gaps for low-rate reversible streams, not an open-ended multi-day no-op.  
-- Specific risk (if relied on anyway): The project claims accountability it does not currently have; outputs accrue under a fictional assurance for the signout's duration.  
-- Summary: The strongest pro-nominal-gate case requires no irreversible action + bounded window; an unbounded 4-day signout exceeds it. Presumption largely sustained.  
+RETURN-TO-14a/14b (AGAINST / disconfirmatory -- counter that a nominal gate suffices):
+- Result: NO-CHALLENGE-FOUND | Strength: Weak
+- Key source: Oversight-as-standing-capacity / risk-based periodic audit. -- Covers brief, bounded gaps for low-rate reversible streams, not an open-ended multi-day no-op.
+- Specific risk (if relied on anyway): The project claims accountability it does not currently have; outputs accrue under a fictional assurance for the signout's duration.
+- Summary: The strongest pro-nominal-gate case requires no irreversible action + bounded window; an unbounded 4-day signout exceeds it. Presumption largely sustained.
 - Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-243_against.md
 
-DISPOSITION-15c: REVISE -> REVISE-051 (Urgency MEDIUM-HIGH)  
-- Net assessment: 15a SUPPORTED (Strong; vulnerability real) vs 15b NO-CHALLENGE-FOUND (Weak); a PRESUMPTION whose surfaced vulnerability is strongly supported and currently active.  
+DISPOSITION-15c: REVISE -> REVISE-051 (Urgency MEDIUM-HIGH)
+- Net assessment: 15a SUPPORTED (Strong; vulnerability real) vs 15b NO-CHALLENGE-FOUND (Weak); a PRESUMPTION whose surfaced vulnerability is strongly supported and currently active.
 - Reasoning: PRESUMPTION + strongly-supported active vulnerability -> REVISE (Med-High). Remedy is to exercise the gate (REVISE-050) or downgrade the accountability claim to latent/periodic with a no-irreversible-action-while-parked rule + tracing. This REVISE's resolution is the precondition that would let ASSUMPTION-221 (MONITOR-230) be INCORPORATED. Co-anchors SYSTEMIC-RISK-FLAG I.
 
 ---
@@ -8197,3 +8197,2995 @@ DISPOSITION-073:
 **Generated by Agents 15a, 15b, and 15c (2026-05-27 scheduled pipeline run)**
 **Date: 2026-05-27 (autonomous scheduled-task run; no human review in-loop)**
 **Pipeline trigger: c2a2-lit-search-pipeline; 24 items processed (24 new cycle-0; combining 2026-05-25 + 2026-05-26 batches).**
+
+---
+
+## 2026-05-28 RUN — c2a2-lit-search-pipeline (15a + 15b + 15c)
+
+**Disposition counts:** 0 INCORPORATE / 8 MONITOR / 5 REVISE. Total = 13 items.
+
+**Run scope:** Scheduled c2a2-lit-search-pipeline run. One batch processed: the 2026-05-27 EOD 14a/14b batch (13 cycle-0 items: ASSUMPTION-237..242 + PRESUMPTION-260..266). All were [QUEUED] without prior [SEARCHED-15a]/[SEARCHED-15b] tags at run start.
+
+**New IDs:** MONITOR-256..263 (8); REVISE-060..064 (5); DISPOSITION-074..086 (13).
+
+**Citations / grounding:** Per the ASSUMPTION-199 convention (SYSTEMIC-RISK-FLAG E), citations drawn from training-corpus and prior C2A2-internal precedent for routine items. Highest-stakes items (ASSUMPTION-240 truncation-recurrence diagnostic, PRESUMPTION-262 multi-causal-path, PRESUMPTION-263 honesty-layer naming-as-deferral, PRESUMPTION-264 atomicity) warrant live verification when the response-gate next exercises.
+
+**NOVELTY (15a):** None flagged. All 13 items have clear training-corpus literature anchors (RAG / queueing theory / incident-response / multi-agent reflection / distributed atomicity / Swiss Cheese / Goodhart); no literature-gap NOVEL items this batch.
+
+**SYSTEMIC-RISK (15b) — FLAG I continuation:** No NEW systemic-risk flag this run, but FOUR of the five new REVISEs extend existing flags or document new instances of validated C2A2-internal pathologies:
+- REVISE-060 (ASSUMPTION-242) — honesty-layer canonization-as-substantive contested; recurrence of PRESUMPTION-248 defer-as-bottleneck-relabel pattern at the self-awareness mechanism
+- REVISE-062 (PRESUMPTION-262) — multi-causal-path bug pattern; recurrence of PRESUMPTION-259 binary-framing pattern at the bug-diagnostic level
+- REVISE-063 (PRESUMPTION-263) — same naming-as-deferral pattern recurring at the honesty-layer's own mechanism; couples REVISE-060
+- REVISE-064 (PRESUMPTION-264) — self-referential atomicity vulnerability; couples REVISE-059 (PRESUMPTION-257); extends FLAG-I self-referential dimension
+
+REVISE-061 (PRESUMPTION-260) is independent of FLAG I — concerns broker-v4 web_enrich calibration gap.
+
+The response-leg backlog grows: standing AWAITING-REVIEW = 13 (REVISE-047..059) + 5 new (REVISE-060..064) = 18 total. FLAG I closed-loop-no-exit pathology compounds.
+
+### DISPOSITION records (13 items)
+
+```
+DISPOSITION-074:
+  Date: 2026-05-28
+  Item: ASSUMPTION-237
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Architectural pattern is industry-standard RAG (Lewis 2020; Perplexity / You.com / Phind). Failure modes (citation fabrication, Lost-in-the-Middle, top-5 inadequacy for scholarly) are documented but bound applicability rather than refute the pattern.
+  Disposition: MONITOR (MONITOR-256)
+  Reasoning: Mixed evidence on architectural item; remediation (citation post-processing, A/B placement, K-calibration) is cheap and well-scoped. INCORPORATE-pending-calibration.
+  Detail: Cadence Weekly; next 15d 2026-06-04. Priority Medium. Couples PRESUMPTION-260 / REVISE-061.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-075:
+  Date: 2026-05-28
+  Item: ASSUMPTION-238
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Generic-broker is established industry pattern (Twelve-Factor, Stripe, AWS) but compound-debt failure mode is documented (Brown 2015). The migration-trigger / re-evaluation cadence is the under-specified element.
+  Disposition: MONITOR (MONITOR-257)
+  Reasoning: Cheap remedy (document migration trigger, light server-side validation). 90-day audit cadence anchors the re-evaluation.
+  Detail: Cadence Weekly; next 15d 2026-06-04. Priority Medium-Low. Couples ASSUMPTION-239.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-076:
+  Date: 2026-05-28
+  Item: ASSUMPTION-239
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Two-layer (device + global) counter design is canonical defense-in-depth (Beyer SRE; AWS rate-limit literature). The specific cap values (20/$3) are unvalidated — calibration owed.
+  Disposition: MONITOR (MONITOR-258)
+  Reasoning: Structural design supported; specific values pending empirical calibration. 30-day post-ship calibration sprint is the documented remedy.
+  Detail: Cadence Weekly; next 15d 2026-06-04. Priority Medium. Couples ASSUMPTION-238.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-077:
+  Date: 2026-05-28
+  Item: ASSUMPTION-240
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong (on diagnostic); Weak (on "fix did not land" framing)
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Technical diagnostic (Tiptap/ProseMirror insertText) is well-grounded. The "diagnosis stands" framing is challenged by Reason / Cook & Woods / Allspaw multi-causal-path literature; recurrence demands re-investigation, not re-execution.
+  Disposition: MONITOR (MONITOR-259)
+  Reasoning: Both readings of recurrence (fix-unimplemented vs diagnostic-incomplete) require the same first action: trace the 2026-05-27 input path. Couples PRESUMPTION-262 / REVISE-062.
+  Detail: Cadence Weekly; next 15d 2026-06-04. Priority HIGH (operational pathway-14 honesty-layer; second-instance failure). Action: trace input path before re-fix.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-078:
+  Date: 2026-05-28
+  Item: ASSUMPTION-241
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Canonization pattern (Fowler EAA, NIST audit, Parasuraman/Manzey HCI) is sound; "intent supersedes UI" extension is asymmetrically riskier than "review-page over Gmail" — Norman / Bainbridge / ITIL audit raise audit-trail and stopgap-becomes-permanent concerns.
+  Disposition: MONITOR (MONITOR-260)
+  Reasoning: Cheap remedy (explicit logging required when intent overrides UI; time-limit on rule pending generation-side fix). Conditioned-INCORPORATE.
+  Detail: Cadence Weekly; next 15d 2026-06-04. Priority Medium. Couples ASSUMPTION-230/231 (MONITOR-241/242).
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-079:
+  Date: 2026-05-28
+  Item: ASSUMPTION-242
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Moderate-Strong challenge on key normative claim ("canonization-as-substantive-response"). SRE / incident-response / complex-systems-failure literatures require remediation commitments paired with documentation. The 05-18 to 05-27 9-day gap is direct empirical evidence of PRESUMPTION-248 pattern recurrence at the honesty-layer.
+  Disposition: REVISE (REVISE-060)
+  Reasoning: Strong challenge on a self-referential mechanism (honesty-layer integrity). Per 15c heuristics, partial support + moderate-strong challenge → REVISE. Couples PRESUMPTION-263 / REVISE-063.
+  Detail: Urgency MEDIUM-HIGH. Recommended: pair every honesty-layer event with action item + owner + deadline; recurrence triggers required-fix.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-080:
+  Date: 2026-05-28
+  Item: PRESUMPTION-260
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: BEIR / SPECTER / Adlakha et al. directly challenge top-5-generic-web for scholarly cross-tradition retrieval. The presumption (no calibration check) is itself the contested element; literature does not validate the cross-tradition use case.
+  Disposition: REVISE (REVISE-061)
+  Reasoning: PRESUMPTION + weak support + moderate challenge → REVISE per heuristics. Designer-unaware that scholarly cross-domain is a distinct retrieval shape. Calibration sprint owed.
+  Detail: Urgency MEDIUM. Recommended: pre-ship or 30-day post-ship calibration sprint with 20 known-answer cross-tradition queries; flag tradition-bridge as distinct query class.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-081:
+  Date: 2026-05-28
+  Item: PRESUMPTION-261
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Symmetric weak evidence both directions. IA-stability is defensibly assumed for tabs as a category; specific 4-tab stability is unvalidated. Curriculum Tools is the highest-uncertainty tab.
+  Disposition: MONITOR (MONITOR-261)
+  Reasoning: Cheap remedy (light adapter interfaces; 90-day re-evaluation cadence; avoid deep investment in Curriculum Tools).
+  Detail: Cadence Weekly; next 15d 2026-06-04. Priority Low-Medium.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-082:
+  Date: 2026-05-28
+  Item: PRESUMPTION-262
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Reason / Cook & Woods / Allspaw / ProseMirror multi-input-path documentation all directly support the multi-causal-path counter-reading. The 2026-05-27 recurrence is itself new evidence the 05-18 diagnosis may have been incomplete.
+  Disposition: REVISE (REVISE-062)
+  Reasoning: PRESUMPTION + weak support + strong challenge → REVISE per heuristics. Couples ASSUMPTION-240 (MONITOR-259). Recurrence of PRESUMPTION-259 binary-framing pattern at the bug-diagnostic level.
+  Detail: Urgency MEDIUM-HIGH. Recommended: trace 2026-05-27 input path before re-executing 05-18 fix; treat recurrence as new evidence.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-083:
+  Date: 2026-05-28
+  Item: PRESUMPTION-263
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: PRESUMPTION-248 (validated within C2A2) is the exact pattern recurring at the honesty-layer mechanism. The 05-18 to 05-27 9-day gap with recurrence is direct empirical evidence. Bainbridge / Goffman / Allspaw on naming-as-deferral is robust.
+  Disposition: REVISE (REVISE-063)
+  Reasoning: PRESUMPTION + strong challenge on a self-referential mechanism (the honesty-layer canonizes a known-broken path but does not cause its fix). HIGH urgency per heuristics: designer-unaware + strong challenge + self-referential.
+  Detail: Urgency HIGH. Recommended: each honesty-layer event requires action item + owner + deadline; recurrence triggers required-fix; audit canonization-to-remediation ratio. Couples ASSUMPTION-242 / REVISE-060.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-084:
+  Date: 2026-05-28
+  Item: PRESUMPTION-264
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: Gray & Reuter / Nygard / Anderson / Taleb all support the self-monitoring vulnerability concern. REVISE-059 (PRESUMPTION-257) is direct C2A2 evidence the failure mode already occurred. Deferring architectural remediation behind operational continuity is exactly the pattern that produced the original silent failure.
+  Disposition: REVISE (REVISE-064)
+  Reasoning: PRESUMPTION + weak support + moderate challenge + self-referential coupling to existing REVISE-059. The self-referential dimension elevates urgency.
+  Detail: Urgency MEDIUM-HIGH. Recommended: external verification step after each daily run; explicit atomicity contract; treat REVISE-059 as blocker for next-cycle architectural changes. Couples REVISE-059 (PRESUMPTION-257).
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-085:
+  Date: 2026-05-28
+  Item: PRESUMPTION-265
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: Kleinrock (Little's Law) / Reinertsen / Anderson support the rate-not-state framing. C2A2's own 2026-05-20 → 2026-05-26 time-series (2 → 3 FLAG-I routes in 6 days) is direct evidence of process-shape. Bounded-enumeration framing produces reactive rather than anticipatory architecture.
+  Disposition: MONITOR (MONITOR-262)
+  Reasoning: Cheap remedy (add rate-of-new-routes tracking; treat each route as evidence of process). PRESUMPTION but remediation is operational/dashboard-hygiene rather than architectural.
+  Detail: Cadence Weekly; next 15d 2026-06-04. Priority Medium. Couples PRESUMPTION-256 (REVISE-058) and FLAG I cluster.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-086:
+  Date: 2026-05-28
+  Item: PRESUMPTION-266
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Du / Madaan / Shao multi-agent-debate literature supports increment in some tasks; Chen et al. / Liang ablation studies show no increment in others. Same-model-family correlated-error caveat (Anthropic / OpenAI alignment work) bounds the "distinct epistemic agents" claim. Increment unverified is the presumption itself.
+  Disposition: MONITOR (MONITOR-263)
+  Reasoning: Cheap ablation test (7 days single-agent vs 7 days two-agent on same data). Mixed evidence; remediation is empirical.
+  Detail: Cadence Weekly; next 15d 2026-06-04. Priority Low-Medium. Recommended: ablation test before next protocol revision.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+### Consistency check (before disposition)
+
+0 INCORPORATE this run → no writes to validated_premises.md (correct null). PREMISE high-water mark remains PREMISE-043 (since 2026-05-21). No contradictions introduced with existing validated premises. The 5 REVISEs and 8 MONITORs are consistent with the existing corpus:
+- REVISE-060/063 extend the honesty-layer-mechanism family (PRESUMPTION-248 pattern recurrence; couples REVISE-058 family)
+- REVISE-062 is the bug-diagnostic instance of the binary-framing pattern (PRESUMPTION-253/259 family)
+- REVISE-064 extends REVISE-059's self-referential atomicity concern
+- REVISE-061 is the only independent REVISE — broker-v4 calibration gap, not FLAG I
+
+### Completion checklist (2026-05-28 run)
+
+- [x] Read for_lit_search.md queue state: 13 [QUEUED] items lacking [SEARCHED-15a] (2026-05-27 EOD batch); 0 partial; 0 searched-but-undispositioned.
+- [x] Read agent definitions (15a, 15b, 15c) and provenance_protocol.md.
+- [x] 15a: wrote 13 NEW FOR result files to lit_search_results/for/ with PROVENANCE headers.
+- [x] 15b: wrote 13 NEW AGAINST result files to lit_search_results/against/ with PROVENANCE headers + STEELMAN sections.
+- [x] 15c: dispositioned all 13 paired results → 0 INCORPORATE / 8 MONITOR / 5 REVISE.
+- [x] Update for_lit_search.md: tagged 13 items with [SEARCHED-15a:2026-05-28] / [SEARCHED-15b:2026-05-28] / [DISPOSITIONED-15c:2026-05-28].
+- [x] monitor_queue.md: 8 NEW MONITOR (256-263) appended.
+- [x] revision_flags.md: 5 REVISE (060-064) appended, all AWAITING-REVIEW.
+- [x] validated_premises.md: no writes (0 INCORPORATE; correct null). PREMISE high-water still 043.
+- [x] Provenance chains complete for all 13 (Origin → [14x → 15a, 15b → 15c] → disposition).
+- [x] No NOVELTY flagged; all items have training-corpus literature anchors.
+- [x] No new SYSTEMIC-RISK flag (FLAG I extensions only: REVISE-060/062/063/064 join the FLAG I cluster; REVISE-061 is independent).
+- [x] Consistency check passed: no contradictions with validated_premises.md.
+- [ ] OUT-OF-BAND ESCALATION NOTE: REVISE-060..064 join the standing AWAITING-REVIEW backlog (REVISE-047..059 = 13). Total AWAITING-REVIEW = 18. REVISE-063 and REVISE-064 in particular concern the integrity of the self-awareness mechanism itself; both must be escalated OUT-OF-BAND per FLAG I.
+
+**Disposition counts (2026-05-28):** 0 INCORPORATE / 8 MONITOR / 5 REVISE. 13 items processed. SYSTEMIC-RISK-FLAGs raised: 0 NEW, 4 FLAG I extensions.
+**Run timestamp:** 2026-05-28 (c2a2-lit-search-pipeline scheduled task; autonomous; no human-in-the-loop).
+**Total daily-cycle items remaining in queue post-run:** 0 (13 items advanced to terminal disposition).
+
+---
+
+**Generated by Agents 15a, 15b, and 15c (2026-05-28 scheduled pipeline run)**
+**Date: 2026-05-28 (autonomous scheduled-task run; no human review in-loop)**
+**Pipeline trigger: c2a2-lit-search-pipeline; 13 items processed (13 new cycle-0; 2026-05-27 EOD batch).**
+
+---
+
+## 2026-05-29 RUN — c2a2-lit-search-pipeline (15a + 15b + 15c)
+
+**Disposition counts:** 0 INCORPORATE / 13 MONITOR / 7 REVISE. Total = 20 items.
+
+**Run scope:** Scheduled c2a2-lit-search-pipeline run. One batch processed: the 2026-05-28 EOD 14a/14b batch (20 cycle-0 items: ASSUMPTION-243..252 + PRESUMPTION-267..276). All were [QUEUED] without prior [SEARCHED-15a]/[SEARCHED-15b] tags at run start.
+
+**New IDs:** MONITOR-264..276 (13); REVISE-065..071 (7); DISPOSITION-087..106 (20).
+
+**Citations / grounding:** Per ASSUMPTION-199 convention (SYSTEMIC-RISK-FLAG E), citations drawn from training-corpus and prior C2A2-internal precedent for routine items. Highest-stakes items (PRESUMPTION-267 binary-framing 4-instance pattern; PRESUMPTION-269 push-gate FLAG-I extension; PRESUMPTION-275 self-referential observation independence) warrant live verification when the response-gate next exercises.
+
+**NOVELTY (15a):** None flagged. All 20 items have clear training-corpus literature anchors (adapter pattern / SRE / Constitutional AI / mirror conventions / anomaly-detection baseline / tech-debt / iron-triangle / double-loop learning / observer-effect / cross-container telemetry); no literature-gap NOVEL items this batch.
+
+**SYSTEMIC-RISK (15b) — FLAG I continuation + self-referential cluster:** Six of seven new REVISEs extend existing systemic risk clusters:
+- REVISE-065 (PRESUMPTION-267) — 4-instance binary-framing structural-bias pattern; couples PRESUMPTION-253/259/262 family
+- REVISE-066 (PRESUMPTION-269) — push-gate as 5th FLAG-I route; couples REVISE-053; HIGH urgency
+- REVISE-067 (PRESUMPTION-272) — query-class coverage gap at ship-readiness; couples REVISE-061
+- REVISE-068 (PRESUMPTION-270) — swarm-contract mirror drift; lowest-cost remediation
+- REVISE-069 (PRESUMPTION-274) — named-trigger elastic deferral; couples PRESUMPTION-248 family
+- REVISE-070 (PRESUMPTION-273) — implicit scope-renegotiation; couples FLAG-I demo-path bias cluster
+- REVISE-071 (PRESUMPTION-275) — self-referential observation independence; HIGH self-referential elevation; completes 3-item cluster with REVISE-063 + REVISE-064
+
+The response-leg backlog grows: standing AWAITING-REVIEW = 18 (REVISE-047..064) + 7 new (REVISE-065..071) = 25 total. FLAG I closed-loop-no-exit pathology compounds. The 3-item self-referential cluster (REVISE-063/064/071) should be escalated OUT-OF-BAND as a coupled architectural decision about self-awareness-mechanism integrity.
+
+### DISPOSITION records (20 items)
+
+```
+DISPOSITION-087:
+  Date: 2026-05-29
+  Item: ASSUMPTION-243
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Adapter pattern is industry-standard (Gamma/Fowler/Martin/Newman). "First demonstrated instance" framing precedes architectural validation per Brown/Bass; N=1 is documented overhead-to-benefit period.
+  Disposition: MONITOR (MONITOR-264)
+  Reasoning: Pattern sound; architectural validation earns at N=2+ adoption. Track adoption count + per-surface divergence over 30-60 days.
+  Detail: Cadence Weekly; next 15d 2026-06-05. Priority Medium. Couples ASSUMPTION-251 / MONITOR-272 (un-numbered candidate); broker-v4 cluster.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-088:
+  Date: 2026-05-29
+  Item: ASSUMPTION-244
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: Single-path smoke-test + human gate defensible as first gate; "sufficient" framing rejected by Beizer/Myers equivalence-class partitioning + BEIR/SPECTER multi-query benchmarking.
+  Disposition: MONITOR (MONITOR-265)
+  Reasoning: Verification rubric expansion is cheap; blast radius limited (5-file changeset, human gate). Couples PRESUMPTION-272 (REVISE-067).
+  Detail: Cadence Weekly; next 15d 2026-06-05. Priority Medium. Conditional INCORPORATE pending rubric.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-089:
+  Date: 2026-05-29
+  Item: ASSUMPTION-245
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Constitutional rule integrity strongly supported (Christiano/Bai/Amodei). Scaling concern (Bainbridge/Reason erosion-under-load) is the live worry — lives in PRESUMPTION-269 / REVISE-066.
+  Disposition: MONITOR (MONITOR-266)
+  Reasoning: Rule integrity supported on single-instance level. Instrument push-gate stall-time as relevant signal.
+  Detail: Cadence Weekly; next 15d 2026-06-05. Priority Medium-High. Couples PRESUMPTION-269 (REVISE-066); FLAG-I cluster.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-090:
+  Date: 2026-05-29
+  Item: ASSUMPTION-246
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Mirror convention usable per Nygard/Bass/Kleppmann WITH drift-detection; assumption does not name detection. Symlink is canonical remediation (near-zero cost).
+  Disposition: MONITOR (MONITOR-267)
+  Reasoning: Mirror pattern usable; drift-detection added under REVISE-068. Architectural-reviewer post-ISME deferral tracked under REVISE-069.
+  Detail: Cadence Weekly; next 15d 2026-06-05. Priority Low-Medium. Couples PRESUMPTION-270 (REVISE-068); PRESUMPTION-274 (REVISE-069).
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-091:
+  Date: 2026-05-29
+  Item: ASSUMPTION-247
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak
+  Net assessment: Baseline-then-delta is canonical (Beyer SRE/NIST/Chen); 1-week-specific baseline carries documented risk for heterogeneous data per Box & Jenkins.
+  Disposition: MONITOR (MONITOR-268)
+  Reasoning: Pattern sound; 1-week calibration parameter to observe across cycles. Cheap remedy (extend baseline if Week-1 variance high).
+  Detail: Cadence Weekly; next 15d 2026-06-05. Priority Low-Medium.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-092:
+  Date: 2026-05-29
+  Item: ASSUMPTION-248
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Surfacing-over-skipping supported (Fowler/Cunningham/Beck); "easy to add later" is documented under-estimate language per Cunningham/Brooks/Cockburn.
+  Disposition: MONITOR (MONITOR-269)
+  Reasoning: Design choice supported; needs explicit re-add triggers per dropped check to discharge sandbagging risk.
+  Detail: Cadence Weekly; next 15d 2026-06-05. Priority Low-Medium. PRESUMPTION-248 recurrence-risk coupling.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-093:
+  Date: 2026-05-29
+  Item: ASSUMPTION-249
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Deadline-driven prioritization with demo-tiebreaker supported (Goldratt/Reinertsen/Sutherland/Brooks). Demo-path bias documented (Brooks/DeMarco & Lister/Heath); FLAG-I cluster is direct internal evidence.
+  Disposition: MONITOR (MONITOR-270)
+  Reasoning: Tiebreaker-role supported; non-demo deferred work tracking owed. Couples PRESUMPTION-273 (REVISE-070).
+  Detail: Cadence Weekly; next 15d 2026-06-05. Priority Medium-High. FLAG-I cluster.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-094:
+  Date: 2026-05-29
+  Item: ASSUMPTION-250
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Asking the reframing question is well-supported (Argyris/Senge/Schön/Reason/Cook & Woods); acting on the new framing without external check is the warned condition (PRESUMPTION-275 inherited).
+  Disposition: MONITOR (MONITOR-271)
+  Reasoning: HIGH priority — central architectural framing-shift candidate. Question is data; new framing needs external check (Tom/Adaptive). Couples PRESUMPTION-275 (REVISE-071).
+  Detail: Cadence Weekly; next 15d 2026-06-05. Priority HIGH. FLAG-I cluster + self-referential elevation cluster.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-095:
+  Date: 2026-05-29
+  Item: ASSUMPTION-251
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak
+  Net assessment: Registry-hygiene failure framing supported (Bass/Nygard/Brown). Numbering-ceremony framing equally defensible (PRESUMPTION-271).
+  Disposition: MONITOR (MONITOR-272)
+  Reasoning: Both framings tractable. Cheap audit (content-debt vs ceremony-debt for 3 un-numbered candidates) decides remediation direction.
+  Detail: Cadence Weekly; next 15d 2026-06-05. Priority Medium. Couples PRESUMPTION-271 (MONITOR-275).
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-096:
+  Date: 2026-05-29
+  Item: ASSUMPTION-252
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Post-write external verification pattern sound (Gray & Reuter/Kleppmann/Nygard/Beyer SRE). Self-referential internal-only check is documented less reliable (Goodhart/Hawthorne).
+  Disposition: MONITOR (MONITOR-273)
+  Reasoning: Verification pattern sound; structural concern (verifier inside pipeline being tested) tracked under REVISE-064 external-script remediation. Couples REVISE-064 + REVISE-071 self-referential cluster.
+  Detail: Cadence Weekly; next 15d 2026-06-05. Priority Medium-High.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-097:
+  Date: 2026-05-29
+  Item: PRESUMPTION-267
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: 4-instance recurrence is canonical signature of organizational defensive-routine (Argyris) or framing-bias (Heath & Heath/Tversky/Kahneman). Internal recurrence is direct structural-bias evidence.
+  Disposition: REVISE (REVISE-065)
+  Reasoning: PRESUMPTION + weak support + moderate-strong challenge + internal-recurrence pattern → REVISE per heuristics. Self-referential elevation (framing mechanism itself implicated).
+  Detail: Urgency HIGH. Recommended: require ≥3 options for prioritization framings; explicit "third option?" check; treat 4-instance recurrence as framing-process review trigger.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-098:
+  Date: 2026-05-29
+  Item: PRESUMPTION-268
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Meta-agent value supported under bounded conditions (Hong/Park/Shao); canary-too-many anti-pattern documented (Bainbridge/Beyer toil); FLAG-I bandwidth context is the documented warned condition.
+  Disposition: MONITOR (MONITOR-274)
+  Reasoning: Net-value test owed but not defined; track watch-agent output → action conversion rate as de facto signal with sunset criterion.
+  Detail: Cadence Weekly; next 15d 2026-06-05. Priority Medium. FLAG-I bandwidth coupling.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-099:
+  Date: 2026-05-29
+  Item: PRESUMPTION-269
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: HITL bandwidth-bottleneck documented (Bainbridge/Christiano/Reason/Allspaw); FLAG-I cluster is direct internal evidence; 5.5-week ISME window is the documented load period.
+  Disposition: REVISE (REVISE-066)
+  Reasoning: PRESUMPTION + weak support + moderate-strong challenge + FLAG-I cluster extension → REVISE per heuristics. HIGH urgency: extends FLAG-I to potential 5th route.
+  Detail: Urgency HIGH. Recommended: instrument push-gate latency; SLA + escalation; rule-bounds explicit; couple FLAG-I remediation.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-100:
+  Date: 2026-05-29
+  Item: PRESUMPTION-270
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: Copy-mirror drift without detection is unambiguously documented as failure precondition (Kleppmann/Nygard/Conway/Bass); symlink canonical remediation.
+  Disposition: REVISE (REVISE-068)
+  Reasoning: PRESUMPTION + weak support + moderate challenge + near-zero-cost remediation → REVISE per heuristics. Lowest-cost REVISE in this run.
+  Detail: Urgency MEDIUM. Recommended: replace copy-mirror with symlink OR add file-hash equality check to Janitor.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-101:
+  Date: 2026-05-29
+  Item: PRESUMPTION-271
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: NO-CHALLENGE-FOUND | 15b strength: Weak
+  Net assessment: Numbering-ceremony-as-FLAG-I-gate framing has documented support (Nygard original ADR); literature does not directly challenge.
+  Disposition: MONITOR (MONITOR-275)
+  Reasoning: Audit-question framing is the right remediation: distinguish content-debt from ceremony-debt for un-numbered candidates. Couples MONITOR-272.
+  Detail: Cadence Weekly; next 15d 2026-06-05. Priority Medium.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-102:
+  Date: 2026-05-29
+  Item: PRESUMPTION-272
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: Testing/retrieval-evaluation literature (Beizer/Myers/BEIR/SPECTER) directly rejects single-query-as-representative; scholarly cross-tradition queries are a documented distinct retrieval shape.
+  Disposition: REVISE (REVISE-067)
+  Reasoning: PRESUMPTION + weak support + moderate challenge → REVISE per heuristics. Couples REVISE-061 (broker-v4 calibration gap).
+  Detail: Urgency MEDIUM. Recommended: 3-5 query-class verification rubric; couple REVISE-061 calibration sprint.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-103:
+  Date: 2026-05-29
+  Item: PRESUMPTION-273
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Iron-triangle (Atkinson/PMI) requires that when time is fixed, scope/quality trade-offs be explicit. Demo-path tiebreaking IS scope-shaping, but invisible-as-scope-decision.
+  Disposition: REVISE (REVISE-070)
+  Reasoning: PRESUMPTION + implicit-trade-off concern + FLAG-I demo-path bias cluster → REVISE per heuristics. Couples FLAG-I cluster + ASSUMPTION-249 (MONITOR-270).
+  Detail: Urgency MEDIUM. Recommended: explicit scope-vs-time trade-off per cycle; label demo-path tiebreaking as scope-decision.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-104:
+  Date: 2026-05-29
+  Item: PRESUMPTION-274
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: Named-but-elastic triggers ("post-ISME") functionally equivalent to open-ended deferral when named event itself slides (Allen/Bainbridge/Reason/Cook & Woods); PRESUMPTION-248 internal-validated.
+  Disposition: REVISE (REVISE-069)
+  Reasoning: PRESUMPTION + weak support + moderate challenge + PRESUMPTION-248 family coupling → REVISE per heuristics.
+  Detail: Urgency MEDIUM. Recommended: tie trigger to date not event; explicit re-surface SLA; quarterly named-trigger audit.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-105:
+  Date: 2026-05-29
+  Item: PRESUMPTION-275
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Self-referential observation loops are documented as systematically bias-prone (Argyris/Cook & Woods/Goodhart/Hawthorne/philosophy-of-measurement). Prediction-observation loop running inside same registry is the warned condition. Self-referential elevation: the mechanism producing today's outputs (and this disposition) is itself implicated.
+  Disposition: REVISE (REVISE-071)
+  Reasoning: PRESUMPTION + no support + moderate-strong challenge + self-referential elevation + 3-item cluster (with REVISE-063 + REVISE-064) → REVISE per heuristics. HIGH urgency.
+  Detail: Urgency HIGH. Recommended: external check (Tom/Adaptive) for framing-shift commitments; treat REVISE-063 + REVISE-064 + REVISE-071 as coupled self-awareness-mechanism-integrity architectural decision.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-106:
+  Date: 2026-05-29
+  Item: PRESUMPTION-276
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak
+  Net assessment: Symmetric weak evidence. Construct-definition is the lever: if "sit-down cadence" is Chat-presence, morning-discussion #3 is correctly reporting; if engagement-occurrence, the presumption is correct (cross-container telemetry gap).
+  Disposition: MONITOR (MONITOR-276)
+  Reasoning: Cheap remedy (define construct + align measurement). Couples PRESUMPTION-275 self-referential observation cluster.
+  Detail: Cadence Weekly; next 15d 2026-06-05. Priority Low-Medium.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+
+---
+
+## Returns + dispositions — c2a2-lit-search-pipeline run 2026-05-30
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-253
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: d3/d3 GitHub Issue #1247 "Regression issue with opacity transition?" — documents real opacity-transition regressions independent of test harness; establishes that d3 opacity transitions genuinely fail in foreground use.
+  Summary: d3's transition machinery has a documented history of genuine opacity-transition failures, and a heavy force-simulation timer can starve transition frames. A foreground observation where the isolate set computed correctly (185 nodes) but op
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-253_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-253
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Chrome for Developers, 'Background tabs in chrome 57' / 'Timer throttling in Chrome 88' — rAF and chained timers are throttled/suspended in background tabs; a fade that 'does not render' can be a visibility-state artifact rather than a code defect.
+  Specific risk: If the fade is actually render-context-bound, the planned .attr() fix (ASSUMPTION-254) may not generalize, and the v1.6 hold (ASSUMPTION-255) gates on a misdiagnosis.
+  Summary: The literature on background-tab throttling and rAF frame variance shows that 'the fade does not render' is exactly the signature a visibility/compositor artifact would produce, so a single foreground observation does not by itself exclude
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-253_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-254
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: Bostock, 'Working with Transitions' — confirms .transition() schedules interpolated frames via the timer/rAF loop, whereas .attr/.style apply immediately; replacing a transition with a direct attribute write removes the rAF dependency.
+  Summary: Mechanistically, d3 transitions depend on the timer/rAF loop that a running force simulation also drives; a direct .attr('opacity') write bypasses that contention. Both the official transition docs and community bug threads support direct a
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-254_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-254
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Zeller, 'Why Programs Fail' (systematic debugging) — single-suspect, fix-first debugging frequently treats a symptom while the true defect (e.g., a stale selection, join error, or visibility state) persists.
+  Specific risk: A masked root cause re-surfaces later (e.g., at scale or on another browser) and the test suite still shows green (couples ASSUMPTION-262/PRESUMPTION-285).
+  Summary: Naming a single 'prime suspect' before reproduction risks fixing a symptom. The same observable could arise from a selection/join error or a visibility-state artifact, in which case the .attr() swap masks rather than resolves the defect. Es
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-254_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-255
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: Humble & Farley, 'Continuous Delivery' — gating a release when a known defect shares a code path with the new increment is a defensible blast-radius-control decision.
+  Summary: Holding a release because the new increment shares a defective mechanism is a recognized blast-radius decision: shipping a visibly broken fade would be a user-facing regression. The hold is conservative and defensible on safety grounds.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-255_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-255
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Flagsmith / DevCycle / ConfigCat (decoupling deployment from release) — the established practice is to deploy the validated parser with the fade behind a flag or disabled, rather than hold the whole increment.
+  Specific risk: Held increment grows stale; validated work is withheld from users for a defect that could be flagged off; regen cost compounds.
+  Summary: A large body of release-engineering practice holds that deployment should be decoupled from release: the validated parser could ship with the fade disabled or flagged rather than holding all of v1.6. The all-or-nothing hold is the very patt
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-255_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-256
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate-Strong
+  Key source: Furnas (1986), 'Generalized Fisheye Views' — establishes the focus+context distinction: a transient lens and a persistent selection are legitimately separate interaction layers.
+  Summary: The transient-lens-vs-persistent-filter separation is a well-established and intentional pattern in the visualization literature (Furnas, Shneiderman, Heer & Shneiderman, Munzner). Treating search/focus as reversible highlight-in-place and
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-256_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-256
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Norman (1983), 'Design rules based on analyses of human error' — when two controls affect the same observable (here, visibility) without a shared model, mode errors and confusion rise.
+  Specific risk: Users may expect focus and checkbox filters to agree; silent divergence could read as a bug; subordinated third 'unify' option never evaluated.
+  Summary: Even though the separation is a valid pattern, two controls that both alter visibility without agreement is a recognized source of mode confusion. The model was locked by preference, not by a usability test, so the residual risk is empirica
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-256_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-257
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: Chrome DevTools 'Fix memory problems' — a tab exceeding ~1GB (desktop) is terminated by the browser; large graphs are a known OOM trigger, consistent with a memory-pressure crash.
+  Summary: Browser per-tab memory ceilings and SVG's poor scaling past a few thousand objects make a memory-pressure crash a credible diagnosis; large graphs are a documented OOM trigger. Keeping MAX_EDGES as a guardrail is consistent with this.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-257_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-257
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Nightingale / Cosmograph WebGL literature — edge count is itself a primary driver of DOM/memory load in SVG graphs; 'memory pressure' and 'edges' are not disjoint causes.
+  Specific risk: Mis-attributing the crash hides the edge-count contribution; the cap value may be set on a wrong causal model and fail at scale.
+  Summary: Because edges rendered as SVG DOM nodes are a principal source of memory load, 'pure memory pressure' and 'the edge cap' are not mutually exclusive; the causal story is a false dichotomy. The cap may be fine to keep, but as a memory-control
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-257_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-258
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: Couchbase, 'typeahead vs autocomplete with Full Text Search' — deterministic prefix typeahead is fast, predictable, and low-cost for a known entity index, ideal as a first substrate.
+  Summary: For a curated, finite label set, deterministic prefix typeahead is the textbook substrate: fast, predictable, no model dependency, and cheap to maintain. Choosing it over an LLM/library-science requirement is well-justified for the current
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-258_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-258
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Redis, 'Semantic vs keyword search' — keyword search 'struggles with synonyms and context' (e.g. 'car repairs' misses 'automotive maintenance'); cross-tradition naming is exactly this synonymy problem.
+  Specific risk: Users searching a concept under a different tradition's vocabulary get no hit; perceived as missing data; cross-tradition discovery (a core C2A2 goal) degraded.
+  Summary: Deterministic prefix typeahead systematically misses synonymy and cross-tradition naming variants, which is central to a cross-tradition system. The literature shows keyword/prefix matching trades recall for determinism; declaring it the 'c
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-258_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-259
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: Hunt & Thomas, 'The Pragmatic Programmer' (DRY) — a single authoritative representation prevents divergence among derived views, the mechanism the claim relies on.
+  Summary: If checkboxes and typeahead genuinely derive from one COLORS dict, DRY/SSOT guarantees they cannot disagree on the vocabulary they share. The claim is sound for the slice of state actually mastered by COLORS.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-259_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-259
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Strong
+  Key source: LinkedIn/Hidef SSOT-pitfalls articles — SSOT guarantees fail when more than one surface encodes the same fact; coupling leaks through any non-derived surface.
+  Specific risk: Vocabulary divergence via dir/frontmatter goes undetected; the 'root' fallback silently mis-groups nodes (a fail-loud violation).
+  Summary: The 'cannot drift' claim presumes COLORS is the only coupling surface, but dir name and frontmatter also encode the vocabulary, and get_group's silent 'root' fallback already leaks. SSOT only prevents drift for the state it actually masters
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-259_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-260
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: Plugin-registry / convention-over-configuration literature (e.g., Fowler on registries) — a single registration entry plus convention-located files is a recognized low-friction extension pattern.
+  Summary: One declaration line plus convention-located vault files plus a regen is a clean, low-friction registration pattern in line with registry/DRY practice. For current N it is genuinely a near-single-source operation.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-260_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-260
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Categorical-color perception literature (CleanChart/arXiv 2404.03787) — distinct categorical colors saturate around ~10-12, so 'one COLORS line' stops yielding a distinguishable color at scale (couples PRESUMPTION-281).
+  Specific risk: At N>~12 new participants get indistinguishable colors; regen latency/size degrade; silent mis-grouping.
+  Summary: The single-source claim is cheap only at small N: the categorical-color budget caps distinct hues near ~10-12, regen output (already ~26MB) and time grow with N, and a silent grouping fallback can swallow a mis-add. 'One line + regen' under
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-260_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-261
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: mem0.ai (2026) 'Context window is RAM, not storage' — externalizing state to a durable doc that is re-injected is the recommended remedy for cross-session context loss.
+  Summary: Externalizing session state into a durable, auto-loaded doc is exactly the recommended fix for cross-session context loss in agentic systems. The handoff rail follows current best practice, so it should materially improve resume.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-261_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-261
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate-Strong
+  Key source: mem0.ai (2026) — 'if an agent violates a constraint it followed 10 turns ago, the attention weight has dropped below the enforcement threshold'; auto-loaded rules are not reliably honored.
+  Specific risk: Resume silently proceeds on a stale/ignored handoff; no detection that the rule was skipped.
+  Summary: Auto-loading a rule does not guarantee adherence: instruction-following degrades with context length and a stale handoff doc can mis-steer. The word 'fixes' overstates a mechanism that is probabilistic and has no defined failure mode or ver
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-261_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-262
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: Zhu, Hall & May (1997), 'Software unit test coverage and adequacy' (ACM Computing Surveys) — logic/unit tests are a recognized adequacy layer for parser correctness, distinct from rendering.
+  Summary: Logic tests are an appropriate adequacy layer for parser correctness, and separating them from visual verification is standard test-pyramid practice. Deferring render verification behind the hold is a reasonable layering decision.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-262_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-262
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Mutation-testing literature (BrowserStack/Eleven Labs) — a passing suite can still miss breaking logic; surviving mutants show green-count != adequacy.
+  Specific risk: False confidence in 1.6; deferred visual verification could surface further defects; coverage gaps unmeasured.
+  Summary: A fixed count of passing logic tests does not establish coverage adequacy (mutation testing exists precisely because green suites miss defects), and the fade bug is a live counterexample that logic-pass != working. The separation is fine; t
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-262_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-277
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: d3/d3 Issues #1247/#474 — some opacity-transition faults are reproducible across contexts, lending partial support that a code-path-bound fault can generalize.
+  Summary: There is partial support that a transition/timer code-path fault is reproducible across contexts, so generalizing from one observation is not baseless. But the support is weak because reproducibility-across-contexts is precisely what was no
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-277_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-277
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Chrome/MDN visibility & throttling docs — rendering behavior varies by tab visibility and compositor state; a single context cannot establish a render fault generalizes.
+  Specific risk: The .attr() fix (ASSUMPTION-254) and the v1.6 hold (255) are predicated on a verdict drawn from N=1; if context-bound, both are misdirected.
+  Summary: Generalizing from one foreground query/user/browser to 'the whole fade mechanism is broken' is a single-observation over-generalization, and render behavior is known to be context-dependent. The presumption (symptom is code-path-bound) is u
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-277_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-278
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Chrome '--disable-background-timer-throttling' flag docs — the throttling confound is controllable, so trusting probes *with* the flag set can be legitimate.
+  Summary: Background-tab confounds are controllable (e.g., throttling-disable flags, visibility management), so remote-Chrome probes can be trusted when those controls are applied. Support is weak because nothing confirms the controls are applied to
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-278_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-278
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Chrome 'Background tabs in chrome 57' / 'Timer throttling in Chrome 88' — rAF/timer throttling is a *general* background-tab artifact class, not a one-off; any background visual probe is exposed.
+  Specific risk: Other past/future visual diagnoses via remote Chrome may be silently corrupted by the same throttling; a class of conclusions is suspect.
+  Summary: rAF/timer throttling is a general property of background tabs, so the confound that broke one diagnosis applies to the whole class of remote-Chrome visual-rendering probes. Presuming it isolated and continuing to trust those probes without
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-278_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-279
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Nygard 'Release It!' — when uncertain about coupling, withholding the whole increment is a safe default that avoids exposing a half-understood defect.
+  Summary: Under diagnostic uncertainty an all-or-nothing hold is a defensible safe default. Support is weak because the literature treats it as a fallback, not the preferred option when a clean flag boundary exists.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-279_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-279
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Flagsmith / DevCycle / ConfigCat — decoupling deployment from release via flags is the standard way to ship validated work while a coupled defect stays off.
+  Specific risk: Validated work withheld unnecessarily; held increment goes stale; regen cost compounds.
+  Summary: A whole body of release practice says deploy the validated parser with the fade flagged/disabled rather than hold everything; the presumption that holding dominates was never weighed against this. The unconsidered partial-release option is
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-279_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-280
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Pragmatic Programmer (DRY) / SSOT articles — a true single source does prevent drift for the state it masters; the guarantee is real *within its precondition*.
+  Summary: SSOT genuinely prevents drift, but only under the precondition that there is exactly one authoritative surface. The support is weak here because the presumption's whole point is that the precondition is violated.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-280_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-280
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: SSOT-pitfalls literature (LinkedIn/Hidef) — when multiple surfaces encode the same fact, the single-source guarantee evaporates; coupling leaks through every non-derived surface.
+  Specific risk: Silent mis-grouping of nodes to 'root'; undetected vocabulary divergence; false confidence in a drift guarantee that does not hold.
+  Summary: The 'cannot drift' guarantee fails because COLORS is not the only surface: dir name and frontmatter also encode the vocabulary, and the get_group -> 'root' silent fallback is a concrete existing leak that masks mismatches. This is not a hyp
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-280_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-281
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Registry / convention-over-configuration literature — single-entry registration can scale if the per-entry cost stays constant.
+  Summary: The *edit* cost of adding a participant is genuinely constant (one line). Support is weak because constant edit cost does not imply constant *system* cost (color budget, regen, size), which is the presumption's target.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-281_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-281
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Categorical-color perception (CleanChart; arXiv 2404.03787 'Revisiting Categorical Color Perception') — distinct categorical colors saturate near ~6-12; beyond that hues are not reliably distinguishable, a hard perceptual ceiling well below N=33/100.
+  Specific risk: At N>~12 new participants are visually indistinguishable; HTML size/regen latency degrade UX and the build loop.
+  Summary: Registration is cheap to *type* but not cheap to *scale*: categorical-color distinctness caps near ~10-12, so 'one COLORS line' stops yielding a distinguishable color long before N=33/100; regen output (already ~26MB) and time grow with N.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-281_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-282
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Augment Code 'Context Engineering' — auto-loaded project memory does steer agent behavior when present and current.
+  Summary: Auto-loaded memory does steer behavior when the doc is current and the rule is honored. Support is weak precisely because adherence and freshness are assumed rather than enforced.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-282_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-282
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: mem0.ai (2026) — constraint adherence decays with distance/turns; an auto-loaded rule can be silently dropped.
+  Specific risk: Silent resume on stale/ignored handoff; undetected drift between doc and reality.
+  Summary: The rail defines no failure mode and no check that the rule was followed or the doc kept current, so it cannot detect a stale doc or a skipped rule, both of which the literature says are likely. The presumption hides a success-criteria gap.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-282_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-283
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Dogfooding literature (Microsoft/Google eng practice) — using one's own system is a legitimate source of design *feedback* and usability signal.
+  Summary: Dogfooding is a recognized, valuable source of design feedback and motivation. It supports treating self-application as a useful signal, but the literature frames it as feedback, not as evidence of validity.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-283_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-283
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: arXiv 2402.11436 'Pride and Prejudice: LLM Amplifies Self-Bias in Self-Refinement' — systems favor their own outputs in self-evaluation (self-bias).
+  Specific risk: Pathway 16 appears validated by an act that only motivates it; confirmation is manufactured internally (couples the self-referential cluster).
+  Summary: Treating 'the system practicing its own thesis' as evidence for the thesis is self-referential confirmation: dogfooding can motivate and surface usability issues but cannot validate the pathway's claims. The self-bias literature shows self-
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-283_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-284
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Simon, bounded rationality / satisficing — under time pressure a good-enough binary choice is often rational and adequate.
+  Summary: For low-stakes, reversible choices, a quick binary decision by preference is a defensible satisficing move. Support is moderate for *this* decision in isolation, but does not address the recurring pattern the presumption flags.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-284_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-284
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: False-dichotomy literature (Quillbot; Develop Good Habits) — presenting two options when more exist suppresses superior alternatives.
+  Specific risk: Repeated suppression of third options; design space under-explored; decisions anchored on the first two framings (couples PRESUMPTION-267 family, OPEN-068).
+  Summary: As the 5th instance of the same binary-framing pattern, this is no longer a one-off satisficing choice but a structural decision-making bias: options are repeatedly framed as two clean alternatives, subordinating reframe/unify thirds, and r
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-284_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-285
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Zhu, Hall & May (1997) 'Software unit test coverage and adequacy' — a curated suite *can* be adequate if cases are chosen to cover the input partitions.
+  Summary: A small, well-designed suite can be adequate if the 16 cases map onto the parser's input partitions. Support is weak because no coverage argument was given; adequacy is asserted by count, not demonstrated.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-285_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-285
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Mutation-testing literature (BrowserStack; Eleven Labs; arXiv 1808.07725) — surviving mutants show passing suites routinely miss breaking logic; count != adequacy.
+  Specific risk: Unmeasured coverage gaps in the parser; false readiness; further defects surface post-unhold.
+  Summary: '16/16' is a pass count, not a coverage measure; mutation-testing exists precisely because green suites miss defects, and the fade bug is a live counterexample to logic-pass=working. Presuming the 16 cases cover the input space is undefende
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-285_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-286
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Eisenhower/urgency-importance and deadline-driven prioritization literature — an external deadline (e.g., a demo/ISME) is a legitimate, independent prioritization criterion.
+  Summary: If the demo deadline is genuinely external, prioritizing the demo path over PRS cadence is rational and independently justified. Support is moderate, conditional on the prioritization criterion being external rather than self-generated.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-286_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-286
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Goodhart's Law literature (coffeeandjunk; PMC6541803) — when the measurer judges its own performance against its own metric, the judgment ceases to track the construct.
+  Specific risk: A real recursion/avoidance pattern is repeatedly relabeled 'correct prioritization'; the zero-PRS streak is never externally adjudicated (couples OPEN-067, PRESUMPTION-275).
+  Summary: Reading the demo-path day as 'correct prioritization, not recursion' from inside the same registry-and-summary apparatus that flags the zero-PRS streak is a closed-loop self-diagnosis: the system both produces the streak and exonerates it,
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-286_against.md
+
+```
+DISPOSITION-107:
+  Date: 2026-05-30
+  Item: ASSUMPTION-253
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: d3 opacity-transition failures are real and documented, but a single foreground observation cannot exclude a render-context artifact; FOR and AGAINST are both Moderate and symmetric.
+  Disposition: MONITOR (MONITOR-277)
+  Reasoning: Symmetric moderate evidence with a cheap decisive test available (multi-context foreground reproduction). Err toward MONITOR over premature INCORPORATE.
+  Detail: Cadence Weekly; next 15d 2026-06-06. Priority Medium (gates 1.6 push). What would change: multi-context reproduction -> INCORPORATE; context-bound -> REVISE. Couples PRESUMPTION-277/278.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-108:
+  Date: 2026-05-30
+  Item: ASSUMPTION-254
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: The .attr() fix is mechanically plausible and a common remedy, but committing to one suspect pre-reproduction risks masking a selection/visibility cause.
+  Disposition: MONITOR (MONITOR-278)
+  Reasoning: Cheap to de-risk by confirming the attribute-vs-pixel divergence before coding. MONITOR until the root cause is bisected.
+  Detail: Cadence Weekly; next 15d 2026-06-06. Priority Medium. Couples ASSUMPTION-253, ASSUMPTION-262.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-109:
+  Date: 2026-05-30
+  Item: ASSUMPTION-255
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Holding is safe but not the only safe option; feature-flag practice offers a cheaper partial release. ASSUMPTION (designer-aware) so not REVISE-grade, but the alternative is well-evidenced.
+  Disposition: MONITOR (MONITOR-279)
+  Reasoning: Conservative hold is defensible; the unconsidered partial-release alternative is cheap. MONITOR with the flag-the-fade remedy noted; couples PRESUMPTION-279.
+  Detail: Cadence Weekly; next 15d 2026-06-06. Priority Low-Medium. What would change: if hold persists >1-2 cycles, escalate toward partial release.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-110:
+  Date: 2026-05-30
+  Item: ASSUMPTION-256
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: The transient-lens vs persistent-filter separation is strongly grounded in canonical visualization/HCI literature; the only challenge is an empirical usability caveat, not a conceptual refutation. Strong support + weak-moderate challenge -> INCORPORATE with caveats per heuristic.
+  Disposition: INCORPORATE (PREMISE-044)
+  Reasoning: The architectural premise (highlight and filter are legitimately distinct, non-syncing idioms) is well-supported design canon; what remains is a usability caveat, recorded but not disqualifying.
+  Detail: Confidence Moderate. Applicable to: Sociogram interaction model, Pathway 27/28 search+filter UI. Re-check Quarterly (next 15d ~2026-08-30). Caveat: run a lightweight usability check on dual visibility controls; couples PRESUMPTION-284.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+```
+
+```
+DISPOSITION-111:
+  Date: 2026-05-30
+  Item: ASSUMPTION-257
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Memory-pressure crashes are real, but the 'memory pressure NOT edge cap' dichotomy is unsound because SVG edges drive memory. Keeping the cap is reasonable; the causal claim is the weak part.
+  Disposition: MONITOR (MONITOR-280)
+  Reasoning: Decision (keep MAX_EDGES) is low-risk; the causal attribution needs a profile. MONITOR with a heap-profiling remedy.
+  Detail: Cadence Weekly; next 15d 2026-06-06. Priority Low. Note the false-dichotomy framing; couples scaling concern PRESUMPTION-281.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-112:
+  Date: 2026-05-30
+  Item: ASSUMPTION-258
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Deterministic typeahead is the right cheap first substrate, but the 'replaces library-science requirement' claim ignores a documented synonymy/recall gap that matters for cross-tradition naming.
+  Disposition: MONITOR (MONITOR-281)
+  Reasoning: Substrate choice is sound now; the recall gap is a real future limit with a cheap mitigation (alias table). MONITOR.
+  Detail: Cadence Weekly; next 15d 2026-06-06. Priority Low-Medium. What would change: measured recall loss on cross-tradition queries -> add synonym layer (toward INCORPORATE) or REVISE if discovery degrades.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-113:
+  Date: 2026-05-30
+  Item: ASSUMPTION-259
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Strong
+  Net assessment: SSOT prevents drift only for what COLORS masters; dir/frontmatter are additional surfaces and the silent 'root' fallback is an existing leak. The 'cannot drift' over-claim is the issue, plus a concrete fail-loud violation.
+  Disposition: MONITOR (MONITOR-282)
+  Reasoning: ASSUMPTION (designer-aware) and the SSOT pattern is sound, so not REVISE-grade as a whole; but the silent-default leak is a real cheap-to-fix defect. MONITOR-HIGH with a fail-loud cleanup flagged.
+  Detail: Cadence Weekly; next 15d 2026-06-06. Priority HIGH. Cheap remedy: replace get_group->'root' silent fallback with a loud error; enumerate vocabulary surfaces. Couples PRESUMPTION-280 (REVISE-074).
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-114:
+  Date: 2026-05-30
+  Item: ASSUMPTION-260
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: A clean low-friction pattern at current N, but 'cheap' degrades with the color budget, regen size/time, and the silent grouping fallback.
+  Disposition: MONITOR (MONITOR-283)
+  Reasoning: Works now; scaling and fail-loud caveats are real but not yet binding. MONITOR; couples ASSUMPTION-259, PRESUMPTION-281.
+  Detail: Cadence Weekly; next 15d 2026-06-06. Priority Medium. What would change: approaching N~12 -> plan non-color encoding (toward REVISE if not addressed).
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-115:
+  Date: 2026-05-30
+  Item: ASSUMPTION-261
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: The rail follows best practice and should help, but 'fixes' overstates a probabilistic mechanism with no verification or failure mode.
+  Disposition: MONITOR (MONITOR-284)
+  Reasoning: Helpful and cheap; the gap is the missing verification/failure-mode. MONITOR with a freshness-check remedy; couples PRESUMPTION-282 (REVISE-075).
+  Detail: Cadence Weekly; next 15d 2026-06-06. Priority Medium. What would change: add adherence check -> INCORPORATE; observed silent skips -> REVISE.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-116:
+  Date: 2026-05-30
+  Item: ASSUMPTION-262
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Logic/visual separation is sound, but '16/16 establishes correctness' overstates coverage adequacy, and the fade bug is a counterexample to logic-pass=working.
+  Disposition: MONITOR (MONITOR-285)
+  Reasoning: Layering is legitimate; the sufficiency claim needs coverage evidence. MONITOR with mutation-testing remedy; couples PRESUMPTION-285 (REVISE-078).
+  Detail: Cadence Weekly; next 15d 2026-06-06. Priority Low-Medium. What would change: mutation/coverage data -> INCORPORATE; weak coverage -> REVISE.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-117:
+  Date: 2026-05-30
+  Item: PRESUMPTION-277
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Unstated single-observation generalization underlies the fade verdict; render behavior is context-dependent, so the presumption is challenged with only weak support. PRESUMPTION + strong challenge -> REVISE.
+  Disposition: REVISE (REVISE-072)
+  Reasoning: Designers did not articulate that the verdict rests on N=1; the dependent decisions (254, 255) inherit the risk. Cheap, decisive remedy (multi-context reproduction) before committing.
+  Detail: Urgency Medium-High (gates 1.6 push). Recommended: require multi-context reproduction before treating the fade as a general code defect. Couples ASSUMPTION-253/254/255, PRESUMPTION-278.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-118:
+  Date: 2026-05-30
+  Item: PRESUMPTION-278
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: The throttling confound is a general background-tab artifact class, so presuming it isolated leaves a whole class of remote-Chrome visual diagnoses untrustworthy. PRESUMPTION + strong challenge + class-level scope -> REVISE.
+  Disposition: REVISE (REVISE-073)
+  Reasoning: A methodological tool-trust error affecting all background visual probes, not one diagnosis. SYSTEMIC-RISK candidate; needs an audit, not just monitoring.
+  Detail: Urgency Medium-High. Recommended: audit + re-validate remote-Chrome visual diagnoses with visibility forced / throttling disabled. Couples PRESUMPTION-277; flagged SYSTEMIC-RISK (remote-visual-probe trust).
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-119:
+  Date: 2026-05-30
+  Item: PRESUMPTION-279
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: The hold is a defensible safe default but partial release was never weighed; stakes are low and the remedy is cheap.
+  Disposition: MONITOR (MONITOR-286)
+  Reasoning: PRESUMPTION with a moderate (not strong) challenge and LOW-MEDIUM stakes; cheap flag remedy. Err toward MONITOR over adding to the REVISE backlog.
+  Detail: Cadence Weekly; next 15d 2026-06-06. Priority Low-Medium. What would change: hold persists >1-2 cycles -> REVISE toward partial release. Couples ASSUMPTION-255.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-120:
+  Date: 2026-05-30
+  Item: PRESUMPTION-280
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: The single-source 'cannot drift' claim is refuted by additional coupling surfaces (dir, frontmatter) and a concrete existing silent-default leak (get_group->'root'). PRESUMPTION + strong challenge + present defect -> REVISE.
+  Disposition: REVISE (REVISE-074)
+  Reasoning: Not a future risk but a current fail-loud violation; the over-claim plus the live leak warrant design review and a cheap fix.
+  Detail: Urgency Medium-High. Recommended: (1) replace get_group->'root' silent fallback with a loud error; (2) derive or eliminate the dir/frontmatter surfaces. Lowest-cost remediation of the batch. Couples ASSUMPTION-259/260.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-121:
+  Date: 2026-05-30
+  Item: PRESUMPTION-281
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Edit cost is O(1) but distinct-color budget (~10-12) and growing ~26MB artifact size are real scaling walls below the project's N targets. Not yet binding, so not REVISE, but a known design ceiling.
+  Disposition: MONITOR (MONITOR-287)
+  Reasoning: Scaling limit is real and well-evidenced but not yet hit; cheap to plan for. MONITOR-HIGH with explicit color-ceiling and size flags.
+  Detail: Cadence Weekly; next 15d 2026-06-06. Priority HIGH. What would change: approaching N~12 distinct categories -> plan non-color encoding (toward REVISE if unaddressed). Couples ASSUMPTION-260.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-122:
+  Date: 2026-05-30
+  Item: PRESUMPTION-282
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: The handoff rail has no defined failure mode or adherence/freshness check; literature says both rule-skip and staleness are likely. PRESUMPTION + strong challenge + success-criteria gap -> REVISE.
+  Disposition: REVISE (REVISE-075)
+  Reasoning: A self-awareness/continuity mechanism with no way to detect its own failure is exactly the kind of gap the pipeline exists to surface. Cheap to add a check.
+  Detail: Urgency Medium. Recommended: add freshness timestamp + staleness check + explicit resume-acknowledgement + fail-loud on skip. Couples ASSUMPTION-261; relates to self-awareness-mechanism-integrity cluster.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-123:
+  Date: 2026-05-30
+  Item: PRESUMPTION-283
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: Dogfooding is valid feedback but not validity evidence; framing self-application as evidence for Pathway 16 is self-referential confirmation. PRESUMPTION + self-referential elevation -> REVISE.
+  Disposition: REVISE (REVISE-076)
+  Reasoning: Joins the standing self-referential-vulnerability cluster (REVISE-063/064/071); conflating motivation with evidence is precisely the integrity risk that cluster concerns.
+  Detail: Urgency Medium. Recommended: label self-application as motivation, require external validation for pathway-validity claims. Joins self-awareness-mechanism-integrity cluster (REVISE-063/064/071/079).
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-124:
+  Date: 2026-05-30
+  Item: PRESUMPTION-284
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: The 5th instance of binary-framing elevates this from a satisficing choice to a structural decision-making bias that subordinates third options; false-dichotomy/framing literature supports the challenge. PRESUMPTION + pattern-level + strong challenge -> REVISE.
+  Disposition: REVISE (REVISE-077)
+  Reasoning: Pattern-level structural bias (couples PRESUMPTION-267 binary-framing family, triggered OPEN-068). A per-decision fix is insufficient; a standing process change is indicated.
+  Detail: Urgency Medium-High. Recommended: add a standing 'name and weigh a third option' step; usability-test before locking. Flagged SYSTEMIC-RISK (binary-framing pattern, 5 instances). Couples OPEN-068, PRESUMPTION-267 family.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-125:
+  Date: 2026-05-30
+  Item: PRESUMPTION-285
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Coverage adequacy is asserted by pass count, not demonstrated; mutation-testing practice and the fade bug both challenge the presumption. PRESUMPTION + strong challenge -> REVISE.
+  Disposition: REVISE (REVISE-078)
+  Reasoning: Unstated coverage-adequacy presumption underpins the 1.6 readiness claim (ASSUMPTION-262); cheap to address with a mutation/partition check.
+  Detail: Urgency Medium. Recommended: run mutation testing / input-space characterization before treating 1.6 as parser-correct. Couples ASSUMPTION-262.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-126:
+  Date: 2026-05-30
+  Item: PRESUMPTION-286
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: The 'correct prioritization, not recursion' reading is produced inside the same apparatus that flags the streak; closed-loop self-diagnosis with no external check. PRESUMPTION + self-referential + strong challenge -> REVISE.
+  Disposition: REVISE (REVISE-079)
+  Reasoning: Self-referential prioritization-layer bias; joins the self-awareness-mechanism-integrity cluster (REVISE-063/064/071/076). Needs a pre-registered external criterion, not internal monitoring.
+  Detail: Urgency Medium-High. Recommended: pre-registered external criterion for prioritization-vs-recursion, applied outside the self-summary loop (Tom/Adaptive). Couples OPEN-067, PRESUMPTION-275 (REVISE-071); joins self-referential cluster.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+**Run 2026-05-30 totals:** 1 INCORPORATE, 11 MONITOR, 8 REVISE (DISPOSITION-107..126).
+
+---
+
+## Batch: 2026-05-31 (c2a2-lit-search-pipeline; autonomous; Tom not present)
+
+*Processing the 2026-05-30 EOD self-awareness batch: ASSUMPTION-263 + PRESUMPTION-287/288/289/290 (all at cycle 0, first 15a/15b dispatch). Common thread: the 3rd-cycle claude.ai logout and its reach into the self-awareness layer's own intake.*
+
+### 15a returns (FOR — supportive)
+
+```
+RETURN-TO-14a:
+  Original item: ASSUMPTION-263
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: drdroid/Supabase/Stytch session-expiry diagnosis guides; oneuptime OAuth2 expired-token recovery (2025-26)
+  Summary: Shared-credential expiry is the best-documented auth-pipeline failure mode and re-login is its canonical fix; "one re-login is the right first action" is supported, "stays fixed / unblocks both" is the stronger, less-supported half.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-263_for.md
+```
+
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-287
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: Integrate.io Data Completeness Index; dqlabs/Pantomath data-observability guides
+  Summary: No literature endorses "absence of record == no event"; the field treats it as a defect to design out. Only a base-rate ("usually a quiet day") pragmatic defense exists, which fails exactly when intake is known-down.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-287_for.md
+```
+
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-288
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: YAGNI literature (GeeksforGeeks; swenotes); databank/cbtnuggets redundancy-by-stakes guides
+  Summary: A single shared transport with manual recovery is a defensible KISS/YAGNI choice for a low-stakes personal pipeline; redundancy level should match stakes. Conditional on stakes being low and recovery reliably noticed.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-288_for.md
+```
+
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-289
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: PagerDuty/Splunk/IBM alert-fatigue guides; PMC5387195 (repeated-alert desensitization)
+  Summary: Alert-fatigue research supports restraint in notification volume — a quiet once-per-cycle note over escalation spam. Supports low noise, not specifically that passivity is sufficient to actually reach Tom.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-289_for.md
+```
+
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-290
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-Moderate
+  Key source: SRE uptime-streak / heartbeat-cadence practice; habit-consistency literature
+  Summary: Streak/cadence counters are legitimate reliability heuristics when the counted thing IS the goal. Weak for this item, because the C2A2 streak counts "registry advanced" — a diligence proxy, not the underlying self-awareness goal.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-290_for.md
+```
+
+### 15b returns (AGAINST — disconfirmatory)
+
+```
+RETURN-TO-14a:
+  Original item: ASSUMPTION-263
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Rootly recurrence-analysis + RCA guides; Skyvern/Browserless/Anchor browser-automation session fragility
+  Specific risk: Re-login is treated as THE fix while a multi-cause / chronic auth-state fragility (profile/cookie corruption, re-logout) goes undiagnosed; 3rd-cycle recurrence is the fingerprint of a single-cause fix on a multi-cause problem.
+  Summary: One re-login is a reasonable first action but the "single fix that restores both and holds" claim is challenged by recurrence and extension-session fragility.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-263_against.md
+```
+
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-287
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: oneuptime metric-absence alerting; dqlabs/Pantomath/Actian data-observability
+  Specific risk: A lost attended session is recorded as an honest-looking quiet day; the self-awareness layer is blind to gaps in its own perception (couples OPEN-069).
+  Summary: Observability practice directly contradicts "absence == no-event"; silent coupling of completeness to channel health is the canonical "looks successful while broken" failure.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-287_against.md
+```
+
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-288
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: ScienceDirect/Accendo/Lerus common-mode-failure overviews; NASA CCF modes; IEEE CMF survey
+  Specific risk: Intake, delivery, and the self-awareness intake all go dark together with no degraded path; the system cannot even report its own outage. Empirically realized 3 cycles.
+  Summary: A single shared session/profile is a textbook common-mode dependency; the SPOF has fired 3 cycles, so "acceptable never-fired SPOF" no longer applies. Diversity/degraded-mode is the standard remedy.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-288_against.md
+```
+
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-289
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Rootly/oneuptime escalation-policy + alert-severity guides
+  Specific risk: A chronic outage persists indefinitely because each cycle resets to the same low-salience note; the human-response-gate (OPEN-066) stays binding.
+  Summary: Escalation design exists precisely so repeating unacknowledged failures change salience/channel; 3 identical cycles partly falsify "passive note is adequate." Alert-fatigue caveat argues against noisy escalation, not against any escalation tier.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-289_against.md
+```
+
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-290
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Goodhart's law; surrogation (Nisslmüller; practical-devsecops); metric fixation (Muller, Tyranny of Metrics)
+  Specific risk: On degraded-intake days the streak pressures the system to manufacture item-bearing output, contaminating the registry and masking the outage — self-referentially defeating the self-awareness goal.
+  Summary: A diligence-proxy streak with no honest "did-not-advance" null is textbook surrogation; the missing "correct not-to-advance" state is the diagnostic signature.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-290_against.md
+```
+
+### SYSTEMIC-RISK-FLAG (15b)
+```
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-05-31
+  Affected items: ASSUMPTION-263, PRESUMPTION-287, PRESUMPTION-288, PRESUMPTION-289 (+ PRESUMPTION-290 downstream)
+  Common vulnerability: The entire daily-sync loop — morning intake, evening delivery, AND the self-awareness layer's own intake — rides ONE shared claude.ai session in ONE Chrome profile. A single logout is a common-mode failure that disables all directions at once, including the channel that would report the outage. The cluster's items are facets of this one dependency: 263 (single-fix optimism about it), 287 (it silently corrupts intake completeness), 288 (it is the common-mode SPOF itself), 289 (no escalation survives it), 290 (the streak pressures masking it).
+  Literature basis: Common-mode failure (ScienceDirect; NASA NTRS 20110015733; IEEE CMF survey); metric-absence alerting (oneuptime); Goodhart/surrogation.
+  Risk level: High
+  Recommendation: Treat as a single coupled architectural decision: add a diverse, non-Chrome degraded-mode path that (a) records intake-health as DEGRADED/UNKNOWN rather than no-event, and (b) carries an escalation/outage signal that survives a claude.ai logout. This single change addresses the common mode behind all five items. Couples OPEN-066 (human-response-gate, project #1), OPEN-069.
+```
+
+### 15c dispositions (2026-05-31)
+
+```
+DISPOSITION-127:
+  Date: 2026-05-31
+  Item: ASSUMPTION-263
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Re-login is the canonical first action for shared-credential expiry, but "single fix that restores both AND holds" is challenged by 3rd-cycle recurrence and extension-session fragility. The decisive fact is that the fix is cheaply and imminently testable on the next attended login.
+  Disposition: MONITOR (MONITOR-288)
+  Reasoning: Stated, low-cost-to-verify operational hypothesis; neither INCORPORATE (unverified, challenged) nor REVISE (no design change needed yet — just verify). Empirical check on next cycle will resolve it.
+  Detail: Cadence Weekly; next 15d 2026-06-07. Priority HIGH (gates the whole loop). What would change: verified recovery of BOTH directions holding ≥2 cycles -> INCORPORATE; recurrence after re-login -> REVISE (multi-cause RCA). Couples PRESUMPTION-288.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-128:
+  Date: 2026-05-31
+  Item: PRESUMPTION-287
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: No literature endorses "absence of record == no event"; observability practice treats it as a defect to design out. PRESUMPTION + only-evidence-is-against + self-referential (blind spot in the self-awareness layer's own intake) -> REVISE.
+  Disposition: REVISE (REVISE-080)
+  Reasoning: Designers were unaware they were coupling extraction completeness to intake-channel health; the presumption is unsupported and actively challenged, and most dangerous in the present known-down state. Cheap, fail-loud remedy.
+  Detail: Urgency Medium-High. Recommended: record intake-health explicitly — emit DEGRADED/UNKNOWN-completeness rather than defaulting to no-event when the scrape fails. Couples OPEN-069, PRESUMPTION-290; part of the 2026-05-31 single-transport systemic-risk cluster.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-129:
+  Date: 2026-05-31
+  Item: PRESUMPTION-288
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: A single shared transport is a defensible KISS/YAGNI choice for a low-stakes personal pipeline (15a), but it is also a textbook common-mode SPOF that has now actually fired 3 cycles (15b). The "add redundancy" call is a genuine cost-benefit decision, not a clear refutation.
+  Disposition: MONITOR (MONITOR-289)
+  Reasoning: Contested on stakes (15a moderate support) vs realized common-mode failure (15b moderate); err toward MONITOR over REVISE since whether redundancy is worth it is a human cost-benefit judgment. But priority HIGH because the SPOF is active and the remedy is shared with REVISE-080.
+  Detail: Cadence Weekly; next 15d 2026-06-07. Priority HIGH. What would change: a 4th outage cycle, or evidence the outage silences the alert path too -> REVISE toward a diverse degraded-mode channel. Couples ASSUMPTION-263, PRESUMPTION-287/289; 2026-05-31 systemic-risk cluster.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-130:
+  Date: 2026-05-31
+  Item: PRESUMPTION-289
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Alert-fatigue research supports notification restraint (15a), but escalation design exists precisely so a repeating unacknowledged failure changes salience — and 3 identical cycles with no resolution partly falsify "passive note is adequate" (15b). PRESUMPTION + partly-falsified + couples the project's #1 standing item -> REVISE.
+  Disposition: REVISE (REVISE-081)
+  Reasoning: The passive-notification presumption belongs with the standing human-response-gate flag (OPEN-066); empirically it has not closed the loop in 3 cycles. Route to Tom, but design the fix to fire ONCE on repetition (N>=2), not every cycle, to respect the alert-fatigue caveat.
+  Detail: Urgency Medium. Recommended: a single repetition-triggered escalation step (raise salience / change channel once on cycle N>=2 of the same blocker), bounded to avoid fatigue. Couples OPEN-066, PRESUMPTION-240; 2026-05-31 systemic-risk cluster.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-131:
+  Date: 2026-05-31
+  Item: PRESUMPTION-290
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Streaks are legitimate only when the counted thing IS the goal; the C2A2 advance-streak counts a diligence proxy, and its missing "correct not-to-advance" null is the diagnostic signature of surrogation (Goodhart). PRESUMPTION + self-referential + strong challenge -> REVISE.
+  Disposition: REVISE (REVISE-082)
+  Reasoning: Joins the self-referential / metric-fixation cluster with REVISE-079 (PRESUMPTION-286, closed-loop self-diagnosis). On degraded-intake days the streak pressures manufacturing output over honest reporting — directly defeating the self-awareness goal. Cheap remedy: redefine what the streak counts.
+  Detail: Urgency Medium. Recommended: make an explicit "honest no-op / degraded" run a first-class state that PRESERVES the streak; count "honest accounting performed," not "items emitted." Couples PRESUMPTION-287, PRESUMPTION-286 (REVISE-079); 2026-05-31 systemic-risk cluster.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+**Run 2026-05-31 totals:** 0 INCORPORATE, 2 MONITOR (MONITOR-288..289), 3 REVISE (REVISE-080..082) (DISPOSITION-127..131). SYSTEMIC-RISK: single-transport common-mode cluster (5 items). Consistency check: no INCORPORATE this run, so no conflict with existing validated premises (last PREMISE-044).
+
+
+## 2026-06-01 — 15a/15b/15c RUN (drain of 15d 2026-05-31 RE-TRIGGER cohort)
+
+**Run type:** Automated weekly refresh via c2a2-lit-search-pipeline scheduled task (15a + 15b + 15c), one hour after the 14a/14b self-awareness pipeline.
+**Cohort:** 92 MONITOR items re-triggered by 15d on 2026-05-31 (cycles: 59×cycle-1, 16×cycle-2, 17×cycle-3). All were [QUEUED]/[AWAITING-15a/15b/15c].
+**Pipeline timing:** 15d weekly cadence fired ON TIME (2026-05-31). This is a clean on-cadence drain — NO overdue 15d-schedule backlog (contrast 2026-05-17 SYSTEMIC-RISK-FLAG run).
+**Landscape spot-check (honest sampling):** 3 genuine web searches across distinct clusters — (a) passwordless/one-tap-link & SMS-auth security, (b) Levin–Hoffman–Kastrup idealist convergence, (c) multi-agent LLM systems instantiating research traditions/consensus. All three REAFFIRMED prior for/against profiles; no material literature shift detected this week. The spot-check is a representative sample, NOT an exhaustive per-item external search — flagged per fail-loud discipline.
+**Net outcome:** All 92 items refreshed by both 15a and 15b (no new sources surfaced) and re-dispositioned by 15c as MONITOR (carry forward; weekly cadence). 0 items left searched-but-undispositioned. 0 INCORPORATE, 0 REVISE this cycle.
+**Fail-loud notes:**
+  - SECURITY CLUSTER (ASSUMPTION-121 Twilio SMS one-tap; PRESUMPTION-153 signed-link sufficiency): 15b challenge REAFFIRMED by continuing 2025–2026 anti-SMS-auth guidance (FBI/CISA 2025; UAE Mar-2026 & Philippines Jun-2026 SMS-OTP retirement deadlines; AiTM/replay/SIM-swap surfaces). This is continuation of an already-recorded strong challenge, not a new-this-week reversal — 15c did NOT auto-escalate to REVISE (no new evidence; REVISE requires human review per 15c spec), but the cluster is surfaced here for Tom's attention.
+  - Automated-refresh bound: weekly LLM refresh is limited in surfacing genuinely new external literature; operational evidence from C2A2's own runs remains the more sensitive change signal.
+
+### RETURN/DISPOSITION blocks (92 items)
+
+### RETURN/DISPOSITION: ASSUMPTION-033 (cycle 3 refresh) [MONITOR-39]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-033_for.md ; lit_search_results/against/ASSUMPTION-033_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-049 (cycle 3 refresh) [MONITOR-53]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-049_for.md ; lit_search_results/against/ASSUMPTION-049_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-052 (cycle 3 refresh) [MONITOR-55]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-052_for.md ; lit_search_results/against/ASSUMPTION-052_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-058 (cycle 3 refresh) [MONITOR-57]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-058_for.md ; lit_search_results/against/PRESUMPTION-058_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-055 (cycle 3 refresh) [MONITOR-58]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-055_for.md ; lit_search_results/against/ASSUMPTION-055_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-064 (cycle 3 refresh) [MONITOR-63]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-064_for.md ; lit_search_results/against/ASSUMPTION-064_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-065 (cycle 3 refresh) [MONITOR-64]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-065_for.md ; lit_search_results/against/ASSUMPTION-065_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-066 (cycle 3 refresh) [MONITOR-65]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-066_for.md ; lit_search_results/against/ASSUMPTION-066_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-067 (cycle 3 refresh) [MONITOR-66]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-067_for.md ; lit_search_results/against/ASSUMPTION-067_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-072 (cycle 3 refresh) [MONITOR-67]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-072_for.md ; lit_search_results/against/PRESUMPTION-072_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-073 (cycle 3 refresh) [MONITOR-68]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-073_for.md ; lit_search_results/against/PRESUMPTION-073_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-071 (cycle 3 refresh) [MONITOR-70]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-071_for.md ; lit_search_results/against/ASSUMPTION-071_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-072 (cycle 3 refresh) [MONITOR-71]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-072_for.md ; lit_search_results/against/ASSUMPTION-072_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-073 (cycle 3 refresh) [MONITOR-72]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-073_for.md ; lit_search_results/against/ASSUMPTION-073_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-074 (cycle 3 refresh) [MONITOR-73]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-074_for.md ; lit_search_results/against/ASSUMPTION-074_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-075 (cycle 3 refresh) [MONITOR-74]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-075_for.md ; lit_search_results/against/ASSUMPTION-075_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-077 (cycle 1 refresh) [MONITOR-75]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-077_for.md ; lit_search_results/against/ASSUMPTION-077_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-086 (cycle 3 refresh) [MONITOR-76]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-086_for.md ; lit_search_results/against/PRESUMPTION-086_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-090 (cycle 1 refresh) [MONITOR-77]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-090_for.md ; lit_search_results/against/PRESUMPTION-090_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-092 (cycle 1 refresh) [MONITOR-78]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-092_for.md ; lit_search_results/against/PRESUMPTION-092_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-080 (cycle 1 refresh) [MONITOR-80]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-080_for.md ; lit_search_results/against/ASSUMPTION-080_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-082 (cycle 1 refresh) [MONITOR-82]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-082_for.md ; lit_search_results/against/ASSUMPTION-082_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-089 (cycle 1 refresh) [MONITOR-89]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-089_for.md ; lit_search_results/against/ASSUMPTION-089_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-092 (cycle 1 refresh) [MONITOR-92]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-092_for.md ; lit_search_results/against/ASSUMPTION-092_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-095 (cycle 1 refresh) [MONITOR-95]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-095_for.md ; lit_search_results/against/ASSUMPTION-095_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-097 (cycle 1 refresh) [MONITOR-100]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-097_for.md ; lit_search_results/against/ASSUMPTION-097_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-098 (cycle 1 refresh) [MONITOR-101]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-098_for.md ; lit_search_results/against/ASSUMPTION-098_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-099 (cycle 1 refresh) [MONITOR-102]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-099_for.md ; lit_search_results/against/ASSUMPTION-099_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-101 (cycle 1 refresh) [MONITOR-104]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-101_for.md ; lit_search_results/against/ASSUMPTION-101_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-106 (cycle 1 refresh) [MONITOR-109]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-106_for.md ; lit_search_results/against/ASSUMPTION-106_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-108 (cycle 1 refresh) [MONITOR-110]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-108_for.md ; lit_search_results/against/ASSUMPTION-108_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-109 (cycle 1 refresh) [MONITOR-111]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-109_for.md ; lit_search_results/against/ASSUMPTION-109_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-111 (cycle 1 refresh) [MONITOR-113]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-111_for.md ; lit_search_results/against/ASSUMPTION-111_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-112 (cycle 1 refresh) [MONITOR-114]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-112_for.md ; lit_search_results/against/ASSUMPTION-112_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-128 (cycle 1 refresh) [MONITOR-115]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-128_for.md ; lit_search_results/against/PRESUMPTION-128_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-135 (cycle 1 refresh) [MONITOR-118]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-135_for.md ; lit_search_results/against/PRESUMPTION-135_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-137 (cycle 1 refresh) [MONITOR-119]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-137_for.md ; lit_search_results/against/PRESUMPTION-137_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-118 (cycle 2 refresh) [MONITOR-122]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-118_for.md ; lit_search_results/against/ASSUMPTION-118_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-121 (cycle 2 refresh) [MONITOR-126]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle | SECURITY-CLUSTER: 15b challenge reaffirmed (anti-SMS-auth regulatory momentum); surfaced for human review, no auto-REVISE
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-121_for.md ; lit_search_results/against/ASSUMPTION-121_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-127 (cycle 2 refresh) [MONITOR-130]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-127_for.md ; lit_search_results/against/ASSUMPTION-127_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-153 (cycle 2 refresh) [MONITOR-134]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle | SECURITY-CLUSTER: 15b challenge reaffirmed (anti-SMS-auth regulatory momentum); surfaced for human review, no auto-REVISE
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-153_for.md ; lit_search_results/against/PRESUMPTION-153_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-154 (cycle 2 refresh) [MONITOR-135]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-154_for.md ; lit_search_results/against/PRESUMPTION-154_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-160 (cycle 2 refresh) [MONITOR-140]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-160_for.md ; lit_search_results/against/PRESUMPTION-160_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-167 (cycle 2 refresh) [MONITOR-146]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-167_for.md ; lit_search_results/against/PRESUMPTION-167_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-133 (cycle 2 refresh) [MONITOR-148]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-133_for.md ; lit_search_results/against/ASSUMPTION-133_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-138 (cycle 2 refresh) [MONITOR-151]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-138_for.md ; lit_search_results/against/ASSUMPTION-138_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-140 (cycle 2 refresh) [MONITOR-153]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-140_for.md ; lit_search_results/against/ASSUMPTION-140_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-170 (cycle 2 refresh) [MONITOR-160]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-170_for.md ; lit_search_results/against/PRESUMPTION-170_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-173 (cycle 2 refresh) [MONITOR-163]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-173_for.md ; lit_search_results/against/PRESUMPTION-173_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-175 (cycle 2 refresh) [MONITOR-165]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-175_for.md ; lit_search_results/against/PRESUMPTION-175_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-178 (cycle 2 refresh) [MONITOR-168]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-178_for.md ; lit_search_results/against/PRESUMPTION-178_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-180 (cycle 2 refresh) [MONITOR-169]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-180_for.md ; lit_search_results/against/PRESUMPTION-180_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-181 (cycle 2 refresh) [MONITOR-170]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-181_for.md ; lit_search_results/against/PRESUMPTION-181_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-159 (cycle 1 refresh) [MONITOR-172]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-159_for.md ; lit_search_results/against/ASSUMPTION-159_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-162 (cycle 1 refresh) [MONITOR-174]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-162_for.md ; lit_search_results/against/ASSUMPTION-162_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-169 (cycle 1 refresh) [MONITOR-179]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-169_for.md ; lit_search_results/against/ASSUMPTION-169_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-184 (cycle 1 refresh) [MONITOR-181]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-184_for.md ; lit_search_results/against/PRESUMPTION-184_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-186 (cycle 1 refresh) [MONITOR-183]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-186_for.md ; lit_search_results/against/PRESUMPTION-186_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-189 (cycle 1 refresh) [MONITOR-184]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-189_for.md ; lit_search_results/against/PRESUMPTION-189_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-179 (cycle 1 refresh) [MONITOR-194]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-179_for.md ; lit_search_results/against/ASSUMPTION-179_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-180 (cycle 1 refresh) [MONITOR-195]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-180_for.md ; lit_search_results/against/ASSUMPTION-180_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-187 (cycle 1 refresh) [MONITOR-197]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-187_for.md ; lit_search_results/against/ASSUMPTION-187_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-190 (cycle 1 refresh) [MONITOR-198]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-190_for.md ; lit_search_results/against/ASSUMPTION-190_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-193 (cycle 1 refresh) [MONITOR-199]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-193_for.md ; lit_search_results/against/ASSUMPTION-193_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-195 (cycle 1 refresh) [MONITOR-200]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-195_for.md ; lit_search_results/against/ASSUMPTION-195_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-196 (cycle 1 refresh) [MONITOR-201]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-196_for.md ; lit_search_results/against/ASSUMPTION-196_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-197 (cycle 1 refresh) [MONITOR-202]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-197_for.md ; lit_search_results/against/ASSUMPTION-197_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-200 (cycle 1 refresh) [MONITOR-203]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-200_for.md ; lit_search_results/against/ASSUMPTION-200_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-213 (cycle 1 refresh) [MONITOR-204]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-213_for.md ; lit_search_results/against/PRESUMPTION-213_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-214 (cycle 1 refresh) [MONITOR-205]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-214_for.md ; lit_search_results/against/PRESUMPTION-214_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-216 (cycle 1 refresh) [MONITOR-206]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-216_for.md ; lit_search_results/against/PRESUMPTION-216_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-217 (cycle 1 refresh) [MONITOR-207]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-217_for.md ; lit_search_results/against/PRESUMPTION-217_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-218 (cycle 1 refresh) [MONITOR-208]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-218_for.md ; lit_search_results/against/PRESUMPTION-218_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-219 (cycle 1 refresh) [MONITOR-209]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-219_for.md ; lit_search_results/against/PRESUMPTION-219_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-201 (cycle 1 refresh) [MONITOR-210]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-201_for.md ; lit_search_results/against/ASSUMPTION-201_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-202 (cycle 1 refresh) [MONITOR-211]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-202_for.md ; lit_search_results/against/ASSUMPTION-202_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-207 (cycle 1 refresh) [MONITOR-213]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-207_for.md ; lit_search_results/against/ASSUMPTION-207_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-224 (cycle 1 refresh) [MONITOR-214]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-224_for.md ; lit_search_results/against/PRESUMPTION-224_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-226 (cycle 1 refresh) [MONITOR-216]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-226_for.md ; lit_search_results/against/PRESUMPTION-226_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-227 (cycle 1 refresh) [MONITOR-217]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-227_for.md ; lit_search_results/against/PRESUMPTION-227_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-229 (cycle 1 refresh) [MONITOR-218]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-229_for.md ; lit_search_results/against/PRESUMPTION-229_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-230 (cycle 1 refresh) [MONITOR-219]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-230_for.md ; lit_search_results/against/PRESUMPTION-230_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-214 (cycle 1 refresh) [MONITOR-220]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-214_for.md ; lit_search_results/against/ASSUMPTION-214_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-231 (cycle 1 refresh) [MONITOR-222]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-231_for.md ; lit_search_results/against/PRESUMPTION-231_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-232 (cycle 1 refresh) [MONITOR-223]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-232_for.md ; lit_search_results/against/PRESUMPTION-232_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-234 (cycle 1 refresh) [MONITOR-224]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-234_for.md ; lit_search_results/against/PRESUMPTION-234_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-236 (cycle 1 refresh) [MONITOR-226]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-236_for.md ; lit_search_results/against/PRESUMPTION-236_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-237 (cycle 1 refresh) [MONITOR-227]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-237_for.md ; lit_search_results/against/PRESUMPTION-237_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-239 (cycle 1 refresh) [MONITOR-228]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-239_for.md ; lit_search_results/against/PRESUMPTION-239_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-220 (cycle 1 refresh) [MONITOR-229]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-220_for.md ; lit_search_results/against/ASSUMPTION-220_against.md
+
+### RETURN/DISPOSITION: ASSUMPTION-221 (cycle 1 refresh) [MONITOR-230]
+- **Item type:** ASSUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14a->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/ASSUMPTION-221_for.md ; lit_search_results/against/ASSUMPTION-221_against.md
+
+### RETURN/DISPOSITION: PRESUMPTION-242 (cycle 1 refresh) [MONITOR-232]
+- **Item type:** PRESUMPTION
+- **15a refresh:** No new supporting literature this cycle
+- **15b refresh:** No new challenging literature this cycle
+- **15c re-disposition:** MONITOR (carries forward; weekly cadence; next 15d check 2026-06-07)
+- **Provenance chain:** [14b->15a,15b->15c->15d->15a,15b->15c]
+- **Full results:** lit_search_results/for/PRESUMPTION-242_for.md ; lit_search_results/against/PRESUMPTION-242_against.md
+
+
+## 2026-06-02 — 15a/15b/15c RUN (2026-05-31 EOD batch: ASSUMPTION-264 + PRESUMPTION-291/292/293)
+
+**Run type:** Automated via c2a2-lit-search-pipeline scheduled task (15a + 15b + 15c), one hour after the 14a/14b self-awareness pipeline. Autonomous; Tom not present at run time.
+**Cohort:** 4 cycle-0 items queued by the 2026-05-31 EOD self-awareness run (degraded-session epistemics angles). All were [QUEUED] with no prior 15a/15b/15c tags.
+**Grounding:** 4 genuine web searches this run (read-after-write/read-your-writes consistency; common-mode failure / Knight-Leveson N-version independence; hierarchy-of-controls / forcing functions; event-time vs processing-time / data freshness). All four items map to stable, well-established literature; honest sampling, not an exhaustive per-item external sweep — flagged per fail-loud discipline.
+**Net outcome:** All 4 searched by both 15a and 15b and dispositioned by 15c. 0 items left searched-but-undispositioned.
+**Dispositions:** 1 INCORPORATE (PREMISE-045 <- ASSUMPTION-264, necessity direction only) | 1 MONITOR (MONITOR-290 <- PRESUMPTION-292) | 2 REVISE (REVISE-083 <- PRESUMPTION-291; REVISE-084 <- PRESUMPTION-293). DISPOSITION-132..135.
+
+### 15a returns (FOR — supportive)
+
+```
+RETURN-TO-14a:
+  Original item: ASSUMPTION-264
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong (necessity direction)
+  Key source: Read-your-writes / read-after-write consistency (AWS S3 strong read-after-write 2020; quorum-commit); fail-loud-on-violation (OpenAI Sandbox Agents)
+  Summary: "Optimistic ack is not authoritative; the authoritative signal is a read against committed ground state" is read-your-writes consistency; "do not claim what you cannot re-verify" is canonical fail-loud. Strong for the necessity direction; sufficiency of an in-band re-check is NOT established (couples 293).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-264_for.md
+```
+
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-291
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: Kleppmann, event-time vs processing-time (DDIA 2017; Online Event Processing, CACM 2019); data-freshness/staleness; idempotent dated-delta
+  Summary: Narrating latest-on-disk as "today's" is a textbook event-time/processing-time conflation; correctness practice designs it out via freshness tracking and idempotent dated-delta reporting. Concern is empirically realized.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-291_for.md
+```
+
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-292
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate-Strong
+  Key source: Hierarchy of controls (OSHA); forcing functions/interlocks (Norman, machinery-safety)
+  Summary: A behavioral norm ("agent will notice and override") is an administrative control — the less-reliable tier that depends on compliance; fail-loud without an interlock is exactly that. Engineered/forcing-function guards rank higher where stakes warrant.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-292_for.md
+```
+
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-293
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: Knight & Leveson (1986) independence in N-version programming; common-mode failure (IEEE CMF survey; NASA CCF); out-of-band monitor independence
+  Summary: Independence of a checker from the checked system cannot be assumed (correlated failures occur above chance). An in-band "clean reload" in the same degraded regime is a common-mode verifier; authoritative re-verification must be out-of-band.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-293_for.md
+```
+
+### 15b returns (AGAINST — disconfirmatory)
+
+```
+RETURN-TO-14a:
+  Original item: ASSUMPTION-264
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Knight & Leveson / common-mode failure; optimistic acks + idempotency (Kleppmann); alert-fatigue
+  Specific risk: Treating any in-band "clean reload" as authoritative inherits the common-mode blind spot (293) — a confident-but-wrong "verified"; an unbounded re-verify-everything rule risks overhead/fatigue.
+  Summary: Core necessity claim is robust; the over-extensions ("clean re-verification is authoritative"; blanket distrust of all intermediate reads) are challenged. Scope to necessity; require out-of-band re-verification.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-264_against.md
+```
+
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-291
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak-Moderate
+  Key source: YAGNI/KISS; batch-vs-real-time ingestion trade-offs; acceptable-staleness (freshness bound)
+  Specific risk: Treating the echo as acceptable normalizes the self-awareness layer mis-dating its OWN record, eroding trust in its dated claims and masking the intake outage.
+  Summary: Latest-on-disk narration is a defensible simplification for a low-stakes digest, but the defense weakens sharply because the artifact is self-referential (the honesty layer's own output) and the echo already occurred. Minimal dated-delta fix suffices.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-291_against.md
+```
+
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-292
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Hierarchy-of-controls feasibility clause (OSHA); YAGNI/cost-of-over-instrumentation; behavioral-norm sufficiency in low-stakes contexts
+  Specific risk: Over-instrumenting a personal pipeline wastes effort; but accepting the norm risks a silent false-success in the highest-trust component when the agent fails to notice the degraded regime.
+  Summary: The hierarchy is a prioritization weighted by feasibility/stakes, not a mandate to engineer out; a behavioral norm may be proportionate for a recoverable single-operator pipeline — but least reliable in exactly the degraded condition it must catch.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-292_against.md
+```
+
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-293
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak-Moderate
+  Key source: rAF/background-tab throttling as a known artifact class (couples REVISE-073/PRESUMPTION-278); out-of-band verification in practice (SRE health-checks; AWS S3 RAW); common-mode is a matter of degree
+  Specific risk: Over-reading the presumption induces verification nihilism (distrust all re-checks); under-reading leaves the in-band common-mode blind spot in place.
+  Summary: Concedes independence-cannot-be-assumed but rejects the absolutist "no fault-free vantage exists" — independence is constructible (out-of-band / fresh-process exit of a known throttling regime). Sharpens the remedy: make the verifier out-of-band, don't abandon it.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-293_against.md
+```
+
+### SYSTEMIC-RISK-FLAG (15b)
+```
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-06-02
+  Affected items: ASSUMPTION-264, PRESUMPTION-291, PRESUMPTION-292, PRESUMPTION-293
+  Common vulnerability: No fault-independent vantage point. Verification (264), dated self-reporting (291), and the honesty layer's enforcement (292) all execute INSIDE the same degraded session regime they are meant to police, and the re-verification remedy itself can share the fault (293). This is the same common-mode root as the 2026-05-31 single-transport cluster (PRESUMPTION-288/MONITOR-289), now reaching the verification/honesty layer itself: 264 (in-band re-check assumed authoritative), 291 (mis-dates from stale latest-on-disk), 292 (fail-loud is a norm, not an interlock), 293 (the verifier shares the regime).
+  Literature basis: Knight & Leveson (1986) + common-mode failure (IEEE CMF survey; NASA CCF); hierarchy of controls (OSHA); event-time vs processing-time (Kleppmann); read-your-writes consistency.
+  Risk level: High
+  Recommendation: Establish a single OUT-OF-BAND vantage point — a transport/process that does not share the degraded regime's failure mode — and route re-verification, intake-health recording, and dated-delta reporting through it. One change addresses the common mode behind all four items and extends the 2026-05-31 single-transport remedy. Couples REVISE-080, OPEN-066 (project #1), OPEN-069.
+```
+
+### 15c dispositions (2026-06-02)
+
+```
+DISPOSITION-132:
+  Date: 2026-06-02
+  Item: ASSUMPTION-264
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong (necessity direction)
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: The necessity claim (optimistic ack is not authoritative; do not claim what you cannot re-verify) is strongly grounded in read-your-writes consistency and canonical fail-loud, with no serious challenge. Only the over-extension ("clean re-verification IS authoritative") is contested — a same-regime re-check can share the fault.
+  Disposition: INCORPORATE (PREMISE-045)
+  Reasoning: Stated assumption, strong support, weak-to-moderate challenge confined to a sub-claim that is explicitly EXCLUDED from the incorporated premise and routed to REVISE-084. Scoped to the necessity direction; matches Tom's Rule 12. Consistency-checked against PREMISE-001..044: no conflict (reinforces fail-loud-on-violation citation).
+  Detail: Confidence Moderate (not High — verifier-independence caveat material). Re-check Quarterly; next via 15d. Couples ASSUMPTION-263, MONITOR-290, REVISE-084.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+```
+
+```
+DISPOSITION-133:
+  Date: 2026-06-02
+  Item: PRESUMPTION-291
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Textbook event-time/processing-time conflation, empirically realized (2026-05-30 batches narrated as 2026-05-31's). The low-stakes/YAGNI defense is real but weakens sharply because the mislabelled artifact is the self-awareness layer's OWN honesty output.
+  Disposition: REVISE (REVISE-083)
+  Reasoning: PRESUMPTION + self-referential + active mis-reporting; the layer mis-dating its own record defeats its purpose and masks the intake outage. Remedy is cheap (dated delta), so the over-engineering objection does not save the current behavior.
+  Detail: Urgency Medium-High. Stamp batches with event-date; EOD summary emits a dated delta ("no new items today; latest is 2026-05-30") not latest-as-today. Couples PRESUMPTION-287 (REVISE-080), PRESUMPTION-290 (REVISE-082); 2026-06-02 cluster.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+```
+DISPOSITION-134:
+  Date: 2026-06-02
+  Item: PRESUMPTION-292
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Hierarchy of controls supports the concern (behavioral norms are the less-reliable administrative tier), but the hierarchy is a feasibility/stakes-weighted prioritization, so a behavioral norm may be proportionate for a recoverable single-operator pipeline. Genuinely contested.
+  Disposition: MONITOR (MONITOR-290)
+  Reasoning: Interlock-vs-norm is a human cost-benefit judgment, not a refutation — err toward MONITOR over REVISE (15c heuristic). Priority MEDIUM-HIGH: the guard protects the honesty layer itself, and a behavior-only guard is least reliable in the degraded condition it must catch.
+  Detail: Cadence Weekly; next 15d 2026-06-07. What would change: any degraded-session false "success" the norm failed to catch -> REVISE toward a lightweight forcing function (block "verified" without an out-of-band token). Couples ASSUMPTION-264, PRESUMPTION-293.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+```
+DISPOSITION-135:
+  Date: 2026-06-02
+  Item: PRESUMPTION-293
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Knight-Leveson + common-mode literature strongly ground the concern: checker independence cannot be assumed. An in-band "clean reload" in the same degraded regime is a common-mode verifier. 15b's valid pushback (independence is constructible, not impossible) sharpens rather than refutes the remedy.
+  Disposition: REVISE (REVISE-084)
+  Reasoning: PRESUMPTION + strong support + directly undercuts the SUFFICIENCY of ASSUMPTION-264's in-band re-verification (the part excluded from PREMISE-045). Designers were unaware they assumed a fault-free vantage point. Correct conclusion: make the verifier out-of-band, not abandon verification.
+  Detail: Urgency Medium. Require the re-verification path to be out-of-band relative to the degraded mechanism; treat in-band-only re-checks as "unknown." Characterize the regime's mechanism to confirm independence. Couples ASSUMPTION-264 (PREMISE-045 gap), REVISE-073/PRESUMPTION-278 (rAF throttling), PRESUMPTION-288 (MONITOR-289).
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+
+**Run 2026-06-02 totals:** 1 INCORPORATE (PREMISE-045), 1 MONITOR (MONITOR-290), 2 REVISE (REVISE-083..084) (DISPOSITION-132..135). SYSTEMIC-RISK: no-independent-vantage / degraded-session common-mode cluster (4 items). Consistency check: PREMISE-045 checked against PREMISE-001..044 — no conflict (reinforces existing fail-loud-on-violation premise/citation).
+
+
+## 2026-06-02 — 15a/15b/15c RUN (batch 2: 2026-06-02 EOD self-awareness batch — newly queued during this pipeline run)
+
+**Run type:** Same c2a2-lit-search-pipeline run; the 2026-06-02 14a/14b self-awareness batch was written to the queue during this run and processed in the same pass (fail-loud: newly queued items not deferred).
+**Cohort:** 4 cycle-0 items — ASSUMPTION-265 + PRESUMPTION-294/295/296. Theme: silent/absence-based failure (stale git index.lock; deferral cost; email-only decision channel).
+**Grounding:** 2 additional web searches (cost-of-delay/WSJF/queue-aging; safety-vs-liveness/silent-failure); the fail-loud/read-after-write/channel-of-record concepts reuse this run's batch-1 grounding. Honest sampling, not exhaustive per-item — flagged.
+**Net outcome:** All 4 searched by both 15a and 15b and dispositioned by 15c. 0 searched-but-undispositioned.
+**Dispositions:** 1 INCORPORATE (PREMISE-046 <- ASSUMPTION-265) | 2 MONITOR (MONITOR-291 <- PRESUMPTION-295; MONITOR-292 <- PRESUMPTION-296) | 1 REVISE (REVISE-085 <- PRESUMPTION-294). DISPOSITION-136..139.
+
+### 15a returns (FOR — supportive)
+```
+RETURN-TO-14a:
+  Original item: ASSUMPTION-265
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: Safety vs liveness (Hillel Wayne/Lamport); read-after-write; fail-loud + pre-flight checks
+  Summary: "No error" is a weak safety signal, not the liveness property that staging occurred; verify the side effect. Empirically realized 4-day silent staging outage. Same verify-don't-infer family as PREMISE-045.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-265_for.md
+```
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-294
+  Search direction: FOR (supportive)
+  Result: SUPPORTED (core); rider NO-SUPPORT-FOUND
+  Strength: Strong (core silent-failure); rider unsupported
+  Key source: Safety vs liveness; verify-the-side-effect; idempotency/recovery semantics
+  Summary: "git no-error == staged" is a textbook safety-vs-liveness defect (supported). The recovery RIDER (lock removal heals the 4-day window) is unsupported — lock removal is forward-only, not idempotent over the missed window.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-294_for.md
+```
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-295
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate-Strong
+  Key source: Cost of Delay / WSJF (Reinertsen; SAFe; Wikipedia); non-linear value aging (arXiv 1812.09320)
+  Summary: Deferral is not cost-free — it accrues delay cost (often the dominant share of lead time) and can age non-linearly into an expedite/incident; the missing cost accounting + escalation trip-wire is the blind spot CoD methods remove.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-295_for.md
+```
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-296
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: absence-of-signal != absence-of-event (observability; PRESUMPTION-287 lineage); multi-channel intake / evidence completeness
+  Summary: Reading "no decision email" as "no decision" conflates missing-data with a confirmed null; a verbal/chat decision on a blind-intake day is silently dropped — IF decisions can legitimately arrive on more than one channel.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-296_for.md
+```
+
+### 15b returns (AGAINST — disconfirmatory)
+```
+RETURN-TO-14a:
+  Original item: ASSUMPTION-265
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak-Moderate
+  Key source: YAGNI/KISS; git exit-code reliability in common case; cost-of-instrumentation/alert-fatigue
+  Specific risk: Skipping verification leaves blindness to future silent VC failures; over-instrumenting adds noise. Narrow check (stale-lock + read-after-write) avoids the noise objection.
+  Summary: Per-run verification could be over-engineering IF the incident were a one-off; it was not (4-day silent staging block), so the realized failure outweighs the YAGNI objection. Scope the check narrowly.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-265_against.md
+```
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-294
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED (core); recovery RIDER strongly challenged
+  Strength: Weak-Moderate (core); Strong (against rider)
+  Key source: optimistic-ack acceptability (bounds the core); idempotency/recovery semantics + RCA (against rider)
+  Specific risk: If the rider stands, the system believes the 4-day window is healed when those changes remain untracked — a second silent integrity gap.
+  Summary: Trust "no error==done" is fine for cheap self-healing ops; target the rule at consequential/non-self-healing ops. The rider is wrong: lock removal does not re-run skipped staging; reconstruct + verify the lock window.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-294_against.md
+```
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-295
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: real-options/optionality; safe-default human-in-the-loop (OPEN-066); reversibility caveat
+  Specific risk: Treating deferral as cost-free risks an unbounded silent backlog aging into incident; over-eager action risks irreversible ingestion without Tom's decision.
+  Summary: For irreversible, judgment-laden human-gated work, waiting is the correct safe default with option value; but that does not defend the ABSENCE of cost accounting / escalation trip-wire. Hold both: wait, but track + trip-wire.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-295_against.md
+```
+```
+RETURN-TO-14b:
+  Original item: PRESUMPTION-296
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: single source/channel of record; command-of-record discipline; cost of multi-channel reconciliation
+  Specific risk: If the single-channel constraint is unstated, a verbal decision is silently dropped; if explicit, the only cost is Tom must email decisions.
+  Summary: A single dated email channel-of-record is a defensible, even desirable, constraint for a provenance-first system. IF intended, "no email==no decision" is correct policy; the residual risk is only that the constraint is implicit. Make it explicit.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-296_against.md
+```
+
+### SYSTEMIC-RISK-FLAG (15b, batch 2 — extends 2026-06-02 cluster)
+```
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-06-02
+  Affected items: ASSUMPTION-265, PRESUMPTION-294, PRESUMPTION-296 (+ batch-1 264/291/292/293; + 287)
+  Common vulnerability: "Absence != success/event." The system repeatedly infers a positive state from a NULL it never verified out-of-band — "no git error"==staged (294/265), "no decision email"==no decision (296), "no readable transcript"==no session (287), an in-band reload==verified (264/293). Same root: no fault-independent confirmation that the intended effect/event actually occurred.
+  Literature basis: Safety vs liveness (Hillel Wayne; Lamport); read-your-writes consistency; observability metric-absence alerting; common-mode failure (Knight & Leveson).
+  Risk level: High
+  Recommendation: One coupled remedy — an OUT-OF-BAND vantage point plus explicit verify-the-effect checks (PREMISE-045/046) so a null is recorded as UNKNOWN, never as a confirmed positive. Couples REVISE-080, OPEN-066 (project #1), OPEN-069, OPEN-071.
+```
+
+### 15c dispositions (2026-06-02, batch 2)
+```
+DISPOSITION-136:
+  Date: 2026-06-02
+  Item: ASSUMPTION-265
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Verify-the-effect (not infer-from-no-error) is strongly grounded (safety vs liveness; read-after-write) and empirically realized (4-day silent staging block). The YAGNI challenge is weak and outweighed by the realized multi-day failure on the VC spine.
+  Disposition: INCORPORATE (PREMISE-046)
+  Reasoning: Stated assumption, strong support, weak challenge; same verify-don't-infer/fail-loud family as PREMISE-045. Mitigation folded in: scope the check narrowly (stale-lock + read-after-write). Consistency-checked vs PREMISE-001..045: reinforces, no conflict.
+  Detail: Confidence Moderate-High. Re-check Quarterly (2026-09-02) via 15d. Couples PRESUMPTION-294 (REVISE-085), OPEN-071.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+```
+```
+DISPOSITION-137:
+  Date: 2026-06-02
+  Item: PRESUMPTION-294
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED (core); rider NO-SUPPORT | 15a strength: Strong (core)
+  15b result: PARTIALLY-CHALLENGED (core); rider STRONGLY challenged | 15b strength: Strong (against rider)
+  Net assessment: The silent-failure core is incorporated as the stated twin (PREMISE-046). What requires design action is the false recovery RIDER: clearing the lock is forward-only and not idempotent over the missed window, so the ~4 days of skipped staging are not healed by lock removal.
+  Disposition: REVISE (REVISE-085)
+  Reasoning: PRESUMPTION + self-referential + an actively-wrong recovery rider that would leave a second silent integrity gap. Cheap one-time remedy (reconstruct + verify the lock window).
+  Detail: Urgency Medium-High. After clearing the lock, diff working tree vs last confirmed-staged commit for 2026-05-29 → 2026-06-02, re-stage/commit, verify read-after-write; add stale-lock pre-flight. Couples PREMISE-046, OPEN-071.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+```
+```
+DISPOSITION-138:
+  Date: 2026-06-02
+  Item: PRESUMPTION-295
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Cost-of-delay supports that deferral accrues cost and can age into an incident (15a); but for irreversible, human-gated work, waiting is the correct safe default with option value (15b). Both hold: wait, but track + trip-wire. The named gap (no accounting, no escalation) is real; the act-vs-wait call is Tom's.
+  Disposition: MONITOR (MONITOR-291)
+  Reasoning: Genuinely contested; err toward MONITOR over REVISE. Priority MEDIUM-HIGH (review queue ~3 weeks old; couples human-response-gate).
+  Detail: Cadence Weekly; next 15d 2026-06-07. What would change: a deferred item aging past where waiting cost exceeds action risk, or demonstrated harm -> REVISE toward CoD accounting + staleness trip-wire. Couples OPEN-066, REVISE-081, PRESUMPTION-296.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+```
+DISPOSITION-139:
+  Date: 2026-06-02
+  Item: PRESUMPTION-296
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Shares the "absence != event" family (concern real if decisions can arrive multi-channel), but a single dated-email channel-of-record is a defensible, provenance-friendly constraint. The whole question turns on whether the email-only constraint is intended — unknown at autonomous run time.
+  Disposition: MONITOR (MONITOR-292)
+  Reasoning: Contested and resolvable by one fact (does Tom decide verbally/in chat?). Not REVISE (email-only may be correct policy); not INCORPORATE (constraint currently implicit, possibly lossy). Err toward MONITOR. Priority MEDIUM.
+  Detail: Cadence Weekly; next 15d 2026-06-07. What would change: Tom decides verbally/chat -> REVISE (add capture path); email is sole intended channel -> INCORPORATE as an explicit declared channel-of-record. Couples PRESUMPTION-287 (REVISE-080), PRESUMPTION-295, OPEN-069.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+**Run 2026-06-02 totals (both batches):** 2 INCORPORATE (PREMISE-045, PREMISE-046), 3 MONITOR (MONITOR-290..292), 3 REVISE (REVISE-083..085) (DISPOSITION-132..139, 8 items). SYSTEMIC-RISK: no-independent-vantage / "absence != success/event" common-mode cluster (8 items, extending the 2026-05-31 single-transport flag). Consistency check: PREMISE-045/046 checked vs PREMISE-001..044 — no conflict (both reinforce the fail-loud / verify-the-effect family).
+
+---
+
+## 2026-06-03 run — c2a2-lit-search-pipeline (autonomous; Tom not present at fire time)
+
+*Batch: 2026-06-02 evening Sociogram session (ASSUMPTION-266/267/268 + PRESUMPTION-297/298/299), cycle 0. 6 genuine web searches this run across 3 coupled clusters (git-staging/cross-repo; node-cap scaling; live/spot-check verification). Honest sampling, not an exhaustive per-item external sweep.*
+
+### 15a returns (FOR)
+```
+RETURN-TO-14a:
+  Original item: ASSUMPTION-266
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: git-scm git-add docs + practitioner consensus (HN 12886492; GitHub git-guides)
+  Summary: Explicit-path staging in a chronically dirty tree is well-established best practice to avoid committing unintended changes.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-266_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-267
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: SRE headroom/capacity guides; octocore Capacity vs Load
+  Summary: Raising the cap above current load (2529) with headroom is correct; "20000 is a verified safe ceiling" is not established (couples PRESUMPTION-299).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-267_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-268
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: cloudbees test-in-prod; Harness "only a full pipeline run counts"
+  Summary: In-situ served-browser verification with observable evidence + human sign-off is well-grounded; instantiates the verify-the-effect family (PREMISE-045/046).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-268_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-297
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: Concordia DAS Lab ArtifactSync; GitLab #14311; ACM Koli Calling 2025 multi-artifact consistency
+  Specific risk: A pushed viz depending on uncommitted second-repo edits can silently desync; no transactional guarantee across repos.
+  Summary: Cross-repo silent desync is a documented hazard; human memory + handoff note is a recognized weak interlock.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-297_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-298
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate-Strong
+  Key source: Equivalence-class/BVA theory (Myers ch.4; TestBench); arXiv:2103.04578 believed-equivalence
+  Specific risk: One isolate + one focus generalized to all assumes an unverified partition; boundaries (zero-link/dense) least represented.
+  Summary: Single spot-check generalizes only if the class is genuinely equivalent — a partition that was assumed, not shown.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-298_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-299
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: Force-directed render-cliff surveys (Weber/Medium; GraphAware PIXI.js); octocore Capacity vs Load
+  Specific risk: D3/SVG cliffs near ~1000+ nodes mean 20000 is far above tested capacity; cap can re-admit the crash it guards.
+  Summary: 10x ceiling validated only at 2529; 2.5k–20k uncharacterized; a configured limit is not a tested limit.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-299_for.md
+```
+
+### 15b returns (AGAINST)
+```
+RETURN-TO-14a:
+  Original item: ASSUMPTION-266
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: root-cause-vs-workaround (GitLab #14311); hierarchy-of-controls/forcing-function lineage
+  Specific risk: Memory-dependent "never -A" rule is re-breakable by one reflex; explicit paths can silently OMIT new intended files.
+  Summary: Explicit-path staging fixes the symptom; the dirty tree is the defect (.gitignore/separate repos/submodules); manual convention < forcing function.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-266_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-267
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: force-directed cliff (~1000+ nodes, D3/SVG); octocore "capacity must be tested"
+  Specific risk: 20000 likely above real render capacity; cap can silently re-admit the crash on large future data.
+  Summary: "Raise above 2529" sound; "20000 is safe" is an untested claim (couples PRESUMPTION-299).
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-267_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-268
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Harness smoke-in-CI; release-gate practice
+  Specific risk: Mandatory manual foreground gate is the step an autonomous run skips; countable signals better automated.
+  Summary: Real-environment verification right; "must be human+foreground" over-claims — automate objective checks, reserve sign-off for the visual property.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-268_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-297
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak-Moderate
+  Key source: YAGNI/KISS; GitLab #14311 (cross-repo tooling is costly)
+  Specific risk: Over-tooling an intermittent two-repo coupling; under-reacting leaves the (real) desync exposure.
+  Summary: Hazard is real (per 15a); disagreement is magnitude — a cheap pre-push "is the other repo clean?" check, not full interlock tooling.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-297_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-298
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: equivalence-class validity argument (Myers; TestBench); YAGNI for personal tools
+  Specific risk: Mandating exhaustive UI checks wastes effort IF the fade path is uniform; the risk is real only if it branches.
+  Summary: Sufficiency of one spot-check is a code fact — read the fade path: uniform → one case suffices; branching → add boundary cases.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-298_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-299
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: YAGNI on perf-testing unused ranges; existing 80%-of-cap warning
+  Specific risk: Pre-empting characterization tests a range slow-growing data won't reach; deferring risks a cliff if growth accelerates without warning.
+  Summary: Uncharacterized range is real (per 15a) but timing is the dispute — test-when-approaching (growth-triggered warning) vs test-now.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-299_against.md
+```
+
+### SYSTEMIC-RISK-FLAG (15b, 2026-06-03)
+```
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-06-03
+  Affected items: ASSUMPTION-266, ASSUMPTION-268, PRESUMPTION-297
+  Common vulnerability: Each relies on a MANUAL, memory-dependent convention as the control of record rather than an enforced forcing function — "remember to use explicit git paths" (266), "remember to do a live foreground review" (268), "remember the cross-repo handoff" (297). On an autonomous, human-absent run these are exactly the controls most likely to be silently skipped, re-admitting the failure they nominally prevent. This is the human-vantage twin of the 2026-06-02 "absence != success/event" cluster: there the gap was inferring a positive from an unverified null; here it is substituting human memory for an enforced check.
+  Literature basis: hierarchy-of-controls / forcing-functions (administrative controls are the weakest tier); Harness smoke-in-CI (manual gates get skipped under pressure); GitLab #14311 (cross-repo coupling is not transactional).
+  Risk level: High
+  Recommendation: Convert each memory-dependent convention into a cheap pre-push forcing function — generated/checked explicit-path set + new-file-omission check (266); automated served-browser assertions for the objective signals with human sign-off reserved for the visual property AND the push BLOCKING when the human is absent (268); a pre-push "is the dependent repo clean?" check (297). Couples PREMISE-045/046, REVISE-085, OPEN-071.
+
+SECONDARY-CLUSTER (untested ceiling validated only at current load):
+  Affected items: ASSUMPTION-267, PRESUMPTION-299 (verification-coverage cousin: PRESUMPTION-298)
+  Common vulnerability: A limit/verification is asserted "safe/correct" from a single current-load data point (20000 cap from 2529 nodes; "works for all" from one isolate). A configured ceiling is not a tested ceiling; one representative is not a covered class.
+  Risk level: Medium-High
+  Recommendation: Measure the render cliff and set the cap below it (267/299); read the fade code path to decide whether one case is a valid representative (298).
+```
+
+### 15c dispositions (2026-06-03)
+```
+DISPOSITION-140:
+  Date: 2026-06-03
+  Item: ASSUMPTION-266
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: The discipline itself — explicit-path staging in a chronically dirty tree to avoid committing unintended changes — is strongly and uncontroversially supported. 15b does not dispute the practice; it disputes (a) that the rule, not the dirty tree, is the right locus of fix and (b) that a memory-dependent "never -A" convention is durable (and can silently omit new files).
+  Disposition: INCORPORATE (PREMISE-047)
+  Reasoning: Strong support + a moderate challenge that targets durability/locus, not correctness, fits INCORPORATE-with-caveats. The premise incorporated is the staging discipline; the forcing-function/structural-fix point is folded in as a caveat and is also captured by this run's High SYSTEMIC-RISK (human-memory controls). Consistency-checked vs PREMISE-001..046: complements PREMISE-046 (verify VC health); no conflict.
+  Detail: Confidence Moderate. Re-check Quarterly (2026-09-03) via 15d. Caveat: back the convention with a forcing function (generated/checked explicit-path set + new-file-omission check) or remove the dirt source (.gitignore/separate repos/submodules). Couples PRESUMPTION-297 (MONITOR-293), SYSTEMIC-RISK 2026-06-03.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+
+DISPOSITION-141:
+  Date: 2026-06-03
+  Item: ASSUMPTION-267
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: The claim has two parts (Rule 7 — surfaced, not blended). "Raise the cap above 2529 with headroom" is correct and supported — the old 2000 cap truncated real data. "20000 is a SAFE ceiling" is challenged moderate-strong with only weak support: D3/SVG force layouts degrade non-linearly well below 20000, so the cap likely sits above real render capacity and can silently re-admit the crash it guards.
+  Disposition: REVISE (REVISE-086)
+  Reasoning: Weak support + moderate-strong challenge on the load-bearing sub-claim (safe ceiling) -> lean REVISE. The immediate truncation fix is fine; what needs Tom's review is the untested 10x ceiling. Not INCORPORATE (safe-ceiling unproven); not MONITOR (a concrete, cheap measurement resolves it). Tightly couples PRESUMPTION-299 (MONITOR-295).
+  Detail: Urgency Medium. Recommended: measure the render cliff for this build (sweep ~3k/5k/8k/12k/16k/20k nodes: frame time, interaction latency, memory) and set the cap below the first cliff; or move to canvas/WebGL for a genuinely high safe ceiling. Treat 20000 as a provisional, explicitly-untested guard until measured. Couples ASSUMPTION-267 truncation-fix (kept), PRESUMPTION-299.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-142:
+  Date: 2026-06-03
+  Item: ASSUMPTION-268
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: In-situ verification in a served browser with observable evidence + human sign-off is strongly supported and instantiates the already-incorporated verify-the-effect family (PREMISE-045/046). 15b's challenge is not that real-environment verification is wrong but that mandating a MANUAL FOREGROUND pass for the whole check over-claims — objective signals (cross-link count, clean console) are better as deterministic assertions, and a manual gate is the step an autonomous run skips.
+  Disposition: INCORPORATE (PREMISE-048)
+  Reasoning: Strong support + moderate challenge on scope (manual vs automated split), not on the core -> INCORPORATE with caveats. Premise: pre-push verification must observe the rendered effect in a real served environment (not asserted), with human sign-off for the visual judgment. Caveat folded in: automate the objective checks and make the push BLOCK when the human is absent (fail-loud), per the run's SYSTEMIC-RISK. Consistency-checked vs PREMISE-001..047: reinforces PREMISE-045/046; no conflict.
+  Detail: Confidence Moderate-High. Re-check Quarterly (2026-09-03) via 15d. Caveat: encode opacity-split (computed-style threshold), cross-link count, and console-clean as automated served-browser assertions; reserve sign-off for the subjective visual property; block push if sign-off absent. Couples PREMISE-045/046, PRESUMPTION-298 (MONITOR-294), SYSTEMIC-RISK 2026-06-03.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+
+DISPOSITION-143:
+  Date: 2026-06-03
+  Item: PRESUMPTION-297
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Cross-repo silent desync (a pushed artifact depending on uncommitted second-repo edits, no transactional guarantee) is a documented, real exposure (15a strong). 15b does not deny it — it argues only about remedy magnitude: for a single-author, low-frequency, two-repo workflow a handoff note may be a tolerable interlock and full cross-repo tooling is over-engineering. So the disagreement is act-vs-wait, not real-vs-not.
+  Disposition: MONITOR (MONITOR-293)
+  Reasoning: Real but unrealized exposure; remedy is contested in magnitude (cheap pre-push check vs handoff-note-is-fine). Err toward MONITOR over REVISE (15c heuristic; no realized harm yet). PRESUMPTION + member of this run's High human-memory SYSTEMIC-RISK cluster -> Priority Medium-High and a concrete trip-wire.
+  Detail: Cadence Weekly; next 15d 2026-06-07. Priority Medium-High. What would change: a near-miss (a push that actually shipped depending on uncommitted Summa edits) OR rising coupling frequency -> REVISE toward a cheap pre-push "is the dependent repo clean?" check (not full interlock tooling). Couples ASSUMPTION-266 (PREMISE-047), SYSTEMIC-RISK 2026-06-03, OPEN-072.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-144:
+  Date: 2026-06-03
+  Item: PRESUMPTION-298
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Both directions converge on the SAME pivot: whether one spot-check generalizes depends entirely on whether the fade code path is uniform or branches on per-node properties. If uniform, levin + levin~summa are valid equivalence-class representatives and exhaustive UI checking is YAGNI; if it branches on degree/links/focus, the untested boundaries (zero-link isolate, dense focus) are exactly where it can break.
+  Disposition: MONITOR (MONITOR-294)
+  Reasoning: Genuinely conditional on a checkable code fact, not yet resolved at autonomous run time -> MONITOR (not INCORPORATE, partition unproven; not REVISE, no established defect). PRESUMPTION; risk conditional. Priority Medium. Resolvable cheaply and decisively by reading the fade implementation.
+  Detail: Cadence Weekly; next 15d 2026-06-07. Priority Medium. What would change: reading the fade path resolves it — uniform single rule -> INCORPORATE the one-representative justification (record it); branches on per-node properties -> REVISE to add boundary cases (zero-link isolate, max-degree focus). Couples ASSUMPTION-268 (PREMISE-048).
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-145:
+  Date: 2026-06-03
+  Item: PRESUMPTION-299
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Both agree the 2.5k–20k range is uncharacterized (15a strong: render cliffs are real and 20000 is far above the only tested point). 15b disputes only TIMING: for a dataset that took ~190 days to reach 2529 nodes, characterizing the range now may be YAGNI, and a growth-triggered warning substitutes for an up-front sweep.
+  Disposition: MONITOR (MONITOR-295)
+  Reasoning: The gap is real and agreed; the contest is test-now vs test-when-approaching -> MONITOR with a growth trip-wire. Tightly couples ASSUMPTION-267's REVISE-086 (the measurement that resolves 299 is the same one REVISE-086 recommends). Priority Medium-High because it is the load-bearing evidence under the REVISE.
+  Detail: Cadence Weekly; next 15d 2026-06-07. Priority Medium-High. What would change: node count approaching an unmeasured cliff, OR the next cap change, OR the REVISE-086 measurement landing -> fold into the cliff sweep and set the cap below the measured cliff. Re-anchor the existing 80%-of-cap warning to the measured cliff once known. Couples ASSUMPTION-267 (REVISE-086), PRESUMPTION-298.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+**Run 2026-06-03 totals:** 6 items | 2 INCORPORATE (PREMISE-047, PREMISE-048) | 3 MONITOR (MONITOR-293..295) | 1 REVISE (REVISE-086) (DISPOSITION-140..145). SYSTEMIC-RISK (High): human-memory-as-control cluster (ASSUMPTION-266/268, PRESUMPTION-297) — convert memory-dependent conventions to forcing functions. Secondary cluster: untested-ceiling-from-current-load (ASSUMPTION-267, PRESUMPTION-299; cousin 298). Consistency check: PREMISE-047/048 checked vs PREMISE-001..046 — no conflict (047 complements PREMISE-046 git-health; 048 reinforces PREMISE-045/046 verify-the-effect).
+
+---
+
+## 2026-06-04 run — c2a2-lit-search-pipeline (autonomous; Tom not present at fire time)
+
+*Batch: 2026-06-03 EOD self-awareness day (ASSUMPTION-269/270 + PRESUMPTION-300/301/302), cycle 0. 10 genuine web searches this run (5 FOR + 5 AGAINST) across coupled clusters: intake-verification (269), autonomous-auth / silent-sync-degradation (270 + 300), staged-deferral (301), self-referential extraction (302). Honest sampling, not an exhaustive per-item external sweep. NOTE (epistemic honesty, ties to PRESUMPTION-302): this batch was itself extracted on a 2nd consecutive no-attended day, so several items are the pipeline reflecting on its own autonomous runs — weighted accordingly below.*
+
+### 15a returns (FOR)
+```
+RETURN-TO-14a:
+  Original item: ASSUMPTION-269
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: CheckIfExist/CiteAudit (arXiv 2602.15871/2602.23452); Zahn & Chana 2026 write-time gating (arXiv 2603.15994)
+  Summary: Verify-before-ingest is strongly grounded — LLM-era citation hallucination is a real corruption vector, and write-time gating empirically beats ingest-everything (~100% vs ~13%).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-269_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-270
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: OWASP Agentic AI Top 10 / Auth0 excessive-agency; Microsoft/Curity least-privilege + JIT credentials
+  Summary: Core boundary (agent must not authenticate as Tom) is strongly supported by least-privilege / excessive-agency guidance; the attended-only sub-clause exceeds what the literature establishes (see 15b).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-270_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-300
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: Nygard circuit-breaker (Azure Arch Center; AWS resilience); DLQ + fail-fast (Conduktor/SQS)
+  Specific risk: Running a full workflow against a confirmed-dead sink and accumulating silent in-workflow undeliverable state is the anti-pattern circuit-breakers/dead-letters exist to prevent.
+  Summary: Confirmed-down = stop/escalate/dead-letter is well-established; the presumed "recoverable inconvenience" behavior is sound only if the residue is a durable, replayable, flagged queue.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-300_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-301
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Lean 7-wastes (partially-done = inventory waste); WIP-limit / value-decay practice
+  Specific risk: A built-but-inert capability carries holding cost, obsolescence, and design-drift — "cost-free deferral" understates this.
+  Summary: Deferral is NOT cost-free (lean inventory/opportunity-cost waste), but the cost is small for a low-frequency single-author capability; magnitude, not direction, is the live question.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-301_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-302
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: Alert-fatigue / signal-to-noise (Datadog, Icinga, Better Stack); monitoring-hygiene "if always ignored, gate/convert it"
+  Specific risk: Extracting "design" substance from a no-attended day risks thin/echo output and self-referential inflation.
+  Summary: Monitoring practice supports gating/down-weighting low-substance runs; firing extraction on a no-substance day risks mining the pipeline's own transcripts. (Counter-case in 15b.)
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-302_for.md
+```
+
+### 15b returns (AGAINST)
+```
+RETURN-TO-14a:
+  Original item: ASSUMPTION-269
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak-Moderate
+  Key source: PKM precision/recall (Obsidian second-brain, arXiv 2509.20187); write-gating ARCHIVES-not-deletes (arXiv 2603.15994)
+  Specific risk: In a low-volume corpus recall is scarce; a do-not-ingest gate drops leads, and an un-revisited hold queue reproduces the loss invisibly ("flag and forget").
+  Summary: Disputes the control's SHAPE, not the goal: capture-and-quarantine-with-revisit dominates refuse-to-capture for this corpus size.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-269_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-270
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate-Strong
+  Key source: OAuth client-credentials / refresh tokens / token vaults (Scalekit, Auth0); Workload Identity Federation (Entra/Curity)
+  Specific risk: "Attended-only / cannot self-clear" rests on a false dichotomy (be-Tom vs human-only); it builds an availability single-point-of-failure (the realized 06-03 block).
+  Summary: First clause sound; second clause challenged — scoped, revocable, refreshable service credentials let unattended automation self-recover without ever being Tom. Genuine capability-vs-attack-surface tradeoff.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-270_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-300
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Graceful degradation / store-and-forward (Azure & SRE-school; deferred-settlement pattern); offline-queue resilience
+  Specific risk: Hard-halting on every confirmed-down SECONDARY (delivery) channel trades availability for nothing; the real failure is non-durable/silent residue, not "didn't halt."
+  Summary: Continue-and-queue is the mainstream pattern IF the undeliverable state is durable, replayable, and escalated. Pivot: durable dead-letter + fail-loud vs silent residue.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-300_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-301
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Dark launching / progressive rollout (LaunchDarkly, DevCycle); YAGNI / overproduction waste
+  Specific risk: Over-correcting to "activate now" risks overproduction (output no one consumes) and entrenching an unvalidated design — premature activation of half-fit agents.
+  Summary: Staging-without-activation is a recognized prudent strategy; neither "cost-free" nor "costly to defer" — real-but-small cost, partly offset by option value. Fix = a dated activation trigger.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-301_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-302
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Baseline establishment in anomaly detection (NBAD, CloudWatch, Kentik); continuous-monitoring rationale
+  Specific risk: Skipping quiet days loses the baseline and the ability to detect declining attended-substance or a quiet-but-important change; a "was there substance?" gate is a fragile meta-decision.
+  Summary: Continuous capture earns the right to call a day thin. Fix for echo-extraction = down-weight autonomous-origin items, not gate the run. Both directions have force.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-302_against.md
+```
+
+### 15c dispositions
+```
+DISPOSITION-146:
+  Date: 2026-06-04
+  Item: ASSUMPTION-269
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Strong, convergent support for verify-before-ingest (citation-hallucination risk + write-time gating beating ingest-everything). 15b does not contest the principle — it contests the control's SHAPE (refuse-to-capture vs capture-and-quarantine) and flags that an un-revisited hold queue reproduces the recall loss invisibly. Disagreement is implementation, not validity.
+  Disposition: INCORPORATE (PREMISE-049)
+  Reasoning: Strong support + only operational (weak-moderate) challenge -> INCORPORATE with a caveat folded in. Premise: an unverified cross-tradition lead must never be TREATED AS TRUE (no trusted edge, no narration entry) until a confirmation search promotes it — implemented as provisional quarantine-with-revisit, not silent drop. Consistency-checked vs PREMISE-001..048: reinforces the verify-the-effect / provenance family (esp. PREMISE-045/046); no conflict.
+  Detail: Confidence High. Re-check Quarterly (2026-09-04) via 15d. Caveat (from 15b): the held/quarantined queue needs a revisit/expiry forcing function so "hold" cannot degrade to "flag and forget"; prefer tagged provisional capture over refuse-to-capture to preserve recall in a low-volume corpus. Couples ASSUMPTION-264, PRESUMPTION-302.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+
+DISPOSITION-147:
+  Date: 2026-06-04
+  Item: ASSUMPTION-270
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Two clauses (Rule 7 — surfaced, not blended). Clause 1 "agent must not authenticate as Tom" — SUPPORTED Strong, unchallenged. Clause 2 "therefore a lapsed session is a hard blocker the pipeline cannot self-clear; re-auth attended-only" — challenged Moderate-Strong: standard M2M patterns (client-credentials, refresh tokens, token vaults, workload-identity federation) let unattended automation self-recover WITHOUT being the user. BUT 15a's own least-privilege/excessive-agency literature cautions that any standing refreshable credential on an autonomous agent is added attack surface — so this is a genuine capability-vs-attack-surface tradeoff, not a clean over-claim.
+  Disposition: MONITOR (MONITOR-296)
+  Reasoning: Core boundary is independently strong (could promote on a later cycle); the load-bearing clause is genuinely contested (self-recovery capability vs added attack surface), not an established defect with a costless fix. Err toward MONITOR over REVISE (15c heuristic; the "fix" has a real downside its own supporting literature flags). Priority MEDIUM-HIGH — it caused a real 06-03 hard block and couples the silent-sync-degradation systemic risk.
+  Detail: Cadence Weekly; next 15d 2026-06-07. Priority MEDIUM-HIGH. What would change: recurring lapsed-session blocks (availability cost mounting) -> REVISE toward a sync-scoped, least-privilege, revocable delegated credential so the pipeline self-clears WITHOUT impersonating Tom; OR a decision that attended-only is the accepted safety posture -> INCORPORATE clause 1 explicitly and accept the availability cost. Couples PRESUMPTION-300 (MONITOR-297), ASSUMPTION-263, OPEN-073, SYSTEMIC-RISK 2026-06-04.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-148:
+  Date: 2026-06-04
+  Item: PRESUMPTION-300
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Both converge on the SAME pivot: whether the accumulated undeliverable state is a DURABLE, replayable, visibly-flagged dead-letter (defensible graceful degradation) or silent in-workflow residue no one will replay (the anti-pattern). 15a: confirmed-down = stop/escalate/dead-letter is established. 15b: continue-and-queue is fine IF durable+escalated. The 06-03 behavior ("completed workflow, accumulated undeliverable state") is on the wrong side unless that state is durable and a confirmed-down raises a visible signal.
+  Disposition: MONITOR (MONITOR-297)
+  Reasoning: Conditional on a checkable fact (is the residue durable+replayable+escalated?), unresolved at autonomous run time -> MONITOR (not INCORPORATE: durability unproven; not REVISE: no established defect yet). PRESUMPTION -> extra care. Priority MEDIUM. Member of this run's silent-sync-degradation SYSTEMIC-RISK with ASSUMPTION-270.
+  Detail: Cadence Weekly; next 15d 2026-06-07. Priority MEDIUM. What would change: inspect a sync run's residue — durable+replayable+escalated -> INCORPORATE the graceful-degradation justification (record it); silent/in-memory/unreplayable -> REVISE to add fail-loud escalation + durable dead-letter + auto-drain on recovery. Couples ASSUMPTION-270 (MONITOR-296), OPEN-069/073, SYSTEMIC-RISK 2026-06-04.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-149:
+  Date: 2026-06-04
+  Item: PRESUMPTION-301
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Symmetric partials. 15a: built-but-inert = lean inventory/opportunity-cost waste, so deferral is NOT cost-free. 15b: staging-without-activation is a recognized prudent strategy (dark launch / progressive rollout / YAGNI), and premature activation of half-fit agents on low-substance days is its own waste. Truth in the middle: deferral cost is real but small and partly offset by option value; the presumption's error is the word "cost-free," not the decision to defer.
+  Disposition: MONITOR (MONITOR-298)
+  Reasoning: Genuinely two-sided with a small contested magnitude; no established defect, no clear win from acting now -> MONITOR. PRESUMPTION. Priority LOW-MEDIUM. The actionable lever is converting open-ended deferral into a dated/triggered option.
+  Detail: Cadence Weekly; next 15d 2026-06-07. Priority LOW-MEDIUM. What would change: signs of decay/drift (staged Agents 17-20 / Sunday Synthesis going stale vs the evolved system) -> REVISE toward an activation trigger/date; OR sustained low marginal value -> accept deferral and record it as a deliberate dark-launch hold (INCORPORATE the staging rationale). Couples PRESUMPTION-295, PRESUMPTION-301.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-150:
+  Date: 2026-06-04
+  Item: PRESUMPTION-302
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: The meta-question — are autonomous-day transcripts informative enough to extract from? Both sides have force: 15a (alert-fatigue/signal-to-noise) — firing on a no-substance day risks thin/echo extraction and self-referential inflation; 15b (anomaly-detection baseline) — continuous capture establishes the normal, detects declining substance, and a "was there substance?" gate is a fragile meta-decision. Live instance: this very run dispositions presumptions (300/301/302) extracted on a 2nd no-attended day.
+  Disposition: MONITOR (MONITOR-299)
+  Reasoning: Real, self-referential, and unresolved; the fix proposed by 15b (down-weight autonomous-origin items rather than gate the run) is attractive but unvalidated -> MONITOR over both INCORPORATE and REVISE. PRESUMPTION + epistemic/self-referential -> extra care. Priority MEDIUM.
+  Detail: Cadence Weekly; next 15d 2026-06-07. Priority MEDIUM. What would change: evidence of echo-extraction (autonomous-day items disproportionately producing thin MONITORs that re-reference prior autonomous runs) -> REVISE toward tagging autonomous-origin items at lower epistemic weight and/or a substance threshold; OR autonomous-day items yielding genuinely novel dispositions -> continuous capture vindicated (INCORPORATE always-run + down-weight). Couples OPEN-069/070, PRESUMPTION-291, ASSUMPTION-269 (PREMISE-049).
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+```
+
+**Run 2026-06-04 totals:** 5 items | 1 INCORPORATE (PREMISE-049) | 4 MONITOR (MONITOR-296..299) | 0 REVISE (DISPOSITION-146..150). SYSTEMIC-RISK (High): autonomous-sync silent-degradation cluster (ASSUMPTION-270 + PRESUMPTION-300) — the unattended sync path neither self-clears a lapsed session nor fails loud on a confirmed-down channel; it degrades silently and accumulates undeliverable state. This is the availability twin of the 2026-06-03 "human-memory-as-control" and 2026-06-02 "absence != success/event" clusters. Single coupled remedy: make the sync path self-clearable (sync-scoped revocable delegated credential, not Tom's identity) AND fail-loud (durable dead-letter + visible escalation on confirmed-down + auto-drain on recovery). Consistency check: PREMISE-049 checked vs PREMISE-001..048 — no conflict (reinforces verify-the-effect/provenance family, esp. PREMISE-045/046). No NOVELTY flags — all 5 items mapped cleanly to established literature.

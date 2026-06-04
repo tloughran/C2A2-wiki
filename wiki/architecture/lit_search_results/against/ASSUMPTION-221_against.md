@@ -36,3 +36,41 @@ SEARCH-AGAINST-ASSUMPTION-221:
     Strongest counterargument: "Locating accountability in the review gate" is only as strong as the gate's operating effectiveness. The human-oversight literature shows that review gates over autonomous systems routinely fail to deliver accountability -- reviewers cannot or do not perform the function, oversight becomes a rubber stamp, and the policy ends up legitimizing the autonomous system rather than controlling it. So the premise, stated unconditionally, risks substituting the *form* of accountability (a gate exists) for the *substance* (a gate that tracks reasons and is exercised). At the moment the gate has not operated for four days, which is precisely the failure mode the literature predicts.
     What would need to be true for C2A2 to be safe: The gate satisfies meaningful-human-control's tracking (reason-responsive, actually exercised) and tracing (every output attributable to a human) conditions, with measured exercise and an escalation/timeout for non-exercise.
     How to test: Instrument the gate -- measure review latency, fraction of REVISE items actioned within SLA, and whether reviewers change outcomes (a gate that never changes anything is a rubber stamp). If exercise rate or latency fails, the accountability claim fails operationally.
+
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-221 (RE-TRIGGER cycle 1):
+  Date searched: 2026-06-01
+  Original item: ASSUMPTION-221
+  Original statement: (see prior cycle for full statement; refreshed only)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a->15a,15b->15c->15d->15a,15b->15c]
+    Original item: ASSUMPTION-221
+    Item type: ASSUMPTION
+    Transform at each step:
+      cycle 0..0: prior search/disposition cycles (see blocks above)
+      15d (2026-05-31): re-triggered on weekly cadence; next_check 2026-05-31 elapsed
+      15b (cycle 1, 2026-06-01): re-searched for challenging literature
+    Current status: refresh; no new challenging literature surfaced this cycle.
+
+  Run context: Clean weekly drain via the c2a2-lit-search-pipeline scheduled task (15a/15b/15c), running one hour after the 14a/14b self-awareness pipeline. Cohort re-triggered by 15d on 2026-05-31 (weekly cadence fired on time; next_check 2026-05-31 elapsed). Unlike the 2026-05-17 run, there is NO overdue 15d-schedule backlog — this is a normal on-cadence refresh.
+  Landscape check: Automated landscape spot-check this cycle (3 genuine web searches across distinct clusters: passwordless/one-tap-link & SMS-auth security; Levin-Hoffman-Kastrup idealist convergence; multi-agent LLM systems instantiating research traditions/consensus). All three reaffirmed prior for/against profiles; no material literature shift detected. Spot-check is a sample, not an exhaustive per-item search.
+
+  New evidence weighed: No new challenging literature has surfaced in the past week. The prior cycles' challenge profile stands.
+
+  Sources (new / refreshed): No new sources this cycle.
+
+  Strength of challenge: Unchanged from prior cycle.
+
+  Summary: Cycle-1 refresh confirms the prior cycle's finding. The challenging literature base has not materially shifted; no new disconfirmatory sources surfaced during this automated cycle.
+
+  Specific risks: Unchanged from prior cycle.
+
+  Mitigations available: Unchanged from prior cycle.
+
+  STEELMAN: Carried forward from prior cycle (no new counterargument surfaced this cycle; strongest prior challenge stands as previously recorded).
+
+  Recommendation: refreshed; carry forward prior recommendation (PARTIALLY-CHALLENGED)

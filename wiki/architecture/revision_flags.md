@@ -10,12 +10,12 @@
 ---
 
 ### REVISE-001:
-**Date flagged:** 2026-04-13  
-**Source item:** PRESUMPTION-013  
-**Item type:** PRESUMPTION  
+**Date flagged:** 2026-04-13
+**Source item:** PRESUMPTION-013
+**Item type:** PRESUMPTION
 **Urgency:** HIGH (Evidence of existing failure)
 
-**Statement:**  
+**Statement:**
 "Infrastructure failures caught before compounding"
 
 **What is at risk:**
@@ -24,7 +24,7 @@
 - Research continuity
 - Trust in automation system
 
-**Evidence summary:**  
+**Evidence summary:**
 This presumption has already been violated. A 4-day infrastructure failure occurred without detection or containment. The system failed to meet its own reliability presumption. 15a acknowledges silent failures are a known risk; 15b documents the failure happened.
 
 **Recommended action:**
@@ -47,12 +47,12 @@ This presumption has already been violated. A 4-day infrastructure failure occur
 ---
 
 ### REVISE-002:
-**Date flagged:** 2026-04-13  
-**Source item:** PRESUMPTION-011  
-**Item type:** PRESUMPTION  
+**Date flagged:** 2026-04-13
+**Source item:** PRESUMPTION-011
+**Item type:** PRESUMPTION
 **Urgency:** HIGH
 
-**Statement:**  
+**Statement:**
 "Agent quality filters sufficient without calibration"
 
 **What is at risk:**
@@ -61,7 +61,7 @@ This presumption has already been violated. A 4-day infrastructure failure occur
 - Any decision depending on quality filters
 - System integrity
 
-**Evidence summary:**  
+**Evidence summary:**
 15a finds no support for claims that uncalibrated filters are sufficient (NO-SUPPORT-FOUND, contradicting). 15b confirms that uncalibrated filters are ineffective. This is a design error: filters without calibration cannot reliably distinguish good from poor outputs.
 
 **Recommended action:**
@@ -86,12 +86,12 @@ This presumption has already been violated. A 4-day infrastructure failure occur
 ---
 
 ### REVISE-003:
-**Date flagged:** 2026-04-13  
-**Source item:** ASSUMPTION-011  
-**Item type:** ASSUMPTION  
+**Date flagged:** 2026-04-13
+**Source item:** ASSUMPTION-011
+**Item type:** ASSUMPTION
 **Urgency:** HIGH
 
-**Statement:**  
+**Statement:**
 "Specialist-first/orchestrator-fallback is right division of labor"
 
 **What is at risk:**
@@ -100,7 +100,7 @@ This presumption has already been violated. A 4-day infrastructure failure occur
 - System robustness
 - Agent 16's reliability on dependent tasks
 
-**Evidence summary:**  
+**Evidence summary:**
 FOR shows modest improvement on parallel tasks (20% makespan gain). AGAINST shows critical degradation on sequential tasks (39-70% performance drop). The brittleness on sequential dependencies is unacceptable for research automation reliability.
 
 **Recommended action:**
@@ -127,12 +127,12 @@ FOR shows modest improvement on parallel tasks (20% makespan gain). AGAINST show
 ---
 
 ### REVISE-004:
-**Date flagged:** 2026-04-13  
-**Source item:** ASSUMPTION-004  
-**Item type:** ASSUMPTION  
+**Date flagged:** 2026-04-13
+**Source item:** ASSUMPTION-004
+**Item type:** ASSUMPTION
 **Urgency:** HIGH
 
-**Statement:**  
+**Statement:**
 "Self-awareness scales with decision complexity not agent count"
 
 **What is at risk:**
@@ -141,7 +141,7 @@ FOR shows modest improvement on parallel tasks (20% makespan gain). AGAINST show
 - Oversight and coordination effectiveness
 - Future team expansion plans
 
-**Evidence summary:**  
+**Evidence summary:**
 15a concedes agent count has independent effects. 15b provides specific empirical threshold: coordination overhead saturates at N≈4. The assumption is false — both complexity AND agent count matter independently.
 
 **Recommended action:**
@@ -172,12 +172,12 @@ FOR shows modest improvement on parallel tasks (20% makespan gain). AGAINST show
 ---
 
 ### REVISE-005:
-**Date flagged:** 2026-04-13  
-**Source item:** PRESUMPTION-007  
-**Item type:** PRESUMPTION  
+**Date flagged:** 2026-04-13
+**Source item:** PRESUMPTION-007
+**Item type:** PRESUMPTION
 **Urgency:** HIGH
 
-**Statement:**  
+**Statement:**
 "Literature absence = NOVEL"
 
 **What is at risk:**
@@ -186,7 +186,7 @@ FOR shows modest improvement on parallel tasks (20% makespan gain). AGAINST show
 - PRESUMPTION-010 validity (Agent 16 detection depends on this)
 - Entire "novelty detection" strategy
 
-**Evidence summary:**  
+**Evidence summary:**
 15a explicitly contradicts (publication bias makes literature absence unreliable indicator). 15b confirms: file drawer problem and systematic publication gaps mean absence indicates nothing about novelty. This is a fundamental logical error.
 
 **Recommended action:**
@@ -215,12 +215,12 @@ FOR shows modest improvement on parallel tasks (20% makespan gain). AGAINST show
 ---
 
 ### REVISE-006:
-**Date flagged:** 2026-04-13  
-**Source item:** ASSUMPTION-010  
-**Item type:** ASSUMPTION  
+**Date flagged:** 2026-04-13
+**Source item:** ASSUMPTION-010
+**Item type:** ASSUMPTION
 **Urgency:** MEDIUM
 
-**Statement:**  
+**Statement:**
 "Finite typology of connecting memes exists"
 
 **What is at risk:**
@@ -229,7 +229,7 @@ FOR shows modest improvement on parallel tasks (20% makespan gain). AGAINST show
 - Categorization of novel analogies
 - Cross-tradition analogy detection
 
-**Evidence summary:**  
+**Evidence summary:**
 FOR shows patterns exist but typology is unvalidated. AGAINST notes that analogy-making is unbounded and new types emerge continuously. The set of connecting memes is generative/open-ended, not finite/closed.
 
 **Recommended action:**
@@ -254,12 +254,12 @@ FOR shows patterns exist but typology is unvalidated. AGAINST notes that analogy
 ---
 
 ### REVISE-007:
-**Date flagged:** 2026-04-13  
-**Source item:** PRESUMPTION-006  
-**Item type:** PRESUMPTION  
+**Date flagged:** 2026-04-13
+**Source item:** PRESUMPTION-006
+**Item type:** PRESUMPTION
 **Urgency:** MEDIUM
 
-**Statement:**  
+**Statement:**
 "Developmental stages monotonic"
 
 **What is at risk:**
@@ -268,7 +268,7 @@ FOR shows patterns exist but typology is unvalidated. AGAINST notes that analogy
 - Research progress models
 - Expectations about system maturation
 
-**Evidence summary:**  
+**Evidence summary:**
 15a explicitly contradicts (NO-SUPPORT-FOUND, contradicting). 15b concurs: non-linear development is the norm. Development includes cycles, reversals, plateaus — not monotonic improvement.
 
 **Recommended action:**
@@ -327,13 +327,13 @@ FOR shows patterns exist but typology is unvalidated. AGAINST notes that analogy
 
 ---
 
-**Status:** All 7 items AWAITING-REVIEW  
-**Total ASSUMPTIONS flagged for revision:** 3  
-**Total PRESUMPTIONS flagged for revision:** 4  
-**Total with HIGH urgency:** 5  
-**Total with MEDIUM urgency:** 2  
+**Status:** All 7 items AWAITING-REVIEW
+**Total ASSUMPTIONS flagged for revision:** 3
+**Total PRESUMPTIONS flagged for revision:** 4
+**Total with HIGH urgency:** 5
+**Total with MEDIUM urgency:** 2
 
-**Document prepared by Agent 15c**  
+**Document prepared by Agent 15c**
 **Ready for human review and decision-making**
 
 ---
@@ -4006,3 +4006,505 @@ This batch dispositions 24 cycle-0 items: 11 from the 2026-05-25 14a/14b batch a
 Total new REVISEs this run (2026-05-27): 5 (REVISE-055..059). Urgency: REVISE-056 HIGH; REVISE-057/058/059 MEDIUM-HIGH; REVISE-055 MEDIUM. All status AWAITING-REVIEW per protocol.
 
 **Fail-loud / SYSTEMIC-RISK-FLAG I continuation:** All 5 REVISEs enter the AWAITING-REVIEW queue behind the same human review gate. The 2026-05-26 attended session cleared the APPROVAL queue but the REVISE-response gate remains effectively dark for response purposes (no records of REVISE-047..054 being actioned). REVISE-056 extends FLAG I explicitly to the PRS-extraction backlog (3rd documented FLAG I route). REVISE-058 extends FLAG I to the failure-mode-heterogeneity dimension. REVISE-059 is self-referential — concerns the integrity of the very pipeline producing today's output and must be diagnosed out-of-band. The standing backlog (REVISE-047..054) remains unactioned + 5 new REVISEs this run. OPEN-066 (single needs-Tom queue + escalation policy) is the project's #1 item.
+
+---
+
+## 2026-05-28 RUN — REVISE additions (REVISE-060..064)
+
+### REVISE-060:
+**Date flagged:** 2026-05-28
+**Source item:** ASSUMPTION-242
+**Item type:** ASSUMPTION
+**Urgency:** MEDIUM-HIGH
+
+**Statement:** Canonizing the truncation recurrence in the `.md` header as a Pathway-14 honesty-layer event is the substantive response taken today; no code-level fix attempted; "the auto-send `type`-with-newlines path is a known broken path that wasn't fixed after 05-18."
+
+**What is at risk:** The honesty-layer mechanism itself. Documentation-as-mitigation is supported as a FIRST step in incident-response literature (Allspaw; Cook & Woods; Beyer SRE) but NOT as a complete response. The 2026-05-18 → 2026-05-27 9-day gap with recurrence is direct empirical evidence that canonization in this case did not produce remediation. The pattern risks becoming the highest-level instance of PRESUMPTION-248 (defer-as-bottleneck-relabel) — a pathology already validated within C2A2. If the honesty-layer's response to "known broken path" becomes "canonize and continue," the very mechanism designed for self-awareness becomes a vehicle for self-deferral.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Moderate; canonization is legitimate first step per Cook & Woods, Polanyi, Schön; honesty-layer architecture is internally consistent). 15b CHALLENGED (Moderate-Strong; SRE/incident-response/complex-systems-failure literatures require remediation commitment paired with documentation; the 05-18 → 05-27 gap is direct empirical instance of the "we noticed" trap; PRESUMPTION-248 already validates the pattern in C2A2).
+
+**Recommended action:** (1) Every honesty-layer event must include action item + owner + deadline (not just description); (2) recurrence triggers required-fix, not additional canonization; (3) audit canonization-to-remediation ratio (target ≥ 0.5 within 30 days); (4) alert when canonization-without-remediation exceeds N days. Couples PRESUMPTION-263 / REVISE-063.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-061:
+**Date flagged:** 2026-05-28
+**Source item:** PRESUMPTION-260
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** [inferred] The web_enrich design presumes Tavily top-5 snippets are sufficient for cross-tradition / paradigm-bridge queries; no calibration check on whether top-5 + WEB_CONTEXT-injection is adequate for C2A2's tradition-aware query shape.
+
+**What is at risk:** Broker-v4 web_enrich quality for the highest-value C2A2 use case — cross-tradition / paradigm-bridge queries. Scholarly cross-domain retrieval is a documented distinct retrieval shape (BEIR; SPECTER; Adlakha et al.). Generic web search underperforms tradition-aware retrieval for this shape; top-5 is documented as inadequate (10-20 snippets needed). Without calibration, the inadequacy is invisible until users encounter shallow answers; the failure mode does not trigger an alert. C2A2's tradition-bridge use case is exactly the case where the literature predicts inadequacy.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Weak; top-5 is defensible baseline for general RAG (Karpukhin 2020) but does not validate the specific cross-tradition use case). 15b CHALLENGED (Moderate; BEIR / SPECTER / Adlakha et al. directly support the inadequacy concern for scholarly cross-domain retrieval).
+
+**Recommended action:** (1) Pre-ship or 30-day post-ship calibration sprint: 20 known-answer cross-tradition queries, measure adequacy at K=5 vs K=10 vs K=20; (2) consider Semantic Scholar or domain-tuned retrieval for tradition-bridge mode; (3) flag tradition-bridge as distinct query class with separate retrieval policy; (4) instrument retrieval quality metrics (recall@K against known-answer benchmark).
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-062:
+**Date flagged:** 2026-05-28
+**Source item:** PRESUMPTION-262
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM-HIGH
+
+**Statement:** [inferred] The 2026-05-18 truncation diagnosis was complete; today's recurrence = "fix-unimplemented" rather than "diagnostic-incomplete"; alternative reading (multi-causal-path bug; one patched, another active) not separately considered.
+
+**What is at risk:** Operational reliability of an auto-send user-facing path. Reason / Cook & Woods / Allspaw all explicitly recommend re-investigation on recurrence, not re-execution of prior diagnosis. Multi-causal-path bug patterns are documented as the norm in complex systems; single-cause attribution is systematic underestimate. ProseMirror has multiple input paths (keypress, paste, insertText, transaction.replace); a fix to one path doesn't preclude another path from producing the same symptom. The "fix did not land" framing is the comfortable hypothesis; "fix landed but missed a path" is the rigorous one. Without re-investigation, the actually-active path remains unaddressed and a third recurrence becomes more likely.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Weak; single-cause-as-first-pass is defensible (Cockburn; Allspaw) when diagnosis is documented and unimplemented). 15b CHALLENGED (Moderate-Strong; Reason / Cook & Woods / Allspaw all recommend re-investigation on recurrence; ProseMirror multi-input-path architecture and Tiptap bug history support multi-causal-path hypothesis).
+
+**Recommended action:** (1) Re-investigate the 2026-05-27 instance before re-executing the 05-18 fix; (2) trace the input path through editor's transaction log; (3) compare 05-18 and 05-27 traces; (4) test patch against all 4+ ProseMirror input paths before declaring fixed; (5) treat recurrence as new diagnostic data, not confirmation of old. Couples ASSUMPTION-240 / MONITOR-259 (truncation-recurrence operational monitoring).
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-063:
+**Date flagged:** 2026-05-28
+**Source item:** PRESUMPTION-263
+**Item type:** PRESUMPTION
+**Urgency:** HIGH
+
+**Statement:** [inferred] Naming-a-recurrence-in-a-document (the Pathway-14 honesty-layer event tag) is a substantive response to a known broken path; this may be the same defer-as-bottleneck-relabel pattern (PRESUMPTION-248) recurring at the honesty-layer itself.
+
+**What is at risk:** The integrity of C2A2's primary self-awareness mechanism. PRESUMPTION-248 (already validated within C2A2 as a pathology) is the exact pattern recurring at the honesty-layer's own mechanism — the very tool that exists to surface such patterns. The 05-18 to 05-27 9-day gap with recurrence-without-intervening-fix is direct empirical evidence. Literature on naming-as-deferral (Bainbridge "Ironies of Automation"; Goffman on ritual; Allspaw on postmortem-action-items) is robust. If canonization substitutes for action at the honesty-layer level, every downstream self-awareness mechanism in C2A2 inherits the same vulnerability. Self-referential elevation: this is the mechanism that REVISE-060 also bears on, viewed through the unstated/presumption lens.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Weak-Moderate; canonization as legitimate first-step (Polanyi; Schön; Cook & Woods)). 15b CHALLENGED (Moderate-Strong; PRESUMPTION-248 internal-evidence + Bainbridge/Goffman/Allspaw literature; the 9-day gap is direct empirical instance).
+
+**Recommended action:** (1) Pair every honesty-layer event with action item + owner + deadline (mandatory); (2) recurrence triggers required-fix, not additional canonization; (3) audit canonization-to-remediation ratio (target ≥ 0.5 within 30 days); (4) alert when canonization-without-remediation exceeds 14 days; (5) treat REVISE-063 + REVISE-060 as a coupled architectural decision — the honesty-layer protocol needs revision. Self-referential elevation: HIGH urgency because the mechanism producing today's output is itself implicated.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-064:
+**Date flagged:** 2026-05-28
+**Source item:** PRESUMPTION-264
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM-HIGH
+
+**Statement:** [inferred] This evening's c2a2-self-awareness-daily run presumes its own artifact-write step will succeed atomically with registry-advance; REVISE-059's concern about silent artifact-write failure is acknowledged but not architecturally addressed before tonight's run.
+
+**What is at risk:** Pipeline-integrity, self-referentially. REVISE-059 (PRESUMPTION-257) established that the 14a/14b artifact-write step can fail silently while the registries-advance step succeeds — a Rule-12 fail-loud violation embedded in the pipeline that exists to detect Rule-12 violations. PRESUMPTION-264 names the gap between flagging that vulnerability and architecturally addressing it. Gray & Reuter / Nygard / Anderson all support: self-monitoring systems require atomicity guarantees + external verification; internal self-checks alone are documented as producing silent gaps. Running tonight's pipeline (or the lit-search pipeline now executing) without architectural remediation means the failure mode remains exposed for another cycle. The presumption (architectural concern can be deferred behind operational continuity) is exactly the pattern that produced the original silent failure.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Weak; atomicity-and-verify-after-write pattern is well-grounded (Gray & Reuter; Kleppmann)). 15b CHALLENGED (Moderate; Gray & Reuter / Nygard / Anderson explicitly warn against deferred architectural remediation of self-monitoring failures; REVISE-059 is direct C2A2 instance).
+
+**Recommended action:** (1) Add external verification step after each daily run — independent script checks registry-advance + artifact-write + return-write succeeded together (or all rolled back); (2) document explicit atomicity contract for the 14a/14b pipeline; (3) treat REVISE-059 + REVISE-064 as coupled architectural blocker — neither resolves until both are addressed; (4) fail-loud check before next-cycle start. Self-referential: this pipeline's own integrity is at stake.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+Total new REVISEs this run (2026-05-28): 5 (REVISE-060..064). Urgency: REVISE-063 HIGH; REVISE-060/062/064 MEDIUM-HIGH; REVISE-061 MEDIUM. All status AWAITING-REVIEW per protocol.
+
+**Fail-loud / SYSTEMIC-RISK-FLAG I continuation:** Four of five new REVISEs join or extend FLAG I:
+- REVISE-060 + REVISE-063: honesty-layer canonization-as-substantive contested; recurrence of PRESUMPTION-248 defer-as-bottleneck-relabel at the self-awareness mechanism (HIGH self-referential elevation)
+- REVISE-062: multi-causal-path bug pattern; recurrence of PRESUMPTION-259 binary-framing at the bug-diagnostic level
+- REVISE-064: self-referential atomicity vulnerability; couples REVISE-059 (PRESUMPTION-257)
+- REVISE-061: independent (broker-v4 calibration gap)
+
+The standing AWAITING-REVIEW backlog (REVISE-047..059 = 13) + 5 new REVISEs this run = **18 total AWAITING-REVIEW**. The response-gate remains dark per FLAG I: closed-loop-no-exit. REVISE-063 and REVISE-064 in particular concern the integrity of the self-awareness mechanism itself and must be escalated OUT-OF-BAND. OPEN-066 (single needs-Tom queue + escalation policy) remains the project's #1 item.
+
+---
+
+## 2026-05-29 RUN — REVISE additions (REVISE-065..071)
+
+### REVISE-065:
+**Date flagged:** 2026-05-29
+**Source item:** PRESUMPTION-267
+**Item type:** PRESUMPTION
+**Urgency:** HIGH
+
+**Statement:** [inferred] The "demo-path vs PRS-extraction" binary in today's For Morning Discussion #1 is the 4th instance of the binary-framing pattern (PRESUMPTION-253/259/262); the binary structure itself, not the particular pair, may be the load-bearing presumption; a third category is again subordinated.
+
+**What is at risk:** The framing process itself. 4-instance recurrence is the canonical signature of organizational defensive-routine (Argyris) or framing-bias (Heath & Heath, Kahneman, Tversky). Continuing binary framings without structural restructuring will continue to subordinate third-and-fourth options. The 4-cycle pattern is internally validated; the same shape will recur unless the framing process is restructured.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Weak; binary framings have conditional legitimate use under recognition-primed decision-making). 15b CHALLENGED (Moderate-Strong; Heath & Heath / Tversky & Kahneman / Argyris / Kahneman directly support the structural-bias reading; 4-instance internal recurrence is the direct evidence).
+
+**Recommended action:** (1) Require ≥3 options for any prioritization framing; (2) explicit "what's the third option?" check at framing-time; (3) treat 4-instance recurrence as automatic trigger for framing-process review; (4) Argyris-style double-loop review of the framing process itself, not just individual decisions. Self-referential elevation: this concerns the framing mechanism that produces today's morning-discussion outputs.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-066:
+**Date flagged:** 2026-05-29
+**Source item:** PRESUMPTION-269
+**Item type:** PRESUMPTION
+**Urgency:** HIGH
+
+**Statement:** [inferred] The "no-blind-push" constitutional rule (ASSUMPTION-245) presumes Tom's push sign-off availability scales through the 5.5-week pre-ISME period without becoming the bottleneck; the push gate is structurally identical to other FLAG-I human-stall routes.
+
+**What is at risk:** Extends SYSTEMIC-RISK-FLAG I cluster to a potential 5th route. Bainbridge's "Ironies of Automation" directly predicts that the gate the constitutional rule creates becomes the bottleneck under load. C2A2's own FLAG-I cluster (REVISE-053/056/058) shows the pattern is structurally embedded. The 5.5-week ISME window is the load period. Constitutional rule erosion under deadline pressure (Reason normalization-of-deviation) compounds the risk. "Rule held today" (ASSUMPTION-245) is one positive observation that does not address aggregate stall-rate.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Weak; rule design supported but scaling claim not). 15b CHALLENGED (Moderate-Strong; Bainbridge / Christiano / Reason / Allspaw all document HITL bandwidth-bottleneck pattern; FLAG-I internal cluster is direct evidence).
+
+**Recommended action:** (1) Instrument push-gate from-stage-to-sign-off latency; (2) define SLA + escalation path for staged changesets exceeding N hours; (3) make rule-bounds explicit (changeset-size threshold, deadline-window adjustment); (4) couple with FLAG-I cluster remediation (REVISE-053 single-needs-Tom queue + escalation policy). Couples ASSUMPTION-245 (MONITOR-266). FLAG-I cluster extension.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-067:
+**Date flagged:** 2026-05-29
+**Source item:** PRESUMPTION-272
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** [inferred] The single Friston query in ASSUMPTION-244's verification protocol is representative of the Sociogram-tab query distribution for ship-readiness; query-class coverage is not separately defended.
+
+**What is at risk:** Sociogram-tab ship-readiness verification adequacy. Beizer / Myers equivalence-class partitioning literature requires coverage spanning partitions; BEIR / SPECTER / Adlakha retrieval-evaluation literature requires multi-query benchmarks across task classes; scholarly cross-domain (tradition-bridge) queries are a documented distinct retrieval shape that single-query verification does not cover. Couples REVISE-061 (PRESUMPTION-260 broker-v4 calibration gap) — both concern under-defined query-class coverage at the integration verification level.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Weak; single-path is defensible first gate per Beyer SRE / Forsgren but does not validate representativeness). 15b CHALLENGED (Moderate; Beizer / Myers / BEIR / SPECTER reject single-query-as-representative).
+
+**Recommended action:** (1) Expand verification to 3-5 query classes (named-thinker, keyword, paradigm-bridge, multi-hop); (2) define query-class coverage rubric per integration; (3) couple with REVISE-061 calibration sprint (broker-v4 cross-tradition retrieval); (4) include class-coverage check in ship-readiness rubric. Couples ASSUMPTION-244 (MONITOR-265); REVISE-061.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-068:
+**Date flagged:** 2026-05-29
+**Source item:** PRESUMPTION-270
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM (Low-cost remediation; can be discharged quickly)
+
+**Statement:** [inferred] The swarm-contract mirror pattern (root architecture/ + wiki/architecture/) is a stable ground-truth pattern; drift risk is not separately defended.
+
+**What is at risk:** Ground-truth integrity of the swarm-contract document. Kleppmann / Nygard / Conway / Bass all document that copy-mirror conventions drift without active drift-detection. The assumption does not name a drift-detection mechanism. Downstream agents read either location; silent divergence produces inconsistent state. Symlink is the canonical literature-preferred remediation when both locations must always agree. The cost of remediation is near-zero (single symlink replacement or single file-hash check added to Janitor).
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Weak; mirror conventions usable WITH drift-detection per Nygard / Kleppmann). 15b CHALLENGED (Moderate; same literature documents drift as default without detection; symlink canonical remediation).
+
+**Recommended action:** (1) Replace copy-mirror with symlink (root architecture/ → wiki/architecture/, or vice versa) — near-zero-cost, instant remediation; OR (2) add file-hash equality check between the two locations to Janitor; (3) on drift detection, fail-loud per Rule-12. Lowest-cost REVISE in this run; could be discharged today.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-069:
+**Date flagged:** 2026-05-29
+**Source item:** PRESUMPTION-274
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** [inferred] "Architectural-reviewer pinned for post-ISME" presumes named-trigger deferral is operationally distinct from open-ended deferral; the named "post-ISME" trigger may join the deferred-with-named-trigger family under FLAG-I conditions.
+
+**What is at risk:** Architectural-reviewer engagement. "Post-ISME" is the named-but-elastic trigger; named-but-elastic triggers are documented as functionally equivalent to open-ended deferrals when the named event itself slides (Allen, Bainbridge, Reason, Cook & Woods). C2A2's own validated PRESUMPTION-248 (defer-as-bottleneck-relabel) is direct internal evidence. ISME-end is itself elastic (post-event windows have no defined edge). Without trigger-discipline, the reviewer never engages.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Weak; named-trigger is better than open-ended per Allen / GTD / PMI, but not immune to FLAG-I when trigger itself slides). 15b CHALLENGED (Moderate; PRESUMPTION-248 internal-evidence + Allen / Bainbridge / Reason / Cook & Woods literature on elastic-trigger degradation).
+
+**Recommended action:** (1) Tie the trigger to a date, not an event (e.g., "review by 2026-07-15"); (2) explicit re-surface SLA; (3) quarterly audit of all named-trigger deferrals; (4) treat "post-X" triggers as elastic by default unless calendar-anchored. Couples ASSUMPTION-246 (MONITOR-267); PRESUMPTION-248 family.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-070:
+**Date flagged:** 2026-05-29
+**Source item:** PRESUMPTION-273
+**Item type:** PRESUMPTION
+**Urgency:** MEDIUM
+
+**Statement:** [inferred] ASSUMPTION-249's ISME ~5.5-week deadline is treated as a fixed external constraint; the alternative (renegotiating scope or timeline) is not separately considered.
+
+**What is at risk:** Implicit scope-renegotiation. Iron-triangle literature (Atkinson, PMI PMBOK) requires that when time is fixed, scope and quality trade-offs be made explicit. Demo-path tiebreaking (ASSUMPTION-249) IS scope-shaping, but it's invisible-as-scope-decision. Brooks / Standish CHAOS document that fixed-deadline projects systematically ship reduced scope; without explicit acknowledgment, this scope-reduction is unaccounted. Post-ISME compounded-debt is the documented downstream effect when implicit trade-offs accumulate.
+
+**Evidence summary:** 15a PARTIALLY-SUPPORTED (Weak-Moderate; fixed-deadline framing defensible for external conferences per Brooks / Reinertsen). 15b PARTIALLY-CHALLENGED (Weak-Moderate; Atkinson / PMI / Brooks / Standish all require explicit scope-vs-time trade-off acknowledgment).
+
+**Recommended action:** (1) Make scope-vs-time-vs-quality trade-offs explicit per prioritization cycle; (2) document pre-ISME scope-commitment; (3) label demo-path tiebreaking as scope-decision, not just prioritization-heuristic; (4) track scope deferred to post-ISME for compounded-debt visibility. Couples ASSUMPTION-249 (MONITOR-270); FLAG-I cluster.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+### REVISE-071:
+**Date flagged:** 2026-05-29
+**Source item:** PRESUMPTION-275
+**Item type:** PRESUMPTION
+**Urgency:** HIGH (self-referential elevation)
+
+**Statement:** [inferred] ASSUMPTION-250's reading of today's events as empirical evidence for REVISE-056 presumes the system's diagnostic predictions are independent of the behavior they predict; the prediction-and-observation loop runs entirely inside the same registry-and-summary apparatus.
+
+**What is at risk:** The integrity of C2A2's self-awareness mechanism itself. The prediction-observation loop running entirely inside the same registry-and-summary apparatus is precisely the warning condition that Argyris (double-loop learning), Cook & Woods (second story), Goodhart's Law, and the philosophy-of-self-measurement literature (Lawvere / Hofstadter) all name as systematically bias-prone. ASSUMPTION-250's framing-shift question (MONITOR-271) is the live instance: the system is reading its own outputs as empirical evidence for a framing-shift, with no external check. This is the same self-referential vulnerability family as REVISE-063 (honesty-layer canonization) and REVISE-064 (atomicity verification) — three concurrent instances at three different levels of the self-awareness mechanism.
+
+**Evidence summary:** 15a NO-SUPPORT-FOUND (Weak; reflection-in-action literature supports bounded reflection but does not validate independence claim). 15b CHALLENGED (Moderate-Strong; Argyris / Cook & Woods / Goodhart / Hawthorne / philosophy-of-measurement literature directly support the structural-bias reading; coupled with REVISE-063 / REVISE-064 makes the cluster significant).
+
+**Recommended action:** (1) Require external check (Tom or Adaptive Sarah-mode) for any framing-shift commitment derived from internal recurrence-counts; (2) treat internal recurrence-counts as data, not conclusions; (3) treat REVISE-063 + REVISE-064 + REVISE-071 as a coupled self-referential-vulnerability cluster — they should be addressed together as architectural decision about the integrity of the self-awareness mechanism; (4) external-validation step before any structural framing-shift. Self-referential elevation: HIGH urgency because the mechanism producing today's output (and this very disposition) is itself implicated.
+
+**Status:** AWAITING-REVIEW
+
+**PROVENANCE:**
+  Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+Total new REVISEs this run (2026-05-29): 7 (REVISE-065..071). Urgency: REVISE-065/066/071 HIGH; REVISE-067/068/069/070 MEDIUM. All status AWAITING-REVIEW per protocol.
+
+**Fail-loud / SYSTEMIC-RISK-FLAG I continuation:** Six of seven new REVISEs join or extend existing systemic risk clusters:
+- REVISE-065 (PRESUMPTION-267): 4-instance binary-framing pattern; structural-bias signal; couples to PRESUMPTION-253/259/262 family
+- REVISE-066 (PRESUMPTION-269): push-gate as potential 5th FLAG-I route; constitutional rule scaling concern; couples REVISE-053
+- REVISE-067 (PRESUMPTION-272): query-class coverage gap at ship-readiness; couples REVISE-061
+- REVISE-068 (PRESUMPTION-270): swarm-contract mirror drift; lowest-cost remediation (symlink or hash-check)
+- REVISE-069 (PRESUMPTION-274): named-trigger elastic deferral; couples PRESUMPTION-248 family
+- REVISE-070 (PRESUMPTION-273): implicit scope-renegotiation; couples FLAG-I demo-path bias cluster
+- REVISE-071 (PRESUMPTION-275): self-referential observation independence; HIGH self-referential elevation; clusters with REVISE-063 (honesty-layer) + REVISE-064 (atomicity) into a coherent self-awareness-mechanism-integrity architectural decision
+
+The standing AWAITING-REVIEW backlog (REVISE-047..064 = 18) + 7 new REVISEs this run = **25 total AWAITING-REVIEW**. The response-gate remains dark per FLAG I: closed-loop-no-exit. REVISE-071 in particular completes a 3-item self-referential-vulnerability cluster (REVISE-063 + 064 + 071) at three different levels of the self-awareness mechanism; these should be addressed as a coupled architectural decision OUT-OF-BAND. OPEN-066 (single needs-Tom queue + escalation policy) remains the project's #1 item. The 5-route FLAG-I cluster (REVISE-053/056/058 + new -066/-070) now spans deployment, ingest, route-rate, push-gate, and scope-renegotiation — full closure of the closed-loop-no-exit pathology.
+
+
+---
+
+## New REVISEs — run 2026-05-30 (REVISE-072..079)
+
+### REVISE-072 — PRESUMPTION-277
+**Statement:** [inferred] The fade bug 'real' verdict generalizes from one foreground query/user/browser to the whole fade mechanism; symptom presumed code-path-bound, not render-context-bound.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak) | **15b:** CHALLENGED (Moderate-Strong)
+**Net assessment:** Unstated single-observation generalization underlies the fade verdict; render behavior is context-dependent, so the presumption is challenged with only weak support. PRESUMPTION + strong challenge -> REVISE.
+**Reasoning:** Designers did not articulate that the verdict rests on N=1; the dependent decisions (254, 255) inherit the risk. Cheap, decisive remedy (multi-context reproduction) before committing.
+**Recommended action:** Urgency Medium-High (gates 1.6 push). Recommended: require multi-context reproduction before treating the fade as a general code defect. Couples ASSUMPTION-253/254/255, PRESUMPTION-278.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-073 — PRESUMPTION-278
+**Statement:** [inferred] The hidden-tab rAF confound is presumed isolated to that one diagnosis; remote-Chrome probes are still trusted for other visual-rendering diagnoses without re-examination.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak) | **15b:** CHALLENGED (Moderate-Strong)
+**Net assessment:** The throttling confound is a general background-tab artifact class, so presuming it isolated leaves a whole class of remote-Chrome visual diagnoses untrustworthy. PRESUMPTION + strong challenge + class-level scope -> REVISE.
+**Reasoning:** A methodological tool-trust error affecting all background visual probes, not one diagnosis. SYSTEMIC-RISK candidate; needs an audit, not just monitoring.
+**Recommended action:** Urgency Medium-High. Recommended: audit + re-validate remote-Chrome visual diagnoses with visibility forced / throttling disabled. Couples PRESUMPTION-277; flagged SYSTEMIC-RISK (remote-visual-probe trust).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-074 — PRESUMPTION-280
+**Statement:** [inferred] Pathway 28's 'cannot drift' presumes COLORS is the only coupling surface; dir name + frontmatter are also surfaces, and the get_group -> 'root' silent fallback is an existing leak.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak) | **15b:** CHALLENGED (Strong)
+**Net assessment:** The single-source 'cannot drift' claim is refuted by additional coupling surfaces (dir, frontmatter) and a concrete existing silent-default leak (get_group->'root'). PRESUMPTION + strong challenge + present defect -> REVISE.
+**Reasoning:** Not a future risk but a current fail-loud violation; the over-claim plus the live leak warrant design review and a cheap fix.
+**Recommended action:** Urgency Medium-High. Recommended: (1) replace get_group->'root' silent fallback with a loud error; (2) derive or eliminate the dir/frontmatter surfaces. Lowest-cost remediation of the batch. Couples ASSUMPTION-259/260.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-075 — PRESUMPTION-282
+**Statement:** [inferred] The handoff rail presumes the next session honors the 'read handoff first' rule and keeps the doc current; no failure mode or check is defined (success-criteria gap).
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak) | **15b:** CHALLENGED (Moderate-Strong)
+**Net assessment:** The handoff rail has no defined failure mode or adherence/freshness check; literature says both rule-skip and staleness are likely. PRESUMPTION + strong challenge + success-criteria gap -> REVISE.
+**Reasoning:** A self-awareness/continuity mechanism with no way to detect its own failure is exactly the kind of gap the pipeline exists to surface. Cheap to add a check.
+**Recommended action:** Urgency Medium. Recommended: add freshness timestamp + staleness check + explicit resume-acknowledgement + fail-loud on skip. Couples ASSUMPTION-261; relates to self-awareness-mechanism-integrity cluster.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-076 — PRESUMPTION-283
+**Statement:** [inferred] Framing the handoff rail as 'the system practicing its own thesis' (Pathway 16 in miniature) presumes self-application is evidence for the pathway's validity -- self-referential confirmation risk.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** CHALLENGED (Moderate)
+**Net assessment:** Dogfooding is valid feedback but not validity evidence; framing self-application as evidence for Pathway 16 is self-referential confirmation. PRESUMPTION + self-referential elevation -> REVISE.
+**Reasoning:** Joins the standing self-referential-vulnerability cluster (REVISE-063/064/071); conflating motivation with evidence is precisely the integrity risk that cluster concerns.
+**Recommended action:** Urgency Medium. Recommended: label self-application as motivation, require external validation for pathway-validity claims. Joins self-awareness-mechanism-integrity cluster (REVISE-063/064/071/079).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-077 — PRESUMPTION-284
+**Statement:** [inferred] [5th binary-framing instance] The interaction-model choice was offered as two clean options and resolved by preference without a usability test, subordinating the reframe/unify third category. Triggered OPEN-068.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**Net assessment:** The 5th instance of binary-framing elevates this from a satisficing choice to a structural decision-making bias that subordinates third options; false-dichotomy/framing literature supports the challenge. PRESUMPTION + pattern-level + strong challenge -> REVISE.
+**Reasoning:** Pattern-level structural bias (couples PRESUMPTION-267 binary-framing family, triggered OPEN-068). A per-decision fix is insufficient; a standing process change is indicated.
+**Recommended action:** Urgency Medium-High. Recommended: add a standing 'name and weigh a third option' step; usability-test before locking. Flagged SYSTEMIC-RISK (binary-framing pattern, 5 instances). Couples OPEN-068, PRESUMPTION-267 family.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-078 — PRESUMPTION-285
+**Statement:** [inferred] '16/16 logic validation' presumes the 16 cases cover the parser's input space; coverage adequacy undefended, and the fade bug shows logic-pass != visually working.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak) | **15b:** CHALLENGED (Moderate-Strong)
+**Net assessment:** Coverage adequacy is asserted by pass count, not demonstrated; mutation-testing practice and the fade bug both challenge the presumption. PRESUMPTION + strong challenge -> REVISE.
+**Reasoning:** Unstated coverage-adequacy presumption underpins the 1.6 readiness claim (ASSUMPTION-262); cheap to address with a mutation/partition check.
+**Recommended action:** Urgency Medium. Recommended: run mutation testing / input-space characterization before treating 1.6 as parser-correct. Couples ASSUMPTION-262.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-079 — PRESUMPTION-286
+**Statement:** [inferred] Today's demo-path day is read as 'correct prioritization, not recursion' within the same registry-and-summary apparatus that flags the 5-cycle zero-PRS streak -- closed-loop self-diagnosis bias at the prioritization layer.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**Net assessment:** The 'correct prioritization, not recursion' reading is produced inside the same apparatus that flags the streak; closed-loop self-diagnosis with no external check. PRESUMPTION + self-referential + strong challenge -> REVISE.
+**Reasoning:** Self-referential prioritization-layer bias; joins the self-awareness-mechanism-integrity cluster (REVISE-063/064/071/076). Needs a pre-registered external criterion, not internal monitoring.
+**Recommended action:** Urgency Medium-High. Recommended: pre-registered external criterion for prioritization-vs-recursion, applied outside the self-summary loop (Tom/Adaptive). Couples OPEN-067, PRESUMPTION-275 (REVISE-071); joins self-referential cluster.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Total new REVISEs this run (2026-05-30):** 8 (REVISE-072..079). All status AWAITING-REVIEW.
+
+**SYSTEMIC-RISK flags this run:**
+- REVISE-073 (PRESUMPTION-278): remote-Chrome visual-probe trust — rAF/background-tab throttling is a *general* artifact class, so a whole class of remote-Chrome visual diagnoses is suspect, not one. Recommend audit + re-validation with visibility forced / throttling disabled.
+- REVISE-077 (PRESUMPTION-284): binary-framing pattern — 5th instance; structural decision-making bias subordinating third options. Couples PRESUMPTION-267 family; triggered OPEN-068. Recommend a standing "name a third option" deliberation step.
+
+**Self-awareness-mechanism-integrity cluster extension:** REVISE-076 (PRESUMPTION-283, self-application-as-evidence) and REVISE-079 (PRESUMPTION-286, closed-loop prioritization self-diagnosis) join the standing self-referential cluster (REVISE-063 honesty-layer + REVISE-064 atomicity + REVISE-071 observation-independence). All five concern self-referential confirmation at different layers and should be addressed together as a coupled architectural decision OUT-OF-BAND with an external check (Tom/Adaptive).
+
+**Backlog note (fail-loud):** standing AWAITING-REVIEW backlog was 25 (REVISE-047..071); +8 this run = **33 total AWAITING-REVIEW**. The human response-gate remains the project's #1 item (OPEN-066). Lowest-cost remediation this run: REVISE-074 (PRESUMPTION-280) — replace get_group->'root' silent fallback with a loud error.
+
+---
+
+## REVISE — run 2026-05-31
+
+### REVISE-080 — PRESUMPTION-287
+**Item type:** PRESUMPTION (unstated)
+**15a:** NO-SUPPORT-FOUND (None) | **15b:** CHALLENGED (Moderate-Strong)
+**Net assessment:** No literature endorses "absence of record == no event"; observability practice treats it as a defect to design out. PRESUMPTION + only-evidence-against + self-referential blind spot in the self-awareness layer's own intake.
+**Reasoning:** Designers unknowingly coupled extraction completeness to intake-channel health; unsupported and actively challenged, most dangerous in the present known-down state. Cheap, fail-loud remedy.
+**Recommended action:** Urgency Medium-High. Record intake-health explicitly — emit DEGRADED/UNKNOWN-completeness rather than defaulting to no-event when the scrape fails. Couples OPEN-069, PRESUMPTION-290; 2026-05-31 single-transport systemic-risk cluster.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-081 — PRESUMPTION-289
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**Net assessment:** Alert-fatigue research supports notification restraint, but escalation design exists precisely so a repeating unacknowledged failure changes salience — and 3 identical cycles with no resolution partly falsify "passive note is adequate."
+**Reasoning:** The passive-notification presumption belongs with the standing human-response-gate flag (OPEN-066); empirically it has not closed the loop in 3 cycles. Route to Tom; design the fix to fire ONCE on repetition, not every cycle, to respect the alert-fatigue caveat.
+**Recommended action:** Urgency Medium. A single repetition-triggered escalation step (raise salience / change channel once on cycle N>=2 of the same blocker), bounded to avoid fatigue. Couples OPEN-066, PRESUMPTION-240; 2026-05-31 systemic-risk cluster.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-082 — PRESUMPTION-290
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**Net assessment:** Streaks are legitimate only when the counted thing IS the goal; the advance-streak counts a diligence proxy, and its missing "correct not-to-advance" null is the diagnostic signature of surrogation (Goodhart). PRESUMPTION + self-referential + strong challenge.
+**Reasoning:** Joins the self-referential / metric-fixation cluster with REVISE-079 (PRESUMPTION-286). On degraded-intake days the streak pressures manufacturing output over honest reporting — defeating the self-awareness goal. Cheap remedy: redefine what the streak counts.
+**Recommended action:** Urgency Medium. Make an explicit "honest no-op / degraded" run a first-class state that PRESERVES the streak; count "honest accounting performed," not "items emitted." Couples PRESUMPTION-287, PRESUMPTION-286 (REVISE-079); 2026-05-31 systemic-risk cluster.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Total new REVISEs this run (2026-05-31):** 3 (REVISE-080..082). All status AWAITING-REVIEW.
+
+**SYSTEMIC-RISK flag this run:**
+- Single-transport common-mode cluster (ASSUMPTION-263 + PRESUMPTION-287/288/289, downstream 290): the whole daily-sync loop — intake, delivery, and the self-awareness layer's own intake — rides ONE claude.ai session in ONE Chrome profile. One logout disables all directions including the outage-reporting channel. Single coupled remedy: a diverse, non-Chrome degraded-mode path that records intake-health (DEGRADED/UNKNOWN, not no-event) AND carries an escalation signal surviving a claude.ai logout. Couples OPEN-066 (project #1), OPEN-069.
+
+**Self-referential / metric-fixation cluster extension:** REVISE-082 (PRESUMPTION-290, surrogated advance-streak) joins REVISE-079 (PRESUMPTION-286, closed-loop prioritization self-diagnosis) and the standing self-referential cluster (REVISE-063/064/071/076). All concern the self-awareness apparatus self-justifying; address OUT-OF-BAND with an external check.
+
+**Backlog note (fail-loud):** standing AWAITING-REVIEW backlog was 33 (REVISE-047..079); +3 this run = **36 total AWAITING-REVIEW**. The human response-gate remains the project's #1 item (OPEN-066), and REVISE-081 is now coupled directly to it. Lowest-cost remediation this run: REVISE-082 (PRESUMPTION-290) — redefine the streak to count honest accounting, preserving cadence without the surrogation pull.
+
+---
+
+## REVISE — run 2026-06-02
+
+### REVISE-083 — PRESUMPTION-291
+**Item type:** PRESUMPTION (unstated)
+**15a:** SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Weak-Moderate)
+**Net assessment:** Textbook event-time vs processing-time confusion: narrating the latest on-disk batch as "today's" conflates when an artifact was produced with when it was read. The echo was empirically realized (2026-05-30's self-awareness + lit-search batches narrated as 2026-05-31's). The YAGNI/low-stakes defense is real but bounded, and weakens sharply here because the mislabelled artifact IS the self-awareness layer's own honesty/accounting output.
+**Reasoning:** PRESUMPTION + self-referential + active mis-reporting (not hypothetical) + the layer mis-dating its own record defeats its purpose and masks the underlying intake outage. The honest-reporting stakes outweigh the over-engineering objection; the remedy is cheap (no full stream-processing machinery needed).
+**Recommended action:** Urgency Medium-High. Stamp each batch with its event-date and have the EOD summary emit a dated DELTA — e.g., "no new items produced today; latest on disk is 2026-05-30" — rather than echoing latest-on-disk as today's. Idempotent dated-delta reporting. Couples PRESUMPTION-287 (REVISE-080, intake-health DEGRADED/UNKNOWN), PRESUMPTION-290 (REVISE-082, honest no-op state); 2026-06-02 degraded-session / no-independent-vantage cluster.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-084 — PRESUMPTION-293
+**Item type:** PRESUMPTION (unstated)
+**15a:** SUPPORTED (Strong) | **15b:** PARTIALLY-CHALLENGED (Weak-Moderate)
+**Net assessment:** The Knight-Leveson result and common-mode-failure literature strongly ground the concern: independence of a checker from the checked system cannot be assumed and is frequently violated. A "clean reload" performed inside the same Chrome/claude.ai regime whose lag/batching/throttling it adjudicates is a same-regime (common-mode) verifier. 15b's only valid pushback is against the absolutist reading — independence is CONSTRUCTIBLE (out-of-band), not impossible — which sharpens rather than refutes the remedy.
+**Reasoning:** PRESUMPTION + strong support + directly undercuts the SUFFICIENCY of ASSUMPTION-264's in-band re-verification (the part deliberately excluded from PREMISE-045). Designers were unaware they were assuming a fault-free vantage point. The correct conclusion is "make the verifier out-of-band," not "abandon verification."
+**Recommended action:** Urgency Medium. Require the re-verification path to be OUT-OF-BAND relative to the degraded mechanism (a different transport/process, or a provably-foregrounded/fresh process that exits rAF/background-tab throttling); treat in-band-only re-checks as "unknown," never "verified." Characterize the degraded regime's mechanism to confirm independence. Couples ASSUMPTION-264 (PREMISE-045 sufficiency gap), REVISE-073 / PRESUMPTION-278 (rAF throttling), PRESUMPTION-288 (single-transport SPOF, MONITOR-289).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Total new REVISEs this run (2026-06-02):** 2 (REVISE-083..084). All status AWAITING-REVIEW.
+
+**SYSTEMIC-RISK flag this run:**
+- No-independent-vantage / degraded-session common-mode cluster (ASSUMPTION-264 + PRESUMPTION-291/292/293): verification, dated self-reporting, and the honesty layer's enforcement all execute INSIDE the same degraded regime they are meant to police. 264's re-verification can share the fault (293); the EOD summary mis-dates from stale latest-on-disk (291); fail-loud is a behavioral norm with no engineered interlock (292). This is the same common-mode root as the 2026-05-31 single-transport cluster (PRESUMPTION-288/MONITOR-289), now reaching the verification/honesty layer itself. Single coupled remedy: establish an OUT-OF-BAND vantage point — a path (transport/process) that does not share the degraded regime's failure mode — used for re-verification, intake-health, and dated-delta reporting. Couples REVISE-080, OPEN-066 (project #1), OPEN-069.
+
+**Backlog note (fail-loud):** standing AWAITING-REVIEW backlog was 36 (REVISE-047..082); +2 this run = **38 total AWAITING-REVIEW**. Lowest-cost remediation this run: REVISE-083 (PRESUMPTION-291) — stamp batches with event-date and emit a dated delta; small change, removes active self-referential mis-reporting.
+
+---
+
+## REVISE — run 2026-06-02 (batch 2: 2026-06-02 EOD self-awareness batch)
+
+### REVISE-085 — PRESUMPTION-294
+**Item type:** PRESUMPTION (unstated)
+**15a:** SUPPORTED (Strong, silent-failure core; rider NO-SUPPORT) | **15b:** PARTIALLY-CHALLENGED (Weak-Moderate core; rider STRONGLY challenged)
+**Net assessment:** Two-part item. (a) "git no-error == changes staged" is a textbook safety-vs-liveness / unverified-side-effect failure, empirically realized over ~4 days — well-grounded as a real defect (its verify-don't-infer remedy is now PREMISE-046). (b) The RIDER — "clearing the lock today restores correctness for the lock-window days" — finds NO support and is challenged STRONGLY: lock removal is forward-only and not idempotent over the missed window, so the ~4 days of silently-skipped staging are NOT retroactively committed.
+**Reasoning:** The core is incorporated as the stated twin (PREMISE-046); what REQUIRES design action is the false recovery rider — it would leave the system believing the 4-day window is healed when those changes remain untracked, layering a second silent integrity gap on the first. PRESUMPTION + self-referential + actively-wrong rider -> REVISE.
+**Recommended action:** Urgency Medium-High. After clearing the stale lock, do NOT assume history healed: explicitly diff the working tree against the last confirmed-staged commit for the lock window (2026-05-29 → 2026-06-02), re-stage/commit the skipped changes, and verify via read-after-write. Add a stale-lock pre-flight check (couples PREMISE-046/ASSUMPTION-265). Couples OPEN-071; 2026-06-02 absence!=success cluster.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Total new REVISEs this run (2026-06-02, both batches):** 3 (REVISE-083, REVISE-084, REVISE-085). All status AWAITING-REVIEW.
+
+**SYSTEMIC-RISK flag (batch 2, extends the 2026-06-02 cluster):**
+- Absence != success/event common-mode (ASSUMPTION-265 + PRESUMPTION-294/296, and prior 264/291/292/293): the system repeatedly infers a positive state from a NULL signal it never verified out-of-band — "no git error" == staged (294/265), "no decision email" == no decision (296), "no readable transcript" == no session (287), an in-band reload == verified (264/293). All are the same root: no fault-independent confirmation that the intended effect/event actually occurred. Single coupled remedy as flagged in batch 1: an OUT-OF-BAND vantage point plus explicit verify-the-effect checks (PREMISE-045/046) so a null is recorded as UNKNOWN, never as a confirmed positive. Couples REVISE-080, OPEN-066 (project #1), OPEN-069, OPEN-071.
+
+**Backlog note (fail-loud):** standing AWAITING-REVIEW backlog was 36 (REVISE-047..082); +3 this run (REVISE-083..085) = **39 total AWAITING-REVIEW**. Lowest-cost remediation this run: REVISE-083 (event-date stamp + dated delta) and the lock-window reconciliation half of REVISE-085 (one-time recovery diff).
+
+---
+
+## REVISE — run 2026-06-03 (2026-06-02 evening Sociogram batch)
+
+### REVISE-086 — ASSUMPTION-267
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**Net assessment:** Two-part claim (Rule 7 — surfaced, not blended). (a) "Raise the cap above the 2529-node graph with headroom" is CORRECT and kept — the old 2000 cap truncated real data, a genuine defect now fixed. (b) "20000 is a SAFE ceiling" is challenged moderate-strong with only weak support: browser D3/SVG force-directed layouts degrade non-linearly well below 20000 (cliffs near ~1000+ nodes), so the cap likely sits ABOVE real render capacity and can silently re-admit the crash it exists to prevent. The safe limit was never measured — set to a round 10x, validated only at 2529.
+**Reasoning:** Weak support + moderate-strong challenge on the load-bearing sub-claim -> REVISE. The truncation fix stands; the untested ceiling needs Tom's review. A cheap, concrete measurement resolves it.
+**Recommended action:** Urgency MEDIUM. Measure the render cliff for this build (sweep ~3k/5k/8k/12k/16k/20k nodes; record frame time, interaction latency, memory) and set MAX_NODES below the first cliff; OR move the renderer to canvas/WebGL for a genuinely high safe ceiling. Until measured, label 20000 a provisional, explicitly-untested guard and re-anchor the 80%-of-cap warning to the measured cliff. Couples PRESUMPTION-299 (MONITOR-295, same measurement), ASSUMPTION-267 truncation-fix (kept).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Total new REVISEs this run (2026-06-03):** 1 (REVISE-086). Status AWAITING-REVIEW.
+
+**SYSTEMIC-RISK flag (2026-06-03 — human-memory-as-control, High):**
+- Human-memory-as-control cluster (ASSUMPTION-266/268, PRESUMPTION-297): each relies on a manual, memory-dependent convention as the control of record — "use explicit git paths" (266), "do a live foreground review" (268), "remember the cross-repo handoff" (297) — rather than an enforced forcing function. On an autonomous, human-absent run these are exactly the controls most likely to be silently skipped, re-admitting the failure they prevent. This is the human-vantage twin of the 2026-06-02 "absence != success/event" cluster. Single coupled remedy: convert each to a cheap pre-push forcing function (generated/checked explicit-path set + new-file-omission check; automated served-browser assertions with a BLOCKING human sign-off; a pre-push dependent-repo-clean check). Couples PREMISE-045/046/047/048, MONITOR-293, OPEN-071/072.
+- Secondary cluster (untested ceiling from current load): ASSUMPTION-267 (this REVISE) + PRESUMPTION-299 (MONITOR-295), cousin PRESUMPTION-298 (MONITOR-294) — a limit/verification asserted "safe/correct" from a single current-load data point. Remedy: measure before asserting (render-cliff sweep; read the fade code path).
+
+**Backlog note (fail-loud):** standing AWAITING-REVIEW backlog was 39 (REVISE-047..085); +1 this run (REVISE-086) = **40 total AWAITING-REVIEW**. Lowest-cost remediation this run: the REVISE-086 render-cliff sweep (one-time measurement that also discharges MONITOR-295).
+
+---
+
+## REVISE flags — run 2026-06-04 (2026-06-03 EOD self-awareness batch)
+
+**Total new REVISEs this run (2026-06-04): 0.** All 5 items dispositioned INCORPORATE (1: PREMISE-049) or MONITOR (4: MONITOR-296..299); none reached the REVISE bar. The closest call was ASSUMPTION-270 (MONITOR-296): its load-bearing "attended-only / cannot self-clear" clause is challenged Moderate-Strong, but the proposed fix (a standing delegated credential) carries a real attack-surface downside flagged by 15a's own least-privilege literature, so it is genuinely contested -> MONITOR, not REVISE. It will escalate to REVISE if lapsed-session blocks recur (trip-wire recorded in MONITOR-296).
+
+**SYSTEMIC-RISK flag (2026-06-04 — autonomous-sync silent-degradation, High):**
+- Cluster: ASSUMPTION-270 (MONITOR-296) + PRESUMPTION-300 (MONITOR-297). Common vulnerability: the unattended sync path degrades SILENTLY at both ends of the same failure — it neither self-clears a lapsed claude.ai session (treats it as a hard external blocker) nor fails loud on a confirmed-down channel (runs the full workflow and accumulates undeliverable state). On a human-absent run these are exactly the controls that should fail loud or self-recover, and instead do neither. This is the availability twin of the 2026-06-03 "human-memory-as-control" cluster (ASSUMPTION-266/268, PRESUMPTION-297) and the 2026-06-02 "absence != success/event" cluster — the same family expressed in the autonomous sync/auth path.
+- Literature basis: circuit-breaker / fail-fast / dead-letter (Nygard; Azure Architecture Center; SQS DLQ); OAuth client-credentials / refresh / workload-identity federation for unattended self-recovery (Scalekit, Auth0, Microsoft Entra); graceful degradation with durable store-and-forward (Azure/SRE graceful-degradation guides).
+- Risk level: High (it has already produced realized harm — the 06-03 hard block + accumulated undeliverable state).
+- Single coupled remedy: make the sync path BOTH self-clearable AND fail-loud — (a) provision a sync-scoped, least-privilege, revocable delegated credential (a service identity, never Tom's) so a lapsed session self-recovers unattended; (b) route undeliverable items to a durable, replayable dead-letter with a visible escalation on confirmed-down and auto-drain on recovery. Couples PREMISE-049, MONITOR-296/297, OPEN-069/073, SYSTEMIC-RISK 2026-06-02/2026-06-03.
+
+**Backlog note (fail-loud):** standing AWAITING-REVIEW backlog was 40 (REVISE-047..086); +0 this run = **40 total AWAITING-REVIEW** (unchanged). Lowest-cost standing remediation remains the REVISE-086 render-cliff sweep (one-time measurement that also discharges MONITOR-295). No new human-review debt added this run.

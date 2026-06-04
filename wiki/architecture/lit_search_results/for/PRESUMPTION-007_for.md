@@ -19,9 +19,9 @@ Supporting evidence found: Contradicting evidence
 
 Sources:
   1. Scherer, R. W., Langenberg, P., & Von Elm, E. (2007). "Full Publication of Results Initially Presented in Abstracts." Cochrane Database of Systematic Reviews, MR000005. — Shows publication bias means absence of literature often reflects publishing patterns, not lack of research; absence is NOT safe signal of novelty.
-  
+
   2. Sterling, T. D. (1959). "Publication Decisions and Their Possible Effects on the Visibility of Negative Results." Journal of the American Statistical Association, 54(285), 30-34. — Classic paper showing that absence of evidence (null results) does not equal evidence of absence; literature gaps represent biased publication practices.
-  
+
   3. Ioannidis, J. P. A. (2008). "Why Most Published Research Findings Are False." PLoS Medicine, 2(8), e124. — Demonstrates that literature gaps create blind spots systematically; certain populations, designs, and phenomena are understudied, not absent.
 
 Strength of support: Weak/Contradicting (evidence supports opposite conclusion)

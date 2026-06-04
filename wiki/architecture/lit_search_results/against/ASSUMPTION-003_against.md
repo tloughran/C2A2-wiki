@@ -60,7 +60,7 @@ The assumption that independent FOR/AGAINST search prevents confirmation bias is
 
 **Item:** ASSUMPTION-003
 
-**Strongest counterargument:** 
+**Strongest counterargument:**
 
 Psychological literature on motivated reasoning shows that assigning people to defend a position doesn't make them more objective—it makes them more biased in favor of that position. When Agent 14a searches FOR evidence and Agent 14b searches AGAINST the same claim, each agent will subconsciously interpret ambiguous evidence in their favor, cite supporting studies at higher rates than opposing studies, and develop psychological investment in their assigned position. The literature consistently demonstrates this across political science, legal settings, and medical decision-making. The independent searches won't cancel bias; they'll create two independent but equally motivated biased processes, producing a *false appearance of objectivity* rather than actual objectivity.
 

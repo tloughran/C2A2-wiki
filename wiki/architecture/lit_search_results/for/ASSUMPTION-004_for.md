@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Berger, B. E., Ros, M., & Murphy, G. L. (2021). "Metacognitive Sensitivity: The Key to Calibrating Trust and Optimal Decision Making with AI." PNAS Nexus, 4(5), pgaf133. — Demonstrates metacognitive sensitivity scales with decision complexity; shows that oversight burden depends on decision dimensions rather than number of agents.
-  
+
   2. Sanders, S., Mohanasundaram, K., & Govindan, R. (2023). "Notes on Scalable Oversight Architectures." Medium. — Analyzes scalable oversight showing complexity of oversight grows with decision space dimensionality, not agent count in linear fashion.
-  
+
   3. Ullman, T. D., & Tenenbaum, J. B. (2020). "Cognitive Modeling for Cognitive Science." In C. ChProgress in Cognitive Science. Proceedings of the Cognitive Science Society. — Shows metacognition in complex domains scales with task dimensionality; provides theoretical foundation for complexity-driven scaling.
 
 Strength of support: Moderate

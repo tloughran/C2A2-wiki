@@ -33,11 +33,11 @@ The morning session explored three possible configurations:
 1. **Two collaborating agents per thinker** (A + B in dialogue)
    - Advantage: produces synthesized consensus within the pair
    - Disadvantage: may converge prematurely, reducing plurality; lower cost
-   
+
 2. **Two non-collaborating agents per thinker** (A + B separately)
    - Advantage: independent readings preserve diversity
    - Disadvantage: requires post-hoc reconciliation; may generate purely contradictory output
-   
+
 3. **Three or more agents, with one doubling up** (A, B, C where A appears twice in different roles)
    - Advantage: controlled plurality; one agent serves as baseline for comparison
    - Disadvantage: added complexity; may not scale cleanly to intra-tradition consensus
@@ -87,7 +87,7 @@ The Phase 2a design operationalizes the Thousand Brains principle: redundancy an
 
 ## The April 15 Decision: Full Rollout, Not Pilot
 
-**Date**: 2026-04-15  
+**Date**: 2026-04-15
 **Decision**: Proceed with Phase 2a for **all 11 thinkers simultaneously**, not a pilot cluster of 3 traditions (Hawkins, Friston, Levin).
 
 ### Rationale
@@ -170,6 +170,6 @@ If this cycle produces high-confidence synthesis (human reviewers rarely overrid
 
 ---
 
-*Last updated: 2026-04-15*  
-*Approved by: Tom Karpathy (morning session, April 14)*  
+*Last updated: 2026-04-15*
+*Approved by: Tom Karpathy (morning session, April 14)*
 *Status: APPROVED FOR FULL ROLLOUT*

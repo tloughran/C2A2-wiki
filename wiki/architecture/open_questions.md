@@ -572,3 +572,147 @@ OPEN-066 (candidate -- when ALL human-terminating routes share one bottleneck, h
 - **OPEN-065** -- REVISE-050's SLA + escalation + timeout + oldest-unactioned-age metric remains AWAITING-REVIEW; the gate is now OPEN, so Tom's first opportunity to action this is the next attended session.
 - **OPEN-062 / OPEN-063 / OPEN-064** -- carried, unchanged.
 - **Candidate DECISION-048 (NEW today; not yet numbered):** "The review-page state (verified by direct paste plus verbal confirmation) is the authoritative source-of-truth for proposal-approval values when the Gmail decision-email body disagrees; the email-body misfire condition is a UI/workflow bug to fix on the decision-email-generation side." Surfaces from today's 17:25Z all-PENDING email-vs-25-APPROVE-review-page mismatch (ASSUMPTION-230); the cowork-to-chat summary explicitly tags this as DECISION-048-candidate for tomorrow. Also touches: ASSUMPTION-231 (intent overrides UI categorization) and PRESUMPTION-254 (UI itself is not always reliable; the rule may need to be "stated intent overrides both"). AWAITING-TOM-NUMBERING.
+
+
+## 2026-05-27 status update (Agent 14a/14b -- mixed-shape day: 0 new OPEN; carry status only)
+
+No new numbered OPEN question registered today. Today's epistemic content is concentrated on (a) broker-v4 architectural commitment (a decision-candidate, not an open question) and (b) self-referential pipeline-integrity findings (carry the prior PRESUMPTION-257 line forward and extend it as PRESUMPTION-264 for tonight's specific run).
+
+### Status of carried questions
+
+- **OPEN-067** -- "what does 'sit-down days reliably arrive on roughly a 1-week cadence' actually require?" was engaged in this morning's walk thread but **no design movement reached the registry**; remains UNRESOLVED. The cowork_summary's "For Morning Discussion #2" reports: "The walk question from yesterday is unanswered and the registry shape says it's becoming load-bearing -- ... MONITOR-246/247 (both HIGH-priority), REVISE-053 + REVISE-056 + REVISE-058 all couple to it. Three of today's 5 REVISEs extend FLAG I. The system is asking the same question with increasing weight each cycle." Couples to PRESUMPTION-262 (today's binary-framing recurrence on truncation-diagnosis) and PRESUMPTION-265 (FLAG-I route-count as process-fact vs state-fact).
+- **OPEN-066** -- empirical answer landed 2026-05-26 (sit-down availability is the bottleneck; queue-policy fix is secondary). Today's REVISE-053 remains AWAITING-REVIEW; the queue-policy fix is still wanted. OPEN-066 remains coupled to OPEN-067 but not closed.
+- **OPEN-065** -- REVISE-050's SLA + escalation + timeout/safe-default + oldest-unactioned-age metric -- still AWAITING-REVIEW. The review gate has been OPEN for 2 consecutive days; the attended sessions on 2026-05-26 (proposal queue) and 2026-05-27 (broker design) did not action REVISE-050.
+- **OPEN-064 / OPEN-063 / OPEN-062** -- carried, unchanged.
+
+### Recurring framings worth tracking on the OPEN side (not yet a numbered OPEN, but observed across multiple cycles)
+
+The binary-framing pattern surfaced as PRESUMPTION-253 (2026-05-25, lagging-vs-real-consumption), recurred as PRESUMPTION-259 (2026-05-26, queue-design-vs-sit-down), and recurred again today as PRESUMPTION-262 (2026-05-27, fix-unimplemented-vs-diagnosis-incomplete). **Three instances in 3 cycles.** If this pattern continues to recur, it may warrant a numbered OPEN question of its own ("what is the project's bias toward binary diagnostic framings, and what is the cost of the third-category subordination?"); recording here as a watch item.
+
+
+
+## 2026-05-28 status update (Agent 14a/14b -- 0 new numbered OPEN; carry status only)
+
+No new numbered OPEN question registered today. Today's epistemic content is concentrated on (a) demo-path infrastructure shipping (AI-search shared-module delegation; candidate DECISION-049 first demonstrated instance; ASSUMPTION-243-245), (b) two new scheduled weekly watch agents + swarm contract (ASSUMPTION-246/247), and (c) the 4th-consecutive-cycle FLAG-I recursion empirical reinforcement and the second-order framing-shift candidate (ASSUMPTION-250).
+
+### Status of carried questions
+
+- **OPEN-067** -- "what does 'sit-down days reliably arrive on roughly a 1-week cadence' actually require?" was **not engaged in a fresh 2026-05-28 morning walk Chat entry** (the "where are we" resume went into the Cowork session bce11014 rather than the daily-walk Chat thread; PRESUMPTION-276 surfaces whether this routing fact is itself a session-typing finding rather than a cadence gap). The standing walk-question remains unresolved through a 3rd consecutive cycle. Coupled today to ASSUMPTION-250 (4th FLAG-I cycle), PRESUMPTION-267 (4th binary-framing instance), PRESUMPTION-275 (closed-loop diagnostic-prediction-and-observation).
+- **OPEN-066** -- empirical answer carried; REVISE-053 (queue-design fix) still AWAITING-REVIEW; 3rd consecutive day OPEN-gate with no REVISE action.
+- **OPEN-065** -- REVISE-050's SLA + escalation + timeout/safe-default + oldest-unactioned-age metric still AWAITING-REVIEW. The review gate has been OPEN for 3 consecutive days; today's attended sessions (AI-search wiring, agent registrations, janitor deployment, branch publishing, resume-session orientation, Physics Explorer attempt) did not action REVISE-050.
+- **OPEN-064 / OPEN-063 / OPEN-062** -- carried, unchanged. Standing reminder: c2a2 git-history scrub prep task fires tomorrow at 10 AM (DECISION-047 candidate-extension).
+
+### Recurring framings worth tracking on the OPEN side (carry-forward + extension)
+
+- **The binary-framing pattern is now at 4 instances** (PRESUMPTION-253 lagging-vs-real-consumption; PRESUMPTION-259 queue-design-vs-sit-down; PRESUMPTION-262 fix-unimplemented-vs-diagnostic-incomplete; PRESUMPTION-267 demo-path-vs-PRS-extraction). The 4-instance count is now strong enough to warrant a numbered OPEN question of its own: "what is the project's bias toward binary diagnostic framings, what third category is being subordinated, and what is the structural cost of the recurrence?" -- recording here as a near-promotion watch item rather than a new OPEN, pending one more cycle.
+- **The "candidate DECISIONs accumulating un-numbered" pattern** (3 un-numbered DECISION candidates today; ASSUMPTION-251 + PRESUMPTION-271) -- if not resolved in the next attended session, may warrant a numbered OPEN on whether DECISION-numbering is structurally a FLAG-I human-terminating gate.
+- **The "new-agent deployment in human-bandwidth-constrained system" pattern** (PRESUMPTION-268) -- worth tracking over the next 6 weeks; if the two new watch agents' Week-2+ outputs join the unactioned-output family, that's a structural finding.
+
+
+## 2026-05-29 status update (Agent 14a/14b -- 1 NEW numbered OPEN: OPEN-068; carry status on the rest)
+
+Today's epistemic content is concentrated on Sociogram navigation (increments 1 / 1.5 built and pushed; v1.6 coded but held on a confirmed focus-fade bug), the pinning of Pathway 28 (single-source participant registration), and the locking of the search-lens-vs-checkboxes interaction model. The binary-framing pattern reached its 5th instance today, triggering the promotion the last three runs had deferred.
+
+### NEW OPEN this cycle
+
+- **OPEN-068** -- *What is the project's bias toward binary diagnostic/design framings, what third category is repeatedly subordinated, and what is the structural cost of the recurrence?* **Promoted today at the 5th instance of the binary-framing pattern** (PRESUMPTION-253 lagging-vs-real-consumption; PRESUMPTION-259 queue-design-vs-sit-down; PRESUMPTION-262 fix-unimplemented-vs-diagnostic-incomplete; PRESUMPTION-267 demo-path-vs-PRS-extraction; **PRESUMPTION-284 keep-separate-vs-search-drives-visibility, today**). The prior two runs held promotion "pending one more cycle"; today's interaction-model choice -- two clean options offered, one selected by preference ("leave the current model") without a usability test -- is that cycle. The recurring third category is the *both/neither/reframe* option that the binary structure makes hard to see. Couples to ASSUMPTION-256 and the closed-loop self-diagnosis concern (PRESUMPTION-286).
+
+### Status of carried questions
+
+- **OPEN-067** -- "what does 'sit-down days reliably arrive on roughly a 1-week cadence' actually require?" -- remains UNRESOLVED through a 4th consecutive cycle. Today tilts the FLAG-I question toward "demo-path is the correct attended use" (Tom's walk read), but a concrete REVISE-056 downgrade/commit decision is still owed. Couples to ASSUMPTION-250's lineage and PRESUMPTION-286.
+- **OPEN-066 / OPEN-065 / OPEN-064 / OPEN-063 / OPEN-062** -- carried, unchanged. The review gate has now been OPEN for 4 consecutive days with no REVISE-backlog action.
+
+### Recurring framings worth tracking (carry-forward)
+
+- **The un-numbered DECISION accumulation pattern** is now at **four** candidates (048/049/AI-search-delegation/Sociogram-interaction-model; ASSUMPTION-251 + PRESUMPTION-271). One more cycle without numbering warrants its own numbered OPEN on whether DECISION-numbering is structurally a FLAG-I gate.
+- **The new-agent-deployment-in-bandwidth-constrained-system pattern** (PRESUMPTION-268) -- carried; watch the two new watch agents' Week-2 outputs.
+
+
+## 2026-05-30 status update (Agent 14a/14b -- 1 NEW numbered OPEN: OPEN-069; no attended session, blind intake)
+
+No attended Tom session occurred today; the day's C2A2 activity was autonomous-pipeline only (the c2a2-lit-search-pipeline drained the 2026-05-29 EOD 20-item batch -> 1 INCORPORATE / 11 MONITOR / 8 REVISE; see today's changelog). Critically, the **morning intake scrape failed** (Chrome logged out of claude.ai, 3rd consecutive cycle), so the pipeline ran on a blind intake -- it cannot distinguish a genuinely quiet day from an attended day whose record was lost (PRESUMPTION-287). Today's extraction is therefore a small, honest batch (1 ASSUMPTION + 4 PRESUMPTIONs) drawn from the autonomous-session activity itself, not from any human design discussion.
+
+### NEW OPEN this cycle
+
+- **OPEN-069** -- *Should the self-awareness pipeline distinguish a genuinely quiet day from an intake-channel failure, and treat a blind-intake run as a degraded/failed run (with an explicit no-op or degraded marker) rather than emitting a normal thin artifact?* **Promoted today** because the claude.ai logout outage has now reached the self-awareness layer's own input (the morning scrape that feeds 14a/14b), for a 3rd consecutive cycle. As designed, a blind-intake run is indistinguishable in the artifact from a quiet day, and the cadence-streak metric reads "healthy" throughout (PRESUMPTION-287, PRESUMPTION-290). Couples to OPEN-066 (human-response-gate) and the cadence family (PRESUMPTION-241).
+
+### Status of carried questions
+
+- **OPEN-068** -- (binary-framing-pattern bias) carried; the 2026-05-30 15-pipeline run filed REVISE-077 (PRESUMPTION-284, SYSTEMIC-RISK) as the 5th-instance reinforcement. No attended action today.
+- **OPEN-067** -- "what does 'sit-down days reliably arrive on roughly a 1-week cadence' actually require?" -- remains UNRESOLVED through a 5th consecutive cycle. No attended session today; the concrete REVISE-056 downgrade/commit decision is still owed.
+- **OPEN-066 / OPEN-065 / OPEN-064 / OPEN-063 / OPEN-062** -- carried, unchanged. The review gate has now been OPEN for a 5th consecutive day with no REVISE-backlog action; the AWAITING-REVIEW REVISE backlog stands at **33** (highest on record) after today's 15c run added REVISE-072..079.
+
+### Recurring framings worth tracking (carry-forward)
+
+- **The un-numbered DECISION accumulation pattern** -- unchanged at 4 candidates (no attended session to number them); still a near-promotion watch (ASSUMPTION-251 + PRESUMPTION-271).
+- **The self-awareness-mechanism-integrity cluster** is now **5 items** (REVISE-063/064/071/076/079) per today's 15-pipeline summary; recommended to be addressed OUT-OF-BAND with an external check. PRESUMPTION-287/290 add intake-blindness and streak-metric-fixation to this self-referential family.
+
+---
+
+## 2026-05-31 status update (Agent 14a/14b -- 1 NEW numbered OPEN: OPEN-070; no attended session, blind intake, 4th cycle)
+
+No attended Tom session occurred today; C2A2 activity was autonomous-pipeline only, and the **morning intake scrape failed again** (Chrome logged out of claude.ai, **4th consecutive cycle**). The pipeline therefore ran on a blind intake for a 4th day. Today's extraction is a small, honest, presumption-heavy batch (1 ASSUMPTION + 3 PRESUMPTIONs) drawn from the degraded-session behavior itself. **Headline finding (self-referential):** today's evening cowork-to-chat summary *echoed the prior day's batch as today's* -- it narrated 2026-05-30's self-awareness items (263, 287-290, OPEN-069) and 2026-05-30's lit-search run as "today's accomplishments," when the actual 2026-05-31 activity was the 15-pipeline's disposition of the 263/287-290 batch (-> 2 MONITOR + 3 REVISE, REVISE-080..082) plus this 14a/14b pass. The blind-intake condition has crossed from "can't tell quiet from lost" (OPEN-069) into active mis-reporting (PRESUMPTION-291).
+
+### NEW OPEN this cycle
+
+- **OPEN-070** -- *Should the daily EOD summary / changelog be generated by diffing the registries' dated deltas (what actually advanced on this date) rather than narrated from session memory, so that a degraded or blind-intake run cannot echo a prior day's batch as today's?* **Promoted today** because the 2026-05-31 cowork summary positively mis-attributed 2026-05-30's self-awareness AND lit-search batches as today's output (PRESUMPTION-291). A date-anchored delta check ("show only items whose Date == today") would make the cross-day echo structurally impossible. Couples OPEN-069 (mark blind runs degraded), PRESUMPTION-291/292 (un-caught false positives in the time and delivery dimensions), and ASSUMPTION-264 (don't claim what you can't re-verify -- here applied to the summary's own claims).
+
+### Status of carried questions
+
+- **OPEN-069** -- (mark a blind-intake run degraded/no-op rather than emitting a normal thin artifact) carried, now **2nd consecutive cycle** and reinforced: today's echo is exactly the failure 069 anticipated. No attended action.
+- **OPEN-068** -- (binary-framing-pattern bias) carried; no attended action today.
+- **OPEN-067** -- (~1-week sit-down cadence requirement) carried, **6th consecutive cycle UNRESOLVED**; the REVISE-056 downgrade/commit decision still owed.
+- **OPEN-066 / OPEN-065 / OPEN-064 / OPEN-063 / OPEN-062** -- carried, unchanged. The human review gate is now OPEN for a **6th consecutive day** with no REVISE-backlog action; the AWAITING-REVIEW REVISE backlog stands at **36** (new record) after today's 15c run added REVISE-080..082.
+
+### Recurring framings worth tracking (carry-forward)
+
+- **The un-numbered DECISION accumulation pattern** -- unchanged at 4 candidates (no attended session to number them).
+- **The self-awareness-mechanism-integrity cluster** is now **6 items** (REVISE-063/064/071/076/079 + REVISE-082 from today's 15-pipeline); recommended OUT-OF-BAND external check. PRESUMPTION-291/292/293 add the degraded-session-epistemics family (attribution echo, un-guarded false positives, verifier-shares-the-fault) to this self-referential cluster -- the mechanism is now generating evidence that it cannot reliably audit itself.
+
+OPEN-071:
+  Date raised: 2026-06-02
+  Question: Should the daily-run git phase include a fail-loud pre-flight integrity check (stale-lock detection + post-stage verification that the intended files were actually staged), given that a stale `.git/index.lock` from a 2026-05-29 crashed process silently blocked all staging for ~4 days (2026-05-29 → 2026-06-02) before today's run detected it by accident?
+  Context: ASSUMPTION-265 / PRESUMPTION-294. The daily run's git phase produced no surfaced error during the lock window, so the "today's changes left staged-clean in the working tree" assurances of 2026-05-29..06-01 may have been false. A pre-flight check would convert a silent failure into a loud one (Rule 12).
+  Related decisions: (constitutional no-blind-push rule)
+  Related assumptions: ASSUMPTION-265
+  Related presumptions: PRESUMPTION-294
+  Status: Open — raised today
+
+---
+
+OPEN-072:
+  Date raised: 2026-06-02
+  Question: Should the push/handoff workflow include a cross-repo uncommitted-state check, given that the Sociogram's shipped Day-190 coverage (committed + pushed in the wiki repo, 7d56733) depends on edits that remain UNCOMMITTED in the separate Summa 2026 repo (`_index/Days.md`, `refs/summa_index.json`)? A pushed artifact whose data source lives uncommitted in another repo can silently desynchronize (forgotten commit, or Obsidian reverting `Days.md`) with no error surfaced.
+  Context: PRESUMPTION-297 / ASSUMPTION-266. Surfaced in the evening Sociogram session, which pushed the wiki-repo viz as "goal met" while flagging the enabling Summa-repo edits as uncommitted and entrusting their integrity to a handoff doc and Tom's memory. Same silent-desync family as OPEN-071 (single-repo git pre-flight) but at the cross-repo boundary.
+  Related decisions: (cross-project handoff protocol; constitutional no-blind-push rule)
+  Related assumptions: ASSUMPTION-266
+  Related presumptions: PRESUMPTION-297
+  Status: Open — raised today
+
+---
+
+OPEN-071 (reinforcement note — 2026-06-02 evening): The stale `.git/index.lock` RECURRED the same day. A fresh 0-byte lock created 21:02 UTC (≈2h stale, from a crashed Obsidian git-plugin / prior op) blocked Tom's evening commit attempt with `fatal: Unable to create '.git/index.lock': File exists` — i.e. the morning's headline failure mode re-fired within hours, on an attended commit this time. The evening session diagnosed it (0 bytes, no live git process, HEAD still b67ac1e, nothing staged) and had Tom `rm -f .git/index.lock`; the push then landed (7d56733). This is direct field evidence that OPEN-071's proposed fail-loud pre-flight stale-lock check is warranted — the lock is not a one-off but a recurring hazard in this repo.
+
+---
+
+## 2026-06-03 status update (Agent 14a/14b — 1 NEW numbered OPEN: OPEN-073; 2nd consecutive no-attended day, both-directions sync outage)
+
+No attended Tom session occurred today; C2A2 activity was autonomous-pipeline only — a **second consecutive no-attended day**. The claude.ai sync channel is now confirmed down in **both directions**: the morning Chat→Cowork scrape failed (12:53, `/login?from=logout`) and the evening Cowork→Chat delivery was skipped for the same reason. Today's batch is small and honest (2 ASSUMPTIONs + 3 PRESUMPTIONs) drawn from the genuinely-new 06-03 events: the auto-ingested McGilchrist proposal (PROP-2026-06-03-001; pending queue → 16) and the degraded-channel behavior itself. **Avoided the echo trap (OPEN-070 / PRESUMPTION-291):** today's headline lit finding (the High systemic-risk "human-memory-as-control" cluster) is the **15-pipeline dispositioning yesterday's 06-02 batch** (266/268/297 → PREMISE-047/048, MONITOR-293–295, REVISE-086), NOT new 06-03 architectural substance — it is reported as carried context, not re-extracted as today's.
+
+### NEW OPEN this cycle
+
+- **OPEN-073** — *When a sync/delivery channel is **confirmed** down (not merely quiet), should the dependent pipelines trip a degrade / halt / escalate state, rather than each continuing to generate undeliverable state?* **Promoted today** because the claude.ai outage is now both-directions and two days running, yet the morning scrape and evening delivery each ran to completion and produced artifacts that could not be delivered (PRESUMPTION-300). This sharpens OPEN-069 (mark a *blind-intake* run degraded): 069 is "can't tell quiet from lost"; 073 is "we **know** it's lost and produce anyway." Couples ASSUMPTION-270 (agents won't self-authenticate, so the channel is unrecoverable from inside the pipeline), PRESUMPTION-300, and OPEN-069/070.
+
+### Status of carried questions
+
+- **OPEN-072 / OPEN-071** — (cross-repo uncommitted-state interlock; single-repo git pre-flight stale-lock check) carried from 2026-06-02; no attended action today. Both remain live; today's lit run reinforced them by rating the "human-memory-as-control" cluster (266/268/297) **High systemic-risk** and recommending exactly such forcing functions.
+- **OPEN-070** — (date-anchor the EOD summary by registry delta, not session memory) carried and **honored in practice today**: this run explicitly date-checked the lit finding as a 06-02-batch disposition and refused to narrate it as 06-03 output.
+- **OPEN-069** — (mark a blind-intake run degraded rather than emitting a normal thin artifact) carried, now reinforced a 3rd time; OPEN-073 extends it to the *delivery* side.
+- **OPEN-067** — (~1-week sit-down cadence requirement) carried, **7th consecutive cycle UNRESOLVED**.
+- **OPEN-066 / OPEN-065 / OPEN-064 / OPEN-063 / OPEN-062** — carried, unchanged. The human review gate is now OPEN for a **7th consecutive day**; the AWAITING-REVIEW REVISE backlog stands at **40** after the 06-03 lit run (REVISE-086 added), and the pending-proposal queue is **16** after today's McGilchrist auto-ingest (PRESUMPTION-295 reinforced — intake continues while review does not).
+
+### Recurring framings worth tracking (carry-forward)
+
+- **The un-numbered DECISION accumulation pattern** — unchanged at 4 candidates (no attended session to number them).
+- **Inert governance capability (NEW framing, 2026-06-03):** Agents 17–20 (MacIntyre/Wright/Rohr/Loughran) and the Sunday Tradition Synthesis Day exist as governance docs but will NOT run autonomously until the Master Agent schedule (`agents/12_master_C2A2_agent.md`) is edited — an attended-only action. Surfaced as PRESUMPTION-301 (deferral-of-activation-is-cost-free). Each passing week without the edit is one un-run Sunday synthesis.
+- **The self-awareness-mechanism-integrity cluster** carries; PRESUMPTION-302 (self-awareness value is attendance-independent) adds the meta-question of whether running the full pipeline on a 2nd no-attended day yields the same epistemic foundation as an attended design session.

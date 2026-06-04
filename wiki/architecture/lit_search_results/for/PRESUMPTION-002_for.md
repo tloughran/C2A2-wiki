@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Hawkins, J., Ahmad, S., & Cui, Y. (2017). "A Framework for Intelligence and Cortical Function Based on Grid Cells in the Neocortex." Frontiers in Neural Science, 11, 121. — Establishes Thousand Brains core principles: multiple parallel maps, reference frames, structured learning; demonstrates these are implementable in artificial systems.
-  
+
   2. Ni, K., & Hawkins, J. (2023). "The Thousand Brains Project: A New Paradigm for Sensorimotor Intelligence." arXiv:2412.18354. — Demonstrates that Thousand Brains principles (learning modules, cortical messaging protocol) are transferable to multi-agent AI; shows architectural transfer is feasible.
-  
+
   3. Downing, K. L. (2015). "Intelligence Emerging: Adaptivity and Search in Evolving Neural Networks." MIT Press. — Shows that principles of parallel processing, redundancy, and consensus among multiple learning modules transfer from neuroscience to computational multi-agent systems.
 
 Strength of support: Moderate

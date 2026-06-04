@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Kuhn, T. S. (1962). "The Structure of Scientific Revolutions." University of Chicago Press. — Establishes exemplary problem-solution structures as central to paradigms; foundational for understanding problem-research components.
-  
+
   2. Shan, Y. (2019). "The Methodology of Progress: An Analysis of Scientific Progress in Kuhn's Paradigm Theory." Philosophy Compass, 14(4), e12577. — Explicitly frames scientific progress as requiring problem formulation, solution research, and synthesis of exemplary practices into the paradigm.
-  
+
   3. Cooper, H., & Hedges, L. V. (2009). "Research Synthesis as a Scientific Process." In H. Cooper & L. V. Hedges (Eds.), The Handbook of Research Synthesis and Meta-Analysis. Russell Sage Foundation. — Demonstrates that research synthesis (combining findings) is recognized as distinct scientific phase essential to cumulative knowledge.
 
 Strength of support: Moderate

@@ -43,7 +43,7 @@ The design intent — modeled on Hawkins' cortical column hypothesis — calls f
 - Three agents, each configured with different epistemic stances (e.g. sympathetic/neutral/skeptical, or different temperature settings), produce divergent outputs that can then be reconciled by a tiebreaker pass.
 - This mirrors how cortical columns process the same sensory signal redundantly and vote — the agreement between columns is what constitutes "perception."
 
-Currently: 14 single-agent thinker slots.  
+Currently: 14 single-agent thinker slots.
 Target: 14 × 3 = 42 thinker agent instances per weekly cycle, with a tiebreaker layer.
 
 This is flagged as **Development Priority 1** (see Part 4).
@@ -73,12 +73,12 @@ Each agentic call is a structured instruction embedded in a wiki page under a st
 ```markdown
 ## Agentic Calls
 
-[→ Levin agent]: This page contains evidence relevant to bioelectric memory encoding 
-in non-neural tissue. Review and cross-link to [[Levin thinker node]] and 
+[→ Levin agent]: This page contains evidence relevant to bioelectric memory encoding
+in non-neural tissue. Review and cross-link to [[Levin thinker node]] and
 [[bioelectric_memory]] if they exist; propose a new synthesis page if not.
 
-[→ Friston agent]: The teleological framing here intersects with active inference's 
-treatment of goal-directedness. Consider whether this page warrants a backlink from 
+[→ Friston agent]: The teleological framing here intersects with active inference's
+treatment of goal-directedness. Consider whether this page warrants a backlink from
 [[free_energy_and_goals]].
 ```
 
@@ -112,16 +112,16 @@ Append to `wiki/architecture/metrics/` a brief connectivity snapshot: how many p
 # Role: Orphan Integration and Agentic Call Injection
 # Vault: /Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/wiki/
 
-You are the Sewing Agent for the C2A2 wiki system. Your role is to find pages 
-that are isolated from the knowledge graph and create explicit routing signals 
-that bring them into contact with the thinker agents most likely to benefit from 
+You are the Sewing Agent for the C2A2 wiki system. Your role is to find pages
+that are isolated from the knowledge graph and create explicit routing signals
+that bring them into contact with the thinker agents most likely to benefit from
 their content.
 
 ## Run Protocol
 
 ### Step 1: Build the Backlink Map
-Scan all .md files in the vault. For each file, extract all [[wikilink]] references. 
-Build a dictionary: {page_name: [list of pages that link to it]}. Count backlinks 
+Scan all .md files in the vault. For each file, extract all [[wikilink]] references.
+Build a dictionary: {page_name: [list of pages that link to it]}. Count backlinks
 per page. Identify:
 - ORPHANS: 0 backlinks
 - SPARSE: 1–2 backlinks
@@ -133,13 +133,13 @@ Format: YYYY-MM-DD,orphan_count,sparse_count,connected_count,total_pages
 
 ### Step 2: Prioritise Orphans for This Run
 Select up to 10 orphaned or sparse pages to process this run. Prioritise:
-- Pages in wiki/traditions/ that have no backlinks (thinker content that got 
+- Pages in wiki/traditions/ that have no backlinks (thinker content that got
   disconnected)
 - Pages in wiki/inbox/ that were never promoted
 - Recently created pages (check file modification dates) with no connections yet
 
 ### Step 3: Relevance Mapping
-For each selected page, read the full content. Score it against each of the 14 
+For each selected page, read the full content. Score it against each of the 14
 thinker domain vocabularies:
 Levin (bioelectricity, morphogenesis, goal-directedness, non-neural cognition)
 Friston (free energy, active inference, predictive coding, Markov blankets)
@@ -156,7 +156,7 @@ Wright (evolutionary psychology, religion, cultural evolution, zero-sum)
 Rohr (contemplation, liminal space, Richard Rohr, shadow work)
 Loughran (integrative synthesis, personal reflection, cross-tradition bridges)
 
-Assign a relevance score (0–1) for each thinker. Any score > 0.4 qualifies that 
+Assign a relevance score (0–1) for each thinker. Any score > 0.4 qualifies that
 thinker for an agentic call.
 
 ### Step 4: Write Agentic Calls
@@ -171,18 +171,18 @@ Example format:
 ## Agentic Calls
 *Added by Sewing Agent on YYYY-MM-DD*
 
-[→ Levin agent]: This page discusses pattern formation in slime mould aggregation 
-under nutrient stress. This is directly relevant to [[bioelectric_memory]] and the 
-question of whether stress-induced morphogenetic signals constitute a primitive form 
+[→ Levin agent]: This page discusses pattern formation in slime mould aggregation
+under nutrient stress. This is directly relevant to [[bioelectric_memory]] and the
+question of whether stress-induced morphogenetic signals constitute a primitive form
 of collective decision-making. Review and add a backlink from the Levin thinker node.
 
-[→ Friston agent]: The description of slime mould chemotaxis here maps closely to 
-active inference's treatment of chemotaxis as a form of Bayesian inference about 
-nutrient gradients. Consider whether this page warrants inclusion in the 
+[→ Friston agent]: The description of slime mould chemotaxis here maps closely to
+active inference's treatment of chemotaxis as a form of Bayesian inference about
+nutrient gradients. Consider whether this page warrants inclusion in the
 [[predictive_foraging]] synthesis page.
 
 ### Step 5: Cross-Agent Bridge Notes
-Where two or more thinkers score > 0.5 on the same orphaned page, write a 
+Where two or more thinkers score > 0.5 on the same orphaned page, write a
 bridge note at:
 wiki/synthesis/{thinker1}_{thinker2}_bridge.md (create if not exists, append if exists)
 
@@ -192,7 +192,7 @@ The bridge note should:
 - Suggest a question the wiki does not yet have an answer to
 
 ### Step 6: Final Report
-Write a brief run report to wiki/architecture/sewing_agent_log.md (append, don't 
+Write a brief run report to wiki/architecture/sewing_agent_log.md (append, don't
 overwrite). Include:
 - Date and time of run
 - Pages processed: [list with backlink counts before/after]
@@ -203,14 +203,14 @@ overwrite). Include:
 
 ## Constraints
 - Do NOT delete or overwrite existing content. Only append.
-- Do NOT process pages in wiki/architecture/metrics/ or wiki/review/archive/ — 
+- Do NOT process pages in wiki/architecture/metrics/ or wiki/review/archive/ —
   these are system pages.
-- If a page already has a ## Agentic Calls section, add new calls below any 
+- If a page already has a ## Agentic Calls section, add new calls below any
   existing ones. Do not duplicate calls that are already present and unprocessed.
 - Mark your additions with an italicised datestamp so they can be tracked.
 
 ## Tone
-Write agentic calls in the active, direct voice of a router — not a commentator. 
+Write agentic calls in the active, direct voice of a router — not a commentator.
 The agent reading the call should know immediately what action is expected.
 ```
 
@@ -222,11 +222,11 @@ The agent reading the call should know immediately what action is expected.
 # Sewing Agent — C2A2 Wiki Bootstrap Audit
 # Role: Full Vault Orphan Audit and Initial Agentic Call Seeding
 # Vault: /Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/wiki/
-# This is a ONE-TIME run to establish a baseline connectivity map and seed 
+# This is a ONE-TIME run to establish a baseline connectivity map and seed
 # agentic calls across the entire vault before moving to maintenance schedule.
 
-You are the Sewing Agent performing an initial full audit of the C2A2 wiki. 
-This is not a maintenance run — it is a complete survey. Take the time to do 
+You are the Sewing Agent performing an initial full audit of the C2A2 wiki.
+This is not a maintenance run — it is a complete survey. Take the time to do
 this thoroughly.
 
 ## Bootstrap Protocol
@@ -247,11 +247,11 @@ Then output the connectivity distribution:
 - How many have 10+
 
 Write the initial CSV row to wiki/architecture/metrics/connectivity_log.csv
-(create the file if it does not exist, with header: 
+(create the file if it does not exist, with header:
 date,orphan_count,sparse_count,connected_count,total_pages)
 
 ### Phase 2: Full Orphan Classification
-For ALL orphaned and sparse pages (not just 10 — process all of them), 
+For ALL orphaned and sparse pages (not just 10 — process all of them),
 classify each into one of these categories:
 
 A. THINKER CONTENT: Belongs in a thinker tradition but got disconnected
@@ -269,15 +269,15 @@ Process ALL category A, B, and C pages. For each:
 - Write bridge notes for any page where 2+ thinkers score > 0.5
 
 For category B (inbox residue) pages, also add:
-[→ C2A2 Orchestrator]: This inbox page was never promoted. Review whether it 
+[→ C2A2 Orchestrator]: This inbox page was never promoted. Review whether it
 should be formally processed through the inbox pipeline, archived, or deleted.
 
 ### Phase 4: Synthesis Page Inventory
-List all cross-tradition synthesis pages that SHOULD exist based on the content 
+List all cross-tradition synthesis pages that SHOULD exist based on the content
 in the vault, grouped by thinker pair. For each:
 - State whether the synthesis page already exists
-- If it doesn't, write a stub at wiki/synthesis/{thinker1}_{thinker2}_{topic}.md 
-  with a one-paragraph frame of the intersection and a ## Agentic Calls section 
+- If it doesn't, write a stub at wiki/synthesis/{thinker1}_{thinker2}_{topic}.md
+  with a one-paragraph frame of the intersection and a ## Agentic Calls section
   seeding both thinker agents to develop it
 
 ### Phase 5: Bootstrap Report
@@ -291,16 +291,16 @@ Include:
 - List of all bridge notes and synthesis stubs created
 - Top 10 "highest potential" orphaned pages (most relevant to multiple thinkers)
 - Recommended actions for Tom beyond what the agent can do automatically
-- Assessment of overall vault health: is the knowledge graph sufficiently 
+- Assessment of overall vault health: is the knowledge graph sufficiently
   connected to support meaningful thinker agent synthesis?
 
 ## Constraints
-Same as maintenance run — append only, no overwrites, mark all additions with 
-datestamp. For this bootstrap run, document EVERYTHING. This is the baseline 
+Same as maintenance run — append only, no overwrites, mark all additions with
+datestamp. For this bootstrap run, document EVERYTHING. This is the baseline
 against which all future maintenance runs will be measured.
 
 ## Time Budget
-This run may take longer than a standard maintenance run. That is expected and 
+This run may take longer than a standard maintenance run. That is expected and
 acceptable. Thoroughness is the priority.
 ```
 

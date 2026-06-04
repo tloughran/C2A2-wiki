@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Gentner, D., & Markman, A. B. (1997). "Structure Mapping in Analogy and Similarity." American Psychologist, 52(1), 45-56. — Foundational structure-mapping theory showing deep structural analogies are more reliable than surface similarity; provides framework for judging genuineness of connections.
-  
+
   2. Ross, B. H. (1984). "Remindings and Their Effects in Learning a Cognitive Skill." Cognitive Psychology, 16(3), 371-416. — Shows that surface similarity is often misleading (high false positive rate) while relational similarity is more reliable; surface associations < genuine connections.
-  
+
   3. Heit, E., & Rubinstein, J. (1994). "Similarity and Property Effects in Inductive Reasoning." Journal of Experimental Psychology: Learning, Memory, and Cognition, 20(3), 411-422. — Demonstrates that systematic structural correspondence (not just attribute overlap) predicts successful transfer and genuine relational similarity.
 
 Strength of support: Moderate

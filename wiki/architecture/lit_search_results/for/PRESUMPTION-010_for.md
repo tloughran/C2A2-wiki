@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Drozd, S., & Inan, O. (2023). "Website Change Detection 101: Monitor Any Page." UptimeRobot Knowledge Hub. — Demonstrates that automated web change detection is technically feasible; tools achieve >95% detection accuracy on structural changes.
-  
+
   2. Moon, J., & Scofield, T. (2026). "Automated Website Change Detection with Scheduled Screenshots." Medium. — Shows that reliable detection requires careful threshold tuning; false positive rates 5-15% depending on content volatility.
-  
+
   3. Heil, S., & Gaedke, M. (2008). "Fast Incremental Crawling and Focused Downloading of Web Resources." In Proceedings of the International Conference on Web Intelligence and Intelligent Agent Technology. IEEE. — Discusses reliability factors: detection works well for discrete changes (new publications, price changes) but struggles with continuous updates, dynamic content.
 
 Strength of support: Moderate

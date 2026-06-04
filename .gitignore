@@ -2,9 +2,14 @@
 .DS_Store
 
 # Obsidian — personal workspace state (content files are still tracked)
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/graph.json
+# Anchored with **/ so nested vaults (e.g. wiki/.obsidian/) are covered too
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json
+**/.obsidian/graph.json
+
+# FUSE mount artifacts (appear when files are open/edited over the mount)
+.fuse_hidden*
+**/.fuse_hidden*
 
 # Nested projects (have their own repos)
 claude-mem/
@@ -44,6 +49,15 @@ scratch/
 # Private — quarantined files that should never be in the public repo
 .private/
 
+# Per-thread session handoff docs (local-only resume pointers; see CLAUDE.md)
+handoffs/
+
+# Generated agent output dirs — regenerated on schedule, not source (see CLAUDE.md)
+# Scripts live in scripts/ and ARE tracked; only the generated findings/state/briefs are ignored.
+janitor/
+reviewer-review/
+wiki/review/.stale_review_pages/
+
 # Logs
 *.log
 
@@ -64,3 +78,6 @@ wiki/inbox/hoffman_levin_transcript_raw.md
 
 # Names private individuals — keep out of public repo
 Archbishop_Wokorach_Visit_Report_April2026.md
+
+# PETER subsystem — kept local-only for now (in-vault for Obsidian/agents, not published). Tom's call 2026-06-04.
+wiki/PETER/

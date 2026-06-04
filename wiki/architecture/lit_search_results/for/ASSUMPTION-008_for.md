@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Ghosh, A., McAfee, R. P., & Papakonstantinou, P. (2017). "Robust Voting Mechanisms Designed for Consensus Dynamics." ACM SIGecom Exchanges, 15(2), 45-58. — Analyzes voting thresholds; shows 2/3 threshold balances convergence speed with robustness in three-agent systems.
-  
+
   2. Heider, F. (1946). "Attitudes and Cognitive Organization." Journal of Psychology, 21, 107-112. — Classic balance theory showing cognitive systems naturally prefer 2/3 majority as meaningful signal of consensus vs. ambiguity/dissent.
-  
+
   3. Grofman, B., Owen, G., & Feld, S. L. (1983). "Thirteen Theorems in Search of the Truth." Theory and Decision, 15(3), 261-278. — Mathematical analysis showing 2/3 threshold is near-optimal for balancing sensitivity (catching real disagreement) and specificity (avoiding false positive consensus).
 
 Strength of support: Moderate

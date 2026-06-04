@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Lakatos, I. (1978). "The Methodology of Scientific Research Programmes." In J. Worrall & G. Currie (Eds.), Philosophical Papers (Vol. 1). Cambridge University Press. — Foundational work establishing research programmes as coherent units with hard cores and protective belts; directly supports tradition as unit of analysis.
-  
+
   2. Kuhn, T. S. (1962). "The Structure of Scientific Revolutions." University of Chicago Press. — Classic theory of paradigm as organizing framework for research, establishing precedent for tradition/paradigm as basic analytical unit in philosophy of science.
-  
+
   3. Laudan, L. (1977). "Progress and Its Problems: Towards a Theory of Scientific Growth." University of California Press. — Extended Lakatos framework beyond research programmes; demonstrates tradition as robust unit across multiple philosophical approaches.
 
 Strength of support: Strong

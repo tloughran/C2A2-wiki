@@ -2,7 +2,7 @@ SEARCH-AGAINST-ASSUMPTION-014:
   Date searched: 2026-04-13
   Original item: ASSUMPTION-014
   Original statement: "The INCORPORATE/MONITOR/REVISE disposition framework is the right decision structure for closing the self-awareness loop."
-  
+
   PROVENANCE:
     Origin: 14a
     Chain: [14a → 15b]
@@ -14,20 +14,20 @@ SEARCH-AGAINST-ASSUMPTION-014:
     Current status: PARTIALLY-CHALLENGED
 
   Challenging evidence found: Yes
-  
+
   Sources:
     1. WHO EMRO, 2010. "Triage systems: a review of the literature with reference to Saudi Arabia." — Five-level triage systems demonstrated improved discriminatory power over three-tiered systems, with significantly lower over-triage and under-triage rates.
     2. Frontiers in Disaster and Emergency Medicine, 2023. Research comparing five-level vs. three-level systems in tertiary EDs. — Five-level triage systems more effective than three-level. Over-triage and under-triage with three-category systems result in inappropriate resource allocation.
     3. MDPI Information, 2023. Multi-Criteria Decision Analysis (MCDA) literature. — Systematic evaluation frameworks employ 5-6 orthogonal criteria with weighted aggregation. Single-dimensional collapse (three categories) loses trade-off information.
-    
+
   Strength of challenge: Moderate
-  
+
   Summary: Multiple domains (emergency medicine, decision science) demonstrate that three-category frameworks consistently fail to handle boundary cases and nuanced distinctions. In medical triage, five-level systems significantly outperform three-level systems. MCDA literature shows that adequate evaluation requires multi-dimensional weighting rather than flat categorization. The challenge is not that three categories fail entirely, but that they are demonstrably suboptimal for complex evaluation contexts.
-  
+
   Specific risks: Assumptions that don't fit cleanly into INCORPORATE/MONITOR/REVISE get forced into inappropriate categories. False confidence that categorization has been exhaustive. Missing atypical items requiring contingent or hybrid strategies (e.g., monitor-then-revise-if-condition-X).
-  
+
   Mitigations available: Expand to 5-category framework. Use weighted multi-criteria approach. Explicitly track boundary cases.
-  
+
   Recommendation: PARTIALLY-CHALLENGED
 
   STEELMAN:

@@ -2,7 +2,7 @@ SEARCH-AGAINST-PRESUMPTION-016:
   Date searched: 2026-04-13
   Original item: PRESUMPTION-016
   Original statement: "Single-day literature search is sufficient for reliable dispositioning."
-  
+
   PROVENANCE:
     Origin: 14b
     Chain: [14b → 15b]
@@ -14,21 +14,21 @@ SEARCH-AGAINST-PRESUMPTION-016:
     Current status: PARTIALLY-CHALLENGED
 
   Challenging evidence found: Yes
-  
+
   Sources:
     1. ScienceDirect, 2023. "Systematic review search strategies are poorly reported and not reproducible." — Only 4.9% of database searches in systematic reviews reported all six key PRISMA-S items. Just 10.4% of searches could be reproduced within 10% of original result count.
     2. PMC, 2024. "Rapid reviews methods series: Guidance on literature search." — Rapid reviews deliberately trade off rigor for speed, with explicit acknowledgment that trade-offs increase risk of missing evidence.
     3. PMC, 2013. "Expediting systematic reviews: methods and implications of rapid reviews." — Even "expedited" systematic reviews require multi-day or multi-week search phases across multiple databases with documentation and refinement.
     4. ScienceDirect, 2024. "How to search for literature in systematic reviews and meta-analyses." — Standard search process includes database selection (multiple), strategy development (iterative), pilot testing, refinement, documentation — spanning multiple days.
-    
+
   Strength of challenge: Moderate-Strong
-  
+
   Summary: Systematic review methodology standards explicitly require multi-day search processes across multiple databases with iterative refinement and full strategy documentation. A single-day search cannot meet these standards and will reliably miss evidence, particularly evidence that contradicts initial hypotheses. Rapid reviews acknowledge they sacrifice reproducibility and completeness for speed. The research is unambiguous: reproducible literature evaluation requires 3+ days minimum.
-  
+
   Specific risks: Contradictory evidence systematically under-represented. False comprehensiveness. Missed negative results. Non-reproducibility — second search may yield different results.
-  
+
   Mitigations available: Extend to minimum 3 days across multiple databases. Use PRISMA-S documentation. Conduct second-pass search. Pre-register search strategy. Report explicitly as "rapid review" with known limitations.
-  
+
   Recommendation: PARTIALLY-CHALLENGED
 
   STEELMAN:

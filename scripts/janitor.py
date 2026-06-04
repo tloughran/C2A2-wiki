@@ -1,0 +1,631 @@
+#!/usr/bin/env python3
+"""
+janitor.py — Weekly polish-and-surface pass over the C2A2 wiki vault.
+
+Catches imperfections in a working system (broken wikilinks, sync drift,
+stale WIP, undated nodes, etc.), auto-fixes a tiny safelist of safe categories
+(trailing whitespace, .DS_Store), and reports everything else to a markdown
+findings file for triage. Designed to fold into morning-system-health.
+
+Design rules:
+  - Baseline-then-deltas: first run snapshots all findings as accepted noise;
+    subsequent weeks flag only deltas.
+  - Auto-fix is whitelisted explicitly. Categories promote one at a time after
+    clean runs. Any destructive category is permanently notify-only.
+  - Sewing-agent owns orphan/sparse detection (wiki/architecture/metrics/
+    connectivity_log.csv) — janitor does not duplicate it.
+
+Usage:
+    python3 janitor.py                    # run with current state
+    python3 janitor.py --baseline         # force a fresh baseline snapshot
+    python3 janitor.py --dry-run          # report only; skip auto-fix writes
+    python3 janitor.py --promote <check>  # promote a check to auto-fix safelist
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import re
+import subprocess
+import sys
+from collections import defaultdict
+from datetime import datetime, timezone
+from pathlib import Path
+
+# --- Configuration -----------------------------------------------------------
+# Paths auto-detect between the real Mac filesystem and the sandbox mount, so
+# the same script runs from both the scheduled task (Mac paths) and dry-runs
+# inside a Cowork session (sandbox mounts).
+
+_MAC_ROOT     = Path("/Users/tomloughran/Documents/Claude/Projects")
+
+def _detect_sandbox_root() -> Path:
+    # Auto-detect the live Cowork session mount instead of hardcoding a session
+    # id (which goes stale every new session). Pick the mount that actually
+    # contains this project.
+    if Path("/sessions").exists():
+        for mnt in sorted(Path("/sessions").glob("*/mnt")):
+            if (mnt / "RC Karpathy Wiki Project").exists():
+                return mnt
+    return _MAC_ROOT
+
+_SANDBOX_ROOT = _detect_sandbox_root()
+_ROOT = _MAC_ROOT if _MAC_ROOT.exists() else _SANDBOX_ROOT
+
+PROJECT_ROOT = _ROOT / "RC Karpathy Wiki Project"
+VAULT_DIR    = PROJECT_ROOT / "wiki"
+SUMMA_SRC    = _ROOT / "Summa 2026 in a Year" / "vault"
+SUMMA_PUB    = VAULT_DIR / "vault"
+JANITOR_DIR  = PROJECT_ROOT / "janitor"
+STATE_PATH   = JANITOR_DIR / "state.json"
+FINDINGS_MD  = JANITOR_DIR / "findings.md"
+
+# Auto-fix safelist (severity=safe). New categories MUST start as report-only
+# and be promoted via --promote after at least one clean run.
+DEFAULT_AUTO_FIX = {"trailing_whitespace", "ds_store"}
+
+# Any check that deletes content is destructive — permanent notify-only.
+DESTRUCTIVE_CHECKS = {"empty_section", "dead_end_wikilink"}
+
+# How old (days) an uncommitted file must be to count as "stale WIP".
+WIP_STALE_DAYS = 14
+
+# Files / dirs to skip when walking the vault.
+SKIP_DIRS = {".git", ".obsidian", "__pycache__", "node_modules", ".trash"}
+SKIP_FILE_GLOBS = {"_fs_probe_test.tmp"}
+
+WIKILINK_RE = re.compile(r"\[\[([^\]\|#]+)(?:[#|][^\]]*)?\]\]")
+H1_RE       = re.compile(r"^\#\s+(.+)$", re.MULTILINE)
+
+
+# --- Utilities ---------------------------------------------------------------
+
+def now_iso() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+def load_state() -> dict:
+    if STATE_PATH.exists():
+        return json.loads(STATE_PATH.read_text())
+    return {
+        "version": 1,
+        "first_run_at": None,
+        "last_run_at": None,
+        "last_read_at": None,
+        "baseline_ids": [],
+        "auto_fix_promoted": sorted(DEFAULT_AUTO_FIX),
+        "fix_history": [],
+        "run_counter": 0,
+    }
+
+
+def save_state(state: dict) -> None:
+    JANITOR_DIR.mkdir(parents=True, exist_ok=True)
+    STATE_PATH.write_text(json.dumps(state, indent=2, sort_keys=True))
+
+
+def walk_md(root: Path):
+    for dirpath, dirnames, filenames in os.walk(root):
+        dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
+        for fn in filenames:
+            if fn in SKIP_FILE_GLOBS:
+                continue
+            if fn.endswith(".md"):
+                yield Path(dirpath) / fn
+
+
+def rel(p: Path) -> str:
+    try:
+        return str(p.relative_to(PROJECT_ROOT))
+    except ValueError:
+        return str(p)
+
+
+# --- Finding type ------------------------------------------------------------
+
+class Finding:
+    __slots__ = ("check", "scope", "detail", "severity", "note")
+
+    def __init__(self, check: str, scope: str, detail: str,
+                 severity: str = "info", note: str = ""):
+        self.check = check
+        self.scope = scope
+        self.detail = detail
+        self.severity = severity
+        self.note = note
+
+    @property
+    def fid(self) -> str:
+        return f"{self.check}::{self.scope}::{self.detail}"
+
+    def to_dict(self) -> dict:
+        return {
+            "check": self.check, "scope": self.scope, "detail": self.detail,
+            "severity": self.severity, "note": self.note, "fid": self.fid,
+        }
+
+
+# --- Checks: auto-fix safelist ----------------------------------------------
+
+def check_trailing_whitespace(apply_fix: bool):
+    """Trim trailing whitespace from .md files in the vault."""
+    findings, fixes = [], []
+    for path in walk_md(VAULT_DIR):
+        try:
+            text = path.read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
+            continue
+        new_lines, touched = [], False
+        for line in text.splitlines(keepends=False):
+            stripped = line.rstrip()
+            if stripped != line:
+                touched = True
+            new_lines.append(stripped)
+        if touched:
+            findings.append(Finding(
+                "trailing_whitespace", rel(path),
+                "trailing whitespace on one or more lines", "safe",
+            ))
+            if apply_fix:
+                new_text = "\n".join(new_lines)
+                if text.endswith("\n"):
+                    new_text += "\n"
+                path.write_text(new_text, encoding="utf-8")
+                fixes.append((path, "trimmed"))
+    return findings, fixes
+
+
+def check_ds_store(apply_fix: bool):
+    """Remove stray .DS_Store files anywhere under the vault."""
+    findings, fixes = [], []
+    for dirpath, _dirnames, filenames in os.walk(VAULT_DIR):
+        for fn in filenames:
+            if fn == ".DS_Store":
+                p = Path(dirpath) / fn
+                findings.append(Finding(
+                    "ds_store", rel(p), "stray .DS_Store", "safe",
+                ))
+                if apply_fix:
+                    try:
+                        p.unlink()
+                        fixes.append((p, "deleted"))
+                    except OSError as e:
+                        fixes.append((p, f"unlink-failed:{e}"))
+    return findings, fixes
+
+
+# --- Checks: report-only -----------------------------------------------------
+
+def check_reindexer_freshness():
+    """
+    Synthesis files for Days that aren't yet marked available=true in
+    refs/summa_index.json. Surfaces "Day-NNN written but reindexer hasn't run."
+    """
+    findings = []
+    syn_dir = SUMMA_SRC / "synthesis"
+    idx_path = SUMMA_SRC / "refs" / "summa_index.json"
+    if not syn_dir.exists() or not idx_path.exists():
+        return findings
+    try:
+        idx = json.loads(idx_path.read_text())
+    except (OSError, json.JSONDecodeError) as e:
+        findings.append(Finding(
+            "reindexer_freshness", rel(idx_path), f"index unreadable: {e}", "warn"
+        ))
+        return findings
+    available_days = set()
+    for entry in idx:
+        if entry.get("available") and entry.get("day") is not None:
+            available_days.add(int(entry["day"]))
+    day_pat = re.compile(r"^Day-(\d{3})")
+    syn_days = set()
+    for p in syn_dir.glob("Day-*.md"):
+        m = day_pat.match(p.name)
+        if m:
+            syn_days.add(int(m.group(1)))
+    missing = sorted(syn_days - available_days)
+    for d in missing:
+        findings.append(Finding(
+            "reindexer_freshness", "Summa 2026 in a Year/vault/refs/summa_index.json",
+            f"Day-{d:03d} synthesis exists but not in index", "warn",
+            note="run scripts/reindex_vault.py",
+        ))
+    return findings
+
+
+def check_src_pub_refs_sync():
+    """Files in source vault's refs/ that aren't in the published wiki/vault/refs/."""
+    findings = []
+    src = SUMMA_SRC / "refs"
+    pub = SUMMA_PUB / "refs"
+    if not src.exists() or not pub.exists():
+        return findings
+    src_files = {p.name for p in src.iterdir() if p.is_file()}
+    pub_files = {p.name for p in pub.iterdir() if p.is_file()}
+    for fn in sorted(src_files - pub_files):
+        findings.append(Finding(
+            "src_pub_refs_drift", "wiki/vault/refs/",
+            f"missing {fn} (present in SRC)", "warn",
+            note="sync_vault.sh only rsyncs transcripts/+synthesis/",
+        ))
+    return findings
+
+
+def check_stale_wip():
+    """Uncommitted files in the project older than WIP_STALE_DAYS."""
+    findings = []
+    try:
+        out = subprocess.run(
+            ["git", "-C", str(PROJECT_ROOT), "status", "--porcelain=v1"],
+            capture_output=True, text=True, check=True, timeout=20,
+        ).stdout
+    except (subprocess.CalledProcessError, subprocess.TimeoutExpired,
+            FileNotFoundError):
+        return findings
+    now = datetime.now().timestamp()
+    cutoff = WIP_STALE_DAYS * 86400
+    seen = set()
+    for line in out.splitlines():
+        # porcelain v1: XY <path>  ; deletions / renames have different shape
+        if len(line) < 4:
+            continue
+        path_part = line[3:].split(" -> ")[-1].strip().strip('"')
+        if path_part in seen:
+            continue
+        seen.add(path_part)
+        fp = PROJECT_ROOT / path_part
+        if not fp.exists():
+            continue
+        try:
+            age = now - fp.stat().st_mtime
+        except OSError:
+            continue
+        if age > cutoff:
+            days = int(age / 86400)
+            findings.append(Finding(
+                "stale_wip", path_part,
+                f"uncommitted, mtime {days}d old", "info",
+            ))
+    return findings
+
+
+def check_undated_refs_nodes():
+    """Summa refs/* synthesis-style nodes that won't appear on the date slider."""
+    findings = []
+    refs_dir = SUMMA_PUB / "refs"
+    if not refs_dir.exists():
+        return findings
+    skip_names = {"summa_index.json", "playlist.json", "missing_days.md"}
+    for p in refs_dir.iterdir():
+        if not p.is_file():
+            continue
+        if p.name in skip_names:
+            continue
+        if not p.name.endswith(".md"):
+            continue
+        findings.append(Finding(
+            "undated_refs_node", rel(p),
+            "no Gregorian date → invisible when date slider moves", "info",
+            note="design call: opt into mtime, or treat empty-date as always-visible",
+        ))
+    return findings
+
+
+def _build_name_index():
+    """Map lowercased basename(stem) -> [actual_stems...] for the whole vault."""
+    idx = defaultdict(list)
+    for p in walk_md(VAULT_DIR):
+        idx[p.stem.lower()].append(p.stem)
+    return idx
+
+
+def check_broken_wikilinks(name_index):
+    """[[Target]] where Target doesn't resolve to any .md stem (case-insensitive)."""
+    findings = []
+    for path in walk_md(VAULT_DIR):
+        try:
+            text = path.read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
+            continue
+        for m in WIKILINK_RE.finditer(text):
+            target = m.group(1).strip()
+            if not target or target.startswith("http"):
+                continue
+            # Tail of a path-style link
+            tail = target.rsplit("/", 1)[-1]
+            if tail.lower() not in name_index:
+                findings.append(Finding(
+                    "broken_wikilink", rel(path),
+                    f"[[{target}]] has no matching file", "warn",
+                ))
+    return findings
+
+
+def check_wikilink_case_mismatch(name_index):
+    """[[Target]] that resolves only with case adjustment."""
+    findings = []
+    for path in walk_md(VAULT_DIR):
+        try:
+            text = path.read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
+            continue
+        for m in WIKILINK_RE.finditer(text):
+            target = m.group(1).strip()
+            if not target or target.startswith("http"):
+                continue
+            tail = target.rsplit("/", 1)[-1]
+            actual = name_index.get(tail.lower())
+            if not actual:
+                continue
+            if tail not in actual:
+                findings.append(Finding(
+                    "wikilink_case_mismatch", rel(path),
+                    f"[[{target}]] → should be one of {actual}", "warn",
+                ))
+    return findings
+
+
+def check_duplicate_h1():
+    """Same H1 title across multiple files. Surfaces accidental copies / divergence."""
+    findings = []
+    by_title = defaultdict(list)
+    for path in walk_md(VAULT_DIR):
+        try:
+            text = path.read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
+            continue
+        m = H1_RE.search(text)
+        if not m:
+            continue
+        title = m.group(1).strip()
+        if title:
+            by_title[title].append(path)
+    for title, paths in by_title.items():
+        if len(paths) > 1:
+            paths_str = ", ".join(rel(p) for p in sorted(paths))
+            findings.append(Finding(
+                "duplicate_h1", f"H1: {title}",
+                f"{len(paths)} files share this title: {paths_str}", "info",
+            ))
+    return findings
+
+
+# --- Orchestration -----------------------------------------------------------
+
+ALL_CHECKS = [
+    # (name, function, takes_apply_fix_arg, takes_name_index_arg)
+    ("trailing_whitespace",     check_trailing_whitespace,   True,  False),
+    ("ds_store",                check_ds_store,              True,  False),
+    ("reindexer_freshness",     check_reindexer_freshness,   False, False),
+    ("src_pub_refs_drift",      check_src_pub_refs_sync,     False, False),
+    ("stale_wip",               check_stale_wip,             False, False),
+    ("undated_refs_node",       check_undated_refs_nodes,    False, False),
+    ("broken_wikilink",         check_broken_wikilinks,      False, True),
+    ("wikilink_case_mismatch",  check_wikilink_case_mismatch, False, True),
+    ("duplicate_h1",            check_duplicate_h1,          False, False),
+]
+
+
+def run_checks(state: dict, apply_fix_for: set, dry_run: bool):
+    name_index = _build_name_index()
+    all_findings = []
+    fix_log = []  # (check, path, action)
+    for name, fn, takes_fix, takes_idx in ALL_CHECKS:
+        do_fix = (name in apply_fix_for) and not dry_run
+        try:
+            if takes_fix and takes_idx:
+                fnd, fixes = fn(do_fix, name_index)
+            elif takes_fix:
+                fnd, fixes = fn(do_fix)
+            elif takes_idx:
+                fnd = fn(name_index)
+                fixes = []
+            else:
+                fnd = fn()
+                fixes = []
+        except Exception as e:
+            fnd = [Finding(name, "<check-error>", str(e), "error")]
+            fixes = []
+        all_findings.extend(fnd)
+        for p, action in fixes:
+            fix_log.append((name, rel(p), action))
+    return all_findings, fix_log
+
+
+def categorize(findings: list, baseline_ids: set):
+    """Split findings into (baseline_still_open, new_since_baseline, fixed_this_run_eligible)."""
+    open_now = {f.fid: f for f in findings}
+    baseline = set(baseline_ids) & set(open_now)
+    new      = set(open_now) - set(baseline_ids)
+    return {fid: open_now[fid] for fid in baseline}, {fid: open_now[fid] for fid in new}
+
+
+# --- Findings renderer -------------------------------------------------------
+
+def render_findings(state, fixed_this_run, new_findings, baseline_open,
+                    auto_fix_promoted, dry_run, is_baseline_run):
+    lines = []
+    lines.append("# C2A2 Wiki Janitor — Findings")
+    lines.append("")
+    lines.append(f"Last run: {state['last_run_at']}  ")
+    lines.append(f"Run #: {state['run_counter']}  ")
+    lines.append(f"Auto-fix categories: {', '.join(sorted(auto_fix_promoted)) or '(none)'}")
+    if dry_run:
+        lines.append("  ")
+        lines.append("**DRY RUN** — no files written.")
+    if is_baseline_run:
+        lines.append("  ")
+        lines.append("**BASELINE RUN** — all open findings recorded as accepted noise; "
+                     "next run will flag only deltas.")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+
+    # Fixed this run
+    lines.append("## Fixed this run")
+    lines.append("")
+    if fixed_this_run:
+        by_check = defaultdict(list)
+        for check, path, action in fixed_this_run:
+            by_check[check].append((path, action))
+        for check in sorted(by_check):
+            lines.append(f"### {check}  ({len(by_check[check])} fixes)")
+            for path, action in by_check[check][:50]:
+                lines.append(f"- `{path}` — {action}")
+            if len(by_check[check]) > 50:
+                lines.append(f"- … and {len(by_check[check]) - 50} more")
+            lines.append("")
+    else:
+        lines.append("_(nothing fixed this run)_")
+        lines.append("")
+
+    # New since last week — the section morning-system-health should ingest.
+    lines.append("## New since last week")
+    lines.append("<!-- morning-system-health: read this section -->")
+    lines.append("")
+    if new_findings:
+        by_check = defaultdict(list)
+        for f in new_findings.values():
+            by_check[f.check].append(f)
+        for check in sorted(by_check):
+            sev_label = "destructive" if check in DESTRUCTIVE_CHECKS else (
+                "auto-fix" if check in auto_fix_promoted else "report-only"
+            )
+            lines.append(f"### {check}  ({len(by_check[check])} new, {sev_label})")
+            for f in by_check[check][:30]:
+                note = f"  _({f.note})_" if f.note else ""
+                lines.append(f"- `{f.scope}` — {f.detail}{note}")
+            if len(by_check[check]) > 30:
+                lines.append(f"- … and {len(by_check[check]) - 30} more")
+            lines.append("")
+    else:
+        lines.append("_(no new findings since last week — clean delta)_")
+        lines.append("")
+
+    # All open (rolled up)
+    lines.append("## All open findings (rollup)")
+    lines.append("")
+    all_open = {**baseline_open, **new_findings}
+    if all_open:
+        by_check = defaultdict(int)
+        for f in all_open.values():
+            by_check[f.check] += 1
+        lines.append("| Check | Count | Mode |")
+        lines.append("|---|---|---|")
+        for check in sorted(by_check):
+            mode = ("destructive (notify-only)" if check in DESTRUCTIVE_CHECKS
+                    else "auto-fix" if check in auto_fix_promoted
+                    else "report-only")
+            lines.append(f"| `{check}` | {by_check[check]} | {mode} |")
+        lines.append("")
+    else:
+        lines.append("_(no open findings — pristine)_")
+        lines.append("")
+
+    # Baseline (just a count — too noisy to list)
+    lines.append(f"## Baseline (pre-existing, accepted noise): {len(baseline_open)} findings")
+    lines.append("")
+    lines.append("These were present on the first run and aren't re-listed each week. "
+                 "They're carried forward until they go away or are intentionally addressed.")
+    lines.append("")
+
+    # Promotion record
+    lines.append("---")
+    lines.append("## Promotion log")
+    lines.append("")
+    lines.append("Promote a category to auto-fix:  ")
+    lines.append("`python3 scripts/janitor.py --promote <check_name>`")
+    lines.append("")
+    lines.append("Currently promoted: " + ", ".join(sorted(auto_fix_promoted)))
+    lines.append("")
+    lines.append(f"Permanent notify-only (destructive): "
+                 f"{', '.join(sorted(DESTRUCTIVE_CHECKS))}")
+
+    return "\n".join(lines) + "\n"
+
+
+# --- Main --------------------------------------------------------------------
+
+def main(argv=None):
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--baseline", action="store_true",
+                    help="Reset baseline_ids to current open findings.")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="Report only; do not perform any auto-fixes.")
+    ap.add_argument("--promote", metavar="CHECK",
+                    help="Add a check to the auto-fix safelist and exit.")
+    args = ap.parse_args(argv)
+
+    state = load_state()
+
+    # --promote: mutate state, save, exit.
+    if args.promote:
+        check = args.promote
+        if check in DESTRUCTIVE_CHECKS:
+            print(f"refuse: {check} is permanently notify-only (destructive)",
+                  file=sys.stderr)
+            return 2
+        valid = {name for name, *_ in ALL_CHECKS}
+        if check not in valid:
+            print(f"unknown check: {check}. known: {sorted(valid)}",
+                  file=sys.stderr)
+            return 2
+        promoted = set(state.get("auto_fix_promoted", []))
+        promoted.add(check)
+        state["auto_fix_promoted"] = sorted(promoted)
+        save_state(state)
+        print(f"promoted: {check}. auto-fix now covers: "
+              f"{', '.join(state['auto_fix_promoted'])}")
+        return 0
+
+    JANITOR_DIR.mkdir(parents=True, exist_ok=True)
+    state["run_counter"] = state.get("run_counter", 0) + 1
+    state["last_run_at"] = now_iso()
+    if state.get("first_run_at") is None:
+        state["first_run_at"] = state["last_run_at"]
+
+    auto_fix_promoted = set(state.get("auto_fix_promoted", []) or DEFAULT_AUTO_FIX)
+
+    findings, fix_log = run_checks(state, auto_fix_promoted, args.dry_run)
+
+    # Baseline-then-deltas accounting.
+    is_baseline_run = args.baseline or not state.get("baseline_ids")
+    if is_baseline_run:
+        state["baseline_ids"] = sorted({f.fid for f in findings})
+        baseline_open = {f.fid: f for f in findings}
+        new_findings = {}
+    else:
+        baseline_open, new_findings = categorize(findings, set(state["baseline_ids"]))
+
+    md = render_findings(
+        state=state,
+        fixed_this_run=fix_log,
+        new_findings=new_findings,
+        baseline_open=baseline_open,
+        auto_fix_promoted=auto_fix_promoted,
+        dry_run=args.dry_run,
+        is_baseline_run=is_baseline_run,
+    )
+    FINDINGS_MD.write_text(md, encoding="utf-8")
+
+    # Append fix history (cap to last 200 entries).
+    for check, path, action in fix_log:
+        state.setdefault("fix_history", []).append({
+            "run_at": state["last_run_at"], "check": check,
+            "path": path, "action": action,
+        })
+    state["fix_history"] = state["fix_history"][-200:]
+    save_state(state)
+
+    print(f"janitor: {len(findings)} open findings, "
+          f"{len(new_findings)} new since baseline, "
+          f"{len(fix_log)} auto-fixes "
+          f"({'dry-run' if args.dry_run else 'applied'}).")
+    print(f"findings: {FINDINGS_MD}")
+    print(f"state:    {STATE_PATH}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

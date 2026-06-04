@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). "Efficient Estimation of Word Representations in Vector Space." ICLR 2013. — Demonstrates that vector displacements capture meaningful semantic relationships transferable across domains (e.g., "king - man + woman ≈ queen").
-  
+
   2. Pennington, J., Socher, R., & Manning, C. D. (2014). "GloVe: Global Vectors for Word Representation." In Proceedings of EMNLP, 1532-1543. — Shows displacement vectors in semantic space preserve relational structure, enabling cross-domain analogical reasoning.
-  
+
   3. Rogers, A., Drozd, A., & Rumshisky, A. (2017). "What's in a Word? Exploring the Geometries of Embeddings." In Proceedings of ACL 2017. — Validates that geometric relationships in vector spaces correspond to meaningful semantic and structural patterns, confirmed across multiple domains.
 
 Strength of support: Strong

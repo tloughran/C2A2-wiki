@@ -29,6 +29,16 @@
 
 ---
 
+## CONSTITUTIONAL RULE: Session Handoff Continuity
+
+**On resume, Claude reads `handoffs/<thread>.md` FIRST** and treats it as the authoritative pickup source — before any session-title search or `read_transcript`. Fall back to title-search / transcript only if no handoff doc exists for the thread.
+
+**At the close of any working session on a named thread, Claude rewrites that thread's `handoffs/<thread>.md`** with: branch, what shipped + commit, the exact resume cue, the next-increment scope, parked items, and the originating session_id. The doc is gitignored (local-only, never published) and should be rich enough that a transcript read is unnecessary.
+
+**Rationale:** 2026-05-29 — resuming the sociogram work, the prior session was auto-titled "Summa Explorer integration status" (no "sociogram" in the title), so the resume skill's title-keyword match failed and Claude burned tokens probing transcripts. A deterministic per-thread handoff doc makes a bad auto-title irrelevant, and is cheaper and more accurate than a transcript read. (It is also a tiny instance of Pathway 16, durable conversational memory.)
+
+---
+
 ## Wiki Narration Visualization
 
 **Working URL (local):** `file:///Users/tomloughran/Documents/Claude/Projects/RC%20Karpathy%20Wiki%20Project/wiki/wiki_narration.html`
@@ -82,3 +92,35 @@ python3 validate_html.py /path/to/wiki/wiki_narration.html --source-data /tmp/va
 - Vault data lives at `wiki/vault/` in C2A2-wiki repo
 - `sync_vault.sh` + launchd agent at 21:00 daily keeps vault in sync from Summa 2026 project
 - **Before pushing updates to summa_explorer.html or vault data:** verify locally via HTTP server
+
+---
+
+## Wiki Janitor (weekly polish-and-surface pass)
+
+**Script:** `scripts/janitor.py`
+**Schedule:** Sunday 05:45 local (`c2a2-wiki-janitor-weekly` scheduled task)
+**Outputs:** `janitor/findings.md` and `janitor/state.json` (outside `wiki/` so Obsidian doesn't see them)
+
+### What it does
+Auto-fixes a small safelist of categories (currently: trailing whitespace in vault `.md` files, stray `.DS_Store`). Runs report-only checks for everything else: broken wikilinks, Summa SRC↔PUB drift (refs/), reindexer freshness, undated refs nodes, stale uncommitted WIP (>14 days), duplicate H1 titles. Skips orphan/sparse detection — the sewing agent (`c2a2-sewing-agent-weekly`) owns that and writes `wiki/architecture/metrics/connectivity_log.csv`. Do not duplicate.
+
+### Baseline-then-deltas
+First run snapshots all open findings as accepted noise. Subsequent runs flag only deltas in the "New since last week" section (which morning-system-health reads). Baseline is preserved across runs; cleaned-up findings auto-fall-out.
+
+### Promotion rule
+Categories start report-only. After a clean run, promote one to auto-fix with:
+```bash
+python3 scripts/janitor.py --promote <check_name>
+```
+Destructive categories (`empty_section`, `dead_end_wikilink`) are permanently notify-only.
+
+### morning-system-health integration (TODO, not yet wired)
+The Sunday janitor writes a brief to `~/Documents/Claude/Reports/janitor-YYYY-MM-DD.md`. Morning-system-health should be edited to surface the most recent janitor brief in its Monday report. Until that edit lands, Tom reads the brief directly or opens `janitor/findings.md`.
+
+### Manual operations
+```bash
+python3 scripts/janitor.py                 # normal run (auto-fix + report)
+python3 scripts/janitor.py --dry-run       # report only; no writes
+python3 scripts/janitor.py --baseline      # reset baseline to current findings
+python3 scripts/janitor.py --promote <c>   # add check to auto-fix safelist
+```

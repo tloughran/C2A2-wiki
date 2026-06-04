@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Kuhn, T. S. (1962). "The Structure of Scientific Revolutions." University of Chicago Press. — Discusses how scientific revolutions succeed through conceptual bridges that translate between paradigms; foundational for connecting memes concept.
-  
+
   2. Thagard, P. (1992). "Conceptual Revolutions." Princeton University Press. — Detailed analysis of paradigm transitions showing specific patterns of conceptual integration; demonstrates recurring patterns in cross-paradigm synthesis.
-  
+
   3. Laudan, L., Chakrabarti, A., & Leplin, J. (1992). "The Extravagance of Realism." Philosophy of Science, 59(3), 456-474. — Shows that cross-tradition theoretical synthesis follows recurring patterns rather than being idiosyncratic; supports bounded typology concept.
 
 Strength of support: Weak to Moderate

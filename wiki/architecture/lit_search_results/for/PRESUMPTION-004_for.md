@@ -19,9 +19,9 @@ Supporting evidence found: Yes
 
 Sources:
   1. Grofman, B., Owen, G., & Feld, S. L. (1983). "Thirteen Theorems in Search of the Truth." Theory and Decision, 15(3), 261-278. — Mathematical analysis showing that 2/3 threshold (for 3-agent systems) near-optimizes the Condorcet criteria; balances false positives and false negatives.
-  
+
   2. Frey, B. S., & Stutzer, A. (2005). "Testing Theories of Procedural Justice by Majority Voting on Redistribution." Journal of Risk and Uncertainty, 31(2), 163-180. — Shows threshold selection involves tradeoff between consensus stability (2/3 increases agreement) and information preservation (2/3 avoids false certainty).
-  
+
   3. Emmons, L. C., Crowell, A., & Denny, M. W. (2019). "A Gentle Introduction to Threshold-Moving for Imbalanced Classification." In Conference on Fairness, Accountability and Transparency. — Discusses how threshold optimization varies by error cost asymmetry; shows 2/3 is near-optimal for balanced error costs but suboptimal if false positives more costly than false negatives.
 
 Strength of support: Moderate

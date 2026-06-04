@@ -302,8 +302,8 @@ Downstream agents and human reviewers should apply proportional skepticism based
 
 ---
 
-**Version:** 1.0  
-**Status:** Authoritative Specification  
-**Last updated:** 2026-04-10  
-**Maintained by:** Agent 12 (Master C2A2 Agent)  
+**Version:** 1.0
+**Status:** Authoritative Specification
+**Last updated:** 2026-04-10
+**Maintained by:** Agent 12 (Master C2A2 Agent)
 **Related agents:** [[14a_assumption_extractor_agent]], [[14b_presumption_detector_agent]], [[15a_lit_search_for_agent]], [[15b_lit_search_against_agent]]

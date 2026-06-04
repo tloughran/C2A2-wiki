@@ -99,9 +99,9 @@ PROP-YYYY-MM-DD-005: CONDITIONAL | [condition that must become true] | [check ca
 
 ### CONDITIONAL Decisions (new — managed by Agent 16)
 
-When a proposal depends on an external event (transcript publication, paper update, 
-experiment results), use CONDITIONAL instead of CHANGE. Agent 16 adds the condition 
-to its watch list, checks at the specified cadence, and re-queues the proposal to 
+When a proposal depends on an external event (transcript publication, paper update,
+experiment results), use CONDITIONAL instead of CHANGE. Agent 16 adds the condition
+to its watch list, checks at the specified cadence, and re-queues the proposal to
 `pending/` when the condition is met. The proposal then re-enters the normal review cycle.
 
 Example: `CONDITIONAL | Podcast transcript for episode 47 published | Weekly`

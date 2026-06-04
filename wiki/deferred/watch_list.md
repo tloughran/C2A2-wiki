@@ -1130,3 +1130,335 @@ Status: WATCHING | RESOLVED | STALE | CANCELLED
 ---
 
 *Run completed 2026-05-27.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-05-28
+
+**Run context:**
+- One day since last logged run (2026-05-27). Steady-state run; no deferred items in any channel.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`. Fresh re-read of front matter confirms it is still the WATCH-001 tombstone (`status: superseded`, `tracking_id: WATCH-001`, `resolved_on: 2026-05-12`, `superseded_by: inbox/proposals/pending/2026-04-21_carroll_singer-mindscape-351.md`; body prefixed `[SUPERSEDED — Agent 16, 2026-05-14]` and `[TRACKED-16: 2026-05-05]`). Inert; awaiting Tom's manual deletion. **No new untracked items.**
+- `wiki/review/archive/`: No new decision files since last scan. Directory re-listed at run time (per 2026-05-17 self-correction discipline); contents unchanged: 2026-04-07, 2026-04-08, 2026-04-14, 2026-04-28, 2026-05-05, 2026-05-08, 2026-05-11, 2026-05-13, 2026-05-26 — all previously scanned.
+- Channel 2 (agent-deferral) and Channel 3 (human-watch): no intake files present in `wiki/deferred/` (only `watch_list.md` and `resolved/2026-05-12_WATCH-001.md`). Both channels remain operational and empty.
+
+**Condition Checks (executed this run):**
+- No WATCHING items on watch list. Nothing to check. (WATCH-001 remains RESOLVED 2026-05-12; lifecycle fully closed — re-queued copy approved on 2026-05-25 at `wiki/inbox/proposals/approved/2026-04-21_carroll_singer-mindscape-351.md`; archive at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`. Both file paths re-verified present this run.)
+
+**Stale Item Check:**
+- No items to evaluate (active watch list empty). No STALE-WATCH-FLAGs raised.
+
+**Watch List Status:**
+- Items checked: 0 (no active items)
+- Items resolved: 0
+- Items still watching: 0
+- Items stale: 0
+- New items added: 0
+- Status: Active items empty; one resolved item indexed (WATCH-001, approved/ingestion-staged); intake clean.
+
+**Notes:**
+- Decision archives scanned through 2026-05-26. All three intake channels (review-conditional, agent-deferral, human-watch) remain operational; Channels 2 and 3 still have no items.
+- Standing reminder for Tom (carried forward from 2026-05-14 onward): `wiki/inbox/proposals/needs_review/2026-04-21_carroll_singer-mindscape-351.md` is a superseded tombstone and can be safely deleted manually. The live copy is in `wiki/inbox/proposals/approved/2026-04-21_carroll_singer-mindscape-351.md` (awaiting ingestion); full provenance remains at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`. (The `superseded_by` pointer in the tombstone front matter still references the old `pending/` path; harmless now that the loop is closed.)
+- Situational awareness (out of scope, logged only): the pending queue went from 0 yesterday to **6 items today** — all dated 2026-05-27 across five traditions (arkanihamed, carroll, kastrup ×2, mcgilchrist ×2). These are undisposed proposals awaiting Tom's next review pass; they only enter Agent 16's intake if they receive CHANGE / CHECK / CONDITIONAL dispositions. Worth noting that proposal generation has resumed at normal velocity after the 2026-05-26 backlog-clearing pass.
+- Approved-queue depth: 159 items in `wiki/inbox/proposals/approved/` awaiting the deferred ingestion pass (per the 2026-05-26 archive's note). Not an Agent 16 concern — ingestion staging is a workflow decision, not a tracked condition.
+
+**Next scheduled checks:**
+- None — watch list active items empty.
+
+**Agent 16 Status:** Operational. Steady state; no deferred items in any channel; intake clean; no checks due. Decision archive coverage current through 2026-05-26.
+
+---
+
+*Run completed 2026-05-28.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-05-29
+
+**Run context:**
+- One day since last logged run (2026-05-28). Steady-state run; no deferred items in any channel. One new decision archive arrived in the interval but carried no actionable dispositions.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`. Fresh re-read of front matter confirms it is still the WATCH-001 tombstone (`status: superseded`, `tracking_id: WATCH-001`, `resolved_on: 2026-05-12`, `superseded_by: inbox/proposals/pending/2026-04-21_carroll_singer-mindscape-351.md`; body prefixed `[SUPERSEDED — Agent 16, 2026-05-14]` and `[TRACKED-16: 2026-05-05]`). Inert; awaiting Tom's manual deletion. **No new untracked items.**
+- `wiki/review/archive/`: **One new decision file detected since last scan — `2026-05-28_decisions.md`.** Scanned (full review below). Directory contents now: 2026-04-07, 2026-04-08, 2026-04-14, 2026-04-28, 2026-05-05, 2026-05-08, 2026-05-11, 2026-05-13, 2026-05-26, 2026-05-28.
+- Channel 2 (agent-deferral) and Channel 3 (human-watch): no intake files present in `wiki/deferred/` (only `watch_list.md` and `resolved/2026-05-12_WATCH-001.md`). Both channels remain operational and empty.
+
+**Scan of 2026-05-28_decisions.md:**
+- Archive recorded as "No actionable decisions processed today."
+- A decision email dated 2026-05-26 (subject `[C2A2-review-decision] 2026-05-26`) was received listing 28 proposals (PROP-2026-05-26-001 through -028), all marked `PENDING`. `PENDING` is not in the recognized decision set (APPROVE / DENY / CHECK / CHANGE), so no files were moved; the email was left unread for Tom's attention.
+- **0 APPROVE / 0 DENY / 0 CHANGE / 0 CHECK / 0 CONDITIONAL** in actioned set — **no new deferred intake from this archive.**
+- Cross-reference observation (out of scope for Agent 16, logged for situational awareness): the 28 PENDING items in the 2026-05-26 email map to the same proposal IDs that were in fact *approved* in the 2026-05-26_decisions.md archive (31 APPROVEs total in that batch, per Agent 16's 2026-05-27 scan). The PENDING email therefore appears to be the second instance of the all-PENDING UI workflow misfire previously flagged in the 2026-05-26 archive's operational note (Gmail decision email carried all-PENDING values; review-page state + verbal confirmation were authoritative on that date). This is a review-side workflow concern — Agent 16 does not act on it.
+
+**Condition Checks (executed this run):**
+- No WATCHING items on watch list. Nothing to check. (WATCH-001 remains RESOLVED 2026-05-12; lifecycle fully closed — re-queued copy approved on 2026-05-25 at `wiki/inbox/proposals/approved/2026-04-21_carroll_singer-mindscape-351.md`; archive at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`. Both file paths re-verified present this run.)
+
+**Stale Item Check:**
+- No items to evaluate (active watch list empty). No STALE-WATCH-FLAGs raised.
+
+**Watch List Status:**
+- Items checked: 0 (no active items)
+- Items resolved: 0
+- Items still watching: 0
+- Items stale: 0
+- New items added: 0
+- Status: Active items empty; one resolved item indexed (WATCH-001, approved/ingestion-staged); intake clean.
+
+**Notes:**
+- Decision archives scanned through 2026-05-28. All three intake channels (review-conditional, agent-deferral, human-watch) remain operational; Channels 2 and 3 still have no items.
+- Standing reminder for Tom (carried forward from 2026-05-14 onward): `wiki/inbox/proposals/needs_review/2026-04-21_carroll_singer-mindscape-351.md` is a superseded tombstone and can be safely deleted manually. The live copy is in `wiki/inbox/proposals/approved/2026-04-21_carroll_singer-mindscape-351.md` (awaiting ingestion); full provenance remains at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`. (The `superseded_by` pointer in the tombstone front matter still references the old `pending/` path; harmless now that the loop is closed.)
+- Situational awareness (out of scope, logged only): pending queue stands at **7 items** today (six dated 2026-05-27 across arkanihamed, carroll, kastrup ×2, mcgilchrist ×2, plus one new 2026-05-28 fredrickson item). These are undisposed proposals awaiting Tom's next review pass; they only enter Agent 16's intake if they receive CHANGE / CHECK / CONDITIONAL dispositions. Approved-queue depth: 159 items in `wiki/inbox/proposals/approved/` still awaiting the deferred ingestion pass — unchanged from yesterday, not an Agent 16 concern.
+- Recurring-glitch flag (for Tom's awareness, not for Agent 16 action): the all-PENDING decision email pattern now has two recorded instances (2026-05-26 and 2026-05-28 archives). If this is a reproducible Gmail/decision-email workflow bug rather than a one-off, a review-side guardrail may be worth considering. Agent 16 will continue to treat archives with no actionable dispositions as no-intake; if a future archive *does* carry a CHANGE / CHECK / CONDITIONAL disposition, intake will resume normally.
+
+**Next scheduled checks:**
+- None — watch list active items empty.
+
+**Agent 16 Status:** Operational. Steady state; no deferred items in any channel; intake clean; no checks due. Decision archive coverage current through 2026-05-28.
+
+---
+
+*Run completed 2026-05-29.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-05-30
+
+**Run context:**
+- One day since last logged run (2026-05-29). Steady-state run; no deferred items in any channel.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`. Fresh re-read confirms it is still the WATCH-001 tombstone (`status: superseded`, `tracking_id: WATCH-001`, `resolved_on: 2026-05-12`, `superseded_by: inbox/proposals/pending/2026-04-21_carroll_singer-mindscape-351.md`; body prefixed `[SUPERSEDED — Agent 16, 2026-05-14]` and `[TRACKED-16: 2026-05-05]`). Inert; awaiting Tom's manual deletion. **No new untracked items.**
+- `wiki/review/archive/`: No new decision files since last scan. Directory re-listed at run time (per 2026-05-17 self-correction discipline); contents unchanged: 2026-04-07, 2026-04-08, 2026-04-14, 2026-04-28, 2026-05-05, 2026-05-08, 2026-05-11, 2026-05-13, 2026-05-26, 2026-05-28 — all previously scanned.
+- Channel 2 (agent-deferral) and Channel 3 (human-watch): no intake files present in `wiki/deferred/` (only `watch_list.md` and `resolved/2026-05-12_WATCH-001.md`). Both channels remain operational and empty.
+
+**Condition Checks (executed this run):**
+- No WATCHING items on watch list. Nothing to check. (WATCH-001 remains RESOLVED 2026-05-12; lifecycle fully closed — re-queued copy approved on 2026-05-25 at `wiki/inbox/proposals/approved/2026-04-21_carroll_singer-mindscape-351.md`; archive at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`. Both file paths re-verified present this run.)
+
+**Stale Item Check:**
+- No items to evaluate (active watch list empty). No STALE-WATCH-FLAGs raised.
+
+**Watch List Status:**
+- Items checked: 0 (no active items)
+- Items resolved: 0
+- Items still watching: 0
+- Items stale: 0
+- New items added: 0
+- Status: Active items empty; one resolved item indexed (WATCH-001, approved/ingestion-staged); intake clean.
+
+**Notes:**
+- Decision archives scanned through 2026-05-28. All three intake channels (review-conditional, agent-deferral, human-watch) remain operational; Channels 2 and 3 still have no items.
+- Standing reminder for Tom (carried forward from 2026-05-14 onward): `wiki/inbox/proposals/needs_review/2026-04-21_carroll_singer-mindscape-351.md` is a superseded tombstone and can be safely deleted manually. The live copy is in `wiki/inbox/proposals/approved/2026-04-21_carroll_singer-mindscape-351.md` (awaiting ingestion); full provenance remains at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`. (The `superseded_by` pointer in the tombstone front matter still references the old `pending/` path; harmless now that the loop is closed.)
+- Situational awareness (out of scope, logged only): pending queue stands at **8 items** today — up 1 from 7 yesterday (six dated 2026-05-27 across arkanihamed, carroll, kastrup ×2, mcgilchrist ×2; one 2026-05-28 fredrickson; plus one new 2026-05-29 carroll mindscape-354). These are undisposed proposals awaiting Tom's next review pass; they enter Agent 16's intake only if they receive CHANGE / CHECK / CONDITIONAL dispositions. Approved-queue depth: 159 items in `wiki/inbox/proposals/approved/` still awaiting the deferred ingestion pass — unchanged from yesterday, not an Agent 16 concern.
+- Carry-forward flag (for Tom's awareness, not for Agent 16 action): the all-PENDING decision-email pattern recorded on 2026-05-26 and 2026-05-28 has had no third instance since (no new decision archive 2026-05-29 → 2026-05-30). Monitoring continues passively; if a future archive carries a genuine CHANGE / CHECK / CONDITIONAL disposition, intake resumes normally.
+
+**Next scheduled checks:**
+- None — watch list active items empty.
+
+**Agent 16 Status:** Operational. Steady state; no deferred items in any channel; intake clean; no checks due. Decision archive coverage current through 2026-05-28.
+
+---
+
+*Run completed 2026-05-30.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-05-31
+
+**Run context:**
+- One day since last logged run (2026-05-30). Steady-state run; no deferred items in any channel.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`. Fresh re-read confirms it is still the WATCH-001 tombstone (`status: superseded`, `tracking_id: WATCH-001`, `resolved_on: 2026-05-12`, `superseded_by: inbox/proposals/pending/2026-04-21_carroll_singer-mindscape-351.md`; body prefixed `[SUPERSEDED — Agent 16, 2026-05-14]` and `[TRACKED-16: 2026-05-05]`). Inert; awaiting Tom's manual deletion. **No new untracked items.**
+- `wiki/review/archive/`: No new decision files since last scan. Directory re-listed at run time (per 2026-05-17 self-correction discipline); contents unchanged: 2026-04-07, 2026-04-08, 2026-04-14, 2026-04-28, 2026-05-05, 2026-05-08, 2026-05-11, 2026-05-13, 2026-05-26, 2026-05-28 — all previously scanned. Latest archive remains 2026-05-28 (no 2026-05-29/-30/-31 archive present).
+- Channel 2 (agent-deferral) and Channel 3 (human-watch): no intake files present in `wiki/deferred/` (only `watch_list.md` and `resolved/2026-05-12_WATCH-001.md`). Both channels remain operational and empty.
+
+**Condition Checks (executed this run):**
+- No WATCHING items on watch list. Nothing to check. (WATCH-001 remains RESOLVED 2026-05-12; lifecycle fully closed — re-queued copy approved on 2026-05-25 at `wiki/inbox/proposals/approved/2026-04-21_carroll_singer-mindscape-351.md`; archive at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`. Both file paths re-verified present this run.)
+
+**Stale Item Check:**
+- No items to evaluate (active watch list empty). No STALE-WATCH-FLAGs raised.
+
+**Watch List Status:**
+- Items checked: 0 (no active items)
+- Items resolved: 0
+- Items still watching: 0
+- Items stale: 0
+- New items added: 0
+- Status: Active items empty; one resolved item indexed (WATCH-001, approved/ingestion-staged); intake clean.
+
+**Notes:**
+- Decision archives scanned through 2026-05-28. All three intake channels (review-conditional, agent-deferral, human-watch) remain operational; Channels 2 and 3 still have no items.
+- Standing reminder for Tom (carried forward from 2026-05-14 onward): `wiki/inbox/proposals/needs_review/2026-04-21_carroll_singer-mindscape-351.md` is a superseded tombstone and can be safely deleted manually. The live copy is in `wiki/inbox/proposals/approved/2026-04-21_carroll_singer-mindscape-351.md` (awaiting ingestion); full provenance remains at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`. (The `superseded_by` pointer in the tombstone front matter still references the old `pending/` path; harmless now that the loop is closed.)
+- Situational awareness (out of scope, logged only): pending queue stands at **9 items** today — up 1 from 8 yesterday (six dated 2026-05-27 across arkanihamed, carroll, kastrup ×2, mcgilchrist ×2; one 2026-05-28 fredrickson; one 2026-05-29 carroll mindscape-354; plus one new 2026-05-30 wolfram bulk-orchestration-rulial-ensemble). These are undisposed proposals awaiting Tom's next review pass; they enter Agent 16's intake only if they receive CHANGE / CHECK / CONDITIONAL dispositions. Approved-queue depth unchanged (~159 items awaiting deferred ingestion) — not an Agent 16 concern.
+- Carry-forward flag (for Tom's awareness, not for Agent 16 action): the all-PENDING decision-email pattern recorded on 2026-05-26 and 2026-05-28 has had no third instance since (no new decision archive 2026-05-29 → 2026-05-31). Monitoring continues passively; if a future archive carries a genuine CHANGE / CHECK / CONDITIONAL disposition, intake resumes normally.
+
+**Next scheduled checks:**
+- None — watch list active items empty.
+
+**Agent 16 Status:** Operational. Steady state; no deferred items in any channel; intake clean; no checks due. Decision archive coverage current through 2026-05-28.
+
+---
+
+*Run completed 2026-05-31.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-06-01
+
+**Run context:**
+- One day since last logged run (2026-05-31). Steady-state run; no deferred items in any active channel.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`. Re-read and re-verified this run: it carries `[TRACKED-16]` (confirmed present, count = 1) and remains the WATCH-001 tombstone (`status: superseded`, `tracking_id: WATCH-001`, `resolved_on: 2026-05-12`). Inert; awaiting Tom's manual deletion. **No new untracked items.**
+- `wiki/review/archive/`: Directory re-listed at run time. No new decision files since last scan — latest remains `2026-05-28_decisions.md`. Contents unchanged: 2026-04-07, 2026-04-08, 2026-04-14, 2026-04-28, 2026-05-05, 2026-05-08, 2026-05-11, 2026-05-13, 2026-05-26, 2026-05-28 — all previously scanned. (No 2026-05-29/-30/-31 or 2026-06-01 archive present.) The 2026-05-28 archive re-read this run: "No actionable decisions processed today" — the 2026-05-26 decision email listed 28 proposals all marked `PENDING`, which is not a recognized disposition (APPROVE/DENY/CHECK/CHANGE/CONDITIONAL), so nothing entered Agent 16 intake.
+- Channel 2 (agent-deferral) and Channel 3 (human-watch): no intake files present in `wiki/deferred/` (tree confirmed: only `watch_list.md` and `resolved/2026-05-12_WATCH-001.md`). Both channels remain operational and empty.
+
+**Condition Checks (executed this run):**
+- No WATCHING items on the active watch list. Nothing due, nothing checked. WATCH-001 remains RESOLVED 2026-05-12; lifecycle fully closed (re-queued → approved 2026-05-25 at `wiki/inbox/proposals/approved/2026-04-21_carroll_singer-mindscape-351.md`; archive at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`). Both paths re-verified present this run.
+
+**Stale Item Check:**
+- No items to evaluate (active watch list empty). No STALE-WATCH-FLAGs raised.
+
+**Watch List Status:**
+- Items checked: 0 (no active items)
+- Items resolved: 0
+- Items still watching: 0
+- Items stale: 0
+- New items added: 0
+- Status: Active items empty; one resolved item indexed (WATCH-001, approved/ingestion-staged); intake clean.
+
+**Notes:**
+- Decision archives scanned through 2026-05-28; all three intake channels operational, Channels 2 and 3 empty.
+- Standing reminder for Tom (carried forward since 2026-05-14): `wiki/inbox/proposals/needs_review/2026-04-21_carroll_singer-mindscape-351.md` is a superseded tombstone, safe to delete manually. Live copy is in `approved/`; full provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+- Situational awareness (out of scope; logged only): pending queue stands at **12 items** today — up 3 from 9 on 2026-05-31. Three new proposals dated 2026-05-31 (rohr enneagram-everything-belongs-s4; wright outreach-salvation-future-creation; wright scientist-believe-resurrection). These are undisposed proposals awaiting Tom's next review pass; they enter Agent 16 intake only if they receive CHANGE / CHECK / CONDITIONAL dispositions. Approved-queue depth ~159 (deferred-ingestion backlog) — not an Agent 16 concern.
+- Carry-forward flag (Tom's awareness, not Agent 16 action): the all-PENDING decision-email pattern (2026-05-26, 2026-05-28) has had no further instance; no new decision archive since 2026-05-28. Monitoring passively; intake resumes normally if a future archive carries a genuine CHANGE / CHECK / CONDITIONAL disposition.
+
+**Next scheduled checks:**
+- None — watch list active items empty.
+
+**Agent 16 Status:** Operational. Steady state; no deferred items in any channel; intake clean; no checks due. Decision archive coverage current through 2026-05-28.
+
+---
+
+*Run completed 2026-06-01.*
+
+## AGENT 16 RUN SUMMARY — 2026-06-02
+
+**Run context:**
+- One day since last logged run (2026-06-01). Steady-state run; no deferred items in any active channel.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`. Re-verified this run: carries `[TRACKED-16]` (present, count = 1) and remains the WATCH-001 tombstone (`status: superseded`, `tracking_id: WATCH-001`, `resolved_on: 2026-05-12`). Inert; awaiting Tom's manual deletion. **No new untracked items.**
+- `wiki/review/archive/`: Directory re-listed at run time. No new decision files since last scan — latest remains `2026-05-28_decisions.md`. Present archives: 2026-04-07, 2026-04-08, 2026-04-14, 2026-04-28, 2026-05-05, 2026-05-08, 2026-05-11, 2026-05-13, 2026-05-26, 2026-05-28 — all previously scanned. No 2026-05-29/-30/-31, 2026-06-01, or 2026-06-02 archive present. No new CHANGE/CHECK/CONDITIONAL dispositions entered intake.
+- Channel 2 (agent-deferral) and Channel 3 (human-watch): no intake files present in `wiki/deferred/` (tree confirmed: only `watch_list.md` and `resolved/2026-05-12_WATCH-001.md`). Both channels remain operational and empty.
+
+**Condition Checks (executed this run):**
+- No WATCHING items on the active watch list. Nothing due, nothing checked. WATCH-001 remains RESOLVED 2026-05-12; lifecycle fully closed (re-queued → approved 2026-05-25 at `wiki/inbox/proposals/approved/2026-04-21_carroll_singer-mindscape-351.md`; archive at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`).
+
+**Stale Item Check:**
+- No items to evaluate (active watch list empty). No STALE-WATCH-FLAGs raised.
+
+**Watch List Status:**
+- Items checked: 0 (no active items)
+- Items resolved: 0
+- Items still watching: 0
+- Items stale: 0
+- New items added: 0
+- Status: Active items empty; one resolved item indexed (WATCH-001, approved/ingestion-staged); intake clean.
+
+**Notes:**
+- Decision archives scanned through 2026-05-28; all three intake channels operational, Channels 2 and 3 empty.
+- Standing reminder for Tom (carried forward since 2026-05-14): `wiki/inbox/proposals/needs_review/2026-04-21_carroll_singer-mindscape-351.md` is a superseded tombstone, safe to delete manually. Live copy is in `approved/`; full provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+- Situational awareness (out of scope; logged only): pending queue stands at **15 items** today — up 3 from 12 on 2026-06-01. Three new proposals dated 2026-06-01 (friston discriminatory-cognition-zbs; friston online-generalised-predictive-coding; levin cognitive-glue-journey). Undisposed proposals awaiting Tom's next review pass; they enter Agent 16 intake only on a CHANGE / CHECK / CONDITIONAL disposition.
+- Carry-forward flag (Tom's awareness, not Agent 16 action): the all-PENDING decision-email pattern (2026-05-26, 2026-05-28) has had no further instance; no new decision archive since 2026-05-28. Monitoring passively; intake resumes normally on a future archive carrying a genuine CHANGE / CHECK / CONDITIONAL disposition.
+
+**Next scheduled checks:**
+- None — watch list active items empty.
+
+**Agent 16 Status:** Operational. Steady state; no deferred items in any channel; intake clean; no checks due. Decision archive coverage current through 2026-05-28.
+
+---
+
+*Run completed 2026-06-02.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-06-03
+
+**Run context:**
+- One day since last logged run (2026-06-02). Steady-state run; no deferred items in any active channel.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`. Re-verified this run: carries `[TRACKED-16]` (present, count = 1) and remains the WATCH-001 tombstone (`status: superseded`, `tracking_id: WATCH-001`, `resolved_on: 2026-05-12`). Inert; awaiting Tom's manual deletion. **No new untracked items.**
+- `wiki/review/archive/`: Directory re-listed at run time (per 2026-05-17 self-correction discipline). No new decision files since last scan — latest remains `2026-05-28_decisions.md`. Present archives: 2026-04-07, 2026-04-08, 2026-04-14, 2026-04-28, 2026-05-05, 2026-05-08, 2026-05-11, 2026-05-13, 2026-05-26, 2026-05-28 — all previously scanned. No 2026-05-29 → 2026-06-03 archive present. No new CHANGE/CHECK/CONDITIONAL dispositions entered intake.
+- Channel 2 (agent-deferral) and Channel 3 (human-watch): no intake files present in `wiki/deferred/` (tree confirmed: only `watch_list.md` and `resolved/2026-05-12_WATCH-001.md`). Both channels remain operational and empty.
+
+**Condition Checks (executed this run):**
+- No WATCHING items on the active watch list. Nothing due, nothing checked. WATCH-001 remains RESOLVED 2026-05-12; lifecycle fully closed (re-queued → approved 2026-05-25 at `wiki/inbox/proposals/approved/2026-04-21_carroll_singer-mindscape-351.md`; archive at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`).
+
+**Stale Item Check:**
+- No items to evaluate (active watch list empty). No STALE-WATCH-FLAGs raised.
+
+**Watch List Status:**
+- Items checked: 0 (no active items)
+- Items resolved: 0
+- Items still watching: 0
+- Items stale: 0
+- New items added: 0
+- Status: Active items empty; one resolved item indexed (WATCH-001, approved/ingestion-staged); intake clean.
+
+**Notes:**
+- Decision archives scanned through 2026-05-28; all three intake channels operational, Channels 2 and 3 empty.
+- Standing reminder for Tom (carried forward since 2026-05-14): `wiki/inbox/proposals/needs_review/2026-04-21_carroll_singer-mindscape-351.md` is a superseded tombstone, safe to delete manually. Live copy is in `approved/`; full provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+- Situational awareness (out of scope; logged only): pending queue stands at **15 items** today — unchanged from 2026-06-02 (no new proposals dated 2026-06-02 detected; same 15 spanning 2026-05-27 through 2026-06-01 across arkanihamed, carroll ×2, kastrup ×2, mcgilchrist ×2, fredrickson, wolfram, rohr, wright ×2, friston ×2, levin). Undisposed proposals awaiting Tom's next review pass; they enter Agent 16 intake only on a CHANGE / CHECK / CONDITIONAL disposition.
+- Carry-forward flag (Tom's awareness, not Agent 16 action): the all-PENDING decision-email pattern (2026-05-26, 2026-05-28) has had no further instance; no new decision archive since 2026-05-28 — now 6 days with no actionable review decisions filed. Monitoring passively; intake resumes normally on a future archive carrying a genuine CHANGE / CHECK / CONDITIONAL disposition.
+
+**Next scheduled checks:**
+- None — watch list active items empty.
+
+**Agent 16 Status:** Operational. Steady state; no deferred items in any channel; intake clean; no checks due. Decision archive coverage current through 2026-05-28.
+
+---
+
+*Run completed 2026-06-03.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-06-04
+
+**Run context:**
+- One day since last logged run (2026-06-03). Steady-state run; no deferred items in any active channel.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`. Re-verified this run (directory re-listed; `[TRACKED-16]` tag present, grep count = 1): remains the WATCH-001 tombstone (`status: superseded`, `tracking_id: WATCH-001`, `resolved_on: 2026-05-12`). Inert; awaiting Tom's manual deletion. **No new untracked items.**
+- `wiki/review/archive/`: Directory re-listed at run time (per 2026-05-17 self-correction discipline). No new decision files since last scan — latest remains `2026-05-28_decisions.md`. Present archives: 2026-04-07, 2026-04-08, 2026-04-14, 2026-04-28, 2026-05-05, 2026-05-08, 2026-05-11, 2026-05-13, 2026-05-26, 2026-05-28 — all previously scanned. No 2026-05-29 → 2026-06-04 archive present. No new CHANGE/CHECK/CONDITIONAL dispositions entered intake.
+- Channel 2 (agent-deferral) and Channel 3 (human-watch): no intake files present in `wiki/deferred/` (tree confirmed: only `watch_list.md` and `resolved/2026-05-12_WATCH-001.md`). Both channels remain operational and empty.
+
+**Condition Checks (executed this run):**
+- No WATCHING items on the active watch list. Nothing due, nothing checked. WATCH-001 remains RESOLVED 2026-05-12; lifecycle fully closed (re-queued → approved 2026-05-25 at `wiki/inbox/proposals/approved/2026-04-21_carroll_singer-mindscape-351.md`; archive at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`).
+
+**Stale Item Check:**
+- No items to evaluate (active watch list empty). No STALE-WATCH-FLAGs raised.
+
+**Watch List Status:**
+- Items checked: 0 (no active items)
+- Items resolved: 0
+- Items still watching: 0
+- Items stale: 0
+- New items added: 0
+- Status: Active items empty; one resolved item indexed (WATCH-001, approved/ingestion-staged); intake clean.
+
+**Notes:**
+- Decision archives scanned through 2026-05-28; all three intake channels operational, Channels 2 and 3 empty.
+- Standing reminder for Tom (carried forward since 2026-05-14): `wiki/inbox/proposals/needs_review/2026-04-21_carroll_singer-mindscape-351.md` is a superseded tombstone, safe to delete manually. Live copy is in `approved/`; full provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+- Situational awareness (out of scope; logged only): pending queue stands at **16 items** today — up 1 from 15 on 2026-06-03. One new proposal dated 2026-06-03 (mcgilchrist ai-battle-for-the-soul). The other 15 span 2026-05-27 through 2026-06-01 across arkanihamed, carroll ×2, kastrup ×2, mcgilchrist ×2, fredrickson, wolfram, rohr, wright ×2, friston ×2, levin. Undisposed proposals awaiting Tom's next review pass; they enter Agent 16 intake only on a CHANGE / CHECK / CONDITIONAL disposition.
+- Carry-forward flag (Tom's awareness, not Agent 16 action): the all-PENDING decision-email pattern (2026-05-26, 2026-05-28) has had no further instance; no new decision archive since 2026-05-28 — now 7 days with no actionable review decisions filed. Monitoring passively; intake resumes normally on a future archive carrying a genuine CHANGE / CHECK / CONDITIONAL disposition.
+
+**Next scheduled checks:**
+- None — watch list active items empty.
+
+**Agent 16 Status:** Operational. Steady state; no deferred items in any channel; intake clean; no checks due. Decision archive coverage current through 2026-05-28.
+
+---
+
+*Run completed 2026-06-04.*

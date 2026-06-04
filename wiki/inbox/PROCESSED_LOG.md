@@ -51,7 +51,7 @@
 
 Breakdown by tradition:
 - **Levin:** +5 PRS → 15 total
-- **Friston:** +4 PRS → 12 total  
+- **Friston:** +4 PRS → 12 total
 - **Hoffman:** +3 PRS → 13 total
 - **Hawkins:** +12 PRS → 17 total
 - **McGilchrist:** +10 PRS → 18 total
@@ -292,3 +292,141 @@ deferred to a focused attended session — flagged for the next sessions of work
 This commit does NOT add new PRS triplets to tradition wikis. Network triplet, cross-
 program, and finding counts remain at **222 / 90 / 35**. They will update in the
 attended ingest session(s) that follow.
+
+---
+
+## 2026-05-29 unattended run — ingest backlog still deferred
+
+The daily scheduled orchestrator ran today (2026-05-29). It inspected `wiki/inbox/`
+and found 161 .md files not listed in PROCESSED_LOG (same backlog as 2026-05-28's
+recount; no new arrivals overnight). Per the 2026-05-26 deferral, PRS extraction
+into tradition wikis remains gated on a focused attended session.
+
+The unattended run honored that deferral: **no .md files were ingested, and no PRS
+triplets were added to any tradition wiki today.** Network triplet, cross-program,
+and finding counts remain at **222 / 90 / 35** (unchanged since 2026-05-26).
+
+Action required: an attended Cowork session to drain the backlog into tradition wikis.
+
+---
+
+## 2026-05-28 unattended run — ingest backlog still deferred
+
+The daily scheduled orchestrator ran today (2026-05-28). It inspected `wiki/inbox/`
+and found 63 .md files not yet listed in PROCESSED_LOG — matching the deferred backlog
+flagged on 2026-05-26 (62 real proposals + 1 newer item). The 2026-05-26 addendum
+states PRS extraction into tradition wikis is deferred to a focused attended session.
+
+The unattended run honored that deferral: **no .md files were ingested, and no PRS
+triplets were added to any tradition wiki today.** Network triplet, cross-program, and
+finding counts therefore remain at **222 / 90 / 35** (unchanged since 2026-05-26).
+
+Backlog date distribution today: 2026-04-08 (2), 2026-04-09 (1), 2026-04-15 (1),
+2026-04-21 (1), 2026-04-27 (6), 2026-05-04 (4), 2026-05-05 (17), 2026-05-08 (5),
+2026-05-09 (3), 2026-05-10 (5), 2026-05-11 (2), 2026-05-12 (1), 2026-05-15 (1),
+2026-05-16 (2), 2026-05-18 (3), 2026-05-22 (1), 2026-05-23 (2), 2026-05-24 (1).
+
+Action required: an attended Cowork session to drain this backlog into tradition wikis.
+
+---
+
+## 2026-05-30 unattended run — ingest backlog still deferred
+
+The daily scheduled orchestrator ran today (2026-05-30). It inspected `wiki/inbox/`
+and found **36 .md files not yet listed in PROCESSED_LOG** (the persisting backlog
+first flagged 2026-05-26). Per the 2026-05-26 deferral, PRS extraction into tradition
+wikis remains gated on a focused attended session.
+
+The unattended run honored that deferral: **no .md files were ingested, and no PRS
+triplets were added to any tradition wiki today.** Network triplet, cross-program, and
+finding counts remain at **222 / 90 / 35** (unchanged since 2026-05-26).
+
+Pattern detector: `flags/for_pattern_detector.md` carries 35 already-EVALUATED signals
+and no new unevaluated items, so no new findings were generated this run.
+
+Action required: an attended Cowork session to drain this backlog into tradition wikis.
+
+---
+
+## 2026-05-31 unattended run — ingest backlog still deferred
+
+The daily scheduled orchestrator ran today (2026-05-31). It inspected `wiki/inbox/`
+and found **36 .md files not yet listed in PROCESSED_LOG** (the persisting backlog
+first flagged 2026-05-26; unchanged in count since 2026-05-30). Per the 2026-05-26
+deferral, PRS extraction into tradition wikis remains gated on a focused attended
+session.
+
+The unattended run honored that deferral: **no .md files were ingested, and no PRS
+triplets were added to any tradition wiki today.** Network triplet, cross-program, and
+finding counts remain at **222 / 90 / 35** (unchanged since 2026-05-26).
+
+Pattern detector: `flags/for_pattern_detector.md` carries 35 already-EVALUATED signals
+and no new unevaluated items, so no new findings were generated this run.
+
+Action required: an attended Cowork session to drain this backlog into tradition wikis.
+
+---
+
+## 2026-06-02 unattended run — ingest backlog still deferred
+
+The daily scheduled orchestrator ran today (2026-06-02, Tuesday — Hawkins + Hoffman
+specialist day; no specialist proposals dated today). It inspected `wiki/inbox/` and
+found the same **36 .md files not yet listed in PROCESSED_LOG** (the persisting backlog
+first flagged 2026-05-26; unchanged in count). Per the 2026-05-26 deferral, PRS
+extraction into tradition wikis remains gated on a focused attended session.
+
+The unattended run honored that deferral: **no .md files were ingested, and no PRS
+triplets were added to any tradition wiki today.** Network triplet, cross-program, and
+finding counts remain at **222 / 90 / 35** (unchanged since 2026-05-26).
+
+Phase 2 fallback (Hawkins + Hoffman) wrote 0 proposals — both returned only
+out-of-window or already-captured material. Review queue holds 15 proposals awaiting a
+`[C2A2-review-decision]` email.
+
+Action required: an attended Cowork session to (1) drain this backlog into tradition
+wikis and (2) send a decision email to clear the 15-proposal review queue.
+
+---
+
+## 2026-06-03 unattended run — ingest backlog still deferred
+
+The daily scheduled orchestrator ran today (2026-06-03, Wednesday — McGilchrist +
+Kastrup specialist day; McGilchrist deposited 1 proposal dated today, "AI and the
+Battle for the Soul"). It inspected `wiki/inbox/` and found the same **36 .md files
+not yet listed in PROCESSED_LOG** (the persisting backlog first flagged 2026-05-26;
+unchanged in count). Per the standing deferral, PRS extraction into tradition wikis
+remains gated on a focused attended session.
+
+The unattended run honored that deferral: **no .md files were ingested, and no PRS
+triplets were added to any tradition wiki today.** Network triplet, cross-program, and
+finding counts remain at **222 / 90 / 35** (unchanged since 2026-05-26).
+
+Phase 2 fallback (10 non-specialist traditions) wrote 0 proposals — all returned
+out-of-window or already-captured material. Review queue holds 16 proposals awaiting a
+`[C2A2-review-decision]` email.
+
+Action required: an attended Cowork session to (1) drain this backlog into tradition
+wikis and (2) send a decision email to clear the 16-proposal review queue.
+
+---
+
+## 2026-06-04 unattended run — ingest backlog still deferred
+
+Daily scheduled orchestrator ran 2026-06-04 (Thursday — Stump + Fredrickson specialist
+day; both deposited 1 proposal each dated today). Inbox inspected: the same standing
+backlog persists. A mechanical filename diff flags 152 inbox files, but 116 of those are
+already referenced in this log's narrative/batch entries; reconciling leaves **36 .md
+files genuinely never listed** (oldest 2026-04-21_carroll_singer-mindscape-351,
+newest 2026-05-12_hoffman_edge-hoffmans-law). This matches the count first flagged
+2026-05-26 and unchanged since.
+
+Per the standing deferral, **no .md files were ingested and no PRS triplets were added
+to any tradition wiki today.** Network counts carried forward unchanged: **222 triplets /
+90 cross-program connections / 35 findings**.
+
+Conflict flagged (honesty): the 36-vs-152 gap is a bookkeeping artifact of the log mixing
+per-file backtick rows with summarized batch narratives. Cleaning that up — so a simple
+diff is authoritative — is itself part of the deferred attended ingest session.
+
+Action required: an attended Cowork session to (1) drain the 36-file backlog into tradition
+wikis and (2) send a `[C2A2-review-decision]` email to clear the review queue.

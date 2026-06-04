@@ -19,9 +19,9 @@ Supporting evidence found: Contradicting evidence
 
 Sources:
   1. Olsson, T., & Johansson, B. (2013). "Automated Content Curation: Measuring Filter Quality." In Proceedings of the 35th SIGIR Conference. ACM. — Shows that quality filters without explicit calibration have unknown precision/recall; miss rates must be measured to assess sufficiency.
-  
+
   2. Powers, D. M. (2020). "Evaluation: From Precision, Recall and F-Measure to ROC, Informedness, Markedness & Correlation." Journal of Machine Learning Technologies, 2(1), 37-63. — Demonstrates that filters without baseline miss-rate measurement cannot be claimed "sufficient"; sufficiency requires empirical validation.
-  
+
   3. García-Vega, C., Rodríguez-González, A., & Colón-Ruiz, C. (2014). "Precision-Recall Trade-offs in Content Filtering: A Comprehensive Evaluation." Journal of Information Technology Research, 7(2), 1-18. — Shows that content filters always involve precision-recall tradeoffs; sufficiency assessment requires explicit calibration and miss-rate measurement.
 
 Strength of support: Weak/Contradicting (evidence supports opposite)

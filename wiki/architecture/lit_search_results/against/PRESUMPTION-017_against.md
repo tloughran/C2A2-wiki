@@ -2,7 +2,7 @@ SEARCH-AGAINST-PRESUMPTION-017:
   Date searched: 2026-04-13
   Original item: PRESUMPTION-017
   Original statement: "Data consistency discrepancies in pipeline are cosmetic, not structural."
-  
+
   PROVENANCE:
     Origin: 14b
     Chain: [14b → 15b]
@@ -14,21 +14,21 @@ SEARCH-AGAINST-PRESUMPTION-017:
     Current status: CHALLENGED
 
   Challenging evidence found: Yes
-  
+
   Sources:
     1. Close Loop, 2024. "Why Data Pipelines Fail and How Enterprise Teams Fix Them." — Small upstream changes cascade to break downstream processes. A single mismapped field corrupts foreign key relationships and triggers cascading integrity failures.
     2. Hevo Data, 2024. "Common Data Pipeline Failures: Causes, Impact, and Solutions." — Missing values, duplicates, and inconsistent formats "slip through unnoticed, quietly distorting KPIs and misleading analysts." Data issues "trickle into decision-making through corrupted numbers."
     3. ArXiv, 2021. "Silent Data Corruptions at Scale." — Silent data corruption events occur without error detection, producing plausible but incorrect results. Small count discrepancies are often early signals of cascading SDC.
     4. Datafold, 2024. "Data Migration Risks." — A 2% count discrepancy in one step often masks a 20%+ error in downstream steps. Small visible discrepancy signals insufficient upstream validation.
-    
+
   Strength of challenge: Strong
-  
+
   Summary: Data engineering research consistently shows small count discrepancies are sentinel events indicating structural problems, not cosmetic issues. A 2-item discrepancy (13 vs. 15) suggests undetected failures in upstream transformation logic. These errors compound silently through pipelines, contaminating downstream decisions before surfacing. Unlike application errors that crash visibly, data pipeline errors produce plausible but wrong results. Research consensus: small discrepancies should trigger full audit, not dismissal.
-  
+
   Specific risks: 2-item discrepancy may indicate 20%+ downstream error. Errors propagate silently through analytics. Late detection after decisions made on corrupted data. Compounding failures if root cause unfixed.
-  
+
   Mitigations available: Row-count assertions at every pipeline stage. Data quality validation frameworks (dbt tests, Great Expectations). Halt downstream on any discrepancy and audit. Hash-based data profiles for silent corruption detection.
-  
+
   Recommendation: CHALLENGED
 
   STEELMAN:
