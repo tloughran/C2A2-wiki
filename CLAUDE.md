@@ -46,7 +46,7 @@
 **Vault path:** `/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/wiki/`
 
 ### Key Files (relative to vault root)
-- `wiki_narration.html` — the generated visualization (self-contained, ~15.4MB as of 2026-05-19)
+- `wiki_narration.html` — the generated visualization (self-contained, ~28.7MB as of 2026-06-02)
 - Source scripts are in the Cowork session at:
   - `wiki-narration/scripts/generate_visualization.py` — HTML generator
   - `wiki-narration/scripts/extract_vault_data.py` — vault data extractor
@@ -63,7 +63,7 @@ python3 validate_html.py /path/to/wiki/wiki_narration.html --source-data /tmp/va
 
 ### Architecture
 - D3.js v7 force-directed graph, dark theme (#0a0a0f)
-- 1533 nodes (wiki files), 36,608 edges (wikilinks + shared references) — counts as of 2026-05-19 regen
+- 2638 nodes (wiki files), 70,407 edges (wikilinks + shared references) — counts measured 2026-06-05 from the 2026-06-02 regen
 - Left panel: checkbox filters by tradition (14 thinkers) and structure group (10 categories)
 - Upper-right: Hold Forces, Show Hover Names, Fit All
 - Node click → right panel with rendered markdown; edge click → both panels

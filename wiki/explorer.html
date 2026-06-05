@@ -309,7 +309,7 @@
       <span class="brand-c2a2">C2A2</span>
       <span class="brand-full">Community Dialogue Accelerator/Detector System</span>
     </span>
-    <button class="chap-btn" id="chap-community" data-src="community/index.html">Community Explorer</button>
+    <button class="chap-btn" id="chap-community" data-src="community_explorer.html">Community Explorer</button>
     <button class="chap-btn stub">Community AI Education</button>
     <button class="chap-btn active" id="chap-tools">Community Accelerator Tools</button>
     <button class="chap-btn stub">Community Interaction</button>
@@ -632,14 +632,18 @@ function showHelp() {
   var chapCommunity = document.getElementById('chap-community');
   var src;
   if (chapCommunity && chapCommunity.classList.contains('active')) {
-    src = 'community/index.html';
+    src = 'community_explorer.html';
   } else {
     var active = document.querySelector('#row2 .tab-btn.active');
     src = active ? active.getAttribute('data-src') : '';
   }
   var descriptions = {
-    'community/index.html': {
+    'community_explorer.html': {
       title: 'Community Explorer',
+      body: 'A force-directed graph of 156 curated real-world communities across eight types (Tradition-Constituted Enquiry, Practice, Contemplative, Civic, Scientific Frontier, Interdisciplinary Synthesis, Local, Professional Guilds). Edges are PRS similarity: communities tackling kindred problems sit close together. Filter by type, isolate the exemplary (Q3) set, click a node for its Problem-Resource-Solution narrative, click an edge to compare its endpoints. The Cards sub-tab preserves the original faceted directory of all 855 communities. This is the Pathway-20 substrate: the C2A2 method applied to communities rather than thinkers.'
+    },
+    'community/index.html': {
+      title: 'Community Explorer (Cards)',
       body: 'A faceted directory of 855 real-world communities (Academic, Corporate, Ideological), each carrying a Problem-Resource-Solution triplet. Filter by type, subtype, country, or source, and inspect each community\'s organizing-principle summary. Ask in plain language: the built-in engine answers from the dataset, and answers are AI-enriched when an OpenAI key is present (shared with the other tabs). This is the Pathway-20 substrate: the C2A2 method applied to communities rather than thinkers.'
     },
     'wiki_narration.html': {
