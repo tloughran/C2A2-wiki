@@ -653,11 +653,18 @@
     }).join('');
   };
 
+  // Subtype picker is a single <select> (mirrors Country/Source). The multi-select
+  // state.subtypes Set is retained so heatmap-cell / distribution-bar click-to-filter
+  // still works; the dropdown reflects the selection when exactly one subtype is active
+  // (and shows "All subtypes" when zero or — e.g. after a multi-select affordance — more
+  // than one is active, with the active-filter chips below carrying the full set).
   const renderSubtypePills = () => {
-    els.subtypePills.innerHTML = orderedSubtypes.map((subtype) => {
-      const active = state.subtypes.has(subtype) ? ' active' : '';
-      return `<button class="pill${active}" data-subtype="${escapeHtml(subtype)}">${escapeHtml(subtype)} <span class="count">${numberFmt.format(subtypeCountsGlobal.get(subtype) || 0)}</span></button>`;
-    }).join('');
+    if (!els.subtypeSelect) return;
+    const current = state.subtypes.size === 1 ? Array.from(state.subtypes)[0] : '';
+    els.subtypeSelect.innerHTML = ['<option value="">All subtypes</option>']
+      .concat(orderedSubtypes.map((subtype) =>
+        `<option value="${escapeHtml(subtype)}"${subtype === current ? ' selected' : ''}>${escapeHtml(subtype)} (${numberFmt.format(subtypeCountsGlobal.get(subtype) || 0)})</option>`))
+      .join('');
   };
 
   const renderSelectOptions = () => {
@@ -819,7 +826,9 @@
         <article class="insight-card">
           <h3>Sparse subtype expansion</h3>
           <p>${sparseVisibleSubtypes.length ? `Underrepresented subtype labels visible here: ${escapeHtml(sparseVisibleSubtypes.join(', '))}.` : 'No globally sparse subtypes are visible in the current slice.'}</p>
-          <div class="inline-actions"><button class="inline-button" data-preset="sparse">Focus sparse subtypes</button></div>
+          <!-- "Focus sparse subtypes" button removed 2026-06-06: it bulk-multi-selected
+               ~140 subtypes, which the single-select Subtype dropdown can't represent
+               (would flood the active-filter chips). applyPreset('sparse') is now dead. -->
         </article>
         <article class="insight-card">
           <h3>Manual curation slice</h3>
@@ -1234,7 +1243,7 @@
     els.manualOnly = document.querySelector('#manual-only');
     els.geoOnly = document.querySelector('#geo-only');
     els.typePills = document.querySelector('#type-pills');
-    els.subtypePills = document.querySelector('#subtype-pills');
+    els.subtypeSelect = document.querySelector('#subtype-select');
     els.metrics = document.querySelector('#metrics');
     els.heatmap = document.querySelector('#heatmap');
     els.subtypeBars = document.querySelector('#subtype-bars');
@@ -1301,6 +1310,11 @@
 
     els.country.addEventListener('change', () => { state.country = els.country.value; state.page = 1; update(); });
     els.source.addEventListener('change', () => { state.source = els.source.value; state.page = 1; update(); });
+    els.subtypeSelect.addEventListener('change', () => {
+      state.subtypes = els.subtypeSelect.value ? new Set([els.subtypeSelect.value]) : new Set();
+      state.page = 1;
+      update();
+    });
     els.sort.addEventListener('change', () => { state.sort = els.sort.value; update(); });
     els.pageSize.addEventListener('change', () => { state.pageSize = Number(els.pageSize.value); state.page = 1; update(); });
     els.manualOnly.addEventListener('change', () => { state.manualOnly = els.manualOnly.checked; state.page = 1; update(); });
