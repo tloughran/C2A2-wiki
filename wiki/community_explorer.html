@@ -119,10 +119,12 @@
   <button class="subtab" id="tab-cards">Cards</button>
   <button id="tabs-help" title="How Graph and Cards relate">?</button>
   <div id="spacer"></div>
-  <span id="stats"></span>
-  <button class="ctrl" id="btn-hold">Hold Forces</button>
-  <button class="ctrl" id="btn-names">Show Names</button>
-  <button class="ctrl" id="btn-fit">Fit All</button>
+  <span id="graph-controls">
+    <span id="stats"></span>
+    <button class="ctrl" id="btn-hold">Hold Forces</button>
+    <button class="ctrl" id="btn-names">Show Names</button>
+    <button class="ctrl" id="btn-fit">Fit All</button>
+  </span>
 </div>
 <div id="main">
   <div id="leftpanel">
@@ -748,11 +750,15 @@ const cardsView = document.getElementById('cardsview');
 const graphWrap = document.getElementById('graphwrap');
 const leftPanel = document.getElementById('leftpanel');
 const footerEl = document.getElementById('footer');
+// The Hold/Names/Fit buttons + node/edge stats are graph-only; the Cards app has
+// its own controls, so this group is hidden on the Cards sub-tab.
+const graphControls = document.getElementById('graph-controls');
 tabGraph.addEventListener('click', () => {
   tabGraph.classList.add('active'); tabCards.classList.remove('active');
   cardsView.style.display = 'none';
   graphWrap.style.display = ''; leftPanel.style.display = '';
   footerEl.style.display = '';
+  graphControls.style.display = '';
 });
 tabCards.addEventListener('click', () => {
   tabCards.classList.add('active'); tabGraph.classList.remove('active');
@@ -761,8 +767,9 @@ tabCards.addEventListener('click', () => {
   graphWrap.style.display = 'none'; leftPanel.style.display = 'none';
   rp.classList.remove('open');
   cardsView.style.display = 'block';
-  // The cards app carries its own search + Ask AI pipeline; hide ours.
+  // The cards app carries its own search + Ask AI pipeline + controls; hide ours.
   footerEl.style.display = 'none';
+  graphControls.style.display = 'none';
 });
 
 window.addEventListener('resize', () => { if (sim) sim.force('center', d3.forceCenter(width() / 2, height() / 2)); });

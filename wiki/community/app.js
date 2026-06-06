@@ -745,7 +745,9 @@
       rowTotals.set(row.Subtype, (rowTotals.get(row.Subtype) || 0) + 1);
     });
     const maxValue = Math.max(1, ...Array.from(matrix.values()), ...Array.from(rowTotals.values()), ...Array.from(colTotals.values()));
-    const rowsHtml = orderedSubtypes.map((subtype) => {
+    // Collapse rows whose subtype has zero members in the current slice (e.g. when a
+    // Type or search filter is active, most of the 158 subtype rows would be all-zero).
+    const rowsHtml = orderedSubtypes.filter((subtype) => (rowTotals.get(subtype) || 0) > 0).map((subtype) => {
       const cells = typeOrder.map((type) => {
         const value = matrix.get(`${type}|||${subtype}`) || 0;
         const alpha = value === 0 ? 0.05 : Math.min(0.85, 0.08 + (value / maxValue) * 0.78);
