@@ -70,7 +70,13 @@
   const getKey = () => { try { return (localStorage.getItem(C2A2_KEY_NAME) || '').trim(); } catch (e) { return ''; } };
   const callLLM = (opts) => window.C2A2Search.callBroker(opts);
 
-  const typeOrder = ['Academic', 'Ideological', 'Corporate'];
+  // Bulk-directory types first, then the 8 C2A2 curated-graph types (these
+  // arrive with the 156 CC-keyed curated communities merged in 2026-06-06;
+  // listing them here gives them type pills + heatmap columns).
+  const typeOrder = ['Academic', 'Ideological', 'Corporate',
+    'Tradition-Constituted Enquiry', 'Practice Communities', 'Contemplative & Spiritual',
+    'Civic & Political', 'Scientific Frontier', 'Interdisciplinary Synthesis',
+    'Local & Embodied', 'Professional Guilds'];
   const countBy = (rows, key) => {
     const map = new Map();
     rows.forEach((row) => {

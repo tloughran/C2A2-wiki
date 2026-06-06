@@ -24,6 +24,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent
 INPUT_PATH = REPO_ROOT / "wiki" / "community" / "community_graph.json"
+SEARCHLIB_PATH = REPO_ROOT / "wiki" / "lib" / "c2a2-search.js"
 OUTPUT_PATH = REPO_ROOT / "wiki" / "community_explorer.html"
 
 TYPE_COLORS = {
@@ -65,6 +66,12 @@ HTML_HEAD = """<!DOCTYPE html>
     background: #16161f; color: #9a9ab0; font-size: 12px; cursor: pointer;
   }
   .subtab.active { background: #28283a; color: #e8e8f0; border-color: #5b7fa5; }
+  #tabs-help {
+    width: 20px; height: 20px; line-height: 18px; text-align: center;
+    border: 1px solid #33334a; border-radius: 50%; background: #16161f;
+    color: #9a9ab0; font-size: 12px; cursor: pointer; padding: 0;
+  }
+  #tabs-help:hover { color: #c9a84c; border-color: #4a4a5a; }
   #spacer { flex: 1; }
   .ctrl {
     padding: 4px 12px; border: 1px solid #33334a; border-radius: 5px;
@@ -123,6 +130,26 @@ HTML_HEAD = """<!DOCTYPE html>
   #cardsview { flex: 1 1 auto; display: none; }
   #cardsview iframe { width: 100%; height: 100%; border: 0; }
   svg .lbl { font-size: 9.5px; fill: #b8b8c6; pointer-events: none; }
+  /* ── Search footer ── */
+  #footer { flex: 0 0 auto; background: #11111a; border-top: 1px solid #22222e; padding: 6px 14px; }
+  #search-status { font-size: 12px; color: #9a9ab0; line-height: 1.5; padding: 0 0 6px; display: none; }
+  #search-row { display: flex; gap: 8px; align-items: center; }
+  #search-row input[type="text"] {
+    flex: 1; min-width: 160px; background: #16161f; border: 1px solid #33334a;
+    color: #e8e8f0; padding: 4px 10px; border-radius: 5px; font-size: 12.5px;
+  }
+  .chk { display: flex; align-items: center; gap: 5px; font-size: 11.5px; color: #9a9ab0; cursor: pointer; white-space: nowrap; }
+  /* ── Tabs help modal ── */
+  #help-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 1200; justify-content: center; align-items: center; }
+  #help-modal.open { display: flex; }
+  #help-card { background: #12121c; border: 1px solid #2a2a3a; border-radius: 10px; padding: 26px 30px; width: 540px; max-width: 92%; max-height: 86%; overflow-y: auto; position: relative; box-shadow: 0 8px 32px rgba(0,0,0,0.6); }
+  #help-card h3 { color: #c9a84c; font-size: 16px; font-family: Georgia, serif; margin: 0 0 14px; padding-right: 24px; }
+  #help-card .note { color: #c79a5a; font-size: 12px; line-height: 1.55; margin: 0 0 14px; padding: 8px 11px; border: 1px solid #3a3320; border-radius: 6px; background: #1b180f; }
+  #help-card p { color: #ccc; font-size: 13px; line-height: 1.65; margin: 0 0 11px; }
+  #help-card p:last-child { margin-bottom: 0; }
+  #help-card strong { color: #e8e8f0; }
+  #help-close { position: absolute; top: 10px; right: 14px; background: transparent; border: none; color: #666; font-size: 20px; cursor: pointer; line-height: 1; padding: 2px 6px; }
+  #help-close:hover { color: #c9a84c; }
 </style>
 </head>
 <body>
@@ -130,6 +157,7 @@ HTML_HEAD = """<!DOCTYPE html>
   <h1>Community Explorer</h1>
   <button class="subtab active" id="tab-graph">Graph</button>
   <button class="subtab" id="tab-cards">Cards</button>
+  <button id="tabs-help" title="How Graph and Cards relate">?</button>
   <div id="spacer"></div>
   <span id="stats"></span>
   <button class="ctrl" id="btn-hold">Hold Forces</button>
@@ -154,13 +182,44 @@ HTML_HEAD = """<!DOCTYPE html>
   </div>
   <div id="cardsview"><iframe data-src="community/index.html"></iframe></div>
 </div>
+<div id="footer">
+  <div id="search-status"></div>
+  <div id="search-row">
+    <input type="text" id="search-input" autocomplete="off"
+      placeholder='Search communities &mdash; or "focus: civic ~ scientific" to isolate cross-type links'>
+    <button class="ctrl" id="btn-search">Search</button>
+    <button class="ctrl" id="btn-clear">Clear</button>
+    <label class="chk"><input type="checkbox" id="search-ai-mode"> Ask AI</label>
+    <label class="chk"><input type="checkbox" id="search-external"> Allow wider search</label>
+  </div>
+</div>
+<div id="help-modal">
+  <div id="help-card">
+    <button id="help-close" title="Close">&#x00D7;</button>
+    <h3>Graph and Cards &mdash; two surfaces, one instrument</h3>
+    <p class="note">This tool is currently still under construction, and has been seeded with publicly-available information about communities without their express consent.</p>
+    <p>The <strong>Cards</strong> directory is the wide door. It holds every community we've found &mdash; the full directory &mdash; each an inferred <em>seed</em> until the community itself claims the record and sharpens its own Goals, Problems, Resources, and Solutions. Its work is breadth and self-articulation: a place to be found, to find peers, and to say in your own words what you are about.</p>
+    <p>The <strong>Graph</strong> is the narrow, relational view. It shows the 156 communities articulated to a quality bar, positioned by how kindred their problems are &mdash; so you can see which traditions sit near one another and where one type reaches across to another. Its work is depth and detection: making the relationships between communities visible, and eventually measurable.</p>
+    <p>The two are complementary and mutually upbuilding. The directory feeds the graph: a seed record, once a community articulates it well, earns its place in the relational map and grows edges to its neighbors. The graph gives the directory its purpose: a destination worth articulating toward, and a picture of the whole that no single card can show. Breadth invites; depth reveals &mdash; each makes the other more truthful.</p>
+  </div>
+</div>
 <script>
 const GRAPH = """
 
 HTML_TAIL = """;
 const TYPE_COLORS = """  # noqa — second injection point
 
-HTML_BODY = """;
+HTML_AFTER_COLORS = """;
+</script>
+<script>
+// ── Inlined shared module: wiki/lib/c2a2-search.js ─────────────────────────
+// Single source of truth is that file; edit it and regenerate this page
+// (same convention as the Sociogram / generate_visualization.py).
+"""  # noqa — third injection point (search lib)
+
+HTML_BODY = """
+</script>
+<script>
 
 // ── State ──────────────────────────────────────────────────────────────────
 const allNodes = GRAPH.nodes;
@@ -386,16 +445,192 @@ document.getElementById('btn-fit').addEventListener('click', () => {
   svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(scale));
 });
 
+// ── Search (highlight lens — NEVER a filter; 2026-05-29 LOCK) ──────────────
+// Mirrors the Sociogram search semantics: empty query restores all opacities,
+// "focus:" is a deterministic relational command over the 8 community types,
+// "Ask AI" routes through the shared C2A2 broker pipeline (c2a2-search.js,
+// inlined above). The lens only touches opacity on already-rendered nodes;
+// it never changes activeTypes / q3Only and silently resets on rebuild().
+const searchInput = document.getElementById('search-input');
+const statusEl = document.getElementById('search-status');
+
+function setStatus(msg) {
+  statusEl.textContent = msg || '';
+  statusEl.style.display = msg ? 'block' : 'none';
+}
+
+function lensReset() {
+  gNodes.selectAll('circle').interrupt().attr('opacity', 1);
+  gLinks.selectAll('line').interrupt().attr('opacity', 1);
+}
+
+// Highlight nodes passing matchFn; dim the rest. Edges stay lit only when
+// both endpoints are highlighted (same rule as the Sociogram focus engine).
+function applyLens(matchFn) {
+  const inSet = {};
+  visNodes.forEach(n => { if (matchFn(n)) inSet[n.id] = true; });
+  gNodes.selectAll('circle').interrupt().attr('opacity', n => inSet[n.id] ? 1 : 0.08);
+  gLinks.selectAll('line').interrupt().attr('opacity', e => (inSet[idOf(e.source)] && inSet[idOf(e.target)]) ? 1 : 0.05);
+  return Object.keys(inSet).length;
+}
+
+function nodeHaystack(n) {
+  return (n.name + ' ' + n.id + ' ' + n.type + ' ' + (n.subtype || '') + ' ' + (n.country || '') + ' ' +
+    (n.description || '') + ' ' + (n.problem || '') + ' ' + (n.resource || '') + ' ' + (n.solution || '')).toLowerCase();
+}
+
+const TYPE_LIST = Object.keys(TYPE_COLORS);
+
+// Resolve one side of a focus expression to a set of type names.
+// Comma-separated segments, each a case-insensitive substring of a type name.
+function resolveTypeSide(txt) {
+  const out = new Set();
+  String(txt || '').split(',').map(s => s.trim().toLowerCase()).filter(Boolean).forEach(seg => {
+    TYPE_LIST.forEach(t => { if (t.toLowerCase().indexOf(seg) !== -1) out.add(t); });
+  });
+  return out;
+}
+
+function runFocus(afterPrefix) {
+  const sides = String(afterPrefix || '').split('~');
+  if (sides.length < 2) {
+    const one = resolveTypeSide(sides[0]);
+    if (!one.size) {
+      setStatus('Focus syntax: focus: <type> ~ <type> (e.g. "focus: civic ~ scientific") or focus: <type> to isolate one. Types: ' + TYPE_LIST.join(', ') + '.');
+      return;
+    }
+    const count = applyLens(n => one.has(n.type));
+    setStatus('Focus "' + [...one].join(', ') + '": highlighted ' + count + ' communities. Clear to restore.');
+    return;
+  }
+  const A = resolveTypeSide(sides[0]);
+  const B = resolveTypeSide(sides[1]);
+  if (!A.size || !B.size) {
+    setStatus('Focus: could not resolve a community type on each side of "~". Types: ' + TYPE_LIST.join(', ') + '.');
+    return;
+  }
+  const cross = {};
+  visEdges.forEach(e => {
+    const s = nodeById[idOf(e.source)], t = nodeById[idOf(e.target)];
+    if ((A.has(s.type) && B.has(t.type)) || (A.has(t.type) && B.has(s.type))) { cross[s.id] = true; cross[t.id] = true; }
+  });
+  const lbl = [...A].join(', ') + ' ~ ' + [...B].join(', ');
+  const count = applyLens(n => cross[n.id]);
+  if (!count) setStatus('Focus "' + lbl + '": no cross-type links among visible communities. Check the type filters at left.');
+  else setStatus('Focus "' + lbl + '": isolated ' + count + ' communities linked across the two type sets. Clear to restore.');
+}
+
+const C2A2_CE_SYSTEM_DATASET = 'You are a retrieval assistant for the C2A2 Community Explorer. Each candidate line is a community: id | name | type | excerpt. Pick the most relevant ids and write a brief grounded answer using ONLY the candidates. Reply with ONE JSON object and nothing else: {"ids":["<id>", ... up to 12 most relevant], "answer":"2-3 sentence summary grounded in the candidates"}.';
+const C2A2_CE_SYSTEM_WEB = 'You are a retrieval assistant for the C2A2 Community Explorer. Each candidate line is a community: id | name | type | excerpt. A WEB_CONTEXT block of up to 5 web snippets will be appended. Pick the most relevant candidate ids and write a brief answer; when you draw on a web snippet, cite it [1], [2], etc. Pick ids only from the candidates. Reply with ONE JSON object: {"ids":["<id>", ... up to 12 most relevant], "answer":"2-4 sentence summary with bracket citations where applicable"}.';
+
+function runSearchAI(rawQuery) {
+  if (!window.C2A2Search || typeof window.C2A2Search.enrich !== 'function') {
+    setStatus('Search module not loaded.');
+    return;
+  }
+  const query = String(rawQuery || '').trim();
+  if (!query) return;
+  const extBox = document.getElementById('search-external');
+  const useWeb = !!(extBox && extBox.checked);
+
+  // Pre-rank visible nodes by term overlap; trim to 30 for the prompt budget.
+  const qTerms = query.toLowerCase().split(/\\s+/).filter(Boolean);
+  let scored = [];
+  visNodes.forEach(n => {
+    const hay = nodeHaystack(n);
+    let s = 0;
+    qTerms.forEach(t => { if (hay.indexOf(t) !== -1) s += 1; });
+    if (s > 0) scored.push({ n: n, s: s });
+  });
+  scored.sort((a, b) => b.s - a.s);
+  scored = scored.slice(0, 30);
+  if (!scored.length) {
+    setStatus('No visible communities match "' + query + '". Try a different query or expand the type filters at left.');
+    return;
+  }
+  const summary = scored.map(x => {
+    const n = x.n;
+    const snip = String((n.description || '') + ' ' + (n.problem || '')).replace(/\\s+/g, ' ').slice(0, 200);
+    return n.id + ' | ' + n.name + ' | ' + n.type + ' | ' + snip;
+  }).join('\\n');
+  const userBlock = 'Query: ' + query + '\\n\\nCandidates:\\n' + summary;
+
+  setStatus('Asking C2A2 (' + (useWeb ? 'database + web' : 'database') + ') ...');
+
+  window.C2A2Search.enrich({
+    useWeb: useWeb,
+    dataset: { system: C2A2_CE_SYSTEM_DATASET, user: userBlock },
+    web: useWeb ? { system: C2A2_CE_SYSTEM_WEB, user: userBlock } : null,
+  }).then(res => {
+    const content = (res.payload && typeof res.payload.text === 'string') ? res.payload.text : '';
+    const m = content.match(/\\{[\\s\\S]*\\}/);
+    if (!m) { setStatus('AI returned a response that could not be parsed. Uncheck "Ask AI" to use local search.'); return; }
+    let parsed;
+    try { parsed = JSON.parse(m[0]); } catch (e) { setStatus('AI response JSON parse failed.'); return; }
+    const pickedIds = Array.isArray(parsed.ids) ? parsed.ids : [];
+    const pickedSet = {};
+    pickedIds.forEach(id => pickedSet[id] = true);
+    applyLens(n => pickedSet[n.id]);
+
+    const modeLabel = res.mode === 'database-plus-web-cited' ? ' [web + database]'
+      : res.mode === 'database-only-after-cap' ? ' [database -- web cap reached]'
+      : res.mode === 'external-search-unavailable' ? ' [database -- web unavailable]'
+      : ' [database]';
+    const warning = res.warning ? (' ' + res.warning) : '';
+    const modelLabel = (res.payload && res.payload.model) ? (' (model: ' + res.payload.model + ')') : '';
+    let sourcesLine = '';
+    if (Array.isArray(res.payload && res.payload.sources) && res.payload.sources.length) {
+      sourcesLine = ' Sources: ' + res.payload.sources.map((s, i) => '[' + (i + 1) + '] ' + (s.title || s.url || '')).join(' | ');
+    }
+    const answer = parsed.answer || '(no answer text)';
+    setStatus('Ask "' + query + '"' + modeLabel + modelLabel + ':' + warning + ' ' + answer + sourcesLine);
+  }).catch(err => {
+    const code = (err && err.message) || 'unknown';
+    setStatus('AI request failed (' + code + '). Uncheck "Ask AI" to fall back to local search.');
+  });
+}
+
+function runSearch() {
+  const raw = searchInput.value.trim();
+  if (!raw) { lensReset(); setStatus(''); return; }
+  // Deterministic relational focus command; explicit prefix never collides
+  // with substring search, and overrides AI mode (same rule as Sociogram).
+  if (raw.toLowerCase().indexOf('focus:') === 0) {
+    runFocus(raw.slice(raw.indexOf(':') + 1));
+    return;
+  }
+  const aiBox = document.getElementById('search-ai-mode');
+  if (aiBox && aiBox.checked) { runSearchAI(raw); return; }
+  const q = raw.toLowerCase();
+  const count = applyLens(n => nodeHaystack(n).indexOf(q) !== -1);
+  setStatus('Search "' + raw + '": ' + count + ' of ' + visNodes.length + ' visible communities. Clear to restore.');
+}
+
+// ── Tabs help modal ("?" beside the Graph|Cards toggle) ───────────────────
+// Text mirrors wiki/architecture/explorer_tabs_complementarity.md (the source
+// of truth); edit that doc and regenerate to keep them aligned.
+const helpModal = document.getElementById('help-modal');
+document.getElementById('tabs-help').addEventListener('click', () => helpModal.classList.add('open'));
+document.getElementById('help-close').addEventListener('click', () => helpModal.classList.remove('open'));
+helpModal.addEventListener('click', ev => { if (ev.target === helpModal) helpModal.classList.remove('open'); });
+document.addEventListener('keydown', ev => { if (ev.key === 'Escape') helpModal.classList.remove('open'); });
+
+document.getElementById('btn-search').addEventListener('click', runSearch);
+document.getElementById('btn-clear').addEventListener('click', () => { searchInput.value = ''; runSearch(); });
+searchInput.addEventListener('keydown', ev => { if (ev.key === 'Enter') runSearch(); });
+
 // ── Graph / Cards sub-tabs ─────────────────────────────────────────────────
 const tabGraph = document.getElementById('tab-graph');
 const tabCards = document.getElementById('tab-cards');
 const cardsView = document.getElementById('cardsview');
 const graphWrap = document.getElementById('graphwrap');
 const leftPanel = document.getElementById('leftpanel');
+const footerEl = document.getElementById('footer');
 tabGraph.addEventListener('click', () => {
   tabGraph.classList.add('active'); tabCards.classList.remove('active');
   cardsView.style.display = 'none';
   graphWrap.style.display = ''; leftPanel.style.display = '';
+  footerEl.style.display = '';
 });
 tabCards.addEventListener('click', () => {
   tabCards.classList.add('active'); tabGraph.classList.remove('active');
@@ -404,6 +639,8 @@ tabCards.addEventListener('click', () => {
   graphWrap.style.display = 'none'; leftPanel.style.display = 'none';
   rp.classList.remove('open');
   cardsView.style.display = 'block';
+  // The cards app carries its own search + Ask AI pipeline; hide ours.
+  footerEl.style.display = 'none';
 });
 
 window.addEventListener('resize', () => { if (sim) sim.force('center', d3.forceCenter(width() / 2, height() / 2)); });
@@ -421,8 +658,10 @@ def main():
 
     graph_json = json.dumps(graph, ensure_ascii=False)
     colors_json = json.dumps(TYPE_COLORS, ensure_ascii=False)
+    searchlib_js = SEARCHLIB_PATH.read_text(encoding="utf-8")
 
-    html = HTML_HEAD + graph_json + HTML_TAIL + colors_json + HTML_BODY
+    html = (HTML_HEAD + graph_json + HTML_TAIL + colors_json
+            + HTML_AFTER_COLORS + searchlib_js + HTML_BODY)
 
     OUTPUT_PATH.write_text(html, encoding="utf-8")
     kb = OUTPUT_PATH.stat().st_size / 1024
