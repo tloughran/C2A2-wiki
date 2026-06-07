@@ -16,6 +16,8 @@ length_tier: short
 fidelity_checked: true
 synthesis: "[[Day-152 - Accusation - Contemporary]]"
 tags: [summa, day/152, pars/2, q/68]
+last_qc_at: "2026-06-06T12:21:06"
+last_qc_outcome: "pass"
 ---
 
 # Day 152 — Accusation

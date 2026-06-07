@@ -6,12 +6,17 @@ title: Softness
 summa_ref: Secunda Secundae, Q.138-139
 duration_seconds: 417
 word_count: 1127
+raw_asr_word_count: 1119
+length_tier: short
 segment_count: 168
 caption_kind: asr
 language: en
 fetched_at: 2026-06-02
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-187 - Softness - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-03T08:22:06"
+last_qc_outcome: "rewrote"
 tags: [summa, day/187, pars/II, q/138]
 ---
 

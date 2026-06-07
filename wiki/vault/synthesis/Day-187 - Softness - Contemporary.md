@@ -17,7 +17,7 @@ evidence_strength_summary: "Habituation-to-pleasure as runaway precision = forma
 mind_first_reframe: "Softness and pertinacity are the two precision pathologies of a self-regulating agent — under-weighting the goal-prior (yielding to gentle pressure) and over-weighting the self-prior (clinging past reason) — and the gift of fortitude is firmness supplied from beyond the agent's own resources."
 central_theme_thread: "Softness is what it looks like when an individuated agent's perspective collapses to its immediate resources and loses the whole; the cure is not more grit but a gift from one who sees and wills more than the limited frame can — 'fear and trembling' read from the side of our insufficiency."
 tags: [synthesis, day/187, theme/regulatory-failure]
-last_qc_at: "2026-06-02T22:26:46"
+last_qc_at: "2026-06-03T22:27:51"
 last_qc_outcome: "pass"
 ---
 

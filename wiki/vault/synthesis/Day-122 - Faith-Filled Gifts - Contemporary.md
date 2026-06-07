@@ -18,7 +18,7 @@ evidence_strength_summary: "Interface theory of perception (grasp of non-contrad
 mind_first_reframe: "The gift of understanding is the finite agent's capacity to grasp the coherence of its faith-model without grasping the essence of its objects; the 'mirror dimly' veil is generalized to the universal interface (Hoffman), Markov blanket (Friston), dissociative boundary (Kastrup), so grace adds a higher-precision prior that lets the agent trust the deeper model against the appearances, and right cognition is gated by the will's orientation because precision is allocated according to what the agent values."
 central_theme_thread: "This is where the project's epistemology becomes explicit: if every perspective is partial, the limited agent still knows the whole not by seeing the essence (which would require removing the limitation) but by grasping that the model given to it is coherent and trusting the higher-perceiving node that supplied it — 'we see in a mirror dimly' is the central theme's epistemic motto, held until the limitations are removed and 'then face to face.'"
 tags: [synthesis, day/122, theme/gifts-understanding-knowledge]
-last_qc_at: "2026-05-28T04:21:32"
+last_qc_at: "2026-06-04T04:21:47"
 last_qc_outcome: "pass"
 ---
 

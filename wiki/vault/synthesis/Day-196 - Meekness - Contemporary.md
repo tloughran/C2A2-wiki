@@ -1,0 +1,62 @@
+---
+day: 196
+title: Meekness (Contemporary)
+pairs_with: "[[Day-196 - Meekness]]"
+length_target_words: 1500
+length_actual_words: 1593
+length_ratio_to_target: 1.06
+length_tier: short
+karpathy_wiki_sources:
+  - "traditions/friston/prs_triplets.md (PRS-10 reasoning as expected-free-energy minimization; PRS-14 Bayesian self-trapping; precision-weighting of policies)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-20 spaciousness as right-hemispheric remediation; PRS-05 attention as ontological act)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-01 vagal tone / upward spirals; PRS-02 love as objective coupling)"
+  - "traditions/wright/ (critical realism; faithful improvisation); traditions/rohr/ (transformation over willpower)"
+evidence_strength_summary: "Incontinence-as-two-failure-modes and meekness-as-retrained-precision = mechanistic, medium-high; the metric of gravity by depth-of-seating = conceptual with a learning-theory anchor; meekness/clemency as appetite-vs-action targets = structural reconstruction; the ranking of these virtues = moral-theological."
+mind_first_reframe: "Incontinence is a control failure with two distinct signatures — impetuous (no deliberation runs) and weak (deliberation runs, then is overridden at execution); intemperance is the same disorder learned into the model. Meekness is the retraining of the irascible appetite's precision so anger no longer mis-fires, while clemency caps the action even when the feeling is right."
+central_theme_thread: "A perspective aligned to loving unity is not one with no anger but one whose anger is calibrated to real injury and capped in action; meekness and clemency are two stages of getting the limited agent's irascible response to track the whole rather than the self."
+tags: [synthesis, day/196, theme/calibrated-restraint]
+last_qc_at: "2026-06-04T12:29:45"
+last_qc_outcome: "pass"
+---
+
+# Day 196 — Meekness (Contemporary Parallel)
+
+## Frame
+
+Aquinas continues down the parts of temperance, and the day has two movements. First, Q.156 anatomizes *incontinence*: the soul's failure — not the body's — to hold a passion under reason. He splits the failure cleanly. Either the will "suddenly and quickly yields to some passion without really thinking it over" (impetuosity), or one has "already deliberated and firmly judged the right course of action, but when the time came thought otherwise due to the sway of passion" (weakness). He then ranks: the incontinent man sins *less* gravely than the intemperate, because in the intemperate "the will is inclined to sin in virtue of its own choice, which proceeds from a habit acquired through custom," whereas the incontinent is merely "inclined to sin through a passion." Second, Q.157 introduces meekness and clemency as annexed parts of temperance — meekness "properly mitigates the passion of anger," clemency "moderates external punishment." The contemporary version of the question: *what kind of system fails in these two distinct ways, what is the difference between a transient failure and a learned one, and what does it mean to govern anger at the level of the feeling versus the level of the act?*
+
+## Problem
+
+Two linked inquiry-problems persist from the thirteenth century into the present. The first is a **taxonomy and a gravity-metric for self-control failures**. Impetuosity and weakness are not the same malfunction: one bypasses deliberation entirely, the other lets deliberation finish and then fails at execution. And incontinence-in-general differs from intemperance not in *what* is wanted but in *how deeply the wanting is seated* — a passing pull versus an acquired disposition. The problem is to say what the underlying control system is, such that these are genuinely different faults of it and such that "more deeply seated" is genuinely "worse." The second problem is the **two-target structure of governing anger**: Aquinas insists that restraining the *passion* (meekness) and restraining the *act* of vengeance (clemency) are different virtues, because "anger has to do with vengeance... there will also be this temptation to overstep the actual act." The problem is why feeling and action need separately governing — why curbing the appetite does not automatically curb the deed.
+
+## Resource
+
+The leading move comes from the Friston-tradition record of agency under active inference, where an agent is a hierarchical generative model selecting policies by minimizing expected free energy (Tom's PRS-form record of that program at PRS-10, which unifies perception, action, and reasoning as one optimization differing only in target). On that picture, the two incontinences are two well-defined failures. *Impetuosity* is a high-precision sensory or appetitive prediction driving action before the slower policy-evaluation loop has run — execution outruns deliberation. *Weakness* is the failure Aquinas describes exactly: deliberation completes and selects the right policy, but at the moment of action the errant appetitive prediction is weighted so heavily that it captures the motor output anyway — the plan is sound, the precision-weighting at execution betrays it. Intemperance is then the deeper lesion the same record models as Bayesian self-trapping (PRS-14): the disordered appetite has been *learned into the model itself*, written into the priors by repeated choice, so it is no longer a stray high-precision signal but the system's settled expectation. That is precisely Aquinas's "habit acquired through custom," and it grounds his gravity ranking: a fault in the priors is worse than a fault in a single inference because it reliably reproduces itself.
+
+For meekness as distinct from clemency, the resource is the same precision account joined to the contemplative-practice record. Meekness — retraining the *passion* — is the slow re-weighting of the irascible appetite so that anger fires at the right size for the real injury and no larger; the McGilchrist-tradition account of *spaciousness* as a deliberate, learnable counter-discipline (Tom's PRS-form record at PRS-20) names the practice by which that re-weighting is actually trained, and the Fredrickson-tradition record of vagal tone and upward spirals (PRS-01) names a measurable bodily signature of the re-regulated state. Clemency — capping the *act* — is a separate control point downstream: a policy constraint on the severity of the executed response that holds even when the felt anger is itself justified. Two targets because a hierarchical controller has two places to intervene: the generative model that produces the feeling, and the policy that selects the deed.
+
+## Solution (proposed, speculative)
+
+The contemporary-parallel response: incontinence is a control failure with two signatures — impetuous (action precedes a deliberation run) and weak (deliberation runs and is then overridden by mis-weighted appetite at execution) — and it is less grave than intemperance because intemperance is the same disorder learned into the model's priors rather than expressed in a single lapse. Meekness is the retraining of the irascible appetite's precision so anger tracks real injury; clemency is the downstream cap on the severity of the act, needed separately because feeling and deed are distinct intervention points.
+
+*What it shares with Aquinas.* It keeps his two-mode split of incontinence intact and for his reasons; it keeps his gravity ranking (incontinence below intemperance) and his stated rationale (transient passion versus acquired habit of will); and it keeps the meekness/clemency distinction exactly — passion versus external act — including their shared status as genuine but non-supreme virtues annexed to temperance.
+
+*Where it reframes.* The static faculty-hierarchy (will above passion, reason above appetite) becomes a hierarchical inference-and-control architecture; "inclined to sin through a passion" becomes a high-precision errant prediction, and "habit acquired through custom" becomes a disorder written into the priors. This sharpens *why* the deeper fault is worse — it is self-reproducing — and *how* one moves out of it: practiced restraint is, in part, how the priors get re-trained, so meekness is the maturation of repeated clemency-like overrides into a model that no longer mis-fires. On Aquinas's own flagged uncertainty — his body-heat argument for why anger is "less shameful" than desire — the contemporary record simply sets it aside, as Austin himself does in the episode.
+
+*Where evidence is firm vs. speculative.* The two-failure-mode reading and the priors-vs-inference account of the gravity ranking are well-grounded in learning theory and control (mechanistic, medium-high). Meekness-as-precision-retraining with a vagal-tone signature is empirically anchored but the mapping to Aquinas's category is a reconstruction (medium). The meekness/clemency two-target structure is a clean structural reading rather than an empirical finding. The ranking of these virtues against the theological and toward-the-good virtues is, as Aquinas presents it, moral-theological, and is left as the tradition's.
+
+## The central-theme thread
+
+The project's telos is loving unity among limited perspectives, and anger is exactly the appetite where a limited perspective most easily mistakes its own injury for the measure of justice. The day's analysis is a study in calibration toward the whole. A perspective aligned to loving unity is not one that has *deleted* anger — the deficiency is itself a vice in the treatise that follows — but one whose anger is sized to the real damage done to the order that binds agents, and capped in action so that the response does not itself tear that order. Meekness is the slow re-forming of the appetite so that its precision tracks the whole rather than the threatened self; clemency is the agent, still feeling rightful anger, refusing to let the deed exceed what union can bear. Both are the limited agent learning not to weight its own perspective above its place. Wright's critical-realist note: all knowing, and all anger, is "from within a story" and perspectival, but can be tested against reality — meekness is anger submitting to that test rather than asserting itself as the test. Rohr's: the goal is transformation, not willpower; clemency's effortful cap is the necessary earlier discipline that meekness's retrained appetite finally relaxes — the same continence-to-temperance ripening, now in the register of wrath.
+
+## Bridges
+
+- **Impetuosity / weakness ↔ two control-failure signatures** — the Friston-tradition record, PRS-10. *Why:* one fault precedes the deliberation loop, the other overrides its output at execution. Evidence: **mechanistic, medium-high**.
+- **Intemperance ↔ disorder learned into the priors** — the Friston-tradition record, PRS-14 (Bayesian self-trapping). *Why:* "habit acquired through custom" is a fault written into the model, self-reproducing and so graver. Evidence: **mechanistic, medium-high**.
+- **Meekness ↔ retrained appetitive precision** — the McGilchrist-tradition record (PRS-20 spaciousness) + the Fredrickson-tradition record (PRS-01 vagal tone). *Why:* meekness re-weights the irascible appetite so anger fits the injury; spaciousness is the training practice, vagal tone a bodily signature. Evidence: **empirical anchor, mapping is reconstruction (medium)**.
+- **Clemency ↔ downstream policy cap on severity** — the Friston-tradition control account. *Why:* a separate intervention point on the act, holding even when the feeling is justified. Evidence: **structural reconstruction**.
+- **Calibrated anger ↔ transformation over willpower; perspectival knowing tested against reality** — the Rohr- and Wright-tradition resources. *Why:* meekness is anger submitting to the whole rather than asserting the self as measure. Evidence: **theological**.
+
+## Where this leaves us
+
+This opens the short treatise on anger from its temperance side — the virtues that govern it — and sets up tomorrow's head-on treatment in Q.158: when anger is *lawful*, when sinful, and why even the *lack* of anger can be a vice. The override-versus-alignment distinction sharpened here will be tested there against the surprising claim that zero anger is not the ideal. Open thread worth carrying: the precision account predicts that anger has an optimum, not a minimum — a falsifiable contrast with any "extinguish-the-passion" reading — and the next synthesis should pin Aquinas's defect-of-anger argument (Q.158 a.8) directly onto it.

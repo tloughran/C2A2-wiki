@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-018 - Father and Son - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-11T04:27:46"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-06T22:31:35"
+last_qc_outcome: "pass"
 render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/018, pars/I, q/33, q/34, theme/trinity, theme/father, theme/son, theme/word]
 ---

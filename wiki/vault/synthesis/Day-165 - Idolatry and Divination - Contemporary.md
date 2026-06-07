@@ -19,7 +19,7 @@ karpathy_wiki_sources:
   - "wiki/traditions/rohr/wiki.md (Universal Christ: image and signification; contemplative apophasis)"
 evidence_strength_summary: "Formal-strong on computational irreducibility of generic systems (Wolfram) and on active-inference forecasting (Friston). Empirical-strong on saint-veneration as community memory anchoring (Fredrickson positivity-resonance lineage at the cultural level). Theological-primary on Pauline idolatry diagnosis (Wright) and on contemplative apophasis (Rohr). The integrative claim — that pre-modern 'demonic divination' maps onto contemporary disinformation channels — is suggestive, not proven."
 tags: [synthesis, day/165, theme/legitimate-information-source, theme/icon-vs-terminus, theme/contingent-future, pars/II-II, q/94-95]
-last_qc_at: "2026-05-28T12:23:33"
+last_qc_at: "2026-06-04T06:29:44"
 last_qc_outcome: "pass"
 ---
 

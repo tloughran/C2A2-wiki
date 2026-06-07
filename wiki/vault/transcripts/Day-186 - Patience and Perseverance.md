@@ -6,12 +6,17 @@ title: Patience & Perseverance
 summa_ref: Secunda Secundae, Q.136-137
 duration_seconds: 638
 word_count: 1703
+raw_asr_word_count: 1695
+length_tier: short
 segment_count: 259
 caption_kind: asr
 language: en
 fetched_at: 2026-06-02
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-186 - Patience and Perseverance - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-03T08:22:05"
+last_qc_outcome: "rewrote"
 tags: [summa, day/186, pars/II, q/136]
 ---
 

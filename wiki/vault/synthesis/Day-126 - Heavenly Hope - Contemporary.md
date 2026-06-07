@@ -17,8 +17,8 @@ evidence_strength_summary: "Hope as the goal-prior orienting an agent toward an 
 mind_first_reframe: "Hope is the goal-prior of an agent under perspective-limitation: the confident expectation, leaning on a help it does not itself supply, that the arduous-but-possible good — loving union with the whole — is genuinely reachable. Aquinas's 'future good, arduous but possible, attained by divine help' maps onto Friston's preferred-state prior (PRS-03/04) and Levin's morphogenetic target; its proper object (the beatific vision, the simple whole seen) is the central theme's terminus, and hoping for another's good is the coupling of preferred-states across agents (Friston PRS-06 / Fredrickson PRS-03)."
 central_theme_thread: "Hope is the very disposition the central theme names: the limited perspective, aware it cannot reach the whole on its own resources, holds the target — loving unity — as reachable and leans on those who perceive more (human or divine) for the help by which it is reached. Yesterday named the sin that destroys this disposition; today names the disposition itself."
 tags: [synthesis, day/126, theme/hope-as-goal-prior]
-last_qc_at: "2026-05-28T14:30:17"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-05T20:22:27"
+last_qc_outcome: "pass"
 ---
 
 # Day 126 — Contemporary Parallel: Hope as the Goal-Prior

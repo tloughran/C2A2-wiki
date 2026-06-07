@@ -16,6 +16,8 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-136 - Envy - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/136, pars/2, q/36-37]
+last_qc_at: "2026-06-06T00:21:03"
+last_qc_outcome: "pass"
 ---
 
 # Day 136 — Envy

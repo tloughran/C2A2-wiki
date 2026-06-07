@@ -17,7 +17,7 @@ evidence_strength_summary: "Intemperance-as-runaway-precision / habit-hardening 
 mind_first_reframe: "Intemperance is a runaway endogenous prior — a self-reinforcing appetitive set-point the agent trained and could have retrained — and insensibility its mirror suppression of necessary set-points; the 'childish' label marks the developmental fact that the loop hardens as plastic windows close."
 central_theme_thread: "This article shows perspective-limitation is not static but self-deepening: by its own repeated acts an agent contracts its field until the petty fills it and the whole is lost — formation runs whether or not we attend to it."
 tags: [synthesis, day/189, theme/maladaptive-habit]
-last_qc_at: "2026-06-02T22:26:47"
+last_qc_at: "2026-06-03T22:27:52"
 last_qc_outcome: "pass"
 ---
 

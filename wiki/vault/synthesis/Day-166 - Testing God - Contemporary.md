@@ -18,7 +18,7 @@ karpathy_wiki_sources:
   - "Rohr canonical: 'The Universal Christ' on grasping vs. receiving"
 evidence_strength_summary: "Active-inference framing is mathematically formal; the prudential 'no-cheap-tests' rule for agents under uncertainty is empirical (decision theory, control theory); the theological framing of why an agent should refuse to commodify guidance is interpretive — speculative bridge work."
 tags: [synthesis, day/166, theme/epistemic-humility, theme/active-inference, q/96, q/97]
-last_qc_at: "2026-05-30T00:29:03"
+last_qc_at: "2026-06-06T02:29:27"
 last_qc_outcome: "pass"
 ---
 

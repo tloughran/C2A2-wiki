@@ -20,7 +20,7 @@ karpathy_wiki_sources:
   - "master/cross_program_index.md CROSS-013/CROSS-018 on union and biophysiological coupling"
 evidence_strength_summary: "The gift-economy / market-economy distinction is well-documented in economic anthropology (Mauss, Graeber, Polanyi — empirical). The neurobiology of kin-attachment and positivity resonance is empirical (Fredrickson lab). Cancer as morphogenetic defection is empirical (Levin lab). The reading of simony as category-error between economies is interpretive; the further reading of piety as the original positive-pattern of relational-debt recognition is philosophical."
 tags: [synthesis, day/168, theme/gift-economy, theme/relational-debt, q/100, q/101]
-last_qc_at: "2026-05-30T00:29:04"
+last_qc_at: "2026-06-06T02:29:27"
 last_qc_outcome: "pass"
 ---
 

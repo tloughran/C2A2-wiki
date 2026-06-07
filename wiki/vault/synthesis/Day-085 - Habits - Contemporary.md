@@ -84,5 +84,5 @@ karpathy_wiki_sources:
   - "traditions/rohr/ — *Falling Upward*; PRS-01 contemplative habituation"
 evidence_strength_summary: "Habitual vs. goal-directed control, practice-induced affective stabilization, and angry-rumination as anger maintenance are empirically robust. Cortical reference-frame learning and bioelectric morphogenetic memory are empirically supported. Stump on virtue-as-habituation is philosophically rigorous. Conscious-realist-monist reading of habit as alter-level parameter stabilization is speculative. Wright on Pauline virtue-formation and Rohr on contemplative habituation are theologically well-attested."
 tags: [synthesis, day/085, theme/habits, theme/passion-to-habit, theme/anger-effects, theme/dispositional-realism, theme/structural-pivot]
-last_qc_at: "2026-05-28T04:21:09"
+last_qc_at: "2026-06-05T04:20:47"
 last_qc_outcome: "pass"

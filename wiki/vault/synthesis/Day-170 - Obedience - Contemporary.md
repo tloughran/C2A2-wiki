@@ -18,7 +18,7 @@ karpathy_wiki_sources:
   - "master/cross_program_index.md CROSS-019 on right-hemisphere mode in cross-tradition engagement"
 evidence_strength_summary: "Hierarchical Bayesian inference (Friston) and split-brain hemispheric data (McGilchrist) are empirical. The bounded-delegation account of obedience as preserving lower-level inference under higher-level constraint is mathematically formal. The reading of disobedience-as-contempt vs. legitimate refusal is interpretive but converges with bounded-rationality results on principal-agent problems."
 tags: [synthesis, day/170, theme/bounded-delegation, theme/legitimate-authority, q/104, q/105]
-last_qc_at: "2026-05-30T00:29:05"
+last_qc_at: "2026-06-06T02:29:28"
 last_qc_outcome: "pass"
 ---
 

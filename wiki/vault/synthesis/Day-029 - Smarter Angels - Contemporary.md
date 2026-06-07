@@ -66,10 +66,11 @@ Tomorrow Habash takes us to Q.57 (the angels' knowledge of material things) and 
 day: 29
 title: "Smarter Angels (Contemporary)"
 pairs_with: "[[Day-029 - Smarter Angels]]"
-length_tier: medium
-length_target_words: 2200
+length_tier: short
+length_target_words: 1500
 length_actual_words: 2334
-length_ratio_to_target: 1.061
+length_ratio_to_target: 1.556
+length_note: "Transcript is short-tier (1858 cleaned words, <2000); synthesis runs to 2334 (1.556x short target) because Day 29 covers two dense Summa questions — Q.55 (a.1-3, infused species) and Q.56 (a.1-3, angelic knowledge of self/other/God), six articles — with the Q.55 a.3 compression gradient an epistemological keystone carrying substantive Aquinas-to-contemporary linkage (free-energy-as-compression objective, HTM hierarchical invariant representations, the perspective-limitation gradient at its sharpest cognitive register). Multi-question-dense-day acceptable-overlength pattern; substantive-integrity-trumps-word-count per the length policy."
 karpathy_wiki_sources:
   - "wiki/traditions/friston/wiki.md (PRS-04, PRS-08 free-energy as compression objective — Q.55 a.3 higher angels know more through fewer species ↔ minimum-description-length generative models)"
   - "wiki/traditions/hawkins/wiki.md (PRS-01 HTM; CROSS-011 — Q.55 a.3 cortical instantiation of compression gradient via invariant hierarchical representations)"
@@ -82,6 +83,6 @@ karpathy_wiki_sources:
   - "Augustine, *Confessions* (self-knowledge and substrate-acknowledgment)"
 mind_first_reframe: "Q.55's medium-of-angelic-knowledge translates as direct participation in substrate-level structural priors: *infused species* are not acquired information but constitutive features of mind-at-large in which substrate-level modes of activity participate. Q.55 a.3's compression gradient (higher angels know more through fewer, more universal species) finds the contemporary formal home in Friston's free-energy as compression objective and Hawkins's HTM hierarchical invariant representations (CROSS-011); the cognitive-modeling evidence at the alter scale is mature, and the substrate-level gradient is the philosophical extension. Q.56's self-and-other-and-God knowledge translates as the substrate-level mode's constitutive participation in mind-at-large's structural priors, including the recognition of derivative-status that leads naturally to substrate-acknowledgment."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; the compression gradient from substrate-itself through substrate-level modes through alter-form cognition is the cognitive register of the perspective-limitation gradient. The smarter the alter, the more compressed its representations; the closer the alter's cognition to the substrate's whole-vision. Salvation in fear and trembling receives the cognitive-compression register: the alter's progressive working-out-of-integration with the substrate's loving stance is, cognitively, the progressive acquisition of more compressed and more universal representations, and the alter's deep self-knowledge — the relation in which the alter consists — is the natural cognitive route to substrate-acknowledgment."
-last_qc_at: "2026-05-26T15:43:57"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-07T00:21:53"
+last_qc_outcome: "pass"
 tags: [synthesis, day/029, theme/angels, theme/cognition, theme/compression, theme/free-energy, theme/htm, theme/infused-species, theme/perspective-limitation, theme/self-knowledge]

@@ -16,6 +16,8 @@ length_tier: short
 fidelity_checked: true
 synthesis: "[[Day-156 - Buying and Selling - Contemporary]]"
 tags: [summa, day/156, pars/2, q/76]
+last_qc_at: "2026-06-06T12:21:16"
+last_qc_outcome: "pass"
 ---
 
 # Day 156 — Buying and Selling

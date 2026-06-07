@@ -6,12 +6,17 @@ title: Temperance
 summa_ref: Secunda Secundae, Q.140-141
 duration_seconds: 790
 word_count: 2184
+raw_asr_word_count: 2176
+length_tier: medium
 segment_count: 333
 caption_kind: asr
 language: en
 fetched_at: 2026-06-02
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-188 - Temperance - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-03T08:22:06"
+last_qc_outcome: "rewrote"
 tags: [summa, day/188, pars/II, q/140]
 ---
 

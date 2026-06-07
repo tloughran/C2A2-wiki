@@ -18,7 +18,7 @@ evidence_strength_summary: "Metacognitive calibration / overconfidence effects a
 mind_first_reframe: "Truthfulness about oneself is accurate self-calibration: boasting and false self-deprecation are the two miscalibrations of self-report that corrupt a community's allocation of trust, boasting being at depth the false claim to self-completeness by a perspective-limited agent."
 central_theme_thread: "Agents are individuated by the limitation of their perspective; boasting is the agent treating its limited perspective as if it were the whole — the precise error the central theme warns against — while accurate self-assessment lets an agent know when to defer to those who see more and when to offer what only it can see."
 tags: [synthesis, day/174, theme/self-calibration, theme/perspective-limitation, q/112, q/113]
-last_qc_at: "2026-05-30T10:29:30"
+last_qc_at: "2026-06-06T20:23:19"
 last_qc_outcome: "rewrote"
 ---
 
@@ -40,7 +40,7 @@ For a community of limited agents to allocate trust and tasks well, each agent's
 
 **McGilchrist** (PRS-01 in the McGilchrist-tradition wiki) adds the cognitive portrait: the self-aggrandizing presentation belongs to the grasping, self-promoting mode, while accurate self-perception — seeing oneself as one part of a larger whole — belongs to the relational mode. Boasting is the part mistaking itself for more than a part.
 
-**Kastrup** (PRS-02 in the Kastrup-tradition wiki) supplies the metaphysical depth, under the bridges-file guardrail. If each agent is an individuated, dissociated perspective within one mind, then boasting is at root the false claim to *self-completeness* — the agent presenting its partial perspective as though it were the whole, or self-originated. This is the precise inversion of the project's central recognition that agents are individuated *by* the limitation of their perspective. **Fredrickson** gives the affective contrast: authentic self-worth (the secure positivity that needs no audience) versus performed superiority (the brittle display that does).
+**Kastrup** (PRS-02 in the Kastrup-tradition wiki) supplies the metaphysical depth. If each agent is an individuated, dissociated perspective within one mind, then boasting is at root the false claim to *self-completeness* — the agent presenting its partial perspective as though it were the whole, or self-originated. This is the precise inversion of the project's central recognition that agents are individuated *by* the limitation of their perspective. **Fredrickson** gives the affective contrast: authentic self-worth (the secure positivity that needs no audience) versus performed superiority (the brittle display that does).
 
 **Wright** supplies the scriptural resolution. The Pauline treatment of boasting (*kauchēsis*) does not simply forbid it but *relocates* it: "Let the one who boasts boast in the Lord" (1 Cor 1:31, citing Jer 9:23-24). The only accurate boast is the one that acknowledges that whatever the agent has, it received — which makes boasting-in-oneself not merely prideful but *false*, and boasting-in-the-Lord the one true form. **Rohr** gives the contemplative form: the True Self, secure in being held, has nothing to prove and so needs no boast; the deflation of the ego is not self-deprecation but the dropping of the performance entirely.
 

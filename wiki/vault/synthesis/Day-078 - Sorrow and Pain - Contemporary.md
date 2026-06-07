@@ -17,7 +17,7 @@ karpathy_wiki_sources:
   - "traditions/stump/ — Wandering in Darkness on suffering"
 evidence_strength_summary: "Q.35 a.7 (inward pain exceeds outward) has strong empirical/mathematical support from hierarchical predictive coding — higher-level errors have larger downstream effects. Q.35 a.8 four species of sorrow maps closely onto modern affective taxonomies (compassion, envy, anxiety, anhedonic withdrawal) — empirically supported. Q.34 a.3 on enjoyment of God is the speculative/theological claim — reframed as substrate-recovery under Kastrup."
 tags: [synthesis, day/078, theme/sorrow, theme/inward-pain]
-last_qc_at: "2026-05-28T02:28:35"
+last_qc_at: "2026-06-04T18:27:49"
 last_qc_outcome: "pass"
 ---
 

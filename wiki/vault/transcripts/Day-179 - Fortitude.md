@@ -16,6 +16,8 @@ fetched_at: 2026-05-31
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-179 - Fortitude - Contemporary]]"
 tags: [summa, day/179, pars/II-II, q/122-123]
+last_qc_at: "2026-06-06T16:20:53"
+last_qc_outcome: "pass"
 ---
 
 # Day 179 — Fortitude

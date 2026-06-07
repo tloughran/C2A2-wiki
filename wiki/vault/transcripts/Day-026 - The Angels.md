@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-026 - The Angels - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-11T12:27:38"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-07T00:21:52"
+last_qc_outcome: "pass"
 render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/026, pars/I]
 ---

@@ -16,6 +16,8 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-134 - Required Almsgiving - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/134, pars/2, q/32-33]
+last_qc_at: "2026-06-06T00:20:52"
+last_qc_outcome: "pass"
 ---
 
 # Day 134 — Required Almsgiving

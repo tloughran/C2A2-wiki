@@ -6,12 +6,17 @@ title: Beauty & Disgrace
 summa_ref: Secunda Secundae, Q.144-145
 duration_seconds: 727
 word_count: 1957
+raw_asr_word_count: 1950
+length_tier: short
 segment_count: 289
 caption_kind: asr
 language: en
 fetched_at: 2026-06-02
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-190 - Beauty and Disgrace - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-03T08:22:07"
+last_qc_outcome: "rewrote"
 tags: [summa, day/190, pars/II, q/144]
 ---
 

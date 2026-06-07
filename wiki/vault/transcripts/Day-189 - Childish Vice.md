@@ -6,12 +6,17 @@ title: Childish Vice
 summa_ref: Secunda Secundae, Q.142-143
 duration_seconds: 528
 word_count: 1431
+raw_asr_word_count: 1425
+length_tier: short
 segment_count: 220
 caption_kind: asr
 language: en
 fetched_at: 2026-06-02
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-189 - Childish Vice - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-03T08:22:06"
+last_qc_outcome: "rewrote"
 tags: [summa, day/189, pars/II, q/142]
 ---
 

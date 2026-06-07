@@ -16,6 +16,8 @@ length_tier: medium
 fidelity_checked: true
 synthesis: "[[Day-151 - Possessions - Contemporary]]"
 tags: [summa, day/151, pars/2, q/66]
+last_qc_at: "2026-06-06T12:21:06"
+last_qc_outcome: "pass"
 ---
 
 # Day 151 — Possessions

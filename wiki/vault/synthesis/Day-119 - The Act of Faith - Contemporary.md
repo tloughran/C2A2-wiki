@@ -20,7 +20,7 @@ evidence_strength_summary: "Augustine's 'think with assent' read as joint intell
 mind_first_reframe: "Faith is a single integrated active-inference operation by which a generative model containing the wider mind as a high-precision node is held — 'thinking with assent' is cognitive engagement and volitional commitment as one model-based act rather than two faculties; the necessity above natural reason follows from the interface's structural insufficiency to deliver what it presupposes."
 central_theme_thread: "Faith is where the central claim becomes operational at the personal level — the structural opening of the perspective-limited agent to what its interface cannot deliver but presupposes, the entry condition for cooperation with the wider mind that grace installed."
 tags: [synthesis, day/119, theme/faith, theme/epistemology]
-last_qc_at: "2026-05-28T16:21:57"
+last_qc_at: "2026-06-05T00:20:19"
 last_qc_outcome: "pass"
 ---
 
