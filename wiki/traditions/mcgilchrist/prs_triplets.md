@@ -270,5 +270,62 @@ PRS-28:
   Source: "The laziness of the left hemisphere mindset" — Substack essay (2026-04-01)
   Confidence: Medium
 
+PRS-29:
+  Problem: McGilchrist's program has been received primarily as cultural diagnosis (we are in a left-hemisphere world; here is how it went wrong); the constructive side ("what do we do") has been comparatively underspecified, leaving the program open to the charge that it is a diagnosis without a treatment plan
+  Resource: A dedicated lecture, "So How Do We Remake the World (Because We Can)?", framed as the second of the two-day Sheldonian event — explicitly prescriptive in framing, paired with multi-disciplinary respondents from theology, philosophy, cosmology, and integrative science
+  Solution: An institutional upgrade of hemispheric theory from diagnostic critique to a constructive program with named action-targets — relevant for C2A2 as a worked example of how a tradition steps from "we should rebalance" to "here is what rebalancing looks like in practice", which the tradition-accelerator must itself eventually do
+  Date Added: 2026-06-07
+  Source: The Good, The Beautiful and The True — Sheldonian Theatre, Oxford — https://channelmcgilchrist.com/the-good-the-beautiful-and-the-true/; PROP-2026-05-27-002
+  Confidence: Medium
+
+PRS-30:
+  Problem: McGilchrist's claim that the good, the beautiful, and the true are constitutive of the cosmos has been received mostly within the science-and-religion field; whether it engages classical philosophy and cosmology on their own terms has been less clear
+  Resource: The event roster — Angie Hobbs (ancient Greek philosophy / virtue ethics) and Jude Currivan (cosmologist; whole-world physics) appearing as named co-presenters rather than respondents — providing first-time cross-domain co-authorship of McGilchrist's value claim
+  Solution: Cross-tradition triangulation evidence for the value-as-constitutive claim: the same thesis is now stated by McGilchrist (neuroscience/philosophy of mind), Hobbs (Aristotelian virtue tradition), and Currivan (post-materialist physics) in a shared institutional venue — strengthening the claim by showing it is not parochial to one discipline
+  Date Added: 2026-06-07
+  Source: The Good, The Beautiful and The True — Sheldonian Theatre, Oxford — https://channelmcgilchrist.com/the-good-the-beautiful-and-the-true/; PROP-2026-05-27-002
+  Confidence: Medium
+
+PRS-31:
+  Problem: A tradition-accelerator like C2A2 must eventually move from mapping mature traditions to *staging* them — bringing them into the same room — and the question of what such a staging looks like in practice is open
+  Resource: The Sheldonian event as a worked example of single-thinker-centered cross-tradition staging: one host (McGilchrist), four named guest speakers from four distinct domains, two days, panel + Q&A — a format that C2A2's "second-first-language" pedagogy could draw on
+  Solution: A format template for C2A2 tradition-encounter events — single-host, multi-domain-guest, paired diagnostic-and-prescriptive lectures, with recordings issued as a deliverable — adaptable to virtual format for the AI-agent variant
+  Date Added: 2026-06-07
+  Source: The Good, The Beautiful and The True — Sheldonian Theatre, Oxford — https://channelmcgilchrist.com/the-good-the-beautiful-and-the-true/; PROP-2026-05-27-002
+  Confidence: Speculative
+
+PRS-32:
+  Problem: McGilchrist's value claim has been received primarily through co-authored interviews (Parallax trialogue, Unbelievable interview) where the interlocutors' framing partly shapes the position — leaving open whether the "value is constitutive" thesis is McGilchrist's settled view or an artifact of those conversations
+  Resource: First-person Substack essay in which McGilchrist explicitly flags that his own thinking has changed in recent years, with value moving from a derivative category to a fundamental one — and articulates this in his own voice without an interviewer's frame
+  Solution: A canonical author-stated reference for the value-as-constitutive claim, suitable as the primary citation in any C2A2 discussion of where McGilchrist stands on value — superseding earlier interview-derived citations for that purpose
+  Date Added: 2026-06-07
+  Source: The value of value — https://iainmcgilchrist.substack.com/p/the-value-of-value; PROP-2026-05-27-001
+  Confidence: High
+
+PRS-33:
+  Problem: A tradition's growth over time is hard to track when the only public record consists of interviews with shifting interlocutors — the underlying thinker's own trajectory gets obscured by the framing of each conversation
+  Resource: An author-maintained Substack as a longitudinal record of the program's evolution, with explicit "my thinking has changed" markers anchoring transitions — using McGilchrist's Substack as a model
+  Solution: A C2A2 wiki design pattern — each tradition's wiki should privilege author-direct longitudinal sources (Substack, monographs, recorded solo lectures) over interviews when establishing the current state of the program, because direct sources show trajectory and interviews show snapshots
+  Date Added: 2026-06-07
+  Source: The value of value — https://iainmcgilchrist.substack.com/p/the-value-of-value; PROP-2026-05-27-001
+  Confidence: Medium
+
+PRS-34:
+  Problem: Does AI threaten the human soul, or merely mirror back what a left-hemisphere-dominant culture has already become?
+  Resource: McGilchrist's hemisphere theory applied as cultural diagnosis, paired with Pageau's symbolic/iconographic reading of the human person
+  Solution: AI is framed not as an external invader but as the externalized, scaled apotheosis of left-hemisphere re-presentation — its danger is that it accelerates a pathology already underway, not that it introduces a new one
+  Date Added: 2026-06-07
+  Source: AI and the Battle for the Soul — Iain McGilchrist and Jonathan Pageau (in-person symposium) — https://channelmcgilchrist.com/ai-and-the-battle-for-the-soul-with-iain-mcgilchrist-and-jonathan-pageau-saturday-may-9th-from-10am-to-5pm/; PROP-2026-06-03-001
+  Confidence: Medium
+
+PRS-35:
+  Problem: Can the question of machine consciousness be adjudicated on neuroscientific grounds alone?
+  Resource: A deliberately cross-register dialogue (neuroscience/phenomenology meets symbolism/theology)
+  Solution: The "soul" question is posed as irreducible to either register alone — proposing that adjudicating AI's status requires both the empirical (hemispheric) and the symbolic/sacred frame together
+  Date Added: 2026-06-07
+  Source: AI and the Battle for the Soul — Iain McGilchrist and Jonathan Pageau (in-person symposium) — https://channelmcgilchrist.com/ai-and-the-battle-for-the-soul-with-iain-mcgilchrist-and-jonathan-pageau-saturday-may-9th-from-10am-to-5pm/; PROP-2026-06-03-001
+  Confidence: Speculative
+
+
 ---
-*Total PRS triplets: 28*
+*Total PRS triplets: 35*

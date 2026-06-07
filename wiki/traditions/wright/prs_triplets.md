@@ -52,3 +52,23 @@ PRS-04:
   Date Added: 2026-04-29
   Source: The Resurrection of the Son of God (2003)
   Confidence: Medium
+
+PRS-05:
+  Problem: What does "salvation" mean once disembodied-heaven escapism is rejected?
+  Resource: Wright's "God's homecoming" frame — salvation, resurrection, heaven, kingdom as one story of God returning to dwell with a renewed-creation people
+  Solution: Salvation is incorporation into the people among whom God comes home, not relocation of souls; this unifies four doctrines under one narrative arc
+  Date Added: 2026-06-07
+  Source: N.T. Wright: Rethinking Salvation and the Future of Creation — https://outreachmagazine.com/interviews/88588-new-creation-theology-heaven-resurrection.html; PROP-2026-05-31-002
+  Confidence: High
+
+PRS-06:
+  Problem: Does the resurrection require suspending natural law, making it unbelievable to a scientist?
+  Resource: Wright's reframe — resurrection is the firstfruits of new creation breaking into the old, not an anomaly within a closed system
+  Solution: The science/faith conflict dissolves once "new creation" replaces "miracle-as-law-violation"; the dispute is metaphysical (open vs. closed naturalism), not evidential
+  Date Added: 2026-06-07
+  Source: Can a Scientist Believe in the Resurrection? — https://ntwrightpage.com/2026/04/23/can-a-scientist-believe-in-the-resurrection/; PROP-2026-05-31-001
+  Confidence: High
+
+
+---
+*Total PRS triplets: 6*

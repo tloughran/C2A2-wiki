@@ -69,7 +69,7 @@ Displacement vectors in semantic space, validated by Mikolov's vector arithmetic
 - Embedding-based inference
 - Vector space comparisons
 
-**Re-check due:** 2026-05-13 (Monthly)
+**Re-check due:** 2026-07-05 (Monthly) [re-checked by 15d 2026-06-07; re-queued to for_lit_search.md; prior due 2026-05-13]
 
 **Status:** ACTIVE
 
@@ -142,7 +142,7 @@ Convergence of independent lines of evidence (triangulation/overdetermination) i
 - Design of validation protocols requiring independent evidence streams
 - Future finding evaluation criteria
 
-**Re-check due:** 2026-05-15 (Monthly — monitor whether independence of C2A2 findings can be established)
+**Re-check due:** 2026-07-05 (Monthly — monitor whether independence of C2A2 findings can be established) [re-checked by 15d 2026-06-07; re-queued; prior due 2026-05-15]
 
 **Status:** ACTIVE (with standing independence caveat)
 
@@ -1591,3 +1591,56 @@ PREMISE-049:
   Rationale: Stated assumption with strong, convergent support for verify-before-ingest; the only challenge is operational (corpus-size recall + hold-queue durability), resolved by specifying quarantine-with-revisit rather than refuse-to-capture. Consistency-checked vs PREMISE-001..048: reinforces the verify-the-effect/provenance family; no conflict. High confidence because both the integrity risk and the gating benefit are empirically grounded and the operational caveat is fully absorbed into the premise statement.
 
 Total new PREMISEs this run (2026-06-04): 1 (PREMISE-049). PRESUMPTION-class INCORPORATEs: 0 (the sole INCORPORATE is an ASSUMPTION). Cumulative through PREMISE-049.
+
+## INCORPORATE — run 2026-06-05 (2026-06-04 EOD self-awareness batch)
+
+PREMISE-050:
+  Date validated: 2026-06-05
+  Source item: ASSUMPTION-272
+  Statement: A bounded, quality-sensitive ingest backlog should be drained in small, scoped batches rather than one bulk run, because small batches lower per-transaction risk and variability, speed defect detection, and keep each commit reviewable and revertible. CAVEAT folded in: batch size must be tuned to the per-batch attended-authorization cost (a U-shaped cost curve), not fixed a priori — when the attended gate is expensive and the work is a finite one-time backlog, the cost-optimal batch can be larger than 5-8, and over-fragmentation re-introduces an availability dependency on Tom plus a rubber-stamping hazard. The durable form: small scoped batches with strong automated pre-checks (schema/dedup/scope), committed on a clean dedicated index so unrelated working-tree changes are not swept in.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Lean/agile flow & batch-size theory — small batches reduce variability, accelerate feedback, lower per-transaction risk and simplify review/validation (Reinertsen via SAFe Principle #6, InformIT/Scaled Agile; dev2ops "DevOps Lessons from Lean," 2012; Lean Six Sigma Hub "Batch Size Reduction"). Commit-hygiene practice (small coherent changesets are easier to review/revert) reinforces the scope clause. Same small-increment family as PREMISE-047 (granular staging).
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Weak-Moderate) — the support is for small batches, not for the conjunction of small batches WITH a mandatory attended gate each time. Batch-size theory has a transaction-cost lower bound (too-small is costly when the gate is expensive); human-in-the-loop literature documents fixed per-session overhead and a rubber-stamping failure when attended queues back up (Nuvento "Hidden Cost of HITL"; Codebridge/StackAI 2026). For a 36-file one-time backlog this can make a single well-scoped attended ingest dominate many tiny gated runs. The challenge targets sizing/gating, not the small-batch principle — so it is folded into the statement as the tuning caveat rather than blocking INCORPORATE.
+  Confidence: Moderate
+  Applicable to: C2A2 PROCESSED_LOG ingest-backlog drain; any quality-sensitive batch curation step with a human authorization gate. Reinforces PREMISE-047 (granular staging) and Tom's Rule 2 (simplicity)/Rule 3 (surgical changes). Couples ASSUMPTION-271 (MONITOR-300) and PRESUMPTION-305 (REVISE-088, commit-in-increments) — all three favor bounded small increments.
+  Re-check due: 2026-09-05 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: Stated assumption with strong, well-established support for small-batch curation; the only challenge is operational (gate cost / sizing / rubber-stamping), resolved by folding the tune-to-overhead and automated-pre-check caveats into the premise. Consistency-checked vs PREMISE-001..049: complements PREMISE-047 (granular staging) and aligns with PRESUMPTION-305's commit-in-increments remedy; no conflict. Moderate (not High) confidence because the optimal batch size is genuinely cost-dependent and unverified for this backlog — the principle is "small scoped batches, sized to gate cost," not "5-8 is correct."
+
+Total new PREMISEs this run (2026-06-05): 1 (PREMISE-050). PRESUMPTION-class INCORPORATEs: 0 (the sole INCORPORATE is an ASSUMPTION). Cumulative through PREMISE-050.
+
+---
+
+## Run 2026-06-06 (2026-06-05 ATTENDED Community Explorer P1 batch)
+
+PREMISE-051:
+  Date validated: 2026-06-06
+  Source item: ASSUMPTION-275
+  Statement: A relational/structure surface (a node-link graph) and an attribute/lookup surface (a card directory) over one corpus are complementary coordinated views, not duplicates: each affords a primary task the other does not (graph = read relational structure; cards = bulk attribute scan / targeted lookup), so maintaining both is justified by the coordinated-multiple-views Rule of Diversity. CAVEAT folded in (Rule of Parsimony): the justification holds only while non-absorption is demonstrable — i.e., there exists at least one high-value task each surface supports that the other genuinely cannot. If one surface becomes expressible as a saved/filtered state of the other (e.g., Cards = a filtered Graph view-state), the second surface is redundant and its build/test/maintenance + context-switching cost is no longer warranted; re-evaluate and consider deprecating the duplicate.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Baldonado, Woodruff & Kuchinsky 2000 "Guidelines for Using Multiple Views in Information Visualization" (Rule of Diversity); Roberts 2007 "State of the Art: Coordinated & Multiple Views in Exploratory Visualization" (CMV improves task performance, reveals relationships); Scherr / Wang Baldonado, multiple-and-coordinated-views survey.
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — Baldonado's own Rule of Parsimony (each added view costs learning/space/maintenance and must be justified vs a single-view alternative) and an empirical finding that more coordinated views do not monotonically help and can impose context-switching cost (arXiv 2204.09524). Resolved by folding the non-absorption / parsimony test into the statement rather than blocking INCORPORATE.
+  Confidence: Moderate
+  Applicable to: Community Explorer Graph + Cards dual-surface design; any C2A2 tool considering a second coordinated view over one corpus. Reinforces Tom's Rule 2 (simplicity) / Rule 3 (surgical changes) — the parsimony caveat is the guard against speculative second surfaces. SCOPE NOTE: this premise validates the COMPLEMENTARITY of the two views only; the "over ONE dataset" claim depends on the curated↔directory join, which is REVISE-flagged (PRESUMPTION-306 → REVISE-089). If 306 resolves that the two record sets are distinct populations, ASSUMPTION-275's "one dataset" framing weakens even though the views-complementarity premise stands.
+  Re-check due: 2026-09-06 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: Stated assumption with strong, well-established CMV support; the only challenge is the parsimony/cost guard, folded in as the non-absorption test. Consistency-checked vs PREMISE-001..050: no conflict — new UI-coordinated-views domain, complements none directly. Moderate (not High) confidence because non-absorption is asserted but not yet demonstrated for CE (no task inventory provided) and because the "one dataset" substrate is contested by PRESUMPTION-306.
+
+**Total new PREMISEs this run (2026-06-06): 1 (PREMISE-051). PRESUMPTION-class INCORPORATEs: 0 (sole INCORPORATE is an ASSUMPTION). Cumulative through PREMISE-051.**
+
+## INCORPORATE — run 2026-06-07 (2026-06-06 EOD attended CE build batch)
+
+PREMISE-052:
+  Date validated: 2026-06-07
+  Source item: ASSUMPTION-280
+  Statement: A tool that lists identifiable communities seeded from public web pages without express consent — none of which has approved its record — must DISCLOSE that provenance in-product (e.g., popover + source-of-truth doc) and must NOT imply endorsement or community approval. Disclosure-of-provenance + non-endorsement is the NECESSARY MINIMUM ethics/transparency bar for such listings. CAVEAT folded in (the boundary of this premise): disclosure is necessary, NOT sufficient — it does not by itself discharge the consent obligation for identifiable groups. The sufficiency overclaim ("disclosure cures the consent gap") is explicitly NOT incorporated and is REVISE-flagged (PRESUMPTION-313 → REVISE-092); this premise is the floor, to be paired with at least an opt-out/takedown path (and opt-in for higher-sensitivity communities).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Brown, Gruen, Maldoff, Messing, Sanderson, Zimmer 2025, "Web scraping for research: Legal, ethical, institutional, and scientific considerations" (Big Data & Society / arXiv 2410.23432); Association of Internet Researchers (AoIR) ethics guidance; data-provenance / metadata-for-reproducibility practice (also the basis of C2A2's own provenance protocol).
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Weak-Moderate) — for identifiable groups, transparency is necessary but not sufficient (Brown et al.; AoIR escalates with identifiability); notice-vs-consent critique (Solove, "Privacy Self-Management and the Consent Dilemma," 2013) warns disclosure can become a liability-shield; group-privacy literature (Taylor, Floridi & van der Sloot, "Group Privacy," 2017) notes individual-style notice fits group interests poorly. The challenge targets SUFFICIENCY, not the necessity of disclosure — so it is folded in as the floor-not-ceiling caveat rather than blocking INCORPORATE.
+  Confidence: Moderate
+  Applicable to: Community Explorer Cards/Graph listing of scraped community records; any C2A2 surface that presents identifiable third parties from non-consented public sources. Reinforces the provenance protocol and Tom's caution-over-speed bias. Couples ASSUMPTION-280's own sufficiency overclaim (PRESUMPTION-313 → REVISE-092) — the two together define floor (this premise) vs ceiling (still open).
+  Re-check due: 2026-09-07 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: Stated assumption with strong, convergent support for disclosure-as-minimum; the only challenge is that disclosure is not the whole duty, which is fully separable and routed to REVISE-092, so it is absorbed as the floor-not-ceiling caveat rather than blocking INCORPORATE. Consistency-checked vs PREMISE-001..051: no conflict — new data-ethics/consent-disclosure domain. Moderate (not High) confidence because the surrounding consent question is genuinely unresolved (REVISE-092) and the premise is deliberately scoped to the necessary minimum, not a complete ethical clearance.
+
+**Total new PREMISEs this run (2026-06-07): 1 (PREMISE-052). PRESUMPTION-class INCORPORATEs: 0 (sole INCORPORATE is an ASSUMPTION). ASSUMPTION-279 deliberately NOT re-INCORPORATED — its complementarity core is already PREMISE-051. Cumulative through PREMISE-052.**

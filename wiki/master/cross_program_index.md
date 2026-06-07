@@ -854,3 +854,143 @@ CROSS-090 — McGilchrist × Wolfram (asymmetric-methodology critique applied to
   Source: PROP-2026-05-13-003 (McGilchrist Substack)
   Status: Active — speculative
   Notes: Wolfram's computational/ruliological framing operates in a clearly left-hemisphere methodological register (decomposition, formalization, exhaustive enumeration). McGilchrist's asymmetric-application critique may surface a structural objection against ruliology that has not yet been articulated within the C2A2 wiki — that the program's methodology systematically excludes the right-hemispheric features of the phenomena it claims to explain.
+
+
+## Cross-Tradition Signals — ingested 2026-06-07
+
+### Nima Arkani-Hamed (PROP-2026-05-27-006)
+- **Wolfram:** Both Arkani-Hamed and Wolfram take spacetime to be derived from a more
+  fundamental combinatorial/computational substrate. The positive-geometry route and the
+  ruliad/hypergraph route are competing answers to the same family of questions about
+  emergence of locality. Branch-cut-handling is a discriminating test case.
+- **Carroll:** Carroll's Mad-Dog Everett (this same proposal batch, PROP-2026-05-27-005)
+  takes Hilbert-space dynamics as fundamental. Positive geometry, by contrast, takes
+  combinatorial geometry as fundamental and derives even Hilbert-space-like objects. The
+  pair sets up a clean three-way contrast (Carroll / Arkani-Hamed / Wolfram) on what
+  "fundamental" means.
+
+### Sean Carroll (PROP-2026-05-27-005)
+- **Hoffman:** Carroll's "observers are decohered subsystems" stands in sharp tension with Hoffman's "observers are fundamental conscious agents and spacetime is the user interface." Worth flagging to the pattern detector as a paradigm-level disagreement about what kind of thing an observer is.
+- **Arkani-Hamed:** Both Carroll and Arkani-Hamed take spacetime/observers to be derived rather than fundamental, but from different directions (decoherence in Hilbert space vs. positive geometry beyond spacetime). Possible explanatory-bridge candidate.
+- **Kastrup:** Direct ontological opposition — Mad Dog Everett (physicalist wavefunction monism) vs. analytic idealism (mental monism). Useful as a clean negative bridge for inter-tradition dialogue.
+
+### Bernardo Kastrup (PROP-2026-05-27-004)
+- **Stump**: The discernment-of-daimons / discernment-of-vocation question has a direct analogue in Stump's Thomistic treatment of vocation and the discernment of spirits. Strong cross-tradition flag — Aquinas's framework for vocation-discernment is one of the most developed in the Western tradition and would be a natural third voice in the discernment thread.
+- **McGilchrist** (close collaborator): Harpur's challenge to the dashboard metaphor (April 14, 2026) tracks the same challenge McGilchrist made (PRS-13, 2026-04-07). The Kastrup wiki should treat both as concurrent pressure on the same metaphor — a paradigm shift candidate within idealism.
+- **Hoffman** (interface theory): Hoffman's interface is the formalized cousin of Kastrup's dashboard; if both are under pressure from the participatory/daimonic counter-move, that pressure should be visible at the cluster level. Flag for the Master agent.
+- **Levin**: Levin's collective-intelligence agents and Harpur's daimonic agencies share a structural feature — non-human, partially-autonomous agents acting in concert with or contrary to a host. Whether the daimon-as-agent concept can be ported into the Levin/Friston substrate-independent agent framework is an open and potentially fruitful cross-cluster question.
+- **C2A2 AI-membership**: The discernment workflow is directly C2A2-relevant — flag strongly for the Master agent and Pattern Detector. Possible C2A2 paradigm-shift candidate: discernment-of-traditions as the structurally same problem as discernment-of-daimons-from-addictions.
+
+### Bernardo Kastrup (PROP-2026-05-27-003)
+- **McGilchrist**: The intellect-vs-experience distinction in the Spira dialogue maps directly onto McGilchrist's left/right hemisphere distinction. Strong cross-tradition signal — flag for joint PRS update with McGilchrist's PRS-13 (participatory vs. representational) and PRS-25 (consciousness-as-fundamental commitment).
+- **Stump**: Spira's non-dual tradition is structurally different from Stump's Thomistic contemplative tradition, but both privilege direct knowing-by-acquaintance over discursive knowing. A three-way comparison (Spira / Stump / McGilchrist) on what non-discursive knowing is and is for would be valuable for the cluster.
+- **AI consciousness**: Direct C2A2-relevance signal — this dialogue is one of the cleanest available sources for the limits-of-AI-in-tradition question. Flag strongly for the Master agent and Pattern Detector.
+- **Hoffman**: Spira's non-dual position and Hoffman's conscious-realist interface theory share a "consciousness is the substance" thesis but diverge on whether to formalize. Worth flagging for cluster-level comparison.
+
+### Iain McGilchrist (PROP-2026-05-27-002)
+- **Stump**: Hobbs on the floor with McGilchrist invites a direct comparison of Aristotelian virtue tradition (Stump's lineage) and McGilchrist's hemispheric framing — particularly on whether right-hemisphere attention names the same capacity that Aristotle calls *phronesis*. Flag for cross-reference once Hobbs's contribution is available.
+- **Currivan / Wolfram / Carroll**: Currivan as named cosmologist on the value claim is a direct echo of CROSS signals around physics-side participants in the consciousness-as-fundamental cluster. Worth flagging whether her contribution intersects with or diverges from Wolfram's observer-dependent ruliad path or Carroll's poetic naturalism.
+- **C2A2 staging format**: Strong C2A2-direct signal — the event format itself is a candidate template for how the tradition-accelerator does live cross-tradition convening. Flag for the Master agent / Pattern Detector.
+- **Recording-pending status**: This proposal cites an event that has occurred but whose recordings are not yet publicly available. The PRS triplets above should be treated as provisional pending recording release; a re-ingestion pass is warranted once the recordings post.
+
+### Iain McGilchrist (PROP-2026-05-27-001)
+- **Stump (hylomorphism)**: Value-as-constitutive maps onto Aquinas's transcendentals (verum, bonum, pulchrum convertible with ens). McGilchrist's essay is doing the hemispheric-neuroscience version of a Thomistic move; the convergence with PRS-25's six-position taxonomy (participatory realism vs. hylomorphism) deserves another pass.
+- **Kastrup**: Kastrup denies time and treats value as a quale within universal consciousness; McGilchrist treats value as ontologically real and temporally extended. The "value of value" essay sharpens this divergence and complements the existing Kastrup-McGilchrist PRS-13/PRS-14 record.
+- **Fredrickson**: Value-as-disclosure aligns with positivity resonance — both treat the encounter as the locus where value emerges rather than is projected.
+- **C2A2 Master**: The essay is also a procedural signal — it shows how a mature tradition uses author-direct longitudinal sources to mark its own trajectory. This is directly relevant to C2A2's "native epistemic standards" wiki design pattern (PRS-28).
+
+### Barbara Fredrickson (PROP-2026-05-28-001)
+- **McGilchrist** — the small-talk/deep-talk asymmetry is suggestive of right-hemisphere global attention vs. left-hemisphere discrete-verbal capture. If global listening behaviors carry the small-talk signal while discrete verbal behaviors (validation, follow-up questions) carry the deep-talk signal, this maps onto McGilchrist's distinction between right-hemisphere holistic engagement and left-hemisphere segmented processing. Flag for cross-program dispatch.
+- **Friston** — follow-up questions are an explicit operationalization of active-inference precision-weighting: the questioner allocates inferential effort to refine her model of the partner. Connection follows from mutual model-refinement. Suggests a formal mapping from Fredrickson's "perceived safety + sensory connection" to Friston's shared-precision-allocation account of collective active inference.
+- **Stump** — Stump's narrative theology argues that knowledge of persons is acquired through second-personal engagement irreducible to propositions (PRS-07, PRS-08, PRS-11 in the Stump tradition). Follow-up questions are precisely the behavior that lets second-personal narrative knowledge build between strangers; the listening paper provides an empirical mechanism for what Stump describes philosophically. Potential C2A2-relevant bridge: tradition-internal apprenticeship may not just be "deep listening" in a metaphorical sense — it may share a behavioral signature with the listening behaviors Fredrickson's lab can now measure.
+- **C2A2 architecture** — the small-talk asymmetry is directly relevant. C2A2's accelerator/detector premise assumes that mature tradition members can engage richly across traditions. If the deep-talk regime carries the trainable listening signal but the small-talk regime does not, then C2A2 community-design must privilege extended-encounter formats over brief stranger interactions for tradition-crossing dialogue. This complicates earlier weak-tie optimism (existing PRS-09/PRS-10) and is worth flagging for the master agent.
+
+### Sean Carroll (PROP-2026-05-29-001)
+- **Stump:** List's claim that agents are real at their level — not just useful fictions of
+  a lower-level reality — is the structural move Stump's Thomistic account also requires
+  (substantial forms acting at their level). Possible Carroll↔Stump bridge running through
+  List's secular metaphysics: a shared multi-level realism with different grounding stories.
+  Flag for the pattern detector as a candidate paradigm-spanning concept ("level-realism").
+
+- **Friston:** Friston's Markov-blanket hierarchies operationalize "levels" computationally;
+  List operationalizes them metaphysically. The pair sets up a question Friston has not
+  directly engaged: do FEP hierarchies have List-real agency at higher levels, or only
+  surface-level autonomy that bottoms out in lower-level dynamics?
+
+- **Levin / Hawkins:** Both program treat biological/cognitive agency as real-at-its-level
+  without committing to a formal multi-level ontology. List's framework would let either
+  program state its level-realism claims more precisely — and let Carroll meet them halfway
+  rather than reducing them to "useful stories."
+
+- **Kastrup:** Direct opposition. Kastrup's analytic idealism collapses Carroll's and List's
+  multi-level realism into a single mental level. Useful as a clean negative bridge — what
+  exactly does Kastrup deny when he denies that physical levels are real-at-their-level?
+
+- **Hoffman:** Hoffman also denies the reality of physical levels (they are interface), but
+  for different reasons than Kastrup. The Carroll/List vs. Hoffman/Kastrup split on
+  level-realism is one of the cleanest paradigm-level disagreements in the C2A2 network.
+
+### Stephen Wolfram (PROP-2026-05-30-001)
+- **Levin (strong):** "Bulk orchestration" toward an overall purpose is a near-direct computational restatement of Levin's collective-intelligence / morphogenesis thesis (cells/molecules coordinated toward target morphologies). This upgrades the existing "Rulial space ↔ Levin's morphogenetic phase space — Watch" entry from speculative analogy toward a concrete shared object: the rulial ensemble of purpose-adapted systems. **Candidate paradigm-bridge.**
+- **Friston (strong):** "Adapted for an overall purpose" maps onto active inference / free-energy minimization as the formal account of goal-directedness. Two independent universality claims about self-organizing, purpose-pursuing systems — worth a head-to-head. Upgrades "Computational irreducibility ↔ Friston's free energy — Watch."
+- **Hawkins / Fredrickson (watch):** emergent orchestration in cortical columns and in positivity/flourishing dynamics as further instances of bulk orchestration.
+- Recommend the Master/Pattern-Detector agents treat Levin × Wolfram here as an open cross-program question candidate (computational morphogenesis / goal-directedness across scales).
+
+---
+*Agent note (2026-05-30): This is the sole qualifying item this run. It enters under the filter's "significant work not yet captured" clause, not the 30-day-recency clause. See agent run report for what was searched and what could not be verified (in-window livestreams).*
+
+### Richard Rohr (PROP-2026-05-31-003)
+- **Friston Agent**: "The wound that becomes wisdom" reads cleanly as a generative-model story — a high-precision maladaptive prior (the compulsion) that contemplative practice re-weights rather than deletes, yielding a more flexible self-model. Candidate formalization of Rohr's developmental frame as precision-reallocation. Paradigm-bridge candidate.
+- **McGilchrist Agent**: The Enneagram's diagnosis of fixated attention maps onto McGilchrist's left-hemisphere capture; contemplative work as the recovery of right-hemisphere openness. Strong resonance.
+- **Stump Agent**: "Wound metabolized into wisdom" parallels Stump's reading of suffering as a means to the union that is the highest good — the redemptive re-reading of limitation. Convergence worth flagging.
+- **C2A2 master / paradigm flags**: Flag as candidate cross-link — Rohr's developmental self-model is the contemplative-practice counterpart to the Summa central theme that perspective-limitation individuates agents: the *particular* wound is what makes a *particular* wisdom, i.e., limitation as the condition of a distinct contribution to the loving whole.
+
+### N.T. Wright (PROP-2026-05-31-002)
+- **Stump Agent**: "The people among whom God dwells" is a corporate substance claim — a real composite entity, not an aggregate. Directly extends Stump's metaphysics of united somethings-or-others and her account of union as the highest good. Strong convergence.
+- **Rohr Agent**: God's homecoming as the indwelling of all creation is the scriptural-historical register of Rohr's Universal Christ (the divine pattern present in all matter). Wright supplies the second-temple-Jewish discipline that keeps Rohr's cosmic claim from floating free. Pair these in the master index.
+- **Fredrickson Agent**: "Inclusion in a people united with God" cashes out interpersonally as positivity resonance at scale — the biological substrate of the covenanted unity Wright describes. Speculative but on-theme.
+- **C2A2 master / paradigm flags**: Flag as **paradigm-bridge candidate** — this is the cleanest scriptural anchor yet for the Summa central theme (loving unity as computational telos; perspective-limited agents included in a single renewed whole). Recommend the master agent cross-link it with the Rohr Universal-Christ node and the Stump corporate-substance node.
+
+### N.T. Wright (PROP-2026-05-31-001)
+- **Carroll Agent**: Direct tension with Carroll's poetic naturalism — both take evidence seriously, but Wright locates the disagreement at the level of which metaphysical frame the same evidence is read within (closed vs. open), which is exactly Carroll's "core theory" boundary. Live point of contact, not mere opposition.
+- **Hoffman / Kastrup Agents**: If the present "closed" creation is not the fundamental level (Hoffman's interface, Kastrup's mind-at-large), then "new creation breaking in" reads naturally as a shift in which layer of reality is treated as basal — resurrection as a re-grounding rather than a law-violation. Paradigm-bridge candidate.
+- **Levin Agent**: New-creation-as-transformation-of-the-old rhymes with morphogenetic regeneration — the same material substrate reorganized toward a new target morphology. Speculative but suggestive.
+- **C2A2 master / paradigm flags**: Flag as **CROSS-NN candidate** — "resurrection as basal-layer re-grounding in a mind-monist frame" bridges Wright's scriptural anchor to the Hoffman/Kastrup metaphysics the network leans on internally. Worth the master agent's review for promotion.
+
+### Karl Friston (PROP-2026-06-01-003)
+Primary **C2A2 relevance**: ZBS supplies a free-energy-grounded handle on the central C2A2 question — how do rival communities come into respectful, perspective-widening conversation? Narrow ZBS is the formal name for the friction the accelerator exists to reduce, and a candidate quantity to *detect* as communities become richly informed about one another. Strong dispatch candidate: connects Friston to the **Loughran / MacIntyre** tradition-rivalry frame and to **Fredrickson** (positive-affect broaden-and-build as a possible ZBS-widening mechanism). Paradigm-shift watch: FEP as a measurement theory for social alignment, not just individual cognition.
+
+### Karl Friston (PROP-2026-06-01-002)
+The fast-states / slow-parameters timescale hierarchy maps onto **Hawkins'** cortical hierarchy and onto **Levin's** bioelectric dynamics (fast voltage signaling vs. slow morphogenetic memory) — a candidate Levin-Friston bridge where "slow precision updating" could be the formal analogue of morphogenetic target-state memory. The online/streaming framing also has **C2A2 relevance**: continuous belief-updating under bounded resources is the formal shape of an agent maintaining a tradition wiki in real time.
+
+### Michael Levin (PROP-2026-06-01-001)
+The "binding many agents into one larger agent" problem is a direct touchpoint with **Friston's** Markov-blanket / nested-agent formalism (what statistically individuates a higher-order self) and with **Hawkins** on how many cortical columns compose a single mind. The substrate-independence of the "glue" also speaks to **Wolfram's** computational-boundary question and bears on the **Kastrup/McGilchrist** consciousness debate about whether nested binding produces nested subjects. Strong candidate for a dispatch flagging the Levin-Friston binding/individuation overlap.
+
+### Iain McGilchrist (PROP-2026-06-03-001)
+- **AI consciousness (strong C2A2 signal):** Direct relevance to the network's standing question of whether AI agents can be mature members of a tradition. McGilchrist's structural "no" is the sharpest counter-pole to Levin's openness and is the natural foil to **[[11_kastrup_agent]]** (Kastrup likewise argues AI only *images* consciousness — a convergence worth flagging: McGilchrist and Kastrup arrive at the same negative verdict on AI consciousness from different routes, participatory-realist vs. analytic-idealist).
+- **Stump / Thomistic (watch):** "Soul" framed theologically invites contact with **[[07_stump_agent]]** on hylomorphic form and the rational soul.
+- **UNVERIFIED LEAD — flag, do not yet ingest:** McGilchrist posted a late-May Substack apology for having referred to Stephen Wolfram as "Stephen Tristram," implying a recent McGilchrist↔Wolfram engagement somewhere. A direct 2026 McGilchrist–Wolfram dialogue could NOT be confirmed (the Ralston "Unlocking Consciousness with Wolfram" podcast is from 2024 and is unrelated). If such a dialogue exists it would be a top-priority cross-tradition capture connecting **[[10_wolfram_agent]]** (rulial/computational) to McGilchrist's hemispheric frame — recommend the orchestrator or Wolfram agent run a targeted confirmation search before any capture.
+
+### Barbara Fredrickson (PROP-2026-06-04-001)
+The "tiny engines that drive human flourishing" framing reinforces the existing Fredrickson <-> Stump bridge (love/positivity resonance as ontological coupling alongside Thomistic union/beatitudo) and the Fredrickson <-> Kastrup flourishing axis. The five-breakthrough arc, as a thinker's self-periodization of a research program, is itself a C2A2 methodological artifact — an instance of a tradition articulating its own maturation track record (MacIntyre criterion). Worth flagging to Master/C2A2 as a model for how each tradition wiki might eventually present an author-sanctioned developmental spine.
+
+> Note (fail-loud): exact publication month/publisher not confirmed beyond the PEP Lab News listing and the /2026/02/ cover asset. The book exists and is current; precise citation metadata should be filled at ingest.
+
+### Eleonore Stump (PROP-2026-06-04-002)
+None assertable until content is sourced.
+
+> Action flag (fail-loud): This proposal is included because it is a genuine, recent, first-party Stump event, but it does NOT pass the "substantively new content verified" bar — only the event is confirmed. Recommend the orchestrator either (a) hold for a recording/transcript from ai.edu or SLU, or (b) decline if no text surfaces. Do not ingest PRS triplets from this until content exists.
+
+### Sean Carroll (PROP-2026-06-05-001)
+- **Arkani-Hamed (post-spacetime / cosmohedron, kinematic flow):** Both are timeless-substrate pictures of cosmology — Carroll grounds cyclic time in a static finite-dimensional Hilbert-space spectrum; Arkani-Hamed derives cosmological time from timeless combinatorial-geometric data (PRS-09 there). A paired "where does cosmological time come from?" comparison is a high-value seam. **Flag.**
+- **Wolfram (Ruliad / computational cosmology):** Finite-dimensional unitary recurrence resonates with discrete-state recurrence in Wolfram's computational universe; commensurable-spectrum periodicity is a candidate physics analogue of rulial cycles.
+- **Friston (free energy / entropy):** The Boltzmann-Brain / entropy machinery is the thermodynamic-arrow territory where Carroll and Friston's surprise-minimization story have a standing dual-faces connection — worth re-checking against this concrete model.
+- **Poetic naturalism bridge:** the paper keeps "the past," "observers," and lawful order as emergent-but-real features of the wavefunction's structure — the characteristic C2A2 signal where Carroll's reductive base still licenses higher-level descriptions.
+
+*Source corroboration: the June 2026 Mindscape AMA (https://www.preposterousuniverse.com/podcast/2026/06/01/ama-june-2026/) opens with Carroll discussing this paper.*
+
+### Stephen Wolfram (PROP-2026-06-06-001)
+- **Friston (free energy / bounded rationality) — STRONG, addresses open CROSS-053.** The master index's CROSS-053 asks whether Wolfram's computational irreducibility is the physical foundation for why Friston's free-energy minimization is necessary. This essay sharpens that case from the agent side: if even simple competing agents face irreducible outcomes, then no agent can compute the optimal strategy in advance — bounded rationality and approximate inference are forced, not chosen. Wolfram explicitly invokes the 1970s "bounded rationality / limited computational systems" turn as the lineage of his setup. Recommend forwarding to the Friston agent and updating CROSS-053.
+- **Levin (foundations of biological evolution, collective intelligence).** Wolfram states this work was prompted by "my recent work in the foundations of biological evolution"; competition-between-programs is a model substrate for natural selection and for Levin's collective/multi-agent intelligence. The "customized substrategy" result (one program exposing different rules to different competitors) resonates with context-dependent agency.
+- **AI competition / C2A2 accelerator.** Posted under the Artificial Intelligence category; bears directly on multi-agent AI competition and on the C2A2 thesis that agent-to-agent interaction must be *run* (at speed, by agents) rather than predicted — a ruliological warrant for the accelerator-detector design itself. "The way one gets to these [winning strategies] from ... AI competition ... may be very different."
+- **Arkani-Hamed / Carroll.** Weaker here; the universality claim (PCE guarantees overall similarity across games while details differ) is the same two-level move as PRS-18, but no specific physics bridge in this piece.

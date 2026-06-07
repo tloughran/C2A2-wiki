@@ -35,3 +35,9 @@ N.T. Wright is the tradition's narrative theologian and historian — the thinke
 - **Carroll**: Wright's critical realism directly engages Carroll's physicalism — both take history and evidence seriously, but disagree on whether the evidence permits claims that exceed naturalism
 - **Stump**: Wright and Stump share a commitment to historically grounded theology that engages analytic philosophy on its own terms
 - **Loughran**: The C2A2 project's methodology of faithful improvisation — extending inherited programs into new cross-traditional territory — is a direct application of Wright's five-act hermeneutic
+
+
+## Ingestion Log — 2026-06-07
+Ingested 2 approved triplet(s): PRS-05, PRS-06.
+- (open question) What does "salvation" mean once disembodied-heaven escapism is rejected?  [src: PROP-2026-05-31-002]
+- (open question) Does the resurrection require suspending natural law, making it unbelievable to a scientist?  [src: PROP-2026-05-31-001]

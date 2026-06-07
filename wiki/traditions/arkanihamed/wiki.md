@@ -57,3 +57,9 @@ Arkani-Hamed's program is **critically important** to the Post-Spacetime Cluster
 
 ---
 *Source: Resurrecting Civility — Document Explorer HTML (RC Pilot, partial reference) | Processed: 2026-04-05*
+
+
+## Ingestion Log — 2026-06-07
+Ingested 2 approved triplet(s): PRS-11, PRS-12.
+- (open question) Whether positive geometry, as a candidate framework beyond spacetime/locality, can capture analytic structures (branch cuts) that physical a…  [src: PROP-2026-05-27-006]
+- (open question) The amplituhedron program has been criticized as restricted to planar N=4 SYM — a beautiful but possibly idiosyncratic theory.  [src: PROP-2026-05-27-006]

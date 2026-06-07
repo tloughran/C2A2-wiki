@@ -716,3 +716,62 @@ No attended Tom session occurred today; C2A2 activity was autonomous-pipeline on
 - **The un-numbered DECISION accumulation pattern** — unchanged at 4 candidates (no attended session to number them).
 - **Inert governance capability (NEW framing, 2026-06-03):** Agents 17–20 (MacIntyre/Wright/Rohr/Loughran) and the Sunday Tradition Synthesis Day exist as governance docs but will NOT run autonomously until the Master Agent schedule (`agents/12_master_C2A2_agent.md`) is edited — an attended-only action. Surfaced as PRESUMPTION-301 (deferral-of-activation-is-cost-free). Each passing week without the edit is one un-run Sunday synthesis.
 - **The self-awareness-mechanism-integrity cluster** carries; PRESUMPTION-302 (self-awareness value is attendance-independent) adds the meta-question of whether running the full pipeline on a 2nd no-attended day yields the same epistemic foundation as an attended design session.
+
+---
+
+## 2026-06-04 status update (Agent 14a/14b — 1 NEW numbered OPEN: OPEN-074; 3rd consecutive no-attended day)
+
+No attended Tom session occurred today; C2A2 activity was autonomous-pipeline only — a **third consecutive no-attended day**. The claude.ai sync channel remains confirmed down in **both directions** for a 3rd day (morning scrape failed 12:53 UTC `/login?from=logout`; evening delivery skipped, same logout). Today's honest batch (2 ASSUMPTIONs + 3 PRESUMPTIONs) is drawn from the genuinely-new 06-04 events: two auto-ingested proposals (PROP-2026-06-04-001 Fredrickson *Positive Emotions* book; PROP-2026-06-04-002 Stump Aquinas-Institute commencement, an unsourced low-confidence pointer) and the 36-vs-152 PROCESSED_LOG bookkeeping conflict logged by the daily run. **Echo trap avoided (OPEN-070):** today's lit finding (PREMISE-049 verify-before-trust; ASSUMPTION-270 → MONITOR-296; High SYSTEMIC-RISK autonomous-sync silent-degradation) is the **15-pipeline dispositioning yesterday's 06-03 batch** (269/270/300/301/302), reported as carried context and used to update those items' statuses — NOT re-extracted as 06-04 substance.
+
+### NEW OPEN this cycle
+
+- **OPEN-074** — *Should verify-before-ingest (PREMISE-049) gate admission to the pending-review **queue**, or only content-capture?* I.e., is admitting an unsourced, low-confidence pointer such as PROP-2026-06-04-002 (Stump commencement, "content not yet sourced") to the pending queue a safe quarantine, or a same-day violation of the verify-before-trust premise the lit pipeline incorporated this very run? **Promoted today** because the system enacted intake-without-confirmation at the same moment it grounded PREMISE-049 against it. Couples PRESUMPTION-303 (queue-admission-is-safe-quarantine), ASSUMPTION-269/PREMISE-049, and the intake-discipline family.
+
+### Status of carried questions
+
+- **OPEN-073** — (confirmed-down channel should trip degrade/halt/escalate) carried from 2026-06-03 and **sharpened**: the outage is now 3 days / both directions, and today's lit run rated the autonomous-sync silent-degradation cluster (ASSUMPTION-270 + PRESUMPTION-300) **High SYSTEMIC-RISK** (MONITOR-296/297). The lit run also *challenged* the "cannot self-clear" clause of ASSUMPTION-270: scoped, revocable service credentials could let unattended sync self-recover without the agent authenticating as Tom — a real capability-vs-attack-surface decision, not merely a recurring outage.
+- **OPEN-072 / OPEN-071** — (cross-repo / single-repo git interlocks) carried; reinforced again by the 587-uncommitted-change working-tree hold (PRESUMPTION-305) and the standing no-blind-push rule.
+- **OPEN-070** — (date-anchor the EOD summary by registry delta) carried and **honored today** (the lit finding was treated as a 06-03-batch disposition, not 06-04 output).
+- **OPEN-069** — (mark a blind-intake run degraded) carried, reinforced a 4th time.
+- **OPEN-067** — (~1-week sit-down cadence) carried, **8th consecutive cycle UNRESOLVED**.
+- **OPEN-066 / OPEN-065 / OPEN-064 / OPEN-063 / OPEN-062** — carried. The human review gate is OPEN for an **8th consecutive day**; pending-proposal queue is **18** (16 + Fredrickson + Stump). The REVISE backlog carries a **bookkeeping conflict (fail-loud):** revision_flags.md contains **100 AWAITING-REVIEW lines** while the 15-pipeline's REVISE-specific AWAITING-REVIEW backlog stands at **40** (max REVISE-086; 86 distinct REVISE ids). Today's cowork summary reported "100 revise items," conflating the two denominators — thematically the same two-counts-from-one-log shape as ASSUMPTION-271 / PRESUMPTION-304.
+
+### Recurring framings worth tracking (carry-forward)
+
+- **The un-numbered DECISION accumulation pattern** — unchanged at 4 candidates. A 5th candidate is *emerging* (not numbered — no attended session): scoped revocable **service credentials** for unattended sync self-recovery, raised by today's lit challenge to ASSUMPTION-270. Couples OPEN-073.
+- **Same-day premise/enactment tension (NEW framing, 2026-06-04):** the system incorporated PREMISE-049 (verify-before-trust) and on the same run admitted an unsourced pointer to the pending queue (PRESUMPTION-303 / OPEN-074). Worth tracking as a class: validated premises that the autonomous pipeline can violate before the next attended review.
+- **Two-counts-from-one-log (NEW framing, 2026-06-04):** the 36-vs-152 PROCESSED_LOG conflict and the 100-vs-40 REVISE conflict are the same shape — a single log yielding divergent counts by entry-style. ASSUMPTION-271 / PRESUMPTION-304 track it on the intake side.
+- **Inert governance capability** carried (Agents 17–20 / Sunday Tradition Synthesis Day staged but un-activated; PRESUMPTION-301 → MONITOR-298, which recommends a dated activation trigger).
+
+---
+
+OPEN-075:
+  Date raised: 2026-06-05
+  Question: Is the curated↔directory join feasible at useful density — or are curated communities (CC-001…, 156, graph) and directory records (C0001…, 855, cards) categorically distinct object types that should never share an id space? Today's measurement found near-total disjointness (0 id / 3 name / 5 url-host matches). The whole P3 target architecture (one dataset, promotion pipeline) presumes the join is reachable; if it is not, "one app, two projections" is not achievable and the P1→P3 path needs rethinking.
+  Update (2026-06-06): PARTIAL ANSWER — the join is now mechanically real. The 156 curated communities were merged into the Cards directory under shared `CC-xxx` ids (graph is now a literal id-subset of the cards), so a curated↔directory hand-off is possible on the shared key. Remaining open: cross-join EDGE DENSITY is untested (see OPEN-076), and PRESUMPTION-312 asks whether shared-id assignment establishes genuine identity or merely asserts it. Status downgraded OPEN → PARTIALLY-ANSWERED.
+  Arose from: ASSUMPTION-276/277, PRESUMPTION-306/311, DECISION-050 (cross-nav deferral)
+  Testable via: empirical (entity resolution / record linkage between curated_communities.json and data.js) + literature (record-linkage feasibility; when to unify vs keep distinct schemas)
+  Status: PARTIALLY-ANSWERED (2026-06-06 — join now mechanically real; edge density still open via OPEN-076)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Promoted from the 2026-06-05 disjoint-id-space finding and the deferral of cross-navigation to P3. The P3 target rests on this being answerable "yes"; today's evidence makes it a live question rather than an assumption.
+    Current status: OPEN
+
+---
+
+OPEN-076:
+  Date raised: 2026-06-06
+  Question: Now that the curated↔directory join is mechanically real (the 156 curated communities share `CC-xxx` ids with their Cards records, making the graph a literal id-subset of the cards), is the cross-join EDGE density high enough to carry the P3 promotion pipeline? P3 treats graph membership as something a record earns by self-articulation and then "grows edges to its neighbors"; if promoted records land in a sparse region of the relational graph, the promotion pipeline produces isolated nodes rather than the relational evidence that justifies the accelerator/detector framing. The 2026-06-05 near-disjointness (0 id / 3 name / 5 host matches) and today's "5 bulk overlaps of 156" both suggest curated and directory populations are largely non-coextensive — so density is an open empirical question.
+  Arose from: ASSUMPTION-278 (the merge), DECISION-051, OPEN-075 (feasibility answered "yes, mechanically"; density is the next gate), PRESUMPTION-306 (one-dataset presumes unifiability), PRESUMPTION-312 (shared-id vs identity)
+  Testable via: empirical (measure edge density across promoted vs seed records once the promotion pipeline exists; compare TF-IDF edge counts for curated nodes vs directory-origin nodes) + literature (graph sparsity / cold-start in promotion-gated networks)
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Promoted from the 2026-06-06 merge. OPEN-075 asked whether the join was feasible; today's merge answered "yes, mechanically," which advances the question to edge density — the next thing P3's promotion pipeline depends on. Flagged for morning discussion in the 2026-06-06 cowork summary (item 3).
+    Current status: OPEN

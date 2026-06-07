@@ -62,3 +62,10 @@ Wolfram's program is **the most architecturally ambitious** in the Post-Spacetim
 
 ---
 *Source: Resurrecting Civility — Document Explorer HTML (RC Pilot) | Processed: 2026-04-05*
+
+
+## Ingestion Log — 2026-06-07
+Ingested 3 approved triplet(s): PRS-21, PRS-22, PRS-23.
+- (open question) What, computationally, is special about life — i.e., why do living systems orchestrate matter toward purposes rather than behaving like pass…  [src: PROP-2026-05-30-001]
+- (open question) Classical game theory analyzes optimal strategies for hand-selected programs (e.g., Axelrod's tit-for-tat tournament). Is there a principled…  [src: PROP-2026-06-06-001]
+- (open question) When adaptive evolution discovers a winning strategy, can we describe the mechanism by which it wins?  [src: PROP-2026-06-06-001]

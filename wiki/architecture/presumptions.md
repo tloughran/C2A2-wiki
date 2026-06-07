@@ -5947,15 +5947,16 @@ PRESUMPTION-300:
   Related open questions: OPEN-073 (should a confirmed-down channel trip degrade/halt/escalate?), OPEN-069
   Testability: testable via literature (circuit-breaker / fail-fast vs keep-producing patterns; backpressure and dead-letter handling for down sinks) and empirically (does emit-then-flag reliably get read, or does undelivered state silently accrue?)
   Risk if wrong: Medium — undeliverable artifacts pile up unread (two days of summaries the human may never open), and a known-dead channel that never halts its producers masks how long the outage has run; the longer the both-directions break persists, the more the Chat↔Cowork loop diverges with no forcing function to repair it.
-  Status: UNTESTED
+  Status: MONITOR-297 (2026-06-04 lit run)
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b -> 15a/15b -> 15c -> 14b]
     Original item: PRESUMPTION-300
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from the two 06-03 sync runs (morning scrape + evening delivery), which each completed their full workflow against a claude.ai session already known to be logged out from 06-02. Distinct from the intake-blindness family (287/291): those are "can't distinguish a quiet day from a lost channel"; 300 is the sharper case where the channel is *confirmed* dead and the pipeline produces into it regardless. Pairs with the stated boundary ASSUMPTION-270.
-    Current status: UNTESTED
+      15a/15b/15c (2026-06-04): MONITOR-297 (durable-dead-letter vs silent-residue pivot). Pairs with ASSUMPTION-270 in the High SYSTEMIC-RISK autonomous-sync silent-degradation cluster. DISPOSITION-148.
+    Current status: MONITOR (durable-dead-letter vs silent-residue)
 
 ---
 
@@ -5970,15 +5971,16 @@ PRESUMPTION-301:
   Related presumptions: PRESUMPTION-295 (indefinite-deferral-is-cost-free — kin; 301 is the *capability-activation* instance vs 295's *backlog* instance)
   Testability: testable empirically within the system (does an un-run Sunday synthesis lose anything that cannot be recovered by a later run? is the fallback-only path materially worse?) / partly framework
   Risk if wrong: Low-Medium — if cross-tradition synthesis has time-sensitive value (e.g., it should reflect the week's actual ingest), each skipped Sunday is a permanent gap, not deferred work; and a governance layer that stays inert indefinitely is functionally absent despite being "built."
-  Status: UNTESTED
+  Status: MONITOR-298 (2026-06-04 lit run)
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b -> 15a/15b -> 15c -> 14b]
     Original item: PRESUMPTION-301
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from the 06-03 evening summary's treatment of the Sunday Synthesis activation as a benign "do it before Sunday or wait a week" choice. Kin to PRESUMPTION-295 (deferral-cost) but a distinct object — 295 is about growing *backlogs* (ingest, review); 301 is about a *built-but-inert capability* whose every idle cycle is an un-run synthesis. Surfaced as a NEW framing in today's open-questions carry-forward.
-    Current status: UNTESTED
+      15a/15b/15c (2026-06-04): MONITOR-298 (real-but-small cost; recommends a dated activation trigger rather than open-ended deferral). DISPOSITION-149.
+    Current status: MONITOR (real-but-small cost; needs dated activation trigger)
 
 ---
 
@@ -5994,16 +5996,333 @@ PRESUMPTION-302:
   Related open questions: OPEN-069, OPEN-070
   Testability: testable-ish (do no-attended-day batches yield items that survive lit search at the same rate as attended-day batches? is the presumption/assumption ratio a usable signal of low-substance days?) / partly framework
   Risk if wrong: Low-Medium — if no-design days have little to extract, the pipeline manufactures thin or echo items that dilute the registries and create the appearance of self-awareness work without the substance — the system audits itself most where there is least to audit, and the human-vantage controls go unexercised exactly when no human is present.
-  Status: UNTESTED
+  Status: MONITOR-299 (2026-06-04 lit run)
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b -> 15a/15b -> 15c -> 14b]
     Original item: PRESUMPTION-302
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from the meta-shape of today's own run — a 2nd no-attended day on which the pipeline fired anyway, its headline finding a re-processing of yesterday's batch. This is the self-referential insight 14a/14b explicitly watch for (C2A2's behavior illustrating its own tracked structure): the system's autonomy generates evidence about its autonomy's limits. Dedup: distinct from the attribution-echo presumption 291 (which is about mis-dating a prior batch as today's) — 302 is about whether the pipeline should fire on a no-design day at all.
-    Current status: UNTESTED
+      15a/15b/15c (2026-06-04): MONITOR-299 (self-referential; 15c flagged honestly that this very run extracted from a no-attended day). DISPOSITION-150.
+    Current status: MONITOR (self-referential; flagged honestly)
 
 ---
 
 PRESUMPTION-295 (reinforcement note — 2026-06-03): The deferral-cost-is-zero presumption was reinforced today from the *intake* side. The McGilchrist proposal auto-ingested at 07:11 pushed the pending-review queue to **16** while the human review gate has now been open for a 7th consecutive day, and the AWAITING-REVIEW REVISE backlog reached **40** after the 06-03 lit run. Autonomous intake continues to add to both queues while human review clears neither — the intake and review rates are structurally diverging, with no SLA, triage, or backpressure. (Not given a new ID — folded into 295 per the established discipline of avoiding over-production; the divergence is the same deferral-cost premise observed at a wider gap.)
+
+---
+
+PRESUMPTION-303:
+  Date surfaced: 2026-06-04
+  Statement: [inferred] Auto-ingesting the Stump commencement proposal (PROP-2026-06-04-002) as a low-confidence, content-not-yet-sourced pointer presumes that admitting an unverified item to the pending-review *queue* is a safe quarantine that does not violate verify-before-ingest — even though, on the very same run-day, the lit pipeline INCORPORATED PREMISE-049 (verify-before-trust: an unverified cross-tradition lead must never be treated as true until a confirmation search promotes it). The system enacted an intake-without-confirmation step at the same moment it grounded a premise warning against exactly that, presuming an unstated boundary between "ingest to pending queue" and "treat as content" that no one articulated.
+  Evidence it was operative: PROP-2026-06-04-002 (Stump / Aquinas Institute commencement, 2026-05-08) landed in the pending-review queue described as "content not yet sourced, low-confidence pointer only," on the same 2026-06-04 run on which PREMISE-049 was incorporated from ASSUMPTION-269 (DISPOSITION-146). The pending queue grew to ~18 with this admission.
+  Why it was unstated: too foundational to notice — the pending queue is tacitly treated as a holding pen rather than as "ingest," so admitting a low-confidence pointer feels consistent with verify-before-trust; the boundary between queue-admission and content-capture was never drawn.
+  Type: methodological / epistemic
+  Related decisions: (proposal-intake discipline; pending-queue admission policy)
+  Related assumptions: ASSUMPTION-269 / PREMISE-049 (verify-before-ingest — the stated rule this enactment sits in tension with)
+  Related open questions: OPEN-074 (should verify-before-ingest gate pending-queue admission, or only content-capture?)
+  Testability: testable via literature (quarantine/staging-area design in data intake; when provisional capture of unsourced leads is net-positive vs corrosive) / partly empirically (track whether low-confidence pending pointers like PROP-2026-06-04-002 ever get sourced and promoted, or accumulate unsourced)
+  Risk if wrong: Medium — if queue-admission is effectively content-capture (e.g., the pointer is later treated as a real proposal without re-sourcing), the system routinely violates its own newest validated premise, and the pending count overstates real ingestible substance.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-303
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the same-day juxtaposition of (a) PROP-2026-06-04-002 admitted to the pending queue as an unsourced low-confidence pointer and (b) PREMISE-049 (verify-before-trust) incorporated on the same run. High-confidence inference: both events are on disk and dated 2026-06-04. This is the self-referential kind 14a/14b watch for — the system instantiating the behavior its newest premise cautions against. Dedup: distinct from ASSUMPTION-269/271 (stated intake-discipline and the log-count claim); 303 is the unstated queue-admission-is-safe-quarantine premise.
+    Current status: UNTESTED
+
+---
+
+PRESUMPTION-304:
+  Date surfaced: 2026-06-04
+  Statement: [inferred] The 36-vs-152 PROCESSED_LOG conflict is presumed to be a cosmetic format artifact resolvable by "tidying during the attended ingest" — presuming the canonical 36 is correct and that none of the 116-file gap reflects genuinely un-ingested files. Underneath sits the deeper presumption that a single human-readable narrative log can double as a machine-diffable system-of-record once cleaned, i.e., that the two entry styles (per-file rows and batch narratives) encode the same underlying truth and diverge only in form.
+  Evidence it was operative: The daily-run agent asserted "the backlog count is solid at 36" and attributed the 152 to the log mixing per-file rows with batch narratives, framing reconciliation as a future tidy rather than as a count that must be verified before ingest planning. Ingest cadence (ASSUMPTION-272, ~5-8 files/run) is implicitly sized against 36, not 152.
+  Why it was unstated: culturally embedded — operational bookkeeping discrepancies in this pipeline are habitually treated as cosmetic (cf. the discrepancy-as-cosmetic family), so the possibility that 152 is the true denominator was never examined.
+  Type: methodological / epistemic
+  Related decisions: (PROCESSED_LOG bookkeeping; attended-ingest planning)
+  Related assumptions: ASSUMPTION-271 (the stated 36-is-canonical count-claim — 304 is its unstated denominator/resolvability counterpart)
+  Related presumptions: discrepancy-as-cosmetic family (PRESUMPTION-126 and the 2026-05-09 PROCESSED_LOG-completeness backfill presumptions)
+  Testability: testable empirically (reconcile the log: join inbox file mtimes / tradition-wiki integration timestamps against PROCESSED_LOG entries; determine whether the true backlog is 36, 152, or between) / via literature (log-as-system-of-record design; reconciling narrative vs structured records)
+  Risk if wrong: Medium — if 152 reflects real unlogged files, the "36" backlog is an undercount, attended-ingest planning is built on a wrong denominator, and a "diffable going forward" tidy could silently drop or mis-date the un-ingested remainder.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-304
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the daily-run agent's framing of the 36-vs-152 conflict as a tidy-later cosmetic artifact. Medium-confidence inference: the conflict is stated, but whether 36 or 152 is correct is exactly what was not checked. Dedup: ASSUMPTION-271 is the stated count-claim (36 is canonical); 304 is the unstated premise that the claim is safe and the log can become a diffable record without data loss. Extends the discrepancy-as-cosmetic family rather than re-stating it (new manifestation: two entry styles yielding two counts, not missing entries).
+    Current status: UNTESTED
+
+---
+
+PRESUMPTION-305:
+  Date surfaced: 2026-06-04
+  Statement: [inferred] Accumulating uncommitted working-tree state is cost-free: 587 uncommitted changes now sit on feature/sociogram-search-integration, and each unattended run adds its own edits (PROCESSED_LOG, review page, master wiki) to the pile, presuming a future attended session will cleanly separate the agent's edits from the 587 unrelated changes and commit them correctly. The no-blind-push rule (which forbids the bulk commit) and the absence of any incremental-commit path together presume that the pile is freely deferrable rather than a growing reconciliation hazard.
+  Evidence it was operative: 2026-06-04 daily run, Phase 6: "the working tree has 587 uncommitted changes on feature/sociogram-search-integration (already ahead 1 of origin)... Not committed, not pushed — consistent with every prior unattended run. My own edits today... are staged in the working tree for your attended review." The count has grown across days (476 noted on a prior run; 587 now), each run adding to it with no incremental-commit mechanism.
+  Why it was unstated: obvious to participants — the no-blind-push rule is correctly honored, so the agent frames non-commitment as simply "consistent with every prior unattended run," without noting that the unreconciled pile itself grows monotonically and gets harder to separate.
+  Type: scaling / methodological
+  Related decisions: (constitutional no-blind-push rule; attended commit/review cadence)
+  Related assumptions: ASSUMPTION-272 (attended batched ingest — the same attended session expected to also reconcile the tree); the no-blind-push assumption family
+  Related presumptions: deferral-cost family (PRESUMPTION-295 intake/review divergence; PRESUMPTION-301 inert-capability deferral) — 305 is the git-state instance
+  Testability: testable empirically (track the uncommitted-change count over runs; measure whether attended sessions actually separate agent edits cleanly or whether the pile forces a bulk commit that defeats the no-blind-push intent) / via literature (cost of long-lived uncommitted/un-merged working state; trunk-based vs long-lived-branch divergence)
+  Risk if wrong: Low-Medium — as the pile grows, the merge/attribution burden of the eventual attended commit rises, and the most likely shortcut (one bulk commit) is exactly what the no-blind-push rule exists to prevent; the longer it defers, the more the safe path narrows.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-305
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from Phase 6 of the 2026-06-04 daily run, which honored the no-blind-push rule (correct) but framed the 587-change pile as routine carry-forward. High-confidence inference: the count and its growth (476 -> 587) are on the record. Dedup: this is the git-working-tree instance of the deferral-cost family (295/301), distinct from those (intake/review divergence; inert-capability) — same premise (deferral is free) at the version-control boundary.
+    Current status: UNTESTED
+
+---
+
+PRESUMPTION-306:
+  Date surfaced: 2026-06-05
+  Statement: [inferred] The "two verbs over one dataset" framing presumes the curated graph and the cards directory really are one unifiable dataset — despite this same session measuring near-total disjointness (0 id / 3 name / 5 url-host matches across 156 curated vs 855 directory records). The P3 target rests on a join the evidence suggests may be extremely sparse.
+  Evidence it was operative: §2/§3 of sociogram_feature_review.md repeatedly say "one dataset," and P3 is declared the target architecture, even as the dated CORRECTION block records the id spaces as disjoint. The plan presumes unifiability is a later data problem, not a possible non-starter.
+  Why it was unstated: too foundational to notice — "one dataset" is the premise the whole accelerator/detector framing rides on, so it is asserted rather than examined even when the data contradicts it.
+  Type: structural
+  Related decisions: DECISION-050
+  Related assumptions: ASSUMPTION-275 (stated "one dataset"), ASSUMPTION-277 (the disjointness finding)
+  Testability: testable empirically (entity resolution between the two datasets) + literature (record-linkage feasibility when key spaces are disjoint)
+  Risk if wrong: High — if the join is sparse, P3 ("one app, two projections") is unreachable and the P1→P3 path is invalid.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-306
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from the tension between the asserted "one dataset" framing and the same-session disjoint-id finding (ASSUMPTION-277). High-confidence inference: the contradiction is explicit in the document yet the unifiability premise is not re-examined.
+    Current status: UNTESTED
+
+---
+
+PRESUMPTION-307:
+  Date surfaced: 2026-06-05
+  Statement: [inferred] Inheriting the 2026-05-29 search LOCK "exactly" into the Community Explorer presumes the lock's rationale — derived for the 1647-node sociogram — transfers intact to a 156-node graph, without checking whether a ~10x-smaller graph has the same need that motivated the lock. The review itself notes CE's problem is "156 unlabeled dots need name lookup," which is a different problem from the sociogram's, yet the same highlight-not-filter semantics are imported wholesale.
+  Evidence it was operative: row 6 of the feature review: "Inherit the locked semantics exactly." No discussion of whether the small-N graph's name-lookup need is served by highlight-not-filter or might prefer a filter.
+  Why it was unstated: transferred assumption — the lock is treated as a settled grammar to be applied uniformly ("grammar consistency"), so transfer conditions go unexamined.
+  Type: methodological / epistemic
+  Related decisions: DECISION-050
+  Related assumptions: ASSUMPTION-273 (the stated transfer claim)
+  Testability: testable via literature (transfer of interaction patterns across graph scale; small-N graph UX; search-highlight vs filter by node count)
+  Risk if wrong: Medium — if highlight-not-filter under-serves a small labeled-lookup graph, the highest-value CE increment is built on the wrong interaction model.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-307
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as a transferred-assumption case — a rule built for one scale applied to another without checking transfer conditions. Medium confidence: the document even names the differing need but does not connect it to the lock's applicability.
+    Current status: UNTESTED
+
+---
+
+PRESUMPTION-308:
+  Date surfaced: 2026-06-05
+  Statement: [inferred] Making Q2 quality-crossing the membrane for graph membership smuggles a normative claim into what is framed as a technical pipeline: that articulate / higher-quality communities deserve visibility and seed-quality records do not. "Graph membership earned by self-articulation" presents gated visibility as neutral mechanics, but it is a value choice about who gets seen.
+  Evidence it was operative: §3 P3: "Graph membership stops being a curatorial fiat and becomes something a community earns by self-articulation … makes the graph itself a measurement surface." The normative content ("earned," "deserve to be seen") rides inside a data-pipeline description.
+  Why it was unstated: normative smuggling — the value judgment is embedded in a technical-sounding gate (Q2 threshold), so it reads as engineering rather than as a stance on visibility.
+  Type: normative
+  Related decisions: DECISION-050
+  Related assumptions: ASSUMPTION-276
+  Testability: testable via literature (gatekeeping and visibility; participation inequality; effects of quality-gated participation on under-resourced contributors)
+  Risk if wrong: Medium — a quality gate may systematically hide exactly the communities (low-capacity, newly forming) the accelerator most aims to develop, inverting the project's stated purpose.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-308
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as normative smuggling — "more articulation = deserves visibility" embedded in a threshold. High confidence the value is present; framed as a question: is gated visibility always good for a development-oriented network?
+    Current status: UNTESTED
+
+---
+
+PRESUMPTION-309:
+  Date surfaced: 2026-06-05
+  Statement: [inferred] The P1→P3 plan presumes today's P1 pieces (shared search pipeline, id-keyed hand-offs) are "load-bearing in P3 later" — i.e., forward-compatible with an architecture whose central mechanism (the curated↔directory join / promotion pipeline) does not yet exist and whose feasibility this session's id-space finding just put in doubt. No criterion is stated for what would show P3 is unreachable.
+  Evidence it was operative: §3 recommendation: "every piece of it (shared pipeline, id-keyed hand-offs) is load-bearing in P3 later." Yet the id-keyed hand-off was deferred this very session because the ids do not join (ASSUMPTION-277) — so one of the two named load-bearing pieces is already known not to work as sketched.
+  Why it was unstated: success-criteria gap — P3 is declared a target without defining failure, so forward-compatibility is presumed rather than tested.
+  Type: scaling / methodological
+  Related decisions: DECISION-050
+  Related assumptions: ASSUMPTION-276
+  Related presumptions: PRESUMPTION-306 (the join feasibility this depends on)
+  Testability: testable via literature (forward-compatible incremental architecture; cost of building toward an unvalidated target; YAGNI vs load-bearing-now)
+  Risk if wrong: Medium-High — P1 effort justified as P3 scaffolding may not transfer; the id-keyed hand-off claim is already partly falsified.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-309
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as a success-criteria gap plus an already-visible counterexample (one named load-bearing piece was deferred the same session). High confidence.
+    Current status: UNTESTED
+
+---
+
+PRESUMPTION-310:
+  Date surfaced: 2026-06-05
+  Statement: [inferred] Accepting "zero Civic↔Scientific cross-links" as honest signal (rather than a bug) presumes the edge-construction method — TF-IDF lexical similarity — is a valid proxy for genuine inter-community relatedness, so that an absence of TF-IDF similarity means an absence of real relationship. The verification confirmed the count is truly 0 in the data; it did not check whether TF-IDF is the right construct for "cross-type link."
+  Evidence it was operative: build session: "civic ~ scientific reported 'no cross-type links' … I verified against the JSON and that's true: Civic↔Scientific edge count is genuinely 0 (TF-IDF clusters those types apart). Honest message, not a bug." The verification establishes the count, then treats the TF-IDF basis as settled.
+  Why it was unstated: too foundational to notice — TF-IDF edges are the graph's given substrate, so their construct validity is not on the table; only the count was questioned.
+  Type: epistemic
+  Related decisions: DECISION-050
+  Related presumptions: couples the older PRS-edge-validity family (edge construction captures real structure)
+  Testability: testable via literature (TF-IDF / cosine similarity as network-edge construct validity; lexical vs semantic similarity for relatedness) + empirically (compare TF-IDF edges to a semantic-embedding edge set)
+  Risk if wrong: Medium — if TF-IDF under-detects genuine civic↔scientific relationships, the graph presents a methodological artifact ("these types don't connect") as a substantive finding about the communities.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-310
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as the gap between verifying a count and validating the construct that produced it. The verification was epistemically careful about the number and silent about the method. High confidence.
+    Current status: UNTESTED
+
+---
+
+PRESUMPTION-311:
+  Date surfaced: 2026-06-05
+  Statement: [inferred] Deferring the curated↔directory join to the P3 promotion pipeline presumes curated communities and directory records are the same kind of object that *should* eventually share an id space — i.e., that the disjointness is a not-yet-built bridge rather than a sign of two categorically distinct entity types. The alternative — that these should never join — was never raised.
+  Evidence it was operative: the CORRECTION reassigns the join to "the P3 promotion pipeline … (a promoted record carries its directory id into the graph)" — presuming a directory record and a graph community are the same entity at two maturity stages. No one asked whether a curated community and a directory record might be different objects entirely.
+  Why it was unstated: absent alternative — only the "build the join later" option was discussed; the "they shouldn't join" option is invisible.
+  Type: methodological / structural
+  Related decisions: DECISION-050
+  Related assumptions: ASSUMPTION-276, ASSUMPTION-277
+  Related questions: OPEN-075
+  Testability: testable via literature (entity ontology / when to unify vs keep schemas distinct; record-linkage as evidence of identity vs mere association)
+  Risk if wrong: Medium — if they are distinct object types, the promotion pipeline is modeling a transformation that does not correspond to a real identity, and P3's data model is mis-specified.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-311
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as an absent-alternative case, paired with OPEN-075. Distinct from PRESUMPTION-306 (which asks whether the join is *feasible*); 311 asks whether the join is *conceptually appropriate* at all. Medium confidence.
+    Current status: UNTESTED
+
+---
+
+PRESUMPTION-312:
+  Date surfaced: 2026-06-06
+  Statement: [inferred] Assigning the 156 curated communities `CC-xxx` ids inside the Cards directory presumes that sharing an id key *constitutes* genuine entity identity — that a CC-xxx card and its CC-xxx graph node are the same object — rather than merely *asserting* a link by fiat. Yesterday's finding (ASSUMPTION-277: the two id spaces are disjoint; 0 id / 3 name / 5 host matches) named an absence of identity; today's merge "resolves" it by stamping the same key onto both, which may have *manufactured* the identity that was found missing rather than discovering it.
+  Evidence it was operative: the merge is described as making the popover claim "true rather than aspirational" and the graph "a literal id-subset of the cards"; the disjoint-id problem is treated as fixed by id-assignment. No step verified that a CC-xxx card and its graph node denote the same real-world community beyond the shared key; the key itself was the curators' construction.
+  Why it was unstated: too foundational to notice — once you assign an id, "they share an id, therefore the join exists" feels self-evident; the gap between asserting a key and establishing referential identity is invisible.
+  Type: structural
+  Related decisions: DECISION-051
+  Related assumptions: ASSUMPTION-277 (disjointness found), ASSUMPTION-278 (the merge)
+  Related questions: OPEN-075, OPEN-076
+  Related presumptions: PRESUMPTION-311 (are they the same kind of object?), PRESUMPTION-306 (one-dataset presumes unifiability). Note: the "5 bulk overlaps of 156" near-zero match rate is further evidence the populations are largely non-coextensive — folded here rather than split out.
+  Testability: testable via literature (record linkage: shared-key assertion vs evidence-based entity resolution; identity vs association in data integration) + empirically (independent corroboration that CC-xxx card and node co-refer)
+  Risk if wrong: High — if shared-id ≠ identity, the entire P3 promotion pipeline rests on a key that asserts rather than discovers identity, and "promotion" moves a record across a boundary that may not track a real entity.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-312
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as the gap between *asserting* a shared key and *establishing* referential identity. Sharper than PRESUMPTION-311 (same-kind-of-object): 312 says the very act that "fixed" yesterday's disjointness may have created the identity by fiat. High confidence; pairs ASSUMPTION-278.
+    Current status: UNTESTED
+
+---
+
+PRESUMPTION-313:
+  Date surfaced: 2026-06-06
+  Statement: [inferred] Disclosing the no-consent / public-seed status in the "?" popover presumes that in-product disclosure is *sufficient to discharge* the ethical obligation incurred by listing identifiable communities without their consent — i.e., that transparency cures the consent gap rather than merely documenting it. The alternatives — not displaying un-consented records at all, or requiring opt-in before a community appears — were never raised.
+  Evidence it was operative: the flagged falsehood ("records implied as approved") was treated as resolved by *adding a disclosure* ("now disclosed in the popover + explorer_tabs_complementarity.md"); the move was from "implied consent" to "disclosed non-consent," not to "obtain consent" or "withhold until consent." The deeper question of whether to list unapproved records was not asked.
+  Why it was unstated: obvious-to-participants framing — disclosure is the natural engineering fix to a "the text says something false" bug, so the ethical question collapses into a copy fix.
+  Type: normative
+  Related decisions: DECISION-051
+  Related assumptions: ASSUMPTION-280 (the disclosure commitment)
+  Testability: testable via literature (research ethics / informed consent for listing identifiable groups from scraped data; whether disclosure substitutes for consent; "notice vs consent" debates in data ethics)
+  Risk if wrong: Medium-High — if disclosure does not discharge the obligation, an ISME-facing tool publicly lists communities without consent on the theory that a popover makes it acceptable; reputational and ethical exposure.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-313
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as a normative-smuggling + absent-alternative case: a consent question was resolved as a disclosure (copy) question. High confidence; pairs ASSUMPTION-280.
+    Current status: UNTESTED
+
+---
+
+PRESUMPTION-314:
+  Date surfaced: 2026-06-06
+  Statement: [inferred] Describing the graph's 156 as "communities articulated to a quality bar" presumes that a quality bar actually exists and was applied to *them*, when in fact the 156 were curated by the team and "no community has reviewed or approved its record." The design's telos is *earned* membership (a community crosses Q2 by self-articulation and then appears in the graph), but the present graph's membership is curatorial fiat — the very thing the P3 framing says it wants to replace. The current 156 thus instantiate the opposite of the principle the same doc advances.
+  Evidence it was operative: explorer_tabs_complementarity.md simultaneously asserts "the 156 communities articulated to a quality bar" and "no community has reviewed or approved its record," and frames graph membership as something a community "earns … by self-articulation" — while the Q2 quality gate that would make that true "does not yet exist" (it is P3 work).
+  Why it was unstated: culturally embedded — the aspirational vocabulary ("articulated," "earned," "quality bar") is used for the current curatorial selection as if the gate already operated, so the gap between aspiration and present mechanism is papered over by the language.
+  Type: epistemic
+  Related decisions: DECISION-051, DECISION-050
+  Related assumptions: ASSUMPTION-276 (earned membership / quality gate), ASSUMPTION-279 (two-surfaces complementarity)
+  Testability: testable via literature (curatorial vs earned membership; measurement surfaces where the metric is currently produced by the curator, not the measured) — also partly self-checkable (does a Q2 gate exist? currently no)
+  Risk if wrong: Medium — if the "articulated to a quality bar" framing is taken at face value downstream, the graph is read as a measurement of community self-articulation when it currently measures curatorial choices.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-314
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced by reading the new doc against itself — the "earned/articulated" telos described in present tense over a membership that is, by the same doc's admission, curatorial and unapproved. Medium-high confidence; pairs ASSUMPTION-276/279.
+    Current status: UNTESTED
+
+---
+
+PRESUMPTION-315:
+  Date surfaced: 2026-06-06
+  Statement: [inferred] Dispositioning the app.js:1314 console error as a stale buffer artifact presumes that "did not recur on a clean reload + a later-wired handler fires" is a *complete* exoneration — i.e., that the intermediate edit-state which produced the 12:27:01 null-throw cannot recur under any real user sequence. The test proved 1314 did not throw on the current load; it did not establish that the error path is unreachable from any ordinary interaction sequence.
+  Evidence it was operative: the verification concluded "Current code is healthy" from a single clean reload plus one positive handler-fires check, then committed; no enumeration of states that could re-null `els.source`/`els.subtypeSelect` was performed.
+  Why it was unstated: obvious-to-participants — a non-reproducing error under a careful check reads as "gone," so the residual question (is the throwing state reachable in normal use?) does not get asked.
+  Type: methodological
+  Related decisions: DECISION-051
+  Related assumptions: ASSUMPTION-282 (the stale-buffer disposition)
+  Testability: testable via literature (heisenbug / non-deterministic-init diagnosis; sufficiency of single-reload non-reproduction as a bug-closure criterion) + empirically (enumerate init orderings that could null the binding)
+  Risk if wrong: Low-Medium — a genuinely reachable init race would resurface intermittently in the demo; low blast radius but exactly the kind of intermittent failure that single-reload checks miss.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-315
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as a success-criteria gap in an otherwise-careful verification: the disposition is locally valid but presumed globally complete. Lower-confidence / surfaced per the err-toward-too-many rule; pairs ASSUMPTION-282.
+    Current status: UNTESTED
+
+---
+
+PRESUMPTION-316:
+  Date surfaced: 2026-06-06
+  Statement: [inferred] The "two surfaces, mutually upbuilding … breadth invites, depth reveals — each makes the other more truthful" framing presumes the Cards and Graph are purely reinforcing, and does not consider the failure mode in which graph-absence *stigmatizes* the carded-only majority: with the Q2 gate making graph-presence a visible, earned status, a community well-represented in Cards but absent from the Graph reads as lesser. The harmonious complementarity is asserted; the possibility that the two surfaces send divergent status signals (or compete for attention) is unconsidered.
+  Evidence it was operative: explorer_tabs_complementarity.md's uniformly positive language ("complementary and mutually upbuilding," "each makes the other more truthful") with no failure-mode or downside discussion, combined with ASSUMPTION-276/279's framing of graph membership as earned status — which makes graph-absence legible as a deficit for the ~850 carded-only records.
+  Why it was unstated: normative smuggling — the warm "mutually upbuilding" narrative carries an implicit value (graph-presence is better) that is never examined, so the stigmatization risk for the carded-only majority stays invisible.
+  Type: normative
+  Related decisions: DECISION-051
+  Related assumptions: ASSUMPTION-279 (complementarity), ASSUMPTION-276 (earned membership)
+  Related presumptions: PRESUMPTION-308 (Q2-gated visibility smuggles "articulate deserve visibility"); 316 is the inverse-facing twin — the stigma borne by those who have NOT crossed the gate.
+  Testability: testable via literature (status effects of tiered/earned visibility in directories and platforms; gated-membership stigmatization)
+  Risk if wrong: Medium — if graph-absence is read as deficit, the tool demotivates exactly the seed communities it most wants to draw into self-articulation, inverting its intended incentive.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-316
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as the failure-mode silence beneath a uniformly positive complementarity narrative; the inverse-facing twin of PRESUMPTION-308. Medium confidence; pairs ASSUMPTION-279.
+    Current status: UNTESTED

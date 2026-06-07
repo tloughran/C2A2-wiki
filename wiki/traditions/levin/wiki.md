@@ -66,3 +66,9 @@ Levin's program is **highly generative** — 6 PRS triplets from the RC Pilot do
 
 ---
 *Source: Resurrecting Civility — Document Explorer HTML (RC Pilot) | Processed: 2026-04-03*
+
+
+## Ingestion Log — 2026-06-07
+Ingested 2 approved triplet(s): PRS-32, PRS-33.
+- (open question) How does goal-directed cognition scale up from individual cells to integrated organisms — what physically binds many small agents into one l…  [src: PROP-2026-06-01-001]
+- (open question) Is there a coherent narrative connecting Levin's empirical findings (planarian regeneration, xenobots, bioelectric memory) into one research…  [src: PROP-2026-06-01-001]

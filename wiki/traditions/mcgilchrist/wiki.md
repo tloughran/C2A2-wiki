@@ -63,3 +63,14 @@ McGilchrist's program is **strategically central** to the C2A2 project's normati
 
 ---
 *Source: Resurrecting Civility — Document Explorer HTML (RC Pilot) | Processed: 2026-04-05*
+
+
+## Ingestion Log — 2026-06-07
+Ingested 7 approved triplet(s): PRS-29, PRS-30, PRS-31, PRS-32, PRS-33, PRS-34, PRS-35.
+- (open question) McGilchrist's program has been received primarily as cultural diagnosis (we are in a left-hemisphere world; here is how it went wrong); the …  [src: PROP-2026-05-27-002]
+- (open question) McGilchrist's claim that the good, the beautiful, and the true are constitutive of the cosmos has been received mostly within the science-an…  [src: PROP-2026-05-27-002]
+- (open question) A tradition-accelerator like C2A2 must eventually move from mapping mature traditions to *staging* them — bringing them into the same room —…  [src: PROP-2026-05-27-002]
+- (open question) McGilchrist's value claim has been received primarily through co-authored interviews (Parallax trialogue, Unbelievable interview) where the …  [src: PROP-2026-05-27-001]
+- (open question) A tradition's growth over time is hard to track when the only public record consists of interviews with shifting interlocutors — the underly…  [src: PROP-2026-05-27-001]
+- (open question) Does AI threaten the human soul, or merely mirror back what a left-hemisphere-dominant culture has already become?  [src: PROP-2026-06-03-001]
+- (open question) Can the question of machine consciousness be adjudicated on neuroscientific grounds alone?  [src: PROP-2026-06-03-001]

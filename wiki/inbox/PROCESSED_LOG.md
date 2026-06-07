@@ -430,3 +430,82 @@ diff is authoritative — is itself part of the deferred attended ingest session
 
 Action required: an attended Cowork session to (1) drain the 36-file backlog into tradition
 wikis and (2) send a `[C2A2-review-decision]` email to clear the review queue.
+
+---
+
+## 2026-06-05 unattended run — ingest backlog still deferred
+
+Daily scheduled orchestrator ran 2026-06-05 (Friday — Carroll + Arkani-Hamed specialist
+day; Carroll deposited 1 proposal dated today, "Quantum Cyclic Universe"; Arkani-Hamed's
+specialist left no today-dated proposal). Inbox inspected: the same standing 36-file
+backlog persists (oldest 2026-04-21, newest 2026-05-12), unchanged in count.
+
+Per the standing deferral, **no .md files were ingested and no PRS triplets were added
+to any tradition wiki today.** Network counts carried forward unchanged: **222 triplets /
+90 cross-program connections / 35 findings**.
+
+Phase 2 fallback prioritized the missing Friday specialist Arkani-Hamed; one positive-
+geometry web search returned only already-captured material. 0 orchestrator proposals.
+Review queue now holds **19 proposals** awaiting a `[C2A2-review-decision]` email.
+
+Action required (unchanged): an attended Cowork session to (1) drain the 36-file backlog
+into tradition wikis and (2) send a decision email to clear the 19-proposal review queue.
+
+---
+
+## 2026-06-06 unattended run — ingest backlog still deferred
+
+Daily scheduled orchestrator ran 2026-06-06 (Saturday — Wolfram specialist day; Wolfram
+deposited 1 proposal dated today, "Games between Programs: The Ruliology of Competition").
+Inbox inspected: the same standing **36-file backlog** persists (oldest 2026-04-21, newest
+2026-05-12), unchanged in count.
+
+Per the standing deferral, **no .md files were ingested and no PRS triplets were added
+to any tradition wiki today.** Network counts carried forward unchanged: **222 triplets /
+90 cross-program connections / 35 findings**.
+
+Phase 2 fallback targeted the two traditions at 0 pending — Hawkins (only out-of-window
+Dec-2025 keynote / commentary) and Hoffman (May Edge.org piece already captured in the
+backlog as `2026-05-12_hoffman_edge-hoffmans-law.md`; Prentner item is 2024). 0 orchestrator
+proposals. Review queue now holds **20 proposals** awaiting a `[C2A2-review-decision]` email.
+
+Action required (unchanged): an attended Cowork session to (1) drain the 36-file backlog
+into tradition wikis and (2) send a decision email to clear the 20-proposal review queue.
+
+---
+
+## 2026-06-07 attended-decision ingest — 20 approved proposals drained
+
+Phase 0 processed Gmail `[C2A2-review-decision] 2026-06-06` (20× APPROVE). The 20 approved
+proposals were copied to inbox/ and INGESTED this run (the decision email is the attended
+authorization the standing deferral was waiting on).
+
+**Files processed (20):** all pending proposals from the 2026-06-06 review page —
+arkanihamed(1), carroll(3), kastrup(2), mcgilchrist(3), fredrickson(2), wolfram(2),
+rohr(1), wright(2), friston(2), levin(1), stump(1).
+
+**Triplets extracted/added (38):**
+arkanihamed +2 (→12), carroll +6 (→21), fredrickson +4 (→20), friston +4 (→20),
+kastrup +6 (→22), levin +2 (→33), mcgilchrist +7 (→35), rohr +1 (→5), stump +1 (→17),
+wolfram +3 (→23), wright +2 (→6).
+
+**Cross-program:** 20 cross-tradition signals appended to master/cross_program_index.md and
+forwarded to flags/for_pattern_detector.md, then evaluated → FINDING-036..041 (6 new findings).
+Escalated to master Paradigm Shift Watch List: FLAG-009 (Wolfram×Friston / CROSS-053),
+FLAG-010 (Carroll×Hoffman observer ontology), FLAG-011 (McGilchrist AI-membership),
+FLAG-012 (Friston ZBS detector signal).
+
+**Network now:** 222 → 260 PRS triplets (narrative series) · 90 cross-program connections ·
+35 → 44 findings.
+
+**⚠ FAIL-LOUD FLAGS for attended/janitor cleanup:**
+1. `traditions/arkanihamed/prs_triplets.md` has a PRE-EXISTING structural duplication
+   (two "Note on Source Availability" sections, a duplicate PRS-10, and a stale second
+   "*Total PRS triplets: 10*" line at ~line 152). My triplets (PRS-11/12) were added cleanly
+   to the primary section; the duplicate fragment was NOT touched (not my mess). Needs manual dedup.
+2. Per-tradition total-line SUM (≈248-260 depending on arkanihamed's stale line) drifts from the
+   master narrative count (222→260). Pre-existing count drift; reconcile in an attended pass.
+3. Stump PROP-2026-06-04-002 was approved but self-flagged "no substantively-new content verified —
+   only the event is confirmed." Ingested 1 placeholder triplet per the APPROVE decision; verify content later.
+4. The separate ~36-file RAW inbox backlog (oldest 2026-04-21) remains DEFERRED per standing policy —
+   only the 20 attended-approved proposals were ingested this run.

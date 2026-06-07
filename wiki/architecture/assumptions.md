@@ -4799,15 +4799,16 @@ ASSUMPTION-269:
   Related assumptions: ASSUMPTION-264 (don't claim what you can't re-verify — here applied to intake rather than reporting)
   Related presumptions: PRESUMPTION-302 (self-awareness/pipeline value on autonomous runs)
   Testability: framework commitment (provenance discipline) / partly testable via literature (citation-verification and false-lead rates in automated knowledge-base intake)
-  Status: UNTESTED
+  Status: GROUNDED (incorporated as PREMISE-049, 2026-06-04 lit run)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a -> 15a/15b -> 15c -> 14a]
     Original item: ASSUMPTION-269
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from the 2026-06-03 auto-ingested McGilchrist proposal (the only genuinely new 06-03 intake artifact). The proposal explicitly stated a hold-until-verified rule for the unconfirmed McGilchrist–Wolfram lead while recording only the confirmed McGilchrist–Kastrup convergence. Genuinely new today (not an echo): the proposal file is dated/searched 2026-06-03 and was ingested at 07:11. This is the stated intake-side counterpart to the "verify before you assert" family (ASSUMPTION-264/265).
-    Current status: UNTESTED
+      15a/15b/15c (2026-06-04): INCORPORATED as PREMISE-049 (verify-before-trust); strong support, only an operational caveat folded in (quarantine-with-revisit, not silent drop). DISPOSITION-146.
+    Current status: GROUNDED
 
 ---
 
@@ -4821,12 +4822,258 @@ ASSUMPTION-270:
   Related presumptions: PRESUMPTION-300 (confirmed-down channel treated as recoverable, not a stop condition)
   Related open questions: OPEN-073 (should a confirmed-down sync channel trip a degrade/halt/escalate state?)
   Testability: framework commitment (safety boundary — agents should not assume user credentials) / partly testable via literature (human-in-the-loop authority limits; cost of agent-held vs human-held auth in unattended automation)
-  Status: UNTESTED
+  Status: CHALLENGED (partial) -> MONITOR-296 (2026-06-04 lit run)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a -> 15a/15b -> 15c -> 14a]
     Original item: ASSUMPTION-270
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from today's evening-sync and morning-scrape transcripts, which each explicitly declined to sign in and skipped their channel. Distinct from ASSUMPTION-263 (which names re-auth as the fix): 270 names the *agent-side boundary* that makes re-auth attended-only, and thereby makes the lapsed session unrecoverable from inside the pipeline. The inferred counterpart — that the pipeline keeps producing into the dead channel anyway — is PRESUMPTION-300.
+      15a/15b/15c (2026-06-04): Core boundary strong (agents should not assume user credentials); the 'cannot self-clear' clause is genuinely contested (scoped delegated-credential self-recovery vs added attack surface) -> MONITOR-296, not REVISE. Contributes to High SYSTEMIC-RISK 'autonomous-sync silent-degradation' (270+300). DISPOSITION-147.
+    Current status: CHALLENGED (partial); core boundary SUPPORTED, 'cannot self-clear' clause contested
+
+---
+
+ASSUMPTION-271:
+  Date identified: 2026-06-04
+  Statement: The PROCESSED_LOG's canonical ingest backlog is 36 files; the divergent figure of 152 produced by a naïve filename diff is an artifact of the log mixing per-file rows with batch-narrative entries, not a record of 116 additional un-ingested files. The "true" backlog count is therefore asserted to be 36, recoverable by reconciling the log's two entry styles during an attended ingest.
+  Context: Stated explicitly by the C2A2 wiki daily-run agent (2026-06-04, Phase 1 / closing note): "the backlog count is solid at 36, but PROCESSED_LOG mixes per-file rows with batch narratives, so a naïve filename diff reports 152; tidying that during the attended ingest would make the log diffable going forward." The run logged this as a "36-vs-152 bookkeeping conflict" and deferred the 36-file backlog under the standing attended-session rule (0 triplets added).
+  Type: methodological / empirical
+  Related decisions: (proposal-intake / PROCESSED_LOG bookkeeping; attended-ingest batching norm)
+  Related assumptions: ASSUMPTION-269 (intake/provenance discipline — here applied to the log-of-record)
+  Related presumptions: PRESUMPTION-304 (the unstated counterpart — that the 36 is correct and the 152 carries no lost data)
+  Testability: testable empirically (reconcile the log directly: join tradition-wiki integration timestamps / inbox file mtimes against PROCESSED_LOG entries to confirm whether the canonical count is 36 or whether some of the 152 are genuinely un-ingested) / partly via literature (system-of-record vs human-readable-narrative log design)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-271
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-06-04 wiki daily-run report, the only genuinely-new 06-04 statement about the backlog's bookkeeping. The agent explicitly asserted 36 as solid and attributed the 152 to a format artifact (per-file rows mixed with batch narratives). Genuinely new today: the conflict was first *logged as a conflict* on this run. This is the stated, count-claim side; the unstated resolvability/denominator premise is PRESUMPTION-304. Distinct from the older PROCESSED_LOG-completeness presumptions (126/the 2026-05-09 backfill family), which were about missing entries, not about two entry styles yielding two counts.
     Current status: UNTESTED
+
+---
+
+ASSUMPTION-272:
+  Date identified: 2026-06-04
+  Statement: Draining the 36-file ingest backlog should proceed as small, attended-authorized batches (on the order of 5-8 files per run), not as a single bulk ingest. A batched, human-authorized cadence is treated as the way to restart autonomous flow without compromising PRS-triplet quality or sweeping unrelated working-tree changes into the commit.
+  Context: Stated in the 2026-06-04 wiki daily-run closing report under what stays human-gated: "authorize a small batched ingest (~5-8 files/run) to start draining the 36-file backlog." Paired with the standing no-blind-push hold (587 uncommitted changes on feature/sociogram-search-integration were not committed) and the deferral of the full 36-file backlog this run.
+  Type: methodological
+  Related decisions: (attended-ingest cadence; constitutional no-blind-push rule)
+  Related assumptions: ASSUMPTION-271 (the 36-file backlog this cadence is meant to drain); earlier batch-ingest assumptions on tradition-batching and "massive ingestion" quality (refines them toward a smaller, more conservative per-run size)
+  Related presumptions: PRESUMPTION-305 (uncommitted working-tree accumulation treated as cost-free)
+  Testability: testable empirically (compare PRS-triplet revision/reversal rates for small 5-8-file attended batches vs the historical large/"massive" ingestions; measure whether small batches actually drain the backlog faster than they accrue) / via literature (batch-size vs quality in human-in-the-loop curation; WIP limits)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-272
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-06-04 daily-run report's human-gated-actions block. A more conservative, explicitly-sized articulation (5-8 files/run, attended-authorized) than the earlier batch-ingest assumptions (which described a 45-file "massive ingestion" and tradition-batching). Recorded as a refinement of, not a duplicate of, those — the new content is the small per-run size and the attended-authorization gate as the restart mechanism. Genuinely new today (stated on this run).
+    Current status: UNTESTED
+
+---
+
+ASSUMPTION-273:
+  Date identified: 2026-06-05
+  Statement: The sociogram's LOCKED search semantics — search is a transient highlight lens, never a filter; checkboxes filter, search highlights, and the two never sync (2026-05-29 LOCK) — transfer correctly and should be inherited *exactly* by the Community Explorer's 156-node graph.
+  Context: Stated in the P1 build / sociogram_feature_review.md (row 6): "Inherit the locked semantics exactly. … search highlights, checkboxes filter, the two never sync. Highest value-per-effort of anything in this table." Verified in the localhost review: "democracy" lit 14 of 156, never touched the checkboxes (LOCK respected).
+  Type: architectural / methodological
+  Related decisions: DECISION-050 (CE relationship architecture); 2026-05-29 search-lock
+  Related presumptions: PRESUMPTION-307 (the unstated transfer-conditions counterpart — that a rule derived for a 1647-node graph fits a 156-node one)
+  Testability: testable via literature (HCI: search-as-highlight vs search-as-filter; effect of graph size on appropriate interaction semantics)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-273
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-06-05 attended P1 build session and sociogram_feature_review.md. The stated commitment is that the lock is right for CE; the inferred (unexamined) half — whether the lock's original rationale survives the ~10x drop in node count — is PRESUMPTION-307.
+    Current status: UNTESTED
+
+---
+
+ASSUMPTION-274:
+  Date identified: 2026-06-05
+  Statement: A single shared search/broker module (`lib/c2a2-search.js`, inlined into each page at generation time) is the correct single-source seam for search and Ask-AI across both the graph and the cards surfaces — "one broker client, multiple surfaces … one search pipeline, two renderings."
+  Context: sociogram_feature_review.md rows 7 and P1: "`lib/c2a2-search.js` was built precisely for this (one broker client, multiple surfaces) … This is the first concrete integration point between graph and cards: one search pipeline, two renderings." Confirmed in the build: "The shared `c2a2-search.js` is now inlined at generation time, same single-source convention as the sociogram."
+  Type: architectural
+  Related decisions: DECISION-050
+  Related assumptions: ASSUMPTION-273 (search semantics the shared module enacts)
+  Testability: framework / engineering commitment (single-source-of-truth module) — not literature-testable; held, not routed
+  Status: UNTESTED (held — framework commitment)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-274
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the P1 build session. Recorded as a design/engineering commitment (single shared module). Not routed to 15a/15b: it is an internal-architecture choice without a literature truth-condition.
+    Current status: UNTESTED (held)
+
+---
+
+ASSUMPTION-275:
+  Date identified: 2026-06-05
+  Statement: The graph view and the cards view are two non-redundant "verbs over one dataset" (explore/relate/discover vs find/browse/register), not two versions of one tool; neither can absorb the other's function, so keeping both is justified.
+  Context: sociogram_feature_review.md §2: "these are not two versions of one tool; they are two verbs over one dataset. … Killing either loses a function the other cannot absorb." Pathway P4 ("keep only one") explicitly not recommended.
+  Type: architectural
+  Related decisions: DECISION-050
+  Related presumptions: PRESUMPTION-306 ("one dataset" presumes unifiability despite the disjoint id spaces found this session)
+  Testability: testable via literature (dual-view / overview+detail UX; tool-redundancy and view-coordination) — LOW priority
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-275
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the §2 comparison table and P4 rejection. Stated as design rationale for keeping both surfaces. The "one dataset" phrasing is the stated side; its unexamined unifiability premise (given today's id-space finding) is PRESUMPTION-306.
+    Current status: UNTESTED
+
+---
+
+ASSUMPTION-276:
+  Date identified: 2026-06-05
+  Statement: P3 ("one app, two projections") is the correct target architecture, and its promotion pipeline — a quality gate (record enters as seed → community claims and articulates GPRS → quality crosses Q2 → it appears in the graph and grows edges) — is the *actual* integration, not the UI. Graph membership should be earned by self-articulation rather than curatorial fiat, which makes the graph itself a measurement surface (who has articulated, who is connecting).
+  Context: sociogram_feature_review.md §3 P3 + ratified recommendation: "the quality gate is the membrane between directory and graph"; "Graph membership stops being a curatorial fiat and becomes something a community earns by self-articulation — which makes the graph itself a measurement surface." DECIDED 2026-06-05 (Tom): "P1 now; P3 is the someday target."
+  Type: architectural / methodological
+  Related decisions: DECISION-050
+  Related presumptions: PRESUMPTION-308 (Q2-gated visibility smuggles a normative claim); PRESUMPTION-309 (P1 pieces presumed forward-compatible with P3); PRESUMPTION-311 (presumes the two object types should ever share an id space)
+  Testability: testable via literature (staged / quality-gated data pipelines; progressive-promotion architectures; visibility-as-earned designs)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-276
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from §3 and the ratified 2026-06-05 decision. Stated architectural target plus the explicit claim that the promotion pipeline (not the UI) is the real integration. Three distinct unstated premises ride beneath it — surfaced as PRESUMPTION-308/309/311 by 14b.
+    Current status: UNTESTED
+
+---
+
+ASSUMPTION-277:
+  Date identified: 2026-06-05
+  Statement: [GROUNDED this session] The graph's 156 curated communities (`curated_communities.json`, ids CC-001…) and the Cards directory's 855 records (`data.js`, ids C0001…) are disjoint id spaces — 0 id matches, 3 name matches, 5 url-host matches. The earlier P1 "shared `community_id`" premise is therefore false; any cross-navigation hand-off requires a curated↔directory join that does not yet exist.
+  Context: CORRECTION block added to sociogram_feature_review.md (2026-06-05, P1 build session): "the 'shared `community_id`' premise is false in the current data … 0 id matches, 3 name matches, 5 url-host matches … Cross-navigation hand-offs are therefore deferred (Tom, 2026-06-05)." P1 shipped as search box + shared Ask-AI pipeline only.
+  Type: empirical
+  Related decisions: DECISION-050; supersedes the cross-nav portion of the earlier P1 sketch
+  Related questions: OPEN-075 (is the join feasible at useful density, or are these categorically distinct objects?)
+  Related presumptions: PRESUMPTION-306, PRESUMPTION-311
+  Testability: GROUNDED — directly verified against the JSON/data.js this session (count check); no routing needed
+  Status: GROUNDED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-277
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the dated CORRECTION block. This is the rare case of a same-session falsification of a prior stated premise (the "shared community_id" P1 sketch) by direct evidence; recorded as GROUNDED (empirically settled), not routed to the literature pipeline. It is the stated/measured side; the unexamined "these should eventually join" premise is PRESUMPTION-311.
+    Current status: GROUNDED
+
+---
+
+ASSUMPTION-278:
+  Date identified: 2026-06-06
+  Statement: Merging the 156 curated communities into the Cards directory under their own `CC-xxx` ids (so the graph becomes a literal id-subset of the cards) is the correct way to make the directory⊇graph relationship true rather than aspirational, and to unblock the previously-deferred graph↔cards cross-navigation hand-off on a shared key. This is the first concrete step that makes P1 forward-compatible with the P3 promotion pipeline.
+  Context: explorer_tabs_complementarity.md §"Why this matters architecturally": "the graph's 156 curated communities were merged into the Cards directory under their own `CC-xxx` ids … so the graph is now a literal id-subset of the cards — the claim this popover makes is true rather than aspirational, and the previously-deferred graph↔cards cross-navigation hand-off is now mechanically possible on the shared key (the UI for it is a future increment)." sociogram_feature_review.md 2026-06-06 UPDATE; scripts/generate_community_cards_data.py (cards now 1006 after deduping 5 bulk overlaps). Directly addresses ASSUMPTION-277 / OPEN-075 (the "no join exists" finding of 2026-06-05).
+  Type: architectural
+  Related decisions: DECISION-050, DECISION-051
+  Related questions: OPEN-075 (partial empirical answer — the join is now mechanically real), OPEN-076 (is its edge density sufficient?)
+  Related presumptions: PRESUMPTION-312 (sharing an id key presumes genuine entity identity rather than merely asserting it)
+  Testability: testable via literature (record-linkage / shared-key subset modeling; superset-directory ⊇ curated-subgraph patterns) — LOW priority (largely an engineering realization of DECISION-050)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-278
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-06-06 attended CE build session and its dated artifacts. The stated rationale for the curated→cards merge; it supersedes the cross-nav-deferral of ASSUMPTION-277 by building the join. The unexamined "shared id = identity" premise beneath it is surfaced as PRESUMPTION-312.
+    Current status: UNTESTED
+
+---
+
+ASSUMPTION-279:
+  Date identified: 2026-06-06
+  Statement: The Cards directory and the Graph are "two surfaces, one instrument" and are *mutually upbuilding*: Cards is breadth/self-articulation (the wide door — every community found, each an inferred seed until it claims and sharpens its own GPRS); Graph is depth/detection (the 156 articulated to a quality bar, positioned by problem-kinship). The directory feeds the graph (a well-articulated seed earns its place and grows edges) and the graph gives the directory its purpose (a destination worth articulating toward) — "breadth invites; depth reveals — each makes the other more truthful."
+  Context: explorer_tabs_complementarity.md (new file, 2026-06-06), source-of-truth for the "?" popover: "The two are complementary and mutually upbuilding. The directory feeds the graph … The graph gives the directory its purpose … each makes the other more truthful." Refines ASSUMPTION-275 ("two verbs over one dataset") and ASSUMPTION-276 (earned graph membership) by adding the mutual-reinforcement claim.
+  Type: architectural / methodological
+  Related decisions: DECISION-050, DECISION-051
+  Related assumptions: ASSUMPTION-275, ASSUMPTION-276 (overlap noted — 279 adds the mutual-upbuilding claim specifically)
+  Related presumptions: PRESUMPTION-316 (the harmonious complementarity hides a graph-absence-stigmatizes-carded-only failure mode)
+  Testability: testable via literature (overview+detail / focus+context dual-view UX; whether coordinated breadth+depth views are mutually reinforcing or competing) — LOW priority
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-279
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the new explorer_tabs_complementarity.md. The stated complementarity doctrine; partially overlaps 275/276 but adds the "mutually upbuilding / each makes the other more truthful" reinforcement claim, which is the routable, testable increment. Its unexamined failure-mode-blindness is PRESUMPTION-316.
+    Current status: UNTESTED
+
+---
+
+ASSUMPTION-280:
+  Date identified: 2026-06-06
+  Statement: Because the Community Explorer records are seeded from publicly-available web pages without the communities' express consent, and no community has reviewed or approved its record, the tool must disclose this status directly in-product — in the "?" popover and in a source-of-truth doc — rather than presenting seed records as if endorsed.
+  Context: Prompted by two falsehoods Tom flagged in the popover; fix (1): "no community has approved any record — all data is from public web pages (now disclosed in the popover + explorer_tabs_complementarity.md)." explorer_tabs_complementarity.md status/consent block: "This tool is currently still under construction, and has been seeded with publicly-available information about communities without their express consent. No community has reviewed or approved its record."
+  Type: normative / methodological
+  Related decisions: DECISION-051
+  Related presumptions: PRESUMPTION-313 (in-product disclosure presumed sufficient to discharge the consent obligation)
+  Testability: testable via literature (research-ethics / informed-consent norms for listing identifiable groups from scraped public data; data-provenance and consent-disclosure practice)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-280
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the popover truth-fix and the new consent block. A genuinely new normative commitment today (transparency about non-consented seeding). The deeper unstated premise — that disclosure cures rather than merely documents the consent gap — is surfaced as PRESUMPTION-313.
+    Current status: UNTESTED
+
+---
+
+ASSUMPTION-281:
+  Date identified: 2026-06-06
+  Statement: A single source-of-truth document (explorer_tabs_complementarity.md) that the generator's popover text mirrors — "edit here and regenerate to keep them aligned" — is the correct discipline for preventing in-product UI copy from drifting away from its documented architectural rationale.
+  Context: explorer_tabs_complementarity.md header: "Source of truth for the Community Explorer '?' (Graph vs Cards) popover. The popover text in scripts/generate_community_explorer.py is a mirror of this file; edit here and regenerate to keep them aligned."
+  Type: methodological / architectural
+  Related decisions: DECISION-051
+  Related assumptions: ASSUMPTION-274 (shared single-source seam — same single-source-of-truth family; held on the same grounds)
+  Testability: framework/engineering commitment — not literature-testable. HELD (not routed), parallel to ASSUMPTION-274.
+  Status: UNTESTED (held — framework commitment)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-281
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the new doc's header convention. A single-source-of-truth engineering commitment (anti-drift), held by type rather than routed — same disposition as ASSUMPTION-274.
+    Current status: UNTESTED (held)
+
+---
+
+ASSUMPTION-282:
+  Date identified: 2026-06-06
+  Statement: [GROUNDED this session] A console error (null `addEventListener` at app.js:1314) can be dispositioned as a stale buffer artifact rather than a live bug when (a) it does not recur on a clean reload and (b) a handler wired *after* the supposedly-throwing line still fires — proving the line did not throw on the live load. Here the subtype-dropdown change handler (wired at 1315) fired and synced the URL to `subtypes=Anarchist+commune`, so 1314 did not throw; the frozen 12:27:01 entry was an intermediate edit-state remnant.
+  Context: 2026-06-06 build-session verification step: "Same frozen timestamp (12:27:01) — it didn't recur on this fresh load … The definitive test: if the change handler (wired at 1315, after the line that supposedly threw) actually fires, then 1314 didn't throw … the URL updated to `subtypes=Anarchist+commune`, so the change handler at line 1315 fired — meaning 1314 did not throw on the current load."
+  Type: methodological (debugging / verification heuristic)
+  Related decisions: DECISION-051
+  Related presumptions: PRESUMPTION-315 (the stale-buffer disposition presumed complete without checking the error path's reachability from real user sequences)
+  Testability: GROUNDED — the specific disposition was verified in-session by a positive downstream-handler test; the general heuristic is testable via software-engineering literature (heisenbug / stale-console diagnosis) but is not routed.
+  Status: GROUNDED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-282
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the verification step. A rare verification-success instance (a stated diagnostic claim proven in-session by a positive handler-fires test), recorded GROUNDED and not routed — parallel to ASSUMPTION-277. The completeness of the disposition is questioned by PRESUMPTION-315.
+    Current status: GROUNDED

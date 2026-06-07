@@ -157,5 +157,14 @@ PRS-16:
   Source: What are we? Collective neuroscience, metaphysics, and theology — Religious Studies (Cambridge), 2025 Maritain Lecture
   Confidence: Speculative
 
+PRS-17:
+  Problem: [unknown until address content is located]
+  Resource: Stump's Aquinas Institute commencement address, May 8, 2026.
+  Solution: [pending — likely a restatement of her suffering/flourishing or Thomistic-formation themes in an address register]
+  Date Added: 2026-06-07
+  Source: Aquinas Institute of Theology 2026 Commencement Address (Doctor Honoris Causa) — https://www.ai.edu/; PROP-2026-06-04-002
+  Confidence: Speculative
+
+
 ---
-*Total PRS triplets: 16*
+*Total PRS triplets: 17*

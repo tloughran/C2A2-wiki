@@ -300,3 +300,44 @@ this automated path; (2) the real gap on proposal pages is backlinks not content
 from the connectivity metric.
 
 *Autonomous scheduled run. No source content deleted; only this run's own additions were reverted/emptied.*
+
+---
+
+## Run — 2026-06-07 (autonomous scheduled run)
+
+**Connectivity snapshot (computed this run).**
+- FULL graph (incl. `architecture/lit_search_results/`): 1860 orphan / 432 sparse / 34 connected / 2326 total.
+- EX-LIT (excluding the 1138 lit-search result pages): 722 orphan / 432 sparse / 34 connected / 1188 total.
+- CSV row appended (full, for trend continuity with prior rows): `2026-06-07,1860,432,34,2326`.
+- **Standing recommendation, re-flagged:** the lit-search result pages dominate the orphan count (they are orphan-by-design literature dumps). The honest connectivity metric is the EX-LIT figure. I did **not** silently switch the CSV methodology mid-series — surfacing the conflict instead per project rule.
+
+**Pages processed (6).** Selected for genuine lack of inbound routing AND absence of any existing `## Cross-Tradition Signals` / `## Agentic Calls` section (the 2026-05-31 run's failure mode was duplicating hand-authored CTS sections — deliberately avoided). The large inbox cohort already carries hand-authored CTS routing and was left untouched.
+
+| Page | backlinks before | after (calls added) |
+|---|---|---|
+| traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md | 1 | 1 + 4 outbound calls (requests backlinks in) |
+| traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md | 1 | 1 + 4 calls |
+| traditions/friston/prs_triplets.md | 0 | 0 + 3 calls |
+| traditions/wolfram/prs_triplets.md | 0 | 0 + 4 calls |
+| traditions/hawkins/prs_triplets.md | 0 | 0 + 3 calls |
+| traditions/levin/prs_triplets.md | 0 (had a 2026-05-18 calls section) | +3 calls merged under it; redundant Friston/PRS-03 call dropped |
+
+Note: agentic calls are *requests* to other agents to add backlinks; they do not themselves raise the target's inbound count until those agents act. Several calls are reciprocal (the four prs_triplets pages and the connectome page are wired to backlink *each other*), so a single follow-up pass by the named agents would convert ~5 of these orphans/sparse pages to connected.
+
+**Agentic calls injected: 21 total** (1 duplicate dropped on merge), addressed to: Loughran (×5), Friston (×3), Hawkins (×3), McGilchrist (×2), Hoffman (×2), Wolfram (×1), Carroll (×1), Arkani-Hamed (×1), Rohr (×1), Levin (×1). All calls reference specific PRS-triplet labels or specific passages — no boilerplate.
+
+**Bridge notes written: 0 — deliberately.** Rationale (fail-loud):
+1. This mount denies `unlink`; the 2026-05-31 run created 33 bridge files it then could not delete. **Those 33 zero-byte stubs are STILL present in `synthesis/`** (verified this run). Creating new bridge files would add to deletion-blocked litter.
+2. The single strongest intersection among this run's pages — Friston × Levin morphogenesis-as-free-energy — is **already** covered by a rich, current `synthesis/friston_levin_bridge.md`. The Friston and Levin calls point back to it rather than duplicating it.
+3. Prior run's standing recommendation was explicitly *not* to promote automated bridge creation. Honored.
+
+**ACTION STILL NEEDED FROM TOM (carried over from 2026-05-31, not yet done):** remove the 33 empty bridge stubs the agent cannot delete:
+```
+cd "wiki/synthesis" && find . -name "*_bridge.md" -size 0 -delete
+```
+
+**Worth Tom's attention.**
+- The orphan number is inflated ~2.5× by `lit_search_results/`. Decide whether to exclude that tree from the metric (recommended) so the trend tracks the *meaningful* graph.
+- The 14 `traditions/*/prs_triplets.md` canonical pages are nearly all 0-backlink. The cheapest large connectivity win is a mechanical pass adding backlinks from each `traditions/<thinker>/wiki.md` hub to its own `prs_triplets.md` — but that is a *write to hub pages* and outside this run's append-only-to-orphans remit, so flagged rather than done.
+
+*Autonomous run. Append-only. No source content deleted or overwritten; only this run's own additions were made.*

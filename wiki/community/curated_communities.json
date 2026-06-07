@@ -788,11 +788,11 @@
     "type": "Interdisciplinary Synthesis",
     "subtype": "Biosemiotics and biological signification",
     "url": "https://www.biosemiotics.org/",
-    "country": "Global (Netherlands 2025)",
+    "country": "Global",
     "description": "See ISBS listing above. Included separately here to capture the annual GIBS convening as a distinct community resource: the 25th GIBS was held in Rotterdam in August 2025. This anniversary meeting drew international scholars working on plant semiosis, microbial signaling, animal communication, genetic code interpretation, and theoretical biosemiotics. The Springer journal Biosemiotics publishes across the full range from molecular to ecological semiosis.",
-    "problem": "Biology's mechanistic vocabulary cannot capture what it means for a bacterium to 'interpret' a chemical gradient as food rather than merely 'respond' to it, or for a gene to 'encode' a protein rather than merely cause it. This gap matters practically for understanding antibiotic resistance (bacteria learning to interpret threats) and immune response (the body distinguishing self from non-self).",
-    "resource": "Twenty-five years of annual international gatherings; the Springer journal with global visibility; a unique theoretical toolkit from Peirce's semiotic triad applicable across scales; plant communication research as an empirically tractable test case; ties to cognitive science, philosophy of biology, and systems biology.",
-    "solution": "Developing an empirically testable account of biological interpretation — one that can explain how organisms extract meaning from molecular signals — that bridges the semiotic and mechanistic descriptions of life and enables more nuanced models of adaptive biological systems.",
+    "problem": "Standard molecular biology describes biological signaling in purely causal-mechanical terms, losing the dimension of meaning and interpretation that characterizes living systems — why a signal is a signal rather than just a chemical reaction. Biology’s mechanistic vocabulary cannot capture what it means for a bacterium to ‘interpret’ a chemical gradient as food rather than merely ‘respond’ to it, or for a gene to ‘encode’ a protein rather than merely cause it. This gap has practical stakes: understanding antibiotic resistance and immune response requires grasping how organisms actively interpret their environments.",
+    "resource": "Twenty-five years of annual international gatherings (Gatherings in Biosemiotics); the Springer journal Biosemiotics with global visibility; a unique theoretical toolkit — Peirce’s semiotic triad, Uexküll’s Umwelt concept — applicable across molecular, ecological, and evolutionary scales; plant communication research as an empirically tractable test case; strong ties to phenomenology, philosophy of biology, cognitive science, and systems biology.",
+    "solution": "Developing an empirically testable account of biological interpretation that bridges semiotic and mechanistic descriptions of life — showing how semiotic relationships between signs and their interpretants can be studied in genetic, cellular, and ecological contexts, reframing organisms as active interpreters of their environments rather than passive responders, and enabling richer models of adaptive and evolutionary processes.",
     "prs_quality": 2,
     "source": "Search on biosemiotics research community 2025",
     "community_id": "CC-057"
@@ -1720,20 +1720,6 @@
     "prs_quality": 2,
     "source": "Search on complexity science emergence research community 2025",
     "community_id": "CC-124"
-  },
-  {
-    "name": "International Society for Biosemiotic Studies (ISBS)",
-    "type": "Scientific Frontier",
-    "subtype": "Biosemiotics and biological signification",
-    "url": "https://www.biosemiotics.org/",
-    "country": "Global",
-    "description": "ISBS organizes the annual Gatherings in Biosemiotics (GIBS), held in Rotterdam in August 2025 for its 25th edition. Biosemiotics investigates how organisms generate, interpret, and respond to meaningful signs — from genetic code sequences to intercellular signaling to animal communication — bridging biology, philosophy, semiotics, and cognitive science. The Springer journal Biosemiotics serves as the community's primary publication venue.",
-    "problem": "Standard molecular biology describes biological signaling in purely causal-mechanical terms, losing the dimension of meaning and interpretation that characterizes living systems — why a signal is a signal rather than just a chemical reaction. This makes it difficult to understand how organisms actively interpret their environments rather than merely respond to them.",
-    "resource": "A twenty-five-year interdisciplinary research tradition; international gathering infrastructure; the Springer journal Biosemiotics; ties to phenomenology, philosophy of biology, and cognitive science; a unique theoretical toolkit (Peircean semiotics, Uexküll's Umwelt concept) applicable to molecular, ecological, and evolutionary biology.",
-    "solution": "Developing an account of biological agency and interpretation that can be operationalized — showing how semiotic relationships between signs and their interpretants can be empirically studied in genetic, cellular, and ecological contexts, reframing life as intrinsically meaningful rather than merely mechanical.",
-    "prs_quality": 2,
-    "source": "Search on biosemiotics research community 2025",
-    "community_id": "CC-125"
   },
   {
     "name": "Mechanistic Interpretability Research Community (NeurIPS/ICML Workshop Network)",

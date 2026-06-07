@@ -11171,3 +11171,2690 @@ Per-item 15c outcomes (all: MONITOR carried forward, cadence Weekly, last-checke
 **PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
 
 **Total new MONITORs this run (2026-06-04):** 4 (MONITOR-296, MONITOR-297, MONITOR-298, MONITOR-299). Next weekly 15d run due: 2026-06-07.
+
+## MONITOR — run 2026-06-05 (2026-06-04 EOD self-awareness batch)
+
+### MONITOR-300 — ASSUMPTION-271
+**Statement:** The PROCESSED_LOG canonical ingest backlog is 36 files; the divergent 152 from a naïve filename diff is a format artifact (per-file rows mixed with batch narratives), not 116 extra un-ingested files.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Net:** Both agree on the mechanism and split on the epistemic ordering. 15a (event-sourcing/log-as-system-of-record): a mixed-format log legitimately over-counts under a naïve diff and the canonical count is a deterministic fold over the log — so 152≠36 is expected and 36 is recoverable IN PRINCIPLE. 15b (data-reconciliation): an unexplained ~76% count gap must be traced to explicit rules before being called benign, or it is candidate silent data loss; the assumption asserts the conclusion the audit is supposed to earn.
+**Reasoning for MONITOR:** Conditional on a cheap, checkable fact (run the fold/reconciliation) that is unresolved at autonomous run time -> MONITOR. Not INCORPORATE: the specific figure 36 is unproven (only the mechanism is supported). Not REVISE: no established defect — the mechanism is sound and the fix is a one-time audit, not a design change. Stated ASSUMPTION (the inferred twin PRESUMPTION-304 carries the extra directional+deferral bets and is flagged REVISE-087).
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-12. Priority MEDIUM. What would change: run the reconciliation — partition all 152 entries by record type (per-file row | batch narrative | genuine un-ingested file) and reconcile against the filesystem. Residual = 36 -> INCORPORATE (artifact confirmed); residual > 36 -> REVISE (real un-ingested backlog, escalate). Couples PRESUMPTION-304 (REVISE-087), ASSUMPTION-272 (PREMISE-050), and the defer-and-tidy-later SYSTEMIC-RISK.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-301 — PRESUMPTION-303
+**Statement:** [inferred] Admitting an unsourced, low-confidence pointer (PROP-2026-06-04-002 Stump) to the pending-review queue presumes queue-admission is a safe quarantine that does not violate verify-before-trust — enacted the same run PREMISE-049 (verify-before-trust) was incorporated against exactly that.
+**Item type:** PRESUMPTION (unstated)
+**15a:** SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Net:** Both converge on a single condition. 15a (quarantine/staging design): a properly isolated pending-review namespace separates admission from trust and is a recognized safe pattern — admission ≠ trust — IF the low-confidence marking is machine-enforced and adjudication actually runs. 15b (queue-rot / inertia-promotion / strict verify-before-admit): without enforced read-gating and a binding adjudication deadline, a marked-but-admitted item gets trusted by inertia or rots unreviewed, which IS a soft verify-before-trust violation — sharpened by the same-run timing against PREMISE-049.
+**Reasoning for MONITOR:** Conditional on a checkable property of the queue (is the marking machine-enforced and is adjudication guaranteed?), unresolved at autonomous run time -> MONITOR. Not INCORPORATE: the safety condition is unverified. Not REVISE: no demonstrated leak yet, and the fix is an enforcement check, not a redesign. PRESUMPTION + direct tension with a just-incorporated premise (PREMISE-049) -> extra care, MEDIUM-HIGH priority.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-12. Priority MEDIUM-HIGH. What would change: audit the pending-review read paths. If no default read/join/export/promote touches pending items AND each carries an adjudication deadline whose default is purge-not-promote -> INCORPORATE the admission≠trust justification. If pending items leak into default reads OR promote on age/inertia -> REVISE to add machine-enforced isolation + binding adjudication deadlines + an explicit verify-before-trust exception log. Couples ASSUMPTION-269/PREMISE-049, OPEN-074, and the defer-and-tidy-later SYSTEMIC-RISK.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-06-05):** 2 (MONITOR-300, MONITOR-301). Next weekly 15d run due: 2026-06-12.
+
+## MONITOR — run 2026-06-06 (2026-06-05 ATTENDED Community Explorer P1 batch)
+
+### MONITOR-302 — ASSUMPTION-273
+**Statement:** Sociogram LOCKED search semantics (highlight lens, never filter; checkboxes filter, search highlights, never sync) transfer correctly and should be inherited exactly by the 156-node Community Explorer graph.
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Moderate-Strong) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Net:** Strong support for the highlight-preserves-context PRINCIPLE (Cockburn 2008; Heer & Shneiderman 2012); the challenge targets "inherit exactly" for CE's stated name-lookup task at 156 nodes, where filtering/isolation can beat highlight (Munzner; Shneiderman dynamic queries). Support and challenge address different clauses.
+**Reasoning for MONITOR:** Conditional on a cheap checkable UX fact (highlight-vs-filter lookup time at 156 nodes) -> MONITOR. Not INCORPORATE (scale/task fit unverified); not REVISE (lock not defective). Paired with MONITOR-304 (PRESUMPTION-307, the inferred scale-transfer twin).
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-13. Priority MEDIUM. What would change: time a name-lookup task on the 156-node graph, highlight vs filter. Highlight ≈ filter -> INCORPORATE the inherit-exactly choice; filter materially faster -> REVISE to allow search-filter/isolate at small N while keeping the highlight grammar for structure-reading.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-303 — ASSUMPTION-276
+**Statement:** P3 ("one app, two projections") with a Q2 quality-gate promotion pipeline as the membrane between directory and graph is the correct target architecture; graph membership earned by self-articulation makes the graph a measurement surface.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate-Strong) | **15b:** PARTIALLY-CHALLENGED (Moderate-Strong)
+**Net:** The staged quality-gated promotion MECHANISM is well-supported (medallion bronze/silver/gold; gates at transitions). The transfer to participation/visibility is challenged on three fronts: Goodhart (measurement surface + earned membership → criterion becomes a target), normative non-neutrality (couples PRESUMPTION-308), and premature "correct target" before the central join is validated (couples 306/309).
+**Reasoning for MONITOR:** Symmetric moderate-strong on different aspects -> MONITOR. Not INCORPORATE (the "measurement surface" and "correct target" claims are Goodhart-exposed and join-dependent); not REVISE (the pipeline mechanism is sound — fix is to hedge claims + validate the join). Priority MEDIUM.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-13. Priority MEDIUM. What would change: (a) resolve the 306 join (REVISE-089) — absent a usable join, "two projections of one dataset" fails and so does P3-as-correct-target; (b) decide whether the graph is read as an unbiased measurement (if yes, drop reward-coupling to avoid Goodhart). Couples ASSUMPTION-275 (PREMISE-051), PRESUMPTION-306/308/309/311, OPEN-075.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-304 — PRESUMPTION-307
+**Statement:** [inferred] Inheriting the 1647-node sociogram's search LOCK "exactly" into a 156-node graph presumes the lock's rationale survives a ~10x scale drop, though CE's stated need ("156 unlabeled dots need name lookup") differs from the sociogram's.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**Net:** Inferred scale-transfer twin of ASSUMPTION-273. Consistency-of-grammar gives a light FOR (Nielsen consistency; highlight is a general primitive); the challenge is that the lock's clutter-at-1647 rationale does not survive the 10x drop and CE's lookup task favors the forbidden filter idiom (Cockburn 2008: context-loss cost scales with N).
+**Reasoning for MONITOR:** Resolvable by the same highlight-vs-filter lookup test as MONITOR-302 -> MONITOR (paired). Not REVISE (no defect demonstrated, test is cheap); not INCORPORATE (scale-survival unproven). PRESUMPTION -> extra care.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-13. Priority MEDIUM. What would change: the lookup-time test result (shared with 273); also articulate CE's task profile and check it matches the sociogram's before inheriting. Pairs ASSUMPTION-273 (MONITOR-302).
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-305 — PRESUMPTION-308
+**Statement:** [inferred] Q2-gated graph visibility smuggles a normative claim — that articulate/higher-quality communities deserve visibility and seed records do not — into a technical pipeline ("membership earned by self-articulation").
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**Net:** Curation efficacy is supported (medallion/Great Expectations; Wikipedia notability). The NORMATIVE claim is challenged by participation-inequality (Nielsen 90-9-1) and visibility-as-power scholarship (Bowker & Star; D'Ignazio & Klein): articulation tracks resources/literacy, so an articulation gate reproduces inequality and hides emerging/under-resourced communities while presenting as neutral.
+**Reasoning for MONITOR (HIGH):** A normative PRESUMPTION cannot be INCORPORATED on literature alone — it is a value decision for Tom — and it is not yet a demonstrated harm to REVISE; but it is too consequential (who is visible) to leave implicit. -> MONITOR with HIGH priority and an explicit "surface to Tom" action. Cross-listed in the revision_flags SYSTEMIC-RISK note (validity-smuggling pair).
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-13. Priority HIGH. What would change: surface the value choice explicitly to Tom (decide the visibility policy on purpose); measure whether admission correlates with community resource proxies and whether excluded seeds skew under-resourced -> if yes, REVISE toward equity-aware admission (assisted articulation / provisional seed visibility); if the policy is deliberately endorsed, INCORPORATE the stated rationale. Couples ASSUMPTION-276 (MONITOR-303).
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-306 — PRESUMPTION-310
+**Statement:** [inferred] Accepting "zero Civic↔Scientific cross-links" as honest signal presumes TF-IDF lexical similarity is a valid proxy for genuine inter-community relatedness; the verification confirmed the count, not the construct validity of TF-IDF edges.
+**Item type:** PRESUMPTION (unstated)
+**15a:** SUPPORTED (Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**Net:** TF-IDF/cosine is a validated relatedness baseline within a shared vocabulary domain (Salton & Buckley; standard IR). Cross-domain it is semantically blind (Reimers & Gurevych; TF-IDF semantic-blindness literature): Civic and Scientific registers differ, so near-zero cross-links is indistinguishable from related-but-lexically-divergent. The verification established reliability (the count), not construct validity (that edges measure relatedness).
+**Reasoning for MONITOR:** Conditional on a checkable fact (re-run edges with embeddings; do semantic cross-links appear that TF-IDF missed?) -> MONITOR. Not INCORPORATE ("zero = honest signal" is construct-unverified cross-domain); not REVISE (TF-IDF is a defensible first pass, no defect shown). PRESUMPTION + epistemic -> extra care.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-13. Priority MEDIUM. What would change: build embedding-based edges (e.g., Sentence-BERT) and compare cross-domain counts. Embeddings ≈ TF-IDF (still ~0) -> INCORPORATE the "honest signal" reading; embeddings surface cross-domain links -> REVISE to treat near-zero TF-IDF as "lexically disjoint, relatedness unknown" and report the construct caveat. Couples the PRS-edge-validity family.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-307 — PRESUMPTION-311
+**Statement:** [inferred] Deferring the join to the P3 promotion pipeline presumes curated communities and directory records are the same kind of object that should eventually share an id space; the alternative — categorically distinct, should never join — was never raised.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**Net:** Lifecycle/MDM models (CRM lead→customer; medallion promotion; golden records) license a shared id space only when it is the SAME entity across stages. Presuming that for curated-community vs directory-seed conflates association with identity (Chen ER model; Bowker & Star; MDM over-merge caution), and the distinct-kinds alternative was never raised. Conceptual twin of PRESUMPTION-306 (feasibility): 306 = CAN they join, 311 = SHOULD they.
+**Reasoning for MONITOR (HIGH):** A PRESUMPTION that pre-commits an ontology (one object vs two) is a modeling decision for Tom, contingent on the 306 linkage result -> MONITOR with HIGH priority and an explicit "raise the suppressed alternative" action. Not REVISE independently (it rides on 306, already REVISE-089); not INCORPORATE (identity unproven).
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-13. Priority HIGH. What would change: decide the entity model explicitly — one object across maturity (shared id space) vs two associated kinds (link table, never merged). Prefer association-by-link until identity is positively established (MDM caution). Gated by the 306 result. Couples PRESUMPTION-306 (REVISE-089), ASSUMPTION-276 (MONITOR-303), OPEN-075.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-06-06):** 6 (MONITOR-302..307). Next weekly 15d run due: 2026-06-13.
+
+## MONITOR — run 2026-06-07 (2026-06-06 EOD attended CE build batch)
+
+### MONITOR-308 — ASSUMPTION-278
+**Statement:** Merging the 156 curated communities into the Cards directory under their own CC-xxx ids (graph becomes a literal id-subset of the cards) is the correct way to make the directory⊇graph relationship true and to unblock the deferred cross-navigation hand-off.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**Net:** Sound integration mechanics (surrogate keys / MDM golden ids) make the subset relation ADDRESSABLE, but not TRUE; validity rides on the identity question, which the 2026-06-05 measurement (0 id / 3 name / 5 host) leaves near the signal floor.
+**Reasoning for MONITOR (HIGH):** The technique is legitimate (not REVISE on its own) but is the enacted vehicle of a contested identity (PRESUMPTION-312 → REVISE-091); cannot INCORPORATE until the linkage is measured.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-14. Priority HIGH. What would change: the REVISE-089/REVISE-091 record-linkage result — overlap confirmed → the merge is correct, lean INCORPORATE; overlap stays ~0 → the merge asserted identity by fiat, model as association (link table) and unwind the shared id space. Cross-listed in manufactured-identity SYSTEMIC-RISK. Couples PRESUMPTION-312, prior REVISE-089 / MONITOR-307.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-309 — ASSUMPTION-279
+**Statement:** Cards and Graph are "two surfaces, one instrument" and mutually upbuilding — the directory feeds the graph (well-articulated seeds earn their place) and the graph gives the directory its purpose; "breadth invites, depth reveals — each makes the other more truthful."
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate complementarity / Weak for the stronger claim) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Net:** The functional-complementarity core is already PREMISE-051 (via ASSUMPTION-275). The residual content — purely-reinforcing, "earned place," "each makes the other more truthful" — is a tiered-visibility value claim CMV theory does not license and PRESUMPTION-316 challenges.
+**Reasoning for MONITOR (MEDIUM):** Consistency requires NOT re-INCORPORATING a duplicate of PREMISE-051; the residual "earned/more truthful" claim is contested and normative → MONITOR rather than INCORPORATE/REVISE.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-14. Priority MEDIUM. What would change: the 316 stigma test (do carded-only communities suffer an attention/representation penalty?) — no penalty → the benign "upbuilding" reading holds; penalty found → REVISE the framing. Couples PRESUMPTION-314/316, PREMISE-051.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-310 — PRESUMPTION-314
+**Statement:** [inferred] Calling the curated 156 "communities articulated to a quality bar" presumes a quality gate exists and was applied to them, when membership is curatorial fiat and "no community has approved its record" — instantiating the opposite of the earned-membership telos the same doc advances.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**Net:** Curatorial selection is a legitimate quality signal in the EDITORIAL sense, but the phrase credits the COMMUNITIES with a property produced by the CURATOR (no independent criterion, no approval) — a construct-validity error (metric produced by the measurer) and aspirational-vs-operative inversion.
+**Reasoning for MONITOR (HIGH):** A value/measurement claim smuggled into a "quality" descriptor is a decision for Tom (relabel honestly vs define an independent community-side criterion), not a literature-settleable defect.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-14. Priority HIGH. What would change: relabel "curator-selected (not community-approved)" OR define and apply an independent community-side articulation criterion. Validity-smuggling family; couples PRESUMPTION-308, 316. Surface to Tom.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-311 — PRESUMPTION-315
+**Statement:** [inferred] Dispositioning the app.js:1314 error as a stale buffer artifact presumes single-reload non-reproduction + one positive handler-fires check is a complete exoneration; reachability of the throwing init-state from real user sequences was not established.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**Net:** Vanish-on-reload is the heisenbug signature of a timing/init-order-sensitive defect; a single non-repro + one positive path does not establish unreachability of the throwing init-state. "Stale buffer" is a plausible hypothesis, not a verified diagnosis.
+**Reasoning for MONITOR (MEDIUM):** Resolvable by a cheap, decisive check; unresolved at autonomous run time → MONITOR, not closed/exonerated and not REVISE (no realized harm).
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-14. Priority MEDIUM. What would change: repeated/randomized + cold-cache reload attempts and added init telemetry — no recurrence under varied orderings → close as stale-buffer; recurrence → diagnose the init-order race. Keep OPEN-pending-recurrence with a guard rather than closed.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-312 — PRESUMPTION-316
+**Statement:** [inferred] The "mutually upbuilding … each makes the other more truthful" framing presumes Cards and Graph are purely reinforcing and ignores the failure mode where graph-absence stigmatizes the carded-only majority (graph-presence as visible earned status).
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**Net:** Status-tier and participation-inequality literature show visible earned status produces lower-tier stigma and discourages the unseen majority; graph-absence reads as deficiency (visibility-as-power), contradicting "purely reinforcing."
+**Reasoning for MONITOR (HIGH):** A visibility value choice (graphed = legitimate) too consequential to leave implicit but not yet a demonstrated harm to REVISE.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-14. Priority HIGH. What would change: measure carded-only vs graphed community treatment/representation; design graph membership as a data-coverage state, not a merit badge. Couples PRESUMPTION-314 (MONITOR-310) and ASSUMPTION-279 (MONITOR-309). Surface to Tom.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-06-07):** 5 (MONITOR-308..312). Next weekly 15d run due: 2026-06-14.
+
+## 2026-06-07 RUN — 15d Periodic Monitor (weekly + monthly cycle; scheduled c2a2-periodic-monitor-weekly)
+
+**Run context:** Scheduled weekly 15d run. Today is the first Sunday of June -> monthly INCORPORATED re-check also fires. Today (2026-06-07) is the prior cohort's next_check; this run drains the due cohort. Processed: 140 weekly re-triggers (cycle advanced, next_check 2026-06-14); 54 STALE-MONITOR-FLAGS (cycle 4 reached, stable trajectory -> downgraded to LOW-PRIORITY-MONITOR/monthly, next_check 2026-07-05, NOT re-queued this run); 7 monthly re-triggers (next_check 2026-07-05); 2 INCORPORATED-premise re-checks. 0 per-incident/ongoing items left untouched (event-driven, not date-driven).
+
+**Disposition semantics:** All re-triggered items receive MONITOR (continues; no new evidence evaluated by 15d — 15a/15b/15c run downstream). Cycle counters advanced. Evidence trajectory for all carry-forwards: Supporting stable, Challenging stable, New sources No (consistent with recorded refresh history of 'no new evidence this cycle').
+
+
+### WEEKLY RE-TRIGGER REFRESHES
+
+
+### MONITOR REFRESH (ASSUMPTION-077, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-75
+- **Priority:** LOW-MEDIUM
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-090, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-77
+- **Priority:** LOW-MEDIUM
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-092, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-78
+- **Priority:** LOW-MEDIUM
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-080, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-80
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-082, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-82
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-089, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-89
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-092, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-92
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-095, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-95
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-097, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-100
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-098, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-101
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-099, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-102
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-101, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-104
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-106, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-109
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-108, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-110
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-109, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-111
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-111, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-113
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-112, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-114
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-128, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-115
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-135, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-118
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-137, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-119
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-118, cycle 3):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-122
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-121, cycle 3):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-126
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-127, cycle 3):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-130
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-153, cycle 3):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-134
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-154, cycle 3):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-135
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-160, cycle 3):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-140
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-167, cycle 3):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-146
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-133, cycle 3):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-148
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-138, cycle 3):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-151
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-140, cycle 3):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-153
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-170, cycle 3):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-160
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-173, cycle 3):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-163
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-175, cycle 3):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-165
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-178, cycle 3):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-168
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-180, cycle 3):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-169
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-181, cycle 3):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-170
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-159, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-172
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-162, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-174
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-169, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-179
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-184, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-181
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-186, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-183
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-189, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-184
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-179, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-194
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-180, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-195
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-187, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-197
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-190, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-198
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-193, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-199
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-195, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-200
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-196, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-201
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-197, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-202
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-200, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-203
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-213, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-204
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-214, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-205
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-216, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-206
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-217, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-207
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-218, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-208
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-219, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-209
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-201, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-210
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-202, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-211
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-207, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-213
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-224, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-214
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-226, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-216
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-227, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-217
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-229, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-218
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-230, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-219
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-214, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-220
+- **Priority:** Medium-High
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-231, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-222
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-232, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-223
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-234, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-224
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-236, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-226
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-237, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-227
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-239, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-228
+- **Priority:** Medium-High
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-220, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-229
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-221, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-230
+- **Priority:** High
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-242, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-232
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-223, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-233
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-224, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-234
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-244, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-235
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-225, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-237
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-226, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-238
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-227, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-239
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-228, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-240
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-230, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-241
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-231, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-242
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-233, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-244
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-234, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-245
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-235, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-246
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-236, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-247
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-249, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-248
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-250, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-249
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-251, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-250
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-253, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-251
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-254, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-252
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-255, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-253
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-258, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-254
+- **Priority:** Medium-High
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-259, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-255
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-237, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-256
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-238, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-257
+- **Priority:** Medium-Low
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-239, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-258
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-240, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-259
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-241, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-260
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-261, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-261
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-265, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-262
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-266, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-263
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-243, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-264
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-244, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-265
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-245, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-266
+- **Priority:** Medium-High
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-246, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-267
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-247, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-268
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-248, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-269
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-249, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-270
+- **Priority:** Medium-High
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-250, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-271
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-251, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-272
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-252, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-273
+- **Priority:** Medium-High
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-268, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-274
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-271, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-275
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-276, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-276
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-253, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-277
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-254, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-278
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-255, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-279
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-257, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-280
+- **Priority:** Low
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-258, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-281
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-259, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-282
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-260, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-283
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-261, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-284
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-262, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-285
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-279, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-286
+- **Priority:** Low-Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-281, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-287
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-263, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-288
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-288, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-289
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-292, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-290
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-295, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-291
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-296, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-292
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-297, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-293
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-298, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-294
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-299, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-295
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-270, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-296
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-300, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-297
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-301, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-298
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-302, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-299
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Weekly
+- **Next 15d check:** 2026-06-14
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONTHLY RE-TRIGGER REFRESHES
+
+
+### MONITOR REFRESH (ASSUMPTION-079, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-79
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-081, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-81
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-083, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-83
+- **Priority:** LOW-MEDIUM
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-084, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-84
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-085, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-85
+- **Priority:** LOW-MEDIUM
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-087, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-86
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-103, cycle 2):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-87
+- **Priority:** LOW
+- **15c re-disposition:** MONITOR (continues; no new evidence this cycle; 15d weekly/monthly re-trigger)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### STALE-MONITOR-FLAGS (cycle 4 reached; stable trajectory)
+
+HIGH-priority stale items are ESCALATED to Tom (recommendation), not silently downgraded; cadence still shifts to monthly to stop unproductive weekly literature re-search. MEDIUM/LOW stale items downgraded to LOW-PRIORITY-MONITOR.
+
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-003 (MONITOR-1)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-006 (MONITOR-2)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-008 (MONITOR-4)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-013 (MONITOR-5)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-001 (MONITOR-6)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-002 (MONITOR-7)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-003 (MONITOR-8)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: LOW
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-004 (MONITOR-9)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-005 (MONITOR-10)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-008 (MONITOR-11)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-010 (MONITOR-12)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-010 (MONITOR-14)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-011 (MONITOR-15)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-009 (MONITOR-16)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: LOW
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-014 (MONITOR-17)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-014 (MONITOR-18)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: Medium
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-015 (MONITOR-19)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH (epistemic integrity of entire pipeline depends on this)
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-016 (MONITOR-20)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH (directly affects Phase 2a timeline)
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-017 (MONITOR-21)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-018 (MONITOR-22)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-019 (MONITOR-23)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-020 (MONITOR-24)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH (CRITICAL for system credibility)
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-021 (MONITOR-25)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-022 (MONITOR-26)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH (CRITICAL for system credibility — most significant stated claim)
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-023 (MONITOR-27)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-026 (MONITOR-29)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH (CRITICAL for C2A2's value proposition)
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-025 (MONITOR-30)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-031 (MONITOR-36)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-033 (MONITOR-39)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-038 (MONITOR-43)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-044 (MONITOR-44)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH (paired with MONITOR-044 / PRESUMPTION-037 for the weekend-test evaluation; execution-half test is specifically outstanding)
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-041 (MONITOR-47)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-042 (MONITOR-48)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-044 (MONITOR-49)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH (paired with MONITOR-044 / PRESUMPTION-037 for the weekend-test evaluation; execution-half test is specifically outstanding)
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-051 (MONITOR-52)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: LOW-MEDIUM (cheap remediation available; paired with CROSS-TASK-COORDINATION cluster)
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-049 (MONITOR-53)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-052 (MONITOR-55)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-058 (MONITOR-57)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: LOW-MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-055 (MONITOR-58)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM-HIGH
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-066 (MONITOR-61)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: LOW-MEDIUM (short-window, reversible; cheap remediation; compounds with PRESUMPTION-041 precedent)
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-068 (MONITOR-62)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM (reversible; cheap remediation; ties to Chrome-singleton risk PRESUMPTION-059)
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-064 (MONITOR-63)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-065 (MONITOR-64)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-066 (MONITOR-65)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: LOW-MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-067 (MONITOR-66)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-072 (MONITOR-67)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-073 (MONITOR-68)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM-HIGH
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-077 (MONITOR-69)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: ESCALATE to Tom (HIGH-priority item stale for 4 cycles)
+  Reasoning: 4 weekly cycles, no literature movement. Many HIGH items are blocked on a Tom-side empirical test (per their 'what would change disposition'), not on absent literature — so weekly lit re-search cannot resolve them. Surfacing to Tom; cadence -> monthly meanwhile.
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: HIGH
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-071 (MONITOR-70)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM-HIGH
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-072 (MONITOR-71)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-073 (MONITOR-72)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-074 (MONITOR-73)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+STALE-MONITOR-FLAG:
+  Item: ASSUMPTION-075 (MONITOR-74)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM-HIGH
+
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-086 (MONITOR-76)
+  Cycles completed: 4
+  Last disposition: MONITOR since first entry; carried forward each weekly cycle
+  Evidence trajectory: stable (no new supporting or challenging sources across cycles 1-4)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (monthly cadence)
+  Reasoning: 4 weekly cycles with no movement in the literature; weekly re-checks are not productive. Shifts to monthly; remains open until 15c re-dispositions (INCORPORATE/REVISE).
+  New cadence: Monthly; Next 15d check: 2026-07-05; Priority: MEDIUM
+
+### >>> ESCALATION TO TOM — HIGH-priority items stale at cycle 4
+
+These HIGH-priority monitored items have not moved in 4 weekly cycles. Most are blocked on a Tom-side empirical test rather than on literature. Recommend Tom review whether the gating test can be run or the item re-scoped:
+
+- MONITOR-1 (ASSUMPTION-003) — HIGH
+- MONITOR-5 (ASSUMPTION-013) — HIGH
+- MONITOR-7 (PRESUMPTION-002) — HIGH
+- MONITOR-10 (PRESUMPTION-005) — HIGH
+- MONITOR-12 (PRESUMPTION-010) — HIGH
+- MONITOR-17 (PRESUMPTION-014) — HIGH
+- MONITOR-19 (ASSUMPTION-015) — HIGH (epistemic integrity of entire pipeline depends on this)
+- MONITOR-20 (ASSUMPTION-016) — HIGH (directly affects Phase 2a timeline)
+- MONITOR-21 (ASSUMPTION-017) — HIGH
+- MONITOR-23 (ASSUMPTION-019) — HIGH
+- MONITOR-24 (ASSUMPTION-020) — HIGH (CRITICAL for system credibility)
+- MONITOR-25 (ASSUMPTION-021) — HIGH
+- MONITOR-26 (ASSUMPTION-022) — HIGH (CRITICAL for system credibility — most significant stated claim)
+- MONITOR-27 (ASSUMPTION-023) — HIGH
+- MONITOR-29 (ASSUMPTION-026) — HIGH (CRITICAL for C2A2's value proposition)
+- MONITOR-30 (PRESUMPTION-025) — HIGH
+- MONITOR-36 (PRESUMPTION-031) — HIGH
+- MONITOR-44 (ASSUMPTION-044) — HIGH (paired with MONITOR-044 / PRESUMPTION-037 for the weekend-test evaluation; execution-half test is specifically outstanding)
+- MONITOR-49 (ASSUMPTION-044) — HIGH (paired with MONITOR-044 / PRESUMPTION-037 for the weekend-test evaluation; execution-half test is specifically outstanding)
+- MONITOR-63 (ASSUMPTION-064) — HIGH
+- MONITOR-66 (ASSUMPTION-067) — HIGH
+- MONITOR-69 (PRESUMPTION-077) — HIGH
+
+### MONTHLY INCORPORATED-PREMISE RE-CHECKS
+
+
+- **PREMISE-002** (ASSUMPTION-009): re_check_due was 2026-05-13 -> re-queued for 15a/15b via for_lit_search.md [RE-CHECK by 15d: 2026-06-07]. New re_check_due: 2026-07-05 (Monthly cadence). Status remains ACTIVE; 15c re-dispositions if challenged.
+
+- **PREMISE-004** (ASSUMPTION-024): re_check_due was 2026-05-15 -> re-queued for 15a/15b via for_lit_search.md [RE-CHECK by 15d: 2026-06-07]. New re_check_due: 2026-07-05 (Monthly cadence). Status remains ACTIVE; 15c re-dispositions if challenged.
+
+
+**Cohort totals:** weekly re-trigger 140; monthly re-trigger 7; STALE/downgraded 54; premise re-check 2; untouched per-incident 0.
+**Next weekly 15d run due:** 2026-06-14.
+**Next monthly 15d run due:** 2026-07-05 (first Sunday of July).
+
+### STALE-DOWNGRADE REFRESHES (machine-readable cadence/next_check updates for cycle-4 items)
+
+These mirror the STALE-MONITOR-FLAGS above as parseable refresh blocks so the next 15d run reads them as monthly, not overdue-weekly. Items remain open (MONITOR) until 15c re-disposition.
+
+
+### MONITOR REFRESH (ASSUMPTION-003, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-1
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-006, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-2
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-008, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-4
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-013, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-5
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-001, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-6
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-002, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-7
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-003, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-8
+- **Priority:** LOW
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-004, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-9
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-005, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-10
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-008, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-11
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-010, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-12
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-010, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-14
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-011, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-15
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-009, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-16
+- **Priority:** LOW
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-014, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-17
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-014, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-18
+- **Priority:** Medium
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-015, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-19
+- **Priority:** HIGH (epistemic integrity of entire pipeline depends on this)
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-016, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-20
+- **Priority:** HIGH (directly affects Phase 2a timeline)
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-017, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-21
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-018, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-22
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-019, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-23
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-020, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-24
+- **Priority:** HIGH (CRITICAL for system credibility)
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-021, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-25
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-022, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-26
+- **Priority:** HIGH (CRITICAL for system credibility — most significant stated claim)
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-023, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-27
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-026, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-29
+- **Priority:** HIGH (CRITICAL for C2A2's value proposition)
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-025, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-30
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-031, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-36
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-033, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-39
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-038, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-43
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-044, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-44
+- **Priority:** HIGH (paired with MONITOR-044 / PRESUMPTION-037 for the weekend-test evaluation; execution-half test is specifically outstanding)
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-041, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-47
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-042, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-48
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-044, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-49
+- **Priority:** HIGH (paired with MONITOR-044 / PRESUMPTION-037 for the weekend-test evaluation; execution-half test is specifically outstanding)
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-051, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-52
+- **Priority:** LOW-MEDIUM (cheap remediation available; paired with CROSS-TASK-COORDINATION cluster)
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-049, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-53
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-052, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-55
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-058, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-57
+- **Priority:** LOW-MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-055, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-58
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-066, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-61
+- **Priority:** LOW-MEDIUM (short-window, reversible; cheap remediation; compounds with PRESUMPTION-041 precedent)
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-068, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-62
+- **Priority:** MEDIUM (reversible; cheap remediation; ties to Chrome-singleton risk PRESUMPTION-059)
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-064, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-63
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-065, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-64
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-066, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-65
+- **Priority:** LOW-MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-067, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-66
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-072, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-67
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-073, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-68
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-077, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-69
+- **Priority:** HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; ESCALATED to Tom)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-071, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-70
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-072, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-71
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-073, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-72
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-074, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-73
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (ASSUMPTION-075, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** ASSUMPTION
+- **Monitor ID:** MONITOR-74
+- **Priority:** MEDIUM-HIGH
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+
+### MONITOR REFRESH (PRESUMPTION-086, cycle 4):
+- **Date:** 2026-06-07
+- **Item type:** PRESUMPTION
+- **Monitor ID:** MONITOR-76
+- **Priority:** MEDIUM
+- **15c re-disposition:** MONITOR (STALE cycle 4; downgraded to LOW-PRIORITY-MONITOR; auto-downgraded)
+- **Cadence:** Monthly
+- **Next 15d check:** 2026-07-05
+- **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No

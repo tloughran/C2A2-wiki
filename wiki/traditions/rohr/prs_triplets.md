@@ -52,3 +52,15 @@ PRS-04:
   Date Added: 2026-04-29
   Source: The Universal Christ, Chapter 6; connection to Fredrickson Love 2.0
   Confidence: Medium
+
+PRS-05:
+  Problem: How does the false self become the true self — what is the mechanism of contemplative transformation, not just its endpoint?
+  Resource: Rohr's Enneagram-as-sacred-map — the characteristic wound/compulsion is the very site from which a person's distinctive wisdom and vocation emerge
+  Solution: Transformation is not the erasure of the wounded pattern but its redemptive re-reading; the limitation becomes the gift (order-disorder-reorder applied to the self)
+  Date Added: 2026-06-07
+  Source: Introducing the Enneagram with Richard Rohr (Everything Belongs, Season 4) — https://cac.org/podcasts/introducing-the-enneagram-with-richard-rohr/; PROP-2026-05-31-003
+  Confidence: Medium
+
+
+---
+*Total PRS triplets: 5*

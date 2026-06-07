@@ -35,3 +35,8 @@ Richard Rohr is the tradition's contemplative epistemologist — the voice that 
 - **Fredrickson**: Rohr's theology of incarnation and embodied love connects directly to Fredrickson's positivity resonance as the biological substrate of spiritual encounter
 - **MacIntyre**: Order-disorder-reorder parallels epistemological crisis and recovery; Rohr provides the contemplative dimension MacIntyre's rationalism lacks
 - **Kastrup**: Rohr's Universal Christ and Kastrup's universal consciousness may describe the same ontological claim in different registers
+
+
+## Ingestion Log — 2026-06-07
+Ingested 1 approved triplet(s): PRS-05.
+- (open question) How does the false self become the true self — what is the mechanism of contemplative transformation, not just its endpoint?  [src: PROP-2026-05-31-003]

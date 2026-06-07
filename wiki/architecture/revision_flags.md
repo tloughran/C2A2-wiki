@@ -4508,3 +4508,109 @@ The standing AWAITING-REVIEW backlog (REVISE-047..064 = 18) + 7 new REVISEs this
 - Single coupled remedy: make the sync path BOTH self-clearable AND fail-loud — (a) provision a sync-scoped, least-privilege, revocable delegated credential (a service identity, never Tom's) so a lapsed session self-recovers unattended; (b) route undeliverable items to a durable, replayable dead-letter with a visible escalation on confirmed-down and auto-drain on recovery. Couples PREMISE-049, MONITOR-296/297, OPEN-069/073, SYSTEMIC-RISK 2026-06-02/2026-06-03.
 
 **Backlog note (fail-loud):** standing AWAITING-REVIEW backlog was 40 (REVISE-047..086); +0 this run = **40 total AWAITING-REVIEW** (unchanged). Lowest-cost standing remediation remains the REVISE-086 render-cliff sweep (one-time measurement that also discharges MONITOR-295). No new human-review debt added this run.
+
+---
+
+## REVISE flags — run 2026-06-05 (2026-06-04 EOD self-awareness batch)
+
+### REVISE-087 — PRESUMPTION-304
+**Statement:** [inferred] The 36-vs-152 PROCESSED_LOG conflict is presumed a cosmetic format artifact resolvable by a later tidy — presuming 36 is correct and 152 carries no lost data, i.e., a narrative log can double as a machine-diffable system-of-record once cleaned.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**Net:** As the inferred twin of ASSUMPTION-271, this adds two unexamined bets on top of 271's mechanism: (1) a DIRECTIONAL bet that 36 is correct and 152 carries nothing real, and (2) a DEFERRAL bet that the reconciling "tidy" is cheap and will happen. 15a supports only feasibility (a heterogeneous log CAN become machine-diffable; a divergence CAN be a projection artifact) — not the optimistic direction. 15b names bet (1) as the canonical silent-data-loss antipattern ("assume the smaller count is canonical") and bet (2) as systematically cost-understating (deferred reconciliation reliably costs more or never happens).
+**Reasoning:** Weak feasibility-only support + moderate-strong challenge on the two load-bearing bets, and it is a PRESUMPTION (designers were unaware they made the directional+deferral commitments, so they had no deliberate scrutiny) -> REVISE. The honest status is unknown-until-reconciled; "cosmetic, fix later" pre-decides the audit.
+**Recommended action:** Urgency MEDIUM-HIGH. Demote the presumption from "cosmetic" to "unverified" and run the reconciliation NOW rather than deferring it: partition the 152, classify every non-36 entry, and require the audit to either confirm residual = 36 or enumerate the lost/un-ingested items. Treat "narrative log as machine-diffable system-of-record" as a goal requiring an explicit structuring pass, not a property the log already has. This single one-time audit also discharges MONITOR-300 (ASSUMPTION-271). Couples ASSUMPTION-271 (MONITOR-300), ASSUMPTION-272 (PREMISE-050), and the defer-and-tidy-later SYSTEMIC-RISK.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-088 — PRESUMPTION-305
+**Statement:** [inferred] Accumulating uncommitted working-tree state is cost-free — 587 changes (up from 476) on feature/sociogram-search-integration, each unattended run adding to the pile under the no-blind-push rule, presuming a future attended session cleanly separates and commits them.
+**Item type:** PRESUMPTION (unstated)
+**15a:** NO-SUPPORT-FOUND (Weak) | **15b:** CHALLENGED (Strong)
+**Net:** 15a found essentially no FOR case — the only honest supportive fragment (deferring the PUSH under no-blind-push) defends a DIFFERENT action than the one presumed (letting the uncommitted working tree grow). 15b is strong and convergent: version-control and lean literature treat unmerged/uncommitted divergence as holding cost that grows with size and time (harder merges, conflict risk, technical debt, decayed rationale), and the "future session cleanly separates 587 changes" bet is exactly the merge-hell failure — separability degrades as the pile grows.
+**Reasoning:** No support + strong challenge on a PRESUMPTION (unexamined "cost-free" default), with realized, monotonically-growing exposure (587 and rising) -> REVISE, the clearest REVISE of this run. The no-blind-push rule (sound) is being mis-applied to justify not COMMITTING rather than merely not PUSHING.
+**Recommended action:** Urgency HIGH. Decouple the two conflated actions: KEEP the no-blind-PUSH safety rule, but COMMIT frequently in small, scoped, local commits each run (committing is not pushing). This bounds working-tree growth, preserves per-change rationale, and turns the eventual attended push into a review of coherent commits instead of a 587-change untangling. Add the working-tree change count as a tracked, surfaced metric so the silent accrual is visible each run. Couples ASSUMPTION-272 (PREMISE-050, commit-in-increments), PRESUMPTION-295/301, and the defer-and-tidy-later SYSTEMIC-RISK.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Total new REVISEs this run (2026-06-05):** 2 (REVISE-087, REVISE-088). Status AWAITING-REVIEW.
+
+**SYSTEMIC-RISK flag (2026-06-05 — defer-and-tidy-later, High):**
+- Cluster: PRESUMPTION-303 (MONITOR-301) + PRESUMPTION-304 (REVISE-087) + PRESUMPTION-305 (REVISE-088), coupled with ASSUMPTION-271 (MONITOR-300). Common vulnerability: a shared optimism that a future attended session will cleanly resolve accumulated, unverified, or intermingled state at no extra cost — admit-now/review-later (303), reconcile-later (304), commit-later (305). Each presumes deferral is free; the literature independently shows deferral cost grows with accumulation and the cleanup sometimes never happens. This is the deferral-family expressed across the intake queue, the ingest log, and the git working tree — a cousin of the 2026-06-04 "autonomous-sync silent-degradation" and 2026-06-03 "human-memory-as-control" clusters (all are silent accrual on human-absent runs).
+- Literature basis: staging-queue rot / backlog inflation / inertia-promotion (Agile Alliance backlog refinement; IBM & Metaplane data-quality; maintenance-backlog cost-inflation 15-30%); ETL reconciliation / silent-data-loss (dbseer; Monte Carlo; Integrate.io); trunk-based-development merge-hell & lean WIP-as-inventory (Atlassian; StxNext; trunkbaseddevelopment.com; SAFe Principle #6).
+- Risk level: High (PRESUMPTION-305 already shows realized, growing exposure — 587 uncommitted changes and rising every run).
+- Single coupled remedy: treat "later attended cleanup" as a cost-bearing liability that accrues every unattended run, not a free option, and adopt bounded-accumulation defaults system-wide — enforced provisional-item adjudication deadlines with purge-not-promote default (303), reconcile counts at detection rather than deferral (304/271), commit-in-increments while deferring only the push (305) — and surface backlog/queue/working-tree size as tracked metrics so the silent accrual becomes visible. Couples PREMISE-049/050, MONITOR-300/301, REVISE-087/088.
+
+**Backlog note (fail-loud):** standing AWAITING-REVIEW backlog was 40 (REVISE-047..086); +2 this run (REVISE-087, REVISE-088) = **42 total AWAITING-REVIEW**. Lowest-cost remediation this run: the REVISE-087 PROCESSED_LOG reconciliation (one-time audit that also discharges MONITOR-300) and the REVISE-088 commit-in-increments change (bounds a growing liability at near-zero cost).
+
+## REVISE — run 2026-06-06 (2026-06-05 ATTENDED Community Explorer P1 batch)
+
+### REVISE-089 — PRESUMPTION-306
+**Statement:** [inferred] "Two verbs over one dataset" presumes the curated graph (156, CC-001…) and the cards directory (855, C0001…) are unifiable, despite measured near-total disjointness (0 id / 3 name / 5 host matches). P3 rests on a join that may be very sparse.
+**Item type:** PRESUMPTION (unstated) | Risk if wrong: HIGH
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Strong)
+**Net:** Entity-resolution establishes only that a join is not impossible; the measured 0/3/5 overlap across 156×855 is near the recoverable-signal floor, where linkage theory (Fellegi-Sunter; Christen) says forcing a join manufactures false matches and the parsimonious reading is that the two sets describe largely DISTINCT populations. P3's entire "two projections / one dataset" architecture rests on this join.
+**Reasoning:** Weak feasibility-only support + strong challenge on a HIGH-risk PRESUMPTION whose failure invalidates P3 -> REVISE (clearest of the run). Designers were unaware they were betting on unifiability. "Unifiable" pre-decides the linkage experiment; the honest status is unknown-until-measured.
+**Recommended action:** Urgency HIGH. BEFORE building any more of P3: run the actual record-linkage pass (e.g., Splink / Fellegi-Sunter over name+host+fuzzy fields), report estimated true matches with precision/recall against a shuffled-null baseline, and pre-register the minimum join density P3 requires. If density is below threshold, treat the two as DISTINCT populations that ASSOCIATE via a link table rather than unify (resolves with PRESUMPTION-311 / MONITOR-307), and revisit ASSUMPTION-275's "one dataset" framing (PREMISE-051 scope note). Couples PRESUMPTION-309 (REVISE-090), 311 (MONITOR-307), ASSUMPTION-275/276.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-090 — PRESUMPTION-309
+**Statement:** [inferred] P1 pieces (shared pipeline, id-keyed hand-offs) are presumed "load-bearing in P3 later" — forward-compatibility presumed for an architecture whose central join is unbuilt and newly doubted; one named load-bearing piece (id-keyed hand-off) was already deferred this session. No P3 failure criterion stated.
+**Item type:** PRESUMPTION (unstated) | Risk if wrong: MEDIUM-HIGH
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Strong)
+**Net:** Evolutionary-architecture (Ford et al.; Martin) endorses building seams that pay forward ONLY when the later need is reasonably known — a condition unmet here: P3's central join is unbuilt AND doubted (306), no P3 failure criterion exists, and a named load-bearing piece was already deferred this session (the forward-compat bet already slipping). Strong YAGNI / speculative-generality challenge (Fowler).
+**Reasoning:** Weak conditional support + strong challenge on a Medium-High-risk PRESUMPTION with realized slippage -> REVISE. The right time to build the P3 seam is when P3 is committed and its join validated, not before.
+**Recommended action:** Urgency MEDIUM-HIGH. Apply YAGNI's own test ("we know we need this" vs "we might"): defer P3-shaped seams until the 306 linkage result commits P3; state an explicit P3 validate/kill criterion tied to that result; track deferred "load-bearing" pieces as a visible liability (the already-deferred id-keyed hand-off is item #1). Couples PRESUMPTION-306 (REVISE-089), ASSUMPTION-276 (MONITOR-303).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Total new REVISEs this run (2026-06-06):** 2 (REVISE-089, REVISE-090). Status AWAITING-REVIEW.
+
+**SYSTEMIC-RISK flag (2026-06-06 — unvalidated-P3-join-as-foundation, High):**
+- Cluster: PRESUMPTION-306 (feasibility, REVISE-089) + PRESUMPTION-309 (forward-compat seams, REVISE-090) + PRESUMPTION-311 (conceptual appropriateness, MONITOR-307), coupling ASSUMPTION-275 (PREMISE-051) and ASSUMPTION-276 (MONITOR-303). Common vulnerability: the entire P3 "one app, two projections over one dataset" architecture rests on a curated↔directory join that is simultaneously (a) empirically near-absent — 0 id / 3 name / 5 host across 156×855, and (b) conceptually unexamined — whether the two record sets are the same kind of object (identity) or merely related (association) was never raised. The system is building toward, and reasoning as if, a join exists that has neither been measured nor conceptually justified.
+- Literature basis: record-linkage signal floor & false-match inflation at low overlap (Fellegi-Sunter; Christen "Data Matching"; Data Ladder); YAGNI / speculative generality (Fowler; Refactoring); identity-vs-association modeling error & over-merge caution (Chen ER model; Bowker & Star "Sorting Things Out"; MDM golden-record practice).
+- Risk level: High (the join is load-bearing for the whole CE target architecture, yet unmeasured and unjustified; continued P1 build accrues speculative structure under it — a structural cousin of the prior "defer-and-tidy-later" deferral-family clusters).
+- Single coupled remedy: run the record-linkage experiment FIRST (REVISE-089), gate all further P3 build on its result, and make the identity-vs-association decision explicitly before committing an id space (MONITOR-307). One experiment + one modeling decision discharges most of the cluster.
+
+**Secondary note (2026-06-06 — validity-smuggled-into-a-technical-gate, Medium):** PRESUMPTION-308 (normative: articulation-gated visibility, MONITOR-305 HIGH) + PRESUMPTION-310 (construct: TF-IDF lexical similarity as relatedness, MONITOR-306). Common pattern: a value choice (who deserves visibility) or a measurement assumption (lexical overlap = relatedness) is embedded in a step presented as technically neutral. Remedy: surface each assumption explicitly — route the visibility-policy value choice to Tom (308); re-test edges with semantic embeddings before reading near-zero cross-links as relational signal (310).
+
+**Backlog note (fail-loud):** standing AWAITING-REVIEW backlog was 42 (REVISE-047..088); +2 this run (REVISE-089, REVISE-090) = **44 total AWAITING-REVIEW**. Lowest-cost, highest-leverage remediation this run: the REVISE-089 record-linkage experiment — a single measurement that also gates REVISE-090 (defer seams) and MONITOR-303/307 (P3 target + entity model), discharging most of the new SYSTEMIC-RISK cluster at once.
+
+## REVISE — run 2026-06-07 (2026-06-06 EOD attended CE build batch)
+
+### REVISE-091 — PRESUMPTION-312
+**Statement:** [inferred] Assigning shared CC-xxx ids presumes that sharing an id key constitutes genuine entity identity rather than asserting a link by fiat; the merge may have manufactured the identity that 2026-06-05 found missing (disjoint id spaces: 0 id / 3 name / 5 host) rather than discovering it.
+**Item type:** PRESUMPTION (unstated) | Risk if wrong: HIGH
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Strong)
+**Net:** Across entity-resolution (Fellegi-Sunter), relational modeling (Chen ER), and MDM golden-record practice, identity is INFERRED from evidence and EXPRESSED by a key — never CREATED by one. Minting shared ids in the near-zero-overlap regime is the canonical false-match / over-merge error; the merge answers "same entity?" with "they are now."
+**Reasoning:** Weak conditional support + strong challenge on a HIGH-risk PRESUMPTION that is ALREADY ENACTED (ids minted) → REVISE, the clearest of the run. PRESUMPTION weight applies (designers were unaware they were betting identity on a key).
+**Recommended action:** Urgency HIGH. Run the record-linkage experiment FIRST on attributes OTHER than the freshly-minted id (this is the same measurement as prior REVISE-089); gate any P3 build / cross-navigation / "one dataset" reasoning on its result. If overlap stays near the signal floor: downgrade CC-xxx to an ASSERTED (not evidenced) link, model curated↔directory as association via a link table, and unwind/avoid committing the shared id space. Make the identity-vs-association decision explicit before further dependence (couples MONITOR-308, prior MONITOR-307).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-092 — PRESUMPTION-313
+**Statement:** [inferred] Disclosing the no-consent / public-seed status presumes in-product disclosure discharges the ethical obligation of listing communities without consent (transparency cures the consent gap); the don't-list / opt-in alternatives were never raised.
+**Item type:** PRESUMPTION (unstated) | Risk if wrong: MEDIUM-HIGH (ethics / reputational / group-harm)
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Strong)
+**Net:** Notice can be proportionate for low-sensitivity public data, but consent theory (Solove, "Privacy Self-Management and the Consent Dilemma," 2013) and group-privacy work (Taylor/Floridi/van der Sloot 2017) hold that disclosure does NOT discharge consent for IDENTIFIABLE groups — which these communities are. The structural flaw is a collapsed option space: opt-in / don't-list were never on the table.
+**Reasoning:** Weak support + strong challenge on a HIGH-risk ethics PRESUMPTION that is already enacted (communities listed without consent) → REVISE. Pairs with ASSUMPTION-280 / PREMISE-052: disclosure is the necessary FLOOR (INCORPORATED), disclosure-is-sufficient is the overclaim (this REVISE).
+**Recommended action:** Urgency HIGH. Reopen the option space explicitly (don't-list / opt-in / opt-out / disclose-only) and decide per sensitivity tier with Tom; add at minimum an opt-out/takedown path (opt-in for higher-sensitivity communities); document a don't-list criterion; treat group privacy at the community level, not via individual-style notice. Keep PREMISE-052 (disclose + non-endorsement) as the floor.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Total new REVISEs this run (2026-06-07):** 2 (REVISE-091, REVISE-092). Status AWAITING-REVIEW.
+
+**SYSTEMIC-RISK flag (2026-06-07 — manufactured-identity-as-foundation, HIGH):**
+- Cluster: ASSUMPTION-278 (merge-by-shared-id, MONITOR-308) + PRESUMPTION-312 (id-as-identity-by-fiat, REVISE-091), escalating the prior "unvalidated-P3-join-as-foundation" cluster (PRESUMPTION-306 → REVISE-089; PRESUMPTION-311 → MONITOR-307; ASSUMPTION-275/276). Common vulnerability: the 2026-06-05 measurement found the curated↔directory join empirically near-absent (0 id / 3 name / 5 host across 156×855) and conceptually unexamined (identity vs association never raised). The 2026-06-06 build "resolved" this not by MEASURING the join but by ASSIGNING shared CC-xxx ids — manufacturing the identity by fiat. The risk has therefore escalated from "join unbuilt and doubted" to "join asserted and now load-bearing," which is harder to reverse.
+- Literature basis: entity-resolution / false-match at low overlap (Fellegi-Sunter; Christen "Data Matching"); identity-vs-association modeling error & over-merge caution (Chen ER model; Bowker & Star "Sorting Things Out"; MDM golden-record practice).
+- Risk level: HIGH (a manufactured identity underlies cross-navigation, "one dataset / two projections," and any P3 promotion; committed id spaces are expensive to split, and derived artifacts inherit the error).
+- Single coupled remedy: run the record-linkage experiment FIRST on non-minted attributes (discharges REVISE-089 and REVISE-091 at once); gate all further dependence on its result; if overlap stays near zero, downgrade CC-xxx to asserted links and model as association (MONITOR-308 / MONITOR-307). One measurement + one explicit modeling decision discharges most of the cluster.
+
+**SYSTEMIC-RISK flag (2026-06-07 — consent-gap-papered-by-disclosure, MEDIUM-HIGH, ethics):**
+- Cluster: ASSUMPTION-280 (in-product disclosure, INCORPORATE → PREMISE-052, the defensible floor) vs PRESUMPTION-313 (disclosure-discharges-consent, REVISE-092, the overclaim); reinforced by PRESUMPTION-314 (curator-produced "quality bar," MONITOR-310) and PRESUMPTION-316 (visibility-as-earned-status stigma, MONITOR-312). Common vulnerability: identifiable communities are listed (and implicitly ranked by graph-visibility) from scraped public pages without consent, with transparency treated as ethical closure and the stronger alternatives (opt-in / don't-list) never raised.
+- Literature basis: notice-vs-consent critique (Solove 2013); web-scraping ethics for identifiable groups (Brown et al. 2025; AoIR); group privacy (Taylor/Floridi/van der Sloot 2017); construct validity / criterion contamination (Messick); status-tier stigma & participation inequality (Nielsen 90-9-1; visibility-as-power, Bowker & Star).
+- Risk level: MEDIUM-HIGH (group-level harm + reputational/ethical liability for the project and for Tom/Notre Dame; biases the very evidence-about-traditions the system aims to produce toward visibility over merit).
+- Single coupled remedy: route the listing-ethics + visibility-value decisions to Tom as one bundle — reopen the consent option space (REVISE-092), relabel the "quality bar" honestly (MONITOR-310), and present graph membership as a data-coverage state rather than a merit badge (MONITOR-312). PREMISE-052 (disclose + non-endorsement) stands as the floor underneath whatever Tom decides.
+
+**Backlog note (fail-loud):** standing AWAITING-REVIEW backlog was 44 (REVISE-047..090); +2 this run (REVISE-091, REVISE-092) = **46 total AWAITING-REVIEW**. Lowest-cost, highest-leverage remediation this run: the REVISE-091 record-linkage experiment — the SAME single measurement as the still-open REVISE-089, which now also gates MONITOR-308 and the whole manufactured-identity cluster. One measurement discharges two REVISEs and two MONITORs.

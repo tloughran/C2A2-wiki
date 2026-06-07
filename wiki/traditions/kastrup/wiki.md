@@ -62,3 +62,13 @@ Kastrup's program is **the metaphysical radical** of the Consciousness Cluster. 
 
 ---
 *Source: Resurrecting Civility — Document Explorer HTML (RC Pilot) | Processed: 2026-04-05*
+
+
+## Ingestion Log — 2026-06-07
+Ingested 6 approved triplet(s): PRS-17, PRS-18, PRS-19, PRS-20, PRS-21, PRS-22.
+- (open question) Kastrup's Daimon claim (PRS-08) has been received primarily inside the analytic-idealist framing — leaving open whether the concept survives…  [src: PROP-2026-05-27-004]
+- (open question) The C2A2 architecture must somehow handle discernment — how does one distinguish a mature tradition-member from a simulator, a genuine cross…  [src: PROP-2026-05-27-004]
+- (open question) Analytic idealism risks appearing as a *modern* metaphysics — distinguished from physicalism but not clearly distinguished from premodern an…  [src: PROP-2026-05-27-004]
+- (open question) Analytic idealism has been articulated as a philosophical theory of consciousness without an explicit position on the soteriological status …  [src: PROP-2026-05-27-003]
+- (open question) Non-dual contemplative traditions and analytic idealism reach structurally similar conclusions (consciousness as fundamental, individual min…  [src: PROP-2026-05-27-003]
+- (open question) If consciousness is fundamental and intellectual understanding is at best secondary to direct recognition, what role can AI agents play in a…  [src: PROP-2026-05-27-003]

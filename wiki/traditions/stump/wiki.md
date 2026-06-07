@@ -59,3 +59,8 @@ Stump's program is **highly generative for the C2A2 project** — it provides th
 
 ---
 *Source: Resurrecting Civility — Document Explorer HTML (RC Pilot) | Processed: 2026-04-05*
+
+
+## Ingestion Log — 2026-06-07
+Ingested 1 approved triplet(s): PRS-17.
+- (open question) [unknown until address content is located]  [src: PROP-2026-06-04-002]

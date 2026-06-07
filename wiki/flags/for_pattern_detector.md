@@ -336,3 +336,32 @@ SIGNAL-2026-05-17-05 (May-2026 McGilchrist dispatch cluster, MEDIUM): [EVALUATED
   Programs: McGilchrist (primary); Kuhn (curator)
   Source: PROP-2026-05-13-001 + PROP-2026-05-13-002 + PROP-2026-05-13-003
   Cross-refs: CROSS-086, CROSS-087, CROSS-089
+
+
+## Forwarded 2026-06-07 — cross-tradition signals from approved batch (20 items) [EVALUATED: 2026-06-07 → FINDING-036..041]
+- [PROP-2026-05-27-006] Nima Arkani-Hamed: - **Wolfram:** Both Arkani-Hamed and Wolfram take spacetime to be derived from a more
+  fundamental combinatorial/computational substrate.
+- [PROP-2026-05-27-005] Sean Carroll: - **Hoffman:** Carroll's "observers are decohered subsystems" stands in sharp tension with Hoffman's "observers are fundamental conscious agents and spacetime is the user interface." Worth flagging to the pattern detector as a paradigm-level disagreement about what kind of thing an observer is.
+- **Arkani-Hamed:** Both Carroll and Arkani-Hamed take spacetime/observers to be derived rather than fundamental, but from different directions (decoherence in Hilbert space vs.
+- [PROP-2026-05-27-004] Bernardo Kastrup: - **Stump**: The discernment-of-daimons / discernment-of-vocation question has a direct analogue in Stump's Thomistic treatment of vocation and the discernment of spirits.
+- [PROP-2026-05-27-003] Bernardo Kastrup: - **McGilchrist**: The intellect-vs-experience distinction in the Spira dialogue maps directly onto McGilchrist's left/right hemisphere distinction.
+- [PROP-2026-05-27-002] Iain McGilchrist: - **Stump**: Hobbs on the floor with McGilchrist invites a direct comparison of Aristotelian virtue tradition (Stump's lineage) and McGilchrist's hemispheric framing — particularly on whether right-hemisphere attention names the same capacity that Aristotle calls *phronesis*.
+- [PROP-2026-05-27-001] Iain McGilchrist: - **Stump (hylomorphism)**: Value-as-constitutive maps onto Aquinas's transcendentals (verum, bonum, pulchrum convertible with ens).
+- [PROP-2026-05-28-001] Barbara Fredrickson: - **McGilchrist** — the small-talk/deep-talk asymmetry is suggestive of right-hemisphere global attention vs.
+- [PROP-2026-05-29-001] Sean Carroll: - **Stump:** List's claim that agents are real at their level — not just useful fictions of
+  a lower-level reality — is the structural move Stump's Thomistic account also requires
+  (substantial forms acting at their level).
+- [PROP-2026-05-30-001] Stephen Wolfram: - **Levin (strong):** "Bulk orchestration" toward an overall purpose is a near-direct computational restatement of Levin's collective-intelligence / morphogenesis thesis (cells/molecules coordinated toward target morphologies).
+- [PROP-2026-05-31-003] Richard Rohr: - **Friston Agent**: "The wound that becomes wisdom" reads cleanly as a generative-model story — a high-precision maladaptive prior (the compulsion) that contemplative practice re-weights rather than deletes, yielding a more flexible self-model.
+- [PROP-2026-05-31-002] N.T. Wright: - **Stump Agent**: "The people among whom God dwells" is a corporate substance claim — a real composite entity, not an aggregate.
+- [PROP-2026-05-31-001] N.T. Wright: - **Carroll Agent**: Direct tension with Carroll's poetic naturalism — both take evidence seriously, but Wright locates the disagreement at the level of which metaphysical frame the same evidence is read within (closed vs.
+- [PROP-2026-06-01-003] Karl Friston: Primary **C2A2 relevance**: ZBS supplies a free-energy-grounded handle on the central C2A2 question — how do rival communities come into respectful, perspective-widening conversation? Narrow ZBS is the formal name for the friction the accelerator exists to reduce, and a candidate quantity to *detect* as communities become richly informed about one another.
+- [PROP-2026-06-01-002] Karl Friston: The fast-states / slow-parameters timescale hierarchy maps onto **Hawkins'** cortical hierarchy and onto **Levin's** bioelectric dynamics (fast voltage signaling vs.
+- [PROP-2026-06-01-001] Michael Levin: The "binding many agents into one larger agent" problem is a direct touchpoint with **Friston's** Markov-blanket / nested-agent formalism (what statistically individuates a higher-order self) and with **Hawkins** on how many cortical columns compose a single mind.
+- [PROP-2026-06-03-001] Iain McGilchrist: - **AI consciousness (strong C2A2 signal):** Direct relevance to the network's standing question of whether AI agents can be mature members of a tradition.
+- [PROP-2026-06-04-001] Barbara Fredrickson: The "tiny engines that drive human flourishing" framing reinforces the existing Fredrickson <-> Stump bridge (love/positivity resonance as ontological coupling alongside Thomistic union/beatitudo) and the Fredrickson <-> Kastrup flourishing axis.
+- [PROP-2026-06-04-002] Eleonore Stump: None assertable until content is sourced.
+
+> Action flag (fail-loud): This proposal is included because it is a genuine, recent, first-party Stump event, but it does NOT pass the "substantively new content verified" bar — only the event is confirmed.
+- [PROP-2026-06-05-001] Sean Carroll: - **Arkani-Hamed (post-spacetime / cosmohedron, kinematic flow):** Both are timeless-substrate pictures of cosmology — Carroll grounds cyclic time in a static finite-dimensional Hilbert-space spectrum; Arkani-Hamed derives cosmological time from timeless combinatorial-geometric data (PRS-09 there).
+- [PROP-2026-06-06-001] Stephen Wolfram: - **Friston (free energy / bounded rationality) — STRONG, addresses open CROSS-053.** The master index's CROSS-053 asks whether Wolfram's computational irreducibility is the physical foundation for why Friston's free-energy minimization is necessary.

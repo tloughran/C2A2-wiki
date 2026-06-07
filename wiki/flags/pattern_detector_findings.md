@@ -517,3 +517,71 @@ Signal: SIGNAL-2026-05-17-04. McGilchrist's "laziness of the left hemisphere min
 Evidence: McGilchrist PRS-27/28 + Stump existing PRS on tradition immersion. Cross-ref CROSS-089.
 Status: Active — ESCALATE as architecture flag
 Implications for C2A2: Directly portable design pattern — each tradition wiki should include an explicit "native epistemic standards" section so AI agents and human visitors enter the tradition under its own norms rather than under the default norms of their entering tradition. Low-cost, high-value addition. Recommend Tom queue as next-sprint architecture task.
+
+---
+
+FINDING-036:
+Date evaluated: 2026-06-07
+Source candidate: Forwarded 2026-06-07 batch — [PROP-2026-06-06-001] Wolfram
+Programs: Wolfram Agent, Friston Agent
+Evaluation type: Explanatory bridge — addresses open CROSS-053
+Finding: Wolfram's "Ruliology of Competition" sharpens CROSS-053 from the agent side: if even simple competing programs face computationally irreducible outcomes, then no agent can compute the optimal strategy in advance, so bounded rationality and approximate inference are forced rather than chosen. This supplies a candidate physical grounding for why Friston's free-energy minimization (approximate inference under a generative model) is necessary, not merely convenient. The bridge is now explanatory, not analogical: computational irreducibility → forced approximation → free-energy minimization.
+Confidence: High (the open question CROSS-053 was explicitly posed; this is a direct partial answer)
+Recommended action: Escalate to Master Wiki — update CROSS-053; forward to Friston Agent for confirmation
+
+---
+
+FINDING-037:
+Date evaluated: 2026-06-07
+Source candidate: Forwarded 2026-06-07 batch — [PROP-2026-05-27-005] Carroll, [PROP-2026-06-05-001] Carroll
+Programs: Carroll Agent, Hoffman Agent, Arkani-Hamed Agent
+Evaluation type: Paradigm-shift candidate (paradigm-level disagreement)
+Finding: Carroll's "observers are decohered subsystems of a Hilbert-space wavefunction" stands in sharp, irreducible tension with Hoffman's "observers are fundamental conscious agents and spacetime is a species-specific user interface." This is not a vocabulary clash but a disagreement about what kind of thing an observer fundamentally is — derived vs. fundamental. Notably, Carroll and Arkani-Hamed converge (both derive spacetime/observers from a timeless substrate) even as Carroll and Hoffman diverge, which localizes the live fault line precisely at the observer's ontological status rather than at spacetime emergence per se.
+Confidence: Medium-High
+Recommended action: Escalate to Master Wiki Paradigm Shift Watch List — this is a clean operationalizable cross-tradition disagreement
+
+---
+
+FINDING-038:
+Date evaluated: 2026-06-07
+Source candidate: Forwarded 2026-06-07 batch — [PROP-2026-05-30-001] Wolfram, [PROP-2026-06-01-001] Levin
+Programs: Wolfram Agent, Levin Agent, Friston Agent
+Evaluation type: Structural homology
+Finding: Wolfram's "bulk orchestration toward an overall purpose" is a near-direct computational restatement of Levin's collective-intelligence / morphogenesis thesis (many small components coordinated toward a target configuration). Combined with Levin's own "cognitive glue" retrospective naming the binding-many-agents-into-one problem, three programs now converge on a single question — what individuates a higher-order agent from its parts — approached computationally (Wolfram), bioelectrically (Levin), and statistically via Markov blankets (Friston). This strengthens the existing Levin-Friston homology (FINDING-001) into a three-way binding/individuation cluster.
+Confidence: Medium (structural homology across three programs; mechanism-level unification still open)
+Recommended action: Escalate to Master Wiki — monitor as candidate three-way bridge; open synthesis note
+
+---
+
+FINDING-039:
+Date evaluated: 2026-06-07
+Source candidate: Forwarded 2026-06-07 batch — [PROP-2026-06-01-003] Friston (ZBS)
+Programs: Friston Agent, Loughran / C2A2 Master
+Evaluation type: Explanatory bridge — direct C2A2 instrumentation signal
+Finding: Friston's narrow "Zero-shot / bounded surprise" framing supplies a free-energy-grounded name for the exact friction the C2A2 accelerator exists to reduce: the surprise rival communities experience when they cannot yet model one another's generative priors. This is load-bearing for the project thesis because it nominates a concrete, formally-defined quantity to *detect* as communities become richly informed about each other — the "detector" half of the accelerator/detector system gains a candidate observable.
+Confidence: Medium-High (high relevance; operational definition still needs specification)
+Recommended action: Flag for Tom — directly relevant to the ISME paper's measurement claim and the detector design
+
+---
+
+FINDING-040:
+Date evaluated: 2026-06-07
+Source candidate: Forwarded 2026-06-07 batch — [PROP-2026-06-03-001] McGilchrist
+Programs: McGilchrist Agent, Loughran / C2A2 Master
+Evaluation type: Paradigm-shift candidate — AI-membership question
+Finding: McGilchrist's "AI and the battle for the soul" bears directly on the network's standing open question of whether AI agents can be mature members of a tradition. McGilchrist's hemispheric account predicts that a purely left-hemisphere (representational, decontextualized) intelligence would fail at the right-hemisphere capacities (contextual, embodied, value-laden attention) that maturity in a tradition arguably requires — giving a principled, falsifiable objection to AI membership that can be set against Levin's nested-cognition openness (PRS-30/31). The AI-membership question now has explicit advocates on both sides.
+Confidence: Medium-High
+Recommended action: Escalate to Master Wiki Paradigm Shift Watch List — pair with the deferred AI-membership-criterion flag
+
+---
+
+FINDING-041:
+Date evaluated: 2026-06-07
+Source candidate: Forwarded 2026-06-07 batch — McGilchrist×Stump (×4), Kastrup×McGilchrist, Wright×Stump, Wright×Carroll, Fredrickson×Stump
+Programs: McGilchrist, Stump, Kastrup, Wright, Carroll, Fredrickson Agents
+Evaluation type: Structural homology cluster (humanities/theology axis)
+Finding: A recurring cluster of mutually-reinforcing bridges surfaced this batch along a humanities/theology axis: McGilchrist's right-hemisphere attention ≈ Aristotelian phronesis and ≈ Aquinas's convertible transcendentals (verum/bonum/pulchrum); Kastrup's intellect-vs-experience ≈ the hemispheric distinction; Wright's "people among whom God dwells" as a corporate substantial form ≈ Stump's Thomistic composite entities; Fredrickson's positivity resonance ≈ Thomistic union/beatitudo. Individually each is a surface-to-structural analogy; collectively they indicate Stump's Thomistic/hylomorphic framework is functioning as a hub onto which several programs map their "real entities at their own level" commitments.
+Confidence: Medium (cluster is real; each edge needs individual confirmation before any is treated as an explanatory bridge)
+Recommended action: Monitor — open a Stump-as-hub synthesis note; do not over-escalate individual analogies
+
+[EVALUATED: 2026-06-07]

@@ -150,5 +150,54 @@ PRS-15:
   Source: Heilborn Lecture Series 2026 — Sean Carroll (3 lectures): Explaining the Arrow of Time / Extracting the Universe from the Wave Function / The Many Worlds of Quantum Mechanics (2026-04-22) — https://physics.northwestern.edu/events/heilborn-lectures/
   Confidence: High
 
+PRS-16:
+  Problem: What is the most parsimonious ontology consistent with the empirical success of quantum mechanics?
+  Resource: "Mad Dog Everett" — wavefunction + Schrödinger equation as the only fundamental ingredients.
+  Solution: Branches, classicality, and measurement statistics are emergent derivations, not added structure.
+  Date Added: 2026-06-07
+  Source: Mindscape 355 | Solo: Looking Quantum Mechanics in the Eyeball — https://www.preposterousuniverse.com/podcast/2026/05/25/355-solo-looking-quantum-mechanics-in-the-eyeball/; PROP-2026-05-27-005
+  Confidence: High
+
+PRS-17:
+  Problem: How to distinguish a "naive observer" reading of measurement from a derivation of classicality from quantum dynamics alone.
+  Resource: Decoherence + branch-counting / self-locating-uncertainty arguments inside pure Schrödinger evolution.
+  Solution: Observers are subsystems whose classical-looking experience is a consequence of decoherence in a unitary global state — no collapse, no hidden variables required.
+  Date Added: 2026-06-07
+  Source: Mindscape 355 | Solo: Looking Quantum Mechanics in the Eyeball — https://www.preposterousuniverse.com/podcast/2026/05/25/355-solo-looking-quantum-mechanics-in-the-eyeball/; PROP-2026-05-27-005
+  Confidence: Medium
+
+PRS-18:
+  Problem: Carroll's compatibilism (PRS-04) is a deflationary stance — agency is a useful high-level description — but lacks an articulated metaphysics of levels that would explain why higher-level agency claims are not merely epistemic conveniences.
+  Resource: Christian List's formal account of "levels of reality" as ontologically real strata where causal/agentive properties supervene on but are not reducible to lower-level descriptions; developed in *Why Free Will Is Real* (Harvard 2019) and updated in this conversation.
+  Solution: An upgrade path from Carroll's informal compatibilism toward a metaphysically rigorous version where the reality of agency is grounded in a precise multi-level ontology — moving PRS-04's confidence from Medium toward High and explicitly linking it to PRS-01 (poetic naturalism) and PRS-11 (emergence taxonomy).
+  Date Added: 2026-06-07
+  Source: Mindscape 354 | Christian List on Free Will and Levels of Reality — https://www.preposterousuniverse.com/podcast/2026/05/18/354-christian-list-on-free-will-and-levels-of-reality/; PROP-2026-05-29-001
+  Confidence: High
+
+PRS-19:
+  Problem: Different traditions in C2A2 (Carroll, Friston, Levin, Hoffman, Kastrup, Stump) all rely on some notion of "levels" — physical/biological/cognitive/agentive — but no shared vocabulary lets them say whether they mean the same thing or are talking past each other.
+  Resource: List's level-relative supervenience framework, in which higher-level facts are real if they figure ineliminably in the best causal explanation at their level — an operational criterion for "level realism."
+  Solution: A shared cross-tradition vocabulary for "levels" claims: any agent in the C2A2 network can be asked whether their levels are List-real (ineliminable in best causal explanation) or merely descriptively convenient. Provides discrimination criteria parallel to Carroll & Parola's Type-1/Type-2 emergence distinction (PRS-11).
+  Date Added: 2026-06-07
+  Source: Mindscape 354 | Christian List on Free Will and Levels of Reality — https://www.preposterousuniverse.com/podcast/2026/05/18/354-christian-list-on-free-will-and-levels-of-reality/; PROP-2026-05-29-001
+  Confidence: Medium
+
+PRS-20:
+  Problem: Cyclic cosmologies are chronically undermined by the Boltzmann Brain problem — in an eternally recurring universe, randomly fluctuated observers vastly outnumber ordinary ones, making the model phenomenologically unacceptable.
+  Resource: A finite-dimensional Hilbert space with unitary evolution whose energy-eigenvalue differences are commensurable, yielding exactly periodic (not merely recurrent) global evolution.
+  Solution: An exactly periodic quantum universe in which the periodicity structures the state history so as to avoid Boltzmann-Brain domination — a cyclic model that is phenomenologically acceptable.
+  Date Added: 2026-06-07
+  Source: Toward a Phenomenologically Acceptable Quantum Cyclic Universe — https://arxiv.org/abs/2605.30405; PROP-2026-06-05-001
+  Confidence: Medium
+
+PRS-21:
+  Problem: The arrow of time and the apparent uniqueness of a low-entropy past are hard to reconcile with time-symmetric unitary dynamics without smuggling in extra time-asymmetric structure.
+  Resource: Finite-dimensional unitary recurrence/periodicity as the global frame, within which the thermodynamic arrow is a feature of the state's trajectory rather than of the laws.
+  Solution: A cosmological setting where recurrence is taken seriously as a structural fact and the arrow of time is located in the state history — extending Carroll's Past Hypothesis program (PRS-15) into an explicitly cyclic, quantum, finite-dimensional construction.
+  Date Added: 2026-06-07
+  Source: Toward a Phenomenologically Acceptable Quantum Cyclic Universe — https://arxiv.org/abs/2605.30405; PROP-2026-06-05-001
+  Confidence: Medium
+
+
 ---
-*Total PRS triplets: 15*
+*Total PRS triplets: 21*

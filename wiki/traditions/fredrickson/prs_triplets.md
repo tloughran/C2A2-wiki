@@ -160,5 +160,38 @@ PRS-16:
   Source: Improving social connection with weak ties and strangers: effects of a new micro-intervention on interaction quality and social behavior (2025) — https://www.tandfonline.com/doi/full/10.1080/17439760.2024.2394451
   Confidence: High
 
+PRS-17:
+  Problem: Self-reported listening quality has long been theorized to enable positivity resonance, but until now the field lacked behavioral, observable, pre-registered evidence that specific listening behaviors mediate the link between a social-connectedness intervention and felt connection between strangers.
+  Resource: Two pre-registered studies (N = 646) coding observable verbal listening behaviors (verbal validation, follow-up questions) and global listening behaviors during deep-talk and small-talk conversations between strangers, paired with behavioral markers (response latency) and self-, partner-, and observer-reports of connection.
+  Solution: Verbal listening behaviors — especially follow-up questions — are behaviorally observable mediators of a brief social-connectedness intervention's effect on stranger connection in deep-talk contexts. Listening behavior thus becomes an empirically grounded, trainable, observable target for scaling positivity-resonance interventions, not just an inferred theoretical construct.
+  Date Added: 2026-06-07
+  Source: High-quality listening behaviors linked to social connection between strangers — https://www.nature.com/articles/s44271-025-00342-2; PROP-2026-05-28-001
+  Confidence: High
+
+PRS-18:
+  Problem: Whether the behavioral pathway through listening generalizes from extended (deep-talk) encounters to the brief, casual encounters (small-talk) that dominate weak-tie life is unclear — and weak-tie connection has been theoretically identified as the locus of the loneliness epidemic (existing PRS-09, PRS-10).
+  Resource: Study 2 replication-and-extension to small-talk format with the same intervention and listening coding scheme.
+  Solution: Global listening behaviors continue to predict behavioral and partner-reported connection in small talk, but verbal indicators are less consistent and the intervention does not raise listening behaviors. This is a substantive boundary condition: small-talk listening may rely on a holistic-attention channel that resists discrete verbal training, suggesting different intervention designs are needed for the weak-tie regime than for deep encounters.
+  Date Added: 2026-06-07
+  Source: High-quality listening behaviors linked to social connection between strangers — https://www.nature.com/articles/s44271-025-00342-2; PROP-2026-05-28-001
+  Confidence: Medium
+
+PRS-19:
+  Problem: The Fredrickson program has accumulated many findings (broaden-and-build, upward spirals, positivity resonance, vagal tone, conducive conditions) without an author-sanctioned account of how they connect into a single developmental arc.
+  Resource: Fredrickson's own five-breakthrough periodization, each anchored by three curated key articles (fifteen contributions total).
+  Solution: A canonical scaffold the wiki can adopt to sequence and relate existing PRS triplets, replacing our internally-imposed clustering with the thinker's own.
+  Date Added: 2026-06-07
+  Source: Positive Emotions: Key Scientific Contributions and the Stories Behind Them — https://peplab.web.unc.edu/news/; PROP-2026-06-04-001
+  Confidence: High
+
+PRS-20:
+  Problem: Translating affective-science findings into evidence-based guidance for non-specialists is methodologically fraught and rarely reflected on candidly by senior scientists.
+  Resource: Fredrickson's first-person reflections on scientific method, career development, public-facing translation, and serendipity in discovery.
+  Solution: A meta-level account of how a flourishing-science program is built and communicated — directly relevant to C2A2's own ambition to translate tradition-internal findings outward.
+  Date Added: 2026-06-07
+  Source: Positive Emotions: Key Scientific Contributions and the Stories Behind Them — https://peplab.web.unc.edu/news/; PROP-2026-06-04-001
+  Confidence: Medium
+
+
 ---
-*Total PRS triplets: 16*
+*Total PRS triplets: 20*

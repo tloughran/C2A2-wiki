@@ -68,8 +68,25 @@ PRS-10:
   Source: Prague Spring Amplitudes 2 Workshop — Nima Arkani-Hamed featured speaker (May 11–15, 2026, Czech Technical University) (2026-05-11) — https://indico.cern.ch/event/1625739/
   Confidence: Medium
 
+PRS-11:
+  Problem: Whether positive geometry, as a candidate framework beyond spacetime/locality, can capture analytic structures (branch cuts) that physical amplitudes actually have.
+  Resource: Criteria for "admissibility" — a precise mathematical characterization of which functions can be expressed as canonical forms of a positive geometry.
+  Solution: A classification programme that lets practitioners check, for any candidate physical amplitude, whether a positive-geometry origin is in principle available.
+  Date Added: 2026-06-07
+  Source: Which Functions Admit a Positive Geometry? From Branch Cuts to String Amplitudes — https://arxiv.org/pdf/2603.28543; PROP-2026-05-27-006
+  Confidence: High
+
+PRS-12:
+  Problem: The amplituhedron program has been criticized as restricted to planar N=4 SYM — a beautiful but possibly idiosyncratic theory.
+  Resource: Extending the admissibility analysis to string amplitudes (which have richer analytic structure than rational planar N=4 amplitudes).
+  Solution: A bridge between the amplituhedron-style positive-geometry program and the broader S-matrix bootstrap / string-amplitude community.
+  Date Added: 2026-06-07
+  Source: Which Functions Admit a Positive Geometry? From Branch Cuts to String Amplitudes — https://arxiv.org/pdf/2603.28543; PROP-2026-05-27-006
+  Confidence: Medium
+
+
 ---
-*Total PRS triplets: 10*
+*Total PRS triplets: 12*
 
 PRS-05:
   Label: P5 (PROP-2026-04-08-001) — Positive geometry as universal language of fundamental physics

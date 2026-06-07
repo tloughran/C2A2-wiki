@@ -474,3 +474,40 @@ Decision-candidates carried over (agent-recommended; awaiting Tom):
 - (H) Number the four un-numbered DECISION candidates in the next attended session (ASSUMPTION-251).
 
 All REVISE flags remain AWAITING-REVIEW. The bottleneck remains (per ASSUMPTION-235) sit-down availability + attention-allocation; today's demo-path sessions did not action the REVISE backlog.
+
+---
+
+DECISION-050:
+  Date: 2026-06-05 (attended; ratified by Tom)
+  Title: Community Explorer relationship architecture — P1 now, P3 as target
+  Decision: Adopt Pathway P1 (federated sub-tabs + shared services) as the near-term Community Explorer architecture, and declare Pathway P3 (one app, two projections, unified data model, quality-gate promotion pipeline) the target architecture. The promotion pipeline — Q2 quality crossing as the membrane between the 855-record directory and the curated graph — is named as the actual integration work, to be designed as its own increment.
+  Status: P1 in build (search box + shared Ask-AI pipeline shipped to the feature branch, awaiting commit sign-off); P3 deferred / target.
+  Rationale: P1 is cheap, ISME-safe, and its pieces (shared `c2a2-search.js` pipeline) are load-bearing in P3 later. P4 (keep only one) rejected — graph and cards are "two verbs over one dataset" (ASSUMPTION-275).
+  Correction folded in: the P1 cross-navigation hand-offs ("shared `community_id`") were DEFERRED this session — curated (CC-001…, 156) and directory (C0001…, 855) ids are disjoint (0 id / 3 name / 5 host matches; ASSUMPTION-277). The join is reassigned to the P3 promotion pipeline. P1 therefore shipped as search + shared Ask-AI only.
+  Carried locks honored: search = highlight lens never filter (2026-05-29); community graph stays disconnected from the sociogram; subtype filters dropped (140 subtypes / 156 nodes — badge, not checkbox).
+  Related: ASSUMPTION-273/274/275/276/277; PRESUMPTION-306..311; OPEN-075
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the 2026-06-05 attended P1 build session and the ratified "DECIDED 2026-06-05 (Tom): P1 now; P3 is the someday target" line in sociogram_feature_review.md.
+    Current status: ADOPTED (P1); TARGET (P3)
+
+---
+
+DECISION-051:
+  Date: 2026-06-06 (attended; realized by the CE P1 build session, governed by DECISION-050)
+  Title: Graph becomes a literal id-subset of Cards; in-product consent/provenance disclosure
+  Decision: Merge the 156 curated communities into the Cards directory under their own `CC-xxx` ids (scripts/generate_community_cards_data.py; cards now 1006 after deduping 5 bulk overlaps), making the graph a literal id-subset of the cards — the first concrete realization of the directory⊇graph relationship and the step that makes P1 forward-compatible with the P3 promotion pipeline. Couple this with an explicit consent/provenance disclosure: the "?" popover and a new source-of-truth doc (explorer_tabs_complementarity.md) state that records are seeded from public web pages without express consent and that no community has approved its record.
+  Status: REALIZED in code on `feature/sociogram-search-integration` (commits 56da6ab → 64c64bc → 8830d35); push + feature→main merge are attended-only (sandbox cannot push). The graph↔cards cross-navigation hand-off is now mechanically possible on the shared key; its UI is a future increment.
+  Rationale: Resolves two falsehoods Tom flagged in the popover — (1) records were implied as approved (now disclosed as unapproved public seeds); (2) the graphed set was not a subset of the carded set (now it is). Directly addresses the 2026-06-05 disjoint-id finding (ASSUMPTION-277) by building the join rather than only deferring it.
+  Carried locks honored: search = highlight lens never filter (2026-05-29 LOCK); community graph stays disconnected from the sociogram.
+  Related: ASSUMPTION-278/279/280/281/282; ASSUMPTION-277 (superseded cross-nav-deferral by building the join); PRESUMPTION-312/313/314/315/316; OPEN-075 (partial answer), OPEN-076 (new)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the 2026-06-06 attended CE build session, the 2026-06-06 cowork_to_chat summary, the new explorer_tabs_complementarity.md, and the sociogram_feature_review.md 2026-06-06 UPDATE. This is an execution/realization decision under the umbrella of DECISION-050, numbered because it makes a substantive, dated design commitment (subset-merge + consent disclosure). Git state (3 commits on the feature branch) recorded as reported context — the repo is not introspectable from this mount.
+    Current status: ADOPTED (realized in code; merge to main pending attended push)

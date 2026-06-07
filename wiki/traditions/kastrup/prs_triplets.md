@@ -162,5 +162,54 @@ PRS-16:
   Source: "Michael Levin on Mind Everywhere — With Reality in Mind dialogue" (2026-05-12); PROP-2026-05-13-004
   Confidence: Medium
 
+PRS-17:
+  Problem: Kastrup's Daimon claim (PRS-08) has been received primarily inside the analytic-idealist framing — leaving open whether the concept survives encounter with the older Western traditions (Romantic, hermetic, depth-psychological) that have held something like it continuously, and whether those traditions identify aspects of the daimon that analytic idealism has missed
+  Resource: A second long-form Harpur-Kastrup dialogue focused explicitly on archetypes, daimons, and the Western mind — with Harpur drawing on a non-analytic Western lineage and Kastrup on analytic idealism, with the daimonic concept itself as the explicit topic rather than an example
+  Solution: A sharpened daimon-account that is no longer purely Kastrup-internal — identifying which aspects of the daimon survive across the two registers (analytic-idealist and depth-psychological/Romantic) and which aspects belong to one register only; strengthens PRS-08 by giving it external philosophical warrant from a non-analytic tradition
+  Date Added: 2026-06-07
+  Source: Archetypes, Daimons and the Western Mind — Patrick Harpur & Bernardo Kastrup — https://www.withrealityinmind.com/recording-patrick-harpur-bernardo-kastrup/; PROP-2026-05-27-004
+  Confidence: High
+
+PRS-18:
+  Problem: The C2A2 architecture must somehow handle discernment — how does one distinguish a mature tradition-member from a simulator, a genuine cross-tradition insight from a generated one, a daimonic call from a compulsion? The question has been posed but the wiki has no canonical resource for it
+  Resource: The Harpur-Kastrup discernment exchange (daimon vs. addiction) as a worked example of how a tradition treats discernment internally — a public conversation between a depth-psychological practitioner and an analytic idealist on exactly how the discrimination is made, in the case of a phenomenon (the daimonic call) that has analogues in many traditions
+  Solution: A C2A2 design pattern for discernment workflows — drawing on the daimon-vs-addiction discrimination as a model for how a tradition-accelerator handles cases where surface phenomena are ambiguous between authentic and simulated/compulsive; usable for AI-agent membership decisions
+  Date Added: 2026-06-07
+  Source: Archetypes, Daimons and the Western Mind — Patrick Harpur & Bernardo Kastrup — https://www.withrealityinmind.com/recording-patrick-harpur-bernardo-kastrup/; PROP-2026-05-27-004
+  Confidence: Medium
+
+PRS-19:
+  Problem: Analytic idealism risks appearing as a *modern* metaphysics — distinguished from physicalism but not clearly distinguished from premodern animism or hermeticism — leaving open whether Kastrup's program is recovering Western traditions that already held something like analytic idealism, or proposing something genuinely new
+  Resource: A two-dialogue series with Harpur, a writer working within the depth-psychological / Romantic / hermetic Western lineage, in which Kastrup is asked to position analytic idealism relative to that lineage — not as an interlocutor's incidental question, but as the explicit subject across two long exchanges
+  Solution: A clearer genealogy for analytic idealism — locating it as both a *recovery* of premodern Western insights and a *clarification* of them within contemporary philosophy of mind; gives C2A2 a finer-grained way to position Kastrup relative to other consciousness-as-fundamental positions (Hoffman = mathematical / interface; McGilchrist = neurobiological / hemispheric; Kastrup = analytic + Romantic recovery)
+  Date Added: 2026-06-07
+  Source: Archetypes, Daimons and the Western Mind — Patrick Harpur & Bernardo Kastrup — https://www.withrealityinmind.com/recording-patrick-harpur-bernardo-kastrup/; PROP-2026-05-27-004
+  Confidence: Medium
+
+PRS-20:
+  Problem: Analytic idealism has been articulated as a philosophical theory of consciousness without an explicit position on the soteriological status of analytic understanding itself — leaving open whether Kastrup holds that understanding leads to liberation, accompanies it, or is secondary to direct contemplative awareness
+  Resource: The Spira dialogue's explicit question "Can we discard the intellect when we get the experience?" — staged as a structured exchange between an analytic-philosophical idealist (Kastrup) and a non-dual contemplative teacher (Spira) who has converged on similar conclusions from a different starting point
+  Solution: A sharpened statement of analytic idealism's soteriological commitments — clarifying whether the program is (a) primarily an intellectual cure for physicalism, (b) a propaedeutic for contemplative recognition, or (c) something else — directly relevant to C2A2's question of what AI agents can and cannot do within a tradition that has a contemplative dimension
+  Date Added: 2026-06-07
+  Source: The Limits of Understanding & Experience — Rupert Spira & Bernardo Kastrup in conversation — https://www.withrealityinmind.com/13th-may-rupert-spira-bernardo-kastrup/; PROP-2026-05-27-003
+  Confidence: High
+
+PRS-21:
+  Problem: Non-dual contemplative traditions and analytic idealism reach structurally similar conclusions (consciousness as fundamental, individual minds as derivative) from very different methods — and the network has not had a clean reference for how the two methods relate, and whether convergence at conclusions licenses any borrowing of resources between methods
+  Resource: The Spira-Kastrup dialogue as the canonical reference for analytic-idealist / non-dual convergence — Spira working from "the perspective of awareness" and Kastrup working from analytic philosophy of mind, with the dialogue explicitly addressing both the convergence and the methodological asymmetry
+  Solution: A finer-grained cluster picture within the consciousness-as-fundamental cluster — non-dual contemplative (Spira), analytic idealist (Kastrup), and participatory realist (McGilchrist) as three distinct sub-positions sharing a fundamental-consciousness commitment but differing on method and on what each method is good for; extends the six-position taxonomy already noted in McGilchrist PRS-26
+  Date Added: 2026-06-07
+  Source: The Limits of Understanding & Experience — Rupert Spira & Bernardo Kastrup in conversation — https://www.withrealityinmind.com/13th-may-rupert-spira-bernardo-kastrup/; PROP-2026-05-27-003
+  Confidence: Medium
+
+PRS-22:
+  Problem: If consciousness is fundamental and intellectual understanding is at best secondary to direct recognition, what role can AI agents play in a tradition — given that an AI agent can hold the analytic apparatus but has no candidate for the non-conceptual awareness that the tradition treats as primary?
+  Resource: The Spira dialogue's specific staging of the intellect/experience distinction — a distinction that maps directly onto Kastrup's existing skepticism about AI consciousness (left/right hemisphere parallel; representational/participatory; PRS-09)
+  Solution: A direct C2A2-relevant claim: AI agents within a tradition whose epistemics include a contemplative dimension are limited in a different way than AI agents within a purely propositional tradition — they can scaffold and represent but cannot occupy the contemplative pole, and this is a *principled* limit, not an engineering one
+  Date Added: 2026-06-07
+  Source: The Limits of Understanding & Experience — Rupert Spira & Bernardo Kastrup in conversation — https://www.withrealityinmind.com/13th-may-rupert-spira-bernardo-kastrup/; PROP-2026-05-27-003
+  Confidence: Medium
+
+
 ---
-*Total PRS triplets: 16*
+*Total PRS triplets: 22*

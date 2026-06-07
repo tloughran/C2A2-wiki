@@ -11189,3 +11189,557 @@ DISPOSITION-150:
 ```
 
 **Run 2026-06-04 totals:** 5 items | 1 INCORPORATE (PREMISE-049) | 4 MONITOR (MONITOR-296..299) | 0 REVISE (DISPOSITION-146..150). SYSTEMIC-RISK (High): autonomous-sync silent-degradation cluster (ASSUMPTION-270 + PRESUMPTION-300) — the unattended sync path neither self-clears a lapsed session nor fails loud on a confirmed-down channel; it degrades silently and accumulates undeliverable state. This is the availability twin of the 2026-06-03 "human-memory-as-control" and 2026-06-02 "absence != success/event" clusters. Single coupled remedy: make the sync path self-clearable (sync-scoped revocable delegated credential, not Tom's identity) AND fail-loud (durable dead-letter + visible escalation on confirmed-down + auto-drain on recovery). Consistency check: PREMISE-049 checked vs PREMISE-001..048 — no conflict (reinforces verify-the-effect/provenance family, esp. PREMISE-045/046). No NOVELTY flags — all 5 items mapped cleanly to established literature.
+
+---
+
+## Returns — run 2026-06-05 (2026-06-04 EOD batch: ASSUMPTION-271/272, PRESUMPTION-303/304/305)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-271
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate
+  Key source: Fowler, "Event Sourcing" (martinfowler.com); MS Learn "Event Sourcing Pattern"
+  Summary: Log-as-system-of-record supports the mechanism (mixed-format logs over-count under naïve diffs; canonical count is a deterministic fold) but NOT the specific figure 36, which requires an actual reconciliation.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-271_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-271
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: dbseer "Data Migration Validation Guide" (2026); Monte Carlo "Data Reconciliation"
+  Specific risk: If 36 is wrong, ~116 un-ingested files are silently omitted from every downstream count and the backlog-drain plan.
+  Summary: Reconciliation discipline challenges asserting 36 canonical before tracing the ~76% gap; an unexplained divergence is presumed possible loss until each record maps to an explicit rule.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-271_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-272
+  Search direction: FOR (supportive)
+  Result: SUPPORTED | Strength: Strong
+  Key source: Reinertsen via SAFe Principle #6 (InformIT); dev2ops "Small Batches Improve Flow"
+  Summary: Lean/agile flow strongly supports small scoped batches for quality-sensitive curation — lower per-transaction risk, faster defect detection, simpler review.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-272_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-272
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Weak-Moderate
+  Key source: Nuvento "Hidden Cost of HITL"; Codebridge/StackAI HITL approval workflows (2026)
+  Specific risk: Over-fragmenting a bounded 36-file backlog into 5-7 attended sessions re-creates the Tom-availability bottleneck and induces rubber-stamping that erodes curation quality.
+  Summary: Challenge is to small-batch + mandatory-attended-gate conjunction (U-curve transaction cost), not to small batches; fold tuning caveat in.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-272_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-303
+  Search direction: FOR (supportive)
+  Result: SUPPORTED | Strength: Moderate
+  Key source: Unstructured.io "Data Quality at Ingestion" (2026); "Fail Fast or Quarantine?" (Towards Data Engineering)
+  Summary: Quarantine/staging pattern supports admission≠trust IF the low-confidence marking is machine-enforced and adjudication actually runs.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-303_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-303
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: IBM/Metaplane data-quality; Agile Alliance "Backlog Refinement"
+  Specific risk: Unsourced pointer rots unreviewed (inflates apparent coverage) or is promoted by inertia (spurious cross-tradition attribution) — the corruption PREMISE-049 exists to prevent.
+  Summary: Without enforced read-gating + adjudication deadline, admission is a soft verify-before-trust violation; sharpened by same-run timing vs PREMISE-049.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-303_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-304
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+  Key source: Lemaire "Event Sourcing, Audit Logs, and Event Logs" (2026)
+  Summary: Supports only feasibility (a heterogeneous log CAN become machine-diffable; a divergence CAN be a projection artifact), not the optimistic direction that 36 is correct / 152 lossless.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-304_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-304
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Moderate-Strong
+  Key source: dbseer / Monte Carlo (silent-data-loss); Agile/maintenance-backlog deferral cost
+  Specific risk: A presumed-cosmetic 36 bakes an undercount into the backlog plan and coverage metrics; "fix later" indefinitely defers the only loss-detecting step (structuring the log).
+  Summary: Names the directional bet as the canonical silent-data-loss antipattern and the deferral bet as cost-understating; PRESUMPTION -> no deliberate scrutiny.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-304_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-305
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND | Strength: Weak
+  Key source: (only partial) Atlassian "Trunk-Based Development" — supports deferring the PUSH, not growing the uncommitted tree
+  Summary: No genuine FOR case for "accumulation is cost-free"; the sole supportive fragment defends a different action (gated push) than the one presumed (unbounded working-tree growth).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-305_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-305
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Strong
+  Key source: Atlassian / StxNext "Escape from Merge Hell"; trunkbaseddevelopment.com; SAFe Principle #6 (WIP-as-inventory)
+  Specific risk: A future attended session faces 587+ intermingled changes; clean separation degrades as the pile grows, worst case force-reconciliation sweeps unrelated changes together. Carries a SYSTEMIC-RISK flag (defer-and-tidy-later).
+  Summary: Unmerged/uncommitted divergence carries holding cost growing with size+time; "cost-free" is unsupported. Remedy: commit-in-increments, defer only the push.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-305_against.md
+
+DISPOSITION-151:
+  Date: 2026-06-05
+  Item: ASSUMPTION-271
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Both agree on the mechanism (mixed-format logs over-count; canonical count is a fold) and split on ordering: 36 is recoverable in principle (15a) but unproven until the ~76% gap is traced (15b). The assumption asserts the conclusion the audit should earn.
+  Disposition: MONITOR (MONITOR-300)
+  Reasoning: Conditional on a cheap, checkable fact (run the reconciliation), unresolved at autonomous run time -> MONITOR. Not INCORPORATE (figure 36 unproven); not REVISE (mechanism sound, fix is a one-time audit not a redesign). Stated ASSUMPTION; the inferred twin PRESUMPTION-304 carries the extra directional+deferral bets -> REVISE-087. Priority MEDIUM.
+  Detail: Cadence Weekly; next 15d 2026-06-12. What would change: partition all 152 by record type and reconcile vs filesystem — residual=36 -> INCORPORATE; residual>36 -> REVISE (real backlog). Couples PRESUMPTION-304 (REVISE-087), ASSUMPTION-272 (PREMISE-050), defer-and-tidy-later SYSTEMIC-RISK.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-152:
+  Date: 2026-06-05
+  Item: ASSUMPTION-272
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Strong support for small scoped batches in quality-sensitive curation; the challenge targets the conjunction with a mandatory attended gate (U-curve transaction cost, fixed per-session overhead, rubber-stamping), not the small-batch principle.
+  Disposition: INCORPORATE (PREMISE-050)
+  Reasoning: Strong support + weak-moderate operational challenge resolved by folding the tune-to-gate-cost and automated-pre-check caveats into the premise -> INCORPORATE with caveats, Moderate confidence. Consistency-checked vs PREMISE-001..049: complements PREMISE-047 (granular staging), aligns with PRESUMPTION-305 remedy; no conflict.
+  Detail: Re-check 2026-09-05 (Quarterly; via 15d). Confidence Moderate — optimal batch size is cost-dependent and unverified for this backlog ("small scoped batches sized to gate cost," not "5-8 is correct").
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+
+DISPOSITION-153:
+  Date: 2026-06-05
+  Item: PRESUMPTION-303
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Both converge on one condition — a pending-review queue separates admission from trust IFF the low-confidence marking is machine-enforced and adjudication is guaranteed. 15a: that pattern is recognized-safe. 15b: absent enforcement, admission is a soft verify-before-trust violation (inertia-promotion or rot), sharpened by the same-run timing against PREMISE-049.
+  Disposition: MONITOR (MONITOR-301)
+  Reasoning: Conditional on an unverified property of the queue (enforced isolation + adjudication SLA) -> MONITOR. Not INCORPORATE (condition unverified); not REVISE (no demonstrated leak, fix is an enforcement check). PRESUMPTION + direct tension with just-incorporated PREMISE-049 -> extra care. Priority MEDIUM-HIGH.
+  Detail: Cadence Weekly; next 15d 2026-06-12. What would change: audit pending-review read paths — isolated + purge-not-promote deadline -> INCORPORATE; leaks into default reads OR age/inertia promotion -> REVISE (machine-enforced isolation + adjudication deadline + exception log). Couples ASSUMPTION-269/PREMISE-049, OPEN-074, defer-and-tidy-later SYSTEMIC-RISK.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-154:
+  Date: 2026-06-05
+  Item: PRESUMPTION-304
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Inferred twin of ASSUMPTION-271 plus two unexamined bets — directional (36 right, 152 lossless) and deferral (tidy is cheap and will happen). 15a supports only feasibility; 15b names bet 1 as the silent-data-loss antipattern and bet 2 as cost-understating. Designers were unaware of these commitments (PRESUMPTION).
+  Disposition: REVISE (REVISE-087)
+  Reasoning: Weak feasibility-only support + moderate-strong challenge on the two load-bearing bets + PRESUMPTION (no deliberate scrutiny) -> REVISE. Honest status is unknown-until-reconciled; "cosmetic, fix later" pre-decides the audit. Urgency MEDIUM-HIGH.
+  Detail: Demote cosmetic->unverified; run the reconciliation NOW (partition 152, confirm residual=36 OR enumerate lost files); treat narrative-as-system-of-record as a goal needing an explicit structuring pass. One audit also discharges MONITOR-300. Couples ASSUMPTION-271 (MONITOR-300), ASSUMPTION-272 (PREMISE-050), defer-and-tidy-later SYSTEMIC-RISK.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-155:
+  Date: 2026-06-05
+  Item: PRESUMPTION-305
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: No genuine FOR case; the sole supportive fragment (gated push) defends a different action than the presumed one (growing the uncommitted tree). 15b strong+convergent: unmerged divergence is holding cost growing with size+time; "587 cleanly separated later" is the merge-hell failure. Realized, monotonically-growing exposure.
+  Disposition: REVISE (REVISE-088)
+  Reasoning: No support + strong challenge on an unexamined "cost-free" PRESUMPTION with realized growing exposure (587 and rising) -> clearest REVISE of the run. The no-blind-push rule is mis-applied to justify not COMMITTING rather than not PUSHING. Urgency HIGH.
+  Detail: Decouple actions — keep no-blind-PUSH, but commit-in-increments each run (committing != pushing); surface working-tree change count as a tracked metric. Couples ASSUMPTION-272 (PREMISE-050), PRESUMPTION-295/301, defer-and-tidy-later SYSTEMIC-RISK.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Run 2026-06-05 totals:** 5 items | 1 INCORPORATE (PREMISE-050) | 2 MONITOR (MONITOR-300, MONITOR-301) | 2 REVISE (REVISE-087, REVISE-088) | DISPOSITION-151..155. SYSTEMIC-RISK (High): defer-and-tidy-later cluster (PRESUMPTION-303/304/305 + ASSUMPTION-271) — a shared optimism that a future attended session resolves accumulated/unverified/intermingled state at no cost (admit-now/review-later, reconcile-later, commit-later); PRESUMPTION-305 already shows realized growing exposure (587 uncommitted changes). Single coupled remedy: treat later cleanup as an accruing liability and adopt bounded-accumulation defaults (adjudication deadlines, reconcile-at-detection, commit-in-increments) with backlog/queue/tree size surfaced as tracked metrics. Consistency check: PREMISE-050 vs PREMISE-001..049 — no conflict (complements PREMISE-047). No NOVELTY flags — all 5 items mapped to established literature.
+
+---
+
+# RUN 2026-06-06 — c2a2-lit-search-pipeline (15a/15b/15c; autonomous)
+*2026-06-05 ATTENDED batch (Community Explorer P1 build): ASSUMPTION-273, 275, 276; PRESUMPTION-306, 307, 308, 309, 310, 311.*
+
+## 15a / 15b RETURNS
+
+### RETURN-TO-14a: ASSUMPTION-273
+  Search direction: FOR — Result: SUPPORTED (Moderate-Strong). Key source: Cockburn, Karlson & Bederson 2008 (ACM Computing Surveys, overview+detail/focus+context). Summary: highlight-preserves-context is a validated idiom distinct from filtering; supports the lock's principle but not "inherit exactly" across scale/task. Full: lit_search_results/for/ASSUMPTION-273_for.md
+  Search direction: AGAINST — Result: PARTIALLY-CHALLENGED (Moderate). Key source: Munzner 2014 (filter vs highlight idioms); Shneiderman dynamic queries. Specific risk: at 156 nodes with a name-lookup task, filtering can beat highlight; the lock's clutter-at-1647 rationale lapses. Full: lit_search_results/against/ASSUMPTION-273_against.md
+
+### RETURN-TO-14a: ASSUMPTION-275
+  Search direction: FOR — Result: SUPPORTED (Strong). Key source: Baldonado et al. 2000 (Rule of Diversity); Roberts 2007 (CMV). Summary: complementary structure-view + attribute-view over one corpus is a canonical, performance-validated pairing. Full: lit_search_results/for/ASSUMPTION-275_for.md
+  Search direction: AGAINST — Result: PARTIALLY-CHALLENGED (Moderate). Key source: Baldonado Rule of Parsimony; arXiv 2204.09524 (more views ≠ better). Specific risk: if Cards reduces to a filtered Graph state, the second surface is redundant maintenance + context-switch cost. Full: lit_search_results/against/ASSUMPTION-275_against.md
+
+### RETURN-TO-14a: ASSUMPTION-276
+  Search direction: FOR — Result: PARTIALLY-SUPPORTED (Moderate-Strong, analogous). Key source: Medallion architecture (Databricks/MS Learn); DataKitchen quality gates. Summary: staged quality-gated promotion with gates at transitions is mainstream; supports the membrane mechanism. Full: lit_search_results/for/ASSUMPTION-276_for.md
+  Search direction: AGAINST — Result: PARTIALLY-CHALLENGED (Moderate-Strong). Key source: Goodhart's Law (Strathern); Nielsen 90-9-1; Fowler YAGNI. Specific risk: "measurement surface" + articulation-earned membership → Goodhart + participation inequality; "correct target architecture" pre-commits before the join is validated. Full: lit_search_results/against/ASSUMPTION-276_against.md
+
+### RETURN-TO-14b: PRESUMPTION-306
+  Search direction: FOR — Result: PARTIALLY-SUPPORTED (Weak-Moderate). Key source: record linkage / Splink / Christen. Summary: ER can recover joins without shared ids — but only where discriminative overlap exists; 0/3/5 is near the signal floor. Full: lit_search_results/for/PRESUMPTION-306_for.md
+  Search direction: AGAINST — Result: CHALLENGED (Strong). Key source: Fellegi-Sunter / Christen "Data Matching"; Data Ladder fuzzy-match warning. Specific risk: near-zero overlap likely signals DISTINCT populations; forcing a fuzzy join manufactures false links, and all of P3 rests on this join. Full: lit_search_results/against/PRESUMPTION-306_against.md
+
+### RETURN-TO-14b: PRESUMPTION-307
+  Search direction: FOR — Result: PARTIALLY-SUPPORTED (Weak-Moderate). Key source: Nielsen consistency heuristic; Cockburn 2008. Summary: shared interaction grammar lowers learning cost; highlight is a general primitive — supports the mechanism, not the scale-bound rationale. Full: lit_search_results/for/PRESUMPTION-307_for.md
+  Search direction: AGAINST — Result: CHALLENGED (Moderate-Strong). Key source: Cockburn 2008 (context-loss cost scales with N); Shneiderman/Munzner. Specific risk: a rationale tuned for clutter at 1647 does not survive the 10x drop; CE's lookup task favors the forbidden idiom. Full: lit_search_results/against/PRESUMPTION-307_against.md
+
+### RETURN-TO-14b: PRESUMPTION-308
+  Search direction: FOR — Result: PARTIALLY-SUPPORTED (Moderate). Key source: medallion/Great Expectations curation; Wikipedia notability. Summary: gating on an articulable bar is accepted, load-reducing curation — supports efficacy, not the normative "deserves visibility" step. Full: lit_search_results/for/PRESUMPTION-308_for.md
+  Search direction: AGAINST — Result: CHALLENGED (Moderate-Strong). Key source: Nielsen 90-9-1; Bowker & Star / D'Ignazio & Klein (visibility-as-power). Specific risk: articulation tracks resources; the "technical" gate reproduces participation inequality and hides emerging communities. Full: lit_search_results/against/PRESUMPTION-308_against.md
+
+### RETURN-TO-14b: PRESUMPTION-309
+  Search direction: FOR — Result: PARTIALLY-SUPPORTED (Weak-Moderate). Key source: Ford et al. "Building Evolutionary Architectures"; Martin seams. Summary: seams pay forward when the later need is known — a condition unmet here. Full: lit_search_results/for/PRESUMPTION-309_for.md
+  Search direction: AGAINST — Result: CHALLENGED (Strong). Key source: Fowler "Yagni"; speculative-generality smell (Refactoring). Specific risk: building P1 seams "load-bearing in P3" while the join is unbuilt+doubted and a named piece was already deferred is textbook speculative generality. Full: lit_search_results/against/PRESUMPTION-309_against.md
+
+### RETURN-TO-14b: PRESUMPTION-310
+  Search direction: FOR — Result: SUPPORTED (Moderate). Key source: Salton & Buckley (TF-IDF); standard IR. Summary: TF-IDF/cosine is a validated relatedness baseline, strongest within a shared vocabulary domain. Full: lit_search_results/for/PRESUMPTION-310_for.md
+  Search direction: AGAINST — Result: CHALLENGED (Moderate-Strong). Key source: Reimers & Gurevych (Sentence-BERT); TF-IDF semantic-blindness literature; construct-validity methodology. Specific risk: cross-domain (Civic vs Scientific) registers differ, so near-zero TF-IDF is indistinguishable from related-but-lexically-divergent; count ≠ construct. Full: lit_search_results/against/PRESUMPTION-310_against.md
+
+### RETURN-TO-14b: PRESUMPTION-311
+  Search direction: FOR — Result: PARTIALLY-SUPPORTED (Moderate). Key source: CRM lifecycle modeling; MDM golden record; medallion promotion. Summary: same-object-across-stages shared id space is a recognized pattern — IF identity holds. Full: lit_search_results/for/PRESUMPTION-311_for.md
+  Search direction: AGAINST — Result: CHALLENGED (Moderate-Strong). Key source: Chen ER model (identity vs association); Bowker & Star; MDM over-merge caution. Specific risk: presuming shared id space conflates association with identity; the distinct-kinds alternative was never raised. Full: lit_search_results/against/PRESUMPTION-311_against.md
+
+## 15c DISPOSITIONS
+
+DISPOSITION-156:
+  Date: 2026-06-06
+  Item: ASSUMPTION-273
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Strong support for the highlight-preserves-context PRINCIPLE; the challenge targets the "inherit exactly" clause for CE's stated name-lookup task at 156 nodes, where filtering may win. Support and challenge concern different clauses, not the same one.
+  Disposition: MONITOR (MONITOR-302)
+  Reasoning: Conditional on a cheap, checkable UX fact (highlight-vs-filter lookup time at 156 nodes), unresolved at autonomous run time -> MONITOR. Not INCORPORATE (the "exactly/at this scale" clause is unverified); not REVISE (the lock is not defective, only possibly mis-fit for the lookup task). Paired with PRESUMPTION-307 (the inferred scale-transfer twin, MONITOR-304).
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-157:
+  Date: 2026-06-06
+  Item: ASSUMPTION-275
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Strong CMV support (Rule of Diversity, Roberts) for complementary structure + attribute surfaces; the challenge is the matching Rule of Parsimony — keep both only while each earns its cost and neither absorbs the other.
+  Disposition: INCORPORATE (PREMISE-051)
+  Reasoning: Strong support + moderate operational challenge resolved by folding the parsimony caveat (non-absorption must be demonstrable; revisit if Cards becomes a filtered Graph state) into the premise -> INCORPORATE with caveats, Moderate confidence. Consistency-checked vs PREMISE-001..050: no conflict (new UI-views domain; complements no existing premise). NOTE: the "over ONE dataset" half depends on PRESUMPTION-306 (REVISE-089); premise scoped to the views' complementarity, not to dataset unity.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+
+DISPOSITION-158:
+  Date: 2026-06-06
+  Item: ASSUMPTION-276
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: The staged quality-gated promotion MECHANISM is well-supported (medallion); the transfer to PARTICIPATION/visibility is challenged on three fronts — Goodhart (measurement surface + earned membership), normative non-neutrality (couples 308), and premature "correct target" before the join is validated (couples 306/309).
+  Disposition: MONITOR (MONITOR-303)
+  Reasoning: Symmetric moderate-strong both ways on different aspects (mechanism supported, transfer + overclaim challenged) -> MONITOR. Not INCORPORATE (the "measurement surface" + "correct target" claims are unvalidated and Goodhart-exposed); not REVISE (the pipeline mechanism is sound; the fix is to hedge claims and validate the join, not redesign). Priority MEDIUM.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-159:
+  Date: 2026-06-06
+  Item: PRESUMPTION-306
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: ER establishes only that a join is not impossible; the measured 0 id / 3 name / 5 host is near the signal floor, where linkage theory says forcing a join manufactures false matches and the parsimonious reading is DISTINCT populations. P3's whole architecture rests on this join.
+  Disposition: REVISE (REVISE-089)
+  Reasoning: Weak feasibility-only support + strong challenge on a HIGH-risk PRESUMPTION whose failure invalidates P3 -> REVISE, the clearest of the run. Designers were unaware they were betting on unifiability (PRESUMPTION). The honest status is unknown-until-measured; "unifiable" pre-decides the linkage experiment. Urgency HIGH.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-160:
+  Date: 2026-06-06
+  Item: PRESUMPTION-307
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Inferred scale-transfer twin of ASSUMPTION-273. Consistency gives a real but light FOR; the challenge is that the lock's clutter-at-1647 rationale does not survive the 10x drop and CE's lookup task favors filter. Conditional on the same checkable UX fact as 273.
+  Disposition: MONITOR (MONITOR-304)
+  Reasoning: PRESUMPTION + moderate-strong challenge resolvable by the same highlight-vs-filter lookup test as 273 -> MONITOR (paired with MONITOR-302). Not REVISE (no defect demonstrated, test is cheap); not INCORPORATE (scale-survival unproven). Priority MEDIUM.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-161:
+  Date: 2026-06-06
+  Item: PRESUMPTION-308
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Curation efficacy is supported; the NORMATIVE claim (articulate communities deserve visibility, seeds do not) is challenged by participation-inequality and visibility-as-power literature. This is a values choice currently buried in a "technical" gate, not a factual defect literature can settle.
+  Disposition: MONITOR (MONITOR-305), Priority HIGH
+  Reasoning: A normative PRESUMPTION cannot be INCORPORATED on literature alone (it is a value decision for Tom), and it is not yet a demonstrated harm to REVISE — but it is too consequential (who is visible) to leave implicit -> MONITOR with HIGH priority and an explicit "surface to Tom" action. Cross-listed in revision_flags SYSTEMIC-RISK note as a validity-smuggling item.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-162:
+  Date: 2026-06-06
+  Item: PRESUMPTION-309
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Evolutionary-architecture supports seams ONLY when the later need is known; here P3's join is unbuilt+doubted (306), no P3 failure criterion exists, and a named load-bearing piece was already deferred this session — the forward-compat bet is already slipping. Strong YAGNI/speculative-generality challenge.
+  Disposition: REVISE (REVISE-090)
+  Reasoning: Weak conditional support + strong challenge on a Medium-High-risk PRESUMPTION with realized slippage (the deferred hand-off) -> REVISE. Build the seam when P3 is committed and its join validated, not before. Urgency MEDIUM-HIGH. Couples PRESUMPTION-306 (REVISE-089).
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-163:
+  Date: 2026-06-06
+  Item: PRESUMPTION-310
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: TF-IDF is a valid relatedness baseline within a vocabulary domain; cross-domain (Civic vs Scientific) it is semantically blind, so near-zero cross-links is indistinguishable from related-but-lexically-divergent. The verification confirmed the count (reliability), not that the edges measure relatedness (construct validity).
+  Disposition: MONITOR (MONITOR-306)
+  Reasoning: Conditional on a checkable fact (re-run with embeddings; do semantic cross-links appear?), unresolved at autonomous run time -> MONITOR. Not INCORPORATE ("zero = honest signal" is construct-unverified cross-domain); not REVISE (no defect yet; TF-IDF is a defensible first pass). Priority MEDIUM.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-164:
+  Date: 2026-06-06
+  Item: PRESUMPTION-311
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Lifecycle/MDM models license a shared id space only when it is the SAME entity across stages; presuming that for curated-community vs directory-seed conflates association with identity, and the distinct-kinds alternative was never raised. Conceptual twin of 306 (feasibility): 306 = can they join, 311 = should they.
+  Disposition: MONITOR (MONITOR-307), Priority HIGH
+  Reasoning: A PRESUMPTION that pre-commits an ontology (one object vs two) is a modeling decision for Tom, contingent on the 306 linkage result -> MONITOR with HIGH priority and an explicit "raise the suppressed alternative" action. Not REVISE independently (it rides on 306, already REVISE-089); not INCORPORATE (identity unproven). Couples PRESUMPTION-306.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Run 2026-06-06 totals:** 9 items | 1 INCORPORATE (PREMISE-051) | 6 MONITOR (MONITOR-302..307) | 2 REVISE (REVISE-089, REVISE-090) | DISPOSITION-156..164. High SYSTEMIC-RISK: "unvalidated-P3-join-as-foundation" — PRESUMPTION-306 (feasibility, REVISE-089) + PRESUMPTION-309 (forward-compat seams, REVISE-090) + PRESUMPTION-311 (conceptual appropriateness, MONITOR-307), coupling ASSUMPTION-275/276; the P3 "two projections over one dataset" architecture rests on a curated↔directory join that is empirically near-absent (0/3/5) and conceptually unexamined. Secondary "validity-smuggled-into-a-technical-gate" pair: PRESUMPTION-308 (normative, MONITOR-305 HIGH) + PRESUMPTION-310 (construct/TF-IDF, MONITOR-306). Consistency check: PREMISE-051 vs PREMISE-001..050 — no conflict (new UI-coordinated-views domain). No NOVELTY flags — all 9 mapped to established literature.
+
+---
+
+## Returns — run 2026-06-07 (2026-06-06 EOD attended CE build batch: curated→cards subset-merge + consent disclosure)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-278
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate
+  Key source: Christen, "Data Matching" (2012) / Kimball surrogate keys / MDM golden-record practice
+  Summary: Assigning shared CC-xxx ids is standard, effective integration mechanics for making a subset addressable — conditional on the records being the same entities.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-278_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-278
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Moderate-Strong
+  Key source: Fellegi-Sunter / Chen ER model / MDM over-merge caution
+  Specific risk: Minting a key where measured overlap is ~0 (0/3/5) makes the directory⊇graph relation ADDRESSABLE, not TRUE — manufacturing identity the data don't support; a false subset relation becomes load-bearing for P3.
+  Summary: A key encodes an established identity; it cannot create one. Enacted form of the prior unvalidated-P3-join risk.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-278_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-279
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate (complementarity) / Weak (mutually-upbuilding)
+  Key source: Baldonado et al. 2000; Cockburn 2007; Roberts 2007
+  Summary: Functional complementarity is well supported and already PREMISE-051; the stronger "each makes the other more truthful / earned place" framing is not licensed by CMV theory.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-279_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-279
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: Baldonado Rule of Parsimony; CMV context-switching cost (arXiv 2204.09524); participation-inequality
+  Specific risk: The "earned/more truthful" gloss launders a contestable visibility hierarchy (graphed = legitimate) into settled rationale and understates dual-surface cost.
+  Summary: Complementarity holds (PREMISE-051); the purely-reinforcing/earned overclaim does not — couples 316.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-279_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-280
+  Search direction: FOR (supportive)
+  Result: SUPPORTED | Strength: Moderate-Strong
+  Key source: Brown et al. 2025 (Web scraping for research); AoIR; provenance practice
+  Summary: Disclosing scraped-seed provenance and not implying endorsement is a well-supported minimum transparency/ethics bar.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-280_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-280
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Weak-Moderate
+  Key source: Solove "Privacy Self-Management" (2013); group-privacy literature
+  Specific risk: If "must disclose" is read as the WHOLE duty, identifiable communities are listed without consent or recourse while ethics seem settled (the 313 overclaim).
+  Summary: Disclosure is necessary, not sufficient; it is the floor, not the ceiling.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-280_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-312
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+  Key source: Kimball surrogate keys; deterministic linkage (Christen); MDM id minting
+  Summary: An assigned id is the normal vehicle for identity ONLY once identity is established; precedents express identity, they don't create it.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-312_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-312
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Strong
+  Key source: Fellegi-Sunter; Chen ER model; MDM over-merge failures
+  Specific risk: Identity asserted by fiat in the near-zero-overlap regime is the canonical false-match; a committed id space corrupts downstream and is costly to split.
+  Summary: Identity is inferred from evidence, never created by a key — the merge may have manufactured the missing identity. Realized escalation of REVISE-089/MONITOR-307.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-312_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-313
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+  Key source: IRB public-data exemption; notice-based regimes; AoIR staged consent
+  Summary: Notice is a recognized, sometimes-proportionate safeguard for low-sensitivity public data; weakens sharply as identifiability/harm rise.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-313_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-313
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Strong
+  Key source: Solove (2013) consent dilemma; Brown et al. 2025; Group Privacy (Taylor/Floridi/van der Sloot 2017)
+  Specific risk: Listing identifiable communities scraped without consent while treating disclosure as discharge; no agency/recourse; group-level harm + reputational liability. Suppressed alternatives (opt-in/don't-list) never raised.
+  Summary: Notice does not cure the consent gap for identifiable groups; the option space was collapsed to "list-and-disclose."
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-313_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-314
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+  Key source: editorial-curation-as-quality (curated directories); IS selection-policy practice
+  Summary: Curatorial selection is a legitimate quality signal in the EDITORIAL sense (curator-applied), supporting "quality bar" only in that sense.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-314_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-314
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Moderate-Strong
+  Key source: construct validity / criterion contamination (Messick; Cook & Campbell); aspirational-vs-operative goals (Selznick); Bowker & Star
+  Specific risk: A quality bar produced by the curator (no independent criterion, no community approval) is relabeled as earned/community-articulated — self-certifying, inverts the earned-membership telos.
+  Summary: The metric is produced by the measurer; "articulated to a quality bar" smuggles a value claim as fact. Validity-smuggling family (308/310).
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-314_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-315
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+  Key source: pragmatic defect-triage (cannot-reproduce closure); stale-build diagnosis; positive-path verification
+  Summary: De-prioritizing a non-reproduced error and hypothesizing a stale buffer is standard triage; supports prioritization, not exoneration.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-315_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-315
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Moderate-Strong
+  Key source: heisenbug/non-determinism literature; init-order race analysis; absence-of-evidence principle
+  Specific risk: Vanish-on-reload is the heisenbug signature; a single non-repro + one positive path does not establish unreachability of the throwing init-state — a latent race ships with no guard (silent failure).
+  Summary: Single non-reproduction is not exoneration; cheap re-test + telemetry indicated before closure.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-315_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-316
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+  Key source: tiered-status motivation; gamification/recognition; CMV reinforcement (PREMISE-051)
+  Summary: The reinforcing half is real (PREMISE-051) and visible earned status can motivate; supports a benign reading only.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-316_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-316
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Moderate-Strong
+  Key source: lower-tier stigma (status-tier psychology); participation inequality (Nielsen 90-9-1); visibility-as-power (Bowker & Star; arXiv 2407.16014)
+  Specific risk: The carded-only majority is implicitly marked "not yet earned"; combined with no-consent listing (313), communities are listed AND ranked by an unchosen visibility status — compounding group harm and biasing attention toward visibility over merit.
+  Summary: Not purely reinforcing — visible earned status carries documented stigma; "each makes the other more truthful" overclaims. Couples 308/314.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-316_against.md
+
+---
+
+## Dispositions — run 2026-06-07 (15c)
+
+DISPOSITION-165:
+  Date: 2026-06-07
+  Item: ASSUMPTION-278
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Assigning shared CC-xxx ids is sound integration MECHANICS (surrogate keys / MDM), but it makes directory⊇graph ADDRESSABLE, not TRUE. Validity rides entirely on the identity question, which the 2026-06-05 measurement (0/3/5) leaves near the signal floor — exactly the case where a key manufactures the relation.
+  Disposition: MONITOR (MONITOR-308), Priority HIGH
+  Reasoning: The technique is legitimate, so not REVISE on its own; but it is the ENACTED vehicle of the contested identity (PRESUMPTION-312 → REVISE-091), so it cannot INCORPORATE until the linkage is measured. MONITOR-HIGH, explicitly gated on the REVISE-091/REVISE-089 record-linkage result. Cross-listed in the manufactured-identity SYSTEMIC-RISK.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-166:
+  Date: 2026-06-07
+  Item: ASSUMPTION-279
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: The functional-complementarity core is already validated as PREMISE-051 (via ASSUMPTION-275). The NEW content of 279 — "purely mutually upbuilding, directory feeds graph, seeds earn their place, each makes the other more truthful" — adds a tiered-visibility value claim CMV theory does not license and PRESUMPTION-316 challenges.
+  Disposition: MONITOR (MONITOR-309), Priority MEDIUM
+  Reasoning: Consistency: do NOT issue a second INCORPORATE that duplicates PREMISE-051. The validatable part is already incorporated; the residual "earned/more truthful" claim is contested (316) and normative, so MONITOR rather than INCORPORATE or REVISE. Couples PRESUMPTION-314/316 (visibility-as-earned-status family).
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-167:
+  Date: 2026-06-07
+  Item: ASSUMPTION-280
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Disclosing scraped-seed provenance and not implying endorsement is a well-supported minimum transparency/ethics bar. The only challenge is that disclosure is necessary-not-sufficient — which targets the SUFFICIENCY overclaim (PRESUMPTION-313), not 280's "must disclose rather than imply endorsement."
+  Disposition: INCORPORATE (PREMISE-052), Confidence Moderate
+  Reasoning: Strong support + weak challenge on a stated assumption whose challenge is fully separable (handled as REVISE-092) → INCORPORATE the disclosure-as-necessary-floor premise, with the explicit caveat that it is NOT a discharge of consent. Consistency-checked vs PREMISE-001..051: new data-ethics/consent-disclosure domain, no conflict.
+  Validated premise statement: see PREMISE-052.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+
+DISPOSITION-168:
+  Date: 2026-06-07
+  Item: PRESUMPTION-312
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Across ER, relational modeling, and MDM, identity is INFERRED from evidence and EXPRESSED by a key — never CREATED by one. Minting shared ids in the 0/3/5 near-zero-overlap regime is the canonical false-match: the merge answers "same entity?" with "they are now."
+  Disposition: REVISE (REVISE-091), Urgency HIGH
+  Reasoning: Weak conditional support + strong challenge on a HIGH-risk PRESUMPTION that is already ENACTED (the ids are minted) → REVISE, the clearest of the run. PRESUMPTION weight applies (designers were unaware they were betting identity on a key). The honest status is unknown-until-measured. Core of the manufactured-identity SYSTEMIC-RISK.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-169:
+  Date: 2026-06-07
+  Item: PRESUMPTION-313
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Notice can be proportionate for low-sensitivity public data, but consent theory (Solove) and group-privacy work hold that disclosure does NOT discharge consent for IDENTIFIABLE groups — which these communities are. The structural flaw is a collapsed option space: opt-in / don't-list were never raised.
+  Disposition: REVISE (REVISE-092), Urgency HIGH
+  Reasoning: Weak support + strong challenge on a HIGH-risk ethics PRESUMPTION that is already enacted (communities listed) → REVISE. PRESUMPTION weight + real-world (reputational, group-harm) stakes. Pairs with ASSUMPTION-280/PREMISE-052: disclose = floor (INCORPORATE), disclosure-is-sufficient = overclaim (REVISE). Core of the consent-gap SYSTEMIC-RISK.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-170:
+  Date: 2026-06-07
+  Item: PRESUMPTION-314
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Curatorial selection is a legitimate quality signal in the EDITORIAL sense, but "articulated to a quality bar" attributes to the COMMUNITIES a property produced by the CURATOR (no independent criterion, no community approval) — a construct-validity error and an aspirational-vs-operative inversion of the earned-membership telos.
+  Disposition: MONITOR (MONITOR-310), Priority HIGH
+  Reasoning: A value/measurement claim smuggled into a "quality" descriptor is a decision for Tom (relabel honestly vs define an independent community-side criterion), not a literature-settleable defect → MONITOR HIGH with an explicit "surface to Tom + relabel" action. Validity-smuggling family (couples 308, 316).
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-171:
+  Date: 2026-06-07
+  Item: PRESUMPTION-315
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Vanish-on-reload is the heisenbug signature of an init-order/timing-sensitive defect; a single non-reproduction + one positive handler-fires test does not establish that the throwing init-state is unreachable from real user sequences. "Stale buffer" is a plausible hypothesis, not a verified diagnosis.
+  Disposition: MONITOR (MONITOR-311), Priority MEDIUM
+  Reasoning: Resolvable by a cheap, decisive check (repeated/randomized + cold-cache reloads; add init telemetry), unresolved at autonomous run time → MONITOR. Not REVISE (no defect demonstrated, no realized harm); not closed/exonerated (single non-repro is not proof of absence). Keep OPEN-pending-recurrence with a guard.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-172:
+  Date: 2026-06-07
+  Item: PRESUMPTION-316
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: The "purely reinforcing / each makes the other more truthful" framing denies a documented failure mode: visible earned status produces lower-tier stigma and participation inequality, and graph-absence reads as deficiency for the carded-only majority (visibility-as-power).
+  Disposition: MONITOR (MONITOR-312), Priority HIGH
+  Reasoning: A visibility value choice (who is graphed = who is legitimate) too consequential to leave implicit but not yet a demonstrated harm to REVISE → MONITOR HIGH with an explicit "surface to Tom + measure carded-only treatment" action. Couples PRESUMPTION-314 (curator quality bar) and ASSUMPTION-279 (MONITOR-309).
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Run 2026-06-07 totals:** 8 items | 1 INCORPORATE (PREMISE-052) | 5 MONITOR (MONITOR-308..312) | 2 REVISE (REVISE-091, REVISE-092) | DISPOSITION-165..172. SYSTEMIC-RISK #1 (HIGH) "manufactured-identity-as-foundation": ASSUMPTION-278 (MONITOR-308) + PRESUMPTION-312 (REVISE-091) — the 2026-06-05 disjoint-id finding (0/3/5) was answered by ASSIGNING shared CC-xxx ids, escalating the prior unvalidated-P3-join cluster (REVISE-089/MONITOR-307) from unbuilt to manufactured-by-fiat. SYSTEMIC-RISK #2 (MEDIUM-HIGH, ethics) "consent-gap-papered-by-disclosure": ASSUMPTION-280 (PREMISE-052, the floor) vs PRESUMPTION-313 (REVISE-092, the overclaim); opt-in/don't-list never raised. Secondary validity-smuggling pair continues: PRESUMPTION-314 (MONITOR-310) + 316 (MONITOR-312), extending 308/310. Consistency check: PREMISE-052 vs PREMISE-001..051 — no conflict (new data-ethics/consent-disclosure domain); ASSUMPTION-279 deliberately NOT re-INCORPORATED (complementarity already PREMISE-051). No NOVELTY flags.
