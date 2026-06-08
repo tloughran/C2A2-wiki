@@ -7918,3 +7918,57 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c (INCORPORATED)->15d re-check]; Item type=ASSUMPTION
   Cadence: Monthly (INCORPORATED re-check; standing independence caveat); Next re_check_due: 2026-07-05
   Notes: Monthly re-check of INCORPORATED PREMISE-004 (re_check_due 2026-05-15 passed). Watch specifically for evidence on independence of C2A2 findings. 15d re-trigger only.
+
+---
+
+## 2026-06-07 — 14a/14b EOD batch (attended PRS-connectome session)
+
+*8 testable items routed at cycle 0 from the 2026-06-07 attended PRS-connectome session: 3 ASSUMPTIONs (283/284/286) + 5 PRESUMPTIONs (317/318/319/320/321). Held (not routed): ASSUMPTION-285 (GROUNDED in-session — infrastructural fact, not a literature claim). Status [QUEUED] only; 15a/15b search next, 15c dispositions afterward.*
+
+[ASSUMPTION] ASSUMPTION-283: Automating regeneration on a schedule is the right fix for "PRS triplets accumulate but the published connectome never changes."
+  Status: [SEARCHED-15a: 2026-06-08 — SUPPORTED (Strong, pattern)] [SEARCHED-15b: 2026-06-08 — PARTIALLY-CHALLENGED (Moderate; necessary-not-sufficient, silent-cron + env-capability)] [DISPOSITIONED-15c: 2026-06-08 — INCORPORATE → PREMISE-053 (conditional)]
+  Provenance: Origin=14a; Chain=[14a -> 15a, 15b -> 15c]; Item type=ASSUMPTION (stated)
+  Priority: LOW
+  Search strategy: CI/CD and scheduled-regeneration practice for generated artifacts; staleness/drift of derived data products; pipelines for keeping published views in sync with source data.
+
+[ASSUMPTION] ASSUMPTION-284: The right safety split is "approved data auto-publishes, generator/template code changes are gated for human visual review."
+  Status: [SEARCHED-15a: 2026-06-08 — PARTIALLY-SUPPORTED (Moderate; asymmetry only)] [SEARCHED-15b: 2026-06-08 — PARTIALLY-CHALLENGED (Moderate; data-half inverted)] [DISPOSITIONED-15c: 2026-06-08 — MONITOR-313 (Medium)]
+  Provenance: Origin=14a; Chain=[14a -> 15a, 15b -> 15c]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: human-in-the-loop release gating; continuous deployment with code-vs-data change classification; drift-baseline guards; risk asymmetry between data and code changes.
+
+[ASSUMPTION] ASSUMPTION-286: Policy-layer rules (the 12 CLAUDE.md rules) are waivable; capability/constitutional boundaries (sandbox credentials) are not; a policy rule may coincide with a hard capability wall.
+  Status: [SEARCHED-15a: 2026-06-08 — SUPPORTED (Strong; policy/mechanism + capability)] [SEARCHED-15b: 2026-06-08 — PARTIALLY-CHALLENGED (Weak-Moderate; coincidence-case hazard)] [DISPOSITIONED-15c: 2026-06-08 — INCORPORATE → PREMISE-054]
+  Provenance: Origin=14a; Chain=[14a -> 15a, 15b -> 15c]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: capability-based security; policy-vs-mechanism separation; constitutional/guardrail vs configurable-policy layering in agent governance; non-bypassable vs configurable constraints.
+
+[PRESUMPTION] PRESUMPTION-317: The prior task design presumed execution-context uniformity — that scheduled tasks inherit the attended Cowork environment's capabilities (push, $HOME, writable .git).
+  Status: [SEARCHED-15a: 2026-06-08 — NO-SUPPORT-FOUND (Weak/conditional only)] [SEARCHED-15b: 2026-06-08 — CHALLENGED (Strong; dev/prod-parity anti-pattern, enacted)] [DISPOSITIONED-15c: 2026-06-08 — REVISE-093 (HIGH)]
+  Provenance: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: HIGH
+  Search strategy: multi-environment / heterogeneous-runtime agent deployment; gap between interactive and batch/scheduled execution contexts; capability discovery before action; class-of-bug from environment-capability mismatch.
+
+[PRESUMPTION] PRESUMPTION-318: Building the auto-push task before probing whether the sandbox could push presumed capabilities instead of checking them (violates Rules 1/8).
+  Status: [SEARCHED-15a: 2026-06-08 — NO-SUPPORT-FOUND (None)] [SEARCHED-15b: 2026-06-08 — CHALLENGED (Moderate-Strong; build-then-discover anti-pattern)] [DISPOSITIONED-15c: 2026-06-08 — MONITOR-314 (HIGH)]
+  Provenance: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: capability/precondition checking before automation; "test in the target environment" practice; pre-mortem / dry-run discipline; cost of build-then-discover ordering.
+
+[PRESUMPTION] PRESUMPTION-319: The data/code guard presumes PRS-data regeneration is deterministic/safe enough to publish unreviewed (data treated as review-exempt).
+  Status: [SEARCHED-15a: 2026-06-08 — PARTIALLY-SUPPORTED (Weak-Moderate; only with auto-gates)] [SEARCHED-15b: 2026-06-08 — CHALLENGED (Strong; silent data regressions)] [DISPOSITIONED-15c: 2026-06-08 — REVISE-094 (MEDIUM-HIGH)]
+  Provenance: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: risk classification of data vs code changes in automated publishing; when derived-data updates warrant human review; silent data-quality regressions.
+
+[PRESUMPTION] PRESUMPTION-320: Handing the user blind multi-command shell blocks presumes the agent's model of the user's repo state is accurate enough to script state-mutating sequences.
+  Status: [SEARCHED-15a: 2026-06-08 — PARTIALLY-SUPPORTED (Weak-Moderate; idempotent form only)] [SEARCHED-15b: 2026-06-08 — CHALLENGED (Moderate-Strong; blind state-dependent block)] [DISPOSITIONED-15c: 2026-06-08 — MONITOR-315 (MEDIUM-HIGH)]
+  Provenance: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH
+  Search strategy: risk of blind/compound remote command execution; idempotent vs state-dependent operations; human-in-the-loop ops where the operator can't see intermediate state; "make each step safe to fail."
+
+[PRESUMPTION] PRESUMPTION-321: The system presumes "automation day" and "attended session" are mutually exclusive day-types (today's attended PRS session was mislabeled "automation-only").
+  Status: [SEARCHED-15a: 2026-06-08 — NO-SUPPORT-FOUND (Weak; MECE ideal only)] [SEARCHED-15b: 2026-06-08 — CHALLENGED (Moderate; non-MECE binary, label-noise)] [DISPOSITIONED-15c: 2026-06-08 — MONITOR-316 (LOW)]
+  Provenance: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW
+  Search strategy: taxonomy completeness / residual categories; classification under partial information; how mislabeled activity logs distort downstream metrics.

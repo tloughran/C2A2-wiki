@@ -775,3 +775,19 @@ OPEN-076:
     Transform at each step:
       14a: Promoted from the 2026-06-06 merge. OPEN-075 asked whether the join was feasible; today's merge answered "yes, mechanically," which advances the question to edge density — the next thing P3's promotion pipeline depends on. Flagged for morning discussion in the 2026-06-06 cowork summary (item 3).
     Current status: OPEN
+
+---
+
+OPEN-077:
+  Date raised: 2026-06-07
+  Question: Now that one scheduled task (the PRS connectome) was found to silently assume attended-Mac capabilities it does not have in the task sandbox (push, `$HOME`, `.git` lock mutation — ASSUMPTION-285, PRESUMPTION-317), should the *other* scheduled tasks be audited for the same capability mismatch? Several tasks in the suite touch git, credentialed APIs, or browser-login state (e.g., the Cowork→Chat sync already fails on a logged-out claude.ai). Which of them assume capabilities the sandbox lacks, and which would half-complete and leave cruft rather than fail loud?
+  Arose from: ASSUMPTION-285 (the grounded sandbox-capability model), PRESUMPTION-317 (execution-context-uniformity blind spot, flagged High as a class bug), DECISION-052 (the git-free fix for one task)
+  Testable via: empirical (enumerate scheduled tasks; for each, classify required capabilities vs sandbox capabilities; dry-run in the task sandbox) — largely an internal audit rather than a literature question
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Promoted from PRESUMPTION-317's "this is a class bug, not a one-off." Today fixed one task (DECISION-052); the open question is whether the same fault sits latent in the rest of the suite.
+    Current status: OPEN

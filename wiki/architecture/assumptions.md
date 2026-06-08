@@ -5077,3 +5077,77 @@ ASSUMPTION-282:
     Transform at each step:
       14a: Extracted from the verification step. A rare verification-success instance (a stated diagnostic claim proven in-session by a positive handler-fires test), recorded GROUNDED and not routed — parallel to ASSUMPTION-277. The completeness of the disposition is questioned by PRESUMPTION-315.
     Current status: GROUNDED
+
+---
+
+ASSUMPTION-283:
+  Date identified: 2026-06-07
+  Statement: The "PRS triplets accumulate but the published connectome never changes" failure is best solved by automating regeneration on a schedule (a weekly Sunday `c2a2-prs-connectome-weekly` task) rather than relying on remembering to regenerate by hand.
+  Context: 2026-06-07 attended PRS-connectome session. The originating problem was that triplets had grown 231 → 269 while the live viz stayed at the old count; the chosen remedy was a scheduled regen task (created, then corrected mid-session). Stated: "The original problem — triplets accumulating but the viz never changing — is resolved at the source" and the weekly task "regenerates + validates in place."
+  Type: architectural / methodological
+  Related decisions: DECISION-052
+  Related presumptions: PRESUMPTION-318 (the auto-regen task was built before the execution environment's capabilities were probed)
+  Testability: testable via literature (CI/CD and scheduled-regeneration practice for generated artifacts; staleness/drift of derived data products)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-283
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated design rationale of the 2026-06-07 PRS-connectome session (read via session_info). The scheduling remedy is the explicit fix for the accumulate-but-stale problem; routed LOW.
+    Current status: UNTESTED
+
+ASSUMPTION-284:
+  Date identified: 2026-06-07
+  Statement: Approved-PRS *data* regeneration can safely auto-publish, but generator/template *code* changes must stage locally and notify the human for visual review before publishing — i.e., the right safety split is "data auto-publishes, code is gated."
+  Context: 2026-06-07 PRS-connectome session, stated as the one guard Claude insisted on: "approved-PRS data auto-publishes, code changes don't … if the generator/template changed since the approved baseline, it stages locally and notifies you for visual review." (The auto-push half was later removed when the sandbox proved unable to push — see ASSUMPTION-285 — but the data/code asymmetry remained the design intent.)
+  Type: methodological / normative
+  Related decisions: DECISION-052
+  Related presumptions: PRESUMPTION-319 (presumes data regeneration is deterministic/low-risk enough to publish unreviewed)
+  Testability: testable via literature (human-in-the-loop release gating; continuous deployment with code-vs-data change classification; drift-baseline guards)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-284
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated drift-baseline guard. The data-publishes / code-gates asymmetry is a deliberate, articulated safety choice; routed MED. Its embedded premise (data regen is safe to ship unreviewed) is surfaced separately as PRESUMPTION-319.
+    Current status: UNTESTED
+
+ASSUMPTION-285:
+  Date identified: 2026-06-07
+  Statement: [GROUNDED this session] Scheduled tasks run in the same flattened-mount sandbox as the EOD/automation agents — which has no GitHub credentials (cannot push), cannot resolve `$HOME` (hardcoded `~/Documents/...` paths do not exist), and cannot create/delete `.git` lock files — so any workflow step requiring a push or `.git` mutation must be handed to Tom on his Mac, not automated. The corrected design ("automate the regen, hand off the push") follows directly: the task does everything the sandbox *can* do (regenerate, validate, write in place, notify) and stops exactly at the capability wall.
+  Context: 2026-06-07 session. The original task design assumed the inverse (that scheduled tasks run on Tom's Mac with credentials and a normal `$HOME`); the trial run falsified that — the worktree/push step failed and left stale `.git` lock cruft in the real repo. The git-free rewrite was then tested end-to-end in the sandbox and passed. Stated: "scheduled tasks run in this same no-credentials sandbox, so anything requiring a push or `.git` lock changes has to be handed to you, not automated."
+  Type: architectural / infrastructural
+  Related decisions: DECISION-052
+  Related presumptions: PRESUMPTION-317 (the prior design presumed execution-context uniformity between attended Cowork and scheduled tasks)
+  Testability: GROUNDED — verified in-session by the failed push/worktree run plus the successful end-to-end test of the git-free script; an infrastructural fact of this environment, not a literature claim. NOT routed.
+  Status: GROUNDED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-285
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted as the corrected, verified-in-session replacement for the day's originating mistaken assumption (that tasks run on the Mac). A second verification-success instance (parallel to ASSUMPTION-277/282): a stated capability claim proven in-session. Recorded GROUNDED, not routed. The blind spot that produced the original error is surfaced as PRESUMPTION-317.
+    Current status: GROUNDED
+
+ASSUMPTION-286:
+  Date identified: 2026-06-07
+  Statement: Tom's 12 CLAUDE.md rules sit at the *policy* layer — choices that are in principle waivable (e.g., the no-blind-push rule could be relaxed for a pre-approved, deterministic artifact like the PRS connectome) — whereas the sandbox's no-push limit is a *capability / constitutional* boundary that cannot be waived. A policy rule and a hard capability wall can coincide, so waiving the policy would not have enabled the action.
+  Context: 2026-06-07 session, co-articulated by Tom and Claude. Tom: "I wondered whether you could except this prs push to live; turns out the rule was constitutional at a deeper level than my 12 claude.md rules." Claude: "Your 12 rules sit at the policy layer … underneath it is a capability boundary you can't waive — the sandbox has no GitHub credentials, period … Your policy rule happened to be pointing at a hard wall."
+  Type: epistemic / methodological (constraint taxonomy for agentic systems)
+  Related decisions: DECISION-052
+  Related presumptions: PRESUMPTION-317 (the two-layer distinction only became visible once execution-context uniformity was falsified)
+  Testability: testable via literature (capability-based security; policy-vs-mechanism separation; constitutional/guardrail vs configurable-policy layering in agent governance)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-286
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the closing Tom↔Claude exchange. The day's headline conceptual yield — a clean policy-layer (waivable) vs capability-layer (constitutional) distinction. Routed MED as a generalizable governance principle. Stated jointly, so [stated] not [inferred].
+    Current status: UNTESTED

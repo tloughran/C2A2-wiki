@@ -511,3 +511,21 @@ DECISION-051:
     Transform at each step:
       14a: Recorded from the 2026-06-06 attended CE build session, the 2026-06-06 cowork_to_chat summary, the new explorer_tabs_complementarity.md, and the sociogram_feature_review.md 2026-06-06 UPDATE. This is an execution/realization decision under the umbrella of DECISION-050, numbered because it makes a substantive, dated design commitment (subset-merge + consent disclosure). Git state (3 commits on the feature branch) recorded as reported context — the repo is not introspectable from this mount.
     Current status: ADOPTED (realized in code; merge to main pending attended push)
+
+---
+
+DECISION-052:
+  Date: 2026-06-07 (attended; realized in the PRS-connectome session)
+  Title: PRS-connectome weekly task is git-free; regeneration automated, publishing handed off
+  Decision: Redesign the `c2a2-prs-connectome-weekly` scheduled task (Sundays ~07:39) to be git-free: it regenerates `prs_3d.html` from committed/approved PRS data, validates it, writes it in place, and notifies Tom with a one-line "ready to publish — run this" note carrying the current triplet count. All git/worktree/`$HOME`/push logic is removed; publishing stays a manual push Tom runs on his Mac. Established design pattern: automate everything the sandbox can do (regenerate, validate, write, notify) and stop exactly at the capability wall (push, `.git` mutation, credentialed ops).
+  Status: REALIZED — script `scripts/regen_prs_connectome.sh` rewritten and tested end-to-end in the sandbox (passes); the scheduled task updated to match. The day's 231 → 269 backlog was published to `origin/main` (commit 2f6356b) via an attended detached-worktree push; live connectome confirmed at 269.
+  Rationale: The original auto-push design rested on a falsified premise — that scheduled tasks run on Tom's Mac with credentials and `$HOME` (ASSUMPTION-285 corrects this; PRESUMPTION-317 names the blind spot). The trial run could not push, could not resolve `$HOME`, and left stale `.git` lock cruft. Git-free is the only shape that runs reliably in the task sandbox, and it aligns with the repo's existing reality (nothing in the sandbox can push) and Tom's no-blind-push rule (ASSUMPTION-286: the policy rule coincides with a hard capability wall).
+  Carried context (resolved in-session): two paste-run command blocks half-failed (a locked stale worktree holding `main`; an accidental commit on `feature/sociogram-search-integration` that bundled `generate_community_explorer.py`); both were recovered — 269 pushed via a state-independent detached worktree, and Tom ran `git reset --soft HEAD~1` to lift the stray commit ("Reset also done").
+  Related: ASSUMPTION-283/284/285/286; PRESUMPTION-317/318/319/320/321; OPEN-077 (audit other scheduled tasks for the same capability mismatch)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the 2026-06-07 attended PRS-connectome session (read via session_info) and corroborated by the on-disk artifacts (`c2a2-prs-3d/prs_3d.PRE-regen-20260607_202243.bak.html`; the updated weekly task). A substantive, dated design commitment (git-free task + the "stop at the capability wall" pattern). The push landing on origin/main (2f6356b, 269) is taken from the session's pasted git output — reported context; the repo is not introspectable from this mount.
+    Current status: ADOPTED (realized in code and in the live viz; weekly task updated)

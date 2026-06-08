@@ -6326,3 +6326,110 @@ PRESUMPTION-316:
     Transform at each step:
       14b: Surfaced as the failure-mode silence beneath a uniformly positive complementarity narrative; the inverse-facing twin of PRESUMPTION-308. Medium confidence; pairs ASSUMPTION-279.
     Current status: UNTESTED
+
+---
+
+PRESUMPTION-317:
+  Date surfaced: 2026-06-07
+  Statement: [inferred] The original weekly-task design presumed that the scheduled-task execution environment is the same, capability-uniform "agent" as the attended Cowork environment — i.e., that "the agent can do X here" implies "the agent can do X on a schedule." The push/worktree design only makes sense if scheduled tasks inherit Tom's Mac (credentials, normal `$HOME`, writable `.git`). The whole category of "two distinct execution contexts with different capabilities" was never modeled until the trial run forced it into view.
+  Evidence it was operative: the task was built to push via a git worktree and to read `$HOME/Documents/...` paths; both presuppose an attended-Mac environment. The failure ("they run in this same sandbox that can't push, can't resolve `$HOME`, and can't touch `.git` locks") is the negation of an unstated uniformity premise.
+  Why it was unstated: too foundational to notice — "the agent" is experienced as one actor, so the possibility that its scheduled self runs in a strictly weaker sandbox was invisible until empirically hit.
+  Type: structural
+  Related decisions: DECISION-052
+  Related assumptions: ASSUMPTION-285 (the corrected, grounded capability model), ASSUMPTION-286 (the policy/capability layering this blind spot made visible)
+  Related presumptions: PRESUMPTION-318 (build-before-probe), PRESUMPTION-320 (blind command blocks)
+  Testability: testable via literature (multi-environment / heterogeneous-runtime agent deployment; the gap between interactive and batch/scheduled execution contexts; capability discovery before action)
+  Risk if wrong: High — every present or future scheduled task that silently assumes attended-context capabilities (push, credentialed APIs, `$HOME`, lock mutation) will fail or, worse, half-complete and leave cruft, exactly as happened here. This is a class bug, not a one-off.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-317
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as the unstated uniformity premise beneath the mistaken push design; the negative space that ASSUMPTION-285 fills once stated. The day's strongest fail-loud item (High); pairs ASSUMPTION-285. Routed HIGH.
+    Current status: UNTESTED
+
+PRESUMPTION-318:
+  Date surfaced: 2026-06-07
+  Statement: [inferred] Building the auto-push scheduled task *before* checking whether the sandbox could actually push presumed the needed capabilities rather than probing for them first. Tom's own Rule 1 ("Think before coding — state assumptions; if uncertain, ask rather than guess") and Rule 8 ("Read before you write — read … shared utilities … if unsure why code is structured a way, ask") were not applied to the execution environment itself.
+  Evidence it was operative: the task was created and a memory note written ("the connectome is now auto-maintained") before the trial run revealed the push was impossible; the scheduled agent had to discover the constraint by running into it ("memory suggests it can't … let me check whether the sandbox can actually push"). The two subsequent half-failed command blocks are downstream of the same build-then-discover ordering.
+  Why it was unstated: methodological habit — environment capabilities are assumed stable and known, so "can this run here?" is not posed as a precondition the way code correctness is.
+  Type: methodological
+  Related decisions: DECISION-052
+  Related assumptions: ASSUMPTION-283 (the scheduling remedy), ASSUMPTION-285 (the capability model arrived at only after the failure)
+  Related presumptions: PRESUMPTION-317 (the uniformity premise this build-order presumed)
+  Testability: testable via literature (capability/precondition checking before automation; "test in the target environment" practice; pre-mortem / dry-run discipline)
+  Risk if wrong: Medium — recurring build-before-probe ordering produces avoidable rework and, when the failing step mutates shared state (here `.git` locks), real collateral cost. Self-referential: C2A2's own build violated its constitution's caution-over-speed bias.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-318
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as the unexamined ordering (build then discover) beneath the day's rework; a self-referential instance where the system's own conduct contradicted Tom's Rules 1/8. Medium; pairs ASSUMPTION-283/285. Routed MED.
+    Current status: UNTESTED
+
+PRESUMPTION-319:
+  Date surfaced: 2026-06-07
+  Statement: [inferred] The "approved data auto-publishes, code is gated" guard (ASSUMPTION-284) presumes that PRS-data regeneration is deterministic and epistemically safe enough to push to the live viz with no human eyes — that a count change like 231 → 269 carries no interpretive risk worth reviewing. New triplets entering the published connectome unreviewed is itself a publish-without-review path, but it is treated as categorically different from a code change rather than as a (smaller) instance of the same risk.
+  Evidence it was operative: the guard draws the review boundary exclusively at generator/template changes; the data delta is waved through ("approved-PRS data auto-publishes"). The word "approved" does the load-bearing work, but what makes a freshly-extracted triplet "approved" enough to skip visual review is never specified.
+  Why it was unstated: the data/code line feels self-evidently safe — data is "just the numbers" — so the assumption that data changes never need visual review goes unexamined.
+  Type: normative / epistemic
+  Related decisions: DECISION-052
+  Related assumptions: ASSUMPTION-284 (the data/code split whose data half this examines)
+  Related presumptions: PRESUMPTION-317 (the environment that ultimately made even the data auto-push impossible, deferring the question rather than resolving it)
+  Testability: testable via literature (risk classification of data vs code changes in automated publishing; when derived-data updates warrant human review; silent data-quality regressions)
+  Risk if wrong: Medium — if a bad or mis-extracted triplet can reach the public connectome unreviewed, the "approved data is safe" line lets a data-quality regression publish silently; the manual-push fallback currently masks this, but the design intent still treats data as review-exempt.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-319
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as the unexamined safety premise inside ASSUMPTION-284's data half. Medium; pairs ASSUMPTION-284. Routed MED.
+    Current status: UNTESTED
+
+PRESUMPTION-320:
+  Date surfaced: 2026-06-07
+  Statement: [inferred] Repeatedly handing Tom multi-command shell blocks to paste-run presumed those blocks would execute atomically and as-modeled on his machine — i.e., that the agent's model of the user's repo state (branch, staged files, worktree registrations, lock files) is accurate enough to script blind, multi-step, state-mutating sequences. Two of the three blocks half-failed precisely because the real state diverged from the model (a locked stale worktree still holding `main`; `generate_community_explorer.py` already staged).
+  Evidence it was operative: block #1 aborted mid-sequence (`'main' is already used by worktree …`; then committed on the wrong branch, bundling a stray staged file); only block #3, rewritten to use a throwaway detached worktree built straight from `origin/main` (assuming nothing about local state), succeeded. The progression from state-dependent to state-independent blocks is the tell that the earlier ones over-trusted the state model.
+  Why it was unstated: convenience framing — a pasteable block reads as a single safe action, so the compound risk of several state-dependent steps running non-atomically on a possibly-divergent repo is not surfaced to the user.
+  Type: methodological
+  Related decisions: DECISION-052
+  Related assumptions: ASSUMPTION-285 (sandbox can't run the git itself, forcing the hand-off-to-Tom pattern that produced the blocks)
+  Related presumptions: PRESUMPTION-317, PRESUMPTION-318
+  Testability: testable via literature (risk of blind/compound remote command execution; idempotent vs state-dependent operations; human-in-the-loop ops where the operator can't see intermediate state; "make each step safe to fail")
+  Risk if wrong: Medium-High — a state-divergent multi-command block can cause real damage on the user's machine (here: an accidental commit on the wrong branch plus stale `.git` locks that briefly jammed Tom's git); the cost lands on the user, not the sandbox.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-320
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from the two half-failed command blocks and the convergence on a state-independent (detached-worktree) recipe. Medium-High; pairs ASSUMPTION-285. Routed MED.
+    Current status: UNTESTED
+
+PRESUMPTION-321:
+  Date surfaced: 2026-06-07
+  Statement: [inferred] The system presumes "automation day" and "attended session" are mutually exclusive day-types. Today had a genuine attended PRS-connectome session (real user turns; `prs_3d.html` regenerated and 269 pushed to main with Tom in the loop), yet the evening Cowork→Chat sync and `2026-06-07_cowork_summary.md` both labeled today "an unattended / automation day — no attended Cowork build session is on record." The taxonomy presumes a clean partition that today's own evidence contradicts — the sync's situational awareness mis-saw the day.
+  Evidence it was operative: `2026-06-07_cowork_summary.md`: "Today was an unattended / automation day — no attended Cowork build session is on record"; the evening sync transcript: "Today was an automation-only day — no attended build session." Both were written while an attended PRS session sat in the same day's session list. The likely cause: "attended build session" was implicitly scoped to Community-Explorer build work, so a different attended workflow (the connectome publish) fell outside the category and was counted as absence.
+  Why it was unstated: a category presumption — the day-type labels (attended-build vs automation) are treated as exhaustive and mutually exclusive, so a session that fits neither cleanly is recorded as "none" rather than prompting a category revision.
+  Type: structural / normative
+  Related decisions: DECISION-052
+  Related assumptions: ASSUMPTION-283 (the attended connectome work the sync failed to register)
+  Related presumptions: PRESUMPTION-317 (both are mis-models of what actually executed where)
+  Testability: testable via literature (taxonomy completeness / residual categories; classification under partial-information; how mislabeled activity logs distort downstream metrics)
+  Risk if wrong: Low-Medium — if attended work is routinely filed as "automation day," the metrics/changelog under-count attended activity and the self-awareness layer loses fidelity about when humans were actually in the loop; today this EOD pass corrects the record, but the mislabel would otherwise stand.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-321
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced by cross-checking the day's session list against the sync's own "no attended session" claim — a self-referential finding (the system's situational awareness contradicted by its own transcript record). Low-Medium; routed LOW. Corrected in this pass's changelog/metrics narrative.
+    Current status: UNTESTED

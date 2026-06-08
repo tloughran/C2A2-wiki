@@ -13858,3 +13858,42 @@ These mirror the STALE-MONITOR-FLAGS above as parseable refresh blocks so the ne
 - **Cadence:** Monthly
 - **Next 15d check:** 2026-07-05
 - **Evidence trajectory:** Supporting stable; Challenging stable; New sources since last cycle: No
+## MONITOR — run 2026-06-08 (2026-06-07 PRS-connectome EOD batch)
+
+### MONITOR-313 — ASSUMPTION-284
+**Statement:** The right safety split is "approved data auto-publishes, generator/template code changes are gated for human visual review."
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; asymmetry only) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Net:** "Code needs more review" is supported by blast-radius reasoning, but "data auto-publishes unreviewed" inverts a documented risk ordering — data regressions are the quietest, latest-detected, most-propagating failures and publish as fact. Floor (asymmetry) and ceiling (data review-exempt) come apart.
+**Reasoning for MONITOR (MEDIUM):** Do not INCORPORATE a clean split whose data-half depends on PRESUMPTION-319 (REVISE-094, challenged) and whose enacting design failed in a non-capable environment (317). The asymmetry is right but "no review" should be "auto-CHECKED."
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-15. Priority MEDIUM. What would change: replace the unreviewed-data path with AUTOMATED data-quality gates (schema + invariants + diff-magnitude/anomaly thresholds) → lean INCORPORATE the gated asymmetry; leave data genuinely unchecked → lean REVISE. Pairs PRESUMPTION-319 (REVISE-094); secondary "derived-data-review-exempt" SYSTEMIC cluster. Surface to Tom.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-314 — PRESUMPTION-318
+**Statement:** [inferred] Building the auto-push task before probing whether the sandbox could push presumed capabilities instead of checking them (violates Rules 1/8).
+**Item type:** PRESUMPTION (unstated)
+**15a:** NO-SUPPORT-FOUND (None) | **15b:** CHALLENGED (Moderate-Strong)
+**Net:** Building a capability-dependent automation before probing the capability is a recognized, costly anti-pattern (walking-skeleton, fail-fast, shift-left, pre-mortem) and a direct violation of the project's own Rules 1 and 8. It is the procedural CAUSE of 317, not an independent design defect.
+**Reasoning for MONITOR (HIGH):** Clear, self-evidently supported lesson, but a process discipline to ADOPT (capability-probe-first / dry-run as a standing pre-step), not a literature premise to INCORPORATE nor a defect distinct from 317's REVISE.
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-15. Priority HIGH. What would change: adopt probe-before-build as a non-skippable pre-step for any environment-capability-dependent automation → close. Core of the environment-capability-mismatch SYSTEMIC-RISK; coupled to PRESUMPTION-317 (REVISE-093) and 320 (MONITOR-315).
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-315 — PRESUMPTION-320
+**Statement:** [inferred] Handing the user blind multi-command shell blocks presumes the agent's model of the user's repo state is accurate enough to script state-mutating sequences.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate; idempotent form only) | **15b:** CHALLENGED (Moderate-Strong)
+**Net:** Prepared operator sequences are endorsed only in idempotent, state-checking, or declarative-convergent form. A blind imperative block bets the repo on the agent's unverified state model (dirty tree, diverged branch, partial prior run); a mid-sequence failure strands the repo in an unknown partial state with no safe rerun, and a non-idempotent retry destroys work.
+**Reasoning for MONITOR (MEDIUM-HIGH):** Resolvable by a concrete low-cost practice change rather than a literature-settleable defect or an enacted-and-failed design (no realized harm yet).
+**Detail / cadence / priority:** Cadence Weekly; next 15d 2026-06-15. Priority MEDIUM-HIGH. What would change: adopt "no blind state-mutating blocks" — make each step idempotent/safe-to-fail, inspect-then-act (print git status/branch, stop on surprise), one reversible step over a compound block, never blind force-push/reset → close. Couples PRESUMPTION-317 (the agent also mismodels the environment). Environment-capability-mismatch SYSTEMIC-RISK.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-316 — PRESUMPTION-321
+**Statement:** [inferred] The system presumes "automation day" and "attended session" are mutually exclusive day-types (today's attended PRS session was mislabeled "automation-only").
+**Item type:** PRESUMPTION (unstated)
+**15a:** NO-SUPPORT-FOUND (Weak; MECE ideal only) | **15b:** CHALLENGED (Moderate; low stakes)
+**Net:** "Attended" and "automation-ran" are orthogonal dimensions, not a partition; the binary fails mutual-exclusivity (today's attended session on a nominal automation day is the overlap case), and forcing it mislabels overlap days, biasing downstream activity metrics (label-noise). Real but minor measurement corruption.
+**Reasoning for MONITOR (LOW):** Genuine taxonomy defect with a clear cheap fix but low stakes; not REVISE (no design dependency at risk), not closed (mislabel recurs until the taxonomy changes).
+**Detail / cadence / priority:** Cadence Monthly; next 15d 2026-07-08. Priority LOW. What would change: model day-type as NON-EXCLUSIVE tags (a day may be both "attended" and "automation-ran"), or add a "mixed" category, derived from actual activity; backfill the mislabeled 2026-06-07 day → close.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-06-08):** 4 (MONITOR-313..316). Next weekly 15d run due: 2026-06-15 (MONITOR-313..315); MONITOR-316 monthly, next 2026-07-08.
