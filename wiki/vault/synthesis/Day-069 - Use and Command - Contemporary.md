@@ -2,9 +2,9 @@
 day: 69
 title: "Use and Command (Contemporary)"
 pairs_with: "[[Day-069 - Use and Command]]"
-length_target_words: 2200
-length_actual_words: 1640
-length_tier: medium
+length_target_words: 1500
+length_actual_words: 1534
+length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/friston/wiki.md (PRS on hierarchical active inference; layered control architecture)"
   - "wiki/traditions/levin/wiki.md (PRS on multi-scale agency; layered control of body)"
@@ -12,7 +12,7 @@ karpathy_wiki_sources:
   - "wiki/traditions/hawkins/wiki.md (HTM hierarchical motor control)"
   - "wiki/traditions/fredrickson/wiki.md (cognitive appraisal of emotion; passion follows apprehension)"
 evidence_strength_summary: "Friston/Levin/Hawkins all empirically grounded on layered-control architectures; Aquinas's substrate-of-command analysis (will-commands-itself; reason-commanded-on-uncertain-only; passion-influenced-via-apprehension; vegetative-not-commanded; external-members-obey) maps remarkably onto the contemporary picture"
-length_ratio_to_target: 0.745
+length_ratio_to_target: 1.023
 length_note: "Q.16 (use, 4 articles) + Q.17 (acts commanded by the will, 9 articles) treated as the layered-control architecture of execution; the medieval substrate-of-command map (will-commands-itself, reason-commanded-on-uncertain-only, passion-via-apprehension, vegetative-not-commanded, external-members-obey-directly) preserves so cleanly under hierarchical active inference + multi-scale agency + cognitive-appraisal that the bridging prose stays compact while preserving every keystone (Q.17 a.4 unity-of-command-and-act, a.6 reason-commanded-only-on-uncertain, a.7 passion-via-apprehension)."
 mind_first_reframe: "Aquinas's Q.16-17 substrate-of-command map preserves with remarkable structural fidelity under hierarchical active inference (Friston) + multi-scale agency (Levin) + cognitive-appraisal of emotion (Fredrickson): each layer's controllability is exactly what its constitutive autonomy permits, and the medieval 'one human act' integrating command-and-commanded is the integrated multi-layer policy-selection that *is* the alter's action."
 central_theme_thread: "The alter's salvation in fear and trembling operates through a layered-control architecture in which deliberate command reaches some layers directly (motor) and others only via the management of attention and apprehension; the daily-task structure of spiritual practices is the leverage of attention-management on the lower layers (Wright on renewing-the-mind, Rohr on contemplative cultivation, Fredrickson on positive-affect-induction), with second-personal care (Stump) surfacing the diagnostic the alter cannot surface from inside."

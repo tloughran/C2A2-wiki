@@ -2,9 +2,9 @@
 day: 109
 title: Changing Laws (Contemporary)
 pairs_with: "[[Day-109 - Changing Laws]]"
-length_target_words: 2200
-length_actual_words: 1680
-length_tier: medium
+length_target_words: 1500
+length_actual_words: 1434
+length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/wolfram/wiki.md (PRS-03 computational irreducibility; rule-emergence in distributed systems)"
   - "wiki/traditions/friston/wiki.md (active inference; priors and convention-binding)"
@@ -13,12 +13,12 @@ karpathy_wiki_sources:
   - "Wright, Paul and the Faithfulness of God (covenantal-political theology)"
   - "Rohr, Falling Upward (law-stability as developmental scaffold)"
 evidence_strength_summary: "Empirical: behavioral-economics work on status-quo bias and Schelling-point coordination; institutional persistence in political science. Formal: computational irreducibility. Theological: covenant-political readings."
-length_ratio_to_target: 0.76
+length_ratio_to_target: 0.956
 length_note: "Below medium target (2200) at 0.76, within ±25%. Q.96-97 covered in full (a.2/a.4/a.6, Q.97 a.1-4); lean by design, substantively complete, better short than padded per length policy."
 mind_first_reframe: "Human law is the Schelling-point coordination scheme a community has settled into, anchored on natural-law deep priors but irreducibly local; its binding force in conscience derives from alignment with deep priors plus coordination value plus pedagogical/developmental value, and law-change is legitimate only when it restores alignment or tracks a real shift in the community's moral state."
 central_theme_thread: "Perspective-limitation cuts both for and against the rule: individual agents are too limited to see the lawgiver's purpose in every case (so follow the letter), but coordinated communities can together see when applying the letter defeats the purpose — limited perspectives in coordinated community can jointly see more than any one of them can alone, which is the loving-unity telos at work in the social-political register."
 tags: [synthesis, day/109, theme/law-binding, theme/lawful-revision]
-last_qc_at: "2026-05-30T08:20:13"
+last_qc_at: "2026-06-07T22:26:49"
 last_qc_outcome: "pass"
 ---
 

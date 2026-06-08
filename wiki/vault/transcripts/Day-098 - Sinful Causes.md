@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=F7YsEHkIYuo
 title: Sinful Causes
 summa_ref: Prima Secundae, Q.74-75
 duration_seconds: 951
-word_count: 2780
+word_count: 925
 raw_asr_word_count: 2649
-length_tier: medium
+length_tier: short
 segment_count: 380
 caption_kind: asr
 language: en

@@ -4,8 +4,8 @@ title: Greatest Virtue (Contemporary)
 pairs_with: "[[Day-094 - Greatest Virtue]]"
 length_tier: short
 length_target_words: 1500
-length_actual_words: 1510
-length_ratio_to_target: 1.007
+length_actual_words: 1367
+length_ratio_to_target: 0.911
 karpathy_wiki_sources:
   - "hoffman/wiki.md, hoffman/prs_triplets.md (interface theory of perception, conscious agents)"
   - "kastrup/wiki.md, kastrup/prs_triplets.md (analytic idealism, alters of Mind-at-Large)"

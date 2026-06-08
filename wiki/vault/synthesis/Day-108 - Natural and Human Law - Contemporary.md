@@ -2,9 +2,9 @@
 day: 108
 title: Natural and Human Law (Contemporary)
 pairs_with: "[[Day-108 - Natural and Human Law]]"
-length_target_words: 2200
-length_actual_words: 1880
-length_tier: medium
+length_target_words: 1500
+length_actual_words: 1644
+length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/hoffman/wiki.md (FLAG-02 interface theory; species-specific access)"
   - "wiki/traditions/friston/wiki.md (generative models; priors)"
@@ -14,12 +14,12 @@ karpathy_wiki_sources:
   - "Wright, Paul and the Faithfulness of God (Israel's vocation as norming-norm)"
   - "Rohr, Falling Upward (rule-following as first-half-of-life pedagogy)"
 evidence_strength_summary: "Empirical: Friston's predictive-processing, McGilchrist's hemispheric data, Wolfram's computational results, the descriptive variability of natural-law applications across cultures. Speculative: the deeper-pattern claim and the interface-theoretic reading of why natural law generalizes."
-length_ratio_to_target: 0.85
+length_ratio_to_target: 1.096
 length_note: "Below medium target (2200) at 0.85, within ±25%. Q.94-95 covered in full (a.4 universality/variability, a.2 first principle, Q.95 a.2/a.4); substantively complete, no padding warranted per length policy."
 mind_first_reframe: "Natural law is the set of deep priors in the human cognitive-affective generative model — species-invariant interface-features that orient rational agents toward fitness-, flourishing-, and cooperation-relevant goods; human law is the locally-determined coordination scheme a community builds from those priors under specific historical conditions, irreducibly local per Wolfram-computational-irreducibility while bound to the natural-law alignment condition."
 central_theme_thread: "The natural-law interface gives every rational creature access to the deep prior pattern but in a species-specific format locally shaped by cultural and individual history; the work of perceiving the deeper pattern is the work of unmaking those local distortions, and the covenantal community is where the alignment-work is jointly undertaken — Wright's salvation-as-inclusion at its sharpest."
 tags: [synthesis, day/108, theme/natural-law-interface, theme/human-law-determination]
-last_qc_at: "2026-05-30T08:20:00"
+last_qc_at: "2026-06-07T22:26:48"
 last_qc_outcome: "pass"
 ---
 

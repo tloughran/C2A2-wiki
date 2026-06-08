@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=Xi0Ew9jTiN8
 title: Fear
 summa_ref: "Prima Secundae, Q.42-43"
 duration_seconds: 533
-word_count: 1535
+word_count: 934
 raw_asr_word_count: 1527
 length_tier: short
 segment_count: 209

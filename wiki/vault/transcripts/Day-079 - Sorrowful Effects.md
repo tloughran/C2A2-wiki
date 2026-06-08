@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=wskwLdiSgZ4
 title: Sorrowful Effects
 summa_ref: "Prima Secundae, Q.36-37"
 duration_seconds: 547
-word_count: 1430
+word_count: 834
 raw_asr_word_count: 1468
 length_tier: short
 segment_count: 138

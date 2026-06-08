@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=d91q8U1aE-Q
 title: Divine Assistance
 summa_ref: "Prima Secundae, Q.108-109"
 duration_seconds: 1747
-word_count: 5950
+word_count: 1495
 raw_asr_word_count: 4600
-length_tier: long
+length_tier: short
 fidelity_checked: true
 segment_count: 410
 caption_kind: asr

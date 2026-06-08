@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=3vxuM3JrEdU
 title: The Old Law
 summa_ref: "Prima Secundae, Q.98-99"
 duration_seconds: 1080
-word_count: 3370
+word_count: 1289
 raw_asr_word_count: 2880
-length_tier: medium
+length_tier: short
 fidelity_checked: true
 segment_count: 250
 caption_kind: asr

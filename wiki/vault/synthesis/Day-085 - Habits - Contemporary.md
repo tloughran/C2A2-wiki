@@ -67,10 +67,10 @@ Q.48 closes the passions tract; Q.49 opens the habits tract — the structural p
 day: 85
 title: Habits (Contemporary)
 pairs_with: "[[Day-085 - Habits]]"
-length_target_words: 2200
-length_actual_words: 2300
-length_ratio_to_target: 1.045
-length_tier: medium
+length_target_words: 1500
+length_actual_words: 2114
+length_ratio_to_target: 1.409
+length_tier: short
 mind_first_reframe: "Aquinas's habit-as-quality (Q.49 a.1) is the medieval anticipation of *learned-stabilized parameters in a generative model* — the cortical reference frame (Hawkins), the precision-weighted prior (Friston), the bioelectric pattern (Levin); Q.49 a.4's habits-are-necessary methodological argument is the early form of dispositional-realism in cognitive science; Q.48 a.1's anger-pleasure-by-imagination is the reinforcement-learning signature of angry rumination that stabilizes the passion of anger into the vice of wrath."
 central_theme_thread: "Q.49 is the structural pivot of the Prima Secundae — from transient affective state (passion) to stable disposition (habit); the central theme's working-out of salvation in fear and trembling moves from each-time engagement (Phil 2:12 in Q.44 a.4) to long-term formation (Phil 2:12 in habit-register); the limited agent is *shaped* over time by the very acts it performs, and the external scaffolding of tradition, community, contemplative practice, and example-of-those-further-along is the central theme's 'guidance from those who perceive more of the whole' in habit-register form."
 karpathy_wiki_sources:

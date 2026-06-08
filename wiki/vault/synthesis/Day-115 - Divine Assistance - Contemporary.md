@@ -2,10 +2,10 @@
 day: 115
 title: Divine Assistance (Contemporary)
 pairs_with: "[[Day-115 - Divine Assistance]]"
-length_tier: long
-length_target_words: 3000
-length_actual_words: 2400
-length_ratio_to_target: 0.80
+length_tier: short
+length_target_words: 1500
+length_actual_words: 2362
+length_ratio_to_target: 1.575
 length_note: "Below long target (2400/3000, ratio 0.80, within ±25%) but substantively complete: long-tier capstone covering Q.108 (close of the law) and Q.109 (necessity of grace, the section's central-theme keystone); picks the generative threads rather than mirroring every article, per length policy. No padding warranted."
 karpathy_wiki_sources:
   - "wiki/traditions/levin/wiki.md (PRS-04 morphogenetic field; pattern as cause; resource-bounded development)"

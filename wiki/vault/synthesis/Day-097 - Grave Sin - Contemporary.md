@@ -2,9 +2,9 @@
 day: 97
 title: Grave Sin (Contemporary)
 pairs_with: "[[Day-097 - Grave Sin]]"
-length_target_words: 2200
-length_actual_words: 2180
-length_tier: medium
+length_target_words: 1500
+length_actual_words: 1677
+length_tier: short
 karpathy_wiki_sources:
   - "traditions/stump/wiki.md + prs_triplets.md (PRS-05 suffering and divine permission; PRS-09 cooperative-causality account of virtue)"
   - "traditions/friston/wiki.md + prs_triplets.md (PRS-04 organism as active modeler; precision-weighting)"
@@ -12,7 +12,7 @@ karpathy_wiki_sources:
   - "traditions/fredrickson/wiki.md (broaden-and-build; negativity bias)"
   - "master/C2A2_master_wiki.md (agency-at-multiple-scales)"
 evidence_strength_summary: "The species-by-end and gravity-by-end analytic moves are philosophical-textual (Aquinas + analytic Thomism). Friston's precision-weighting account of voluntariness is formal-empirical. McGilchrist's account of cold/spiritual sin as left-hemispheric pathology is medium-confidence empirical."
-length_ratio_to_target: 0.991
+length_ratio_to_target: 1.118
 mind_first_reframe: "Aquinas's structural anatomy of sin (Q.72 species, Q.73 gravity) recovers as active-inference policy diagnostics: species is fixed by the policy's preferred-outcome prior (species-by-end), gravity is the product of how high in the prior-stack the perversion sits and how much precision the agent puts on it (depth × precision). The counter-intuitive ranking — spiritual sins graver than carnal — survives as the difference between prior-level mis-setting and local precision-failure at the policy level."
 central_theme_thread: "Q.73 a.1's Legion-vs-unity claim — vice fragments the agent into many unintegrated appetitive sub-agents while virtue unifies the agent under reason — is one of the most direct articulations in I-II of the project's central frame: the unified agent is the one whose multiple partial perspectives (toward self, neighbor, body) are held together by a single integrating prior (charity / loving unity); vice does not just make the agent bad, it makes the agent plural in the wrong way."
 tags: [synthesis, day/097, theme/species-by-end, theme/gravity-and-precision]

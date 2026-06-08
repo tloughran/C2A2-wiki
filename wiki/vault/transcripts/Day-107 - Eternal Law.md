@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=4TV5fHS8I74
 title: Eternal Law
 summa_ref: "Prima Secundae, Q.92-93"
 duration_seconds: 798
-word_count: 2480
+word_count: 764
 raw_asr_word_count: 2099
-length_tier: medium
+length_tier: short
 fidelity_checked: true
 segment_count: 195
 caption_kind: asr

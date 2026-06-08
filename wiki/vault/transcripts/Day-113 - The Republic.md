@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=qqjYIxS18j8
 title: The Republic
 summa_ref: "Prima Secundae, Q.104-105"
 duration_seconds: 870
-word_count: 2900
+word_count: 849
 raw_asr_word_count: 2310
-length_tier: medium
+length_tier: short
 fidelity_checked: true
 segment_count: 220
 caption_kind: asr

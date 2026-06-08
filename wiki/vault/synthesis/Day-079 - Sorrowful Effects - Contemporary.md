@@ -3,8 +3,8 @@ day: 79
 title: Sorrowful Effects (Contemporary)
 pairs_with: "[[Day-079 - Sorrowful Effects]]"
 length_target_words: 1500
-length_actual_words: 1490
-length_ratio_to_target: 0.993
+length_actual_words: 1120
+length_ratio_to_target: 0.747
 length_tier: short
 mind_first_reframe: "Aquinas's metaphysical 'craving for unity' as the deepest cause of sorrow gets instantiated at multiple scales under conscious-realist monism: bioelectric coherence at the cellular level (Levin), prediction-error null at the inferential level (Friston), positivity-resonance synchrony at the social level (Fredrickson), and substrate-coherence at the metaphysical limit (Kastrup) — unity is no longer mysteriously transcendental but mechanistically tractable at every level of organization."
 central_theme_thread: "The agent's perspective-limitation is what makes sorrow possible and what makes it harmful when unintegrated; sorrow's somatic harm (HPA loading, vagal suppression, inflammation, PRS-11 gating) tracks the narrowing of the model, while a perspective wide enough to hold both the lost good and the larger reality containing it does not collapse under the loss."

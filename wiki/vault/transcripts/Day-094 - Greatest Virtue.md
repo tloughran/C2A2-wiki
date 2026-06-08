@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=Byw7JtvkPK8
 title: Greatest Virtue
 summa_ref: Prima Secundae (I-II), Q.66-67
 duration_seconds: 786
-word_count: 1980
+word_count: 1398
 raw_asr_word_count: 2130
 length_tier: short
 segment_count: 156

@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=x8YfRtizOSQ
 title: Prideful Anger
 summa_ref: "Prima Secundae, Q.46-47"
 duration_seconds: 910
-word_count: 2510
+word_count: 1325
 raw_asr_word_count: 2505
-length_tier: medium
+length_tier: short
 segment_count: 353
 caption_kind: asr
 language: en

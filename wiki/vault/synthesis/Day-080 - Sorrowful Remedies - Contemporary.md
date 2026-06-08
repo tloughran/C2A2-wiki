@@ -2,10 +2,10 @@
 day: 80
 title: Sorrowful Remedies (Contemporary)
 pairs_with: "[[Day-080 - Sorrowful Remedies]]"
-length_target_words: 2200
-length_actual_words: 2200
-length_ratio_to_target: 1.000
-length_tier: medium
+length_target_words: 1500
+length_actual_words: 1740
+length_ratio_to_target: 1.16
+length_tier: short
 mind_first_reframe: "Aquinas's contemplation of divine things — soul's union with a numerically distinct God — becomes, under mind-monism, the alter's re-opening of its dissociative boundary to mind-at-large; Q.39 a.4's 'greatest evil is to be too evil to sorrow' gets a precise mechanism: the alter so dissociated from substrate that it cannot register privation has stepped off the computational route home."
 central_theme_thread: "Q.38's five remedies (pleasure, tears, friends, contemplation, sleep/baths) are the concrete cooperative computational resources by which a limited agent extends its perspective — re-admitting evidence, externalizing rigid models, importing another's view, holding the present sorrow within a larger unchanging frame, restoring somatic substrate; Q.39 a.4's negative pole is desensitization itself, the narrowing of perspective that closes the route to loving unity."
 karpathy_wiki_sources:

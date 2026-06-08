@@ -2,9 +2,9 @@
 day: 111
 title: The Ten Commandments (Contemporary)
 pairs_with: "[[Day-111 - The Ten Commandments]]"
-length_target_words: 2200
-length_actual_words: 2150
-length_tier: medium
+length_target_words: 1500
+length_actual_words: 1773
+length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/hoffman/wiki.md (FLAG-02 interface theory; figurative-representational cognition)"
   - "wiki/traditions/friston/wiki.md (FLAG-05 priors and curriculum-staged learning)"
@@ -14,7 +14,7 @@ karpathy_wiki_sources:
   - "Wright, Paul and the Faithfulness of God (Decalogue in covenantal frame)"
   - "Rohr, The Universal Christ (cosmic Christ as fulfillment of the figurative)"
 evidence_strength_summary: "Empirical: cross-cultural moral-priors research, costly-signaling work in cultural evolution, ritual-effects on group cohesion. Formal: predictive-processing accounts of typological / figurative cognition. Theological: Wright's covenantal reading; classical Christology."
-length_ratio_to_target: 0.98
+length_ratio_to_target: 1.182
 mind_first_reframe: "The moral and ceremonial precepts together constitute a formation ecology aimed at producing agents capable of charity — moral precepts defining the rule-system (left-hemispheric floor), ceremonial precepts producing the embodied identification and pattern-recognition (right-hemispheric scaffold) that prepares agents to recognize the realized pattern; both necessary, neither sufficient without grace, with the Pelagian failure mode (rule-compliance suffices) ruled out by the active-inference and broaden-and-build mechanics."
 central_theme_thread: "Perspective-limitation requires graded revelation: the pattern is invariant but the interface by which agents access it is staged; the Pelagian failure is to think rule-compliance suffices, when in fact the loving-unity computational task cannot be solved using only the resources the agent perceives from its own perspective — it requires the import of new priors (grace, charity, the indwelling Spirit) from outside, and the law itself reveals love as what the law was always pointing at."
 tags: [synthesis, day/111, theme/figurative-cognition, theme/charity-as-precept]

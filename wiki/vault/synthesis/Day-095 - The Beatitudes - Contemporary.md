@@ -2,10 +2,10 @@
 day: 95
 title: The Beatitudes (Contemporary)
 pairs_with: "[[Day-095 - The Beatitudes]]"
-length_tier: medium
-length_target_words: 2200
-length_actual_words: 2210
-length_ratio_to_target: 1.00
+length_tier: short
+length_target_words: 1500
+length_actual_words: 2293
+length_ratio_to_target: 1.529
 karpathy_wiki_sources:
   - "wright (Jesus and the Victory of God; Paul and the Faithfulness of God; Sermon-on-Mount as covenant-renewal manifesto)"
   - "rohr (Falling Upward; Universal Christ; Beatitudes as non-dual contemplative roadmap)"

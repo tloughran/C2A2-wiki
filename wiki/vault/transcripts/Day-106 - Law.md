@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=zcI9lYKKZ-0
 title: Law
 summa_ref: "Prima Secundae, Q.90-91"
 duration_seconds: 922
-word_count: 2980
+word_count: 850
 raw_asr_word_count: 2426
-length_tier: medium
+length_tier: short
 segment_count: 220
 caption_kind: asr
 language: en

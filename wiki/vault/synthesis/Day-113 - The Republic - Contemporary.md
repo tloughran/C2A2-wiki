@@ -2,10 +2,10 @@
 day: 113
 title: The Republic (Contemporary)
 pairs_with: "[[Day-113 - The Republic]]"
-length_tier: medium
-length_target_words: 2200
-length_actual_words: 1880
-length_ratio_to_target: 0.85
+length_tier: short
+length_target_words: 1500
+length_actual_words: 1550
+length_ratio_to_target: 1.033
 length_note: "Below medium target (1880/2200, ratio 0.85, within ±25%) but substantively complete: covers Q.104-105 (judicial precepts, mixed-form government, war/slavery/herem) and rightly defers the hardest herem material to sustained theological work rather than padding. Per length policy."
 karpathy_wiki_sources:
   - "wiki/traditions/friston/wiki.md (FLAG-05 distributed inference; multi-agent generative models)"
@@ -18,7 +18,7 @@ karpathy_wiki_sources:
 mind_first_reframe: "Institutional design under perspective-limitation: distributed structures that integrate many limited perspectives lower variance and approximate the common good better than concentrated power, which presupposes a perspective-rich ruler who is empirically rare."
 central_theme_thread: "No single perspective can see the common good fully, so the loving-unity telos is approached in the social-institutional space by mixed structures that allow many limited perspectives to inform one another — the Trinitarian relational archetype, instantiated politically."
 evidence_strength_summary: "Empirical: institutional-design work in political science and public choice on diffused power; psychology on cognitive limits of single rulers. Formal: mechanism-design and multi-agent inference. Theological: covenant-political theology. Hard: herem texts deserve theological work beyond what the host's harmonization supplies."
-last_qc_at: "2026-05-30T08:20:14"
+last_qc_at: "2026-06-07T22:26:49"
 last_qc_outcome: "pass"
 tags: [synthesis, day/113, theme/mixed-form, theme/institutional-design]
 ---

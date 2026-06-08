@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=buGc3oUGFJE
 title: The Beatitudes
 summa_ref: Prima Secundae (I-II), Q.68-69
 duration_seconds: 1121
-word_count: 2640
+word_count: 1904
 raw_asr_word_count: 3110
-length_tier: medium
+length_tier: short
 segment_count: 220
 caption_kind: asr
 language: en

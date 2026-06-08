@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=U_djbOlHxu0
 title: The Ten Commandments
 summa_ref: "Prima Secundae, Q.100-101"
 duration_seconds: 1547
-word_count: 5210
+word_count: 1353
 raw_asr_word_count: 4283
-length_tier: long
+length_tier: short
 fidelity_checked: true
 segment_count: 360
 caption_kind: asr

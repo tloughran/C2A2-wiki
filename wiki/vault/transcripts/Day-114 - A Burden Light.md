@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=kC47FibzXN0
 title: A Burden Light
 summa_ref: "Prima Secundae, Q.106-107"
 duration_seconds: 818
-word_count: 2770
+word_count: 968
 raw_asr_word_count: 2348
-length_tier: medium
+length_tier: short
 fidelity_checked: true
 segment_count: 215
 caption_kind: asr

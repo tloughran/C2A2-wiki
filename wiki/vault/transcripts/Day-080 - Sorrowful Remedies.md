@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=2F6ZkE9AuiU
 title: Sorrowful Remedies
 summa_ref: "Prima Secundae, Q.38-39"
 duration_seconds: 693
-word_count: 1820
+word_count: 1083
 raw_asr_word_count: 1876
 length_tier: short
 segment_count: 175

@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=oGAILxE8En8
 title: Habits
 summa_ref: "Prima Secundae, Q.48-49"
 duration_seconds: 898
-word_count: 2378
+word_count: 1081
 raw_asr_word_count: 2366
-length_tier: medium
+length_tier: short
 segment_count: 342
 caption_kind: asr
 language: en

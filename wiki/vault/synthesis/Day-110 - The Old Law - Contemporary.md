@@ -2,9 +2,9 @@
 day: 110
 title: The Old Law (Contemporary)
 pairs_with: "[[Day-110 - The Old Law]]"
-length_target_words: 1900
-length_actual_words: 1850
-length_tier: medium
+length_target_words: 1500
+length_actual_words: 1619
+length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/friston/wiki.md (FLAG-05 generative-model updating across developmental stages)"
   - "wiki/traditions/fredrickson/wiki.md (FLAG-11 broaden-and-build; positive-affect scaffolding)"
@@ -14,7 +14,7 @@ karpathy_wiki_sources:
   - "Wright, The Resurrection of the Son of God (covenant fulfillment)"
   - "Rohr, Falling Upward (developmental stages of moral / spiritual life)"
 evidence_strength_summary: "Empirical: developmental psychology on stage-dependent learning, Fredrickson on positive-affect broadening, predictive-processing on stage-wise prior updating. Theological: Wright's covenant-vocation reading. Speculative: identification of Old-Law pedagogy with curriculum-staged cognitive maturation."
-length_ratio_to_target: 0.97
+length_ratio_to_target: 1.079
 mind_first_reframe: "The Old Law is the developmental curriculum through which an agent-community (Israel) and through it humanity is brought from natural-law-only-access (impaired by fomes) toward grace-enabled charity — external rules training pattern-recognition that natural-law access alone could not reliably deliver, temporal goods meeting agents at their current motivational state (Fredrickson broaden-and-build), prophetic typology training pattern-recognition (Hoffman interface), friendship-as-likeness as the telos."
 central_theme_thread: "Perspective-limitation is not just an obstacle but the condition under which developmental staging makes sense — an agent at New-Law level does not need the Old Law; an agent at fomes-dominated post-Fall level cannot receive the New Law directly; the staged sequence is the path by which limited perspectives are brought into closer alignment with the loving-unity telos under the resources available."
 tags: [synthesis, day/110, theme/covenantal-pedagogy, theme/developmental-stages]

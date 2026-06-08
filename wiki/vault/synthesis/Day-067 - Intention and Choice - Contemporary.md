@@ -2,9 +2,9 @@
 day: 67
 title: "Intention and Choice (Contemporary)"
 pairs_with: "[[Day-067 - Intention and Choice]]"
-length_target_words: 2200
-length_actual_words: 1620
-length_tier: medium
+length_target_words: 1500
+length_actual_words: 1401
+length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/friston/wiki.md (PRS on hierarchical generative models; expected free energy; practical syllogism)"
   - "wiki/traditions/hoffman/wiki.md (PRS on perception under interface; single-act-multi-object structure)"
@@ -12,7 +12,7 @@ karpathy_wiki_sources:
   - "wiki/traditions/stump/wiki.md (will-as-faculty; second-personal-knowing in choice)"
   - "wiki/traditions/levin/wiki.md (multi-scale agency; instinctual tending without representing)"
 evidence_strength_summary: "Friston on practical-syllogism-as-hierarchical-prior-conclusion is mature formalism; Levin on instinctual tending without representing is empirically robust; Aquinas's terminus-of-movement and single-act-with-distinct-objects analyses preserve cleanly under contemporary frames"
-length_ratio_to_target: 0.736
+length_ratio_to_target: 0.934
 length_note: "Q.12–Q.13 (11 articles) treated thematically as the hierarchical-prior structure of practical reasoning. The medieval bridge-act-of-intention plus practical-syllogism-conclusion-of-choice maps tightly onto active-inference's hierarchical generative models, so the bridging prose stays compact while preserving every keystone move (Q.12 a.4 single-act-multi-object, Q.13 a.3 conclusions-become-principles, Q.13 a.6 freedom-only-among-particulars)."
 mind_first_reframe: "Intention is the alter's hierarchical-prior commitment to a terminal-or-midpoint terminus carrying the as-ordered-toward-the-perfect-good formal character; choice is the conclusion of practical inference at the bottom of the hierarchical chain — Aquinas's medieval architecture maps onto active inference's hierarchical generative models without remainder."
 central_theme_thread: "Salvation in fear and trembling is the practical-rationality computation under perspective-limitation: the alter is bound at the terminal-prior of the perfect-good and free at the level of mean-policies, and this iterated computation under tradition-bound rationality and the substrate-network's pedagogy is the daily-task work of becoming."

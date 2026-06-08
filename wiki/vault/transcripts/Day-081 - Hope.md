@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=AQjjElwX1Ek
 title: Hope
 summa_ref: "Prima Secundae, Q.40-41"
 duration_seconds: 916
-word_count: 2497
+word_count: 1391
 raw_asr_word_count: 2489
-length_tier: medium
+length_tier: short
 segment_count: 359
 caption_kind: asr
 language: en
