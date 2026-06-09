@@ -791,3 +791,19 @@ OPEN-077:
     Transform at each step:
       14a: Promoted from PRESUMPTION-317's "this is a class bug, not a one-off." Today fixed one task (DECISION-052); the open question is whether the same fault sits latent in the rest of the suite.
     Current status: OPEN
+
+---
+
+OPEN-078:
+  Date raised: 2026-06-08
+  Question: At what cadence should the OpenStory telemetry be re-extracted and re-injected into `agents_tab.html`, and — given the bounded 72h ingest window plus the sparse pre-tool-field history — how is reliable capture of *low-frequency* agents (weekly/monthly scheduled tasks, and the slow tradition-agents the project most cares about) guaranteed between reseeds? The live-ingest model captures new sessions as they land, but a 72h restart window plus older sessions that predate the tool field (`tool_coverage≈0`) means high-frequency, recently-active agents are richly rendered while low-frequency agents stay sparse until a fresh run lands. The refresh cadence was explicitly left "TBD with Tom" in HANDOFF-2/3/4.
+  Arose from: ASSUMPTION-292 (build on the current DB; defer reseed), ASSUMPTION-290 (bridge + bounded-window ingest), PRESUMPTION-326 (recency/availability bias under-renders low-frequency agents), DECISION-053
+  Testable via: empirical (enumerate roster agents by cadence; measure per-agent capture completeness vs run-frequency; test whether a scheduled re-extract + agent-only bridge fills the low-frequency tail) — largely an internal design question, with a literature side on recency/survivorship bias in log-based metrics
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Promoted from the unresolved "cadence TBD with Tom" thread in the day's handoffs and its coupling to the recency-bias presumption (PRESUMPTION-326). The Phase-B seed (#8) and scheduled re-extract (#7) are the proposed mechanisms; the open question is the cadence and whether it actually fills the low-frequency tail.
+    Current status: OPEN
