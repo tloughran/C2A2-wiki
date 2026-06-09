@@ -2,10 +2,10 @@
 day: 114
 title: A Burden Light (Contemporary)
 pairs_with: "[[Day-114 - A Burden Light]]"
-length_tier: medium
-length_target_words: 2200
-length_actual_words: 2180
-length_ratio_to_target: 0.99
+length_tier: short
+length_target_words: 1500
+length_actual_words: 1906
+length_ratio_to_target: 1.271
 karpathy_wiki_sources:
   - "wiki/traditions/levin/wiki.md (PRS-04 morphogenetic field; pattern as cause)"
   - "wiki/traditions/kastrup/wiki.md (PRS-02 analytic idealism; mind as ontological primitive)"

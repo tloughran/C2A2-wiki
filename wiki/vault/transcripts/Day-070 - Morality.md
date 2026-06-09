@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=0YW3kxz-7bg
 title: Morality
 summa_ref: Prima Secundae, Q.18 + Q.19
 duration_seconds: 1620
-word_count: 4083
+word_count: 1438
 raw_asr_word_count: 4047
-length_tier: long
+length_tier: short
 segment_count: 600
 caption_kind: asr
 language: en

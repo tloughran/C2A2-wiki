@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=0itVNhGCq4U
 title: Natural and Human Law
 summa_ref: "Prima Secundae, Q.94-95"
 duration_seconds: 980
-word_count: 3200
+word_count: 1220
 raw_asr_word_count: 2757
-length_tier: medium
+length_tier: short
 fidelity_checked: true
 segment_count: 240
 caption_kind: asr

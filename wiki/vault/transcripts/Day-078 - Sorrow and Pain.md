@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=n8YXgAYXrzo
 title: Sorrow and Pain
 summa_ref: "Prima Secundae, Q.34-35"
 duration_seconds: 724
-word_count: 1880
+word_count: 1053
 raw_asr_word_count: 1992
 length_tier: short
 segment_count: 188

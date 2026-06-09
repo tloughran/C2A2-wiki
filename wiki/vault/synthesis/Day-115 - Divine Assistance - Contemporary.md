@@ -2,10 +2,10 @@
 day: 115
 title: Divine Assistance (Contemporary)
 pairs_with: "[[Day-115 - Divine Assistance]]"
-length_tier: long
-length_target_words: 3000
-length_actual_words: 2400
-length_ratio_to_target: 0.80
+length_tier: short
+length_target_words: 1500
+length_actual_words: 2362
+length_ratio_to_target: 1.575
 length_note: "Below long target (2400/3000, ratio 0.80, within ±25%) but substantively complete: long-tier capstone covering Q.108 (close of the law) and Q.109 (necessity of grace, the section's central-theme keystone); picks the generative threads rather than mirroring every article, per length policy. No padding warranted."
 karpathy_wiki_sources:
   - "wiki/traditions/levin/wiki.md (PRS-04 morphogenetic field; pattern as cause; resource-bounded development)"
@@ -23,7 +23,7 @@ karpathy_wiki_sources:
 mind_first_reframe: "Grace is the operation of mind-at-large in the agent — imported prior-update, value-interface recalibration, master-hemisphere integration, morphogenetic field-restoration — by which a perspective-limited agent's resources are proportioned to a supernatural target it could not generate from within."
 central_theme_thread: "The loving-unity computational task exceeds the proportion of any limited perspective's resources; grace is the structural answer to how perspective-limited agents nevertheless reach a target their own resources cannot reach, through cooperative receptivity rather than self-generation."
 evidence_strength_summary: "Empirical: developmental psychology, self-determination theory, active inference under bounded resources, McGilchrist's hemispheric work, Fredrickson's broaden-and-build, Levin's morphogenetic dynamics. Formal: active inference, generative-model bootstrapping problems. Theological: Pauline soteriology (Wright), sacramental ontology (Rohr). Speculative: full integration of mind-monism with Catholic grace-theology."
-last_qc_at: "2026-05-31T02:26:58"
+last_qc_at: "2026-06-08T04:20:50"
 last_qc_outcome: "pass"
 tags: [synthesis, day/115, theme/grace-necessity, theme/perspective-limitation, theme/loving-unity-as-telos]
 ---

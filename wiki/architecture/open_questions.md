@@ -775,3 +775,35 @@ OPEN-076:
     Transform at each step:
       14a: Promoted from the 2026-06-06 merge. OPEN-075 asked whether the join was feasible; today's merge answered "yes, mechanically," which advances the question to edge density — the next thing P3's promotion pipeline depends on. Flagged for morning discussion in the 2026-06-06 cowork summary (item 3).
     Current status: OPEN
+
+---
+
+OPEN-077:
+  Date raised: 2026-06-07
+  Question: Now that one scheduled task (the PRS connectome) was found to silently assume attended-Mac capabilities it does not have in the task sandbox (push, `$HOME`, `.git` lock mutation — ASSUMPTION-285, PRESUMPTION-317), should the *other* scheduled tasks be audited for the same capability mismatch? Several tasks in the suite touch git, credentialed APIs, or browser-login state (e.g., the Cowork→Chat sync already fails on a logged-out claude.ai). Which of them assume capabilities the sandbox lacks, and which would half-complete and leave cruft rather than fail loud?
+  Arose from: ASSUMPTION-285 (the grounded sandbox-capability model), PRESUMPTION-317 (execution-context-uniformity blind spot, flagged High as a class bug), DECISION-052 (the git-free fix for one task)
+  Testable via: empirical (enumerate scheduled tasks; for each, classify required capabilities vs sandbox capabilities; dry-run in the task sandbox) — largely an internal audit rather than a literature question
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Promoted from PRESUMPTION-317's "this is a class bug, not a one-off." Today fixed one task (DECISION-052); the open question is whether the same fault sits latent in the rest of the suite.
+    Current status: OPEN
+
+---
+
+OPEN-078:
+  Date raised: 2026-06-08
+  Question: At what cadence should the OpenStory telemetry be re-extracted and re-injected into `agents_tab.html`, and — given the bounded 72h ingest window plus the sparse pre-tool-field history — how is reliable capture of *low-frequency* agents (weekly/monthly scheduled tasks, and the slow tradition-agents the project most cares about) guaranteed between reseeds? The live-ingest model captures new sessions as they land, but a 72h restart window plus older sessions that predate the tool field (`tool_coverage≈0`) means high-frequency, recently-active agents are richly rendered while low-frequency agents stay sparse until a fresh run lands. The refresh cadence was explicitly left "TBD with Tom" in HANDOFF-2/3/4.
+  Arose from: ASSUMPTION-292 (build on the current DB; defer reseed), ASSUMPTION-290 (bridge + bounded-window ingest), PRESUMPTION-326 (recency/availability bias under-renders low-frequency agents), DECISION-053
+  Testable via: empirical (enumerate roster agents by cadence; measure per-agent capture completeness vs run-frequency; test whether a scheduled re-extract + agent-only bridge fills the low-frequency tail) — largely an internal design question, with a literature side on recency/survivorship bias in log-based metrics
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Promoted from the unresolved "cadence TBD with Tom" thread in the day's handoffs and its coupling to the recency-bias presumption (PRESUMPTION-326). The Phase-B seed (#8) and scheduled re-extract (#7) are the proposed mechanisms; the open question is the cadence and whether it actually fills the low-frequency tail.
+    Current status: OPEN

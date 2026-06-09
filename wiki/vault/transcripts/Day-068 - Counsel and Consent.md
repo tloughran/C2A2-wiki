@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=sGdzNVURWDM
 title: Counsel and Consent
 summa_ref: Prima Secundae, Q.14 + Q.15
 duration_seconds: 751
-word_count: 2050
+word_count: 807
 raw_asr_word_count: 1987
 length_tier: short
 segment_count: 285

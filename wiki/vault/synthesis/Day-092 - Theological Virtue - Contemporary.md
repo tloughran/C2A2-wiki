@@ -4,8 +4,8 @@ title: Theological Virtue (Contemporary)
 pairs_with: "[[Day-092 - Theological Virtue]]"
 length_tier: short
 length_target_words: 1500
-length_actual_words: 1505
-length_ratio_to_target: 1.003
+length_actual_words: 1191
+length_ratio_to_target: 0.794
 karpathy_wiki_sources:
   - "stump/wiki.md, stump/prs_triplets.md — PRS-09 (faith as second-personal knowledge)"
   - "wright (canonical: Surprised by Hope; Paul and the Faithfulness of God; Resurrection of the Son of God) — pistis as covenant-loyalty"

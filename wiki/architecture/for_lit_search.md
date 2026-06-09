@@ -7918,3 +7918,135 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c (INCORPORATED)->15d re-check]; Item type=ASSUMPTION
   Cadence: Monthly (INCORPORATED re-check; standing independence caveat); Next re_check_due: 2026-07-05
   Notes: Monthly re-check of INCORPORATED PREMISE-004 (re_check_due 2026-05-15 passed). Watch specifically for evidence on independence of C2A2 findings. 15d re-trigger only.
+
+---
+
+## 2026-06-07 — 14a/14b EOD batch (attended PRS-connectome session)
+
+*8 testable items routed at cycle 0 from the 2026-06-07 attended PRS-connectome session: 3 ASSUMPTIONs (283/284/286) + 5 PRESUMPTIONs (317/318/319/320/321). Held (not routed): ASSUMPTION-285 (GROUNDED in-session — infrastructural fact, not a literature claim). Status [QUEUED] only; 15a/15b search next, 15c dispositions afterward.*
+
+[ASSUMPTION] ASSUMPTION-283: Automating regeneration on a schedule is the right fix for "PRS triplets accumulate but the published connectome never changes."
+  Status: [SEARCHED-15a: 2026-06-08 — SUPPORTED (Strong, pattern)] [SEARCHED-15b: 2026-06-08 — PARTIALLY-CHALLENGED (Moderate; necessary-not-sufficient, silent-cron + env-capability)] [DISPOSITIONED-15c: 2026-06-08 — INCORPORATE → PREMISE-053 (conditional)]
+  Provenance: Origin=14a; Chain=[14a -> 15a, 15b -> 15c]; Item type=ASSUMPTION (stated)
+  Priority: LOW
+  Search strategy: CI/CD and scheduled-regeneration practice for generated artifacts; staleness/drift of derived data products; pipelines for keeping published views in sync with source data.
+
+[ASSUMPTION] ASSUMPTION-284: The right safety split is "approved data auto-publishes, generator/template code changes are gated for human visual review."
+  Status: [SEARCHED-15a: 2026-06-08 — PARTIALLY-SUPPORTED (Moderate; asymmetry only)] [SEARCHED-15b: 2026-06-08 — PARTIALLY-CHALLENGED (Moderate; data-half inverted)] [DISPOSITIONED-15c: 2026-06-08 — MONITOR-313 (Medium)]
+  Provenance: Origin=14a; Chain=[14a -> 15a, 15b -> 15c]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: human-in-the-loop release gating; continuous deployment with code-vs-data change classification; drift-baseline guards; risk asymmetry between data and code changes.
+
+[ASSUMPTION] ASSUMPTION-286: Policy-layer rules (the 12 CLAUDE.md rules) are waivable; capability/constitutional boundaries (sandbox credentials) are not; a policy rule may coincide with a hard capability wall.
+  Status: [SEARCHED-15a: 2026-06-08 — SUPPORTED (Strong; policy/mechanism + capability)] [SEARCHED-15b: 2026-06-08 — PARTIALLY-CHALLENGED (Weak-Moderate; coincidence-case hazard)] [DISPOSITIONED-15c: 2026-06-08 — INCORPORATE → PREMISE-054]
+  Provenance: Origin=14a; Chain=[14a -> 15a, 15b -> 15c]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: capability-based security; policy-vs-mechanism separation; constitutional/guardrail vs configurable-policy layering in agent governance; non-bypassable vs configurable constraints.
+
+[PRESUMPTION] PRESUMPTION-317: The prior task design presumed execution-context uniformity — that scheduled tasks inherit the attended Cowork environment's capabilities (push, $HOME, writable .git).
+  Status: [SEARCHED-15a: 2026-06-08 — NO-SUPPORT-FOUND (Weak/conditional only)] [SEARCHED-15b: 2026-06-08 — CHALLENGED (Strong; dev/prod-parity anti-pattern, enacted)] [DISPOSITIONED-15c: 2026-06-08 — REVISE-093 (HIGH)]
+  Provenance: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: HIGH
+  Search strategy: multi-environment / heterogeneous-runtime agent deployment; gap between interactive and batch/scheduled execution contexts; capability discovery before action; class-of-bug from environment-capability mismatch.
+
+[PRESUMPTION] PRESUMPTION-318: Building the auto-push task before probing whether the sandbox could push presumed capabilities instead of checking them (violates Rules 1/8).
+  Status: [SEARCHED-15a: 2026-06-08 — NO-SUPPORT-FOUND (None)] [SEARCHED-15b: 2026-06-08 — CHALLENGED (Moderate-Strong; build-then-discover anti-pattern)] [DISPOSITIONED-15c: 2026-06-08 — MONITOR-314 (HIGH)]
+  Provenance: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: capability/precondition checking before automation; "test in the target environment" practice; pre-mortem / dry-run discipline; cost of build-then-discover ordering.
+
+[PRESUMPTION] PRESUMPTION-319: The data/code guard presumes PRS-data regeneration is deterministic/safe enough to publish unreviewed (data treated as review-exempt).
+  Status: [SEARCHED-15a: 2026-06-08 — PARTIALLY-SUPPORTED (Weak-Moderate; only with auto-gates)] [SEARCHED-15b: 2026-06-08 — CHALLENGED (Strong; silent data regressions)] [DISPOSITIONED-15c: 2026-06-08 — REVISE-094 (MEDIUM-HIGH)]
+  Provenance: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: risk classification of data vs code changes in automated publishing; when derived-data updates warrant human review; silent data-quality regressions.
+
+[PRESUMPTION] PRESUMPTION-320: Handing the user blind multi-command shell blocks presumes the agent's model of the user's repo state is accurate enough to script state-mutating sequences.
+  Status: [SEARCHED-15a: 2026-06-08 — PARTIALLY-SUPPORTED (Weak-Moderate; idempotent form only)] [SEARCHED-15b: 2026-06-08 — CHALLENGED (Moderate-Strong; blind state-dependent block)] [DISPOSITIONED-15c: 2026-06-08 — MONITOR-315 (MEDIUM-HIGH)]
+  Provenance: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH
+  Search strategy: risk of blind/compound remote command execution; idempotent vs state-dependent operations; human-in-the-loop ops where the operator can't see intermediate state; "make each step safe to fail."
+
+[PRESUMPTION] PRESUMPTION-321: The system presumes "automation day" and "attended session" are mutually exclusive day-types (today's attended PRS session was mislabeled "automation-only").
+  Status: [SEARCHED-15a: 2026-06-08 — NO-SUPPORT-FOUND (Weak; MECE ideal only)] [SEARCHED-15b: 2026-06-08 — CHALLENGED (Moderate; non-MECE binary, label-noise)] [DISPOSITIONED-15c: 2026-06-08 — MONITOR-316 (LOW)]
+  Provenance: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW
+  Search strategy: taxonomy completeness / residual categories; classification under partial information; how mislabeled activity logs distort downstream metrics.
+
+---
+
+## 2026-06-08 — 14a/14b EOD batch (attended OpenStory → Agent Explorer build day)
+
+*11 testable items routed at cycle 0 from the four 2026-06-08 attended OpenStory→Agent-Explorer sessions: 5 ASSUMPTIONs (287/288/290/291/292) + 6 PRESUMPTIONs (322/323/324/325/326/327). Held (not routed): ASSUMPTION-289 (GROUNDED in-session — the identity join was verified, not a literature claim). Status [QUEUED] only; 15a/15b search next, 15c dispositions afterward.*
+
+[ASSUMPTION] ASSUMPTION-287: Observed telemetry should replace authored narration as the basis of the Agent Explorer.
+  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: observability/behavioral telemetry as a proxy for system purpose and quality; observed-trace vs authored-intent as the truth-basis of a self-representation; instrumentation-derived vs documentation-derived system models.
+
+[ASSUMPTION] ASSUMPTION-288: Routing extraction through OpenStory's DB (vs direct transcripts) is worth the heavier dependency because eval/apply + turns are valuable signal.
+  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: eval/apply or plan-vs-act ratios as agent quality/health metrics; value of richer derived metrics vs added dependency/coupling cost; build-vs-reuse for instrumentation pipelines.
+
+[ASSUMPTION] ASSUMPTION-290: The capture gap should be solved with an external symlink session-bridge, not an OpenStory fork, to stay on upstream.
+  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW
+  Search strategy: adapter/shim vs fork (vendoring) patterns; cost of staying mergeable with upstream; reversibility and maintenance burden of integration choices.
+
+[ASSUMPTION] ASSUMPTION-291: Shared wiki-node references are a meaningful relational signal between agents — a valid sociogram edge model.
+  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: co-citation / co-reference network analysis; bibliographic coupling; whether shared-reference edges recover meaningful latent structure; validity of co-occurrence as a relatedness proxy.
+
+[ASSUMPTION] ASSUMPTION-292: The existing 571-session DB is representative enough to prove the pipeline without a full reseed.
+  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW
+  Search strategy: sufficiency of partial/available data for pipeline validation; sampling adequacy; build-on-available-data vs full-backfill-first sequencing under risk.
+
+[PRESUMPTION] PRESUMPTION-322: The event stream is a faithful proxy for what an agent is and does (telemetry captures agent substance).
+  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH
+  Search strategy: what behavioral telemetry systematically omits about quality/purpose; trace-vs-intent gap; activity-vs-value confound in observability; limits of quantitative process metrics for qualitative work.
+
+[PRESUMPTION] PRESUMPTION-323: The eval/apply ratio is a meaningful, known-directional quality signal (surfaced and rankable without defining "good").
+  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: directionality/baselines for plan-vs-act or eval/apply ratios; Goodhart risk when a process metric becomes a display/ranking metric; interpreting inherited third-party metrics.
+
+[PRESUMPTION] PRESUMPTION-324: Static validation (node --check + validate_html.py) is a sufficient proxy for a visual artifact working (canvas render never opened, two sessions).
+  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: limits of static analysis vs runtime/visual verification; "it compiles ≠ it works"; visual-regression / snapshot testing for UIs; success-criteria completeness.
+
+[PRESUMPTION] PRESUMPTION-325: The agent population is a clean one-cron-task-per-agent roster (contradicted by multi-fire agents + unmapped interactive sessions).
+  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: entity resolution with fuzzy units; cardinality assumptions in registry/roster design; share of activity falling outside a singleton taxonomy; modeling recurring vs ad-hoc processes.
+
+[PRESUMPTION] PRESUMPTION-326: Recent/available activity is representative; bounded-window + sparse-old-data ingest under-renders low-frequency agents.
+  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH
+  Search strategy: recency and survivorship bias in windowed log analytics; sampling bias in observability; representativeness of recent activity for low-frequency entities.
+
+[PRESUMPTION] PRESUMPTION-327: Making the agent swarm legible/comparable/rankable is itself benign or good (observability treated as normatively neutral).
+  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW-MEDIUM
+  Search strategy: metric fixation / Goodhart's law; surveillance and measurement effects on the measured; normativity of dashboards/observability; performance-management side effects of self-quantification.
+
+### Held (not routed)
+[ASSUMPTION] ASSUMPTION-289: The taskId in `sessions.label` (`name="…"`) is a stable, unique join key for OpenStory→roster identity.
+  Status: [HELD — GROUNDED 2026-06-08] (NOT routed)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Notes: Verified in-session — all 7 thinker-pairs' eval/apply reconcile exactly vs independent SQL; session totals match (572); prefixes unique. An infrastructural/identity fact proven this session, not a literature claim. Held parallel to ASSUMPTION-285/277/282.

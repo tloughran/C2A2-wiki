@@ -2,9 +2,9 @@
 day: 70
 title: "Morality (Contemporary)"
 pairs_with: "[[Day-070 - Morality]]"
-length_target_words: 3000
-length_actual_words: 2080
-length_tier: long
+length_target_words: 1500
+length_actual_words: 2171
+length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/stump/wiki.md (PRS on willed evil; second-personal knowing; tradition-bound rationality)"
   - "wiki/traditions/friston/wiki.md (PRS on prior-alignment; conformity-to-substrate-priors)"
@@ -12,7 +12,7 @@ karpathy_wiki_sources:
   - "wiki/traditions/mcgilchrist/wiki.md (hemispheric account of moral judgment)"
   - "wiki/traditions/fredrickson/wiki.md (positivity resonance; relational-as-formal-good)"
 evidence_strength_summary: "Aquinas's privation-theory of evil is metaphysically firm; Stump's willed-evil and erring-conscience analyses are theological-philosophical strong; Friston's prior-alignment is mature formalism; the formal/material conformity-to-divine-will keystone (Q.19 a.10) is the central-theme load-bearing argument"
-length_ratio_to_target: 0.693
+length_ratio_to_target: 1.447
 length_note: "Q.18 (11 articles) + Q.19 (10 articles) treated as the moral-evaluation arc proper, with Q.19 a.10 as the central-theme load-bearing keystone; the formal/material conformity-to-divine-will distinction maps cleanly onto active-inference terminal-vs-instrumental prior-alignment without requiring extended formalism, and the privation-theory + erring-conscience + Dominican-fasting structures all preserve compactly under the mind-monist frame, so the prose runs under tier while doing real keystone work on the central theme."
 mind_first_reframe: "Q.19 a.10's formal/material distinction — the alter wills the universal good *formally* and the particular good *materially* — maps onto active-inference's terminal-prior-vs-instrumental-prior distinction (Friston); privation-theory of evil (Q.18 a.1) preserves under Levin's form-as-bioelectric-pattern as deficient morphogenesis; erring-conscience (Q.19 a.5-6) is the perspective-limitation made operational, with second-personal-knowing (Stump) the structural mode of correction across alters of differing apprehension."
 central_theme_thread: "Today is the central-theme load-bearing keystone day: each conscious agent is individuated by perspective-limitation while constitutively directed-formally toward the universal good (the substrate-source's integrative dynamics), and salvation in fear and trembling is the daily-task work of cultivating apprehension under second-person care, maintaining formal alignment when material judgment is partial or erring, and holding the formal-unity of all alters' direction-toward-the-universal-good even when material disagreement persists — the Dominican-fasting example (Q.19 a.10) is the medieval articulation of exactly this individuation-by-perspective-with-formal-unity structure."

@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=bEf6DId1Z4E
 title: Enjoyment
 summa_ref: Prima Secundae, Q.10 + Q.11
 duration_seconds: 638
-word_count: 1733
+word_count: 885
 raw_asr_word_count: 1695
 length_tier: short
 segment_count: 232

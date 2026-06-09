@@ -5077,3 +5077,192 @@ ASSUMPTION-282:
     Transform at each step:
       14a: Extracted from the verification step. A rare verification-success instance (a stated diagnostic claim proven in-session by a positive handler-fires test), recorded GROUNDED and not routed — parallel to ASSUMPTION-277. The completeness of the disposition is questioned by PRESUMPTION-315.
     Current status: GROUNDED
+
+---
+
+ASSUMPTION-283:
+  Date identified: 2026-06-07
+  Statement: The "PRS triplets accumulate but the published connectome never changes" failure is best solved by automating regeneration on a schedule (a weekly Sunday `c2a2-prs-connectome-weekly` task) rather than relying on remembering to regenerate by hand.
+  Context: 2026-06-07 attended PRS-connectome session. The originating problem was that triplets had grown 231 → 269 while the live viz stayed at the old count; the chosen remedy was a scheduled regen task (created, then corrected mid-session). Stated: "The original problem — triplets accumulating but the viz never changing — is resolved at the source" and the weekly task "regenerates + validates in place."
+  Type: architectural / methodological
+  Related decisions: DECISION-052
+  Related presumptions: PRESUMPTION-318 (the auto-regen task was built before the execution environment's capabilities were probed)
+  Testability: testable via literature (CI/CD and scheduled-regeneration practice for generated artifacts; staleness/drift of derived data products)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-283
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated design rationale of the 2026-06-07 PRS-connectome session (read via session_info). The scheduling remedy is the explicit fix for the accumulate-but-stale problem; routed LOW.
+    Current status: UNTESTED
+
+ASSUMPTION-284:
+  Date identified: 2026-06-07
+  Statement: Approved-PRS *data* regeneration can safely auto-publish, but generator/template *code* changes must stage locally and notify the human for visual review before publishing — i.e., the right safety split is "data auto-publishes, code is gated."
+  Context: 2026-06-07 PRS-connectome session, stated as the one guard Claude insisted on: "approved-PRS data auto-publishes, code changes don't … if the generator/template changed since the approved baseline, it stages locally and notifies you for visual review." (The auto-push half was later removed when the sandbox proved unable to push — see ASSUMPTION-285 — but the data/code asymmetry remained the design intent.)
+  Type: methodological / normative
+  Related decisions: DECISION-052
+  Related presumptions: PRESUMPTION-319 (presumes data regeneration is deterministic/low-risk enough to publish unreviewed)
+  Testability: testable via literature (human-in-the-loop release gating; continuous deployment with code-vs-data change classification; drift-baseline guards)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-284
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated drift-baseline guard. The data-publishes / code-gates asymmetry is a deliberate, articulated safety choice; routed MED. Its embedded premise (data regen is safe to ship unreviewed) is surfaced separately as PRESUMPTION-319.
+    Current status: UNTESTED
+
+ASSUMPTION-285:
+  Date identified: 2026-06-07
+  Statement: [GROUNDED this session] Scheduled tasks run in the same flattened-mount sandbox as the EOD/automation agents — which has no GitHub credentials (cannot push), cannot resolve `$HOME` (hardcoded `~/Documents/...` paths do not exist), and cannot create/delete `.git` lock files — so any workflow step requiring a push or `.git` mutation must be handed to Tom on his Mac, not automated. The corrected design ("automate the regen, hand off the push") follows directly: the task does everything the sandbox *can* do (regenerate, validate, write in place, notify) and stops exactly at the capability wall.
+  Context: 2026-06-07 session. The original task design assumed the inverse (that scheduled tasks run on Tom's Mac with credentials and a normal `$HOME`); the trial run falsified that — the worktree/push step failed and left stale `.git` lock cruft in the real repo. The git-free rewrite was then tested end-to-end in the sandbox and passed. Stated: "scheduled tasks run in this same no-credentials sandbox, so anything requiring a push or `.git` lock changes has to be handed to you, not automated."
+  Type: architectural / infrastructural
+  Related decisions: DECISION-052
+  Related presumptions: PRESUMPTION-317 (the prior design presumed execution-context uniformity between attended Cowork and scheduled tasks)
+  Testability: GROUNDED — verified in-session by the failed push/worktree run plus the successful end-to-end test of the git-free script; an infrastructural fact of this environment, not a literature claim. NOT routed.
+  Status: GROUNDED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-285
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted as the corrected, verified-in-session replacement for the day's originating mistaken assumption (that tasks run on the Mac). A second verification-success instance (parallel to ASSUMPTION-277/282): a stated capability claim proven in-session. Recorded GROUNDED, not routed. The blind spot that produced the original error is surfaced as PRESUMPTION-317.
+    Current status: GROUNDED
+
+ASSUMPTION-286:
+  Date identified: 2026-06-07
+  Statement: Tom's 12 CLAUDE.md rules sit at the *policy* layer — choices that are in principle waivable (e.g., the no-blind-push rule could be relaxed for a pre-approved, deterministic artifact like the PRS connectome) — whereas the sandbox's no-push limit is a *capability / constitutional* boundary that cannot be waived. A policy rule and a hard capability wall can coincide, so waiving the policy would not have enabled the action.
+  Context: 2026-06-07 session, co-articulated by Tom and Claude. Tom: "I wondered whether you could except this prs push to live; turns out the rule was constitutional at a deeper level than my 12 claude.md rules." Claude: "Your 12 rules sit at the policy layer … underneath it is a capability boundary you can't waive — the sandbox has no GitHub credentials, period … Your policy rule happened to be pointing at a hard wall."
+  Type: epistemic / methodological (constraint taxonomy for agentic systems)
+  Related decisions: DECISION-052
+  Related presumptions: PRESUMPTION-317 (the two-layer distinction only became visible once execution-context uniformity was falsified)
+  Testability: testable via literature (capability-based security; policy-vs-mechanism separation; constitutional/guardrail vs configurable-policy layering in agent governance)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-286
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the closing Tom↔Claude exchange. The day's headline conceptual yield — a clean policy-layer (waivable) vs capability-layer (constitutional) distinction. Routed MED as a generalizable governance principle. Stated jointly, so [stated] not [inferred].
+    Current status: UNTESTED
+
+---
+
+## 2026-06-08 — 14a/14b EOD batch (attended OpenStory → Agent Explorer build day; 4 sessions)
+
+*Source: four attended Cowork sessions on 2026-06-08 integrating OpenStory observed telemetry into the C2A2 Agent Explorer (`agents_tab.html`, subtab 3c of the community explorer), read via the day's handoff notes `wiki/agents/openstory/HANDOFF_openstory_{c2a2,session2,session3,session4}.md` and the artifacts they describe (`extract_openstory_agent_data.py`, `inject_telemetry.py`, `sync_roster.py`, `agent_map.json`, `agent_telemetry.json`). Extracted 6 ASSUMPTIONs (287-292); 5 routed, 1 held (289 GROUNDED in-session).*
+
+ASSUMPTION-287:
+  Date identified: 2026-06-08
+  Statement: Observed telemetry (OpenStory's per-agent event stream — sessions, events, eval/apply, tool use, durations) should replace hand-authored narration as the basis of the Agent Explorer. As stated in HANDOFF-1: "Currently authored narration; OpenStory replaces it with observed telemetry."
+  Context: The founding design rationale for the whole OpenStory integration — the Agent Explorer (subtab 3c) was authored-narration; the day's work re-bases it on observed behavior, with graceful fallback to authored narration if data is absent.
+  Type: epistemic / methodological (observed behavior vs authored intent as the truth-basis of a self-representation)
+  Related decisions: DECISION-053
+  Related presumptions: PRESUMPTION-322 (the unstated half — that the event stream is a *faithful* proxy for what an agent is/does)
+  Testability: testable via literature (behavioral/observability telemetry as a proxy for system purpose and quality; intent vs trace)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-287
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted as the stated founding rationale of the integration (HANDOFF-1 item 4). Routed MED. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-288:
+  Date identified: 2026-06-08
+  Statement: The extraction pipeline should route through OpenStory's SQLite DB rather than read the raw transcripts directly, accepting a heavier dependency, because the eval/apply ratio and turns are signal worth preserving. As stated in HANDOFF-2: "Only thing a pure direct-transcript extractor would lose is eval/apply + turns; everything else … is computable either way — so we route through OpenStory to keep eval/apply."
+  Context: The "agreed architecture" decision (HANDOFF-2). A deliberate build-vs-buy / dependency tradeoff: a direct-transcript extractor would be simpler and dependency-free but would lose eval/apply + turns, which were judged valuable enough to justify routing through OpenStory.
+  Type: architectural / methodological (dependency tradeoff justified by the value of a specific derived metric)
+  Related decisions: DECISION-053
+  Related assumptions: ASSUMPTION-287
+  Related presumptions: PRESUMPTION-323 (eval/apply is treated as a known-directional quality signal without establishing what "good" is)
+  Testability: testable via literature (eval/apply or plan-vs-act ratios as agent quality/health signals; value of richer derived metrics vs dependency cost)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-288
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the HANDOFF-2 "agreed architecture" paragraph. Routed MED. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-289:
+  Date identified: 2026-06-08
+  Statement: The scheduled-task name embedded in OpenStory's `sessions.label` (the `name="…"` attribute of the `<scheduled-task>` header) is a stable, unique key that joins OpenStory sessions to C2A2 roster agents. As stated in HANDOFF-1: "Identity join SOLVED. OpenStory `sessions.label` = `<scheduled-task name="{taskId}">`; `taskId` == scheduler id == roster key."
+  Context: The identity-join foundation for every per-agent statistic in the Explorer. HANDOFF-3 hardened it against the 50-char label truncation via deterministic unique-prefix matching against `agent_map.json`; HANDOFF-4 found the `name=` value sits early enough in the label to survive truncation directly.
+  Type: architectural / methodological (join-key stability and uniqueness)
+  Related decisions: DECISION-053
+  Related presumptions: PRESUMPTION-325 (the roster presumes one-cron-task-per-agent; multi-fire and interactive sessions do not map cleanly)
+  Testability: framework commitment, but VERIFIED in-session — not a literature claim
+  Status: GROUNDED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-289
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted as the stated "identity join SOLVED" claim and GROUNDED in-session — all 7 thinker-pairs' eval/apply counts reconcile EXACTLY against independent SQL, session totals match (572), prefixes are unique (no ambiguous matches), and the only uncaptured roster agent (`execution-assistant`) genuinely has no runs. Held — GROUNDED, not routed (a verification-success, parallel to the handling of ASSUMPTION-285/277/282). [stated]
+    Current status: GROUNDED
+
+ASSUMPTION-290:
+  Date identified: 2026-06-08
+  Statement: The OpenStory capture gap (it watches `~/.claude/projects/` but agents run as Cowork sessions under `~/Library/Application Support/Claude/local-agent-mode-sessions/`) should be solved with an external symlink "session bridge," NOT by forking OpenStory, so that Tom can keep syncing upstream. As stated in HANDOFF-1: "use an external session bridge (NOT an OpenStory fork — Tom syncs upstream)."
+  Context: A build-vs-fork / adapter-pattern decision. The capture gap left 4 of 7 thinker pairs at zero; rather than patch `paths.rs` in a fork, the chosen fix is an external bridge that symlinks Cowork transcripts into OpenStory's expected `{project}/{session}.jsonl` shape (validated: 1,508 symlinks; capture climbed from 28→64 slugs).
+  Type: architectural / methodological (adapter-over-fork to preserve upstream mergeability)
+  Related decisions: DECISION-053
+  Related presumptions: PRESUMPTION-326 (the bridge + bounded-window ingest under-represents low-frequency agents)
+  Testability: testable via literature (vendoring/forking vs adapter/shim patterns; cost of staying on upstream; reversibility of integration choices)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-290
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the HANDOFF-1 fix-scoping ("NOT an OpenStory fork — Tom syncs upstream"). Routed LOW. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-291:
+  Date identified: 2026-06-08
+  Statement: Shared wiki-node references are a meaningful relational signal between agents — a valid edge model for the planned agent sociogram (connect agents whose sessions touch the same nodes in the 1647-node narration graph). As stated in HANDOFF-3 (decision 3) and HANDOFF-4 (decision 2): "Sociogram edges = shared wiki-node references."
+  Context: The chosen edge model for subtab 2 (deferred to a future session). HANDOFF-4 confirmed *feasibility* by probing the DB (4,205 agent-pairs share ≥1 wiki node; 953 share ≥3) — but feasibility (density) is distinct from the claim that co-reference indicates a *meaningful* inter-agent relationship.
+  Type: epistemic / methodological (co-reference as a proxy for meaningful relatedness)
+  Related decisions: DECISION-053
+  Related presumptions: PRESUMPTION-322 (telemetry-as-proxy), PRESUMPTION-327 (legibility/ranking as benign)
+  Testability: testable via literature (co-citation / co-reference network analysis; bibliographic coupling; whether shared-reference edges recover meaningful structure)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-291
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted as the stated edge model for the sociogram (HANDOFF-3/4). Feasibility confirmed in-session; meaningfulness untested. Routed MED. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-292:
+  Date identified: 2026-06-08
+  Statement: The existing 571/572-session OpenStory DB is representative enough to build and prove the extraction → injection pipeline now, without first running the riskier Phase-B full reseed. As stated in HANDOFF-3 (decision 1): "build on the current DB first … current 571-session DB already has every thinker-pair with real eval/apply, so the pipeline is provable without reseeding."
+  Context: A sequencing / caution-over-speed judgment (Tom's Rule: bias caution over speed). HANDOFF-2's reseed attempt had perturbed the running instance (the NATS max-payload outage); HANDOFF-3 chose to defer reseeding and build against the DB already on disk, deferring Phase-B seed (#8) to a later session.
+  Type: methodological (sufficiency of available data to validate a pipeline; sequencing under risk)
+  Related decisions: DECISION-053
+  Related presumptions: PRESUMPTION-326 (recent/available data is representative; low-frequency + pre-tool-field agents are under-captured)
+  Testability: testable empirically (compare pipeline outputs pre- vs post-reseed) / literature (build-on-available-data vs full-backfill-first)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-292
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the HANDOFF-3 sequencing decision. Routed LOW. [stated]
+    Current status: UNTESTED

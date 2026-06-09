@@ -3,9 +3,10 @@ day: 78
 title: Sorrow and Pain (Contemporary)
 pairs_with: "[[Day-078 - Sorrow and Pain]]"
 length_target_words: 1500
-length_actual_words: 1520
-length_ratio_to_target: 1.013
+length_actual_words: 1087
+length_ratio_to_target: 0.725
 length_tier: short
+length_note: "By-design concise (under short-tier target): Q.34-35 are treated compactly across both questions without padding; the commentary is substantive and complete (all sections present, evidence strength named), not truncated."
 mind_first_reframe: "Under hierarchical active inference, bodily pain is exteroceptive prediction error and sorrow is interoceptive/self-model prediction error; Q.35 a.7's priority of inward pain falls out of precision-weighted predictive hierarchy, and Q.34 a.3's 'perfect repose in the perfect good' becomes the alter's substrate-coherence with mind-at-large rather than union with a numerically distinct external God."
 central_theme_thread: "Inward pain exceeds outward because the agent's perspective-limitation is most morally consequential at the apex of its predictive hierarchy; the four species of sorrow (pity, envy, anxiety, torpor) are types of constrained alter-state, and Day 80's remedies are the social and somatic resources by which a narrowed model is re-opened to evidence from outside the present perspective."
 karpathy_wiki_sources:
@@ -17,8 +18,8 @@ karpathy_wiki_sources:
   - "traditions/stump/ — Wandering in Darkness on suffering"
 evidence_strength_summary: "Q.35 a.7 (inward pain exceeds outward) has strong empirical/mathematical support from hierarchical predictive coding — higher-level errors have larger downstream effects. Q.35 a.8 four species of sorrow maps closely onto modern affective taxonomies (compassion, envy, anxiety, anhedonic withdrawal) — empirically supported. Q.34 a.3 on enjoyment of God is the speculative/theological claim — reframed as substrate-recovery under Kastrup."
 tags: [synthesis, day/078, theme/sorrow, theme/inward-pain]
-last_qc_at: "2026-06-04T18:27:49"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-08T22:29:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 78 — Sorrow and Pain (Contemporary)

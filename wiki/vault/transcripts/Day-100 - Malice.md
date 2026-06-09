@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=ezXz6T8ZwJ0
 title: Malice
 summa_ref: Prima Secundae, Q.78-79
 duration_seconds: 780
-word_count: 2380
+word_count: 798
 raw_asr_word_count: 1968
-length_tier: medium
+length_tier: short
 segment_count: 305
 caption_kind: asr
 language: en

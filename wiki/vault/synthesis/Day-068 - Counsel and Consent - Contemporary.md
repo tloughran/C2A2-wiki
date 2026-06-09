@@ -2,9 +2,9 @@
 day: 68
 title: "Counsel and Consent (Contemporary)"
 pairs_with: "[[Day-068 - Counsel and Consent]]"
-length_target_words: 2200
-length_actual_words: 1530
-length_tier: medium
+length_target_words: 1500
+length_actual_words: 1420
+length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/friston/wiki.md (PRS on expected free energy; analytic-deliberative planning)"
   - "wiki/traditions/mcgilchrist/wiki.md (deliberation as bi-hemispheric)"
@@ -12,7 +12,7 @@ karpathy_wiki_sources:
   - "wiki/traditions/stump/wiki.md (deliberation extending to friend-and-instrument)"
   - "wiki/traditions/levin/wiki.md (multi-scale agency; bounded deliberation)"
 evidence_strength_summary: "Friston's expected-free-energy formalism is mature; multi-arm-bandit / model-based planning literature is empirically grounded; Aquinas's bounded-deliberation argument structurally preserves under bounded-rationality"
-length_ratio_to_target: 0.695
+length_ratio_to_target: 0.947
 length_note: "Q.14 (counsel, 6 articles) and Q.15 (consent, 4 articles) treated as the deliberation-and-approval register that precedes choice; the active-inference + multi-arm-bandit + bi-hemispheric-coordination + extended-cognition map preserves Aquinas's argument compactly without padding, so the prose runs under tier rather than diluting the substantive linkage."
 mind_first_reframe: "Counsel is the alter's analytic-backward-inference under expected-free-energy minimization (Friston, Q.14 a.5); consent is HTM-style multi-policy parallel approval before commitment (Hawkins, Q.15 a.1-3); both are bounded by perspective-limited resources (Levin, Q.14 a.6) and structurally extended through friend-and-instrument second-personal-knowing (Stump, Q.14 a.3)."
 central_theme_thread: "Salvation in fear and trembling under perspective-limitation includes the daily-task work of deliberating well under bounded resources; Q.14 a.3's friend-and-instrument extension functions as extended-cognition that lets the alter's deliberation reach further than its own bounded resources alone permit, and Q.15's consent-then-choice structure is the perspective-limited alter approving multiple viable mean-policies before commitment, never reducing options to one until the further volitional act."

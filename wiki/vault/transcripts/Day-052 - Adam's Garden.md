@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-052 - Adam's Garden - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-14T00:21:41"
+last_qc_at: "2026-06-07T08:20:28"
 last_qc_outcome: "pass"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/052, pars/I]

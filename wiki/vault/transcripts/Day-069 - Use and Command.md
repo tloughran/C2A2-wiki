@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=x_-9Slwv_3s
 title: Use and Command
 summa_ref: Prima Secundae, Q.16 + Q.17
 duration_seconds: 813
-word_count: 2070
+word_count: 830
 raw_asr_word_count: 2045
-length_tier: medium
+length_tier: short
 segment_count: 290
 caption_kind: asr
 language: en

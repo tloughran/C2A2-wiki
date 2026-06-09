@@ -65,10 +65,11 @@ Q.40-41 set the formal structure of the irascible passions and give us hope, des
 day: 81
 title: Hope (Contemporary)
 pairs_with: "[[Day-081 - Hope]]"
-length_target_words: 2200
-length_actual_words: 2200
-length_ratio_to_target: 1.000
-length_tier: medium
+length_target_words: 1500
+length_actual_words: 2159
+length_ratio_to_target: 1.439
+length_tier: short
+length_note: "Covers two questions (Q.40 hope/despair and Q.41 fear) at the entry to the irascible-passion economy and develops the full active-inference reframe of the passions as policy-precision dynamics; the over-length is substantive linkage, not padding."
 mind_first_reframe: "Aquinas's irascible passions (hope, despair, fear) are the affective signatures of policy-precision parameters in an active-inference generative model under perspective-limitation; the two-aspect structure of Q.40 a.4 (same object, contrary aspects of attainable/unattainable) maps onto same goal-state with contrary precision on the policy that leads to it."
 central_theme_thread: "Q.40-41 are the entry to the passions that engage *difficulty* — the affective machinery of a limited agent computing toward an arduous goal under uncertainty about whether it is reachable; calibrated hope is the 'fear and trembling' of Phil 2:12 (Wright) — disciplined precision on the policy toward loving unity, neither the naive over-precision of Q.40 a.6's drunkards nor the contrary-precision of despair."
 karpathy_wiki_sources:
@@ -81,5 +82,5 @@ karpathy_wiki_sources:
   - "traditions/stump/ — PRS-04 final causality; PRS-09 faith-as-knowledge-of-persons; *Wandering in Darkness*"
 evidence_strength_summary: "Active-inference and broaden-and-build are empirically robust; intolerance-of-uncertainty as the diagnostic core of clinical anxiety is empirically supported; hemispheric account is clinically grounded; the conscious-realist-monist reframe of appetite as policy-machinery is metaphysically speculative; Wright's inaugurated eschatology and Rohr's contemplative integration are theologically attested."
 tags: [synthesis, day/081, theme/hope, theme/despair, theme/irascible-passions, theme/policy-precision]
-last_qc_at: "2026-06-04T18:28:06"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-08T22:29:06"
+last_qc_outcome: "rewrote"

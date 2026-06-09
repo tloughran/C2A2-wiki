@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=3tnozqdDhpM
 title: The Virtuous Mean
 summa_ref: Prima Secundae (I-II), Q.64-65
 duration_seconds: 795
-word_count: 1880
+word_count: 1278
 raw_asr_word_count: 2130
 length_tier: short
 segment_count: 158

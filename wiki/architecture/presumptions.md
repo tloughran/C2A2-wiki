@@ -6326,3 +6326,239 @@ PRESUMPTION-316:
     Transform at each step:
       14b: Surfaced as the failure-mode silence beneath a uniformly positive complementarity narrative; the inverse-facing twin of PRESUMPTION-308. Medium confidence; pairs ASSUMPTION-279.
     Current status: UNTESTED
+
+---
+
+PRESUMPTION-317:
+  Date surfaced: 2026-06-07
+  Statement: [inferred] The original weekly-task design presumed that the scheduled-task execution environment is the same, capability-uniform "agent" as the attended Cowork environment — i.e., that "the agent can do X here" implies "the agent can do X on a schedule." The push/worktree design only makes sense if scheduled tasks inherit Tom's Mac (credentials, normal `$HOME`, writable `.git`). The whole category of "two distinct execution contexts with different capabilities" was never modeled until the trial run forced it into view.
+  Evidence it was operative: the task was built to push via a git worktree and to read `$HOME/Documents/...` paths; both presuppose an attended-Mac environment. The failure ("they run in this same sandbox that can't push, can't resolve `$HOME`, and can't touch `.git` locks") is the negation of an unstated uniformity premise.
+  Why it was unstated: too foundational to notice — "the agent" is experienced as one actor, so the possibility that its scheduled self runs in a strictly weaker sandbox was invisible until empirically hit.
+  Type: structural
+  Related decisions: DECISION-052
+  Related assumptions: ASSUMPTION-285 (the corrected, grounded capability model), ASSUMPTION-286 (the policy/capability layering this blind spot made visible)
+  Related presumptions: PRESUMPTION-318 (build-before-probe), PRESUMPTION-320 (blind command blocks)
+  Testability: testable via literature (multi-environment / heterogeneous-runtime agent deployment; the gap between interactive and batch/scheduled execution contexts; capability discovery before action)
+  Risk if wrong: High — every present or future scheduled task that silently assumes attended-context capabilities (push, credentialed APIs, `$HOME`, lock mutation) will fail or, worse, half-complete and leave cruft, exactly as happened here. This is a class bug, not a one-off.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-317
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as the unstated uniformity premise beneath the mistaken push design; the negative space that ASSUMPTION-285 fills once stated. The day's strongest fail-loud item (High); pairs ASSUMPTION-285. Routed HIGH.
+    Current status: UNTESTED
+
+PRESUMPTION-318:
+  Date surfaced: 2026-06-07
+  Statement: [inferred] Building the auto-push scheduled task *before* checking whether the sandbox could actually push presumed the needed capabilities rather than probing for them first. Tom's own Rule 1 ("Think before coding — state assumptions; if uncertain, ask rather than guess") and Rule 8 ("Read before you write — read … shared utilities … if unsure why code is structured a way, ask") were not applied to the execution environment itself.
+  Evidence it was operative: the task was created and a memory note written ("the connectome is now auto-maintained") before the trial run revealed the push was impossible; the scheduled agent had to discover the constraint by running into it ("memory suggests it can't … let me check whether the sandbox can actually push"). The two subsequent half-failed command blocks are downstream of the same build-then-discover ordering.
+  Why it was unstated: methodological habit — environment capabilities are assumed stable and known, so "can this run here?" is not posed as a precondition the way code correctness is.
+  Type: methodological
+  Related decisions: DECISION-052
+  Related assumptions: ASSUMPTION-283 (the scheduling remedy), ASSUMPTION-285 (the capability model arrived at only after the failure)
+  Related presumptions: PRESUMPTION-317 (the uniformity premise this build-order presumed)
+  Testability: testable via literature (capability/precondition checking before automation; "test in the target environment" practice; pre-mortem / dry-run discipline)
+  Risk if wrong: Medium — recurring build-before-probe ordering produces avoidable rework and, when the failing step mutates shared state (here `.git` locks), real collateral cost. Self-referential: C2A2's own build violated its constitution's caution-over-speed bias.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-318
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as the unexamined ordering (build then discover) beneath the day's rework; a self-referential instance where the system's own conduct contradicted Tom's Rules 1/8. Medium; pairs ASSUMPTION-283/285. Routed MED.
+    Current status: UNTESTED
+
+PRESUMPTION-319:
+  Date surfaced: 2026-06-07
+  Statement: [inferred] The "approved data auto-publishes, code is gated" guard (ASSUMPTION-284) presumes that PRS-data regeneration is deterministic and epistemically safe enough to push to the live viz with no human eyes — that a count change like 231 → 269 carries no interpretive risk worth reviewing. New triplets entering the published connectome unreviewed is itself a publish-without-review path, but it is treated as categorically different from a code change rather than as a (smaller) instance of the same risk.
+  Evidence it was operative: the guard draws the review boundary exclusively at generator/template changes; the data delta is waved through ("approved-PRS data auto-publishes"). The word "approved" does the load-bearing work, but what makes a freshly-extracted triplet "approved" enough to skip visual review is never specified.
+  Why it was unstated: the data/code line feels self-evidently safe — data is "just the numbers" — so the assumption that data changes never need visual review goes unexamined.
+  Type: normative / epistemic
+  Related decisions: DECISION-052
+  Related assumptions: ASSUMPTION-284 (the data/code split whose data half this examines)
+  Related presumptions: PRESUMPTION-317 (the environment that ultimately made even the data auto-push impossible, deferring the question rather than resolving it)
+  Testability: testable via literature (risk classification of data vs code changes in automated publishing; when derived-data updates warrant human review; silent data-quality regressions)
+  Risk if wrong: Medium — if a bad or mis-extracted triplet can reach the public connectome unreviewed, the "approved data is safe" line lets a data-quality regression publish silently; the manual-push fallback currently masks this, but the design intent still treats data as review-exempt.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-319
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as the unexamined safety premise inside ASSUMPTION-284's data half. Medium; pairs ASSUMPTION-284. Routed MED.
+    Current status: UNTESTED
+
+PRESUMPTION-320:
+  Date surfaced: 2026-06-07
+  Statement: [inferred] Repeatedly handing Tom multi-command shell blocks to paste-run presumed those blocks would execute atomically and as-modeled on his machine — i.e., that the agent's model of the user's repo state (branch, staged files, worktree registrations, lock files) is accurate enough to script blind, multi-step, state-mutating sequences. Two of the three blocks half-failed precisely because the real state diverged from the model (a locked stale worktree still holding `main`; `generate_community_explorer.py` already staged).
+  Evidence it was operative: block #1 aborted mid-sequence (`'main' is already used by worktree …`; then committed on the wrong branch, bundling a stray staged file); only block #3, rewritten to use a throwaway detached worktree built straight from `origin/main` (assuming nothing about local state), succeeded. The progression from state-dependent to state-independent blocks is the tell that the earlier ones over-trusted the state model.
+  Why it was unstated: convenience framing — a pasteable block reads as a single safe action, so the compound risk of several state-dependent steps running non-atomically on a possibly-divergent repo is not surfaced to the user.
+  Type: methodological
+  Related decisions: DECISION-052
+  Related assumptions: ASSUMPTION-285 (sandbox can't run the git itself, forcing the hand-off-to-Tom pattern that produced the blocks)
+  Related presumptions: PRESUMPTION-317, PRESUMPTION-318
+  Testability: testable via literature (risk of blind/compound remote command execution; idempotent vs state-dependent operations; human-in-the-loop ops where the operator can't see intermediate state; "make each step safe to fail")
+  Risk if wrong: Medium-High — a state-divergent multi-command block can cause real damage on the user's machine (here: an accidental commit on the wrong branch plus stale `.git` locks that briefly jammed Tom's git); the cost lands on the user, not the sandbox.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-320
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from the two half-failed command blocks and the convergence on a state-independent (detached-worktree) recipe. Medium-High; pairs ASSUMPTION-285. Routed MED.
+    Current status: UNTESTED
+
+PRESUMPTION-321:
+  Date surfaced: 2026-06-07
+  Statement: [inferred] The system presumes "automation day" and "attended session" are mutually exclusive day-types. Today had a genuine attended PRS-connectome session (real user turns; `prs_3d.html` regenerated and 269 pushed to main with Tom in the loop), yet the evening Cowork→Chat sync and `2026-06-07_cowork_summary.md` both labeled today "an unattended / automation day — no attended Cowork build session is on record." The taxonomy presumes a clean partition that today's own evidence contradicts — the sync's situational awareness mis-saw the day.
+  Evidence it was operative: `2026-06-07_cowork_summary.md`: "Today was an unattended / automation day — no attended Cowork build session is on record"; the evening sync transcript: "Today was an automation-only day — no attended build session." Both were written while an attended PRS session sat in the same day's session list. The likely cause: "attended build session" was implicitly scoped to Community-Explorer build work, so a different attended workflow (the connectome publish) fell outside the category and was counted as absence.
+  Why it was unstated: a category presumption — the day-type labels (attended-build vs automation) are treated as exhaustive and mutually exclusive, so a session that fits neither cleanly is recorded as "none" rather than prompting a category revision.
+  Type: structural / normative
+  Related decisions: DECISION-052
+  Related assumptions: ASSUMPTION-283 (the attended connectome work the sync failed to register)
+  Related presumptions: PRESUMPTION-317 (both are mis-models of what actually executed where)
+  Testability: testable via literature (taxonomy completeness / residual categories; classification under partial-information; how mislabeled activity logs distort downstream metrics)
+  Risk if wrong: Low-Medium — if attended work is routinely filed as "automation day," the metrics/changelog under-count attended activity and the self-awareness layer loses fidelity about when humans were actually in the loop; today this EOD pass corrects the record, but the mislabel would otherwise stand.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-321
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced by cross-checking the day's session list against the sync's own "no attended session" claim — a self-referential finding (the system's situational awareness contradicted by its own transcript record). Low-Medium; routed LOW. Corrected in this pass's changelog/metrics narrative.
+    Current status: UNTESTED
+
+---
+
+## 2026-06-08 — 14b EOD batch (attended OpenStory → Agent Explorer build day; 4 sessions)
+
+*Surfaced from the same four 2026-06-08 attended sessions read by 14a (handoff notes `HANDOFF_openstory_{c2a2,session2,session3,session4}.md` + described artifacts). 6 PRESUMPTIONs (322-327). Dedup check against today's 14a items (287-292): non-overlapping — 287-292 are the stated design rationales; 322-327 are the unexamined premises beneath them. Pairings noted per item.*
+
+PRESUMPTION-322:
+  Date surfaced: 2026-06-08
+  Statement: [inferred] The build presumes the OpenStory event stream is a *faithful* proxy for what an agent is and does — that counts, durations, eval/apply, and tool-use adequately capture an agent's substance. The Explorer re-bases each agent's self-representation from its constitutional markdown (authored intent) onto its observed telemetry (ASSUMPTION-287), but never asks what the trace *misses*: an agent can emit many events and little value, or few events and decisive judgment. The qualitative content of a tradition-agent's contribution is presumed to survive reduction to a behavioral fingerprint.
+  Evidence it was operative: every per-agent statistic in `agent_telemetry.json` (sessions, events, eval/apply, tool_coverage, durations) is treated as the agent's profile; the detail panel renders telemetry as the agent's reality; nowhere in the four sessions is the adequacy of telemetry-as-proxy questioned — only its accuracy (reconciliation against SQL) and completeness (capture gap) are.
+  Why it was unstated: too foundational to notice — observability culture treats "what was logged" as "what happened"; the move from authored intent to observed behavior was framed as a strict upgrade ("replaces it with observed telemetry"), so the proxy gap was invisible.
+  Type: structural / epistemic
+  Related decisions: DECISION-053
+  Related assumptions: ASSUMPTION-287, ASSUMPTION-288
+  Testability: testable via literature (observability/telemetry as proxy for purpose; trace-vs-intent gap; what behavioral metrics systematically omit about agent quality)
+  Risk if wrong: Medium-High — if telemetry is a lossy proxy, the Explorer (and any downstream judgment built on it) will mistake activity for substance, privileging legible/busy agents over quiet/decisive ones, and degrade exactly the self-knowledge the self-awareness layer exists to provide.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-322
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced by contrasting the stated "observed telemetry replaces authored narration" upgrade with the unasked question of what the trace omits. High-confidence inference (the whole pipeline depends on it; never examined). Routed MED-HIGH.
+    Current status: UNTESTED
+
+PRESUMPTION-323:
+  Date surfaced: 2026-06-08
+  Statement: [inferred] The eval/apply ratio is treated as a meaningful, known-directional quality/health signal for an agent — it is the one metric the architecture was bent to preserve (ASSUMPTION-288, the whole reason for routing through the OpenStory DB) and it is surfaced as a sortable column in the Explorer — yet nowhere is it established what a "good" eval/apply ratio *is*, or whether higher or lower is better. A number is preserved, computed, ranked, and displayed as if its interpretation were settled.
+  Evidence it was operative: HANDOFF-2/3 justify the heavier DB dependency solely to keep eval/apply ("Only thing a pure direct-transcript extractor would lose is eval/apply + turns"); the Explorer table (HANDOFF-4) exposes "Eval+Apply" and "E/A ratio" as sort keys; `agent_telemetry.json` computes a ratio per agent — but no session defines the metric's directionality or a baseline.
+  Why it was unstated: culturally embedded — eval/apply is an OpenStory-native metric inherited as already-meaningful; surfacing a number presumes the number means something, and that presumption rides in with the metric.
+  Type: epistemic / normative
+  Related decisions: DECISION-053
+  Related assumptions: ASSUMPTION-288
+  Related presumptions: PRESUMPTION-327 (ranking agents by metrics presumes the metrics are normatively legible)
+  Testability: testable via literature (plan/act or eval/apply ratios as agent quality signals; whether such ratios have established directionality; Goodhart risk when a process metric becomes a display metric)
+  Risk if wrong: Medium — if eval/apply has no established "good" direction, ranking agents by it (or optimizing toward it) is noise dressed as signal, and could misdirect attention to agents that merely score well on an uninterpreted ratio.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-323
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from the gap between how much weight eval/apply carries (it justified the architecture) and the total absence of a definition of what value of it is good. Medium. Routed MED.
+    Current status: UNTESTED
+
+PRESUMPTION-324:
+  Date surfaced: 2026-06-08
+  Statement: [inferred] The work presumes that static validation — `node --check` (JS syntax) plus `validate_html.py` (double-brace / brace-balance / data integrity) — is a sufficient proxy for "the visualization works," for an artifact whose entire purpose is a rendered, animated, interactive canvas. Across two consecutive sessions the visual canvas render was explicitly NOT verified ("the animated canvas was not opened in a browser"; HANDOFF-4: the file:// automation failed and "no screenshot was captured"), yet each session reports "validation green" as its completion signal.
+  Evidence it was operative: HANDOFF-3 "NOT verified: Visual canvas render"; HANDOFF-4 "NOT verified: Visual render in a browser"; both close on "All validation green" / "validation green" as the success criterion; the next-step note pleads "and actually open it in a browser this time."
+  Why it was unstated: a methodological default — the C2A2 house rules *codify* `node --check` + `validate_html.py` as the validation gate, so passing them reads as "verified," and the absence of a render check is felt as a minor caveat rather than a gap in the success criterion. (Rule 9: a test that can't fail when the rendered output breaks is not testing the thing that matters.)
+  Type: methodological
+  Related decisions: DECISION-053
+  Related presumptions: PRESUMPTION-320 (06-07; blind/unverified steps presume an accurate-enough model of the unseen result) — distinct: 320 is about the user's repo state, 324 is about the rendered artifact
+  Testability: testable via literature (limits of static analysis vs runtime/visual verification; the "it compiles ≠ it works" gap; snapshot/visual-regression testing for UIs)
+  Risk if wrong: Medium — a syntactically valid, structurally balanced file can still render blank, mislay the new subtab bar, or break the animation; shipping "green" without a render check means a visual regression would pass undetected until Tom opens it.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-324
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from the repeated "NOT verified (visual)" caveat sitting next to a "validation green" completion claim across two sessions — a success-criteria gap. Medium; the day's strongest fail-loud. Routed MED.
+    Current status: UNTESTED
+
+PRESUMPTION-325:
+  Date surfaced: 2026-06-08
+  Statement: [inferred] The roster/identity model presumes a clean one-cron-task-per-agent world — that the agent population is an enumerable set of singleton scheduled tasks each mapping to one roster entry. The system's own session data contradicts this: multi-fire agents (`summa-qc-sweep` every */4h, `summa-commentary-reviewer` on an hour-list) "can't be fully shown by the single-hour animation model," and a large body of interactive/manual sessions (`1pm-*`, `korbyt-apr*`, `cleanup-*`) map to no roster agent at all. The single-hour schedule animation and the taskId-keyed roster both encode the singleton presumption.
+  Evidence it was operative: HANDOFF-3 — multi-fire agents "tagged `multiDaily:true`" with only "a representative time" because the animation model assumes one fire-time; "Unmatched labels are all interactive/manual sessions … not roster agents"; the roster is fixed at 34/35 taskId keys.
+  Why it was unstated: obvious-to-participants framing — "an agent" was implicitly equated with "a scheduled task," so the parts of the swarm that don't fit (multi-fire, interactive, ad-hoc) registered as edge cases to tag rather than as evidence that the unit-of-analysis is wrong.
+  Type: structural
+  Related decisions: DECISION-053
+  Related assumptions: ASSUMPTION-289 (the taskId join, GROUNDED for singletons but strained by multi-fire/interactive sessions)
+  Testability: testable via literature/empirical (entity resolution when the unit is fuzzy; cardinality assumptions in roster/registry design; how much activity falls outside a singleton taxonomy)
+  Risk if wrong: Medium — multi-fire and interactive work is under-counted or mis-rendered (a representative single time stands in for a cadence), so the Explorer's picture of "who did what when" is systematically incomplete for exactly the highest-volume and the human-in-the-loop sessions.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-325
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from the "multiDaily" tag and the unmapped-interactive-sessions note — both are workarounds that reveal the singleton presumption rather than resolving it. Medium. Routed MED.
+    Current status: UNTESTED
+
+PRESUMPTION-326:
+  Date surfaced: 2026-06-08
+  Statement: [inferred] The ingest design presumes recent / available activity is representative of an agent — the bounded 72h restart window (chosen to keep restart cost constant) plus the decision to build on the existing DB rather than reseed (ASSUMPTION-292) plus the sparse pre-tool-field history (`tool_coverage≈0` for older sessions) together mean the Explorer structurally over-renders high-frequency, recently-active agents and under-renders low-frequency ones. The slow tradition-agents the project most cares about are precisely the ones whose tool maps stay "sparse until fresh runs land."
+  Evidence it was operative: HANDOFF-2 "bounded 72h window … restarts are constant-cost"; HANDOFF-3 caveat "`tool_coverage` … older (pre-tool-field) sessions read 0, so thinker-agent tool maps are sparse until fresh runs land"; ASSUMPTION-292's "build on the current DB" defers the full backfill that would fill the tail.
+  Why it was unstated: an engineering optimization (constant-cost restarts; don't perturb serve) whose representational side effect — a recency/availability bias in what the Explorer shows — was never weighed against the optimization.
+  Type: scaling
+  Related decisions: DECISION-053
+  Related assumptions: ASSUMPTION-290, ASSUMPTION-292
+  Related open questions: OPEN-078
+  Testability: testable empirically (capture completeness vs agent run-frequency) / literature (recency and survivorship bias in windowed log analytics; sampling bias in observability)
+  Risk if wrong: Medium-High — a tool meant to reveal the whole swarm would instead foreground busy/recent agents and dim the quiet, slow, or weekly ones, inverting the project's actual priorities (tradition depth over operational throughput) and giving a misleading account of which agents are "active."
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-326
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced by composing three separately-stated engineering choices (72h window, build-on-current-DB, sparse old data) into their joint representational consequence — none of the three sessions names the recency bias they jointly create. Medium-High. Routed MED-HIGH. Feeds OPEN-078.
+    Current status: UNTESTED
+
+PRESUMPTION-327:
+  Date surfaced: 2026-06-08
+  Statement: [inferred] Building an Agent Explorer that surfaces per-agent volume, errors, eval/apply, and recency in a sortable/filterable table — and ranks agents against each other — presumes that making the agent swarm legible and comparable is itself benign or good. The normative question (does quantifying and ranking one's own agents distort what the system values — e.g., privileging productive-looking agents, or letting tradition-agents be implicitly performance-managed by their metrics) is never raised; "this should be visible and measurable" is treated as self-evidently neutral.
+  Evidence it was operative: HANDOFF-4 subtab 3 is an explicit ranking surface ("click any column header to sort" on Sessions, Events, Eval+Apply, E/A ratio, Errors); the whole integration's justification is legibility (authored narration → observed telemetry); no session weighs a cost to measuring/ranking agents.
+  Why it was unstated: normative smuggling — the value judgment ("more visibility is better") is embedded inside a technical deliverable (a dashboard), so it never surfaces as a question; observability is culturally coded as virtuous.
+  Type: normative
+  Related decisions: DECISION-053
+  Related assumptions: ASSUMPTION-287, ASSUMPTION-291
+  Related presumptions: PRESUMPTION-323 (ranking by an uninterpreted metric)
+  Testability: testable via literature (metric fixation / Goodhart's law; surveillance and measurement effects on the measured; normativity of observability and dashboards; performance-management side effects)
+  Risk if wrong: Low-Medium — if measurement is not neutral, the Explorer could subtly retrain the project's attention toward metrically-legible agents and away from the slow, qualitative tradition work that resists measurement, a values drift introduced by a tool meant only to observe.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-327
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from the ranking/sorting affordance and the unexamined "legibility = good" framing of the whole integration. Lower-confidence (more interpretive) than 322/324/326 but a clean normative-smuggling case. Low-Medium. Routed LOW-MED.
+    Current status: UNTESTED

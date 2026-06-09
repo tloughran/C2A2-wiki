@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=fWsuSInij0s
 title: Delightful Sorrow
 summa_ref: "Prima Secundae, Q.32-33"
 duration_seconds: 875
-word_count: 2240
+word_count: 1392
 raw_asr_word_count: 2500
-length_tier: medium
+length_tier: short
 segment_count: 222
 caption_kind: asr
 language: en

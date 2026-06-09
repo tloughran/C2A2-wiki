@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=Ak_pfL9QxDA
 title: Worship
 summa_ref: "Prima Secundae, Q.102-103"
 duration_seconds: 1025
-word_count: 3300
+word_count: 961
 raw_asr_word_count: 2701
-length_tier: medium
+length_tier: short
 fidelity_checked: true
 segment_count: 250
 caption_kind: asr

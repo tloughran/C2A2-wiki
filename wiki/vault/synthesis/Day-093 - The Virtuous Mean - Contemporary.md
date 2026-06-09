@@ -4,8 +4,8 @@ title: The Virtuous Mean (Contemporary)
 pairs_with: "[[Day-093 - The Virtuous Mean]]"
 length_tier: short
 length_target_words: 1500
-length_actual_words: 1490
-length_ratio_to_target: 0.993
+length_actual_words: 1261
+length_ratio_to_target: 0.841
 karpathy_wiki_sources:
   - "stump/wiki.md, stump/prs_triplets.md — PRS-04 (virtue-as-habituation)"
   - "fredrickson/wiki.md, fredrickson/prs_triplets.md — PRS-02 (positivity resonance, broaden-and-build)"

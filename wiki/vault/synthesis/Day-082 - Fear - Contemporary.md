@@ -70,8 +70,8 @@ day: 82
 title: Fear (Contemporary)
 pairs_with: "[[Day-082 - Fear]]"
 length_target_words: 1500
-length_actual_words: 1850
-length_ratio_to_target: 1.23
+length_actual_words: 2089
+length_ratio_to_target: 1.393
 length_tier: short
 length_note: "Covers two dense Summa questions (Q.42 four-precision-conditions of fear + Q.43 two causes); the article-by-article structural match between Aquinas's four precision conditions and contemporary predictive-processing parameters is load-bearing linkage that warranted the extra ~350 words."
 mind_first_reframe: "Fear's four precision conditions on its object (imagined, future, non-resistible, irremediable) and two causes (love and defect) map cleanly onto active-inference parameters; Q.42 a.6's irremediable evil reframed under conscious-realist monism as the agent's self-closure against loving unity rather than a metaphysical place; Augustine's fear-reveals-love is the central-theme diagnostic in its most clinically useful form."

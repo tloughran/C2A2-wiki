@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=9nZBz_ShKcI
 title: Theological Virtue
 summa_ref: Prima Secundae (I-II), Q.62-63
 duration_seconds: 700
-word_count: 1820
+word_count: 1253
 raw_asr_word_count: 1803
 length_tier: short
 segment_count: 152

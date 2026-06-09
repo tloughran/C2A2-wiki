@@ -69,8 +69,8 @@ day: 83
 title: Daring (Contemporary)
 pairs_with: "[[Day-083 - Daring]]"
 length_target_words: 1500
-length_actual_words: 1700
-length_ratio_to_target: 1.13
+length_actual_words: 2040
+length_ratio_to_target: 1.36
 length_tier: short
 length_note: "Covers two Summa questions (Q.44 effects of fear + Q.45 daring) and includes the antecedent/consequent passions distinction at Q.45 a.4 — a keystone for the rest of the Prima Secundae and the cleanest medieval anticipation of the dual-process / fast-slow structure of contemporary cognitive science. The Phil 2:12 citation at Q.44 a.4 is the central-theme keystone."
 mind_first_reframe: "Q.44 a.4 makes Phil 2:12 the keystone — moderate fear aids action — and the contemporary frame articulates this as *calibrated precision* on aversive prediction; Q.45 a.4's antecedent/consequent distinction is the medieval anticipation of the modern dual-process / fast-slow structure of affective cognition."

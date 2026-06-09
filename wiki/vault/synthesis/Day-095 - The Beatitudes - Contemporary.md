@@ -2,10 +2,11 @@
 day: 95
 title: The Beatitudes (Contemporary)
 pairs_with: "[[Day-095 - The Beatitudes]]"
-length_tier: medium
-length_target_words: 2200
-length_actual_words: 2210
-length_ratio_to_target: 1.00
+length_tier: short
+length_target_words: 1500
+length_actual_words: 2293
+length_ratio_to_target: 1.529
+length_note: "Covers two dense questions (Q.68 the seven gifts of the Holy Spirit and Q.69 the eight Beatitudes) and develops the receptivity-as-perfection convergence (FLAG-14) where the central theme surfaces most directly; the over-length is substantive Aquinas-to-contemporary linkage, not padding."
 karpathy_wiki_sources:
   - "wright (Jesus and the Victory of God; Paul and the Faithfulness of God; Sermon-on-Mount as covenant-renewal manifesto)"
   - "rohr (Falling Upward; Universal Christ; Beatitudes as non-dual contemplative roadmap)"
@@ -20,8 +21,8 @@ karpathy_wiki_sources:
 mind_first_reframe: "The gifts of the Holy Spirit are scaffolded dispositions in the agent's hierarchical inference architecture by which the highest level (the agent's relation to the conscious whole) supplies real-time top-down precision-weighting for lower-level virtue-driven action; the Beatitudes are the publicly observable acts of an agent operating under that direction."
 central_theme_thread: "Q.68.2 is Aquinas's confession that perspective-limited reasoning is insufficient even when perfected by the theological virtues — the gifts are the receptivity by which the limited agent accepts scaffolded direction toward loving unity it cannot generate from inside its own optimization loop; the Beatitudes are the empirical signatures of an agent that has accepted both the perspective-limit and the scaffolded direction."
 evidence_strength_summary: "Wright's Sermon-on-the-Mount reading: historiographic, strong-but-disputed standing in NT studies. Rohr's contemplative reading of the Beatitudes: contemplative-theological, consistent with patristic and Eastern-Christian tradition. Friston's hierarchical active inference + top-down precision-weighting: empirically robust at modeling level; the 'passive inference under top-down gain' framing is a defensible extension. Fredrickson on mourning/recovery: replicated empirically. Levin/McGilchrist/Hawkins on multi-scale receptivity and right-hemisphere openness: empirically firm. The integration into a single account of gifts-of-Spirit + Beatitudes is speculative-synthetic."
-last_qc_at: "2026-06-05T08:19:53"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-08T22:29:06"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/095, theme/gifts-of-spirit, theme/beatitudes, theme/passive-inference, theme/scaffolded-receptivity, theme/sermon-on-mount]
 ---
 

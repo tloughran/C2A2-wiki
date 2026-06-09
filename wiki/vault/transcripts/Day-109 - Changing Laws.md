@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=swXcXUCZc8A
 title: Changing Laws
 summa_ref: "Prima Secundae, Q.96-97"
 duration_seconds: 990
-word_count: 3150
+word_count: 1179
 raw_asr_word_count: 2674
-length_tier: medium
+length_tier: short
 fidelity_checked: true
 segment_count: 235
 caption_kind: asr

@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=Ur9eYeAYDGg
 title: Daring
 summa_ref: "Prima Secundae, Q.44-45"
 duration_seconds: 505
-word_count: 1403
+word_count: 741
 raw_asr_word_count: 1397
 length_tier: short
 segment_count: 203

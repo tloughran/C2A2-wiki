@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=FyVf4aqJuOc
 title: Grave Sin
 summa_ref: Prima Secundae, Q.72-73
 duration_seconds: 1052
-word_count: 3210
+word_count: 1095
 raw_asr_word_count: 2755
-length_tier: medium
+length_tier: short
 segment_count: 425
 caption_kind: asr
 language: en

@@ -66,10 +66,11 @@ Q.46-47 give us anger's cognitive-moral structure and its provocative cause. Tom
 day: 84
 title: Prideful Anger (Contemporary)
 pairs_with: "[[Day-084 - Prideful Anger]]"
-length_target_words: 2200
-length_actual_words: 2200
-length_ratio_to_target: 1.000
-length_tier: medium
+length_target_words: 1500
+length_actual_words: 2122
+length_ratio_to_target: 1.415
+length_tier: short
+length_note: "Covers two questions (Q.46 anger and Q.47 its cause) and develops the unusually strong empirical convergence between Q.47 a.3 and the threatened-egotism/narcissism-aggression literature; the over-length is substantive linkage, not padding."
 mind_first_reframe: "Anger is the affective signature of a justice-detection computation firing on the prediction error between expected respect (a function of the agent's social-self-model) and received respect (perceived slight); Q.47 a.3's 'excellence amplifies anger' is the medieval anticipation of threatened-egotism aggression — Aquinas's direction-of-effect is empirically validated by the modern narcissism-aggression literature."
 central_theme_thread: "The proud agent is the limited agent whose self-model is most brittle and most readily registers slight; the humble agent — central-theme agent working out salvation in fear and trembling — has widened the self-model toward participation-in-the-pattern, collapsing the anger-amplification mechanism; Aquinas himself supplies the pastoral version of the central theme at Q.47 a.2 (the humble burden is light because all-of-us-born-of-Adam reframe radically lowers the self-estimate's expected-excellence prediction)."
 karpathy_wiki_sources:
@@ -82,5 +83,5 @@ karpathy_wiki_sources:
   - "traditions/rohr/ — *Falling Upward*; *Everything Belongs*; contemplative humility"
 evidence_strength_summary: "Threatened-egotism / narcissism-aggression literature (Bushman, Baumeister, Twenge) gives unusually strong direct empirical validation of Q.47 a.3. Active-inference account of social-self-model precision is formal and empirically supported. Hemispheric account is clinically supported. Conscious-realist-monist reading of self-model brittleness as alter-level dissociative-boundary structure is speculative. Wright on Pauline wrath theology and Rohr on contemplative humility are theologically well-attested."
 tags: [synthesis, day/084, theme/anger, theme/pride, theme/slight, theme/narcissistic-rage, theme/justice-aspect]
-last_qc_at: "2026-06-05T04:20:47"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-08T22:29:07"
+last_qc_outcome: "rewrote"

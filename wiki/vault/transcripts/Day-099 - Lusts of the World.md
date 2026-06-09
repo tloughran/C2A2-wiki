@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=vzPDphBc0_Y
 title: Lusts of the World
 summa_ref: Prima Secundae, Q.76-77
 duration_seconds: 991
-word_count: 3050
+word_count: 911
 raw_asr_word_count: 2685
-length_tier: medium
+length_tier: short
 segment_count: 410
 caption_kind: asr
 language: en

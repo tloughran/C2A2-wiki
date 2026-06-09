@@ -2,10 +2,10 @@
 day: 77
 title: Delightful Sorrow (Contemporary)
 pairs_with: "[[Day-077 - Delightful Sorrow]]"
-length_target_words: 2200
-length_actual_words: 2180
-length_ratio_to_target: 0.991
-length_tier: medium
+length_target_words: 1500
+length_actual_words: 1450
+length_ratio_to_target: 0.967
+length_tier: short
 mind_first_reframe: "Under predictive-processing accounts (Friston), valence is prediction-error gain over a generative model that always contains counterfactuals, so sorrow and delight co-arise within a single inference; under Kastrup's idealism, grief is alter-loosening that admits more of mind-at-large — the same loosening admits both the loss and the wider field of which the loss is part."
 central_theme_thread: "Q.32 a.4's delightful sorrow is the affective signature of an agent whose generative model holds both the present privation and the larger good in which it is contained; the path from the loss-only agent to the loss-plus-larger-good agent is the perspective-widening — through contemplation, friendship, positivity resonance — that the project tracks as the computational work of loving unity."
 karpathy_wiki_sources:

@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=1TtZOjIlpIc
 title: Intention and Choice
 summa_ref: Prima Secundae, Q.12 + Q.13
 duration_seconds: 1025
-word_count: 2600
+word_count: 1106
 raw_asr_word_count: 2624
-length_tier: medium
+length_tier: short
 segment_count: 380
 caption_kind: asr
 language: en

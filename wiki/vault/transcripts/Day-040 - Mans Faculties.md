@@ -15,8 +15,8 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-040 - Mans Faculties - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-12T16:30:45"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-07T04:24:28"
+last_qc_outcome: "pass"
 render_pass: auto-catchup-2026-05-04 → qc-structural-2026-05-12
 tags: [summa, day/040, pars/I, q/77, q/78, theme/faculties, theme/interior-senses, theme/cognitive-architecture]
 ---

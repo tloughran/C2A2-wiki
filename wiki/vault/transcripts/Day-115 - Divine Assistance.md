@@ -5,9 +5,9 @@ url: https://www.youtube.com/watch?v=d91q8U1aE-Q
 title: Divine Assistance
 summa_ref: "Prima Secundae, Q.108-109"
 duration_seconds: 1747
-word_count: 5950
+word_count: 1495
 raw_asr_word_count: 4600
-length_tier: long
+length_tier: short
 fidelity_checked: true
 segment_count: 410
 caption_kind: asr
@@ -16,7 +16,7 @@ fetched_at: 2026-05-18
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-115 - Divine Assistance - Contemporary]]"
 tags: [summa, day/115, pars/I-II, q/108, q/109]
-last_qc_at: "2026-05-24T20:21:51"
+last_qc_at: "2026-06-08T04:20:50"
 last_qc_outcome: "pass"
 ---
 

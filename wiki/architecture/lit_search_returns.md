@@ -11743,3 +11743,247 @@ DISPOSITION-172:
     Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
 
 **Run 2026-06-07 totals:** 8 items | 1 INCORPORATE (PREMISE-052) | 5 MONITOR (MONITOR-308..312) | 2 REVISE (REVISE-091, REVISE-092) | DISPOSITION-165..172. SYSTEMIC-RISK #1 (HIGH) "manufactured-identity-as-foundation": ASSUMPTION-278 (MONITOR-308) + PRESUMPTION-312 (REVISE-091) — the 2026-06-05 disjoint-id finding (0/3/5) was answered by ASSIGNING shared CC-xxx ids, escalating the prior unvalidated-P3-join cluster (REVISE-089/MONITOR-307) from unbuilt to manufactured-by-fiat. SYSTEMIC-RISK #2 (MEDIUM-HIGH, ethics) "consent-gap-papered-by-disclosure": ASSUMPTION-280 (PREMISE-052, the floor) vs PRESUMPTION-313 (REVISE-092, the overclaim); opt-in/don't-list never raised. Secondary validity-smuggling pair continues: PRESUMPTION-314 (MONITOR-310) + 316 (MONITOR-312), extending 308/310. Consistency check: PREMISE-052 vs PREMISE-001..051 — no conflict (new data-ethics/consent-disclosure domain); ASSUMPTION-279 deliberately NOT re-INCORPORATED (complementarity already PREMISE-051). No NOVELTY flags.
+
+---
+
+## 2026-06-08 — 15a/15b returns (2026-06-07 PRS-connectome EOD batch: 283/284/286 + 317/318/319/320/321)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-283
+  Search direction: FOR (supportive)
+  Result: SUPPORTED | Strength: Strong (general pattern)
+  Key source: 12factor admin-processes/dev-prod-parity; materialized-view scheduled refresh; Sculley et al. 2015 (hidden ML tech debt)
+  Summary: Scheduled regeneration of a stale derived artifact is the standard, well-validated remedy — conditional on the scheduled context being able to publish and the job being failure-monitored.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-283_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-283
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: silent-cron-failure / SRE monitoring; dev/prod-parity incident (couples 317); event-driven vs fixed-cadence freshness
+  Specific risk: A green-looking schedule masks a dead/unpublishable pipeline; staleness returns invisibly.
+  Summary: Scheduling is necessary-not-sufficient and crude; "the RIGHT fix" overclaims absent failure-alerting and capability parity.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-283_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-284
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate (asymmetry only)
+  Key source: progressive delivery / blast-radius gating (Humble & Farley); HITL release gating; change-class differentiation
+  Summary: "Code needs more review" is well-supported by blast-radius reasoning; the support does not extend to "data needs none."
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-284_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-284
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: Sculley et al. 2015 (data dependencies/CACE); data-downtime/observability; GIGO + provenance
+  Specific risk: A schema-valid but wrong datum (e.g., manufactured id, REVISE-091) auto-publishes as fact on the unguarded side and propagates.
+  Summary: Split is half-inverted: data regressions are the quietest, latest-detected, most-propagating failures; the auto-published side is the most likely to fail undetected.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-284_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-286
+  Search direction: FOR (supportive)
+  Result: SUPPORTED | Strength: Strong
+  Key source: Saltzer & Schroeder 1975 (least privilege); policy/mechanism separation (Wulf/HYDRA, Lampson); capability-based security
+  Summary: The waivable-policy / non-bypassable-capability distinction is textbook policy/mechanism separation; you cannot waive past a capability you do not hold.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-286_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-286
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Weak-Moderate
+  Key source: confused-deputy (Hardy 1988); safety-rule-vs-preference conflation; normalization of deviance (Vaughan)
+  Specific risk: Waiving a "policy" rule that actually shadows a hard wall (probe-before-build) leads straight into a capability refusal — the realized 2026-06-07 pattern.
+  Summary: Taxonomy is sound; its SAFE USE is the risk — the coincidence case is where realized cost lands, so load-bearing rules should be marked effectively non-waivable.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-286_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-317
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND | Strength: Weak (conditional on engineered parity)
+  Key source: dev/prod-parity as a GOAL (12factor); shared-image parity
+  Summary: Only the aspiration is supported; parity must be engineered, never assumed by default.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-317_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-317
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Strong
+  Key source: "works on my machine" / cron-env differences; least-privilege batch identities (Saltzer & Schroeder)
+  Specific risk: Scheduled tasks built on presumed-inherited capabilities fail unattended, possibly silently; the whole auto-publish design rests on a capability the runtime may lack — realized 2026-06-07.
+  Summary: Textbook environment-mismatch anti-pattern; automated contexts are routinely (and often deliberately) scoped down vs interactive ones. Enacted failure.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-317_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-318
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND | Strength: None
+  Key source: (none; walking-skeleton prescribes the opposite)
+  Summary: No literature supports building capability-dependent automation before confirming the capability.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-318_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-318
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Moderate-Strong
+  Key source: walking-skeleton/spike (Cockburn; Freeman & Pryce); fail-fast/shift-left; pre-mortem (Klein 2007); Tom's Rules 1 & 8
+  Specific risk: Build-then-discover converts a 5-second probe into a built-and-failed task and entrenches the habit; procedural cause of 317.
+  Summary: Convergent evidence that probe-before-build is the discipline; the presumption directly violates the project's own Rules 1 and 8.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-318_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-319
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+  Key source: reproducible/deterministic pipelines; automated data-validation gates (schema/invariants); blast-radius asymmetry
+  Summary: Deterministic, already-approved data can bypass HUMAN review IF automated data-quality gates replace the human; bare "review-exempt" is not supported.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-319_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-319
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Strong
+  Key source: Sculley et al. 2015 (data deps cost more than code; CACE); data-downtime/observability; observed non-determinism (REVISE-091)
+  Specific risk: A wrong-but-well-formed datum auto-publishes as fact and propagates to every derived artifact, undetected because nothing was looking.
+  Summary: Both halves challenged — determinism is asserted-not-verified, and the review-exempt data path is the quietest, most-propagating failure surface. Couples 284.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-319_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-320
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+  Key source: runbook/runbook-automation; IaC declarative convergence (Ansible/Terraform)
+  Summary: Prepared operator sequences are endorsed — but only in idempotent, state-checking, or declarative-convergent form, not as blind imperative blocks.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-320_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-320
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Moderate-Strong
+  Key source: idempotency/"making retries safe" (AWS Builders' Library); production-shell check-before-mutate; declarative convergence
+  Specific risk: Mid-sequence failure strands the repo in an unknown partial state with no safe rerun; a non-idempotent retry destroys work (force-push/reset). Couples 317.
+  Summary: The agent's model of repo state is routinely wrong; blind state-dependent blocks fail ambiguously. Safe unit = one reversible, state-checking step.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-320_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-321
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND | Strength: Weak (MECE ideal only)
+  Key source: MECE (Minto)
+  Summary: Clean binaries are supported only where truly mutually-exclusive-and-exhaustive — the condition that fails here.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-321_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-321
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Moderate (low stakes)
+  Key source: MECE failure (Minto); forced-choice bias; label-noise distorts metrics (Frénay & Verleysen 2014)
+  Specific risk: "Attended" vs "automation" are orthogonal dimensions; forcing a binary mislabels overlap days and quietly biases activity metrics.
+  Summary: Non-MECE binary; fix is non-exclusive tags / mixed category. Real but minor measurement corruption.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-321_against.md
+
+---
+
+## Dispositions — run 2026-06-08 (15c)
+
+DISPOSITION-173:
+  Date: 2026-06-08
+  Item: ASSUMPTION-283
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong (general pattern)
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Scheduled regeneration of a stale derived artifact is a textbook, well-validated remedy (12factor, materialized-view refresh, data-engineering). The only challenge is conditional: scheduling is necessary-not-sufficient — it cures staleness only if the scheduled context can publish and the job fails loudly. Those conditions are separable hedges, not refutations.
+  Disposition: INCORPORATE (PREMISE-053), Confidence Moderate
+  Reasoning: Strong support + a fully-foldable conditional challenge on a stated assumption → INCORPORATE with the capability-and-monitoring caveat folded in. Consistency-checked vs PREMISE-001..052: new CI/derived-artifact-freshness domain, no conflict. Moderate (not High) because the enacting environment failed the capability precondition (PRESUMPTION-317 → REVISE-093), so the premise is the pattern-floor, explicitly gated on parity + failure-alerting.
+  Validated premise statement: see PREMISE-053.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+
+DISPOSITION-174:
+  Date: 2026-06-08
+  Item: ASSUMPTION-284
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate (asymmetry only)
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: "Code changes warrant more review than data" is supported by blast-radius reasoning, but "data auto-publishes unreviewed" inverts a documented risk ordering: data regressions are the quietest, latest-detected, most-propagating failures, and a wrong datum is published as fact. The defensible floor (asymmetry) and the contested ceiling (data review-exempt) come apart.
+  Disposition: MONITOR (MONITOR-313), Priority MEDIUM
+  Reasoning: Do not INCORPORATE a clean split whose data-half depends on PRESUMPTION-319 (REVISE-094, challenged) and whose enacting design failed in a non-capable environment (317). The asymmetry direction is right but "no review" should be "auto-CHECKED," so MONITOR with an explicit "replace unreviewed-data with automated data-quality gates" action. Pairs ASSUMPTION-284 (floor) with PRESUMPTION-319 (overclaim), mirroring the 280/313 floor/ceiling pattern.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-175:
+  Date: 2026-06-08
+  Item: ASSUMPTION-286
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: The waivable-policy / non-bypassable-capability distinction is a direct restatement of policy/mechanism separation and least-privilege/capability theory — strongly grounded. The challenge does not refute the taxonomy; it targets its SAFE USE (confused-deputy, mislabeled load-bearing rules, normalization of deviance), all of which concentrate on the stated "coincidence" case.
+  Disposition: INCORPORATE (PREMISE-054), Confidence Moderate
+  Reasoning: Strong support + a sharpening (not refuting) challenge on a stated assumption → INCORPORATE, with the coincidence-case caveat folded in: rules that shadow a capability/safety wall are to be treated as effectively non-waivable, and every waiver must be explicit and justified (Tom's Rule 12, fail-loud). Consistency-checked vs PREMISE-001..053: new agent-governance/constraint-layering domain, no conflict. Moderate confidence because the realized 2026-06-07 cost landed precisely on the coincidence case (couples 318).
+  Validated premise statement: see PREMISE-054.
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+
+DISPOSITION-176:
+  Date: 2026-06-08
+  Item: PRESUMPTION-317
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak (conditional only)
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Execution-context uniformity is contradicted by one of the most established lessons in operations: interactive and scheduled/non-interactive contexts differ in environment and credentials as a rule, and least-privilege design deliberately scopes automated identities DOWN. The presumption is the textbook environment-mismatch anti-pattern and it is already ENACTED (the scheduled task could not push).
+  Disposition: REVISE (REVISE-093), Urgency HIGH
+  Reasoning: No support + strong challenge on a HIGH-risk PRESUMPTION that is already enacted and failed unattended → REVISE, the clearest of the run. PRESUMPTION weight applies (designers were unaware they were betting on inherited capabilities). Core of the environment-capability-mismatch SYSTEMIC-RISK; remedy is capability-discovery-first.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-177:
+  Date: 2026-06-08
+  Item: PRESUMPTION-318
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Building a capability-dependent automation before probing the capability is a recognized, costly anti-pattern (walking-skeleton, fail-fast, shift-left, pre-mortem) and a direct violation of the project's own Rules 1 and 8. It is the procedural CAUSE of 317 rather than an independent risk.
+  Disposition: MONITOR (MONITOR-314), Priority HIGH
+  Reasoning: The lesson is clear and self-evidently supported, but it is a process discipline to ADOPT (capability-probe-first / dry-run as a standing pre-step), not a literature premise to INCORPORATE nor a design defect distinct from 317's REVISE. MONITOR-HIGH with an explicit "adopt probe-before-build as a non-skippable pre-step" action, coupled to REVISE-093. Closes when the probe-first practice is in place.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-178:
+  Date: 2026-06-08
+  Item: PRESUMPTION-319
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: "Regenerated data is deterministic/safe enough to publish unreviewed" is challenged on both halves: determinism is asserted, not verified (and real pipelines drift via ordering/dedup/input change), and an unreviewed data path is the quietest, most-propagating failure surface — a wrong-but-well-formed datum publishes as fact. Support exists only if automated data-quality gates REPLACE the human, which the design did not provide.
+  Disposition: REVISE (REVISE-094), Urgency MEDIUM-HIGH
+  Reasoning: Weak conditional support + strong challenge on a PRESUMPTION already enacted in the auto-publish split (284) → REVISE. PRESUMPTION weight applies (the review-exemption was never deliberately decided). The honest status is "unverified-determinism + unguarded-data-path." Pairs ASSUMPTION-284 (floor, MONITOR-313) with this overclaim (REVISE). Recommended remedy: verify determinism empirically AND add automated data-quality/anomaly gates before any unreviewed data publish.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-179:
+  Date: 2026-06-08
+  Item: PRESUMPTION-320
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Prepared operator command sequences are endorsed only in idempotent, state-checking, or declarative-convergent form. A blind imperative block bets the user's repo on the agent's unverified model of its current state (dirty tree, diverged branch, partial prior run); a mid-sequence failure strands the repo in an unknown partial state with no safe rerun, and a non-idempotent retry destroys work.
+  Disposition: MONITOR (MONITOR-315), Priority MEDIUM-HIGH
+  Reasoning: Resolvable by a concrete, low-cost practice change (make each step idempotent/safe-to-fail; inspect-then-act; one reversible step over a compound block; never blind force-push/reset) rather than a literature-settleable defect or an enacted-and-failed design → MONITOR-HIGH with an explicit "no blind state-mutating blocks; check-before-mutate" action. Couples 317 (the agent also mismodels the environment, not just repo state). Not REVISE because no harm has been realized yet and the fix is a standing operating rule, not a design reversal.
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-180:
+  Date: 2026-06-08
+  Item: PRESUMPTION-321
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak (MECE ideal only)
+  15b result: CHALLENGED | 15b strength: Moderate (low stakes)
+  Net assessment: "Attended" and "automation-ran" are orthogonal dimensions, not a partition; the binary fails the mutual-exclusivity test (today's attended session on a nominal automation day is the overlap case), and forcing the binary mislabels overlap days, biasing downstream activity metrics (label-noise). Real but minor measurement corruption.
+  Disposition: MONITOR (MONITOR-316), Priority LOW
+  Reasoning: A genuine taxonomy defect with a clear cheap fix (non-exclusive tags or a "mixed" category; backfill the mislabeled 2026-06-07 day) but low stakes → MONITOR-LOW with a "model day-type as non-exclusive tags, derived from actual activity" action. Not REVISE (no design dependency at risk); not closed (the mislabel is real and recurring until the taxonomy changes).
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Run 2026-06-08 totals:** 8 items | 2 INCORPORATE (PREMISE-053, PREMISE-054) | 4 MONITOR (MONITOR-313..316) | 2 REVISE (REVISE-093, REVISE-094) | DISPOSITION-173..180. SYSTEMIC-RISK #1 (HIGH) "environment-capability-mismatch / build-before-probe": PRESUMPTION-317 (REVISE-093, the enacted environment-uniformity bet) + PRESUMPTION-318 (MONITOR-314, the build-then-discover ordering that caused it) + PRESUMPTION-320 (MONITOR-315, blind state-mutating blocks on a mismodeled state) — common vulnerability: the agent scripted state-mutating automation (auto-push, blind shell blocks) against a presumed-uniform execution context and a presumed-known repo state, without probing actual capabilities/state first. Single coupled remedy: capability-and-state probe FIRST (dry-run in the target/scheduled context; inspect repo state before mutating); make each step safe-to-fail; this discharges most of the cluster. SECONDARY cluster (MEDIUM-HIGH) "derived-data-treated-as-review-exempt": ASSUMPTION-284 (MONITOR-313, the asymmetry floor) vs PRESUMPTION-319 (REVISE-094, the data-review-exempt overclaim) — disclosure/gating floor stands, but the unreviewed-data path needs automated data-quality gates + verified determinism before trusting it; couples the manufactured-identity risk (REVISE-091, a concrete wrong-but-well-formed datum). Consistency check: PREMISE-053 (scheduled-regeneration pattern) and PREMISE-054 (policy-vs-capability layering) vs PREMISE-001..052 — no conflict (new CI-freshness and agent-governance domains). No NOVELTY flags (all eight are well-trodden SE/security/ops topics).
