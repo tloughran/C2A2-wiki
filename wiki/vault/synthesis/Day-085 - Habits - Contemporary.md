@@ -71,6 +71,7 @@ length_target_words: 1500
 length_actual_words: 2114
 length_ratio_to_target: 1.409
 length_tier: short
+length_note: "Covers two questions (Q.48 effects of anger and Q.49 habits) at the structural pivot of the Prima Secundae from passions to stable dispositions; the over-length is substantive linkage across the passion-to-habit transition, not padding."
 mind_first_reframe: "Aquinas's habit-as-quality (Q.49 a.1) is the medieval anticipation of *learned-stabilized parameters in a generative model* — the cortical reference frame (Hawkins), the precision-weighted prior (Friston), the bioelectric pattern (Levin); Q.49 a.4's habits-are-necessary methodological argument is the early form of dispositional-realism in cognitive science; Q.48 a.1's anger-pleasure-by-imagination is the reinforcement-learning signature of angry rumination that stabilizes the passion of anger into the vice of wrath."
 central_theme_thread: "Q.49 is the structural pivot of the Prima Secundae — from transient affective state (passion) to stable disposition (habit); the central theme's working-out of salvation in fear and trembling moves from each-time engagement (Phil 2:12 in Q.44 a.4) to long-term formation (Phil 2:12 in habit-register); the limited agent is *shaped* over time by the very acts it performs, and the external scaffolding of tradition, community, contemplative practice, and example-of-those-further-along is the central theme's 'guidance from those who perceive more of the whole' in habit-register form."
 karpathy_wiki_sources:
@@ -84,5 +85,5 @@ karpathy_wiki_sources:
   - "traditions/rohr/ — *Falling Upward*; PRS-01 contemplative habituation"
 evidence_strength_summary: "Habitual vs. goal-directed control, practice-induced affective stabilization, and angry-rumination as anger maintenance are empirically robust. Cortical reference-frame learning and bioelectric morphogenetic memory are empirically supported. Stump on virtue-as-habituation is philosophically rigorous. Conscious-realist-monist reading of habit as alter-level parameter stabilization is speculative. Wright on Pauline virtue-formation and Rohr on contemplative habituation are theologically well-attested."
 tags: [synthesis, day/085, theme/habits, theme/passion-to-habit, theme/anger-effects, theme/dispositional-realism, theme/structural-pivot]
-last_qc_at: "2026-06-05T04:20:47"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-08T22:29:08"
+last_qc_outcome: "rewrote"

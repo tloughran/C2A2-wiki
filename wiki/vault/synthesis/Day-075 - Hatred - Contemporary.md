@@ -3,8 +3,8 @@ day: 75
 title: "Hatred (Contemporary)"
 pairs_with: "[[Day-075 - Hatred]]"
 length_target_words: 2200
-length_actual_words: 2216
-length_ratio_to_target: 1.007
+length_actual_words: 2403
+length_ratio_to_target: 1.092
 length_tier: medium
 karpathy_wiki_sources:
   - "wiki/traditions/stump/wiki.md (PRS on willed-evil; Wandering in Darkness on the structure of refusing-the-good; second-personal-knowing as resource for hatred-rectification)"
@@ -17,8 +17,8 @@ evidence_strength_summary: "Synthesis written from Summa I-II Q.29 + C2A2 framew
 mind_first_reframe: "Aquinas's Q.29 a.2 (love is the cause of hatred — one hates only what is contrary to a loved good) preserves under the active-inference frame as the structural-priority of valence-encoding: there is no hate-prior independent of love-prior; hatred is the inversion of valence with respect to objects perceived as obstructing or contrary to a primary love. Q.29 a.4 (one cannot hate self per se) preserves under mind-monist metaphysics: the alter cannot hate its own substrate-source-of-being without inversion-by-confusion (mistaking part-of-self as not-self). Q.29 a.5 (one can hate truth incidentally) preserves under perspective-limited threat-response: the alter can close-against-truth that its current configuration experiences as threat to a held-position."
 central_theme_thread: "Hatred is the central-theme's perspective-limitation made structurally pathological: under the alter's limited perception, when an apprehended object appears contrary to the alter's primary-loved-good, the alter's affective interface inverts valence and closes against the apprehended object. The central-theme commits to the structural-priority-of-love: hatred is derivative, correctable in principle, and pathological-relative-to-the-formal-target-of-loving-unity. Salvation in fear and trembling at this register includes the alter's responsibility for cultivating apprehension that widens beyond the perspective-limited threat-response, receiving second-personal care that rectifies the alter's primary-loved-good when it has misidentified its own integrative-substrate-direction, and refusing the closure-of-the-right-hemispheric-receptivity that locks hatred into rigid left-hemispheric stance."
 tags: [synthesis, day/075, theme/hatred, theme/privation-of-love, theme/affective-pathology, theme/perspective-limited-threat-response, transcript-fetch-failed]
-last_qc_at: "2026-05-31T14:27:10"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-08T16:20:29"
+last_qc_outcome: "rewrote"
 ---
 # Day 75 — Contemporary Parallel: *Hatred as the Privation of Love and the Pathology of Perspective-Limited Closure*
 
@@ -29,6 +29,8 @@ Day 74 articulated the central-theme's affective-phenomenology of love. Day 75 t
 Q.29 articulates hatred in six articles. *Is hatred contrary to love?* (a.1): Yes — hatred is the affective-movement contrary to love, registering its object as evil rather than as good. *Is love the cause of hatred?* (a.2): Yes — *prius est hominem amare suum bonum quam ipsum odisse malum sibi contrarium*: it is prior to love one's own good than to hate the evil contrary to it. Hatred is structurally derivative of love. *Is hatred stronger than love?* (a.3): No — love is structurally prior and stronger; hatred presupposes love and lives off its energy. *Can a person hate himself?* (a.4): Not per se — every alter naturally loves its own being; self-hatred occurs only by *confusion* (the alter mistakes part-of-itself for not-itself, or hates an aspect-of-itself contrary to a more-fundamental-loved-aspect). *Can a person hate the truth?* (a.5): Incidentally — the truth in itself is good and lovable; a person can hate truth-as-apprehended-as-threat to a held position. *Can anything be hated universally?* (a.6): No — universal goodness (being-as-such) cannot be hated; only particular goods-perceived-as-evil can.
 
 The structural moves are: *love precedes hatred* (a.2-3); *self-hatred is structurally impossible per se* (a.4); *truth-hatred is incidental, not essential* (a.5); *universal-hatred is structurally impossible* (a.6). Each move preserves the priority of love and the derivative status of hatred.
+
+A scope note. This episode actually covers *two* questions — Q.28 (the effects of love: union, mutual indwelling, ecstasy, zeal, the wounding of love, and love as the cause of all the lover does) and Q.29 (hatred). The commentary leads with Q.29 because Q.28's effects-of-love material extends the affective-phenomenology of love already treated on Day 74; it is a deliberate thread-pick, not an omission of Q.28 as unimportant. One Q.28 result is worth carrying forward explicitly. Aquinas's *union of affection* and *real union* (Q.28 a.1) are the medieval cash-out of the central theme's claim that loving-unity is the computational telos: under the mind-first frame, the *union of affection* is the alter's prior-level alignment with an apprehended good, and *real union* is the substrate-level integration that active-inference policy then pursues toward that good. Hatred (Q.29) is precisely the inversion of this same movement with respect to objects apprehended as contrary to the loved good — which is why Aquinas can derive hatred entirely from love (a.2), and why the contemporary frame derives the hate-prior entirely from the love-prior.
 
 ## Problem
 
