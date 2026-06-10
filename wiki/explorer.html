@@ -32,8 +32,10 @@
     overflow: visible;
   }
 
-  /* ROW 2 — sub-tabs under Community Accelerator Tools */
-  #row2 {
+  /* ROW 2 — sub-tabs under Community Accelerator Tools.
+     #row2-edu is its sibling for Community AI Education; same styling,
+     only one of the two is shown at a time (chapter switching JS). */
+  #row2, #row2-edu {
     height: 40px;
     display: flex;
     align-items: center;
@@ -136,6 +138,9 @@
   }
   .tab-btn:hover { color: #aaa; }
   .tab-btn.active { color: #C9A84C; border-bottom-color: #C9A84C; }
+  /* not-yet-built education tools: dimmed, unclickable */
+  .tab-btn:disabled { opacity: 0.35; cursor: default; }
+  .tab-btn:disabled:hover { color: #666; }
 
   /* row2 section label */
   .row2-label {
@@ -217,7 +222,7 @@
 @keyframes recBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0.15; } }
 
 /* HELP BUTTON */
-#btn-help {
+#btn-help, .btn-help-row {
   margin-left: auto;
   background: #0a0a0f;
   border: 1px solid #2a2a3a;
@@ -233,7 +238,7 @@
   white-space: nowrap;
   flex-shrink: 0;
 }
-#btn-help:hover { color: #C9A84C; border-color: #4a4a5a; }
+#btn-help:hover, .btn-help-row:hover { color: #C9A84C; border-color: #4a4a5a; }
 
 /* HELP MODAL */
 #help-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 1200; justify-content: center; align-items: center; }
@@ -310,7 +315,7 @@
       <span class="brand-full">Community Dialogue Accelerator/Detector System</span>
     </span>
     <button class="chap-btn" id="chap-community" data-src="community_explorer.html">Community Explorer</button>
-    <button class="chap-btn stub">Community AI Education</button>
+    <button class="chap-btn" id="chap-education">Community Education</button>
     <button class="chap-btn active" id="chap-tools">Community Accelerator Tools</button>
     <button class="chap-btn stub">Community Interaction</button>
     <button id="btn-record" onclick="toggleRecord()">&#9679; Record</button>
@@ -327,6 +332,17 @@
     <button class="tab-btn" data-src="agents_tab.html">Agent Map</button>
     <button class="tab-btn" data-src="summa_explorer.html">Curriculum Tools</button>
     <button id="btn-help" onclick="showHelp()" title="About this view">?</button>
+  </div>
+
+  <!-- ROW 2-EDU: education tools within Community AI Education.
+       First of three planned tools; Physics Explorer and TRV Commentary
+       are the next two steps in the education-tab arc. -->
+  <div id="row2-edu" style="display: none;">
+    <span class="row2-label">Education&nbsp;Tools</span>
+    <button class="tab-btn active" data-src="rc_document_explorer.html">RC Document Explorer</button>
+    <button class="tab-btn" disabled title="Under construction">Physics Explorer</button>
+    <button class="tab-btn" disabled title="Under construction">TRV Commentary</button>
+    <button class="btn-help-row" onclick="showHelp()" title="About this view">?</button>
   </div>
 
 </div>
@@ -347,7 +363,9 @@
       e.preventDefault();
       e.stopPropagation();
       frame.setAttribute('src', btn.getAttribute('data-src') + '?v=' + Date.now());
-      buttons.forEach(function(b) { b.classList.remove('active'); });
+      /* scope active state to this button's own row, so the Accelerator
+         and Education rows each remember their own selection */
+      btn.parentElement.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
       btn.classList.add('active');
     });
   });
@@ -357,9 +375,11 @@
   // into the iframe and the Accelerator-Tools sub-tab row (row2) is hidden.
   // "Community Accelerator Tools" restores row2 and shows its active sub-tab.
   var row2 = document.getElementById('row2');
+  var row2edu = document.getElementById('row2-edu');
   var chapBtns = document.querySelectorAll('.chap-btn');
   var chapCommunity = document.getElementById('chap-community');
   var chapTools = document.getElementById('chap-tools');
+  var chapEducation = document.getElementById('chap-education');
   function setActiveChapter(btn) {
     chapBtns.forEach(function(b) { if (!b.classList.contains('stub')) b.classList.remove('active'); });
     btn.classList.add('active');
@@ -367,13 +387,23 @@
   if (chapCommunity) chapCommunity.addEventListener('click', function() {
     frame.setAttribute('src', chapCommunity.getAttribute('data-src') + '?v=' + Date.now());
     if (row2) row2.style.display = 'none';
+    if (row2edu) row2edu.style.display = 'none';
     setActiveChapter(chapCommunity);
   });
   if (chapTools) chapTools.addEventListener('click', function() {
     if (row2) row2.style.display = '';
+    if (row2edu) row2edu.style.display = 'none';
     var active = document.querySelector('#row2 .tab-btn.active') || document.querySelector('#row2 .tab-btn');
     if (active) frame.setAttribute('src', active.getAttribute('data-src') + '?v=' + Date.now());
     setActiveChapter(chapTools);
+  });
+  if (chapEducation) chapEducation.addEventListener('click', function() {
+    if (row2) row2.style.display = 'none';
+    if (row2edu) row2edu.style.display = '';
+    var active = document.querySelector('#row2-edu .tab-btn.active:not([disabled])') ||
+                 document.querySelector('#row2-edu .tab-btn:not([disabled])');
+    if (active) frame.setAttribute('src', active.getAttribute('data-src') + '?v=' + Date.now());
+    setActiveChapter(chapEducation);
   });
 })();
 
@@ -630,9 +660,13 @@ function dismissRecordingModal() {
 // ── HELP MODAL ──
 function showHelp() {
   var chapCommunity = document.getElementById('chap-community');
+  var chapEducation = document.getElementById('chap-education');
   var src;
   if (chapCommunity && chapCommunity.classList.contains('active')) {
     src = 'community_explorer.html';
+  } else if (chapEducation && chapEducation.classList.contains('active')) {
+    var activeEdu = document.querySelector('#row2-edu .tab-btn.active');
+    src = activeEdu ? activeEdu.getAttribute('data-src') : '';
   } else {
     var active = document.querySelector('#row2 .tab-btn.active');
     src = active ? active.getAttribute('data-src') : '';
@@ -657,6 +691,10 @@ function showHelp() {
     'prs_3d.html': {
       title: 'Narrative (PRS) Connectome',
       body: 'A narrative connectome of the C2A2 traditions: each node is an agentic PRS narrative — a small model (problem → resource → solution) — and edges are shared resources plus the synergistic coils that bridge traditions. Read it as the emergence of rival master sciences. Rotate and zoom to explore.'
+    },
+    'rc_document_explorer.html': {
+      title: 'RC Document Explorer',
+      body: 'A pedagogical explorer for the 471-page "Resurrecting Civility" pilot tome — the founding research dialogue behind the C2A2 thinker network. Three coordinated views: Contents (679 hyperlinked sections), Thinkers (nine research programs, each with a 500-word summary and its Problem-Resource-Solution triplets), and Solved (the full PRS table with synergistic-coil detection — solutions that answer problems across traditions). Click any P, R, or S to jump to its source page; use Return to come back. The chat pane searches the document by keyword, or answers semantically with an Anthropic API key. First of three planned Education tools, alongside the Physics Explorer and the Three Rival Versions commentary.'
     },
     'agents_tab.html': {
       title: 'Agent Map',
