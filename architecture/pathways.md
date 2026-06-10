@@ -73,6 +73,7 @@ ISME presentation: July 8–10, 2026. Pathways marked `isme_critical: yes` are o
 - [26 — Research suggestions per thinker](26_research_suggestions_per_thinker.md) — *outlined.* For each of the 15 thinkers, develop and stand ready to communicate concrete research suggestions with rationale.
 - [27 — Universal Search and Ask](27_universal_search_and_ask.md) — *drafted, isme_critical.* Every tab gets a deterministic Search (jump-to-origin) and a semantic Ask (corpus synthesis), both driven by one entity → origin-file index that also powers canonical auto-hyperlinking.
 - [28 — Single-source participant registration](28_participant_registration.md) — *pinned.* One declarative act (a `COLORS` line) fans out to node coloring, filter checkboxes, and the focus typeahead; they are siblings of one source and cannot drift. The registration twin of Pathway 27's retrieval-side index. Surfaced 2026-05-29.
+- [29 — Agentic metabolism](29_agentic_metabolism.md) — *outlined.* Schedule the swarm on demand with downstream backpressure (electron-transport-chain framing: tokens as electrons, master agent as ATP synthase, respiratory control as the reallocation rule), a per-agent activity-raster "Metabolism view," a deterministic feedback controller before any bandit layer, the same framing applied humanely to humans-in-the-loop, and a bounded handle on the living-system / AI-personhood bright pin via Friston's free-energy criterion. Surfaced 2026-06-10.
 
 ## Bright pins (held, not yet pathways)
 

@@ -330,17 +330,18 @@
           onclick="window.open('vault/refs/missing_days.md','_blank')">…</span>
     <button class="tab-btn" data-src="prs_3d.html">Narrative Connectome</button>
     <button class="tab-btn" data-src="agents_tab.html">Agent Map</button>
+    <button class="tab-btn" data-src="metabolism_view.html">Metabolism</button>
     <button class="tab-btn" data-src="summa_explorer.html">Curriculum Tools</button>
     <button id="btn-help" onclick="showHelp()" title="About this view">?</button>
   </div>
 
   <!-- ROW 2-EDU: education tools within Community AI Education.
-       First of three planned tools; Physics Explorer and TRV Commentary
-       are the next two steps in the education-tab arc. -->
+       Two of three planned tools live; TRV Commentary is the next
+       step in the education-tab arc. -->
   <div id="row2-edu" style="display: none;">
     <span class="row2-label">Education&nbsp;Tools</span>
     <button class="tab-btn active" data-src="rc_document_explorer.html">RC Document Explorer</button>
-    <button class="tab-btn" disabled title="Under construction">Physics Explorer</button>
+    <button class="tab-btn" data-src="physics_explorer.html">Physics Explorer</button>
     <button class="tab-btn" disabled title="Under construction">TRV Commentary</button>
     <button class="btn-help-row" onclick="showHelp()" title="About this view">?</button>
   </div>
@@ -351,18 +352,26 @@
         name="content-frame"
         src="wiki_narration.html"
         allow="autoplay; microphone; camera"
-        sandbox="allow-scripts allow-same-origin allow-forms allow-modals allow-popups-to-escape-sandbox allow-downloads">
+        sandbox="allow-scripts allow-same-origin allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-downloads">
 </iframe>
 
 <script>
 (function() {
   var frame = document.getElementById('content-frame');
+  /* Swap iframe content WITHOUT adding a browser-history entry.
+     setAttribute('src') pushes joint session history, so Back would
+     rewind the iframe to the previous tool while the tab bar kept its
+     state (desync). location.replace() avoids the history entry. */
+  function setFrame(url) {
+    try { frame.contentWindow.location.replace(url); }
+    catch (e) { frame.setAttribute('src', url); }
+  }
   var buttons = document.querySelectorAll('.tab-btn');
   buttons.forEach(function(btn) {
     btn.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
-      frame.setAttribute('src', btn.getAttribute('data-src') + '?v=' + Date.now());
+      setFrame(btn.getAttribute('data-src') + '?v=' + Date.now());
       /* scope active state to this button's own row, so the Accelerator
          and Education rows each remember their own selection */
       btn.parentElement.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
@@ -385,7 +394,7 @@
     btn.classList.add('active');
   }
   if (chapCommunity) chapCommunity.addEventListener('click', function() {
-    frame.setAttribute('src', chapCommunity.getAttribute('data-src') + '?v=' + Date.now());
+    setFrame(chapCommunity.getAttribute('data-src') + '?v=' + Date.now());
     if (row2) row2.style.display = 'none';
     if (row2edu) row2edu.style.display = 'none';
     setActiveChapter(chapCommunity);
@@ -394,7 +403,7 @@
     if (row2) row2.style.display = '';
     if (row2edu) row2edu.style.display = 'none';
     var active = document.querySelector('#row2 .tab-btn.active') || document.querySelector('#row2 .tab-btn');
-    if (active) frame.setAttribute('src', active.getAttribute('data-src') + '?v=' + Date.now());
+    if (active) setFrame(active.getAttribute('data-src') + '?v=' + Date.now());
     setActiveChapter(chapTools);
   });
   if (chapEducation) chapEducation.addEventListener('click', function() {
@@ -402,9 +411,41 @@
     if (row2edu) row2edu.style.display = '';
     var active = document.querySelector('#row2-edu .tab-btn.active:not([disabled])') ||
                  document.querySelector('#row2-edu .tab-btn:not([disabled])');
-    if (active) frame.setAttribute('src', active.getAttribute('data-src') + '?v=' + Date.now());
+    if (active) setFrame(active.getAttribute('data-src') + '?v=' + Date.now());
     setActiveChapter(chapEducation);
   });
+
+  // ── BACK-NAVIGATION RESYNC ──
+  // When the browser restores this page from history, Chrome may restore the
+  // iframe to whatever it last showed, while the shell renders its default
+  // tab state — a visible desync. After load, adopt the iframe's actual
+  // content as the source of truth and light up the matching tabs.
+  function syncShellToFrame() {
+    var path;
+    try { path = frame.contentWindow.location.pathname.split('/').pop(); }
+    catch (e) { return; }
+    if (!path) return;
+    var match = null;
+    document.querySelectorAll('.tab-btn[data-src]').forEach(function(b) {
+      if (b.getAttribute('data-src') === path) match = b;
+    });
+    if (match) {
+      var row = match.parentElement;
+      row.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+      match.classList.add('active');
+      var isEdu = row.id === 'row2-edu';
+      if (row2) row2.style.display = isEdu ? 'none' : '';
+      if (row2edu) row2edu.style.display = isEdu ? '' : 'none';
+      setActiveChapter(isEdu ? chapEducation : chapTools);
+    } else if (chapCommunity && chapCommunity.getAttribute('data-src') === path) {
+      if (row2) row2.style.display = 'none';
+      if (row2edu) row2edu.style.display = 'none';
+      setActiveChapter(chapCommunity);
+    }
+    /* default src (wiki_narration.html) already matches the default shell state */
+  }
+  frame.addEventListener('load', syncShellToFrame, { once: true });
+  window.addEventListener('pageshow', function(e) { if (e.persisted) syncShellToFrame(); });
 })();
 
 // ── SUMMA PROGRESS PILL ──
@@ -694,11 +735,19 @@ function showHelp() {
     },
     'rc_document_explorer.html': {
       title: 'RC Document Explorer',
-      body: 'A pedagogical explorer for the 471-page "Resurrecting Civility" pilot tome — the founding research dialogue behind the C2A2 thinker network. Three coordinated views: Contents (679 hyperlinked sections), Thinkers (nine research programs, each with a 500-word summary and its Problem-Resource-Solution triplets), and Solved (the full PRS table with synergistic-coil detection — solutions that answer problems across traditions). Click any P, R, or S to jump to its source page; use Return to come back. The chat pane searches the document by keyword, or answers semantically with an Anthropic API key. First of three planned Education tools, alongside the Physics Explorer and the Three Rival Versions commentary.'
+      body: 'A pedagogical explorer for the 471-page "Resurrecting Civility" pilot tome — the founding research dialogue behind the C2A2 thinker network. Three coordinated views: Contents (679 hyperlinked sections), Thinkers (nine research programs, each with a 500-word summary and its Problem-Resource-Solution triplets), and Solved (the full PRS table with synergistic-coil detection — solutions that answer problems across traditions). Click any P, R, or S to jump to its source page; use Return to come back. The chat pane searches the document by keyword, or answers semantically via the shared C2A2 broker (no key needed). First of three planned Education tools, alongside the Physics Explorer and the Three Rival Versions commentary.'
+    },
+    'physics_explorer.html': {
+      title: 'Physics Explorer',
+      body: 'A pedagogical explorer for undergraduate physics as a progressing tradition — Newton through Wolfram. Three coordinated views: Concepts (75 topic cards across six areas, each with core equations, a Concept-Demonstration-Simulation triplet, and a PhET simulation link), Physicists (six thinkers, each with a 500-word summary, Teaching CDS triplets, and Kuhnian Problem-Resource-Solution triplets), and Progress (a cumulative solved-problems chart from pre-Newton to Wolfram — the quantified-progress demonstrator: chained PRS triplets made measurable). The chat pane searches concepts by keyword, or answers semantically via the shared C2A2 broker (no key needed), with Student/Instructor modes and Explain/Problem/Analogy/Simulate styles. Second of three planned Education tools.'
     },
     'agents_tab.html': {
       title: 'Agent Map',
       body: 'A live map of the autonomous agents running the C2A2 system — daily synthesis batch, QC sweep, commentary reviewer, nightly verification, and wiki update agents. Shows each agent\'s last run time, output status, and task schedule.'
+    },
+    'metabolism_view.html': {
+      title: 'Agent Metabolism',
+      body: 'The temporal pulse of the agent swarm (Pathway 29), built from OpenStory run telemetry and the vault git history. Three views: a per-agent Raster of runs over time (size = a chosen amplitude — events, tokens sent/returned, cache-read, duration); a Waveform of the system\'s daily pulse, stacked by category or shown on a log axis; and Returned-vs-sent tokens. The Yield axis is live — wikilinks and files added per day from the vault\'s git history — a first real measure of useful output, with PRS-triplet completion still to come. The framing: schedule agents on demand with backpressure (an electron-transport-chain analogy), and treat the human+AI system\'s metabolism as something measurable.'
     }
   };
   var info = descriptions[src] || { title: 'C2A2 Explorer', body: 'Community Dialogue Accelerator/Detector System — an integrated suite of visualization and analysis tools for the RC Wiki knowledge base.' };
