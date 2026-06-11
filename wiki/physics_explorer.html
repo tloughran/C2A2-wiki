@@ -1649,7 +1649,14 @@ function progressToPRS(idx) {
     showProgressReturn(true);
     const card = document.querySelectorAll('.physicist-card')[idx];
     const head = card ? Array.from(card.querySelectorAll('.prs-section-head')).find(h => h.textContent.includes('PRS')) : null;
-    if (head) head.scrollIntoView({block: 'start'});
+    /* Scroll ONLY the sidebar view, never via scrollIntoView: that bubbles to
+       every scrollable ancestor and (in the explorer shell) scrolled the page
+       header + Concepts/Physicists/Progress tab row out of view. Offset leaves
+       room for the sticky back button. */
+    const pv = document.getElementById('physicists-view');
+    if (head && pv) {
+        pv.scrollTop = head.getBoundingClientRect().top - pv.getBoundingClientRect().top + pv.scrollTop - 34;
+    }
 }
 
 function showProgressReturn(on) {
