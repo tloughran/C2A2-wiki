@@ -22,6 +22,11 @@ COLORS = {
     'architecture/changelog': '#4A6580',
     'flags': '#B85450',
     'agents': '#8B6DAE',
+    # Runtime agent ACTORS (OpenStory telemetry) — distinct from the agent
+    # DEFINITION docs in the 'agents' group above. Set explicitly at merge time
+    # (no vault directory maps here via get_group), so it only ever holds the
+    # scheduled-task/human actor nodes from agent_node_edges.json.
+    'agent-activity': '#C77DCB',
     'inbox': '#7A8B8B',
     'review': '#5E9B76',
     'deferred': '#6B7B7B',
@@ -53,6 +58,11 @@ LABEL_OVERRIDES = {
     'master':                 'Master',
     'architecture/changelog': 'Changelog',
     'summa':                  'Summa',
+    # Relabel only — the group key stays 'agents' so nothing downstream
+    # (get_group, edges, presets) changes. The 24 agent-definition docs now
+    # read as "Agent identity"; the runtime actors live in "Agent activity".
+    'agents':                 'Agent identity',
+    'agent-activity':         'Agent activity',
     'traditions/mcgilchrist': 'McGilchrist',
     'traditions/macintyre':   'MacIntyre',
     'traditions/arkanihamed': 'Arkani-Hamed',
@@ -79,8 +89,14 @@ def sanitize_braces(text):
     return text
 
 
-def build_graph_data(data):
-    """Build nodes and links arrays from vault data."""
+def build_graph_data(data, agent_data=None):
+    """Build nodes and links arrays from vault data.
+
+    If agent_data (parsed agent_node_edges.json) is supplied, its runtime
+    actor nodes and three edge layers (coref_substrate / coref_projected /
+    flow) are merged in as a first-class 'agent-activity' group before the
+    integer-interning pass, so agent edges intern identically to wiki edges.
+    """
     files = data.get('files', [])
     connections = data.get('connections', {})
 
@@ -183,6 +199,83 @@ def build_graph_data(data):
         _emit(e['source'], e['target'], 'mention', e.get('bridge'))
     for e in reference_edges:
         _emit(e['source'], e['target'], 'reference', e.get('bridge'), reference=e.get('reference'))
+
+    # ── AGENT LAYER MERGE (OpenStory) ──────────────────────────────────────
+    # Append runtime actor nodes (group 'agent-activity') and the three edge
+    # layers. Agent edges are exempt from the wiki type/bridge cuts (they carry
+    # no wikilink/mention/reference type) and are gated solely by per-layer
+    # toggles in the browser via their 'layer' field. score_deg = log(weight)
+    # so heavier interactions rank higher under the existing visibility budget.
+    if agent_data:
+        _agent_color = COLORS['agent-activity']
+        _existing_ids = filepath_set  # wiki node ids already present
+        _agent_ids = set()
+        for an in agent_data.get('agent_nodes', []):
+            aid = an['id']
+            _agent_ids.add(aid)
+            sessions = an.get('sessions', 0)
+            events = an.get('events', 0)
+            node_refs = an.get('node_refs', 0)
+            # Size: a touch larger than wiki nodes (2–5) so actors read as hubs.
+            size = max(3, min(11, 3 + int(round(math.log(sessions + 1) * 1.4))))
+            profile = (
+                "# " + an.get('label', aid) + "\n\n"
+                "**Kind:** " + str(an.get('kind', '')) + " · "
+                "**Category:** " + str(an.get('category', '')) + "\n\n"
+                "- Sessions: " + str(sessions) + "\n"
+                "- Events: " + str(events) + "\n"
+                "- Distinct vault nodes touched: " + str(node_refs) + "\n\n"
+                "*Runtime agent actor (OpenStory telemetry). Edge layers: "
+                "co-reference substrate (→ wiki nodes it touched), projected "
+                "co-reference (↔ agents sharing nodes), and directed "
+                "write→read flow.*"
+            )
+            nodes.append({
+                'id': aid,
+                'label': an.get('label', aid),
+                'directory': 'agent-activity',
+                'date': '',
+                'color': _agent_color,
+                'group': 'agent-activity',
+                'size': size,
+                'content': profile,
+                'has_tags': [],
+                'references': [],
+                'kind': an.get('kind', ''),
+                'category': an.get('category', ''),
+            })
+
+        def _agent_edge(s, t, layer, weight):
+            return {
+                'source': s, 'target': t, 'layer': layer,
+                'weight': weight,
+                'score_deg': round(math.log(weight + 1), 3),
+                'score_type': 1.0,
+                'score_bridge': 0.0,
+            }
+
+        skipped_substrate = 0
+        for e in agent_data.get('coref_substrate', []):
+            s, t, w = e['source'], e['target'], e.get('weight', 1)
+            # source is an agent actor; target must be an existing wiki node.
+            if s in _agent_ids and t in _existing_ids:
+                links.append(_agent_edge(s, t, 'substrate', w))
+            else:
+                skipped_substrate += 1
+        for e in agent_data.get('coref_projected', []):
+            s, t, w = e['source'], e['target'], e.get('weight', 1)
+            if s in _agent_ids and t in _agent_ids:
+                links.append(_agent_edge(s, t, 'projected', w))
+        for e in agent_data.get('flow', []):
+            s, t, w = e['source'], e['target'], e.get('weight', 1)
+            if s in _agent_ids and t in _agent_ids:
+                links.append(_agent_edge(s, t, 'flow', w))  # directed (source→target)
+
+        print("Agent layer merged: " + str(len(_agent_ids)) + " actor nodes; "
+              + "substrate=" + str(sum(1 for l in links if l.get('layer') == 'substrate'))
+              + " (skipped " + str(skipped_substrate) + " w/ missing wiki target), "
+              + "projected=" + str(sum(1 for l in links if l.get('layer') == 'projected'))
+              + ", flow=" + str(sum(1 for l in links if l.get('layer') == 'flow')))
 
     # ── PAYLOAD COMPRESSION: intern link source/target as integer indices ──
     # Each link previously stored two ~80-char filepath strings. Replacing them
@@ -605,6 +698,11 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
           <span style="display:inline-block;width:14px;height:0;border-top:1.5px dashed #aaa;vertical-align:middle;flex-shrink:0;"></span>
           <span class="filter-label">Within category</span>
         </div>
+        <div style="font-size:10px;color:#888;margin:6px 0 2px 4px;">Agent layers (OpenStory)</div>
+        <div class="filter-item"><input type="checkbox" id="chk-layer-substrate" onchange="toggleLayer('substrate', this.checked)"><span class="filter-dot" style="background:#7A6E9E"></span><span class="filter-label">Co-ref substrate &middot; agent&rarr;wiki</span></div>
+        <div class="filter-item"><input type="checkbox" id="chk-layer-projected" onchange="toggleLayer('projected', this.checked)"><span class="filter-dot" style="background:#5BC0BE"></span><span class="filter-label">Projected co-ref &middot; agent&harr;agent</span></div>
+        <div class="filter-item"><input type="checkbox" id="chk-layer-flow" onchange="toggleLayer('flow', this.checked)"><span class="filter-dot" style="background:#E8954A"></span><span class="filter-label">Write&rarr;read flow &middot; directed</span></div>
+        <div class="filter-item"><input type="checkbox" id="chk-substrate-context" onchange="toggleSubstrateContext(this.checked)"><span class="filter-dot" style="background:#444a5e"></span><span class="filter-label">Substrate context &middot; wiki files agents touch</span></div>
         <hr>
         <h3 style="display:flex;align-items:center;gap:4px;">
           <input type="checkbox" id="chk-all-tags" onchange="toggleAllTags(this.checked)" style="margin-right:4px;cursor:pointer;">
@@ -796,6 +894,9 @@ var groupVisibility = {};
 // every Score-mode change and Edge-type checkbox to throw ReferenceError.
 var activeLinks = [];
 var activeNodes = [];
+// Live d3 selection of the currently rendered (budget-joined) edge <line>s.
+// Owned by applyEdgeFilters(); read by the simulation tick handler.
+var linkSel = null;
 var playSpeed = 1;
 var isMuted = false;
 var brightness = 1;
@@ -814,6 +915,42 @@ var EDGE_COLOR = {
 };
 var showEdgeType   = { wikilink: true, mention: true, reference: true };
 var showEdgeBridge = { cross: true, same: true };
+
+// ── AGENT EDGE LAYERS (OpenStory) ──
+// Agent edges carry a 'layer' field instead of a wikilink/mention/reference
+// 'type', so they're exempt from the type/bridge cuts and gated solely by
+// these per-layer toggles. Default OFF in the master Sociogram; the Agent
+// Explorer preset (applyAgentSociogramPreset / #agents hash) turns them on.
+var LAYER_COLOR = { substrate: '#7A6E9E', projected: '#5BC0BE', flow: '#E8954A' };
+var showLayer   = { substrate: false, projected: false, flow: false };
+// Substrate context: when on, wiki nodes that are TARGETS of substrate edges
+// pass the group cut even if their group is unchecked. This is what lets the
+// Agent Explorer preset show the substrate layer (agent→wiki) — without it,
+// hiding the wiki groups hides every substrate edge's far endpoint, and
+// H-Admin's dominant centrality (hundreds of substrate edges) is invisible.
+var substrateContextOn = false;
+var _substrateTargetIds = null;  // lazily built Set of wiki node ids
+function isSubstrateTarget(id) {
+  if (_substrateTargetIds === null) {
+    _substrateTargetIds = {};
+    LINKS.forEach(function(l) {
+      if (l.layer === 'substrate') {
+        var tid = typeof l.target === 'object' ? l.target.id : l.target;
+        _substrateTargetIds[tid] = true;
+      }
+    });
+  }
+  return _substrateTargetIds[id] === true;
+}
+// True for any edge that belongs to an agent layer (gated by showLayer, not
+// the type/bridge cuts). Single source of truth for the three call sites that
+// decide edge admissibility (applyEdgeFilters filter, paint, rebuildGraph).
+function edgePassesCuts(e) {
+  if (e.layer) return showLayer[e.layer] !== false;
+  var t = e.type || 'reference';
+  var b = e.bridge || 'cross';
+  return (showEdgeType[t] !== false) && (showEdgeBridge[b] !== false);
+}
 
 // ── CONTENT TAG CUTS (Pass G) ──
 // Each entry default-OFF. When ALL are off → no tag cut applies (every file
@@ -992,12 +1129,12 @@ function inlineFormat(text) {
 
 // ── RENDERING LIMITS ──
 var MAX_NODES = 20000;
-// Safety ceiling on edges in the DOM. Set far above any realistic cut-survivor
-// count so it never fires in practice. The real visibility lever is the
-// score-based budget in applyEdgeFilters() (2,500 at 1× zoom, growing with zoom).
-// If activeLinks ever exceeds this ceiling, the slice keeps the top by initial
+// Safety ceiling on edges fed to the FORCE SIMULATION only. The DOM holds just
+// the budget-joined subset (applyEdgeFilters: 2,500 at 1× zoom, growing with
+// zoom), and counts/"pass" figures always come from the uncapped activeLinks.
+// If the sim set would exceed this ceiling, the slice keeps the top by initial
 // Balanced score rather than alphabetic order — so degradation is graceful.
-var MAX_EDGES = 30000;
+var MAX_SIM_EDGES = 30000;
 var WARN_NODES = 1600;
 var WARN_EDGES = 2500;
 
@@ -1013,7 +1150,7 @@ var DEFAULT_ON = null; // null = all on
 // Groups to default OFF and exclude from "All". Changelog is intentionally
 // withheld from the Sociogram by default (12 noisy daily-change files would
 // dominate the cluster otherwise).
-var EXCLUDED_FROM_ALL = {'architecture/changelog': true};
+var EXCLUDED_FROM_ALL = {'architecture/changelog': true, 'agent-activity': true};
 
 function buildFilters() {
   var tradDiv = document.getElementById('tradition-filters');
@@ -1066,8 +1203,13 @@ function toggleAll(checked) {
   boxes.forEach(function(b) {
     var key = b.dataset.group;
     if (EXCLUDED_FROM_ALL[key]) {
-      b.checked = false;
-      groupVisibility[key] = false;
+      // Preserve, don't force off. "All" must not surprise-add these groups in
+      // the master view, but it also must not yank the actor group out from
+      // under the Agent Explorer (where it is deliberately on).
+      b.checked = !!groupVisibility[key];
+      if (b.checked) {
+        nodeCount += NODES.filter(function(n) { return n.group === key; }).length;
+      }
       return;
     }
     var groupNodes = NODES.filter(function(n) { return n.group === key; }).length;
@@ -1175,17 +1317,17 @@ function toggleAllEdges(checked) {
     var cb = document.getElementById('chk-edge-' + b);
     if (cb) cb.checked = checked;
   });
-  applyEdgeFilters();
+  refreshSimLinks();
 }
 function toggleEdgeType(t, checked) {
   showEdgeType[t] = checked;
   syncEdgesMaster();
-  applyEdgeFilters();
+  refreshSimLinks();
 }
 function toggleEdgeBridge(b, checked) {
   showEdgeBridge[b] = checked;
   syncEdgesMaster();
-  applyEdgeFilters();
+  refreshSimLinks();
 }
 function syncEdgesMaster() {
   var allOn =
@@ -1195,40 +1337,176 @@ function syncEdgesMaster() {
   var m = document.getElementById('chk-all-edges');
   if (m) m.checked = allOn;
 }
-function applyEdgeFilters() {
-  // Visibility = (passes type-cut) AND (passes bridge-cut) AND (in top-N by score)
-  // where N grows with zoom. Score is recomputed per active mode each call so a
-  // mode change re-ranks instantly without touching the force simulation.
-  var bucket = activeLinks || [];
-  // Step 1: filter by type/bridge cuts
-  var allowed = bucket.filter(function(e) {
-    var t = e.type || 'reference';
-    var b = e.bridge || 'cross';
-    return (showEdgeType[t] !== false) && (showEdgeBridge[b] !== false);
+function toggleLayer(layer, checked) {
+  // Agent edge layers are independent of the wiki edges master / type / bridge
+  // cuts. Like the wiki cuts, toggling re-derives the sim link set (force
+  // implication) and re-joins the budgeted DOM subset.
+  showLayer[layer] = checked;
+  refreshSimLinks();
+}
+// Agent Explorer preset: isolate the runtime-actor sociogram. Unchecks every
+// node group except 'agent-activity', turns on all three agent edge layers,
+// and leaves the wiki type/bridge cuts as-is (irrelevant once wiki nodes are
+// hidden). Invoked by the #agents URL hash (so the agents_tab iframe just sets
+// src="wiki_narration.html#agents") and exposed on window for direct calls.
+function applyAgentSociogramPreset() {
+  Object.keys(groupVisibility).forEach(function(k) { groupVisibility[k] = (k === 'agent-activity'); });
+  document.querySelectorAll('[data-group]').forEach(function(b) {
+    b.checked = (b.dataset.group === 'agent-activity');
   });
+  ['substrate','projected','flow'].forEach(function(L) {
+    showLayer[L] = true;
+    var cb = document.getElementById('chk-layer-' + L);
+    if (cb) cb.checked = true;
+  });
+  // Substrate context ON: reveal the wiki files agents touch, so the substrate
+  // layer (where most of the signal lives, incl. H-Admin's centrality) renders.
+  substrateContextOn = true;
+  var ctx = document.getElementById('chk-substrate-context');
+  if (ctx) ctx.checked = true;
+  // Suppress wiki↔wiki edge types: context nodes are endpoints, not an excuse
+  // to re-flood the view with high-scoring wiki hub edges that would out-rank
+  // the agent layers under the visibility budget. (Collection stays alive via
+  // the anyAgentLayer gate in rebuildGraph.)
+  ['wikilink','mention','reference'].forEach(function(t) {
+    showEdgeType[t] = false;
+    var cb = document.getElementById('chk-edge-' + t);
+    if (cb) cb.checked = false;
+  });
+  syncEdgesMaster();
+  if (typeof syncSectionCheckboxes === 'function') syncSectionCheckboxes();
+  rebuildGraph();
+}
+function toggleSubstrateContext(checked) {
+  substrateContextOn = checked;
+  rebuildGraph();
+}
+window.applyAgentSociogramPreset = applyAgentSociogramPreset;
+// Physics safety cap (simulation only). Score-aware so degradation is
+// graceful. Agent-layer edges (≤~2k, low log-weight scores) are exempt and
+// always retained — otherwise they'd be silently out-scored by wiki hubs and
+// vanish from the layout.
+function capForSim(list) {
+  if (list.length <= MAX_SIM_EDGES) return list;
+  var agentEdges = list.filter(function(e) { return e.layer; });
+  var wikiEdges  = list.filter(function(e) { return !e.layer; });
+  wikiEdges.forEach(function(e) {
+    e._initialScore = (e.score_deg || 0) + (e.score_type || 1) + (e.score_bridge || 0);
+  });
+  wikiEdges.sort(function(a, b) { return b._initialScore - a._initialScore; });
+  var room = Math.max(0, MAX_SIM_EDGES - agentEdges.length);
+  return agentEdges.concat(wikiEdges.slice(0, room));
+}
+
+// Called by every edge-cut toggle (type/bridge/layer/master). Re-derives the
+// simulation's link set from the edges passing the NEW cuts and reheats, so
+// toggling an edge family has a force implication — the layout physically
+// relaxes or tightens — rather than being a purely visual change.
+function refreshSimLinks() {
+  if (simulation) {
+    var lf = simulation.force('link');
+    if (lf) lf.links(capForSim((activeLinks || []).filter(edgePassesCuts)));
+    if (!holdForces) simulation.alpha(0.3).restart();
+  }
+  applyEdgeFilters();
+}
+
+function applyEdgeFilters() {
+  // Budgeted DOM join. Visibility = (passes type-cut) AND (passes bridge-cut)
+  // AND (in top-N by score), where N grows with zoom. Only those N edges exist
+  // as <line> elements — there are no hidden lines, so toggles never pay the
+  // cost of building tens of thousands of invisible DOM nodes. Score is
+  // recomputed per active mode each call so a mode change re-ranks instantly
+  // without touching the force simulation.
+  var bucket = activeLinks || [];
+  // Key includes layer/type so a wiki edge and an agent edge (or two different
+  // layers) between the same node pair can't collide in the visible set.
+  function _edgeKey(e) {
+    var s = (e.source && e.source.id) ? e.source.id : e.source;
+    var t = (e.target && e.target.id) ? e.target.id : e.target;
+    return (e.layer || e.type || '') + '|' + s + '|' + t;
+  }
+  // Step 1: filter by cuts (type/bridge for wiki edges, layer for agent edges)
+  var allowed = bucket.filter(edgePassesCuts);
   // Step 2: rank by current-mode score
   allowed.forEach(function(e) { e._renderScore = computeEdgeScore(e); });
   allowed.sort(function(a, b) { return b._renderScore - a._renderScore; });
   // Step 3: top-N where N = visibility budget (zoom-scaled)
   var budget = Math.min(visibilityBudget(), allowed.length);
-  var visibleSet = new Set();
-  for (var i = 0; i < budget; i++) {
-    var e = allowed[i];
-    var key = e.source.id ? e.source.id + '|' + e.target.id : e.source + '|' + e.target;
-    visibleSet.add(key);
+  var visible = allowed.slice(0, budget);
+  // Step 4: keyed join of exactly the visible subset. Endpoints were resolved
+  // to node objects in rebuildGraph, so edges outside the simulation's link
+  // set still draw correctly; positions are set here for the settled-sim case
+  // (the tick handler keeps them fresh while the sim runs).
+  if (linkG) {
+    linkSel = linkG.selectAll('line')
+      .data(visible, _edgeKey)
+      .join(
+        function(enter) {
+          return enter.append('line')
+            .attr('class', 'link-line')
+            .on('mouseover', function(event, d) {
+              if (!showHoverNames) return;
+              var sn = nodeById[d.source.id || d.source];
+              var tn = nodeById[d.target.id || d.target];
+              if (sn && tn) {
+                var metaColor, metaText, arrow;
+                if (d.layer) {
+                  var LAYER_LABEL = { substrate: 'co-ref substrate', projected: 'projected co-ref', flow: 'write→read flow' };
+                  metaColor = LAYER_COLOR[d.layer] || '#888';
+                  metaText = (LAYER_LABEL[d.layer] || d.layer) + (d.weight ? ' · weight ' + d.weight : '');
+                  arrow = (d.layer === 'flow') ? ' &#8594; ' : ' &#8596; ';  // flow is directed
+                } else {
+                  var typeLabel = (d.type || 'reference').replace('_',' ');
+                  var bridgeLabel = d.bridge === 'same' ? 'within category' : 'crosses categories';
+                  var ref = d.reference ? ' · ' + escapeHtml(d.reference) : '';
+                  metaColor = EDGE_COLOR[d.type || 'reference'] || '#888';
+                  metaText = escapeHtml(typeLabel) + ' · ' + escapeHtml(bridgeLabel) + ref;
+                  arrow = ' &#8596; ';
+                }
+                showTooltip(event,
+                  '<span class="tt-title" onclick="openNodeByLabel(\\'' + escapeAttr(sn.label) + '\\')">' + escapeHtml(sn.label) + '</span>' + arrow +
+                  '<span class="tt-title" onclick="openNodeByLabel(\\'' + escapeAttr(tn.label) + '\\')">' + escapeHtml(tn.label) + '</span>' +
+                  '<div class="tt-dir" style="margin-top:3px;color:' + metaColor + ';">' + metaText + '</div>'
+                );
+              }
+            })
+            .on('mouseout', hideTooltip)
+            .on('click', function(event, d) {
+              // Edge click: collapse the Select-Files panel so the file viewer
+              // below it is immediately visible with the source node's content.
+              event.stopPropagation();
+              collapseFilterPanel();
+              var sn = nodeById[d.source.id || d.source];
+              var tn = nodeById[d.target.id || d.target];
+              if (sn) showLeftPage(sn);
+              if (tn) showRightPanel(tn);
+            });
+        },
+        function(update) { return update; },
+        function(exit) { return exit.remove(); }
+      );
+    /* Color encodes edge type (wikilink/mention/reference); dash encodes whether
+       the edge crosses content categories (solid) or stays within one (dashed).
+       Agent-layer edges colour by layer; wiki edges keep the type colour.
+       Set on the merged selection so brightness changes apply to re-entrants. */
+    linkSel
+      .attr('stroke', function(d) { return d.layer ? (LAYER_COLOR[d.layer] || '#999') : (EDGE_COLOR[d.type || 'reference'] || '#777'); })
+      .attr('stroke-width', function(d) { return d.layer ? 0.9 : 0.6; })
+      .attr('stroke-dasharray', function(d) { return (!d.layer && d.bridge === 'same') ? '3,3' : null; })
+      .attr('opacity', Math.min(0.5 * brightness, 1))
+      .attr('x1', function(d) { return d.source.x; })
+      .attr('y1', function(d) { return d.source.y; })
+      .attr('x2', function(d) { return d.target.x; })
+      .attr('y2', function(d) { return d.target.y; });
   }
-  // Step 4: paint
-  d3.selectAll('.link-line').attr('display', function(d) {
-    var t = d.type || 'reference';
-    var b = d.bridge || 'cross';
-    var typeBridgeOk = (showEdgeType[t] !== false) && (showEdgeBridge[b] !== false);
-    var key = d.source.id ? d.source.id + '|' + d.target.id : d.source + '|' + d.target;
-    return (typeBridgeOk && visibleSet.has(key)) ? null : 'none';
-  });
   // Step 5: status indicator + dynamic banner counts (Pass G)
+  // Three-part readout: shown (top-N rendered, the ONLY edges in the DOM) /
+  // passing all active cuts (uncapped) / total (whole dataset, incl. agents).
   var statusEl = document.getElementById('edge-status');
   if (statusEl) {
-    statusEl.textContent = budget + ' / ' + bucket.length + ' edges';
+    statusEl.textContent = budget + ' shown / ' + allowed.length + ' pass / ' + LINKS.length + ' total edges';
+    statusEl.title = 'Edges — shown (top-scored that fit the zoom budget; nothing else is rendered) / passing all active cuts / total in dataset';
   }
   updateBannerCounts();
 }
@@ -1319,6 +1597,10 @@ function setDateThreshold(idx) {
 }
 function nodePassesDateCut(node) {
   if (!dateThreshold) return true;
+  // Actor nodes are cumulative telemetry, not single-dated events — they carry
+  // no date, so without this exemption any threshold instantly hides all of
+  // them (and every agent edge with them).
+  if (node.group === 'agent-activity') return true;
   var d = node.date || '';
   return d && d >= dateThreshold;
 }
@@ -1653,7 +1935,13 @@ function rebuildGraph() {
   // Pass G — node admission requires passing every active cut: group, content
   // tag (default-no-cut), and date threshold (default-no-cut).
   activeNodes = NODES.filter(function(n) {
-    if (!groupVisibility[n.group]) return false;
+    if (!groupVisibility[n.group]) {
+      // Substrate-context override: admit hidden-group wiki nodes that agents
+      // actually touch, so substrate edges have a visible far endpoint. Gated
+      // on the actor group being visible — context exists to serve agent
+      // edges, so "None" (or unchecking Agent activity) blanks it too.
+      if (!(substrateContextOn && groupVisibility['agent-activity'] && isSubstrateTarget(n.id))) return false;
+    }
     if (!nodePassesTagCut(n)) return false;
     if (!nodePassesDateCut(n)) return false;
     return true;
@@ -1661,34 +1949,39 @@ function rebuildGraph() {
   var activeIds = {};
   activeNodes.forEach(function(n) { activeIds[n.id] = true; });
 
-  // Filter edges — same hoisting note. activeLinks now holds the cut-surviving
-  // edge set. Pass-A architecture: instead of a hard MAX_EDGES alphabetic slice
-  // (which threw away high-score cross-vault edges), score-rank first and keep
-  // the top-MAX_EDGES. applyEdgeFilters then applies the zoom-based visibility
-  // budget on the DOM-rendered subset.
+  // Filter edges — activeLinks holds the FULL cut-surviving edge set, uncapped.
+  // It is the honest "pass" pool: applyEdgeFilters() counts it and joins only
+  // the budgeted top-N into the DOM, so no hidden <line> elements ever exist.
+  // A separate, capped simLinks set feeds the force layout only (physics cost).
   activeLinks = [];
-  if (edgesVisible) {
+  var simLinks = [];
+  // Collect when wiki edges are on OR any agent layer is on. edgesVisible is
+  // the wiki-edges master; previously it also gated agent-layer collection, so
+  // unchecking all wiki edge types silently killed the agent sociogram too.
+  var anyAgentLayer = showLayer.substrate || showLayer.projected || showLayer.flow;
+  if (edgesVisible || anyAgentLayer) {
     LINKS.forEach(function(l) {
       var sid = typeof l.source === 'object' ? l.source.id : l.source;
       var tid = typeof l.target === 'object' ? l.target.id : l.target;
-      if (activeIds[sid] && activeIds[tid]) activeLinks.push(l);
+      if (activeIds[sid] && activeIds[tid]) {
+        // Resolve endpoints to node objects up front so any budgeted edge can
+        // be drawn even when it isn't part of the force-simulation link set.
+        l.source = nodeById[sid];
+        l.target = nodeById[tid];
+        activeLinks.push(l);
+      }
     });
-    // Safety net only — with MAX_EDGES = 30000 this never fires for current
-    // data. Kept score-aware so any future runaway dataset degrades gracefully.
-    // No warning banner: applyEdgeFilters() and the bottom-center status
-    // indicator already report visible/total truthfully.
-    if (activeLinks.length > MAX_EDGES) {
-      activeLinks.forEach(function(e) {
-        e._initialScore = (e.score_deg || 0) + (e.score_type || 1) + (e.score_bridge || 0);
-      });
-      activeLinks.sort(function(a, b) { return b._initialScore - a._initialScore; });
-      activeLinks = activeLinks.slice(0, MAX_EDGES);
-    }
+    // The force layout follows the active edge cuts: only cut-passing edges
+    // exert link force, so toggling an edge family physically loosens or
+    // tightens the layout (capForSim applies the physics safety cap).
+    simLinks = capForSim(activeLinks.filter(edgePassesCuts));
   }
 
-  // Update status
+  // Update status — nodes only. All edge counts live in #edge-status, written
+  // by applyEdgeFilters(); the old "edges in view" here counted DOM-loaded
+  // (capped) edges, contradicting the budgeted "shown" readout.
   var statusEl = document.getElementById('graph-status');
-  if (statusEl) statusEl.textContent = activeNodes.length + ' nodes, ' + activeLinks.length + ' edges';
+  if (statusEl) statusEl.textContent = activeNodes.length + ' / ' + NODES.length + ' nodes';
 
   // Rebuild SVG elements — clear and recreate
   linkG.selectAll('*').remove();
@@ -1698,50 +1991,8 @@ function rebuildGraph() {
   var width = container.clientWidth;
   var height = container.clientHeight;
 
-  var link = linkG.selectAll('line')
-    .data(activeLinks)
-    .join('line')
-    .attr('class', 'link-line')
-    /* Color encodes edge type (wikilink/mention/reference); dash encodes whether
-       the edge crosses content categories (solid) or stays within one (dashed).
-       Legacy data without type/bridge fields defaults to reference + cross. */
-    .attr('stroke', function(d) { return EDGE_COLOR[d.type || 'reference'] || '#777'; })
-    .attr('stroke-width', 0.6)
-    .attr('stroke-dasharray', function(d) { return (d.bridge === 'same') ? '3,3' : null; })
-    .attr('opacity', Math.min(0.5 * brightness, 1))
-    .attr('display', function(d) {
-      var t = d.type || 'reference';
-      var b = d.bridge || 'cross';
-      var on = (showEdgeType[t] !== false) && (showEdgeBridge[b] !== false);
-      return on ? null : 'none';
-    })
-    .on('mouseover', function(event, d) {
-      if (!showHoverNames) return;
-      var sn = nodeById[d.source.id || d.source];
-      var tn = nodeById[d.target.id || d.target];
-      if (sn && tn) {
-        var typeLabel = (d.type || 'reference').replace('_',' ');
-        var bridgeLabel = d.bridge === 'same' ? 'within category' : 'crosses categories';
-        var ref = d.reference ? ' · ' + escapeHtml(d.reference) : '';
-        showTooltip(event,
-          '<span class="tt-title" onclick="openNodeByLabel(\\'' + escapeAttr(sn.label) + '\\')">' + escapeHtml(sn.label) + '</span> &#8596; ' +
-          '<span class="tt-title" onclick="openNodeByLabel(\\'' + escapeAttr(tn.label) + '\\')">' + escapeHtml(tn.label) + '</span>' +
-          '<div class="tt-dir" style="margin-top:3px;color:' + (EDGE_COLOR[d.type || 'reference'] || '#888') + ';">' +
-          escapeHtml(typeLabel) + ' · ' + escapeHtml(bridgeLabel) + ref + '</div>'
-        );
-      }
-    })
-    .on('mouseout', hideTooltip)
-    .on('click', function(event, d) {
-      // Edge click: collapse the Select-Files panel so the file viewer below
-      // it is immediately visible with the source node's content.
-      event.stopPropagation();
-      collapseFilterPanel();
-      var sn = nodeById[d.source.id || d.source];
-      var tn = nodeById[d.target.id || d.target];
-      if (sn) showLeftPage(sn);
-      if (tn) showRightPanel(tn);
-    });
+  // Edge <line> elements are created by applyEdgeFilters() (budgeted DOM join),
+  // invoked at the end of rebuildGraph once the simulation exists.
 
   var node = nodeG.selectAll('circle')
     .data(activeNodes)
@@ -1785,7 +2036,7 @@ function rebuildGraph() {
   // Only run simulation on active nodes
   if (activeNodes.length > 0) {
     simulation = d3.forceSimulation(activeNodes)
-      .force('link', d3.forceLink(activeLinks).id(function(d) { return d.id; }).distance(60).strength(0.15))
+      .force('link', d3.forceLink(simLinks).id(function(d) { return d.id; }).distance(60).strength(0.15))
       .force('charge', d3.forceManyBody().strength(-20).theta(0.9))
       .force('center', d3.forceCenter(width / 2, height / 2))
       .force('collide', d3.forceCollide().radius(function(d) { return d.size + 1; }).iterations(1))
@@ -1799,10 +2050,13 @@ function rebuildGraph() {
         .force('ency', d3.forceY(function(d) { return targetY(d, height); }).strength(0.06));
     }
     simulation.on('tick', function() {
-        link.attr('x1', function(d) { return d.source.x; })
-            .attr('y1', function(d) { return d.source.y; })
-            .attr('x2', function(d) { return d.target.x; })
-            .attr('y2', function(d) { return d.target.y; });
+        // linkSel is the live budget-joined selection owned by applyEdgeFilters.
+        if (linkSel) {
+          linkSel.attr('x1', function(d) { return d.source.x; })
+                 .attr('y1', function(d) { return d.source.y; })
+                 .attr('x2', function(d) { return d.target.x; })
+                 .attr('y2', function(d) { return d.target.y; });
+        }
         node.attr('cx', function(d) { return d.x; })
             .attr('cy', function(d) { return d.y; });
       });
@@ -2711,6 +2965,12 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   initGraph();
   updateBannerCounts();
+  // Agent Explorer entry point: wiki_narration.html#agents auto-applies the
+  // runtime-actor preset (used by the agents_tab iframe). Master view (no hash)
+  // is unchanged. Run after initGraph so groupVisibility/checkboxes exist.
+  if (window.location.hash === '#agents') {
+    applyAgentSociogramPreset();
+  }
   // Two-stage fit: first pass at 800ms gets the user onto a populated cluster
   // before the simulation has fully settled; second pass at 2500ms re-fits.
   setTimeout(fitAll, 800);
@@ -2725,14 +2985,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 def main():
     if len(sys.argv) < 3:
-        print("Usage: python generate_visualization.py <input.json> <output.html>")
+        print("Usage: python generate_visualization.py <input.json> <output.html> [agent_node_edges.json]")
         sys.exit(1)
 
     input_path = sys.argv[1]
     output_path = sys.argv[2]
+    agent_data_path = sys.argv[3] if len(sys.argv) > 3 else None
 
     data = load_json(input_path)
-    nodes, links = build_graph_data(data)
+    agent_data = None
+    if agent_data_path:
+        # Fail loud: a supplied path that doesn't exist is an error, not a
+        # silent skip (Rule 12).
+        if not os.path.exists(agent_data_path):
+            print("ERROR: agent data file not found: " + agent_data_path)
+            sys.exit(1)
+        agent_data = load_json(agent_data_path)
+    nodes, links = build_graph_data(data, agent_data)
     nodes_json = json.dumps(nodes, ensure_ascii=False)
     links_json = json.dumps(links, ensure_ascii=False)
 

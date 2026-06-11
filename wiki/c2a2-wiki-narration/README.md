@@ -23,6 +23,19 @@ A self-contained HTML visualization that renders ~1,647 wiki files as an interac
 
 ### Generate the Visualization
 
+**For the C2A2 Sociogram, ALWAYS use the wrapper — never run the scripts directly:**
+
+```bash
+bash wiki/c2a2-wiki-narration/regen_sociogram.sh
+```
+
+It hardcodes the required `--summa` flag and the agent-telemetry input
+(`agents/openstory/agent_node_edges.json`), and refuses to install a build
+missing either layer. Running the scripts manually has silently dropped all
+Summa nodes three times (2026-05-19 ×2, 2026-06-09).
+
+For other vaults, the manual pipeline is:
+
 ```bash
 # 1. Extract data from your vault
 python3 scripts/extract_vault_data.py /path/to/vault > /tmp/vault_data.json
