@@ -1,0 +1,2539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Education Explorer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+            /* Flex column so .container absorbs whatever height the header
+               actually takes (it wraps to two lines in the explorer shell). */
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* TOP BAR */
+        .top-bar {
+            background: linear-gradient(135deg, #0a1628 0%, #1a2a4a 100%);
+            color: white;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .top-bar-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex: 1;
+        }
+
+        .top-title {
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .badges {
+            display: flex;
+            gap: 8px;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 20px;
+            padding: 4px 10px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .mode-toggle {
+            display: flex;
+            gap: 8px;
+        }
+
+        .mode-btn {
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .mode-btn.active {
+            background: #ff6b6b;
+            border-color: #ff6b6b;
+        }
+
+        .mode-btn:hover {
+            background: rgba(255,255,255,0.25);
+        }
+
+        /* MAIN LAYOUT */
+        .container {
+            display: flex;
+            flex: 1;
+            min-height: 0;
+            gap: 0;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 280px;
+            background: white;
+            border-right: 1px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .sidebar-tabs {
+            display: flex;
+            border-bottom: 1px solid #e0e0e0;
+            background: #fafafa;
+        }
+
+        .sidebar-tab {
+            flex: 1;
+            padding: 12px;
+            text-align: center;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+            color: #666;
+        }
+
+        .sidebar-tab.active {
+            color: #0a1628;
+            border-bottom-color: #ff6b6b;
+        }
+
+        .sidebar-content {
+            flex: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .search-box {
+            padding: 10px;
+            background: white;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+
+        .toc-item {
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 13px;
+            border-left: 3px solid transparent;
+            transition: all 0.2s;
+            color: #333;
+        }
+
+        .toc-item.level-1 {
+            font-weight: 600;
+            background: #f5f5f5;
+            margin-top: 8px;
+            color: #0a1628;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .toc-item.level-2 {
+            margin-left: 15px;
+            font-weight: 400;
+        }
+
+        .toc-item:hover {
+            background: rgba(255,107,107,0.1);
+            border-left-color: #ff6b6b;
+        }
+
+        .toc-item.active {
+            background: rgba(255,107,107,0.15);
+            border-left-color: #ff6b6b;
+            color: #ff6b6b;
+        }
+
+        /* PHYSICIST TABS */
+        .physicist-tabs {
+            display: flex;
+            gap: 8px;
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            overflow-x: auto;
+        }
+
+        .physicist-tab {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 11px;
+            font-weight: 500;
+            white-space: nowrap;
+            transition: all 0.2s;
+        }
+
+        .physicist-tab.active {
+            background: #ff6b6b;
+            color: white;
+            border-color: #ff6b6b;
+        }
+
+        .physicist-card {
+            padding: 15px;
+            display: none;
+        }
+
+        .physicist-card.active {
+            display: block;
+        }
+
+        .physicist-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: #0a1628;
+            margin-bottom: 4px;
+        }
+
+        .physicist-role {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .physicist-summary {
+            font-size: 12px;
+            line-height: 1.5;
+            color: #555;
+            margin-bottom: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .cds-card {
+            background: #f9f9f9;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            padding: 8px;
+            margin: 8px 0;
+            font-size: 11px;
+        }
+
+        .cds-return-btn {
+            display: block; cursor: pointer; font-size: 11px; font-weight: 600;
+            color: #2563eb; background: #eff6ff; border: 1px solid #bfdbfe;
+            border-radius: 5px; padding: 4px 10px; margin: 6px 8px;
+        }
+        .cds-return-btn:hover { background: #dbeafe; }
+        #cds-return-doc { position: sticky; top: 6px; z-index: 5; margin: 6px auto; }
+        .cds-clickable { cursor: pointer; }
+        .cds-clickable:hover { background: #f0f4f8; }
+        .cds-sim-link { text-decoration: underline dotted; }
+        .cds-sim-link:hover { color: #2563eb; }
+        .cds-row {
+            padding: 4px 0;
+            display: flex;
+            gap: 6px;
+        }
+
+        .cds-letter {
+            font-weight: 700;
+            min-width: 16px;
+            text-align: center;
+            border-radius: 3px;
+            color: white;
+            font-size: 10px;
+            padding: 2px 4px;
+        }
+
+        .c-letter { background: #2563eb; }
+        .d-letter { background: #16a34a; }
+        .s-letter { background: #dc2626; }
+
+        /* MAIN PANE */
+        .main-pane {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: white;
+        }
+
+        .doc-pane {
+            flex: 1;
+            overflow-y: auto;
+            padding: 30px 40px;
+            background: white;
+        }
+
+        .concept-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            transition: box-shadow 0.2s;
+            scroll-margin-top: 70px;
+        }
+
+        .concept-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .doc-h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0a1628;
+            margin-bottom: 8px;
+        }
+
+        .concept-topic-badge {
+            display: inline-block;
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .concept-equations {
+            background: #f0f4ff;
+            border-left: 3px solid #3b82f6;
+            padding: 12px 15px;
+            margin: 12px 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1e40af;
+            overflow-x: auto;
+        }
+
+        .doc-body {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #444;
+            margin: 12px 0;
+        }
+
+        .ai-buttons {
+            display: flex;
+            gap: 8px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .ai-btn {
+            padding: 8px 12px;
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .ai-btn:hover {
+            background: #ff6b6b;
+            color: white;
+            border-color: #ff6b6b;
+        }
+
+        .phet-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #e8f5e9;
+            color: #2e7d32;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            border: 1px solid #81c784;
+            transition: all 0.2s;
+        }
+
+        .phet-link:hover {
+            background: #c8e6c9;
+        }
+
+        .instructor-only {
+            background: #fffde7;
+            border: 1px solid #fbc02d;
+            border-radius: 6px;
+            padding: 12px;
+            margin-top: 15px;
+            font-size: 12px;
+            display: none;
+        }
+
+        .instructor-only.visible {
+            display: block;
+        }
+
+        .instructor-only h4 {
+            font-size: 12px;
+            color: #f57f17;
+            margin-top: 8px;
+            margin-bottom: 4px;
+        }
+
+        .instructor-only p {
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        /* CHAT PANE */
+        .chat-pane {
+            background: white;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            resize: vertical;
+            overflow: hidden;
+        }
+
+        .chat-header {
+            padding: 12px 15px;
+            background: #f5f5f5;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .chat-mode-buttons {
+            display: flex;
+            gap: 6px;
+        }
+
+        .chat-mode-btn {
+            padding: 6px 10px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 11px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .chat-mode-btn.active {
+            background: #3b82f6;
+            color: white;
+            border-color: #3b82f6;
+        }
+
+        .chat-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 8px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 13px;
+        }
+
+        .chat-input-area {
+            display: flex;
+            gap: 8px;
+            padding: 10px;
+            border-top: 1px solid #e0e0e0;
+            background: #fafafa;
+        }
+
+        .chat-input-area input {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        .chat-input-area button {
+            padding: 8px 12px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .api-key-area {
+            padding: 8px 12px;
+            border-top: 1px solid #e0e0e0;
+            background: #f9f9f9;
+            font-size: 11px;
+        }
+
+        .api-key-area input {
+            padding: 6px;
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 11px;
+        }
+
+        .summary-open-btn { display:block; width:100%; padding:8px 10px; margin-bottom:10px; background:#f8f6f2; border:1px solid #ddd; border-radius:4px; cursor:pointer; font-size:12px; font-weight:600; font-family:system-ui,sans-serif; text-align:left; transition:background .15s }
+        .summary-open-btn:hover { background:#ede8e0 }
+
+        /* PRS cards */
+        .prs-section-head { font-size:10px; font-family:system-ui,sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:#888; margin:10px 0 5px; display:flex; align-items:center; gap:6px }
+        .prs-badge { padding:1px 6px; border-radius:8px; font-size:9px; font-weight:700 }
+        .prs-card { border-left:3px solid #999; padding:6px 8px; margin-bottom:6px; background:#fafafa; border-radius:0 4px 4px 0; font-size:11px; line-height:1.45 }
+        .prs-label { font-size:10px; font-weight:700; color:#888; margin-bottom:4px; font-family:system-ui,sans-serif }
+        .prs-row { display:flex; gap:6px; margin-bottom:3px }
+        .prs-letter { font-weight:900; font-size:12px; flex-shrink:0; width:14px; font-family:system-ui,sans-serif }
+        /* summary toggle */
+        .summary-trigger-wrap { margin-bottom:10px; border:1px solid #ddd; border-radius:4px; overflow:hidden }
+        .summary-trigger { display:flex; justify-content:space-between; align-items:center; padding:7px 10px; background:#f8f6f2; cursor:pointer; font-size:12px; font-weight:600; font-family:system-ui,sans-serif; user-select:none }
+        .summary-trigger:hover { background:#ede8e0 }
+        .summary-arrow { transition:transform .2s; font-size:10px }
+        .summary-body { max-height:0; overflow-y:auto; transition:max-height .3s ease; padding:0 10px; font-size:12px; line-height:1.6; color:#333 }
+        .summary-body.open { max-height:320px; padding:10px }
+        .summary-body p { margin-bottom:.6em }
+        .summary-trigger-wrap.open .summary-arrow { transform:rotate(180deg) }
+
+        /* Summary popup modal */
+        .modal-overlay { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.5); z-index:1000; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity .25s }
+        .modal-overlay.open { opacity:1; pointer-events:auto }
+        .modal-box { background:#fff; border-radius:10px; width:560px; max-width:90vw; max-height:80vh; display:flex; flex-direction:column; box-shadow:0 20px 60px rgba(0,0,0,0.3); transform:translateY(20px); transition:transform .25s }
+        .modal-overlay.open .modal-box { transform:translateY(0) }
+        .modal-header { padding:16px 20px; border-bottom:1px solid #e0e0e0; display:flex; justify-content:space-between; align-items:center; flex-shrink:0 }
+        .modal-header h3 { font-size:17px; font-weight:700; margin:0 }
+        .modal-header .modal-role { font-size:12px; color:#666; margin-top:2px }
+        .modal-close { background:none; border:none; font-size:22px; cursor:pointer; color:#888; padding:4px 8px; border-radius:4px }
+        .modal-close:hover { background:#f0f0f0; color:#333 }
+        .modal-body { flex:1; overflow-y:auto; padding:20px; font-size:14px; line-height:1.7; color:#333 }
+        .modal-body p { margin-bottom:0.8em }
+
+        .chat-msg { padding:7px 11px; border-radius:7px; line-height:1.5; font-size:13px; max-width:95%; margin-bottom:4px }
+        .chat-msg.user { background:#dbeafe; align-self:flex-end; font-style:italic }
+        .chat-msg.assistant { background:#f0f7ee; align-self:flex-start; border:1px solid #c8e6c9; white-space:pre-wrap }
+        .chat-msg.system { background:#f3f3f3; align-self:flex-start; color:#555; font-size:12px }
+        .chat-msg.error { background:#fdecea; align-self:flex-start; color:#b71c1c; font-size:12px }
+        .chat-msg.result { background:#fff; border:1px solid #e0e0e0; align-self:flex-start; cursor:pointer; font-size:12px; max-width:100% }
+        .chat-msg.result:hover { background:#f0f8ff }
+        .api-bar { padding:4px 10px; background:#f7f4ee; border-bottom:1px solid #e0e0e0; display:flex; align-items:center; gap:6px; font-size:11px }
+        .api-bar label { color:#888; white-space:nowrap }
+        .api-bar input { flex:1; padding:3px 8px; border:1px solid #ddd; border-radius:3px; font-size:11px; font-family:monospace }
+        .api-bar input.set { background:#e8f5e9; border-color:#4caf50 }
+        .sim-embed { margin:15px 0; padding:15px; background:#f8fafc; border:1px solid #e0e0e0; border-radius:8px }
+
+        /* RESIZE HANDLE */
+        .resize-handle {
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(180deg, #e0e0e0 0%, #f5f5f5 100%);
+            cursor: ns-resize;
+            transition: background 0.2s;
+        }
+
+        .resize-handle:hover {
+            background: linear-gradient(180deg, #3b82f6 0%, #2563eb 100%);
+        }
+
+        /* CANVAS */
+        canvas {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            margin: 10px 0;
+            background: white;
+        }
+
+        .sim-controls {
+            display: flex;
+            gap: 15px;
+            margin: 12px 0;
+            flex-wrap: wrap;
+            font-size: 12px;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .control-group label {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .control-group input[type="range"] {
+            width: 150px;
+        }
+
+        .control-group .value {
+            font-weight: 600;
+            color: #0a1628;
+            min-width: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    <div class="top-bar-left">
+        <div class="top-title">⚛️ Physics Education Explorer — Undergraduate Concepts & Simulations</div>
+        <div class="badges">
+            <div class="badge">75 concepts</div>
+            <div class="badge">6 topic areas</div>
+            <div class="badge">6 physicists</div>
+        </div>
+    </div>
+    <div class="mode-toggle">
+        <button class="mode-btn active" onclick="setMode('student')">👨‍🎓 Student</button>
+        <button class="mode-btn" onclick="setMode('instructor')">👨‍🏫 Instructor</button>
+    </div>
+</div>
+
+<!-- MAIN CONTAINER -->
+<div class="container">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-tabs">
+            <div class="sidebar-tab active" onclick="setSidebarView('concepts')">📚 Concepts</div>
+            <div class="sidebar-tab" onclick="setSidebarView('physicists')">🧠 Physicists</div>
+            <div class="sidebar-tab" onclick="setSidebarView('progress')">📈 Progress</div>
+        </div>
+
+        <!-- CONCEPTS TAB -->
+        <div id="concepts-view" class="sidebar-content">
+            <div class="search-box">
+                <input type="text" id="concept-search" placeholder="Filter concepts..." onkeyup="filterConcepts()">
+            </div>
+            <div id="toc-container"></div>
+        </div>
+
+        <!-- PHYSICISTS TAB -->
+        <div id="physicists-view" class="sidebar-content" style="display:none;">
+            <div class="physicist-tabs" id="physicist-tabs"></div>
+            <div id="physicist-cards-container"></div>
+        </div>
+
+        <!-- PROGRESS TAB -->
+        <div id="progress-view" class="sidebar-content" style="display:none;overflow-y:auto;"></div>
+    </div>
+
+    <!-- MAIN PANE -->
+    <div class="main-pane">
+        <div class="doc-pane" id="doc-pane"></div>
+
+        <div class="resize-handle" onmousedown="startResize(event)"></div>
+
+        <!-- CHAT PANE -->
+        <div class="chat-pane">
+            <div class="chat-header">
+                <div class="chat-mode-buttons">
+                    <button class="chat-mode-btn active" onclick="setChatMode('explain')">💡 Explain</button>
+                    <button class="chat-mode-btn" onclick="setChatMode('problem')">📝 Problem</button>
+                    <button class="chat-mode-btn" onclick="setChatMode('analogy')">🔄 Analogy</button>
+                    <button class="chat-mode-btn" onclick="setChatMode('simulate')">🔬 Simulate</button>
+                </div>
+                <button class="chat-mode-btn" onclick="clearChat()" style="margin-left:auto;background:#555">✕ Clear</button>
+            </div>
+            <div class="api-bar">
+                <label title="Answers via the shared C2A2 broker (same pipeline as the RC Document Explorer, Community Explorer and Sociogram). Uncheck for keyword search."><input type="checkbox" id="chat-ai-mode" checked style="vertical-align:-2px;margin-right:4px">Ask AI</label>
+                <span id="key-status" style="font-size:10px;color:#888">Shared C2A2 pipeline — no key needed</span>
+            </div>
+            <div class="chat-content" id="chat-output">
+                <div class="chat-msg system">Ask AI answers via the shared C2A2 pipeline — no key needed. Uncheck “Ask AI” for plain keyword search. Try: <em>What is conservation of energy?</em> — <em>Explain Maxwell's equations</em> — <em>Give me a problem on projectile motion</em></div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask about physics, or search by keyword…" onkeypress="handleChatKeypress(event)">
+                <button onclick="doQuery()">Ask</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Summary Modal -->
+<div class="modal-overlay" id="summary-modal" onclick="if(event.target===this)closeSummaryModal()">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><h3 id="modal-name"></h3><div class="modal-role" id="modal-role"></div></div>
+            <button class="modal-close" onclick="closeSummaryModal()">✕</button>
+        </div>
+        <div class="modal-body" id="modal-body"></div>
+    </div>
+</div>
+
+<script>
+// ── Inlined shared module: wiki/lib/c2a2-search.js ─────────────────────────
+// Single source of truth lives at wiki/lib/c2a2-search.js; edit THERE and
+// re-inline. Inlined so this file stays self-contained (file:// friendly).
+'use strict';
+
+// c2a2-search.js
+// Shared C2A2 search-pipeline module. Holds the Pathway-00 broker URL,
+// device-id handling, the raw broker fetch with error-code translation,
+// and the web-cap / Tavily-down one-shot fallback that the Community
+// Explorer first shipped on 2026-05-28 (commit 479910d). Every C2A2
+// surface (Community Explorer, Sociogram, future Accelerator tabs)
+// imports this same module so behavior, banners, and caps stay aligned.
+//
+// Single source of truth: edit this file. The Sociogram (wiki_narration.html)
+// is regenerated by generate_visualization.py, which INLINES the contents
+// of this file into the self-contained HTML. Do not duplicate the code
+// in the Python template.
+//
+// API (attached to window.C2A2Search):
+//   - BROKER_URL              constant
+//   - getDeviceId()           -> stable per-browser UUID (localStorage)
+//   - callBroker({action,system,user,model})
+//                              -> Promise<payload>; throws Error whose
+//                              .message is one of:
+//                              'web-free-limit' | 'free-limit' |
+//                              'rate-limited'  | 'search-provider-down' |
+//                              'broker-http-N'
+//   - enrich({useWeb, dataset:{system,user,model?},
+//             web:{system,user,model?}?})
+//                              -> Promise<{payload, mode, transport, warning}>
+//                              On useWeb=true: tries 'web_enrich'; on
+//                              'web-free-limit' or 'search-provider-down'
+//                              falls back ONCE to 'enrich' with the
+//                              dataset prompts and attaches a banner.
+
+(function () {
+  const BROKER_URL = 'https://akhcocmgfwybdovqeovd.supabase.co/functions/v1/cc-broker';
+  const DEVICE_ID_KEY = 'c2a2_device_id';
+  const REQUEST_TIMEOUT_MS = 20000;
+
+  const getDeviceId = () => {
+    try {
+      let id = (localStorage.getItem(DEVICE_ID_KEY) || '').trim();
+      if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id)) {
+        id = (window.crypto && typeof crypto.randomUUID === 'function')
+          ? crypto.randomUUID()
+          : 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
+              const r = (Math.random() * 16) | 0;
+              return (c === 'x' ? r : (r & 0x3) | 0x8).toString(16);
+            });
+        localStorage.setItem(DEVICE_ID_KEY, id);
+      }
+      return id;
+    } catch (e) {
+      return '00000000-0000-4000-8000-000000000000';
+    }
+  };
+
+  const callBroker = async (opts) => {
+    const action = (opts && opts.action) || 'enrich';
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+    try {
+      const resp = await fetch(BROKER_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CC-Device': getDeviceId(),
+        },
+        body: JSON.stringify({
+          action: action,
+          system: opts.system,
+          user: opts.user,
+          model: opts.model,
+        }),
+        signal: controller.signal,
+      });
+      let body = null;
+      try { body = await resp.json(); } catch (e) { body = null; }
+      if (resp.status === 402) {
+        const code = body && body.error === 'web_free_limit_reached' ? 'web-free-limit' : 'free-limit';
+        const err = new Error(code); err.body = body; throw err;
+      }
+      if (resp.status === 429) {
+        const err = new Error('rate-limited'); err.body = body; throw err;
+      }
+      if (resp.status === 502 && body && body.error === 'search_provider_down') {
+        const err = new Error('search-provider-down'); err.body = body; throw err;
+      }
+      if (!resp.ok) {
+        const err = new Error('broker-http-' + resp.status); err.body = body; throw err;
+      }
+      return body || {};
+    } finally {
+      clearTimeout(timer);
+    }
+  };
+
+  // enrich() runs one broker call and, when web search is the active branch
+  // and the broker returns the cap-hit / provider-down sentinels, falls back
+  // ONCE to the dataset branch with a user-facing banner. Caller supplies
+  // both prompt pairs because system+user strings vary per consumer (the
+  // Community Explorer pins the answer to dataset candidates; the Sociogram
+  // pins it to visible vault nodes).
+  const enrich = async ({ useWeb, dataset, web }) => {
+    if (!dataset || typeof dataset.system !== 'string' || typeof dataset.user !== 'string') {
+      throw new Error('c2a2-search.enrich: dataset {system,user} required');
+    }
+    if (useWeb && (!web || typeof web.system !== 'string' || typeof web.user !== 'string')) {
+      throw new Error('c2a2-search.enrich: web {system,user} required when useWeb=true');
+    }
+
+    if (useWeb) {
+      try {
+        const payload = await callBroker({
+          action: 'web_enrich',
+          system: web.system,
+          user: web.user,
+          model: web.model,
+        });
+        return {
+          payload: payload,
+          mode: 'database-plus-web-cited',
+          transport: 'web-enriched',
+          warning: '',
+        };
+      } catch (err) {
+        if (err.message !== 'web-free-limit' && err.message !== 'search-provider-down') {
+          throw err;
+        }
+        const banner = err.message === 'web-free-limit'
+          ? 'External search cap reached today -- showing in-dataset results.'
+          : 'External search unavailable -- showing in-dataset results.';
+        const fallbackPayload = await callBroker({
+          action: 'enrich',
+          system: dataset.system,
+          user: dataset.user,
+          model: dataset.model,
+        });
+        return {
+          payload: fallbackPayload,
+          mode: err.message === 'search-provider-down'
+            ? 'external-search-unavailable'
+            : 'database-only-after-cap',
+          transport: 'openai-enriched',
+          warning: banner,
+        };
+      }
+    }
+
+    const payload = await callBroker({
+      action: 'enrich',
+      system: dataset.system,
+      user: dataset.user,
+      model: dataset.model,
+    });
+    return {
+      payload: payload,
+      mode: 'openai-enriched',
+      transport: 'openai-enriched',
+      warning: '',
+    };
+  };
+
+  window.C2A2Search = {
+    BROKER_URL: BROKER_URL,
+    getDeviceId: getDeviceId,
+    callBroker: callBroker,
+    enrich: enrich,
+  };
+})();
+
+</script>
+<script>
+// ============ GLOBAL STATE ============
+let currentMode = 'student';
+let currentChatMode = 'explain';
+let resizing = false;
+let currentPhysicist = null;
+
+// ============ MODE FUNCTIONS ============
+function setMode(mode) {
+    currentMode = mode;
+    document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    const instructorSections = document.querySelectorAll('.instructor-only');
+    instructorSections.forEach(sec => {
+        if (mode === 'instructor') {
+            sec.classList.add('visible');
+        } else {
+            sec.classList.remove('visible');
+        }
+    });
+}
+
+function setChatMode(mode) {
+    currentChatMode = mode;
+    document.querySelectorAll('.chat-mode-btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+}
+
+// ============ SIDEBAR FUNCTIONS ============
+function setSidebarView(view) {
+    /* Match the tab by its onclick argument rather than event.target,
+       so programmatic calls (e.g. CDS-card jumps) work too. */
+    document.querySelectorAll('.sidebar-tab').forEach(t => {
+        t.classList.toggle('active', String(t.getAttribute('onclick')).includes("'" + view + "'"));
+    });
+
+    if (view === 'physicists') showCdsReturn(false);
+    document.getElementById('concepts-view').style.display = view === 'concepts' ? 'flex' : 'none';
+    if (view === 'concepts') document.getElementById('concepts-view').style.flexDirection = 'column';
+    document.getElementById('physicists-view').style.display = view === 'physicists' ? 'block' : 'none';
+    document.getElementById('progress-view').style.display = view === 'progress' ? 'block' : 'none';
+    if (view === 'progress') buildProgressChart();
+}
+
+/* ── CDS triplet wiring: jump to concept / open simulation ── */
+function esc4attr(s) {
+    return String(s).replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+}
+function bestConceptFor(text) {
+    /* Deterministic keyword match over concept cards: title hits weigh 5x,
+       body hits 1x; stopwords dropped so glue words can't dominate. */
+    const STOP = new Set(['the','and','for','with','into','from','that','this','are','was','were','what','when','how','why','its','his','her','their','all','one','two','via','per','each','between','toward','causes','cause']);
+    const terms = [...new Set(String(text).toLowerCase().split(/[^a-z0-9]+/).filter(t => t.length > 2 && !STOP.has(t)))];
+    if (!terms.length) return null;
+    const cards = [...document.querySelectorAll('.concept-card')].map(card => ({
+        id: card.id,
+        title: (card.querySelector('.doc-h2') || { textContent: '' }).textContent.toLowerCase(),
+        body: card.textContent.toLowerCase()
+    }));
+    /* Rarity weighting: a term found in few cards (prism) says far more
+       than one found everywhere (light). */
+    const idf = {};
+    terms.forEach(t => {
+        const df = cards.filter(c => c.body.includes(t)).length;
+        idf[t] = df ? Math.log(1 + cards.length / df) : 0;
+    });
+    let best = null, bestScore = 0;
+    cards.forEach(c => {
+        let score = 0;
+        terms.forEach(t => {
+            if (!idf[t]) return;
+            let hits = 0, p = 0;
+            while ((p = c.body.indexOf(t, p)) !== -1) { hits++; p += t.length; }
+            score += ((c.title.includes(t) ? 3 : 0) + Math.min(hits, 3)) * idf[t];
+        });
+        if (score > bestScore) { bestScore = score; best = c.id; }
+    });
+    return best;
+}
+function exactCardFor(phrase) {
+    /* A concept card containing the phrase verbatim wins outright (the
+       physicist CDS texts copy concept-card CDS lines where one exists). */
+    if (!phrase || phrase.length < 8) return null;
+    const cards = [...document.querySelectorAll('.concept-card')].filter(c => c.textContent.includes(phrase));
+    return cards.length === 1 ? cards[0].id : null;
+}
+function resolveConceptFor(c, d, s) {
+    return exactCardFor(s) || exactCardFor(c) || exactCardFor(d) ||
+           bestConceptFor([c, d, s].filter(Boolean).join(' '));
+}
+let _cdsReturnIdx = null;
+function jumpToConceptFor(c, d, s) {
+    const id = resolveConceptFor(c, d, s);
+    if (!id) return;
+    /* Remember which physicist we came from, for the Return buttons. */
+    const tabs = [...document.querySelectorAll('.physicist-tab')];
+    _cdsReturnIdx = Math.max(0, tabs.findIndex(t => t.classList.contains('active')));
+    setSidebarView('concepts');
+    scrollToSection(id);
+    showCdsReturn(true);
+}
+function showCdsReturn(on) {
+    const name = on && physicists[_cdsReturnIdx] ? physicists[_cdsReturnIdx].name.split(' ').pop() : '';
+    ['cds-return-toc', 'cds-return-doc'].forEach(rid => {
+        let btn = document.getElementById(rid);
+        if (!btn) {
+            btn = document.createElement('button');
+            btn.id = rid;
+            btn.className = 'cds-return-btn';
+            btn.onclick = cdsReturn;
+            if (rid === 'cds-return-toc') {
+                const sb = document.getElementById('toc-container');
+                sb.parentNode.insertBefore(btn, sb);
+            } else {
+                document.getElementById('doc-pane').prepend(btn);
+            }
+        }
+        btn.textContent = '\u2190 Return to ' + name;
+        btn.style.display = on ? '' : 'none';
+    });
+}
+function cdsReturn() {
+    showCdsReturn(false);
+    setSidebarView('physicists');
+    if (_cdsReturnIdx !== null) showPhysicist(_cdsReturnIdx);
+}
+function openSimFor(c, d, s) {
+    /* Prefer the PhET URL of the matching concept card's button. */
+    const id = resolveConceptFor(c, d, s);
+    const card = id && document.getElementById(id);
+    const a = card && card.querySelector('a[href*="phet"]');
+    if (a) { window.open(a.href, '_blank'); return; }
+    jumpToConceptFor(c, d, s);
+}
+
+function filterConcepts() {
+    const query = document.getElementById('concept-search').value.toLowerCase();
+    document.querySelectorAll('.toc-item').forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(query) ? 'block' : 'none';
+    });
+}
+
+function scrollToSection(anchorId) {
+    const element = document.getElementById(anchorId);
+    if (element) {
+        /* Scroll the doc pane directly: deterministic in iframes and
+           throttled tabs, where smooth scrollIntoView can silently no-op. */
+        const pane = document.getElementById('doc-pane');
+        if (pane && pane.contains(element)) {
+            pane.scrollTop += element.getBoundingClientRect().top - pane.getBoundingClientRect().top - 12;
+        } else {
+            element.scrollIntoView();
+        }
+        element.classList.add('active');
+        setTimeout(() => element.classList.remove('active'), 2000);
+    }
+}
+
+// ============ CHAT FUNCTIONS ============
+function startResize(e) {
+    resizing = true;
+    const startY = e.clientY;
+    const startHeight = document.querySelector('.chat-pane').clientHeight;
+
+    document.addEventListener('mousemove', (e) => {
+        if (!resizing) return;
+        const diff = startY - e.clientY;
+        const newHeight = startHeight + diff;
+        if (newHeight > 100 && newHeight < 500) {
+            document.querySelector('.chat-pane').style.height = newHeight + 'px';
+        }
+    });
+
+    document.addEventListener('mouseup', () => {
+        resizing = false;
+    });
+}
+
+function handleChatKeypress(e) {
+    if (e.key === 'Enter') doQuery();
+}
+
+let chatHistory = [];
+
+function retrieveContext(query, n) {
+    const cards = document.querySelectorAll('.concept-card');
+    const results = [];
+    const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 2);
+    cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        const score = terms.reduce((s, t) => { let c=0, p=0; while((p=text.indexOf(t,p))!==-1){c++;p+=t.length} return s+c; }, 0);
+        if (score > 0) results.push({ el: card, text: card.textContent.substring(0, 800), score, id: card.id });
+    });
+    results.sort((a, b) => b.score - a.score);
+    return results.slice(0, n);
+}
+
+function addChatMsg(text, type) {
+    const d = document.createElement('div');
+    d.className = 'chat-msg ' + type;
+    d.textContent = text;
+    const output = document.getElementById('chat-output');
+    output.appendChild(d);
+    output.scrollTop = output.scrollHeight;
+}
+
+function clearChat() {
+    chatHistory = [];
+    document.getElementById('chat-output').innerHTML = '<div class="chat-msg system">Cleared.</div>';
+    document.getElementById('chat-input').value = '';
+}
+
+async function doQuery() {
+    const input = document.getElementById('chat-input');
+    const q = input.value.trim();
+    if (!q) return;
+    input.value = '';
+    addChatMsg(q, 'user');
+    chatHistory.push({ role: 'user', content: q });
+
+    const aiOn = document.getElementById('chat-ai-mode').checked &&
+                 window.C2A2Search && typeof C2A2Search.enrich === 'function';
+
+    // Keyword search fallback ("Ask AI" unchecked)
+    if (!aiOn) {
+        const results = retrieveContext(q, 6);
+        if (results.length === 0) { addChatMsg('No matching concepts found. Try different keywords, or check "Ask AI" for semantic answers.', 'system'); return; }
+        results.forEach(r => {
+            const d = document.createElement('div');
+            d.className = 'chat-msg result';
+            d.style.cursor = 'pointer';
+            d.textContent = r.text.substring(0, 200) + '…';
+            d.onclick = () => scrollToSection(r.id);
+            document.getElementById('chat-output').appendChild(d);
+        });
+        document.getElementById('chat-output').scrollTop = document.getElementById('chat-output').scrollHeight;
+        return;
+    }
+
+    // C2A2-broker-powered answer (shared Pathway-00 pipeline)
+    const ctx = retrieveContext(q, 6);
+    const ctxText = ctx.map(r => `[Concept: ${r.id}]\n${r.text}`).join('\n\n---\n\n');
+
+    const modePrompts = {
+        explain: 'Explain this physics concept at an undergraduate level. Use analogies, build intuition, and include relevant equations.',
+        problem: currentMode === 'instructor' ? 'Generate a practice problem with full worked solution, grading rubric, and common errors.' : 'Generate a practice problem. Give progressive hints before revealing the answer. Guide the student.',
+        analogy: 'Find vivid everyday analogies for this physics concept that build intuition. Explain why the analogy works and where it breaks down.',
+        simulate: 'Describe a thought experiment or mental simulation that demonstrates this principle. Walk through what happens step by step.'
+    };
+
+    const sys = `You are a physics tutor helping explore an undergraduate physics concept library covering Mechanics, Electromagnetism, Waves & Optics, Thermodynamics, Modern Physics, and Mathematical Methods. ${currentMode === 'student' ? 'The user is a student. Guide toward understanding with Socratic questions. Do not just give answers.' : 'The user is an instructor. Provide complete, rigorous answers with pedagogical notes.'}
+
+Mode: ${currentChatMode.toUpperCase()} — ${modePrompts[currentChatMode]}
+
+Use the retrieved concept passages below for context. Cite concept names when relevant.
+
+PASSAGES:
+${ctxText}`;
+
+    const btn = document.querySelector('.chat-input-area button');
+    btn.disabled = true;
+    const tp = document.createElement('div');
+    tp.className = 'chat-msg system';
+    tp.textContent = 'Claude is thinking…';
+    tp.style.fontStyle = 'italic';
+    document.getElementById('chat-output').appendChild(tp);
+
+    try {
+        /* Shared C2A2 broker (Pathway-00), same single source of access as the
+           RC Document Explorer, Community Explorer and Sociogram Ask panes.
+           History is folded into the user block because the broker takes one
+           system + one user string. */
+        const hist = chatHistory.slice(-7, -1).map(m => (m.role === 'user' ? 'Q: ' : 'A: ') + String(m.content).slice(0, 400)).join('\n');
+        const userBlock = (hist ? 'Recent dialogue:\n' + hist + '\n\n' : '') + 'Question: ' + q;
+        const res = await C2A2Search.enrich({ useWeb: false, dataset: { system: sys, user: userBlock } });
+        tp.remove();
+        const reply = (res.payload && typeof res.payload.text === 'string') ? res.payload.text : '';
+        if (!reply) { addChatMsg('Empty response from the C2A2 pipeline. Uncheck "Ask AI" for keyword search.', 'error'); btn.disabled = false; return; }
+        chatHistory.push({ role: 'assistant', content: reply });
+        addChatMsg(reply, 'assistant');
+    } catch (e) {
+        tp.remove();
+        const code = (e && e.message) || 'unknown';
+        const friendly = {
+            'free-limit': 'Daily free AI budget reached — try again tomorrow, or uncheck "Ask AI" for keyword search.',
+            'rate-limited': 'Too many requests right now — wait a moment and retry.',
+            'broker-http-500': 'C2A2 pipeline error — uncheck "Ask AI" for keyword search.'
+        }[code] || ('Request failed (' + code + '). Uncheck "Ask AI" for keyword search.');
+        addChatMsg(friendly, 'error');
+    }
+    btn.disabled = false;
+}
+
+// ============ INITIALIZE APP ============
+function initApp() {
+    buildConceptsTOC();
+    buildPhysicistCards();
+    renderAllConcepts();
+
+    setTimeout(() => {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: '\\(', right: '\\)', display: false},
+                {left: '\\[', right: '\\]', display: true},
+                {left: '$$', right: '$$', display: true}
+            ]
+        });
+    }, 100);
+}
+
+// ============ TOC BUILDER ============
+function buildConceptsTOC() {
+    const toc = document.getElementById('toc-container');
+    toc.innerHTML = '';
+
+    const topics = [
+        { name: 'Mechanics', concepts: [
+            'Newtons Laws', 'Kinematics', 'Projectile Motion', 'Circular Motion', 'Work Energy Theorem',
+            'Conservation of Energy', 'Momentum', 'Impulse', 'Torque', 'Rotational Dynamics',
+            'Angular Momentum', 'Simple Harmonic Motion', 'Gravitation', 'Keplers Laws', 'Fluid Mechanics'
+        ]},
+        { name: 'Electromagnetism', concepts: [
+            'Coulombs Law', 'Electric Fields', 'Gausss Law', 'Electric Potential', 'Capacitance',
+            'Current and Resistance', 'Ohms Law', 'DC Circuits', 'RC Circuits', 'Magnetic Fields',
+            'Biot Savart Law', 'Amperes Law', 'Faradays Law', 'Inductance', 'Maxwells Equations'
+        ]},
+        { name: 'Waves and Optics', concepts: [
+            'Wave Equation', 'Superposition', 'Standing Waves', 'Doppler Effect', 'Sound Waves',
+            'Reflection', 'Refraction', 'Lenses', 'Diffraction',
+            'Polarization', 'Thin Film Interference'
+        ]},
+        { name: 'Thermodynamics', concepts: [
+            'Temperature and Heat', 'Ideal Gas Law', 'Kinetic Theory', 'First Law',
+            'Heat Engines', 'Carnot Cycle', 'Entropy', 'Second Law',
+            'Phase Transitions', 'Statistical Mechanics'
+        ]},
+        { name: 'Modern Physics', concepts: [
+            'Special Relativity', 'Time Dilation', 'Length Contraction', 'Mass Energy Equivalence', 'Photoelectric Effect',
+            'Bohr Model', 'de Broglie Wavelength', 'Heisenberg Uncertainty', 'Schrodinger Equation', 'Quantum Tunneling',
+            'Nuclear Physics', 'Radioactive Decay', 'Particle Physics', 'Standard Model'
+        ]},
+        { name: 'Mathematical Methods', concepts: [
+            'Vectors and Coordinate Systems', 'Calculus in Physics', 'Differential Equations', 'Taylor Series',
+            'Fourier Analysis', 'Linear Algebra', 'Dimensional Analysis', 'Numerical Methods', 'Complex Numbers', 'Probability and Statistics'
+        ]}
+    ];
+
+    topics.forEach(topic => {
+        const topicDiv = document.createElement('div');
+        topicDiv.className = 'toc-item level-1';
+        topicDiv.textContent = topic.name;
+        toc.appendChild(topicDiv);
+
+        topic.concepts.forEach(concept => {
+            const conceptDiv = document.createElement('div');
+            conceptDiv.className = 'toc-item level-2';
+            const anchorId = concept.toLowerCase().replace(/\s+/g, '-');
+            conceptDiv.onclick = () => scrollToSection(anchorId);
+            conceptDiv.textContent = concept;
+            toc.appendChild(conceptDiv);
+        });
+    });
+}
+
+// ============ PHYSICIST CARDS WITH PRS ============
+const physicists = [
+    {
+        name: 'Isaac Newton',
+        role: 'Mathematician & Natural Philosopher, 1643–1727',
+        color: '#1a6b3c',
+        summary: `<p>Isaac Newton is the pivot on which the history of physics turns. Before Newton, physics was a patchwork of brilliant fragments: Kepler had found that planets trace ellipses, Galileo had shown that falling bodies accelerate uniformly, Descartes had proposed a mechanical universe of colliding vortices, and Huygens had worked out the mathematics of circular motion and elastic collisions. None of these achievements were connected by a single explanatory framework. Newton supplied one.</p>
+<p>The <em>Philosophiæ Naturalis Principia Mathematica</em> (1687) is arguably the most important scientific work ever published. In it Newton formulated three laws of motion — inertia, F = ma, and action-reaction — and the law of universal gravitation: every mass attracts every other mass with a force proportional to the product of their masses and inversely proportional to the square of the distance between them. From these axioms he derived Kepler's three laws of planetary motion, the theory of tides, the precession of the equinoxes, the shape of the Earth (oblate spheroid), and the first theoretical estimate of the speed of sound. The Principia demonstrated, for the first time, that the same laws governing a falling apple also govern the Moon's orbit — unifying heaven and earth in a single mathematical framework.</p>
+<p>To accomplish this, Newton independently invented the calculus of fluxions (differential and integral calculus), the mathematical language that physics still speaks. His method of infinite series, his generalized binomial theorem, and his techniques for solving differential equations became essential tools for every physicist who followed. The fact that he invented the mathematics <em>in order to</em> solve the physics problems — rather than borrowing existing tools — is a measure of his singular genius.</p>
+<p>Newton's <em>Opticks</em> (1704) was his other major work, demonstrating through the famous experimentum crucis that white light is a heterogeneous mixture of colored rays, each with a fixed degree of refrangibility. He developed a corpuscular theory of light, analyzed thin-film interference (Newton's rings), and catalogued optical phenomena with experimental precision that would not be surpassed for a century.</p>
+<p>Newton's paradigm — deterministic, mechanical, governed by forces acting at a distance through absolute space and absolute time — dominated physics for over two hundred years. Its anomalies were few but deep: the mechanism of gravitational action at a distance remained mysterious (Newton himself called it "so great an absurdity"), and the wave-particle nature of light remained unresolved. These anomalies would eventually become Maxwell's and Einstein's problems to solve. But Newton's framework remains the foundation of undergraduate physics education: the kinematics, dynamics, energy, momentum, and gravitation that students learn in their first year are essentially Newtonian physics, refined but not replaced.</p>
+<p>In Thomas Kuhn's framework, Newton's achievement was not merely additive but paradigm-constituting: he defined what "doing physics" meant for two centuries. Normal science under Newton meant applying his laws to new systems — fluid mechanics, elasticity, celestial perturbation theory, acoustics — and the success rate was extraordinary.</p>`,
+        cds: [
+            {c: 'Laws of Motion — force, mass, acceleration unified', d: 'Air track with variable masses and forces', s: 'PhET: Forces and Motion Basics'},
+            {c: 'Universal Gravitation — terrestrial and celestial unified', d: 'Cavendish torsion balance', s: 'PhET: Gravity and Orbits'},
+            {c: 'Optics — white light decomposed into spectrum', d: 'Prism dispersion and recombination', s: 'PhET: Bending Light'}
+        ],
+        prs: [
+            {label:'P1 — Planetary motion', p:'Why do planets move in ellipses? Kepler\'s laws were empirical with no causal explanation.', r:'Kepler\'s orbital data; Galileo\'s kinematics and inertia; Hooke\'s inverse-square conjecture; Euclidean geometry', s:'Universal gravitation: F = GMm/r². Derived all three Kepler laws from a single force law. Unified celestial mechanics.'},
+            {label:'P2 — Terrestrial mechanics', p:'What governs falling bodies, projectiles, and collisions? No unified framework existed beyond Galileo\'s fragments.', r:'Galileo\'s free-fall experiments and parabolic trajectories; Descartes\' mechanical philosophy; Huygens\' collision rules', s:'Three laws of motion. F = ma as universal dynamical law. Projectile motion, pendulums, collisions all derived from one framework.'},
+            {label:'P3 — Moon\'s orbit', p:'Why doesn\'t the Moon fall to Earth, or fly away? No connection between earthly gravity and celestial motion.', r:'Galileo\'s insight that gravity is universal; Kepler\'s third law; the apple-to-Moon thought experiment', s:'Showed that the Moon IS falling — centripetal acceleration equals g/r² at lunar distance. Unified heaven and earth.'},
+            {label:'P4 — Calculus', p:'No mathematical tool existed for instantaneous rates of change or areas under curves — essential for physics of motion.', r:'Archimedes\' method of exhaustion; Cavalieri\'s indivisibles; Barrow\'s tangent methods; Wallis\'s infinite series', s:'Invented fluxions (differential and integral calculus). Enabled all subsequent mathematical physics.'},
+            {label:'P5 — Light and color', p:'What is the nature of white light? Why do prisms produce colors?', r:'Snell\'s law of refraction; Hooke\'s and Grimaldi\'s observations on diffraction; Descartes\' mechanical optics', s:'Experimentum crucis: white light is a mixture of colored rays, each with fixed refrangibility. Corpuscular theory of light.'},
+            {label:'P6 — Tides', p:'What causes the tides? Galileo attributed them (incorrectly) to Earth\'s rotation; Kepler guessed lunar attraction.', r:'Kepler\'s intuition of lunar influence; improved astronomical observations; his own gravitational theory', s:'Tidal theory from differential gravitational attraction of Moon and Sun. First quantitative tidal model.'},
+            {label:'P7 — Precession of equinoxes', p:'The Earth\'s axis slowly wobbles with a 26,000-year period. No mechanical explanation existed.', r:'Universal gravitation; Earth\'s oblate shape (which he predicted); torque from Sun and Moon', s:'Explained precession as gravitational torque on Earth\'s equatorial bulge. Predicted Earth\'s oblateness from rotation.'},
+            {label:'P8 — Speed of sound', p:'What determines how fast sound travels? No theoretical prediction existed.', r:'Boyle\'s gas law; his own mechanics of elastic media; Newton\'s laws applied to continuous matter', s:'First theoretical calculation of sound speed in air (off by ~15% — corrected by Laplace with adiabatic correction).'}
+        ],
+        solvedCount: 8,
+        newAnomalies: ['Nature of light (wave vs particle unresolved)', 'Mechanism of gravity (action at a distance)']
+    },
+    {
+        name: 'James Clerk Maxwell',
+        role: 'Physicist, 1831–1879',
+        color: '#2a4a8a',
+        summary: `<p>James Clerk Maxwell accomplished what Einstein later called "the most profound and the most fruitful that physics has experienced since the time of Newton": the unification of electricity, magnetism, and optics into a single theoretical framework. Before Maxwell, these were separate experimental sciences. Coulomb had quantified electrostatic force, Ampère had described the magnetic effects of currents, Faraday had discovered electromagnetic induction and introduced the concept of field lines, and Gauss had formulated flux laws. But there was no unified mathematical theory connecting these phenomena, and no one suspected they were aspects of a single entity.</p>
+<p>Maxwell supplied the unification in a series of papers culminating in <em>A Treatise on Electricity and Magnetism</em> (1873). His four equations — Gauss's law for electricity, Gauss's law for magnetism, Faraday's law of induction, and the Ampère-Maxwell law — describe all classical electromagnetic phenomena. The crucial innovation was the displacement current: Maxwell recognized that a changing electric field produces a magnetic field, just as a changing magnetic field produces an electric field. This seemingly modest addition completed the theoretical structure and had a staggering consequence: the equations predicted the existence of electromagnetic waves propagating at a speed that, when calculated from purely electrical and magnetic measurements, equaled the measured speed of light. Light was an electromagnetic wave. Optics was a branch of electromagnetism.</p>
+<p>This prediction was confirmed experimentally by Heinrich Hertz in 1887, eight years after Maxwell's death. The technological consequences — radio, television, radar, wireless communication, and eventually the entire electromagnetic spectrum from gamma rays to radio waves — all flow from Maxwell's equations.</p>
+<p>Maxwell also made foundational contributions to statistical mechanics. His derivation of the Maxwell-Boltzmann velocity distribution for gas molecules (1860) was the first statistical law in physics — the first time a physical prediction was intrinsically probabilistic rather than deterministic. This work, alongside Boltzmann's, established the kinetic theory of gases on rigorous mathematical foundations and opened the door to statistical mechanics.</p>
+<p>His range extended further: he proved that Saturn's rings must consist of independent orbiting particles (winning the Adams Prize in 1857), developed the quantitative theory of color vision and produced the first color photograph (1861), derived the transport coefficients (viscosity, diffusion, thermal conductivity) of gases from molecular theory, and made contributions to control theory and dimensional analysis.</p>
+<p>Maxwell's deepest legacy is conceptual: he replaced Newton's action-at-a-distance with the field as the fundamental physical entity. In Newton's world, forces act instantaneously across empty space. In Maxwell's, fields fill space, carry energy and momentum, and propagate disturbances at finite speed. This field-theoretic paradigm — the idea that physics is about fields, not particles pushing each other — became the foundation of all modern physics, from Einstein's general relativity to quantum field theory. Every physicist since Maxwell has worked within the conceptual framework he established.</p>
+<p>In Kuhn's terms, Maxwell's work was both revolutionary and paradigm-setting. But it also generated the anomalies — the ether problem, the ultraviolet catastrophe, the equipartition failure — that would eventually topple classical physics and give birth to relativity and quantum mechanics.</p>`,
+        cds: [
+            {c: 'Maxwell\'s Equations — E&M unified in 4 equations', d: 'Electromagnetic field line mapping', s: 'PhET: Faraday\'s Law'},
+            {c: 'EM Waves — light as electromagnetic radiation', d: 'Hertz-type spark gap radio wave demo', s: 'PhET: Radio Waves & EM Fields'},
+            {c: 'Kinetic Theory — molecular velocity distribution', d: 'Molecular speed distribution apparatus', s: 'PhET: Gas Properties'}
+        ],
+        prs: [
+            {label:'P1 — Unifying E&M', p:'Electricity and magnetism were separate empirical sciences. Faraday\'s field concept had no mathematical formulation.', r:'Faraday\'s experimental laws and field intuition; Coulomb, Ampère, Gauss\'s empirical laws; Hamilton\'s quaternions and vector calculus', s:'Four Maxwell equations unifying all of E&M. Displacement current completed Ampère\'s law, predicted EM waves.'},
+            {label:'P2 — Nature of light', p:'Wave theory (Young, Fresnel) explained interference but the medium (ether) and connection to E&M were mysterious.', r:'Fresnel\'s wave optics; Weber\'s ratio of electrostatic to electromagnetic units (≈ c); Faraday\'s magneto-optical rotation', s:'Showed EM waves travel at c — light IS an electromagnetic wave. Unified optics with electromagnetism.'},
+            {label:'P3 — Displacement current', p:'Ampère\'s law was inconsistent for time-varying fields (failed for charging capacitors). Theoretical gap.', r:'Faraday\'s displacement concept; charge conservation requirement; mechanical ether models as analogies', s:'Added displacement current term ε₀∂E/∂t to Ampère\'s law. Restored consistency and enabled wave solutions.'},
+            {label:'P4 — Gas velocities', p:'Kinetic theory lacked quantitative predictions for molecular speed distributions.', r:'Clausius\'s mean free path; probability theory; his own mathematical facility with distributions', s:'Maxwell-Boltzmann distribution: f(v) ∝ v²exp(-mv²/2kT). First statistical law of physics.'},
+            {label:'P5 — Saturn\'s rings', p:'Are Saturn\'s rings solid, fluid, or particulate? Stability analysis was unsolved.', r:'Newtonian mechanics; Laplace\'s stability analysis; mathematical perturbation theory', s:'Proved rings must be composed of independent orbiting particles (not solid or fluid). Won Adams Prize 1857.'},
+            {label:'P6 — Color vision', p:'How does the eye perceive color? No quantitative theory.', r:'Young\'s trichromatic hypothesis; Helmholtz\'s physiological optics; his own color mixing experiments', s:'Quantified trichromatic color theory; produced first color photograph (1861); color triangle.'},
+            {label:'P7 — Viscosity of gases', p:'Gas viscosity was unexplained and its temperature dependence was paradoxical (viscosity increases with T, unlike liquids).', r:'Kinetic theory; mean free path concept; Clausius\'s transport theory', s:'Derived viscosity from molecular collisions. Predicted viscosity independent of pressure (confirmed experimentally). Explained T-dependence.'}
+        ],
+        solvedCount: 7,
+        newAnomalies: ['Luminiferous ether (what medium carries EM waves?)', 'Blackbody radiation (ultraviolet catastrophe)', 'Equipartition failure (specific heats of gases)']
+    },
+    {
+        name: 'Ludwig Boltzmann',
+        role: 'Physicist & Philosopher, 1844–1906',
+        color: '#7a1a1a',
+        summary: `<p>Ludwig Boltzmann solved what may be the deepest conceptual problem in classical physics: how the irreversible, one-directional world of thermodynamics arises from the perfectly reversible, time-symmetric laws of Newtonian mechanics. His answer — statistical mechanics — is the bridge between the microscopic and macroscopic descriptions of nature, and it remains one of the pillars of modern physics.</p>
+<p>Boltzmann's central achievement is the statistical interpretation of entropy. Clausius had defined entropy thermodynamically as dS = dQ/T, but this was a macroscopic bookkeeping device with no molecular meaning. Boltzmann showed that entropy counts microstates: S = k ln W, where W is the number of microscopic configurations compatible with the observed macroscopic state, and k is the constant that now bears his name. This equation, engraved on his tombstone in Vienna, is one of the most consequential formulas in physics. It explains <em>why</em> entropy increases: systems evolve toward macrostates with overwhelmingly more microstates, not because of any dynamical law but because of pure combinatorics.</p>
+<p>His H-theorem (1872) was the first attempt to derive the second law of thermodynamics from molecular dynamics. It showed that a quantity H (related to negative entropy) decreases monotonically as a gas evolves toward equilibrium. This provoked two famous objections: Loschmidt's reversibility paradox (if you reverse all velocities, H should increase) and Zermelo's recurrence paradox (Poincaré recurrence means any state eventually recurs). Boltzmann's response to both was profoundly modern: the second law is statistical, not absolute. Entropy <em>almost certainly</em> increases, because the overwhelming majority of trajectories lead toward equilibrium, but fluctuations are possible. This probabilistic resolution anticipated 20th-century thinking by decades.</p>
+<p>The Boltzmann equation — df/dt + v·∇f + F·∇ᵥf = (df/dt)_coll — describes how the distribution function of a gas evolves under forces and collisions. It remains a workhorse equation in plasma physics, semiconductor transport, neutron diffusion, and astrophysics. The Boltzmann distribution P(E) ∝ exp(−E/kT) is the foundation of equilibrium statistical mechanics and appears throughout quantum mechanics, chemistry, and materials science.</p>
+<p>Boltzmann was also the most important champion of atomism during the great debate of the 1890s. The energeticist school — led by Ernst Mach and Wilhelm Ostwald — argued that atoms were a convenient fiction and that thermodynamics should be formulated without reference to microscopic constituents. Boltzmann fought this position passionately, arguing that the predictive success of kinetic theory constituted strong evidence for molecular reality. He was vindicated after his death: Einstein's 1905 paper on Brownian motion and Perrin's experimental confirmation established atoms as physical fact.</p>
+<p>Boltzmann's work also laid the foundation for Planck's quantum revolution. His derivation of the Stefan-Boltzmann law (radiated energy ∝ T⁴) from thermodynamics and Maxwell's radiation pressure was a crucial step. When Planck derived the blackbody spectrum in 1900, he used Boltzmann's combinatorial counting method — but with the fateful modification of quantizing energy. Planck himself acknowledged that without Boltzmann's statistical methods, his derivation would have been impossible.</p>
+<p>Tragically, Boltzmann took his own life in 1906, apparently worn down by the philosophical attacks on his work and by depression. Within five years, his atomistic program had been completely vindicated. His statistical mechanics became — and remains — the conceptual foundation connecting microscopic physics to the macroscopic world we observe.</p>`,
+        cds: [
+            {c: 'S = k ln W — entropy as microstate count', d: 'Diffusion and mixing irreversibility', s: 'PhET: States of Matter'},
+            {c: 'Boltzmann Distribution — energy ∝ exp(-E/kT)', d: 'Boltzmann machine simulation', s: 'PhET: Gas Properties'},
+            {c: 'H-theorem — approach to equilibrium', d: 'Gas expansion into vacuum demo', s: 'Molecular dynamics simulation'}
+        ],
+        prs: [
+            {label:'P1 — Entropy\'s meaning', p:'Clausius defined entropy thermodynamically (dS = dQ/T) but what IS it? No molecular interpretation existed.', r:'Maxwell\'s kinetic theory; combinatorics and probability theory; Clausius\'s entropy definition', s:'S = k ln W. Entropy counts microstates. Most profound equation on his tombstone. Connected thermodynamics to statistics.'},
+            {label:'P2 — Irreversibility paradox', p:'Newton\'s laws are time-reversible, yet thermodynamics has an arrow of time. How can irreversibility emerge from reversible laws?', r:'Loschmidt\'s reversibility objection (as a challenge to solve); probability theory; ergodic ideas', s:'H-theorem and probabilistic resolution: entropy increase is overwhelmingly probable, not strictly necessary. Second law is statistical, not absolute.'},
+            {label:'P3 — Equilibrium distribution', p:'What is the equilibrium distribution of molecular energies? Maxwell found it for ideal gases but the foundation was ad hoc.', r:'Maxwell\'s velocity distribution; Lagrange multipliers; combinatorial methods', s:'Boltzmann distribution P(E) ∝ exp(-E/kT) derived from maximizing microstates. Foundation of statistical mechanics and quantum statistics.'},
+            {label:'P4 — Atomism', p:'Are atoms real? The energeticist school (Mach, Ostwald) denied atomic reality — thermodynamics without atoms.', r:'Kinetic theory\'s predictive successes; his own statistical mechanics; philosophical commitment to mechanical explanation', s:'Built an entire theoretical edifice (transport theory, H-theorem, statistical entropy) that only makes sense if atoms exist. Vindicated posthumously by Einstein\'s 1905 Brownian motion paper.'},
+            {label:'P5 — Transport phenomena', p:'How to derive viscosity, thermal conductivity, and diffusion coefficients from molecular properties?', r:'Maxwell\'s transport theory; collision cross-sections; mean free path estimates', s:'Boltzmann transport equation: df/dt + v·∇f + F·∇ᵥf = (df/dt)_coll. Still used today in semiconductor physics, plasma physics, and neutron transport.'},
+            {label:'P6 — Radiation law', p:'How does thermal radiation depend on temperature? Stefan\'s empirical T⁴ law lacked theoretical foundation.', r:'Maxwell\'s electrodynamics; thermodynamic reasoning; radiation pressure concept', s:'Derived Stefan-Boltzmann law (j = σT⁴) from thermodynamics and Maxwell\'s radiation pressure. Set stage for Planck\'s quantum solution.'}
+        ],
+        solvedCount: 6,
+        newAnomalies: ['Ultraviolet catastrophe sharpened (Rayleigh-Jeans failure)', 'Specific heat anomalies at low temperature']
+    },
+    {
+        name: 'Albert Einstein',
+        role: 'Theoretical Physicist, 1879–1955',
+        color: '#5a3000',
+        summary: `<p>Albert Einstein solved more foundational problems than any other physicist. In a single year — 1905, his <em>annus mirabilis</em> — he resolved four deep anomalies of 19th-century physics, any one of which would have secured a permanent reputation. Then, between 1907 and 1915, he reinvented gravity itself. The scope of his achievement is unmatched.</p>
+<p>The ether crisis was the deepest problem Maxwell's triumph had created. Maxwell's equations predicted electromagnetic waves traveling at a definite speed c, but speed relative to what? The luminiferous ether — the supposed medium for light waves — had defied all attempts at detection, most notably the Michelson-Morley experiment (1887). Lorentz and FitzGerald had proposed ad hoc length contraction to explain the null result. Einstein dissolved the entire problem by elevating two postulates to axioms: the laws of physics are identical in all inertial frames, and the speed of light is the same for all observers. From these followed the Lorentz transformations, time dilation, length contraction, the relativity of simultaneity, and E = mc² — mass-energy equivalence, the most famous equation in physics.</p>
+<p>In the same year, Einstein explained the photoelectric effect by proposing that light consists of discrete quanta (photons) with energy E = hν, directly contradicting the classical wave theory. This paper, for which he received the Nobel Prize in 1921, was the first explicit statement that electromagnetic radiation is quantized. It launched the quantum revolution.</p>
+<p>His paper on Brownian motion used Boltzmann's statistical mechanics to predict that microscopic particles suspended in fluid should exhibit random motion with a specific, calculable mean-square displacement. Jean Perrin's subsequent experimental confirmation (1908) provided the first direct evidence for the physical reality of atoms, ending the decades-long atomism debate that had tormented Boltzmann.</p>
+<p>General relativity (1915) is Einstein's supreme achievement. Newton's gravity — instantaneous action at a distance — was incompatible with the finite speed of light demanded by special relativity. Einstein's solution was radical: gravity is not a force but the curvature of spacetime caused by mass and energy. The Einstein field equations, Gμν + Λgμν = 8πGTμν, relate the geometry of spacetime to its matter-energy content. General relativity predicted the exact anomalous precession of Mercury's orbit (43 arcseconds per century), the deflection of starlight by the Sun (confirmed by Eddington's 1919 eclipse expedition), gravitational redshift, gravitational time dilation (essential for GPS), black holes, gravitational waves (detected by LIGO in 2015), and the expanding universe.</p>
+<p>Einstein's later contributions include the Einstein model of specific heats (1907), which first applied quantum theory to solids and explained why specific heats vanish at low temperatures; the A and B coefficients for stimulated and spontaneous emission (1917), which laid the theoretical foundation for the laser; and Bose-Einstein statistics for indistinguishable bosons, predicting Bose-Einstein condensation (experimentally achieved in 1995).</p>
+<p>In Kuhn's framework, Einstein is unique: he participated in two revolutions simultaneously (relativity and quantum theory) while remaining skeptical of the completeness of the second. His EPR paper (1935) raised the measurement problem and nonlocality — anomalies that quantum mechanics still grapples with. The problems Einstein created are as profound as the ones he solved.</p>`,
+        cds: [
+            {c: 'Special Relativity — spacetime unification', d: 'Light clock thought experiment', s: 'PhET: Special Relativity'},
+            {c: 'Photoelectric Effect — light quanta', d: 'Photocell with variable frequency/intensity', s: 'PhET: Photoelectric Effect'},
+            {c: 'General Relativity — gravity as geometry', d: 'Rubber sheet spacetime analogy', s: 'Spacetime curvature visualization'}
+        ],
+        prs: [
+            {label:'P1 — Ether crisis', p:'Maxwell\'s equations weren\'t Galilean invariant. Michelson-Morley found no ether wind. Lorentz patched with ad hoc contractions.', r:'Maxwell\'s electrodynamics; Lorentz transformations (mathematical); Mach\'s critique of absolute space; Poincaré\'s simultaneity analysis', s:'Special relativity: laws of physics identical in all inertial frames; c is invariant. No ether needed. Space and time are relative; spacetime is absolute.'},
+            {label:'P2 — Photoelectric effect', p:'Classical wave theory predicted energy depends on intensity, not frequency. Experiments showed opposite: threshold frequency, instant emission.', r:'Planck\'s E = hν quantum hypothesis (1900); Lenard\'s experimental data; Boltzmann\'s statistical methods', s:'Light consists of quanta (photons) with energy E = hν. KE_max = hν − W. Won Nobel Prize 1921. Launched wave-particle duality.'},
+            {label:'P3 — Brownian motion', p:'Random motion of pollen grains in water was unexplained. Atomic hypothesis couldn\'t be directly tested.', r:'Boltzmann\'s statistical mechanics; molecular kinetic theory; fluctuation theory', s:'Predicted that <x²> = 2Dt with D calculable from molecular parameters. Perrin\'s experiments confirmed: atoms are real. Ended the atomism debate.'},
+            {label:'P4 — Mass-energy', p:'What is the relationship between mass and energy in the relativistic framework?', r:'Special relativity\'s momentum-energy relations; Maxwell\'s radiation pressure; thought experiments on light emission', s:'E = mc². Mass is concentrated energy; energy has inertia. Explains nuclear binding energy, stellar power, pair production.'},
+            {label:'P5 — Mercury\'s perihelion', p:'Mercury\'s orbit precesses 43"/century more than Newtonian gravity predicts. Anomaly known since Le Verrier (1859).', r:'Riemann\'s differential geometry; Levi-Civita\'s tensor calculus; equivalence principle; Grossmann\'s mathematical collaboration', s:'General relativity (1915): gravity is spacetime curvature. Predicted Mercury\'s excess precession exactly. Also predicted light bending (confirmed 1919).'},
+            {label:'P6 — Gravity and relativity', p:'Newton\'s gravity acts instantaneously — incompatible with special relativity\'s speed limit c.', r:'Equivalence principle (gravity ≈ acceleration); Mach\'s principle; Riemannian geometry; Minkowski\'s spacetime formalism', s:'General relativity: Gμν = 8πGTμν. Gravity propagates at c. Predicted gravitational waves (detected 2015), black holes, expanding universe.'},
+            {label:'P7 — Specific heats', p:'Classical equipartition predicted wrong specific heats for solids at low temperature (too high). Boltzmann\'s anomaly.', r:'Planck\'s quantization; Boltzmann\'s statistical mechanics; Debye\'s elastic continuum model (later)', s:'Einstein model of solids (1907): quantized oscillators explain why Cv → 0 as T → 0. First application of quantum theory to matter.'},
+            {label:'P8 — Stimulated emission', p:'Planck\'s radiation law had no dynamical derivation. How do atoms and radiation reach thermal equilibrium?', r:'Planck\'s law; Bohr\'s atomic model; Boltzmann distribution; detailed balance principle', s:'Derived A and B coefficients: spontaneous emission, absorption, stimulated emission. Predicted lasers (realized 1960). Deepened quantum radiation theory.'},
+            {label:'P9 — Quantum statistics', p:'Identical particles don\'t obey classical Boltzmann statistics. Planck\'s derivation used ad hoc counting.', r:'Bose\'s photon statistics paper (sent to Einstein); Boltzmann counting methods; quantum indistinguishability', s:'Bose-Einstein statistics for bosons. Predicted Bose-Einstein condensation (observed 1995). Opened quantum statistical mechanics.'}
+        ],
+        solvedCount: 9,
+        newAnomalies: ['Quantum gravity (GR and QM incompatible)', 'Cosmological constant problem', 'Dark energy / dark matter', 'Quantum measurement problem (EPR)']
+    },
+    {
+        name: 'Richard Feynman',
+        role: 'Theoretical Physicist, 1918–1988',
+        color: '#4a006a',
+        summary: `<p>Richard Feynman combined supreme mathematical ability with a physical intuition so strong it amounted to a different way of seeing. His contributions to quantum electrodynamics, his reformulation of quantum mechanics, and his invention of Feynman diagrams transformed theoretical physics. His teaching reshaped how physics is communicated. And his personality — irreverent, relentlessly curious, allergic to pretension — made him the most celebrated physicist of the second half of the 20th century.</p>
+<p>The problem that launched Feynman's career was the crisis of quantum electrodynamics (QED). By the late 1930s, QED — the quantum theory of electrons and photons — was producing infinite answers for fundamental quantities like the electron's self-energy and charge. The theory appeared to be mathematically inconsistent. Working independently of Julian Schwinger and Sin-Itiro Tomonaga (with whom he shared the 1965 Nobel Prize), Feynman developed a renormalization procedure that systematically absorbed the infinities into the physical (measured) mass and charge of the electron. The resulting theory is the most precisely tested in all of science: the theoretical prediction of the electron's anomalous magnetic moment agrees with experiment to better than one part in a trillion.</p>
+<p>To make these calculations tractable, Feynman invented Feynman diagrams — simple pictures in which lines represent particles and vertices represent interactions. Each diagram corresponds to a precise mathematical expression; the sum of all diagrams gives the exact answer. This was not merely a notational convenience but a conceptual revolution: it made the structure of quantum field theory visual and intuitive. Today, Feynman diagrams are used in every branch of particle physics, condensed matter, and quantum gravity. They are the universal language of perturbative quantum field theory.</p>
+<p>Feynman's path integral formulation of quantum mechanics (developed in his PhD thesis under John Archibald Wheeler) is equally fundamental. In this formulation, the quantum amplitude for a process is the sum over <em>all possible paths</em> the system could take, each weighted by exp(iS/ℏ) where S is the classical action. The path integral recovers the Schrödinger equation, naturally explains the classical limit (the dominant path is the one that extremizes the action), and provides the foundation for modern quantum field theory and statistical mechanics. It is, in many physicists' view, the deepest formulation of quantum mechanics.</p>
+<p>Feynman also made major contributions to the theory of superfluidity in liquid helium, explaining quantized vortices and the roton spectrum using path integrals and Bose-Einstein statistics. His parton model (late 1960s) — which treated protons as composed of point-like constituents during deep inelastic scattering — laid the experimental and conceptual foundation for quantum chromodynamics (QCD) and the quark model. With Murray Gell-Mann, he formulated the V-A theory of weak interactions, which correctly described beta decay and was later incorporated into the electroweak theory.</p>
+<p>As a teacher, Feynman's <em>Lectures on Physics</em> (1963) remain among the finest physics textbooks ever written, celebrated for their clarity, depth, and insistence on understanding over formalism. His popular books and lectures brought physics to a vast public audience.</p>
+<p>In Kuhn's framework, Feynman was the supreme practitioner of normal science within the quantum paradigm — but normal science of such depth that it repeatedly pushed the boundaries of the paradigm itself. His attempts to quantize gravity identified the non-renormalizability that remains the central unsolved problem in fundamental physics.</p>`,
+        cds: [
+            {c: 'Feynman Diagrams — visual particle interaction calculus', d: 'Scattering process visualization', s: 'Feynman diagram builder applet'},
+            {c: 'Path Integrals — sum over all histories', d: 'Double-slit with multiple path illustration', s: 'Path integral animation'},
+            {c: 'QED — most precise theory in physics', d: 'g-2 anomalous magnetic moment measurement', s: 'QED cross-section calculator'}
+        ],
+        prs: [
+            {label:'P1 — QED infinities', p:'Quantum electrodynamics produced infinite answers for electron self-energy and charge. Theory appeared broken.', r:'Dirac\'s relativistic electron equation; Schwinger and Tomonaga\'s parallel renormalization approaches; Bethe\'s Lamb shift calculation', s:'Renormalization: absorb infinities into physical mass and charge. QED predictions match experiment to 12 decimal places (g-2). Nobel Prize 1965.'},
+            {label:'P2 — Calculational intractability', p:'Perturbative QED calculations were algebraically nightmarish. No intuitive way to organize or visualize them.', r:'Dirac\'s formalism; Wheeler\'s one-electron universe idea; Feynman\'s visual-spatial intuition', s:'Feynman diagrams: each diagram encodes a mathematical term. Transformed particle physics from algebra into pictures. Universal tool across all QFTs.'},
+            {label:'P3 — QM formulation', p:'Schrödinger and Heisenberg formulations worked but gave no insight into classical limit or the role of action.', r:'Dirac\'s Lagrangian insight in QM; classical principle of least action; his PhD advisor Wheeler\'s encouragement', s:'Path integral formulation: amplitude = ∫exp(iS/ℏ)Dx over all paths. Unified QM, statistical mechanics, and QFT in one framework. Classical limit emerges naturally (stationary phase).'},
+            {label:'P4 — Superfluid helium', p:'Liquid He-4 below 2.17 K flows without viscosity and exhibits bizarre quantum behavior at macroscopic scale.', r:'Landau\'s two-fluid model; Bose-Einstein condensation theory; his own path integral methods', s:'Microscopic theory of superfluidity via path integrals and Bose statistics. Explained roton spectrum and quantized vortices.'},
+            {label:'P5 — Parton structure', p:'Deep inelastic scattering (SLAC, late 1960s) showed protons have internal structure. What are the constituents?', r:'SLAC scattering data; Bjorken scaling; his own intuition for simplifying complex problems', s:'Parton model: protons composed of point-like partons (later identified as quarks and gluons). Foundation for QCD and the Standard Model.'},
+            {label:'P6 — Weak interaction', p:'Weak nuclear force (beta decay) violated parity. V-A structure needed theoretical justification.', r:'Lee and Yang\'s parity violation proposal; Wu\'s experimental confirmation; Marshak-Sudarshan\'s V-A theory', s:'With Gell-Mann, formulated V-A (vector minus axial vector) theory of weak interactions. Correct structure later incorporated into electroweak theory.'},
+            {label:'P7 — Quantum gravity (partial)', p:'How to quantize gravity? GR resists standard quantization — non-renormalizable.', r:'GR as a field theory; QED renormalization techniques; perturbative methods', s:'Showed gravity, treated as a spin-2 field, could be quantized perturbatively at tree level. Derived Feynman rules for gravitons. Demonstrated non-renormalizability — framing the problem that string theory and loop QG address.'}
+        ],
+        solvedCount: 7,
+        newAnomalies: ['Quantum gravity remains unsolved beyond perturbation theory', 'Confinement in QCD (quarks never isolated)', 'Mass hierarchy problem']
+    },
+    {
+        name: 'Stephen Wolfram',
+        role: 'Computer Scientist & Physicist, b. 1959',
+        color: '#2a4a2a',
+        summary: `<p>Stephen Wolfram occupies a unique and contested position in the history of physics. He is not primarily an experimental or theoretical physicist in the traditional sense but a computational scientist who has made the radical claim that the universe itself is a computation — and that this claim has concrete, testable physical consequences. Whether he belongs in the same lineage as Newton, Maxwell, and Einstein is precisely the question his research program is designed to answer.</p>
+<p>Wolfram's early career was conventionally brilliant: a PhD in theoretical physics from Caltech at age 20, a MacArthur Fellowship at 21, and substantive work on particle physics, cosmology, and cellular automata in the early 1980s. But his trajectory diverged sharply from academia when he founded Wolfram Research and created Mathematica (1988) — a computational system that transformed how scientists, engineers, and mathematicians do their work. The Wolfram Language, which grew from Mathematica, remains one of the most powerful symbolic computation environments in existence.</p>
+<p>His intellectual magnum opus, <em>A New Kind of Science</em> (2002), presented the results of a systematic, exhaustive exploration of simple computational programs — particularly cellular automata. The central finding is that extremely simple rules (e.g., Rule 30, a one-dimensional cellular automaton with a three-cell neighborhood) can generate behavior as complex, structured, and apparently random as anything found in nature. This challenges the deep reductionist assumption that simple rules produce simple behavior and complex behavior requires complex rules. Wolfram argued that complexity in physics, biology, and mathematics arises not from complicated underlying laws but from the computational richness inherent in even the simplest rules.</p>
+<p>His principle of computational irreducibility is the key epistemological consequence: for many systems, there is no shortcut to predicting their behavior. You cannot derive a closed-form solution; you must run the computation step by step. This is not a practical limitation but a fundamental one, analogous to Gödel's incompleteness or Turing's undecidability. If the universe is computationally irreducible, then the project of finding equations that "solve" physics may be inherently limited — simulation, not analytical solution, may be the deepest form of understanding available.</p>
+<p>The Wolfram Physics Project (launched 2020) is his most ambitious claim: that spacetime, quantum mechanics, and general relativity all emerge from the evolution of hypergraph rewriting rules. In this framework, space is a network of discrete nodes, time is the sequential application of transformation rules, and the familiar continuous spacetime of general relativity emerges as a large-scale limit. Remarkably, Wolfram and collaborator Jonathan Gorard claim to have derived the Einstein field equations and aspects of quantum unitarity from this computational substrate. The multiway branching structure of rule application is proposed as the origin of quantum mechanics: different branches of computation correspond to different quantum histories.</p>
+<p>The Ruliad — the entangled limit of all possible computations — is the most speculative concept: a mathematical object containing every possible computational universe, within which observers with bounded computational resources experience particular physical laws determined by their position and limitations.</p>
+<p>This program remains contested. It has not been peer-reviewed in the traditional sense, and most mainstream physicists have not engaged with it. But it represents a genuinely novel approach to fundamental physics, and its core insight — that computation, not equations, may be the right language for fundamental physics — is increasingly relevant in an era of computational science. In Kuhn's framework, Wolfram is proposing a paradigm shift that has not yet achieved the communal adoption that would make it a revolution.</p>`,
+        cds: [
+            {c: 'Cellular Automata — complexity from simple rules', d: 'Rule 30/110 pattern generation', s: 'Wolfram Mathematica CA explorer'},
+            {c: 'Computational Irreducibility — limits of prediction', d: 'Comparing reducible vs irreducible systems', s: 'Wolfram Language computation demo'},
+            {c: 'Hypergraph Physics — spacetime from computation', d: 'Wolfram Physics Project visualizations', s: 'wolframphysics.org explorer'}
+        ],
+        prs: [
+            {label:'P1 — Complexity from simplicity', p:'Why does nature produce complex structures (turbulence, biology, galaxies) from seemingly simple laws? No theory of complexity existed.', r:'Von Neumann and Ulam\'s cellular automata; Turing\'s computation theory; Conway\'s Game of Life; his own systematic computational survey', s:'A New Kind of Science (2002): exhaustive enumeration of simple programs shows that Rule 30, Rule 110, etc. produce complexity indistinguishable from nature. Complexity is generic, not special.'},
+            {label:'P2 — Computational irreducibility', p:'Can all physical systems be predicted by shortcut (closed-form solution)? Why do some resist analytical solution?', r:'Turing\'s undecidability; Gödel\'s incompleteness; chaos theory\'s sensitivity; computational complexity theory', s:'Principle of computational irreducibility: many systems cannot be predicted without running the full computation step by step. Explains why physics needs simulation, not just equations. Fundamental epistemological limit.'},
+            {label:'P3 — Fundamental physics from computation', p:'Can spacetime, quantum mechanics, and gravity emerge from a single computational rule? The unification problem.', r:'GR, QM, and QFT as targets; causal set theory; graph rewriting systems; category theory; multiway systems', s:'Wolfram Physics Project (2020): hypergraph rewriting rules generate structures isomorphic to curved spacetime (GR) and multiway branching (QM). Claims derivation of Einstein equations and quantum unitarity from same substrate. Active research — not yet peer-validated consensus.'},
+            {label:'P4 — The Ruliad', p:'Is there a unique mathematical object that contains all possible computations and their relationships?', r:'Category theory; homotopy type theory; formal language theory; his own multiway systems framework', s:'The Ruliad concept: the entangled limit of all possible computations. Physical observers are embedded in the Ruliad; their computational boundedness determines what physics they experience. Speculative but mathematically formalized. Connects to observer-dependent physics.'}
+        ],
+        solvedCount: 4,
+        newAnomalies: ['Peer validation of Wolfram Physics claims pending', 'Computational irreducibility may limit the program itself', 'Connection to experimental predictions unclear']
+    }
+];
+
+// ============ KUHNIAN PROGRESS DATA ============
+const kuhnProgress = [
+    { label: 'Pre-Newton\n(Kepler, Galileo)', year: 1640, solved: 5, cumulative: 5, color: '#999',
+      problems: 'Kepler\'s 3 laws (empirical), Galileo\'s kinematics (2 laws), Snell\'s law' },
+    { label: 'Newton\n(Principia 1687)', year: 1687, solved: 8, cumulative: 13, color: '#1a6b3c',
+      problems: '+Planetary motion, terrestrial mechanics, Moon orbit, calculus, light & color, tides, precession, sound speed' },
+    { label: 'Maxwell\n(Treatise 1873)', year: 1873, solved: 7, cumulative: 20, color: '#2a4a8a',
+      problems: '+Unified E&M, light as EM wave, displacement current, gas velocity distribution, Saturn\'s rings, color vision, gas viscosity' },
+    { label: 'Boltzmann\n(1870s–1900s)', year: 1890, solved: 6, cumulative: 26, color: '#7a1a1a',
+      problems: '+Statistical entropy, irreversibility, equilibrium distribution, atomism vindicated, transport theory, radiation law' },
+    { label: 'Einstein\n(1905–1915)', year: 1915, solved: 9, cumulative: 35, color: '#5a3000',
+      problems: '+Ether crisis, photoelectric effect, Brownian motion, E=mc², Mercury precession, gravity-relativity, specific heats, stimulated emission, quantum statistics' },
+    { label: 'Feynman\n(1948–1969)', year: 1965, solved: 7, cumulative: 42, color: '#4a006a',
+      problems: '+QED infinities, diagrams/calculation, path integral QM, superfluidity, partons, weak V-A, perturbative quantum gravity' },
+    { label: 'Wolfram\n(2002–present)', year: 2020, solved: 4, cumulative: 46, color: '#2a4a2a',
+      problems: '+Complexity from simplicity, computational irreducibility, hypergraph physics*, Ruliad* (*contested)' }
+];
+
+function buildPhysicistCards() {
+    const tabsContainer = document.getElementById('physicist-tabs');
+    const cardsContainer = document.getElementById('physicist-cards-container');
+    tabsContainer.innerHTML = '';
+    cardsContainer.innerHTML = '';
+
+    physicists.forEach((phys, idx) => {
+        const tab = document.createElement('button');
+        tab.className = 'physicist-tab' + (idx === 0 ? ' active' : '');
+        tab.style.borderColor = phys.color;
+        tab.textContent = phys.name.split(' ').pop();
+        tab.onclick = () => showPhysicist(idx);
+        tabsContainer.appendChild(tab);
+
+        const card = document.createElement('div');
+        card.className = 'physicist-card' + (idx === 0 ? ' active' : '');
+        card.style.borderLeft = `4px solid ${phys.color}`;
+
+        // CDS section
+        let cdsHTML = `<div class="prs-section-head"><span class="prs-badge" style="background:${phys.color}22;color:${phys.color}">Teaching</span> CDS Triplets</div>`;
+        cdsHTML += phys.cds.map(item => `
+            <div class="cds-card cds-clickable" style="border-left-color:${phys.color}" title="Jump to the matching concept card"
+                 onclick="jumpToConceptFor('${esc4attr(item.c)}','${esc4attr(item.d)}','${esc4attr(item.s)}')">
+                <div class="cds-row"><span class="cds-letter c-letter">C</span> ${item.c}</div>
+                <div class="cds-row"><span class="cds-letter d-letter">D</span> ${item.d}</div>
+                <div class="cds-row"><span class="cds-letter s-letter">S</span> <span class="cds-sim-link" title="Open this PhET simulation" onclick="event.stopPropagation();openSimFor('${esc4attr(item.c)}','${esc4attr(item.d)}','${esc4attr(item.s)}')">${item.s}</span></div>
+            </div>`).join('');
+
+        // PRS section
+        let prsHTML = `<div class="prs-section-head" style="margin-top:14px"><span class="prs-badge" style="background:${phys.color}22;color:${phys.color}">Kuhnian</span> PRS Triplets — ${phys.solvedCount} solved problems</div>`;
+        prsHTML += phys.prs.map(item => `
+            <div class="prs-card" style="border-left-color:${phys.color}">
+                <div class="prs-label">${item.label}</div>
+                <div class="prs-row"><span class="prs-letter" style="color:#c0392b;font-weight:900">P</span><span>${item.p}</span></div>
+                <div class="prs-row"><span class="prs-letter" style="color:#2a6496;font-weight:900">R</span><span>${item.r}</span></div>
+                <div class="prs-row"><span class="prs-letter" style="color:#1a6b3c;font-weight:900">S</span><span>${item.s}</span></div>
+            </div>`).join('');
+
+        // Anomalies spawned
+        let anomHTML = '';
+        if (phys.newAnomalies && phys.newAnomalies.length) {
+            anomHTML = `<div class="prs-section-head" style="margin-top:10px"><span class="prs-badge" style="background:#ff980022;color:#e65100">Anomalies spawned</span> New unsolved problems</div>`;
+            anomHTML += `<div style="font-size:11px;color:#666;padding:4px 8px;background:#fff8e1;border-radius:4px;border-left:3px solid #ff9800;margin-bottom:6px">${phys.newAnomalies.map(a => '• ' + a).join('<br>')}</div>`;
+        }
+
+        card.innerHTML = `
+            <div class="physicist-name" style="color:${phys.color}">${phys.name}</div>
+            <div class="physicist-role">${phys.role}</div>
+            <button class="summary-open-btn" style="border-left:3px solid ${phys.color}" onclick="openSummaryModal(${idx})">📖 Read full summary (~500 words)</button>
+            ${cdsHTML}
+            ${prsHTML}
+            ${anomHTML}
+        `;
+        cardsContainer.appendChild(card);
+    });
+}
+
+function showPhysicist(idx) {
+    document.querySelectorAll('.physicist-tab').forEach((t, i) => t.classList.toggle('active', i === idx));
+    document.querySelectorAll('.physicist-card').forEach((c, i) => c.classList.toggle('active', i === idx));
+}
+
+function openSummaryModal(idx) {
+    const phys = physicists[idx];
+    document.getElementById('modal-name').textContent = phys.name;
+    document.getElementById('modal-name').style.color = phys.color;
+    document.getElementById('modal-role').textContent = phys.role;
+    document.getElementById('modal-body').innerHTML = phys.summary;
+    document.getElementById('summary-modal').classList.add('open');
+}
+
+function closeSummaryModal() {
+    document.getElementById('summary-modal').classList.remove('open');
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSummaryModal(); });
+
+// ============ KUHNIAN PROGRESS CHART ============
+function buildProgressChart() {
+    const container = document.getElementById('progress-view');
+    if (!container) return;
+    container.innerHTML = `
+        <div style="padding:10px">
+            <div style="font-size:12px;font-weight:700;font-family:system-ui,sans-serif;text-transform:uppercase;letter-spacing:.05em;color:#888;margin-bottom:8px">Kuhnian Progress — Cumulative Solved Problems</div>
+            <canvas id="progress-canvas" width="260" height="320"></canvas>
+            <div id="progress-detail" style="font-size:11px;color:#555;margin-top:8px;line-height:1.5"></div>
+        </div>`;
+    drawProgressChart();
+}
+
+function drawProgressChart() {
+    const c = document.getElementById('progress-canvas');
+    if (!c) return;
+    const ctx = c.getContext('2d');
+    const w = c.width, h = c.height;
+    const pad = {top:15, right:15, bottom:52, left:40};
+    const gw = w - pad.left - pad.right;
+    const gh = h - pad.top - pad.bottom;
+    const maxVal = 50;
+    const barW = gw / kuhnProgress.length - 6;
+
+    ctx.clearRect(0,0,w,h);
+
+    // Grid lines
+    ctx.strokeStyle = '#eee'; ctx.lineWidth = 1;
+    for (let v = 0; v <= maxVal; v += 10) {
+        const y = pad.top + gh - (v/maxVal)*gh;
+        ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(w-pad.right, y); ctx.stroke();
+        ctx.fillStyle = '#aaa'; ctx.font = '9px sans-serif'; ctx.textAlign = 'right';
+        ctx.fillText(v, pad.left-4, y+3);
+    }
+
+    // Bars
+    kuhnProgress.forEach((d, i) => {
+        const x = pad.left + i*(barW+6) + 3;
+        const barH = (d.cumulative/maxVal)*gh;
+        const y = pad.top + gh - barH;
+
+        // Cumulative bar (light)
+        ctx.fillStyle = d.color + '33';
+        ctx.fillRect(x, y, barW, barH);
+
+        // New solutions portion (solid)
+        const newH = (d.solved/maxVal)*gh;
+        ctx.fillStyle = d.color;
+        ctx.fillRect(x, pad.top + gh - (d.cumulative/maxVal)*gh, barW, newH);
+
+        // Cumulative number on top
+        ctx.fillStyle = '#333'; ctx.font = 'bold 10px sans-serif'; ctx.textAlign = 'center';
+        ctx.fillText(d.cumulative, x + barW/2, y - 3);
+
+        // Name below — one line, rotated 45° so labels can't collide.
+        // The parenthetical detail (years, works) stays in the era list below.
+        ctx.save();
+        ctx.fillStyle = d.color; ctx.font = '8px sans-serif'; ctx.textAlign = 'right';
+        ctx.translate(x + barW/2 + 3, pad.top + gh + 10);
+        ctx.rotate(-Math.PI/4);
+        ctx.fillText(d.label.split('\n')[0], 0, 0);
+        ctx.restore();
+        ctx.textAlign = 'center';
+    });
+
+    // Connecting line (cumulative)
+    ctx.strokeStyle = '#333'; ctx.lineWidth = 1.5; ctx.setLineDash([3,2]);
+    ctx.beginPath();
+    kuhnProgress.forEach((d, i) => {
+        const x = pad.left + i*(barW+6) + 3 + barW/2;
+        const y = pad.top + gh - (d.cumulative/maxVal)*gh;
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    });
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Legend
+    const detail = document.getElementById('progress-detail');
+    if (detail) {
+        detail.innerHTML = kuhnProgress.map(d =>
+            `<div style="margin-bottom:6px;border-left:3px solid ${d.color};padding-left:6px"><strong style="color:${d.color}">${d.label.replace('\n',' ')}</strong><br><span style="font-size:10px">${d.problems}</span></div>`
+        ).join('');
+    }
+}
+
+// ============ RENDER ALL CONCEPTS ============
+function renderAllConcepts() {
+    const docPane = document.getElementById('doc-pane');
+    docPane.innerHTML = '';
+
+    const concepts = [
+        // MECHANICS
+        {
+            id: 'newtons-laws', topic: 'Mechanics', title: 'Newtons Laws of Motion',
+            equations: 'F = ma, \\vec{F}_{net} = m\\vec{a}',
+            body: 'Newton\'s three laws form the foundation of classical mechanics. The first law states that objects in motion stay in motion unless acted upon by a force. The second law, F=ma, quantifies the relationship between force, mass, and acceleration. The third law asserts that for every action there is an equal and opposite reaction. These laws apply to macroscopic objects and low speeds, and remain remarkably useful for most everyday physics problems.',
+            cds: {c: 'Force causes acceleration proportional to mass', d: 'Air track with hanging weights', s: 'PhET: Forces and Motion Basics'},
+            phet: 'https://phet.colorado.edu/en/simulations/forces-and-motion-basics',
+            objectives: 'Understand and apply Newton\'s laws to analyze motion; distinguish between mass and weight; solve problems with multiple forces.',
+            misconceptions: 'Objects need constant force to maintain motion (false - only to accelerate); heavier objects always fall faster in air (neglects air resistance).'
+        },
+        {
+            id: 'kinematics', topic: 'Mechanics', title: 'Kinematics',
+            equations: 'v = v_0 + at, x = v_0 t + \\frac{1}{2}at^2, v^2 = v_0^2 + 2a\\Delta x',
+            body: 'Kinematics describes motion without considering forces. Key equations relate position, velocity, acceleration, and time. For constant acceleration, we use the kinematic equations to solve problems. Position, velocity, and acceleration are vectors, so direction matters. Graphical analysis—position vs time, velocity vs time—provides intuitive understanding.',
+            cds: {c: 'Motion equations for constant acceleration', d: 'Ticker tape analysis of rolling ball', s: 'PhET: Projectile Motion'},
+            phet: 'https://phet.colorado.edu/en/simulations/projectile-motion',
+            objectives: 'Apply kinematic equations; interpret motion graphs; solve 1D and 2D kinematics problems.',
+            misconceptions: 'Steeper slope on position graph means faster motion at that instant (true); velocity and acceleration always point the same direction (false).'
+        },
+        {
+            id: 'projectile-motion', topic: 'Mechanics', title: 'Projectile Motion',
+            equations: 'x = v_0 \\cos(\\theta) t, y = v_0 \\sin(\\theta) t - \\frac{1}{2}gt^2',
+            body: 'Projectile motion combines constant-velocity horizontal motion with constant-acceleration vertical motion under gravity. These can be treated independently. The trajectory is parabolic. Range is maximized at 45° (in ideal conditions). Time of flight depends only on initial vertical velocity. Projectile motion applies to balls, rockets, and astronomical objects.',
+            cds: {c: 'Decompose motion into horizontal and vertical components', d: 'Launch projectiles at varying angles', s: 'PhET: Projectile Motion'},
+            phet: 'https://phet.colorado.edu/en/simulations/projectile-motion',
+            objectives: 'Analyze projectile motion using kinematic equations; find range, max height, time of flight.',
+            misconceptions: 'Horizontal and vertical motions are independent (true); zero horizontal velocity at peak (false—only vertical).'
+        },
+        {
+            id: 'circular-motion', topic: 'Mechanics', title: 'Circular Motion',
+            equations: 'a_c = \\frac{v^2}{r}, F_c = m\\frac{v^2}{r}, \\omega = \\frac{v}{r}',
+            body: 'Circular motion involves acceleration toward the center (centripetal acceleration) even at constant speed, because velocity direction changes. Centripetal force provides this acceleration. Angular velocity ω relates linear velocity to radius. For uniform circular motion, speed is constant but velocity (vector) is not.',
+            cds: {c: 'Centripetal acceleration points toward center', d: 'Rotating bucket demo (water doesn\'t spill)', s: 'PhET: Circular Motion'},
+            phet: 'https://phet.colorado.edu/en/simulations/rotation',
+            objectives: 'Distinguish centripetal acceleration from tangential acceleration; apply F=ma in circular motion contexts.',
+            misconceptions: 'Centrifugal force pushes outward (false—centripetal force pulls inward); faster motion requires stronger force (true, to the square).'
+        },
+        {
+            id: 'work-energy', topic: 'Mechanics', title: 'Work Energy Theorem',
+            equations: 'W = \\vec{F} \\cdot \\vec{d} = Fd\\cos(\\theta), W_{net} = \\Delta KE',
+            body: 'Work is the transfer of energy via force. Only the component of force along displacement does work. The work-energy theorem states that net work equals change in kinetic energy. This powerful result allows us to solve problems without finding forces explicitly. Work can be positive (force aids motion), negative (opposes motion), or zero (perpendicular).',
+            cds: {c: 'Net work equals change in kinetic energy', d: 'Block sliding on incline with friction', s: 'PhET: Energy Skate Park'},
+            phet: 'https://phet.colorado.edu/en/simulations/energy-skate-park',
+            objectives: 'Calculate work; apply work-energy theorem; understand energy transfer.',
+            misconceptions: 'Work requires motion (false—zero displacement = zero work); heavier objects require more work to move (depends on force and distance).'
+        },
+        {
+            id: 'conservation-energy', topic: 'Mechanics', title: 'Conservation of Energy',
+            equations: 'E = KE + PE = \\text{const}, KE = \\frac{1}{2}mv^2, PE_g = mgh',
+            body: 'Mechanical energy (kinetic + potential) is conserved in the absence of non-conservative forces like friction. This principle simplifies many problems dramatically. Gravitational PE = mgh (near Earth), elastic PE = (1/2)kx². Energy can convert between forms but never created or destroyed in an isolated system. Real systems dissipate energy as heat.',
+            cds: {c: 'Energy converts between kinetic and potential without loss (ideal)', d: 'Pendulum swinging (compare heights)', s: 'PhET: Energy Skate Park Basics'},
+            phet: 'https://phet.colorado.edu/en/simulations/energy-skate-park-basics',
+            objectives: 'Apply conservation of energy to solve motion problems; calculate PE and KE.',
+            misconceptions: 'Energy is used up when work is done (false—transferred); friction violates energy conservation (false—converts to heat).'
+        },
+        {
+            id: 'momentum', topic: 'Mechanics', title: 'Momentum and Collisions',
+            equations: '\\vec{p} = m\\vec{v}, \\vec{F} = \\frac{d\\vec{p}}{dt}, \\vec{p}_{initial} = \\vec{p}_{final}',
+            body: 'Momentum is mass times velocity. Newton\'s second law in terms of momentum states that force is the rate of change of momentum. In the absence of external forces, momentum is conserved. This applies to all collisions and explosions. Momentum is particularly useful when analyzing collisions because it constrains the outcome independent of internal forces.',
+            cds: {c: 'Momentum is conserved in collisions', d: 'Cart collisions on track', s: 'PhET: Collision Lab'},
+            phet: 'https://phet.colorado.edu/en/simulations/collision-lab',
+            objectives: 'Apply conservation of momentum; analyze elastic and inelastic collisions.',
+            misconceptions: 'Momentum and kinetic energy are the same (false—momentum is mv, KE is (1/2)mv²); light objects can\'t have much momentum (false—speed matters too).'
+        },
+        {
+            id: 'impulse', topic: 'Mechanics', title: 'Impulse',
+            equations: '\\vec{J} = \\vec{F}\\Delta t = \\Delta \\vec{p}',
+            body: 'Impulse is force multiplied by time duration. The impulse-momentum theorem states that impulse equals change in momentum. This is why airbags work—they increase the time over which forces act, reducing peak force for the same momentum change. Impulse is useful in collisions, explosions, and any situation where forces act briefly.',
+            cds: {c: 'Impulse = change in momentum', d: 'Comparing stopping distances with padding', s: 'PhET: Collision Lab'},
+            phet: 'https://phet.colorado.edu/en/simulations/collision-lab',
+            objectives: 'Calculate impulse; relate impulse to momentum change; understand force-time tradeoff.',
+            misconceptions: 'Longer collision time always reduces injury (false—depends on force); impulse requires strong force (false—weak force for long time works too).'
+        },
+        {
+            id: 'torque', topic: 'Mechanics', title: 'Torque and Rotational Equilibrium',
+            equations: '\\vec{\\tau} = \\vec{r} \\times \\vec{F}, \\tau = rF\\sin(\\theta)',
+            body: 'Torque is the rotational analog of force. It depends on force magnitude, distance from pivot (lever arm), and the angle between them. Maximum torque occurs when force is perpendicular to the lever arm. Rotational equilibrium requires net torque to be zero. Torque causes angular acceleration just as force causes linear acceleration.',
+            cds: {c: 'Torque = lever arm × force component perpendicular to lever arm', d: 'Balanced and unbalanced seesaws', s: 'PhET: Torque and Rotational Motion'},
+            phet: 'https://phet.colorado.edu/en/simulations/torque',
+            objectives: 'Calculate torque; apply equilibrium conditions; understand lever advantages.',
+            misconceptions: 'Torque and force are equivalent (false—torque causes rotation); distance from pivot doesn\'t matter if force is the same (false—distance amplifies effect).'
+        },
+        {
+            id: 'rotational-dynamics', topic: 'Mechanics', title: 'Rotational Dynamics',
+            equations: '\\tau = I\\alpha, I = \\sum m_i r_i^2, KE_{rot} = \\frac{1}{2}I\\omega^2',
+            body: 'Rotational dynamics applies Newton\'s laws to rotation. Torque causes angular acceleration proportional to moment of inertia I. The moment of inertia plays the role that mass plays in linear motion. Rotational kinetic energy depends on I and ω². Different shapes have different moments of inertia for the same mass, affecting rotational behavior.',
+            cds: {c: 'Torque = moment of inertia × angular acceleration', d: 'Different objects rolling down ramp', s: 'PhET: Rotation'},
+            phet: 'https://phet.colorado.edu/en/simulations/rotation',
+            objectives: 'Calculate moment of inertia; apply rotational Newton\'s second law; solve rolling motion problems.',
+            misconceptions: 'All objects rotate the same way if same mass (false—shape matters through I); rolling without slipping means no friction (false—friction is required).'
+        },
+        {
+            id: 'angular-momentum', topic: 'Mechanics', title: 'Angular Momentum and Conservation',
+            equations: '\\vec{L} = \\vec{r} \\times \\vec{p} = I\\omega, \\vec{\\tau} = \\frac{d\\vec{L}}{dt}',
+            body: 'Angular momentum is the rotational analog of momentum. For a rotating object, L = Iω. In the absence of external torques, angular momentum is conserved. This explains why ice skaters spin faster when they pull in their arms—moment of inertia decreases, so ω increases to conserve L. Angular momentum is a fundamental conserved quantity in physics.',
+            cds: {c: 'Angular momentum is conserved when net torque is zero', d: 'Spinning chair with weights experiment', s: 'PhET: Angular Momentum'},
+            phet: 'https://phet.colorado.edu/en/simulations/rotation',
+            objectives: 'Calculate angular momentum; apply conservation in rotation problems; understand spin phenomena.',
+            misconceptions: 'Spinning faster always requires more energy input (false—redistribution of I can change ω without work); all rotations have same angular momentum (false—depends on I and ω).'
+        },
+        {
+            id: 'simple-harmonic', topic: 'Mechanics', title: 'Simple Harmonic Motion',
+            equations: 'x = A\\cos(\\omega t + \\phi), F = -kx, \\omega = \\sqrt{k/m}',
+            body: 'Simple harmonic motion occurs when restoring force is proportional to displacement. The classic example is a mass on a spring: F = -kx. Solutions oscillate sinusoidally with period T = 2π√(m/k). SHM appears everywhere: pendulums, atomic vibrations, LC circuits. The energy oscillates between kinetic and potential, with total energy constant.',
+            cds: {c: 'Restoring force proportional to displacement', d: 'Mass on spring oscillating', s: 'PhET: Masses and Springs'},
+            phet: 'https://phet.colorado.edu/en/simulations/masses-and-springs',
+            objectives: 'Solve SHM equations; find period and frequency; analyze energy in oscillations.',
+            misconceptions: 'Larger amplitude means higher frequency (false—f depends on k and m, not A); maximum velocity occurs at maximum displacement (false—at equilibrium).'
+        },
+        {
+            id: 'gravitation', topic: 'Mechanics', title: 'Gravitation and Planetary Motion',
+            equations: 'F = G\\frac{m_1 m_2}{r^2}, g = \\frac{GM}{R^2}, U = -\\frac{GMm}{r}',
+            body: 'Newton\'s law of universal gravitation states that all massive objects attract with force proportional to their masses and inversely proportional to distance squared. This law explains planetary orbits, tides, and the motion of galaxies. Gravitational PE is negative (zero at infinity), reflecting that gravitational force is attractive. Within Earth\'s atmosphere, g ≈ 9.8 m/s², but g decreases with altitude.',
+            cds: {c: 'Gravitational force proportional to mass product, inversely to distance squared', d: 'Cavendish torsion balance demonstration', s: 'PhET: Gravity and Orbits'},
+            phet: 'https://phet.colorado.edu/en/simulations/gravity-and-orbits',
+            objectives: 'Apply Newton\'s law of gravitation; calculate orbital motion; understand escape velocity.',
+            misconceptions: 'Gravity decreases with altitude so planes fall (false—gravity decreases slowly; planes are pushed up by air); gravity is same everywhere (false—varies with latitude and altitude).'
+        },
+        {
+            id: 'keplers-laws', topic: 'Mechanics', title: 'Keplers Laws',
+            equations: 'T^2 = \\frac{4\\pi^2}{GM}a^3',
+            body: 'Kepler\'s three laws describe planetary orbits. First: orbits are ellipses with the Sun at one focus. Second: planets sweep equal areas in equal times. Third: period squared is proportional to semi-major axis cubed (T² ∝ a³). Newton\'s gravitation explains all three laws. Kepler\'s third law allows determining distances to planets and masses of objects from orbital data.',
+            cds: {c: 'Orbital period depends on orbital size', d: 'Animated orbital mechanics visualization', s: 'PhET: My Solar System'},
+            phet: 'https://phet.colorado.edu/en/simulations/my-solar-system',
+            objectives: 'Apply Kepler\'s laws; calculate orbital elements; relate gravity to orbital motion.',
+            misconceptions: 'Circular orbits are most common (false—all are elliptical; circles are special case); gravity pulls objects inward but they don\'t fall (false—free fall is orbit).'
+        },
+        {
+            id: 'fluid-mechanics', topic: 'Mechanics', title: 'Fluid Mechanics and Buoyancy',
+            equations: 'P = \\frac{F}{A}, P = P_0 + \\rho gh, F_B = \\rho g V_{displaced}',
+            body: 'Pressure is force per unit area. In a fluid at rest, pressure increases with depth due to weight of fluid above. Buoyant force equals weight of displaced fluid (Archimedes\' principle). Density variations explain why hot air rises. Fluid dynamics involves viscosity, turbulence, and Bernoulli\'s principle. Applications range from blood flow to aircraft lift.',
+            cds: {c: 'Pressure increases with depth in fluid', d: 'Buoyancy demonstrations with various objects', s: 'PhET: Buoyancy'},
+            phet: 'https://phet.colorado.edu/en/simulations/buoyancy',
+            objectives: 'Calculate pressure and buoyant force; apply Archimedes\' principle; understand floating and sinking.',
+            misconceptions: 'Pressure only acts downward (false—acts in all directions); buoyancy only applies to water (false—applies to any fluid including air).'
+        },
+
+        // ELECTROMAGNETISM
+        {
+            id: 'coulombs-law', topic: 'Electromagnetism', title: 'Coulombs Law',
+            equations: 'F = k\\frac{q_1 q_2}{r^2}, k = 8.99 \\times 10^9 \\, \\text{N}\\cdot\\text{m}^2/\\text{C}^2',
+            body: 'Coulomb\'s law describes the electric force between two point charges. Like charges repel, opposite charges attract, with force proportional to charge product and inversely to distance squared. The constant k = 1/(4πε₀) relates to the permittivity of free space. Coulomb\'s law is the foundation of electrostatics. It mirrors Newton\'s gravity law but can be both attractive and repulsive.',
+            cds: {c: 'Electric force inversely proportional to distance squared', d: 'Charged sphere repulsion demonstration', s: 'PhET: Coulombs Law'},
+            phet: 'https://phet.colorado.edu/en/simulations/coulombs-law',
+            objectives: 'Calculate electric forces between charges; understand force superposition; solve multi-charge systems.',
+            misconceptions: 'Opposite charges always cancel (false—depends on positions); force is always the same at same distance (false—depends on charge magnitudes).'
+        },
+        {
+            id: 'electric-fields', topic: 'Electromagnetism', title: 'Electric Fields',
+            equations: '\\vec{E} = \\frac{\\vec{F}}{q} = k\\frac{Q}{r^2}\\hat{r}',
+            body: 'Electric field is the force per unit charge exerted by a source charge. Fields point away from positive charges and toward negative charges. Electric field superposition: total field is vector sum of individual fields. Field lines visualize field direction and strength (denser lines = stronger field). The concept of field is more elegant than direct force calculations for complex charge distributions.',
+            cds: {c: 'Electric field = force per unit charge from source charge', d: 'Field lines around charged objects', s: 'PhET: Electric Field Hockey'},
+            phet: 'https://phet.colorado.edu/en/simulations/electric-hockey',
+            objectives: 'Calculate electric field from charges; draw field lines; understand field superposition.',
+            misconceptions: 'Field lines show electron paths (false—they show field direction); field lines can cross (false—would show two directions at one point).'
+        },
+        {
+            id: 'gausss-law', topic: 'Electromagnetism', title: 'Gausss Law',
+            equations: '\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{Q_{enc}}{\\varepsilon_0}',
+            body: 'Gauss\'s law relates electric field to enclosed charge. The left side is electric flux (field lines through surface). The right side is enclosed charge divided by ε₀. For symmetric charge distributions, Gauss\'s law enables easy field calculation. For a point charge, it reproduces Coulomb\'s law. For a uniform sphere, field inside is zero (remarkable!). Gauss\'s law is one of Maxwell\'s equations.',
+            cds: {c: 'Flux through surface proportional to enclosed charge', d: 'Symmetry arguments for field calculation', s: 'PhET: Gausss Law'},
+            phet: 'https://phet.colorado.edu/en/simulations/charges-and-fields',
+            objectives: 'Apply Gauss\'s law to find electric fields; understand symmetry in electrostatics.',
+            misconceptions: 'Field inside conductor is same as outside (false—zero inside); Gauss\'s law only for high symmetry (false—always true but hard to apply).'
+        },
+        {
+            id: 'electric-potential', topic: 'Electromagnetism', title: 'Electric Potential and Voltage',
+            equations: 'V = \\frac{U}{q} = k\\frac{Q}{r}, \\Delta V = V_f - V_i',
+            body: 'Electric potential is electric potential energy per unit charge. Voltage is the potential difference between two points. Potential is path-independent (conservative field). Equipotentials are surfaces of constant potential; field lines are perpendicular to equipotentials. For a point charge, V = kQ/r. In uniform field, V decreases along field direction.',
+            cds: {c: 'Potential is potential energy per charge', d: 'Equipotential surfaces around conductors', s: 'PhET: Electric Potential'},
+            phet: 'https://phet.colorado.edu/en/simulations/charges-and-fields',
+            objectives: 'Calculate electric potential; find potential difference; understand equipotentials.',
+            misconceptions: 'Potential and potential energy are the same (false—PE is in joules, V is in volts); field points from high to low potential (true).'
+        },
+        {
+            id: 'capacitance', topic: 'Electromagnetism', title: 'Capacitance',
+            equations: 'C = \\frac{Q}{V}, C = \\varepsilon_0 \\frac{A}{d}, U = \\frac{1}{2}QV = \\frac{1}{2}CV^2',
+            body: 'A capacitor stores electric charge and energy. Capacitance is charge per voltage. For parallel plates, C = ε₀A/d (area increases C, separation decreases it). Stored energy is U = (1/2)CV² or (1/2)QV. Capacitors in series add reciprocally; in parallel add directly. Capacitors appear in power supplies, filters, and timing circuits.',
+            cds: {c: 'Capacitance is charge storage per volt', d: 'Parallel plate capacitor: vary plate separation', s: 'PhET: Capacitor Lab'},
+            phet: 'https://phet.colorado.edu/en/simulations/capacitor-lab-basics',
+            objectives: 'Calculate capacitance and stored energy; analyze capacitor combinations; understand dielectrics.',
+            misconceptions: 'Capacitors block DC (partly true—steady state); capacitors in series add (false—reciprocals add).'
+        },
+        {
+            id: 'current-resistance', topic: 'Electromagnetism', title: 'Electric Current and Resistance',
+            equations: 'I = \\frac{Q}{t}, R = \\rho \\frac{L}{A}, P = IV = I^2R = \\frac{V^2}{R}',
+            body: 'Current is charge per unit time, measured in amperes (A). Resistance opposes current. Resistivity ρ is a material property; longer wires have higher R, thicker wires lower R. Power dissipated as heat in a resistor is P = I²R. Current flows from high to low potential. Metals have low resistivity; insulators have high resistivity.',
+            cds: {c: 'Current is charge per unit time', d: 'Resistance varies with wire length and thickness', s: 'PhET: Resistance in a Wire'},
+            phet: 'https://phet.colorado.edu/en/simulations/resistance-in-a-wire',
+            objectives: 'Calculate current, voltage, and resistance; understand power dissipation.',
+            misconceptions: 'Thinner wires have less resistance (false—more resistance); current uses up energy (false—transforms it).'
+        },
+        {
+            id: 'ohms-law', topic: 'Electromagnetism', title: 'Ohms Law and DC Circuits',
+            equations: 'V = IR, \\varepsilon = I(R + r)',
+            body: 'Ohm\'s law states V = IR: voltage is proportional to current through a resistor. This microscopic basis is drift velocity of charge carriers proportional to electric field. Real batteries have internal resistance r, so terminal voltage V = ε - Ir where ε is EMF. Ohm\'s law holds for ohmic conductors (where R is constant) but fails for nonlinear devices.',
+            cds: {c: 'Voltage proportional to current through resistor', d: 'Lightbulb brightens with increasing voltage', s: 'PhET: Ohms Law'},
+            phet: 'https://phet.colorado.edu/en/simulations/ohms-law',
+            objectives: 'Apply Ohm\'s law; analyze simple circuits; calculate power.',
+            misconceptions: 'Voltage is consumed by resistors (false—voltage is potential difference); current is consumed by resistors (false—current is conserved).'
+        },
+        {
+            id: 'dc-circuits', topic: 'Electromagnetism', title: 'DC Circuit Analysis',
+            equations: '\\sum \\varepsilon = \\sum IR \\text{ (Kirchhoffs loop rule)}, \\sum I_{in} = \\sum I_{out} \\text{ (junction rule)}',
+            body: 'DC circuits combine batteries, resistors, and conductors. Kirchhoff\'s rules apply: voltage around loop sums to zero; current into junction equals current out. Series resistors add: R_total = R₁ + R₂. Parallel resistors: 1/R_total = 1/R₁ + 1/R₂. These rules allow analysis of complex circuits. Thevenin\'s theorem simplifies circuits.',
+            cds: {c: 'Kirchhoffs rules govern circuit analysis', d: 'Multi-loop circuit with meters', s: 'PhET: Circuit Construction Kit'},
+            phet: 'https://phet.colorado.edu/en/simulations/circuit-construction-kit-dc',
+            objectives: 'Apply Kirchhoff\'s rules; analyze series and parallel circuits; calculate currents and voltages.',
+            misconceptions: 'Current is different through different resistors in series (false—conserved); voltage same across series resistors (false—only in parallel).'
+        },
+        {
+            id: 'rc-circuits', topic: 'Electromagnetism', title: 'RC Circuits and Time Constants',
+            equations: 'V_C = V_0(1 - e^{-t/RC}), \\tau = RC',
+            body: 'RC circuits combine resistors and capacitors. When charging, voltage across capacitor rises exponentially with time constant τ = RC. The larger τ, the slower the charging. In discharging, voltage decays exponentially. These circuits model biological membranes, analog filters, and timing circuits. Time constant τ has units of seconds.',
+            cds: {c: 'Capacitor charges/discharges with exponential time dependence', d: 'RC circuit with adjustable R and C', s: 'RC Circuit Simulation'},
+            phet: 'https://phet.colorado.edu/en/simulations/circuit-construction-kit-ac',
+            objectives: 'Analyze charging and discharging RC circuits; calculate time constant; predict voltage evolution.',
+            misconceptions: 'Capacitor charges instantly (false—exponential approach); larger R means faster charging (false—slower, τ = RC).'
+        },
+        {
+            id: 'magnetic-fields', topic: 'Electromagnetism', title: 'Magnetic Fields and Forces',
+            equations: '\\vec{F} = q\\vec{v} \\times \\vec{B}, F = qvB\\sin(\\theta)',
+            body: 'Magnetic force on moving charge depends on velocity and magnetic field: F = qvB sin θ. Force is perpendicular to both v and B (right-hand rule). Stationary charges feel no magnetic force; only moving charges do. Magnetic field isdefined operationally via this force. Magnetic fields are generated by currents and permanent magnets.',
+            cds: {c: 'Magnetic force on charge depends on velocity × field', d: 'Charged particle paths in magnetic field', s: 'PhET: Magnets and Electromagnets'},
+            phet: 'https://phet.colorado.edu/en/simulations/magnets-and-electromagnets',
+            objectives: 'Calculate magnetic forces; understand Lorentz force; analyze charged particle motion in fields.',
+            misconceptions: 'Magnetic field exerts force on stationary charges (false); force points in field direction (false—perpendicular to field).'
+        },
+        {
+            id: 'biot-savart', topic: 'Electromagnetism', title: 'Biot-Savart Law',
+            equations: 'd\\vec{B} = \\frac{\\mu_0}{4\\pi} \\frac{I d\\vec{l} \\times \\hat{r}}{r^2}',
+            body: 'The Biot-Savart law calculates magnetic field from current elements. Current segment dl contributes field dB perpendicular to both dl and the position vector r. Integration over all segments gives total field. Straight wire produces circular field lines. Solenoid produces uniform field inside. Biot-Savart is less convenient than Ampere\'s law for symmetric geometries.',
+            cds: {c: 'Magnetic field from current element determined by Biot-Savart law', d: 'Magnetic field around various current configurations', s: 'PhET: Magnets and Electromagnets'},
+            phet: 'https://phet.colorado.edu/en/simulations/magnets-and-electromagnets',
+            objectives: 'Apply Biot-Savart law; calculate field from wires, loops, and solenoids.',
+            misconceptions: 'Field lines show force direction (true, but only for charges); field lines close on themselves (true for B field).'
+        },
+        {
+            id: 'amperes-law', topic: 'Electromagnetism', title: 'Amperes Law',
+            equations: '\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_{enc}',
+            body: 'Ampere\'s law relates magnetic field circulation around closed loop to enclosed current. For symmetric configurations like straight wire (B = μ₀I/2πr) and solenoid (B = μ₀nI), Ampere\'s law simplifies calculation. It\'s one of Maxwell\'s equations. Ampere-Maxwell law includes displacement current term, making it consistent with continuity equation.',
+            cds: {c: 'Magnetic field circulation determined by enclosed current', d: 'Solenoid field strength vs current', s: 'PhET: Magnets and Electromagnets'},
+            phet: 'https://phet.colorado.edu/en/simulations/magnets-and-electromagnets',
+            objectives: 'Apply Ampere\'s law; calculate B field from symmetric current distributions.',
+            misconceptions: 'Field inside solenoid depends on length (false—B = μ₀nI, independent of length); field outside solenoid is zero (true, ideally).'
+        },
+        {
+            id: 'faradays-law', topic: 'Electromagnetism', title: 'Faradays Law of Induction',
+            equations: '\\varepsilon = -\\frac{d\\Phi_B}{dt}, \\Phi_B = \\vec{B} \\cdot \\vec{A}',
+            body: 'Faraday\'s law states that induced EMF equals negative rate of change of magnetic flux. Flux is B · A (component of B perpendicular to area). Negative sign (Lenz\'s law) means induced current opposes the change. Induction enables generators (motion → EMF), transformers (changing B → EMF), and eddy currents. Core to electromagnetic induction.',
+            cds: {c: 'Induced EMF proportional to changing magnetic flux', d: 'Coil moving in magnetic field or varying field', s: 'PhET: Faradays Law'},
+            phet: 'https://phet.colorado.edu/en/simulations/faradays-law',
+            objectives: 'Calculate induced EMF; apply Lenz\'s law; understand electromagnetic induction.',
+            misconceptions: 'Flux and field are the same (false—flux is field through area); EMF is same as current (false—EMF = ε, current I = ε/R).'
+        },
+        {
+            id: 'inductance', topic: 'Electromagnetism', title: 'Inductance and Energy Storage',
+            equations: 'L = \\frac{N\\Phi_B}{I}, \\varepsilon = -L\\frac{dI}{dt}, U = \\frac{1}{2}LI^2',
+            body: 'Inductance L quantifies how much EMF a coil produces for changing current. Self-inductance relates flux through coil to its own current; mutual inductance couples two coils. Inductor stores energy in magnetic field. In RL circuits, current grows exponentially when switched on: I = (V/R)(1 - e^{-t/(L/R)}). Inductors oppose current changes.',
+            cds: {c: 'Inductor produces EMF opposing current change', d: 'RL circuit transient response', s: 'PhET: Inductance'},
+            phet: 'https://phet.colorado.edu/en/simulations/circuit-construction-kit-ac',
+            objectives: 'Calculate inductance; analyze RL circuits; understand energy storage in inductors.',
+            misconceptions: 'Inductors block AC (partly true—impedance XL = ωL increases with frequency); inductors oppose all currents (false—only changes).'
+        },
+        {
+            id: 'maxwells-equations', topic: 'Electromagnetism', title: 'Maxwells Equations',
+            equations: '\\nabla \\cdot \\vec{E} = \\rho/\\varepsilon_0, \\nabla \\cdot \\vec{B} = 0, \\nabla \\times \\vec{E} = -\\partial \\vec{B}/\\partial t, \\nabla \\times \\vec{B} = \\mu_0 \\vec{J} + \\mu_0 \\varepsilon_0 \\partial \\vec{E}/\\partial t',
+            body: 'Maxwell\'s four equations unify electricity and magnetism. Gauss\'s law relates E to charge. No magnetic monopoles (no ∇·B term). Faraday\'s law: changing B induces E. Ampere-Maxwell law: currents and changing E produce B. These equations predict electromagnetic waves traveling at speed c = 1/√(μ₀ε₀), unifying optics with electromagnetism. Profound symmetry between E and B.',
+            cds: {c: 'Four equations govern all classical electromagnetism', d: 'Wave propagation visualization', s: 'PhET: Electromagnetic Waves'},
+            phet: 'https://phet.colorado.edu/en/simulations/wave-on-a-string',
+            objectives: 'Understand Maxwell\'s equations; relate to circuit elements; see unification of EM.',
+            misconceptions: 'Equations only apply to special cases (false—universal); displacement current is negligible (false—essential for EM waves).'
+        },
+
+        // WAVES AND OPTICS
+        {
+            id: 'wave-equation', topic: 'Waves and Optics', title: 'Wave Equation and Wave Properties',
+            equations: '\\frac{\\partial^2 y}{\\partial t^2} = v^2 \\frac{\\partial^2 y}{\\partial x^2}, y = A\\sin(kx - \\omega t + \\phi)',
+            body: 'The wave equation describes wave propagation. Solutions are sinusoidal waves characterized by wavelength λ, frequency f, and speed v = λf. Amplitude A determines intensity. Wavenumber k = 2π/λ, angular frequency ω = 2πf. Wave equation is fundamental: governs sound, light, water waves, seismic waves, and quantum particles.',
+            cds: {c: 'Wave properties: wavelength, frequency, amplitude, speed', d: 'Slinky wave propagation demonstration', s: 'PhET: Wave on a String'},
+            phet: 'https://phet.colorado.edu/en/simulations/wave-on-a-string',
+            objectives: 'Solve wave equation; relate wavelength, frequency, speed; analyze wave motion.',
+            misconceptions: 'All waves travel at same speed (false—speed depends on medium); wave equation only for light (false—universal).'
+        },
+        {
+            id: 'superposition', topic: 'Waves and Optics', title: 'Superposition and Interference',
+            equations: 'y_{total} = y_1 + y_2, \\text{constructive: } \\Delta \\phi = 0, 2\\pi, ..., \\text{destructive: } \\Delta \\phi = \\pi, 3\\pi, ...',
+            body: 'Superposition states that waves add linearly. Two waves can interfere constructively (reinforce, amplitude doubles) or destructively (cancel, amplitude zeros). Interference pattern depends on phase difference Δφ = Δx · k or path difference Δx. Constructive at Δx = nλ; destructive at Δx = (n+1/2)λ. Interference proves wave nature (photons and electrons interfere).',
+            cds: {c: 'Waves superpose; interference depends on phase difference', d: 'Two-speaker interference pattern', s: 'PhET: Wave Interference'},
+            phet: 'https://phet.colorado.edu/en/simulations/wave-interference',
+            objectives: 'Calculate interference patterns; predict constructive/destructive conditions; understand superposition.',
+            misconceptions: 'Waves always add (true); interference is permanent (false—depends on path difference relative to wavelength).'
+        },
+        {
+            id: 'standing-waves', topic: 'Waves and Optics', title: 'Standing Waves and Resonance',
+            equations: 'L = n\\frac{\\lambda}{2}, f_n = n\\frac{v}{2L}',
+            body: 'Standing waves result from superposition of two waves traveling in opposite directions. Nodes (zero amplitude) and antinodes (maximum amplitude) don\'t move. For string fixed at both ends, resonance occurs when L = nλ/2, giving discrete frequencies f_n = nv/(2L). Standing waves enable vibrating strings, organ pipes, and resonant cavities. Energy oscillates between kinetic and potential.',
+            cds: {c: 'Standing waves form at resonant frequencies', d: 'String vibration modes or pipe resonance', s: 'PhET: String Standing Waves'},
+            phet: 'https://phet.colorado.edu/en/simulations/wave-on-a-string',
+            objectives: 'Predict resonant frequencies; analyze standing wave patterns; understand nodes and antinodes.',
+            misconceptions: 'Standing waves move (false—nodes and antinodes fixed); only open pipes resonate (false—closed pipes do too, different formula).'
+        },
+        {
+            id: 'doppler-effect', topic: 'Waves and Optics', title: 'Doppler Effect',
+            equations: 'f\' = f\\frac{v \\pm v_{observer}}{v \\mp v_{source}}, \\Delta f/f \\approx \\Delta v/v \\text{ (non-relativistic)}',
+            body: 'Doppler effect: observed frequency changes when source or observer moves. Approaching source/observer → higher frequency (bluer). Receding → lower frequency (redder). Non-relativistic formula shown. Relativistic version includes time dilation. Doppler effect explains redshift of distant galaxies, radar speed guns, and siren pitch change. Critical in astronomy and cosmology.',
+            cds: {c: 'Frequency shifts when source or observer moves', d: 'Siren moving toward and away', s: 'PhET: Doppler Effect'},
+            phet: 'https://phet.colorado.edu/en/simulations/sound-waves',
+            objectives: 'Calculate Doppler shift; apply to astronomy and everyday phenomena.',
+            misconceptions: 'Only source motion matters (false—observer motion also matters); wavelength unchanged in Doppler shift (false—changes too, but differently).'
+        },
+        {
+            id: 'sound-waves', topic: 'Waves and Optics', title: 'Sound Waves and Acoustics',
+            equations: 'v = \\sqrt{\\gamma \\frac{P}{\\rho}}, I = \\frac{P_{avg}^2}{2\\rho v}, \\beta = 10\\log_{10}(I/I_0) \\text{ (dB)}',
+            body: 'Sound is longitudinal pressure wave in air, water, or solid. Speed depends on medium properties: v ≈ 343 m/s in air at 20°C, faster in water and solids. Intensity I is power per area; decibel scale β = 10 log₁₀(I/I₀) is logarithmic. Human hearing range ~20 Hz to 20 kHz. Ultrasound and infrasound beyond hearing.',
+            cds: {c: 'Sound wave speed depends on medium', d: 'Tuning fork vibration and resonance', s: 'PhET: Sound'},
+            phet: 'https://phet.colorado.edu/en/simulations/sound',
+            objectives: 'Calculate sound speed; understand intensity and decibels; analyze acoustic phenomena.',
+            misconceptions: 'Sound travels at same speed in all media (false—varies with properties); louder sound has higher frequency (false—relates to intensity, not frequency).'
+        },
+        {
+            id: 'reflection', topic: 'Waves and Optics', title: 'Reflection and Mirrors',
+            equations: '\\theta_i = \\theta_r, f = \\frac{R}{2}, \\frac{1}{s} + \\frac{1}{s\'} = \\frac{1}{f}',
+            body: 'Law of reflection: angle of incidence equals angle of reflection. For curved mirrors, focal length f = R/2 where R is radius of curvature. Mirror equation 1/s + 1/s\' = 1/f relates object distance s, image distance s\', and focal length. Concave mirrors converge light (real images); convex mirrors diverge (virtual images). Mirrors appear in telescopes, headlights, and bathrooms.',
+            cds: {c: 'Angle of incidence equals angle of reflection', d: 'Ray tracing with curved mirrors', s: 'PhET: Geometric Optics'},
+            phet: 'https://phet.colorado.edu/en/simulations/geometric-optics',
+            objectives: 'Apply law of reflection; analyze mirror images using mirror equation; trace light rays.',
+            misconceptions: 'Curved mirrors always produce magnified images (false—depends on object distance); mirror equation applies only to plane mirrors (false—works for curved).'
+        },
+        {
+            id: 'refraction', topic: 'Waves and Optics', title: 'Refraction and Snells Law',
+            equations: 'n = c/v, n_1 \\sin(\\theta_1) = n_2 \\sin(\\theta_2)',
+            body: 'Refraction is bending of light at interface between media due to speed change. Refractive index n = c/v quantifies this. Snell\'s law n₁ sin θ₁ = n₂ sin θ₂ relates incident and refracted angles. Light bends toward normal when entering denser medium (higher n). Refraction enables lenses, prisms, and fiber optics.',
+            cds: {c: 'Light bends at interface; amount depends on refractive indices', d: 'Pencil in water appears bent', s: 'PhET: Snells Law'},
+            phet: 'https://phet.colorado.edu/en/simulations/bending-light',
+            objectives: 'Apply Snell\'s law; trace refracted rays; understand total internal reflection.',
+            misconceptions: 'Light travels faster in denser medium (false—slower, n larger); refraction angle larger than incident (false—depends on n ratio).'
+        },
+        {
+            id: 'lenses', topic: 'Waves and Optics', title: 'Lenses and Optical Instruments',
+            equations: 'P = \\frac{1}{f} \\text{ (diopters)}, \\frac{1}{s} + \\frac{1}{s\'} = \\frac{1}{f}, m = -\\frac{s\'}{s}',
+            body: 'Lenses refract light to focus or diverge. Converging lenses (convex) have positive focal length; diverging lenses (concave) have negative focal length. Lens equation 1/s + 1/s\' = 1/f determines image location and magnification m = -s\'/s. Lenses in cameras, eyes, microscopes, telescopes. Power P = 1/f measured in diopters.',
+            cds: {c: 'Lenses focus or diverge light via refraction', d: 'Lens focal point and ray tracing', s: 'PhET: Geometric Optics'},
+            phet: 'https://phet.colorado.edu/en/simulations/geometric-optics',
+            objectives: 'Apply lens equation; predict real and virtual images; understand magnification.',
+            misconceptions: 'All lenses magnify (false—diverging lenses minimize); focal length same for all light (false—chromatic aberration exists).'
+        },
+        {
+            id: 'diffraction', topic: 'Waves and Optics', title: 'Diffraction and Fraunhofer Patterns',
+            equations: 'a\\sin(\\theta) = m\\lambda \\text{ (single slit)}, d\\sin(\\theta) = m\\lambda \\text{ (double slit)}',
+            body: 'Diffraction is bending of waves around obstacles or through apertures. Single slit creates diffraction pattern with central maximum and side lobes. Double slit combines diffraction and interference: diffraction envelope modulates fine interference fringes. Diffraction limits telescope resolution. Wave nature of light essential to explain diffraction.',
+            cds: {c: 'Waves diffract around obstacles; pattern depends on wavelength', d: 'Single and double slit pattern comparison', s: 'PhET: Wave Interference'},
+            phet: 'https://phet.colorado.edu/en/simulations/wave-interference',
+            objectives: 'Calculate diffraction patterns; distinguish diffraction from interference; understand resolution limits.',
+            misconceptions: 'Only light diffracts (false—all waves do); diffraction requires very small slit (false—depends on wavelength).'
+        },
+        {
+            id: 'polarization', topic: 'Waves and Optics', title: 'Polarization of Light',
+            equations: 'I = I_0 \\cos^2(\\theta), I = I_0 e^{-\\mu x}',
+            body: 'Light can be polarized (oscillations in one direction) or unpolarized (random directions). Polarizers transmit only one polarization; Malus\'s law I = I₀cos²θ predicts transmitted intensity. Polarizing filters block perpendicular polarization. Brewster angle causes reflected light to be polarized. Birefringent materials split light into two polarizations. Polarization proves light is transverse wave.',
+            cds: {c: 'Light polarization: longitudinal vs transverse oscillation', d: 'Polarizer filters blocking light', s: 'PhET: Polarization'},
+            phet: 'https://phet.colorado.edu/en/simulations/wave-interference',
+            objectives: 'Apply Malus\'s law; analyze polarizers; understand Brewster angle.',
+            misconceptions: 'All light is polarized (false—unpolarized is mixture); polarizers eliminate light (true, partially).'
+        },
+        {
+            id: 'thin-film', topic: 'Waves and Optics', title: 'Thin Film Interference',
+            equations: '2nt = m\\lambda \\text{ (constructive)}, 2nt = (m+1/2)\\lambda \\text{ (destructive)}',
+            body: 'Thin films produce interference between reflections from top and bottom surfaces. Path difference is 2nt where n is refractive index and t is thickness. Constructive interference at certain wavelengths (bright colors); destructive at others (dark). Soap bubbles, oil slicks, and anti-reflection coatings use thin film interference. Colors depend on film thickness and viewing angle.',
+            cds: {c: 'Interference between reflections from film surfaces', d: 'Soap bubble color changes', s: 'PhET: Thin Film Interference'},
+            phet: 'https://phet.colorado.edu/en/simulations/wave-interference',
+            objectives: 'Calculate interference conditions in thin films; predict colors; understand anti-reflection coatings.',
+            misconceptions: 'Film color independent of thickness (false—strongly dependent); single reflection dominates (false—multiple reflections interfere).'
+        },
+
+        // THERMODYNAMICS
+        {
+            id: 'temperature-heat', topic: 'Thermodynamics', title: 'Temperature and Heat',
+            equations: 'Q = mc\\Delta T, Q = mL_f \\text{ (latent)}, \\Delta L = \\alpha L_0 \\Delta T',
+            body: 'Temperature measures molecular kinetic energy. Heat Q is energy transfer due to temperature difference. Heat capacity c relates heat to temperature change: Q = mcΔT. Latent heat L_f is energy to change phase without temperature change. Thermal expansion occurs as materials heat: ΔL = αL₀ΔT. Thermal conduction, convection, radiation transfer heat.',
+            cds: {c: 'Heat and temperature are distinct concepts', d: 'Mixing hot and cold water to find equilibrium', s: 'PhET: Heat Transfer'},
+            phet: 'https://phet.colorado.edu/en/simulations/energy-forms-and-changes',
+            objectives: 'Calculate heat transfer; understand latent heat; analyze thermal equilibrium.',
+            misconceptions: 'Heat and temperature are same (false—heat is energy, temperature is property); objects have heat (false—objects have internal energy, heat is transfer).'
+        },
+        {
+            id: 'ideal-gas-law', topic: 'Thermodynamics', title: 'Ideal Gas Law and State Equation',
+            equations: 'PV = nRT, PV = NkT, \\text{where } R = 8.314 \\, \\text{J/(mol}\\cdot\\text{K)}',
+            body: 'Ideal gas law relates pressure, volume, temperature, and amount of gas. Assumes molecules have no volume and no interactions. PV = nRT where n is moles and R is gas constant. Equivalently PV = NkT where N is particle number and k is Boltzmann constant. Most gases approximate ideal behavior at moderate pressures. Deviations (van der Waals) matter at high pressure.',
+            cds: {c: 'Pressure, volume, temperature related by PV=nRT', d: 'Gas in syringe: compress to increase pressure', s: 'PhET: Gas Properties'},
+            phet: 'https://phet.colorado.edu/en/simulations/gas-properties',
+            objectives: 'Apply ideal gas law; relate P, V, T for ideal gases; understand deviations.',
+            misconceptions: 'Ideal gas law applies to all gases (false—liquids violate it); law assumes point particles (not exactly—also no interactions).'
+        },
+        {
+            id: 'kinetic-theory', topic: 'Thermodynamics', title: 'Kinetic Theory of Gases',
+            equations: 'P = \\frac{1}{3}\\rho \\langle v^2 \\rangle, \\langle KE \\rangle = \\frac{3}{2}kT, \\langle v \\rangle = \\sqrt{3kT/m}',
+            body: 'Kinetic theory explains ideal gas law from molecular motion. Pressure results from molecular collisions with walls. Root-mean-square speed vrms = √(3kT/m) increases with temperature. Average kinetic energy per molecule (3/2)kT establishes equipartition. Predicts that P ∝ T at constant V and P ∝ n at constant V and T. Explains why heating increases pressure.',
+            cds: {c: 'Pressure and temperature explained by molecular motion', d: 'Particle collisions in container', s: 'PhET: Gas Properties'},
+            phet: 'https://phet.colorado.edu/en/simulations/gas-properties',
+            objectives: 'Relate macroscopic properties to molecular motion; calculate RMS speeds; understand equipartition.',
+            misconceptions: 'All molecules have same speed (false—distribution of speeds); doubling T doubles speed (false—doubles KE, speed increases by √2).'
+        },
+        {
+            id: 'first-law', topic: 'Thermodynamics', title: 'First Law of Thermodynamics',
+            equations: '\\Delta U = Q - W, dU = dQ - dW = dQ - PdV',
+            body: 'First law is energy conservation for thermodynamics: ΔU = Q - W. Internal energy change equals heat added minus work done by system. W = PΔV for constant pressure. Process types: isobaric (constant P), isochoric (constant V, no work), isothermal (constant T), adiabatic (Q=0). Each type has characteristic relationship between P, V, T.',
+            cds: {c: 'Energy conserved; heat input equals internal energy change plus work output', d: 'Gas expanding and doing work', s: 'PhET: States of Matter'},
+            phet: 'https://phet.colorado.edu/en/simulations/states-of-matter',
+            objectives: 'Apply first law to thermodynamic processes; calculate work and heat; analyze energy flow.',
+            misconceptions: 'Internal energy is temperature (false—U is total, includes kinetic and potential); heat always increases temperature (false—can do work instead, T constant).'
+        },
+        {
+            id: 'heat-engines', topic: 'Thermodynamics', title: 'Heat Engines and Efficiency',
+            equations: 'W = Q_h - Q_c, \\eta = \\frac{W}{Q_h} = 1 - \\frac{Q_c}{Q_h}',
+            body: 'Heat engine absorbs heat from hot reservoir, produces work, expels heat to cold reservoir. Efficiency η = W/Q_h = 1 - Q_c/Q_h is always less than 100% (second law). Real engines (cars, power plants) operate on cycles like Otto cycle (gasoline) or Diesel cycle. Efficiency increases with temperature difference between reservoirs.',
+            cds: {c: 'Heat engine converts heat to work with limited efficiency', d: 'Stirling engine demonstration', s: 'PhET: Carnot Cycle'},
+            phet: 'https://phet.colorado.edu/en/simulations/gas-properties',
+            objectives: 'Analyze heat engine cycles; calculate efficiency; understand limitations.',
+            misconceptions: 'Perfect efficiency is possible (false—violates second law); heat engines don\'t require cold reservoir (false—essential).'
+        },
+        {
+            id: 'carnot-cycle', topic: 'Thermodynamics', title: 'Carnot Cycle and Reversibility',
+            equations: '\\eta_C = 1 - \\frac{T_c}{T_h}, \\text{for reversible processes}',
+            body: 'Carnot cycle is idealized reversible heat engine operating between two temperature reservoirs. Consists of two isothermal and two adiabatic processes. Carnot efficiency ηC = 1 - Tc/Th is maximum possible for given temperatures. No real engine achieves Carnot efficiency (irreversibility). Carnot cycle proves second law: no engine more efficient than Carnot between same temperatures.',
+            cds: {c: 'Carnot cycle is maximally efficient reversible engine', d: 'PV diagram of Carnot cycle', s: 'PhET: Carnot Cycle'},
+            phet: 'https://phet.colorado.edu/en/simulations/gas-properties',
+            objectives: 'Understand Carnot cycle processes; calculate Carnot efficiency; apply to refrigerators.',
+            misconceptions: 'Carnot efficiency applies to all engines (false—only idealized reversible); efficiency increases with higher cold temperature (false—T_c should decrease).'
+        },
+        {
+            id: 'entropy', topic: 'Thermodynamics', title: 'Entropy and Disorder',
+            equations: 'S = k \\ln W, dS = \\frac{dQ}{T}, \\Delta S_{total} \\geq 0',
+            body: 'Entropy quantifies disorder and irreversibility. Boltzmann: S = k ln W where W is number of microstates. Statistical meaning: entropy increases with number of ways system can be arranged. Entropy change dS = dQ_rev/T for reversible process. Second law: total entropy of isolated system never decreases (ΔS_total ≥ 0). Explains arrow of time.',
+            cds: {c: 'Entropy measures disorder and irreversibility', d: 'Mixing two gases increases entropy', s: 'PhET: Entropy'},
+            phet: 'https://phet.colorado.edu/en/simulations/states-of-matter',
+            objectives: 'Calculate entropy changes; understand microscopic interpretation; apply second law.',
+            misconceptions: 'Entropy always increases (true for isolated systems, not open); disorder and entropy always same (false—subtle difference).'
+        },
+        {
+            id: 'second-law', topic: 'Thermodynamics', title: 'Second Law of Thermodynamics',
+            equations: '\\Delta S_{universe} > 0 \\text{ (irreversible)}, \\Delta S = 0 \\text{ (reversible)}',
+            body: 'Second law states entropy of isolated system never decreases: ΔS_total ≥ 0. Equivalent statements: heat never flows spontaneously from cold to hot; no perpetual motion machine of first kind; not all heat can be converted to work. Second law explains why some processes are irreversible even though microscopic laws (Newton, QM) are reversible.',
+            cds: {c: 'Entropy of isolated system cannot decrease', d: 'Irreversibility: heat spreading in space', s: 'PhET: Entropy'},
+            phet: 'https://phet.colorado.edu/en/simulations/states-of-matter',
+            objectives: 'Apply second law; calculate entropy in irreversible processes; understand time\'s arrow.',
+            misconceptions: 'Second law forbids local entropy decrease (false—allowed if total entropy increases); perpetual motion would violate second law (true).'
+        },
+        {
+            id: 'phase-transitions', topic: 'Thermodynamics', title: 'Phase Transitions and Phase Diagrams',
+            equations: 'Q = mL, \\text{Clausius-Clapeyron: } \\frac{dP}{dT} = \\frac{L}{T\\Delta V}',
+            body: 'Phase transitions (melting, boiling, sublimation) occur at specific T and P. Latent heat L is energy per mass needed for transition; temperature constant during transition. Phase diagram shows regions where solid, liquid, gas are stable. Triple point is where three phases coexist. Critical point where distinction between liquid and gas disappears. Clausius-Clapeyron relates slope of phase boundary to latent heat.',
+            cds: {c: 'Phase transitions at specific temperature and pressure conditions', d: 'Heating ice: temperature plateau at melting point', s: 'PhET: States of Matter'},
+            phet: 'https://phet.colorado.edu/en/simulations/states-of-matter',
+            objectives: 'Analyze phase diagrams; calculate latent heat; understand phase equilibria.',
+            misconceptions: 'All substances melt at same temperature (false—substance-dependent); pressure doesn\'t affect melting point (false—slope on phase diagram).'
+        },
+        {
+            id: 'statistical-mechanics', topic: 'Thermodynamics', title: 'Statistical Mechanics and Boltzmann Distribution',
+            equations: 'P(E) = \\frac{e^{-E/kT}}{Z}, Z = \\sum_i e^{-E_i/kT}',
+            body: 'Statistical mechanics derives thermodynamics from probability and statistics. Boltzmann distribution P(E) ∝ e^{-E/kT} gives probability of finding system in state with energy E. Partition function Z is sum over all states. Average energy ⟨E⟩ = -∂(ln Z)/∂β. This framework connects microscopic and macroscopic physics, explaining thermal properties.',
+            cds: {c: 'Boltzmann distribution determines state probabilities', d: 'Energy state populations vs temperature', s: 'PhET: Statistical Mechanics'},
+            phet: 'https://phet.colorado.edu/en/simulations/gas-properties',
+            objectives: 'Apply Boltzmann distribution; calculate partition function; relate to macroscopic properties.',
+            misconceptions: 'All states equally probable (false—exponentially weighted by energy); zero temperature means no motion (false—zero point energy remains).'
+        },
+
+        // MODERN PHYSICS
+        {
+            id: 'special-relativity', topic: 'Modern Physics', title: 'Special Relativity and Lorentz Transformations',
+            equations: '\\gamma = \\frac{1}{\\sqrt{1-v^2/c^2}}, x\' = \\gamma(x - vt), t\' = \\gamma(t - vx/c^2)',
+            body: 'Special relativity (1905) based on principle that speed of light c is same for all inertial observers. Lorentz transformations replace Galilean transformations. Events simultaneous in one frame are not in another. Proper time dilates: Δt = γΔt₀. Length contracts in motion direction: L = L₀/γ. Spacetime is unified. Valid for all speeds; approaches Galilean at v << c.',
+            cds: {c: 'Light speed constant in all frames; space and time mix', d: 'Muon decay time dilation', s: 'PhET: Special Relativity'},
+            phet: 'https://phet.colorado.edu/en/filter?q=relativity',
+            objectives: 'Apply Lorentz transformations; calculate time dilation and length contraction.',
+            misconceptions: 'Relativity means everything is relative (false—c is absolute); length contracts in all directions (false—only along motion).'
+        },
+        {
+            id: 'time-dilation', topic: 'Modern Physics', title: 'Time Dilation',
+            equations: '\\Delta t = \\gamma \\Delta t_0 = \\frac{\\Delta t_0}{\\sqrt{1-v^2/c^2}}',
+            body: 'Time dilation: moving clocks run slow. Observer sees moving clock ticking at rate γ slower than proper time. Proper time is measured in rest frame of clock. GPS satellites must account for time dilation. Particle decay times increase in lab frame due to dilation. Reciprocal: each observer sees other\'s clock slow (relative motion). Effect becomes significant only near speed of light.',
+            cds: {c: 'Moving clocks run slow compared to stationary clocks', d: 'Particle lifetime in rest vs lab frame', s: 'PhET: Time Dilation'},
+            phet: 'https://phet.colorado.edu/en/filter?q=relativity',
+            objectives: 'Calculate time dilation factor; apply to particle decay and GPS.',
+            misconceptions: 'Observer\'s clock slows but not others\' clocks (false—relative, both see other slow); dilation depends on absolute motion (false—relative motion).'
+        },
+        {
+            id: 'length-contraction', topic: 'Modern Physics', title: 'Length Contraction',
+            equations: 'L = L_0\\sqrt{1-v^2/c^2} = L_0/\\gamma',
+            body: 'Length contraction: moving objects shorter than rest length. Contraction only along direction of motion. Observer measures Lorentz-contracted length L = L₀/γ. Transverse dimensions unchanged. Muons from cosmic rays reach Earth despite short lifetime because distance contracts in muon frame. Ladder paradox resolves using relativity of simultaneity.',
+            cds: {c: 'Moving objects contracted in direction of motion', d: 'Cosmic ray muon reaches Earth despite decay', s: 'PhET: Length Contraction'},
+            phet: 'https://phet.colorado.edu/en/filter?q=relativity',
+            objectives: 'Calculate contracted length; understand why length contracts but not time passes slower.',
+            misconceptions: 'Objects are actually smaller when moving (false—length depends on reference frame); contraction in all directions (false—only along motion).'
+        },
+        {
+            id: 'mass-energy', topic: 'Modern Physics', title: 'Mass-Energy Equivalence',
+            equations: 'E = mc^2, E^2 = (pc)^2 + (mc^2)^2',
+            body: 'Einstein\'s mass-energy equivalence E = mc² shows energy and mass are interchangeable. Tiny mass converts to huge energy (c² = 9×10¹⁶). Nuclear reactions release energy by small mass loss. Sun loses 600 million tons per second via E = mc². Photons are massless light carrying energy E = pc = hf. General relation: E² = (pc)² + (mc²)².',
+            cds: {c: 'Mass and energy equivalent at rate c²', d: 'Nuclear binding energy calculation', s: 'PhET: Energy-Mass'},
+            phet: 'https://phet.colorado.edu/en/simulations/photoelectric',
+            objectives: 'Calculate energy from mass; understand nuclear binding energy; apply to particle physics.',
+            misconceptions: 'E=mc² means mass converts to energy (misleading—better: mass is form of energy); energy from mc² is always available (false—need reaction to release).'
+        },
+        {
+            id: 'photoelectric-effect', topic: 'Modern Physics', title: 'Photoelectric Effect',
+            equations: 'h\\nu = W + KE_{max}, W = h\\nu_0, KE_{max} = h\\nu - W',
+            body: 'Photoelectric effect: light ejects electrons from metal. Einstein explained using photons: photon energy hν must exceed work function W. Maximum kinetic energy of ejected electrons depends on frequency ν, not intensity. Intensity determines number of ejected electrons. Proves light quantization. Einstein won Nobel Prize for this explanation.',
+            cds: {c: 'Light energy threshold needed to eject electrons', d: 'Measuring stopping potential vs frequency', s: 'PhET: Photoelectric Effect'},
+            phet: 'https://phet.colorado.edu/en/simulations/photoelectric',
+            objectives: 'Apply Einstein\'s photoelectric equation; calculate work function and stopping potential.',
+            misconceptions: 'Brighter light ejects faster electrons (false—frequency determines speed, intensity determines number); photoelectric proves light is particle (partly—also wave effects).'
+        },
+        {
+            id: 'bohr-model', topic: 'Modern Physics', title: 'Bohr Model of Hydrogen',
+            equations: 'r_n = n^2 a_0, E_n = -\\frac{13.6 \\text{ eV}}{n^2}, h\\nu = E_n - E_m',
+            body: 'Bohr model (1913) applies quantum condition to hydrogen. Electrons orbit nuclei in quantized levels with fixed radii r_n = n²a₀ and energies E_n = -13.6/n² eV. Transitions emit photons with frequency ν = (E_n - E_m)/h. Model explains hydrogen spectrum quantitatively but fails for multi-electron atoms. Replaced by quantum mechanics but remains pedagogically useful.',
+            cds: {c: 'Electron orbits in quantized energy levels', d: 'Hydrogen spectrum emission lines', s: 'PhET: Bohr Model'},
+            phet: 'https://phet.colorado.edu/en/simulations/models-of-the-hydrogen-atom',
+            objectives: 'Apply Bohr model; predict spectral lines; understand quantization.',
+            misconceptions: 'Bohr model is correct quantum mechanics (false—QM is better); electrons spiral into nucleus without quantization (true, classically).'
+        },
+        {
+            id: 'de-broglie', topic: 'Modern Physics', title: 'de Broglie Wavelength',
+            equations: '\\lambda = \\frac{h}{p} = \\frac{h}{mv}, \\nu = \\frac{E}{h}',
+            body: 'de Broglie (1924) proposed matter waves: particles have wavelength λ = h/p. Wavelength inversely proportional to momentum. High-speed electrons have short wavelengths, enabling electron microscopes with better resolution than light microscopes. Electron diffraction proves matter wave nature. De Broglie\'s insight was key to quantum mechanics development.',
+            cds: {c: 'Matter particles have wavelength inversely proportional to momentum', d: 'Electron diffraction pattern from crystal', s: 'PhET: de Broglie Wavelength'},
+            phet: 'https://phet.colorado.edu/en/simulations/davisson-germer',
+            objectives: 'Calculate de Broglie wavelength; understand wave-particle duality.',
+            misconceptions: 'Wavelength independent of momentum (false—inversely proportional); only light has wavelength (false—all matter does).'
+        },
+        {
+            id: 'heisenberg-uncertainty', topic: 'Modern Physics', title: 'Heisenberg Uncertainty Principle',
+            equations: '\\Delta x \\cdot \\Delta p \\geq \\frac{\\hbar}{2}, \\Delta E \\cdot \\Delta t \\geq \\frac{\\hbar}{2}',
+            body: 'Heisenberg uncertainty principle: cannot simultaneously know position and momentum to arbitrary precision. Product of uncertainties at least ℏ/2. Similarly, energy-time uncertainty. Fundamental to quantum mechanics, not just measurement limitation. Explains why particles confined in small space have high kinetic energy. At macroscopic scale, uncertainties negligible.',
+            cds: {c: 'Cannot simultaneously determine position and momentum precisely', d: 'Diffraction showing spatial uncertainty', s: 'PhET: Uncertainty Principle'},
+            phet: 'https://phet.colorado.edu/en/simulations/quantum-tunneling',
+            objectives: 'Apply uncertainty principle; estimate minimum energies; understand quantum limitations.',
+            misconceptions: 'Uncertainty is experimental error (false—fundamental principle); better equipment reduces uncertainty (false—ℏ/2 is absolute limit).'
+        },
+        {
+            id: 'schrodinger-equation', topic: 'Modern Physics', title: 'Schrodinger Equation',
+            equations: '-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi}{dx^2} + V\\psi = E\\psi',
+            body: 'Schrödinger equation governs quantum particle wave function ψ. Time-independent form shown. ψ itself is not observable; |ψ|² is probability density. Stationary states have definite energy E. Solving for bound states gives quantized energies and allowed configurations. Schrödinger equation is fundamental to quantum mechanics, replacing Newton\'s laws.',
+            cds: {c: 'Wave function ψ governed by Schrodinger equation', d: 'Particle in box solution visualization', s: 'PhET: Quantum Tunneling'},
+            phet: 'https://phet.colorado.edu/en/simulations/quantum-tunneling',
+            objectives: 'Understand Schrödinger equation conceptually; analyze particle in box; calculate probabilities.',
+            misconceptions: 'ψ is directly observable (false—|ψ|² is probability); equation directly gives particle position (false—gives probability distribution).'
+        },
+        {
+            id: 'quantum-tunneling', topic: 'Modern Physics', title: 'Quantum Tunneling',
+            equations: 'T \\propto e^{-2\\kappa d}, \\kappa = \\frac{\\sqrt{2m(V-E)}}{\\hbar}',
+            body: 'Quantum tunneling: particle penetrates energy barrier even when classical kinetic energy is insufficient. Probability proportional to exp(-2κd). Enables radioactive decay, junction diodes, scanning tunneling microscope, and nuclear fusion in stars. Tunneling probability decreases rapidly with barrier width and energy difference. No classical analog; purely quantum effect.',
+            cds: {c: 'Particles tunnel through classically impassable barriers', d: 'Radioactive alpha decay', s: 'PhET: Quantum Tunneling'},
+            phet: 'https://phet.colorado.edu/en/simulations/quantum-tunneling',
+            objectives: 'Estimate tunneling probability; understand when tunneling is significant; apply to decay.',
+            misconceptions: 'Tunneling means particle has enough energy (false—insufficient energy); tunneling probability independent of barrier (false—exponential dependence).'
+        },
+        {
+            id: 'nuclear-physics', topic: 'Modern Physics', title: 'Nuclear Physics and Binding Energy',
+            equations: 'BE = [Z m_p + N m_n - M_{nucleus}]c^2',
+            body: 'Nucleus contains protons and neutrons bound by strong nuclear force. Binding energy per nucleon peaks around iron (most stable). Light nuclei gain energy by fusion; heavy nuclei by fission. Nuclear stability depends on neutron-proton ratio. Strong force has short range (~1 fm). Mass defect (difference between constituent masses and actual mass) explains binding energy via E = mc².',
+            cds: {c: 'Nuclear stability and binding energy vs mass number', d: 'Fusion and fission energy release', s: 'PhET: Nuclear Physics'},
+            phet: 'https://phet.colorado.edu/en/simulations/build-a-nucleus',
+            objectives: 'Calculate binding energy; understand stability; relate to fission and fusion energy.',
+            misconceptions: 'Heavy nuclei are most stable (false—iron region); fission and fusion both release energy (true, but for different reasons).'
+        },
+        {
+            id: 'radioactive-decay', topic: 'Modern Physics', title: 'Radioactive Decay and Half-Life',
+            equations: 'N(t) = N_0 e^{-\\lambda t}, T_{1/2} = \\frac{\\ln 2}{\\lambda}',
+            body: 'Radioactive decay is spontaneous nuclear transformation. Decay rate follows exponential: N(t) = N₀e^{-λt}. Half-life T₁/₂ = ln(2)/λ is time for activity to halve. Alpha decay (He nucleus), beta decay (electron/antineutrino), gamma decay (photon) change nuclear composition. Decay rates vary enormously (nanoseconds to years) depending on nucleus.',
+            cds: {c: 'Radioactive decay follows exponential decay law', d: 'Counting decays from source', s: 'PhET: Radioactive Decay'},
+            phet: 'https://phet.colorado.edu/en/simulations/radioactive-dating-game',
+            objectives: 'Apply decay equations; calculate half-lives; understand decay chains.',
+            misconceptions: 'Half-life is time until all nuclei decay (false—exponential tail infinite); decay rate predictable for individual nucleus (false—only statistical).'
+        },
+        {
+            id: 'particle-physics', topic: 'Modern Physics', title: 'Elementary Particles and Standard Model',
+            equations: 'E = mc^2, \\text{Conservation laws: energy, momentum, charge, baryon number, lepton number}',
+            body: 'Standard Model classifies particles into quarks and leptons with three generations. Quarks combine to form hadrons (protons, neutrons, pions). Leptons include electrons, muons, taus, and their neutrinos. Four fundamental forces: strong (quarks), electromagnetic, weak, gravity. Symmetries determine allowed interactions. Higgs boson (discovered 2012) gives particles mass.',
+            cds: {c: 'Fundamental particles and interactions described by Standard Model', d: 'Particle detector event visualization', s: 'PhET: Particle Physics'},
+            phet: 'https://phet.colorado.edu/en/simulations/photoelectric',
+            objectives: 'Understand particle classifications; apply conservation laws; appreciate unification attempts.',
+            misconceptions: 'Protons and neutrons are fundamental (false—made of quarks); electrons can be composed (false—leptons are fundamental).'
+        },
+        {
+            id: 'standard-model', topic: 'Modern Physics', title: 'Standard Model Overview',
+            equations: 'SU(3) \\times SU(2) \\times U(1) \\text{ gauge symmetry}',
+            body: 'Standard Model unifies electromagnetic and weak forces (electroweak). SU(3) gauge symmetry describes strong force (QCD). Predicts W±, Z bosons (discovered 1983). Higgs mechanism explains mass generation. Despite successes (incredibly precise predictions), Standard Model incomplete: doesn\'t include gravity, dark matter/energy. Quest continues for physics beyond Standard Model.',
+            cds: {c: 'Standard Model unifies three of four fundamental forces', d: 'Particle interactions and processes', s: 'PhET: Standard Model Overview'},
+            phet: 'https://phet.colorado.edu/en/simulations/photoelectric',
+            objectives: 'Understand SM structure; appreciate successes and limitations; recognize open questions.',
+            misconceptions: 'Standard Model is complete (false—doesn\'t include gravity); all particles explained by SM (false—dark matter/energy external).'
+        },
+
+        // MATHEMATICAL METHODS
+        {
+            id: 'vectors-coordinates', topic: 'Mathematical Methods', title: 'Vectors and Coordinate Systems',
+            equations: '\\vec{A} = A_x\\hat{i} + A_y\\hat{j} + A_z\\hat{k}, |\\vec{A}| = \\sqrt{A_x^2+A_y^2+A_z^2}',
+            body: 'Vectors represent quantities with magnitude and direction. Component decomposition projects vectors onto coordinate axes. Dot product A·B = ABcosθ gives scalar; cross product A×B = ABsinθ gives vector perpendicular to both. Cartesian, cylindrical, and spherical coordinates each simplify different problems. Choosing the right coordinate system can turn an impossible integral into a trivial one.',
+            cds: {c: 'Vector decomposition and coordinate transformations', d: 'Force vector addition on force table', s: 'Interactive vector addition applet'},
+            phet: 'https://phet.colorado.edu/en/simulations/vector-addition',
+            objectives: 'Decompose vectors; convert between coordinate systems; compute dot and cross products.',
+            misconceptions: 'Vectors are just numbers with arrows (false—they obey specific algebra); cross product is commutative (false—anticommutative).'
+        },
+        {
+            id: 'calculus-physics', topic: 'Mathematical Methods', title: 'Calculus in Physics',
+            equations: 'v = \\frac{dx}{dt}, a = \\frac{dv}{dt}, x = \\int v\\,dt',
+            body: 'Calculus is the language of physics. Derivatives give instantaneous rates of change: velocity is derivative of position, acceleration is derivative of velocity. Integrals accumulate: displacement is integral of velocity, work is integral of force over distance. Most physics laws are expressed as differential equations. Understanding limits, derivatives, and integrals is essential for every topic in physics.',
+            cds: {c: 'Derivatives and integrals connect position, velocity, acceleration', d: 'Motion sensor plotting position and velocity simultaneously', s: 'Graphical differentiation and integration tool'},
+            phet: 'https://phet.colorado.edu/en/simulations/calculus-grapher',
+            objectives: 'Differentiate and integrate physical quantities; interpret derivatives as rates and integrals as accumulations.',
+            misconceptions: 'Calculus is only for theory (false—essential for problem solving); derivative of position is always velocity (true only for time derivative).'
+        },
+        {
+            id: 'diff-equations', topic: 'Mathematical Methods', title: 'Differential Equations in Physics',
+            equations: 'm\\ddot{x} + b\\dot{x} + kx = 0, \\text{ solution: } x = Ae^{-\\gamma t}\\cos(\\omega\' t + \\phi)',
+            body: 'Many physics systems are governed by differential equations. The harmonic oscillator (mẍ + kx = 0) yields sinusoidal solutions. Adding damping (bẋ term) gives exponential decay envelopes. Driven oscillators show resonance. First-order ODEs model RC circuits and radioactive decay. Separation of variables, characteristic equations, and particular solutions are key techniques.',
+            cds: {c: 'Physical systems modeled by ordinary and partial differential equations', d: 'Damped oscillator on spring', s: 'ODE solver visualization'},
+            phet: 'https://phet.colorado.edu/en/simulations/masses-and-springs',
+            objectives: 'Solve first- and second-order ODEs; identify oscillatory, damped, and driven solutions.',
+            misconceptions: 'All ODEs have closed-form solutions (false—most don\'t); damping always stops motion (true eventually, but can oscillate many times first).'
+        },
+        {
+            id: 'taylor-series', topic: 'Mathematical Methods', title: 'Taylor Series and Approximations',
+            equations: 'f(x) \\approx f(a) + f\'(a)(x-a) + \\frac{f\'\'(a)}{2!}(x-a)^2 + \\cdots',
+            body: 'Taylor series expand functions as power series around a point. In physics, we constantly use small-angle approximations (sinθ ≈ θ), linearization near equilibrium, and perturbation theory. The pendulum equation simplifies beautifully with sinθ ≈ θ. Binomial approximation (1+x)^n ≈ 1+nx for small x appears everywhere. Knowing when approximations break down is as important as knowing how to make them.',
+            cds: {c: 'Approximate complex functions with polynomials', d: 'Small angle pendulum vs large angle comparison', s: 'Taylor series visualization'},
+            phet: 'https://phet.colorado.edu/en/simulations/pendulum-lab',
+            objectives: 'Apply Taylor expansions; use small-angle and binomial approximations; estimate error.',
+            misconceptions: 'Approximations are inaccurate (false—can be extremely precise within their range); more terms always better (false—convergence issues).'
+        },
+        {
+            id: 'fourier-analysis', topic: 'Mathematical Methods', title: 'Fourier Analysis',
+            equations: 'f(x) = \\frac{a_0}{2} + \\sum_{n=1}^{\\infty}[a_n\\cos(nx) + b_n\\sin(nx)]',
+            body: 'Fourier analysis decomposes any periodic function into sinusoidal components. A square wave is a sum of odd harmonics. Fourier transforms extend this to non-periodic functions, converting between time and frequency domains. Essential in wave physics, signal processing, quantum mechanics (momentum representation), and diffraction theory. The frequency spectrum reveals hidden structure in data.',
+            cds: {c: 'Any periodic function decomposable into sinusoids', d: 'Musical instrument waveform analysis', s: 'Fourier series builder applet'},
+            phet: 'https://phet.colorado.edu/en/simulations/fourier-making-waves',
+            objectives: 'Compute Fourier coefficients; interpret frequency spectra; apply to wave phenomena.',
+            misconceptions: 'Only simple waves have Fourier components (false—any periodic function does); infinite terms always needed (false—many converge fast).'
+        },
+        {
+            id: 'linear-algebra', topic: 'Mathematical Methods', title: 'Linear Algebra Basics for Physics',
+            equations: 'A\\vec{x} = \\lambda\\vec{x}, \\det(A - \\lambda I) = 0',
+            body: 'Linear algebra underpins quantum mechanics and many areas of classical physics. Matrices represent rotations, transformations, and operators. Eigenvalues and eigenvectors reveal special directions and values: normal modes of coupled oscillators, quantum observables, principal axes of inertia. Diagonalization simplifies coupled systems. Inner products generalize dot products to abstract vector spaces.',
+            cds: {c: 'Eigenvalues and eigenvectors in physical systems', d: 'Coupled pendulums showing normal modes', s: 'Matrix transformation visualization'},
+            phet: 'https://phet.colorado.edu/en/simulations/normal-modes',
+            objectives: 'Find eigenvalues/eigenvectors; diagonalize matrices; apply to coupled oscillators and QM.',
+            misconceptions: 'Linear algebra only for math courses (false—central to QM); all matrices have real eigenvalues (false—only Hermitian/symmetric).'
+        },
+        {
+            id: 'dimensional-analysis', topic: 'Mathematical Methods', title: 'Dimensional Analysis',
+            equations: '[F] = MLT^{-2}, [E] = ML^2T^{-2}',
+            body: 'Dimensional analysis checks equations and derives relationships using units alone. Every valid physics equation must be dimensionally consistent. The Buckingham Pi theorem systematically finds dimensionless groups. Dimensional analysis can predict scaling laws (e.g., pendulum period T ∝ √(L/g) without solving the ODE). It catches errors and constrains possible functional forms.',
+            cds: {c: 'Physical equations must be dimensionally consistent', d: 'Deriving pendulum period from dimensional analysis alone', s: 'Unit consistency checker'},
+            phet: 'https://phet.colorado.edu/en/simulations/pendulum-lab',
+            objectives: 'Check dimensional consistency; derive scaling laws; apply Buckingham Pi theorem.',
+            misconceptions: 'Dimensional analysis gives exact answers (false—misses dimensionless constants); only useful for checking (false—can derive new results).'
+        },
+        {
+            id: 'numerical-methods', topic: 'Mathematical Methods', title: 'Numerical Methods in Physics',
+            equations: 'x_{n+1} = x_n + v_n \\Delta t, v_{n+1} = v_n + a_n \\Delta t \\text{ (Euler)}',
+            body: 'Many physics problems have no closed-form solution and require numerical methods. Euler\'s method is simplest: step forward using current derivative. Runge-Kutta (RK4) is more accurate. Verlet integration conserves energy well for orbital mechanics. Finite difference methods solve PDEs on grids. Computational physics enables simulating everything from galaxy formation to quantum systems.',
+            cds: {c: 'Numerical integration of equations of motion', d: 'Comparing Euler, RK4, and exact solutions', s: 'Numerical ODE solver applet'},
+            phet: 'https://phet.colorado.edu/en/simulations/gravity-and-orbits',
+            objectives: 'Implement Euler and RK4 methods; understand stability and accuracy tradeoffs.',
+            misconceptions: 'Smaller time step always better (diminishing returns plus rounding error); numerical = approximate (true, but can be arbitrarily precise).'
+        },
+        {
+            id: 'complex-numbers', topic: 'Mathematical Methods', title: 'Complex Numbers in Physics',
+            equations: 'e^{i\\theta} = \\cos\\theta + i\\sin\\theta, \\tilde{V} = V_0 e^{i\\omega t}',
+            body: 'Complex numbers simplify oscillatory and wave physics enormously. Euler\'s formula connects exponentials to sinusoids. AC circuit analysis uses complex impedance Z = R + iωL - i/(ωC). Quantum mechanics uses complex wave functions fundamentally. Phasor representation turns differential equations into algebra. The real part of a complex solution gives the physical answer.',
+            cds: {c: 'Complex exponentials simplify oscillation and wave problems', d: 'AC circuit phasor diagram', s: 'Complex plane visualization'},
+            phet: 'https://phet.colorado.edu/en/simulations/circuit-construction-kit-ac',
+            objectives: 'Use Euler\'s formula; apply complex impedance in circuits; understand phasors.',
+            misconceptions: 'Imaginary numbers aren\'t real physics (false—essential in QM); complex solutions are unphysical (false—take real part).'
+        },
+        {
+            id: 'probability-statistics', topic: 'Mathematical Methods', title: 'Probability and Statistics in Physics',
+            equations: 'P(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}}e^{-(x-\\mu)^2/2\\sigma^2}, \\sigma = \\sqrt{\\langle x^2 \\rangle - \\langle x \\rangle^2}',
+            body: 'Probability and statistics are fundamental to quantum mechanics, statistical mechanics, and experimental physics. Gaussian distributions describe measurement errors and thermal fluctuations. Expectation values ⟨x⟩ give quantum predictions. Standard deviation σ quantifies uncertainty. Error propagation combines uncertainties from multiple measurements. Chi-squared tests validate theoretical models against data.',
+            cds: {c: 'Statistical methods for quantum predictions and experimental analysis', d: 'Repeated measurements showing Gaussian distribution', s: 'Error propagation calculator'},
+            phet: 'https://phet.colorado.edu/en/simulations/plinko-probability',
+            objectives: 'Calculate expectation values; propagate errors; apply statistical tests to data.',
+            misconceptions: 'QM probabilities reflect ignorance (debated—may be fundamental); more measurements eliminate all error (false—systematic errors persist).'
+        }
+    ];
+
+    concepts.forEach(concept => {
+        const instructorOnly = concept.objectives && concept.misconceptions ? `
+            <div class="instructor-only">
+                <h4>Learning Objectives</h4>
+                <p>${concept.objectives}</p>
+                <h4>Common Misconceptions</h4>
+                <p>${concept.misconceptions}</p>
+            </div>
+        ` : '';
+
+        const html = `
+            <div class="concept-card" id="${concept.id}">
+                <h2 class="doc-h2">${concept.title}</h2>
+                <div class="concept-topic-badge">${concept.topic}</div>
+                <div class="concept-equations">\\(${concept.equations}\\)</div>
+                <p class="doc-body">${concept.body}</p>
+                <div class="cds-card">
+                    <div class="cds-row"><span class="cds-letter c-letter">C</span> ${concept.cds.c}</div>
+                    <div class="cds-row"><span class="cds-letter d-letter">D</span> ${concept.cds.d}</div>
+                    <div class="cds-row"><span class="cds-letter s-letter">S</span> ${concept.cds.s}</div>
+                </div>
+                ${concept.phet ? `<a class="phet-link" href="${concept.phet}" target="_blank">🔬 PhET Simulation</a>` : ''}
+                <div class="ai-buttons">
+                    <button class="ai-btn" onclick="aiExplain('${concept.id}')">💡 Explain differently</button>
+                    <button class="ai-btn" onclick="aiProblem('${concept.id}')">📝 Give me a problem</button>
+                    <button class="ai-btn" onclick="aiAnalogy('${concept.id}')">🔄 Find an analogy</button>
+                </div>
+                ${instructorOnly}
+            </div>
+        `;
+        docPane.innerHTML += html;
+    });
+}
+
+// ============ INLINE SIMULATIONS ============
+function addSimulations() {
+    // SHM Simulation
+    const shmCard = document.getElementById('simple-harmonic');
+    if (shmCard) {
+        const simDiv = document.createElement('div');
+        simDiv.className = 'sim-embed';
+        simDiv.innerHTML = `
+            <h4 style="margin:12px 0 6px;color:#0a1628">Interactive: Simple Harmonic Motion</h4>
+            <canvas id="shm-canvas" width="500" height="200"></canvas>
+            <div class="sim-controls">
+                <div class="control-group"><label>Amplitude:</label><input type="range" id="shm-amp" min="10" max="80" value="50" oninput="document.getElementById('shm-amp-val').textContent=this.value"><span class="value" id="shm-amp-val">50</span></div>
+                <div class="control-group"><label>Frequency:</label><input type="range" id="shm-freq" min="1" max="10" value="3" oninput="document.getElementById('shm-freq-val').textContent=this.value"><span class="value" id="shm-freq-val">3</span></div>
+                <div class="control-group"><label>Damping:</label><input type="range" id="shm-damp" min="0" max="50" value="0" oninput="document.getElementById('shm-damp-val').textContent=this.value"><span class="value" id="shm-damp-val">0</span></div>
+            </div>`;
+        shmCard.appendChild(simDiv);
+        requestAnimationFrame(function animSHM(t) {
+            const c = document.getElementById('shm-canvas');
+            if (!c) return;
+            const ctx = c.getContext('2d');
+            const A = +document.getElementById('shm-amp').value;
+            const f = +document.getElementById('shm-freq').value;
+            const d = +document.getElementById('shm-damp').value / 1000;
+            const w = c.width, h = c.height;
+            ctx.clearRect(0,0,w,h);
+            // spring
+            const x0 = 60, eq = h/2;
+            const sec = t/1000;
+            const disp = A * Math.exp(-d*sec) * Math.cos(2*Math.PI*f*sec/3);
+            const ballX = w/2 + disp*2;
+            // draw wall
+            ctx.fillStyle = '#888'; ctx.fillRect(0,eq-30,8,60);
+            // draw spring
+            ctx.strokeStyle = '#2563eb'; ctx.lineWidth = 2; ctx.beginPath();
+            const ncoils = 12; const springLen = ballX - 20;
+            for(let i=0;i<=ncoils*4;i++){
+                const px = 10 + (springLen*i)/(ncoils*4);
+                const py = eq + ((i%4<2?1:-1) * 8 * (i>0 && i<ncoils*4 ? 1 : 0));
+                i===0?ctx.moveTo(px,py):ctx.lineTo(px,py);
+            }
+            ctx.stroke();
+            // draw mass
+            ctx.fillStyle = '#dc2626'; ctx.beginPath(); ctx.arc(ballX, eq, 14, 0, Math.PI*2); ctx.fill();
+            ctx.fillStyle = '#fff'; ctx.font = '10px sans-serif'; ctx.textAlign = 'center'; ctx.fillText('m', ballX, eq+3);
+            // draw trace
+            ctx.strokeStyle = 'rgba(37,99,235,0.4)'; ctx.lineWidth = 1; ctx.beginPath();
+            for(let i=0;i<200;i++){
+                const ti = sec - i*0.02;
+                if(ti<0) break;
+                const di = A * Math.exp(-d*ti) * Math.cos(2*Math.PI*f*ti/3);
+                const px = w - 20 - i;
+                const py = eq + di;
+                i===0?ctx.moveTo(px,py):ctx.lineTo(px,py);
+            }
+            ctx.stroke();
+            // labels
+            ctx.fillStyle = '#666'; ctx.font = '10px sans-serif'; ctx.textAlign = 'right';
+            ctx.fillText('x(t) trace →', w-25, 15);
+            requestAnimationFrame(animSHM);
+        });
+    }
+
+    // Wave Superposition Simulation
+    const superCard = document.getElementById('superposition');
+    if (superCard) {
+        const simDiv = document.createElement('div');
+        simDiv.className = 'sim-embed';
+        simDiv.innerHTML = `
+            <h4 style="margin:12px 0 6px;color:#0a1628">Interactive: Wave Superposition</h4>
+            <canvas id="wave-canvas" width="500" height="250"></canvas>
+            <div class="sim-controls">
+                <div class="control-group"><label>f₁:</label><input type="range" id="w1-freq" min="1" max="8" value="2" oninput="document.getElementById('w1f-val').textContent=this.value"><span class="value" id="w1f-val">2</span></div>
+                <div class="control-group"><label>A₁:</label><input type="range" id="w1-amp" min="5" max="40" value="25" oninput="document.getElementById('w1a-val').textContent=this.value"><span class="value" id="w1a-val">25</span></div>
+                <div class="control-group"><label>f₂:</label><input type="range" id="w2-freq" min="1" max="8" value="3" oninput="document.getElementById('w2f-val').textContent=this.value"><span class="value" id="w2f-val">3</span></div>
+                <div class="control-group"><label>A₂:</label><input type="range" id="w2-amp" min="5" max="40" value="25" oninput="document.getElementById('w2a-val').textContent=this.value"><span class="value" id="w2a-val">25</span></div>
+                <div class="control-group"><label>Phase:</label><input type="range" id="w-phase" min="0" max="628" value="0" oninput="document.getElementById('wp-val').textContent=(this.value/100).toFixed(1)"><span class="value" id="wp-val">0.0</span>π</div>
+            </div>`;
+        superCard.appendChild(simDiv);
+        requestAnimationFrame(function animWave(t) {
+            const c = document.getElementById('wave-canvas');
+            if (!c) return;
+            const ctx = c.getContext('2d');
+            const w = c.width, h = c.height;
+            const f1 = +document.getElementById('w1-freq').value;
+            const a1 = +document.getElementById('w1-amp').value;
+            const f2 = +document.getElementById('w2-freq').value;
+            const a2 = +document.getElementById('w2-amp').value;
+            const ph = +document.getElementById('w-phase').value/100;
+            const sec = t/1000;
+            ctx.clearRect(0,0,w,h);
+            const rows = [{y:h*0.2,color:'#2563eb',label:'Wave 1',fn:x=>a1*Math.sin(2*Math.PI*(f1*x/w-sec))},
+                          {y:h*0.5,color:'#16a34a',label:'Wave 2',fn:x=>a2*Math.sin(2*Math.PI*(f2*x/w-sec)+ph)},
+                          {y:h*0.8,color:'#dc2626',label:'Sum',fn:x=>a1*Math.sin(2*Math.PI*(f1*x/w-sec))+a2*Math.sin(2*Math.PI*(f2*x/w-sec)+ph)}];
+            rows.forEach(r=>{
+                ctx.strokeStyle='#eee';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(0,r.y);ctx.lineTo(w,r.y);ctx.stroke();
+                ctx.strokeStyle=r.color;ctx.lineWidth=2;ctx.beginPath();
+                for(let x=0;x<w;x++){const y=r.y-r.fn(x);x===0?ctx.moveTo(x,y):ctx.lineTo(x,y);}
+                ctx.stroke();
+                ctx.fillStyle=r.color;ctx.font='bold 11px sans-serif';ctx.textAlign='left';ctx.fillText(r.label,5,r.y-35);
+            });
+            requestAnimationFrame(animWave);
+        });
+    }
+
+    // RC Circuit Simulation
+    const rcCard = document.getElementById('rc-circuits');
+    if (rcCard) {
+        const simDiv = document.createElement('div');
+        simDiv.className = 'sim-embed';
+        simDiv.innerHTML = `
+            <h4 style="margin:12px 0 6px;color:#0a1628">Interactive: RC Circuit Charging/Discharging</h4>
+            <canvas id="rc-canvas" width="500" height="220"></canvas>
+            <div class="sim-controls">
+                <div class="control-group"><label>R (kΩ):</label><input type="range" id="rc-r" min="1" max="20" value="5" oninput="document.getElementById('rc-r-val').textContent=this.value"><span class="value" id="rc-r-val">5</span></div>
+                <div class="control-group"><label>C (μF):</label><input type="range" id="rc-c" min="1" max="50" value="10" oninput="document.getElementById('rc-c-val').textContent=this.value"><span class="value" id="rc-c-val">10</span></div>
+                <div class="control-group"><label>V₀ (V):</label><input type="range" id="rc-v" min="1" max="12" value="5" oninput="document.getElementById('rc-v-val').textContent=this.value"><span class="value" id="rc-v-val">5</span></div>
+                <button onclick="rcReset()" style="padding:4px 12px;border-radius:4px;border:1px solid #ddd;cursor:pointer">Reset</button>
+            </div>
+            <div style="font-size:11px;color:#666" id="rc-tau">τ = RC = 50 ms</div>`;
+        rcCard.appendChild(simDiv);
+        let rcStart = performance.now();
+        window.rcReset = () => { rcStart = performance.now(); };
+        requestAnimationFrame(function animRC(t) {
+            const c = document.getElementById('rc-canvas');
+            if (!c) return;
+            const ctx = c.getContext('2d');
+            const w = c.width, h = c.height;
+            const R = +document.getElementById('rc-r').value * 1000;
+            const C = +document.getElementById('rc-c').value * 1e-6;
+            const V0 = +document.getElementById('rc-v').value;
+            const tau = R * C;
+            document.getElementById('rc-tau').textContent = 'τ = RC = ' + (tau*1000).toFixed(1) + ' ms';
+            const elapsed = (t - rcStart) / 1000;
+            ctx.clearRect(0,0,w,h);
+            // axes
+            const pad = 40, gw = w-pad*2, gh = h-pad*1.5;
+            ctx.strokeStyle='#ccc';ctx.lineWidth=1;
+            ctx.strokeRect(pad,10,gw,gh);
+            // V(t) charging curve
+            ctx.strokeStyle='#2563eb';ctx.lineWidth=2;ctx.beginPath();
+            const tMax = 5*tau;
+            for(let px=0;px<=gw;px++){
+                const ti=px/gw*tMax;
+                const v=V0*(1-Math.exp(-ti/tau));
+                const py=10+gh-v/V0*gh;
+                px===0?ctx.moveTo(pad+px,py):ctx.lineTo(pad+px,py);
+            }
+            ctx.stroke();
+            // current time marker
+            const curX = pad + (elapsed/tMax)*gw;
+            if(curX < pad+gw) {
+                const curV = V0*(1-Math.exp(-elapsed/tau));
+                const curY = 10+gh-curV/V0*gh;
+                ctx.fillStyle='#dc2626';ctx.beginPath();ctx.arc(curX,curY,5,0,Math.PI*2);ctx.fill();
+                ctx.fillStyle='#dc2626';ctx.font='11px sans-serif';ctx.textAlign='left';
+                ctx.fillText('V='+curV.toFixed(2)+'V',curX+8,curY-5);
+            }
+            // labels
+            ctx.fillStyle='#333';ctx.font='11px sans-serif';
+            ctx.textAlign='center';ctx.fillText('Time →',pad+gw/2,h-5);
+            ctx.save();ctx.translate(12,10+gh/2);ctx.rotate(-Math.PI/2);ctx.fillText('V(t)',0,0);ctx.restore();
+            ctx.fillStyle='#2563eb';ctx.textAlign='right';ctx.fillText('V₀='+V0+'V',pad+gw-5,22);
+            // tau markers
+            ctx.strokeStyle='#aaa';ctx.setLineDash([3,3]);ctx.lineWidth=1;
+            for(let n=1;n<=4;n++){
+                const tx=pad+(n*tau/tMax)*gw;
+                if(tx<pad+gw){ctx.beginPath();ctx.moveTo(tx,10);ctx.lineTo(tx,10+gh);ctx.stroke();
+                ctx.fillStyle='#999';ctx.textAlign='center';ctx.fillText(n+'τ',tx,10+gh+12);}
+            }
+            ctx.setLineDash([]);
+            requestAnimationFrame(animRC);
+        });
+    }
+}
+
+// ============ AI BUTTON HANDLERS ============
+function aiExplain(conceptId) {
+    const concept = document.getElementById(conceptId);
+    if (concept) {
+        const title = concept.querySelector('.doc-h2').textContent;
+        document.getElementById('chat-input').value = `Explain ${title} in a simple way`;
+        setChatMode('explain');
+        doQuery();
+    }
+}
+
+function aiProblem(conceptId) {
+    const concept = document.getElementById(conceptId);
+    if (concept) {
+        const title = concept.querySelector('.doc-h2').textContent;
+        document.getElementById('chat-input').value = `Give me a problem about ${title}`;
+        setChatMode('problem');
+        doQuery();
+    }
+}
+
+function aiAnalogy(conceptId) {
+    const concept = document.getElementById(conceptId);
+    if (concept) {
+        const title = concept.querySelector('.doc-h2').textContent;
+        document.getElementById('chat-input').value = `Find an everyday analogy for ${title}`;
+        setChatMode('analogy');
+        doQuery();
+    }
+}
+
+// ============ INITIALIZE ============
+window.addEventListener('load', () => {
+    initApp();
+    addSimulations();
+    // Progress chart built on-demand when tab is clicked
+});
+</script>
+
+</body>
+</html>
