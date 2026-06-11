@@ -5,7 +5,7 @@ pairs_with: "[[Day-106 - Law]]"
 length_target_words: 1500
 length_actual_words: 1695
 length_tier: short
-length_note: "Below medium target (2200) but within ±25% (0.83). Synthesis is substantively complete; no padding warranted. Per length-policy guideline."
+length_note: "Over short-tier target (1500) at 1.13: Q.90-91 open the law treatise with the five-fold map, which the entry must lay out whole; linkage across four traditions plus Wright/Rohr justifies the modest over-run."
 karpathy_wiki_sources:
   - "wiki/traditions/levin/wiki.md (morphogenetic field as eternal-form analog)"
   - "wiki/traditions/hoffman/wiki.md (interface theory; species-specific access to a deeper reality)"
@@ -19,8 +19,8 @@ length_ratio_to_target: 1.13
 mind_first_reframe: "Aquinas's five-fold map of law (eternal, natural, human, divine, fomes) is preserved as a typology of how a single pattern is accessed, but the eternal pattern is reframed as internal to mind-at-large rather than transcendent — eternal law as the deep computational structure of mind-stuff, natural law as the species-specific interface, fomes as miscalibrated generative-model priors."
 central_theme_thread: "Natural law is the limited-perspective access to the eternal pattern; perspective-limitations are not bugs but the condition of agent individuation, and the fomes names the empirical fact that bringing limited perspectives into closer alignment with the deeper pattern is irreducibly developmental work — 'salvation worked out in fear and trembling.'"
 tags: [synthesis, day/106, theme/law-as-pattern, theme/perspective-limitation]
-last_qc_at: "2026-06-03T06:27:20"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-10T18:28:33"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 106 — Law (Contemporary)

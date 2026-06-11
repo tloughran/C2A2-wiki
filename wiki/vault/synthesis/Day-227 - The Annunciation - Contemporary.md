@@ -1,0 +1,59 @@
+---
+day: 227
+title: The Annunciation (Contemporary)
+pairs_with: "[[Day-227 - The Annunciation]]"
+length_target_words: 1500
+length_actual_words: 1489
+length_ratio_to_target: 0.993
+length_tier: short
+karpathy_wiki_sources:
+  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; PRS-02 faithful improvisation) — Mary's fiat as a covenantal-representative act on the community's behalf"
+  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler) — free consent as an act under uncertainty, aligning to the One who sees more"
+  - "traditions/fredrickson/prs_triplets.md (PRS-03 micro-moment resonance) — the Annunciation as a high-quality attuned encounter eliciting free assent"
+  - "traditions/rohr/prs_triplets.md (PRS-01 non-dual knowing) + Luke 1:26-38 [Wright primary on Christology III Q.1-59]"
+evidence_strength_summary: "Mary's free act of faith ('more blessed in receiving the faith of Christ than in conceiving the flesh') received 'on behalf of humankind' = theological, and the central-theme keystone for free consent; consent under uncertainty to one who sees more ~ active inference (Friston) = speculative-formal (medium); the Annunciation as attuned encounter eliciting assent ~ positivity resonance (Fredrickson) = empirical-as-physiology applied speculatively (medium); the fiat as covenant-representative incorporation = scriptural (Wright, strong); central-theme fit (a limited perspective freely aligning to the whole, representatively for the community) = strong."
+mind_first_reframe: "Mary's fiat is read as the limit case of an agent freely committing its generative model to a more-seeing authority under uncertainty (active inference), elicited by a resonant encounter (Fredrickson), and given representatively for the community."
+central_theme_thread: "The free yes of one limited perspective to the One who sees the whole, given 'on behalf of humankind' — a covenant-act opening the incorporation of the many; the individual complement to Day 226's tradition-level development."
+tags: [synthesis, day/227, theme/free-consent-on-behalf-of-the-community]
+last_qc_at: "2026-06-10T12:27:36"
+last_qc_outcome: "pass"
+---
+
+# Day 227 — Contemporary Parallel: The Free Fiat, on Behalf of the Many
+
+## Frame
+
+Q.29 asks why Christ should be born of an *espoused* virgin, and whether Mary and Joseph were truly married. Aquinas affirms a true marriage in its "first perfection" — "a certain inseparable union of souls by which husband and wife are pledged by a bond of mutual affection" — even unconsummated, "because being comes before action." Q.30 takes up the *Annunciation*: why it was necessary to announce to Mary "that which was to be done in her." Aquinas's answer is the project's keystone for free agency. Though Mary "did indeed believe explicitly in the future incarnation," she "required instruction," and the announcement is made so that she "might make an act of faith, believing that which is unseen on the authority of God conveyed by the angel" — for, quoting Augustine, "Mary is more blessed in receiving the faith of Christ than in conceiving the flesh of Christ." She receives the message "in her role as mother of God and also... in a sense on behalf of humankind" — "receiving the God-man on our behalf." The angel's words elicit her free assent, and she answers: "Behold, I am the handmaid of the Lord; let it be to me according to thy word" (Luke 1:38). The contemporary version: *what is the free consent of a limited perspective to the One who sees the whole — and what does it mean that such a consent can be given representatively, for a whole community?*
+
+## Problem
+
+Two inquiry-problems, both central. (1) **Free consent under limitation.** Mary does not see what the angel sees; she believes "that which is unseen." Yet her assent is *free* — not extracted, not automatic ("she did not think such high things of herself"; she needed instruction and gave consent). The problem is how a genuinely limited perspective can freely and rightly align itself to a vision it does not itself possess — the central-theme posture in its purest form. (2) **Representative consent.** Aquinas says Mary receives the God-man "on behalf of humankind." The problem is how an individual limited perspective's free act can be *for the community* — how one agent's consent can be a covenant-act binding and including the many.
+
+## Resource
+
+For free-consent-under-limitation, the leading move is active inference read at the level of agency. Tom's PRS-form record of Friston (PRS-04, the organism as active modeler) describes the agent as one who must act on a generative model under irreducible *uncertainty* — never with the full view, always "believing that which is unseen" on the best available authority, and freely committing its model to that authority. Mary's fiat is the limit case of a well-formed such act: a perspective that does not see the whole, presented with testimony from one who sees more (the angel as messenger of the One), freely aligning its model — its life — to that testimony. This is not coercion (the active agent's commitment is its own) and not blind credulity (it is "on the authority of God," the most reliable source); it is the central-theme posture performed as a free act. Tom's PRS-form record of Fredrickson (PRS-03, micro-moment resonance) illuminates the *manner* of the encounter: the Annunciation is staged as an attuned, high-quality meeting — greeting ("Hail"), recognition ("full of grace"), reassurance ("do not be afraid"), invitation — the very structure of a resonant encounter that *elicits* rather than compels assent. Tom's PRS-form record of Rohr (PRS-01) names the knowing involved: non-dual, participatory faith that holds the unseen as real without demanding it be made visible first. And the scriptural-theological core is Wright's: Tom's PRS-form record of Wright (PRS-05, salvation as incorporation; PRS-02, faithful improvisation) frames the fiat as a *covenant-representative* act — Mary, as the faithful Israel-in-person, says yes *on behalf of* the people among whom God is about to come home, improvising faithfully the next act of the drama. Her individual consent is a communal act because she stands, representatively, for the many to be incorporated (Luke 1:38, the *fiat*; the new Eve whose obedience reverses the first refusal).
+
+## Solution (proposed, speculative)
+
+The contemporary-parallel response: **Mary's fiat is the paradigm case of a limited perspective freely aligning itself to the One who sees the whole — a free act of commitment under uncertainty (Friston PRS-04), elicited by an attuned resonant encounter rather than compelled (Fredrickson PRS-03), and given non-dually as participatory faith in the unseen (Rohr PRS-01). And because she gives it representatively — "on behalf of humankind," as faithful Israel-in-person — her individual consent is a covenant-act that includes the many (Wright PRS-05): the free yes of one limited perspective, opening the incorporation of all.**
+
+*What it shares with Aquinas.* It keeps the consent genuinely *free* and genuinely *informed-yet-unseeing* (faith in "that which is unseen, on the authority of God"). It keeps "more blessed in receiving the faith than in conceiving the flesh" — the act of faith is primary. And it keeps the representative dimension: she receives "on behalf of humankind."
+
+*Where it reframes.* Aquinas grounds the freedom in faculty psychology and grace; the contemporary reframe reads the fiat as the limit case of an agent freely committing its model to a more-seeing authority under uncertainty, and reads the *manner* of the Annunciation as a resonant encounter that elicits assent. The fiat stops being only a Marian privilege and becomes the model of every limited perspective's free alignment to the whole — and of how such an alignment can be made *for* a community.
+
+*Where evidence is firm vs. speculative.* The act-of-faith doctrine and the representative reception are theological; the fiat and its covenantal weight are scriptural (Wright, strong). Consent-under-uncertainty as active inference is speculative-formal (medium). The resonant-encounter reading is empirical *as physiology* (attunement is measurable) but speculative in its application to the Annunciation.
+
+## The central-theme thread
+
+The project's banner is that the limited "work out [their] salvation in fear and trembling... aware of [their] need for guidance from those who perceive more of the whole than [they] do." The fiat is that working-out condensed to a single free act. Mary does not see what the angel sees; she is fully a limited perspective. But presented with testimony from one who sees more, she freely aligns her whole life to it — "let it be to me according to thy word." This is not the erasure of her perspective (she questions, she is instructed, she consents) but its free coincidence with the whole — exactly what loving unity means on the project's terms. And the representative dimension is the project's communal hope made concrete: her individual consent is "on behalf of humankind," a covenant-act by which the many are included. Where Day 226 showed a *tradition* perceiving more of the whole than any single perspective, Day 227 shows the complementary moment — a *single* limited perspective freely consenting, for the community, to the One who perceives the whole. The two together are the project's full picture: traditions and individuals, each in their way, computing toward loving unity by free alignment to what sees more. The new-Eve typology seals it: where one refusal disordered the many, one free yes opens their reorder.
+
+## Bridges
+
+- **Mary's free consent to the unseen, on the angel's authority ↔ an agent freely committing its generative model to a more-seeing authority under uncertainty** — Tom's PRS-form record of Friston, PRS-04. *Why:* the fiat is the limit case of the central-theme posture performed as a free act. Evidence: **speculative-formal (medium)**.
+- **The Annunciation eliciting assent rather than compelling it ↔ a high-quality attuned resonant encounter** — Tom's PRS-form record of Fredrickson, PRS-03. *Why:* the manner of the encounter frees rather than coerces the consent. Evidence: **empirical-as-physiology, applied speculatively (medium)**.
+- **The fiat as covenant-act on the community's behalf ↔ salvation as incorporation; faithful improvisation of the next act** — Luke 1:26-38; Tom's PRS-form record of Wright (PRS-05, PRS-02). *Why:* one limited perspective's free yes opens the incorporation of the many. Evidence: **scriptural (strong)**.
+- **Participatory faith in the unseen without demanding visibility ↔ non-dual knowing** — Tom's PRS-form record of Rohr, PRS-01. *Why:* the knowing that can say yes to the unseen as real. Evidence: **theological/contemplative**.
+
+## Where this leaves us
+
+Q.29-30 give the project its keystone for *free consent*: a limited perspective freely aligning to the One who sees more, representatively for the many. Tomorrow (Day 228, "Christ's Ancestry") the *Summa* turns from Mary's *yes* to the *conception itself* (Q.31-32) — the matter from which Christ's body was formed (from Adam's race, David's line) and the active principle (the Holy Spirit). The thread to carry forward: having seen the free consent that opens the Incarnation, watch the conception questions for how *form* comes to *matter* — and whether the informing of Christ's flesh, attributed to the Spirit who is Love, reads as the loving-unity telos operating at the very origin of the Incarnation.

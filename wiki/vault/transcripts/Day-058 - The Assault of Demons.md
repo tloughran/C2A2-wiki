@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=KUzDtOdFlr8
 title: The Assault of Demons
 summa_ref: Prima Pars, Q.113 + Q.114
 duration_seconds: 974
-word_count: 2803
+word_count: 2806
 raw_asr_word_count: 2803
 length_tier: medium
 segment_count: 399
@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-058 - The Assault of Demons - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-22T07:56:50"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-10T08:23:06"
+last_qc_outcome: "rewrote"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/058, pars/I]
 ---
@@ -26,17 +26,17 @@ tags: [summa, day/058, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 58 of 308.
 > Summa reference: *Prima Pars, Q.113 + Q.114*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC sweep 2026-06-10: Summa near podcast -> Summa in a Year podcast; Aquinas assumma -> Aquinas's Summa; will'll -> we'll; a Maria press -> Ave Maria Press; the a Maria press's site -> the Ave Maria Press site; Su 10 -> Summa 10; foras -> for as. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Summa near podcast where we study St Thomas Aquinas assumma Theologiae in a way simple and insightful for anyone to understand the Summa year podcast is brought to you by think Catholic taking two questions of the Summa a day will'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this day 58 so let's get started we're covering today questions 113 and 114 of the Prima pars that is of the guardianship of the good angels and of
+[00:00:06] founder of think Catholic and you're listening to the Summa in a Year podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this day 58 so let's get started we're covering today questions 113 and 114 of the Prima pars that is of the guardianship of the good angels and of
 
-[00:00:36] the assault of the Demons the translation that I always use in these podcasts is the one generously provided to me by a Maria press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from the a Maria press's site by typing in the code
+[00:00:36] the assault of the Demons the translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from the Ave Maria Press site by typing in the code
 
-[00:00:53] Su 10 and so here we go article one whether men are guarded by the Angels Aquinas's argument besides that based on scripture like Psalm 91 where it reads for he will give his angels charge of you to guard you in all your ways is the order of Divine Providence foras he says we find that in all things the movable and variable are moved and regulated by the immovable and invariable as all corporeal things by immovable spiritual substances and we can take as an example
+[00:00:53] Summa 10 and so here we go article one whether men are guarded by the Angels Aquinas's argument besides that based on scripture like Psalm 91 where it reads for he will give his angels charge of you to guard you in all your ways is the order of Divine Providence for as he says we find that in all things the movable and variable are moved and regulated by the immovable and invariable as all corporeal things by immovable spiritual substances and we can take as an example
 
 [00:01:25] of that Axiom that the variable is regulated by the invariable from our very own on thinking and willing that Although our conclusions can be more or less correct or variable the fundamental principles on which those conclusions are based such as the principle of non-contradiction the principle of sufficient reason which we discussed in episode 41 are not variable and do not have the possibility of being incorrect nor changing same goes for our willing that although we may be variable or vary
 

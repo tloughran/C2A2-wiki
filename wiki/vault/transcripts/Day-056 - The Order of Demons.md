@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=zLqOyOvTh_I
 title: The Order of Demons
 summa_ref: Prima Pars, Q.109 + Q.110
 duration_seconds: 622
-word_count: 1669
+word_count: 1668
 raw_asr_word_count: 1669
 length_tier: short
 segment_count: 244
@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-056 - The Order of Demons - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-22T07:56:49"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-10T04:26:07"
+last_qc_outcome: "rewrote"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/056, pars/I]
 ---
@@ -26,23 +26,23 @@ tags: [summa, day/056, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 56 of 308.
 > Summa reference: *Prima Pars, Q.109 + Q.110*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baanus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \bquanus\b -> Aquinas; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baanus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \bquanus\b -> Aquinas; \btheologia\b -> Theologiae. QC sweep 2026-06-10 additional fixes: suir -> Summa; Aquinas ass -> Aquinas's; Su podcast -> Summa podcast; covering to -> covering today; a Maria press / a Maria Pressa -> Ave Maria Press / Ave Maria Press's; aquinin -> Aquinas; the pelet -> the prelate. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the suir podcast where we study St Thomas Aquinas ass Summa Theologiae in a way simple and insightful for anyone to understand the Su podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 56 so let's get started we're covering to questions 109 and 110 of the Prima pars that is the ordering of the bad angels and how Angels act on bodies the
+[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 56 so let's get started we're covering today questions 109 and 110 of the Prima pars that is the ordering of the bad angels and how Angels act on bodies the
 
-[00:00:37] translation that I always use in these podcasts is the one generously provided to me by a Maria press the five volumes set translated by the fathers of the English Dominican province which you can now get at a discounted price from a Maria Pressa site by typing in the code
+[00:00:37] translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press the five volumes set translated by the fathers of the English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code
 
 [00:00:53] Summa 10 and so here we go article one whether there are orders among the demons St Paul said in Ephesians chapter 6 for we are not contending against flesh and blood but against the principalities against the powers against the world rulers of this present Darkness against the spiritual host of wickedness in the Heavenly places which denotes order even among the demons the demons before they fell would have hierarchy in that first instance of their creation being created in Grace and ordered according to the superiority
 
-[00:01:24] or inferiority of their nature within the one Angelic order now after having fallen they retain the order among themselves corresponding to their differing Natures but not according to Grace and definitely not according to Glory which are both included in the order of the good Angels aquinin gives us an interesting aside that although it is commonly supposed that from every order within the Angelic realm Angels fell we don't name the Fallen Angels in the same ways we do those which have
+[00:01:24] or inferiority of their nature within the one Angelic order now after having fallen they retain the order among themselves corresponding to their differing Natures but not according to Grace and definitely not according to Glory which are both included in the order of the good Angels Aquinas gives us an interesting aside that although it is commonly supposed that from every order within the Angelic realm Angels fell we don't name the Fallen Angels in the same ways we do those which have
 
 [00:01:55] remained in Grace St Thomas explains the name seraphim is given from the order of Charity and the name Thrones from the Divine indwelling and the name dominations or dominions Imports a certain Liberty all of which are opposed to sin and therefore these names are not given to the angels who sinned article two whether among the demons there is precedence what Aquinas means by precedence is that the action of the subject should be under the action of
 
-[00:02:25] the pelet and he responds this article writing briefly the very natural disposition of the Demons requires that there should be Authority among them this agrees too with Divine wisdom which leaves nothing inordinate which quote reacheth from end to end mightily and ordereth all things sweetly in quote that's wisdom 8:1 so just as there is a hierarchy among the natures of the demons and since action follows from or flows from the being of a thing then it
+[00:02:25] the prelate and he responds this article writing briefly the very natural disposition of the Demons requires that there should be Authority among them this agrees too with Divine wisdom which leaves nothing inordinate which quote reacheth from end to end mightily and ordereth all things sweetly in quote that's wisdom 8:1 so just as there is a hierarchy among the natures of the demons and since action follows from or flows from the being of a thing then it
 
 [00:02:56] is fitting that there should be a hierarchy of action as well which is Aquinas's definition of Precedence
 

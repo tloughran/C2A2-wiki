@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=IjpFP2lVLhY
 title: Energy & Destiny
 summa_ref: Prima Pars, Q.115 + Q.116
 duration_seconds: 985
-word_count: 2492
+word_count: 2493
 raw_asr_word_count: 2492
 length_tier: medium
 segment_count: 365
@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-059 - Energy and Destiny - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-22T07:56:50"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-10T08:23:18"
+last_qc_outcome: "rewrote"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/059, pars/I]
 ---
@@ -26,15 +26,15 @@ tags: [summa, day/059, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 59 of 308.
 > Summa reference: *Prima Pars, Q.115 + Q.116*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquantis\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bdionisius\b -> Dionysius; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquantis\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bdionisius\b -> Dionysius; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC sweep 2026-06-10: Aquinas of Summa -> Aquinas's Summa; Summa near podcast -> Summa in a Year podcast; a Maria press -> Ave Maria Press; a Maria presses site -> Ave Maria Press's site. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:05] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Summa year podcast where we study St Thomas Aquinas of Summa Theologiae in a way simple and insightful for anyone to understand the Summa near podcast is brought to you by think Catholic taking two questions of the Summa a day will seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 59 so let's get already we're covering today questions 115 and 116 of the Prima pars that is of the action of the corporeal creature and on
+[00:00:06] founder of think Catholic and you're listening to the Summa year podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa in a Year podcast is brought to you by think Catholic taking two questions of the Summa a day will seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 59 so let's get already we're covering today questions 115 and 116 of the Prima pars that is of the action of the corporeal creature and on
 
-[00:00:37] fate the translation that I always use in these podcasts is the one generously provided to me by a Maria press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from a Maria presses site by typing in the code
+[00:00:37] fate the translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code
 
 [00:00:54] Summa 10 and so here we go article one whether a body can be active can physical things have an effect on one another and we know just through our experience of the world that if for example I drop a stone onto the table it might knock over the glasses placed there but possibly the more interesting question is not if but how physical things affect one another and what Aquinas is looking to avoid in this question is a kind of occasionalism or pantheism which would be like saying
 

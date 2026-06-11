@@ -15,7 +15,7 @@ evidence_strength_summary: "A created finite mind beholds the divine essence tru
 mind_first_reframe: "Beholding-without-comprehending is read as the constitutive structure of any created knower: to be a finite perspective is to know the whole truly yet never to contain it — Hoffman's interface and Kastrup's dissociated alter make perspective-boundedness the very condition of being an individual knower, not a defect awaiting removal."
 central_theme_thread: "Q.10's distinction between beholding and comprehending is the central claim in its purest form: even the summit of finite knowing — Christ's human soul seeing the divine essence — sees the simple whole really and yet, being finite, does not exhaust it; perspective-limitation is constitutive even at the top."
 tags: [synthesis, day/217, theme/behold-not-comprehend]
-last_qc_at: "2026-06-08T10:26:12"
+last_qc_at: "2026-06-09T04:25:59"
 last_qc_outcome: "pass"
 ---
 

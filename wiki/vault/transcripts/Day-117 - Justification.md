@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=H87ea4GlQkU
 title: Justification
 summa_ref: I-II Q.112-113
 duration_seconds: 1412
-word_count: 3715
+word_count: 3674
 raw_asr_word_count: 3689
 length_tier: long
 segment_count: 525
@@ -15,276 +15,88 @@ fetched_at: 2026-05-19
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-117 - Justification - Contemporary]]"
 fidelity_checked: true
-tags: [summa, day/117, pars/1, q/112-113]
-last_qc_at: "2026-05-24T02:31:08"
+tags: [summa, day/117, pars/I-II, q/112-113]
+last_qc_at: "2026-06-11T00:29:45"
 last_qc_outcome: "rewrote"
 ---
 
-# Day 117 — Justification
+# Day 117 — Justification (Q.112–113: the cause of grace; the effects of grace)
 
-[00:04] hello my name is Austin Habash the founder of Think Catholic and you're listening to the Summa near podcast where we study St Thomas aan a Summa Theologiae
+> Episode: https://www.youtube.com/watch?v=H87ea4GlQkU
+> Series: Day 117 of 308, *Summa in a Year* (Think Catholic)
+> Summa reference: I-II, Q.112 (of the cause of grace, aa.1–5) + Q.113 (of the effects of grace — justification, aa.1–10)
 
-[00:14] in a way simple and insightful for anyone to understand the Summa podcast is brought to you by Think Catholic taking two questions of the Summa a day we'll
+> **Typo cleanup (ASR fixes):** Summa near → Summa in a Year; aan a / in Quin is / aquantis → Aquinas; is day 17 → This is day 117; Prima sukun day / primis suunde → Prima Secundae; B Maria Press / a Maria Pressa → (by) Ave Maria Press('s); God God (×2), in in, episode episode, first first, work work (intro), come come, through through, be be → stutters collapsed; cannnot → cannot; fire in kindling → fire enkindling; out will → out at will; the sacr a → the sacraments —; from the work work → from the work worked (*ex opere operato*); disposes thems → disposes themselves; bestow of → bestowal of; one siiz → one-size; him self → himself; afores said → aforesaid; Faith open charity → faith, hope, and charity; spiritual generation → spiritual regeneration (Q.113 a.3 ad 1 quote, restored per Dominican translation); response → responds; justce justification → justification; so to → so too; omnipotence → omnipotent; bonds → and; then was / then for → than was / than for; surprised → surprising; natural open → natural openness; trailing "[Music] tomorrow for [Music]" outro artifact normalized. Canonical character-for-character verification of quoted material deferred — source fetch unavailable this session.
 
-[00:23] seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 17 so let's get started we're covering
+## Transcript
 
-[00:31] today questions 112 113 of the Prima sukun day that is of the cause of Grace and of the effects of Grace the translation that I always use in these
+[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the *Summa in a Year* podcast, where we study St. Thomas Aquinas' *Summa Theologiae* in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the Summa a day, we'll seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith. This is day 117, so let's get started. We're covering today questions 112 and 113 of the Prima Secundae — that is, of the cause of grace, and of the effects of grace. The translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press, the five-volume set translated by the Fathers of the English Dominican Province, which you can now get at a discounted price from Ave Maria Press's site by typing in the code SUMMA10. And so, here we go.
 
-[00:41] podcasts is the one generously provided to me B Maria Press the five volume set translated by the fathers of the English Dominican province which you can now get
+### Q.112 — Of the Cause of Grace
 
-[00:50] at a discounted price from a Maria Pressa site by typing in the code Summa 10 and so here we go article one whether God God Alone is the cause of Grace St
+**Article 1 — Whether God alone is the cause of grace**
 
-[01:02] Thomas answers this sufficiently in in a sentence or so and so quoting him he writes the gift of Grace surpasses every capability of created nature since it is
+[00:50] St. Thomas answers this sufficiently in a sentence or so, and so, quoting him, he writes: "The gift of grace surpasses every capability of created nature, since it is nothing short of a partaking of the Divine nature, which exceeds every other nature. And thus it is impossible that any creature should cause grace, as it is impossible that anything save fire should enkindle."
 
-[01:12] nothing short of a partaking of the divine nature which exceeds every other nature and thus it is impossible that any creature should cause Grace as it is
+**Article 2 — Whether any preparation and disposition for grace is required on man's part**
 
-[01:22] impossible that anything save fire should enkindle Article 2 whether any preparation in and disposition for Grace is required on man's part so continuing
+[01:22] So, continuing to use the analogy of fire enkindling: we know that unless the log be dried and placed in close proximity to the open flame, it will not ignite. Similarly, in order for us to receive grace as a habitual gift — in order for us to receive sanctifying grace — man must prepare himself; he must draw near to God. However, as we mentioned in the last episode, even this drawing near to God is an effect of actual grace. [01:58] In Aquinas's words here, he writes: "Man cannot prepare himself for grace unless God prevent" — meaning, go before — "and move him to good." And then, in regard to that preparation, actual grace given, St. Thomas continues, writing: "No preparation is required on man's part that, as it were, anticipates the Divine help; but rather, every preparation in man must be by the help of God moving the soul to good. And thus even the good movement of the free will, whereby anyone is prepared for receiving the gift of grace, is an act of the free will moved by God." [02:46] In brief, we must remember: every single act of man, whether it be by grace or via nature, must stem ultimately, foundationally, from the first mover and author of both grace and nature, which is God. So even the instance of a good movement of free will which prepares a man to the reception of grace has to come from God. Free will and God's providence coordinate in the one man, without the destruction or the confusion of either — which is articulated beautifully, first of all, in Proverbs (this is Proverbs 16:9), where it is written: "A man's mind plans his way, but the Lord directs his steps," as well as in the words of St. Paul: "Work out your own salvation with fear and trembling, for God is at work in you, both to will and to work for his good pleasure."
 
-[01:34] to use the analogy of fire in kindling we know that unless the log be dried and placed in close proximity to the open flame it will not ignite similarly in
+**Article 3 — Whether grace is necessarily given to whoever prepares himself for it, or to whoever does what he can**
 
-[01:47] order for us to receive Grace as a habitual gift in order for us to receive sanctifying Grace man must prepare himself he must draw near to God however
+[03:46] Does God necessarily give grace to those who prepare themselves to receive it? Well, based on what we've said in our previous article, the fact that God has led one to such preparation should at the very least give one confidence — in a phrase from St. Paul, that "he who has begun a good work in you will bring it to completion." [04:14] However, since, again, grace is a gift — as it is written in Ephesians, "By grace you have been saved through faith, and this is not your doing; it is the gift of God, not because of works, lest any man should boast" — then God is free to give this gift out at will, and to whomever he wills. As St. Thomas concludes: "Man is compared to God as clay to the potter, according to Jeremiah 18 — 'As clay in the hand of the potter, so are you in my hand' — but however much the clay is prepared, it does not necessarily receive its shape from the potter. Hence, however much a man prepares himself, he does not necessarily receive grace from God." [04:58] Yet we do well to remember here, when it comes to the sacraments — baptism, for example — as the Church teaches, and Aquinas definitely understood, it does bestow sanctifying grace from the work worked. Thus anyone who disposes themselves to baptism and is baptized — contingent upon it being done correctly, with the correct form and matter, which we will discuss later in the Summa — does certainly receive the grace associated with that sacrament.
 
-[01:58] as we mentioned in the last episode episode even this Drawing Near to God is an effect of actual Grace and aquinas's words here he writes man cannnot prepare
+**Article 4 — Whether grace is greater in one than in another**
 
-[02:08] himself for Grace unless God prevent meaning go before and move him to good and then in regard to that preparation actual Grace given St Thomas continues
+[05:28] And this is similar to the question of whether God loves one more than another, which we covered in episode 11 of this podcast — and the answer there was, as it is here, in the affirmative. The grace given to the Blessed Virgin Mary, or even the humanity of Jesus Christ, is simply not equal to the grace you and I will ever receive. If there is one thing we know for sure about God, it is that he is glorified by hierarchy. There is a clear hierarchy in creation, whether it be in the choirs of angels or among material things down here; there is a hierarchy in his Church; and so we should expect to see a hierarchy in the bestowal of grace as well. [06:09] To this point, St. Thomas invokes here Ephesians 4, where it is written, "But grace was given to each of us according to the measure of Christ's gift," to denote that God gives according to the measure he wills. Then, when it comes to the inequality of that gift given, we could invoke John 14, on the various mansions in heaven, or St. Paul's comment that "star differs from star in glory." [06:27] The next question is not then *if* but *how* — how sanctifying grace can be greater in one than another. And we know it is different not only based on Scripture, but, again, considering Jesus Christ, for example — his humanity as distinct from our own. Think of how he acted, he spoke, he thought, compared to ourselves, and I think it's pretty clear we can admit that grace is not a one-size-fits-all kind of quality. [07:02] St. Thomas writes here, on the magnitude of grace: "Since grace cannot be greater by ordaining to a greater good, but inasmuch as it more or less ordains to a greater or less participation of the same good, for there may be diversity of intensity and remissness." [07:14] So, going back to the use of fire as a metaphor for grace: how could we say that the fire which enkindled the log could be more or less in that log? And we would say: by temperature. The closer the heat coming from the log approaches that of its origin, the more, in a way, it participates or is likened to its origin. And so, the more likened to the Divine nature by grace one becomes, the greater that grace is in one than another. [07:53] Also, the more man partakes of the Divine nature in this life by grace, the more he will enjoy the Divine nature when he sees it via the beatific vision in the life to come, as we described in episode 7.
 
-[02:21] writing no preparation is required on man's part that as it were anticipates the Divine help but rather every preparation in man must be by the help
+**Article 5 — Whether man can know that he has grace**
 
-[02:34] of God moving the soul to good and thus even the good movement of the free will whereby anyone is prepared for receiving the gift of Grace is an act of the Free
+[08:15] And it may be best to begin with the Church teaching on this. This is the Council of Trent, session six: "For as no pious person ought to doubt the mercy of God, the merit of Christ, and the virtue and efficacy of the sacraments, so each one, when he considers himself and his own weakness and indisposition, may have fear and apprehension concerning his own grace, since no one can know, with the certainty of faith which cannot be subject to error, that he has obtained the grace of God." [08:45] And this is, of course, St. Thomas's opinion as well, and he cites Scripture first to support it, as it is written in Ecclesiastes chapter 9: "But all this I laid to heart, examining it all, how the righteous and the wise and their deeds are in the hand of God; whether it is love or hate man does not know. Both are before him." [09:05] And more explicitly, St. Paul says in 1 Corinthians: "In fact, I do not even judge myself... but I am not therefore acquitted. It is the Lord who judges me. Therefore do not pronounce judgment before the time." [09:28] So we do not know, with the certainty of faith, simply from introspection, that we are in a state of grace. But we can have a kind of certainty as to our current state by judging the tree by its fruits — by looking at the effects within us, or coming from us, and then working backwards to what all this might mean about our current state. As St. Thomas says: "Conjecturally, by signs, anyone may know he has grace, when he is conscious of delighting in God and of despising worldly things, and inasmuch as a man is not conscious of any mortal sin. Yet this knowledge is imperfect."
 
-[02:46] Will moved by God in brief we must remember every single act of man whether it be by Grace or via nature must stem ultimately foundationally from the first
+### Q.113 — Of the Effects of Grace (Justification)
 
-[02:59] first mover and author of both Grace and nature which is God so even the instance of a good movement of Free Will which prepares a man to the reception of Grace
+**Article 1 — Whether the justification of the ungodly is the remission of sins**
 
-[03:10] has to come from God free will and God's Providence coordinate in the one man without the destruction or the confusion of either which is articulated
+[10:10] And with that we move to question 113, of the effects of grace. Justice implies a certain rectitude of order, Aquinas tells us here — which is why we call the state of Adam before the fall, when his intellect and will was habitually subordinated to God, and his passions habitually subordinated to reason, the state of original justice. He was just without the remission of sin, because he was just before sin entered the world. [10:29] For the rest of us, a restoration of order must come along with the remission of our sin — whether it be the remission of that sin passed down by the head of our race, what we have called original sin, or it be that sin along with our own personal sins. In St. Thomas's words: "Justification implies a transmutation from the state of injustice to the aforesaid state of justice." And it is thus we are now speaking of the justification of the ungodly, according to St. Paul, who writes: "But to him that worketh not, yet believeth in him that justifieth the ungodly."
 
-[03:21] beautifully first of all in Proverbs this is Proverbs 16:9 where it is written a man's mind plans his way but the Lord directs his steps as well
+**Article 2 — Whether the infusion of grace is required for the remission of guilt, i.e., for the justification of the ungodly**
 
-[03:33] as in the words of St Paul work out your own salvation with fear and trembling for God is at work in you both to Will and to work for his good pleasure
+[11:13] Does the pardoning of man by God also require the infusion of grace into his soul? And it does, because the pardoning of man would mean also the restoration of that right relationship with God he had before sin entered the world. And because Adam was created in grace, with the theological virtues — faith, hope, and charity — along with the infused virtues, a pardon would mean for us regaining those virtues which we had rightly been stripped of. Therefore we can answer in the affirmative to this article: the remission of guilt does require an infusion of divine grace into the soul.
 
-[03:46] article three whether Grace is necessarily given to whoever prepares himself for it or to whoever does what he can does God necessarily give Grace
+**Article 3 — Whether for the justification of the ungodly is required a movement of the free will**
 
-[03:56] to those who prepare themselves to receive it well based on what we've said in our previous article the fact that God has led one to such preparation
+[12:07] St. Thomas answers this very succinctly, so simply quoting him, he writes: "God moves everything in its own manner, just as we see that in natural things, what is heavy and what is light are moved differently, on account of their diverse natures. Hence he moves man to justice according to the condition of his human nature. But it is man's proper nature to have free will. Hence in him who has the use of reason, God's motion to justice does not take place without a movement of the free will; but he so infuses the gift of justifying grace that at the same time he moves the free will to accept the gift of grace, in such as are capable of being moved thus."
 
-[04:05] should at the very least give one confidence in a phrase from St Paul that he who has begun a good work in you will bring it to completion however since
+**Article 4 — Whether a movement of faith is required for the justification of the ungodly**
 
-[04:14] again Grace is a gift as it is written in Ephesians by Grace you have been saved through faith and this is not your doing it is the gift of God not because
+[13:00] Now, Aquinas doesn't mention the justification of infants here — of those who cannot make an act of faith — because he mentioned it in the previous article. There he wrote: "Infants are not capable of the movement of their free will; hence it is by the mere infusion of their souls that God moves them to justice. Now this cannot be brought about without a sacrament; because as original sin, from which they are justified, does not come to them from their own will, but by carnal generation, so also is grace given them by Christ through spiritual regeneration." [13:38] And so it's important to mention here that faith, although it is an act, it is also a supernatural virtue — it is an infused quality of the mind — and if God wills to bestow the virtue without an antecedent act of faith on the part of the infant, it is his prerogative to do so. And according to the unanimous consensus of the Church for all of Christian history, he does in fact do so, via the sacrament of baptism. [14:01] Returning to our current article: is a movement of faith required for the justification of the ungodly? To this question Scripture responds: "And without faith it is impossible to please him. For whoever would draw near to God must believe that he exists and that he rewards those who seek him." That's Hebrews. [14:21] Now, the degree of detail or explicitness of that faith in the mediator-Messiah of mankind, Jesus Christ, has varied at various points in human history, as we discussed in episodes 111 and 112. But for all who are saved, they are saved by faith. And that movement of saving faith is also coupled with the infusion of charity in the heart, because in becoming a member of the mystical Body of Christ, sanctifying grace enters the soul along with the theological and infused virtues which flow from it. [14:55] As the Church teaches — this is from Trent: "No one can be just but he to whom the merits of the Passion of our Lord Jesus Christ are communicated; when, by the merit of that same most holy Passion, the charity of God is poured forth by the Holy Spirit in the hearts of those that are justified, and is inherent therein; whence man, through Jesus Christ, in whom he is engrafted, receives in the said justification, together with the remission of sins, all these gifts infused at once: faith, hope, and charity."
 
-[04:24] of Works lest any man should boast then God is free to give this gift out will and to whomever he Wills as St Thomas concludes man is compared to God as clay
+**Article 5 — Whether for the justification of the ungodly there is required a movement of the free will towards sin**
 
-[04:35] to the Potter according to Jeremiah 18 as clay in the hand of the Potter so are you in my hand but however much the clay is prepared it does not necessarily
+[15:39] Does justification entail a willing against, or away from, one's own sinfulness, along with sin in general? And we know the answer is yes — how can we ask forgiveness for that for which we are not repentant of? St. Thomas writes: "Now to withdraw from sin and to draw near to justice, in an act of free will, means detestation and desire. Hence in the justification of the ungodly there must be two acts of the free will — one whereby it tends to God's justice, the other whereby it hates sin."
 
-[04:47] receive its shape from the Potter hence however much a man prepares himself he does not necessarily receive Grace from God yet we do well to remember here when
+**Article 6 — Whether the remission of sins ought to be reckoned among the things required for justification**
 
-[04:58] it comes to the sacr a baptism for example as the church teaches and in Quin is definitely understood it does bestow sanctifying Grace from the work
+[16:29] Yes — and that because the act of free will away from sin and towards God, along with the infusion of grace into man, is all for the sake of bringing a man into right relationship with God, ordering him duly to his divinely appointed end — which he cannot accomplish, and cannot be accomplished, unless a man receive pardon and forgiveness for his sins. For being in a state of sin is itself to be in a state of disorder. Therefore we can say quite simply and assuredly that the remission of sins is one of the things required for justification.
 
-[05:07] work thus anyone who disposes thems to baptism and is baptized contingent upon it being done correctly with the correct form and matter which we will discuss
+**Article 7 — Whether the justification of the ungodly takes place in an instant or successively**
 
-[05:17] later in the Summa does certainly receive the grace associated with that Sacrament Article 4 whether Grace is greater in one than in another and this is similar
+[17:14] Instantly. Just as light immediately enters into the room upon flipping the switch, more or less, so too the grace of God enters the soul of man instantaneously upon his command. And the only reason that something would have to be imparted over time is either due to poor disposition on the part of the thing being affected, or a weakness on the part of the agent. [17:35] So: our theology teachers are not all-powerful, all-knowing, and neither are we, as human beings, the best kind of student — and so the teaching of the sacred science, theology, must be imparted to us by our teachers over time, like an open flame must slowly heat the wet log in order to then enkindle it. [18:08] However, when God imparts grace, he is all-powerful — and the more powerful a thing is, the less it requires its subject to be duly disposed to receive its effect. So God, who is omnipotent, can bring things into existence from sheer nothingness, where there is total absence of a disposition to be acted upon — and so he has no trouble instantly moving the will of man and infusing grace into his soul. [18:31] St. Thomas says: "For it is by grace that free will is moved and sin is remitted. The divine power is infinite; it can suddenly dispose any matter whatsoever to its form — and much more man's free will, whose movement is by nature instantaneous... Therefore the justification of the ungodly by God takes place in an instant."
 
-[05:28] to the question of whether God God loves one more than another which we covered in episode 11 of this podcast and the answer there was as it is here in the
+**Article 8 — Whether the infusion of grace is naturally the first of things required for the justification of the ungodly**
 
-[05:37] affirmative the grace given to the Blessed Virgin Mary or even the humanity of Jesus Christ is simply not equal to the grace you and I will ever receive if
+[18:52] And since we've already said that justification of man happens instantaneously, what we mean by first, second, and third here, in the justification of man, cannot denote a temporal sequence, but instead what St. Thomas calls a natural order. Just like when one pushes a glass across the table, the activity of the will is prior, in the order of execution, to the firing of motor neurons and the contraction of muscles — although this is all happening at the same time — so too in the justification of man. [19:29] The natural order in that effect, according to St. Thomas, is the following: the infusion of grace; the second, the free will's movement towards God; the third, the free will's movement away from sin; the fourth, the remission of sin. And that because in any movement the agent is primary — that's the infusion of grace here; next comes that to which it is moved to, and then where it has moved from — here, that is the will's movement towards God and away from sin; and then, lastly, there is the completion of that motion, or rest of the moved thing, which in justification is the remission of sin — completing this justification, bringing man to rest in a resting, right relationship with God.
 
-[05:48] there is one thing we know for sure about God it is that he is glorified by hierarchy there is a clear hierarchy in creation whether it be in the choirs of
+**Article 9 — Whether the justification of the ungodly is God's greatest work**
 
-[05:59] Angels or among material things down here there is a hierarchy in his church and so we should expect to see a hierarchy in the bestow of Grace as well
+[20:24] St. Thomas here says: "The good of grace in one is greater than the good of nature in the entire universe." And that is the quote to take away from this article. It is a greater work of God to elevate a single man to be a partaker of the Divine nature than was the work of creating this entire universe out of nothing. [20:46] It is also greater from the perspective of man's unworthiness, his wretchedness, wickedness — for him to be forgiven by God, which is a sheer act of mercy, than for him to be rewarded by God in heaven as a result of grace given, or as a crown for dying in sanctifying grace. Therefore, for all these reasons, we can say that yes, indeed, the justification of the ungodly is God's greatest work.
 
-[06:09] to this point St Thomas invokes here Ephesians 4 where it is written but Grace was given to each of us according to the measure of Christ's gift to
+**Article 10 — Whether the justification of the ungodly is a miraculous work**
 
-[06:18] denote that God gives according to the measure he Wills then when it comes to the inequality of that gift given we could invoke John 14 on the various
+[21:19] In our last article — and the answer we receive here might be surprising — Aquinas says that the justification of the ungodly is, in one way, not miraculous, because man, as rational, has a natural openness or possibility to the reception of grace — to be elevated, if God wills, to become a partaker of the Divine nature; we mentioned that in episode 7. So it is not completely out of the order of natural things, this elevation, since we possess a natural openness or possibility to receive grace. [22:02] However, if what we mean by miraculous is that the justification and the divinization of man is beyond his natural powers to do so, then absolutely, justification is a miraculous work. And we could also point out instances in which justification occurred to such a degree of perfection — or a perfection of grace resulting in a man — that it was in this way beyond the ordinary course of things; we could point to St. Paul's conversion here. [22:33] But ultimately the weight of St. Thomas's response to this article goes towards that first of our considerations. In his words: "Miraculous works are beyond natural power. Now the justification of the ungodly is not beyond natural power; for Augustine says that to be capable of having faith and to be capable of having charity belongs to man's nature; but to have faith and charity belongs to the grace of the faithful. Therefore the justification of the ungodly is not miraculous."
 
-[06:27] mansions in heaven or St Paul's comment that star differs from star in glory the next question is not then if but how how sanctifying Grace can be greater in one
-
-[06:40] than another and we know it is different not only based on scripture but again considering Jesus Christ for example his Humanity as distinct from our own think
-
-[06:51] of how he acted he spoke he thought compared to ourselves and I think it's pretty clear we can admit that Grace is not a one siiz fits-all kind of quality
-
-[07:02] St Thomas writes here magnitude of Grace since Grace cannot be greater by ordaining to a greater good but in as much as it more or less ordains to a
-
-[07:14] greater or less participation of the same good for there may be diversity of intensity and remissness so going back to the use of fire as a metaphor for
-
-[07:27] Grace how could we say that the the fire which enkindled the log could be more or less in that log and we would say by temperature the closer the heat coming
-
-[07:40] from the log approaches that of its origin the more in a way it participates or is likened to its origin and so the more likened to the divine nature by
-
-[07:53] Grace one becomes the greater that Grace is in one than another also the more man partakes of the divine nature in this life by Grace the more he will enjoy the
-
-[08:04] divine nature when he sees it via the beatific Vision in the Life to Come As We described in episode 7 Article 5 May anyone know that he has Grace and it may
-
-[08:15] be best to begin with the church teaching on this this is the Council of Trent session six for as no Pious person ought to doubt the mercy of God the
-
-[08:23] Merit of Christ and The Virtue and efficacy of the sacraments so each one when he considers him self and his own weakness and indisposition may have fear
-
-[08:33] and apprehension concerning his own Grace since no one can know with the certainty of Faith which cannot be subject to error that he has obtained
-
-[08:45] the grace of God and this is of course St Thomas's opinion as well and he cites scripture first to support it as it is written in Ecclesiastes chapter 9 but
-
-[08:55] all this I laid to Heart examining it all how the righteous and the wise and their deeds are in the hand of God whether it is love or hate man does not
-
-[09:05] know both are before him and more explicitly St Paul says in 1 Corinthians in fact I do not even judge myself for I'm not aware of anything against myself
-
-[09:16] but I am not therefore acquitted it is the Lord who judges me therefore do not pronounce judgment before the time so we do not know with the certainty of Faith
-
-[09:28] simply from introspection that we are in a state of grace but we can't have a kind of certainty as to our current state by judging the tree by its fruits
-
-[09:38] or looking at the effects within us or coming from us and then working backwards to what all this might mean about our current state as St Thomas
-
-[09:47] says conjecturally by signs anyone may know he has Grace when he is conscious of delighting in God and of despising worldly things and in as much as a man
-
-[09:59] is not conscious of any mortal sin yet this knowledge is imperfect and with that we move to question 113 of the effects of Grace article one whether the
-
-[10:10] justification of the ungodly is the remission of sins Justice implies a certain rectitude of order Aquinas tells us here which is why we call the state
-
-[10:20] of Adam before the fall when his intellect and Will was habitually subordinated to God and His passions habitually subordinated to reason the
-
-[10:29] state of original Justice he was just without the remission of sin because he was just before sin entered the world for the rest of us a restoration of
-
-[10:41] order must come along with the remission of our sin whether it be the remission of that sin passed down by the head of our race what we have called original
-
-[10:51] sin or it be that sin along with our own personal sins in St Thomas's words justification implies a transmutation from the state of Injustice to the
-
-[11:03] afores said state of justice and it is thus we are now speaking of the justification of the ungodly according to St Paul who writes but to him that
-
-[11:13] worketh not yet believeth in him that justifieth the ungodly article two whether the infusion of Grace is required for the remission of guilt I.E
-
-[11:24] for the justification of the ungodly does the pardoning of man by God also require the infusion of Grace into his soul and it does because the pardoning
-
-[11:35] of man would mean also the restoration of that right relationship with God he had before sin entered the world and because Adam was created in Grace with
-
-[11:46] the theological virtues Faith open charity along with the infused virtues a pardon would mean for us regaining those virtues which we had rightly been
-
-[11:57] stripped of therefore we can answer in the affirmative to this article the remission of guilt does require an infusion of divine grace into the soul
-
-[12:07] article three whether for the justification of the ungodly is required a movement of the Free Will St Thomas answers this very succinctly so simply
-
-[12:17] quoting him he writes God moves everything in its own manner just as we see that in Natural Things what is heavy and what is light are moved differently
-
-[12:26] on account of their diverse Natures hence he moves man to Justice according to the condition of his human nature but it is man's proper nature to have free
-
-[12:36] will hence in him who has the use of Reason God's motion to Justice does not take place without a movement of the free will but he so infuses the gift of
-
-[12:48] justifying Grace that at the same time he moves the free will to accept the gift of Grace in such as are capable of being moved thus Article 4 whether a
-
-[13:00] movement of faith is required for the justification of the ungodly now Aquinas doesn't mention the justification of infants here of those who cannot make an
-
-[13:09] Act of Faith because he mentioned it in the previous article there he wrote infants are not capable of the movement of their Free Will hence it is by the
-
-[13:18] mere infusion of their souls that God moves them to justice now this cannot be brought about without a Sacrament because as original sin from which they
-
-[13:27] are Justified does not come come to them from their own will but by carnal generation so also is Grace given them by Christ through spiritual generation
-
-[13:38] and so it's important to mention here that Faith although it is an act it is also a supernatural virtue it is an infused quality of the mind and if God
-
-[13:49] Wills to bestow The Virtue without an antecedent Act of Faith on the part of the infant it is his prerogative to do so and according to the unanimous
-
-[14:01] consensus of the church for all of Christian history he does in fact do so via the sacrament of baptism returning to our current article is a movement of
-
-[14:11] Faith required for the justification of the ungodly to this question scripture response and without faith it is impossible to please him for whoever
-
-[14:21] would draw near to God must believe that he exists and that he rewards those who seek him that's Hebrews now the degree of detail or explicitness of that faith
-
-[14:32] in the mediator Messiah of mankind Jesus Christ has varied at various points in human history as we discussed in episodes 111 112 but for all who are
-
-[14:43] saved they are saved by faith and that movement of saving faith is also coupled with the infusion of Charity in the heart because in becoming a member of
-
-[14:55] the mystical Body of Christ sanctifying Grace enters the soul along with the theological and Infused virtues which flow from it as the church teaches this
-
-[15:07] is from Trent no one can be just but he to whom the merits of The Passion of our Lord Jesus Christ are communicated when by the Merit of that same Most Holy
-
-[15:18] passion the charity of God is poured forth by the holy spirit in the hearts of those that are Justified and is inherent therein whence man through
-
-[15:28] through Jesus Christ in whom he is engrafted receives in the said justification together with the remission of sins all these gifts
-
-[15:39] infused at once faith hope and charity Article 5 whether for the justification of the ungodly there is required a movement of the Free Will towards sin
-
-[15:50] does justification entail a willing against or away from one's own sinfulness along with sin in general and we know the answer is yes how can we ask
-
-[16:01] forgiveness for that for which we are not repentant of St Thomas writes now to withdraw from sin and to draw near to Justice in an act of Free Will means
-
-[16:11] detestation and desire hence in the justification of the ungodly there must be two acts of the Free Will one whereby it tends to God's justice the other
-
-[16:21] whereby it hates sin article 6 whether the remission of sins ought to be reckoned among the things required for justce
-
-[16:29] justification yes and that because the act of Free Will away from sin and towards God along with the infusion of Grace into man is all for the sake of
-
-[16:40] bringing a man into right relationship with God ordering him duly to his divinely appointed end which he cannot accomplish and cannot be accomplished
-
-[16:50] unless a man receive pardon and forgiveness for his sins for being in a state of sin isn't itself to be in a state of disorder therefore we can say
-
-[17:04] quite simply and assuredly that the remission of sins is one of the things required for justification article 7 whether the justification of the ungodly
-
-[17:14] takes place in an instant or successively instantly just as light immediately enters into the room upon flipping the switch more or less so to
-
-[17:24] the grace of God enters the soul of man instantaneously upon his command and the only reason that something would have to be imparted over time is either due to
-
-[17:35] poor disposition on the part of the thing being affected or a weakness on the part of the agent so our theology teachers are not all powerful all
-
-[17:47] knowing and neither are we as human beings the best kind of student and so the teaching of the Sacred science theology must be imparted To Us by our
-
-[17:57] teachers over time like an open flame must slowly heat the wet log in order to then enkindle it however when God imparts grace he is all
-
-[18:08] powerful and the more powerful a thing is the less it requires its subject to be duly disposed to receive its effect so God who is omnipotence can bring
-
-[18:20] things into existence from sheer nothingness where there is total absence of a disposition to be acted upon and so he has no trouble instantly moving the
-
-[18:31] will of man and infusing Grace into his soul St Thomas says for it is by grace that Free Will is moved and sin is remitted the divine power is infinite it
-
-[18:41] can suddenly dispose any matter whatsoever to its form and much more Man's Free Will whose movement is by nature instantaneous therefore the
-
-[18:52] justification of the ungodly by God takes place in an instant article 8 whether the infusion of Grace is naturally the first of things required
-
-[19:01] for the justification of the ungodly and since we've already said that justification of man happens instantaneously what we mean by first
-
-[19:10] second and third here and the justification of man cannot denote a temporal sequence but instead what St Thomas calls a natural order that just
-
-[19:18] like when one pushes a glass across the table the activity of the will is prior in the order of execution to the firing of motor neurons bonds the contraction
-
-[19:29] of muscles although this is all happening at the same time so too in the justification of man the natural order in that effect according to St Thomas is
-
-[19:39] the following the infusion of Grace the second the free Will's movement towards God the third the free Will's movement away from sin the fourth the remission
-
-[19:49] of sin and that because in any movement the agent is primary that's the infusion of Grace here next comes that to which it is moved to and then where it has
-
-[20:02] moved from here that is the Will's movement towards God and away from sin and then lastly there is the completion of that motion or rest of the moved
-
-[20:12] thing which in justification is the remission of sin completing this justification bringing man to rest in a resting right relationship with God
-
-[20:24] article 9 whether the justification of the ungodly is God's greatest work St Thomas here says the good of Grace in one is greater than the good of nature
-
-[20:36] in the entire universe and that is the quote to take away from this article it is a greater work of God to elevate a single man to be a partaker of the
-
-[20:46] divine nature then was the work of creating this entire universe out of nothing it is also greater from the perspective of man's unworthiness his
-
-[20:56] wretchedness wickedness for him to be be forgiven by God which is a sheer Act of Mercy then for him to be rewarded by God in heaven as a result of Grace given or
-
-[21:08] as a crown for dying in sanctifying Grace therefore for all these reasons we can say that yes indeed the justification of the ungodly is God's
-
-[21:19] greatest work article 10 in our last article whether the justification of the ungodly is a miraculous work and the answer we receive here might be
-
-[21:28] surprised aquantis says that the justification of the ungodly is in one way not miraculous because man as rational has a natural
-
-[21:37] openness or possibility to the reception of Grace to be elevated if God Wills to become a partaker of the divine nature we mentioned that in episode 7 so it is
-
-[21:50] not completely out of the order of natural things this elevation since we possess a natural open or possibility to receive Grace however
-
-[22:02] if what we mean by miraculous is that the justification and the divinization of man is beyond his natural powers to do so then absolutely justification is a
-
-[22:12] miraculous work and we could also point out instances in which justification occurred to such a degree of perfection or a Perfection of Grace resulting in a
-
-[22:23] man that it was in This Way Beyond the ordinary course of things we could point to St Paul's conversion here but ultimately the weight of St Thomas's
-
-[22:33] response to this article goes towards that first of our considerations in his words miraculous works are Beyond natural power now the justification of
-
-[22:42] the ungodly is not Beyond natural power for Augustine says that to be capable of having faith and to be capable of having charity belongs to man's nature but to
-
-[22:54] have faith and charity belongs to the grace of the faithful therefore the justification of the ungodly is not miraculous which brings us to the close
-
-[23:06] of another episode we have just finished covering questions 112 113 of the primis suunde that is of the cause of Grace and of the effects of Grace my name is
-
-[23:17] Austin Habash with Think Catholic and I cannot wait to see you [Music] tomorrow for
-
-[23:32] [Music]
+[23:06] Which brings us to the close of another episode. We have just finished covering questions 112 and 113 of the Prima Secundae — that is, of the cause of grace, and of the effects of grace. My name is Austin Habash with Think Catholic, and I cannot wait to see you tomorrow.
 
 ## Notes
 

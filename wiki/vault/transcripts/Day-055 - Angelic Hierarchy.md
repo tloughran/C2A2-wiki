@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-055 - Angelic Hierarchy - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-22T07:56:37"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-10T04:26:06"
+last_qc_outcome: "rewrote"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/055, pars/I]
 ---
@@ -26,15 +26,15 @@ tags: [summa, day/055, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 55 of 308.
 > Summa reference: *Prima Pars, Q.107 + Q.108*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baanus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bdionisius\b -> Dionysius; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baanus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bdionisius\b -> Dionysius; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC sweep 2026-06-10 additional fixes: suir -> Summa; a Maria press / a Maria Pressa -> Ave Maria Press / Ave Maria Press's; donius -> Dionysius; verboom -> verbum (3x). This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the suir podcast where we study St Thomas Aquinas Summa Theologiae in a way simple and insightful for anyone to understand the Summa podcast is brought to you by think Catholic taking two questions of the Summa a day we seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 55 so let's get started we're covering today questions 107 and 108 of the Prima pars that is the speech of the angels and the
+[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas Summa Theologiae in a way simple and insightful for anyone to understand the Summa podcast is brought to you by think Catholic taking two questions of the Summa a day we seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 55 so let's get started we're covering today questions 107 and 108 of the Prima pars that is the speech of the angels and the
 
-[00:00:36] Angelic degrees of hierarchies and orders the translation that I always use in these podcasts is the one generously provided to me by a Maria press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from a Maria Pressa site by typing in the code
+[00:00:36] Angelic degrees of hierarchies and orders the translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code
 
 [00:00:55] Summa 10 and so here we go article one whether one angel speaks to another St Paul says in 1 Corinthians chapter 13 if I speak in the tongues of men and angels but have not love I'm a noisy gong which seems to imply angels have a kind of speech St Thomas explains that when we consider a thing like dogs for instance we conceive of the concept in our minds and that this mental word which we have presented to our own understanding could be considered a kind of Talking to
 
@@ -44,13 +44,13 @@ tags: [summa, day/055, pars/I]
 
 [00:02:31] mind of an angel can be aroused to attention by some intelligible power so the directing or willing of one Angel's thought to another both gets that Angel's attention and also provides visibility into the thought itself
 
-[00:02:49] article two whether the inferior angel speaks to the superior do angels talk back to their superiors not in a malicious way of course or a disobedient way just at all according to donius the answer to this question is given in Psalm 24 where according to him the Angels say who is the king of glory so if angels can ask questions if they need to ask questions then this would constitute speech coming from an inferior to a superior and this is precisely what Aquinas holds that they do that although the inferior cannot
+[00:02:49] article two whether the inferior angel speaks to the superior do angels talk back to their superiors not in a malicious way of course or a disobedient way just at all according to Dionysius the answer to this question is given in Psalm 24 where according to him the Angels say who is the king of glory so if angels can ask questions if they need to ask questions then this would constitute speech coming from an inferior to a superior and this is precisely what Aquinas holds that they do that although the inferior cannot
 
 [00:03:21] illuminate the superior by way of teaching some novel truth it can illuminate the superior by revealing its will choice or desires which would be new to the Superior in St Thomas's words regarding the will as the principle he who Wills is first and supreme and therefore the manifestation of what belongs to the will is conveyed to others by the one who Wills in that manner both the superior Angels speak to the inferior and the inferior speak to
 
 [00:03:53] the superior article 3 whether an angel speaks to God it is written in Zechariah Chapter 1 then the angel of the Lord said oh lord of hosts how long wilt thou have no mercy on Jerusalem and the cities of Judah so it seems that Angels do speak to God according to Aquinas as well he says as in Natural Things the passive is ordered to the agent and in human speech the disciple to the master and in this way an angel speaks to God which is pretty clear and so moving on
 
-[00:04:24] Article 4 whether local distance influences the Angelic speech of effects happen in the affected not in the cause nor in some place between the cause and the effect for example when I say that the word verboom means word in Latin if you didn't already know what verboom meant where did the effect learning what verboom means take place not in me the teacher not somewhere between you and I
+[00:04:24] Article 4 whether local distance influences the Angelic speech of effects happen in the affected not in the cause nor in some place between the cause and the effect for example when I say that the word verbum means word in Latin if you didn't already know what verbum meant where did the effect learning what verbum means take place not in me the teacher not somewhere between you and I
 
 [00:04:55] the effect occurred in you effects happen in the effected in a similar way local distance does not impair the Angel's speech which as we mentioned in an article previous is the concept of one Angel informing or affecting the mind of another plus what does local distance even mean for entirely immaterial Spirits an immaterial spirit is where it is acting as we said in episode 27 so there seems to be no difficulty in an angel beginning to act on one creature and
 

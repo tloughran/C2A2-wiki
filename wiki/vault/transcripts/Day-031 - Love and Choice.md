@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-031 - Love and Choice - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-20T08:25:08"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-10T00:24:44"
+last_qc_outcome: "rewrote"
 render_pass: structural-pass-2026-05-12  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/031, pars/I]
 ---
@@ -26,13 +26,13 @@ tags: [summa, day/031, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 31 of 308.
 > Summa reference: *Prima Pars, Q.59 + Q.60*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baanus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baanus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \bhavish\b -> Habash; \bsuar\b -> Summa; \bassuma\b -> Summa; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
-[00:00:04] hello my name is Austin Havish the
+[00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the suar podcast where we study St Thomas Aquinas assuma Theologiae in a way simple and insightful for anyone to understand the Summa podcast is brought to you by think Catholic taking two questions of the Summa a day will seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this day 31 so let's get started we're covering today questions 59 and 60 the Prima pars which is the will of the angels and the
+[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa podcast is brought to you by think Catholic taking two questions of the Summa a day will seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this day 31 so let's get started we're covering today questions 59 and 60 the Prima pars which is the will of the angels and the
 
 [00:00:37] love of the Angels the translation that I always use in these podcasts as the second revised Edition translated by the fathers of the English Dominican
 

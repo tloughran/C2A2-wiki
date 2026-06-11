@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=xcOZZNmW-2U
 title: Volume 2
 summa_ref: Prima Pars, Q.119 + Prima Secundae, Q.1
 duration_seconds: 1228
-word_count: 3193
+word_count: 3192
 raw_asr_word_count: 3193
 length_tier: medium
 segment_count: 441
@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-061 - Volume 2 - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-22T17:07:39"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-10T08:23:19"
+last_qc_outcome: "rewrote"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/061, pars/I, pars/I-II, q/119, q/1]
 ---
@@ -24,17 +24,17 @@ tags: [summa, day/061, pars/I, pars/I-II, q/119, q/1]
 
 > Episode: <https://www.youtube.com/watch?v=xcOZZNmW-2U>
 > Series: *Summa in a Year* by Austin Habash. Day 61 of 308.
-> Summa reference: *Prima Pars, Q.119*
+> Summa reference: *Prima Pars, Q.119 + Prima Secundae, Q.1*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC sweep 2026-06-10: Prima secund day -> Prima Secundae; a Maria pressed -> Ave Maria Press; a mar oppresses sight -> Ave Maria Press's site. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas Summa Theologiae in a way simple and insightful for anyone to understand the Summa podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 61 so let's get started we're covering today question 119 of the Prima pars our last question of the first volume of the Summa and question one of the Prima secund day
+[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas Summa Theologiae in a way simple and insightful for anyone to understand the Summa podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 61 so let's get started we're covering today question 119 of the Prima pars our last question of the first volume of the Summa and question one of the Prima Secundae
 
-[00:00:38] the second volume of the Summa the questions are of the propagation of man as to the body and of Man's last end the translation that I always use in these podcasts is the one generously provided to me by a Maria pressed the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from a mar oppresses sight by typing in the code
+[00:00:38] the second volume of the Summa the questions are of the propagation of man as to the body and of Man's last end the translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code
 
 [00:01:02] Summa 10 and so here we go article one whether any part of the food is changed into true human nature do we transform food into ourselves remember like all other material things we consist of form and matter and since the food we are eating has its own form matter composition before we eat it how does it lose its old form and then begin to be informed by our very own and the Perfect Analogy here of material becoming or
 

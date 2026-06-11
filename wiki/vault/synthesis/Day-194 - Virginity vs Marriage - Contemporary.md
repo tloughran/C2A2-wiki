@@ -5,6 +5,7 @@ pairs_with: "[[Day-194 - Virginity vs Marriage]]"
 length_target_words: 2200
 length_actual_words: 1724
 length_ratio_to_target: 0.78
+length_note: "Length-light vs the 2200 medium-tier guideline but a complete PRS synthesis covering both Q.152 and Q.153 (Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy — substantive integrity over word count."
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/friston/wiki.md + prs_triplets.md (PRS-04 active modeler; PRS-06 multi-agent coherence; action-selection pipeline)"
@@ -16,8 +17,8 @@ evidence_strength_summary: "Virginity as resource-reallocation toward the whole 
 mind_first_reframe: "Virginity is a finite agent reallocating its scarce relational and attentional bandwidth from a divided, dyadic load toward undivided modeling of the whole; lust is the corruption of the entire perception-policy-action pipeline, terminating in self-love where loving unity should stand."
 central_theme_thread: "The central claim is exactly staged here: self-love as disordered end versus loving unity as the agent's telos. Virginity is the deliberate widening of perspective toward the whole; the daughters of lust are the step-by-step collapse of a perspective back onto itself."
 tags: [synthesis, day/194, theme/perspective-and-union]
-last_qc_at: "2026-06-03T12:21:24"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-10T14:29:49"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 194 — Virginity vs. Marriage (Contemporary Parallel)

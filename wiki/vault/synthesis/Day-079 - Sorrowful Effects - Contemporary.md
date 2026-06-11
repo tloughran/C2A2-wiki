@@ -6,6 +6,7 @@ length_target_words: 1500
 length_actual_words: 1120
 length_ratio_to_target: 0.747
 length_tier: short
+length_note: "Under target per the constitution's short-and-substantive rule: Q.36-37 are compact articles fully covered (causes and effects of sorrow each treated per-article with evidence grading); padding to tier would add recapitulation, not linkage."
 mind_first_reframe: "Aquinas's metaphysical 'craving for unity' as the deepest cause of sorrow gets instantiated at multiple scales under conscious-realist monism: bioelectric coherence at the cellular level (Levin), prediction-error null at the inferential level (Friston), positivity-resonance synchrony at the social level (Fredrickson), and substrate-coherence at the metaphysical limit (Kastrup) — unity is no longer mysteriously transcendental but mechanistically tractable at every level of organization."
 central_theme_thread: "The agent's perspective-limitation is what makes sorrow possible and what makes it harmful when unintegrated; sorrow's somatic harm (HPA loading, vagal suppression, inflammation, PRS-11 gating) tracks the narrowing of the model, while a perspective wide enough to hold both the lost good and the larger reality containing it does not collapse under the loss."
 karpathy_wiki_sources:
@@ -17,8 +18,8 @@ karpathy_wiki_sources:
   - "traditions/wright/ — Pauline lament tradition; Romans 8 'creation groans'"
 evidence_strength_summary: "Q.37 a.4's claim that sorrow is most harmful to the body is empirically very well supported by modern psychoneuroimmunology — chronic stress/grief mediated through HPA axis, vagal tone, inflammatory markers, telomere shortening; Q.36 a.3's craving-for-unity is metaphysical but resonates with Levin's bioelectric coherence at cellular and tissue scales. Q.37 a.1 moderate-sorrow-as-impetus-to-learn maps onto optimal-precision findings in predictive processing."
 tags: [synthesis, day/079, theme/sorrow-effects, theme/somatic-cost]
-last_qc_at: "2026-06-04T18:28:06"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-10T18:26:25"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 79 — Sorrowful Effects (Contemporary)

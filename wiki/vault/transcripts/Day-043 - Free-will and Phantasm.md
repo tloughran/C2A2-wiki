@@ -15,8 +15,8 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-043 - Free-will and Phantasm - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-25T20:19:10"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-10T20:29:28"
+last_qc_outcome: "rewrote"
 render_pass: auto-catchup-2026-05-04  # auto-rendered; QC pass should add Q.N/article headers, polish prose, write Notes
 tags: [summa, day/043, pars/I]
 ---
@@ -26,13 +26,13 @@ tags: [summa, day/043, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 43 of 308.
 > Summa reference: *Prima Pars, Q.83 + Q.84*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — QC agent or human editor must add proper `### Q.N - title` and `**Article M - title**` section headers, polish prose, write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae; a Maria press -> Ave Maria Press (QC sweep 2026-06-10). This is an auto-rendered initial pass — QC agent or human editor must add proper `### Q.N - title` and `**Article M - title**` section headers, polish prose, write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:04] hello my name is Austin Habash the founder of think Catholic and you're listening to the Summa year podcast where we study St Thomas Aquinas of Summa Theologiae in a way simple and insightful for anyone to understand the Summa near podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 43 so let's get started
 
-[00:00:30] we're covering today questions 83 and 84 the Prima pars that is on Free Will and how the soul while United to the body understands Corporal things beneath it the translation that I now always use is the one generously provided to me by a Maria press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from a Maria press's site by typing in the code Summa
+[00:00:30] we're covering today questions 83 and 84 the Prima pars that is on Free Will and how the soul while United to the body understands Corporal things beneath it the translation that I now always use is the one generously provided to me by Ave Maria Press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code Summa
 
 [00:00:56] 10 and so here we go article one whether man man has free will I would like to ask before we ask if man has free will if man has translated Aquinas as Latin correctly in this article and although I have always seen this article translated as free will in the English in the Latin Aquinas uses the phrase libero arbitrio which can mean free will for sure but
 

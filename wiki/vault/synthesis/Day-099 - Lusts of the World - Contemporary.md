@@ -14,11 +14,12 @@ karpathy_wiki_sources:
   - "Wright on Romans 7 (self-divided agent under sin) - canonical works (Wright wiki not yet on disk)"
 evidence_strength_summary: "Aquinas's ignorance/passion analysis and the Johannine triad are textual-theological. Friston/Hawkins on appetite-as-precision-spike and policy-capture are formal-empirical. The self-love-as-perspective-bias claim is the central-theme commitment with high theological convergence."
 length_ratio_to_target: 1.264
+length_note: "Over target: covers two dense questions (Q.76 ignorance + Q.77 passions incl. the Johannine triad), and Q.77 a.4 is a central-theme keystone (self-love as perspective-bias) doing substantive Aquinas-to-contemporary linkage."
 mind_first_reframe: "Aquinas's two pre-malice etiologies of sin (Q.76 ignorance, Q.77 passion / Johannine triad) recover as substrate-level diagnostics: vincible ignorance is the prior-shaping consequence of a policy-of-not-attending (curiosity-as-active-inference); passion-as-capture is precision-as-policy-hijack via fixation or dilution; self-love (Q.77 a.4) is perspective-bias — the unavoidable structural feature of any agent individuated by perspective-limitation; and the Johannine triad maps onto three architectural levels (body-bound, socio-cognitive, self-modeling) along which self-love characteristically deforms."
 central_theme_thread: "Q.77 a.4's 'inordinate self-love is the cause of every sin' and the project's central claim — 'conscious agents are individuated by the limitations of their perspective' — are the same statement in different vocabularies. The individuating perspective bias is what Augustine called amor sui; the cure in both frames is charity, the integrating prior that re-couples the agent's perspective to the wider whole and so changes what the agent optimizes for. Working out salvation in fear and trembling just is this slow retraining of priors under guidance from those who perceive more of the whole."
 tags: [synthesis, day/099, theme/perspective-bias, theme/passion-and-capture]
-last_qc_at: "2026-06-05T17:22:00"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-10T18:26:51"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 99 — Lusts of the World (Contemporary)

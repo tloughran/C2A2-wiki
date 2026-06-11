@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=iSO6jj_Tuzs
 title: Education
 summa_ref: Prima Pars, Q.117 + Q.118
 duration_seconds: 836
-word_count: 2169
+word_count: 2171
 raw_asr_word_count: 2169
 length_tier: medium
 segment_count: 316
@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-060 - Education - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-22T07:56:50"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-10T08:23:19"
+last_qc_outcome: "rewrote"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/060, pars/I]
 ---
@@ -26,15 +26,15 @@ tags: [summa, day/060, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 60 of 308.
 > Summa reference: *Prima Pars, Q.117 + Q.118*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC sweep 2026-06-10: Summa near podcast -> Summa in a Year podcast; aquan assumma -> Aquinas's Summa; a Maria press -> Ave Maria Press; a Maria press's site -> Ave Maria Press's site; five volumes set -> five volume set. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Summa near podcast where we study St Thomas aquan assumma Theologiae in a way simple and insightful for anyone to understand the Summa your podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this day 60 so let's get tic we're covering today questions 117 and 118 of the Prima pars that is of things pertaining to the action of man and of
+[00:00:06] founder of think Catholic and you're listening to the Summa in a Year podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa your podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this day 60 so let's get tic we're covering today questions 117 and 118 of the Prima pars that is of things pertaining to the action of man and of
 
-[00:00:37] the production of man from Man as to the soul the translation that I always use in these podcasts is the one generously provided to me by a Maria press the five volumes set translated by the fathers of the English Dominican province which you can now get at a discounted price from a Maria press's site by typing in the code Summa 10 and so here we go
+[00:00:37] the production of man from Man as to the soul the translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code Summa 10 and so here we go
 
 [00:01:00] article one whether one man can teach another as being the cause of his knowledge the insights from this article are surprisingly profound I would say am I able to teach the listener of this podcast in one way yes but in another way no I can teach in the sense of breaking abstract ideas into sensible pieces or analogies or Parables for the learner to God willing more easily abstract or grasp the deeper simpler idea behind or underneath them
 

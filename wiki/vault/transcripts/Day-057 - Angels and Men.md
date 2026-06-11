@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=kvN6oGx0GLU
 title: Angels & Men
 summa_ref: Prima Pars, Q.111 + Q.112
 duration_seconds: 626
-word_count: 1713
+word_count: 1711
 raw_asr_word_count: 1713
 length_tier: short
 segment_count: 248
@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-057 - Angels and Men - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-22T07:56:50"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-10T08:23:06"
+last_qc_outcome: "rewrote"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/057, pars/I]
 ---
@@ -26,15 +26,15 @@ tags: [summa, day/057, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 57 of 308.
 > Summa reference: *Prima Pars, Q.111 + Q.112*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC sweep 2026-06-10: the Su podcast -> the Summa podcast (x2); Aquinas of Summa -> Aquinas's Summa; will'll -> we'll; a Maria press -> Ave Maria Press; a Maria press a site -> Ave Maria Press's site. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:05] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Su podcast where we study St Thomas Aquinas of Summa Theologiae in a way simple and insightful for anyone to understand the Su podcast is brought to you by think Catholic taking two questions of the Summa a day will'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 57 so let's get started we're covering today questions 111 and 112 of the Prima pars that is the action of the angels on man and the mission of the Angels the
+[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 57 so let's get started we're covering today questions 111 and 112 of the Prima pars that is the action of the angels on man and the mission of the Angels the
 
-[00:00:38] translation that I always use in these podcasts is the one generously provided to me by a Maria press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from a Maria press a site by typing in the code
+[00:00:38] translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code
 
 [00:00:54] Summa 10 and so here we go article one whether an angel can enlighten man when a higher Angel enlightens a lower one it does so by breaking up a deeper simpler truth into pieces so the Lesser Angel which is of a lower kind of nature can understand it as far as it can the higher Angel also helps that lower Angel by strengthening its natural light or power to understand in question 106 Aquinas gave us an analogy for how that works similar to how the proximity of a
 

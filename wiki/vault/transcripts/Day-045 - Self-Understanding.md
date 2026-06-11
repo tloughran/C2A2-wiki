@@ -15,8 +15,8 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-045 - Self-Understanding - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-25T20:19:10"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-10T20:29:28"
+last_qc_outcome: "rewrote"
 render_pass: auto-catchup-2026-05-04  # auto-rendered; QC pass should add Q.N/article headers, polish prose, write Notes
 tags: [summa, day/045, pars/I]
 ---
@@ -26,13 +26,13 @@ tags: [summa, day/045, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 45 of 308.
 > Summa reference: *Prima Pars, Q.87 + Q.88*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — QC agent or human editor must add proper `### Q.N - title` and `**Article M - title**` section headers, polish prose, write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae; a Maria press/presses -> Ave Maria Press/Press's (QC sweep 2026-06-10). This is an auto-rendered initial pass — QC agent or human editor must add proper `### Q.N - title` and `**Article M - title**` section headers, polish prose, write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:05] hello my name is Austin Habash the founder of think Catholic and you're listening to the suer podcast where we study St Thomas aan assumma Theologiae in a way simple and insightful for anyone to understand the Summa podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 45 so let's get started we covering today
 
-[00:00:30] questions 87 and 88 of the Prima pars that is how the intellectual Soul knows itself and all within itself and how the human soul knows what is above itself and the translation that I always use is the one generously provided to me by a Maria press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from the a Maria presses site by typing in the code Summa
+[00:00:30] questions 87 and 88 of the Prima pars that is how the intellectual Soul knows itself and all within itself and how the human soul knows what is above itself and the translation that I always use is the one generously provided to me by Ave Maria Press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from the Ave Maria Press's site by typing in the code Summa
 
 [00:00:56] 10 and so here we go article one whether the intellectual Soul knows Itself by its Essence does the human intellect immediately know itself simply via its particular manner of existing now Angels who have a completely immaterial nature who just are an immaterial form have their form immediately United to that
 

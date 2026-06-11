@@ -15,8 +15,8 @@ fetched_at: 2026-05-20
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-125 - The Sin Against the Holy Spirit - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-21T04:23:57"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-10T04:26:06"
+last_qc_outcome: "pass"
 tags: [summa, day/125, pars/2, q/14-15]
 ---
 

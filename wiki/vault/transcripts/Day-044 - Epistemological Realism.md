@@ -15,8 +15,8 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-044 - Epistemological Realism - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-25T20:19:10"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-10T20:29:28"
+last_qc_outcome: "rewrote"
 render_pass: auto-catchup-2026-05-04  # auto-rendered; QC pass should add Q.N/article headers, polish prose, write Notes
 tags: [summa, day/044, pars/I]
 ---
@@ -26,13 +26,13 @@ tags: [summa, day/044, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 44 of 308.
 > Summa reference: *Prima Pars, Q.85 + Q.86*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — QC agent or human editor must add proper `### Q.N - title` and `**Article M - title**` section headers, polish prose, write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae; a Maria press -> Ave Maria Press (QC sweep 2026-06-10). This is an auto-rendered initial pass — QC agent or human editor must add proper `### Q.N - title` and `**Article M - title**` section headers, polish prose, write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:05] hello my name is Austin Habash the founder of think Catholic and new listening to the Summa in a Year podcast where we study St Thomas Aquinas Summa Theologiae in a way simple and insightful for anyone to understand the Summa near podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 44 so let's get started
 
-[00:00:30] we're covering today questions 85 and 86 of the Prima pars that is on the mode and Order of understanding and what our intellect knows in material things the translation that I always use is the one generously provided to me by a Maria press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from a Maria press's site by typing in the code Summa 10 and
+[00:00:30] we're covering today questions 85 and 86 of the Prima pars that is on the mode and Order of understanding and what our intellect knows in material things the translation that I always use is the one generously provided to me by Ave Maria Press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code Summa 10 and
 
 [00:00:55] so here we go article one whether or intellect understands Corporal and material things by abstraction from fantasms and the regular listener to this podcast will likely already know the answer to this question from our last episode here or St Thomas reaffirms what we said there as well as gives us a kind of definition for fantasm in these words Aristotle says that things are intelligible in proportion as they are separate from matter therefore material
 

@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=UZTLwrED2r0
 title: The Pursuit of Happiness
 summa_ref: Prima Secundae, Q.2 + Q.3
 duration_seconds: 1325
-word_count: 3405
+word_count: 3404
 raw_asr_word_count: 3405
 length_tier: medium
 segment_count: 500
@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-062 - The Pursuit of Happiness - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-22T17:07:53"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-10T08:23:19"
+last_qc_outcome: "rewrote"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/062, pars/I-II, q/2, q/3]
 ---
@@ -26,15 +26,15 @@ tags: [summa, day/062, pars/I-II, q/2, q/3]
 > Series: *Summa in a Year* by Austin Habash. Day 62 of 308.
 > Summa reference: *Prima Pars, Q.2 + Q.3*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \bquanus\b -> Aquinas; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \bquanus\b -> Aquinas; \btheologia\b -> Theologiae. QC sweep 2026-06-10: the suir podcast -> the Summa podcast; Aquinas assumma -> Aquinas's Summa; Summa in year podcast -> Summa in a Year podcast; Prima suun day -> Prima Secundae; a Maria press -> Ave Maria Press; a Maria press's site -> Ave Maria Press's site. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:05] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the suir podcast where we study St Thomas Aquinas assumma Theologiae in a way simple and insightful for anyone to understand the Summa in year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 62 so let's get started we're covering today questions two and three of the Prima suun day that is of those things in which man's happiness
+[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa in a Year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 62 so let's get started we're covering today questions two and three of the Prima Secundae that is of those things in which man's happiness
 
-[00:00:37] consists and what is happiness the translation that I always use in these podcasts is the one generously provided to me by a Maria press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from a Maria press's site by typing in the code Summa 10 and so here we go and we have no less than 16 articles in this episode and so we'll have to move slightly more succinctly and quickly to cover
+[00:00:37] consists and what is happiness the translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code Summa 10 and so here we go and we have no less than 16 articles in this episode and so we'll have to move slightly more succinctly and quickly to cover
 
 [00:01:05] everything in our usual time article one whether man's happiness consists in wealth no whether it be natural wealth such as food clothing cars homes Etc all of which is directed to support assist the nature of man or it be artificial wealth such as dollars and cents which is directed normally to procuring the items of natural wealth whether wealth be considered from the natural natural or artificial side happiness cannot consist in wealth because wealth is always a means and happiness is an end
 
@@ -132,7 +132,7 @@ tags: [summa, day/062, pars/I-II, q/2, q/3]
 
 [00:20:39] then the argument from article 7 of this question was from the nature of the intellect and will itself that based on the proper object of both only God himself could perfectly perfect them and therefore lead man to a perfect happiness St Thomas on this point writes now the object of the intellect is is what a thing is I.E the essence of a thing wherefore the intellect attains perfection in so far as it knows the essence of a thing consequently for
 
-[00:21:10] perfect happiness the intellect needs to reach the very essence of the first cause and thus it will have its Perfection through Union with God as with that object in which alone man's happiness consists and for these two reasons we must admit that the perfect happiness of man consists in the vision of the essence of God which brings us to a close of this episode we have just finished covering questions two and three of the Prima suun day that is of
+[00:21:10] perfect happiness the intellect needs to reach the very essence of the first cause and thus it will have its Perfection through Union with God as with that object in which alone man's happiness consists and for these two reasons we must admit that the perfect happiness of man consists in the vision of the essence of God which brings us to a close of this episode we have just finished covering questions two and three of the Prima Secundae that is of
 
 [00:21:40] those things in which man's happiness consists and what is happiness my name is Austin Habash with think Catholic and I cannot wait to see you tomorrow [Music]
 
