@@ -262,6 +262,7 @@
         }
         .cds-return-btn:hover { background: #dbeafe; }
         #cds-return-doc { position: sticky; top: 6px; z-index: 5; margin: 6px auto; }
+        #progress-return { position: sticky; top: 4px; z-index: 5; display: none; }
         .cds-clickable { cursor: pointer; }
         .cds-clickable:hover { background: #f0f4f8; }
         .cds-sim-link { text-decoration: underline dotted; }
@@ -420,6 +421,13 @@
             color: #555;
             line-height: 1.5;
             margin-bottom: 8px;
+        }
+
+        .equipment-tags { margin-top: 6px; }
+        .equipment-tag {
+            display: inline-block; background: #fff8e1; border: 1px solid #e6c34a;
+            border-radius: 4px; padding: 1px 7px; margin: 2px 4px 2px 0;
+            font-size: 11px; color: #7a5c00;
         }
 
         /* CHAT PANE */
@@ -886,9 +894,12 @@ let currentPhysicist = null;
 
 // ============ MODE FUNCTIONS ============
 function setMode(mode) {
+    /* Match by onclick argument, not event.target, so programmatic calls work
+       (same fix pattern as setSidebarView). */
     currentMode = mode;
-    document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
+    document.querySelectorAll('.mode-btn').forEach(btn => {
+        btn.classList.toggle('active', String(btn.getAttribute('onclick')).includes("'" + mode + "'"));
+    });
 
     const instructorSections = document.querySelectorAll('.instructor-only');
     instructorSections.forEach(sec => {
@@ -901,9 +912,12 @@ function setMode(mode) {
 }
 
 function setChatMode(mode) {
+    /* Match by onclick argument, not event.target: card ai-btns call this
+       programmatically, and event.target left the bottom bar desynced. */
     currentChatMode = mode;
-    document.querySelectorAll('.chat-mode-btn').forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
+    document.querySelectorAll('.chat-mode-btn').forEach(btn => {
+        btn.classList.toggle('active', String(btn.getAttribute('onclick')).includes("'" + mode + "'"));
+    });
 }
 
 // ============ SIDEBAR FUNCTIONS ============
@@ -915,6 +929,7 @@ function setSidebarView(view) {
     });
 
     if (view === 'physicists') showCdsReturn(false);
+    showProgressReturn(false);
     document.getElementById('concepts-view').style.display = view === 'concepts' ? 'flex' : 'none';
     if (view === 'concepts') document.getElementById('concepts-view').style.flexDirection = 'column';
     document.getElementById('physicists-view').style.display = view === 'physicists' ? 'block' : 'none';
@@ -1082,6 +1097,17 @@ function addChatMsg(text, type) {
     d.textContent = text;
     const output = document.getElementById('chat-output');
     output.appendChild(d);
+    /* KaTeX was only auto-rendered at page load; render math in each new
+       non-user message so broker answers with \(..\) / \[..\] display properly. */
+    if (type !== 'user' && window.renderMathInElement) {
+        renderMathInElement(d, {
+            delimiters: [
+                {left: '\\(', right: '\\)', display: false},
+                {left: '\\[', right: '\\]', display: true},
+                {left: '$$', right: '$$', display: true}
+            ]
+        });
+    }
     output.scrollTop = output.scrollHeight;
 }
 
@@ -1519,6 +1545,7 @@ function buildProgressChart() {
             <div id="progress-detail" style="font-size:11px;color:#555;margin-top:8px;line-height:1.5"></div>
         </div>`;
     drawProgressChart();
+    wireProgressCanvas();
 }
 
 function drawProgressChart() {
@@ -1544,10 +1571,12 @@ function drawProgressChart() {
     }
 
     // Bars
+    _progressBarRects = [];
     kuhnProgress.forEach((d, i) => {
         const x = pad.left + i*(barW+6) + 3;
         const barH = (d.cumulative/maxVal)*gh;
         const y = pad.top + gh - barH;
+        _progressBarRects[i] = {x: x, y: y - 14, w: barW, h: barH + 14};
 
         // Cumulative bar (light)
         ctx.fillStyle = d.color + '33';
@@ -1587,13 +1616,59 @@ function drawProgressChart() {
     // Legend
     const detail = document.getElementById('progress-detail');
     if (detail) {
-        detail.innerHTML = kuhnProgress.map(d =>
-            `<div style="margin-bottom:6px;border-left:3px solid ${d.color};padding-left:6px"><strong style="color:${d.color}">${d.label.replace('\n',' ')}</strong><br><span style="font-size:10px">${d.problems}</span></div>`
+        detail.innerHTML = kuhnProgress.map((d, i) =>
+            `<div style="margin-bottom:6px;border-left:3px solid ${d.color};padding-left:6px${i > 0 ? ';cursor:pointer' : ''}"${i > 0 ? ` onclick="progressToPRS(${i-1})" title="Jump to ${d.label.split('\n')[0]}'s PRS triplets"` : ''}><strong style="color:${d.color}">${d.label.replace('\n',' ')}</strong><br><span style="font-size:10px">${d.problems}</span></div>`
         ).join('');
     }
 }
 
+/* ── Progress-bar → PRS list wiring (2026-06-11) ──
+   Era bars/legend boxes jump to that thinker's Kuhnian PRS list; a sticky
+   "Back to Progress chart" button appears ONLY on this path and is hidden
+   by any other navigation (setSidebarView hook). Era 0 (Pre-Newton) has no
+   physicist card and stays unlinked. */
+let _progressBarRects = [];
+
+function _progressBarHit(cv, e) {
+    const r = cv.getBoundingClientRect();
+    const mx = (e.clientX - r.left) * (cv.width / r.width);
+    const my = (e.clientY - r.top) * (cv.height / r.height);
+    return _progressBarRects.findIndex(b => b && mx >= b.x && mx <= b.x + b.w && my >= b.y && my <= b.y + b.h);
+}
+
+function wireProgressCanvas() {
+    const cv = document.getElementById('progress-canvas');
+    if (!cv) return;
+    cv.onclick = e => { const i = _progressBarHit(cv, e); if (i > 0) progressToPRS(i - 1); };
+    cv.onmousemove = e => { cv.style.cursor = _progressBarHit(cv, e) > 0 ? 'pointer' : 'default'; };
+}
+
+function progressToPRS(idx) {
+    setSidebarView('physicists');
+    showPhysicist(idx);
+    showProgressReturn(true);
+    const card = document.querySelectorAll('.physicist-card')[idx];
+    const head = card ? Array.from(card.querySelectorAll('.prs-section-head')).find(h => h.textContent.includes('PRS')) : null;
+    if (head) head.scrollIntoView({block: 'start'});
+}
+
+function showProgressReturn(on) {
+    let btn = document.getElementById('progress-return');
+    if (!btn) {
+        btn = document.createElement('button');
+        btn.id = 'progress-return';
+        btn.className = 'cds-return-btn';
+        btn.textContent = '← Back to Progress chart';
+        btn.onclick = () => setSidebarView('progress');
+        document.getElementById('physicists-view').prepend(btn);
+    }
+    btn.style.display = on ? 'block' : 'none';
+}
+
 // ============ RENDER ALL CONCEPTS ============
+// Instructor demo-room write-ups (ported from physics_explorer_candidate_2026-05-01.html, 2026-06-11)
+const INSTRUCTOR_DEMOS = {"newtons-laws": [{"title": "Atwood Machine", "html": "Two unequal masses over a pulley show \\(a = g(m_1-m_2)/(m_1+m_2)\\). Also: push two carts of different masses with same force spring to show \\(a \\propto 1/m\\).", "equipment": ["Pulley + masses", "Dynamics carts", "Spring scale"]}], "work-energy": [{"title": "Energy Ramp", "html": "Release ball from measured heights; use photogate to measure speed at bottom. Verify \\(mgh = \\frac{1}{2}mv^2\\). Also demonstrate pendulum returning to its original height.", "equipment": ["Inclined track", "Photogate", "Pendulum"]}], "momentum": [{"title": "Air Track Collisions", "html": "Gliders with magnetic bumpers (elastic) and Velcro (perfectly inelastic). Measure velocities with photogates before and after. Also: throw a ball and catch it while on a frictionless surface.", "equipment": ["Air track + gliders", "Photogates", "Velcro + magnets"]}], "angular-momentum": [{"title": "Rotating Platform", "html": "Student sits on rotating stool with dumbbells; pulling arms in increases angular speed (L = const). Roll objects of different moments down a ramp — compare arrival times.", "equipment": ["Rotating platform", "Dumbbells", "Inclined ramp + objects"]}], "simple-harmonic": [{"title": "Mass-Spring", "html": "Hang masses from spring, measure period vs. mass. Plot \\(T^2\\) vs \\(m\\) to get straight line with slope \\(4\\pi^2/k\\). Demonstrate resonance by driving at the natural frequency.", "equipment": ["Springs + mass hanger", "Stopwatch", "Motion sensor"]}], "gravitation": [{"title": "Orbital Simulation", "html": "Use a stretched rubber sheet with a heavy central mass to show orbital curves. Alternatively, use a large funnel with rolling marbles spiraling inward to mimic orbital decay.", "equipment": ["Rubber sheet + heavy sphere", "Large funnel + marbles"]}], "fluid-mechanics": [{"title": "Archimedes Overflow Can", "html": "Submerge object in overflow container; catch and weigh displaced water to equal measured buoyant force. Blow air between two hanging paper sheets to show Bernoulli attraction.", "equipment": ["Overflow container + scale", "Various density objects", "Two paper sheets"]}], "projectile-motion": [{"title": "Projectile Launcher", "html": "Launch ball horizontally and drop ball simultaneously; they hit the floor at the same time. Use carbon paper target to measure range vs. angle and verify range formula.", "equipment": ["Projectile launcher", "Carbon paper + target board", "Plumb bob"]}], "electric-fields": [{"title": "Van de Graaff", "html": "Charge generator creates dramatic sparks and causes hair to stand on end, demonstrating large static electric fields. Use hanging pith balls to show attraction/repulsion between charges.", "equipment": ["Van de Graaff generator", "Pith balls on thread", "Grounding strap"]}], "gausss-law": [{"title": "Faraday Cage", "html": "Place a radio or phone inside a metal mesh cage; signal is blocked. Demonstrate that charge resides on the surface of a conductor using a Faraday ice pail and electrometer.", "equipment": ["Metal mesh cage", "Faraday ice pail", "Electrometer"]}], "electric-potential": [{"title": "Equipotential Mapping", "html": "Place charged electrodes in a tray of slightly conducting liquid (or use conducting paper). Use a voltmeter to trace lines of equal potential, then draw field lines perpendicular to them.", "equipment": ["Conducting paper or shallow tray", "Power supply", "Voltmeter with probes"]}], "rc-circuits": [{"title": "RC Charging Curve", "html": "Wire a large capacitor (1 F supercap) in series with a resistor and battery; use a voltmeter to trace voltage vs. time and fit to exponential. Show effect of inserting dielectric into a parallel-plate capacitor on an electrometer.", "equipment": ["Supercapacitor (1 F)", "Resistor array", "Oscilloscope or data logger"]}], "dc-circuits": [{"title": "Breadboard Circuit Lab", "html": "Students build series/parallel resistor networks, predict equivalent resistance, measure with multimeter. Illuminate an LED with different voltages across a current-limiting resistor.", "equipment": ["Breadboards", "Resistors (assorted)", "Multimeters", "9V batteries"]}], "magnetic-fields": [{"title": "Iron Filings", "html": "Sprinkle iron filings on card above a bar magnet and current-carrying wire to visualize field lines. Use a Hall probe to measure the field at various distances from a wire and verify the \\(1/r\\) dependence.", "equipment": ["Bar magnets", "Iron filings", "DC power supply", "Hall probe + meter"]}], "faradays-law": [{"title": "Falling Magnet", "html": "Drop a magnet through a copper or aluminum tube; eddy currents induced by Faraday's law create opposing force, slowing descent dramatically. Wind a coil and connect to galvanometer to demonstrate induction.", "equipment": ["Copper tube", "Strong neodymium magnet", "Galvanometer + coil"]}], "maxwells-equations": [{"title": "Microwave Optics", "html": "Use 3 cm microwave source and detector to demonstrate reflection, refraction, and polarization — all consequences of Maxwell's equations at microwave frequencies.", "equipment": ["Microwave transmitter + receiver (3 GHz)", "Metal and dielectric blocks", "Polarizing grills"]}], "wave-equation": [{"title": "Slinky", "html": "Two students hold opposite ends of a stretched slinky; send pulses from each end and observe superposition at the center. Demonstrate transverse and longitudinal modes.", "equipment": ["Slinky or long spring", "Rope (5–10 m)"]}], "standing-waves": [{"title": "Chladni Plates", "html": "Mount a metal plate on a speaker driver; bow edges or vary frequency to reveal nodal patterns in sand. Also stretch a string over a guitar box and identify fundamental and harmonics with a pickup.", "equipment": ["Chladni plates + sand", "Function generator", "Speaker driver"]}], "sound-waves": [{"title": "Resonance Tube", "html": "Adjust water level in a graduated cylinder while holding a vibrating tuning fork above it; find resonance lengths to determine sound speed. Show beats with two tuning forks of slightly different frequency.", "equipment": ["Graduated cylinders + water", "Tuning forks (assorted frequencies)", "Rubber mallet"]}], "doppler-effect": [{"title": "Doppler Ball", "html": "Swing a battery-powered buzzer on a string in a circle overhead; students hear a wah-wah sound as the source alternately approaches and recedes. Use a Doppler ultrasound demo cart if available.", "equipment": ["Battery buzzer on 1 m string", "Optional: sonic motion sensor"]}], "refraction": [{"title": "Laser in Water Tank", "html": "Shine a red laser into a water-filled fish tank; add a little milk to make the beam visible. Demonstrate refraction, TIR at the far wall, and the critical angle. Pass light through a glass prism to show dispersion.", "equipment": ["Laser pointer (red)", "Rectangular aquarium + milk", "Glass prism"]}], "superposition": [{"title": "Double Slit with Laser", "html": "Shine a red (632 nm) laser through a double slit card (0.25 mm slit width, 0.5 mm separation); measure fringe spacing on far wall and compute \\(\\lambda = d\\Delta y/L\\). Show CD diffraction under white light.", "equipment": ["He-Ne or diode laser", "Double-slit card set", "Ruler + meter stick"]}], "polarization": [{"title": "Crossed Polarizers", "html": "Stack two polarizing sheets; rotate one from 0° to 90° and show transmission going from full to zero, following \\(\\cos^2\\theta\\). Insert a birefringent mineral (calcite) between crossed polarizers to reveal colors.", "equipment": ["Polarizing film sheets (2)", "Calcite crystal or cellophane", "Protractor"]}], "lenses": [{"title": "Optical Bench", "html": "Mount a candle (or LED), converging lens, and screen on an optical bench. Move the screen to find the sharp image; measure \\(d_o\\) and \\(d_i\\) to verify the thin lens equation. Build a simple telescope with two lenses.", "equipment": ["Optical bench with riders", "Converging lenses (f = 5, 10, 20 cm)", "Screen", "Light source"]}], "temperature-heat": [{"title": "Bimetallic Strip", "html": "Heat a bimetallic strip with a heat gun; it bends because the two metals have different thermal expansion coefficients. Also demonstrate linear expansion with a metal bar and expansion gauge.", "equipment": ["Bimetallic strip", "Heat gun", "Linear expansion apparatus"]}, {"title": "Glowing Metal", "html": "Use a variable power supply to heat a nichrome wire or electric heating element; observe it go from dark to red to orange-yellow, illustrating Wien's law. Use an IR thermometer to show that room-temperature objects radiate in the IR.", "equipment": ["Nichrome wire + variable supply", "IR thermometer", "Optical filters (red, orange)"]}], "first-law": [{"title": "Adiabatic Compression", "html": "Rapidly compress air in a clear bicycle pump or fire syringe containing a small piece of cotton; the cotton ignites from the temperature rise. Show isobaric heating by inflating a balloon over a flask of warming water.", "equipment": ["Fire syringe", "Cotton tinder", "Flask + balloon + hot water"]}], "entropy": [{"title": "Irreversibility", "html": "Mix hot and cold water and measure final temperature; compute entropy change of each portion and show total is positive. Drop ink into water and observe diffusion — never spontaneously un-diffuses.", "equipment": ["Thermometer", "Insulated cups", "Food coloring + water tank"]}], "heat-engines": [{"title": "Stirling Engine", "html": "Place a model Stirling engine on a hot coffee cup; it runs from the temperature difference. Measure input heat (via temperature) and output work (via load) to estimate efficiency and compare to Carnot limit.", "equipment": ["Model Stirling engine kit", "Thermometers (2)", "Small weights for load"]}], "kinetic-theory": [{"title": "Gas Pressure vs Temperature", "html": "Seal a fixed volume of air and immerse in ice water, room temperature, and boiling water baths; measure pressure with a gauge and verify \\(P \\propto T\\) (Gay-Lussac's law).", "equipment": ["Sealed flask + pressure sensor", "Ice bath + boiling water", "Data logger"]}], "phase-transitions": [{"title": "Liquid Nitrogen", "html": "Pour liquid nitrogen on the floor to show rapid boiling (boiling point −196°C at 1 atm). Freeze a banana and hammer a nail with it. Demonstrate triple point of CO₂ in a transparent cell if available.", "equipment": ["Liquid nitrogen dewar", "Safety gloves + face shield", "Optional: CO₂ triple-point cell"]}], "statistical-mechanics": [{"title": "Galton Board (Bean Machine)", "html": "Drop balls through a triangular array of pegs; the resulting distribution approximates a Gaussian (binomial at discrete level). This is the macroscopic version of the probabilistic microstates argument.", "equipment": ["Galton board or commercial probability demo", "Dice (large set)"]}], "time-dilation": [{"title": "Muon Lifetime", "html": "Present cosmic ray muon data: muons (lifetime 2.2 µs) travel ~600 m in lab frame before decaying. At \\(v \\approx 0.998c\\), time dilation gives \\(\\gamma \\approx 16\\), explaining observed ~10 km travel distance. Discuss GPS clock corrections as an applied example.", "equipment": ["Cosmic ray data sets (printed or displayed)", "Calculator"]}], "photoelectric-effect": [{"title": "Zinc Plate + UV", "html": "Charge a zinc plate negatively on an electroscope; shine UV light on it and watch leaves fall as electrons are ejected. Block with glass (absorbs UV) to show effect stops. Use a photoelectric apparatus to measure stopping voltage vs. frequency with LEDs or filters.", "equipment": ["Electroscope + zinc plate", "UV lamp", "Glass sheet (UV blocker)"]}], "de-broglie": [{"title": "Electron Diffraction Tube", "html": "Fire electrons at a polycrystalline graphite foil inside an evacuated tube; observe concentric diffraction rings on a fluorescent screen. Vary accelerating voltage to change \\(\\lambda\\) and observe ring size changing.", "equipment": ["Electron diffraction tube (e.g., Teltron 555)", "EHT power supply (5 kV)", "Ruler for ring diameter"]}], "bohr-model": [{"title": "Hydrogen Discharge Tube", "html": "Pass current through hydrogen gas in a discharge tube; view emission spectrum through a diffraction grating spectroscope; identify Balmer lines (H-alpha at 656 nm, H-beta 486 nm, H-gamma 434 nm) and compute \\(R_H\\) from their wavelengths.", "equipment": ["Hydrogen discharge tube", "High-voltage power supply", "Diffraction grating spectroscopes"]}], "quantum-tunneling": [{"title": "Evanescent Wave Tunneling", "html": "Press two 45-45-90 glass prisms together at the hypotenuse surfaces; shine a laser through one prism at total internal reflection angle; light \"tunnels\" into the second prism if the air gap is thin enough (evanescent wave analogy).", "equipment": ["Two glass prisms (45-45-90)", "Laser pointer", "Optical bench"]}], "heisenberg-uncertainty": [{"title": "Single Slit Diffraction", "html": "Shine a laser through progressively narrower slits; the diffraction pattern broadens as the slit narrows, directly demonstrating \\(\\Delta y\\Delta p_y \\sim h\\) (the slit confines \\(y\\)-position; the spread in the diffraction pattern shows \\(p_y\\) spread).", "equipment": ["Laser + adjustable single slit", "Screen (2 m distance)", "Ruler for pattern width"]}], "nuclear-physics": [{"title": "Geiger Counter", "html": "Pass a Geiger-Müller tube near various sources (thorium lantern mantle, uranium glass, background). Measure count rate vs. distance and show inverse-square law. Use paper/aluminum/lead to demonstrate different penetrating powers of \\(\\alpha\\), \\(\\beta\\), \\(\\gamma\\).", "equipment": ["Geiger-Müller counter", "Weak radioactive sources (licensed)", "Lead, aluminum, paper absorbers"]}], "particle-physics": [{"title": "Bubble Chamber Photos", "html": "Show historical bubble chamber photographs from CERN/Fermilab; identify particle tracks (curvature gives charge-to-mass ratio in magnetic field). Discuss how the top quark was inferred from decay products, never directly observed. Show Standard Model poster.", "equipment": ["Printed bubble chamber images", "Standard Model particle chart"]}], "vectors-coordinates": [{"title": "Physical Vector Addition", "html": "Use ropes and spring scales to physically pull a knot with two forces at known angles; measure resultant by third rope. Compare to vector addition prediction \\(R = \\sqrt{F_1^2+F_2^2+2F_1F_2\\cos\\theta}\\).", "equipment": ["Three spring scales", "Rope and knot", "Force table (optional)"]}], "diff-equations": [{"title": "RLC Circuit Analogy", "html": "An RLC series circuit obeys \\(L\\ddot{q}+R\\dot{q}+q/C=V(t)\\) — the electrical analog of a driven damped oscillator. Use a function generator to drive at resonance; observe voltage magnification with an oscilloscope.", "equipment": ["RLC circuit board", "Function generator", "Oscilloscope"]}], "fourier-analysis": [{"title": "Oscilloscope Harmonics", "html": "Connect a square-wave function generator to an oscilloscope; observe that a square wave has only odd harmonics by switching the oscilloscope to FFT mode. Listen to musical instruments through a spectrum analyzer to observe overtone structure.", "equipment": ["Function generator", "Oscilloscope with FFT", "Microphone + spectrum analyzer software"]}], "complex-numbers": [{"title": "AC Phase Shift", "html": "Wire a series RC circuit to a function generator; display generator voltage and capacitor voltage on a dual-channel oscilloscope; observe the 90° phase lead of current relative to voltage. Compute \\(|Z| = \\sqrt{R^2+(1/\\omega C)^2}\\).", "equipment": ["Function generator", "Dual-channel oscilloscope", "Resistors + capacitors"]}], "linear-algebra": [{"title": "Stern-Gerlach Analogy", "html": "Use polarizing filters to demonstrate quantum measurement: one filter prepares state, second at angle \\(\\theta\\) gives \\(\\cos^2\\theta\\) transmission (analogous to Born rule for spin). Third perpendicular filter after second gives nonzero transmission (measurement disturbs state).", "equipment": ["Polarizing filters (3)", "Light source", "Photometer"]}], "dimensional-analysis": [{"title": "Pendulum Dimensional Analysis", "html": "Challenge students to derive \\(T \\propto \\sqrt{L/g}\\) using only dimensional reasoning before deriving it from Newton's laws. Then measure period vs. length (5 data points) and verify power law \\(T^2 \\propto L\\).", "equipment": ["Pendulums of various lengths", "Stopwatch", "Graph paper or spreadsheet"]}], "calculus-physics": [{"title": "Soap Film Minimal Surface", "html": "Dip a wire frame between two parallel circular loops into soap solution; the soap film takes the catenoid shape (minimizes surface area — the variational problem). Vary frame separation to observe critical collapse of film.", "equipment": ["Wire frames (parallel rings)", "Soap solution"]}], "numerical-methods": [{"title": "Live Python Simulation", "html": "Run a short Python script (NumPy + Matplotlib) that integrates the double pendulum with Euler and RK4 and shows the divergence of trajectories for large \\(h\\), demonstrating chaos sensitivity and algorithm choice. Display on projected screen.", "equipment": ["Laptop with Python/Jupyter", "Projector"]}]};
+
 function renderAllConcepts() {
     const docPane = document.getElementById('doc-pane');
     docPane.innerHTML = '';
@@ -2288,12 +2363,17 @@ function renderAllConcepts() {
     ];
 
     concepts.forEach(concept => {
-        const instructorOnly = concept.objectives && concept.misconceptions ? `
+        const demoEntries = INSTRUCTOR_DEMOS[concept.id] || [];
+        const demoBlock = demoEntries.map(d => `
+                <h4>Demo \u2014 ${d.title}</h4>
+                <p>${d.html}</p>
+                <div class="equipment-tags">${d.equipment.map(e => `<span class="equipment-tag">${e}</span>`).join('')}</div>`).join('');
+        const instructorOnly = (concept.objectives && concept.misconceptions) || demoBlock ? `
             <div class="instructor-only">
                 <h4>Learning Objectives</h4>
                 <p>${concept.objectives}</p>
                 <h4>Common Misconceptions</h4>
-                <p>${concept.misconceptions}</p>
+                <p>${concept.misconceptions}</p>${demoBlock}
             </div>
         ` : '';
 
