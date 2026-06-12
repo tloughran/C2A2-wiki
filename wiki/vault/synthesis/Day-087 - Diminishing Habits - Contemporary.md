@@ -94,3 +94,6 @@ evidence_strength_summary: "Precision-weighted attentional learning (Friston), d
 tags: [synthesis, day/087, theme/habits, theme/habit-dynamics, theme/practice, theme/extinction, theme/infused-virtue]
 last_qc_at: "2026-06-08T06:30:18"
 last_qc_outcome: "pass"
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

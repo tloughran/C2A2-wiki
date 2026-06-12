@@ -70,3 +70,6 @@ Gratitude is the perspective-limited agent's honest recognition that the goods c
 ## Where this leaves us
 
 Q.106–107 opens a short cluster on the social virtues that fall under the wide sense of justice — the dispositions that govern how agents owe and render to one another beyond strict legal debt. Tomorrow's Day 172 pairs vengeance (Q.108) with truthfulness (Q.109): the agent's stance toward those who have *harmed* it, and the agent's obligation to render an accurate account of itself to others. Where gratitude governs the honest recognition of received good, truthfulness will govern the honest disclosure of oneself — and vengeance will pose the harder question of what an agent owes to one who has acted against the cooperative structure. The thread of accurate self-modeling and honest accounting, begun here, runs straight into both.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]]

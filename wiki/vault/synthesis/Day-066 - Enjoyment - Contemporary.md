@@ -82,3 +82,6 @@ Today's day articulates a load-bearing implication of the central theme: *the wo
 ## Where this leaves us
 
 Day 66 articulates the necessity-and-freedom structure and the perfect/imperfect modes of enjoyment. Tomorrow Habash takes us into Q.12 (intention) and Q.13 (choice) — the bridge between willing-the-end and willing-the-means. The contemporary frame engages with the *terminus-of-movement* structure of intention and the *practical-syllogism* structure of choice, with active inference's hierarchical-prior-conclusion frame as the leading resource.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

@@ -72,3 +72,6 @@ The central claim — that conscious agents are individuated by perspective-limi
 ## Where this leaves us
 
 Day 78 (Q.34–35) reverses ground: from the goodness-and-malice of pleasure to pain and sorrow *as such*. Q.35's distinction between bodily pain (apprehended externally, present-only) and sorrow (apprehended interiorly, regards past/present/future) maps cleanly onto the predictive-hierarchy distinction between exteroceptive and interoceptive prediction errors. The open thread we carry forward: under perspective-limitation, *higher-level* errors (sorrow) have larger downstream consequences than peripheral ones (pain) — Aquinas's claim that inward pain exceeds outward (Day 78's Q.35 a.7) gets its mathematical home.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]]

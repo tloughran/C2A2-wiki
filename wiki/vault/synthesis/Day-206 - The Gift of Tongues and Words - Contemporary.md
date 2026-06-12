@@ -58,3 +58,6 @@ This day is the project's thesis told as a *founding myth and its repair*. The p
 ## Where this leaves us
 
 The charisms continue their descent from knowledge toward act: from prophecy (knowledge of things), through tongues and the word (the delivery and inner completion of that knowledge across perspectives), toward the most public sign of all. Tomorrow Aquinas takes up *miracles* (Q.178) — the gratuitous grace that authenticates the word not in the hearer's understanding but in the world's matter. Carry forward the discipline established here: crossing the gap between perspectives is real and graced, but it is *for* loving, communal union; the codec is never the content, and the word is empty until it is taken up within.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]]

@@ -58,3 +58,6 @@ This is one of the most central-theme-resonant articles in the entire *Summa*. T
 ## Where this leaves us
 
 Q.7-8 establish that the assumed humanity is not only complete (Day 215) but *full of grace* — and that the fullness is not sealed in the individual but flows, as capital grace, into the whole body. Tomorrow (Day 217, "Christ's Knowledge") the treatise turns from grace to *knowledge*, asking what the assumed humanity *knew* — and there the project's central claim meets its sharpest test: a created, finite mind that truly *beholds* the divine essence yet cannot *comprehend* it. Where Q.8 showed the whole's fullness flowing down into limited members, Q.9-10 will show the limited mind looking up — seeing the whole truly, yet, because finite, never exhaustively. The open thread to carry forward: if capital grace is the loving-unity telos flowing *down* from the Head, the beatific-but-non-comprehensive vision of Q.10 is the same telos seen from *within* a limited perspective looking up — and the project should watch whether the two directions are one motion described from two ends.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

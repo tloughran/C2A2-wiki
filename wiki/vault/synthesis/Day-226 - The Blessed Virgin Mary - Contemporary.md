@@ -58,3 +58,6 @@ This is the day the project's deepest premise appears *not* as a claim about Chr
 ## Where this leaves us
 
 Q.27-28 show a tradition perceiving, over centuries, more of the whole than even Aquinas could alone — the project's engine in miniature — while establishing Mary's fullness of grace and ever-virginity. Tomorrow (Day 227, "The Annunciation") the *Summa* turns to the *Annunciation* (Q.29-30): Mary's free *act of faith* and her *fiat* — "be it done unto me according to thy word" — received, Aquinas says, "on behalf of humankind." The thread to carry forward: having watched a tradition exceed a single perspective, watch the Annunciation for the complementary moment — a *single* limited perspective freely consenting, on the community's behalf, to the One who sees the whole.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

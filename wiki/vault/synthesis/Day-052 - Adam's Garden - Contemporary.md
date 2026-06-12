@@ -75,3 +75,6 @@ central_theme_thread: "Day 52 carries the central theme through the cognitive an
 last_qc_at: "2026-06-07T08:20:28"
 last_qc_outcome: "pass"
 tags: [synthesis, day/052, theme/tabula-rasa, theme/embodied-cognition, theme/temple-cosmology, theme/substrate-prior-to-locale, theme/perspective-limitation]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]]

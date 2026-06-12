@@ -72,3 +72,6 @@ The perspective-limited agents who would compute loving unity from within their 
 ## Where this leaves us
 
 Q.98–99 raises the question of what makes a community's binding mechanisms binding. Tomorrow's Q.100–101 on simony and piety pushes the same question into a different domain: what happens when binding spiritual goods are treated as if they were exchangeable, and what is the proper form of debt that one owes to the sources of one's own being? The pair sets up the larger question for the rest of II-II's coverage of religion: how does a finite community get the *direction* of debt right between God, family, country, and the strangers whose hospitality it has received?
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

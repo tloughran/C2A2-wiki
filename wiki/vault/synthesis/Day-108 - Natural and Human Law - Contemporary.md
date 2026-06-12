@@ -99,3 +99,6 @@ The "work out your salvation in fear and trembling" (Phil 2:12) attaches here to
 ## Where this leaves us
 
 Tomorrow (Day 109, Q.96-97) examines the *power* of human law (scope, limits, what binds conscience) and how human laws *change*. The Wolfram-irreducibility insight gets sharper there: law-change is unavoidable because local determinations cannot be fixed in advance; but Aquinas already sees that *change itself has costs* — the binding force of law depends on perceived stability. This is the Schelling-point / convention-as-Schelling-point insight medievally. Open thread: how does the "law as locally-determined coordination" reading interact with Aquinas's claim that *unjust* laws are not laws at all (Q.95 a.2)? On a pure coordination-scheme account, *any* stable scheme would be a "law"; the natural-law alignment condition is what rules out that conclusion. The work is to articulate *what kinds* of alignment-violations rise to the level of "not a law."
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/wolfram/prs_triplets|Wolfram PRS]]

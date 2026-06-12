@@ -85,3 +85,6 @@ evidence_strength_summary: "Threatened-egotism / narcissism-aggression literatur
 tags: [synthesis, day/084, theme/anger, theme/pride, theme/slight, theme/narcissistic-rage, theme/justice-aspect]
 last_qc_at: "2026-06-08T22:29:07"
 last_qc_outcome: "rewrote"
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

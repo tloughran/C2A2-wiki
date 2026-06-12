@@ -68,3 +68,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-06T22:31:35"
 last_qc_outcome: "pass"
 tags: [synthesis, day/018, theme/trinity, theme/father, theme/son, theme/word, theme/internal-relations, theme/principle-not-cause]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]]

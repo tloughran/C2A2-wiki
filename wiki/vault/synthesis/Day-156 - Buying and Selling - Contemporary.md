@@ -64,3 +64,5 @@ Exchange is the central claim in economic form. Each agent sees only their corne
 
 Tomorrow (Day 157, Q.78-79) Aquinas turns to *usury* — the case where the medieval bright line ("selling something that doesn't exist") meets the most substantial modern qualification (money is no longer a pure measure but participates in productive capital). The Day 156 framework — real worth, interfacing money, distributed market-cognition — supplies exactly the tools needed to draw the contemporary line carefully.
 
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

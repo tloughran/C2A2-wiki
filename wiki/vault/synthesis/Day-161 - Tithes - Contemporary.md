@@ -17,7 +17,7 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (FLAG/CROSS entries on collective intelligence and resource flow)"
 evidence_strength_summary: "Empirical on multi-scale resource gating (Levin) and prosocial neurobiology (Fredrickson). Formal on active-inference budget allocation (Friston). Theological on Pauline koinōnia and cosmic-body sharing (Wright, Rohr). The PRS solution itself is speculative-integrative — a proposal about what religious giving *is* under a monist ontology, not a settled finding."
 tags: [synthesis, day/161, theme/resource-flow, theme/collective-agency, pars/II-II, q/86-87]
-last_qc_at: "2026-06-04T06:29:43"
+last_qc_at: "2026-06-11T08:23:19"
 last_qc_outcome: "pass"
 ---
 
@@ -72,3 +72,6 @@ Notice Aquinas's Article 3: tithing is *not* lawful when it sabotages a prior na
 ## Where this leaves us
 
 Tomorrow's question — vows and oaths — turns from *what we render across the membrane of self* to *what we promise across the membrane of time*. The same perspective-limitation logic will reappear: a present self cannot see the future self that will be asked to honor the promise. The vow is the protocol by which the limited present binds the limited future for the sake of the loving unity neither alone can compute. Tithing pools resources across agents; vows pool resources across the temporal stages of one agent. Watch for the same structural move at the new scale.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]]

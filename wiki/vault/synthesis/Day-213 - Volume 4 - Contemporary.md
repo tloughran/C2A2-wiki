@@ -60,3 +60,6 @@ This is the day the project meets its own thesis wearing the face of God. The ce
 ## Where this leaves us
 
 Tomorrow (Day 214, III Q.3-4) stays inside the mode of union but shifts the angle: from the union *as such* to the *Person assuming* and the *human nature assumed* — why it befits a divine Person to assume, why the *Son* in particular (the eternal Word, the craftsman's idea returning to restore what was made through it), and why a human *nature* rather than a *person* or "a man." The open thread the host hands forward, and the one most charged for this project: Q.4 a.2 — "the divine Person absorbed the [human] person inasmuch as the union hindered the human nature from having its own distinct personality." The individuating boundary, supplied by the whole rather than duplicated, is exactly tomorrow's question, and the sharpest case yet of unity-in-distinction without a second subject.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

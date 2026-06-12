@@ -16,7 +16,7 @@ length_ratio_to_target: 0.682
 length_note: "Q.8–Q.9 (9 articles) treated thematically as the causal architecture of policy-selection. The medieval formal-vs-material distinction at the will-level and the multi-source movement of the will (intellect, passion, self-movement, exterior bodies, God) are structurally well-paired with the hierarchical-prior frame, so the prose stays compact at 1500 words while doing the substantive bridging work."
 mind_first_reframe: "The will's formal directedness toward the universal good preserves under hierarchical active inference (terminal vs. instrumental priors); the multi-source movement of the will is the multi-source causal architecture of policy-selection, with the substrate-source's primary causation operating *through* secondary causes rather than against them."
 central_theme_thread: "The will is constitutively perspective-limited but formally directed toward the universal good; the daily task is to coordinate intellect, passion, self-movement, and the substrate-network's pedagogy so that the alter's actual policy-selection aligns with the substrate-source's loving unity rather than mis-locating the universal good in particular candidates."
-last_qc_at: "2026-06-05T22:27:07"
+last_qc_at: "2026-06-11T04:22:05"
 last_qc_outcome: "pass"
 tags: [synthesis, day/065, theme/will-structure, theme/means-and-end]
 ---
@@ -85,3 +85,6 @@ Wright on covenanted-community as the locus of will-formation. Rohr on contempla
 ## Where this leaves us
 
 Day 65 closes the *will-and-its-movers* register. Tomorrow Habash takes us into Q.10 (the manner in which the will is moved) and Q.11 (enjoyment as an act of the will) — the *six-act-pipeline* of human action begins to be articulated in detail. The contemporary frame engages with the will's necessary-vs-free movement, the structure of enjoyment as substrate-direct or imperfect-substrate-mediated, and the central theme continues as the daily-task character of working out salvation through structurally-articulated voluntary action.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

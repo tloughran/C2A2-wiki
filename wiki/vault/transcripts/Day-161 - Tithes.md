@@ -15,7 +15,7 @@ fetched_at: 2026-05-28
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-161 - Tithes - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-05-28T12:23:32"
+last_qc_at: "2026-06-11T08:23:19"
 last_qc_outcome: "rewrote"
 tags: [summa, day/161, pars/II-II, q/86–87]
 ---
@@ -24,9 +24,11 @@ tags: [summa, day/161, pars/II-II, q/86–87]
 
 Austin Habash's Day 161 episode of the *Summa* podcast covers Aquinas's Secunda Secundae, Q.86–87.
 
-[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa nira podcast, where we study St. Thomas Aquinas's Summa
+> Typo cleanup (QC 2026-06-11): Summa nira -> Summa in a Year (podcast name, both intro occurrences; ASR garble, fresh ASR reads "Sumanir"); theologia -> Theologiae.
 
-theologia in a way simple and insightful for anyone to understand. The Summa nira podcast is brought to you by Think Catholic. Taking two questions of the
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
+
+Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa Day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 161. So let's get started.
 

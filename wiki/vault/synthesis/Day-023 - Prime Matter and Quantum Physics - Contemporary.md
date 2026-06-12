@@ -104,3 +104,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-10T06:27:01"
 last_qc_outcome: "pass"
 tags: [synthesis, day/023, theme/trinity, theme/mission, theme/sanctifying-grace, theme/creation, theme/first-cause, theme/prime-matter, theme/morphogenetic-teleology, theme/four-causes, theme/pivot-to-creation]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

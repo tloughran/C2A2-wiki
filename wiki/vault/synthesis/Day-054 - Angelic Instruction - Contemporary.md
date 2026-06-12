@@ -87,3 +87,6 @@ central_theme_thread: "Day 54 reaches the contemplative keystone of the divine-g
 last_qc_at: "2026-06-07T08:20:28"
 last_qc_outcome: "pass"
 tags: [synthesis, day/054, theme/substrate-action, theme/will-without-coercion, theme/miraculous, theme/interior-intimo-meo, theme/bonum-diffusivum-sui]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

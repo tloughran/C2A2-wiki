@@ -46,7 +46,7 @@ This is what Stump's second-personal-knowing framework gives us as the structura
 
 ## Bridges
 
-- **Stump, second-personal knowing (PRS-01, PRS-03; CROSS-018/022/051/052).** Q.29's *person as subsistent rational individual* and Q.30's *three subsistent relational persons* find their mature analytic-cognitive home in Stump's framework: second-personal knowing as a fundamental cognitive mode that cannot be reduced; the substrate's intrinsic mode as eternally second-personal-relational-loving. *Mature analytic case; theological-philosophical; the strongest contemporary mind-monist resource on Q.29–30.*
+- **Stump, second-personal knowing (PRS-05, PRS-11 in the Stump-tradition wiki; CROSS-018/022/051/052).** Q.29's *person as subsistent rational individual* and Q.30's *three subsistent relational persons* find their mature analytic-cognitive home in Stump's framework: second-personal knowing as a fundamental cognitive mode that cannot be reduced; the substrate's intrinsic mode as eternally second-personal-relational-loving. *Mature analytic case; theological-philosophical; the strongest contemporary mind-monist resource on Q.29–30.*
 - **Kastrup, analytic idealism (PRS-01, PRS-02; CROSS-014/022).** Q.29's alter-as-particular-subsistent-rational-thing finds the contemporary metaphysical home in dissociation-within-monism: alter as dissociative configuration within mind-at-large with its own boundary, generative model, and rational operation. Q.30's relations-as-modal-not-as-parts is structurally Kastrup's central move. *Philosophical-conceptual.*
 - **Friston, free-energy framework (PRS-04, PRS-08; CROSS-027).** Q.30 a.2's three relational positions arising from two intrinsic operations finds the formal cousin in the FEP-generative-model structural positions (prior-source, posterior-as-known, active-stance-issuing-from-prior-and-posterior). *Formal framework; substrate-scale extrapolation philosophical.*
 - **Hoffman, trace logic; conscious-agent networks (PRS-03, PRS-04; CROSS-032/033).** Q.30 a.1's *plurality of relations without composition* finds the formal-mathematical frame in trace-logic boundary structures: integrated agent systems with internal real relations that do not entail decomposition into independent parts. *Formal tool; structural resonance.*
@@ -75,7 +75,7 @@ length_actual_words: 3001
 length_ratio_to_target: 1.364
 length_note: "Substantially over medium-tier upper tolerance (1.364 vs 1.10 target ceiling; ratio exceeds the ±25% verifier flag at 1.25). Flagged per the substantive-integrity-trumps-word-count policy clause: Q.29–30 are the metaphysical scaffolding of personhood-and-plurality where mind-monism's resources (Stump's second-personal knowing, Kastrup's dissociation-within-monism, Hoffman's trace logic) actually strengthen the medieval doctrine's intelligibility; the synthesis takes time to display each contact. QC may consider trimming the predication-grammar threads of Q.31 a.3-4 if a closer-to-target rewrite is preferred (these are mostly philosophical scaffolding without strong central-theme load)."
 karpathy_wiki_sources:
-  - "wiki/traditions/stump/wiki.md (PRS-01, PRS-03; CROSS-051/052 — second-personal knowing as fundamental cognitive mode; the substrate's intrinsic mode as eternally second-personal-relational-loving)"
+  - "wiki/traditions/stump/wiki.md (PRS-05, PRS-11 in the Stump-tradition wiki; CROSS-051/052 — second-personal knowing as fundamental cognitive mode; the substrate's intrinsic mode as eternally second-personal-relational-loving)"
   - "wiki/traditions/kastrup/wiki.md (PRS-01, PRS-02 — dissociation-within-monism; alter as dissociative configuration with its own boundary; relations-as-modal-not-as-parts)"
   - "wiki/traditions/friston/wiki.md (PRS-04, PRS-08 — three positions from two intrinsic operations within a single generative model)"
   - "wiki/traditions/hoffman/wiki.md (PRS-03, PRS-04; trace logic — plurality of relations without composition; integrated agent systems with internal real relations)"
@@ -91,3 +91,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-06T22:31:34"
 last_qc_outcome: "pass"
 tags: [synthesis, day/016, theme/personhood, theme/subsistent-relations, theme/second-personal-knowing, theme/dissociation-within-monism, theme/perichoresis]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

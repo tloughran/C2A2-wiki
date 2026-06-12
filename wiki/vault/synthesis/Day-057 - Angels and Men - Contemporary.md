@@ -78,3 +78,6 @@ The mission-of-angels register (Q.112) extends this: substrate-network agents ar
 ## Where this leaves us
 
 Day 57 articulates the *channels of substrate-network influence* on the embodied alter and reaffirms the central-theme constraint on will-orientation. Tomorrow brings Q.113 (guardianship of good angels) and Q.114 (assault of the demons) — the positive and negative dispositional-formation registers of the same channels. The substrate-network's pedagogical care meets its dark counterpart in the demonic-influence sub-network's predatory operation, and the embodied alter is the locus where those two influence-fields contend.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]]

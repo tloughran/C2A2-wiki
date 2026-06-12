@@ -65,3 +65,6 @@ Loving unity is the goal toward which each limited agent computes — and libera
 ## Where this leaves us
 
 Tomorrow's Q.118–119 turns the screw: covetousness and prodigality, the two ways the affection toward goods goes wrong by excess and defect. If liberality is the rightly-sized self, covetousness is its pathological contraction — and there the bridge to Levin's account of defection from the cooperative whole becomes sharpest. Open thread: whether "self-boundary scale" can be made to do real work as a *measure* of a virtue, or whether it remains an illuminating metaphor.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]]

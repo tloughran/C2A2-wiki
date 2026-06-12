@@ -20,7 +20,7 @@ karpathy_wiki_sources:
   - "master/cross_program_index.md CROSS-005 (love); master/paradigm_flags.md FLAG-04 (perspective + suffering)"
 evidence_strength_summary: "Each of Aquinas's remedies (pleasure, tears, friendship, contemplation, sleep/baths) has identifiable contemporary mechanisms — vagal stimulation, emotional disclosure, social co-regulation, default-mode-network modulation, parasympathetic recovery — all empirically robust. Q.39 a.4 (greatest evil = desensitization) is a theological/ethical claim that gains support from the predictive-processing model of model-collapse but is fundamentally a normative judgment supported by the Wright/Rohr/Stump triangulation."
 tags: [synthesis, day/080, theme/remedies, theme/integration, theme/greatest-evil]
-last_qc_at: "2026-06-04T18:28:06"
+last_qc_at: "2026-06-11T20:20:48"
 last_qc_outcome: "pass"
 ---
 
@@ -87,3 +87,6 @@ Q.39 a.4's "greatest evil is to be too evil to sorrow" is the central theme's ne
 ## Where this leaves us
 
 Day 81 turns to Q.40 — hope and despair. We have moved through delight (76), mixed valence (77), sorrow and pain (78), the effects of unintegrated sorrow (79), and now the remedies and the bracing claim that desensitization is worse than suffering (80). The next region is the irascible passions — passions of pursuit and avoidance under difficulty. *Hope* is where the future-oriented appetite re-engages after sorrow's lessons. The open thread we carry into 81: hope is now empirically expressible as *expected free energy with a non-trivial pragmatic-value gradient* — a generative model in which the preferred state remains reachable. The remedies of Day 80 are precisely the resources by which an agent rebuilds that gradient.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]]

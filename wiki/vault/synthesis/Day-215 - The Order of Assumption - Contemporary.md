@@ -58,3 +58,6 @@ The treatise's opening movement closes by guarding two things the project cares 
 ## Where this leaves us
 
 The opening movement of the Incarnation treatise is complete: *that* it was fitting (Q.1), *how* the union works (Q.2), *who* assumes and *what* is assumed (Q.3-4), and *which parts* in *what order* (Q.5-6). Tomorrow the *Summa* turns to what the union *implies* for Christ — the perfections and defects of the assumed humanity, beginning (Day 216, "Christ as Head") with the grace of Christ as Head of the Church, where the cosmic-scope reframe (Rohr) and the corporate-person metaphysics (the bridges-file note on Stump's hylomorphic "body of Christ," P14-P15) will move from the metaphysics of the union to its extension into the whole people united with God.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

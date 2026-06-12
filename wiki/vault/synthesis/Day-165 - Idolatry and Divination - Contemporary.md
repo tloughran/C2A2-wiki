@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "wiki/traditions/rohr/wiki.md (Universal Christ: image and signification; contemplative apophasis)"
 evidence_strength_summary: "Formal-strong on computational irreducibility of generic systems (Wolfram) and on active-inference forecasting (Friston). Empirical-strong on saint-veneration as community memory anchoring (Fredrickson positivity-resonance lineage at the cultural level). Theological-primary on Pauline idolatry diagnosis (Wright) and on contemplative apophasis (Rohr). The integrative claim — that pre-modern 'demonic divination' maps onto contemporary disinformation channels — is suggestive, not proven."
 tags: [synthesis, day/165, theme/legitimate-information-source, theme/icon-vs-terminus, theme/contingent-future, pars/II-II, q/94-95]
-last_qc_at: "2026-06-04T06:29:44"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-11T14:27:12"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 165 — Idolatry & Divination (Contemporary Parallel)
@@ -83,15 +83,18 @@ The central theme runs strongly here. The perspective-limited agent cannot, from
 
 ## Bridges
 
-- **PRS-01 and PRS-04 in the Hoffman-tradition wiki** (interface theory; icons-vs-termini) — central reframe of the idolatry/veneration distinction. *Computational-formal, contested-empirical, primary on the icon-question.*
+- **PRS-01 and PRS-04 in the Hoffman-tradition wiki** (interface theory; icons-vs-termini) — central reframe of the idolatry/veneration distinction. *Computational-formal, contested-empirical; the icon-question turns on it.*
 - **PRS-04 in the Levin-tradition wiki** (multi-scale agency; communities-of-memory as longer-body agents) — saints as morphic anchors in the church-body. *Empirical-biological, strong; cultural-extrapolation, suggestive.*
 - **Kastrup analytic-idealist population of the cosmos** — metaphysical constraint that idolatry can only ever mis-direct, never succeed. *Metaphysical, speculative.*
 - **PRS-02 in the Wolfram-tradition wiki** (computational irreducibility) — central formal anchor for why the contingent voluntary future is creaturely-opaque. *Formal, strong.*
 - **PRS-02 and PRS-04 in the Friston-tradition wiki** (active inference; legitimate prediction under uncertainty) — formal account of what licit forecasting looks like. *Formal, accumulating empirical support.*
-- **Wright on Romans 1:18–25** for the Pauline idolatry diagnosis, and **Wright in *Jesus and the Victory of God*** on prophecy-as-revelation-of-contingent-divine-action — *theological, primary on the scriptural loci.*
+- **Wright on Romans 1:18–25** for the Pauline idolatry diagnosis, and **Wright in *Jesus and the Victory of God*** on prophecy-as-revelation-of-contingent-divine-action — *theological; both scriptural loci are load-bearing.*
 - **Carroll, *The Big Picture*** on layered ontology and the discipline of keeping prediction-claims at their proper level. *Naturalist-philosophical, suggestive.*
-- **Rohr, *The Universal Christ*** on the apophatic discipline that exceeds every legitimate icon. *Theological-mystical, secondary anchor.*
+- **Rohr, *The Universal Christ*** on the apophatic discipline that exceeds every legitimate icon. *Theological-mystical.*
 
 ## Where this leaves us
 
 Tomorrow's question turns to *the temptation and presumption of God* — vices that continue the trajectory of misdirected religious motion. The structure will be familiar: the same perspective-limited agent, the same machinery of religious life, misdirected at a different angle. Watch for the appearance of the *self-test* dynamic, where the worshipper turns the divine prerogative back into a tool for her own verification. The arc of these II-II questions on religion is increasingly a diagnostic of *what religious life looks like when the agent forgets her perspective is limited*.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]]

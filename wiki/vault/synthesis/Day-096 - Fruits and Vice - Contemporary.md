@@ -73,3 +73,6 @@ And the way back is the way Aquinas already named: the *fruits* are the phenomen
 ## Where this leaves us
 
 Day 96 places us at the hinge between the long virtues treatise (closed today, with its experiential register named) and the long vices treatise (opened today, with the structural definition stated). Aquinas's instinct — *fruits and vice in one question-pair* — is itself a synthesis move: do not let the structural account of virtue lose the *phenomenal* account, and do not let the *contrary-to-nature* account of vice lose its connection to the structural account of virtue it is contrary to. The contemporary frame finds Aquinas right on both counts and finds itself, at low-to-medium confidence, able to give a unified mind-monism reading of what is going on. Tomorrow opens the deep treatise on *distinction* and *comparison* of sins — Day 97 must develop the structural account of how mis-aligned policies *differ from each other*, and what makes one mis-alignment *graver* than another.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

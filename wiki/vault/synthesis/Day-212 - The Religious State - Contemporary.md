@@ -58,3 +58,6 @@ This is the day the project's most demanding claim is *enacted*. The central the
 ## Where this leaves us
 
 Tomorrow the *Summa* turns the page — literally, "Volume 4" — and opens the Tertia Pars on the Incarnation (Day 213, III Q.1-2). The treatise on the religious life that has occupied these days ends with the self-offering of a limited human perspective; the next opens with the *reverse* motion — the unlimited perspective taking on a limited one. The open thread the host hands forward: obedience "even unto death" was named today as the pattern the religious imitate; tomorrow we meet the One imitated, and the question of how two natures can be one person without confusion will turn out to be the deepest test yet of the project's "unity-in-distinction."
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

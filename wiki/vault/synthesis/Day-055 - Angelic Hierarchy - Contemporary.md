@@ -93,3 +93,6 @@ central_theme_thread: "Day 55 carries the central theme through the multi-agent 
 last_qc_at: "2026-06-10T04:26:06"
 last_qc_outcome: "pass"
 tags: [synthesis, day/055, theme/angelic-hierarchy, theme/substrate-network, theme/multi-scale-agency, theme/eschatological-society, theme/perspective-limitation]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]]

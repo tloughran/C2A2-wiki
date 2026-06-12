@@ -81,3 +81,6 @@ Perspective-limitation individuates agents. Each agent's interface — its embod
 ## Where this leaves us
 
 Q.68 tomorrow turns to the **gifts of the Holy Spirit** and the **Beatitudes** — the Sermon-on-the-Mount territory where Wright and Rohr become unavoidable. Today's persistence-claim about charity sets up tomorrow's question: how does the agent who has not-yet attained the un-limited perspective receive *more-than-natural reasoning* from the conscious whole, in real time? Aquinas's answer is the seven gifts — dispositions to be *moved* by the Spirit. The contemporary frame will read this as *top-down precision-weighting from the unified level*, and the Beatitudes as the empirical signature of an agent operating under those scaffolded priors.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

@@ -84,3 +84,6 @@ evidence_strength_summary: "Active-inference and broaden-and-build are empirical
 tags: [synthesis, day/081, theme/hope, theme/despair, theme/irascible-passions, theme/policy-precision]
 last_qc_at: "2026-06-08T22:29:06"
 last_qc_outcome: "rewrote"
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

@@ -62,3 +62,6 @@ The project's telos is loving unity among limited perspectives, and both halves 
 ## Where this leaves us
 
 This closes the lust questions and the continence pivot, completing the long temperance descent's treatment of the bodily appetites. What follows in the treatise turns to the parts of temperance bearing on the will and spirit — clemency, meekness, modesty, humility (Q.157 ff.) — where the override-vs-alignment distinction sharpened here will reappear as the difference between restraining anger and being free of disordered anger. Open thread: the continence→temperance ripening claim ("practiced override retrains the model") is the most reusable result in this stretch and the one most worth testing; a later synthesis on habituation and the acquisition of virtue (I-II Q.49–55, revisited) should pick it up and pair it explicitly with the Friston account of habit learning and precision relearning.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]]

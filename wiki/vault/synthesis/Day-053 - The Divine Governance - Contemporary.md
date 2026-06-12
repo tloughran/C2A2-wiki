@@ -86,3 +86,6 @@ central_theme_thread: "Day 53 carries the central theme through the *substrate's
 last_qc_at: "2026-06-07T08:20:28"
 last_qc_outcome: "pass"
 tags: [synthesis, day/053, theme/governance, theme/creatio-continua, theme/variational-principle, theme/substrate-monism, theme/agency-at-scale]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

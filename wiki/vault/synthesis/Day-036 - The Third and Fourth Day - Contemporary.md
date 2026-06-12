@@ -58,3 +58,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-10T00:24:56"
 last_qc_outcome: "pass"
 tags: [synthesis, day/036, theme/genesis, theme/temple-cosmology, theme/morphogenesis, theme/luminaries, theme/staged-differentiation]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]]

@@ -87,3 +87,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-07T04:24:28"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/040, theme/faculties, theme/active-inference, theme/cortical-columns, theme/hemispheric-modes, theme/master-and-emissary, theme/interior-senses, theme/cognitive-architecture]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]]

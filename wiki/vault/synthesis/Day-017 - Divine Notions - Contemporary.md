@@ -46,7 +46,7 @@ Wright's critical realism gives the contemporary methodological idiom: real-but-
 
 ## Bridges
 
-- **Stump, faith-as-knowledge-of-persons; second-personal knowing (PRS-01, PRS-03; CROSS-018/022/051/052).** Q.32's *Trinity given by revelation, not derived by reason* finds the analytic-philosophical home in Stump's frame: faith is a real cognitive mode, second-personal-receptive-relational, irreducible to propositional first-person reasoning. *Mature analytic case; the bridges file names this work for the epistemological discipline of Day 17.*
+- **Stump, faith-as-knowledge-of-persons; second-personal knowing (PRS-05, PRS-11 in the Stump-tradition wiki; CROSS-018/022/051/052).** Q.32's *Trinity given by revelation, not derived by reason* finds the analytic-philosophical home in Stump's frame: faith is a real cognitive mode, second-personal-receptive-relational, irreducible to propositional first-person reasoning. *Mature analytic case; the bridges file names this work for the epistemological discipline of Day 17.*
 - **Wright, *The New Testament and the People of God*; critical realism (canonical).** Q.32's *receptive epistemology vs. deductive proof* finds the contemporary methodological idiom in critical realism: real-but-perspectival, tradition-embedded knowing; the substrate-scale claims as receptively held within faithful improvisation. *Methodological + scriptural-historical.*
 - **Rohr, order-disorder-reorder; *Falling Upward* (canonical).** Q.32's epistemological discipline of *receiving rather than deriving* receives the developmental-contemplative framing: the alter's first-order confidence is disrupted by substrate-scale questions and reorganized in a deeper mode that holds reason-and-revelation together. *Contemplative-theological.*
 - **McGilchrist, *The Master and His Emissary*; right-hemispheric receptivity (CROSS-020/041/052).** Q.32's epistemological mode of *receptive coherence rather than deductive proof* finds the cognitive substrate in right-hemispheric whole-grasping; the alter's appropriate stance toward substrate-scale claims is right-hemisphere-led with left-hemisphere-supporting analytical articulation. *Cognitive-empirical.*
@@ -95,3 +95,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-06T22:31:34"
 last_qc_outcome: "pass"
 tags: [synthesis, day/017, theme/divine-notions, theme/reason-and-revelation, theme/critical-realism, theme/faith-as-knowledge, theme/productive-coherence, theme/receptive-epistemology]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

@@ -16,8 +16,8 @@ evidence_strength_summary: "Aquinas's reading of sacrifice as natural-law univer
 mind_first_reframe: "Aquinas: sacrifice is whatever is done for the honor properly due to God, with the *inner* sacrifice (the offered will) as the substance and the *outer* sign as its manifestation; sacrifice is rooted in natural law and offered by every people. The mind-monist frame inherits this directly: the offered will is the alter's active alignment with the field (the inner reality); the bodily and material sign is the alter's extension of that alignment into the polity's shared apparatus of meaning-making (the outer ritual). Augustine's "every work done that we may cling to God in holy fellowship is a true sacrifice" is the central claim stated almost verbatim: any action of the limited perspective that effects its alignment with the whole is, by that fact, a sacrifice."
 central_theme_thread: "Adoration and sacrifice are the embodied form of the alignment Day 159's prayer named in interior address. Bodily prostration (Q.84) and material offering (Q.85) are not separate acts added to the interior alignment but its enactment in the substrate the limited perspective actually is — flesh and matter. The central claim is that loving unity is the goal toward which each perspective computes; adoration and sacrifice are the perspective's acknowledgment of that goal made bodily, with the body as the part of the polity that materially extends the orientation into the shared field. The cross — the definitive sacrifice in Wright's and Rohr's readings — is then the central claim's deepest case: the whole entering the part's suffering to draw it into the alignment by absorbing its defection rather than excising it (the theme Day 150 reached in the death-penalty question)."
 tags: [synthesis, day/160, theme/sacrifice-as-embodied-alignment]
-last_qc_at: "2026-06-10T22:27:06"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-11T08:23:19"
+last_qc_outcome: "pass"
 ---
 
 # Day 160 — Contemporary Parallel: Adoration, Sacrifice, and the Body's Alignment
@@ -64,3 +64,5 @@ Adoration and sacrifice are the embodied form of the alignment the central claim
 
 The justice treatise has pivoted (Day 158) into religion and opened its interior (Day 159 — devotion and prayer) and its embodied exterior (Day 160 — adoration and sacrifice). The next weeks (Days 161+) will unfold the further external acts of religion: oaths and vows (Q.86-91), the sins opposed to religion (idolatry, simony, sacrilege, blasphemy — Q.92-100), then through the social-virtues annexed to justice (piety, observance, gratitude, truthfulness, friendship, liberality — Q.101-119), then through fortitude (Q.123-140) and temperance (Q.141-170), and finally the contemplative life proper (Q.171-189) before the Tertia Pars on Christ. The pivot completed in the past three days will continue to do its work as the treatise unfolds.
 
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

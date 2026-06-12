@@ -93,3 +93,6 @@ evidence_strength_summary: "Cognitive-affective integration as required for inta
 tags: [synthesis, day/090, theme/virtue, theme/moral-virtue, theme/passion-and-virtue, theme/metriopatheia, theme/integration, theme/joy]
 last_qc_at: "2026-06-08T04:20:44"
 last_qc_outcome: "pass"
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

@@ -76,3 +76,6 @@ The central theme has a social half that the earlier charity days only gestured 
 ## Where this leaves us
 
 Charity has been followed from its definition through its order, its act, its interior effects (joy, peace), its outward effects (mercy, beneficence), and now its enacted and corrective forms — including, in Matthew 18, a fully specified protocol for correcting across perspectives that the project recognizes as its own. Aquinas turns next to the *disorders* opposed to charity: hatred (Q.34) and sloth (Q.35), the failures of charity's love and charity's joy. Tomorrow's synthesis reads them as the two structural failure-modes of the perspective-bounded agent — hatred as the limited view sealing itself against a misperceived whole, and sloth as the abandonment of the very computation toward loving unity that Day 133 named.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/macintyre/prs_triplets|MacIntyre PRS]]

@@ -76,3 +76,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-08T18:27:34"
 last_qc_outcome: "pass"
 tags: [synthesis, day/010, theme/life, theme/falsity, theme/cognitive-light-cones, theme/active-inference, theme/transcendentals]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]]

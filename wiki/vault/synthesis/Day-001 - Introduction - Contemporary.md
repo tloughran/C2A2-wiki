@@ -25,7 +25,7 @@ Chesterton's Aquinas dreamed like a hunting dog: not pursuing systems for their 
 ## Bridges
 
 - **PRS triplet + Synergistic Coil (Tom Loughran)** — the project's own contribution. Convergence of Kuhn (problem as unit of progress), MacIntyre (tradition as P/R/S narrative), Levin via James (problem-solving under resource scarcity). The form in which Tom describes and interlinks every tradition.
-- **PRS-01 in the Stump-tradition wiki ("Tradition-crossing inquiry")** — Tom's PRS-form record of the silos problem as it surfaces in her work; a worked instance of the framework, not its origin.
+- **PRS-08 in the Loughran-tradition wiki ("Tradition-crossing inquiry"; formerly Stump-wiki PRS-01)** — Tom's PRS-form record of the silos problem as it surfaces in her work; a worked instance of the framework, not its origin.
 - **PRS-06 in the Stump-tradition wiki (MacIntyre tradition-vitality criterion)** — Tom's record of the test that maps onto Pius X's warning.
 - **PRS-07 in the Stump-tradition wiki (Narrative cognition)** — Tom's record of Stump & Wolfe 2025 on knowledge transmitted through narratives. Day 1 *is* a narrative-epistemology episode (Aquinas-via-Chesterton).
 - **C2A2 Master Wiki** — `wiki/master/C2A2_master_wiki.md` — the contemporary *Summa* in form; Tom's design.
@@ -57,3 +57,6 @@ central_theme_thread: "Pre-dates the central theme articulation (2026-04-27 onwa
 last_qc_at: "2026-06-07T02:28:17"
 last_qc_outcome: "pass"
 tags: [synthesis, day/001, theme/method, theme/scaffold]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/loughran/prs_triplets|Loughran PRS]]

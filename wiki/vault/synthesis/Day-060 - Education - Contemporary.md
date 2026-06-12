@@ -84,3 +84,6 @@ The teaching-and-learning relation is itself an instance of *loving unity under 
 ## Where this leaves us
 
 Day 60 closes the *Prima Pars* with the structure of how human formation occurs through resource-provision and the learner's own constitutive work. Tomorrow Habash takes us into Q.119 (propagation as to the body) — the last question of the *Prima Pars* — and the prologue + Q.1 of the *Prima Secundae* (man's last end). The register pivots dramatically: from the metaphysics of human nature in the *Prima Pars* to the *Prima Secundae*'s treatise on the moral-and-spiritual life of the human person. The contemporary frame engages Fredrickson on flourishing, Stump on virtue-as-habituation, and the central-theme claim that the *last end* is loving unity under perspective-limitation receives its first explicit treatment.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

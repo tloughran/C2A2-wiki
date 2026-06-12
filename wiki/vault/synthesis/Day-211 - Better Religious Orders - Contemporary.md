@@ -58,3 +58,6 @@ This day gives the project's thesis its *sociology*. The claim is that "consciou
 ## Where this leaves us
 
 Tomorrow (Day 212, Q.186 and Q.189) turns from comparing the orders to the *constitution* of the religious state itself — the three vows as a total self-offering — and to *entrance* into it. The open thread the host flags: the vow of obedience as the surrender of one's very will, the chief of the three, which is the sharpest test yet for the project's account of what it costs a perspective to be drawn toward a whole it does not yet see. And the host's own movement between orders (Carthusian to active) is itself a small instance of today's ranking lived out — a perspective re-allocating its resources toward a form it judged more diffusive of the one charity.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]]

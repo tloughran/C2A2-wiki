@@ -74,3 +74,6 @@ The non-coercibility of assent *is* the central theme, viewed from its hardest a
 ## Where this leaves us
 
 We have the principle (assent is non-coercible) and the one place this volume requires us to overrule Aquinas. Tomorrow (Q.12-13, apostasy and blasphemy) continues in the same territory: apostasy as the complete withdrawal of a perspective from its orientation, and blasphemy as a maximally-wrong representation of the supreme good — including the striking claim that the damned blaspheme by the very object of their will. The will-as-orientation thesis, already load-bearing today, becomes the whole story there.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

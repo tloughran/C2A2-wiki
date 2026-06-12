@@ -57,3 +57,6 @@ The project's claim is that "every limited perspective is contained in" the simp
 ## Where this leaves us
 
 Q.23-24 name what the mediated union (Day 223) *elevates* the limited into: adopted heirs sharing the whole's beatitude, their destiny grounded in the natural Son. Tomorrow (Day 225, "Honoring the Saints") the *Summa* turns to how honor is rightly directed to the one *person* across the two natures (Q.25) and to Christ as the one *Mediator* "as man" (Q.26). The thread to carry forward: having seen the limited elevated to share the whole's vision, watch the treatise on adoration for how honor tracks the *person* — the individuated locus — and how the Mediator unites the many to God precisely through his limited human nature.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

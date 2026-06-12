@@ -80,3 +80,6 @@ The central theme says that conscious agents are individuated by perspective-lim
 ## Where this leaves us
 
 Day 73 closes the *order-of-passions* preliminary work and prepares for Day 74's central-theme load-bearing day on *Love* — the first passion, the formal-direction-toward-loving-unity made affectively explicit. Q.26-28 will articulate love-as-passion, the cause of love, and the effects of love (union, mutual indwelling, ecstasy, zeal). The contemporary frame will engage Fredrickson on positivity-resonance, Stump on union-as-highest-good, Rohr on cosmic-Christ as universal-loving-unity, Levin on bioelectric-communion, and Wright on agape — and the central theme will receive its sharpest formulation since Day 70.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

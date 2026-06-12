@@ -65,3 +65,6 @@ The cause-of-faith argument is the project's central claim in epistemic form. Th
 ## Where this leaves us
 
 We have the cause of the assent and its first effects. Tomorrow (Q.8-9, the gifts of understanding and knowledge) asks how the assent installed here is *exercised* cognitively — how the agent grasps that the believed articles are non-contradictory without comprehending their essence, and how it judges rightly about created and divine things. The interface reading waiting there — understanding as grasp-of-coherence rather than grasp-of-essence — is the natural sequel to today's account of an assent that exceeds, without contradicting, the evidence.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

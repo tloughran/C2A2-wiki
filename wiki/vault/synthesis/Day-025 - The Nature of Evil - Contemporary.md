@@ -87,3 +87,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-07T00:21:52"
 last_qc_outcome: "pass"
 tags: [synthesis, day/025, theme/multiplicity, theme/privation, theme/evil, theme/suffering, theme/morphogenesis, theme/active-inference, theme/free-energy]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

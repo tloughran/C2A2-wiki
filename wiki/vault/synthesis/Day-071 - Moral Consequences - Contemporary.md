@@ -78,3 +78,6 @@ The central theme says that conscious agents are individuated by perspective-lim
 ## Where this leaves us
 
 Day 71 closes the human-action arc and opens the *passions* arc that runs through Q.22 to Q.48. Tomorrow Day 72 takes us into Q.22-23 — the subject of the passions and the way the eleven passions differ — which the contemporary frame engages as the embodied-affective-interface layer through which the alter's perspective-limited apprehension of the substrate-source's integrative dynamics gets registered as feeling. The central-theme thread continues: passions are the affective-signal that something in the alter's current perception is or is not aligned with its formal direction toward loving-unity.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

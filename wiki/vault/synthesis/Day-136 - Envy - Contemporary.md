@@ -62,3 +62,6 @@ Envy and discord are the two faces of perspective-limitation in the social field
 ## Where this leaves us
 
 Envy is the perspective insisting the whole is rivalrous; discord is the perspective discovering it is partial. The first is a disorder to be healed by seeing the non-zero-sum whole; the second is a fact to be worked within by the charitable correction Day 134 named. Aquinas now hardens both: discord of will becomes contention of *speech*, and then the rupture of the community itself — schism. Day 137 takes up Q.38-39, where the divergence of finite perspectives stops being accidental and becomes a willed secession from the unity that holds the many as one.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]]

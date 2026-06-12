@@ -57,3 +57,6 @@ The project says we work out our salvation "aware of our limitations and our nee
 ## Where this leaves us
 
 Q.13-14 give the finite power and the freely passible body; tomorrow (Day 220, "Communication of Idioms") the *Summa* completes the treatise on the assumed humanity with Q.15 (the *defects of soul* — real sorrow, fear, and pain, but no sin) and Q.16 (the communication of idioms, and the paradox that Christ was at once *wayfarer and comprehensor*). The thread to carry: Day 219 showed the comprehensor *choosing* the wayfarer's finite power and passible body; Day 220 will name the simultaneity outright — one person who already beholds the whole and yet still journeys through the limited, suffering perspective. The project should watch for its keystone figure to be stated in Aquinas's own terms.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

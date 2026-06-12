@@ -17,7 +17,7 @@ karpathy_wiki_sources:
   - "wiki/traditions/rohr/wiki.md (contemplative reception; song as 'first form' of contemplation)"
 evidence_strength_summary: "Empirical on the neurobiology of group song and positivity resonance (Fredrickson and collaborators). Empirical/clinical on hemispheric processing of music (McGilchrist). Theological-strong on early-Christian hymnody as load-bearing christology (Wright). The integrative claim — that hymn and adjuration are two directions of a single self/other-modulation loop — is speculative-integrative."
 tags: [synthesis, day/163, theme/self-modulation, theme/agent-binding, pars/II-II, q/90-91]
-last_qc_at: "2026-06-04T06:29:43"
+last_qc_at: "2026-06-11T08:23:20"
 last_qc_outcome: "pass"
 ---
 
@@ -75,3 +75,6 @@ Notice how cleanly the adjuration/hymn pair instantiates the central theme. The 
 ## Where this leaves us
 
 Tomorrow's question — superstition — turns from *rightly-ordered invocation of the unlimited* to *wrongly-ordered invocation*. The same machinery we have just described can be aimed at the wrong target, by the wrong means, or with the wrong model of the cosmos. Aquinas's three species (idolatry, divination, observances) all *use* the same resonance-modulation loop we have described — they just route it through false addresses. Watch for the structural pattern that *the mechanism is invariant; the question is the ontology of the target*.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]]

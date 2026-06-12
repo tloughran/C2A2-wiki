@@ -62,3 +62,6 @@ If a limited perspective computes toward loving unity using the resources it per
 ## Where this leaves us
 
 Sobriety raises the threat of intoxication; tomorrow (Q.150–151) confronts it head-on as drunkenness — the *voluntary* loss of reason — and pivots to chastity, the strongest appetite's virtue. The substrate-protection reading set up here becomes the core of the drunkenness synthesis: what is the moral weight of deliberately disabling one's own controller? Open thread: the "counterfeit attractor" idea wants a formal treatment against the Friston multi-agent account of when a closed self-loop fails to couple — a candidate for a later synthesis on charity (II-II Q.23 ff.) revisited under temperance's findings.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]]

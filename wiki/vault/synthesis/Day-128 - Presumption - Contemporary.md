@@ -64,3 +64,6 @@ Both vices end the computation toward loving unity from the inside, and in oppos
 ## Where this leaves us
 
 The treatise on hope closes on its two failures — and on the recognition that rightly-ordered hope is a calibration held between them. Tomorrow (Q.22-23) Aquinas gives the precepts of hope and fear and then opens the great treatise on charity, defining it as *friendship with God* and naming it the form of all the virtues. The synthesis turns from the goal-prior and its guardian signal to the bond that is their proper end: charity as the coupling by which limited agents are bound into the loving whole the whole project has been computing toward.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

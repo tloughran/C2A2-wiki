@@ -90,3 +90,6 @@ central_theme_thread: "Augustine's *thou wert within me, and I outside* is the c
 last_qc_at: "2026-06-07T02:28:27"
 last_qc_outcome: "pass"
 tags: [synthesis, day/005, theme/infinity, theme/divine-immanence, theme/divine-omnipresence, theme/interface-theory]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

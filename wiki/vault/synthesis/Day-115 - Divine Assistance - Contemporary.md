@@ -135,3 +135,6 @@ The law-and-grace section closes with this question; tomorrow (Day 116, expected
 Open thread for the project as a whole: the central-theme claim is now stated as completely as the convergent paradigm supports. The work of subsequent syntheses is to apply this frame to the specific doctrinal and practical questions Aquinas takes up in the rest of the *Summa*. The frame should not be re-explained from scratch each day; it should be assumed and *applied*. The Wright-Rohr-monist convergence is the operating premise; the question for each new day is *what new feature of the loving-unity computational task does this day's question illuminate?*
 
 For Tom: this 10-episode arc on law-and-grace contains the structural backbone of the project's central claim. If the synthesis lands here, the rest will build on solid ground.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

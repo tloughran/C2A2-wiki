@@ -65,3 +65,6 @@ Loving unity is computed by perspective-limited agents who must both correct def
 ## Where this leaves us
 
 Q.108–109 sets the stage for a tight sequence on the vices of false self-presentation. Day 173 turns to the kinds of lies (Q.110) and to dissimulation and hypocrisy (Q.111) — the specific ways truthfulness fails. Where today located truthfulness as the maintenance of an honest shared model, tomorrow anatomizes its breakdown: the threefold division of lies and the special corruption of the hypocrite who performs a self he is not. The signal-integrity frame opened here becomes the lens for grading the severity of its violations.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]]

@@ -65,3 +65,6 @@ Each agent sees only part of the whole, and rules are how a community shares the
 ## Where this leaves us
 
 Tomorrow's Q.122–123 turns from justice to the next cardinal virtue: the precepts of justice and then fortitude — firmness against danger, chiefly the fear of death. The bridges shift decisively toward Fredrickson's resilience research and the active-inference account of holding a long-horizon good against immediate threat. Open thread: whether "mode of attention" can be made to discriminate genuine equity from motivated rule-bending, or whether that discrimination needs a separate criterion the model does not yet supply.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/carroll/prs_triplets|Carroll PRS]]

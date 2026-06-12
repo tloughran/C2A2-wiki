@@ -67,3 +67,6 @@ This is the day the central theme arrives at its own center. Perspective-limitat
 ## Where this leaves us
 
 Charity is now defined as the bond that makes many one — friendship with God, the form of every virtue, the coupling the whole project has been computing toward. Tomorrow (Q.24-25) Aquinas asks how charity *grows* and *what it loves*: its increase without fixed limit in this life, its three degrees, and the order of its objects — God, self, neighbor, body, even sinners and enemies, with one stark exclusion. Having named the bond, the synthesis takes up its dynamics and its reach: how the coupling deepens, and how far the loving whole extends.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

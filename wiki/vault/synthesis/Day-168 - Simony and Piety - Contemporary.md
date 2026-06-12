@@ -81,3 +81,6 @@ The perspective-limited agent computes loving unity not from a position of self-
 ## Where this leaves us
 
 Q.100–101 sets up the rest of the Religion treatise's coverage of the virtues annexed to justice. If piety is the original recognition of constitutive debt and simony is its category-error inverse, tomorrow's Q.102–103 on observance and dulia will extend the same structure: how does one render proper honor to those who hold offices and excel in dignity without sliding either into idolatry (treating creature as terminus) or into the modern flattening that denies any warranted gradient of honor at all? The same gradient-of-warranted-response that Aquinas constructs here will get its further articulation there.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

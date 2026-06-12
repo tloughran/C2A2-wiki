@@ -101,3 +101,6 @@ This is the central-theme claim in its political-theological form: *the loving-u
 ## Where this leaves us
 
 Tomorrow (Day 114, Q.106-107) makes the central pivot of the entire treatise: from law-as-text to law-as-Spirit. The contemporary reading must hold the metaphysical claim that the *new law is principally not text but person* — the indwelling Spirit as the principle of fulfillment-in-charity. This is precisely the threshold the central-theme reading has been pointing toward: the import of perspective-broadening priors that the agent cannot generate from within. Open thread: how does the synthesis hold the radical interiority claim of Q.106 a.1 (new law as inscribed-on-heart by the Spirit) alongside the recognition that the New Law also has external/written/communal-practice dimensions (sacraments, scripture, ecclesial life)? The integrated reading is that the *interior* operation requires the *exterior* practices as its training ground.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/wolfram/prs_triplets|Wolfram PRS]]

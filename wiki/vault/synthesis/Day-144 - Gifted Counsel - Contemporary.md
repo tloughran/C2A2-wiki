@@ -64,3 +64,6 @@ This article is the prudence treatise's deepest touch on the spine of the projec
 ## Where this leaves us
 
 Aquinas has named the limited perspective's deepest need — counsel from one who comprehends all contingents — and catalogued the ways practical reason fails when it refuses that need. Tomorrow he completes the catalogue from the other side: not the agent that fails to compute, but the agent that computes *well* toward the wrong end, or by counterfeit means — negligence, the prudence of the flesh, craftiness, guile, fraud, and the undue solicitude our Lord warns against. The seam this article exposed — that competence must be oriented from beyond itself toward the whole — is exactly what false prudence severs: the same machinery, pointed away from the one who comprehends all things and toward a partial good clutched as if it were the whole.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

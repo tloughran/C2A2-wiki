@@ -62,3 +62,6 @@ Docility is where this question touches the spine of the project. The central cl
 ## Where this leaves us
 
 The single virtue has been resolved into its working components. Tomorrow Aquinas turns to the *subjective* parts — the species of prudence that scale from the individual to the household, the city, and the kingdom — and to the connected virtues of deliberation and judgment that feed into command. The thread sharpens: if today's question showed how one limited perspective is built to act well, the next shows the same competency running at nested scales, and the moment when the learned rule fails the singular case and judgment must reach past it.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/macintyre/prs_triplets|MacIntyre PRS]]

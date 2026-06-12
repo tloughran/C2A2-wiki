@@ -64,3 +64,5 @@ Reviling and backbiting are the central claim worked out in the information subs
 
 Tomorrow (Day 155, Q.74-75) the treatise narrows further into the specific verbal injustices that attack distinct goods: tale-bearing (severing friendship) and derision (humiliating). Each names a different *axis* of community the wider whole protects — friendship, dignity — and the apparatus reading extends naturally to each.
 
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

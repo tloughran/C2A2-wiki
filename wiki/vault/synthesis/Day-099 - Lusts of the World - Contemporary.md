@@ -77,3 +77,6 @@ Today is one of the days where the central theme lands hardest. *Self-love is th
 ## Where this leaves us
 
 Day 99 places us at the threshold of *malice*. We have walked through ignorance (Q.76) and passion (Q.77) — the two pre-malice modes by which an agent's policy can fail. We have noted that under both Aquinas's frame and the mind-monism frame, *self-love is the deepest substrate of the failure*, and that the cure is the integrating prior of charity / loving unity. Day 100 — *the cause of sin which is malice* — is the question of what happens when an agent fails *not* through ignorance or passion-capture but through deliberate choice of an evil *known as evil*. That is the morally weightiest case in the whole sin treatise, and it will require us to be careful: *deliberate choice of an evil known as evil* is, on the mind-monism frame, a particularly hard pattern to model. We will face that tomorrow.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

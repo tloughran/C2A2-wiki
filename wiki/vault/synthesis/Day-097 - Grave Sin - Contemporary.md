@@ -75,3 +75,6 @@ The deepest hit to the central theme today is Q.73 a.1 — *all sins are not con
 ## Where this leaves us
 
 Today's question-pair is the structural anatomy of sin. We have made the analytic alignment — species-by-end as policy-by-prior, gravity as depth × precision — and located one of the central-theme's clearest medieval articulations. Tomorrow's Q.74-75 take this structural account into *etiology*: which *power* of the agent is the seat of sin (the will, primarily; reason and sensuality secondarily) and what *causes* sins (internal: reason/will; external: influences that influence but do not compel). The hinge from *what sin is* to *what causes it* — Day 98 — is where the active-inference framework will earn the most ground.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

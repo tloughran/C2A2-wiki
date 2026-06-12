@@ -98,3 +98,6 @@ evidence_strength_summary: "Parallel domain-specific stabilizations (Hawkins) an
 tags: [synthesis, day/088, theme/habits, theme/individuation, theme/virtue, theme/distinguished-habits, theme/infused-virtue]
 last_qc_at: "2026-06-08T04:20:43"
 last_qc_outcome: "pass"
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

@@ -60,3 +60,6 @@ The project's claim is that conscious agents are individuated by the limits of t
 ## Where this leaves us
 
 Today fixed how a *natural* knower ought to spend its bounded attention. Tomorrow (Day 203 onward) the treatise turns to *prophecy* — knowledge whose source lies outside the natural interface — and the contrast sharpens: if even ordinary knowing is a resource-bounded computation aimed past itself toward the whole, what is it for knowledge to arrive from beyond the dashboard? Open thread for the prophecy syntheses: hold the studiousness/curiosity axis (knowing-for-truth vs. knowing-for-fitness) as the baseline against which "knowing given from beyond the interface" is to be read.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/hoffman/prs_triplets|Hoffman PRS]]

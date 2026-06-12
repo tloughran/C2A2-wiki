@@ -68,3 +68,6 @@ The central theme says we work out salvation "aware of our limitations and our n
 ## Where this leaves us
 
 Hope is now on the table as the agent's goal-prior — assured of direction, honest about distance, dependent by design, and aimed at the whole. Tomorrow (Q.18-19) Aquinas turns to hope's *subject* and to the gift of *fear*: where hope sits in the agent, whether its certainty holds for the wayfarer, and how fear — far from hope's opposite — is the precision signal that keeps the orientation honest, the reverent valuation of how much there is to lose. Having set the goal-prior, the synthesis takes up the error signal that guards it.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

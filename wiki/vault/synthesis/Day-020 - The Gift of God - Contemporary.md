@@ -30,7 +30,7 @@ Day 20 makes the central theme operational on the second-procession side. *Love*
 - **PRS-02 in the Kastrup-tradition wiki — individuation within monism.** Q.37 a.2's *Father-and-Son love each other by the Holy Spirit* requires a metaphysics in which internal relations are real-and-constitutive without multiplying the substrate. Analytic idealism is the contemporary home. *Philosophical-conceptual.*
 - **Rohr, *The Universal Christ* (canonical fallback; PRS-related dispatches).** Q.38's gift-as-self-sharing receives the contemplative-theological framing: *everything belongs* — the Spirit is the connective by which creation is drawn into the Father-Son love. Q.37 a.2's tree-flowers analogy is structurally Rohr's *love between the Father and Son into which we are drawn*. *Contemplative-theological.*
 - **Wright, *Paul and the Faithfulness of God* (canonical fallback).** Romans 5:5 (*God's love has been poured into our hearts through the Holy Spirit*) and Galatians 4:6 (*the Spirit of his Son crying, "Abba, Father"*) are the scriptural ground of the gift-as-given-by-the-substrate doctrine; Wright's Pauline reading anchors Aquinas's Q.38 argument scripturally. *Methodological + scriptural-historical.*
-- **PRS-01 and PRS-03 in the Stump-tradition wiki — faith as second-person knowing; CROSS-018 Stump × Fredrickson.** The *aptitude to be given and to be possessed* in Q.38 a.1 is structurally Stump's second-person knowing of persons — the receiver's mode is *second-person reception*, not propositional acceptance. *Mature analytic case.*
+- **PRS-05 and PRS-11 in the Stump-tradition wiki — faith as second-person knowing; CROSS-018 Stump × Fredrickson.** The *aptitude to be given and to be possessed* in Q.38 a.1 is structurally Stump's second-person knowing of persons — the receiver's mode is *second-person reception*, not propositional acceptance. *Mature analytic case.*
 - **Romans 5:5 — *God's love poured into our hearts through the Holy Spirit*; John 4:10 — *the gift of God*; 1 Corinthians 13 — *love as the greatest*; John 14:23 — *we will come to him and make our home with him*.** The scriptural ground of the gift-as-given doctrine; Wright's narrative-historical and Rohr's cosmic-Christ readings both center on Romans 5:5.
 
 ## Where this leaves us
@@ -64,3 +64,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-06T22:31:36"
 last_qc_outcome: "pass"
 tags: [synthesis, day/020, theme/trinity, theme/holy-spirit, theme/love, theme/gift, theme/grace, theme/positivity-resonance]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

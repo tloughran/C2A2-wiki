@@ -68,3 +68,6 @@ The project holds that agents are individuated by the limits of their perspectiv
 ## Where this leaves us
 
 Today gave the cause, channel, and mechanism of prophetic knowing, and drew the sharp line between capability and charity. Tomorrow (Day 205, Q.174–175) finishes the prophecy treatise with the *kinds and degrees* of prophecy (Moses the greatest) and then *rapture* — Paul "caught up to the third heaven," the intellect withdrawn from the senses to be, transiently, informed by the divine essence itself. Open thread: the degree-ladder is a ladder of *less mediation* (the highest prophecy uses no images), and rapture is the limit where the interface is most fully set aside — carry the pipeline/interface frame to its edge, where knowing approaches the unmediated vision the project names as the removal of all perspective-limitation.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]]

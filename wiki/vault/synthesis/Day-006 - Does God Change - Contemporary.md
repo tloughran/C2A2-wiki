@@ -83,3 +83,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-07T02:28:27"
 last_qc_outcome: "pass"
 tags: [synthesis, day/006, theme/immutability, theme/eternity, theme/atemporality, theme/nunc-stans]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

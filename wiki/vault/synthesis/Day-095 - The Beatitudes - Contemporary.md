@@ -110,3 +110,6 @@ This is exactly the central-theme claim. Perspective-limitation individuates the
 ## Where this leaves us
 
 Q.70 tomorrow turns to the **fruits of the Holy Spirit** — the *outputs* of an agent operating under the gifts and producing the Beatitudes as acts. The contemporary frame is now in position to read the fruits as the *long-run empirical signatures* of the agent's whole receptivity-virtue-act loop: love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control. We will ask: what would a community of such agents — a *renewed covenant community* in Wright's sense, a *contemplative community* in Rohr's sense — be empirically observable as? The accelerator-and-detector system this whole project is being designed toward is, in part, the answer.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

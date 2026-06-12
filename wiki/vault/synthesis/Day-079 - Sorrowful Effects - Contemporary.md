@@ -70,3 +70,6 @@ The agent's perspective-limitation is *exactly what makes sorrow possible* — a
 ## Where this leaves us
 
 Day 80 (Q.38–39) is the practical close: *remedies* of sorrow and the *goodness or malice* of sorrow itself. The pivotal claim there — Q.39 a.4, that the *greatest* evil is not pain or sorrow but being too desensitized to evil to grieve it — sharpens the central theme to a point. The agent who has collapsed its model to refuse the present evil is in worse condition than the one whose sorrow is acute. The path forward is *through* the integrated sorrow, not around it.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/fredrickson/prs_triplets|Fredrickson PRS]]

@@ -84,3 +84,6 @@ The consent/choice distinction is also central-theme-load-bearing: *the alter se
 ## Where this leaves us
 
 Day 68 articulates the deliberation-and-approval register that precedes choice. Tomorrow Habash takes us into Q.16 (use) and Q.17 (the acts commanded by the will) — the *execution* register of the human-action pipeline. The contemporary frame engages with the layered-control architecture of how command (reason) and use (will) coordinate to produce executed action through the body, with active inference's hierarchical-control architecture as the leading resource.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

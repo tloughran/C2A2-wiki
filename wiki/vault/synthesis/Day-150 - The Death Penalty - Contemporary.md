@@ -60,3 +60,6 @@ This is the hardest case for the central claim, and it belongs at the close of t
 ## Where this leaves us
 
 The treatise's gravest question — the taking of life — has been read with Aquinas where his structure holds (the common good, the limits on killing, double effect, culpable omission) and against him where the emerging paradigm pulls hardest (the flat ranking of beings; excision over re-integration). Tomorrow (Day 151, Q.65 closing into Q.66) Aquinas turns to *theft and robbery* — injustice in external possessions, where the question of private property opened on Day 146 (the "right of nations" discerned by reason) returns as the matter of commutative justice. The restitution-and-re-integration theme that has run from Day 149 through today carries forward: the right ordering of possessions, and its repair when violated, is the next face of rendering to each what is the whole's to apportion and the part's to hold.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

@@ -89,3 +89,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-09T22:28:15"
 last_qc_outcome: "pass"
 tags: [synthesis, day/004, theme/goodness, theme/being-and-good, theme/beauty, theme/analogy-of-being, theme/anti-pantheism]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

@@ -60,3 +60,6 @@ Judgment is the central claim staged in a single act. Every verdict is one persp
 ## Where this leaves us
 
 Judgment has been read as justice exercised under uncertainty, with the charitable prior as the rational and charitable policy of a limited knower; and the two species of justice have been named as the two scales of the relational order. Tomorrow (Day 149, Q.62–63) Aquinas treats *restitution* — how the equality disturbed by injustice is restored, a kind of conservation law for the moral order — and *respect of persons*, the corruption of distributive justice that distributes on a feature irrelevant to the relation. The architecture carries forward: if distributive justice apportions to each part according to its real place, then respect of persons is the wrong-variable error, and restitution is the repair that returns the defecting part to the whole.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]]

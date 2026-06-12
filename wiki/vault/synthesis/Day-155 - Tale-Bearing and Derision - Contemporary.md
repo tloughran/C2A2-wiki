@@ -65,3 +65,5 @@ Tale-bearing and derision are the central claim in cellular form. The dyadic bon
 
 The verbal-injustice arc (Q.72-75) closes here, having traced four distinct attacks on the social substrate: reviling (face-to-face dishonor), backbiting (reputation), tale-bearing (the bond), derision (the self-model). Tomorrow (Day 156, Q.76-77) Aquinas wraps verbal sins (cursing) and opens the economic-justice arc (cheating in buying and selling — the just price), setting up Day 157's question of usury.
 
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

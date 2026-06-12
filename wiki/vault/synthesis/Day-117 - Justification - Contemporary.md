@@ -21,7 +21,7 @@ evidence_strength_summary: "Prevenient grace claim: theological. Friston prior-s
 mind_first_reframe: "Aquinas's 'God alone causes grace' reads, under active-inference + mind-monism, as the architectural fact that an agent cannot install from inside its own prior a prior including the wider mind — that re-prioring belongs to the embedding system; agent/wider-mind cooperation is internal to one ground, not bilateral between two substances."
 central_theme_thread: "The cooperation architecture (prevenient grace, free will, first grace not meritable, subsequent merit real) is the central claim's working-out-of-salvation-in-fear-and-trembling: perspective-limitations real, resources installed from outside, the transcending still requires the agent's work."
 tags: [synthesis, day/117, theme/grace, theme/causation, theme/free-will]
-last_qc_at: "2026-06-04T20:21:31"
+last_qc_at: "2026-06-11T16:22:37"
 last_qc_outcome: "pass"
 ---
 
@@ -85,3 +85,6 @@ This is the project's central claim, restated for grace: conscious agents are in
 ## Where this leaves us
 
 The cause of grace and the structure of preparation are clarified. Tomorrow's volume-transition episode covers merit at the end of Prima Secundae and opens the long Secunda Secundae treatise on faith. The natural next question: if grace installs a wider prior and the resulting acts can be merited, what is the *first* of the infused virtues that the wider prior makes possible? Aquinas's answer is faith, and the contemporary parallel will need to read faith not as cognitive assent to propositions but as the agent's openness to the prior-shift that grace effects. The Augustine-via-Aquinas formula — "to believe is to think with assent" — has its own contemporary reading waiting.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

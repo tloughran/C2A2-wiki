@@ -61,3 +61,6 @@ This is the negative image of the whole project, and it belongs at the close of 
 ## Where this leaves us
 
 The prudence treatise closes with its counterfeits named and their root exposed: competent practical reason is not enough; severed from the right end and the guidance of the whole, it becomes flesh-prudence, craft, and anxious grasping. Aquinas turns next in the Secunda Secundae toward *justice* — the virtue that renders to each what is due, and the largest of the moral-virtue treatises ahead. The through-line this batch has drawn carries into it intact: a limited perspective computes its way toward a goal it did not set (Day 141), with components built for contingency (Day 142), scaling across nested communities and reaching past its own rules where they fail (Day 143), needing counsel from the one who comprehends all things (Day 144), and going wrong — never by losing competence, only by losing the end — into the counterfeits that close the treatise here.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]] · [[traditions/macintyre/prs_triplets|MacIntyre PRS]]

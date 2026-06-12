@@ -57,3 +57,6 @@ The project's foundational claim is that "conscious agents are individuated by t
 ## Where this leaves us
 
 Q.25-26 establish that honor tracks the individuated *person* and that the Mediator unites the many *through* his limited human nature. With Q.26 the treatise on Christ himself (Q.1-26) closes; tomorrow (Day 226, "The Blessed Virgin Mary") the *Summa* turns to the one who supplied that human nature — Mary (Q.27-28) — where Habash flags Aquinas's position being *superseded* by the later-defined dogma of the Immaculate Conception. The thread to carry forward: having seen mediation work through limitation, watch the Marian questions for a *tradition itself* working out, over centuries, a fuller perception of the whole than any single perspective (even Aquinas's) could reach alone.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

@@ -90,3 +90,6 @@ central_theme_thread: "Each alter's cognitive powers are individuated by the lim
 last_qc_at: "2026-06-07T04:24:28"
 last_qc_outcome: "pass"
 tags: [synthesis, day/041, theme/intellect, theme/active-inference, theme/synderesis, theme/conscience, theme/cortical-architecture, theme/appetite]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]]

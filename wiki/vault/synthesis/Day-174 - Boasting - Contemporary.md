@@ -66,3 +66,6 @@ This question sits unusually close to the project's center. Agents are individua
 ## Where this leaves us
 
 Q.112–113 closed the reflexive failures of truthfulness about oneself. Day 175 turns outward again, to the virtue that governs how we present ourselves agreeably to others — friendliness or affability (Q.114) — and its corruption in flattery (Q.115). Where boasting distorted the picture of one's own worth, flattery distorts the picture one gives *of another*, for the sake of pleasing or gaining. The signal-integrity concern, having run through truth, lies, and self-report, now reaches the social surface of how agents address one another.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]]

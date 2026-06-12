@@ -71,3 +71,6 @@ The perspective-limited agent participates in loving unity from within a network
 ## Where this leaves us
 
 Q.102–103 has carefully calibrated the gradient of warranted *recognition*. Tomorrow's Q.104–105 on obedience and disobedience extends the same logic into the gradient of warranted *compliance*. If dulia is the correct response to created excellence within the gradient, obedience is the correct response to legitimate authority within the gradient — bounded by the same constraint that latria is owed only to God, so obedience is owed only within the limits of the office's legitimate commission. The pair sets up Aquinas's last word in this stretch of II-II: how an embedded agent honors the authority of office without surrendering its ultimate judgment to it.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]]

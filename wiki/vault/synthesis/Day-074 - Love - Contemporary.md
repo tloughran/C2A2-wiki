@@ -111,3 +111,6 @@ The synthesis-in-progress receives its clearest articulation today: *each consci
 ## Where this leaves us
 
 Day 74 articulates the central-theme's affective-phenomenology with full force. Day 75 takes us into Q.29 — *Hatred*, the structural opposite of love. The contemporary frame engages hatred as the privation-of-love at the affective level: hatred is structurally derivative of love (Aquinas's Q.29 a.2 — love is the cause of hatred), and the central-theme commits the synthesis to reading hatred as the alter's defensive-closure-against-the-good under perspective-limitation. The Day 74 keystone preserves into Day 75 as the structural-priority-of-love-over-hatred, with hatred's status as derivative-and-correctable preserving the central-theme's commitment to loving-unity-as-formal-target even under perspective-limited misalignment.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

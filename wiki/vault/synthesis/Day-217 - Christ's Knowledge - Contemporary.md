@@ -57,3 +57,6 @@ The project holds that agents are individuated by the limitations of their persp
 ## Where this leaves us
 
 Q.9-10 give the beatific summit; tomorrow (Day 218, "Christ's Infused Knowledge") the *Summa* descends through the other two modes — the infused/imprinted knowledge (Q.11) and the acquired/empirical knowledge (Q.12), where Christ "advanced in wisdom" and learned through sense like any finite mind. If Q.10 showed that even the highest finite vision does not comprehend, Q.11-12 will show the ordinary finite pathway preserved intact — "broken up knowledge of the world" built piecemeal under bounded resources. The thread to carry: the project should watch whether infused and acquired knowledge are two distinct modes or two ends of one continuum of resource-bounded knowing.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

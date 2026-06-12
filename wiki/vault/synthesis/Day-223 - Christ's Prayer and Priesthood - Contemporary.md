@@ -58,3 +58,6 @@ The project says the limited "work out [their] salvation... aware of [their] nee
 ## Where this leaves us
 
 Q.21-22 show the Head (Day 222) *sustaining* the union he forms — prayer as alignment, priesthood as permanent mediation. Tomorrow (Day 224, "Adopted Sons") the *Summa* turns to what the mediated union *makes* of the members: *adoption* (Q.23), grace divinizing the limited into heirs who share God's own beatitude, and the *predestination of Christ* (Q.24) as the exemplar and cause of ours. The thread to carry forward: having seen the priest hold the many in union, watch the treatise on adoption for what that union *elevates* the limited perspectives *into* — and whether divinization-by-grace is the project's loving-unity telos named as inheritance.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

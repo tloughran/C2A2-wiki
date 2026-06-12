@@ -17,8 +17,8 @@ evidence_strength_summary: "Pride-as-perspective-absolutization = conceptual/str
 mind_first_reframe: "Pride is the self-model not merely mis-calibrated but treating its own constructed vantage as the ground of value and truth — the part claiming to be the whole, the interface-icon mistaken for the real, the agent 'relying on itself in contempt of the order' that constitutes it. This is why it is the FIRST sin: it is the formal structure (self over whole) that every other vice fills in with content."
 central_theme_thread: "Pride is the exact inversion of the project's central claim. If agents are individuated by perspective-limitation and salvation is the limited agent computing toward loving unity under guidance from those who see more, pride is the limited agent refusing that guidance and absolutizing its own vantage — 'you will be like God,' deciding good and evil by oneself."
 tags: [synthesis, day/199, theme/perspective-absolutization]
-last_qc_at: "2026-06-04T12:29:46"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-11T14:28:41"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 199 — Man's Downfall (Contemporary Parallel)
@@ -33,7 +33,7 @@ The inquiry-problem here is unusually deep, because Aquinas is not merely catalo
 
 ## Resource
 
-The leading resources are the self-model and individuation records of the consciousness cluster — and the metaphysical guardrail applies, so the substantive moves are drawn from the interface, idealist, and hemispheric programs rather than from the Thomistic interlocutor, who here receives the reframe.
+The leading resources are the self-model and individuation records of the consciousness cluster — the interface, idealist, and hemispheric programs.
 
 Begin with the self. On the Hoffman-tradition account, "the self" is a *constructed, recursive model* (Tom's PRS-form record at PRS-08), and perception generally is a fitness-tuned *interface* whose objects are icons, not reality (PRS-01, PRS-03). This furnishes a precise reading of pride's formal move. The self-icon is a representation built by the agent for the agent; pride is the act of treating that icon as *the ground of value and truth* — taking the interface-object (the ego) for the real, and making one's own vantage the measure rather than a measured thing. The Kastrup-tradition record sharpens it into a part-whole claim (PRS-02, PRS-08): each person is a *dissociated alter* of one consciousness, a real but derivative individuation. On that picture pride is the alter's refusal of its derivative status — the part insisting it is the whole, or at least self-grounding. This maps with eerie precision onto Aquinas's own anatomy. Gregory's four species of pride, which Aquinas endorses, are: boasting of a good one lacks (a false self-model); *thinking one has from oneself what one has from God* (the alter denying it is an alter); thinking a received good is *due to one's own merits* (the same denial, subtler); and *despising others, wishing to be singularly conspicuous* (the part ranking itself over the whole). The two middle species are, almost word for word, the part denying that it is constituted by the whole — which is what "relying on oneself in contempt of the order" means.
 
@@ -67,3 +67,6 @@ This day is the exact photographic negative of the project's central claim, and 
 ## Where this leaves us
 
 The hinge is turned: humility named the right relation of a perspective to the whole, pride named its formal refusal, and pride has been shown to be not one vice but the structure of all of them — the self over the whole, the closing against guidance. Tomorrow (Q.164-165) tracks the consequences and the mechanism: the *punishments* of the first sin — read as the cascade of a nested order coming apart once its top subordination fails — and the *temptation* itself, whose order (sense → lower reason → higher reason) is, Aquinas says, the order of all temptation. The reusable result to carry: pride is the agent absolutizing its own vantage, and the next synthesis should show the fall's punishments as exactly what happens to a hierarchically integrated system when its highest level defects — the disorder cascading down, and the long road of reorder beginning.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/rohr/prs_triplets|Rohr PRS]]

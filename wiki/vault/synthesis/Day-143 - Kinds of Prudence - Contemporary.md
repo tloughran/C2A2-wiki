@@ -59,3 +59,6 @@ Two threads of the central claim cross here. The first is that loving unity is c
 ## Where this leaves us
 
 Prudence has been scaled across the nested communities and pressed to the point where its learned rules run out. Tomorrow Aquinas raises the stakes to the limit: the *gift* of counsel, given because "human reason is unable to grasp the singular and contingent things which may occur," so that man must be "directed as though counseled by God who comprehends all things" — and, against it, the species of imprudence. The gnome problem of today (the rule that fails the case) becomes the deepest statement of the project's central claim: a perspective that cannot survey all contingents, needing guidance from one who can.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]] · [[traditions/macintyre/prs_triplets|MacIntyre PRS]]

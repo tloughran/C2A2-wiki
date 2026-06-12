@@ -68,3 +68,6 @@ If loving unity is computed by perspective-limited agents pooling what each can 
 ## Where this leaves us
 
 Q.110–111 anatomized the failures of truthfulness in word and enacted deed. Day 174 turns to two failures that lie at the borders of truthfulness about *oneself*: boasting (Q.112), the overstatement of one's own excellence, and irony or self-deprecation (Q.113), its understatement. Both are species of untruth about the self — the same signal-integrity concern, now turned reflexively onto how an agent reports its own standing, where the temptation is not to harm another but to distort the picture others (and oneself) hold of one's own worth.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]]

@@ -81,3 +81,6 @@ The limited agent's computation toward loving unity is constrained at every step
 ## Where this leaves us
 
 Q.66 tomorrow asks about the **equality among the virtues** and which is greatest. The connection-of-virtues claim from today implies that "greatest" can only mean *hub-most* — the virtue that, if cut, collapses the most of the rest. Tomorrow's answer will be charity (for the infused network) and a more nuanced answer (intellectual > moral; wisdom > knowledge; justice as chief moral virtue) for the natural network. The Q.67 question — *which virtues survive death?* — will be the eschatological filter that tests our contemporary reframe most sharply.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

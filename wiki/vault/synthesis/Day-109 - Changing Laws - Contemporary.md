@@ -102,3 +102,6 @@ The computational task is real. *We cannot bootstrap* the perfect law from natur
 ## Where this leaves us
 
 Tomorrow (Day 110, Q.98-99) shifts from human law to divine law: the Old Law as covenantal pedagogy and the structure of its precepts. The central-theme reading sharpens further: divine law is the *external information* that natural-law access alone cannot supply — what Wright reads as Israel's covenantal vocation. Open thread: the host's treatment of Aquinas's confident applications of natural-law reasoning (the recurring sexual-ethics and drug-policy examples) should be held more carefully in the synthesis. Some of these are robust deep-prior applications; others are tradition-specific elaborations that the interface-theoretic reading would treat with humility. The synthesis must hold this distinction without collapsing the natural-law claim altogether.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/wolfram/prs_triplets|Wolfram PRS]]

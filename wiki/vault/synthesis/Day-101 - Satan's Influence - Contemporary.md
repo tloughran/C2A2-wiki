@@ -78,3 +78,6 @@ The Q.80–81 locus is one of the cleanest illustrations of the project's centra
 ## Where this leaves us
 
 Day 102 takes the original-sin half of the question deeper: Q.82 (essence) and Q.83 (subject). The same reframe will carry forward — the inheritance Aquinas needs the doctrine to explain is exactly what contemporary developmental science delivers, with the central-theme thread of perspective-limitation-as-individuation now applied to the question of what kind of *inheritance* makes a starting condition properly an agent's own. Open thread flagged for downstream Q.84 follow-up: the *capital* vices as the recurring narrowings of attention that perspective-limited agents converge on when the broadening practices fail.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

@@ -65,3 +65,5 @@ Q.80-81 is the structural pivot of the central claim. The justice treatise has n
 
 Tomorrow (Day 159, Q.82-83) Aquinas turns to the *interior acts* of religion — devotion and prayer — and Q.83 is the longest single article-set on prayer in the Summa, including the treatment of the Lord's Prayer as the exemplar. The pivot completed today opens directly into the central claim's most explicit articulation: prayer as the perspective-limited agent's active alignment with the providence already at work.
 
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

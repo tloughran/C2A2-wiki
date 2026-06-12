@@ -75,3 +75,6 @@ central_theme_thread: "Each alter's appetites individuate it from other alters b
 last_qc_at: "2026-06-07T04:24:28"
 last_qc_outcome: "pass"
 tags: [synthesis, day/042, theme/will, theme/happiness, theme/active-inference, theme/concupiscible-irascible, theme/passions, theme/preference-structure]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]]

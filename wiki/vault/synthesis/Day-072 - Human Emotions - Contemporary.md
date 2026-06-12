@@ -79,3 +79,6 @@ The central theme says that perspective-limitation individuates conscious agents
 ## Where this leaves us
 
 Day 72 establishes the affective-interface frame. Day 73 takes us into Q.24-25 — the *moral* evaluation of the passions and their *order*. The contemporary frame engages with how the embodied-affective-interface, considered in itself morally neutral, is taken up into moral life through the rectification of passions and their ordering toward the formal-direction of loving-unity. Love as the first passion (Q.25 a.2) anticipates Day 74's central-theme load-bearing day on Love.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]]

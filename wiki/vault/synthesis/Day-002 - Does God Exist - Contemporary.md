@@ -79,3 +79,6 @@ central_theme_thread: "Q.1 a.7 — 'we cannot know what God is in himself; we kn
 last_qc_at: "2026-06-07T02:28:17"
 last_qc_outcome: "pass"
 tags: [synthesis, day/002, theme/sacred-doctrine, theme/existence-of-god, theme/five-ways, theme/apophatic, theme/metaphysical-keystone]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

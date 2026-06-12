@@ -64,3 +64,6 @@ This is the day the project's thesis is stated almost in its own words by Aquina
 ## Where this leaves us
 
 The contemplative life has been examined in itself and ranked, with its summit (rapture) and its permanence ("not taken away") in view; the active life has been placed in service to it and marked as terminal. Tomorrow Aquinas turns to the *states of life* (Q.183–184) — how these two lives are institutionalized in offices, duties, and degrees, and what it is to be in a "state of perfection." Carry forward the day's central result: the work is *for* the vision; when limitation is removed, the work ends and the loving, received contemplation of the whole — communal in its final form — is what remains.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]]

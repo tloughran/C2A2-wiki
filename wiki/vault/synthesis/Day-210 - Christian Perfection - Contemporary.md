@@ -60,3 +60,6 @@ This is the day the project's thesis and the *Summa* say the same sentence. The 
 ## Where this leaves us
 
 The treatise on the states of life has named its summit: perfection is charity — loving union — partial now under a divided attention, complete only when limitation is lifted, and measured in the heart rather than the office. This is as close as the *Summa* comes, in II-II, to stating the project's whole thesis in a line. Tomorrow Aquinas continues into the religious state in particular (Q.186 onward) — the life vowed to the means of perfection, examined in its acts, its kinds, and its place. Carry forward the capstone result: across every charism, life, and state surveyed since Day 205, the one thing that is perfection, and the one thing the project is for, is loving union with the whole — worked out, in fear and trembling, from each limited perspective toward the day when every limited perspective is contained in the simple whole it loves.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]]

@@ -43,7 +43,7 @@ Wright's corporate frame extends it to community: the covenant people are gather
 - **Wolfram, ruliad as ontological ground (PRS-06).** Q.19 a.3's *not whatever God wills is necessary* finds the formal cousin in the ruliad's *necessary structure / contingent trajectories* distinction. *Formal-mathematical for ruliad; speculative for metaphysical identification.*
 - **Rohr, *The Universal Christ*; *Falling Upward*; CROSS-005 in the master wiki.** Q.20 a.4's *being-better-and-being-more-loved are the same fact* receives the contemplative-theological framing: *everything belongs*; the gradient of being-loved-more is the gradient of belonging-more-deeply. *Contemplative-theological.*
 - **Wright, *The Resurrection of the Son of God*; *Surprised by Hope*; *Paul and the Faithfulness of God*.** The corporate frame: covenant people are gathered by the substrate's love; mutual love within the covenant is the corporate-scale alter-love participating in substrate-love. *Methodological + scriptural-historical, substantial anchorage.*
-- **Stump, *Wandering in Darkness*; faith as second-person knowing (PRS-01, PRS-03).** Q.20's relational definition of love grounds the second-person-knowing thesis: love-as-knowing-of-persons is the relational mode in which the alter receives substrate-love and reciprocates. *Mature analytic case.*
+- **Stump, *Wandering in Darkness*; faith as second-person knowing (PRS-05, PRS-11 in the Stump-tradition wiki).** Q.20's relational definition of love grounds the second-person-knowing thesis: love-as-knowing-of-persons is the relational mode in which the alter receives substrate-love and reciprocates. *Mature analytic case.*
 - **CROSS-005 in the master wiki — love as fundamental.** The cross-tradition convergence (Fredrickson empirical, Rohr theological, Stump analytic-philosophical, Kastrup metaphysical) on love as ontologically fundamental. *Cross-tradition signal high-priority.*
 - **1 John 4:8 — *God is love*; John 3:16 — *for God so loved the world*; Romans 8 — *the whole creation groans*; Philippians 2:12 — *work out your salvation in fear and trembling*.** The scriptural ground that Q.20 in particular rests on; Wright's Pauline framing and Rohr's cosmic-scope reading both center on the same texts.
 
@@ -79,3 +79,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-08T18:27:34"
 last_qc_outcome: "pass"
 tags: [synthesis, day/011, theme/divine-will, theme/divine-love, theme/positivity-resonance, theme/active-inference, theme/cosmic-christ, theme/covenant]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

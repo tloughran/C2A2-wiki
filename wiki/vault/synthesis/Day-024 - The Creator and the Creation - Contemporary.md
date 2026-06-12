@@ -89,3 +89,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-06T22:31:36"
 last_qc_outcome: "pass"
 tags: [synthesis, day/024, theme/creation, theme/ex-nihilo, theme/dissociation, theme/ruliad, theme/temporal-beginning, theme/relation]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

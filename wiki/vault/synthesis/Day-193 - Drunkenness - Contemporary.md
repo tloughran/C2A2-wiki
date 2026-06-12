@@ -63,3 +63,6 @@ The project's claim is that a limited agent works out its salvation — its incl
 ## Where this leaves us
 
 Chastity opens here as the regulation of the strongest appetite; tomorrow (Q.152–153) ascends to virginity — the perpetual, kingdom-oriented renunciation — and to lust as the disorder of the generative appetite, with its remarkable map of how lust corrupts the whole practical-reasoning chain. The controller-and-policy reading carries directly into that map. Open thread: the "policy that selects the suspension" formalism is strong and reusable; a later synthesis on obedience or vows (II-II Q.104, Q.186 ff.) should reuse it for the structure of a self binding its own future choices.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]]

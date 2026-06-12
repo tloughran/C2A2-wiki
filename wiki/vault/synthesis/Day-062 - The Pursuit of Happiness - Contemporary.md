@@ -82,3 +82,6 @@ Wright's *Surprised by Hope* bears directly on the *what is wrong with our conte
 ## Where this leaves us
 
 Day 62 articulates the *negative-and-positive* contour of the central theme through Aquinas's exclusion arguments and contemplative-union conclusion. Tomorrow Habash takes us into Q.4 (those things required for happiness) and Q.5 (the attainment of happiness) — what *accompanies* the substantive flourishing (delight, vision, comprehension, rectitude of will, body, external goods, friends) and how the alter actually attains it. The contemporary frame engages with the *what is required* register through Fredrickson, Stump, and Friston's accompaniment-conditions, and the *attainment* register through Stump's grace-as-enabling-second-first-language frame.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

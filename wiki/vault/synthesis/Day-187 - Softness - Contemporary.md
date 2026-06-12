@@ -6,6 +6,7 @@ length_target_words: 1500
 length_actual_words: 1268
 length_ratio_to_target: 0.85
 length_tier: short
+length_note: "0.85x short target — both vices (Q.138) and the gift of fortitude (Q.139) fully covered; complete-not-truncated (short-and-substantive)."
 karpathy_wiki_sources:
   - "traditions/fredrickson/wiki.md + prs_triplets.md (PRS-05 broadened attention; PRS-01 isolation/decline)"
   - "traditions/friston/wiki.md (PRS-04 organism as active modeler; precision-weighting)"
@@ -17,8 +18,8 @@ evidence_strength_summary: "Habituation-to-pleasure as runaway precision = forma
 mind_first_reframe: "Softness and pertinacity are the two precision pathologies of a self-regulating agent — under-weighting the goal-prior (yielding to gentle pressure) and over-weighting the self-prior (clinging past reason) — and the gift of fortitude is firmness supplied from beyond the agent's own resources."
 central_theme_thread: "Softness is what it looks like when an individuated agent's perspective collapses to its immediate resources and loses the whole; the cure is not more grit but a gift from one who sees and wills more than the limited frame can — 'fear and trembling' read from the side of our insufficiency."
 tags: [synthesis, day/187, theme/regulatory-failure]
-last_qc_at: "2026-06-03T22:27:51"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-11T02:28:56"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 187 — Softness (Contemporary Parallel)
@@ -35,7 +36,7 @@ The inquiry-problem is **regulatory failure on both sides of the mean**. An agen
 
 The leading move comes from the active-inference framework recorded in the Friston-tradition wiki, read together with the broaden-and-build program in the Fredrickson-tradition wiki. Aquinas's "accustomed to pleasure" is, in the contemporary register, *runaway precision on appetitive priors*: the system's predicted reward baseline drifts upward with each indulgence, so deviations below it carry inflated precision and dominate policy selection. The agent is not choosing the small pleasure over the great good in a clear-eyed way; its model has been retuned so the small loss *looks* large. The Fredrickson program supplies the affective mirror: just as positive affect broadens and builds in an upward spiral, the habituation Aquinas describes is a downward spiral — narrowing attention, eroding the durable resources (PRS-01's "disconnection and decline"; PRS-05 on how affective state gates what the agent can attend to). McGilchrist's attention-as-ontological-act (PRS-05 in that wiki) adds that softness is finally a *failure of attention*: the agent stops attending to the whole and lets the fragment — this pressure, this absent pleasure — fill the field.
 
-For pertinacity, the resource is the same precision story turned on the self-model: vainglory over-weights the prior "I am right / I am excellent," so disconfirming evidence cannot update the policy. The Stump-tradition wiki, as Thomistic interlocutor, is useful here for keeping vainglory analyzed as a relational distortion — a misvaluing of others' attestation — rather than a mere cognitive bug.
+For pertinacity, the resource is the same precision story turned on the self-model: vainglory over-weights the prior "I am right / I am excellent," so disconfirming evidence cannot update the policy. The Stump-tradition wiki is useful here for keeping vainglory analyzed as a relational distortion — a misvaluing of others' attestation — rather than a mere cognitive bug.
 
 ## Solution (proposed, speculative)
 
@@ -56,9 +57,12 @@ Softness is what it looks like when an individuated agent's perspective collapse
 - **Habituation-to-pleasure ↔ runaway precision on appetitive priors** — the Friston-tradition wiki, PRS-04. *Why:* gives a mechanism for Aquinas's "custom makes the absence unbearable" without invoking weakness-of-will as a primitive. Evidence: **formal, speculative**.
 - **Downward spiral ↔ softness** — the Fredrickson-tradition wiki, PRS-01/PRS-05. *Why:* the affective mirror of broaden-and-build; narrowing attention erodes durable resources. Evidence: **empirical, medium-high**.
 - **Attention as ontological act ↔ softness as attentional failure** — the McGilchrist-tradition wiki, PRS-05; CROSS-003. *Why:* the soft agent lets the fragment fill the field and loses the whole. Evidence: **phenomenological, medium**.
-- **Vainglory as misvalued attestation ↔ pertinacity** — the Stump-tradition wiki, as Thomistic interlocutor. *Why:* over-weighting the self-prior is a *relational* distortion, not just a stuck posterior. Evidence: **philosophical/theological**.
+- **Vainglory as misvalued attestation ↔ pertinacity** — the Stump-tradition wiki. *Why:* over-weighting the self-prior is a *relational* distortion, not just a stuck posterior. Evidence: **philosophical/theological**.
 - **Gift of fortitude ↔ empowerment from beyond the frame** — the Wright-tradition wiki (Spirit, faithful improvisation). *Why:* courage for goods the perspective cannot yet see. Evidence: **theological**.
 
 ## Where this leaves us
 
 Tomorrow (Day 188, Q.140–141) closes fortitude with its precepts in the divine law and then opens the treatise on temperance proper — the most resource-bound of the virtues, governing the pleasures of touch tied to the agent's own survival and propagation. Open thread: Aquinas will rank temperance *below* justice and fortitude because it regards "only the individual." That ranking is itself a claim about scale — individual self-regulation versus the good of the many — and is worth pressing against Levin/Friston's scaling of agency from cell to community.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

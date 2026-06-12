@@ -97,3 +97,6 @@ The Wright-shaped reading is that this is not an individual project. It is a *co
 ## Where this leaves us
 
 Tomorrow (Day 108, Q.94-95) drops from the eternal level to the natural-law level: what is the rational creature's access? The Levin/Hoffman/Friston tools sharpen here. Q.94's claim that the natural law is *the same in general principles but variable in conclusions* is precisely what an interface-theoretic reading predicts: the deeper structure is invariant, the species- or culture-specific access varies. This is the territory where the synthesis becomes most contested — natural-law arguments about specific contemporary moral questions need to hold the *form-as-pattern* claim firmly while not over-extending tradition-specific conclusions. Open thread: how does the synthesis handle Aquinas's confident specific applications of natural-law reasoning (the host's examples on sexual ethics, etc.)? The interface-theoretic reading sets some humility constraints there.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

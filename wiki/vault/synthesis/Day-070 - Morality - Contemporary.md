@@ -92,3 +92,6 @@ The synthesis-in-progress that this entire project is exploring receives its sha
 ## Where this leaves us
 
 Day 70 closes the human-action-pipeline arc on the moral-evaluation register and articulates with full force the central-theme commitment that conscious agents are individuated by perspective-limitation while constitutively directed-formally toward the universal good. Tomorrow Habash takes us into Q.20 (goodness and malice in external acts) and Q.21 (consequences of human acts) — the *consequences* register of the moral-evaluation arc. The contemporary frame engages with how the alter's external act extends the interior-act's moral character into the world, and with how the consequences (foreseen and unforeseen) bear on the moral evaluation. The central-theme thread continues as the daily-task structure of acting-formally-aligned-while-materially-limited-and-bearing-the-consequences-with-others.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

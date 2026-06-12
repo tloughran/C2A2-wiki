@@ -67,3 +67,6 @@ This is where the central theme receives its ordo. The claim has always been tha
 ## Where this leaves us
 
 The arc from hope to charity is complete: hope as the goal-prior (Day 126), fear as its precision (127), despair and presumption as its two failures (128), charity as the coupling that binds the many into one (129), and now charity's growth and reach — an unbounded spiral gathering every open perspective, in proper order, into the loving whole. Aquinas continues in charity (II-II Q.26 onward: the order of charity in detail, then its acts — joy, peace, mercy, beneficence, almsgiving, fraternal correction). The synthesis is now positioned to take up charity's *acts*: what the binding does once it holds — how the loving whole, having gathered its perspectives, lives.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

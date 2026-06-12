@@ -36,7 +36,7 @@ A purely natural-virtue account of the moral agent confronts a hard limit: the a
 
 Wright (canonical works: *Resurrection of the Son of God*, *Paul and the Faithfulness of God*, *Surprised by Hope*) reads what faith, hope, and charity actually *are* in first-century Christian usage. Critically: Wright reads πίστις (*pistis*) not as private-mental-assent but as **covenant-loyalty toward the God of Israel made present in the risen Jesus**, ἐλπίς (*hope*) as confident expectation of **new creation** (resurrection-of-the-body, renewed earth), and ἀγάπη (*charity*) as the cruciform, other-directed love that **embodies** that loyalty and hope in concrete community. This is not the medieval scholastic decomposition; it is the first-century covenant-renewal grammar.
 
-Stump's PRS-form re-description of faith (PRS-09 in the Stump-tradition wiki) reads faith as **second-personal knowledge of a person** — knowledge-of (Francesca) rather than knowledge-that (a list of propositions about Francesca). This explains why Aquinas can say faith *precedes* love in the order of generation (you cannot love whom you do not know) while also placing charity ahead of faith in the order of perfection (the relationship deepens past mere acquaintance into union). Theological-philosophical, not empirical.
+Tom's PRS-form re-description of Stump on faith (PRS-11 in the Stump-tradition wiki) reads faith as **second-personal knowledge of a person** — knowledge-of (Francesca) rather than knowledge-that (a list of propositions about Francesca). This explains why Aquinas can say faith *precedes* love in the order of generation (you cannot love whom you do not know) while also placing charity ahead of faith in the order of perfection (the relationship deepens past mere acquaintance into union). Theological-philosophical, not empirical.
 
 Kastrup (analytic idealism, e.g., *The Idea of the World*) supplies a metaphysics in which the *infusion* claim is intelligible without supernatural-vs-natural dualism: if mind/consciousness is the ontological primitive and individual conscious agents are dissociated *alters* of Mind-at-Large, then dispositions toward the un-dissociated whole arrive from the **boundary itself**, not from inside the alter's optimization loop. "Infused" then means: not derivable from the alter's evidence stream; supplied at the boundary.
 
@@ -74,3 +74,6 @@ The deep central-theme question this article opens is: **whose perspective does 
 ## Where this leaves us
 
 Q.64 tomorrow turns to **the mean of virtue** and the **connection of the virtues** — the network-topology questions. Today's grace-as-scaffolding move makes the next question sharper: if the theological virtues are externally scaffolded, what couples them to the natural virtues, and how rigid is that coupling? Aquinas's answer (Q.65) is *charity*; the contemporary frame will agree but will reformulate charity as the *integration hub* of the agent's whole disposition-network.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

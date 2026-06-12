@@ -63,3 +63,6 @@ The project's claim is that conscious agents are individuated by the limits of t
 ## Where this leaves us
 
 This closes the prophecy treatise (Q.171–175) and, with it, the long arc through the charisms. The ascent has run from defeasible forecast to the threshold of the unmediated vision — the natural high-water mark of "more of the whole disclosed to a limited perspective" — and has, at that threshold, re-confirmed the limitation it momentarily exceeds. Open thread: the treatise turns next to *rapture's neighbors* and the remaining gratuitous graces (the gift of tongues, the word of wisdom and knowledge, miracles — Q.176 onward, Day 206+), and beyond them toward the active and contemplative lives (Q.179–182), where the cognitive ascent of these days is rejoined to the *loving* and *communal* telos the project insists is the point. Carry forward the central discipline established here: knowing more of the whole, even to the edge of vision, is a foretaste of union, not union itself.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]]

@@ -69,3 +69,6 @@ central_theme_thread: "Day 51 carries the central theme through the generational
 last_qc_at: "2026-06-07T08:20:27"
 last_qc_outcome: "pass"
 tags: [synthesis, day/051, theme/development, theme/inheritance, theme/sex-dimorphism, theme/transphysical-resurrection, theme/perspective-limitation]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

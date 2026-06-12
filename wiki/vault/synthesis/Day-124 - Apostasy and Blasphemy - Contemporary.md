@@ -65,3 +65,6 @@ This is the will-as-orientation face of the central theme. Each conscious agent 
 ## Where this leaves us
 
 The will-as-orientation thesis is now fully on the table. Tomorrow (Q.14-15, the sin against the Holy Spirit and the vices opposed to knowledge and understanding) takes it to its limit: the sin that attacks the very mechanism by which an agent could correct its orientation, and the cognitive failures — blindness of mind, dullness of sense — that flow from a disordered appetite. The self-undermining structure waiting there (a system disabling its own error-correction) is the natural endpoint of an account in which what you love determines what you can see.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

@@ -72,3 +72,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-10T00:24:45"
 last_qc_outcome: "pass"
 tags: [synthesis, day/034, theme/prima-materia, theme/form-and-matter, theme/morphogenetic-teleology, theme/emergence, theme/arrow-of-time, theme/temple-cosmology, theme/quantum-aristotelianism]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]]

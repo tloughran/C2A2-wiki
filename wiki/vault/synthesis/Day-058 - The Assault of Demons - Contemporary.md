@@ -81,3 +81,6 @@ Wright's covenanted-community frame extends: the substrate-network's pedagogical
 ## Where this leaves us
 
 Day 58 names the *outside-help* and *outside-threat* contours within which the embodied alter's daily-task work of becoming proceeds. Tomorrow Habash takes us into Q.115 *the action of the corporeal creature* and Q.116 *fate* — a shift from the angelic register to the natural-causal register, where the contemporary frame engages Wolfram, Carroll, and Levin on what *natural causation* means under mind-monism, and where Aquinas's anti-occasionalist commitment (real causal efficacy in created agents) is the bridge to the contemporary scientific picture.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

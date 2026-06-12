@@ -82,3 +82,6 @@ central_theme_thread: "Day 50 closes the prelapsarian anthropology arc on the bo
 last_qc_at: "2026-06-07T08:20:27"
 last_qc_outcome: "pass"
 tags: [synthesis, day/050, theme/tree-of-life, theme/substrate-sustenance, theme/eucharistic-typology, theme/transphysical-resurrection, theme/generation]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

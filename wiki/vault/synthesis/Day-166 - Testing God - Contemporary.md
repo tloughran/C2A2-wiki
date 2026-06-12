@@ -61,9 +61,12 @@ The perspective-limited agent who would be wholly delivered from limitation in a
 - **Friston PRS-04, PRS-07** (active inference; FEP substrate-independence) — Q.97's prohibition on tempting God maps onto the principle that an agent in homeostasis runs cheap, in-distribution tests, not extortionate out-of-distribution ones. *Empirical / mathematically formal.*
 - **Levin PRS-04, PRS-08** (substrate-independent cognition; cells as cognitive agents) — Q.96's distinction between licit observances grounded in the nature of the thing and illicit observances grounded in occult pact maps onto the difference between cells signaling within the morphogenetic field and cancers defecting from it. *Empirical.*
 - **McGilchrist PRS-05** (attention as ontological act) — the *mode* of testing (grasping vs. receiving) constitutes the kind of world the agent encounters. The medieval prohibition is a prohibition on a corrupted mode of attending. *Empirical (hemispheric neuroscience) + interpretive.*
-- **Stump PRS-01, PRS-06** (tradition-crossing inquiry; MacIntyre criterion) — licit observances are those validated by a living tradition's accumulated practice; the test for licit-vs-illicit is itself a tradition-internal achievement. *Philosophical / methodological.*
+- **Stump-wiki PRS-06 with Loughran-wiki PRS-08** (tradition-crossing inquiry; MacIntyre criterion) — licit observances are those validated by a living tradition's accumulated practice; the test for licit-vs-illicit is itself a tradition-internal achievement. *Philosophical / methodological.*
 - **Wright (canonical, Matt./Luke temptation; Pauline pistis)** — refusal to extort confirmation is the shape of trust in the covenant frame. *Theological / scriptural.*
 
 ## Where this leaves us
 
 The pair Q.96–97 opens, in the contemporary frame, the broader question of *what an agent owes the source of its corrections*. Tomorrow's Q.98–99 on perjury and sacrilege extends this from the consultative test to the costly signal: the oath as the agent's binding of itself to a future-honoring its present claim. If today's question is how to test the source without corrupting it, tomorrow's is how to bind oneself to one's own testimony without corrupting the binding.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]]

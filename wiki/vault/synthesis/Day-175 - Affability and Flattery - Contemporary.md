@@ -66,3 +66,6 @@ Loving unity is not only computed; it is *lived* among perspective-limited agent
 ## Where this leaves us
 
 Q.114–115 brought the long arc on truthfulness and its social surface to a close on the side of excess. Day 176 takes up the defect opposed to affability — quarrelsomeness or contention (Q.116) — and then turns to a new virtue, liberality (Q.117), opening the cluster on the right use of external goods. The signal-integrity and bond-building threads that have run from gratitude through honest warmth will give way to questions about possession and generosity: how the perspective-limited agent holds and shares the resources by which it acts.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]]

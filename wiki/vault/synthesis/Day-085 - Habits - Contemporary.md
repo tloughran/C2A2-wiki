@@ -87,3 +87,6 @@ evidence_strength_summary: "Habitual vs. goal-directed control, practice-induced
 tags: [synthesis, day/085, theme/habits, theme/passion-to-habit, theme/anger-effects, theme/dispositional-realism, theme/structural-pivot]
 last_qc_at: "2026-06-08T22:29:08"
 last_qc_outcome: "rewrote"
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

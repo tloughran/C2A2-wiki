@@ -46,7 +46,7 @@ Wright's critical realism gives the philosophical-of-history idiom: real referen
 - **Levin, morphogenetic teleology (canonical: *Cognitive Light Cones* program).** The single bioelectric goal-state pattern of an embryo carrying many tissues' targets without being decomposable into parts is the empirical mid-scale instantiation of *one essence, many ideas*. *Empirical with strong neuroscience anchorage at the developmental scale.*
 - **McGilchrist, *The Master and His Emissary* (canonical until wiki node).** Q.16 a.2's split between simple apprehension and composition-and-division is hemispherically clean: right-hemispheric gestalt grasping (no falsity possible) vs. left-hemispheric proposition construction (falsity becomes possible). *Cognitive-empirical; philosophical translation careful.*
 - **Wright, critical realism (canonical: *The New Testament and the People of God*).** Q.16's *adaequatio* doctrine is critical-realist before critical realism had a name; reality and intellect are two, truth is what holds when they conform, perspectival-but-real knowing tracks reality without exhausting it. *Methodological; substantial empirical anchorage in historical-Jesus and Pauline applications.*
-- **Stump, faith-as-knowledge-of-persons (PRS-01 and PRS-03 in the Stump-tradition wiki).** Q.16 a.6's *many truths in many created intellects* extends to the second-person mode of knowing in faith — creature-truth in the relational rather than purely propositional register. *Theological-philosophical; analytic case mature.*
+- **Stump, faith-as-knowledge-of-persons (PRS-05 and PRS-11 in the Stump-tradition wiki).** Q.16 a.6's *many truths in many created intellects* extends to the second-person mode of knowing in faith — creature-truth in the relational rather than purely propositional register. *Theological-philosophical; analytic case mature.*
 - **Rohr, contemplative epistemology (canonical: *The Universal Christ*; *Falling Upward*).** Q.16 a.2's apprehension-vs-composition split is the cataphatic-apophatic split in epistemological vocabulary; the contemplative mode holds both without collapsing one into the other. *Contemplative-theological; empirical adjacents in McGilchrist's hemispheric-attention research.*
 - **John 14:6 — *I am the way, the truth, and the life*; John 18:38 — *Pilate said to him, "What is truth?"*** The Christological grounding of Q.16 a.5 is direct; the contemporary Wright/Rohr framing fills in the historical-and-cosmic shapes.
 
@@ -85,3 +85,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-09T22:28:16"
 last_qc_outcome: "pass"
 tags: [synthesis, day/009, theme/divine-ideas, theme/truth, theme/transcendentals, theme/critical-realism, theme/active-inference, theme/hemispheric-modes]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

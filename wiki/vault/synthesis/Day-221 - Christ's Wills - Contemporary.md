@@ -57,3 +57,6 @@ This is the day the project's premise gets stated as a problem about *willing*. 
 ## Where this leaves us
 
 Q.17-18 establish that the one person who is both comprehensor and wayfarer (Day 220) is *one being* who *wills* with a real human will wholly conformed to the divine. Tomorrow (Day 222, "Unity of Operation") the *Summa* moves from willing to *acting*: how the two natures' operations concur in one work (Q.19), and — critically for the project — how Christ's action as *Head* extends its merit to the members who are "united to him as members to a head" (Q.19 a.4). The thread to carry forward: having seen a limited will freely conform to the whole, watch the treatise on Christ's *operation* for how that conformed agency becomes *incorporating* — how the one who aligns to the whole draws the many limited perspectives into one.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

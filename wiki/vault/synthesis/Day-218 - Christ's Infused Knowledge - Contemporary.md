@@ -57,3 +57,6 @@ The project's claim is that limited agents compute toward the whole "from our ow
 ## Where this leaves us
 
 Q.11-12 complete the treatise on Christ's knowledge: beatific (Q.10), infused (Q.11), and acquired (Q.12) — the whole spectrum from vision-of-the-whole to piecemeal-learning, all really present in one finite soul. Tomorrow (Day 219, "Christ's Passible Body") the *Summa* turns from knowledge to *power and defect*: Q.13 on the finite power of Christ's soul (omnipotence belongs to the divine nature alone) and Q.14 on the bodily defects He *freely* assumed. The thread to carry: having seen that the assumed mind is genuinely resource-bounded in its knowing, the project should watch whether the assumed *power* and *body* are limited in the same constitutive way — and whether their limitation, like the body's defects, is *chosen* rather than merely suffered.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

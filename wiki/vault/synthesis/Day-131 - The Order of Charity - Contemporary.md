@@ -70,3 +70,6 @@ Q.26 a.6 quietly hands the project its coordinate system. The "two principles" t
 ## Where this leaves us
 
 The order and act of charity are now in place: a two-pole field and the active, measureless, far-reaching move that lives in it. Aquinas turns next to charity's interior *effects* — joy and peace (Q.28-29), then its outward effects, mercy and beneficence (Q.30-31), then its enacted and corrective forms, almsgiving and fraternal correction (Q.32-33), before the disorders that oppose it (Q.34-35). Tomorrow's synthesis takes up the first of the effects: what the coupling *feels like* from inside when it holds — joy — and what it settles into — peace.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

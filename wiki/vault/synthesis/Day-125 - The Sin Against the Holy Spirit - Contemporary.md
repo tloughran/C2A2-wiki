@@ -64,3 +64,6 @@ The central theme says we work out salvation "aware of our limitations and our n
 ## Where this leaves us
 
 This closes the treatment of faith and its opposed vices on its sharpest note: the one failure that is structurally unrecoverable because it attacks recovery itself. The volume now turns toward hope (II-II Q.17 onward) — the very goal-prior whose loss is despair. Having seen what it means to destroy hope, the contemporary parallel is well positioned to take up hope directly: the expectation, held under perspective-limitation, that the target of the computation — loving unity with the whole — is genuinely reachable, and the grounds on which a finite agent may rationally hold it.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

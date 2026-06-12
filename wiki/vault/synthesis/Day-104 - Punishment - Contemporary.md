@@ -82,3 +82,6 @@ The Q.86–87 locus is where the project's central claim about *salvation as a c
 ## Where this leaves us
 
 Day 105 takes up Q.88–89: mortal and venial sin. The dynamical reframe developed across Days 101–104 — perspective-limitation, attractor capture, residual bias, communal repair — will press against the medieval mortal/venial distinction, which depends on a binary between the destruction of charity (mortal) and the mere weakening of order (venial). Open threads to carry forward: (a) whether the binary survives the dynamical reframe or is better recast as a continuum with a *practically* important threshold; (b) the question — already raised by Q.87 — of whether retributive punishment has any role at all in the contemporary account, or whether medicinal and communal-restoration senses exhaust the work.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]]

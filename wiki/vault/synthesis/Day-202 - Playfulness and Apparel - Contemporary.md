@@ -59,3 +59,6 @@ This day states the project's thesis in its own voice: "we are responsible for o
 ## Where this leaves us
 
 Today grounded union in bodily self-management among others. The treatise now climbs: Days 203–205 take up *prophecy* and *rapture* — knowing given from beyond the natural interface, up to Paul "caught up to the third heaven." Open thread: carry forward the "parts of a shared whole" frame — prophecy itself is described as a gift "given unto profit," for the church body, not the prophet's private possession; the coupling-to-the-whole logic established today is the right lens for reading why supernatural knowing is, from the start, ordered to others.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]]

@@ -82,3 +82,6 @@ Wright on covenanted-community as the locus where mean-policy-computation is sha
 ## Where this leaves us
 
 Day 67 articulates the hierarchical-and-practical-syllogism structure of intention and choice. Tomorrow Habash takes us into Q.14 (counsel) and Q.15 (consent) — the *deliberation-and-approval* register that *precedes* choice. The contemporary frame engages with model-based planning, multi-arm-bandit decision structures, and Friston's expected-free-energy as the formalism for analytic counsel proceeding from end backward to means.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

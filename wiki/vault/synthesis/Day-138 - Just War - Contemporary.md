@@ -61,3 +61,6 @@ The central claim says every limited perspective, when its limits are removed, i
 ## Where this leaves us
 
 War and strife resolved into one question — who acts for the whole — with the loving-unity telos pressing hard on every justification of force and binding it to the securing of peace. Aquinas continues the catalogue of disorders against peace and charity into the collective and the relational: Q.42-43, sedition and scandal. Day 139 takes up the multitude that secedes from the common good, and the subtler harm of the agent who, by word or example, draws a weaker perspective into its own fall.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]]

@@ -62,3 +62,6 @@ This is the day the project's central claim is staged most directly. The claim i
 ## Where this leaves us
 
 The daughters of lust opened a structured account of practical-reason corruption; tomorrow (Q.154–155) details the *species* of lust — graded, strikingly, by the breadth of relational order each violates — and ends with continence, the imperfect willpower that resists vehement desire without yet retraining the appetite. The collective-agent reading set up here (CROSS-069, role-specialization, coupling to the whole) becomes central to the species-grading, where exogamy is defended precisely as a way of "knitting humanity together." Open thread: the pipeline-corruption map is strong and should be reused as a positive template — a later synthesis on prudence (II-II Q.47 ff.) revisited could describe virtue as the *well-functioning* of the same perception–policy–action pipeline the daughters of lust corrupt.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]]

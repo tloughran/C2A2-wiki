@@ -58,3 +58,6 @@ This is the day the Christmas arc hands the project both halves of its central c
 ## Where this leaves us
 
 Q.35-36 close the Christmas arc with the project's whole shape: the person enters the limited world, the whole is made known under limitation (faith preserved), and yet to every condition "that none be excluded." With Q.36 the *Summa* finishes the infancy and turns next toward Christ's life and ministry (Q.37 onward — the circumcision, baptism, and public mode of life). The thread to carry forward: having seen the whole made known to *every kind* of limited perspective, watch the questions on Christ's *manner of life* for how the one who contains all perspectives chooses to *live among* the limited — and whether his mode of life models the loving-unity the project is computing toward. *(Open thread for follow-up: re-check the bridges-file rows for the Q.37+ life-of-Christ loci before drafting Day 231, in case the locus shifts toward the sacraments.)*
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

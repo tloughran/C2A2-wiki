@@ -16,17 +16,19 @@ length_tier: short
 fidelity_checked: true
 synthesis: "[[Day-160 - Sacrifice - Contemporary]]"
 tags: [summa, day/160, pars/2, q/84]
-last_qc_at: "2026-05-27T12:21:02"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-11T08:23:19"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 160 — Sacrifice
 
 > Context: Q.84 adoration; Q.85 sacrifice.
 
-[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa Theologiae in a way simple and insightful
+> Typo cleanup (QC 2026-06-11): Summa Year podcast -> Summa in a Year podcast (restored podcast name, both intro occurrences; ASR garbled "in a Year" as "Year").
 
-for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the Summa a day will seek to summarize St. Thomas's responses discovering the
+[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa Theologiae in a way simple and insightful
+
+for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the Summa a day will seek to summarize St. Thomas's responses discovering the
 
 brilliance of Aquinas and his Catholic faith is day 160. So let's get started. We're covering today questions 84 and 85 of the Secunda Secundae that is of
 

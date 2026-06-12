@@ -66,3 +66,6 @@ The synthesis holds that conscious agents are individuated by the limits of thei
 ## Where this leaves us
 
 Tomorrow's Q.120–121 lifts the gaze from goods to law and reverence: equity (the higher justice that corrects the letter by the intent) and piety (duty owed to parents and country). The bridge shifts toward McGilchrist's hemispheres — the letter-bound left and the context-holding right — and toward Levin's nested selves again, since piety is reverence for the larger agent one is part of. Open thread: whether the "defection" frame can be stated without importing more moral weight than Levin's biology licenses.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]]

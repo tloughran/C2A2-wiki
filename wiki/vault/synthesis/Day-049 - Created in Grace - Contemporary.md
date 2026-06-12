@@ -87,3 +87,6 @@ central_theme_thread: "Day 49 frames the central theme on the willed-and-governi
 last_qc_at: "2026-06-07T08:20:27"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/049, theme/original-justice, theme/grace, theme/integrated-passions, theme/mastership, theme/broaden-and-build]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

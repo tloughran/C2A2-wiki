@@ -60,3 +60,6 @@ Restitution is the central claim's repair-mechanism. The claim holds that each l
 ## Where this leaves us
 
 Justice has been shown repairing itself (restitution) and failing in its distributive form (respect of persons) — both turning on the proportionate place of each part in a real whole. Tomorrow (Day 150, Q.64–65) Aquinas reaches the vices most directly opposed to commutative justice: *murder* and the other injuries to the person — where the whole-over-part logic that has governed the entire treatise meets its hardest case, the taking of a life, and where the treatise's anthropocentric ranking of beings stands in sharpest tension with a mind-monist account of agency at every scale. The repair-over-excision theme opened here will press directly on that question.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

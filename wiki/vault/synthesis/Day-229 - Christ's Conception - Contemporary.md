@@ -57,3 +57,6 @@ This is the keystone figure (Day 220's comprehensor-and-wayfarer) pressed to its
 ## Where this leaves us
 
 Q.33-34 restate the wayfarer-and-comprehensor keystone at the very origin of the human life: whole-vision and most-limited embodiment given together from the first instant. Tomorrow (Day 230, "Christ's Nativity and Epiphany") the *Summa* brings the conceived one to *birth* (Q.35) — nativity regards the *person* (Theotokos) — and to *manifestation* (Q.36), made known not to all but to representatives of *every condition of humanity* "that none be excluded." The thread to carry forward: having seen the whole-seeing perspective at the threshold of one limited life, watch the manifestation questions for the whole made known *to* the limited — and to *every kind* of limited perspective, the loving-unity telos as radical inclusion.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

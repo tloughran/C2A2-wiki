@@ -61,3 +61,6 @@ The project's claim is that conscious agents are individuated by the limitations
 ## Where this leaves us
 
 This opens the appetite-by-appetite descent. Tomorrow (Q.148–149) takes up gluttony and sobriety — the disorder that fasting guards against, and the special virtue for the drink that most directly clouds the model. The reallocation reading set up here should carry forward: gluttony is the lower loop captured, sobriety the protection of the predictive cortex itself. Open thread: the "atonement as costly self-signal" move is doing real work and is the weakest-attested; a later contrition/penance synthesis should test it against the Friston account of costly action and the Fredrickson account of repair in relationships.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]]

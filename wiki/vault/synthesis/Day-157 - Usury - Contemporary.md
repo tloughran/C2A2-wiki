@@ -65,3 +65,5 @@ Usury is the economic case where the central claim does its most careful discrim
 
 The justice treatise's economic-injustice arc closes here. Tomorrow (Day 158, Q.80-81) Aquinas turns to the *potential parts of justice* — the virtues annexed to justice that fall short of its strict equality definition because the debt is unpayable — and opens the treatise on *religion* as the chief among them: rendering to God the worship due, though we can never pay back equally. The justice treatise pivots from horizontal (between humans) to vertical (toward God) — and the central claim follows it: loving unity has a higher pole as well as a horizontal field.
 
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

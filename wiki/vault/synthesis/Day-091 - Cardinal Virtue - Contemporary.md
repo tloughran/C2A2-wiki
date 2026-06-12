@@ -75,3 +75,6 @@ Cut any one and the others degrade. This is Gregory the Great's chiasmus, and it
 ## Where this leaves us
 
 Q.62 tomorrow turns to the **theological virtues** — faith, hope, charity — which take God himself as their formal object. The contemporary version of that question is: what *non-natural* dispositions are added when the agent's loving-unity computation gets re-anchored under conscious-realist monism (mind/consciousness as ontological primitive, not as one feature among many)? Aquinas says the theological virtues are *infused*; the contemporary frame will ask whether some computational priors are scaffolded from outside the agent's own optimization loop — and if so, by what.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

@@ -98,3 +98,6 @@ evidence_strength_summary: "Fast cortical pattern-completion (Hawkins), hierarch
 tags: [synthesis, day/089, theme/virtue, theme/intellectual-virtues, theme/prudence, theme/wisdom, theme/unity-of-virtues, theme/sapientia]
 last_qc_at: "2026-06-08T06:30:19"
 last_qc_outcome: "pass"
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

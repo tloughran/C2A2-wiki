@@ -6,6 +6,7 @@ length_target_words: 1500
 length_actual_words: 1256
 length_ratio_to_target: 0.84
 length_tier: short
+length_note: "0.84x short target — Q.142's two vices and Q.143's taxonomy covered, with the culpability argument developed in full; complete-not-truncated (short-and-substantive)."
 karpathy_wiki_sources:
   - "traditions/friston/wiki.md (PRS-04 active modeler; precision-weighting; runaway priors)"
   - "traditions/fredrickson/wiki.md (downward spiral; broaden-and-build)"
@@ -17,8 +18,8 @@ evidence_strength_summary: "Intemperance-as-runaway-precision / habit-hardening 
 mind_first_reframe: "Intemperance is a runaway endogenous prior — a self-reinforcing appetitive set-point the agent trained and could have retrained — and insensibility its mirror suppression of necessary set-points; the 'childish' label marks the developmental fact that the loop hardens as plastic windows close."
 central_theme_thread: "This article shows perspective-limitation is not static but self-deepening: by its own repeated acts an agent contracts its field until the petty fills it and the whole is lost — formation runs whether or not we attend to it."
 tags: [synthesis, day/189, theme/maladaptive-habit]
-last_qc_at: "2026-06-03T22:27:52"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-11T02:29:09"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 189 — Childish Vice (Contemporary Parallel)
@@ -37,7 +38,7 @@ The leading resource is the active-inference framework recorded in the Friston-t
 
 The Levin-tradition program adds why the *childish* framing is apt rather than merely rhetorical. Developmental systems have plastic windows that close: set-points laid down early and reinforced become progressively harder to repattern. Aquinas's intuition — discipline the unruly appetite *early, immediately, regularly*, before the hardening — is a recognizably developmental claim about plasticity and its narrowing. The synthesis should resist over-claiming here (this is analogy, not established neuroscience of virtue), but the structural fit is real.
 
-On culpability, the Stump-tradition wiki is the right interlocutor. Aquinas argues intemperance is *more* blameworthy than cowardice (a.3): the coward is partly excused because the fear of death "can stun a man," reducing voluntariness, whereas the intemperate man "does really want specifically, voluntarily, this particular donut or this particular woman." Translated: cowardice is committed under overwhelming exogenous precision (an aversive signal so strong it swamps deliberation), while intemperance is committed under endogenous, self-cultivated precision the agent had time and daily opportunity to retune. Greater voluntariness, greater fault.
+On culpability, the resource is the Stump-tradition wiki. Aquinas argues intemperance is *more* blameworthy than cowardice (a.3): the coward is partly excused because the fear of death "can stun a man," reducing voluntariness, whereas the intemperate man "does really want specifically, voluntarily, this particular donut or this particular woman." Translated: cowardice is committed under overwhelming exogenous precision (an aversive signal so strong it swamps deliberation), while intemperance is committed under endogenous, self-cultivated precision the agent had time and daily opportunity to retune. Greater voluntariness, greater fault.
 
 ## Solution (proposed, speculative)
 
@@ -58,9 +59,12 @@ This article is about how a limited perspective can *narrow itself further* — 
 - **Custom-became-necessity ↔ hardening of a high-precision prior** — the Friston-tradition wiki, PRS-04. *Why:* gives Augustine's feedback loop a formal shape and explains why correction gets costlier over time. Evidence: **formal, speculative**.
 - **Downward spiral ↔ intemperance** — the Fredrickson-tradition wiki. *Why:* narrowed appetitive states erode the resources needed for self-correction. Evidence: **empirical, medium**.
 - **Closing plastic windows ↔ the "childish" framing** — the Levin-tradition wiki. *Why:* discipline-early is a developmental-plasticity claim, not mere moralism. Evidence: **analogical, medium-low**.
-- **Voluntariness ↔ culpability ranking** — the Stump-tradition wiki, as Thomistic interlocutor. *Why:* intemperance has more deliberative slack than fear-driven cowardice, hence more authorship. Evidence: **philosophical**.
+- **Voluntariness ↔ culpability ranking** — the Stump-tradition wiki. *Why:* intemperance has more deliberative slack than fear-driven cowardice, hence more authorship. Evidence: **philosophical**.
 - **Formation-in-community ↔ disciplining appetite early** — the Wright-tradition wiki. *Why:* the practices of the covenanted people are where set-points get laid down. Evidence: **theological**.
 
 ## Where this leaves us
 
 Tomorrow (Day 190, Q.144–145) turns to the two integral parts named here but not yet unfolded: *shamefacedness* (the fear of disgrace) and *onestum* (the spiritual beauty of a life ordered to reason). If today's vice "dims the light of reason from which all the clarity and beauty of virtue arises," tomorrow asks what that clarity and beauty positively *are* — and the answer, beauty as clarity-plus-proportion, opens a direct bridge to Hoffman and Kastrup on the transparency of an interface to the whole. Open thread: the taxonomy in Q.143 (continence, humility, meekness, modesty) is a ready-made map of the self-regulation cluster and could be tabulated against the attention/precision framework in a later pass.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

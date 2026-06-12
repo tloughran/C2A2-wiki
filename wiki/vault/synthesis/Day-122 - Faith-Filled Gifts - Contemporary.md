@@ -74,3 +74,6 @@ This article is where the project's epistemology becomes explicit. Conscious age
 ## Where this leaves us
 
 We have an account of how a limited agent can really understand without comprehending, and why that understanding is gated by the will's orientation. Tomorrow (Q.10-11, unbelief and heresy) turns to the failure modes: what it is to refuse the assent, where that refusal is seated, and the disputed medieval articles on coercion and toleration — the first place this volume will require the contemporary parallel to depart sharply from Aquinas rather than reframe him.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

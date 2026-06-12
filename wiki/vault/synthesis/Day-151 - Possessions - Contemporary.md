@@ -63,3 +63,5 @@ External possessions are the most concrete arena of the central claim. Each agen
 
 The treatise on justice has turned from injustices against the person (life, Day 150) to injustices against external possessions (theft, judicial wrong; Day 151). Restitution and re-integration carry forward as the proper repair of any defection. Tomorrow (Day 152, Q.68-69) the procedural side opens: how the political whole *finds out* that a part has defected — accusation, the defendant's response, the offices of legal procedure — the polity's distributed truth-tracking apparatus.
 
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

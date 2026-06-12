@@ -6,6 +6,7 @@ length_target_words: 2200
 length_actual_words: 1707
 length_ratio_to_target: 0.78
 length_tier: medium
+length_note: "0.78x medium target — Q.140 is a short precepts-coda and Q.141's eight articles are covered through the two load-bearing problems (homeostasis, scale); complete-not-truncated."
 karpathy_wiki_sources:
   - "traditions/friston/wiki.md + prs_triplets.md (PRS-01 agency without vitalism; PRS-04 active modeler; precision-weighting = temperance per bridges)"
   - "traditions/fredrickson/wiki.md (broaden-and-build; vagal tone / self-regulation)"
@@ -17,8 +18,8 @@ evidence_strength_summary: "Precision-weighting / homeostatic regulation as temp
 mind_first_reframe: "Temperance is well-calibrated interoceptive precision — the embodied agent tracking its necessary appetitive set-points by need rather than maximization — and Aquinas's demotion of it as 'merely individual' is only half right, since internal self-regulation is the homeostatic floor on which collective goods stand."
 central_theme_thread: "Temperance is the agent computing the good under the scarcity of its own body — the most constitutive perspective-limitation there is — working out salvation at the level of the flesh by ordering embodiment toward the whole rather than escaping it."
 tags: [synthesis, day/188, theme/self-regulation-and-scale]
-last_qc_at: "2026-06-03T22:27:51"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-11T02:28:57"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 188 — Temperance (Contemporary Parallel)
@@ -37,7 +38,7 @@ The second is a **scale problem**, and it is the more provocative. Aquinas ranks
 
 ## Resource
 
-For the first problem, the leading resource is the active-inference framework recorded in the Friston-tradition wiki — and the bridges file makes the identification directly: *precision-weighting as temperance*. An embodied agent maintains itself by minimizing the long-run surprise of its interoceptive states; appetite is the signal that a homeostatic set-point (caloric, reproductive) is being predicted to drift. Temperance, in this register, is well-calibrated precision on those interoceptive priors: the agent neither under-weights the appetite into the life-denying defect Aquinas will name tomorrow as *insensibility*, nor over-weights it into the runaway excess of intemperance. The strength of the parallel is that Aquinas already frames temperance as *moderation set by need* — "the rule of temperance... is that a man not take any more or any less of sensible pleasurable goods... than is required by reason for his life and for his station" (a.6). "No more or any less, set by need" is, almost verbatim, a homeostatic-regulation criterion. Augustine's image of using the goods of this life "with the moderation of a user, not the attainment of a lover," and Savonarola's image of the Christian who "takes only as much medicine as is necessary to sustain health," are both statements of optimal set-point tracking rather than maximization.
+For the first problem, the leading resource is the active-inference framework recorded in the Friston-tradition wiki: *precision-weighting as temperance*. An embodied agent maintains itself by minimizing the long-run surprise of its interoceptive states; appetite is the signal that a homeostatic set-point (caloric, reproductive) is being predicted to drift. Temperance, in this register, is well-calibrated precision on those interoceptive priors: the agent neither under-weights the appetite into the life-denying defect Aquinas will name tomorrow as *insensibility*, nor over-weights it into the runaway excess of intemperance. The strength of the parallel is that Aquinas already frames temperance as *moderation set by need* — "the rule of temperance... is that a man not take any more or any less of sensible pleasurable goods... than is required by reason for his life and for his station" (a.6). "No more or any less, set by need" is, almost verbatim, a homeostatic-regulation criterion. Augustine's image of using the goods of this life "with the moderation of a user, not the attainment of a lover," and Savonarola's image of the Christian who "takes only as much medicine as is necessary to sustain health," are both statements of optimal set-point tracking rather than maximization.
 
 The Fredrickson-tradition wiki adds the empirical biology. Its program treats *vagal tone* as a biomarker of self-regulatory capacity and of the ability to return to baseline after arousal (an active research question in that wiki asks whether vagal tone can index community health). Temperance has a measurable physiological signature: the capacity to down-regulate appetitive arousal and recover equilibrium is exactly what high vagal tone tracks. This keeps the synthesis honest — there is real, present-day evidence that self-regulation of bodily drive is a trainable, embodied capacity, not merely a moral abstraction.
 
@@ -59,7 +60,7 @@ Temperance is the agent computing the good under the scarcity of its *own body* 
 
 ## Bridges
 
-- **Precision-weighting ↔ temperance** — the Friston-tradition wiki, PRS-01/PRS-04; the bridges file's explicit identification. *Why:* temperance as well-calibrated interoceptive precision; "no more or any less than need" is a homeostatic criterion. Evidence: **formal, medium**.
+- **Precision-weighting ↔ temperance** — the Friston-tradition wiki, PRS-01/PRS-04. *Why:* temperance as well-calibrated interoceptive precision; "no more or any less than need" is a homeostatic criterion. Evidence: **formal, medium**.
 - **Vagal tone ↔ the physiology of self-regulation** — the Fredrickson-tradition wiki (vagal tone as self-regulation biomarker). *Why:* gives temperance a measurable, trainable embodied signature. Evidence: **empirical, medium-high** (identification with the virtue is an extrapolation).
 - **Scaling of agency ↔ the individual/many boundary** — the Levin-tradition wiki; CROSS-005. *Why:* the agent's internal homeostasis is the precondition for participating in collective goods, pressing Aquinas's ranking. Evidence: **empirical-grounded but philosophical extrapolation**.
 - **Love 2.0 / positivity resonance ↔ temperance as condition of union** — the Fredrickson-tradition wiki; CROSS-005 (love as fundamental in Fredrickson, Stump, Kastrup). *Why:* an intemperate agent cannot stably enter the resonance couplings by which communities form. Evidence: **empirical (resonance) + theological (union)**.
@@ -68,3 +69,6 @@ Temperance is the agent computing the good under the scarcity of its *own body* 
 ## Where this leaves us
 
 Tomorrow (Day 189, Q.142–143) takes the vices opposed to temperance — *insensibility* by defect and *intemperance* by excess — and Aquinas's striking claim that intemperance is a *childish* sin: unchecked appetite, like an undisciplined child, hardens into necessity. That is the runaway-precision / maladaptive-habit story in its sharpest form, and it pairs directly with today's set-point material. Q.143's three-part taxonomy of temperance (integral, subjective, annexed parts) also opens the door to the self-regulation cluster as a whole. Open thread carried forward: today's claim that internal temperance is the floor under collective intelligence should be tested tomorrow against the culpability argument — Aquinas holds intemperance *more* blameworthy than cowardice precisely because it is less excused by overwhelming resource-pressure.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

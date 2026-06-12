@@ -86,3 +86,6 @@ The structural impossibility of universal-hatred (Q.29 a.6) preserves the centra
 ## Where this leaves us
 
 Day 75 closes the love/hatred pair (Q.26-29) on the central-theme commitment that hatred is structurally derivative of love and structurally correctable through perspective-widening, second-personal care, and contemplative practice. Day 76 will take us into Q.30 (concupiscence/desire) and Q.31 (delight/pleasure) — the next pair in the irascible/concupiscible passion arc, continuing the affective-phenomenology project. The central-theme thread continues: the alter's affective regimes are computational signal of substrate-source-integration-vs-disintegration, and the alter's daily-task work is the cultivation of these regimes toward integrative-flourishing under perspective-limitation.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

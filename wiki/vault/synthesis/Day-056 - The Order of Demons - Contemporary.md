@@ -68,3 +68,6 @@ Today's day shows the *limit case* of perspective-limitation: an agent at the hi
 ## Where this leaves us
 
 Day 56 establishes that catastrophic dispositional mis-orientation is *structurally distinct* from the substrate-coupling-depth that gives an agent its kind. Tomorrow Habash takes us into Q.111 *action of angels on man* and Q.112 *the mission of the angels* — the positive complement to today's negative case. The contemporary frame is sharpened: substrate-network influence on embodied creatures runs in both orientations, and the work of dispositional formation (Day 57's *salvation in fear and trembling* register) is the embodied alter's task within that influence-field.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

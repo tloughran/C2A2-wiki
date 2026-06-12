@@ -16,7 +16,7 @@ length_ratio_to_target: 0.607
 length_note: "Long-tier transcript distilled to a thematic accompaniments-and-attainment register over Q.4–Q.5 (16 articles). Per the constitution (Summa.md and the length-policy memory), long-tier syntheses 'pick the two or three most generative threads from the transcript rather than mirroring every article'; the relational-flourishing and grace-enabled-attainment threads carry the load and adding length would be padding."
 mind_first_reframe: "Happiness's accompaniment-conditions (vision, delight, comprehension, rectitude, body, fellowship of friends) preserve as the constitutively relational structure of the alter's integrative act under mind-monism; grace is the substrate-source's communication of its own integration-pattern to the perspective-limited alter."
 central_theme_thread: "Loving unity is constitutively relational; the alter works out salvation 'with' the friends-becoming-aligned-together under the substrate-network's pedagogical care, not solitarily — and Q.4 a.4's rectitude-of-will is the daily-task content of dispositional formation."
-last_qc_at: "2026-06-05T22:26:59"
+last_qc_at: "2026-06-11T04:22:04"
 last_qc_outcome: "pass"
 tags: [synthesis, day/063, theme/relational-flourishing, theme/friendship]
 ---
@@ -84,3 +84,6 @@ Q.4 a.4's *rectitude of the will* is doing keystone work in today's day: the wil
 ## Where this leaves us
 
 Day 63 establishes the *constitutively relational* structure of flourishing and the *grace-enabled* character of full attainment. Tomorrow Habash moves into Q.6 (the voluntary and the involuntary) and Q.7 (the circumstances of human acts) — the *Summa*'s formal treatment of human action begins. The register shifts from the substantive content of flourishing to the structural analysis of how human actions are evaluated. The contemporary frame engages McGilchrist on attention-and-action, Friston on policy-selection-under-uncertainty, and Stump on knowledge-and-action — and the central-theme thread continues as the daily-task character of *salvation in fear and trembling* gets its first close-grained formal treatment.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

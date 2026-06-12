@@ -57,3 +57,6 @@ The project's banner is that the limited "work out [their] salvation in fear and
 ## Where this leaves us
 
 Q.29-30 give the project its keystone for *free consent*: a limited perspective freely aligning to the One who sees more, representatively for the many. Tomorrow (Day 228, "Christ's Ancestry") the *Summa* turns from Mary's *yes* to the *conception itself* (Q.31-32) — the matter from which Christ's body was formed (from Adam's race, David's line) and the active principle (the Holy Spirit). The thread to carry forward: having seen the free consent that opens the Incarnation, watch the conception questions for how *form* comes to *matter* — and whether the informing of Christ's flesh, attributed to the Spirit who is Love, reads as the loving-unity telos operating at the very origin of the Incarnation.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

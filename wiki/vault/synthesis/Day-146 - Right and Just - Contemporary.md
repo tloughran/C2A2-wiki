@@ -58,3 +58,6 @@ The treatise on justice is, for this project, the treatise on how limited perspe
 ## Where this leaves us
 
 Justice has been given its object — the right, a real equality owed between persons, known from within a standpoint and (on the monist reading) modeled as a real relational target rather than a convention. Tomorrow (Day 147, Q.58–59) Aquinas defines justice itself — "the perpetual and constant will to render to each one his right" — and makes the claim that will carry the next several episodes: that justice has a *real mean*, an objective standard unlike the agent-relative mean of the passions, and that it scales from one-to-one dealings to the common good. The through-line opens here: if the right is a real relation, then the virtue of rendering it is the virtue of standing rightly toward the whole one is part of — at every scale.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

@@ -81,3 +81,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-10T00:24:56"
 last_qc_outcome: "pass"
 tags: [synthesis, day/035, theme/genesis, theme/temple-cosmology, theme/big-bang, theme/critical-realism, theme/cosmic-emergence, theme/new-creation, theme/lemaitre]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]] · [[traditions/arkanihamed/prs_triplets|Arkani-Hamed PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

@@ -86,3 +86,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-07T00:21:53"
 last_qc_outcome: "pass"
 tags: [synthesis, day/029, theme/angels, theme/cognition, theme/compression, theme/free-energy, theme/htm, theme/infused-species, theme/perspective-limitation, theme/self-knowledge]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]]

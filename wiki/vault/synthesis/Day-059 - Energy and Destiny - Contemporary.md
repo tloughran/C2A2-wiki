@@ -81,3 +81,6 @@ Wright on providence (his Romans 8 readings) grounds this register scripturally:
 ## Where this leaves us
 
 Day 59 establishes that real causal efficacy at every level is the contemporary mind-monist commitment, structurally continuous with Aquinas's anti-occasionalism, and that *fate* names a relational pattern within the substrate-prior structure rather than a determinate force. Tomorrow Habash takes us into Q.117 (the action of man — teaching, illumination, will) and Q.118 (the production of man as to the soul). The register pivots from the metaphysics-and-fate register to the *one-human-affecting-another* register, where teaching, formation, and generation become the questions, and the contemporary frame engages Hawkins on concept-formation, McGilchrist on hemispheric pedagogy, and Levin on developmental morphogenesis.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]] · [[traditions/arkanihamed/prs_triplets|Arkani-Hamed PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

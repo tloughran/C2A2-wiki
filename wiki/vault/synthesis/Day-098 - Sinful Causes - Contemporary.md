@@ -77,3 +77,6 @@ The deepest hit today is Q.75 a.4's *indirect efficient* mode — *one sin cause
 ## Where this leaves us
 
 Today's question-pair gives the architecture-level account of where sin lives in the agent (the will-and-reason coupling, primarily, with sensuality as secondary host) and what causes it (internal: reason/will; external: influence-without-compulsion; and: prior sins reshape the agent's substrate for further sin). This is the most actionable section of the sin treatise so far — every causal mode named is a place where a contemporary mind-monist agent-care practice can intervene. Tomorrow's Q.76-77 will dig into *ignorance* and *the passions* — the two great vectors by which an agent's policy goes astray short of full malice — and into the Johannine triad (concupiscence of the flesh, of the eyes, pride of life) as the canonical map of self-love's deformations. Day 100 will then face *malice* itself, the most morally weighty case.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

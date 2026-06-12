@@ -67,3 +67,6 @@ This episode is where the central claim becomes operational. The claim states th
 ## Where this leaves us
 
 Sedition named the multitude's secession from the common good; scandal named the corruption that passes between coupled members and the heavy responsibility of those who perceive more. Both presuppose a real whole whose unity can be ruptured or whose members can be misled — and both point past themselves to the question of what it would be to perceive the whole rightly and to order all things from that perception. Aquinas turns there next: Q.44-45, the precepts of charity and the gift of wisdom. Day 140 takes up wisdom as *connaturality* — knowing the whole by being made like it — and peace as "the tranquility of order," the closest Aquinas comes, in his own words, to naming the loving unity this project has been tracking from the start.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]]

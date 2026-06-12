@@ -114,3 +114,6 @@ Rohr's reading attaches: the agent's perspective limitation is *not* the ultimat
 ## Where this leaves us
 
 Tomorrow (Day 115, Q.108-109) closes the law treatise (Q.108 — what the new law contains) and opens the grace treatise (Q.109 — the necessity of grace). The central-theme reading is at its strongest there: Q.109's careful articulation of why we *cannot* love God above all things without grace, and yet why God's commands are not impossible, is the medieval formulation of the precise insight the central theme needs — limited perspectives cannot bootstrap into the loving-unity end, *and* they nonetheless do reach it, *because* grace operates in and through them. Open thread: how does the synthesis hold the "two-fold help" of Q.109 a.9 (habitual grace + actual grace) without flattening the dynamic structure of the agent's cooperation? This is the central-theme question, framed by Aquinas.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]]

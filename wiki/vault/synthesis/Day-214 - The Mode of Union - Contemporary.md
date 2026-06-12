@@ -59,3 +59,6 @@ Yesterday the whole took a limited perspective *as its own*; today we learn *how
 ## Where this leaves us
 
 Tomorrow (Day 215, III Q.5-6) completes this opening movement of the treatise: *which parts* of human nature were assumed (a true earthly body, a rational soul, a human intellect — a *complete* humanity, "irrational flesh" otherwise) and *in what order* (one not of time but of dignity and causality — flesh through the medium of the soul, the soul through the medium of the intellect, the whole through the medium of the parts only because the agent's intention of the whole comes first). The open thread the host hands forward: the order-of-assumption articles will say, in the idiom of medieval faculty-psychology, that *the whole is prior to the parts in the intention of the agent* — a claim that maps cleanly onto the morphological-whole reading and closes the question of just how complete, and how unified, the assumed perspective is.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

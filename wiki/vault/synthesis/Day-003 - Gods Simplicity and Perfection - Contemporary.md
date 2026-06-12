@@ -78,3 +78,6 @@ central_theme_thread: "Divine simplicity is what conscious agents would see if t
 last_qc_at: "2026-06-07T02:28:18"
 last_qc_outcome: "pass"
 tags: [synthesis, day/003, theme/divine-simplicity, theme/divine-perfection, theme/metaphysical-keystone, theme/analogy-of-being]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

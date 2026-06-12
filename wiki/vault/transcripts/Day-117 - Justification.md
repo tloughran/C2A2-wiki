@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-117 - Justification - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/117, pars/I-II, q/112-113]
-last_qc_at: "2026-06-11T00:29:45"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-11T16:22:37"
+last_qc_outcome: "pass"
 ---
 
 # Day 117 — Justification (Q.112–113: the cause of grace; the effects of grace)

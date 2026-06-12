@@ -77,3 +77,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-10T22:27:06"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/030, theme/angelic-knowing, theme/dissociative-alter, theme/conscious-agent-networks, theme/active-inference, theme/structural-privacy, theme/morning-evening-knowledge]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]]

@@ -57,3 +57,6 @@ This is the day the treatise on the assumed humanity hands the project its centr
 ## Where this leaves us
 
 Q.15-16 close the treatise on the assumed humanity: its grace (Q.7-8), its knowledge (Q.9-12), its power and bodily defects (Q.13-14), and now its defects of soul and the communication of idioms (Q.15-16), crowned by the wayfarer-comprehensor. Tomorrow (Day 221, "Christ's Wills") the *Summa* turns to Christ's *operation* — the two wills and the unity of operation (Q.18-19) — pressing how one person who is both comprehensor and wayfarer *acts*: whether a divine and a human will coexist without conflict, the next form of the two-registers-in-one-person question. The thread to carry forward: having received its keystone figure (the comprehensor who walks the road), the project should watch the treatise on Christ's *willing* for how the same simultaneity shows up in *action* — and whether the harmony of two wills models the loving-unity of a limited will conformed to the will of the One who perceives the whole.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

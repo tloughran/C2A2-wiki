@@ -67,3 +67,6 @@ Joy-with-sorrow is the precise affective signature of the perspective-limited ag
 ## Where this leaves us
 
 The interior effects are in place: joy as the bond's felt signature, peace as its settled, integrated state, and a surprising alliance with Aquinas over the reality of nature's drive toward rest. Aquinas turns next from charity's interior effects to its *outward* ones — mercy and beneficence (Q.30-31), the bond turning toward the neighbor's misery and acting on it. Tomorrow's synthesis takes up mercy: what coupling looks like under the sign of the other's suffering, and why being *affectable* — the very thing the impassible God lacks until the Incarnation — turns out to be the condition of compassion.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

@@ -20,7 +20,7 @@ evidence_strength_summary: "Hebrews 11:1 read as joint cognitive-volitional stat
 mind_first_reframe: "Charity-as-form-of-faith is, under mind-monism, the active de-dissociation of the alter from its ground — what makes the held cognitive structure operative as a real relational coupling between alter and ground; Levin's empirical re-grounding of form licenses the strong hylomorphic reading, and positivity resonance gives the measurable biology."
 central_theme_thread: "The lifeless/living distinction is the central claim at the personal level — faith provides the cognitive structure for cooperation; charity makes the cooperation operative; without charity the agent has the map but not the journey toward the loving unity that is the computational telos."
 tags: [synthesis, day/120, theme/faith, theme/charity, theme/form]
-last_qc_at: "2026-06-05T00:20:19"
+last_qc_at: "2026-06-11T04:22:06"
 last_qc_outcome: "pass"
 ---
 
@@ -85,3 +85,6 @@ The lifeless/living distinction is precisely where the project's central claim i
 ## Where this leaves us
 
 The structure of the virtue is in place: faith in the intellect, charity as form. Tomorrow extends into the articles of faith (objects of belief) and the specific structure of the creed. The contemporary parallel will need to handle the move from faith's *formal* object (First Truth) to its *material* objects (the various articles), which is where Aquinas's analysis of how one orientation grounds many specific beliefs becomes load-bearing. The interface-theory reading already in place — single orientation toward what the interface presupposes, many specific representations within the interface — extends naturally.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

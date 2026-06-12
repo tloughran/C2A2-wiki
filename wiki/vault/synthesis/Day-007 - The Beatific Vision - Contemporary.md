@@ -22,7 +22,7 @@ Aquinas opens Q.12 by naming three ways finite intellects can know God: (1) imme
 
 **(1) Immediate knowing** — beatific vision proper. Mind-monism's analog is alter-integration at the limit: the inferential boundary dissolves enough that the substrate is known *as such* rather than under the icons of the interface. This is not knowing-by-inference (Friston's standard active inference); it is the limit case where the agent's generative model perfectly matches the substrate, which makes the inference machinery quiescent because there is nothing left to infer. Hoffman's interface theory gives the formal name for what is happening: the icons are *lifted*, not abolished; the underlying reality is known directly because the icons are no longer the medium.
 
-**(2) Mediate-but-true knowing** — faith. Aquinas defines this later in the *Summa* as a habit of the mind whereby eternal life is begun in us, making the intellect assent to what is not apparent. Stump's *Wandering in Darkness* and her account of *faith-as-knowledge-of-persons* (PRS-01 and PRS-03 in the Stump-tradition wiki) bear directly on this article: faith is second-person knowing — assent to what is not apparent — rather than a propositional inspection of an essence, which is precisely the mode of knowing available when the substrate cannot be seen as such. Wright adds the corporate form: faith in the Pauline sense (*pistis*) is covenant-fidelity, the people-of-God's mode of knowing the resurrected Messiah and through him the Father.
+**(2) Mediate-but-true knowing** — faith. Aquinas defines this later in the *Summa* as a habit of the mind whereby eternal life is begun in us, making the intellect assent to what is not apparent. Stump's *Wandering in Darkness* and her account of *faith-as-knowledge-of-persons* (PRS-05 and PRS-11 in the Stump-tradition wiki) bear directly on this article: faith is second-person knowing — assent to what is not apparent — rather than a propositional inspection of an essence, which is precisely the mode of knowing available when the substrate cannot be seen as such. Wright adds the corporate form: faith in the Pauline sense (*pistis*) is covenant-fidelity, the people-of-God's mode of knowing the resurrected Messiah and through him the Father.
 
 **(3) Indirect knowing through nature** — Romans 1:20. *His invisible nature has been clearly perceived in the things that have been made*. This is the path of the Five Ways (Day 2), the *via negativa* (Day 3), and the contemporary natural-theological convergence: from the structure of conditioned things, the unconditioned ground can be inferred. Carroll's poetic naturalism stops at the regularities; mind-monism takes the further step that the regularities themselves are mind-at-large under the interface. Either way, the *form* of indirect knowing is preserved: from the world's structure, the world's source is approached.
 
@@ -62,7 +62,7 @@ McGilchrist's hemispheric account gives the cognitive shape. Right-hemisphere wh
 
 ## Bridges
 
-- **PRS-01 and PRS-03 in the Stump-tradition wiki — faith as knowledge of persons.** Q.12's second mode of knowing (mediate-but-true, by faith) lands on Stump's *Wandering in Darkness* account: faith is second-person knowing, not propositional assent. Stump's *Wandering in Darkness* develops the faith-as-knowledge thesis; Wright's Pauline work develops the corporate-covenant shape of faith.
+- **PRS-05 and PRS-11 in the Stump-tradition wiki — faith as knowledge of persons.** Q.12's second mode of knowing (mediate-but-true, by faith) lands on Stump's *Wandering in Darkness* account: faith is second-person knowing, not propositional assent. Stump's *Wandering in Darkness* develops the faith-as-knowledge thesis; Wright's Pauline work develops the corporate-covenant shape of faith.
 - **CROSS-001 in the master wiki — substrate-independence.** Q.12 a.4–5's claim that knowing-the-substrate requires the knower to be *raised* to the substrate's mode is the contemporary cross-tradition convergence on substrate-as-prior-to-instantiation.
 - **FLAG-003 in the master wiki — Kastrup × Friston.** The light-of-glory dynamics formalize as the alter's free-energy reaching the substrate-identical limit case; the dissociative boundary lifts as the inferential machinery converges on the substrate's structure.
 - **Hoffman, *The Case Against Reality* (canonical until wiki node):** the cat-in-the-dark-room cognition aside is interface theory in classical vocabulary; beatific vision is what *icons stepping out of the way* would look like.
@@ -106,3 +106,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-07T02:28:28"
 last_qc_outcome: "pass"
 tags: [synthesis, day/007, theme/divine-unity, theme/beatific-vision, theme/light-of-glory, theme/cognition, theme/interface-theory]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

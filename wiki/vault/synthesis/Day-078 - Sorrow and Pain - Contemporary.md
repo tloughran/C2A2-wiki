@@ -70,3 +70,6 @@ Q.35 a.7's "inward pain exceeds outward" is the moment where perspective-limitat
 ## Where this leaves us
 
 Day 79 (Q.36–37) follows the same arc into the *causes and effects* of sorrow. Q.37 a.4's claim that sorrow is the *most physically harmful* of the passions is where Aquinas's intuition meets the modern psychoneuroimmunology literature. The open thread we carry: if sorrow's harm is mediated by HPA-axis and inflammatory load (Fredrickson PRS-11), then the *remedies* on Day 80 are not metaphors but mechanisms — sympathy, tears, contemplation, sleep, baths each have an identifiable physiological pathway. The synthesis can name this without losing the theological register Aquinas requires.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/fredrickson/prs_triplets|Fredrickson PRS]]

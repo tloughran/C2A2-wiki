@@ -60,3 +60,6 @@ The central claim holds that agents are individuated by the limits of their pers
 ## Where this leaves us
 
 Discord became speech (contention) and then structure (schism): the partial perspective hardening into a faction and seceding from the real whole it belonged to. Aquinas now widens the lens from the body of the Church to the body politic and the use of force: Q.40-41, on war and on strife. Day 138 asks when coercion serves the common good of a whole and when it is mere private violence — the question of authority, and of which agent acts for the whole.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]]

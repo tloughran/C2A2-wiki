@@ -139,4 +139,4 @@ with think Catholic and I cannot wait to see you tomorrow [Music]
 - Habash emphasizes Augustine's framing: original sin is concupiscence under the formal aspect of disorder; not lust simpliciter, but the soul's powers no longer ordered by the higher power.
 - Q.83 (subject): original sin's primary subject is the essence of the soul (the form), not its powers, because it is transmitted through generation -- the soul receives the form already disordered.
 - Critical move: 'one in essence and many in person' -- Habash on the Adam-as-one-nature transmission. Treats the human race as a hylomorphic unity, with Adam as the principle.
-- Flag for synthesis: this is exactly Stump's PRS-14/15 (hylomorphic metaphysics of corporate substance) territory -- Aquinas's account of original sin already presupposes that humanity is a real composite entity, not just an aggregate.
+- Flag for synthesis: this is exactly the territory of PRS-14/15 in the Stump-tradition wiki (hylomorphic metaphysics of corporate substance) -- Aquinas's account of original sin already presupposes that humanity is a real composite entity, not just an aggregate.

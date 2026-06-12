@@ -105,3 +105,6 @@ The *fomes* (Q.91 a.6) is the empirical fact that this is hard. The Levin/Fristo
 ## Where this leaves us
 
 Tomorrow (Day 107, Q.92-93) drills into the eternal law itself. The agenda from this entry's perspective: examine what Aquinas does and does not claim about *all* law being derived from the eternal law (Q.93 a.3), and how he handles the case of *unjust* laws — important contemporary territory where the simple form-as-pattern account needs careful supplementation. Open thread: how does the law-as-pattern reading interact with the *fomes* claim? If natural-law access is interface-real but interface-mediated, then perspective-limitations are not merely epistemic — they shape what counts as good for *this* agent. The synthesis must hold this without collapsing into relativism.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

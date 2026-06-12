@@ -60,3 +60,6 @@ This day states the project's metaphysics of individuation in Aquinas's own theo
 ## Where this leaves us
 
 The general architecture of states is laid; the invariant (charity) is named; the contemplative life stands as goal and the active as its instrument. Tomorrow Aquinas takes up the *state of perfection* in particular (Q.184) — what "Christian perfection" is, in whom it chiefly consists, and how the precept of charity bears on it. Carry forward the day's two results: the many limited perspectives are the *means* by which the simple whole is manifested and re-integrated in love, and across every state the one thing measured is the degree of that love.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/arkanihamed/prs_triplets|Arkani-Hamed PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]]

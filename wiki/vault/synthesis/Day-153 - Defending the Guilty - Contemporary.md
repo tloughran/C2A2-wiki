@@ -64,3 +64,5 @@ The procedural treatise (Q.68-71) is the central claim worked out in legal-insti
 
 Tomorrow (Day 154, Q.72-73) the treatise turns from injustices of *deed* (theft, judicial wrong, procedural corruption) to injustices of *word*: reviling (face-to-face dishonor) and backbiting (damaging reputation behind the back). The same apparatus reading carries forward — the polity's collective cognition runs on information about persons, and verbal injustice corrupts the information channels through which *fama* is constituted.
 
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

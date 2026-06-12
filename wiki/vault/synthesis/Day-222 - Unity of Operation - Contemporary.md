@@ -56,3 +56,6 @@ The project holds that loving unity is the telos toward which limited perspectiv
 ## Where this leaves us
 
 Q.19-20 turn the conformed will (Day 221) into an *incorporating* operation: the one who aligns to the whole acts as a Head whose merit reaches the members. Tomorrow (Day 223, "Christ's Prayer and Priesthood") the *Summa* takes up Christ's *prayer* (Q.21) and *priesthood* (Q.22) — how the Head *intercedes* for the members and *mediates* their union with God, "able for all time to save those who draw near to God through him" (Heb 7:25). The thread to carry forward: having seen the many incorporated into one mystical person, watch the treatise on Christ's priesthood for how that one person *sustains* the union — mediation as the ongoing work of holding the limited perspectives in the whole.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

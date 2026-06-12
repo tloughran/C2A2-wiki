@@ -58,3 +58,6 @@ The project writes from "form as empirically real and scaling (Levin)" as one of
 ## Where this leaves us
 
 Q.31-32 place form-bearing matter and Love-as-active-principle at the conception's threshold. Tomorrow (Day 229, "Christ's Conception") the *Summa* completes the conception (Q.33-34): the body "perfectly formed and animated in the first instant," and — restating the Day-220 keystone — Christ a "perfect comprehensor... from the first instant of his conception." The thread to carry forward: having seen form come to matter by Love, watch the perfection-of-conception questions for the return of the wayfarer-and-comprehensor figure at the very start of the human life — the perspective that already beholds the whole while inhabiting a just-begun, limited body.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

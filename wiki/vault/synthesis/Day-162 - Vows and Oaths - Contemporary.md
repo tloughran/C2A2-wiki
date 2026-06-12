@@ -19,7 +19,7 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (CROSS entries on commitment and identity-over-time)"
 evidence_strength_summary: "Empirical-formal on precision-weighting and commitment devices in decision neuroscience (Friston-adjacent literature on policy stickiness). Empirical on developmental canalization (Levin lineage). Theological-strong on Pauline pistis (Wright) and on faith as second-personal commitment (Stump). The reframe of vow-as-precision-fixing is speculative-integrative."
 tags: [synthesis, day/162, theme/commitment-device, theme/identity-over-time, pars/II-II, q/88-89]
-last_qc_at: "2026-06-04T06:29:43"
+last_qc_at: "2026-06-11T08:23:20"
 last_qc_outcome: "pass"
 ---
 
@@ -47,7 +47,7 @@ The C2A2 paradigm offers a convergent multi-tradition resource.
 
 **McGilchrist** supplies the hemispheric reading. The left hemisphere is the instrument of commitment-to-the-chosen-path — focused, narrow, willing to ignore counter-evidence in order to execute. The right hemisphere is the instrument of recalibration — open, holistic, attentive to what doesn't fit. A healthy vowed life requires both: the left's grip on the policy, the right's awareness of when the world has changed enough that the vow itself must be revisited. Aquinas's distinction between vows admitting dispensation and solemn vows that do not maps onto this: solemn vows assert that the world *will not change enough* to warrant revisiting.
 
-**Stump** supplies the personalist reframe (Stump's *Wandering in Darkness* and her work on faith as second-personal knowledge — see PRS-01 in the Stump-tradition wiki, Tom's PRS-form record of her account of faith). A vow is not a contract with a proposition; it is a sustained orientation toward a Person. The Aquinian definition of vow as a *promise made to God* presupposes the Person-relation that Stump's work makes contemporary.
+**Stump** supplies the personalist reframe (Stump's *Wandering in Darkness* and her work on faith as second-personal knowledge — see PRS-11 in the Stump-tradition wiki, Tom's PRS-form record of her account of faith). A vow is not a contract with a proposition; it is a sustained orientation toward a Person. The Aquinian definition of vow as a *promise made to God* presupposes the Person-relation that Stump's work makes contemporary.
 
 **Wright** supplies the scriptural-historical anchor. Jesus's apparent prohibition of oaths in Matthew 5 ("let your yes be yes") is, on Wright's reading, not the abolition of vows or oaths but a critique of the Pharisaic *casuistry* that exploited oath-categories to evade real commitment. Pauline *pistis* in *Paul and the Faithfulness of God* is precisely covenant-fidelity-as-vow: God's *pistis* toward Israel and Israel's expected *pistis* in return. The vow-structure is the architecture of covenant.
 
@@ -73,7 +73,7 @@ Aquinas's article on the more-meritorious-because-vowed act now reads with new f
 
 - **PRS-02 in the Friston-tradition wiki** (active inference: policy selection under expected free energy) — the formal core of the precision-fixing reframe. *Formal, strong.*
 - **PRS-04 and PRS-08 in the Levin-tradition wiki** (canalization, developmental commitment) — the biological analogue of a vow in tissue. *Empirical, strong.*
-- **PRS-01 in the Stump-tradition wiki** (Tom's PRS-form record of Stump's faith-as-second-personal-knowledge work) — the personalist reframe of "promise made to God." *Philosophical-theological, primary on the person-relational dimension.*
+- **PRS-11 in the Stump-tradition wiki** (Tom's PRS-form record of Stump's faith-as-second-personal-knowledge work) — the personalist reframe of "promise made to God." *Philosophical-theological, primary on the person-relational dimension.*
 - **Wright, *Paul and the Faithfulness of God*, ch. 7 and ch. 10** on *pistis* as covenant fidelity, and Wright's reading of Matthew 5 in *Jesus and the Victory of God* — the scriptural anchor that Christ's apparent oath-prohibition is critique of evasive casuistry, not abolition of vows. *Theological, primary on the Pauline-Synoptic locus.*
 - **McGilchrist, *The Master and His Emissary*** on hemispheric specialization for commitment-versus-recalibration — interpretive, suggestive, not a controlled experiment but a useful organizing frame. *Clinical-historical, moderately strong.*
 - **Rohr, *Falling Upward*** on the contemplative who has said one yes — *theological-mystical*, secondary anchor.
@@ -81,3 +81,6 @@ Aquinas's article on the more-meritorious-because-vowed act now reads with new f
 ## Where this leaves us
 
 Tomorrow's question — adjuration and hymns — turns from *self-binding* to *other-binding* and to *self-modulation through praise*. The same perspective-limitation logic will reappear in different geometry: how does one limited agent invoke the unlimited witness in order to bind *another* limited agent, and how does the same invocation, turned inward as song, modulate the praising agent's own state? Watch for the appearance of the *self-modulation* loop that the Q.91 articles on praise quietly introduce.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

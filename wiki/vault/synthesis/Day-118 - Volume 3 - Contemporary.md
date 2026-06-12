@@ -21,7 +21,7 @@ evidence_strength_summary: "Merit as recursive divine self-gift: theological. Ch
 mind_first_reframe: "Merit is the agent-alter's contributive participation in the form of the larger composite (covenant people / body of Christ) that the embedding system is constituting through the agents; faith is the first virtue the installed wider prior makes available, the cognitive-affective state in which the alter is oriented toward the wider mind it cannot directly perceive."
 central_theme_thread: "Merit ramifies the central claim into community — loving unity is computed not just in the individual but in the form being built across individuals; faith is the entry condition; the cycle runs from installed prior through cooperative action to a real composite that includes its contributors."
 tags: [synthesis, day/118, theme/merit, theme/faith, theme/transition]
-last_qc_at: "2026-06-05T00:20:19"
+last_qc_at: "2026-06-11T16:22:38"
 last_qc_outcome: "pass"
 ---
 
@@ -85,3 +85,6 @@ The opening of faith ties the same thread. Faith is the *first* orientation of t
 ## Where this leaves us
 
 Prima Secundae is closed. Secunda Secundae is open. Faith is the first virtue treated. Tomorrow's articles unpack the act of faith itself — the Augustine formula "to think with assent" — and address the necessity of faith for salvation. The contemporary parallel will need to handle the "necessity above natural reason" claim head-on, because the project's central theme requires that the agent's natural perspective is *constitutively* limited; faith is then not a supplement to natural reason but the structural opening through which the wider mind becomes available.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

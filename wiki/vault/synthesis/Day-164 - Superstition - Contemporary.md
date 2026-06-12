@@ -18,8 +18,8 @@ karpathy_wiki_sources:
   - "wiki/traditions/rohr/wiki.md (the contemplative critique of magical religion)"
 evidence_strength_summary: "Empirical-formal on miscalibrated-prior learning and pseudo-pattern detection (Friston, Wolfram lines). Strong empirical on operant-conditioning superstition (Skinner literature). Theological-strong on Pauline diagnosis of idolatrous reasoning (Wright). The reframe — superstition as bad ontology made ritually visible — is integrative and lines up multiple convergent traditions."
 tags: [synthesis, day/164, theme/ontology-and-ritual, theme/causal-model-error, pars/II-II, q/92-93]
-last_qc_at: "2026-06-04T06:29:44"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-11T14:27:12"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 164 — Superstition (Contemporary Parallel)
@@ -71,10 +71,13 @@ The central theme cuts cleanly here. The perspective-limited agent cannot, from 
 - **PRS-01 and PRS-03 in the Hoffman-tradition wiki** (interface theory; icons-vs-world) — central frame for the worship-aimed-at-icon error. *Computational-formal, contested-empirical.*
 - **PRS-02 in the Friston-tradition wiki** (miscalibrated priors; over-fit to coincidence) — formal account of superstitious learning. *Formal, accumulating empirical support.*
 - **PRS-02 in the Wolfram-tradition wiki** (computational irreducibility; the human pattern-detector over-extending) — deeper warning about whole classes of human ritual error. *Formal, suggestive.*
-- **Wright on Romans 1:18–25** — Pauline diagnosis of idolatrous reasoning as fallen-perspective error. *Theological, primary on the scriptural locus.*
+- **Wright on Romans 1:18–25** — Pauline diagnosis of idolatrous reasoning as fallen-perspective error. *Theological; the scriptural locus is load-bearing.*
 - **Kastrup analytic-idealist constraint on the population of the cosmos** — metaphysical filter on what targets can coherently be worshipped. *Metaphysical, speculative.*
-- **Rohr, contemplative critique of magical-causal religion** — corrective against treating ritual as compulsion of divine response. *Theological-mystical, secondary anchor.*
+- **Rohr, contemplative critique of magical-causal religion** — corrective against treating ritual as compulsion of divine response. *Theological-mystical.*
 
 ## Where this leaves us
 
 Tomorrow's question — idolatry and divination — gives the substantive case studies for the diagnosis we have just framed. Aquinas will work out *why* idolatry is the gravest of sins, *what causes* it in human history, and how divination (foretelling the future) parses into three species each routed through a different illegitimate source. Watch for the appearance of the *epistemic-source* question: which sources of information about the contingent future are legitimate, and why?
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]]

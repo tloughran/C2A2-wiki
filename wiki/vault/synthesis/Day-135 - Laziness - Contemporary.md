@@ -68,3 +68,6 @@ After naming the computation toward loving unity (Day 133) and the charitable pr
 ## Where this leaves us
 
 The charity treatise now has both its light and its shadow: the bond, its order, act, effects, and enacted forms — and the two ways the perspective-bounded agent fails to live in it, by sealing itself off (hatred) or by giving up the climb (sloth). Aquinas continues in the Secunda Secundae toward the precepts of charity and then the remaining theological and cardinal virtues — prudence and justice ahead. The project carries forward the through-line this batch sharpened: loving unity is a computation each limited perspective runs toward a whole it does not yet see; charity is the bond that runs it; correction is how perspectives run it together; and hatred and sloth are the two terminal ways the run is abandoned — refusing the whole, or refusing the work.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]]

@@ -73,3 +73,5 @@ Q.83 is the Summa's most explicit articulation of the central claim. The perspec
 
 Tomorrow (Day 160, Q.84-85) Aquinas turns to the *external* acts of religion — adoration and sacrifice. Where today named the interior orientation of devotion and the address-act of prayer, tomorrow names the embodied enactment: bodily reverence (adoration) and the offered gift (sacrifice). The same alignment-with-providence reading carries forward into its bodily and material expressions, with Day 160 setting up the long unfolding of religion's external acts (oaths, vows, tithes, observance — Q.86-100+) that occupies the next several weeks.
 
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

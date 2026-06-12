@@ -67,3 +67,6 @@ This is the day the central theme is spoken aloud by the source. The claim has b
 ## Where this leaves us
 
 Mercy and beneficence give charity its outward, enacted form, and a.3 has handed the project its own thesis in the source's voice: love is rationed because the lover is finite. Aquinas presses the enacted form further into its most demanding and most corrective cases — almsgiving and *fraternal correction* (Q.32-33), where charity must not only help the neighbor but, sometimes, tell him the truth he does not want to hear. Tomorrow's synthesis takes those up — and finds, in Christ's escalation protocol of Matthew 18, something very close to the C2A2 dialogue mechanism itself.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]]

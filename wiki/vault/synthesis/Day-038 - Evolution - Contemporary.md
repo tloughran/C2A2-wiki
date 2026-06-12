@@ -73,3 +73,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-07T04:24:27"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/038, theme/evolution, theme/sabbath, theme/temple-cosmology, theme/trinitarian-creation, theme/humani-generis, theme/morphogenesis]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/wolfram/prs_triplets|Wolfram PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]]

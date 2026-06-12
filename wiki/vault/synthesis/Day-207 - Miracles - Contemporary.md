@@ -60,3 +60,6 @@ The day states the project's discipline twice and its telos once. The *disciplin
 ## Where this leaves us
 
 The charisms are finished; the treatise on the lives has begun. Tomorrow Aquinas dwells on the higher of the two — the *contemplative life* (Q.180–182), Mary's portion examined in itself: what its act is, what disposes to it, and why it is called "better." Carry forward both of today's lessons: power over the interface is not inclusion in the whole, and the active life of working-out is *for* the contemplative vision of the whole it serves.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]]

@@ -75,3 +75,6 @@ The Q.82–83 locus is where the project's central claim about *individuation-by
 ## Where this leaves us
 
 Day 103 takes up Q.84–85: the capital vices (one sin as cause of another) and the effects of sin as corruption of the good of nature. Both will press hard on the broaden-and-build / right-hemispheric-closure machinery developed here and on Day 101. Open thread to carry forward: the difference between *original* sin as inherited tilt and *capital* vices as the characteristic attractor states perspective-limited agents fall into when the broadening practices fail. The capital-vice question is one synthesis where the empirical evidence is strong and the metaphysical reframe is correspondingly tight.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

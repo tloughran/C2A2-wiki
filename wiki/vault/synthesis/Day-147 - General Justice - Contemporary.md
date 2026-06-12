@@ -59,3 +59,6 @@ The real mean is the project's central claim seen from the side of justice. The 
 ## Where this leaves us
 
 Justice now has its definition, its objective standard (the real mean), its two scales (general and particular), and its opposite (injustice as defection). Tomorrow (Day 148, Q.60–61) Aquinas turns to *judgment* — justice exercised under uncertainty, where a limited perspective must decide the right about another — and to the two species of particular justice, *commutative* (the one-to-one equality of exchange) and *distributive* (the proportional ordering of common goods to the parts of the whole). The nested architecture opened here carries directly into that division: commutative justice is the part-to-part relation, distributive justice the whole-to-part relation — the same two scales, now named.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

@@ -83,3 +83,6 @@ Day 100 lands the central theme from the *terminal* end. Q.79 a.4: *every evil i
 ## Where this leaves us
 
 Day 100 closes the cause-of-sin treatise and marks the project's one-hundred-day mark. The full causal landscape of sin is now mapped: external (Q.75; influence-without-compulsion; God as cause of the act qua act, not of the defect), internal-by-ignorance (Q.76), internal-by-passion (Q.77), internal-by-malice (Q.78), and the cosmic-scope ordering of all of it (Q.79 a.4). The next stretch — Q.80-89 — will move into *the effects of sin* and into *original sin*, where the analysis turns from *causes* to *consequences*, and from *the individual agent* to *the inheritance through the human form*. Then the great treatise on *law* (Q.90-108) opens, in which Wright's voice on Torah and Pauline new-law will become central. We will reach the end of the Prima Secundae before May closes.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

@@ -62,3 +62,5 @@ Accusation is one of the project's clearest cases for the central claim. No part
 
 Tomorrow (Day 153, Q.70-71) the procedural apparatus extends to witnesses (when one is bound to testify, when natural law overrides civil compulsion — e.g., the confessional seal) and to counsel (the lawyer's duty to defend the poor, the limit of defending an unjust cause). The same distributed-inference reading carries forward: each role is a bounded component of the polity's truth-finding, and the role's integrity is the apparatus's integrity.
 
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/stump/prs_triplets|Stump PRS]] · [[traditions/wright/prs_triplets|Wright PRS]]

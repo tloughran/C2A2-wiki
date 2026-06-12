@@ -47,7 +47,7 @@ Q.83–84 frames perspective-limitation epistemologically. Each alter's free cho
 - **PRS-01 in the Kastrup-tradition wiki — mind as ontological primitive.** Q.84 a.5's *participated likeness of the uncreated light* lands on the alter's cognitive priors as partial expression of the substrate's pattern; God's universal causality (Q.83 a.1) preserved as the substrate-pattern instantiating itself as the alter's structure rather than necessitating from outside.
 - **McGilchrist tradition wiki — hemispheric architecture of judgment.** Q.83 a.1's *act of comparison in the reason* requires right-mode contextual whole-grasping integrated with left-mode articulate decision; CROSS-013 (Hoffman × McGilchrist split-brain) anchors bi-hemispheric individuation empirically.
 - **Wright, scriptural ground — *the choice itself is in us but presupposes the help of God* (Aquinas's Jeremiah reading).** The covenant-with-God frame preserves: free choice is internal to the alter; it presupposes the substrate's pattern that constitutes the alter as an agent at all.
-- **Rohr, *The Universal Christ* (canonical fallback while wiki node is planned).** The phantasm as icon-of-the-divine-pattern: every particular sensible carries, faithfully traced, partial recognition of the always-already-present pattern. *Contemplative-mystical register.*
+- **Rohr, *The Universal Christ*.** The phantasm as icon-of-the-divine-pattern: every particular sensible carries, faithfully traced, partial recognition of the always-already-present pattern. *Contemplative-mystical register.*
 
 ## Where this leaves us
 
@@ -75,6 +75,9 @@ karpathy_wiki_sources:
   - "rohr (canonical fallback): *The Universal Christ* — phantasm as icon-of-the-always-already-present pattern"
 mind_first_reframe: "Q.83's libero arbitrio is preserved as compatibilist-formal: free choice is the agent's real computation under FEP with policy distribution under-determined within the means-space; God's universal causality survives as the substrate's pattern instantiating itself as the alter's structure rather than necessitating from outside. Q.84's phantasm is structurally Hoffman's icon — the alter's perspective-limited representation of what the icon is an icon of. Active-intellect-abstracting-essence-from-phantasm is the cortical hierarchy compressing sensory streams into invariant categorical representations under predictive coding (HTM-as-cortical-FEP, CROSS-011). Q.84 a.5's participated-likeness-of-the-uncreated-light is the alter's cognitive priors as partial inheritance of the substrate's pattern."
 central_theme_thread: "Each alter's free choice is real internal computation, the substrate's pattern operating in-the-mode-of-being-this-alter; each alter's knowing operates on icons (phantasms) that are the structural form of perspective-limitation in cognition. Salvation in fear and trembling on the epistemological register is the progressive refinement of the alter's icons toward better fit with the substrate's pattern — without ever becoming the substrate itself in the natural state, which is reserved for the beatific limit case."
-last_qc_at: "2026-06-04T02:31:19"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-11T06:27:25"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/043, theme/free-will, theme/phantasm, theme/interface-theory, theme/abstraction, theme/active-inference, theme/agency-at-every-scale]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/kastrup/prs_triplets|Kastrup PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]]

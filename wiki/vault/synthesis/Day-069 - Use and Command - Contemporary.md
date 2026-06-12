@@ -89,3 +89,6 @@ Wright on *renewing the mind* (Romans 12:2) as the deliberate management of appr
 ## Where this leaves us
 
 Day 69 articulates the layered-control execution architecture and the leverage-points where deliberate command can shape lower-layer dynamics indirectly. Tomorrow Habash takes us into Q.18 (the good and evil of human acts in general) and Q.19 (the goodness and malice of the interior act of the will) — the moral-evaluation arc proper. The contemporary frame engages with the *object-circumstance-end* triple, the *erring-conscience* problem, and the *conformity-to-divine-will* keystone (Q.19 a.10) — which is, on the contemporary frame, the conformity-to-substrate-source-priors that the central theme names as loving unity.
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/mcgilchrist/prs_triplets|McGilchrist PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

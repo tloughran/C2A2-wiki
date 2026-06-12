@@ -63,3 +63,6 @@ central_theme_thread: "Conscious agents are individuated by the limitations of t
 last_qc_at: "2026-06-07T04:24:26"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/037, theme/genesis, theme/temple-cosmology, theme/image-of-god, theme/priestly-vocation, theme/cognitive-light-cones]
+
+---
+**Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]]
