@@ -16,15 +16,17 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-191 - Fasting - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/191, pars/II, q/146]
-last_qc_at: "2026-06-03T12:21:23"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-12T16:22:40"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 191 — Fasting
 
+> Typo cleanup (QC sweep 2026-06-12): suma → Summa (episode intro). Verified against raw ASR refetched 2026-06-12.
+
 *Aquinas treats abstinence (Q.146) and its chief act, fasting (Q.147): the measured restraint of food and drink ordered by reason, undertaken for the bridling of concupiscence, the freeing of the mind for contemplation, and satisfaction for sin.*
 
-[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's suma
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa
 
 Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the
 

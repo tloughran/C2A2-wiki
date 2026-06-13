@@ -16,11 +16,13 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-195 - Kinds of Lust - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/195, pars/II, q/154]
-last_qc_at: "2026-06-03T12:21:25"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-12T16:22:42"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 195 — Kinds of Lust
+
+> Typo cleanup (QC sweep 2026-06-12): the suma → the Summa (at [13:44]). NB: Habash says "is day 194" in the episode intro although this is Day 195 — present in the raw ASR, preserved as spoken, not corrected. Verified against raw ASR refetched 2026-06-12.
 
 *Aquinas treats the species or "kinds" of lust (Q.154) — fornication, adultery, and the rest, graded by their offense against reason and against others — and continence (Q.155), the firmness of will against vehement desire.*
 
@@ -198,7 +200,7 @@ whether the subject of continence is the concupiscible power. Where is this virt
 
 Therefore, what is the aspect of man which this virtue is augmenting? And it is not in the concupiscible passions which we listed and described earlier in
 
-[13:44] the suma because that is what temperance is about along with the subjective parts of temperance. The other kinds of temperance. Continence on the other hand
+[13:44] the Summa because that is what temperance is about along with the subjective parts of temperance. The other kinds of temperance. Continence on the other hand
 
 is a potential part annexed virtue to temperance. It is similar to temperance in that it curbs or restrains the faculty which it modifies. But the
 

@@ -16,11 +16,13 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-183 - Ambition - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/183, pars/II-II, q/130-131]
-last_qc_at: "2026-06-02T16:45:39"
+last_qc_at: "2026-06-12T08:36:33"
 last_qc_outcome: "rewrote"
 ---
 
 # Day 183 — Ambition
+
+> Typo cleanup (QC sweep 2026-06-12): magnanmity → magnanimity (6×); weather presumption → whether presumption; sum 10 → Summa 10; honor deres → honor derives (within the Aquinas quote, ST II-II Q.131 a.1; Dominican-fathers wording "derives"); some feet beyond → some feat beyond (ASR homophone). Verified against raw ASR refetched 2026-06-12.
 
 Day 183 treats two vices of disordered self-regard opposed to magnanimity: presumption (attempting beyond one's power) and ambition (the inordinate desire for honor).
 
@@ -34,7 +36,7 @@ We're covering today questions 130 and 131 of the Secunda Secundae that is of pr
 
 [00:39] podcasts is the one generously provided to me by Ave Maria Press. The five volume set translated by the fathers of the English Dominican province which you can
 
-now get at a discounted price from Ave Maria Press's site by typing in the code sum 10. And so here we go. Article one weather presumption is a sin. Aquinas
+now get at a discounted price from Ave Maria Press's site by typing in the code Summa 10. And so here we go. Article one whether presumption is a sin. Aquinas
 
 looks at the natural order and observes, these are my examples, that rabbits don't try to fly and trees don't try to run and concludes that it is contrary to
 
@@ -44,11 +46,11 @@ to trespass the natural order by doing what is contrary to it is to trespass the
 
 Thomas teaches it is vicious and sinful as being contrary to the natural order that anyone should assume to do what is above his power. And this is what is
 
-meant by presumption. Article two. Whether presumption is opposed to magnanmity by excess. Presumption is not the vicious excess of the virtue of
+meant by presumption. Article two. Whether presumption is opposed to magnanimity by excess. Presumption is not the vicious excess of the virtue of
 
-[01:47] magnanmity in that one strives for greater things than the magnanimous man does, but that he strives for that which is beyond his ability. This the
+[01:47] magnanimity in that one strives for greater things than the magnanimous man does, but that he strives for that which is beyond his ability. This the
 
-magnanimous man does not do. It is for this reason that presumption is contrary to reason and therefore a vice opposed to the virtue of magnanmity by way of
+magnanimous man does not do. It is for this reason that presumption is contrary to reason and therefore a vice opposed to the virtue of magnanimity by way of
 
 excess. There is also a kind of presumption which is specifically termed as sin against the Holy Spirit and that is when one presumes they will be saved
 
@@ -62,7 +64,7 @@ something divine is opposed to charity or rather to the gift of fear whereby we 
 
 [02:56] one's own ability, it can also be opposed to magnanimity. Now on to question 131 of ambition. Article one. Whether ambition is a sin. The
 
-difference between the vicious excess of magnanmity we have called presumption and the vicious excess named ambition is that the first denotes a reaching beyond
+difference between the vicious excess of magnanimity we have called presumption and the vicious excess named ambition is that the first denotes a reaching beyond
 
 one's strength and the latter ambition denotes a disordered desire for the honor to be gained by attaining this strived for thing. The person who
 
@@ -78,15 +80,15 @@ nuance given here on the magnanimous man by St. Thomas is that he seeks as a rew
 
 happiness, which is the end of virtue. But honor is said to be the reward of virtue as regards others who have nothing greater than honor whereby to
 
-reward the virtuous which honor deres greatness from the very fact that it bears witness to virtue. Article two in our last article whether ambition is
+reward the virtuous which honor derives greatness from the very fact that it bears witness to virtue. Article two in our last article whether ambition is
 
-[04:36] opposed to magnanimity by excess. Yes and in the desire and use of the honor in question. Ambition is opposed to magnanmity by vicious excess. St. Thomas
+[04:36] opposed to magnanimity by excess. Yes and in the desire and use of the honor in question. Ambition is opposed to magnanimity by vicious excess. St. Thomas
 
 helps us here spell out again the distinction between presumption and ambition in writing. Presumption is opposed to magnanimity by excess because
 
 the presumptuous man attempts great deeds beyond his ability. The other thing that magnanimity regards is its matter or content which is honor of
 
-[05:08] which it makes right use. And in this way ambition is opposed to magnanmity by excess. So presumption again reaches inordinately high to some feet beyond
+[05:08] which it makes right use. And in this way ambition is opposed to magnanimity by excess. So presumption again reaches inordinately high to some feat beyond
 
 one's actual ability and ambition desires the resulting honor which can be gained from that feat to a disordered degree and for disordered reasons. And
 

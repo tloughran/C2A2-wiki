@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api (bash sandbox)
 fidelity_checked: true
 synthesis: "[[Day-167 - Perjury and Sacrilege - Contemporary]]"
 tags: [summa, day/167, pars/II-II, q/98-99]
-last_qc_at: "2026-05-30T00:29:04"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-12T04:29:20"
+last_qc_outcome: "pass"
 ---
 
 # Day 167 — Perjury and Sacrilege

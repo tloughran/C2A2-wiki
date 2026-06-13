@@ -15,7 +15,7 @@ evidence_strength_summary: "Incontinence-as-two-failure-modes and meekness-as-re
 mind_first_reframe: "Incontinence is a control failure with two distinct signatures — impetuous (no deliberation runs) and weak (deliberation runs, then is overridden at execution); intemperance is the same disorder learned into the model. Meekness is the retraining of the irascible appetite's precision so anger no longer mis-fires, while clemency caps the action even when the feeling is right."
 central_theme_thread: "A perspective aligned to loving unity is not one with no anger but one whose anger is calibrated to real injury and capped in action; meekness and clemency are two stages of getting the limited agent's irascible response to track the whole rather than the self."
 tags: [synthesis, day/196, theme/calibrated-restraint]
-last_qc_at: "2026-06-11T14:28:40"
+last_qc_at: "2026-06-12T20:20:12"
 last_qc_outcome: "pass"
 ---
 

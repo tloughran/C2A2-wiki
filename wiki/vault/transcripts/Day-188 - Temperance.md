@@ -15,12 +15,14 @@ fetched_at: 2026-06-02
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-188 - Temperance - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-03T08:22:06"
+last_qc_at: "2026-06-12T08:36:36"
 last_qc_outcome: "rewrote"
 tags: [summa, day/188, pars/II, q/140]
 ---
 
 # Day 188 — Temperance
+
+> Typo cleanup (QC sweep 2026-06-12): Perence → Temperance (within the Aquinas quote, ST II-II Q.141 a.1 ad 3); aforce said → aforesaid (within the Aquinas quote, Q.141 a.3); Aquana → Aquinas; unchased → unchaste. Verified against raw ASR refetched 2026-06-12.
 
 *Aquinas closes fortitude with its precepts in the divine law (Q.140), then opens the treatise on temperance (Q.141). Temperance moderates the greatest bodily pleasures — those of touch, in food and procreation — bringing the concupiscible passions under reason. It is a cardinal virtue but not the greatest, since it regards the good of the individual rather than the many.*
 
@@ -78,7 +80,7 @@ temperance is a virtue." And then lastly, I would be remiss without drawing atte
 
 [04:01] person would abstain from such inordinate pleasurable goods. And the best greatest reason is for fear of God, fear of offending God. For what could be
 
-more motivating than that? And the fear of God is itself a gift of God. But allowing Aquinas to teach us himself, he tells us, "Perence also has a
+more motivating than that? And the fear of God is itself a gift of God. But allowing Aquinas to teach us himself, he tells us, "Temperance also has a
 
 corresponding gift, namely fear, whereby man is withheld from the pleasures of the flesh. Now man stands in the greatest need of the fear of God in
 
@@ -108,7 +110,7 @@ attaining some good. So too, temperance, which denotes a kind of moderation, is 
 
 and pleasure, and consequently with the sorrows that arise from the absence of such pleasures. For just as daring presupposes objects of fear, so too
 
-[06:37] sorrow arises from the absence of the aforce said pleasures. Which is an excellent summary of a lot of what we've covered up to this point thus far.
+[06:37] sorrow arises from the absence of the aforesaid pleasures. Which is an excellent summary of a lot of what we've covered up to this point thus far.
 
 Temperance is about moderating the passions pertaining to the sensible good, which is what desire and pleasure are about directly. these passions.
 
@@ -164,7 +166,7 @@ relating to touch, than is required by reason for his life and for his station i
 
 is a cardinal virtue. Temperance is cardinal for the same reason the fortitude is. Fortitude is cardinal for concerning the greatest of fears being
 
-[11:09] killed. And temperance is cardinal because it moderates the greatest of pleasures those of touch and that which is related to touch. As Aquana says
+[11:09] killed. And temperance is cardinal because it moderates the greatest of pleasures those of touch and that which is related to touch. As Aquinas says
 
 because these pleasures are most natural to us so that it is more difficult to abstain from them and to control the desire for them and because their
 
@@ -178,7 +180,7 @@ more godlike and God is the standard of perfection. So just as God is the univer
 
 the virtues which affect the many, all other things being equal or greater for being more godlike than those only applying to the individual. Therefore,
 
-[12:12] since the glutton, an unchased man, may only sin against himself, harm himself, then virtues like justice and courage, which affect others, and could affect
+[12:12] since the glutton, an unchaste man, may only sin against himself, harm himself, then virtues like justice and courage, which affect others, and could affect
 
 the entire nation are recognized as better virtues than temperance. Giving our final words in this episode to Aquinas, he responds here, "Justice and
 

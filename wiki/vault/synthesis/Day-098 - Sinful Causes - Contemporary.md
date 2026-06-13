@@ -13,11 +13,12 @@ karpathy_wiki_sources:
   - "traditions/levin/wiki.md (form-as-real, regulator failure)"
 evidence_strength_summary: "The reason-as-seat-of-mortality and morose-delectation analyses are philosophical (Aquinas + interpretive bridging). Friston/Hawkins on precision-attention as substrate of voluntary cognition are formal-empirical (high). The privation-with-positive-cause structure is metaphysical-medieval but converges with control-theoretic regulator-failure accounts (medium)."
 length_ratio_to_target: 1.233
+length_note: "Covers two dense Summa questions (Q.74 powers, 10 articles + Q.75 causes, 4 articles) including the privation-with-positive-cause keystone; the four-causal-modes re-description is substantive linkage, not padding."
 mind_first_reframe: "Aquinas's architecture-level question (Q.74 powers of the soul / Q.75 internal-and-external causes of sin) recovers cleanly in a hierarchical active-inference frame: mortal sin lives in the will-and-reason coupling because only top-level priors re-target the whole policy stack; morose delectation is precision-on-attention (what the agent attends to is what it becomes); the privation-with-positive-cause structure is regulator-failure (the act has full positive being while its disorder traces to the absence of the directing signal); and one sin causes another by removing the high-precision integrating prior that suppressed further failure."
 central_theme_thread: "Q.75 a.4's indirect-efficient mode — one sin causes another by removing the protective state — is the central theme's mechanism for cumulative decoupling: the protective state is the high-precision integrating prior (charity / loving unity), the prior that couples the agent's policy to the wider conscious-agent network. Once removed, further failures follow naturally because nothing now suppresses them; the agent that was one under reason / charity becomes plural under unintegrated appetites."
 tags: [synthesis, day/098, theme/will-and-faculty, theme/attention-as-action]
-last_qc_at: "2026-06-05T17:22:00"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-12T18:28:55"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 98 — Sinful Causes (Contemporary)

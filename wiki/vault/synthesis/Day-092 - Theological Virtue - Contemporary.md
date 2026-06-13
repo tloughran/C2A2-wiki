@@ -7,7 +7,7 @@ length_target_words: 1500
 length_actual_words: 1191
 length_ratio_to_target: 0.794
 karpathy_wiki_sources:
-  - "stump/wiki.md, stump/prs_triplets.md — PRS-09 (faith as second-personal knowledge)"
+  - "stump/wiki.md, stump/prs_triplets.md — PRS-11 (faith as second-personal knowledge)"
   - "wright (canonical: Surprised by Hope; Paul and the Faithfulness of God; Resurrection of the Son of God) — pistis as covenant-loyalty"
   - "rohr (canonical: Universal Christ; Falling Upward) — cruciform agape, cosmic Christ"
   - "kastrup/wiki.md (analytic idealism, mind as ontological primitive)"
@@ -17,8 +17,8 @@ karpathy_wiki_sources:
 mind_first_reframe: "Under conscious-realist monism *infusion* does not require a supernatural-vs-natural ontological dualism: the theological virtues are scaffolded priors — dispositions supplied at the dissociative boundary (Kastrup), at cross-scale morphogenetic interfaces (Levin), or as hyperpriors set by developmental and cultural context (Friston) — that a limited agent cannot derive from inside its own optimization loop. Aquinas's categorical distinction (virtues whose formal object is God) survives intact; the substantialist account of infusion is reframed as boundary- or scale-supplied disposition."
 central_theme_thread: "The perspective-limited agent cannot derive from inside its own evidence stream the priors required to compute toward loving unity; those priors must be scaffolded from beyond it — divine or human, scaled-up or tradition-bound. The theological virtues name that scaffolding; Phil 2:12 (working out salvation in fear and trembling) is the existential shape this takes from the agent's side."
 evidence_strength_summary: "Wright's historical-Jesus and Pauline-corpus claims have strong-but-disputed historiographic standing. Stump on faith-as-second-personal: theological-philosophical, not empirical. Kastrup's analytic idealism: metaphysical argument with no decisive empirical falsifier, but high coherence with hard-problem-of-consciousness literature. Levin's morphogenetic scaffolding: empirically firm. Friston's active inference: empirically robust at the modeling level. The claim that infused virtue maps onto externally-scaffolded computational priors is speculative."
-last_qc_at: "2026-06-05T08:19:52"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-12T10:33:09"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/092, theme/infused-virtue, theme/grace-and-nature, theme/scaffolding]
 ---
 
@@ -65,7 +65,7 @@ The deep central-theme question this article opens is: **whose perspective does 
 ## Bridges
 
 - **Wright (canonical: *Paul and the Faithfulness of God*, *Surprised by Hope*):** *pistis* as covenant-loyalty, hope as new creation, agape as cruciform action. Historiographic.
-- **Stump, PRS-09 (faith as second-personal knowledge):** the philosophical engine connecting knowledge-of-persons to faith. Theological-philosophical.
+- **Stump, PRS-11 (faith as second-personal knowledge):** the philosophical engine connecting knowledge-of-persons to faith. Theological-philosophical.
 - **Kastrup (analytic idealism):** metaphysical frame in which "infusion" is intelligible without natural-supernatural dualism. Speculative-formal.
 - **Levin (morphogenetic teleology):** empirical demonstration that cross-scale scaffolding of competence is the biological norm. Empirical.
 - **Friston (active inference, hyperpriors):** formal architecture for scaffolded priors. Formal/empirical.

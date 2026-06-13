@@ -16,11 +16,13 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-184 - Magnificence - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/184, pars/II-II, q/134-135]
-last_qc_at: "2026-06-02T16:45:40"
+last_qc_at: "2026-06-12T08:36:34"
 last_qc_outcome: "rewrote"
 ---
 
 # Day 184 — Magnificence
+
+> Typo cleanup (QC sweep 2026-06-12): Ambria Press → Ave Maria Press; sumatan → Summa 10 (the discount code, as rendered on other days); magnanmity → magnanimity (2×); "equality modifying the rassable appetite" → "a quality modifying the irascible appetite" (ASR mishearing); irassable → irascible (3×). Verified against raw ASR refetched 2026-06-12.
 
 Day 184 covers magnificence — the virtue of doing great works that involve great expenditure, fittingly — and its opposed defect, meanness or stinginess (parvificence). NB: the locus is Q.134-135, as the frontmatter records. Habash misspeaks the numbers as "questions 132 and 133" in this episode (preserved verbatim below); he acknowledges the inverted broadcast order in the *following* episode (Day 185), where he notes that Q.132-133 should have come first.
 
@@ -34,15 +36,15 @@ We're covering today questions 132 and 133 of the Secunda Secundae that is of ma
 
 [00:41] always use in these podcasts is the one generously provided to me by Amria Press. The five volume set translated by the fathers of the English Dominican
 
-province which you can now get at a discounted price from Ambria Press's site by typing in the code sumatan. And so here we go. Article one, whether
+province which you can now get at a discounted price from Ave Maria Press's site by typing in the code Summa 10. And so here we go. Article one, whether
 
 magnificence is a virtue. We take the word magnificence from two Latin words magna plus fer. So to do a great thing literally magnificence is the virtue of
 
-[01:11] accomplishing great deeds. It is similar to magnanmity in that magnanmity pursues great honors. However, magnificence is about the great work itself which will
+[01:11] accomplishing great deeds. It is similar to magnanimity in that magnanimity pursues great honors. However, magnificence is about the great work itself which will
 
 require great expenditure on the part of the doer which is why magnificence is normally ascribed to the man of great expenditure monetarily speaking. This
 
-virtue is equality modifying the rassable appetite moderating these passions in regard to the great work one ought to undertake and will require one
+virtue is a quality modifying the irascible appetite moderating these passions in regard to the great work one ought to undertake and will require one
 
 to spend of themselves and their resources greatly for that work's sake. St. Thomas's brief response to this article is the following which we will
 
@@ -50,7 +52,7 @@ to spend of themselves and their resources greatly for that work's sake. St. Tho
 
 virtue. Hence, magnificence denotes a virtue. Article two, whether magnificence is a special virtue. To do something great in a sense is what all
 
-the moral virtues are about. But the habit moderating our irassable passions in regard to a great work to be done is unique by what it modifies and what it
+the moral virtues are about. But the habit moderating our irascible passions in regard to a great work to be done is unique by what it modifies and what it
 
 is aimed at. This specific arduous object, this great work which will require great expenditure on our part. And this quality in the man modifying
 
@@ -88,7 +90,7 @@ magnificence, which regards that which is great in the use of money. Which is wh
 
 a virtue likened to fortitude which is this virtue magnificence. Article four whether magnificence is a part of fortitude. Annex virtues of fortitude
 
-have something in common with fortitude yet fall short of the excellence of it in regard to the object. Fortitude is the virtue moderating the irassable
+have something in common with fortitude yet fall short of the excellence of it in regard to the object. Fortitude is the virtue moderating the irascible
 
 [05:19] passions in relation to the threat of death in the combat of the martyr or the soldier even among private citizens. Now magnificence does not pertain to a fear
 
@@ -96,7 +98,7 @@ as great as the fear of dying but rather to the fear which comes from losing a g
 
 This is a lesser fear than dying, making it a lesser virtue, making magnificence a lesser virtue than fortitude, but an annexed virtue to fortitude since it
 
-[05:50] does have to do with moderating the irassable passions in regard to some arduous object. Giving the last word of this article to St. Thomas, he writes,
+[05:50] does have to do with moderating the irascible passions in regard to some arduous object. Giving the last word of this article to St. Thomas, he writes,
 
 "Although magnificence does not agree with fortitude in matter, it agrees with it as the condition of its matter, since it tends to something difficult in the
 

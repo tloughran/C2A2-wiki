@@ -15,18 +15,20 @@ fetched_at: 2026-06-02
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-190 - Beauty and Disgrace - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-03T08:22:07"
+last_qc_at: "2026-06-12T16:22:40"
 last_qc_outcome: "rewrote"
 tags: [summa, day/190, pars/II, q/144]
 ---
 
 # Day 190 — Beauty & Disgrace
 
+> Typo cleanup (QC sweep 2026-06-12): Theologia → Theologiae (episode intro). Verified against raw ASR refetched 2026-06-12.
+
 *Aquinas treats the two integral parts of temperance: shamefacedness (Q.144), the fear of disgrace, and onestum (Q.145) — honorableness, decency, the spiritual beauty of a life ordered to reason. Shame is the recoil from the disgraceful; onestum is the love of the beautiful that draws the soul forward.*
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa
 
-Theologia in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the
+Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 190. So let's get started.
 

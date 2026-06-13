@@ -16,11 +16,13 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-185 - Vainglory - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/185, pars/II-II, q/132-133]
-last_qc_at: "2026-06-02T16:45:40"
+last_qc_at: "2026-06-12T08:36:34"
 last_qc_outcome: "rewrote"
 ---
 
 # Day 185 — Vainglory
+
+> Typo cleanup (QC sweep 2026-06-12): pellanimity / pussolinimity / pilanimity / pussellinimity / pelonymity / palenimity / pelonyimity → pusillanimity; magnanmity → magnanimity; comerate → commensurate; smallalness → smallness; slugard → sluggard (Proverbs 26:16); Austin Abbish → Austin Habash. All fixes verified against the raw ASR (refetched 2026-06-12); 1:1 token substitutions, no content change.
 
 Day 185 covers vainglory — the inordinate desire for the manifestation of one's own excellence — and pusillanimity, the smallness of soul opposed to magnanimity by defect. (Habash notes this should precede Day 184.)
 
@@ -62,9 +64,9 @@ glory is vain, as Aquinas says, when one does not refer the desire of his own gl
 
 neighbor. In each of these scenarios, the desired glory will be false or misplaced and therefore sinful is contrary to right reason. Article two,
 
-[03:05] whether vainglory is opposed to magnanimity. In a sentence from Aquinas, magnanmity is about honor. It follows that it also is about glory, seeing that
+[03:05] whether vainglory is opposed to magnanimity. In a sentence from Aquinas, magnanimity is about honor. It follows that it also is about glory, seeing that
 
-as a man uses honor moderately, so too does he use glory in moderation. Wherefore inordinate desire of glory is directly opposed to magnanmity. Our Lord
+as a man uses honor moderately, so too does he use glory in moderation. Wherefore inordinate desire of glory is directly opposed to magnanimity. Our Lord
 
 taught us, "Let your light shine before men that they may see your good works and give glory to your father who is in heaven." So consider the venerable
 
@@ -116,31 +118,31 @@ is called contention. Lastly, a man may seek to manifest superiority against the
 
 [07:20] suitably named as daughter sins of vainglory, boastfulness, love of novelties, hypocrisy, obstinency, discord, contention, and disobedience. Now we
 
-move to question 133 on pellanimity of which we have two articles. Article one, whether pellanimity is a sin. In a sentence, St. Thomas says just as
+move to question 133 on pusillanimity of which we have two articles. Article one, whether pusillanimity is a sin. In a sentence, St. Thomas says just as
 
 presumption makes a man exceed what is proportionate to his power by striving to do more than he can so pusillanimity makes a man fall short of what is
 
-proportionate to his power by refusing to tend to that which is comerate thereto this is a deficiency in regard to the magnanimous man the magnanimous
+proportionate to his power by refusing to tend to that which is commensurate thereto this is a deficiency in regard to the magnanimous man the magnanimous
 
-[07:59] man pursues excellence as he is capable and does not fall short of what he knows he can do and he ought to do through a smallalness of soul which is this vice
+[07:59] man pursues excellence as he is capable and does not fall short of what he knows he can do and he ought to do through a smallness of soul which is this vice
 
-pussolinimity. And what could be the cause of such a sin? Well, one reason might be pride. As Aquinas teaches, pussolinimity may in
+pusillanimity. And what could be the cause of such a sin? Well, one reason might be pride. As Aquinas teaches, pusillanimity may in
 
 some way be the result of pride. When to wit a man clings too much to his own opinion, whereby he thinks himself incompetent for those things for which
 
-he is competent. As it is written in Proverbs, the slugard is wiser in his own conceit than seven men that speak sentences. Article two, our last
+he is competent. As it is written in Proverbs, the sluggard is wiser in his own conceit than seven men that speak sentences. Article two, our last
 
-[08:34] article, whether pilanimity is opposed to magnanimity. In brief, St. Thomas teaches pussellinimity and magnanmity differ as greatness and littleness of
+[08:34] article, whether pusillanimity is opposed to magnanimity. In brief, St. Thomas teaches pusillanimity and magnanimity differ as greatness and littleness of
 
-soul as their names denote. Now great and little are opposites. Therefore, pelonymity is opposed to magnanmity. So to recap, we have palenimity which is
+soul as their names denote. Now great and little are opposites. Therefore, pusillanimity is opposed to magnanimity. So to recap, we have pusillanimity which is
 
-the vice directly contrary to magnanmity, smallness of soul instead of greatness of soul. We also have presumption which is the excess of the
+the vice directly contrary to magnanimity, smallness of soul instead of greatness of soul. We also have presumption which is the excess of the
 
-[09:05] mean of magnanmity. Also we have ambition which desires honors itself inordinately and then vainglory which desires empty or false glory. And with
+[09:05] mean of magnanimity. Also we have ambition which desires honors itself inordinately and then vainglory which desires empty or false glory. And with
 
 that we come to the close of another episode. We have just finished covering questions 132 and 133 of the Secunda Secundae of vainglory and of
 
-pelonyimity. My name is Austin Abbish with Think Catholic and I cannot wait to see you tomorrow.
+pusillanimity. My name is Austin Habash with Think Catholic and I cannot wait to see you tomorrow.
 
 ## Notes
 

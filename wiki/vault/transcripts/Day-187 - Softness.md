@@ -15,12 +15,14 @@ fetched_at: 2026-06-02
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-187 - Softness - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-03T08:22:06"
+last_qc_at: "2026-06-12T08:36:35"
 last_qc_outcome: "rewrote"
 tags: [summa, day/187, pars/II, q/138]
 ---
 
 # Day 187 — Softness
+
+> Typo cleanup (QC sweep 2026-06-12): effeminite → effeminate (within the Aquinas/Aristotle quotation, ST II-II Q.138 a.1; matches the Dominican-fathers translation). Verified against raw ASR refetched 2026-06-12.
 
 *Aquinas treats the vices opposed to perseverance — softness/effeminacy and pertinacity (Q.138) — and then the gift of fortitude (Q.139). Softness yields to even gentle pressure; pertinacity clings stubbornly from vainglory. The gift of fortitude is the Spirit-given confidence that natural courage cannot supply.*
 
@@ -48,7 +50,7 @@ way to even gentle pressures. And this is what perseverance is about. Enduring t
 
 good in the midst of them. Thus to just give up under these relatively small pains would be to be soft. As St. Thomas concludes, "According to Aristotle,
 
-[02:06] properly speaking, an effeminite man is one who withdraws from good on account of sorrow caused by lack of pleasure, yielding, as it were, to a weak motion."
+[02:06] properly speaking, an effeminate man is one who withdraws from good on account of sorrow caused by lack of pleasure, yielding, as it were, to a weak motion."
 
 Now, what would cause someone to be soft and not persevering in toil? And according to the article, ordinarily this comes about either by a frailty of
 

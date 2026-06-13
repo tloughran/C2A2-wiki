@@ -15,12 +15,14 @@ fetched_at: 2026-06-02
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-186 - Patience and Perseverance - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-03T08:22:05"
+last_qc_at: "2026-06-12T08:36:35"
 last_qc_outcome: "rewrote"
 tags: [summa, day/186, pars/II, q/136]
 ---
 
 # Day 186 — Patience & Perseverance
+
+> Typo cleanup (QC sweep 2026-06-12): ariduous → arduous; Longimity → Longanimity; "required for patients longanimity" → "required for patience, longanimity" (ASR homophone). Verified against raw ASR refetched 2026-06-12.
 
 *Aquinas treats patience (Q.136) and perseverance (Q.137) — both annexed to the cardinal virtue of fortitude. Patience steadies reason against the passion of sorrow; perseverance holds the pursued good across the long burden of time. Both, in their perfected form, require grace.*
 
@@ -70,13 +72,13 @@ towards the correct end which is the love of God and neighbor for God's sake. As
 
 whether patience is a part of fortitude. It belongs to patience to suffer with an equal mind the evils inflicted by others. That's what St. Gregory the
 
-[03:41] Great wrote. Therefore, by having to do with standing firm in the ariduous good amidst evil's patience bears a similarity to fortitude. But since
+[03:41] Great wrote. Therefore, by having to do with standing firm in the arduous good amidst evil's patience bears a similarity to fortitude. But since
 
 fortitude modifies the fear of dying which is man's physically speaking greatest fear, fortitude is designated the cardinal virtue while patience
 
 because it is similar to fortitude yet is pertaining to lesser evils is only an annexed virtue to fortitude. Article five. Whether patience is the same as a
 
-[04:09] longanimity. Longimity and constancy are virtues comprised under patience. For the patient man must both endure towards the relevant good which is longanimity
+[04:09] longanimity. Longanimity and constancy are virtues comprised under patience. For the patient man must both endure towards the relevant good which is longanimity
 
 as well as endure the pains along the way which pertains to constancy. So patience is not identical to longanimity but it seems longanimity and
 
@@ -88,7 +90,7 @@ to the grievousness of evil, which is the proper object of patience. And by addi
 
 has something in common with patience. And lastly, strictly speaking, longanimity is more similar to magnanimity because both have the pursued good as their
 
-object instead of enduring some evil, which is patience's object. Yet it is also similar and required for patients longanimity for the reasons we have
+object instead of enduring some evil, which is patience's object. Yet it is also similar and required for patience, longanimity, for the reasons we have
 
 [05:18] described already. Moving then on to question 137 of perseverance. Article one whether perseverance is a virtue. Aristotle taught that virtue is about
 

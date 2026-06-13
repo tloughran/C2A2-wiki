@@ -16,15 +16,17 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-192 - Gluttony and Sobriety - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/192, pars/II, q/148]
-last_qc_at: "2026-06-03T12:21:24"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-12T16:22:41"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 192 — Gluttony & Sobriety
 
+> Typo cleanup (QC sweep 2026-06-12): suma → Summa (episode intro). Verified against raw ASR refetched 2026-06-12.
+
 *Aquinas treats gluttony (Q.148), the inordinate desire for food that displaces reason, and sobriety (Q.149), the special virtue moderating drink — that which most readily clouds the mind.*
 
-[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's suma
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa
 
 Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the
 

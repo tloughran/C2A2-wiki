@@ -15,12 +15,14 @@ fetched_at: 2026-06-02
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-189 - Childish Vice - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-03T08:22:06"
+last_qc_at: "2026-06-12T12:36:45"
 last_qc_outcome: "rewrote"
 tags: [summa, day/189, pars/II, q/142]
 ---
 
 # Day 189 — Childish Vice
+
+> Typo cleanup (QC sweep 2026-06-12): in tempmperance → intemperance (Q.142 a.2 opening and a.4 header); grievious → grievous; shamef facedness → shamefacedness; abhorance → abhorrence; countenance → continence (Q.143 annexed part); so to → so too; sum 10 → Summa 10; "He was able to receive this" → "He who is able to receive this" (Matthew 19:12, RSV-CE, restored within the quote Habash reads). Verified against raw ASR refetched 2026-06-12.
 
 *Aquinas treats the vices opposed to temperance (Q.142) — insensibility by defect, intemperance by excess — and then surveys the parts of temperance in general (Q.143). Intemperance is called a 'childish' sin: like an undisciplined child, unchecked appetite hardens into necessity.*
 
@@ -34,7 +36,7 @@ We're covering today questions 142 and 143 of the Secunda Secundae that is of th
 
 [00:44] translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press. the five volumes set translated by the fathers of the
 
-English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code sum 10. And so here we go. Article one,
+English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code Summa 10. And so here we go. Article one,
 
 whether insensibility is a vice. What is the vice of insensibility? St. Thomas teaches, "If anyone were to reject pleasure to the extent of omitting
 
@@ -44,19 +46,19 @@ insensibility. Yet a man without destroying his nature, of course, may virtuousl
 
 perfection and for the sake of the kingdom of heaven. As Jesus taught, there are eunuchs who have made themselves, meaning act like eunuchs, for the sake of
 
-the kingdom of heaven. He was able to receive this. Let him receive it. And St. Paul wrote, "No soldier gets entangled in civilian pursuits. Since
+the kingdom of heaven. He who is able to receive this, let him receive it. And St. Paul wrote, "No soldier gets entangled in civilian pursuits. Since
 
 [01:47] his aim is to please the one who enlisted him, an athlete is not crowned unless he competes according to the rules. Thus, self-denial for God's sake
 
 and in accordance with revelation is not only not a vice, but actually an act of virtue." precisely because it is in accordance with reason. Article two,
 
-whether intemperance is a childish sin. In temperance, the vice pertaining to the pleasures of the flesh is childish. Not because children literally
+whether intemperance is a childish sin. Intemperance, the vice pertaining to the pleasures of the flesh, is childish. Not because children literally
 
 [02:15] struggle with sexual desire, for example, but because just like we see with children, the desires of the flesh are unruly and reach out towards base
 
 petty things. Also because just like children, if they be not immediately and regularly disciplined, grow increasingly hardened against the rule of their
 
-parents, so to concupiscence, if left unchecked, grows increasingly difficult to later subdue under the rule of reason. As St. Augustine wrote in his
+parents, so too concupiscence, if left unchecked, grows increasingly difficult to later subdue under the rule of reason. As St. Augustine wrote in his
 
 confessions, speaking from personal experience, lust served became a custom, and custom not resisted became a necessity. Therefore, in response to our
 
@@ -72,7 +74,7 @@ Also, the coward's choice is not so much focused on the particular act of runnin
 
 man who sins according to concupiscence does really want specifically voluntarily this particular donut or this particular woman in front of him
 
-[03:52] inordinately. So also from this aspect it is more willful and therefore more grievious. Then secondly sins of intemperance often concern things which
+[03:52] inordinately. So also from this aspect it is more willful and therefore more grievous. Then secondly sins of intemperance often concern things which
 
 are unnecessary for the preservation of one's life such as the sexual desire or the desire for food which he could not eat and still live. Thus, it is about
 
@@ -80,9 +82,7 @@ easier passions to resist than the fear of dying in battle. And then lastly, it'
 
 [04:21] fortitude. Since one could easily go throughout their entire life without having to struggle against the fear of dying in battle. While on the other
 
-hand, our entire day is filled with opportunities to struggle against pleasure and grow in the habit of temperance. Article four. whether in
-
-tempmperance is the most disgraceful of sins. And this question is responded to by Aquinas succinctly enough and so we ought to simply quote him. He tells us
+hand, our entire day is filled with opportunities to struggle against pleasure and grow in the habit of temperance. Article four. whether intemperance is the most disgraceful of sins. And this question is responded to by Aquinas succinctly enough and so we ought to simply quote him. He tells us
 
 disgrace is seemingly opposed to honor and glory. Now honor is due to excellence and glory denotes clarity. Accordingly, intemperance is most
 
@@ -98,7 +98,7 @@ the parts of temperance are rightly assigned. And as we've said in many previous
 
 first category, are those virtues requisite to have this virtue in question. These are like the required ingredients for this particular virtue
 
-to even exist. And for temperance, these are shamef facedness. So a disgust abhorance of the disgrace incumbent upon intemperance plus the flip side of
+to even exist. And for temperance, these are shamefacedness. So a disgust abhorrence of the disgrace incumbent upon intemperance plus the flip side of
 
 [06:03] that virtue which is called honesty. The love of the beauty or temperance whereby the rule of reason shines beautifully and clearly through the man. The second
 
@@ -116,7 +116,7 @@ not really a kind or species of it because of a dissimilarity in another respect
 
 endure other lesser fears and sorrows. So too here when it comes to temperance the greatest pleasures to moderate temperance moderates which are those
 
-regarding touch. Then in regard to other impulses, actions, external items, we have in the category of impulses annexed virtues like countenance against lesser
+regarding touch. Then in regard to other impulses, actions, external items, we have in the category of impulses annexed virtues like continence against lesser
 
 [07:33] pleasures, humility, moderating impulses of daring and hope, and meekness against impulses of anger. In the category of actions, we have modesty, restraining a
 
