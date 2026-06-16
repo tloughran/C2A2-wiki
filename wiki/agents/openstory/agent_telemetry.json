@@ -1071,56 +1071,6 @@
       "avg_events_per_session": 15.9,
       "tool_coverage": 0.1
     },
-    "bosco-archive-heartbeat": {
-      "taskId": "bosco-archive-heartbeat",
-      "category": "infrastructure",
-      "schedule": "Fri 03:07",
-      "cron": "0 3 * * 5",
-      "thinkers": [],
-      "constitutions": [],
-      "captured": true,
-      "sessions": 13,
-      "events": 480,
-      "eval": 293,
-      "apply": 275,
-      "scope_open": 7,
-      "scope_close": 2,
-      "errors": 3,
-      "delegations": 0,
-      "tool_use": 195,
-      "tool_use_named": 165,
-      "thinking": 39,
-      "prompts": 8,
-      "duration_sessions": 13,
-      "first_seen": "2026-03-31T14:33:59.781Z",
-      "last_seen": "2026-06-05T16:00:37.041Z",
-      "by_dow": [
-        1,
-        3,
-        0,
-        4,
-        4,
-        0,
-        1
-      ],
-      "tools": {
-        "Bash": 76,
-        "mcp__1658f0a7-2e27-464b-b241-aa417408b120__gmail_read_message": 68,
-        "ToolSearch": 9,
-        "TodoWrite": 9,
-        "mcp__cowork__request_cowork_directory": 2,
-        "Write": 1
-      },
-      "models": {
-        "claude-sonnet-4-6": 116,
-        "claude-opus-4-6": 49
-      },
-      "eval_apply_ratio": 1.065,
-      "eval_apply_total": 568,
-      "avg_duration_min": 1009.4,
-      "avg_events_per_session": 36.9,
-      "tool_coverage": 0.85
-    },
     "agentic-cost-tracker": {
       "taskId": "agentic-cost-tracker",
       "category": "infrastructure",

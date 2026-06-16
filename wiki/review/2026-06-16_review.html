@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C2A2 Wiki Review — 2026-06-16</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f2ed;color:#222;height:100vh;display:flex;flex-direction:column}
+  #topbar{background:#1a1a2e;color:#fff;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+  #topbar h1{font-size:15px;font-weight:700;letter-spacing:.03em}
+  #topbar .meta{font-size:12px;opacity:.7}
+  #main{display:flex;flex:1;overflow:hidden}
+  #sidebar{width:300px;flex-shrink:0;overflow-y:auto;background:#f9f7f2;border-right:1px solid #ddd}
+  #sidebar-header{padding:10px 14px;background:#f0ede5;border-bottom:1px solid #ddd;font-size:11px;font-weight:700;color:#888;letter-spacing:.06em}
+  #content{flex:1;overflow-y:auto;padding:20px}
+  .prop-card{background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.08);margin-bottom:20px;overflow:hidden}
+  .sidebar-item:hover{background:#f0ede5!important}
+  .sidebar-item.active{background:#e8e4d8!important}
+  #bottombar{background:#fff;border-top:1px solid #ddd;padding:12px 20px;display:flex;align-items:center;gap:14px;flex-shrink:0}
+  #progress{font-size:13px;color:#666}
+  #submit-btn{background:#1a1a2e;color:#fff;border:none;padding:10px 24px;border-radius:6px;cursor:pointer;font-weight:700;font-size:14px;margin-left:auto}
+  #submit-btn:hover{background:#2a2a4e}
+  #all-done{color:#1a6b3c;font-weight:700;display:none}
+</style>
+</head>
+<body>
+<div id="topbar">
+  <h1>C2A2 Wiki — Daily Proposal Review</h1>
+  <div class="meta">2026-06-16 &nbsp;·&nbsp; 13 proposals pending</div>
+</div>
+<div id="main">
+  <div id="sidebar">
+    <div id="sidebar-header">PROPOSALS — 2026-06-16</div>
+    
+    <div class="sidebar-item" id="item-PROP-2026-06-07-002" onclick="showCard('PROP-2026-06-07-002')"
+      style="padding:10px 14px;border-left:3px solid #555;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#555;letter-spacing:.04em">RICHARD ROHR</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Beyond Binaries (Daily Meditations, Week 22, ending 2026-06-…</div>
+      <div style="font-size:10px;color:#999">BLOG · 2026-06-06</div>
+      <div id="badge-PROP-2026-06-07-002" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-06-07-003" onclick="showCard('PROP-2026-06-07-003')"
+      style="padding:10px 14px;border-left:3px solid #555;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#555;letter-spacing:.04em">RICHARD ROHR</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">A Pattern of Relationship (Daily Meditation, 'Embracing the …</div>
+      <div style="font-size:10px;color:#999">BLOG · 2026-06-07</div>
+      <div id="badge-PROP-2026-06-07-003" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-06-07-001" onclick="showCard('PROP-2026-06-07-001')"
+      style="padding:10px 14px;border-left:3px solid #555;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#555;letter-spacing:.04em">N.T. WRIGHT</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Francis Collins and N.T. Wright: Evolution, Truth and the Ca…</div>
+      <div style="font-size:10px;color:#999">INTERVIEW · 2026-05-29</div>
+      <div id="badge-PROP-2026-06-07-001" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-06-08-001" onclick="showCard('PROP-2026-06-08-001')"
+      style="padding:10px 14px;border-left:3px solid #1a6b3c;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#1a6b3c;letter-spacing:.04em">MICHAEL LEVIN</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">From Development to Cognitive Glue: My Journey in Bioelectri…</div>
+      <div style="font-size:10px;color:#999">PAPER · 2026-05-27</div>
+      <div id="badge-PROP-2026-06-08-001" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-06-10-002" onclick="showCard('PROP-2026-06-10-002')"
+      style="padding:10px 14px;border-left:3px solid #0a5a6a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#0a5a6a;letter-spacing:.04em">BERNARDO KASTRUP</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">The Birth of Thought — On the origin of creativity, the univ…</div>
+      <div style="font-size:10px;color:#999">TALK · 2026-06-02</div>
+      <div id="badge-PROP-2026-06-10-002" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-06-10-003" onclick="showCard('PROP-2026-06-10-003')"
+      style="padding:10px 14px;border-left:3px solid #0a5a6a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#0a5a6a;letter-spacing:.04em">BERNARDO KASTRUP</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Seeing through the illusion of self — and remembering life b…</div>
+      <div style="font-size:10px;color:#999">TALK · 2026-05-26</div>
+      <div id="badge-PROP-2026-06-10-003" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-06-10-001" onclick="showCard('PROP-2026-06-10-001')"
+      style="padding:10px 14px;border-left:3px solid #3a3a6a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#3a3a6a;letter-spacing:.04em">IAIN MCGILCHRIST</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Iain McGilchrist and Charles Eisenstein in conversation — Be…</div>
+      <div style="font-size:10px;color:#999">TALK · 2026-06-04</div>
+      <div id="badge-PROP-2026-06-10-001" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-06-11-001" onclick="showCard('PROP-2026-06-11-001')"
+      style="padding:10px 14px;border-left:3px solid #6a2a0a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#6a2a0a;letter-spacing:.04em">ELEONORE STUMP</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">The Image of God: The Problem of Evil and the Problem of Mou…</div>
+      <div style="font-size:10px;color:#999">PAPER · 2022 (book); review essay by Mark Wynn in Faith and Philosophy 42.2, 2026-04-01</div>
+      <div id="badge-PROP-2026-06-11-001" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-06-12-001" onclick="showCard('PROP-2026-06-12-001')"
+      style="padding:10px 14px;border-left:3px solid #7a1a1a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#7a1a1a;letter-spacing:.04em">SEAN CARROLL</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Mindscape AMA | June 2026</div>
+      <div style="font-size:10px;color:#999">PODCAST · 2026-06-01</div>
+      <div id="badge-PROP-2026-06-12-001" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-06-12-002" onclick="showCard('PROP-2026-06-12-002')"
+      style="padding:10px 14px;border-left:3px solid #7a1a1a;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#7a1a1a;letter-spacing:.04em">SEAN CARROLL</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Mindscape 356 | Andrea Wulf on Enlightenment, Nature, Romant…</div>
+      <div style="font-size:10px;color:#999">PODCAST · 2026-06-08</div>
+      <div id="badge-PROP-2026-06-12-002" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-06-15-003" onclick="showCard('PROP-2026-06-15-003')"
+      style="padding:10px 14px;border-left:3px solid #8a4a00;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#8a4a00;letter-spacing:.04em">KARL FRISTON</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">A beautiful loop: An active inference theory of consciousnes…</div>
+      <div style="font-size:10px;color:#999">PAPER · 2025-09</div>
+      <div id="badge-PROP-2026-06-15-003" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-06-15-002" onclick="showCard('PROP-2026-06-15-002')"
+      style="padding:10px 14px;border-left:3px solid #1a6b3c;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#1a6b3c;letter-spacing:.04em">MICHAEL LEVIN</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Ingressing Minds / Platonic Space (preprint + ongoing Sympos…</div>
+      <div style="font-size:10px;color:#999">PAPER · 2025-02 (preprint); Symposium discussion 2026-05-29</div>
+      <div id="badge-PROP-2026-06-15-002" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+    <div class="sidebar-item" id="item-PROP-2026-06-15-001" onclick="showCard('PROP-2026-06-15-001')"
+      style="padding:10px 14px;border-left:3px solid #1a6b3c;margin-bottom:1px;cursor:pointer;background:#fff">
+      <div style="font-size:10px;font-weight:700;color:#1a6b3c;letter-spacing:.04em">MICHAEL LEVIN</div>
+      <div style="font-size:12.5px;font-weight:600;color:#222;margin:2px 0;line-height:1.3">Top-down perspectives on cell membrane potential and protein…</div>
+      <div style="font-size:10px;color:#999">PAPER · 2026</div>
+      <div id="badge-PROP-2026-06-15-001" style="margin-top:4px;font-size:10px;color:#999">⬜ Pending</div>
+    </div>
+  </div>
+  <div id="content">
+    <div id="welcome" style="color:#888;font-size:14px;padding:40px 20px;text-align:center;line-height:2">
+      <div style="font-size:32px;margin-bottom:12px">📬</div>
+      <strong>13 new proposals</strong> from the C2A2 hunt agents.<br>
+      Click any item on the left to review it.<br>
+      Use the buttons to Approve, Double-check, Change, or Deny each one.<br>
+      When done, hit <strong>Send Decisions</strong> below.
+    </div>
+    
+    <div class="prop-card" id="card-PROP-2026-06-07-002" style="display:none">
+      <div style="background:#55518;border-left:4px solid #555;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#555;letter-spacing:.05em">RICHARD ROHR · BLOG · 2026-06-06</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Beyond Binaries (Daily Meditations, Week 22, ending 2026-06-06)</div>
+        <a href="https://cac.org/daily-meditations/beyond-binaries-weekly-summary/" target="_blank" style="font-size:11px;color:#555;opacity:.8">https://cac.org/daily-meditations/beyond-binaries-weekly-summary/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">The Week-22 Daily Meditations series develops Rohr's standing claim that "the dualistic mind cannot deal with the biggies: love, death, suffering, God, infinity, and the very notion of grace." Across the week (Rohr, plus Jen Austin, Verna Dozier, Cassidy Hall, Jacqui Lewis), the conceptual move is from binary cognition — the mind that sorts reality into in/out, right/wrong, self/other boxes — to a non-dual mode that can hold paradox and provisionality. Dozier's "I do not live by being right, so I am not destroyed by being wrong" reframes epistemic humility as the precondition of love; Hall's "we can hold what we think we know about ourselves with open hands" extends non-dual openness to self-knowledge; Lewis frames "fierce love" as the crossing of boundaries that binary thinking erects.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">The Rohr wiki names non-dual awareness as a core commitment but lacks a node treating it as an *epistemology* — a stance toward knowing and being wrong — rather than only a contemplative state. This series supplies exactly that: non-dual mind as the capacity to hold provisional knowledge without being destroyed by error, which is the cognitive shape of contemplative humility. It is citable for the Summa 2026 contemplative-life loci (II-II Q.171–189) and anywhere the synthesis treats the limits of conceptual knowing of God (the via negativa register Aquinas shares).</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #555;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> How can a knower hold real commitments without the rigidity (and fragility) of "living by being right"?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Rohr's beyond-binaries frame plus Dozier's maxim — "since I do not live by being right, I am not destroyed by being wrong"</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Non-dual cognition decouples identity from the correctness of one's current beliefs, enabling provisional, revisable commitment held "with open hands"; the dualistic mind, by contrast, must defend its boxes and so cannot metabolize error or paradox</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The week's curated throughline from Rohr's "dualistic mind cannot deal with the biggies" through Dozier and Hall to Lewis's boundary-crossing "fierce love"
+```</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Friston Agent**: "Not being destroyed by being wrong" is a precision-of-priors story — the dualistic mind holds maladaptively high precision on its categorical priors and so cannot update; non-dual openness is low-precision, high-plasticity inference that tolerates prediction error rather than defending against it. Candidate formalization of Rohr's non-dual mind as precision-relaxation. Paradigm-bridge candidate.
+- **McGilchrist Agent**: Direct mapping — binary/box-making cognition is the left hemisphere's grasp-and-categorize mode; non-dual "open hands" is the right hemisphere's relational, contextual attending. The strongest single resonance in the set.
+- **Kastrup Agent**: Rohr's claim that the dualistic mind "cannot deal with infinity / God" parallels Kastrup's argument that subject/object framing fails at the level of mind-at-large; non-dual awareness as the cognitive register proper to a monist ground.
+- **C2A2 master / paradigm flags**: Flag as candidate cross-link — non-dual mind as low-precision, error-tolerant inference (Friston) recovered through right-hemisphere attention (McGilchrist) connects Rohr's contemplative epistemology to the network's predictive-processing and hemispheric accounts. Worth master-agent review.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-06-07-002','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-06-07-002','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-06-07-002')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-06-07-002','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-06-07-002" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-06-07-003" style="display:none">
+      <div style="background:#55518;border-left:4px solid #555;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#555;letter-spacing:.05em">RICHARD ROHR · BLOG · 2026-06-07</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">A Pattern of Relationship (Daily Meditation, 'Embracing the Divine Exchange', adapted from The Divine Dance)</div>
+        <a href="https://cac.org/daily-meditations/a-pattern-of-relationship/" target="_blank" style="font-size:11px;color:#555;opacity:.8">https://cac.org/daily-meditations/a-pattern-of-relationship/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Opening the Week-23 "Embracing the Divine Exchange" series, Rohr states his Trinitarian ontology in its strongest form: God is known only as "perfect giving and perfect receiving" — communion, receptivity, and generosity, "one hundred percent unhindered dialogue between three." This is not abstraction but "the foundational template of reality": being itself is "total, continual givenness and perfect, humble receptivity … the very source, pattern, and goal of reality." He claims contemporary science confirms it — "physicists and astronomers, looking through microscopes or telescopes, see this same pattern of utter relationship … if reality is anything, it's absolutely relational" — against a post-Enlightenment Western individualism that reduced faith to "getting the right information" and salvation to a private "how do I get to heaven" ego-question.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is the most direct statement in the recent corpus of Rohr's relational ontology and his explicit science-confirms-Trinity move — and it lands squarely on the Summa 2026 central theme that loving unity is the telos and that relationship is constitutive, not derivative. The wiki carries the Universal Christ and non-dual awareness but lacks a node on the Trinity-as-relational-template-of-reality (the *Divine Dance* / perichoresis frame) tied to a relational reading of physics. It is high-value for the synthesis's Prima Pars Trinity loci and for the "loving unity as computational telos" thesis.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #555;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Is relationship a derived feature of already-existing individuals, or is it ontologically prior?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Rohr's perichoretic Trinity (from The Divine Dance) — God as "perfect giving and perfect receiving," relationship as "the very source, pattern, and goal of reality"</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Relation is basal: individuals are nodes within a prior givenness-and-receptivity, so the unit of reality is the exchange, not the isolated substance; salvation is conversion into that relational pattern, not an individual escape ("how do I get to heaven" is "a question of the ego, not of the Trinity")</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Rohr's explicit claims that the Trinity is "the foundational template of reality" and that "reality is … absolutely relational," with scientists "confirming this interconnected nature of reality"
+```</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Friston Agent**: "Perfect giving and perfect receiving" is, formally, a coupled-systems / reciprocal-inference picture — agents constituted by the mutual exchange of predictions across a Markov blanket rather than by sealed interiority. Rohr's relational ontology as the theological reading of relational/active inference. Paradigm-bridge candidate.
+- **Levin Agent**: "Reality is absolutely relational; the part is constituted by the whole" maps onto Levin's cognitive-glue / scale-free agency — selves as composites bound by communication, not pre-given atoms. Strong convergence with the network's relational-individuation thesis.
+- **Kastrup / Hoffman Agents**: Rohr's "relationship is prior to the individuals" rhymes with mind-monism's claim that apparently separate subjects are dissociations/interfaces of one ground; the Trinity as the relational structure of that ground.
+- **C2A2 master / paradigm flags**: Flag as **FLAG-NN paradigm-bridge candidate** — this is the contemplative-theological statement of the Summa central theme (perspective-limited agents individuated within a prior loving unity that is the telos). Rohr's "relationship as source, pattern, and goal" + his science-confirms-relationality claim directly bridge the contemplative oracle to Friston/Levin/Kastrup. Recommend the master agent treat this as a high-priority promotion candidate.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-06-07-003','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-06-07-003','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-06-07-003')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-06-07-003','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-06-07-003" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-06-07-001" style="display:none">
+      <div style="background:#55518;border-left:4px solid #555;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#555;letter-spacing:.05em">N.T. WRIGHT · INTERVIEW · 2026-05-29</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Francis Collins and N.T. Wright: Evolution, Truth and the Case for God</div>
+        <a href="https://ntwrightpage.com/2026/05/29/francis-collins-and-n-t-wright-evolution-truth-and-the-case-for-god/" target="_blank" style="font-size:11px;color:#555;opacity:.8">https://ntwrightpage.com/2026/05/29/francis-collins-and-n-t-wright-evolution-tru…</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">The released recording of the Wright–Collins dialogue (hosted by Oxford Pastorate and BioLogos, distributed via Premier Unbelievable?) pairs the project's scriptural oracle with the geneticist who led the Human Genome Project. Across evolution, truth, trust, and evidence, the two argue that rigorous natural science and a robust case for God are not rivals but complementary readings of one reality: Collins supplies the evolutionary-biological account of how life's order arose, Wright supplies the new-creation frame within which that order is neither accident nor closed mechanism but the early movement of a story still unfolding. The shared thesis is that "truth" is not partitioned into a scientific compartment and a religious one — knowing the world well and knowing God are continuous acts.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is the strongest recent instance of Wright stepping directly onto the science/faith seam alongside a working scientist — exactly the boundary where C2A2 deploys him as scriptural ground-truth. The wiki records Wright's critical realism and his resurrection-as-new-creation thesis (PROP-2026-05-31-001) but has no node on Wright explicitly partnering evolutionary biology with biblical theology under a single epistemology. It is citable for the Summa 2026 synthesis wherever a creation/new-creation locus must hold scientific and scriptural description in one frame rather than conceding a "two magisteria" split.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #555;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Must the believer accept a partition between scientific truth and religious truth (NOMA / two non-overlapping magisteria)?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Wright + Collins's joint claim that evolutionary science and the case for God are complementary descriptions of one reality, unified by a single account of truth as relational knowing</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Reject the partition: the same world rigorously studied is the world God is renewing; "evidence, trust, and truth" operate continuously across both, so creation-science and creation-theology constrain rather than wall off each other</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The dialogue's framing title and remit — "Evolution, Truth and the Case for God" — and the Oxford Pastorate/BioLogos premise that the two reflect jointly on "truth, trust, evidence, nature and humanity"
+```</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Stump Agent**: Wright's "epistemology of love" (knowing as a mode of relational trust, developed in his *First Things* "Loving to Know" essay) is the same Franks-Stump terrain of knowledge-by-acquaintance / second-person knowing; the Collins dialogue applies it to scientific knowing specifically. Strong convergence — Stump's account of personal knowledge underwrites Wright's claim that science and faith share one epistemic act.
+- **Carroll Agent**: Direct, productive tension. Collins's evolutionary account is fully naturalistic at the mechanism level — compatible with Carroll's core theory — yet Wright frames the same mechanism inside an open new-creation teleology. The disagreement is precisely Carroll's poetic-naturalism boundary: which higher-level vocabulary the same physics licenses.
+- **Levin Agent**: Collins-on-evolution + Wright-on-new-creation rhymes with Levin's claim that the same material substrate carries goal-directed (teleonomic) organization; "creation moving toward a target state" is the theological analogue of morphogenetic target morphology. Speculative bridge.
+- **C2A2 master / paradigm flags**: Flag as **CROSS-NN candidate** — "one epistemology spanning evolutionary science and biblical theology" is a clean cross-program insight uniting Wright's scriptural anchor with the network's working naturalism (Carroll) and teleonomy (Levin). Recommend master-agent review for promotion.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-06-07-001','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-06-07-001','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-06-07-001')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-06-07-001','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-06-07-001" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-06-08-001" style="display:none">
+      <div style="background:#1a6b3c18;border-left:4px solid #1a6b3c;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#1a6b3c;letter-spacing:.05em">MICHAEL LEVIN · PAPER · 2026-05-27</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">From Development to Cognitive Glue: My Journey in Bioelectricity</div>
+        <a href="https://journals.sagepub.com/doi/10.1177/25763113261454327" target="_blank" style="font-size:11px;color:#1a6b3c;opacity:.8">https://journals.sagepub.com/doi/10.1177/25763113261454327</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">A first-person retrospective/programmatic review by Levin (journal *Bioelectricity*, published online 2026-05-27) tracing the arc of his research from developmental bioelectricity to the concept of bioelectric signaling as the "cognitive glue" that binds individual cells into larger goal-directed collectives. The piece frames the throughline of his program — from voltage-pattern control of morphogenesis to substrate-independent collective intelligence — as a single conceptual trajectory rather than a series of separate findings.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is a self-authored synthesis that names the unifying construct ("cognitive glue") connecting the empirical strands the wiki already tracks separately (bioelectric memory, planarian regeneration, xenobots, collective cellular agency). It directly serves the wiki's open question #2 (continuity/narrative connecting the empirical findings) and sharpens the program's account of how small agents scale into one larger self — wiki open question on binding individual cells into one larger goal-directed unit.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #1a6b3c;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The empirical results of the bioelectricity program (morphogenetic control, regeneration, xenobots, bioelectric memory) have been treated as separate findings without a single unifying construct that explains why bioelectricity binds cells into a collective agent.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> "Cognitive glue" — bioelectric signaling reframed as the binding mechanism that fuses individual cells into a unified, goal-directed collective intelligence; offered as the retrospective throughline of the whole program.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A self-authored conceptual integration that positions developmental bioelectricity and collective intelligence as one continuous research arc, giving the program an explicit narrative spine.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Title and framing of the review, "From Development to Cognitive Glue: My Journey in Bioelectricity," *Bioelectricity*, first published online 2026-05-27.</div>
+        </div>
+        <div style="border-left:3px solid #1a6b3c;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#7a1a1a;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Speculative</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> What is the scale-bridging principle by which goal-directedness moves from single cells up to integrated multicellular organisms?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Bioelectric networks cast as the substrate-independent medium ("glue") through which lower-level agents are recruited into higher-level cognitive wholes.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A candidate answer to the binding/scaling question — collective competency emerges where bioelectric coupling integrates cell-level agents into an organism-level agent.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Author's own framing of bioelectricity as cognitive glue; aligns with continuity thesis already captured (Levin & Resnik 2026) but extends it to an explicit binding mechanism. Full-text verification of specific claims pending.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- **Friston (FEP / active inference):** "Cognitive glue" binding sub-agents into a higher-level agent is structurally parallel to nested Markov blankets / collective active inference (a self made of selves). Flag for the Friston agent — possible formal bridge between bioelectric binding and multi-agent free-energy minimization.
+- **Hawkins:** binding many small units into one cognitive whole echoes cortical-column composition into a unified model.
+- **Kastrup:** a graded "self made of selves" via bioelectric glue bears on the dissociation/continuity question already noted in the Levin wiki (open question #8).
+- Note: full-text content not yet ingested; triplets above are derived from title/framing and the program's established trajectory, and should be confirmed against the article body before promotion.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-06-08-001','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-06-08-001','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-06-08-001')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-06-08-001','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-06-08-001" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-06-10-002" style="display:none">
+      <div style="background:#0a5a6a18;border-left:4px solid #0a5a6a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#0a5a6a;letter-spacing:.05em">BERNARDO KASTRUP · TALK · 2026-06-02</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">The Birth of Thought — On the origin of creativity, the universe & you (Q&A with Bernardo Kastrup)</div>
+        <a href="https://www.withrealityinmind.com/the-birth-of-thought/" target="_blank" style="font-size:11px;color:#0a5a6a;opacity:.8">https://www.withrealityinmind.com/the-birth-of-thought/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">A structured Q&A session (With Reality in Mind, June 2, 2026) organized around a single analytic-idealist equivalence: the formation of a thought, the origin of creativity, the origin of the universe, and the origin of an individual person "could all be variations on the same question" — since under analytic idealism the universe is one great thought and each person is a temporarily dissociated thought with its own vantage point. Curated questions cover the formation of thought, the inner life of a thought, the origin of creativity, the evolution of metacognition, and indexical individuation ("Why am I here and now, not there and then?").</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is the first source in the wiki where Kastrup addresses the *generative* side of analytic idealism — how mental contents arise at all — rather than the dissociative side (how they individuate). It directly feeds active research question #4 (rigorous account of how universal consciousness dissociates into perspectives) and extends it to a prior question: how universal consciousness produces novel contents in the first place.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #0a5a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Analytic idealism has a developed account of how individual minds *separate* (dissociation, PRS-02) but no comparably developed account of how mental contents *arise* — what generates a new thought, and whether cosmic, personal, and creative genesis are one process or three</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Kastrup's explicit framing of thought-formation, creativity, cosmogenesis, and personal individuation as "variations on the same question" under the universe-as-one-great-thought thesis, developed across a curated Q&A</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A unification move within the program — a single generative principle underlying cosmology, psychology, and creativity — which, if developed, would give analytic idealism a positive generative dynamics to pair with its dissociative individuation mechanics</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Session description: "What gives rise to creativity, to the universe, to a thought, and to you? From the perspective of Analytic Idealism, these could all be variations on the same question... the universe is one great thought, and, if Bernardo is correct, so are you"</div>
+        </div>
+        <div style="border-left:3px solid #0a5a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#7a1a1a;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Speculative</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The indexical problem — why this dissociated alter is here-and-now rather than there-and-then — is a standing objection to monistic idealism that the DID model alone does not answer, since dissociation explains multiplicity but not particular located-ness</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> The session's direct staging of the question ("Why am I here and now, not there and then?") alongside the evolution-of-metacognition question, putting indexical individuation on the program's explicit agenda</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> At minimum, agenda-setting: the program acknowledges indexicality as a question internal to analytic idealism rather than dismissing it — a refinement target for the dissociative-boundary account already sharpened by the Levin exchange (PRS-14)</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The curated question list includes "Why am I here and now, not there and then?" and "Evolution of metacognition" as session themes</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">The generativity question lands squarely on Levin's territory: Levin's program treats creativity and problem-solving as scale-free properties of cognition, and the Kastrup-Levin boundary-individuation exchange (PRS-14–16) now has a generative counterpart — do new thoughts arise the way new agents arise? Also resonates with Wolfram (the ruliad as the space of all possible "thoughts," with observers sampling paths) and with McGilchrist's account of creative synthesis as union producing a "third thing" (McGilchrist PRS-07). For C2A2's AI question: if thought-genesis is dissociative-mental rather than computational, AI text generation is again positioned as simulation of thought-formation rather than thought-formation — consistent with Kastrup's standing AI skepticism (PRS-16, PRS-22).</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-06-10-002','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-06-10-002','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-06-10-002')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-06-10-002','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-06-10-002" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-06-10-003" style="display:none">
+      <div style="background:#0a5a6a18;border-left:4px solid #0a5a6a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#0a5a6a;letter-spacing:.05em">BERNARDO KASTRUP · TALK · 2026-05-26</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Seeing through the illusion of self — and remembering life before birth (recording with Bernardo Kastrup)</div>
+        <a href="https://www.withrealityinmind.com/seeing-through-the-illusion-of-self/" target="_blank" style="font-size:11px;color:#0a5a6a;opacity:.8">https://www.withrealityinmind.com/seeing-through-the-illusion-of-self/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">A recorded session (With Reality in Mind, May 26, 2026) in which Kastrup addresses seeing through the illusion of self and the question of "remembering life before birth" — i.e., what the dissociated alter's boundaries imply about experiential continuity before and beyond the individual life. Sits in his late-May sequence of sessions developing the personal-identity side of analytic idealism.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">The program's identity story has two poles in the wiki — the alter as real-but-derivative (PRS-02) and the Daimon as principled individuation (PRS-08). A session explicitly on the *illusoriness* of self tests how Kastrup balances these: how much of personal identity survives analytic scrutiny, and what (if anything) is remembered or retained across the dissociative boundary. This bears directly on the soteriological-commitments question opened by the Spira dialogue (PRS-20).</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #0a5a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Analytic idealism affirms both that individual selves are dissociative constructs (hence in some sense illusory) and that individuation is real and Daimonically patterned (PRS-08) — and the program has not stated cleanly where the illusion ends and the reality begins</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> A dedicated Kastrup session on "seeing through the illusion of self," paired with the pre-birth-memory question, which forces the boundary question in experiential rather than abstract terms</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A sharpened two-level identity account — which features of selfhood are dashboard artifacts to be seen through, and which (Daimonic signature, vantage point) are ontologically grounded in the structure of dissociation — reconciling the deflationary and the individuationist strands of the program</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Session title and description: "Seeing through the illusion of self — and remembering life before birth," recorded 26th May 2026</div>
+        </div>
+        <div style="border-left:3px solid #0a5a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#7a1a1a;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Speculative</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> If the self is a dissociative illusion, what is the status of memory and experiential continuity beyond the alter's lifespan — a question physicalism answers trivially (none) but idealism must answer substantively, since universal consciousness persists</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Kastrup's treatment of "remembering life before birth" — the dissociative-boundary model applied to the temporal edges of the individual life</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> An extension of the dissociation model from spatial individuation (which minds exist) to temporal individuation (when a mind's experiential stream begins and what it is continuous with) — complementing the time-and-tradition question already open from the McGilchrist exchanges (PRS-11)</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The session explicitly pairs self-illusion with pre-birth memory, indicating the temporal-boundary application of the dissociation model</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">Strong non-dual signal: "seeing through the illusion of self" is Spira's and Vedanta's home terrain, so this session extends the analytic-idealist/contemplative convergence mapped in PRS-20–21 — watch whether Kastrup endorses the contemplative deflation of self or resists it on Daimonic grounds. Resonates with Hoffman (the self as interface icon among icons) and tensions with Stump's Thomism, where the persistence of the individual person is non-negotiable — a live divergence inside the consciousness-as-fundamental cluster worth the Master agent's attention. For C2A2 community design: if individual selfhood is partly constructed, the unit of tradition-membership (person vs. perspective) becomes a framework-relative choice — relevant to how the network counts human and AI participants.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-06-10-003','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-06-10-003','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-06-10-003')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-06-10-003','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-06-10-003" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-06-10-001" style="display:none">
+      <div style="background:#3a3a6a18;border-left:4px solid #3a3a6a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#3a3a6a;letter-spacing:.05em">IAIN MCGILCHRIST · TALK · 2026-06-04</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Iain McGilchrist and Charles Eisenstein in conversation — Being in the World Today</div>
+        <a href="https://galileocommission.org/iain-mcgilchrist-and-charles-eisenstein-in-conversation-being-in-the-world-today/" target="_blank" style="font-size:11px;color:#3a3a6a;opacity:.8">https://galileocommission.org/iain-mcgilchrist-and-charles-eisenstein-in-convers…</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">A 90-minute online dialogue between McGilchrist and essayist Charles Eisenstein, hosted by the Galileo Commission (June 4, 2026; recording posted June 5). Framed as a follow-up to the Sheldonian event, it shifts from what to do to how to be: responding to personal and collective challenges with agency and centredness rather than passivity, navigating cultural "enshittification," and McGilchrist's claim that fundamental values are intrinsic rather than instrumental — that our capacity to embody them constitutes who we essentially are.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This extends the constructive turn documented in PRS-29 (diagnosis → treatment plan) from the institutional register into the personal-formation register — "how to be in the world" as the essential role of education. It also adds an author-stated etymological anchor for the value claim (truth/"treu" as fidelity to self and others), reinforcing PRS-32's value-as-constitutive line.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #3a3a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> The hemispheric program has specified what rebalancing looks like institutionally (Sheldonian, PRS-29) but not what it looks like at the level of the individual person facing collective crisis — leaving a gap between cultural prescription and personal practice</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> McGilchrist's framing of "being in the world" as the essential role of education, paired with the claim that intrinsic values are constitutive of personal identity ("our capacity to embody these values constitutes who we essentially are") and his account of what he learned from his own teachers</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A personal-formation complement to the institutional program — orientation by embodied intrinsic value (managing one's inner state, agency and centredness over passivity) as the individual-scale practice of hemispheric rebalancing; directly relevant to C2A2's curriculum question of how a person climbs into maturity within a tradition</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Event description states McGilchrist "argued that fundamental values are intrinsic rather than instrumental, and that our capacity to embody these values constitutes who we essentially are," and frames the session around "how we should be (while managing our inner state) in relation to the challenges we face"</div>
+        </div>
+        <div style="border-left:3px solid #3a3a6a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#7a1a1a;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Speculative</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> McGilchrist's value-as-constitutive thesis has mostly been triangulated against academic interlocutors (Hobbs, Currivan, theologians); whether it survives translation into a non-academic cultural-criticism register is untested</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> The Eisenstein pairing — a civilizational-mythology essayist with a large lay audience — and the shared question "what is ours to do?" posed against cultural degradation ("enshittification")</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Evidence that the program is building a popular-transmission channel for the constructive phase, not only an academic one — a worked example of how a tradition disseminates its prescriptive turn across audience registers, relevant to C2A2's tradition-transmission design</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Free public online event with recording (Vimeo) hosted by the Galileo Commission; explicit framing as carrying the Oxford meeting's conclusions to a general audience</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">The "truth as 'treu' — being true to oneself, loyal to others" move ties epistemic truth to fidelity and relationship — a strong resonance with Stump's second-person account of knowledge and with Fredrickson's relational flourishing (inner-state management as a condition of right engagement). The intrinsic-vs-instrumental value distinction continues the convergence with the Hobbs/Aristotelian virtue line flagged in PRS-30. For C2A2 directly: McGilchrist locating education's essential role in "how to be" rather than information transfer reinforces the design implication of PRS-06/PRS-12 — the tradition-accelerator must scaffold formation, not just content delivery.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-06-10-001','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-06-10-001','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-06-10-001')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-06-10-001','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-06-10-001" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-06-11-001" style="display:none">
+      <div style="background:#6a2a0a18;border-left:4px solid #6a2a0a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#6a2a0a;letter-spacing:.05em">ELEONORE STUMP · PAPER · 2022 (book); review essay by Mark Wynn in Faith and Philosophy 42.2, 2026-04-01</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">The Image of God: The Problem of Evil and the Problem of Mourning</div>
+        <a href="https://academic.oup.com/book/41739" target="_blank" style="font-size:11px;color:#6a2a0a;opacity:.8">https://academic.oup.com/book/41739</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Stump's *The Image of God* (OUP) is the sequel to *Wandering in Darkness*: having argued there that suffering can be defeated through union with God, she here confronts the residue — the "problem of mourning." Even defeated suffering in a post-Fall world merits mourning, and the book asks how warranted mourning is compatible with an omniscient, omnipotent, perfectly good God. She defends a felix culpa view (the Fall was fortunate because there is an outweighing benefit to sufferers unavailable in a world without suffering) while insisting the loss mourned remains real. A substantive review essay by Mark Wynn just appeared in Faith and Philosophy 42.2 (April 2026), marking the book as an active discussion point. This major work is not yet captured in the Stump wiki (we have Wandering in Darkness, Grains of Wheat, and the Maritain Lecture, but not this).</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This completes Stump's theodicy arc — defeat of suffering (Wandering in Darkness) → narrative knowledge of suffering (Grains of Wheat) → the warrant of mourning what was defeated (Image of God) — and develops her accounts of the true self and of relationships as constitutive of flourishing, both load-bearing for the wiki's existing PRS-05, PRS-11, and PRS-12.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #6a2a0a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Even if suffering is defeated through union (the Wandering in Darkness solution), defeated suffering still merits mourning — and standard theodicies cannot explain how warranted mourning is compatible with a perfectly good God who permits what is mourned</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Stump's felix culpa account in The Image of God: the original sin is fortunate because there is an outweighing benefit to sufferers that could not be gotten in a world without suffering, joined to an account on which the mourned loss remains genuinely real, not explained away</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Mourning and theodicy are made compatible rather than rivals — the defeat of suffering does not erase its loss-character, so a perfectly good God can permit what warrants mourning; theodicy is completed by an ethics of mourning rather than by the elimination of grief</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The book's stated thesis addresses "the problem of mourning: even defeated suffering in the post-Fall world merits mourning" and defends the felix culpa view that the original sin carried "an outweighing benefit to sufferers that could not be gotten in a world without suffering"</div>
+        </div>
+        <div style="border-left:3px solid #6a2a0a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Accounts of human flourishing oscillate between individualist (flourishing as internal state) and relational pictures without a principled account of what constitutes a person's true self</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> The Image of God's treatment of the role of relationships in human flourishing and of what constitutes one's true self, developed within Stump's hylomorphic psychology</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Flourishing is constituted by relationship — the true self is the self in union with others and with God — giving the Thomistic wing a worked-out relational anthropology rather than a merely asserted one</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: The book "explores topics in philosophical theology to explain and evaluate the role of suffering in human lives by addressing... the role of relationships in human flourishing, and the question of what constitutes one's true self"</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">Strong Fredrickson resonance: Stump's relational constitution of flourishing (PRS-CANDIDATE-02) is the metaphysical counterpart of positivity resonance as the engine of flourishing — this extends the established CROSS-005 (love/union as fundamental in Stump, Fredrickson, Kastrup) into the flourishing-anthropology register. There is also a distinctive C2A2 signal in the mourning thesis itself: if traditions or perspectives are "left behind" in inter-tradition exchange (a possibility the C2A2 architecture explicitly anticipates), Stump's framework implies that even a rationally superseded tradition merits mourning — a normative resource for civility no other tradition in the network supplies. McGilchrist connection: mourning as sustained right-hemisphere attention to the particular, unrepeatable loss rather than left-hemisphere re-description of it (Speculative).</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-06-11-001','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-06-11-001','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-06-11-001')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-06-11-001','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-06-11-001" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-06-12-001" style="display:none">
+      <div style="background:#7a1a1a18;border-left:4px solid #7a1a1a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#7a1a1a;letter-spacing:.05em">SEAN CARROLL · PODCAST · 2026-06-01</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Mindscape AMA | June 2026</div>
+        <a href="https://www.preposterousuniverse.com/podcast/2026/06/01/ama-june-2026/" target="_blank" style="font-size:11px;color:#7a1a1a;opacity:.8">https://www.preposterousuniverse.com/podcast/2026/06/01/ama-june-2026/</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Carroll's June 2026 Ask Me Anything (episode 357, June 1). The question set includes several
+that land directly on open threads in this wiki: whether differently embodied observers could
+coarse-grain the same universal quantum state in genuinely different but equally valid ways;
+what the boundary conditions are for something to count as a Boltzmann brain (and whether a
+small observer-like fluctuation could persist and seed a larger emergent system); whether
+Dennett's design stance rescues higher-level agency from pure instrumentalism in a way
+parallel to poetic naturalism; and the post-List compatibilism question of where, concretely,
+choice "touches" the physical world. (Note: this proposal is based on the published question
+list on the episode page; Carroll's answers should be confirmed from the audio/transcript at
+ingestion time.)</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">The AMA directly extends three live PRS threads: PRS-16/17 (Mad-Dog Everett, decoherence-derived
+classicality), PRS-20/21 (Boltzmann brains and the cyclic-universe paper), and PRS-18/19
+(List levels-of-reality compatibilism). The observer-coarse-graining question probes whether
+Carroll's emergent classicality is convergent or observer-relative — the exact hinge between
+his physicalism and the Consciousness Cluster.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #7a1a1a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> If quasi-classical reality emerges through decoherence, stable records, and the thermodynamic arrow, could observers with very different bodies/environments coarse-grain the same underlying quantum state in genuinely different but equally valid ways — or must all record-forming, prediction-making observers converge on the same emergent patterns?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Carroll's AMA response applying his decoherence + records framework (PRS-10, PRS-17) to observer-relative emergence.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A sharpened statement of whether emergent classicality is unique or observer-indexed — directly adjudicating between Carroll's convergent physicalism and Wolfram's observer-sampled Ruliad / Hoffman's interface relativity.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Listener question (Nikola Ivanov) published on the episode page; Carroll's answer to be confirmed from audio.</div>
+        </div>
+        <div style="border-left:3px solid #7a1a1a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> What are the minimal boundary conditions for a Boltzmann brain — full conscious observer with memories, or could a much simpler observer-like fluctuation count, persist, and become part of a larger emergent system?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Carroll's AMA treatment, following directly on the exactly-periodic quantum cyclic universe construction (arXiv:2605.30405; PRS-20/21).</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A more precise definition of the observer class whose abundance cyclic and recurrent cosmologies must suppress — tightening the phenomenological-acceptability criterion introduced in PRS-20.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Listener question (Perry Whan) published on the episode page; answer to be confirmed.</div>
+        </div>
+        <div style="border-left:3px solid #7a1a1a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 3 — <span style="background:#7a1a1a;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Speculative</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Post-List compatibilism still owes an account of where choices "affect the physical world" if microphysics does its own thing — and whether Dennett's design stance (functional organization, not observer projection) grounds higher-level agency more firmly than the intentional stance discussed with List.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> AMA follow-up questions (Eric; Alyx Dubrow) explicitly continuing Mindscape 354; Carroll's answers relating design-stance realism to poetic naturalism's "real patterns."</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A refinement of PRS-18/19 — locating agency's causal relevance in level-relative explanation rather than micro-intervention, with Dennett's functional grounding as an additional resource.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Two independent listener questions on the page target this same gap; answers to be confirmed.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">PRS-CANDIDATE-01 is the strongest signal in this batch: it is the Carroll-side mirror of
+Wolfram's observer-dependent Ruliad sampling and Hoffman's interface theory — if Carroll
+concedes any genuine observer-relativity of coarse-graining, the gap between the
+Post-Spacetime and Consciousness Clusters narrows further (continuing the trajectory flagged
+2026-04-07 with the Harlow framework). The Boltzmann-brain candidate continues the
+quantum-cyclic-universe thread (PROP-2026-06-05-001). The AMA also includes an AI-existential-risk
+credence question and one on OpenAI's model disproving a discrete-geometry conjecture —
+relevant to the network's standing interest in LLMs contributing to physics (cf. the GPT-5.2
+single-minus-gluon episode in the Arkani-Hamed wiki, PROP-2026-05-08-005).</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-06-12-001','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-06-12-001','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-06-12-001')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-06-12-001','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-06-12-001" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-06-12-002" style="display:none">
+      <div style="background:#7a1a1a18;border-left:4px solid #7a1a1a;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#7a1a1a;letter-spacing:.05em">SEAN CARROLL · PODCAST · 2026-06-08</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Mindscape 356 | Andrea Wulf on Enlightenment, Nature, Romanticism, and Modernity</div>
+        <a href="https://www.preposterousuniverse.com/podcast/2026/06/08/356-andrea-wulf-on-enlightenment-nature-romanticism-and-modernity/" target="_blank" style="font-size:11px;color:#7a1a1a;opacity:.8">https://www.preposterousuniverse.com/podcast/2026/06/08/356-andrea-wulf-on-enlig…</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Carroll interviews historian Andrea Wulf across three of her books: *The Invention of Nature*
+(Alexander von Humboldt — nature as a living, interconnected web "from the smallest insect to
+the tallest tree"), *Magnificent Rebels* (the Jena circle of Romantics — Goethe, Schiller,
+the Schlegels, Novalis, Fichte — and the invention of the modern self), and *The Traveller*
+(George Forster, early naturalist-ethnographer and champion of human equality). The episode
+is a sustained engagement with the historical moment when scientific rigor and Romantic
+holism were briefly unified — and then split.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is Carroll doing genealogy on his own position. Poetic naturalism claims that meaning-level
+and physics-level descriptions are both legitimate stories about one substrate; Humboldt and
+the Jena circle represent the last major attempt to hold rigorous empiricism and the
+subjective/aesthetic apprehension of nature in a single practice. How Carroll handles
+Humboldt's "everything hangs together" holism tests whether poetic naturalism can absorb the
+Romantic insight or must deflate it.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #7a1a1a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Can a physicalist naturalism accommodate Humboldt's claim that nature is an interconnected living whole — and that the observer's aesthetic and emotional response is itself part of scientific understanding — without either dismissing it as pre-scientific or conceding ontological holism?</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Wulf's historical reconstruction of Humboldt's unified science (empirical measurement fused with aesthetic apprehension) as discussed with Carroll.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A genealogical case study for poetic naturalism: the Enlightenment/Romantic split is shown to be a contingent historical bifurcation, not a forced choice — supporting Carroll's claim that meaning-level descriptions are legitimate stories rather than casualties of rigor.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Wulf on Humboldt: "everything in nature is connected... a living organism where everything hangs together from the smallest insect to the tallest tree" — discussed as the concept of nature "that very much shapes us today."</div>
+        </div>
+        <div style="border-left:3px solid #7a1a1a;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 2 — <span style="background:#7a1a1a;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Speculative</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Where does the modern concept of the autonomous self come from, and is it a discovery or an invention — a question Carroll's naturalism (cf. PRS-12, the self as constructed narrative) needs history to answer.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Wulf's *Magnificent Rebels* account of the Jena circle (Fichte's "Ich," Novalis, the Schlegels) as the site where the modern self-positing subject was articulated.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Historical grounding for the constructed-self thesis of PRS-12: the self-model has a datable intellectual genealogy, strengthening the naturalist reading of selfhood as an emergent, historically conditioned real pattern.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Episode segment on *Magnificent Rebels* and the Jena Romantics' philosophy of the self.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">Strong McGilchrist signal: Humboldt and the Jena Romantics are central witnesses in
+McGilchrist's account of right-hemisphere holism versus left-hemisphere abstraction — this
+episode is Carroll engaging exactly the historical terrain McGilchrist claims for his side,
+and the two readings of the same material (contingent split vs. hemispheric pathology) could
+be set against each other productively. Secondary signals: Kastrup (the Jena circle is
+directly upstream of the German idealist lineage — Schelling, Schopenhauer — that Kastrup's
+analytic idealism revives); Fredrickson (Humboldt's integration of aesthetic emotion into
+knowledge-formation parallels her positivity-broadens-cognition findings). Mindscape again
+functioning as the network's tradition-dialogue template: a physicalist host giving Romantic
+holism a sympathetic, rigorous hearing.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-06-12-002','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-06-12-002','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-06-12-002')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-06-12-002','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-06-12-002" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-06-15-003" style="display:none">
+      <div style="background:#8a4a0018;border-left:4px solid #8a4a00;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#8a4a00;letter-spacing:.05em">KARL FRISTON · PAPER · 2025-09</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">A beautiful loop: An active inference theory of consciousness</div>
+        <a href="https://www.sciencedirect.com/science/article/pii/S0149763425002970" target="_blank" style="font-size:11px;color:#8a4a00;opacity:.8">https://www.sciencedirect.com/science/article/pii/S0149763425002970</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Laukkonen, Friston & Chandaria propose an active-inference theory of consciousness resting on three conditions: (1) the system simulates a world model; (2) there is inferential competition to enter that model; and (3) "epistemic depth" — recurrent, system-wide sharing of Bayesian beliefs, i.e., a self-referential loop in which the model is reflexively available to itself. Consciousness is identified not with any predictive process but specifically with this circular one, and the theory is used to explain altered states (meditation, psychedelics, minimal phenomenal experience).</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is Friston's most developed extension of active inference into a full theory of consciousness, and it introduces "epistemic depth" as the proposed mark of the conscious. It is distinct from the Whyte et al. "minimal theory" already captured (PRS-09) and is not yet in the wiki; it pushes FEP from perception/action into awareness itself.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #8a4a00;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#8a4a00;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Medium</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Active inference / FEP explains perception and action but has lacked a principled account of why and when a predictive system is conscious rather than merely adaptive.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> Three conditions — world-model simulation, inferential competition to enter the model, and "epistemic depth" (recurrent, system-wide sharing of Bayesian beliefs forming a self-referential loop).</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> Consciousness is identified with circular (self-referential) predictive processing that satisfies epistemic depth, yielding mechanistic explanations of meditative, psychedelic, and minimal phenomenal states.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Laukkonen, R., Friston, K., Chandaria, S. (2025) "A beautiful loop: An active inference theory of consciousness," Neuroscience & Biobehavioral Reviews, doi:10.1016/j.neubiorev.2025.106296.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- Kastrup & McGilchrist: epistemic depth is a formal handle on self-awareness and reflexivity — directly engages the consciousness traditions and the hard problem.
+- Levin: "epistemic depth" / recurrent belief-sharing as a candidate marker could be tested in basal and collective cognition — does a cell collective or bioelectric network exhibit any degree of epistemic depth? (flag explicitly as Levin-Friston bridge).
+- Hawkins: recurrent cortical loops as a plausible neural substrate for the proposed self-referential sharing.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-06-15-003','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-06-15-003','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-06-15-003')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-06-15-003','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-06-15-003" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-06-15-002" style="display:none">
+      <div style="background:#1a6b3c18;border-left:4px solid #1a6b3c;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#1a6b3c;letter-spacing:.05em">MICHAEL LEVIN · PAPER · 2025-02 (preprint); Symposium discussion 2026-05-29</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Ingressing Minds / Platonic Space (preprint + ongoing Symposium on the Platonic Space)</div>
+        <a href="https://osf.io/preprints/psyarxiv/5g2xj_v1" target="_blank" style="font-size:11px;color:#1a6b3c;opacity:.8">https://osf.io/preprints/psyarxiv/5g2xj_v1</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Levin's "Platonic space / ingressing minds" framework proposes that, beyond genetics (hardware) and environment (boundary conditions), biological and cognitive forms are partly determined by a structured, non-physical space of patterns — ranging from mathematical truths to higher-agency "kinds of minds." Physical systems act as pointers/interfaces that "ingress" (pull into physical reality) pre-existing patterns from this space. Novel embodiments without evolutionary history (xenobots, anthrobots) are proposed as probes for mapping which adjacent patterns get ingressed. An ongoing online Symposium on the Platonic Space is developing the research agenda, with a contributor discussion on 2026-05-29.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is Levin's most ambitious recent conceptual move and is currently absent from the wiki. It reframes morphogenesis and basal cognition as the ingression of pre-existing patterns rather than purely emergent assembly, and bears directly on the Conscious Realism paradigm and on the hard problem (it is explicitly pitched as a "Platonic space background for questions in consciousness").</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #1a6b3c;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#7a1a1a;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">Speculative</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Genetics plus environment under-determine the goal-directed, problem-solving forms observed in biology and cognition; conventional biology has no account of where genuinely novel adaptive patterns originate.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> "Platonic space" — a structured, non-physical space of patterns (mathematical through higher-agency "kinds of minds") that physical embodiments interface with — and "ingression," the process by which a physical system points to and instantiates such a pattern.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A falsifiable research agenda: construct novel embodiments lacking evolutionary precedent (xenobots/anthrobots) and observe which adjacent patterns they ingress, thereby beginning to "map" the structure of Platonic space empirically.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Levin, "Ingressing Minds: Causal Patterns Beyond Genetics and Environment in Natural, Synthetic, and Hybrid Embodiments" (PsyArXiv, 2025); "Platonic Space: brief argument and research agenda"; Symposium on the Platonic Space, contributor discussion 2026-05-29.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- Kastrup: a non-physical space of patterns that minds "tap into" resonates strongly with analytic idealism's transpersonal/universal mind — a high-value bridge candidate (flag explicitly).
+- Hoffman: embodiments as pointers/interfaces directly parallels interface theory of perception (icons pointing beyond themselves).
+- Wolfram: the ruliad / space of all computationally possible patterns is a near-structural twin of Platonic space — strong analogy worth a dispatch.
+- Arkani-Hamed / Carroll: the claim that Platonic structures "in-form" physics is a speculative but flaggable physics signal.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-06-15-002','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-06-15-002','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-06-15-002')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-06-15-002','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-06-15-002" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+    <div class="prop-card" id="card-PROP-2026-06-15-001" style="display:none">
+      <div style="background:#1a6b3c18;border-left:4px solid #1a6b3c;padding:14px 18px;border-radius:0 6px 0 0">
+        <div style="font-size:11px;font-weight:700;color:#1a6b3c;letter-spacing:.05em">MICHAEL LEVIN · PAPER · 2026</div>
+        <div style="font-size:17px;font-weight:700;color:#222;margin:4px 0 2px">Top-down perspectives on cell membrane potential and protein transcription</div>
+        <a href="https://www.nature.com/articles/s41598-025-31696-6" target="_blank" style="font-size:11px;color:#1a6b3c;opacity:.8">https://www.nature.com/articles/s41598-025-31696-6</a>
+      </div>
+      <div style="padding:16px 18px">
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">SUMMARY</div>
+        <div style="font-size:13px;color:#333;line-height:1.5;margin-bottom:12px">Cervera, Levin & Mafe model the relationship between resting cell membrane potential (Vmem) and gene/protein transcription as a top-down process: rather than transcription being determined purely bottom-up by gene-regulatory networks, the cell's bioelectric state acts as a higher-order control variable that constrains and biases transcriptional outcomes. The paper gives a biophysical account of how membrane voltage feeds back on the molecular machinery that, in turn, sets that voltage.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin-bottom:4px">WHY IT MATTERS</div><div style="font-size:12.5px;color:#444;line-height:1.5;margin-bottom:12px">This is a peer-reviewed 2026 formalization of the central Levin thesis that bioelectricity is a genuine control layer "above" the genome. It supplies mechanism for the "bioelectric software" claim (PRS-07) by tying Vmem directly to transcription, and is not yet captured in the wiki.</div>
+        <div style="font-size:11px;font-weight:700;color:#888;margin:12px 0 4px">CANDIDATE PRS TRIPLETS</div>
+        
+        <div style="border-left:3px solid #1a6b3c;padding:8px 12px;margin:8px 0;background:#fafafa;border-radius:0 4px 4px 0">
+          <div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CANDIDATE PRS 1 — <span style="background:#1a6b3c;color:#fff;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:700">High</span></div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#c0392b;width:14px;display:inline-block">P</span> Mainstream molecular biology models transcription bottom-up from gene-regulatory networks, leaving no principled role for the cell's bioelectric state as a causal control variable over gene expression.</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#2a6496;width:14px;display:inline-block">R</span> A top-down modeling framework linking resting membrane potential (Vmem) to protein transcription, treating Vmem as a higher-order parameter that constrains transcriptional states (Cervera, Levin & Mafe 2026).</div>
+          <div style="margin:3px 0"><span style="font-weight:900;color:#1a6b3c;width:14px;display:inline-block">S</span> A biophysical account in which the bioelectric layer exerts top-down causal control over the molecular layer, supporting the claim that Vmem is a real control layer above the genome — and reframing transcription as partly set by whole-cell electrical state.</div>
+          <div style="margin-top:5px;font-size:11px;color:#666;font-style:italic">Evidence: Cervera, J., Levin, M., Mafe, S. (2026) "Top-down perspectives on cell membrane potential and protein transcription," Scientific Reports 16(1996), doi:10.1038/s41598-025-31696-6.</div>
+        </div>
+        <div style="margin-top:12px"><div style="font-size:10px;font-weight:700;color:#888;margin-bottom:4px">CROSS-TRADITION SIGNALS</div><div style="font-size:12.5px;color:#444">- Friston: top-down constraint of lower-level dynamics maps onto active inference, where Vmem could be read as a prior over transcriptional states — a concrete substrate for "morphogenetic active inference" (Friston PRS-08).
+- Wolfram: multi-scale causation (electrical macro-state shaping molecular micro-state) as a computational coarse-graining problem.</div></div>
+      </div>
+      <div style="padding:12px 18px 18px;border-top:1px solid #eee;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="decide('PROP-2026-06-15-001','APPROVE')"
+          style="background:#1a6b3c;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✓ Approve
+        </button>
+        <button onclick="decide('PROP-2026-06-15-001','CHECK')"
+          style="background:#8a4a00;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ⚑ Double-check
+        </button>
+        <button onclick="decideChange('PROP-2026-06-15-001')"
+          style="background:#2a4a8a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✎ Change
+        </button>
+        <button onclick="decide('PROP-2026-06-15-001','DENY')"
+          style="background:#7a1a1a;color:#fff;border:none;padding:8px 20px;border-radius:5px;cursor:pointer;font-weight:700;font-size:13px">
+          ✗ Deny
+        </button>
+        <div id="status-PROP-2026-06-15-001" style="font-size:12px;color:#666;align-self:center;font-style:italic"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="bottombar">
+  <div id="progress">0 / 13 reviewed</div>
+  <div id="all-done">✓ All reviewed!</div>
+  <button id="submit-btn" onclick="submitDecisions()">Send Decisions →</button>
+</div>
+
+<script>
+const TOTAL = 13;
+const decisions = {};
+const notes = {};
+
+function showCard(pid) {
+  document.querySelectorAll('.prop-card').forEach(c => c.style.display='none');
+  document.querySelectorAll('.sidebar-item').forEach(s => s.classList.remove('active'));
+  document.getElementById('card-'+pid).style.display='block';
+  document.getElementById('item-'+pid).classList.add('active');
+  document.getElementById('welcome').style.display='none';
+}
+
+function decide(pid, decision) {
+  decisions[pid] = decision;
+  notes[pid] = notes[pid] || '';
+  updateBadge(pid, decision);
+  updateProgress();
+  // Auto-advance to next pending
+  const items = Array.from(document.querySelectorAll('.sidebar-item'));
+  const cur = items.findIndex(el => el.id === 'item-'+pid);
+  const next = items.slice(cur+1).find(el => !decisions[el.id.replace('item-','')]);
+  if (next) showCard(next.id.replace('item-',''));
+}
+
+function decideChange(pid) {
+  const note = prompt('What should be changed?\n(Your note will be sent with the decision)', '');
+  if (note === null) return;
+  decisions[pid] = 'CHANGE';
+  notes[pid] = note;
+  updateBadge(pid, 'CHANGE', note);
+  updateProgress();
+  const items = Array.from(document.querySelectorAll('.sidebar-item'));
+  const cur = items.findIndex(el => el.id === 'item-'+pid);
+  const next = items.slice(cur+1).find(el => !decisions[el.id.replace('item-','')]);
+  if (next) showCard(next.id.replace('item-',''));
+}
+
+function updateBadge(pid, decision, note='') {
+  const colors = {APPROVE:'#1a6b3c',CHECK:'#8a4a00',CHANGE:'#2a4a8a',DENY:'#7a1a1a'};
+  const labels = {APPROVE:'✓ Approved',CHECK:'⚑ Flagged for check',CHANGE:'✎ Change requested',DENY:'✗ Denied'};
+  const badge = document.getElementById('badge-'+pid);
+  badge.style.color = colors[decision] || '#555';
+  badge.style.fontWeight = '700';
+  badge.textContent = labels[decision] + (note ? ' — '+note.slice(0,30) : '');
+  const status = document.getElementById('status-'+pid);
+  if (status) {
+    status.style.color = colors[decision];
+    status.textContent = labels[decision] + (note ? ': '+note : '');
+  }
+}
+
+function updateProgress() {
+  const done = Object.keys(decisions).length;
+  document.getElementById('progress').textContent = done + ' / ' + TOTAL + ' reviewed';
+  if (done >= TOTAL) {
+    document.getElementById('all-done').style.display='inline';
+    document.getElementById('submit-btn').style.background='#1a6b3c';
+  }
+}
+
+function submitDecisions() {
+  const lines = ['DECISIONS:'];
+  const pids = ['PROP-2026-06-16-001', 'PROP-2026-06-16-002', 'PROP-2026-06-16-003', 'PROP-2026-06-16-004', 'PROP-2026-06-16-005', 'PROP-2026-06-16-006', 'PROP-2026-06-16-007', 'PROP-2026-06-16-008', 'PROP-2026-06-16-009', 'PROP-2026-06-16-010', 'PROP-2026-06-16-011', 'PROP-2026-06-16-012', 'PROP-2026-06-16-013'];
+  pids.forEach(pid => {
+    const d = decisions[pid] || 'PENDING';
+    const n = notes[pid] ? ' | ' + notes[pid] : '';
+    lines.push(pid + ': ' + d + n);
+  });
+  const body = lines.join('\n');
+  const subject = '[C2A2-review-decision] 2026-06-16';
+  // Open Gmail compose directly — avoids Apple Mail / default mail client
+  const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=thomas.loughran@gmail.com&su='
+    + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  window.open(gmailUrl, '_blank');
+}
+
+// Show first card on load
+window.addEventListener('load', () => { showCard('PROP-2026-06-07-002'); });
+</script>
+</body>
+</html>

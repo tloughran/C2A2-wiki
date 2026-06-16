@@ -6875,980 +6875,980 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
 
 
 [ASSUMPTION] ASSUMPTION-077: (see MONITOR-75 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: LOW-MEDIUM
   Notes: Weekly refresh for MONITOR-75 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-090: (see MONITOR-77 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: LOW-MEDIUM
   Notes: Weekly refresh for MONITOR-77 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-092: (see MONITOR-78 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: LOW-MEDIUM
   Notes: Weekly refresh for MONITOR-78 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-080: (see MONITOR-80 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-80 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-082: (see MONITOR-82 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-82 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-089: (see MONITOR-89 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-89 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-092: (see MONITOR-92 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-92 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-095: (see MONITOR-95 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-95 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-097: (see MONITOR-100 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-100 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-098: (see MONITOR-101 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-101 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-099: (see MONITOR-102 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-102 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-101: (see MONITOR-104 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-104 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-106: (see MONITOR-109 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM
   Notes: Weekly refresh for MONITOR-109 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-108: (see MONITOR-110 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-110 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-109: (see MONITOR-111 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-111 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-111: (see MONITOR-113 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-113 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-112: (see MONITOR-114 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-114 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-128: (see MONITOR-115 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM
   Notes: Weekly refresh for MONITOR-115 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-135: (see MONITOR-118 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM
   Notes: Weekly refresh for MONITOR-118 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-137: (see MONITOR-119 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM
   Notes: Weekly refresh for MONITOR-119 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-118: (see MONITOR-122 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-122 cycle 3. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-121: (see MONITOR-126 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-126 cycle 3. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-127: (see MONITOR-130 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM
   Notes: Weekly refresh for MONITOR-130 cycle 3. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-153: (see MONITOR-134 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-134 cycle 3. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-154: (see MONITOR-135 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-135 cycle 3. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-160: (see MONITOR-140 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-140 cycle 3. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-167: (see MONITOR-146 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-146 cycle 3. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-133: (see MONITOR-148 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-148 cycle 3. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-138: (see MONITOR-151 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM
   Notes: Weekly refresh for MONITOR-151 cycle 3. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-140: (see MONITOR-153 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-153 cycle 3. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-170: (see MONITOR-160 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-160 cycle 3. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-173: (see MONITOR-163 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM
   Notes: Weekly refresh for MONITOR-163 cycle 3. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-175: (see MONITOR-165 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-165 cycle 3. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-178: (see MONITOR-168 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-168 cycle 3. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-180: (see MONITOR-169 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-169 cycle 3. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-181: (see MONITOR-170 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 3] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 3; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-170 cycle 3. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-159: (see MONITOR-172 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-172 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-162: (see MONITOR-174 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-174 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-169: (see MONITOR-179 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-179 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-184: (see MONITOR-181 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-181 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-186: (see MONITOR-183 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-183 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-189: (see MONITOR-184 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: MEDIUM-HIGH
   Notes: Weekly refresh for MONITOR-184 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-179: (see MONITOR-194 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-194 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-180: (see MONITOR-195 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-195 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-187: (see MONITOR-197 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-197 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-190: (see MONITOR-198 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-198 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-193: (see MONITOR-199 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-199 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-195: (see MONITOR-200 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-200 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-196: (see MONITOR-201 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-201 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-197: (see MONITOR-202 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-202 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-200: (see MONITOR-203 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-203 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-213: (see MONITOR-204 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-204 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-214: (see MONITOR-205 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-205 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-216: (see MONITOR-206 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-206 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-217: (see MONITOR-207 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-207 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-218: (see MONITOR-208 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-208 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-219: (see MONITOR-209 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-209 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-201: (see MONITOR-210 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-210 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-202: (see MONITOR-211 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-211 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-207: (see MONITOR-213 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-213 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-224: (see MONITOR-214 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-214 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-226: (see MONITOR-216 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-216 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-227: (see MONITOR-217 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-217 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-229: (see MONITOR-218 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-218 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-230: (see MONITOR-219 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-219 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-214: (see MONITOR-220 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium-High
   Notes: Weekly refresh for MONITOR-220 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-231: (see MONITOR-222 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-222 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-232: (see MONITOR-223 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-223 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-234: (see MONITOR-224 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-224 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-236: (see MONITOR-226 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-226 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-237: (see MONITOR-227 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-227 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-239: (see MONITOR-228 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium-High
   Notes: Weekly refresh for MONITOR-228 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-220: (see MONITOR-229 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-229 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-221: (see MONITOR-230 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: High
   Notes: Weekly refresh for MONITOR-230 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-242: (see MONITOR-232 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-232 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-223: (see MONITOR-233 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-233 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-224: (see MONITOR-234 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-234 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-244: (see MONITOR-235 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-235 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-225: (see MONITOR-237 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-237 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-226: (see MONITOR-238 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-238 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-227: (see MONITOR-239 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-239 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-228: (see MONITOR-240 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-240 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-230: (see MONITOR-241 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-241 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-231: (see MONITOR-242 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-242 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-233: (see MONITOR-244 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-244 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-234: (see MONITOR-245 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-245 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-235: (see MONITOR-246 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-246 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-236: (see MONITOR-247 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-247 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-249: (see MONITOR-248 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-248 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-250: (see MONITOR-249 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-249 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-251: (see MONITOR-250 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-250 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-253: (see MONITOR-251 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-251 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-254: (see MONITOR-252 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-252 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-255: (see MONITOR-253 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-253 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-258: (see MONITOR-254 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium-High
   Notes: Weekly refresh for MONITOR-254 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-259: (see MONITOR-255 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-255 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-237: (see MONITOR-256 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-256 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-238: (see MONITOR-257 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium-Low
   Notes: Weekly refresh for MONITOR-257 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-239: (see MONITOR-258 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-258 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-240: (see MONITOR-259 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-259 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-241: (see MONITOR-260 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-260 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-261: (see MONITOR-261 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-261 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-265: (see MONITOR-262 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-262 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-266: (see MONITOR-263 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-263 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-243: (see MONITOR-264 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-264 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-244: (see MONITOR-265 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-265 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-245: (see MONITOR-266 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium-High
   Notes: Weekly refresh for MONITOR-266 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-246: (see MONITOR-267 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-267 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-247: (see MONITOR-268 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-268 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-248: (see MONITOR-269 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-269 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-249: (see MONITOR-270 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium-High
   Notes: Weekly refresh for MONITOR-270 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-250: (see MONITOR-271 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: HIGH
   Notes: Weekly refresh for MONITOR-271 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-251: (see MONITOR-272 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-272 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-252: (see MONITOR-273 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium-High
   Notes: Weekly refresh for MONITOR-273 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-268: (see MONITOR-274 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-274 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-271: (see MONITOR-275 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-275 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-276: (see MONITOR-276 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-276 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-253: (see MONITOR-277 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-277 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-254: (see MONITOR-278 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-278 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-255: (see MONITOR-279 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-279 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-257: (see MONITOR-280 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low
   Notes: Weekly refresh for MONITOR-280 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-258: (see MONITOR-281 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-281 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-259: (see MONITOR-282 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-282 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-260: (see MONITOR-283 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-283 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-261: (see MONITOR-284 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-284 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-262: (see MONITOR-285 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-285 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-279: (see MONITOR-286 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Low-Medium
   Notes: Weekly refresh for MONITOR-286 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-281: (see MONITOR-287 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-287 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-263: (see MONITOR-288 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-288 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-288: (see MONITOR-289 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-289 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-292: (see MONITOR-290 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-290 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-295: (see MONITOR-291 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-291 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-296: (see MONITOR-292 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-292 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-297: (see MONITOR-293 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-293 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-298: (see MONITOR-294 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-294 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-299: (see MONITOR-295 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-295 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-270: (see MONITOR-296 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-296 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-300: (see MONITOR-297 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-297 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-301: (see MONITOR-298 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
   Notes: Weekly refresh for MONITOR-298 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-302: (see MONITOR-299 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Weekly; Next 15d check: 2026-06-14
   Priority: Medium
@@ -7858,49 +7858,49 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
 
 
 [ASSUMPTION] ASSUMPTION-079: (see MONITOR-79 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Monthly; Next 15d check: 2026-07-05
   Priority: MEDIUM
   Notes: Monthly refresh for MONITOR-79 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-081: (see MONITOR-81 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Monthly; Next 15d check: 2026-07-05
   Priority: MEDIUM
   Notes: Monthly refresh for MONITOR-81 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-083: (see MONITOR-83 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Monthly; Next 15d check: 2026-07-05
   Priority: LOW-MEDIUM
   Notes: Monthly refresh for MONITOR-83 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-084: (see MONITOR-84 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Monthly; Next 15d check: 2026-07-05
   Priority: MEDIUM
   Notes: Monthly refresh for MONITOR-84 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-085: (see MONITOR-85 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Monthly; Next 15d check: 2026-07-05
   Priority: LOW-MEDIUM
   Notes: Monthly refresh for MONITOR-85 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-087: (see MONITOR-86 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 2; Cadence: Monthly; Next 15d check: 2026-07-05
   Priority: MEDIUM
   Notes: Monthly refresh for MONITOR-86 cycle 2. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-103: (see MONITOR-87 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-06-07, cycle 2] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 2; Cadence: Monthly; Next 15d check: 2026-07-05
   Priority: LOW
@@ -7908,13 +7908,13 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
 ### Monthly INCORPORATED-premise re-check cohort (15d monthly cycle)
 
 [ASSUMPTION] ASSUMPTION-009: (PREMISE-002 re-check — see validated_premises.md for full statement)
-  Status: [QUEUED] [RE-CHECK by 15d: 2026-06-07] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-06-07] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c (INCORPORATED)->15d re-check]; Item type=ASSUMPTION
   Cadence: Monthly (INCORPORATED re-check); Next re_check_due: 2026-07-05
   Notes: Monthly re-check of INCORPORATED PREMISE-002 (re_check_due 2026-05-13 passed). 15d re-trigger only; 15a/15b re-search for new challenges, 15c re-confirms or re-opens.
 
 [ASSUMPTION] ASSUMPTION-024: (PREMISE-004 re-check — see validated_premises.md for full statement)
-  Status: [QUEUED] [RE-CHECK by 15d: 2026-06-07] [AWAITING-15a] [AWAITING-15b] [AWAITING-15c]
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-06-07] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c (INCORPORATED)->15d re-check]; Item type=ASSUMPTION
   Cadence: Monthly (INCORPORATED re-check; standing independence caveat); Next re_check_due: 2026-07-05
   Notes: Monthly re-check of INCORPORATED PREMISE-004 (re_check_due 2026-05-15 passed). Watch specifically for evidence on independence of C2A2 findings. 15d re-trigger only.
@@ -7980,67 +7980,78 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
 *11 testable items routed at cycle 0 from the four 2026-06-08 attended OpenStory→Agent-Explorer sessions: 5 ASSUMPTIONs (287/288/290/291/292) + 6 PRESUMPTIONs (322/323/324/325/326/327). Held (not routed): ASSUMPTION-289 (GROUNDED in-session — the identity join was verified, not a literature claim). Status [QUEUED] only; 15a/15b search next, 15c dispositions afterward.*
 
 [ASSUMPTION] ASSUMPTION-287: Observed telemetry should replace authored narration as the basis of the Agent Explorer.
-  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Status: [QUEUED] [cycle 0: 2026-06-08] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: INCORPORATE (PREMISE-055; activity-record basis, intent layer retained; substance claim excluded -> REVISE-095)
   Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
   Priority: MEDIUM
   Search strategy: observability/behavioral telemetry as a proxy for system purpose and quality; observed-trace vs authored-intent as the truth-basis of a self-representation; instrumentation-derived vs documentation-derived system models.
 
 [ASSUMPTION] ASSUMPTION-288: Routing extraction through OpenStory's DB (vs direct transcripts) is worth the heavier dependency because eval/apply + turns are valuable signal.
-  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Status: [QUEUED] [cycle 0: 2026-06-08] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-317; schema-drift canary + signal-value demonstration)
   Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
   Priority: MEDIUM
   Search strategy: eval/apply or plan-vs-act ratios as agent quality/health metrics; value of richer derived metrics vs added dependency/coupling cost; build-vs-reuse for instrumentation pipelines.
 
 [ASSUMPTION] ASSUMPTION-290: The capture gap should be solved with an external symlink session-bridge, not an OpenStory fork, to stay on upstream.
-  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Status: [QUEUED] [cycle 0: 2026-06-08] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak) | Disposition: INCORPORATE (PREMISE-056; bridge liveness canary folded)
   Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
   Priority: LOW
   Search strategy: adapter/shim vs fork (vendoring) patterns; cost of staying mergeable with upstream; reversibility and maintenance burden of integration choices.
 
 [ASSUMPTION] ASSUMPTION-291: Shared wiki-node references are a meaningful relational signal between agents — a valid sociogram edge model.
-  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Status: [QUEUED] [cycle 0: 2026-06-08] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: SUPPORTED (Strong) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-318 HIGH; CONTESTED — relabel edges topical-coupling, hub normalization)
   Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
   Priority: MEDIUM
   Search strategy: co-citation / co-reference network analysis; bibliographic coupling; whether shared-reference edges recover meaningful latent structure; validity of co-occurrence as a relatedness proxy.
 
 [ASSUMPTION] ASSUMPTION-292: The existing 571-session DB is representative enough to prove the pipeline without a full reseed.
-  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Status: [QUEUED] [cycle 0: 2026-06-08] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: INCORPORATE (PREMISE-057; mechanics-only scope, distributional outputs excluded)
   Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
   Priority: LOW
   Search strategy: sufficiency of partial/available data for pipeline validation; sampling adequacy; build-on-available-data vs full-backfill-first sequencing under risk.
 
 [PRESUMPTION] PRESUMPTION-322: The event stream is a faithful proxy for what an agent is and does (telemetry captures agent substance).
-  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Status: [QUEUED] [cycle 0: 2026-06-08] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-095; activity-not-substance relabel of explorer; trace=substance SYSTEMIC root)
   Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Priority: MEDIUM-HIGH
   Search strategy: what behavioral telemetry systematically omits about quality/purpose; trace-vs-intent gap; activity-vs-value confound in observability; limits of quantitative process metrics for qualitative work.
 
 [PRESUMPTION] PRESUMPTION-323: The eval/apply ratio is a meaningful, known-directional quality signal (surfaced and rankable without defining "good").
-  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Status: [QUEUED] [cycle 0: 2026-06-08] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-319 HIGH; undirected descriptive display only, no ranking)
   Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Priority: MEDIUM
   Search strategy: directionality/baselines for plan-vs-act or eval/apply ratios; Goodhart risk when a process metric becomes a display/ranking metric; interpreting inherited third-party metrics.
 
 [PRESUMPTION] PRESUMPTION-324: Static validation (node --check + validate_html.py) is a sufficient proxy for a visual artifact working (canvas render never opened, two sessions).
-  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Status: [QUEUED] [cycle 0: 2026-06-08] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-320 HIGH; add headless render smoke-test)
   Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Priority: MEDIUM
   Search strategy: limits of static analysis vs runtime/visual verification; "it compiles ≠ it works"; visual-regression / snapshot testing for UIs; success-criteria completeness.
 
 [PRESUMPTION] PRESUMPTION-325: The agent population is a clean one-cron-task-per-agent roster (contradicted by multi-fire agents + unmapped interactive sessions).
-  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Status: [QUEUED] [cycle 0: 2026-06-08] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-096 HIGH; entity model needed; falsified by own data)
   Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Priority: MEDIUM
   Search strategy: entity resolution with fuzzy units; cardinality assumptions in registry/roster design; share of activity falling outside a singleton taxonomy; modeling recurring vs ad-hoc processes.
 
 [PRESUMPTION] PRESUMPTION-326: Recent/available activity is representative; bounded-window + sparse-old-data ingest under-renders low-frequency agents.
-  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Status: [QUEUED] [cycle 0: 2026-06-08] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-321 MED-HIGH; coverage flag / full-history ingest)
   Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Priority: MEDIUM-HIGH
   Search strategy: recency and survivorship bias in windowed log analytics; sampling bias in observability; representativeness of recent activity for low-frequency entities.
 
 [PRESUMPTION] PRESUMPTION-327: Making the agent swarm legible/comparable/rankable is itself benign or good (observability treated as normatively neutral).
-  Status: [QUEUED] [cycle 0: 2026-06-08] [AWAITING-15a] [AWAITING-15b]
+  Status: [QUEUED] [cycle 0: 2026-06-08] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-322 MED; reactivity-through-operator; re-assess when ranking ships)
   Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Priority: LOW-MEDIUM
   Search strategy: metric fixation / Goodhart's law; surveillance and measurement effects on the measured; normativity of dashboards/observability; performance-management side effects of self-quantification.
@@ -8050,3 +8061,406 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Status: [HELD — GROUNDED 2026-06-08] (NOT routed)
   Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
   Notes: Verified in-session — all 7 thinker-pairs' eval/apply reconcile exactly vs independent SQL; session totals match (572); prefixes unique. An infrastructural/identity fact proven this session, not a literature claim. Held parallel to ASSUMPTION-285/277/282.
+
+## 2026-06-09 batch (14a/14b EOD run — dyad-MMA charter, ISME plan, sociogram verify/de-BOSCO)
+
+[ASSUMPTION] ASSUMPTION-293: An MM-of-1 can authoritatively certify the milestones of his own integrative tradition; at N=1, face validity must carry what inter-rater agreement otherwise would.
+  Status: [QUEUED] [cycle 0: 2026-06-09] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Weak) + NOVELTY | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-097; re-scope to provisional certification + dyad reliability protocol)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: single-expert/single-rater instrument validity; face validity in concept inventories (FCI lineage); expert-authored vs consensus-authored assessment instruments.
+
+[ASSUMPTION] ASSUMPTION-294: The evidential weight of any MMA scales with the formational independence of its members; same-formation agreement is near-chance noise.
+  Status: [QUEUED] [cycle 0: 2026-06-09] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: INCORPORATE (PREMISE-058; discount-not-zero correction folded)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: HIGH
+  Search strategy: inter-rater independence and chance-corrected agreement statistics; diversity effects on collective judgment validity; correlated errors / echo chambers in ensembles; departure-from-chance signal measures.
+
+[ASSUMPTION] ASSUMPTION-295: The dyad-MMA is valid only if the agent can genuinely fail/withhold; structural invitation to dissent restores effective independence against formation-pressure to agree.
+  Status: [QUEUED] [cycle 0: 2026-06-09] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-323 HIGH; catch trials; dissent-invitation = partial de-biasing only)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: HIGH
+  Search strategy: sycophancy in RLHF-trained LLMs; demand characteristics and acquiescence bias; whether explicit dissent-invitations measurably de-bias agreement; adversarial collaboration designs.
+
+[ASSUMPTION] ASSUMPTION-296: Curricular ladder tools' implied milestones can serve as candidate PRS-elements for dyad ratification.
+  Status: [QUEUED] [cycle 0: 2026-06-09] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: INCORPORATE (PREMISE-059; candidates-only, convention-artifact caveat)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW-MEDIUM
+  Search strategy: learning progressions as assessment scaffolds; curriculum-to-instrument milestone derivation; validity of curriculum-implied milestones vs empirically derived ones.
+
+[ASSUMPTION] ASSUMPTION-297: A table→exhaust-candidates→revisit→close rule is an adequate stopping rule for capturing what a dyad agrees about.
+  Status: [QUEUED] [cycle 0: 2026-06-09] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-324 MED; add time-separated stability re-check)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW
+  Search strategy: Delphi stopping rules; structured-consensus closure criteria; premature-closure vs endless-deliberation failure modes.
+
+[ASSUMPTION] ASSUMPTION-298: Deliberate over-promising under accelerating capability ("over-promise with firm expectation of over-delivery") is a sound planning method.
+  Status: [QUEUED] [cycle 0: 2026-06-09] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-098; reference-class buffer + minimum-viable deliverable)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW
+  Search strategy: stretch goals literature (benefits/pathologies); planning fallacy vs capability-growth forecasting; public commitment devices and escalation of commitment.
+
+[ASSUMPTION] ASSUMPTION-299: Removing all "bosco"/"email" strings from the current public HTML discharges the public-exposure concern (validated by string count + static checks).
+  Status: [QUEUED] [cycle 0: 2026-06-09] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-099; surface audit — history/copies/encodings; mitigated-not-discharged)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW
+  Search strategy: data-leakage remediation completeness (history, caches, mirrors); secret-scrubbing best practice in VCS; redaction vs removal.
+
+[ASSUMPTION] ASSUMPTION-300: Tradition-seeded agent dialogue adequately (indeed better) delivers what was promised as "GAN-simulated" interaction, because the agents are inspectable.
+  Status: [QUEUED] [cycle 0: 2026-06-09] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-325 MED; drop superiority claim; persona-collapse checks)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW-MEDIUM
+  Search strategy: adversarial/self-play simulation vs transparent multi-agent dialogue; inspectability/interpretability as evidential virtue in simulation studies; emergent dialogue quality in persona-seeded LLM agents.
+
+[PRESUMPTION] PRESUMPTION-328: A localhost-served copy is render-equivalent to the file:// production artifact for verification purposes.
+  Status: [QUEUED] [cycle 0: 2026-06-09] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-326 HIGH cheap; verify file:// directly + self-containedness check)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW-MEDIUM
+  Search strategy: environment-parity failures in web testing (protocol/origin differences); test-environment vs production-environment validity; file:// vs http origin behavior classes.
+
+[PRESUMPTION] PRESUMPTION-329: Scrubbing the working tree discharges a public-exposure concern, leaving git history, published copies, and the underlying capability unexamined.
+  Status: [QUEUED] [cycle 0: 2026-06-09] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-327 MED-HIGH; closed by REVISE-099's surface audit)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: incomplete-redaction incidents (VCS history leaks); security-through-description-removal; disclosure hygiene for public repos with sensitive operational narration.
+
+[PRESUMPTION] PRESUMPTION-330: "The recorded Tom⇄Claude dyad" is a persisting unit across sessions/contexts/model versions, despite the charter's own individuation principle implying otherwise.
+  Status: [QUEUED] [cycle 0: 2026-06-09] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Weak) + NOVELTY | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-100; dyad individuation + invariance protocol; charter contradiction)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH
+  Search strategy: rater drift and panel identity in longitudinal measurement; instrument identity across versions; persistence/identity criteria for composite measurement units; LLM behavioral drift across model updates.
+
+[PRESUMPTION] PRESUMPTION-331: A philosophy audience will accept a running system as evidence in a philosophical argument (physics "commissioning report" genre transfers to ISME).
+  Status: [QUEUED] [cycle 0: 2026-06-09] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-328 MED; scope ISME claims as possibility-proof/model-of-claim)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: demonstrations and instruments as evidence in philosophy; reception of experimental/computational methods in philosophy; rhetoric of demonstration (science studies); disciplinary evidential norms transfer.
+
+[PRESUMPTION] PRESUMPTION-332: Current build capacity (attended cadence + agentic throughput + infrastructure) persists through the ~4-week ISME schedule, despite a same-day record of 7-day sync outage and a growing single-human review gate.
+  Status: [QUEUED] [cycle 0: 2026-06-09] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-101; price outage base rate; MVD; single-gate cap)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: planning fallacy with single-gatekeeper dependencies; schedule risk buffering; minimum-viable-deliverable fallback planning for hard deadlines.
+
+[PRESUMPTION] PRESUMPTION-333: The single rater (MM-of-1) is temporally stable; assent-now is treated as durable fact with no test-retest/drift detection.
+  Status: [QUEUED] [cycle 0: 2026-06-09] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-329 HIGH; stamped assents + anchor-item blind re-presentation)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: intra-rater (test-retest) reliability of expert judgment; temporal stability of expert standards; distinguishing standard-drift from genuine conceptual change.
+
+[ASSUMPTION] ASSUMPTION-301: Substrate-layer reveal behavior is correct because it shares the admission code path already verified for the projected/flow layers (verification claimed from code-path identity after direct observation stalled the renderer).
+  Status: [QUEUED] [cycle 0: 2026-06-10] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-330 HIGH; behavioral re-verify after stall fix; status=unverified until then)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: code-reuse equivalence failures (context/load-dependent bugs in shared paths); verification transfer between execution contexts; test coverage vs structural-similarity arguments.
+
+[ASSUMPTION] ASSUMPTION-302: The heavy-toggle renderer stall is caused by the synchronous DOM build of 30k hidden line elements (not the force sim); budgeted-edge rendering will clear it.
+  Status: [QUEUED] [cycle 0: 2026-06-10] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-331 MED; profile before/after budgeted-rendering fix)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: DOM-node-count vs layout/style-recalc as render bottlenecks; SVG element budgets in large-graph visualization; virtualization/windowing as stall remedy; misattribution of jank causes.
+
+[ASSUMPTION] ASSUMPTION-303: Agent actors are cumulative telemetry, not single-dated events; exempting them from the time-slider date cut is the correct temporal semantics.
+  Status: [QUEUED] [cycle 0: 2026-06-10] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-332 LOW-MED; move to as-of-t clipping when per-date data exists)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW
+  Search strategy: temporal modeling of aggregate vs event entities in visualization; time-filter semantics for derived/rollup nodes; endurant vs perdurant entity treatment in data models.
+
+[ASSUMPTION] ASSUMPTION-304: Embedding the two ladder tools as education-tab explorers (Physics Explorer; RC Document Explorer) fulfills task one's provisioning of candidate-milestone scaffolds for the first dyad triplet pass.
+  Status: [QUEUED] [cycle 0: 2026-06-10] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-333 MED; candidate sources + coverage audit)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW-MEDIUM
+  Search strategy: interactive courseware as competency-framework source material; curriculum-mapping from learning tools; fidelity of derived milestone inventories to source expertise.
+
+[ASSUMPTION] ASSUMPTION-306: On history restore, embedded-frame content is the authoritative state and the shell should resync to it (source-of-truth inversion on load/pageshow).
+  Status: [QUEUED] [cycle 0: 2026-06-10] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-334 LOW; frame wins view-state, source wins data)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW
+  Search strategy: iframe/bfcache restore behavior across browsers; state-reconciliation patterns for shell+frame UIs; single-source-of-truth inversion pitfalls.
+
+[ASSUMPTION] ASSUMPTION-307: Git-history-derived yield is a valid productivity axis for the agent-metabolism instrument (tokens as cost, commits as yield), pending PRS-completion integration.
+  Status: [QUEUED] [cycle 0: 2026-06-10] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-335 HIGH; display-with-caveat only, never allocation target; floor to REVISE-103)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: commit-count/LOC as productivity proxies and their failure modes; software-metrics validity (SPACE, DORA critiques); proxy-criterion divergence in research-output measurement.
+
+[ASSUMPTION] ASSUMPTION-308: A deterministic scheduler should precede any bandit layer in agent-activity optimization.
+  Status: [QUEUED] [cycle 0: 2026-06-10] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: INCORPORATE (PREMISE-060; graduation criterion + epsilon-randomized logs folded)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW-MEDIUM
+  Search strategy: deterministic baselines before adaptive allocation; bandit cold-start and non-stationarity in scheduling; when exploration overhead exceeds its value at small N.
+
+[ASSUMPTION] ASSUMPTION-309: Progress and peace require distinct KPIs — MacIntyre number for progress; endorsed-steelman (explicitly not agreement) for peace.
+  Status: [QUEUED] [cycle 0: 2026-06-10] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Moderate) + NOVELTY (MacIntyre number) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-336 HIGH; operationalize + validate; potential original contribution)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: steelmanning/ideological-Turing-test as understanding measures; intergroup-contact outcomes distinguishing understanding from convergence; deliberation quality metrics vs consensus metrics.
+
+[PRESUMPTION] PRESUMPTION-334: When direct observation is blocked, structural code-path identity is an acceptable substitute for behavioral verification.
+  Status: [QUEUED] [cycle 0: 2026-06-10] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-337 HIGH; standing rule: structural identity = interim evidence with re-verification obligation)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: verification-by-analogy failures; shared-code-path bugs manifesting under untested conditions; evidential standards for "covered by equivalence" claims in testing practice.
+
+[PRESUMPTION] PRESUMPTION-335: The house validator's check suite defines artifact correctness; user-visible display invariants are out of scope, leaving the attending human as anomaly detector.
+  Status: [QUEUED] [cycle 0: 2026-06-10] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-338 HIGH; metamorphic display invariants + smoke test; pattern-flag 3rd occurrence)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: property-based/metamorphic testing for visualizations; UI invariant checking; validator-scope drift as systems grow; human-in-the-loop QA coverage limits.
+
+[PRESUMPTION] PRESUMPTION-336: Captured file-write telemetry is representative of agent activity; cluster emptiness is a data fact rather than a possible capture artifact.
+  Status: [QUEUED] [cycle 0: 2026-06-10] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-339 HIGH; telemetry inject-and-confirm canary before emptiness=fact)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH
+  Search strategy: log-based measurement validity; instrumentation coverage bias; absence-of-evidence inference in observational telemetry; streetlight effect in behavioral analytics.
+
+[PRESUMPTION] PRESUMPTION-337: The single-human attended commit gate scales with parallel-session output (local-only queues can accumulate indefinitely without integration risk).
+  Status: [QUEUED] [cycle 0: 2026-06-10] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-102; WIP limit + integration cadence + hub-file conflict check)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: single-approver bottlenecks and WIP limits; batch-size risk in delayed integration (CI literature); merge-conflict incidence vs queue age on shared artifacts.
+
+[PRESUMPTION] PRESUMPTION-338: The Chat⇄Cowork sync loop's restoration is durable — one success after eight days of failure re-establishes operational reliance, with lapse and recovery causes both unknown.
+  Status: [QUEUED] [cycle 0: 2026-06-10] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-340 HIGH; heartbeat/canary; monitored-not-restored reliance)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: unexplained-recovery handling in reliability engineering; session/credential expiry cycles as latent failure modes; "self-healed" incidents and recurrence rates.
+
+[PRESUMPTION] PRESUMPTION-339: Measurable exhaust tracks the constitutional aim — interim commit-yield metabolism display presumes artifact throughput is the right thing to maximize, before PRS/peace dimensions exist in the metric.
+  Status: [QUEUED] [cycle 0: 2026-06-10] [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-103; caveat-label display, strip ranking salience, time-box interim, peace/PRS placeholders)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: Goodhart/Campbell effects of live productivity displays; surrogation (optimizing the measure); dashboard-induced behavior shift; proxy-first instrumentation risks in mission-driven systems.
+
+
+**[PROCESSED 2026-06-11 by c2a2-lit-search-pipeline (15a/15b/15c; autonomous).]** BACKLOG DRAIN — the 06-09 and 06-10 daily runs did not execute, so this run drained three cycle-0 cohorts (06-08: 11, 06-09: 14, 06-10: 14 = 39 items) PLUS the 2026-06-07 15d RE-TRIGGER/RE-CHECK cohort (147 + 2 = 149 items). **Cycle-0:** all 39 searched FOR+AGAINST (78 result files; 3 parallel 15a workers + 3 parallel 15b workers, mutually blind) and dispositioned: 6 INCORPORATE (PREMISE-055..060: ASSUMPTION-287 telemetry-activity-basis, 290 shim-over-fork, 292 mechanics-only-pilot, 294 independence-weighting, 296 candidate-milestones, 308 deterministic-before-bandit), 24 MONITOR (MONITOR-317..340), 9 REVISE (REVISE-095..103: PRESUMPTION-322 trace=substance, 325 roster, ASSUMPTION-293 MM-of-1 certification, 298 over-promising, 299 scrub-discharge, PRESUMPTION-330 dyad-persistence, 332 capacity-persistence, 337 single-gate-scaling, 339 exhaust-tracks-aim). DISPOSITION-181..219. 3 NOVELTY flags (ASSUMPTION-293, ASSUMPTION-309 MacIntyre-number, PRESUMPTION-330). 7 SYSTEMIC-RISK flags — two HIGH: trace=substance Agent-Explorer stack (287/322/323/327); dyad-measurement-validity (293/294/295/297/330/333, single shared remedy: dyad reliability protocol); plus proxy-surrogation HIGH (307/339). Fail-loud: largest single-run REVISE intake to date (9) — driven by backlog volume + measurement-heavy source sessions, not 15c recalibration; AWAITING-REVIEW backlog now 57. **RE-TRIGGER cohort:** all 149 refreshed (3-cluster landscape spot-check: SMS-auth challenge REAFFIRMED/strengthening — UAE deadline passed, third consecutive surfacing for Tom; multi-agent-traditions and sycophancy clusters reaffirmed, no flips) and carried forward as MONITOR; PREMISE-002/004 re-confirmed ACTIVE. Queue now empty: 0 items QUEUED-without-disposition.
+
+## Items from 2026-06-11 EOD run (14a: ASSUMPTION-310..316; 14b: PRESUMPTION-340..346)
+
+[ASSUMPTION] ASSUMPTION-310: Narrative-embedded perspective is the principle of individuation within CRm ("different narratives, different perspectives, are the principle of individuation: there is nothing else")
+  Status: [QUEUED] [cycle 0: 2026-06-11] [SEARCHED-15a: 2026-06-12] [SEARCHED-15b: 2026-06-12] [DISPOSITIONED-15c: 2026-06-12]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-104; weaken exclusivity clause or defend vs Strawson/decombination — Tom's call)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: HIGH (load-bearing for M7)
+  Search strategy: narrative identity theories (Ricoeur, Schechtman, Dennett's center of narrative gravity); the decomposition/individuation problem in analytic idealism, cosmopsychism, IIT; principium individuationis from Scholastic materia signata to contemporary metaphysics.
+
+[ASSUMPTION] ASSUMPTION-311: Multi-starting-point derivability (CRm, Tononi-style phenomenology, computational frame) is convergence evidence of the M3–M4 kind
+  Status: [QUEUED] [cycle 0: 2026-06-11] [SEARCHED-15a: 2026-06-12] [SEARCHED-15b: 2026-06-12] [DISPOSITIONED-15c: 2026-06-12]
+  15a: SUPPORTED (Strong) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-341; hidden-premise audit of the three frames before crediting M3-M4 convergence)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: robustness analysis and consilience in philosophy of science; triangulation validity; multiple-derivability arguments; critiques where convergence reflects shared hidden premises.
+
+[ASSUMPTION] ASSUMPTION-312: Methodological Thomism — any adequate resolution of conflicting rational traditions will be Thomist in MacIntyre's methodological sense (stronger sole-source claim explicitly not asserted)
+  Status: [QUEUED] [cycle 0: 2026-06-11] [SEARCHED-15a: 2026-06-12] [SEARCHED-15b: 2026-06-12] [DISPOSITIONED-15c: 2026-06-12]
+  15a: SUPPORTED (Strong) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-342 HIGH; CONTESTED; operationalize M8 resolution procedure vs rival methods)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: HIGH (load-bearing for M8; carries logged definitional-truth caution)
+  Search strategy: MacIntyre's Three Rival Versions and Whose Justice; tradition-integration methodology; rival accounts of inter-tradition resolution (Davidson, Gadamer, Habermas) as candidate non-Thomist integrations; falsifiability of methodological theses.
+
+[ASSUMPTION] ASSUMPTION-313: Taking the weaker reading of each contested rung as the agreement resolves the way forward without concession
+  Status: [QUEUED] [cycle 0: 2026-06-11] [SEARCHED-15a: 2026-06-12] [SEARCHED-15b: 2026-06-12] [DISPOSITIONED-15c: 2026-06-12]
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: INCORPORATE (PREMISE-061; weaker-reading rungs marked incompletely-theorized; re-surface at use)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: incompletely theorized agreements (Sunstein); minimal joint commitment (Gilbert); overlapping consensus; whether weak-reading agreements remain stable under later strengthening pressure.
+
+[ASSUMPTION] ASSUMPTION-314: Falsifier (b) as positive prediction and master-plan §6 interaction yield are the same measurement (agreed rungs = first countable PRS-milestone yield)
+  Status: [QUEUED] [cycle 0: 2026-06-11] [SEARCHED-15a: 2026-06-12] [SEARCHED-15b: 2026-06-12] [DISPOSITIONED-15c: 2026-06-12]
+  15a: PARTIALLY-SUPPORTED (Moderate) + NOVELTY | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-105 HIGH; pre-register falsifier independent of yield metric; circularity cluster anchor)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM-HIGH
+  Search strategy: convergent operationalism and construct identity vs correlated proxies; double-counting risks when one observable serves two constructs; measurement-instrument reuse effects.
+
+[ASSUMPTION] ASSUMPTION-315: Separately-logged reasons preserve the evidence distinguishing genuine agreement from convergence-by-adjudication (dual-reasons rule)
+  Status: [QUEUED] [cycle 0: 2026-06-11] [SEARCHED-15a: 2026-06-12] [SEARCHED-15b: 2026-06-12] [DISPOSITIONED-15c: 2026-06-12]
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: INCORPORATE (PREMISE-062; dual-reasons rule with pre-commitment blind window)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: independent justification elicitation; hidden-profile paradigm; reason-giving as groupthink countermeasure; agreement-for-different-reasons in judgment aggregation (discursive dilemma).
+
+[ASSUMPTION] ASSUMPTION-316: Session-scoped (provenance-clean) commits keep repository provenance clean and the repo healthy
+  Status: [QUEUED] [cycle 0: 2026-06-11] [SEARCHED-15a: 2026-06-12] [SEARCHED-15b: 2026-06-12] [DISPOSITIONED-15c: 2026-06-12]
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-343; repo tangling audit; attributed vs logical provenance; couples REVISE-102)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW-MEDIUM (adjacent to REVISE-102)
+  Search strategy: atomic/cohesive change-set literature; trade-off vs batch-integration risk and WIP limits (cross-check against PRESUMPTION-337's returned REVISE evidence).
+
+[PRESUMPTION] PRESUMPTION-340: A dyad's own agreement ledger is valid Level-3 evidence without an external rater
+  Status: [QUEUED] [cycle 0: 2026-06-11] [SEARCHED-15a: 2026-06-12] [SEARCHED-15b: 2026-06-12] [DISPOSITIONED-15c: 2026-06-12]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-106 HIGH; dyad cluster escalated CRITICAL; periodic independent rating of rung sample)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: HIGH (joins dyad-measurement-validity HIGH cluster)
+  Search strategy: inter-rater reliability requirements for agreement coding; participant-as-rater designs; self-validating instrument critiques in psychometrics.
+
+[PRESUMPTION] PRESUMPTION-341: The agent member as sole scribe does not shape the shared record
+  Status: [QUEUED] [cycle 0: 2026-06-11] [SEARCHED-15a: 2026-06-12] [SEARCHED-15b: 2026-06-12] [DISPOSITIONED-15c: 2026-06-12]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-107; retain verbatim transcripts; dissent field; spot-audit divergence)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: recorder/note-taker framing effects; minutes-vs-transcript divergence studies; audit designs for self-recorded protocols.
+
+[PRESUMPTION] PRESUMPTION-342: Vault retrieval recovers the relevant prior thought (unwritten material treated as nonexistent)
+  Status: [QUEUED] [cycle 0: 2026-06-11] [SEARCHED-15a: 2026-06-12] [SEARCHED-15b: 2026-06-12] [DISPOSITIONED-15c: 2026-06-12]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-344; retrieval audit; heuristic deviation surfaced in DISPOSITION-229)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: externalized/transactive memory completeness; streetlight effect in knowledge-base retrieval; elicitation vs archival yield comparisons.
+
+[PRESUMPTION] PRESUMPTION-343: Disposition quality is batch-size invariant (188-item drain ≈ daily cadence quality)
+  Status: [QUEUED] [cycle 0: 2026-06-11] [SEARCHED-15a: 2026-06-12] [SEARCHED-15b: 2026-06-12] [DISPOSITIONED-15c: 2026-06-12]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-108; cap batch size ~30; stakes-ordered processing; re-review 06-11 late dispositions)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH
+  Search strategy: batch-size effects on review quality; vigilance decrement in high-volume screening; reviewer fatigue in systematic reviews and code review.
+
+[PRESUMPTION] PRESUMPTION-344: Queue emptiness is pipeline health (health indicator did not migrate with the constraint to the 57-item review stage)
+  Status: [QUEUED] [cycle 0: 2026-06-11] [SEARCHED-15a: 2026-06-12] [SEARCHED-15b: 2026-06-12] [DISPOSITIONED-15c: 2026-06-12]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-109; report end-to-end flow per run, not stage-local queue emptiness)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: theory-of-constraints measurement placement; local vs end-to-end flow optimization; WIP/lead-time metrics vs stage-local queue metrics.
+
+[PRESUMPTION] PRESUMPTION-345: Proposed artifacts get created or their absence gets noticed (plan-inventory durability; individuation_vs_reunion.md gap went 18 days unnoticed)
+  Status: [QUEUED] [cycle 0: 2026-06-11] [SEARCHED-15a: 2026-06-12] [SEARCHED-15b: 2026-06-12] [DISPOSITIONED-15c: 2026-06-12]
+  15a: PARTIALLY-SUPPORTED (Moderate) + NOVELTY | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-110; weekly plan-artifact reconciliation sweep; implementation-intention structure)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: intention-action gaps in task systems; orphaned-TODO decay in software projects; plan-artifact reconciliation audits.
+
+[PRESUMPTION] PRESUMPTION-346: Reflexive falsification is non-circular (the dyad applying its own falsifier to its own ledger constitutes a genuine test)
+  Status: [QUEUED] [cycle 0: 2026-06-11] [SEARCHED-15a: 2026-06-12] [SEARCHED-15b: 2026-06-12] [DISPOSITIONED-15c: 2026-06-12]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-111 HIGH; pre-register falsifiers before ledger inspection; couples REVISE-105)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH
+  Search strategy: auditor independence; self-testing circularity; pre-registration as circularity guard; who-guards-the-guards designs in measurement validation.
+
+
+**[PROCESSED 2026-06-12 by c2a2-lit-search-pipeline (15a/15b/15c; autonomous).]** Normal daily run — the 2026-06-11 EOD cohort (14 items: ASSUMPTION-310..316, PRESUMPTION-340..346) searched FOR+AGAINST (28 result files; 2 parallel 15a workers + 2 parallel 15b workers, mutually blind) and dispositioned (DISPOSITION-220..233): 2 INCORPORATE (PREMISE-061 weaker-reading agreements, PREMISE-062 dual-reasons rule — both with folded caveats), 4 MONITOR (MONITOR-341..344: convergence-evidence audit, methodological-Thomism CONTESTED, commit-tangling audit, vault-retrieval audit), 8 REVISE (REVISE-104..111). 2 NOVELTY flags (ASSUMPTION-314 falsifier/yield construct identity; PRESUMPTION-345 vault-as-tracker hybrid). 3 SYSTEMIC-RISK flags — two CRITICAL: (1) dyad-measurement circularity ESCALATED HIGH->CRITICAL (340 coding + 341 scribing + 346 falsification join prior 293/294/295/297/330/333; no stage of the evidence chain is structurally independent of the dyad; remedy: dyad reliability protocol + pre-registration + periodic independent rating); (2) self-referential measurement (311/312/314/315 — combined structure risks unfalsifiability; shared first step: pre-register falsification thresholds). One HIGH: pipeline-health metrics (343/344/345; remedy: end-to-end flow reporting, begun below). Fail-loud notes: (a) 8 REVISEs at normal cohort size — driver is cohort content (14b surfaced the measurement/validity substrate), not volume; (b) one heuristic deviation surfaced explicitly (PRESUMPTION-342 -> MONITOR not REVISE, DISPOSITION-229); (c) initial 15a worker for the ASSUMPTION batch reported files written that were not on disk — caught by verification, files rewritten and verified; flagged as an instance of the trace-vs-substance pattern (PRESUMPTION-322 family). PER REVISE-109, end-to-end flow this run: QUEUED-undispositioned 14 -> 0; AWAITING-REVIEW 57 -> 65 (constraint stage, growing); weekly 15d MONITOR load 22 -> 26; oldest AWAITING-REVIEW items date to the 2026-04 cohorts. Queue now empty: 0 items QUEUED-without-disposition.
+
+---
+
+**[EOD QUEUE — cycle 0: 2026-06-14 by Agents 14a/14b. Automated-only day (no attended session); 3 new items: 1 ASSUMPTION + 2 PRESUMPTIONS.]**
+
+[ASSUMPTION] ASSUMPTION-317: Marking a QC item resets its staleness clock, so a transcript-only pass is left unmarked to avoid masking the synthesis half's later Layer-4 review
+  Status: [QUEUED] [cycle 0: 2026-06-14] [SEARCHED-15a: 2026-06-16] [SEARCHED-15b: 2026-06-16] [DISPOSITIONED-15c: 2026-06-16]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) + NOVELTY | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: REVISE (REVISE-112; per-sub-component freshness clock; resolves OPEN-082)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: LOW-MEDIUM (operational; couples OPEN-082 marking-path remediation)
+  Search strategy: sub-component vs whole-item review staleness in staged QA; "marking masks coverage" failure modes; partial-completion accounting in review pipelines; freshness/TTL clocks scoped per artifact vs per sub-artifact.
+
+[PRESUMPTION] PRESUMPTION-347: A model identifier pinned in a scheduled-task config stays valid indefinitely (06-14 morning scrape died on unavailable "claude-fable-5")
+  Status: [QUEUED] [cycle 0: 2026-06-14] [SEARCHED-15a: 2026-06-16] [SEARCHED-15b: 2026-06-16] [DISPOSITIONED-15c: 2026-06-16]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-113; preflight availability check + fallback-model chain; SYSTEMIC-RISK cluster 1)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH
+  Search strategy: dependency-pinning rot and config drift; graceful degradation / fallback-model patterns in agentic and scheduled systems; version-availability checks; API deprecation handling.
+
+[PRESUMPTION] PRESUMPTION-348: A failing scheduled task announces its own failure (no liveness monitor; channel degraded ~3 days, 06-13 summaries simply missing)
+  Status: [QUEUED] [cycle 0: 2026-06-14] [SEARCHED-15a: 2026-06-16] [SEARCHED-15b: 2026-06-16] [DISPOSITIONED-15c: 2026-06-16]
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-114; heartbeat/dead-man's-switch + output assertions; SYSTEMIC-RISK cluster 1)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: silent-failure detection; dead-man's-switch / heartbeat and absence-of-output alerting; observability of cron/agentic jobs; distinguishing "ran" from "succeeded" in pipeline health.
+
+---
+
+**[EOD QUEUE — cycle 0: 2026-06-15 by Agents 14a/14b. Attended session ("Metabolism visualization and conscious realist monism"), 3 workstreams; 10 new items: 4 ASSUMPTIONS + 6 PRESUMPTIONS.]**
+
+[ASSUMPTION] ASSUMPTION-318: Files-added/day is the right headline yield series for the Metabolism view (better proxy than tokens/commits)
+  Status: [QUEUED] [cycle 0: 2026-06-15] [SEARCHED-15a: 2026-06-16] [SEARCHED-15b: 2026-06-16] [DISPOSITIONED-15c: 2026-06-16]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-345; descriptive-only + counter-metrics; no optimizer wiring)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: count-based vs weighted productivity metrics; lines-of-code/commit-count validity critiques; construct validity of activity proxies for knowledge work; Goodhart effects when a count becomes a target.
+
+[ASSUMPTION] ASSUMPTION-319: git history of traditions/*/prs_triplets.md yields valid "triplet-completed" dates (PRS-NN per commit-day)
+  Status: [QUEUED] [cycle 0: 2026-06-15] [SEARCHED-15a: 2026-06-16] [SEARCHED-15b: 2026-06-16] [DISPOSITIONED-15c: 2026-06-16]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-346; git-history batch/backfill audit)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: mining-software-repositories validity threats; commit-timestamp reliability; batch-commit / backfill / tangling effects on event-dating from VCS history.
+
+[ASSUMPTION] ASSUMPTION-320: Gap-honest visualization (showing absence explicitly) is preferable to interpolation/silent zero
+  Status: [QUEUED] [cycle 0: 2026-06-15] [SEARCHED-15a: 2026-06-16] [SEARCHED-15b: 2026-06-16] [DISPOSITIONED-15c: 2026-06-16]
+  15a: SUPPORTED (Strong) | 15b: NO-CHALLENGE-FOUND (Weak) | Disposition: INCORPORATE (PREMISE-063; gap-honest visualization, legibility caveat folded)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: LOW-MEDIUM
+  Search strategy: graphical integrity and honest representation of missing data; encoding absent vs zero in time-series; deception-by-omission in dashboards; Tufte/Cleveland on missing-data display.
+
+[ASSUMPTION] ASSUMPTION-321: The CRM "team" = the 15 traditions/ folders (14 thinkers + MacIntyre as rationality-epistemologist, Loughran as integrator)
+  Status: [QUEUED] [cycle 0: 2026-06-15] [SEARCHED-15a: 2026-06-16] [SEARCHED-15b: 2026-06-16] [DISPOSITIONED-15c: 2026-06-16]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-347; MacIntyre corpus check + explicit membership criterion)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: LOW (largely framework commitment; role-assignment edge testable against MacIntyre's corpus)
+  Search strategy: MacIntyre on rationality and tradition-constituted enquiry (role-assignment defensibility); membership-definition criteria for research programs.
+
+[PRESUMPTION] PRESUMPTION-349: One added file = one unit of yield (file-count commensurability beneath the files-added metric)
+  Status: [QUEUED] [cycle 0: 2026-06-15] [SEARCHED-15a: 2026-06-16] [SEARCHED-15b: 2026-06-16] [DISPOSITIONED-15c: 2026-06-16]
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-115; distribution-aware view; never a target/optimizer input; SYSTEMIC-RISK cluster 2)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH
+  Search strategy: count vs weighted output metrics; Goodhart/Campbell's law; software-metrics critiques of artifact-counting; construct validity of "productivity = quantity."
+
+[PRESUMPTION] PRESUMPTION-350: Git commit timestamps are faithful clocks for knowledge-production events
+  Status: [QUEUED] [cycle 0: 2026-06-15] [SEARCHED-15a: 2026-06-16] [SEARCHED-15b: 2026-06-16] [DISPOSITIONED-15c: 2026-06-16]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate; Strong on literal reading) | Disposition: MONITOR (MONITOR-348; shared backfill audit with 319)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: commit-timestamp reliability; "committed vs completed" gap; batch/backfill commit patterns; MSR temporal-validity threats.
+
+[PRESUMPTION] PRESUMPTION-351: A visible gap-marker is an understood gap (visibility = comprehension)
+  Status: [QUEUED] [cycle 0: 2026-06-15] [SEARCHED-15a: 2026-06-16] [SEARCHED-15b: 2026-06-16] [DISPOSITIONED-15c: 2026-06-16]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Moderate-Strong) | Disposition: REVISE (REVISE-116; annotate gaps + legend + comprehension test; companion to PREMISE-063)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: graphical perception of missing-data encodings; legend/convention discoverability; comprehension testing of novel visual conventions; trace-vs-substance family.
+
+[PRESUMPTION] PRESUMPTION-352: The post-Apr-6 token cliff / output flatline is a capture artifact, not a real activity change
+  Status: [QUEUED] [cycle 0: 2026-06-15] [SEARCHED-15a: 2026-06-16] [SEARCHED-15b: 2026-06-16] [DISPOSITIONED-15c: 2026-06-16]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-349 HIGH; run the already-scripted post-Apr-6 probe; label UNKNOWN-cause until then)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH (decidable empirically by the already-scripted probe; couples OPEN-083)
+  Search strategy: missing-data mechanisms (MCAR/MAR/MNAR); distinguishing instrumentation dropout from real signal change; telemetry-gap diagnosis in observability.
+
+[PRESUMPTION] PRESUMPTION-353: Vault folder-count is the authoritative source of team membership (1 folder = 1 member = 1 seat)
+  Status: [QUEUED] [cycle 0: 2026-06-15] [SEARCHED-15a: 2026-06-16] [SEARCHED-15b: 2026-06-16] [DISPOSITIONED-15c: 2026-06-16]
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-350; folders-vs-roster reconciliation; SYSTEMIC-RISK cluster 2)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW-MEDIUM
+  Search strategy: filesystem/ontology-as-data-model risks; membership-criterion definition for research programs; structural "traditions-as-unit" family.
+
+[PRESUMPTION] PRESUMPTION-354: Adversarial inter-paradigm contest ("rival team," "open seat") is the right frame for CRM's relation to alternatives
+  Status: [QUEUED] [cycle 0: 2026-06-15] [SEARCHED-15a: 2026-06-16] [SEARCHED-15b: 2026-06-16] [DISPOSITIONED-15c: 2026-06-16]
+  15a: PARTIALLY-SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-351; articulate contest mechanism — immanent critique not scoring)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (touches project telos)
+  Search strategy: Kuhn on incommensurability vs competition; MacIntyre on rival traditions and tradition-constituted rationality; contest vs translation models of cross-paradigm relation; normative metaphors in visualization.

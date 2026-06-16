@@ -238,6 +238,12 @@ header .stats { color: var(--fg-muted); font-size: 12px; margin-left: auto; }
   0% { background: rgba(201,168,76,0.95); }
   100% { background: rgba(201,168,76,0.28); }
 }
+.link.satsat { stroke-dasharray: 3 4; opacity: 0.45; }
+.pgimg { max-width: 100%; border: 1px solid var(--border); border-radius: 4px; margin: 6px 0; }
+.mini-btn { color: var(--link); cursor: pointer; font-size: 10px; margin-left: 6px; }
+.mini-btn:hover { text-decoration: underline; }
+details.filter-group summary { cursor: pointer; font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--fg-muted); margin: 14px 0 6px; }
 .ocr-disclaimer {
   font-size: 10px; color: var(--fg-muted); padding: 4px 12px;
   border-top: 1px solid var(--border); font-style: italic;
@@ -338,26 +344,52 @@ TEMPLATE_TAIL = r""";
     .filter(e => idx.has(e.from) && idx.has(e.to))
     .map(e => ({
       source: e.from, target: e.to, weight: e.weight,
+      kind: e.kind || 'chapsat',
       evidence: e.evidence || [],
     }));
 
   // --- Filter UI ---
+  // Three independent cuts (AND-ed, accelerator-style): kind, thinker, Summa day.
+  // Plus an "only satellites connected to visible chapters" master cut.
   const filtersEl = document.getElementById('filters');
   const chapShown = new Set(B.chapters.map(c => c.id));
   const satKindShown = new Set(['thinker', 'prs', 'summa', 'summa-transcript']);
+  const allThinkers = [...new Set(B.satellites.filter(s => s.thinker).map(s => s.thinker))];
+  const thinkerShown = new Set(allThinkers);
+  const summaIds = B.satellites.filter(s => s.kind === 'summa' || s.kind === 'summa-transcript').map(s => s.id);
+  const summaShown = new Set(summaIds);
+  let onlyConnected = false;
+
+  function satVisible(s){
+    if (!satKindShown.has(s.kind)) return false;
+    if (s.thinker && !thinkerShown.has(s.thinker)) return false;
+    if ((s.kind === 'summa' || s.kind === 'summa-transcript') && !summaShown.has(s.id)) return false;
+    if (onlyConnected){
+      const ok = B.edges.some(e => (e.kind || 'chapsat') !== 'satsat' && e.to === s.id && chapShown.has(e.from));
+      if (!ok) return false;
+    }
+    return true;
+  }
+
+  function checkboxRow(dataKind, id, checked, color, label, count){
+    return '<label class="filter-row">'
+      + '<input type="checkbox" data-kind="' + dataKind + '" data-id="' + id + '" '
+      + (checked ? 'checked' : '') + '>'
+      + '<span class="swatch" style="background:' + color + '"></span>'
+      + '<span class="label">' + label + '</span>'
+      + (count !== undefined ? '<span class="count">' + count + '</span>' : '')
+      + '</label>';
+  }
 
   function renderFilters(){
-    let html = '<h2>Chapters</h2>';
+    let html = '<h2>Chapters'
+      + '<span class="mini-btn" data-act="chap-all">all</span>'
+      + '<span class="mini-btn" data-act="chap-none">none</span></h2>';
     for (const c of B.chapters){
-      html += '<label class="filter-row">'
-        + '<input type="checkbox" data-kind="chap" data-id="' + c.id + '" '
-        + (chapShown.has(c.id) ? 'checked' : '') + '>'
-        + '<span class="swatch" style="background:' + chapColor + '"></span>'
-        + '<span class="label">' + (chapterLabel(c)) + '</span>'
-        + '<span class="count">' + c.annotation_count + '</span>'
-        + '</label>';
+      html += checkboxRow('chap', c.id, chapShown.has(c.id), chapColor, chapterLabel(c), c.annotation_count);
     }
-    html += '<h2>Satellites</h2>';
+
+    html += '<h2>Satellite kinds</h2>';
     const kindLabels = {
       'thinker': 'Thinker wikis',
       'prs': 'PRS triplets',
@@ -369,23 +401,64 @@ TEMPLATE_TAIL = r""";
     for (const kind of Object.keys(kindLabels)){
       if (!(kind in kindCounts)) continue;
       const sample = B.satellites.find(s => s.kind === kind);
-      html += '<label class="filter-row">'
-        + '<input type="checkbox" data-kind="sat" data-id="' + kind + '" '
-        + (satKindShown.has(kind) ? 'checked' : '') + '>'
-        + '<span class="swatch" style="background:' + (sample ? sample.color : '#888') + '"></span>'
-        + '<span class="label">' + kindLabels[kind] + '</span>'
-        + '<span class="count">' + kindCounts[kind] + '</span>'
-        + '</label>';
+      html += checkboxRow('kind', kind, satKindShown.has(kind), (sample ? sample.color : '#888'), kindLabels[kind], kindCounts[kind]);
     }
+
+    if (allThinkers.length > 1){
+      html += '<h2>Thinkers'
+        + '<span class="mini-btn" data-act="thinker-all">all</span>'
+        + '<span class="mini-btn" data-act="thinker-none">none</span></h2>';
+      for (const t of allThinkers){
+        const sample = B.satellites.find(s => s.thinker === t);
+        const n = B.satellites.filter(s => s.thinker === t).length;
+        const label = t.charAt(0).toUpperCase() + t.slice(1);
+        html += checkboxRow('thinker', t, thinkerShown.has(t), (sample ? sample.color : '#888'), label, n);
+      }
+    }
+
+    if (summaIds.length){
+      html += '<details class="filter-group"><summary>Summa days (' + summaIds.length + ')'
+        + '<span class="mini-btn" data-act="summa-all">all</span>'
+        + '<span class="mini-btn" data-act="summa-none">none</span></summary>';
+      for (const id of summaIds){
+        const s = B.satellites.find(x => x.id === id);
+        const short = s.title.replace(/^Summa\s+/, '');
+        html += checkboxRow('summa', id, summaShown.has(id), s.color || '#C9A84C', short);
+      }
+      html += '</details>';
+    }
+
+    html += '<h2>View</h2>';
+    html += checkboxRow('conn', 'only-connected', onlyConnected, '#888', 'Only satellites tied to visible chapters');
+
     filtersEl.innerHTML = html;
     filtersEl.querySelectorAll('input').forEach(inp => {
       inp.addEventListener('change', e => {
         const k = e.target.dataset.kind, id = e.target.dataset.id;
-        if (k === 'chap'){
-          if (e.target.checked) chapShown.add(id); else chapShown.delete(id);
-        } else {
-          if (e.target.checked) satKindShown.add(id); else satKindShown.delete(id);
-        }
+        const on = e.target.checked;
+        if (k === 'chap'){ on ? chapShown.add(id) : chapShown.delete(id); }
+        else if (k === 'kind'){ on ? satKindShown.add(id) : satKindShown.delete(id); }
+        else if (k === 'thinker'){ on ? thinkerShown.add(id) : thinkerShown.delete(id); }
+        else if (k === 'summa'){ on ? summaShown.add(id) : summaShown.delete(id); }
+        else if (k === 'conn'){ onlyConnected = on; }
+        applyFilters();
+      });
+    });
+    filtersEl.querySelectorAll('.mini-btn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const act = btn.dataset.act;
+        if (act === 'chap-all'){ B.chapters.forEach(c => chapShown.add(c.id)); }
+        else if (act === 'chap-none'){ chapShown.clear(); }
+        else if (act === 'thinker-all'){ allThinkers.forEach(t => thinkerShown.add(t)); }
+        else if (act === 'thinker-none'){ thinkerShown.clear(); }
+        else if (act === 'summa-all'){ summaIds.forEach(i => summaShown.add(i)); }
+        else if (act === 'summa-none'){ summaShown.clear(); }
+        const keepOpen = filtersEl.querySelector('details.filter-group');
+        const wasOpen = keepOpen ? keepOpen.open : false;
+        renderFilters();
+        const again = filtersEl.querySelector('details.filter-group');
+        if (again) again.open = wasOpen || act.startsWith('summa');
         applyFilters();
       });
     });
@@ -418,7 +491,7 @@ TEMPLATE_TAIL = r""";
     .selectAll('line')
     .data(links, d => d.source + '|' + d.target)
     .join('line')
-      .attr('class', 'link')
+      .attr('class', d => 'link' + (d.kind === 'satsat' ? ' satsat' : ''))
       .attr('stroke', d => idx.get(d.target).color)
       .attr('stroke-width', d => 0.6 + Math.log(1 + d.weight) * 0.8);
 
@@ -481,19 +554,13 @@ TEMPLATE_TAIL = r""";
   let labelsVisible = true;
 
   function applyFilters(){
-    nodeSel.style('display', d => {
-      if (d.kind === 'chapter') return chapShown.has(d.id) ? null : 'none';
-      return satKindShown.has(d.kind) ? null : 'none';
-    });
-    labelSel.style('display', d => {
-      const visible = d.kind === 'chapter' ? chapShown.has(d.id) : satKindShown.has(d.kind);
-      return (visible && labelsVisible) ? null : 'none';
-    });
-    linkSel.style('display', d => {
-      const sv = d.source.kind === 'chapter' ? chapShown.has(d.source.id) : satKindShown.has(d.source.kind);
-      const tv = d.target.kind === 'chapter' ? chapShown.has(d.target.id) : satKindShown.has(d.target.kind);
-      return (sv && tv) ? null : 'none';
-    });
+    function nodeVisible(d){
+      if (d.kind === 'chapter') return chapShown.has(d.id);
+      return satVisible(d.satellite);
+    }
+    nodeSel.style('display', d => nodeVisible(d) ? null : 'none');
+    labelSel.style('display', d => (nodeVisible(d) && labelsVisible) ? null : 'none');
+    linkSel.style('display', d => (nodeVisible(d.source) && nodeVisible(d.target)) ? null : 'none');
   }
   applyFilters();
 
@@ -713,6 +780,14 @@ TEMPLATE_TAIL = r""";
          + '<span class="acount">' + p.annotations.length + ' ann</span>'
          + '</summary>';
       s += '<div class="page-summary">' + escapeHtml(p.summary) + '</div>';
+      const pimg = 'pages/p' + String(p.page).padStart(3, '0') + '.jpg';
+      s += '<details class="ocr-block pgimg-block">'
+         + '<summary><span class="ocr-tag">PAGE IMAGE</span>'
+         + '<span style="flex:1"></span><span class="ocr-stat">scan p. ' + p.page + '</span></summary>'
+         + '<img class="pgimg" loading="lazy" src="' + pimg + '" alt="page ' + p.page + ' scan" '
+         + 'onerror="this.style.display=\'none\'; this.nextElementSibling.style.display=\'block\';">'
+         + '<div class="ocr-disclaimer" style="display:none">Page image not available in this copy (the scan sidecar is local-only and not published).</div>'
+         + '</details>';
       if (p.ocr_text){
         s += renderOcrBlock(p);
       }
@@ -750,7 +825,7 @@ TEMPLATE_TAIL = r""";
     s += '</div>';
 
     // Show evidence: which chapters connect to this satellite
-    const incoming = B.edges.filter(e => e.to === sat.id);
+    const incoming = B.edges.filter(e => e.to === sat.id && (e.kind || 'chapsat') !== 'satsat');
     if (incoming.length){
       s += '<h2>Referenced from</h2><ul>';
       for (const e of incoming){
@@ -772,6 +847,23 @@ TEMPLATE_TAIL = r""";
           s += '</ul>';
         }
         s += '</li>';
+      }
+      s += '</ul>';
+    }
+
+    // Satellite cross-links (full-picture pass, 2026-06-11)
+    const cross = B.edges
+      .filter(e => e.kind === 'satsat' && (e.to === sat.id || e.from === sat.id))
+      .sort((a, b) => b.weight - a.weight);
+    if (cross.length){
+      s += '<h2>Cross-links</h2><ul>';
+      for (const e of cross){
+        const otherId = e.from === sat.id ? e.to : e.from;
+        const o = B.satellites.find(x => x.id === otherId);
+        if (!o) continue;
+        s += '<li><span class="wikilink" data-target="' + o.id + '">' + escapeHtml(o.title) + '</span> '
+           + '<span style="color:var(--fg-muted)">— ' + e.weight + ' shared key' + (e.weight === 1 ? '' : 's')
+           + (e.keys && e.keys.length ? ': ' + escapeHtml(e.keys.join(', ')) : '') + '</span></li>';
       }
       s += '</ul>';
     }

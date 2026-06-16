@@ -1,5 +1,5 @@
 # Tom Loughran — PRS Triplets
-*Maintained by the Tom Loughran Agent | Last updated: 2026-04-29*
+*Maintained by the Tom Loughran Agent | Last updated: 2026-06-11*
 *Source: Resurrecting Civility RC Pilot — C2A2 Project Architecture*
 
 ## Format
@@ -79,3 +79,21 @@ PRS-07:
   Date Added: 2022-07-01
   Source: Loughran, "Four Models of Cultural Exchange," ISME 2022, Figure 2 and accompanying text
   Confidence: Medium
+
+PRS-08:
+  Label: P8 (RC Text, p.141) — Tradition-crossing inquiry
+  Problem: Intellectual traditions (scientific, philosophical, theological) operate as silos — each has resources the others need but lacks the methodology for genuine exchange
+  Resource: PRS triplets as building blocks of tradition-internal and tradition-crossing inquiry; MacIntyre's 'second-first-language' criterion for tradition maturity
+  Solution: A 'master science' framework: empirical, theoretical, computational, and institutional tools for long-term rational engagement between traditions; second-first-language speakers as living bridges
+  Date Added: 2026-06-11
+  Source: Resurrecting Civility — RC Pilot GPT Tome / Document Explorer; re-homed from traditions/stump/prs_triplets.md (was Stump PRS-01, added 2026-04-05) per ASSUMPTION-076
+  Confidence: High
+
+PRS-09:
+  Label: P9 (RC Text, pp.399–401) — Synergistic Coils as meta-tools
+  Problem: Individual disciplinary solutions to recurring problems (agency, teleology, information, community) are rediscovered independently in each field without building on each other
+  Resource: Synergistic Coils: abstract conceptual toolkits that recur across levels of complexity, capable of spiraling through multiple disciplines simultaneously
+  Solution: A structured table of PRS triplets and Synergistic Coils mapping connections within and between each thinker's thought — enabling deliberate cross-tradition knowledge transfer
+  Date Added: 2026-06-11
+  Source: Resurrecting Civility — RC Pilot GPT Tome / Document Explorer; re-homed from traditions/stump/prs_triplets.md (was Stump PRS-03, added 2026-04-05) per ASSUMPTION-076
+  Confidence: High

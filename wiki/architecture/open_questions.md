@@ -807,3 +807,50 @@ OPEN-078:
     Transform at each step:
       14a: Promoted from the unresolved "cadence TBD with Tom" thread in the day's handoffs and its coupling to the recency-bias presumption (PRESUMPTION-326). The Phase-B seed (#8) and scheduled re-extract (#7) are the proposed mechanisms; the open question is the cadence and whether it actually fills the low-frequency tail.
     Current status: OPEN
+
+OPEN-079 (NEW, 2026-06-09): What is the identity criterion for the agent member of the dyad-MMA across sessions, contexts, and model versions? Charter v1's own individuation principle (context as materia signata) implies each session/model-update yields a numerically distinct agent-individual — so is cross-session ratification accumulating within ONE dyad or across a SERIES of dyads, and how should that affect the formational-independence weighting (ASSUMPTION-294) and the reporting of dyad agreement? Surfaced by PRESUMPTION-330; load-bearing for the first triplet pass (task one of the measurement prototype). Owner: Tom + measurement sessions.
+
+OPEN-080 (NEW, 2026-06-10): Should the Agent Explorer preset reveal the substrate layer? Tom's Q3 ("Where's the 'very active' Tom/Admin node?") exposed the design consequence: `H-Admin/Interactive` is the most central actor by far (601 substrate edges vs 24 projected + 21 flow), but the preset prunes substrate (wiki hidden), so the headline signal — and the answer to Q1's "why does revealing Summa add nothing" — lives in the layer the actor-only view deliberately hides. The session put the design call to Tom and parked there at day end. Couples to DECISION-055 (the refactor determines what substrate-reveal costs) and PRESUMPTION-336 (whether substrate edges represent activity faithfully at all). Owner: Tom + next sociogram session.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Promoted from the sociogram session's closing AskUserQuestion, still unanswered at EOD.
+    Current status: OPEN
+
+OPEN-081 (NEW, 2026-06-10): Which network counts are authoritative — and where is drift entering between registries and the master wiki? The morning briefing read "260 PRS triplets, 90 connections" from the top of the master wiki, while the registry carry-forward stands at 269 (06-07 publication; extraction freeze since); the briefing also reported 7 pending proposals where the 06-09 snapshot recorded 3. Either the master wiki top-figures are stale/divergent or the carry-forwards are; the self-awareness pipeline currently propagates both without reconciliation. Testable empirically: trace each figure to its producing agent and date; define a single source of truth for headline counts. Owner: 14a housekeeping + master-wiki maintainer.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from a cross-document consistency check during the 06-10 EOD pass (briefing vs 06-09 snapshot).
+    Current status: OPEN
+
+OPEN-082 (NEW, 2026-06-11): Parser/linker remediation for bottom-frontmatter Summa files — option (a), (b), or (c)? The Summa QC sweep runs clean but a parser regression false-positive wall means 65 bottom-frontmatter files can be reviewed but not marked (Days 82/83 marks withheld); the options question was escalated to Tom 2026-06-11 18:27 and was unanswered at EOD. Until decided, the QC pipeline's marking path is partially blocked while its review path proceeds — a growing reviewed-but-unmarked divergence.
+  Arose from: Summa QC sweep session (parser-regression wall); evening sync "three quick gates"
+  Testable via: empirical (each option implementable and checkable against the 65-file set)
+  Owner: Tom + next Summa QC session
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Promoted from the escalated-and-unanswered options question recorded in the evening sync summary; transcript-level detail not re-read (summary-sourced, marked [inferred] as to option contents).
+    Current status: OPEN
+
+OPEN-083 (NEW, 2026-06-15): Is the post-Apr-6 interactive-token cliff (95% of captured output) and the 28/33-lane output flatline a telemetry capture/labeling artifact, or a real change in captured productive output? The 2026-06-15 metabolism session worked from the inference that capture stopped/changed labels after early April (not that activity fell), and rendered the view on that basis — but `probe_openstory.py` has not yet been run, so the artifact reading is unverified. Until decided, the "honest" view asserts a cause (capture ended) it has not confirmed; if any part of the cliff is real, the recovered view masks a genuine output collapse and every downstream yield comparison inherits the error.
+  Arose from: WS1 of the 2026-06-15 attended metabolism session (cut-offs A/B framed as capture problems; probe deferred to the Mac)
+  Testable via: empirical — run probe_openstory.py; reconcile token_usage payloads by run-type and date against an independent activity record
+  Owner: Tom (run probe on Mac) + next metabolism session
+  Status: OPEN
+  Related: DECISION-057; ASSUMPTION-320; PRESUMPTION-352, 351; OPEN-081
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the WS1 cut-off framing — the artifact-vs-real ambiguity is load-bearing on the metabolism metric and decidable by the already-scripted probe.
+    Current status: OPEN

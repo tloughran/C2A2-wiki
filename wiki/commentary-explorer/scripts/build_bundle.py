@@ -405,6 +405,60 @@ def main():
             })
     edges.sort(key=lambda e: (-e["weight"], e["from"], e["to"]))
 
+    # Satellite <-> satellite edges (full-picture cross-links, 2026-06-11).
+    # Match on a RESTRICTED key set only — thinker surnames / full names and
+    # explicit "Day NNN" references. The general match_keys include single
+    # common words (Summa day topics like "Hope", "Law") and grafted
+    # historical-figure keys (Aquinas) that turn the satellite mesh into a
+    # hairball: a first pass produced 5,254 edges. Case-SENSITIVE for names.
+    def satsat_keys(s):
+        ks = []
+        if s.get("thinker"):
+            for (tid, surn, full, _c) in THINKERS:
+                if tid == s["thinker"]:
+                    ks = list(surn) + list(full)
+                    break
+        elif s.get("day") is not None:
+            d = s["day"]
+            ks = [f"Day {d:03d}", f"Day-{d:03d}", f"Day {d}"]
+            topic = s.get("topic", "")
+            if len(topic.split()) >= 2 and topic not in GENERIC_TITLE_BLOCKLIST:
+                ks.append(topic)
+        return ks
+
+    sat_edges = []
+    for i, a in enumerate(sats):
+        a_keys = satsat_keys(a)
+        for b in sats[i+1:]:
+            # skip same-thinker wiki<->prs pairing; it is implicit
+            if a.get("thinker") and a.get("thinker") == b.get("thinker"):
+                continue
+            w = 0
+            keys = []
+            for k in a_keys:
+                if re.search(r"\b" + re.escape(k) + r"\b", b["body_md"]):
+                    w += 1; keys.append(k)
+            for k in satsat_keys(b):
+                if re.search(r"\b" + re.escape(k) + r"\b", a["body_md"]):
+                    w += 1; keys.append(k)
+            if w:
+                sat_edges.append({
+                    "from": a["id"], "to": b["id"], "weight": w,
+                    "kind": "satsat", "keys": keys[:8], "evidence": [],
+                })
+    # Degree cap: keep each satellite's top-12 cross-links by weight
+    sat_edges.sort(key=lambda e: (-e["weight"], e["from"], e["to"]))
+    degree = defaultdict(int)
+    capped = []
+    for e in sat_edges:
+        if degree[e["from"]] >= 12 or degree[e["to"]] >= 12:
+            continue
+        degree[e["from"]] += 1; degree[e["to"]] += 1
+        capped.append(e)
+    sat_edges = capped
+    print(f"[sat-sat] {len(sat_edges)} satellite-satellite edges (degree-capped)", file=sys.stderr)
+    edges.extend(sat_edges)
+
     # Build chapters with embedded pages, OCR text, and per-annotation matches
     match_stats = {"total": 0, "exact": 0, "fuzzy": 0, "miss": 0}
     chapters_out = []

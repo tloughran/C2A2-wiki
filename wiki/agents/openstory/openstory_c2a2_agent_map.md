@@ -63,7 +63,6 @@
 |---|---|---|
 | `morning-system-health` | daily 06:03 | 9 |
 | `morning-project-status` | daily 08:09 | 9 |
-| `bosco-archive-heartbeat` | Fri 03:07 | 7 |
 | `agentic-cost-tracker` | Mon 05:35 | 4 |
 | `openstory-version-check` | Mon 05:37 | 3 |
 | `reviewer-review-weekly` | Mon 06:37 | 1 |

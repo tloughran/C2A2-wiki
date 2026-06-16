@@ -1674,3 +1674,127 @@ PREMISE-054:
   Rationale: Stated assumption that directly restates one of the most established principles in computer security (policy/mechanism separation + least privilege + capability authority bounds); strong support, and a sharpening-not-refuting challenge folded in as the coincidence-case caveat. Consistency-checked vs PREMISE-001..053: no conflict (new agent-governance/constraint-layering domain). Moderate (not High) confidence because the realized 2026-06-07 cost landed precisely on the coincidence case, so the premise carries an explicit operational warning rather than a clean separation guarantee.
 
 **Total new PREMISEs this run (2026-06-08): 2 (PREMISE-053, PREMISE-054). PRESUMPTION-class INCORPORATEs: 0 (both INCORPOREs are ASSUMPTIONs). Cumulative through PREMISE-054.**
+
+
+PREMISE-055:
+  Date validated: 2026-06-11
+  Source item: ASSUMPTION-287
+  Statement: Observed telemetry (event streams, process traces) is the higher-fidelity PRIMARY basis for representing what agents in the system actually DO, and should ground the Agent Explorer's activity record in preference to authored narration, which demonstrably drifts from actual behavior. CAVEAT folded in (the boundary): telemetry constitutively cannot carry intent, rationale, or design theory (Naur's theory-building) — the authored narration layer is RETAINED as the intent/rationale record, not discarded. "Replace" is scoped to: replace-as-primary-activity-source, complement-for-intent. This premise covers what agents DO; it deliberately does NOT extend to "the event stream captures what an agent IS" — that substance claim is REVISE-095 (PRESUMPTION-322) and remains unvalidated.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: van der Aalst 2016, Process Mining (conformance checking: observed event data vs authored models); model-drift literature; digital-trace methodology (non-intrusive behavioral measurement).
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — Naur 1985 "Programming as Theory Building": traces cannot carry intent; an explorer presenting activity as identity misrepresents. Folded as the retain-authored-intent caveat and the explicit substance-claim exclusion.
+  Confidence: Moderate
+  Applicable to: Agent Explorer data architecture; OpenStory ingest design (ASSUMPTION-288/MONITOR-317); any future agent-representation surface. Couples REVISE-095 (substance conflation), MONITOR-319 (eval/apply), MONITOR-321 (coverage).
+  Re-check due: 2026-09-11 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: Strong direct support for the activity-record reading; the only challenge targets the replacement-of-intent reading, which is folded out by scoping. Moderate (not High) because the premise sits atop a telemetry stack whose coverage and entity model are themselves REVISE/MONITOR-flagged (REVISE-096, MONITOR-321).
+
+PREMISE-056:
+  Date validated: 2026-06-11
+  Source item: ASSUMPTION-290
+  Statement: When a capture gap requires integrating with an actively-developed upstream (OpenStory), an EXTERNAL adapter/bridge (symlink session-bridge) is preferred over forking, to stay on upstream with zero carried patches. CAVEAT folded in: a bridge coupled to uncontracted internals (file layout, schema) breaks SILENTLY where a fork breaks loudly at merge time — the bridge therefore requires a LIVENESS CANARY (known-session fixture that fails visibly when the bridge stops capturing). Upstreaming the capability remains the unexplored third option and should be considered when the bridge accretes complexity.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Fork-maintenance drift case studies (Meta Engineering 2026 WebRTC shim "Escaping the Fork"); distro packaging policy against forks (Fedora); adapter/anti-corruption-layer pattern.
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Weak) — Hyrum's Law dependence on uncontracted layout; silent-breakage asymmetry; fork-vs-bridge as false binary (upstreaming omitted). Folded as canary + upstreaming-option caveats.
+  Confidence: Moderate-High
+  Applicable to: OpenStory session-bridge; any future integration with actively-developed upstreams. Member of the silent-failure-seam SYSTEMIC cluster (with MONITOR-317, MONITOR-320) — the canary is the cluster remedy.
+  Re-check due: 2026-09-11 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: Strong, directly-on-point engineering precedent; weak challenge fully foldable as an operational caveat. Consistency-checked vs PREMISE-001..054: no conflict; reinforces PREMISE-053's fail-loud requirement (the canary).
+
+PREMISE-057:
+  Date validated: 2026-06-11
+  Source item: ASSUMPTION-292
+  Statement: An available pilot dataset (the 571-session OpenStory DB) is sufficient to prove a pipeline MECHANICALLY — exercising schemas, code paths, and end-to-end flow (walking-skeleton/tracer-bullet practice) — without a full reseed. SCOPE BOUNDARY folded in (this is the premise's load-bearing limit): mechanical sufficiency does NOT license trusting the pilot's DISTRIBUTIONAL outputs (rosters, rankings, edge densities, cluster shapes), because the pilot sample is biased exactly along the capture gap it was chosen despite. Any distributional claim requires reseed and/or quantified coverage.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Cockburn 2004 (walking skeleton); Hunt & Thomas 1999 (tracer bullets); standard pipeline-bring-up practice.
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — dataset-shift/convenience-sampling literature (Quiñonero-Candela et al. 2009): distributional outputs calibrated on a skewed sample. Folded as the scope boundary, which both search directions independently drew in the same place.
+  Confidence: Moderate
+  Applicable to: Agent Explorer bring-up; any C2A2 pipeline proven on partial data. Couples REVISE-096 (roster mis-specification) and MONITOR-321 (window bias) — both sit on the distributional side of this premise's boundary.
+  Re-check due: 2026-09-11 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: Convergent split across both search directions (mechanics yes / distributions no) makes the narrow premise well-grounded. Moderate confidence; the premise is deliberately a boundary-drawing premise — its value is preventing the silent widening of "proves the pipeline" into "proves the picture."
+
+PREMISE-058:
+  Date validated: 2026-06-11
+  Source item: ASSUMPTION-294
+  Statement: The evidential weight of agreement within any Magisterium-Member Assembly (MMA) scales with the formational INDEPENDENCE of its members: independent convergence is strong evidence; same-formation agreement is heavily DISCOUNTED evidence. CORRECTION folded in (15b): same-formation agreement is redundant-but-real signal — a smaller effective N — NOT "near-chance noise"; the original clause overstated the discount to zero. Aggregation gains require bracketing conditions (diversity helps only when errors bracket the truth).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Lorenz et al. 2011 PNAS (social influence undermines wisdom-of-crowds); Becker et al. 2017 PNAS; Herzog & Hertwig (bracketing); Clemen & Winkler 1985 (correlated experts → reduced effective N).
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — only the "near-chance noise" clause; the discount-not-zero correction is folded into the premise statement.
+  Confidence: High (core); the folded correction is itself well-established.
+  Applicable to: dyad-MMA and any future multi-agent assembly design; evidential weighting in PRS ratification. NOTE: this premise governs WEIGHTING; whether the dyad's agent member can achieve ANY effective independence is separately contested (MONITOR-323, ASSUMPTION-295) — this premise does not settle that.
+  Re-check due: 2026-09-11 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: One of the best-established results in collective-judgment research; challenge corrects a clause rather than the claim. Consistency-checked vs PREMISE-001..054: no conflict.
+
+PREMISE-059:
+  Date validated: 2026-06-11
+  Source item: ASSUMPTION-296
+  Statement: Curricular ladder tools' implied milestones can legitimately serve as CANDIDATE PRS-elements — a candidate-generation source feeding dyad ratification — per standard learning-progressions practice (construct maps seeded from curriculum, then validated). CAVEATS folded in: (a) curricula encode instructional convention and ladder-linearity artifacts, so candidates carry systematic bias, not just noise; (b) dyad ratification is a far WEAKER validation gate than the empirical-recovery studies the literature expects — ratified elements remain provisional pending empirical validation; (c) coverage is unmeasured — the ladders' omissions become invisible non-candidates (MONITOR-333's audit).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Wilson 2009 (BEAR construct maps); learning-progressions validation-cycle literature; competency-derivation-from-courseware practice.
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — convention artifacts; ratification-by-the-ladder's-author as weak filter; backward-design tradition derives milestones from competencies first. Folded as caveats (a)-(c).
+  Confidence: Moderate
+  Applicable to: first dyad triplet pass (Physics Explorer; RC Document Explorer as candidate sources); PRS-element provenance. Couples MONITOR-333 (coverage audit), REVISE-097 (the certification authority question sits ABOVE this premise and is unresolved).
+  Re-check due: 2026-09-11 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: The stated claim is the modest candidate-status claim, which both directions accept; everything stronger is excluded by the caveats. No conflict with PREMISE-001..054.
+
+PREMISE-060:
+  Date validated: 2026-06-11
+  Source item: ASSUMPTION-308
+  Statement: A DETERMINISTIC scheduler should precede any bandit/adaptive layer in agent-activity optimization: at small N, exploration overhead exceeds its value, cold-start bandits underperform, and a deterministic baseline is needed to evaluate any later adaptive policy. CAVEATS folded in: (a) define an explicit GRADUATION CRITERION (what observed condition justifies adding the bandit layer) so "deterministic first" cannot become "deterministic forever by default"; (b) log scheduling decisions WITH occasional randomization (epsilon-style) — purely deterministic logs are confounded and cannot train or validate the later bandit off-policy.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Silva et al. 2022 ACM TORS (cold-start bandits); Lattimore & Szepesvári 2020 (Bandit Algorithms — exploration cost at small N); Li et al. 2011 (off-policy evaluation requires randomized logs — source of caveat b).
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — the sequencing creates a data problem for its own successor unless caveat (b) is honored. Folded.
+  Confidence: Moderate
+  Applicable to: agent-activity scheduler design; the metabolism-instrument consumers (NOTE: any bandit layer would consume the yield metric — MONITOR-335/REVISE-103 must resolve before optimization is wired to it).
+  Re-check due: 2026-09-11 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: Supported sequencing claim with a constructive, foldable challenge. Consistency-checked vs PREMISE-001..054: no conflict; the applicable-to note guards against composing this premise with an unvalidated metric.
+
+**Total new PREMISEs this run (2026-06-11): 6 (PREMISE-055..060). PRESUMPTION-class INCORPORATEs: 0 (all six are stated ASSUMPTIONs). Cumulative through PREMISE-060.**
+
+PREMISE-061:
+  Date validated: 2026-06-12
+  Source item: ASSUMPTION-313
+  Statement: Taking the weaker reading of each contested rung as the agreement is a rational, non-concessionary convergence strategy (incompletely theorized agreement): the dyad genuinely agrees on the weaker shared content without either member conceding their stronger view. CAVEATS folded in: (a) weaker-reading rungs must remain MARKED as incompletely theorized in the ledger — the deferred stronger-reading disagreement is stored, not resolved, and can collapse at application time (M7–M8); (b) when a marked rung is later USED (built upon, operationalized), the deferred disagreement must be re-surfaced and stress-tested at that point; (c) weaker-reading rungs and fully-theorized rungs should be distinguishable in any PRS count so convergence-by-weakening cannot silently inflate progress.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Sunstein 1995 (incompletely theorized agreements, Harv L Rev 108(7)); Rawls 1993 (overlapping consensus); Gilbert 1989 (joint commitment).
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — Bathaee 2007 and negotiation literature: ambiguous agreements succeed at convergence but fail at application; deferred disagreements accumulate as false progress signals. Folded as caveats (a)-(c).
+  Confidence: Moderate
+  Applicable to: dyad ladder protocol (rung agreement procedure); PRS counting (couples REVISE-105's falsifier/metric separation); M7-M8 progression logic.
+  Re-check due: 2026-09-12 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: Strong direct support for the strategy as stated; the challenge specifies a maintenance requirement (track and re-surface deferred disagreement) rather than defeating the claim. Consistency-checked vs PREMISE-001..060: no conflict; complements PREMISE-058.
+
+PREMISE-062:
+  Date validated: 2026-06-12
+  Source item: ASSUMPTION-315
+  Statement: Separately-logged reasons preserve evidence distinguishing genuine agreement from convergence-by-adjudication (dual-reasons rule): conclusion-level agreement can mask premise-level disagreement (discursive dilemma), and logging each member's reasons separately makes that premise-level structure observable. CAVEATS folded in: (a) reasons must be logged BEFORE mutual reveal — pre-commitment is what blocks cascade contamination; sequential reason-sharing produces correlated logs; (b) logged reasons are evidence of premise-level structure, NOT guaranteed introspective truth — confabulation (Nisbett & Wilson) caps the evidential ceiling; treat reasons as data about the agreement's structure, not as infallible self-reports; (c) the rule's value degrades if either member can see the other's reasons before logging — enforce the blind window procedurally.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: List & Pettit 2002 (discursive dilemma, Econ & Phil 18(1)); Stasser & Titus 1985 (hidden profiles, JPSP); deliberation literature on reason-giving.
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — Nisbett & Wilson 1977 (confabulation); informational-cascade literature (reason-sharing can amplify correlation). Folded as caveats (a)-(c).
+  Confidence: Moderate
+  Applicable to: dyad ladder protocol (dual-reasons rule implementation); agreement-quality evidence; sycophancy countermeasures (couples the dyad reliability protocol, REVISE-106).
+  Re-check due: 2026-09-12 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: Formal support (discursive dilemma) is direct and strong; challenges define implementation constraints (pre-commitment, epistemic ceiling) rather than refuting the rule. Consistency-checked vs PREMISE-001..060: no conflict; directly reinforces PREMISE-058 (independence-weighting).
+
+**Total new PREMISEs this run (2026-06-12): 2 (PREMISE-061..062). Both stated ASSUMPTIONs; PRESUMPTION-class INCORPORATEs: 0. Cumulative through PREMISE-062.**
+
+PREMISE-063:
+  Date validated: 2026-06-16
+  Source item: ASSUMPTION-320
+  Statement: Gap-honest visualization is preferable to interpolation or silent zero-fill: a time-series/dashboard must not show data that do not exist, must distinguish measured from inferred values, and must encode absence as distinct from a true zero. Any imputation must be shown explicitly as inferred (e.g., a labeled band with uncertainty), never silently. CAVEATS folded in: (a) gap-honesty must be implemented with a LEGIBLE gap encoding (marked break/annotation), not raw blanks, since dense gaps can add more noise than signal; (b) showing the gap is necessary but NOT sufficient for understanding — a visible gap-marker does not by itself communicate the gap's meaning or cause (this is the separate, still-open PRESUMPTION-351 / REVISE-116: visibility != comprehension); (c) where the gap's cause is known (capture artifact vs real inactivity), encode the two distinctly rather than conflating them (couples PRESUMPTION-352).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Tufte 1983/2001 (graphical integrity — do not show data that do not exist); time-series missing-data visualization review (arXiv:2507.14920 — expose missingness + provenance, distinguish measured vs inferred); imputeTS / FlowingData 2018 (explicit missing-data encoding conventions).
+  Challenges noted: 15b NO-CHALLENGE-FOUND (Weak; boundary conditions only) — dense gaps can reduce legibility, and marked imputation-with-uncertainty can beat a bare gap for some tasks. Folded as caveats (a)-(c); the "silent zero" alternative the premise rejects has no defenders in the literature.
+  Confidence: Moderate-High
+  Applicable to: Metabolism view missing-data display; any C2A2 time-series or dashboard visualization (e.g., PRS connectome timelines, agentic-metabolism series).
+  Re-check due: 2026-09-16 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: Strong, essentially uncontested support for the integrity principle; the only challenges specify HOW to encode gaps legibly, not WHETHER to show them. Consistency-checked vs PREMISE-001..062: no conflict; the comprehension companion (visibility != comprehension) is deliberately NOT incorporated here — it remains REVISE-116, so this premise is scoped to "show the gap honestly," not "the shown gap is understood."
+
+**Total new PREMISEs this run (2026-06-16): 1 (PREMISE-063). Stated ASSUMPTION; PRESUMPTION-class INCORPORATEs: 0. Cumulative through PREMISE-063.**

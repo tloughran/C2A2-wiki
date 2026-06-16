@@ -13897,3 +13897,259 @@ These mirror the STALE-MONITOR-FLAGS above as parseable refresh blocks so the ne
 **PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
 
 **Total new MONITORs this run (2026-06-08):** 4 (MONITOR-313..316). Next weekly 15d run due: 2026-06-15 (MONITOR-313..315); MONITOR-316 monthly, next 2026-07-08.
+
+
+## 2026-06-11 — MONITOR intake (24 items, MONITOR-317..340; from DISPOSITION-181..219, cycle-0 backlog drain 06-08/09/10)
+
+### MONITOR-317 — ASSUMPTION-288
+**Statement:** Routing extraction through OpenStory's DB (vs direct transcripts) is worth the heavier dependency because eval/apply + turns are valuable signal.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate; private-schema coupling fails silently on upstream migration)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM. What would change: schema-drift canary + version pin in place AND trajectory-signal value demonstrated → INCORPORATE; seam breaks silently in practice → REVISE. Silent-failure-seam cluster.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-318 — ASSUMPTION-291
+**Statement:** Shared wiki-node references are a meaningful relational signal between agents — a valid sociogram edge model.
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Strong; bibliographic coupling) | **15b:** CHALLENGED (Strong; edges = topical relatedness not social interaction; bipartite-projection hub cliques) → CONTESTED
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority HIGH. Action: relabel edges as topical-coupling, hub-normalized weighting, do NOT present as social interaction. What would change: interaction-based edges added or relabel done → resolve; sociogram framing ships unchanged → REVISE.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-319 — PRESUMPTION-323
+**Statement:** [inferred] The eval/apply ratio is a meaningful, known-directional quality signal.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; direction NOT established) | **15b:** CHALLENGED (Strong; non-monotonic, task-confounded, Goodhart once ranked)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority HIGH. Standing rule: display as UNDIRECTED descriptive statistic; no ranking/quality framing until validated against ground truth. Trace=substance cluster (REVISE-095 root).
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-320 — PRESUMPTION-324
+**Statement:** [inferred] Static validation (node --check + validate_html.py) is a sufficient proxy for a visual artifact working.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak; necessary gate only) | **15b:** CHALLENGED (Strong; blank-canvas/NaN/empty-filter failures pass all static checks)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority HIGH. Action: add headless render smoke-test (screenshot + non-blank canvas + rendered-node-count invariant). One fix discharges this AND MONITOR-338. What would change: smoke test in validator → close.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-321 — PRESUMPTION-326
+**Statement:** [inferred] Recent/available activity is representative; bounded-window + sparse-old-data ingest under-renders low-frequency agents.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; valid for state-estimation) | **15b:** CHALLENGED (Strong; survivorship/time-period bias feeding prune decisions)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM-HIGH. Action: full-history ingest or per-agent coverage flag; mark under-observed agents in UI. Biased-denominator cluster (with REVISE-096, PREMISE-057 boundary).
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-322 — PRESUMPTION-327
+**Statement:** [inferred] Making the agent swarm legible/comparable/rankable is itself benign or good (observability as normatively neutral).
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate; rankings reactivity through the operator; metrics become de facto fitness functions in a self-modifying architecture)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM. Re-assess when any ranking/comparison view ships; couples MONITOR-319, REVISE-103.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-323 — ASSUMPTION-295
+**Statement:** The dyad-MMA is valid only if the agent can genuinely fail/withhold; structural dissent-invitation restores effective independence.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; reduces sycophancy) | **15b:** CHALLENGED (Strong; sycophancy operates below the prompting layer; "restores" fails silently)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority HIGH. Action: catch trials (planted errors) + blind re-presentation in dyad protocol; treat dissent-invitation as partial de-biasing. Dyad-validity cluster (REVISE-097/100 + MONITOR-324/329). What would change: catch-trial pass rates measured → re-disposition on data.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-324 — ASSUMPTION-297
+**Statement:** A table→exhaust-candidates→revisit→close rule is an adequate stopping rule for capturing dyad agreement.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; better than most consensus practice) | **15b:** PARTIALLY-CHALLENGED (Moderate; same-session revisit = anchoring; no stability check)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM. Action: add time-separated stability re-check before treating closed items as settled. Dyad-validity cluster.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-325 — ASSUMPTION-300
+**Statement:** Tradition-seeded agent dialogue adequately (indeed better) delivers what was promised as "GAN-simulated" interaction, because agents are inspectable.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Weak; "indeed better" untested) | **15b:** PARTIALLY-CHALLENGED (Moderate; persona collapse; inspectability covers seed not behavior)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM. Action: drop superiority claim; add persona-distinctiveness checks across dialogue turns.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-326 — PRESUMPTION-328
+**Statement:** [inferred] A localhost-served copy is render-equivalent to the file:// production artifact for verification purposes.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak; only while strictly self-contained) | **15b:** CHALLENGED (Strong; file:// is MORE restrictive — equivalence runs the wrong direction)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority HIGH (cheap). Action: verify on file:// directly; add self-containedness check to validator → close.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-327 — PRESUMPTION-329
+**Statement:** [inferred] Scrubbing the working tree discharges a public-exposure concern, leaving git history, published copies, and the underlying capability unexamined.
+**Item type:** PRESUMPTION (unstated)
+**15a:** NO-SUPPORT-FOUND (None) | **15b:** CHALLENGED (Strong; persistence mechanics identical to credential-leak doctrine)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM-HIGH. Linked: REVISE-099's one-time surface audit (git log -S, Wayback CDX, encoding grep) closes this. Remediation-completeness cluster.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-328 — PRESUMPTION-331
+**Statement:** [inferred] A philosophy audience will accept a running system as evidence in a philosophical argument (physics commissioning-report genre transfers to ISME).
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; computational philosophy precedent) | **15b:** CHALLENGED (Moderate; genres don't transfer by exhibition; audiences grant existence, deny the inference)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM. Action: scope ISME claims as possibility-proof/model-of-claim; make the system→thesis inference explicit.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-329 — PRESUMPTION-333
+**Statement:** [inferred] The single rater (MM-of-1) is temporally stable; assent-now is durable fact with no test-retest/drift detection.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak; reliability measurable, not presumable) | **15b:** CHALLENGED (Strong; occasion noise + standard-drift large and ubiquitous)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority HIGH. Action: date/version-stamped assents + periodic blind re-presentation of anchor items (ICC/weighted-kappa). NOTE the constructive flip: drift-vs-development is itself a phenomenon the project wants to observe — instrumenting it converts a validity threat into data. Dyad-validity cluster.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-330 — ASSUMPTION-301
+**Statement:** Substrate-layer reveal behavior is correct because it shares the admission code path already verified for projected/flow layers.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Weak; equivalent-context condition required) | **15b:** CHALLENGED (Strong; the renderer stall proves contexts differ)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority HIGH. Action: re-verify substrate reveal BEHAVIORALLY once the stall (MONITOR-331) is fixed; status until then is "unverified." Verification-by-inference cluster.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-331 — ASSUMPTION-302
+**Statement:** The heavy-toggle renderer stall is caused by the synchronous DOM build of 30k hidden line elements; budgeted-edge rendering will clear it.
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Strong; SVG/DOM element budgets) | **15b:** PARTIALLY-CHALLENGED (Moderate; jank misattribution risk)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM. Action: profile before/after budgeted-rendering fix; target <~1-3k live elements; stall persists → diagnosis wrong, escalate. Empirically self-resolving.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-332 — ASSUMPTION-303
+**Statement:** Agent actors are cumulative telemetry, not single-dated events; exempting them from the time-slider date cut is correct temporal semantics.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; endurant/perdurant distinction) | **15b:** PARTIALLY-CHALLENGED (Moderate; correct semantics is state-as-of-t, not exemption)
+**Detail / cadence / priority:** Monthly; next 15d 2026-07-11. Priority LOW-MEDIUM. Action: move to as-of-t clipping when per-date counts exist.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-333 — ASSUMPTION-304
+**Statement:** Embedding the two ladder tools as education-tab explorers fulfills task one's provisioning of candidate-milestone scaffolds for the first dyad triplet pass.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Weak) | **15b:** PARTIALLY-CHALLENGED (Moderate; unmeasured coverage gaps inherited as "no milestone here")
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM. Action: treat explorers as candidate SOURCES (per PREMISE-059); coverage audit of ladder omissions before the triplet pass relies on them.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-334 — ASSUMPTION-306
+**Statement:** On history restore, embedded-frame content is the authoritative state and the shell should resync to it.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate; restored frame state is browser/path-dependent and may be stale)
+**Detail / cadence / priority:** Monthly; next 15d 2026-07-11. Priority LOW. Action: frame wins VIEW state, canonical source wins DATA; spot-check across browsers/restore paths.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-335 — ASSUMPTION-307
+**Statement:** Git-history-derived yield is a valid productivity axis for the agent-metabolism instrument (tokens as cost, commits as yield), pending PRS-completion integration.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; valid ONLY inside a multi-dimensional instrument) | **15b:** CHALLENGED (Strong; commit granularity is a free variable for agents; Goodhart)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority HIGH. Conditions of continued floor-status: display-with-caveat only; NEVER an allocation target or ranking; normalize commit granularity before cross-agent comparison; "interim" is time-boxed — 15d checks the box is honored. Floor to REVISE-103's overclaim (PRESUMPTION-339). Proxy-surrogation cluster (HIGH).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-336 — ASSUMPTION-309
+**Statement:** Progress and peace require distinct KPIs — MacIntyre number for progress; endorsed-steelman (explicitly not agreement) for peace.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; ITT literature validates endorsed-steelman as distinct) + NOVELTY-FLAG (MacIntyre number unoperationalized in literature) | **15b:** PARTIALLY-CHALLENGED (Moderate; ceiling effects; dissociation from behavioral peace outcomes)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority HIGH (NOVELTY heuristic — potential original contribution). Action: operationalize MacIntyre number with explicit construct definition; validate endorsed-steelman against behavioral indicators; track for publication.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-337 — PRESUMPTION-334
+**Statement:** [inferred] When direct observation is blocked, structural code-path identity is an acceptable substitute for behavioral verification.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak; interim evidence with re-verification obligation) | **15b:** CHALLENGED (Strong; norm-formation — every blocked observation becomes closable by argument)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority HIGH. Standing rule: structural identity = INTERIM evidence carrying an explicit re-verification obligation; never recorded as "verified." Verification-by-inference cluster (with MONITOR-330/338, MONITOR-320).
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-338 — PRESUMPTION-335
+**Statement:** [inferred] The house validator's check suite defines artifact correctness; user-visible display invariants are out of scope, leaving the attending human as anomaly detector.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak; human-as-residual-oracle is a recognized architecture) | **15b:** CHALLENGED (Strong; visualization mirages; metamorphic display invariants ARE automatable; habituated single human = low-recall detector)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority HIGH. Action: add 2-3 metamorphic display invariants + render smoke-test to validate_html.py (single fix with MONITOR-320). PATTERN-FLAG: third occurrence of static-checks-as-sufficient (322 family, 324, 335) — recurs again → escalate the NORM to REVISE.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-339 — PRESUMPTION-336
+**Statement:** [inferred] Captured file-write telemetry is representative of agent activity; cluster emptiness is a data fact rather than a possible capture artifact.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Weak; valid only after coverage quantified) | **15b:** CHALLENGED (Strong; zero is ambiguous; environment has demonstrated silent multi-day capture failure)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority HIGH. Action: telemetry canary — inject known activity, confirm capture — before treating any empty cluster as a finding. Absence-of-evidence cluster (with MONITOR-340).
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-340 — PRESUMPTION-338
+**Statement:** [inferred] The Chat⇄Cowork sync loop's restoration is durable — one success after eight days of failure re-establishes operational reliance, lapse and recovery causes both unknown.
+**Item type:** PRESUMPTION (unstated)
+**15a:** NO-SUPPORT-FOUND (None; recurrence, not recovery, is the informative signal) | **15b:** CHALLENGED (Strong; textbook latent-failure setup; 8-day pattern suggests cyclical cause — credential/quota expiry class)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority HIGH. Action: heartbeat/canary on the sync loop; on next lapse, log timestamps to test the cyclical-cause hypothesis. Reliance is MONITORED, not restored. MONITOR (not REVISE) because re-failure cost is low and the remedy is cheap and standard.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-06-11):** 24 (MONITOR-317..340). Next weekly 15d: 2026-06-18 (22 items); MONITOR-332 and MONITOR-334 monthly, next 2026-07-11. Cheapest high-leverage closures: (1) render smoke-test + display invariants (closes 320+338, de-risks 326); (2) dyad reliability protocol — date/version-stamped assents + anchor re-presentation + catch trials (advances 323/324/329 and REVISE-097/100 at once); (3) telemetry + sync canaries (closes 339/340).
+
+### MONITOR-341 — ASSUMPTION-311
+**Statement:** Multi-starting-point derivability (CRm, Tononi-style phenomenology, computational frame) is convergence evidence of the M3–M4 kind.
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Strong; robustness/consilience/triangulation — Wimsatt, Weisberg, Whewell) | **15b:** CHALLENGED (Moderate; Stegenga & Menon pseudo-robustness — convergence counts only if premise-independence is demonstrated, not assumed)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM. Action: hidden-premise audit of the three frames (do CRm, IIT-style phenomenology, and the computational frame share functionalist/information-theoretic structural premises?). Audit clean -> INCORPORATE; shared premises found -> REVISE. Do NOT credit M3–M4 convergence evidence until audited. Member of self-referential-measurement Critical cluster (with REVISE-105, REVISE-111, MONITOR-342).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-342 — ASSUMPTION-312
+**Statement:** Methodological Thomism — any adequate resolution of conflicting rational traditions will be Thomist in MacIntyre's methodological sense (sole-source claim explicitly not asserted).
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Strong; MacIntyre 1988/1990 primary texts + standard scholarly reading) | **15b:** CHALLENGED (Strong; Stout/Nussbaum/Gadamer/Habermas rival integrations; Lott on methodological/substantive inseparability)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority HIGH (load-bearing for M8). CONTESTED — live philosophical dispute, not a design defect. Action: operationalise the M8 resolution procedure so Thomist and rival methods (Gadamerian fusion, Habermasian discourse) are comparable in practice — converts a methodological credo into a testable claim; carries the logged definitional-truth caution. Member of self-referential-measurement Critical cluster (risk: methodology predetermines its own conclusions).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-343 — ASSUMPTION-316
+**Statement:** Session-scoped (provenance-clean) commits keep repository provenance clean and the repo healthy.
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Strong; atomic-commit consensus) | **15b:** PARTIALLY-CHALLENGED (Moderate; Herzig & Zeller tangled commits — session-scoped is not logically atomic; claim conflates attributed provenance with logical provenance)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM. Action: repo audit — are session commits predominantly single-concern or tangled (rung agreements + extractions + config in one commit)? Single-concern -> INCORPORATE weak reading; routine tangling -> REVISE (split by concern within sessions). Resolve jointly with REVISE-102 (WIP/integration cadence).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-344 — PRESUMPTION-342
+**Statement:** [inferred] Vault retrieval recovers the relevant prior thought (unwritten material treated as nonexistent).
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; transactive-memory systems work when meta-knowledge maintained — Wegner, Argote & Ren) | **15b:** CHALLENGED (Strong; Polanyi tacit dimension — unwritten is inaccessible, not nonexistent; streetlight retrieval bias — recovery follows query framing)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM. NOTE: deviation from PRESUMPTION+strong-challenge->REVISE heuristic, surfaced explicitly in DISPOSITION-229 — in-principle component (tacit knowledge) is not remediable by design; operational component has no observed failure yet. Action: retrieval audit — known-item recovery rate + query-framing sensitivity test. Material misses -> REVISE (elicitation passes); clean -> INCORPORATE operational claim with tacit boundary stated.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-06-12):** 4 (MONITOR-341..344). Next weekly 15d: 2026-06-18 (now 26 weekly items). Cheapest high-leverage closures among the new four: (1) repo tangling audit (343) is a one-script check; (2) retrieval audit (344) is a one-session protocol; (3) hidden-premise audit (341) is a focused analysis Tom could commission as a single document; (4) operationalising the M8 resolution procedure (342) is the deep one — couples the master plan.
+
+## MONITOR intake — run 2026-06-16 (15c; autonomous)
+
+### MONITOR-345 — ASSUMPTION-318
+**Statement:** Files-added/day is the right headline yield series for the Metabolism view (better proxy than tokens/commits).
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; files-added is a fine descriptive activity proxy; comparative claim vs tokens/commits holds) | **15b:** PARTIALLY-CHALLENGED (Strong; construct-validity + Goodhart against elevating a byproduct proxy to sole headline; "never a single metric")
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM. Action: keep descriptive-only; pair with counter-metrics; watch for optimizer wiring. Wiring to an optimizer/bandit OR divergence from an independent value signal -> REVISE; sustained descriptive use + counter-metrics + clean value-correlation -> INCORPORATE weak reading. Member of Metabolism-proxy SYSTEMIC-RISK cluster (2); couples MONITOR-335/REVISE-103 and PRESUMPTION-349 (REVISE-115).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-346 — ASSUMPTION-319
+**Statement:** git history of traditions/*/prs_triplets.md yields valid "triplet-completed" dates (PRS-NN per commit-day).
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; standard MSR; timestamps reliable at daily resolution) | **15b:** PARTIALLY-CHALLENGED (Moderate; committer/author ambiguity + batch/backfill are the expected pattern for a hand-maintained ledger)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM. Action (decisive, cheap): audit prs_triplets.md history for batch/backfill signatures (many PRS-NN per commit; quiet stretches then bursts). Predominantly near-real-time single-triplet commits -> INCORPORATE coarse-dating; >~20% batch/backfill -> REVISE (explicit completion-date field; prefer author-date; flag batch commits). Shares the audit with MONITOR-348 (350). Member of Metabolism-proxy SYSTEMIC-RISK cluster (2).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-347 — ASSUMPTION-321
+**Statement:** The CRM "team" = the 15 traditions/ folders (14 thinkers + MacIntyre as rationality-epistemologist, Loughran as integrator).
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; traditions-as-unit + role-types coherent within MacIntyre's framework) | **15b:** PARTIALLY-CHALLENGED (Moderate; team=folders equation, absent membership criterion, MacIntyre framework-vs-member ambiguity)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority LOW. Largely a framework/definitional commitment, not an empirical claim. Action: check MacIntyre's role-assignment against his corpus (adjudicating framework vs contestant tradition — note the self-reference: he adjudicates the others); state an explicit membership criterion. Corpus check + criterion -> INCORPORATE qualified definition; folder-driven roster found to misrepresent membership (via 353 reconciliation) -> REVISE. Couples MONITOR-350 (353).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-348 — PRESUMPTION-350
+**Statement:** [inferred] Git commit timestamps are faithful clocks for knowledge-production events.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; faithful for aggregate daily rhythm — work-rhythm recovery; invalid timestamps <0.1%) | **15b:** PARTIALLY-CHALLENGED (Moderate, Strong on the literal reading; committer/author ambiguity, editability, batch/backfill decoupling)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM. NOTE: as a PRESUMPTION the literal over-claim leans REVISE, but the challenge is Moderate (timestamps ARE faithful at daily resolution) so MONITOR pending the shared backfill audit is the calibrated, non-averaged call (kept consistent with stated twin MONITOR-346). Audit clean -> INCORPORATE daily-aggregate reading with resolution boundary; material batching -> REVISE jointly with 319. Member of Metabolism-proxy SYSTEMIC-RISK cluster (2).
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-349 — PRESUMPTION-352
+**Statement:** [inferred] The post-Apr-6 token cliff / output flatline is a capture artifact, not a real activity change.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; instrumentation dropout is a known MCAR cause; abrupt cliff = acquisition-failure signature; decidable by an existing probe) | **15b:** CHALLENGED (Strong; mechanism can't be read off the pattern; "artifact" is the MCAR-convenient reading; equally MNAR-consistent; Apr-6 timing is a confound)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority HIGH (decidable by the already-scripted probe; couples OPEN-083). Action: RUN THE PROBE — independently reconstruct activity for the post-Apr-6 window. Activity occurred but uncaptured -> artifact confirmed (MCAR) -> INCORPORATE; activity also dropped -> real change (MNAR) -> REVISE the capture pipeline. Until run, label the cliff UNKNOWN-cause, never "artifact" (record the null as unknown). Member of "absence != confirmed reading" lineage.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-350 — PRESUMPTION-353
+**Statement:** [inferred] Vault folder-count is the authoritative source of team membership (1 folder = 1 member = 1 seat).
+**Item type:** PRESUMPTION (unstated)
+**15a:** NO-SUPPORT-FOUND (None; convention-over-configuration gives a convenient index, not an authoritative source) | **15b:** CHALLENGED (Moderate; dependency runs backwards — membership should define folders; routine filesystem ops silently change "the team")
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority LOW-MEDIUM. Action (cheap): folders-vs-roster reconciliation (REVISE-110 pattern) — diff traditions/ folders against the intended roster. Clean -> INCORPORATE folder-as-index with criterion stated; any divergence (stub/archive/merged/split folders; members without folders) -> REVISE (explicit membership registry as SSOT). Couples MONITOR-347 (321). Member of Metabolism-proxy SYSTEMIC-RISK cluster (2).
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-351 — PRESUMPTION-354
+**Statement:** [inferred] Adversarial inter-paradigm contest ("rival team," "open seat") is the right frame for CRM's relation to alternatives.
+**Item type:** PRESUMPTION (unstated)
+**15a:** PARTIALLY-SUPPORTED (Moderate-Strong; rivalry is genuinely MacIntyrean/Kuhnian — traditions compete, a tradition can defeat a rival) | **15b:** PARTIALLY-CHALLENGED (Moderate; incommensurability denies a neutral scoreboard; MacIntyre's contest is immanent critique not scoring; sits awkwardly with CRM's integrative telos)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM (touches project telos). Action: articulate the contest MECHANISM explicitly — rivalry via immanent critique / epistemic-crisis induction, not shared-metric scoring — held alongside the integrative/synthetic frame. Qualified articulation -> INCORPORATE; building a literal shared-scoreboard / "open seat" view presupposing commensurability -> REVISE. Couples MONITOR-347/350 (the team-definition cluster).
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-06-16):** 7 (MONITOR-345..351). Next weekly 15d: 2026-06-18. Five of the seven (345/346/347/348/350) are Metabolism-view items resolvable by two cheap instruments: (a) a single git-history batch/backfill audit of prs_triplets.md closes 346 AND 348; (b) a folders-vs-roster reconciliation closes 350 AND informs 347. MONITOR-349 is the highest-leverage single action: run the already-scripted post-Apr-6 probe.

@@ -32,13 +32,11 @@ Eleonore Stump is the tradition's philosopher, bringing Aquinas and MacIntyre in
 ## PRS Triplets
 *See `prs_triplets.md` for full list*
 
-**Count:** 6 recorded
+**Count:** 15 recorded (PRS-01 and PRS-03 re-homed to Loughran 2026-06-11 — methodology triplets, ASSUMPTION-076; numbering unchanged)
 
 | # | Label | Type | Core Problem |
 |---|-------|------|-------------|
-| PRS-01 | Tradition-crossing inquiry | Explicit | Traditions operate as silos |
 | PRS-02 | Thomism and the cognitive turn | Explicit | Cognitive science convergence lacks metaphysical framework |
-| PRS-03 | Synergistic Coils as meta-tools | Explicit | Cross-disciplinary solutions not integrated |
 | PRS-04 | Final causality and modern biology | Implicit | Teleological explanation banned from biology |
 | PRS-05 | Suffering and divine permission | Implicit | Problem of evil lacks rigorous analytic treatment |
 | PRS-06 | Tradition vitality criterion | Implicit | How to distinguish living from degenerate traditions |

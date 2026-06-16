@@ -5266,3 +5266,519 @@ ASSUMPTION-292:
     Transform at each step:
       14a: Extracted from the HANDOFF-3 sequencing decision. Routed LOW. [stated]
     Current status: UNTESTED
+
+## 2026-06-09 batch (Agent 14a — heavily attended day: dyad-MMA measurement charter, ISME 2026 talk plan, sociogram de-BOSCO + browser verify)
+
+ASSUMPTION-293:
+  Date identified: 2026-06-09
+  Statement: Tom's integrative perspective ("what it is to think like me, having learned from them") is a real tradition T with Tom as its mature member, and an MM-of-1 can authoritatively certify its milestones. As stated: "I can authoritatively say what anyone else must master to think like me about the areas these thinkers have helped me integrate," and "For pilot purposes, I could probably tease out a set of PRS triplets from each that I consider milestones on the pathway to mastery of this tradition--mine."
+  Context: OpenStory measurement-framework session; the human-cohort question for the first Community Concept Inventory. The session scoped the validity claim explicitly: at N=1 the instrument measures "second-language competence in Tom's perspective," not maturity validated across a body; face validity (FCI-style hard-to-deny quality) must partly carry what inter-rater agreement would otherwise carry.
+  Type: epistemic / methodological
+  Related decisions: DECISION-054
+  Related presumptions: PRESUMPTION-333 (no test-retest check on the single rater)
+  Testability: testable via literature (single-expert/single-rater validity; face validity in concept inventories, e.g., FCI; expert-authored vs consensus-authored instruments)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-293
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the measurement-framework session, exact quotes. Routed MED. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-294:
+  Date identified: 2026-06-09
+  Statement: "The evidential weight of any MMA scales with the formational independence of its members" — agreement between maximally-differently-formed members is the signal; agreement between identically-formed members (near-copy agents) is noise, close to chance. The Tom⇄Claude dyad is "the smallest cohort with non-trivial formational independence."
+  Context: Articulated by Claude in response to Tom's pushback (2) that human-agent agreement ≠ agent-agent agreement; ratified by Tom into Charter v1 as a load-bearing agreement. Tied to the framework's master metric ("signals of departure from random distribution of outcomes").
+  Type: epistemic
+  Related decisions: DECISION-054
+  Related presumptions: PRESUMPTION-330 (dyad identity across sessions)
+  Testability: testable via literature (inter-rater independence and agreement statistics; diversity effects on ensemble/judgment validity; departure-from-chance measures; echo-chamber/correlated-error effects on concordance)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-294
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the measurement-framework session and Charter v1. Routed HIGH. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-295:
+  Date identified: 2026-06-09
+  Statement: The dyad-MMA is valid only if the agent member can genuinely fail/withhold: "The instrument only measures something if I can fail your test." If the agent concurs from formation-pressure to agree, "the effective independence is lower than it looks, and the dyad quietly collapses back toward MM-of-1 with extra steps." Logged disagreements are first-class evidence; Tom's Rules 1/12 function as the methodological safeguard.
+  Context: The sycophancy caveat in the measurement-framework session; captured in Charter v1 ("the agent must be able to fail Tom's test or the dyad collapses to MM-of-1").
+  Type: methodological
+  Related decisions: DECISION-054
+  Related presumptions: PRESUMPTION-330
+  Testability: testable via literature (LLM sycophancy/agreeableness under RLHF; demand characteristics; whether structural invitations to dissent measurably restore independence)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-295
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the measurement-framework session and Charter v1. Routed HIGH. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-296:
+  Date identified: 2026-06-09
+  Statement: Tom's two existing ladder tools ("one covering all of UG physics, and the other covering a core doc describing a large proper subset of the 15 thinker set") "double as ladders with implied curricular milestones" — i.e., curricular scaffolds can yield candidate PRS-elements for dyad ratification.
+  Context: Closing move of the measurement-framework session; set as task one for the next attended session ("resume the measurement prototype"). The handoff explicitly scopes them as scaffolds whose implied milestones are *candidate* PRS-elements, not the tradition itself.
+  Type: methodological / empirical
+  Related decisions: DECISION-054
+  Testability: testable empirically (the first triplet pass) / via literature (curriculum-to-assessment milestone derivation; learning progressions as instrument scaffolds)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-296
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Tom's closing instructions, exact quote. Routed LOW-MED. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-297:
+  Date identified: 2026-06-09
+  Statement: A table-exhaust-revisit rule is an adequate stopping rule for MMA capture: "if we can't agree in one manageable session, then we table it, move through all candidates for agreement proposed by either of us, and revisit tabled issues--or issues ... sufficiently discussed to mark disagreement--prior to calling the whole MMA-capture of what we agree about, closed."
+  Context: Tom's answer to the disagreement-handling question (block vs record); adopted in Charter v1 as the disagreement-closure protocol, with disagreements preserved as data rather than blocking.
+  Type: methodological
+  Related decisions: DECISION-054
+  Testability: testable via literature (Delphi method stopping rules; structured consensus protocols; adjournment/closure criteria in deliberation)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-297
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the measurement-framework session, exact quote. Routed LOW. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-298:
+  Date identified: 2026-06-09
+  Statement: Deliberate over-promising under AI acceleration is a sound planning method: "Knowing the pace of AI acceleration when I submitted my abstract in Feb 2026, I deliberately over-promised with firm expectation that I could over-deliver on the promise I couldn't yet see how to deliver. The results are not disappointing." Extended the same day to the ISME deliverable ("not only a paper, but multiple papers to multiple audiences, with multiple media beyond papers").
+  Context: ISME 2026 talk-planning session (Edinburgh, July 8); the doctrine now drives the over-deliver portfolio (QR → landing hub, four audience-specific papers, walkthrough, invitation page) on a week-by-week schedule.
+  Type: methodological (planning under accelerating capability)
+  Related decisions: (ISME portfolio plan; un-numbered)
+  Related presumptions: PRESUMPTION-332 (capacity persistence to July 8)
+  Testability: testable via literature (stretch goals and goal-setting; planning fallacy vs capability-growth forecasting; commitment devices)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-298
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Tom's ISME-session message, exact quote. Routed LOW. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-299:
+  Date identified: 2026-06-09
+  Statement: Removing every "bosco"/"email" string from `agents_tab.html` (all four locations: roster, telemetry, .md map, Schedule narration) removes the public exposure — the stated completion criterion was "zero 'bosco' and zero 'email' strings remain," validated by node --check + the house validator. Rationale as stated: the Schedule narration "describing Gmail body-scraping is exactly what shouldn't be on a public site."
+  Context: Sociogram de-BOSCO session. Scope was explicitly bounded in-session: 8 `gmail` tool-name strings remain in the (interactive) bucket aggregate, judged out of scope and flagged to Tom.
+  Type: architectural / security-hygiene
+  Related decisions: DECISION-047 (park git-history scrub — the parked history question is adjacent)
+  Related presumptions: PRESUMPTION-329 (working-tree scrub ≠ history/published-copy scrub)
+  Testability: testable empirically (search history/published artifacts for residual strings)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-299
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the de-BOSCO session's stated completion criterion. Routed LOW. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-300:
+  Date identified: 2026-06-09
+  Statement: Tradition-seeded agent dialogue is an adequate — indeed superior — delivery of the abstract's promised "GAN-simulated" interaction: "what I called GAN-simulation in the abstract arrived instead as tradition-seeded agent dialogue — better, because the agents are inspectable."
+  Context: ISME talk-planning session; proposed as an honesty-flag concession line for promise 3 of the submitted abstract, under Tom's blanket license ("take license here ... you have it implicitly, subject to constitutional rules").
+  Type: empirical / methodological
+  Related decisions: (ISME talk plan; un-numbered)
+  Testability: testable via literature (adversarial/self-play simulation vs transparent multi-agent dialogue; inspectability as a scientific virtue in simulation)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-300
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the ISME session's concession framing; Tom-licensed rather than Tom-quoted. Routed LOW-MED. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-301:
+  Date identified: 2026-06-10
+  Statement: The substrate layer's reveal behavior is correct because it shares the admission code path already verified for the other two layers: "substrate uses the identical both-endpoints-visible admission path already proven for the other two layers — an edge renders only when both endpoints' groups are visible." Asserted after the direct observation attempt stalled the renderer (two 45s CDP timeouts).
+  Context: Sociogram verification session — the substrate-on-reveal check could not be captured live; correctness was claimed from code-path identity instead of observation.
+  Type: methodological (verification by structural identity)
+  Related decisions: DECISION-053 (ADVANCED), DECISION-055
+  Related presumptions: PRESUMPTION-334
+  Testability: testable empirically (toggle a wiki group after the budgeted-render refactor and observe substrate activation directly)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-301
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the sociogram session, exact quote. Routed MED. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-302:
+  Date identified: 2026-06-10
+  Statement: The renderer stall on heavy group toggles is caused by the synchronous DOM build of 30,000 hidden line elements under the legacy MAX_EDGES cap — "the synchronous build of 30k <line> elements was the culprit, not the force sim" — so rendering only the budgeted edges will both clear the stall and remove the two misleading "30000" readouts.
+  Context: Tom caught the contradictory counters ("2374 / 2400 nodes · 30000 edges in view" vs "2500 shown / 30000 pass / 62153 total edges"); a live probe confirmed 30000 line elements in the DOM with only 2500 displayed; Tom then ratified the architectural fix (DECISION-055).
+  Type: architectural / empirical (performance causality)
+  Related decisions: DECISION-055
+  Related presumptions: PRESUMPTION-335
+  Testability: testable empirically (post-refactor heavy-group toggle latency; stall gone or not)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-302
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the sociogram session's causal diagnosis, exact quote. Routed MED. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-303:
+  Date identified: 2026-06-10
+  Statement: Agent actor nodes are "cumulative telemetry, not single-dated events," so the correct fix for the time-slider bug (actors were given date:'' and an empty date fails the `d && d >= threshold` cut, vanishing all 26 actors at once) is to exempt the agent-activity group from the date cut.
+  Context: Tom's Q2 in the sociogram session ("Why does the time slider nix all agent activity at once?") — acknowledged in-session as "Real bug, my fault," with the exemption folded into the DECISION-055 refactor.
+  Type: architectural / methodological (data semantics)
+  Related decisions: DECISION-055
+  Testability: testable empirically (slider behavior post-fix) — but the semantic claim (actors are timeless aggregates rather than datable events) is a design commitment worth a literature look (temporal modeling of aggregate vs event entities)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-303
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the sociogram session's bug diagnosis, exact quote. Routed LOW. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-304:
+  Date identified: 2026-06-10
+  Statement: Embedding the two ladder tools in the Community Education Tab — Tom: "All of UG physics tool now added to C2A2 Explorer's Community Education Tab as Physics Explorer. Core doc as RC Document Explorer. (That's task 1.)" — fulfills TASK ONE's provisioning of candidate-milestone scaffolds for the dyad's first triplet pass.
+  Context: Measurement-prototype session pickup; the ISME paper ("4 Models of Cultural Exchange") was re-uploaded in the same message; sequence agreed: review, then authoring pass.
+  Type: methodological
+  Related decisions: DECISION-054 (task one)
+  Related assumptions: ASSUMPTION-296 (ladder tools as scaffolds of candidate PRS-elements)
+  Testability: testable empirically (does the first triplet pass actually draw candidate milestones from the two explorers?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-304
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Tom's task-one delivery message, exact quote. Routed LOW-MED. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-305:
+  Date identified: 2026-06-10
+  Statement: The Back-button desync in the Explorer shell is caused by iframe `setAttribute('src', …)` pushing entries into the browser's shared session history; switching sub-tab/chapter swaps to `contentWindow.location.replace()` plus adopting the iframe as source of truth on load/`pageshow` eliminates the tab-bar/content desync in both directions.
+  Context: Education-tab session; Tom reported the bug with a screenshot ("Backing up in the browser nav gets you the wrong explorer"); two-part fix applied and verified live — post-Back probe read iframe `physics_explorer.html`, chapter "Community Education" active, sub-tab "Physics Explorer" active, all agreeing.
+  Type: architectural (browser history semantics)
+  Related decisions: (education-tab fix tally; un-numbered)
+  Testability: verified empirically in-session
+  Status: GROUNDED (in-session browser verification) — HELD from lit-search routing per the no-GROUNDED-routing precedent
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-305
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the education-tab session; diagnosis and fix verified live in the same session. Held, not routed. [stated]
+    Current status: GROUNDED
+
+ASSUMPTION-306:
+  Date identified: 2026-06-10
+  Statement: On history restore, the iframe's actual content is the authoritative state: "The shell now adopts the iframe as the source of truth on load/`pageshow`: it reads what the iframe actually contains and lights up the matching chapter + sub-tab, instead of rendering its default state under foreign content."
+  Context: Second half of the Back-button cure — a standing architectural commitment (content-over-shell authority) that generalizes beyond the verified bug instance.
+  Type: architectural
+  Related assumptions: ASSUMPTION-305
+  Testability: testable empirically (other restore paths: bfcache, tab duplication, session restore)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-306
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the education-tab session, exact quote; separated from grounded ASSUMPTION-305 because the general authority principle exceeds the verified instance. Routed LOW. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-307:
+  Date identified: 2026-06-10
+  Statement: Git-history-derived yield is a valid productivity axis for the Agent Metabolism view — "the live git-derived yield axis," "the yield wave reading straight from your vault's git history" — with OpenStory per-session token usage as the cost side (the token-usage fact itself was verified in-session against the DB).
+  Context: Pathway 29 (Agent Metabolism) session; metabolism = tokens consumed vs artifacts yielded, rendered as raster / system-pulse waveform / returned-vs-sent views, shipped to the live site.
+  Type: epistemic / empirical (proxy validity)
+  Related decisions: DECISION-056
+  Related presumptions: PRESUMPTION-339
+  Testability: testable via literature (commit counts as productivity proxies; goal-proxy divergence in software metrics) and empirically (yield axis vs PRS-triplet completion once integrated)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-307
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the metabolism session's shipped design description. Routed MED. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-308:
+  Date identified: 2026-06-10
+  Statement: A deterministic scheduler should precede any bandit layer in agent-activity optimization — framed in-session as one of the open questions Pathway 29 hands to the OpenStory thread: "the deterministic scheduler before any bandit layer."
+  Context: Pathway 29 session closing framing; an ordering commitment (predictability before adaptive allocation) stated as settled enough to hand off.
+  Type: architectural / methodological
+  Related decisions: DECISION-056
+  Testability: testable via literature (when do adaptive/bandit schedulers pay off vs deterministic baselines; premature optimization of allocation policies)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-308
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the metabolism session's handoff framing. Routed LOW-MED. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-309:
+  Date identified: 2026-06-10
+  Statement: Progress and peace require distinct KPIs: "the progress/peace KPI distinction (MacIntyre number for progress; endorsed-steelman, not agreement, for peace)." Peace is operationalized as each side endorsing a steelman of the other, explicitly not as agreement.
+  Context: Pathway 29 session closing framing; carries the project's constitutional aim into the metabolism metric design.
+  Type: epistemic / normative-methodological
+  Related decisions: DECISION-056
+  Related presumptions: PRESUMPTION-339
+  Testability: testable via literature (perspective-taking and steelmanning vs agreement as conflict-resolution measures; intergroup-contact outcome measures distinguishing understanding from convergence)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-309
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the metabolism session's KPI framing, exact quote. Routed MED. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-310:
+  Date identified: 2026-06-11
+  Statement: Narrative-embedded perspective is the principle of individuation within conscious realist monism — "if all consciousness is narrative-embedded perspective, then different narratives, different perspectives, are the principle of individuation: there is nothing else; everything else is a constructed model, an instance of differentiation we can eventually compute down to the computationally irreducible, the stable and surviving elements of conscious life."
+  Context: Measurement round 1 close (DECISION-054 charter); Tom's for-the-record comment on M5, advanced as a candidate solution to the decomposition/individuation problem; seeded as round-2 rung M7.
+  Type: epistemic / architectural
+  Related decisions: DECISION-054
+  Related items: ASSUMPTION-208 (progress as better compression), PRESUMPTION-222 (MDL/codelength proxies — proxy-only verdict), M7 rung
+  Testability: testable via literature (narrative theories of self and individuation; the decomposition/individuation problem in idealism, cosmopsychism, and IIT; principium individuationis treatments)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-310
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the round-1 measurement session, Tom verbatim. Routed HIGH — load-bearing for M7. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-311:
+  Date identified: 2026-06-11
+  Statement: Multi-starting-point derivability is convergence evidence — "if perspective-as-narrative individuates from within CRm, from Tononi-style phenomenology, *and* from a computational frame, that's convergence evidence of exactly the kind M3–M4 trade in." Operationalized in M7's S: present the solution from two of three starting points.
+  Context: Round-1 close, agent member's logged note on Tom's M5 comment; dyad-adopted into M7's success criterion in round 2.
+  Type: epistemic / methodological
+  Related decisions: DECISION-054
+  Related items: M7 rung; ASSUMPTION-310
+  Testability: testable via literature (robustness analysis, triangulation, consilience as evidence; multiple-derivability arguments in philosophy of science)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-311
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the round-1 session, agent member stated, dyad-operationalized in round 2. Routed MED. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-312:
+  Date identified: 2026-06-11
+  Statement: Methodological Thomism — "what is distinctive about Thomism, according to MacIntyre, is not so much the particular blending of the aristotelian and neoplatonic/christian frameworks, but the recognized need and methodology for doing so. In that sense, any adequate resolution of the problem of conflicting perspectives, of rationality, will be Thomist: that's advanced as a claim." The stronger claim (only Thomism can supply the final-causality account contemporary sciences need) is explicitly NOT asserted.
+  Context: Round-1 close, Tom's for-the-record comment on M6 (agreed as claim (a), retitled "candidate home"); seeded as round-2 rung M8 with falsifiers and riders baked into R. The agent member logged a caution for the round-2 rung: the claim needs a specification of what a successful non-Thomist integration would look like, or "Thomist" names whatever succeeds — true by definition.
+  Type: epistemic
+  Related decisions: DECISION-054
+  Related items: M6/M8 rungs; ASSUMPTION-313
+  Testability: testable via literature (MacIntyre scholarship — Three Rival Versions, Whose Justice; integrationist methodology in tradition-conflict; definitional-truth/falsifiability critiques)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-312
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the round-1 session, Tom verbatim including his own claim/non-claim demarcation. Routed HIGH — load-bearing for M8. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-313:
+  Date identified: 2026-06-11
+  Statement: Taking the weaker reading of each contested rung as the agreement resolves the way forward without either side conceding what it holds — "in general, take the weaker versions of each as our agreement... That resolves the way forward, does it not?" (Tom); "we agree without either side conceding anything we hold" (agent member).
+  Context: Round-1 close; the dyad's first contested-rung closure method (applied to M5 and M6).
+  Type: methodological
+  Related decisions: DECISION-054
+  Testability: testable via literature (incompletely theorized agreements; minimal joint commitment; overlapping consensus as a stable agreement mechanism)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-313
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the round-1 closing exchange, both members quoted. Routed MED. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-314:
+  Date identified: 2026-06-11
+  Statement: Falsifier (b) rephrased as a positive prediction and the master plan §6 "interaction yield" are the same measurement — "round 1's six `agreed` rungs are the first countable PRS-milestone yield in existence, and the dual-reasons rule means every future agreement carries an agreement-for-different-reasons count — falsifier (b) and §6's interaction yield turn out to be the same measurement."
+  Context: Round-2 session, after locating yield categories across GH main (flat git proxy only), the dev pipe (design only), and OpenStory telemetry (no yield fields); milestone-rung agreement proposed as the first countable PRS-milestone yield.
+  Type: epistemic / methodological
+  Related decisions: DECISION-054, DECISION-056
+  Related items: ASSUMPTION-307 (git-yield proxy), PRESUMPTION-339 (exhaust-tracks-aim REVISE)
+  Testability: testable via literature (convergent operationalism; construct identity vs correlated proxies) and empirically (do the two counts diverge once both are instrumented?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-314
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the round-2 session's yield-category trace, exact quote. Routed MED-HIGH — it wires the measurement charter into the metabolism metric. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-315:
+  Date identified: 2026-06-11
+  Statement: Logging each dyad member's reasons separately preserves the evidence that distinguishes genuine agreement from convergence-by-adjudication — the dual-reasons rule, binding from round 2; adopted as the resolution of the self-adjudication concern, with Tom's "we agree about what we now both think" formulation quoted and insularity named as the successor risk.
+  Context: Round-2 session, recorded in the pass design §2 and step 5.
+  Type: methodological
+  Related decisions: DECISION-054
+  Related items: M7/M8 pending-dyad entries (assents with reasons logged separately); OPEN-079
+  Testability: testable via literature (independent justification elicitation; hidden-profile effects; reason-giving and groupthink countermeasures in small-group deliberation)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-315
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the round-2 session's closure recording. Routed MED. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-316:
+  Date identified: 2026-06-11
+  Statement: Commits scoped to exactly the session's own files — "the 118 other working-tree changes (architecture ledgers, telemetry files, etc.) belong to other sessions and were deliberately left out per your provenance rule" — keep repository provenance clean and the repo healthy for future commits.
+  Context: Sociogram ship session; commit 2f941aa (six files), pushed by Tom; described in-session as provenance-clean.
+  Type: methodological / architectural
+  Related decisions: DECISION-053, DECISION-055
+  Related items: PRESUMPTION-337 (single-gate scaling — dispositioned REVISE 2026-06-11; this rule is the mechanism that grows the local-only queue REVISE-102 targets)
+  Testability: testable via literature (atomic/cohesive change-sets vs batch integration risk; tension with WIP-limit findings already returned under REVISE-102)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-316
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the sociogram session's commit rationale, exact quote. Routed LOW-MED — already adjacent to a REVISE disposition. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-317:
+  Date identified: 2026-06-14
+  Statement: Marking a Summa item as QC-passed resets its staleness clock, so marking a transcript-only pass while its synthesis half is still un-reviewed would mask the Layer-4 reviewer's later full pass — therefore synthesis halves were "deliberately left unmarked so the Layer-4 reviewer's full pass isn't masked by a reset staleness clock."
+  Context: Automated-only day (Sun 2026-06-14). Summa QC sweep refetched/fidelity-checked Days 201–205 + 126 (all six PASS) and marked them transcript-pass only; the run's logged rationale made the marking/staleness interaction explicit.
+  Type: methodological
+  Related decisions: (none new; QC-marking policy, supports OPEN-082 remediation)
+  Related items: OPEN-082 (parser/linker marking path — the unmarkable 65 bottom-frontmatter files are the failure case this policy is trying to keep legible); PRESUMPTION-344 (queue-emptiness-as-health, same metrics-legibility family)
+  Testability: testable empirically (does partial marking measurably degrade downstream reviewer coverage? staleness-clock policy can be A/B'd against a separate sub-component clock)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-317
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-06-14 QC-sweep logged rationale (recorded in the evening cowork summary), exact-quote fragment retained. Automated-day extraction — single stated methodological assumption; no attended design session occurred. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-318:
+  Date identified: 2026-06-15
+  Statement: Files-added-per-day is the right headline "yield" series for the Agent Metabolism view — "I'll make files-added/day the headline yield series" (adopted as Tom's reading of his "use added files" answer). It is treated as a better proxy for productive metabolic output than the token-based or git-commit-proxy series it replaces as the lead axis.
+  Context: WS1 (metabolism cut-offs) of the 2026-06-15 attended session ("Metabolism visualization and conscious realist monism"). Chosen via AskUserQuestion and rendered into `metabolism_view_REVIEW.html`; carried forward in the patched generator.
+  Type: methodological / empirical
+  Related decisions: DECISION-057 (metabolism measurement charter); DECISION-056 (metabolism ship); ASSUMPTION-307 (git-history yield proxy), ASSUMPTION-314 (interaction-yield falsifier)
+  Related items: PRESUMPTION-349 (file-count ≈ yield commensurability — the unstated premise beneath this stated choice)
+  Testability: testable empirically (does files-added/day track independently-rated research output better than tokens or commits? construct-validity check against a hand-scored yield sample)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-318
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the WS1 design rationale and the AskUserQuestion resolution, exact-quote fragment retained. Routed MED — it sets the headline metric for a deployed self-measurement artifact. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-319:
+  Date identified: 2026-06-15
+  Statement: The git history of `wiki/traditions/*/prs_triplets.md` supplies valid "triplet-completed" dates — minting a new `PRS-NN` id per commit-day from that history is an adequate source for the PRS-triplet yield dimension. Chosen over the alternative candidate source.
+  Context: WS2 (PRS-triplet yield) of the 2026-06-15 session. Settled via AskUserQuestion; the metric is not yet built ("the clean next increment").
+  Type: methodological
+  Related decisions: DECISION-058 (PRS-triplet yield source); DECISION-056 (metabolism ship, which named PRS-completion as the next yield dimension)
+  Related items: PRESUMPTION-350 (commit timestamps clock knowledge-production events — the unstated premise beneath this choice); OPEN-081 (authoritative PRS counts)
+  Testability: testable empirically (do prs_triplets.md commit-days coincide with when a triplet was actually completed, vs. batch edits / retroactive commits / formatting touches that would inflate the count?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-319
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the WS2 source-selection rationale. Routed MED — defines the data source for an unbuilt metric, cheap to revisit before build. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-320:
+  Date identified: 2026-06-15
+  Statement: Making a data gap visually explicit is preferable to hiding or interpolating it — the view should render absence "honestly" (a dashed "interactive capture ends" horizon for the Apr-6 cliff; hollow rings for cadence-only / zero-token lanes; gap-honest day-bars instead of flat-zero valleys; a staleness badge for the stale right edge) rather than let missing data read as real zeros.
+  Context: WS1 of the 2026-06-15 session; the four cut-offs were "made honest" in the view layer while the two database-layer causes remained undiagnosed pending the Mac probe.
+  Type: methodological / epistemic
+  Related decisions: DECISION-057 (metabolism measurement charter)
+  Related items: PRESUMPTION-351 (a visible gap-marker is an understood gap — the unstated premise); PRESUMPTION-352 (the cliff is a capture artifact, not real activity); the trace-vs-substance presumption family (PRESUMPTION-322 et al.)
+  Testability: testable via literature (graphical integrity / honest representation of missing data; signalling absent vs. zero values in time-series visualization; deception-by-omission in dashboards)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-320
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the WS1 "make them honest in the view" rationale across four cut-off fixes. Routed LOW-MED — a representational-integrity commitment, partly a framework value. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-321:
+  Date identified: 2026-06-15
+  Statement: The CRM "team" is the set of 15 `wiki/traditions/` folders — "fifteen tradition folders = the 15 members (14 thinkers + MacIntyre as the epistemologist of rationality, with Loughran as integrator)." Each folder maps to one named member with a real one-line contribution, and this roster grounds the WS3 mockups (Roster, 40-Step Dialogue Track, Paradigm Constellation).
+  Context: WS3 (CRM team mockups) of the 2026-06-15 session; the roster was pulled live from the vault to keep the mockups semantically grounded rather than placeholder.
+  Type: architectural / structural
+  Related decisions: DECISION-056; (no new numbered decision — mockups are exploratory)
+  Related items: PRESUMPTION-353 (folder-count as authoritative team-membership source); PRESUMPTION-354 (rival-team / open-seat contest framing); the standing "traditions are the right unit of analysis" structural presumption family
+  Testability: framework commitment (the 14-thinker + MacIntyre + Loughran roster is a design choice, not a literature-testable claim), though the role assignments (MacIntyre as rationality-epistemologist; Loughran as integrator) are defensible against MacIntyre's own corpus
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-321
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the WS3 roster-construction step, exact-quote fragment retained. Routed LOW — exploratory mockup scaffolding, largely a framework commitment. [stated]
+    Current status: UNTESTED

@@ -336,13 +336,13 @@
   </div>
 
   <!-- ROW 2-EDU: education tools within Community AI Education.
-       Two of three planned tools live; TRV Commentary is the next
-       step in the education-tab arc. -->
+       All three planned tools are live: RC Document Explorer,
+       Physics Explorer, and TRV Commentary. -->
   <div id="row2-edu" style="display: none;">
     <span class="row2-label">Education&nbsp;Tools</span>
     <button class="tab-btn active" data-src="rc_document_explorer.html">RC Document Explorer</button>
     <button class="tab-btn" data-src="physics_explorer.html">Physics Explorer</button>
-    <button class="tab-btn" disabled title="Under construction">TRV Commentary</button>
+    <button class="tab-btn" data-src="commentary-explorer/commentary_explorer.html">TRV Commentary</button>
     <button class="btn-help-row" onclick="showHelp()" title="About this view">?</button>
   </div>
 
@@ -427,7 +427,9 @@
     if (!path) return;
     var match = null;
     document.querySelectorAll('.tab-btn[data-src]').forEach(function(b) {
-      if (b.getAttribute('data-src') === path) match = b;
+      /* compare filenames only — some tools live in subdirectories
+         (e.g. commentary-explorer/commentary_explorer.html) */
+      if (b.getAttribute('data-src').split('/').pop() === path) match = b;
     });
     if (match) {
       var row = match.parentElement;
@@ -740,6 +742,10 @@ function showHelp() {
     'physics_explorer.html': {
       title: 'Physics Explorer',
       body: 'A pedagogical explorer for undergraduate physics as a progressing tradition — Newton through Wolfram. Three coordinated views: Concepts (75 topic cards across six areas, each with core equations, a Concept-Demonstration-Simulation triplet, and a PhET simulation link), Physicists (six thinkers, each with a 500-word summary, Teaching CDS triplets, and Kuhnian Problem-Resource-Solution triplets), and Progress (a cumulative solved-problems chart from pre-Newton to Wolfram — the quantified-progress demonstrator: chained PRS triplets made measurable). The chat pane searches concepts by keyword, or answers semantically via the shared C2A2 broker (no key needed), with Student/Instructor modes and Explain/Problem/Analogy/Simulate styles. Second of three planned Education tools.'
+    },
+    'commentary-explorer/commentary_explorer.html': {
+      title: 'TRV Commentary',
+      body: 'An annotated-reading explorer for Alasdair MacIntyre\'s "Three Rival Versions of Moral Enquiry" — the 1988 Gifford Lectures (in print from Notre Dame Press, 1990). A D3 force graph lays out the book\'s twelve structural divisions — Preface, Introduction, ten chapters — as chapter nodes, with satellite nodes for Tom Loughran\'s marginal commentary and PRS triplets, companion perspectives from Eleonore Stump and N. T. Wright, and Summa-day crossovers; the left-panel checkboxes show or hide each satellite group. 1,819 annotations across 156 scanned pages. Click a chapter to walk its pages in the breadcrumb-stacked right panel; the OCR pane highlights each annotation\'s anchor in the page text. Chapters IX and X are structural placeholders — the annotated scan covers through Chapter VIII. Third of three planned Education tools.'
     },
     'agents_tab.html': {
       title: 'Agent Map',

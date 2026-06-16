@@ -550,3 +550,120 @@ DECISION-053:
     Transform at each step:
       14a: Recorded from the four 2026-06-08 attended OpenStory sessions via their handoff notes (`HANDOFF_openstory_{c2a2,session2,session3,session4}.md`) and the artifacts they describe (`extract_openstory_agent_data.py`, `inject_telemetry.py`, `sync_roster.py`, `agent_telemetry.json`, `agent_map.json`, `agents_tab.html`). A substantive, dated, multi-part design commitment realized in code. Git push state taken from the handoff notes — reported context; the repo is not introspectable from this mount.
     Current status: ADOPTED (subtabs 1+3 realized in code; sociogram + Phase-B + visual verification pending)
+
+## 2026-06-09 status update (Agent 14a — heavily attended day: dyad-MMA charter ratified; ISME 2026 plan shipped; DECISION-053 subtab-2 advanced and browser-verified)
+
+- **NEW: DECISION-054** (below) — the Prototype Measurement Charter v1 (dyad-MMA). NOTE / CORRECTION: today's cowork-to-chat summary recorded "No new DECISION today"; this pass overrides that on quoted evidence — Tom: "Let's articulate the dyad-MMA decision and the individuation principle as version 1, ever revisable as version N+1 will be for all N." A versioned, Tom-ratified measurement-architecture commitment is a decision.
+- **DECISION-053** (Agent Explorer on OpenStory telemetry): ADVANCED. Subtab 2 (sociogram) — the deferred half — was built across two attended sessions: de-BOSCO of the email agent in all four locations (roster → 33 agents, telemetry re-injected, "Collaboration History" reframe), `extract_agent_node_refs.py` + `agent_node_edges.json` prepared, generator surgery (agents group, three layer toggles, shown/pass/total indicator restored), `wiki_narration.html` regenerated, and a real browser verify on the served copy (2400 nodes, 62,153 links, 26 agent actors; `#agents` preset: 228 = 183 projected + 45 flow, substrate pruned to 0). The PRESUMPTION-324 visual-render deferral is thereby partially discharged (see PRESUMPTION-328 for the residual file://-equivalence premise). Remaining: iframe + `applyAgentSociogramPreset()` wiring; commit/push attended-only.
+- **ISME 2026 talk plan + over-deliver portfolio** (un-numbered): shipped with corrections ledger (April 1 genesis; Day-N = Habash Summa-in-a-year cadence; C2A2 expansion conflict flagged) and week-by-week schedule to July 8; handoff at `handoffs/isme-2026-talk.md`. Tom granted standing license for the portfolio increments "subject to constitutional rules," monitoring in dispatch mode. Carried as a plan, not a numbered DECISION. (ASSUMPTION-298/300; PRESUMPTION-331/332.)
+- Sync channel: claude.ai logged out — 7th consecutive day; both directions failed again (morning scrape at /login; evening delivery undelivered, summary .md is the deliverable).
+
+DECISION-054:
+  Date: 2026-06-09 (attended)
+  Title: Prototype Measurement Charter v1 — the recorded Tom⇄Claude dyad as the pilot MMA unit
+  Decision: Adopt, as version 1 (ever revisable, N+1 for all N):
+    (1) The pilot MMA unit is the recorded Tom⇄Claude dyad — the smallest cohort with non-trivial formational independence; evidential weight of any MMA scales with the formational independence of its members (Tom–Claude > Claude–Claude′; human pair > Tom–Claude).
+    (2) The tradition measured is Tom's integrative perspective ("what it is to think like me, having learned from them"), with Tom as MM-of-1 per the framework's own constitution clause; every instrument's validity is scoped to "second-language competence in Tom's perspective."
+    (3) Context is the agent's principle of individuation (materia signata): the individuating context — constitution + seeds + memory state + model — is recorded as the "who" of any agent participation. (Quietly expands OpenStory's "who".)
+    (4) The agent must be structurally able to fail/withhold; logged disagreements are first-class evidence, recorded not smoothed.
+    (5) Disagreement-closure protocol: table within one manageable session → exhaust all candidates proposed by either member → revisit tabled/marked items → only then close the MMA-capture.
+    (6) Caveat carried front-and-center: neither member is ever a *simple* N=1 — that is one projection, never the only one.
+    (7) First Level-3 data = whatever the dyad ratifies (or fails to ratify) in the next triplet pass; not gated on Mac backfill or recruited cohort.
+  Status: ADOPTED (Charter v1 written; measurement handoff set). Next: task one — Tom's two ladder tools (UG physics; core-doc subset of the fifteen) as scaffolds of candidate PRS-elements; first triplet pass, iterating the pass design. Resume cue: "resume the measurement prototype."
+  Rationale: Dissolves the Mac-gating and cohort-gating the master measurement plan assumed; converts the AI-membership question from thesis to empirical question the detector adjudicates; Tom's Rules 1/12 become the methodological safeguard keeping the unit valid.
+  Related: ASSUMPTION-293/294/295/296/297; PRESUMPTION-330/333; OPEN-079; DECISION-053 (the "who" expansion); `architecture/master_measurement_plan.md`
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Registered from the measurement-framework session transcript and Charter v1; overrode the same-day summary's "no new DECISION" read on quoted evidence.
+    Current status: ADOPTED (v1)
+
+## 2026-06-10 status update (Agent 14a — four attended fronts: sociogram counter forensics → budgeted-render ratification; measurement task-one delivered; education-tab fixes verified; Pathway 29 Metabolism shipped live)
+
+- **NEW: DECISION-055** (below) — budgeted-edge DOM rendering, Tom-ratified in-session after he caught the contradictory edge counters.
+- **NEW: DECISION-056** (below) — Pathway 29 Agent Metabolism view adopted as a permanent Explorer sub-tab and pushed to the public GitHub Pages site.
+- **DECISION-053** (Agent Explorer on OpenStory telemetry): ADVANCED again — all four verification checks passed on the served copy (preset, master-view defaults, group labels, `agents_tab.html` lazy-iframe wiring), closing the "iframe wiring" remainder. Three Tom observations then opened real findings: the time-slider date-cut bug (ASSUMPTION-303), the Summa zero-substrate fact (PRESUMPTION-336), and the H-Admin-centrality-lives-in-hidden-substrate design consequence (→ OPEN-080, parked on an open question to Tom at day end).
+- **DECISION-054** (dyad-MMA charter): task one DELIVERED — Tom embedded the two ladder tools as Physics Explorer and RC Document Explorer in the Community Education Tab and re-uploaded the ISME 2026 paper (ASSUMPTION-304); session parked at the review→authoring-pass question.
+- **Education-tab fix tally** (un-numbered, carried for the pending two-file commit): caption bleed, return navigation, 28 PhET URL fixes, and the Back-button history cure (ASSUMPTION-305 GROUNDED / ASSUMPTION-306); session parked at the wrap/commit question.
+- Sync channel: morning Chat→Cowork scrape failed at /login (8th consecutive day) but the **evening Cowork→Chat delivery SUCCEEDED — first delivery in 8 days** (session restored unexplained; PRESUMPTION-338).
+
+DECISION-055:
+  Date: 2026-06-10 (attended)
+  Title: Budgeted-edge DOM rendering — retire the legacy MAX_EDGES hidden-DOM layer in `wiki_narration.html`
+  Decision: Render only the budgeted edges into the DOM, so the graph never holds the ~30k hidden `<line>` elements the legacy `MAX_EDGES = 30000` cap produced between "total" and "shown." Companion label fixes regardless of refactor: `graph-status` reports nodes only; `edge-status` is the sole edge readout; `pass` becomes the true pre-cap passing count (~60,078 at master defaults, not the post-slice 30000). Folded in: exempt the agent-activity group from the date cut (actors are cumulative telemetry — ASSUMPTION-303).
+  Status: ADOPTED; refactor IN PROGRESS — paused mid-design (dependency read of `nodeById` done) to triage Tom's three observations, then parked on the substrate-visibility design call (OPEN-080).
+  Rationale: Tom's counter forensics exposed both "30000"s as artifacts of the DOM cap (a labeling bug plus a not-true-pass count), and the synchronous 30k-element build is the diagnosed cause of the heavy-toggle renderer stall (ASSUMPTION-302). Same legacy limiter Tom had already flagged: "let total grow, cap only visually."
+  Related: ASSUMPTION-301/302/303; PRESUMPTION-334/335; DECISION-053; OPEN-080
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Registered from the sociogram session — Tom picked "the architectural fix" from an explicit in-session question; quoted diagnostic evidence retained.
+    Current status: ADOPTED (refactor in progress)
+
+DECISION-056:
+  Date: 2026-06-10 (attended)
+  Title: Pathway 29 — Agent Metabolism view adopted as permanent Explorer sub-tab and published live
+  Decision: Adopt the Agent Metabolism visualization (Pathway 29, `29_agentic_metabolism.md`) as a permanent sub-tab of the Explorer shell and publish it: design doc + standalone prototype generator + three-view visualization (raster, system-pulse waveform, returned-vs-sent) with a live git-derived yield axis; clean 7-file commit (`3080a23`) pushed to `main` and verified on the public GitHub Pages site (`tloughran.github.io/C2A2-wiki`) and locally, zero console errors.
+  Status: ADOPTED & SHIPPED. Open handoffs framed to the OpenStory thread: PRS-triplet completion as the next yield dimension; deterministic scheduler before any bandit layer (ASSUMPTION-308); progress/peace KPI distinction (ASSUMPTION-309).
+  Rationale: OpenStory's DB was verified in-session to carry full per-session token usage, making the cost side of a metabolism (tokens in / artifacts out) measurable now; git history supplies a live yield proxy today (ASSUMPTION-307) ahead of PRS-completion integration.
+  Related: ASSUMPTION-307/308/309; PRESUMPTION-337/339; DECISION-053 (telemetry substrate); `architecture/29_agentic_metabolism.md`; `architecture/pathways.md`
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Registered from the metabolism session transcript — an attended, scoped, public-site-verified ship of a numbered pathway. Push state quoted from the session's own verification (commit hash + live-site check); repo not introspectable from this mount.
+    Current status: ADOPTED & SHIPPED
+
+## 2026-06-11 status update (Agent 14a — measurement rounds 1–2, sociogram ship, commentary explorer, pipeline backlog drain)
+
+- **No new DECISION-NNN today** (max remains DECISION-056). The day was execution and dispositions. NOTE (Rule-7 flag): the evening cowork-to-chat summary stated "max remains DECISION-054" and "max remains OPEN-079"; the registries are authoritative (DECISION-056, OPEN-081 before today) — the summary's maxes are stale.
+- **DECISION-054** (dyad-MMA charter): ADVANCED substantially — **round 1 CLOSED 6/6 agreed, the system's first completed Level-3 MMA capture.** M1–M4 unqualified; M5 agreed scoped (weaker reading: CRm as correctly articulated, not fully resolved) with Tom's narrative-individuation comment recorded verbatim (ASSUMPTION-310); M6 agreed as claim (a), retitled "candidate home," with Tom's methodological-Thomism comment verbatim (ASSUMPTION-312). **Round 2 OPENED:** M7 (narrative individuation) and M8 (methodological Thomism, falsifiers + riders in R) at pending-dyad with the agent member's assents and separately-logged reasons (ASSUMPTION-315 dual-reasons rule, binding from round 2). Physics ladder deferred as next seed. Mid-round correction: Stump false-attribution traced to a name-proximity heuristic — the failure ASSUMPTION-076/PRESUMPTION-089 predicted — fixed at four layers incl. a durable memory; no live attribution survives.
+- **DECISION-053/055** (sociogram stack): SHIPPED & PUSHED — commit 2f941aa (six files): budgeted-edge rendering (DECISION-055 refactor completed), substrate context, Summa restored to the narration graph with its silent-drop failure mode closed, agents_tab.html iframe wiring. Tom pushed; live.
+- **DECISION-056** (metabolism): round-2 session traced yield categories — GH main carries only the flat git proxy; yield kinds exist as design only; OpenStory telemetry has no yield capture point. ASSUMPTION-314 (falsifier-b = interaction yield) is the proposed bridge.
+- **Lit-search pipeline:** backlog drained (39 cycle-0 + 149 re-trigger), DISPOSITION-181..219, PREMISE-055..060 validated, queue EMPTY; AWAITING-REVIEW backlog 57 — review capacity now the binding constraint (PRESUMPTION-337 itself dispositioned REVISE).
+- **Un-numbered carries:** commentary (TRV) explorer built out locally (Stump-PRS sweep 63 edits/53 files; 240 scan pages local-only, 82MB sidecar gitignored); Physics Explorer publish gate held (stale index.lock); education-tab handoff PARKED at 3136f41; Summa QC clean behind the parser-regression wall (→ OPEN-082); Ch. IX/X ingest blocked on rejected ANTHROPIC_API_KEY.
+- Sync channel: **morning scrape SUCCEEDED** (login restored; summarized the most recent thread since no 06-11 Chat conversation existed yet) and **evening delivery SUCCEEDED** — first same-day round-trip since the 8-day outage (bears on PRESUMPTION-338's watch).
+
+PROVENANCE:
+  Origin: 14a
+  Chain: [14a]
+  Item type: DECISION-STATUS (daily)
+  Transform at each step:
+    14a: Status updates registered from today's session transcripts (measurement rounds 1–2, sociogram ship, morning scrape) and the evening sync summary + pipeline footer in for_lit_search.md; no new numbered decisions found.
+  Current status: COMPLETE
+
+DECISION-057:
+  Date: 2026-06-15 (attended)
+  Title: Agent Metabolism measurement charter — files-added/day as headline yield + gap-honest rendering of capture cut-offs
+  Decision: For the Metabolism view, (1) adopt files-added/day as the headline yield series (replacing the token/commit proxies as the lead axis), and (2) render data cut-offs honestly in the view layer rather than as real zeros — a dashed "interactive capture ends" horizon for the Apr-6 interactive cliff, hollow rings for cadence-only / zero-token lanes, gap-honest day-bars for sparse yield, and a header staleness badge for the stale right edge. The generator gained a `--from-json` render path so the view can be rebuilt without the live DB. Shipped to a previewable build (`metabolism_view_REVIEW.html`) from existing `metabolism_data.json`; the two database-layer causes (interactive cliff, output-token flatline) were diagnosed but NOT fixed from this session (live `open-story.db` unreachable from this mount), and a `probe_openstory.py` was scripted for Tom to run on the Mac.
+  Status: ADOPTED (view layer, previewable build); database-layer root-cause + regen PENDING on the Mac; nothing pushed (localhost:8080 review + push stays with Tom per the constitutional rule).
+  Rationale: The metabolism metric must not let missing/changed telemetry read as real productive zeros (ASSUMPTION-320); files-added/day is the proxy Tom selected as the most legible headline (ASSUMPTION-318).
+  Related: ASSUMPTION-318, ASSUMPTION-320; PRESUMPTION-349, 351, 352; OPEN-083; DECISION-056 (metabolism ship); `architecture/29_agentic_metabolism.md`; `metabolism_view_REVIEW.html`, `CUTOFF_RECOVERY.md`, `probe_openstory.py`
+  NOTE (Rule-7 divergence flag): the 2026-06-15 evening cowork→chat summary characterized the day as having "No new decisions." 14a registers DECISION-057/058 anyway: both set load-bearing, durable instrumentation choices for a deployed self-measurement artifact (which yield series is authoritative; which source dates triplets) and meet the decision bar applied to DECISION-056. The summary's "no new decisions" is treated as a reporting-granularity difference, not authoritative; registries are the source of truth.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Registered from the WS1 transcript of the 2026-06-15 attended session — an attended, scoped, previewable-build measurement change. Push/DB-regen state quoted from the session's own statements; repo and live DB not introspectable from this mount.
+    Current status: ADOPTED (view layer); DB-layer PENDING
+
+DECISION-058:
+  Date: 2026-06-15 (attended)
+  Title: PRS-triplet yield source — git history of traditions/*/prs_triplets.md
+  Decision: The PRS-triplet yield dimension of the Metabolism view will be sourced from the git history of `wiki/traditions/*/prs_triplets.md`, minting a new `PRS-NN` id per commit-day as the "triplet-completed" event. Chosen over the alternative candidate source. The metric is NOT yet built — this decision settles the source ahead of the next build increment.
+  Status: ADOPTED (source settled); metric UNBUILT (the clean next increment).
+  Rationale: git history supplies a concrete, already-present completion-date signal for triplets (ASSUMPTION-319), extending the metabolism yield axis named as "next" in DECISION-056.
+  Related: ASSUMPTION-319; PRESUMPTION-350; OPEN-081 (authoritative PRS counts); DECISION-056, DECISION-057
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Registered from the WS2 source-selection step of the 2026-06-15 session (AskUserQuestion resolution). Build state quoted from the session ("not built yet").
+    Current status: ADOPTED (source); UNBUILT

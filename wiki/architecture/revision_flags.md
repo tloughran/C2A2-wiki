@@ -4654,3 +4654,201 @@ The standing AWAITING-REVIEW backlog (REVISE-047..064 = 18) + 7 new REVISEs this
 - Single coupled remedy: keep code-gating (the asymmetry floor stands), but convert the data path from UNREVIEWED to AUTO-CHECKED — verify generator determinism empirically, add automated data-quality/anomaly gates, bound auto-publish to small diffs, escalate anomalies (discharges REVISE-094 and resolves MONITOR-313 toward INCORPORATE).
 
 **Backlog note (fail-loud):** standing AWAITING-REVIEW backlog was 46 (REVISE-047..092); +2 this run (REVISE-093, REVISE-094) = **48 total AWAITING-REVIEW**. Lowest-cost, highest-leverage remediation this run: the capability-and-state-probe-first discipline — a single standing pre-step that discharges REVISE-093 and downgrades MONITOR-314 and MONITOR-315 (the entire environment-capability-mismatch cluster) at once. Note: REVISE-093 (env-capability) is independent of the still-open record-linkage measurement (REVISE-089/091); the two highest-leverage open actions remain the record-linkage experiment and the capability-probe discipline.
+
+
+## 2026-06-11 — REVISE intake (9 items, REVISE-095..103; from cycle-0 backlog drain 06-08/09/10). All AWAITING-REVIEW (Tom).
+
+### REVISE-095 — PRESUMPTION-322 (trace=substance root)
+**Statement:** [inferred] The event stream is a faithful proxy for what an agent IS and does (telemetry captures agent substance).
+**15a:** PARTIALLY-SUPPORTED (Moderate; traces measure what an entity DOES) | **15b:** CHALLENGED (Strong; Sen 1973 revealed-preference critique; streetlight effect — wisely-idle and dead agents emit the same stream)
+**What is at risk:** The Agent Explorer's foundational semantics; every downstream layer (eval/apply display, sociogram, metabolism) inherits the activity→substance conflation as ground truth. Root of the trace=substance SYSTEMIC-RISK (HIGH).
+**Recommended action:** Urgency MEDIUM-HIGH. Decide the explorer's claim explicitly: it represents agent ACTIVITY (defensible, PREMISE-055), not agent identity/substance. Rename/relabel accordingly; add an explicit "what this does not show" note to the explorer; keep substance claims out of derived metrics until a validation path exists.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-096 — PRESUMPTION-325 (roster mis-specification)
+**Statement:** [inferred] The agent population is a clean one-cron-task-per-agent roster (already contradicted by multi-fire agents + unmapped interactive sessions).
+**15a:** NO-SUPPORT-FOUND (None; entity resolution exists because populations violate this) | **15b:** CHALLENGED (Strong; Binette & Steorts 2022; falsified by own data)
+**What is at risk:** Every per-agent metric divides by a mis-specified denominator; contaminates ASSUMPTION-287/291/292 outputs (the whole explorer measurement layer).
+**Recommended action:** Urgency HIGH. Replace the 1:1 presumption with an explicit entity model (agent ↔ sessions mapping with multi-fire and interactive cases), or at minimum quantify the mismatch rate before further explorer metrics ship. Cheapest version: count known violations in the current 571-session DB.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-097 — ASSUMPTION-293 (MM-of-1 self-certification) [NOVELTY]
+**Statement:** An MM-of-1 can authoritatively certify the milestones of his own integrative tradition; at N=1, face validity must carry what inter-rater agreement otherwise would.
+**15a:** PARTIALLY-SUPPORTED (Weak) + NOVELTY-FLAG (N=1 self-certification uncovered in psychometrics) | **15b:** CHALLENGED (Strong; Standards — face validity cannot carry an instrument; self-certification maximizes self-confirmation)
+**What is at risk:** The evidential status of every dyad-ratified PRS milestone; downstream ISME claims that rest on "certified" milestones.
+**Recommended action:** Urgency MEDIUM-HIGH. Re-scope: certifications are PROVISIONAL/candidate-generating, not authoritative; adopt the dyad reliability protocol (date/version-stamped assents, anchor-item blind re-presentation, planted-error catch trials — one protocol advances MONITOR-323/324/329 and REVISE-100 simultaneously). NOVELTY: the N=1 integrative-tradition case is genuinely uncovered — worth writing up as methodology.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-098 — ASSUMPTION-298 (deliberate over-promising)
+**Statement:** Deliberate over-promising under accelerating capability ("over-promise with firm expectation of over-delivery") is a sound planning method.
+**15a:** PARTIALLY-SUPPORTED (Weak; stretch goals require slack + recent-success conditions) | **15b:** CHALLENGED (Strong; planning fallacy; escalation of commitment on public promises)
+**What is at risk:** The ISME schedule and any external commitments priced on expected over-delivery.
+**Recommended action:** Urgency MEDIUM. Replace "firm expectation" with reference-class forecast from the project's OWN actuals (including the 7-day outage); pre-commit a minimum-viable deliverable. Joint review with REVISE-101/102.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-099 — ASSUMPTION-299 (scrub discharges exposure concern)
+**Statement:** Removing all "bosco"/"email" strings from the current public HTML discharges the public-exposure concern (validated by string count + static checks).
+**15a:** PARTIALLY-SUPPORTED (Weak; valid for the working tree only) | **15b:** CHALLENGED (Strong; git history, archives/mirrors, encoding variants survive)
+**What is at risk:** A privacy/exposure concern recorded as CLOSED that is only partially closed; involves identifiable-person data (BOSCO Uganda context).
+**Recommended action:** Urgency MEDIUM. One-time surface audit: git log -S on the removed strings; check published copies (GitHub Pages history, Wayback CDX); grep encoding variants. Closing the audit also closes MONITOR-327. Until then, record the concern as MITIGATED-NOT-DISCHARGED.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-100 — PRESUMPTION-330 (dyad persistence) [NOVELTY]
+**Statement:** [inferred] "The recorded Tom⇄Claude dyad" is a persisting unit across sessions/contexts/model versions, despite the charter's own individuation principle implying otherwise.
+**15a:** PARTIALLY-SUPPORTED (Weak; persistence is certifiable via invariance checks, not default) + NOVELTY-FLAG | **15b:** CHALLENGED (Strong; LLM drift = different instruments without measured linkage; charter self-contradiction)
+**What is at risk:** All dyad ratifications form an unanchored mixture across instrument versions; the charter contradicts itself on individuation.
+**Recommended action:** Urgency MEDIUM-HIGH. Design decision needed (not monitorable): define dyad individuation criteria + an invariance protocol (version-stamped assents; anchor-item re-presentation across model versions; explicit re-certification on model change). Resolve the charter contradiction explicitly. NOVELTY: composite human-AI measurement unit is an original-methodology candidate.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-101 — PRESUMPTION-332 (capacity persistence through ISME)
+**Statement:** [inferred] Current build capacity (attended cadence + agentic throughput + infrastructure) persists through the ~4-week ISME schedule, despite same-day record of a 7-day sync outage and a growing single-human review gate.
+**15a:** NO-SUPPORT-FOUND (None) | **15b:** CHALLENGED (Strong; the contrary evidence is the project's own same-day record)
+**What is at risk:** The ISME plan's feasibility; cascades into REVISE-098's commitments.
+**Recommended action:** Urgency MEDIUM-HIGH. Price the outage base rate into the schedule (buffer from own actuals); define the minimum-viable ISME deliverable; acknowledge the single-gate throughput cap (REVISE-102) as the binding constraint, not agentic capacity.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-102 — PRESUMPTION-337 (single-gate scaling)
+**Statement:** [inferred] The single-human attended commit gate scales with parallel-session output (local-only queues can accumulate indefinitely without integration risk).
+**15a:** NO-SUPPORT-FOUND (None; CI literature contradicts both clauses) | **15b:** CHALLENGED (Strong; fixed-capacity gate + elastic arrivals = unbounded queue; review degrades to rubber-stamping under load)
+**What is at risk:** Review quality exactly when it matters; merge-conflict debt on shared hub files (queue files, generated HTML, indexes); ISME throughput (couples REVISE-101).
+**Recommended action:** Urgency MEDIUM-HIGH. Set a WIP limit on unintegrated parallel sessions; scheduled integration cadence; conflict pre-check on shared hub files; consider tiered review (auto-checks for low-risk classes) to keep the human gate for what needs judgment.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-103 — PRESUMPTION-339 (exhaust tracks the aim)
+**Statement:** [inferred] Measurable exhaust tracks the constitutional aim — interim commit-yield metabolism display presumes artifact throughput is the right thing to maximize, before PRS/peace dimensions exist in the metric.
+**15a:** PARTIALLY-SUPPORTED (Weak; interim proxies have precedent; gap nonzero by construction) | **15b:** CHALLENGED (Strong; surrogation — display salience alone causes metric-substitution; single-operator-as-optimizer is the highest-exposure configuration)
+**What is at risk:** The system's optimization direction: throughput-first instrumentation selects against low-exhaust peace/deliberation work — the constitutional aim — and entrenches before the mission dimensions arrive.
+**Recommended action:** Urgency MEDIUM-HIGH. Caveat-label the metabolism display; strip ranking salience; time-box the interim explicitly; add PRS/peace placeholder dimensions (visible "not yet measured" slots) so the proxy cannot silently become the aim. Floor (hedged yield axis) stands as MONITOR-335.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Total new REVISEs this run (2026-06-11):** 9 (REVISE-095..103). **AWAITING-REVIEW backlog: was 48 → now 57.** Fail-loud: this is the largest single-run REVISE intake to date; cause is the 3-day backlog drain (39 items) plus unusually measurement-heavy source sessions, not a 15c calibration change.
+
+**SYSTEMIC-RISK flags (2026-06-11, 7):**
+1. **trace=substance Agent-Explorer stack — HIGH.** ASSUMPTION-287 (PREMISE-055, scoped floor) + PRESUMPTION-322 (REVISE-095, root) + PRESUMPTION-323 (MONITOR-319) + PRESUMPTION-327 (MONITOR-322). Single inferential ladder: telemetry faithful → ratio directional → display neutral → narration replaceable; if 322 falls, the stack falls, and 327 closes the loop by letting the flawed representation steer agent evolution. Remedy: the explorer claims ACTIVITY, not substance (REVISE-095's relabel) + no rankings until validated.
+2. **Dyad-measurement-validity — HIGH.** ASSUMPTION-293 (REVISE-097) + 294 (PREMISE-058) + 295 (MONITOR-323) + 297 (MONITOR-324) + PRESUMPTION-330 (REVISE-100) + 333 (MONITOR-329). No reliability infrastructure of any kind around the single-rater + sycophancy-prone-agent apparatus. ONE shared remedy: the dyad reliability protocol (date/version-stamped assents + anchor-item blind re-presentation + planted-error catch trials) substantially advances all six.
+3. **Proxy-metric surrogation — HIGH.** ASSUMPTION-307 (MONITOR-335, floor) + PRESUMPTION-339 (REVISE-103, overclaim); ASSUMPTION-309 (MONITOR-336) adjacent. The metabolism instrument's only live axis is a gameable throughput proxy instrumented before the constitutional dimensions exist; PREMISE-060's scheduler would CONSUME this metric if wired up — do not compose until resolved.
+4. **Biased-denominator cascade — MEDIUM-HIGH.** ASSUMPTION-292 (PREMISE-057 boundary) + PRESUMPTION-325 (REVISE-096) + 326 (MONITOR-321), contaminating 291 (MONITOR-318). Three correlated undercounts of the same population (capture gap, window, 1:1 roster) skew the explorer's population baseline in the same direction.
+5. **Verification-by-inference — MEDIUM-HIGH.** ASSUMPTION-301 (MONITOR-330) + PRESUMPTION-334 (MONITOR-337) + 335 (MONITOR-338) + 324 (MONITOR-320). Correctness claims without behavioral observation compound: a structurally-argued change passes a syntax-only validator and a change-blind human gate. Remedy: render smoke-test + display invariants + "structural = interim" standing rule.
+6. **Optimism-under-single-gate — MEDIUM-HIGH (ISME-specific).** ASSUMPTION-298 (REVISE-098) + PRESUMPTION-332 (REVISE-101) + 337 (REVISE-102). Over-promise layered on presumed capacity persistence with a saturating single-human gate as binding constraint. Remedy: reference-class buffer + MVD + WIP limit (one joint review).
+7. **Remediation-completeness — MEDIUM.** ASSUMPTION-299 (REVISE-099) + PRESUMPTION-329 (MONITOR-327). Validation measured the action (tree scrub), not the concern (exposure surfaces). Remedy: the one-time surface audit.
+
+**Highest-leverage open actions after this run:** (a) dyad reliability protocol (discharges most of cluster 2); (b) render smoke-test + display invariants (cluster 5, two MONITORs); (c) ISME joint review of REVISE-098/101/102 (cluster 6); (d) explorer relabel to ACTIVITY semantics (cluster 1). Carried from prior runs: record-linkage experiment (REVISE-089/091), capability-probe discipline (REVISE-093).
+
+### REVISE-104 — ASSUMPTION-310 (narrative individuation exclusivity)
+**Statement:** Narrative-embedded perspective is the principle of individuation within CRm ("different narratives, different perspectives, are the principle of individuation: there is nothing else").
+**15a:** PARTIALLY-SUPPORTED (Moderate; Ricoeur/Schechtman/Dennett support narrative as AN individuating principle — none assert exclusivity) | **15b:** CHALLENGED (Strong; Strawson episodic self; cosmopsychist decombination problem; animalism/haecceity alternatives)
+**What is at risk:** M7 agent-identity claims; CRm's individuation story. The challenged element — the "nothing else" clause — is exactly the load-bearing part.
+**Recommended action:** Urgency MEDIUM. Two clean options, Tom's call: (1) weaken to "narrative-embedded perspective is the (or a) primary principle of individuation" — fully literature-supported; or (2) keep exclusivity and write the explicit defense against the episodic-self and decombination objections (would itself be a contribution; couples the planned individuation_vs_reunion.md, see REVISE-110).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-105 — ASSUMPTION-314 (falsifier = yield metric)
+**Statement:** Falsifier (b) as positive prediction and master-plan §6 interaction yield are the same measurement (agreed rungs = first countable PRS-milestone yield).
+**15a:** PARTIALLY-SUPPORTED (Moderate; convergent-validity structure sound; construct identity unverifiable externally) + NOVELTY flag | **15b:** CHALLENGED (Strong; jingle fallacy — Cronbach & Meehl; one observable as both falsifier and progress metric is a non-falsifiable inner loop, Lakatos-degenerative)
+**What is at risk:** Falsifiability of the dyad-ladder programme; M-milestone evidence integrity. Anchor of the self-referential-measurement Critical cluster (with MONITOR-341/342, REVISE-111).
+**Recommended action:** Urgency HIGH. Pre-register falsifier-(b) thresholds and operational definitions independently of §6 yield counting (timestamped, before ledger inspection). Treat construct identity as a hypothesis to demonstrate empirically (correlate the two counts across sessions), not an identity to assume. NOVELTY: if demonstrated rather than stipulated, this is a potential original contribution.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-106 — PRESUMPTION-340 (ledger as Level-3 without external rater)
+**Statement:** [inferred] A dyad's own agreement ledger is valid Level-3 evidence without an external rater.
+**15a:** PARTIALLY-SUPPORTED (Moderate; diary/EMA precedent for participant-generated records) | **15b:** CHALLENGED (Strong; Bazerman et al. auditor-independence impossibility; psychometric inter-rater requirements; self-serving coding bias is unconscious)
+**What is at risk:** Level-3 evidential status of the agreement ledger and everything the maturity model builds on it. Anchor of the dyad-measurement-validity cluster — ESCALATED HIGH -> CRITICAL this run (capture 341, coding 340, falsification 346 all lack independence; no stage of the evidence chain is independent of the dyad).
+**Recommended action:** Urgency HIGH. Records-vs-coding distinction: the ledger is valid DATA (diary precedent); the dyad's own quality-coding of it is not yet valid EVIDENCE. Define Level-3 to require periodic independent rating of a random rung sample (external human or structurally independent agent); implement the dyad reliability protocol (date/version-stamped assents + anchor re-presentation + catch trials) already recommended by the prior cluster.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-107 — PRESUMPTION-341 (neutral sole scribe)
+**Statement:** [inferred] The agent member as sole scribe does not shape the shared record.
+**15a:** PARTIALLY-SUPPORTED (Moderate; structured templates reduce recorder variation — weaker claim only) | **15b:** CHALLENGED (Strong; LLM summarization framing bias ~22% of instances, Yang et al. 2025; note-taker selective recording; cooperative training predisposes curation over transcription)
+**What is at risk:** Fidelity of the shared record the ledger is built from; disagreement systematically softened/omitted. Dyad-measurement Critical cluster (scribing facet).
+**Recommended action:** Urgency MEDIUM. Retain raw session transcripts as record of reference (curated notes as index, not substitute); periodic human spot-audit of curated-vs-verbatim divergence, specifically checking for softened disagreement; add a mandatory dissent field to record templates so absence of recorded dissent is conspicuous rather than default.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-108 — PRESUMPTION-343 (batch-size invariant quality)
+**Statement:** [inferred] Disposition quality is batch-size invariant (188-item drain ≈ daily cadence quality).
+**15a:** PARTIALLY-SUPPORTED (Weak; protocols are the main quality determinant at volume — but best practice distributes large batches) | **15b:** CHALLENGED (Strong; decision fatigue, vigilance decrement within 20-30 min, code-review batch-size effects)
+**What is at risk:** Disposition quality on large drains; late-batch high-stakes items rubber-stamped. SELF-APPLICABLE: the 2026-06-11 drain processed 188 items in one run — its late-position dispositions are flagged as positionally suspect by this evidence.
+**Recommended action:** Urgency MEDIUM. Cap autonomous-run batch size (~30 dispositions/run; drain backlogs across multiple runs); order processing by stakes so HIGH-priority items are not late; spot re-review of late-position dispositions from the 2026-06-11 drain. Pipeline-health cluster (with REVISE-109/110).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-109 — PRESUMPTION-344 (queue emptiness = health)
+**Statement:** [inferred] Queue emptiness is pipeline health (the indicator did not migrate with the constraint to the 57-item review stage).
+**15a:** PARTIALLY-SUPPORTED (Moderate; queue length is a legitimate flow indicator — TOC itself predicts the observed failure) | **15b:** CHALLENGED (Strong; Goldratt — measuring a non-constraint stage produces local optima masking global state; this is a direct instance)
+**What is at risk:** Capacity/prioritisation decisions on a false health signal; invisible accumulation at the human-review constraint (AWAITING-REVIEW now 65).
+**Recommended action:** Urgency MEDIUM. Both search directions converge on the same fix: every run summary reports end-to-end flow — per-stage WIP (QUEUED / SEARCHED / DISPOSITIONED / AWAITING-REVIEW), oldest-item age, net flow at the constraint — not just disposition-queue emptiness. (This run's PROCESSED block starts the practice.) Pipeline-health cluster.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-110 — PRESUMPTION-345 (plan-inventory durability)
+**Statement:** [inferred] Proposed artifacts get created or their absence gets noticed (individuation_vs_reunion.md gap went 18 days unnoticed).
+**15a:** PARTIALLY-SUPPORTED (Moderate; Gollwitzer implementation intentions specify the conditions under which plan durability IS achievable) + NOVELTY flag (vault-as-tracker hybrid unstudied) | **15b:** CHALLENGED (Strong; already falsified by its own citing instance; prospective-memory mechanism — deferred intentions without external cues fail across session boundaries)
+**What is at risk:** Vault coverage silently diverging from vault intention; planning activity miscounted as production. Pipeline-health cluster.
+**Recommended action:** Urgency MEDIUM. Weekly plan-artifact reconciliation sweep: extract proposed-artifact mentions from session notes/plans, diff against vault contents, surface orphans with age. Give every proposed artifact implementation-intention structure at proposal time (owner, trigger cue, due date). And create individuation_vs_reunion.md or explicitly cancel it (couples REVISE-104 option 2).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-111 — PRESUMPTION-346 (reflexive falsification non-circular)
+**Statement:** [inferred] Reflexive falsification is non-circular (the dyad applying its own falsifier to its own ledger constitutes a genuine test).
+**15a:** PARTIALLY-SUPPORTED (Moderate; Chang — self-testing is non-vicious IF the falsifier is specified independently of tested outcomes) | **15b:** CHALLENGED (Strong; Simmons et al. researcher degrees of freedom; auditor self-review impairment; falsification requires independent disconfirmatory capacity)
+**What is at risk:** Epistemic value of the reflexive falsification programme — its tests may be passable by construction. Falsification facet of the dyad-measurement Critical cluster; couples REVISE-105.
+**Recommended action:** Urgency HIGH. Pre-register falsifier definitions, thresholds, and analysis procedure (timestamped commit BEFORE ledger inspection); verification of falsifier application by a party outside the dyad (15-series agent or human third party); log analytic choices to constrain degrees of freedom. Note: 15a and 15b converge — Chang's independence condition is exactly what 15b finds absent; the remedy (pre-registration) is common ground.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Total new REVISEs this run (2026-06-12):** 8 (REVISE-104..111). **AWAITING-REVIEW backlog: was 57 → now 65.** Fail-loud: second-largest single-run REVISE intake (after 06-11's 9), at normal cohort size (14 items) — the driver is cohort content, not volume: 14b's 06-11 EOD pass surfaced the measurement/validity substrate of the dyad-ladder programme, and the literature robustly challenges self-measurement without independence. Two Critical systemic clusters this run: (1) dyad-measurement circularity ESCALATED HIGH->CRITICAL (340/341/346 + prior 293/294/295/297/330/333) — capture, coding, and falsification all lack structural independence; single highest-leverage remedy remains the dyad reliability protocol + pre-registration + periodic independent rating; (2) self-referential measurement (311/312/314/315, with 314/346 flagged REVISE) — pre-registration of falsifiers is the shared first step for both clusters.
+
+## REVISE intake — run 2026-06-16 (15c; autonomous)
+
+### REVISE-112 — ASSUMPTION-317 (marking resets staleness clock; leave transcript-pass unmarked)
+**Statement:** Marking a QC item resets its staleness clock, so a transcript-only pass is left unmarked to avoid masking the synthesis half's later Layer-4 review.
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate; TTL semantics + POC accounting support the concern) + NOVELTY (specific sub-component-staleness pattern unstudied) | **15b:** PARTIALLY-CHALLENGED (Moderate; "leave unmarked" trades a visible failure for an invisible one — unrecorded work; the binary mark/no-mark scheme is the defect)
+**What is at risk:** Coverage accounting silently undercounts completed-but-unmarked work; a transcript pass can be lost if the synthesis review is delayed/dropped (the project's recurring absence-as-evidence hazard).
+**Recommended action:** Urgency LOW. Scope the freshness clock per sub-component (separate transcript-pass and synthesis-review timestamps) so marking one does not reset the other; until then keep a "done-but-unmarked" ledger so the work is not invisible. Resolves OPEN-082.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-113 — PRESUMPTION-347 (pinned model ID stays valid indefinitely)
+**Statement:** [inferred] A model identifier pinned in a scheduled-task config stays valid indefinitely (06-14 morning scrape died on unavailable "claude-fable-5").
+**15a:** PARTIALLY-SUPPORTED (Weak; pinning is sound practice, but supports "pin + fallback," not "pin is permanent") | **15b:** CHALLENGED (Strong; hosted aliases deprecate on vendor time; pins to vendor namespaces rot; already falsified by the trigger)
+**What is at risk:** Every task pinned to a single hosted model is a deprecation time-bomb; failure is total and (with 348) invisible for days; likely shared across multiple tasks.
+**Recommended action:** Urgency MEDIUM-HIGH. Add a preflight model-availability check; add an ordered fallback-model chain (preferred -> alternates -> minimal); centralize the model ID in one config consumed by all tasks; log substitutions (fail-loud). Implement jointly with REVISE-114 under SYSTEMIC-RISK cluster (1).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-114 — PRESUMPTION-348 (a failing scheduled task announces its own failure)
+**Statement:** [inferred] A failing scheduled task announces its own failure (no liveness monitor; channel degraded ~3 days, 06-13 summaries simply missing).
+**15a:** NO-SUPPORT-FOUND (None; cron/observability literature describes the opposite) | **15b:** CHALLENGED (Strong; cron monitoring is built on "guilty until proven innocent"; failures are silent; falsified by the 3-day outage)
+**What is at risk:** Any scheduled-task failure is invisible until a human notices missing output (here ~3 days; unbounded in principle); downstream pipelines silently run on absent inputs.
+**Recommended action:** Urgency MEDIUM. Add a dead-man's-switch (task pings an external monitor on clean exit; alert on absence within the expected window) + output assertions (alert if produced < N expected artifacts); distinguish "ran" from "succeeded" in a status log. Implement with REVISE-113 under SYSTEMIC-RISK cluster (1).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-115 — PRESUMPTION-349 (one added file = one unit of yield)
+**Statement:** [inferred] One added file = one unit of yield (file-count commensurability beneath the files-added metric).
+**15a:** NO-SUPPORT-FOUND (None; equal-weighting is a tractability default, not validated commensurability) | **15b:** CHALLENGED (Strong; files are heterogeneous in size/effort/value; equal-weighting is the canonical LOC-style gaming mechanism)
+**What is at risk:** All downstream uses inherit false commensurability; foregrounding (ASSUMPTION-318) or optimizing rewards artifact-splitting and thin files.
+**Recommended action:** Urgency MEDIUM-HIGH. Replace/augment raw count with a distribution-aware view (median/quartile file size; net content after deletions; optional word-count weighting); always show the size distribution alongside the count; never use the raw count as a target or optimizer input; label "artifacts emitted," not "yield." NOTE (Rule-7 surface-don't-average): the SERIES choice (318) is held at MONITOR-345 while this hidden UNIT assumption is REVISEd — keep the headline IF the commensurability beneath it is corrected. Member of Metabolism-proxy SYSTEMIC-RISK cluster (2); couples MONITOR-335/REVISE-103.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-116 — PRESUMPTION-351 (a visible gap-marker is an understood gap)
+**Statement:** [inferred] A visible gap-marker is an understood gap (visibility = comprehension).
+**15a:** PARTIALLY-SUPPORTED (Weak; understood only when the marker uses a learned convention) | **15b:** CHALLENGED (Moderate-Strong; comprehension tracks learned encodings, not visibility; a custom gap convention has none; trace-vs-substance error)
+**What is at risk:** Honest gaps (correctly preferred per PREMISE-063) are misread — a capture-artifact gap read as "did nothing," real inactivity read as a glitch — so integrity gained at display is lost at comprehension; especially acute given 352's open artifact-vs-real ambiguity.
+**Recommended action:** Urgency LOW. Annotate gaps with their reason (inline label/tooltip: "instrumentation gap" vs "no activity"); add a legend defining the gap convention; encode artifact-vs-real gaps differently (couples PRESUMPTION-352 / MONITOR-349); comprehension-test the convention (even on the sole expert viewer after a delay). This is the necessary companion to PREMISE-063.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Total new REVISEs this run (2026-06-16):** 5 (REVISE-112..116). **AWAITING-REVIEW backlog: was 65 -> now 70.** Two SYSTEMIC-RISK clusters drive the operational subset: cluster (1) "absence != success/event" (113/114 + 112's invisibility facet) — single coupled remedy: preflight checks + heartbeat/dead-man's-switch + fail-loud logging on every scheduled task; cluster (2) Metabolism-view proxy stack (115 + MONITOR-345/346/348/350) — treat all Metabolism metrics as descriptive-only/provisional until each proxy is validated against an independent signal. Highest-leverage single fixes: (a) one heartbeat+preflight wrapper closes 113/114; (b) the post-Apr-6 probe (MONITOR-349) and one git-history audit unblock most of cluster (2).

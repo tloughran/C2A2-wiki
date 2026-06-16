@@ -6562,3 +6562,536 @@ PRESUMPTION-327:
     Transform at each step:
       14b: Surfaced from the ranking/sorting affordance and the unexamined "legibility = good" framing of the whole integration. Lower-confidence (more interpretive) than 322/324/326 but a clean normative-smuggling case. Low-Medium. Routed LOW-MED.
     Current status: UNTESTED
+
+## 2026-06-09 batch (Agent 14b — heavily attended day: dyad-MMA charter, ISME plan, sociogram verify + de-BOSCO)
+
+PRESUMPTION-328:
+  Date surfaced: 2026-06-09
+  Statement: [inferred] The browser verify presumed that the localhost-served copy is render-equivalent to the file:// production artifact. The verification ran against `http://localhost:8080/explorer.html` (because the tooling could not reach `file://`), and its green result ("2400 nodes, 62,153 links, 26 agent actors; `#agents` preset applied correctly") was reported as verification of the artifact as such — yet the deployed usage is the file:// URL, whose protocol differences (fetch restrictions are the very reason the house inject-don't-fetch rule exists) were not re-checked in this mode.
+  Evidence it was operative: The session pivoted to the served copy as a workaround and thereafter treated its probe results as the "real browser verify" the 06-08 deferral (PRESUMPTION-324) called for.
+  Why it was unstated: workaround momentum — the access problem was solved, so the equivalence question never surfaced.
+  Type: methodological
+  Related decisions: DECISION-053
+  Testability: testable empirically (open the file:// copy attended and compare)
+  Risk if wrong: Low-Medium — a protocol-dependent failure (e.g., a stray fetch path) could pass on http and fail on file://.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-328
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from the verify session's silent substitution of http://localhost for file://. Partially discharges the PRESUMPTION-324 static-validation gap while substituting a new equivalence premise. Routed LOW-MED.
+    Current status: UNTESTED
+
+PRESUMPTION-329:
+  Date surfaced: 2026-06-09
+  Statement: [inferred] The de-BOSCO scrub presumed that the exposure lives in the current working tree — that achieving "zero bosco / zero email" in today's `agents_tab.html` discharges the public-exposure concern. Unexamined: the same narration prose presumably persists in git history, in any previously pushed/published copies (GitHub Pages, the feature branch), and in caches/archives; and the *capability* the prose described (the email-enrichment agent itself) continues to run unchanged — only its public description was removed.
+  Evidence it was operative: The session's completion claim ("The bosco scrub is complete and clean") was scoped entirely to current-file string counts; neither history nor already-published copies were checked or mentioned, though the session itself judged the prose "exactly what shouldn't be on a public site."
+  Why it was unstated: obvious-to-participants framing of the task as a file edit; the history question was parked long ago (DECISION-047) and did not re-arm.
+  Type: structural / epistemic
+  Related decisions: DECISION-047 (park git-history scrub), DECISION-053
+  Testability: testable empirically (grep history and published artifacts)
+  Risk if wrong: Medium — a "clean" declaration over a public repo whose history and published copies still carry the sensitive narration is a false-assurance pattern.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-329
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from the gap between the stated completion criterion (ASSUMPTION-299) and the artifact's distribution surface. Routed MED.
+    Current status: UNTESTED
+
+PRESUMPTION-330:
+  Date surfaced: 2026-06-09
+  Statement: [inferred] Charter v1 presumes "the recorded Tom⇄Claude dyad" is a persisting measurement unit — yet its own individuation principle (context as materia signata; record constitution + seed + memory + model as the "who") entails that each new session, context change, or model update yields a numerically distinct agent-individual. Cross-session "dyad agreement" may therefore aggregate ratifications across a *series* of distinct dyads, with no stated identity criterion for when the agent member counts as "the same" — and no account of what that does to the formational-independence weighting (ASSUMPTION-294).
+  Evidence it was operative: The Charter names the dyad as the unit and schedules tomorrow's triplet pass as a continuation by "the dyad," while the individuation agreement was applied to distinguish agent-instances from each other, never reflexively to the dyad's own continuity.
+  Why it was unstated: too foundational to notice — the dyad was the solution category, so its persistence conditions were not interrogated.
+  Type: epistemic / structural
+  Related decisions: DECISION-054
+  Testability: testable via literature (panel identity in longitudinal measurement; rater drift/replacement; instrument identity across versions) / empirically (compare ratifications across sessions/model versions)
+  Risk if wrong: Medium-High — if each session is a new dyad, accumulated "dyad-MMA" agreement is a pooled cross-rater statistic being reported as a single-unit one, inflating its apparent coherence.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-330
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced by applying the Charter's own individuation principle reflexively to its unit definition. High-confidence inference. Routed MED-HIGH. → OPEN-079.
+    Current status: UNTESTED
+
+PRESUMPTION-331:
+  Date surfaced: 2026-06-09
+  Statement: [inferred] The ISME talk plan presumes evidential-standard transfer: that a philosophy audience will accept a running software system as *evidence* in a philosophical argument — the "commissioning report" / "existence claim" framing imports experimental physics' evidentiary genre (diagnosis → blueprint → commissioning) into a forum whose norms of what counts as showing something are different and were never examined. "Philosophers almost never get to give act three" was treated as rhetorical advantage, not as a sign the genre may not be recognized.
+  Evidence it was operative: The whole talk spine (existence claim first, demo as "the instrument the argument requires," honest scorecard as credibility) is built on the demo carrying probative — not merely illustrative — weight for the dCEC argument.
+  Why it was unstated: culturally embedded — the physicist's commissioning genre is native to the project's designer and was carried over as obvious.
+  Type: normative / epistemic
+  Related decisions: (ISME talk plan; un-numbered)
+  Testability: testable via literature (role of demonstrations/instruments as evidence in philosophy; experimental philosophy reception; rhetoric of demonstration in science studies)
+  Risk if wrong: Medium — the talk could land as tech show-and-tell precisely with the audience whose recruitment (Pilot Tradition #1) is the ask.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-331
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from the talk plan's physics-genre framing vs its philosophy-forum target. Routed MED.
+    Current status: UNTESTED
+
+PRESUMPTION-332:
+  Date surfaced: 2026-06-09
+  Statement: [inferred] The week-by-week ISME schedule to July 8 (slides, landing page, build report, four papers, recorded walkthrough — much of it proceeding agentically) presumes that current build capacity persists for the next ~4 weeks: stable attended/agentic cadence, working infrastructure, no compounding outages. The same day's record contradicts the premise's margin: the claude.ai sync has been down 7 consecutive days, the commit/push queue is attended-only and growing, and 3 proposals + REVISE-091..094 already wait on the single human gate.
+  Evidence it was operative: The portfolio's promise structure (over-deliver on "a paper") only closes if the schedule holds; no slack, fallback tiers, or "minimum credible deliverable" were defined.
+  Why it was unstated: oversight under enthusiasm — the over-promise doctrine (ASSUMPTION-298) explicitly licenses promising beyond visible means, which suppresses scheduling caution.
+  Type: scaling / methodological
+  Related decisions: (ISME portfolio plan; un-numbered)
+  Testability: testable via literature (planning fallacy under dependency on single gatekeepers; schedule-risk buffering) / empirically (track the schedule weekly)
+  Risk if wrong: Medium — July 8 is a hard external deadline; a thin landing hub behind a QR code is worse than a confident single paper.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-332
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from the schedule's missing failure-mode analysis against the same-day outage record. Routed MED.
+    Current status: UNTESTED
+
+PRESUMPTION-333:
+  Date surfaced: 2026-06-09
+  Statement: [inferred] The MM-of-1 design presumes the single rater is stable over time — that Tom-now and Tom-next-month would assent to the same milestone triplets, so that the inventory captures "the tradition" rather than a dated snapshot of one mind. Charter v1's "version N+1, ever revisable" handles *forward revision* but provides no *drift detection*: no test-retest of previously ratified items is scheduled, so genuine change in the tradition and noise in the rater are indistinguishable.
+  Evidence it was operative: Coverage criterion adopted in-session is "Tom's assent that these triplets are the milestones" — a present-tense act treated as a durable fact; the revisability clause concerns improving the charter, not re-validating prior assents.
+  Why it was unstated: too foundational to notice — the authority move (ASSUMPTION-293) makes the rater the standard, and a standard is not usually asked whether it wobbles.
+  Type: epistemic / methodological
+  Related decisions: DECISION-054
+  Testability: testable via literature (intra-rater/test-retest reliability of expert judgment; temporal stability of expert standards) / empirically (re-present ratified triplets after an interval, blind)
+  Risk if wrong: Medium — instruments calibrated against a drifting single rater inherit the drift invisibly; downstream second-language-competence scores would be measured against a moving target.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-333
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from the gap between the assent-based coverage criterion and the absence of any re-test protocol. Routed MED.
+    Current status: UNTESTED
+
+PRESUMPTION-334:
+  Date surfaced: 2026-06-10
+  Statement: [inferred] When direct observation is blocked by cost or instability, structural code-path identity is an acceptable substitute for behavioral verification — "shares the proven code path" may stand in for "was seen to work."
+  Evidence it was operative: The substrate-on-reveal check stalled the renderer twice (45s CDP timeouts); the session then declared the behavior "in any case" covered because substrate uses "the identical both-endpoints-visible admission path already proven" for projected/flow, and moved on to lighter checks. The verification standard was silently downgraded from observation to structural argument, and the day's "all four checks pass" summary did not re-flag the substitution (the final wrap-up did caveat it).
+  Why it was unstated: obvious-to-participants engineering economy — code-path reasoning is so routine that its evidential downgrade goes unnoticed.
+  Type: epistemic / methodological
+  Related decisions: DECISION-053, DECISION-055
+  Related assumptions: ASSUMPTION-301 (the stated half of this pair)
+  Testability: testable via literature (when does code-reuse equivalence fail — context-dependent bugs, load-dependent paths; verification-transfer validity) and empirically (observe substrate reveal post-refactor)
+  Risk if wrong: Medium — the one layer never directly observed is the one that carries H-Admin's 601-edge centrality (OPEN-080); a reveal-path bug there would invisibly falsify the explorer's richest view. Third member of the verification-transfer family (PRESUMPTION-324 → 328 → 334): each cycle replaces a deferred observation with a new equivalence premise.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-334
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the substituted verification step in the sociogram session; high-confidence (the substitution is explicit in the transcript, its epistemic status is not).
+    Current status: UNTESTED
+
+PRESUMPTION-335:
+  Date surfaced: 2026-06-10
+  Statement: [inferred] The house validator's check suite defines artifact correctness; display-level invariants (e.g., the two edge counters must agree) are outside its scope, leaving the attending human as the de facto anomaly detector for what the user actually sees.
+  Evidence it was operative: The regenerated artifact "passes all checks" of the house validator, yet shipped with two contradictory edge readouts ("30000 edges in view" vs "2500 shown") plus a not-true "pass" count — found only because Tom eyeballed the counter and asked. Nobody proposed adding a counter-consistency invariant to the validator; the fix was scoped to the labels and the cap.
+  Why it was unstated: tool scope inherited from when the validator was built (JS syntax, brace balance, data integrity) and never re-examined as the artifact's UI surface grew.
+  Type: methodological
+  Related decisions: DECISION-055
+  Related assumptions: ASSUMPTION-302
+  Testability: testable empirically (enumerate user-visible invariants; check which are machine-checked) and via literature (UI invariant/property-based testing; metamorphic testing for visualizations)
+  Risk if wrong: Medium — as the artifact's surface grows, human-spot-check coverage shrinks; the next contradictory readout may not be caught before a public demo (the artifact is now live on GitHub Pages).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-335
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the gap between "validator passes all checks" and the user-caught display contradiction; high-confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-336:
+  Date surfaced: 2026-06-10
+  Statement: [inferred] Captured file-write telemetry is representative of agent activity — the sociogram renders "what agents' writes were captured touching" as "what agents do," and cluster emptiness is read as a data fact rather than a possible capture artifact.
+  Evidence it was operative: Tom's Q1 ("why does revealing Summa add nothing?") was answered entirely inside the captured data — "summa: 0... No agent's file touches resolved to any summa/ node in the captured telemetry" — while Summa agents demonstrably act daily (six reviewer services on 06-09 alone, flow edges like H-Admin → summa-qc-sweep weight 42). The explanation ("their writes landed in architecture/, vault/") may be true, but the alternative — capture bias — went unexamined in-session even though the adjacent measurement thread carries a parked "OS capture bias flag (4 of 7 thinker pairs at zero)."
+  Why it was unstated: too foundational to notice — once telemetry is "observed data," its completeness becomes the unexamined frame.
+  Type: epistemic
+  Related decisions: DECISION-053, DECISION-056
+  Related presumptions: PRESUMPTION-326 (recency bias; this generalizes it from frequency to coverage)
+  Testability: testable empirically (cross-check sociogram substrate edges against ground-truth session logs for a sample of agents; quantify capture completeness per directory) and via literature (log-based measurement validity; instrumentation coverage bias)
+  Risk if wrong: Medium-High — the sociogram, metabolism view, and the planned yield metrics all sit on the same capture layer; systematic under-capture of some agent families would distort every downstream "observed self-representation," and the system is now publicly presenting these views as its self-portrait.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-336
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the in-data answer to Q1 plus the parked capture-bias flag in the adjacent session; high-confidence that the premise was operative, the bias itself unmeasured.
+    Current status: UNTESTED
+
+PRESUMPTION-337:
+  Date surfaced: 2026-06-10
+  Statement: [inferred] The single-human attended commit gate scales with parallel-session output — work can keep accumulating in local-only queues across concurrent sessions and Tom's attended push capacity will absorb it.
+  Evidence it was operative: Three commit queues accumulated today alone (sociogram generator + artifact + agents_tab; the explorer two-file education-tab commit, parked at the wrap question; the metabolism 7-file push — the only one that landed). The metabolism session additionally surfaced ~45 modified files and several untracked folders from other agents on the Mac working tree, calling it "a minefield for the next push" — yet no session questioned the one-gate architecture itself; each just queued politely.
+  Why it was unstated: culturally embedded — the attended-only push rule is a deliberate safety policy (Rule: caution over speed), so its throughput consequence reads as cost-of-doing-business rather than a scaling presumption.
+  Type: scaling
+  Related decisions: DECISION-055 (queued), DECISION-056 (pushed)
+  Related presumptions: PRESUMPTION-332 (capacity persistence; this is its commit-channel instance)
+  Testability: testable empirically (queue-age and queue-depth over time; staleness collisions between queued changesets) and via literature (WIP limits and single-approver bottlenecks; batch-size risk in delayed integration)
+  Risk if wrong: Medium — diverging local queues over a shared artifact (wiki_narration.html is touched by two of today's three queues) invite merge collisions and stale-ship errors as parallelism grows.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-337
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the day's three-queue pattern plus the messy-tree finding; high-confidence on the pattern, the breaking point speculative.
+    Current status: UNTESTED
+
+PRESUMPTION-338:
+  Date surfaced: 2026-06-10
+  Statement: [inferred] The Chat⇄Cowork sync loop's restoration is durable — one successful evening delivery after eight days of failure re-establishes the loop as operational, although neither the cause of the lapse nor the cause of the recovery is known.
+  Evidence it was operative: The morning scrape failed at /login (8th day); the evening session "probed anyway and found the session restored," delivered, verified by screenshot, and closed with "delivery succeeded for the first time in 8 days" — success treated as state restored, with no root-cause item opened for why the sign-in lapsed or returned. Tomorrow's pipeline plans implicitly resume dependence on the channel.
+  Why it was unstated: oversight under relief — an eight-day pain ending reads as resolution, not as an unexplained state transition in an external dependency.
+  Type: epistemic / methodological
+  Related presumptions: PRESUMPTION-332 (capacity persistence)
+  Testability: testable empirically (does the session survive N days? is there a renewal/expiry pattern in the logs?) and via literature (reliability engineering on unexplained recovery; "it fixed itself" as deferred failure)
+  Risk if wrong: Medium — the channel is the project's only automated human-loop bridge; an unmodeled expiry cycle means the next 8-day silent gap arrives on the ISME-critical path (PRESUMPTION-332's four-week window).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-338
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the evening session's success framing absent any root-cause action; high-confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-339:
+  Date surfaced: 2026-06-10
+  Statement: [inferred] Measurable exhaust tracks the constitutional aim — operationalizing "yield" as git-committed artifact production (with tokens as cost) presumes that what the metabolism should maximize is artifact throughput, before the PRS/peace dimensions exist in the metric.
+  Evidence it was operative: The shipped metabolism view's yield axis reads "straight from your vault's git history"; PRS-triplet completion is deferred as "the next yield dimension"; the progress/peace KPI distinction (ASSUMPTION-309) is framed but unbuilt. Meanwhile the view is live and public — so for now the system's self-displayed "metabolism" rewards commit-shaped work, a value judgment embedded in an instrument choice ("this metric should go up" was never argued, only rendered).
+  Why it was unstated: normative smuggling — proxy-first instrumentation is standard practice, and the deferral of the real dimensions was framed as sequencing rather than as a value choice with interim effects.
+  Type: normative / epistemic
+  Related decisions: DECISION-056
+  Related assumptions: ASSUMPTION-307, ASSUMPTION-309 (the stated KPI distinction this interim proxy bypasses)
+  Testability: testable via literature (Goodhart/Campbell on proxy metrics; surrogation — managers optimizing the measure) and empirically (does agent/attended behavior shift toward commit-yielding work after the view ships?)
+  Risk if wrong: Medium — a public, live productivity display is precisely the kind of instrument that bends behavior toward its proxy; if commit-yield diverges from triplet/peace yield, the metabolism view optimizes the system away from its constitution while appearing to measure health.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-339
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the gap between the shipped yield proxy and the framed-but-unbuilt KPI distinction; high-confidence on the premise, behavioral effect speculative.
+    Current status: UNTESTED
+
+PRESUMPTION-340:
+  Date surfaced: 2026-06-11
+  Statement: [inferred] A dyad's own agreement ledger is valid Level-3 evidence without any external rater — the two parties whose agreement is the measurand are also the only judges of whether agreement occurred.
+  Evidence it was operative: Round 1's close was announced as "the system's first completed Level-3 MMA capture" on the strength of 6/6 agreed verdicts adjudicated entirely within the dyad; no inter-rater check, external audit step, or reliability protocol was invoked or proposed before treating the capture as data. The conversation asked whether the dyad agreed, never who verifies that "agreed" was correctly applied.
+  Why it was unstated: too foundational to notice — the charter defines the dyad as the instrument, so the instrument validating its own readings doesn't present as a step that could be otherwise.
+  Type: epistemic
+  Related decisions: DECISION-054
+  Related items: PRESUMPTION-293/294/295/297/330/333 (the dyad-measurement-validity HIGH cluster flagged by 15c the same day); ASSUMPTION-315 (dual-reasons rule — a partial mitigation, adopted for a different stated concern)
+  Testability: testable via literature (inter-rater reliability requirements for agreement coding; self-report validity in joint-judgment tasks; participant-as-rater designs)
+  Risk if wrong: High — every downstream count built on "agreed rungs" (incl. ASSUMPTION-314's interaction yield) inherits an unvalidated base measure; the dyad reliability protocol 15c proposed as the cluster's shared remedy is the live fix path.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-340
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the absence of any external-validation step around the round-1 close; high-confidence — the gap is structural, not momentary.
+    Current status: UNTESTED
+
+PRESUMPTION-341:
+  Date surfaced: 2026-06-11
+  Statement: [inferred] The agent member can serve as the ledger's sole scribe without shaping the record — transcription, retitling, and framing by an interested party to the agreement are presumed neutral.
+  Evidence it was operative: The agent recorded Tom's comments "verbatim," retitled M6 to "candidate home," chose what counted as "the round's richest Level-3 data," and rewrote the handoff "clean" — all editorial acts by one dyad member over the shared record, with no countersign step beyond Tom's general assent to the round close.
+  Why it was unstated: obvious to participants — the agent is the only practical scribe, and verbatim capture feels like absence of interpretation.
+  Type: methodological
+  Related decisions: DECISION-054
+  Related items: PRESUMPTION-340; ASSUMPTION-315
+  Testability: testable via literature (scribe/recorder effects in meeting records; framing effects of note-taker role; audit designs for self-recorded protocols)
+  Risk if wrong: Medium — distortion would be slow and directional (toward the scribe's reading), invisible to within-ledger checks.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-341
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the scribe-role concentration in both measurement sessions; high-confidence on the role fact, effect size speculative.
+    Current status: UNTESTED
+
+PRESUMPTION-342:
+  Date surfaced: 2026-06-11
+  Statement: [inferred] The vault's searchable text is the toolbox — retrieval over written files recovers the relevant prior thought, and what was never written down is treated as not existing for round-2 purposes.
+  Evidence it was operative: Tom: "Without being able to find it right away, I can only assert that we have more in the toolbox than just a nod to Kastrup." The round-2 retrieval ran greps over the vault and concluded "the toolbox you couldn't locate turned out to be mostly your own prior work" — three written artifacts. The possibility that the missing material lives in Tom's unwritten thought, podcasts heard, or conversations outside the vault was not raised; retrieval success closed the search.
+  Why it was unstated: methodological habit — in a wiki-centered project, "check the vault" is the search procedure, so its completeness is never a question.
+  Type: epistemic / structural
+  Related decisions: DECISION-054
+  Related items: PRESUMPTION-336 (telemetry representativeness — same streetlight family, different corpus)
+  Testability: testable empirically (elicitation session with Tom vs vault-retrieval yield on the same question) and via literature (externalized-memory completeness; streetlight effect in knowledge-base retrieval)
+  Risk if wrong: Medium — M7's strongest formulations may exist only in Tom's head; the rung gets built from the written subset.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-342
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the gap between Tom's "more in the toolbox" assertion and the retrieval's vault-only search surface; high-confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-343:
+  Date surfaced: 2026-06-11
+  Statement: [inferred] Disposition quality is batch-size invariant — draining 188 items (39 cycle-0 searched FOR+AGAINST plus 149 re-triggers) in one autonomous run yields the same per-item quality as the designed daily cadence of ~10-15.
+  Evidence it was operative: The pipeline ran the three-day backlog as a single run and the run's own fail-loud note attributed its record REVISE intake (9) to "backlog volume + measurement-heavy source sessions, not 15c recalibration" — an attribution asserted, not tested; no per-item quality check, sampling audit, or cadence comparison accompanied the drain.
+  Why it was unstated: oversight under throughput pressure — the queue was the visible problem, and emptying it the visible success.
+  Type: methodological / scaling
+  Related items: DISPOSITION-181..219; PRESUMPTION-344
+  Testability: testable empirically (re-run a sample of drained items at normal cadence; compare dispositions) and via literature (batch-size effects on review quality; reviewer fatigue/vigilance decrement in high-volume screening)
+  Risk if wrong: Medium-High — 38 dispositions and 6 validated premises entered the registry through the untested batch path; errors propagate as PREMISE status.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-343
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the drain run's self-report (volume attribution without verification); high-confidence on the premise, error rate speculative.
+    Current status: UNTESTED
+
+PRESUMPTION-344:
+  Date surfaced: 2026-06-11
+  Statement: [inferred] Queue emptiness is pipeline health — the lit-search pipeline measures its own state at the search queue ("queue now empty: 0 items QUEUED-without-disposition") while the system's end-to-end epistemic throughput is actually gated at the human-review stage, where 57 items now wait.
+  Evidence it was operative: The drain run closed on "queue empty" as the completion fact; AWAITING-REVIEW at 57 was reported as a flag but the pipeline resumed normal cadence as if healthy. The constraint has migrated from search to review, but the health indicator did not migrate with it.
+  Why it was unstated: structural — each agent reports its own queue; no agent owns the end-to-end flow metric.
+  Type: structural / normative
+  Related items: PRESUMPTION-337 (single-gate scaling, REVISE'd today — the commit-gate twin of this review-gate premise); PRESUMPTION-343
+  Testability: testable via literature (local vs end-to-end optimization in flow systems; theory-of-constraints measurement placement) and empirically (track item age from QUEUED to human disposition)
+  Risk if wrong: Medium — validated-premise production stalls invisibly while the dashboardable number reads healthy.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-344
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the mismatch between the drain run's completion criterion and the system's actual binding constraint; high-confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-345:
+  Date surfaced: 2026-06-11
+  Statement: [inferred] Proposed artifacts get created, or their absence gets noticed — the system's plan inventory (synthesis notes proposed in syncs and sessions) is presumed to convert to artifacts or surface as known gaps.
+  Evidence it was operative: `individuation_vs_reunion.md` ("separateness: wound or feature?") was proposed 2026-05-24 and never created; its absence went unnoticed for 18 days and was discovered only accidentally, when round-2 retrieval made it load-bearing for M7. No mechanism tracks proposed-but-uncreated artifacts; the discovery was a by-product, not a check.
+  Why it was unstated: too foundational to notice — a wiki project implicitly trusts that its TODO surface and its file system reconcile themselves.
+  Type: structural / methodological
+  Related decisions: DECISION-054 (M7 dependency)
+  Related items: PRESUMPTION-342 (vault-completeness — this is its production-side twin)
+  Testability: testable empirically (sweep past syncs/sessions for proposed-file mentions; count uncreated) — an internal audit more than a literature question, with a literature side on intention-action gaps in task systems
+  Risk if wrong: Medium — silent plan decay; load-bearing dependencies discovered only at need, as happened today.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-345
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the never-created-file find in round 2; high-confidence — the 18-day latency is documented in the session itself.
+    Current status: UNTESTED
+
+PRESUMPTION-346:
+  Date surfaced: 2026-06-11
+  Statement: [inferred] Reflexive falsification is non-circular — M8's success criterion requires "applying falsifier (b) reflexively to our own ledger," presuming that the dyad applying its own falsifier to its own record constitutes a genuine test rather than a self-confirming exercise.
+  Evidence it was operative: M8's S was drafted with the reflexive application as a feature (the agent: "M8's S requires applying falsifier (b) reflexively to our own ledger"), and the falsifiability standard invoked all day ("the agent must be able to fail the test") was applied to rung content but never to the test-administration arrangement itself. Who could observe the dyad failing its own falsifier, if the dyad scores the attempt?
+  Why it was unstated: culturally embedded — reflexivity reads as rigor (the system testing itself) rather than as a circularity risk requiring an external check.
+  Type: epistemic / methodological
+  Related decisions: DECISION-054
+  Related items: PRESUMPTION-340 (no-external-rater — this is its falsification-side instance); ASSUMPTION-312 (whose definitional-truth caution is the same logical worry, raised about content but not about procedure)
+  Testability: testable via literature (self-testing and auditor independence; pre-registration as a circularity guard; who-guards-the-guards designs in measurement validation)
+  Risk if wrong: Medium-High — M8 could pass its falsifier indefinitely without the falsifier ever having been exposable to failure.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-346
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from M8's S-design plus the asymmetric application of the day's own falsifiability standard; high-confidence on the gap, severity speculative.
+    Current status: UNTESTED
+
+PRESUMPTION-347:
+  Date surfaced: 2026-06-14
+  Statement: [inferred] A model identifier pinned in a scheduled-task configuration stays valid indefinitely — the morning chat-scrape task presumed its configured model would remain callable, and failed hard when it invoked "claude-fable-5," which is unavailable ("403 ... claude-fable-5 is not available. Please use Opus 4.8").
+  Evidence it was operative: The 06-14 morning scrape produced no summary and exited on a model/auth error rather than degrading gracefully; the config had no fallback model and no version-availability check. The same class of pin (a fixed external identifier assumed durable) underlies the day's other channel failure (browser auth).
+  Why it was unstated: too foundational to notice — model strings are written once at task-creation time and never revisited; the durability of an external dependency is the kind of premise that is invisible until the dependency moves.
+  Type: methodological / scaling
+  Related decisions: (none; scheduled-task infrastructure)
+  Related items: PRESUMPTION-338 (sync-loop lapse cause "still unknown" — 347 now supplies one concrete, previously-unexplained cause); ASSUMPTION-317 (both are about keeping an automated pipeline's state legible)
+  Testability: testable via literature (dependency-pinning rot; config drift; graceful-degradation and fallback-model patterns in scheduled/agentic systems)
+  Risk if wrong: Medium-High — a pinned-identifier failure silently zeroes a scheduled task's output every run until a human notices; here it cost ~3 days of the daily-walk round-trip.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-347
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the 06-14 morning-scrape model-error and the absence of any fallback/availability check; high-confidence on the gap (the failure is concrete), severity rated on observed 3-day cost. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-348:
+  Date surfaced: 2026-06-14
+  Statement: [inferred] A failing scheduled task announces its own failure — the automation design presumed that a broken round-trip (model error on the morning scrape, logged-out browser on the evening delivery) would be noticed without an independent liveness monitor, so no alarm fired and the channel stayed degraded ~3 days (06-12 → 06-14), with the 06-13 summaries simply missing.
+  Evidence it was operative: The degradation was surfaced only by the human-facing evening summary's prose, not by any monitoring signal; "No 06-13 evening summary was produced," and the two failure modes were caught incidentally rather than flagged. Nothing in the loop treats "task ran but produced nothing" as an error state.
+  Why it was unstated: culturally embedded — scheduled tasks feel reliable once created; the gap between "scheduled" and "succeeded" is not represented anywhere, so the need to watch for silent no-ops never arises.
+  Type: methodological / structural
+  Related decisions: (none; scheduled-task infrastructure)
+  Related items: PRESUMPTION-344 (queue-emptiness-as-health — same family: a local "ran fine" signal mistaken for end-to-end health); PRESUMPTION-338 (sync-loop reliability); PRESUMPTION-347 (one concrete failure mode this blindness let persist)
+  Testability: testable via literature (silent-failure / dead-man's-switch and heartbeat monitoring; observability of cron/agentic jobs; alerting on absence-of-output vs error)
+  Risk if wrong: Medium — silent degradation of any scheduled C2A2 pipeline (sync, lit-search, QC) could persist for days before a human notices; generalizes beyond the sync channel.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-348
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the 3-day channel degradation surfacing only in human-readable prose and the missing 06-13 summaries; checked against 14a's 06-14 output (ASSUMPTION-317) to avoid duplication — distinct (legibility-of-marking vs liveness-of-tasks). [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-349:
+  Date surfaced: 2026-06-15
+  Statement: [inferred] One added file is one unit of metabolic/intellectual yield — adopting files-added/day as the headline yield series presumes files are commensurable units of output, so that a one-line stub and a major synthesis document each count as "one." The session chose the metric without asking whether file count tracks value.
+  Evidence it was operative: Files-added/day was promoted to the lead yield axis (ASSUMPTION-318) with no weighting, size, or content check; the comparison among candidate yield series (tokens, commits, files) was framed as which is the better *count*, never which is the better *measure of worth per item*.
+  Why it was unstated: too foundational to notice — counting is the default operationalization of "productivity," and the move from "how much got made" to "how many files" is invisible because both are nouns of quantity.
+  Type: epistemic / methodological
+  Related decisions: DECISION-057
+  Related items: ASSUMPTION-318 (the stated choice of the proxy); the PRS-yield commensurability question in ASSUMPTION-314; queue-as-health family (PRESUMPTION-344)
+  Testability: testable via literature (count-based vs weighted productivity metrics; Goodhart effects when a count becomes a target; lines-of-code / commit-count critiques in software metrics)
+  Risk if wrong: Medium — a count-only headline can be gamed or can misread (a day of many trivial files outranks a day of one deep one), distorting the very self-measurement the metabolism view exists to provide.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-349
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the WS1 metric choice; checked against 14a's ASSUMPTION-318 to avoid duplication — distinct (the stated *choice of proxy* vs. the unstated *commensurability of files*). High-confidence on the gap. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-350:
+  Date surfaced: 2026-06-15
+  Statement: [inferred] Version-control timestamps are faithful clocks for knowledge-production events — sourcing PRS-triplet yield from the git history of `prs_triplets.md` (a new PRS-NN per commit-day) presumes that when a triplet was committed is when it was intellectually completed, and that commit cadence is a clean signal of research cadence.
+  Evidence it was operative: The WS2 source decision (ASSUMPTION-319) treats commit-days as triplet-completion events directly, with no mention of batch commits, retroactive edits, formatting-only touches, or work completed long before it was committed — all of which would decouple the git clock from the cognitive one.
+  Why it was unstated: culturally embedded — for a developer-built system, git history feels like ground truth for "when things happened"; the gap between "committed" and "completed" is the same class of pin as PRESUMPTION-347's "configured = valid."
+  Type: methodological / epistemic
+  Related decisions: DECISION-058
+  Related items: ASSUMPTION-319 (the stated source choice); ASSUMPTION-307 (git-history yield proxy, same substrate); OPEN-081 (authoritative counts)
+  Testability: testable empirically (correlate prs_triplets.md commit-days against an independent record of when triplets were authored; measure batch-commit and backfill rates) and via literature (mining-software-repositories validity threats; commit-timestamp reliability)
+  Risk if wrong: Medium — a yield axis keyed to commit cadence could show metabolic "pulses" that are artifacts of when Tom happened to commit, not when traditions actually produced.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-350
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the WS2 source rationale; distinct from ASSUMPTION-319 (stated validity of the source) by targeting the unstated commit≈completion equation. High-confidence on the gap; magnitude depends on actual commit hygiene. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-351:
+  Date surfaced: 2026-06-15
+  Statement: [inferred] A visible gap-marker is an understood gap — the WS1 "honest view" fixes presume that adding a dashed horizon, hollow rings, day-bar gaps, and a staleness badge makes the missing data legible to a viewer, i.e. that making absence *visible* is equivalent to making it *comprehended*.
+  Evidence it was operative: The cut-offs were declared resolved at the view layer once the markers were rendered; captions were added, but no check was proposed that a reader (including future-Tom or a reviewer) actually decodes "hollow ring = cadence-only, zero captured output" rather than "low activity," or "dashed horizon = capture ended" rather than "real activity stopped."
+  Why it was unstated: obvious to participants — the designer who built the convention reads it effortlessly and forgets that an undocumented visual convention is opaque to anyone who didn't build it; this is the trace-vs-substance pattern in graphical form.
+  Type: epistemic / methodological
+  Related decisions: DECISION-057
+  Related items: ASSUMPTION-320 (stated honesty commitment); PRESUMPTION-352 (what the markers assert about the cliff's cause); trace-vs-substance family (PRESUMPTION-322 et al.)
+  Testability: testable empirically (do naive viewers correctly interpret the markers? a quick comprehension check) and via literature (graphical perception of missing-data encodings; legend/convention discoverability)
+  Risk if wrong: Low-Medium — a misread "honest" marker can mislead exactly where it intends to clarify, e.g. a hollow ring read as genuine low output, re-importing the silent-zero error the fix was meant to remove.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-351
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the WS1 fixes being treated as complete once rendered; distinct from ASSUMPTION-320 (the stated value) by targeting the unstated visibility=comprehension step. Moderate-confidence. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-352:
+  Date surfaced: 2026-06-15
+  Statement: [inferred] The post-Apr-6 interactive-token cliff (95% of captured output) and the 28/33-lane output flatline are instrumentation artifacts, not real phenomena — "the data isn't lost; interactive-session capture stopped/changed labels after early April." The session presumed absence in the telemetry reflects a logging/labeling change, and did not seriously entertain that interactive activity (or captured productive output) genuinely fell.
+  Evidence it was operative: Both data-layer cut-offs were framed as "honest"-in-view capture problems and routed to a probe that pinpoints which *capture* cause applies; the alternative hypothesis — that the metric is faithfully reporting a real drop — is absent from the framing. The probe (`probe_openstory.py`) has not yet been run, so the artifact reading is currently an unverified inference treated as the working truth.
+  Why it was unstated: obvious to participants — the designer knows the project kept running, so "the work didn't stop" feels self-evident and the only question seems to be where the logging broke; this forecloses the "absent alternative" that *captured* output really did collapse for the lanes in question.
+  Type: epistemic / methodological
+  Related decisions: DECISION-057; OPEN-083 (the open form of this question)
+  Related items: ASSUMPTION-320 (honest-view rendering rests on this causal reading); PRESUMPTION-351 (the markers assert this cause to viewers); DECISION-056 (metabolism telemetry substrate)
+  Testability: testable empirically (run probe_openstory.py; reconcile token_usage payloads by run-type and date against an independent activity record) — directly decidable once the Mac probe runs.
+  Risk if wrong: Medium-High — if the cliff/flatline is partly real, a view that labels it "capture ended" would mask a genuine collapse in measured metabolic output, and every downstream yield comparison built on the recovered view inherits the error.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-352
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the uniform "capture, not reality" framing of cut-offs A/B and the as-yet-unrun probe; high-confidence on the gap (the alternative was never weighed), severity rated on the metric's load-bearing role. Raised in parallel as OPEN-083. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-353:
+  Date surfaced: 2026-06-15
+  Statement: [inferred] The vault's folder structure is the authoritative source of "team" membership — "fifteen tradition folders = the 15 members" presumes a clean 1:1:1 mapping of one `traditions/` folder to one team member to one constellation seat, so that the roster's identity, size, and boundary are read off the filesystem rather than argued for.
+  Evidence it was operative: The WS3 roster (ASSUMPTION-321) was generated by enumerating folders; the count 15 entered the mockups as a given, with the thinker/epistemologist/integrator roles distributed afterward to fit. No alternative membership criterion (influence, activity, PRS yield, external standing) was considered.
+  Why it was unstated: culturally embedded — in a vault-centric system the folder tree is the de facto ontology, so "who is on the team" collapses into "which folders exist"; the structural choice is invisible because the filesystem already made it.
+  Type: structural
+  Related decisions: (none new; WS3 mockups exploratory)
+  Related items: ASSUMPTION-321 (the stated roster); standing "traditions are the right unit of analysis" family; OPEN-081 (which counts are authoritative — same source-of-truth concern)
+  Testability: framework commitment (largely a design choice), with a testable edge (does folder membership diverge from any independent membership criterion the project would endorse?)
+  Risk if wrong: Low-Medium — folder-derived rosters drift silently as folders are added/renamed (three new tradition proposals are already pending), so a mockup keyed to "15" can misstate the team the moment the tree changes.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-353
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the folder-enumeration roster step; distinct from ASSUMPTION-321 (the stated roster content) by targeting the unstated folder=membership authority. Moderate-confidence. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-354:
+  Date surfaced: 2026-06-15
+  Statement: [inferred] Adversarial inter-paradigm contest is the right frame for how CRM relates to alternatives — the Paradigm Constellation's "CRM core, 15 in orbit, an open seat for a rival team" presumes the relation between CRM and other paradigms is competitive (a rivalry with seats to be won), rather than complementary, incommensurable-without-contest, or collaborative.
+  Evidence it was operative: The third mockup encodes a "rival team" and an "open seat," and the 40-Step Dialogue Track is framed as an arc the team progresses along — both import a contest/standings metaphor into the visualization without it being named as a modeling choice.
+  Why it was unstated: culturally embedded — competition is the default metaphor for paradigms (Kuhnian succession, "winning" theories), so a rival-seat framing feels descriptive rather than evaluative; the normative load (contest is the right relation) rides in on the visual.
+  Type: normative / structural
+  Related decisions: (none new; WS3 mockups exploratory)
+  Related items: ASSUMPTION-321 (the roster the constellation arranges); the Kuhnian-evidence framework (`kuhnian_evidence_framework.md`); MacIntyre's rival-traditions account (which licenses contest but also incommensurability)
+  Testability: framework commitment with a literature edge (MacIntyre on tradition-constituted enquiry and rival traditions; Kuhn on incommensurability; whether "contest" or "translation" better models cross-tradition relations the project seeks)
+  Risk if wrong: Low-Medium — a competitive frame can bias the whole C2A2 telos toward "winning" against rivals when its stated aim is rich mutual understanding across traditions; the metaphor in a mockup can quietly set the goal.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-354
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the "rival team / open seat" encoding in the constellation mockup; surfaced neutrally as a framing choice. Moderate-confidence; flagged because it touches the project's telos. [inferred]
+    Current status: UNTESTED

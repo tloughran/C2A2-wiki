@@ -11987,3 +11987,1243 @@ DISPOSITION-180:
     Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
 
 **Run 2026-06-08 totals:** 8 items | 2 INCORPORATE (PREMISE-053, PREMISE-054) | 4 MONITOR (MONITOR-313..316) | 2 REVISE (REVISE-093, REVISE-094) | DISPOSITION-173..180. SYSTEMIC-RISK #1 (HIGH) "environment-capability-mismatch / build-before-probe": PRESUMPTION-317 (REVISE-093, the enacted environment-uniformity bet) + PRESUMPTION-318 (MONITOR-314, the build-then-discover ordering that caused it) + PRESUMPTION-320 (MONITOR-315, blind state-mutating blocks on a mismodeled state) — common vulnerability: the agent scripted state-mutating automation (auto-push, blind shell blocks) against a presumed-uniform execution context and a presumed-known repo state, without probing actual capabilities/state first. Single coupled remedy: capability-and-state probe FIRST (dry-run in the target/scheduled context; inspect repo state before mutating); make each step safe-to-fail; this discharges most of the cluster. SECONDARY cluster (MEDIUM-HIGH) "derived-data-treated-as-review-exempt": ASSUMPTION-284 (MONITOR-313, the asymmetry floor) vs PRESUMPTION-319 (REVISE-094, the data-review-exempt overclaim) — disclosure/gating floor stands, but the unreviewed-data path needs automated data-quality gates + verified determinism before trusting it; couples the manufactured-identity risk (REVISE-091, a concrete wrong-but-well-formed datum). Consistency check: PREMISE-053 (scheduled-regeneration pattern) and PREMISE-054 (policy-vs-capability layering) vs PREMISE-001..052 — no conflict (new CI-freshness and agent-governance domains). No NOVELTY flags (all eight are well-trodden SE/security/ops topics).
+
+
+## 2026-06-11 — 15a/15b/15c RUN (cycle-0 backlog drain: 06-08, 06-09, 06-10 cohorts — 39 items)
+
+**Run type:** Automated daily c2a2-lit-search-pipeline (15a + 15b + 15c), one hour after the 14a/14b pipeline slot. **Backlog note (fail-loud):** the 06-09 and 06-10 daily runs did not execute, so THREE cycle-0 cohorts drained together (11 + 14 + 14 = 39 items) — roughly 5x a normal daily load. Search depth was held at ~1 genuine web search per item per direction (78 searches total, run by three parallel 15a workers and three parallel 15b workers, mutually blind per the independence spec); files marked "preliminary search — broader search recommended" where thin. The 2026-06-07 15d RE-TRIGGER cohort (147 + 2 re-check items) is drained separately below.
+
+**Net outcome:** 39/39 items searched FOR + AGAINST and dispositioned. **6 INCORPORATE** (PREMISE-055..060), **24 MONITOR** (MONITOR-317..340), **9 REVISE** (REVISE-095..103). DISPOSITION-181..219. **3 NOVELTY flags** (ASSUMPTION-293, ASSUMPTION-309/MacIntyre-number, PRESUMPTION-330). **7 SYSTEMIC-RISK flags** (see revision_flags.md; two HIGH: "trace=substance" Agent-Explorer stack; dyad-measurement-validity cluster; plus proxy-surrogation HIGH on the metabolism display).
+
+**15b strength note (fail-loud):** this cohort's challenge profile is unusually strong — 17/39 items drew Strong challenges, and 9/39 ended REVISE (vs 2/8 in each of the three prior daily runs). The 06-08/09/10 sessions were heavy on measurement-infrastructure decisions (Agent Explorer telemetry, dyad-MMA ratification, metabolism metrics) — exactly the territory where the surrogation/validity literature is most adversarial. The volume of REVISE flags reflects the material, not a calibration change in 15c.
+
+### DISPOSITION blocks (39 items, DISPOSITION-181..219)
+
+DISPOSITION-181: ASSUMPTION-287 (telemetry should replace authored narration as Agent Explorer basis)
+  15a: SUPPORTED (Strong; process mining/conformance — van der Aalst 2016) | 15b: PARTIALLY-CHALLENGED (Moderate; Naur 1985 — traces cannot carry intent/rationale)
+  Net: Both directions converge: observed telemetry is the higher-fidelity basis for the ACTIVITY record; full replacement discards intent that traces constitutively lack.
+  Disposition: INCORPORATE → PREMISE-055 (Confidence Moderate; premise scoped to "primary basis + retain authored intent layer," NOT replacement; explicitly does NOT extend to PRESUMPTION-322's substance claim, which is REVISE-095). Re-check Quarterly.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+
+DISPOSITION-182: ASSUMPTION-288 (route extraction through OpenStory DB despite heavier dependency)
+  15a: PARTIALLY-SUPPORTED (Moderate; trajectory-level signals valuable) | 15b: PARTIALLY-CHALLENGED (Moderate; private-schema coupling → silent corruption on upstream migration)
+  Net: Value of eval/apply+turns signal is plausible but unquantified; the integration seam fails silently. Evidence balanced.
+  Disposition: MONITOR → MONITOR-317 (MEDIUM). Close when: schema-drift canary + version pin in place AND trajectory-signal value demonstrated downstream.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-183: ASSUMPTION-290 (external symlink session-bridge, not OpenStory fork)
+  15a: SUPPORTED (Strong; shim/adapter-over-fork, fork-drift case studies) | 15b: PARTIALLY-CHALLENGED (Weak; Hyrum's Law — bridge breaks silently vs fork's loud merge failure)
+  Net: Strong direct precedent for staying on upstream via adapter; the silent-breakage caveat is foldable as a liveness canary.
+  Disposition: INCORPORATE → PREMISE-056 (Confidence Moderate-High; caveat folded: bridge needs a liveness canary, and upstreaming remains the unexplored third option). Re-check Quarterly.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+
+DISPOSITION-184: ASSUMPTION-291 (shared wiki-node references = valid sociogram edge model)
+  15a: SUPPORTED (Strong; bibliographic coupling, Kessler 1963, six decades validated) | 15b: CHALLENGED (Strong; Boyack & Klavans 2010, bipartite-projection hub cliques — edges mean topical relatedness, NOT social interaction)
+  Net: CONTESTED — the formal structure is validated but the SEMANTIC claim ("sociogram") is actively disputed; hub nodes generate spurious cliques.
+  Disposition: MONITOR → MONITOR-318 (HIGH). Action: relabel edges as topical-relatedness/coupling, add hub-normalized weighting; do not present as social interaction until interaction-based edges exist.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-185: ASSUMPTION-292 (571-session DB representative enough to prove pipeline)
+  15a: PARTIALLY-SUPPORTED (Moderate; walking-skeleton/tracer-bullet practice) | 15b: PARTIALLY-CHALLENGED (Moderate; convenience sample biased exactly along the capture gap)
+  Net: Both directions draw the same line: mechanically sufficient, distributionally untrustworthy.
+  Disposition: INCORPORATE → PREMISE-057 (Confidence Moderate; premise deliberately NARROW: pilot validates mechanics only; any distributional output requires reseed/coverage quantification — couples REVISE-096, MONITOR-321). Re-check Quarterly.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+
+DISPOSITION-186: PRESUMPTION-322 (event stream is a faithful proxy for what an agent IS and does)
+  15a: PARTIALLY-SUPPORTED (Moderate; digital-trace methodology — for what an entity DOES) | 15b: CHALLENGED (Strong; Sen 1973 revealed-preference critique, streetlight effect — activity conflated with substance; wisely-idle and dead agents emit the same stream)
+  Net: Literature supports traces as activity measures and rejects the substance reading; downstream layers inherit the conflation as ground truth. Root of the trace=substance SYSTEMIC-RISK (HIGH).
+  Disposition: REVISE → REVISE-095 (Urgency MEDIUM-HIGH). PRESUMPTION weight applies — the conflation was never deliberately decided.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-187: PRESUMPTION-323 (eval/apply ratio is a known-directional quality signal)
+  15a: PARTIALLY-SUPPORTED (Moderate; verification-rich behavior linked to outcomes — but direction NOT established) | 15b: CHALLENGED (Strong; non-monotonic — careful verification and thrashing yield the same value; Goodhart once ranked)
+  Net: Plausibly meaningful, directionally unestablished by both reports. Cheap practice change available.
+  Disposition: MONITOR → MONITOR-319 (HIGH). Standing rule: display as UNDIRECTED descriptive statistic; no ranking/quality framing until per-construct validation against ground-truth outcomes.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-188: PRESUMPTION-324 (static validation sufficient proxy for visual artifact working)
+  15a: PARTIALLY-SUPPORTED (Weak; necessary gate, kills a defect class) | 15b: CHALLENGED (Strong; dominant D3 failure modes — blank canvas, NaN positions, empty filters — pass all static checks)
+  Net: Necessary-not-sufficient, convergent across directions; falsifiable in one fault-injection test; cheap closure exists.
+  Disposition: MONITOR → MONITOR-320 (HIGH). Action: add headless render smoke-test (screenshot + non-blank canvas + rendered-node-count invariant) to validate_html.py workflow. Same remedy as MONITOR-338 (PRESUMPTION-335) — one fix discharges both.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-189: PRESUMPTION-325 (agent population is a clean one-cron-task-per-agent roster)
+  15a: NO-SUPPORT-FOUND (None; ER exists because real populations violate this) | 15b: CHALLENGED (Strong; Binette & Steorts 2022; already falsified by own data — multi-fire agents + unmapped interactive sessions)
+  Net: Only evidence is against, and the in-session data already contradicts it; every per-agent metric divides by a mis-specified denominator, contaminating 287/291/292 outputs.
+  Disposition: REVISE → REVISE-096 (Urgency HIGH). Fix the entity model before further explorer metrics ship.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-190: PRESUMPTION-326 (recent/available activity is representative; bounded window OK)
+  15a: PARTIALLY-SUPPORTED (Moderate; concept-drift literature legitimizes recency windows for state estimation) | 15b: CHALLENGED (Strong; survivorship + time-period bias; low-frequency agents rendered insignificant by sampling artifact)
+  Net: Window is right for "what's happening now," wrong for roster coverage; cheap mitigations exist.
+  Disposition: MONITOR → MONITOR-321 (MEDIUM-HIGH). Action: full-history ingest where feasible OR per-agent coverage flag; mark under-observed agents in UI rather than rendering them as inactive.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-191: PRESUMPTION-327 (making the swarm legible/comparable/rankable is normatively neutral)
+  15a: PARTIALLY-SUPPORTED (Moderate; measurement-and-outcomes base; surveillance harms mostly inapplicable to non-human agents) | 15b: PARTIALLY-CHALLENGED (Moderate; Espeland & Sauder reactivity — operates through the OPERATOR; metrics become de facto fitness functions in a self-modifying architecture)
+  Net: Neutrality holds for legibility, fails at the rankable step; the reactivity channel is real but not yet enacted (no ranking shipped).
+  Disposition: MONITOR → MONITOR-322 (MEDIUM). Re-assess when any ranking/comparison view ships; couples MONITOR-319.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-192: ASSUMPTION-293 (MM-of-1 can authoritatively certify own tradition's milestones; face validity carries at N=1)
+  15a: PARTIALLY-SUPPORTED (Weak; expert judgment legitimate but face validity is the weakest evidence class) + NOVELTY-FLAG | 15b: CHALLENGED (Strong; Mosier 1947, AERA/APA/NCME Standards — face validity cannot carry an instrument; self-certification maximizes self-confirmation)
+  Net: The claim as stated ("authoritatively," "must carry") is contradicted by measurement standards; the candidate-generating reading survives. Genuinely novel territory (N=1 self-certification of one's own tradition is uncovered in the literature).
+  Disposition: REVISE → REVISE-097 (Urgency MEDIUM-HIGH). Re-scope certifications as PROVISIONAL/candidate-generating + add the dyad reliability protocol. NOVELTY noted — worth tracking as potential original methodological contribution.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-193: ASSUMPTION-294 (evidential weight of MMA scales with formational independence)
+  15a: SUPPORTED (Strong; Lorenz 2011, Becker 2017 PNAS — among the best-established collective-judgment results) | 15b: PARTIALLY-CHALLENGED (Moderate; correlated agreement is DISCOUNTED evidence, not near-chance noise)
+  Net: Core claim is textbook; only the "near-chance noise" clause overstates.
+  Disposition: INCORPORATE → PREMISE-058 (Confidence High on core; correction folded: same-formation agreement = smaller effective N, not zero). Re-check Quarterly.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+
+DISPOSITION-194: ASSUMPTION-295 (structural dissent-invitation restores effective independence in dyad-MMA)
+  15a: PARTIALLY-SUPPORTED (Moderate; dissent-invitations measurably reduce sycophancy) | 15b: CHALLENGED (Strong; sycophancy operates below the prompting layer; blanket disagreement prompts reduce accuracy; "restores" fails silently)
+  Net: Mitigation real, restoration overclaim — convergent across directions. Cheap protocol closure exists.
+  Disposition: MONITOR → MONITOR-323 (HIGH). Action: add catch trials (planted errors) + blind re-presentation to dyad protocol; treat dissent-invitation as partial de-biasing only. Dyad-validity SYSTEMIC cluster.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-195: ASSUMPTION-296 (curricular ladder milestones as candidate PRS-elements for ratification)
+  15a: PARTIALLY-SUPPORTED (Moderate; standard learning-progressions practice for CANDIDATES) | 15b: PARTIALLY-CHALLENGED (Moderate; curricula encode instructional convention + linearity artifacts)
+  Net: The stated claim is the modest one (candidates, pending ratification) — both directions accept it with the convention-artifact caveat.
+  Disposition: INCORPORATE → PREMISE-059 (Confidence Moderate; narrow: candidate-generation only; ratification is a weak gate pending later empirical validation). Re-check Quarterly.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+
+DISPOSITION-196: ASSUMPTION-297 (table→exhaust→revisit→close is an adequate dyad stopping rule)
+  15a: PARTIALLY-SUPPORTED (Moderate; predefined stopping rules + revisit beat most consensus practice) | 15b: PARTIALLY-CHALLENGED (Moderate; same-session revisit = anchoring; no time-separated stability check)
+  Net: Better than common practice, missing the stability dimension the Delphi literature requires.
+  Disposition: MONITOR → MONITOR-324 (MEDIUM). Action: add a time-separated stability re-check (re-present closed items in a later session before treating them as settled).
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-197: ASSUMPTION-298 (deliberate over-promising with firm expectation of over-delivery is sound planning)
+  15a: PARTIALLY-SUPPORTED (Weak; stretch goals pay off only under slack + recent-success contingencies) | 15b: CHALLENGED (Strong; Sitkin 2011, Buehler 1994 — textbook inside-view forecast; public over-promises drive escalation of commitment)
+  Net: Weak conditional support vs strong challenge on a stated planning method currently steering the ISME schedule.
+  Disposition: REVISE → REVISE-098 (Urgency MEDIUM). Recommend: reference-class buffer from project's own actuals + pre-committed minimum-viable deliverable. Couples REVISE-101 (PRESUMPTION-332).
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-198: ASSUMPTION-299 (removing bosco/email strings from current HTML discharges the public-exposure concern)
+  15a: PARTIALLY-SUPPORTED (Weak; pattern-scanning is the standard verification method — for the working tree) | 15b: CHALLENGED (Strong; Meli 2019 NDSS — git history, archives/mirrors, and non-literal encodings all survive a tree scrub)
+  Net: The scrub is valid; the DISCHARGE claim is unsupported — the concern was closed against one of several exposure surfaces.
+  Disposition: REVISE → REVISE-099 (Urgency MEDIUM). One-time surface audit recommended (git log -S, published-copy/Wayback CDX check, encoding-variant grep). Same audit discharges MONITOR-327 (PRESUMPTION-329).
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-199: ASSUMPTION-300 (tradition-seeded dialogue adequately — indeed better — delivers what was promised as GAN-simulated)
+  15a: PARTIALLY-SUPPORTED (Weak; persona-seeded simulation established; inspectability is an evidential virtue; no head-to-head comparison exists) | 15b: PARTIALLY-CHALLENGED (Moderate; persona collapse/homogenization; no opposed optimization; inspectability covers the seed, not the behavior)
+  Net: "Adequate" defensible, "indeed better" untested.
+  Disposition: MONITOR → MONITOR-325 (MEDIUM). Action: drop the superiority claim; add persona-collapse checks (distinctiveness metrics across dialogue turns).
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-200: PRESUMPTION-328 (localhost copy is render-equivalent to the file:// production artifact)
+  15a: PARTIALLY-SUPPORTED (Weak; scheme-independent only while fully self-contained) | 15b: CHALLENGED (Strong; file:// is the MORE restrictive origin — localhost success cannot prove file:// success)
+  Net: Equivalence runs the wrong direction; trivially dischargeable by testing the real thing.
+  Disposition: MONITOR → MONITOR-326 (HIGH, cheap). Action: verify on file:// directly; add a self-containedness check (no external fetches) to the validator.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-201: PRESUMPTION-329 (scrubbing the working tree discharges exposure, leaving history/copies/capability unexamined)
+  15a: NO-SUPPORT-FOUND (None; remediation literature treats tree-scrub as the weakest first step) | 15b: CHALLENGED (Strong; persistence mechanics identical to credential leaks; standard doctrine presumes compromise until each surface cleared)
+  Net: Only evidence is against, but the harm model here (descriptive text, not credentials) is weaker and the remedy is a bounded audit already recommended under REVISE-099.
+  Disposition: MONITOR → MONITOR-327 (MEDIUM-HIGH). Linked: REVISE-099's surface audit closes this; the general norm ("scrub = discharge") stays on watch.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-202: PRESUMPTION-330 (the recorded Tom⇄Claude dyad persists as a unit across sessions/contexts/model versions)
+  15a: PARTIALLY-SUPPORTED (Weak; measurement-invariance gives a CONDITIONAL precedent — persistence is certifiable, not default) + NOVELTY-FLAG | 15b: CHALLENGED (Strong; LLM drift; different instruments without measured linkage; the charter's own individuation principle implies otherwise)
+  Net: Unanchored-mixture risk on all dyad ratifications; charter self-contradiction must be resolved by design, not by monitoring. Novel construct (composite human-AI measurement unit) — potential original contribution.
+  Disposition: REVISE → REVISE-100 (Urgency MEDIUM-HIGH). Define dyad individuation + invariance protocol (version-stamped assents; anchor-item re-presentation across model versions). NOVELTY noted.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-203: PRESUMPTION-331 (philosophy audience will accept a running system as evidence; commissioning-report genre transfers)
+  15a: PARTIALLY-SUPPORTED (Moderate; computational philosophy is established — Zollman, Mayo-Wilson) | 15b: CHALLENGED (Moderate; evidential genres don't transfer by exhibition; audiences grant existence while denying the inferential step)
+  Net: Acceptance is conditional on system-as-model-of-the-claim; the genre transfer itself has no precedent and the inferential link must be explicit.
+  Disposition: MONITOR → MONITOR-328 (MEDIUM). Action: scope ISME claims as possibility-proof / model-of-claim; make the system→thesis inference explicit in the paper's structure.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-204: PRESUMPTION-332 (current build capacity persists through the ~4-week ISME schedule)
+  15a: NO-SUPPORT-FOUND (None; reference-class forecasting demands the outage rate be priced in) | 15b: CHALLENGED (Strong; same-day 7-day-outage record ignored; single-human gate caps delivered throughput regardless of agentic capacity)
+  Net: Only evidence is against, and the contrary evidence is the project's own same-day record.
+  Disposition: REVISE → REVISE-101 (Urgency MEDIUM-HIGH). Recommend (jointly with REVISE-098): schedule buffer priced from own outage actuals + minimum-viable ISME deliverable + explicit single-gate throughput cap in the plan. Couples REVISE-102 (PRESUMPTION-337).
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-205: PRESUMPTION-333 (the single rater MM-of-1 is temporally stable; assent-now is durable fact)
+  15a: PARTIALLY-SUPPORTED (Weak; expert test-retest reliability exists but is variable and must be MEASURED per-rater) | 15b: CHALLENGED (Strong; occasion noise + standard-drift are large and ubiquitous; assent-once cannot distinguish noise from genuine development)
+  Net: Stability is measurable, not presumable; cheap protocol closure; note the deep point — drift vs development is itself what the project wants to observe.
+  Disposition: MONITOR → MONITOR-329 (HIGH). Action: date-stamped/version-stamped assents + periodic blind re-presentation of anchor items (ICC/weighted-kappa). Dyad-validity SYSTEMIC cluster.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-206: ASSUMPTION-301 (substrate reveal correct because it shares the verified admission code path)
+  15a: PARTIALLY-SUPPORTED (Weak; admissible only under equivalent execution context) | 15b: CHALLENGED (Strong; Therac-25/Ariane-5 class — the renderer stall itself proves the contexts differ)
+  Net: Both directions converge: structural identity is interim evidence at best, and the blocking stall is the canonical defeater.
+  Disposition: MONITOR → MONITOR-330 (HIGH). Action: re-verify substrate reveal BEHAVIORALLY once the renderer stall (ASSUMPTION-302 work) is fixed; until then status is "unverified," not "verified."
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-207: ASSUMPTION-302 (stall caused by synchronous 30k-element DOM build; budgeted rendering will clear it)
+  15a: SUPPORTED (Strong; SVG/DOM degrades past ~1k-5k elements; 30k is 10x over budget) | 15b: PARTIALLY-CHALLENGED (Moderate; jank misattribution — if true cost is style-recalc/sim-tick, the fix ships and the stall persists)
+  Net: Mechanism class strongly supported; specific diagnosis unconfirmed; empirically self-resolving.
+  Disposition: MONITOR → MONITOR-331 (MEDIUM). Action: profile before/after the budgeted-rendering fix; target under ~1-3k live elements; if stall persists, the diagnosis was wrong — escalate.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-208: ASSUMPTION-303 (agent actors are cumulative; exempting them from the time-slider cut is correct semantics)
+  15a: PARTIALLY-SUPPORTED (Moderate; endurant/perdurant distinction is ontologically principled) | 15b: PARTIALLY-CHALLENGED (Moderate; correct semantics is state-AS-OF-t, not exemption — early slider positions show anachronistic connections)
+  Net: Principled interim choice; better semantics identified and cheap once per-date data exists.
+  Disposition: MONITOR → MONITOR-332 (LOW-MEDIUM). Action: move to as-of-t clipping when per-date counts are available.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-209: ASSUMPTION-304 (embedding the two ladder tools fulfills task one's provisioning of candidate-milestone scaffolds)
+  15a: PARTIALLY-SUPPORTED (Weak; courseware can source candidates; the "fulfillment" claim has no analogue) | 15b: PARTIALLY-CHALLENGED (Moderate; curriculum-coverage gaps ~24% in analogous mapping studies — inherited as "no milestone here")
+  Net: Provisioning yes, fulfillment overclaim; coverage unmeasured.
+  Disposition: MONITOR → MONITOR-333 (MEDIUM). Action: treat embedded explorers as candidate SOURCES; run a coverage audit (what the ladders omit) before the dyad triplet pass relies on them.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-210: ASSUMPTION-306 (on history restore, embedded-frame content is authoritative; shell resyncs to it)
+  15a: PARTIALLY-SUPPORTED (Moderate; pageshow-based reconciliation is sanctioned; frame reflects what the user sees) | 15b: PARTIALLY-CHALLENGED (Moderate; restored frame state is browser/path-dependent — frozen snapshot vs fresh reload; restored state may be stale)
+  Net: Right for view state, wrong for data; split-authority is the supported pattern.
+  Disposition: MONITOR → MONITOR-334 (LOW). Action: frame wins VIEW state, canonical source wins DATA; spot-check across browsers/restore paths.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-211: ASSUMPTION-307 (git-history-derived yield is a valid productivity axis, pending PRS integration)
+  15a: PARTIALLY-SUPPORTED (Moderate; legitimate ONLY inside a multi-dimensional instrument — which the "pending PRS" hedge matches) | 15b: CHALLENGED (Strong; commit granularity is a free variable for agents — ungrounded, directionally corruptible denominator; Goodhart)
+  Net: The hedged floor survives; the un-hedged use does not. Floor/overclaim split with PRESUMPTION-339 (REVISE-103).
+  Disposition: MONITOR → MONITOR-335 (HIGH). Conditions: display-with-caveat only; NEVER an allocation target or ranking; time-box the "interim" (15d checks the box is honored); normalize for commit granularity before any cross-agent comparison.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-212: ASSUMPTION-308 (deterministic scheduler should precede any bandit layer)
+  15a: SUPPORTED (Moderate; cold-start theory + small-N exploration overhead) | 15b: PARTIALLY-CHALLENGED (Moderate; zero-randomization logs can't train/validate the later bandit — off-policy evaluation needs randomized data)
+  Net: Sequencing is right; the caveat (log with some randomization; define graduation criterion) is foldable.
+  Disposition: INCORPORATE → PREMISE-060 (Confidence Moderate; caveats folded: epsilon-randomization in logs + explicit graduation criterion). Re-check Quarterly.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: INCORPORATED
+
+DISPOSITION-213: ASSUMPTION-309 (progress and peace require distinct KPIs — MacIntyre number; endorsed-steelman)
+  15a: PARTIALLY-SUPPORTED (Moderate; ITT literature operationalizes endorsed-steelman as distinct from agreement) + NOVELTY-FLAG (MacIntyre number has no operationalized precedent) | 15b: PARTIALLY-CHALLENGED (Moderate; ceiling effects, occasional backfire, dissociation from behavioral peace outcomes)
+  Net: Distinctness validated; both metrics carry open validity work; MacIntyre number is a genuine novelty candidate.
+  Disposition: MONITOR → MONITOR-336 (HIGH priority per NOVELTY heuristic). Action: operationalize MacIntyre number with explicit construct definition; validate endorsed-steelman against behavioral indicators; track as potential original contribution.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-214: PRESUMPTION-334 (when observation is blocked, code-path identity is an acceptable substitute for behavioral verification)
+  15a: PARTIALLY-SUPPORTED (Weak; admissible INTERIM evidence in assurance cases, with re-verification obligation) | 15b: CHALLENGED (Strong; norm-formation risk — every blocked observation becomes closable by structural argument)
+  Net: The generalized norm is the danger (the instance is MONITOR-330); standing rule closes it cheaply.
+  Disposition: MONITOR → MONITOR-337 (HIGH). Standing rule: structural identity = interim evidence carrying an explicit re-verification obligation; never records as "verified." Verification-by-inference SYSTEMIC cluster.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-215: PRESUMPTION-335 (the house validator's checks define correctness; display invariants out of scope; human as anomaly detector)
+  15a: PARTIALLY-SUPPORTED (Weak; human-as-residual-oracle is a recognized QA architecture given the oracle problem) | 15b: CHALLENGED (Strong; visualization mirages + metamorphic testing — display invariants ARE cheaply automatable; habituated single human is a low-recall detector)
+  Net: The scope exclusion is a choice presented as a necessity; cheap closure available; second occurrence of this theme (couples MONITOR-320 / PRESUMPTION-324).
+  Disposition: MONITOR → MONITOR-338 (HIGH). Action: add 2-3 metamorphic display invariants + render smoke-test to the validator (one fix with MONITOR-320). Pattern-flag: recurring static-checks-as-sufficient theme — if it recurs again, escalate to REVISE as a norm.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-216: PRESUMPTION-336 (file-write telemetry is representative; cluster emptiness is a data fact)
+  15a: PARTIALLY-SUPPORTED (Weak; telemetry valid only after coverage quantified — which is what's presumed) | 15b: CHALLENGED (Strong; zero is ambiguous between no-activity and capture-failure; this environment has demonstrated silent multi-day pipeline failure)
+  Net: Absence-as-fact licensed only by demonstrated detection power; cheap inject-and-confirm test settles it.
+  Disposition: MONITOR → MONITOR-339 (HIGH). Action: telemetry canary (inject known activity, confirm capture) before treating any empty cluster as a finding.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-217: PRESUMPTION-337 (single-human attended commit gate scales with parallel-session output; local queues accumulate without integration risk)
+  15a: NO-SUPPORT-FOUND (None; CI literature uniformly contradicts both clauses) | 15b: CHALLENGED (Strong; fixed-capacity gate + elastic arrival = unbounded queue; review degrades to rubber-stamping exactly when load rises)
+  Net: Only evidence is against; structural (workload/bus-factor design), not a practice tweak; couples the ISME capacity REVISE.
+  Disposition: REVISE → REVISE-102 (Urgency MEDIUM-HIGH). Recommend: WIP limit on unintegrated sessions + scheduled integration cadence + shared-hub-file conflict check. Couples REVISE-101.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-218: PRESUMPTION-338 (Chat⇄Cowork sync restoration is durable — one success after eight days of failure)
+  15a: NO-SUPPORT-FOUND (None; recurrence, not recovery, is the informative signal) | 15b: CHALLENGED (Strong; textbook latent-failure setup; 8-day pattern suggests cyclical cause, e.g., credential/quota expiry)
+  Net: Presumed durability unsupported, but re-failure cost is low and monitored reliance is the standard cheap remedy — MONITOR, not REVISE.
+  Disposition: MONITOR → MONITOR-340 (HIGH). Action: heartbeat/canary on the sync loop + log next lapse with timestamps to test the cyclical-cause hypothesis; reliance is MONITORED, not restored.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-219: PRESUMPTION-339 (measurable exhaust tracks the constitutional aim; commit-yield display before PRS/peace dimensions exist)
+  15a: PARTIALLY-SUPPORTED (Weak; interim proxy instrumentation has precedent; proxy-aim gap nonzero by construction) | 15b: CHALLENGED (Strong; surrogation — display salience alone causes metric-substitution; throughput-first selects against low-exhaust peace/deliberation work)
+  Net: The live display enacts the highest-exposure surrogation configuration (single operator as optimizer) before the mission dimensions exist in the metric. Structural value question for Tom, not a monitoring matter.
+  Disposition: REVISE → REVISE-103 (Urgency MEDIUM-HIGH). Recommend: caveat-label the display, strip ranking salience, time-box the interim, add explicit PRS/peace placeholder dimensions (even as "not yet measured" slots) so the proxy cannot silently become the aim. Floor stands as MONITOR-335.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Run 2026-06-11 cycle-0 totals:** 39 items | 6 INCORPORATE (PREMISE-055..060) | 24 MONITOR (MONITOR-317..340) | 9 REVISE (REVISE-095..103) | DISPOSITION-181..219 | 3 NOVELTY flags (ASSUMPTION-293, ASSUMPTION-309, PRESUMPTION-330) | 7 SYSTEMIC-RISK flags recorded in revision_flags.md. Consistency check vs PREMISE-001..054: no conflicts; PREMISE-055 explicitly scoped against REVISE-095's substance-conflation; PREMISE-057's mechanics-only scope explicitly defers to REVISE-096/MONITOR-321 on distributional outputs.
+
+
+## 2026-06-11 — 15a/15b/15c RUN part 2 (drain of 15d 2026-06-07 RE-TRIGGER/RE-CHECK cohort — 149 items)
+
+**Run type:** Same scheduled c2a2-lit-search-pipeline run as the cycle-0 drain above; weekly-refresh hand-off per the 2026-05-24/2026-06-01 precedent. **Timing note (fail-loud):** 15d fired ON TIME (Sunday 2026-06-07) but the daily pipeline did not run 06-09/06-10, so this drain is 4 days late; next 15d check (2026-06-14) is unaffected.
+
+**Cohort:** 147 MONITOR items re-triggered 2026-06-07 (131 weekly cycle-2, 16 weekly cycle-3; the 7 monthly-cadence items are included within these counts per 15d's cohort note) + 2 monthly INCORPORATED-premise re-checks (ASSUMPTION-009/PREMISE-002, ASSUMPTION-024/PREMISE-004).
+
+**Landscape spot-check (honest sampling, 3 genuine web searches across distinct clusters):**
+1. **SMS/passwordless-auth security cluster** (ASSUMPTION-121, PRESUMPTION-153 et al.): 15b challenge REAFFIRMED and still strengthening — UAE Central Bank SMS/email-OTP elimination deadline (2026-03-31) now PASSED; RBI phishing-resistant-MFA baseline; BSP directive; NIST SP 800-63-4 keeps SMS "restricted." Continuation of the already-recorded strong challenge, not a new reversal — NOT auto-escalated to REVISE (15c spec: REVISE requires human review; cluster re-surfaced for Tom's attention, third consecutive refresh).
+2. **Multi-agent LLM systems instantiating research traditions** (core-architecture cluster): profile REAFFIRMED — field continues maturing (multi-agent systems as social-science paradigm, arXiv:2506.01839; structured collective intelligence). One sharpening on the against side: position-paper critique that role-playing simulations treat TRANSCRIPT PLAUSIBILITY as evidence of realism (arXiv:2603.00113) — directly relevant to the simulation-realism monitors and to today's MONITOR-325 (ASSUMPTION-300); no disposition flips, noted in the monitor record.
+3. **LLM sycophancy / AI-rater reliability** (dyad + agent-validity cluster): profile REAFFIRMED — mitigations reduce but do not eliminate (SycEval; sycophancy observed in ~58% of benchmark cases; judge biases COMPOUND); calibration + multi-judge + adversarial probes make automated evaluation serviceable with human anchoring. Consistent with today's MONITOR-323/329 dispositions; no flips.
+
+**Net outcome:** All 149 items refreshed by 15a and 15b (spot-check sampling; no per-item new-source search this cycle — flagged per fail-loud discipline) and re-dispositioned by 15c as CARRY FORWARD: 147 re-triggers remain MONITOR (weekly items next 15d check 2026-06-14; monthly items next 2026-07-05); 2 INCORPORATED premises (PREMISE-002, PREMISE-004) RE-CONFIRMED ACTIVE — no new challenging literature surfaced in the sampled clusters; PREMISE-004's standing independence caveat unchanged; next re_check_due 2026-09-07 (already advanced by 15d). 0 INCORPORATE→re-open, 0 new REVISE from this cohort. 0 items left searched-but-undispositioned.
+
+**Per-item record:** queue lines in for_lit_search.md carry [SEARCHED-15a: 2026-06-11] [SEARCHED-15b: 2026-06-11] [DISPOSITIONED-15c: 2026-06-11] per item; full item lists by cycle: cycle-2 (131) and cycle-3 (16) as tagged in the queue's 2026-06-07 cohort section; re-check (2): ASSUMPTION-009, ASSUMPTION-024. Existing monitor_queue.md entries remain authoritative for statements and per-item actions; cadence/next-check fields were already advanced by 15d on 2026-06-07.
+
+**Automated-refresh bound (standing note):** weekly LLM refresh is limited in surfacing genuinely new external literature; C2A2's own operational evidence remains the more sensitive change signal. Items reaching staleness thresholds are 15d's to downgrade, not this pipeline's.
+
+---
+
+## ═══ RUN 2026-06-12 (c2a2-lit-search-pipeline; autonomous) — cycle-0 cohort from 2026-06-11 EOD: ASSUMPTION-310..316, PRESUMPTION-340..346 (14 items) ═══
+
+### 15a RETURNS (FOR)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-310
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Schechtman, M., 1996. "The Constitution of Selves." Cornell University Press.
+  Summary: Narrative identity tradition (Ricoeur, Schechtman, Dennett's center of narrative gravity) strongly supports narrative as an individuating principle for persons, but none makes the exclusivity claim ("nothing else") nor works within a CRm frame. IIT/cosmopsychism literature confirms the individuation problem is live but does not resolve it in favor of narrative specifically.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-310_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-311
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: Wimsatt, W.C., 2007. "Re-Engineering Philosophy for Limited Beings." Harvard UP; Weisberg, M., 2006. "Robustness Analysis." Philosophy of Science 73(5).
+  Summary: Multiple derivability, consilience, robustness analysis, and convergent validity theory all directly support the inferential structure: independent derivations converging on the same conclusion constitute strong confirmatory evidence. The M3–M4 labelling is framework-internal but the epistemological logic is textbook.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-311_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-312
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: MacIntyre, A., 1990. "Three Rival Versions of Moral Enquiry." University of Notre Dame Press.
+  Summary: MacIntyre's primary texts and secondary literature directly support the methodological Thomism claim as stated; the qualifier ("methodological sense," sole-source claim not asserted) maps onto the position MacIntyre himself defends and the standard scholarly reading.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-312_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-313
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: Sunstein, C.R., 1995. "Incompletely Theorized Agreements." Harvard Law Review 108(7).
+  Summary: Sunstein's incompletely theorized agreements, Rawls's overlapping consensus, and Gilbert's minimal joint commitment all support selecting the weaker shared reading of a contested claim as a rational, non-concessionary strategy for genuine forward-moving agreement.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-313_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-314
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Campbell, D.T. & Fiske, D.W., 1959. "Convergent and Discriminant Validation by the Multitrait-Multimethod Matrix." Psychological Bulletin 56(2).
+  Summary: Convergent validity theory supports the inferential structure (two operationalizations identified as one construct), but the claim that falsifier-b and master-plan §6 yield are genuinely independent operationalizations is unverifiable from external literature and must be demonstrated internally.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-314_for.md
+
+NOVELTY-FLAG:
+  Item: ASSUMPTION-314
+  Searched: Convergent validity, construct identity, dual operationalization, PRS metrics, falsification criteria as progress measurement.
+  Finding: No literature addresses the specific claim that a falsifiability criterion and a progress-triplet milestone yield are the same measurement in a human-AI dyadic ladder system.
+  Implication: Sound measurement theory applied to a novel context; empirical demonstration of construct identity needed to move from "theoretically defensible" to "empirically established."
+  Recommended status: PARTIALLY-SUPPORTED (sound inferential structure; specific application novel and unverified)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-315
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: List, C. & Pettit, P., 2002. "Aggregating Sets of Judgments: An Impossibility Result." Economics and Philosophy 18(1).
+  Summary: The discursive dilemma provides a direct formal argument that conclusion-level agreement can mask premise-level disagreement, making separate reason logging the natural corrective; hidden-profile and deliberation literatures converge in support of the dual-reasons rule.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-315_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-316
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: Atomic-commit best-practice and software traceability literature (Herzig & Zeller; Swicegood; Loeliger & McCullough).
+  Summary: Atomic and cohesive commit practices are industry consensus with empirical support; provenance cleanness and repository health depend directly on commit cohesion. Session-scoped commits fit naturally within this framework.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-316_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-340
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Bolger, Davis & Rafaeli, 2003. "Diary Methods: Capturing Life as it is Lived." Annual Review of Psychology.
+  Summary: Diary/EMA studies establish participant-generated contemporaneous records as valid evidence; qualitative methods permit structured member-checking without external raters when the protocol is transparent. "Level-3 evidence" has no direct literature analogue; validity is conditional on internal tier definition.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-340_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-341
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Structured-template recording literature (e.g., chemistry-education recall-template studies, PMC4759737).
+  Summary: Structured templates demonstrably improve completeness and reduce idiosyncratic recorder variation, supporting the weaker form ("shapes less when structured"). The strong universal form ("does not shape") is not supported — interpretive/evaluative content remains susceptible.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-341_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-342
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Wegner 1987; Argote & Ren 2012. "Transactive Memory Systems: A Microfoundation of Dynamic Capabilities." Journal of Management Studies.
+  Summary: Transactive memory theory supports externalized written repositories as valid memory substitutes when meta-knowledge (what is stored where) is maintained; treating unwritten material as nonexistent is operationally consistent with such systems by design. Caveat: organizational memory literature documents high rates of knowledge never entering repositories.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-342_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-343
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Polanin et al., 2019. "Best Practice Guidelines for Abstract Screening Large-Evidence Systematic Reviews." Research Synthesis Methods 10(6).
+  Summary: Structured protocols with pre-specified criteria are the primary determinant of screening quality at volume. The literature does not support batch-size invariance in the strong form — reviewer fatigue is a documented moderator; best practice distributes large batches across sessions.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-343_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-344
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Goldratt & Cox, 1984. "The Goal"; Theory of Constraints Institute.
+  Summary: Lean/Kanban literature supports queue length as a legitimate flow-health indicator; TOC simultaneously explains why local queue clearance does not equal system health when the constraint migrates — the Five Focusing Steps require re-identifying the new constraint after each elevation. The presumption was valid in form; the health-monitoring implementation was incomplete.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-344_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-345
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Gollwitzer, P.M., 1999. "Implementation Intentions: Strong Effects of Simple Plans." American Psychologist 54(7).
+  Summary: Implementation intentions anchored to specific cues (if-then, explicit owner, deadline) achieve medium-to-large completion effects; vague goal intentions fail at much higher rates, and the Zeigarnik effect predicts untracked items losing salience across session boundaries. Conditions for plan-inventory durability are known; the evidence suggests C2A2 did not fully implement them.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-345_for.md
+
+NOVELTY-FLAG:
+  Item: PRESUMPTION-345
+  Searched: Plan-inventory durability in human-AI dyadic workflows using a markdown vault as both working memory and task tracker.
+  Finding: No direct literature. Implementation intentions address internal human memory; PM literature addresses team workflows with explicit assignment. The hybrid case (AI sole scribe, human-AI dyad, vault as tracker) has no published analogue.
+  Implication: C2A2 operates an untested design for plan durability; the 18-day gap is consistent with adjacent-literature predictions.
+  Recommended status: PARTIALLY-SUPPORTED (conditions known from adjacent domains; this configuration empirically open)
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-346
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Chang, H., 2004. "Inventing Temperature: Measurement and Scientific Progress." Oxford UP; Chang, H., 1995. "Circularity and Reliability in Measurement." Perspectives on Science 3(2).
+  Summary: Chang's coherentist framework supports non-vicious epistemic circularity when each iteration introduces genuinely new constraints; a pre-committed falsification criterion applied to one's own system retains severity if specified independently of the outcomes tested. Limiting condition: were the C2A2 falsifier criteria specified independently of the ledger content? Construct validity still requires some external anchor.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-346_for.md
+
+### 15b RETURNS (AGAINST)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-310
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Strawson, G., 2004. "Against Narrativity." Ratio 17(4): 428–452.
+  Specific risk: If the episodic self (Strawson) or animalist/haecceitist individuation accounts are correct, CRm lacks a defensible sole-principle-of-individuation, which is load-bearing for M7 agent-identity claims.
+  Summary: Strawson's episodic self directly contradicts the universality of narrative individuation; the cosmopsychist decombination problem shows the claim defers rather than solves the individuation puzzle; animalism and haecceity offer coherent alternatives. The "nothing else" clause is multiply contested.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-310_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-311
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Stegenga, J. & Menon, T., 2017. "Robustness and Independent Evidence." Philosophy of Science 84(3).
+  Specific risk: If CRm, IIT, and the computational frame share hidden structural premises (e.g., functionalism, information-theoretic structuralism), their convergence is pseudo-robust — coherence rather than consilience — invalidating the M3–M4 convergence milestone.
+  Summary: Stegenga's discordance critique and Orzack/Sober's derivational-robustness argument establish that convergence across frameworks carries evidential weight only if premise-independence is demonstrated, not assumed. A hidden-premise audit is required first.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-311_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-312
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Stout, J., 1988. "Ethics After Babel." Beacon Press; Lott, M., 2010 on methodological/substantive inseparability.
+  Specific risk: Methodological Thomism may not be separable from substantive Thomism, silently encoding the designer's metaphysical preferences into resolution procedures, so M8 outcomes reflect those preferences rather than rational adjudication.
+  Summary: Stout, Nussbaum, Gadamer, and Habermas each provide coherent rival accounts of cross-tradition rational resolution without MacIntyre's Thomist dialectical structure; the inseparability concern means the methodological/substantive distinction the assumption relies on may not hold in practice.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-312_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-313
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Bathaee, Y., 2007. "Incompletely Theorized Agreements: An Unworkable Theory." Fordham Urban Law Journal 34(5).
+  Specific risk: Weaker-reading agreements defer rather than resolve substantive disagreements; they may accumulate in the ladder log as false progress signals that collapse at application time (M7–M8).
+  Summary: Negotiation and legal literature shows strategically ambiguous agreements succeed at convergence but fail at application; the "no concession" framing is preserved formally while substantive disagreement is stored up, distorting the PRS metric.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-313_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-314
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Cronbach, L.J. & Meehl, P.E., 1955. "Construct Validity in Psychological Tests." Psychological Bulletin 52(4); Lakatos, I., 1978. Methodology of Scientific Research Programmes.
+  Specific risk: Using agreed-rung count as both falsifier criterion and PRS-milestone yield creates a non-falsifiable inner loop — the system cannot detect its own failure in the domain where it claims to be most testable; structurally degenerative in Lakatosian terms.
+  Summary: The jingle fallacy and construct-validity literature establish that a single observable cannot simultaneously serve as falsification criterion and progress metric without circularity. This is a structural measurement problem, not a data problem.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-314_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-315
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Nisbett, R.E. & Wilson, T.D., 1977. "Telling More Than We Can Know." Psychological Review 84(3); informational-cascade literature on reason-giving requirements.
+  Specific risk: Confabulation (post-hoc rationalisation) and informational cascade (sequential reason-sharing producing correlated logs) can make separately-logged reasons neither introspectively accurate nor informationally independent.
+  Summary: Sincere reason-giving can be post-hoc and uninformative; requiring participants to share reasons may amplify rather than reduce correlation. Both threats apply to AI and human agents. Pre-commitment logging and adversarial challenge steps are available mitigations.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-315_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-316
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Herzig, K. & Zeller, A., 2013. "The Impact of Tangled Code Changes." MSR 2013; Kawrykow & Robillard, 2011, ICSE.
+  Specific risk: Session-scoped commits guarantee attributed provenance (who/when) but not logical provenance (one concern per commit); sessions bundling rung agreements, extractions, and config changes make sub-session rollback and precise attribution unreliable.
+  Summary: Session/time-bounded commits are a primary source of tangled commits, which degrade repo health for archaeology, rollback, and blame. "Provenance clean" conflates two distinct senses; session-scoping addresses only the weaker one.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-316_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-340
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Bazerman, Morgan & Loewenstein, 1997. "The Impossibility of Auditor Independence." MIT Sloan Management Review.
+  Specific risk: Without an independent rater, the dyad cannot distinguish genuine agreement from motivated construal; rung counts inflate via self-serving coding bias, and the maturity model built on the ledger inherits the circularity.
+  Summary: Psychometric standards require independent raters as a precondition for valid agreement coding; self-serving bias enters coding unconsciously even in good faith; researcher degrees of freedom allow the data-producing party to reach almost any desired coding outcome.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-340_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-341
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Yang et al., 2025. "Frame In, Frame Out: Measuring Framing Bias in LLM-Generated News Summaries." arXiv:2505.05406.
+  Specific risk: The AI scribe's design-level cooperative bias (helpfulness, agreement-facilitation) systematically omits conflict and softens disagreement, drifting the vault record toward a rosier representation and inflating downstream maturity assessments.
+  Summary: LLM summarization introduces framing bias in ~22% of instances; human note-taker research shows selective recording toward desired outcomes; a cooperatively-trained AI scribe is predisposed to curate rather than transcribe.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-341_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-342
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Polanyi, M., 1966. "The Tacit Dimension." Doubleday.
+  Specific risk: Vault retrieval acts as a confirmation amplifier — finding material consistent with current framing, missing material that would challenge it — while tacit knowledge is permanently excluded, narrowing rather than broadening over time.
+  Summary: Two independent challenge lines converge: tacit knowledge cannot be fully externalised in principle (unwritten material is not nonexistent, merely inaccessible); and streetlight-effect retrieval bias means even written material is recovered selectively by query framing.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-342_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-343
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Code-review batch-size empirical data (large PRs show sharply lower defect-detection); decision-fatigue meta-analyses; vigilance-decrement literature.
+  Specific risk: Items late in a 188-item batch get under-scrutinised relative to daily cadence; high-stakes items falling late may receive rubber-stamp disposition while the pipeline reports "188 processed" as if quality were positionally uniform.
+  Summary: Decision fatigue, vigilance decrement (degradation within 20–30 minutes of sustained screening), and code-review data all directly contradict batch-size invariance; a single-session drain concentrates cognitive load in a way daily cadence does not.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-343_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-344
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Goldratt, E.M., 1990. "Theory of Constraints." North River Press.
+  Specific risk: The pipeline self-reports healthy (empty disposition queue) while 57 items accumulate unreviewed at the review stage; capacity and prioritisation decisions are made on a metric that does not track actual throughput.
+  Summary: TOC is explicit that measuring a non-constraint stage produces local optima masking global performance; the C2A2 case is a direct instance — the constraint migrated to the review stage but the health metric stayed anchored to the original queue.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-344_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-345
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: McDaniel, M.A. & Einstein, G.O., 2007. "Prospective Memory: An Overview and Synthesis of an Emerging Field."
+  Specific risk: The plan-inventory accumulates ghost entries — proposed artifacts never created, absence never noticed — diverging vault coverage from vault intention and potentially crediting planning activity as artifact production in the maturity model.
+  Summary: The presumption is already empirically falsified by the cited 18-day individuation_vs_reunion.md gap; prospective-memory research confirms the mechanism (deferred intentions without external cues fail at high rates across session boundaries); orphaned-TODO research shows the same pattern in a structurally analogous setting.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-345_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-346
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Simmons, Nelson & Simonsohn, 2011. "False-Positive Psychology." Psychological Science.
+  Specific risk: The dyad's self-falsification systematically passes its own tests because design, execution, and interpretation are controlled by the same party; the dyad becomes fluent at designing tests its own system can pass, reporting robustness rather than reliability.
+  Summary: Auditing standards treat self-review as a named independence impairment; self-serving bias enters evaluation unconsciously; falsificationism requires disconfirmatory intent or community provision of it — a system that only ever falsifies itself cannot generate independent corroboration.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-346_against.md
+
+### 15b SYSTEMIC-RISK FLAGS (2026-06-12)
+
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-06-12
+  Affected items: ASSUMPTION-311, ASSUMPTION-312, ASSUMPTION-314, ASSUMPTION-315
+  Common vulnerability: Self-referential measurement and circularity in a system that tests its own architecture. ASSUMPTION-314 (same observable as falsifier and metric), 311 (convergence possibly driven by shared premises), 315 (reason logs produced by the system being assessed), 312 (methodology that may predetermine its own conclusions): each independently creates partial immunisation against disconfirmation; together they compound into a self-sealing structure.
+  Literature basis: Lakatos 1978 (degenerating programmes); Stegenga & Menon 2017 (pseudo-robustness); Cronbach & Meehl 1955 (construct validity); Bathaee 2007 (deferred disagreement).
+  Risk level: Critical
+  Recommendation: Before M4 sign-off, audit the measurement architecture for circularity: (1) pre-register falsification thresholds independently of PRS yield counts; (2) hidden-premise audit of the three convergence frames; (3) pre-commitment reason-logging with blinded reveal; (4) operationalise the methodological-Thomism resolution procedure in a form testable against rival methods. The risk is not that any single assumption is false but that their combined structure makes the programme unfalsifiable in practice.
+
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-06-12
+  Affected items: PRESUMPTION-340, PRESUMPTION-341, PRESUMPTION-346 (new); PRESUMPTION-293, 294, 295, 297, 330, 333 (prior cluster)
+  Common vulnerability: Dyad-measurement circularity — the same party (the dyad, with the AI agent as operative instrument) produces the evidence, codes it (340), scribes the record (341), and applies the falsifier (346). No stage in the evidence chain has structural independence from the dyad.
+  Literature basis: Bazerman, Morgan & Loewenstein 1997; Moore, Loewenstein, Tanlu & Bazerman 2006; Simmons, Nelson & Simonsohn 2011; Yang et al. 2025 (LLM framing bias); standard psychometric inter-rater requirements.
+  Risk level: Critical (escalated from HIGH)
+  Recommendation: The prior cluster flagged HIGH on dyad-measurement-validity; 340/341/346 show the validity problem is structural across the entire evidence chain — capture, coding, and falsification all lack independence. Minimum viable mitigation: at least one structurally independent observer at one stage of the chain. The against-agent architecture is a partial mitigation for 346 but insufficient alone (the dyad retains final interpretation authority). Escalate to 14b for architectural review before the next pipeline cycle.
+
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-06-12
+  Affected items: PRESUMPTION-343, PRESUMPTION-344, PRESUMPTION-345
+  Common vulnerability: Pipeline health measurement failures — quality degrades with batch size while items are counted as if uniform (343); queue emptiness at the wrong stage reported as health (344); plan-inventory gaps accumulate without alerts (345). All three produce the same failure class: the system reports healthy/productive while quality, constraint location, and plan coverage drift from reported values.
+  Literature basis: Goldratt 1990 (TOC); decision-fatigue meta-analyses; code-review batch-size data; McDaniel & Einstein 2007; Dismukes 2010 (prospective memory in operational settings).
+  Risk level: High
+  Recommendation: Replace stage-local count-based health metrics with end-to-end flow metrics (cycle time, WIP per stage, plan-inventory completion rate). A single cumulative flow diagram covering item creation through final disposition would surface all three failure modes simultaneously. Add as a pipeline architecture action item before the next large-batch drain.
+
+### 15c DISPOSITIONS (2026-06-12)
+
+DISPOSITION-220:
+  Date: 2026-06-12
+  Item: ASSUMPTION-310
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: The narrative-identity tradition supports narrative as AN individuating principle for persons; nothing in the literature supports the exclusivity clause ("there is nothing else"), and Strawson's episodic self, the decombination problem, and non-narrative individuation accounts (animalism, haecceity, spatiotemporal continuity) directly contest it.
+  Disposition: REVISE (REVISE-104)
+  Reasoning: The challenged element is precisely the load-bearing part for M7 — exclusivity. Support exists only for the weaker non-exclusive claim. A concrete revision is available (weaken to non-exclusive, or add an explicit defense of exclusivity against Strawson and the decombination objection), and as a philosophical commitment this is exactly the kind of item that requires Tom's review, not autonomous adjudication.
+  What is at risk: M7 agent-identity claims; CRm's individuation story.
+  Recommended action: Weaken to "narrative-embedded perspective is the (or a) primary principle of individuation" OR write the explicit defense of the "nothing else" clause against the episodic-self and decombination objections. The choice is substantive philosophy — Tom's call.
+  Urgency: Medium (load-bearing for M7, but no imminent milestone decision detected)
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-221:
+  Date: 2026-06-12
+  Item: ASSUMPTION-311
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: The inferential structure (multiple derivability as confirmation) is textbook-supported; the challenge is a condition, not a refutation — convergence carries evidential weight only if premise-independence of the three frames is demonstrated rather than assumed.
+  Disposition: MONITOR (MONITOR-341)
+  Reasoning: Support is strong but conditional on an audit that has not been performed. INCORPORATE would validate the convergence claim before the independence condition is checked — exactly the pseudo-robustness failure 15b documents. Part of the new self-referential-measurement Critical cluster; do not credit M3–M4 convergence evidence until the audit exists.
+  What would change the disposition: A hidden-premise audit of CRm, Tononi-style phenomenology, and the computational frame demonstrating genuine premise-independence -> INCORPORATE; audit finding shared structural premises -> REVISE.
+  Monitoring cadence: Weekly (15d)
+  Priority: Medium
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-222:
+  Date: 2026-06-12
+  Item: ASSUMPTION-312
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Classic CONTESTED configuration: MacIntyre's primary texts and sympathetic secondary literature support the claim as qualified; Stout/Nussbaum/Gadamer/Habermas supply live rival integration accounts, and the methodological/substantive separability the claim depends on is itself contested (Lott).
+  Disposition: MONITOR (MONITOR-342)
+  Reasoning: Strong support + strong challenge -> MONITOR per heuristic. This is an active philosophical dispute, not a design defect; the C2A2-actionable question is whether the M8 resolution procedure can be operationalised so that Thomist and rival methods are comparable in practice — which would convert a methodological credo into a testable claim. High priority: load-bearing for M8 and member of the self-referential-measurement Critical cluster.
+  What would change the disposition: Operationalisation of the resolution procedure testable against rival methods (Gadamerian, Habermasian) -> INCORPORATE if it wins, REVISE if it cannot be operationalised or loses; demonstration that methodological cannot be separated from substantive Thomism -> REVISE.
+  Monitoring cadence: Weekly (15d)
+  Priority: High
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-223:
+  Date: 2026-06-12
+  Item: ASSUMPTION-313
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Sunstein/Rawls/Gilbert provide strong direct support for weaker-reading agreement as a rational non-concessionary convergence strategy; the challenge (deferred disagreement can collapse at application time) is a documented boundary condition, not a refutation, and is mitigable by tracking.
+  Disposition: INCORPORATE (PREMISE-061, Moderate confidence)
+  Reasoning: Strong support + moderate challenge -> INCORPORATE with caveats folded. The challenge defines the premise's maintenance requirement rather than defeating it: weaker-reading rungs are valid agreements that must remain marked as incompletely theorized so their application-time stress is observable. Consistency-checked against PREMISE-001..060: no conflict; complements PREMISE-058 (independence-weighting) and the dual-reasons rule.
+  Validated premise statement: see PREMISE-061 in validated_premises.md
+  Confidence: Moderate
+  Applicable to: dyad ladder protocol (rung agreement procedure); PRS counting; M7-M8 progression logic.
+  Re-check cadence: Quarterly (15d)
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+
+DISPOSITION-224:
+  Date: 2026-06-12
+  Item: ASSUMPTION-314
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED (+ NOVELTY flag) | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Convergent-validity theory permits identifying two operationalizations as one construct, but 15b shows the specific identification creates a non-falsifiable inner loop: the same observable (agreed-rung count) serving as both falsification criterion and progress metric is the jingle fallacy in structural form, degenerative in Lakatosian terms.
+  Disposition: REVISE (REVISE-105)
+  Reasoning: Moderate conditional support vs. strong structural challenge; anchor member of the new self-referential-measurement Critical cluster. The revision is concrete and cheap relative to the stakes: separate the operationalizations or pre-register the falsifier threshold independently of the yield metric. NOVELTY noted — the underlying idea may still be an original contribution if the construct identity is demonstrated empirically rather than stipulated.
+  What is at risk: The falsifiability of the entire dyad-ladder programme; M-milestone evidence integrity.
+  Recommended action: Pre-register falsifier-(b) thresholds and operational definitions independently of master-plan §6 yield counting; treat construct identity as a hypothesis to demonstrate (correlate the two counts across sessions), not an identity to assume.
+  Urgency: High
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-225:
+  Date: 2026-06-12
+  Item: ASSUMPTION-315
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: The discursive dilemma gives formal grounds for the dual-reasons rule; the challenge (confabulation, cascade-correlated reasons) attacks the evidential ceiling of logged reasons, not the rule itself, and has known procedural mitigations.
+  Disposition: INCORPORATE (PREMISE-062, Moderate confidence)
+  Reasoning: Strong support + moderate challenge with available mitigations -> INCORPORATE with the mitigations folded as caveats: reasons must be logged BEFORE mutual reveal (pre-commitment), and logged reasons are evidence of premise-level structure, not guaranteed introspective truth. Consistency-checked against PREMISE-001..060: no conflict; directly reinforces PREMISE-058 (independence-weighting).
+  Validated premise statement: see PREMISE-062 in validated_premises.md
+  Confidence: Moderate
+  Applicable to: dyad ladder protocol (dual-reasons rule); agreement-quality evidence; sycophancy countermeasures.
+  Re-check cadence: Quarterly (15d)
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+
+DISPOSITION-226:
+  Date: 2026-06-12
+  Item: ASSUMPTION-316
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Atomic-commit value is consensus, but the two directions are about different things: 15a supports atomic/cohesive commits; 15b shows session-scoped is not the same as atomic (tangled-commit risk) — the claim conflates attributed provenance (who/when, which session-scoping does deliver) with logical provenance (one concern per commit, which it does not).
+  Disposition: MONITOR (MONITOR-343)
+  Reasoning: The premise is true in its weak reading (session commits give clean attribution) and unproven in its strong reading (repo health). Whether C2A2 sessions produce single-concern or tangled commits is an empirical question answerable from the repo itself. Adjacent to REVISE-102 (WIP/integration cadence) — resolve jointly.
+  What would change the disposition: Repo audit showing session commits are predominantly single-concern -> INCORPORATE (weak reading); audit showing routine tangling -> REVISE (split commits by concern within sessions).
+  Monitoring cadence: Weekly (15d)
+  Priority: Medium
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-227:
+  Date: 2026-06-12
+  Item: PRESUMPTION-340
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Diary/EMA precedent legitimises participant-generated records as data; it does not legitimise the dyad as sole CODER of its own agreement quality. The psychometric inter-rater requirement and auditor-independence literature directly challenge unaudited self-coding as Level-3 evidence.
+  Disposition: REVISE (REVISE-106)
+  Reasoning: PRESUMPTION with strong challenge -> REVISE with HIGH urgency per heuristic. This is the anchor of the dyad-measurement-validity cluster, now escalated to Critical: capture, coding, and falsification all lack structural independence. The single shared remedy already identified by the prior cycle (dyad reliability protocol) plus periodic external rating of a ledger sample would discharge most of the cluster.
+  What is at risk: Level-3 evidential status of the agreement ledger; everything the maturity model builds on it.
+  Recommended action: Define Level-3 to require at least periodic independent rating (external human, or a structurally independent agent with no stake in the ledger) of a random rung sample; implement the dyad reliability protocol (stamped assents, anchor re-presentation, catch trials) from the prior cluster recommendation.
+  Urgency: High
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-228:
+  Date: 2026-06-12
+  Item: PRESUMPTION-341
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Templates reduce recorder variation (supporting the weaker claim), but the strong claim — no shaping — is contradicted by note-taker framing research and by directly-applicable LLM-summarization framing-bias measurements (~22% of instances). The scribe here IS an LLM with cooperative training.
+  Disposition: REVISE (REVISE-107)
+  Reasoning: PRESUMPTION with strong, domain-direct challenge -> REVISE. The mitigation is cheap and preserves the workflow: keep the agent as scribe but retain verbatim raw transcripts alongside curated records, and spot-audit divergence. Member of the dyad-measurement Critical cluster (the scribing-neutrality facet).
+  What is at risk: Fidelity of the shared record the ledger is built from; conflict/disagreement systematically under-recorded.
+  Recommended action: Retain raw session transcripts as the record of reference (curated notes as index, not substitute); periodic human spot-audit of curated-vs-verbatim divergence, specifically checking softened disagreement; structured template fields for dissent so its absence is conspicuous.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-229:
+  Date: 2026-06-12
+  Item: PRESUMPTION-342
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Transactive-memory theory supports vault-as-memory when meta-knowledge is maintained; the challenge is partly in-principle (tacit knowledge is inexpressible by definition — no design change reaches it) and partly operational (streetlight retrieval bias — measurable).
+  Disposition: MONITOR (MONITOR-344)
+  Reasoning: Deviation from the PRESUMPTION+strong-challenge->REVISE heuristic, surfaced explicitly: the in-principle component is not remediable by revision, and the operational component has no observed failure yet (the observed plan-inventory failure is 345's, a different mechanism). Monitoring with a concrete retrieval-audit instrument is the proportionate response; REVISE would generate an unactionable flag.
+  What would change the disposition: Retrieval-audit data (known-item recovery rate; query-framing sensitivity test) showing material misses -> REVISE (add elicitation passes / retrieval protocol); clean audit -> INCORPORATE the operational claim with the tacit-knowledge boundary stated.
+  Monitoring cadence: Weekly (15d)
+  Priority: Medium
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-230:
+  Date: 2026-06-12
+  Item: PRESUMPTION-343
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Weak support (protocols help at volume) vs. strong convergent challenge (decision fatigue, vigilance decrement, batch-size quality effects). No literature supports invariance at 188-item scale; best practice is explicit that large batches should be distributed.
+  Disposition: REVISE (REVISE-108)
+  Reasoning: Weak support + strong challenge -> REVISE per heuristic, and the condition recurs (backlog drains have happened twice). Directly relevant to THIS pipeline's own operation — the 2026-06-11 drain processed 188 items in one run; its dispositions are now flagged as positionally suspect by this evidence.
+  What is at risk: Disposition quality on large drains; specifically late-batch high-stakes items (REVISE/SYSTEMIC-RISK calls) receiving rubber-stamp treatment.
+  Recommended action: Cap autonomous-run batch size (suggest ~30 dispositions/run, multiple runs to drain); randomize or stake-order item processing so high-priority items do not cluster late; consider a spot re-review of late-position dispositions from the 2026-06-11 drain.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-231:
+  Date: 2026-06-12
+  Item: PRESUMPTION-344
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Rare case where both directions converge on the same conclusion: queue metrics are legitimate flow indicators (15a) AND the health indicator must migrate with the constraint, which it demonstrably did not — 57 items sit at AWAITING-REVIEW while the pipeline reports "queue empty" (15b, predicted exactly by TOC).
+  Disposition: REVISE (REVISE-109)
+  Reasoning: PRESUMPTION with strong challenge, already-observed instance, and a known cheap fix. The two search directions jointly specify the revision rather than disputing it.
+  What is at risk: Capacity and prioritisation decisions made on a false health signal; invisible accumulation at the human-review constraint.
+  Recommended action: Report end-to-end flow in every run summary: per-stage WIP (QUEUED / SEARCHED / DISPOSITIONED / AWAITING-REVIEW), oldest-item age, and net flow at the constraint (review stage), not just disposition-queue emptiness. A simple cumulative-flow table in the PROCESSED block suffices.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-232:
+  Date: 2026-06-12
+  Item: PRESUMPTION-345
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED (+ NOVELTY flag) | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: The presumption is already empirically falsified by its own citing instance (18-day unnoticed gap); the FOR literature does not contradict this — it specifies the missing conditions (if-then anchoring, owner, deadline, external cue) under which plan durability IS achievable.
+  Disposition: REVISE (REVISE-110)
+  Reasoning: An observed counterexample plus literature explaining the mechanism is the clearest REVISE configuration in this cohort. The fix is well-specified by the supporting literature itself. NOVELTY noted: the vault-as-tracker hybrid configuration is unstudied — C2A2's reconciliation-audit data would be a publishable observation.
+  What is at risk: Vault coverage silently diverging from vault intention; planning activity miscounted as production.
+  Recommended action: Add a plan-artifact reconciliation sweep (scheduled, e.g. weekly): extract proposed-artifact mentions from session notes/plans, diff against vault contents, surface orphans with age. Give every proposed artifact an implementation-intention structure (owner, trigger cue, due date) at proposal time.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-233:
+  Date: 2026-06-12
+  Item: PRESUMPTION-346
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Chang's coherentism shows self-testing CAN be non-vicious — but only under the independence condition (falsifier specified independently of the tested outcomes), which is exactly what 15b shows is absent: the same dyad designs the test, produces the data, and interprets the result, with researcher degrees of freedom at every step.
+  Disposition: REVISE (REVISE-111)
+  Reasoning: PRESUMPTION with strong challenge -> REVISE, HIGH urgency: this is the falsification-independence facet of the dyad-measurement Critical cluster, and it also couples to REVISE-105 (falsifier/metric circularity). The supporting literature supplies the precise remedy: pre-registration.
+  What is at risk: The epistemic value of the dyad's reflexive falsification programme — its tests may be passable by construction.
+  Recommended action: Pre-register falsifier definitions, thresholds, and analysis procedure (timestamped, committed before ledger inspection); have the falsifier applied or at least verified by a party outside the dyad (15-series agent or human third party); log all analytic choices to constrain degrees of freedom.
+  Urgency: High
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+**Run tally 2026-06-12: 14 dispositioned (DISPOSITION-220..233): 2 INCORPORATE (PREMISE-061, -062), 4 MONITOR (MONITOR-341..344), 8 REVISE (REVISE-104..111).**
+
+
+## ═══ RUN 2026-06-16 (c2a2-lit-search-pipeline; autonomous; Tom not present at fire time) — cycle-0 cohorts from 2026-06-14 EOD (ASSUMPTION-317, PRESUMPTION-347/348) + 2026-06-15 EOD (ASSUMPTION-318..321, PRESUMPTION-349..354): 13 items ═══
+
+### 15a RETURNS (FOR)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-317
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-Moderate
+  Key source: TTL/cache-freshness semantics; Percentage-of-Completion accounting.
+  Summary: The mechanism (a mark resets a staleness clock) is standard TTL semantics, and the instinct (partial ≠ full completion) is supported by POC accounting and staged-review coverage — but the supportive literature points to per-sub-component freshness clocks, not the chosen "leave unmarked" remedy. NOVELTY flagged: the specific sub-component-staleness pattern is unstudied.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-317_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-347
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Dependency-pinning/reproducibility practice; AWS Well-Architected REL05-BP01.
+  Summary: Pinning is sound practice (reproducibility/determinism), so pinning the model was defensible — but the literature supports "pin + fallback," not "a pin is permanent." The inferred premise (pin stays valid indefinitely) is essentially unsupported; pinning is only safe for immutable, durably-hosted artifacts, which a vendor model alias is not.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-347_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-348
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: (none) — cron/observability literature describes the opposite.
+  Summary: No literature supports "a failing scheduled task announces its own failure." The entire cron-monitoring field exists because the premise is false. Only adjacent case: an explicitly error-instrumented task — which requires the liveness machinery the premise assumes unnecessary.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-348_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-318
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Software-metrics activity-proxy practice (stackoverflow.blog 2020); comparative-proxy critiques (Java Code Geeks 2026; GitVelocity).
+  Summary: Files-added is a reasonable DESCRIPTIVE activity proxy and the comparative claim (better than tokens/commits) has support — tokens are an input, commit-counts are granularity-noisy. Support conditional on descriptive use + counter-metrics + no optimizer wiring.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-318_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-319
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: MSR practice (Palomba/Verdecchia 2025); Claes et al. 2018 (timestamps reliable at daily resolution).
+  Summary: Dating triplet-completion from git history is standard MSR and supported at the daily resolution used; commit timestamps reliably recover day-level structure. Holds for coarse dating; not for commit-instant = completion-instant. Conditional on prs_triplets.md being committed near-real-time, not backfilled.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-319_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-320
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: Tufte (graphical integrity); time-series missing-data viz review (arXiv:2507.14920).
+  Summary: Strong support: don't show data that don't exist, never silently impute/zero-fill, expose missingness + provenance, distinguish measured vs inferred. "Absent ≠ zero" is settled best practice. Only caveat: encode gaps legibly (couples 351).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-320_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-321
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: MacIntyre 1988/1990 (tradition-constituted enquiry).
+  Summary: Traditions-as-unit and a rationality-theorist role + an integrator role are coherent within the project's own mentor framework. Support is for framework coherence and role-types; the specific roster and team=folders equation are design choices the framework does not dictate (couples 353). MacIntyre-as-member vs framework-supplier is a flagged testable edge.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-321_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-349
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: (none) — equal-weighting is a tractability default, not validated commensurability.
+  Summary: No support for "one file = one unit of yield." At most, equal-weighting is the maximum-entropy default under ignorance for rough descriptive use; it has no standing as a commensurability claim and collapses the moment the count is used comparatively or as a target.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-349_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-350
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Claes et al. 2018; MSR validity literature (invalid timestamps <0.1%).
+  Summary: For aggregate daily-resolution timelines, commit timestamps are a reasonably faithful clock (work-rhythm recovery; rare invalid timestamps). Supports the weak reading only; does not extend to commit-instant = production-instant. Must be scoped to daily aggregates + backfill check.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-350_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-351
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: imputeTS/FlowingData missing-data conventions; Cleveland & McGill 1984.
+  Summary: Only weak, conditional support: a visible gap-marker is understood WHEN it uses an established convention the viewer has learned. Comprehension tracks convention-familiarity, not visibility — so a novel/custom gap encoding (likely here) does not inherit the support.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-351_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-352
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Missing-data mechanism taxonomy (Rubin/Little; Pham 2022); signal-processing missing-data (arXiv:2506.01696).
+  Summary: The capture-artifact hypothesis is plausible and pattern-consistent (instrumentation dropout is a known MCAR cause; abrupt cliffs are an acquisition-failure signature) AND the item notes it is empirically decidable by an existing probe. Strongest honest FOR: "credible hypothesis, test it" — not "it is an artifact."
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-352_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-353
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: (none) — convention-over-configuration gives a convenient index, not an authoritative source.
+  Summary: No support for folder-count as the AUTHORITATIVE membership source. At most a deliberately-curated directory can be a convenient index if reconciled against an independent criterion; the inferred premise inverts the proper dependency (membership should define folders).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-353_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-354
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate-Strong
+  Key source: MacIntyre 1988/1990 (rival traditions, epistemic crisis); Kuhn 1962 (paradigm competition).
+  Summary: The rivalry/contest relation is genuinely supported by the project's own framework — traditions/paradigms compete and a tradition can defeat a rival. Support is for "rivalry via immanent critique / epistemic crisis," and it warns against the shared-metric "open seat / same scoreboard" reading the metaphor invites (see 15b).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-354_for.md
+
+### 15b RETURNS (AGAINST)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-317
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: TTL granularity design; observability "absence ≠ evidence"; POC accounting.
+  Specific risk: A completed-but-unmarked transcript pass is indistinguishable from work never done; coverage is silently undercounted and the pass can be lost.
+  Summary: The concern (masking coverage) is valid but the remedy (leave unmarked) trades a visible failure for an invisible one. Cache design and POC both prescribe finer-grained recording, not binary mark/no-mark. The binary framing is the defect; fix is per-sub-component freshness (resolves OPEN-082).
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-317_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-347
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: API-deprecation practice (oneuptime 2026); graceful-degradation/fallback patterns (AWS REL05-BP01; Zylos 2026).
+  Specific risk: Any task pinned to a single hosted model is a time-bomb that fires on vendor deprecation; total + (with 348) invisible failure; likely shared across tasks.
+  Summary: Strongly challenged and already falsified by its trigger. Hosted aliases deprecate on vendor time; pins to vendor namespaces rot. Consensus: soft dependency + preflight availability check + fallback chain. Pinned single model w/ no fallback is the named anti-pattern.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-347_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-348
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Dead-man's-switch/heartbeat monitoring (UpDog; watchflow 2026); silent cron-failure characterization (OnlineOrNot; DEV 2026).
+  Specific risk: Any scheduled-task failure is invisible until a human notices missing output (here ~3 days; unbounded in principle); downstream pipelines silently run on absent inputs.
+  Summary: Strongly challenged and falsified by the 3-day outage. Cron monitoring is built on the inverse principle ("guilty until proven innocent" — infer health from a received success ping). Remedy (heartbeat + output assertions) is standard and cheap.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-348_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-318
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Strong
+  Key source: Construct-validity critiques (stackoverflow.blog 2020; arXiv:2406.14494); Goodhart/Campbell (Hillel Wayne); counter-metric requirement.
+  Specific risk: User optimizes file-count (more, thinner files), inflating "metabolism" that is partly an artifact of its own headline; worse if wired to an optimizer.
+  Summary: Strong on construct validity + Goodhart: a low-validity byproduct proxy promoted to sole HEADLINE maximizes gaming exposure and violates "never a single metric." "Least-bad proxy" ≠ "right headline." Mitigation: demote, pair with counter-metrics, label activity-not-value, no optimizer wiring.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-318_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-319
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Committer-vs-author date + history rewriting (Palomba/Verdecchia 2025; arXiv:2501.15114); batch/quick-remedy commits (PMC8553712).
+  Specific risk: Timeline shows spikes on ledger-update days, false zeros on real-work days; backfill appears as a single productivity burst.
+  Summary: Method valid in principle but the specific validity claim is challenged by MSR temporal-validity threats that are the EXPECTED pattern for a hand-maintained markdown ledger (batch/backfill, committer/author ambiguity). Mitigation: audit history for batch signatures; explicit completion-date field; fix date semantics.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-319_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-320
+  Search direction: AGAINST (disconfirmatory)
+  Result: NO-CHALLENGE-FOUND
+  Strength: Weak
+  Key source: time-series missing-data viz review (arXiv:2507.14920) — boundary conditions only.
+  Specific risk: Minimal; over-applying as raw blanks hurts legibility in dense series.
+  Summary: No literature contradicts the integrity principle; "silent zero" has no defenders. Only boundary conditions: dense gaps add noise; marked imputation-with-uncertainty can beat a bare gap for some tasks. Refines HOW to be gap-honest, not WHETHER (couples 351).
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-320_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-321
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: MacIntyre framework-vs-member distinction (1988); membership-criterion critique; folder-as-ontology risk.
+  Specific risk: Team boundary drifts with folder structure; MacIntyre's arbiter-vs-contestant status ambiguous (he adjudicates the others — a self-reference); counts inherit an arbitrary roster.
+  Summary: Doesn't refute traditions-as-unit; challenges the SPECIFIC equation team=folders + the two role-assignments. No stated membership criterion; folder layout silently defines ontology (353 hazard); MacIntyre may be framework not member. Mitigation: explicit criterion; distinguish framework-suppliers from object-level traditions; decide MacIntyre's status.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-321_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-349
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Construct-validity critique (arXiv:2406.14494); Goodhart/Campbell; LOC equal-weighting anti-pattern.
+  Specific risk: Every downstream use inherits false commensurability; foregrounding/optimizing rewards artifact-splitting and thin files.
+  Summary: Files are heterogeneous in size/effort/value; treating each as one unit has low construct validity and is the gaming mechanism — the field settled this via LOC. As an unexamined PRESUMPTION it carries extra weight. Mitigation: weighted/distribution-aware view; show size distribution; never a target/optimizer input.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-349_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-350
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate (Strong on the literal "faithful clock" reading)
+  Key source: Committer/author + history rewriting (Palomba/Verdecchia 2025); committed≠completed (arXiv:2009.01694).
+  Specific risk: Per-event timing off by commit-lag; batch/backfill collapse events onto one date; committer/author choice shifts events across day boundaries.
+  Summary: The literal "faithful clock" framing is strongly challenged — timestamps record a VCS action, are ambiguous/editable, and decouple from work via batching. Good for aggregate daily rhythm (weak reading) only. Mitigation: scope to daily aggregates; author-date; explicit completion timestamps; flag batch commits.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-350_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-351
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Graphical-perception/encoding comprehension (Cleveland & McGill 1984; arXiv:2507.14920); legend discoverability; trace-vs-substance family.
+  Specific risk: Honest gaps misread (capture artifact read as "did nothing"; real inactivity read as glitch) — integrity gained at display is lost at comprehension.
+  Summary: A visible gap-marker is not self-interpreting; comprehension tracks learned encodings, and a custom convention has none. Instance of the project's trace-vs-substance error (presence presumed to equal delivered function). Mitigation: annotate gaps with reason; legend; comprehension-test; encode artifact-vs-real differently (couples 352).
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-351_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-352
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong (against the assumption-without-diagnosis)
+  Key source: Missing-data mechanism taxonomy (Rubin/Little; Pham 2022); mechanism-diagnosis (bookdown); nonignorable-missingness bias (arXiv:2507.06961).
+  Specific risk: A real (MNAR) decline dismissed as "just an artifact" hides a true signal; undiagnosed mechanism biases everything downstream.
+  Summary: Can't read the missingness mechanism off the pattern; "artifact" is the MCAR-convenient reading when an abrupt cliff is equally MNAR-consistent; the Apr-6 timing coincidence is a classic confound. Hypothesis fine; treating it as conclusion before running the available probe is the error. Mitigation: run the probe; sensitivity analysis; label UNKNOWN-cause until diagnosed.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-352_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-353
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Ontology-as-data-model critique; single-source-of-truth design; membership-criterion requirement.
+  Specific risk: Stub/archive/merged/split folders change "the team" with no conceptual decision; member-count analyses (and 354's open-seat frame) inherit an arbitrary number.
+  Summary: Folder-count is at best a convenient index, never the authoritative membership source; the asserted dependency runs backwards (membership should define folders). As an implicit PRESUMPTION it carries extra weight. Mitigation: explicit membership registry as SSOT; reconcile folders against it (REVISE-110 pattern); define criterion (couples 321).
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-353_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-354
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Kuhn incommensurability (1962); MacIntyre immersion-over-translation (1988/1990); normative-metaphor critique.
+  Specific risk: Adversarial frame could drive a shared-scoreboard "open seat" design that incommensurability says is ill-defined, and crowd out CRM's integrative telos.
+  Summary: Rivalry is real (15a), but the SPORTS version ("rival team/open seat/shared scoreboard") is challenged: Kuhn denies the neutral metric; MacIntyre's contest is immanent critique + epistemic crisis, not scoring; CRM's synthetic telos sits awkwardly with pure zero-sum. Mitigation: articulate the contest mechanism (immanent critique, not scoring); hold integrative frame alongside; avoid a literal shared scoreboard.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-354_against.md
+
+### 15b SYSTEMIC-RISK FLAGS (2026-06-16)
+
+SYSTEMIC-RISK-FLAG (1):
+  Date: 2026-06-16
+  Affected items: PRESUMPTION-347, PRESUMPTION-348 (+ the invisibility facet of ASSUMPTION-317)
+  Common vulnerability: Scheduled/automated tasks infer a POSITIVE state from the ABSENCE of a signal — a pin assumed valid because nothing said otherwise (347), a task assumed to have run because no failure was announced (348), work assumed not-done because nothing was marked (317). Continuation of the standing "Absence ≠ success/event" common-mode cluster (prior 265/287/293/294/296).
+  Literature basis: API-deprecation handling; dead-man's-switch/heartbeat monitoring; observability "guilty until proven innocent."
+  Risk level: High
+  Recommendation: Single coupled remedy — every scheduled task gets (1) a preflight check of external dependencies, (2) a heartbeat/dead-man's-switch alerting on ABSENCE of a success ping, (3) fail-loud logging of any degradation/substitution. Extends (does not replace) the prior out-of-band-vantage remedy.
+
+SYSTEMIC-RISK-FLAG (2):
+  Date: 2026-06-16
+  Affected items: ASSUMPTION-318, PRESUMPTION-349, PRESUMPTION-353, ASSUMPTION-319, PRESUMPTION-350 (Metabolism-view proxy stack)
+  Common vulnerability: The Metabolism visualization rests on a STACK of unvalidated proxy/commensurability assumptions — file-count = yield (318/349), commit-time = completion-time (319/350), folder = member/seat (321/353). Each substitutes an easily-counted artifact for the construct of interest; composed, they let the dashboard report "metabolism" that is largely an artifact of counting conventions.
+  Literature basis: Construct-validity critiques of activity proxies; MSR temporal-validity threats; Goodhart/Campbell's Law; ontology-as-data-model risk.
+  Risk level: Medium-High
+  Recommendation: Treat all Metabolism metrics as descriptive-only and provisional until each proxy is validated against an independent signal; pair every count with a counter-metric + distribution; hard-rule against wiring any series to optimization until validated. Couples MONITOR-335 / REVISE-103.
+
+### 15c DISPOSITIONS (2026-06-16)
+
+DISPOSITION-234:
+  Date: 2026-06-16
+  Item: ASSUMPTION-317
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED (+ NOVELTY) | 15a strength: Weak-Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: The concern is valid (don't let a partial pass mask coverage) but both directions converge that the BINARY mark/no-mark scheme is the defect: TTL granularity and percentage-of-completion accounting both prescribe per-sub-component recording, and "leave unmarked" trades a visible failure (over-reported coverage) for an invisible one (unrecorded work — the project's recurring absence-as-evidence hazard).
+  Disposition: REVISE (REVISE-112)
+  Reasoning: Low-stakes ASSUMPTION, but the evidence specifies a concrete, cheap design fix (per-sub-artifact freshness clock) that dissolves the dilemma and closes OPEN-082. Not strong enough for high urgency; the constructive remedy makes REVISE more useful than MONITOR.
+  What is at risk: Coverage accounting silently undercounts completed-but-unmarked work; a transcript pass can be lost if the synthesis review is delayed/dropped.
+  Recommended action: Scope the freshness clock per sub-component (transcript-pass timestamp AND synthesis-review timestamp tracked separately) so marking one does not reset the other; until then, keep a "done-but-unmarked" ledger so the work is not invisible. Resolves OPEN-082.
+  Urgency: Low
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-235:
+  Date: 2026-06-16
+  Item: PRESUMPTION-347
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Pinning per se is sound (15a), but the inferred "a pin stays valid indefinitely" is strongly challenged and already falsified by the 06-14 failure: hosted model aliases deprecate on vendor time; pins to vendor namespaces rot. The defect is the missing availability/fallback layer, not the act of pinning.
+  Disposition: REVISE (REVISE-113)
+  Reasoning: PRESUMPTION + strong challenge + observed instance -> REVISE. Member of SYSTEMIC-RISK cluster (1). Remedy is cheap and well-specified.
+  What is at risk: Every scheduled task pinned to a single hosted model is a deprecation time-bomb; failure is total and (with 348) invisible for days; likely shared across multiple tasks.
+  Recommended action: Urgency MEDIUM-HIGH. Add a preflight model-availability check; add an ordered fallback-model chain (preferred -> alternates -> minimal); centralize the model ID in one config consumed by all tasks; log any substitution (fail-loud). Resolve jointly with REVISE-114 (348) and the cluster-(1) remedy.
+  Urgency: Medium-High
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-236:
+  Date: 2026-06-16
+  Item: PRESUMPTION-348
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: No support either way for the premise; the entire cron-monitoring field exists because it is false. Strongly challenged and falsified by the ~3-day silent outage. Health must be inferred from a positively-received success signal, not from silence.
+  Disposition: REVISE (REVISE-114)
+  Reasoning: PRESUMPTION + strong challenge + observed instance, with NO supporting literature -> REVISE. Member of SYSTEMIC-RISK cluster (1). The remedy (heartbeat + output assertions) is standard and minutes to implement.
+  What is at risk: Any scheduled-task failure is invisible until a human notices missing output (here ~3 days; unbounded in principle); downstream pipelines silently run on absent inputs.
+  Recommended action: Urgency MEDIUM. Add a dead-man's-switch (task pings an external monitor on clean exit; monitor alerts on absence within the expected window) and output assertions (alert if produced < N expected artifacts); distinguish "ran" from "succeeded" in a status log. Implement with cluster-(1) remedy alongside REVISE-113.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-237:
+  Date: 2026-06-16
+  Item: ASSUMPTION-318
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Strong
+  Net assessment: The comparative claim (better than tokens/commits) holds and files-added is a fine DESCRIPTIVE activity proxy, but the construct-validity/Goodhart challenge is strong against elevating it to the sole HEADLINE series (the foregrounded number is the most gameable, and "never a single metric" is violated). "Least-bad proxy" is not "right headline metric."
+  Disposition: MONITOR (MONITOR-345)
+  Reasoning: Strong-support-vs-strong-challenge on a low-stakes personal descriptive dashboard, with the Goodhart risk dormant unless the metric becomes a target/optimizer input -> MONITOR, not REVISE. The conditions for safe use are clear and currently plausibly met; the risk is future (optimization wiring).
+  What would change the disposition: Wiring to an optimizer/bandit, or evidence files-added diverges from an independent value signal -> REVISE (demote + counter-metrics). Sustained descriptive-only use with counter-metrics present and a clean correlation to value -> INCORPORATE the weak reading.
+  Monitoring cadence: Weekly (15d)
+  Priority: Medium
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-238:
+  Date: 2026-06-16
+  Item: ASSUMPTION-319
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Dating triplet-completion from git history is standard MSR and valid at the daily resolution used (15a), but the MSR temporal-validity threats (committer/author ambiguity; batch/backfill of a hand-maintained ledger) are the EXPECTED pattern here, not edge cases (15b). Validity is an empirical property of THIS file's commit history.
+  Disposition: MONITOR (MONITOR-346)
+  Reasoning: Balanced PARTIALLY-SUPPORTED / PARTIALLY-CHALLENGED with a concrete, decisive audit available -> MONITOR with the audit as the trigger. The audit (batch/backfill signature scan) resolves the disposition cheaply.
+  What would change the disposition: Audit shows predominantly near-real-time single-triplet commits -> INCORPORATE the coarse-dating claim. Audit shows >~20% batch/backfill commits -> REVISE (add explicit completion-date field; prefer author-date; flag batch commits). Feeds and is fed by MONITOR-348 (350).
+  Monitoring cadence: Weekly (15d)
+  Priority: Medium
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-239:
+  Date: 2026-06-16
+  Item: ASSUMPTION-320
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: NO-CHALLENGE-FOUND | 15b strength: Weak (boundary conditions only)
+  Net assessment: Strong, essentially uncontested support: the graphical-integrity principle (don't show data that don't exist; never silently impute/zero-fill; absent != zero) is settled best practice, and the "silent zero" alternative the assumption rejects has no defenders. The only challenges are boundary conditions about HOW to encode gaps legibly, which refine rather than defeat the claim.
+  Disposition: INCORPORATE (PREMISE-063)
+  Reasoning: Strong support + only weak boundary-condition challenge -> INCORPORATE with the legibility caveat folded in. The caveat (gaps must be legibly encoded, not raw blanks) is carried as an implementation constraint and explicitly couples to PRESUMPTION-351 (visibility != comprehension), which remains separately flagged.
+  Validated premise statement: see PREMISE-063.
+  Confidence: Moderate-High
+  Applicable to: Metabolism view missing-data display; any C2A2 time-series/dashboard visualization.
+  Re-check cadence: Quarterly (15d)
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+
+DISPOSITION-240:
+  Date: 2026-06-16
+  Item: ASSUMPTION-321
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Traditions-as-unit and the role-types are coherent within the project's own mentor framework (15a), but the SPECIFIC equation team=folders, the absent membership criterion, and MacIntyre's framework-vs-member status are challenged (15b). This is largely a framework/definitional commitment, not an empirical claim — "support" means internal coherence.
+  Disposition: MONITOR (MONITOR-347)
+  Reasoning: Low-priority framework commitment with one genuinely testable edge (MacIntyre's role against his corpus) -> MONITOR. Not a design defect to REVISE, not validated enough to INCORPORATE as a premise (it is a stipulation, not a tested claim).
+  What would change the disposition: Corpus check + explicit membership criterion clarifying MacIntyre's status (member vs adjudicating framework) and the roster boundary -> INCORPORATE the qualified definition; discovery that the folder-driven roster materially misrepresents membership (via 353 reconciliation) -> REVISE.
+  Monitoring cadence: Weekly (15d)
+  Priority: Low
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-241:
+  Date: 2026-06-16
+  Item: PRESUMPTION-349
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: No support for file-count commensurability; strong challenge (files are heterogeneous in size/effort/value; equal-weighting is the canonical LOC-style gaming mechanism). This is the unstated commensurability substrate BENEATH ASSUMPTION-318's headline choice.
+  Disposition: REVISE (REVISE-115)
+  Reasoning: PRESUMPTION (extra weight: designer unaware) + no support + strong challenge -> REVISE. Note the principled split from DISPOSITION-237: the SERIES may stand as a descriptive headline (MONITOR-345) IF the commensurability premise beneath it is corrected — i.e., the count is reported with the size/effort distribution so equal-weighting is not silently doing valuation work. Surfacing rather than averaging the two (Rule 7): 318 = MONITOR the headline choice; 349 = REVISE the hidden unit assumption.
+  What is at risk: All downstream uses inherit false commensurability; foregrounding/optimizing rewards artifact-splitting and thin files.
+  Recommended action: Urgency MEDIUM-HIGH. Replace/augment raw count with a distribution-aware view (median/quartile file size, net content after deletions, optional word-count weighting); always show the size distribution alongside the count; never use the raw count as a target or optimizer input; label as "artifacts emitted," not "yield." Member of SYSTEMIC-RISK cluster (2).
+  Urgency: Medium-High
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-242:
+  Date: 2026-06-16
+  Item: PRESUMPTION-350
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate (Strong on the literal reading)
+  Net assessment: Commit timestamps are a faithful clock for AGGREGATE daily rhythm (15a) but not for individual production events; the literal "faithful clock" framing is strongly challenged (committer/author ambiguity, editability, batch/backfill decoupling). The defensible content is the weak reading.
+  Disposition: MONITOR (MONITOR-348)
+  Reasoning: Moderate/moderate with the same decisive audit as MONITOR-346 (319) -> MONITOR, kept consistent with its stated twin rather than split. Note: as a PRESUMPTION the literal over-claim leans REVISE, but the challenge is Moderate (timestamps ARE faithful at daily resolution), so MONITOR pending the shared backfill audit is the calibrated, non-averaged call; if the audit shows batching, this and 319 jointly go REVISE.
+  What would change the disposition: Shared batch/backfill audit clean -> INCORPORATE the daily-aggregate reading with the resolution boundary stated; audit shows material batching -> REVISE jointly with 319 (author-date; explicit completion timestamps; flag batch commits).
+  Monitoring cadence: Weekly (15d)
+  Priority: Medium
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-243:
+  Date: 2026-06-16
+  Item: PRESUMPTION-351
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Weak support (a visible marker is understood only when it uses a learned convention) vs. moderate-strong challenge (comprehension tracks learned encodings, not visibility; a custom gap convention has none; instance of the trace-vs-substance error). Couples INCORPORATEd ASSUMPTION-320: showing the gap is right, but its mere visibility does not deliver comprehension.
+  Disposition: REVISE (REVISE-116)
+  Reasoning: PRESUMPTION + weak support + moderate-strong challenge -> REVISE, low urgency. The remedy is cheap and concrete, and it is the necessary companion to PREMISE-063 (gap-honesty is only valuable if the gap is legible AND its cause is readable).
+  What is at risk: Honest gaps are misread (capture artifact read as "did nothing"; real inactivity read as a glitch) -> integrity gained at display is lost at comprehension; especially acute given 352's open artifact-vs-real ambiguity.
+  Recommended action: Urgency LOW. Annotate gaps with their reason (inline label/tooltip: "instrumentation gap" vs "no activity"); add a legend defining the gap convention; encode artifact-vs-real gaps differently (couples PRESUMPTION-352); comprehension-test the convention (even on the sole expert viewer after a delay).
+  Urgency: Low
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-244:
+  Date: 2026-06-16
+  Item: PRESUMPTION-352
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Strong (against the assumption-without-diagnosis)
+  Net assessment: The capture-artifact hypothesis is plausible and pattern-consistent (15a), but treating it as a CONCLUSION before running the existing probe is the error (15b): the mechanism cannot be read off the pattern, "artifact" is the MCAR-convenient reading, and an abrupt cliff is equally MNAR-consistent (a real decline). Crucially, the item itself notes the question is empirically decidable by an already-scripted probe.
+  Disposition: MONITOR (MONITOR-349)
+  Reasoning: A decidable empirical question with the instrument already in hand -> MONITOR with HIGH priority pending the probe, not REVISE (there is no design to revise — it is a data-interpretation claim) and not INCORPORATE (undiagnosed). Until the probe runs, the cliff is labeled UNKNOWN-cause, never "artifact" (records the null as unknown per the standing out-of-band-vantage remedy).
+  What would change the disposition: Run the scripted probe. Independent recount shows activity occurred but was not captured -> artifact confirmed (MCAR) -> INCORPORATE the artifact reading. Independent activity also dropped -> real change (MNAR) -> REVISE the yield-capture pipeline and any reading built on the cliff.
+  Monitoring cadence: Weekly (15d)
+  Priority: High
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-245:
+  Date: 2026-06-16
+  Item: PRESUMPTION-353
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: No support for folder-count as the AUTHORITATIVE membership source; moderate challenge (the dependency runs backwards — membership should define folders; routine filesystem ops silently change "the team"). It is at best a convenient index. Unstated data-model substrate beneath ASSUMPTION-321.
+  Disposition: MONITOR (MONITOR-350)
+  Reasoning: PRESUMPTION with moderate (not strong) challenge on a low-stakes framework operationalization -> MONITOR with a cheap reconciliation as the trigger, kept consistent with its stated twin MONITOR-347 (321). A clean reconciliation makes the convenient-index reading safe; a divergence escalates to REVISE.
+  What would change the disposition: A folders-vs-roster reconciliation (REVISE-110 pattern) that is clean -> INCORPORATE folder-as-index with the criterion stated; any divergence (stub/archive/merged/split folders, or members without folders) -> REVISE (maintain an explicit membership registry as SSOT).
+  Monitoring cadence: Weekly (15d)
+  Priority: Low-Medium
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-246:
+  Date: 2026-06-16
+  Item: PRESUMPTION-354
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Rivalry between traditions/paradigms is genuinely MacIntyrean and Kuhnian (15a), so the contest frame is not wrong; but the SPECIFIC adversarial-sports version ("rival team/open seat/shared scoreboard") is challenged by incommensurability (no neutral metric) and by MacIntyre's immanent-critique model of how rivalry is actually adjudicated, and sits awkwardly with CRM's integrative telos (15b).
+  Disposition: MONITOR (MONITOR-351)
+  Reasoning: A genuinely contested philosophical framing touching project telos, where both directions carry real weight -> MONITOR. Not REVISE (the frame is defensible and there is no broken artifact yet), not INCORPORATE (the metaphor needs qualification first). The trigger is articulating the contest mechanism.
+  What would change the disposition: Explicit articulation that the contest proceeds via immanent critique / epistemic-crisis induction (not shared-metric scoring), held alongside the integrative frame -> INCORPORATE the qualified frame; building a literal shared-scoreboard / "open seat" view that presupposes commensurability -> REVISE.
+  Monitoring cadence: Weekly (15d)
+  Priority: Medium
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+**Run tally 2026-06-16: 13 dispositioned (DISPOSITION-234..246): 1 INCORPORATE (PREMISE-063), 7 MONITOR (MONITOR-345..351), 5 REVISE (REVISE-112..116). 2 SYSTEMIC-RISK flags (cluster 1 HIGH: absence != success/event — 347/348/+317; cluster 2 MED-HIGH: Metabolism-view proxy stack — 318/349/353/319/350). 2 NOVELTY notes folded (317 sub-component staleness; the Metabolism vault-as-tracker family continues 345's lineage). End-to-end flow (per REVISE-109): QUEUED-undispositioned 13 -> 0.**
