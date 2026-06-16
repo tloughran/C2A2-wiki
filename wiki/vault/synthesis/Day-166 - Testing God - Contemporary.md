@@ -11,15 +11,16 @@ mind_first_reframe: "Under mind-monism, the medieval prohibition on tempting God
 central_theme_thread: "Salvation in fear and trembling is the patient running of honest in-distribution tests whose accumulating results genuinely update one's priors; the tempter-of-God anti-pattern short-circuits the slow cooperative computation of loving unity from within perspective-limitation."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism-as-active-modeler; PRS-07 substrate-independent FEP)"
-  - "traditions/stump/prs_triplets.md (PRS-01 tradition-crossing inquiry; PRS-06 MacIntyre criterion)"
+  - "traditions/stump/prs_triplets.md (PRS-06 MacIntyre criterion)"
+  - "traditions/loughran/prs_triplets.md (PRS-08 tradition-crossing inquiry; re-homed from former Stump PRS-01 per ASSUMPTION-076, 2026-06-11)"
   - "traditions/levin/prs_triplets.md (PRS-04 substrate-independent cognition; PRS-08 cells as cognitive agents)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-05 attention as ontological act)"
   - "Wright canonical: 'Surprised by Hope' on resurrection as new-creation evidence rather than 'sign' (II-II Q.97)"
   - "Rohr canonical: 'The Universal Christ' on grasping vs. receiving"
 evidence_strength_summary: "Active-inference framing is mathematically formal; the prudential 'no-cheap-tests' rule for agents under uncertainty is empirical (decision theory, control theory); the theological framing of why an agent should refuse to commodify guidance is interpretive — speculative bridge work."
 tags: [synthesis, day/166, theme/epistemic-humility, theme/active-inference, q/96, q/97]
-last_qc_at: "2026-06-06T02:29:27"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-15T04:29:05"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 166 — Testing God (Contemporary)

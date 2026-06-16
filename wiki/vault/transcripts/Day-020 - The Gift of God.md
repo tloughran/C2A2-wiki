@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-020 - The Gift of God - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-06T22:31:36"
+last_qc_at: "2026-06-16T00:20:36"
 last_qc_outcome: "pass"
 render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/020, pars/I, q/37, q/38, theme/trinity, theme/holy-spirit, theme/love, theme/gift]

@@ -15,7 +15,7 @@ fetched_at: 2026-04-26
 fetch_path: chrome-mcp via tactiq.io (ad-blocker stripped direct timedtext fetch)
 synthesis: "[[Day-001 - Introduction - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-07T12:21:07"
+last_qc_at: "2026-06-15T20:20:01"
 last_qc_outcome: "pass"
 tags: [summa, day/001, pars/prologue, q/prologue]
 ---
