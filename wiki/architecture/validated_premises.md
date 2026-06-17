@@ -1798,3 +1798,31 @@ PREMISE-063:
   Rationale: Strong, essentially uncontested support for the integrity principle; the only challenges specify HOW to encode gaps legibly, not WHETHER to show them. Consistency-checked vs PREMISE-001..062: no conflict; the comprehension companion (visibility != comprehension) is deliberately NOT incorporated here — it remains REVISE-116, so this premise is scoped to "show the gap honestly," not "the shown gap is understood."
 
 **Total new PREMISEs this run (2026-06-16): 1 (PREMISE-063). Stated ASSUMPTION; PRESUMPTION-class INCORPORATEs: 0. Cumulative through PREMISE-063.**
+
+PREMISE-064:
+  Date validated: 2026-06-17
+  Source item: ASSUMPTION-326
+  Statement: Build (and define) the metric before iterating the view layer that depends on it. The metric is the stable layer; the visualization depends on it, so defining and pressure-testing the metric first avoids the rework guaranteed by designing a view against placeholder or undefined data ("cart-before-horse"). CAVEAT folded in: "metric first" means "define + cheaply pressure-test the metric," NOT "fully finalize the metric in isolation" — a deliberately rough, disposable view is a legitimate validation instrument for the metric definition and should be used to surface definitional edge-cases early (EDA/Tukey; the view validates the measure). CRITICAL SCOPE GUARD: this premise licenses the SEQUENCING only; it does NOT license treating the built metric as trustworthy enough to harden downstream artifacts upon — that over-trust is the separate, REVISE-flagged PRESUMPTION-360 (REVISE-124: provenance != validity).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: "Measure first" / data-before-dashboard practice in analytics & BI; dependency-first design (build the stable layer before the volatile one); "garbage in, gospel out" cautions against designing presentation around unsettled data definitions.
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Weak-Moderate) — a STRICT "finalize metric before any view" reading is a mini-waterfall that forgoes the diagnostic value of cheap prototype views; folded as the "pressure-test with a disposable view" caveat. The "design a polished view against an undefined metric" alternative the premise rejects has no defenders.
+  Confidence: Moderate-High
+  Applicable to: PRS-yield metric -> 3D connectome / Metabolism view build order; any C2A2 metric-and-its-visualization sequencing.
+  Re-check due: 2026-09-17 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: Strong, conventional support for the dependency-ordering; the only challenge specifies HOW to do metric-first (with a diagnostic throwaway view), not WHETHER. Consistency-checked vs PREMISE-001..063 (incl. PREMISE-062, deterministic-scheduler-first — same dependency-ordering family): no conflict. The scope guard deliberately withholds the "built ⇒ trustworthy" step (that remains REVISE-124).
+
+PREMISE-065:
+  Date validated: 2026-06-17
+  Source item: ASSUMPTION-327
+  Statement: For separating co-located nodes in a generated layout, a DETERMINISTIC (reproducible) arrangement is preferable to random jitter. Determinism preserves the viewer's mental map across regenerations (Misue et al.), enables visual diffing / regression testing of the layout, and makes the separation rule inspectable — all of which non-deterministic jitter defeats. CAVEAT folded in (load-bearing): determinism is a reproducibility property, NOT a claim that the resulting positions are meaningful. A stable, ordered arrangement is reliably DECODED AS MEANINGFUL (Cleveland & McGill positional channel), so a deterministic non-semantic fan must be explicitly MARKED INCIDENTAL (uniform/neutral styling; "positions within a node-cluster are non-semantic" note) and must not mimic an ordered scale — otherwise its very consistency manufactures spurious structure. The companion requirement (do not mistake resolvability for fidelity) is the separate REVISE-flagged PRESUMPTION-358 (REVISE-122).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Misue, Eades, Lai, Sugiyama — "Layout Adjustment and the Mental Map" (layout stability across regenerations); reproducibility in scientific visualization (fixed-seed/fixed-rule rendering enables diffs and regression tests); Cleveland & McGill 1984 (position is decoded accurately — basis of the incidental-marking caveat).
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — a deterministic ordered fan can be OVER-READ as meaningful more reliably than random jitter (which reads as "noise, ignore"); the real axis is semantic-vs-incidental encoding, not determinism-vs-jitter. Folded as the mandatory incidental-marking caveat; the over-reading remedy itself is carried separately by REVISE-122 (PRESUMPTION-358).
+  Confidence: Moderate
+  Applicable to: 3D connectome co-located-node separation (the fan-fix); any C2A2 layout requiring reproducibility across regenerations.
+  Re-check due: 2026-09-17 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: On the stated determinism-vs-jitter binary, determinism strictly dominates for reproducibility/mental-map/diffing; the challenge does not bear on that binary (it concerns a third option — marking the layout non-semantic) and is folded as a caveat + routed to REVISE-122. Consistency-checked vs PREMISE-001..064 (reinforces PREMISE-062 deterministic-first family): no conflict.
+
+**Total new PREMISEs this run (2026-06-17): 2 (PREMISE-064 metric-before-view sequencing; PREMISE-065 deterministic-over-random layout). Both stated ASSUMPTIONs; PRESUMPTION-class INCORPORATEs: 0. Cumulative through PREMISE-065. Both carry explicit scope guards withholding the over-trust/over-reading steps (routed to REVISE-124 and REVISE-122).**

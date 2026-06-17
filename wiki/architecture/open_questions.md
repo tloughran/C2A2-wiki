@@ -854,3 +854,17 @@ OPEN-083 (NEW, 2026-06-15): Is the post-Apr-6 interactive-token cliff (95% of ca
     Transform at each step:
       14a: Raised from the WS1 cut-off framing — the artifact-vs-real ambiguity is load-bearing on the metabolism metric and decidable by the already-scripted probe.
     Current status: OPEN
+
+OPEN-084 (NEW, 2026-06-16): Are the three PRS-triplet counts — 269 (3D connectome nodes), 264 (git cumulative-produced), 262 (on-disk unique) — three estimates of one real quantity to be reconciled (the OPEN-081 posture), or three distinct constructs (ever-produced ⊇ currently-surviving; separately-sourced rendered set) that should each be reported with its own label? Today's WS2 build asserted the git series "supersedes" the static 269 (ASSUMPTION-325) while the connectome still renders 269, leaving the relation unresolved. If they are different constructs, "reconciliation" is a category error and the right move is three labeled numbers; if they are one quantity, the 5-to-7 gap is a real discrepancy to chase. Sharpens OPEN-081.
+  Arose from: WS2 PRS-yield build of the 2026-06-16 attended session (the 269/264/262 divergence made explicit by the new git-derived series)
+  Testable via: conceptual + empirical — apply each count definition carefully and check whether produced/surviving partition cleanly and whether the connectome's node source reconciles to prs_triplets.md
+  Owner: next metabolism/connectome session + Tom
+  Status: OPEN
+  Related: OPEN-081 (authoritative PRS counts); DECISION-059, DECISION-058; ASSUMPTION-324, 325; PRESUMPTION-357, 359
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the WS2 build's explicit three-count divergence; paired with PRESUMPTION-357 (the one-quantity presumption). Load-bearing on how the system reports its own size.
+    Current status: OPEN

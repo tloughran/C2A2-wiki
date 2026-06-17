@@ -4852,3 +4852,69 @@ The standing AWAITING-REVIEW backlog (REVISE-047..064 = 18) + 7 new REVISEs this
 **PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
 
 **Total new REVISEs this run (2026-06-16):** 5 (REVISE-112..116). **AWAITING-REVIEW backlog: was 65 -> now 70.** Two SYSTEMIC-RISK clusters drive the operational subset: cluster (1) "absence != success/event" (113/114 + 112's invisibility facet) — single coupled remedy: preflight checks + heartbeat/dead-man's-switch + fail-loud logging on every scheduled task; cluster (2) Metabolism-view proxy stack (115 + MONITOR-345/346/348/350) — treat all Metabolism metrics as descriptive-only/provisional until each proxy is validated against an independent signal. Highest-leverage single fixes: (a) one heartbeat+preflight wrapper closes 113/114; (b) the post-Apr-6 probe (MONITOR-349) and one git-history audit unblock most of cluster (2).
+
+### REVISE-117 — ASSUMPTION-323 (a commit-message self-report verifies the yield series)
+**Statement:** A commit-message self-report ("+38 PRS triplets") is an adequate cross-check that verifies the derived yield series.
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate; a matching contemporaneous self-report is real POINT-LOCAL corroboration via triangulation) | **15b:** CHALLENGED (Moderate-Strong; commit messages are unreliable narrators, may be non-independent of the pipeline (circular), and one match verifies one window — not the series)
+**What is at risk:** A single self-report taken as series validation lets systematic pipeline errors on uncorroborated days survive into the headline yield (feeds the PRESUMPTION-360 over-trust).
+**Recommended action:** Urgency LOW-MEDIUM. Verify against the DIFFS (count added triplet-ids), not the commit prose; sample multiple windows; confirm the cross-check is independent of the pipeline's derivation; report "N of 6 windows corroborated," not "series verified." Same instrument as the cluster-3 git-history audit. Couples REVISE-120 (PRESUMPTION-356).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-118 — ASSUMPTION-325 (the git series supersedes "269" as THE authoritative PRS number)
+**Statement:** The git-derived production series supersedes the static "269 network" count as the authoritative PRS number.
+**15a:** PARTIALLY-SUPPORTED (Moderate, conditional; an auditable/recent measure supersedes an undocumented one WHEN both target the same quantity) | **15b:** CHALLENGED (Moderate-Strong; if 269=network footprint and 264/262=production/census are distinct constructs, "supersedes as THE number" is a category error — discriminant validity)
+**What is at risk:** Retiring "269" as superseded silently drops the network-footprint construct; readers inherit a false "one true PRS count"; OPEN-081/084 mis-scoped as reconciliation.
+**Recommended action:** Urgency MEDIUM. Reword to "the git series is the authoritative PRODUCTION measure"; keep 269 as the authoritative NETWORK measure with its construct labeled; reframe OPEN-084 as construct-disambiguation. Resolve jointly with REVISE-121 (PRESUMPTION-357) — both turn on the same construct-distinctness question. Member of SYSTEMIC-RISK cluster (3).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-119 — PRESUMPTION-355 (yield = birth-rate; lifecycle irrelevant)
+**Statement:** [inferred] The meaningful event is a triplet's creation (first appearance), not its revision/validation/use/retirement — yield = birth-rate.
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate; creation-count is a legitimate first-order leading indicator) | **15b:** CHALLENGED (Moderate-Strong; birth-rate is a gameable output proxy diverging from value — Goodhart; churn/survival carry the real signal — Lehman; scientometrics impact-weights)
+**What is at risk:** A birth-rate "yield" rewards many short-lived triplets; the system reads volume as productivity while survival/quality silently degrade.
+**Recommended action:** Urgency MEDIUM. Report birth-rate as ONE leading indicator beside survival (fraction of created triplets persisting/used/validated) and a churn/retirement rate; never optimize birth-rate; survival-weight (or at least caveat) the headline. Member of Metabolism-proxy cluster (2) and SYSTEMIC-RISK cluster (3); couples ASSUMPTION-322/324, PRESUMPTION-359.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-120 — PRESUMPTION-356 (one corroborating point verifies the whole 6-day series)
+**Statement:** [inferred] One corroborating data point (06-07 commit message) verifies the whole 6-day series.
+**15a:** NO-SUPPORT-FOUND (None; triangulation supports only point-local corroboration) | **15b:** CHALLENGED (Strong; confirmation bias / problem of induction; sampling-coverage; the lone match manufactures false confidence that suppresses further checking)
+**What is at risk:** A pipeline bug on the five unchecked days is masked by the single match; the headline yield is trusted on 1/6 coverage; over-trust propagates to PRESUMPTION-360.
+**Recommended action:** Urgency LOW-MEDIUM. Sample/check multiple windows (every day with any independent signal); compute and report corroboration COVERAGE; treat the 06-07 match as 1-of-6 corroborated, not "series verified." Implement with REVISE-117 (stated twin, ASSUMPTION-323) under SYSTEMIC-RISK cluster (3).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-121 — PRESUMPTION-357 (269/264/262 estimate one quantity to reconcile)
+**Statement:** [inferred] The three counts (269 / 264 / 262) estimate one real quantity to be reconciled, not three distinct constructs.
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate, conditional; IF one construct, reconcile-them is correct — convergent validity) | **15b:** CHALLENGED (Strong; discriminant validity + stock-vs-flow say footprint / cumulative-production / surviving-census are distinct constructs that SHOULD differ — "reconcile to one" is a category error)
+**What is at risk:** Effort spent forcing distinct constructs to one number; informative gaps (retired set, network footprint) discarded; a false "single true PRS count" hardens into the system's self-description (OPEN-081/084).
+**Recommended action:** Urgency MEDIUM-HIGH. Replace "reconcile to one quantity" with "define three constructs and report each with its question"; show gaps as meaningful (264-262 = retired/reused; 269 vs 264 = footprint vs production); reframe OPEN-084 as disambiguation. Resolve jointly with REVISE-118 (stated twin, ASSUMPTION-325). Member of SYSTEMIC-RISK cluster (3).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-122 — PRESUMPTION-358 (visual resolvability = informational fidelity)
+**Statement:** [inferred] Making all 269 nodes individually resolvable increases fidelity (visual resolvability = informational fidelity).
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate; de-occluding co-located nodes is a real legibility gain for identity/count — anti-overplotting; Tufte "show the data") | **15b:** CHALLENGED (Moderate-Strong; resolving by an arbitrary fan injects positions read as structure — Cleveland & McGill — and "show every item" can bury aggregate structure; trace-vs-substance error)
+**What is at risk:** Viewers (incl. the sole expert) infer rings/clusters/orderings from the resolving fan; clutter from 269 resolved nodes hides real aggregate pattern; "everything visible" mistaken for "picture faithful."
+**Recommended action:** Urgency LOW. Decouple goals: identity-resolution on demand (hover/zoom/detail) while the default view shows faithful aggregate structure; mark the fan's positions non-semantic (uniform styling + "positions within a node-cluster are incidental" note); evaluate fidelity by what viewers correctly infer, not by whether every node is drawn. This is the perception companion to PREMISE-065 (ASSUMPTION-327); couples that incidental-marking caveat.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-123 — PRESUMPTION-359 (git history is a complete census of production)
+**Statement:** [inferred] Git history is a complete census of PRS-triplet production ("264 produced", not "264 git can see").
+**15a:** PARTIALLY-SUPPORTED (Weak, conditional; born-in-repo artifacts make git a census of the TRACKED STORE by construction) | **15b:** CHALLENGED (Strong; git records what was COMMITTED not what was PRODUCED — Kalliamvakou 2014; rebase/squash, pre-VCS and out-of-band authoring break the census; map-vs-territory)
+**What is at risk:** Production systematically undercounted (invisible pre-VCS/out-of-band work) or miscounted (rewritten history) while reported as true production; couples ASSUMPTION-322 and PRESUMPTION-355.
+**Recommended action:** Urgency LOW-MEDIUM. Phrase the figure as "264 in the tracked history," not "264 produced"; run the git-history audit (rebase/squash + pre-VCS/out-of-band inventory); state the coverage boundary; if a true census is needed, reconcile git against an independent inventory. Surfaced-not-averaged with stated twin ASSUMPTION-322 (MONITOR-352): 322 (creation-DATING proxy) monitored, 359 (the stronger CENSUS claim) revised — mirrors the 318/349 split. Audit shared with REVISE-117. Member of SYSTEMIC-RISK cluster (3).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-124 — PRESUMPTION-360 (building the metric dissolved the cart-before-horse concern)
+**Statement:** [inferred] Building the metric dissolved the cart-before-horse concern (data-backed ⇒ trustworthy-enough-to-build-on).
+**15a:** NO-SUPPORT-FOUND (None; provenance/derivation is not validity) | **15b:** CHALLENGED (Strong; "garbage in, gospel out"; validity is a property of the inference to the construct — Cronbach & Meehl; mechanically-produced figures attract unearned authority — Porter "Trust in Numbers")
+**What is at risk:** The view layer and downstream readings hardened on a series with five open challenges (322/323/355/356/359); the "data-derived" halo suppresses the very validation those items require.
+**Recommended action:** Urgency MEDIUM. Treat "built" as the START of validation, not its end; require the series to clear its open challenges (coverage, creation-dating, multi-window verification, construct disambiguation) before the view hardens on it; label the series PROVISIONAL / descriptive-only until then; separate provenance (how derived) from validity (does it measure the construct) in reporting. KEYSTONE of SYSTEMIC-RISK cluster (3) — the inference that lets the system skip validation of the other seven items. Scope guard companion to PREMISE-064 (ASSUMPTION-326).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Total new REVISEs this run (2026-06-17):** 8 (REVISE-117..124). **AWAITING-REVIEW backlog: was 70 -> now 78.** All eight are facets of SYSTEMIC-RISK cluster (3): the PRS-yield series is treated as more complete (123/117/120), more validated (124 keystone), and more singular (118/121) than warranted, with birth-rate-as-yield (119) atop and the resolvability/fidelity conflation (122) in the view. Two cheap instruments close most of it: (a) ONE git-history audit of prs_triplets.md (rebase/squash + pre-VCS/out-of-band + multi-window diff recount) closes 117/120/123 and unblocks MONITOR-352; (b) a one-paragraph construct-definition note for 269/264/262 closes 118/121 and reframes OPEN-084. The keystone fix (124) is a policy: PRS-yield = descriptive-only/provisional until validated; do NOT harden the view layer on it yet.

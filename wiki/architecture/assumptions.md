@@ -5782,3 +5782,111 @@ ASSUMPTION-321:
     Transform at each step:
       14a: Extracted from the WS3 roster-construction step, exact-quote fragment retained. Routed LOW — exploratory mockup scaffolding, largely a framework commitment. [stated]
     Current status: UNTESTED
+
+ASSUMPTION-322:
+  Date identified: 2026-06-16
+  Statement: PRS-triplet "production" is operationalized as the FIRST git appearance of each (tradition, PRS-NN) pair in `wiki/traditions/*/prs_triplets.md` — "the metric counts PRS-triplet production (first git appearance of each (tradition, PRS-NN))." This is the build-level realization of the source settled in DECISION-058: a triplet is counted as produced on the commit-day its id first shows up, and only once.
+  Context: WS2 build of the 2026-06-16 attended session ("PRS triplet yield WS-2"). Implemented in `architecture/metrics/prs_yield.py`; outputs in `prs_yield_detail.csv` / `prs_yield_log.csv`.
+  Type: methodological / empirical
+  Related decisions: DECISION-059 (PRS-yield build charter); DECISION-058 (source settled); DECISION-057
+  Related items: ASSUMPTION-319 (git-history source, now built); PRESUMPTION-355 (creation-as-the-production-event); PRESUMPTION-350 (commit-as-clock); PRESUMPTION-359 (git as complete census)
+  Testability: testable empirically (does first-git-appearance date coincide with when a triplet was actually completed, vs. drafting-then-committing or backfilled edits? construct-validity check against a hand-dated triplet sample)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-322
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the WS2 build rationale and the `prs_yield_snapshot_lines.md` definition note ("'Yield' counts production (first git appearance...)"). Routed MED — it is the operational definition of a metric now driving two visualizations. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-323:
+  Date identified: 2026-06-16
+  Statement: A commit-message self-report is an adequate cross-check on the derived yield series — "Cross-check passed: the 06-07 commit message ('+38 PRS triplets') matches the series exactly," and the metric was on that basis declared "built and verified." The agreement of one human-authored commit note with one of the six per-day deltas is treated as validation of the extraction.
+  Context: WS2 build of the 2026-06-16 session; cited as the verification step alongside `validate_prs_3d.py` PASS and `node --check` PASS.
+  Type: methodological / epistemic
+  Related decisions: DECISION-059 (build charter)
+  Related items: ASSUMPTION-322 (the series being checked); PRESUMPTION-356 (one corroborating point = series verified)
+  Testability: testable empirically (do the other five commit-days have independent corroboration? a full audit of each commit-day's added ids against its message / against an independent record would test whether the single match generalizes)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-323
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the WS2 "Cross-check passed" / "built and verified" statements. Routed MED — the word "verified" is load-bearing on downstream trust in the series. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-324:
+  Date identified: 2026-06-16
+  Statement: The yield headline should report GROSS cumulative production (264, every id ever first-seen) rather than NET on-disk inventory (262 unique) — "cumulative-produced (264) intentionally exceeds on-disk-unique (262)... worth a sentence so the gap doesn't read as an error." Retired ids (stump/PRS-01, /PRS-03) and a reused id (arkanihamed/PRS-10) are deliberately kept in the cumulative count.
+  Context: WS2 build of the 2026-06-16 session; encoded in `prs_yield.py` outputs and the drop-in snapshot block. Flagged fail-loud rather than silently reconciled.
+  Type: methodological
+  Related decisions: DECISION-059 (build charter)
+  Related items: ASSUMPTION-322 (production definition); ASSUMPTION-325 (supersession of 269); OPEN-081 (authoritative PRS counts); OPEN-084 (three-count divergence); PRESUMPTION-357 (counts measure one quantity)
+  Testability: framework/measurement choice with an empirical edge (which of gross-produced vs. net-surviving better serves the "metabolism/yield" construct depends on what the series is used to claim — both are defensible for different purposes; testable only relative to a stated use)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-324
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the WS2 "intentionally exceeds" rationale and the fail-loud duplicate/retired-id flags. Routed LOW-MED — a definitional choice made explicit and honestly flagged. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-325:
+  Date identified: 2026-06-16
+  Statement: The git-derived production series should SUPERSEDE the static "269 network" carry-forward as the authoritative PRS count — "This supersedes the static '269 network' carry-forward with a git-derived production series; the 269 figure was a frozen network count, not a git-derived production series." The newer, traceable measurement is treated as more authoritative than the prior frozen number.
+  Context: WS2 build of the 2026-06-16 session; stated in `prs_yield_snapshot_lines.md` and the evening cowork→chat summary. Note: the 3D connectome still renders 269 nodes, so the supersession is asserted at the metric layer while the visualization retains the older count.
+  Type: methodological / empirical
+  Related decisions: DECISION-059 (build charter); DECISION-056 (metabolism ship)
+  Related items: ASSUMPTION-324 (gross-vs-net); OPEN-081; OPEN-084 (269/264/262 divergence); PRESUMPTION-357 (one-quantity presumption)
+  Testability: testable empirically (is the 269 connectome count reconcilable to the 264/262 git counts, or do they count different things? auditing the connectome's node source against prs_triplets.md would test whether "supersede" is the right relation vs. "these measure different constructs")
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-325
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit "supersedes the static 269" statement. Routed MED — it changes which number the system treats as authoritative, and sits unresolved against the still-269 connectome (see OPEN-084). [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-326:
+  Date identified: 2026-06-16
+  Statement: The metric should exist before the view layer that depends on it — "iterating visuals before the underlying metric exists is cart-before-horse; the metric should exist before the view layer that depends on it." This sequencing rationale (build WS2 PRS-yield rather than iterate the metabolism/CRM mockups) drove today's direction choice.
+  Context: Chat Claude's morning framing on the 2026-06-16 daily walk, adopted as the day's direction; the WS2 build realizing it is the day's headline outcome.
+  Type: methodological
+  Related decisions: DECISION-059 (build charter); DECISION-057 (metabolism charter, view layer); DECISION-056
+  Related items: ASSUMPTION-318 (the headline yield series the view shows); PRESUMPTION-360 (data-backed ⇒ trustworthy-enough-to-build-on)
+  Testability: testable via literature (data/metric-before-visualization sequencing in analytics/BI practice; risks of designing views against placeholder data; "measure first" vs. iterative-prototyping methodologies)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-326
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the morning-walk direction rationale (chat_to_cowork summary) and its realization in the WS2 build. Routed LOW-MED — a process/sequencing principle, broadly sound but stated as a general rule. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-327:
+  Date identified: 2026-06-16
+  Statement: A DETERMINISTIC layout fan is preferable to random jitter for separating co-located 3D nodes — "the deterministic fan is reproducible (stable index order, no randomness), so regens won't reshuffle positions." Co-located triplets (same thinker + year) are spread on a small grid within the thinker's wedge (columns spread angle, rows spread radius), indexed in stable order, specifically so re-generation is reproducible.
+  Context: WS2 3D-visualization fix of the 2026-06-16 session; root cause was a layout collision (position keyed only on (thinker, year) → 269 triplets collapsed onto 47 stacks). Implemented in `template_prs_3d.html`; verified to yield 269 distinct positions.
+  Type: methodological / architectural
+  Related decisions: DECISION-059 (build charter — recorded as a CHANGE under it); DECISION-056
+  Related items: PRESUMPTION-358 (visual resolvability = informational fidelity); the trace-vs-substance presumption family
+  Testability: partly engineering/framework commitment (reproducibility of a generated layout) with a literature edge (deterministic vs. stochastic layout in information visualization; reproducibility/stability of force or grid layouts across regenerations)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-327
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 3D-fix rationale ("deterministic... reproducible... regens won't reshuffle"). Routed LOW — mostly an engineering-integrity commitment; the fidelity question it raises is carried by PRESUMPTION-358. [stated]
+    Current status: UNTESTED

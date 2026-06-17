@@ -14153,3 +14153,19 @@ These mirror the STALE-MONITOR-FLAGS above as parseable refresh blocks so the ne
 **PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
 
 **Total new MONITORs this run (2026-06-16):** 7 (MONITOR-345..351). Next weekly 15d: 2026-06-18. Five of the seven (345/346/347/348/350) are Metabolism-view items resolvable by two cheap instruments: (a) a single git-history batch/backfill audit of prs_triplets.md closes 346 AND 348; (b) a folders-vs-roster reconciliation closes 350 AND informs 347. MONITOR-349 is the highest-leverage single action: run the already-scripted post-Apr-6 probe.
+
+### MONITOR-352 — ASSUMPTION-322
+**Statement:** PRS-triplet production = first git appearance of each (tradition, PRS-NN) in traditions/*/prs_triplets.md.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; first-appearance is an accepted reproducible creation-dating convention — MSR/scientometrics/Lehman) | **15b:** PARTIALLY-CHALLENGED (Moderate; rebase/squash, out-of-band authoring, and stubs decouple capture from creation — Kalliamvakou 2014)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority MEDIUM. Defensible as a defined PROXY, challenged as an EQUALITY. Action (cheap, shared): single git-history audit of prs_triplets.md — rebase/squash + pre-VCS/out-of-band + batch-landing check. Clean -> INCORPORATE "first tracked appearance" with resolution boundary stated; material decoupling -> REVISE jointly with PRESUMPTION-359 (REVISE-123). Kept consistent with the git-fidelity twins MONITOR-346/348. Member of Metabolism-proxy cluster (2) / SYSTEMIC-RISK cluster (3).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-353 — ASSUMPTION-324
+**Statement:** Yield headline = gross cumulative production (264), reported alongside net on-disk-unique (262); retired/reused ids kept in cumulative.
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Moderate-Strong; gross-flow + net-stock census are distinct legitimate measures — stock-vs-flow accounting; reporting both is the recommended convention) | **15b:** PARTIALLY-CHALLENGED (Moderate; headlining the GROSS is the gameable, non-neutral choice — Goodhart; reused-id identity blur)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-18. Priority LOW-MEDIUM. The dual-report is sound; the foregrounding of the gross is the watch item. Action: confirm the gross headline is never a target/optimizer input and reused-id semantics are disclosed -> INCORPORATE the dual-reporting convention; optimization-against-headline or undisclosed reused-id inflation -> REVISE (headline the net census). Held consistent with MONITOR-345 / REVISE-115 (count may stand as descriptive headline IF the unit beneath it is honest). Member of Metabolism-proxy cluster (2); couples PRESUMPTION-355 (REVISE-119).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-06-17):** 2 (MONITOR-352..353). Next weekly 15d: 2026-06-18. Both close on the SAME single git-history audit of prs_triplets.md that also unblocks REVISE-117/120/123 (SYSTEMIC-RISK cluster 3) — highest-leverage single action this batch.

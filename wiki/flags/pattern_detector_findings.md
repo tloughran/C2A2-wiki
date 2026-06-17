@@ -585,3 +585,71 @@ Confidence: Medium (cluster is real; each edge needs individual confirmation bef
 Recommended action: Monitor — open a Stump-as-hub synthesis note; do not over-escalate individual analogies
 
 [EVALUATED: 2026-06-07]
+
+---
+
+FINDING-042:
+Date evaluated: 2026-06-17
+Source candidate: Ingest 2026-06-17 — [PROP-2026-06-12-001] Carroll (June AMA)
+Programs: Carroll Agent, Wolfram Agent, Hoffman Agent
+Evaluation type: Paradigm-shift candidate (sharpens the Post-Spacetime ↔ Consciousness fault line)
+Finding: Carroll's AMA remarks on the observer-relativity of coarse-graining are the Carroll-side mirror of Wolfram's observer-dependent Ruliad sampling and Hoffman's interface theory. The live question is narrow and operationalizable: does Carroll concede any *genuine* observer-relativity of the coarse-graining that defines macro-states, or is it merely epistemic bookkeeping over a single observer-independent wavefunction? If genuine, the gap between the Post-Spacetime cluster (Carroll/Arkani-Hamed timeless substrate) and the Consciousness cluster (Hoffman/Kastrup) narrows at exactly the seam FINDING-037 localized — the observer's ontological status. This extends FINDING-037 from a static disagreement to a moving boundary.
+Confidence: Medium-High
+Recommended action: Escalate to Master Wiki Paradigm Shift Watch List — pair with FINDING-037; forward to Carroll + Hoffman agents to pin the "genuine vs. bookkeeping" disjunction.
+
+---
+
+FINDING-043:
+Date evaluated: 2026-06-17
+Source candidate: Ingest 2026-06-17 — [PROP-2026-06-15-002] Levin (Ingressing Minds / Platonic Space)
+Programs: Levin Agent, Kastrup Agent, Hoffman Agent
+Evaluation type: Paradigm-shift candidate — empiricist program converges on idealist terrain
+Finding: Levin's "Platonic space" (a structured non-physical space of patterns that physical embodiments interface with via "ingression") is a striking convergence move: an empirical biologist proposing a transpersonal pattern-space that minds tap into lands squarely on analytic-idealism terrain (Kastrup's mind-at-large) and on Hoffman's interface theory (embodiments as pointers/icons, not the patterns themselves). What makes this a paradigm-shift candidate rather than a mere analogy is that Levin proposes a *falsifiable* mapping agenda (build evolutionarily-novel embodiments, observe which adjacent patterns they ingress). That gives the idealist/interface intuition something neither Kastrup nor Hoffman has offered: an experimental handle. This is the most consequential new cross-tradition vector in this batch.
+Confidence: Medium-High (convergence is real and surprising; the metaphysical reading of "ingression" remains contested even within Levin's own framing)
+Recommended action: Escalate to Master Wiki Paradigm Shift Watch List — open a synthesis note (Levin × Kastrup × Hoffman: pattern-realism); this is a candidate Loughran/C2A2 "second-first-language" exemplar (an empirical program speaking idealism's home dialect).
+
+---
+
+FINDING-044:
+Date evaluated: 2026-06-17
+Source candidate: Ingest 2026-06-17 — [PROP-2026-06-15-001] Levin (top-down Vmem→transcription)
+Programs: Levin Agent, Friston Agent, Wolfram Agent
+Evaluation type: Structural homology — reinforces the binding/individuation cluster
+Finding: Levin's top-down bioelectric control of transcription (Vmem as a higher-order constraint over molecular state) maps cleanly onto Friston's active inference (Vmem read as a macro-scale prior constraining lower-level dynamics) and Wolfram's multi-scale causation (a macro electrical state shaping micro molecular outcomes). This is a mechanism-level addition to the three-way binding/individuation cluster already flagged in FINDING-038 — and notably it is the *downward* causal direction, complementing FINDING-038's upward (parts→whole) binding story.
+Confidence: Medium
+Recommended action: Escalate to Master Wiki — fold into the FINDING-038 binding/individuation cluster as the top-down-causation edge.
+
+---
+
+FINDING-045:
+Date evaluated: 2026-06-17
+Source candidate: Ingest 2026-06-17 — [PROP-2026-06-15-003] Friston ("epistemic depth", beautiful-loop consciousness)
+Programs: Friston Agent, Kastrup Agent, McGilchrist Agent, Levin Agent, Loughran / C2A2 Master
+Evaluation type: Explanatory bridge + candidate detector observable
+Finding: Friston's "epistemic depth" (recurrent, shared belief-about-belief as a formal marker of when a predictive system is conscious/self-aware rather than merely adaptive) does double duty. (1) It engages the Consciousness cluster directly — it is a FEP-native handle on the reflexivity that Kastrup and McGilchrist treat as ontologically primary. (2) It is testable in Levin's basal/collective-cognition systems: does a collective exhibit measurable epistemic depth? This makes it a candidate observable for the C2A2 "detector" half (cf. FINDING-039 ZBS), nominating a formally-defined quantity that should rise as communities/agents become richly informed about one another's models.
+Confidence: Medium-High (high relevance; the operational measure of "epistemic depth" still needs specification before it is an instrument)
+Recommended action: Escalate to Master Wiki Paradigm Shift Watch List — flag for Tom alongside FINDING-039 as a second candidate detector metric for the ISME measurement claim.
+
+---
+
+FINDING-046:
+Date evaluated: 2026-06-17
+Source candidate: Ingest 2026-06-17 — [PROP-2026-06-12-002] Carroll (Mindscape 356, Wulf / Jena Romanticism)
+Programs: Carroll Agent, McGilchrist Agent
+Evaluation type: Paradigm-level disagreement over shared historical terrain
+Finding: Carroll engaging Humboldt and the Jena Romantics puts him on exactly the historical ground McGilchrist claims for the right-hemisphere/holism side of his thesis. Two rival readings of the same witnesses (Carroll's naturalist appropriation vs. McGilchrist's anti-reductionist one) make this an unusually clean, operationalizable disagreement: same primary sources, divergent paradigmatic uptake. This is a good candidate for a C2A2 "same-text, rival-tradition" exercise.
+Confidence: Medium
+Recommended action: Monitor; forward to McGilchrist agent. Candidate exhibit for the accelerator's rival-reading protocol.
+
+---
+
+FINDING-047:
+Date evaluated: 2026-06-17
+Source candidate: Ingest 2026-06-17 — [PROP-2026-06-07-002/003] Rohr, [PROP-2026-06-07-001] Wright, [PROP-2026-06-10-003] Kastrup, [PROP-2026-06-10-001] McGilchrist, [PROP-2026-06-11-001] Stump
+Programs: Rohr, Wright, Kastrup, McGilchrist, Stump, Friston, Fredrickson Agents
+Evaluation type: Structural homology cluster (humanities/theology axis — extends FINDING-041)
+Finding: This batch thickens the FINDING-041 humanities/theology cluster along two threads. (a) A non-dual thread: Rohr's "not destroyed by being wrong" reads formally as a precision-of-priors story (Friston), and Kastrup's "seeing through the illusion of self" converges with Rohr's non-dual mind and Spira/Vedanta. (b) A truth-as-fidelity thread: McGilchrist's "truth as 'treu' (being true to / loyal to)" and Wright's "epistemology of love" both tie epistemic truth to relational fidelity — landing on Stump's relational constitution of flourishing and her second-person/Thomistic knowledge. Stump continues to function as the hub (FINDING-041). Individually surface analogies; collectively a stable, recurring attractor.
+Confidence: Medium (cluster is real and recurring; individual edges need confirmation before any is treated as explanatory)
+Recommended action: Monitor — append to the Stump-as-hub synthesis note opened under FINDING-041; do not over-escalate individual analogies.
+
+[EVALUATED: 2026-06-17]

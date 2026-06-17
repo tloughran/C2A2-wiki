@@ -1780,3 +1780,42 @@ Status: WATCHING | RESOLVED | STALE | CANCELLED
 ---
 
 *Run completed 2026-06-16.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-06-17
+
+**Run context:**
+- One day since last logged run (2026-06-16). Steady-state run; no deferred items in any channel.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`. Re-verified this run (directory re-listed; `grep -l "TRACKED-16"` confirms tag present): remains the WATCH-001 superseded tombstone. Inert; awaiting Tom's manual deletion. **No new untracked items.**
+- `wiki/review/archive/`: Directory re-listed (11 files). Latest archive remains `2026-06-06_decisions.md` (scanned 2026-06-08; all APPROVE, no deferred intake). **No new decision files since last run.** Coverage current through 2026-06-06.
+- Channel 2 (agent-deferral) and Channel 3 (human-watch): `wiki/deferred/` tree confirmed — only `watch_list.md` and `resolved/2026-05-12_WATCH-001.md`. Both channels operational and empty.
+
+**Condition Checks (executed this run):**
+- No WATCHING items on the active watch list. Nothing due, nothing checked. WATCH-001 remains RESOLVED (lifecycle fully closed; archive at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`).
+
+**Stale Item Check:**
+- No items to evaluate (active watch list empty). No STALE-WATCH-FLAGs raised.
+
+**Watch List Status:**
+- Items checked: 0 (no active items)
+- Items resolved: 0
+- Items still watching: 0
+- Items stale: 0
+- New items added: 0
+- Status: Active items empty; one resolved item indexed (WATCH-001); intake clean.
+
+**Notes:**
+- Standing reminder for Tom (carried forward since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live re-queued copy at `wiki/inbox/proposals/pending/`; full provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+- Situational awareness (out of scope; logged only): `wiki/inbox/proposals/pending/` now holds 12 items (down from 13 noted on 06-16 — consistent with a review/dedup pass having moved one item, though no new decision archive has yet been written). Pending items enter Agent 16 intake only on a CHANGE / CHECK / CONDITIONAL disposition. Eleven days since the last decision archive (2026-06-06); the review-cadence gap continues to widen — still within the outer edge of prior intervals, noted again for next run.
+
+**Next scheduled checks:**
+- None — watch list active items empty.
+
+**Agent 16 Status:** Operational. Steady state; no deferred items in any channel; intake clean; no checks due. Decision archive coverage current through 2026-06-06.
+
+---
+
+*Run completed 2026-06-17.*

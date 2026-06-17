@@ -667,3 +667,20 @@ DECISION-058:
     Transform at each step:
       14a: Registered from the WS2 source-selection step of the 2026-06-15 session (AskUserQuestion resolution). Build state quoted from the session ("not built yet").
     Current status: ADOPTED (source); UNBUILT
+
+DECISION-059:
+  Date: 2026-06-16 (attended)
+  Title: PRS-triplet yield metric — build charter
+  Decision: The WS2 PRS-triplet yield metric (source settled in DECISION-058) is BUILT. Production is operationalized as the first git appearance of each (tradition, PRS-NN) in `wiki/traditions/*/prs_triplets.md`; the series is reported per commit-day; the headline is GROSS cumulative produced (264 across 6 commit-days, 2026-04-07 → 2026-06-16) reported alongside on-disk-unique (262); retired/reused ids are kept in the cumulative and surfaced fail-loud (stump/PRS-01,/PRS-03 retired; arkanihamed/PRS-10 reused). The git-derived series supersedes the static "269 network" count as the authoritative production number. Implementation: `architecture/metrics/prs_yield.py` + outputs (`prs_yield_detail.csv`, `prs_yield_log.csv`, `prs_yield_snapshot_lines.md`, `prs_yield_histogram.py`, `prs_created_vs_delivered.html`).
+  Status: BUILT and locally verified (validate_prs_3d.py PASS; node --check PASS; 06-07 commit-message cross-check PASS). PUSH PENDING on the Mac (regen via `regen_prs_connectome.sh`, then commit + push both the connectome and metabolism views). Per the constitutional rule, the localhost review + push stays with Tom.
+  Rationale: Realizes the "metric before the view layer that depends on it" sequencing (ASSUMPTION-326) and gives both the metabolism view and the 3D connectome real git-derived numbers; extends the yield axis named "next" in DECISION-056/058.
+  Related: ASSUMPTION-322, 323, 324, 325, 326, 327; PRESUMPTION-355, 356, 357, 358, 359, 360; DECISION-058 (source), DECISION-057, DECISION-056; OPEN-081 (authoritative PRS counts), OPEN-084 (three-count divergence); `architecture/metrics/prs_yield.py`
+  CHANGE (under this decision, view layer, not pushed): the PRS 3D connectome (`template_prs_3d.html` → `prs_3d_review.html`) layout collision was fixed — position was keyed only on (thinker, year), collapsing 269 triplets onto 47 stacks (222 hidden); a deterministic fan (group by (thinker, year); grid within each thinker's wedge; stable index order) now yields 269 distinct, separable positions. Count indicator reads "Showing 269 / 269." Reproducible across regens (no randomness).
+  NOTE (Rule-7 divergence flag): the 2026-06-16 cowork→chat summary reported "No new DECISION-NNN registered in the registry yet today" (citing the overnight EOD-pipeline timing). 14a registers DECISION-059 anyway, on the same standard applied to DECISION-057/058: the build set durable, load-bearing operational choices (what "production" counts; gross-vs-net headline; supersession of 269) for a deployed self-measurement artifact. Registries are the source of truth; the summary's count is a reporting-granularity/timing difference.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Registered from the WS2 build transcript of the 2026-06-16 attended session ("PRS triplet yield WS-2") and the `prs_yield_snapshot_lines.md` artifact. Build/verify state quoted from the session and the on-disk outputs; push/repo state quoted from the session (repo + live regen not introspectable from this mount).
+    Current status: ADOPTED (metric built; view-layer fan applied); PUSH PENDING

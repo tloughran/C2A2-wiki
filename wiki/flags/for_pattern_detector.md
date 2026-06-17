@@ -365,3 +365,29 @@ SIGNAL-2026-05-17-05 (May-2026 McGilchrist dispatch cluster, MEDIUM): [EVALUATED
 > Action flag (fail-loud): This proposal is included because it is a genuine, recent, first-party Stump event, but it does NOT pass the "substantively new content verified" bar — only the event is confirmed.
 - [PROP-2026-06-05-001] Sean Carroll: - **Arkani-Hamed (post-spacetime / cosmohedron, kinematic flow):** Both are timeless-substrate pictures of cosmology — Carroll grounds cyclic time in a static finite-dimensional Hilbert-space spectrum; Arkani-Hamed derives cosmological time from timeless combinatorial-geometric data (PRS-09 there).
 - [PROP-2026-06-06-001] Stephen Wolfram: - **Friston (free energy / bounded rationality) — STRONG, addresses open CROSS-053.** The master index's CROSS-053 asks whether Wolfram's computational irreducibility is the physical foundation for why Friston's free-energy minimization is necessary.
+
+
+## New signals — ingest 2026-06-17
+- [PROP-2026-06-07-002] Richard Rohr: - **Friston Agent**: "Not being destroyed by being wrong" is a precision-of-priors story — the dualistic mind holds maladaptively high precision on its categorical priors and so cannot update; non-dual openness is low-precision, high-plasticity inference that tolerates prediction error rather than d
+- [PROP-2026-06-07-003] Richard Rohr: - **Friston Agent**: "Perfect giving and perfect receiving" is, formally, a coupled-systems / reciprocal-inference picture — agents constituted by the mutual exchange of predictions across a Markov blanket rather than by sealed interiority. Rohr's relational ontology as the theological reading of re
+- [PROP-2026-06-07-001] N.T. Wright: - **Stump Agent**: Wright's "epistemology of love" (knowing as a mode of relational trust, developed in his *First Things* "Loving to Know" essay) is the same Franks-Stump terrain of knowledge-by-acquaintance / second-person knowing; the Collins dialogue applies it to scientific knowing specifically
+- [PROP-2026-06-10-002] Bernardo Kastrup: The generativity question lands squarely on Levin's territory: Levin's program treats creativity and problem-solving as scale-free properties of cognition, and the Kastrup-Levin boundary-individuation exchange (PRS-14–16) now has a generative counterpart — do new thoughts arise the way new agents ar
+- [PROP-2026-06-10-003] Bernardo Kastrup: Strong non-dual signal: "seeing through the illusion of self" is Spira's and Vedanta's home terrain, so this session extends the analytic-idealist/contemplative convergence mapped in PRS-20–21 — watch whether Kastrup endorses the contemplative deflation of self or resists it on Daimonic grounds. Res
+- [PROP-2026-06-10-001] Iain McGilchrist: The "truth as 'treu' — being true to oneself, loyal to others" move ties epistemic truth to fidelity and relationship — a strong resonance with Stump's second-person account of knowledge and with Fredrickson's relational flourishing (inner-state management as a condition of right engagement). The in
+- [PROP-2026-06-11-001] Eleonore Stump: Strong Fredrickson resonance: Stump's relational constitution of flourishing (PRS-CANDIDATE-02) is the metaphysical counterpart of positivity resonance as the engine of flourishing — this extends the established CROSS-005 (love/union as fundamental in Stump, Fredrickson, Kastrup) into the flourishin
+- [PROP-2026-06-12-001] Sean Carroll: PRS-CANDIDATE-01 is the strongest signal in this batch: it is the Carroll-side mirror of
+Wolfram's observer-dependent Ruliad sampling and Hoffman's interface theory — if Carroll
+concedes any genuine observer-relativity of coarse-graining, the gap between the
+Post-Spacetime and Consciousness Clusters
+- [PROP-2026-06-12-002] Sean Carroll: Strong McGilchrist signal: Humboldt and the Jena Romantics are central witnesses in
+McGilchrist's account of right-hemisphere holism versus left-hemisphere abstraction — this
+episode is Carroll engaging exactly the historical terrain McGilchrist claims for his side,
+and the two readings of the same 
+- [PROP-2026-06-15-003] Karl Friston: - Kastrup & McGilchrist: epistemic depth is a formal handle on self-awareness and reflexivity — directly engages the consciousness traditions and the hard problem.
+- Levin: "epistemic depth" / recurrent belief-sharing as a candidate marker could be tested in basal and collective cognition — does a c
+- [PROP-2026-06-15-002] Michael Levin: - Kastrup: a non-physical space of patterns that minds "tap into" resonates strongly with analytic idealism's transpersonal/universal mind — a high-value bridge candidate (flag explicitly).
+- Hoffman: embodiments as pointers/interfaces directly parallels interface theory of perception (icons pointin
+- [PROP-2026-06-15-001] Michael Levin: - Friston: top-down constraint of lower-level dynamics maps onto active inference, where Vmem could be read as a prior over transcriptional states — a concrete substrate for "morphogenetic active inference" (Friston PRS-08).
+- Wolfram: multi-scale causation (electrical macro-state shaping molecular 
+
+[EVALUATED: 2026-06-17 — FINDING-042..047; see pattern_detector_findings.md]

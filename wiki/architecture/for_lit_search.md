@@ -8464,3 +8464,91 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Priority: MEDIUM (touches project telos)
   Search strategy: Kuhn on incommensurability vs competition; MacIntyre on rival traditions and tradition-constituted rationality; contest vs translation models of cross-paradigm relation; normative metaphors in visualization.
+
+---
+
+**[EOD QUEUE — cycle 0: 2026-06-16 by Agents 14a/14b. Attended session ("PRS triplet yield WS-2"): WS2 PRS-yield metric built + verified, 3D connectome fan-fix. 12 new items: 6 ASSUMPTIONS + 6 PRESUMPTIONS.]**
+
+[ASSUMPTION] ASSUMPTION-322: PRS-triplet production = first git appearance of each (tradition, PRS-NN) in traditions/*/prs_triplets.md
+  Status: [QUEUED] [cycle 0: 2026-06-16] [SEARCHED-15a: 2026-06-17] [SEARCHED-15b: 2026-06-17] [DISPOSITIONED-15c: 2026-06-17]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-352; first-appearance is a defined proxy not an identity — pending git-history audit)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: creation-event vs lifecycle metrics in scientometrics; mining-software-repositories event-dating validity; "first appearance" vs "completion" dating; construct validity of artifact-creation counts for knowledge work.
+
+[ASSUMPTION] ASSUMPTION-323: A commit-message self-report ("+38 PRS triplets") is an adequate cross-check that verifies the derived yield series
+  Status: [QUEUED] [cycle 0: 2026-06-16] [SEARCHED-15a: 2026-06-17] [SEARCHED-15b: 2026-06-17] [DISPOSITIONED-15c: 2026-06-17]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Moderate-Strong) | Disposition: REVISE (REVISE-117; verify vs diffs across multiple windows; one self-report != series verified)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: single-point vs systematic validation; commit-message reliability as ground truth; sampling/coverage in data-pipeline verification; induction from one corroboration.
+
+[ASSUMPTION] ASSUMPTION-324: Yield headline = gross cumulative production (264), reported alongside net on-disk-unique (262); retired/reused ids kept in cumulative
+  Status: [QUEUED] [cycle 0: 2026-06-16] [SEARCHED-15a: 2026-06-17] [SEARCHED-15b: 2026-06-17] [DISPOSITIONED-15c: 2026-06-17]
+  15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-353; dual-report sound; gross-as-headline is the gameable watch item)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: LOW-MEDIUM
+  Search strategy: gross vs net output measures; counting retracted/retired artifacts; stock-vs-flow accounting in productivity metrics.
+
+[ASSUMPTION] ASSUMPTION-325: The git-derived production series supersedes the static "269 network" count as the authoritative PRS number
+  Status: [QUEUED] [cycle 0: 2026-06-16] [SEARCHED-15a: 2026-06-17] [SEARCHED-15b: 2026-06-17] [DISPOSITIONED-15c: 2026-06-17]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Moderate-Strong) | Disposition: REVISE (REVISE-118; 'authoritative PRODUCTION measure' not THE number; keep 269 as network construct)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: authority/recency of competing measurements of the same object; measurement supersession criteria; reconciliation vs distinct-construct framing (couples OPEN-084).
+
+[ASSUMPTION] ASSUMPTION-326: Build the metric before iterating the view layer that depends on it ("cart-before-horse" sequencing)
+  Status: [QUEUED] [cycle 0: 2026-06-16] [SEARCHED-15a: 2026-06-17] [SEARCHED-15b: 2026-06-17] [DISPOSITIONED-15c: 2026-06-17]
+  15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate) | Disposition: INCORPORATE (PREMISE-064; metric-before-view sequencing; scope guard withholds 'built=>trustworthy')
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: LOW-MEDIUM
+  Search strategy: data/metric-before-visualization sequencing in analytics/BI; risks of designing against placeholder data; "measure first" vs iterative prototyping.
+
+[ASSUMPTION] ASSUMPTION-327: A deterministic (reproducible) layout fan is preferable to random jitter for separating co-located 3D nodes
+  Status: [QUEUED] [cycle 0: 2026-06-16] [SEARCHED-15a: 2026-06-17] [SEARCHED-15b: 2026-06-17] [DISPOSITIONED-15c: 2026-06-17]
+  15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: INCORPORATE (PREMISE-065; deterministic-over-random layout; must mark fan incidental)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: LOW
+  Search strategy: deterministic vs stochastic layout in information visualization; reproducibility/stability of layouts across regenerations; semantic vs incidental spatial encodings.
+
+[PRESUMPTION] PRESUMPTION-355: The meaningful event is a triplet's creation (first appearance), not its revision/validation/use/retirement — yield = birth-rate
+  Status: [QUEUED] [cycle 0: 2026-06-16] [SEARCHED-15a: 2026-06-17] [SEARCHED-15b: 2026-06-17] [DISPOSITIONED-15c: 2026-06-17]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Moderate-Strong) | Disposition: REVISE (REVISE-119; report birth-rate beside survival/use/retirement; never optimize)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: creation-event vs lifecycle/survival metrics; churn and quality-weighting in software-evolution; Goodhart effects of birth-rate proxies; throughput vs output.
+
+[PRESUMPTION] PRESUMPTION-356: One corroborating data point (06-07 commit message) verifies the whole 6-day series
+  Status: [QUEUED] [cycle 0: 2026-06-16] [SEARCHED-15a: 2026-06-17] [SEARCHED-15b: 2026-06-17] [DISPOSITIONED-15c: 2026-06-17]
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-120; one point = 1/6 coverage, not series verification)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: induction from single confirmation; coverage/sampling in verification; "verified" claims and validation completeness; confirmation bias in pipeline checks.
+
+[PRESUMPTION] PRESUMPTION-357: The three counts (269 / 264 / 262) estimate one real quantity to be reconciled, not three distinct constructs
+  Status: [QUEUED] [cycle 0: 2026-06-16] [SEARCHED-15a: 2026-06-17] [SEARCHED-15b: 2026-06-17] [DISPOSITIONED-15c: 2026-06-17]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-121; three distinct constructs — disambiguate, don't reconcile to one)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH (load-bearing on OPEN-081/OPEN-084; how the system reports its own size)
+  Search strategy: construct validity / multiple-operationalism; produced-vs-surviving population definitions; when "reconciliation" is a category error; measurement theory on distinct constructs.
+
+[PRESUMPTION] PRESUMPTION-358: Making all 269 nodes individually resolvable increases fidelity (visual resolvability = informational fidelity)
+  Status: [QUEUED] [cycle 0: 2026-06-16] [SEARCHED-15a: 2026-06-17] [SEARCHED-15b: 2026-06-17] [DISPOSITIONED-15c: 2026-06-17]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Moderate-Strong) | Disposition: REVISE (REVISE-122; resolvability != fidelity; identity on demand, mark positions incidental)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: graphical perception of positional encodings; viewers inferring structure from layout artifacts; incidental vs meaningful spatial encodings; "show all data" as a visualization virtue and its limits.
+
+[PRESUMPTION] PRESUMPTION-359: Git history is a complete census of PRS-triplet production ("264 produced", not "264 git can see")
+  Status: [QUEUED] [cycle 0: 2026-06-16] [SEARCHED-15a: 2026-06-17] [SEARCHED-15b: 2026-06-17] [DISPOSITIONED-15c: 2026-06-17]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-123; '264 git can see' not '264 produced'; run coverage audit)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: coverage/completeness threats in repository-mining; untracked/pre-VCS artifacts; map-vs-territory when a tool's record is trusted; census vs sample.
+
+[PRESUMPTION] PRESUMPTION-360: Building the metric dissolved the cart-before-horse concern (data-backed ⇒ trustworthy-enough-to-build-on)
+  Status: [QUEUED] [cycle 0: 2026-06-16] [SEARCHED-15a: 2026-06-17] [SEARCHED-15b: 2026-06-17] [DISPOSITIONED-15c: 2026-06-17]
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-124; KEYSTONE — 'built' = start of validation; series provisional until challenges cleared)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (governs whether the view layer should now be built on the new series)
+  Search strategy: authority halo of "data-derived"/quantitative provenance; provenance vs validity; premature hardening of downstream artifacts on unvalidated metrics; trace-vs-substance.

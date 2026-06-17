@@ -13227,3 +13227,424 @@ DISPOSITION-246:
   PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
 
 **Run tally 2026-06-16: 13 dispositioned (DISPOSITION-234..246): 1 INCORPORATE (PREMISE-063), 7 MONITOR (MONITOR-345..351), 5 REVISE (REVISE-112..116). 2 SYSTEMIC-RISK flags (cluster 1 HIGH: absence != success/event — 347/348/+317; cluster 2 MED-HIGH: Metabolism-view proxy stack — 318/349/353/319/350). 2 NOVELTY notes folded (317 sub-component staleness; the Metabolism vault-as-tracker family continues 345's lineage). End-to-end flow (per REVISE-109): QUEUED-undispositioned 13 -> 0.**
+
+---
+
+## RETURNS — cycle 0 batch 2026-06-17 (12 items: ASSUMPTION-322..327, PRESUMPTION-355..360)
+### Session: WS-2 PRS-yield metric (git-derived production series, 3D connectome fan). Run by 15a/15b/15c, 2026-06-17.
+
+### 15a RETURNS (FOR)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-322
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: MSR first-commit dating convention; scientometric first-appearance dating; Lehman software-evolution introduction events.
+  Summary: First-git-appearance is an accepted, reproducible operationalization for dating artifact creation. Support is for "first appearance is A defensible production event," not for it being the only meaningful event (PRESUMPTION-355).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-322_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-323
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-Moderate
+  Key source: Triangulation / convergent validation (Campbell & Fiske 1959); software self-report as sanity check.
+  Summary: A matching contemporaneous self-report is real POINT-LOCAL corroboration via triangulation, but only for the window it touches — not series-wide verification.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-323_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-324
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate-Strong
+  Key source: Stock-vs-flow accounting; scientometric production-ever vs surviving-set; KLOC gross-vs-net.
+  Summary: Gross cumulative (flow, retirees kept) + net on-disk (stock census) are distinct legitimate measures; reporting both is the recommended convention, PROVIDED both are labeled (and gross is not made a target).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-324_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-325
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate (conditional)
+  Key source: Measurement supersession in metrology; provenance/reproducibility as authority.
+  Summary: An auditable, recency-favored measure supersedes an undocumented one WHEN both target the same quantity. Conditional on the same-construct premise (PRESUMPTION-357, OPEN-084); else "supersedes" is a category error.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-325_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-326
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate-Strong
+  Key source: "Measure first"/data-before-dashboard BI practice; dependency-first design.
+  Summary: Metric-before-view is sound dependency-ordering; building a view against undefined data is a known rework anti-pattern. Support is for the SEQUENCING, not for "built ⇒ trustworthy" (PRESUMPTION-360).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-326_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-327
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate-Strong
+  Key source: Misue et al. mental-map/layout stability; reproducibility in visualization; Cleveland & McGill 1984.
+  Summary: Determinism beats random jitter for reproducibility, mental-map preservation, and visual diffing/regression. Support is for the determinism PROPERTY, not for the positions being meaningful (couples PRESUMPTION-358) — mark the fan incidental.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-327_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-355
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-Moderate
+  Key source: Scientometric production counts; innovation/throughput leading indicators.
+  Summary: Creation-count is a standard, useful first-order productivity proxy, especially before survival data exists. Support is for creation as a leading indicator, NOT for birth-rate as a sufficient yield definition.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-355_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-356
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: (none) — triangulation supports only POINT-LOCAL corroboration, not whole-series verification.
+  Summary: No support for generalizing from one confirming point to a verified 6-day series. The point-local match is real (ASSUMPTION-323); the generalization is unsupported.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-356_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-357
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-Moderate (conditional)
+  Key source: Multiple operationalism / convergent validity (Campbell & Fiske 1959); classical test theory.
+  Summary: IF the three counts operationalize one construct, reconcile-them is exactly right (convergent validity). Entirely conditional on the same-construct antecedent — which discriminant validity disputes (see 15b).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-357_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-358
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-Moderate
+  Key source: Anti-overplotting/occlusion reduction; Tufte "show the data."
+  Summary: De-occluding co-located nodes is a real legibility gain for identity/count. Support is for legibility of identity, NOT for the equation resolvability = informational fidelity (couples ASSUMPTION-327).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-358_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-359
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak (conditional)
+  Key source: Single-authoritative-store / born-in-repo system-of-record.
+  Summary: IF triplets are born-in-repo with no out-of-band creation, git enumerates the tracked store by construction. Conditional support for "census of the TRACKED store," never "census of production" (see 15b: Kalliamvakou 2014).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-359_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-360
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: (none) — provenance/derivation is not validity.
+  Summary: No support for "building the metric ⇒ trustworthy enough to build on." The sequencing is supported (ASSUMPTION-326), but existence/derivation does not establish validity; the concern is relocated, not dissolved.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-360_for.md
+
+### 15b RETURNS (AGAINST)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-322
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Kalliamvakou et al. 2014 (MSR); Cronbach & Meehl 1955 (construct underrepresentation).
+  Specific risk: First-appearance can misplace/compress real production (batch landings, pre-VCS work invisible); rhythm/velocity readings inherit the error.
+  Summary: First-appearance is a noisy proxy for creation (rebase/squash, out-of-band authoring, stubs). Fine as a defined PROXY; challenged as an EQUALITY. Mitigation: label "first tracked appearance," audit batch/squash, state resolution boundary.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-322_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-323
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Commit-message reliability (MSR; Bird et al. bias); witness non-independence/circularity.
+  Specific risk: A single matching self-report taken as series validation -> systematic pipeline errors on uncorroborated days go undetected.
+  Summary: Commit messages are unreliable narrators and may be non-independent of the pipeline (circular); one match verifies one window. "Adequate cross-check" overstates it. Mitigation: verify against diffs, sample windows, ensure independence.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-323_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-324
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Goodhart 1975 (gross-count gaming); reused-id identity ambiguity; framing effects.
+  Specific risk: Gross headline becomes a target -> rewards splitting/churn/id-reuse; readers read headline as current size; reused-id double counts inflate distinct production.
+  Summary: Dual reporting is fine; HEADLINING the gross is the challenged choice (most gameable; reused ids blur identity vs creation; non-neutral framing). Mitigation: headline the net census, gross as flow alongside, never target gross, disclose reused-id semantics.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-324_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-325
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Discriminant validity (Campbell & Fiske 1959); construct-definition-first.
+  Specific risk: Retiring "269" as superseded silently drops the network-footprint construct; readers think there is one true PRS count when there are several (OPEN-081/084).
+  Summary: If 269/264/262 are distinct constructs, "supersedes as THE authoritative number" is a category error — each is authoritative for its own question. Auditability makes the series the better PRODUCTION measure, not the one true count. Mitigation: "authoritative production measure," keep 269 as network construct.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-325_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-326
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak-Moderate
+  Key source: Iterative/EDA practice (Tukey); visualization as metric-validation instrument.
+  Specific risk: A metric finalized without visual pressure-testing ships with undetected edge-cases that then anchor the view design (and 360's over-trust).
+  Summary: Sound as dependency-ordering; the STRICT "fully finalize metric before any view" reading forgoes the diagnostic value of cheap prototype views (a mini-waterfall). Mitigation: metric-first BUT use a rough disposable view to stress the definition before hardening.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-326_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-327
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Cleveland & McGill 1984 (positional decoding); Tufte spurious-pattern/lie-factor.
+  Specific risk: Viewers infer rings/clusters/orderings from the fan that reflect the algorithm, not the data (trace-vs-substance; couples PRESUMPTION-358).
+  Summary: Determinism wins on reproducibility, but a stable ordered fan is reliably OVER-READ as meaningful — a consistent artifact is consistently misleading. The real axis is semantic-vs-incidental, not determinism-vs-jitter. Mitigation: keep determinism but mark the fan incidental/non-semantic.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-327_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-355
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Goodhart 1975 (output-vs-outcome); software-evolution churn/survival (Lehman); scientometric impact-weighting.
+  Specific risk: A birth-rate "yield" rewards many short-lived triplets; system congratulates itself on volume while quality/survival degrade.
+  Summary: The EXCLUSIVE birth-rate framing is challenged across all three literatures: creation is a gameable output proxy that diverges from value; revision/survival/use carry the real signal. Creation is a legit leading indicator, not a sufficient yield. Mitigation: report beside survival/use/retirement; never optimize. Metabolism-proxy cluster.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-355_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-356
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Popper/Wason (induction, confirmation bias); sampling/coverage in verification.
+  Specific risk: A real pipeline bug on uncorroborated days is masked by the single match; the lone confirmation can suppress further checking.
+  Summary: One corroborated point verifies that point only; generalizing to a 6-day series is the canonical confirmation-bias/coverage error, and creates false confidence. Mitigation: sample multiple windows, report corroboration COVERAGE (treat as 1/6, not "verified").
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-356_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-357
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Discriminant validity (Campbell & Fiske 1959); Cronbach & Meehl 1955; stock-vs-flow.
+  Specific risk: Effort spent reconciling distinct constructs to one figure; informative gaps (retired set, network footprint) discarded; false "single true count" downstream (OPEN-081/084).
+  Summary: The three numbers map to three distinct constructs (footprint / cumulative production / surviving census) that SHOULD differ; "reconcile to one quantity" is the category error. Task is disambiguation + labeling, not convergence. Mitigation: define three constructs, report each; show gaps as meaningful.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-357_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-358
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Cleveland & McGill 1984; overview-vs-detail/clutter (Shneiderman); trace-vs-substance.
+  Specific risk: Viewers infer structure from the resolving layout (couples ASSUMPTION-327); clutter from 269 resolved nodes hides real aggregate pattern.
+  Summary: Resolvability and fidelity are different axes: individually placing 269 nodes makes incidental positions readable as structure (negative fidelity), and "show every item" can bury aggregate structure. Resolving identity is a narrow legibility gain; equating it with fidelity is the trace-vs-substance error. Mitigation: identity-resolution on demand; faithful aggregate by default; mark incidental positions.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-358_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-359
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Kalliamvakou et al. 2014 (MSR — repo is not a complete record of work); history-rewriting/coverage threats.
+  Specific risk: Production systematically undercounted (pre-VCS/out-of-band invisible) or miscounted (rewritten history) while reported as true production; couples ASSUMPTION-322, PRESUMPTION-355.
+  Summary: Git records what was COMMITTED under a tracked workflow, not the population PRODUCED; "264 produced" overstates "264 the git record contains" (map-vs-territory/survivorship). Mitigation: phrase "git can see," audit rebases/pre-VCS, state coverage boundary, or verify born-in-repo.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-359_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-360
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Provenance != validity / "garbage in, gospel out"; Cronbach & Meehl 1955; Porter "Trust in Numbers."
+  Specific risk: View layer + downstream readings hardened on an unvalidated series (322/323/355/356/359 carry open challenges); the data-derived halo suppresses needed validation.
+  Summary: Existence/provenance is not validity; a reproducibly-derived number can be wrong, and mechanically-produced figures attract UNEARNED authority. Building the metric relocated the concern ("no number" -> "is this number valid?"), it did not dissolve it. Mitigation: treat "built" as the start of validation; clear open challenges before the view hardens.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-360_against.md
+
+### 15b SYSTEMIC-RISK FLAGS (2026-06-17)
+
+SYSTEMIC-RISK-FLAG (3):
+  Date: 2026-06-17
+  Affected items: ASSUMPTION-322, ASSUMPTION-323, ASSUMPTION-325, PRESUMPTION-355, PRESUMPTION-356, PRESUMPTION-357, PRESUMPTION-359, PRESUMPTION-360
+  Common vulnerability: The git-derived PRS-yield series is treated as MORE COMPLETE, MORE VALIDATED, and MORE SINGULAR than the evidence warrants. Four conflations stack: (i) capture = creation (322/359 — git first-appearance/census read as production); (ii) corroborated = verified (323/356 — one self-report/one point read as series validation); (iii) derived = valid (360 — building the metric read as trusting it); (iv) one number = one construct (325/357 — distinct measures forced to a single authoritative count). Birth-rate-as-yield (355) sits atop all four. Each conflation independently inflates trust in the same headline number on which the view layer is about to be hardened.
+  Literature basis: Kalliamvakou et al. 2014 (MSR coverage); Campbell & Fiske 1959 (convergent/discriminant validity); Goodhart 1975; Popper/Wason (induction); "garbage in, gospel out" / Porter 2095 "Trust in Numbers."
+  Risk level: High
+  Recommendation: Treat the PRS-yield series as DESCRIPTIVE-ONLY / PROVISIONAL until validated, and do not harden the view layer on it (directly answers PRESUMPTION-360). Two cheap instruments close most of the cluster: (a) a single git-history audit of traditions/*/prs_triplets.md — checks rebase/squash, pre-VCS/out-of-band artifacts, batch landings, and recounts triplet-id additions from diffs across MULTIPLE windows — closes the capture=creation and corroborated=verified conflations (322/323/356/359); (b) a one-paragraph construct-definition note fixing the exact population behind 269/264/262 — closes one-number=one-construct (325/357) and reframes OPEN-084 as disambiguation, not reconciliation. This continues and deepens the Metabolism-proxy SYSTEMIC-RISK cluster (2) from 2026-06-16 (it is the SUBSTRATE beneath ASSUMPTION-318/PRESUMPTION-349).
+
+### 15c DISPOSITIONS (2026-06-17)
+
+DISPOSITION-247:
+  Date: 2026-06-17
+  Item: ASSUMPTION-322
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: First-git-appearance is an accepted, reproducible PROXY for creation (15a), but the stated EQUALITY ("production =") is challenged: rebase/squash, out-of-band authoring, and stubs decouple capture from creation (15b). Defensible as a defined proxy, not as an identity.
+  Disposition: MONITOR (MONITOR-352)
+  Reasoning: Moderate/Moderate on a stated operational definition whose fix is a cheap audit -> MONITOR, kept consistent with the commit-timestamp twins MONITOR-346/348 (same git-fidelity family). Not REVISE (the proxy is sound and reproducible); not INCORPORATE (the equality overclaims pending the audit).
+  What would change the disposition: The single git-history audit (rebase/squash + pre-VCS + batch-landing check). Clean -> INCORPORATE "first tracked appearance" with the resolution boundary stated; material decoupling -> REVISE jointly with PRESUMPTION-359.
+  Monitoring cadence: Weekly (15d)
+  Priority: Medium
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-248:
+  Date: 2026-06-17
+  Item: ASSUMPTION-323
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: A matching contemporaneous self-report is real POINT-LOCAL corroboration (triangulation, 15a), but commit messages are unreliable narrators and may be non-independent of the pipeline (circular), and one match cannot "verify the series" (15b). The word "verifies" is the overreach.
+  Disposition: REVISE (REVISE-117)
+  Reasoning: Weak support vs moderate-strong challenge on a verification CLAIM with a cheap concrete fix -> REVISE, low-medium urgency. The remedy (count triplet-ids from diffs across multiple windows; ensure independence) is the same instrument the systemic-risk audit provides.
+  What is at risk: A single self-report taken as series validation lets systematic pipeline errors on uncorroborated days survive into the headline yield (feeds PRESUMPTION-360 over-trust).
+  Recommended action: Urgency LOW-MEDIUM. Verify against the DIFFS (added triplet-ids), not the commit prose; sample multiple windows; confirm the cross-check is independent of the pipeline's derivation; report "N of 6 windows corroborated," not "series verified." Member of SYSTEMIC-RISK cluster (3); couples PRESUMPTION-356.
+  Urgency: Low-Medium
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-249:
+  Date: 2026-06-17
+  Item: ASSUMPTION-324
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Reporting gross-cumulative (flow, retirees kept) alongside net-on-disk (stock census) is squarely supported by stock-and-flow accounting (15a); what is challenged is the CHOICE to HEADLINE the gross (most gameable; reused-id identity blur; non-neutral framing) (15b). The dual-report is sound; the foregrounding is the watch item.
+  Disposition: MONITOR (MONITOR-353)
+  Reasoning: Strong support for the convention + moderate challenge confined to the headline-choice -> MONITOR (the presentational risk), held consistent with MONITOR-345 / REVISE-115 (the count may stand as a descriptive headline IF it is not made a target and the unit beneath it is honest). Not INCORPORATE (the gross-as-headline choice still carries a live Goodhart risk); not REVISE (the convention itself is correct).
+  What would change the disposition: Confirmation that the gross headline is never used as a target/optimizer and that reused-id semantics are disclosed -> INCORPORATE the dual-reporting convention; evidence of optimization-against-headline or undisclosed reused-id inflation -> REVISE (headline the net census).
+  Monitoring cadence: Weekly (15d)
+  Priority: Low-Medium
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-250:
+  Date: 2026-06-17
+  Item: ASSUMPTION-325
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate (conditional)
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Auditability/recency make the git series the better PRODUCTION measure (15a), but "supersedes ... as THE authoritative PRS number" is a category error IF 269 (network footprint) and 264/262 (production/census) are distinct constructs (15b). The supersession framing, not the preference, is the problem.
+  Disposition: REVISE (REVISE-118)
+  Reasoning: Moderate conditional support vs moderate-strong challenge on a stated claim that conflates distinct constructs -> REVISE, medium urgency. Surfaced-not-averaged with its presumption twin PRESUMPTION-357 (also REVISE): both turn on the same construct-distinctness question; resolve them together.
+  What is at risk: Retiring "269" as superseded silently drops the network-footprint construct; readers inherit a false "one true PRS count"; OPEN-081/084 mis-scoped as reconciliation.
+  Recommended action: Urgency MEDIUM. Reword to "the git series is the authoritative PRODUCTION measure"; keep 269 as the authoritative NETWORK measure with its construct labeled; reframe OPEN-084 as construct-disambiguation. Pairs with REVISE-121 (357). Member of SYSTEMIC-RISK cluster (3).
+  Urgency: Medium
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-251:
+  Date: 2026-06-17
+  Item: ASSUMPTION-326
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Metric-before-view is well-supported dependency-ordering (BI/analytics measure-first; build the stable layer before the volatile one); the only challenge is to a STRICT reading that would forgo cheap diagnostic prototype views — a foldable caveat, not a defeater.
+  Disposition: INCORPORATE (PREMISE-064)
+  Reasoning: Strong support + weak-moderate, foldable challenge on a stated assumption -> INCORPORATE with the caveat folded. Consistency-checked vs PREMISE-001..063 (incl. PREMISE-062 deterministic-scheduler-first, same dependency-ordering family): no conflict; the caveat explicitly guards against composing "metric built" with "metric trusted" (that over-trust is PRESUMPTION-360/REVISE-124).
+  Validated premise statement: see PREMISE-064.
+  Confidence: Moderate-High
+  Applicable to: PRS-yield metric -> 3D connectome/metabolism view sequencing; any C2A2 metric-and-its-visualization build order.
+  Re-check cadence: Quarterly (15d)
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+
+DISPOSITION-252:
+  Date: 2026-06-17
+  Item: ASSUMPTION-327
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: On the stated binary (deterministic fan vs random jitter), determinism wins for reproducibility, mental-map preservation, and visual diffing/regression (15a); 15b concedes determinism on reproducibility and instead raises a THIRD-option concern (the fan, whether deterministic or not, can be over-read) that is carried by PRESUMPTION-358, not by jitter.
+  Disposition: INCORPORATE (PREMISE-065)
+  Reasoning: Strong support + moderate challenge that does NOT bear on the stated determinism-vs-jitter choice -> INCORPORATE with the perception caveat folded and routed. Surfaced-not-averaged: the determinism choice = INCORPORATE (sound engineering); the over-reading risk = REVISE-122 (358, add incidental-encoding marker) — a clean principled split mirroring the prior 318/349 pattern. Consistency-checked vs PREMISE-062 (deterministic-first family): reinforcing, no conflict.
+  Validated premise statement: see PREMISE-065.
+  Confidence: Moderate
+  Applicable to: 3D connectome co-located-node separation; any C2A2 layout requiring reproducibility across regenerations.
+  Re-check cadence: Quarterly (15d)
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+
+DISPOSITION-253:
+  Date: 2026-06-17
+  Item: PRESUMPTION-355
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Creation-count is a legitimate leading indicator (15a), but the EXCLUSIVE "yield = birth-rate, lifecycle irrelevant" framing is challenged across Goodhart, software-evolution churn/survival, and scientometric impact-weighting (15b): birth-rate is gameable and diverges from value.
+  Disposition: REVISE (REVISE-119)
+  Reasoning: PRESUMPTION (extra weight — designer unaware) + moderate-strong challenge -> REVISE, medium urgency. The hidden birth-rate framing is the substrate beneath ASSUMPTION-324's headline and the Metabolism-proxy cluster; correcting it (report lifecycle alongside) is cheap and high-leverage.
+  What is at risk: A birth-rate "yield" rewards many short-lived triplets; the system reads volume as productivity while survival/quality silently degrade.
+  Recommended action: Urgency MEDIUM. Report birth-rate as ONE leading indicator beside survival (fraction of created triplets persisting/used/validated) and a churn/retirement rate; never optimize birth-rate; survival-weight (or at least caveat) the headline. Member of SYSTEMIC-RISK cluster (3) and the Metabolism-proxy cluster (2); couples ASSUMPTION-322/324, PRESUMPTION-359.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-254:
+  Date: 2026-06-17
+  Item: PRESUMPTION-356
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: No support for generalizing one corroborated point to a verified 6-day series; strong challenge (confirmation bias / coverage; the lone match manufactures false confidence that suppresses further checking). The point-local corroboration is real (ASSUMPTION-323) but does not extend.
+  Disposition: REVISE (REVISE-120)
+  Reasoning: PRESUMPTION + no support + strong challenge -> REVISE. Low-medium urgency because the fix is cheap and shares the systemic-risk audit instrument. Kept consistent with its stated twin ASSUMPTION-323 (REVISE-117) — same single-point-verification defect, surfaced from the inference side.
+  What is at risk: A pipeline bug on the five unchecked days is masked by the single match; the headline yield is trusted on 1/6 coverage; over-trust propagates to PRESUMPTION-360.
+  Recommended action: Urgency LOW-MEDIUM. Sample/check multiple windows (every day with any independent signal); compute and report corroboration COVERAGE; treat the 06-07 match as 1-of-6 corroborated, not "series verified." Implement with REVISE-117 under SYSTEMIC-RISK cluster (3).
+  Urgency: Low-Medium
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-255:
+  Date: 2026-06-17
+  Item: PRESUMPTION-357
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate (conditional)
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: IF the three counts operationalize one construct, reconcile-them is correct (convergent validity, 15a) — but that antecedent is precisely what discriminant validity and the stock/flow distinction deny (15b): footprint, cumulative production, and surviving census are distinct constructs that SHOULD differ. "Reconcile to one quantity" is the category error.
+  Disposition: REVISE (REVISE-121)
+  Reasoning: PRESUMPTION + strong challenge, load-bearing on how the system reports its own size (OPEN-081/084) -> REVISE, medium-high urgency. Resolved jointly with its stated twin ASSUMPTION-325 (REVISE-118); both turn on construct-distinctness.
+  What is at risk: Effort spent forcing distinct constructs to one number; informative gaps (retired set, network footprint) discarded; a false "single true PRS count" hardens into the system's self-description.
+  Recommended action: Urgency MEDIUM-HIGH. Replace "reconcile to one quantity" with "define three constructs and report each with its question"; show the gaps as meaningful (264-262 = retired/reused; 269 vs 264 = footprint vs production); reframe OPEN-084 as disambiguation. Pairs with REVISE-118. Member of SYSTEMIC-RISK cluster (3).
+  Urgency: Medium-High
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-256:
+  Date: 2026-06-17
+  Item: PRESUMPTION-358
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: De-occluding co-located nodes is a real legibility gain for identity/count (15a), but "resolvability = informational fidelity" is challenged on two axes (15b): perceptually, resolving 269 nodes by an arbitrary fan injects positions read as structure (negative fidelity); informationally, "show every item" can bury aggregate structure. It is the trace-vs-substance error.
+  Disposition: REVISE (REVISE-122)
+  Reasoning: PRESUMPTION + moderate-strong challenge -> REVISE, low urgency (cheap fix). This is the perception companion to INCORPORATEd ASSUMPTION-327/PREMISE-065: determinism is sound, but its positions must be marked non-semantic so resolvability is not mistaken for fidelity. Surfaced-not-averaged with 327 (the determinism choice stands; the over-reading is fixed here).
+  What is at risk: Viewers (incl. the sole expert) infer rings/clusters/orderings from the resolving fan; clutter from 269 resolved nodes hides real aggregate pattern; "everything visible" mistaken for "picture faithful."
+  Recommended action: Urgency LOW. Decouple goals: identity-resolution on demand (hover/zoom/detail) while the default view shows faithful aggregate structure; mark the fan's positions as non-semantic (uniform styling + "positions within a node-cluster are incidental" note); evaluate fidelity by what viewers correctly infer, not by whether every node is drawn. Companion to PREMISE-065; couples ASSUMPTION-327.
+  Urgency: Low
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-257:
+  Date: 2026-06-17
+  Item: PRESUMPTION-359
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak (conditional)
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Born-in-repo artifacts make git a census of the TRACKED STORE by construction (15a, conditional), but the canonical MSR caution (Kalliamvakou 2014) plus history-rewriting and pre-VCS/out-of-band authoring strongly challenge "git = complete census of PRODUCTION" (15b). Map-vs-territory: the instrument's record is read as the population.
+  Disposition: REVISE (REVISE-123)
+  Reasoning: PRESUMPTION + strong challenge -> REVISE, low-medium urgency. Surfaced-not-averaged with its stated twin ASSUMPTION-322 (MONITOR-352): 322 (creation-DATING proxy) is monitored pending the audit; 359 (the stronger completeness/CENSUS claim) is REVISEd to relabel "git can see" — a principled split mirroring the 318(MONITOR)/349(REVISE) pattern.
+  What is at risk: Production systematically undercounted (invisible pre-VCS/out-of-band work) or miscounted (rewritten history) while reported as true production; couples ASSUMPTION-322 and PRESUMPTION-355.
+  Recommended action: Urgency LOW-MEDIUM. Phrase the figure as "264 in the tracked history," not "264 produced"; run the git-history audit (rebase/squash + pre-VCS/out-of-band inventory); state the coverage boundary; if a true census is needed, reconcile git against an independent inventory. The audit is shared with REVISE-117/DISPOSITION-247. Member of SYSTEMIC-RISK cluster (3).
+  Urgency: Low-Medium
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-258:
+  Date: 2026-06-17
+  Item: PRESUMPTION-360
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: The sequencing is supported (ASSUMPTION-326/PREMISE-064), but "building the metric dissolved the concern (data-backed ⇒ trustworthy-enough-to-build-on)" has no support and is strongly challenged: provenance is not validity; mechanically-produced figures attract unearned authority (Porter). Building the metric relocated the concern, it did not dissolve it.
+  Disposition: REVISE (REVISE-124)
+  Reasoning: PRESUMPTION + no support + strong challenge, and it GOVERNS whether the view layer hardens on the series -> REVISE, medium urgency. This is the keystone of SYSTEMIC-RISK cluster (3): the other seven items are the specific ways the series is unvalidated; 360 is the inference that lets the system skip that validation.
+  What is at risk: The view layer and downstream readings hardened on a series with five open challenges (322/323/355/356/359); the "data-derived" halo suppresses the very validation those items require.
+  Recommended action: Urgency MEDIUM. Treat "built" as the START of validation, not its end; require the series to clear its open challenges (coverage, creation-dating, multi-window verification, construct disambiguation) before the view hardens on it; label the series PROVISIONAL/descriptive-only until then; separate provenance (how derived) from validity (does it measure the construct) in reporting. Keystone of SYSTEMIC-RISK cluster (3); couples ASSUMPTION-326, ASSUMPTION-323, PRESUMPTION-356.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+**Run tally 2026-06-17: 12 dispositioned (DISPOSITION-247..258): 2 INCORPORATE (PREMISE-064 metric-before-view; PREMISE-065 deterministic-layout), 2 MONITOR (MONITOR-352 first-appearance proxy; MONITOR-353 gross-headline choice), 8 REVISE (REVISE-117..124). 1 SYSTEMIC-RISK flag (cluster 3 HIGH: PRS-yield series treated as more complete/validated/singular than warranted — the substrate beneath 318/349; deepens Metabolism-proxy cluster 2). End-to-end flow: QUEUED-undispositioned 12 -> 0.**

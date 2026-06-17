@@ -7095,3 +7095,123 @@ PRESUMPTION-354:
     Transform at each step:
       14b: Inferred from the "rival team / open seat" encoding in the constellation mockup; surfaced neutrally as a framing choice. Moderate-confidence; flagged because it touches the project's telos. [inferred]
     Current status: UNTESTED
+
+PRESUMPTION-355:
+  Date surfaced: 2026-06-16
+  Statement: [inferred] The epistemically meaningful event in a PRS triplet's life is its CREATION (first git appearance), not its later revision, validation, use, or retirement — the yield metric counts births and never counts maturation or death. A triplet drafted and committed once weighs the same as one that was reworked across months or that proved load-bearing for a cross-connection; a retired triplet still counts as yield. The "metabolism" of the system is thereby modeled as a birth-rate, not a throughput or a survival process.
+  Evidence it was operative: `prs_yield.py` records only first-appearance dates and a flat per-day count; there is no revision-weight, quality-weight, or survival term. Retired ids are kept in the cumulative (ASSUMPTION-324). No part of the build discussed counting anything other than first appearances.
+  Why it was unstated: too foundational to notice — "production" reads as self-evidently the thing to count when building a yield metric, so the choice to equate yield with first-creation (rather than with maturation or sustained use) was never posed as a choice.
+  Type: epistemic / methodological
+  Related decisions: DECISION-059; DECISION-058
+  Related items: ASSUMPTION-322 (first-appearance production); ASSUMPTION-318 (files-added headline — same births-not-throughput shape); PRESUMPTION-349 (file-count commensurability); PRESUMPTION-350 (commit-as-clock)
+  Testability: testable empirically (do first-appearance counts correlate with independently-rated research progress better or worse than revision-weighted or survival-weighted alternatives?) and via literature (creation-event vs. lifecycle metrics in scientometrics / software-evolution)
+  Risk if wrong: Medium — a birth-rate metric can show healthy "yield" while the corpus is churning, stagnating in quality, or shedding mass; the metabolism story it tells could be systematically optimistic.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-355
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the structure of `prs_yield.py` (first-appearance-only, unweighted, retired-ids-retained). High-confidence that creation is the only event counted; the normative reading (births ≠ health) surfaced neutrally. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-356:
+  Date surfaced: 2026-06-16
+  Statement: [inferred] One corroborating data point verifies the whole series — a single commit message ("+38 PRS triplets") agreeing with one of six per-day deltas was reported as "Cross-check passed" and the metric was called "verified," presuming that one agreeing witness on one commit-day generalizes to the other five days (which carry no independent corroboration). The validity of ~226 of the 264 counted triplets rests on the parser, not on the check.
+  Evidence it was operative: The verification language attaches to the 06-07 match alone; the 04-07 (+69), 04-16 (+71), 05-11 (+65), 05-22 (+19), 06-16 (+2) days are not independently checked, yet the series as a whole is described as built-and-verified.
+  Why it was unstated: obvious-to-participant convenience — finding one clean external confirmation feels like it licenses confidence in the method, so the inductive leap from "this day matches" to "the extraction is correct" was made implicitly.
+  Type: epistemic / methodological
+  Related decisions: DECISION-059
+  Related items: ASSUMPTION-323 (commit-message cross-check); ASSUMPTION-322; the trace-vs-substance / "passes-a-check" presumption family
+  Testability: testable empirically (audit all six commit-days against their messages and against an independent record; a discrepancy on any unchecked day would falsify the generalization)
+  Risk if wrong: Medium — "verified" is a strong word that downstream consumers (and the view layer) will trust; if the single check is the only check, an extraction bug on the unchecked days would propagate silently into both visualizations.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-356
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the gap between the single 06-07 match and the global "verified" claim. High-confidence the check covered one day only. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-357:
+  Date surfaced: 2026-06-16
+  Statement: [inferred] The three divergent PRS counts — 269 (connectome nodes), 264 (git cumulative-produced), 262 (on-disk unique) — are estimates of a single real quantity, one of which can "supersede" the others, rather than three distinct constructs (rendered-nodes vs. ever-produced vs. currently-surviving) each correct about a different thing. The framing "supersedes the static 269" and the standing "reconciliation" task (OPEN-081) both presume there is one true number to converge on.
+  Evidence it was operative: ASSUMPTION-325 asserts the git series "supersedes" 269; OPEN-081 is framed as a "reconciliation"; nothing in the build treats the three as measuring different questions. The connectome continues to show 269 while the metric reports 264/262, with the difference read as an inconsistency to fix rather than as three valid answers.
+  Why it was unstated: too foundational to notice — "how many PRS triplets are there?" feels like a question with one answer, so the possibility that "produced," "surviving," and "rendered" are different countable populations was never posed.
+  Type: epistemic / structural
+  Related decisions: DECISION-059; OPEN-081; OPEN-084
+  Related items: ASSUMPTION-324 (gross-vs-net); ASSUMPTION-325 (supersession); raised in parallel as OPEN-084
+  Testability: conceptual/definitional with an empirical edge (do the three count-definitions, applied carefully, partition cleanly into produced ⊇ surviving and a separately-sourced rendered set? if so, "reconciliation" is a category error and the right move is to report three labeled numbers)
+  Risk if wrong: Medium-High — if these are different constructs, every effort to "reconcile" them to one number destroys information, and OPEN-081 is unresolvable as posed; load-bearing on how the system reports its own size.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-357
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the "supersede" framing and the reconciliation posture of OPEN-081; surfaced as the question whether one-quantity or three-construct is the right model. Raised as OPEN-084. High-confidence the one-quantity frame is operative. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-358:
+  Date surfaced: 2026-06-16
+  Statement: [inferred] Making all 269 nodes individually resolvable increases the visualization's truthfulness — the fan was treated as a fidelity improvement ("the scene now shows them"), presuming that visual separability equals informational fidelity. But the fan assigns grid positions (column = angle slot, row = radius) from stable INDEX ORDER, which carries no semantic meaning; a viewer can now read spatial micro-structure within each thinker's wedge that corresponds to nothing about the triplets.
+  Evidence it was operative: The fix's success criterion was "269 distinct positions, every one separable," with no discussion that the new positions are semantically empty. The before-state (collapse onto 47 stacks) and after-state (269 separable) are framed purely as hidden→visible, i.e. as recovering truth.
+  Why it was unstated: culturally embedded — "show all the data" is a near-axiomatic visualization virtue, so spreading hidden points reads as straightforwardly honest, and the introduction of meaningless-but-readable position went unremarked.
+  Type: epistemic / methodological
+  Related decisions: DECISION-059
+  Related items: ASSUMPTION-327 (deterministic fan); PRESUMPTION-351 (visible gap-marker = understood gap — same visibility≠comprehension family); PRESUMPTION-355
+  Testability: testable via literature (graphical perception of positional encodings; risk of viewers inferring structure from layout artifacts; "incidental" vs. "meaningful" spatial encodings in infovis) and empirically (do viewers read the fanned positions as meaningful?)
+  Risk if wrong: Medium — a viewer who reads the grid positions as carrying information draws false structure; the fix that made the scene "honest" about count may make it dishonest about arrangement.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-358
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the resolvability-as-success framing of the 3D fix and the semantic emptiness of index-ordered grid slots. Moderate-high confidence. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-359:
+  Date surfaced: 2026-06-16
+  Statement: [inferred] Git history is a COMPLETE census of PRS-triplet production — "264 cumulative produced" is treated as the total population, presuming every triplet ever produced left a tracked trace in `traditions/*/prs_triplets.md` (none predating version control, none added by untracked or forgotten edits, none recorded in other files or only in the connectome). The count is "264 produced," not "264 that git can see."
+  Evidence it was operative: The cumulative is stated flatly as production with no coverage caveat; the only acknowledged shortfall is the 2 retired / 1 duplicate on the surviving side, never the possibility of triplets git never recorded. The 269-vs-264 gap (PRESUMPTION-357) is read as a reconciliation problem, not as possible evidence of incomplete git coverage.
+  Why it was unstated: obvious-to-participant — once git is chosen as the source, its record tends to be treated as the territory; the gap between "what was produced" and "what git captured" is exactly the kind of frame that disappears once the tool is trusted.
+  Type: methodological / empirical
+  Related decisions: DECISION-059; DECISION-058
+  Related items: ASSUMPTION-322 (first-git-appearance production); ASSUMPTION-319; PRESUMPTION-350 (commit-as-clock — adjacent but about timing, not coverage); PRESUMPTION-357
+  Testability: testable empirically (cross-check the git census against the connectome's 269 and against any pre-version-control or non-`prs_triplets.md` records; a positive shortfall would show git under-counts production)
+  Risk if wrong: Medium — if git misses early or untracked triplets, the production series under-counts and its early-period shape (e.g. the 04-07 baseline) is distorted; couples directly to the 269 discrepancy.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-359
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the unqualified "264 produced" claim and the absence of any coverage caveat. Distinguished from PRESUMPTION-350 (timing) as a completeness presumption. Moderate confidence. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-360:
+  Date surfaced: 2026-06-16
+  Statement: [inferred] Building the metric dissolved the "cart-before-horse" concern — once real git-derived data sits behind the view, the sequencing worry is presumed resolved ("the cart-before-horse concern from yesterday is resolved"), rather than relocated. But a metric whose validity rests on unverified premises (first-appearance = production, one-day cross-check, git-as-census) can place a differently-shaped cart before the horse: a view layer anchored to numbers that read as authoritative precisely because they are "git-derived." The presumption is data-backed ⇒ trustworthy-enough-to-build-on.
+  Evidence it was operative: The cowork→chat summary states the concern is "resolved" and asks only "what should the view layer say now that it has data" — treating the existence of data, not its validated correctness, as the thing that licenses building on it. The MONITOR/REVISE dispositions on the same day's sibling metrics (files-added, commit-as-clock) are not carried into trust in the new yield series.
+  Why it was unstated: culturally embedded — "git-derived" / "computed from real history" carries an authority halo, so quantitative provenance is felt as validity; the move from "we now have numbers" to "we can build on them" is automatic.
+  Type: epistemic / normative
+  Related decisions: DECISION-059; DECISION-057; DECISION-058
+  Related items: ASSUMPTION-326 (metric-before-view sequencing); ASSUMPTION-323/325; the trace-vs-substance presumption family; PRESUMPTION-352 (capture-artifact reading still unverified)
+  Testability: framework/epistemic with an empirical edge (does anchoring a view to an unvalidated-but-data-backed metric produce more or less downstream error than holding the view until the metric is checked? testable against the eventual audit of ASSUMPTION-322/323)
+  Risk if wrong: Medium — if the "resolved" framing closes the sequencing question prematurely, the view layer hardens around numbers before their premises are tested, and the authority halo makes later correction costlier (the same dynamic OPEN-083 already warns about for the metabolism cliff).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-360
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the "concern is resolved" framing set against the day's own unverified premises and the unrun probe (PRESUMPTION-352). Moderate confidence; flagged because it governs whether the view layer should now be built. [inferred]
+    Current status: UNTESTED
