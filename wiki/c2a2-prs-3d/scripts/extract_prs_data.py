@@ -115,9 +115,36 @@ def derive_pub_year(resource, date_added):
     return CUR_YEAR, True
 
 
+def _prs_int(num):
+    """Triplet number -> int for joining the WS2 yield series; None if non-numeric."""
+    try:
+        return int(str(num).strip())
+    except (TypeError, ValueError):
+        return None
+
+
+def _load_yield_map(vault):
+    """Map (tradition, prs_int) -> git first-seen date from the WS2 yield metric
+    (architecture/metrics/prs_yield_detail.csv). Single source of truth: produced
+    by prs_yield.py, not recomputed here. Returns {} (and warns) if absent."""
+    import csv as _csv
+    path = os.path.join(vault, "architecture", "metrics", "prs_yield_detail.csv")
+    if not os.path.isfile(path):
+        sys.stderr.write("WARN: %s missing; triplets get empty first_seen\n" % path)
+        return {}
+    m = {}
+    with open(path, encoding="utf-8") as fh:
+        for row in _csv.DictReader(fh):
+            n = _prs_int(str(row["prs_id"]).replace("PRS-", ""))
+            if n is not None:
+                m[(row["tradition"], n)] = row["first_seen_date"]
+    return m
+
+
 def extract_triplets(vault, carryforward):
     triplets, fallbacks, seen_ids = [], [], {}
     sources = []
+    yield_map = _load_yield_map(vault)
     trad_dir = os.path.join(vault, "traditions")
     for thinker in sorted(os.listdir(trad_dir)):
         p = os.path.join(trad_dir, thinker, "prs_triplets.md")
@@ -155,6 +182,7 @@ def extract_triplets(vault, carryforward):
                 "date": (cf or {}).get("date") or date_added,
                 "pub_year": pub_year,
                 "confidence": fields.get("confidence", ""),
+                "first_seen": yield_map.get((thinker, _prs_int(num)), ""),
             })
     return triplets, fallbacks
 

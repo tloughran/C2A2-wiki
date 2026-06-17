@@ -351,6 +351,7 @@ body {
   <div class="prs-help-row">
     <button id="prs-help-btn" onclick="prsToggleHelp(event)" aria-label="How filters work" title="How filters work">?</button>
   </div>
+  <div id="prs-count" style="font-size:12px;color:#9a9aa8;margin:2px 0 10px">Showing … triplets</div>
   <h3>Traditions</h3>
   <div class="prs-filter-item">
     <input type="checkbox" id="prs-chk-all" checked onchange="prsToggleAll(this.checked)">
@@ -640,6 +641,33 @@ function buildDisciplineSlices() {
 
 // ── PRS NODES ──
 function buildPRSNodes() {
+  // ── DETERMINISTIC FAN (de-overlap) ──
+  // Position is fixed by (thinker -> angle, year -> height), so every triplet sharing a
+  // (thinker, year) lands on the same point. Spread each such group over a small grid
+  // within the thinker's wedge: columns fan the angle, rows fan the radius. Index is
+  // PRS_TRIPLETS order -> stable/reproducible across regens (no randomness).
+  var prsFan = {};
+  (function() {
+    var groups = {};
+    PRS_TRIPLETS.forEach(function(t) {
+      var yr = (t.date || '').slice(0, 4) || String(t.pub_year || '');
+      var k = t.thinker + '|' + yr;
+      (groups[k] = groups[k] || []).push(t);
+    });
+    Object.keys(groups).forEach(function(k) {
+      var arr = groups[k], n = arr.length;
+      var cols = Math.max(1, Math.ceil(Math.sqrt(n)));
+      var rows = Math.max(1, Math.ceil(n / cols));
+      arr.forEach(function(t, i) {
+        var col = i % cols, row = Math.floor(i / cols);
+        prsFan[t.id] = {
+          colFrac: cols > 1 ? (col / (cols - 1) - 0.5) : 0,
+          rowFrac: rows > 1 ? (row / (rows - 1) - 0.5) : 0
+        };
+      });
+    });
+  })();
+
   PRS_TRIPLETS.forEach(function(triplet) {
     var disc = THINKER_DISC[triplet.thinker] || 'Systems Integration';
     var dIdx = getDiscIndex(disc);
@@ -647,6 +675,12 @@ function buildPRSNodes() {
     var baseAngle = getDiscAngle(dIdx);
     var thinkerOffset = getThinkerAngleOffset(triplet.thinker);
     var angle = baseAngle + thinkerOffset;
+    // apply deterministic fan within the thinker's wedge
+    var prsGrp = thinkersByDisc[disc] || [triplet.thinker];
+    var prsArc = Math.min((discAngle * 0.5 / prsGrp.length) * 0.85, 0.6);
+    var prsF = prsFan[triplet.id] || { colFrac: 0, rowFrac: 0 };
+    angle += prsF.colFrac * prsArc;
+    var rMul = 1 + prsF.rowFrac * 0.35;
 
     var z = dateToZ(triplet.date);
     var color = new THREE.Color(THINKER_COLORS[triplet.thinker] || '#888888');
@@ -660,7 +694,7 @@ function buildPRSNodes() {
     var nodeGroup = [];
 
     prsTypes.forEach(function(pType, pi) {
-      var r = discRadius * rOffsets[pi];
+      var r = discRadius * rOffsets[pi] * rMul;
       var x = Math.cos(angle) * r;
       var yPos = z + pi * 1.2; // stack slightly along z (vertical)
       var zPos = -Math.sin(angle) * r;
@@ -865,6 +899,20 @@ function applyPRSFilters() {
     // Both endpoints must exist and be visible after Pass 1.
     l.visible = !!(m1 && m2 && m1.visible && m2.visible);
   });
+  updatePrsCount();
+}
+
+function updatePrsCount() {
+  // Distinct triplets currently visible (each triplet = 3 P/R/S meshes sharing one id).
+  var seen = {}, n = 0;
+  meshes.forEach(function(m) {
+    if (m.userData && m.userData.type === 'prs' && m.visible) {
+      var id = m.userData.triplet.id;
+      if (!seen[id]) { seen[id] = 1; n++; }
+    }
+  });
+  var el = document.getElementById('prs-count');
+  if (el) el.textContent = 'Showing ' + n + ' / ' + PRS_TRIPLETS.length + ' triplets';
 }
 
 // ── DISCIPLINES (per-discipline filter section) ──
@@ -1358,6 +1406,10 @@ function showNodeInfo(mesh) {
   html += '<div class="field-value">' + (triplet.pub_year || 'Unknown') + '</div>';
   html += '<div class="field-label">Confidence</div>';
   html += '<div class="field-value">' + triplet.confidence + '</div>';
+  if (triplet.first_seen) {
+    html += '<div class="field-label">First produced (git yield)</div>';
+    html += '<div class="field-value">' + triplet.first_seen + '</div>';
+  }
 
   // Find related cross-connections
   var related = CROSS_CONNECTIONS.filter(function(cc) {
