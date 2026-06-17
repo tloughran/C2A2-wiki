@@ -1,0 +1,58 @@
+{
+  "seed": true,
+  "generated": "2026-06-17",
+  "window": "weekly",
+  "metrics": {
+    "sources_reached": 5,
+    "items_checked": 95,
+    "high_relevance": 2,
+    "primary_themes": "Agents + Governance"
+  },
+  "signals": [
+    {
+      "title": "Distributed general-purpose agent networks",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "relevance": 2,
+      "tags": ["capability_jump", "governance_policy"],
+      "summary": "Agent networks are framed around local data, tool permissions, runtime environments, and governance boundaries.",
+      "implication": "Reassess role boundaries, human override, and cross-instance governance before community deployment."
+    },
+    {
+      "title": "LLM-as-judge in education",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "relevance": 2,
+      "tags": ["governance_policy"],
+      "summary": "Automated marking needs curriculum-grounded pipelines and authorized assessment artifacts.",
+      "implication": "Useful precedent for C2A2 education workflows that must cite local curricula and review standards."
+    },
+    {
+      "title": "Verbal reinforcement learning and insight governance",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "relevance": 1,
+      "tags": ["capability_jump", "governance_policy"],
+      "summary": "Agents update behavior through verbal rules extracted from experience, raising retention and forgetting questions.",
+      "implication": "Heartbeat memory should record when old rules are stale, superseded, or reactivated."
+    },
+    {
+      "title": "Dissecting model behavior through agent trajectories",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "relevance": 1,
+      "tags": ["capability_jump"],
+      "summary": "Agent performance is treated as a systems problem rather than only a model benchmark.",
+      "implication": "Community education should teach harnesses, permissions, logs, and review loops, not just model names."
+    },
+    {
+      "title": "AI prototypes from a university futures lab",
+      "source": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/",
+      "relevance": 1,
+      "tags": ["education", "market_platform"],
+      "summary": "Student AI prototypes point toward education and work reshaping through practical demos.",
+      "implication": "Good candidate for a community-facing discussion of useful experimentation versus adoption pressure."
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C2A2 Community AI Education Heartbeat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="hb-shell">
+    <header class="hb-hero">
+      <div class="hb-kicker">C2A2 Community AI Education</div>
+      <div class="hb-hero-grid">
+        <div>
+          <h1>AI Heartbeat Wiki</h1>
+          <p class="hb-lede">
+            A community-facing signal system that turns fast AI developments into durable,
+            searchable, locally governed education memory.
+          </p>
+        </div>
+        <div class="hb-status">
+          <div>
+            <span class="hb-label">Reference runtime</span>
+            <strong>Verified locally</strong>
+          </div>
+          <div>
+            <span class="hb-label">Latest digest check</span>
+            <strong id="hero-digest">—</strong>
+          </div>
+          <div>
+            <span class="hb-label">Integration state</span>
+            <strong>Static tab ready</strong>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hb-spine" aria-label="Heartbeat wiki architecture">
+      <div class="hb-spine-step">
+        <span>1</span>
+        <strong>Raw sources</strong>
+        <p>RSS, papers, local notes, transcripts, and community context remain immutable.</p>
+      </div>
+      <div class="hb-spine-step">
+        <span>2</span>
+        <strong>Heartbeat run</strong>
+        <p>Fetch, dedupe, summarize, tag, score relevance, and log source health.</p>
+      </div>
+      <div class="hb-spine-step">
+        <span>3</span>
+        <strong>Compiled wiki</strong>
+        <p>LLM-maintained markdown pages accumulate synthesis, contradictions, and decisions.</p>
+      </div>
+      <div class="hb-spine-step">
+        <span>4</span>
+        <strong>Community lens</strong>
+        <p>Each community applies its own preferences, roles, thresholds, and consent rules.</p>
+      </div>
+      <div class="hb-spine-step">
+        <span>5</span>
+        <strong>Shared graph</strong>
+        <p>Selected stars, comments, and rankings can flow to a public knowledge graph.</p>
+      </div>
+    </section>
+
+    <nav class="hb-tabs" aria-label="Heartbeat modes">
+      <button class="hb-tab active" data-view="pulse" type="button">Pulse</button>
+      <button class="hb-tab" data-view="wiki" type="button">Compiled Wiki</button>
+      <button class="hb-tab" data-view="lens" type="button">Community Lens</button>
+      <button class="hb-tab" data-view="federation" type="button">Federation</button>
+      <button class="hb-tab" data-view="integration" type="button">Integration</button>
+    </nav>
+
+    <main>
+      <section class="hb-view active" id="view-pulse">
+        <div class="hb-section-head">
+          <div>
+            <p class="hb-eyebrow">Latest digest snapshot</p>
+            <h2>Heartbeat pulse</h2>
+          </div>
+          <div class="hb-search">
+            <input id="signal-search" type="search" placeholder="Filter signals by source, tag, or title">
+          </div>
+        </div>
+
+        <div id="hb-auth" class="hb-auth" hidden></div>
+
+        <div id="seed-banner" class="hb-banner" hidden>
+          Sample / seed data — replace by exporting a live snapshot from the Heartbeat
+          runtime's <code>/api/digest</code> into <code>data/digest.json</code>. See <code>data/README.md</code>.
+        </div>
+
+        <details class="hb-lens-controls" id="lens-controls">
+          <summary>Your lens <span class="hb-lens-hint" id="lens-hint">stored on this device</span></summary>
+          <div class="hb-lens-body">
+            <div class="hb-lens-field">
+              <label>Show sources <em>(none selected = all)</em></label>
+              <div id="pref-sources" class="hb-chiprow"></div>
+            </div>
+            <div class="hb-lens-field">
+              <label>Hide tags</label>
+              <div id="pref-extags" class="hb-chiprow"></div>
+            </div>
+            <div class="hb-lens-row">
+              <label>Min relevance
+                <select id="pref-minrel">
+                  <option value="0">0 — all</option>
+                  <option value="1">1+</option>
+                  <option value="2">2+</option>
+                  <option value="3">3 only</option>
+                </select>
+              </label>
+              <label>Sort
+                <select id="pref-sort">
+                  <option value="relevance">Relevance</option>
+                  <option value="recency">Recency</option>
+                  <option value="source">Source</option>
+                </select>
+              </label>
+              <label>Digest
+                <select id="pref-cadence">
+                  <option value="daily">Daily</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="off">Off</option>
+                </select>
+              </label>
+              <button id="pref-reset" type="button">Reset lens</button>
+            </div>
+          </div>
+        </details>
+
+        <div class="hb-metric-row">
+          <div class="hb-metric"><span>Sources reached</span><strong id="m-sources">—</strong></div>
+          <div class="hb-metric"><span>Items checked</span><strong id="m-items">—</strong></div>
+          <div class="hb-metric"><span>High relevance</span><strong id="m-high">—</strong></div>
+          <div class="hb-metric"><span>Primary themes</span><strong id="m-themes">—</strong></div>
+        </div>
+        <p class="hb-provenance" id="digest-provenance"></p>
+
+        <div class="hb-two-col">
+          <section class="hb-panel">
+            <h3>Top education signals</h3>
+            <div id="signal-list" class="hb-list"></div>
+          </section>
+          <section class="hb-panel hb-panel-accent">
+            <h3>Why this is now a wiki</h3>
+            <p>
+              The old dashboard can show what happened this week. The wiki layer preserves
+              what the community learned from it, which claims changed, and why a signal
+              mattered for formation, policy, or local AI practice.
+            </p>
+            <div class="hb-quote-grid">
+              <div><strong>Detect</strong><span>continuous source scanning</span></div>
+              <div><strong>Distill</strong><span>structured review units</span></div>
+              <div><strong>Deliberate</strong><span>human correction and context</span></div>
+              <div><strong>Record</strong><span>archival trace and provenance</span></div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="hb-view" id="view-wiki">
+        <div class="hb-section-head">
+          <div>
+            <p class="hb-eyebrow">Karpathy-style structure</p>
+            <h2>Compiled wiki layer</h2>
+          </div>
+        </div>
+        <div class="hb-grid" id="wiki-pages"></div>
+      </section>
+
+      <section class="hb-view" id="view-lens">
+        <div class="hb-section-head">
+          <div>
+            <p class="hb-eyebrow">Local autonomy</p>
+            <h2>Community lens and memory</h2>
+          </div>
+        </div>
+        <div class="hb-two-col">
+          <section class="hb-panel">
+            <h3>Preference schema</h3>
+            <div id="lens-list" class="hb-list"></div>
+          </section>
+          <section class="hb-panel">
+            <h3>Role and consent model</h3>
+            <div class="hb-role-grid">
+              <div><span>Owner</span><strong>instance policy and sharing</strong></div>
+              <div><span>Admin</span><strong>sources, thresholds, exports</strong></div>
+              <div><span>Editor</span><strong>summary review and provenance</strong></div>
+              <div><span>Reader</span><strong>digest and notification preferences</strong></div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="hb-view" id="view-federation">
+        <div class="hb-section-head">
+          <div>
+            <p class="hb-eyebrow">Multi-community architecture</p>
+            <h2>Federated heartbeat network</h2>
+          </div>
+        </div>
+        <div class="hb-grid" id="federation-list"></div>
+      </section>
+
+      <section class="hb-view" id="view-integration">
+        <div class="hb-section-head">
+          <div>
+            <p class="hb-eyebrow">Explorer handoff</p>
+            <h2>Integration path</h2>
+          </div>
+        </div>
+        <div class="hb-two-col">
+          <section class="hb-panel">
+            <h3>What is integrated now</h3>
+            <ul class="hb-checks">
+              <li>Community Education tab carries this Heartbeat chapter as an Education Tools sub-tab.</li>
+              <li>Karpathy-style raw source -> compiled wiki -> schema model is documented.</li>
+              <li>Multi-community federation, privacy, and permission model is captured.</li>
+              <li>Pulse metrics and signals load from a static digest snapshot with an embedded fallback.</li>
+              <li>Each reader sets a preference lens (sources, tags, relevance, ranking); magic-link sign-in syncs it across devices.</li>
+            </ul>
+          </section>
+          <section class="hb-panel">
+            <h3>Next engineering slice</h3>
+            <ul class="hb-checks">
+              <li>Export live <code>/api/digest</code> JSON into <code>data/digest.json</code> on a schedule.</li>
+              <li>Add authenticated admin path for per-community source profiles.</li>
+              <li>Promote reviewed answers into markdown wiki pages with citations.</li>
+              <li>Define selective contribution API for stars, comments, and rankings.</li>
+            </ul>
+          </section>
+        </div>
+        <section class="hb-panel hb-wide-note">
+          <h3>Reference paths</h3>
+          <p><code>ARCHITECTURE.md</code> is the multi-community vision, assessment, and phased roadmap (governs build scope).</p>
+          <p><code>data/digest.json</code> is the static snapshot the Pulse view reads (with embedded fallback).</p>
+          <p><code>AGENTS.md</code> is the maintainer schema for future LLM/wiki updates.</p>
+          <p><code>INTEGRATION_BRIEF.md</code> records discovery notes and next steps.</p>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <!-- Optional account layer (Phase 2b). If the CDN/config fail to load, the tab
+       stays fully functional with the per-device localStorage lens. -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="heartbeat-config.js"></script>
+  <script src="app.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>

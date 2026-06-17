@@ -336,13 +336,14 @@
   </div>
 
   <!-- ROW 2-EDU: education tools within Community AI Education.
-       All three planned tools are live: RC Document Explorer,
-       Physics Explorer, and TRV Commentary. -->
+       Four tools live: RC Document Explorer, Physics Explorer,
+       TRV Commentary, and AI Heartbeat. -->
   <div id="row2-edu" style="display: none;">
     <span class="row2-label">Education&nbsp;Tools</span>
     <button class="tab-btn active" data-src="rc_document_explorer.html">RC Document Explorer</button>
     <button class="tab-btn" data-src="physics_explorer.html">Physics Explorer</button>
     <button class="tab-btn" data-src="commentary-explorer/commentary_explorer.html">TRV Commentary</button>
+    <button class="tab-btn" data-src="heartbeat/index.html">AI Heartbeat</button>
     <button class="btn-help-row" onclick="showHelp()" title="About this view">?</button>
   </div>
 
@@ -746,6 +747,10 @@ function showHelp() {
     'commentary-explorer/commentary_explorer.html': {
       title: 'TRV Commentary',
       body: 'An annotated-reading explorer for Alasdair MacIntyre\'s "Three Rival Versions of Moral Enquiry" — the 1988 Gifford Lectures (in print from Notre Dame Press, 1990). A D3 force graph lays out the book\'s twelve structural divisions — Preface, Introduction, ten chapters — as chapter nodes, with satellite nodes for Tom Loughran\'s marginal commentary and PRS triplets, companion perspectives from Eleonore Stump and N. T. Wright, and Summa-day crossovers; the left-panel checkboxes show or hide each satellite group. 1,819 annotations across 156 scanned pages. Click a chapter to walk its pages in the breadcrumb-stacked right panel; the OCR pane highlights each annotation\'s anchor in the page text. Chapters IX and X are structural placeholders — the annotated scan covers through Chapter VIII. Third of three planned Education tools.'
+    },
+    'heartbeat/index.html': {
+      title: 'AI Heartbeat',
+      body: 'A Karpathy-style compiled wiki over fast-moving AI developments, reframed for community AI education. Raw sources stay immutable; heartbeat runs fetch, dedupe, summarize, tag, and score relevance; a compiled markdown layer preserves durable synthesis, contradictions, and decisions; each community applies its own lens, roles, and consent rules; selected stars and rankings can flow to a shared graph. The Pulse view loads from a static digest snapshot (data/digest.json) with an embedded fallback, so the tab is GitHub Pages-safe with no live backend. Readers set a preference lens; magic-link sign-in syncs it across devices. Fourth Education tool.'
     },
     'agents_tab.html': {
       title: 'Agent Map',

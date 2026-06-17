@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "c2a2.heartbeat.preferences.v1",
+  "title": "C2A2 Heartbeat — community/user preference lens",
+  "description": "One reader's lens over the Heartbeat. Backs BOTH the client-side per-device store (localStorage key 'c2a2_hb_prefs_v1') and the per-account row (Supabase public.user_preferences.prefs). The same document upgrades from device-local to account-synced at sign-in with no shape change. Operationalizes the tab's Community Lens view: filtering, ranking, communication, consent.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "lens", "ranking", "communication", "consent"],
+  "properties": {
+    "version": { "type": "integer", "const": 1 },
+
+    "lens": {
+      "description": "Filtering lens — which signals are shown at all.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sources":         { "type": "array", "items": { "type": "string" }, "default": [], "description": "Include-only source names; empty = all sources." },
+        "exclude_sources": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "exclude_tags":    { "type": "array", "items": { "type": "string" }, "default": [] },
+        "keywords":        { "type": "array", "items": { "type": "string" }, "default": [], "description": "Free-text include terms; a signal must match at least one (empty = no keyword filter)." },
+        "min_relevance":   { "type": "integer", "minimum": 0, "maximum": 3, "default": 0 }
+      },
+      "default": {}
+    },
+
+    "ranking": {
+      "description": "Ranking criteria — order of the shown signals.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sort":           { "type": "string", "enum": ["relevance", "recency", "source"], "default": "relevance" },
+        "priority_tags":  { "type": "array", "items": { "type": "string" }, "default": [], "description": "Tags that boost a signal's effective rank." },
+        "priority_boost": { "type": "number", "minimum": 0, "maximum": 5, "default": 1, "description": "Added to relevance per matched priority tag when sort = relevance." }
+      },
+      "default": {}
+    },
+
+    "communication": {
+      "description": "How digests reach the reader (display-only until Phase 2b accounts + notification wiring).",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "digest_cadence": { "type": "string", "enum": ["daily", "weekly", "off"], "default": "weekly" },
+        "channel":        { "type": "string", "enum": ["email", "in_app", "none"], "default": "in_app" },
+        "length":         { "type": "string", "enum": ["brief", "deep"], "default": "brief" }
+      },
+      "default": {}
+    },
+
+    "consent": {
+      "description": "Consent boundaries — gates every write/contribution path (Phase 3). All default false; nothing leaves the instance without an explicit opt-in.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "share_stars":              { "type": "boolean", "default": false },
+        "share_comments":           { "type": "boolean", "default": false },
+        "contribute_aggregate_rank":{ "type": "boolean", "default": false }
+      },
+      "default": {}
+    }
+  }
+}
