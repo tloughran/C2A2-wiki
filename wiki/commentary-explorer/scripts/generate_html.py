@@ -258,6 +258,37 @@ details.filter-group summary { cursor: pointer; font-size: 11px; text-transform:
 .satellite-meta b { color: var(--fg-dim); font-weight: 500; }
 
 .empty-hint { color: var(--fg-muted); font-style: italic; padding: 30px 0; text-align: center; }
+
+/* Page-scan pop-up (lightbox) — fired from a comment or a page's comment set */
+.scan-link {
+  color: var(--link); cursor: pointer; font-size: 10px;
+  border: 1px solid var(--border); border-radius: 3px; padding: 0 6px;
+  white-space: nowrap; user-select: none;
+}
+.scan-link:hover { border-color: var(--accent); color: var(--accent); background: rgba(201,168,76,0.10); }
+.page-summary .scan-link { font-size: 11px; margin-left: 8px; }
+.lightbox {
+  position: fixed; inset: 0; z-index: 200; display: none;
+  background: rgba(5,5,9,0.88); align-items: center; justify-content: center;
+}
+.lightbox.open { display: flex; }
+.lightbox-inner {
+  background: var(--bg-panel); border: 1px solid var(--border); border-radius: 6px;
+  max-width: 92vw; max-height: 92vh; display: flex; flex-direction: column; overflow: hidden;
+}
+.lightbox-bar {
+  display: flex; align-items: center; gap: 12px; padding: 8px 12px;
+  border-bottom: 1px solid var(--border); background: var(--bg-panel-2);
+}
+.lightbox-cap { font-size: 12px; color: var(--accent); flex: 1; }
+.lightbox-close {
+  background: var(--bg-panel); color: var(--fg); border: 1px solid var(--border);
+  border-radius: 4px; padding: 2px 10px; cursor: pointer; font-family: inherit; font-size: 13px;
+}
+.lightbox-close:hover { border-color: var(--accent); color: var(--accent); }
+.lightbox-stage { overflow: auto; padding: 10px; display: flex; align-items: center; justify-content: center; }
+.lightbox-stage img { max-width: 88vw; max-height: 80vh; border: 1px solid var(--border); border-radius: 4px; display: block; }
+.lightbox-missing { display: none; color: var(--fg-muted); font-style: italic; font-size: 12px; padding: 30px; max-width: 360px; text-align: center; }
 </style>
 </head>
 <body>
@@ -285,6 +316,18 @@ details.filter-group summary { cursor: pointer; font-size: 11px; text-transform:
       <div class="empty-hint">Click a chapter or satellite node to begin.</div>
     </div>
   </aside>
+</div>
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <div class="lightbox-inner">
+    <div class="lightbox-bar">
+      <span class="lightbox-cap" id="lightbox-cap"></span>
+      <button class="lightbox-close" id="lightbox-close" title="Close (Esc)">✕</button>
+    </div>
+    <div class="lightbox-stage">
+      <img id="lightbox-img" alt="">
+      <div class="lightbox-missing" id="lightbox-missing">Page image not available in this copy (the scan sidecar is local-only and not published).</div>
+    </div>
+  </div>
 </div>
 <script>
 window.BUNDLE = """
@@ -616,7 +659,38 @@ TEMPLATE_TAIL = r""";
 
   document.getElementById('btn-back').addEventListener('click', back);
 
+  // --- Page-scan lightbox: pop the annotated scan from a comment or page ---
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCap = document.getElementById('lightbox-cap');
+  const lightboxMissing = document.getElementById('lightbox-missing');
+  function openPageScan(page){
+    const src = 'pages/p' + String(page).padStart(3, '0') + '.jpg';
+    lightboxMissing.style.display = 'none';
+    lightboxImg.style.display = 'block';
+    lightboxImg.onerror = () => {
+      lightboxImg.style.display = 'none';
+      lightboxMissing.style.display = 'block';
+    };
+    lightboxImg.src = src;
+    lightboxImg.alt = 'Annotated scan, page ' + page;
+    lightboxCap.textContent = 'Annotated scan — p. ' + page;
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+  }
+  function closePageScan(){
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightboxImg.removeAttribute('src');
+  }
+  document.getElementById('lightbox-close').addEventListener('click', closePageScan);
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) closePageScan(); });
+
   document.addEventListener('keydown', e => {
+    if (lightbox.classList.contains('open')){
+      if (e.key === 'Escape'){ e.preventDefault(); closePageScan(); }
+      return;
+    }
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
     if (e.key === 'Escape'){
       e.preventDefault();
@@ -686,6 +760,17 @@ TEMPLATE_TAIL = r""";
     bodyEl.scrollTop = 0;
     wireWikilinks();
     wireOcrMarks();
+    wirePageScans();
+  }
+
+  // Click any 🔍 scan link to pop that page's annotated scan in the lightbox
+  function wirePageScans(){
+    document.querySelectorAll('.scan-link[data-scan-page]').forEach(el => {
+      el.addEventListener('click', ev => {
+        ev.stopPropagation();
+        openPageScan(+el.dataset.scanPage);
+      });
+    });
   }
 
   // Build the OCR block for a page — collapsible <details> with the OCR text
@@ -779,7 +864,8 @@ TEMPLATE_TAIL = r""";
          + '<span class="pdesc">' + escapeHtml(p.summary.slice(0, 140)) + '…</span>'
          + '<span class="acount">' + p.annotations.length + ' ann</span>'
          + '</summary>';
-      s += '<div class="page-summary">' + escapeHtml(p.summary) + '</div>';
+      s += '<div class="page-summary">' + escapeHtml(p.summary)
+         + ' <span class="scan-link" data-scan-page="' + p.page + '" title="Pop the annotated page scan">🔍 page scan</span></div>';
       const pimg = 'pages/p' + String(p.page).padStart(3, '0') + '.jpg';
       s += '<details class="ocr-block pgimg-block">'
          + '<summary><span class="ocr-tag">PAGE IMAGE</span>'
@@ -797,6 +883,7 @@ TEMPLATE_TAIL = r""";
            + '<span class="annid">Ann ' + a.id + '</span>'
            + '<span class="anntype">' + escapeHtml(a.type || '?') + '</span>'
            + (a.ocr_match ? '<span class="anntype" title="anchor located in OCR">📍 located</span>' : '')
+           + '<span class="scan-link" data-scan-page="' + p.page + '" title="Pop the annotated page scan">🔍 scan</span>'
            + '</div>';
         if (a.anchor_text){
           let at = a.anchor_text.replace(/^_(.+)_$/, '$1');
