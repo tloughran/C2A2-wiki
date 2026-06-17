@@ -330,7 +330,7 @@
           onclick="window.open('vault/refs/missing_days.md','_blank')">…</span>
     <button class="tab-btn" data-src="prs_3d.html">Narrative Connectome</button>
     <button class="tab-btn" data-src="agents_tab.html">Agent Map</button>
-    <button class="tab-btn" data-src="metabolism_view.html">Metabolism</button>
+    <button class="tab-btn" data-src="metabolism/metabolism_view.html">Metabolism</button>
     <button class="tab-btn" data-src="summa_explorer.html">Curriculum Tools</button>
     <button id="btn-help" onclick="showHelp()" title="About this view">?</button>
   </div>
@@ -751,9 +751,9 @@ function showHelp() {
       title: 'Agent Map',
       body: 'A live map of the autonomous agents running the C2A2 system — daily synthesis batch, QC sweep, commentary reviewer, nightly verification, and wiki update agents. Shows each agent\'s last run time, output status, and task schedule.'
     },
-    'metabolism_view.html': {
+    'metabolism/metabolism_view.html': {
       title: 'Agent Metabolism',
-      body: 'The temporal pulse of the agent swarm (Pathway 29), built from OpenStory run telemetry and the vault git history. Three views: a per-agent Raster of runs over time (size = a chosen amplitude — events, tokens sent/returned, cache-read, duration); a Waveform of the system\'s daily pulse, stacked by category or shown on a log axis; and Returned-vs-sent tokens. The Yield axis is live — wikilinks and files added per day from the vault\'s git history — a first real measure of useful output, with PRS-triplet completion still to come. The framing: schedule agents on demand with backpressure (an electron-transport-chain analogy), and treat the human+AI system\'s metabolism as something measurable.'
+      body: 'The temporal pulse of the agent swarm (Pathway 29), built from OpenStory run telemetry and the vault git history. Three views: a per-agent Raster of runs over time (size = a chosen amplitude — events, tokens sent/returned, cache-read, duration); a Waveform of the system\'s daily pulse, stacked by category or shown on a log axis; and Returned-vs-sent tokens. The Yield axis is live — wikilinks, files, and PRS triplets per day from the vault\'s git history, a first real measure of useful output. PRS appears as two axes: first-seen (the git day an id first appeared) and articulated (its self-reported Date Added, when the work was actually done). The framing: schedule agents on demand with backpressure (an electron-transport-chain analogy), and treat the human+AI system\'s metabolism as something measurable.'
     }
   };
   var info = descriptions[src] || { title: 'C2A2 Explorer', body: 'Community Dialogue Accelerator/Detector System — an integrated suite of visualization and analysis tools for the RC Wiki knowledge base.' };

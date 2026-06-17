@@ -12,7 +12,7 @@ prs_triplets.md. Daily yield = count of triplets first appearing on that day.
 
 Outputs (written next to this script unless --out-dir given):
   prs_yield_log.csv     date,new_triplets,cumulative,traditions_touched
-  prs_yield_detail.csv  tradition,prs_id,label,first_seen_date,commit,file_relpath
+  prs_yield_detail.csv  tradition,prs_id,label,first_seen_date,date_added,commit,present,file_relpath
 
 Fail-loud (Rule 12): any tradition file with zero commits, or a cumulative that
 does not match the current on-disk triplet count, aborts with a nonzero exit.
@@ -28,6 +28,7 @@ from collections import defaultdict
 
 PRS_RE = re.compile(r"^PRS-(\d+):\s*$")
 LABEL_RE = re.compile(r"^\s*Label:\s*(.*?)\s*$")
+DATE_ADDED_RE = re.compile(r"^\s*Date Added:\s*(\d{4}-\d{2}-\d{2})")
 
 
 def git(repo, *args):
@@ -97,25 +98,33 @@ def current_ondisk(repo, files):
     unique_id_set : set of (tradition, prs_id) currently present.
     line_count    : number of PRS-NN: lines (> unique count iff an id repeats).
     duplicates    : list of (tradition, prs_id) appearing more than once in a file.
+    date_added    : map (tradition, prs_id) -> self-reported 'Date Added' (when the
+                    work was articulated; first occurrence wins for duplicate ids).
     """
     unique = set()
     line_count = 0
     duplicates = []
+    date_added = {}
     for rel in files:
         tradition = rel.split("/")[2]
         seen_here = set()
+        cur_pid = None
         with open(os.path.join(repo, rel), encoding="utf-8") as fh:
             for ln in fh:
                 m = PRS_RE.match(ln)
-                if not m:
+                if m:
+                    line_count += 1
+                    pid = f"PRS-{int(m.group(1)):02d}"
+                    if pid in seen_here:
+                        duplicates.append((tradition, pid))
+                    seen_here.add(pid)
+                    unique.add((tradition, pid))
+                    cur_pid = pid
                     continue
-                line_count += 1
-                pid = f"PRS-{int(m.group(1)):02d}"
-                if pid in seen_here:
-                    duplicates.append((tradition, pid))
-                seen_here.add(pid)
-                unique.add((tradition, pid))
-    return unique, line_count, duplicates
+                da = DATE_ADDED_RE.match(ln)
+                if da and cur_pid is not None:
+                    date_added.setdefault((tradition, cur_pid), da.group(1))
+    return unique, line_count, duplicates, date_added
 
 
 def main():
@@ -176,7 +185,7 @@ def main():
     # cannot be trusted. Retired ids (in history, gone from disk) and duplicate
     # ids (same id twice in one file) are real but expected data conditions:
     # they are surfaced loudly, not silently absorbed, but do not abort.
-    on_disk_set, on_disk_lines, duplicates = current_ondisk(repo, files)
+    on_disk_set, on_disk_lines, duplicates, date_added_map = current_ondisk(repo, files)
     ever_keys = set(first_seen)
     missing = on_disk_set - ever_keys          # MUST be empty
     retired = sorted(ever_keys - on_disk_set)  # produced then removed
@@ -211,11 +220,12 @@ def main():
     with open(det_path, "w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
         w.writerow(["tradition", "prs_id", "label", "first_seen_date",
-                    "commit", "present", "file_relpath"])
+                    "date_added", "commit", "present", "file_relpath"])
         for (tradition, prs_id), (date, commit, label) in sorted(first_seen.items()):
             rel = f"wiki/traditions/{tradition}/prs_triplets.md"
             present = 1 if (tradition, prs_id) in on_disk_set else 0
-            w.writerow([tradition, prs_id, label, date, commit[:8], present, rel])
+            da = date_added_map.get((tradition, prs_id), "")
+            w.writerow([tradition, prs_id, label, date, da, commit[:8], present, rel])
 
     # Console summary.
     print(f"PRS-triplet yield  (repo: {repo})")
