@@ -509,3 +509,35 @@ FLAG-012 (Friston ZBS detector signal).
    only the event is confirmed." Ingested 1 placeholder triplet per the APPROVE decision; verify content later.
 4. The separate ~36-file RAW inbox backlog (oldest 2026-04-21) remains DEFERRED per standing policy —
    only the 20 attended-approved proposals were ingested this run.
+
+---
+
+## 2026-06-17 — Ingested 12 attended-approved proposals (decision email [C2A2-review-decision] 2026-06-16, 13× APPROVE)
+
+Processed (moved pending→approved 06-17, copied to inbox/, then ingested):
+- PROP-2026-06-07-001 wright_collins-evolution-truth-case-for-god → wright PRS-7 (+1)
+- PROP-2026-06-07-002 rohr_beyond-binaries-nondual-mind → rohr PRS-6 (+1)
+- PROP-2026-06-07-003 rohr_trinity-relational-template-divine-dance → rohr PRS-7 (+1)
+- PROP-2026-06-10-001 mcgilchrist_eisenstein-being-in-the-world → mcgilchrist PRS-36/37 (+2)
+- PROP-2026-06-10-002 kastrup_birth-of-thought → kastrup PRS-23/24 (+2)
+- PROP-2026-06-10-003 kastrup_illusion-of-self → kastrup PRS-25/26 (+2)
+- PROP-2026-06-11-001 stump_image-of-god-mourning → stump PRS-18/19 (+2)
+- PROP-2026-06-12-001 carroll_ama-june-2026 → carroll PRS-22/23/24 (+3)
+- PROP-2026-06-12-002 carroll_mindscape-356-wulf-romanticism → carroll PRS-25/26 (+2)
+- PROP-2026-06-15-001 levin_top-down-membrane-potential-transcription → levin PRS-35 (+1)
+- PROP-2026-06-15-002 levin_platonic-space-ingressing-minds → levin PRS-34 (+1)
+- PROP-2026-06-15-003 friston_beautiful-loop-consciousness → friston PRS-21 (+1)
+
+**Triplets:** +19 across 8 traditions (carroll +5, kastrup +4, levin +2, mcgilchrist +2, rohr +2, stump +2, friston +1, wright +1).
+**Cross-program:** 12 cross-tradition signal blocks appended to master/cross_program_index.md and flags/for_pattern_detector.md, evaluated by Pattern Detector → FINDING-042..047 (6 new).
+Escalated to master Paradigm Shift Watch List: FLAG-013 (Carroll×Wolfram×Hoffman observer-relativity, FINDING-042), FLAG-014 (Levin×Kastrup×Hoffman Platonic-space, FINDING-043), FLAG-015 (Friston epistemic-depth detector, FINDING-045).
+
+**Network now:** 260 → 279 PRS triplets (narrative series) · 90 cross-program connections (+12 signals) · 41 → 47 findings (through FINDING-047).
+
+**13th decision (PROP-2026-06-16-004 → stable PROP-2026-06-08-001, levin cognitive-glue-journey): NO-OP** — already removed to _pending_dupes_resolved/ as a duplicate of PROP-2026-06-01-001 before this run. See review/archive/2026-06-16_decisions.md.
+
+**⚠ FAIL-LOUD (carried, unfixed):**
+1. generate_review_page.py emits position-based decision IDs (line ~304) that diverge from the stable proposal_id shown on cards (line ~116) — broke Phase-0 stable-ID lookup; mapping recovered by card order this run. Fix line ~304 to emit stable IDs.
+2. arkanihamed/prs_triplets.md pre-existing duplicated fragment + stale total line — still needs janitor dedup (untouched this run).
+3. Per-file total-line sum drifts from narrative count (pre-existing) — reconcile in attended pass.
+4. ~150-file RAW inbox backlog remains DEFERRED per standing policy — only the 12 attended-approved proposals were ingested.
