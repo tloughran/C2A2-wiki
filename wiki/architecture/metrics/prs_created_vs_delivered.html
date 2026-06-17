@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>PRS Triplets — Created vs Delivered</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+  body{background:#0a0a0f;color:#d8d8e0;font:14px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;margin:0;padding:24px}
+  h1{font-size:18px;margin:0 0 2px} .sub{color:#8a8a98;font-size:12px;margin:0 0 16px;max-width:760px}
+  #key{margin:10px 0 4px;font-size:12px}
+  .swatch{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:-1px;margin-right:5px}
+  .axis path,.axis line{stroke:#2a2a3a} .axis text{fill:#9a9aa8;font-size:11px}
+  .note{color:#8a8a98;font-size:11px;margin-top:10px}
+  .bar-created{fill:#B87D3E} .bar-delivered{fill:#5A8EAF}
+  .tip{position:fixed;background:#16161f;border:1px solid #2a2a3a;padding:6px 9px;border-radius:5px;
+       font-size:12px;pointer-events:none;opacity:0;transition:opacity .1s}
+</style></head><body>
+<h1>PRS triplets — when work was done vs when it was delivered</h1>
+<p class="sub">Same population of present triplets, two clocks.
+<b style="color:#B87D3E">Created</b> = the "Date Added" stamped in the source triplet file (when the work was done).
+<b style="color:#5A8EAF">Delivered</b> = the git first-seen date (when it was committed). The lag between the two is the point.</p>
+<div id="key">
+  <span class="swatch" style="background:#B87D3E"></span>Created (Date Added)&nbsp;&nbsp;
+  <span class="swatch" style="background:#5A8EAF"></span>Delivered (git commit)
+</div>
+<svg id="chart"></svg>
+<div class="note" id="note"></div>
+<div class="tip" id="tip"></div>
+<script>
+const DATA = {"created": [{"date": "2026-04-03", "n": 46}, {"date": "2026-04-05", "n": 14}, {"date": "2026-04-07", "n": 7}, {"date": "2026-04-08", "n": 19}, {"date": "2026-04-09", "n": 8}, {"date": "2026-04-13", "n": 3}, {"date": "2026-04-14", "n": 6}, {"date": "2026-04-15", "n": 4}, {"date": "2026-04-16", "n": 31}, {"date": "2026-04-28", "n": 29}, {"date": "2026-04-29", "n": 17}, {"date": "2026-05-05", "n": 3}, {"date": "2026-05-08", "n": 13}, {"date": "2026-05-13", "n": 7}, {"date": "2026-05-16", "n": 3}, {"date": "2026-05-17", "n": 9}, {"date": "2026-06-07", "n": 38}, {"date": "2026-06-11", "n": 2}], "delivered": [{"date": "2026-04-07", "n": 67}, {"date": "2026-04-16", "n": 71}, {"date": "2026-05-11", "n": 65}, {"date": "2026-05-22", "n": 19}, {"date": "2026-06-07", "n": 38}, {"date": "2026-06-16", "n": 2}], "axis_min": "2026-03-25", "n_both": 262, "offscale_created": 3, "retired_no_da": 0, "total_created_days": 19, "total_delivered_days": 6};
+const tip = document.getElementById("tip");
+function show(html,x,y){tip.innerHTML=html;tip.style.left=(x+12)+"px";tip.style.top=(y+12)+"px";tip.style.opacity=1;}
+function hide(){tip.style.opacity=0;}
+
+const M={top:16,right:24,bottom:40,left:44}, W=920, H=380, iW=W-M.left-M.right, iH=H-M.top-M.bottom;
+const svg=d3.select("#chart").attr("width",W).attr("height",H);
+const g=svg.append("g").attr("transform",`translate(${M.left},${M.top})`);
+
+const parse=d3.timeParse("%Y-%m-%d");
+const all=[...DATA.created,...DATA.delivered].map(d=>parse(d.date));
+const x=d3.scaleTime().domain([parse(DATA.axis_min), d3.timeDay.offset(d3.max(all),3)]).range([0,iW]);
+const yMax=d3.max([...DATA.created,...DATA.delivered],d=>d.n)||1;
+const y=d3.scaleLinear().domain([0,yMax]).nice().range([iH,0]);
+
+const bw=7;  // half-width per grouped bar
+function draw(arr,cls,off,label){
+  g.selectAll("."+cls).data(arr).join("rect").attr("class",cls)
+    .attr("x",d=>x(parse(d.date))+off).attr("width",bw)
+    .attr("y",d=>y(d.n)).attr("height",d=>iH-y(d.n))
+    .on("mousemove",(e,d)=>show(`<b>${d.date}</b><br>${label}: ${d.n}`,e.clientX,e.clientY))
+    .on("mouseleave",hide);
+}
+draw(DATA.created,"bar-created",-bw-0.5,"created");
+draw(DATA.delivered,"bar-delivered",0.5,"delivered");
+
+g.append("g").attr("class","axis").attr("transform",`translate(0,${iH})`)
+  .call(d3.axisBottom(x).ticks(d3.timeWeek.every(1)).tickFormat(d3.timeFormat("%b %d")));
+g.append("g").attr("class","axis").call(d3.axisLeft(y).ticks(6));
+g.append("text").attr("transform","rotate(-90)").attr("x",-iH/2).attr("y",-32)
+  .attr("text-anchor","middle").attr("fill","#9a9aa8").style("font-size","11px").text("triplets / day");
+
+document.getElementById("note").innerHTML =
+  `${DATA.n_both} present triplets charted. `
+  + (DATA.offscale_created? `${DATA.offscale_created} created off-scale (Date Added before ${DATA.axis_min}, likely source-publication dates) — not drawn. ` : "")
+  + (DATA.retired_no_da? `${DATA.retired_no_da} retired triplet(s) excluded (no current Date Added). ` : "")
+  + `Created spans ${DATA.total_created_days} distinct days; delivered batches into ${DATA.total_delivered_days} commit-days — the gap is the create→deliver lag.`;
+</script></body></html>
