@@ -72,3 +72,9 @@ Levin's program is **highly generative** — 6 PRS triplets from the RC Pilot do
 Ingested 2 approved triplet(s): PRS-32, PRS-33.
 - (open question) How does goal-directed cognition scale up from individual cells to integrated organisms — what physically binds many small agents into one l…  [src: PROP-2026-06-01-001]
 - (open question) Is there a coherent narrative connecting Levin's empirical findings (planarian regeneration, xenobots, bioelectric memory) into one research…  [src: PROP-2026-06-01-001]
+
+
+## Ingestion Log — 2026-06-17
+Ingested 2 approved triplet(s): PRS-34, PRS-35.
+- Genetics plus environment under-determine the goal-directed, problem-solving forms observed in biology and cognition; co…  [src: PROP-2026-06-15-002]
+- Mainstream molecular biology models transcription bottom-up from gene-regulatory networks, leaving no principled role fo…  [src: PROP-2026-06-15-001]

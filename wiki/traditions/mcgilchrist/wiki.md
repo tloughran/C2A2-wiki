@@ -74,3 +74,9 @@ Ingested 7 approved triplet(s): PRS-29, PRS-30, PRS-31, PRS-32, PRS-33, PRS-34, 
 - (open question) A tradition's growth over time is hard to track when the only public record consists of interviews with shifting interlocutors — the underly…  [src: PROP-2026-05-27-001]
 - (open question) Does AI threaten the human soul, or merely mirror back what a left-hemisphere-dominant culture has already become?  [src: PROP-2026-06-03-001]
 - (open question) Can the question of machine consciousness be adjudicated on neuroscientific grounds alone?  [src: PROP-2026-06-03-001]
+
+
+## Ingestion Log — 2026-06-17
+Ingested 2 approved triplet(s): PRS-36, PRS-37.
+- The hemispheric program has specified what rebalancing looks like institutionally (Sheldonian, PRS-29) but not what it l…  [src: PROP-2026-06-10-001]
+- McGilchrist's value-as-constitutive thesis has mostly been triangulated against academic interlocutors (Hobbs, Currivan,…  [src: PROP-2026-06-10-001]

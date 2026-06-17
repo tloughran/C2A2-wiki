@@ -211,5 +211,38 @@ PRS-22:
   Confidence: Medium
 
 
+
+PRS-23:
+  Problem: Analytic idealism has a developed account of how individual minds *separate* (dissociation, PRS-02) but no comparably developed account of how mental contents *arise* — what generates a new thought, and whether cosmic, personal, and creative genesis are one process or three
+  Resource: Kastrup's explicit framing of thought-formation, creativity, cosmogenesis, and personal individuation as "variations on the same question" under the universe-as-one-great-thought thesis, developed across a curated Q&A
+  Solution: A unification move within the program — a single generative principle underlying cosmology, psychology, and creativity — which, if developed, would give analytic idealism a positive generative dynamics to pair with its dissociative individuation mechanics
+  Date Added: 2026-06-17
+  Source: The Birth of Thought — On the origin of creativity, the universe & you (Q&A with Bernardo Kastrup) — https://www.withrealityinmind.com/the-birth-of-thought/; PROP-2026-06-10-002
+  Confidence: Medium
+
+PRS-24:
+  Problem: The indexical problem — why this dissociated alter is here-and-now rather than there-and-then — is a standing objection to monistic idealism that the DID model alone does not answer, since dissociation explains multiplicity but not particular located-ness
+  Resource: The session's direct staging of the question ("Why am I here and now, not there and then?") alongside the evolution-of-metacognition question, putting indexical individuation on the program's explicit agenda
+  Solution: At minimum, agenda-setting: the program acknowledges indexicality as a question internal to analytic idealism rather than dismissing it — a refinement target for the dissociative-boundary account already sharpened by the Levin exchange (PRS-14)
+  Date Added: 2026-06-17
+  Source: The Birth of Thought — On the origin of creativity, the universe & you (Q&A with Bernardo Kastrup) — https://www.withrealityinmind.com/the-birth-of-thought/; PROP-2026-06-10-002
+  Confidence: Speculative
+
+PRS-25:
+  Problem: Analytic idealism affirms both that individual selves are dissociative constructs (hence in some sense illusory) and that individuation is real and Daimonically patterned (PRS-08) — and the program has not stated cleanly where the illusion ends and the reality begins
+  Resource: A dedicated Kastrup session on "seeing through the illusion of self," paired with the pre-birth-memory question, which forces the boundary question in experiential rather than abstract terms
+  Solution: A sharpened two-level identity account — which features of selfhood are dashboard artifacts to be seen through, and which (Daimonic signature, vantage point) are ontologically grounded in the structure of dissociation — reconciling the deflationary and the individuationist strands of the program
+  Date Added: 2026-06-17
+  Source: Seeing through the illusion of self — and remembering life before birth (recording with Bernardo Kastrup) — https://www.withrealityinmind.com/seeing-through-the-illusion-of-self/; PROP-2026-06-10-003
+  Confidence: Medium
+
+PRS-26:
+  Problem: If the self is a dissociative illusion, what is the status of memory and experiential continuity beyond the alter's lifespan — a question physicalism answers trivially (none) but idealism must answer substantively, since universal consciousness persists
+  Resource: Kastrup's treatment of "remembering life before birth" — the dissociative-boundary model applied to the temporal edges of the individual life
+  Solution: An extension of the dissociation model from spatial individuation (which minds exist) to temporal individuation (when a mind's experiential stream begins and what it is continuous with) — complementing the time-and-tradition question already open from the McGilchrist exchanges (PRS-11)
+  Date Added: 2026-06-17
+  Source: Seeing through the illusion of self — and remembering life before birth (recording with Bernardo Kastrup) — https://www.withrealityinmind.com/seeing-through-the-illusion-of-self/; PROP-2026-06-10-003
+  Confidence: Speculative
+
 ---
-*Total PRS triplets: 22*
+*Total PRS triplets: 26*

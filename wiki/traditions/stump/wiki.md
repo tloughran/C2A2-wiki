@@ -62,3 +62,9 @@ Stump's program is **highly generative for the C2A2 project** — it provides th
 ## Ingestion Log — 2026-06-07
 Ingested 1 approved triplet(s): PRS-17.
 - (open question) [unknown until address content is located]  [src: PROP-2026-06-04-002]
+
+
+## Ingestion Log — 2026-06-17
+Ingested 2 approved triplet(s): PRS-18, PRS-19.
+- Even if suffering is defeated through union (the Wandering in Darkness solution), defeated suffering still merits mourni…  [src: PROP-2026-06-11-001]
+- Accounts of human flourishing oscillate between individualist (flourishing as internal state) and relational pictures wi…  [src: PROP-2026-06-11-001]

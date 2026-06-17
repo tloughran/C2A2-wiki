@@ -72,3 +72,11 @@ Ingested 6 approved triplet(s): PRS-17, PRS-18, PRS-19, PRS-20, PRS-21, PRS-22.
 - (open question) Analytic idealism has been articulated as a philosophical theory of consciousness without an explicit position on the soteriological status …  [src: PROP-2026-05-27-003]
 - (open question) Non-dual contemplative traditions and analytic idealism reach structurally similar conclusions (consciousness as fundamental, individual min…  [src: PROP-2026-05-27-003]
 - (open question) If consciousness is fundamental and intellectual understanding is at best secondary to direct recognition, what role can AI agents play in a…  [src: PROP-2026-05-27-003]
+
+
+## Ingestion Log — 2026-06-17
+Ingested 4 approved triplet(s): PRS-23, PRS-24, PRS-25, PRS-26.
+- Analytic idealism has a developed account of how individual minds *separate* (dissociation, PRS-02) but no comparably de…  [src: PROP-2026-06-10-002]
+- The indexical problem — why this dissociated alter is here-and-now rather than there-and-then — is a standing objection …  [src: PROP-2026-06-10-002]
+- Analytic idealism affirms both that individual selves are dissociative constructs (hence in some sense illusory) and tha…  [src: PROP-2026-06-10-003]
+- If the self is a dissociative illusion, what is the status of memory and experiential continuity beyond the alter's life…  [src: PROP-2026-06-10-003]

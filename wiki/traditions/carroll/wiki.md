@@ -84,3 +84,12 @@ Ingested 6 approved triplet(s): PRS-16, PRS-17, PRS-18, PRS-19, PRS-20, PRS-21.
 - (open question) Different traditions in C2A2 (Carroll, Friston, Levin, Hoffman, Kastrup, Stump) all rely on some notion of "levels" — physical/biological/co…  [src: PROP-2026-05-29-001]
 - (open question) Cyclic cosmologies are chronically undermined by the Boltzmann Brain problem — in an eternally recurring universe, randomly fluctuated obser…  [src: PROP-2026-06-05-001]
 - (open question) The arrow of time and the apparent uniqueness of a low-entropy past are hard to reconcile with time-symmetric unitary dynamics without smugg…  [src: PROP-2026-06-05-001]
+
+
+## Ingestion Log — 2026-06-17
+Ingested 5 approved triplet(s): PRS-22, PRS-23, PRS-24, PRS-25, PRS-26.
+- If quasi-classical reality emerges through decoherence, stable records, and the thermodynamic arrow, could observers wit…  [src: PROP-2026-06-12-001]
+- What are the minimal boundary conditions for a Boltzmann brain — full conscious observer with memories, or could a much …  [src: PROP-2026-06-12-001]
+- Post-List compatibilism still owes an account of where choices "affect the physical world" if microphysics does its own …  [src: PROP-2026-06-12-001]
+- Can a physicalist naturalism accommodate Humboldt's claim that nature is an interconnected living whole — and that the o…  [src: PROP-2026-06-12-002]
+- Where does the modern concept of the autonomous self come from, and is it a discovery or an invention — a question Carro…  [src: PROP-2026-06-12-002]

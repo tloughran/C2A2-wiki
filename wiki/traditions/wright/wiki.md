@@ -41,3 +41,8 @@ N.T. Wright is the tradition's narrative theologian and historian — the thinke
 Ingested 2 approved triplet(s): PRS-05, PRS-06.
 - (open question) What does "salvation" mean once disembodied-heaven escapism is rejected?  [src: PROP-2026-05-31-002]
 - (open question) Does the resurrection require suspending natural law, making it unbelievable to a scientist?  [src: PROP-2026-05-31-001]
+
+
+## Ingestion Log — 2026-06-17
+Ingested 1 approved triplet(s): PRS-7.
+- Must the believer accept a partition between scientific truth and religious truth (NOMA / two non-overlapping magisteria…  [src: PROP-2026-06-07-001]

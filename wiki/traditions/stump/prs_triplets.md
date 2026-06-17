@@ -150,5 +150,22 @@ PRS-17:
   Confidence: Speculative
 
 
+
+PRS-18:
+  Problem: Even if suffering is defeated through union (the Wandering in Darkness solution), defeated suffering still merits mourning — and standard theodicies cannot explain how warranted mourning is compatible with a perfectly good God who permits what is mourned
+  Resource: Stump's felix culpa account in The Image of God: the original sin is fortunate because there is an outweighing benefit to sufferers that could not be gotten in a world without suffering, joined to an account on which the mourned loss remains genuinely real, not explained away
+  Solution: Mourning and theodicy are made compatible rather than rivals — the defeat of suffering does not erase its loss-character, so a perfectly good God can permit what warrants mourning; theodicy is completed by an ethics of mourning rather than by the elimination of grief
+  Date Added: 2026-06-17
+  Source: The Image of God: The Problem of Evil and the Problem of Mourning — https://academic.oup.com/book/41739; PROP-2026-06-11-001
+  Confidence: High
+
+PRS-19:
+  Problem: Accounts of human flourishing oscillate between individualist (flourishing as internal state) and relational pictures without a principled account of what constitutes a person's true self
+  Resource: The Image of God's treatment of the role of relationships in human flourishing and of what constitutes one's true self, developed within Stump's hylomorphic psychology
+  Solution: Flourishing is constituted by relationship — the true self is the self in union with others and with God — giving the Thomistic wing a worked-out relational anthropology rather than a merely asserted one
+  Date Added: 2026-06-17
+  Source: The Image of God: The Problem of Evil and the Problem of Mourning — https://academic.oup.com/book/41739; PROP-2026-06-11-001
+  Confidence: Medium
+
 ---
-*Total PRS triplets: 15 (PRS-01 and PRS-03 re-homed to Loughran, 2026-06-11)*
+*Total PRS triplets: 17 (PRS-01 and PRS-03 re-homed to Loughran, 2026-06-11)*

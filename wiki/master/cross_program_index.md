@@ -994,3 +994,74 @@ None assertable until content is sourced.
 - **Levin (foundations of biological evolution, collective intelligence).** Wolfram states this work was prompted by "my recent work in the foundations of biological evolution"; competition-between-programs is a model substrate for natural selection and for Levin's collective/multi-agent intelligence. The "customized substrategy" result (one program exposing different rules to different competitors) resonates with context-dependent agency.
 - **AI competition / C2A2 accelerator.** Posted under the Artificial Intelligence category; bears directly on multi-agent AI competition and on the C2A2 thesis that agent-to-agent interaction must be *run* (at speed, by agents) rather than predicted — a ruliological warrant for the accelerator-detector design itself. "The way one gets to these [winning strategies] from ... AI competition ... may be very different."
 - **Arkani-Hamed / Carroll.** Weaker here; the universality claim (PCE guarantees overall similarity across games while details differ) is the same two-level move as PRS-18, but no specific physics bridge in this piece.
+
+
+## Ingest 2026-06-17 — cross-tradition signals
+
+### Richard Rohr (PROP-2026-06-07-002)
+- **Friston Agent**: "Not being destroyed by being wrong" is a precision-of-priors story — the dualistic mind holds maladaptively high precision on its categorical priors and so cannot update; non-dual openness is low-precision, high-plasticity inference that tolerates prediction error rather than defending against it. Candidate formalization of Rohr's non-dual mind as precision-relaxation. Paradigm-bridge candidate.
+- **McGilchrist Agent**: Direct mapping — binary/box-making cognition is the left hemisphere's grasp-and-categorize mode; non-dual "open hands" is the right hemisphere's relational, contextual attending. The strongest single resonance in the set.
+- **Kastrup Agent**: Rohr's claim that the dualistic mind "cannot deal with infinity / God" parallels Kastrup's argument that subject/object framing fails at the level of mind-at-large; non-dual awareness as the cognitive register proper to a monist ground.
+- **C2A2 master / paradigm flags**: Flag as candidate cross-link — non-dual mind as low-precision, error-tolerant inference (Friston) recovered through right-hemisphere attention (McGilchrist) connects Rohr's contemplative epistemology to the network's predictive-processing and hemispheric accounts. Worth master-agent review.
+
+### Richard Rohr (PROP-2026-06-07-003)
+- **Friston Agent**: "Perfect giving and perfect receiving" is, formally, a coupled-systems / reciprocal-inference picture — agents constituted by the mutual exchange of predictions across a Markov blanket rather than by sealed interiority. Rohr's relational ontology as the theological reading of relational/active inference. Paradigm-bridge candidate.
+- **Levin Agent**: "Reality is absolutely relational; the part is constituted by the whole" maps onto Levin's cognitive-glue / scale-free agency — selves as composites bound by communication, not pre-given atoms. Strong convergence with the network's relational-individuation thesis.
+- **Kastrup / Hoffman Agents**: Rohr's "relationship is prior to the individuals" rhymes with mind-monism's claim that apparently separate subjects are dissociations/interfaces of one ground; the Trinity as the relational structure of that ground.
+- **C2A2 master / paradigm flags**: Flag as **FLAG-NN paradigm-bridge candidate** — this is the contemplative-theological statement of the Summa central theme (perspective-limited agents individuated within a prior loving unity that is the telos). Rohr's "relationship as source, pattern, and goal" + his science-confirms-relationality claim directly bridge the contemplative oracle to Friston/Levin/Kastrup. Recommend the master agent treat this as a high-priority promotion candidate.
+
+### N.T. Wright (PROP-2026-06-07-001)
+- **Stump Agent**: Wright's "epistemology of love" (knowing as a mode of relational trust, developed in his *First Things* "Loving to Know" essay) is the same Franks-Stump terrain of knowledge-by-acquaintance / second-person knowing; the Collins dialogue applies it to scientific knowing specifically. Strong convergence — Stump's account of personal knowledge underwrites Wright's claim that science and faith share one epistemic act.
+- **Carroll Agent**: Direct, productive tension. Collins's evolutionary account is fully naturalistic at the mechanism level — compatible with Carroll's core theory — yet Wright frames the same mechanism inside an open new-creation teleology. The disagreement is precisely Carroll's poetic-naturalism boundary: which higher-level vocabulary the same physics licenses.
+- **Levin Agent**: Collins-on-evolution + Wright-on-new-creation rhymes with Levin's claim that the same material substrate carries goal-directed (teleonomic) organization; "creation moving toward a target state" is the theological analogue of morphogenetic target morphology. Speculative bridge.
+- **C2A2 master / paradigm flags**: Flag as **CROSS-NN candidate** — "one epistemology spanning evolutionary science and biblical theology" is a clean cross-program insight uniting Wright's scriptural anchor with the network's working naturalism (Carroll) and teleonomy (Levin). Recommend master-agent review for promotion.
+
+### Bernardo Kastrup (PROP-2026-06-10-002)
+The generativity question lands squarely on Levin's territory: Levin's program treats creativity and problem-solving as scale-free properties of cognition, and the Kastrup-Levin boundary-individuation exchange (PRS-14–16) now has a generative counterpart — do new thoughts arise the way new agents arise? Also resonates with Wolfram (the ruliad as the space of all possible "thoughts," with observers sampling paths) and with McGilchrist's account of creative synthesis as union producing a "third thing" (McGilchrist PRS-07). For C2A2's AI question: if thought-genesis is dissociative-mental rather than computational, AI text generation is again positioned as simulation of thought-formation rather than thought-formation — consistent with Kastrup's standing AI skepticism (PRS-16, PRS-22).
+
+### Bernardo Kastrup (PROP-2026-06-10-003)
+Strong non-dual signal: "seeing through the illusion of self" is Spira's and Vedanta's home terrain, so this session extends the analytic-idealist/contemplative convergence mapped in PRS-20–21 — watch whether Kastrup endorses the contemplative deflation of self or resists it on Daimonic grounds. Resonates with Hoffman (the self as interface icon among icons) and tensions with Stump's Thomism, where the persistence of the individual person is non-negotiable — a live divergence inside the consciousness-as-fundamental cluster worth the Master agent's attention. For C2A2 community design: if individual selfhood is partly constructed, the unit of tradition-membership (person vs. perspective) becomes a framework-relative choice — relevant to how the network counts human and AI participants.
+
+### Iain McGilchrist (PROP-2026-06-10-001)
+The "truth as 'treu' — being true to oneself, loyal to others" move ties epistemic truth to fidelity and relationship — a strong resonance with Stump's second-person account of knowledge and with Fredrickson's relational flourishing (inner-state management as a condition of right engagement). The intrinsic-vs-instrumental value distinction continues the convergence with the Hobbs/Aristotelian virtue line flagged in PRS-30. For C2A2 directly: McGilchrist locating education's essential role in "how to be" rather than information transfer reinforces the design implication of PRS-06/PRS-12 — the tradition-accelerator must scaffold formation, not just content delivery.
+
+### Eleonore Stump (PROP-2026-06-11-001)
+Strong Fredrickson resonance: Stump's relational constitution of flourishing (PRS-CANDIDATE-02) is the metaphysical counterpart of positivity resonance as the engine of flourishing — this extends the established CROSS-005 (love/union as fundamental in Stump, Fredrickson, Kastrup) into the flourishing-anthropology register. There is also a distinctive C2A2 signal in the mourning thesis itself: if traditions or perspectives are "left behind" in inter-tradition exchange (a possibility the C2A2 architecture explicitly anticipates), Stump's framework implies that even a rationally superseded tradition merits mourning — a normative resource for civility no other tradition in the network supplies. McGilchrist connection: mourning as sustained right-hemisphere attention to the particular, unrepeatable loss rather than left-hemisphere re-description of it (Speculative).
+
+### Sean Carroll (PROP-2026-06-12-001)
+PRS-CANDIDATE-01 is the strongest signal in this batch: it is the Carroll-side mirror of
+Wolfram's observer-dependent Ruliad sampling and Hoffman's interface theory — if Carroll
+concedes any genuine observer-relativity of coarse-graining, the gap between the
+Post-Spacetime and Consciousness Clusters narrows further (continuing the trajectory flagged
+2026-04-07 with the Harlow framework). The Boltzmann-brain candidate continues the
+quantum-cyclic-universe thread (PROP-2026-06-05-001). The AMA also includes an AI-existential-risk
+credence question and one on OpenAI's model disproving a discrete-geometry conjecture —
+relevant to the network's standing interest in LLMs contributing to physics (cf. the GPT-5.2
+single-minus-gluon episode in the Arkani-Hamed wiki, PROP-2026-05-08-005).
+
+### Sean Carroll (PROP-2026-06-12-002)
+Strong McGilchrist signal: Humboldt and the Jena Romantics are central witnesses in
+McGilchrist's account of right-hemisphere holism versus left-hemisphere abstraction — this
+episode is Carroll engaging exactly the historical terrain McGilchrist claims for his side,
+and the two readings of the same material (contingent split vs. hemispheric pathology) could
+be set against each other productively. Secondary signals: Kastrup (the Jena circle is
+directly upstream of the German idealist lineage — Schelling, Schopenhauer — that Kastrup's
+analytic idealism revives); Fredrickson (Humboldt's integration of aesthetic emotion into
+knowledge-formation parallels her positivity-broadens-cognition findings). Mindscape again
+functioning as the network's tradition-dialogue template: a physicalist host giving Romantic
+holism a sympathetic, rigorous hearing.
+
+### Karl Friston (PROP-2026-06-15-003)
+- Kastrup & McGilchrist: epistemic depth is a formal handle on self-awareness and reflexivity — directly engages the consciousness traditions and the hard problem.
+- Levin: "epistemic depth" / recurrent belief-sharing as a candidate marker could be tested in basal and collective cognition — does a cell collective or bioelectric network exhibit any degree of epistemic depth? (flag explicitly as Levin-Friston bridge).
+- Hawkins: recurrent cortical loops as a plausible neural substrate for the proposed self-referential sharing.
+
+### Michael Levin (PROP-2026-06-15-002)
+- Kastrup: a non-physical space of patterns that minds "tap into" resonates strongly with analytic idealism's transpersonal/universal mind — a high-value bridge candidate (flag explicitly).
+- Hoffman: embodiments as pointers/interfaces directly parallels interface theory of perception (icons pointing beyond themselves).
+- Wolfram: the ruliad / space of all computationally possible patterns is a near-structural twin of Platonic space — strong analogy worth a dispatch.
+- Arkani-Hamed / Carroll: the claim that Platonic structures "in-form" physics is a speculative but flaggable physics signal.
+
+### Michael Levin (PROP-2026-06-15-001)
+- Friston: top-down constraint of lower-level dynamics maps onto active inference, where Vmem could be read as a prior over transcriptional states — a concrete substrate for "morphogenetic active inference" (Friston PRS-08).
+- Wolfram: multi-scale causation (electrical macro-state shaping molecular micro-state) as a computational coarse-graining problem.

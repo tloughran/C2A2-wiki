@@ -72,3 +72,8 @@ Ingested 4 approved triplet(s): PRS-17, PRS-18, PRS-19, PRS-20.
 - (open question) What would it mean, formally, to "widen" a community so it can engage rival traditions without threat?  [src: PROP-2026-06-01-003]
 - (open question) Generalised filtering / DEM jointly infers states, parameters, and uncertainty, but in its standard form is batch-oriented — how can the sam…  [src: PROP-2026-06-01-002]
 - (open question) Predictive-coding accounts of brains posit nested timescales (fast inference, slow learning) but often lack a single algorithm realising bot…  [src: PROP-2026-06-01-002]
+
+
+## Ingestion Log — 2026-06-17
+Ingested 1 approved triplet(s): PRS-21.
+- Active inference / FEP explains perception and action but has lacked a principled account of why and when a predictive s…  [src: PROP-2026-06-15-003]

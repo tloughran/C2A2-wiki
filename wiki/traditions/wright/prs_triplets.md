@@ -70,5 +70,14 @@ PRS-06:
   Confidence: High
 
 
+
+PRS-7:
+  Problem: Must the believer accept a partition between scientific truth and religious truth (NOMA / two non-overlapping magisteria)?
+  Resource: Wright + Collins's joint claim that evolutionary science and the case for God are complementary descriptions of one reality, unified by a single account of truth as relational knowing
+  Solution: Reject the partition: the same world rigorously studied is the world God is renewing; "evidence, trust, and truth" operate continuously across both, so creation-science and creation-theology constrain rather than wall off each other
+  Date Added: 2026-06-17
+  Source: Francis Collins and N.T. Wright: Evolution, Truth and the Case for God — https://ntwrightpage.com/2026/05/29/francis-collins-and-n-t-wright-evolution-truth-and-the-case-for-god/; PROP-2026-06-07-001
+  Confidence: High
+
 ---
-*Total PRS triplets: 6*
+*Total PRS triplets: 7*

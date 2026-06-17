@@ -307,8 +307,25 @@ PRS-33:
   Confidence: High
 
 
+
+PRS-34:
+  Problem: Genetics plus environment under-determine the goal-directed, problem-solving forms observed in biology and cognition; conventional biology has no account of where genuinely novel adaptive patterns originate.
+  Resource: "Platonic space" — a structured, non-physical space of patterns (mathematical through higher-agency "kinds of minds") that physical embodiments interface with — and "ingression," the process by which a physical system points to and instantiates such a pattern.
+  Solution: A falsifiable research agenda: construct novel embodiments lacking evolutionary precedent (xenobots/anthrobots) and observe which adjacent patterns they ingress, thereby beginning to "map" the structure of Platonic space empirically.
+  Date Added: 2026-06-17
+  Source: Ingressing Minds / Platonic Space (preprint + ongoing Symposium on the Platonic Space) — https://osf.io/preprints/psyarxiv/5g2xj_v1; PROP-2026-06-15-002
+  Confidence: Speculative
+
+PRS-35:
+  Problem: Mainstream molecular biology models transcription bottom-up from gene-regulatory networks, leaving no principled role for the cell's bioelectric state as a causal control variable over gene expression.
+  Resource: A top-down modeling framework linking resting membrane potential (Vmem) to protein transcription, treating Vmem as a higher-order parameter that constrains transcriptional states (Cervera, Levin & Mafe 2026).
+  Solution: A biophysical account in which the bioelectric layer exerts top-down causal control over the molecular layer, supporting the claim that Vmem is a real control layer above the genome — and reframing transcription as partly set by whole-cell electrical state.
+  Date Added: 2026-06-17
+  Source: Top-down perspectives on cell membrane potential and protein transcription — https://www.nature.com/articles/s41598-025-31696-6; PROP-2026-06-15-001
+  Confidence: High
+
 ---
-*Total PRS triplets: 33*
+*Total PRS triplets: 35*
 
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*

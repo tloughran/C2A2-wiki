@@ -199,5 +199,46 @@ PRS-21:
   Confidence: Medium
 
 
+
+PRS-22:
+  Problem: If quasi-classical reality emerges through decoherence, stable records, and the thermodynamic arrow, could observers with very different bodies/environments coarse-grain the same underlying quantum state in genuinely different but equally valid ways — or must all record-forming, prediction-making observers converge on the same emergent patterns?
+  Resource: Carroll's AMA response applying his decoherence + records framework (PRS-10, PRS-17) to observer-relative emergence.
+  Solution: A sharpened statement of whether emergent classicality is unique or observer-indexed — directly adjudicating between Carroll's convergent physicalism and Wolfram's observer-sampled Ruliad / Hoffman's interface relativity.
+  Date Added: 2026-06-17
+  Source: Mindscape AMA | June 2026 — https://www.preposterousuniverse.com/podcast/2026/06/01/ama-june-2026/; PROP-2026-06-12-001
+  Confidence: Medium
+
+PRS-23:
+  Problem: What are the minimal boundary conditions for a Boltzmann brain — full conscious observer with memories, or could a much simpler observer-like fluctuation count, persist, and become part of a larger emergent system?
+  Resource: Carroll's AMA treatment, following directly on the exactly-periodic quantum cyclic universe construction (arXiv:2605.30405; PRS-20/21).
+  Solution: A more precise definition of the observer class whose abundance cyclic and recurrent cosmologies must suppress — tightening the phenomenological-acceptability criterion introduced in PRS-20.
+  Date Added: 2026-06-17
+  Source: Mindscape AMA | June 2026 — https://www.preposterousuniverse.com/podcast/2026/06/01/ama-june-2026/; PROP-2026-06-12-001
+  Confidence: Medium
+
+PRS-24:
+  Problem: Post-List compatibilism still owes an account of where choices "affect the physical world" if microphysics does its own thing — and whether Dennett's design stance (functional organization, not observer projection) grounds higher-level agency more firmly than the intentional stance discussed with List.
+  Resource: AMA follow-up questions (Eric; Alyx Dubrow) explicitly continuing Mindscape 354; Carroll's answers relating design-stance realism to poetic naturalism's "real patterns."
+  Solution: A refinement of PRS-18/19 — locating agency's causal relevance in level-relative explanation rather than micro-intervention, with Dennett's functional grounding as an additional resource.
+  Date Added: 2026-06-17
+  Source: Mindscape AMA | June 2026 — https://www.preposterousuniverse.com/podcast/2026/06/01/ama-june-2026/; PROP-2026-06-12-001
+  Confidence: Speculative
+
+PRS-25:
+  Problem: Can a physicalist naturalism accommodate Humboldt's claim that nature is an interconnected living whole — and that the observer's aesthetic and emotional response is itself part of scientific understanding — without either dismissing it as pre-scientific or conceding ontological holism?
+  Resource: Wulf's historical reconstruction of Humboldt's unified science (empirical measurement fused with aesthetic apprehension) as discussed with Carroll.
+  Solution: A genealogical case study for poetic naturalism: the Enlightenment/Romantic split is shown to be a contingent historical bifurcation, not a forced choice — supporting Carroll's claim that meaning-level descriptions are legitimate stories rather than casualties of rigor.
+  Date Added: 2026-06-17
+  Source: Mindscape 356 | Andrea Wulf on Enlightenment, Nature, Romanticism, and Modernity — https://www.preposterousuniverse.com/podcast/2026/06/08/356-andrea-wulf-on-enlightenment-nature-romanticism-and-modernity/; PROP-2026-06-12-002
+  Confidence: Medium
+
+PRS-26:
+  Problem: Where does the modern concept of the autonomous self come from, and is it a discovery or an invention — a question Carroll's naturalism (cf. PRS-12, the self as constructed narrative) needs history to answer.
+  Resource: Wulf's *Magnificent Rebels* account of the Jena circle (Fichte's "Ich," Novalis, the Schlegels) as the site where the modern self-positing subject was articulated.
+  Solution: Historical grounding for the constructed-self thesis of PRS-12: the self-model has a datable intellectual genealogy, strengthening the naturalist reading of selfhood as an emergent, historically conditioned real pattern.
+  Date Added: 2026-06-17
+  Source: Mindscape 356 | Andrea Wulf on Enlightenment, Nature, Romanticism, and Modernity — https://www.preposterousuniverse.com/podcast/2026/06/08/356-andrea-wulf-on-enlightenment-nature-romanticism-and-modernity/; PROP-2026-06-12-002
+  Confidence: Speculative
+
 ---
-*Total PRS triplets: 21*
+*Total PRS triplets: 26*

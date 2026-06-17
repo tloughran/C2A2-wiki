@@ -40,3 +40,9 @@ Richard Rohr is the tradition's contemplative epistemologist — the voice that 
 ## Ingestion Log — 2026-06-07
 Ingested 1 approved triplet(s): PRS-05.
 - (open question) How does the false self become the true self — what is the mechanism of contemplative transformation, not just its endpoint?  [src: PROP-2026-05-31-003]
+
+
+## Ingestion Log — 2026-06-17
+Ingested 2 approved triplet(s): PRS-6, PRS-7.
+- How can a knower hold real commitments without the rigidity (and fragility) of "living by being right"?…  [src: PROP-2026-06-07-002]
+- Is relationship a derived feature of already-existing individuals, or is it ontologically prior?…  [src: PROP-2026-06-07-003]

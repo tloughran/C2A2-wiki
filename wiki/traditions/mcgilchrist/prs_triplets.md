@@ -327,5 +327,22 @@ PRS-35:
   Confidence: Speculative
 
 
+
+PRS-36:
+  Problem: The hemispheric program has specified what rebalancing looks like institutionally (Sheldonian, PRS-29) but not what it looks like at the level of the individual person facing collective crisis — leaving a gap between cultural prescription and personal practice
+  Resource: McGilchrist's framing of "being in the world" as the essential role of education, paired with the claim that intrinsic values are constitutive of personal identity ("our capacity to embody these values constitutes who we essentially are") and his account of what he learned from his own teachers
+  Solution: A personal-formation complement to the institutional program — orientation by embodied intrinsic value (managing one's inner state, agency and centredness over passivity) as the individual-scale practice of hemispheric rebalancing; directly relevant to C2A2's curriculum question of how a person climbs into maturity within a tradition
+  Date Added: 2026-06-17
+  Source: Iain McGilchrist and Charles Eisenstein in conversation — Being in the World Today — https://galileocommission.org/iain-mcgilchrist-and-charles-eisenstein-in-conversation-being-in-the-world-today/; PROP-2026-06-10-001
+  Confidence: Medium
+
+PRS-37:
+  Problem: McGilchrist's value-as-constitutive thesis has mostly been triangulated against academic interlocutors (Hobbs, Currivan, theologians); whether it survives translation into a non-academic cultural-criticism register is untested
+  Resource: The Eisenstein pairing — a civilizational-mythology essayist with a large lay audience — and the shared question "what is ours to do?" posed against cultural degradation ("enshittification")
+  Solution: Evidence that the program is building a popular-transmission channel for the constructive phase, not only an academic one — a worked example of how a tradition disseminates its prescriptive turn across audience registers, relevant to C2A2's tradition-transmission design
+  Date Added: 2026-06-17
+  Source: Iain McGilchrist and Charles Eisenstein in conversation — Being in the World Today — https://galileocommission.org/iain-mcgilchrist-and-charles-eisenstein-in-conversation-being-in-the-world-today/; PROP-2026-06-10-001
+  Confidence: Speculative
+
 ---
-*Total PRS triplets: 35*
+*Total PRS triplets: 37*

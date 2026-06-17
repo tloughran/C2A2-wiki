@@ -194,8 +194,17 @@ PRS-20:
   Confidence: Medium
 
 
+
+PRS-21:
+  Problem: Active inference / FEP explains perception and action but has lacked a principled account of why and when a predictive system is conscious rather than merely adaptive.
+  Resource: Three conditions — world-model simulation, inferential competition to enter the model, and "epistemic depth" (recurrent, system-wide sharing of Bayesian beliefs forming a self-referential loop).
+  Solution: Consciousness is identified with circular (self-referential) predictive processing that satisfies epistemic depth, yielding mechanistic explanations of meditative, psychedelic, and minimal phenomenal states.
+  Date Added: 2026-06-17
+  Source: A beautiful loop: An active inference theory of consciousness — https://www.sciencedirect.com/science/article/pii/S0149763425002970; PROP-2026-06-15-003
+  Confidence: Medium
+
 ---
-*Total PRS triplets: 20*
+*Total PRS triplets: 21*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

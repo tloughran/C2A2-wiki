@@ -62,5 +62,22 @@ PRS-05:
   Confidence: Medium
 
 
+
+PRS-6:
+  Problem: How can a knower hold real commitments without the rigidity (and fragility) of "living by being right"?
+  Resource: Rohr's beyond-binaries frame plus Dozier's maxim — "since I do not live by being right, I am not destroyed by being wrong"
+  Solution: Non-dual cognition decouples identity from the correctness of one's current beliefs, enabling provisional, revisable commitment held "with open hands"; the dualistic mind, by contrast, must defend its boxes and so cannot metabolize error or paradox
+  Date Added: 2026-06-17
+  Source: Beyond Binaries (Daily Meditations, Week 22, ending 2026-06-06) — https://cac.org/daily-meditations/beyond-binaries-weekly-summary/; PROP-2026-06-07-002
+  Confidence: Medium
+
+PRS-7:
+  Problem: Is relationship a derived feature of already-existing individuals, or is it ontologically prior?
+  Resource: Rohr's perichoretic Trinity (from The Divine Dance) — God as "perfect giving and perfect receiving," relationship as "the very source, pattern, and goal of reality"
+  Solution: Relation is basal: individuals are nodes within a prior givenness-and-receptivity, so the unit of reality is the exchange, not the isolated substance; salvation is conversion into that relational pattern, not an individual escape ("how do I get to heaven" is "a question of the ego, not of the Trinity")
+  Date Added: 2026-06-17
+  Source: A Pattern of Relationship (Daily Meditation, 'Embracing the Divine Exchange', adapted from The Divine Dance) — https://cac.org/daily-meditations/a-pattern-of-relationship/; PROP-2026-06-07-003
+  Confidence: Medium
+
 ---
-*Total PRS triplets: 5*
+*Total PRS triplets: 7*
