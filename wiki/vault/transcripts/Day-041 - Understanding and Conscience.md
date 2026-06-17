@@ -15,7 +15,7 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-041 - Understanding and Conscience - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-07T04:24:28"
+last_qc_at: "2026-06-16T04:20:15"
 last_qc_outcome: "pass"
 render_pass: auto-catchup-2026-05-04 → qc-structural-2026-05-12
 tags: [summa, day/041, pars/I, q/79, q/80, theme/intellect, theme/synderesis, theme/conscience, theme/appetite]

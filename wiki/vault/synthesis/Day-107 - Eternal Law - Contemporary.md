@@ -19,7 +19,7 @@ length_note: "Below medium target (2200) at 0.80, within ±25%. Q.93's single am
 mind_first_reframe: "The eternal law on a mind-monist reading is the structural pattern of mind-at-large that constrains what counts as flourishing for kinds of agents — Aquinas's type/exemplar in the divine mind cashed out as the deepest computational specification of well-functioning, real and prior to created things but internal to reality rather than a transcendent extra entity."
 central_theme_thread: "Q.93 a.6's distinction between the wicked and the good reads as differing degrees of generative-model alignment with the eternal pattern; agents are individuated by their perspective-limitations relative to that pattern, and the loving-unity telos is the pattern as fully accessed — the simple whole seen, containing every limited perspective."
 tags: [synthesis, day/107, theme/eternal-law-as-pattern]
-last_qc_at: "2026-06-07T22:26:48"
+last_qc_at: "2026-06-16T16:22:30"
 last_qc_outcome: "pass"
 ---
 

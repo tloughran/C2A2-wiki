@@ -17,7 +17,7 @@ karpathy_wiki_sources:
   - "Wright canonical: 'Surprised by Hope' on the worship-due-only-to-God constraint within Second-Temple Judaism's relational-honor culture"
 evidence_strength_summary: "The graded moral ontology Hoffman defends and the agency-scaling Levin defends are empirically tractable. The neurological grounding for relational mode (McGilchrist) is empirical. The reading of the latria-dulia distinction as a precision-tuning of warranted response within a graded ontology is interpretive but converges with the mind-monist frame."
 tags: [synthesis, day/169, theme/graded-ontology, theme/warranted-honor, q/102, q/103]
-last_qc_at: "2026-06-06T02:29:28"
+last_qc_at: "2026-06-16T14:32:16"
 last_qc_outcome: "pass"
 ---
 

@@ -19,7 +19,7 @@ length_note: "Below medium target (2200) at 0.85, within ±25%. Q.94-95 covered 
 mind_first_reframe: "Natural law is the set of deep priors in the human cognitive-affective generative model — species-invariant interface-features that orient rational agents toward fitness-, flourishing-, and cooperation-relevant goods; human law is the locally-determined coordination scheme a community builds from those priors under specific historical conditions, irreducibly local per Wolfram-computational-irreducibility while bound to the natural-law alignment condition."
 central_theme_thread: "The natural-law interface gives every rational creature access to the deep prior pattern but in a species-specific format locally shaped by cultural and individual history; the work of perceiving the deeper pattern is the work of unmaking those local distortions, and the covenantal community is where the alignment-work is jointly undertaken — Wright's salvation-as-inclusion at its sharpest."
 tags: [synthesis, day/108, theme/natural-law-interface, theme/human-law-determination]
-last_qc_at: "2026-06-07T22:26:48"
+last_qc_at: "2026-06-16T20:23:10"
 last_qc_outcome: "pass"
 ---
 

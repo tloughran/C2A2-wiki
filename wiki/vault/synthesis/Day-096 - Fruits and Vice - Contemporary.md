@@ -3,21 +3,22 @@ day: 96
 title: Fruits and Vice (Contemporary)
 pairs_with: "[[Day-096 - Fruits and Vice]]"
 length_target_words: 2200
-length_actual_words: 2160
+length_actual_words: 2356
 length_tier: medium
 karpathy_wiki_sources:
+  - "Wright, *Paul and the Faithfulness of God* + *Galatians* commentary (Gal 5:22-23, fruit-singular vs works-plural)"
   - "traditions/stump/wiki.md + prs_triplets.md (PRS-09 cooperative-causality account of virtue)"
   - "traditions/fredrickson/wiki.md (PRS-05 broaden-and-build; PRS-02 positivity resonance)"
   - "traditions/mcgilchrist/wiki.md (PRS-01 hemispheric asymmetry; PRS-05 attention as ontological act)"
   - "traditions/friston/wiki.md (active inference, precision-weighting)"
   - "master/cross_program_index.md (CROSS-005 love-as-ontological-coupling)"
 evidence_strength_summary: "Aquinas's Galatians taxonomy and the virtue/vice contrast are theological-philosophical (textual). Fredrickson on positivity resonance and Friston on active inference are empirical/formal. The fruits-as-policy mapping is speculative bridging."
-length_ratio_to_target: 0.982
+length_ratio_to_target: 1.071
 mind_first_reframe: "Aquinas's question-pair (Q.70 fruits of the Spirit / Q.71 vice as contrary to nature) recovers as the experiential-and-structural signature of an agent's policy aligning with or departing from its constitutive goal-state: the fruits are the precision-weighted confirmation signal of policy success against a high-precision charity prior (Friston + Fredrickson), and vice is information loss — the agent decoupling from the wider conscious-agent network so that the positivity-resonance signal that would have measured successful coupling disappears."
 central_theme_thread: "Q.71 a.2's 'vice is contrary to nature' lands the central theme directly: vice is what happens when the limited rational agent optimizes for what looks-like-good from its perspective at the cost of what is-good for the wider whole it is part of; perspective-limitation alone is enough, absent the integrating signals. The fruits are the phenomenal signature of policy that does fit the wider whole — measurements, not rewards."
 tags: [synthesis, day/096, theme/virtue-vice-hinge, theme/perspective-coordination]
-last_qc_at: "2026-06-08T04:20:50"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-16T16:22:29"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 96 — Fruits and Vice (Contemporary)
@@ -36,7 +37,7 @@ These two problems are the same problem twice. Both ask: what is the *experienti
 
 ## Resource
 
-Three convergent resources from the mind-monism cluster.
+The fruits Aquinas catalogues are not his own list: they are Paul's, from Galatians 5:22-23. Wright's reading of that passage in *Paul and the Faithfulness of God* turns on a grammatical detail that does real work here — Paul writes the *fruit* (singular, *karpos*) of the Spirit against the *works* (plural) of the flesh. The singular signals a single, integrated character the Spirit grows in the agent — the reconstituted, Messiah-shaped life of the covenant-renewed people — over against the fragmented, self-driven multiplicity of the "works of the flesh." That contrast (one integrated Spirit-given fruit vs. fragmented flesh-works) is the scriptural form of the very structure this synthesis is after: virtue as a single coupled signal, vice as decoupling into fragments. With that anchor in place, three convergent resources from the mind-monism cluster give the substrate-level account.
 
 **Fredrickson on positivity resonance** (the Fredrickson-tradition wiki, PRS-02 / PRS-05; CROSS-005 in the master index): love is not a sentiment but a *biophysiological coupling event* between conscious agents — vagal tone, oxytocin, neural synchrony as measurable correlates. Positive emotions in this framework do not merely *accompany* virtuous engagement; they *broaden attention*, which in turn *builds* lasting personal and relational resources. The broaden-and-build dynamic is empirically robust (high confidence in the wiki's track record). Crucially for Aquinas's Q.70, Fredrickson's account *gives the sweetness a job*: positivity is the very signal that allows the agent's internal model to align with the models of co-agents, which is the substrate-level mechanism of charity-as-coupling.
 
@@ -64,6 +65,7 @@ And the way back is the way Aquinas already named: the *fruits* are the phenomen
 
 ## Bridges
 
+- **Wright on Galatians 5:22-23** (*Paul and the Faithfulness of God*; his *Galatians* commentary) — the *fruit* (singular) of the Spirit against the *works* (plural) of the flesh: the Spirit grows one integrated, Messiah-shaped character in the covenant-renewed agent. Scriptural evidence-class. Anchors Q.70's fruits in their Pauline source and supplies the unified-fruit-vs-fragmented-works contrast the synthesis reads as coupling-vs-decoupling.
 - **PRS-09 in the Stump-tradition wiki** (Stump on Aquinas's seven cardinal virtues, Thomistic Institute 2026) — cooperative-causality account: the Holy Spirit perfects the soul's natural powers; grace operates within the natural order so that virtuous action is *genuinely the agent's own*. Theological evidence-class. Pairs directly with Aquinas's Q.70 — the fruits as both *acts of man* and *workings of the Holy Spirit*.
 - **PRS-02 / PRS-05 in the Fredrickson-tradition wiki** — positivity resonance and broaden-and-build. Empirical evidence-class (high). Pairs with Q.70 a.3 — Aquinas's threefold ordering of the fruits maps onto Fredrickson's account of how positive states broaden attention across self / other / world.
 - **CROSS-005 in the master cross-program index** — love-as-fundamental-ontological-category across Fredrickson + Stump + Kastrup. The most theologically significant cross-program convergence in the network. Pairs with the *charity* fruit specifically — biologically, theologically, and metaphysically the *same* phenomenon under three descriptions.

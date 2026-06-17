@@ -18,7 +18,7 @@ length_note: "Below medium target (2200) at 0.76, within ±25%. Q.96-97 covered 
 mind_first_reframe: "Human law is the Schelling-point coordination scheme a community has settled into, anchored on natural-law deep priors but irreducibly local; its binding force in conscience derives from alignment with deep priors plus coordination value plus pedagogical/developmental value, and law-change is legitimate only when it restores alignment or tracks a real shift in the community's moral state."
 central_theme_thread: "Perspective-limitation cuts both for and against the rule: individual agents are too limited to see the lawgiver's purpose in every case (so follow the letter), but coordinated communities can together see when applying the letter defeats the purpose — limited perspectives in coordinated community can jointly see more than any one of them can alone, which is the loving-unity telos at work in the social-political register."
 tags: [synthesis, day/109, theme/law-binding, theme/lawful-revision]
-last_qc_at: "2026-06-07T22:26:49"
+last_qc_at: "2026-06-16T20:23:11"
 last_qc_outcome: "pass"
 ---
 

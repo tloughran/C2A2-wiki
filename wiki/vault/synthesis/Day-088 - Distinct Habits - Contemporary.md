@@ -26,7 +26,7 @@ Among these, which ones are *virtues*? The contemporary answer must specify the 
 
 **Levin's domain-specific bioelectric patterns** is the morphogenetic-level analogue. Different bodily structures have different bioelectric pattern-signatures stabilized over development. Many "habits" coexist in the organism's body-plan, each addressed to a different anatomical domain.
 
-**Stump's analytic-Thomistic articulation of virtue** is the keystone on Q.55. Tom's PRS-form re-description of Stump's account treats virtue as essentially second-personal, relational, ordered to union with persons (PRS-09 faith-as-knowledge-of-persons; PRS-04 final causality and form). The Stump-tradition wiki on virtue-as-habituation gives the rigorous contemporary articulation of Aristotle's definition (virtue makes its possessor good and renders his work good) — with the second-personal dimension as Stump's distinctive contribution. Stump's reading of the *Wandering in Darkness* material on charity-as-second-person-union is directly relevant: virtues are those habits whose object is *union* with the agent's proper terminus, which for Stump is irreducibly second-personal.
+**Stump's analytic-Thomistic articulation of virtue** is the keystone on Q.55. Tom's PRS-form re-description of Stump's account treats virtue as essentially second-personal, relational, ordered to union with persons (PRS-05 faith-as-knowledge-of-persons; PRS-11 *Wandering in Darkness*; PRS-04 final causality and form). The Stump-tradition wiki on virtue-as-habituation gives the rigorous contemporary articulation of Aristotle's definition (virtue makes its possessor good and renders his work good) — with the second-personal dimension as Stump's distinctive contribution. Stump's reading of the *Wandering in Darkness* material on charity-as-second-person-union is directly relevant: virtues are those habits whose object is *union* with the agent's proper terminus, which for Stump is irreducibly second-personal.
 
 **Fredrickson's positivity-as-virtue-substrate** brings the empirical evidence to Q.55 a.4 (virtue is a *good* habit). Fredrickson PRS-01 (loving-kindness meditation) and PRS-08 (high-quality connection) document that the cultivated dispositions of positivity-resonance, prosocial attention, and other-directed care are precisely the dispositions whose object is the agent's relational good. These are the empirical signatures of the virtuous habits Aquinas names — and the longitudinal evidence supports the claim that they *render the agent's work good* (broaden-and-build, upward spiral).
 
@@ -60,7 +60,7 @@ The Augustinian "which God works in us without us" — applied to infused virtue
 - **Friston PRS-04 + policy-specific priors and precisions** — Q.54 a.2 (habits distinguished by object): formal individuation of stabilized dispositions by their parameterized domain; *formal, empirically robust*.
 - **Hoffman / interface-specific habituation** — Q.54 a.2 (habits distinguished by their objects): interface-domain-specific stabilization; *speculative-formal*.
 - **Levin / domain-specific bioelectric patterns** — morphogenetic-scale analogue of multiple coexisting habits; *empirical at growing scales*.
-- **Stump PRS-09 + PRS-04 / virtue as second-personal disposition** — keystone on Q.55: virtue's relational telos as Stump's distinctive contribution; *philosophically rigorous*.
+- **Stump PRS-05 + PRS-04 / virtue as second-personal disposition** — keystone on Q.55: virtue's relational telos as Stump's distinctive contribution; *philosophically rigorous*.
 - **Fredrickson PRS-01, PRS-08 / cultivated positivity-resonance** — empirical evidence for Q.55 a.4's good-habit claim; longitudinal data on virtuous disposition; *empirical, high confidence*.
 - **McGilchrist / hemispheric integration as virtuous character** — Q.55's good/bad habit distinction at the attentional level; *clinical evidence*.
 - **Wright / *After You Believe*; Pauline virtue, fruits of the Spirit** — Q.55 a.2 (virtue is operative; orders to proper end): scriptural anchor on virtue as life-in-the-Spirit ordered to new-creation telos; *theological, well-attested*.
@@ -86,7 +86,7 @@ karpathy_wiki_sources:
   - "traditions/friston/wiki.md + prs_triplets.md (PRS-04; policy-specific priors)"
   - "traditions/hoffman/wiki.md (interface-domain-specific habituation)"
   - "traditions/levin/wiki.md (domain-specific bioelectric patterns)"
-  - "traditions/stump/wiki.md + prs_triplets.md (PRS-09 faith-as-knowledge-of-persons; PRS-04 final causality and form; virtue as second-personal)"
+  - "traditions/stump/wiki.md + prs_triplets.md (PRS-05 faith-as-knowledge-of-persons; PRS-11 Wandering in Darkness; PRS-04 final causality and form; virtue as second-personal)"
   - "traditions/fredrickson/wiki.md + prs_triplets.md (PRS-01 loving-kindness; PRS-08 high-quality connection)"
   - "traditions/mcgilchrist/wiki.md (hemispheric integration as virtuous character)"
   - "traditions/kastrup/wiki.md (alter–mind-at-large alignment)"
@@ -96,8 +96,8 @@ mind_first_reframe: "Habits are individuated by their objects (Q.54) — recover
 central_theme_thread: "The agent has many habits; virtues are the subset whose object is the agent's progress in the computational task of loving unity under perspective-limitation. A good habit advances this computation — aligns the alter's local dynamics with the wider mind (Kastrup), integrates left-hemispheric instrumentality under right-hemispheric receptivity (McGilchrist), cultivates positivity-resonance and other-directed attention (Fredrickson), abides in the participation that exceeds the agent's individuated capacity (Wright, Rohr). Stump's second-personal account of virtue is the philosophical keystone; the infused-virtue clause (Augustine in Q.55) is the structural-form claim that some virtuous habits are participations the agent does not generate from within."
 evidence_strength_summary: "Parallel domain-specific stabilizations (Hawkins) and policy-specific priors (Friston) are empirically robust. Cultivated positivity-resonance (Fredrickson) is empirically high-confidence. Stump on second-personal virtue is philosophically rigorous. Hemispheric-integration accounts of character (McGilchrist) are clinically supported. Wright on Pauline virtue-formation and Rohr on cosmic-Christ habituation are theologically well-attested. The conscious-realist-monist reading of good-habit as alter–mind-at-large alignment is speculative-metaphysical but internally consistent."
 tags: [synthesis, day/088, theme/habits, theme/individuation, theme/virtue, theme/distinguished-habits, theme/infused-virtue]
-last_qc_at: "2026-06-08T04:20:43"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-16T12:20:56"
+last_qc_outcome: "rewrote"
 
 ---
 **Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

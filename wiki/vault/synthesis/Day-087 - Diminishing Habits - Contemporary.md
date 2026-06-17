@@ -92,7 +92,7 @@ mind_first_reframe: "Q.52's *intensity-not-extension* claim recovers as precisio
 central_theme_thread: "Q.52-53 specify the *dynamics* of the central theme's working-out. The computation toward loving unity is intensive — the agent is more deeply patterned by it, not larger. Each full-attention act grows the disposition; lapse loses ground; contrary act actively diminishes. The 'fear and trembling' of Phil 2:12 acquires mechanical content. Infused-virtue's special dynamics carry the central theme's most distinctive claim: some dispositions toward loving unity are participations in a wider mind, retained by abiding and lost only by active severance — Wright's abide-in-Christ and Rohr's contemplative attention in the dynamic register."
 evidence_strength_summary: "Precision-weighted attentional learning (Friston), dose-response of practice (Fredrickson), and counter-conditioning durability (Bouton et al.) are empirically robust. Reference-frame consolidation (Hawkins) and bioelectric attractor dynamics (Levin) are empirically supported. Stump on virtue-maintenance is philosophically rigorous. Wright on abiding-in-Christ as participatory substrate and Rohr on contemplative-practice dynamics are theologically well-attested. The conscious-realist-monist reading of infused-virtue's special dynamics is speculative-metaphysical but internally consistent."
 tags: [synthesis, day/087, theme/habits, theme/habit-dynamics, theme/practice, theme/extinction, theme/infused-virtue]
-last_qc_at: "2026-06-08T06:30:18"
+last_qc_at: "2026-06-16T12:20:55"
 last_qc_outcome: "pass"
 
 ---

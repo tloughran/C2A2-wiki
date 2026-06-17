@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (sandbox)
 synthesis: "[[Day-089 - Intellectual Virtues - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/089, pars/I-II, q/56_57]
-last_qc_at: "2026-05-15T12:24:20"
+last_qc_at: "2026-06-16T16:22:28"
 last_qc_outcome: "pass"
 ---
 

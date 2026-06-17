@@ -11,15 +11,16 @@ central_theme_thread: "Each agent at each scale of perspective contributes what 
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence via mutual modeling; PRS-07 substrate-independent FEP)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry; PRS-03 team/game distinction; PRS-07 division-union as creative synthesis)"
-  - "traditions/stump/prs_triplets.md (PRS-01 tradition-crossing inquiry; PRS-06 MacIntyre criterion)"
+  - "traditions/stump/prs_triplets.md (PRS-06 MacIntyre criterion)"
+  - "traditions/loughran/prs_triplets.md (PRS-08 tradition-crossing inquiry)"
   - "traditions/levin/prs_triplets.md (PRS-04 substrate-independent cognition; PRS-08 cells as cognitive agents)"
   - "Wright canonical: 'Paul and the Faithfulness of God' on covenantal obedience; the Pauline obedience-of-faith (hypakoē pisteōs) in Rom 1:5"
   - "Rohr canonical: 'Falling Upward' on bounded obedience and the necessary breaking of first-half-of-life rule-fidelity"
   - "master/cross_program_index.md CROSS-019 on right-hemisphere mode in cross-tradition engagement"
 evidence_strength_summary: "Hierarchical Bayesian inference (Friston) and split-brain hemispheric data (McGilchrist) are empirical. The bounded-delegation account of obedience as preserving lower-level inference under higher-level constraint is mathematically formal. The reading of disobedience-as-contempt vs. legitimate refusal is interpretive but converges with bounded-rationality results on principal-agent problems."
 tags: [synthesis, day/170, theme/bounded-delegation, theme/legitimate-authority, q/104, q/105]
-last_qc_at: "2026-06-06T02:29:28"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-16T14:32:17"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 170 — Obedience (Contemporary)

@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-140 - Wisdom - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/140, pars/2, q/44-45]
-last_qc_at: "2026-06-06T04:21:51"
+last_qc_at: "2026-06-16T08:21:44"
 last_qc_outcome: "pass"
 ---
 

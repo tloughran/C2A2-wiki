@@ -17,7 +17,7 @@ evidence_strength_summary: "Altruistic-punishment / cooperation-maintenance and 
 mind_first_reframe: "Vengeance and truthfulness are the two guardians of a cooperative model among limited agents: correction of defection as bounded delegation ordered to restoration, and honest self-disclosure as the signal-integrity that keeps mutual models calibrated."
 central_theme_thread: "Loving unity is computed by perspective-limited agents who must both correct defection and disclose themselves honestly; vengeance-as-passion and deception each refuse the cooperative structure and fracture the shared computation."
 tags: [synthesis, day/172, theme/correction-signals, theme/honest-signaling, q/108, q/109]
-last_qc_at: "2026-06-06T20:23:18"
+last_qc_at: "2026-06-16T18:26:01"
 last_qc_outcome: "pass"
 ---
 

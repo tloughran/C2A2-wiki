@@ -83,8 +83,8 @@ karpathy_wiki_sources:
   - "traditions/rohr/ — *Falling Upward*; *Everything Belongs*; contemplative humility"
 evidence_strength_summary: "Threatened-egotism / narcissism-aggression literature (Bushman, Baumeister, Twenge) gives unusually strong direct empirical validation of Q.47 a.3. Active-inference account of social-self-model precision is formal and empirically supported. Hemispheric account is clinically supported. Conscious-realist-monist reading of self-model brittleness as alter-level dissociative-boundary structure is speculative. Wright on Pauline wrath theology and Rohr on contemplative humility are theologically well-attested."
 tags: [synthesis, day/084, theme/anger, theme/pride, theme/slight, theme/narcissistic-rage, theme/justice-aspect]
-last_qc_at: "2026-06-08T22:29:07"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-17T00:24:17"
+last_qc_outcome: "pass"
 
 ---
 **Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

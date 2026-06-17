@@ -17,7 +17,7 @@ synthesis: "[[Day-084 - Prideful Anger - Contemporary]]"
 # Note: passes with advisory warnings only; editorial-paraphrase style flagged for Tom in 2026-05-15T04:29 QC log
 fidelity_checked: true
 tags: [summa, day/084, pars/I-II, q/46, q/47]
-last_qc_at: "2026-05-24T14:29:47"
+last_qc_at: "2026-06-17T00:24:17"
 last_qc_outcome: "pass"
 ---
 

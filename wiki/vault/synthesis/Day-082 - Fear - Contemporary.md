@@ -24,7 +24,7 @@ What Aquinas leaves at the level of perceptive description, the contemporary fra
 
 **Hawkins's reference-frame model** (PRS-03 / *A Thousand Brains*) supplies the cortical correlate of Q.42 a.5's claim that "thinking about it beforehand" reduces fear. The cortical model accumulates structured experience over reference frames; familiarity with a stimulus is the construction of a reference frame within which the stimulus is now embedded, which sharply reduces the surprise-driven aversion signal. This is exactly the cortical mechanism by which exposure therapy works.
 
-**Stump on faith and second-person knowing** (PRS-09) carries the synthesis into Q.43 a.1 — love causes fear. Augustine's claim — what we fear reveals what we love — is the inverse statement of Stump's second-person account: faith is the agent's commitment to a person under the difficulty of incomplete knowledge; the loves the agent has committed to are precisely those whose loss the agent fears. Stump's analytic-Thomistic account of *Wandering in Darkness* gives the rigorous form of the diagnostic move from the inventory of fears to the inventory of loves.
+**Stump on faith and second-person knowing** (PRS-05; *Wandering in Darkness* material at PRS-11) carries the synthesis into Q.43 a.1 — love causes fear. Augustine's claim — what we fear reveals what we love — is the inverse statement of Stump's second-person account: faith is the agent's commitment to a person under the difficulty of incomplete knowledge; the loves the agent has committed to are precisely those whose loss the agent fears. Stump's analytic-Thomistic account of *Wandering in Darkness* gives the rigorous form of the diagnostic move from the inventory of fears to the inventory of loves.
 
 **Rohr on contemplative reframing of fear** (PRS-01, PRS-03) is the spirituality-ground-truth pole. The cosmic-Christ pattern — divine presence in matter from creation — provides the contemplative re-frame of Q.42 a.6's claim that the irremediable is most feared. Under non-dual contemplative awareness, the apparently irremediable is held within a larger pattern in which "everything belongs" (Rohr's phrase); the policy-space-collapse that produces the worst fear is, in contemplative practice, the very surface within which a deeper response becomes available. Rohr's *Everything Belongs* and *Falling Upward* are the canonical sources for this move; the empirical correlate is the literature on contemplative practice and reduced amygdala reactivity (Goleman & Davidson 2017 review).
 
@@ -56,7 +56,7 @@ Defect-causes-fear (Q.43 a.2) names the perspective-limitation directly. The age
 - **Fredrickson PRS-01, PRS-08 / broaden-and-build, high-quality listening** — empirical co-regulation mechanism for friend-mediated fear reduction; *empirical, high confidence*.
 - **McGilchrist / right-hemispheric contextual buffering** — anxiety species mapping; *clinical evidence*.
 - **Hawkins PRS-03 / reference frames** — cortical mechanism for familiarity-reduces-fear (Q.42 a.5); *neuroscientifically grounded*.
-- **Stump PRS-09 / faith as second-person knowing** — diagnostic structure of Q.43 a.1 (fear reveals love); *philosophically rigorous*.
+- **Stump PRS-05 / faith as second-person knowing (Wandering in Darkness, PRS-11)** — diagnostic structure of Q.43 a.1 (fear reveals love); *philosophically rigorous*.
 - **Rohr / *Everything Belongs*, *Falling Upward*** — contemplative reframing of irremediable as held-in-larger-pattern; Q.42 a.6 reframed; *contemplative tradition*.
 - **Wright on resurrection horizon (Romans 8; 1 Cor 15)** — eschatological reframe of death-fear (Q.42 a.2 + a.6); *historical-theological, well-attested*.
 
@@ -81,13 +81,13 @@ karpathy_wiki_sources:
   - "traditions/fredrickson/wiki.md + prs_triplets.md (PRS-01, PRS-08)"
   - "traditions/mcgilchrist/wiki.md (anxiety hemispheric account)"
   - "traditions/hawkins/wiki.md + prs_triplets.md (PRS-03)"
-  - "traditions/stump/ — PRS-09 second-person knowing; *Wandering in Darkness*"
+  - "traditions/stump/ — PRS-05 second-person knowing; *Wandering in Darkness* (PRS-11)"
   - "traditions/rohr/ — *Everything Belongs*; *Falling Upward*; PRS-01"
   - "traditions/wright/ — Romans 8; 1 Cor 15 resurrection horizon"
 evidence_strength_summary: "Predictive-processing fear/surprise, intolerance-of-uncertainty as anxiety mechanism, co-regulation reducing fear, and exposure-reduces-fear are all empirically robust. Hemispheric account is clinically supported. Hell-as-state-not-place is theological reading consistent with Wright and Rohr but not a unanimous Christian position."
 tags: [synthesis, day/082, theme/fear, theme/anxiety, theme/irascible-passions, theme/love-causes-fear]
-last_qc_at: "2026-06-04T18:28:07"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-16T12:20:54"
+last_qc_outcome: "rewrote"
 
 ---
 **Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

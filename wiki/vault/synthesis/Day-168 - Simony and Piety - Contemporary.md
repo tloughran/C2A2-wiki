@@ -10,7 +10,7 @@ length_note: "Under tier target by ~22% (ratio 0.78, within ±25%). Q.100–101 
 mind_first_reframe: "Under mind-monism, individual conscious agents are constituted-by-relation (Kastrup's dissociated alters, Friston's mutually-modeling agents, Levin's collective-cognition cells, Stump's second-personal narrative knowing); spiritual goods are gifts within constitutive relations, and simony is the category-error of subjecting such goods to market-economy exchange while piety is the foundational recognition of constitutive debt."
 central_theme_thread: "The perspective-limited agent computes loving unity from a position of having-been-given, not self-origination; piety is the disposition that lets the cooperative computation proceed honestly, simony the disposition that systematically corrupts the substrate by privatizing what was only ever conferred-by-relation."
 karpathy_wiki_sources:
-  - "traditions/stump/prs_triplets.md (PRS-01 tradition-crossing inquiry; PRS-04 final causality; PRS-05 union-as-final-cause; PRS-07 narrative cognition)"
+  - "traditions/stump/prs_triplets.md (PRS-04 final causality; PRS-05 union-as-final-cause; PRS-07 narrative cognition)"
   - "traditions/levin/prs_triplets.md (PRS-02 cancer as defection; PRS-04 substrate-independent cognition; PRS-08 cells as cognitive agents in morphospace)"
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence; PRS-07 substrate-independent FEP)"
   - "traditions/fredrickson/wiki.md (positivity resonance as biophysiological coupling; love as kin-extension mechanism)"
@@ -20,8 +20,8 @@ karpathy_wiki_sources:
   - "master/cross_program_index.md CROSS-013/CROSS-018 on union and biophysiological coupling"
 evidence_strength_summary: "The gift-economy / market-economy distinction is well-documented in economic anthropology (Mauss, Graeber, Polanyi — empirical). The neurobiology of kin-attachment and positivity resonance is empirical (Fredrickson lab). Cancer as morphogenetic defection is empirical (Levin lab). The reading of simony as category-error between economies is interpretive; the further reading of piety as the original positive-pattern of relational-debt recognition is philosophical."
 tags: [synthesis, day/168, theme/gift-economy, theme/relational-debt, q/100, q/101]
-last_qc_at: "2026-06-06T02:29:27"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-16T14:32:17"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 168 — Simony and Piety (Contemporary)

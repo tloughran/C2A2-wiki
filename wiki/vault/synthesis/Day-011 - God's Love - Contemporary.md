@@ -70,14 +70,14 @@ karpathy_wiki_sources:
   - "wiki/traditions/wolfram/wiki.md (PRS-06 ruliad — Q.19 a.3 contingent-trajectories within necessary structure)"
   - "wiki/traditions/rohr/wiki.md (Universal Christ — Q.20 a.4 everything-belongs; gradient of belonging)"
   - "wiki/traditions/wright/wiki.md (covenant people gathered by substrate-love; corporate-scale alter-love)"
-  - "wiki/traditions/stump/wiki.md (PRS-01, PRS-03 — love as second-person knowing)"
+  - "wiki/traditions/stump/wiki.md (PRS-05, PRS-11 — love as second-person knowing)"
   - "wiki/master/cross_program_index.md (CROSS-005 love as fundamental — high-priority cross-tradition convergence)"
   - "Fredrickson, *Love 2.0* (positivity-resonance empirical research)"
   - "1 John 4:8; John 3:16; Romans 8; Philippians 2:12"
 mind_first_reframe: "Q.19's divine will is the substrate's pattern-active mode — its structural priors are not merely held but willed-into-conditioned-instantiation. In Friston's formalism, knowing and willing are two phases of free-energy minimization with priors over preferred states. Q.20's divine love is the substrate's relational stance toward conditioned things — not detached or strictly causal but actively flourishing-oriented; in Fredrickson's empirical operationalization, love is the biopsychophysiological event of shared positive emotion plus mutual flourishing-orientation plus biobehavioral synchrony, and the substrate-scale extrapolation is mind-at-large's stance toward its alters. The directional-asymmetry of Q.20 a.4 — being-better-and-being-more-loved are the same fact — is preserved: substrate-love is causally prior to alter-perfection, not downstream of it."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; salvation in fear and trembling on the relational register is the alter's progressive acquisition of the substrate's loving stance — Fredrickson's positivity-resonance generalized to all beings, Rohr's everything-belongs practiced. The alter that learns to love-as-the-substrate-loves is the alter whose generative model is converging on the substrate's structure; Wright's corporate covenant frame and Rohr's contemplative practice are the operational modes. Loving union is the computational telos because love is what the substrate's stance toward conditioned things already is — the alter is computing toward what is already true of the substrate's relation to it."
-last_qc_at: "2026-06-08T18:27:34"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-16T20:23:12"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/011, theme/divine-will, theme/divine-love, theme/positivity-resonance, theme/active-inference, theme/cosmic-christ, theme/covenant]
 
 ---

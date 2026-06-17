@@ -15,7 +15,7 @@ fetched_at: 2026-05-15
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com); cached at /tmp/day073_segments.json
 synthesis: "[[Day-073 - Moral Passions - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-08T04:20:43"
+last_qc_at: "2026-06-16T12:20:54"
 last_qc_outcome: "pass"
 render_pass: qc-rewrote-2026-05-15  # transcript body rewritten from cached ASR after fetch_failed placeholder
 tags: [summa, day/073, pars/I-II, q/24, q/25]

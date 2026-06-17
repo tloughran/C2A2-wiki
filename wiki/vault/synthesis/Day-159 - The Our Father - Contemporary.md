@@ -18,7 +18,7 @@ mind_first_reframe: "Aquinas's most metaphysically striking claim about prayer i
 central_theme_thread: "Prayer is the central claim's most explicit articulation in the Summa. The perspective-limited agent's active alignment with the whole — not informing the whole, not bargaining with it, but *aligning the perspective's priors with the providence already at work* — is exactly what the central claim names the agent doing as it works out salvation in fear and trembling. The Lord's Prayer is the exemplar precisely because its structure is the central claim made explicit: three petitions for the whole (your name, kingdom, will — the orientation toward the whole), four petitions for the part (bread, forgiveness, deliverance — the resources the limited perspective needs to maintain the orientation). The two-pole structure of self+God that ran through Day 131's charity treatise reappears here as the structure of the prayer that founds Christian life."
 tags: [synthesis, day/159, theme/prayer-as-active-alignment-with-providence]
 length_note: "Under tier target (2171/3000, 0.72) by substantive choice — Q.82 (4 articles) + Q.83 (17 articles on prayer) compress cleanly because the Pater's two-pole structure makes the central claim explicit; tight treatment was preferable to expansion that would have padded already-substantive bridges."
-last_qc_at: "2026-06-06T16:20:52"
+last_qc_at: "2026-06-16T14:32:16"
 last_qc_outcome: "pass"
 ---
 

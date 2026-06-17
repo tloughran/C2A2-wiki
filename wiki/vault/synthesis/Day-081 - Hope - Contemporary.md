@@ -26,7 +26,7 @@ The contemporary frame supplies it: each of the irascible passions is the affect
 
 **Rohr on contemplative hope** (PRS-01, PRS-03) frames the same horizon non-dually. The universal-Christ pattern is present in matter from creation; hope is the contemplative orientation that perceives this present presence, even under conditions that, to the narrowed instrumental view, look hopeless. Rohr's *Falling Upward* explicitly addresses despair as the threshold of the second-half-of-life integration — the agent whose first-half competence has failed can either harden into permanent despair or pass through into the contemplative reframe in which the failure was the condition for the integration. The two-aspect structure of Q.40 a.4 (same object, contrary aspects) maps onto the order-disorder-reorder pattern Rohr names (PRS-02).
 
-**Stump as Thomistic interlocutor** belongs here on three notes. (1) Stump PRS-09 on faith-as-knowledge-of-persons grounds the structural similarity between Christian hope and second-person trust: hope-in-someone has the form of trust under the difficulty of the future, not generic prediction. (2) Stump PRS-04 on final causality and form keeps the contemporary frame in coherent dialogue with the Aquinas-Aristotle structure. (3) Stump on *Wandering in Darkness* gives the rigorous Thomistic articulation of how despair can be entered without being terminal — suffering integrable into second-person love. Stump has not yet made the monist move; we keep her as Thomistic interlocutor receiving the active-inference / mind-monism reframe.
+**Stump as Thomistic interlocutor** belongs here on three notes. (1) Stump PRS-11 on faith-as-knowledge-of-persons grounds the structural similarity between Christian hope and second-person trust: hope-in-someone has the form of trust under the difficulty of the future, not generic prediction. (2) Stump PRS-04 on final causality and form keeps the contemporary frame in coherent dialogue with the Aquinas-Aristotle structure. (3) Stump on *Wandering in Darkness* gives the rigorous Thomistic articulation of how despair can be entered without being terminal — suffering integrable into second-person love. Stump has not yet made the monist move; we keep her as Thomistic interlocutor receiving the active-inference / mind-monism reframe.
 
 ## Solution (proposed, speculative)
 
@@ -54,7 +54,7 @@ Q.41's fear inaugurates the next sub-thread: what does it feel like to compute u
 - **Hawkins PRS-03 / HTM reference frames** — the cortical correlate of experience-shapes-hope (Q.40 a.5); *neuroscientifically grounded, mechanistically detailed*.
 - **Wright PRS-03 / inaugurated eschatology + *Surprised by Hope*** — Christian hope as calibrated-precision under resurrection-shaped evidence, not generic optimism; *historical-theological, well-attested*.
 - **Rohr PRS-01, PRS-02 / contemplative epistemology, order-disorder-reorder** — despair as threshold to the second-half-of-life integration; *contemplative tradition, internally coherent, externally suggestive*.
-- **Stump PRS-04, PRS-09 / Thomistic final causality + faith-as-knowledge-of-persons** — Thomistic articulation of hope as trust under future difficulty; *philosophically rigorous, not yet monist*.
+- **Stump PRS-04, PRS-11 / Thomistic final causality + faith-as-knowledge-of-persons** — Thomistic articulation of hope as trust under future difficulty; *philosophically rigorous, not yet monist*.
 
 ## Where this leaves us
 
@@ -79,10 +79,10 @@ karpathy_wiki_sources:
   - "traditions/hawkins/wiki.md + prs_triplets.md (PRS-03, reference frames)"
   - "traditions/wright/ — *Surprised by Hope*; PRS-03 inaugurated eschatology"
   - "traditions/rohr/ — PRS-01 contemplative epistemology; PRS-02 order-disorder-reorder; *Falling Upward*"
-  - "traditions/stump/ — PRS-04 final causality; PRS-09 faith-as-knowledge-of-persons; *Wandering in Darkness*"
+  - "traditions/stump/ — PRS-04 final causality; PRS-11 faith-as-knowledge-of-persons; *Wandering in Darkness*"
 evidence_strength_summary: "Active-inference and broaden-and-build are empirically robust; intolerance-of-uncertainty as the diagnostic core of clinical anxiety is empirically supported; hemispheric account is clinically grounded; the conscious-realist-monist reframe of appetite as policy-machinery is metaphysically speculative; Wright's inaugurated eschatology and Rohr's contemplative integration are theologically attested."
 tags: [synthesis, day/081, theme/hope, theme/despair, theme/irascible-passions, theme/policy-precision]
-last_qc_at: "2026-06-08T22:29:06"
+last_qc_at: "2026-06-17T00:24:17"
 last_qc_outcome: "rewrote"
 
 ---
