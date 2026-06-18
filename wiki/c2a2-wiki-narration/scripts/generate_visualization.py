@@ -313,6 +313,7 @@ def generate_html(data, nodes_json, links_json):
     cross_connections = data.get('cross_connections', [])
     changelogs = data.get('changelogs', {})
     cowork_summaries = data.get('cowork_summaries', {})
+    tradition_summaries = data.get('tradition_summaries', {})
     timeline = data.get('timeline', [])
 
     findings_json = json.dumps(findings, ensure_ascii=False)
@@ -338,13 +339,20 @@ def generate_html(data, nodes_json, links_json):
         else:
             label = key.split('/')[-1].title() if '/' in key else key.title()
         entry = {'key': key, 'color': color, 'label': label}
+        if tradition_summaries.get(key):
+            entry['summary'] = tradition_summaries[key]
         if key.startswith('traditions/'):
             tradition_groups.append(entry)
         else:
             structure_groups.append(entry)
 
+    # The Tradition-concept meta pop-up (the '?' on the Traditions section
+    # header) is not a group, so it rides along as its own injected string.
+    tradition_concept = tradition_summaries.get('__tradition_concept__', '')
+
     tradition_groups_json = json.dumps(tradition_groups, ensure_ascii=False)
     structure_groups_json = json.dumps(structure_groups, ensure_ascii=False)
+    tradition_concept_json = json.dumps(tradition_concept, ensure_ascii=False)
 
     num_findings = len(findings)
     num_decisions = len(decisions)
@@ -396,6 +404,13 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
 #search-suggest .sg-row { display: flex; align-items: center; gap: 6px; padding: 4px 8px; cursor: pointer; font-size: 12px; color: #e0e0e0; }
 #search-suggest .sg-row:hover, #search-suggest .sg-row.active { background: #2a2a3a; }
 .filter-label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sum-q { color: #C9A84C; cursor: pointer; font-weight: 700; font-size: 12px; margin-left: 4px; flex-shrink: 0; opacity: 0.8; }
+.sum-q:hover { opacity: 1; }
+.sum-q-head { color: #C9A84C; cursor: pointer; font-weight: 700; font-size: 12px; margin-left: 6px; opacity: 0.85; }
+.sum-q-head:hover { opacity: 1; }
+#sum-pop { position: fixed; max-width: 380px; max-height: 70vh; overflow-y: auto; background: #14141f; border: 1px solid #3a3a4a; border-radius: 6px; padding: 12px 14px; font-size: 12px; line-height: 1.5; color: #d8d8e0; box-shadow: 0 6px 24px rgba(0,0,0,0.6); z-index: 9999; display: none; }
+#sum-pop h4 { font-size: 13px; color: #f0f0f0; margin-bottom: 8px; }
+#sum-pop p { margin-bottom: 8px; }
 #left-page-viewer { margin-top: 12px; border-top: 1px solid #2a2a3a; padding-top: 8px; display: none; }
 #left-page-viewer .page-content { max-height: calc(100vh - 200px); overflow-y: auto; font-size: 11px; line-height: 1.5; }
 #left-page-viewer .page-title { font-weight: 700; color: #FFD700; font-size: 13px; margin-bottom: 4px; }
@@ -613,6 +628,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
 </style>
 </head>
 <body>
+<div id="sum-pop"></div>
 <!-- Mobile preview notice — visible only at ≤640px (see #mobile-notice in CSS).
      Sized and positioned by the mobile media block. Single short line, no controls. -->
 <div id="mobile-notice">Mobile preview · pan and tap nodes · filters require a larger screen</div>
@@ -672,7 +688,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
         <div class="filter-item"><input type="checkbox" id="chk-all" checked onchange="toggleAll(this.checked)"><label for="chk-all" class="filter-label">All</label></div>
         <div class="filter-item"><input type="checkbox" id="chk-none" onchange="toggleNone(this.checked)"><label for="chk-none" class="filter-label">None</label></div>
         <hr>
-        <h3><input type="checkbox" id="chk-all-traditions" checked onchange="toggleSection('traditions', this.checked)" style="margin-right:4px;cursor:pointer;"> Traditions</h3>
+        <h3><input type="checkbox" id="chk-all-traditions" checked onchange="toggleSection('traditions', this.checked)" style="margin-right:4px;cursor:pointer;"> Traditions<span class="sum-q-head" data-key="__tradition__" title="What is a tradition in C2A2?" onclick="showSummary(event,this)">?</span></h3>
         <div id="tradition-filters"></div>
         <hr>
         <h3><input type="checkbox" id="chk-all-structure" checked onchange="toggleSection('structure', this.checked)" style="margin-right:4px;cursor:pointer;"> Structure</h3>
@@ -881,6 +897,7 @@ const TIMELINE = """ + timeline_json + """;
 const COLORS = """ + colors_json + """;
 const TRADITION_GROUPS = """ + tradition_groups_json + """;
 const STRUCTURE_GROUPS = """ + structure_groups_json + """;
+const TRADITION_CONCEPT = """ + tradition_concept_json + """;
 var DATE_START = '""" + date_start + """';
 var DATE_END = '""" + date_end + """';
 
@@ -1157,15 +1174,53 @@ function buildFilters() {
   TRADITION_GROUPS.forEach(function(g) {
     var startOn = !EXCLUDED_FROM_ALL[g.key];
     groupVisibility[g.key] = startOn;
-    tradDiv.innerHTML += '<div class="filter-item"><input type="checkbox" ' + (startOn ? 'checked' : '') + ' data-group="' + g.key + '" onchange="toggleGroup(\\'' + g.key + '\\', this.checked)"><span class="filter-dot" style="background:' + g.color + '"></span><span class="filter-label">' + g.label + '</span></div>';
+    tradDiv.innerHTML += '<div class="filter-item"><input type="checkbox" ' + (startOn ? 'checked' : '') + ' data-group="' + g.key + '" onchange="toggleGroup(\\'' + g.key + '\\', this.checked)"><span class="filter-dot" style="background:' + g.color + '"></span><span class="filter-label">' + g.label + '</span>' + (g.summary ? '<span class="sum-q" data-key="' + g.key + '" title="Show summary" onclick="showSummary(event,this)">?</span>' : '') + '</div>';
   });
   var structDiv = document.getElementById('structure-filters');
   STRUCTURE_GROUPS.forEach(function(g) {
     var startOn = !EXCLUDED_FROM_ALL[g.key];
     groupVisibility[g.key] = startOn;
-    structDiv.innerHTML += '<div class="filter-item"><input type="checkbox" ' + (startOn ? 'checked' : '') + ' data-group="' + g.key + '" onchange="toggleGroup(\\'' + g.key + '\\', this.checked)"><span class="filter-dot" style="background:' + g.color + '"></span><span class="filter-label">' + g.label + '</span></div>';
+    structDiv.innerHTML += '<div class="filter-item"><input type="checkbox" ' + (startOn ? 'checked' : '') + ' data-group="' + g.key + '" onchange="toggleGroup(\\'' + g.key + '\\', this.checked)"><span class="filter-dot" style="background:' + g.color + '"></span><span class="filter-label">' + g.label + '</span>' + (g.summary ? '<span class="sum-q" data-key="' + g.key + '" title="Show summary" onclick="showSummary(event,this)">?</span>' : '') + '</div>';
   });
 }
+
+// --- Tradition / group summary pop-ups (yellow '?' next to each thinker) ---
+var GROUP_SUMMARIES = {};
+function initSummaries() {
+  TRADITION_GROUPS.concat(STRUCTURE_GROUPS).forEach(function(g) {
+    if (g.summary) { GROUP_SUMMARIES[g.key] = { label: g.label, text: g.summary }; }
+  });
+  if (typeof TRADITION_CONCEPT === 'string' && TRADITION_CONCEPT) {
+    GROUP_SUMMARIES['__tradition__'] = { label: 'Tradition (in C2A2)', text: TRADITION_CONCEPT };
+  }
+}
+function showSummary(ev, el) {
+  ev.stopPropagation();
+  var data = GROUP_SUMMARIES[el.getAttribute('data-key')];
+  if (!data) { return; }
+  var pop = document.getElementById('sum-pop');
+  pop.innerHTML = '';
+  var h = document.createElement('h4'); h.textContent = data.label; pop.appendChild(h);
+  data.text.split('\\n\\n').forEach(function(para) {
+    if (!para.trim()) { return; }
+    var p = document.createElement('p'); p.textContent = para.trim(); pop.appendChild(p);
+  });
+  pop.style.display = 'block';
+  var r = el.getBoundingClientRect();
+  var left = Math.min(r.right + 8, window.innerWidth - 400);
+  var top = Math.min(r.top, window.innerHeight - pop.offsetHeight - 10);
+  pop.style.left = Math.max(8, left) + 'px';
+  pop.style.top = Math.max(8, top) + 'px';
+}
+function hideSummary() {
+  var p = document.getElementById('sum-pop'); if (p) { p.style.display = 'none'; }
+}
+document.addEventListener('click', function(e) {
+  var p = document.getElementById('sum-pop');
+  if (p && p.style.display === 'block' && !p.contains(e.target) &&
+      !(e.target.classList && e.target.classList.contains('sum-q')) &&
+      !(e.target.classList && e.target.classList.contains('sum-q-head'))) { hideSummary(); }
+});
 
 function toggleGroup(key, checked) {
   if (checked) {
@@ -2953,6 +3008,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var _nt0 = document.getElementById('narration-text');
   IDLE_NARRATION = _nt0 ? _nt0.textContent : '';
   buildFilters();
+  initSummaries();
   // Pass G — populate the date slider from NODES' distinct date set.
   var dateSet = new Set();
   NODES.forEach(function(n) { if (n.date) dateSet.add(n.date); });

@@ -847,6 +847,53 @@ def parse_summa_vault(summa_path):
     return nodes
 
 
+def parse_tradition_summaries(vault_path):
+    """Pull the **Summary ...** block from each traditions/<key>/wiki.md and
+    merge any non-thinker briefs from traditions/_extra_summaries.json.
+
+    Returns a dict keyed to match COLORS group keys, e.g.
+    {'traditions/levin': '<text>', 'summa': '<text>',
+     '__tradition_concept__': '<text>'}. The summary block runs from the line
+    starting '**Summary' up to (but not including) the next '## ' heading.
+    This is the single source of truth for the Sociogram '?' pop-ups."""
+    summaries = {}
+    trad_root = os.path.join(vault_path, 'traditions')
+    if not os.path.isdir(trad_root):
+        return summaries
+    for slug in sorted(os.listdir(trad_root)):
+        wiki = os.path.join(trad_root, slug, 'wiki.md')
+        if not os.path.isfile(wiki):
+            continue
+        with open(wiki, encoding='utf-8', errors='ignore') as fh:
+            lines = fh.readlines()
+        collecting = False
+        buf = []
+        for ln in lines:
+            if ln.lstrip().startswith('**Summary'):
+                collecting = True
+                continue
+            if collecting and ln.startswith('## '):
+                break
+            if collecting:
+                buf.append(ln)
+        text = ''.join(buf).strip()
+        if text:
+            summaries['traditions/' + slug] = text
+    # Non-thinker briefs (Summa/Aquinas, the Tradition-concept meta pop-up).
+    # Obsidian ignores .json, so this file is safe to keep inside the vault.
+    extra_path = os.path.join(trad_root, '_extra_summaries.json')
+    if os.path.isfile(extra_path):
+        try:
+            with open(extra_path, encoding='utf-8') as fh:
+                extra = json.load(fh)
+            for k, v in extra.items():
+                if isinstance(v, str) and v.strip():
+                    summaries[k] = v.strip()
+        except (ValueError, OSError) as err:
+            print(f"Warning: could not read {extra_path}: {err}", file=sys.stderr)
+    return summaries
+
+
 def _parse_args(argv):
     """Tiny CLI parser. Positional arg = primary vault. --summa <path> = optional
     second vault (Summa Theologiae companion). Returns (vault_path, summa_path)."""
@@ -904,6 +951,7 @@ def main():
     decisions = parse_decisions(vault_path)
     crosses = parse_cross_connections(vault_path)
     cowork_summaries = parse_cowork_summary(vault_path)
+    tradition_summaries = parse_tradition_summaries(vault_path)
 
     # Metadata
     dates = [f["date"] for f in files]
@@ -937,6 +985,7 @@ def main():
         "decisions": decisions,
         "cross_connections": crosses,
         "cowork_summaries": cowork_summaries,
+        "tradition_summaries": tradition_summaries,
     }
 
     json.dump(output, sys.stdout, indent=2, ensure_ascii=False)
