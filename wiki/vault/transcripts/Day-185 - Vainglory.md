@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-185 - Vainglory - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/185, pars/II-II, q/132-133]
-last_qc_at: "2026-06-12T08:36:34"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-17T20:23:11"
+last_qc_outcome: "pass"
 ---
 
 # Day 185 — Vainglory

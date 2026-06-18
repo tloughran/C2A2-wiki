@@ -2,7 +2,7 @@
 day: 247
 title: Baptism & Circumcision (Contemporary)
 pairs_with: "[[Day-247 - Baptism & Circumcision]]"
-length_target_words: 1500
+length_target_words: 2200
 length_actual_words: 690
 length_tier: medium
 karpathy_wiki_sources:
@@ -11,7 +11,12 @@ karpathy_wiki_sources:
   - "traditions/loughran/ (PRS lineage: Kuhn + MacIntyre + Levin via James)"
   - "traditions/rohr/wiki.md (order-disorder-reorder)"
 evidence_strength_summary: "Covenant continuity-with-revision theological (Wright, high); generative-model revision formal (Friston); tradition-as-rational-progress is Tom's PRS lineage (Kuhn/MacIntyre), not a thinker's self-description; central-theme moderately engaged."
+length_ratio_to_target: 0.31
+mind_first_reframe: "Baptism-replacing-circumcision is reframed as a faithful structural revision of a covenant community's generative model — the deep prior (membership through faith in Christ) is conserved while the tracking sign is reconfigured — so the earlier sign is fulfilled, not falsified."
+central_theme_thread: "A tradition that revises its signs while conserving its telos is the social-temporal form of perspective-limited guidance: no generation perceives the whole, so the community computes toward loving unity across acts of an unfinished drama, each revision a better-resourced approximation."
 tags: [synthesis, day/247, theme/sign-revision-across-covenants]
+last_qc_at: "2026-06-17T02:29:02"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 247 — Baptism & Circumcision (Contemporary Parallel)

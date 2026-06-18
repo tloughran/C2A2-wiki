@@ -69,7 +69,7 @@ karpathy_wiki_sources:
   - "wiki/traditions/friston/wiki.md (PRS-04, PRS-08 — Q.23 a.5 prior orients agent's generative model; Q.23 a.8 prayer as variational message-passing)"
   - "wiki/traditions/levin/wiki.md (cognitive light cones; PRS-03, PRS-08 — Q.23 a.6 integration as graded scope ↔ light-cone trajectory)"
   - "wiki/traditions/kastrup/wiki.md (PRS-01, PRS-02 — alter as dissociative configuration within substrate; directional-asymmetry of substrate-stance)"
-  - "wiki/traditions/stump/wiki.md (PRS-01, PRS-03; Wandering in Darkness — second-person trust within ordering not fully visible)"
+  - "wiki/traditions/stump/wiki.md (PRS-05, PRS-11; Wandering in Darkness — second-person trust within ordering not fully visible)"
   - "wiki/traditions/wright/wiki.md (Paul and the Faithfulness of God; Surprised by Hope; covenant election as for-the-sake-of-others)"
   - "wiki/traditions/rohr/wiki.md (Universal Christ; Falling Upward — apokatastatic horizon; everything-belongs as gratuity of substrate-stance)"
   - "wiki/master/cross_program_index.md (CROSS-005 love as fundamental; CROSS-014/027/037 Kastrup × Hoffman × Friston × Levin chain; CROSS-024 ruliad)"
@@ -77,8 +77,8 @@ karpathy_wiki_sources:
   - "Romans 8:29; Ephesians 1:4; Titus 3:5; Philippians 2:12; Matthew 20:14-15; 2 Peter 1:10; Genesis 12:3"
 mind_first_reframe: "Q.23's predestination is the substrate's structural prior in mind-at-large that orients particular alters' generative models toward integration with the substrate; the prior is causally upstream of the alter's own acts and merits, which are included in the predestining rather than causing it. Q.23 a.3's reprobation is the substrate's permission of the alter's privative shortfall as a structural possibility within a larger ordering, not direct production of the privation. Q.23 a.5's insania mentis (Aquinas's phrase): no conditioned alter can be causally upstream of the substrate's structural priors, because the priors are what give the alter being and pattern at all. Q.24's Book of Life is the substrate's seeing-of-integration in identity with its essence, unchangeable in absolute sense and qualified-revisable at the alter-trajectory scale."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; salvation in fear and trembling reaches its sharpest soteriological form in the alter that cannot see whether or how it is integrated but must work as if privation is real, trust as if gift is what it is, and pray as if prayer is causally efficacious within the providential ordering. The directional-asymmetry of substrate-stance — gift causally prior to perfection, privation permitted not produced — is structural and cannot be softened without losing the doctrine; mind-monism holds the asymmetry by recognizing the alter as dissociative configuration within mind-at-large, real-but-derivative. Wright's covenant election for-the-sake-of-others, Rohr's apokatastatic horizon, and Stump's second-person trust are the operational modes."
-last_qc_at: "2026-06-09T22:28:17"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-18T00:21:40"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/013, theme/predestination, theme/election, theme/directional-asymmetry, theme/active-inference-priors, theme/apokatastasis, theme/covenant]
 
 ---

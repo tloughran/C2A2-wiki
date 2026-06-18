@@ -6,12 +6,17 @@ title: Transubstantiation
 summa_ref: Tertia Pars, III Q.75
 duration_seconds: 906
 word_count: 2678
+raw_asr_word_count: 2663
+length_tier: medium
 segment_count: 389
 caption_kind: asr
 language: en
 fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-250 - Transubstantiation - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-17T18:30:00"
+last_qc_outcome: pass
 tags: [summa, day/250, pars/3, q/75]
 ---
 

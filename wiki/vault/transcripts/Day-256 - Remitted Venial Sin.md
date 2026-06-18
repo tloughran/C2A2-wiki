@@ -6,12 +6,17 @@ title: Remitted Venial Sin
 summa_ref: Tertia Pars, III Q.87
 duration_seconds: 477
 word_count: 1444
+raw_asr_word_count: 1435
+length_tier: short
 segment_count: 210
 caption_kind: asr
 language: en
 fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-256 - Remitted Venial Sin - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-17T20:23:13"
+last_qc_outcome: "rewrote"
 tags: [summa, day/256, pars/3, q/87]
 ---
 

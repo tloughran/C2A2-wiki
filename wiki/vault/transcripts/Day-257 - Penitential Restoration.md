@@ -6,12 +6,17 @@ title: Penitential Restoration
 summa_ref: Tertia Pars, III Q.89
 duration_seconds: 530
 word_count: 1564
+raw_asr_word_count: 1556
+length_tier: short
 segment_count: 235
 caption_kind: asr
 language: en
 fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-257 - Penitential Restoration - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-17T20:23:14"
+last_qc_outcome: "rewrote"
 tags: [summa, day/257, pars/3, q/89]
 ---
 

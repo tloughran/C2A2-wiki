@@ -6,13 +6,18 @@ title: Baptism by Blood
 summa_ref: Tertia Pars, III Q.66
 duration_seconds: 948
 word_count: 2815
+raw_asr_word_count: 2799
+length_tier: medium
 segment_count: 425
 caption_kind: asr
 language: en
 fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-245 - Baptism by Blood - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/245, pars/3, q/66]
+last_qc_at: "2026-06-17T16:22:29"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 245 — Baptism by Blood

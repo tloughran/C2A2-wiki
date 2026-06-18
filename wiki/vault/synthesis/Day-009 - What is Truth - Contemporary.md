@@ -74,7 +74,7 @@ karpathy_wiki_sources:
   - "wiki/traditions/levin/wiki.md (Cognitive Light Cones — single bioelectric goal-state pattern carrying many tissues' targets)"
   - "wiki/traditions/mcgilchrist/wiki.md (Q.16 a.2 simple-apprehension-vs-composition-and-division ↔ right-vs-left hemispheric modes)"
   - "wiki/traditions/wright/wiki.md (critical realism — adaequatio doctrine in modern philosophical-of-history idiom)"
-  - "wiki/traditions/stump/wiki.md (PRS-01, PRS-03 — second-person mode of creature-truth in faith)"
+  - "wiki/traditions/stump/wiki.md (PRS-05, PRS-11 — second-person mode of creature-truth in faith)"
   - "wiki/traditions/rohr/wiki.md (contemplative epistemology — cataphatic-apophatic split parallels apprehension-vs-composition)"
   - "wiki/master/cross_program_index.md (CROSS-001 substrate-independence; CROSS-003 attention as ontological)"
   - "Wolfram, *Metaphysics and the Ruliad* (Feb 2026 essay)"
@@ -82,8 +82,8 @@ karpathy_wiki_sources:
   - "John 14:6 — *I am the way, the truth, and the life*; John 18:38 — Pilate's question"
 mind_first_reframe: "Q.15's divine ideas — many in relation to creatables, one in identity with the divine essence — translate as the structural priors of mind-at-large considered under the alter-perspective relation: one substrate, many patterns under the proportional relation of conditioned-thing-to-substrate. Q.16's adaequatio rei et intellectus runs in two directions: creature-mind ← creature-thing ← divine-mind on the alter side, substrate-mind = substrate-thing on the substrate side. Friston's free-energy framework is the contemporary formal home for creature-truth at any scale; the substrate-truth limit is what active inference looks like when the generative model is identical to the substrate's structure (Day 7 limit). The transcendentals — being, oneness, goodness, beauty, truth — are aspects of the single substrate under different relations to creatures."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; salvation in fear and trembling on the cognitive register is the alter's progressive conformity-of-mind-to-thing within its perspective limitation, working out a knowing-of-the-truth that runs upward from creature-thing to divine-mind even as the substrate sees the whole at once. The asymmetry between alter-truth (perspectival, perspectival-but-real, revisable) and substrate-truth (identity of mind and structure, one act) is the structural condition of agency itself; the medieval transcendentals doctrine and the contemporary mind-monist convergence on patterns in the substrate are working the same problem."
-last_qc_at: "2026-06-09T22:28:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-18T00:21:39"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/009, theme/divine-ideas, theme/truth, theme/transcendentals, theme/critical-realism, theme/active-inference, theme/hemispheric-modes]
 
 ---

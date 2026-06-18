@@ -6,22 +6,27 @@ title: Judgement & Sacrament
 summa_ref: Tertia Pars, III Q.59-60
 duration_seconds: 1003
 word_count: 2879
+raw_asr_word_count: 2868
+length_tier: medium
 segment_count: 419
 caption_kind: asr
 language: en
 fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-242 - Judgement & Sacrament - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/242, pars/3, q/59]
+last_qc_at: "2026-06-17T16:22:27"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 242 — Judgement & Sacrament
 
 > Aquinas's *Summa Theologiae*, Tertia Pars, III Q.59-60. Verbatim ASR captured 2026-06-16; light cleanup of common transcription errors (Summa, Aquinas, Theologiae, Damascene, narrator "Austin Habash"). Episode-intro name garble ("Summa in a Year") normalized.
 
-[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Sumir podcast, where we study St. Thomas Aquinas's suma
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's suma
 
-Theologiae in a way simple and insightful for anyone to understand. The Sumir podcast is brought to you by Think Catholic. Taking two questions of the
+Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 242. So let's get started.
 

@@ -6,13 +6,18 @@ title: Sacramental Character
 summa_ref: Tertia Pars, III Q.63
 duration_seconds: 756
 word_count: 2240
+raw_asr_word_count: 2229
+length_tier: medium
 segment_count: 336
 caption_kind: asr
 language: en
 fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-244 - Sacramental Character - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/244, pars/3, q/63]
+last_qc_at: "2026-06-17T16:22:28"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 244 — Sacramental Character

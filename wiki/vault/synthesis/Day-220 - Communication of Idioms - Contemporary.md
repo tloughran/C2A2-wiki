@@ -15,8 +15,8 @@ evidence_strength_summary: "Christ as wayfarer AND comprehensor at once ~ the br
 mind_first_reframe: "Wayfarer-and-comprehensor is read as one mind genuinely spanning the comprehensive whole-vision and the limited road-walking perspective at once — a non-dual holding (Rohr) and a dissociation-without-fragmentation (Kastrup) — the very structure the project posits for the divine guide who perceives more yet walks with us."
 central_theme_thread: "This is the project's keystone figure stated in Aquinas's own terms: the one who already beholds the whole (comprehensor) while still inhabiting the limited, suffering perspective (wayfarer) is the divine guide of Phil 2 who 'perceives more of the whole than we do' yet works out the road 'in fear and trembling' alongside us."
 tags: [synthesis, day/220, theme/wayfarer-and-comprehensor]
-last_qc_at: "2026-06-09T04:26:01"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-17T08:21:15"
+last_qc_outcome: "pass"
 ---
 
 # Day 220 — Communication of Idioms (Contemporary Parallel)

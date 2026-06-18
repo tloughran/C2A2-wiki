@@ -17,8 +17,8 @@ length_note: "Concise by design — a single-focus III Q.68-69 (necessity of bap
 mind_first_reframe: "Necessity-of-baptism is reframed as interface-rules vs. underlying reality: the ordinary rule binds limited agents at the interface, while the underlying freedom of grace can reach the genuinely-disposed where the rule's resources are unavailable."
 central_theme_thread: "Salvation is the perspective-limited agent's inclusion in loving unity computed with the resources it perceives; the exceptions to baptism's necessity are where grace meets the agent whose resources cannot reach the rite."
 tags: [synthesis, day/246, theme/necessity-and-the-limited-perspective]
-last_qc_at: "2026-06-16T10:29:21"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-17T16:22:29"
+last_qc_outcome: "pass"
 ---
 
 # Day 246 — Baptism & Salvation (Contemporary Parallel)

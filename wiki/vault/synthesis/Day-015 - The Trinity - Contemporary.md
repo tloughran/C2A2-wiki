@@ -89,15 +89,15 @@ karpathy_wiki_sources:
   - "wiki/traditions/wolfram/wiki.md (PRS-06 ruliad — relations identical with essence; structural relations not added to the totality)"
   - "wiki/traditions/rohr/wiki.md (Universal Christ; perichoretic Trinitarian cosmology — the cosmic pattern at every scale)"
   - "wiki/traditions/wright/wiki.md (Paul and the Faithfulness of God — second-temple Jewish background of NT Trinitarian language; Memra/Word/Wisdom traditions)"
-  - "wiki/traditions/stump/wiki.md (PRS-01, PRS-03 — second-personal knowing as fundamental relational mode)"
+  - "wiki/traditions/stump/wiki.md (PRS-05, PRS-11 — second-personal knowing as fundamental relational mode)"
   - "wiki/traditions/mcgilchrist/wiki.md (creative dance between division and union — third-thing dynamic, structural analogy with perichoresis; CROSS-029)"
   - "wiki/master/cross_program_index.md (CROSS-005 love as fundamental; CROSS-014/022/038 Kastrup × Hoffman convergence; CROSS-027/032/033 trace logic and Markov blankets; CROSS-029 McGilchrist × Levin third-thing dynamic)"
   - "John 1:1, 1:14, 5:26, 10:30, 15:26; Genesis 1:26"
   - "Council of Lateran IV (1215); Athanasian Creed; Catechism of the Catholic Church on the Trinity"
 mind_first_reframe: "Q.27's two divine processions — the Word (intellectual) and the Spirit (volitional/affective) — are the substrate's two intrinsic self-relations: self-knowing and self-loving, two operative modes within the substrate's single identity-of-intellect-and-will-and-essence. Q.28's real relations of opposition (paternity, filiation, spiration, procession) are real internal relations within the substrate that distinguish subsistent persons without dividing essence — structurally the same move Kastrup's dissociation-within-monism makes for alter-substrate relations, here operative at infinite-to-infinite identity-of-essence within the substrate. Hoffman's trace-logic gives a formal-mathematical frame for boundary-relations within an integrated whole; Friston's FEP gives the two-modes-within-one-generative-model frame; Wolfram's ruliad gives the relations-identical-with-structure frame. Mind-monism receives the revealed doctrine and finds it productively coherent within its frame; it does not derive the Trinity."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; the Trinity gives the structural ground for why this is metaphysically possible at all — the substrate's own being-itself is already internally relationally articulated in identity-of-essence, so it can support real internal relations within a single mind. The mode toward which alters' progressive integration is converging is itself relational love — perichoretic mutual self-giving — one essence eternally articulated as three subsistent relations. The alters' loving union (Day 11) is participation in the substrate's already-perichoretic flow, not merging-into-undifferentiated-unity. Wright's covenant gathering and Rohr's cosmic-Christ relational dance are the corporate-and-cosmic instantiations."
-last_qc_at: "2026-06-09T22:28:17"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-18T00:21:41"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/015, theme/trinity, theme/processions, theme/relations-of-origin, theme/perichoresis, theme/dissociation-within-monism, theme/trace-logic]
 
 ---

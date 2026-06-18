@@ -6,12 +6,17 @@ title: The Eucharist
 summa_ref: Tertia Pars, III Q.73-74
 duration_seconds: 864
 word_count: 2652
+raw_asr_word_count: 2641
+length_tier: medium
 segment_count: 383
 caption_kind: asr
 language: en
 fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-249 - The Eucharist - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-17T18:30:00"
+last_qc_outcome: pass
 tags: [summa, day/249, pars/3, q/73]
 ---
 

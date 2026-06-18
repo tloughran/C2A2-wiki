@@ -23,8 +23,8 @@ karpathy_wiki_sources:
 mind_first_reframe: "Grace is the operation of mind-at-large in the agent — imported prior-update, value-interface recalibration, master-hemisphere integration, morphogenetic field-restoration — by which a perspective-limited agent's resources are proportioned to a supernatural target it could not generate from within."
 central_theme_thread: "The loving-unity computational task exceeds the proportion of any limited perspective's resources; grace is the structural answer to how perspective-limited agents nevertheless reach a target their own resources cannot reach, through cooperative receptivity rather than self-generation."
 evidence_strength_summary: "Empirical: developmental psychology, self-determination theory, active inference under bounded resources, McGilchrist's hemispheric work, Fredrickson's broaden-and-build, Levin's morphogenetic dynamics. Formal: active inference, generative-model bootstrapping problems. Theological: Pauline soteriology (Wright), sacramental ontology (Rohr). Speculative: full integration of mind-monism with Catholic grace-theology."
-last_qc_at: "2026-06-08T04:20:50"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-17T04:22:45"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/115, theme/grace-necessity, theme/perspective-limitation, theme/loving-unity-as-telos]
 ---
 
@@ -115,7 +115,7 @@ The differences from Aquinas are not in the structural claim but in the *backgro
 
 ## Bridges
 
-- **PRS-04 (Tom's re-description of the Stump-tradition wiki on final-cause / Levin's instantiation)**: morphogenetic-field pattern-restoration as analog of grace as pattern-restoration. *Empirical / metaphysical*.
+- **PRS-04 (Tom's re-description of the Levin-tradition wiki, morphogenetic field — pattern as cause, final-cause read as bioelectric pattern)**: morphogenetic-field pattern-restoration as analog of grace as pattern-restoration. *Empirical / metaphysical*.
 - **PRS-02 (Kastrup analytic idealism)**: grace as operation of mind-at-large; not an exotic addition. *Metaphysical*.
 - **FLAG-02 (Hoffman interface theory)**: grace as recalibration of the value-interface. *Formal / interpretive*.
 - **FLAG-05 (Friston active inference, bootstrapping limit)**: grace as imported prior-update; the proportion-argument formalized. *Empirical/formal*.

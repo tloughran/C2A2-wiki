@@ -6,12 +6,17 @@ title: Confirmation
 summa_ref: Tertia Pars, III Q.72
 duration_seconds: 775
 word_count: 2356
+raw_asr_word_count: 2340
+length_tier: medium
 segment_count: 351
 caption_kind: asr
 language: en
 fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-248 - Confirmation - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-17T18:30:00"
+last_qc_outcome: pass
 tags: [summa, day/248, pars/3, q/72]
 ---
 

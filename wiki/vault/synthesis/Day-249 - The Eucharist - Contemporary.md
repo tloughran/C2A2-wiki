@@ -2,7 +2,7 @@
 day: 249
 title: The Eucharist (Contemporary)
 pairs_with: "[[Day-249 - The Eucharist]]"
-length_target_words: 1500
+length_target_words: 2200
 length_actual_words: 824
 length_tier: medium
 karpathy_wiki_sources:
@@ -11,7 +11,12 @@ karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; identity through turnover)"
   - "traditions/rohr/wiki.md (sacramental presence; Universal Christ in matter)"
 evidence_strength_summary: "Real Presence theological (Rohr/Wright); substance-as-mental-reality metaphysical (Kastrup, contested); accidents-as-interface formal-speculative (Hoffman); central-theme strongly engaged; metaphysical guardrail leads Kastrup/Hoffman/Levin."
+length_ratio_to_target: 0.37
+mind_first_reframe: "Under mind-monism with the metaphysical guardrail leading Kastrup/Hoffman/Levin, the Real Presence becomes the case where a thing's deep reality (substance, read as its reality in mind) is wholly other than its sensible appearance (accidents, read as interface) — so Christ's reality can be present while the bread's appearance persists."
+central_theme_thread: "The Eucharist is the maximal case of the whole present under a limited perspective's signs: agents perceive only the interface (bread) while the reality (Christ) is present precisely under the limitation of their perception, and communion is participative inclusion in that reality — 'salvation as inclusion in the people united with God.'"
 tags: [synthesis, day/249, theme/presence-and-substance]
+last_qc_at: "2026-06-17T02:29:03"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 249 — The Eucharist (Contemporary Parallel)

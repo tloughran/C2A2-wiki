@@ -6,12 +6,17 @@ title: Penance as a Virtue
 summa_ref: Tertia Pars, III Q.85
 duration_seconds: 861
 word_count: 2543
+raw_asr_word_count: 2534
+length_tier: medium
 segment_count: 371
 caption_kind: asr
 language: en
 fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-255 - Penance as a Virtue - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-17T20:23:13"
+last_qc_outcome: "rewrote"
 tags: [summa, day/255, pars/3, q/85]
 ---
 

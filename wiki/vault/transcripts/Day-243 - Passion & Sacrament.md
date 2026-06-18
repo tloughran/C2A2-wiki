@@ -6,13 +6,18 @@ title: Passion & Sacrament
 summa_ref: Tertia Pars, III Q.60-62
 duration_seconds: 648
 word_count: 1879
+raw_asr_word_count: 1873
+length_tier: short
 segment_count: 283
 caption_kind: asr
 language: en
 fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-243 - Passion & Sacrament - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/243, pars/3, q/60]
+last_qc_at: "2026-06-17T16:22:28"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 243 — Passion & Sacrament

@@ -6,12 +6,17 @@ title: Eucharistic Reception
 summa_ref: Tertia Pars, III Q.79-80
 duration_seconds: 1114
 word_count: 3308
+raw_asr_word_count: 3289
+length_tier: medium
 segment_count: 491
 caption_kind: asr
 language: en
 fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-252 - Eucharistic Reception - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-17T18:30:00"
+last_qc_outcome: pass
 tags: [summa, day/252, pars/3, q/79]
 ---
 

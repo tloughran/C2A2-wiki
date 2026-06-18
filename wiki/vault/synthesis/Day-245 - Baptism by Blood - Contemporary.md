@@ -16,8 +16,8 @@ length_note: "Concise by design — a single-focus III Q.66 (baptism of blood/de
 mind_first_reframe: "The operative reality of baptism is the dispositional form, which can reach its saving terminus by multiple equifinal routes because what governs the outcome is the attractor/disposition, not the particular material path."
 central_theme_thread: "Baptism of desire is the limit case where the resources are unavailable yet the agent's genuine orientation toward the whole suffices — grace meeting the perspective at the limit of its resources."
 tags: [synthesis, day/245, theme/form-without-matter]
-last_qc_at: "2026-06-16T10:29:20"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-17T16:22:29"
+last_qc_outcome: "pass"
 ---
 
 # Day 245 — Baptism by Blood (Contemporary Parallel)

@@ -6,12 +6,17 @@ title: Eucharistic Minister
 summa_ref: Tertia Pars, III Q.82
 duration_seconds: 855
 word_count: 2649
+raw_asr_word_count: 2637
+length_tier: medium
 segment_count: 388
 caption_kind: asr
 language: en
 fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-253 - Eucharistic Minister - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-17T20:23:12"
+last_qc_outcome: "rewrote"
 tags: [summa, day/253, pars/3, q/82]
 ---
 

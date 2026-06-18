@@ -2,7 +2,7 @@
 day: 250
 title: Transubstantiation (Contemporary)
 pairs_with: "[[Day-250 - Transubstantiation]]"
-length_target_words: 1500
+length_target_words: 2200
 length_actual_words: 812
 length_tier: medium
 karpathy_wiki_sources:
@@ -11,7 +11,12 @@ karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-01 control; identity preserved through total turnover)"
   - "traditions/rohr/wiki.md (Universal Christ in matter)"
 evidence_strength_summary: "Substance-conversion theological/metaphysical (Rohr/Wright + Kastrup); appearance-decoupled-from-reality formal-speculative (Hoffman, his core empirical-evolutionary claim); identity-through-turnover empirical (Levin); central-theme strongly engaged; guardrail leads Hoffman/Kastrup/Levin."
+length_ratio_to_target: 0.37
+mind_first_reframe: "Transubstantiation is reframed, under interface theory (Hoffman, with Kastrup on substance-as-mental-reality), as the case where a thing's reality is wholly converted while its perceptual icon is wholly conserved — coherent precisely because the icon never resembled the reality in the first place."
+central_theme_thread: "The project's central motif at maximum intensity: the whole is made present under, and only under, the signs available to a perspective-limited perceiver; the limitation (the remaining accidents) is not lifted, yet the whole is fully given, and reception is the limited perspective's inclusion in the whole it cannot see."
 tags: [synthesis, day/250, theme/conversion-of-reality-under-stable-appearance]
+last_qc_at: "2026-06-17T02:29:03"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 250 — Transubstantiation (Contemporary Parallel)

@@ -16,7 +16,7 @@ evidence_strength_summary: "Three vows as total self-offering ~ voluntary relinq
 mind_first_reframe: "The three religious vows are the deliberate relinquishment of the three resource-classes that most strongly individuate and pre-occupy a finite perspective — owned property, bodily/sexual attachment, and self-determining will — so that its attention can be re-weighted toward the whole; obedience is chief because it surrenders the self-model's own autonomy to a perspective that sees more, which is exactly the guidance the project says a limited agent needs."
 central_theme_thread: "The vows enact, voluntarily and at the deepest layer, the very thing the central theme describes — a limited perspective spending the resources that hold it apart in order to be drawn toward loving union — and obedience names the surrender to 'those who perceive more of the whole'; yet the state remains scaffold, never the charity itself."
 tags: [synthesis, day/212, theme/vows-as-perspective-surrender]
-last_qc_at: "2026-06-07T10:27:20"
+last_qc_at: "2026-06-17T06:30:28"
 last_qc_outcome: "pass"
 ---
 

@@ -6,13 +6,18 @@ title: Ascension
 summa_ref: Tertia Pars, III Q.57
 duration_seconds: 723
 word_count: 2043
+raw_asr_word_count: 2035
+length_tier: medium
 segment_count: 291
 caption_kind: asr
 language: en
 fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-241 - Ascension - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/241, pars/3, q/57]
+last_qc_at: "2026-06-17T16:22:26"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 241 — Ascension

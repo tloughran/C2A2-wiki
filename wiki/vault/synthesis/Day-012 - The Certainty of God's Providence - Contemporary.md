@@ -71,15 +71,15 @@ karpathy_wiki_sources:
   - "wiki/traditions/levin/wiki.md (PRS-03, PRS-08 — Q.21 a.1 gradedness of distributive justice ↔ bioelectric goal-state pattern; Q.22 a.3 plan-immediate / execution-mediated ↔ multi-scale morphogenetic ordering)"
   - "wiki/traditions/kastrup/wiki.md (PRS-01, PRS-02 — Q.22 voluntary-action-within-providence ↔ alter-within-substrate frame)"
   - "wiki/traditions/hoffman/wiki.md (PRS-03 — Q.22 chance objection ↔ perspective-limited interface vs. substrate-structure)"
-  - "wiki/traditions/stump/wiki.md (PRS-01, PRS-03; Wandering in Darkness — Q.22 evil objection; conditioned-thing's perspective on its own suffering)"
+  - "wiki/traditions/stump/wiki.md (PRS-05, PRS-11; Wandering in Darkness — Q.22 evil objection; conditioned-thing's perspective on its own suffering)"
   - "wiki/traditions/wright/wiki.md (five-act hermeneutic — Q.22 voluntary-action-within-providence ↔ faithful improvisation within unfinished drama)"
   - "wiki/traditions/rohr/wiki.md (Universal Christ; non-dual epistemology — Q.21 creation-as-mercy ↔ everything belongs; non-dual mode of holding free-and-held)"
   - "wiki/master/cross_program_index.md (CROSS-001 substrate-independence; CROSS-005 love as fundamental; CROSS-024 ruliad as ontological ground; CROSS-027/028/037 Kastrup × Friston × Levin formal chain)"
   - "Matthew 6:26; Matthew 5:45; Romans 8:28; Philippians 2:12"
 mind_first_reframe: "Q.21's justice and mercy are the modal characters of the substrate's stance toward conditioned things — gradedness of participation (justice) and gratuity of existence-and-patterning (mercy). Q.22's providence is the substrate's ordering of every conditioned thing toward its end: plan immediate, execution mediated through secondary causes, necessity and contingency both held within the substrate's seeing-of-the-whole-at-once. Wolfram's ruliad supplies the formal cousin (structural lawfulness one, particular trajectories many); Friston's active-inference formalism gives the dynamics; Levin's bioelectric morphogenetic ordering instantiates the multi-scale structure empirically. Voluntary action and providence are not competing causes but co-constitutive aspects of the same event, because the alter is a dissociative configuration within mind-at-large, not metaphysically outside it."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; salvation in fear and trembling on the providential register is the alter's living-and-acting within an ordered substrate whose ordering it does not see in full but whose ordering is what makes its working-out-toward-loving-union possible at all. The free-vs-determined tension dissolves when the alter is recognized as within the substrate rather than outside it; Wright's faithful-improvisation-within-unfinished-drama and Rohr's non-dual contemplative mode of holding free-and-held without premature resolution are the operational forms. The substrate's just-and-merciful ordering is what love (Day 11) looks like as the structural form that patterns conditioned things into being-and-being-toward-flourishing."
-last_qc_at: "2026-06-09T22:28:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-18T00:21:40"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/012, theme/providence, theme/justice-and-mercy, theme/ruliad, theme/active-inference, theme/free-will, theme/secondary-causes]
 
 ---

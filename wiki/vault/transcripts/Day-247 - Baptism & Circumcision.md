@@ -6,12 +6,17 @@ title: Baptism & Circumcision
 summa_ref: Tertia Pars, III Q.70
 duration_seconds: 792
 word_count: 2221
+raw_asr_word_count: 2214
+length_tier: medium
 segment_count: 334
 caption_kind: asr
 language: en
 fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-247 - Baptism & Circumcision - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-17T18:30:00"
+last_qc_outcome: pass
 tags: [summa, day/247, pars/3, q/70]
 ---
 

@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-013 - Predestination - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-07T16:21:14"
+last_qc_at: "2026-06-18T00:21:40"
 last_qc_outcome: "pass"
 render_pass: structural-pass-2026-05-10  # article-block headers and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/013, pars/I, q/23, q/24, theme/predestination, theme/election, theme/book-of-life]

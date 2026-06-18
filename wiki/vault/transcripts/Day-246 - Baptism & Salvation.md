@@ -6,13 +6,18 @@ title: Baptism & Salvation
 summa_ref: Tertia Pars, III Q.68-69
 duration_seconds: 1074
 word_count: 3151
+raw_asr_word_count: 3135
+length_tier: medium
 segment_count: 460
 caption_kind: asr
 language: en
 fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-246 - Baptism & Salvation - Contemporary]]"
+fidelity_checked: true
 tags: [summa, day/246, pars/3, q/68]
+last_qc_at: "2026-06-17T16:22:29"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 246 — Baptism & Salvation
