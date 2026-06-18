@@ -206,7 +206,13 @@ def main():
         if s is None:
             continue
         try:
-            u = (json.loads(payload).get("data") or {}).get("token_usage")
+            _d = json.loads(payload).get("data") or {}
+            # OpenStory migrated its event-payload schema on 2026-04-07:
+            # token_usage moved from data.token_usage to
+            # data.agent_payload.token_usage. Read both so sessions on either
+            # side of the migration are counted (pre-fix, everything after
+            # 2026-04-06 read as zero tokens and the interactive lane vanished).
+            u = _d.get("token_usage") or (_d.get("agent_payload") or {}).get("token_usage")
         except (ValueError, TypeError):
             continue
         if not u:
@@ -626,11 +632,8 @@ function renderWave() {
     lg.innerHTML = cats.map(c=>`<span><i class="dot" style="background:${catColor(c)}"></i>${c}</span>`).join("")
       + `<span style="margin-left:14px">faint bands = weekends</span>`;
   }
-  if (!isYield) {
-    drawHorizon(g, x, innerH);
-    document.getElementById("legend").innerHTML +=
-      `<span style="margin-left:14px;color:#C47A9A">&#9476; interactive capture ends (instrumentation gap)</span>`;
-  }
+  // (Former "interactive capture ends" horizon removed 2026-06-17: it marked
+  // the 2026-04-06 schema-migration gap, which the token-path fix now closes.)
 }
 
 function renderDual() {
@@ -652,11 +655,9 @@ function renderDual() {
   series.forEach(([k,c]) => g.append("path").datum(rows).attr("fill","none")
     .attr("stroke",c).attr("stroke-width",1.6).attr("d", mk(k)));
   axes(g, x, y, innerH, "tokens / day" + (logy?" (log)":""));
-  drawHorizon(g, x, innerH);
   document.getElementById("legend").innerHTML = series.map(([k,c,l])=>
     `<span><i class="dot" style="background:${c}"></i>${l}</span>`).join("")
-    + `<span style="margin-left:14px">faint bands = weekends</span>`
-    + `<span style="margin-left:14px;color:#C47A9A">&#9476; interactive capture ends (instrumentation gap)</span>`;
+    + `<span style="margin-left:14px">faint bands = weekends</span>`;
 }
 
 function setControls(view) {
