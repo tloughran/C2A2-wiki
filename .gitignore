@@ -96,3 +96,11 @@ quarantine/
 physics_explorer_candidate_*.html
 # Heartbeat delivery bundle — distributable artifact, contains a stale explorer.html that clobbers; source is wiki/heartbeat/
 C2A2_Heartbeat_Explorer_Update_*_bundle/
+# ISME-2026 talk materials — pre-delivery drafts; publish selectively after the talk, not the working folder
+presentation/
+# Spent seed scaffolding — approved summaries already live in committed wiki.md; contains destructive one-shot apply_summaries.py (never republish)
+sociogram-summaries-review/
+# Exploratory team mockups — not yet wired into the explorer
+crm-team-mockups/
+# Dated review page — ephemeral generated output
+wiki/review/2026-06-19_review.html
