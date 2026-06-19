@@ -114,8 +114,8 @@ python3 scripts/janitor.py --promote <check_name>
 ```
 Destructive categories (`empty_section`, `dead_end_wikilink`) are permanently notify-only.
 
-### morning-system-health integration (TODO, not yet wired)
-The Sunday janitor writes a brief to `~/Documents/Claude/Reports/janitor-YYYY-MM-DD.md`. Morning-system-health should be edited to surface the most recent janitor brief in its Monday report. Until that edit lands, Tom reads the brief directly or opens `janitor/findings.md`.
+### morning-system-health integration (WIRED 2026-06-19)
+The `morning-system-health` scheduled task (daily 6 AM) now reads `janitor/findings.md` directly and surfaces its `## New since last week` section as report section 5, flagging `reindexer_freshness` and `src_pub_refs_drift` staleness/drift signals especially. No separate brief file is emitted — `findings.md` is the single source. (The janitor runs weekly Sunday; the daily report restates the same "new" items until the next janitor run, which is intended.) Known gap, deferred: chronic findings buried in the accepted-noise baseline don't resurface — see `handoffs/reliability-backlog.md` (escalate-chronic-findings).
 
 ### Manual operations
 ```bash

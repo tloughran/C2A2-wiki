@@ -215,7 +215,8 @@ def check_reindexer_freshness():
         ))
         return findings
     available_days = set()
-    for entry in idx:
+    # summa_index.json is a dict keyed by article id (e.g. "I.Q1.A1"); iterate values, not keys.
+    for entry in idx.values():
         if entry.get("available") and entry.get("day") is not None:
             available_days.add(int(entry["day"]))
     day_pat = re.compile(r"^Day-(\d{3})")
