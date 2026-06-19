@@ -84,3 +84,15 @@ wiki/PETER/
 
 # TRV Commentary page-image sidecar — local-only, copyrighted book scans (2026-06-11)
 wiki/commentary-explorer/pages/
+
+# --- Tree cleanup 2026-06-19 (untracked scratch / generated output, public repo) ---
+# Generated agent output (sibling of janitor/, reviewer-review/ above)
+connector-health/
+# Loose session-handoff doc — handoffs/ is already ignored; catch root-level stragglers too
+SESSION_HANDOFF_*.md
+# Mount-delete workaround holding pen (dupes staged for removal, never published)
+quarantine/
+# Old physics-explorer candidates (superseded staging copies)
+physics_explorer_candidate_*.html
+# Heartbeat delivery bundle — distributable artifact, contains a stale explorer.html that clobbers; source is wiki/heartbeat/
+C2A2_Heartbeat_Explorer_Update_*_bundle/
