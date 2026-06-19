@@ -1826,3 +1826,44 @@ PREMISE-065:
   Rationale: On the stated determinism-vs-jitter binary, determinism strictly dominates for reproducibility/mental-map/diffing; the challenge does not bear on that binary (it concerns a third option — marking the layout non-semantic) and is folded as a caveat + routed to REVISE-122. Consistency-checked vs PREMISE-001..064 (reinforces PREMISE-062 deterministic-first family): no conflict.
 
 **Total new PREMISEs this run (2026-06-17): 2 (PREMISE-064 metric-before-view sequencing; PREMISE-065 deterministic-over-random layout). Both stated ASSUMPTIONs; PRESUMPTION-class INCORPORATEs: 0. Cumulative through PREMISE-065. Both carry explicit scope guards withholding the over-trust/over-reading steps (routed to REVISE-124 and REVISE-122).**
+
+PREMISE-066:
+  Date validated: 2026-06-19
+  Source item: ASSUMPTION-328
+  Statement: Derive the user-facing thinker pop-up bio from the single canonical wiki.md the agents maintain (single source of truth / DRY) rather than a duplicated copy. Duplicated content is the recognized root cause of drift; one authoritative representation with a read-only derived view removes the entire class of sync bugs ("no second copy to drift"). SCOPE GUARD (load-bearing): SSOT relocates rather than removes the failure mode — the derived view is now COUPLED to the source's parse-contract (which block, which markers). The extraction boundary must therefore be an EXPLICIT, TESTED interface so a refactor of the working doc FAILS LOUDLY rather than silently emitting an empty/wrong pop-up. The premise licenses the one-source ARCHITECTURE only; it does NOT certify that the source text is automatically fit as a user-facing bio (adequacy = MONITOR-357/REVISE-125) nor that the source will be maintained (the upkeep contingency = MONITOR-359).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Hunt & Thomas 1999 (DRY — "single, unambiguous, authoritative representation"); SSOT / master-data-management practice (duplicated state -> drift); Codd normalization (redundant copies -> update anomalies).
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Weak-Moderate) — SSOT couples the view to the source format and makes one file serve two masters (agent-workspace + user-presentation); folded as the tested-extraction-boundary scope guard. The rejected alternative (a second hand-curated copy) has no defenders — it is the canonical drift source.
+  Confidence: Moderate-High
+  Applicable to: Sociogram thinker-summary pop-ups; any C2A2 derived view that reads from an agent-maintained canonical doc.
+  Re-check due: 2026-09-19 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: Strong, conventional support for the one-source architecture; the only challenge specifies HOW to do SSOT safely (test the extraction boundary), not WHETHER. Consistency-checked vs PREMISE-001..065: no conflict; coheres with the dependency-ordering family. Adequacy and upkeep questions deliberately withheld and routed to REVISE-125 / MONITOR-357 / MONITOR-359.
+
+PREMISE-067:
+  Date validated: 2026-06-19
+  Source item: ASSUMPTION-330
+  Statement: Provide a single canonical build wrapper (regen_sociogram.sh) that hardcodes required flags (--summa) and guards the known-bad configuration (Summa-less builds), and steer all regeneration through it ("paved road" / golden path). Centralizing the correct invocation prevents the "forgot the flag" class of operator misconfiguration and makes the safe path the default. SCOPE GUARD (load-bearing): a golden path enforced only by CONVENTION is bypassable — if generate_visualization.py remains runnable and is "forbidden" only by documentation, the guarantee is one habit-lapse (or one agent invocation) away from a Summa-less build, and the wrapper can drift from the underlying script's interface. The robust form puts the Summa-less guard IN THE ENTRY POINT (refuse/warn) and/or adds a post-build assertion that the artifact contains Summa nodes, so even direct invocation cannot silently ship a bad artifact. The premise licenses HAVING the canonical guarded wrapper; it does not certify that convention-only forbiddance is sufficient enforcement.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: "Paved road"/golden-path platform engineering (Netflix/Spotify/Google); build-automation convention (Make targets, wrapper scripts encapsulating required flags); configuration-as-code / sane-defaults.
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Weak-Moderate) — unenforced golden paths are bypassable and wrappers drift from the underlying tool; folded as the guard-in-code / post-build-assertion scope guard. Member of the convention-guard cluster (see SYSTEMIC-RISK cluster 4).
+  Confidence: Moderate-High
+  Applicable to: Sociogram regeneration; any C2A2 build with a required-flag/known-bad-config hazard.
+  Re-check due: 2026-09-19 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: Strong support for the canonical wrapper; the challenge specifies HOW to make the "only path" actually safe (enforce in code), not WHETHER to have a wrapper. Consistency-checked vs PREMISE-001..066: no conflict; coheres with PREMISE-062 (deterministic-scheduler-first) and the guard-by-code preference echoed in REVISE-127.
+
+PREMISE-068:
+  Date validated: 2026-06-19
+  Source item: PRESUMPTION-367
+  Statement: Offering thinker summaries as ON-DEMAND pop-ups (details-on-demand / progressive disclosure) improves the sociogram: detail supplied on request keeps the default overview uncluttered while making depth available, which is the canonical improvement to an overview visualization (Shneiderman's "overview first, zoom and filter, details-on-demand"). SCOPE GUARD (load-bearing): the gain comes from the PROGRESSIVE-DISCLOSURE STRUCTURE (opt-in, dismissible, non-occluding), NOT from the presumption's stated rationale "more on-demand information = better." Minimalism/interaction-cost research denies that more information is categorically better and notes even on-demand detail carries discovery/occlusion cost; the "more = better" generalization is explicitly WITHHELD, and future annotation additions must be judged case-by-case (keep the default view clean; pop-ups must not occlude the structure they annotate).
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: Shneiderman 1996 "The Eyes Have It" (details-on-demand mantra); Nielsen (progressive disclosure); Pirolli & Card (information scent / cost-of-knowledge).
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Weak-Moderate) — Tufte data-ink/minimalism and feature-creep/interaction-cost deny "more = better"; even opt-in detail has residual cost. Folded as the scope guard restricting the premise to the on-demand structure.
+  Confidence: Moderate
+  Applicable to: Sociogram pop-ups; any C2A2 overview where added detail can be deferred to an on-demand layer.
+  Re-check due: 2026-09-19 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: PRESUMPTION with MODERATE-STRONG canonical support and only WEAK-MODERATE challenge -> INCORPORATE-with-guard is warranted (challenge is weak, not strong, so the "PRESUMPTION+strong-challenge->REVISE" heuristic does not trigger). The defensible core (progressive disclosure) is incorporated; the over-general "more = better" rationale is withheld. Consistency-checked vs PREMISE-001..067 and vs REVISE-122 (resolvability != fidelity): no conflict — both withhold "more visible/more info = automatically better."
+
+**Total new PREMISEs this run (2026-06-19): 3 (PREMISE-066 SSOT single-source bios; PREMISE-067 golden-path guarded regen wrapper; PREMISE-068 details-on-demand pop-ups). 2 stated ASSUMPTIONs + 1 PRESUMPTION (367, the first PRESUMPTION-class INCORPORATE in several runs — admitted because its challenge was only weak-moderate and its support canonical). Cumulative through PREMISE-068. All three carry explicit scope guards withholding the over-claim step (tested-extraction-boundary; guard-in-code; withhold 'more=better').**

@@ -82,7 +82,7 @@ length_note: "Over the medium-tier guideline of 2200 ±10% (came in at 3009, rat
 karpathy_wiki_sources:
   - "wiki/traditions/kastrup/wiki.md (PRS-02 individuation within monism — internal relations as real-and-constitutive without multiplying the substrate)"
   - "wiki/traditions/wolfram/wiki.md (PRS-06 ruliad — circular mutual-constitution of totality and threads as cousin of relations-acts circular presupposition)"
-  - "wiki/traditions/stump/wiki.md (PRS-01, PRS-03 — second-person knowing; appropriations as tradition-internal pedagogical practice)"
+  - "wiki/traditions/stump/wiki.md (PRS-05, PRS-11 — second-person knowing; appropriations as tradition-internal pedagogical practice)"
   - "wiki/traditions/wright/wiki.md (critical realism — language-control rule of Q.39 a.3-6 as critical-realist predication at the tightest setting)"
   - "wiki/traditions/rohr/wiki.md (cataphatic-apophatic cycle — Q.39's working-out-of-language across eight articles)"
   - "wiki/traditions/mcgilchrist/wiki.md (hemispheric account — Q.40 a.4 circular presupposition as right-hemispheric whole-grasping)"
@@ -94,8 +94,8 @@ karpathy_wiki_sources:
   - "Athanasian Creed; Council of Nicaea homoousios formula"
 mind_first_reframe: "Q.39 compresses the whole Trinitarian doctrine into one rule: *the divine essence is the same as suppositum, which in intellectual substances is nothing else than the person; relation as referred to the essence does not differ therefrom really but only in our way of thinking, while as referred to an opposite relation it does have a real distinction*. The substrate (mind-at-large) considered as essence is one; considered under the relational aspects of its own self-knowing-and-self-loving acts is three. Q.39's language-control rules (essential names predicated in singular; abstract essential names not interchangeable with personal names; appropriations pedagogical not exclusive) calibrate creature-language to the real-relations-by-opposition. Q.40's compression: the persons are *subsistent relations* (a.1), distinguished *solely by opposition of relation* (a.2), constitutive of the substrate-as-considered (a.3 — abstract the relation and the person dissolves), and *circularly presupposing* of the notional acts (a.4). Mind-monism inherits the constraint without strain because the substrate just *is* its own self-knowing-and-self-loving; the relations are aspects-under-which the substrate is considered, not additive items."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; *salvation in fear and trembling* on the doctrinal-language register is the alter's learning to speak truly about the substrate from inside perspective limitation, allowing the language-control of the tradition to discipline alter-speech so that predications track the real-relations-by-opposition without collapsing into modalism or tritheism. Wright's critical realism gives the philosophical-of-history idiom; Rohr's cataphatic-apophatic cycle gives the contemplative practice. The medieval Trinitarian doctrine is itself a fifteen-centuries-long working-out of how to speak about the substrate while remaining within perspective limitation — the alter receives the doctrine as a discipline rather than mastering it from above."
-last_qc_at: "2026-06-10T02:27:08"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-18T04:19:43"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/021, theme/trinity, theme/essence-and-person, theme/appropriations, theme/subsistent-relations, theme/critical-realism, theme/cataphatic-apophatic]
 
 ---

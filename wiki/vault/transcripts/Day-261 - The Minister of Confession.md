@@ -6,6 +6,9 @@ title: The Minister of Confession
 summa_ref: Supplement, Suppl. Q.7-8
 duration_seconds: 552
 word_count: 1655
+raw_asr_word_count: 1647
+length_tier: short
+fidelity_checked: true
 segment_count: 243
 caption_kind: asr
 language: en
@@ -13,6 +16,8 @@ fetched_at: 2026-06-17
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-261 - The Minister of Confession - Contemporary]]"
 tags: [summa, day/261, pars/supplement, q/penance]
+last_qc_at: "2026-06-18T02:30:21"
+last_qc_outcome: "pass"
 ---
 
 # Day 261 — The Minister of Confession

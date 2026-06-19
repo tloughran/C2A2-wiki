@@ -6,6 +6,9 @@ title: Continual Contrition
 summa_ref: Supplement, Suppl. Q.2-3
 duration_seconds: 548
 word_count: 1558
+raw_asr_word_count: 1558
+length_tier: short
+fidelity_checked: true
 segment_count: 228
 caption_kind: asr
 language: en
@@ -13,6 +16,8 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-259 - Continual Contrition - Contemporary]]"
 tags: [summa, day/259, pars/suppl, q/2]
+last_qc_at: "2026-06-18T02:30:19"
+last_qc_outcome: "pass"
 ---
 
 # Day 259 — Continual Contrition

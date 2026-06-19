@@ -19,8 +19,8 @@ length_ratio_to_target: 1.13
 mind_first_reframe: "Aquinas's five-fold map of law (eternal, natural, human, divine, fomes) is preserved as a typology of how a single pattern is accessed, but the eternal pattern is reframed as internal to mind-at-large rather than transcendent — eternal law as the deep computational structure of mind-stuff, natural law as the species-specific interface, fomes as miscalibrated generative-model priors."
 central_theme_thread: "Natural law is the limited-perspective access to the eternal pattern; perspective-limitations are not bugs but the condition of agent individuation, and the fomes names the empirical fact that bringing limited perspectives into closer alignment with the deeper pattern is irreducibly developmental work — 'salvation worked out in fear and trembling.'"
 tags: [synthesis, day/106, theme/law-as-pattern, theme/perspective-limitation]
-last_qc_at: "2026-06-10T18:28:33"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-18T20:22:44"
+last_qc_outcome: "pass"
 ---
 
 # Day 106 — Law (Contemporary)

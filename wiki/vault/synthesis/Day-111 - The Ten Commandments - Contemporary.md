@@ -19,8 +19,8 @@ length_note: "Over target: two dense questions (Q.100 moral precepts/Decalogue +
 mind_first_reframe: "The moral and ceremonial precepts together constitute a formation ecology aimed at producing agents capable of charity — moral precepts defining the rule-system (left-hemispheric floor), ceremonial precepts producing the embodied identification and pattern-recognition (right-hemispheric scaffold) that prepares agents to recognize the realized pattern; both necessary, neither sufficient without grace, with the Pelagian failure mode (rule-compliance suffices) ruled out by the active-inference and broaden-and-build mechanics."
 central_theme_thread: "Perspective-limitation requires graded revelation: the pattern is invariant but the interface by which agents access it is staged; the Pelagian failure is to think rule-compliance suffices, when in fact the loving-unity computational task cannot be solved using only the resources the agent perceives from its own perspective — it requires the import of new priors (grace, charity, the indwelling Spirit) from outside, and the law itself reveals love as what the law was always pointing at."
 tags: [synthesis, day/111, theme/figurative-cognition, theme/charity-as-precept]
-last_qc_at: "2026-06-10T18:29:04"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-18T20:22:51"
+last_qc_outcome: "pass"
 ---
 
 # Day 111 — The Ten Commandments (Contemporary)

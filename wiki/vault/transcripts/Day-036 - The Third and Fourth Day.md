@@ -15,7 +15,7 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-036 - The Third and Fourth Day - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-10T00:24:56"
+last_qc_at: "2026-06-18T04:20:09"
 last_qc_outcome: "pass"
 render_pass: structural-pass-2026-05-12  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/036, pars/I]

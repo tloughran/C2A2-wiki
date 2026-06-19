@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-222 - Unity of Operation - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/222, pars/III, q/19 q/20]
-last_qc_at: "2026-06-10T16:31:42"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-18T12:20:06"
+last_qc_outcome: "pass"
 ---
 
 # Day 222 — Unity of Operation

@@ -14169,3 +14169,47 @@ These mirror the STALE-MONITOR-FLAGS above as parseable refresh blocks so the ne
 **PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
 
 **Total new MONITORs this run (2026-06-17):** 2 (MONITOR-352..353). Next weekly 15d: 2026-06-18. Both close on the SAME single git-history audit of prs_triplets.md that also unblocks REVISE-117/120/123 (SYSTEMIC-RISK cluster 3) — highest-leverage single action this batch.
+
+### MONITOR-354 — ASSUMPTION-329
+**Statement:** The one-time seed apply_summaries.py must never be rerun (it would clobber hand-edits from approved_summaries.json).
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate; the never-rerun CONSTRAINT is correct — run-once migration frameworks track applied-state precisely because non-idempotent one-shots must not re-apply) | **15b:** PARTIALLY-CHALLENGED (Moderate-Strong; the challenge is to the GUARD, not the constraint — memory/convention is the known-unreliable mechanism idempotency/guard-by-code exist to replace — Nygard)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-25. Priority MEDIUM. The constraint is true; what is monitored is whether the destructive path stays reachable with only a memory/doc guard. Action (cheap): make the seed idempotent (merge not overwrite) OR add a guard clause (refuse if hand-edits present / require --force+confirm) OR disarm by removing the script post-seed. Code guard or disarm -> INCORPORATE the constraint as enforced; left armed with doc-only guard -> escalate jointly with REVISE-127 (PRESUMPTION-366, the stronger twin). Member of convention-guard cluster (SYSTEMIC-RISK cluster 4).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-355 — ASSUMPTION-331
+**Statement:** A manual local visual verify (localhost:8080) "satisfies the constitutional check" and clears the build to push.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate as a smoke test — a quick render check legitimately catches gross load/layout failures) | **15b:** CHALLENGED (Moderate-Strong; non-reproducible, low-coverage, silent on content — necessary-not-sufficient as a release gate)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-25. Priority MEDIUM. The activity is a fine smoke test; the over-claim is "satisfies THE check / clears to push" on its own. Action: pair the visual verify with cheap automated content assertions (expected thinker count, each `**Summary**` present & non-empty, node-count invariants) and record what the glance does/doesn't cover. Visual-as-one-layer-of-many -> INCORPORATE; visual-as-sole-gate -> escalate jointly with REVISE-126 (PRESUMPTION-364, the stronger render⇒content twin). Couples ASSUMPTION-332 (the 256-vs-379 gap a glance would miss). Member of convention-guard / glance-verification cluster (SYSTEMIC-RISK cluster 4).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-356 — ASSUMPTION-332
+**Statement:** The ? (summary pop-up) feature is independent of Summa node counts, so the unexplained ~256-vs-379 gap doesn't block the push.
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate, conditional; separation-of-concerns licenses shipping past a TRULY isolated orthogonal defect — Parnas) | **15b:** PARTIALLY-CHALLENGED (Moderate; independence is asserted not verified, and both features render into the SAME artifact wiki_narration.html — an unexplained gap is an unknown, not a benign defect)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-25. Priority MEDIUM. The conditional is sound IF independence is demonstrated and the gap explained. Action: trace the ? feature's data path to confirm it does not share the Summa-count extraction; diagnose 256-vs-379 (likely a definitional mismatch — see REVISE-128 / PRESUMPTION-368, not necessarily a real drop); log the gap as a tracked defect with an owner. Independence verified + gap explained -> INCORPORATE; shared path or unresolved anomaly -> REVISE. Couples REVISE-128 (368) and MONITOR-355 (331).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-357 — PRESUMPTION-361
+**Statement:** [inferred] A single short **Summary** block is the right granularity to represent a tradition (the mini-bio stands in for the tradition).
+**Item type:** PRESUMPTION (unstated — surfaced by inference)
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate; a short block is the right granularity for the ORIENTATION tier — abstract/lede convention, progressive disclosure, information scent) | **15b:** PARTIALLY-CHALLENGED (Moderate; lossy by construction, reifies an evolving/contested tradition as a static blurb, and one granularity can't serve all purposes)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-25. Priority MEDIUM (touches how the project represents traditions). The block ORIENTS; the contested claim is that it STANDS IN FOR the tradition. Action: frame the block explicitly as an orienting summary (not a definition), ensure the deeper tier (full wiki.md) is reachable, and avoid language implying the summary IS the tradition. Framed-as-orientation-with-depth-reachable -> INCORPORATE; presented-as-the-tradition -> REVISE. Couples PRESUMPTION-363 (REVISE-125, the adequacy/voice question).
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-358 — PRESUMPTION-362
+**Statement:** [inferred] Summaries belong on nodes (15 thinkers + Summa + Traditions header), not on edges/cross-connections or sub-traditions.
+**Item type:** PRESUMPTION (unstated — surfaced by inference)
+**15a:** SUPPORTED (Moderate; nodes are the affordance-correct, clutter-sparing home for descriptive bios — node-link convention) | **15b:** PARTIALLY-CHALLENGED (Moderate; in a sociogram, and especially a project about tradition INTERACTION, the ties often carry the central insight — node-only annotation under-serves the telos)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-25. Priority LOW-MEDIUM. Node placement of bios is sound; the watch item is whether cross-connections get NO explanation. Action: confirm there is a plan/path to annotate the project-critical cross-connections (at least the salient ties) as a complementary layer, without cluttering. Node-bios-as-layer-one-with-tie-annotation-planned -> INCORPORATE the node placement; permanent edges-carry-no-explanation -> REVISE. Couples the project-telos concern (tradition interaction).
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-359 — PRESUMPTION-365
+**Statement:** [inferred] The single-source-of-truth payoff presumes agents/Tom will actively maintain the wiki.md Summary blocks going forward.
+**Item type:** PRESUMPTION (unstated — surfaced by inference)
+**15a:** PARTIALLY-SUPPORTED (Moderate for the conditional; an SSOT's currency genuinely DEPENDS on upkeep — the presumption's internal logic is correct) | **15b:** CHALLENGED (Moderate; discipline-dependent currency is the documentation-rot DEFAULT-TO-FAIL — docs/data rot, single-maintainer bus-factor)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-25. Priority MEDIUM. The dependency is real and is a liability, not a safe assumption — an unmaintained SSOT serves stale content with full apparent authority (no second copy to disagree). Action: add a freshness signal (last-updated per block; flag blocks unchanged past a threshold or out of sync with tradition activity) and fold Summary upkeep into the agents' existing maintenance loop so it is not a separate remembered task. Upkeep-coupled-to-routine-maintenance + staleness-detectable -> INCORPORATE; separate-remembered-discipline -> REVISE. Scope-guard companion to PREMISE-066 (ASSUMPTION-328).
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-06-19):** 6 (MONITOR-354..359). Next weekly 15d: 2026-06-25. Three are the milder stated-ASSUMPTION twins of REVISE items (354↔REVISE-127 doc-only-guard; 355↔REVISE-126 render⇒content; 356↔REVISE-128 count-commensurability) — the surfaced-not-averaged split where the stated constraint is monitored and the stronger inferred presumption is revised. Two cheap instruments close most: (a) one code-guard/disarm pass on apply_summaries.py + an entry-point Summa guard closes 354 and unblocks REVISE-127 and PREMISE-067's guard; (b) a content-assertion add-on to regen (counts + `**Summary**` presence) closes 355 and unblocks REVISE-126, and surfaces the 256-vs-379 definition (356/REVISE-128). 357/358/359 are representational/upkeep watch items on the bios themselves.

@@ -13662,3 +13662,388 @@ DISPOSITION-258:
 No new items were queued by the upstream self-awareness pipeline (14a/14b) today: for_lit_search.md unchanged since 2026-06-17 04:54 UTC. The 2026-06-17 run closed end-to-end (QUEUED-undispositioned 12 -> 0; DISPOSITION-247..258). No overdue 15d RE-TRIGGER backlog surfaced at run time. Clean null run — no 15a/15b/15c actions taken; no files modified except this audit note.
 
   PROVENANCE: Origin: c2a2-lit-search-pipeline (scheduled); Chain: [queue-scan only]; Transform: null-run verification; Current status: QUEUE-EMPTY
+
+---
+
+## c2a2-lit-search-pipeline run 2026-06-19 (autonomous; Tom not present) — 2026-06-18 Sociogram thinker-summary cohort (13 items)
+
+### 15a RETURNS (FOR / supportive)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-328
+  Search direction: FOR (supportive)
+  Result: SUPPORTED | Strength: Strong
+  Key source: Hunt & Thomas 1999, The Pragmatic Programmer (DRY); SSOT / master-data-management practice
+  Summary: Deriving the bio from one canonical wiki.md is textbook DRY/single-source-of-truth — duplicated content is the recognized cause of drift; support is for the one-source architecture (not for source adequacy or upkeep).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-328_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-329
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate (constraint) / Weak (guard)
+  Key source: run-once migration frameworks (Flyway/Rails applied-state tracking)
+  Summary: The never-rerun CONSTRAINT is well-precedented (one-shot non-idempotent transforms must not re-apply); the precedent argues for a CODE guard, not memory — so support covers the constraint, not the chosen guard mechanism.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-329_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-330
+  Search direction: FOR (supportive)
+  Result: SUPPORTED | Strength: Moderate-Strong
+  Key source: "paved road"/golden-path platform engineering; build-automation wrapper convention
+  Summary: A single canonical wrapper hardcoding required flags and guarding a known-bad config is well-supported as a paved road that prevents operator misconfiguration; support is for HAVING the guarded wrapper (enforcement strength is the open question).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-330_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-331
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate (smoke test) / Weak (as sufficient check)
+  Key source: smoke / build-verification testing; human-in-the-loop & exploratory QA
+  Summary: A manual render check is a legitimate cheap smoke test that catches gross failures; it is NOT supported as a sufficient/reproducible verification on its own (silent on content).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-331_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-332
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate (conditional)
+  Key source: separation of concerns / modularity (Parnas 1972); known-issues release practice
+  Summary: IF the features are truly decoupled, shipping past an isolated orthogonal defect is normal practice — but the support is conditional on the independence being demonstrated, not assumed (both render into the same artifact).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-332_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-361
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Weak-Moderate
+  Key source: abstract/lede convention; progressive disclosure (Nielsen); information scent
+  Summary: A short block is the right granularity for the ORIENTATION tier; weaker for the stronger "stands in for the tradition" reading (summaries are lossy).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-361_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-362
+  Search direction: FOR (supportive)
+  Result: SUPPORTED | Strength: Moderate
+  Key source: node-link annotation convention; clutter management in graph drawing
+  Summary: Nodes are the affordance-correct, clutter-sparing home for descriptive bios; support is for WHERE bios go, not for edges needing no annotation.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-362_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-363
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: editorial sign-off as quality gate; human post-editing of model drafts
+  Summary: Approval genuinely IMPROVES quality; weak for the equation approval=adequate/fair representation of a living tradition (factual accuracy != representational fairness).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-363_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-364
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND | Strength: None
+  Key source: (none; testing literature separates render from content)
+  Summary: No literature supports render-correctness ⇒ content-correctness; a recognized verification fallacy, not a novel claim (no NOVELTY flag).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-364_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-365
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate (conditional) / Weak (upkeep-will-occur)
+  Key source: SSOT currency preconditions; documentation-maintenance (docs rot)
+  Summary: The conditional (payoff requires upkeep) is supported and is itself a warning; the optimistic assumption that upkeep WILL occur is not supported.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-365_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-366
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND | Strength: None
+  Key source: (none; fail-safe design treats docs as advisory only)
+  Summary: No literature endorses a documentation-only caveat as a SUFFICIENT guard for a destructive operation; guard-by-code/idempotency is the recommended approach.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-366_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-367
+  Search direction: FOR (supportive)
+  Result: SUPPORTED | Strength: Moderate-Strong (for details-on-demand)
+  Key source: Shneiderman 1996 (details-on-demand mantra); Nielsen (progressive disclosure)
+  Summary: On-demand pop-ups are the canonical improvement to an overview; support is for the progressive-disclosure STRUCTURE, NOT for the stated "more information = better" rationale.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-367_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-368
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND | Strength: None-Weak
+  Key source: (none; measurement theory makes commensurability a thing to demonstrate)
+  Summary: Nothing supports treating two differently-defined counts as commensurable by default; a difference may be a definitional artifact (same error family as 269/264/262).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-368_for.md
+
+### 15b RETURNS (AGAINST / disconfirmatory)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-328
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Weak-Moderate
+  Key source: SSOT coupling critique; one-source-serving-two-purposes
+  Specific risk: A wiki.md structure refactor silently breaks the pop-up extraction; bio quality hostage to the agents' working-note shape.
+  Summary: SSOT relocates rather than removes the failure mode — drift is replaced by a parse-contract dependency; mitigate with a tested extraction boundary.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-328_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-329
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate-Strong (on the guard)
+  Key source: idempotency principle (Nygard); run-once enforcement frameworks
+  Specific risk: A future contributor or agent reruns the seed and irreversibly clobbers hand-approved bios; only safeguard was memory.
+  Summary: The constraint is correct; relying on memory/convention to enforce it is the anti-pattern — make idempotent / guard-in-code / disarm.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-329_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-330
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Weak-Moderate
+  Key source: unenforced paved-road is bypassable; wrapper/underlying drift
+  Specific risk: A contributor/agent runs generate_visualization.py directly without --summa -> Summa-less build the wrapper would have blocked.
+  Summary: "Only path / direct invocation forbidden" is convention, not code; put the Summa-less guard in the entry point + post-build assertion.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-330_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-331
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Moderate-Strong
+  Key source: limits of manual QA; render-vs-content coverage; "looks right" != "is right"
+  Specific risk: A build with accurate-looking but wrong content (text/counts) passes because it renders.
+  Summary: As a SUFFICIENT gate the visual verify fails (non-reproducible, low-coverage, silent on content); pair with automated content assertions.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-331_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-332
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: asserted-not-verified independence; latent coupling via shared artifact
+  Specific risk: The count gap reflects an extraction bug that also affects which thinkers get pop-ups (shared artifact) — "orthogonal" is then false.
+  Summary: Independence is assumed not demonstrated, and an unexplained gap is an unknown not a benign defect; diagnose before relying on it (likely definitional — 368).
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-332_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-361
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: lossy-summarization / reification critique; audience-relativity of granularity
+  Specific risk: Viewers take the blurb as the tradition; internal diversity/debate erased; traditions read as monolithic.
+  Summary: The block orients but doesn't REPRESENT; frame as orientation with a reachable deeper tier, not as the tradition's definition.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-361_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-362
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: relational-insight primacy in sociograms; edge/tie annotation practice
+  Specific risk: The project-critical information (HOW traditions interact) goes unexplained; sociogram becomes a gallery of actors not a map of interactions.
+  Summary: Node placement is fine, but node-ONLY annotation under-serves a project about tradition interaction; add lightweight tie annotation.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-362_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-363
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Moderate-Strong
+  Key source: auto-generated summary bias; sign-off-as-thin-proxy / automation bias; "whose voice?"
+  Specific risk: Fluent, approved bios that subtly misrepresent/flatten traditions; sole-expert approval = false confidence.
+  Summary: Approval improves quality but != adequacy/fairness for a living tradition; label bios model-drafted/non-authoritative, seek adherent review.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-363_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-364
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Strong
+  Key source: render-vs-content separation (testing fundamentals); inattentional blindness
+  Specific risk: Wrong/inaccurate text or wrong counts ship because the page rendered (cf. the 256-vs-379 gap a glance misses).
+  Summary: render ⇒ content is a category error; add explicit content/fidelity assertions as a SEPARATE required check.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-364_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-365
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Moderate
+  Key source: documentation/data rot; maintenance-contingent benefit decay; bus-factor
+  Specific risk: Summary blocks go stale; pop-ups present outdated bios with full SSOT authority and no second copy to disagree.
+  Summary: Discipline-dependent currency is the rot DEFAULT; add a freshness signal and couple upkeep to routine maintenance rather than memory.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-365_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-366
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Strong
+  Key source: fail-safe / guard-by-code (Nygard); safety hierarchy-of-controls
+  Specific risk: Eventually someone/something reruns the script and irreversibly clobbers bios; only safeguard was a doc sentence.
+  Summary: Documentation is the WEAKEST control; for a destructive script use an engineering control (idempotent/guard/disarm), not memory.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-366_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-367
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Weak-Moderate
+  Key source: minimalism/data-ink (Tufte); feature creep & interaction cost
+  Specific risk: A `?` per node adds clutter/interaction cost; pop-ups occlude structure; "more=better" invites future over-annotation.
+  Summary: The details-on-demand structure is sound; the "more information = better" rationale is denied — keep the gain tied to progressive disclosure.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-367_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-368
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Strong
+  Key source: construct validity / multiple operationalism (Cronbach & Meehl; Campbell & Fiske)
+  Specific risk: A definitional mismatch narrated as a real "drop" (or vice versa) misdiagnoses the system's own state; 332 inherits the misframing.
+  Summary: Differently-defined counts aren't commensurable by default; define each inclusion rule, then classify the gap as definitional vs real (357 family).
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-368_against.md
+
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-06-19
+  Cluster: (4) Guard-and-verify-by-CONVENTION rather than by code/assertion
+  Affected items: ASSUMPTION-329 (MONITOR-354), ASSUMPTION-330 (PREMISE-067 scope guard), ASSUMPTION-331 (MONITOR-355), PRESUMPTION-364 (REVISE-126), PRESUMPTION-366 (REVISE-127, keystone)
+  Common vulnerability: Safety and correctness rest on humans (or agents) behaving perfectly every time — a documented "don't rerun" guard, a convention-only "forbidden" entry point, and a manual visual glance standing in for content verification. None is enforced by code or asserted automatically; each degrades as contributors, time, and automation grow while the safeguard stays flat.
+  Literature basis: Nygard "Release It!" (idempotency/fail-safe); safety hierarchy-of-controls (administrative controls weakest); render-vs-content testing separation; paved-road-enforcement-gap (platform engineering).
+  Risk level: High
+  Recommendation: Two cheap engineering instruments close most of the cluster: (a) ONE code-guard/disarm pass on apply_summaries.py + an entry-point Summa-less guard (closes REVISE-127, hardens PREMISE-067, unblocks MONITOR-354); (b) a content-assertion add-on to regen — expected counts + each `**Summary**` present/non-empty (closes REVISE-126, unblocks MONITOR-355, surfaces the 256-vs-379 definitions for REVISE-128/MONITOR-356). Principle: convert convention/memory/glance guards into enforced controls wherever the failure is destructive or ships incorrect content.
+
+### 15c DISPOSITIONS
+
+DISPOSITION-259:
+  Date: 2026-06-19
+  Item: ASSUMPTION-328
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Strong canonical support (DRY/SSOT) with only a weak-moderate challenge that specifies HOW to do SSOT safely (test the extraction boundary), not WHETHER. The rejected alternative (a duplicated copy) is the canonical drift source.
+  Disposition: INCORPORATE (PREMISE-066)
+  Reasoning: Strong support + weak challenge -> lean INCORPORATE with the challenge folded as a scope guard (tested parse-contract). Adequacy/upkeep questions held separately (MONITOR-357/359, REVISE-125).
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+
+DISPOSITION-260:
+  Date: 2026-06-19
+  Item: ASSUMPTION-329
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate (constraint) / Weak (guard)
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate-Strong (on the guard)
+  Net assessment: The never-rerun CONSTRAINT is correct and well-precedented; the challenge lands entirely on the GUARD mechanism (memory/convention), which the stronger inferred twin PRESUMPTION-366 carries to REVISE.
+  Disposition: MONITOR (MONITOR-354)
+  Reasoning: Surfaced-not-averaged split — monitor the milder stated assumption (the constraint is true), revise the stronger presumption about the guard (REVISE-127). Cheap exit: idempotent/guard-in-code/disarm.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-261:
+  Date: 2026-06-19
+  Item: ASSUMPTION-330
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Strong support for a canonical guarded wrapper; the weak-moderate challenge is that convention-only forbiddance is bypassable — a HOW-to-enforce point, not a WHETHER.
+  Disposition: INCORPORATE (PREMISE-067)
+  Reasoning: Support + weak challenge -> INCORPORATE with scope guard (enforce Summa-less guard in the entry point + post-build assertion). Member of convention-guard cluster (4).
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+
+DISPOSITION-262:
+  Date: 2026-06-19
+  Item: ASSUMPTION-331
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate (smoke test) / Weak (as sufficient check)
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: The visual verify is a legitimate smoke test but is challenged moderately-strongly as a SUFFICIENT gate (non-reproducible, silent on content). The stronger render⇒content inference is the twin PRESUMPTION-364 -> REVISE.
+  Disposition: MONITOR (MONITOR-355)
+  Reasoning: Stated assumption monitored (the activity has value as one layer); the over-reaching inference revised (REVISE-126). Cheap exit: add content assertions; treat visual as one layer.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-263:
+  Date: 2026-06-19
+  Item: ASSUMPTION-332
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate (conditional)
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Separation-of-concerns licenses shipping past an isolated defect, but independence is asserted not demonstrated and both features share one artifact; an unexplained gap is an unknown.
+  Disposition: MONITOR (MONITOR-356)
+  Reasoning: Balanced evidence with an unresolved anomaly -> MONITOR; verify the data-path independence and diagnose 256-vs-379 (likely definitional, REVISE-128) before relying on "doesn't block."
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-264:
+  Date: 2026-06-19
+  Item: PRESUMPTION-361
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: A short block is the right granularity for the orientation tier (supported) but lossy as a "stand-in" for a living tradition (challenged); evidence is genuinely mixed.
+  Disposition: MONITOR (MONITOR-357)
+  Reasoning: Mixed evidence on a representation choice that touches the project's telos -> MONITOR; frame as orientation-with-reachable-depth. Couples PRESUMPTION-363 (REVISE-125).
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-265:
+  Date: 2026-06-19
+  Item: PRESUMPTION-362
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Node placement of bios is conventional and sound, but node-ONLY annotation under-serves a project whose telos is tradition INTERACTION (the ties may carry the insight); roughly balanced.
+  Disposition: MONITOR (MONITOR-358)
+  Reasoning: The placement is defensible; the watch item is whether cross-connections get NO explanation. MONITOR pending a plan to annotate salient ties. Low-medium priority.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-266:
+  Date: 2026-06-19
+  Item: PRESUMPTION-363
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Approval improves quality (weak support) but the equation approval=adequate/fair representation of a LIVING tradition is moderately-strongly challenged (model bias, thin proxy, voice).
+  Disposition: REVISE (REVISE-125)
+  Reasoning: PRESUMPTION + weak support + moderate-strong challenge on a representational-fairness claim -> REVISE. Label bios model-drafted/non-authoritative; claim "accurate enough to display," not "fairly represents."
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-267:
+  Date: 2026-06-19
+  Item: PRESUMPTION-364
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: No support and a strong challenge — render-correctness does not imply content-correctness; a recognized verification fallacy made concrete by the 256-vs-379 gap.
+  Disposition: REVISE (REVISE-126)
+  Reasoning: PRESUMPTION + no support + strong challenge -> REVISE. Strong twin of ASSUMPTION-331 (monitored). Add content/fidelity assertions as a separate required check. Member of convention-guard cluster (4).
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-268:
+  Date: 2026-06-19
+  Item: PRESUMPTION-365
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate (conditional) / Weak (upkeep-will-occur)
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: The conditional (payoff requires upkeep) is supported and is itself a warning; the optimistic "upkeep will occur" is challenged by docs-rot. The dependency is a liability, not a safe assumption.
+  Disposition: MONITOR (MONITOR-359)
+  Reasoning: The risk is real but cheaply mitigable (freshness signal + couple upkeep to routine maintenance) -> MONITOR rather than REVISE. Scope-guard companion to PREMISE-066.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-269:
+  Date: 2026-06-19
+  Item: PRESUMPTION-366
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: No support and a strong challenge — documentation is the weakest control and is insufficient to guard an armed destructive script; latent-error probability grows with contributors/time/automation.
+  Disposition: REVISE (REVISE-127)
+  Reasoning: PRESUMPTION + no support + strong challenge on a DESTRUCTIVE-risk item -> REVISE (medium-high priority). Strong twin of ASSUMPTION-329 (monitored). KEYSTONE of SYSTEMIC-RISK cluster (4). Guard-by-code or disarm.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-270:
+  Date: 2026-06-19
+  Item: PRESUMPTION-367
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong (for details-on-demand)
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: Canonical support for the on-demand/progressive-disclosure structure; only a weak-moderate minimalism challenge to the "more=better" rationale. The "PRESUMPTION+strong-challenge->REVISE" heuristic does NOT trigger (challenge is weak).
+  Disposition: INCORPORATE (PREMISE-068)
+  Reasoning: PRESUMPTION with moderate-strong support + weak challenge -> INCORPORATE-with-guard: incorporate the details-on-demand core, withhold "more=better." First PRESUMPTION-class INCORPORATE in several runs; admitted because support is canonical (Shneiderman) and challenge weak.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+
+DISPOSITION-271:
+  Date: 2026-06-19
+  Item: PRESUMPTION-368
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None-Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: No support and a strong construct-validity challenge — two differently-defined counts aren't commensurable by default; the gap may be a definitional artifact, not a real "drop." Recurrence of the 269/264/262 error.
+  Disposition: REVISE (REVISE-128)
+  Reasoning: PRESUMPTION + no support + strong challenge -> REVISE. Define each inclusion rule before comparing; classify the gap as definitional vs real. Couples MONITOR-356 (332); member of the 357 construct-validity family.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+**Run tally 2026-06-19 (autonomous; Tom not present): 13 dispositioned (DISPOSITION-259..271) from the 2026-06-18 Sociogram thinker-summary cohort. 3 INCORPORATE (PREMISE-066 SSOT single-source bios; PREMISE-067 golden-path guarded regen wrapper; PREMISE-068 details-on-demand pop-ups), 6 MONITOR (MONITOR-354..359), 4 REVISE (REVISE-125..128). AWAITING-REVIEW backlog: 78 -> 82. 1 SYSTEMIC-RISK flag (cluster 4 HIGH: guard-and-verify-by-CONVENTION rather than by code/assertion — keystone REVISE-127). Notable: PREMISE-068 is the first PRESUMPTION-class INCORPORATE in several runs (weak challenge + canonical support). Three monitor/revise twins follow the surfaced-not-averaged pattern (329/366, 331/364, 332/368): the stated constraint monitored, the stronger inferred presumption revised. End-to-end flow: QUEUED-undispositioned 13 -> 0.**

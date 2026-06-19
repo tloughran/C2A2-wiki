@@ -17,8 +17,8 @@ evidence_strength_summary: "Gravity-by-relational-breadth = conceptual/ethical, 
 mind_first_reframe: "The kinds of lust are graded by how widely each ruptures the relational order that binds agents into a whole; continence is effortful top-down override of an unreformed appetite, while temperance is the deeper state in which the generative model itself has been retrained so the conflict no longer arises."
 central_theme_thread: "If the telos is loving unity among perspectives, then the gravity of a disorder tracks how much of the binding order it tears, and maturity is not winning the fight against appetite but no longer having to fight it — the perspective and its appetites jointly aligned to the whole."
 tags: [synthesis, day/195, theme/union-and-control]
-last_qc_at: "2026-06-10T14:29:49"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-18T16:20:33"
+last_qc_outcome: "pass"
 ---
 
 # Day 195 — Kinds of Lust (Contemporary Parallel)

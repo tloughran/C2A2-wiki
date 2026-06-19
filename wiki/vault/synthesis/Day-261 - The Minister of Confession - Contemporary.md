@@ -6,6 +6,7 @@ length_target_words: 1500
 length_actual_words: 744
 length_tier: short
 length_ratio_to_target: 0.5
+length_note: "Compact by design: Suppl. Q.7–8 (nature of confession + its minister) develops the single disclosure-into-a-shared-field-and-delegated-authority motif rather than mirroring articles; substance complete per the five-question review. Part of the 247–265 Supplement under-length band (standing escalation, Tom's expand-vs-accept call)."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (confession as making prediction-error model-available; PRS-06 nested agency / power of the keys)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-06 disclosure within a relational/embodied context)"
@@ -15,7 +16,7 @@ evidence_strength_summary: "Confession-as-externalized-error-representation is f
 mind_first_reframe: "Confession is reframed as externalizing a hidden deviation into a shared field where it becomes jointly correctable (Friston), within a relationship that enables truthfulness (McGilchrist), and the minister as a nested agent through whom a larger authority looses it (Friston PRS-06)."
 central_theme_thread: "The motif is the move from private limitation to shared correction: a perspective-limited agent harbors a deviation it cannot fully see or repair alone and voices it to one who perceives more — the project's claim that limited perspectives need guidance from those who perceive more of the whole, enacted in miniature."
 tags: [synthesis, day/261, theme/disclosure-into-a-shared-field]
-last_qc_at: "2026-06-17T14:29:11"
+last_qc_at: "2026-06-18T02:28:23"
 last_qc_outcome: "rewrote"
 ---
 

@@ -6,12 +6,17 @@ title: The Means of Satisfaction
 summa_ref: Supplement, Suppl. Q.15-16
 duration_seconds: 471
 word_count: 1424
+raw_asr_word_count: 1424
+length_tier: short
 segment_count: 205
 caption_kind: asr
 language: en
 fetched_at: 2026-06-17
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-265 - The Means of Satisfaction - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-19T00:21:15"
+last_qc_outcome: "rewrote"
 tags: [summa, day/265, pars/supplement, q/penance]
 ---
 

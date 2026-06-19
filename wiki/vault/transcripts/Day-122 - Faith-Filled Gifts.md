@@ -15,7 +15,7 @@ fetched_at: 2026-05-20
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-122 - Faith-Filled Gifts - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-10T04:25:52"
+last_qc_at: "2026-06-18T08:23:16"
 last_qc_outcome: "pass"
 tags: [summa, day/122, pars/2, q/8-9]
 ---

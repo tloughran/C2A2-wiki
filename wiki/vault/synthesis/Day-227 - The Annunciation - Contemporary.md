@@ -15,7 +15,7 @@ evidence_strength_summary: "Mary's free act of faith ('more blessed in receiving
 mind_first_reframe: "Mary's fiat is read as the limit case of an agent freely committing its generative model to a more-seeing authority under uncertainty (active inference), elicited by a resonant encounter (Fredrickson), and given representatively for the community."
 central_theme_thread: "The free yes of one limited perspective to the One who sees the whole, given 'on behalf of humankind' — a covenant-act opening the incorporation of the many; the individual complement to Day 226's tradition-level development."
 tags: [synthesis, day/227, theme/free-consent-on-behalf-of-the-community]
-last_qc_at: "2026-06-10T12:27:36"
+last_qc_at: "2026-06-18T18:26:37"
 last_qc_outcome: "pass"
 ---
 

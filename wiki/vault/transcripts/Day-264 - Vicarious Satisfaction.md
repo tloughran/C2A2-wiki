@@ -6,12 +6,17 @@ title: Vicarious Satisfaction
 summa_ref: Supplement, Suppl. Q.13-14
 duration_seconds: 659
 word_count: 1989
+raw_asr_word_count: 1989
+length_tier: short
 segment_count: 285
 caption_kind: asr
 language: en
 fetched_at: 2026-06-17
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-264 - Vicarious Satisfaction - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-19T00:21:15"
+last_qc_outcome: "rewrote"
 tags: [summa, day/264, pars/supplement, q/penance]
 ---
 

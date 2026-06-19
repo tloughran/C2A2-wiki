@@ -868,3 +868,17 @@ OPEN-084 (NEW, 2026-06-16): Are the three PRS-triplet counts — 269 (3D connect
     Transform at each step:
       14a: Raised from the WS2 build's explicit three-count divergence; paired with PRESUMPTION-357 (the one-quantity presumption). Load-bearing on how the system reports its own size.
     Current status: OPEN
+
+OPEN-085 (NEW, 2026-06-18): In the Sociogram regenerated on 2026-06-18 (`wiki_narration.html`, commit `0fdc8ea`), the Summa commentary-node count read ~256, which is LOWER than the ~379 noted in the Summa handoffs — is this a real drop (e.g., the Summa source vault held fewer `Day-NNN` files at regen time, or `sync_vault.sh` had not run), or a sandbox-measurement artifact (the in-session counts were explicitly flagged untrustworthy: the `Summa 2026 in a Year/vault` path did not resolve cleanly from the sandbox, and `Day-NNN` strings also occur in non-Summa C2A2 files)? The `?` pop-up feature is independent of this count (ASSUMPTION-332), so it did not block the push, but the count gap rides inside the published 28MB artifact and is unresolved. This is properly a Summa-pipeline question (where `summa_index.json` and the pace tracker live), not a sociogram-feature one; parked in the sociogram handoff so it is not lost.
+  Arose from: 2026-06-18 "Thinker summaries for sociogram" session (Tom's "shouldn't there be a Summa Day increase in this lot?")
+  Testable via: empirical — recount Summa commentary nodes against the Summa source vault / `summa_index.json` from the Summa context; confirm `sync_vault.sh` state at regen time; reconcile ~256 vs ~379
+  Owner: next Summa-pipeline session + Tom
+  Status: OPEN
+  Related: DECISION-060; ASSUMPTION-332; PRESUMPTION-368 (count commensurability); OPEN-084 / PRESUMPTION-357 (the 269/264/262 construct-divergence pattern; the evening sync also noted a fourth count, 279, from the orchestrator)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the explicit in-session Summa-count interrogation; logged as a cross-project (Summa) item with the assistant's own untrustworthy-count caveat preserved.
+    Current status: OPEN

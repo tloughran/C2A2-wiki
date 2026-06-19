@@ -16,7 +16,7 @@ evidence_strength_summary: "Theological-traditional on demonology proper; specul
 mind_first_reframe: "The order of demons preserves Pseudo-Dionysian gradation by substrate-coupling-depth even as the dispositional state inverts; Q.109's natural-ordering-survives-the-fall claim becomes the contemporary frame of catastrophic-prior-displacement at high substrate-coupling-depth, with substrate-pattern-information transmission preserved but truth-toward-the-good information transmission lost."
 central_theme_thread: "Today's day shows the limit case of perspective-limitation — an agent at the highest substrate-coupling-depth available to a creature whose dispositional state has nonetheless settled into mis-orientation against the loving unity, making clear that orientation is not given by coupling-depth alone and that 'salvation in fear and trembling' must be re-affirmed in dispositional formation."
 tags: [synthesis, day/056, theme/willed-evil, theme/multi-agent-network]
-last_qc_at: "2026-06-10T04:26:07"
+last_qc_at: "2026-06-18T06:26:35"
 last_qc_outcome: "pass"
 ---
 # Day 56 — Contemporary Parallel: *The Order of Demons as Catastrophic Dispositional State at High Substrate-Coupling*

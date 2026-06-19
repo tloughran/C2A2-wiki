@@ -6,6 +6,9 @@ title: Slight Contrition
 summa_ref: Supplement, Suppl. Q.3-5
 duration_seconds: 483
 word_count: 1432
+raw_asr_word_count: 1424
+length_tier: short
+fidelity_checked: true
 segment_count: 211
 caption_kind: asr
 language: en
@@ -13,6 +16,8 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-260 - Slight Contrition - Contemporary]]"
 tags: [summa, day/260, pars/suppl, q/3]
+last_qc_at: "2026-06-18T02:30:20"
+last_qc_outcome: "pass"
 ---
 
 # Day 260 — Slight Contrition

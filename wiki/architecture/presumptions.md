@@ -7215,3 +7215,160 @@ PRESUMPTION-360:
     Transform at each step:
       14b: Inferred from the "concern is resolved" framing set against the day's own unverified premises and the unrun probe (PRESUMPTION-352). Moderate confidence; flagged because it governs whether the view layer should now be built. [inferred]
     Current status: UNTESTED
+
+PRESUMPTION-361:
+  Date surfaced: 2026-06-18
+  Statement: [inferred] A single short `**Summary**` block per node is the right granularity to represent a research tradition to a Sociogram viewer — one mini-bio paragraph stands in for the thinker/tradition.
+  Evidence it was operative: The design went straight to "one Summary block per thinker" (15 briefs + Summa + Traditions concept); the unit of representation was never discussed, only its plumbing (where the text is read from, how it renders).
+  Why it was unstated: too foundational to notice — "a node gets a bio" felt self-evident.
+  Type: structural
+  Related decisions: DECISION-060
+  Testability: testable via literature (summarization adequacy; representing a body of work in a short abstract; granularity of node annotations in network visualization)
+  Risk if wrong: Medium — if a paragraph cannot fairly carry a tradition, the pop-ups present confident but thin proxies as the tradition's public face.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-361
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the unexamined leap to one-Summary-block-per-node; high confidence it was operative, since plumbing was debated but granularity never was.
+    Current status: UNTESTED
+
+PRESUMPTION-362:
+  Date surfaced: 2026-06-18
+  Statement: [inferred] The right carriers of summaries are the 15 thinker nodes + Summa + the Traditions header — i.e., nodes (and a header), not edges, cross-connections, or sub-traditions.
+  Evidence it was operative: Markers were placed only on thinkers / Summa / the Traditions header; no alternative carrier (e.g., a brief on each cross-connection edge, or per-PRS) was raised. "Only Summa among structure groups gets a `?` (no clutter on Master/Architecture/etc.)" was framed as clutter-avoidance, not as a representational choice.
+  Why it was unstated: obvious to participants — nodes are the salient objects, so nodes get the bios.
+  Type: structural
+  Related decisions: DECISION-060
+  Testability: testable empirically / via literature (what carries explanatory weight in a sociogram — nodes vs ties; relational vs entity annotation)
+  Risk if wrong: Low-Medium — the graph's relational content (the cross-connections that are arguably the system's point) carries no on-demand annotation.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-362
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the absence of any edge/sub-tradition alternative; moderate confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-363:
+  Date surfaced: 2026-06-18
+  Statement: [inferred] A model-drafted, human-approved mini-bio adequately and fairly represents a living research tradition to a viewer — the human-approval gate (`approved_summaries.json` / `NEW_BRIEFS_FOR_REVIEW.md`) was treated as sufficient warrant that the brief is right.
+  Evidence it was operative: The briefs were drafted, routed through an approval file, then shipped as the tradition's public face; the question of whether a short bio can represent a tradition (vs. the tradition's own self-description, or its PRS triplets) was not raised — approval stood in for adequacy.
+  Why it was unstated: culturally embedded — "a human signed off, so it's good enough."
+  Type: epistemic / normative
+  Related decisions: DECISION-060
+  Related items: PRESUMPTION-361 (granularity); cross-refs the broader "an agent can represent a tradition" presumption family
+  Testability: testable via literature (expert vs auto-generated summaries; representational adequacy; whose voice represents a tradition)
+  Risk if wrong: Medium — approved-but-thin or subtly skewed bios become the canonical, on-graph characterization of each thinker.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-363
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the approval-as-adequacy move; moderate-high confidence it was operative.
+    Current status: UNTESTED
+
+PRESUMPTION-364:
+  Date surfaced: 2026-06-18
+  Statement: [inferred] "Local visual verify" certifies correctness — i.e., that the marker rendering on the right nodes, pop-ups opening/closing, and no console errors implies the CONTENT is correct (right summary attached to the right thinker; text accurate). Rendering-correctness is presumed to stand in for content-correctness.
+  Evidence it was operative: The named verify checklist is entirely presentational (yellow `?` on the 15 + Summa + Traditions header; click opens/closes; `?` doesn't toggle the checkbox). No step checks that each pop-up shows the correct, accurate brief for that node; passing the visual check was treated as "clear to push."
+  Why it was unstated: too foundational to notice — "if it renders, it's right."
+  Type: methodological
+  Related decisions: DECISION-060
+  Related items: ASSUMPTION-331 (stated twin — "local verify satisfies the constitutional check"); this is its deeper, unstated form. NOT a duplicate: 14a captured the stated gate; 14b surfaces the unexamined render-implies-content inference beneath it.
+  Testability: testable via literature (what visual smoke-tests cover vs miss; render-vs-content verification; need for content/fidelity assertions in generated-artifact QA)
+  Risk if wrong: Medium — a mis-attached or wrong-text brief would pass the visual gate and ship unnoticed.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-364
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the purely-presentational verify checklist; high confidence. Checked against 14a's ASSUMPTION-331 — twinned, not duplicated (stated gate vs unstated render=correct inference).
+    Current status: UNTESTED
+
+PRESUMPTION-365:
+  Date surfaced: 2026-06-18
+  Statement: [inferred] The single-source-of-truth payoff ("revisions flow into the menu on the next regen") presumes the tradition agents (or Tom) will in fact actively maintain the `wiki.md` Summary blocks going forward. The architecture's benefit is contingent on a future maintenance behavior that is asserted, not demonstrated.
+  Evidence it was operative: The "no second copy to drift" benefit (ASSUMPTION-328) only materializes if the canonical copy is kept current; the design banked that benefit while the bios are, today, a one-time seed. "you (or the tradition agents) edit the Summary block" states the intended behavior as if it were established practice.
+  Why it was unstated: obvious to participants — the maintenance loop is the plan, so it was assumed to hold.
+  Type: methodological / scaling
+  Related decisions: DECISION-060
+  Related items: ASSUMPTION-328 (single-source-of-truth, whose value this conditions)
+  Testability: testable empirically (does the maintenance loop actually run? do agents edit bios?) — and via literature on single-source-of-truth payoff depending on upkeep discipline
+  Risk if wrong: Medium — if upkeep lapses, the "living bios" quietly become stale seed text, and the SSOT advantage is notional.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-365
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the gap between the asserted maintenance loop and the present one-time-seed state; moderate confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-366:
+  Date surfaced: 2026-06-18
+  Statement: [inferred] A destructive operation guarded only by a handoff note and human memory is adequately safe — the "edit `wiki.md`, regen, but NEVER rerun `apply_summaries.py`" workflow presumes the never-rerun caveat will be reliably remembered across sessions, contributors, and time, while the destructive seed script remains in the repo, armed.
+  Evidence it was operative: The safeguard against clobbering hand-edits is a "loud caveat" in the runbook/handoff/memory — i.e., documentation — not a code guard (e.g., a refusal-if-wiki.md-already-edited check, or removing/renaming the seed script after use). The risk was named (ASSUMPTION-329) but mitigated by convention, presuming convention suffices.
+  Why it was unstated: culturally embedded — "we wrote it down, so it won't happen."
+  Type: scaling / methodological
+  Related decisions: DECISION-060
+  Related items: ASSUMPTION-329 (stated twin — the never-rerun rule itself). NOT a duplicate: 14a recorded the rule; 14b surfaces the presumption that a documented convention is a sufficient guard for an armed destructive script.
+  Testability: testable via literature (guard-by-convention vs guard-by-code; idempotency and fail-safe design; reliability of documentation-only safeguards as contributor count / time-gap grows)
+  Risk if wrong: Medium-High — one forgetful rerun silently destroys all accumulated hand-edits; the failure mode is invisible until a regen surfaces the reverted text.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-366
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the documentation-only mitigation of a named destructive risk; high confidence. Checked against ASSUMPTION-329 — twinned (the rule vs the presumed sufficiency of a note as its guard).
+    Current status: UNTESTED
+
+PRESUMPTION-367:
+  Date surfaced: 2026-06-18
+  Statement: [inferred] Adding summary pop-ups to nodes improves the Sociogram — more on-demand information on the graph is better. The value of surfacing bios over keeping the graph spare was assumed, not weighed.
+  Evidence it was operative: The feature was pursued as a self-evident improvement; the only restraint discussed was clutter-avoidance ("no clutter on Master/Architecture/etc."), which trims placement but still presumes that more accessible information is the goal. No counter-case (cognitive load, the graph reading as "answered" rather than explored) was raised.
+  Why it was unstated: culturally embedded — "more context = better tool."
+  Type: normative
+  Related decisions: DECISION-060
+  Testability: testable via literature (information density vs minimalism in visualization; progressive disclosure; when added annotation helps vs distracts)
+  Risk if wrong: Low — a feature-level value judgment, easily reversible; surfaced for completeness (normative smuggling: "this should be available" presumes available = better).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-367
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the unweighed "add bios" framing; moderate confidence, low stakes.
+    Current status: UNTESTED
+
+PRESUMPTION-368:
+  Date surfaced: 2026-06-18
+  Statement: [inferred] The two Summa commentary-node counts are commensurable — treating ~256 as "lower than ~379" presumes the regen's ~256 and the handoff's ~379 measure the same population the same way, so a difference reads as a drop rather than a definitional mismatch.
+  Evidence it was operative: The ~256-vs-379 gap was read as a possible "drop" / regression worth a hold — i.e., as one quantity that moved — even as the assistant simultaneously flagged its own sandbox counts as untrustworthy (unresolved vault path; `Day-NNN` strings leaking from non-Summa files). The comparability of the two numbers was assumed in order for "drop" to be the natural framing.
+  Why it was unstated: obvious to participants — two counts of "Summa nodes" were taken to count the same thing.
+  Type: epistemic
+  Related decisions: DECISION-060; OPEN-085 (the count gap itself)
+  Related items: PRESUMPTION-357 / OPEN-084 (the 269/264/262 one-quantity-vs-distinct-constructs pattern, here recurring on the Summa axis; evening sync notes a fourth count, 279, from the orchestrator); ASSUMPTION-332
+  Testability: testable empirically (apply each count's definition; check whether ~256 and ~379 partition the same set) + via literature (construct validity / multiple operationalism; comparing counts across differently-sourced measures)
+  Risk if wrong: Medium — chasing a "drop" that is a definitional artifact wastes effort; conversely, dismissing it as definitional could mask a real Summa-ingest regression.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-368
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the "drop"/regression framing applied to two admittedly-untrustworthy counts; moderate confidence. Recognized as the Summa-axis recurrence of the established 357/OPEN-084 construct-divergence pattern.
+    Current status: UNTESTED

@@ -18,8 +18,8 @@ karpathy_wiki_sources:
   - "traditions/wright/ — Pauline lament tradition; Romans 8 'creation groans'"
 evidence_strength_summary: "Q.37 a.4's claim that sorrow is most harmful to the body is empirically very well supported by modern psychoneuroimmunology — chronic stress/grief mediated through HPA axis, vagal tone, inflammatory markers, telomere shortening; Q.36 a.3's craving-for-unity is metaphysical but resonates with Levin's bioelectric coherence at cellular and tissue scales. Q.37 a.1 moderate-sorrow-as-impetus-to-learn maps onto optimal-precision findings in predictive processing."
 tags: [synthesis, day/079, theme/sorrow-effects, theme/somatic-cost]
-last_qc_at: "2026-06-10T18:26:25"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-18T20:22:43"
+last_qc_outcome: "pass"
 ---
 
 # Day 79 — Sorrowful Effects (Contemporary)

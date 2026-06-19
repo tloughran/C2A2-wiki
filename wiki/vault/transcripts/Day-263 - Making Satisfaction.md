@@ -6,6 +6,9 @@ title: Making Satisfaction
 summa_ref: Supplement, Suppl. Q.11-12
 duration_seconds: 556
 word_count: 1589
+raw_asr_word_count: 1578
+length_tier: short
+fidelity_checked: true
 segment_count: 237
 caption_kind: asr
 language: en
@@ -13,6 +16,8 @@ fetched_at: 2026-06-17
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-263 - Making Satisfaction - Contemporary]]"
 tags: [summa, day/263, pars/supplement, q/penance]
+last_qc_at: "2026-06-18T02:30:22"
+last_qc_outcome: "pass"
 ---
 
 # Day 263 — Making Satisfaction

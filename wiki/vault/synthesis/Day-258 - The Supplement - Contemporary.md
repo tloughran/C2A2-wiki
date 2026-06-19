@@ -16,8 +16,8 @@ evidence_strength_summary: "Distributed authorship completing an unfinished whol
 mind_first_reframe: "The Summa's completion after Aquinas's death by other hands reframes the work's incompleteness as an instance of the central claim — no single perspective completes the whole; wholes are completed by collaborating limited agents cohering around a shared model (Friston PRS-06), the seams of differing authorship marking that coherence is approximated, not guaranteed."
 central_theme_thread: "Finitude is the condition of all minds, even the greatest; loving unity is therefore inherently collaborative — limited perspectives, aware of their need for one another, compose into a larger agent that sees more than any one, the Summa confessing its own thesis."
 tags: [synthesis, day/258, theme/distributed-authorship-under-finitude]
-last_qc_at: "2026-06-17T22:28:21"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-18T02:30:18"
+last_qc_outcome: "pass"
 ---
 
 # Day 258 — The Supplement (Contemporary Parallel)

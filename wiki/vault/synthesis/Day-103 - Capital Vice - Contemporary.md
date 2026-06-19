@@ -16,7 +16,7 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (CROSS-027 Kastrup × Friston Markov blanket; line 772 Levin × Friston metastability collapse)"
 evidence_strength_summary: "Empirical: broaden-and-build under positive emotion (Fredrickson, high); attention narrowing under stress and threat (well-supported across paradigms); metastability collapse as a dynamical signature of pathology (Friston PRS-13, mid). Formal: active-inference account of attractor capture under high precision on threat-priors (formal, mid). Speculative: the precise mapping of the medieval seven onto contemporary attractor basins (speculative but principled). Theological: Wright on the Pauline 'works of the flesh' (Gal 5:19-21) as the same family Aquinas inherits."
 tags: [synthesis, day/103, theme/attractor-collapse, theme/attention-narrowing]
-last_qc_at: "2026-06-10T02:27:09"
+last_qc_at: "2026-06-18T06:26:36"
 last_qc_outcome: "pass"
 ---
 

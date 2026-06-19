@@ -16,8 +16,8 @@ evidence_strength_summary: "Fasting as resource-reallocation / allostatic self-r
 mind_first_reframe: "Fasting is the deliberate down-regulation of a lower predictive appetite so a finite agent can re-weight its scarce attention toward modeling the whole — a self-imposed prediction-error undertaken because the agent's true setpoint lies beyond bodily homeostasis."
 central_theme_thread: "An agent individuated by the limits of its resources cannot attend to everything at once; fasting is the in-via discipline of clearing resource-load so the perspective can widen toward the loving unity it computes toward but cannot yet hold."
 tags: [synthesis, day/191, theme/self-regulation]
-last_qc_at: "2026-06-10T14:29:29"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-18T16:20:31"
+last_qc_outcome: "pass"
 ---
 
 # Day 191 — Fasting (Contemporary Parallel)

@@ -684,3 +684,19 @@ DECISION-059:
     Transform at each step:
       14a: Registered from the WS2 build transcript of the 2026-06-16 attended session ("PRS triplet yield WS-2") and the `prs_yield_snapshot_lines.md` artifact. Build/verify state quoted from the session and the on-disk outputs; push/repo state quoted from the session (repo + live regen not introspectable from this mount).
     Current status: ADOPTED (metric built; view-layer fan applied); PUSH PENDING
+
+DECISION-060:
+  Date: 2026-06-18 (attended)
+  Title: Sociogram thinker-summary pop-ups + "living bios" maintenance workflow
+  Decision: The Sociogram tab now renders a yellow `?` summary marker on all 15 thinkers, on Summa (Habash folded in), and on the Traditions header (concept text); clicking opens a dark click-to-open / click-away-to-close brief pop-up, and the `?` does NOT toggle the node's filter checkbox. Data path is single-source-of-truth: `extract_vault_data.py` pulls each thinker's `wiki.md` `**Summary**` block, with `traditions/_extra_summaries.json` supplying the non-thinker (Summa / Traditions-concept) briefs; `generate_visualization.py` renders the marker + pop-up. Briefs were seeded once via `apply_summaries.py` (from `approved_summaries.json`); thereafter `wiki.md` is the source of truth and the bios are edited there directly ("living bios"), regenerated via the canonical `regen_sociogram.sh` wrapper, locally verified, and pushed — `apply_summaries.py` is never rerun (it would clobber hand-edits).
+  Status: BUILT, locally verified (validate_html.py ALL CHECKS PASSED; 15/15 thinker groups + Summa carry a summary; only Summa among structure groups gets a `?`), and SHIPPED — pushed to `main` as commit `0fdc8ea` on the Mac after local localhost:8080 sign-off (per the constitutional rule, localhost review + push stays with Tom). Surgical staging (no `git add -A`) kept pre-existing untracked clutter out of the public repo.
+  Rationale: Surfaces each tradition's brief on demand inside the graph while keeping one canonical copy of the text (ASSUMPTION-328 — no second copy to drift), routed through the guarded regen wrapper (ASSUMPTION-330) and gated by local visual verify (ASSUMPTION-331).
+  Related: ASSUMPTION-328, 329, 330, 331, 332; PRESUMPTION-361..368; OPEN-085 (Summa ~256-vs-379 node-count gap parked as a Summa-thread item); `wiki/c2a2-wiki-narration/scripts/extract_vault_data.py`, `…/generate_visualization.py`, `wiki/traditions/_extra_summaries.json`, `wiki/traditions/*/wiki.md`, `wiki/wiki_narration.html`
+  NOTE (next round): the recorded resume state is the bio rewrites — edit the `wiki.md` Summary blocks (or `_extra_summaries.json`), regen via `regen_sociogram.sh`, verify, push; do NOT rerun `apply_summaries.py`. The ~256-vs-379 Summa commentary-node question is parked in the handoff (OPEN-085) as a Summa-pipeline item, not a sociogram-feature regression.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Registered from the 2026-06-18 attended build transcript ("Thinker summaries for sociogram") and its shipped commit `0fdc8ea`. Build/verify/push state quoted from the session; repo/live state not introspectable from this mount beyond the mounted file changes confirmed in-session.
+    Current status: ADOPTED (built, verified, shipped)

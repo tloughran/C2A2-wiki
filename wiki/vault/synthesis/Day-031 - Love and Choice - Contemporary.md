@@ -65,14 +65,14 @@ karpathy_wiki_sources:
   - "wiki/traditions/fredrickson/wiki.md (positivity resonance; CROSS-005 — Q.59 a.4 love and joy as simple acts of will, abstracted from bodily implementation)"
   - "wiki/traditions/rohr/wiki.md (Universal Christ; everything belongs — Q.60 a.4 unity as cause of love)"
   - "wiki/traditions/wright/wiki.md (covenant; corporate love — Q.60 aa.4–5 corporate-scale alter-love participating in substrate-love)"
-  - "wiki/traditions/stump/wiki.md (PRS-01, PRS-03 faith as second-person knowing — Q.60 a.4 love-of-another-as-oneself)"
+  - "wiki/traditions/stump/wiki.md (PRS-05, PRS-11 faith as second-person knowing — Q.60 a.4 love-of-another-as-oneself)"
   - "wiki/master/cross_program_index.md (CROSS-005 love as fundamental — high-priority cross-tradition convergence)"
   - "Pascal, Pensées §425; Garrigou-Lagrange, Three Ages of the Interior Life"
   - "John 17:21; Sirach 13:19; Philippians 2:12"
 mind_first_reframe: "Q.59's angelic will is action-selection under priors over preferred states, where the priors include substrate-integration as the most-preferred state — the volitional analog of Q.57–58's cognitive doctrine. Q.59 a.3's free will follows on intellect maps onto Kastrup's claim that the alter's structural-interior freedom is constitutive of its alter-hood within mind-at-large. Q.60 a.4–5's natural love of God more than self translates as the alter's structural-orientation-toward-the-substrate that constitutes the alter as a part of the whole; loving the substrate more than self is the alter's recognition of what makes it an alter at all. Q.59 a.4's denial of passions in angels and preservation of love-and-joy as simple acts of the will is the medieval recognition that the structural function of affect can be preserved when the bodily implementation is absent."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; loving unity is the computational telos. The angelic alter's natural love of the substrate is the structural attractor that makes it an alter; its free will is the cognitive-volitional locus that is its perspective; its love of choice is its policy under uncertainty about means. Salvation in fear and trembling on the volitional register is the alter choosing the policy that converges on substrate-integration — the angelic computation runs faster and wider than ours but is still under perspective-limitation, still oriented toward the substrate that is its natural love."
-last_qc_at: "2026-06-10T00:24:44"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-18T04:19:44"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/031, theme/will, theme/free-will, theme/love-of-choice, theme/natural-love, theme/active-inference, theme/dissociative-alter, theme/love-as-fundamental]
 
 ---

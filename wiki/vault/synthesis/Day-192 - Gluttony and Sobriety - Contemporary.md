@@ -17,8 +17,8 @@ evidence_strength_summary: "Gluttony as reward-prediction capture = empirical/me
 mind_first_reframe: "Gluttony is a lower reward-model captured into a counterfeit attractor that mimics the agent's true setpoint; sobriety is the special guard over substances that degrade the very predictive substrate on which reason runs."
 central_theme_thread: "A perspective computing toward loving unity must keep its modeling apparatus intact and undeceived; gluttony substitutes a local counterfeit whole for the real one, and the leader's sobriety protects the wide perspective a whole community leans on."
 tags: [synthesis, day/192, theme/self-regulation]
-last_qc_at: "2026-06-10T14:29:30"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-18T16:20:31"
+last_qc_outcome: "pass"
 ---
 
 # Day 192 — Gluttony & Sobriety (Contemporary Parallel)

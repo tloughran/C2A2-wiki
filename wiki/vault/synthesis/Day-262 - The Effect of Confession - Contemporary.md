@@ -6,6 +6,7 @@ length_target_words: 1500
 length_actual_words: 742
 length_tier: short
 length_ratio_to_target: 0.49
+length_note: "Compact by design: Suppl. Q.9–10 turns on the single threshold-sufficiency-and-whole-effect motif (attrition suffices; pardon whole, even forgotten sins loosed); the one-to-one parallel is complete without padding. Part of the 247–265 Supplement under-length band (standing escalation, Tom's expand-vs-accept call)."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (threshold-crossing / attrition as minimal sufficient evidence; entirety as complete error-representation)"
   - "traditions/rohr/wiki.md (Universal Christ; whole pardon meeting the whole disclosure)"
@@ -14,7 +15,7 @@ evidence_strength_summary: "Attrition-suffices as threshold-crossing is formal (
 mind_first_reframe: "Attrition suffices because a genuine minimal contrition crosses the threshold into the changed state (Friston) and entirety is complete error-representation (Friston), while the pardon is whole because grace meets the entire honest disclosure with more than its measure (Rohr) — even loosing what the penitent could not represent."
 central_theme_thread: "Paired with Day 260: the whole accepts even an imperfect, perspective-limited turn and gives a whole pardon in return, reaching even the agent's blind spots (forgotten sins loosed) — 'salvation as inclusion' gracious both at its lower bound and beyond the agent's self-knowledge."
 tags: [synthesis, day/262, theme/whole-pardon-whole-disclosure]
-last_qc_at: "2026-06-17T14:29:12"
+last_qc_at: "2026-06-18T02:28:24"
 last_qc_outcome: "rewrote"
 ---
 

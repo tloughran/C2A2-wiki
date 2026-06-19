@@ -6,6 +6,9 @@ title: The Supplement
 summa_ref: Supplement, Suppl. Q.1
 duration_seconds: 782
 word_count: 2236
+raw_asr_word_count: 2234
+length_tier: medium
+fidelity_checked: true
 segment_count: 328
 caption_kind: asr
 language: en
@@ -13,6 +16,8 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-258 - The Supplement - Contemporary]]"
 tags: [summa, day/258, pars/suppl, q/1]
+last_qc_at: "2026-06-18T02:30:18"
+last_qc_outcome: "pass"
 ---
 
 # Day 258 — The Supplement

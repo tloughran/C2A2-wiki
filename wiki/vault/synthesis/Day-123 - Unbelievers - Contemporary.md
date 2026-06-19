@@ -19,7 +19,7 @@ evidence_strength_summary: "Non-coercibility of assent — formal (Friston/Hoffm
 mind_first_reframe: "Assent is internally fixed by an agent's priors and interface (Friston/Hoffman), so Aquinas's 'the intellect and will cannot be determined from the outside' (Q.10 a.8) is simply true of any model-based agent; this vindicates his non-coercion principle and, on his own better argument, forces the project to overrule his death-penalty article (Q.11 a.3) as a moral error, replacing avoid-the-unbeliever with weak-tie engagement that demonstrably builds intellectual humility (Fredrickson)."
 central_theme_thread: "Non-coercibility of assent is the central theme at its hardest angle: you cannot force a perspective to see more than it sees because the limitation is constitutive of the agent, and only the removal of the limitation (the vision of the whole) necessitates assent — which no human authority can administer; so 'working out salvation in fear and trembling' must be free, the computation toward loving unity run from inside each perspective, guided by those who see more but never overridden from outside."
 tags: [synthesis, day/123, theme/unbelief-coercion-toleration]
-last_qc_at: "2026-06-10T04:25:53"
+last_qc_at: "2026-06-18T12:20:04"
 last_qc_outcome: "pass"
 ---
 

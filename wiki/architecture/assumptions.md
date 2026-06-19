@@ -5890,3 +5890,93 @@ ASSUMPTION-327:
     Transform at each step:
       14a: Extracted from the 3D-fix rationale ("deterministic... reproducible... regens won't reshuffle"). Routed LOW — mostly an engineering-integrity commitment; the fidelity question it raises is carried by PRESUMPTION-358. [stated]
     Current status: UNTESTED
+
+ASSUMPTION-328:
+  Date identified: 2026-06-18
+  Statement: A single-source-of-truth data path is preferable for the Sociogram summary pop-ups — the pop-up reads each thinker's brief from the same `wiki.md` `**Summary**` block the tradition agents maintain, "so revisions flow into the menu on the next regen — no second copy to drift." `extract_vault_data.py` was edited to pull the `**Summary**` block per thinker (plus `traditions/_extra_summaries.json` for the non-thinker Summa/Traditions briefs) rather than holding a separate copy of the bios.
+  Context: 2026-06-18 attended "Thinker summaries for sociogram" build session; the `?` summary-popup feature for the Sociogram tab (shipped as commit `0fdc8ea`).
+  Type: architectural
+  Related decisions: DECISION-060 (sociogram summary-popup feature + living-bios workflow)
+  Related items: ASSUMPTION-329 (never-rerun seed); PRESUMPTION-365 ([inferred] payoff presumes active maintenance)
+  Testability: testable via literature (single-source-of-truth / DRY data architecture; avoiding duplicated state to prevent drift; canonical-source patterns)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-328
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit "no second copy to drift" rationale for routing the pop-up through `wiki.md`. Routed LOW-MED — a broadly-accepted data-architecture principle, here applied to bios. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-329:
+  Date identified: 2026-06-18
+  Statement: After the one-time seed, `apply_summaries.py` must NEVER be rerun, because it would clobber hand-edits by overwriting the `wiki.md` Summary blocks from `approved_summaries.json` — "a loud caveat not to rerun `apply_summaries.py` afterward, since it would clobber hand-edits." The seed script is a one-shot whose re-execution is destructive once `wiki.md` becomes the source of truth.
+  Context: 2026-06-18 session; the "living bios" maintenance workflow recorded in the runbook and the handoff (`handoffs/sociogram-thinker-summaries.md`).
+  Type: methodological / architectural
+  Related decisions: DECISION-060
+  Related items: ASSUMPTION-328 (single-source-of-truth); PRESUMPTION-366 ([inferred] guarded only by convention/memory, not code)
+  Testability: testable via literature (idempotency; destructive one-shot migration/seed scripts; guard-by-convention vs guard-by-code; technical-debt of armed destructive tooling left in-repo)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-329
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit never-rerun caveat. Flagged as accumulating technical debt — a one-time seed left in place that silently clobbers hand-edits if rerun; the safeguard is a note, not code. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-330:
+  Date identified: 2026-06-18
+  Statement: `regen_sociogram.sh` is the only supported regeneration path, because it "hardcodes `--summa`, adds the agent layer, and guards against Summa-less builds"; calling `generate_visualization.py` directly is "explicitly forbidden." The canonical wrapper is treated as the golden path that prevents misconfigured (Summa-less) builds.
+  Context: 2026-06-18 session; mid-session correction when preparing the clipboard/runbook command sequence.
+  Type: architectural / methodological
+  Related decisions: DECISION-060; DECISION-059 (PRS build also routed through its own `regen_*` wrapper)
+  Related items: ASSUMPTION-331 (local-verify gate)
+  Testability: testable via literature (golden-path / canonical build wrappers to prevent operator error; convention of forbidding direct entry-point calls; configuration-as-code guards)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-330
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit "only supported regen path … direct call forbidden" correction. Routed LOW — an engineering-integrity convention. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-331:
+  Date identified: 2026-06-18
+  Statement: A manual local visual verify on `localhost:8080` "satisfies the constitutional check," making the build clear to push — "You've done the local verify, which satisfies the constitutional check, so you're clear to push." The named verification is human visual inspection (yellow `?` on the 15 thinkers + Summa + Traditions header; pop-ups open/close; no console errors).
+  Context: 2026-06-18 session; the pre-push gate, per the project's constitutional rule that localhost review + push stays with Tom.
+  Type: methodological
+  Related decisions: DECISION-060
+  Related items: PRESUMPTION-364 ([inferred] twin — rendering-correctness presumed to imply content-correctness)
+  Testability: testable via literature (adequacy of manual/visual QA for generated artifacts; human-in-the-loop verification vs automated checks; what a visual smoke-test does and does not cover)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-331
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit "local verify … satisfies the constitutional check" statement. Its deeper, unstated form (visual render = correct content) is carried by 14b as PRESUMPTION-364. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-332:
+  Date identified: 2026-06-18
+  Statement: The `?` summary-popup feature is independent of Summa node counts, so the unexplained ~256-vs-~379 commentary-node discrepancy in the regenerated `wiki_narration.html` "doesn't block" the pop-up push — "the `?` feature is independent of Summa node counts." Feature independence was offered as warrant to publish the artifact despite a known, unresolved anomaly inside it (the assistant did recommend a brief hold to confirm, but the stated principle was separability).
+  Context: 2026-06-18 session; the push decision, when Tom flagged the missing Summa-day increase and the ~256-vs-379 count gap surfaced.
+  Type: architectural
+  Related decisions: DECISION-060; OPEN-085 (the count discrepancy itself)
+  Related items: PRESUMPTION-368 ([inferred] the two counts are commensurable); OPEN-084 / PRESUMPTION-357 (the 269/264/262 construct-divergence pattern this echoes)
+  Testability: testable via literature (separation of concerns / feature independence; shipping artifacts with known-but-orthogonal defects; coupling via a shared generated file)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-332
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the "independent of Summa node counts … doesn't block" reasoning. Routed MED — the feature ships embedded in a 28MB shared artifact (`wiki_narration.html`) that also carries the unexplained Summa count, so "independence" is a claim about a coupled file. [stated]
+    Current status: UNTESTED

@@ -8552,3 +8552,99 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Priority: MEDIUM (governs whether the view layer should now be built on the new series)
   Search strategy: authority halo of "data-derived"/quantitative provenance; provenance vs validity; premature hardening of downstream artifacts on unvalidated metrics; trace-vs-substance.
+
+---
+
+## 2026-06-18 cohort — Sociogram thinker-summary pop-ups (14a + 14b)
+*Source: 2026-06-18 attended "Thinker summaries for sociogram" build session (commit `0fdc8ea`). 5 ASSUMPTIONs (14a) + 8 PRESUMPTIONs (14b).*
+
+[ASSUMPTION] ASSUMPTION-328: Single-source-of-truth bios — read the pop-up summary from the same `wiki.md` the agents maintain, so "no second copy to drift"
+  Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate) | Disposition: INCORPORATE (PREMISE-066; SSOT/DRY single-source bios; scope guard: extraction boundary must be a tested parse-contract)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: LOW-MEDIUM
+  Search strategy: single-source-of-truth / DRY data architecture; duplicated state and drift; canonical-source patterns for derived views.
+
+[ASSUMPTION] ASSUMPTION-329: The one-time seed `apply_summaries.py` must never be rerun (it would clobber hand-edits from `approved_summaries.json`)
+  Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate-Strong) | Disposition: MONITOR (MONITOR-354; never-rerun constraint sound, guard mechanism at risk — twin of PRESUMPTION-366/REVISE-127)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: idempotency; destructive one-shot migration/seed scripts; guard-by-convention vs guard-by-code; armed-destructive-tooling-left-in-repo as technical debt.
+
+[ASSUMPTION] ASSUMPTION-330: `regen_sociogram.sh` is the only supported regen path (hardcodes `--summa`, guards Summa-less builds); direct `generate_visualization.py` is forbidden
+  Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate) | Disposition: INCORPORATE (PREMISE-067; golden-path regen wrapper; scope guard: enforce Summa-less guard in code, not convention)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: LOW
+  Search strategy: golden-path / canonical build wrappers to prevent operator misconfiguration; forbidding direct entry-point invocation; configuration-as-code guards.
+
+[ASSUMPTION] ASSUMPTION-331: A manual local visual verify (localhost:8080) "satisfies the constitutional check" and clears the build to push
+  Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Moderate-Strong) | Disposition: MONITOR (MONITOR-355; visual verify = smoke test, not a sufficient gate — twin of PRESUMPTION-364/REVISE-126)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: adequacy of manual/visual QA for generated artifacts; human-in-the-loop vs automated verification; coverage of a visual smoke-test.
+
+[ASSUMPTION] ASSUMPTION-332: The `?` feature is independent of Summa node counts, so the unexplained ~256-vs-379 gap doesn't block the push
+  Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-356; independence asserted not verified; diagnose 256-vs-379 gap, cf. PRESUMPTION-368)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: separation of concerns / feature independence; shipping with known-but-orthogonal defects; coupling via a shared generated artifact (`wiki_narration.html`).
+
+[PRESUMPTION] PRESUMPTION-361: A single short `**Summary**` block is the right granularity to represent a tradition (the mini-bio stands in for the tradition)
+  Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-357; short block OK as orientation tier, not as stand-in; couples PRESUMPTION-363)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: summarization adequacy; representing a body of work in a short abstract; granularity of node annotations.
+
+[PRESUMPTION] PRESUMPTION-362: Summaries belong on nodes (15 thinkers + Summa + Traditions header), not on edges/cross-connections or sub-traditions
+  Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-358; node placement sound; edges/cross-connections need annotation given project telos)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW
+  Search strategy: entity vs relational annotation in network visualization; where explanatory weight sits in a sociogram (nodes vs ties).
+
+[PRESUMPTION] PRESUMPTION-363: A model-drafted, human-approved mini-bio adequately/fairly represents a living tradition (approval = adequacy)
+  Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Moderate-Strong) | Disposition: REVISE (REVISE-125; approval != adequacy; label model-drafted / non-authoritative)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: expert vs auto-generated summaries; representational adequacy; whose voice represents a tradition; sign-off as a quality proxy.
+
+[PRESUMPTION] PRESUMPTION-364: Local visual verify certifies correctness — rendering-correctness implies content-correctness (right brief, accurate text)
+  Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-126; render-correctness != content-correctness; add content/fidelity assertions — twin of ASSUMPTION-331)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (twin of ASSUMPTION-331)
+  Search strategy: what visual smoke-tests cover vs miss; render-vs-content verification; need for content/fidelity assertions in generated-artifact QA.
+
+[PRESUMPTION] PRESUMPTION-365: The single-source-of-truth payoff presumes agents/Tom will actively maintain the `wiki.md` Summary blocks going forward
+  Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-359; SSOT payoff contingent on upkeep; add freshness signal; couples ASSUMPTION-328)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: single-source-of-truth payoff conditioned on upkeep discipline; documentation/data staleness when maintenance lapses.
+
+[PRESUMPTION] PRESUMPTION-366: A documentation-only caveat is a sufficient guard for an armed destructive script (never-rerun by memory, not by code)
+  Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-127; doc-only guard insufficient; guard-by-code / disarm — twin of ASSUMPTION-329)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH (twin of ASSUMPTION-329)
+  Search strategy: guard-by-convention vs guard-by-code; idempotency / fail-safe design; reliability of documentation-only safeguards as contributors/time grow.
+
+[PRESUMPTION] PRESUMPTION-367: Adding summary pop-ups improves the Sociogram (more on-demand information = better)
+  Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate) | Disposition: INCORPORATE (PREMISE-068; details-on-demand / progressive disclosure; scope guard: withhold 'more=better' generalization)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW
+  Search strategy: information density vs minimalism in visualization; progressive disclosure; when annotation helps vs distracts.
+
+[PRESUMPTION] PRESUMPTION-368: The two Summa counts (~256 vs ~379) are commensurable, so the difference reads as a "drop" not a definitional mismatch
+  Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: NO-SUPPORT-FOUND (None-Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-128; differently-defined counts not commensurable; define inclusion rules — 357 construct-validity family)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: construct validity / multiple operationalism; comparing counts across differently-sourced measures; when a difference is a definitional artifact (cf. 269/264/262, PRESUMPTION-357).

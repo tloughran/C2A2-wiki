@@ -70,15 +70,15 @@ karpathy_wiki_sources:
   - "wiki/traditions/wolfram/wiki.md (PRS-06 ruliad — Q.62 a.9 beatitude as ruliad-fixed-point)"
   - "wiki/traditions/levin/wiki.md (PRS-03 morphological attractor; cognitive light cones — Q.62 a.6 gradient of grace tracks gradient of natural scope)"
   - "wiki/traditions/hoffman/wiki.md (PRS-03 fitness-tuned interface — Q.62 a.7 icons lifted, alter remains)"
-  - "wiki/traditions/stump/wiki.md (PRS-01, PRS-03 faith as second-person knowing; second-personal union — Q.62 a.8 cannot-sin-in-beatitude as policy-space convergence)"
+  - "wiki/traditions/stump/wiki.md (PRS-05, PRS-11 faith as second-person knowing; second-personal union — Q.62 a.8 cannot-sin-in-beatitude as policy-space convergence)"
   - "wiki/traditions/rohr/wiki.md (Universal Christ; order-disorder-reorder — Q.62 a.7 grace perfects nature)"
   - "wiki/traditions/wright/wiki.md (covenant; huiothesia adoption — Q.62 a.4 merit by adoption)"
   - "wiki/master/cross_program_index.md (CROSS-001 substrate-independence; CROSS-005 love as fundamental)"
   - "John Paul II Baltimore homily 1995; John 8:34; Proverbs 4:18; Romans 8:17"
 mind_first_reframe: "Q.62 a.5's one-act-of-charity-fixing-eternally is the autopoietic limit at angelic scope: an alter operating in non-discursive mode (Day 30 Q.58 a.3) has a generative model wide enough that one well-formed action-selection covers its entire policy-space. Q.62 a.2's grace-required-for-substrate-direct-mode is the substrate-initiated mode-shift the local agent cannot effect from intra-alter resources alone. Q.62 a.6's grace-tracks-natural-gifts maps onto cognitive-light-cone scope: agents at higher organizational complexity participate in larger goal-state-patterns. Q.62 a.7's grace-perfects-nature is the icons-lifted-but-alter-remaining limit case Day 7 Q.12 a.5 reached; Q.62 a.8's cannot-sin-in-beatitude is the alter's policy-space converging on substrate-coherence such that incoherent policies are no longer within reach. Q.62 a.9's beatitude-does-not-advance is the limit's status as a limit, not a process. All translations are structural-philosophical."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; loving unity is the computational telos. Day 32 names the attainment shape: at the angelic mode, one act of charity secures the telos because the mode is non-discursive and the act covers its own policy-space; real freedom at beatitude is policy-space convergence on substrate-coherence rather than libertarian power-to-choose-otherwise. The gradient of natural gifts is preserved in the gradient of grace and glory because the substrate's structural priors are one coherent pattern. The angelic alter at beatitude is at-the-telos; the embodied alter is en route, computing under fear-and-trembling toward the same substrate-integration."
-last_qc_at: "2026-06-10T00:24:44"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-18T04:19:45"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/032, theme/beatitude, theme/grace, theme/merit, theme/heavenly-freedom, theme/autopoietic-limit, theme/cognitive-light-cone, theme/non-discursive]
 
 ---

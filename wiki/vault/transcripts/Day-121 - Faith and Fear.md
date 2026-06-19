@@ -15,8 +15,8 @@ fetched_at: 2026-05-20
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-121 - Faith and Fear - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-10T00:24:56"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-18T08:23:15"
+last_qc_outcome: "pass"
 tags: [summa, day/121, pars/2, q/6-7]
 ---
 

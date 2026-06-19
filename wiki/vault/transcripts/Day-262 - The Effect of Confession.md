@@ -6,6 +6,9 @@ title: The Effect of Confession
 summa_ref: Supplement, Suppl. Q.9-10
 duration_seconds: 442
 word_count: 1282
+raw_asr_word_count: 1272
+length_tier: short
+fidelity_checked: true
 segment_count: 194
 caption_kind: asr
 language: en
@@ -13,6 +16,8 @@ fetched_at: 2026-06-17
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-262 - The Effect of Confession - Contemporary]]"
 tags: [summa, day/262, pars/supplement, q/penance]
+last_qc_at: "2026-06-18T02:30:22"
+last_qc_outcome: "pass"
 ---
 
 # Day 262 — The Effect of Confession
