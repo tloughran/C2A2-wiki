@@ -17,8 +17,8 @@ evidence_strength_summary: "Shamefacedness as social-attestation self-regulation
 mind_first_reframe: "Shamefacedness is the social-attestation arm of self-regulation — an intersubjective coupling steering the agent away from rupturing its load-bearing relationships — and onestum is clarity: an individuated perspective become transparent to the whole it expresses, so that 'the idea of man' shows through."
 central_theme_thread: "Onestum is the in-via face of the central claim that when a perspective's limitations are cleared the simple whole is seen — spiritual beauty is a perspective on its way to transparency, and shame is the early social signal that keeps that clearing on course."
 tags: [synthesis, day/190, theme/clarity-and-the-whole]
-last_qc_at: "2026-06-11T02:29:09"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-19T04:20:08"
+last_qc_outcome: "pass"
 ---
 
 # Day 190 — Beauty & Disgrace (Contemporary Parallel)

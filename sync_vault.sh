@@ -10,7 +10,9 @@
 # Pipeline (agent handoff):
 #   Progress agent adds new Day-NNN transcript + synthesis to Summa 2026 vault
 #   → this script rsyncs them into wiki/vault/
-#   → reindex_vault.py scans frontmatter and marks new days available=true in summa_index.json
+#   → build_index.py (canonical, in the Summa vault) rebuilds summa_index.json
+#     from _index/Days.md + the Leonine/Supplement skeleton, then we copy it
+#     forward into wiki/vault/refs/
 #   → git commit + push makes them live on GitHub Pages
 
 set -euo pipefail
@@ -18,7 +20,7 @@ set -euo pipefail
 SUMMA="$HOME/Documents/Claude/Projects/Summa 2026 in a Year/vault"
 WIKI="$HOME/Documents/Claude/Projects/RC Karpathy Wiki Project/wiki/vault"
 REPO="$HOME/Documents/Claude/Projects/RC Karpathy Wiki Project"
-REINDEX="$REPO/scripts/reindex_vault.py"
+BUILD_INDEX="$SUMMA/refs/build_index.py"   # canonical index builder (Days.md-aware, Supplement-aware)
 LOG="$REPO/sync_vault.log"
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOG"; }
@@ -36,18 +38,29 @@ rsync -a --checksum --delete \
 
 log "rsync complete"
 
-# ── 2. Reindex: scan vault files → update summa_index.json availability ───────
-# This is the agent handoff point: the progress pipeline adds new Day-NNN files;
-# reindex_vault.py detects them via frontmatter and activates them in the index.
-log "Running reindex_vault.py…"
-python3 "$REINDEX" "$WIKI" 2>>"$LOG" | tee -a "$LOG"
-
-# Also copy the updated index back to the source Summa vault for consistency
-cp "$WIKI/refs/summa_index.json" "$SUMMA/refs/summa_index.json"
-log "Index synced back to source vault"
+# ── 2. Build the canonical index (single source of truth) ────────────────────
+# build_index.py is the ONE index builder: it parses _index/Days.md + the
+# hardcoded Leonine/Supplement skeleton and scans the vault for availability
+# (including Supplementum Q.1-99). reindex_vault.py is RETIRED — it lacked
+# Supplement coverage and over-claimed availability, disagreeing with
+# build_index and ping-ponging via the old wiki→summa back-copy. We build in
+# the Summa vault (where Days.md lives), then copy FORWARD into wiki/ so the
+# data direction is uniformly Summa → wiki.
+log "Building canonical index (build_index.py)…"
+python3 "$BUILD_INDEX" --vault "$SUMMA" 2>>"$LOG" | tee -a "$LOG"
+cp "$SUMMA/refs/summa_index.json" "$WIKI/refs/summa_index.json"
+cp "$SUMMA/refs/index_summary.md" "$WIKI/refs/index_summary.md"
+log "Canonical index built in Summa, copied → wiki"
 
 # ── 2. Commit and push only if git sees changes ──────────────────────────────
 cd "$REPO"
+
+# Clear stale git locks before any git write. A crashed/interrupted git process
+# (or a sandbox run that couldn't unlink) leaves .git/index.lock behind, which
+# aborts the commit with "Unable to create index.lock: File exists" — exactly
+# the failure that silently dropped the 2026-06-18 push. Safe to remove here:
+# this script is the only scheduled writer of wiki/vault/, runs single-threaded.
+rm -f "$REPO/.git/index.lock" "$REPO/.git/refs/heads/main.lock" 2>/dev/null || true
 
 if git diff --quiet HEAD -- wiki/vault/ 2>/dev/null && \
    git ls-files --others --exclude-standard wiki/vault/ | grep -q .; then

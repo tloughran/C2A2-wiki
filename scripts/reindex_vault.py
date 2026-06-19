@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
 """
+DEPRECATED (2026-06-19) — RETIRED FROM THE PIPELINE. Do not call from sync_vault.sh,
+the daily batch, or the janitor. The canonical index builder is now
+`Summa 2026 in a Year/vault/refs/build_index.py`, which sync_vault.sh runs and copies
+forward into wiki/vault/refs/. This script is kept only for reference/forensics.
+
+Why retired: it only FLIPS availability flags on pre-existing entries (it cannot add
+new questions, so it never covered the Supplement), and it marked availability more
+liberally than build_index — the two disagreed (2550 vs 2094) and ping-ponged via the
+old wiki→summa back-copy. build_index.py parses _index/Days.md + the full Leonine +
+Supplement skeleton and is the single source of truth.
+
 reindex_vault.py — Scans vault transcripts/synthesis and updates summa_index.json
 in-place so that any newly-added days are marked available=true with correct paths.
 

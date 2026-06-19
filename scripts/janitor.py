@@ -230,7 +230,7 @@ def check_reindexer_freshness():
         findings.append(Finding(
             "reindexer_freshness", "Summa 2026 in a Year/vault/refs/summa_index.json",
             f"Day-{d:03d} synthesis exists but not in index", "warn",
-            note="run scripts/reindex_vault.py",
+            note="rebuild via build_index.py (canonical) or run sync_vault.sh",
         ))
     return findings
 

@@ -20,8 +20,8 @@ evidence_strength_summary: "Hebrews 11:1 read as joint cognitive-volitional stat
 mind_first_reframe: "Charity-as-form-of-faith is, under mind-monism, the active de-dissociation of the alter from its ground — what makes the held cognitive structure operative as a real relational coupling between alter and ground; Levin's empirical re-grounding of form licenses the strong hylomorphic reading, and positivity resonance gives the measurable biology."
 central_theme_thread: "The lifeless/living distinction is the central claim at the personal level — faith provides the cognitive structure for cooperation; charity makes the cooperation operative; without charity the agent has the map but not the journey toward the loving unity that is the computational telos."
 tags: [synthesis, day/120, theme/faith, theme/charity, theme/form]
-last_qc_at: "2026-06-11T04:22:06"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-19T06:30:58"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 120 — Who Has Faith (Contemporary Parallel)
@@ -42,7 +42,7 @@ The connected P: Aquinas insists on the strong hylomorphic reading — charity i
 
 ## Resource
 
-The Stump-tradition wiki (CROSS-005 in the master index) marks the convergence: love as a fundamental category in Fredrickson, Stump, and Kastrup. Tom Loughran's PRS-form record of Stump's program (PRS-05, PRS-13) reads charity as second-person knowing — the kind of knowing that obtains between persons mutually open to each other. Charity is not, on this reading, an emotion or sentiment laid on top of faith. It is the relational structure that makes faith function as relational knowing rather than information-holding.
+The Stump-tradition wiki (CROSS-005 in the master index) marks the convergence: love as a fundamental category in Fredrickson, Stump, and Kastrup. Tom Loughran's PRS-form record of Stump's program (PRS-05 union; PRS-11 Franciscan/second-person knowing) reads charity as second-person knowing — the kind of knowing that obtains between persons mutually open to each other. Charity is not, on this reading, an emotion or sentiment laid on top of faith. It is the relational structure that makes faith function as relational knowing rather than information-holding.
 
 Fredrickson's positivity resonance supplies the biological substrate. Love is a biophysiological event: vagal coupling, oxytocin signaling, neural synchrony between agents. Fredrickson's Love 2.0 establishes that love is measurable, durable, cultivable. When Aquinas says charity is the form of faith, the contemporary parallel can say: the cognitive habit of faith becomes alive — operative in the agent's actual cooperation with the wider mind — when the agent's biology and orientation are configured in the positivity-resonance mode that constitutes lived relational coupling. Charity is what makes faith a *relation* rather than a *representation*.
 
@@ -76,7 +76,7 @@ The lifeless/living distinction is precisely where the project's central claim i
 
 ## Bridges
 
-- *Stump CROSS-005 + PRS-13 (Tom Loughran's PRS-form record of Stump's relational reading of charity-as-second-person-knowing)* — charity as the relational structure that makes faith function as knowing-another rather than information-holding. (Philosophical; high.)
+- *Stump CROSS-005 + PRS-11 (Tom Loughran's PRS-form record of Stump's relational reading of charity-as-second-person-knowing)* — charity as the relational structure that makes faith function as knowing-another rather than information-holding. (Philosophical; high.)
 - *Fredrickson positivity resonance / Love 2.0* — biological substrate of charity; what makes faith alive has measurable correlates. (Empirical; high.)
 - *Levin morphogenetic teleology + CROSS-008* — empirical re-grounding of "form" as real, located, causally efficacious; licenses the strong hylomorphic reading of "charity as form of faith." (Empirical/philosophical.)
 - *Hoffman interface theory* — *fides informis* read as cognitive presence with low precision-weighting; explains the lifeless-but-real asymmetry. (Formal.)

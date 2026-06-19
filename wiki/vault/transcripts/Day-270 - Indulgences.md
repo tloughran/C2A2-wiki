@@ -6,12 +6,17 @@ title: Indulgences
 summa_ref: Supplement, Suppl. Q.25-26
 duration_seconds: 781
 word_count: 2175
+raw_asr_word_count: 2175
+length_tier: medium
 segment_count: 327
 caption_kind: asr
 language: en
 fetched_at: 2026-06-18
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-270 - Indulgences - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-19T02:27:27"
+last_qc_outcome: "pass"
 tags: [summa, day/270, pars/supplement, q/25-26]
 ---
 

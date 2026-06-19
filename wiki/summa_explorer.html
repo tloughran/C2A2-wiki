@@ -467,12 +467,13 @@ html, body {
 ═══════════════════════════════════════════ */
 const VAULT_BASE = './vault';   /* vault/ lives alongside this file in the repo */
 
-const PART_ORDER = ['I', 'I-II', 'II-II', 'III'];
+const PART_ORDER = ['I', 'I-II', 'II-II', 'III', 'Suppl'];
 const PART_META  = {
   'I':     { name: 'Prima Pars',        roman: 'I'     },
   'I-II':  { name: 'Prima Secundae',    roman: 'I-II'  },
   'II-II': { name: 'Secunda Secundae',  roman: 'II-II' },
   'III':   { name: 'Tertia Pars',       roman: 'III'   },
+  'Suppl': { name: 'Supplementum',      roman: 'Suppl' },
 };
 
 /* ═══════════════════════════════════════════
@@ -482,7 +483,7 @@ var landingHTML     = '';   // populated by buildLandingHTML() after index loads
 var vaultBase       = null;
 var indexData       = {};   // ref → entry
 var treeData        = {};   // partCode → { name, questions: { n → {…} } }
-var partOpen        = { 'I': true, 'I-II': false, 'II-II': false, 'III': false };
+var partOpen        = { 'I': true, 'I-II': false, 'II-II': false, 'III': false, 'Suppl': false };
 var qOpen           = {};   // 'I.Q1' → bool
 var selectedRef     = null;
 var currentMode     = 'transcript';
@@ -832,7 +833,7 @@ function renderTree() {
     container.innerHTML =
       '<div style="padding:20px 16px;color:#555;font-size:11px;line-height:1.8">' +
       'Index loaded (' + Object.keys(indexData).length + ' entries) but no parts matched.<br>' +
-      'Expected part codes: I, I-II, II-II, III<br>' +
+      'Expected part codes: I, I-II, II-II, III, Suppl<br>' +
       'Found: <code style="font-size:10px">' + esc(foundKeys) + '</code>' +
       '</div>';
   }

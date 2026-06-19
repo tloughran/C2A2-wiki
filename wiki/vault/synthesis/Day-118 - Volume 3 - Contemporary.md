@@ -21,8 +21,8 @@ evidence_strength_summary: "Merit as recursive divine self-gift: theological. Ch
 mind_first_reframe: "Merit is the agent-alter's contributive participation in the form of the larger composite (covenant people / body of Christ) that the embedding system is constituting through the agents; faith is the first virtue the installed wider prior makes available, the cognitive-affective state in which the alter is oriented toward the wider mind it cannot directly perceive."
 central_theme_thread: "Merit ramifies the central claim into community — loving unity is computed not just in the individual but in the form being built across individuals; faith is the entry condition; the cycle runs from installed prior through cooperative action to a real composite that includes its contributors."
 tags: [synthesis, day/118, theme/merit, theme/faith, theme/transition]
-last_qc_at: "2026-06-11T16:22:38"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-19T17:16:12"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 118 — Volume 3: Merit and the Opening of Faith (Contemporary Parallel)
@@ -53,7 +53,7 @@ Kastrup's analytic idealism re-frames the underlying ontology. The merit cycle A
 
 For faith: Hoffman's interface theory gives faith a clean reading. Faith's formal object is the First Truth — the underlying reality the interface compresses — under conditions where the interface cannot directly perceive that reality. Faith is the agent's epistemic relation to what its interface cannot deliver but which the interface's existence presupposes. Augustine's "to think with assent" captures both halves: the cognitive engagement (thinking) and the orientation-of-will (assent) that together constitute the agent's holding-onto-First-Truth across the interface gap.
 
-PRS-13 in the Stump-tradition wiki (Tom's record of Stump's "second-first-language" framing of faith as knowledge-of-persons) is the philosophical move here. Faith is not propositional belief about a remote object; it is the kind of knowing that obtains between persons in mutual openness. The shift is from faith-as-information-state to faith-as-relational-state, while keeping faith's intellectual character.
+PRS-11 in the Stump-tradition wiki (Tom's record of Stump's second-person, non-propositional "Franciscan knowledge" framing of faith as knowledge-of-persons) is the philosophical move here. Faith is not propositional belief about a remote object; it is the kind of knowing that obtains between persons in mutual openness. The shift is from faith-as-information-state to faith-as-relational-state, while keeping faith's intellectual character.
 
 ## Solution (proposed, speculative)
 

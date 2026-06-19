@@ -6,12 +6,17 @@ title: Absolution of Excommunication
 summa_ref: Supplement, Suppl. Q.23-24
 duration_seconds: 333
 word_count: 988
+raw_asr_word_count: 988
+length_tier: short
 segment_count: 160
 caption_kind: asr
 language: en
 fetched_at: 2026-06-18
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-269 - Absolution of Excommunication - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-19T02:27:26"
+last_qc_outcome: "pass"
 tags: [summa, day/269, pars/supplement, q/23-24]
 ---
 

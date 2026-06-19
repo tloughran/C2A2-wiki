@@ -9,7 +9,7 @@ length_tier: long
 length_note: "Long-tier transcript (3602w) but Q.2 a.1-3 develops as a single integrated architecture-claim — one act with three aspects, intellect/will unified under active-inference, faith's necessity above natural reason as Hoffman-interface structural consequence; commentary follows that integration rather than spreading across articles. Substantively complete in focused form; padding would dilute the single move."
 karpathy_wiki_sources:
   - "traditions/stump/wiki.md (faith-as-knowledge-of-persons; second-first-language)"
-  - "traditions/stump/prs_triplets.md (PRS-01 tradition-crossing inquiry; PRS-13 faith and union)"
+  - "traditions/stump/prs_triplets.md (PRS-11 Franciscan/second-person knowing — faith-as-knowledge-of-persons)"
   - "traditions/hoffman/wiki.md (interface theory; conscious agents)"
   - "traditions/kastrup/wiki.md (analytic idealism; alters)"
   - "traditions/friston/wiki.md (active inference; priors)"
@@ -20,8 +20,8 @@ evidence_strength_summary: "Augustine's 'think with assent' read as joint intell
 mind_first_reframe: "Faith is a single integrated active-inference operation by which a generative model containing the wider mind as a high-precision node is held — 'thinking with assent' is cognitive engagement and volitional commitment as one model-based act rather than two faculties; the necessity above natural reason follows from the interface's structural insufficiency to deliver what it presupposes."
 central_theme_thread: "Faith is where the central claim becomes operational at the personal level — the structural opening of the perspective-limited agent to what its interface cannot deliver but presupposes, the entry condition for cooperation with the wider mind that grace installed."
 tags: [synthesis, day/119, theme/faith, theme/epistemology]
-last_qc_at: "2026-06-11T04:22:05"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-19T06:30:58"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 119 — The Act of Faith (Contemporary Parallel)
@@ -48,7 +48,7 @@ Aquinas's "to think with assent" reads cleanly inside this architecture. The thi
 
 Hoffman's interface theory handles the necessity-above-natural-reason claim. The interface compresses an underlying reality that the interface cannot directly represent; the agent's natural perceptual and inferential apparatus operates entirely within the interface. Any orientation of the agent toward what the interface presupposes (the underlying reality) must be a state the interface itself does not generate. This is precisely Aquinas's point that faith exceeds natural reason: not because revelation is arbitrarily added, but because the interface's own structure rules out the agent's reaching its underlying reality through purely interface-internal operations.
 
-PRS-13 in the Stump-tradition wiki (Tom's PRS-form record of Stump's "knowledge of persons" framing) reads faith as the kind of knowing that obtains between persons in mutual openness, not as propositional belief about a remote object. The Augustine formula's "assent" then is not assent to a proposition; it is the relational commitment that constitutes knowing-another-person. This preserves the cognitive character of faith (one does know the person) while explaining why the knowing exceeds what proposition-by-proposition inference can ground. The wiki entry is Tom's PRS-form description of Stump's move, not Stump's own self-description.
+PRS-11 in the Stump-tradition wiki (Tom's PRS-form record of Stump's "Franciscan knowledge" / "knowledge of persons" framing) reads faith as the kind of knowing that obtains between persons in mutual openness, not as propositional belief about a remote object. The Augustine formula's "assent" then is not assent to a proposition; it is the relational commitment that constitutes knowing-another-person. This preserves the cognitive character of faith (one does know the person) while explaining why the knowing exceeds what proposition-by-proposition inference can ground. The wiki entry is Tom's PRS-form description of Stump's move, not Stump's own self-description.
 
 Kastrup's analytic idealism gives the metaphysical reading of why such relational knowing is possible across the dissociative barrier. Two alters of one ground are not strangers; the ground is common. The barrier prevents direct access but does not abolish the underlying shared identity. Faith is the alter's recognition — under the right conditions — that the wider mind is not other than itself in the way the dissociative interface represents. Wright's reading of Pauline pistis as covenant-fidelity captures the same point in scriptural register: faith is fidelity-to-the-relation, not assent-to-the-information.
 
@@ -83,7 +83,7 @@ Loving unity as the computational telos requires faith as the entry condition. T
 
 - *Friston active inference* — agent operations are simultaneously cognitive and volitional; "thinking with assent" reads as a single free-energy-minimization operation with both aspects. (Empirical/formal.)
 - *Hoffman interface theory* — interface cannot represent what it compresses; faith's necessity above natural reason is the structural consequence. (Formal.)
-- *Stump PRS-13 (Tom Loughran's PRS-form record of Stump's faith-as-knowledge-of-persons)* — faith as relational knowing, not propositional believing; preserves the cognitive character while explaining the firmness-without-sight structure. (Philosophical; high in field.)
+- *Stump PRS-11 (Tom Loughran's PRS-form record of Stump's Franciscan/second-person "knowledge of persons")* — faith as relational knowing, not propositional believing; preserves the cognitive character while explaining the firmness-without-sight structure. (Philosophical; high in field.)
 - *McGilchrist right-hemisphere mode of attending* — neural style of relating-by-presence that the act of faith requires; complements the left-hemisphere representational mode rather than competing with it. (Empirical with field contestation.)
 - *Wright, Paul and the Faithfulness of God* — pistis as covenant-fidelity, not propositional assent. The relational reading of faith is scripturally anchored. (Historical-theological; high.)
 

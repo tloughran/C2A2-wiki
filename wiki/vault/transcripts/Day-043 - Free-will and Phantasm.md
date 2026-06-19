@@ -15,7 +15,7 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-043 - Free-will and Phantasm - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-10T20:29:28"
+last_qc_at: "2026-06-19T08:20:26"
 last_qc_outcome: "rewrote"
 render_pass: auto-catchup-2026-05-04  # auto-rendered; QC pass should add Q.N/article headers, polish prose, write Notes
 tags: [summa, day/043, pars/I]
@@ -26,7 +26,7 @@ tags: [summa, day/043, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 43 of 308.
 > Summa reference: *Prima Pars, Q.83 + Q.84*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae; a Maria press -> Ave Maria Press (QC sweep 2026-06-10). This is an auto-rendered initial pass — QC agent or human editor must add proper `### Q.N - title` and `**Article M - title**` section headers, polish prose, write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae; a Maria press -> Ave Maria Press (QC sweep 2026-06-10); "repetitive" (power/faculties) -> "appetitive" (technical-term mishearing, Thomistic *vis appetitiva*); coer -> coerce (QC sweep 2026-06-19). This is an auto-rendered initial pass — QC agent or human editor must add proper `### Q.N - title` and `**Article M - title**` section headers, polish prose, write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
@@ -50,7 +50,7 @@ tags: [summa, day/043, pars/I]
 
 [00:03:59] causes he does not deprive their actions of being voluntary but rather is he the cause of this very thing in them for he operates in each thing according to its own nature so when I move my hand that action for sure must find its ultimate origin in God that was discussed in episode two on the five proofs for God but because God acts by giving being and
 
-[00:04:25] actuality to my intellect and my will he does not coer them he enables them and he enables me to act in precisely that manner in which he made me to act which is voluntarily as St Thomas will say interpreting the verse in Jeremiah which reads the way of a man is not his neither is it in a man to walk St Thomas will say man's way is said not to be his
+[00:04:25] actuality to my intellect and my will he does not coerce them he enables them and he enables me to act in precisely that manner in which he made me to act which is voluntarily as St Thomas will say interpreting the verse in Jeremiah which reads the way of a man is not his neither is it in a man to walk St Thomas will say man's way is said not to be his
 
 [00:04:51] in the execution of his choice wherein he may be impeded whether he will or not the choice itself however is in us but presupposes the help of God article two whether Free Will is a power the things man can do his faculties or Powers such as the power to see hear think as we have learned are distinguished by their
 
@@ -58,13 +58,13 @@ tags: [summa, day/043, pars/I]
 
 [00:05:46] the reason for that is that the will is necessarily inclined to happiness like a triangle necessarily has three sides but it is free in the choice voice of the means to that end as St Thomas says although Free Will liberum arbitrium IE free judgment in its strict sense denotes an act in the common manner of
 
-[00:06:13] speaking we call Free Will that which is the principle of the act by which man judges freely those things which we are naturally inclined are not subject to Free Will as we have said of the desire of happiness but the free will is indifferent to Good and Evil Choice article three whether Free Will is an repetitive power we have the
+[00:06:13] speaking we call Free Will that which is the principle of the act by which man judges freely those things which we are naturally inclined are not subject to Free Will as we have said of the desire of happiness but the free will is indifferent to Good and Evil Choice article three whether Free Will is an appetitive power we have the
 
-[00:06:39] apprehensive powers like sight touch taste of the sensual faculties and understanding and intellectual faculty we also have repetitive faculties we desire we fear we enjoy and the sensual faculties we also will which is an intellectual faculty so in what C ategory does free will fall in St Thomas responds we say that we have a free will
+[00:06:39] apprehensive powers like sight touch taste of the sensual faculties and understanding and intellectual faculty we also have appetitive faculties we desire we fear we enjoy and the sensual faculties we also will which is an intellectual faculty so in what C ategory does free will fall in St Thomas responds we say that we have a free will
 
-[00:07:05] because we can take one thing while refusing another and this is to choose the reason of this is because the proper object of choice is the means to the end and this as such is in the nature of that good which is called useful wherefore since good as such is the object of the appetite it follows that choice is principally an act of the repetitive power and thus Free Will is
+[00:07:05] because we can take one thing while refusing another and this is to choose the reason of this is because the proper object of choice is the means to the end and this as such is in the nature of that good which is called useful wherefore since good as such is the object of the appetite it follows that choice is principally an act of the appetitive power and thus Free Will is
 
-[00:07:32] an repetitive Power article four whether Free Will is a power distinct from the will St John damine says Free Will is nothing else than the will St Thomas writes on the part of the appetite to will implies the simple appetite for something wherefore the will is said to regard the end which is desired for itself but to choose is to desire something for the sake of obtaining
+[00:07:32] an appetitive Power article four whether Free Will is a power distinct from the will St John damine says Free Will is nothing else than the will St Thomas writes on the part of the appetite to will implies the simple appetite for something wherefore the will is said to regard the end which is desired for itself but to choose is to desire something for the sake of obtaining
 
 [00:07:58] something else wherefore properly speaking it regards the means to the end wherefore it belongs to the same power to Will and to choose and on this account the will and the Free Will are not two Powers but one and on to question 84 how the soul while United to the body understands Corporal things beneath it article one whether the soul knows bodies through the intellect let
 
