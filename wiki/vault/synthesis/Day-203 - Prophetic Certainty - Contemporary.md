@@ -17,7 +17,7 @@ evidence_strength_summary: "Prophecy-as-knowing-beyond-the-interface = analogica
 mind_first_reframe: "Ordinary knowing is what a species-specific interface delivers; prophecy is modeled as knowing whose content arrives from outside that interface — and Aquinas's own claims fit a participatory rather than a representational picture: the prophet is illuminated (transiently 'lit', not self-luminous), cannot grasp the highest principle (the divine essence) and so cannot derive all that follows from it, and tags some of his knowing with high source-confidence (express revelation) and some with low (murky 'instinct'). The boundedness is the point."
 central_theme_thread: "The prophet is the limit-case of the central claim: even the one given knowledge from beyond the natural interface remains perspective-limited — he does not grasp the highest principle, knows in part, and cannot always tell his own voice from the given one. Knowing more of the whole still arrives through a finite, guided point of view."
 tags: [synthesis, day/203, theme/bounded-illumination]
-last_qc_at: "2026-06-12T14:27:07"
+last_qc_at: "2026-06-20T07:50:22"
 last_qc_outcome: "pass"
 ---
 

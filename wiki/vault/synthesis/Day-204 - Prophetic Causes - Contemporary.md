@@ -17,7 +17,7 @@ evidence_strength_summary: "Atemporal divine knowing ~ view from outside the tim
 mind_first_reframe: "Cognition is a layered generative model: sensory signals abstracted up through imagination to intelligible structure under a top-down 'light.' Aquinas's three modes of prophetic conveyance are three ways of entering that pipeline — strengthening the abstracting light, injecting an intelligible structure directly, or injecting coordinated imagery (with the senses withdrawn to avoid confusion). God's knowing-the-future-as-present is the view from outside the constructed time-interface; angelic mediation is nested, multiscale conveyance; and providence moving a free choice 'certainly' is top-down constraint shaping a genuinely self-determining lower process."
 central_theme_thread: "The capstone line is the central claim itself: 'since the prophet's mind is a defective instrument, even true prophets know not all that the Holy Ghost means.' The most exalted natural knower, correctly driven by the source, still under-represents what the source means — perspective-limitation is intrinsic to the finite model, not a defect of effort. And prophecy-without-charity shows capability and union are distinct: knowing more of the whole is not yet loving the whole."
 tags: [synthesis, day/204, theme/layered-conveyance]
-last_qc_at: "2026-06-12T14:27:08"
+last_qc_at: "2026-06-20T07:50:23"
 last_qc_outcome: "pass"
 ---
 

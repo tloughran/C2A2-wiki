@@ -15,7 +15,7 @@ evidence_strength_summary: "Rest/play as restorative, capacity-broadening regula
 mind_first_reframe: "Self-presentation — how one rests, plays, moves, and dresses — is not private; it is the signal by which a limited agent couples to the larger agent it belongs to. Play restores and broadens the agent's resources for the work of union (rest in the good = joy); dress and comportment are legible signals that either build up or degrade the shared model that makes a community one coherent agent. Modesty is the temperance of one's own signal for the good of the whole."
 central_theme_thread: "The day's own words are the thesis: 'we are responsible for one another; our fates are intertwined as parts of a shared whole.' The limited agent is individuated, but its play and its self-presentation are computed under obligation to the whole — restoring itself so it can contribute, and signalling so as to build others up rather than scandalize them."
 tags: [synthesis, day/202, theme/coupling-to-the-whole]
-last_qc_at: "2026-06-12T14:27:07"
+last_qc_at: "2026-06-20T07:50:21"
 last_qc_outcome: "pass"
 ---
 
