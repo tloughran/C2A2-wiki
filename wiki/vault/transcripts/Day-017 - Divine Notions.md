@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-017 - Divine Notions - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-06T22:31:34"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-21T13:00:51"
+last_qc_outcome: "rewrote"
 render_pass: structural-pass-2026-05-10  # article-block headers and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/017, pars/I, q/31, q/32, theme/trinity, theme/notions, theme/reasons-limit]
 ---
@@ -26,13 +26,13 @@ tags: [summa, day/017, pars/I, q/31, q/32, theme/trinity, theme/notions, theme/r
 > Series: *Summa in a Year* by Austin Habash. Day 17 of 308.
 > Summa reference: *Prima Pars, Q.31 + Q.32*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC pass 2026-05-10: ASR mishearings restored — \bAras\b -> Arius (heresiarch named by Aquinas); \bcelus\b / \bselus\b -> Sabellius (heresiarch named by Aquinas); \bHillary\b -> Hilary (St. Hilary of Poitiers, quoted on Father-and-Son non-separation); \bathanasian\b -> Athanasian (Creed). Note also: "L gr" / "the gr" / "L Grange" appearing throughout this episode are ASR fragments of Garrigou-Lagrange (the Aquinas-commentator Habash cites repeatedly); not silently expanded in-prose to avoid over-editing. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC pass 2026-05-10: ASR mishearings restored — \bAras\b -> Arius (heresiarch named by Aquinas); \bcelus\b / \bselus\b -> Sabellius (heresiarch named by Aquinas); \bHillary\b -> Hilary (St. Hilary of Poitiers, quoted on Father-and-Son non-separation); \bathanasian\b -> Athanasian (Creed). Note also: "L gr" / "the gr" / "L Grange" appearing throughout this episode are ASR fragments of Garrigou-Lagrange (the Aquinas-commentator Habash cites repeatedly); not silently expanded in-prose to avoid over-editing. QC pass 2026-06-21: intro-name garble restored — "Summa year" -> "Summa in a Year" (podcast title; the earlier "the Summa podcast" left as a coherent short reference). This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas ass Summa Theologiae in a way simple and insightful for anyone to understand the Summa year podcast is brought to you by think Catholic taking two questions of the Summa day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this is day 17 so let's get started we're covering today questions 31 and 32 of the Prima pars which is on the unity and plurality of the Trinity and our knowledge of the Divine persons
+[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas ass Summa Theologiae in a way simple and insightful for anyone to understand the Summa in a Year podcast is brought to you by think Catholic taking two questions of the Summa day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this is day 17 so let's get started we're covering today questions 31 and 32 of the Prima pars which is on the unity and plurality of the Trinity and our knowledge of the Divine persons
 
 [00:00:38] the translation that I always use in these podcasts as the second and revised Edition translated by the fathers of the English Dominican Province and so let's
 

@@ -6,6 +6,7 @@ length_target_words: 2200
 length_actual_words: 1882
 length_ratio_to_target: 0.855
 length_tier: medium
+length_note: "Came in under the 2200 medium target (0.855, advisory — within ±25%). The day consolidates around two clean moves — joy as the felt signature of successful coupling (Fredrickson PRS-02 + Friston PRS-06) and peace as the integrated low-free-energy state (Friston PRS-13) — plus the one locus where the paradigm agrees with Aquinas against mechanism ('all things desire peace' = FEP stated teleologically). Further length would recapitulate rather than extend. Per the project length policy, substantive integrity over word count."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-05 distributed cognition across scales; PRS-07 FEP substrate-independence; PRS-13 metastability; PRS-06 mutual modeling)"
   - "traditions/levin/ (morphogenetic targets / goal-directedness in nature, by theme)"
@@ -16,8 +17,8 @@ evidence_strength_summary: "Joy as the felt signature of successful coupling (Fr
 mind_first_reframe: "Joy is the felt signature of successful coupling — both the possession of the global attractor (God by grace) and the love of benevolence by which a friend's good registers as mine (Fredrickson PRS-02; Friston PRS-06). In via it carries an admixture of sorrow because the possession is partial — the already/not-yet (Wright PRS-03). Peace is the integrated agent: desires unified under one love, internal prediction-error minimized (Augustine's 'tranquility of order'); the man 'at war with himself' is a system under metastability strain (Friston PRS-13). 'All things desire peace' (a.2) is the Free Energy Principle stated teleologically — every self-organizing system moves toward its rest-state attractor (Friston PRS-05/07; Levin targets) — where mind-monism sides with Aquinas against mechanism's denial of final causes."
 central_theme_thread: "Joy-with-sorrow is the exact affective signature of the perspective-limited agent in via: real possession of the whole and real absence of it at once, which is what 'working out salvation in fear and trembling' feels like from inside. Peace is the integration of one limited perspective's many desires under the single love that orients it to the whole — the local, in-via image of the loving unity in which every perspective is finally contained. And 'all things desire peace' says the orientation is universal: every perspective, down to the stone, is already drawn toward rest-in-its-end — the whole is what each is for."
 tags: [synthesis, day/132, theme/effects-of-charity]
-last_qc_at: "2026-06-13T00:22:06"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-21T11:34:00"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 132 — Contemporary Parallel: The Signature of the Bond and the Drive Toward Rest

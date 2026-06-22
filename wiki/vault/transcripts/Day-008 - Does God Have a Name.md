@@ -15,8 +15,8 @@ fetched_at: 2026-05-05
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-008 - Does God Have a Name - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-07T14:30:06"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-21T13:00:50"
+last_qc_outcome: "rewrote"
 tags: [summa, day/008, pars/I, q/13, q/14]
 ---
 
@@ -28,11 +28,11 @@ tags: [summa, day/008, pars/I, q/13, q/14]
 
 > Summa reference: *Prima Pars, Q.13*
 
-> Auto-generated captions (ASR). Characteristic mis-transcriptions: *habish* → Habash; *Suma/Su* → Summa; *aquinus/aquanus* → Aquinas; *theologia* → Theologiae. Paragraph breaks heuristic (~30 s).
+> Auto-generated captions (ASR). Characteristic mis-transcriptions: *habish* → Habash; *Suma/Su* → Summa; *aquinus/aquanus* → Aquinas; *theologia* → Theologiae. Paragraph breaks heuristic (~30 s). QC pass 2026-06-21: intro/outro name garbles restored — "Summa year" / "Summa New Year" -> "Summa in a Year" (podcast title); "Austin habish" -> "Austin Habash" (x2).
 
 ## Transcript
 
-[00:00:05] hello my name is Austin habish the founder of think Catholic and you're listening to the Summa year podcast where we study St Thomas aquinas's Summa theologia in a way simple and insightful for anyone to understand the Summa New Year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of aquinus and his Catholic Faith this is day eight so let's get started we're covering today questions 13 and 14 of the Prima pars which is the names of God and God's knowledge the
+[00:00:05] hello my name is Austin Habash the founder of think Catholic and you're listening to the Summa in a Year podcast where we study St Thomas aquinas's Summa theologia in a way simple and insightful for anyone to understand the Summa in a Year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of aquinus and his Catholic Faith this is day eight so let's get started we're covering today questions 13 and 14 of the Prima pars which is the names of God and God's knowledge the
 
 [00:00:41] translation that I always use in these podcasts is the second and revised Edition translated by the fathers of the English Dominican Province so let's get started now both of these questions are quite extensive In Articles so to keep them within our usual time limit we will have to be succinct wherever possible and elaborative whenever necessary AR aquanus begins with the following introduction having considered how we know God we now turn to consider how we speak of him the first article can God be named by us now what are words setting aside personal names for the
 
@@ -122,7 +122,7 @@ tags: [summa, day/008, pars/I, q/13, q/14]
 
 [00:24:45] is one thing again these are distinctions that have to do with the kind of knowledge we are considering concerning God aquinus following the manner of this distinction says it must be said that God has of himself a speculative knowledge only now things which he can make but does not make at any time he has not a practical knowledge according his knowledge is called practical from the end but he has a practical knowledge of what he makes it's a period of time such is our last article within the question on God's
 
-[00:25:18] knowledge until next time we have just covered the names of God question 13 and God's knowledge question 14 again my name is Austin habish with think Catholic and I cannot wait to see you tomorrow [Music]
+[00:25:18] knowledge until next time we have just covered the names of God question 13 and God's knowledge question 14 again my name is Austin Habash with think Catholic and I cannot wait to see you tomorrow [Music]
 
 ## Notes
 

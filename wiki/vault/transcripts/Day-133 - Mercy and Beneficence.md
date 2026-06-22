@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-133 - Mercy and Beneficence - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/133, pars/2, q/30-31]
-last_qc_at: "2026-06-13T00:22:07"
+last_qc_at: "2026-06-21T11:34:00"
 last_qc_outcome: "pass"
 ---
 

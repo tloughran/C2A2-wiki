@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-016 - Is God Personal - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-06T22:31:34"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-21T13:00:51"
+last_qc_outcome: "rewrote"
 render_pass: structural-pass-2026-05-10  # article-block headers and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/016, pars/I, q/29, q/30, theme/personhood, theme/plurality, theme/trinity]
 ---
@@ -26,13 +26,13 @@ tags: [summa, day/016, pars/I, q/29, q/30, theme/personhood, theme/plurality, th
 > Series: *Summa in a Year* by Austin Habash. Day 16 of 308.
 > Summa reference: *Prima Pars, Q.29 + Q.30*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC pass 2026-05-10: \bboia\b -> Boethius (ASR mishearing — Habash explicitly attributes the *individual substance of a rational nature* definition to the 6th-c. philosopher who defined eternity for episode 6). This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC pass 2026-05-10: \bboia\b -> Boethius (ASR mishearing — Habash explicitly attributes the *individual substance of a rational nature* definition to the 6th-c. philosopher who defined eternity for episode 6). QC pass 2026-06-21: intro-name garble restored — "Summa near" -> "Summa in a Year" (x2, podcast title). This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Summa near podcast where we study St Thomas Aquinas of Summa Theologiae in a way simple and insightful for anyone to understand the Summa near podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this is day 16 so let's get started we're covering today questions 29 and 30 of the Prima pars which is the signification of the word person and the
+[00:00:06] founder of think Catholic and you're listening to the Summa in a Year podcast where we study St Thomas Aquinas of Summa Theologiae in a way simple and insightful for anyone to understand the Summa in a Year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this is day 16 so let's get started we're covering today questions 29 and 30 of the Prima pars which is the signification of the word person and the
 
 [00:00:38] plurality of those persons in God the translation that I always use in these podcasts is the second and revised Edition translated by the fathers of the English Dominican Province and so here we go question 29 on person Aquinas gives us the following introduction having premised what has appeared necessary Notions concerning the processions and the relations we must now approach the subject of the persons first the meaning of this word person second the number of the persons third
 

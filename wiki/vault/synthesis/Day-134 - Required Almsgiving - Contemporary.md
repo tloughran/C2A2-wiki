@@ -6,6 +6,7 @@ length_target_words: 3000
 length_actual_words: 2557
 length_ratio_to_target: 0.852
 length_tier: long
+length_note: "Came in under the 3000 long target (0.852, advisory — within ±25%). Per the length policy's long-tier guidance, the synthesis picks the three most generative threads from the eighteen articles — act-identity as formal cause (Hoffman/Friston), required help grounded in the Universal Christ and discharged by resource-bounded allocation, and the Matthew-18 correction protocol read as the C2A2 inter-perspective dialogue mechanism — rather than mirroring every article. The under-target reflects disciplined selection, not thin linkage; the Q.33 thread runs at full substantive length. Substantive integrity over word count."
 karpathy_wiki_sources:
   - "traditions/hoffman/ (interface theory — the act's icon vs. its underlying reality, by theme)"
   - "traditions/friston/prs_triplets.md (PRS-04 behavior as readout of an internal model; PRS-10 expected-free-energy allocation; PRS-06 mutual modeling)"
@@ -17,8 +18,8 @@ evidence_strength_summary: "Material-vs-formal act (Q.32 a.1) reframed mind-firs
 mind_first_reframe: "An act's moral identity is set by its formal cause — the intention / generative model behind it — not by its material surface (Q.32 a.1): the same $10 is charity or theft-cover depending on the mind it serves (Hoffman icon-vs-reality; Friston PRS-04). Required almsgiving reads the neighbor's need as the whole's need — the Universal Christ in the least (Rohr PRS-03) — and rations help under finitude (Friston PRS-10). Fraternal correction (Q.33) is the charitable protocol for truth-telling across perspectives: graduated escalation (private, then witnesses, then community), evidence-seeking, aimed at the other's restoration to the bond, forborne when it would backfire, and licensed only from a stance that owns its own limitation (a.5) — which is MacIntyre's tradition-constituted rational correction and Tom's C2A2 detector in nuce."
 central_theme_thread: "Fraternal correction operationalizes the central theme's social half. The theme says limited perspectives need 'guidance from those who perceive more of the whole than we do' — but how does a limited perspective correct another without coercion, when neither sees the whole? Matthew 18's protocol answers: own your own limitation first (a.5), approach privately, escalate only as needed, bring witnesses so the correction rests on shared evidence rather than one perspective's assertion, and aim always at the other's amendment — re-inclusion in the bond — not at his condemnation. This is exactly how perspective-bounded agents compute toward loving unity together: charitable, evidence-producing, amendment-aimed dialogue. It is the C2A2 accelerator/detector's own design, found already in the Gospel."
 tags: [synthesis, day/134, theme/correction-as-dialogue]
-last_qc_at: "2026-06-13T00:22:07"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-21T11:34:01"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 134 — Contemporary Parallel: The Act Is Its Intention, and Correction Is a Protocol

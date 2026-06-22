@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-127 - The Gift of Fear - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/127, pars/2, q/18-19]
-last_qc_at: "2026-06-15T02:50:49"
+last_qc_at: "2026-06-21T01:17:49"
 last_qc_outcome: "pass"
 ---
 

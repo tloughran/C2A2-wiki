@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-014 - Is God Happy - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-07T16:21:14"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-21T13:00:50"
+last_qc_outcome: "rewrote"
 render_pass: structural-pass-2026-05-10  # article-block headers and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/014, pars/I, q/25, q/26, theme/power, theme/omnipotence, theme/beatitude, theme/happiness]
 ---
@@ -26,13 +26,13 @@ tags: [summa, day/014, pars/I, q/25, q/26, theme/power, theme/omnipotence, theme
 > Series: *Summa in a Year* by Austin Habash. Day 14 of 308.
 > Summa reference: *Prima Pars, Q.25 + Q.26*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baqu(in)?us\b -> Aquinas; \baquantis\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baqu(in)?us\b -> Aquinas; \baquantis\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC pass 2026-06-21: intro-name garble restored — "Summa near year" / "Summa New Year" -> "Summa in a Year" (podcast title). This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Summa near year podcast where we study St Thomas aquanis assumma Theologiae in a way simple and insightful for anyone to understand the Summa New Year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this is day 14 so let's get started we're covering today questions 25 and 26 of the primma pars that is the
+[00:00:06] founder of think Catholic and you're listening to the Summa in a Year podcast where we study St Thomas aquanis assumma Theologiae in a way simple and insightful for anyone to understand the Summa in a Year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this is day 14 so let's get started we're covering today questions 25 and 26 of the primma pars that is the
 
 [00:00:37] power of God and God's beatitude the translation that I always use in these podcasts is the second and revised Edition translated by the fathers of the English Dominican Province so let's get
 

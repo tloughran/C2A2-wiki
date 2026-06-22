@@ -18,7 +18,7 @@ evidence_strength_summary: "Charity as the coupling mechanism by which limited a
 mind_first_reframe: "Charity is the coupling by which limited perspectives are bound into one loving whole. As friendship (Q.23 a.1) it is reciprocal mutual modeling, not benevolence toward a wanted good: Friston PRS-06 names love as the very mechanism by which agents synchronize models and become a coherent collective agent; Fredrickson PRS-02/03 measures it. As the form of the virtues (a.8) it is the ordering principle that directs every other power to the last end, making the many faculties one teleologically-unified agent — Stump PRS-14/15's corporate hylomorphism, the body that includes its members without dissolving them. Charity is the central theme's loving unity, operative."
 central_theme_thread: "Charity is the telos the whole project names. Perspective-limitation individuates agents; loving unity is the computational goal; charity is that unity actually achieved as a bond — the coupling that makes many limited perspectives one whole without erasing any. Hope held the whole as reachable; charity is the reaching consummated as union."
 tags: [synthesis, day/129, theme/charity-as-coupling]
-last_qc_at: "2026-06-12T22:28:59"
+last_qc_at: "2026-06-21T11:33:58"
 last_qc_outcome: "pass"
 ---
 

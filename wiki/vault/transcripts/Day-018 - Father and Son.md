@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-018 - Father and Son - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-06T22:31:35"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-21T13:00:52"
+last_qc_outcome: "rewrote"
 render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/018, pars/I, q/33, q/34, theme/trinity, theme/father, theme/son, theme/word]
 ---
@@ -26,13 +26,13 @@ tags: [summa, day/018, pars/I, q/33, q/34, theme/trinity, theme/father, theme/so
 > Series: *Summa in a Year* by Austin Habash. Day 18 of 308.
 > Summa reference: *Prima Pars, Q.33 + Q.34*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baanus\b -> Aquinas; \baquantis\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \bquanus\b -> Aquinas; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baanus\b -> Aquinas; \baquantis\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \bquanus\b -> Aquinas; \btheologia\b -> Theologiae. QC pass 2026-06-21: intro garbles restored — "Summa year" -> "Summa in a Year" (podcast title; the later "the Summa podcast" left as a coherent short reference); "Austin habit" -> "Austin Habash". This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
-[00:00:04] hello my name is Austin habit the
+[00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Summa year podcast where we study St Thomas Aquinas assumma Theologiae in a way simple and insightful for anyone to understand the Summa podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this is day 18 so let's get started we're covering today questions 33 and 34 the Prima pars which is the person of the father and the person of
+[00:00:06] founder of think Catholic and you're listening to the Summa in a Year podcast where we study St Thomas Aquinas assumma Theologiae in a way simple and insightful for anyone to understand the Summa podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this is day 18 so let's get started we're covering today questions 33 and 34 the Prima pars which is the person of the father and the person of
 
 [00:00:38] the son the translation that I always use in these podcasts is a second revised Edition translated by the fathers of the English Dominican
 
