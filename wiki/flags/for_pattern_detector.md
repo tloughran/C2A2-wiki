@@ -382,12 +382,12 @@ Post-Spacetime and Consciousness Clusters
 - [PROP-2026-06-12-002] Sean Carroll: Strong McGilchrist signal: Humboldt and the Jena Romantics are central witnesses in
 McGilchrist's account of right-hemisphere holism versus left-hemisphere abstraction — this
 episode is Carroll engaging exactly the historical terrain McGilchrist claims for his side,
-and the two readings of the same 
+and the two readings of the same
 - [PROP-2026-06-15-003] Karl Friston: - Kastrup & McGilchrist: epistemic depth is a formal handle on self-awareness and reflexivity — directly engages the consciousness traditions and the hard problem.
 - Levin: "epistemic depth" / recurrent belief-sharing as a candidate marker could be tested in basal and collective cognition — does a c
 - [PROP-2026-06-15-002] Michael Levin: - Kastrup: a non-physical space of patterns that minds "tap into" resonates strongly with analytic idealism's transpersonal/universal mind — a high-value bridge candidate (flag explicitly).
 - Hoffman: embodiments as pointers/interfaces directly parallels interface theory of perception (icons pointin
 - [PROP-2026-06-15-001] Michael Levin: - Friston: top-down constraint of lower-level dynamics maps onto active inference, where Vmem could be read as a prior over transcriptional states — a concrete substrate for "morphogenetic active inference" (Friston PRS-08).
-- Wolfram: multi-scale causation (electrical macro-state shaping molecular 
+- Wolfram: multi-scale causation (electrical macro-state shaping molecular
 
 [EVALUATED: 2026-06-17 — FINDING-042..047; see pattern_detector_findings.md]

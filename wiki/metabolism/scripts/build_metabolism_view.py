@@ -222,14 +222,27 @@ def main():
         s["cache_read"] += u.get("cache_read_input_tokens", 0) or 0
         s["cache_creation"] += u.get("cache_creation_input_tokens", 0) or 0
 
-    # 3) thinking_tokens (separate subtype) per session
-    for sid, n in cur.execute(
-        "SELECT session_id, COUNT(*) FROM events "
-        "WHERE subtype = 'system.thinking_tokens' GROUP BY session_id"
+    # 3) thinking tokens (separate 'system.thinking_tokens' subtype).
+    #    THINKING-TOKEN JOIN FIX (2026-06-22): these events carry the sentinel
+    #    session_id "audit" in the events.session_id column; the REAL session id is
+    #    nested at data.raw.session_id, and data.raw.estimated_tokens_delta is the
+    #    per-event token estimate. The previous COUNT(*) GROUP BY session_id therefore
+    #    dumped all ~41k events under the single "audit" key and read 0 in every real
+    #    lane. We now sum estimated_tokens_delta keyed on the real nested session id,
+    #    so thinking_tokens carries actual estimated thinking tokens (not an event count).
+    for (payload,) in cur.execute(
+        "SELECT payload FROM events "
+        "WHERE subtype = 'system.thinking_tokens' AND payload IS NOT NULL"
     ):
-        s = sess.get(sid)
+        try:
+            raw = (json.loads(payload).get("data") or {}).get("raw") or {}
+            rsid = raw.get("session_id")
+            delta = raw.get("estimated_tokens_delta") or 0
+        except (ValueError, TypeError):
+            continue
+        s = sess.get(rsid)
         if s is not None:
-            s["thinking_tokens"] = n
+            s["thinking_tokens"] += delta
 
     con.close()
 
@@ -303,9 +316,12 @@ def main():
             "total_runs": sum(L["runs"] for L in lane_meta),
             "t_min": min(all_t) if all_t else None,
             "t_max": max(all_t) if all_t else None,
-            "note": "Prototype. Token data summed from event payloads in open-story.db. "
-                    "Yield = wikilinks/files added per day, from wiki/ git history "
-                    "(a first real yield proxy; PRS-triplet-completed still to come).",
+            "note": "Prototype. Token data summed from event payloads in open-story.db "
+                    "(both pre/post 2026-04-07 token_usage paths; thinking tokens summed "
+                    "from system.thinking_tokens estimated_tokens_delta on the real nested "
+                    "session id). Yield = wikilinks/files added per day PLUS PRS-triplet "
+                    "yield (first-seen and articulated series) from wiki/ git history and the "
+                    "WS2 metric CSV (DECISION-058); PRS yield is LIVE, not 'still to come'.",
         },
         "lanes": lane_meta,
         "yield_daily": compute_vault_yield(args.repo) or [],
@@ -383,7 +399,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
       <option value="out">Output tokens (work produced)</option>
       <option value="total">Total tokens (in+out+cache)</option>
       <option value="cache_read">Cache-read tokens (recirculated)</option>
-      <option value="thinking_tokens">Thinking-token events</option>
+      <option value="thinking_tokens">Thinking tokens (est.)</option>
       <option value="dur_min">Duration (min)</option>
       <option value="yield_files">Yield: files added/day ✦ headline</option>
       <option value="yield_links">Yield: wikilinks added/day ✦ live</option>
@@ -524,7 +540,7 @@ function renderRaster() {
   }
 }
 const METRIC_LABEL = {events:"events", out:"output tokens", total:"total tokens",
-  cache_read:"cache-read tokens", thinking_tokens:"thinking-token events",
+  cache_read:"cache-read tokens", thinking_tokens:"thinking tokens (est.)",
   dur_min:"minutes", yield_links:"wikilinks added", yield_files:"files added",
   yield_prs:"PRS first-seen", yield_prs_made:"PRS articulated"};
 const YIELD = DATA.yield_daily || [];

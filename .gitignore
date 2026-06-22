@@ -88,6 +88,8 @@ wiki/commentary-explorer/pages/
 # --- Tree cleanup 2026-06-19 (untracked scratch / generated output, public repo) ---
 # Generated agent output (sibling of janitor/, reviewer-review/ above)
 connector-health/
+# Metabolism Monitor output (findings ephemeral, logbook durable) — local-only, like janitor/
+metabolism-monitor/
 # Loose session-handoff doc — handoffs/ is already ignored; catch root-level stragglers too
 SESSION_HANDOFF_*.md
 # Mount-delete workaround holding pen (dupes staged for removal, never published)

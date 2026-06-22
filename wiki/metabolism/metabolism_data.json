@@ -1,14 +1,14 @@
 {
   "_meta": {
-    "generated": "2026-06-17T21:01:10.275298+00:00",
+    "generated": "2026-06-22T20:32:31.421858+00:00",
     "source": "openstory-db",
-    "db_path": "/sessions/hopeful-loving-bohr/mnt/Documents/Non-Claude Projects/OpenStory/data/open-story.db",
-    "db_mtime": "2026-06-17T20:59:55.188318",
+    "db_path": "/sessions/upbeat-magical-sagan/mnt/Documents/Non-Claude Projects/OpenStory/data/open-story.db",
+    "db_mtime": "2026-06-22T20:31:03.045002",
     "lanes": 33,
-    "total_runs": 822,
+    "total_runs": 961,
     "t_min": "2026-03-30T19:09:19.612Z",
-    "t_max": "2026-06-17T20:54:57.395Z",
-    "note": "Prototype. Token data summed from event payloads in open-story.db. Yield = wikilinks/files added per day, from wiki/ git history (a first real yield proxy; PRS-triplet-completed still to come)."
+    "t_max": "2026-06-22T20:17:13.387Z",
+    "note": "Prototype. Token data summed from event payloads in open-story.db (both pre/post 2026-04-07 token_usage paths; thinking tokens summed from system.thinking_tokens estimated_tokens_delta on the real nested session id). Yield = wikilinks/files added per day PLUS PRS-triplet yield (first-seen and articulated series) from wiki/ git history and the WS2 metric CSV (DECISION-058); PRS yield is LIVE, not 'still to come'."
   },
   "lanes": [
     {
@@ -17,9 +17,9 @@
       "category": "interactive",
       "thinkers": [],
       "schedule": null,
-      "runs": 333,
-      "out_total": 23489192,
-      "all_total": 4071049230,
+      "runs": 341,
+      "out_total": 25310173,
+      "all_total": 4255636861,
       "median_gap_h": 0.2,
       "rows": [
         {
@@ -49,14 +49,14 @@
         {
           "sid": "07ab764b-395e-422c-bf7b-40555a603a7b",
           "t": "2026-03-30T20:16:08.612Z",
-          "dur_min": 113274.4,
-          "events": 13354,
-          "in": 10337,
-          "out": 1742495,
-          "cache_read": 359622765,
-          "cache_creation": 57282056,
-          "total": 418657653,
-          "thinking_tokens": 0
+          "dur_min": 120950.6,
+          "events": 13431,
+          "in": 10393,
+          "out": 1747059,
+          "cache_read": 361706396,
+          "cache_creation": 58161576,
+          "total": 421625424,
+          "thinking_tokens": 17006
         },
         {
           "sid": "c8053b72-3dcb-4fff-930c-9750f9958b6b",
@@ -236,7 +236,7 @@
           "cache_read": 1401876,
           "cache_creation": 207273,
           "total": 1620714,
-          "thinking_tokens": 0
+          "thinking_tokens": 1655
         },
         {
           "sid": "e90e525a-7379-49e6-a7c1-cde3f9f7fbdb",
@@ -3476,7 +3476,7 @@
           "cache_read": 89378545,
           "cache_creation": 3433119,
           "total": 93259634,
-          "thinking_tokens": 0
+          "thinking_tokens": 76112
         },
         {
           "sid": "42da3193-6a91-4eba-847a-a38c440832a4",
@@ -3488,7 +3488,7 @@
           "cache_read": 37699097,
           "cache_creation": 2002354,
           "total": 40143289,
-          "thinking_tokens": 0
+          "thinking_tokens": 85864
         },
         {
           "sid": "4e6014c5-e8be-4c3d-9197-8630e7e72a5c",
@@ -3500,7 +3500,7 @@
           "cache_read": 3492386,
           "cache_creation": 132727,
           "total": 3653879,
-          "thinking_tokens": 0
+          "thinking_tokens": 3977
         },
         {
           "sid": "7d521154-b8fa-45cd-b540-b58d21b1581a",
@@ -3512,7 +3512,7 @@
           "cache_read": 194757,
           "cache_creation": 118646,
           "total": 315437,
-          "thinking_tokens": 0
+          "thinking_tokens": 149
         },
         {
           "sid": "99601eae-abc4-4d90-9db6-b2505256dc52",
@@ -3524,7 +3524,7 @@
           "cache_read": 16886077,
           "cache_creation": 1315461,
           "total": 18430426,
-          "thinking_tokens": 0
+          "thinking_tokens": 41994
         },
         {
           "sid": "afb126b6-6392-4217-a8bf-648175ed95d4",
@@ -3536,7 +3536,7 @@
           "cache_read": 8507266,
           "cache_creation": 351356,
           "total": 8982406,
-          "thinking_tokens": 0
+          "thinking_tokens": 14124
         },
         {
           "sid": "agent-aa134d45bef4f9dbf",
@@ -3560,7 +3560,7 @@
           "cache_read": 1210480,
           "cache_creation": 436562,
           "total": 1722465,
-          "thinking_tokens": 0
+          "thinking_tokens": 3481
         },
         {
           "sid": "5f8a0e2e-84d6-4881-b9ef-362b256cc7b7",
@@ -3572,7 +3572,7 @@
           "cache_read": 59210759,
           "cache_creation": 1013390,
           "total": 60734919,
-          "thinking_tokens": 0
+          "thinking_tokens": 104672
         },
         {
           "sid": "872ee323-9d17-444b-821c-2694519c1119",
@@ -3584,7 +3584,7 @@
           "cache_read": 17044296,
           "cache_creation": 639085,
           "total": 17951121,
-          "thinking_tokens": 0
+          "thinking_tokens": 50300
         },
         {
           "sid": "89cca4c3-069f-4511-81c2-51d4627a2e7c",
@@ -3596,7 +3596,7 @@
           "cache_read": 31206278,
           "cache_creation": 2028253,
           "total": 33582853,
-          "thinking_tokens": 0
+          "thinking_tokens": 70372
         },
         {
           "sid": "e07e3f59-97b8-4586-a8b7-0990fb3a77b5",
@@ -3608,7 +3608,7 @@
           "cache_read": 25151447,
           "cache_creation": 1187711,
           "total": 26740711,
-          "thinking_tokens": 0
+          "thinking_tokens": 74197
         },
         {
           "sid": "35cdf95e-31d2-4459-8531-420189037a9a",
@@ -3620,7 +3620,7 @@
           "cache_read": 9048450,
           "cache_creation": 915754,
           "total": 10125807,
-          "thinking_tokens": 0
+          "thinking_tokens": 13711
         },
         {
           "sid": "52287d43-f2a9-4851-a6e6-4858c9f15c96",
@@ -3632,7 +3632,7 @@
           "cache_read": 44432312,
           "cache_creation": 2345373,
           "total": 47187737,
-          "thinking_tokens": 0
+          "thinking_tokens": 75716
         },
         {
           "sid": "97083334-fb8e-4fad-9110-df9bc048e188",
@@ -3644,7 +3644,7 @@
           "cache_read": 8574921,
           "cache_creation": 941061,
           "total": 9666240,
-          "thinking_tokens": 0
+          "thinking_tokens": 12366
         },
         {
           "sid": "06a199a1-bcc9-44e0-8204-69c5dd4ff995",
@@ -3656,7 +3656,7 @@
           "cache_read": 43875461,
           "cache_creation": 2142226,
           "total": 46329536,
-          "thinking_tokens": 0
+          "thinking_tokens": 35877
         },
         {
           "sid": "e7842353-d5e7-4982-9b05-99398ffdafd7",
@@ -3668,7 +3668,7 @@
           "cache_read": 50686726,
           "cache_creation": 1856934,
           "total": 52834814,
-          "thinking_tokens": 0
+          "thinking_tokens": 34391
         },
         {
           "sid": "e11faae1-832b-45f8-ad42-9b489ef3476a",
@@ -3680,7 +3680,7 @@
           "cache_read": 26812912,
           "cache_creation": 2839248,
           "total": 29905486,
-          "thinking_tokens": 0
+          "thinking_tokens": 24150
         },
         {
           "sid": "546dc81b-1000-47a6-9b1f-8cbc7e2e5d27",
@@ -3692,7 +3692,7 @@
           "cache_read": 40970649,
           "cache_creation": 1607634,
           "total": 42977993,
-          "thinking_tokens": 0
+          "thinking_tokens": 56061
         },
         {
           "sid": "d8c1781e-999f-4d56-9cd9-1accdb5d9d50",
@@ -3704,7 +3704,7 @@
           "cache_read": 549980,
           "cache_creation": 113854,
           "total": 667246,
-          "thinking_tokens": 0
+          "thinking_tokens": 828
         },
         {
           "sid": "agent-ac8d1b171bb8d1e70",
@@ -3788,7 +3788,7 @@
           "cache_read": 34941597,
           "cache_creation": 932582,
           "total": 36126279,
-          "thinking_tokens": 0
+          "thinking_tokens": 35326
         },
         {
           "sid": "a09c0bab-0f77-478d-b8e7-259865ea791c",
@@ -3800,7 +3800,7 @@
           "cache_read": 28719105,
           "cache_creation": 1966598,
           "total": 30929859,
-          "thinking_tokens": 0
+          "thinking_tokens": 29943
         },
         {
           "sid": "bb077358-7c6b-409b-aaa8-752ffa1eb292",
@@ -3812,7 +3812,7 @@
           "cache_read": 112743727,
           "cache_creation": 1067422,
           "total": 114294290,
-          "thinking_tokens": 0
+          "thinking_tokens": 58878
         },
         {
           "sid": "e8107253-01d4-46c8-a749-94ad8c7c7aa8",
@@ -3824,7 +3824,7 @@
           "cache_read": 7692246,
           "cache_creation": 416073,
           "total": 8207244,
-          "thinking_tokens": 0
+          "thinking_tokens": 11823
         },
         {
           "sid": "agent-a3c4952c10f410c6c",
@@ -3896,7 +3896,7 @@
           "cache_read": 6970399,
           "cache_creation": 561070,
           "total": 7601352,
-          "thinking_tokens": 0
+          "thinking_tokens": 15101
         },
         {
           "sid": "37221609-3943-460e-ba90-f75f8fc253b3",
@@ -3908,7 +3908,7 @@
           "cache_read": 22116371,
           "cache_creation": 1206461,
           "total": 23707840,
-          "thinking_tokens": 0
+          "thinking_tokens": 75688
         },
         {
           "sid": "3b8bf69e-b3d4-44c3-b8ee-e53f4f2c2cd1",
@@ -3920,7 +3920,7 @@
           "cache_read": 13383797,
           "cache_creation": 599385,
           "total": 14245637,
-          "thinking_tokens": 0
+          "thinking_tokens": 36976
         },
         {
           "sid": "c5a2d715-d1b2-424a-b16c-589432f8f073",
@@ -3932,7 +3932,7 @@
           "cache_read": 5148677,
           "cache_creation": 710338,
           "total": 5993018,
-          "thinking_tokens": 0
+          "thinking_tokens": 14693
         },
         {
           "sid": "250f6465-46d6-4968-9bb8-9719a5cffe3d",
@@ -3944,7 +3944,7 @@
           "cache_read": 4098049,
           "cache_creation": 175833,
           "total": 4318181,
-          "thinking_tokens": 0
+          "thinking_tokens": 6118
         },
         {
           "sid": "952b90ff-f0a7-442d-9522-53559d28b23d",
@@ -3956,7 +3956,7 @@
           "cache_read": 4288004,
           "cache_creation": 467380,
           "total": 4876519,
-          "thinking_tokens": 0
+          "thinking_tokens": 5713
         },
         {
           "sid": "79b30108-3d48-4445-a30a-70994d9b7ab2",
@@ -3968,7 +3968,7 @@
           "cache_read": 50890608,
           "cache_creation": 1900074,
           "total": 53277847,
-          "thinking_tokens": 0
+          "thinking_tokens": 85381
         },
         {
           "sid": "329c077d-496f-467e-b418-2e1c5b81ef42",
@@ -3980,7 +3980,7 @@
           "cache_read": 84371281,
           "cache_creation": 1197228,
           "total": 86117548,
-          "thinking_tokens": 0
+          "thinking_tokens": 112802
         },
         {
           "sid": "82e7e38a-35fe-4bab-9ae0-193244530384",
@@ -3992,30 +3992,126 @@
           "cache_read": 68188015,
           "cache_creation": 1361683,
           "total": 69974451,
-          "thinking_tokens": 0
+          "thinking_tokens": 62333
         },
         {
           "sid": "2faefb05-74c7-4337-972d-d8bba4b40a6d",
           "t": "2026-06-17T20:46:32.927Z",
-          "dur_min": 14.0,
-          "events": 67,
-          "in": 55185,
-          "out": 67684,
-          "cache_read": 3298998,
-          "cache_creation": 831442,
-          "total": 4253309,
-          "thinking_tokens": 0
+          "dur_min": 1384.5,
+          "events": 323,
+          "in": 61287,
+          "out": 276175,
+          "cache_read": 29648680,
+          "cache_creation": 3325668,
+          "total": 33311810,
+          "thinking_tokens": 42528
         },
         {
           "sid": "377aeed8-654a-40cb-99d3-ba21d87a3597",
           "t": "2026-06-17T20:54:57.395Z",
-          "dur_min": 5.7,
-          "events": 103,
-          "in": 55321,
-          "out": 60262,
-          "cache_read": 5878736,
-          "cache_creation": 376607,
-          "total": 6370926,
+          "dur_min": 7.7,
+          "events": 128,
+          "in": 56207,
+          "out": 72265,
+          "cache_read": 7641730,
+          "cache_creation": 389689,
+          "total": 8159891,
+          "thinking_tokens": 10676
+        },
+        {
+          "sid": "996a4ba2-8d20-433f-995e-dd65d54db8d9",
+          "t": "2026-06-18T15:20:27.987Z",
+          "dur_min": 17.0,
+          "events": 100,
+          "in": 42708,
+          "out": 57043,
+          "cache_read": 5622409,
+          "cache_creation": 309681,
+          "total": 6031841,
+          "thinking_tokens": 11494
+        },
+        {
+          "sid": "2013a8aa-1412-4e70-9a3a-ce4ba5cb06c7",
+          "t": "2026-06-18T19:57:31.429Z",
+          "dur_min": 1257.5,
+          "events": 306,
+          "in": 44974,
+          "out": 267424,
+          "cache_read": 23075351,
+          "cache_creation": 2500437,
+          "total": 25888186,
+          "thinking_tokens": 62483
+        },
+        {
+          "sid": "64d2ec9a-49e5-4e54-aa68-a91161235c8b",
+          "t": "2026-06-19T16:51:04.820Z",
+          "dur_min": 19.5,
+          "events": 116,
+          "in": 56716,
+          "out": 177045,
+          "cache_read": 7288365,
+          "cache_creation": 552283,
+          "total": 8074409,
+          "thinking_tokens": 28835
+        },
+        {
+          "sid": "be66ee81-cd53-4dcc-80dd-1fad20861944",
+          "t": "2026-06-19T17:15:20.988Z",
+          "dur_min": 97.9,
+          "events": 446,
+          "in": 67231,
+          "out": 471692,
+          "cache_read": 57570219,
+          "cache_creation": 2699337,
+          "total": 60808479,
+          "thinking_tokens": 78610
+        },
+        {
+          "sid": "938fcfda-218f-4327-b4b5-db6f09cba068",
+          "t": "2026-06-19T18:59:08.436Z",
+          "dur_min": 62.7,
+          "events": 109,
+          "in": 42013,
+          "out": 79526,
+          "cache_read": 6362202,
+          "cache_creation": 362622,
+          "total": 6846363,
+          "thinking_tokens": 13401
+        },
+        {
+          "sid": "0e4f2988-032c-4599-9ec1-7885f445dd78",
+          "t": "2026-06-22T19:27:23.096Z",
+          "dur_min": 24.1,
+          "events": 83,
+          "in": 2308,
+          "out": 102661,
+          "cache_read": 4630347,
+          "cache_creation": 657364,
+          "total": 5392680,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "0845e983-b86c-4031-8181-c3ad2e424696",
+          "t": "2026-06-22T19:29:56.250Z",
+          "dur_min": 62.4,
+          "events": 193,
+          "in": 44518,
+          "out": 168536,
+          "cache_read": 15424901,
+          "cache_creation": 1552660,
+          "total": 17190615,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "7dfa446f-ba25-47e4-b522-7214de833b13",
+          "t": "2026-06-22T19:33:41.420Z",
+          "dur_min": 58.3,
+          "events": 242,
+          "in": 65586,
+          "out": 271996,
+          "cache_read": 18823155,
+          "cache_creation": 1379084,
+          "total": 20539821,
           "thinking_tokens": 0
         }
       ]
@@ -4026,22 +4122,22 @@
       "category": "project",
       "thinkers": [],
       "schedule": "every 4h :15",
-      "runs": 93,
-      "out_total": 12520073,
-      "all_total": 855771063,
+      "runs": 121,
+      "out_total": 14535157,
+      "all_total": 1034708199,
       "median_gap_h": 4.0,
       "rows": [
         {
           "sid": "audit",
           "t": "2026-03-30T21:43:06.309Z",
-          "dur_min": 113711.8,
-          "events": 80025,
-          "in": 234102,
-          "out": 394410,
-          "cache_read": 129917249,
-          "cache_creation": 8520937,
-          "total": 139066698,
-          "thinking_tokens": 25415
+          "dur_min": 120874.1,
+          "events": 112319,
+          "in": 235123,
+          "out": 455164,
+          "cache_read": 138009020,
+          "cache_creation": 8969390,
+          "total": 147668697,
+          "thinking_tokens": 0
         },
         {
           "sid": "6db2715c-086c-4687-ac22-9cac49e8965d",
@@ -4269,7 +4365,7 @@
           "cache_read": 10440891,
           "cache_creation": 6126444,
           "total": 18454249,
-          "thinking_tokens": 0
+          "thinking_tokens": 21150
         },
         {
           "sid": "3c7bbacc-6ab4-4f57-ac64-99d0f43c9ba8",
@@ -4293,7 +4389,7 @@
           "cache_read": 4562787,
           "cache_creation": 434221,
           "total": 5136080,
-          "thinking_tokens": 0
+          "thinking_tokens": 7022
         },
         {
           "sid": "23b21b95-c032-47cd-b9a4-dbb900a40904",
@@ -4305,7 +4401,7 @@
           "cache_read": 8191562,
           "cache_creation": 928606,
           "total": 9326787,
-          "thinking_tokens": 0
+          "thinking_tokens": 7309
         },
         {
           "sid": "ecaa4143-2e8f-4046-8b34-d0c5a5956c03",
@@ -4317,7 +4413,7 @@
           "cache_read": 6933822,
           "cache_creation": 1152121,
           "total": 8340739,
-          "thinking_tokens": 0
+          "thinking_tokens": 9131
         },
         {
           "sid": "60ea0e15-7dbb-4d61-81b6-dc7c742f29d0",
@@ -4329,7 +4425,7 @@
           "cache_read": 6548252,
           "cache_creation": 1042357,
           "total": 7774869,
-          "thinking_tokens": 0
+          "thinking_tokens": 9965
         },
         {
           "sid": "50aefc6a-8921-4371-bbdb-36275e17469e",
@@ -4341,7 +4437,7 @@
           "cache_read": 8259714,
           "cache_creation": 930013,
           "total": 9398659,
-          "thinking_tokens": 0
+          "thinking_tokens": 6942
         },
         {
           "sid": "35e70e38-d631-4949-9072-49b8bca0b67e",
@@ -4353,7 +4449,7 @@
           "cache_read": 5770440,
           "cache_creation": 1218764,
           "total": 7205823,
-          "thinking_tokens": 0
+          "thinking_tokens": 5681
         },
         {
           "sid": "e379e607-9bf9-48af-946d-4254167c38e0",
@@ -4365,7 +4461,7 @@
           "cache_read": 6103447,
           "cache_creation": 689181,
           "total": 7022791,
-          "thinking_tokens": 0
+          "thinking_tokens": 18644
         },
         {
           "sid": "de2ffc75-0fed-4ce3-a455-1fe77176f109",
@@ -4377,7 +4473,7 @@
           "cache_read": 6423650,
           "cache_creation": 481475,
           "total": 7072908,
-          "thinking_tokens": 0
+          "thinking_tokens": 8200
         },
         {
           "sid": "8b69bc06-8187-4812-abe7-e6ee445b81ef",
@@ -4389,7 +4485,7 @@
           "cache_read": 11165300,
           "cache_creation": 903638,
           "total": 12262009,
-          "thinking_tokens": 0
+          "thinking_tokens": 19411
         },
         {
           "sid": "87686039-b343-4168-b326-b0e42e6878d4",
@@ -4401,7 +4497,7 @@
           "cache_read": 4336527,
           "cache_creation": 486702,
           "total": 4983487,
-          "thinking_tokens": 0
+          "thinking_tokens": 3872
         },
         {
           "sid": "eda6ac1c-16f6-4397-bd8a-8e00fb518277",
@@ -4413,7 +4509,7 @@
           "cache_read": 5975962,
           "cache_creation": 831423,
           "total": 6905365,
-          "thinking_tokens": 0
+          "thinking_tokens": 5949
         },
         {
           "sid": "cf00d4c9-ccca-40b0-95d9-8af4196735d0",
@@ -4425,7 +4521,7 @@
           "cache_read": 5247952,
           "cache_creation": 735545,
           "total": 6183253,
-          "thinking_tokens": 0
+          "thinking_tokens": 7797
         },
         {
           "sid": "44b0f231-a85b-4104-a849-fca72a45c0ae",
@@ -4437,7 +4533,7 @@
           "cache_read": 17615576,
           "cache_creation": 1873498,
           "total": 19886436,
-          "thinking_tokens": 0
+          "thinking_tokens": 41063
         },
         {
           "sid": "0631d29b-523d-4fc2-aca6-271793a0f4e7",
@@ -4449,7 +4545,7 @@
           "cache_read": 2718050,
           "cache_creation": 448930,
           "total": 3335017,
-          "thinking_tokens": 0
+          "thinking_tokens": 5416
         },
         {
           "sid": "209c26c7-7bcd-4d56-8411-0b3205ed40ef",
@@ -4461,7 +4557,7 @@
           "cache_read": 5145651,
           "cache_creation": 833471,
           "total": 6161329,
-          "thinking_tokens": 0
+          "thinking_tokens": 10489
         },
         {
           "sid": "20f5f2ea-a000-407a-a245-7376d9b4d9e9",
@@ -4473,7 +4569,7 @@
           "cache_read": 2508001,
           "cache_creation": 379907,
           "total": 3036669,
-          "thinking_tokens": 0
+          "thinking_tokens": 5575
         },
         {
           "sid": "d617066b-29bf-46dd-bd24-7eb90d496315",
@@ -4485,7 +4581,7 @@
           "cache_read": 3966641,
           "cache_creation": 775278,
           "total": 4925644,
-          "thinking_tokens": 0
+          "thinking_tokens": 5085
         },
         {
           "sid": "77fbf545-8534-470a-9b25-d6b4523af499",
@@ -4497,7 +4593,7 @@
           "cache_read": 4076422,
           "cache_creation": 652622,
           "total": 4919161,
-          "thinking_tokens": 0
+          "thinking_tokens": 9902
         },
         {
           "sid": "76aee4fa-decb-4479-995d-cc7e6ee61b31",
@@ -4509,7 +4605,7 @@
           "cache_read": 3088803,
           "cache_creation": 367244,
           "total": 3593652,
-          "thinking_tokens": 0
+          "thinking_tokens": 5633
         },
         {
           "sid": "2b9dd8d2-b03c-48a5-82e5-ba1ae95ec792",
@@ -4521,7 +4617,7 @@
           "cache_read": 5518199,
           "cache_creation": 1070503,
           "total": 6797819,
-          "thinking_tokens": 0
+          "thinking_tokens": 7068
         },
         {
           "sid": "0673b536-69e7-47bc-873d-f0f63ffaea66",
@@ -4533,7 +4629,7 @@
           "cache_read": 4248128,
           "cache_creation": 757661,
           "total": 5202840,
-          "thinking_tokens": 0
+          "thinking_tokens": 10930
         },
         {
           "sid": "2e18215b-3f9b-4849-88dc-69900dceb3c9",
@@ -4545,7 +4641,7 @@
           "cache_read": 601616,
           "cache_creation": 538383,
           "total": 1251299,
-          "thinking_tokens": 0
+          "thinking_tokens": 1711
         },
         {
           "sid": "fca59e74-fbce-4ab3-8f5d-0b6ce862c21e",
@@ -4557,7 +4653,7 @@
           "cache_read": 1195519,
           "cache_creation": 521207,
           "total": 1769147,
-          "thinking_tokens": 0
+          "thinking_tokens": 711
         },
         {
           "sid": "e953a15f-4aba-4033-8559-08de84192904",
@@ -4569,7 +4665,7 @@
           "cache_read": 2676936,
           "cache_creation": 490295,
           "total": 3232835,
-          "thinking_tokens": 0
+          "thinking_tokens": 2206
         },
         {
           "sid": "ded6d3f6-cf30-4cc4-ae64-cb8ea6ea2b6a",
@@ -4581,7 +4677,7 @@
           "cache_read": 1674970,
           "cache_creation": 325539,
           "total": 2059277,
-          "thinking_tokens": 0
+          "thinking_tokens": 3023
         },
         {
           "sid": "6cefe7c0-e884-41d4-bb33-a48f70f266b7",
@@ -4593,7 +4689,7 @@
           "cache_read": 12252889,
           "cache_creation": 831343,
           "total": 13311243,
-          "thinking_tokens": 0
+          "thinking_tokens": 12817
         },
         {
           "sid": "2febfa5c-31c3-403a-8920-66fab4fe34c7",
@@ -4605,7 +4701,7 @@
           "cache_read": 12609909,
           "cache_creation": 593511,
           "total": 13456171,
-          "thinking_tokens": 0
+          "thinking_tokens": 16646
         },
         {
           "sid": "e26c3f80-2e61-40de-b0d4-5b5c35be5b68",
@@ -4617,7 +4713,7 @@
           "cache_read": 10613202,
           "cache_creation": 480443,
           "total": 11356710,
-          "thinking_tokens": 0
+          "thinking_tokens": 6310
         },
         {
           "sid": "3c9487eb-53d9-406d-aac6-48012edb9f7e",
@@ -4629,7 +4725,7 @@
           "cache_read": 11118569,
           "cache_creation": 799293,
           "total": 12193674,
-          "thinking_tokens": 0
+          "thinking_tokens": 19273
         },
         {
           "sid": "6e8ba1ef-a8e4-4e23-a596-0469fbdbeee0",
@@ -4641,7 +4737,7 @@
           "cache_read": 28371561,
           "cache_creation": 2920742,
           "total": 32140218,
-          "thinking_tokens": 0
+          "thinking_tokens": 21165
         },
         {
           "sid": "8d11636e-99c0-437d-a140-0cac45e7838c",
@@ -4653,7 +4749,7 @@
           "cache_read": 15766927,
           "cache_creation": 612359,
           "total": 16688593,
-          "thinking_tokens": 0
+          "thinking_tokens": 19825
         },
         {
           "sid": "486ece7e-d44f-4755-9ee9-e903bd7e15fb",
@@ -4665,7 +4761,7 @@
           "cache_read": 6974403,
           "cache_creation": 535802,
           "total": 7829209,
-          "thinking_tokens": 0
+          "thinking_tokens": 28269
         },
         {
           "sid": "77e843f8-7be1-4036-85e2-a41ee5dad357",
@@ -4677,7 +4773,7 @@
           "cache_read": 5108992,
           "cache_creation": 670968,
           "total": 5954760,
-          "thinking_tokens": 0
+          "thinking_tokens": 7465
         },
         {
           "sid": "eb8a380c-0615-4981-93dd-bb42b5cf09b1",
@@ -4689,7 +4785,7 @@
           "cache_read": 8800497,
           "cache_creation": 678446,
           "total": 9691308,
-          "thinking_tokens": 0
+          "thinking_tokens": 9179
         },
         {
           "sid": "e7cd29fc-cbf2-4b69-a776-dbf731392d0d",
@@ -4701,7 +4797,7 @@
           "cache_read": 8617087,
           "cache_creation": 729632,
           "total": 9557098,
-          "thinking_tokens": 0
+          "thinking_tokens": 12836
         },
         {
           "sid": "48092643-8f85-461a-ae12-3066751d0928",
@@ -4713,7 +4809,7 @@
           "cache_read": 5388891,
           "cache_creation": 474239,
           "total": 6038716,
-          "thinking_tokens": 0
+          "thinking_tokens": 11182
         },
         {
           "sid": "53eb4d49-d9ba-42ab-97da-909ea4ff0afe",
@@ -4725,7 +4821,7 @@
           "cache_read": 4831152,
           "cache_creation": 485947,
           "total": 5490386,
-          "thinking_tokens": 0
+          "thinking_tokens": 7588
         },
         {
           "sid": "61c4d54d-8b86-471d-861d-e18f4ef8eaa4",
@@ -4737,7 +4833,7 @@
           "cache_read": 9482307,
           "cache_creation": 883557,
           "total": 10612821,
-          "thinking_tokens": 0
+          "thinking_tokens": 10592
         },
         {
           "sid": "923c21ef-4a35-42a1-8abc-a16a8a43d45d",
@@ -4749,7 +4845,7 @@
           "cache_read": 9620757,
           "cache_creation": 823083,
           "total": 10681761,
-          "thinking_tokens": 0
+          "thinking_tokens": 8789
         },
         {
           "sid": "44430e6b-868c-45df-92ee-87b5756d45b7",
@@ -4761,7 +4857,7 @@
           "cache_read": 25490679,
           "cache_creation": 878016,
           "total": 26707276,
-          "thinking_tokens": 0
+          "thinking_tokens": 12687
         },
         {
           "sid": "cafa149c-2ee2-44f7-b562-92b7fc0bf07b",
@@ -4773,7 +4869,7 @@
           "cache_read": 25264251,
           "cache_creation": 2152670,
           "total": 27846105,
-          "thinking_tokens": 0
+          "thinking_tokens": 20188
         },
         {
           "sid": "0b206f90-4449-467f-b816-b5071c085f6d",
@@ -4785,7 +4881,7 @@
           "cache_read": 8906672,
           "cache_creation": 636853,
           "total": 9755252,
-          "thinking_tokens": 0
+          "thinking_tokens": 7109
         },
         {
           "sid": "41fa0d38-6434-4878-9ee1-b5886506d2d4",
@@ -4797,7 +4893,7 @@
           "cache_read": 3948378,
           "cache_creation": 426351,
           "total": 4518990,
-          "thinking_tokens": 0
+          "thinking_tokens": 5504
         },
         {
           "sid": "010bf059-0221-4839-abe2-80f31af2cb13",
@@ -4809,7 +4905,7 @@
           "cache_read": 5489271,
           "cache_creation": 533140,
           "total": 6199699,
-          "thinking_tokens": 0
+          "thinking_tokens": 8316
         },
         {
           "sid": "0ec6ce0f-df94-4364-85e3-b45df77bf1e8",
@@ -4941,7 +5037,7 @@
           "cache_read": 6750349,
           "cache_creation": 687400,
           "total": 7617388,
-          "thinking_tokens": 0
+          "thinking_tokens": 8383
         },
         {
           "sid": "c2d1442a-6e93-4b1e-bb67-a7a8cbee773d",
@@ -4953,7 +5049,7 @@
           "cache_read": 4399770,
           "cache_creation": 883296,
           "total": 5426143,
-          "thinking_tokens": 0
+          "thinking_tokens": 7787
         },
         {
           "sid": "6688fdeb-d20c-49cd-835a-5e81c24476d9",
@@ -4965,7 +5061,7 @@
           "cache_read": 7394439,
           "cache_creation": 990920,
           "total": 8570134,
-          "thinking_tokens": 0
+          "thinking_tokens": 11444
         },
         {
           "sid": "94c60e8c-1f9c-4f2f-b1b6-8bfa1d27f09a",
@@ -4977,7 +5073,7 @@
           "cache_read": 1540879,
           "cache_creation": 393163,
           "total": 2080519,
-          "thinking_tokens": 0
+          "thinking_tokens": 2917
         },
         {
           "sid": "900b7d62-6c24-4e56-8091-af990314bf1c",
@@ -4989,7 +5085,7 @@
           "cache_read": 440719,
           "cache_creation": 578828,
           "total": 1154461,
-          "thinking_tokens": 0
+          "thinking_tokens": 754
         },
         {
           "sid": "2d519111-9fa0-45aa-977e-38406b8ded14",
@@ -5001,7 +5097,7 @@
           "cache_read": 4401496,
           "cache_creation": 647954,
           "total": 5198086,
-          "thinking_tokens": 0
+          "thinking_tokens": 7601
         },
         {
           "sid": "7c3c69a2-51d3-44c5-a375-5d42bf2e2fe4",
@@ -5013,7 +5109,7 @@
           "cache_read": 5584330,
           "cache_creation": 885726,
           "total": 6671144,
-          "thinking_tokens": 0
+          "thinking_tokens": 7666
         },
         {
           "sid": "a5074e44-f98c-44e1-904c-25d6be2c2a32",
@@ -5025,7 +5121,7 @@
           "cache_read": 5620237,
           "cache_creation": 833803,
           "total": 6546886,
-          "thinking_tokens": 0
+          "thinking_tokens": 7290
         },
         {
           "sid": "08ff7f91-6dc6-463b-8d76-5357e8c0581c",
@@ -5037,7 +5133,7 @@
           "cache_read": 5231097,
           "cache_creation": 917632,
           "total": 6295495,
-          "thinking_tokens": 0
+          "thinking_tokens": 11156
         },
         {
           "sid": "46374628-0e4a-4470-9984-6ec2ddfc49eb",
@@ -5049,7 +5145,7 @@
           "cache_read": 4847332,
           "cache_creation": 937768,
           "total": 6003464,
-          "thinking_tokens": 0
+          "thinking_tokens": 10373
         },
         {
           "sid": "14e2acfe-7ab7-45db-b7ea-ee98fa49cef9",
@@ -5061,7 +5157,7 @@
           "cache_read": 5854244,
           "cache_creation": 604060,
           "total": 6577224,
-          "thinking_tokens": 0
+          "thinking_tokens": 12150
         },
         {
           "sid": "d5f4323f-714e-436e-8473-a0b282a9ce72",
@@ -5073,7 +5169,7 @@
           "cache_read": 7070524,
           "cache_creation": 959916,
           "total": 8198784,
-          "thinking_tokens": 0
+          "thinking_tokens": 18605
         },
         {
           "sid": "30c7d2d5-fa3b-4b93-95dd-9080264188aa",
@@ -5085,7 +5181,7 @@
           "cache_read": 9120814,
           "cache_creation": 914819,
           "total": 10332757,
-          "thinking_tokens": 0
+          "thinking_tokens": 21991
         },
         {
           "sid": "10c50229-22f6-4779-a821-7461a60463ce",
@@ -5097,7 +5193,7 @@
           "cache_read": 6485489,
           "cache_creation": 406640,
           "total": 7001399,
-          "thinking_tokens": 0
+          "thinking_tokens": 13967
         },
         {
           "sid": "99029da8-3bc6-4def-b782-ec5f7776a02a",
@@ -5109,7 +5205,7 @@
           "cache_read": 5535638,
           "cache_creation": 864644,
           "total": 6593966,
-          "thinking_tokens": 0
+          "thinking_tokens": 14632
         },
         {
           "sid": "ff25821b-801e-4554-b322-223cb0f3e253",
@@ -5121,7 +5217,7 @@
           "cache_read": 5292457,
           "cache_creation": 992633,
           "total": 6510144,
-          "thinking_tokens": 0
+          "thinking_tokens": 15772
         },
         {
           "sid": "af648ba3-3650-4150-9415-6e5eaecb29ba",
@@ -5133,7 +5229,7 @@
           "cache_read": 9944297,
           "cache_creation": 955124,
           "total": 11184837,
-          "thinking_tokens": 0
+          "thinking_tokens": 15126
         },
         {
           "sid": "915c4655-7628-4b97-9857-5cc538e764b5",
@@ -5145,6 +5241,342 @@
           "cache_read": 6667628,
           "cache_creation": 1114529,
           "total": 8049066,
+          "thinking_tokens": 10170
+        },
+        {
+          "sid": "6bcafc47-cedb-4db1-b7ea-5948dedf83a8",
+          "t": "2026-06-18T00:17:01.954Z",
+          "dur_min": 5.0,
+          "events": 99,
+          "in": 125567,
+          "out": 81524,
+          "cache_read": 6190639,
+          "cache_creation": 648746,
+          "total": 7046476,
+          "thinking_tokens": 10885
+        },
+        {
+          "sid": "7d60beb7-cf1d-4e3a-9b0d-e1b9271e2ccd",
+          "t": "2026-06-18T04:17:02.181Z",
+          "dur_min": 3.5,
+          "events": 107,
+          "in": 126322,
+          "out": 63765,
+          "cache_read": 5673689,
+          "cache_creation": 1311310,
+          "total": 7175086,
+          "thinking_tokens": 5573
+        },
+        {
+          "sid": "b7620d4c-1fdc-467e-a4b3-9a4b7603e9e5",
+          "t": "2026-06-18T08:17:02.343Z",
+          "dur_min": 7.3,
+          "events": 113,
+          "in": 59645,
+          "out": 115648,
+          "cache_read": 7075992,
+          "cache_creation": 967647,
+          "total": 8218932,
+          "thinking_tokens": 20333
+        },
+        {
+          "sid": "47b2b3da-a9ce-4c96-8fa9-164ea203ac78",
+          "t": "2026-06-18T12:17:02.598Z",
+          "dur_min": 3.4,
+          "events": 92,
+          "in": 122714,
+          "out": 60930,
+          "cache_read": 4216226,
+          "cache_creation": 864864,
+          "total": 5264734,
+          "thinking_tokens": 5812
+        },
+        {
+          "sid": "7ad92ad8-ffa6-4e7f-a3a2-9e7a7c6e61cc",
+          "t": "2026-06-18T16:17:03.549Z",
+          "dur_min": 3.9,
+          "events": 100,
+          "in": 109185,
+          "out": 61442,
+          "cache_read": 5287159,
+          "cache_creation": 923045,
+          "total": 6380831,
+          "thinking_tokens": 6177
+        },
+        {
+          "sid": "de889a94-5212-4ddb-9550-be3144be1d5b",
+          "t": "2026-06-18T20:17:04.727Z",
+          "dur_min": 6.4,
+          "events": 95,
+          "in": 41695,
+          "out": 57841,
+          "cache_read": 5617139,
+          "cache_creation": 319609,
+          "total": 6036284,
+          "thinking_tokens": 12815
+        },
+        {
+          "sid": "265b153e-3d87-444a-9e8f-f7e8a7f0b260",
+          "t": "2026-06-19T00:17:06.364Z",
+          "dur_min": 5.5,
+          "events": 144,
+          "in": 206471,
+          "out": 143781,
+          "cache_read": 8165898,
+          "cache_creation": 1021312,
+          "total": 9537462,
+          "thinking_tokens": 11217
+        },
+        {
+          "sid": "5e885a94-2974-4886-b84b-743d20b8e06e",
+          "t": "2026-06-19T04:17:04.264Z",
+          "dur_min": 3.4,
+          "events": 115,
+          "in": 138771,
+          "out": 70282,
+          "cache_read": 5923151,
+          "cache_creation": 1324371,
+          "total": 7456575,
+          "thinking_tokens": 5253
+        },
+        {
+          "sid": "3311ff03-be36-407f-afda-febd25cc390f",
+          "t": "2026-06-19T08:17:05.790Z",
+          "dur_min": 3.6,
+          "events": 85,
+          "in": 122553,
+          "out": 49831,
+          "cache_read": 4694315,
+          "cache_creation": 636219,
+          "total": 5502918,
+          "thinking_tokens": 7738
+        },
+        {
+          "sid": "d457a018-cda3-42ad-9d13-2f76c5c1ba7f",
+          "t": "2026-06-19T12:17:05.341Z",
+          "dur_min": 6.0,
+          "events": 123,
+          "in": 132523,
+          "out": 95360,
+          "cache_read": 6970567,
+          "cache_creation": 1000190,
+          "total": 8198640,
+          "thinking_tokens": 14779
+        },
+        {
+          "sid": "542c62d1-cfa1-457c-ae41-40482d07da41",
+          "t": "2026-06-19T16:17:05.331Z",
+          "dur_min": 7.6,
+          "events": 174,
+          "in": 131726,
+          "out": 147339,
+          "cache_read": 10808313,
+          "cache_creation": 1428978,
+          "total": 12516356,
+          "thinking_tokens": 16722
+        },
+        {
+          "sid": "81bbdbb7-e053-459a-870b-0579e8039316",
+          "t": "2026-06-19T20:17:07.079Z",
+          "dur_min": 5.3,
+          "events": 122,
+          "in": 109301,
+          "out": 85193,
+          "cache_read": 6645107,
+          "cache_creation": 753070,
+          "total": 7592671,
+          "thinking_tokens": 10687
+        },
+        {
+          "sid": "e6698b70-3052-46ad-8489-58135c41ccb3",
+          "t": "2026-06-20T00:30:04.404Z",
+          "dur_min": 4.0,
+          "events": 85,
+          "in": 134544,
+          "out": 53078,
+          "cache_read": 3965954,
+          "cache_creation": 691608,
+          "total": 4845184,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "39a67e4a-67d3-4e45-95e8-bc4766f46da5",
+          "t": "2026-06-20T04:17:19.621Z",
+          "dur_min": 37.2,
+          "events": 68,
+          "in": 135648,
+          "out": 41516,
+          "cache_read": 2751388,
+          "cache_creation": 710915,
+          "total": 3639467,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "a56a43e7-7efd-4b6f-bd2d-e460d2cf72fb",
+          "t": "2026-06-20T08:21:49.721Z",
+          "dur_min": 91.5,
+          "events": 89,
+          "in": 121868,
+          "out": 43947,
+          "cache_read": 4059390,
+          "cache_creation": 663858,
+          "total": 4889063,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "7c315509-863b-4ad5-acc3-cad6fca90f29",
+          "t": "2026-06-20T12:19:53.037Z",
+          "dur_min": 53.9,
+          "events": 33,
+          "in": 108482,
+          "out": 15982,
+          "cache_read": 919044,
+          "cache_creation": 377654,
+          "total": 1421162,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "78770ead-7f31-4f6b-a251-fdd9cc230f81",
+          "t": "2026-06-20T16:17:56.519Z",
+          "dur_min": 19.2,
+          "events": 68,
+          "in": 135250,
+          "out": 50898,
+          "cache_read": 2802105,
+          "cache_creation": 748894,
+          "total": 3737147,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "5524a594-2f50-454e-8199-6428d8291d24",
+          "t": "2026-06-21T00:24:57.583Z",
+          "dur_min": 103.8,
+          "events": 128,
+          "in": 121799,
+          "out": 95629,
+          "cache_read": 7703424,
+          "cache_creation": 1035772,
+          "total": 8956624,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "934f3eb5-0644-45ae-a6a5-a33936659f59",
+          "t": "2026-06-21T04:16:46.840Z",
+          "dur_min": 27.5,
+          "events": 46,
+          "in": 120828,
+          "out": 19007,
+          "cache_read": 1440781,
+          "cache_creation": 676051,
+          "total": 2256667,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "bc0ec9ac-4f37-4a8f-ac84-e51b4b36b0f9",
+          "t": "2026-06-21T11:15:25.714Z",
+          "dur_min": 18.8,
+          "events": 59,
+          "in": 62460,
+          "out": 43967,
+          "cache_read": 2953846,
+          "cache_creation": 439524,
+          "total": 3499797,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "41a1da4c-d520-460c-bda0-9dbdad5f0653",
+          "t": "2026-06-21T12:35:24.815Z",
+          "dur_min": 42.0,
+          "events": 173,
+          "in": 165966,
+          "out": 183330,
+          "cache_read": 10917291,
+          "cache_creation": 1311301,
+          "total": 12577888,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "656e1ac9-3141-4a93-bea9-20e153932911",
+          "t": "2026-06-21T16:21:42.744Z",
+          "dur_min": 11.4,
+          "events": 47,
+          "in": 133880,
+          "out": 19369,
+          "cache_read": 1324876,
+          "cache_creation": 618495,
+          "total": 2096620,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "a4821cdf-098e-4f44-9e54-5f7f02addd75",
+          "t": "2026-06-21T20:16:11.985Z",
+          "dur_min": 39.7,
+          "events": 44,
+          "in": 121804,
+          "out": 22065,
+          "cache_read": 1402737,
+          "cache_creation": 377233,
+          "total": 1923839,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "c69a3165-729f-4b71-a8df-3098c1091811",
+          "t": "2026-06-22T00:16:23.974Z",
+          "dur_min": 35.2,
+          "events": 33,
+          "in": 108480,
+          "out": 15980,
+          "cache_read": 581124,
+          "cache_creation": 643480,
+          "total": 1349064,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "f6ee6b7d-1e98-4a57-b114-4fd4e130b7ac",
+          "t": "2026-06-22T05:41:42.025Z",
+          "dur_min": 7.4,
+          "events": 110,
+          "in": 108902,
+          "out": 87009,
+          "cache_read": 6793462,
+          "cache_creation": 498648,
+          "total": 7488021,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "252be8fd-b615-4302-a9c8-ddf44ce004c4",
+          "t": "2026-06-22T08:17:23.510Z",
+          "dur_min": 16.8,
+          "events": 41,
+          "in": 133874,
+          "out": 18681,
+          "cache_read": 1062163,
+          "cache_creation": 617440,
+          "total": 1832158,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "dab334b3-e75b-4bf1-8096-2aa210fc8e8d",
+          "t": "2026-06-22T19:53:44.742Z",
+          "dur_min": 6.2,
+          "events": 99,
+          "in": 117626,
+          "out": 75137,
+          "cache_read": 6180468,
+          "cache_creation": 587224,
+          "total": 6960455,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "3ab118bb-beb5-443a-a6ba-120a5aa3e9a9",
+          "t": "2026-06-22T20:17:13.387Z",
+          "dur_min": 8.6,
+          "events": 157,
+          "in": 137952,
+          "out": 135799,
+          "cache_read": 10500911,
+          "cache_creation": 1160354,
+          "total": 11935016,
           "thinking_tokens": 0
         }
       ]
@@ -5155,9 +5587,9 @@
       "category": "project",
       "thinkers": [],
       "schedule": "every 4h :15 (offset)",
-      "runs": 85,
-      "out_total": 5551842,
-      "all_total": 492515325,
+      "runs": 114,
+      "out_total": 7186701,
+      "all_total": 620015909,
       "median_gap_h": 4.0,
       "rows": [
         {
@@ -5338,7 +5770,7 @@
           "cache_read": 3848781,
           "cache_creation": 363136,
           "total": 4281372,
-          "thinking_tokens": 0
+          "thinking_tokens": 4491
         },
         {
           "sid": "ad17224f-82aa-408c-a602-62bddbcff971",
@@ -5350,7 +5782,7 @@
           "cache_read": 7070544,
           "cache_creation": 1106523,
           "total": 8388604,
-          "thinking_tokens": 0
+          "thinking_tokens": 12359
         },
         {
           "sid": "e426b549-e6ac-4718-aa3b-31258a9c8ed1",
@@ -5362,7 +5794,7 @@
           "cache_read": 3850428,
           "cache_creation": 516800,
           "total": 4547988,
-          "thinking_tokens": 0
+          "thinking_tokens": 8581
         },
         {
           "sid": "df56fdd3-123b-456b-b129-37450ac8c6ff",
@@ -5374,7 +5806,7 @@
           "cache_read": 7263200,
           "cache_creation": 555627,
           "total": 7957952,
-          "thinking_tokens": 0
+          "thinking_tokens": 8999
         },
         {
           "sid": "da9aa93d-561d-48c5-a870-8fd388a210ea",
@@ -5386,7 +5818,7 @@
           "cache_read": 1240323,
           "cache_creation": 701195,
           "total": 2104072,
-          "thinking_tokens": 0
+          "thinking_tokens": 4209
         },
         {
           "sid": "52fb3e26-3ef9-45b1-8642-34c3c2db05e7",
@@ -5398,7 +5830,7 @@
           "cache_read": 5869407,
           "cache_creation": 485963,
           "total": 6494589,
-          "thinking_tokens": 0
+          "thinking_tokens": 14435
         },
         {
           "sid": "17081dfb-24e7-4ccc-8573-b2ce9b62aae7",
@@ -5410,7 +5842,7 @@
           "cache_read": 8983623,
           "cache_creation": 1580961,
           "total": 10797813,
-          "thinking_tokens": 0
+          "thinking_tokens": 13889
         },
         {
           "sid": "c8d9a1e6-16b9-4ce8-91b6-23472bf1dbda",
@@ -5422,7 +5854,7 @@
           "cache_read": 5910981,
           "cache_creation": 1042686,
           "total": 7074949,
-          "thinking_tokens": 0
+          "thinking_tokens": 7647
         },
         {
           "sid": "fc99f742-340f-41cf-88ea-cf138800e928",
@@ -5434,7 +5866,7 @@
           "cache_read": 2947624,
           "cache_creation": 407877,
           "total": 3433161,
-          "thinking_tokens": 0
+          "thinking_tokens": 6001
         },
         {
           "sid": "ca1d1279-b502-4a25-a9ff-e76b0eef5968",
@@ -5446,7 +5878,7 @@
           "cache_read": 4861823,
           "cache_creation": 940804,
           "total": 5908575,
-          "thinking_tokens": 0
+          "thinking_tokens": 4570
         },
         {
           "sid": "f89f09cd-2c3b-46bd-92d9-87b15f38e6c5",
@@ -5458,7 +5890,7 @@
           "cache_read": 7698418,
           "cache_creation": 1429533,
           "total": 9347662,
-          "thinking_tokens": 0
+          "thinking_tokens": 11106
         },
         {
           "sid": "bf58c3ab-1bcc-43ae-93f7-6fe606f098c0",
@@ -5470,7 +5902,7 @@
           "cache_read": 2677260,
           "cache_creation": 996848,
           "total": 3773023,
-          "thinking_tokens": 0
+          "thinking_tokens": 4333
         },
         {
           "sid": "16f34ade-b7fa-48bc-af95-b53e7a666b53",
@@ -5482,7 +5914,7 @@
           "cache_read": 4123784,
           "cache_creation": 573288,
           "total": 4798570,
-          "thinking_tokens": 0
+          "thinking_tokens": 5191
         },
         {
           "sid": "e0a03e12-fac7-4b30-8b0c-795b7bd9b800",
@@ -5494,7 +5926,7 @@
           "cache_read": 1794811,
           "cache_creation": 397545,
           "total": 2336485,
-          "thinking_tokens": 0
+          "thinking_tokens": 4918
         },
         {
           "sid": "7fc38169-c2a5-4922-b74c-60ab8650e76a",
@@ -5506,7 +5938,7 @@
           "cache_read": 8519654,
           "cache_creation": 1411490,
           "total": 10094833,
-          "thinking_tokens": 0
+          "thinking_tokens": 17459
         },
         {
           "sid": "9652f7e4-0b3f-4d9b-94c7-5e8342ae0dd4",
@@ -5518,7 +5950,7 @@
           "cache_read": 2280302,
           "cache_creation": 545400,
           "total": 2992969,
-          "thinking_tokens": 0
+          "thinking_tokens": 4677
         },
         {
           "sid": "4dd3f96b-8662-4668-8522-c3bab751e579",
@@ -5530,7 +5962,7 @@
           "cache_read": 2575942,
           "cache_creation": 350497,
           "total": 2994943,
-          "thinking_tokens": 0
+          "thinking_tokens": 3433
         },
         {
           "sid": "748677e2-0f1c-431b-adb2-5672a6da462c",
@@ -5542,7 +5974,7 @@
           "cache_read": 6502614,
           "cache_creation": 1040448,
           "total": 7754292,
-          "thinking_tokens": 0
+          "thinking_tokens": 8242
         },
         {
           "sid": "0be07c96-d53d-415b-967a-d89c85ffed5e",
@@ -5554,7 +5986,7 @@
           "cache_read": 7292903,
           "cache_creation": 802256,
           "total": 8368165,
-          "thinking_tokens": 0
+          "thinking_tokens": 13678
         },
         {
           "sid": "c31c9ffd-42b8-4053-917b-c96ea0c57bc9",
@@ -5566,7 +5998,7 @@
           "cache_read": 2477342,
           "cache_creation": 444787,
           "total": 2983635,
-          "thinking_tokens": 0
+          "thinking_tokens": 7174
         },
         {
           "sid": "5062b586-38cd-47b0-b176-81f9bc48b945",
@@ -5578,7 +6010,7 @@
           "cache_read": 2456102,
           "cache_creation": 549257,
           "total": 3169441,
-          "thinking_tokens": 0
+          "thinking_tokens": 10589
         },
         {
           "sid": "49aa1481-13af-4552-9340-4bf301068740",
@@ -5590,7 +6022,7 @@
           "cache_read": 3708644,
           "cache_creation": 515582,
           "total": 4406095,
-          "thinking_tokens": 0
+          "thinking_tokens": 6003
         },
         {
           "sid": "876f90c6-423b-4928-83dc-7f8827fd6f29",
@@ -5602,7 +6034,7 @@
           "cache_read": 768155,
           "cache_creation": 407926,
           "total": 1320766,
-          "thinking_tokens": 0
+          "thinking_tokens": 788
         },
         {
           "sid": "a5aacb6a-8b1c-43e6-9f5f-760f14e19d20",
@@ -5614,7 +6046,7 @@
           "cache_read": 2484579,
           "cache_creation": 331170,
           "total": 2880221,
-          "thinking_tokens": 0
+          "thinking_tokens": 3601
         },
         {
           "sid": "1f5b5616-5c60-4e40-af6c-f8f21bb1f067",
@@ -5626,7 +6058,7 @@
           "cache_read": 6100112,
           "cache_creation": 739808,
           "total": 6943089,
-          "thinking_tokens": 0
+          "thinking_tokens": 8683
         },
         {
           "sid": "03f3dddc-1e77-4b02-bd8e-4e07056de3e7",
@@ -5638,7 +6070,7 @@
           "cache_read": 4599369,
           "cache_creation": 489525,
           "total": 5171956,
-          "thinking_tokens": 0
+          "thinking_tokens": 5564
         },
         {
           "sid": "0c140b73-f658-4fec-bbec-476e10d01496",
@@ -5650,7 +6082,7 @@
           "cache_read": 3678672,
           "cache_creation": 490374,
           "total": 4330947,
-          "thinking_tokens": 0
+          "thinking_tokens": 5548
         },
         {
           "sid": "ef18a5b2-8a60-4e2b-878e-a7f02ce89110",
@@ -5662,7 +6094,7 @@
           "cache_read": 6125315,
           "cache_creation": 629268,
           "total": 6897633,
-          "thinking_tokens": 0
+          "thinking_tokens": 9991
         },
         {
           "sid": "e50034de-0470-4669-87d7-4b894e712b2a",
@@ -5674,7 +6106,7 @@
           "cache_read": 5294260,
           "cache_creation": 444004,
           "total": 5857869,
-          "thinking_tokens": 0
+          "thinking_tokens": 7211
         },
         {
           "sid": "9ccd2666-11eb-416e-bade-14751321ee93",
@@ -5686,7 +6118,7 @@
           "cache_read": 8015512,
           "cache_creation": 1113121,
           "total": 9292445,
-          "thinking_tokens": 0
+          "thinking_tokens": 7187
         },
         {
           "sid": "460feee4-4633-41bf-9706-a386ee4558e9",
@@ -5698,7 +6130,7 @@
           "cache_read": 3746826,
           "cache_creation": 468913,
           "total": 4320291,
-          "thinking_tokens": 0
+          "thinking_tokens": 5766
         },
         {
           "sid": "a95f7b85-f52b-491e-bc63-01d3392b6f8c",
@@ -5710,7 +6142,7 @@
           "cache_read": 7104799,
           "cache_creation": 473603,
           "total": 7718308,
-          "thinking_tokens": 0
+          "thinking_tokens": 8132
         },
         {
           "sid": "21bff6ce-7e0a-4ff5-a525-8065940b3355",
@@ -5722,7 +6154,7 @@
           "cache_read": 4297945,
           "cache_creation": 555918,
           "total": 4983784,
-          "thinking_tokens": 0
+          "thinking_tokens": 6354
         },
         {
           "sid": "62337b2c-4053-478e-99cb-3f3ee33e6a15",
@@ -5734,7 +6166,7 @@
           "cache_read": 5311275,
           "cache_creation": 739452,
           "total": 6165958,
-          "thinking_tokens": 0
+          "thinking_tokens": 8682
         },
         {
           "sid": "242b8b71-20be-479e-a608-c7a6a0b4cb6c",
@@ -5746,7 +6178,7 @@
           "cache_read": 7544493,
           "cache_creation": 810956,
           "total": 8486445,
-          "thinking_tokens": 0
+          "thinking_tokens": 4722
         },
         {
           "sid": "be78bb97-314d-40fb-b72c-20ba565e069b",
@@ -5758,7 +6190,7 @@
           "cache_read": 3766085,
           "cache_creation": 403037,
           "total": 4250425,
-          "thinking_tokens": 0
+          "thinking_tokens": 5323
         },
         {
           "sid": "6b2510be-7b22-4c9b-bfc1-cfefbd322d89",
@@ -5770,7 +6202,7 @@
           "cache_read": 2756372,
           "cache_creation": 519450,
           "total": 3367923,
-          "thinking_tokens": 0
+          "thinking_tokens": 3613
         },
         {
           "sid": "cedeab96-f8f6-41f9-84d7-91b1e98cd9d6",
@@ -5782,7 +6214,7 @@
           "cache_read": 1836155,
           "cache_creation": 398314,
           "total": 2304585,
-          "thinking_tokens": 0
+          "thinking_tokens": 2929
         },
         {
           "sid": "970251d6-dbdf-4390-ae8f-fe439f189071",
@@ -5794,7 +6226,7 @@
           "cache_read": 3144393,
           "cache_creation": 387398,
           "total": 3611580,
-          "thinking_tokens": 0
+          "thinking_tokens": 7339
         },
         {
           "sid": "e62fad5f-b616-47a9-9ea5-41fb2c0191db",
@@ -5806,7 +6238,7 @@
           "cache_read": 11922089,
           "cache_creation": 824615,
           "total": 12972603,
-          "thinking_tokens": 0
+          "thinking_tokens": 20002
         },
         {
           "sid": "febeb4bd-416d-423c-9356-1818464db370",
@@ -5818,7 +6250,7 @@
           "cache_read": 3373596,
           "cache_creation": 508728,
           "total": 4059719,
-          "thinking_tokens": 0
+          "thinking_tokens": 6198
         },
         {
           "sid": "d97b58ba-766b-4484-90bb-4dea43ca6c9f",
@@ -5830,7 +6262,7 @@
           "cache_read": 6530064,
           "cache_creation": 496618,
           "total": 7153144,
-          "thinking_tokens": 0
+          "thinking_tokens": 9337
         },
         {
           "sid": "8d616e9d-a9e1-4f0c-9203-7167e01f994c",
@@ -5842,7 +6274,7 @@
           "cache_read": 8162564,
           "cache_creation": 517266,
           "total": 8778302,
-          "thinking_tokens": 0
+          "thinking_tokens": 7757
         },
         {
           "sid": "bb3f8d61-a620-40f8-b708-896b99e9730a",
@@ -5986,7 +6418,7 @@
           "cache_read": 3460596,
           "cache_creation": 771757,
           "total": 4408850,
-          "thinking_tokens": 0
+          "thinking_tokens": 5528
         },
         {
           "sid": "55e4ccf2-b37b-413c-84fc-43ebd0d13de8",
@@ -5998,7 +6430,7 @@
           "cache_read": 842908,
           "cache_creation": 348816,
           "total": 1259488,
-          "thinking_tokens": 0
+          "thinking_tokens": 2803
         },
         {
           "sid": "35adbf0c-09d7-46d1-94a0-225a3be19fa8",
@@ -6010,7 +6442,7 @@
           "cache_read": 23177028,
           "cache_creation": 2519996,
           "total": 26098642,
-          "thinking_tokens": 0
+          "thinking_tokens": 44182
         },
         {
           "sid": "06e19d1b-7b9f-45ea-bdb9-4aecbe3d34ce",
@@ -6022,7 +6454,7 @@
           "cache_read": 6619026,
           "cache_creation": 565037,
           "total": 7302805,
-          "thinking_tokens": 0
+          "thinking_tokens": 9476
         },
         {
           "sid": "a547096b-9cd1-4ebe-9503-d8397cce78c0",
@@ -6034,7 +6466,7 @@
           "cache_read": 4100302,
           "cache_creation": 561115,
           "total": 4761986,
-          "thinking_tokens": 0
+          "thinking_tokens": 6915
         },
         {
           "sid": "919c84dd-ae2c-4a23-a6b3-2f0e5fb497dd",
@@ -6046,7 +6478,7 @@
           "cache_read": 4540586,
           "cache_creation": 1263987,
           "total": 6033848,
-          "thinking_tokens": 0
+          "thinking_tokens": 7882
         },
         {
           "sid": "e3706b28-bf52-4cae-8ee2-099066352a82",
@@ -6058,7 +6490,7 @@
           "cache_read": 3254916,
           "cache_creation": 610810,
           "total": 3962952,
-          "thinking_tokens": 0
+          "thinking_tokens": 4498
         },
         {
           "sid": "a732515f-54bc-40aa-b0c9-fca268ba2330",
@@ -6070,7 +6502,7 @@
           "cache_read": 4044990,
           "cache_creation": 1651698,
           "total": 5880065,
-          "thinking_tokens": 0
+          "thinking_tokens": 3198
         },
         {
           "sid": "5c209d41-db05-4065-ac72-c44ea9db1fef",
@@ -6082,7 +6514,7 @@
           "cache_read": 6193361,
           "cache_creation": 664392,
           "total": 7091739,
-          "thinking_tokens": 0
+          "thinking_tokens": 15619
         },
         {
           "sid": "95810ee9-ad69-456b-b6ec-0afdb7224982",
@@ -6094,7 +6526,7 @@
           "cache_read": 7971262,
           "cache_creation": 1108691,
           "total": 9412402,
-          "thinking_tokens": 0
+          "thinking_tokens": 24102
         },
         {
           "sid": "359f67dc-f98c-401c-95d9-480c973a183b",
@@ -6106,7 +6538,7 @@
           "cache_read": 3356865,
           "cache_creation": 1511329,
           "total": 5066499,
-          "thinking_tokens": 0
+          "thinking_tokens": 4361
         },
         {
           "sid": "bf7ad3f9-1e1d-40fb-8a4a-c8f63cd163ce",
@@ -6118,7 +6550,7 @@
           "cache_read": 5829182,
           "cache_creation": 1459634,
           "total": 7406071,
-          "thinking_tokens": 0
+          "thinking_tokens": 4152
         },
         {
           "sid": "37e40c39-e329-40a4-acdb-6e0b47fceaad",
@@ -6130,7 +6562,7 @@
           "cache_read": 9746331,
           "cache_creation": 768331,
           "total": 10878925,
-          "thinking_tokens": 0
+          "thinking_tokens": 21787
         },
         {
           "sid": "d3c38ad4-7319-40fd-aa10-c28a5bafd899",
@@ -6142,7 +6574,7 @@
           "cache_read": 7621240,
           "cache_creation": 1108982,
           "total": 9009753,
-          "thinking_tokens": 0
+          "thinking_tokens": 19509
         },
         {
           "sid": "618cdb66-eabe-4715-8def-30412da37999",
@@ -6154,7 +6586,7 @@
           "cache_read": 7482136,
           "cache_creation": 742747,
           "total": 8436093,
-          "thinking_tokens": 0
+          "thinking_tokens": 11644
         },
         {
           "sid": "2d27d739-0c51-4451-978e-96890bf87474",
@@ -6166,7 +6598,7 @@
           "cache_read": 6747405,
           "cache_creation": 561139,
           "total": 7489932,
-          "thinking_tokens": 0
+          "thinking_tokens": 14228
         },
         {
           "sid": "6c4c3df6-a6de-4407-80c4-9bdaacaa5db4",
@@ -6178,6 +6610,354 @@
           "cache_read": 10411923,
           "cache_creation": 1208392,
           "total": 11913173,
+          "thinking_tokens": 13539
+        },
+        {
+          "sid": "cc265ff6-28fe-4a5c-8c7e-f52f08c914b4",
+          "t": "2026-06-17T22:24:08.434Z",
+          "dur_min": 4.9,
+          "events": 99,
+          "in": 165806,
+          "out": 131274,
+          "cache_read": 4719850,
+          "cache_creation": 1462550,
+          "total": 6479480,
+          "thinking_tokens": 11879
+        },
+        {
+          "sid": "2e52c812-a7e7-48b6-898e-1e5ceb10c1df",
+          "t": "2026-06-18T02:24:07.468Z",
+          "dur_min": 7.7,
+          "events": 162,
+          "in": 105371,
+          "out": 129004,
+          "cache_read": 11580678,
+          "cache_creation": 812161,
+          "total": 12627214,
+          "thinking_tokens": 17543
+        },
+        {
+          "sid": "c38357bb-5336-4b84-b632-e3451a5546e6",
+          "t": "2026-06-18T06:24:08.240Z",
+          "dur_min": 2.7,
+          "events": 50,
+          "in": 137215,
+          "out": 52806,
+          "cache_read": 1889321,
+          "cache_creation": 683955,
+          "total": 2763297,
+          "thinking_tokens": 5817
+        },
+        {
+          "sid": "233f2c9e-f826-4913-9eef-cfed9c9a7cc7",
+          "t": "2026-06-18T10:24:07.731Z",
+          "dur_min": 3.4,
+          "events": 77,
+          "in": 158616,
+          "out": 79904,
+          "cache_read": 3494041,
+          "cache_creation": 1415256,
+          "total": 5147817,
+          "thinking_tokens": 7298
+        },
+        {
+          "sid": "a429d9f5-b130-4040-a4be-a20507edeb87",
+          "t": "2026-06-18T14:24:08.770Z",
+          "dur_min": 5.4,
+          "events": 87,
+          "in": 70156,
+          "out": 94530,
+          "cache_read": 5737045,
+          "cache_creation": 399016,
+          "total": 6300747,
+          "thinking_tokens": 13144
+        },
+        {
+          "sid": "b1d55952-d4da-4dcc-ae55-b8f15b508462",
+          "t": "2026-06-18T18:24:10.291Z",
+          "dur_min": 3.0,
+          "events": 58,
+          "in": 121227,
+          "out": 46531,
+          "cache_read": 2775744,
+          "cache_creation": 555744,
+          "total": 3499246,
+          "thinking_tokens": 7351
+        },
+        {
+          "sid": "a786e890-4a4b-47b9-9b2d-a64c2e469708",
+          "t": "2026-06-18T22:24:11.343Z",
+          "dur_min": 11.0,
+          "events": 131,
+          "in": 154979,
+          "out": 172480,
+          "cache_read": 9522153,
+          "cache_creation": 1393084,
+          "total": 11242696,
+          "thinking_tokens": 32163
+        },
+        {
+          "sid": "634e9e10-972a-47ec-8310-8c9c35d7f5da",
+          "t": "2026-06-19T02:24:11.234Z",
+          "dur_min": 3.6,
+          "events": 78,
+          "in": 166019,
+          "out": 64968,
+          "cache_read": 4050450,
+          "cache_creation": 549953,
+          "total": 4831390,
+          "thinking_tokens": 8214
+        },
+        {
+          "sid": "82989cf9-559a-4b77-bcf1-5da3983bf15c",
+          "t": "2026-06-19T06:24:11.032Z",
+          "dur_min": 7.1,
+          "events": 128,
+          "in": 85876,
+          "out": 81924,
+          "cache_read": 9519712,
+          "cache_creation": 455475,
+          "total": 10142987,
+          "thinking_tokens": 17366
+        },
+        {
+          "sid": "a5b6d858-f8e3-4495-ab19-089370562a3a",
+          "t": "2026-06-19T10:24:10.703Z",
+          "dur_min": 4.1,
+          "events": 102,
+          "in": 176899,
+          "out": 95816,
+          "cache_read": 5590141,
+          "cache_creation": 1377793,
+          "total": 7240649,
+          "thinking_tokens": 9140
+        },
+        {
+          "sid": "2ee97e33-e6ad-4295-8bdd-56ba197dc0c1",
+          "t": "2026-06-19T14:24:11.496Z",
+          "dur_min": 2.8,
+          "events": 57,
+          "in": 136012,
+          "out": 49967,
+          "cache_read": 2663119,
+          "cache_creation": 650820,
+          "total": 3499918,
+          "thinking_tokens": 6377
+        },
+        {
+          "sid": "b5481a11-5e05-4a1b-babc-9c92898e23f0",
+          "t": "2026-06-19T17:12:48.724Z",
+          "dur_min": 3.8,
+          "events": 60,
+          "in": 155295,
+          "out": 62604,
+          "cache_read": 2969407,
+          "cache_creation": 543808,
+          "total": 3731114,
+          "thinking_tokens": 10087
+        },
+        {
+          "sid": "5eb04656-a858-46a2-91ce-baa563b8b278",
+          "t": "2026-06-19T18:24:11.690Z",
+          "dur_min": 2.3,
+          "events": 62,
+          "in": 148353,
+          "out": 37220,
+          "cache_read": 2849959,
+          "cache_creation": 504660,
+          "total": 3540192,
+          "thinking_tokens": 3631
+        },
+        {
+          "sid": "0754a004-b73e-485c-a9ba-d3601abc9531",
+          "t": "2026-06-19T22:29:38.087Z",
+          "dur_min": 12.9,
+          "events": 33,
+          "in": 54749,
+          "out": 12938,
+          "cache_read": 995186,
+          "cache_creation": 358663,
+          "total": 1421536,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "07806468-8034-44cb-ad94-1c9d3dad7365",
+          "t": "2026-06-20T02:24:10.125Z",
+          "dur_min": 30.9,
+          "events": 34,
+          "in": 147924,
+          "out": 19669,
+          "cache_read": 813567,
+          "cache_creation": 466533,
+          "total": 1447693,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "cdb1ace4-38fb-4f79-8ee5-ab449437f959",
+          "t": "2026-06-20T06:17:50.804Z",
+          "dur_min": 108.2,
+          "events": 73,
+          "in": 135566,
+          "out": 38378,
+          "cache_read": 3424315,
+          "cache_creation": 812853,
+          "total": 4411112,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "4d61b656-f624-4c68-9c8f-2a57c548425a",
+          "t": "2026-06-20T10:35:28.615Z",
+          "dur_min": 61.7,
+          "events": 63,
+          "in": 148583,
+          "out": 35401,
+          "cache_read": 2863338,
+          "cache_creation": 488501,
+          "total": 3535823,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "dc0f1e06-ac89-4c47-bf9d-feac3be9cbdf",
+          "t": "2026-06-20T14:31:31.635Z",
+          "dur_min": 36.8,
+          "events": 41,
+          "in": 147934,
+          "out": 21318,
+          "cache_read": 1274415,
+          "cache_creation": 470909,
+          "total": 1914576,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "721ceed6-08a8-4881-99b3-3031f80e1dbd",
+          "t": "2026-06-20T18:26:37.922Z",
+          "dur_min": 31.7,
+          "events": 34,
+          "in": 54751,
+          "out": 11645,
+          "cache_read": 1088914,
+          "cache_creation": 359452,
+          "total": 1514762,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "30401ebd-2655-4c0a-ac4e-6b258f49f5bf",
+          "t": "2026-06-20T22:25:23.689Z",
+          "dur_min": 137.8,
+          "events": 60,
+          "in": 135748,
+          "out": 28888,
+          "cache_read": 2548790,
+          "cache_creation": 508778,
+          "total": 3222204,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "777ade7a-cb7f-4e77-823b-badb70105335",
+          "t": "2026-06-21T02:17:03.293Z",
+          "dur_min": 11.1,
+          "events": 51,
+          "in": 148799,
+          "out": 28961,
+          "cache_read": 1490721,
+          "cache_creation": 1036056,
+          "total": 2704537,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "88e3c4ff-a25c-4887-b029-6c4e67e05862",
+          "t": "2026-06-21T06:23:16.781Z",
+          "dur_min": 23.9,
+          "events": 37,
+          "in": 135595,
+          "out": 21841,
+          "cache_read": 906494,
+          "cache_creation": 530923,
+          "total": 1594853,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "825b1d9a-3add-4903-bb13-ca4b0d77230c",
+          "t": "2026-06-21T11:34:22.018Z",
+          "dur_min": 3.1,
+          "events": 61,
+          "in": 136018,
+          "out": 52941,
+          "cache_read": 3077915,
+          "cache_creation": 671898,
+          "total": 3938772,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "a21605c4-2157-4283-b421-7a29fe3cb99f",
+          "t": "2026-06-21T14:25:25.308Z",
+          "dur_min": 3.6,
+          "events": 46,
+          "in": 68568,
+          "out": 27779,
+          "cache_read": 1714980,
+          "cache_creation": 511827,
+          "total": 2323154,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "14346123-8a9d-42d9-9024-a4939e1a0add",
+          "t": "2026-06-21T18:25:08.544Z",
+          "dur_min": 24.0,
+          "events": 65,
+          "in": 42128,
+          "out": 40894,
+          "cache_read": 3406183,
+          "cache_creation": 408438,
+          "total": 3897643,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "c7b7fe7e-9b8c-4367-8dce-5824ac998d4d",
+          "t": "2026-06-21T22:21:16.182Z",
+          "dur_min": 17.7,
+          "events": 37,
+          "in": 54264,
+          "out": 13899,
+          "cache_read": 1266191,
+          "cache_creation": 372188,
+          "total": 1706542,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "42c78e62-6bdc-40e2-99d1-d3b619292bbc",
+          "t": "2026-06-22T02:47:00.002Z",
+          "dur_min": 97.1,
+          "events": 87,
+          "in": 175394,
+          "out": 93324,
+          "cache_read": 4777574,
+          "cache_creation": 729829,
+          "total": 5776121,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "a71ebe2c-6712-42c6-89c1-4a213517afb2",
+          "t": "2026-06-22T06:17:24.534Z",
+          "dur_min": 17.5,
+          "events": 46,
+          "in": 134629,
+          "out": 25161,
+          "cache_read": 1670488,
+          "cache_creation": 490460,
+          "total": 2320738,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "3587a83a-2fcc-4fd5-b5b4-62294965c45b",
+          "t": "2026-06-22T20:00:47.309Z",
+          "dur_min": 3.9,
+          "events": 69,
+          "in": 61724,
+          "out": 62794,
+          "cache_read": 3994051,
+          "cache_creation": 605202,
+          "total": 4723771,
           "thinking_tokens": 0
         }
       ]
@@ -6188,10 +6968,10 @@
       "category": "c2a2-pipeline",
       "thinkers": [],
       "schedule": "daily 00:39",
-      "runs": 23,
-      "out_total": 3732414,
-      "all_total": 243079090,
-      "median_gap_h": 24.1,
+      "runs": 28,
+      "out_total": 4051857,
+      "all_total": 263507798,
+      "median_gap_h": 24.0,
       "rows": [
         {
           "sid": "f885dc85-6107-4cda-9909-aed14ea4493d",
@@ -6323,7 +7103,7 @@
           "cache_read": 16603316,
           "cache_creation": 515953,
           "total": 17317068,
-          "thinking_tokens": 0
+          "thinking_tokens": 15700
         },
         {
           "sid": "1e246cb3-2d1c-45ff-a46f-3786a86c1d15",
@@ -6335,7 +7115,7 @@
           "cache_read": 11847182,
           "cache_creation": 869497,
           "total": 12987548,
-          "thinking_tokens": 0
+          "thinking_tokens": 13893
         },
         {
           "sid": "9ce1d556-62a5-4c27-921c-3ab866a4fe05",
@@ -6347,7 +7127,7 @@
           "cache_read": 8381191,
           "cache_creation": 465502,
           "total": 9017368,
-          "thinking_tokens": 0
+          "thinking_tokens": 12110
         },
         {
           "sid": "0963f73f-2fbb-4f47-b32e-2a51dce073da",
@@ -6359,7 +7139,7 @@
           "cache_read": 10664787,
           "cache_creation": 525867,
           "total": 11354745,
-          "thinking_tokens": 0
+          "thinking_tokens": 11495
         },
         {
           "sid": "8fd9dfac-201c-4e16-a0fb-e646ab449a14",
@@ -6371,7 +7151,7 @@
           "cache_read": 1867699,
           "cache_creation": 256012,
           "total": 2189307,
-          "thinking_tokens": 0
+          "thinking_tokens": 3526
         },
         {
           "sid": "8a50650f-8029-42e7-b675-9d6819ed6fe0",
@@ -6383,7 +7163,7 @@
           "cache_read": 594301,
           "cache_creation": 166710,
           "total": 805244,
-          "thinking_tokens": 0
+          "thinking_tokens": 529
         },
         {
           "sid": "b8c819ed-b4e2-4a82-915f-8fa13385276d",
@@ -6395,7 +7175,7 @@
           "cache_read": 10037126,
           "cache_creation": 874124,
           "total": 11242169,
-          "thinking_tokens": 0
+          "thinking_tokens": 23643
         },
         {
           "sid": "75d10291-cb94-482d-8313-4ff742797a13",
@@ -6407,7 +7187,7 @@
           "cache_read": 6806153,
           "cache_creation": 765629,
           "total": 7800396,
-          "thinking_tokens": 0
+          "thinking_tokens": 13265
         },
         {
           "sid": "30ccd3fa-cc1c-4032-b5fc-7507200e59bc",
@@ -6443,7 +7223,7 @@
           "cache_read": 1119301,
           "cache_creation": 342482,
           "total": 1510481,
-          "thinking_tokens": 0
+          "thinking_tokens": 1213
         },
         {
           "sid": "1619c968-8ec8-41f2-909f-ea79808cf63c",
@@ -6455,7 +7235,7 @@
           "cache_read": 13079616,
           "cache_creation": 679509,
           "total": 13975646,
-          "thinking_tokens": 0
+          "thinking_tokens": 17003
         },
         {
           "sid": "428faf20-15a6-4410-8c7b-667da2a57705",
@@ -6467,6 +7247,331 @@
           "cache_read": 10813250,
           "cache_creation": 667988,
           "total": 11741337,
+          "thinking_tokens": 13549
+        },
+        {
+          "sid": "f1908838-bf05-4cdc-b65e-51c929384af4",
+          "t": "2026-06-18T04:39:42.405Z",
+          "dur_min": 1.7,
+          "events": 42,
+          "in": 54774,
+          "out": 21620,
+          "cache_read": 1671273,
+          "cache_creation": 275584,
+          "total": 2023251,
+          "thinking_tokens": 2852
+        },
+        {
+          "sid": "944b5d38-761a-4ba0-bf99-210fc2819352",
+          "t": "2026-06-19T04:39:45.056Z",
+          "dur_min": 14.7,
+          "events": 112,
+          "in": 95427,
+          "out": 191152,
+          "cache_read": 7142596,
+          "cache_creation": 723757,
+          "total": 8152932,
+          "thinking_tokens": 12052
+        },
+        {
+          "sid": "83d46c53-ff5a-4e1f-8f5f-34443d6be30e",
+          "t": "2026-06-20T04:35:05.217Z",
+          "dur_min": 1.1,
+          "events": 29,
+          "in": 54625,
+          "out": 11232,
+          "cache_read": 1032335,
+          "cache_creation": 272552,
+          "total": 1370744,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "49161f6c-fd90-4123-9376-7e10d5e6b4cc",
+          "t": "2026-06-21T04:44:23.558Z",
+          "dur_min": 51.9,
+          "events": 98,
+          "in": 46011,
+          "out": 70461,
+          "cache_read": 5666883,
+          "cache_creation": 578862,
+          "total": 6362217,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "2c5d0c13-86ad-4c9b-a004-96129748d854",
+          "t": "2026-06-22T05:34:45.711Z",
+          "dur_min": 2.1,
+          "events": 48,
+          "in": 41468,
+          "out": 24978,
+          "cache_read": 2044048,
+          "cache_creation": 409070,
+          "total": 2519564,
+          "thinking_tokens": 0
+        }
+      ]
+    },
+    {
+      "key": "summa-2026-daily-batch",
+      "label": "summa-2026-daily-batch",
+      "category": "project",
+      "thinkers": [],
+      "schedule": "daily 05:02",
+      "runs": 21,
+      "out_total": 2650876,
+      "all_total": 254625910,
+      "median_gap_h": 24.0,
+      "rows": [
+        {
+          "sid": "ab2b9023-1807-4159-b28e-9feae7ce22e5",
+          "t": "2026-05-11T09:02:40.724Z",
+          "dur_min": 12.6,
+          "events": 151,
+          "in": 134,
+          "out": 74302,
+          "cache_read": 9154089,
+          "cache_creation": 320344,
+          "total": 9548869,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "668516a9-d3e3-426b-b0c7-78311744d9eb",
+          "t": "2026-05-15T09:02:19.608Z",
+          "dur_min": 19.8,
+          "events": 207,
+          "in": 210,
+          "out": 151310,
+          "cache_read": 16009660,
+          "cache_creation": 1220146,
+          "total": 17381326,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "2e095f4e-3722-4caf-bcd0-011c6061daea",
+          "t": "2026-05-22T16:59:53.795Z",
+          "dur_min": 16.4,
+          "events": 230,
+          "in": 302,
+          "out": 334787,
+          "cache_read": 22324307,
+          "cache_creation": 1152174,
+          "total": 23811570,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "d1da2b6c-40f9-4665-8b96-f5ab449bfddc",
+          "t": "2026-05-28T09:02:23.588Z",
+          "dur_min": 30.8,
+          "events": 181,
+          "in": 154,
+          "out": 128179,
+          "cache_read": 13348280,
+          "cache_creation": 459992,
+          "total": 13936605,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "e770e960-b74a-4c84-97bf-30a5abe4a5c7",
+          "t": "2026-06-06T09:02:37.695Z",
+          "dur_min": 17.9,
+          "events": 235,
+          "in": 71719,
+          "out": 192519,
+          "cache_read": 18398162,
+          "cache_creation": 779756,
+          "total": 19442156,
+          "thinking_tokens": 16578
+        },
+        {
+          "sid": "e771030e-a1e1-4e2d-aa93-2bbfbd2a96bc",
+          "t": "2026-06-07T09:02:40.674Z",
+          "dur_min": 16.3,
+          "events": 160,
+          "in": 96049,
+          "out": 181930,
+          "cache_read": 12500737,
+          "cache_creation": 768336,
+          "total": 13547052,
+          "thinking_tokens": 17525
+        },
+        {
+          "sid": "4d096b49-8c8f-4023-ae46-c98edd2a37df",
+          "t": "2026-06-08T09:02:43.302Z",
+          "dur_min": 18.2,
+          "events": 215,
+          "in": 80817,
+          "out": 171769,
+          "cache_read": 15992252,
+          "cache_creation": 504366,
+          "total": 16749204,
+          "thinking_tokens": 15430
+        },
+        {
+          "sid": "495350d8-1469-4029-8324-baec725e4db1",
+          "t": "2026-06-09T09:10:49.956Z",
+          "dur_min": 16.2,
+          "events": 34,
+          "in": 38834,
+          "out": 16403,
+          "cache_read": 1038085,
+          "cache_creation": 203380,
+          "total": 1296702,
+          "thinking_tokens": 786
+        },
+        {
+          "sid": "b05003a9-3cb8-4f06-99a1-f8ae8e38acea",
+          "t": "2026-06-10T09:02:12.564Z",
+          "dur_min": 28.8,
+          "events": 246,
+          "in": 92861,
+          "out": 256162,
+          "cache_read": 24726932,
+          "cache_creation": 614035,
+          "total": 25689990,
+          "thinking_tokens": 30594
+        },
+        {
+          "sid": "7d335f69-443c-4c79-8a1b-dba52d0e00bd",
+          "t": "2026-06-11T09:02:14.652Z",
+          "dur_min": 17.9,
+          "events": 142,
+          "in": 56167,
+          "out": 110370,
+          "cache_read": 9639024,
+          "cache_creation": 431517,
+          "total": 10237078,
+          "thinking_tokens": 13768
+        },
+        {
+          "sid": "f0b4c1dc-fe09-497e-87e6-2918895b62b9",
+          "t": "2026-06-12T09:02:17.699Z",
+          "dur_min": 28.7,
+          "events": 233,
+          "in": 77659,
+          "out": 189732,
+          "cache_read": 21987306,
+          "cache_creation": 836169,
+          "total": 23090866,
+          "thinking_tokens": 12925
+        },
+        {
+          "sid": "de3c6bb1-943e-4340-bb79-b28cd42e30d9",
+          "t": "2026-06-13T09:02:19.817Z",
+          "dur_min": 0.0,
+          "events": 4,
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_creation": 0,
+          "total": 0,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "2c335ebc-1264-40f0-9101-33ef874a64e2",
+          "t": "2026-06-14T09:02:22.858Z",
+          "dur_min": 0.0,
+          "events": 4,
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_creation": 0,
+          "total": 0,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "bcbbea8a-e07f-46e1-9768-d130056ef0a6",
+          "t": "2026-06-15T09:14:01.477Z",
+          "dur_min": 46.7,
+          "events": 54,
+          "in": 54756,
+          "out": 28596,
+          "cache_read": 1790683,
+          "cache_creation": 582997,
+          "total": 2457032,
+          "thinking_tokens": 2214
+        },
+        {
+          "sid": "dcbb2303-3fa4-453c-86fc-7ce58b929380",
+          "t": "2026-06-16T09:02:22.771Z",
+          "dur_min": 18.6,
+          "events": 197,
+          "in": 100202,
+          "out": 178799,
+          "cache_read": 13975867,
+          "cache_creation": 549480,
+          "total": 14804348,
+          "thinking_tokens": 16647
+        },
+        {
+          "sid": "c48e15bd-2882-4038-84e2-a9277608f30b",
+          "t": "2026-06-17T09:02:25.773Z",
+          "dur_min": 19.0,
+          "events": 210,
+          "in": 102723,
+          "out": 143474,
+          "cache_read": 16624780,
+          "cache_creation": 583629,
+          "total": 17454606,
+          "thinking_tokens": 13866
+        },
+        {
+          "sid": "a5044682-5cb0-4be7-ab28-31c8d2772f80",
+          "t": "2026-06-18T09:02:30.022Z",
+          "dur_min": 10.9,
+          "events": 154,
+          "in": 55977,
+          "out": 101525,
+          "cache_read": 8816086,
+          "cache_creation": 623905,
+          "total": 9597493,
+          "thinking_tokens": 10571
+        },
+        {
+          "sid": "cc391094-d822-414d-a1c4-d5a73d05907d",
+          "t": "2026-06-19T09:02:32.647Z",
+          "dur_min": 16.1,
+          "events": 215,
+          "in": 86340,
+          "out": 138094,
+          "cache_read": 14254764,
+          "cache_creation": 1013146,
+          "total": 15492344,
+          "thinking_tokens": 13395
+        },
+        {
+          "sid": "9c7814fa-2ca1-4e92-b93b-36ce298ecf0c",
+          "t": "2026-06-20T09:15:35.681Z",
+          "dur_min": 72.1,
+          "events": 53,
+          "in": 28130,
+          "out": 13105,
+          "cache_read": 2108815,
+          "cache_creation": 226187,
+          "total": 2376237,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "a0079b2b-2695-4607-8f12-fb48072db9ce",
+          "t": "2026-06-21T09:55:03.444Z",
+          "dur_min": 12.9,
+          "events": 31,
+          "in": 56541,
+          "out": 19883,
+          "cache_read": 853997,
+          "cache_creation": 317985,
+          "total": 1248406,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "efb70e2b-d17a-4a10-b165-10e52f8a79e5",
+          "t": "2026-06-22T19:53:44.936Z",
+          "dur_min": 22.5,
+          "events": 198,
+          "in": 78058,
+          "out": 219937,
+          "cache_read": 15645149,
+          "cache_creation": 520882,
+          "total": 16464026,
           "thinking_tokens": 0
         }
       ]
@@ -6477,9 +7582,9 @@
       "category": "c2a2-pipeline",
       "thinkers": [],
       "schedule": "daily 23:37",
-      "runs": 22,
-      "out_total": 2278123,
-      "all_total": 171169228,
+      "runs": 27,
+      "out_total": 2615460,
+      "all_total": 194715816,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -6588,7 +7693,7 @@
           "cache_read": 6625875,
           "cache_creation": 793840,
           "total": 7599226,
-          "thinking_tokens": 0
+          "thinking_tokens": 14150
         },
         {
           "sid": "c40de3b8-57c7-4973-b5a6-68d7710abb5c",
@@ -6612,7 +7717,7 @@
           "cache_read": 5395339,
           "cache_creation": 827388,
           "total": 6419556,
-          "thinking_tokens": 0
+          "thinking_tokens": 10358
         },
         {
           "sid": "9b987cf4-80de-41b6-b92b-22432f7c8d8c",
@@ -6624,7 +7729,7 @@
           "cache_read": 9239339,
           "cache_creation": 339062,
           "total": 9698373,
-          "thinking_tokens": 0
+          "thinking_tokens": 11295
         },
         {
           "sid": "0675d48c-2436-4373-bead-4e503bd0bd44",
@@ -6636,7 +7741,7 @@
           "cache_read": 7967696,
           "cache_creation": 904417,
           "total": 9071334,
-          "thinking_tokens": 0
+          "thinking_tokens": 10397
         },
         {
           "sid": "aad9fb8e-b706-4d1d-99e7-19a5a6220731",
@@ -6648,7 +7753,7 @@
           "cache_read": 4110693,
           "cache_creation": 602419,
           "total": 4827115,
-          "thinking_tokens": 0
+          "thinking_tokens": 3236
         },
         {
           "sid": "283cf7d7-155a-44ad-9a80-212af520dfb0",
@@ -6660,7 +7765,7 @@
           "cache_read": 5724442,
           "cache_creation": 593876,
           "total": 6488130,
-          "thinking_tokens": 0
+          "thinking_tokens": 13827
         },
         {
           "sid": "b82f007e-0b00-41e4-ab62-6a4e6d38ae1c",
@@ -6672,7 +7777,7 @@
           "cache_read": 5573245,
           "cache_creation": 499229,
           "total": 6262818,
-          "thinking_tokens": 0
+          "thinking_tokens": 13790
         },
         {
           "sid": "60a720cf-b980-448e-85a8-00db0248357d",
@@ -6684,7 +7789,7 @@
           "cache_read": 4778055,
           "cache_creation": 435945,
           "total": 5377218,
-          "thinking_tokens": 0
+          "thinking_tokens": 9421
         },
         {
           "sid": "9af9b157-726f-48bb-a339-3d9c406f4387",
@@ -6720,7 +7825,7 @@
           "cache_read": 4604573,
           "cache_creation": 619090,
           "total": 5348161,
-          "thinking_tokens": 0
+          "thinking_tokens": 3525
         },
         {
           "sid": "2e1ef241-94ca-4f2e-8168-09b365ea1884",
@@ -6732,7 +7837,7 @@
           "cache_read": 5067822,
           "cache_creation": 656233,
           "total": 5897004,
-          "thinking_tokens": 0
+          "thinking_tokens": 7149
         },
         {
           "sid": "caff95e6-7c86-4b75-a589-6a2ba2ee1e9b",
@@ -6744,286 +7849,66 @@
           "cache_read": 8558177,
           "cache_creation": 601647,
           "total": 9379147,
-          "thinking_tokens": 0
-        }
-      ]
-    },
-    {
-      "key": "summa-2026-daily-batch",
-      "label": "summa-2026-daily-batch",
-      "category": "project",
-      "thinkers": [],
-      "schedule": "daily 05:02",
-      "runs": 16,
-      "out_total": 2158332,
-      "all_total": 209447404,
-      "median_gap_h": 24.0,
-      "rows": [
+          "thinking_tokens": 13138
+        },
         {
-          "sid": "ab2b9023-1807-4159-b28e-9feae7ce22e5",
-          "t": "2026-05-11T09:02:40.724Z",
-          "dur_min": 12.6,
-          "events": 151,
-          "in": 134,
-          "out": 74302,
-          "cache_read": 9154089,
-          "cache_creation": 320344,
-          "total": 9548869,
+          "sid": "269c6658-b488-44d9-8e17-cb879992b022",
+          "t": "2026-06-18T03:37:11.692Z",
+          "dur_min": 4.5,
+          "events": 89,
+          "in": 57023,
+          "out": 69623,
+          "cache_read": 4883568,
+          "cache_creation": 503619,
+          "total": 5513833,
+          "thinking_tokens": 8120
+        },
+        {
+          "sid": "e130f640-1ca6-48d7-b39c-4e2c4254a680",
+          "t": "2026-06-19T03:37:14.622Z",
+          "dur_min": 7.9,
+          "events": 110,
+          "in": 56137,
+          "out": 145301,
+          "cache_read": 6825605,
+          "cache_creation": 864889,
+          "total": 7891932,
+          "thinking_tokens": 11047
+        },
+        {
+          "sid": "8317c180-09db-48b2-a831-699609273d27",
+          "t": "2026-06-20T03:35:01.986Z",
+          "dur_min": 14.8,
+          "events": 63,
+          "in": 42373,
+          "out": 23652,
+          "cache_read": 2622570,
+          "cache_creation": 337210,
+          "total": 3025805,
           "thinking_tokens": 0
         },
         {
-          "sid": "668516a9-d3e3-426b-b0c7-78311744d9eb",
-          "t": "2026-05-15T09:02:19.608Z",
-          "dur_min": 19.8,
-          "events": 207,
-          "in": 210,
-          "out": 151310,
-          "cache_read": 16009660,
-          "cache_creation": 1220146,
-          "total": 17381326,
+          "sid": "6a607cf1-0e66-49cf-8f11-f5f4c2a30cf7",
+          "t": "2026-06-21T03:36:26.251Z",
+          "dur_min": 52.2,
+          "events": 78,
+          "in": 56974,
+          "out": 74161,
+          "cache_read": 4175483,
+          "cache_creation": 550019,
+          "total": 4856637,
           "thinking_tokens": 0
         },
         {
-          "sid": "2e095f4e-3722-4caf-bcd0-011c6061daea",
-          "t": "2026-05-22T16:59:53.795Z",
-          "dur_min": 16.4,
-          "events": 230,
-          "in": 302,
-          "out": 334787,
-          "cache_read": 22324307,
-          "cache_creation": 1152174,
-          "total": 23811570,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "d1da2b6c-40f9-4665-8b96-f5ab449bfddc",
-          "t": "2026-05-28T09:02:23.588Z",
-          "dur_min": 30.8,
-          "events": 181,
-          "in": 154,
-          "out": 128179,
-          "cache_read": 13348280,
-          "cache_creation": 459992,
-          "total": 13936605,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "e770e960-b74a-4c84-97bf-30a5abe4a5c7",
-          "t": "2026-06-06T09:02:37.695Z",
-          "dur_min": 17.9,
-          "events": 235,
-          "in": 71719,
-          "out": 192519,
-          "cache_read": 18398162,
-          "cache_creation": 779756,
-          "total": 19442156,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "e771030e-a1e1-4e2d-aa93-2bbfbd2a96bc",
-          "t": "2026-06-07T09:02:40.674Z",
-          "dur_min": 16.3,
-          "events": 160,
-          "in": 96049,
-          "out": 181930,
-          "cache_read": 12500737,
-          "cache_creation": 768336,
-          "total": 13547052,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "4d096b49-8c8f-4023-ae46-c98edd2a37df",
-          "t": "2026-06-08T09:02:43.302Z",
-          "dur_min": 18.2,
-          "events": 215,
-          "in": 80817,
-          "out": 171769,
-          "cache_read": 15992252,
-          "cache_creation": 504366,
-          "total": 16749204,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "495350d8-1469-4029-8324-baec725e4db1",
-          "t": "2026-06-09T09:10:49.956Z",
-          "dur_min": 16.2,
-          "events": 34,
-          "in": 38834,
-          "out": 16403,
-          "cache_read": 1038085,
-          "cache_creation": 203380,
-          "total": 1296702,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "b05003a9-3cb8-4f06-99a1-f8ae8e38acea",
-          "t": "2026-06-10T09:02:12.564Z",
-          "dur_min": 28.8,
-          "events": 246,
-          "in": 92861,
-          "out": 256162,
-          "cache_read": 24726932,
-          "cache_creation": 614035,
-          "total": 25689990,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "7d335f69-443c-4c79-8a1b-dba52d0e00bd",
-          "t": "2026-06-11T09:02:14.652Z",
-          "dur_min": 17.9,
-          "events": 142,
-          "in": 56167,
-          "out": 110370,
-          "cache_read": 9639024,
-          "cache_creation": 431517,
-          "total": 10237078,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "f0b4c1dc-fe09-497e-87e6-2918895b62b9",
-          "t": "2026-06-12T09:02:17.699Z",
-          "dur_min": 28.7,
-          "events": 233,
-          "in": 77659,
-          "out": 189732,
-          "cache_read": 21987306,
-          "cache_creation": 836169,
-          "total": 23090866,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "de3c6bb1-943e-4340-bb79-b28cd42e30d9",
-          "t": "2026-06-13T09:02:19.817Z",
-          "dur_min": 0.0,
-          "events": 4,
-          "in": 0,
-          "out": 0,
-          "cache_read": 0,
-          "cache_creation": 0,
-          "total": 0,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "2c335ebc-1264-40f0-9101-33ef874a64e2",
-          "t": "2026-06-14T09:02:22.858Z",
-          "dur_min": 0.0,
-          "events": 4,
-          "in": 0,
-          "out": 0,
-          "cache_read": 0,
-          "cache_creation": 0,
-          "total": 0,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "bcbbea8a-e07f-46e1-9768-d130056ef0a6",
-          "t": "2026-06-15T09:14:01.477Z",
-          "dur_min": 46.7,
-          "events": 54,
-          "in": 54756,
-          "out": 28596,
-          "cache_read": 1790683,
-          "cache_creation": 582997,
-          "total": 2457032,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "dcbb2303-3fa4-453c-86fc-7ce58b929380",
-          "t": "2026-06-16T09:02:22.771Z",
-          "dur_min": 18.6,
-          "events": 197,
-          "in": 100202,
-          "out": 178799,
-          "cache_read": 13975867,
-          "cache_creation": 549480,
-          "total": 14804348,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "c48e15bd-2882-4038-84e2-a9277608f30b",
-          "t": "2026-06-17T09:02:25.773Z",
-          "dur_min": 19.0,
-          "events": 210,
-          "in": 102723,
-          "out": 143474,
-          "cache_read": 16624780,
-          "cache_creation": 583629,
-          "total": 17454606,
-          "thinking_tokens": 0
-        }
-      ]
-    },
-    {
-      "key": "c2a2-agent-wolfram",
-      "label": "Wolfram",
-      "category": "c2a2-thinker",
-      "thinkers": [
-        "Wolfram"
-      ],
-      "schedule": "Sat 03:07",
-      "runs": 5,
-      "out_total": 1488370,
-      "all_total": 37014562,
-      "median_gap_h": 207.0,
-      "rows": [
-        {
-          "sid": "a45aca07-43b7-4ac6-9cd9-4e4761e6f3b2",
-          "t": "2026-04-27T01:36:23.260Z",
-          "dur_min": 4.8,
-          "events": 80,
-          "in": 9665,
-          "out": 25441,
-          "cache_read": 3935437,
-          "cache_creation": 309347,
-          "total": 4279890,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "58ba1513-65c7-4409-a5ae-776cf0aeab0e",
-          "t": "2026-05-05T16:35:07.833Z",
-          "dur_min": 8.9,
-          "events": 165,
-          "in": 18662,
-          "out": 43099,
-          "cache_read": 11729419,
-          "cache_creation": 334323,
-          "total": 12125503,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "d82d4fc8-1132-463c-91bb-622920130175",
-          "t": "2026-05-30T07:07:30.330Z",
-          "dur_min": 5.8,
-          "events": 274,
-          "in": 87530,
-          "out": 1394526,
-          "cache_read": 2754094,
-          "cache_creation": 12700084,
-          "total": 16936234,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "2d4a25c2-3dfa-42a4-bac7-e5558a7cd604",
-          "t": "2026-06-06T07:07:58.152Z",
-          "dur_min": 2.9,
-          "events": 62,
-          "in": 53377,
-          "out": 25304,
-          "cache_read": 3158540,
-          "cache_creation": 435714,
-          "total": 3672935,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "33f75a35-2c7f-40a6-aade-1d2daa40f714",
-          "t": "2026-06-13T07:07:40.029Z",
-          "dur_min": 0.0,
-          "events": 3,
-          "in": 0,
-          "out": 0,
-          "cache_read": 0,
-          "cache_creation": 0,
-          "total": 0,
+          "sid": "711062c7-6560-4b0c-9383-d82977bf40de",
+          "t": "2026-06-22T04:24:40.875Z",
+          "dur_min": 70.0,
+          "events": 51,
+          "in": 55113,
+          "out": 24600,
+          "cache_read": 1492638,
+          "cache_creation": 686030,
+          "total": 2258381,
           "thinking_tokens": 0
         }
       ]
@@ -7034,9 +7919,9 @@
       "category": "c2a2-pipeline",
       "thinkers": [],
       "schedule": "daily 04:34",
-      "runs": 21,
-      "out_total": 1422424,
-      "all_total": 216059556,
+      "runs": 26,
+      "out_total": 1709795,
+      "all_total": 249039419,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -7169,7 +8054,7 @@
           "cache_read": 6418104,
           "cache_creation": 1033971,
           "total": 7590297,
-          "thinking_tokens": 0
+          "thinking_tokens": 6703
         },
         {
           "sid": "7b9e431c-80e8-4736-b6e2-7cf9106d6026",
@@ -7181,7 +8066,7 @@
           "cache_read": 18160397,
           "cache_creation": 1044068,
           "total": 19442485,
-          "thinking_tokens": 0
+          "thinking_tokens": 22917
         },
         {
           "sid": "2c5aeaad-73d4-44e8-b91e-4b15408b4851",
@@ -7193,7 +8078,7 @@
           "cache_read": 7148621,
           "cache_creation": 839368,
           "total": 8119790,
-          "thinking_tokens": 0
+          "thinking_tokens": 9857
         },
         {
           "sid": "94fe57c5-0b7d-4194-b349-28f78eb4e93b",
@@ -7205,7 +8090,7 @@
           "cache_read": 1131193,
           "cache_creation": 889358,
           "total": 2078925,
-          "thinking_tokens": 0
+          "thinking_tokens": 1292
         },
         {
           "sid": "91b25bd9-6b5b-403c-9126-fbfec38c16e4",
@@ -7217,7 +8102,7 @@
           "cache_read": 1845771,
           "cache_creation": 707172,
           "total": 2609933,
-          "thinking_tokens": 0
+          "thinking_tokens": 938
         },
         {
           "sid": "7112cf44-ba51-4fc0-bce2-1f59fa6a67a1",
@@ -7229,7 +8114,7 @@
           "cache_read": 1371119,
           "cache_creation": 683947,
           "total": 2112644,
-          "thinking_tokens": 0
+          "thinking_tokens": 1146
         },
         {
           "sid": "702c00f8-e55f-4417-9e1a-2840a5250333",
@@ -7241,7 +8126,7 @@
           "cache_read": 1477260,
           "cache_creation": 752622,
           "total": 2293238,
-          "thinking_tokens": 0
+          "thinking_tokens": 2110
         },
         {
           "sid": "09d0ae28-0026-4966-8d18-51a0b0de48e1",
@@ -7277,7 +8162,7 @@
           "cache_read": 7906272,
           "cache_creation": 1123039,
           "total": 9230680,
-          "thinking_tokens": 0
+          "thinking_tokens": 9413
         },
         {
           "sid": "6f84e0fc-e3e8-4f89-9fde-bee735d55775",
@@ -7289,6 +8174,153 @@
           "cache_read": 18817604,
           "cache_creation": 1155214,
           "total": 20209235,
+          "thinking_tokens": 17984
+        },
+        {
+          "sid": "4bf945e3-00fa-427e-aec8-009ba2fce8ab",
+          "t": "2026-06-18T08:34:46.285Z",
+          "dur_min": 3.3,
+          "events": 89,
+          "in": 66282,
+          "out": 58927,
+          "cache_read": 5056654,
+          "cache_creation": 1126477,
+          "total": 6308340,
+          "thinking_tokens": 4338
+        },
+        {
+          "sid": "fed12630-8bfb-4443-8dea-aad0aa12241d",
+          "t": "2026-06-19T08:34:49.360Z",
+          "dur_min": 5.6,
+          "events": 130,
+          "in": 62092,
+          "out": 75079,
+          "cache_read": 8368101,
+          "cache_creation": 951973,
+          "total": 9457245,
+          "thinking_tokens": 7544
+        },
+        {
+          "sid": "f7c9620d-c16c-4dff-ba44-6bf6eeb7558b",
+          "t": "2026-06-20T08:37:57.870Z",
+          "dur_min": 153.1,
+          "events": 100,
+          "in": 33969,
+          "out": 57972,
+          "cache_read": 5864604,
+          "cache_creation": 966682,
+          "total": 6923227,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "9977153c-7a8d-497e-96e2-dd91fd112015",
+          "t": "2026-06-21T09:55:03.429Z",
+          "dur_min": 74.1,
+          "events": 80,
+          "in": 41833,
+          "out": 39317,
+          "cache_read": 4458429,
+          "cache_creation": 481155,
+          "total": 5020734,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "8a12d5bf-aca3-463c-adc2-2f8b6ad553b0",
+          "t": "2026-06-22T08:50:23.894Z",
+          "dur_min": 149.0,
+          "events": 84,
+          "in": 56601,
+          "out": 56076,
+          "cache_read": 4063733,
+          "cache_creation": 1093907,
+          "total": 5270317,
+          "thinking_tokens": 0
+        }
+      ]
+    },
+    {
+      "key": "c2a2-agent-wolfram",
+      "label": "Wolfram",
+      "category": "c2a2-thinker",
+      "thinkers": [
+        "Wolfram"
+      ],
+      "schedule": "Sat 03:07",
+      "runs": 6,
+      "out_total": 1499655,
+      "all_total": 39402635,
+      "median_gap_h": 168.0,
+      "rows": [
+        {
+          "sid": "a45aca07-43b7-4ac6-9cd9-4e4761e6f3b2",
+          "t": "2026-04-27T01:36:23.260Z",
+          "dur_min": 4.8,
+          "events": 80,
+          "in": 9665,
+          "out": 25441,
+          "cache_read": 3935437,
+          "cache_creation": 309347,
+          "total": 4279890,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "58ba1513-65c7-4409-a5ae-776cf0aeab0e",
+          "t": "2026-05-05T16:35:07.833Z",
+          "dur_min": 8.9,
+          "events": 165,
+          "in": 18662,
+          "out": 43099,
+          "cache_read": 11729419,
+          "cache_creation": 334323,
+          "total": 12125503,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "d82d4fc8-1132-463c-91bb-622920130175",
+          "t": "2026-05-30T07:07:30.330Z",
+          "dur_min": 5.8,
+          "events": 274,
+          "in": 87530,
+          "out": 1394526,
+          "cache_read": 2754094,
+          "cache_creation": 12700084,
+          "total": 16936234,
+          "thinking_tokens": 6150
+        },
+        {
+          "sid": "2d4a25c2-3dfa-42a4-bac7-e5558a7cd604",
+          "t": "2026-06-06T07:07:58.152Z",
+          "dur_min": 2.9,
+          "events": 62,
+          "in": 53377,
+          "out": 25304,
+          "cache_read": 3158540,
+          "cache_creation": 435714,
+          "total": 3672935,
+          "thinking_tokens": 1753
+        },
+        {
+          "sid": "33f75a35-2c7f-40a6-aade-1d2daa40f714",
+          "t": "2026-06-13T07:07:40.029Z",
+          "dur_min": 0.0,
+          "events": 3,
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_creation": 0,
+          "total": 0,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "780dea4d-e7e7-4970-988c-330aceae0a66",
+          "t": "2026-06-20T07:04:35.253Z",
+          "dur_min": 44.8,
+          "events": 46,
+          "in": 60482,
+          "out": 11285,
+          "cache_read": 1920603,
+          "cache_creation": 395703,
+          "total": 2388073,
           "thinking_tokens": 0
         }
       ]
@@ -7299,9 +8331,9 @@
       "category": "project",
       "thinkers": [],
       "schedule": "daily 23:06",
-      "runs": 15,
-      "out_total": 887869,
-      "all_total": 57736793,
+      "runs": 19,
+      "out_total": 1194097,
+      "all_total": 77120249,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -7350,7 +8382,7 @@
           "cache_read": 1498056,
           "cache_creation": 166681,
           "total": 1738174,
-          "thinking_tokens": 0
+          "thinking_tokens": 5803
         },
         {
           "sid": "f3234a36-3c0b-4cb5-ac80-2d8fe9a7c369",
@@ -7362,7 +8394,7 @@
           "cache_read": 10365004,
           "cache_creation": 734348,
           "total": 11297624,
-          "thinking_tokens": 0
+          "thinking_tokens": 28972
         },
         {
           "sid": "7187ad24-b55f-4496-b477-f0c89d7d68f1",
@@ -7374,7 +8406,7 @@
           "cache_read": 4458648,
           "cache_creation": 298213,
           "total": 4859421,
-          "thinking_tokens": 0
+          "thinking_tokens": 9389
         },
         {
           "sid": "d37e3662-b4e4-4c9c-a1fa-14c6d77a08fe",
@@ -7386,7 +8418,7 @@
           "cache_read": 751811,
           "cache_creation": 156543,
           "total": 955591,
-          "thinking_tokens": 0
+          "thinking_tokens": 2380
         },
         {
           "sid": "a18181b7-1e67-41b3-8137-b83cdaca31a2",
@@ -7398,7 +8430,7 @@
           "cache_read": 3778900,
           "cache_creation": 342070,
           "total": 4223660,
-          "thinking_tokens": 0
+          "thinking_tokens": 7405
         },
         {
           "sid": "3d5c371b-57e4-4d38-af52-343182756f2a",
@@ -7410,7 +8442,7 @@
           "cache_read": 3753393,
           "cache_creation": 389905,
           "total": 4251233,
-          "thinking_tokens": 0
+          "thinking_tokens": 9878
         },
         {
           "sid": "a3ab07c8-7c22-4b15-94ca-837bfb3b9e40",
@@ -7422,7 +8454,7 @@
           "cache_read": 6325402,
           "cache_creation": 513559,
           "total": 7015467,
-          "thinking_tokens": 0
+          "thinking_tokens": 14485
         },
         {
           "sid": "d4336c62-a4e7-416f-9af9-7bd835c9e701",
@@ -7458,7 +8490,7 @@
           "cache_read": 575032,
           "cache_creation": 549627,
           "total": 1193315,
-          "thinking_tokens": 0
+          "thinking_tokens": 1232
         },
         {
           "sid": "0eb1a0ad-9665-46e5-91bb-696eddd5be6a",
@@ -7470,7 +8502,7 @@
           "cache_read": 6000651,
           "cache_creation": 700543,
           "total": 6865316,
-          "thinking_tokens": 0
+          "thinking_tokens": 16460
         },
         {
           "sid": "0587d168-8239-42e3-9644-f8ee81fd6fbd",
@@ -7482,79 +8514,54 @@
           "cache_read": 4440417,
           "cache_creation": 674448,
           "total": 5273461,
-          "thinking_tokens": 0
-        }
-      ]
-    },
-    {
-      "key": "openstory-version-check",
-      "label": "openstory-version-check",
-      "category": "infrastructure",
-      "thinkers": [],
-      "schedule": "Mon 05:37",
-      "runs": 5,
-      "out_total": 645490,
-      "all_total": 97830585,
-      "median_gap_h": 198.0,
-      "rows": [
+          "thinking_tokens": 17483
+        },
         {
-          "sid": "2941a504-03ea-447d-a074-33ec55508bb2",
-          "t": "2026-04-27T09:35:40.041Z",
-          "dur_min": 394.8,
-          "events": 122,
-          "in": 250,
-          "out": 56694,
-          "cache_read": 4445000,
-          "cache_creation": 364681,
-          "total": 4866625,
+          "sid": "9b0f83ec-aafc-491d-89d4-a7a774d66d01",
+          "t": "2026-06-18T03:06:10.844Z",
+          "dur_min": 6.0,
+          "events": 66,
+          "in": 42145,
+          "out": 75517,
+          "cache_read": 3763411,
+          "cache_creation": 266502,
+          "total": 4147575,
+          "thinking_tokens": 6408
+        },
+        {
+          "sid": "3c5f5fd9-19f3-4b09-bed0-4f7accde76d3",
+          "t": "2026-06-19T03:06:13.590Z",
+          "dur_min": 10.2,
+          "events": 112,
+          "in": 42197,
+          "out": 130181,
+          "cache_read": 7490373,
+          "cache_creation": 399488,
+          "total": 8062239,
+          "thinking_tokens": 16409
+        },
+        {
+          "sid": "301963b6-6fac-47c8-aa81-530c5e8af6ff",
+          "t": "2026-06-20T03:11:07.865Z",
+          "dur_min": 102.5,
+          "events": 78,
+          "in": 56019,
+          "out": 60880,
+          "cache_read": 4029950,
+          "cache_creation": 647949,
+          "total": 4794798,
           "thinking_tokens": 0
         },
         {
-          "sid": "a56ce531-2da8-41f3-9481-b1ae36e4023e",
-          "t": "2026-05-05T15:38:10.227Z",
-          "dur_min": 3.5,
-          "events": 12,
-          "in": 15,
-          "out": 1162,
-          "cache_read": 284376,
-          "cache_creation": 56520,
-          "total": 342073,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "cb6c23f9-1dae-4e04-b4c3-50691486152f",
-          "t": "2026-06-01T09:35:35.139Z",
-          "dur_min": 3.4,
-          "events": 12,
-          "in": 38207,
-          "out": 1909,
-          "cache_read": 225737,
-          "cache_creation": 156182,
-          "total": 422035,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "c0f8a284-a632-40d1-8d91-3b76cf557b73",
-          "t": "2026-06-08T09:36:02.633Z",
-          "dur_min": 511.3,
-          "events": 1018,
-          "in": 44756,
-          "out": 583984,
-          "cache_read": 90214694,
-          "cache_creation": 971697,
-          "total": 91815131,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "0e84f2c2-95a1-47ae-af4e-108f9ca2baaf",
-          "t": "2026-06-15T10:00:48.709Z",
-          "dur_min": 31.2,
-          "events": 11,
-          "in": 14048,
-          "out": 1741,
-          "cache_read": 227243,
-          "cache_creation": 141689,
-          "total": 384721,
+          "sid": "27db00b2-9328-4953-8ad8-3ab0a61742a9",
+          "t": "2026-06-22T05:37:42.132Z",
+          "dur_min": 3.6,
+          "events": 44,
+          "in": 41103,
+          "out": 39650,
+          "cache_read": 2098902,
+          "cache_creation": 199189,
+          "total": 2378844,
           "thinking_tokens": 0
         }
       ]
@@ -7565,9 +8572,9 @@
       "category": "bridge",
       "thinkers": [],
       "schedule": "daily 18:38",
-      "runs": 17,
-      "out_total": 576255,
-      "all_total": 66314996,
+      "runs": 22,
+      "out_total": 772042,
+      "all_total": 91352838,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -7640,7 +8647,7 @@
           "cache_read": 3033077,
           "cache_creation": 374130,
           "total": 3459855,
-          "thinking_tokens": 0
+          "thinking_tokens": 2713
         },
         {
           "sid": "2c20b932-5079-4972-b59e-796f8005048c",
@@ -7652,7 +8659,7 @@
           "cache_read": 3346416,
           "cache_creation": 313995,
           "total": 3726334,
-          "thinking_tokens": 0
+          "thinking_tokens": 3474
         },
         {
           "sid": "701ed0f7-79d0-4adb-8800-20c704833985",
@@ -7664,7 +8671,7 @@
           "cache_read": 2656122,
           "cache_creation": 429550,
           "total": 3162818,
-          "thinking_tokens": 0
+          "thinking_tokens": 2986
         },
         {
           "sid": "fc6e4ddf-5de9-477c-81a7-a964d883a42e",
@@ -7676,7 +8683,7 @@
           "cache_read": 1685684,
           "cache_creation": 212270,
           "total": 1948083,
-          "thinking_tokens": 0
+          "thinking_tokens": 2060
         },
         {
           "sid": "5e7bb7d8-5662-46ea-b580-fb7f6a9fbc1b",
@@ -7688,7 +8695,7 @@
           "cache_read": 3419401,
           "cache_creation": 427656,
           "total": 3921660,
-          "thinking_tokens": 0
+          "thinking_tokens": 5032
         },
         {
           "sid": "dc44aac7-d414-4ecb-ac55-e588d0f537b6",
@@ -7700,7 +8707,7 @@
           "cache_read": 5258668,
           "cache_creation": 452226,
           "total": 5796931,
-          "thinking_tokens": 0
+          "thinking_tokens": 4734
         },
         {
           "sid": "95d9f718-6876-4636-b454-bcd922b8916d",
@@ -7712,7 +8719,7 @@
           "cache_read": 4113308,
           "cache_creation": 424113,
           "total": 4598298,
-          "thinking_tokens": 0
+          "thinking_tokens": 2826
         },
         {
           "sid": "5437bd72-f4f0-4d83-9940-b1740be0c617",
@@ -7724,7 +8731,7 @@
           "cache_read": 2284435,
           "cache_creation": 422981,
           "total": 2778917,
-          "thinking_tokens": 0
+          "thinking_tokens": 3175
         },
         {
           "sid": "8fd7ce6b-ce25-4b1b-bd63-2e1c5814a746",
@@ -7748,7 +8755,7 @@
           "cache_read": 5505290,
           "cache_creation": 837185,
           "total": 6451489,
-          "thinking_tokens": 0
+          "thinking_tokens": 13606
         },
         {
           "sid": "8f8705a9-1835-481d-bb74-0d745ec3f8bc",
@@ -7760,7 +8767,7 @@
           "cache_read": 5355366,
           "cache_creation": 856897,
           "total": 6334360,
-          "thinking_tokens": 0
+          "thinking_tokens": 8267
         },
         {
           "sid": "ef7eb7ea-e9ab-4045-87e7-2178242338ce",
@@ -7772,6 +8779,151 @@
           "cache_read": 6300665,
           "cache_creation": 624839,
           "total": 7049076,
+          "thinking_tokens": 10310
+        },
+        {
+          "sid": "5f2f7e1a-75ab-43e8-825c-8beba813c690",
+          "t": "2026-06-17T22:38:30.546Z",
+          "dur_min": 3.4,
+          "events": 96,
+          "in": 43262,
+          "out": 36733,
+          "cache_read": 4242491,
+          "cache_creation": 483886,
+          "total": 4806372,
+          "thinking_tokens": 4078
+        },
+        {
+          "sid": "3966ad3b-4e98-4149-834a-1383cce32f5d",
+          "t": "2026-06-18T22:38:32.889Z",
+          "dur_min": 5.1,
+          "events": 114,
+          "in": 57295,
+          "out": 53913,
+          "cache_read": 5990453,
+          "cache_creation": 564238,
+          "total": 6665899,
+          "thinking_tokens": 8333
+        },
+        {
+          "sid": "c0dabcd3-0af4-472b-8780-3dcd1104ef75",
+          "t": "2026-06-19T22:32:29.388Z",
+          "dur_min": 120.7,
+          "events": 104,
+          "in": 42105,
+          "out": 42422,
+          "cache_read": 6235815,
+          "cache_creation": 399946,
+          "total": 6720288,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "7edd2f2e-7944-42e9-b513-d5565f0a5d9c",
+          "t": "2026-06-20T22:41:18.338Z",
+          "dur_min": 63.5,
+          "events": 68,
+          "in": 28191,
+          "out": 29849,
+          "cache_read": 2980211,
+          "cache_creation": 378766,
+          "total": 3417017,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "6c92d487-8823-4f0d-b2d8-b2ce52ca37a0",
+          "t": "2026-06-21T22:39:57.561Z",
+          "dur_min": 19.6,
+          "events": 64,
+          "in": 41297,
+          "out": 32870,
+          "cache_read": 2798241,
+          "cache_creation": 555858,
+          "total": 3428266,
+          "thinking_tokens": 0
+        }
+      ]
+    },
+    {
+      "key": "openstory-version-check",
+      "label": "openstory-version-check",
+      "category": "infrastructure",
+      "thinkers": [],
+      "schedule": "Mon 05:37",
+      "runs": 6,
+      "out_total": 646752,
+      "all_total": 98202803,
+      "median_gap_h": 177.8,
+      "rows": [
+        {
+          "sid": "2941a504-03ea-447d-a074-33ec55508bb2",
+          "t": "2026-04-27T09:35:40.041Z",
+          "dur_min": 394.8,
+          "events": 122,
+          "in": 250,
+          "out": 56694,
+          "cache_read": 4445000,
+          "cache_creation": 364681,
+          "total": 4866625,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "a56ce531-2da8-41f3-9481-b1ae36e4023e",
+          "t": "2026-05-05T15:38:10.227Z",
+          "dur_min": 3.5,
+          "events": 12,
+          "in": 15,
+          "out": 1162,
+          "cache_read": 284376,
+          "cache_creation": 56520,
+          "total": 342073,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "cb6c23f9-1dae-4e04-b4c3-50691486152f",
+          "t": "2026-06-01T09:35:35.139Z",
+          "dur_min": 3.4,
+          "events": 12,
+          "in": 38207,
+          "out": 1909,
+          "cache_read": 225737,
+          "cache_creation": 156182,
+          "total": 422035,
+          "thinking_tokens": 100
+        },
+        {
+          "sid": "c0f8a284-a632-40d1-8d91-3b76cf557b73",
+          "t": "2026-06-08T09:36:02.633Z",
+          "dur_min": 511.3,
+          "events": 1018,
+          "in": 44756,
+          "out": 583984,
+          "cache_read": 90214694,
+          "cache_creation": 971697,
+          "total": 91815131,
+          "thinking_tokens": 135485
+        },
+        {
+          "sid": "0e84f2c2-95a1-47ae-af4e-108f9ca2baaf",
+          "t": "2026-06-15T10:00:48.709Z",
+          "dur_min": 31.2,
+          "events": 11,
+          "in": 14048,
+          "out": 1741,
+          "cache_read": 227243,
+          "cache_creation": 141689,
+          "total": 384721,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "bdb4078e-20cc-427a-856e-c566c6875672",
+          "t": "2026-06-22T19:48:45.237Z",
+          "dur_min": 3.3,
+          "events": 11,
+          "in": 27358,
+          "out": 1262,
+          "cache_read": 205672,
+          "cache_creation": 137926,
+          "total": 372218,
           "thinking_tokens": 0
         }
       ]
@@ -7782,9 +8934,9 @@
       "category": "bridge",
       "thinkers": [],
       "schedule": "Mon-Fri 09:10",
-      "runs": 13,
-      "out_total": 285093,
-      "all_total": 34309130,
+      "runs": 16,
+      "out_total": 372344,
+      "all_total": 42652612,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -7857,7 +9009,7 @@
           "cache_read": 3621620,
           "cache_creation": 208906,
           "total": 3882663,
-          "thinking_tokens": 0
+          "thinking_tokens": 3362
         },
         {
           "sid": "6010830e-2974-423b-abf2-1f9b5cebe056",
@@ -7869,7 +9021,7 @@
           "cache_read": 3940003,
           "cache_creation": 346636,
           "total": 4341902,
-          "thinking_tokens": 0
+          "thinking_tokens": 2612
         },
         {
           "sid": "7fc48b85-13b2-4574-8586-6ad412bf9ecf",
@@ -7881,7 +9033,7 @@
           "cache_read": 2364096,
           "cache_creation": 323886,
           "total": 2757306,
-          "thinking_tokens": 0
+          "thinking_tokens": 2771
         },
         {
           "sid": "c1a1f178-3532-43b6-9ef1-af1e200f30f3",
@@ -7893,7 +9045,7 @@
           "cache_read": 1770806,
           "cache_creation": 286560,
           "total": 2119707,
-          "thinking_tokens": 0
+          "thinking_tokens": 1762
         },
         {
           "sid": "cbcdca3f-0cf7-4de2-a2fc-ea3f035dc779",
@@ -7905,7 +9057,7 @@
           "cache_read": 1720478,
           "cache_creation": 301793,
           "total": 2076945,
-          "thinking_tokens": 0
+          "thinking_tokens": 1540
         },
         {
           "sid": "c585d4a0-6cb7-4ece-adbb-c8ff054fb63d",
@@ -7917,7 +9069,7 @@
           "cache_read": 1701875,
           "cache_creation": 460142,
           "total": 2219732,
-          "thinking_tokens": 0
+          "thinking_tokens": 1500
         },
         {
           "sid": "2d8ee8ca-4269-4405-9f86-ceb33c89f7f8",
@@ -7929,7 +9081,7 @@
           "cache_read": 2763933,
           "cache_creation": 321817,
           "total": 3156385,
-          "thinking_tokens": 0
+          "thinking_tokens": 3049
         },
         {
           "sid": "0417ae1b-2832-4bde-91ed-d90c6296d555",
@@ -7942,6 +9094,42 @@
           "cache_creation": 50533,
           "total": 111477,
           "thinking_tokens": 0
+        },
+        {
+          "sid": "b174696b-dc72-41db-b230-7e80042afaa4",
+          "t": "2026-06-18T13:10:26.177Z",
+          "dur_min": 2.2,
+          "events": 60,
+          "in": 41871,
+          "out": 29402,
+          "cache_read": 2291246,
+          "cache_creation": 299150,
+          "total": 2661669,
+          "thinking_tokens": 2028
+        },
+        {
+          "sid": "c15e663d-0cba-4038-81e7-3e2e2aa4ccc1",
+          "t": "2026-06-19T13:10:27.848Z",
+          "dur_min": 1.9,
+          "events": 50,
+          "in": 41833,
+          "out": 21887,
+          "cache_read": 1862163,
+          "cache_creation": 254047,
+          "total": 2179930,
+          "thinking_tokens": 2246
+        },
+        {
+          "sid": "e0a4448e-bd4c-42c5-b92e-369fac67401a",
+          "t": "2026-06-22T19:49:45.204Z",
+          "dur_min": 3.4,
+          "events": 81,
+          "in": 55248,
+          "out": 35962,
+          "cache_read": 3003934,
+          "cache_creation": 406739,
+          "total": 3501883,
+          "thinking_tokens": 0
         }
       ]
     },
@@ -7951,9 +9139,9 @@
       "category": "c2a2-pipeline",
       "thinkers": [],
       "schedule": "daily 02:33",
-      "runs": 20,
-      "out_total": 279457,
-      "all_total": 38158962,
+      "runs": 24,
+      "out_total": 349740,
+      "all_total": 45485466,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -8062,7 +9250,7 @@
           "cache_read": 2401552,
           "cache_creation": 326660,
           "total": 2801044,
-          "thinking_tokens": 0
+          "thinking_tokens": 1320
         },
         {
           "sid": "3de61f9d-795d-4329-93d4-4f00cb617e9f",
@@ -8074,7 +9262,7 @@
           "cache_read": 1738843,
           "cache_creation": 285148,
           "total": 2067267,
-          "thinking_tokens": 0
+          "thinking_tokens": 1553
         },
         {
           "sid": "de56e4e7-3eb6-4905-9716-a01abe2bd6fa",
@@ -8086,7 +9274,7 @@
           "cache_read": 2130749,
           "cache_creation": 433197,
           "total": 2620845,
-          "thinking_tokens": 0
+          "thinking_tokens": 1363
         },
         {
           "sid": "6651f4d2-2cc9-4826-95af-d2ca41b3a627",
@@ -8098,7 +9286,7 @@
           "cache_read": 1116365,
           "cache_creation": 195565,
           "total": 1354163,
-          "thinking_tokens": 0
+          "thinking_tokens": 810
         },
         {
           "sid": "845903bd-c4d4-4d28-9d41-1a5dbb7dc80f",
@@ -8110,7 +9298,7 @@
           "cache_read": 1283840,
           "cache_creation": 262141,
           "total": 1601433,
-          "thinking_tokens": 0
+          "thinking_tokens": 982
         },
         {
           "sid": "1e90df66-4c46-4756-88af-58fdfc87e65d",
@@ -8122,7 +9310,7 @@
           "cache_read": 1062803,
           "cache_creation": 187447,
           "total": 1298694,
-          "thinking_tokens": 0
+          "thinking_tokens": 777
         },
         {
           "sid": "8fc6bbde-c95b-40cf-b380-6a0cb1cba5db",
@@ -8134,7 +9322,7 @@
           "cache_read": 947293,
           "cache_creation": 168615,
           "total": 1163303,
-          "thinking_tokens": 0
+          "thinking_tokens": 343
         },
         {
           "sid": "d3ba7404-fe92-406c-8393-1d44fad3b876",
@@ -8170,7 +9358,7 @@
           "cache_read": 928014,
           "cache_creation": 175670,
           "total": 1152673,
-          "thinking_tokens": 0
+          "thinking_tokens": 854
         },
         {
           "sid": "ca16e452-efbd-4fb8-a6ea-eff7b1665d16",
@@ -8182,7 +9370,7 @@
           "cache_read": 2599607,
           "cache_creation": 295924,
           "total": 2952974,
-          "thinking_tokens": 0
+          "thinking_tokens": 1078
         },
         {
           "sid": "76e34f2f-58d5-4102-b24d-e12afc8b7ca5",
@@ -8194,6 +9382,54 @@
           "cache_read": 1532783,
           "cache_creation": 333939,
           "total": 1924560,
+          "thinking_tokens": 1170
+        },
+        {
+          "sid": "1b27e234-472d-43aa-ba85-dcfa5385bcd1",
+          "t": "2026-06-18T06:33:08.893Z",
+          "dur_min": 1.4,
+          "events": 49,
+          "in": 41440,
+          "out": 29360,
+          "cache_read": 1590593,
+          "cache_creation": 750872,
+          "total": 2412265,
+          "thinking_tokens": 1205
+        },
+        {
+          "sid": "49ba803f-91bc-4c4c-96b3-541faff455bd",
+          "t": "2026-06-19T06:33:11.489Z",
+          "dur_min": 1.1,
+          "events": 29,
+          "in": 41807,
+          "out": 11928,
+          "cache_read": 960404,
+          "cache_creation": 305410,
+          "total": 1319549,
+          "thinking_tokens": 928
+        },
+        {
+          "sid": "9f3e69e8-44a7-4239-b722-796e8145e988",
+          "t": "2026-06-20T06:38:30.175Z",
+          "dur_min": 26.0,
+          "events": 38,
+          "in": 55829,
+          "out": 12122,
+          "cache_read": 1251572,
+          "cache_creation": 282335,
+          "total": 1601858,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "6abf29f6-ae71-4968-9e90-3d90fd83c1ad",
+          "t": "2026-06-22T06:51:42.077Z",
+          "dur_min": 5.4,
+          "events": 42,
+          "in": 41823,
+          "out": 16873,
+          "cache_read": 1562221,
+          "cache_creation": 371915,
+          "total": 1992832,
           "thinking_tokens": 0
         }
       ]
@@ -8204,9 +9440,9 @@
       "category": "c2a2-pipeline",
       "thinkers": [],
       "schedule": "Sun 03:33",
-      "runs": 4,
-      "out_total": 216153,
-      "all_total": 19195350,
+      "runs": 5,
+      "out_total": 240979,
+      "all_total": 21614572,
       "median_gap_h": 207.9,
       "rows": [
         {
@@ -8243,7 +9479,7 @@
           "cache_read": 6865763,
           "cache_creation": 639941,
           "total": 7660242,
-          "thinking_tokens": 0
+          "thinking_tokens": 11114
         },
         {
           "sid": "a614bb48-98c6-4217-a564-5b27973b7474",
@@ -8255,6 +9491,18 @@
           "cache_read": 0,
           "cache_creation": 0,
           "total": 0,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "524c234f-fb70-4b9a-a29c-64ccbedb863c",
+          "t": "2026-06-21T07:35:16.041Z",
+          "dur_min": 122.2,
+          "events": 54,
+          "in": 41109,
+          "out": 24826,
+          "cache_read": 2116877,
+          "cache_creation": 236410,
+          "total": 2419222,
           "thinking_tokens": 0
         }
       ]
@@ -8268,10 +9516,10 @@
         "Friston"
       ],
       "schedule": "Mon 03:04",
-      "runs": 5,
-      "out_total": 194425,
-      "all_total": 30814576,
-      "median_gap_h": 200.7,
+      "runs": 6,
+      "out_total": 229931,
+      "all_total": 33806009,
+      "median_gap_h": 168.2,
       "rows": [
         {
           "sid": "dc0d7d7f-84b6-4b84-ac64-ad6b41f1308f",
@@ -8319,7 +9567,7 @@
           "cache_read": 2879925,
           "cache_creation": 577199,
           "total": 3544770,
-          "thinking_tokens": 0
+          "thinking_tokens": 2029
         },
         {
           "sid": "f07e0605-e816-4f86-8ad1-6205d1a333ff",
@@ -8331,6 +9579,18 @@
           "cache_read": 3942284,
           "cache_creation": 783721,
           "total": 4841283,
+          "thinking_tokens": 5437
+        },
+        {
+          "sid": "19124a46-0f2b-4e1e-9012-58b751ec00e9",
+          "t": "2026-06-22T07:05:32.392Z",
+          "dur_min": 53.3,
+          "events": 49,
+          "in": 60238,
+          "out": 35506,
+          "cache_read": 2453325,
+          "cache_creation": 442364,
+          "total": 2991433,
           "thinking_tokens": 0
         }
       ]
@@ -8341,9 +9601,9 @@
       "category": "bridge",
       "thinkers": [],
       "schedule": "daily 08:52",
-      "runs": 19,
-      "out_total": 186794,
-      "all_total": 28462578,
+      "runs": 24,
+      "out_total": 225986,
+      "all_total": 35566322,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -8440,7 +9700,7 @@
           "cache_read": 1120729,
           "cache_creation": 152720,
           "total": 1316657,
-          "thinking_tokens": 0
+          "thinking_tokens": 421
         },
         {
           "sid": "33b22d71-97c0-44e1-9848-6857a26c7bec",
@@ -8452,7 +9712,7 @@
           "cache_read": 1459310,
           "cache_creation": 291841,
           "total": 1796775,
-          "thinking_tokens": 0
+          "thinking_tokens": 256
         },
         {
           "sid": "bb39fb06-28f9-460e-a31d-622127a712f2",
@@ -8464,7 +9724,7 @@
           "cache_read": 832749,
           "cache_creation": 145670,
           "total": 1018888,
-          "thinking_tokens": 0
+          "thinking_tokens": 306
         },
         {
           "sid": "927f5e68-3943-4d58-abb2-fd6d3d8847a8",
@@ -8476,7 +9736,7 @@
           "cache_read": 1468973,
           "cache_creation": 209147,
           "total": 1724269,
-          "thinking_tokens": 0
+          "thinking_tokens": 417
         },
         {
           "sid": "9c3c26c7-7be0-48d0-ba6a-efd75eaefbef",
@@ -8488,7 +9748,7 @@
           "cache_read": 588102,
           "cache_creation": 132195,
           "total": 748365,
-          "thinking_tokens": 0
+          "thinking_tokens": 241
         },
         {
           "sid": "b18a676d-1294-438e-98d6-20f76ba2b798",
@@ -8500,7 +9760,7 @@
           "cache_read": 1335594,
           "cache_creation": 183698,
           "total": 1557283,
-          "thinking_tokens": 0
+          "thinking_tokens": 1817
         },
         {
           "sid": "df31c399-a496-41e6-a7b5-1f2cabe737d8",
@@ -8512,7 +9772,7 @@
           "cache_read": 2194769,
           "cache_creation": 269027,
           "total": 2518672,
-          "thinking_tokens": 0
+          "thinking_tokens": 1254
         },
         {
           "sid": "56bb5815-06f4-4500-835c-de3acbb61dc3",
@@ -8548,7 +9808,7 @@
           "cache_read": 542934,
           "cache_creation": 141564,
           "total": 729443,
-          "thinking_tokens": 0
+          "thinking_tokens": 452
         },
         {
           "sid": "ce22a3dc-cde5-4a0c-b233-e701258dfdbc",
@@ -8560,7 +9820,7 @@
           "cache_read": 3674004,
           "cache_creation": 217734,
           "total": 3959894,
-          "thinking_tokens": 0
+          "thinking_tokens": 8365
         },
         {
           "sid": "08f5e85f-0db2-4499-a08b-5e5e93f6eb31",
@@ -8572,70 +9832,66 @@
           "cache_read": 2333415,
           "cache_creation": 206889,
           "total": 2606070,
-          "thinking_tokens": 0
-        }
-      ]
-    },
-    {
-      "key": "c2a2-agent-stump-fredrickson",
-      "label": "Stump + Fredrickson",
-      "category": "c2a2-thinker",
-      "thinkers": [
-        "Stump",
-        "Fredrickson"
-      ],
-      "schedule": "Thu 03:04",
-      "runs": 4,
-      "out_total": 155271,
-      "all_total": 24986376,
-      "median_gap_h": 374.8,
-      "rows": [
+          "thinking_tokens": 3652
+        },
         {
-          "sid": "1ba3916b-9974-4029-8a35-d4db8ed730ec",
-          "t": "2026-04-27T01:30:23.417Z",
-          "dur_min": 5.8,
-          "events": 112,
-          "in": 11387,
-          "out": 27252,
-          "cache_read": 6162303,
-          "cache_creation": 327398,
-          "total": 6528340,
+          "sid": "a5535c81-27d6-4ef7-a2c8-4bde199c2c79",
+          "t": "2026-06-18T12:52:19.430Z",
+          "dur_min": 2.8,
+          "events": 74,
+          "in": 28252,
+          "out": 17049,
+          "cache_read": 2713492,
+          "cache_creation": 172435,
+          "total": 2931228,
+          "thinking_tokens": 2118
+        },
+        {
+          "sid": "275f5d43-b34c-4bb5-8a82-d8f750675029",
+          "t": "2026-06-19T12:52:21.789Z",
+          "dur_min": 1.4,
+          "events": 35,
+          "in": 41032,
+          "out": 10801,
+          "cache_read": 1098282,
+          "cache_creation": 168802,
+          "total": 1318917,
+          "thinking_tokens": 943
+        },
+        {
+          "sid": "1c51be8d-5d48-45c6-8dd3-f8cc1ac3e9df",
+          "t": "2026-06-20T12:53:39.510Z",
+          "dur_min": 0.9,
+          "events": 23,
+          "in": 27508,
+          "out": 3312,
+          "cache_read": 582749,
+          "cache_creation": 120012,
+          "total": 733581,
           "thinking_tokens": 0
         },
         {
-          "sid": "2ec97dc9-a369-470e-9f8a-7d75e6759882",
-          "t": "2026-05-05T16:14:26.062Z",
-          "dur_min": 9.5,
-          "events": 96,
-          "in": 15251,
-          "out": 33592,
-          "cache_read": 6104455,
-          "cache_creation": 414090,
-          "total": 6567388,
+          "sid": "4a40ed37-2316-46ab-ac6e-b0ba22af7e01",
+          "t": "2026-06-21T13:21:48.206Z",
+          "dur_min": 51.7,
+          "events": 35,
+          "in": 27718,
+          "out": 3592,
+          "cache_read": 991687,
+          "cache_creation": 126485,
+          "total": 1149482,
           "thinking_tokens": 0
         },
         {
-          "sid": "c08974ff-c380-4b4d-82a1-d562a7a4b2fc",
-          "t": "2026-05-21T07:05:07.158Z",
-          "dur_min": 3.7,
-          "events": 116,
-          "in": 5847,
-          "out": 72430,
-          "cache_read": 6982111,
-          "cache_creation": 748035,
-          "total": 7808423,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "9aee99ba-8b6e-477a-a1cd-33b61b798002",
-          "t": "2026-06-11T07:04:32.324Z",
-          "dur_min": 3.3,
-          "events": 64,
-          "in": 50482,
-          "out": 21997,
-          "cache_read": 3548858,
-          "cache_creation": 460888,
-          "total": 4082225,
+          "sid": "c1fb891f-fa05-499e-bfaa-4f44fb016762",
+          "t": "2026-06-22T19:52:45.367Z",
+          "dur_min": 0.9,
+          "events": 29,
+          "in": 27781,
+          "out": 4438,
+          "cache_read": 815840,
+          "cache_creation": 122477,
+          "total": 970536,
           "thinking_tokens": 0
         }
       ]
@@ -8649,10 +9905,10 @@
         "Arkani-Hamed"
       ],
       "schedule": "Fri 03:07",
-      "runs": 5,
-      "out_total": 150126,
-      "all_total": 34214550,
-      "median_gap_h": 440.8,
+      "runs": 6,
+      "out_total": 190954,
+      "all_total": 39428476,
+      "median_gap_h": 336.0,
       "rows": [
         {
           "sid": "2a25e936-f46b-4445-955a-4297e424b4ee",
@@ -8712,6 +9968,493 @@
           "cache_read": 4221871,
           "cache_creation": 398922,
           "total": 4690961,
+          "thinking_tokens": 4112
+        },
+        {
+          "sid": "d7f6e75e-0045-4122-9938-4afe3a0bd098",
+          "t": "2026-06-19T07:07:37.168Z",
+          "dur_min": 4.5,
+          "events": 80,
+          "in": 53039,
+          "out": 40828,
+          "cache_read": 4591587,
+          "cache_creation": 528472,
+          "total": 5213926,
+          "thinking_tokens": 4449
+        }
+      ]
+    },
+    {
+      "key": "c2a2-agent-stump-fredrickson",
+      "label": "Stump + Fredrickson",
+      "category": "c2a2-thinker",
+      "thinkers": [
+        "Stump",
+        "Fredrickson"
+      ],
+      "schedule": "Thu 03:04",
+      "runs": 5,
+      "out_total": 182333,
+      "all_total": 27763997,
+      "median_gap_h": 374.8,
+      "rows": [
+        {
+          "sid": "1ba3916b-9974-4029-8a35-d4db8ed730ec",
+          "t": "2026-04-27T01:30:23.417Z",
+          "dur_min": 5.8,
+          "events": 112,
+          "in": 11387,
+          "out": 27252,
+          "cache_read": 6162303,
+          "cache_creation": 327398,
+          "total": 6528340,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "2ec97dc9-a369-470e-9f8a-7d75e6759882",
+          "t": "2026-05-05T16:14:26.062Z",
+          "dur_min": 9.5,
+          "events": 96,
+          "in": 15251,
+          "out": 33592,
+          "cache_read": 6104455,
+          "cache_creation": 414090,
+          "total": 6567388,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "c08974ff-c380-4b4d-82a1-d562a7a4b2fc",
+          "t": "2026-05-21T07:05:07.158Z",
+          "dur_min": 3.7,
+          "events": 116,
+          "in": 5847,
+          "out": 72430,
+          "cache_read": 6982111,
+          "cache_creation": 748035,
+          "total": 7808423,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "9aee99ba-8b6e-477a-a1cd-33b61b798002",
+          "t": "2026-06-11T07:04:32.324Z",
+          "dur_min": 3.3,
+          "events": 64,
+          "in": 50482,
+          "out": 21997,
+          "cache_read": 3548858,
+          "cache_creation": 460888,
+          "total": 4082225,
+          "thinking_tokens": 2678
+        },
+        {
+          "sid": "b99aa1df-8434-4274-8771-0133aa241b89",
+          "t": "2026-06-18T07:04:46.650Z",
+          "dur_min": 2.4,
+          "events": 50,
+          "in": 67518,
+          "out": 27062,
+          "cache_read": 2170883,
+          "cache_creation": 512158,
+          "total": 2777621,
+          "thinking_tokens": 3323
+        }
+      ]
+    },
+    {
+      "key": "scheduler-health-check",
+      "label": "scheduler-health-check",
+      "category": "infrastructure",
+      "thinkers": [],
+      "schedule": "daily 07:09",
+      "runs": 19,
+      "out_total": 168590,
+      "all_total": 10361064,
+      "median_gap_h": 24.0,
+      "rows": [
+        {
+          "sid": "d5b59c91-6fcb-4853-8b81-12235124e43d",
+          "t": "2026-05-10T11:09:25.111Z",
+          "dur_min": 1.1,
+          "events": 10,
+          "in": 30,
+          "out": 9974,
+          "cache_read": 158778,
+          "cache_creation": 114696,
+          "total": 283478,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "56a1c8f2-f15c-44f7-8647-6b464be0a971",
+          "t": "2026-05-14T11:09:06.567Z",
+          "dur_min": 1.3,
+          "events": 16,
+          "in": 24,
+          "out": 12186,
+          "cache_read": 435126,
+          "cache_creation": 134971,
+          "total": 582307,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "bf732d95-09e0-4ebf-90d7-5efcee76a7ad",
+          "t": "2026-06-06T11:09:25.449Z",
+          "dur_min": 0.9,
+          "events": 14,
+          "in": 24676,
+          "out": 8236,
+          "cache_read": 324306,
+          "cache_creation": 150974,
+          "total": 508192,
+          "thinking_tokens": 2750
+        },
+        {
+          "sid": "35543d52-b4c3-4a5d-9e70-880d5d926e21",
+          "t": "2026-06-07T11:09:27.952Z",
+          "dur_min": 1.4,
+          "events": 18,
+          "in": 24678,
+          "out": 10316,
+          "cache_read": 449962,
+          "cache_creation": 121434,
+          "total": 606390,
+          "thinking_tokens": 3822
+        },
+        {
+          "sid": "ceea1912-e4bb-4fcf-a064-fd0f8c561f28",
+          "t": "2026-06-08T11:09:30.606Z",
+          "dur_min": 1.1,
+          "events": 24,
+          "in": 24983,
+          "out": 13607,
+          "cache_read": 574151,
+          "cache_creation": 136611,
+          "total": 749352,
+          "thinking_tokens": 2927
+        },
+        {
+          "sid": "274ffdb9-41b9-44a0-9c84-d1e316bcd42b",
+          "t": "2026-06-09T11:14:08.367Z",
+          "dur_min": 28.9,
+          "events": 13,
+          "in": 24672,
+          "out": 4956,
+          "cache_read": 236865,
+          "cache_creation": 112878,
+          "total": 379371,
+          "thinking_tokens": 1981
+        },
+        {
+          "sid": "033e9ff0-2944-4e9f-ac76-79de799aaaa4",
+          "t": "2026-06-10T11:08:59.617Z",
+          "dur_min": 6263.5,
+          "events": 17,
+          "in": 26237,
+          "out": 6666,
+          "cache_read": 373418,
+          "cache_creation": 135829,
+          "total": 542150,
+          "thinking_tokens": 1700
+        },
+        {
+          "sid": "ea374a81-1c34-4e23-8c9d-cb836f337c38",
+          "t": "2026-06-11T11:09:02.026Z",
+          "dur_min": 4823.5,
+          "events": 19,
+          "in": 26604,
+          "out": 11348,
+          "cache_read": 556690,
+          "cache_creation": 103511,
+          "total": 698153,
+          "thinking_tokens": 2207
+        },
+        {
+          "sid": "d1daa68e-f425-4157-a986-f488fe75cd41",
+          "t": "2026-06-12T11:09:04.639Z",
+          "dur_min": 3383.4,
+          "events": 23,
+          "in": 26247,
+          "out": 9289,
+          "cache_read": 741078,
+          "cache_creation": 142124,
+          "total": 918738,
+          "thinking_tokens": 2046
+        },
+        {
+          "sid": "c116c81e-8e28-49f7-a0fd-e6251249f108",
+          "t": "2026-06-13T11:09:07.040Z",
+          "dur_min": 0.0,
+          "events": 4,
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_creation": 0,
+          "total": 0,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "efa4b710-6854-4771-96d0-58da9de2e0dd",
+          "t": "2026-06-14T11:09:10.154Z",
+          "dur_min": 0.0,
+          "events": 4,
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_creation": 0,
+          "total": 0,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "3460feb7-cd6c-415a-9d86-28f1cf3ba31e",
+          "t": "2026-06-15T11:12:42.445Z",
+          "dur_min": 16.2,
+          "events": 11,
+          "in": 27356,
+          "out": 598,
+          "cache_read": 170396,
+          "cache_creation": 116551,
+          "total": 314901,
+          "thinking_tokens": 3315
+        },
+        {
+          "sid": "e17098aa-02ae-492a-8f5c-16785aa4241e",
+          "t": "2026-06-16T11:09:09.935Z",
+          "dur_min": 1.1,
+          "events": 14,
+          "in": 27725,
+          "out": 10904,
+          "cache_read": 370293,
+          "cache_creation": 137750,
+          "total": 546672,
+          "thinking_tokens": 2478
+        },
+        {
+          "sid": "5017dc2e-6250-4e3a-a4ab-3d4f97493129",
+          "t": "2026-06-17T11:09:13.277Z",
+          "dur_min": 1.1,
+          "events": 16,
+          "in": 27364,
+          "out": 9398,
+          "cache_read": 464158,
+          "cache_creation": 125779,
+          "total": 626699,
+          "thinking_tokens": 2975
+        },
+        {
+          "sid": "a51ca48c-213b-4851-97f1-dc4ded248184",
+          "t": "2026-06-18T11:09:16.635Z",
+          "dur_min": 1.2,
+          "events": 17,
+          "in": 27729,
+          "out": 12444,
+          "cache_read": 522576,
+          "cache_creation": 140972,
+          "total": 703721,
+          "thinking_tokens": 3333
+        },
+        {
+          "sid": "823f2fd0-b1b1-4c42-8999-632679b9be51",
+          "t": "2026-06-19T11:09:19.707Z",
+          "dur_min": 0.9,
+          "events": 18,
+          "in": 27731,
+          "out": 10374,
+          "cache_read": 593972,
+          "cache_creation": 143462,
+          "total": 775539,
+          "thinking_tokens": 2016
+        },
+        {
+          "sid": "fed3132f-9b38-4aae-9315-6121bc16dd5b",
+          "t": "2026-06-20T11:16:58.463Z",
+          "dur_min": 19.8,
+          "events": 21,
+          "in": 41043,
+          "out": 7248,
+          "cache_read": 619279,
+          "cache_creation": 173045,
+          "total": 840615,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "b39836bf-87c0-422d-b231-23cbce86b539",
+          "t": "2026-06-21T11:36:19.042Z",
+          "dur_min": 1.9,
+          "events": 16,
+          "in": 27364,
+          "out": 17940,
+          "cache_read": 471032,
+          "cache_creation": 131672,
+          "total": 648008,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "6a8f1ec0-25d5-47f3-a3bb-45a32b38e6bf",
+          "t": "2026-06-22T20:04:44.486Z",
+          "dur_min": 1.7,
+          "events": 16,
+          "in": 27364,
+          "out": 13106,
+          "cache_read": 468166,
+          "cache_creation": 128142,
+          "total": 636778,
+          "thinking_tokens": 0
+        }
+      ]
+    },
+    {
+      "key": "agentic-cost-tracker",
+      "label": "agentic-cost-tracker",
+      "category": "infrastructure",
+      "thinkers": [],
+      "schedule": "Mon 05:35",
+      "runs": 7,
+      "out_total": 159938,
+      "all_total": 6146618,
+      "median_gap_h": 171.9,
+      "rows": [
+        {
+          "sid": "5ae54e9a-5bf2-44fd-a086-f4b092a5eaea",
+          "t": "2026-04-07T21:29:41.890Z",
+          "dur_min": 1.7,
+          "events": 30,
+          "in": 29,
+          "out": 6230,
+          "cache_read": 454224,
+          "cache_creation": 70601,
+          "total": 531084,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "b3ad43d1-51bd-47ed-babd-d9a43aeb92bd",
+          "t": "2026-04-27T09:35:12.734Z",
+          "dur_min": 1.7,
+          "events": 19,
+          "in": 36,
+          "out": 16770,
+          "cache_read": 481544,
+          "cache_creation": 195010,
+          "total": 693360,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "8970ba7c-0a3b-43ec-beaa-22168736b5cf",
+          "t": "2026-05-04T13:30:28.875Z",
+          "dur_min": 2.0,
+          "events": 23,
+          "in": 34,
+          "out": 25178,
+          "cache_read": 797643,
+          "cache_creation": 324817,
+          "total": 1147672,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "442017c1-4ad9-4c94-afa6-c186092b8b73",
+          "t": "2026-05-11T09:35:32.307Z",
+          "dur_min": 2.0,
+          "events": 22,
+          "in": 53,
+          "out": 29604,
+          "cache_read": 622455,
+          "cache_creation": 166233,
+          "total": 818345,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "5765f733-bc13-43cf-a625-d0ce7964eb0c",
+          "t": "2026-06-08T09:35:34.762Z",
+          "dur_min": 2.2,
+          "events": 26,
+          "in": 24987,
+          "out": 32178,
+          "cache_read": 713239,
+          "cache_creation": 133234,
+          "total": 903638,
+          "thinking_tokens": 6762
+        },
+        {
+          "sid": "f0e54f9a-134c-4c3d-9dc6-4b76894b7e90",
+          "t": "2026-06-15T09:43:58.219Z",
+          "dur_min": 72.7,
+          "events": 21,
+          "in": 27007,
+          "out": 14317,
+          "cache_read": 700705,
+          "cache_creation": 107014,
+          "total": 849043,
+          "thinking_tokens": 3131
+        },
+        {
+          "sid": "16d3a781-cd1d-4d57-8e25-a0c64adf982d",
+          "t": "2026-06-22T11:37:43.095Z",
+          "dur_min": 2.1,
+          "events": 26,
+          "in": 28233,
+          "out": 35661,
+          "cache_read": 960609,
+          "cache_creation": 178973,
+          "total": 1203476,
+          "thinking_tokens": 0
+        }
+      ]
+    },
+    {
+      "key": "reviewer-review-weekly",
+      "label": "reviewer-review-weekly",
+      "category": "infrastructure",
+      "thinkers": [],
+      "schedule": "Mon 06:37",
+      "runs": 4,
+      "out_total": 154518,
+      "all_total": 12025830,
+      "median_gap_h": 168.3,
+      "rows": [
+        {
+          "sid": "af089dda-ad43-4250-9f0a-47076002289f",
+          "t": "2026-06-01T10:37:11.497Z",
+          "dur_min": 3.7,
+          "events": 41,
+          "in": 38636,
+          "out": 36970,
+          "cache_read": 1828922,
+          "cache_creation": 625903,
+          "total": 2530431,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "4f3bfb9f-cfa7-45a4-ac39-cf081b162c70",
+          "t": "2026-06-08T10:37:39.102Z",
+          "dur_min": 3.6,
+          "events": 55,
+          "in": 37705,
+          "out": 41957,
+          "cache_read": 2839870,
+          "cache_creation": 240044,
+          "total": 3159576,
+          "thinking_tokens": 7026
+        },
+        {
+          "sid": "b3a18537-4941-40a4-9e83-ad8871419807",
+          "t": "2026-06-15T10:55:45.059Z",
+          "dur_min": 33.2,
+          "events": 34,
+          "in": 41057,
+          "out": 13922,
+          "cache_read": 917855,
+          "cache_creation": 577539,
+          "total": 1550373,
+          "thinking_tokens": 1657
+        },
+        {
+          "sid": "1a796fc0-793c-4cfe-ba23-76cbeafe2edc",
+          "t": "2026-06-22T20:07:44.005Z",
+          "dur_min": 4.6,
+          "events": 83,
+          "in": 55635,
+          "out": 61669,
+          "cache_read": 4007817,
+          "cache_creation": 660329,
+          "total": 4785450,
           "thinking_tokens": 0
         }
       ]
@@ -8776,7 +10519,7 @@
           "cache_read": 4492784,
           "cache_creation": 588028,
           "total": 5158989,
-          "thinking_tokens": 0
+          "thinking_tokens": 4257
         },
         {
           "sid": "7a304b72-b83d-47f6-8510-62c0e44eca52",
@@ -8793,86 +10536,114 @@
       ]
     },
     {
-      "key": "agentic-cost-tracker",
-      "label": "agentic-cost-tracker",
-      "category": "infrastructure",
+      "key": "c2a2-sewing-agent-weekly",
+      "label": "c2a2-sewing-agent-weekly",
+      "category": "c2a2-pipeline",
       "thinkers": [],
-      "schedule": "Mon 05:35",
-      "runs": 6,
-      "out_total": 124277,
-      "all_total": 4943142,
-      "median_gap_h": 171.9,
+      "schedule": "Sun 04:38",
+      "runs": 3,
+      "out_total": 135091,
+      "all_total": 6542402,
+      "median_gap_h": 169.8,
       "rows": [
         {
-          "sid": "5ae54e9a-5bf2-44fd-a086-f4b092a5eaea",
-          "t": "2026-04-07T21:29:41.890Z",
-          "dur_min": 1.7,
-          "events": 30,
-          "in": 29,
-          "out": 6230,
-          "cache_read": 454224,
-          "cache_creation": 70601,
-          "total": 531084,
+          "sid": "b927e503-5839-4a33-88e7-2362cc31b768",
+          "t": "2026-06-07T08:38:42.193Z",
+          "dur_min": 6.4,
+          "events": 77,
+          "in": 50673,
+          "out": 80605,
+          "cache_read": 3599547,
+          "cache_creation": 448825,
+          "total": 4179650,
+          "thinking_tokens": 13856
+        },
+        {
+          "sid": "f0828581-66d7-4907-bc09-94a8ff934afd",
+          "t": "2026-06-14T08:38:23.765Z",
+          "dur_min": 0.0,
+          "events": 4,
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_creation": 0,
+          "total": 0,
           "thinking_tokens": 0
         },
         {
-          "sid": "b3ad43d1-51bd-47ed-babd-d9a43aeb92bd",
-          "t": "2026-04-27T09:35:12.734Z",
-          "dur_min": 1.7,
-          "events": 19,
-          "in": 36,
-          "out": 16770,
-          "cache_read": 481544,
-          "cache_creation": 195010,
-          "total": 693360,
+          "sid": "e325a912-569a-4ce0-a38b-c19a8970a03f",
+          "t": "2026-06-21T10:25:04.502Z",
+          "dur_min": 71.1,
+          "events": 43,
+          "in": 41333,
+          "out": 54486,
+          "cache_read": 2077700,
+          "cache_creation": 189233,
+          "total": 2362752,
+          "thinking_tokens": 0
+        }
+      ]
+    },
+    {
+      "key": "c2a2-agent-wright-rohr",
+      "label": "Wright + Rohr",
+      "category": "c2a2-thinker",
+      "thinkers": [
+        "Wright",
+        "Rohr"
+      ],
+      "schedule": "Sun 03:13",
+      "runs": 4,
+      "out_total": 124868,
+      "all_total": 11583654,
+      "median_gap_h": 168.0,
+      "rows": [
+        {
+          "sid": "a50c5a4c-0002-4243-bfa8-08483566e02a",
+          "t": "2026-05-10T07:13:13.676Z",
+          "dur_min": 5.9,
+          "events": 64,
+          "in": 22529,
+          "out": 38036,
+          "cache_read": 2546185,
+          "cache_creation": 437466,
+          "total": 3044216,
           "thinking_tokens": 0
         },
         {
-          "sid": "8970ba7c-0a3b-43ec-beaa-22168736b5cf",
-          "t": "2026-05-04T13:30:28.875Z",
-          "dur_min": 2.0,
-          "events": 23,
-          "in": 34,
-          "out": 25178,
-          "cache_read": 797643,
-          "cache_creation": 324817,
-          "total": 1147672,
+          "sid": "b0ea860f-0547-42b0-a2d3-60579d004831",
+          "t": "2026-06-07T07:13:16.593Z",
+          "dur_min": 3.8,
+          "events": 79,
+          "in": 50018,
+          "out": 55071,
+          "cache_read": 3908787,
+          "cache_creation": 834841,
+          "total": 4848717,
+          "thinking_tokens": 4800
+        },
+        {
+          "sid": "c44cc95a-450c-497c-9be0-1cf031a4a6df",
+          "t": "2026-06-14T07:12:59.063Z",
+          "dur_min": 0.0,
+          "events": 4,
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_creation": 0,
+          "total": 0,
           "thinking_tokens": 0
         },
         {
-          "sid": "442017c1-4ad9-4c94-afa6-c186092b8b73",
-          "t": "2026-05-11T09:35:32.307Z",
-          "dur_min": 2.0,
-          "events": 22,
-          "in": 53,
-          "out": 29604,
-          "cache_read": 622455,
-          "cache_creation": 166233,
-          "total": 818345,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "5765f733-bc13-43cf-a625-d0ce7964eb0c",
-          "t": "2026-06-08T09:35:34.762Z",
-          "dur_min": 2.2,
-          "events": 26,
-          "in": 24987,
-          "out": 32178,
-          "cache_read": 713239,
-          "cache_creation": 133234,
-          "total": 903638,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "f0e54f9a-134c-4c3d-9dc6-4b76894b7e90",
-          "t": "2026-06-15T09:43:58.219Z",
-          "dur_min": 72.7,
-          "events": 21,
-          "in": 27007,
-          "out": 14317,
-          "cache_read": 700705,
-          "cache_creation": 107014,
-          "total": 849043,
+          "sid": "92418afa-9ebf-4e68-93fe-7dee8a8d9a83",
+          "t": "2026-06-21T07:15:34.448Z",
+          "dur_min": 141.9,
+          "events": 74,
+          "in": 56145,
+          "out": 31761,
+          "cache_read": 2965509,
+          "cache_creation": 637306,
+          "total": 3690721,
           "thinking_tokens": 0
         }
       ]
@@ -8925,362 +10696,7 @@
           "cache_read": 3428974,
           "cache_creation": 777809,
           "total": 4291202,
-          "thinking_tokens": 0
-        }
-      ]
-    },
-    {
-      "key": "scheduler-health-check",
-      "label": "scheduler-health-check",
-      "category": "infrastructure",
-      "thinkers": [],
-      "schedule": "daily 07:09",
-      "runs": 14,
-      "out_total": 107478,
-      "all_total": 6756403,
-      "median_gap_h": 24.0,
-      "rows": [
-        {
-          "sid": "d5b59c91-6fcb-4853-8b81-12235124e43d",
-          "t": "2026-05-10T11:09:25.111Z",
-          "dur_min": 1.1,
-          "events": 10,
-          "in": 30,
-          "out": 9974,
-          "cache_read": 158778,
-          "cache_creation": 114696,
-          "total": 283478,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "56a1c8f2-f15c-44f7-8647-6b464be0a971",
-          "t": "2026-05-14T11:09:06.567Z",
-          "dur_min": 1.3,
-          "events": 16,
-          "in": 24,
-          "out": 12186,
-          "cache_read": 435126,
-          "cache_creation": 134971,
-          "total": 582307,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "bf732d95-09e0-4ebf-90d7-5efcee76a7ad",
-          "t": "2026-06-06T11:09:25.449Z",
-          "dur_min": 0.9,
-          "events": 14,
-          "in": 24676,
-          "out": 8236,
-          "cache_read": 324306,
-          "cache_creation": 150974,
-          "total": 508192,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "35543d52-b4c3-4a5d-9e70-880d5d926e21",
-          "t": "2026-06-07T11:09:27.952Z",
-          "dur_min": 1.4,
-          "events": 18,
-          "in": 24678,
-          "out": 10316,
-          "cache_read": 449962,
-          "cache_creation": 121434,
-          "total": 606390,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "ceea1912-e4bb-4fcf-a064-fd0f8c561f28",
-          "t": "2026-06-08T11:09:30.606Z",
-          "dur_min": 1.1,
-          "events": 24,
-          "in": 24983,
-          "out": 13607,
-          "cache_read": 574151,
-          "cache_creation": 136611,
-          "total": 749352,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "274ffdb9-41b9-44a0-9c84-d1e316bcd42b",
-          "t": "2026-06-09T11:14:08.367Z",
-          "dur_min": 28.9,
-          "events": 13,
-          "in": 24672,
-          "out": 4956,
-          "cache_read": 236865,
-          "cache_creation": 112878,
-          "total": 379371,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "033e9ff0-2944-4e9f-ac76-79de799aaaa4",
-          "t": "2026-06-10T11:08:59.617Z",
-          "dur_min": 6263.5,
-          "events": 17,
-          "in": 26237,
-          "out": 6666,
-          "cache_read": 373418,
-          "cache_creation": 135829,
-          "total": 542150,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "ea374a81-1c34-4e23-8c9d-cb836f337c38",
-          "t": "2026-06-11T11:09:02.026Z",
-          "dur_min": 4823.5,
-          "events": 19,
-          "in": 26604,
-          "out": 11348,
-          "cache_read": 556690,
-          "cache_creation": 103511,
-          "total": 698153,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "d1daa68e-f425-4157-a986-f488fe75cd41",
-          "t": "2026-06-12T11:09:04.639Z",
-          "dur_min": 3383.4,
-          "events": 23,
-          "in": 26247,
-          "out": 9289,
-          "cache_read": 741078,
-          "cache_creation": 142124,
-          "total": 918738,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "c116c81e-8e28-49f7-a0fd-e6251249f108",
-          "t": "2026-06-13T11:09:07.040Z",
-          "dur_min": 0.0,
-          "events": 4,
-          "in": 0,
-          "out": 0,
-          "cache_read": 0,
-          "cache_creation": 0,
-          "total": 0,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "efa4b710-6854-4771-96d0-58da9de2e0dd",
-          "t": "2026-06-14T11:09:10.154Z",
-          "dur_min": 0.0,
-          "events": 4,
-          "in": 0,
-          "out": 0,
-          "cache_read": 0,
-          "cache_creation": 0,
-          "total": 0,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "3460feb7-cd6c-415a-9d86-28f1cf3ba31e",
-          "t": "2026-06-15T11:12:42.445Z",
-          "dur_min": 16.2,
-          "events": 11,
-          "in": 27356,
-          "out": 598,
-          "cache_read": 170396,
-          "cache_creation": 116551,
-          "total": 314901,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "e17098aa-02ae-492a-8f5c-16785aa4241e",
-          "t": "2026-06-16T11:09:09.935Z",
-          "dur_min": 1.1,
-          "events": 14,
-          "in": 27725,
-          "out": 10904,
-          "cache_read": 370293,
-          "cache_creation": 137750,
-          "total": 546672,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "5017dc2e-6250-4e3a-a4ab-3d4f97493129",
-          "t": "2026-06-17T11:09:13.277Z",
-          "dur_min": 1.1,
-          "events": 16,
-          "in": 27364,
-          "out": 9398,
-          "cache_read": 464158,
-          "cache_creation": 125779,
-          "total": 626699,
-          "thinking_tokens": 0
-        }
-      ]
-    },
-    {
-      "key": "weekly-agent-ecosystem-report",
-      "label": "weekly-agent-ecosystem-report",
-      "category": "infrastructure",
-      "thinkers": [],
-      "schedule": "Sun 22:39",
-      "runs": 5,
-      "out_total": 98731,
-      "all_total": 2733619,
-      "median_gap_h": 207.3,
-      "rows": [
-        {
-          "sid": "a96cf048-9d70-4b39-be47-b8e8b1e4fddd",
-          "t": "2026-04-27T01:48:23.100Z",
-          "dur_min": 2.1,
-          "events": 15,
-          "in": 22,
-          "out": 24066,
-          "cache_read": 287504,
-          "cache_creation": 135282,
-          "total": 446874,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "c1460474-1127-4ff8-9368-bae21b39b98b",
-          "t": "2026-04-27T02:39:49.812Z",
-          "dur_min": 2.0,
-          "events": 16,
-          "in": 28,
-          "out": 24924,
-          "cache_read": 298791,
-          "cache_creation": 167166,
-          "total": 490909,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "f99ded3d-341d-4ce3-89f9-c41e0b9307b5",
-          "t": "2026-05-05T17:55:24.143Z",
-          "dur_min": 1.8,
-          "events": 13,
-          "in": 22,
-          "out": 19621,
-          "cache_read": 411413,
-          "cache_creation": 124159,
-          "total": 555215,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "cfd04d52-4362-4c96-ab4b-2de532590cbd",
-          "t": "2026-06-08T02:40:12.464Z",
-          "dur_min": 1.8,
-          "events": 22,
-          "in": 24680,
-          "out": 20682,
-          "cache_read": 522702,
-          "cache_creation": 127338,
-          "total": 695402,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "7fee7c05-3b64-4e30-8a5d-613e33953e0a",
-          "t": "2026-06-15T02:32:00.631Z",
-          "dur_min": 76.0,
-          "events": 16,
-          "in": 26999,
-          "out": 9438,
-          "cache_read": 426305,
-          "cache_creation": 82477,
-          "total": 545219,
-          "thinking_tokens": 0
-        }
-      ]
-    },
-    {
-      "key": "c2a2-agent-wright-rohr",
-      "label": "Wright + Rohr",
-      "category": "c2a2-thinker",
-      "thinkers": [
-        "Wright",
-        "Rohr"
-      ],
-      "schedule": "Sun 03:13",
-      "runs": 3,
-      "out_total": 93107,
-      "all_total": 7892933,
-      "median_gap_h": 672.0,
-      "rows": [
-        {
-          "sid": "a50c5a4c-0002-4243-bfa8-08483566e02a",
-          "t": "2026-05-10T07:13:13.676Z",
-          "dur_min": 5.9,
-          "events": 64,
-          "in": 22529,
-          "out": 38036,
-          "cache_read": 2546185,
-          "cache_creation": 437466,
-          "total": 3044216,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "b0ea860f-0547-42b0-a2d3-60579d004831",
-          "t": "2026-06-07T07:13:16.593Z",
-          "dur_min": 3.8,
-          "events": 79,
-          "in": 50018,
-          "out": 55071,
-          "cache_read": 3908787,
-          "cache_creation": 834841,
-          "total": 4848717,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "c44cc95a-450c-497c-9be0-1cf031a4a6df",
-          "t": "2026-06-14T07:12:59.063Z",
-          "dur_min": 0.0,
-          "events": 4,
-          "in": 0,
-          "out": 0,
-          "cache_read": 0,
-          "cache_creation": 0,
-          "total": 0,
-          "thinking_tokens": 0
-        }
-      ]
-    },
-    {
-      "key": "reviewer-review-weekly",
-      "label": "reviewer-review-weekly",
-      "category": "infrastructure",
-      "thinkers": [],
-      "schedule": "Mon 06:37",
-      "runs": 3,
-      "out_total": 92849,
-      "all_total": 7240380,
-      "median_gap_h": 168.3,
-      "rows": [
-        {
-          "sid": "af089dda-ad43-4250-9f0a-47076002289f",
-          "t": "2026-06-01T10:37:11.497Z",
-          "dur_min": 3.7,
-          "events": 41,
-          "in": 38636,
-          "out": 36970,
-          "cache_read": 1828922,
-          "cache_creation": 625903,
-          "total": 2530431,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "4f3bfb9f-cfa7-45a4-ac39-cf081b162c70",
-          "t": "2026-06-08T10:37:39.102Z",
-          "dur_min": 3.6,
-          "events": 55,
-          "in": 37705,
-          "out": 41957,
-          "cache_read": 2839870,
-          "cache_creation": 240044,
-          "total": 3159576,
-          "thinking_tokens": 0
-        },
-        {
-          "sid": "b3a18537-4941-40a4-9e83-ad8871419807",
-          "t": "2026-06-15T10:55:45.059Z",
-          "dur_min": 33.2,
-          "events": 34,
-          "in": 41057,
-          "out": 13922,
-          "cache_read": 917855,
-          "cache_creation": 577539,
-          "total": 1550373,
-          "thinking_tokens": 0
+          "thinking_tokens": 2830
         }
       ]
     },
@@ -9290,9 +10706,9 @@
       "category": "infrastructure",
       "thinkers": [],
       "schedule": "daily 08:09",
-      "runs": 24,
-      "out_total": 88492,
-      "all_total": 12330353,
+      "runs": 28,
+      "out_total": 109766,
+      "all_total": 14414990,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -9449,7 +10865,7 @@
           "cache_read": 248737,
           "cache_creation": 235052,
           "total": 526200,
-          "thinking_tokens": 0
+          "thinking_tokens": 855
         },
         {
           "sid": "3e66e880-eb5b-4de1-be01-6bfd5ec9e2a1",
@@ -9461,7 +10877,7 @@
           "cache_read": 356091,
           "cache_creation": 150671,
           "total": 549334,
-          "thinking_tokens": 0
+          "thinking_tokens": 672
         },
         {
           "sid": "197852e5-54fc-42cd-8866-30093aaf497b",
@@ -9473,7 +10889,7 @@
           "cache_read": 370781,
           "cache_creation": 217084,
           "total": 631532,
-          "thinking_tokens": 0
+          "thinking_tokens": 987
         },
         {
           "sid": "1d9e5044-e57d-4650-a4c4-c6f4c53bc6d6",
@@ -9485,7 +10901,7 @@
           "cache_read": 229297,
           "cache_creation": 197480,
           "total": 468731,
-          "thinking_tokens": 0
+          "thinking_tokens": 1002
         },
         {
           "sid": "2d3a04ae-e945-40c8-ba73-2cabfb6a46fc",
@@ -9497,7 +10913,7 @@
           "cache_read": 680853,
           "cache_creation": 200346,
           "total": 926168,
-          "thinking_tokens": 0
+          "thinking_tokens": 1031
         },
         {
           "sid": "9b742a5e-a9ec-410a-85e7-fcbd5ee33806",
@@ -9509,7 +10925,7 @@
           "cache_read": 364947,
           "cache_creation": 196782,
           "total": 606045,
-          "thinking_tokens": 0
+          "thinking_tokens": 916
         },
         {
           "sid": "597853e3-47ca-49ca-b421-7d58a699c7ca",
@@ -9521,7 +10937,7 @@
           "cache_read": 416722,
           "cache_creation": 212647,
           "total": 675034,
-          "thinking_tokens": 0
+          "thinking_tokens": 1103
         },
         {
           "sid": "7dd888de-16ce-4e6a-8b39-80c8d0b6817d",
@@ -9557,7 +10973,7 @@
           "cache_read": 680636,
           "cache_creation": 248184,
           "total": 962047,
-          "thinking_tokens": 0
+          "thinking_tokens": 1074
         },
         {
           "sid": "eda3015b-b0cf-41f5-a330-cc4e6a1a6463",
@@ -9569,7 +10985,7 @@
           "cache_read": 229367,
           "cache_creation": 211642,
           "total": 486295,
-          "thinking_tokens": 0
+          "thinking_tokens": 738
         },
         {
           "sid": "d2a1af10-02f1-4e14-83c1-3a9812e3d0d3",
@@ -9581,81 +10997,128 @@
           "cache_read": 713752,
           "cache_creation": 202900,
           "total": 964657,
+          "thinking_tokens": 1247
+        },
+        {
+          "sid": "43634a8a-a39c-497c-a828-b680d0fb938a",
+          "t": "2026-06-18T12:09:20.329Z",
+          "dur_min": 0.5,
+          "events": 15,
+          "in": 40672,
+          "out": 4937,
+          "cache_read": 219179,
+          "cache_creation": 197965,
+          "total": 462753,
+          "thinking_tokens": 799
+        },
+        {
+          "sid": "170dcb26-e1d4-481a-8d77-42391957677c",
+          "t": "2026-06-19T12:09:24.868Z",
+          "dur_min": 0.7,
+          "events": 23,
+          "in": 54357,
+          "out": 8978,
+          "cache_read": 466936,
+          "cache_creation": 306263,
+          "total": 836534,
+          "thinking_tokens": 1291
+        },
+        {
+          "sid": "e1e58a62-4e77-4f22-9083-11ad3ff23525",
+          "t": "2026-06-21T12:17:01.735Z",
+          "dur_min": 0.1,
+          "events": 9,
+          "in": 26630,
+          "out": 1094,
+          "cache_read": 93414,
+          "cache_creation": 143808,
+          "total": 264946,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "5b9c6656-cbae-48d4-b294-9eabf00b9da4",
+          "t": "2026-06-22T19:48:44.269Z",
+          "dur_min": 0.8,
+          "events": 16,
+          "in": 40674,
+          "out": 6265,
+          "cache_read": 239547,
+          "cache_creation": 233918,
+          "total": 520404,
           "thinking_tokens": 0
         }
       ]
     },
     {
-      "key": "c2a2-sewing-agent-weekly",
-      "label": "c2a2-sewing-agent-weekly",
-      "category": "c2a2-pipeline",
+      "key": "weekly-agent-ecosystem-report",
+      "label": "weekly-agent-ecosystem-report",
+      "category": "infrastructure",
       "thinkers": [],
-      "schedule": "Sun 04:38",
-      "runs": 2,
-      "out_total": 80605,
-      "all_total": 4179650,
-      "median_gap_h": 168.0,
+      "schedule": "Sun 22:39",
+      "runs": 5,
+      "out_total": 98731,
+      "all_total": 2733619,
+      "median_gap_h": 207.3,
       "rows": [
         {
-          "sid": "b927e503-5839-4a33-88e7-2362cc31b768",
-          "t": "2026-06-07T08:38:42.193Z",
-          "dur_min": 6.4,
-          "events": 77,
-          "in": 50673,
-          "out": 80605,
-          "cache_read": 3599547,
-          "cache_creation": 448825,
-          "total": 4179650,
+          "sid": "a96cf048-9d70-4b39-be47-b8e8b1e4fddd",
+          "t": "2026-04-27T01:48:23.100Z",
+          "dur_min": 2.1,
+          "events": 15,
+          "in": 22,
+          "out": 24066,
+          "cache_read": 287504,
+          "cache_creation": 135282,
+          "total": 446874,
           "thinking_tokens": 0
         },
         {
-          "sid": "f0828581-66d7-4907-bc09-94a8ff934afd",
-          "t": "2026-06-14T08:38:23.765Z",
-          "dur_min": 0.0,
-          "events": 4,
-          "in": 0,
-          "out": 0,
-          "cache_read": 0,
-          "cache_creation": 0,
-          "total": 0,
-          "thinking_tokens": 0
-        }
-      ]
-    },
-    {
-      "key": "c2a2-prs-connectome-weekly",
-      "label": "c2a2-prs-connectome-weekly",
-      "category": "c2a2-pipeline",
-      "thinkers": [],
-      "schedule": "Sun 07:39",
-      "runs": 2,
-      "out_total": 42156,
-      "all_total": 2565018,
-      "median_gap_h": 158.9,
-      "rows": [
-        {
-          "sid": "19c57e5b-7a03-4ce6-9541-eaac4ce91cbe",
-          "t": "2026-06-07T20:43:19.843Z",
-          "dur_min": 4.2,
-          "events": 50,
-          "in": 25410,
-          "out": 42156,
-          "cache_read": 2340492,
-          "cache_creation": 156960,
-          "total": 2565018,
+          "sid": "c1460474-1127-4ff8-9368-bae21b39b98b",
+          "t": "2026-04-27T02:39:49.812Z",
+          "dur_min": 2.0,
+          "events": 16,
+          "in": 28,
+          "out": 24924,
+          "cache_read": 298791,
+          "cache_creation": 167166,
+          "total": 490909,
           "thinking_tokens": 0
         },
         {
-          "sid": "650addaf-3900-4de2-970c-17c7d7891b34",
-          "t": "2026-06-14T11:39:44.302Z",
-          "dur_min": 0.0,
-          "events": 4,
-          "in": 0,
-          "out": 0,
-          "cache_read": 0,
-          "cache_creation": 0,
-          "total": 0,
+          "sid": "f99ded3d-341d-4ce3-89f9-c41e0b9307b5",
+          "t": "2026-05-05T17:55:24.143Z",
+          "dur_min": 1.8,
+          "events": 13,
+          "in": 22,
+          "out": 19621,
+          "cache_read": 411413,
+          "cache_creation": 124159,
+          "total": 555215,
           "thinking_tokens": 0
+        },
+        {
+          "sid": "cfd04d52-4362-4c96-ab4b-2de532590cbd",
+          "t": "2026-06-08T02:40:12.464Z",
+          "dur_min": 1.8,
+          "events": 22,
+          "in": 24680,
+          "out": 20682,
+          "cache_read": 522702,
+          "cache_creation": 127338,
+          "total": 695402,
+          "thinking_tokens": 4300
+        },
+        {
+          "sid": "7fee7c05-3b64-4e30-8a5d-613e33953e0a",
+          "t": "2026-06-15T02:32:00.631Z",
+          "dur_min": 76.0,
+          "events": 16,
+          "in": 26999,
+          "out": 9438,
+          "cache_read": 426305,
+          "cache_creation": 82477,
+          "total": 545219,
+          "thinking_tokens": 5451
         }
       ]
     },
@@ -9665,10 +11128,10 @@
       "category": "infrastructure",
       "thinkers": [],
       "schedule": "daily 06:03",
-      "runs": 28,
-      "out_total": 41312,
-      "all_total": 8868298,
-      "median_gap_h": 44.7,
+      "runs": 33,
+      "out_total": 56616,
+      "all_total": 11061367,
+      "median_gap_h": 26.1,
       "rows": [
         {
           "sid": "6bc2f680-53db-49d5-a514-3b3325a9ab4c",
@@ -9860,7 +11323,7 @@
           "cache_read": 76862,
           "cache_creation": 112960,
           "total": 215456,
-          "thinking_tokens": 0
+          "thinking_tokens": 50
         },
         {
           "sid": "f0862826-590d-464a-8edd-a1ef83e475f4",
@@ -9896,7 +11359,7 @@
           "cache_read": 57600,
           "cache_creation": 70356,
           "total": 152624,
-          "thinking_tokens": 0
+          "thinking_tokens": 177
         },
         {
           "sid": "04482b61-6394-4683-908c-4185ea1d0ea9",
@@ -9908,7 +11371,7 @@
           "cache_read": 76862,
           "cache_creation": 107002,
           "total": 208688,
-          "thinking_tokens": 0
+          "thinking_tokens": 165
         },
         {
           "sid": "270c1e7f-8a6d-4c25-88c3-8970fb5b10d1",
@@ -9920,7 +11383,7 @@
           "cache_read": 76862,
           "cache_creation": 106960,
           "total": 208554,
-          "thinking_tokens": 0
+          "thinking_tokens": 163
         },
         {
           "sid": "65629eef-9204-4fe7-bcf1-ca0f63d75ab7",
@@ -9932,7 +11395,7 @@
           "cache_read": 305303,
           "cache_creation": 110583,
           "total": 444718,
-          "thinking_tokens": 0
+          "thinking_tokens": 384
         },
         {
           "sid": "bc96a043-dc13-414d-be9d-1929d729100c",
@@ -9944,7 +11407,7 @@
           "cache_read": 361257,
           "cache_creation": 112035,
           "total": 502486,
-          "thinking_tokens": 0
+          "thinking_tokens": 449
         },
         {
           "sid": "438e41e4-17e7-4af4-9c69-d55936f2727d",
@@ -9956,7 +11419,7 @@
           "cache_read": 346159,
           "cache_creation": 125312,
           "total": 501928,
-          "thinking_tokens": 0
+          "thinking_tokens": 349
         },
         {
           "sid": "412f1f31-21ec-4a84-a518-fd7cb2a44fb0",
@@ -9985,25 +11448,134 @@
         {
           "sid": "f62f6eeb-67f7-485f-858d-2b30c205a9b1",
           "t": "2026-06-16T10:03:42.779Z",
-          "dur_min": 0.1,
-          "events": 8,
+          "dur_min": 4938.9,
+          "events": 9,
           "in": 26628,
           "out": 658,
           "cache_read": 73926,
           "cache_creation": 117054,
           "total": 218266,
-          "thinking_tokens": 0
+          "thinking_tokens": 157
         },
         {
           "sid": "d43938fc-9037-457d-b7d6-27512967cb74",
           "t": "2026-06-17T10:03:45.607Z",
-          "dur_min": 0.2,
-          "events": 8,
+          "dur_min": 3498.8,
+          "events": 9,
           "in": 26628,
           "out": 688,
           "cache_read": 73926,
           "cache_creation": 117076,
           "total": 218318,
+          "thinking_tokens": 160
+        },
+        {
+          "sid": "4082630c-9944-4825-9bc9-b9c83d20f0c4",
+          "t": "2026-06-18T10:03:48.171Z",
+          "dur_min": 2058.8,
+          "events": 9,
+          "in": 26628,
+          "out": 658,
+          "cache_read": 73926,
+          "cache_creation": 116400,
+          "total": 217612,
+          "thinking_tokens": 154
+        },
+        {
+          "sid": "307fcece-3339-4de9-ab5f-c1fb7e7275f0",
+          "t": "2026-06-19T10:03:51.713Z",
+          "dur_min": 618.7,
+          "events": 8,
+          "in": 26626,
+          "out": 612,
+          "cache_read": 55398,
+          "cache_creation": 79538,
+          "total": 162174,
+          "thinking_tokens": 165
+        },
+        {
+          "sid": "791be1ae-daef-4353-840a-d47f090dc2b2",
+          "t": "2026-06-19T16:15:45.140Z",
+          "dur_min": 1.3,
+          "events": 25,
+          "in": 27376,
+          "out": 7629,
+          "cache_read": 752856,
+          "cache_creation": 146443,
+          "total": 934304,
+          "thinking_tokens": 789
+        },
+        {
+          "sid": "f252aa67-34e1-4d24-a42c-86b3ef3d8d5e",
+          "t": "2026-06-20T10:09:30.311Z",
+          "dur_min": 0.3,
+          "events": 13,
+          "in": 41398,
+          "out": 3589,
+          "cache_read": 292313,
+          "cache_creation": 100856,
+          "total": 438156,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "21a2142c-0964-4741-9be3-88a812fa4fb6",
+          "t": "2026-06-22T19:48:44.852Z",
+          "dur_min": 0.3,
+          "events": 14,
+          "in": 27362,
+          "out": 2816,
+          "cache_read": 328850,
+          "cache_creation": 81795,
+          "total": 440823,
+          "thinking_tokens": 0
+        }
+      ]
+    },
+    {
+      "key": "c2a2-prs-connectome-weekly",
+      "label": "c2a2-prs-connectome-weekly",
+      "category": "c2a2-pipeline",
+      "thinkers": [],
+      "schedule": "Sun 07:39",
+      "runs": 3,
+      "out_total": 43910,
+      "all_total": 3023600,
+      "median_gap_h": 170.9,
+      "rows": [
+        {
+          "sid": "19c57e5b-7a03-4ce6-9541-eaac4ce91cbe",
+          "t": "2026-06-07T20:43:19.843Z",
+          "dur_min": 4.2,
+          "events": 50,
+          "in": 25410,
+          "out": 42156,
+          "cache_read": 2340492,
+          "cache_creation": 156960,
+          "total": 2565018,
+          "thinking_tokens": 9692
+        },
+        {
+          "sid": "650addaf-3900-4de2-970c-17c7d7891b34",
+          "t": "2026-06-14T11:39:44.302Z",
+          "dur_min": 0.0,
+          "events": 4,
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_creation": 0,
+          "total": 0,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "bc37ed33-bcd1-4aac-b9e3-d1065200b7cf",
+          "t": "2026-06-21T14:32:39.378Z",
+          "dur_min": 0.3,
+          "events": 11,
+          "in": 27358,
+          "out": 1754,
+          "cache_read": 310322,
+          "cache_creation": 119148,
+          "total": 458582,
           "thinking_tokens": 0
         }
       ]
@@ -10014,10 +11586,10 @@
       "category": "infrastructure",
       "thinkers": [],
       "schedule": "Sun 06:19",
-      "runs": 2,
-      "out_total": 29663,
-      "all_total": 2063520,
-      "median_gap_h": 168.0,
+      "runs": 3,
+      "out_total": 40816,
+      "all_total": 3604004,
+      "median_gap_h": 169.6,
       "rows": [
         {
           "sid": "f81f14d0-3d90-46f5-870e-4cb35939b753",
@@ -10029,7 +11601,7 @@
           "cache_read": 1675040,
           "cache_creation": 321388,
           "total": 2063520,
-          "thinking_tokens": 0
+          "thinking_tokens": 5667
         },
         {
           "sid": "445893d9-735e-4bed-bd3b-3d19fb3388ca",
@@ -10042,6 +11614,18 @@
           "cache_creation": 0,
           "total": 0,
           "thinking_tokens": 0
+        },
+        {
+          "sid": "99e53068-e38b-43a0-be8b-ee0ef09a7347",
+          "t": "2026-06-21T11:53:55.442Z",
+          "dur_min": 38.7,
+          "events": 33,
+          "in": 68193,
+          "out": 11153,
+          "cache_read": 918675,
+          "cache_creation": 542463,
+          "total": 1540484,
+          "thinking_tokens": 0
         }
       ]
     },
@@ -10051,10 +11635,10 @@
       "category": "infrastructure",
       "thinkers": [],
       "schedule": "Sun 23:01",
-      "runs": 4,
-      "out_total": 18445,
-      "all_total": 3840589,
-      "median_gap_h": 55.5,
+      "runs": 5,
+      "out_total": 23799,
+      "all_total": 4667538,
+      "median_gap_h": 168.8,
       "rows": [
         {
           "sid": "90f85fd4-20cd-4f89-ba18-ead4244bc2b9",
@@ -10078,7 +11662,7 @@
           "cache_read": 536752,
           "cache_creation": 149633,
           "total": 714695,
-          "thinking_tokens": 0
+          "thinking_tokens": 434
         },
         {
           "sid": "0d93a684-a8e9-4572-a284-b37933355fe3",
@@ -10090,7 +11674,7 @@
           "cache_read": 1103932,
           "cache_creation": 118853,
           "total": 1253337,
-          "thinking_tokens": 0
+          "thinking_tokens": 1095
         },
         {
           "sid": "1ccbf897-0bb3-4405-ac4c-1b8dfbc155e5",
@@ -10102,6 +11686,18 @@
           "cache_read": 1338861,
           "cache_creation": 168776,
           "total": 1542951,
+          "thinking_tokens": 860
+        },
+        {
+          "sid": "0ac2bdee-9f0f-4c6a-b1a2-e72f7eac8e24",
+          "t": "2026-06-22T05:49:42.320Z",
+          "dur_min": 0.6,
+          "events": 26,
+          "in": 27011,
+          "out": 5354,
+          "cache_read": 549272,
+          "cache_creation": 245312,
+          "total": 826949,
           "thinking_tokens": 0
         }
       ]
@@ -10112,10 +11708,10 @@
       "category": "c2a2-pipeline",
       "thinkers": [],
       "schedule": "Sun 05:53",
-      "runs": 2,
-      "out_total": 13716,
-      "all_total": 1441307,
-      "median_gap_h": 168.0,
+      "runs": 3,
+      "out_total": 17671,
+      "all_total": 1996946,
+      "median_gap_h": 169.8,
       "rows": [
         {
           "sid": "d68f1eea-1fb3-4b24-b097-e463669a9e82",
@@ -10127,7 +11723,7 @@
           "cache_read": 1136379,
           "cache_creation": 266258,
           "total": 1441307,
-          "thinking_tokens": 0
+          "thinking_tokens": 3078
         },
         {
           "sid": "2bc89e6a-cd20-4bfd-8d74-f377c905de89",
@@ -10140,6 +11736,18 @@
           "cache_creation": 0,
           "total": 0,
           "thinking_tokens": 0
+        },
+        {
+          "sid": "a77a0474-48c9-42ac-b92f-57c1e18b1455",
+          "t": "2026-06-21T11:38:19.539Z",
+          "dur_min": 33.0,
+          "events": 14,
+          "in": 26997,
+          "out": 3955,
+          "cache_read": 292757,
+          "cache_creation": 231930,
+          "total": 555639,
+          "thinking_tokens": 0
         }
       ]
     },
@@ -10149,9 +11757,9 @@
       "category": "infrastructure",
       "thinkers": [],
       "schedule": "daily 06:35",
-      "runs": 14,
-      "out_total": 6602,
-      "all_total": 3719133,
+      "runs": 19,
+      "out_total": 9193,
+      "all_total": 5214630,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -10200,7 +11808,7 @@
           "cache_read": 128288,
           "cache_creation": 129755,
           "total": 282954,
-          "thinking_tokens": 0
+          "thinking_tokens": 96
         },
         {
           "sid": "596075ad-0626-4623-9c2d-7d3ce63eb31a",
@@ -10260,7 +11868,7 @@
           "cache_read": 280556,
           "cache_creation": 138222,
           "total": 445462,
-          "thinking_tokens": 0
+          "thinking_tokens": 104
         },
         {
           "sid": "e4bc7545-0634-4eee-b8ed-742482c02833",
@@ -10320,6 +11928,66 @@
           "cache_read": 129565,
           "cache_creation": 139860,
           "total": 296936,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "be4fb92c-1940-4e50-aeec-0e7613d513a7",
+          "t": "2026-06-18T10:35:11.499Z",
+          "dur_min": 0.3,
+          "events": 9,
+          "in": 26991,
+          "out": 521,
+          "cache_read": 129765,
+          "cache_creation": 140436,
+          "total": 297713,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "ed36a5d1-ebdf-44c6-9c0a-f8db6153b7a1",
+          "t": "2026-06-19T10:35:14.131Z",
+          "dur_min": 0.2,
+          "events": 9,
+          "in": 26991,
+          "out": 517,
+          "cache_read": 129902,
+          "cache_creation": 140859,
+          "total": 298269,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "4508d57a-f4ce-4380-b29e-85dd90ab8172",
+          "t": "2026-06-20T11:38:46.702Z",
+          "dur_min": 0.3,
+          "events": 9,
+          "in": 26991,
+          "out": 510,
+          "cache_read": 130835,
+          "cache_creation": 141362,
+          "total": 299698,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "0fff9f6d-34ff-4fac-b45e-7951c9f3a58a",
+          "t": "2026-06-21T11:38:19.206Z",
+          "dur_min": 0.2,
+          "events": 9,
+          "in": 26991,
+          "out": 534,
+          "cache_read": 130821,
+          "cache_creation": 141298,
+          "total": 299644,
+          "thinking_tokens": 0
+        },
+        {
+          "sid": "1a566074-c85f-45ea-9f1c-83b552e3f4a9",
+          "t": "2026-06-22T20:06:44.919Z",
+          "dur_min": 0.4,
+          "events": 9,
+          "in": 26991,
+          "out": 509,
+          "cache_read": 130951,
+          "cache_creation": 141722,
+          "total": 300173,
           "thinking_tokens": 0
         }
       ]
@@ -10715,12 +12383,48 @@
     },
     {
       "date": "2026-06-17",
-      "links_added": 3,
+      "links_added": 23,
       "links_removed": 0,
-      "files_added": 53,
-      "commits": 9,
+      "files_added": 73,
+      "commits": 10,
       "prs_added": 19,
       "prs_articulated": 19
+    },
+    {
+      "date": "2026-06-18",
+      "links_added": 0,
+      "links_removed": 0,
+      "files_added": 3,
+      "commits": 3,
+      "prs_added": 0,
+      "prs_articulated": 0
+    },
+    {
+      "date": "2026-06-19",
+      "links_added": 20,
+      "links_removed": 0,
+      "files_added": 53,
+      "commits": 3,
+      "prs_added": 0,
+      "prs_articulated": 0
+    },
+    {
+      "date": "2026-06-20",
+      "links_added": 0,
+      "links_removed": 0,
+      "files_added": 0,
+      "commits": 1,
+      "prs_added": 0,
+      "prs_articulated": 0
+    },
+    {
+      "date": "2026-06-21",
+      "links_added": 0,
+      "links_removed": 0,
+      "files_added": 0,
+      "commits": 1,
+      "prs_added": 0,
+      "prs_articulated": 0
     }
   ]
 }
