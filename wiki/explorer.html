@@ -292,6 +292,7 @@
       <span class="brand-c2a2">C2A2</span>
       <span class="brand-full">Community Dialogue Accelerator/Detector System</span>
     </span>
+    <button class="chap-btn" id="chap-intro" data-src="start_here.html">Start here</button>
     <button class="chap-btn" id="chap-community" data-src="community_explorer.html">Community Explorer</button>
     <button class="chap-btn" id="chap-education">Community Education</button>
     <button class="chap-btn active" id="chap-tools">Community Accelerator Tools</button>
@@ -369,6 +370,13 @@
     chapBtns.forEach(function(b) { if (!b.classList.contains('stub')) b.classList.remove('active'); });
     btn.classList.add('active');
   }
+  var chapIntro = document.getElementById('chap-intro');
+  if (chapIntro) chapIntro.addEventListener('click', function() {
+    setFrame(chapIntro.getAttribute('data-src') + '?v=' + Date.now());
+    if (row2) row2.style.display = 'none';
+    if (row2edu) row2edu.style.display = 'none';
+    setActiveChapter(chapIntro);
+  });
   if (chapCommunity) chapCommunity.addEventListener('click', function() {
     setFrame(chapCommunity.getAttribute('data-src') + '?v=' + Date.now());
     if (row2) row2.style.display = 'none';
@@ -415,6 +423,10 @@
       if (row2) row2.style.display = isEdu ? 'none' : '';
       if (row2edu) row2edu.style.display = isEdu ? '' : 'none';
       setActiveChapter(isEdu ? chapEducation : chapTools);
+    } else if (chapIntro && chapIntro.getAttribute('data-src') === path) {
+      if (row2) row2.style.display = 'none';
+      if (row2edu) row2edu.style.display = 'none';
+      setActiveChapter(chapIntro);
     } else if (chapCommunity && chapCommunity.getAttribute('data-src') === path) {
       if (row2) row2.style.display = 'none';
       if (row2edu) row2edu.style.display = 'none';
@@ -424,6 +436,48 @@
   }
   frame.addEventListener('load', syncShellToFrame, { once: true });
   window.addEventListener('pageshow', function(e) { if (e.persisted) syncShellToFrame(); });
+
+  // ── START-HERE LAUNCH LINKS ──
+  // start_here.html posts {source:'c2a2-start-here', action:'navigate', target}.
+  // We switch chapter/tab here; the pinned tab bar is the way back.
+  function lightTab(rowId, src) {
+    var row = document.getElementById(rowId);
+    if (!row) return;
+    row.querySelectorAll('.tab-btn').forEach(function(b) {
+      b.classList.toggle('active', b.getAttribute('data-src') === src);
+    });
+  }
+  window.addEventListener('message', function(e) {
+    var d = e.data;
+    if (!d || d.source !== 'c2a2-start-here' || d.action !== 'navigate') return;
+    switch (d.target) {
+      case 'fifteen':
+        setFrame('what_is_c2a2.html?v=' + Date.now());
+        if (row2) row2.style.display = 'none';
+        if (row2edu) row2edu.style.display = 'none';
+        if (chapIntro) setActiveChapter(chapIntro);
+        break;
+      case 'review-cards':
+        setFrame('review_log.html?v=' + Date.now());
+        if (row2) row2.style.display = 'none';
+        if (row2edu) row2edu.style.display = 'none';
+        if (chapIntro) setActiveChapter(chapIntro);
+        break;
+      case 'summa-commentary':
+        setFrame('summa_commentary.html?v=' + Date.now());
+        if (row2) row2.style.display = 'none';
+        if (row2edu) row2edu.style.display = 'none';
+        if (chapIntro) setActiveChapter(chapIntro);
+        break;
+      case 'sociogram':
+        if (row2) row2.style.display = '';
+        if (row2edu) row2edu.style.display = 'none';
+        lightTab('row2', 'wiki_narration.html');
+        setFrame('wiki_narration.html?v=' + Date.now());
+        setActiveChapter(chapTools);
+        break;
+    }
+  });
 })();
 
 </script>

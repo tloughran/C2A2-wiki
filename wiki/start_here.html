@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start Here — C2A2 Explorer</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: #0a0a0f;
+    color: #d8d8e0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 52px 28px 96px; }
+
+  /* ── HEADER ── */
+  header { text-align: center; margin-bottom: 10px; }
+  .eyebrow {
+    color: #6a604e; font-size: 12px; letter-spacing: 2px;
+    text-transform: uppercase; font-weight: 600;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 800; font-size: 36px; line-height: 1.15;
+    color: #C9A84C; margin: 10px 0 6px; letter-spacing: 0.3px;
+  }
+  h1 .sub { display: block; font-size: 18px; color: #9a8a5a; font-weight: 400; font-style: italic; margin-top: 8px; }
+  .lede {
+    max-width: 640px; margin: 22px auto 0; text-align: center;
+    color: #b6b6c4; font-size: 16px; line-height: 1.75;
+  }
+  .lede em { color: #C9A84C; font-style: normal; }
+
+  .divider { width: 64px; height: 2px; background: #2a2a3a; margin: 44px auto; }
+
+  /* ── SECTIONS ── */
+  .section { margin-bottom: 14px; padding-top: 30px; border-top: 1px solid #1c1c28; }
+  .section:first-of-type { border-top: none; padding-top: 0; }
+  .step {
+    font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;
+    color: #6a604e; font-weight: 600; margin-bottom: 8px;
+  }
+  .step .n { color: #C9A84C; margin-right: 8px; }
+  .section h2 {
+    font-family: Georgia, serif; font-size: 24px; font-weight: 700;
+    color: #ececf2; margin: 0 0 12px; letter-spacing: 0.2px;
+  }
+  .section p { font-size: 15.5px; color: #c4c4d2; margin-bottom: 16px; }
+  .section p em { color: #C9A84C; font-style: normal; }
+
+  /* ── ROSTER ── */
+  .roster {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 6px 22px; margin: 4px 0 16px;
+  }
+  .roster .who { font-size: 14px; color: #b6b6c4; }
+  .roster .who b { color: #ececf2; font-weight: 600; }
+  .roster .more { color: #6a604e; font-style: italic; }
+
+  /* ── LAUNCH BUTTONS ── */
+  .launch {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13.5px; color: #d8d8e0; text-decoration: none;
+    padding: 8px 15px; border: 1px solid #2e2a1c; border-radius: 8px;
+    background: rgba(201,168,76,0.06); transition: background .15s, border-color .15s;
+  }
+  .launch:hover { background: rgba(201,168,76,0.13); border-color: #4a4226; }
+  .launch .arr { color: #C9A84C; font-weight: 700; }
+
+  /* ── DOORS (section 3) ── */
+  .doors {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px; margin-top: 6px;
+  }
+  .door {
+    background: #101019; border: 1px solid #20202e; border-left: 4px solid #C9A84C;
+    border-radius: 10px; padding: 20px 22px; text-decoration: none; display: block;
+    transition: border-color .15s, background .15s;
+  }
+  .door:hover { background: #14141f; border-left-color: #e0bf63; }
+  .door h3 { font-family: Georgia, serif; font-size: 18px; color: #ececf2; font-weight: 700; margin-bottom: 7px; }
+  .door p { font-size: 13.5px; color: #a8a8b8; margin-bottom: 14px; line-height: 1.6; }
+  .door .go { font-size: 13px; color: #C9A84C; font-weight: 600; }
+  .door .go .arr { margin-left: 5px; }
+
+  .footnote {
+    margin-top: 30px; font-size: 13px; color: #7a7a88; text-align: center;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">C2A2 Explorer</div>
+    <h1>Start Here
+      <span class="sub">about thirty minutes, three stops, and you'll have seen it for yourself</span>
+    </h1>
+    <p class="lede">
+      A first look at this system raises a fair question: is there <em>really</em> something here,
+      or just a busy machine making claims that stand on nothing? This page doesn't argue the point —
+      it walks you to the three places where you can judge it directly.
+    </p>
+  </header>
+
+  <div class="divider"></div>
+
+  <!-- ── SECTION 1 ─────────────────────────────── -->
+  <section class="section">
+    <div class="step"><span class="n">1</span> Orient</div>
+    <h2>What's this?</h2>
+    <p>
+      A shared space where a community of thinkers — and the AI agents reading them — work toward
+      <em>one richly-connected mind</em>: an accelerator/detector for intellectual traditions, built
+      so that mature understanding of rival paradigms can be reached quickly and then put into conversation.
+      It resists a one-line summary, so it's answered from fifteen different angles.
+    </p>
+    <a class="launch" data-target="fifteen" href="what_is_c2a2.html">
+      See all 15 framings <span class="arr">&rarr;</span>
+    </a>
+  </section>
+
+  <!-- ── SECTION 2 ─────────────────────────────── -->
+  <section class="section">
+    <div class="step"><span class="n">2</span> Decode the names</div>
+    <h2>Who's who?</h2>
+    <p>
+      Everything deeper refers to these figures by last name, so meet them first. Each entry gives a
+      short summary, then a deeper note on how that thinker connects to this project.
+    </p>
+    <div class="roster">
+      <div class="who"><b>Levin</b> — cognition all the way down</div>
+      <div class="who"><b>Friston</b> — the free-energy principle</div>
+      <div class="who"><b>Hoffman</b> — perception as interface</div>
+      <div class="who"><b>Hawkins</b> — the brain's predictive maps</div>
+      <div class="who"><b>McGilchrist</b> — the divided brain</div>
+      <div class="who"><b>Fredrickson</b> — the science of flourishing</div>
+      <div class="who"><b>Stump</b> — analytic Thomism</div>
+      <div class="who"><b>Carroll</b> — physics &amp; cosmology</div>
+      <div class="who"><b>Arkani-Hamed</b> — fundamental structure</div>
+      <div class="who"><b>Wolfram</b> — the computational universe</div>
+      <div class="who"><b>Kastrup</b> — analytic idealism</div>
+      <div class="who more">…and the companion traditions (Aquinas's Summa, MacIntyre, Rohr, Wright)</div>
+    </div>
+    <a class="launch" data-target="sociogram" href="wiki_narration.html">
+      Meet them in the sociogram <span class="arr">&rarr;</span>
+    </a>
+  </section>
+
+  <!-- ── SECTION 3 ─────────────────────────────── -->
+  <section class="section">
+    <div class="step"><span class="n">3</span> Where's the beef</div>
+    <h2>So what?</h2>
+    <p>
+      Two free-form dives, about ten minutes each. Wander as you like — the tab bar above brings you
+      back here any time.
+    </p>
+    <div class="doors">
+      <a class="door" data-target="review-cards" href="review_log.html">
+        <h3>Is a common mind forming?</h3>
+        <p>
+          Read the review cards — the daily output of the agentic system, gathered in one searchable
+          document. It's the depth and the on-the-mark quality of this flow that earns confidence.
+          Scroll it and judge for yourself.
+        </p>
+        <span class="go">Open the review cards <span class="arr">&rarr;</span></span>
+      </a>
+      <a class="door" data-target="summa-commentary" href="summa_commentary.html">
+        <h3>What can that mind do?</h3>
+        <p>
+          Take one worked example: the contemporary commentary on Habash's one-year synopsis of
+          Aquinas's <em>Summa Theologiae</em>. It opens straight into the commentary — read it
+          day by day, with a <em>Next Day</em> link carrying you through.
+        </p>
+        <span class="go">Open the Summa commentary <span class="arr">&rarr;</span></span>
+      </a>
+    </div>
+    <p class="footnote">
+      By the end you've spent about thirty minutes across three places — and, if you're like the people
+      who built this, you come away genuinely surprised by how much is here.
+    </p>
+  </section>
+
+</div>
+
+<script>
+/* ── LAUNCH WIRING ──────────────────────────────────────────────
+   When embedded inside explorer.html (the shell), launch links ask
+   the shell to switch chapter/tab via postMessage — so the pinned
+   tab bar stays put and is itself the way back. When opened directly
+   (standalone preview), the anchor's plain href is used instead. */
+(function () {
+  var embedded = (window.parent && window.parent !== window);
+  document.querySelectorAll('a[data-target]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      if (!embedded) return;               /* standalone: follow href */
+      e.preventDefault();
+      window.parent.postMessage(
+        { source: 'c2a2-start-here', action: 'navigate', target: a.getAttribute('data-target') },
+        '*'
+      );
+    });
+  });
+})();
+</script>
+</body>
+</html>

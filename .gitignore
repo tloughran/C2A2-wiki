@@ -106,3 +106,7 @@ sociogram-summaries-review/
 crm-team-mockups/
 # Dated review page — ephemeral generated output
 wiki/review/2026-06-19_review.html
+
+# Review Log — review_log.html IS PUBLISHED (email addresses auto-scrubbed by assemble_review_log.py).
+# provenance/ stays LOCAL — it holds decision_emails.json with raw addresses.
+provenance/
