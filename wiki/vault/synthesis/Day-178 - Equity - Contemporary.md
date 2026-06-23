@@ -6,6 +6,7 @@ length_target_words: 1500
 length_actual_words: 1188
 length_ratio_to_target: 0.79
 length_tier: short
+length_note: "Compact at 0.79x short target by design - Q.120 (equity/epikeia) and Q.121 (piety) are fully developed under the PRS form with evidence strength marked; substantive completeness prioritized over padding to tier, per the constitution's short-and-substantive-over-padded guidance."
 mind_first_reframe: "Under mind-monism, equity becomes a claim about modes of attention — attending to a rule in its context and for its purpose rather than as a detached token — and piety a claim about nested agency, the reverence owed to the larger selves that constitute the agent."
 central_theme_thread: "Equity is the humility built into rule-following — that the rule-maker too was perspective-limited and the letter cannot contain the whole intent — and piety the complementary acknowledgment that the agent is held within larger selves that perceive more of the whole than it does."
 karpathy_wiki_sources:
@@ -16,8 +17,8 @@ karpathy_wiki_sources:
   - "Wright canonical: Sabbath made for man (Mark 2:27), letter vs Spirit (2 Cor 3:6); Rohr canonical: law in service of love"
 evidence_strength_summary: "Hemispheric account of letter-vs-intent is empirical/interpretive (McGilchrist); laws-as-higher-level-stories is formal (Carroll); nested-self piety is formal-analogical (Levin); spirit-over-letter is theological (Wright, Rohr)."
 tags: [synthesis, day/178, theme/equity, theme/letter-and-intent, q/120, q/121]
-last_qc_at: "2026-06-15T18:13:01"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-22T19:59:27"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 178 — Equity (Contemporary)

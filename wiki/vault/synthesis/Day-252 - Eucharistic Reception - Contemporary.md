@@ -6,6 +6,7 @@ length_target_words: 3000
 length_actual_words: 896
 length_tier: long
 length_ratio_to_target: 0.3
+length_note: "Compact-by-design: III Q.79-80 (worthy/unworthy and sacramental/spiritual reception) rendered in tight, complete PRS form with Friston's disposition-as-prior the sharpest resource; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened)."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 goal-directedness; PRS-14 symptom persistence/resolution under active inference; priors set by disposition)"
   - "traditions/kastrup/prs_triplets.md (PRS-09 participatory encounter)"
@@ -15,7 +16,7 @@ evidence_strength_summary: "Same-signal-different-update is formal (Friston acti
 mind_first_reframe: "The one offered whole produces divergent effects because reception is governed by the receiver's disposition — its generative prior (Friston) and participatory uptake (Kastrup) — not by any variation in the offering."
 central_theme_thread: "The same whole is offered entire to every perspective yet assimilated only to the measure of each finite disposition, so growing in charity is the lifelong revision of the prior toward the loving-unity attractor."
 tags: [synthesis, day/252, theme/one-whole-received-by-readiness]
-last_qc_at: "2026-06-17T10:28:26"
+last_qc_at: "2026-06-22T04:23:27"
 last_qc_outcome: "rewrote"
 ---
 

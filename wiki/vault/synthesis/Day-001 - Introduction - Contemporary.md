@@ -46,7 +46,8 @@ length_actual_words: 1664
 length_ratio_to_target: 1.109
 length_note: "Within tier tolerance (short tier 1500 ±10% = 1350-1650; 1664 is 1.4% over the upper bound). Day 1 is the methodological frame for Days 2+; pre-dates the central-theme articulation."
 karpathy_wiki_sources:
-  - "wiki/traditions/stump/wiki.md (PRS-01, PRS-03, PRS-06, PRS-07)"
+  - "wiki/traditions/loughran/wiki.md (PRS-08 tradition-crossing inquiry, PRS-09 synergistic coils; formerly Stump-wiki PRS-01, PRS-03 — re-homed 2026-06-11)"
+  - "wiki/traditions/stump/wiki.md (PRS-06 MacIntyre tradition-vitality criterion, PRS-07 narrative cognition)"
   - "wiki/master/C2A2_master_wiki.md (the contemporary Summa in form; Tom Loughran's design)"
   - "wiki/master/cross_program_index.md (CROSS-001 substrate-independence; CROSS-002 spacetime not fundamental)"
   - "wiki/master/paradigm_flags.md (FLAG-003 Kastrup × Friston; FLAG-005 Stump × Levin)"
@@ -54,8 +55,8 @@ karpathy_wiki_sources:
   - "rohr (canonical works — wiki node planned): *The Universal Christ*, *Falling Upward*"
 mind_first_reframe: "Day 1 is the methodological frame, not yet the metaphysical reframe: Aquinas's Summa-as-instruction-of-beginners is matched by the C2A2 wiki as contemporary tradition-accelerator scaffold (Karpathy's compounding-knowledge thesis + MacIntyre's tradition-vitality criterion + Kuhn's solved-problem-as-unit-of-progress). The mind-first move proper begins with Day 2's 'Does God exist?'; Day 1 establishes that the inquiry has the right architectural shape to receive it."
 central_theme_thread: "Pre-dates the central theme articulation (2026-04-27 onward). Day 1 engages the *form* of the inquiry — what makes a body of knowledge one trajectory beginners can follow — without yet stating the perspective-limitation/loving-unity claim. From Day 2 forward the central theme is explicit; Day 1 reads as the staging ground."
-last_qc_at: "2026-06-15T20:20:01"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-22T20:04:06"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/001, theme/method, theme/scaffold]
 
 ---
