@@ -2,6 +2,8 @@
 *Maintained by the Karl Friston Agent | Last updated: 2026-04-07*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05]*
 
+*Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
+
 ## Research Program Overview
 **Thinker:** Karl Friston (UCL — Wellcome Centre for Human Neuroimaging)
 **Core claim:** All self-organizing systems minimize surprise (free energy) by updating beliefs or acting on the world; the Free Energy Principle is a substrate-independent law of biological self-organization

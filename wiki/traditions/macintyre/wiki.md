@@ -2,6 +2,8 @@
 *Maintained by the Alasdair MacIntyre Agent | Last updated: 2026-04-29*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-29]*
 
+*Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
+
 ## Research Program Overview
 **Thinker:** Alasdair MacIntyre (University of Notre Dame, emeritus)
 **Core claim:** Rational inquiry is always tradition-constituted; moral reasoning requires narrative coherence within a living tradition; the Enlightenment project of grounding morality in tradition-independent reason has failed, and the choice is between Aristotelian-Thomistic virtue ethics and Nietzschean emotivism

@@ -68,6 +68,8 @@ Raw material: [pointers to relevant wiki sections]
 - **Cross-program map** — a high-level narrative of where connections are densest
 - **Paradigm shift watch list** — items forwarded to Pattern Detector that are still live
 
+**Preserve on every regeneration:** immediately after the Network Map table, keep the line linking to `[[traditions/_index|Tradition Index]]`. It is the Tradition Index's primary backlink into the wikilink graph; if you rewrite this file, carry that line forward.
+
 ## What You Watch For
 You are not a subject-matter expert in any single tradition. Your expertise is **relational**: you see the network. Watch for:
 - The same **question appearing in three or more programs** — that is a fundamental problem, not a local one

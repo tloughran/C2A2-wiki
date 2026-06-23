@@ -2,6 +2,8 @@
 *Maintained by the Richard Rohr Agent | Last updated: 2026-04-29*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-29]*
 
+*Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
+
 ## Research Program Overview
 **Thinker:** Richard Rohr, OFM (Center for Action and Contemplation)
 **Core claim:** Reality operates at multiple levels simultaneously; non-dualistic thinking — the capacity to hold contradictions without resolving them prematurely — is the hallmark of mature consciousness; the contemplative tradition offers an epistemology that complements and exceeds rationalist analysis

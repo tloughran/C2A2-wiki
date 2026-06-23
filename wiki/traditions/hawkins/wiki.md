@@ -2,6 +2,8 @@
 *Maintained by the Jeff Hawkins Agent | Last updated: 2026-04-05*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05]*
 
+*Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
+
 ## Research Program Overview
 **Thinker:** Jeff Hawkins (Numenta)
 **Core claim:** The neocortex consists of ~150,000 cortical columns each building a complete world model with reference frames; intelligence is predictive modeling, not pattern matching; understanding requires world models

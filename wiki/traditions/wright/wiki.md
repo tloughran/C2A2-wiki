@@ -2,6 +2,8 @@
 *Maintained by the N.T. Wright Agent | Last updated: 2026-04-29*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-29]*
 
+*Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
+
 ## Research Program Overview
 **Thinker:** N.T. Wright (University of St Andrews, emeritus)
 **Core claim:** The biblical narrative is a five-act drama (creation, fall, Israel, Jesus, church) in which the present community is called to improvise faithfully within the unfinished final act; critical realism provides an epistemology that avoids both naive positivism and postmodern relativism; the resurrection of Jesus is a historical event with cosmological implications

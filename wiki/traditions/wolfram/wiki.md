@@ -2,6 +2,8 @@
 *Maintained by the Stephen Wolfram Agent | Last updated: 2026-04-07*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05]*
 
+*Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
+
 ## Research Program Overview
 **Thinker:** Stephen Wolfram (Wolfram Research)
 **Core claim:** The universe is a hypergraph evolving by rewriting rules; the ruliad is the entangled limit of all possible computations; spacetime and quantum mechanics emerge from computational irreducibility

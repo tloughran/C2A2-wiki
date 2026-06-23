@@ -2,6 +2,8 @@
 *Maintained by the Tom Loughran Agent | Last updated: 2026-04-29*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-29]*
 
+*Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
+
 ## Research Program Overview
 **Thinker:** Tom Loughran (C2A2 Project Director)
 **Core claim:** The deepest intellectual progress occurs at the intersection of traditions that do not initially understand each other; a well-designed multi-agent architecture can stage these encounters systematically, producing cross-traditional insights that no single tradition could generate alone

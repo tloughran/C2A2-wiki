@@ -2,6 +2,8 @@
 *Maintained by the Barbara Fredrickson Agent | Last updated: 2026-04-05*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05]*
 
+*Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
+
 ## Research Program Overview
 **Thinker:** Barbara Fredrickson (UNC Chapel Hill)
 **Core claim:** Positive emotions broaden attentional scope and build lasting personal resources; positivity resonance is the basic unit of love — a biophysiological coupling event between conscious agents

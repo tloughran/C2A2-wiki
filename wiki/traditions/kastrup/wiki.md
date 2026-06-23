@@ -2,6 +2,8 @@
 *Maintained by the Bernardo Kastrup Agent | Last updated: 2026-04-08*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05 | Essentia Foundation psychopathology essay (Jan 2026) — 2026-04-08]*
 
+*Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
+
 ## Research Program Overview
 **Thinker:** Bernardo Kastrup (Essentia Foundation; PhD philosophy and computer science)
 **Core claim:** Consciousness is the only thing that exists; matter is the extrinsic appearance of mental processes; individual beings are dissociated alters of a single universal consciousness

@@ -2,6 +2,8 @@
 *Maintained by the Nima Arkani-Hamed Agent | Last updated: 2026-04-08*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05 (partial) | UNIVERSE+ School Les Houches lectures — 2026-04-08 (first dedicated primary source)]*
 
+*Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
+
 ## Research Program Overview
 **Thinker:** Nima Arkani-Hamed (IAS Princeton, Harvard)
 **Core claim:** Spacetime and quantum mechanics are not fundamental — they emerge from a deeper combinatorial/geometric structure; the amplituhedron demonstrates that physics can be reformulated without spacetime scaffolding

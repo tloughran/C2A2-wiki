@@ -2,6 +2,8 @@
 *Maintained by the Eleonore Stump Agent | Last updated: 2026-04-05*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05]*
 
+*Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
+
 ## Research Program Overview
 **Thinker:** Eleonore Stump (Saint Louis University)
 **Core claim:** Aquinas offers a hylomorphic psychology that maps onto cognitive science; Thomism is a living, generative tradition capable of organizing inquiry across disciplines; suffering is permitted as a condition for deep personal union

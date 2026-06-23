@@ -2,6 +2,8 @@
 *Maintained by the Donald Hoffman Agent | Last updated: 2026-04-14*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05]*
 
+*Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
+
 ## Research Program Overview
 **Thinker:** Donald Hoffman (UC Irvine)
 **Core claim:** Perception is a fitness-tuned interface, not a window on reality; consciousness is fundamental; conscious agents form networks that give rise to spacetime and matter as perceptual constructs

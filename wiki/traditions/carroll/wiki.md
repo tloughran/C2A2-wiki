@@ -2,6 +2,8 @@
 *Maintained by the Sean Carroll Agent | Last updated: 2026-04-07*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05]*
 
+*Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
+
 ## Research Program Overview
 **Thinker:** Sean Carroll (Johns Hopkins / Santa Fe Institute; Mindscape podcast)
 **Core claim:** Physics is complete at the Core Theory (quantum field theory + general relativity) level; higher-level descriptions are real even if not fundamental; many-worlds solves the measurement problem; consciousness is emergent, not fundamental

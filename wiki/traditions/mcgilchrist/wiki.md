@@ -2,6 +2,8 @@
 *Maintained by the Iain McGilchrist Agent | Last updated: 2026-04-08*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05 | Sophia Lectures (Ralston College, March 2026) — 2026-04-08]*
 
+*Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
+
 ## Research Program Overview
 **Thinker:** Iain McGilchrist (Psychiatrist, neuroscientist, literary scholar)
 **Core claim:** Left hemisphere re-presents known fragments; right hemisphere attends to the living whole; modernity suffers catastrophic left-hemisphere dominance; attention is world-constituting

@@ -2,6 +2,8 @@
 *Maintained by the Levin Agent | Last updated: 2026-04-08*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-03 | Tim Ferriss Show #849 — 2026-04-07 | Mind Everywhere (Biological Theory, Feb 2026) — 2026-04-08]*
 
+*Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
+
 ## Research Program Overview
 **Thinker:** Michael Levin (Tufts University, Allen Discovery Center)
 **Core claim:** Intelligence, agency, and goal-directedness are substrate-independent. Bioelectric signaling networks in non-neural tissue exhibit forms of cognition that challenge brain-centric definitions of mind.
