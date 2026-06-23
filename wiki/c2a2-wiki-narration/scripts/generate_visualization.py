@@ -34,6 +34,11 @@ COLORS = {
     'root': '#9A9A9A',
     'tools': '#4E9EA8',
     'summa': '#A89B6E',           # parchment — Summa Theologiae companion vault (Pass B)
+    # Tradition Index — the sewing-bootstrap hub (traditions/_index.md) linking
+    # all 15 tradition wikis. Its own group so it earns a dedicated left-panel
+    # checkbox and a bright, hub-sized node instead of a grey dot lost in 'root'.
+    # No vault directory maps here via get_group; it's assigned in the node loop.
+    'tradition-index': '#F2D43F',
     'traditions/levin':       '#C45B5B',
     'traditions/friston':     '#5A8EAF',
     'traditions/hoffman':     '#C08B3E',
@@ -58,6 +63,7 @@ LABEL_OVERRIDES = {
     'master':                 'Master',
     'architecture/changelog': 'Changelog',
     'summa':                  'Summa',
+    'tradition-index':        'Tradition Index',
     # Relabel only — the group key stays 'agents' so nothing downstream
     # (get_group, edges, presets) changes. The 24 agent-definition docs now
     # read as "Agent identity"; the runtime actors live in "Agent activity".
@@ -127,6 +133,14 @@ def build_graph_data(data, agent_data=None):
         color = COLORS.get(group, '#CCCCCC')
         cc = conn_count.get(fp, 0)
         size = max(2, min(5, 2 + min(cc, 3)))
+        # Promote the Tradition Index hub out of the catch-all 'root' group into
+        # its own first-class group (dedicated checkbox + distinct color) and
+        # size it as the largest node so it reads as the structural center
+        # rather than a grey size-2 dot buried among ~600 root nodes.
+        if fp == 'traditions/_index.md':
+            group = 'tradition-index'
+            color = COLORS['tradition-index']
+            size = 8
         nodes.append({
             'id': fp,
             'label': f.get('title', f.get('filename', fp)),
@@ -1137,7 +1151,17 @@ function escapeHtml(s) {
 
 function inlineFormat(text) {
   text = escapeHtml(text);
-  text = text.replace(/\\[\\[([^\\]]+)\\]\\]/g, '<span class="wikilink" onclick="openNodeByLabel(this.textContent)">$1</span>');
+  // Wikilinks: support the piped [[target|alias]] form. Show the alias but
+  // resolve on the TARGET path (openNodeByLabel matches a node whose id
+  // contains it, e.g. target "traditions/levin/wiki" -> "traditions/levin/wiki.md").
+  // Passing the whole raw "target|alias" string here is why piped links used to
+  // go nowhere. data-target keeps the click value off the visible text.
+  text = text.replace(/\\[\\[([^\\]]+)\\]\\]/g, function(m, inner) {
+    var parts = inner.split('|');
+    var target = parts[0].trim();
+    var alias = (parts.length > 1 ? parts.slice(1).join('|') : parts[0]).trim();
+    return '<span class="wikilink" data-target="' + target.replace(/"/g, '&quot;') + '" onclick="openNodeByLabel(this.dataset.target)">' + alias + '</span>';
+  });
   text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
   text = text.replace(/\\*\\*([^*]+)\\*\\*/g, '<strong>$1</strong>');
   text = text.replace(/\\*([^*]+)\\*/g, '<em>$1</em>');
