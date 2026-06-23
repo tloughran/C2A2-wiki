@@ -195,6 +195,7 @@ def main():
             "events": ecount or 0,
             "in": 0, "out": 0, "cache_read": 0, "cache_creation": 0,
             "thinking_tokens": 0,
+            "thinking_chars": 0, "thinking_blocks": 0,
         }
 
     # 2) token sums per session from assistant message payloads
@@ -244,6 +245,39 @@ def main():
         if s is not None:
             s["thinking_tokens"] += delta
 
+    # 3b) thinking CONTENT from the 'message.assistant.thinking' subtype, captured
+    #     CONTINUOUSLY (back to March, per lane from its first run) -- unlike the
+    #     'system.thinking_tokens' accounting in (3), which is audit-emitted (sentinel
+    #     session_id="audit") and exists only on a handful of June days. We record TWO
+    #     things per thinking block (data.raw.message.content[type=="thinking"]):
+    #       thinking_blocks = COUNT of reasoning blocks. This is the PRIMARY continuous,
+    #         universal measure: every lane has it from its first run.
+    #       thinking_chars  = length of the block's plaintext, when present. IMPORTANT
+    #         (Phase-1 finding 2026-06-23): the plaintext is STRIPPED (empty string,
+    #         signature only) for the large majority of agent runs -- many agentic lanes
+    #         are 100% empty (redacted/encrypted thinking). So thinking_chars measures
+    #         TEXT-RETENTION, not reasoning volume, and is kept for the tooltip only, not
+    #         as the headline metric. Use thinking_blocks for the gap-free cadence of
+    #         reasoning. See metabolism-monitor/logbook.md.
+    for sid, payload in cur.execute(
+        "SELECT session_id, payload FROM events "
+        "WHERE subtype = 'message.assistant.thinking' AND payload IS NOT NULL"
+    ):
+        s = sess.get(sid)
+        if s is None:
+            continue
+        try:
+            raw = (json.loads(payload).get("data") or {}).get("raw") or {}
+            content = ((raw.get("message") or {}).get("content")) or []
+        except (ValueError, TypeError):
+            continue
+        for item in content:
+            if isinstance(item, dict) and item.get("type") == "thinking":
+                s["thinking_blocks"] += 1
+                t = item.get("thinking")
+                if isinstance(t, str):
+                    s["thinking_chars"] += len(t)
+
     con.close()
 
     # 4) assemble per-lane rows. Keep only sessions with any token signal OR
@@ -267,6 +301,8 @@ def main():
             "cache_read": s["cache_read"], "cache_creation": s["cache_creation"],
             "total": s["in"] + s["out"] + s["cache_read"] + s["cache_creation"],
             "thinking_tokens": s["thinking_tokens"],
+            "thinking_chars": s["thinking_chars"],
+            "thinking_blocks": s["thinking_blocks"],
         })
 
     # 5) lane metadata + ordering (by total output tokens desc)
@@ -317,9 +353,16 @@ def main():
             "t_min": min(all_t) if all_t else None,
             "t_max": max(all_t) if all_t else None,
             "note": "Prototype. Token data summed from event payloads in open-story.db "
-                    "(both pre/post 2026-04-07 token_usage paths; thinking tokens summed "
-                    "from system.thinking_tokens estimated_tokens_delta on the real nested "
-                    "session id). Yield = wikilinks/files added per day PLUS PRS-triplet "
+                    "(both pre/post 2026-04-07 token_usage paths). Thinking: the PRIMARY "
+                    "metric is 'thinking steps (count)' = number of message.assistant.thinking "
+                    "blocks, captured CONTINUOUSLY (every lane from its first run). Two other "
+                    "thinking figures appear in the tooltip but are NOT good headline metrics: "
+                    "'chars retained' = plaintext length, which is STRIPPED (signature-only, "
+                    "empty) for the majority of agent runs, so it measures text-retention not "
+                    "reasoning; 'audit-tok' = system.thinking_tokens estimated_tokens_delta, "
+                    "audit-emitted and present only on a few June days. All bucketed by session "
+                    "start like every other metric. Yield = wikilinks/files "
+                    "added per day PLUS PRS-triplet "
                     "yield (first-seen and articulated series) from wiki/ git history and the "
                     "WS2 metric CSV (DECISION-058); PRS yield is LIVE, not 'still to come'.",
         },
@@ -399,7 +442,8 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
       <option value="out">Output tokens (work produced)</option>
       <option value="total">Total tokens (in+out+cache)</option>
       <option value="cache_read">Cache-read tokens (recirculated)</option>
-      <option value="thinking_tokens">Thinking tokens (est.)</option>
+      <option value="thinking_blocks">Thinking steps (count ✦ continuous)</option>
+      <option value="thinking_tokens">Thinking tokens (audit est. ✦ Jun+ only)</option>
       <option value="dur_min">Duration (min)</option>
       <option value="yield_files">Yield: files added/day ✦ headline</option>
       <option value="yield_links">Yield: wikilinks added/day ✦ live</option>
@@ -490,7 +534,7 @@ function renderRaster() {
     .attr("x1",0).attr("x2",innerW)
     .attr("y1",y.bandwidth()/2).attr("y2",y.bandwidth()/2);
 
-  const TOKEN_METRICS = ["out","total","cache_read","thinking_tokens"];
+  const TOKEN_METRICS = ["out","total","cache_read","thinking_tokens","thinking_blocks"];
   const isTok = TOKEN_METRICS.includes(metric);
   lane.each(function(L) {
     d3.select(this).selectAll(".run").data(L.rows).join("circle")
@@ -516,6 +560,7 @@ function renderRaster() {
         tip.innerHTML = `<b>${L.label}</b><br>${d.t.slice(0,16).replace("T"," ")}<br>`
           + `out <b>${fmt(d.out)}</b> · in ${fmt(d.in)}<br>`
           + `cache-read ${fmt(d.cache_read)} · create ${fmt(d.cache_creation)}<br>`
+          + `thinking ${fmt(d.thinking_blocks)} steps · ${fmt(d.thinking_chars)} chars retained · ${fmt(d.thinking_tokens)} audit-tok<br>`
           + `events ${fmt(d.events)} · ${d.dur_min!=null?d.dur_min+" min":"dur n/a"}`;
       })
       .on("mouseleave", () => tip.style.opacity=0);
@@ -540,7 +585,8 @@ function renderRaster() {
   }
 }
 const METRIC_LABEL = {events:"events", out:"output tokens", total:"total tokens",
-  cache_read:"cache-read tokens", thinking_tokens:"thinking tokens (est.)",
+  cache_read:"cache-read tokens", thinking_blocks:"thinking steps (count)",
+  thinking_tokens:"thinking tokens (audit est., Jun+)",
   dur_min:"minutes", yield_links:"wikilinks added", yield_files:"files added",
   yield_prs:"PRS first-seen", yield_prs_made:"PRS articulated"};
 const YIELD = DATA.yield_daily || [];
