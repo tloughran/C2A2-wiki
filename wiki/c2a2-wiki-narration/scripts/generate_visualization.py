@@ -849,6 +849,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
       </div>
     </div>
     <div class="footer-controls">
+      <button id="btn-voice" onclick="VOICE.start()" title="Voice input — click to speak a query">&#127908;</button>
       <button id="btn-mute" onclick="toggleMute()" title="Audio on/off: speak Ask-AI answers aloud">&#128266;</button>
     </div>
   </div>
@@ -860,22 +861,61 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
     <h2>TTS Settings</h2>
     <label>Provider</label>
     <select id="tts-provider" onchange="applyFormToTTS()">
-      <option value="browser">Browser (Web Speech API)</option>
-      <option value="openai">OpenAI API</option>
+      <option value="browser">Browser (basic)</option>
+      <option value="kokoro">Kokoro (neural, no API key)</option>
+      <option value="openai">OpenAI (premium)</option>
     </select>
-    <label>API Key (OpenAI)</label>
-    <input type="password" id="tts-api-key" placeholder="sk-..." onchange="applyFormToTTS()">
-    <label>Browser Voice</label>
-    <select id="tts-browser-voice" onchange="applyFormToTTS()"></select>
-    <label>OpenAI Voice</label>
-    <select id="tts-openai-voice" onchange="applyFormToTTS()">
-      <option value="alloy">Alloy</option>
-      <option value="echo">Echo</option>
-      <option value="fable">Fable</option>
-      <option value="onyx">Onyx</option>
-      <option value="nova">Nova</option>
-      <option value="shimmer">Shimmer</option>
+    <div id="tts-section-browser">
+      <label>Browser Voice</label>
+      <select id="tts-browser-voice" onchange="applyFormToTTS()"></select>
+    </div>
+    <div id="tts-section-kokoro" style="display:none">
+      <label>Kokoro Voice</label>
+      <select id="tts-kokoro-voice" onchange="applyFormToTTS()">
+        <option value="af_heart">Heart (Female, American)</option>
+        <option value="af_sky">Sky (Female, American)</option>
+        <option value="af_bella">Bella (Female, American)</option>
+        <option value="af_nicole">Nicole (Female, American)</option>
+        <option value="bf_emma">Emma (Female, British)</option>
+        <option value="bf_isabella">Isabella (Female, British)</option>
+        <option value="am_adam">Adam (Male, American)</option>
+        <option value="am_michael">Michael (Male, American)</option>
+        <option value="bm_george">George (Male, British)</option>
+        <option value="bm_lewis">Lewis (Male, British)</option>
+      </select>
+      <p style="font-size:11px;color:#888;margin:4px 0 0;">First use downloads ~83 MB model (cached in browser after that).</p>
+    </div>
+    <div id="tts-section-openai" style="display:none">
+      <label>API Key (OpenAI)</label>
+      <input type="password" id="tts-api-key" placeholder="sk-..." onchange="applyFormToTTS()">
+      <label>OpenAI Voice</label>
+      <select id="tts-openai-voice" onchange="applyFormToTTS()">
+        <option value="alloy">Alloy</option>
+        <option value="echo">Echo</option>
+        <option value="fable">Fable</option>
+        <option value="onyx">Onyx</option>
+        <option value="nova">Nova</option>
+        <option value="shimmer">Shimmer</option>
+      </select>
+    </div>
+    <hr style="border:none;border-top:1px solid #2a2a3a;margin:16px 0 12px;">
+    <h3 style="color:#ccc;font-size:14px;font-weight:600;margin:0 0 8px;">AI Query</h3>
+    <label>Provider</label>
+    <select id="ai-provider" onchange="applyAISettings()">
+      <option value="broker">C2A2 broker (shared free tier)</option>
+      <option value="groq">Groq — free tier (groq.com)</option>
+      <option value="ollama">Ollama — local, no key (ollama.com)</option>
+      <option value="openai-direct">OpenAI direct</option>
     </select>
+    <div id="ai-key-row" style="display:none">
+      <label id="ai-key-label">API Key</label>
+      <input type="password" id="ai-api-key" placeholder="gsk_...">
+    </div>
+    <div id="ai-model-row" style="display:none">
+      <label>Model</label>
+      <input type="text" id="ai-model" placeholder="llama-3.3-70b-versatile">
+    </div>
+    <p id="ai-hint" style="font-size:11px;color:#888;margin:4px 0 0;">Shared free quota — falls back to local search when exhausted.</p>
     <div id="tts-error" class="error-text"></div>
     <div class="btn-row">
       <button class="primary" onclick="saveSettings()">Save</button>
@@ -2733,13 +2773,73 @@ function runSearch() {
   setNarrationText(parts.join(' '));
 }
 
+// ── CURRENT VIEW STATE ──
+// Reads the live D3 graph to describe which nodes are currently highlighted
+// vs faded, and which traditions are active. Returns a short text block for
+// injection into the AI prompt, or null when no meaningful focus is active
+// (i.e. all nodes are at full brightness = no search has been run yet).
+function getCurrentViewState() {
+  var searchTerm = (document.getElementById('search-input').value || '').trim();
+  var threshold = brightness * 0.4;
+  var highlighted = [];
+  d3.selectAll('.node-circle').each(function(d) {
+    var op = parseFloat(d3.select(this).attr('opacity'));
+    if (!isNaN(op) && op >= threshold) highlighted.push(d);
+  });
+  // If all (or nearly all) nodes are lit, no focus is active — don't inject noise
+  if (!highlighted.length || highlighted.length > NODES.length * 0.85) return null;
+
+  var parts = ['Graph currently shows ' + highlighted.length + ' highlighted node(s)' +
+    (searchTerm ? ' (search: "' + searchTerm + '")' : '') + '.'];
+
+  if (highlighted.length <= 20) {
+    parts.push('Highlighted: ' + highlighted.map(function(d) {
+      return '"' + d.label + '" [' + (String(d.group || '').split('/').pop()) + ']';
+    }).join(', ') + '.');
+  } else {
+    parts.push('Sample: ' + highlighted.slice(0, 10).map(function(d) {
+      return '"' + d.label + '" [' + (String(d.group || '').split('/').pop()) + ']';
+    }).join(', ') + ' … and ' + (highlighted.length - 10) + ' more.');
+  }
+
+  var activeTraditions = Object.keys(groupVisibility).filter(function(k) {
+    return k.indexOf('traditions/') === 0 && groupVisibility[k];
+  }).map(function(k) { return k.split('/').pop(); });
+  if (activeTraditions.length && activeTraditions.length < 14) {
+    parts.push('Visible traditions: ' + activeTraditions.join(', ') + '.');
+  }
+  return parts.join(' ');
+}
+
 // runSearchAI: AI-routed search via the shared C2A2 broker pipeline.
 // Selects the top-30 visible nodes by simple term overlap as candidates, sends
 // them to the broker (action 'enrich' or 'web_enrich'), and renders the model's
 // chosen ids by dimming the rest. The cap-hit / Tavily-down fallback lives
 // inside window.C2A2Search.enrich (see wiki/lib/c2a2-search.js).
-var C2A2_SOC_SYSTEM_DATASET = 'You are a retrieval assistant for the C2A2 wiki sociogram. Each candidate line is a vault file: id | label | group | excerpt. Pick the most relevant ids and write a brief grounded answer using ONLY the candidates. Reply with ONE JSON object and nothing else: {"ids":["<id>", ... up to 12 most relevant], "answer":"2-3 sentence summary grounded in the candidates"}.';
-var C2A2_SOC_SYSTEM_WEB = 'You are a retrieval assistant for the C2A2 wiki sociogram. Each candidate line is a vault file: id | label | group | excerpt. A WEB_CONTEXT block of up to 5 web snippets will be appended. Pick the most relevant candidate ids and write a brief answer; when you draw on a web snippet, cite it [1], [2], etc. Pick ids only from the candidates. Reply with ONE JSON object: {"ids":["<id>", ... up to 12 most relevant], "answer":"2-4 sentence summary with bracket citations where applicable"}.';
+var C2A2_SOC_SYSTEM_DATASET = 'You are a retrieval assistant for the C2A2 wiki sociogram. Each candidate line is a vault file: id | label | group | excerpt. The group field is the graph cluster key (e.g. "traditions/levin", "summa", "architecture"). A CURRENT_VIEW block may appear in the user message describing which nodes are currently highlighted in the graph — use this to ground answers about what the user is looking at ("what am I seeing?", "why are these connected?", etc.). Pick the most relevant ids and write a brief grounded answer using ONLY the candidates. For navigational queries ("show me X", "find X", "highlight X", "go to X"), also include a "cmd" field with a graph command using the group leaf names from the candidates: a single leaf name isolates that cluster (e.g. "levin"), space-separated leaf names show cross-links ("levin friston"), and "focus: <tradition> ~ <structure>" highlights how a thinker connects to a structural type (e.g. "focus: friston ~ summa"). Omit "cmd" entirely for purely informational queries. Reply with ONE JSON object and nothing else: {"ids":["<id>", ... up to 12 most relevant], "answer":"2-3 sentence summary grounded in the candidates", "cmd":"<optional navigation command>"}.';
+var C2A2_SOC_SYSTEM_WEB = 'You are a retrieval assistant for the C2A2 wiki sociogram. Each candidate line is a vault file: id | label | group | excerpt. The group field is the graph cluster key (e.g. "traditions/levin", "summa", "architecture"). A WEB_CONTEXT block of up to 5 web snippets will be appended. A CURRENT_VIEW block may appear in the user message describing which nodes are currently highlighted in the graph — use this to ground answers about what the user is looking at. Pick the most relevant candidate ids and write a brief answer; when you draw on a web snippet, cite it [1], [2], etc. Pick ids only from the candidates. For navigational queries ("show me X", "find X", "highlight X", "go to X"), also include a "cmd" field with a graph command using the group leaf names from the candidates: a single leaf name isolates that cluster (e.g. "levin"), space-separated leaf names show cross-links ("levin friston"), and "focus: <tradition> ~ <structure>" highlights how a thinker connects to a structural type. Omit "cmd" entirely for purely informational queries. Reply with ONE JSON object: {"ids":["<id>", ... up to 12 most relevant], "answer":"2-4 sentence summary with bracket citations where applicable", "cmd":"<optional navigation command>"}.';
+
+// applyAIResult: parse an AI JSON response, highlight the chosen ids on the
+// graph, and run any nav command. Returns the parsed object on success, or
+// null if the response could not be parsed (caller stops; a narration error
+// is already shown). Shared by the broker and direct-provider paths so the
+// highlight/cmd logic has a single source of truth.
+function applyAIResult(content, parseFailMsg) {
+  var m = String(content || '').match(/\{[\s\S]*\}/);
+  if (!m) { setNarrationText(parseFailMsg || 'AI returned a response that could not be parsed. Uncheck "Ask AI" to use local search.'); return null; }
+  var parsed;
+  try { parsed = JSON.parse(m[0]); } catch (e) { setNarrationText('AI response JSON parse failed.'); return null; }
+  var pickedIds = Array.isArray(parsed.ids) ? parsed.ids : [];
+  var pickedSet = {};
+  for (var k = 0; k < pickedIds.length; k++) pickedSet[pickedIds[k]] = true;
+  d3.selectAll('.node-circle').interrupt().attr('opacity', function(d) {
+    if (!groupVisibility[d.group]) return 0;
+    return pickedSet[d.id] ? brightness : brightness * 0.1;
+  });
+  // If the AI returned a navigation command, execute it (overrides id-based highlight above)
+  if (parsed.cmd) { navigateByCmd(parsed.cmd); }
+  return parsed;
+}
 
 function runSearchAI(rawQuery) {
   if (!window.C2A2Search || typeof window.C2A2Search.enrich !== 'function') {
@@ -2773,7 +2873,27 @@ function runSearchAI(rawQuery) {
     var snip = String(n.content || '').replace(/\\s+/g, ' ').slice(0, 200);
     return n.id + ' | ' + n.label + ' | ' + n.group + ' | ' + snip;
   }).join('\\n');
-  var userBlock = 'Query: ' + query + '\\n\\nCandidates:\\n' + summary;
+  var viewCtx = getCurrentViewState();
+  var userBlock = 'Query: ' + query +
+    (viewCtx ? '\\n\\nCURRENT_VIEW:\\n' + viewCtx : '') +
+    '\\n\\nCandidates:\\n' + summary;
+
+  // ── DIRECT PROVIDER PATH (Groq / Ollama / OpenAI direct) ──
+  if (AI.provider !== 'broker') {
+    var system = useWeb ? C2A2_SOC_SYSTEM_WEB : C2A2_SOC_SYSTEM_DATASET;
+    setNarrationText('Asking ' + AI.provider + ' (' + AI.getModel() + ')...');
+    AI.callDirect(system, userBlock).then(function(content) {
+      var parsed = applyAIResult(content, 'AI response could not be parsed — check the model supports JSON output.');
+      if (!parsed) return;
+      var answer = parsed.answer || '(no answer text)';
+      setNarrationText('Ask "' + query + '" [' + AI.provider + ']: ' + answer);
+      TTS.speak(answer);
+    }).catch(function(err) {
+      var msg = (err && err.message) ? err.message : String(err);
+      setNarrationText('Direct AI error (' + msg + '). Check Settings → AI Query provider / key.');
+    });
+    return;
+  }
 
   setNarrationText('Asking C2A2 (' + (useWeb ? 'database + web' : 'database') + ') ...');
 
@@ -2783,20 +2903,8 @@ function runSearchAI(rawQuery) {
     web: useWeb ? {system: C2A2_SOC_SYSTEM_WEB, user: userBlock} : null,
   }).then(function(res) {
     var content = (res.payload && typeof res.payload.text === 'string') ? res.payload.text : '';
-    var m = content.match(/\{[\s\S]*\}/);
-    if (!m) { setNarrationText('AI returned a response that could not be parsed. Uncheck "Ask AI" to use local search.'); return; }
-    var parsed;
-    try { parsed = JSON.parse(m[0]); } catch (e) { setNarrationText('AI response JSON parse failed.'); return; }
-    var pickedIds = Array.isArray(parsed.ids) ? parsed.ids : [];
-    var pickedSet = {};
-    for (var k = 0; k < pickedIds.length; k++) pickedSet[pickedIds[k]] = true;
-
-    d3.selectAll('.node-circle')
-      .interrupt()
-      .attr('opacity', function(d) {
-        if (!groupVisibility[d.group]) return 0;
-        return pickedSet[d.id] ? brightness : brightness * 0.1;
-      });
+    var parsed = applyAIResult(content);
+    if (!parsed) return;
 
     var modeLabel = res.mode === 'database-plus-web-cited' ? ' [web + database]'
       : res.mode === 'database-only-after-cap' ? ' [database -- web cap reached]'
@@ -2818,7 +2926,17 @@ function runSearchAI(rawQuery) {
     TTS.speak(answer);
   }).catch(function(err) {
     var code = (err && err.message) || 'unknown';
-    setNarrationText('AI request failed (' + code + '). Uncheck "Ask AI" to fall back to local search.');
+    var isLimit = (code === 'free-limit' || code === 'rate-limited');
+    if (isLimit) {
+      // Quota exhausted — silently fall back to local text search and uncheck AI mode
+      var aiBox = document.getElementById('search-ai-mode');
+      if (aiBox) aiBox.checked = false;
+      document.getElementById('search-input').value = query;
+      setNarrationText('Free-tier AI limit reached — switching to local search for "' + query + '". Re-enable Ask AI later or add your own key in Settings.');
+      runSearch();
+    } else {
+      setNarrationText('AI request failed (' + code + '). Uncheck "Ask AI" to fall back to local search.');
+    }
   });
 }
 
@@ -2835,15 +2953,22 @@ var TTS = {
   apiKey: (function() { try { return localStorage.getItem('tts_api_key') || ''; } catch(e) { return ''; } })(),
   browserVoice: null,
   openaiVoice: (function() { try { return localStorage.getItem('tts_openai_voice') || 'alloy'; } catch(e) { return 'alloy'; } })(),
+  kokoroVoice: (function() { try { return localStorage.getItem('tts_kokoro_voice') || 'af_heart'; } catch(e) { return 'af_heart'; } })(),
+  kokoroInstance: null,
+  kokoroLoading: false,
   cache: {},
   audioEl: null,
   utterance: null,
+  _kokoroSrc: null,
+  _kokoroCtx: null,
 
   speak: function(text) {
     if (isMuted) return;
     this.stop();
     if (this.provider === 'browser') {
       this.speakBrowser(text);
+    } else if (this.provider === 'kokoro') {
+      this.speakKokoro(text);
     } else {
       this.speakOpenAI(text);
     }
@@ -2856,6 +2981,75 @@ var TTS = {
     u.rate = playSpeed;
     window.speechSynthesis.speak(u);
     this.utterance = u;
+  },
+
+  speakKokoro: function(text) {
+    var self = this;
+    if (this.kokoroInstance) {
+      this._kokoroGenerate(text);
+      return;
+    }
+    if (this.kokoroLoading) return;
+    this.kokoroLoading = true;
+    // WebGPU is 5-10x faster than WASM and avoids "page unresponsive" dialogs,
+    // but requires a secure context (https:// or localhost). Detect at runtime.
+    var kokoroDevice = (typeof navigator !== 'undefined' && navigator.gpu) ? 'webgpu' : 'wasm';
+    var narEl = document.getElementById('narration-text');
+    narEl.textContent = 'Loading Kokoro neural TTS [' + kokoroDevice + '] (~83 MB, cached after first load)...';
+    import('https://cdn.jsdelivr.net/npm/kokoro-js@1/+esm')
+      .then(function(m) {
+        return m.KokoroTTS.from_pretrained('onnx-community/Kokoro-82M-v1.0-ONNX', {
+          dtype: 'q8',
+          device: kokoroDevice,
+          progress_callback: function(info) {
+            if (info.status === 'progress' || info.status === 'download') {
+              var pct = info.progress ? Math.round(info.progress) : 0;
+              var fname = info.file ? info.file.split('/').pop() : '';
+              narEl.textContent = 'Kokoro: loading ' + fname + (pct ? ' ' + pct + '%' : '...');
+            }
+          }
+        });
+      })
+      .then(function(instance) {
+        self.kokoroInstance = instance;
+        self.kokoroLoading = false;
+        narEl.textContent = 'Kokoro model ready.';
+        self._kokoroGenerate(text);
+      })
+      .catch(function(e) {
+        self.kokoroLoading = false;
+        narEl.textContent = 'Kokoro failed to load (' + (e && e.message ? e.message : e) + '). Falling back to browser voice.';
+        self.speakBrowser(text);
+      });
+  },
+
+  _kokoroGenerate: function(text) {
+    var self = this;
+    this.kokoroInstance.generate(text, { voice: this.kokoroVoice })
+      .then(function(result) {
+        var AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (!AudioCtx) { self.speakBrowser(text); return; }
+        var ctx = new AudioCtx();
+        var samples = result.audio;
+        var buf = ctx.createBuffer(1, samples.length, result.sampling_rate);
+        buf.copyToChannel(samples, 0);
+        var src = ctx.createBufferSource();
+        src.buffer = buf;
+        src.playbackRate.value = playSpeed;
+        src.connect(ctx.destination);
+        src.start();
+        self._kokoroSrc = src;
+        self._kokoroCtx = ctx;
+        src.onended = function() {
+          try { ctx.close(); } catch(e) {}
+          self._kokoroSrc = null;
+          self._kokoroCtx = null;
+        };
+      })
+      .catch(function(e) {
+        document.getElementById('narration-text').textContent = 'Kokoro generation error: ' + (e && e.message ? e.message : e);
+        self.speakBrowser(text);
+      });
   },
 
   speakOpenAI: function(text) {
@@ -2902,8 +3096,244 @@ var TTS = {
   stop: function() {
     if (window.speechSynthesis) window.speechSynthesis.cancel();
     if (this.audioEl) { this.audioEl.pause(); this.audioEl.currentTime = 0; }
+    if (this._kokoroSrc) { try { this._kokoroSrc.stop(); } catch(e) {} this._kokoroSrc = null; }
+    if (this._kokoroCtx) { try { this._kokoroCtx.close(); } catch(e) {} this._kokoroCtx = null; }
   }
 };
+
+// ── NAVIGATION COMMAND ENGINE ──
+// Executes a graph navigation command string — the same vocabulary the search
+// box understands — and mirrors the command in the search box so the user can
+// see what fired. Called by runSearchAI (when the AI returns a "cmd" field)
+// and by VOICE._route (for locally-resolved navigational voice queries).
+function navigateByCmd(cmd) {
+  var c = String(cmd || '').trim();
+  if (!c) return;
+  // Note: do NOT overwrite the search box here — when called from runSearchAI
+  // the box already shows the user's original query; when called from VOICE._route
+  // the box was already set to the stripped query before this call.
+  if (c.toLowerCase().indexOf('focus:') === 0) {
+    runFocus(c.slice(c.indexOf(':') + 1));
+    return;
+  }
+  var bareKeys = parseBareGuess(c);
+  if (bareKeys) {
+    if (bareKeys.length === 1) isolateGroups(bareKeys);
+    else linkGroups(bareKeys);
+    return;
+  }
+  // Fallback: run as text search via the non-AI path (avoids re-entering runSearchAI)
+  var aiBox = document.getElementById('search-ai-mode');
+  var prev = aiBox ? aiBox.checked : false;
+  if (aiBox) aiBox.checked = false;
+  runSearch();
+  if (aiBox) aiBox.checked = prev;
+}
+
+// ── NAVIGATION PREFIX STRIPPING ──
+// Detects whether a voice query is navigational (starts with "show me",
+// "find", "go to", etc.) and strips the prefix, returning the bare target.
+// Returns null if the query is not navigational (caller should treat it
+// as informational and route to AI).
+var NAV_PREFIXES = [
+  'show me ', 'take me to ', 'go to ', 'navigate to ',
+  'highlight ', 'zoom to ', 'zoom in on ', 'look at ',
+  'find ', 'open ', 'display ', 'bring up ', 'pull up '
+];
+function stripNavPrefix(text) {
+  var t = String(text || '').trim();
+  var tl = t.toLowerCase();
+  for (var i = 0; i < NAV_PREFIXES.length; i++) {
+    if (tl.indexOf(NAV_PREFIXES[i]) === 0) {
+      return t.slice(NAV_PREFIXES[i].length).trim();
+    }
+  }
+  return null;
+}
+
+// ── VOICE INPUT (Web Speech API) ──
+// Click btn-voice to start listening; click again to cancel. On result:
+//   • navigational query ("show me X") → stripNavPrefix → local graph command
+//     if resolvable, else AI call (which will return a cmd field)
+//   • informational query ("what is X?") → straight to runSearchAI
+// Requires Chrome/Edge (file:// OK with mic permission granted).
+var VOICE = {
+  recognition: null,
+  active: false,
+
+  start: function() {
+    var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SR) {
+      setNarrationText('Voice input requires Chrome or Edge. (SpeechRecognition not found)');
+      return;
+    }
+    if (this.active) { this.stop(); return; }
+    var self = this;
+    var rec = new SR();
+    rec.lang = 'en-US';
+    rec.interimResults = false;
+    rec.maxAlternatives = 1;
+
+    rec.onstart = function() {
+      self.active = true;
+      document.getElementById('btn-voice').innerHTML = '&#128308;';
+      setNarrationText('Listening…');
+    };
+    rec.onresult = function(e) {
+      var transcript = e.results[0][0].transcript.trim();
+      setNarrationText('Heard: “' + transcript + '”');
+      self._route(transcript);
+    };
+    rec.onend = function() {
+      self.active = false;
+      document.getElementById('btn-voice').innerHTML = '&#127908;';
+    };
+    rec.onerror = function(e) {
+      self.active = false;
+      document.getElementById('btn-voice').innerHTML = '&#127908;';
+      var msg = e.error === 'not-allowed'
+        ? 'Microphone permission denied. Allow mic access and try again.'
+        : 'Voice error: ' + e.error + '.';
+      setNarrationText(msg);
+    };
+
+    this.recognition = rec;
+    rec.start();
+  },
+
+  stop: function() {
+    if (this.recognition) { try { this.recognition.stop(); } catch(e) {} }
+    this.active = false;
+    var btn = document.getElementById('btn-voice');
+    if (btn) btn.innerHTML = '&#127908;';
+  },
+
+  _route: function(text) {
+    var stripped = stripNavPrefix(text);
+    var isNav = (stripped !== null);
+    var query = isNav ? stripped : text;
+    if (!query) return;
+
+    // Mirror the interpreted query in the search box
+    document.getElementById('search-input').value = query;
+
+    // Navigational: try local resolution first (instant, no API needed)
+    if (isNav) {
+      if (query.toLowerCase().indexOf('focus:') === 0) {
+        runFocus(query.slice(query.indexOf(':') + 1));
+        TTS.speak('Showing ' + query.slice(query.indexOf(':') + 1).trim() + '.');
+        return;
+      }
+      var bareKeys = parseBareGuess(query);
+      if (bareKeys) {
+        if (bareKeys.length === 1) isolateGroups(bareKeys);
+        else linkGroups(bareKeys);
+        TTS.speak('Showing ' + query + '.');
+        return;
+      }
+    }
+
+    // Complex or informational query: route through AI only if Ask AI is on,
+    // otherwise fall back to local text search (respects the free-tier quota).
+    var aiBox = document.getElementById('search-ai-mode');
+    if (aiBox && aiBox.checked) {
+      runSearchAI(query);
+    } else {
+      // Local search: still useful for finding nodes by name without AI
+      runSearch();
+    }
+  }
+};
+
+// ── AI QUERY PROVIDER ──
+var AI_DEFAULTS = {
+  'broker':        { key: false, model: '',                         hint: 'Shared free quota — falls back to local search when exhausted.' },
+  'groq':          { key: true,  model: 'llama-3.3-70b-versatile',  hint: 'Free at console.groq.com — no credit card needed. ~14 400 req/day.' },
+  'ollama':        { key: false, model: 'llama3.2',                 hint: 'No key needed. Run: ollama serve  then  ollama pull llama3.2' },
+  'openai-direct': { key: true,  model: 'gpt-4o-mini',             hint: 'Pay-as-you-go. Key stored in session memory only (clears on tab close).' }
+};
+var AI_ENDPOINTS = {
+  'groq':          'https://api.groq.com/openai/v1/chat/completions',
+  'ollama':        'http://localhost:11434/v1/chat/completions',
+  'openai-direct': 'https://api.openai.com/v1/chat/completions'
+};
+var AI = {
+  provider: (function() { try { return localStorage.getItem('ai_provider') || 'broker'; } catch(e) { return 'broker'; } })(),
+  apiKey:   (function() { try { return sessionStorage.getItem('ai_api_key') || ''; } catch(e) { return ''; } })(),
+  model:    (function() { try { return localStorage.getItem('ai_model') || ''; } catch(e) { return ''; } })(),
+
+  getModel: function() {
+    return this.model || (AI_DEFAULTS[this.provider] || {}).model || '';
+  },
+
+  callDirect: function(systemPrompt, userMessage) {
+    var self = this;
+    var endpoint = AI_ENDPOINTS[this.provider];
+    if (!endpoint) return Promise.reject(new Error('No endpoint configured for provider: ' + this.provider));
+    var headers = {'Content-Type': 'application/json'};
+    if (this.provider !== 'ollama' && this.apiKey) {
+      headers['Authorization'] = 'Bearer ' + this.apiKey;
+    }
+    return fetch(endpoint, {
+      method: 'POST',
+      headers: headers,
+      body: JSON.stringify({
+        model: self.getModel(),
+        messages: [
+          {role: 'system', content: systemPrompt},
+          {role: 'user',   content: userMessage}
+        ],
+        temperature: 0.1,
+        max_tokens: 600
+      })
+    }).then(function(r) {
+      if (!r.ok) {
+        return r.json().then(function(e) {
+          var msg = (e.error && (e.error.message || e.error.code)) || ('HTTP ' + r.status);
+          throw new Error(msg);
+        }).catch(function(inner) {
+          if (inner instanceof Error && inner.message.indexOf('HTTP') === -1) throw inner;
+          throw new Error('HTTP ' + r.status);
+        });
+      }
+      return r.json();
+    }).then(function(data) {
+      if (data.error) throw new Error(data.error.message || JSON.stringify(data.error));
+      var content = data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content;
+      if (!content) throw new Error('Empty response from model');
+      return content;
+    });
+  }
+};
+
+function applyAISettings() {
+  var p = document.getElementById('ai-provider').value;
+  var def = AI_DEFAULTS[p] || AI_DEFAULTS['broker'];
+  // Show/hide key and model rows
+  document.getElementById('ai-key-row').style.display = def.key ? '' : 'none';
+  document.getElementById('ai-model-row').style.display = (p === 'broker') ? 'none' : '';
+  // Update key label and placeholder
+  var keyLabel = document.getElementById('ai-key-label');
+  var keyInput = document.getElementById('ai-api-key');
+  if (p === 'groq') { keyLabel.textContent = 'Groq API Key'; keyInput.placeholder = 'gsk_...'; }
+  else { keyLabel.textContent = 'OpenAI API Key'; keyInput.placeholder = 'sk-...'; }
+  // Set default model when switching providers (if field is empty or held the old default)
+  var modelEl = document.getElementById('ai-model');
+  var prevDef = (AI_DEFAULTS[AI.provider] || {}).model || '';
+  if (!modelEl.value || modelEl.value === prevDef) { modelEl.value = def.model; }
+  // Update hint
+  document.getElementById('ai-hint').textContent = def.hint;
+  // Sync AI object
+  AI.provider = p;
+  AI.apiKey   = keyInput.value;
+  AI.model    = modelEl.value;
+  // Persist (key to sessionStorage only for security; provider/model to localStorage)
+  try {
+    localStorage.setItem('ai_provider', AI.provider);
+    localStorage.setItem('ai_model', AI.model);
+    if (AI.apiKey) sessionStorage.setItem('ai_api_key', AI.apiKey);
+  } catch(e) {}
+}
 
 function applyFormToTTS() {
   TTS.provider = document.getElementById('tts-provider').value;
@@ -2914,17 +3344,39 @@ function applyFormToTTS() {
     TTS.browserVoice = voices[bvSel.selectedIndex] || null;
   }
   TTS.openaiVoice = document.getElementById('tts-openai-voice').value;
+  TTS.kokoroVoice = document.getElementById('tts-kokoro-voice').value;
   TTS.enabled = true;
+  // Show/hide provider-specific sections
+  var p = TTS.provider;
+  document.getElementById('tts-section-browser').style.display = (p === 'browser') ? '' : 'none';
+  document.getElementById('tts-section-kokoro').style.display = (p === 'kokoro') ? '' : 'none';
+  document.getElementById('tts-section-openai').style.display = (p === 'openai') ? '' : 'none';
   // Persist settings
   try {
     localStorage.setItem('tts_provider', TTS.provider);
     localStorage.setItem('tts_api_key', TTS.apiKey);
     localStorage.setItem('tts_openai_voice', TTS.openaiVoice);
+    localStorage.setItem('tts_kokoro_voice', TTS.kokoroVoice);
   } catch(e) {}
 }
 
 // ── SETTINGS MODAL ──
 function openSettings() {
+  // Sync form from current TTS state before showing
+  document.getElementById('tts-provider').value = TTS.provider;
+  document.getElementById('tts-kokoro-voice').value = TTS.kokoroVoice;
+  document.getElementById('tts-openai-voice').value = TTS.openaiVoice;
+  document.getElementById('tts-api-key').value = TTS.apiKey;
+  // Apply show/hide for the correct provider section
+  var p = TTS.provider;
+  document.getElementById('tts-section-browser').style.display = (p === 'browser') ? '' : 'none';
+  document.getElementById('tts-section-kokoro').style.display = (p === 'kokoro') ? '' : 'none';
+  document.getElementById('tts-section-openai').style.display = (p === 'openai') ? '' : 'none';
+  // Sync AI query settings
+  document.getElementById('ai-provider').value = AI.provider;
+  document.getElementById('ai-api-key').value = AI.apiKey;
+  document.getElementById('ai-model').value = AI.model || (AI_DEFAULTS[AI.provider] || {}).model || '';
+  applyAISettings();
   document.getElementById('settings-modal').classList.add('visible');
   populateVoices();
 }
@@ -2935,6 +3387,7 @@ function closeSettings() {
 
 function saveSettings() {
   applyFormToTTS();
+  applyAISettings();
   closeSettings();
 }
 
