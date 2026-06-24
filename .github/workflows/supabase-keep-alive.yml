@@ -1,0 +1,54 @@
+name: Supabase Keep-Alive
+
+# Pings the C2A2-wiki Supabase free-tier project every 3 days to prevent
+# automatic pausing due to inactivity (threshold: 7 days).
+#
+# Required GitHub secrets (Settings → Secrets → Actions):
+#   SUPABASE_URL      https://akhcocmgfwybdovqeovd.supabase.co
+#   SUPABASE_ANON_KEY  Project Settings → API → anon public key
+#
+# The ping queries the `device_usage` table with the anon key.
+# RLS returns an empty result set, but the query still hits the DB and
+# resets Supabase's inactivity clock — which is all we need.
+
+on:
+  schedule:
+    # Every 3 days at 09:00 UTC — well inside the 7-day inactivity window.
+    # GitHub Actions cron runs on GitHub's infra, not your local machine,
+    # so it fires even when your Mac is asleep.
+    - cron: '0 9 */3 * *'
+  workflow_dispatch:
+    # Manual trigger: Actions tab → "Run workflow"
+    # Use this to verify the secrets are wired up correctly.
+
+jobs:
+  keep-alive:
+    name: Ping Supabase C2A2-wiki
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Query device_usage table (keep-alive ping)
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: |
+          echo "Pinging Supabase project at $(date -u '+%Y-%m-%d %H:%M UTC') ..."
+
+          HTTP_STATUS=$(curl -s -o /tmp/supabase_response.json -w "%{http_code}" \
+            "${SUPABASE_URL}/rest/v1/device_usage?limit=1" \
+            -H "apikey: ${SUPABASE_ANON_KEY}" \
+            -H "Authorization: Bearer ${SUPABASE_ANON_KEY}" \
+            -H "Accept: application/json")
+
+          echo "HTTP status: ${HTTP_STATUS}"
+          echo "Response body: $(cat /tmp/supabase_response.json)"
+
+          if [ "${HTTP_STATUS}" -ge 200 ] && [ "${HTTP_STATUS}" -lt 300 ]; then
+            echo "✓ Supabase C2A2-wiki kept warm — inactivity clock reset."
+          else
+            echo "✗ Unexpected status ${HTTP_STATUS}."
+            echo "  If 401/403: check SUPABASE_ANON_KEY secret."
+            echo "  If 5xx: project may already be paused — unpause from dashboard."
+            exit 1
+          fi
