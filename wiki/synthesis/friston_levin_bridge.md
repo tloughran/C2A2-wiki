@@ -30,3 +30,10 @@ This is the cleanest empirical bridge between the two programs currently surface
 
 - Cross-link this bridge note from `traditions/friston/wiki.md` and from `traditions/levin/wiki.md` under a *paradigm-bridge candidates* heading.
 - The bridge is also relevant to the C2A2 master agent's substrate-independence question: if precision-weighting is the FEP's core, then any constructed/AI system that implements precision-weighting *is* an active-inference agent on the same terms as a brain or a cell collective. This is one of the cleanest tests for the AI-membership question (cf. PRS-30/31 in `traditions/levin/prs_triplets.md`).
+
+## Sewing note — 2026-06-21
+*Added by Sewing Agent*
+
+**Intersection page:** [[2026-06-15_levin_top-down-membrane-potential-transcription]] (Cervera, Levin & Mafe 2026)
+**Synthesis claim:** Resting membrane potential (Vmem) modeled as a top-down control variable over transcription is a concrete biophysical substrate for "morphogenetic active inference": Vmem functions as a prior over transcriptional states, with lower-level molecular dynamics minimizing surprise against that prior.
+**Open question the wiki cannot yet answer:** Is the Vmem→transcription feedback loop *formally* a free-energy gradient, or only analogically one — can the Cervera-Levin-Mafe model be rewritten as an active-inference scheme with an explicit generative model and prediction error?

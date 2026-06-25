@@ -559,3 +559,25 @@ Phase 3: review page generated wiki/review/2026-06-19_review.html (2 proposals; 
 Phase 4: Gmail review digest draft id r8880616064913998490.
 Phase 5: review/ held only today's page — nothing >3 days to delete.
 Network unchanged: 279 PRS triplets · 90 cross-program connections · 47 findings (through FINDING-047).
+
+---
+## 2026-06-22 (Monday) — orchestrator run, no ingest
+Phase 0: no [C2A2-review-decision] thread in newer_than:3d window — no actionable decisions.
+Phase 1: Phase 0 no-op → no newly-approved items copied to inbox/; raw backlog deferred per standing policy; no triplets added.
+Phase 2: Monday specialists Levin + Friston both deposited today-dated proposals (Levin cognitive-glue PROP-2026-06-22-001; Friston "As One and Many" PROP-2026-06-22-002). Orchestrator fallback over uncovered active traditions (Carroll/Kastrup/Wolfram) → 0 net-new (Carroll June AMA + quantum-cyclic already pending; Kastrup nothing new June 2026; Wolfram V15 06-16 = product release, skipped).
+Phase 3: review page wiki/review/2026-06-22_review.html generated (5 proposals: Friston NEW, Levin NEW-but-DUPLICATE, + carried Arkani-Hamed/Carroll/Rohr). Auto-open skipped (Linux sandbox).
+Phase 4: Gmail review digest draft id r-3092814034514216917; Levin dup flagged DENY.
+Phase 5: review/ holds 06-19→06-22 — nothing older than 3 days to delete.
+⚠ Levin PROP-2026-06-22-001 = exact duplicate of approved+ingested PROP-2026-06-01-001 (same title/DOI/source-date 2026-05-27); do not re-count; recommend DENY.
+Network unchanged: 279 PRS triplets · 90 cross-program connections · 47 findings (through FINDING-047).
+
+---
+## 2026-06-23 (Tuesday) — orchestrator run, no ingest
+Phase 0: no actionable [C2A2-review-decision] thread in today/yesterday window. 3 UNREAD hits are April-vintage (04-08, 04-27), already-actioned, no matching pending/ files — left untouched.
+Phase 1: Phase 0 no-op → no newly-approved items copied to inbox/; raw backlog (68 files, 2026-04-21→2026-06-15) deferred per standing policy; no triplets added. ⚠ Backlog growing — highest-value attended action.
+Phase 2: Tuesday specialists Hawkins + Hoffman both deposited today-dated proposals (PROP-2026-06-23-002 Hawkins thousand-brains; PROP-2026-06-23-001 Hoffman DMT/traces-of-the-other). Orchestrator fallback over the other 11 traditions → 0 net-new (all captured/filtered; Wolfram V15 06-16 = product release skipped; Carroll mRNA guest ep off-program).
+Phase 3: review page wiki/review/2026-06-23_review.html generated (7 proposals: Hawkins NEW, Hoffman NEW, + carried Friston/Levin-DUP/Rohr/Carroll/Arkani-Hamed). Auto-open skipped (Linux sandbox).
+Phase 4: Gmail review digest draft id r-1329604865583232036; Levin PROP-2026-06-22-001 re-flagged DENY (duplicate).
+Phase 5: moved 2026-06-19_review.html to review/_superseded/ (>3 days); 06-20→06-23 retained.
+⚠ Levin PROP-2026-06-22-001 = exact duplicate of approved+ingested PROP-2026-06-01-001; do not re-count; recommend DENY.
+Network unchanged: 279 PRS triplets · 90 cross-program connections · 47 findings (through FINDING-047).

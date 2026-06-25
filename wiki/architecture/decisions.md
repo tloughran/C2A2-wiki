@@ -700,3 +700,64 @@ DECISION-060:
     Transform at each step:
       14a: Registered from the 2026-06-18 attended build transcript ("Thinker summaries for sociogram") and its shipped commit `0fdc8ea`. Build/verify/push state quoted from the session; repo/live state not introspectable from this mount beyond the mounted file changes confirmed in-session.
     Current status: ADOPTED (built, verified, shipped)
+
+DECISION-061:
+  Date: 2026-06-23 (attended — tradition-index interactive session, acting on the autonomous bootstrap audit)
+  Title: Tradition index node — reconnect the 15 orphaned tradition hub pages
+  Decision: Create `traditions/_index.md`, a single index node with one outgoing wikilink to each of the 15 per-tradition `wiki.md` hubs (levin → wright, all present), directly on the bootstrap audit's #1 recommendation. The hub pages were the audit's "one true structural weakness": they link outward to their `prs_triplets` but received zero inbound links. The sociogram (`wiki_narration.html`) was regenerated via the canonical wrapper and verified live in-browser: the index node resolves to all 15 hubs, no console errors, page loads healthy at 2,814 nodes / 71,975 edges with no crash-limit warnings. Reciprocal links + a durability directive were added per the session. The 2,814-vs-2,812 node count is expected (new index node + one other touched file since the 06-22 build).
+  Status: ADOPTED — built and locally browser-verified; content commit made locally; **git push PENDING on Tom's Mac** (the sandbox has no git creds — push and localhost review stay with Tom per the constitutional rule). A gitignored handoff was written at `handoffs/tradition-index.md`; resume cue "resume the tradition index work."
+  Rationale: Concentrated, cheap, high-leverage fix (ASSUMPTION-340 hub leverage; ASSUMPTION-344 one index converts 15 orphans into hubs at once), chosen over the rejected alternative of mass unattended leaf-seeding (ASSUMPTION-342; OPEN-088 seeding policy left open).
+  Related: ASSUMPTION-338, 340, 344, 345; PRESUMPTION-381 (more hub connectivity = good), 382 (autonomous reframing authority); OPEN-087 (production resolver), OPEN-088 (seeding policy); `wiki/traditions/_index.md`, `wiki/wiki_narration.html`, `architecture/sewing_agent_bootstrap_2026-06-23.md`, `handoffs/tradition-index.md`
+  NOTE (Rule-7 divergence flag): the 2026-06-23 cowork→chat summary recorded "None formally registered today … the EOD self-awareness pass has not yet fired." 14a registers DECISION-061 anyway, on the same standard applied to DECISION-057/058/059: a durable, load-bearing structural change (a new canonical index node) was built, verified, and committed for a deployed artifact. Registries are the source of truth; the summary's "none yet" is a reporting-timing difference, not a contradiction.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Registered from the 2026-06-23 tradition-index session transcript and the bootstrap audit report. Build/verify state quoted from the session and the regenerated artifact; push/repo state quoted from the session (repo not introspectable from this mount).
+    Current status: ADOPTED (built, browser-verified); PUSH PENDING
+
+DECISION-062:
+  Date: 2026-06-24 (attended — Cortical Column / DEVPATH-031 Cowork thread)
+  Title: Elevate the cortical-column (triple-redundant, voting) thinker-assessment proposal to Dev Pathway 31, post-ISME, one-track pilot
+  Decision: Replace the single per-thinker assessor with three independently-wired "column" agents plus a fourth adjudicator that surfaces 2-of-3 semantic consensus and reports dissensus as signal (Hawkins' Thousand Brains). Columns must differ by reference frame (corpus slice / analytic axis), at least two axes varying per column — not by random seed alone, "or the vote only measures sampling noise." Status set `outlined, post-ISME`; pathway file `architecture/31_cortical_column_architecture.md` created and indexed in `pathways.md`. Scope discipline adopted in the same decision: pilot on ONE thinker track (Hawkins) under Pathway 29's metabolism controller, with a falsifiable success criterion (ASSUMPTION-350) gating any scale-out.
+  Status: ADOPTED (as design pathway) — outlined, not built; implementation gated behind the July 8–10 ISME presentation and a passing single-track pilot. No code; snapshot-clone-then-fork sequence specified.
+  Rationale: The accelerator is to be built out of the rationalities it studies (ASSUMPTION-346); robustness requires substantive column independence, not redundancy (ASSUMPTION-347); dissensus is a first-class detector output (ASSUMPTION-348); the 3–4× cost (ASSUMPTION-349) forces a pilot-first, metabolism-governed rollout (ASSUMPTION-350). Rejected alternative: fan out across all 15 traditions immediately (cost collision with Pathway 29; unjustified before the quality gain is demonstrated).
+  Related: ASSUMPTION-346, 347, 348, 349, 350, 351; PRESUMPTION-385, 386, 387, 388, 389, 390; OPEN-089 (independence axes), OPEN-090 (operational definition of semantic agreement); Pathway 29 (metabolism), Pathway 14 (honesty layer), Pathway 07 (unsaid edges), Pathway 00 (broker); `architecture/31_cortical_column_architecture.md`, `architecture/pathways.md`.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Registered from the 2026-06-24 DEVPATH-031 session as distilled in the committed pathway file and pathways.md index. Design state (outlined/post-ISME/pilot) quoted from the artifact; no build claimed.
+    Current status: ADOPTED (design pathway; unbuilt, ISME-gated)
+
+DECISION-063:
+  Date: 2026-06-24 (attended — Coil/Triplet Falsifier foundational review Cowork thread)
+  Title: Pre-register the coil/triplet usefulness falsifier (v1.1) — register-then-look, convergence battery, asymmetric verdict
+  Decision: Adopt a pre-registered, versioned falsifier for the claim that coils are association fibers, not decoration (H1 vs the "just graphics" null). Load-bearing commitments: (a) specification precedes data inspection — "register, then look" (ASSUMPTION-352, discharges REVISE-111); (b) asymmetric verdict — a FAIL is strong/clean, a PASS is only "necessary-condition met, provisional," never "useful, confirmed" (ASSUMPTION-353, discharges REVISE-105); (c) a convergence battery of operationally independent indicators combined by a pre-fixed decision lattice with no post-hoc weighting (ASSUMPTION-355); (d) retrospective-only confirmatory run + architectural firewall separating coil-author / triplet-author / falsifier-runner (ASSUMPTION-354); (e) amendment discipline — free before any run, after a run only on a results-independent, self-classified rationale. Document frozen at v1.1.
+  Status: PRE-REGISTERED DRAFT — frozen at v1.1; **registering git commit PENDING on Tom's Mac** (§8 Registration Act; the sandbox has no git creds — commit + push stay with Tom). No confirmatory run has occurred; per §0 attestation no coil-outcome statistic has been inspected.
+  Rationale: Closes the reflexive-falsification circularity (a dyad falsifying its own ledger is "passable by construction") via specification-before-inspection; blocks productivity-ism / Goodhart capture via the asymmetry and the jingle guard (§6, falsifier ≠ §6 yield); guards against synthesis-by-novelty false negatives by holding that indicator exploratory until a `derived_from:` schema field exists (ASSUMPTION-357, OPEN-091).
+  Related: ASSUMPTION-352, 353, 354, 355, 356, 357; PRESUMPTION-391, 392, 393, 394; OPEN-091 (derived_from lineage field); REVISE-111, REVISE-105, REVISE-115, REVISE-124; `architecture/coil_falsifier_preregistration.md`, `narrative_prs_connectome.md`, `swarm-contract.md`.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Registered from the 2026-06-24 falsifier review session as committed in coil_falsifier_preregistration.md v1.1; status (pre-registered draft, commit pending) quoted from §6/§8 of the artifact.
+    Current status: PRE-REGISTERED DRAFT (commit pending on Mac)
+
+DECISION-064:
+  Date: 2026-06-24 (attended — Wiki-narration Voice & Navigation Cowork thread)
+  Title: Ship voice input, a navigation command engine, multi-provider local-first TTS/AI, and fail-soft quota handling in wiki_narration.html
+  Decision: Add four interconnected capabilities to the deployed sociogram, all inline in the single `wiki_narration.html` (no new files, no build step): (1) three-provider TTS — Browser / Kokoro neural-local / OpenAI; (2) Web Speech API voice input with a two-tier router (`stripNavPrefix` → `parseBareGuess` resolves known names offline, else `runSearchAI` only if Ask-AI is on); (3) a universal `navigateByCmd` graph-navigation dispatcher driven by both AI responses and voice, mirrored in the search box; (4) an AI-Query provider section (C2A2 broker default + Groq / Ollama / OpenAI-direct), with automatic fall-back to local text search on `free-limit`/`rate-limited`. Keys for OpenAI/Groq stored in `sessionStorage` only.
+  Status: ADOPTED — built and described in the session log; per project rule, localhost browser-verification and git push remain on Tom's Mac (push state not asserted here). Open follow-ups logged in the session ("next session"): WebGPU-for-Kokoro via localhost serve, Whisper offline STT, screenshot→vision graph-state queries, ISME demo hardening.
+  Rationale: Local-first navigation conserves API quota (ASSUMPTION-358); sessionStorage key handling is the privacy posture (ASSUMPTION-359); local/offline + generous-free providers with graceful degradation reduce single-broker dependence for a public artifact (ASSUMPTION-360). Consistent with the honesty/quota-transparency pattern (the narration bar explains free-limit fallbacks rather than failing cryptically).
+  Related: ASSUMPTION-358, 359, 360; PRESUMPTION-395 (sessionStorage threat model), 396 (single-file 40MB maintainability), 397 (closed nav-keyword set); Device-freedom bright pin; Pathway 27 (universal search/ask); `wiki-narration-voice-nav-session-log.md`, `wiki_narration.html`.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Registered from the 2026-06-24 voice/nav session log (the committed distilled record). Build described per the log; push/verify state held to Tom per the constitutional rule (not asserted).
+    Current status: ADOPTED (built per session log; push/verify on Mac)

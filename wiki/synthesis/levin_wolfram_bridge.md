@@ -29,3 +29,10 @@ Levin's alignment mechanism is *bioelectric* — cells share a low-dimensional g
 - Cross-link from `traditions/levin/wiki.md` and `traditions/wolfram/wiki.md` under *paradigm-bridge candidates*; register as a new CROSS item in the cross-program index (currently absent).
 - Directly relevant to the C2A2 governance/architecture discussion: PROP-2026-05-23-002's meta-signal names the C2A2 tradition-agents as the literal "ownerless AI" case (see the C2A2-master call on that proposal).
 - PROP-2026-05-23-002's PRS-CANDIDATE-01 is **Speculative pending transcript verification** — treat this bridge as provisional until the May 13 livestream transcript is ingested.
+
+## Sewing note — 2026-06-21
+*Added by Sewing Agent*
+
+**Intersection page:** [[2026-06-15_levin_platonic-space-ingressing-minds]]
+**Synthesis claim:** Wolfram's ruliad — the space of all computationally possible patterns that physical processes sample — is a structural twin of Levin's Platonic space of pre-existing forms. Ruliad-sampling becomes a candidate mechanism for Levin's "ingression": a physical system points to and instantiates an adjacent pattern by occupying a region of rulial space.
+**Open question the wiki cannot yet answer:** Is "ingression" reducible to rulial proximity (a system ingresses the patterns nearest it in the ruliad), or does it require something the ruliad lacks — a selection/agency principle that picks which adjacent pattern is realized?

@@ -843,17 +843,19 @@ OPEN-082 (NEW, 2026-06-11): Parser/linker remediation for bottom-frontmatter Sum
 
 OPEN-083 (NEW, 2026-06-15): Is the post-Apr-6 interactive-token cliff (95% of captured output) and the 28/33-lane output flatline a telemetry capture/labeling artifact, or a real change in captured productive output? The 2026-06-15 metabolism session worked from the inference that capture stopped/changed labels after early April (not that activity fell), and rendered the view on that basis — but `probe_openstory.py` has not yet been run, so the artifact reading is unverified. Until decided, the "honest" view asserts a cause (capture ended) it has not confirmed; if any part of the cliff is real, the recovered view masks a genuine output collapse and every downstream yield comparison inherits the error.
   Arose from: WS1 of the 2026-06-15 attended metabolism session (cut-offs A/B framed as capture problems; probe deferred to the Mac)
+  RESOLVED 2026-06-22 (artifact, confirmed): the live open-story.db was reached directly from Cowork (985 sessions / 173,663 events, current to the probe minute). Reading BOTH token_usage paths, assistant output tokens are continuous and nonzero across the Apr-6 boundary and through May/June (2026-04 ~8.2M, 2026-05 ~20.4M, 2026-06 ~33.3M output tokens; the per-day series shows no flatline). The cliff was the 2026-04-07 schema migration (data.token_usage -> data.agent_payload.token_usage) zeroing token reads, now closed by the both-paths fix; it is NOT a real output collapse, so downstream yield comparisons do not inherit a masked drop. Clears PRESUMPTION-352 / MONITOR-349. Evidence captured in metabolism-monitor/logbook.md.
   Testable via: empirical — run probe_openstory.py; reconcile token_usage payloads by run-type and date against an independent activity record
   Owner: Tom (run probe on Mac) + next metabolism session
-  Status: OPEN
-  Related: DECISION-057; ASSUMPTION-320; PRESUMPTION-352, 351; OPEN-081
+  Status: RESOLVED 2026-06-22 (artifact, confirmed — see resolution note above; field flipped by the 14a EOD pass to match the body, a fail-loud correction of the stale OPEN flag noted in the 06-22 cowork sync)
+  Related: DECISION-057; ASSUMPTION-320, 335 (GROUNDED resolution); PRESUMPTION-352, 351; OPEN-081
   Provenance:
     Origin: 14a
     Chain: [14a]
     Item type: OPEN-QUESTION
     Transform at each step:
       14a: Raised from the WS1 cut-off framing — the artifact-vs-real ambiguity is load-bearing on the metabolism metric and decidable by the already-scripted probe.
-    Current status: OPEN
+      14a (2026-06-22): Resolved as artifact via the live-db both-paths probe; flipped Status/Current status to RESOLVED to match the resolution body (the 06-22 sync flagged the field as a stale fail-loud item). Resolution captured as ASSUMPTION-335 (GROUNDED).
+    Current status: RESOLVED (artifact — token cliff was a 2026-04-07 schema-migration read-path zeroing, not an output collapse)
 
 OPEN-084 (NEW, 2026-06-16): Are the three PRS-triplet counts — 269 (3D connectome nodes), 264 (git cumulative-produced), 262 (on-disk unique) — three estimates of one real quantity to be reconciled (the OPEN-081 posture), or three distinct constructs (ever-produced ⊇ currently-surviving; separately-sourced rendered set) that should each be reported with its own label? Today's WS2 build asserted the git series "supersedes" the static 269 (ASSUMPTION-325) while the connectome still renders 269, leaving the relation unresolved. If they are different constructs, "reconciliation" is a category error and the right move is three labeled numbers; if they are one quantity, the 5-to-7 gap is a real discrepancy to chase. Sharpens OPEN-081.
   Arose from: WS2 PRS-yield build of the 2026-06-16 attended session (the 269/264/262 divergence made explicit by the new git-derived series)
@@ -882,3 +884,56 @@ OPEN-085 (NEW, 2026-06-18): In the Sociogram regenerated on 2026-06-18 (`wiki_na
     Transform at each step:
       14a: Raised from the explicit in-session Summa-count interrogation; logged as a cross-project (Summa) item with the assistant's own untrustworthy-count caveat preserved.
     Current status: OPEN
+
+OPEN-086 (NEW, 2026-06-20): Why has the end-of-day self-awareness pipeline (Agents 14a/14b) not fired for two consecutive nights (2026-06-19 and 2026-06-20)? No 06-19 or 06-20 changelog or metrics snapshot existed until this catch-up run produced them; the lapse was caught only because both daily-sync sessions happened to flag it in prose, not because the pipeline signalled its own miss. Is this a scheduler problem (the nightly task did not trigger), a silent failure (it triggered and died without an error surface), or an intentional pause? Distinct from the broken Chat sync loop (claude.ai signed out in the connected Chrome), which is a separate cause with the same symptom of missing daily artifacts. Load-bearing because the self-awareness system is the very mechanism meant to catch drift; if it can stop without anyone noticing, every downstream registry silently goes stale (it was two days stale here). The fix has a fail-loud shape: the pipeline (or a watchdog) should assert its own liveness — emit a missed-run alert when an expected daily changelog/snapshot is absent — rather than relying on a human reading the sync notes.
+  Arose from: the 2026-06-19 and 2026-06-20 agent-only days, both of whose Cowork→Chat / Chat→Cowork sync summaries independently flagged "the EOD pipeline hasn't run since 06-18"; confirmed by the absence of 06-19/06-20 files in changelog/ and metrics/ at the start of this catch-up run.
+  Testable via: empirical/operational — inspect the scheduled-task run history for the 14a/14b EOD task on 06-19 and 06-20 (fired vs failed vs skipped); add a liveness/missed-run assertion and confirm it would have caught this lapse. Literature-adjacent on the design side: liveness monitoring, dead-man's-switch / heartbeat patterns, silent-failure detection in unattended pipelines.
+  Owner: Tom (check scheduler) + next attended session (decide on a watchdog)
+  Status: OPEN
+  Related: PRESUMPTION-369 (the pipeline presumes its own scheduled execution — same fact, surfaced as an unstated presumption); PRESUMPTION-370 (null-day = nothing-to-record framing); the standing fail-loud / over-trust theme (06-17 PRS-yield HIGH flag; REVISE-111 pre-register-falsifiers); the position-based decision-ID bug in generate_review_page.py (separate silent-corruption fail-loud item raised in the 06-19/06-20 syncs)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised during the 2026-06-20 catch-up EOD pass from the two-night gap in the pipeline's own output; framed as a liveness/fail-loud question because the self-awareness system failing silently is the load-bearing risk.
+    Current status: OPEN
+
+OPEN-087 (NEW, 2026-06-23): Does the PRODUCTION Sewing Agent's link resolver handle path-qualified `[[a/b/c]]` wikilinks, or does it match on basename/title only like the bootstrap audit's first pass? 893 of 1,740 links in the vault are path-qualified; basename-only resolution mis-scored them, reporting 960 "unresolved" (true value 67) and 21 connected hubs (true value 44). If the weekly production resolver shares this bug, every prior row in `connectivity_log.csv` systematically under-counts hub connectivity, and the orphan/connected trend the project has been tracking is skewed. The fix has a fail-loud shape: a one-line check that the production resolver resolves a known path-qualified link, plus a recompute of the historical series under path-aware resolution.
+  Arose from: 2026-06-23 Sewing Agent bootstrap audit, "a resolver bug I caught" — flagged explicitly as "worth a one-line check of the production resolver."
+  Testable via: empirical — inspect the production resolver; recompute connectivity_log.csv under path-aware resolution and compare to the historical ~79% orphan series.
+  Owner: Tom + next Sewing-Agent maintenance session
+  Status: OPEN
+  Related: ASSUMPTION-341 (path-qualified resolution requirement); PRESUMPTION-379 (the audit's own corrected resolver presumed bug-free — same silent-miscount class); the standing silent-read / fail-loud family (OPEN-086, PRESUMPTION-369/373)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Promoted to OPEN from the audit's explicit production-resolver flag and the 06-23 cowork summary's "worth promoting to OPEN-NNN on the next pass." This pass is that next pass.
+    Current status: OPEN
+
+OPEN-088 (NEW, 2026-06-23): What is the explicit SEEDING POLICY for agentic-call injection at vault scale? The bootstrap audit was tasked to run 14-thinker relevance mapping on ~1,064 A/B/C pages and inject agentic calls wherever score > 0.4, but deliberately declined: (1) the premise (many high-value content orphans needing seeding) proved mostly false once system/inbox pages were excluded; (2) the relevance heuristic surfaces meta-documents that merely name every thinker as false positives; (3) a ~1,000-page unattended mutation of live pages that feed the published visualization conflicts with the project's caution/surgical-change rules. The open fork: should agentic-call injection EVER run unattended at vault scale, or only on a reviewed Tier-1/Tier-2 subset on Tom's sign-off? The audit explicitly offered to "execute a bounded pass on your sign-off."
+  Arose from: 2026-06-23 Sewing Agent bootstrap audit, Phase 3 refusal + recommended-actions #4 ("Decide the seeding policy explicitly"); flagged in the 06-23 cowork summary as "the one real fork the bootstrap left open."
+  Testable via: decision/policy (not literature) — Tom sets the policy; literature-adjacent on safe-autonomy thresholds for bulk automated edits and human-in-the-loop gating.
+  Owner: Tom (policy) + next attended session
+  Status: OPEN
+  Related: ASSUMPTION-342 (report-not-edits autonomy rule, GROUNDED); ASSUMPTION-345 (graph already sufficient; mass seeding low-and-noisy); PRESUMPTION-380 (relevance-score instrument validity); DECISION-061 (the hub fix chosen instead)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Promoted to OPEN from the audit's explicit Phase-3 deferral and recommendation #4; the 06-23 cowork summary flagged it as the one real fork left open and "worth promoting to OPEN-NNN on the next pass."
+    Current status: OPEN
+
+---
+
+OPEN-089 (NEW, 2026-06-24): For the cortical-column architecture (Pathway 31 / DECISION-062), WHICH TWO independence axes will the three columns vary across, and how are they kept "fixed and documented per column so that a dissensus is attributable to a real difference in wiring rather than drift"? The pathway names three candidate axes (corpus slice / retrieval strategy; analytic frame — problem- vs solution- vs resource-first decomposition; model/parameters) and requires at least two to vary, but explicitly defers the choice: "Open question to resolve before any code … (Rule 1 — named, not guessed.)" Load-bearing because the entire value of the vote rests on substantive column difference (ASSUMPTION-347); if the axes are weak or unpinned, the 2-of-3 agreement measures stochastic variance and the 3–4× cost (ASSUMPTION-349) buys nothing. Gates the pilot.
+  Related: ASSUMPTION-347 (substantive independence), 349 (cost), 350 (pilot success criterion); PRESUMPTION-390 (reference-frame transfer condition); DECISION-062.
+
+OPEN-090 (NEW, 2026-06-24): What is the OPERATIONAL DEFINITION of "semantic agreement" that the adjudicator uses to declare 2-of-3 consensus? The pathway states the threshold ("two-thirds or greater semantic agreement") but flags the definition as unspecified and decisive: "the adjudicator decides agreement, so 'semantic' must be operationalized — entailment between assessments? Match at the level of PRS-triplet claims? Surface overlap is not enough. This definition is the adjudicator's whole contract and must be specified, not left to vibe." Load-bearing because consensus, dissensus rate, and the success criterion (ASSUMPTION-348, 350) are all functions of this definition; an ill-specified or biased agreement test silently determines every downstream count.
+  Related: ASSUMPTION-348 (dissensus as detector output), 350 (success criterion), 351 (model-as-adjudicator licensed under Rule 5); PRESUMPTION-387 (adjudicator competence/bias); DECISION-062.
+
+OPEN-091 (NEW, 2026-06-24): Should the PRS resource schema gain a `derived_from:` field (parent resource-ids), populated at articulation time, to make the synthesis-by-novelty falsifier indicator confirmatory rather than exploratory? The coil falsifier pre-registration (§2.4) holds that the PRIMARY shared-id indicator risks a false negative on real synthesis (genuine A–B fusion coins NEW vocabulary, scoring a true bridge as zero), and that the honest fix — "new resource-ids that descend from resources of both traditions" — "requires resource lineage the schema does not currently record," warning that reconstructing lineage after the fact "is itself a researcher-degrees-of-freedom hole as dangerous as the one we are closing." So the schema change must be made BEFORE the indicator can be trusted ("build the instrument before trusting the reading"). Load-bearing for whether the falsifier (DECISION-063) can ever detect synthesis-by-novelty without re-opening the degrees-of-freedom problem it was built to close.
+  Related: ASSUMPTION-357 (synthesis-by-novelty false negative), 356 (H1); PRESUMPTION-391 (shared-id construct validity); DECISION-063; REVISE-143 (broken-link demand completeness — sibling under-detection concern).

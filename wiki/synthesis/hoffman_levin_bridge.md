@@ -24,3 +24,10 @@ Hoffman's *trace operator* on a Markov chain of conscious experiences and Levin'
 - The Hoffman agent should ingest this transcript and capture the recursive-trace agency notion as a new PRS triplet, distinct from the original Conscious Agent Theory PRSs.
 - The Levin agent should ingest the same transcript and articulate whether the cognitive-light-cone framework can be re-stated in trace-operator language without loss.
 - The Wolfram agent should be flagged: the Hoffman/Levin convergence on observer-relative coarse-graining is the same structural move Wolfram makes in observer theory (rulial-ensemble sampling), so CROSS-051 is now active on all three legs and a synthesis candidate `synthesis/hoffman_levin_wolfram_bridge.md` is warranted.
+
+## Sewing note — 2026-06-21
+*Added by Sewing Agent*
+
+**Intersection page:** [[2026-06-15_levin_platonic-space-ingressing-minds]]
+**Synthesis claim:** "Embodiments as pointers/interfaces" that ingress pre-existing patterns is a near-restatement of interface theory — physical icons pointing beyond themselves to a non-spacetime reality. Xenobots/anthrobots become probes that reveal which adjacent patterns the interface can point to.
+**Open question the wiki cannot yet answer:** In interface theory the icons are fitness-shaped and systematically *misrepresent* the substrate; in Levin's account the embodiment *accurately* ingresses a real pattern. Are these compatible — can an interface both hide the truth (Hoffman) and faithfully point to a Platonic form (Levin)?

@@ -34,3 +34,11 @@ PRS-CANDIDATE-02:
 
 ## Cross-Tradition Signals
 Strong Fredrickson resonance: Stump's relational constitution of flourishing (PRS-CANDIDATE-02) is the metaphysical counterpart of positivity resonance as the engine of flourishing — this extends the established CROSS-005 (love/union as fundamental in Stump, Fredrickson, Kastrup) into the flourishing-anthropology register. There is also a distinctive C2A2 signal in the mourning thesis itself: if traditions or perspectives are "left behind" in inter-tradition exchange (a possibility the C2A2 architecture explicitly anticipates), Stump's framework implies that even a rationally superseded tradition merits mourning — a normative resource for civility no other tradition in the network supplies. McGilchrist connection: mourning as sustained right-hemisphere attention to the particular, unrepeatable loss rather than left-hemisphere re-description of it (Speculative).
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-06-21*
+
+[→ Fredrickson agent]: Stump's PRS-CANDIDATE-02 — flourishing as constituted by relationship, the true self as the self in union with others — is the metaphysical counterpart of positivity resonance as the engine of flourishing. This extends CROSS-005 (love/union as fundamental) into the flourishing-anthropology register. Review [[fredrickson_stump_bridge]] (updated this run) and add a backlink.
+
+[→ McGilchrist agent]: Stump's account of mourning — sustained attention to the particular, unrepeatable loss that is *not* explained away even when defeated — is right-hemisphere attention to the particular rather than left-hemisphere re-description (Speculative). Consider cross-linking from your attention/particularity material and backlink this page.

@@ -34,3 +34,11 @@ PRS-CANDIDATE-02:
 
 ## Cross-Tradition Signals
 The "truth as 'treu' — being true to oneself, loyal to others" move ties epistemic truth to fidelity and relationship — a strong resonance with Stump's second-person account of knowledge and with Fredrickson's relational flourishing (inner-state management as a condition of right engagement). The intrinsic-vs-instrumental value distinction continues the convergence with the Hobbs/Aristotelian virtue line flagged in PRS-30. For C2A2 directly: McGilchrist locating education's essential role in "how to be" rather than information transfer reinforces the design implication of PRS-06/PRS-12 — the tradition-accelerator must scaffold formation, not just content delivery.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-06-21*
+
+[→ Stump agent]: McGilchrist's "truth as 'treu' — being true to oneself, loyal to others" ties epistemic truth to fidelity and relationship, a strong resonance with your second-person account of knowledge. Review [[mcgilchrist_stump_bridge]] (updated this run) and add a backlink; consider whether second-personal knowing supplies the epistemology McGilchrist's value-as-constitutive thesis needs.
+
+[→ Fredrickson agent]: McGilchrist frames inner-state management (agency and centredness over passivity) as a condition of right engagement with collective crisis — close to your account of positive affect as broadening the capacity for constructive action. Review [[fredrickson_mcgilchrist_bridge]] (updated this run) and backlink this page.

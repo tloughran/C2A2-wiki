@@ -1867,3 +1867,191 @@ PREMISE-068:
   Rationale: PRESUMPTION with MODERATE-STRONG canonical support and only WEAK-MODERATE challenge -> INCORPORATE-with-guard is warranted (challenge is weak, not strong, so the "PRESUMPTION+strong-challenge->REVISE" heuristic does not trigger). The defensible core (progressive disclosure) is incorporated; the over-general "more = better" rationale is withheld. Consistency-checked vs PREMISE-001..067 and vs REVISE-122 (resolvability != fidelity): no conflict — both withhold "more visible/more info = automatically better."
 
 **Total new PREMISEs this run (2026-06-19): 3 (PREMISE-066 SSOT single-source bios; PREMISE-067 golden-path guarded regen wrapper; PREMISE-068 details-on-demand pop-ups). 2 stated ASSUMPTIONs + 1 PRESUMPTION (367, the first PRESUMPTION-class INCORPORATE in several runs — admitted because its challenge was only weak-moderate and its support canonical). Cumulative through PREMISE-068. All three carry explicit scope guards withholding the over-claim step (tested-extraction-boundary; guard-in-code; withhold 'more=better').**
+
+PREMISE-069:
+  Date validated: 2026-06-23
+  Source item: ASSUMPTION-335
+  Statement: The post-Apr-6 "token cliff" was a schema-migration read-path artifact (token_usage relocated to agent_payload.token_usage, zeroing single-path reads), not an output collapse; a both-paths read recovers a continuous, growing output series. This is an instance of the documented silent-schema-zeroing failure class.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Branch Boston (schema-evolution silent field-relocation zeroing reads); Functionize/Airbyte data-migration silent-corruption testing; C2A2-internal both-paths live-db probe (06-22) recovering a continuous growing series.
+  Challenges noted: 15b NO-CHALLENGE-FOUND to the fact (only a weak boundary note that one recovered read path is not a whole-pipeline clean bill — that caution is routed to REVISE-131/134, not against this premise).
+  Confidence: High
+  Applicable to: token/yield telemetry reads; any derived-metric pipeline crossing the 2026-04-07 schema boundary; historical yield comparisons (read via both paths).
+  Re-check due: 2026-09-23 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: SUPPORTED (Moderate-Strong) + empirically GROUNDED + NO-CHALLENGE to the artifact reading -> INCORPORATE. SCOPE GUARD (load-bearing): incorporates ONLY the artifact explanation of the post-Apr-6 cliff; the generalizations "trust all downstream yields" (ASSUMPTION-336 -> REVISE-131) and "the fix is durable / no recurrence guard needed" (PRESUMPTION-373 -> REVISE-134) are explicitly WITHHELD. Consistency-checked vs PREMISE-001..068 and the silent-degradation family (PREMISE-049, REVISE-129): no conflict — same failure class, here correctly diagnosed and bounded.
+PREMISE-070:
+  Date validated: 2026-06-23
+  Source item: ASSUMPTION-337
+  Statement: Since 06-16 the binding constraint on the proposal pipeline is human review throughput, not literature discovery (review-bound). By Theory of Constraints, other stages should be subordinated to review — i.e., do not over-feed intake while review is the bottleneck.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Goldratt, Theory of Constraints (ASQ; leanproduction.com) — locate the constraint where WIP accumulates; Little's Law (ASQ; 6sigma.us); kanban/WIP-limit queuing guidance (kanbantool).
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Weak-Moderate) — TOC caution that a stage where WIP shows can be downstream of the true constraint (review latency could be readiness- not throughput-driven). Folded as the scope guard: confirm review latency is capacity- not rework-limited.
+  Confidence: Moderate
+  Applicable to: proposal-review workflow design; intake/WIP policy; 15-pipeline and self-awareness intake cadence.
+  Re-check due: 2026-07-23 (Monthly; via 15d)
+  Status: ACTIVE
+  Rationale: SUPPORTED (Moderate) + only weak-moderate conditional challenge -> INCORPORATE with scope guard. Directly grounds workflow design and entails-against PRESUMPTION-372 (intake-as-progress -> REVISE-133): if review is the binding constraint, added intake is WIP, not progress. Consistency-checked vs PREMISE-001..069: no conflict.
+
+**Total new PREMISEs this run (2026-06-23): 2 (PREMISE-069 token-cliff = schema read-path artifact [grounded, scoped]; PREMISE-070 proposal queue is review-bound [TOC/Little's law]). Both stated ASSUMPTIONs; both carry explicit scope guards withholding the over-claim step (over-trust generalizations -> REVISE-131/134; readiness-vs-throughput confirmation). Cumulative through PREMISE-070.**
+PREMISE-071:
+  Date validated: 2026-06-24
+  Source item: ASSUMPTION-340
+  Statement: Reconnecting a small set of high-centrality tradition hub pages restores graph reachability and integration more efficiently than seeding many peripheral leaves (hub leverage) — PROVIDED reconnection targets are chosen by bridging value (betweenness / community-spanning), not by degree alone.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Gomez, Centrality in Networks (finding most important nodes); MDPI Mathematics 9(18):2294 (important-node selection); module-based network analysis arXiv 1502.00353; GraphRAG well-placed-link value arXiv 2507.03226.
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Weak-Moderate): hubs maximize degree but often have LOW betweenness; the high-leverage integrators are bridge nodes (sometimes 'leaves'). Folded as the scope guard (select by bridging value, not degree).
+  Confidence: Moderate
+  Applicable to: graph-repair prioritization; sewing-agent reconnection policy; OPEN-088 seeding policy.
+  Re-check due: 2026-07-24 (Monthly; via 15d)
+  Status: ACTIVE
+  Rationale: Moderate support + only weak-moderate conditional challenge -> INCORPORATE with scope guard. Consistency-checked vs PREMISE-001..070: no conflict.
+
+PREMISE-072:
+  Date validated: 2026-06-24
+  Source item: ASSUMPTION-341
+  Statement: Link-graph connectivity must be measured with path-aware (fully-qualified) wikilink resolution; basename-only resolution silently miscounts via cross-folder filename collisions and is an invalid measurement rule. Connectivity figures produced by a basename-only resolver are suspect until recomputed path-aware.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Path-resolution / normalization practice (canonicalization, collision handling); test-to-code traceability requiring fully-qualified keys; C2A2 silent-measurement family (PREMISE-049 verify-before-trust; schema-zeroing 369/373).
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Weak): skew magnitude unknown until recomputed (could be near-null if no collisions); the replacement resolver must itself be verified (routed to REVISE-139).
+  Confidence: Moderate
+  Applicable to: connectivity_log.csv weekly series; any connectivity/orphan metric; OPEN-087 recompute task.
+  Re-check due: 2026-07-24 (Monthly; via 15d)
+  Status: ACTIVE
+  Rationale: SUPPORTED principle + weak magnitude/boundary challenge -> INCORPORATE the measurement RULE. SCOPE GUARD (load-bearing): incorporates the principle that connectivity must be measured path-aware; does NOT certify the audit's own replacement resolver (uncross-checked self-trust -> PRESUMPTION-379/REVISE-139) and does NOT assert the skew magnitude (pending recompute). Same failure class as PREMISE-049/369/373; no conflict vs PREMISE-001..070.
+
+PREMISE-073:
+  Date validated: 2026-06-24
+  Source item: ASSUMPTION-342
+  Statement: For an unattended/autonomous run, high-impact or irreversible actions (e.g., a ~1,000-page bulk vault mutation) must be emitted as a report plus a ranked action list for human review, not executed. The rule is scoped to high-impact actions by tier (not a blanket ban on autonomous action), and reports must have a path to reviewed execution or they become HITL theater.
+  Item type: ASSUMPTION (stated) — GROUNDED (the run enacted it)
+  Supporting evidence: HITL agent design (NIST IR 8596; Galileo; Grizzly Peak HITL patterns); batch-review safe-autonomy (getmaxim.ai); C2A2 'caution over speed' rule + deferred-action monitor (Agent 16).
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Weak): over-gating / 'HITL theater' — gating trivial actions causes rubber-stamping; an unread report is not safety. Folded as the scope guard (gate by impact tier; ensure reports convert to reviewed action).
+  Confidence: High
+  Applicable to: all autonomous agents (sewing agent; 14/15 self-awareness pipelines; deferred-action monitor Agent 16); unattended-run output policy.
+  Re-check due: 2026-09-24 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: SUPPORTED (Strong) + GROUNDED + only weak scope-narrowing challenge -> INCORPORATE with scope guard. The inferred over-reach (autonomous INTERPRETIVE authority) is split to PRESUMPTION-382/REVISE-142. Consistent with the project caution rule and Agent 16; no conflict vs PREMISE-001..072.
+
+PREMISE-074:
+  Date validated: 2026-06-24
+  Source item: ASSUMPTION-344
+  Statement: A single index node (traditions/_index.md) linking the 15 tradition hub wikis mechanically de-orphans all 15 in one edit (orphan -> linked); GROUNDED and browser-verified. This is a navigational de-orphaning fact only and does not by itself establish improved analytical graph health.
+  Item type: ASSUMPTION (stated) — GROUNDED (built + browser-verified)
+  Supporting evidence: Graph degree mechanics; Wikipedia portal/index de-orphaning practice; in-session browser verification (06-23).
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate): a universal index node is a maximal-degree hub that can dilute sociogram/community signal ('connects-all = distinguishes-nothing'). WITHHELD and routed to PRESUMPTION-381/REVISE-141.
+  Confidence: High
+  Applicable to: orphan remediation; vault navigation. NOT for sociogram/community-structure analysis (exclude the index node there).
+  Re-check due: 2026-09-24 (Quarterly; via 15d)
+  Status: ACTIVE
+  Rationale: SUPPORTED (Strong) + GROUNDED for the narrow de-orphaning fact -> INCORPORATE (cf. PREMISE-069: grounded fact in, over-claims out). SCOPE GUARD: navigational de-orphaning fact ONLY; the analytical-health claim is withheld to REVISE-141. No conflict vs PREMISE-001..073.
+
+
+**Total new PREMISEs this run (2026-06-24): 4 (PREMISE-071 hub-leverage reconnection [betweenness-guarded]; PREMISE-072 path-aware connectivity measurement [principle; replacement resolver NOT certified — see REVISE-139]; PREMISE-073 unattended high-impact actions = report-not-mutate [GROUNDED]; PREMISE-074 index-node de-orphaning [grounded navigational fact only — analytical-health claim withheld to REVISE-141]). 4 stated ASSUMPTIONs (two GROUNDED). All four carry explicit scope guards withholding the over-claim step (betweenness-not-degree; principle-not-resolver; impact-tier-not-blanket; navigational-not-analytical). Cumulative through PREMISE-074.**
+
+
+## 2026-06-24 cohort INCORPORATE (15c 2026-06-25)
+
+PREMISE-075:
+  Date validated: 2026-06-25
+  Source item: ASSUMPTION-347
+  Statement: Robustness from an agent ensemble comes from error DECORRELATION (member diversity), which reference-frame variation supplies far more than random-seed/temperature resampling; identical agents at temperature chiefly expose stochastic variance. Realized robustness is conditional on MEASURED decorrelation across columns (see MONITOR-375).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Krogh & Vedelsby 1995 (ambiguity decomposition) (15a SUPPORTED/Strong)
+  Challenges noted: 15b (Moderate): same-base-model columns can share errors; nominal diversity overstates effective diversity.
+  Confidence: Moderate
+  Applicable to: Pathway 31 ensemble design; any 'diversity vs redundancy' decision
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-301
+
+PREMISE-076:
+  Date validated: 2026-06-25
+  Source item: ASSUMPTION-348
+  Statement: A per-thinker/per-claim dissensus rate is a meaningful detector output (evidence about contested positions under rich information) ONLY once the measure's reliability is established and instrument noise separated from genuine variation; reported above a measured noise floor.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Plank 2022 (human label variation); Aroyo & Welty 2015 (15a SUPPORTED/Strong)
+  Challenges noted: 15b (Moderate): much disagreement is annotation/instrument error; reliability must be demonstrated (VARIERR).
+  Confidence: Moderate
+  Applicable to: Constitutional detector output; dissensus-rate reporting
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-302
+
+PREMISE-077:
+  Date validated: 2026-06-25
+  Source item: ASSUMPTION-350
+  Statement: A single-thinker pilot can VALIDATE THE MECHANISM only in the necessary-condition / falsification sense: a clean failure refutes it, and a PASS establishes feasibility-in-one-favorable-case, NOT generalization across thinkers (generalization is deferred to multi-thinker replication; see MONITOR-374).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Leon et al. 2011 (pilot purpose); Flyvbjerg 2006 (critical case) (15a PARTIALLY-SUPPORTED/Moderate)
+  Challenges noted: 15b (Moderate): pilots mislead about scalability; a PASS on a favorable case is weak evidence for generalization.
+  Confidence: Moderate
+  Applicable to: Hawkins pilot as falsification test; pathway gating
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-304
+
+PREMISE-078:
+  Date validated: 2026-06-25
+  Source item: ASSUMPTION-352
+  Statement: Self-testing is rendered substantially non-vicious by specifying the falsifier independently of outcomes (register, then look) - NECESSARY but sufficient only when the specification is exhaustive (thresholds, exclusions, analysis path pre-committed); register-then-look does not by itself supply personnel independence (see REVISE-146).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Simmons et al. 2011; Nosek et al. 2018; Mayo 2018 (15a SUPPORTED/Strong)
+  Challenges noted: 15b (Moderate): vague preregistrations leak DoF; self-grading is not personnel independence.
+  Confidence: Moderate
+  Applicable to: The whole falsifier; self-testing protocol; discharges REVISE-111 (partial)
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-305
+
+PREMISE-079:
+  Date validated: 2026-06-25
+  Source item: ASSUMPTION-353
+  Statement: Usefulness must not be equated with productivity (Goodhart/Campbell), and the usefulness test must be ASYMMETRIC: a clean FAIL is decisive, a PASS licenses only 'necessary condition met, provisional'. Asymmetry blunts but does not fully eliminate gaming; necessary conditions must be tight and the test periodically red-teamed.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Goodhart/Strathern 1997; Campbell 1979; Mayo 2018 (15a SUPPORTED/Strong)
+  Challenges noted: 15b (Weak): asymmetric/necessary-condition tests are still meta-gameable; not a complete firewall.
+  Confidence: High
+  Applicable to: Usefulness test design; anti-productivity-ism firewall; discharges REVISE-105
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-306
+
+PREMISE-080:
+  Date validated: 2026-06-25
+  Source item: ASSUMPTION-355
+  Statement: A pre-specified convergence battery of OPERATIONALLY INDEPENDENT indicators (no post-hoc weighting) is more robust and harder to spoof than any single indicator - CONDITIONAL on demonstrated independence (shared method variance yields pseudo-convergence). Extends the existing triangulation/overdetermination premise.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Campbell & Fiske 1959 (MTMM); Wimsatt 1981; Munafo & Davey Smith 2018 (15a SUPPORTED/Strong)
+  Challenges noted: 15b (Moderate): indicators sharing method/source give pseudo-robustness; independence must be measured, not assumed.
+  Confidence: High
+  Applicable to: Convergence-battery design; falsifier indicator selection; extends existing triangulation premise
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-308
+
+PREMISE-081:
+  Date validated: 2026-06-25
+  Source item: ASSUMPTION-357
+  Statement: Because real synthesis often coins NEW vocabulary, a shared-identifier test has a non-trivial false-negative rate; an honest synthesis instrument needs a contemporaneous derived_from lineage field, and the test must be instrumented (false-negative rate measured) before it is trusted.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Fauconnier & Turner 2002 (blending); Small 1973 (co-citation false negatives) (15a SUPPORTED/Moderate)
+  Challenges noted: 15b (Weak): not all synthesis coins new terms; lineage fields add maintenance error - measure the false-negative rate before heavy investment.
+  Confidence: Moderate
+  Applicable to: Synthesis-detection instrument; OPEN-091; miss-direction of shared-id test
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-310
+
+PREMISE-082:
+  Date validated: 2026-06-25
+  Source item: ASSUMPTION-360
+  Statement: For a public artifact, a local/offline path plus an own-key provider plus a local-search fallback is more resilient than single shared-broker dependence (removes a single point of failure) - CONDITIONAL on each fallback path being actually exercised/tested and provider keys not being exposed client-side (see REVISE-144).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Avizienis et al. 2004 (dependability); Kleppmann et al. 2019 (local-first) (15a SUPPORTED/Moderate)
+  Challenges noted: 15b (Weak): redundancy adds complexity/inconsistency; client-held keys re-import secret-exposure risk.
+  Confidence: Moderate
+  Applicable to: Public-artifact provider architecture; resilience/independence design value
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-312

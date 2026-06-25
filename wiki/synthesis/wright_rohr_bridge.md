@@ -71,3 +71,10 @@ Rohr frames exile as a condition to be *healed* (return to union); but the netwo
 
 - This exile section can co-host with the pneumatology and suffering claims; if it grows, split into `wright_rohr_exile_bridge.md`.
 - The "separateness: healed or honored?" question is shared with `synthesis/kastrup_rohr_bridge.md` (opened this run) — consider a single master note on individuation-vs-reunion.
+
+## Sewing note — 2026-06-21
+*Added by Sewing Agent*
+
+**Intersection page:** [[2026-06-21_rohr_way-of-the-early-church-new-way-of-living]]
+**Synthesis claim:** Salvation is a present, communal reordering of life ("the reign of God now"), not a private post-mortem transaction — Rohr supplies the contemplative-historical texture (communities of practice maturing into a self-naming tradition), Wright the second-temple-Jewish frame that constrains it (kingdom-of-God as inaugurated peoplehood).
+**Open question the wiki cannot yet answer:** Does the second-temple frame *entail* Rohr's "tradition emerges bottom-up from lived practice," or merely permit it — i.e., is the practice-first emergence of doctrine a historical accident or a structural feature of how peoplehood-salvation works?

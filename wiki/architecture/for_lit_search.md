@@ -8648,3 +8648,395 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Priority: MEDIUM
   Search strategy: construct validity / multiple operationalism; comparing counts across differently-sourced measures; when a difference is a definitional artifact (cf. 269/264/262, PRESUMPTION-357).
+
+## 2026-06-20 catch-up cohort (EOD self-awareness pass covering the 06-19→06-20 window)
+
+*Both 06-19 and 06-20 were agent-only days with no attended session; 14a extracted no new stated assumptions and registered OPEN-086 (EOD pipeline two-night stall). 14b surfaced 2 presumptions, both queued below. The period's other signal — construct-count proliferation to five numbers (269/264/262/279/222) — is a recurrence of the established 357/368/OPEN-084 construct-divergence family, not re-queued.*
+
+[PRESUMPTION] PRESUMPTION-369: The EOD self-awareness pipeline presumes its own reliable scheduled execution — no internal liveness check on the mechanism whose job is to detect drift
+  Status: [QUEUED] [cycle 0: 2026-06-20] [SEARCHED-15a: 2026-06-21] [SEARCHED-15b: 2026-06-21] [DISPOSITIONED-15c: 2026-06-21]
+  15a: NO-SUPPORT-FOUND (None-Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-129; HIGH urgency; no external liveness check on the auditor — FALSIFIED in production via OPEN-086; keystone of SYSTEMIC-RISK cluster 5; coupled to REVISE-130)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: HIGH (self-referential meta-axis instance of the over-trust / not-fail-loud failure mode; pipeline stalled 2 nights silently — OPEN-086 / PRESUMPTION-369)
+  Search strategy: liveness/heartbeat monitoring; dead-man's-switch patterns; silent-failure detection in unattended/scheduled pipelines; monitoring-the-monitor ("quis custodiet") in autonomous and self-auditing systems; staleness/freshness assertions for derived registries.
+
+[PRESUMPTION] PRESUMPTION-370: An agent-only day with no attended session is presumed to carry no extraction-worthy epistemic content ("null day" = nothing to record)
+  Status: [QUEUED] [cycle 0: 2026-06-20] [SEARCHED-15a: 2026-06-21] [SEARCHED-15b: 2026-06-21] [DISPOSITIONED-15c: 2026-06-21]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Moderate-Strong) | Disposition: REVISE (REVISE-130; LOW urgency; "null day" presumed contentless — refuted by selection/survivorship bias and self-demonstrated by OPEN-086; coupled to REVISE-129 — one daily liveness record fixes both)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW (speculative-confidence; lower evidentiary weight than 369)
+  Search strategy: value of recording routine / low-salience periods; survivorship and selection bias when only notable events are logged; what monitoring misses when it fires only on attended activity; unit-of-analysis choice (session vs system-day) in process documentation.
+
+## 2026-06-22 cohort (EOD self-awareness pass — attended, real-extraction day)
+
+*One attended Cowork session: two on-mission proposals surfaced (Levin "cognitive glue" PROP-2026-06-22-001; Friston "As One and Many" / group-level Markov blanket PROP-2026-06-22-002), forming a Levin↔Friston bridge on the individual↔collective binding problem; and OPEN-083 resolved (the Apr-6 "token cliff" was a schema-migration read-path artifact, not an output collapse). 14a extracted 5 stated assumptions (ASSUMPTION-333..337); 14b surfaced 6 unstated presumptions (PRESUMPTION-371..376). All 11 queued below with full provenance. Twins flagged: 371↔333, 372↔337, 373↔335, 375↔336, 376↔334. Not yet searched (15a/15b on their own cadence). The EOD pipeline fired tonight after the 06-18→06-21 gap; OPEN-086 (no liveness watchdog) remains open.*
+
+[ASSUMPTION] ASSUMPTION-333: Levin's "cognitive glue" and Friston's "group-level Markov blanket" are two framings of one problem (what binds sub-agents into a super-agent), forming a clean mathematical Levin↔Friston bridge
+  Status: [QUEUED] [cycle 0: 2026-06-22] [SEARCHED-15a: 2026-06-23] [SEARCHED-15b: 2026-06-23] [DISPOSITIONED-15c: 2026-06-23]
+  15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-360; HIGH; bridge program real but 'one problem / clean' identity unproven — require structure-mapping; SYSTEMIC-RISK cluster 6)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: HIGH (load-bearing cross-tradition bridge claim; most on-mission item of the day; twin of PRESUMPTION-371)
+  Search strategy: existing formal mappings between active inference / FEP and bioelectric-morphogenetic accounts; whether Markov-blanket formalism has been applied to Levin's systems; genuine structural homology vs shared metaphor in cross-domain "binding" claims.
+
+[ASSUMPTION] ASSUMPTION-334: The sub-agent→super-agent binding transition is C2A2's core target phenomenon ("the literal individual↔collective transition"), and a paper's value scales with how explicitly it formalizes it
+  Status: [QUEUED] [cycle 0: 2026-06-22] [SEARCHED-15a: 2026-06-23] [SEARCHED-15b: 2026-06-23] [DISPOSITIONED-15c: 2026-06-23]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-361; non-testable framing + testable transfer sub-claim routed with 376; cluster 6)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (partly framework commitment; the transfer-to-traditions sub-claim is testable; twin of PRESUMPTION-376)
+  Search strategy: collective active inference applied to social/epistemic collectives; multiscale agency for communities of inquiry; whether the binding/super-agent framing is an apt model for a research tradition.
+
+[ASSUMPTION] ASSUMPTION-335: The post-Apr-6 "token cliff" was a 2026-04-07 schema-migration read-path artifact (data.token_usage → data.agent_payload.token_usage zeroing reads), not an output collapse; both-paths read recovers continuous, growing output
+  Status: [QUEUED] [cycle 0: 2026-06-22] (note: GROUNDED via C2A2's own live-db probe; queued for literature/operational context on the failure class, not to establish the fact) [SEARCHED-15a: 2026-06-23] [SEARCHED-15b: 2026-06-23] [DISPOSITIONED-15c: 2026-06-23]
+  15a: SUPPORTED (Moderate-Strong) | 15b: NO-CHALLENGE-FOUND (Weak) | Disposition: INCORPORATE (PREMISE-069; post-Apr-6 token-cliff = schema read-path artifact, GROUNDED; scope guard: over-trust generalizations withheld to REVISE-131/134)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: LOW-MEDIUM (already GROUNDED empirically; lit value is on the recurrence-guard design)
+  Search strategy: regression-test and schema-contract patterns for telemetry; detecting silent zeroing across schema migrations; canary/assertion checks on derived-metric pipelines.
+
+[ASSUMPTION] ASSUMPTION-336: Correcting the token-read artifact licenses trust in all downstream yield comparisons ("do not inherit a masked drop")
+  Status: [QUEUED] [cycle 0: 2026-06-22] [SEARCHED-15a: 2026-06-23] [SEARCHED-15b: 2026-06-23] [DISPOSITIONED-15c: 2026-06-23]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Moderate-Strong) | Disposition: REVISE (REVISE-131; 'licenses trust in ALL downstream' over-trust — scope to reconciled paths; SYSTEMIC-RISK cluster 5)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (generalizes from one corrected read path to whole-pipeline trust; twin of PRESUMPTION-375)
+  Search strategy: when correcting one telemetry artifact warrants trust in derived metrics; independent failure modes in yield pipelines beyond a corrected read path.
+
+[ASSUMPTION] ASSUMPTION-337: The proposal-review queue is review-bound, not search-bound — the binding constraint since 06-16 is human review throughput, not literature discovery
+  Status: [QUEUED] [cycle 0: 2026-06-22] [SEARCHED-15a: 2026-06-23] [SEARCHED-15b: 2026-06-23] [DISPOSITIONED-15c: 2026-06-23]
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate) | Disposition: INCORPORATE (PREMISE-070; proposal queue is review-bound — TOC / Little's law; subordinate intake; entails-against 372)
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (twin of PRESUMPTION-372; actionable for workflow design)
+  Search strategy: theory of constraints / bottleneck identification; Little's law; whether throughput at a non-binding stage adds value or accumulates WIP inventory.
+
+[PRESUMPTION] PRESUMPTION-371: That "same problem in two vocabularies" warrants a formal bridge — cross-vocabulary commensurability of the cognitive-glue and group-Markov-blanket accounts
+  Status: [QUEUED] [cycle 0: 2026-06-22] [SEARCHED-15a: 2026-06-23] [SEARCHED-15b: 2026-06-23] [DISPOSITIONED-15c: 2026-06-23]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Moderate-Strong) | Disposition: REVISE (REVISE-132; commensurability smuggled from shared vocabulary — require structure-mapping; cluster 6; twin of 333)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: HIGH (twin of ASSUMPTION-333; risk of registering a metaphor as a structural homology)
+  Search strategy: criteria distinguishing genuine homology from shared metaphor; formal FEP-readings of bioelectric binding; surface-analogy vs structural-homology in cross-domain modeling.
+
+[PRESUMPTION] PRESUMPTION-372: That adding two well-chosen proposals is progress, even into a queue the same session calls review-bound and five deep with nothing decided since 06-16 (intake-as-progress)
+  Status: [QUEUED] [cycle 0: 2026-06-22] [SEARCHED-15a: 2026-06-23] [SEARCHED-15b: 2026-06-23] [DISPOSITIONED-15c: 2026-06-23]
+  15a: NO-SUPPORT-FOUND (None-Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-133; intake-as-progress — corollary error of PREMISE-070; impose WIP limit; twin of 337)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (twin/tension with ASSUMPTION-337)
+  Search strategy: theory of constraints / Little's law; WIP inventory and aging at a backed-up review stage; throughput at a non-binding stage as value vs accumulation.
+
+[PRESUMPTION] PRESUMPTION-373: That the both-paths fix fully and durably resolves the token-read problem — exactly two payload schemas, no future migration silently re-zeroing reads, no recurrence guard installed
+  Status: [QUEUED] [cycle 0: 2026-06-22] [SEARCHED-15a: 2026-06-23] [SEARCHED-15b: 2026-06-23] [DISPOSITIONED-15c: 2026-06-23]
+  15a: NO-SUPPORT-FOUND (None-Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-134; both-paths fix presumed durable w/o recurrence guard — same silent-read class as 369; canary assertion; cluster 5; twin of 335)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (twin of ASSUMPTION-335; same silent-read failure class as PRESUMPTION-369)
+  Search strategy: schema-contract / regression testing for telemetry reads; silent-zeroing detection across migrations; canary assertions on derived metrics.
+
+[PRESUMPTION] PRESUMPTION-374: That one recent paper by a thinker is the right unit for updating a tradition's state (figurehead-author, one-paper-one-thinker intake schema)
+  Status: [QUEUED] [cycle 0: 2026-06-22] [SEARCHED-15a: 2026-06-23] [SEARCHED-15b: 2026-06-23] [DISPOSITIONED-15c: 2026-06-23]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-362; figurehead one-paper intake unit — recurrence of traditions/thinkers-as-unit family 005/007)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW-MEDIUM (recurrence of the "traditions/thinkers are the unit" structural family, on the intake axis)
+  Search strategy: representing a tradition via single canonical authors vs distributed/collective authorship; figurehead bias in tradition individuation; how traditions are bounded and updated in HPS/sociology of science.
+
+[PRESUMPTION] PRESUMPTION-375: That month-over-month token growth (8.2M→20.4M→33.3M) is itself reassuring — more output tokens = healthier (metric-direction normative smuggling)
+  Status: [QUEUED] [cycle 0: 2026-06-22] [SEARCHED-15a: 2026-06-23] [SEARCHED-15b: 2026-06-23] [DISPOSITIONED-15c: 2026-06-23]
+  15a: NO-SUPPORT-FOUND (None-Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-135; monotone token growth read as health — vanity-metric smuggle; normalize by value; cluster 5; twin of 336)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW (twin of ASSUMPTION-336; metric-direction family with PRESUMPTION-367)
+  Search strategy: when monotone growth of a usage/cost metric signals health vs waste; defining desirable direction for throughput vs efficiency metrics; output-volume vs output-value.
+
+[PRESUMPTION] PRESUMPTION-376: That the papers' formal results (group-level Markov blanket as super-agent criterion; cognitive glue as binding mechanism) transfer intact to a community of inquirers / AI tradition-agents — transfer conditions named as "C2A2's extension" but never checked
+  Status: [QUEUED] [cycle 0: 2026-06-22] [SEARCHED-15a: 2026-06-23] [SEARCHED-15b: 2026-06-23] [DISPOSITIONED-15c: 2026-06-23]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-136; HIGH; intact transfer to epistemic / AI tradition-agents named but never checked — KEYSTONE; cluster 6; twin of 334)
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: HIGH (highest-risk item of the cohort; load-bearing transfer for the accelerator-detector framing; twin of ASSUMPTION-334)
+  Search strategy: scope conditions of collective active inference; whether group-level Markov blankets are established for symbolic/epistemic vs biological/physical collectives; analogical-transfer validity in formal modeling; multiscale-agency transfer conditions.
+
+## 2026-06-23 cohort (Sewing Agent bootstrap audit + tradition-index session) — 16 items
+
+[ASSUMPTION] ASSUMPTION-338: The vault is intentionally hub-and-spoke, not densely cross-linked, and this topology is healthy (low backlink density is design, not defect)
+  Status: [QUEUED] [cycle 0: 2026-06-23] [SEARCHED-15a: 2026-06-24] [SEARCHED-15b: 2026-06-24] [DISPOSITIONED-15c: 2026-06-24]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-363; hub-spoke is normal/robust topology but 'healthy' is task-relative — synthesis favors more cross-linking; twin of normative PRESUMPTION-377)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (foundational topology claim; twin of normative PRESUMPTION-377)
+  Search strategy: knowledge-graph / wiki connectivity topologies; whether hub-and-spoke vs dense cross-linking predicts retrieval and synthesis quality.
+
+[ASSUMPTION] ASSUMPTION-339: Excluding system + inbox pages, the 76.8% orphan rate is an artifact and the genuine reconnection surface is small
+  Status: [QUEUED] [cycle 0: 2026-06-23] [SEARCHED-15a: 2026-06-24] [SEARCHED-15b: 2026-06-24] [DISPOSITIONED-15c: 2026-06-24]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-364; namespace scoping is legitimate but this exclusion needs a pre-registered criterion before it retires the alarm; tension-twin of PRESUMPTION-378)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (the reframe that retires a standing alarm; tension-twin of PRESUMPTION-378/382)
+  Search strategy: principled criteria for which page classes should carry backlinks; robustness of orphan metrics to category-exclusion choices; motivated-reclassification risk.
+
+[ASSUMPTION] ASSUMPTION-340: Reconnecting the ~15 tradition hub pages yields more graph-health value than seeding a thousand leaves (hub leverage)
+  Status: [QUEUED] [cycle 0: 2026-06-23] [SEARCHED-15a: 2026-06-24] [SEARCHED-15b: 2026-06-24] [DISPOSITIONED-15c: 2026-06-24]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate) | Disposition: INCORPORATE (PREMISE-071; hub reconnection is high-leverage for reachability; betweenness/bridge caveat noted)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: graph-centrality / leverage of hub reconnection vs leaf seeding in network repair; betweenness/closeness effects of reconnecting hub nodes.
+
+[ASSUMPTION] ASSUMPTION-341: Wikilink resolution must be path-aware (not basename-only); the production resolver may be basename-only, skewing every weekly connectivity figure
+  Status: [QUEUED] [cycle 0: 2026-06-23] [SEARCHED-15a: 2026-06-24] [SEARCHED-15b: 2026-06-24] [DISPOSITIONED-15c: 2026-06-24]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Weak) | Disposition: INCORPORATE (PREMISE-072; path-aware resolution is the correct measurement rule; empirical skew pending recompute; couples OPEN-087)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: HIGH (gates trust in the entire connectivity_log.csv series; paired with OPEN-087)
+  Search strategy: empirical/operational — link-resolution correctness; this is primarily a code-inspection + recompute task, lit-adjacent on silent measurement error.
+
+[ASSUMPTION] ASSUMPTION-342: For an unattended run, the correct output is a report + ranked action list, not a ~1,000-page bulk mutation (GROUNDED — enacted)
+  Status: [QUEUED] [cycle 0: 2026-06-23] [SEARCHED-15a: 2026-06-24] [SEARCHED-15b: 2026-06-24] [DISPOSITIONED-15c: 2026-06-24]
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak) | Disposition: INCORPORATE (PREMISE-073; GROUNDED — unattended bulk mutation should be proposed not executed; scope to high-impact actions)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (GROUNDED in this run; lit-test the threshold)
+  Search strategy: safe-autonomy / human-in-the-loop thresholds for bulk automated edits; when autonomous agents should propose vs act.
+
+[ASSUMPTION] ASSUMPTION-343: Synthesis stubs should be created only where the link graph demands them (broken bridge links); fabricating un-asked-for bridges is speculative
+  Status: [QUEUED] [cycle 0: 2026-06-23] [SEARCHED-15a: 2026-06-24] [SEARCHED-15b: 2026-06-24] [DISPOSITIONED-15c: 2026-06-24]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-365; restraint against fabrication OK, but broken-link demand may under-generate; tension-twin of PRESUMPTION-384)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (tension-twin of PRESUMPTION-384 — the broken-link-as-demand circularity)
+  Search strategy: demand signals for knowledge synthesis; whether existing link structure can indicate unmet synthesis need; recall of broken-link signals for missing content.
+
+[ASSUMPTION] ASSUMPTION-344: A single traditions/_index.md linking all 15 hub wikis converts 15 orphans into hubs at once (GROUNDED — built + browser-verified)
+  Status: [QUEUED] [cycle 0: 2026-06-23] [SEARCHED-15a: 2026-06-24] [SEARCHED-15b: 2026-06-24] [DISPOSITIONED-15c: 2026-06-24]
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: INCORPORATE (PREMISE-074; GROUNDED de-orphaning fact; sociogram-dilution caveat routed to PRESUMPTION-381)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW (GROUNDED by implementation; downstream graph-health effect testable)
+  Search strategy: empirical — re-census connectivity after the index ships; effect of an index node on graph community structure (see PRESUMPTION-381).
+
+[ASSUMPTION] ASSUMPTION-345: The graph is already sufficient for meaningful thinker-agent synthesis today; mass leaf-seeding gain is low and noisy
+  Status: [QUEUED] [cycle 0: 2026-06-23] [SEARCHED-15a: 2026-06-24] [SEARCHED-15b: 2026-06-24] [DISPOSITIONED-15c: 2026-06-24]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-366; 'mass leaf-seeding is noisy' supported but 'already sufficient' is untested; gates seeding policy OPEN-088)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (the all-clear that gates seeding policy OPEN-088)
+  Search strategy: whether synthesis quality is gated by graph connectivity; value of leaf-level cross-linking for downstream retrieval/synthesis.
+
+[PRESUMPTION] PRESUMPTION-377: That inbound-backlink count is the right proxy for graph health at all (connectivity measured, synthesis quality never)
+  Status: [QUEUED] [cycle 0: 2026-06-23] [SEARCHED-15a: 2026-06-24] [SEARCHED-15b: 2026-06-24] [DISPOSITIONED-15c: 2026-06-24]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-137; LOW-MED; vanity-metric/Goodhart — connectivity count is not a synthesis-quality proxy; twin of 338; metric-direction family 367/375)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (twin of ASSUMPTION-338; metric-direction family 367/375)
+  Search strategy: do link-graph connectivity metrics predict knowledge-retrieval / synthesis quality in wikis and knowledge graphs.
+
+[PRESUMPTION] PRESUMPTION-378: That excluding 2,112 orphans as "should not carry backlinks" is principled, not a motivated reclassification that erases the alarm
+  Status: [QUEUED] [cycle 0: 2026-06-23] [SEARCHED-15a: 2026-06-24] [SEARCHED-15b: 2026-06-24] [DISPOSITIONED-15c: 2026-06-24]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-138; MED; post-hoc results-aware exclusion = motivated-reclassification risk; tension-twin of 339)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (tension-twin of ASSUMPTION-339)
+  Search strategy: pre-registration of metric inclusion rules; robustness of orphan/health conclusions to category-boundary choice; post-hoc reclassification bias.
+
+[PRESUMPTION] PRESUMPTION-379: That the audit's own corrected (path-aware) resolver is now bug-free — production resolver flagged, own resolver trusted with no cross-check
+  Status: [QUEUED] [cycle 0: 2026-06-23] [SEARCHED-15a: 2026-06-24] [SEARCHED-15b: 2026-06-24] [DISPOSITIONED-15c: 2026-06-24]
+  15a: NO-SUPPORT-FOUND (Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-139; MED; asymmetric self-trust of own resolver — verify-before-trust; silent-measurement cluster with 341/369/373/PREMISE-049)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (same silent-miscount class as OPEN-086 / PRESUMPTION-369/373)
+  Search strategy: resolver/parser unit-testing against labelled link forms; independent-implementation cross-validation; silent measurement-error detection.
+
+[PRESUMPTION] PRESUMPTION-380: That a 14-thinker keyword/relevance score (>0.4) is the right instrument for cross-tradition relevance, merely mis-tuned (page-as-unit / keyword-match unexamined)
+  Status: [QUEUED] [cycle 0: 2026-06-23] [SEARCHED-15a: 2026-06-24] [SEARCHED-15b: 2026-06-24] [DISPOSITIONED-15c: 2026-06-24]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Moderate-Strong) | Disposition: REVISE (REVISE-140; MED; keyword/page-unit is the wrong CLASS for conceptual cross-tradition relevance, not merely mis-tuned; gates OPEN-088)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (gates the seeding instrument behind OPEN-088)
+  Search strategy: validity of keyword/embedding relevance scores for conceptual cross-domain connection; precision/recall of automated interdisciplinary linking.
+
+[PRESUMPTION] PRESUMPTION-381: That more inbound hub connectivity is simply good — an all-to-one index node may dilute the sociogram's signal (connects-all = distinguishes-nothing)
+  Status: [QUEUED] [cycle 0: 2026-06-23] [SEARCHED-15a: 2026-06-24] [SEARCHED-15b: 2026-06-24] [DISPOSITIONED-15c: 2026-06-24]
+  15a: NO-SUPPORT-FOUND (Weak) | 15b: CHALLENGED (Moderate-Strong) | Disposition: REVISE (REVISE-141; LOW-MED; universal index node dilutes community/sociogram signal — 'connects-all = distinguishes-nothing'; twin of 340/344)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW-MEDIUM (twin of ASSUMPTION-340/344; metric-direction family)
+  Search strategy: effect of high-degree hub/index nodes on community detection and legibility of force-directed knowledge maps.
+
+[PRESUMPTION] PRESUMPTION-382: That a one-night autonomous census can authoritatively reframe a standing human-tracked alarm — write-caution applied, interpretive-caution not
+  Status: [QUEUED] [cycle 0: 2026-06-23] [SEARCHED-15a: 2026-06-24] [SEARCHED-15b: 2026-06-24] [DISPOSITIONED-15c: 2026-06-24]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Moderate-Strong) | Disposition: REVISE (REVISE-142; MED; write-caution applied but interpretive-caution not — autonomous reframe of a human-tracked alarm; couples ASSUMPTION-342)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (governance: autonomous-agent interpretive authority; tied to ASSUMPTION-342 caution rule)
+  Search strategy: human-in-the-loop governance for autonomous interpretation vs action; silent re-interpretation risk between attended sessions (framework/governance, not empirical).
+
+[PRESUMPTION] PRESUMPTION-383: That hub-and-spoke "healthy for its design" at 2,812 pages / 14 traditions stays healthy as the vault and tradition count grow (scale-blindness)
+  Status: [QUEUED] [cycle 0: 2026-06-23] [SEARCHED-15a: 2026-06-24] [SEARCHED-15b: 2026-06-24] [DISPOSITIONED-15c: 2026-06-24]
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-367; scale-blindness — present health extended to future scale without argument; re-census at growth checkpoints; twin of 338)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (scale-blindness family; twin of ASSUMPTION-338)
+  Search strategy: how wiki/knowledge-graph orphan dynamics and connectivity scale with size and category count; when hub-spoke topologies degrade.
+
+[PRESUMPTION] PRESUMPTION-384: That absence of broken bridge links = no synthesis bridges needed (the graph can only request bridges someone already stubbed — self-justifying)
+  Status: [QUEUED] [cycle 0: 2026-06-23] [SEARCHED-15a: 2026-06-24] [SEARCHED-15b: 2026-06-24] [DISPOSITIONED-15c: 2026-06-24]
+  15a: NO-SUPPORT-FOUND (Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-143; HIGH; KEYSTONE — broken-link demand is self-justifying and cannot certify completeness; enumerate latent bridges independently; tension-twin of 343)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: HIGH (load-bearing for whether synthesis coverage is actually complete; tension-twin of ASSUMPTION-343)
+  Search strategy: completeness of broken-link demand signals; independently enumerating warranted cross-tradition bridges (e.g. from the PRS connectome) vs those surfaced by broken links.
+
+## 2026-06-24 cohort — QUEUED (cycle 0: 2026-06-24)
+
+*Routed by 14a (assumptions) and 14b (presumptions) from the 2026-06-24 EOD pass. Framework-commitment-only items NOT queued: ASSUMPTION-346 (built-from-its-own-rationalities design value), ASSUMPTION-351 (Rule-5 model-judgment boundary; its testable reliability part is queued as PRESUMPTION-387), ASSUMPTION-358 (local-first quota-conservation rule). 25 items queued.*
+
+[ASSUMPTION] ASSUMPTION-347: Three columns wired to differ by reference frame (not random seed) yield robustness; identical agents at temperature measure only stochastic variance
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: INCORPORATE (PREMISE-075; frame-diversity>seed-diversity principle; decorrelation-gated via MONITOR-375)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: HIGH (central design commitment of Pathway 31; gates the pilot)
+  Search strategy: ensemble diversity vs accuracy; when redundancy/voting in multi-agent or model ensembles adds information vs samples one distribution.
+
+[ASSUMPTION] ASSUMPTION-348: Per-thinker/per-claim dissensus rate is a meaningful detector output (evidence about positions under rich information)
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: INCORPORATE (PREMISE-076; dissensus-rate-as-output; noise-floor-gated via MONITOR-373)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (the pathway's claimed payoff; ties to constitutional detector aim)
+  Search strategy: inter-annotator disagreement as signal of item difficulty/ambiguity; disagreement-as-data in annotation and peer review.
+
+[ASSUMPTION] ASSUMPTION-349: Triple-column + adjudicator ≈ 3–4× agent/token load per thinker track
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: NO-CHALLENGE-FOUND (Weak) | Disposition: MONITOR (MONITOR-368; measure 3-4x cost at pilot; LOW)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW (measure directly at pilot; literature secondary)
+  Search strategy: empirical — token/cost multipliers of ensemble/self-consistency multi-pass LLM pipelines vs single-pass.
+
+[ASSUMPTION] ASSUMPTION-350: A single-thinker (Hawkins) pilot can validate the mechanism — consensus must survive review better than single-agent, dissensus must land on genuinely contestable claims
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: INCORPORATE (PREMISE-077; pilot validates MECHANISM, necessary-condition only; generalization MONITOR-374)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (this is the pathway's own falsification test)
+  Search strategy: pilot/single-case generalization validity; does ensemble agreement predict downstream human-judged quality.
+
+[ASSUMPTION] ASSUMPTION-352: Self-testing is non-vicious iff the falsifier is specified independently of the tested outcomes (register, then look)
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: INCORPORATE (PREMISE-078; register-then-look; spec-exhaustiveness-gated; partial REVISE-111)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: HIGH (discharges REVISE-111; load-bearing for the whole falsifier)
+  Search strategy: pre-registration efficacy against researcher degrees of freedom (Simmons et al.); conditions for non-vicious self-audit.
+
+[ASSUMPTION] ASSUMPTION-353: Usefulness ≠ productivity; the test must be asymmetric — FAIL strong/clean, PASS only necessary-condition-met (provisional)
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: SUPPORTED (Strong) | 15b: NO-CHALLENGE-FOUND (Weak) | Disposition: INCORPORATE (PREMISE-079; usefulness!=productivity + asymmetric test; discharges REVISE-105)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: HIGH (firewall against productivity-ism/Goodhart; discharges REVISE-105)
+  Search strategy: Goodhart's/Campbell's law; severe-testing / asymmetric falsification; necessary-vs-sufficient condition framing in measurement validity.
+
+[ASSUMPTION] ASSUMPTION-354: A retrospective-only confirmatory run on the pre-registering-commit ledger is ungameable-by-construction (past can't be steered by a future rule)
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-369; 'ungameable' overclaims; pre-register analysis spec; coupled REVISE-115)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (coupled to REVISE-115; self-noted caveat retrospective≠clean)
+  Search strategy: retrospective vs prospective design; gaming of public metrics (Campbell/Goodhart); one-shot audit validity under historical-bias limits.
+
+[ASSUMPTION] ASSUMPTION-355: A convergence battery of operationally independent indicators (no post-hoc weighting) is more robust and harder to spoof than one indicator
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: INCORPORATE (PREMISE-080; convergence-battery; independence-gated; extends triangulation premise)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM
+  Search strategy: multitrait-multimethod / triangulation; composite vs single-indicator robustness; pre-specified decision rules vs garden-of-forking-paths.
+
+[ASSUMPTION] ASSUMPTION-356: H1 — a coil's formation is followed by elevated cross-A–B resource-sharing beyond a degree-matched random fiber (coils are association fibers, not decoration)
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-370; H1 live hypothesis; confound-matched nulls via MONITOR-377)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (the programme hypothesis; tested empirically by the falsifier itself)
+  Search strategy: do bridging/long-range edges predict subsequent cross-community knowledge flow; tie-formation predicting later interaction in co-citation/collaboration networks.
+
+[ASSUMPTION] ASSUMPTION-357: Real synthesis often coins NEW vocabulary, so the shared-id test risks a false negative; an honest fix needs a contemporaneous derived_from lineage field
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: SUPPORTED (Moderate) | 15b: NO-CHALLENGE-FOUND (Weak) | Disposition: INCORPORATE (PREMISE-081; shared-id false-negative => derived_from lineage; OPEN-091 miss-direction)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (gates OPEN-091; instrument-before-trust)
+  Search strategy: emergence of novel terminology in interdisciplinary synthesis; measuring conceptual blending/lineage; provenance fields for derived concepts.
+
+[ASSUMPTION] ASSUMPTION-359: Storing API keys in sessionStorage (not localStorage) is the right privacy posture — cleared on tab close, never written to disk
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: NO-SUPPORT-FOUND (Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-144; 'never on disk' false + against OWASP; MED; twin MONITOR-379)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW (twin of PRESUMPTION-395)
+  Search strategy: browser web-storage security guidance (OWASP); sessionStorage persistence across crash/session-restore; client-side secret handling.
+
+[ASSUMPTION] ASSUMPTION-360: Local/offline (Ollama) + own-key generous-free (Groq) providers with local-search fallback beat single shared-broker dependence for a public artifact
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Weak) | Disposition: INCORPORATE (PREMISE-082; multi-provider/local-first resilience; test-paths + key-handling-gated)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW (resilience/independence design value; weakly testable)
+  Search strategy: graceful degradation / offline-first design; resilience of multi-provider fallback vs single-dependency client apps.
+
+[PRESUMPTION] PRESUMPTION-385: That "one agent per thinker" is the right unit at which to add redundancy/voting (vs the edge, the triplet, the synthesis claim)
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: NO-SUPPORT-FOUND (Weak) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-371; redundancy-unit choice unjustified; ablate granularity; MED)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (structural framing inherited unquestioned)
+  Search strategy: where ensemble/redundancy placement adds value in pipelines; unit-of-analysis choice in multi-agent decomposition.
+
+[PRESUMPTION] PRESUMPTION-386: That 2-of-3 agreement among same-base-model columns tracks correctness, not shared/correlated bias (consensus-on-error laundered into confidence)
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: NO-SUPPORT-FOUND (Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-145; 2-of-3 same-base-model=correlated bias; HIGH KEYSTONE; conflicts MMA-independence premise)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: HIGH (risk: confident-but-wrong consensus worse than flagged-uncertain single agent)
+  Search strategy: correlated-error / shared-bias failure of majority voting and model ensembles; diversity as precondition for ensemble gains.
+
+[PRESUMPTION] PRESUMPTION-387: That the adjudicator model is itself competent/unbiased at judging semantic agreement (its error rate not made a measured input)
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-372; adjudicator error must be measured; HIGH; OPEN-090)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH (ties to OPEN-090; adjudicator is the whole contract)
+  Search strategy: LLM-as-judge reliability/bias; calibration of entailment/agreement classification vs human labels.
+
+[PRESUMPTION] PRESUMPTION-388: That preserved dissensus = genuine under-determination, not instrument failure (bad axes / erratic adjudicator)
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-373; dissensus vs instrument-failure; HIGH; OPEN-089/090; binds PREMISE-076)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH (twin concern to ASSUMPTION-348; gated by OPEN-089/090)
+  Search strategy: distinguishing genuine ambiguity from annotator/instrument noise in disagreement; test-retest stability of model disagreement.
+
+[PRESUMPTION] PRESUMPTION-389: That a Hawkins pilot generalizes — the pilot subject is the most favorable/self-confirming (his theory frames the columns)
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: NO-SUPPORT-FOUND (Weak) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-374; Hawkins selection bias; HIGH; pre-register contrasting thinker)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (selection bias in pilot choice)
+  Search strategy: external validity / single-case generalization; selection bias when the pilot case is the mechanism's own source.
+
+[PRESUMPTION] PRESUMPTION-390: That corpus-slice/analytic-axis variation produces genuinely different "reference frames" (Thousand-Brains transfer condition assumed, not shown)
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: NO-SUPPORT-FOUND (Weak) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-375; axes-decorrelate transfer condition; HIGH; gates PREMISE-075)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH (transferred-assumption; if axes don't decorrelate, it's the redundancy trap)
+  Search strategy: representational divergence under prompt/retrieval variation; whether input-conditioning decorrelates LLM outputs; validity of neuroscience→multi-agent metaphor transfer.
+
+[PRESUMPTION] PRESUMPTION-391: That a shared canonical resource-id match validly operationalizes "modules functioning as one" in the PASS direction (pass-direction construct validity unexamined)
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-376; shared-id PASS construct validity; OPEN-091; MED)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH (couples ASSUMPTION-357 miss-direction; gates OPEN-091)
+  Search strategy: construct validity of co-citation/shared-reference as conceptual-integration proxy; false-positive rate of shared-identifier overlap.
+
+[PRESUMPTION] PRESUMPTION-392: That a degree-preserving rewire is the right null (node degree the only confound; topic/time/author adjacency ignored)
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-377; degree-only null insufficient; add topic/time/author nulls; MED)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM
+  Search strategy: adequacy/limits of configuration-model nulls in temporal/knowledge networks; topic- and time-matched null models.
+
+[PRESUMPTION] PRESUMPTION-393: That coil formation-time t_c (altitude rule) is recoverable cleanly enough to anchor a difference-in-differences
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-378; t_c dating reliability for DiD; sensitivity analysis; MED)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (mis-dating silently biases the PRIMARY statistic)
+  Search strategy: event-dating reliability in DiD/event-study designs; sensitivity of DiD to event-time measurement error.
+
+[PRESUMPTION] PRESUMPTION-394: That a human audit by the programme owner provides genuine independence (author of record = "outside the authoring loop")
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: NO-SUPPORT-FOUND (Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-146; owner self-audit != independence; MED; partial REVISE-111)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (partial closure of REVISE-111; role-collapse in a one-person programme)
+  Search strategy: auditor-independence requirements; whether pre-registration substitutes for personnel independence; self-audit impairment.
+
+[PRESUMPTION] PRESUMPTION-395: That sessionStorage is meaningfully "never on disk" and tab-close clearing captures the public-artifact threat model
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: NO-SUPPORT-FOUND (Weak) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-379; sessionStorage threat-model; twin of REVISE-144; MED)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW-MEDIUM (twin of ASSUMPTION-359)
+  Search strategy: sessionStorage persistence across crash/session-restore; client-side API-key exposure surfaces on shared machines.
+
+[PRESUMPTION] PRESUMPTION-396: That a single ~40MB inline-script no-build HTML file stays maintainable/verifiable as features accumulate
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: NO-SUPPORT-FOUND (Weak) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-380; monolith maintainability; aligns payload-diet pin; MED)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW-MEDIUM (ties to payload-diet bright pin)
+  Search strategy: maintainability/verification limits of monolithic single-file front-ends; tooling/diff limits at large file sizes.
+
+[PRESUMPTION] PRESUMPTION-397: That a closed keyword list of navigational openers adequately separates navigational from informational intent for open-ended voice input
+  Status: [QUEUED] [cycle 0: 2026-06-24] [SEARCHED-15a: 2026-06-25] [SEARCHED-15b: 2026-06-25] [DISPOSITIONED-15c: 2026-06-25]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-381; keyword voice-intent misroute; LOW)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW (misroute is recoverable)
+  Search strategy: intent-classification accuracy of rule/keyword vs learned routers; coverage of hand-enumerated trigger phrase lists for spoken queries.

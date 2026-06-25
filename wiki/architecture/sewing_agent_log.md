@@ -341,3 +341,43 @@ cd "wiki/synthesis" && find . -name "*_bridge.md" -size 0 -delete
 - The 14 `traditions/*/prs_triplets.md` canonical pages are nearly all 0-backlink. The cheapest large connectivity win is a mechanical pass adding backlinks from each `traditions/<thinker>/wiki.md` hub to its own `prs_triplets.md` — but that is a *write to hub pages* and outside this run's append-only-to-orphans remit, so flagged rather than done.
 
 *Autonomous run. Append-only. No source content deleted or overwritten; only this run's own additions were made.*
+
+---
+
+## Sewing Agent Run — 2026-06-21 11:35 UTC
+
+**Connectivity snapshot (all .md, by basename wikilink):** orphans 2167 / sparse 560 / connected 18 / total 2745. CSV row appended to `architecture/metrics/connectivity_log.csv`.
+
+> Trend note: orphan count rose 1860 → 2167 since 2026-06-07, but **~1340 of the 1585 architecture/ orphans are `architecture/lit_search_results/`** (machine-generated search dumps) and ~94 are `architecture/daily_sync/`. The *meaningful* orphan graph is far smaller. Recommend excluding `lit_search_results/` and `daily_sync/` from the metric so the series tracks real connectivity — flagged, not changed (would break series comparability without Tom's sign-off).
+
+**Pages processed (10) — all in inbox/, all 0-backlink, append-only:**
+- 2026-06-21_rohr_way-of-the-early-church (0→0*) — calls: Wright, Levin, Friston
+- 2026-06-19_arkanihamed_surfaceology (0→0*) — calls: Wolfram, Hoffman, Carroll
+- 2026-06-19_carroll_quantum-cyclic-universe (0→0*) — calls: Arkani-Hamed, Friston
+- 2026-06-15_levin_top-down-membrane-potential-transcription (0→0*) — calls: Friston, Wolfram
+- 2026-06-15_levin_platonic-space-ingressing-minds (0→0*) — calls: Kastrup, Hoffman, Wolfram
+- 2026-06-15_friston_beautiful-loop-consciousness (0→0*) — calls: McGilchrist, Kastrup, Levin
+- 2026-06-12_carroll_mindscape-356-wulf-romanticism (0→0*) — calls: McGilchrist, Kastrup, Fredrickson
+- 2026-06-11_stump_image-of-god-mourning (0→0*) — calls: Fredrickson, McGilchrist
+- 2026-06-10_mcgilchrist_eisenstein-being-in-the-world (0→0*) — calls: Stump, Fredrickson
+- 2026-06-10_kastrup_illusion-of-self (0→0*) — calls: Hoffman, Stump
+
+(*Agentic calls are *requests* to named agents to add reciprocal backlinks; they do not raise inbound counts until those agents act. Each call cites a specific PRS-candidate label or passage — no boilerplate. The `traditions/*/wiki.md` hub nodes and `prs_triplets.md` pages, though also 0-backlink, were deliberately NOT processed: they are the thinker hubs/canonical pages themselves, not orphaned content.)
+
+**Agentic calls injected: 25**, addressed to — Wolfram ×3, McGilchrist ×3, Kastrup ×3, Hoffman ×3, Friston ×3, Fredrickson ×3, Stump ×2, Levin ×2, Wright ×1, Carroll ×1, Arkani-Hamed ×1.
+
+**Bridge notes written: 13 — to EXISTING files only (8 empty stubs filled, 5 appended):**
+- wright_rohr (append), arkanihamed_carroll (fill), arkanihamed_wolfram (fill), friston_levin (append), kastrup_levin (fill), hoffman_levin (append), fredrickson_stump (fill), hoffman_kastrup (fill), kastrup_stump (fill — flagged a *divergence* for Master), friston_mcgilchrist (fill), levin_wolfram (append), mcgilchrist_stump (append), fredrickson_mcgilchrist (fill).
+- **Deliberately NOT created (fail-loud):** `carroll_mcgilchrist_bridge.md` and `friston_hawkins_bridge.md` — both genuine >0.5 intersections this run (Carroll×McGilchrist on the Humboldt/Romantic split; Friston×Hawkins on recurrent cortical loops as substrate for epistemic depth). Per standing policy from prior runs, no NEW bridge files are created because **this mount denies `unlink`** and new files cannot later be cleaned up. These two intersections are flagged here for Tom to create manually if wanted.
+
+**Carried-over litter (UNCHANGED — still needs Tom):** **25 zero-byte `*_bridge.md` stubs** remain in `synthesis/` (was 33; this run filled 8 with real content). They cannot be deleted by the agent (mount denies unlink). To clear:
+```
+cd "wiki/synthesis" && find . -name "*_bridge.md" -size 0 -delete
+```
+
+**Worth Tom's attention:**
+1. Metric inflation by `lit_search_results/` + `daily_sync/` (see trend note) — recommend excluding from the connectivity metric.
+2. The 14 `traditions/*/prs_triplets.md` canonical pages are nearly all 0-backlink. Cheapest large connectivity win: a mechanical pass adding a backlink from each `traditions/<thinker>/wiki.md` hub to its own `prs_triplets.md`. That is a *write to hub pages*, outside this run's append-only-to-orphans remit — flagged, not done.
+3. Two missing-but-warranted bridge files (item above) await a manual create decision.
+
+*Autonomous scheduled run. Append-only; no source content deleted or overwritten. Verified: 10/10 pages have exactly one Agentic Calls section with frontmatter intact; all 13 bridge targets non-zero post-run.*

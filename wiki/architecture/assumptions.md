@@ -5980,3 +5980,517 @@ ASSUMPTION-332:
     Transform at each step:
       14a: Extracted from the "independent of Summa node counts … doesn't block" reasoning. Routed MED — the feature ships embedded in a 28MB shared artifact (`wiki_narration.html`) that also carries the unexplained Summa count, so "independence" is a claim about a coupled file. [stated]
     Current status: UNTESTED
+
+ASSUMPTION-333:
+  Date identified: 2026-06-22
+  Statement: Levin's "cognitive glue" (bioelectric signaling as the medium that binds cell collectives into higher-order agents) and Friston's "group-level Markov blanket" (the statistical boundary whose maintenance makes a collective of active-inference agents itself one agent) are "two framings of the same problem" — "what binds sub-agents into a super-agent" — and therefore form "a clean, mathematically explicit Levin↔Friston bridge (cognitive glue ≈ group-level Markov blanket)." The equivalence is stated outright in both proposal files and the day's cowork summary.
+  Context: 2026-06-22 session; surfacing and pairing of PROP-2026-06-22-001 (Levin, *Bioelectricity*) and PROP-2026-06-22-002 (Friston, *Entropy*, "As One and Many"); flagged as a paradigm-bridge candidate worth a dispatch to the master agent.
+  Type: epistemic / architectural
+  Related decisions: (none yet — pair is pending review, not adopted) ; bears on future cross-tradition bridge registration
+  Related items: PRESUMPTION-371 ([inferred] twin — that "same problem in two vocabularies" warrants a formal bridge, i.e. cross-vocabulary commensurability)
+  Testability: testable via literature (whether a bioelectric binding account and a variational group-Markov-blanket account are formally relatable, or only metaphorically analogous; existing FEP-readings of Levin's bioelectricity)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-333
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit "same problem in two vocabularies … clean Levin↔Friston bridge" claim stated in both proposals and the cowork summary. Its deeper, unstated form (cross-vocabulary "same problem" ⇒ a real homology to be bridged) is carried by 14b as PRESUMPTION-371. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-334:
+  Date identified: 2026-06-22
+  Statement: The sub-agent→super-agent binding question is "precisely the move C2A2 needs to model" — "the literal C2A2 individual↔collective transition" — and the two proposals are "the most directly on-mission items in the queue" because they formalize it. The design rationale treats the individual↔collective (member↔tradition/community) transition as C2A2's core target phenomenon, and a paper's value as proportional to how explicitly it formalizes that transition.
+  Context: 2026-06-22 session; the "why this matters" framing for both proposals and the cowork summary's ranking of the review queue.
+  Type: architectural / methodological
+  Related decisions: (none new) ; aligns with the accelerator-detector framing (PRS / tradition-as-agent lineage)
+  Related items: ASSUMPTION-333 (the bridge); PRESUMPTION-376 ([inferred] transfer-conditions for applying the formal results to a community of inquirers)
+  Testability: framework commitment (that the binding/super-agent transition is C2A2's right target) is partly a foundational choice; the sub-claim that these formalisms apply to traditions is testable via literature (collective active inference; multiscale agency applied to social/epistemic collectives)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-334
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit "precisely the move C2A2 needs … most directly on-mission" rationale. The unstated transfer-condition question (do the papers' conditions hold for a tradition/agent collective?) is carried by 14b as PRESUMPTION-376. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-335:
+  Date identified: 2026-06-22
+  Statement: The post-Apr-6 "token cliff" was an artifact of the 2026-04-07 schema migration (`data.token_usage` → `data.agent_payload.token_usage`) zeroing the token read path, NOT a real output collapse; reading BOTH payload paths recovers continuous, nonzero assistant-output tokens across the boundary that in fact grow month-over-month (2026-04 ~8.2M, 05 ~20.4M, 06 ~33.3M). Stated as the confirmed resolution of OPEN-083, reached by reaching the live `open-story.db` directly (985 sessions / 173,663 events).
+  Context: 2026-06-22 session; OPEN-083 resolution via the both-paths probe.
+  Type: empirical
+  Related decisions: DECISION-057 (metabolism view); resolves OPEN-083
+  Related items: clears PRESUMPTION-352 / MONITOR-349; ASSUMPTION-320 (prior capture-ended inference, now superseded); PRESUMPTION-373 ([inferred] that the both-paths fix is complete)
+  Testability: testable empirically (already partly tested via the live-db probe; further regression-checkable by re-reconciling token_usage payloads by run-type and date against an independent activity record)
+  Status: GROUNDED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-335
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the OPEN-083 resolution note. Marked GROUNDED rather than UNTESTED — this assumption was validated by C2A2's own direct empirical probe of the live database, not by literature. The residual completeness question (only two paths? future migrations?) is carried by 14b as PRESUMPTION-373. [stated]
+    Current status: GROUNDED
+
+ASSUMPTION-336:
+  Date identified: 2026-06-22
+  Statement: Because output tokens are continuous and growing across the Apr-6 boundary, "downstream yield comparisons do not inherit a masked drop" — i.e., the PRS-yield and metabolism comparisons that had been held under suspicion since 06-15 are now safe to trust. The absence of a real output collapse is taken to license trust in the derived yield metrics.
+  Context: 2026-06-22 session; the "reassuring" reading of the OPEN-083 resolution and its effect on the standing PRS-yield over-trust flag.
+  Type: methodological
+  Related decisions: bears on the standing PRS-yield over-trust HIGH flag and REVISE-121 (disambiguate-don't-reconcile)
+  Related items: ASSUMPTION-335 (the underlying telemetry fact); PRESUMPTION-375 ([inferred] that token growth is itself reassuring / more = better)
+  Testability: testable via literature (when correcting one telemetry artifact licenses trust in derived downstream metrics; independent failure modes in yield pipelines beyond the corrected read path)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-336
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the "do not inherit a masked drop … safe to trust" inference. Routed MED — it generalizes from one corrected read-path artifact to the trustworthiness of all downstream yield comparisons; the normative "growth = reassuring" sub-move is carried by 14b as PRESUMPTION-375. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-337:
+  Date identified: 2026-06-22
+  Statement: The proposal-review queue is "review-bound, not search-bound" — the binding constraint since the last decision archive (06-16) is human review throughput, not literature discovery. Stated explicitly: the queue "has been review-bound, not search-bound, since 06-16."
+  Context: 2026-06-22 session; cowork summary's diagnosis of the now-5-deep pending review queue.
+  Type: methodological
+  Related decisions: DECISION-054 (Round 2 still open); the standing proposal-review workflow
+  Related items: PRESUMPTION-372 ([inferred] that adding more searched proposals to a review-bound queue is nonetheless progress)
+  Testability: testable via literature (theory-of-constraints / bottleneck identification; whether throughput at a non-binding stage is value-adding or merely inventory accumulation)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-337
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit "review-bound, not search-bound, since 06-16" diagnosis. The tension between this stated diagnosis and the day's actual activity (adding two more proposals to the review-bound side) is carried by 14b as PRESUMPTION-372. [stated]
+    Current status: UNTESTED
+
+---
+
+## 2026-06-23 cohort (Sewing Agent bootstrap audit + tradition-index session)
+
+ASSUMPTION-338:
+  Date identified: 2026-06-23
+  Statement: The vault is "intentionally hub-and-spoke, not densely cross-linked" — low backlink density is a design choice, not a defect. Stated: the vault is "large (2,812 pages) and intentionally hub-and-spoke."
+  Context: 2026-06-23 Sewing Agent bootstrap audit, TL;DR + overall vault-health assessment.
+  Type: architectural
+  Related decisions: DECISION-061 (tradition index); the standing knowledge-graph design
+  Related items: PRESUMPTION-377 ([inferred] that inbound-backlink count is the right proxy for graph health); PRESUMPTION-383 ([inferred] that hub-and-spoke stays healthy at larger scale)
+  Testability: framework commitment (the design intent is a stated choice), but the claim "this topology is healthy" is testable via literature on knowledge-graph / wiki connectivity topologies
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-338
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the bootstrap report's explicit "intentionally hub-and-spoke" framing. The normative half ("this is healthy") is carried by 14b as PRESUMPTION-377. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-339:
+  Date identified: 2026-06-23
+  Statement: architecture/ system pages (1,676) and inbox/ residue (436) "should not carry backlinks" / "were never meant to carry backlinks"; once they are excluded, the 76.8% orphan rate is "an artifact" and the genuine reconnection surface is small and tractable.
+  Context: 2026-06-23 bootstrap audit, Phase 2 classification and overall health assessment. The "77% orphan" alarm is reframed as benign.
+  Type: methodological / architectural
+  Related decisions: DECISION-061; the connectivity_log.csv metric definition
+  Related items: PRESUMPTION-378 ([inferred] that the exclude-by-category move is principled rather than a motivated reclassification); PRESUMPTION-382 ([inferred] that an autonomous one-night census may authoritatively reframe a standing human-tracked alarm)
+  Testability: testable empirically — recount orphan rate with a documented, pre-registered inclusion rule for which folders are expected to carry backlinks; check whether the category split is stable under alternative principled definitions
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-339
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit "never meant to carry backlinks … the 77% orphan figure is an artifact" claim. The question of whether the exclusion is principled or convenient is carried by 14b as PRESUMPTION-378. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-340:
+  Date identified: 2026-06-23
+  Statement: Reconnecting the ~15 orphaned tradition hub pages "would do more for graph health than seeding a thousand leaves" — leverage is concentrated in the hubs, not the leaf pages.
+  Context: 2026-06-23 bootstrap audit, "most important single finding" and recommended-actions list.
+  Type: methodological
+  Related decisions: DECISION-061 (the tradition index built directly on this claim)
+  Related items: ASSUMPTION-344 (the index converts 15 orphans into hubs at once); PRESUMPTION-381 ([inferred] that more inbound hub connectivity is unambiguously good)
+  Testability: testable via literature (graph-centrality / leverage of hub reconnection vs leaf seeding in network repair) and empirically (measure graph-health deltas of the index fix vs a leaf-seeding sample)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-340
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the "reconnecting ~15 hub pages would do more for graph health than seeding a thousand leaves" leverage claim. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-341:
+  Date identified: 2026-06-23
+  Statement: Wikilink resolution must match path-qualified `[[a/b/c]]` links, not basename/title only; 893 of 1,740 links are path-qualified, and basename-only resolution failed every one (reported 960 "unresolved" → 67 after the fix; connected hubs 21 → 44). Stated worry: "if the production Sewing Agent resolves links the same (basename-only) way, it may be systematically under-counting hub connectivity" across every prior connectivity_log.csv run.
+  Context: 2026-06-23 bootstrap audit, "A note on method (and a resolver bug I caught)."
+  Type: empirical / methodological
+  Related decisions: the weekly connectivity-census workflow
+  Related items: OPEN-087 (does the production resolver handle path-qualified links?); PRESUMPTION-379 ([inferred] that the audit's own corrected resolver is now itself bug-free)
+  Testability: testable empirically — inspect the production Sewing Agent's resolver; recompute the historical connectivity_log.csv series under path-aware resolution and compare
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-341
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit resolver-bug finding and the stated worry about the production resolver. Promoted the production-resolver question to OPEN-087. The "my own resolver is now correct" residual is carried by 14b as PRESUMPTION-379. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-342:
+  Date identified: 2026-06-23
+  Statement: For an unattended autonomous run, the correct output is a trustworthy baseline plus a short, ranked, human-reviewable action list — NOT a ~1,000-page bulk agentic-call mutation. Stated: "a one-shot, unattended mutation of ~1,000 live vault pages … conflicts with the project's standing caution/surgical-change rules. The correct autonomous output here is a report, not a thousand edits."
+  Context: 2026-06-23 bootstrap audit, Phase 3 refusal rationale.
+  Type: methodological / normative
+  Related decisions: the project caution / surgical-change rules; OPEN-088 (explicit seeding policy)
+  Related items: PRESUMPTION-380 ([inferred] that the 14-thinker relevance score is the right instrument, only mis-tuned); PRESUMPTION-382 (autonomous reframing authority)
+  Testability: framework commitment (an operationalization of the project's stated caution rule), partially testable via literature on safe autonomy / human-in-the-loop thresholds for bulk automated edits
+  Status: GROUNDED (enacted — the run produced a report + action list and modified no vault content pages, consistent with the stated rule)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-342
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit Phase-3 refusal rationale; marked GROUNDED because the agent enacted the rule in the same run (no content pages mutated). The seeding-policy question it defers is logged as OPEN-088. [stated]
+    Current status: GROUNDED
+
+ASSUMPTION-343:
+  Date identified: 2026-06-23
+  Statement: Synthesis/bridge stubs should be created only where the link graph demands them (i.e., where `[[*_bridge]]` links are broken); fabricating bridges the graph is not asking for "would be speculative content the link graph isn't asking for." After the resolver fix, essentially every bridge link resolved, so the audit created zero synthesis stubs.
+  Context: 2026-06-23 bootstrap audit, Phase 4 synthesis-page inventory.
+  Type: methodological / epistemic
+  Related decisions: the synthesis/bridge-page workflow
+  Related items: PRESUMPTION-384 ([inferred] that absence of a broken bridge link is evidence the bridge is not needed — the graph as self-justifying)
+  Testability: testable via literature (demand signals for knowledge synthesis; whether existing link structure can indicate unmet synthesis need) and empirically (audit whether conceptually-warranted bridges exist that no broken link would ever surface)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-343
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit "no synthesis stubs — fabricating them would be speculative content the link graph isn't asking for" rationale. The inference that the graph's silence equals absence of need is carried by 14b as PRESUMPTION-384. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-344:
+  Date identified: 2026-06-23
+  Statement: A single `traditions/_index.md` page linking all 15 tradition `wiki.md` hubs "would convert 15 orphans into hubs at once." Predicted and then implemented; the regenerated sociogram was browser-verified (index node resolves to all 15 hubs; 2,814 nodes / 71,975 edges; no console errors; no crash-limit warnings).
+  Context: 2026-06-23 bootstrap audit recommendation #1, enacted in the 2026-06-23 tradition-index interactive session.
+  Type: architectural
+  Related decisions: DECISION-061 (this is the decision)
+  Related items: ASSUMPTION-340 (hub leverage); PRESUMPTION-381 (more hub connectivity = good)
+  Testability: GROUNDED by C2A2's own implementation + live verification; the broader "this materially improves graph health" remains testable via the next connectivity census
+  Status: GROUNDED (implemented; sociogram regenerated and browser-verified; content commit made, git push pending on Tom's Mac)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-344
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated "convert 15 orphans into hubs at once" prediction and the tradition-index session that implemented and browser-verified it. Marked GROUNDED on the local-build evidence; push state quoted from session (repo not introspectable from this mount). [stated]
+    Current status: GROUNDED
+
+ASSUMPTION-345:
+  Date identified: 2026-06-23
+  Statement: The knowledge graph is already "sufficient to support meaningful thinker-agent synthesis today"; the marginal gain from mass leaf-seeding "would be low and noisy," while reconnecting the 15 hubs and clearing inbox residue "would be high."
+  Context: 2026-06-23 bootstrap audit, overall vault-health assessment.
+  Type: empirical
+  Related decisions: OPEN-088 (seeding policy); DECISION-061
+  Related items: ASSUMPTION-340 (hub leverage); PRESUMPTION-380 (relevance-score instrument); PRESUMPTION-377 (backlink-as-health proxy)
+  Testability: testable empirically — measure whether thinker-agent synthesis quality is in fact gated by graph connectivity, and whether a bounded leaf-seeding pass yields measurable synthesis improvement
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-345
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the "sufficient to support meaningful thinker-agent synthesis today … marginal gain from mass leaf-seeding would be low and noisy" assessment. [stated]
+    Current status: UNTESTED
+
+---
+
+## 2026-06-24 EOD cohort (Agents 14a) — ASSUMPTION-346..360
+
+*Source sessions (autonomous EOD run, Tom not present): three 2026-06-24 Cowork threads — (1) Cortical Column Architecture / DEVPATH-031 (→ `architecture/31_cortical_column_architecture.md`, `architecture/pathways.md` Pathway 31); (2) Coil/Triplet Falsifier foundational review (→ `architecture/coil_falsifier_preregistration.md` v1.1); (3) Wiki-narration Voice & Navigation build (→ `wiki-narration-voice-nav-session-log.md`, `wiki_narration.html`). The committed architecture artifacts are the day's distilled session record and were read as the transcript source (same standard as DECISION-061's 2026-06-23 extraction). Quotes are from those artifacts.*
+
+ASSUMPTION-346:
+  Date identified: 2026-06-24
+  Statement: "The accelerator is meant to be built out of the rationalities it studies." Borrowing a thinker from C2A2's own corpus to shape C2A2's architecture is an intended methodology, not incidental — Pathway 29 took Friston's free-energy principle as a metabolism controller; Pathway 31 takes Hawkins' cortical columns as a robustness-and-voting mechanism.
+  Context: Pathway 31 (Cortical Column Architecture), framing section.
+  Type: methodological
+  Related decisions: DECISION-062; Pathway 29; Pathway 31
+  Related items: ASSUMPTION-347 (column independence); the self-referential-insight watch (Agent 14a §"self-referential insights")
+  Testability: framework commitment (not testable) — a design value about how the system should be constructed, not an empirical claim
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-346
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim from Pathway 31's framing ("the accelerator is meant to be built out of the rationalities it studies"). [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-347:
+  Date identified: 2026-06-24
+  Statement: Three columns wired to differ *substantively* (by reference frame — corpus slice and/or analytic axis), not just by random seed, yield genuine robustness and information; "three identical agents run at nonzero temperature are not three columns; they are one column sampled three times," whose 2-of-3 agreement "measures stochastic variance, not robustness." At least two independence axes must vary per column.
+  Context: Pathway 31, "What makes the three columns independent (the central decision)" and "The Hawkins mapping … the trap — redundancy alone."
+  Type: architectural
+  Related decisions: DECISION-062
+  Related items: ASSUMPTION-350 (success criterion); OPEN-089 (which two axes); PRESUMPTION-386 (consensus-on-shared-bias), PRESUMPTION-390 (reference-frame transfer condition)
+  Testability: testable empirically — compare dissensus/robustness of substantively-wired columns vs seed-only-varied columns on the same thinker
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-347
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the "central design commitment" and "the trap — redundancy alone" passages. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-348:
+  Date identified: 2026-06-24
+  Statement: Per-thinker and per-claim dissensus rate is a first-class measurable detector output — "exactly the kind of evidence-about-how-positions-behave-under-rich-information that the accelerator/detector aim is after," and "the most interesting payoff of the pathway, beyond mere robustness."
+  Context: Pathway 31, "Consensus, dissensus, and the adjudicator" — dissensus as first-class output.
+  Type: epistemic
+  Related decisions: DECISION-062; constitutional detector aim (measurement_framework.md)
+  Related items: Pathway 07 (Unsaid-edges); PRESUMPTION-388 (dissensus-as-signal vs instrument-noise)
+  Testability: testable empirically — does measured dissensus localize on claims independent reviewers also judge contestable?
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-348
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "per-thinker and per-claim dissensus rate becomes a measurable detector output." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-349:
+  Date identified: 2026-06-24
+  Statement: Triple columns plus an adjudicator is "roughly 3–4× the agent and token load per thinker track," which across 15 traditions "collides head-on with Pathway 29 (agentic metabolism) and the project's standing token budgets."
+  Context: Pathway 31, "Cost, and why this starts as a one-track pilot."
+  Type: empirical
+  Related decisions: DECISION-062; Pathway 29 (metabolism controller)
+  Related items: ASSUMPTION-350 (pilot discipline); the token-budget rules (project Rule 6)
+  Testability: testable empirically — measure actual token/agent multiplier of a forked three-column track vs the incumbent single-agent track
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-349
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the "3–4× the agent and token load" cost estimate. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-350:
+  Date identified: 2026-06-24
+  Statement: A single-thinker pilot (Hawkins) can validate the consensus mechanism before scaling. The pathway "is justified only if the extra cost buys epistemic quality": triple-column consensus assessments "should survive Tom's review (or an independent check) at a measurably higher rate than single-agent assessments on the same thinker, and the reported dissensus should land on claims a human agrees are genuinely contestable." If not, "the 3–4× cost is not warranted and the pathway should be parked, not scaled."
+  Context: Pathway 31, "Success criterion (Rule 4)" and "Cost … one-track pilot."
+  Type: empirical
+  Related decisions: DECISION-062
+  Related items: ASSUMPTION-349 (cost); PRESUMPTION-389 (Hawkins as maximally self-confirming pilot subject); swarm-contract falsifiability
+  Testability: testable empirically — this assumption IS the pre-stated falsification test for the pathway
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-350
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicit Rule-4 success criterion. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-351:
+  Date identified: 2026-06-24
+  Statement: Classifying semantic agreement across three assessments "is a genuine judgment call, so using the model here is correct (Rule 5 — model for classification, not for routing). It is the one place model judgment is licensed; the column fan-out, scheduling, and tallying stay deterministic."
+  Context: Pathway 31, "Adjudicator as quality gate."
+  Type: methodological
+  Related decisions: DECISION-062; project Rule 5 (model only for judgment calls)
+  Related items: OPEN-090 (operational definition of agreement); PRESUMPTION-387 (adjudicator competence/bias)
+  Testability: framework commitment (not testable) — an application of the project's own Rule 5 boundary; the adjudicator's *reliability* is the testable part (→ OPEN-090, PRESUMPTION-387)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-351
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "using the model here is correct (Rule 5) … the one place model judgment is licensed." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-352:
+  Date identified: 2026-06-24
+  Statement: Self-testing (a dyad applying its own falsifier to its own ledger) is non-vicious "iff the falsifier is specified independently of the tested outcomes. That independence is real only if specification precedes inspection. Register, then look." (Chang's escape from Simmons et al. researcher-degrees-of-freedom / auditor self-review impairment.)
+  Context: Coil falsifier pre-registration §0 (pre-registration attestation) and §0 rationale.
+  Type: epistemic
+  Related decisions: DECISION-063; REVISE-111 (HIGH — reflexive falsification non-circular)
+  Related items: ASSUMPTION-354 (retrospective ungameability); PRESUMPTION-394 (auditor-independence under role-collapse)
+  Testability: testable via literature — efficacy of pre-registration against researcher degrees of freedom; conditions under which self-audit is/ isn't vicious
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-352
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the load-bearing §0 clause "Register, then look." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-353:
+  Date identified: 2026-06-24
+  Statement: "Usefulness is not productivity." The falsifier must be asymmetric: "A FAIL is strong and clean" (a coil predicting no downstream activity above a degree-matched random fiber is decoration); "A PASS is weak by design" — a necessary-condition met, "provisional," never "useful, confirmed." Locking in "downstream yield = usefulness" as a two-sided verdict would warp the architecture toward productivity-ism (the Goodhart hazard).
+  Context: Coil falsifier §0b (the asymmetry — what a pass and a fail are each allowed to mean).
+  Type: methodological
+  Related decisions: DECISION-063; REVISE-105 (falsifier ≠ yield metric), REVISE-115 (yield-count Goodhart), REVISE-124 (built = start of validation)
+  Related items: ASSUMPTION-355 (convergence battery); PRESUMPTION-391 (shared-id construct validity); §6 jingle guard
+  Testability: testable via literature — construct validity / Goodhart's law / asymmetric (severe) testing in measurement design
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-353
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from §0b "Usefulness is not productivity … A FAIL is strong and clean. A PASS is weak by design." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-354:
+  Date identified: 2026-06-24
+  Statement: A retrospective-only confirmatory run on "the ledger that already exists as of the registering commit" is "ungameable by construction" because "past behavior cannot be steered by a future rule." Self-noted caveat (stated): "retrospective ≠ clean … retrospect only buys un-gameability by the future, not freedom from the past's idiosyncrasies," so the confirmatory set is used once and treated as "one audit under known limitations, not a timeless verdict."
+  Context: Coil falsifier §3 (ungameable-by-construction) + the §3 foundational caveat.
+  Type: methodological
+  Related decisions: DECISION-063; REVISE-115
+  Related items: ASSUMPTION-352 (register-then-look); PRESUMPTION-392 (degree-only null)
+  Testability: testable via literature — Campbell's Law / Goodhart; retrospective vs prospective design; one-shot audit validity
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-354
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from §3 defense #1 and its stated foundational caveat. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-355:
+  Date identified: 2026-06-24
+  Statement: A construct judged on "several operationally independent indicators, not one" is both less single-indicator-fragile and harder to game, "because spoofing three different things is far harder than gaming one"; indicators combine by a pre-fixed decision lattice with "no post-hoc weighting."
+  Context: Coil falsifier §2 (convergence battery, safeguard 2) and §4 (decision lattice).
+  Type: methodological
+  Related decisions: DECISION-063
+  Related items: ASSUMPTION-353 (asymmetry); PRESUMPTION-391 (per-indicator validity)
+  Testability: testable via literature — multitrait convergence / triangulation; robustness of composite vs single-indicator measures; pre-registered decision rules
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-355
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from §2 "operationally independent indicators … spoofing three different things is far harder than gaming one." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-356:
+  Date identified: 2026-06-24
+  Statement: The programme claim under test (H1): "A coil between traditions A and B marks a genuine bridge — its formation is followed by elevated cross-A–B resource-sharing in its neighborhood, beyond what a degree-matched random fiber would produce." Null H0: "Coil placement carries no predictive information about subsequent cross-A–B activity beyond node degree."
+  Context: Coil falsifier §1 (the claim under test).
+  Type: empirical
+  Related decisions: DECISION-063
+  Related items: ASSUMPTION-357 (synthesis-by-novelty false-negative); narrative_prs_connectome.md ("coils are association fibers, not decoration")
+  Testability: testable empirically — this assumption is the pre-registered hypothesis the falsifier runs on the existing ledger
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-356
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from §1 H1/H0 statement. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-357:
+  Date identified: 2026-06-24
+  Statement: "The deepest worry about [the PRIMARY indicator] is a false negative on real synthesis": genuine fusion of A and B "often coins new vocabulary rather than reusing the parents' resource-ids," so the shared-id test "would score a true bridge as zero." The honest fix is a synthesis-by-novelty indicator — new resource-ids that "descend from resources of both traditions" — but this requires a `derived_from:` lineage field "the schema does not currently record," populated at articulation time. Until then the indicator is exploratory only and "never enters the lattice."
+  Context: Coil falsifier §2.4 (synthesis-by-novelty — instrument not built).
+  Type: empirical
+  Related decisions: DECISION-063; OPEN-091 (derived_from schema field)
+  Related items: ASSUMPTION-356 (H1); PRESUMPTION-391 (shared-id validity); "build the instrument before trusting the reading"
+  Testability: testable empirically once the lineage instrument exists; the false-negative magnitude is itself measurable
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-357
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from §2.4's stated false-negative worry and its schema prerequisite. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-358:
+  Date identified: 2026-06-24
+  Statement: Voice queries must respect the "Ask AI" checkbox so that navigational and local-search queries consume no API quota — "with Ask AI off, voice queries run local text/graph search only — no API quota consumed." Locally-resolvable navigation (known group/thinker names) resolves "instantly, offline" before any API call is considered.
+  Context: Voice & Navigation session §2 (voice input routing) and §3 (navigation command engine).
+  Type: architectural
+  Related decisions: DECISION-064
+  Related items: ASSUMPTION-360 (local-first AI providers); Pathway 00 broker free-tier gating
+  Testability: framework commitment (not testable) — a local-first / quota-conservation design rule; UX efficacy is separately observable
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-358
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "Voice respects the Ask AI checkbox … no API quota consumed." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-359:
+  Date identified: 2026-06-24
+  Statement: Storing third-party API keys (OpenAI, Groq) in `sessionStorage` rather than `localStorage` is the right privacy posture — keys are "cleared when the tab closes, never written to disk by the browser"; only TTS provider/voice preference goes in `localStorage`.
+  Context: Voice & Navigation session §1 (key storage) and §6 (key security).
+  Type: methodological
+  Related decisions: DECISION-064
+  Related items: PRESUMPTION-395 (sessionStorage "never on disk" / threat model)
+  Testability: testable via literature — browser credential-storage security guidance (sessionStorage vs localStorage vs in-memory); persistence under crash-restore
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-359
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "API keys … stored in sessionStorage only … never written to disk." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-360:
+  Date identified: 2026-06-24
+  Statement: Offering local/offline (Ollama — "unlimited, fully local, fully offline") and own-key generous-free (Groq — "~14,400 req/day free") AI-query providers, with automatic fallback to local text search on `free-limit`/`rate-limited`, is preferable to a single shared-broker dependency for a publicly-shared demo artifact.
+  Context: Voice & Navigation session §5 (free-limit handling) and §6 (Groq / Ollama providers).
+  Type: architectural
+  Related decisions: DECISION-064
+  Related items: ASSUMPTION-358 (quota conservation); Device-freedom bright pin (public artifact, any visitor)
+  Testability: framework commitment / weakly testable — a resilience/independence design value; provider availability and fallback correctness are observable
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-360
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from §5/§6 provider design and graceful-degradation rationale. [stated]
+    Current status: UNTESTED

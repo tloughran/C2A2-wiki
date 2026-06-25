@@ -30,3 +30,10 @@ If the transcendentals are real-in-being (Stump) but disclosed-only-through-righ
 - Cross-link from `traditions/mcgilchrist/wiki.md` and `traditions/stump/wiki.md` under *paradigm-bridge candidates*; flag for the Master agent as a **value-realism cluster node**.
 - The attentional-access question connects to McGilchrist↔Kastrup (value belonging to mind-first reality) and to Fredrickson (the Beautiful/Good as objects of the broadened positive attentional state) — consider a value-realism cluster note spanning all four if the theme recurs.
 - The "transcendentals as shared goods / common ground" claim is directly relevant to the C2A2 inter-tradition-dialogue methodology, not only to these two traditions.
+
+## Sewing note — 2026-06-21
+*Added by Sewing Agent*
+
+**Intersection page:** [[2026-06-10_mcgilchrist_eisenstein-being-in-the-world]]
+**Synthesis claim:** McGilchrist's "truth as 'treu'" — epistemic truth as fidelity to oneself and loyalty to others — converges with Stump's second-person account of knowledge: both make some knowing irreducibly relational rather than propositional. Value-as-constitutive (McGilchrist) may need exactly the second-personal epistemology Stump supplies.
+**Open question the wiki cannot yet answer:** Can a second-person epistemology ground McGilchrist's *intrinsic* (non-instrumental) values without collapsing into relativism — does fidelity-to-a-relationship pick out objective value, or only relationship-relative value?

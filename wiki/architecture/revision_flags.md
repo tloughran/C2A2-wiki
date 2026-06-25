@@ -4952,3 +4952,162 @@ The standing AWAITING-REVIEW backlog (REVISE-047..064 = 18) + 7 new REVISEs this
 **PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
 
 **Total new REVISEs this run (2026-06-19):** 4 (REVISE-125..128). **AWAITING-REVIEW backlog: was 78 -> now 82.** Three are the stronger inferred twins of stated assumptions monitored this run (126↔ASSUMPTION-331/MONITOR-355; 127↔ASSUMPTION-329/MONITOR-354; 128↔ASSUMPTION-332/MONITOR-356) — the surfaced-not-averaged pattern. NEW SYSTEMIC-RISK cluster (4) flagged this run: guard-and-verify-by-CONVENTION rather than by code/assertion — REVISE-127 (doc-only guard, keystone), REVISE-126 (render-glance as content verify), and the scope guards on PREMISE-067 (convention-only "forbidden" path) and MONITOR-354/355 all share the vulnerability that safety/correctness rests on humans (or agents) behaving perfectly rather than on enforced controls. Two cheap engineering instruments close most of the cluster: (a) one code-guard/disarm pass on apply_summaries.py + an entry-point Summa-less guard (closes REVISE-127, hardens PREMISE-067, unblocks MONITOR-354); (b) a content-assertion add-on to regen — expected counts + each `**Summary**` present/non-empty (closes REVISE-126, unblocks MONITOR-355, and surfaces the 256-vs-379 definitions for REVISE-128/MONITOR-356). REVISE-125 (bio adequacy/voice) is independent and policy-level (label bios non-authoritative).
+
+### REVISE-129 — PRESUMPTION-369 (drift detector presumes its own reliable scheduled execution)
+**Statement:** [inferred] The EOD self-awareness pipeline presumes its own reliable scheduled execution — no internal liveness check on the mechanism whose job is to detect drift.
+**15a:** NO-SUPPORT-FOUND (None-Weak; only YAGNI/proportionality offers adjacent shelter, and it collapses for a job that IS the drift detector) | **15b:** CHALLENGED (Strong; dead man's switch / heartbeat monitoring — assume failure unless the job actively pings success; a non-running job emits no error; quis-custodiet regress — the auditor cannot guarantee its own liveness from inside. healthchecks.io / Dead Man's Snitch / OneUptime)
+**What is at risk:** Unbounded blindness to the system's own degradation: every downstream registry (assumptions/presumptions/lit-search/dispositions) silently goes stale while appearing current. Priority HIGH. Already FALSIFIED IN PRODUCTION — the pipeline stalled silently for two nights (06-19→06-20, OPEN-086); the drift detector failed to detect its own drift.
+**Recommended action:** Urgency HIGH. Add an EXTERNAL liveness control: a dead-man's-switch / heartbeat that alerts on a MISSED expected run (not only on error); write a last-run/freshness timestamp downstream consumers and a separate watcher check; emit a "ran-but-produced-nothing" assertion so a no-op is distinguishable from a no-run; consider a second, independently-scheduled watcher (monitor-the-monitor). Keystone of SYSTEMIC-RISK cluster (5): over-trust of unattended automation / failure to fail loud (with MONITOR-296 autonomous-sync silent-degradation; PREMISE-049 verify-before-trust). COUPLED to REVISE-130 — one daily system-day liveness record discharges both.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-130 — PRESUMPTION-370 (agent-only "null day" presumed to carry no extraction-worthy content)
+**Statement:** [inferred] An agent-only day with no attended session is presumed to carry no extraction-worthy epistemic content ("null day" = nothing to record).
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate; selective logging / alert fatigue / signal-to-noise genuinely caution against recording everything — but support only the WEAK form, not "no attended session => no content") | **15b:** CHALLENGED (Moderate-Strong; survivorship/selection bias — Abraham Wald — conditioning the record on attendance filters out exactly the unattended cases where unsupervised drift accrues; self-demonstrated: the 06-19→06-20 null days held the window's decisive fact, the silent stall)
+**What is at risk:** The system's self-model biases toward attended periods; unattended drift and silent failures are under-represented precisely where they matter; absence-of-record gets misread as absence-of-event, compounding REVISE-129. Priority LOW (14b flagged speculative-confidence).
+**Recommended action:** Urgency LOW. Record a minimal heartbeat/system-day STATUS entry every day, attended or not, that distinguishes "no-op / nothing changed" from "did-not-run" — treat "nothing notable happened" as a positive recorded fact, not an inference from silence. Use null-day records as the baseline against which drift is measured. NOT "record everything" (the valid 15a counter stands). COUPLED to REVISE-129: the same daily liveness record closes both the mechanism gap (369) and the epistemic gap (370). Member of SYSTEMIC-RISK cluster (5).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Total new REVISEs this run (2026-06-21):** 2 (REVISE-129..130). **AWAITING-REVIEW backlog: was 82 -> now 84.** NEW SYSTEMIC-RISK cluster (5) flagged this run: over-trust of unattended automation / failure to fail loud — REVISE-129 (no liveness check on the auditor, keystone, FALSIFIED IN PRODUCTION via OPEN-086) and REVISE-130 (unattended periods presumed contentless) form a closed blind spot, coupled to the prior silent-degradation family (MONITOR-296, PREMISE-049). One cheap instrument closes most of the cluster: a mandatory daily system-day liveness record (no-op vs did-not-run) plus an external dead-man's-switch alert on missed runs.
+
+### REVISE-131 — ASSUMPTION-336 (one corrected read path licenses trust in ALL downstream yields)
+**Statement:** Correcting the token-read artifact licenses trust in all downstream yield comparisons ("do not inherit a masked drop")
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**What is at risk:** Historical and ongoing yield comparisons that silently assume whole-pipeline integrity after a single-path fix.
+**Recommended action:** Urgency Medium. Restate as a scoped, per-path rule: "trust only reconciled read paths." Add a both-paths/canary reconciliation per yield-relevant field crossing the 04-07 migration. Tom to confirm no other yield field was affected.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-132 — PRESUMPTION-371 (shared vocabulary warrants a formal bridge — commensurability smuggle)
+**Statement:** [inferred] That "same problem in two vocabularies" warrants a formal bridge — cross-vocabulary commensurability of the cognitive-glue and group-Markov-blanket accounts
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**What is at risk:** ASSUMPTION-333 and the Levin<->Friston bridge in PRS/connectome structure, if built on unverified commensurability.
+**Recommended action:** Urgency Medium. Before formalizing the bridge, produce the structure-mapping table (corresponding higher-order relations, not shared vocabulary). Treat the bridge as "candidate homology" until it passes. Apply the 357/368 construct-validity guard.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-133 — PRESUMPTION-372 (intake-as-progress into a review-bound queue)
+**Statement:** [inferred] That adding two well-chosen proposals is progress, even into a queue the same session calls review-bound and five deep with nothing decided since 06-16 (intake-as-progress)
+**15a:** NO-SUPPORT-FOUND (None-Weak) | **15b:** CHALLENGED (Strong)
+**What is at risk:** Intake cadence / sense of progress in the proposal and self-awareness pipelines while review is the constraint.
+**Recommended action:** Urgency Low-Medium. Set an explicit WIP limit on the proposal-review queue; subordinate intake to review throughput; track progress as decisions decided, not proposals added. Exempt only rare perishable insights, with a decay check.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-134 — PRESUMPTION-373 (both-paths fix is durable — no recurrence guard)
+**Statement:** [inferred] That the both-paths fix fully and durably resolves the token-read problem — exactly two payload schemas, no future migration silently re-zeroing reads, no recurrence guard installed
+**15a:** NO-SUPPORT-FOUND (None-Weak) | **15b:** CHALLENGED (Strong)
+**What is at risk:** Token/yield telemetry integrity across any future schema migration; the 335 correction's longevity.
+**Recommended action:** Urgency Medium. Install a canary/contract assertion on token reads (fail loud on zeroed/missing path) and a derived-metric regression test across migrations. Do not presume the schema is frozen. One assertion can cover the 369/373 silent-read class.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-135 — PRESUMPTION-375 (monotone token growth = healthier (metric-direction smuggle))
+**Statement:** [inferred] That month-over-month token growth (8.2M->20.4M->33.3M) is itself reassuring — more output tokens = healthier (metric-direction normative smuggling)
+**15a:** NO-SUPPORT-FOUND (None-Weak) | **15b:** CHALLENGED (Strong)
+**What is at risk:** Interpretation of token/yield dashboards; justification of token spend; the 336 "trust downstream yields" generalization.
+**Recommended action:** Urgency Low. Replace/augment raw token-growth reassurance with a value- or efficiency-normalized metric (e.g., validated-premises or decisions per token). Treat raw growth as cost requiring justification. Couple with REVISE-131 (336) and the 367 metric-direction line.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-136 — PRESUMPTION-376 (papers' formal results transfer intact to epistemic/AI tradition-agents — keystone)
+**Statement:** [inferred] That the papers' formal results (group-level Markov blanket as super-agent criterion; cognitive glue as binding mechanism) transfer intact to a community of inquirers / AI tradition-agents — transfer conditions named as "C2A2's extension" but never checked
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Strong)
+**What is at risk:** The entire "individual<->collective" detector framing and any PRS/connectome structure that assumes group-level active inference governs tradition-agents.
+**Recommended action:** Urgency High. Before relying on the transfer, enumerate and test the scope conditions for a group-level Markov blanket over a community of inquirers (shared generative model; Markovian separation of internal/external states). Treat as hypothesis; pilot on a bounded epistemic collective. Tom to review as the cohort's priority item.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Total new REVISEs this run (2026-06-23):** 6 (REVISE-131..136). **AWAITING-REVIEW backlog: was 84 -> now 90.** Two SYSTEMIC-RISK clusters drive these. NEW cluster 6 (cross-vocabulary over-claim / unchecked transfer): REVISE-132 (commensurability from shared vocabulary) and REVISE-136 (intact transfer to epistemic collectives, KEYSTONE, HIGH) — paired with the MONITORed stated twins (MONITOR-360/361). EXTENDED cluster 5 (token-telemetry over-trust / fail-loud): REVISE-131 (trust-all-downstream), REVISE-134 (durability without recurrence guard, same silent-read class as REVISE-129), REVISE-135 (growth-as-health) — coupled, closed mostly by one canary/contract assertion + a value-normalized metric. REVISE-133 (intake-as-progress) is the direct corollary-error of the INCORPORATEd review-bound premise (PREMISE-070), closed by a WIP limit. Priority order for Tom: REVISE-136 (HIGH, load-bearing transfer) > REVISE-132/134 (bridge + telemetry durability) > REVISE-131/133/135 (scope-narrowing / cheap-fix).
+
+### REVISE-137 — PRESUMPTION-377 (inbound-backlink count = graph health (vanity-metric smuggle))
+**Statement:** [inferred] That inbound-backlink count is the right proxy for graph health at all (connectivity measured, synthesis quality never)
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Strong)
+**What is at risk:** The audit's whole notion of 'graph health' may track a vanity metric; connectivity is optimized while synthesis quality is never measured and may decline.
+**Recommended action:** Urgency Low-Medium. Pair connectivity with at least one synthesis-quality metric (validated cross-tradition syntheses per unit graph change); never make backlink count an optimization target; ensure the index-node move (344/381) cannot game it. Twin of ASSUMPTION-338 (MONITOR-363); metric-direction family (367/375).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-138 — PRESUMPTION-378 (orphan exclusion is principled (motivated-reclassification risk))
+**Statement:** [inferred] That excluding 2,112 orphans as 'should not carry backlinks' is principled, not a motivated reclassification that erases the alarm
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Strong)
+**What is at risk:** A standing, human-tracked orphan alarm is retired on an unregistered, possibly outcome-driven denominator change; a real connectivity problem could become invisible.
+**Recommended action:** Urgency Medium. Pre-register the page-class exclusion criterion (independent of the count); report orphan rate WITH and WITHOUT exclusions; route the reclassification through human review before it changes the alarm's tracked status. Tension-twin of ASSUMPTION-339 (MONITOR-364).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-139 — PRESUMPTION-379 (own corrected resolver trusted with no cross-check (asymmetric self-trust))
+**Statement:** [inferred] That the audit's own corrected (path-aware) resolver is now bug-free — production resolver flagged, own resolver trusted with no cross-check
+**15a:** NO-SUPPORT-FOUND (Weak) | **15b:** CHALLENGED (Strong)
+**What is at risk:** The 'corrected' (path-aware) connectivity series could be wrong in a new way; the audit would have swapped a flagged silent miscount for an unflagged, trusted one.
+**Recommended action:** Urgency Medium. Cross-validate the new resolver against a labelled link-form test set and a second independent implementation; require agreement before adopting its recount; add a fail-loud check for ambiguous/unresolved links. Couples PREMISE-072. Member of the EXTENDED silent-measurement / fail-loud cluster (369/373/MONITOR-296/PREMISE-049).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-140 — PRESUMPTION-380 (keyword/page-unit is the right instrument for cross-tradition relevance)
+**Statement:** [inferred] That a 14-thinker keyword/relevance score (>0.4) is the right instrument for cross-tradition relevance, merely mis-tuned (page-as-unit / keyword-match unexamined)
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**What is at risk:** Cross-tradition seeding driven by a keyword score surfaces lexical coincidences and misses genuine conceptual bridges — low precision AND recall on exactly the links that matter.
+**Recommended action:** Urgency Medium. Use embedding/semantic relevance (or a hybrid keyword+embedding) at passage/claim granularity, not keyword-over-pages; validate precision/recall against a labelled cross-tradition set before seeding. Gates OPEN-088 with ASSUMPTION-345 (MONITOR-366); instrument/demand-completeness theme (with 384).
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-141 — PRESUMPTION-381 (more inbound hub connectivity is simply good (universal-hub dilution))
+**Statement:** [inferred] That more inbound hub connectivity is simply good — an all-to-one index node may dilute the sociogram's signal (connects-all = distinguishes-nothing)
+**15a:** NO-SUPPORT-FOUND (Weak) | **15b:** CHALLENGED (Moderate-Strong)
+**What is at risk:** Adding a universal index node (344) inflates connectivity counts while degrading the sociogram and community detection — improving the watched number and worsening the interpreted structure.
+**Recommended action:** Urgency Low-Medium. Exclude or down-weight universal/index hubs in sociogram and community-detection pipelines; evaluate connectivity changes by their effect on community legibility (modularity), not raw inbound count. The withheld over-claim of ASSUMPTION-344 (PREMISE-074) and value-side of ASSUMPTION-340; member of the connectivity-metric-validity cluster; twin of 340/344.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-142 — PRESUMPTION-382 (autonomous run may authoritatively reframe a human-tracked alarm (interpretive-caution gap))
+**Statement:** [inferred] That a one-night autonomous census can authoritatively reframe a standing human-tracked alarm — write-caution applied, interpretive-caution not
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Moderate-Strong)
+**What is at risk:** A human-tracked alarm is effectively closed by an unattended run's interpretation; the human loses a tracked signal without reviewing the reframe, and downstream readers treat it as settled (automation bias).
+**Recommended action:** Urgency Medium. Allow autonomous runs to PROPOSE reframes flagged provisional pending Tom's review; do not autonomously change a human-tracked alarm's status; log interpretive moves distinctly from measurements. Extends PREMISE-073 (342): write-caution incorporated, interpretive-caution added here.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+### REVISE-143 — PRESUMPTION-384 (absence of broken links = no bridges needed (self-justifying demand signal — KEYSTONE))
+**Statement:** [inferred] That absence of broken bridge links = no synthesis bridges needed (the graph can only request bridges someone already stubbed — self-justifying)
+**15a:** NO-SUPPORT-FOUND (Weak) | **15b:** CHALLENGED (Strong)
+**What is at risk:** The system could conclude its cross-tradition synthesis coverage is complete when it is not, leaving the most valuable non-obvious bridges permanently unbuilt because nothing flags them.
+**Recommended action:** Urgency High. Enumerate warranted cross-tradition bridges independently of broken links (embedding link-prediction over the PRS connectome; structured cross-tradition pairing); treat broken-link demand as a LOWER BOUND on need, never as completeness. Tension-twin of ASSUMPTION-343 (MONITOR-365); KEYSTONE of the cohort's instrument/demand-completeness concern. Tom to review as the cohort's priority item.
+**Status:** AWAITING-REVIEW
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: REVISION-FLAGGED
+
+**Total new REVISEs this run (2026-06-24):** 7 (REVISE-137..143). **AWAITING-REVIEW backlog: was 90 -> now 97.** Driven by two SYSTEMIC-RISK clusters. NEW cluster 7 (connectivity-metric validity / vanity-metric — a structural connectivity COUNT treated as graph HEALTH, gameable by index nodes and scope changes): REVISE-137 (backlink-as-health), REVISE-138 (motivated reclassification), REVISE-141 (universal-hub dilution) — with ASSUMPTION-344 (PREMISE-074) scope-guarded against it; Risk High. EXTENDED cluster 5 (silent-measurement / fail-loud): REVISE-139 (uncross-checked replacement resolver), joining PREMISE-072 (basename miscount) and prior 369/373/MONITOR-296/PREMISE-049 — closed by one cross-check + fail-loud assertion. Instrument/demand-completeness sub-theme: REVISE-140 (keyword instrument) + REVISE-143 (broken-link demand, KEYSTONE) + MONITOR-365 — the audit's instruments under-detect what to connect. Governance: REVISE-142 (interpretive-caution gap) complements the INCORPORATEd write-caution (PREMISE-073). Priority order for Tom: REVISE-143 (HIGH, synthesis-coverage completeness) > REVISE-138/139/140/142 (MED) > REVISE-137/141 (LOW-MED).
+
+
+## 2026-06-24 cohort REVISE (15c 2026-06-25; for Tom's review)
+
+REVISE-144:
+  Date: 2026-06-25
+  Source item: ASSUMPTION-359 (ASSUMPTION (stated))
+  Disposition: REVISE (DISPOSITION-311)
+  Net assessment: 15a weak, 15b strong, and the assumption contains a factual error ('never written to disk'). Clear net-negative.
+  What is at risk: Client-side API-key confidentiality for the public artifact; user trust in a posture OWASP rates a critical risk.
+  Recommended action: Correct the 'never on disk' claim; hold keys in-memory/Web Worker only or proxy via a backend-for-frontend; if web storage is unavoidable, document the XSS residual risk explicitly and minimize lifetime.
+  Urgency: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+REVISE-145:
+  Date: 2026-06-25
+  Source item: PRESUMPTION-386 (PRESUMPTION (unstated))
+  Disposition: REVISE (DISPOSITION-314)
+  Net assessment: 15a none, 15b strong, AND the presumption contradicts an existing validated premise (MMA-independence: same-formation agreement is discounted).
+  What is at risk: Pathway 31's entire consensus/confidence semantics; the constitutional detector's reliability claims.
+  Recommended action: Replace vote-count confidence with a function of MEASURED effective independence (pairwise error correlation / effective N); diversify base models or strongly diversify prompting; reconcile with the existing MMA-independence premise. Keystone of consensus-validity cluster.
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+REVISE-146:
+  Date: 2026-06-25
+  Source item: PRESUMPTION-394 (PRESUMPTION (unstated))
+  Disposition: REVISE (DISPOSITION-322)
+  Net assessment: 15a weak, 15b strong; a presumption mislabeling a mitigated self-audit as 'genuine independence'. Partial closure of REVISE-111 is undermined by the independence gap.
+  What is at risk: The falsifier's claim to independent oversight; the epistemic status recorded in provenance; partial closure of REVISE-111.
+  Recommended action: Recruit an external or blinded second party for the audit; if infeasible, relabel as 'owner self-audit (not independent)' and lean on pre-registration + the adversarial 15b search; do not record it as 'genuine independence'.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED

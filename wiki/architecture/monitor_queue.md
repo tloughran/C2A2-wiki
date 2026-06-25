@@ -14213,3 +14213,206 @@ These mirror the STALE-MONITOR-FLAGS above as parseable refresh blocks so the ne
 **PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
 
 **Total new MONITORs this run (2026-06-19):** 6 (MONITOR-354..359). Next weekly 15d: 2026-06-25. Three are the milder stated-ASSUMPTION twins of REVISE items (354↔REVISE-127 doc-only-guard; 355↔REVISE-126 render⇒content; 356↔REVISE-128 count-commensurability) — the surfaced-not-averaged split where the stated constraint is monitored and the stronger inferred presumption is revised. Two cheap instruments close most: (a) one code-guard/disarm pass on apply_summaries.py + an entry-point Summa guard closes 354 and unblocks REVISE-127 and PREMISE-067's guard; (b) a content-assertion add-on to regen (counts + `**Summary**` presence) closes 355 and unblocks REVISE-126, and surfaces the 256-vs-379 definition (356/REVISE-128). 357/358/359 are representational/upkeep watch items on the bios themselves.
+
+### MONITOR-360 — ASSUMPTION-333
+**Statement:** Levin's "cognitive glue" and Friston's "group-level Markov blanket" are two framings of one problem (what binds sub-agents into a super-agent), forming a clean mathematical Levin<->Friston bridge
+**Item type:** ASSUMPTION (stated)
+**15a:** SUPPORTED (Moderate-Strong) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-25. Priority HIGH. Strong support that a real, formalizable Friston<->Levin bridge program exists (incl. a literal co-authored FEP treatment of Levin morphogenesis), but only moderate support — and a moderate structure-mapping challenge — for the stronger "two framings of ONE problem / clean bridge" identity as stated. The keystone of the cohort and twin of PRESUMPTION-371. Action: before treating the Levin<->Friston bridge as real/load-bearing, produce an explicit structure-mapping (corresponding higher-order relations, not shared FEP vocabulary). Keystone of the cohort; twin of PRESUMPTION-371 (REVISE-132). Member of SYSTEMIC-RISK cluster 6 (cross-vocabulary over-claim). What would change the disposition: An explicit relational structure-mapping showing the higher-order constraints correspond (not just shared FEP vocabulary) would tip toward INCORPORATE; failure of that mapping would tip toward REVISE.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-361 — ASSUMPTION-334
+**Statement:** The sub-agent->super-agent binding transition is C2A2's core target phenomenon ("the literal individual<->collective transition"), and a paper's value scales with how explicitly it formalizes it
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-25. Priority MEDIUM. Mixed: the binding transition is a well-motivated formal target (moderate support), but the claim bundles a non-testable framing commitment with a normative "value-scales-with-formalization" smuggle and a testable transfer sub-claim that duplicates PRESUMPTION-376. Action: separate the (non-testable) framing commitment from the testable transfer sub-claim, which is routed with PRESUMPTION-376 (REVISE-136); judge paper value by transfer traction, not formalization depth. Twin of 376; member of SYSTEMIC-RISK cluster 6. What would change the disposition: Evidence that formalizing the binding transition produces falsifiable predictions about epistemic/tradition-agent collectives would tip toward INCORPORATE; confirmation that the transfer fails (via 376) would tip the testable sub-claim toward REVISE.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-362 — PRESUMPTION-374
+**Statement:** [inferred] That one recent paper by a thinker is the right unit for updating a tradition's state (figurehead-author, one-paper-one-thinker intake schema)
+**Item type:** PRESUMPTION (unstated — surfaced by inference)
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Moderate)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-25. Priority MEDIUM. Weak-moderate support for the figurehead paper as a tractable sampling heuristic vs a moderate HPS challenge that traditions are distributed, not figurehead-defined. A recurrence of the already-monitored "traditions/thinkers as unit" family (005/007), now on the intake axis. Action: treat a recent figurehead paper as ONE sample of a tradition's state, not the unit; supplement with multiple works/authors and flag figurehead-sourced updates provisional. Recurrence of the 005/007 traditions/thinkers-as-unit family, on the intake axis. What would change the disposition: Evidence that figurehead-sourced updates materially diverge from broader-sample tradition state would tip toward REVISE (adopt multi-work intake); convergence would tip toward INCORPORATE the heuristic.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-06-23):** 3 (MONITOR-360..362). Next weekly 15d: 2026-06-25. MONITOR-360/361 are the stated-ASSUMPTION twins held while their stronger inferred presumptions are REVISEd (360<->REVISE-132 commensurability; 361<->REVISE-136 transfer) — the surfaced-not-averaged split, both in SYSTEMIC-RISK cluster 6. MONITOR-362 folds into the existing traditions-as-unit watch (005/007). One cheap discipline advances 360/361: an explicit structure-mapping + scope-condition check on the Levin<->Friston bridge.
+
+### MONITOR-363 — ASSUMPTION-338
+**Statement:** The vault is intentionally hub-and-spoke, not densely cross-linked, and this topology is healthy (low backlink density is design, not defect)
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-25. Priority MEDIUM. Hub-spoke is the normal, robust emergent topology of a collaborative wiki, but GraphRAG evidence is that hub-spoke is harder to synthesize over than denser cross-linking — so 'healthy' is task-relative and 'intentional' over-claims an emergent artifact. Twin of normative PRESUMPTION-377 (REVISE-137). Action: define 'health' by synthesis performance, not topology aesthetics; pilot denser cross-tradition linking on a sample and measure synthesis quality. What would change the disposition: A synthesis-quality measurement on the sparse graph vs a targeted-densified sample: no gain tips toward INCORPORATE ('healthy' vindicated); a gain tips toward REVISE (densify).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-364 — ASSUMPTION-339
+**Statement:** Excluding system + inbox pages, the 76.8% orphan rate is an artifact and the genuine reconnection surface is small
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Moderate)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-25. Priority MEDIUM. Namespace scoping is legitimate, but excluding 2,112 pages after the count is known, with no pre-stated criterion, is the condition for motivated reclassification. Validity turns on whether the criterion preceded and is independent of the orphan finding. Tension-twin of PRESUMPTION-378 (REVISE-138). Action: pre-register the exclusion criterion; report orphan rate both ways. What would change the disposition: Documentary evidence of a pre-existing namespace policy independent of the count tips toward INCORPORATE; absence or outcome-driven exclusion tips toward REVISE (with 378).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-365 — ASSUMPTION-343
+**Statement:** Synthesis stubs should be created only where the link graph demands them (broken bridge links); fabricating un-asked-for bridges is speculative
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** PARTIALLY-CHALLENGED (Moderate)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-25. Priority MEDIUM. The restraint against fabrication is sound, but 'only where the link graph demands' is challenged as incomplete: warranted bridges are largely latent, so broken links capture only what someone already gestured at. Tension-twin of PRESUMPTION-384 (REVISE-143, HIGH). Action: treat broken-link demand as a floor; add independent latent-bridge enumeration. What would change the disposition: Link-prediction over the PRS connectome surfacing many warranted bridges with NO broken link tips the criterion toward REVISE; few such bridges tips toward INCORPORATE.
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-366 — ASSUMPTION-345
+**Statement:** The graph is already sufficient for meaningful thinker-agent synthesis today; mass leaf-seeding gain is low and noisy
+**Item type:** ASSUMPTION (stated)
+**15a:** PARTIALLY-SUPPORTED (Moderate) | **15b:** CHALLENGED (Moderate)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-25. Priority MEDIUM. 'Mass leaf-seeding is noisy' has support (quality>quantity), but 'already sufficient' is an untested all-clear that gates seeding policy (OPEN-088), and GraphRAG evidence that synthesis improves with well-chosen links cuts against complacency. Pairs with PRESUMPTION-380 (REVISE-140) on the seeding instrument. Action: measure synthesis quality before adopting the 'sufficient' all-clear. What would change the disposition: An A/B of synthesis quality on current vs targeted-densified subgraph: no gain tips toward INCORPORATE ('sufficient'); a clear gain tips toward REVISE (targeted seeding).
+**PROVENANCE:** Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Current status: MONITORING
+
+### MONITOR-367 — PRESUMPTION-383
+**Statement:** [inferred] That hub-and-spoke 'healthy for its design' at 2,812 pages / 14 traditions stays healthy as the vault and tradition count grow (scale-blindness)
+**Item type:** PRESUMPTION (unstated — surfaced by inference)
+**15a:** PARTIALLY-SUPPORTED (Weak-Moderate) | **15b:** CHALLENGED (Moderate)
+**Detail / cadence / priority:** Weekly; next 15d 2026-06-25. Priority MEDIUM. Scale-free topology persists with growth (Wikipedia scaled while staying scale-free), but robustness is to RANDOM failure not hub-targeted stress; finite-size effects shift topology; cross-tradition bridge demand grows ~quadratically while hub-spoke adds none. Persistence of topology != preservation of task-fitness. Twin of ASSUMPTION-338 (MONITOR-363); scale-blindness family. Action: install a re-census trigger tied to vault/tradition growth. What would change the disposition: Degradation of orphan rate, hub betweenness load, or synthesis quality past a defined vault-size / tradition-count threshold tips toward REVISE; stability across growth checkpoints tips toward INCORPORATE the durability.
+**PROVENANCE:** Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Current status: MONITORING
+
+**Total new MONITORs this run (2026-06-24):** 5 (MONITOR-363..367). Next weekly 15d: 2026-06-25. MONITOR-363/367 are the hub-spoke topology twins (present 'healthy' + future scale-blindness). MONITOR-364/365 are the stated-ASSUMPTION twins held while their stronger inferred presumptions are REVISEd (364<->REVISE-138 motivated reclassification; 365<->REVISE-143 demand completeness) — surfaced-not-averaged. MONITOR-366 gates seeding policy (OPEN-088) with PRESUMPTION-380 (REVISE-140). Common discipline that advances all five: one synthesis-quality / connectivity measurement plus a pre-registered metric definition.
+
+
+## 2026-06-24 cohort MONITOR (15c 2026-06-25; default weekly cadence for 15d)
+
+MONITOR-368:
+  Date: 2026-06-25
+  Source item: ASSUMPTION-349 (ASSUMPTION (stated))
+  Statement:
+  Item: ASSUMPTION-349 - An empirical forecast with weak literature on either side; best resolved by direct pilot measurement.
+  What would change disposition: Direct pilot measurement of token/agent load per track: within band -> INCORPORATE as planning constant; >4x -> note and re-budget.
+  Monitoring cadence: Weekly
+  Priority: Low
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-303; Current status: MONITORING
+
+MONITOR-369:
+  Date: 2026-06-25
+  Source item: ASSUMPTION-354 (ASSUMPTION (stated))
+  Statement:
+  Item: ASSUMPTION-354 - The narrow mechanism (closes forward-steering) holds, but the strong 'ungameable' claim is challenged by forking-paths over the fixed past; the assumption's own caveat concedes this.
+  What would change disposition: If the retrospective analysis (subset, statistic, thresholds) and full ledger scope are pre-registered before inspection -> INCORPORATE; if analyst-chosen analyses diverge from a pre-registered one -> REVISE.
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-307; Current status: MONITORING
+
+MONITOR-370:
+  Date: 2026-06-25
+  Source item: ASSUMPTION-356 (ASSUMPTION (stated))
+  Statement:
+  Item: ASSUMPTION-356 - This is the programme's live empirical HYPOTHESIS, not a premise to incorporate; literature gives prior plausibility, C2A2's falsifier will test it.
+  What would change disposition: If H1's elevated sharing survives topic/time/author-matched nulls and a latent-tie check -> GROUNDED/INCORPORATE; if it appears only under the degree-only null -> REVISE.
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-309; Current status: MONITORING
+
+MONITOR-371:
+  Date: 2026-06-25
+  Source item: PRESUMPTION-385 (PRESUMPTION (unstated))
+  Statement:
+  Item: PRESUMPTION-385 - An inherited structural framing with no supporting literature and a moderate challenge that finer granularity may be better.
+  What would change disposition: Ablation comparing claim/edge-level vs agent-level redundancy at equal cost: if agent-level matches finer units -> INCORPORATE the unit; if materially worse -> REVISE the decomposition.
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-313; Current status: MONITORING
+
+MONITOR-372:
+  Date: 2026-06-25
+  Source item: PRESUMPTION-387 (PRESUMPTION (unstated))
+  Statement:
+  Item: PRESUMPTION-387 - 15a moderate (feasible IF measured), 15b strong (biases are real). The fix - making adjudicator error a measured, de-biased input - is instrumentation, gated by OPEN-090.
+  What would change disposition: Calibrate adjudicator vs human-labeled agreement, position-swap to cancel order bias, use a different model family than the columns: acceptable, de-biased error -> INCORPORATE; large irreducible bias -> REVISE.
+  Monitoring cadence: Weekly
+  Priority: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-315; Current status: MONITORING
+
+MONITOR-373:
+  Date: 2026-06-25
+  Source item: PRESUMPTION-388 (PRESUMPTION (unstated))
+  Statement:
+  Item: PRESUMPTION-388 - 15a moderate (some dissensus genuine), 15b strong (must separate from instrument noise). Twin of ASSUMPTION-348 (INCORPORATEd with this very caveat).
+  What would change disposition: If the dissensus measure shows test-retest stability and a small quantified error fraction -> INCORPORATE; if dissensus is largely non-reproducible -> REVISE the axes/adjudicator.
+  Monitoring cadence: Weekly
+  Priority: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-316; Current status: MONITORING
+
+MONITOR-374:
+  Date: 2026-06-25
+  Source item: PRESUMPTION-389 (PRESUMPTION (unstated))
+  Statement:
+  Item: PRESUMPTION-389 - A real selection-bias concern (twin of ASSUMPTION-350, which is INCORPORATEd only in its necessary-condition sense). Manageable via design.
+  What would change disposition: Pre-register >=1 less-favorable / theory-misaligned thinker: if the mechanism passes there too -> generalization support (INCORPORATE); if it passes only for Hawkins -> REVISE (selection-bound).
+  Monitoring cadence: Weekly
+  Priority: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-317; Current status: MONITORING
+
+MONITOR-375:
+  Date: 2026-06-25
+  Source item: PRESUMPTION-390 (PRESUMPTION (unstated))
+  Statement:
+  Item: PRESUMPTION-390 - 15a none, 15b strong, and it is the transfer condition under PREMISE-075/347. Empirically testable (measure inter-column error correlation).
+  What would change disposition: Measure per-axis pairwise error correlation on a labeled benchmark: materially below same-seed baseline -> transfer condition met (supports PREMISE-075); not below -> the 'reference-frame ensemble' is correlated redundancy -> REVISE.
+  Monitoring cadence: Weekly
+  Priority: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-318; Current status: MONITORING
+
+MONITOR-376:
+  Date: 2026-06-25
+  Source item: PRESUMPTION-391 (PRESUMPTION (unstated))
+  Statement:
+  Item: PRESUMPTION-391 - Balanced (relatedness supported, integration not); couples ASSUMPTION-357's miss-direction (INCORPORATEd). Resolvable by measuring false-positive rate.
+  What would change disposition: Hand-label shared-id matches as genuine-integration vs perfunctory/background: low false-positive rate -> INCORPORATE the PASS test; high -> REVISE (require corroborating signals).
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-319; Current status: MONITORING
+
+MONITOR-377:
+  Date: 2026-06-25
+  Source item: PRESUMPTION-392 (PRESUMPTION (unstated))
+  Statement:
+  Item: PRESUMPTION-392 - Degree null is necessary-not-sufficient; the presumption treats degree as the only confound, which the literature contradicts. Directly gates ASSUMPTION-356/H1.
+  What would change disposition: Re-run H1 under topic-, time-, and author-matched nulls: if H1 survives -> stronger support; if it vanishes -> the degree-only result was artifact -> REVISE the falsifier's null.
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-320; Current status: MONITORING
+
+MONITOR-378:
+  Date: 2026-06-25
+  Source item: PRESUMPTION-393 (PRESUMPTION (unstated))
+  Statement:
+  Item: PRESUMPTION-393 - Weak support contingent on unverified dating accuracy; moderate challenge that mis-dating silently biases the headline statistic. Resolvable by sensitivity analysis.
+  What would change disposition: Quantify t_c dating error and perturb +/- k periods: DiD conclusion stable -> INCORPORATE; conclusion flips within plausible error band -> REVISE (re-instrument dating or use heterogeneity-robust estimators).
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-321; Current status: MONITORING
+
+MONITOR-379:
+  Date: 2026-06-25
+  Source item: PRESUMPTION-395 (PRESUMPTION (unstated))
+  Statement:
+  Item: PRESUMPTION-395 - Twin of ASSUMPTION-359 (REVISE-144). The presumption IS the challenge to 359; track the threat-model enumeration feeding the 359 correction.
+  What would change disposition: Enumerate actual exposure surfaces (XSS, session restore, shared machines) and confirm the REVISE-144 fix (in-memory/Web Worker/BFF) closes them: closed -> INCORPORATE corrected posture; residual exposure -> escalate with REVISE-144.
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-323; Current status: MONITORING
+
+MONITOR-380:
+  Date: 2026-06-25
+  Source item: PRESUMPTION-396 (PRESUMPTION (unstated))
+  Statement:
+  Item: PRESUMPTION-396 - 15a weak, 15b strong, BUT C2A2's existing 'payload-diet bright pin' already registers the design intent - a fresh REVISE would duplicate it (Rule of surgical change).
+  What would change disposition: Track change-cost/defect and verification-tool performance as the file grows: if verification time or diff reliability degrades past threshold -> REVISE (introduce a build step; single file becomes a build OUTPUT from modular sources).
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-324; Current status: MONITORING
+
+MONITOR-381:
+  Date: 2026-06-25
+  Source item: PRESUMPTION-397 (PRESUMPTION (unstated))
+  Statement:
+  Item: PRESUMPTION-397 - Weak support / moderate challenge, but LOW stakes (misroute recoverable, as the presumption notes).
+  What would change disposition: Measure keyword-list misroute rate on real voice inputs vs a learned-classifier baseline: low -> keep keyword list (INCORPORATE); high -> add a learned fallback/confidence threshold (REVISE).
+  Monitoring cadence: Weekly
+  Priority: Low
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-325; Current status: MONITORING
