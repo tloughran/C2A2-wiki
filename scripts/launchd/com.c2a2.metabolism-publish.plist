@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.c2a2.metabolism-publish</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/publish_metabolism.sh</string>
+    </array>
+
+    <!-- Sunday 06:30 local. Sandbox regen runs 06:05; this picks up the fresh files. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Weekday</key>
+        <integer>0</integer>
+        <key>Hour</key>
+        <integer>6</integer>
+        <key>Minute</key>
+        <integer>30</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <!-- launchd starts with a bare PATH; add the dirs git/node/python3 live in. -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/metabolism-monitor/publish.launchd.out</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/metabolism-monitor/publish.launchd.err</string>
+</dict>
+</plist>

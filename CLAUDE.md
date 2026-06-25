@@ -55,11 +55,19 @@
   - `validate-html/SKILL.md` — validation skill definition
 
 ### Regeneration Workflow
+
+**ALWAYS regenerate via the wrapper — never call the scripts directly:**
 ```bash
-python3 extract_vault_data.py /path/to/vault > /tmp/vault_data.json
-python3 generate_visualization.py /tmp/vault_data.json /path/to/wiki/wiki_narration.html
-python3 validate_html.py /path/to/wiki/wiki_narration.html --source-data /tmp/vault_data.json
+bash wiki/c2a2-wiki-narration/regen_sociogram.sh
 ```
+The wrapper hardcodes BOTH the `--summa <source vault>` extract flag and the
+`agents/openstory/agent_node_edges.json` third arg, and guards against shipping a
+Summa-less or agent-less build. Calling `generate_visualization.py` directly with
+just `<vault_data.json> <out.html>` silently drops the agent-activity layer AND
+the Summa nodes — this happened on 2026-06-23 (the Tradition Index regen), which
+left the Agent Map Sociogram subtab opening empty. The raw three-step sequence
+(extract `--summa` → generate with agent arg → validate) is the wrapper's body;
+read it there, don't paste a bare two-arg call.
 
 ### Architecture
 - D3.js v7 force-directed graph, dark theme (#0a0a0f)
@@ -124,3 +132,29 @@ python3 scripts/janitor.py --dry-run       # report only; no writes
 python3 scripts/janitor.py --baseline      # reset baseline to current findings
 python3 scripts/janitor.py --promote <c>   # add check to auto-fix safelist
 ```
+
+---
+
+## Review Log (historical preservation archive)
+
+**Output:** `wiki/review_log.html` (self-contained, ~2MB) — **PUBLISHED** (2026-06-22). `assemble_review_log.py` auto-scrubs every email address from the HTML on each build (final `re.subn` pass), so the public copy is address-clean. The `provenance/` sidecar stays **gitignored/local** — it holds `decision_emails.json` with the raw addresses.
+
+### What it is
+A chronological, zero-drop archive built from DURABLE sources, because the daily review HTML pages are ephemeral (Phase 0 deletes them). Five tabs: **Cards** (every `inbox/proposals/**` file, full text, grouped by proposal date), **Your Responses** (verbatim decision emails + `review/archive/*_decisions.md`), **PRS Triples** (per-tradition, 282), **Bridges** (per tradition-pair from `master/cross_program_index.md` + embedded `synthesis/*_bridge.md` essays), **Findings** (`flags/pattern_detector_findings.md`, all, filterable by recommended-action).
+
+### Scripts (in `scripts/`)
+- `build_provenance.py` — joins each visualized triplet back to its proposal (sidecar in `provenance/`); reconciliation + proposed→ingested lag. Non-destructive.
+- `assemble_review_log.py` — builds `review_log.html` from vault + `provenance/`.
+- `append_decision_email.py` — idempotent append of one decision email to `provenance/decision_emails.json`.
+- `refresh_review_log.sh` — deterministic regen wrapper (build_provenance + assemble + size guard).
+
+### Manual regen
+```bash
+bash scripts/refresh_review_log.sh
+```
+
+### Auto-update (wired 2026-06-22)
+The `c282-wiki-agent-daily-run` task does it: Phase 0 appends each processed decision email to `provenance/decision_emails.json` (via `append_decision_email.py`, idempotent) BEFORE deleting the review page; new Phase 5.5 runs `refresh_review_log.sh` and grep-asserts the scrub held. `review_log.html` (address-scrubbed) is pushed by Phase 6; `provenance/` stays gitignored/local. Validation: cards rendered == proposal files with an id (content-fingerprint check, README/manifest excluded); triples/findings/bridges counts == source counts; `node --check` the embedded JS.
+
+### Known caveat
+Only 1 page-snapshot (2026-06-16) was lost before archiving; its 13 cards survive as proposal files. Provenance: 282 triples = A179 backref + B17 fuzzy + C74 seed + D12 (early seeds of later-added traditions; not failures). Reverse gap 168 approved candidates not visualized (101 are secondary -02/-03 candidates).

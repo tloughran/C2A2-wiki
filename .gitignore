@@ -110,3 +110,7 @@ wiki/review/2026-06-19_review.html
 # Review Log — review_log.html IS PUBLISHED (email addresses auto-scrubbed by assemble_review_log.py).
 # provenance/ stays LOCAL — it holds decision_emails.json with raw addresses.
 provenance/
+wiki/review/*.html
+wiki/review/_superseded/
+wiki/review/_deleted_quarantine/
+wiki/heartbeat/data/.broker_device_id
