@@ -106,6 +106,70 @@
     .angle h2 { font-size: 18px; margin-right: 44px; }
     .angle .num { font-size: 30px; top: 14px; right: 16px; }
   }
+
+  /* ── DOC RENDER PANEL (slide-in, right) ── */
+  #doc-overlay {
+    position: fixed; inset: 0; background: rgba(4,4,8,0.55);
+    opacity: 0; visibility: hidden; transition: opacity .2s;
+    z-index: 900;
+  }
+  #doc-overlay.open { opacity: 1; visibility: visible; }
+  #doc-panel {
+    position: fixed; top: 0; right: 0; height: 100%;
+    width: min(680px, 92vw); background: #0c0c14;
+    border-left: 1px solid #24243a; box-shadow: -18px 0 48px rgba(0,0,0,0.5);
+    transform: translateX(100%); transition: transform .24s ease;
+    z-index: 901; display: flex; flex-direction: column;
+  }
+  #doc-overlay.open #doc-panel { transform: translateX(0); }
+  #doc-head {
+    flex: 0 0 auto; display: flex; align-items: center; gap: 12px;
+    padding: 16px 20px; border-bottom: 1px solid #1c1c28; background: #101019;
+  }
+  #doc-head .path {
+    flex: 1 1 auto; font-size: 12px; letter-spacing: 0.4px;
+    color: #7a7a88; font-family: ui-monospace, Menlo, monospace;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  #doc-close {
+    flex: 0 0 auto; background: none; border: 1px solid #2e2a1c; color: #C9A84C;
+    font-size: 18px; line-height: 1; cursor: pointer; border-radius: 7px;
+    padding: 5px 11px; transition: background .15s;
+  }
+  #doc-close:hover { background: rgba(201,168,76,0.12); }
+  #doc-body {
+    flex: 1 1 auto; overflow-y: auto; padding: 26px 30px 60px;
+    font-size: 15px; line-height: 1.7; color: #cfcfda;
+  }
+  #doc-body h1, #doc-body h2, #doc-body h3 {
+    font-family: Georgia, serif; color: #ececf2; line-height: 1.25;
+    margin: 1.4em 0 0.5em;
+  }
+  #doc-body h1 { font-size: 25px; color: #C9A84C; margin-top: 0; }
+  #doc-body h2 { font-size: 20px; }
+  #doc-body h3 { font-size: 17px; }
+  #doc-body p, #doc-body li { margin-bottom: 0.7em; }
+  #doc-body ul, #doc-body ol { margin: 0 0 0.9em 1.3em; }
+  #doc-body code {
+    background: #16161f; padding: 1px 5px; border-radius: 4px;
+    font-family: ui-monospace, Menlo, monospace; font-size: 13px; color: #b6c4d8;
+  }
+  #doc-body pre {
+    background: #14141d; border: 1px solid #20202e; border-radius: 8px;
+    padding: 14px 16px; overflow-x: auto; margin-bottom: 1em;
+  }
+  #doc-body pre code { background: none; padding: 0; }
+  #doc-body blockquote {
+    border-left: 3px solid #4a4226; margin: 0 0 1em; padding: 2px 0 2px 16px;
+    color: #a8a8b8; font-style: italic;
+  }
+  #doc-body a { color: #C9A84C; border-bottom: 1px solid #4a4330; }
+  #doc-body a.wikilink { color: #9a8a5a; border-bottom: 1px dotted #4a4330; cursor: default; }
+  #doc-body table { border-collapse: collapse; margin-bottom: 1em; width: 100%; }
+  #doc-body th, #doc-body td { border: 1px solid #24243a; padding: 6px 10px; text-align: left; }
+  #doc-body th { background: #14141d; color: #ececf2; }
+  #doc-body hr { border: none; border-top: 1px solid #20202e; margin: 1.6em 0; }
+  #doc-msg { color: #8a8a98; font-style: italic; }
 </style>
 </head>
 <body>
@@ -526,6 +590,95 @@
     window.location.href = src;
     return false;
   }
+</script>
+
+<!-- ── DOC RENDER PANEL (slide-in) ───────────────────────────── -->
+<div id="doc-overlay" aria-hidden="true">
+  <aside id="doc-panel" role="dialog" aria-label="Document viewer">
+    <div id="doc-head">
+      <span class="path" id="doc-path"></span>
+      <button id="doc-close" aria-label="Close" title="Close (Esc)">&times;</button>
+    </div>
+    <div id="doc-body"></div>
+  </aside>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.0/marked.min.js"></script>
+<script>
+/* ── WIKI-LINK RENDER PANEL ─────────────────────────────────────
+   The gold "Wiki" links on the cards point at raw .md files. Instead
+   of dumping markdown in a new tab, intercept the click, fetch the
+   file, render it, and slide it in from the right. Tool links carry
+   no href (onclick only), so they are untouched. Needs HTTP (fetch
+   is blocked on file://) — degrades to a clear message otherwise. */
+(function () {
+  var overlay  = document.getElementById('doc-overlay');
+  var panel    = document.getElementById('doc-panel');
+  var bodyEl   = document.getElementById('doc-body');
+  var pathEl   = document.getElementById('doc-path');
+  var closeBtn = document.getElementById('doc-close');
+
+  function isMd(href) {
+    return href && /\.md(\?|#|$)/i.test(href) && !/^https?:\/\//i.test(href);
+  }
+  function open()  { overlay.classList.add('open');  overlay.setAttribute('aria-hidden', 'false'); }
+  function close() { overlay.classList.remove('open'); overlay.setAttribute('aria-hidden', 'true'); }
+
+  function renderMarkdown(md) {
+    /* Obsidian [[wikilinks]] -> styled, non-broken text (target resolution is a later pass). */
+    md = md.replace(/!?\[\[([^\]]+)\]\]/g, function (_, inner) {
+      var disp = inner.indexOf('|') >= 0 ? inner.split('|')[1] : inner;
+      disp = (disp.split('#')[0].trim()) || inner;
+      return '<span class="wikilink">' + disp + '</span>';
+    });
+    if (window.marked) { return (marked.parse ? marked.parse(md) : marked(md)); }
+    var esc = md.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return '<pre style="white-space:pre-wrap">' + esc + '</pre>';
+  }
+
+  function load(url, label) {
+    pathEl.textContent = label;
+    bodyEl.innerHTML = '<p id="doc-msg">Loading…</p>';
+    open();
+    fetch(url).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.text();
+    }).then(function (md) {
+      bodyEl.innerHTML = renderMarkdown(md);
+      bodyEl.scrollTop = 0;
+      panel.dataset.docurl = url;   /* re-home base for chained relative links */
+      wireChainLinks();
+    }).catch(function (e) {
+      bodyEl.innerHTML = '<p id="doc-msg">Could not load this document (' + e.message +
+        ').<br><br>The rendered view needs the wiki served over HTTP — open the explorer via a ' +
+        'local server (or GitHub Pages), not a file:// path.</p>';
+    });
+  }
+
+  function wireChainLinks() {
+    bodyEl.querySelectorAll('a[href]').forEach(function (a) {
+      if (!isMd(a.getAttribute('href'))) return;
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var abs = new URL(a.getAttribute('href'), panel.dataset.docurl || location.href);
+        load(abs.href, decodeURIComponent(abs.pathname.split('/').slice(-2).join('/')));
+      });
+    });
+  }
+
+  /* Intercept the card "Wiki" .md links. */
+  document.querySelectorAll('a[href]').forEach(function (a) {
+    var href = a.getAttribute('href');
+    if (!isMd(href)) return;
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      load(new URL(href, location.href).href, href);
+    });
+  });
+
+  closeBtn.addEventListener('click', close);
+  overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();
 </script>
 
 </body>

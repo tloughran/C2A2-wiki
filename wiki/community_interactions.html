@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Community Interactions — C2A2</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: #0a0a0f;
+    color: #d8d8e0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  body { padding: 0 0 80px; line-height: 1.6; }
+
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+  /* ── HEADER ── */
+  header.page-head {
+    padding: 52px 0 30px;
+    border-bottom: 1px solid #20202c;
+    margin-bottom: 36px;
+  }
+  .eyebrow {
+    color: #6a604e;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #C9A84C;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-bottom: 16px;
+  }
+  .lede {
+    font-size: 16px;
+    color: #b8b8c4;
+    max-width: 720px;
+  }
+  .lede em { color: #d8d8e0; font-style: italic; }
+
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #4a4a60;
+    margin: 8px 0 18px;
+  }
+
+  /* ── LEVEL CARDS ── */
+  .levels { display: flex; flex-direction: column; gap: 14px; }
+  details.level {
+    background: #101019;
+    border: 1px solid #20202c;
+    border-left: 3px solid var(--accent, #5B7FA5);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  details.level[open] { background: #12121d; }
+  details.level:hover { border-color: #2e2e40; border-left-color: var(--accent, #5B7FA5); }
+  summary.level-head {
+    list-style: none;
+    cursor: pointer;
+    padding: 18px 22px;
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+  }
+  summary.level-head::-webkit-details-marker { display: none; }
+  .lv-num {
+    font-family: Georgia, serif;
+    font-size: 13px;
+    color: var(--accent, #5B7FA5);
+    font-weight: 700;
+    letter-spacing: 1px;
+    flex-shrink: 0;
+    min-width: 78px;
+    text-transform: uppercase;
+  }
+  .lv-title {
+    font-size: 18px;
+    color: #e6e6ee;
+    font-weight: 600;
+    flex: 1;
+  }
+  .lv-where {
+    font-size: 13px;
+    color: #8a8a9a;
+    font-style: italic;
+    flex-basis: 100%;
+    margin: 6px 0 0 92px;
+  }
+  .chev { color: #4a4a60; font-size: 13px; transition: transform 0.18s; flex-shrink: 0; }
+  details.level[open] .chev { transform: rotate(90deg); }
+  .level-body {
+    padding: 4px 22px 22px 92px;
+    border-top: 1px solid #1c1c28;
+    margin-top: 2px;
+  }
+  .level-body .row { margin-top: 14px; }
+  .level-body .k {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent, #5B7FA5);
+    display: block;
+    margin-bottom: 3px;
+    opacity: 0.85;
+  }
+  .level-body .v { font-size: 14.5px; color: #c4c4d0; }
+  .level-body .coming .v { color: #9a9aaa; }
+  .coming-tag {
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1a1300;
+    background: repeating-linear-gradient(-45deg,#f5c800 0px,#f5c800 8px,#caa400 8px,#caa400 16px);
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-bottom: 6px;
+  }
+
+  /* ── CONSTRUCTION NOTE ── */
+  .construction {
+    margin: 34px 0 8px;
+    padding: 18px 22px;
+    background: #0d0d14;
+    border: 1px dashed #3a3320;
+    border-radius: 8px;
+    font-size: 13.5px;
+    color: #9a9080;
+  }
+  .construction strong { color: #C9A84C; }
+
+  /* ── DEV PATH (live from pathways.md) ── */
+  details.devpath {
+    margin-top: 40px;
+    background: #0d0d16;
+    border: 1px solid #20202c;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  summary.dev-head {
+    list-style: none;
+    cursor: pointer;
+    padding: 20px 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  summary.dev-head::-webkit-details-marker { display: none; }
+  .dev-head .chev { font-size: 14px; }
+  details.devpath[open] .dev-head .chev { transform: rotate(90deg); }
+  .dev-head h2 {
+    font-family: Georgia, serif;
+    font-size: 19px;
+    color: #5B7FA5;
+    font-weight: 700;
+  }
+  .dev-head .count {
+    font-size: 12px;
+    color: #5a5a70;
+    margin-left: auto;
+  }
+  .dev-body { padding: 0 22px 24px; }
+  .isme-note {
+    font-size: 13px;
+    color: #9a9aaa;
+    padding: 4px 0 16px;
+    border-bottom: 1px solid #1c1c28;
+    margin-bottom: 18px;
+  }
+  .isme-note .star { color: #C9A84C; }
+  .pw-group { margin-bottom: 22px; }
+  .pw-group > h3 {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #5B7FA5;
+    margin-bottom: 10px;
+    opacity: 0.85;
+  }
+  .pw {
+    display: flex;
+    gap: 12px;
+    padding: 9px 0;
+    border-top: 1px solid #16161f;
+    align-items: baseline;
+  }
+  .pw:first-child { border-top: none; }
+  .pw-id {
+    font-family: Georgia, serif;
+    font-size: 13px;
+    color: #5B7FA5;
+    font-weight: 700;
+    min-width: 26px;
+    flex-shrink: 0;
+  }
+  .pw-main { flex: 1; }
+  .pw-title { font-size: 14.5px; color: #d8d8e0; font-weight: 600; }
+  .pw-title .star { color: #C9A84C; margin-left: 6px; font-size: 12px; }
+  a.pw-link { color: inherit; text-decoration: none; border-bottom: 1px solid transparent; transition: color 0.12s, border-color 0.12s; }
+  a.pw-link:hover { color: #aab8d8; border-bottom-color: #3a4a6a; }
+  a.pw-link .ext { font-size: 10px; color: #4a4a60; vertical-align: super; }
+  a.pw-link:hover .ext { color: #5B7FA5; }
+  .pw-status {
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #8a8a9a;
+    border: 1px solid #2a2a3a;
+    border-radius: 3px;
+    padding: 1px 7px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  .pw-status.drafted { color: #6ea88a; border-color: #2c4538; }
+  .pw-status.pinned  { color: #c4923a; border-color: #4a3a1a; }
+  .pw-status.deferred{ color: #7a7a8a; }
+  .pw-desc { font-size: 13px; color: #8a8a9a; margin-top: 3px; }
+  .dev-fallback { font-size: 13.5px; color: #9a9aaa; padding: 8px 0; }
+  .dev-fallback code { color: #C9A84C; background: #16161f; padding: 1px 6px; border-radius: 3px; font-size: 12px; }
+  .dev-src { font-size: 11px; color: #4a4a60; margin-top: 14px; }
+  .dev-src code { color: #6a6a80; }
+
+  /* ── POP-UP MARKDOWN READER (Sociogram-style) ── */
+  #reader {
+    display: none;
+    position: fixed;
+    top: 64px; right: 28px;
+    width: 540px; height: 78vh;
+    min-width: 320px; min-height: 220px;
+    max-width: 96vw; max-height: 92vh;
+    background: #101019;
+    border: 1px solid #2e2e40;
+    border-radius: 10px;
+    box-shadow: 0 12px 48px rgba(0,0,0,0.6);
+    z-index: 1000;
+    flex-direction: column;
+    overflow: hidden;
+    resize: both;
+  }
+  #reader.open { display: flex; }
+  #reader-head {
+    flex-shrink: 0;
+    display: flex; align-items: center; gap: 7px;
+    padding: 10px 12px 10px 16px;
+    background: #15151f;
+    border-bottom: 1px solid #20202c;
+    cursor: move;
+    user-select: none;
+    touch-action: none;
+  }
+  #reader-title {
+    font-family: Georgia, serif;
+    font-size: 14px; color: #C9A84C; font-weight: 700;
+    flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .reader-btn {
+    background: #0a0a0f; border: 1px solid #2a2a3a; color: #aab8d8;
+    border-radius: 5px; cursor: pointer; font-size: 12px;
+    padding: 4px 9px; line-height: 1; white-space: nowrap;
+    transition: color .12s, border-color .12s, background .12s;
+  }
+  .reader-btn:hover:not(:disabled) { color: #fff; border-color: #5B7FA5; background: #16161f; }
+  .reader-btn:disabled { opacity: 0.32; cursor: default; }
+  #reader-next { color: #C9A84C; border-color: #4a3f1f; }
+  #reader-next:hover:not(:disabled) { color: #fff; border-color: #C9A84C; background: #1a160a; }
+  #reader-close { color: #888; font-size: 15px; padding: 3px 8px; border-color: transparent; background: transparent; }
+  #reader-close:hover { color: #C9A84C; background: transparent; border-color: transparent; }
+  #reader-body {
+    flex: 1; overflow: auto; padding: 16px 22px 28px;
+    font-size: 14px; color: #c4c4d0; line-height: 1.65;
+  }
+  #reader-body h1 { font-family: Georgia,serif; color:#e6e6ee; font-size:20px; margin:4px 0 12px; }
+  #reader-body h2 { font-family: Georgia,serif; color:#C9A84C; font-size:16px; margin:20px 0 8px; }
+  #reader-body h3 { color:#aab8d8; font-size:14px; margin:16px 0 6px; }
+  #reader-body h4 { color:#9a9aaa; font-size:13px; margin:14px 0 5px; }
+  #reader-body p { margin: 9px 0; }
+  #reader-body ul, #reader-body ol { margin: 9px 0 9px 22px; }
+  #reader-body li { margin: 4px 0; }
+  #reader-body code { background:#16161f; color:#C9A84C; padding:1px 5px; border-radius:3px; font-size:12.5px; font-family: ui-monospace, "SF Mono", monospace; }
+  #reader-body pre { background:#0a0a0f; border:1px solid #20202c; border-radius:6px; padding:12px 14px; overflow:auto; margin:10px 0; }
+  #reader-body pre code { background:none; color:#9fb4c9; padding:0; font-size:12px; white-space:pre; }
+  #reader-body blockquote { border-left:3px solid #2e2e40; margin:10px 0; padding:2px 0 2px 14px; color:#9a9aaa; }
+  #reader-body a { color:#aab8d8; }
+  #reader-body hr { border:none; border-top:1px solid #20202c; margin:16px 0; }
+  #reader-body strong { color:#e0e0ea; }
+  #reader-meta { font-size:11px; color:#5a5a70; margin-bottom:14px; padding-bottom:10px; border-bottom:1px solid #1c1c28; word-break: break-all; }
+  #reader-fallback { color:#9a9aaa; font-size:13.5px; }
+  #reader-fallback a { color:#C9A84C; }
+
+  @media (max-width: 640px) {
+    #reader { top: 8px; right: 4px; left: 4px; width: auto; height: 86vh; max-width: none; }
+    h1 { font-size: 24px; }
+    .lede { font-size: 15px; }
+    .lv-where, .level-body { margin-left: 0; }
+    .level-body { padding-left: 22px; }
+    .lv-num { min-width: auto; }
+    summary.level-head { flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="page-head">
+    <div class="eyebrow">C2A2 · Community Dialogue Accelerator/Detector System</div>
+    <h1>Community Interactions</h1>
+    <p class="lede">Community in C2A2 means something rich and multivalent &mdash; interaction happening at scales from the <em>intrapersonal</em> to the <em>meta-traditional</em>. This section maps those scales and invites you into each.</p>
+  </header>
+
+  <div class="section-label">Four Levels of Dialogue</div>
+  <div class="levels">
+
+    <details class="level" style="--accent:#5A8EAF" open>
+      <summary class="level-head">
+        <span class="lv-num">Level One</span>
+        <span class="lv-title">Intrapersonal Integration</span>
+        <span class="chev">&#9656;</span>
+        <span class="lv-where">Within a single mind or agent, across its many facets and partial selves.</span>
+      </summary>
+      <div class="level-body">
+        <div class="row"><span class="k">What it means</span><span class="v">Reconciliation of competing models, desires, and perspectives toward coherent agency.</span></div>
+        <div class="row"><span class="k">Why it matters</span><span class="v">Individual wholeness mirrors collective wholeness. Dignity emerges from recognizing the beauty and interconnectedness of one&rsquo;s own parts.</span></div>
+        <div class="row coming"><span class="coming-tag">Coming</span><span class="v">Artifacts exploring self-esteem, active inference, and the architecture of human choice.</span></div>
+      </div>
+    </details>
+
+    <details class="level" style="--accent:#3D9E89">
+      <summary class="level-head">
+        <span class="lv-num">Level Two</span>
+        <span class="lv-title">Small-Group Tradition</span>
+        <span class="chev">&#9656;</span>
+        <span class="lv-where">Within a research collective &mdash; like the fifteen thinker-groups in C2A2, each with shared aims, problems, and resources.</span>
+      </summary>
+      <div class="level-body">
+        <div class="row"><span class="k">What it means</span><span class="v">A community bound by common inquiry, learning together, building shared solutions over time.</span></div>
+        <div class="row"><span class="k">Why it matters</span><span class="v">Traditions <em>are</em> communities. They endure, they solve problems, they grow.</span></div>
+        <div class="row coming"><span class="coming-tag">Coming</span><span class="v">Convergence maps showing how thinkers within each research lineage address shared problems; PRS triplet interactions across disciplines.</span></div>
+      </div>
+    </details>
+
+    <details class="level" style="--accent:#C9A84C">
+      <summary class="level-head">
+        <span class="lv-num">Level Three</span>
+        <span class="lv-title">Inter-Tradition Dialogue</span>
+        <span class="chev">&#9656;</span>
+        <span class="lv-where">Between mature members of <em>different</em> research traditions, each deeply rooted in their own lineage.</span>
+      </summary>
+      <div class="level-body">
+        <div class="row"><span class="k">What it means</span><span class="v">Imaginative inhabitation of another&rsquo;s learning curve; bilingual maturity; encounter from a place of fullness rather than ignorance.</span></div>
+        <div class="row"><span class="k">Why it matters</span><span class="v">This is the science MacIntyre recovered in Aquinas &mdash; dialectical engagement that reveals synthesis, genuine difference, and new problems neither tradition saw alone.</span></div>
+        <div class="row coming"><span class="coming-tag">Coming</span><span class="v">Case studies, algorithmic frameworks, and computational explorations of what emerges when traditions meet richly informed.</span></div>
+      </div>
+    </details>
+
+    <details class="level" style="--accent:#8B5DAB">
+      <summary class="level-head">
+        <span class="lv-num">Level Four</span>
+        <span class="lv-title">Meta-Traditional Encounter</span>
+        <span class="chev">&#9656;</span>
+        <span class="lv-where">Between entire systems of thought and practice (C2A2 and alternative traditions; conscious realism and physicalism; etc.).</span>
+      </summary>
+      <div class="level-body">
+        <div class="row"><span class="k">What it means</span><span class="v">Mapping pathways for how complete worldviews interact, compete, and potentially transform one another.</span></div>
+        <div class="row"><span class="k">Why it matters</span><span class="v">Plurality without guidance leads nowhere. MacIntyre&rsquo;s work offers rules for how traditions <em>should</em> engage.</span></div>
+        <div class="row coming"><span class="coming-tag">Coming</span><span class="v">Frameworks for C2A2&rsquo;s dialogue with Sean Carroll, Donald Hoffman, and other mature alternative traditions.</span></div>
+      </div>
+    </details>
+
+  </div>
+
+  <div class="construction">
+    <strong>A note on construction.</strong> This section is under active development. What you see is a scaffold &mdash; the <em>shape</em> of what&rsquo;s coming, not the full architecture. We&rsquo;re building this live because we believe the structure itself is worth seeing as it forms. Open the levels above to explore what&rsquo;s available; more will arrive as the project unfolds.
+  </div>
+
+  <!-- ── DEV PATH: live view of architecture/pathways.md ── -->
+  <details class="devpath">
+    <summary class="dev-head">
+      <span class="chev">&#9656;</span>
+      <h2>The Road Ahead</h2>
+      <span class="count" id="dev-count">development pathways</span>
+    </summary>
+    <div class="dev-body">
+      <div class="isme-note" id="isme-note">
+        Where C2A2 is heading. <span class="star">&#9733;</span> marks pathways on the ISME demo critical path (presentation July 8&ndash;10, 2026).
+      </div>
+      <div id="dev-render"><div class="dev-fallback">Loading the development pathways&hellip;</div></div>
+      <div class="dev-src">Live from the project&rsquo;s single source of truth: <code>architecture/pathways.md</code>. New pathways appear here automatically.</div>
+    </div>
+  </details>
+
+</div>
+
+<!-- ── POP-UP MARKDOWN READER ── -->
+<div id="reader" aria-hidden="true">
+  <div id="reader-head">
+    <span id="reader-title">Pathway</span>
+    <button class="reader-btn" id="reader-prev" title="Previous pathway">&#9664;&nbsp;Prev</button>
+    <button class="reader-btn" id="reader-next" title="Next step in the dev path">Next&nbsp;Step&nbsp;&#9654;</button>
+    <button class="reader-btn" id="reader-close" title="Close reader">&#10005;</button>
+  </div>
+  <div id="reader-body"></div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var mount = document.getElementById('dev-render');
+  var countEl = document.getElementById('dev-count');
+  var ORDER = [];   // ordered pathways (inventory order) for reader Prev/Next
+
+  // Live hrefs are captured from the markdown links (pathways 00, 18-31 and any
+  // future linked additions) and prefixed to this page's location. This map only
+  // backfills the legacy bare items (01-17), whose filenames are stable.
+  var LEGACY = {
+    '01':'architecture/01_voice_dialogue.md',
+    '02':'architecture/02_ambient_viz.md',
+    '03':'architecture/03_probing_channel.md',
+    '04':'architecture/04_perspective_lattice.md',
+    '05':'architecture/05_whiteboard.md',
+    '06':'architecture/06_generative_canvas.md',
+    '07':'architecture/07_unsaid_edges.md',
+    '08':'architecture/08_prepared_presentation.md',
+    '09':'architecture/09_sensing.md',
+    '10':'architecture/10_space_time_peeling.md',
+    '11':'architecture/11_recursive_episode.md',
+    '12':'architecture/12_outreach_automation.md',
+    '13':'architecture/13_under_development_visualizer.md',
+    '14':'architecture/14_honesty_layer.md',
+    '15':'architecture/15_apprentice_mode.md',
+    '16':'architecture/16_durable_memory.md',
+    '17':'architecture/17_agent_developed_participant.md'
+  };
+  function resolveHref(it) {
+    if (it.href) {
+      if (/^https?:/i.test(it.href)) return it.href;
+      if (it.href.indexOf('architecture/') === 0) return it.href;
+      return 'architecture/' + it.href;
+    }
+    return LEGACY[it.id] || '';
+  }
+
+  function esc(s) {
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function parse(md) {
+    var start = md.indexOf('## Pathway inventory');
+    if (start === -1) return [];
+    var end = md.indexOf('## Bright pins');
+    if (end === -1) end = md.length;
+    var body = md.slice(start, end);
+    var lines = body.split('\n');
+    var groupRe = /^\*\*(.+?)\*\*\s*(?:\*\(.*\)\*)?\s*$/;
+    var itemRe = /^- (?:\[)?(\d{2})\s+[—-]\s+([^\]\n]+?)(?:\]\(([^)]+)\))?\s+[—-]\s+\*(.+?)\.?\*\s*(.*)$/;
+    var group = null, out = [], m;
+    for (var i = 0; i < lines.length; i++) {
+      var ln = lines[i];
+      m = ln.match(groupRe);
+      if (m) { group = m[1].trim(); continue; }
+      m = ln.match(itemRe);
+      if (m) {
+        out.push({ group: group, id: m[1], title: m[2].trim(), href: m[3] || '', status: m[4].trim(), desc: m[5].trim() });
+      }
+    }
+    return out;
+  }
+
+  function statusBits(statusRaw) {
+    var parts = statusRaw.split(',').map(function (p) { return p.trim(); }).filter(Boolean);
+    var isme = false, lifecycle = '', extras = [];
+    var known = { drafted: 1, outlined: 1, pinned: 1, deferred: 1 };
+    parts.forEach(function (p) {
+      var low = p.toLowerCase();
+      if (low === 'isme_critical') { isme = true; }
+      else if (known[low]) { lifecycle = low; }
+      else { extras.push(p); }
+    });
+    return { isme: isme, lifecycle: lifecycle, extras: extras };
+  }
+
+  function render(items) {
+    if (!items.length) { return fallback(); }
+    countEl.textContent = items.length + ' development pathways';
+    var groups = [], byGroup = {};
+    items.forEach(function (it) {
+      if (!byGroup[it.group]) { byGroup[it.group] = []; groups.push(it.group); }
+      byGroup[it.group].push(it);
+    });
+    var html = '';
+    ORDER.length = 0;
+    var gi = 0;
+    groups.forEach(function (g) {
+      html += '<div class="pw-group"><h3>' + esc(g || 'Other') + '</h3>';
+      byGroup[g].forEach(function (it) {
+        var sb = statusBits(it.status);
+        var star = sb.isme ? ' <span class="star" title="ISME demo critical path">&#9733;</span>' : '';
+        var pill = '';
+        if (sb.lifecycle) { pill += '<span class="pw-status ' + sb.lifecycle + '">' + sb.lifecycle + '</span>'; }
+        sb.extras.forEach(function (e) { pill += '<span class="pw-status">' + esc(e) + '</span>'; });
+        var desc = it.desc ? '<div class="pw-desc">' + esc(it.desc) + '</div>' : '';
+        var hr = resolveHref(it);
+        var titleHtml;
+        if (hr) {
+          var idx = gi++;
+          ORDER.push({ id: it.id, title: it.title, href: hr });
+          // href kept so cmd/ctrl/middle-click still opens the raw file; plain click opens the reader
+          titleHtml = '<a class="pw-link" data-idx="' + idx + '" href="' + esc(hr) + '" rel="noopener">' +
+                      esc(it.title) + ' <span class="ext">&#8599;</span></a>';
+        } else {
+          titleHtml = esc(it.title);
+        }
+        html += '<div class="pw"><span class="pw-id">' + esc(it.id) + '</span>' +
+                '<div class="pw-main"><span class="pw-title">' + titleHtml + star + '</span>' +
+                pill + desc + '</div></div>';
+      });
+      html += '</div>';
+    });
+    mount.innerHTML = html;
+
+    mount.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a.pw-link');
+      if (!a) return;
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return; // let new-tab gestures through
+      var idx = a.getAttribute('data-idx');
+      if (idx === null) return;
+      e.preventDefault();
+      openReader(parseInt(idx, 10));
+    });
+  }
+
+  function fallback() {
+    countEl.textContent = '';
+    mount.innerHTML = '<div class="dev-fallback">The development-pathways view loads from <code>architecture/pathways.md</code> ' +
+      'when this page is served over HTTP (the live site, or a local <code>python3 -m http.server</code>). ' +
+      'Opened directly from disk, the browser blocks the file read &mdash; that is expected.</div>';
+  }
+
+  // ── POP-UP READER ──
+  var reader  = document.getElementById('reader');
+  var rTitle  = document.getElementById('reader-title');
+  var rBody   = document.getElementById('reader-body');
+  var rPrev   = document.getElementById('reader-prev');
+  var rNext   = document.getElementById('reader-next');
+  var rClose  = document.getElementById('reader-close');
+  var curIdx  = -1;
+
+  function stripFront(md) {
+    if (md.slice(0, 3) === '---') {
+      var end = md.indexOf('\n---', 3);
+      if (end !== -1) { var nl = md.indexOf('\n', end + 1); return md.slice(nl + 1); }
+    }
+    return md;
+  }
+  function inlineMd(s) { // s is already HTML-escaped
+    s = s.replace(/`([^`]+)`/g, function (_, c) { return '<code>' + c + '</code>'; });
+    s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, function (_, t, u) {
+      var url = u.trim();
+      if (!/^https?:|^#|^architecture\//i.test(url) && /\.md$/i.test(url)) url = 'architecture/' + url;
+      return '<a href="' + url + '" target="_blank" rel="noopener">' + t + '</a>';
+    });
+    s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    s = s.replace(/(^|[^*])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+    return s;
+  }
+  function mdToHtml(md) {
+    md = stripFront(md);
+    var lines = md.split('\n'), out = '', inCode = false, codeBuf = [], listType = null;
+    function closeList() { if (listType) { out += '</' + listType + '>'; listType = null; } }
+    for (var i = 0; i < lines.length; i++) {
+      var ln = lines[i];
+      if (/^```/.test(ln)) {
+        if (!inCode) { closeList(); inCode = true; codeBuf = []; }
+        else { inCode = false; out += '<pre><code>' + esc(codeBuf.join('\n')) + '</code></pre>'; }
+        continue;
+      }
+      if (inCode) { codeBuf.push(ln); continue; }
+      if (/^\s*$/.test(ln)) { closeList(); continue; }
+      var h = ln.match(/^(#{1,4})\s+(.*)$/);
+      if (h) { closeList(); var lv = h[1].length; out += '<h' + lv + '>' + inlineMd(esc(h[2])) + '</h' + lv + '>'; continue; }
+      if (/^(-{3,}|\*{3,}|_{3,})\s*$/.test(ln)) { closeList(); out += '<hr>'; continue; }
+      var ul = ln.match(/^\s*[-*+]\s+(.*)$/);
+      var ol = ln.match(/^\s*\d+\.\s+(.*)$/);
+      if (ul) { if (listType !== 'ul') { closeList(); out += '<ul>'; listType = 'ul'; } out += '<li>' + inlineMd(esc(ul[1])) + '</li>'; continue; }
+      if (ol) { if (listType !== 'ol') { closeList(); out += '<ol>'; listType = 'ol'; } out += '<li>' + inlineMd(esc(ol[1])) + '</li>'; continue; }
+      var bq = ln.match(/^>\s?(.*)$/);
+      if (bq) { closeList(); out += '<blockquote>' + inlineMd(esc(bq[1])) + '</blockquote>'; continue; }
+      closeList(); out += '<p>' + inlineMd(esc(ln)) + '</p>';
+    }
+    if (inCode) { out += '<pre><code>' + esc(codeBuf.join('\n')) + '</code></pre>'; }
+    closeList();
+    return out;
+  }
+
+  function updateNav() {
+    rPrev.disabled = curIdx <= 0;
+    rNext.disabled = curIdx >= ORDER.length - 1;
+  }
+  function openReader(idx) {
+    if (idx < 0 || idx >= ORDER.length) return;
+    curIdx = idx;
+    var it = ORDER[idx];
+    rTitle.textContent = 'Pathway ' + it.id + ' — ' + it.title;
+    rBody.innerHTML = '<div id="reader-meta">Loading…</div>';
+    reader.classList.add('open');
+    reader.setAttribute('aria-hidden', 'false');
+    updateNav();
+    fetch(it.href + '?v=' + Date.now())
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+      .then(function (md) {
+        if (curIdx !== idx) return; // a later Next/Prev superseded this load
+        rBody.innerHTML = '<div id="reader-meta">' + esc(it.href) + '</div>' + mdToHtml(md);
+        rBody.scrollTop = 0;
+      })
+      .catch(function () {
+        rBody.innerHTML = '<div id="reader-fallback">Couldn’t load this file here — the browser blocks file reads when the page is opened directly from disk; it works over HTTP and on the live site. Open the raw file: <a href="' + esc(it.href) + '" target="_blank" rel="noopener">' + esc(it.href) + '</a></div>';
+      });
+  }
+  rPrev.addEventListener('click', function () { if (curIdx > 0) openReader(curIdx - 1); });
+  rNext.addEventListener('click', function () { if (curIdx < ORDER.length - 1) openReader(curIdx + 1); });
+  rClose.addEventListener('click', function () {
+    reader.classList.remove('open');
+    reader.setAttribute('aria-hidden', 'true');
+  });
+  document.addEventListener('keydown', function (e) {
+    if (!reader.classList.contains('open')) return;
+    if (e.key === 'Escape') rClose.click();
+    else if (e.key === 'ArrowRight' && curIdx < ORDER.length - 1) openReader(curIdx + 1);
+    else if (e.key === 'ArrowLeft' && curIdx > 0) openReader(curIdx - 1);
+  });
+
+  // drag by header
+  (function () {
+    var head = document.getElementById('reader-head');
+    var dragging = false, ox = 0, oy = 0;
+    head.addEventListener('pointerdown', function (e) {
+      if (e.target.closest('.reader-btn')) return;
+      dragging = true;
+      var r = reader.getBoundingClientRect();
+      ox = e.clientX - r.left; oy = e.clientY - r.top;
+      reader.style.right = 'auto'; reader.style.left = r.left + 'px'; reader.style.top = r.top + 'px';
+      try { head.setPointerCapture(e.pointerId); } catch (err) {}
+    });
+    head.addEventListener('pointermove', function (e) {
+      if (!dragging) return;
+      var x = Math.max(0, Math.min(window.innerWidth - 60, e.clientX - ox));
+      var y = Math.max(0, Math.min(window.innerHeight - 36, e.clientY - oy));
+      reader.style.left = x + 'px'; reader.style.top = y + 'px';
+    });
+    head.addEventListener('pointerup', function () { dragging = false; });
+    head.addEventListener('pointercancel', function () { dragging = false; });
+  })();
+
+  fetch('architecture/pathways.md?v=' + Date.now())
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+    .then(function (md) { render(parse(md)); })
+    .catch(function () { fallback(); });
+})();
+</script>
+
+</body>
+</html>
