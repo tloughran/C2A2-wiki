@@ -17,7 +17,7 @@ synthesis: "[[Day-083 - Daring - Contemporary]]"
 # Note: passes with advisory warnings only; editorial-paraphrase style flagged for Tom in 2026-05-15T04:29 QC log
 fidelity_checked: true
 tags: [summa, day/083, pars/I-II, q/44, q/45]
-last_qc_at: "2026-06-16T12:20:54"
+last_qc_at: "2026-06-24T16:20:29"
 last_qc_outcome: "pass"
 ---
 

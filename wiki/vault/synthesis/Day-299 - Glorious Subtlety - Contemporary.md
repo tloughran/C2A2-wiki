@@ -1,0 +1,56 @@
+---
+day: 299
+title: Glorious Subtlety (Contemporary)
+pairs_with: "[[Day-299 - Glorious Subtlety]]"
+length_target_words: 2200
+length_actual_words: 1264
+length_tier: medium
+karpathy_wiki_sources:
+  - "wiki/traditions/levin/prs_triplets.md (PRS-01 the form's command of its matter; PRS-03 morphological attractor; PRS-04 substrate-independent control)"
+  - "wiki/traditions/hoffman/prs_triplets.md (PRS-04 observer-dependent spacetime; PRS-13 spacetime bounds on unified consciousness)"
+  - "wiki/traditions/carroll/prs_triplets.md (PRS-01 emergence of spacetime/extension; PRS-11 emergence taxonomy)"
+  - "wiki/traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-11 scalable control)"
+evidence_strength_summary: "'Subtlety/agility = the form's command of its matter taken to a limit' is conceptual, with an empirical figure from substrate-independent morphological control (Levin); the 'spacetime as interface, so location is rendered not fundamental' move is interface-theoretic (Hoffman) and connects to emergent-spacetime physics (Carroll, frontier); the 'two bodies in one place by divine power' cases are explicitly miraculous-theological and NOT endorsed by physics; agility's temporality is consistent with motion being a real process (Carroll/Friston)."
+length_note: "Runs ~43% under the medium tier (1264 vs 2200): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach."
+length_ratio_to_target: 0.57
+mind_first_reframe: "Subtlety and agility are the body's responsiveness to the soul taken toward its limit — the form's command of its matter so complete that location and motion answer to the will; the 'two bodies in one place' cases are flagged as miraculous, not as physics."
+central_theme_thread: "The glorified body's spatial freedom is the perfected perspective's agency: control overflowing from the higher (soul) to the lower (body), so the embodied viewpoint moves and is placed as love directs — without the resource-scarcity that limits agency now."
+tags: [synthesis, day/299, theme/subtlety-and-agility-as-the-forms-command-of-matter-at-its-limit]
+last_qc_at: "2026-06-24T14:26:17"
+last_qc_outcome: "pass"
+---
+
+# Day 299 — Glorious Subtlety (Contemporary Parallel)
+
+## Frame
+
+Q.83–84 describe two "gifts" of the glorified body: **subtlety** and **agility**. Subtlety "takes its name from the power to penetrate"; Aquinas grounds it in the *soul's* grasp of its matter — the body is "subtle" because the soul penetrates and governs all of it, so the more fully the soul informs the body, the subtler the body. He then handles the hard case carefully: subtlety does *not* by itself let two bodies occupy one place (dimensive quantity still distinguishes individuals); two bodies in one place is possible **only by divine power**, which he parallels to accidents-without-substance in the Eucharist, to Christ passing through closed doors, and to the virginal birth. The glorified body is *palpable* by nature but can be made *impalpable* to non-glorified bodies by God's power — "unchanged in nature, though changed in glory." **Agility** is effortless, swift local motion overflowing from the soul's perfection; yet Aquinas denies *instantaneous* motion (motion actualizes a potential and is therefore temporal and divisible), holding instead that glorified motion is *imperceptibly fast*, with some bodies moving faster than others. The contemporary version: **what is a body whose location and motion answer fully to the will — and where, precisely, does the natural account end and the frankly miraculous begin?**
+
+## Problem
+
+The shared inquiry-problem is **the limit of a form's command over the matter it organizes — over that matter's placement and motion**. Aquinas is tracing one variable to its maximum: as the soul's command of the body deepens, the body's responsiveness (in penetration, palpability, motion) increases — up to a ceiling beyond which only divine power, not the body's own perfected nature, can go. The contemporary sciences of embodied control face the same structure whenever they ask how completely a higher-level controller can govern the behavior of the substrate it organizes — and where the physical limits on that control actually lie.
+
+## Resource
+
+Because form, embodiment, and spatial extension are at stake, the lead comes from the form-first and interface programs — with unusually careful evidence-flagging, because Aquinas himself sorts these articles into "natural" and "by divine power alone." The Levin-tradition program grounds the natural part. Tom's PRS-form record of Levin's work (PRS-01, *the form's command of its matter*; PRS-03, *morphological attractor*; PRS-04, *substrate-independent control*) makes "the soul's grasp of its matter determines the body's subtlety" tractable: the depth of an organizing pattern's command over its substrate is a *real, scalable variable*, and a more completely governed substrate is more responsive to the form's goals. Subtlety and agility, on this reading, are that variable taken toward its limit — the body's behavior answering ever more fully to the form that organizes it. The Hoffman-tradition program reframes the *spatial* puzzles. PRS-04 (*observer-dependent spacetime*) and PRS-13 (*spacetime bounds on unified consciousness*) demote location from fundamental to *rendered*: if extension and position are features of the perceptual interface rather than the ultimate furniture of reality, then "where" a glorified body is, and whether it is rendered to a non-glorified perceiver at all (palpability, impalpability), become interface-relative — which is structurally what Aquinas means by a body that, by a higher power, "loses its distinction of place from another." The Carroll-tradition program supplies the physics-frontier register: PRS-01 and PRS-11 (*emergence taxonomy*) include programs on which *spacetime itself is emergent* rather than basic — a serious contemporary research direction that makes "extension is not the bedrock of the real" a live scientific hypothesis, not mere mysticism. The Friston-tradition program addresses *agility*: PRS-04 (*organism as active modeler*) and PRS-11 (*scalable control*) frame motion as an active, *temporal* process of policy execution — consonant with Aquinas's firm denial of instantaneous motion: even a perfected body *moves through time*, only without resistance or resource-cost, "imperceptibly fast."
+
+But the guardrail must be explicit. Aquinas's *natural* claims — that the form's command of matter scales, that motion is temporal, that perception/palpability is interface-relative — have real contemporary purchase. His *two-bodies-in-one-place* cases he *himself* assigns to **divine power alone**, paralleling them to the Eucharist; these are not endorsed by physics (the exclusion of two bodies from one place is, physically, robust), and the synthesis must not launder a miracle-claim into a scientific one. The honest mapping is: *the responsiveness-of-matter-to-form* is the scientifically live variable; *the suspension of physical exclusion* is, on Aquinas's own account, a miracle, and is marked as such.
+
+## Solution (proposed, speculative)
+
+The contemporary-parallel response: **subtlety and agility are the body's responsiveness to the soul taken toward its limit — the form's command of its matter so complete that the body's placement, palpability, and motion answer to the will, without resistance or resource-cost; the cases where physical exclusion is suspended are, with Aquinas, flagged as miraculous, not as physics.** What it *shares* with Aquinas: subtlety grounded in the soul's command of the body; agility as effortless overflow of the soul's perfection; the firm denial of instantaneous motion; and the explicit assignment of the two-bodies cases to divine power. Where it *reframes*: Aquinas works with a substantial-form physics; the form-first program recasts "the soul's grasp of matter" as a scalable control variable, and the interface/emergent-spacetime programs make "location is not fundamental" a live hypothesis rather than a bare assertion — which *dignifies* the natural articles while *isolating* the miraculous ones. Where evidence is *firm*: that an organizing form's command of its substrate is a real, scalable variable, and that motion is a temporal process, are well-supported. Where *frontier*: emergent-spacetime physics is real but unsettled. Where *explicitly theological/miraculous*: the suspension of bodily exclusion — Aquinas's own "by divine power and that alone." The synthesis claims the responsiveness-of-matter-to-form structure and refuses to overclaim the miracle.
+
+## The central-theme thread
+
+The glorified body's spatial freedom is the project's perfected *agency*. In this life, a perspective's capacity to act is throttled by resource-scarcity — energy, friction, the body's lag and resistance (precisely the limitations that, in the project's frame, individuate us and force us to "work out salvation in fear and trembling"). Subtlety and agility are what that throttle looks like *released*: control overflowing from the higher (soul) to the lower (body), so the embodied viewpoint moves, is placed, and is made present or hidden exactly as love directs. Crucially, this is not the *abolition* of embodiment or of perspective — the body remains, motion remains temporal, viewpoints remain distinct (two glorified bodies will *not* in fact interpenetrate, "since to be penetrated is a mark of imperfection"). It is the embodied perspective freed from the *scarcity* that limited its agency, now able to act fully on what it loves. Loving unity, here, is perfected *agency* among distinct embodied perspectives, not their collapse into one undifferentiated thing.
+
+## Bridges
+
+- **Levin PRS-01 / PRS-03 / PRS-04 (empirical figure; load-bearing on the natural articles):** the depth of a form's command over its substrate as a real, scalable variable — subtlety/agility as that variable at its limit.
+- **Hoffman PRS-04 / PRS-13 (formal-to-speculative):** spacetime as interface — location and palpability become rendered, interface-relative, illuminating "loses its distinction of place."
+- **Carroll PRS-01 / PRS-11 (frontier physics):** emergent-spacetime programs make "extension is not bedrock" a live scientific hypothesis.
+- **Friston PRS-04 / PRS-11 (formal):** motion as a temporal, active process — consonant with Aquinas's denial of instantaneous motion.
+
+## Where this leaves us
+
+Q.83–84 perfect the body's *agency in space*. Day 300 (Q.85–86) closes the *Summa* proper: clarity (the glorified body's brightness as the visible expression of inner glory, visible or invisible at will) and the condition of the bodies of the damned. Open thread: clarity makes the body *transparent to the soul's state* — the natural culmination of every "gift," and the synthesis's chance to close the whole arc on the body as the legible expression of a perspective.

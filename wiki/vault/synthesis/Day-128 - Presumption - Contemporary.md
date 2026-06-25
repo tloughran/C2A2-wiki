@@ -15,7 +15,7 @@ evidence_strength_summary: "Despair as collapse of the goal-prior into a rigid l
 mind_first_reframe: "Despair and presumption are the two failure modes of a single control system. Despair is the collapse of the goal-prior: the agent stops treating the preferred state as reachable and ceases to seek it (Friston PRS-03/PRS-14 — a rigid, self-trapping low-hope attractor that resists update because updating costs short-term free energy). Presumption is the pathological down-weighting of the divergence signal: false certainty that the target is already secured, muting the very correction fear supplies (Friston PRS-16, mis-set precision). Under- and over-confidence in the reachable good, symmetric about rightly-ordered hope."
 central_theme_thread: "Both vices end the computation toward loving unity from the inside: despair abandons the target as unreachable; presumption pretends it is already held and so stops computing. Each is a refusal of the central theme's posture — a reachable-but-not-yet whole, sought under acknowledged limitation with dependence on what perceives more."
 tags: [synthesis, day/128, theme/despair-and-presumption]
-last_qc_at: "2026-06-16T08:21:45"
+last_qc_at: "2026-06-24T12:20:01"
 last_qc_outcome: "pass"
 ---
 

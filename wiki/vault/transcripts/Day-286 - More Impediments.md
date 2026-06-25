@@ -6,6 +6,9 @@ title: More Impediments
 summa_ref: Suppl. Q.57-58
 duration_seconds: 427
 word_count: 1295
+raw_asr_word_count: 1287
+length_tier: short
+fidelity_checked: true
 segment_count: 191
 caption_kind: asr
 language: en
@@ -13,6 +16,8 @@ fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-286 - More Impediments - Contemporary]]"
 tags: [summa, day/286, pars/suppl, q/57-58]
+last_qc_at: "2026-06-23T16:24:12"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 286 — More Impediments

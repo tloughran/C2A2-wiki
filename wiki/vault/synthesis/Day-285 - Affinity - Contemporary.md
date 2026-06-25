@@ -16,8 +16,8 @@ length_ratio_to_target: 0.60
 mind_first_reframe: "Affinity is real because a one-flesh union genuinely redraws the boundary of the related individual — the spouse's connections become the union's — just as integrating into a higher biological individual reconfigures the system's boundary."
 central_theme_thread: "Each marriage knits two webs of relation into one, a concrete down-payment on the project's final unity in which every perspective is related to every other — loving unity made contagious through structure."
 tags: [synthesis, day/285, theme/union-redraws-the-boundary-of-kin]
-last_qc_at: "2026-06-22T22:28:01"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-23T16:24:11"
+last_qc_outcome: "pass"
 ---
 
 # Day 285 — Affinity (Contemporary Parallel)

@@ -12,7 +12,12 @@ karpathy_wiki_sources:
   - "wiki/traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology, PRS-02 disorder necessary for growth)"
   - "wiki/traditions/wright/prs_triplets.md (canonical: covenant fidelity and restoration)"
 evidence_strength_summary: "Friston trust/integrity-condition formal; Levin defection used as analogy only (empirical at cell scale, not transferred as claim about persons); Rohr/Wright theological. The crime-impediment verdicts are normative-juridical."
+length_ratio_to_target: 0.64
+mind_first_reframe: "Fidelity is the integrity-condition of the marital higher-individual; adultery is a defection that corrupts the trust-prior the union runs on, and the crime-impediment marks that a union built on such defection inherits a compromised foundation."
+central_theme_thread: "Loving unity is built from perspectives that stay faithful to the shared computation despite the temptation to pursue the local good against the whole; fidelity is the central theme's perseverance-condition, and the insistence on restoration refuses to let defection have the last word."
 tags: [synthesis, day/288, theme/fidelity-as-integrity-of-the-union]
+last_qc_at: "2026-06-23T14:29:37"
+last_qc_outcome: "pass"
 ---
 
 # Day 288 — Adulterous Consequences (Contemporary Parallel)

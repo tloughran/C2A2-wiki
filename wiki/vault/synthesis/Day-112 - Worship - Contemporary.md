@@ -6,7 +6,7 @@ length_tier: short
 length_target_words: 1500
 length_actual_words: 1429
 length_ratio_to_target: 0.953
-length_note: "Below medium target (1700/2200, ratio 0.77, within ±25%) but substantively complete: covers two dense questions — Q.102 (causes of the ceremonial precepts) and Q.103 (their duration and cessation) — without padding. Per length policy: better short and substantive than padded."
+length_note: "Short tier (cleaned transcript 961 words); 1429 actual vs 1500 target = ratio 0.953, within ±10%. Covers two dense questions — Q.102 (causes of ceremonial precepts) and Q.103 (duration/cessation) — without padding."
 karpathy_wiki_sources:
   - "wiki/traditions/hoffman/wiki.md (FLAG-02 interface theory; sign-and-signified)"
   - "wiki/traditions/friston/wiki.md (FLAG-05 generative-model updating via embodied practice)"
@@ -18,8 +18,8 @@ karpathy_wiki_sources:
 mind_first_reframe: "Worship is the embodied practice through which limited-perspective agents re-cognize the deeper pattern their interface obscures; sign and signified are layered access to one underlying mind."
 central_theme_thread: "Perspective-limited agents cannot directly see the eternal pattern, so worship trains the recognition; ceremonial precepts scaffold formation, sacraments enact participation, and both progressively bring the agent into the loving-unity end."
 evidence_strength_summary: "Empirical: anthropological work on sacrifice and worship cross-culturally; costly-signaling theory; ritual-effects on group cohesion and individual self-regulation. Formal: predictive-processing accounts of embodied practice. Theological: Wright on supersession and Rohr's sacramental ontology."
-last_qc_at: "2026-06-16T20:23:11"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-24T22:26:35"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/112, theme/sacrifice, theme/sign-and-signified]
 ---
 

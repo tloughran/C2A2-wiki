@@ -6,6 +6,9 @@ title: Impediment of Consanguinity
 summa_ref: Suppl. Q.53-54
 duration_seconds: 522
 word_count: 1497
+raw_asr_word_count: 1485
+length_tier: short
+fidelity_checked: true
 segment_count: 231
 caption_kind: asr
 language: en
@@ -13,6 +16,8 @@ fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-284 - Impediment of Consanguinity - Contemporary]]"
 tags: [summa, day/284, pars/suppl, q/53-54]
+last_qc_at: "2026-06-23T16:24:10"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 284 — Impediment of Consanguinity

@@ -16,7 +16,7 @@ evidence_strength_summary: "Carroll emergent realism on price as a real pattern 
 mind_first_reframe: "The just price answers to a *real* pattern (Carroll PRS-04) — the labor, materials, and use-value that economic activity tracks — which the interface of money imperfectly represents (Hoffman PRS-03). Cheating in buying and selling is the exploitation of the interface gap: charging based on the buyer's need rather than the thing's worth (Q.77 a.1) is selling something that doesn't exist — the *premium* answers to nothing in the underlying reality. Cursing is the will-policy that wishes evil on another as such (Q.76 a.1) — the malformed model-target whose intention is the diminishment of another's good rather than any legitimate end."
 central_theme_thread: "Economic exchange is one of the dense arenas where limited perspectives meet: each agent sees only their own corner of the value-field, yet each transaction requires them to converge on a price. The just price is the locus where the central claim becomes economic: the part may not exploit the asymmetry of perspective (the buyer needs the thing badly; the seller knows the buyer's need) to extract value that answers to nothing in the underlying field. Cheating in buying and selling is the local-optimum-globally-defective move at the exchange interface — and Q.76's cursing is the will-policy at the same defective alignment, the agent intending another's evil as such."
 tags: [synthesis, day/156, theme/just-price-and-the-real-worth-of-exchange]
-last_qc_at: "2026-06-16T14:32:15"
+last_qc_at: "2026-06-24T16:20:45"
 last_qc_outcome: "pass"
 ---
 

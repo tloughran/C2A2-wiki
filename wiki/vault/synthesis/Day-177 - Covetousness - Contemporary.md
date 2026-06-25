@@ -17,7 +17,7 @@ karpathy_wiki_sources:
   - "Wright canonical: 'love of money the root of all evils' (1 Tim 6:10), treasure in heaven; Rohr canonical: second-half-of-life letting go (Falling Upward)"
 evidence_strength_summary: "Defection-from-the-whole is empirical-analogical (Levin); over-provisioning is formal (Friston); value-not-in-accumulation is formal (Carroll); covetousness-as-idolatry is theological (Wright, Rohr)."
 tags: [synthesis, day/177, theme/defection, theme/resource-estimate, q/118, q/119]
-last_qc_at: "2026-06-16T18:26:09"
+last_qc_at: "2026-06-25T00:19:02"
 last_qc_outcome: "pass"
 ---
 

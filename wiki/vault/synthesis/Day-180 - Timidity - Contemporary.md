@@ -16,7 +16,7 @@ karpathy_wiki_sources:
   - "Wright canonical: resurrection makes martyrdom rational (The Resurrection of the Son of God; Surprised by Hope); Rohr canonical: dying before you die, the False Self released"
 evidence_strength_summary: "Threat-precision and repertoire-narrowing are formal/empirical (Friston, Fredrickson); the martyrdom limit case rests on a theological premise (Wright, Rohr) the formalism alone cannot supply."
 tags: [synthesis, day/180, theme/martyrdom, theme/threat-precision, q/124, q/125]
-last_qc_at: "2026-06-16T22:26:25"
+last_qc_at: "2026-06-25T00:19:04"
 last_qc_outcome: "pass"
 ---
 

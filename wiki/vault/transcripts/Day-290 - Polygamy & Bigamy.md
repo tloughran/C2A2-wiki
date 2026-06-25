@@ -6,12 +6,17 @@ title: Polygamy & Bigamy
 summa_ref: Suppl. Q.65-66
 duration_seconds: 707
 word_count: 2135
+raw_asr_word_count: 2135
+length_tier: medium
 segment_count: 332
 caption_kind: asr
 language: en
 fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-290 - Polygamy & Bigamy - Contemporary]]"
+fidelity_checked: true
+last_qc_at: "2026-06-23T18:30:00"
+last_qc_outcome: pass
 tags: [summa, day/290, pars/suppl, q/65-66]
 ---
 

@@ -12,7 +12,12 @@ karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling — symmetric coupling)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-32 goal-directed cognition scaling cell->organism — mutual constitution of the whole)"
 evidence_strength_summary: "Wright scriptural (1 Cor 7) firm within scholarship; Rohr theological; Friston symmetric-coupling formal; the 'debt as paradigm of loving unity' reading is the project's central-theme claim, theological-conceptual."
+length_ratio_to_target: 0.68
+mind_first_reframe: "The marriage debt is the formalization of symmetric mutual self-gift — each agent ceding sole self-authority to the other equally — and this symmetry is what makes the union a real 'we' rather than a possession of one by the other."
+central_theme_thread: "Loving unity is achieved when each limited perspective gives itself wholly to the other without being erased; the symmetric mutual self-gift of the marriage debt is that claim in its most concrete human form."
 tags: [synthesis, day/289, theme/symmetric-self-giving-as-paradigm-of-unity]
+last_qc_at: "2026-06-23T14:29:38"
+last_qc_outcome: "pass"
 ---
 
 # Day 289 — The Marriage Debt (Contemporary Parallel)

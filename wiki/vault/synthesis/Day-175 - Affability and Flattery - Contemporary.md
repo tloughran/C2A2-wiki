@@ -18,7 +18,7 @@ evidence_strength_summary: "Positivity resonance as a bond-building mechanism is
 mind_first_reframe: "Affability names the empirically real micro-mechanism (positivity resonance) by which honest warmth builds the bonds a cooperative community runs on; flattery is its counterfeit — warmth decoupled from regard to manipulate another's self-model."
 central_theme_thread: "Loving unity is not only computed but lived among perspective-limited agents, and the texture of that life is warmth; affability is its small daily form, while flattery counterfeits the meeting and isolates the flatterer behind a performance."
 tags: [synthesis, day/175, theme/positivity-resonance, theme/honest-warmth, q/114, q/115]
-last_qc_at: "2026-06-16T18:26:08"
+last_qc_at: "2026-06-25T00:19:02"
 last_qc_outcome: "pass"
 ---
 

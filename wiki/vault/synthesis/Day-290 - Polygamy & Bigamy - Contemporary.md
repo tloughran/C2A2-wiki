@@ -12,7 +12,12 @@ karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-32 goal-directed cognition scaling cell->organism)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-7 relationship ontologically prior, PRS-04 embodied love)"
 evidence_strength_summary: "Friston dyadic-symmetry formal; the 'why two' argument is conceptual/structural; Wright on the biblical trajectory scriptural-scholarly; Aquinas's tolerated-under-old-dispensation point is historical-theological."
+length_ratio_to_target: 0.56
+mind_first_reframe: "The dyad is the unit of complete, symmetric mutual union because total equal self-gift cannot be divided among several without ceasing to be total or equal — polygamy yields a real but lower-symmetry union, not full one-flesh mutuality."
+central_theme_thread: "Self-gift must be not only symmetric but paired; the dyad is the elementary cell of the project's vision of unity, and the wider communion is built by interlinking complete dyadic unions rather than diluting self-gift across many."
 tags: [synthesis, day/290, theme/why-the-dyad-is-the-unit-of-complete-union]
+last_qc_at: "2026-06-23T14:29:39"
+last_qc_outcome: "pass"
 ---
 
 # Day 290 — Polygamy & Bigamy (Contemporary Parallel)

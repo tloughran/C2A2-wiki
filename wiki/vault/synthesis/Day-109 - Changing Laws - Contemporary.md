@@ -14,12 +14,12 @@ karpathy_wiki_sources:
   - "Rohr, Falling Upward (law-stability as developmental scaffold)"
 evidence_strength_summary: "Empirical: behavioral-economics work on status-quo bias and Schelling-point coordination; institutional persistence in political science. Formal: computational irreducibility. Theological: covenant-political readings."
 length_ratio_to_target: 0.956
-length_note: "Below medium target (2200) at 0.76, within ±25%. Q.96-97 covered in full (a.2/a.4/a.6, Q.97 a.1-4); lean by design, substantively complete, better short than padded per length policy."
+length_note: "Short tier (cleaned transcript 1179 words); 1434 actual vs 1500 target = ratio 0.956, within ±10%. Q.96-97 covered in full (Q.96 a.2/a.4/a.6, Q.97 a.1-4); lean by design, better short than padded."
 mind_first_reframe: "Human law is the Schelling-point coordination scheme a community has settled into, anchored on natural-law deep priors but irreducibly local; its binding force in conscience derives from alignment with deep priors plus coordination value plus pedagogical/developmental value, and law-change is legitimate only when it restores alignment or tracks a real shift in the community's moral state."
 central_theme_thread: "Perspective-limitation cuts both for and against the rule: individual agents are too limited to see the lawgiver's purpose in every case (so follow the letter), but coordinated communities can together see when applying the letter defeats the purpose — limited perspectives in coordinated community can jointly see more than any one of them can alone, which is the loving-unity telos at work in the social-political register."
 tags: [synthesis, day/109, theme/law-binding, theme/lawful-revision]
-last_qc_at: "2026-06-16T20:23:11"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-24T22:26:34"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 109 — Changing Laws (Contemporary)

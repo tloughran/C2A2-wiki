@@ -16,7 +16,7 @@ evidence_strength_summary: "Friston on role-targets and conscience as a higher-p
 mind_first_reframe: "A polity's truth-tracking apparatus depends on the testimony of role-occupants who carry knowledge no other component has. The witness is, on this reading, a node carrying privileged input; the natural-law override of civil compulsion (confessional seal; testimony against a faith requirement) marks the cases where a higher-precision prior — the trust constitutive of second-personal relations or the integrity of a religious office — properly outweighs the apparatus's general claim on input. Counsel is the apparatus's mechanism for ensuring the defendant's perspective is *competently* integrated; the lawyer who defends an unjust cause corrupts the integration by trying to win on procedural inputs the case does not support."
 central_theme_thread: "Days 152-153 together name the procedural side of the central claim. Partial perspectives compose into the polity's response to defection only if each role-occupant supplies their honest part. Witnesses carry inputs no other node has; their integrity is the integrity of the apparatus's information. Counsel ensures every perspective is integrated, including the defendant's. When the role-occupant defects (false witness, dishonest counsel), the apparatus fails to converge on the whole that the partial perspectives, honestly aggregated, would have approximated. Working out salvation in fear and trembling, in legal procedure, looks like honest role-occupation."
 tags: [synthesis, day/153, theme/the-procedural-apparatus-witnesses-and-counsel]
-last_qc_at: "2026-06-16T06:25:55"
+last_qc_at: "2026-06-24T08:20:22"
 last_qc_outcome: "pass"
 ---
 

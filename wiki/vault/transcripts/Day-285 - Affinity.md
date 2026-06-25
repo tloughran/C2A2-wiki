@@ -6,6 +6,9 @@ title: Affinity
 summa_ref: Suppl. Q.55-56
 duration_seconds: 580
 word_count: 1744
+raw_asr_word_count: 1731
+length_tier: short
+fidelity_checked: true
 segment_count: 276
 caption_kind: asr
 language: en
@@ -13,6 +16,8 @@ fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-285 - Affinity - Contemporary]]"
 tags: [summa, day/285, pars/suppl, q/55-56]
+last_qc_at: "2026-06-23T16:24:11"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 285 — Affinity

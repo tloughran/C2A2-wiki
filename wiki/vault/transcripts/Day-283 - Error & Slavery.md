@@ -6,6 +6,9 @@ title: Error & Slavery
 summa_ref: Suppl. Q.51-52
 duration_seconds: 350
 word_count: 1054
+raw_asr_word_count: 1048
+length_tier: short
+fidelity_checked: true
 segment_count: 154
 caption_kind: asr
 language: en
@@ -13,6 +16,8 @@ fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-283 - Error & Slavery - Contemporary]]"
 tags: [summa, day/283, pars/suppl, q/51-52]
+last_qc_at: "2026-06-23T16:24:10"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 283 — Error & Slavery

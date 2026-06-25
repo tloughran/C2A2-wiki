@@ -6,6 +6,9 @@ title: Goods of Marriage
 summa_ref: Suppl. Q.49-50
 duration_seconds: 552
 word_count: 1695
+raw_asr_word_count: 1687
+length_tier: short
+fidelity_checked: true
 segment_count: 247
 caption_kind: asr
 language: en
@@ -13,6 +16,8 @@ fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-282 - Goods of Marriage - Contemporary]]"
 tags: [summa, day/282, pars/suppl, q/49-50]
+last_qc_at: "2026-06-23T16:24:09"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 282 — Goods of Marriage
