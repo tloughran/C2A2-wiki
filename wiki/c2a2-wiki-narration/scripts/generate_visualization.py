@@ -1501,6 +1501,40 @@ function toggleSubstrateContext(checked) {
   rebuildGraph();
 }
 window.applyAgentSociogramPreset = applyAgentSociogramPreset;
+
+// ── SCOPE-AWARE DATASET TOTALS (status denominators) ──
+// This file backs two views: the Sociogram (default, no hash) and the Agent
+// Map, which iframes wiki_narration.html#agents and calls
+// applyAgentSociogramPreset() to turn the runtime-actor 'agent-activity' layer
+// on (and the wiki groups off). The #graph-status / #edge-status "total" must
+// count only the layer the current view can address, or the readout strands the
+// other layer in the denominator forever — the Sociogram could never reach
+// N / N, because the 26 agent-activity nodes (and their ~2k layer edges) are
+// never showable here. Scope is read from live state: agent-activity visibility
+// is set ONLY by the preset (it is in EXCLUDED_FROM_ALL, has no checkbox), so it
+// is a reliable Sociogram-vs-Agent-Map signal. In agent scope the totals are
+// left unchanged (the agent layer is the subject of that view). The non-agent
+// totals are static, so they are computed once and memoized. Note: 'agents' (the
+// agent-definition files) is a normal shown group and is intentionally NOT
+// excluded — only the runtime 'agent-activity' layer is.
+function inAgentScope() { return !!groupVisibility['agent-activity']; }
+var _nonAgentNodeTotal = null;
+var _nonAgentEdgeTotal = null;
+function nodeTotalForScope() {
+  if (inAgentScope()) return NODES.length;
+  if (_nonAgentNodeTotal === null) {
+    _nonAgentNodeTotal = NODES.filter(function(n) { return n.group !== 'agent-activity'; }).length;
+  }
+  return _nonAgentNodeTotal;
+}
+function edgeTotalForScope() {
+  if (inAgentScope()) return LINKS.length;
+  if (_nonAgentEdgeTotal === null) {
+    _nonAgentEdgeTotal = LINKS.filter(function(e) { return !e.layer; }).length;
+  }
+  return _nonAgentEdgeTotal;
+}
+
 // Physics safety cap (simulation only). Score-aware so degradation is
 // graceful. Agent-layer edges (≤~2k, low log-weight scores) are exempt and
 // always retained — otherwise they'd be silently out-scored by wiki hubs and
@@ -1624,8 +1658,8 @@ function applyEdgeFilters() {
   // passing all active cuts (uncapped) / total (whole dataset, incl. agents).
   var statusEl = document.getElementById('edge-status');
   if (statusEl) {
-    statusEl.textContent = budget + ' shown / ' + allowed.length + ' pass / ' + LINKS.length + ' total edges';
-    statusEl.title = 'Edges — shown (top-scored that fit the zoom budget; nothing else is rendered) / passing all active cuts / total in dataset';
+    statusEl.textContent = budget + ' shown / ' + allowed.length + ' pass / ' + edgeTotalForScope() + ' total edges';
+    statusEl.title = 'Edges — shown (top-scored that fit the zoom budget; nothing else is rendered) / passing all active cuts / total addressable in this view';
   }
   updateBannerCounts();
 }
@@ -2100,7 +2134,7 @@ function rebuildGraph() {
   // by applyEdgeFilters(); the old "edges in view" here counted DOM-loaded
   // (capped) edges, contradicting the budgeted "shown" readout.
   var statusEl = document.getElementById('graph-status');
-  if (statusEl) statusEl.textContent = activeNodes.length + ' / ' + NODES.length + ' nodes';
+  if (statusEl) statusEl.textContent = activeNodes.length + ' / ' + nodeTotalForScope() + ' nodes';
 
   // Rebuild SVG elements — clear and recreate
   linkG.selectAll('*').remove();
@@ -2400,8 +2434,8 @@ function runFocus(rawAfterPrefix) {
     setNarrationText('Focus syntax: focus: <entity> ~ <group>   e.g.  focus: levin ~ summa');
     return;
   }
-  var entityKeys = resolveGroupKeys(sides[0].split(/\s+/));
-  var groupKeys  = resolveGroupKeys(sides[1].split(/\s+/));
+  var entityKeys = resolveGroupKeys(sides[0].split(/\\s+/));
+  var groupKeys  = resolveGroupKeys(sides[1].split(/\\s+/));
   if (!entityKeys.length || !groupKeys.length) {
     setNarrationText('Focus: could not resolve entity or group. Use traditions/<name> (e.g. levin) and a structure group (e.g. summa, master, architecture).');
     return;
@@ -2494,7 +2528,7 @@ function parseBareGuess(raw) {
   // fails do we split it on internal hyphens and resolve the parts ("Levin-Friston").
   // If ANY piece fails to resolve, return null so runSearch falls through to text
   // search. Returns a deduped list of group keys, or null.
-  var pieces = String(raw).replace(/["']/g, ' ').split(/[\s,]+/);
+  var pieces = String(raw).replace(/["']/g, ' ').split(/[\\s,]+/);
   var keys = [];
   function push(k) { if (k && keys.indexOf(k) === -1) keys.push(k); }
   for (var i = 0; i < pieces.length; i++) {
@@ -2825,7 +2859,7 @@ var C2A2_SOC_SYSTEM_WEB = 'You are a retrieval assistant for the C2A2 wiki socio
 // is already shown). Shared by the broker and direct-provider paths so the
 // highlight/cmd logic has a single source of truth.
 function applyAIResult(content, parseFailMsg) {
-  var m = String(content || '').match(/\{[\s\S]*\}/);
+  var m = String(content || '').match(/\\{[\\s\\S]*\\}/);
   if (!m) { setNarrationText(parseFailMsg || 'AI returned a response that could not be parsed. Uncheck "Ask AI" to use local search.'); return null; }
   var parsed;
   try { parsed = JSON.parse(m[0]); } catch (e) { setNarrationText('AI response JSON parse failed.'); return null; }
@@ -2852,7 +2886,7 @@ function runSearchAI(rawQuery) {
   var useWeb = !!(extBox && extBox.checked);
 
   // Pre-rank visible nodes by term overlap; trim to 30 for the prompt budget.
-  var qTerms = query.toLowerCase().split(/\s+/).filter(Boolean);
+  var qTerms = query.toLowerCase().split(/\\s+/).filter(Boolean);
   var scored = [];
   for (var i = 0; i < NODES.length; i++) {
     var n = NODES[i];
