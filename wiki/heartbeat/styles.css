@@ -89,6 +89,10 @@ h1 {
   color: #f7ecd2;
 }
 
+/* Hero title recolored to brand gold (header-unify 2026-06-25). Scoped to the
+   hero so wiki-content h1s keep their cream; serif + clamp size kept (hero). */
+.hb-hero h1 { color: var(--gold); }
+
 h2 {
   margin-bottom: 4px;
   font-family: Georgia, "Times New Roman", serif;

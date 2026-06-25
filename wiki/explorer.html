@@ -21,12 +21,17 @@
   }
 
   /* ROW 1 — brand + chapter tabs + record button */
+  /* Three reserved columns: brand | tab-strip (shrinks) | Record.
+     minmax(0,1fr) lets the middle column shrink below its content as the
+     window narrows (so the tabs resize), and the auto Record column is
+     always reserved on the right — Record can never overlap a tab. */
   #row1 {
     height: 48px;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
     align-items: center;
+    column-gap: 10px;
     padding: 0 16px;
-    gap: 4px;
     border-bottom: 1px solid #2a2a3a;
     flex-shrink: 0;
     overflow: visible;
@@ -46,13 +51,16 @@
     flex-shrink: 0;
   }
 
-  /* BRAND */
+  /* BRAND — stacked: C2A2 popped above the descriptor so the wordmark's
+     horizontal footprint shrinks and the chapter tabs slide left into the
+     reclaimed space. The descriptor wraps within a narrow column. */
   .brand {
     display: flex;
-    align-items: baseline;
-    gap: 7px;
-    margin-right: 18px;
-    white-space: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1px;
+    margin-right: 16px;
     flex-shrink: 0;
   }
   .brand-c2a2 {
@@ -60,14 +68,34 @@
     font-weight: 800;
     font-family: Georgia, serif;
     font-size: 16px;
+    line-height: 1.05;
     letter-spacing: 0.5px;
   }
   .brand-full {
     color: #6a604e;
-    font-size: 11px;
+    font-size: 9.5px;
+    line-height: 1.15;
     font-family: -apple-system, sans-serif;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.2px;
+    max-width: 150px;
+    white-space: normal;
   }
+
+  /* CHAPTER-TAB SCROLL REGION — holds the five chapter buttons between the
+     fixed brand (left) and the fixed Record button (right). flex:1 with
+     min-width:0 lets it absorb whatever space is left; if the labels can't
+     all fit it scrolls horizontally rather than pushing Record off-screen,
+     so Record is visible at every width. */
+  #chap-tabs {
+    min-width: 0;                   /* allow the grid column to shrink below content */
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    overflow-x: auto;               /* last-resort scroll only at extreme narrow widths */
+    overflow-y: hidden;
+    scrollbar-width: none;          /* Firefox: hide the scrollbar */
+  }
+  #chap-tabs::-webkit-scrollbar { display: none; }  /* WebKit: hide it too */
 
   /* CHAPTER TABS (row 1) */
   .chap-btn {
@@ -75,15 +103,29 @@
     border: none;
     border-bottom: 2px solid transparent;
     color: #666;
-    padding: 6px 14px;
-    font-size: 12.5px;
+    padding: 5px 12px;
     font-family: -apple-system, sans-serif;
     letter-spacing: 0.3px;
     white-space: nowrap;
+    flex-shrink: 0;
     cursor: default;
     position: relative;
     transition: color 0.15s, border-color 0.15s;
+    /* two-line label: a small shared "kicker" line over the distinctive word(s),
+       so each tab is narrow enough that all five + Record fit without scrolling */
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.12;
   }
+  .chap-btn .kick {
+    font-size: 9px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    opacity: 0.62;
+  }
+  .chap-btn .main { font-size: 12.5px; }
   .chap-btn:hover { color: #ccc; }
   .chap-btn.active {
     color: #C9A84C;
@@ -164,7 +206,8 @@
 
 /* ── RECORDING (moved from wiki_narration.html) ── */
 #btn-record {
-  margin-left: auto;
+  flex-shrink: 0;            /* reserved in its own grid column; never overlapped */
+  margin-left: 0;
   background: transparent;
   border: 1px solid #3a3a4a;
   color: #ccc;
@@ -292,11 +335,13 @@
       <span class="brand-c2a2">C2A2</span>
       <span class="brand-full">Community Dialogue Accelerator/Detector System</span>
     </span>
-    <button class="chap-btn" id="chap-intro" data-src="start_here.html">Start here</button>
-    <button class="chap-btn" id="chap-community" data-src="community_explorer.html">Community Explorer</button>
-    <button class="chap-btn" id="chap-education">Community Education</button>
-    <button class="chap-btn active" id="chap-tools">Community Accelerator Tools</button>
-    <button class="chap-btn stub">Community Interaction</button>
+    <div id="chap-tabs">
+      <button class="chap-btn" id="chap-intro" data-src="start_here.html"><span class="kick">&nbsp;</span><span class="main">Start here</span></button>
+      <button class="chap-btn" id="chap-community" data-src="community_explorer.html"><span class="kick">Community</span><span class="main">Explorer</span></button>
+      <button class="chap-btn" id="chap-education"><span class="kick">Community</span><span class="main">Education</span></button>
+      <button class="chap-btn active" id="chap-tools"><span class="kick">Community</span><span class="main">Accelerator Tools</span></button>
+      <button class="chap-btn" id="chap-interaction" data-src="community_interactions.html"><span class="kick">Community</span><span class="main">Interactions</span></button>
+    </div>
     <button id="btn-record" onclick="toggleRecord()">&#9679; Record</button>
   </div>
 
@@ -398,6 +443,15 @@
     if (active) setFrame(active.getAttribute('data-src') + '?v=' + Date.now());
     setActiveChapter(chapEducation);
   });
+  // "Community Interactions" is a single full page (four-level scaffold + Dev Path);
+  // loads into the iframe and hides both sub-tab rows, like the other single-page chapters.
+  var chapInteraction = document.getElementById('chap-interaction');
+  if (chapInteraction) chapInteraction.addEventListener('click', function() {
+    setFrame(chapInteraction.getAttribute('data-src') + '?v=' + Date.now());
+    if (row2) row2.style.display = 'none';
+    if (row2edu) row2edu.style.display = 'none';
+    setActiveChapter(chapInteraction);
+  });
 
   // ── BACK-NAVIGATION RESYNC ──
   // When the browser restores this page from history, Chrome may restore the
@@ -431,6 +485,10 @@
       if (row2) row2.style.display = 'none';
       if (row2edu) row2edu.style.display = 'none';
       setActiveChapter(chapCommunity);
+    } else if (chapInteraction && chapInteraction.getAttribute('data-src') === path) {
+      if (row2) row2.style.display = 'none';
+      if (row2edu) row2edu.style.display = 'none';
+      setActiveChapter(chapInteraction);
     }
     /* default src (wiki_narration.html) already matches the default shell state */
   }
@@ -690,9 +748,12 @@ function dismissRecordingModal() {
 function showHelp() {
   var chapCommunity = document.getElementById('chap-community');
   var chapEducation = document.getElementById('chap-education');
+  var chapInteraction = document.getElementById('chap-interaction');
   var src;
   if (chapCommunity && chapCommunity.classList.contains('active')) {
     src = 'community_explorer.html';
+  } else if (chapInteraction && chapInteraction.classList.contains('active')) {
+    src = 'community_interactions.html';
   } else if (chapEducation && chapEducation.classList.contains('active')) {
     var activeEdu = document.querySelector('#row2-edu .tab-btn.active');
     src = activeEdu ? activeEdu.getAttribute('data-src') : '';
@@ -701,6 +762,10 @@ function showHelp() {
     src = active ? active.getAttribute('data-src') : '';
   }
   var descriptions = {
+    'community_interactions.html': {
+      title: 'Community Interactions',
+      body: 'A scaffold for the four levels at which C2A2 understands community dialogue: Level One Intrapersonal Integration (within a single mind or agent), Level Two Small-Group Tradition (within a research collective), Level Three Inter-Tradition Dialogue (between mature members of different traditions), and Level Four Meta-Traditional Encounter (between whole systems of thought). Each level opens to its meaning, why it matters, and what artifacts are coming. The "Road Ahead" section renders the project\'s development pathways live from the single-source pathways index, so newcomers can see where C2A2 is heading and which pieces are on the ISME demo critical path. This section is an actively-developing scaffold — the shape of what is coming, not the finished architecture.'
+    },
     'community_explorer.html': {
       title: 'Community Explorer',
       body: 'A force-directed graph of 156 curated real-world communities across eight types (Tradition-Constituted Enquiry, Practice, Contemplative, Civic, Scientific Frontier, Interdisciplinary Synthesis, Local, Professional Guilds). Edges are PRS similarity: communities tackling kindred problems sit close together. Filter by type, isolate the exemplary (Q3) set, click a node for its Problem-Resource-Solution narrative, click an edge to compare its endpoints. These 156 are a quality-curated subset of the full directory shown under the Cards sub-tab (1,006 communities); the "?" beside the Graph/Cards toggle explains how the two relate. This is the Pathway-20 substrate: the C2A2 method applied to communities rather than thinkers.'

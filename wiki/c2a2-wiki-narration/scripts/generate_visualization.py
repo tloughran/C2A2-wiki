@@ -649,7 +649,8 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
 <div id="app">
   <!-- HEADER -->
   <div id="header">
-    <div class="title">C2A2 Wiki Narration</div>
+    <!-- In-iframe tool title dropped 2026-06-25 (Tom): redundant with the shell's
+         active sub-tab, and wrong style/size. The control bar stays. -->
     <!-- Stats pills removed 2026-05-11: header was overflowing at 1200px viewport
          and the same numbers are echoed at the bottom-left of the canvas
          ("N nodes, E edges") and update with filters there. -->
