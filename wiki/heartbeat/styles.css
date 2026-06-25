@@ -153,9 +153,18 @@ h3 {
   min-height: 150px;
   padding: 14px;
   position: relative;
+  /* now a <button> jumping to its tab — reset native chrome */
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.1s;
 }
+.hb-spine-step:hover { border-color: var(--line-strong); transform: translateY(-1px); }
+.hb-spine-step:focus-visible { outline: 2px solid var(--gold-soft); outline-offset: 2px; }
 
-.hb-spine-step span {
+.hb-spine-num {
   display: inline-grid;
   place-items: center;
   width: 28px;
@@ -165,6 +174,27 @@ h3 {
   border-radius: 50%;
   color: var(--gold-soft);
   font-weight: 800;
+}
+
+.hb-badge {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.hb-badge.live    { color: var(--green); border: 1px solid rgba(143, 191, 107, 0.5); background: rgba(143, 191, 107, 0.10); }
+.hb-badge.planned { color: var(--muted); border: 1px solid var(--line-strong); background: transparent; }
+
+.hb-spine-count {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--gold-soft);
 }
 
 .hb-spine-step strong {
@@ -602,3 +632,174 @@ h3 {
 }
 .hb-auth-btn:hover { border-color: var(--gold-soft); }
 .hb-auth-msg { color: var(--muted); font-size: 12px; }
+
+/* ── Refresh control (Pulse) ─────────────────────────────────────────────── */
+.hb-refresh-btn {
+  border: 1px solid var(--line-strong);
+  background: rgba(93, 183, 164, 0.10);
+  color: var(--teal);
+  border-radius: 6px;
+  padding: 7px 12px;
+  font: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.hb-refresh-btn:hover { border-color: var(--teal); }
+.hb-refresh-btn:disabled { opacity: 0.5; cursor: progress; }
+.hb-refresh-status { color: var(--dim); font-size: 12px; align-self: center; }
+
+/* ── Distill: expandable full summary + honesty tag ──────────────────────── */
+.hb-fullsummary {
+  margin: 0 0 10px;
+  border-left: 2px solid var(--line-strong);
+  padding-left: 10px;
+}
+.hb-fullsummary > summary {
+  cursor: pointer;
+  color: var(--teal);
+  font-size: 13px;
+  list-style: none;
+}
+.hb-fullsummary > summary::-webkit-details-marker { display: none; }
+.hb-fullsummary > summary::before { content: "▸ "; color: var(--dim); }
+.hb-fullsummary[open] > summary::before { content: "▾ "; }
+.hb-fullsummary p { margin: 8px 0 2px; color: var(--text); }
+.hb-gen-tag {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 7px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 11px;
+  color: var(--dim);
+  cursor: help;
+}
+
+/* ── Lens clarity: help "?", active count, save status ───────────────────── */
+.hb-help-btn {
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--muted);
+  border-radius: 999px;
+  width: 18px; height: 18px;
+  line-height: 1;
+  font-size: 12px;
+  padding: 0;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.hb-help-btn:hover { color: var(--gold-soft); border-color: var(--gold-soft); }
+.hb-lens-active {
+  margin-left: 8px;
+  font-size: 11px;
+  color: var(--gold-soft);
+  padding: 1px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+.hb-lens-helprow { margin: 0 0 8px; }
+.hb-help-link {
+  border: none;
+  background: transparent;
+  color: var(--teal);
+  font: inherit;
+  font-size: 13px;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+}
+.hb-help-link:hover { color: var(--gold-soft); }
+.hb-lens-popover[hidden] { display: none; }
+.hb-lens-popover {
+  margin: 0 0 12px;
+  padding: 11px 13px;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: #14141d;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+.hb-lens-popover strong { color: var(--gold-soft); }
+.hb-lens-statusrow { margin: 0 0 10px; }
+.hb-save-status { font-size: 12px; }
+.hb-save-status.saving { color: var(--gold-soft); }
+.hb-save-status.saved { color: var(--green); }
+.hb-save-status.idle { color: var(--dim); }
+
+/* ── History tab ─────────────────────────────────────────────────────────── */
+.hb-dim { color: var(--dim); }
+.hb-history-cols { align-items: start; }
+.hb-hist-list { display: flex; flex-direction: column; gap: 8px; }
+.hb-hist-item {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #111118;
+  color: var(--muted);
+  cursor: pointer;
+}
+.hb-hist-item:hover { border-color: var(--line-strong); }
+.hb-hist-item.active { border-color: var(--gold-soft); background: rgba(201, 168, 76, 0.08); }
+.hb-hist-item strong { color: var(--gold-soft); font-size: 14px; }
+.hb-hist-item span { font-size: 12px; color: var(--dim); }
+
+/* ── My Lens editor ──────────────────────────────────────────────────────── */
+.hb-le-preview { color: var(--teal); font-size: 13px; align-self: center; }
+.hb-check {
+  display: flex; align-items: center; gap: 8px;
+  color: var(--muted); font-size: 13px; margin: 4px 0;
+}
+.hb-check input { accent-color: var(--gold); }
+.hb-le-actions { gap: 8px; flex-wrap: wrap; }
+.hb-le-actions button {
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--muted);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font: inherit;
+  cursor: pointer;
+}
+.hb-le-actions button:hover { border-color: var(--gold-soft); color: var(--gold-soft); }
+#le-keywords {
+  width: 100%;
+  background: var(--panel-2);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 7px 10px;
+  font: inherit;
+}
+
+/* ── Roadmap tab ─────────────────────────────────────────────────────────── */
+.hb-roadmap { display: flex; flex-direction: column; gap: 10px; }
+.hb-rm-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #111118;
+}
+.hb-rm-item strong { color: #f8efd2; }
+.hb-rm-item p { margin: 4px 0 0; color: var(--muted); line-height: 1.45; }
+.hb-badge {
+  flex: none;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  margin-top: 2px;
+}
+.hb-badge.done { color: var(--green); border-color: var(--green); }
+.hb-badge.current { color: var(--gold-soft); border-color: var(--gold-soft); }
+.hb-badge.planned { color: var(--dim); }

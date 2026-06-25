@@ -91,33 +91,6 @@ const FALLBACK_DIGEST = {
   ]
 };
 
-// ── Static structural content (architecture, not live signals) ───────────────
-const wikiPages = [
-  { type: "Source note", title: "Weekly heartbeat digest", text: "Immutable run output: sources reached, items checked, top stories, tags, relevance scores, and source health.", pills: ["raw-backed", "run-log", "citable"] },
-  { type: "Topic page", title: "Agent governance boundaries", text: "Compiled synthesis of agent runtime permissions, human override, local data limits, and governance checkpoints.", pills: ["compiled", "cross-source", "updates"] },
-  { type: "Community page", title: "STEM educator AI literacy lens", text: "A local view over the heartbeat for educators, including classroom risk, curriculum relevance, and review cadence.", pills: ["local-lens", "preferences", "roles"] },
-  { type: "Contradiction log", title: "Automated assessment promises versus high-stakes risk", text: "Tracks tensions between AI grading utility, curriculum authority, student agency, and accountability.", pills: ["honesty-layer", "review-needed"] },
-  { type: "Decision record", title: "Email-first notification baseline", text: "Preserves why email is enabled before SMS, WhatsApp, or Signal in the production rollout sequence.", pills: ["provenance", "operations"] },
-  { type: "Index", title: "Heartbeat wiki map", text: "A human-readable map of source notes, topic pages, community lenses, decision records, and federation exports.", pills: ["navigation", "schema"] }
-];
-
-const lensItems = [
-  ["Filtering lens", "Sources, keywords, topic priorities, excluded categories, and local relevance rules."],
-  ["Ranking criteria", "Urgency, community impact, evidence quality, novelty, and actionability."],
-  ["Communication preferences", "Digest cadence, channel, length, tone, and escalation threshold."],
-  ["Memory controls", "Accepted recommendations, rejected patterns, standing community context, and reset/export controls."],
-  ["Consent boundaries", "What stays local, what can be shared with peers, and what can enter the public graph."]
-];
-
-const federationItems = [
-  { type: "Local-first instance", title: "Community-owned heartbeat", text: "Each community stores its own sources, user preferences, summaries, rankings, and review history.", pills: ["autonomy", "local-data"] },
-  { type: "Federated search", title: "Parallel query across instances", text: "A search request can ask multiple community instances for allowed summaries, then aggregate results without centralizing all data.", pills: ["scale", "edge"] },
-  { type: "Selective contribution", title: "Stars, rationale, and public graph edges", text: "Communities can contribute high-value signals, comments, and rankings while withholding private user data.", pills: ["consent", "shared-graph"] },
-  { type: "Permission hierarchy", title: "Owner, admin, editor, reader, public", text: "Every export and action is constrained by role, policy version, and explicit community-level sharing rules.", pills: ["roles", "audit"] },
-  { type: "Computation persistence", title: "Summaries are durable artifacts", text: "Useful computations are stored, searched historically, and revised with provenance instead of being rederived every query.", pills: ["memory", "search"] },
-  { type: "10k-instance shape", title: "Simple protocols before heavy centralization", text: "Design favors small, reliable local nodes plus narrow shared protocols for discovery, search, and public graph updates.", pills: ["resilience", "replicable"] }
-];
-
 // ── State ────────────────────────────────────────────────────────────────────
 let DIGEST = FALLBACK_DIGEST;
 
@@ -180,7 +153,16 @@ function renderMetrics() {
   set("m-items", m.items_checked);
   set("m-high", m.high_relevance);
   set("m-themes", m.primary_themes);
-  set("hero-digest", m.items_checked != null ? m.items_checked + " updates" : "—");
+
+  // Live hero + spine state (replaces the old asserted labels).
+  const signals = Array.isArray(DIGEST.signals) ? DIGEST.signals : [];
+  const withLong = signals.filter(function (s) { return s.long_summary; }).length;
+  const genLabel = DIGEST.generated && DIGEST.generated !== "fallback" ? DIGEST.generated : "embedded fallback";
+  set("hero-generated", genLabel);
+  set("hero-signals", (signals.length) + " · " + (m.items_checked != null ? m.items_checked : "—"));
+  set("hero-summaries", withLong + " of " + signals.length);
+  set("spine-sources", (m.sources_reached != null ? m.sources_reached : "—") + " sources →");
+  set("spine-items", (m.items_checked != null ? m.items_checked : "—") + " items · " + genLabel + " →");
 
   // Seed banner: visible only when the snapshot is seed/sample data.
   const banner = document.getElementById("seed-banner");
@@ -209,25 +191,72 @@ function facets() {
   return { sources: sources, tags: tags };
 }
 
+// Apply the reader's lens (+ optional text query) to a signal list. Shared by
+// Pulse (live digest) and the lens-editor preview.
+function applyLens(signals, query) {
+  const L = PREFS.lens;
+  const q = (query || "").trim().toLowerCase();
+  return signals.filter(function (signal) {
+    const sigTags = Array.isArray(signal.tags) ? signal.tags : [];
+    const blob = [signal.title, signal.source, signal.summary, signal.implication, sigTags.join(" ")].join(" ").toLowerCase();
+    if (q && blob.indexOf(q) === -1) return false;
+    if (L.sources.length && L.sources.indexOf(signal.source) === -1) return false;
+    if (L.exclude_sources && L.exclude_sources.length && L.exclude_sources.indexOf(signal.source) !== -1) return false;
+    if ((signal.relevance || 0) < (L.min_relevance || 0)) return false;
+    if (L.exclude_tags.length && sigTags.some(function (t) { return L.exclude_tags.indexOf(t) !== -1; })) return false;
+    if (L.keywords && L.keywords.length && !L.keywords.some(function (k) { return blob.indexOf(String(k).toLowerCase()) !== -1; })) return false;
+    return true;
+  });
+}
+
+// Build one signal card (shared by Pulse + History).
+function signalCardHTML(signal) {
+  const tags = (Array.isArray(signal.tags) ? signal.tags : []).map(function (tag) {
+    return '<span class="hb-pill ' + tagClass(tag) + '">' + esc(tag) + "</span>";
+  }).join("");
+  const title = signal.url
+    ? '<a href="' + escAttrUrl(signal.url) + '" target="_blank" rel="noopener">' + esc(signal.title) + "</a>"
+    : esc(signal.title);
+  var fullSummary = "";
+  if (signal.long_summary) {
+    var prov = signal.summary_provenance || {};
+    var provBits = [];
+    if (prov.kind) provBits.push(esc(prov.kind));
+    if (prov.model) provBits.push(esc(prov.model));
+    if (prov.generated) provBits.push(esc(prov.generated));
+    var provLine = provBits.length
+      ? '<span class="hb-gen-tag" title="This summary was written by a model from the source text, and stored with provenance (honesty layer).">' + provBits.join(" · ") + "</span>"
+      : "";
+    fullSummary =
+      '<details class="hb-fullsummary">' +
+        "<summary>Full summary " + provLine + "</summary>" +
+        "<p>" + esc(signal.long_summary) + "</p>" +
+      "</details>";
+  }
+  return (
+    '<article class="hb-signal">' +
+      "<h4>" + title + "</h4>" +
+      "<p>" + esc(signal.summary) + "</p>" +
+      fullSummary +
+      "<p><strong>Community implication:</strong> " + esc(signal.implication) + "</p>" +
+      '<div class="hb-signal-meta">' +
+        '<span class="hb-pill">' + esc(signal.source) + "</span>" +
+        '<span class="hb-pill gold">relevance ' + esc(signal.relevance) + "</span>" +
+        tags +
+      "</div>" +
+    "</article>"
+  );
+}
+
 function renderSignals() {
   const target = document.getElementById("signal-list");
   if (!target) return;
   const input = document.getElementById("signal-search");
   const query = ((input && input.value) || "").trim().toLowerCase();
-  const L = PREFS.lens, R = PREFS.ranking;
+  const R = PREFS.ranking;
   const signals = Array.isArray(DIGEST.signals) ? DIGEST.signals : [];
 
-  let rows = signals.filter(function (signal) {
-    const sigTags = Array.isArray(signal.tags) ? signal.tags : [];
-    // text search
-    const blob = [signal.title, signal.source, signal.summary, signal.implication, sigTags.join(" ")].join(" ").toLowerCase();
-    if (query && blob.indexOf(query) === -1) return false;
-    // lens: source include / min relevance / excluded tags
-    if (L.sources.length && L.sources.indexOf(signal.source) === -1) return false;
-    if ((signal.relevance || 0) < (L.min_relevance || 0)) return false;
-    if (L.exclude_tags.length && sigTags.some(function (t) { return L.exclude_tags.indexOf(t) !== -1; })) return false;
-    return true;
-  });
+  let rows = applyLens(signals, query);
 
   // ranking
   const boostOf = function (signal) {
@@ -242,52 +271,127 @@ function renderSignals() {
   } else { // relevance (default), with priority-tag boost
     rows = rows.slice().sort(function (a, b) { return boostOf(b) - boostOf(a); });
   }
-  target.innerHTML = rows.map(function (signal) {
-    const tags = (Array.isArray(signal.tags) ? signal.tags : []).map(function (tag) {
-      return '<span class="hb-pill ' + tagClass(tag) + '">' + esc(tag) + "</span>";
-    }).join("");
-    const title = signal.url
-      ? '<a href="' + escAttrUrl(signal.url) + '" target="_blank" rel="noopener">' + esc(signal.title) + "</a>"
-      : esc(signal.title);
-    return (
-      '<article class="hb-signal">' +
-        "<h4>" + title + "</h4>" +
-        "<p>" + esc(signal.summary) + "</p>" +
-        "<p><strong>Community implication:</strong> " + esc(signal.implication) + "</p>" +
-        '<div class="hb-signal-meta">' +
-          '<span class="hb-pill">' + esc(signal.source) + "</span>" +
-          '<span class="hb-pill gold">relevance ' + esc(signal.relevance) + "</span>" +
-          tags +
-        "</div>" +
-      "</article>"
-    );
-  }).join("") || '<div class="hb-signal"><p>No signals match the current filter.</p></div>';
+  target.innerHTML = rows.map(signalCardHTML).join("") ||
+    '<div class="hb-signal"><p>No signals match the current filter.</p></div>';
 }
 
-function renderCards(id, items) {
-  const target = document.getElementById(id);
-  if (!target) return;
-  target.innerHTML = items.map(function (item) {
-    const pills = item.pills.map(function (pill) {
-      return '<span class="hb-pill">' + esc(pill) + "</span>";
-    }).join("");
-    return (
-      '<article class="hb-card">' +
-        '<div class="hb-card-type">' + esc(item.type) + "</div>" +
-        "<h3>" + esc(item.title) + "</h3>" +
-        "<p>" + esc(item.text) + "</p>" +
-        "<footer>" + pills + "</footer>" +
-      "</article>"
-    );
+// ── History: browse past heartbeat snapshots (data/snapshots/index.json) ──────
+var HISTORY = { list: null, current: null };
+function loadHistory() {
+  return fetch("data/snapshots/index.json?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(function (j) { HISTORY.list = (j && j.snapshots) || []; renderHistoryList(); })
+    .catch(function () { HISTORY.list = []; renderHistoryList(); });
+}
+function renderHistoryList() {
+  const box = document.getElementById("history-dates");
+  if (!box) return;
+  if (!HISTORY.list || !HISTORY.list.length) {
+    box.innerHTML = '<p class="hb-dim">No saved snapshots yet. Each heartbeat refresh archives a dated snapshot here.</p>';
+    return;
+  }
+  box.innerHTML = HISTORY.list.map(function (s) {
+    return '<button type="button" class="hb-hist-item" data-file="' + esc(s.file) + '" data-date="' + esc(s.date) + '">' +
+      '<strong>' + esc(s.date) + "</strong>" +
+      '<span>' + esc(s.signals) + " signals · " + esc(s.items_checked == null ? "—" : s.items_checked) + " checked · " + esc(s.primary_themes || "") + "</span>" +
+    "</button>";
   }).join("");
+  box.querySelectorAll(".hb-hist-item").forEach(function (b) {
+    b.addEventListener("click", function () { openSnapshot(b.dataset.file, b.dataset.date); });
+  });
+  // auto-open the newest on first view
+  if (!HISTORY.current && HISTORY.list[0]) openSnapshot(HISTORY.list[0].file, HISTORY.list[0].date);
+}
+function openSnapshot(file, date) {
+  HISTORY.current = file;
+  document.querySelectorAll("#history-dates .hb-hist-item").forEach(function (b) {
+    b.classList.toggle("active", b.dataset.file === file);
+  });
+  const detail = document.getElementById("history-detail");
+  if (detail) detail.innerHTML = '<p class="hb-dim">Loading ' + esc(date) + "…</p>";
+  fetch("data/snapshots/" + encodeURIComponent(file) + "?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(function (snap) { renderSnapshotDetail(snap, date); })
+    .catch(function () { if (detail) detail.innerHTML = '<p class="hb-dim">Could not load this snapshot.</p>'; });
+}
+function renderSnapshotDetail(snap, date) {
+  const detail = document.getElementById("history-detail");
+  if (!detail) return;
+  const m = snap.metrics || {};
+  const signals = Array.isArray(snap.signals) ? snap.signals : [];
+  detail.innerHTML =
+    '<div class="hb-metric-row">' +
+      '<div class="hb-metric"><span>Date</span><strong>' + esc(date) + "</strong></div>" +
+      '<div class="hb-metric"><span>Sources reached</span><strong>' + esc(m.sources_reached == null ? "—" : m.sources_reached) + "</strong></div>" +
+      '<div class="hb-metric"><span>Items checked</span><strong>' + esc(m.items_checked == null ? "—" : m.items_checked) + "</strong></div>" +
+      '<div class="hb-metric"><span>Primary themes</span><strong>' + esc(m.primary_themes || "—") + "</strong></div>" +
+    "</div>" +
+    '<div class="hb-list">' + (signals.map(signalCardHTML).join("") || '<div class="hb-signal"><p>No signals in this snapshot.</p></div>') + "</div>";
 }
 
-function renderLens() {
-  const target = document.getElementById("lens-list");
-  if (!target) return;
-  target.innerHTML = lensItems.map(function (pair) {
-    return '<div class="hb-lens-item"><strong>' + esc(pair[0]) + "</strong><span>" + esc(pair[1]) + "</span></div>";
-  }).join("");
+// ── My Lens: full editor (the same PREFS the Pulse panel uses) ────────────────
+function _setVal(id, v) { const el = document.getElementById(id); if (el && document.activeElement !== el) el.value = String(v == null ? "" : v); }
+function _setChecked(id, v) { const el = document.getElementById(id); if (el) el.checked = !!v; }
+
+function fillChips(boxId, all, selected) {
+  const box = document.getElementById(boxId);
+  if (!box) return;
+  box.innerHTML = all.map(function (v) { return chip(v, selected.indexOf(v) !== -1); }).join("") ||
+    '<span class="hb-chip-empty">none in current digest</span>';
+  box.querySelectorAll(".hb-chip").forEach(function (b) {
+    b.addEventListener("click", function () { toggleInList(selected, b.dataset.val); afterPrefChange(); });
+  });
+}
+
+function updateLensEditorPreview() {
+  const el = document.getElementById("le-preview");
+  if (!el) return;
+  const signals = Array.isArray(DIGEST.signals) ? DIGEST.signals : [];
+  const n = applyLens(signals, "").length;
+  el.textContent = n + " of " + signals.length + " current signals match this lens";
+}
+
+// Render the editor controls from PREFS. Static controls are bound once in
+// wireEvents; only the chip rows (which are rebuilt here) get fresh handlers.
+function renderLensEditor() {
+  if (!document.getElementById("le-sources")) return;   // tab not in DOM
+  const f = facets(), L = PREFS.lens, R = PREFS.ranking;
+  fillChips("le-sources", f.sources, L.sources);
+  fillChips("le-exsources", f.sources, L.exclude_sources);
+  fillChips("le-extags", f.tags, L.exclude_tags);
+  fillChips("le-pritags", f.tags, R.priority_tags);
+  const kw = document.getElementById("le-keywords");
+  if (kw && document.activeElement !== kw) kw.value = (L.keywords || []).join(", ");
+  _setVal("le-minrel", L.min_relevance);
+  _setVal("le-sort", R.sort);
+  _setVal("le-cadence", PREFS.communication.digest_cadence);
+  _setChecked("le-consent-stars", PREFS.consent.share_stars);
+  _setChecked("le-consent-comments", PREFS.consent.share_comments);
+  _setChecked("le-consent-rank", PREFS.consent.contribute_aggregate_rank);
+  updateLensEditorPreview();
+}
+
+function exportLens() {
+  try {
+    const blob = new Blob([JSON.stringify(PREFS, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "c2a2-heartbeat-lens.json";
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  } catch (e) { /* ignore */ }
+}
+function importLensFile(file) {
+  const reader = new FileReader();
+  reader.onload = function () {
+    try {
+      const obj = JSON.parse(reader.result);
+      if (window.HB_setPrefs) window.HB_setPrefs(obj); else { PREFS = mergePrefs(obj); renderAll(); }
+      savePrefs();
+      setSaveStatus("saved");
+    } catch (e) { /* invalid file, ignore */ }
+  };
+  reader.readAsText(file);
 }
 
 // ── Lens controls (the preferences panel) ────────────────────────────────────
@@ -327,7 +431,50 @@ function toggleInList(list, val) {
 function afterPrefChange() {
   savePrefs();
   renderLensControls();
+  renderLensEditor();
   renderSignals();
+  setSaveStatus("saved");
+  updateLensStatus();
+}
+
+// ── Lens clarity: active-filter count + save/sync status ──────────────────────
+function activeFilterCount() {
+  var n = 0;
+  if (PREFS.lens.sources.length) n += PREFS.lens.sources.length;
+  if (PREFS.lens.exclude_sources && PREFS.lens.exclude_sources.length) n += PREFS.lens.exclude_sources.length;
+  if (PREFS.lens.exclude_tags.length) n += PREFS.lens.exclude_tags.length;
+  if (PREFS.lens.keywords && PREFS.lens.keywords.length) n += PREFS.lens.keywords.length;
+  if (PREFS.ranking.priority_tags && PREFS.ranking.priority_tags.length) n += PREFS.ranking.priority_tags.length;
+  if ((PREFS.lens.min_relevance || 0) > 0) n += 1;
+  if (PREFS.ranking.sort && PREFS.ranking.sort !== "relevance") n += 1;
+  var input = document.getElementById("signal-search");
+  if (input && input.value.trim()) n += 1;
+  return n;
+}
+function updateLensStatus() {
+  var n = activeFilterCount();
+  var countEl = document.getElementById("lens-active-count");
+  if (countEl) countEl.textContent = n ? (n + " active") : "no filters";
+  var reset = document.getElementById("pref-reset");
+  if (reset) reset.textContent = n ? ("Reset lens (" + n + ")") : "Reset lens";
+}
+// Shows "Saving… / Saved ✓ · (synced|on this device)" so the silent save is visible.
+var _saveStatusTimer = null;
+function setSaveStatus(phase) {
+  var el = document.getElementById("lens-save-status");
+  if (!el) return;
+  var synced = !!window.HB_signedIn;
+  if (phase === "saving") {
+    el.textContent = "Saving…";
+    el.className = "hb-save-status saving";
+    return;
+  }
+  el.textContent = "Saved ✓ · " + (synced ? "synced to account" : "on this device");
+  el.className = "hb-save-status saved";
+  if (_saveStatusTimer) clearTimeout(_saveStatusTimer);
+  _saveStatusTimer = setTimeout(function () {
+    if (el) { el.textContent = synced ? "synced to account" : "stored on this device — sign in to sync"; el.className = "hb-save-status idle"; }
+  }, 2200);
 }
 
 // ── View switching ───────────────────────────────────────────────────────────
@@ -343,10 +490,73 @@ function activateView(name) {
 // ── Init ─────────────────────────────────────────────────────────────────────
 function wireEvents() {
   document.querySelectorAll(".hb-tab").forEach(function (button) {
-    button.addEventListener("click", function () { activateView(button.dataset.view); });
+    button.addEventListener("click", function () {
+      activateView(button.dataset.view);
+      if (button.dataset.view === "history" && !HISTORY.list) loadHistory();
+      if (button.dataset.view === "lens") renderLensEditor();
+    });
   });
+
+  // Spine steps jump to the tab that realizes them (live) or the Roadmap (planned).
+  document.querySelectorAll(".hb-spine-step[data-goto]").forEach(function (step) {
+    step.addEventListener("click", function () {
+      const v = step.dataset.goto;
+      activateView(v);
+      if (v === "history" && !HISTORY.list) loadHistory();
+      if (v === "lens") renderLensEditor();
+      const nav = document.querySelector(".hb-tabs");
+      if (nav && nav.scrollIntoView) nav.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+
+  // ── My Lens editor: bind static controls once (chips bind on each render) ──
+  const leKw = document.getElementById("le-keywords");
+  if (leKw) leKw.addEventListener("input", function () {
+    PREFS.lens.keywords = leKw.value.split(",").map(function (s) { return s.trim(); }).filter(Boolean);
+    afterPrefChange();
+  });
+  const bindSel = function (id, fn) { const el = document.getElementById(id); if (el) el.addEventListener("change", function () { fn(el.value); afterPrefChange(); }); };
+  bindSel("le-minrel", function (v) { PREFS.lens.min_relevance = parseInt(v, 10) || 0; });
+  bindSel("le-sort", function (v) { PREFS.ranking.sort = v; });
+  bindSel("le-cadence", function (v) { PREFS.communication.digest_cadence = v; });
+  const bindChk = function (id, key, grp) { const el = document.getElementById(id); if (el) el.addEventListener("change", function () { PREFS[grp][key] = el.checked; afterPrefChange(); }); };
+  bindChk("le-consent-stars", "share_stars", "consent");
+  bindChk("le-consent-comments", "share_comments", "consent");
+  bindChk("le-consent-rank", "contribute_aggregate_rank", "consent");
+  const leExport = document.getElementById("le-export");
+  if (leExport) leExport.addEventListener("click", exportLens);
+  const leImportBtn = document.getElementById("le-import");
+  const leImportFile = document.getElementById("le-import-file");
+  if (leImportBtn && leImportFile) {
+    leImportBtn.addEventListener("click", function () { leImportFile.click(); });
+    leImportFile.addEventListener("change", function () { if (leImportFile.files[0]) importLensFile(leImportFile.files[0]); leImportFile.value = ""; });
+  }
+  const leReset = document.getElementById("le-reset");
+  if (leReset) leReset.addEventListener("click", function () { PREFS = defaultPrefs(); afterPrefChange(); });
   const search = document.getElementById("signal-search");
-  if (search) search.addEventListener("input", renderSignals);
+  if (search) search.addEventListener("input", function () { renderSignals(); updateLensStatus(); });
+
+  // Refresh: re-fetch the snapshot (cache-busted) and repaint. The MVP of "live".
+  const refresh = document.getElementById("hb-refresh");
+  if (refresh) refresh.addEventListener("click", refreshDigest);
+
+  // Lens help popover (the "?" next to "Your lens"). Toggle without flipping the
+  // surrounding <details> open/closed.
+  const help = document.getElementById("lens-help-btn");
+  const pop = document.getElementById("lens-help-pop");
+  if (help && pop) {
+    help.addEventListener("click", function (e) {
+      e.preventDefault(); e.stopPropagation();
+      pop.hidden = !pop.hidden;
+      help.setAttribute("aria-expanded", pop.hidden ? "false" : "true");
+    });
+    document.addEventListener("click", function (e) {
+      if (!pop.hidden && e.target !== pop && !pop.contains(e.target) && e.target !== help) {
+        pop.hidden = true;
+        help.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
 
   const minrel = document.getElementById("pref-minrel");
   if (minrel) minrel.addEventListener("change", function () { PREFS.lens.min_relevance = parseInt(minrel.value, 10) || 0; afterPrefChange(); });
@@ -361,15 +571,14 @@ function wireEvents() {
 function renderAll() {
   renderMetrics();
   renderLensControls();
+  renderLensEditor();
   renderSignals();
-  renderCards("wiki-pages", wikiPages);
-  renderCards("federation-list", federationItems);
-  renderLens();
 }
 
 function loadDigest() {
   // Try the static snapshot first; fall back silently if unavailable.
-  return fetch("data/digest.json", { cache: "no-store" })
+  // Cache-busted so a Refresh always pulls the newest exported snapshot.
+  return fetch("data/digest.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
     .then(function (json) {
       if (json && typeof json === "object") DIGEST = json;
@@ -377,7 +586,26 @@ function loadDigest() {
     .catch(function () { DIGEST = FALLBACK_DIGEST; });
 }
 
+// Refresh control: re-fetch the snapshot and repaint, with a small status line.
+function refreshDigest() {
+  var btn = document.getElementById("hb-refresh");
+  var status = document.getElementById("hb-refresh-status");
+  if (btn) btn.disabled = true;
+  if (status) status.textContent = "Checking…";
+  return loadDigest().then(function () {
+    renderAll();
+    if (status) {
+      var when = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+      var stamp = (DIGEST.generated && DIGEST.generated !== "fallback")
+        ? "snapshot " + esc(DIGEST.generated) : "embedded fallback";
+      status.textContent = "Updated " + when + " · " + stamp;
+    }
+    if (btn) btn.disabled = false;
+  });
+}
+
 loadPrefs();
 wireEvents();
 renderAll();           // immediate paint from fallback
-loadDigest().then(renderAll); // repaint if a snapshot loaded
+updateLensStatus();
+loadDigest().then(function () { renderAll(); updateLensStatus(); }); // repaint if a snapshot loaded

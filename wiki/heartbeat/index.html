@@ -20,55 +20,59 @@
         </div>
         <div class="hb-status">
           <div>
-            <span class="hb-label">Reference runtime</span>
-            <strong>Verified locally</strong>
+            <span class="hb-label">Latest snapshot</span>
+            <strong id="hero-generated">—</strong>
           </div>
           <div>
-            <span class="hb-label">Latest digest check</span>
-            <strong id="hero-digest">—</strong>
+            <span class="hb-label">Signals · items checked</span>
+            <strong id="hero-signals">—</strong>
           </div>
           <div>
-            <span class="hb-label">Integration state</span>
-            <strong>Static tab ready</strong>
+            <span class="hb-label">Full summaries</span>
+            <strong id="hero-summaries">—</strong>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="hb-spine" aria-label="Heartbeat wiki architecture">
-      <div class="hb-spine-step">
-        <span>1</span>
-        <strong>Raw sources</strong>
+    <section class="hb-spine" aria-label="Heartbeat wiki architecture — click a live step to jump to it">
+      <button class="hb-spine-step" type="button" data-goto="history" title="View past snapshots">
+        <span class="hb-spine-num">1</span>
+        <strong>Raw sources <span class="hb-badge live">live</span></strong>
         <p>RSS, papers, local notes, transcripts, and community context remain immutable.</p>
-      </div>
-      <div class="hb-spine-step">
-        <span>2</span>
-        <strong>Heartbeat run</strong>
+        <span class="hb-spine-count" id="spine-sources">—</span>
+      </button>
+      <button class="hb-spine-step" type="button" data-goto="pulse" title="See the latest run">
+        <span class="hb-spine-num">2</span>
+        <strong>Heartbeat run <span class="hb-badge live">live</span></strong>
         <p>Fetch, dedupe, summarize, tag, score relevance, and log source health.</p>
-      </div>
-      <div class="hb-spine-step">
-        <span>3</span>
-        <strong>Compiled wiki</strong>
+        <span class="hb-spine-count" id="spine-items">—</span>
+      </button>
+      <button class="hb-spine-step" type="button" data-goto="roadmap" title="On the roadmap">
+        <span class="hb-spine-num">3</span>
+        <strong>Compiled wiki <span class="hb-badge planned">planned</span></strong>
         <p>LLM-maintained markdown pages accumulate synthesis, contradictions, and decisions.</p>
-      </div>
-      <div class="hb-spine-step">
-        <span>4</span>
-        <strong>Community lens</strong>
+        <span class="hb-spine-count">see Roadmap →</span>
+      </button>
+      <button class="hb-spine-step" type="button" data-goto="lens" title="Edit your lens">
+        <span class="hb-spine-num">4</span>
+        <strong>Community lens <span class="hb-badge live">live</span></strong>
         <p>Each community applies its own preferences, roles, thresholds, and consent rules.</p>
-      </div>
-      <div class="hb-spine-step">
-        <span>5</span>
-        <strong>Shared graph</strong>
+        <span class="hb-spine-count" id="spine-lens">your lens →</span>
+      </button>
+      <button class="hb-spine-step" type="button" data-goto="roadmap" title="On the roadmap">
+        <span class="hb-spine-num">5</span>
+        <strong>Shared graph <span class="hb-badge planned">planned</span></strong>
         <p>Selected stars, comments, and rankings can flow to a public knowledge graph.</p>
-      </div>
+        <span class="hb-spine-count">see Roadmap →</span>
+      </button>
     </section>
 
     <nav class="hb-tabs" aria-label="Heartbeat modes">
       <button class="hb-tab active" data-view="pulse" type="button">Pulse</button>
-      <button class="hb-tab" data-view="wiki" type="button">Compiled Wiki</button>
-      <button class="hb-tab" data-view="lens" type="button">Community Lens</button>
-      <button class="hb-tab" data-view="federation" type="button">Federation</button>
-      <button class="hb-tab" data-view="integration" type="button">Integration</button>
+      <button class="hb-tab" data-view="history" type="button">History</button>
+      <button class="hb-tab" data-view="lens" type="button">My Lens</button>
+      <button class="hb-tab" data-view="roadmap" type="button">Roadmap</button>
     </nav>
 
     <main>
@@ -80,6 +84,8 @@
           </div>
           <div class="hb-search">
             <input id="signal-search" type="search" placeholder="Filter signals by source, tag, or title">
+            <button id="hb-refresh" type="button" class="hb-refresh-btn" title="Re-fetch the latest exported snapshot and repaint">↻ Refresh</button>
+            <span id="hb-refresh-status" class="hb-refresh-status" role="status"></span>
           </div>
         </div>
 
@@ -90,9 +96,27 @@
           runtime's <code>/api/digest</code> into <code>data/digest.json</code>. See <code>data/README.md</code>.
         </div>
 
+        <div class="hb-lens-helprow">
+          <button id="lens-help-btn" type="button" class="hb-help-link" aria-expanded="false">What is a lens?</button>
+        </div>
+        <div id="lens-help-pop" class="hb-lens-popover" hidden>
+          <strong>What a lens is.</strong> Your lens is how <em>you</em> read this signal
+          stream — it both <em>filters</em> (which sources and tags you see, and a minimum
+          relevance) and <em>ranks</em> (how signals are ordered), plus your digest cadence
+          and consent boundaries. It changes what you see, never the underlying data, so two
+          readers can hold different lenses over the same heartbeat. Stored on this device by
+          default; sign in to sync it across devices.
+        </div>
+
         <details class="hb-lens-controls" id="lens-controls">
-          <summary>Your lens <span class="hb-lens-hint" id="lens-hint">stored on this device</span></summary>
+          <summary>Your lens
+            <span class="hb-lens-active" id="lens-active-count">no filters</span>
+            <span class="hb-lens-hint" id="lens-hint">stored on this device</span>
+          </summary>
           <div class="hb-lens-body">
+            <div class="hb-lens-statusrow">
+              <span id="lens-save-status" class="hb-save-status idle">stored on this device — sign in to sync</span>
+            </div>
             <div class="hb-lens-field">
               <label>Show sources <em>(none selected = all)</em></label>
               <div id="pref-sources" class="hb-chiprow"></div>
@@ -150,94 +174,113 @@
               mattered for formation, policy, or local AI practice.
             </p>
             <div class="hb-quote-grid">
-              <div><strong>Detect</strong><span>continuous source scanning</span></div>
-              <div><strong>Distill</strong><span>structured review units</span></div>
-              <div><strong>Deliberate</strong><span>human correction and context</span></div>
-              <div><strong>Record</strong><span>archival trace and provenance</span></div>
+              <div><strong>Detect <span class="hb-badge live">live</span></strong><span>continuous source scanning</span></div>
+              <div><strong>Distill <span class="hb-badge live">live</span></strong><span>~150-word grounded summaries</span></div>
+              <div><strong>Deliberate <span class="hb-badge planned">planned</span></strong><span>human correction and context</span></div>
+              <div><strong>Record <span class="hb-badge live">live</span></strong><span>dated snapshots in History</span></div>
             </div>
           </section>
         </div>
       </section>
 
-      <section class="hb-view" id="view-wiki">
+      <section class="hb-view" id="view-history">
         <div class="hb-section-head">
           <div>
-            <p class="hb-eyebrow">Karpathy-style structure</p>
-            <h2>Compiled wiki layer</h2>
+            <p class="hb-eyebrow">Computation persistence</p>
+            <h2>Heartbeat history</h2>
           </div>
         </div>
-        <div class="hb-grid" id="wiki-pages"></div>
+        <p class="hb-provenance">Every refresh archives a dated snapshot. Pick a date to see exactly what the heartbeat surfaced then — durable memory, not just this week's view.</p>
+        <div class="hb-two-col hb-history-cols">
+          <section class="hb-panel">
+            <h3>Snapshots</h3>
+            <div id="history-dates" class="hb-hist-list"></div>
+          </section>
+          <section class="hb-panel">
+            <h3>Selected snapshot</h3>
+            <div id="history-detail"><p class="hb-dim">Select a date.</p></div>
+          </section>
+        </div>
       </section>
 
       <section class="hb-view" id="view-lens">
         <div class="hb-section-head">
           <div>
             <p class="hb-eyebrow">Local autonomy</p>
-            <h2>Community lens and memory</h2>
+            <h2>My lens</h2>
           </div>
+          <span id="le-preview" class="hb-le-preview"></span>
         </div>
+        <p class="hb-provenance">Your lens shapes what you see and how it's ranked — it never changes the underlying data. Stored on this device; sign in from Pulse to sync across devices.</p>
         <div class="hb-two-col">
           <section class="hb-panel">
-            <h3>Preference schema</h3>
-            <div id="lens-list" class="hb-list"></div>
+            <h3>Filter</h3>
+            <div class="hb-lens-field"><label>Show only these sources <em>(none = all)</em></label><div id="le-sources" class="hb-chiprow"></div></div>
+            <div class="hb-lens-field"><label>Hide sources</label><div id="le-exsources" class="hb-chiprow"></div></div>
+            <div class="hb-lens-field"><label>Hide tags</label><div id="le-extags" class="hb-chiprow"></div></div>
+            <div class="hb-lens-field"><label>Keywords <em>(comma-separated; show only signals mentioning any)</em></label><input id="le-keywords" type="text" placeholder="e.g. alignment, agents, education"></div>
+            <div class="hb-lens-row">
+              <label>Min relevance
+                <select id="le-minrel">
+                  <option value="0">0 — all</option>
+                  <option value="1">1+</option>
+                  <option value="2">2+</option>
+                  <option value="3">3 only</option>
+                </select>
+              </label>
+            </div>
           </section>
           <section class="hb-panel">
-            <h3>Role and consent model</h3>
-            <div class="hb-role-grid">
-              <div><span>Owner</span><strong>instance policy and sharing</strong></div>
-              <div><span>Admin</span><strong>sources, thresholds, exports</strong></div>
-              <div><span>Editor</span><strong>summary review and provenance</strong></div>
-              <div><span>Reader</span><strong>digest and notification preferences</strong></div>
+            <h3>Rank &amp; deliver</h3>
+            <div class="hb-lens-field"><label>Boost these tags <em>(priority ranking)</em></label><div id="le-pritags" class="hb-chiprow"></div></div>
+            <div class="hb-lens-row">
+              <label>Sort
+                <select id="le-sort">
+                  <option value="relevance">Relevance</option>
+                  <option value="recency">Recency</option>
+                  <option value="source">Source</option>
+                </select>
+              </label>
+              <label>Digest
+                <select id="le-cadence">
+                  <option value="daily">Daily</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="off">Off</option>
+                </select>
+              </label>
+            </div>
+            <div class="hb-lens-field">
+              <label>Consent <em>(stored now; applies when contribution ships — Phase 3)</em></label>
+              <label class="hb-check"><input type="checkbox" id="le-consent-stars"> Share my stars</label>
+              <label class="hb-check"><input type="checkbox" id="le-consent-comments"> Share my comments</label>
+              <label class="hb-check"><input type="checkbox" id="le-consent-rank"> Contribute to aggregate rankings</label>
+            </div>
+            <div class="hb-lens-row hb-le-actions">
+              <button id="le-export" type="button">Export lens</button>
+              <button id="le-import" type="button">Import lens</button>
+              <input id="le-import-file" type="file" accept="application/json" hidden>
+              <button id="le-reset" type="button">Reset</button>
             </div>
           </section>
         </div>
       </section>
 
-      <section class="hb-view" id="view-federation">
+      <section class="hb-view" id="view-roadmap">
         <div class="hb-section-head">
           <div>
-            <p class="hb-eyebrow">Multi-community architecture</p>
-            <h2>Federated heartbeat network</h2>
+            <p class="hb-eyebrow">Where this is going</p>
+            <h2>Roadmap &amp; status</h2>
           </div>
         </div>
-        <div class="hb-grid" id="federation-list"></div>
-      </section>
-
-      <section class="hb-view" id="view-integration">
-        <div class="hb-section-head">
-          <div>
-            <p class="hb-eyebrow">Explorer handoff</p>
-            <h2>Integration path</h2>
-          </div>
+        <p class="hb-provenance">An honest map of what works now and what's planned. Items marked <span class="hb-badge planned">planned</span> are not yet built; nothing on the other tabs depends on them.</p>
+        <div class="hb-roadmap">
+          <div class="hb-rm-item"><span class="hb-badge done">done</span><div><strong>Static signal surface</strong><p>Pulse renders real signals from a dated snapshot, with an embedded fallback. GitHub-Pages-safe.</p></div></div>
+          <div class="hb-rm-item"><span class="hb-badge done">done</span><div><strong>Distill summaries</strong><p>~150-word grounded summaries carrying machine-generated provenance; auto-generated for new items through the cc-broker.</p></div></div>
+          <div class="hb-rm-item"><span class="hb-badge done">done</span><div><strong>Durable history</strong><p>Every refresh archives a dated snapshot, browsable in the History tab — computation persistence at zero infrastructure cost.</p></div></div>
+          <div class="hb-rm-item"><span class="hb-badge current">current</span><div><strong>Accounts + synced lens</strong><p>Magic-link sign-in syncs your lens across devices; per-device by default, no account required.</p></div></div>
+          <div class="hb-rm-item"><span class="hb-badge planned">planned</span><div><strong>Selective contribution — Phase 3</strong><p>Stars, comments, and aggregate rankings flow to a shared graph, only under consent and role-based access. Gated on finalizing the consent/role model.</p></div></div>
+          <div class="hb-rm-item"><span class="hb-badge planned">planned</span><div><strong>Federation &amp; scale — Phase 4</strong><p>Begins as a client-side aggregator over a registry of instance snapshot URLs; real multi-instance infrastructure and any p2p protocol come only once several communities actually run instances.</p></div></div>
         </div>
-        <div class="hb-two-col">
-          <section class="hb-panel">
-            <h3>What is integrated now</h3>
-            <ul class="hb-checks">
-              <li>Community Education tab carries this Heartbeat chapter as an Education Tools sub-tab.</li>
-              <li>Karpathy-style raw source -> compiled wiki -> schema model is documented.</li>
-              <li>Multi-community federation, privacy, and permission model is captured.</li>
-              <li>Pulse metrics and signals load from a static digest snapshot with an embedded fallback.</li>
-              <li>Each reader sets a preference lens (sources, tags, relevance, ranking); magic-link sign-in syncs it across devices.</li>
-            </ul>
-          </section>
-          <section class="hb-panel">
-            <h3>Next engineering slice</h3>
-            <ul class="hb-checks">
-              <li>Export live <code>/api/digest</code> JSON into <code>data/digest.json</code> on a schedule.</li>
-              <li>Add authenticated admin path for per-community source profiles.</li>
-              <li>Promote reviewed answers into markdown wiki pages with citations.</li>
-              <li>Define selective contribution API for stars, comments, and rankings.</li>
-            </ul>
-          </section>
-        </div>
-        <section class="hb-panel hb-wide-note">
-          <h3>Reference paths</h3>
-          <p><code>ARCHITECTURE.md</code> is the multi-community vision, assessment, and phased roadmap (governs build scope).</p>
-          <p><code>data/digest.json</code> is the static snapshot the Pulse view reads (with embedded fallback).</p>
-          <p><code>AGENTS.md</code> is the maintainer schema for future LLM/wiki updates.</p>
-          <p><code>INTEGRATION_BRIEF.md</code> records discovery notes and next steps.</p>
-        </section>
       </section>
     </main>
   </div>

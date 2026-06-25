@@ -24,6 +24,11 @@
   var client = window.supabase.createClient(cfg.supabaseUrl, cfg.supabaseKey);
   var user = null;
 
+  // Magic-link return into a sandboxed iframe is awkward, so inside the Explorer
+  // iframe we send sign-in to the standalone page in a new tab (same origin →
+  // shared session); the iframe then adopts the session via onAuthStateChange.
+  var inIframe = (function () { try { return window.self !== window.top; } catch (e) { return true; } })();
+
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
       return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c];
@@ -34,12 +39,25 @@
   function renderAuth() {
     if (!authBox) return;
     authBox.hidden = false;
+    window.HB_signedIn = !!user;
     if (user) {
       authBox.innerHTML =
         '<span class="hb-auth-who">Signed in as <strong>' + esc(user.email) + '</strong> · lens synced</span>' +
         '<button type="button" id="hb-signout" class="hb-auth-btn">Sign out</button>';
       authBox.querySelector("#hb-signout").addEventListener("click", function () { client.auth.signOut(); });
       setHint("synced to your account");
+      return;
+    }
+    if (inIframe) {
+      // Open the standalone Heartbeat in a new tab where the magic-link return works.
+      authBox.innerHTML =
+        '<span class="hb-auth-lead">Sign in to sync your lens across devices.</span>' +
+        '<button type="button" id="hb-signin-newtab" class="hb-auth-btn">Sign in (opens in a new tab)</button>' +
+        '<span class="hb-auth-msg">After signing in there, this panel updates automatically.</span>';
+      authBox.querySelector("#hb-signin-newtab").addEventListener("click", function () {
+        window.open("index.html", "_blank", "noopener");
+      });
+      setHint("stored on this device");
     } else {
       authBox.innerHTML =
         '<form id="hb-signin" class="hb-auth-form">' +

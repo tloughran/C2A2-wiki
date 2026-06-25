@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  launchd job: refresh the Heartbeat snapshot daily.
+
+  WHAT TO EDIT before loading:
+    1. The ProgramArguments path to refresh_snapshot.sh (absolute, on your Mac).
+    2. (optional) HB_URL if your runtime is not on 127.0.0.1:8787.
+    3. (optional) StartCalendarInterval time (default 06:10 local).
+
+  This job only RUNS the deterministic refresh; it assumes the Heartbeat runtime
+  is already serving /api/digest. If the runtime is not running, the export step
+  fails loudly (logged to StandardErrorPath) and the existing snapshot is kept.
+
+  INSTALL:
+    cp com.c2a2.heartbeat.export.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.c2a2.heartbeat.export.plist
+  UNINSTALL:
+    launchctl unload ~/Library/LaunchAgents/com.c2a2.heartbeat.export.plist
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.c2a2.heartbeat.export</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/REPLACE_ME/Documents/GitHub/C2A2-wiki/wiki/heartbeat/backend/refresh_snapshot.sh</string>
+  </array>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>HB_URL</key>
+    <string>http://127.0.0.1:8787/api/digest?window=weekly</string>
+  </dict>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key><integer>6</integer>
+    <key>Minute</key><integer>10</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/tmp/c2a2-heartbeat-export.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/c2a2-heartbeat-export.err.log</string>
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>

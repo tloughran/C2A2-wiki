@@ -26,7 +26,13 @@ copy in `app.js` if this file can't be loaded (e.g. opened over `file://`).
       "relevance": 2,
       "tags": ["capability_jump", "governance_policy", "education", "market_platform"],
       "summary": "string",
-      "implication": "string"
+      "implication": "string",
+      "long_summary": "string (optional; ~150-word machine-generated Distill summary)",
+      "summary_provenance": {
+        "model": "string",
+        "generated": "YYYY-MM-DD",
+        "kind": "machine-generated"
+      }
     }
   ]
 }
@@ -37,6 +43,64 @@ copy in `app.js` if this file can't be loaded (e.g. opened over `file://`).
 - `relevance` is an integer score; higher = more relevant to C2A2 education.
 - `tags` drive pill colour: `governance*` -> gold, `capability*` -> rose, else teal.
 - `url` must be `http(s)`; anything else is dropped to `#` by the renderer.
+- `long_summary` + `summary_provenance` are **optional** (the Distill layer). When
+  present, the tab shows an expandable "Full summary" with a machine-generated
+  honesty tag; when absent, the tab shows the short `summary` only (graceful).
+  They are NOT written by the runtime or the exporter — they are merged in from
+  `long_summaries.json` by `backend/enrich_summaries.py` (see below).
+
+## Distill layer (`long_summaries.json` + `enrich_summaries.py`)
+
+The ~150-word summaries are model-written (summarization is a valid model use per
+the working agreement), but the *merge into the snapshot is model-free*. The split:
+
+- `long_summaries.json` — sidecar, keyed by signal `url`, each entry holding
+  `long_summary`, `model`, `generated`, `kind`. A model writes these from each
+  item's fetched content, grounded only in the source (never invented).
+- `backend/enrich_summaries.py` — deterministic, stdlib-only. Merges matching
+  sidecar entries into `digest.json` (and the dated snapshot) and strips the
+  `arXiv:… Announce Type:… Abstract:` boilerplate from the short `summary`.
+  Idempotent; signals with no sidecar entry are left untouched.
+
+```bash
+python3 backend/enrich_summaries.py --data-dir data        # merge + clean
+python3 backend/enrich_summaries.py --data-dir data --check # report only
+```
+
+### Auto-generating summaries (cc-broker, Pathway 00)
+
+`backend/generate_summaries.py` is the MODEL step: it fills the sidecar for any
+signal URL not already present, by calling the broker's `action=enrich`
+(`Origin` + `X-CC-Device` headers; the broker holds the OpenRouter key and meters
+a daily cap, so this script sends NO secret). It is incremental + idempotent —
+existing entries are never overwritten — so hand-written summaries survive and
+only genuinely new items cost tokens. Graceful on cap/down (stops, leaves the
+rest for next run).
+
+```bash
+python3 backend/generate_summaries.py --data-dir data --max-new 12
+python3 backend/generate_summaries.py --self-test     # one broker call, writes nothing
+```
+
+## History manifest (`snapshots/index.json`)
+
+The History tab needs an explicit list of snapshots (Pages has no directory
+listing). `backend/build_manifest.py` scans `snapshots/digest-*.json` and writes
+`snapshots/index.json` (newest first, with each snapshot's headline counts).
+Deterministic, idempotent.
+
+```bash
+python3 backend/build_manifest.py --data-dir data
+```
+
+## Full refresh pipeline
+
+`backend/refresh_snapshot.sh` runs the whole chain (Mac-side, runtime must be up):
+
+```
+export_digest.py  →  generate_summaries.py  →  enrich_summaries.py  →  build_manifest.py
+   (deterministic)      (model, via broker)       (deterministic)        (deterministic)
+```
 
 ## Regenerating from the live runtime
 
