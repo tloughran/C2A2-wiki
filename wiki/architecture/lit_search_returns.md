@@ -15537,3 +15537,491 @@ DISPOSITION-325:
   PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
 
 **Run tally 2026-06-25 (autonomous; Tom not present): 25 items searched by 15a+15b and dispositioned by 15c (DISPOSITION-301..325) from the 2026-06-24 cohort (Pathway 31 reference-frame ensemble / constitutional detector + coil-falsifier + client-artifact items). 8 INCORPORATE (PREMISE-075 frame-diversity>seed-diversity [decorrelation-gated]; PREMISE-076 dissensus-rate-as-output [noise-floor-gated]; PREMISE-077 single-thinker pilot validates mechanism [necessary-condition only]; PREMISE-078 register-then-look reduces self-test viciousness [spec-exhaustiveness-gated; partial REVISE-111]; PREMISE-079 usefulness!=productivity + asymmetric test [discharges REVISE-105]; PREMISE-080 convergence-battery robustness [independence-gated; extends triangulation premise]; PREMISE-081 shared-id false-negative => derived_from lineage field [OPEN-091 miss-direction]; PREMISE-082 multi-provider/local-first resilience [test-paths + key-handling-gated]). 3 REVISE (REVISE-144 sessionStorage 'never on disk' false + against OWASP [MED]; REVISE-145 2-of-3 same-base-model consensus = correlated bias, conflicts existing MMA-independence premise [HIGH, KEYSTONE]; REVISE-146 owner self-audit != genuine independence [MED, partial REVISE-111]). 14 MONITOR (MONITOR-368 3-4x cost [measure at pilot]; 369 retrospective-ungameable overclaims [pre-register analysis spec]; 370 H1 coil hypothesis [confound-matched nulls]; 371 redundancy-unit choice; 372 adjudicator error must be measured [HIGH; OPEN-090]; 373 dissensus vs instrument-failure [HIGH; OPEN-089/090]; 374 Hawkins selection bias [HIGH]; 375 axes-decorrelate transfer condition [HIGH; gates PREMISE-075]; 376 shared-id PASS construct validity [OPEN-091]; 377 degree-only null insufficient; 378 t_c dating reliability for DiD; 379 sessionStorage threat-model [twin of REVISE-144]; 380 monolith maintainability [aligns payload-diet pin]; 381 keyword voice-intent misroute [LOW]). AWAITING-REVIEW backlog: 97 -> 100. SYSTEMIC-RISK: NEW cluster 8 (CONSENSUS/DIVERSITY VALIDITY / correlated-error laundering) - Pathway 31's robustness and dissensus claims ALL depend on genuine error-decorrelation across same-base-model columns and a reliable adjudicator, which the LLM-ensemble literature shows is NOT automatic: 386/REVISE-145 (keystone), 347/PREMISE-075 (decorrelation-gated), 390/MONITOR-375 (transfer condition), 387/MONITOR-372 (adjudicator), 388/MONITOR-373 (dissensus-vs-noise), 385/MONITOR-371 (unit); Risk High. MINOR cluster: client-side secret handling (359/REVISE-144, 395/MONITOR-379, couples 360/PREMISE-082). Twin handling (surfaced-not-averaged): 347/386 (diversity PRINCIPLE INCORPORATEd, same-model-consensus rule REVISEd), 348/388 (dissensus-as-output INCORPORATEd, instrument-failure control MONITORed), 350/389 (mechanism-validation INCORPORATEd, generalization MONITORed), 357/391 (miss-direction INCORPORATEd, pass-direction MONITORed), 359/395 (posture REVISEd, threat-model MONITORed), 356/392 (H1 MONITORed, null-adequacy MONITORed). End-to-end flow: QUEUED-undispositioned 25 -> 0. Consistency check vs validated_premises.md (PREMISE-001..074): NO contradiction among the 8 new INCORPOREs - PREMISE-080 extends the existing triangulation/overdetermination premise (independence caveat preserved); PREMISE-078/079 align with the existing pre-registration premise; PREMISE-075 DEPENDS ON the existing MMA-independence premise; CRITICALLY, REVISE-145 (the 2-of-3-as-confidence rule) is flagged precisely because it CONTRADICTS the existing MMA-independence premise (same-formation agreement must be discounted) - surfaced for reconciliation, not silently incorporated. Priority order for Tom: REVISE-145 (HIGH, consensus-validity keystone; reconcile with MMA-independence premise) > REVISE-146 / REVISE-144 (MED - audit independence; client-secret posture) > MONITOR-372/373/374/375 (HIGH-priority Pathway-31 instrumentation gates).**
+
+---
+
+## 2026-06-26 RUN (c2a2-lit-search-pipeline; autonomous - Tom not present) - 2026-06-25 cohort (15 items: 6 ASSUMPTION + 9 PRESUMPTION; tooling/deployment day - Heartbeat repair, Explorer UI ship, OpenStory rebuild)
+
+### Agent 15a returns (FOR / supportive)
+RETURN-TO-14a:
+  Original item: ASSUMPTION-363
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED  |  Strength: Weak
+  Key source: RFC7234/TTL freshness; cron polling norms
+  Summary: 6h cadence is defensible IF the source changes slower than 6h AND the job runs; support attaches to the cadence number, not to the app-gating clause.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-363_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-364
+  Search direction: FOR (supportive)
+  Result: SUPPORTED  |  Strength: Moderate
+  Key source: Quinlan & Dorward 2002 (Venti); Git object model; rsync
+  Summary: Snapshot-on-change is the standard, validated anti-duplication rule; correctness depends on a defined canonical comparison.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-364_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-366
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED  |  Strength: Moderate
+  Key source: RFC7234 iframe caching; Karlton cache-invalidation
+  Summary: Stale cached app.js in an iframe is a common cause of fix-on-disk/broken-live; plausible but unconfirmed by the evidence offered.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-366_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-367
+  Search direction: FOR (supportive)
+  Result: SUPPORTED  |  Strength: Moderate
+  Key source: Alarm-fatigue/signal-detection; NN/G visibility-of-status
+  Summary: Flashing only on real change preserves signal value and reflects true state; honest refinement, contingent on detector accuracy.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-367_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-370
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED  |  Strength: Weak
+  Key source: Git add <pathspec>/add -p; atomic-commit practice
+  Summary: Manual partial staging is feasible WHEN done with a pre-commit review; feasibility-under-discipline only, not repetition reliability.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-370_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-371
+  Search direction: FOR (supportive)
+  Result: SUPPORTED  |  Strength: Moderate
+  Key source: launchd/systemd supervision; Candea & Fox 2003 crash-only
+  Summary: launchd is the correct posture for single-node process liveness + reboot restart; does not by itself give data durability or HA.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-371_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-398
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND  |  Strength: None
+  Key source: (none)
+  Summary: No literature supports app-gated execution with no non-execution detector as adequate liveness; the supportive direction is empty.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-398_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-399
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED  |  Strength: Weak
+  Key source: Test pyramid (Fowler)
+  Summary: Headless passage is a legitimate but partial signal; necessary-not-sufficient, cannot exclude logic in the live iframe.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-399_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-400
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED  |  Strength: Weak
+  Key source: Perceived-performance UX; Nielsen response-time limits
+  Summary: Input-acknowledgement responsiveness is a real usability good; support stops short of equating perceived liveness with freshness.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-400_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-401
+  Search direction: FOR (supportive)
+  Result: SUPPORTED  |  Strength: Moderate
+  Key source: Nielsen heuristic #4 consistency; design-system tokens
+  Summary: UI consistency reduces learning cost and signals one product; supports uniformity as a value, not the strict ranking over wayfinding.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-401_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-402
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND  |  Strength: None
+  Key source: (none)
+  Summary: No literature supports vigilance-without-a-structural-guard as reliable; per-commit action exists but the no-guard reliability claim is empty.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-402_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-403
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND  |  Strength: Weak
+  Key source: (adjacent) passive telemetry < overt observation
+  Summary: Closest thread is that automated logging is lower-reactivity than overt observation - a partial mitigation, not 'artifact-free'.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-403_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-404
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND  |  Strength: None
+  Key source: (none)
+  Summary: No support for transferring single-node guarantees to distributed; the field treats them as different problems (replication/consensus).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-404_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-405
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED  |  Strength: Moderate
+  Key source: SQLite Atomic Commit / PSOW docs
+  Summary: DB is likely consistent given SQLite atomic-commit semantics - but that supports the conclusion, not the cited evidence.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-405_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-406
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED  |  Strength: Weak
+  Key source: Append-only audit-log + signature-chain integrity
+  Summary: Recoverable ONLY if an independent stable-keyed/append-only record exists; otherwise positional IDs offer no recovery anchor.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-406_for.md
+
+### Agent 15b returns (AGAINST / disconfirmatory) - STEELMAN per item in result files
+RETURN-TO-14a:
+  Original item: ASSUMPTION-363
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Strong
+  Key source: watchflow silent-cron; dead-man's-switch (OneUptime/Prometheus)
+  Specific risk: Heartbeat silently goes stale whenever the app is closed, undetectably.
+  Summary: App-gating execution with no non-execution detector is the canonical silent-failure mode; cadence is moot if the job can silently not run; recapitulates keystone OPEN-086.
+  STEELMAN (one-line): Liveness needs a non-execution detector; an app-gated job is liveness theater.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-363_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-364
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED  |  Strength: Weak
+  Key source: Canonicalization/reproducible-build; CDC false negatives
+  Specific risk: Either history churn (non-semantic diffs) or missed updates (uncompared semantic field).
+  Summary: Rule is sound; correctness is inherited from an unstated canonical-comparison definition - too much yields churn, too little yields silent misses.
+  STEELMAN (one-line): Snapshot-on-change is underspecified without a canonical form.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-364_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-366
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Moderate
+  Key source: jsdom docs; BrowserStack 'false confidence'
+  Specific risk: Time lost on a cache fix while a real logic/render bug persists; coverage gap unclosed.
+  Summary: 'Headless green -> not logic' is unsound; jsdom omits layout/visibility/event dispatch - exactly the failing surface; both hypotheses stay live until a cache-bust/real-browser test discriminates.
+  STEELMAN (one-line): Concluding 'not logic' from headless passage affirms the consequent on jsdom's blind spot.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-366_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-367
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED  |  Strength: Weak
+  Key source: Alarm fatigue; signal-detection theory
+  Specific risk: Misclassification flips honest feedback into crying-wolf or silent-miss.
+  Summary: Principle right; honesty is only as good as the new/same detector, and an over-shown 'calm' cue can still habituate.
+  STEELMAN (one-line): Routing honesty through a derived signal relocates honesty to the detector.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-367_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-370
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Strong
+  Key source: Reason 1990 Human Error; controls hierarchy; git worktree
+  Specific risk: Eventual accidental commit of 39 WIP files; exposure is continuous.
+  Summary: 'Reliable by manual staging' mistakes possible-when-careful for reliable-in-repetition; structural isolation removes the failure mode vigilance only reduces.
+  STEELMAN (one-line): Safe state requires never slipping once over an unbounded series.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-370_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-371
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED  |  Strength: Moderate
+  Key source: liveness-vs-durability; SPOF/availability; crash-consistency
+  Specific risk: False confidence that 'supervised' = data safe; data loss on crash if storage not crash-consistent; total outage on node loss.
+  Summary: 'Durable' smuggles in data durability + availability that supervision does not deliver; posture is right but must be scoped to single-node process liveness.
+  STEELMAN (one-line): Supervision answers 'is it running?', not 'did my data survive / can I tolerate node loss?'
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-371_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-398
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Strong
+  Key source: heartbeat/dead-man's-switch; silent-outage observability
+  Specific risk: Silent staleness shown as live in demos; keystone gap propagates unnoticed.
+  Summary: Adequate liveness requires run + detect-non-run; app-gated scheduler fails both and duplicates unfixed keystone OPEN-086.
+  STEELMAN (one-line): An app-gated job is structurally unable to report its own failure.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-398_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-399
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Moderate
+  Key source: jsdom not-a-browser; coverage epistemics
+  Specific risk: Misdiagnosis + an untested live path left as a standing blind spot.
+  Summary: Equating headless-green with runtime-correct contradicts fidelity literature; the symptom is itself a test-coverage-gap signal.
+  STEELMAN (one-line): A green suite is evidence only about paths it runs; the failing path isn't one.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-399_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-400
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Moderate
+  Key source: Gray et al. 2018 dark patterns; placebo progress bars
+  Specific risk: Users/demo audiences trust stale data because the UI looks active; honesty-layer violation.
+  Summary: Perceived-liveness != freshness; a cue that 'looks alive' while data is stale is a placebo/dark pattern decoupled from truth.
+  STEELMAN (one-line): A pulsing cue that fires regardless of refresh is a freshness placebo.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-400_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-401
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED  |  Strength: Weak
+  Key source: Wayfinding/you-are-here IA; recognition>recall
+  Specific risk: Mild disorientation in a multi-tool suite.
+  Summary: Consistency is good, but the strict ranking over wayfinding isn't supported; uniform chrome can erase the 'which tool am I in?' cue.
+  STEELMAN (one-line): Uniformity is an improvement only until it erases useful differentiation.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-401_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-402
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Strong
+  Key source: Reason 1990; poka-yoke; git worktree/sparse-checkout
+  Specific risk: Eventual accidental commit of agent-WIP; exposure continuous, not per-event.
+  Summary: 'Reliable by vigilance' is an oxymoron under human-factors evidence; only structural isolation removes the standing exposure.
+  STEELMAN (one-line): Unsafe state is one keystroke away and continuously available.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-402_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-403
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Moderate
+  Key source: Hawthorne/reactivity (NN/G); reflexivity; selection bias
+  Specific risk: Corpus over-represents meta/maintenance work; downstream analyses inherit skew.
+  Summary: 'Artifact-free' is contradicted by reactivity + reflexive composition bias; bounded and correctable by tagging/de-biasing.
+  STEELMAN (one-line): Self-logging a repair-of-itself session is doubly non-neutral.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-403_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-404
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Moderate
+  Key source: CAP (Gilbert & Lynch 2002); Raft; distributed fallacies
+  Specific risk: At distribution: data loss on node failure, split-brain, no failover.
+  Summary: Single-node supervision doesn't touch partition/replication/consensus; the guarantee lapses at the named distributed step.
+  STEELMAN (one-line): Distribution is an orthogonal problem set supervision doesn't address.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-404_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-405
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Strong
+  Key source: POSIX SIGKILL uncatchable; SQLite integrity_check; Pillai 2014 OSDI
+  Specific risk: Partial/torn backfill read as complete; downstream stats on incomplete data; silent.
+  Summary: Conclusion may hold for SQLite, but the EVIDENCE is invalid: signal 9 runs no trap, and rising counts != completeness; fail-loud requires explicit integrity_check + count reconciliation.
+  STEELMAN (one-line): Both cited signals are non-probative and would equally 'confirm' a corrupted result.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-405_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-406
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Strong
+  Key source: stable-vs-positional IDs; append-only audit integrity; referential integrity
+  Specific risk: Five governance approvals possibly un/mis-attributable; auditability lost.
+  Summary: Positional IDs are a known anti-pattern with no recovery anchor once order drifts; 'reconcilable' may be optimistic - ground truth could be irrecoverable.
+  STEELMAN (one-line): Positional identity cannot tell you what it originally pointed to.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-406_against.md
+
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-06-26
+  Affected items: ASSUMPTION-363, PRESUMPTION-398, PRESUMPTION-405, ASSUMPTION-366, PRESUMPTION-399
+  Common vulnerability: SILENT-FAILURE / FALSE-SUCCESS INFERENCE - the system infers success or freshness from signals that cannot detect their own failure: app-gated execution (363/398), rising row-counts + an un-fireable SIGKILL trap (405), and a green headless suite blind to the live path (366/399). Each recapitulates the unfixed keystone OPEN-086 silent-stall class.
+  Literature basis: dead-man's-switch/heartbeat monitoring (OneUptime; Prometheus Watchdog; watchflow); POSIX SIGKILL uncatchability + SQLite integrity_check; jsdom/headless false-confidence (BrowserStack).
+  Risk level: High
+  Recommendation: Adopt a uniform 'absence-is-the-signal / fail-loud' verification posture across these surfaces - external dead-man's-switch for the scheduler (REVISE-147), explicit PRAGMA integrity_check + count reconciliation for bulk writes (MONITOR-390), and a real-browser smoke test for the live UI path (MONITOR-385). Bind the cluster to keystone OPEN-086.
+
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-06-26
+  Affected items: ASSUMPTION-370, PRESUMPTION-402, PRESUMPTION-406
+  Common vulnerability: CORRECT-BY-ATTENTION instead of CORRECT-BY-CONSTRUCTION - integrity depends on human vigilance (manual git staging: 370/402) or on fragile positional identity (decision IDs: 406) rather than on structural guarantees. Both have irreducible, eventually-realized failure modes.
+  Literature basis: Reason 1990 (Human Error); hierarchy-of-controls / poka-yoke; stable-vs-positional identifier + referential-integrity literature.
+  Risk level: Medium
+  Recommendation: Replace attention/position with structure - worktree/branch isolation + pre-commit guard (REVISE-148); stable immutable IDs + append-only audit log (REVISE-149).
+
+### Agent 15c dispositions (DISPOSITION-326..340)
+
+DISPOSITION-326:
+  Date: 2026-06-26
+  Item: ASSUMPTION-363
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Cadence value is defensible, but the load-bearing 'runs only while the app is open' clause makes execution app-gated with no non-execution detection - the silent-stall class.
+  Disposition: MONITOR  (MONITOR-382)
+  Reasoning: Stated assumption whose strong challenge concentrates entirely on the liveness gap; that gap is handled structurally by twin PRESUMPTION-398 (REVISE-147) and keystone OPEN-086. MONITOR the cadence-adequacy here rather than duplicate the REVISE (surgical).
+    MONITOR-382: monitoring cadence Weekly; priority High
+    What would change disposition: Add an external dead-man's-switch (REVISE-147); if missed-run detection exists AND measured source change-rate < 6h -> INCORPORATE the cadence; if staleness is observed undetected -> escalate with REVISE-147.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-327:
+  Date: 2026-06-26
+  Item: ASSUMPTION-364
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak
+  Net assessment: Snapshot-on-change is the standard, validated anti-duplication rule (Venti/Git/rsync); only a weak implementation caveat (canonicalization) was raised.
+  Disposition: INCORPORATE  (PREMISE-083)
+  Reasoning: Strong support + weak challenge -> INCORPORATE with caveat; low stakes (verified in-session). Caveat: canonicalize/normalize before comparison to avoid non-semantic churn and missed semantic changes.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+
+DISPOSITION-328:
+  Date: 2026-06-26
+  Item: ASSUMPTION-366
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: The cache hypothesis is plausible, but the inference 'headless tests pass -> not logic' is unsound (jsdom is blind to clicks/visibility). A cheap one-step empirical discriminator exists.
+  Disposition: MONITOR  (MONITOR-383)
+  Reasoning: Contested via an invalid inference rather than the conclusion; a versioned-asset reload discriminates in one step. MONITOR with a concrete falsification; twin PRESUMPTION-399 tracks the coverage gap.
+    MONITOR-383: monitoring cadence Weekly; priority Medium
+    What would change disposition: Versioned-asset reload -> symptom clears = caching (INCORPORATE diagnosis); symptom persists = logic/render + headless coverage gap (REVISE diagnosis; escalate 399).
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-329:
+  Date: 2026-06-26
+  Item: ASSUMPTION-367
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak
+  Net assessment: Signal-only-on-real-change is supported by alarm-fatigue/signal-detection and UX honesty; only a weak caveat on detector accuracy.
+  Disposition: INCORPORATE  (PREMISE-084)
+  Reasoning: Strong support, weak challenge, and consistent with the honesty layer (aligns with PREMISE-078). INCORPORATE; caveat: validate the new/same detector and don't over-show the calm 're-checked' cue. Twin PRESUMPTION-400 (perceived-liveness) MONITORed separately.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+
+DISPOSITION-330:
+  Date: 2026-06-26
+  Item: ASSUMPTION-370
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Manual staging works when careful, but human-error and hierarchy-of-controls say vigilance is not reliable across repetitions with 39 WIP files always present.
+  Disposition: MONITOR  (MONITOR-384)
+  Reasoning: The structural fix belongs to the unstated twin PRESUMPTION-402 (REVISE-148). Here MONITOR the stated assumption: measure the manual-staging slip rate; binds REVISE-148.
+    MONITOR-384: monitoring cadence Weekly; priority Medium
+    What would change disposition: Adopt worktree/branch isolation (REVISE-148) -> INCORPORATE corrected posture; any accidental-inclusion incident -> confirms the structural guard is needed.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-331:
+  Date: 2026-06-26
+  Item: ASSUMPTION-371
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: launchd is correct for single-node process liveness + reboot restart; the word 'durable' must be scoped - it does not provide data durability or HA.
+  Disposition: INCORPORATE  (PREMISE-085)
+  Reasoning: Support is solid for liveness; the moderate challenge is a scoping correction, not a refutation -> INCORPORATE narrowly with scope caveat. Consistency: compatible with PREMISE-082 (no-SPOF resilience is a separate provider-layer value); twin PRESUMPTION-404 (distributed transfer) MONITORed; data durability handed to PRESUMPTION-405.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+
+DISPOSITION-332:
+  Date: 2026-06-26
+  Item: PRESUMPTION-398
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: PRESUMPTION with a strong, unopposed challenge on a demo-critical liveness claim that recapitulates the unfixed keystone OPEN-086.
+  Disposition: REVISE  (REVISE-147)
+  Reasoning: Presumption + strong challenge -> REVISE (HIGH). The fix is concrete and the keystone-liveness duplication makes this a run priority.
+    REVISE-147: urgency High
+    What is at risk: Heartbeat freshness guarantees; demo credibility; the keystone OPEN-086 gap propagating to a new surface.
+    Recommended action: Add an external heartbeat/dead-man's-switch that alerts on missed runs; move scheduling off app-gating to OS supervision (launchd/cron); surface true last-run age + an explicit 'stale' state.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-333:
+  Date: 2026-06-26
+  Item: PRESUMPTION-399
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: Headless passage is necessary-not-sufficient; the jsdom fidelity gap means it cannot certify the live click/visibility path - the symptom is itself a coverage-gap signal.
+  Disposition: MONITOR  (MONITOR-385)
+  Reasoning: Resolvable by closing the test-coverage gap, not by redesign. MONITOR with a concrete action.
+    MONITOR-385: monitoring cadence Weekly; priority Medium
+    What would change disposition: Add a real-browser (Playwright/Puppeteer) smoke test for the failing interaction: reproduces then passes post-fix -> fidelity gap closed (INCORPORATE); large/systemic jsdom-vs-real divergence -> REVISE the test strategy.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-334:
+  Date: 2026-06-26
+  Item: PRESUMPTION-400
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: Input-acknowledgement responsiveness is a real good, but equating 'looks alive' with 'is fresh' is the placebo/dark-pattern risk and contradicts the honesty layer.
+  Disposition: MONITOR  (MONITOR-386)
+  Reasoning: Honesty-layer relevant; resolvable by binding liveness cues to real state. MONITOR.
+    MONITOR-386: monitoring cadence Weekly; priority Medium
+    What would change disposition: Audit each liveness cue: tied to a real fetch/refresh/age -> INCORPORATE (honest responsiveness); decorative motion implying freshness -> REVISE (remove/relabel).
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-335:
+  Date: 2026-06-26
+  Item: PRESUMPTION-401
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak
+  Net assessment: Consistency is a genuine good, but the strict ranking consistency>wayfinding is not entailed; low stakes and reversible.
+  Disposition: MONITOR  (MONITOR-387)
+  Reasoning: Keep the consistent header but preserve a per-tool wayfinding cue; revisit only if disorientation is reported. Low priority.
+    MONITOR-387: monitoring cadence Weekly; priority Low
+    What would change disposition: Quick orientation test (name-the-tool-from-chrome): low error -> INCORPORATE uniformity; high error -> add a differentiator.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-336:
+  Date: 2026-06-26
+  Item: PRESUMPTION-402
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: 'Reliable by vigilance' contradicts human-error/controls-hierarchy evidence; the standing exposure from 39 WIP files is continuous, not per-event.
+  Disposition: REVISE  (REVISE-148)
+  Reasoning: Presumption + strong challenge on a correct-by-construction gap -> REVISE; a cheap structural fix is available.
+    REVISE-148: urgency Medium
+    What is at risk: Accidental commit of 39 agent-WIP files; polluted/leaky history.
+    Recommended action: Adopt worktree/branch isolation (WIP absent from the commit surface) or sparse-checkout + a pre-commit guard asserting the allowed fileset; stop relying on per-commit vigilance.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-337:
+  Date: 2026-06-26
+  Item: PRESUMPTION-403
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: Self-capture is not artifact-free (Hawthorne/reactivity + reflexive composition bias); it over-represents meta-work. The effect is bounded and correctable.
+  Disposition: MONITOR  (MONITOR-388)
+  Reasoning: Real but bounded corpus artifact; resolvable by tagging/de-biasing rather than abandoning capture.
+    MONITOR-388: monitoring cadence Weekly; priority Low-Medium
+    What would change disposition: Tag self-referential/meta sessions and track the meta-vs-substantive ratio: stable/low -> acceptable (INCORPORATE with tag); growing skew -> REVISE capture/sampling.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-338:
+  Date: 2026-06-26
+  Item: PRESUMPTION-404
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: Single-node supervision guarantees do not transfer to a distributed deployment (CAP, consensus); risk is latent because the future is deferred.
+  Disposition: MONITOR  (MONITOR-389)
+  Reasoning: Latent scaling presumption; flag at the named distributed step rather than redesign now.
+    MONITOR-389: monitoring cadence Weekly; priority Low-Medium
+    What would change disposition: At the distributed/VPS step, re-derive durability/availability with replication+consensus; carrying the single-node claim forward unchanged -> REVISE.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-339:
+  Date: 2026-06-26
+  Item: PRESUMPTION-405
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: The DB is probably consistent IF it is SQLite (atomic commit), but the cited evidence is invalid: SIGKILL(9) cannot run a trap and rising counts != completeness. Fail-loud family.
+  Disposition: MONITOR  (MONITOR-390)
+  Reasoning: Conclusion may hold but the inference does not; resolvable by an explicit verification step rather than redesign. MONITOR with a concrete check.
+    MONITOR-390: monitoring cadence Weekly; priority Medium
+    What would change disposition: Run PRAGMA integrity_check + reconcile row counts vs source: pass -> INCORPORATE (consistent, properly verified); mismatch -> REVISE (idempotent/resumable backfill; fail-loud on partial completion).
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-340:
+  Date: 2026-06-26
+  Item: PRESUMPTION-406
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Positional decision IDs are a known anti-pattern; if ordering drifted, ground truth may be UNRECOVERABLE, so 'reconcilable tooling defect' may be optimistic. Medium-high stakes (5 governance approvals).
+  Disposition: REVISE  (REVISE-149)
+  Reasoning: Presumption + strong challenge on a decision-provenance hole -> REVISE. Recoverability is contingent on an independent stable record; do not assume it.
+    REVISE-149: urgency Medium-High
+    What is at risk: Five governance approvals possibly un/mis-attributable; auditability of the governance record.
+    Recommended action: Replace positional decision IDs with stable immutable IDs + append-only log + idempotency (correct-by-construction). For the existing mismatch, attempt recovery ONLY via an independent stable-keyed record; if none exists, record the five approvals as unverifiable rather than guessing.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+**Run tally 2026-06-26 (autonomous; Tom not present): 15 items searched by 15a+15b and dispositioned by 15c (DISPOSITION-326..340) from the 2026-06-25 cohort (tooling/deployment day - Heartbeat repair, Explorer UI ship, OpenStory rebuild). 3 INCORPORATE (PREMISE-083 snapshot-on-change dedup [canonicalize-before-compare]; PREMISE-084 signal-change-only-on-real-change [detector-accuracy-gated; aligns honesty PREMISE-078]; PREMISE-085 launchd=single-node process-liveness posture [scoped: NOT data durability, NOT HA]). 3 REVISE (REVISE-147 app-gated scheduler != adequate liveness; add dead-man's-switch; recapitulates keystone OPEN-086 [HIGH]; REVISE-148 vigilance != structural staging guard; adopt worktree/branch isolation [MED]; REVISE-149 positional decision IDs anti-pattern; ground truth may be unrecoverable; stable IDs+append-only [MED-HIGH]). 9 MONITOR (382 app-gated cadence [HIGH; binds OPEN-086]; 383 cache-vs-logic diagnosis [cheap cache-bust falsification]; 384 manual partial-staging reliability [measure slip rate; binds REVISE-148]; 385 headless/jsdom fidelity gap [add real-browser smoke test]; 386 perceived-liveness != freshness [bind cue to real state; honesty]; 387 consistency vs wayfinding [LOW; keep a per-tool cue]; 388 self-logging reflexivity [tag/de-bias meta sessions]; 389 single-node durability !-> distributed [re-derive at scale]; 390 SIGKILL integrity inference invalid - trap cannot fire on signal 9 [run integrity_check+count reconcile; fail-loud]). End-to-end flow: QUEUED-undispositioned 15 -> 0. SYSTEMIC-RISK: NEW cluster 9 (SILENT-FAILURE / FALSE-SUCCESS INFERENCE) - the system infers success/freshness from signals that cannot detect their own failure: app-gated execution (363/398), rising counts + an un-fireable SIGKILL trap (405), green headless suite blind to the live path (366/399); all recapitulate keystone OPEN-086; Risk High; remedy = uniform absence-is-the-signal/fail-loud verification (dead-man's-switch REVISE-147, integrity_check MONITOR-390, real-browser smoke test MONITOR-385). MINOR cluster 10 (CORRECT-BY-ATTENTION vs CORRECT-BY-CONSTRUCTION): manual git staging (370/402) + positional decision IDs (406); Risk Medium; remedy = structural guards (REVISE-148 worktree isolation, REVISE-149 stable IDs+append-only). Twin handling (surfaced-not-averaged): 363/398 (cadence MONITORed, liveness gap REVISEd), 366/399 (diagnosis MONITORed, test-fidelity gap MONITORed), 367/400 (honest-change-signal INCORPORATEd, perceived-liveness presumption MONITORed), 370/402 (manual-staging MONITORed, vigilance-as-guard REVISEd), 371/404 (single-node posture INCORPORATEd [scoped], distributed-transfer MONITORed). Consistency check vs validated_premises.md (PREMISE-001..082): NO contradiction among the 3 new INCORPOREs - PREMISE-084 aligns with honesty PREMISE-078; PREMISE-085 is explicitly scoped to single-node process liveness and is compatible with PREMISE-082 (no-SPOF resilience is a separate provider-layer value); PREMISE-083 is independent. Priority order for Tom: REVISE-147 (HIGH, liveness keystone; demo-critical) > REVISE-149 (MED-HIGH, decision-provenance recoverability) / REVISE-148 (MED, commit-isolation) > MONITOR-390 (verify DB integrity) / MONITOR-385 (close test-fidelity gap) / MONITOR-382 (scheduler cadence). NOTE: this run carries forward the prior run's open keystone REVISE-145 (consensus-validity) and the AWAITING-REVIEW backlog (100); these 3 new REVISEs add to that human-review queue.**

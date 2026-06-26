@@ -2055,3 +2055,42 @@ PREMISE-082:
   Re-check due: Quarterly (next 15d review)
   Status: ACTIVE
   PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-312
+
+PREMISE-083:
+  Date validated: 2026-06-26
+  Source item: ASSUMPTION-364
+  Statement: Archiving a History snapshot only when content changes (one entry per real update) is the correct anti-duplication rule - CONDITIONAL on comparing a CANONICALIZED form: normalize away non-semantic differences (timestamps, key ordering, whitespace) before change-detection, and ensure the compared content covers the semantic fields of interest, or the same rule yields either churn (false-positive entries) or silent misses (false-negative entries).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Quinlan & Dorward 2002 (Venti content-addressable storage); Git object model; rsync/content-defined chunking (15a SUPPORTED/Moderate)
+  Challenges noted: 15b (Weak): change-detection on a non-canonical form churns on non-semantic diffs; a coarse digest misses real changes - define the canonical comparison.
+  Confidence: Moderate
+  Applicable to: History/snapshot archival; dedup logic; metabolism/heartbeat snapshotting
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-327
+
+PREMISE-084:
+  Date validated: 2026-06-26
+  Source item: ASSUMPTION-367
+  Statement: A change signal should fire only on a real change (new papers) and show a calm 're-checked' on a no-change re-poll - signalling change only when change is real preserves the signal's information value and reflects true system status (honesty refinement). CONDITIONAL on the new/same detector being accuracy-validated (false-positive/negative rates measured) and the calm 're-checked' cue not being over-shown to the point of habituation.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Alarm-fatigue/signal-detection literature; NN/G visibility-of-system-status; Gray et al. 2018 (deceptive design) (15a SUPPORTED/Moderate)
+  Challenges noted: 15b (Weak): honesty is only as good as the new/same classifier; a misfiring detector reintroduces false alarms or hides real updates; an over-shown calm cue habituates.
+  Confidence: Moderate
+  Applicable to: Honesty layer; change/freshness indicators (Heartbeat, paper-poll UIs); aligns with PREMISE-078 (register-then-look honesty)
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-329
+
+PREMISE-085:
+  Date validated: 2026-06-26
+  Source item: ASSUMPTION-371
+  Statement: launchd (or equivalent OS supervisor, e.g. systemd) is the correct posture for SINGLE-NODE process liveness and reboot restart of the backend (restart-on-crash + start-at-boot; aligns with crash-only-software design). SCOPED CAVEAT: 'durable/reboot-safe' here means PROCESS liveness only - it does NOT provide (i) DATA durability (in-flight writes surviving a crash; that requires crash-consistent storage - see PRESUMPTION-405/MONITOR-390), nor (ii) HIGH AVAILABILITY (a single supervised node remains a single point of failure - see PRESUMPTION-404/MONITOR-389).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Apple launchd / launchd.plist (KeepAlive, RunAtLoad); systemd Restart=; Candea & Fox 2003 (Crash-Only Software) (15a SUPPORTED/Moderate)
+  Challenges noted: 15b (Moderate): 'durable' conflates process liveness with data durability and availability; supervision does neither - state the posture narrowly to single-node process liveness.
+  Confidence: Moderate
+  Applicable to: OpenStory backend durability posture; single-node service supervision. Consistency: compatible with PREMISE-082 (multi-provider/local-first no-SPOF resilience is a separate provider-layer value, not contradicted by single-node process supervision).
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-331

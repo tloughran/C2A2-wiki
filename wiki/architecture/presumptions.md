@@ -7959,3 +7959,183 @@ PRESUMPTION-397:
     Transform at each step:
       14b: Inferred from the closed nav-keyword set used as the routing fork. [inferred, medium-confidence]
     Current status: UNTESTED
+
+PRESUMPTION-398:
+  Date surfaced: 2026-06-25
+  Statement: [inferred] That a Cowork-app-dependent scheduled task constitutes adequate *liveness* for the Heartbeat. The repair diagnosed the failure as "nothing was running it" (ASSUMPTION-361) and fixed it by making something run it — but only "while the Cowork app is open." The conversation treats the scheduling as the resolution and does not examine that an app-gated cron is the same class of silent-stall risk the system already flags as keystone-unfixed (OPEN-086): if the app is closed, nothing runs, and nothing asserts that nothing ran.
+  Evidence it was operative: the fix is presented as closing the staleness ("keeps your local 8080 fresh automatically") with the app-open dependency stated as a footnote, not as a reopened instance of the liveness problem.
+  Why it was unstated: the immediate bug (frozen file) was solved, so the residual liveness gap reads as a smaller, accepted caveat rather than the same unsolved problem in a new place
+  Type: methodological
+  Related decisions: DECISION-065
+  Related items: ASSUMPTION-363; OPEN-086 (pipeline watchdog); OPEN-092
+  Testability: testable via literature — liveness monitoring / dead-man's-switch patterns for scheduled jobs; testable empirically — uptime of an app-gated schedule vs a supervised one.
+  Risk if wrong: Medium-High — a demo-critical tool silently re-staling whenever the app is closed, with no alarm; recapitulates the unfixed keystone risk
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-398
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the fix's framing as a resolution while the app-open liveness gap is left as an accepted footnote. [inferred, high-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-399:
+  Date surfaced: 2026-06-25
+  Statement: [inferred] That passing the on-disk headless tests licenses the conclusion that the live failure is "almost certainly a delivery/caching problem, not a logic one." The argument presumes the jsdom/headless environment is faithful to the real browser-in-iframe runtime — yet the very symptom (tests green, UI dead) is itself evidence that the test environment does not exercise the failing path (iframe script-cache delivery), so "tests pass" cannot adjudicate between caching and logic.
+  Evidence it was operative: "they pass every headless test on disk, so this is almost certainly a delivery/caching problem, not a logic one" — the test pass is used as the warrant for the caching diagnosis.
+  Why it was unstated: green tests feel dispositive; the gap between the test harness and the real iframe/caching environment is invisible until something falls into it
+  Type: epistemic
+  Related decisions: DECISION-065
+  Related items: ASSUMPTION-366 (cache-bust hypothesis)
+  Testability: testable via literature — fidelity of jsdom/headless harnesses vs real browsers; test-environment coverage gaps; testable empirically — the cache-bust either fixes it (caching) or doesn't (logic).
+  Risk if wrong: Medium — a wrong diagnosis sends next session down the caching path while a logic bug persists; cheap to falsify (one cache-bust)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-399
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the use of headless-test passage as the warrant for a caching (not logic) diagnosis. [inferred, high-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-400:
+  Date surfaced: 2026-06-25
+  Statement: [inferred] That making the tool "look alive" — visible feedback on every click, a pulsing button, "N new signals," a flashing list — is a goal worth engineering, presuming perceived liveness is a faithful proxy for actual freshness. The session's own "honesty refinement" (flash only for new papers; ASSUMPTION-367) shows partial awareness of the gap, but the larger premise — that an animated "alive" affordance is desirable rather than a potential source of false confidence — is not itself examined.
+  Evidence it was operative: the design effort is organized around "the green button should finally feel alive," with success framed as the button "doing something visible every click."
+  Why it was unstated: "feels responsive" is an unquestioned UX virtue; the risk that liveness theater outruns liveness substance is exactly what the honesty layer exists to catch, but only the narrow case was caught
+  Type: normative
+  Related decisions: DECISION-065
+  Related items: ASSUMPTION-367; PRESUMPTION-398; architecture/14_honesty_layer.md
+  Testability: testable via literature — perceived-liveness / placebo & deceptive progress indicators in UX; when responsiveness cues mislead.
+  Risk if wrong: Medium — a tool that signals vitality it doesn't have, undermining the project's own honesty-layer commitment
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-400
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the framing of "feel alive" as the design objective, with only the narrow new-vs-repoll honesty case examined. [inferred, medium-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-401:
+  Date surfaced: 2026-06-25
+  Statement: [inferred] That unifying every tool's header to one brand gold is an improvement — presuming visual consistency is self-evidently good, with the cost (loss of per-tool colour as a wayfinding/differentiation cue) unweighed. The decision proceeds from "this should be uniform" without asking what the prior per-tool variation was doing for orientation across a multi-tool suite.
+  Evidence it was operative: header colour is discussed purely as brand harmonization ("all now gold titlebars"); no consideration of whether distinct headers helped users tell tools apart.
+  Why it was unstated: brand consistency is a default designer value; the wayfinding function of variation is invisible once uniformity is the frame
+  Type: normative
+  Related decisions: DECISION-066
+  Related items: ASSUMPTION-368, ASSUMPTION-369
+  Testability: testable via literature — visual consistency vs differentiation/wayfinding trade-offs in multi-view interfaces.
+  Risk if wrong: Low — aesthetic uniformity at a small orientation cost; reversible
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-401
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the treatment of header uniformity as an unqualified good. [inferred, medium-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-402:
+  Date surfaced: 2026-06-25
+  Statement: [inferred] That a human/agent can reliably hand-partition a dirty working tree — staging exactly "this session's 12 files" while excluding 39 agent-WIP files — each time, by vigilance rather than structure. It worked today, but the practice presumes correct manual selection is repeatable; there is no branch, worktree, or staging guard that would *prevent* an agent-WIP file from being swept in, only the discipline of checking.
+  Evidence it was operative: "the tree has unrelated agent WIP I must not sweep in" handled by inspecting and staging precisely 12 files — a correct-by-attention procedure, not a correct-by-construction one.
+  Why it was unstated: the session succeeded, so the absence of a structural safeguard against the failure mode is invisible
+  Type: methodological
+  Related decisions: DECISION-066
+  Related items: ASSUMPTION-370; Constitutional surgical-changes rule
+  Testability: testable via literature — error rates of manual partial-staging / dirty-tree commits; efficacy of branch/worktree isolation as a guard.
+  Risk if wrong: Medium — one inattentive commit sweeps half-built agent WIP into a pushed release; the 39-file exposure is standing
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-402
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from reliance on manual file-by-file staging in a persistently dirty tree, with no structural isolation. [inferred, high-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-403:
+  Date surfaced: 2026-06-25
+  Statement: [inferred] That OpenStory capturing "this very session" live — narrating the diagnosis/repair session as it runs — is unproblematic observation, presuming the capture system's recording of the sessions that build and repair it introduces no reflexivity or feedback artifact into the data it collects. A measurement instrument logging the work of fixing the instrument is treated as ordinary data, not as a self-referential special case.
+  Evidence it was operative: the live capture of the diagnosis session ("it's live-capturing this very session in real time … my actions streaming in") is read as confirmation the pipeline works, with no note that self-observation during repair is a distinctive data regime.
+  Why it was unstated: the capture working is good news; the reflexive twist (the observed event is the act of observing) reads as a delightful coincidence, not a methodological flag
+  Type: epistemic
+  Related decisions: DECISION-067
+  Related items: ASSUMPTION-371, ASSUMPTION-372; Pathway 29 (agentic metabolism / self-observation)
+  Testability: testable via literature — observer/reactivity effects in self-logging and self-monitoring systems; reflexivity in process telemetry.
+  Risk if wrong: Low-Medium — self-capture during build/repair may over-represent meta-work in the corpus that downstream agents mine
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-403
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the unremarked self-referential capture of the repair session by the system being repaired. [inferred, medium-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-404:
+  Date surfaced: 2026-06-25
+  Statement: [inferred] That single-machine launchd supervision on Tom's Mac is a sufficient durability story for OpenStory, presuming the local "reboot-safe, supervised" posture transfers to the distributed/VPS-hub future the same session names as deferred (NATS leaf/token). The work establishes durability for one node and treats the durability question as closed, when the named next step (multi-machine sync) is precisely where single-node supervision guarantees stop applying.
+  Evidence it was operative: "you're back to the durable, launchd-supervised state … the whole OpenStory→wiki chain is now sound end to end" stated as closure, with VPS-hub sync filed as a separate optional spin-off rather than an open durability gap.
+  Why it was unstated: the immediate goal (one supervised, reboot-safe node) was achieved, so durability reads as solved at the scale currently in view
+  Type: scaling
+  Related decisions: DECISION-067
+  Related items: ASSUMPTION-371; OPEN-093
+  Testability: testable via literature — durability/consistency guarantees that hold for single-node supervision vs distributed multi-node capture.
+  Risk if wrong: Low-Medium — a durability claim that quietly expires the moment capture goes multi-machine
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-404
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the "sound end to end" closure asserted at single-node scale while multi-node sync is named as deferred. [inferred, medium-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-405:
+  Date surfaced: 2026-06-25
+  Statement: [inferred] That the history backfill left the database in a consistent state, presuming rising counts plus a fired cleanup trap equal success — even though the seed process ended in `Killed: 9` (SIGKILL), an abnormal termination mid-backfill. The session reads the new totals (256,040 events) and the trap's "Reloading … Done" as confirmation, without an integrity/consistency check after the force-kill; a SIGKILL during a write path is exactly the condition under which counts can rise while the final records are torn or partial.
+  Evidence it was operative: "the seed process ended with Killed: 9 … no harm … the DB is live" — harmlessness inferred from the trap firing and counts climbing, not from a consistency verification.
+  Why it was unstated: the visible signals (counts up, agent reloaded, DB serving) all read positive, so the abnormal-termination consistency question never surfaces
+  Type: epistemic
+  Related decisions: DECISION-067
+  Related items: ASSUMPTION-372 (backfill recovered history); cluster 5 (silent-measurement / fail-loud)
+  Testability: testable via literature — crash/abnormal-termination consistency for embedded DBs (SQLite) during bulk writes; what counts as proof of integrity post-SIGKILL.
+  Risk if wrong: Medium — silently torn/partial records in the recovered history, trusted because the totals went up
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-405
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from "no harm" being read off rising counts + a fired trap, with no post-SIGKILL integrity check. [inferred, high-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-406:
+  Date surfaced: 2026-06-25
+  Statement: [inferred] That the data-integrity FAIL-LOUD finding (the 06-23 archive logged 7 approvals but only 2 had matching proposal files) is a *tooling* defect to fix and reconcile, presuming the historical decision record is recoverable after the fact — rather than evidence that position-based decision IDs make prior "approvals" irreducibly ambiguous about which proposal they approved. The recommended response ("reconcile the 06-23 decision email against pending/ and fix the tooling") presumes a ground truth exists to reconcile *to*.
+  Evidence it was operative: the escalation is framed as "five approvals may point at silently dropped proposals" with the fix being reconciliation + tooling repair, not "the link between approvals and proposals for this batch may be unrecoverable."
+  Why it was unstated: the system's instinct is to repair and reconcile; that a position-indexed record may have already lost the binding is a darker possibility than the fix-it framing admits
+  Type: methodological
+  Related decisions: DECISION-066 (review/commit tooling family); (Agent 16 escalation)
+  Related items: OPEN-094; OPEN-086 (fail-loud family); `tools/generate_review_page.py` ~line 304
+  Testability: testable via literature — stable vs positional identifiers, idempotency, and recoverability of audit/decision records; when a corrupted linkage is reconstructable vs lost.
+  Risk if wrong: Medium-High — five governance "approvals" treated as reconcilable when the proposal they approved may be unrecoverable; a decision-provenance hole
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-406
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the fix-and-reconcile framing of the Agent 16 escalation, which presumes a recoverable ground truth. [inferred, medium-confidence]
+    Current status: UNTESTED

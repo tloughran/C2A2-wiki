@@ -8609,6 +8609,7 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
 
 [PRESUMPTION] PRESUMPTION-363: A model-drafted, human-approved mini-bio adequately/fairly represents a living tradition (approval = adequacy)
   Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-382; app-gated scheduler cadence; binds keystone OPEN-086; HIGH)
   15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Moderate-Strong) | Disposition: REVISE (REVISE-125; approval != adequacy; label model-drafted / non-authoritative)
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Priority: MEDIUM
@@ -8616,6 +8617,7 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
 
 [PRESUMPTION] PRESUMPTION-364: Local visual verify certifies correctness — rendering-correctness implies content-correctness (right brief, accurate text)
   Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Weak) | Disposition: INCORPORATE (PREMISE-083; snapshot-on-change dedup; canonicalize-before-compare caveat)
   15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-126; render-correctness != content-correctness; add content/fidelity assertions — twin of ASSUMPTION-331)
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Priority: MEDIUM (twin of ASSUMPTION-331)
@@ -8630,6 +8632,7 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
 
 [PRESUMPTION] PRESUMPTION-366: A documentation-only caveat is a sufficient guard for an armed destructive script (never-rerun by memory, not by code)
   Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-383; cache-vs-logic diagnosis; cheap cache-bust falsification; MED)
   15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-127; doc-only guard insufficient; guard-by-code / disarm — twin of ASSUMPTION-329)
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Priority: MEDIUM-HIGH (twin of ASSUMPTION-329)
@@ -8637,6 +8640,7 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
 
 [PRESUMPTION] PRESUMPTION-367: Adding summary pop-ups improves the Sociogram (more on-demand information = better)
   Status: [QUEUED] [cycle 0: 2026-06-18] [SEARCHED-15a: 2026-06-19] [SEARCHED-15b: 2026-06-19] [DISPOSITIONED-15c: 2026-06-19]
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Weak) | Disposition: INCORPORATE (PREMISE-084; signal-change-only-on-real-change; detector-accuracy caveat)
   15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate) | Disposition: INCORPORATE (PREMISE-068; details-on-demand / progressive disclosure; scope guard: withhold 'more=better' generalization)
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Priority: LOW
@@ -8662,6 +8666,7 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
 
 [PRESUMPTION] PRESUMPTION-370: An agent-only day with no attended session is presumed to carry no extraction-worthy epistemic content ("null day" = nothing to record)
   Status: [QUEUED] [cycle 0: 2026-06-20] [SEARCHED-15a: 2026-06-21] [SEARCHED-15b: 2026-06-21] [DISPOSITIONED-15c: 2026-06-21]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-384; manual partial-staging reliability; measure slip rate; binds REVISE-148; MED)
   15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Moderate-Strong) | Disposition: REVISE (REVISE-130; LOW urgency; "null day" presumed contentless — refuted by selection/survivorship bias and self-demonstrated by OPEN-086; coupled to REVISE-129 — one daily liveness record fixes both)
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Priority: LOW (speculative-confidence; lower evidentiary weight than 369)
@@ -8708,6 +8713,7 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
 
 [PRESUMPTION] PRESUMPTION-371: That "same problem in two vocabularies" warrants a formal bridge — cross-vocabulary commensurability of the cognitive-glue and group-Markov-blanket accounts
   Status: [QUEUED] [cycle 0: 2026-06-22] [SEARCHED-15a: 2026-06-23] [SEARCHED-15b: 2026-06-23] [DISPOSITIONED-15c: 2026-06-23]
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: INCORPORATE (PREMISE-085; launchd=single-node process-liveness; data-durability + single-node-scope caveats)
   15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Moderate-Strong) | Disposition: REVISE (REVISE-132; commensurability smuggled from shared vocabulary — require structure-mapping; cluster 6; twin of 333)
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Priority: HIGH (twin of ASSUMPTION-333; risk of registering a metaphor as a structural homology)
@@ -9040,3 +9046,111 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Priority: LOW (misroute is recoverable)
   Search strategy: intent-classification accuracy of rule/keyword vs learned routers; coverage of hand-enumerated trigger phrase lists for spoken queries.
+
+## 2026-06-25 cohort (tooling/deployment day — Heartbeat repair, Explorer UI ship, OpenStory rebuild) — queued by 14a/14b EOD pass
+*15 testable items. NOT queued: ASSUMPTION-361/362/365 (local diagnostic facts), ASSUMPTION-368/369 (brand/visual-identity framework commitments), ASSUMPTION-372 (in-session DB-verified fact).*
+
+[ASSUMPTION] ASSUMPTION-363: That a Cowork-app-dependent 6-hour scheduled task is adequate cadence to keep the local Heartbeat fresh ("runs only while the Cowork app is open")
+  Status: [QUEUED] [cycle 0: 2026-06-25] [SEARCHED-15a: 2026-06-26] [SEARCHED-15b: 2026-06-26] [DISPOSITIONED-15c: 2026-06-26]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-382; app-gated scheduler cadence; binds keystone OPEN-086; HIGH)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (twin of PRESUMPTION-398; ties to keystone OPEN-086)
+  Search strategy: scheduled-job reliability; liveness monitoring / dead-man's-switch patterns; uptime of app-gated vs supervised schedulers.
+
+[ASSUMPTION] ASSUMPTION-364: That archiving a History snapshot only when content changes (one entry per real update) is the right anti-duplication rule
+  Status: [QUEUED] [cycle 0: 2026-06-25] [SEARCHED-15a: 2026-06-26] [SEARCHED-15b: 2026-06-26] [DISPOSITIONED-15c: 2026-06-26]
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Weak) | Disposition: INCORPORATE (PREMISE-083; snapshot-on-change dedup; canonicalize-before-compare caveat)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: LOW (verified in-session; edge case = near-identical content)
+  Search strategy: content-hash/change-detection for snapshot deduplication; sensitivity to non-semantic diffs (ordering/whitespace).
+
+[ASSUMPTION] ASSUMPTION-366: That the residual "click does nothing / lens link invisible" symptom is a cache-delivery problem (stale app.js in iframe), not logic, because the on-disk headless tests pass
+  Status: [QUEUED] [cycle 0: 2026-06-25] [SEARCHED-15a: 2026-06-26] [SEARCHED-15b: 2026-06-26] [DISPOSITIONED-15c: 2026-06-26]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-383; cache-vs-logic diagnosis; cheap cache-bust falsification; MED)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (cheap empirical falsification next session; twin of PRESUMPTION-399)
+  Search strategy: iframe script-cache invalidation; cache-busting versioning; when headless-test passage fails to predict live behavior.
+
+[ASSUMPTION] ASSUMPTION-367: That the change signal should flash only for new papers and show a calm "re-checked" on a same-papers re-poll (honesty refinement)
+  Status: [QUEUED] [cycle 0: 2026-06-25] [SEARCHED-15a: 2026-06-26] [SEARCHED-15b: 2026-06-26] [DISPOSITIONED-15c: 2026-06-26]
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Weak) | Disposition: INCORPORATE (PREMISE-084; signal-change-only-on-real-change; detector-accuracy caveat)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (honesty-layer commitment; twin of PRESUMPTION-400)
+  Search strategy: honest vs misleading progress/change indicators; placebo & deceptive feedback in UX; signaling change only on real change.
+
+[ASSUMPTION] ASSUMPTION-370: That a commit can be reliably scoped to the session's own files (12), excluding the 39 agent-WIP files, by manual staging
+  Status: [QUEUED] [cycle 0: 2026-06-25] [SEARCHED-15a: 2026-06-26] [SEARCHED-15b: 2026-06-26] [DISPOSITIONED-15c: 2026-06-26]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-384; manual partial-staging reliability; measure slip rate; binds REVISE-148; MED)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (twin of PRESUMPTION-402; standing 39-file exposure)
+  Search strategy: error rates of manual partial-staging in dirty trees; branch/worktree isolation as a correct-by-construction guard.
+
+[ASSUMPTION] ASSUMPTION-371: That launchd supervision makes the OpenStory backend durable and reboot-safe (the right durability posture)
+  Status: [QUEUED] [cycle 0: 2026-06-25] [SEARCHED-15a: 2026-06-26] [SEARCHED-15b: 2026-06-26] [DISPOSITIONED-15c: 2026-06-26]
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: INCORPORATE (PREMISE-085; launchd=single-node process-liveness; data-durability + single-node-scope caveats)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Priority: MEDIUM (twin of PRESUMPTION-404; durability claim at single-node scale)
+  Search strategy: process-supervision/reboot-safety patterns (launchd/systemd); durability guarantees of single-node supervised services.
+
+[PRESUMPTION] PRESUMPTION-398: That a Cowork-app-dependent scheduler constitutes adequate liveness — the same silent-stall class as the unfixed keystone OPEN-086
+  Status: [QUEUED] [cycle 0: 2026-06-25] [SEARCHED-15a: 2026-06-26] [SEARCHED-15b: 2026-06-26] [DISPOSITIONED-15c: 2026-06-26]
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-147; app-gated scheduler != adequate liveness; add dead-man's-switch; recapitulates keystone OPEN-086; HIGH)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: HIGH (recapitulates the keystone liveness gap; demo-critical tool)
+  Search strategy: liveness monitoring / dead-man's-switch for scheduled jobs; detecting silent non-execution; watchdog design.
+
+[PRESUMPTION] PRESUMPTION-399: That passing on-disk headless tests warrants a "caching not logic" diagnosis (presumes jsdom/headless fidelity to the real iframe runtime)
+  Status: [QUEUED] [cycle 0: 2026-06-25] [SEARCHED-15a: 2026-06-26] [SEARCHED-15b: 2026-06-26] [DISPOSITIONED-15c: 2026-06-26]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-385; headless/jsdom fidelity gap; add real-browser smoke test; MED)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (the symptom is itself evidence of a test-coverage gap)
+  Search strategy: fidelity of jsdom/headless harnesses vs real browsers; test-environment coverage gaps for delivery/caching paths.
+
+[PRESUMPTION] PRESUMPTION-400: That "looking alive" (visible feedback every click, pulsing button) is a worthwhile goal — presumes perceived liveness ≈ actual freshness
+  Status: [QUEUED] [cycle 0: 2026-06-25] [SEARCHED-15a: 2026-06-26] [SEARCHED-15b: 2026-06-26] [DISPOSITIONED-15c: 2026-06-26]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-386; perceived-liveness != freshness; bind cue to real state; honesty-layer; MED)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (honesty-layer relevance; liveness theater vs substance)
+  Search strategy: perceived-liveness UX; placebo/deceptive progress indicators; when responsiveness cues mislead users about state.
+
+[PRESUMPTION] PRESUMPTION-401: That header uniformity (one brand gold across all tools) is an improvement — presumes consistency > per-tool wayfinding cues
+  Status: [QUEUED] [cycle 0: 2026-06-25] [SEARCHED-15a: 2026-06-26] [SEARCHED-15b: 2026-06-26] [DISPOSITIONED-15c: 2026-06-26]
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Weak) | Disposition: MONITOR (MONITOR-387; consistency vs wayfinding; keep a per-tool cue; LOW)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW (reversible aesthetic; small orientation cost)
+  Search strategy: visual-consistency vs differentiation/wayfinding trade-offs in multi-view interfaces.
+
+[PRESUMPTION] PRESUMPTION-402: That a dirty working tree can be reliably hand-partitioned each time by vigilance, with no structural staging guard
+  Status: [QUEUED] [cycle 0: 2026-06-25] [SEARCHED-15a: 2026-06-26] [SEARCHED-15b: 2026-06-26] [DISPOSITIONED-15c: 2026-06-26]
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-148; vigilance != structural guard; adopt worktree/branch isolation; MED)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (standing exposure: 39 agent-WIP files one inattentive commit away)
+  Search strategy: manual partial-staging error rates; correct-by-construction isolation (branch/worktree) vs correct-by-attention.
+
+[PRESUMPTION] PRESUMPTION-403: That OpenStory capturing its own repair session live is artifact-free observation (no reflexivity in self-logging)
+  Status: [QUEUED] [cycle 0: 2026-06-25] [SEARCHED-15a: 2026-06-26] [SEARCHED-15b: 2026-06-26] [DISPOSITIONED-15c: 2026-06-26]
+  15a: NO-SUPPORT-FOUND (Weak) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-388; self-logging reflexivity; tag/de-bias meta sessions; LOW-MED)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW-MEDIUM (meta-work over-representation in the captured corpus)
+  Search strategy: observer/reactivity effects in self-logging systems; reflexivity in process telemetry.
+
+[PRESUMPTION] PRESUMPTION-404: That single-Mac launchd durability transfers to the deferred distributed/VPS-hub future
+  Status: [QUEUED] [cycle 0: 2026-06-25] [SEARCHED-15a: 2026-06-26] [SEARCHED-15b: 2026-06-26] [DISPOSITIONED-15c: 2026-06-26]
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Moderate) | Disposition: MONITOR (MONITOR-389; single-node durability !-> distributed; re-derive at scale; LOW-MED)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: LOW-MEDIUM (scaling presumption; named next step is where the guarantee lapses)
+  Search strategy: durability/consistency guarantees that hold single-node vs distributed multi-node capture.
+
+[PRESUMPTION] PRESUMPTION-405: That a SIGKILL'd (Killed: 9) backfill left the DB consistent because counts rose and the cleanup trap fired
+  Status: [QUEUED] [cycle 0: 2026-06-25] [SEARCHED-15a: 2026-06-26] [SEARCHED-15b: 2026-06-26] [DISPOSITIONED-15c: 2026-06-26]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: MONITOR (MONITOR-390; SIGKILL integrity inference invalid - trap cannot fire on signal 9; run integrity_check + count reconcile; fail-loud; MED)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM (silent-measurement/fail-loud family; torn records read as success)
+  Search strategy: crash/abnormal-termination consistency for SQLite during bulk writes; what proves integrity post-SIGKILL.
+
+[PRESUMPTION] PRESUMPTION-406: That the 06-23 approval/proposal mismatch is a reconcilable tooling defect — presumes a recoverable ground truth despite position-based decision IDs
+  Status: [QUEUED] [cycle 0: 2026-06-25] [SEARCHED-15a: 2026-06-26] [SEARCHED-15b: 2026-06-26] [DISPOSITIONED-15c: 2026-06-26]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | Disposition: REVISE (REVISE-149; positional decision IDs anti-pattern; ground truth may be unrecoverable; stable IDs + append-only; MED-HIGH)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Priority: MEDIUM-HIGH (decision-provenance hole; five governance approvals possibly unrecoverable)
+  Search strategy: stable vs positional identifiers; idempotency; recoverability of corrupted audit/decision linkages.

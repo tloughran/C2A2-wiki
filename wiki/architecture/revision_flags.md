@@ -5111,3 +5111,33 @@ REVISE-146:
   Recommended action: Recruit an external or blinded second party for the audit; if infeasible, relabel as 'owner self-audit (not independent)' and lean on pre-registration + the adversarial 15b search; do not record it as 'genuine independence'.
   Urgency: Medium
   PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+REVISE-147:
+  Date: 2026-06-26
+  Source item: PRESUMPTION-398 (PRESUMPTION (unstated))
+  Disposition: REVISE (DISPOSITION-332)
+  Net assessment: 15a none, 15b strong; a PRESUMPTION on a demo-critical liveness claim that recapitulates the unfixed keystone OPEN-086 (app-gated execution with no non-execution detection).
+  What is at risk: Heartbeat freshness guarantees; demo credibility; propagation of the keystone OPEN-086 silent-stall gap to a new surface.
+  Recommended action: Add an external heartbeat/dead-man's-switch that alerts on missed runs ('absence is the signal'); move scheduling off app-gating to OS supervision (launchd/cron); surface true last-run age and an explicit 'stale' state. Member of the silent-failure systemic cluster; bind to OPEN-086.
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+REVISE-148:
+  Date: 2026-06-26
+  Source item: PRESUMPTION-402 (PRESUMPTION (unstated))
+  Disposition: REVISE (DISPOSITION-336)
+  Net assessment: 15a none, 15b strong; a PRESUMPTION that human vigilance reliably partitions a dirty tree with no structural guard - contradicted by human-error and hierarchy-of-controls evidence.
+  What is at risk: Accidental commit of 39 agent-WIP files (continuous, not per-event exposure); polluted/leaky git history.
+  Recommended action: Replace correct-by-attention with correct-by-construction: dedicated worktree/branch so WIP is absent from the commit surface, or sparse-checkout + a pre-commit hook asserting the allowed fileset. Member of the correct-by-construction systemic cluster.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+REVISE-149:
+  Date: 2026-06-26
+  Source item: PRESUMPTION-406 (PRESUMPTION (unstated))
+  Disposition: REVISE (DISPOSITION-340)
+  Net assessment: 15a weak, 15b strong; a PRESUMPTION that the 06-23 approval/proposal mismatch is a reconcilable tooling defect with a recoverable ground truth, despite position-based decision IDs (a known anti-pattern with no recovery anchor once order drifts).
+  What is at risk: Five governance approvals possibly un/mis-attributable; auditability and trust in the governance/decision record.
+  Recommended action: Replace positional decision IDs with stable immutable IDs + an append-only audit log + idempotency keys (correct-by-construction). For the EXISTING mismatch, attempt recovery ONLY via an independent stable-keyed record; if none exists, record the five approvals as unverifiable rather than guessing a reconciliation. Member of the correct-by-construction systemic cluster.
+  Urgency: Medium-High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED

@@ -14416,3 +14416,84 @@ MONITOR-381:
   Monitoring cadence: Weekly
   Priority: Low
   PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-325; Current status: MONITORING
+
+MONITOR-382:
+  Date: 2026-06-26
+  Source item: ASSUMPTION-363 (ASSUMPTION (stated))
+  Statement: App-gated 6h Heartbeat scheduler: cadence value is defensible but execution is conditional on the Cowork app being open, with no non-execution detection (silent-stall class; binds keystone OPEN-086).
+  What would change disposition: Add an external dead-man's-switch (REVISE-147); if missed-run detection exists AND measured source change-rate < 6h -> INCORPORATE the cadence; if staleness observed undetected -> escalate with REVISE-147.
+  Monitoring cadence: Weekly
+  Priority: High
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-326; Current status: MONITORING
+
+MONITOR-383:
+  Date: 2026-06-26
+  Source item: ASSUMPTION-366 (ASSUMPTION (stated))
+  Statement: 'Cache not logic' diagnosis of the dead-click/invisible-lens symptom: plausible cache hypothesis reached via an unsound 'headless tests pass -> not logic' inference (jsdom blind to clicks/visibility).
+  What would change disposition: Versioned-asset reload -> symptom clears = caching (INCORPORATE diagnosis); symptom persists = logic/render + headless coverage gap (REVISE diagnosis; escalate PRESUMPTION-399).
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-328; Current status: MONITORING
+
+MONITOR-384:
+  Date: 2026-06-26
+  Source item: ASSUMPTION-370 (ASSUMPTION (stated))
+  Statement: Manual partial git staging assumed reliable to scope a commit in a 39-WIP-file dirty tree; feasible-when-careful but vigilance is not reliable across repetitions (human-error/controls-hierarchy).
+  What would change disposition: Adopt worktree/branch isolation (REVISE-148) -> INCORPORATE corrected posture; any accidental-inclusion incident over N commits -> confirms the structural guard is needed.
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-330; Current status: MONITORING
+
+MONITOR-385:
+  Date: 2026-06-26
+  Source item: PRESUMPTION-399 (PRESUMPTION (unstated))
+  Statement: Presumes jsdom/headless fidelity to the real iframe runtime; headless passage is necessary-not-sufficient and the failing live path is exactly jsdom's blind spot - the symptom is a test-coverage-gap signal.
+  What would change disposition: Add a real-browser smoke test for the failing interaction: reproduces then passes post-fix -> fidelity gap closed (INCORPORATE); large/systemic jsdom-vs-real divergence -> REVISE the test strategy.
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-333; Current status: MONITORING
+
+MONITOR-386:
+  Date: 2026-06-26
+  Source item: PRESUMPTION-400 (PRESUMPTION (unstated))
+  Statement: Presumes perceived liveness ~= actual freshness; input-acknowledgement responsiveness is fine but a 'looks alive' cue decoupled from real refresh is a placebo/dark-pattern and contradicts the honesty layer.
+  What would change disposition: Audit each liveness cue: tied to a real fetch/refresh/age -> INCORPORATE (honest responsiveness); decorative motion implying freshness -> REVISE (remove/relabel).
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-334; Current status: MONITORING
+
+MONITOR-387:
+  Date: 2026-06-26
+  Source item: PRESUMPTION-401 (PRESUMPTION (unstated))
+  Statement: Presumes consistency > per-tool wayfinding; UI consistency is a real good but the strict ranking isn't entailed - uniform chrome can erase orientation cues. Low stakes, reversible.
+  What would change disposition: Quick orientation test (name-the-tool-from-chrome): low error -> INCORPORATE uniformity; high error -> add a per-tool differentiator.
+  Monitoring cadence: Weekly
+  Priority: Low
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-335; Current status: MONITORING
+
+MONITOR-388:
+  Date: 2026-06-26
+  Source item: PRESUMPTION-403 (PRESUMPTION (unstated))
+  Statement: Presumes self-logging is artifact-free; Hawthorne/reactivity + reflexive composition bias mean self-captured repair sessions over-represent meta-work. Bounded, correctable.
+  What would change disposition: Tag self-referential/meta sessions and track the meta-vs-substantive ratio: stable/low -> acceptable (INCORPORATE with tag); growing skew -> REVISE capture/sampling.
+  Monitoring cadence: Weekly
+  Priority: Low-Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-337; Current status: MONITORING
+
+MONITOR-389:
+  Date: 2026-06-26
+  Source item: PRESUMPTION-404 (PRESUMPTION (unstated))
+  Statement: Presumes single-Mac launchd durability transfers to the distributed/VPS-hub future; CAP + consensus literature say single-node guarantees do not transfer. Risk latent (future deferred).
+  What would change disposition: At the distributed/VPS step, re-derive durability/availability with replication+consensus; carrying the single-node claim forward unchanged -> REVISE.
+  Monitoring cadence: Weekly
+  Priority: Low-Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-338; Current status: MONITORING
+
+MONITOR-390:
+  Date: 2026-06-26
+  Source item: PRESUMPTION-405 (PRESUMPTION (unstated))
+  Statement: Inferred DB consistency after SIGKILL from 'counts rose + cleanup trap fired'; the inference is invalid (signal 9 runs no trap; rising counts != completeness). DB may be consistent via SQLite atomic-commit, but it must be PROVEN. Fail-loud family.
+  What would change disposition: Run PRAGMA integrity_check + reconcile row counts vs source: pass -> INCORPORATE (consistent, properly verified); mismatch -> REVISE (idempotent/resumable backfill; fail-loud on partial completion).
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-339; Current status: MONITORING

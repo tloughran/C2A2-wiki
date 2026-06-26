@@ -937,3 +937,45 @@ OPEN-090 (NEW, 2026-06-24): What is the OPERATIONAL DEFINITION of "semantic agre
 
 OPEN-091 (NEW, 2026-06-24): Should the PRS resource schema gain a `derived_from:` field (parent resource-ids), populated at articulation time, to make the synthesis-by-novelty falsifier indicator confirmatory rather than exploratory? The coil falsifier pre-registration (§2.4) holds that the PRIMARY shared-id indicator risks a false negative on real synthesis (genuine A–B fusion coins NEW vocabulary, scoring a true bridge as zero), and that the honest fix — "new resource-ids that descend from resources of both traditions" — "requires resource lineage the schema does not currently record," warning that reconstructing lineage after the fact "is itself a researcher-degrees-of-freedom hole as dangerous as the one we are closing." So the schema change must be made BEFORE the indicator can be trusted ("build the instrument before trusting the reading"). Load-bearing for whether the falsifier (DECISION-063) can ever detect synthesis-by-novelty without re-opening the degrees-of-freedom problem it was built to close.
   Related: ASSUMPTION-357 (synthesis-by-novelty false negative), 356 (H1); PRESUMPTION-391 (shared-id construct validity); DECISION-063; REVISE-143 (broken-link demand completeness — sibling under-detection concern).
+
+OPEN-092:
+  Date raised: 2026-06-25
+  Question: Does the Heartbeat's Cowork-app-dependent 6-hour scheduled task actually keep the local snapshot fresh, given it "runs only while the Cowork app is open"? The fix replaced "nothing runs the pipeline" (ASSUMPTION-361) with "something runs it only when an app happens to be open" — is that residual gap acceptable, or does it reproduce the same silent-staleness class as OPEN-086?
+  Context: Heartbeat tool repair session (DECISION-065).
+  Related: ASSUMPTION-363, PRESUMPTION-398, OPEN-086 (pipeline liveness/watchdog)
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the app-open caveat attached to the scheduling decision.
+    Current status: OPEN
+
+OPEN-093:
+  Date raised: 2026-06-25
+  Question: Should OpenStory get a periodic health-check watchdog (pinging `open-story.db` freshness + the agents) to flag silent stalls like the June 23 one automatically — and is that the same watchdog the keystone OPEN-086 already calls for? If both the Heartbeat refresh (OPEN-092) and OpenStory need liveness monitoring, should there be one shared liveness/watchdog mechanism rather than three?
+  Context: Open Story system diagnosis session — named as a deferred "spin-off" candidate (DECISION-067).
+  Related: ASSUMPTION-371, OPEN-086, OPEN-092
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the deferred-watchdog candidate noted at session close.
+    Current status: OPEN
+
+OPEN-094:
+  Date raised: 2026-06-25
+  Question: How should the position-based decision-ID vs stable-`proposal_id` bug in `tools/generate_review_page.py` (~line 304) be fixed, and can the 2026-06-23 decision archive be reconciled — it logged 7 approvals but only 2 (-001 Hoffman, -002 Hawkins) had matching proposal files, leaving PROP-003..007 as logged no-ops? Are five "approvals" pointing at silently dropped proposals, and is the historical record recoverable or irreducibly ambiguous?
+  Context: Agent 16 (deferred-action tracker) escalation, surfaced in the 06-25 evening sync; now OBSERVED, not theoretical.
+  Related: PRESUMPTION-406, OPEN-086 (fail-loud family)
+  Status: OPEN — recommend reconciling the 06-23 decision email against `pending/` and fixing the tooling before the next review pass.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Recorded from Agent 16's escalated data-integrity flag (evening sync summary).
+    Current status: OPEN

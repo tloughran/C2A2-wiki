@@ -2018,3 +2018,44 @@ Status: WATCHING | RESOLVED | STALE | CANCELLED
 ---
 
 *Run completed 2026-06-25.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-06-26
+
+**Run context:**
+- One day since last logged run (2026-06-25). Steady-state run; no active watch items in any channel; no new decision archive since last run.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`. Re-verified this run (`grep -c "TRACKED-16"` = 1): remains the WATCH-001 superseded tombstone (front matter `status: superseded`, `tracking_id: WATCH-001`, `resolved_on: 2026-05-12`). Inert; awaiting Tom's manual deletion. **No new untracked items.**
+- `wiki/review/archive/`: 13 files, unchanged from last run. Latest remains `2026-06-23_decisions.md` (scanned in full on the 2026-06-25 run: 7 entries, all APPROVE, no CHANGE / CHECK / CONDITIONAL). **No new decision file since last run.** No Channel 1 (review-conditional) intake. Coverage current through 2026-06-23.
+- Channel 2 (agent-deferral) and Channel 3 (human-watch): `wiki/deferred/` tree confirmed — only `watch_list.md` and `resolved/2026-05-12_WATCH-001.md`. Both channels operational and empty.
+
+**Condition Checks (executed this run):**
+- No WATCHING items on the active watch list. Nothing due, nothing checked. WATCH-001 remains RESOLVED 2026-05-12 (lifecycle fully closed; approved copy at `wiki/inbox/proposals/approved/2026-04-21_carroll_singer-mindscape-351.md`; archive at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`).
+
+**Stale Item Check:**
+- No items to evaluate (active watch list empty). No STALE-WATCH-FLAGs raised.
+
+**Watch List Status:**
+- Items checked: 0 (no active items)
+- Items resolved: 0
+- Items still watching: 0
+- Items stale: 0
+- New items added: 0
+- Status: Active items empty; one resolved item indexed (WATCH-001); intake clean of deferred dispositions.
+
+**Notes:**
+- **DATA-INTEGRITY FLAG — still open, carried from 2026-06-25 (for Tom):** `2026-06-23_decisions.md` logged 7 approvals (PROP-2026-06-23-001 through -007) but only -001 (Hoffman, DMT / Traces of the Other) and -002 (Hawkins, Thousand Brains NeCo publication) had matching proposal files on disk; PROP-003 through -007 were no-ops (no proposal file found). Five "approvals" went nowhere and may represent real proposals silently dropped. No new decision archive has appeared since, so this remains unreconciled. **Recommend Tom manually reconcile the 2026-06-23 decision email against `pending/` and fix the `tools/generate_review_page.py` mapping bug before the next review pass.**
+- Carried-forward tooling flag (logged 2026-06-18, escalated to *observed* on 2026-06-25): position-based decision IDs vs. stable `proposal_id`s in `tools/generate_review_page.py` (~line 304). With `pending/` now at 16 items (see below), the next review pass is very likely non-uniform — fix before running it.
+- `inbox/proposals/pending/` now holds 16 items (up from 12 on 2026-06-25). New since last run: `2026-06-19_arkanihamed_surfaceology.md`, `2026-06-19_carroll_quantum-cyclic-universe.md`, `2026-06-21_rohr_way-of-the-early-church-new-way-of-living.md`, and four 2026-06-25 Fredrickson proposals (`interparental-positivity-spillover`, `listening-connects-strangers`, `positively-in-sync-convergent-validity`, `resonance-signifies-love`). Fresh proposals awaiting Tom's review — **not Agent 16 intake**. They reach this agent only if a future review assigns a CHANGE/CHECK/CONDITIONAL disposition. Noted for awareness; no action taken.
+- Standing reminder for Tom (carried forward since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; full provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- None — watch list active items empty.
+
+**Agent 16 Status:** Operational. Steady state for deferred-action tracking; no deferred items in any channel; no checks due; intake clean. No new decision archive since 2026-06-23. Two items remain open for Tom (unchanged): the 2026-06-23 data-integrity reconciliation and the `generate_review_page.py` mapping fix. Decision archive coverage current through 2026-06-23.
+
+---
+
+*Run completed 2026-06-26.*

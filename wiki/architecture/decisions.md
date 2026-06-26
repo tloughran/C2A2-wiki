@@ -761,3 +761,48 @@ DECISION-064:
     Transform at each step:
       14a: Registered from the 2026-06-24 voice/nav session log (the committed distilled record). Build described per the log; push/verify state held to Tom per the constitutional rule (not asserted).
     Current status: ADOPTED (built per session log; push/verify on Mac)
+
+DECISION-065:
+  Date: 2026-06-25
+  Title: Heartbeat tool repaired + self-contained refresh scheduled every 6h
+  Decision: Repaired the Heartbeat app (tabs/help control functional again; live-refresh button now reacts visibly — "Checking…" → "Updated HH:MM:SS · N new signals" with green flash, or a calm "re-checked"/"no new snapshot," plus a 60s background check that pulses the button when new data has landed). Rebuilt `refresh_snapshot.sh` to be self-contained (starts runtime, polls 5 feeds, exports, broker-summarizes, enriches, archives a timestamped History snapshot only when content changes, shuts down). Registered a recurring Cowork scheduled task `c2a2-heartbeat-refresh` (every 6 hours).
+  Status: IMPLEMENTED + SCHEDULED — staged on disk, NOT pushed (public github.io needs a manual post-review push per the no-blind-push rule). Scheduled task is live; runs only while the Cowork app is open. A residual UI-delivery symptom remains (stale cached app.js in explorer iframe), handed off with a cache-bust as the first move next session (ASSUMPTION-366).
+  Related assumptions: ASSUMPTION-361..367
+  Related questions: OPEN-092 (app-open liveness adequacy); OPEN-086 (pipeline watchdog)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the Heartbeat tool repair session (verified headless: live-refresh 9/9, archive mechanics, manifest).
+    Current status: IMPLEMENTED (local), PUSH PENDING
+
+DECISION-066:
+  Date: 2026-06-25
+  Title: Explorer UI fixes shipped — header unification + tab/title cleanups (commit 1fba4b7)
+  Decision: Grid tab bar (tabs resize; Record can't overlap), two-line chapter tabs, removed the Sociogram in-iframe title (in both the generator and the live artifact), and unified all tool headers to brand gold `#C9A84C` (Inter 700, each tool's size preserved). Heartbeat hero kept as a serif hero, recolored to gold but not flattened (ASSUMPTION-369). Restored two earlier over-removed titles ("C2A2 — Agent Ecosystem," "C2A2 — Summa Explorer").
+  Status: COMMITTED + PUSHED — commit `1fba4b7` on `main` (`29e6d97..1fba4b7`), 12 files, +108/−32; scoped to exactly this session's files, none of the 39 agent-WIP files swept in. Tom reviewed and signed off before push (no-blind-push rule honored). The only decision today that reached `origin`. Note: push surfaced a pre-existing repo-wide Dependabot alert (4 dependency vulnerabilities), unrelated to this commit.
+  Related assumptions: ASSUMPTION-368..370
+  Related questions: (two follow-ups left open: Community Interactions data source; shared-search oddity)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the Explorer UI fixes session and the git push confirmation.
+    Current status: SHIPPED (pushed to origin main)
+
+DECISION-067:
+  Date: 2026-06-25
+  Title: OpenStory backend rebuilt, history backfilled, launchd-supervised
+  Decision: Diagnosed and rebuilt the OpenStory backend (came back up on `:3002`; UI reconnected to the new build). Backfilled the full historical event backlog with no window filter (218,879 events; sessions 1,099 → 1,332, events 224k → 256,040, deep-history slice 463 → 666), recovering the pre-72h Cowork history. Restored the durable, launchd-supervised state (`com.tomloughran.openstory.backend`), reboot-safe, with a 10-minute bridge keeping `~/openstory-watch` current. Two enhancements explicitly deferred: VPS-hub sync (NATS leaf/token) and a periodic OpenStory health-check watchdog.
+  Status: IMPLEMENTED on Tom's Mac — backend supervised and serving; capture→wiki chain sound end to end. Caveat: the history seed ended in `Killed: 9` (SIGKILL) though its cleanup trap fired and reloaded the agent (PRESUMPTION-405 — post-abnormal-termination DB consistency not separately verified).
+  Related assumptions: ASSUMPTION-371, ASSUMPTION-372
+  Related questions: OPEN-093 (OpenStory watchdog — same as OPEN-086's need?)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the Open Story system diagnosis session (DB-count verification in-session).
+    Current status: IMPLEMENTED (local, supervised)

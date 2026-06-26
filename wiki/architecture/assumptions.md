@@ -6494,3 +6494,219 @@ ASSUMPTION-360:
     Transform at each step:
       14a: Extracted from §5/§6 provider design and graceful-degradation rationale. [stated]
     Current status: UNTESTED
+
+ASSUMPTION-361:
+  Date identified: 2026-06-25
+  Statement: The Heartbeat tool's "95 for days" staleness was caused by nothing running the pipeline — the snapshot file only regenerates when the pipeline runs, and the in-tab Refresh "only re-read that frozen file." The ~95 count is "coincidental — arXiv's feed returns ~25 recent items, five feeds sum to ~95 in the weekly window," so the number barely moves while the titles change.
+  Context: Heartbeat tool repair session — staleness root-cause diagnosis.
+  Type: empirical
+  Related decisions: DECISION-065
+  Related items: ASSUMPTION-365 (titles are the freshness signal); PRESUMPTION-398 (app-open liveness gap)
+  Testability: testable empirically — confirmable by checking whether a forced poll changes titles while count holds (the session reported a fresh poll returned entirely different papers under the same ~95).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-361
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "the count is coincidental … the real cause of staleness was that the snapshot file only regenerates when the pipeline runs, and nothing was running it." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-362:
+  Date identified: 2026-06-25
+  Statement: Making `refresh_snapshot.sh` self-contained — it "now starts the runtime itself, polls, exports, summarizes via broker, enriches, archives, and shuts down — one command, nothing to babysit" — is the correct fix for "nothing was running it."
+  Context: Heartbeat tool repair session — backend redesign.
+  Type: architectural
+  Related decisions: DECISION-065
+  Related items: ASSUMPTION-361 (root cause); ASSUMPTION-363 (scheduling)
+  Testability: framework commitment / weakly testable — a self-contained one-command pipeline is a maintainability design value; its reliability is observable across scheduled runs.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-362
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "refresh_snapshot.sh now starts the runtime itself … one command, nothing to babysit." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-363:
+  Date identified: 2026-06-25
+  Statement: A recurring Cowork scheduled task running every 6 hours (`c2a2-heartbeat-refresh`) is adequate cadence to keep the local Heartbeat fresh automatically — with the stated caveats that it "runs only while the Cowork app is open" and that it updates local files only ("the public github.io site still needs a manual push after review").
+  Context: Heartbeat tool repair session — scheduling decision (AskUserQuestion → every-6-hours chosen).
+  Type: methodological
+  Related decisions: DECISION-065
+  Related items: PRESUMPTION-398 (app-open liveness gap); OPEN-086 (pipeline liveness/watchdog); OPEN-092
+  Testability: testable via literature — scheduled-job reliability / liveness monitoring; testable empirically — does the local snapshot stay fresh given the app-open dependency?
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-363
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "a Cowork task c2a2-heartbeat-refresh runs every 6 hours … it runs only while the Cowork app is open, and it updates local files." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-364:
+  Date identified: 2026-06-25
+  Statement: Archiving a History snapshot "only when content changes" (skipping identical polls) is the right rule — it makes History "gain one entry per real update" with date+time stamps and avoids "duplicate spam."
+  Context: Heartbeat tool repair session — History/archive mechanics.
+  Type: methodological
+  Related decisions: DECISION-065
+  Related items: ASSUMPTION-367 (honesty refinement on change signalling)
+  Testability: testable empirically — verified in-session (archives on change, skips duplicates); robustness under near-identical content (whitespace/ordering) is checkable.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-364
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "snapshots are now timestamped and archived only when content changes … one entry per real update … no duplicate spam." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-365:
+  Date identified: 2026-06-25
+  Statement: The titles, not the count, are the freshness signal — "the titles are the freshness signal, and the new snapshot timestamp in the hero now makes the actual recency visible." The displayed ~95 is therefore not evidence of staleness.
+  Context: Heartbeat tool repair session — what the UI should surface as "fresh."
+  Type: epistemic
+  Related decisions: DECISION-065
+  Related items: ASSUMPTION-361 (count coincidental); ASSUMPTION-367
+  Testability: framework commitment / weakly testable — a claim about which on-screen quantity carries the recency information; checkable against user interpretation.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-365
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "the titles are the freshness signal … the new snapshot timestamp in the hero now makes the actual recency visible." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-366:
+  Date identified: 2026-06-25
+  Statement: The residual symptom (the visible new "What is a lens?" text but the click "still does nothing," and the refresh showing no change) is "almost certainly a delivery/caching problem, not a logic one" — a stale cached `app.js` running inside `explorer.html`'s iframe — and a one-line cache-bust (versioning `app.js`/`styles.css`) will fix it, "they pass every headless test on disk."
+  Context: Heartbeat tool repair session — end-of-session handoff diagnosis.
+  Type: empirical
+  Related decisions: DECISION-065
+  Related items: PRESUMPTION-399 (headless/jsdom test parity)
+  Testability: testable empirically — next session, apply the cache-bust and observe whether the lens link and live refresh appear (a direct, cheap falsification test).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-366
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "your index.html is fresh but your browser is still running an old cached app.js … almost certainly a delivery/caching problem, not a logic one." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-367:
+  Date identified: 2026-06-25
+  Statement: The Refresh control should "flash green for new papers, and show a calm 're-checked' when only the timestamp moved (a re-poll with the same papers)" — i.e., the change signal must distinguish genuinely new content from a no-op re-poll so the demo "reads correctly."
+  Context: Heartbeat tool repair session — pre-trigger "honesty refinement" of the live-refresh UI.
+  Type: methodological
+  Related decisions: DECISION-065
+  Related items: PRESUMPTION-400 (perceived vs actual liveness); Honesty layer (architecture/14_honesty_layer.md)
+  Testability: testable via literature — honest vs misleading progress/change indicators (placebo/deceptive feedback UX); testable empirically — does the signal fire only on real change?
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-367
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "the button should flash green for new papers, and show a calm 're-checked' when only the timestamp moved." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-368:
+  Date identified: 2026-06-25
+  Statement: Unifying every tool's header to the brand gold `#C9A84C` (Inter, weight 700), keeping each tool's existing size ("size only when appropriate") and preserving muted suffixes/subtitles, is the right visual-identity posture across the explorer suite.
+  Context: Explorer UI fixes session — header unification.
+  Type: architectural
+  Related decisions: DECISION-066
+  Related items: ASSUMPTION-369 (Heartbeat hero exception); PRESUMPTION-401 (uniformity = improvement)
+  Testability: framework commitment (brand/visual-identity value) — not literature-testable; consistency is verifiable, desirability is a design choice.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-368
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "Headers unified to the brand gold #C9A84C (Inter, weight 700, each tool's size kept — 'size only when appropriate')." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-369:
+  Date identified: 2026-06-25
+  Statement: The Heartbeat hero is a justified exception to header flattening — recolor it to brand gold but keep its Georgia-serif hero size (42–76px), because "flattening it to a 15px sans line would wreck that landing page"; the recolor is scoped to the hero so content headings keep their cream.
+  Context: Explorer UI fixes session — the one stated "judgment call."
+  Type: architectural
+  Related decisions: DECISION-066
+  Related items: ASSUMPTION-368 (header unification rule)
+  Testability: framework commitment (design judgment) — not literature-testable.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-369
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "its title is a 42–76px Georgia-serif hero, not a titlebar … flattening it to a 15px sans line would wreck that landing page." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-370:
+  Date identified: 2026-06-25
+  Statement: A commit must be scoped to only the session's own files — "I commit only this session's files (the tree has unrelated agent WIP I must not sweep in)" — staging exactly the 12 changed files and leaving the 39 agent-WIP files out; the no-blind-push rule gates the push on Tom's explicit review/sign-off.
+  Context: Explorer UI fixes session — commit/push of `1fba4b7`.
+  Type: methodological
+  Related decisions: DECISION-066
+  Related items: PRESUMPTION-402 (manual partition of a dirty tree); Constitutional no-blind-push rule
+  Testability: testable via literature — error rates of manual partial-staging in dirty working trees; safeguards (branch/worktree isolation).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-370
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "I commit only this session's files … the 39 agent-WIP files correctly left out." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-371:
+  Date identified: 2026-06-25
+  Statement: launchd supervision makes the OpenStory backend durable and reboot-safe — "you're back to the durable, launchd-supervised state … the supervised com.tomloughran.openstory.backend is serving again" — the right durability posture for the capture pipeline that feeds the wiki.
+  Context: Open Story system diagnosis session — backend rebuild and supervision.
+  Type: architectural
+  Related decisions: DECISION-067
+  Related items: PRESUMPTION-404 (single-Mac durability transfer); PRESUMPTION-405 (post-SIGKILL DB consistency)
+  Testability: testable via literature — process-supervision / reboot-safety patterns (launchd/systemd) for long-running local services.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-371
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "you're back to the durable, launchd-supervised state … the supervised … backend is serving again." [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-372:
+  Date identified: 2026-06-25
+  Statement: Backfilling the full event history with no window filter correctly recovers the pre-72h Cowork history that was missing — "Backfilled 218879 events from all files (no window filter)," with the DB confirming sessions 1,099 → 1,332, events 224k → 256,040, and the deep-history slice 463 → 666.
+  Context: Open Story system diagnosis session — history seed.
+  Type: empirical
+  Related decisions: DECISION-067
+  Related items: PRESUMPTION-405 (the seed ended in SIGKILL — was the DB left consistent?)
+  Testability: testable empirically — verified by DB counts in-session; integrity after the abnormal (`Killed: 9`) termination is separately checkable.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-372
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "Backfilled 218879 events from all files (no window filter) … sessions 1,099 → 1,332, events 224k → 256,040." [stated]
+    Current status: UNTESTED
