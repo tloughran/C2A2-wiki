@@ -16,7 +16,22 @@ import re
 import sys
 from pathlib import Path
 
-DATE_RE = re.compile(r"digest-(\d{4}-\d{2}-\d{2})\.json$")
+STAMP_RE = re.compile(r"digest-(\d{8})-(\d{6})\.json$")     # digest-YYYYMMDD-HHMMSS
+DATE_RE = re.compile(r"digest-(\d{4}-\d{2}-\d{2})\.json$")  # legacy digest-YYYY-MM-DD
+
+
+def parse_stamp(name):
+    """Return (sort_key, display_date, display_time) or None."""
+    m = STAMP_RE.search(name)
+    if m:
+        ymd, hms = m.group(1), m.group(2)
+        date = "{0}-{1}-{2}".format(ymd[0:4], ymd[4:6], ymd[6:8])
+        time = "{0}:{1} UTC".format(hms[0:2], hms[2:4])
+        return (ymd + hms, date, time)
+    dm = DATE_RE.search(name)
+    if dm:
+        return (dm.group(1).replace("-", "") + "000000", dm.group(1), "")
+    return None
 
 
 def main(argv=None) -> int:
@@ -29,16 +44,20 @@ def main(argv=None) -> int:
 
     entries = []
     for f in sorted(snap_dir.glob("digest-*.json")):
-        m = DATE_RE.search(f.name)
-        if not m:
+        parsed = parse_stamp(f.name)
+        if not parsed:
             continue
+        sort_key, date, time = parsed
         try:
             d = json.loads(f.read_text(encoding="utf-8"))
         except Exception:
             continue
         metrics = d.get("metrics", {})
         entries.append({
-            "date": m.group(1),
+            "date": date,
+            "time": time,
+            "sort_key": sort_key,
+            "generated_at": d.get("generated_at", ""),
             "file": f.name,
             "window": d.get("window", ""),
             "signals": len(d.get("signals", [])),
@@ -48,7 +67,7 @@ def main(argv=None) -> int:
             "primary_themes": metrics.get("primary_themes", ""),
         })
 
-    entries.sort(key=lambda e: e["date"], reverse=True)  # newest first
+    entries.sort(key=lambda e: e["sort_key"], reverse=True)  # newest first
     out = {"generated": __import__("datetime").datetime.now(
         __import__("datetime").timezone.utc).strftime("%Y-%m-%d"),
         "count": len(entries), "snapshots": entries}

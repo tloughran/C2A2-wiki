@@ -1,0 +1,12 @@
+{
+  "name": "c2a2-heartbeat-tests",
+  "private": true,
+  "version": "1.0.0",
+  "description": "CI gate for the heartbeat tab: roster render fidelity + open-access invariant.",
+  "scripts": {
+    "test": "node roster.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "^24.1.0"
+  }
+}

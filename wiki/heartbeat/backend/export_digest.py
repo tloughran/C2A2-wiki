@@ -89,9 +89,11 @@ def build_digest(report: dict, limit: int) -> dict:
     sources = report.get("sources") or []
     summary = report.get("summary") or ""
     shown = stories[:limit]
+    now = datetime.now(timezone.utc)
     return {
         "seed": False,
-        "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        "generated": now.strftime("%Y-%m-%d"),
+        "generated_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "window": report.get("window", "weekly"),
         "metrics": {
             "sources_reached": len(sources),
@@ -123,18 +125,17 @@ def main(argv=None) -> int:
     digest = build_digest(report, args.limit)
 
     data_dir = Path(args.data_dir)
-    snap_dir = data_dir / "snapshots"
     data_dir.mkdir(parents=True, exist_ok=True)
-    snap_dir.mkdir(parents=True, exist_ok=True)
 
+    # Write only the latest digest.json. Per-update History snapshots are written
+    # AFTER enrichment by archive_snapshot.py, so each archived snapshot already
+    # carries its long summaries.
     text = json.dumps(digest, indent=2, ensure_ascii=False) + "\n"
     latest = data_dir / "digest.json"
-    dated = snap_dir / ("digest-" + digest["generated"] + ".json")
     latest.write_text(text, encoding="utf-8")
-    dated.write_text(text, encoding="utf-8")
 
     m = digest["metrics"]
-    print("wrote {0} and {1}".format(latest, dated))
+    print("wrote {0}".format(latest))
     print("  window={0} sources={1} items={2} high_rel={3} themes={4!r} signals={5}".format(
         digest["window"], m["sources_reached"], m["items_checked"],
         m["high_relevance"], m["primary_themes"], len(digest["signals"])))

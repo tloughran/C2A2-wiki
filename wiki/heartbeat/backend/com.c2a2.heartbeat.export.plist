@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  launchd job: refresh the Heartbeat snapshot daily.
+  launchd job: refresh the Heartbeat snapshot on a schedule (SELF-CONTAINED).
+
+  This job is self-contained: refresh_snapshot.sh STARTS the runtime itself
+  (one poll), exports, generates summaries via the broker, enriches, archives a
+  per-update History snapshot, and shuts the runtime down. Nothing needs to be
+  left running.
 
   WHAT TO EDIT before loading:
-    1. The ProgramArguments path to refresh_snapshot.sh (absolute, on your Mac).
-    2. (optional) HB_URL if your runtime is not on 127.0.0.1:8787.
-    3. (optional) StartCalendarInterval time (default 06:10 local).
+    1. ProgramArguments path to refresh_snapshot.sh (absolute, on your Mac).
+    2. HB_RUNTIME_DIR -> the absolute path to your c2a2_heartbeat runtime folder
+       (the one containing app.py + config/sources.json).
+    3. Cadence: this template uses StartInterval 3600 (hourly). For daily, delete
+       StartInterval and use StartCalendarInterval (example commented below).
 
-  This job only RUNS the deterministic refresh; it assumes the Heartbeat runtime
-  is already serving /api/digest. If the runtime is not running, the export step
-  fails loudly (logged to StandardErrorPath) and the existing snapshot is kept.
+  NOTE: this refreshes the LOCAL repo files. Publishing to the public GitHub
+  Pages site is a separate `git push` (kept manual per the project's review rule).
 
   INSTALL:
     cp com.c2a2.heartbeat.export.plist ~/Library/LaunchAgents/
@@ -30,21 +36,22 @@
 
   <key>EnvironmentVariables</key>
   <dict>
-    <key>HB_URL</key>
-    <string>http://127.0.0.1:8787/api/digest?window=weekly</string>
+    <key>HB_RUNTIME_DIR</key>
+    <string>/Users/REPLACE_ME/Documents/C2A2 Heartbeat/c2a2_heartbeat</string>
+    <key>HB_PORT</key>
+    <string>8799</string>
   </dict>
 
-  <key>StartCalendarInterval</key>
-  <dict>
-    <key>Hour</key><integer>6</integer>
-    <key>Minute</key><integer>10</integer>
-  </dict>
+  <!-- Hourly. For daily instead, remove StartInterval and use:
+       <key>StartCalendarInterval</key><dict><key>Hour</key><integer>6</integer><key>Minute</key><integer>10</integer></dict> -->
+  <key>StartInterval</key>
+  <integer>3600</integer>
 
   <key>StandardOutPath</key>
   <string>/tmp/c2a2-heartbeat-export.out.log</string>
   <key>StandardErrorPath</key>
   <string>/tmp/c2a2-heartbeat-export.err.log</string>
   <key>RunAtLoad</key>
-  <false/>
+  <true/>
 </dict>
 </plist>

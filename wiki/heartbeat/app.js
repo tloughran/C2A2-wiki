@@ -158,7 +158,8 @@ function renderMetrics() {
   const signals = Array.isArray(DIGEST.signals) ? DIGEST.signals : [];
   const withLong = signals.filter(function (s) { return s.long_summary; }).length;
   const genLabel = DIGEST.generated && DIGEST.generated !== "fallback" ? DIGEST.generated : "embedded fallback";
-  set("hero-generated", genLabel);
+  const genTime = DIGEST.generated_at && DIGEST.generated_at.length >= 16 ? (" " + DIGEST.generated_at.slice(11, 16) + "Z") : "";
+  set("hero-generated", genLabel + genTime);
   set("hero-signals", (signals.length) + " · " + (m.items_checked != null ? m.items_checked : "—"));
   set("hero-summaries", withLong + " of " + signals.length);
   set("spine-sources", (m.sources_reached != null ? m.sources_reached : "—") + " sources →");
@@ -277,6 +278,34 @@ function renderSignals() {
 
 // ── History: browse past heartbeat snapshots (data/snapshots/index.json) ──────
 var HISTORY = { list: null, current: null };
+// ── Sources roster ("how information flows") ─────────────────────────────────
+function renderRoster(roster) {
+  const section = document.getElementById("hb-roster");
+  const lanesBox = document.getElementById("roster-lanes");
+  const sumEl = document.getElementById("roster-sum");
+  const lanes = (roster && Array.isArray(roster.lanes)) ? roster.lanes : [];
+  if (!section || !lanesBox || !lanes.length) { if (section) section.hidden = true; return; }
+  const total = roster.total || lanes.reduce(function (n, l) { return n + (l.sources ? l.sources.length : 0); }, 0);
+  if (sumEl) sumEl.textContent = total + " feeds across " + lanes.length + " lane" + (lanes.length === 1 ? "" : "s");
+  lanesBox.innerHTML = lanes.map(function (lane) {
+    const srcs = (lane.sources || []).map(function (s) {
+      return '<a class="hb-src" href="' + escAttrUrl(s.home_url) +
+             '" target="_blank" rel="noopener noreferrer">' + esc(s.name) + "</a>";
+    }).join("");
+    return '<div class="hb-lane">' +
+           '<span class="hb-lane-label">' + esc(lane.label) +
+           ' <span class="hb-lane-n">' + (lane.sources ? lane.sources.length : 0) + "</span></span>" +
+           '<div class="hb-lane-srcs">' + srcs + "</div></div>";
+  }).join("");
+  section.hidden = false;
+}
+function loadRoster() {
+  return fetch("data/sources_roster.json?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(function (j) { renderRoster(j); })
+    .catch(function () { const s = document.getElementById("hb-roster"); if (s) s.hidden = true; });
+}
+
 function loadHistory() {
   return fetch("data/snapshots/index.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
@@ -291,8 +320,9 @@ function renderHistoryList() {
     return;
   }
   box.innerHTML = HISTORY.list.map(function (s) {
-    return '<button type="button" class="hb-hist-item" data-file="' + esc(s.file) + '" data-date="' + esc(s.date) + '">' +
-      '<strong>' + esc(s.date) + "</strong>" +
+    var label = s.time ? (s.date + " · " + s.time) : s.date;
+    return '<button type="button" class="hb-hist-item" data-file="' + esc(s.file) + '" data-date="' + esc(label) + '">' +
+      '<strong>' + esc(label) + "</strong>" +
       '<span>' + esc(s.signals) + " signals · " + esc(s.items_checked == null ? "—" : s.items_checked) + " checked · " + esc(s.primary_themes || "") + "</span>" +
     "</button>";
   }).join("");
@@ -488,6 +518,35 @@ function activateView(name) {
 }
 
 // ── Init ─────────────────────────────────────────────────────────────────────
+// ── PDF export (print-to-PDF; no library, no storage) ────────────────────────
+// A privacy-preserving alternative to saved/synced state: a public reader takes a
+// point-in-time copy of their lens-filtered pulse home, with no sign-in and nothing
+// stored. Uses the browser's native "Save as PDF" via a print stylesheet.
+function exportPdf() {
+  const head = document.getElementById("hb-print-head");
+  if (head) {
+    const gen = (DIGEST && (DIGEST.generated_at || DIGEST.generated)) || "—";
+    const shown = document.querySelectorAll("#signal-list .hb-signal").length;
+    const total = (DIGEST && Array.isArray(DIGEST.signals)) ? DIGEST.signals.length : shown;
+    head.innerHTML =
+      "<h1>C2A2 AI Heartbeat</h1>" +
+      "<p>Snapshot " + esc(String(gen)) + " · showing " + shown + " of " + total +
+      " signals through your lens · exported " + esc(new Date().toLocaleString()) + "</p>" +
+      '<p class="hb-print-note">A point-in-time copy. Sources stay immutable; your lens ' +
+      "filters what you see, never what is collected.</p>";
+  }
+  // Open collapsed Full-summary blocks so the PDF carries full content, then restore.
+  const details = Array.prototype.slice.call(document.querySelectorAll("#view-pulse details"));
+  const prev = details.map(function (d) { return d.open; });
+  details.forEach(function (d) { d.open = true; });
+  function restore() {
+    details.forEach(function (d, i) { d.open = prev[i]; });
+    window.removeEventListener("afterprint", restore);
+  }
+  window.addEventListener("afterprint", restore);
+  window.print();
+}
+
 function wireEvents() {
   document.querySelectorAll(".hb-tab").forEach(function (button) {
     button.addEventListener("click", function () {
@@ -539,6 +598,8 @@ function wireEvents() {
   // Refresh: re-fetch the snapshot (cache-busted) and repaint. The MVP of "live".
   const refresh = document.getElementById("hb-refresh");
   if (refresh) refresh.addEventListener("click", refreshDigest);
+  const pdf = document.getElementById("hb-pdf");
+  if (pdf) pdf.addEventListener("click", exportPdf);
 
   // Lens help popover (the "?" next to "Your lens"). Toggle without flipping the
   // surrounding <details> open/closed.
@@ -586,26 +647,113 @@ function loadDigest() {
     .catch(function () { DIGEST = FALLBACK_DIGEST; });
 }
 
-// Refresh control: re-fetch the snapshot and repaint, with a small status line.
+// ── Liveness: signature, diff, refresh, background poll ──────────────────────
+var LAST_SIG = null;          // full signature (incl. timestamp) — "anything changed"
+var LAST_CONTENT_SIG = null;  // content-only signature — "new papers/items"
+var LAST_URLS = [];           // signal urls currently shown (for new-item diff)
+
+function digestSignature(d) {
+  var m = d.metrics || {};
+  return [d.generated_at || d.generated, contentSignature(d)].join("::");
+}
+// Content only (ignores the snapshot timestamp), so a re-poll that returns the
+// same papers is NOT reported as new — only genuinely changed content is.
+function contentSignature(d) {
+  var sigs = (Array.isArray(d.signals) ? d.signals : [])
+    .map(function (s) { return s.url || s.title; }).sort();
+  var m = d.metrics || {};
+  return [m.items_checked, m.high_relevance, sigs.join("|")].join("::");
+}
+function currentUrls(d) {
+  return (Array.isArray(d.signals) ? d.signals : []).map(function (s) { return s.url || s.title; });
+}
+function newSignalCount(d, prevUrls) {
+  if (!prevUrls || !prevUrls.length) return 0;
+  return (Array.isArray(d.signals) ? d.signals : []).filter(function (s) {
+    return prevUrls.indexOf(s.url || s.title) === -1;
+  }).length;
+}
+function flash(ids) {
+  ids.forEach(function (id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    el.classList.remove("hb-flash"); void el.offsetWidth; el.classList.add("hb-flash");
+  });
+}
+function setRefreshState(state) {
+  var btn = document.getElementById("hb-refresh");
+  if (!btn) return;
+  btn.classList.remove("is-checking", "is-updated", "update-available");
+  if (state) btn.classList.add(state);
+}
+
+// Refresh: re-fetch the snapshot, repaint, and SHOW what changed.
 function refreshDigest() {
   var btn = document.getElementById("hb-refresh");
   var status = document.getElementById("hb-refresh-status");
+  var prevUrls = LAST_URLS.slice();
   if (btn) btn.disabled = true;
+  setRefreshState("is-checking");
   if (status) status.textContent = "Checking…";
   return loadDigest().then(function () {
+    var fullSig = digestSignature(DIGEST);
+    var contentSig = contentSignature(DIGEST);
+    var added = newSignalCount(DIGEST, prevUrls);
     renderAll();
-    if (status) {
-      var when = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
-      var stamp = (DIGEST.generated && DIGEST.generated !== "fallback")
-        ? "snapshot " + esc(DIGEST.generated) : "embedded fallback";
-      status.textContent = "Updated " + when + " · " + stamp;
+    updateLensStatus();
+    loadHistory();                 // History reflects any newly archived snapshot
+    var when = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+    var snap = DIGEST.generated_at ? DIGEST.generated_at.replace("T", " ").replace("Z", " UTC")
+                                   : (DIGEST.generated || "—");
+    if (LAST_CONTENT_SIG !== null && contentSig !== LAST_CONTENT_SIG) {
+      // genuinely new papers/items
+      if (status) status.textContent = "Updated " + when + " · " +
+        (added > 0 ? added + " new signal" + (added === 1 ? "" : "s") : "content changed") + " · " + snap;
+      flash(["signal-list", "m-items", "hero-signals"]);
+      setRefreshState("is-updated");
+      setTimeout(function () { setRefreshState(null); }, 1800);
+    } else if (LAST_SIG !== null && fullSig !== LAST_SIG) {
+      // re-polled, same papers, newer snapshot timestamp
+      if (status) status.textContent = "Re-checked " + when + " · no new papers · snapshot " + snap;
+      setRefreshState(null);
+    } else {
+      if (status) status.textContent = "Checked " + when + " · no new snapshot yet · latest " + snap;
+      setRefreshState(null);
     }
+    LAST_SIG = fullSig; LAST_CONTENT_SIG = contentSig; LAST_URLS = currentUrls(DIGEST);
     if (btn) btn.disabled = false;
   });
+}
+
+// Background poll: detect a newer snapshot and invite a refresh (button pulses green).
+var LIVE_POLL_MS = 60000;
+function startLivePoll() {
+  setInterval(function () {
+    fetch("data/digest.json?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) {
+        if (!j || LAST_CONTENT_SIG === null) return;
+        if (contentSignature(j) !== LAST_CONTENT_SIG) {   // pulse only on NEW papers
+          setRefreshState("update-available");
+          var status = document.getElementById("hb-refresh-status");
+          var added = newSignalCount(j, LAST_URLS);
+          if (status) status.textContent = "New data available" +
+            (added > 0 ? " (" + added + " new)" : "") + " — click Refresh";
+        }
+      })
+      .catch(function () {});
+  }, LIVE_POLL_MS);
 }
 
 loadPrefs();
 wireEvents();
 renderAll();           // immediate paint from fallback
 updateLensStatus();
-loadDigest().then(function () { renderAll(); updateLensStatus(); }); // repaint if a snapshot loaded
+loadRoster();          // independent of digest; hides gracefully if absent
+loadDigest().then(function () {
+  renderAll(); updateLensStatus();
+  LAST_SIG = digestSignature(DIGEST);
+  LAST_CONTENT_SIG = contentSignature(DIGEST);
+  LAST_URLS = currentUrls(DIGEST);
+  startLivePoll();
+});

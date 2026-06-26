@@ -1,0 +1,21 @@
+[
+  {"id": "openai_blog", "name": "OpenAI Blog", "type": "rss", "url": "https://openai.com/blog/rss.xml", "home_url": "https://openai.com/blog", "enabled": true},
+  {"id": "huggingface_blog", "name": "Hugging Face Blog", "type": "rss", "url": "https://huggingface.co/blog/feed.xml", "home_url": "https://huggingface.co/blog", "enabled": true},
+  {"id": "google_ai_blog", "name": "Google AI Blog", "type": "rss", "url": "https://blog.google/technology/ai/rss/", "home_url": "https://blog.google/technology/ai/", "enabled": true},
+  {"id": "deepmind_blog", "name": "Google DeepMind Blog", "type": "rss", "url": "https://deepmind.google/blog/rss.xml", "home_url": "https://deepmind.google/discover/blog/", "enabled": true},
+  {"id": "arxiv_csai", "name": "arXiv cs.AI", "type": "rss", "url": "https://arxiv.org/rss/cs.AI", "home_url": "https://arxiv.org/list/cs.AI/recent", "enabled": true},
+  {"id": "arxiv_cslg", "name": "arXiv cs.LG", "type": "rss", "url": "https://arxiv.org/rss/cs.LG", "home_url": "https://arxiv.org/list/cs.LG/recent", "enabled": true},
+  {"id": "arxiv_cscl", "name": "arXiv cs.CL", "type": "rss", "url": "https://arxiv.org/rss/cs.CL", "home_url": "https://arxiv.org/list/cs.CL/recent", "enabled": true},
+  {"id": "the_decoder", "name": "The Decoder", "type": "rss", "url": "https://the-decoder.com/feed/", "home_url": "https://the-decoder.com/", "enabled": true},
+  {"id": "venturebeat_ai", "name": "VentureBeat AI", "type": "rss", "url": "https://venturebeat.com/category/ai/feed/", "home_url": "https://venturebeat.com/category/ai/", "enabled": true},
+  {"id": "import_ai", "name": "Import AI (Jack Clark)", "type": "rss", "url": "https://importai.substack.com/feed", "home_url": "https://importai.substack.com/", "enabled": true},
+  {"id": "simonwillison", "name": "Simon Willison's Weblog", "type": "rss", "url": "https://simonwillison.net/atom/everything/", "home_url": "https://simonwillison.net/", "enabled": true},
+  {"id": "hn_ai", "name": "Hacker News (AI)", "type": "rss", "url": "https://hnrss.org/newest?q=%22artificial+intelligence%22", "home_url": "https://news.ycombinator.com/", "enabled": true},
+  {"id": "yt_two_minute_papers", "name": "Two Minute Papers (YouTube)", "type": "rss", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg", "home_url": "https://www.youtube.com/@TwoMinutePapers", "enabled": true},
+  {"id": "yt_yannic", "name": "Yannic Kilcher (YouTube)", "type": "rss", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZHmQk67mSJgfCCTn7xBfew", "home_url": "https://www.youtube.com/@YannicKilcher", "enabled": true},
+  {"id": "yt_matthew_berman", "name": "Matthew Berman (YouTube)", "type": "rss", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCawZsQWqfGSbCI5yjkdVkTA", "home_url": "https://www.youtube.com/@MatthewBerman", "enabled": true},
+  {"id": "yt_david_shapiro", "name": "David Shapiro (YouTube)", "type": "rss", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCvKRFNawVcuz4b9ihUTApCg", "home_url": "https://www.youtube.com/@DaveShap", "enabled": true},
+  {"id": "yt_nate_b_jones", "name": "Nate B Jones — AI News & Strategy Daily (YouTube)", "type": "rss", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCS-fk-Ea0onm1nPDrK9pfIg", "home_url": "https://www.youtube.com/@NateBJones", "enabled": true},
+  {"id": "bsky_karpathy", "name": "Andrej Karpathy (Bluesky)", "type": "rss", "url": "https://bsky.app/profile/karpathy.bsky.social/rss", "home_url": "https://bsky.app/profile/karpathy.bsky.social", "enabled": true},
+  {"id": "bsky_bender", "name": "Emily M. Bender (Bluesky)", "type": "rss", "url": "https://bsky.app/profile/emilymbender.bsky.social/rss", "home_url": "https://bsky.app/profile/emilymbender.bsky.social", "enabled": true}
+]

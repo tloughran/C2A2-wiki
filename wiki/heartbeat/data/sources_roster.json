@@ -1,0 +1,144 @@
+{
+  "generated": "2026-06-26",
+  "total": 19,
+  "lane_count": 7,
+  "lanes": [
+    {
+      "key": "labs",
+      "label": "Research labs",
+      "sources": [
+        {
+          "id": "openai_blog",
+          "name": "OpenAI Blog",
+          "home_url": "https://openai.com/blog"
+        },
+        {
+          "id": "huggingface_blog",
+          "name": "Hugging Face Blog",
+          "home_url": "https://huggingface.co/blog"
+        },
+        {
+          "id": "google_ai_blog",
+          "name": "Google AI Blog",
+          "home_url": "https://blog.google/technology/ai/"
+        },
+        {
+          "id": "deepmind_blog",
+          "name": "Google DeepMind Blog",
+          "home_url": "https://deepmind.google/discover/blog/"
+        }
+      ]
+    },
+    {
+      "key": "papers",
+      "label": "Papers",
+      "sources": [
+        {
+          "id": "arxiv_csai",
+          "name": "arXiv cs.AI",
+          "home_url": "https://arxiv.org/list/cs.AI/recent"
+        },
+        {
+          "id": "arxiv_cslg",
+          "name": "arXiv cs.LG",
+          "home_url": "https://arxiv.org/list/cs.LG/recent"
+        },
+        {
+          "id": "arxiv_cscl",
+          "name": "arXiv cs.CL",
+          "home_url": "https://arxiv.org/list/cs.CL/recent"
+        }
+      ]
+    },
+    {
+      "key": "journalism",
+      "label": "Journalism",
+      "sources": [
+        {
+          "id": "the_decoder",
+          "name": "The Decoder",
+          "home_url": "https://the-decoder.com/"
+        },
+        {
+          "id": "venturebeat_ai",
+          "name": "VentureBeat AI",
+          "home_url": "https://venturebeat.com/category/ai/"
+        }
+      ]
+    },
+    {
+      "key": "analysis",
+      "label": "Independent analysis",
+      "sources": [
+        {
+          "id": "import_ai",
+          "name": "Import AI (Jack Clark)",
+          "home_url": "https://importai.substack.com/"
+        },
+        {
+          "id": "simonwillison",
+          "name": "Simon Willison's Weblog",
+          "home_url": "https://simonwillison.net/"
+        }
+      ]
+    },
+    {
+      "key": "community",
+      "label": "Community",
+      "sources": [
+        {
+          "id": "hn_ai",
+          "name": "Hacker News (AI)",
+          "home_url": "https://news.ycombinator.com/"
+        }
+      ]
+    },
+    {
+      "key": "video",
+      "label": "Video",
+      "sources": [
+        {
+          "id": "yt_two_minute_papers",
+          "name": "Two Minute Papers (YouTube)",
+          "home_url": "https://www.youtube.com/@TwoMinutePapers"
+        },
+        {
+          "id": "yt_yannic",
+          "name": "Yannic Kilcher (YouTube)",
+          "home_url": "https://www.youtube.com/@YannicKilcher"
+        },
+        {
+          "id": "yt_matthew_berman",
+          "name": "Matthew Berman (YouTube)",
+          "home_url": "https://www.youtube.com/@MatthewBerman"
+        },
+        {
+          "id": "yt_david_shapiro",
+          "name": "David Shapiro (YouTube)",
+          "home_url": "https://www.youtube.com/@DaveShap"
+        },
+        {
+          "id": "yt_nate_b_jones",
+          "name": "Nate B Jones \u2014 AI News & Strategy Daily (YouTube)",
+          "home_url": "https://www.youtube.com/@NateBJones"
+        }
+      ]
+    },
+    {
+      "key": "social",
+      "label": "Social (Bluesky/Mastodon)",
+      "sources": [
+        {
+          "id": "bsky_karpathy",
+          "name": "Andrej Karpathy (Bluesky)",
+          "home_url": "https://bsky.app/profile/karpathy.bsky.social"
+        },
+        {
+          "id": "bsky_bender",
+          "name": "Emily M. Bender (Bluesky)",
+          "home_url": "https://bsky.app/profile/emilymbender.bsky.social"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+name: heartbeat-refresh
+
+# Autonomous daily refresh of the public AI Heartbeat digest — no Mac in the loop.
+# Polls the feeds, summarizes new items via the capped cc-broker, runs the CI gate,
+# and (only if the gate passes) commits DATA-ONLY back to main. Pages republishes on push.
+#
+# Governance: this is the "data-only auto-push behind a passing gate" carve-out to the
+# No-Blind-Push constitutional rule (see CLAUDE.md). It may touch ONLY:
+#   wiki/heartbeat/data/{digest.json, snapshots/**, sources_roster.json}
+# Never code, HTML, or CSS — those still require human local review.
+
+on:
+  schedule:
+    - cron: "0 11 * * *"   # daily ~11:00 UTC (US morning)
+  workflow_dispatch: {}     # manual "run now" button for first-run observation
+
+permissions:
+  contents: write
+
+concurrency:
+  group: heartbeat-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Pin broker device identity
+        # Stable, separately-metered cron identity (its own slice of the broker cap,
+        # distinct from interactive users). The file is gitignored, so it is never committed.
+        run: |
+          mkdir -p wiki/heartbeat/data
+          printf '%s' "${{ secrets.HB_BROKER_DEVICE_ID }}" > wiki/heartbeat/data/.broker_device_id
+
+      - name: Broker reachability self-test (non-fatal diagnostic)
+        continue-on-error: true
+        run: python3 wiki/heartbeat/backend/generate_summaries.py --self-test
+
+      - name: Refresh snapshot (poll → summarize → archive → prune → manifest → roster)
+        env:
+          HB_RUNTIME_DIR: ${{ github.workspace }}/wiki/heartbeat/runtime
+          HB_SOURCES_CONFIG: ${{ github.workspace }}/wiki/heartbeat/runtime/config/sources.json
+          HB_KEEP_SNAPSHOTS: "60"
+        run: bash wiki/heartbeat/backend/refresh_snapshot.sh
+
+      - name: GATE — roster render + invariants + JS syntax (a failure blocks the push)
+        run: |
+          cd wiki/heartbeat/test
+          npm install --no-audit --no-fund --silent
+          npm test
+          cd "$GITHUB_WORKSPACE"
+          node --check wiki/heartbeat/app.js
+          node --check wiki/heartbeat/auth.js
+          node --check wiki/heartbeat/heartbeat-config.js
+
+      - name: Commit DATA ONLY and push to main
+        run: |
+          git config user.name  "c2a2-heartbeat-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add wiki/heartbeat/data/digest.json \
+                  wiki/heartbeat/data/snapshots \
+                  wiki/heartbeat/data/sources_roster.json
+          if git diff --cached --quiet; then
+            echo "No data changes; nothing to commit."
+          else
+            git commit -m "heartbeat: automated refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

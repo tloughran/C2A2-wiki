@@ -645,8 +645,29 @@ h3 {
   white-space: nowrap;
 }
 .hb-refresh-btn:hover { border-color: var(--teal); }
-.hb-refresh-btn:disabled { opacity: 0.5; cursor: progress; }
+.hb-refresh-btn:disabled { opacity: 0.7; cursor: progress; }
 .hb-refresh-status { color: var(--dim); font-size: 12px; align-self: center; }
+
+/* Refresh button liveness states */
+.hb-refresh-btn.is-checking { color: var(--gold-soft); border-color: var(--gold-soft); }
+.hb-refresh-btn.is-updated {
+  color: #0a0a0f; background: var(--green); border-color: var(--green); font-weight: 700;
+}
+.hb-refresh-btn.update-available {
+  color: var(--green); border-color: var(--green);
+  background: rgba(143, 191, 107, 0.16);
+  animation: hb-pulse 1.4s ease-in-out infinite;
+}
+@keyframes hb-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(143, 191, 107, 0.0); }
+  50%      { box-shadow: 0 0 0 4px rgba(143, 191, 107, 0.28); }
+}
+/* Brief highlight when content changes on refresh */
+.hb-flash { animation: hb-flash-kf 1.4s ease-out 1; }
+@keyframes hb-flash-kf {
+  0%   { background-color: rgba(143, 191, 107, 0.22); }
+  100% { background-color: transparent; }
+}
 
 /* ── Distill: expandable full summary + honesty tag ──────────────────────── */
 .hb-fullsummary {
@@ -803,3 +824,125 @@ h3 {
 .hb-badge.done { color: var(--green); border-color: var(--green); }
 .hb-badge.current { color: var(--gold-soft); border-color: var(--gold-soft); }
 .hb-badge.planned { color: var(--dim); }
+
+/* ── Sources monitored (the visible quiver) ─────────────────────────────── */
+.hb-roster {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin: 14px 0 4px;
+}
+.hb-roster-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.hb-roster-head strong { color: var(--gold); letter-spacing: 0.02em; }
+.hb-roster-sum {
+  font-size: 0.82rem;
+  color: var(--gold-soft);
+  border: 1px solid rgba(201, 168, 76, 0.32);
+  background: rgba(201, 168, 76, 0.08);
+  border-radius: 999px;
+  padding: 1px 9px;
+}
+.hb-roster-note {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin: 6px 0 12px;
+  max-width: 70ch;
+}
+.hb-roster-lanes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+.hb-lane {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 9px 10px;
+  background: rgba(255, 255, 255, 0.012);
+}
+.hb-lane-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 7px;
+}
+.hb-lane-n {
+  color: var(--gold-soft);
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  border-radius: 999px;
+  padding: 0 6px;
+  font-size: 0.7rem;
+}
+.hb-lane-srcs { display: flex; flex-wrap: wrap; gap: 6px; }
+.hb-src {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 3px 8px;
+  background: var(--bg);
+  transition: border-color 0.15s, transform 0.15s;
+}
+.hb-src:hover { border-color: var(--gold-soft); color: var(--gold-soft); transform: translateY(-1px); }
+.hb-src:focus-visible { outline: 2px solid var(--gold-soft); outline-offset: 2px; }
+@media (max-width: 640px) {
+  .hb-roster-lanes { grid-template-columns: 1fr; }
+}
+
+/* ── PDF export (print-to-PDF; no library, no storage) ───────────────────── */
+.hb-pdf-btn {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.hb-pdf-btn:hover { border-color: var(--gold-soft); color: var(--gold-soft); }
+.hb-pdf-btn:focus-visible { outline: 2px solid var(--gold-soft); outline-offset: 2px; }
+.hb-print-head { display: none; }  /* screen: hidden; print: shown below */
+
+@media print {
+  /* Show only the lens-filtered pulse; drop all navigation/controls/chrome. */
+  .hb-hero, .hb-spine, .hb-roster, .hb-tabs, .hb-search,
+  .hb-lens-helprow, .hb-lens-popover, .hb-lens-controls,
+  #hb-auth, #seed-banner, #hb-refresh-status, .hb-eyebrow,
+  .hb-view:not(.active) { display: none !important; }
+
+  /* Ink-friendly: white page, black text, no dark panels or shadows. */
+  body, .hb-shell, #view-pulse, .hb-signal, .hb-metric {
+    background: #fff !important; color: #000 !important; box-shadow: none !important;
+  }
+  #view-pulse * { color: #000 !important; }
+  .hb-signal {
+    border: 1px solid #ccc !important;
+    break-inside: avoid; page-break-inside: avoid;
+    margin: 0 0 8pt;
+  }
+  .hb-pill { border: 1px solid #999 !important; background: #f3f3f3 !important; }
+  a { color: #000 !important; text-decoration: underline; }
+
+  .hb-print-head {
+    display: block !important;
+    margin: 0 0 12pt;
+    border-bottom: 2pt solid #000;
+    padding-bottom: 6pt;
+  }
+  .hb-print-head h1 { font-size: 16pt; margin: 0 0 4pt; }
+  .hb-print-head p  { font-size: 9pt; margin: 0; }
+  .hb-print-note    { font-style: italic; color: #444 !important; }
+  .hb-section-head h2 { font-size: 13pt; }
+  .hb-fullsummary summary { font-weight: bold; }
+}

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>C2A2 Community AI Education Heartbeat</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=1e726ade9d">
 </head>
 <body>
   <div class="hb-shell">
@@ -68,6 +68,15 @@
       </button>
     </section>
 
+    <section class="hb-roster" id="hb-roster" aria-label="Sources monitored">
+      <div class="hb-roster-head">
+        <strong>Sources monitored</strong>
+        <span class="hb-roster-sum" id="roster-sum">—</span>
+      </div>
+      <p class="hb-roster-note">The raw inflow the heartbeat watches across the AI landscape. Sources stay immutable — your lens filters what you <em>see</em>, never what is collected.</p>
+      <div class="hb-roster-lanes" id="roster-lanes"></div>
+    </section>
+
     <nav class="hb-tabs" aria-label="Heartbeat modes">
       <button class="hb-tab active" data-view="pulse" type="button">Pulse</button>
       <button class="hb-tab" data-view="history" type="button">History</button>
@@ -77,6 +86,7 @@
 
     <main>
       <section class="hb-view active" id="view-pulse">
+        <div id="hb-print-head" class="hb-print-head" aria-hidden="true"></div>
         <div class="hb-section-head">
           <div>
             <p class="hb-eyebrow">Latest digest snapshot</p>
@@ -85,6 +95,7 @@
           <div class="hb-search">
             <input id="signal-search" type="search" placeholder="Filter signals by source, tag, or title">
             <button id="hb-refresh" type="button" class="hb-refresh-btn" title="Re-fetch the latest exported snapshot and repaint">↻ Refresh</button>
+            <button id="hb-pdf" type="button" class="hb-pdf-btn" title="Save the current, lens-filtered pulse as a PDF — no sign-in, nothing stored">⤓ PDF</button>
             <span id="hb-refresh-status" class="hb-refresh-status" role="status"></span>
           </div>
         </div>
@@ -288,8 +299,8 @@
   <!-- Optional account layer (Phase 2b). If the CDN/config fail to load, the tab
        stays fully functional with the per-device localStorage lens. -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="heartbeat-config.js"></script>
-  <script src="app.js"></script>
-  <script src="auth.js"></script>
+  <script src="heartbeat-config.js?v=1e40ceb1c7"></script>
+  <script src="app.js?v=d4ba3748a9"></script>
+  <script src="auth.js?v=a7c5c99fba"></script>
 </body>
 </html>

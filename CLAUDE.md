@@ -15,6 +15,23 @@
 
 **Rationale:** We pushed `adbd456` without local HTTP review (2025-05-07) and the user reported unexpected behavior. A 30-second local check would have caught it.
 
+**EXCEPTION — automated data-only heartbeat refresh (added 2026-06-26).** The `heartbeat-refresh` GitHub Actions cron MAY commit and push without human sign-off, but ONLY when both hold: (a) it changes **data files exclusively** — `wiki/heartbeat/data/digest.json`, `wiki/heartbeat/data/snapshots/**`, `wiki/heartbeat/data/sources_roster.json` — never code, HTML, or CSS; and (b) the **CI gate passes** (the jsdom roster test `wiki/heartbeat/test/roster.test.js` + `node --check` on the JS + the pipeline's seed/size/`signals>0` guards). A failing gate fails the job, so nothing is pushed. This carve-out honors the rule's intent: the rule exists because an unreviewed **code/HTML** push broke rendering; auto-publishing only **validated data** behind a green gate is low blast-radius. Any change to the heartbeat's code/HTML/CSS still requires the full human local review above.
+
+---
+
+## CONSTITUTIONAL RULE: Iframe-Loaded Tabs Must Not Ship Bare Asset Includes
+
+**`explorer.html` force-freshes each tab's iframe document (`data-src + '?v=' + Date.now()`) but cannot reach the assets INSIDE that document.** A sub-page that loads its own separate `.js`/`.css` with a bare `src="app.js"` therefore gets fresh HTML + browser-cached assets on every load — a guaranteed stale-asset mismatch the instant the asset is edited.
+
+**Therefore, any tab loaded into the explorer iframe must either:**
+
+1. **Inline its JS/CSS** (as every single-file tab does — they are immune because the whole file is the iframe document), OR
+2. **Content-hash its `?v=` includes** via a deterministic stamp step. Never ship a bare local `src=`/`href=` include on an iframe-loaded page, and never rely on a manual `?v=N` bump (forgetting it IS the repeatable error).
+
+**Enforcement (heartbeat):** `wiki/heartbeat/backend/stamp_assets.py` rewrites each include's `?v=` to `SHA-1[:10]` of the asset; it is step 6 of `refresh_snapshot.sh` and is runnable standalone after any asset edit. Run it (or inline) before any push that touches a multi-file tab's assets.
+
+**Rationale:** 2026-06-26 — the heartbeat "What is a lens?" link was dead in-browser while jsdom tests passed, because the browser ran a cached `app.js` against fresh `index.html`. A code review confirmed heartbeat was the only multi-file tab; all others inline. Content-hash stamping makes the version a function of file content, so it is always correct with no human in the loop (Rule 5: if code can answer, code answers).
+
 ---
 
 ## CONSTITUTIONAL RULE: Mismatched-Context Push-Back

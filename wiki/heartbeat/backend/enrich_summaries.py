@@ -108,17 +108,12 @@ def main(argv=None) -> int:
     if not sidecar:
         print("warning: no long_summaries.json found (or empty); only cleaning short summaries")
 
+    # Enrich digest.json (latest). Per-update snapshots are archived AFTER this
+    # step (archive_snapshot.py copies the already-enriched digest.json), so we
+    # don't target dated snapshots here. --all-snapshots can still backfill old ones.
     targets = [data_dir / "digest.json"]
-    today = None
-    digest_path = data_dir / "digest.json"
-    if digest_path.exists():
-        today = json.loads(digest_path.read_text(encoding="utf-8")).get("generated")
     if args.all_snapshots:
         targets += sorted((data_dir / "snapshots").glob("digest-*.json"))
-    elif today:
-        snap = data_dir / "snapshots" / ("digest-" + today + ".json")
-        if snap.exists():
-            targets.append(snap)
 
     for t in targets:
         if not t.exists():
