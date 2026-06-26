@@ -1,0 +1,74 @@
+%% C2A2 — Runtime / Service Topology (low-level)
+%% Where code executes, what it reads/writes, and the external services it calls.
+%% Solid arrow = writes / deploys.  Dotted arrow = runtime read / API call.
+graph TD
+
+  subgraph MAC["Mac Mini · launchd + runtime"]
+    AGENT["OpenStory agent runtime"]
+    SYNC["launchd: sync_vault.sh — 21:00"]
+    MPUB["launchd: metabolism-publish — Sun 06:30"]
+    WREV["launchd: weekly_review.py — Sun 20:00 UTC"]
+    HBRT["heartbeat runtime app.py :8799"]
+  end
+
+  subgraph SBX["Cowork Sandbox · Linux (manual)"]
+    RSOC["regen_summa_sociogram.sh"]
+    RREV["refresh_review_log.sh"]
+    RMET["metabolism regen — Sun 06:05"]
+    ORD["openstory_db.py reader"]
+  end
+
+  subgraph CI["GitHub Actions CI · ubuntu"]
+    HBYML["heartbeat-refresh.yml — 11:00 UTC"]
+    RSNAP["refresh_snapshot.sh — 6 steps"]
+    GATE{"GATE: roster.test.js + node --check"}
+    KEEP["supabase-keep-alive.yml — every 3d"]
+  end
+
+  subgraph DATA["Shared Data / State"]
+    DB[("open-story.db — SQLite WAL")]
+    GIT[("Git repos: C2A2-wiki + Summa vault")]
+    JSONI[("JSON indexes: digest · roster · summa_index · metabolism · prs")]
+    PROV[("provenance/decision_emails.json — local, gitignored")]
+  end
+
+  subgraph DEPLOY["Deploy & Client (static)"]
+    PAGES["GitHub Pages — static hosting"]
+    BROWSER["Browser — explorer.html + tabs (D3 · Supabase-JS)"]
+  end
+
+  subgraph EXT["External Services"]
+    BROKER["cc-broker — Supabase Edge Function · Pathway-00"]
+    OPENAI["OpenAI API — summaries · TTS"]
+    TAVILY["Tavily — web search"]
+    SUPA[("Supabase Postgres — user_preferences (RLS) + device_usage")]
+  end
+
+  %% writes / deploys (solid)
+  AGENT --> DB
+  SYNC --> GIT
+  MPUB --> GIT
+  RSOC --> JSONI
+  RMET --> JSONI
+  RREV --> PROV
+  HBYML --> RSNAP
+  RSNAP --> GATE
+  GATE -->|pass| GIT
+  GIT --> PAGES
+  PAGES --> BROWSER
+
+  %% runtime reads / API calls (dotted)
+  ORD -. reads .-> DB
+  RSNAP -. summaries .-> BROKER
+  BROWSER -. enrich .-> BROKER
+  BROWSER -. prefs .-> SUPA
+  BROKER -. calls .-> OPENAI
+  BROKER -. calls .-> TAVILY
+  KEEP -. ping .-> SUPA
+
+  style MAC fill:#3D9E8918,stroke:#3D9E89
+  style SBX fill:#8B5DAB1c,stroke:#8B5DAB
+  style CI fill:#D85A3018,stroke:#D85A30
+  style DATA fill:#C9A84C22,stroke:#B58E2E
+  style DEPLOY fill:#5A8EAF1c,stroke:#5A8EAF
+  style EXT fill:#D4537E1a,stroke:#D4537E

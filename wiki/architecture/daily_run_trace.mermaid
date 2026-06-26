@@ -1,0 +1,25 @@
+%% C2A2 — Daily-Run Execution Trace: c282-wiki-agent-daily-run
+%% Phases 0, 5.5, 6 are from committed rules (CLAUDE.md).
+%% Phases 1-4 summarize the documented agent sequence — the run is a
+%% scheduled-task prompt, not one committed script. Edit if a phase changes.
+graph TD
+
+  P0["<b>Phase 0 · Ingest & preserve</b><br/>RUNS: append_decision_email.py (idempotent) · proposal intake<br/>WRITES: provenance/decision_emails.json · inbox/proposals/<br/>GUARD: append BEFORE the ephemeral review page is deleted"]
+
+  P1["<b>Phase 1 · Validate inputs</b><br/>RUNS: proposal parse · schema / format checks<br/>WRITES: approved / pending / needs_review routing<br/>GUARD: malformed cards held, not ingested (fail loud)"]
+
+  P2["<b>Phase 2 · Tradition agents draft</b><br/>RUNS: 11 tradition agents read the shared vault<br/>WRITES: traditions/** · synthesis/*_bridge.md"]
+
+  P3["<b>Phase 3 · Integrate + detect</b><br/>RUNS: Master C2A2 agent · Pattern Detector<br/>WRITES: master/cross_program_index · prs_pub_years.json · flags/pattern_detector_findings.md"]
+
+  P4["<b>Phase 4 · Regenerate views</b><br/>RUNS: regen_summa_sociogram.sh + prs / metabolism builders<br/>WRITES: wiki_narration.html · prs_3d.html · metabolism_view.html<br/>GUARD: validate_html.py PASS + node count > 0"]
+
+  P55["<b>Phase 5.5 · Rebuild Review Log</b><br/>RUNS: refresh_review_log.sh (build_provenance + assemble)<br/>WRITES: review_log.html (email-scrubbed)<br/>GUARD: grep-assert scrub held · size > 500 KB"]
+
+  P6["<b>Phase 6 · Publish</b><br/>RUNS: git commit + push to main → Pages rebuild<br/>WRITES: review_log.html + day's vault changes (live)<br/>GUARD: local-HTTP visual review before any code/HTML push"]
+
+  P0 --> P1 --> P2 --> P3 --> P4 --> P55 --> P6
+
+  style P0 fill:#C9A84C18,stroke:#B58E2E
+  style P55 fill:#C9A84C18,stroke:#B58E2E
+  style P6 fill:#D85A3018,stroke:#C24E27

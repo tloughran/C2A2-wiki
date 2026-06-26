@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RC Karpathy Wiki — C2A2 Ecosystem Architecture</title>
+<style>
+  :root{
+    --color-background-primary:#15151d;
+    --color-text-primary:#e8e6df;
+    --color-text-secondary:#9c9a92;
+    --color-text-info:#85B7EB;
+    --color-border-secondary:#3a3a45;
+    --color-border-tertiary:#2a2a33;
+    --page-bg:#0a0a0f;
+    --gold:#C9A84C;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;background:var(--page-bg);color:var(--color-text-primary);
+    font-family:ui-sans-serif,-apple-system,system-ui,"Segoe UI",sans-serif;}
+  header{padding:18px 24px 10px;border-bottom:1px solid var(--color-border-tertiary);}
+  header h1{margin:0;font-size:17px;font-weight:700;}
+  header p{margin:4px 0 0;font-size:12px;color:var(--color-text-secondary);}
+  .toolbar{display:flex;gap:8px;align-items:center;padding:10px 24px;}
+  .toolbar button{background:var(--color-background-primary);color:var(--color-text-primary);
+    border:1px solid var(--color-border-secondary);border-radius:7px;padding:6px 12px;
+    font-size:12px;cursor:pointer;}
+  .toolbar button:hover{border-color:var(--gold);}
+  .toolbar span{font-size:11px;color:var(--color-text-secondary);margin-left:6px;}
+  .stage{overflow:auto;padding:8px 24px 32px;}
+  #wrap{transform-origin:top left;transition:transform .12s ease;width:1160px;}
+  svg{width:100%;height:auto;display:block;}
+</style>
+</head>
+<body>
+<header>
+  <h1>RC Karpathy Wiki — C2A2 Explorer Ecosystem</h1>
+  <p>Agents read &amp; write one shared vault, which is generated into a public Explorer. Click a layer label to copy a drill-in prompt.</p>
+</header>
+<div class="toolbar">
+  <button id="zout">&minus;</button>
+  <button id="zin">+</button>
+  <button id="zreset">Reset</button>
+  <span id="zlabel">100%</span>
+  <span>· Tip: layer labels copy a question you can paste back into chat.</span>
+</div>
+<div class="stage">
+<div id="wrap">
+<svg viewBox="0 0 1160 1035" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc" font-family="ui-sans-serif, -apple-system, system-ui, sans-serif">
+<title id="ttl">RC Karpathy Wiki and C2A2 Explorer ecosystem architecture</title>
+<desc id="desc">A six-band layered data-flow: input sources feed a 13-agent network that reads and writes one shared vault (the Karpathy knowledge layer); generator and validation scripts build the explorer.html shell with its five chapters and nine accelerator sub-tabs; the result is published to GitHub behind local-review and CI guards. A right-hand rail lists the scheduled automation cadence.</desc>
+<style>
+  text{fill:var(--color-text-primary);}
+  .bsub{fill:var(--color-text-secondary);}
+  .tiny{fill:var(--color-text-secondary);font-size:9px;}
+  .box{fill:var(--color-background-primary);stroke:var(--color-border-secondary);stroke-width:1.2;}
+  .chip{fill:var(--color-background-primary);stroke:var(--color-border-tertiary);stroke-width:1;}
+  .pill{cursor:pointer;}
+  .pill:hover rect{opacity:.85;}
+  .flow{stroke:var(--color-text-secondary);stroke-width:2;fill:none;}
+  .mini{stroke:var(--color-border-secondary);stroke-width:1.4;fill:none;}
+  .bt{font-size:12.5px;font-weight:700;}
+  .lp{font-size:11px;font-weight:700;fill:#fff;letter-spacing:.04em;}
+</style>
+<defs>
+  <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="var(--color-text-secondary)"/></marker>
+  <marker id="arm" markerWidth="8" markerHeight="8" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="var(--color-border-secondary)"/></marker>
+</defs>
+
+<text x="40" y="30" font-size="19" font-weight="700">RC Karpathy Wiki — C2A2 Explorer Ecosystem</text>
+<text x="40" y="52" class="bsub" font-size="12.5">A tradition accelerator/detector: agents read &amp; write one shared wiki, which is generated into a public Explorer.</text>
+
+<!-- BAND 1 SOURCES -->
+<rect x="40" y="70" width="840" height="104" rx="14" fill="#378ADD" fill-opacity="0.08"/>
+<g class="pill" onclick="sendPrompt('Walk me through the input sources feeding the C2A2 wiki and how each is ingested.')"><rect x="52" y="62" width="132" height="20" rx="10" fill="#378ADD"/><text x="62" y="76" class="lp">1 · SOURCES</text></g>
+<g><rect class="box" x="55" y="94" width="150" height="64" rx="8"/><text x="130" y="118" text-anchor="middle" class="bt">Summa 2026 Vault</text><text x="130" y="137" text-anchor="middle" class="bsub" font-size="10">synced 21:00 daily</text></g>
+<g><rect class="box" x="219" y="94" width="150" height="64" rx="8"/><text x="294" y="118" text-anchor="middle" class="bt">User Proposals</text><text x="294" y="137" text-anchor="middle" class="bsub" font-size="10">inbox/proposals</text></g>
+<g><rect class="box" x="383" y="94" width="150" height="64" rx="8"/><text x="458" y="118" text-anchor="middle" class="bt">OpenStory DB</text><text x="458" y="137" text-anchor="middle" class="bsub" font-size="10">agent telemetry</text></g>
+<g><rect class="box" x="547" y="94" width="150" height="64" rx="8"/><text x="622" y="118" text-anchor="middle" class="bt">Decision Emails</text><text x="622" y="137" text-anchor="middle" class="bsub" font-size="10">your approvals</text></g>
+<g><rect class="box" x="711" y="94" width="150" height="64" rx="8"/><text x="786" y="118" text-anchor="middle" class="bt">Web / Broker</text><text x="786" y="137" text-anchor="middle" class="bsub" font-size="10">Tavily enrich</text></g>
+
+<path class="flow" d="M460,176 L460,196" marker-end="url(#ar)"/>
+
+<!-- BAND 2 AGENTS -->
+<rect x="40" y="200" width="840" height="150" rx="14" fill="#7F77DD" fill-opacity="0.09"/>
+<g class="pill" onclick="sendPrompt('Explain the 13-agent network: the 11 tradition agents, the master C2A2 agent, and the meta-agents, and how they report upward instead of passing context.')"><rect x="52" y="192" width="186" height="20" rx="10" fill="#7F77DD"/><text x="62" y="206" class="lp">2 · AGENT NETWORK</text></g>
+<g><rect class="box" x="55" y="224" width="200" height="104" rx="8"/><text x="155" y="245" text-anchor="middle" class="bt">11 Tradition Agents</text>
+  <text x="155" y="263" text-anchor="middle" class="tiny">Levin · Friston · Hoffman · Hawkins</text>
+  <text x="155" y="277" text-anchor="middle" class="tiny">McGilchrist · Stump · Carroll · Kastrup</text>
+  <text x="155" y="291" text-anchor="middle" class="tiny">Wolfram · Arkani-Hamed · Fredrickson</text>
+  <text x="155" y="307" text-anchor="middle" class="tiny">+ MacIntyre · Wright · Rohr · Loughran</text>
+  <text x="155" y="321" text-anchor="middle" class="tiny" font-style="italic">report findings upward</text></g>
+<g><rect class="box" x="275" y="240" width="180" height="72" rx="8"/><text x="365" y="272" text-anchor="middle" class="bt">Master C2A2 Agent</text><text x="365" y="291" text-anchor="middle" class="bsub" font-size="10">integration hub</text></g>
+<path class="mini" d="M257,276 L273,276" marker-end="url(#arm)"/>
+<g><rect class="box" x="475" y="240" width="180" height="72" rx="8"/><text x="565" y="266" text-anchor="middle" class="bt">Meta-Agents</text><text x="565" y="284" text-anchor="middle" class="bsub" font-size="10">Pattern Detector,</text><text x="565" y="298" text-anchor="middle" class="bsub" font-size="10">Assumption · Lit-Search</text></g>
+<g><rect class="box" x="675" y="240" width="186" height="72" rx="8"/><text x="768" y="266" text-anchor="middle" class="bt">Daily Run Pipeline</text><text x="768" y="284" text-anchor="middle" class="bsub" font-size="10">c282-wiki-agent</text><text x="768" y="298" text-anchor="middle" class="bsub" font-size="10">Phases 0–6</text></g>
+
+<path class="flow" d="M460,352 L460,372" marker-end="url(#ar)"/>
+<text x="475" y="366" class="bsub" font-size="10" font-style="italic">read &amp; write</text>
+
+<!-- BAND 3 VAULT -->
+<rect x="40" y="376" width="840" height="116" rx="14" fill="#C9A84C" fill-opacity="0.13"/>
+<g class="pill" onclick="sendPrompt('Explain the vault as the shared Karpathy-style knowledge layer and what each top folder (traditions, synthesis, master, flags, refs) holds.')"><rect x="52" y="368" width="320" height="20" rx="10" fill="#B58E2E"/><text x="62" y="382" class="lp">3 · THE VAULT — one shared knowledge layer</text></g>
+<g><rect class="box" x="55" y="402" width="150" height="72" rx="8"/><text x="130" y="432" text-anchor="middle" class="bt">traditions/</text><text x="130" y="451" text-anchor="middle" class="bsub" font-size="10">16 thinkers</text></g>
+<g><rect class="box" x="219" y="402" width="150" height="72" rx="8"/><text x="294" y="432" text-anchor="middle" class="bt">synthesis/</text><text x="294" y="451" text-anchor="middle" class="bsub" font-size="10">300+ bridges</text></g>
+<g><rect class="box" x="383" y="402" width="150" height="72" rx="8"/><text x="458" y="426" text-anchor="middle" class="bt">master/</text><text x="458" y="444" text-anchor="middle" class="bsub" font-size="10">cross-index</text><text x="458" y="458" text-anchor="middle" class="bsub" font-size="10">282 PRS triples</text></g>
+<g><rect class="box" x="547" y="402" width="150" height="72" rx="8"/><text x="622" y="432" text-anchor="middle" class="bt">flags/</text><text x="622" y="451" text-anchor="middle" class="bsub" font-size="10">pattern findings</text></g>
+<g><rect class="box" x="711" y="402" width="150" height="72" rx="8"/><text x="786" y="432" text-anchor="middle" class="bt">refs/</text><text x="786" y="451" text-anchor="middle" class="bsub" font-size="10">summa_index.json</text></g>
+
+<path class="flow" d="M460,494 L460,514" marker-end="url(#ar)"/>
+
+<!-- BAND 4 GENERATORS -->
+<rect x="40" y="518" width="840" height="116" rx="14" fill="#1D9E75" fill-opacity="0.10"/>
+<g class="pill" onclick="sendPrompt('Explain the generator and validation pipeline (sociogram, PRS 3D, heartbeat, review log, janitor) and the constitutional rules guarding HTML generation and pushes.')"><rect x="52" y="510" width="270" height="20" rx="10" fill="#1D9E75"/><text x="62" y="524" class="lp">4 · GENERATORS &amp; VALIDATION</text></g>
+<g><rect class="box" x="55" y="544" width="150" height="72" rx="8"/><text x="130" y="574" text-anchor="middle" class="bt">Sociogram regen</text><text x="130" y="593" text-anchor="middle" class="bsub" font-size="10">D3 · 2638 nodes</text></g>
+<g><rect class="box" x="219" y="544" width="150" height="72" rx="8"/><text x="294" y="574" text-anchor="middle" class="bt">PRS 3D</text><text x="294" y="593" text-anchor="middle" class="bsub" font-size="10">connectome</text></g>
+<g><rect class="box" x="383" y="544" width="150" height="72" rx="8"/><text x="458" y="568" text-anchor="middle" class="bt">Community ·</text><text x="458" y="585" text-anchor="middle" class="bt">Metabolism</text><text x="458" y="603" text-anchor="middle" class="bsub" font-size="10">· Heartbeat builds</text></g>
+<g><rect class="box" x="547" y="544" width="150" height="72" rx="8"/><text x="622" y="574" text-anchor="middle" class="bt">Review Log</text><text x="622" y="593" text-anchor="middle" class="bsub" font-size="10">assembler</text></g>
+<g><rect class="box" x="711" y="544" width="150" height="72" rx="8"/><text x="786" y="568" text-anchor="middle" class="bt">Janitor + Validate</text><text x="786" y="585" text-anchor="middle" class="bsub" font-size="10">HTML check ·</text><text x="786" y="599" text-anchor="middle" class="bsub" font-size="10">stamp assets</text></g>
+
+<path class="flow" d="M460,636 L460,656" marker-end="url(#ar)"/>
+
+<!-- BAND 5 EXPLORER -->
+<rect x="40" y="660" width="840" height="190" rx="14" fill="#D4537E" fill-opacity="0.09"/>
+<g class="pill" onclick="sendPrompt('Walk me through explorer.html: the five chapter tabs and the nine accelerator sub-tabs and what data file each one reads.')"><rect x="52" y="652" width="290" height="20" rx="10" fill="#D4537E"/><text x="62" y="666" class="lp">5 · EXPLORER SHELL — explorer.html</text></g>
+<text x="62" y="692" class="bsub" font-size="10" font-weight="700">Chapters</text>
+<g><rect class="chip" x="55" y="698" width="150" height="34" rx="7"/><text x="130" y="720" text-anchor="middle" font-size="11" font-weight="600">Start Here</text></g>
+<g><rect class="chip" x="219" y="698" width="150" height="34" rx="7"/><text x="294" y="720" text-anchor="middle" font-size="11" font-weight="600">Community Explorer</text></g>
+<g><rect class="chip" x="383" y="698" width="150" height="34" rx="7"/><text x="458" y="720" text-anchor="middle" font-size="11" font-weight="600">Education</text></g>
+<g><rect class="chip" x="547" y="698" width="150" height="34" rx="7" fill="#D4537E" fill-opacity="0.18" stroke="#D4537E"/><text x="622" y="716" text-anchor="middle" font-size="11" font-weight="700">Accelerator Tools</text><text x="622" y="728" text-anchor="middle" class="tiny">▼ sub-tabs</text></g>
+<g><rect class="chip" x="711" y="698" width="150" height="34" rx="7"/><text x="786" y="720" text-anchor="middle" font-size="11" font-weight="600">Community Interactions</text></g>
+<text x="62" y="752" class="bsub" font-size="10" font-weight="700">Accelerator sub-tabs (loaded into iframe)</text>
+<g font-size="10.5" text-anchor="middle">
+  <g><rect class="chip" x="55" y="758" width="150" height="30" rx="6"/><text x="130" y="777">Sociogram</text></g>
+  <g><rect class="chip" x="219" y="758" width="150" height="30" rx="6"/><text x="294" y="777">Narrative Connectome</text></g>
+  <g><rect class="chip" x="383" y="758" width="150" height="30" rx="6"/><text x="458" y="777">Agent Map</text></g>
+  <g><rect class="chip" x="547" y="758" width="150" height="30" rx="6"/><text x="622" y="777">Metabolism</text></g>
+  <g><rect class="chip" x="711" y="758" width="150" height="30" rx="6"/><text x="786" y="777">Curriculum (Summa)</text></g>
+  <g><rect class="chip" x="55" y="794" width="150" height="30" rx="6"/><text x="130" y="813">RC Document Explorer</text></g>
+  <g><rect class="chip" x="219" y="794" width="150" height="30" rx="6"/><text x="294" y="813">Physics Explorer</text></g>
+  <g><rect class="chip" x="383" y="794" width="150" height="30" rx="6"/><text x="458" y="813">TRV Commentary</text></g>
+  <g><rect class="chip" x="547" y="794" width="150" height="30" rx="6"/><text x="622" y="813">AI Heartbeat</text></g>
+  <g><rect class="chip" x="711" y="794" width="150" height="30" rx="6" stroke-dasharray="3 3"/><text x="786" y="813" class="bsub">Who's Who · Review Log</text></g>
+</g>
+
+<path class="flow" d="M460,852 L460,872" marker-end="url(#ar)"/>
+
+<!-- BAND 6 PUBLISH -->
+<rect x="40" y="876" width="840" height="104" rx="14" fill="#D85A30" fill-opacity="0.09"/>
+<g class="pill" onclick="sendPrompt('Explain the publish flow to GitHub and the constitutional guards: local-HTTP visual review before any code/HTML push, and the data-only heartbeat CI auto-push exception.')"><rect x="52" y="868" width="200" height="20" rx="10" fill="#C24E27"/><text x="62" y="882" class="lp">6 · PUBLISH</text></g>
+<g><rect class="box" x="55" y="900" width="190" height="64" rx="8"/><text x="150" y="928" text-anchor="middle" class="bt">GitHub: C2A2-wiki</text><text x="150" y="947" text-anchor="middle" class="bsub" font-size="10">public repo</text></g>
+<g><rect class="box" x="261" y="900" width="190" height="64" rx="8"/><text x="356" y="928" text-anchor="middle" class="bt">Summa-2026-wiki</text><text x="356" y="947" text-anchor="middle" class="bsub" font-size="10">companion repo</text></g>
+<g><rect class="box" x="467" y="900" width="190" height="64" rx="8"/><text x="562" y="928" text-anchor="middle" class="bt">Published Site</text><text x="562" y="947" text-anchor="middle" class="bsub" font-size="10">explorer.html live</text></g>
+<g><rect class="box" x="673" y="900" width="188" height="64" rx="8" stroke="#C24E27" stroke-width="1.6"/><text x="767" y="924" text-anchor="middle" class="bt">Guards</text><text x="767" y="941" text-anchor="middle" class="bsub" font-size="10">local-HTTP review</text><text x="767" y="955" text-anchor="middle" class="bsub" font-size="10">+ CI gate</text></g>
+
+<!-- SIDEBAR CADENCE -->
+<rect x="905" y="70" width="215" height="780" rx="14" fill="#5F5E5A" fill-opacity="0.18"/>
+<rect x="917" y="62" width="150" height="20" rx="10" fill="#5F5E5A"/><text x="927" y="76" class="lp">AUTOMATION · CADENCE</text>
+<text x="921" y="104" class="bsub" font-size="10">Scheduled tasks driving the flow</text>
+<g font-size="11">
+  <g><rect class="chip" x="921" y="116" width="183" height="44" rx="7"/><text x="932" y="138" font-weight="600">Sync Vault</text><text x="932" y="153" class="bsub" font-size="9.5">daily 21:00 → reindex</text></g>
+  <g><rect class="chip" x="921" y="168" width="183" height="44" rx="7"/><text x="932" y="190" font-weight="600">Daily Agent Run</text><text x="932" y="205" class="bsub" font-size="9.5">c282 · Phases 0–6</text></g>
+  <g><rect class="chip" x="921" y="220" width="183" height="44" rx="7"/><text x="932" y="242" font-weight="600">System Health</text><text x="932" y="257" class="bsub" font-size="9.5">daily 06:00</text></g>
+  <g><rect class="chip" x="921" y="272" width="183" height="44" rx="7"/><text x="932" y="294" font-weight="600">Metabolism Publish</text><text x="932" y="309" class="bsub" font-size="9.5">daily 06:00</text></g>
+  <g><rect class="chip" x="921" y="324" width="183" height="44" rx="7"/><text x="932" y="346" font-weight="600">Wiki Janitor</text><text x="932" y="361" class="bsub" font-size="9.5">Sun 05:45</text></g>
+  <g><rect class="chip" x="921" y="376" width="183" height="44" rx="7"/><text x="932" y="398" font-weight="600">Heartbeat Refresh</text><text x="932" y="413" class="bsub" font-size="9.5">CI cron · data-only</text></g>
+  <g><rect class="chip" x="921" y="428" width="183" height="44" rx="7"/><text x="932" y="450" font-weight="600">Sewing · Reviewer</text><text x="932" y="465" class="bsub" font-size="9.5">weekly connectivity</text></g>
+</g>
+<line x1="921" y1="492" x2="1104" y2="492" stroke="var(--color-border-secondary)" stroke-width="1"/>
+<text x="921" y="514" font-size="10.5" font-weight="700" fill="#C9A84C">Karpathy principle</text>
+<text x="921" y="532" class="bsub" font-size="10"><tspan x="921" dy="0">Agents read &amp; write ONE</tspan><tspan x="921" dy="14">shared wiki (the vault)</tspan><tspan x="921" dy="14">instead of passing large</tspan><tspan x="921" dy="14">context back and forth.</tspan></text>
+<line x1="921" y1="600" x2="1104" y2="600" stroke="var(--color-border-secondary)" stroke-width="1"/>
+<text x="921" y="622" font-size="10.5" font-weight="700">Detector aim</text>
+<text x="921" y="640" class="bsub" font-size="10"><tspan x="921" dy="0">Surface cross-tradition</tspan><tspan x="921" dy="14">bridges &amp; paradigm</tspan><tspan x="921" dy="14">shifts as they emerge —</tspan><tspan x="921" dy="14">flags/ + synthesis/.</tspan></text>
+<line x1="921" y1="708" x2="1104" y2="708" stroke="var(--color-border-secondary)" stroke-width="1"/>
+<text x="921" y="730" font-size="10.5" font-weight="700">Theme</text>
+<text x="921" y="748" class="bsub" font-size="10"><tspan x="921" dy="0">Dark #0a0a0f · gold</tspan><tspan x="921" dy="14">#C9A84C · 14 tradition</tspan><tspan x="921" dy="14">hues in the Sociogram.</tspan></text>
+</svg>
+</div>
+</div>
+<script>
+  // Standalone host: layer labels copy a drill-in question to the clipboard.
+  function sendPrompt(t){
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(t).then(function(){flash('Copied: '+t);},function(){flash(t);});
+    } else { flash(t); }
+  }
+  function flash(msg){
+    var el=document.getElementById('zlabel');
+    var prev=el.textContent; el.textContent='✓ prompt copied';
+    setTimeout(function(){el.textContent=prev;},1600);
+  }
+  // Zoom controls
+  var z=1, wrap=document.getElementById('wrap'), lbl=document.getElementById('zlabel');
+  function apply(){wrap.style.transform='scale('+z+')';lbl.textContent=Math.round(z*100)+'%';}
+  document.getElementById('zin').onclick=function(){z=Math.min(2.5,z+0.15);apply();};
+  document.getElementById('zout').onclick=function(){z=Math.max(0.5,z-0.15);apply();};
+  document.getElementById('zreset').onclick=function(){z=1;apply();};
+</script>
+</body>
+</html>

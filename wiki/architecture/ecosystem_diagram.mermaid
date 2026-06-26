@@ -1,0 +1,115 @@
+%% RC Karpathy Wiki — C2A2 Explorer Ecosystem
+%% Editable architecture diagram. Renders in Obsidian, GitHub, and any Mermaid viewer.
+%% Update a line when the system changes; the layout redraws itself.
+graph TD
+
+  %% ---------- 1 · SOURCES ----------
+  subgraph S1["1 · Sources"]
+    SUM["Summa 2026 Vault<br/>synced 21:00 daily"]
+    PROP["User Proposals<br/>inbox/proposals"]
+    OS["OpenStory DB<br/>agent telemetry"]
+    EM["Decision Emails<br/>your approvals"]
+    WEB["Web / Broker<br/>Tavily enrich"]
+  end
+
+  %% ---------- 2 · AGENT NETWORK ----------
+  subgraph S2["2 · Agent Network"]
+    TRAD["11 Tradition Agents<br/>Levin · Friston · Hoffman · Hawkins ·<br/>McGilchrist · Stump · Carroll · Kastrup ·<br/>Wolfram · Arkani-Hamed · Fredrickson<br/>+ MacIntyre · Wright · Rohr · Loughran"]
+    MASTER["Master C2A2 Agent<br/>integration hub"]
+    META["Meta-Agents<br/>Pattern Detector · Lit-Search"]
+    DAILY["Daily Run Pipeline<br/>c282-wiki-agent · Phases 0-6"]
+  end
+
+  %% ---------- 3 · THE VAULT ----------
+  subgraph S3["3 · The Vault — one shared knowledge layer (Karpathy)"]
+    TR["traditions/ — 16 thinkers"]
+    SY["synthesis/ — 300+ bridges"]
+    MS["master/ — cross-index · 282 PRS"]
+    FL["flags/ — pattern findings"]
+    RF["refs/ — summa_index.json"]
+  end
+
+  %% ---------- 4 · GENERATORS & VALIDATION ----------
+  subgraph S4["4 · Generators & Validation"]
+    GSOC["Sociogram regen<br/>D3 · 2638 nodes"]
+    GPRS["PRS 3D / Connectome"]
+    GBLD["Community · Metabolism ·<br/>Heartbeat builders"]
+    GRL["Review Log assembler"]
+    GVAL["Janitor + Validate<br/>HTML check · stamp assets"]
+  end
+
+  %% ---------- 5 · EXPLORER SHELL ----------
+  subgraph S5["5 · Explorer Shell — explorer.html"]
+    CH["Chapters: Start Here · Community Explorer ·<br/>Education · Accelerator Tools · Community Interactions"]
+    TABS["Accelerator sub-tabs: Sociogram · Narrative Connectome ·<br/>Agent Map · Metabolism · Curriculum (Summa) ·<br/>RC Docs · Physics · TRV Commentary · AI Heartbeat"]
+  end
+
+  %% ---------- 6 · PUBLISH ----------
+  subgraph S6["6 · Publish"]
+    GH["GitHub: C2A2-wiki<br/>public repo"]
+    SR["Summa-2026-wiki<br/>companion repo"]
+    SITE["Published Site<br/>explorer.html live"]
+    GUARD["Guards<br/>local-HTTP review + CI gate"]
+  end
+
+  %% ---------- AUTOMATION · CADENCE ----------
+  subgraph CAD["Automation · Cadence"]
+    C1["Sync Vault — 21:00"]
+    C2["Daily Agent Run — c282"]
+    C3["System Health — 06:00"]
+    C4["Metabolism — 06:00"]
+    C5["Wiki Janitor — Sun 05:45"]
+    C6["Heartbeat Refresh — CI cron"]
+    C7["Sewing · Reviewer — weekly"]
+  end
+
+  %% ===== EDGES: sources -> agents =====
+  SUM --> TRAD
+  WEB --> TRAD
+  PROP --> DAILY
+  EM --> DAILY
+  OS --> META
+
+  %% ===== agents report upward, write vault =====
+  TRAD --> MASTER
+  META --> MASTER
+  MASTER --> SY
+  MASTER --> MS
+  DAILY --> TR
+  DAILY --> FL
+  SUM --> RF
+
+  %% ===== vault -> generators =====
+  TR --> GSOC
+  SY --> GSOC
+  MS --> GPRS
+  FL --> GRL
+  RF --> GBLD
+
+  %% ===== generators -> explorer =====
+  GSOC --> TABS
+  GPRS --> TABS
+  GBLD --> TABS
+  GRL --> TABS
+  GVAL -. validates .-> TABS
+  CH --> TABS
+
+  %% ===== explorer -> publish =====
+  TABS --> GH
+  GH --> SITE
+  SR --> SITE
+  GUARD -. gate .-> GH
+
+  %% ===== cadence drives the flow =====
+  C1 -.-> SUM
+  C2 -.-> DAILY
+  C6 -.-> GBLD
+
+  %% ---------- band tints ----------
+  style S1 fill:#378ADD14,stroke:#378ADD
+  style S2 fill:#7F77DD16,stroke:#7F77DD
+  style S3 fill:#C9A84C22,stroke:#B58E2E
+  style S4 fill:#1D9E7518,stroke:#1D9E75
+  style S5 fill:#D4537E16,stroke:#D4537E
+  style S6 fill:#D85A3016,stroke:#C24E27
+  style CAD fill:#5F5E5A18,stroke:#5F5E5A

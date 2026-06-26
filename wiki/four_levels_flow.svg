@@ -1,0 +1,89 @@
+<svg viewBox="0 0 880 700" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <title>Four Levels of Dialogue and the movement toward rich information flow</title>
+  <desc>Four stacked bands — intrapersonal, small-group tradition, inter-tradition, meta-traditional — each brightening left to right from thin facts toward rich presence, with coherence, stability and fecundity marked at every level and an ascending health vector.</desc>
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#5A8EAF" stop-opacity="0.05"/><stop offset="1" stop-color="#5A8EAF" stop-opacity="0.26"/></linearGradient>
+    <linearGradient id="g2" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#3D9E89" stop-opacity="0.05"/><stop offset="1" stop-color="#3D9E89" stop-opacity="0.26"/></linearGradient>
+    <linearGradient id="g3" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#C9A84C" stop-opacity="0.05"/><stop offset="1" stop-color="#C9A84C" stop-opacity="0.26"/></linearGradient>
+    <linearGradient id="g4" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#8B5DAB" stop-opacity="0.05"/><stop offset="1" stop-color="#8B5DAB" stop-opacity="0.28"/></linearGradient>
+    <linearGradient id="vec" x1="0" x2="0" y1="1" y2="0"><stop offset="0" stop-color="#5A8EAF"/><stop offset="0.5" stop-color="#C9A84C"/><stop offset="1" stop-color="#8B5DAB"/></linearGradient>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#C9A84C"/></marker>
+  </defs>
+
+  <rect x="0" y="0" width="880" height="700" fill="#0a0a0f"/>
+
+  <text x="56" y="44" fill="#C9A84C" font-family="Georgia, serif" font-size="25" font-weight="700">Four Levels of Dialogue</text>
+  <text x="56" y="70" fill="#8a8a9a" font-size="14.5" font-style="italic">Health grows as flow deepens — from facts &amp; analysis toward presence &amp; experienced relationship.</text>
+  <text x="56" y="92" fill="#5a5a70" font-size="11" letter-spacing="1.5">THIN INFORMATION</text>
+  <text x="600" y="92" fill="#9a8a4a" font-size="11" letter-spacing="1.5" text-anchor="end">RICH INFORMATION FLOW &#8594;</text>
+
+  <text x="372" y="112" fill="#4a4a60" font-size="10" letter-spacing="1.5">INTERACTION</text>
+  <text x="560" y="112" fill="#4a4a60" font-size="10" letter-spacing="1.5">EVIDENCE PRODUCED</text>
+
+  <line x1="836" y1="586" x2="836" y2="132" stroke="url(#vec)" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="828" y="360" fill="#9a8a4a" font-size="11" letter-spacing="1.5" transform="rotate(-90 828 360)" text-anchor="middle">RICHER FLOW &#183; GREATER HEALTH</text>
+
+  <g>
+    <rect x="56" y="124" width="744" height="104" rx="9" fill="#101019" stroke="#20202c"/>
+    <rect x="56" y="124" width="744" height="104" rx="9" fill="url(#g4)"/>
+    <rect x="56" y="124" width="4" height="104" fill="#8B5DAB"/>
+    <circle cx="96" cy="160" r="19" fill="#8B5DAB"/><text x="96" y="166" fill="#0a0a0f" font-family="Georgia, serif" font-size="15" font-weight="700" text-anchor="middle">IV</text>
+    <text x="128" y="158" fill="#e6e6ee" font-family="Georgia, serif" font-size="18.5" font-weight="600">Meta-Traditional Encounter</text>
+    <text x="128" y="180" fill="#8a8a9a" font-size="12.5" font-style="italic">between whole cultures &amp; worldviews</text>
+    <text x="128" y="208" fill="#8B5DAB" font-size="12.5">systematic, peaceful cultural interaction</text>
+    <text x="372" y="162" fill="#c4c4d0" font-size="13">disclosing, rule-governed</text>
+    <text x="372" y="180" fill="#c4c4d0" font-size="13">cultural exchange</text>
+    <text x="560" y="162" fill="#c4c4d0" font-size="13">intercultural health;</text>
+    <text x="560" y="180" fill="#c4c4d0" font-size="13">new shared paradigms</text>
+    <g font-size="11" font-weight="700"><circle cx="566" cy="206" r="3" fill="#8B5DAB"/><text x="574" y="210" fill="#a98ac4">C</text><circle cx="606" cy="206" r="3" fill="#8B5DAB"/><text x="614" y="210" fill="#a98ac4">S</text><circle cx="646" cy="206" r="3" fill="#8B5DAB"/><text x="654" y="210" fill="#a98ac4">F</text></g>
+  </g>
+
+  <g>
+    <rect x="56" y="242" width="744" height="104" rx="9" fill="#101019" stroke="#20202c"/>
+    <rect x="56" y="242" width="744" height="104" rx="9" fill="url(#g3)"/>
+    <rect x="56" y="242" width="4" height="104" fill="#C9A84C"/>
+    <circle cx="96" cy="278" r="19" fill="#C9A84C"/><text x="96" y="284" fill="#0a0a0f" font-family="Georgia, serif" font-size="15" font-weight="700" text-anchor="middle">III</text>
+    <text x="128" y="276" fill="#e6e6ee" font-family="Georgia, serif" font-size="18.5" font-weight="600">Inter-Tradition Dialogue</text>
+    <text x="128" y="298" fill="#8a8a9a" font-size="12.5" font-style="italic">between mature members of rival traditions</text>
+    <text x="128" y="326" fill="#C9A84C" font-size="12.5">imaginative, respectful listening &amp; disclosure</text>
+    <text x="372" y="280" fill="#c4c4d0" font-size="13">bilingual inhabitation</text>
+    <text x="372" y="298" fill="#c4c4d0" font-size="13">of another's learning curve</text>
+    <text x="560" y="280" fill="#c4c4d0" font-size="13">mature exchange;</text>
+    <text x="560" y="298" fill="#c4c4d0" font-size="13">synthesis &amp; genuine difference</text>
+    <g font-size="11" font-weight="700"><circle cx="566" cy="324" r="3" fill="#C9A84C"/><text x="574" y="328" fill="#d8bd6a">C</text><circle cx="606" cy="324" r="3" fill="#C9A84C"/><text x="614" y="328" fill="#d8bd6a">S</text><circle cx="646" cy="324" r="3" fill="#C9A84C"/><text x="654" y="328" fill="#d8bd6a">F</text></g>
+  </g>
+
+  <g>
+    <rect x="56" y="360" width="744" height="104" rx="9" fill="#101019" stroke="#20202c"/>
+    <rect x="56" y="360" width="744" height="104" rx="9" fill="url(#g2)"/>
+    <rect x="56" y="360" width="4" height="104" fill="#3D9E89"/>
+    <circle cx="96" cy="396" r="19" fill="#3D9E89"/><text x="96" y="402" fill="#0a0a0f" font-family="Georgia, serif" font-size="15" font-weight="700" text-anchor="middle">II</text>
+    <text x="128" y="394" fill="#e6e6ee" font-family="Georgia, serif" font-size="18.5" font-weight="600">Small-Group Tradition</text>
+    <text x="128" y="416" fill="#8a8a9a" font-size="12.5" font-style="italic">within a research collective</text>
+    <text x="128" y="444" fill="#3D9E89" font-size="12.5">eager, honest listening, learning &amp; teaching</text>
+    <text x="372" y="398" fill="#c4c4d0" font-size="13">shared inquiry;</text>
+    <text x="372" y="416" fill="#c4c4d0" font-size="13">investigating together</text>
+    <text x="560" y="398" fill="#c4c4d0" font-size="13">a learning community's</text>
+    <text x="560" y="416" fill="#c4c4d0" font-size="13">health &amp; growth</text>
+    <g font-size="11" font-weight="700"><circle cx="566" cy="442" r="3" fill="#3D9E89"/><text x="574" y="446" fill="#6cc0aa">C</text><circle cx="606" cy="442" r="3" fill="#3D9E89"/><text x="614" y="446" fill="#6cc0aa">S</text><circle cx="646" cy="442" r="3" fill="#3D9E89"/><text x="654" y="446" fill="#6cc0aa">F</text></g>
+  </g>
+
+  <g>
+    <rect x="56" y="478" width="744" height="104" rx="9" fill="#101019" stroke="#20202c"/>
+    <rect x="56" y="478" width="744" height="104" rx="9" fill="url(#g1)"/>
+    <rect x="56" y="478" width="4" height="104" fill="#5A8EAF"/>
+    <circle cx="96" cy="514" r="19" fill="#5A8EAF"/><text x="96" y="520" fill="#0a0a0f" font-family="Georgia, serif" font-size="15" font-weight="700" text-anchor="middle">I</text>
+    <text x="128" y="512" fill="#e6e6ee" font-family="Georgia, serif" font-size="18.5" font-weight="600">Intrapersonal Integration</text>
+    <text x="128" y="534" fill="#8a8a9a" font-size="12.5" font-style="italic">within a single mind or agent</text>
+    <text x="128" y="562" fill="#5A8EAF" font-size="12.5">shadow work; reconciling partial selves</text>
+    <text x="372" y="516" fill="#c4c4d0" font-size="13">facets meeting</text>
+    <text x="372" y="534" fill="#c4c4d0" font-size="13">facets within</text>
+    <text x="560" y="516" fill="#c4c4d0" font-size="13">inner coherence;</text>
+    <text x="560" y="534" fill="#c4c4d0" font-size="13">dignity &amp; wholeness</text>
+    <g font-size="11" font-weight="700"><circle cx="566" cy="560" r="3" fill="#5A8EAF"/><text x="574" y="564" fill="#8ab0cc">C</text><circle cx="606" cy="560" r="3" fill="#5A8EAF"/><text x="614" y="564" fill="#8ab0cc">S</text><circle cx="646" cy="560" r="3" fill="#5A8EAF"/><text x="654" y="564" fill="#8ab0cc">F</text></g>
+  </g>
+
+  <line x1="56" y1="616" x2="800" y2="616" stroke="#20202c"/>
+  <text x="56" y="644" fill="#9a9aaa" font-size="13"><tspan fill="#C9A84C" font-weight="700">C &#183; S &#183; F</tspan>  at every level — each interaction yields evidence of <tspan fill="#c4c4d0">coherence</tspan>, <tspan fill="#c4c4d0">stability</tspan>, and <tspan fill="#c4c4d0">fecundity</tspan>.</text>
+  <text x="56" y="666" fill="#5a5a70" font-size="12">The same health-signature, read at the scale of a self, a group, a tradition-encounter, and a culture.</text>
+</svg>

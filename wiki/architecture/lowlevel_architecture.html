@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C2A2 — Low-Level Architecture (services &amp; codebase)</title>
+<style>
+  :root{
+    --color-background-primary:#15151d;
+    --color-text-primary:#e8e6df;
+    --color-text-secondary:#9c9a92;
+    --color-border-secondary:#3a3a45;
+    --color-border-tertiary:#2a2a33;
+    --page-bg:#0a0a0f; --gold:#C9A84C;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;background:var(--page-bg);color:var(--color-text-primary);
+    font-family:ui-sans-serif,-apple-system,system-ui,"Segoe UI",sans-serif;}
+  header{padding:18px 24px 8px;border-bottom:1px solid var(--color-border-tertiary);}
+  header h1{margin:0;font-size:17px;font-weight:700;}
+  header p{margin:4px 0 0;font-size:12px;color:var(--color-text-secondary);}
+  .tabs{display:flex;flex-wrap:wrap;gap:8px;padding:12px 24px;border-bottom:1px solid var(--color-border-tertiary);}
+  .tabs button{background:var(--color-background-primary);color:var(--color-text-secondary);
+    border:1px solid var(--color-border-secondary);border-radius:8px;padding:8px 14px;
+    font-size:12.5px;cursor:pointer;}
+  .tabs button:hover{border-color:var(--gold);color:var(--color-text-primary);}
+  .tabs button.active{border-color:var(--gold);color:var(--gold);font-weight:700;}
+  .stage{padding:14px 24px 36px;overflow:auto;}
+  .panel{display:none;}
+  .panel.active{display:block;}
+  .panel svg{width:100%;height:auto;max-width:1160px;display:block;}
+</style>
+</head>
+<body>
+<header>
+  <h1>C2A2 — Low-Level Architecture</h1>
+  <p>Services &amp; codebase, four lenses. Diagrams 1–3 are read from the actual files; Diagram 4's phases 1–4 summarize the documented agent sequence (the run is a scheduled-task prompt, not one committed script).</p>
+  <p style="margin-top:6px;font-size:11px;color:var(--gold);font-weight:700;">System-state snapshot · 2026-06-26</p>
+</header>
+<div class="tabs">
+  <button data-p="1" class="active">1 · Runtime / Service Topology</button>
+  <button data-p="2">2 · Module Dependency Map</button>
+  <button data-p="3">3 · Codebase Tree</button>
+  <button data-p="4">4 · Daily-Run Trace</button>
+</div>
+<div class="stage">
+
+<!-- ============ PANEL 1 ============ -->
+<div class="panel active" data-p="1">
+<svg id="svg1" viewBox="0 0 1160 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Runtime and service topology" font-family="ui-sans-serif, -apple-system, system-ui, sans-serif">
+<style>
+  #svg1 text{fill:var(--color-text-primary);}
+  #svg1 .s{fill:var(--color-text-secondary);font-size:9.5px;}
+  #svg1 .box{fill:var(--color-background-primary);stroke:var(--color-border-secondary);stroke-width:1.1;}
+  #svg1 .bt{font-size:11px;font-weight:700;}
+  #svg1 .lp{font-size:10.5px;font-weight:700;fill:#fff;letter-spacing:.03em;}
+  #svg1 .solid{stroke:var(--color-text-secondary);stroke-width:1.8;fill:none;}
+  #svg1 .dash{stroke:var(--color-text-secondary);stroke-width:1.5;fill:none;stroke-dasharray:5 4;}
+</style>
+<defs><marker id="a1" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="var(--color-text-secondary)"/></marker></defs>
+<text x="40" y="28" font-size="18" font-weight="700">1 · Runtime / Service Topology</text>
+<text x="40" y="48" class="s" font-size="11.5">Compute hosts (top) read &amp; write a shared data layer (middle); GitHub Pages deploys to the browser; external services at the bottom.</text>
+<rect x="40" y="74" width="350" height="244" rx="12" fill="#3D9E89" fill-opacity="0.10" stroke="#3D9E89" stroke-opacity="0.5"/>
+<rect x="50" y="66" width="190" height="20" rx="10" fill="#358777"/><text x="60" y="80" class="lp">MAC MINI · launchd + runtime</text>
+<g><rect class="box" x="52" y="106" width="326" height="36" rx="7"/><text x="62" y="121" class="bt">OpenStory agent runtime</text><text x="62" y="135" class="s">writes open-story.db continuously (WAL)</text></g>
+<g><rect class="box" x="52" y="146" width="326" height="36" rx="7"/><text x="62" y="161" class="bt">launchd · sync_vault.sh</text><text x="62" y="175" class="s">daily 21:00 → rsync Summa, build index, push</text></g>
+<g><rect class="box" x="52" y="186" width="326" height="36" rx="7"/><text x="62" y="201" class="bt">launchd · metabolism-publish.sh</text><text x="62" y="215" class="s">Sun 06:30 → validate + push metabolism files</text></g>
+<g><rect class="box" x="52" y="226" width="326" height="36" rx="7"/><text x="62" y="241" class="bt">launchd · weekly_review.py</text><text x="62" y="255" class="s">Sun 20:00 UTC → weekly review HTML</text></g>
+<g><rect class="box" x="52" y="266" width="326" height="36" rx="7"/><text x="62" y="281" class="bt">heartbeat runtime · app.py</text><text x="62" y="295" class="s">serves /api/digest on :8799 (Pathway-00 poll)</text></g>
+<rect x="404" y="74" width="350" height="244" rx="12" fill="#8B5DAB" fill-opacity="0.11" stroke="#8B5DAB" stroke-opacity="0.5"/>
+<rect x="414" y="66" width="210" height="20" rx="10" fill="#7A4F98"/><text x="424" y="80" class="lp">COWORK SANDBOX · Linux (manual)</text>
+<g><rect class="box" x="416" y="106" width="326" height="36" rx="7"/><text x="426" y="121" class="bt">regen_summa_sociogram.sh</text><text x="426" y="135" class="s">extract → generate → validate → promote</text></g>
+<g><rect class="box" x="416" y="146" width="326" height="36" rx="7"/><text x="426" y="161" class="bt">refresh_review_log.sh</text><text x="426" y="175" class="s">build_provenance → assemble review_log.html</text></g>
+<g><rect class="box" x="416" y="186" width="326" height="36" rx="7"/><text x="426" y="201" class="bt">metabolism regen (scheduled)</text><text x="426" y="215" class="s">Sun 06:05 → metabolism_monitor + view build</text></g>
+<g><rect class="box" x="416" y="226" width="326" height="36" rx="7"/><text x="426" y="241" class="bt">openstory_db.py reader</text><text x="426" y="255" class="s">byte-copy snapshot read (WAL-safe)</text></g>
+<g><rect class="box" x="416" y="266" width="326" height="36" rx="7" stroke-dasharray="4 3"/><text x="426" y="287" class="s" font-style="italic">reads the vault · cannot git push (mount blocks)</text></g>
+<rect x="768" y="74" width="352" height="244" rx="12" fill="#D85A30" fill-opacity="0.10" stroke="#D85A30" stroke-opacity="0.5"/>
+<rect x="778" y="66" width="200" height="20" rx="10" fill="#C24E27"/><text x="788" y="80" class="lp">GITHUB ACTIONS CI · ubuntu</text>
+<g><rect class="box" x="780" y="106" width="328" height="36" rx="7"/><text x="790" y="121" class="bt">heartbeat-refresh.yml</text><text x="790" y="135" class="s">daily 11:00 UTC + workflow_dispatch</text></g>
+<g><rect class="box" x="780" y="146" width="328" height="36" rx="7"/><text x="790" y="161" class="bt">↳ refresh_snapshot.sh</text><text x="790" y="175" class="s">6-step pipeline (export → roster)</text></g>
+<g><rect class="box" x="780" y="186" width="328" height="36" rx="7" stroke="#C24E27" stroke-width="1.5"/><text x="790" y="201" class="bt">↳ GATE: roster.test.js + node --check</text><text x="790" y="215" class="s">fail ⇒ no push</text></g>
+<g><rect class="box" x="780" y="226" width="328" height="36" rx="7"/><text x="790" y="241" class="bt">↳ commit DATA-ONLY + push</text><text x="790" y="255" class="s">digest · snapshots · roster json</text></g>
+<g><rect class="box" x="780" y="266" width="328" height="36" rx="7"/><text x="790" y="281" class="bt">supabase-keep-alive.yml</text><text x="790" y="295" class="s">every 3 days 09:00 UTC</text></g>
+<rect x="40" y="334" width="1080" height="126" rx="12" fill="#C9A84C" fill-opacity="0.13" stroke="#B58E2E" stroke-opacity="0.55"/>
+<rect x="50" y="326" width="180" height="20" rx="10" fill="#B58E2E"/><text x="60" y="340" class="lp">SHARED DATA / STATE</text>
+<g><rect class="box" x="52" y="362" width="252" height="84" rx="8"/><text x="178" y="392" text-anchor="middle" class="bt">open-story.db</text><text x="178" y="410" text-anchor="middle" class="s">SQLite · WAL · live</text><text x="178" y="425" text-anchor="middle" class="s">agent sessions + events</text></g>
+<g><rect class="box" x="316" y="362" width="252" height="84" rx="8"/><text x="442" y="392" text-anchor="middle" class="bt">Git repos</text><text x="442" y="410" text-anchor="middle" class="s">C2A2-wiki (public)</text><text x="442" y="425" text-anchor="middle" class="s">+ Summa vault · .md tree</text></g>
+<g><rect class="box" x="580" y="362" width="252" height="84" rx="8"/><text x="706" y="388" text-anchor="middle" class="bt">JSON indexes</text><text x="706" y="406" text-anchor="middle" class="s">digest · roster · summa_index</text><text x="706" y="421" text-anchor="middle" class="s">metabolism · prs_pub_years</text></g>
+<g><rect class="box" x="844" y="362" width="252" height="84" rx="8" stroke-dasharray="4 3"/><text x="970" y="392" text-anchor="middle" class="bt">provenance/</text><text x="970" y="410" text-anchor="middle" class="s">decision_emails.json</text><text x="970" y="425" text-anchor="middle" class="s">local · gitignored</text></g>
+<rect x="40" y="474" width="1080" height="110" rx="12" fill="#5A8EAF" fill-opacity="0.11" stroke="#5A8EAF" stroke-opacity="0.5"/>
+<rect x="50" y="466" width="210" height="20" rx="10" fill="#4E7C9A"/><text x="60" y="480" class="lp">DEPLOY &amp; CLIENT (static)</text>
+<g><rect class="box" x="60" y="500" width="300" height="70" rx="8"/><text x="210" y="530" text-anchor="middle" class="bt">GitHub repo (main)</text><text x="210" y="549" text-anchor="middle" class="s">push auto-triggers rebuild</text></g>
+<g><rect class="box" x="430" y="500" width="280" height="70" rx="8"/><text x="570" y="530" text-anchor="middle" class="bt">GitHub Pages</text><text x="570" y="549" text-anchor="middle" class="s">static hosting · tloughran.github.io</text></g>
+<g><rect class="box" x="780" y="500" width="316" height="70" rx="8"/><text x="938" y="524" text-anchor="middle" class="bt">Browser — explorer.html + tabs</text><text x="938" y="542" text-anchor="middle" class="s">D3 v7 · Supabase-JS (CDN)</text><text x="938" y="556" text-anchor="middle" class="s">fetch JSON · Web Speech / TTS</text></g>
+<path class="solid" d="M360,535 L428,535" marker-end="url(#a1)"/>
+<path class="solid" d="M710,535 L778,535" marker-end="url(#a1)"/>
+<rect x="40" y="598" width="1080" height="118" rx="12" fill="#D4537E" fill-opacity="0.10" stroke="#D4537E" stroke-opacity="0.5"/>
+<rect x="50" y="590" width="180" height="20" rx="10" fill="#C0476E"/><text x="60" y="604" class="lp">EXTERNAL SERVICES</text>
+<g><rect class="box" x="52" y="624" width="252" height="80" rx="8"/><text x="178" y="652" text-anchor="middle" class="bt">cc-broker</text><text x="178" y="670" text-anchor="middle" class="s">Supabase Edge Function</text><text x="178" y="685" text-anchor="middle" class="s">Pathway-00 · device-metered</text></g>
+<g><rect class="box" x="316" y="624" width="252" height="80" rx="8"/><text x="442" y="656" text-anchor="middle" class="bt">OpenAI API</text><text x="442" y="674" text-anchor="middle" class="s">summaries · TTS (via broker)</text></g>
+<g><rect class="box" x="580" y="624" width="252" height="80" rx="8"/><text x="706" y="656" text-anchor="middle" class="bt">Tavily</text><text x="706" y="674" text-anchor="middle" class="s">web search (via broker)</text></g>
+<g><rect class="box" x="844" y="624" width="252" height="80" rx="8"/><text x="970" y="652" text-anchor="middle" class="bt">Supabase Postgres</text><text x="970" y="670" text-anchor="middle" class="s">user_preferences (RLS)</text><text x="970" y="685" text-anchor="middle" class="s">device_usage (keep-alive)</text></g>
+<path class="dash" d="M304,664 L316,664" marker-end="url(#a1)"/>
+<path class="dash" d="M304,650 C540,640 560,650 578,660" marker-end="url(#a1)"/>
+<path class="solid" d="M178,318 L178,360" marker-end="url(#a1)"/>
+<path class="solid" d="M300,318 C330,335 410,345 442,360" marker-end="url(#a1)"/>
+<path class="solid" d="M620,318 C650,335 690,345 706,360" marker-end="url(#a1)"/>
+<path class="dash" d="M300,300 C260,330 230,345 200,360" marker-end="url(#a1)"/>
+<path class="solid" d="M900,318 C850,338 780,348 760,360" marker-end="url(#a1)"/>
+<path class="solid" d="M580,404 L570,404" marker-end="url(#a1)"/>
+<path class="solid" d="M340,446 C300,470 240,488 210,498" marker-end="url(#a1)"/>
+<path class="dash" d="M900,570 C700,590 300,600 200,622" marker-end="url(#a1)"/>
+<line x1="430" y1="735" x2="466" y2="735" class="solid" marker-end="url(#a1)"/><text x="472" y="739" class="s">writes / deploys</text>
+<line x1="600" y1="735" x2="636" y2="735" class="dash" marker-end="url(#a1)"/><text x="642" y="739" class="s">runtime read / API call</text>
+<text x="820" y="739" class="s" font-style="italic">Mac pushes what the sandbox builds (sandbox can't push).</text>
+</svg>
+</div>
+
+<!-- ============ PANEL 2 ============ -->
+<div class="panel" data-p="2">
+<svg id="svg2" viewBox="0 0 1160 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Code and module dependency map" font-family="ui-sans-serif, -apple-system, system-ui, sans-serif">
+<style>
+  #svg2 text{fill:var(--color-text-primary);}
+  #svg2 .s{fill:var(--color-text-secondary);font-size:8.5px;}
+  #svg2 .box{fill:var(--color-background-primary);stroke-width:1.4;}
+  #svg2 .t{font-size:9.5px;font-weight:600;}
+  #svg2 .ln{font-size:10px;font-weight:700;}
+  #svg2 .e{stroke:var(--color-text-secondary);stroke-width:1.4;fill:none;}
+  #svg2 .sh{stroke:#5A8EAF;} #svg2 .py{stroke:var(--color-border-secondary);} #svg2 .js{stroke:#3D9E89;} #svg2 .db{stroke:#8B5DAB;}
+  #svg2 .out{fill:#C9A84C;fill-opacity:0.14;stroke:#B58E2E;stroke-width:1.4;}
+</style>
+<defs><marker id="a2" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="var(--color-text-secondary)"/></marker></defs>
+<text x="40" y="26" font-size="18" font-weight="700">2 · Code / Module Dependency Map</text>
+<text x="40" y="45" class="s" font-size="11">Bash wrapper → Python/Node modules → output artifact, one pipeline per row.  ★ = shared module.</text>
+<text x="40" y="84" class="ln" fill="#5A8EAF">Sociogram</text>
+<g><rect class="box sh" x="40" y="92" width="150" height="50" rx="7"/><text x="115" y="113" text-anchor="middle" class="t">regen_summa_</text><text x="115" y="126" text-anchor="middle" class="t">sociogram.sh</text><text x="115" y="138" text-anchor="middle" class="s">[sh] orchestrator</text></g>
+<g><rect class="box py" x="208" y="92" width="120" height="50" rx="7"/><text x="268" y="116" text-anchor="middle" class="t">build_index.py ★</text><text x="268" y="130" text-anchor="middle" class="s">Summa reindex</text></g>
+<g><rect class="box py" x="346" y="92" width="142" height="50" rx="7"/><text x="417" y="116" text-anchor="middle" class="t">extract_vault_data.py</text><text x="417" y="130" text-anchor="middle" class="s">vault → json</text></g>
+<g><rect class="box py" x="506" y="92" width="160" height="50" rx="7"/><text x="586" y="116" text-anchor="middle" class="t">generate_visualization.py</text><text x="586" y="130" text-anchor="middle" class="s">inlines c2a2-search.js ★</text></g>
+<g><rect class="box py" x="684" y="92" width="120" height="50" rx="7"/><text x="744" y="116" text-anchor="middle" class="t">validate_html.py ★</text><text x="744" y="130" text-anchor="middle" class="s">JS + brace check</text></g>
+<g><rect class="box out" x="822" y="92" width="298" height="50" rx="7"/><text x="971" y="116" text-anchor="middle" class="t">→ wiki_narration.html</text><text x="971" y="130" text-anchor="middle" class="s">D3 sociogram (self-contained)</text></g>
+<path class="e" d="M190,117 L206,117" marker-end="url(#a2)"/><path class="e" d="M328,117 L344,117" marker-end="url(#a2)"/><path class="e" d="M488,117 L504,117" marker-end="url(#a2)"/><path class="e" d="M666,117 L682,117" marker-end="url(#a2)"/><path class="e" d="M804,117 L820,117" marker-end="url(#a2)"/>
+<text x="40" y="176" class="ln" fill="#5A8EAF">Heartbeat</text>
+<g><rect class="box sh" x="40" y="184" width="150" height="50" rx="7"/><text x="115" y="205" text-anchor="middle" class="t">refresh_snapshot.sh</text><text x="115" y="218" text-anchor="middle" class="s">[sh] 6-step pipeline</text></g>
+<g><rect class="box py" x="208" y="184" width="296" height="50" rx="7"/><text x="356" y="203" text-anchor="middle" class="t">8 backend steps [py]</text><text x="356" y="216" text-anchor="middle" class="s">export_digest · generate_summaries→broker · enrich</text><text x="356" y="228" text-anchor="middle" class="s">archive · prune · build_manifest · build_roster · stamp_assets</text></g>
+<g><rect class="box js" x="522" y="184" width="150" height="50" rx="7"/><text x="597" y="205" text-anchor="middle" class="t">roster.test.js ★gate</text><text x="597" y="218" text-anchor="middle" class="s">[js] fail ⇒ no push</text></g>
+<g><rect class="box out" x="690" y="184" width="430" height="50" rx="7"/><text x="905" y="205" text-anchor="middle" class="t">→ digest.json + sources_roster.json</text><text x="905" y="218" text-anchor="middle" class="s">→ AI Heartbeat tab (multi-file: index/app/auth.js)</text></g>
+<path class="e" d="M190,209 L206,209" marker-end="url(#a2)"/><path class="e" d="M504,209 L520,209" marker-end="url(#a2)"/><path class="e" d="M672,209 L688,209" marker-end="url(#a2)"/>
+<text x="40" y="268" class="ln" fill="#5A8EAF">Review Log</text>
+<g><rect class="box sh" x="40" y="276" width="150" height="50" rx="7"/><text x="115" y="297" text-anchor="middle" class="t">refresh_review_log.sh</text><text x="115" y="310" text-anchor="middle" class="s">[sh] + size guard</text></g>
+<g><rect class="box py" x="208" y="276" width="170" height="50" rx="7"/><text x="293" y="300" text-anchor="middle" class="t">append_decision_email.py</text><text x="293" y="314" text-anchor="middle" class="s">Gmail → provenance</text></g>
+<g><rect class="box py" x="396" y="276" width="150" height="50" rx="7"/><text x="471" y="300" text-anchor="middle" class="t">build_provenance.py</text><text x="471" y="314" text-anchor="middle" class="s">triplet→proposal join</text></g>
+<g><rect class="box py" x="564" y="276" width="160" height="50" rx="7"/><text x="644" y="300" text-anchor="middle" class="t">assemble_review_log.py</text><text x="644" y="314" text-anchor="middle" class="s">+ scrub emails</text></g>
+<g><rect class="box out" x="742" y="276" width="378" height="50" rx="7"/><text x="931" y="300" text-anchor="middle" class="t">→ review_log.html (published, scrubbed)</text><text x="931" y="314" text-anchor="middle" class="s">provenance/ stays local</text></g>
+<path class="e" d="M190,301 L206,301" marker-end="url(#a2)"/><path class="e" d="M378,301 L394,301" marker-end="url(#a2)"/><path class="e" d="M546,301 L562,301" marker-end="url(#a2)"/><path class="e" d="M724,301 L740,301" marker-end="url(#a2)"/>
+<text x="40" y="360" class="ln" fill="#5A8EAF">Metabolism</text>
+<g><rect class="box py" x="40" y="368" width="168" height="50" rx="7"/><text x="124" y="389" text-anchor="middle" class="t">metabolism_monitor.py</text><text x="124" y="402" text-anchor="middle" class="s">reads openstory_db.py ★</text></g>
+<g><rect class="box py" x="226" y="368" width="172" height="50" rx="7"/><text x="312" y="392" text-anchor="middle" class="t">build_metabolism_view.py</text><text x="312" y="406" text-anchor="middle" class="s">render view + json</text></g>
+<g><rect class="box out" x="416" y="368" width="220" height="50" rx="7"/><text x="526" y="389" text-anchor="middle" class="t">→ metabolism_view.html</text><text x="526" y="402" text-anchor="middle" class="s">+ metabolism_data.json</text></g>
+<g><rect class="box sh" x="654" y="368" width="200" height="50" rx="7"/><text x="754" y="389" text-anchor="middle" class="t">publish_metabolism.sh</text><text x="754" y="402" text-anchor="middle" class="s">[sh] validate_html.py ★ + push</text></g>
+<path class="e" d="M208,393 L224,393" marker-end="url(#a2)"/><path class="e" d="M398,393 L414,393" marker-end="url(#a2)"/><path class="e" d="M636,393 L652,393" marker-end="url(#a2)"/>
+<text x="40" y="452" class="ln" fill="#5A8EAF">Vault Sync</text>
+<g><rect class="box sh" x="40" y="460" width="150" height="50" rx="7"/><text x="115" y="481" text-anchor="middle" class="t">sync_vault.sh</text><text x="115" y="494" text-anchor="middle" class="s">[sh] launchd 21:00</text></g>
+<g><rect class="box sh" x="208" y="460" width="150" height="50" rx="7"/><text x="283" y="481" text-anchor="middle" class="t">rsync Summa → vault</text><text x="283" y="494" text-anchor="middle" class="s">--checksum --delete</text></g>
+<g><rect class="box py" x="376" y="460" width="150" height="50" rx="7"/><text x="451" y="484" text-anchor="middle" class="t">build_index.py ★</text><text x="451" y="498" text-anchor="middle" class="s">canonical reindex</text></g>
+<g><rect class="box out" x="544" y="460" width="240" height="50" rx="7"/><text x="664" y="481" text-anchor="middle" class="t">→ vault/refs/summa_index.json</text><text x="664" y="494" text-anchor="middle" class="s">commit + push</text></g>
+<path class="e" d="M190,485 L206,485" marker-end="url(#a2)"/><path class="e" d="M358,485 L374,485" marker-end="url(#a2)"/><path class="e" d="M526,485 L542,485" marker-end="url(#a2)"/>
+<text x="40" y="544" class="ln" fill="#8B5DAB">OpenStory</text>
+<g><rect class="box db" x="40" y="552" width="150" height="50" rx="7"/><text x="115" y="573" text-anchor="middle" class="t">open-story.db</text><text x="115" y="586" text-anchor="middle" class="s">[db] SQLite · WAL</text></g>
+<g><rect class="box py" x="208" y="552" width="150" height="50" rx="7"/><text x="283" y="576" text-anchor="middle" class="t">openstory_db.py ★</text><text x="283" y="590" text-anchor="middle" class="s">WAL-safe reader</text></g>
+<g><rect class="box py" x="376" y="552" width="200" height="50" rx="7"/><text x="476" y="573" text-anchor="middle" class="t">extract_agent_node_refs.py</text><text x="476" y="586" text-anchor="middle" class="s">+ extract_openstory_agent_data.py</text></g>
+<g><rect class="box out" x="594" y="552" width="240" height="50" rx="7"/><text x="714" y="573" text-anchor="middle" class="t">→ agent_node_edges.json</text><text x="714" y="586" text-anchor="middle" class="s">Agent Map + Sociogram layer</text></g>
+<path class="e" d="M190,577 L206,577" marker-end="url(#a2)"/><path class="e" d="M358,577 L374,577" marker-end="url(#a2)"/><path class="e" d="M576,577 L592,577" marker-end="url(#a2)"/>
+<path class="e" d="M283,552 C283,470 200,430 124,418" marker-end="url(#a2)" stroke-dasharray="4 3"/>
+<text x="40" y="636" class="ln" fill="#5A8EAF">PRS 3D</text>
+<g><rect class="box sh" x="40" y="644" width="150" height="50" rx="7"/><text x="115" y="665" text-anchor="middle" class="t">regen_prs_connectome.sh</text><text x="115" y="678" text-anchor="middle" class="s">[sh] orchestrator</text></g>
+<g><rect class="box py" x="208" y="644" width="150" height="50" rx="7"/><text x="283" y="668" text-anchor="middle" class="t">extract_prs_data.py</text><text x="283" y="682" text-anchor="middle" class="s">triplets + years</text></g>
+<g><rect class="box py" x="376" y="644" width="150" height="50" rx="7"/><text x="451" y="668" text-anchor="middle" class="t">generate_prs_3d.py</text><text x="451" y="682" text-anchor="middle" class="s">3-axis render</text></g>
+<g><rect class="box py" x="544" y="644" width="150" height="50" rx="7"/><text x="619" y="668" text-anchor="middle" class="t">validate_prs_3d.py</text><text x="619" y="682" text-anchor="middle" class="s">structure check</text></g>
+<g><rect class="box out" x="712" y="644" width="200" height="50" rx="7"/><text x="812" y="668" text-anchor="middle" class="t">→ prs_3d.html</text><text x="812" y="682" text-anchor="middle" class="s">narrative connectome</text></g>
+<path class="e" d="M190,669 L206,669" marker-end="url(#a2)"/><path class="e" d="M358,669 L374,669" marker-end="url(#a2)"/><path class="e" d="M526,669 L542,669" marker-end="url(#a2)"/><path class="e" d="M694,669 L710,669" marker-end="url(#a2)"/>
+<g transform="translate(40,724)">
+  <rect class="box sh" x="0" y="0" width="20" height="13" rx="3"/><text x="26" y="10" class="s">bash wrapper [sh]</text>
+  <rect class="box py" x="150" y="0" width="20" height="13" rx="3"/><text x="176" y="10" class="s">Python module [py]</text>
+  <rect class="box js" x="320" y="0" width="20" height="13" rx="3"/><text x="346" y="10" class="s">Node test [js]</text>
+  <rect class="box db" x="450" y="0" width="20" height="13" rx="3"/><text x="476" y="10" class="s">SQLite [db]</text>
+  <rect class="box out" x="560" y="0" width="20" height="13" rx="3"/><text x="586" y="10" class="s">output artifact</text>
+  <text x="690" y="10" class="s">★ shared module reused across pipelines</text>
+</g>
+</svg>
+</div>
+
+<!-- ============ PANEL 3 ============ -->
+<div class="panel" data-p="3">
+<svg id="svg3" viewBox="0 0 1160 760" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Annotated codebase tree" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+<style>
+  #svg3 text{fill:var(--color-text-primary);font-size:11px;}
+  #svg3 .dir{font-weight:700;fill:#B58E2E;}
+  #svg3 .an{fill:var(--color-text-secondary);font-size:9.5px;}
+  #svg3 .tag{font-size:9px;font-weight:700;}
+  #svg3 .sh{fill:#5A8EAF;} #svg3 .py{fill:var(--color-text-secondary);} #svg3 .js{fill:#3D9E89;} #svg3 .html{fill:#C0476E;} #svg3 .ci{fill:#C24E27;}
+  #svg3 .guide{stroke:var(--color-border-tertiary);stroke-width:1;}
+  #svg3 .hd{font-family:ui-sans-serif,system-ui,sans-serif;}
+</style>
+<text x="40" y="26" font-size="18" font-weight="700" class="hd">3 · Annotated Codebase Tree — github.com/tloughran/C2A2-wiki</text>
+<text x="40" y="45" class="an hd" font-size="11">Folders in gold. Tags: [sh] bash · [py] Python · [js] Node · [html] page · [ci] workflow.  ★ single-file tab · ⊞ multi-file tab · (local) gitignored.</text>
+<line class="guide" x1="58" y1="84" x2="58" y2="356"/>
+<text x="44" y="84" class="dir">▾ C2A2-wiki/</text>
+<text x="70" y="107"><tspan>CLAUDE.md</tspan></text><text x="250" y="107" class="an">standing rules + constitutional guards</text>
+<text x="70" y="130"><tspan>sync_vault.sh</tspan> <tspan class="tag sh">[sh]</tspan></text><text x="250" y="130" class="an">+ .plist · launchd 21:00</text>
+<text x="70" y="156" class="dir">▾ .github/workflows/</text>
+<line class="guide" x1="88" y1="162" x2="88" y2="200"/>
+<text x="100" y="179"><tspan>heartbeat-refresh.yml</tspan> <tspan class="tag ci">[ci]</tspan></text><text x="320" y="179" class="an">daily · data-only + gate</text>
+<text x="100" y="202"><tspan>supabase-keep-alive.yml</tspan> <tspan class="tag ci">[ci]</tspan></text><text x="340" y="202" class="an">every 3 days</text>
+<text x="70" y="228" class="dir">▾ scripts/</text>
+<line class="guide" x1="88" y1="234" x2="88" y2="340"/>
+<text x="100" y="251"><tspan>regen_* · refresh_* · publish_*</tspan> <tspan class="tag sh">[sh]</tspan></text><text x="370" y="251" class="an">wrappers</text>
+<text x="100" y="274"><tspan>build_provenance · assemble_review_log</tspan> <tspan class="tag py">[py]</tspan></text>
+<text x="100" y="297"><tspan>metabolism_monitor · janitor · weekly_review</tspan> <tspan class="tag py">[py]</tspan></text>
+<text x="100" y="320"><tspan>serve_wiki.py</tspan> <tspan class="tag py">[py]</tspan></text><text x="270" y="320" class="an">local Flask :8080</text>
+<text x="100" y="343"><tspan>launchd/*.plist</tspan></text><text x="270" y="343" class="an">scheduled jobs</text>
+<rect x="62" y="372" width="418" height="92" rx="8" fill="var(--color-border-tertiary)" fill-opacity="0.16"/>
+<text x="70" y="392" class="an hd" font-weight="700" font-size="10">LOCAL · gitignored (never published)</text>
+<text x="70" y="414"><tspan class="dir">provenance/</tspan></text><text x="250" y="414" class="an">decision_emails.json</text>
+<text x="70" y="437"><tspan class="dir">handoffs/</tspan></text><text x="250" y="437" class="an">per-thread resume docs</text>
+<text x="70" y="460"><tspan class="dir">janitor/</tspan></text><text x="250" y="460" class="an">findings.md · state.json</text>
+<line class="guide" x1="578" y1="84" x2="578" y2="700"/>
+<text x="564" y="84" class="dir">▾ wiki/</text><text x="640" y="84" class="an">the published app + vault</text>
+<text x="590" y="107"><tspan>explorer.html</tspan> <tspan class="tag html">[html]</tspan> <tspan class="dir">★</tspan></text><text x="800" y="107" class="an">shell / tab host</text>
+<text x="590" y="130"><tspan>wiki_narration.html</tspan> <tspan class="tag html">[html]</tspan></text><text x="800" y="130" class="an">sociogram (generated)</text>
+<text x="590" y="153"><tspan>prs_3d · summa_explorer · rc_document</tspan> <tspan class="tag html">[html]</tspan></text>
+<text x="590" y="176"><tspan>physics · community_interactions · whos_who</tspan> <tspan class="tag html">[html]</tspan></text>
+<text x="590" y="199"><tspan>start_here.html · review_log.html</tspan> <tspan class="tag html">[html]</tspan></text>
+<text x="590" y="222"><tspan>lib/c2a2-search.js</tspan> <tspan class="tag js">[js]</tspan> <tspan class="dir">★</tspan></text><text x="800" y="222" class="an">shared broker client</text>
+<text x="590" y="248" class="dir">▾ heartbeat/ ⊞</text><text x="730" y="248" class="an">multi-file tab</text>
+<line class="guide" x1="608" y1="254" x2="608" y2="338"/>
+<text x="620" y="271"><tspan>index.html · app.js · auth.js · styles.css</tspan></text>
+<text x="620" y="294"><tspan>backend/</tspan> <tspan class="tag py">[py]</tspan></text><text x="800" y="294" class="an">8 steps + stamp_assets.py</text>
+<text x="620" y="317"><tspan>data/</tspan></text><text x="800" y="317" class="an">digest · roster · snapshots/</text>
+<text x="620" y="340"><tspan>test/roster.test.js</tspan> <tspan class="tag js">[js]</tspan></text><text x="800" y="340" class="an">CI gate · runtime/app.py</text>
+<text x="590" y="366"><tspan class="dir">community/ ⊞</tspan></text><text x="760" y="366" class="an">multi-file (app.js + *-core.js)</text>
+<text x="590" y="389"><tspan class="dir">commentary-explorer/</tspan></text><text x="800" y="389" class="an">self-contained bundle</text>
+<text x="590" y="412"><tspan class="dir">metabolism/</tspan></text><text x="800" y="412" class="an">view.html + scripts/ + data.json</text>
+<text x="590" y="435"><tspan class="dir">c2a2-wiki-narration/scripts/</tspan> <tspan class="tag py">[py]</tspan></text><text x="800" y="435" class="an">extract·generate·validate</text>
+<text x="590" y="458"><tspan class="dir">c2a2-prs-3d/scripts/</tspan> <tspan class="tag py">[py]</tspan></text><text x="800" y="458" class="an">+ prs_pub_years.json</text>
+<text x="590" y="481"><tspan class="dir">agents/</tspan> · <tspan class="dir">openstory/</tspan> <tspan class="tag py">[py]</tspan></text><text x="800" y="481" class="an">db reader + extractors</text>
+<rect x="582" y="496" width="538" height="186" rx="8" fill="#C9A84C" fill-opacity="0.10"/>
+<text x="590" y="515" class="an hd" font-weight="700" font-size="10" fill="#B58E2E">VAULT CONTENT · git-as-database (.md)</text>
+<text x="590" y="537"><tspan class="dir">traditions/</tspan></text><text x="800" y="537" class="an">16 thinker folders</text>
+<text x="590" y="560"><tspan class="dir">synthesis/</tspan></text><text x="800" y="560" class="an">300+ bridge essays</text>
+<text x="590" y="583"><tspan class="dir">master/</tspan></text><text x="800" y="583" class="an">cross_program_index · prs_pub_years.json</text>
+<text x="590" y="606"><tspan class="dir">flags/</tspan></text><text x="800" y="606" class="an">pattern_detector_findings.md</text>
+<text x="590" y="629"><tspan class="dir">inbox/proposals/</tspan></text><text x="800" y="629" class="an">approved · pending · needs_review</text>
+<text x="590" y="652"><tspan class="dir">vault/</tspan></text><text x="800" y="652" class="an">synced Summa: transcripts · refs/summa_index.json</text>
+<text x="590" y="675"><tspan class="dir">architecture/</tspan></text><text x="800" y="675" class="an">pathways.md · metrics/ · ecosystem_diagram ←new</text>
+</svg>
+</div>
+
+<!-- ============ PANEL 4 ============ -->
+<div class="panel" data-p="4">
+<svg id="svg4" viewBox="0 0 1160 850" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Daily-run execution trace" font-family="ui-sans-serif, -apple-system, system-ui, sans-serif">
+<style>
+  #svg4 text{fill:var(--color-text-primary);}
+  #svg4 .s{fill:var(--color-text-secondary);font-size:10px;}
+  #svg4 .box{fill:var(--color-background-primary);stroke:var(--color-border-secondary);stroke-width:1.1;}
+  #svg4 .pt{font-size:13px;font-weight:700;}
+  #svg4 .lab{font-size:9px;font-weight:700;fill:var(--color-text-secondary);letter-spacing:.06em;}
+  #svg4 .g{fill:#C24E27;font-size:9.5px;font-weight:600;}
+  #svg4 .num{font-size:13px;font-weight:700;fill:#0a0a0f;}
+</style>
+<text x="40" y="26" font-size="18" font-weight="700">4 · Daily-Run Execution Trace — c282-wiki-agent-daily-run</text>
+<text x="40" y="45" class="s" font-size="11">Phases run top-to-bottom. Each: what it RUNS · what it WRITES · the GUARD that gates it.</text>
+<text x="300" y="62" class="lab">RUNS</text><text x="672" y="62" class="lab">WRITES + GUARD</text>
+<line x1="70" y1="92" x2="70" y2="820" stroke="#B58E2E" stroke-width="2.5"/>
+<circle cx="70" cy="124" r="17" fill="#C9A84C"/><text x="70" y="129" text-anchor="middle" class="num">0</text>
+<text x="100" y="118" class="pt">Ingest &amp; preserve</text><text x="100" y="136" class="s">capture decisions, take in proposals</text>
+<g><rect class="box" x="300" y="80" width="350" height="84" rx="7"/><text x="312" y="102" class="s" font-weight="700">append_decision_email.py</text><text x="312" y="120" class="s">(idempotent) · proposal intake</text><text x="312" y="146" class="s">reads Gmail decisions → provenance</text></g>
+<g><rect class="box" x="672" y="80" width="448" height="84" rx="7"/><text x="684" y="102" class="s" font-weight="700">→ provenance/decision_emails.json · inbox/proposals/</text><text x="684" y="128" class="g">GUARD: append BEFORE the ephemeral review page is deleted</text></g>
+<circle cx="70" cy="230" r="17" fill="#C9A84C"/><text x="70" y="235" text-anchor="middle" class="num">1</text>
+<text x="100" y="224" class="pt">Validate inputs</text><text x="100" y="242" class="s">parse + route proposals</text>
+<g><rect class="box" x="300" y="186" width="350" height="84" rx="7"/><text x="312" y="210" class="s" font-weight="700">proposal parse · schema / format checks</text><text x="312" y="236" class="s">classify approved / pending / needs_review</text></g>
+<g><rect class="box" x="672" y="186" width="448" height="84" rx="7"/><text x="684" y="210" class="s" font-weight="700">→ inbox/proposals/{approved,pending,needs_review}/</text><text x="684" y="236" class="g">GUARD: malformed cards held, not ingested (fail loud)</text></g>
+<circle cx="70" cy="336" r="17" fill="#C9A84C"/><text x="70" y="341" text-anchor="middle" class="num">2</text>
+<text x="100" y="330" class="pt">Tradition agents draft</text><text x="100" y="348" class="s">read the shared vault</text>
+<g><rect class="box" x="300" y="292" width="350" height="84" rx="7"/><text x="312" y="316" class="s" font-weight="700">11 tradition agents</text><text x="312" y="342" class="s">draft PRS triplets + cross-tradition bridges</text></g>
+<g><rect class="box" x="672" y="292" width="448" height="84" rx="7"/><text x="684" y="316" class="s" font-weight="700">→ traditions/** · synthesis/*_bridge.md</text><text x="684" y="342" class="s">(read vault, write back — Karpathy shared layer)</text></g>
+<circle cx="70" cy="442" r="17" fill="#C9A84C"/><text x="70" y="447" text-anchor="middle" class="num">3</text>
+<text x="100" y="436" class="pt">Integrate + detect</text><text x="100" y="454" class="s">master + pattern detector</text>
+<g><rect class="box" x="300" y="398" width="350" height="84" rx="7"/><text x="312" y="422" class="s" font-weight="700">Master C2A2 agent · Pattern Detector</text><text x="312" y="448" class="s">merge upward reports · scan for novel links</text></g>
+<g><rect class="box" x="672" y="398" width="448" height="84" rx="7"/><text x="684" y="420" class="s" font-weight="700">→ master/cross_program_index · prs_pub_years.json</text><text x="684" y="438" class="s" font-weight="700">→ flags/pattern_detector_findings.md</text><text x="684" y="462" class="s">flagged paradigm-shift candidates</text></g>
+<circle cx="70" cy="548" r="17" fill="#C9A84C"/><text x="70" y="553" text-anchor="middle" class="num">4</text>
+<text x="100" y="542" class="pt">Regenerate views</text><text x="100" y="560" class="s">as needed (Mac / sandbox)</text>
+<g><rect class="box" x="300" y="504" width="350" height="84" rx="7"/><text x="312" y="528" class="s" font-weight="700">regen_summa_sociogram.sh</text><text x="312" y="546" class="s">prs / metabolism builders</text><text x="312" y="572" class="s">extract → generate → validate</text></g>
+<g><rect class="box" x="672" y="504" width="448" height="84" rx="7"/><text x="684" y="528" class="s" font-weight="700">→ wiki_narration.html · prs_3d.html · metabolism_view.html</text><text x="684" y="556" class="g">GUARD: validate_html.py PASS + node count &gt; 0</text></g>
+<circle cx="70" cy="654" r="17" fill="#C9A84C"/><text x="70" y="659" text-anchor="middle" class="num" font-size="10">5.5</text>
+<text x="100" y="648" class="pt">Rebuild Review Log</text><text x="100" y="666" class="s">durable archive</text>
+<g><rect class="box" x="300" y="610" width="350" height="84" rx="7"/><text x="312" y="634" class="s" font-weight="700">refresh_review_log.sh</text><text x="312" y="652" class="s">build_provenance.py + assemble_review_log.py</text><text x="312" y="678" class="s">rebuild zero-drop archive</text></g>
+<g><rect class="box" x="672" y="610" width="448" height="84" rx="7"/><text x="684" y="634" class="s" font-weight="700">→ review_log.html (email-scrubbed)</text><text x="684" y="662" class="g">GUARD: grep-assert scrub held · size &gt; 500 KB</text></g>
+<circle cx="70" cy="760" r="17" fill="#C9A84C"/><text x="70" y="765" text-anchor="middle" class="num">6</text>
+<text x="100" y="754" class="pt">Publish</text><text x="100" y="772" class="s">push → Pages rebuild</text>
+<g><rect class="box" x="300" y="716" width="350" height="84" rx="7"/><text x="312" y="740" class="s" font-weight="700">git commit + push to main</text><text x="312" y="766" class="s">auto-triggers GitHub Pages rebuild</text></g>
+<g><rect class="box" x="672" y="716" width="448" height="84" rx="7" stroke="#C24E27" stroke-width="1.5"/><text x="684" y="740" class="s" font-weight="700">→ review_log.html + day's vault changes (live)</text><text x="684" y="768" class="g">GUARD: local-HTTP visual review before any code/HTML push</text></g>
+<text x="40" y="838" class="s" font-style="italic">Phases 0, 5.5, 6 are from committed rules (CLAUDE.md). Phases 1–4 summarize the documented agent sequence — the run is a scheduled-task prompt, not one committed script.</text>
+</svg>
+</div>
+
+</div>
+<script>
+  var btns=document.querySelectorAll('.tabs button'), panels=document.querySelectorAll('.panel');
+  btns.forEach(function(b){
+    b.onclick=function(){
+      btns.forEach(function(x){x.classList.remove('active');});
+      panels.forEach(function(p){p.classList.remove('active');});
+      b.classList.add('active');
+      document.querySelector('.panel[data-p="'+b.dataset.p+'"]').classList.add('active');
+    };
+  });
+</script>
+</body>
+</html>
