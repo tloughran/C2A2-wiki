@@ -36,6 +36,8 @@ import sqlite3
 import sys
 import urllib.parse
 
+from openstory_db import connect_ro, run_with_retry
+
 HOME = os.path.expanduser("~")
 DEFAULT_DB = os.path.join(HOME, "Documents/Non-Claude Projects/OpenStory/data/open-story.db")
 DEFAULT_VAULT = os.path.join(HOME, "Documents/Claude/Projects/RC Karpathy Wiki Project/wiki")
@@ -69,11 +71,8 @@ CONTINUATION_MARKERS = (
 )
 
 
-def connect_ro(db_path):
-    if not os.path.exists(db_path):
-        sys.exit("ERROR: DB not found: %s" % db_path)
-    uri = "file:%s?mode=ro" % urllib.parse.quote(db_path)
-    return sqlite3.connect(uri, uri=True)
+# DB access is via openstory_db.connect_ro_snapshot: the live WAL-mode db must be
+# snapshotted before reading or quick_check trips on a mid-write inconsistency.
 
 
 def label_fragment(label):
@@ -353,4 +352,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    run_with_retry(main)

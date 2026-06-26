@@ -30,6 +30,8 @@ import urllib.parse
 from collections import defaultdict
 from datetime import datetime
 
+from openstory_db import connect_ro, run_with_retry
+
 HOME = os.path.expanduser("~")
 DEFAULT_DB = os.path.join(HOME, "Documents/Non-Claude Projects/OpenStory/data/open-story.db")
 DEFAULT_VAULT = os.path.join(HOME, "Documents/Claude/Projects/RC Karpathy Wiki Project/wiki")
@@ -39,16 +41,8 @@ DEFAULT_OUT = os.path.join(DEFAULT_VAULT, "agents/openstory/agent_telemetry.json
 TOOL_USE = "message.assistant.tool_use"
 
 
-def connect_ro(db_path):
-    if not os.path.exists(db_path):
-        sys.exit("ERROR: DB not found: %s" % db_path)
-    uri = "file:%s?mode=ro" % urllib.parse.quote(db_path)
-    con = sqlite3.connect(uri, uri=True)
-    # quick integrity guard -- fail loud (Rule 12) rather than emit garbage
-    res = con.execute("PRAGMA quick_check").fetchone()[0]
-    if res != "ok":
-        sys.exit("ERROR: DB failed quick_check: %s" % res)
-    return con
+# DB access is via openstory_db.connect_ro_snapshot: the live WAL-mode db must be
+# snapshotted before reading or quick_check trips on a mid-write inconsistency.
 
 
 def label_fragment(label):
@@ -331,4 +325,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    run_with_retry(main)

@@ -114,3 +114,9 @@ wiki/review/*.html
 wiki/review/_superseded/
 wiki/review/_deleted_quarantine/
 wiki/heartbeat/data/.broker_device_id
+
+# Scratch diagnostic SVG exports (regenerable; not wired into any published page)
+/c2a2_annotated_codebase_tree.svg
+/c2a2_daily_run_execution_trace.svg
+/c2a2_module_dependency_map.svg
+/c2a2_runtime_service_topology.svg
