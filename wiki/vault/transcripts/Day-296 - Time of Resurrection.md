@@ -16,6 +16,8 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-296 - Time of Resurrection - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/296, pars/suppl, q/77-78]
+last_qc_at: "2026-06-26T00:23:53"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 296 — Time of Resurrection
@@ -32,7 +34,7 @@ tags: [summa, day/296, pars/suppl, q/77-78]
 
 [00:21] Summa Day will seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith is day 296. So let's get started.
 
-[00:30] We're covering today question 778 of the supplement to the Summa that is of the time and manner of the resurrection and of the term where from of the
+[00:30] We're covering today questions 77 and 78 of the supplement to the Summa that is of the time and manner of the resurrection and of the term where from of the
 
 [00:38] resurrection the translation that I always use in these podcasts is the one generously provided to me a Maria Press the five volume set translated by the
 

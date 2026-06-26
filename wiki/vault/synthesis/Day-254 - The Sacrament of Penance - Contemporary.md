@@ -15,7 +15,7 @@ evidence_strength_summary: "Penance-as-error-correction-loop is formal (Friston 
 mind_first_reframe: "Penance is a goal-directed agent's error-correcting return to its preferred state — contrition the registered error signal, confession the explicit error-representation, satisfaction the corrective action that reduces the divergence."
 central_theme_thread: "The threefold loop is the resource-bounded computation by which a strayed perspective turns back toward loving unity under guidance it cannot itself supply — 'working out salvation' run as ongoing labor."
 tags: [synthesis, day/254, theme/repair-loop-toward-unity]
-last_qc_at: "2026-06-17T20:23:12"
+last_qc_at: "2026-06-25T22:27:35"
 last_qc_outcome: "pass"
 ---
 

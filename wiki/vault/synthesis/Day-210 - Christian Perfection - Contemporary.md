@@ -18,7 +18,7 @@ evidence_strength_summary: "Perfection = attaining the proper end = charity ~ lo
 mind_first_reframe: "The perfection of a limited perspective is its loving union with the whole — the completion-category of a relational being, not a capability; it is partial now because a finite agent must divide attention/precision under resource scarcity ('distraction'), and complete only when the individuating boundary is transfigured, not by more effort within it."
 central_theme_thread: "Perfection is charity — loving union worked out asymptotically against a divided attention 'in fear and trembling' — measured in the heart and not the office, so the state of perfection only scaffolds the essence toward the day when every limited perspective is at last contained in the simple whole it loves."
 tags: [synthesis, day/210, theme/perfection-is-loving-union]
-last_qc_at: "2026-06-17T04:22:44"
+last_qc_at: "2026-06-25T06:26:09"
 last_qc_outcome: "pass"
 ---
 

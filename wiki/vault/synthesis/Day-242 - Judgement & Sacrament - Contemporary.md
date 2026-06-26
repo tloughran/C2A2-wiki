@@ -16,7 +16,7 @@ length_note: "Concise by design — bridges the close of the treatise on Christ 
 mind_first_reframe: "A sacrament is an enacted, world-changing prediction whose efficacy lies in coupling a public sign to the dispositional-and-communal state it helps constitute; judgement is the whole rendering each limited part's enacted history true."
 central_theme_thread: "Judgement is the whole rendering each perspective-limited agent's real trajectory legible, and the sacraments are how limited agents who cannot see the whole are coupled to it."
 tags: [synthesis, day/242, theme/sign-that-effects]
-last_qc_at: "2026-06-17T16:22:27"
+last_qc_at: "2026-06-25T18:27:11"
 last_qc_outcome: "pass"
 ---
 

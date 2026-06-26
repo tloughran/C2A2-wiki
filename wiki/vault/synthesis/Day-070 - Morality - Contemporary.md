@@ -13,12 +13,12 @@ karpathy_wiki_sources:
   - "wiki/traditions/fredrickson/wiki.md (positivity resonance; relational-as-formal-good)"
 evidence_strength_summary: "Aquinas's privation-theory of evil is metaphysically firm; Stump's willed-evil and erring-conscience analyses are theological-philosophical strong; Friston's prior-alignment is mature formalism; the formal/material conformity-to-divine-will keystone (Q.19 a.10) is the central-theme load-bearing argument"
 length_ratio_to_target: 1.447
-length_note: "Q.18 (11 articles) + Q.19 (10 articles) treated as the moral-evaluation arc proper, with Q.19 a.10 as the central-theme load-bearing keystone; the formal/material conformity-to-divine-will distinction maps cleanly onto active-inference terminal-vs-instrumental prior-alignment without requiring extended formalism, and the privation-theory + erring-conscience + Dominican-fasting structures all preserve compactly under the mind-monist frame, so the prose runs under tier while doing real keystone work on the central theme."
+length_note: "Q.18 (11 articles) + Q.19 (10 articles) = 21 articles treated as the moral-evaluation arc proper, with Q.19 a.10 the central-theme load-bearing keystone; the two dense questions plus keystone status justify running ~45% over short-tier target (acceptable-variation per QC.md: multi-question dense day + substantive-priority keystone), preserving every keystone move on the central theme rather than trimming substantive Aquinas-to-contemporary linkage to hit a number."
 mind_first_reframe: "Q.19 a.10's formal/material distinction — the alter wills the universal good *formally* and the particular good *materially* — maps onto active-inference's terminal-prior-vs-instrumental-prior distinction (Friston); privation-theory of evil (Q.18 a.1) preserves under Levin's form-as-bioelectric-pattern as deficient morphogenesis; erring-conscience (Q.19 a.5-6) is the perspective-limitation made operational, with second-personal-knowing (Stump) the structural mode of correction across alters of differing apprehension."
 central_theme_thread: "Today is the central-theme load-bearing keystone day: each conscious agent is individuated by perspective-limitation while constitutively directed-formally toward the universal good (the substrate-source's integrative dynamics), and salvation in fear and trembling is the daily-task work of cultivating apprehension under second-person care, maintaining formal alignment when material judgment is partial or erring, and holding the formal-unity of all alters' direction-toward-the-universal-good even when material disagreement persists — the Dominican-fasting example (Q.19 a.10) is the medieval articulation of exactly this individuation-by-perspective-with-formal-unity structure."
 tags: [synthesis, day/070, theme/moral-evaluation, theme/conformity-to-divine-will, theme/erring-conscience, central-theme-load-bearing]
-last_qc_at: "2026-06-17T12:21:58"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-25T14:27:56"
+last_qc_outcome: "rewrote"
 ---
 # Day 70 — Contemporary Parallel: *Moral Evaluation, Erring Conscience, and Formal-vs-Material Conformity to the Substrate-Source*
 

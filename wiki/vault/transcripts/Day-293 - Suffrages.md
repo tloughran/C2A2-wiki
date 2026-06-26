@@ -16,6 +16,8 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-293 - Suffrages - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/293, pars/suppl, q/71-72]
+last_qc_at: "2026-06-26T00:23:51"
+last_qc_outcome: "pass"
 ---
 
 # Day 293 — Suffrages

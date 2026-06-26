@@ -16,7 +16,7 @@ length_note: "Concise by design — a single-focus III Q.60-62 (sacramental powe
 mind_first_reframe: "The Passion's efficacy reaches the present as form-borne causation — a determinate saving pattern propagated through sensible instruments that limited agents can engage because the interface is their only access."
 central_theme_thread: "Sacraments meet perspective-limited agents at the limit of their perception, giving a sensible foothold for the resource-bounded computation toward loving unity."
 tags: [synthesis, day/243, theme/causality-across-time]
-last_qc_at: "2026-06-17T16:22:28"
+last_qc_at: "2026-06-25T18:27:12"
 last_qc_outcome: "pass"
 ---
 

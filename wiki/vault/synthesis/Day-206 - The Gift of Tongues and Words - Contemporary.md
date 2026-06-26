@@ -16,7 +16,7 @@ evidence_strength_summary: "Meaning reconstructed receiver-side (not token-trans
 mind_first_reframe: "Communication across individuated perspectives is one intelligible content re-rendered through each receiver's own perspective-specific interface, completed not by the utterance but by an inner reconstruction in which the hearer's generative model aligns on the shared latent cause."
 central_theme_thread: "Babel is perspective-individuation hardened into mutual opacity through self-absolutizing; the gift of tongues is its first repair — one content reaching all perspectives without erasing them — instrumental to the loving communal union (Wright's inclusion) that is the telos, not to a private virtuosity of cross-encoding."
 tags: [synthesis, day/206, theme/communication-across-perspectives]
-last_qc_at: "2026-06-17T02:29:57"
+last_qc_at: "2026-06-25T04:20:05"
 last_qc_outcome: "pass"
 ---
 

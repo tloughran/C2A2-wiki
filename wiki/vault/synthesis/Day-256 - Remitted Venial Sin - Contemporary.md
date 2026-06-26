@@ -14,7 +14,7 @@ evidence_strength_summary: "Graded-rather-than-binary repair is formal (Friston 
 mind_first_reframe: "Remission of venial sin is graded because corrective repair is continuous free-energy reduction (Friston) with disorder unwound level by level across a layered predictive memory (Hawkins), not a binary switch."
 central_theme_thread: "A finite perspective reduces its divergence from the whole by degrees with the resources it perceives, lesser disorders dissolving continuously as the larger reordering toward loving unity proceeds."
 tags: [synthesis, day/256, theme/graded-repair]
-last_qc_at: "2026-06-17T20:23:13"
+last_qc_at: "2026-06-25T22:27:37"
 last_qc_outcome: "pass"
 ---
 

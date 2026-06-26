@@ -16,6 +16,8 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-295 - The Necessity of Resurrection - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/295, pars/suppl, q/75-76]
+last_qc_at: "2026-06-26T00:23:53"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 295 — The Necessity of Resurrection
@@ -26,7 +28,7 @@ tags: [summa, day/295, pars/suppl, q/75-76]
 
 ## Transcript
 
-[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Sumeir podcast, where we study St. Thomas Aquinas's Summa
+[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
 [00:12] Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
 

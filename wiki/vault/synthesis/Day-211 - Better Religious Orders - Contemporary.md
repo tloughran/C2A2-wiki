@@ -6,6 +6,7 @@ length_target_words: 2200
 length_actual_words: 1889
 length_ratio_to_target: 0.859
 length_tier: medium
+length_note: "Runs ~14% under medium target (within ±25%) by design: Q.187-188 (a.6-8) are covered through their three generative threads — plural-orders/one-telos, 'better' as propagation of loving union, and the solitary-vs-communal boundary-scaffold — without padding the remaining article-by-article material. Short-and-substantive per the length policy."
 karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-01 non-dual unity-in-distinction; PRS-02 order-disorder-reorder; PRS-03 the Universal Christ — one pattern, many expressions) [Rohr primary on the contemplative life, II-II Q.171-189]"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01 right-hemisphere receptivity as the founding mode; PRS-03 team/game — plural modes both needed for one inquiry)"
@@ -16,8 +17,8 @@ evidence_strength_summary: "Religious state = training-school for the perfection
 mind_first_reframe: "A religious order is one stable allocation of a finite agent's attention and labor toward the single telos of loving union; the plurality of orders is the plurality of partial perspectives that the one good can be pursued from, and an order is 'better' not by rank on a ladder but by how fully the loving union it attains overflows into other perspectives — contemplation received and then transmitted."
 central_theme_thread: "Each order individuates a perspective on the one loving-union telos; 'better' tracks how far that union propagates beyond the agent who attains it; and the whole apparatus of states remains scaffold, never the charity it is built to grow."
 tags: [synthesis, day/211, theme/many-orders-one-telos]
-last_qc_at: "2026-06-17T04:22:45"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-25T06:26:09"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 211 — Better Religious Orders (Contemporary Parallel)

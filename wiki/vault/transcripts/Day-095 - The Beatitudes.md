@@ -15,7 +15,7 @@ fetched_at: 2026-05-14
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-095 - The Beatitudes - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-17T00:24:34"
+last_qc_at: "2026-06-25T04:20:02"
 last_qc_outcome: "pass"
 tags: [summa, day/095, pars/I-II, q/68-69, gifts-of-holy-spirit, beatitudes, sermon-on-the-mount]
 ---

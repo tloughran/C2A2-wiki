@@ -16,6 +16,8 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-294 - Final Conflagration - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/294, pars/suppl, q/73-74]
+last_qc_at: "2026-06-26T00:23:52"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 294 — Final Conflagration
@@ -28,7 +30,7 @@ tags: [summa, day/294, pars/suppl, q/73-74]
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
-[00:12] Theologiae in a way simple and insightful for anyone to understand. The Summener podcast is brought to you by Think Catholic. Taking two questions of the
+[00:12] Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
 
 [00:21] Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 294. So let's get started.
 

@@ -15,8 +15,8 @@ evidence_strength_summary: "A created finite mind beholds the divine essence tru
 mind_first_reframe: "Beholding-without-comprehending is read as the constitutive structure of any created knower: to be a finite perspective is to know the whole truly yet never to contain it — Hoffman's interface and Kastrup's dissociated alter make perspective-boundedness the very condition of being an individual knower, not a defect awaiting removal."
 central_theme_thread: "Q.10's distinction between beholding and comprehending is the central claim in its purest form: even the summit of finite knowing — Christ's human soul seeing the divine essence — sees the simple whole really and yet, being finite, does not exhaust it; perspective-limitation is constitutive even at the top."
 tags: [synthesis, day/217, theme/behold-not-comprehend]
-last_qc_at: "2026-06-17T06:30:31"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-25T08:21:05"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 217 — Christ's Knowledge (Contemporary Parallel)
@@ -27,7 +27,7 @@ Q.9 asks whether Christ's soul had any *human* knowledge besides the divine, and
 
 ## Problem
 
-The inquiry-problem is the project's own keystone. Aquinas needs the highest possible finite knowledge — a created soul seeing the very essence of God — to remain genuinely *finite*: real vision of the whole, never exhaustive grasp of it. The distinction between *visio* (beholding) and *comprehensio* (exhaustive containing) is exactly the distinction the central theme depends on. The problem: is the non-comprehension a mere *shortfall* (the finite mind would comprehend if only it were bigger), or is it *constitutive* — is being a bounded perspective the very condition of being a created knower at all? This is the metaphysics/epistemology of knowing, so by the bridges-file guardrail the lead resources are Hoffman and Kastrup, not Stump.
+The inquiry-problem is the project's own keystone. Aquinas needs the highest possible finite knowledge — a created soul seeing the very essence of God — to remain genuinely *finite*: real vision of the whole, never exhaustive grasp of it. The distinction between *visio* (beholding) and *comprehensio* (exhaustive containing) is exactly the distinction the central theme depends on. The problem: is the non-comprehension a mere *shortfall* (the finite mind would comprehend if only it were bigger), or is it *constitutive* — is being a bounded perspective the very condition of being a created knower at all? This is the metaphysics and epistemology of knowing, where Hoffman's interface theory and Kastrup's analytic idealism do the most work.
 
 ## Resource
 
@@ -49,7 +49,7 @@ The project holds that agents are individuated by the limitations of their persp
 
 ## Bridges
 
-- **A finite mind beholds the divine essence truly yet does not comprehend it ↔ a finite agent is in real contact with the whole (true interface) but never contains it** — Tom's PRS-form record of Hoffman, PRS-01/PRS-03 (per the guardrail). *Why:* the interface is genuine contact, not total possession — visio without comprehensio. Evidence: **central-theme (strong); metaphysics speculative-formal (medium)**.
+- **A finite mind beholds the divine essence truly yet does not comprehend it ↔ a finite agent is in real contact with the whole (true interface) but never contains it** — Tom's PRS-form record of Hoffman, PRS-01/PRS-03. *Why:* the interface is genuine contact, not total possession — visio without comprehensio. Evidence: **central-theme (strong); metaphysics speculative-formal (medium)**.
 - **Perspective-boundedness as the very condition of being a created knower ↔ the individual mind as a dissociated alter within mind-at-large** — Tom's PRS-form record of Kastrup, PRS-02. *Why:* to be a bounded point of view within the one mind is what makes one an individual knower at all. Evidence: **speculative-formal, medium**.
 - **Real vision that is nonetheless perspectival ↔ critical realism: knowing is always from within a story, yet tests against reality** — Tom's PRS-form record of Wright, PRS-01. *Why:* perspectival knowing is not false knowing; the boundedness does not impugn the contact. Evidence: **philosophical, strong**.
 - **Holding behold-yet-not-comprehend without collapse ↔ non-dual perception of unity-in-distinction** — Tom's PRS-form record of Rohr, PRS-01. *Why:* the contemplative form of refusing both skepticism and hubris about the whole. Evidence: **theological/contemplative**.
