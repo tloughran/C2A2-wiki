@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-228 - Christ's Ancestry - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/228, pars/III, q/31 q/32]
-last_qc_at: "2026-06-10T12:27:37"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-26T20:19:47"
+last_qc_outcome: "pass"
 ---
 
 # Day 228 — Christ's Ancestry

@@ -38422,12 +38422,12 @@
     "question_title": "The punishment of the wicked by fire",
     "article": 1,
     "title": null,
-    "day": null,
-    "transcript": null,
-    "synthesis": null,
+    "day": 306,
+    "transcript": "transcripts/Day-306 - A Hellish Abode.md",
+    "synthesis": "synthesis/Day-306 - A Hellish Abode - Contemporary.md",
     "latin": null,
     "english": null,
-    "available": false
+    "available": true
   },
   "Suppl.Q98.A1": {
     "part": "Supplementum",
@@ -38436,12 +38436,12 @@
     "question_title": "The will and intellect of the wicked",
     "article": 1,
     "title": null,
-    "day": null,
-    "transcript": null,
-    "synthesis": null,
+    "day": 306,
+    "transcript": "transcripts/Day-306 - A Hellish Abode.md",
+    "synthesis": "synthesis/Day-306 - A Hellish Abode - Contemporary.md",
     "latin": null,
     "english": null,
-    "available": false
+    "available": true
   },
   "Suppl.Q99.A1": {
     "part": "Supplementum",
@@ -38450,11 +38450,11 @@
     "question_title": "God's justice and mercy in regard to the damned",
     "article": 1,
     "title": null,
-    "day": null,
-    "transcript": null,
-    "synthesis": null,
+    "day": 307,
+    "transcript": "transcripts/Day-307 - You Made It.md",
+    "synthesis": "synthesis/Day-307 - You Made It - Contemporary.md",
     "latin": null,
     "english": null,
-    "available": false
+    "available": true
   }
 }

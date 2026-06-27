@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-224 - Adopted Sons - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/224, pars/III, q/23 q/24]
-last_qc_at: "2026-06-10T16:31:43"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-26T20:19:37"
+last_qc_outcome: "pass"
 ---
 
 # Day 224 — Adopted Sons

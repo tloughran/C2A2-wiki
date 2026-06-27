@@ -11,13 +11,13 @@ karpathy_wiki_sources:
   - "traditions/fredrickson/prs_triplets.md (PRS-02 love as measurable coupling; PRS-04 love as attractor)"
   - "traditions/levin/prs_triplets.md (PRS-03 basins of morphological attraction)"
   - "traditions/wright/prs_triplets.md (PRS-02 faithful improvisation; PRS-03 inaugurated eschatology)"
-  - "traditions/stump/wiki.md (faith as second-person knowing; PRS-09 virtue as cooperative causality)"
+  - "traditions/stump/wiki.md (faith as second-person knowing; PRS-05, PRS-11)"
 evidence_strength_summary: "Underdetermination of assent by external evidence — formal/empirical (high, Friston). Filial fear as affective signature of high-value coupling — empirical (Fredrickson, medium-high). Purification as re-orientation toward a target basin — empirical in biology, speculative as applied to the heart (Levin). Identification of grace with the wider mind's precision contribution — speculative metaphysics. Faith-by-hearing within covenant — historical-theological (high, Wright)."
 mind_first_reframe: "The act of faith is the agent's adoption of a prior that finite evidence cannot compel; the 'interior cause' Aquinas names is read as the contribution of a wider-perceiving node that installs or up-weights a prior the limited agent could not generate alone (supra-evidential, not anti-evidential), and filial fear is the affective signature of that high-value coupling while purification is the re-ordering of the objective function toward the true target basin."
 central_theme_thread: "The cause-of-faith argument is the central claim in epistemic form: the limited agent cannot from its own perspective generate the assent that orients it toward the whole, so individuation-by-perspective-limitation makes guidance from a wider-perceiving node necessary, and filial fear is 'fear and trembling' (Phil 2:12) — the lived awareness of that limitation and dependence, now felt as dread of losing the One who completes it."
 tags: [synthesis, day/121, theme/cause-of-faith]
-last_qc_at: "2026-06-18T08:23:15"
-last_qc_outcome: "pass"
+last_qc_at: "2026-06-26T12:20:44"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 121 — Contemporary Parallel: What Causes Assent, and What Assent Does
@@ -60,7 +60,7 @@ The cause-of-faith argument is the project's central claim in epistemic form. Th
 - *PRS-02 + PRS-04 in the Fredrickson-tradition wiki* — love/charity has a measurable coupling-signature and behaves as an attractor; filial fear is its affective register. (Empirical; medium-high.)
 - *PRS-03 in the Levin-tradition wiki* — basins of morphological attraction give the formal language for purification as a contrary motion toward a target state. (Empirical in biology; speculative as applied.)
 - *PRS-02 + PRS-03 in the Wright-tradition wiki* — faithful improvisation and inaugurated eschatology account for the historical progress of faith's "requisite detail." (Historical-theological; high.)
-- *Stump-tradition wiki, faith as second-person knowing (PRS-09, virtue as cooperative causality)* — the interior cause and the agent's own act cooperatively constitute the assent; grace operates within the agent's own agency rather than overriding it. (Philosophical; high in field.)
+- *Stump-tradition wiki, faith as second-person knowing (PRS-05, PRS-11)* — the interior cause and the agent's own act cooperatively constitute the assent; grace operates within the agent's own agency rather than overriding it. (Philosophical; high in field.)
 
 ## Where this leaves us
 

@@ -1,5 +1,5 @@
 ---
-generated: 2026-06-26
+generated: 2026-06-27
 ---
 
 # Summa Index — Summary
@@ -7,8 +7,8 @@ generated: 2026-06-26
 ## Coverage
 
 - **Total articles indexed:** 2,747
-- **Articles with vault content:** 2653  (96.6%)
-- **Articles pending:** 94
+- **Articles with vault content:** 2656  (96.7%)
+- **Articles pending:** 91
 
 ## Breakdown by Part
 
@@ -18,7 +18,7 @@ generated: 2026-06-26
 | `I-II` | Prima Secundae | 114 | 616 | 616 |
 | `II-II` | Secunda Secundae | 189 | 908 | 898 |
 | `III` | Tertia Pars | 90 | 540 | 472 |
-| `Suppl` | Supplementum | 99 | 99 | 95 |
+| `Suppl` | Supplementum | 99 | 99 | 98 |
 
 ## Notes
 

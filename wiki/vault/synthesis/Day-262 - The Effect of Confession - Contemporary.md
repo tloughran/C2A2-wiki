@@ -15,8 +15,8 @@ evidence_strength_summary: "Attrition-suffices as threshold-crossing is formal (
 mind_first_reframe: "Attrition suffices because a genuine minimal contrition crosses the threshold into the changed state (Friston) and entirety is complete error-representation (Friston), while the pardon is whole because grace meets the entire honest disclosure with more than its measure (Rohr) — even loosing what the penitent could not represent."
 central_theme_thread: "Paired with Day 260: the whole accepts even an imperfect, perspective-limited turn and gives a whole pardon in return, reaching even the agent's blind spots (forgotten sins loosed) — 'salvation as inclusion' gracious both at its lower bound and beyond the agent's self-knowledge."
 tags: [synthesis, day/262, theme/whole-pardon-whole-disclosure]
-last_qc_at: "2026-06-18T02:28:24"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-26T04:19:33"
+last_qc_outcome: "pass"
 ---
 
 # Day 262 — The Effect of Confession (Contemporary Parallel)

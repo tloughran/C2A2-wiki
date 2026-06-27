@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-223 - Christ's Prayer and Priesthood - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/223, pars/III, q/21 q/22]
-last_qc_at: "2026-06-10T16:31:42"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-26T20:19:36"
+last_qc_outcome: "pass"
 ---
 
 # Day 223 — Christ's Prayer and Priesthood

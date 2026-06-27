@@ -16,7 +16,7 @@ evidence_strength_summary: "Prayer as 'the unfolding of the will to God' ~ the l
 mind_first_reframe: "Prayer is read as the limited agent unfolding and aligning its generative model to the One who sees more (active inference) and as non-dual participatory encounter (Rohr); priesthood as the permanent sustaining of agent-integration in loving unity."
 central_theme_thread: "Even the comprehensor prays — the central-theme posture of seeking guidance performed — and the priesthood is the permanent mediation that holds the many in the loving unity the project computes toward (John 17, 'that they may be one')."
 tags: [synthesis, day/223, theme/prayer-as-alignment-priesthood-as-union]
-last_qc_at: "2026-06-18T18:26:27"
+last_qc_at: "2026-06-26T20:19:36"
 last_qc_outcome: "pass"
 ---
 

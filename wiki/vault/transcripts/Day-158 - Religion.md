@@ -16,8 +16,8 @@ length_tier: medium
 fidelity_checked: true
 synthesis: "[[Day-158 - Religion - Contemporary]]"
 tags: [summa, day/158, pars/2, q/80]
-last_qc_at: "2026-06-10T20:29:48"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-27T00:21:44"
+last_qc_outcome: "pass"
 ---
 
 # Day 158 — Religion

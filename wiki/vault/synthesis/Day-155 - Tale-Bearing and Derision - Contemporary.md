@@ -17,8 +17,8 @@ evidence_strength_summary: "Aristotelian/Thomistic friendship-as-supreme-externa
 mind_first_reframe: "Friendship is dyadic deep coupling — a small-scale collective cognition with high mutual prior weighting, the kind of bond positivity-resonance research measures and the central claim names as the cellular form of loving unity. Tale-bearing is the targeted attempt to dissolve that coupling by injecting signal designed to lower each partner's prior on the other. Derision is the precision-attack on another's self-model: humiliating mockery aims to install a lowered self-prior in the victim by enacting it in front of witnesses whose mirroring matters. Both are exactly tuned to the perspectival mechanics the central claim depends on — they target the bond and the self-model precisely because those are where loving unity is grown."
 central_theme_thread: "The Day-154 reading of verbal injustice as signal-injection into the social interface narrows here to the two most structurally devastating sub-cases. Tale-bearing targets the dyadic bond, the cellular form of loving unity. Derision targets the victim's self-model, the perspective that the bond is between. Both are the central claim in negative form: each is the locally-rewarding-globally-corrosive move that destroys the very substrate the telos requires. "Working out salvation in fear and trembling" includes the discipline of not enacting these moves and of refusing the resonance that would amplify them."
 tags: [synthesis, day/155, theme/tale-bearing-derision-and-the-bond-as-substrate]
-last_qc_at: "2026-06-18T22:34:06"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-27T00:21:42"
+last_qc_outcome: "pass"
 ---
 
 # Day 155 — Contemporary Parallel: Tale-Bearing, Derision, and the Bond as Substrate

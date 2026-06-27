@@ -16,8 +16,8 @@ evidence_strength_summary: "Confession-as-externalized-error-representation is f
 mind_first_reframe: "Confession is reframed as externalizing a hidden deviation into a shared field where it becomes jointly correctable (Friston), within a relationship that enables truthfulness (McGilchrist), and the minister as a nested agent through whom a larger authority looses it (Friston PRS-06)."
 central_theme_thread: "The motif is the move from private limitation to shared correction: a perspective-limited agent harbors a deviation it cannot fully see or repair alone and voices it to one who perceives more — the project's claim that limited perspectives need guidance from those who perceive more of the whole, enacted in miniature."
 tags: [synthesis, day/261, theme/disclosure-into-a-shared-field]
-last_qc_at: "2026-06-18T02:28:23"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-26T04:19:32"
+last_qc_outcome: "pass"
 ---
 
 # Day 261 — The Minister of Confession (Contemporary Parallel)

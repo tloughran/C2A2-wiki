@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-227 - The Annunciation - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/227, pars/III, q/29 q/30]
-last_qc_at: "2026-06-10T12:27:36"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-26T20:19:46"
+last_qc_outcome: "pass"
 ---
 
 # Day 227 — The Annunciation
