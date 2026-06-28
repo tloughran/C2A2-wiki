@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-120 - Who Has Faith - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/120, pars/2, q/4-5]
-last_qc_at: "2026-06-11T04:22:06"
+last_qc_at: "2026-06-27T08:21:40"
 last_qc_outcome: "pass"
 ---
 

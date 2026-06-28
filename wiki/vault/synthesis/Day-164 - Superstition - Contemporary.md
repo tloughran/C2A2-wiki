@@ -18,7 +18,7 @@ karpathy_wiki_sources:
   - "wiki/traditions/rohr/wiki.md (the contemplative critique of magical religion)"
 evidence_strength_summary: "Empirical-formal on miscalibrated-prior learning and pseudo-pattern detection (Friston, Wolfram lines). Strong empirical on operant-conditioning superstition (Skinner literature). Theological-strong on Pauline diagnosis of idolatrous reasoning (Wright). The reframe — superstition as bad ontology made ritually visible — is integrative and lines up multiple convergent traditions."
 tags: [synthesis, day/164, theme/ontology-and-ritual, theme/causal-model-error, pars/II-II, q/92-93]
-last_qc_at: "2026-06-19T16:23:59"
+last_qc_at: "2026-06-27T18:27:22"
 last_qc_outcome: "pass"
 ---
 

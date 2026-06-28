@@ -15,7 +15,7 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-044 - Epistemological Realism - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-19T08:20:27"
+last_qc_at: "2026-06-27T08:23:00"
 last_qc_outcome: "pass"
 render_pass: auto-catchup-2026-05-04  # auto-rendered; QC pass should add Q.N/article headers, polish prose, write Notes
 tags: [summa, day/044, pars/I]

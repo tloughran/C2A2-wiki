@@ -15,8 +15,8 @@ fetched_at: 2026-06-19
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-274 - Holy Orders - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-19T16:24:01"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-27T20:21:16"
+last_qc_outcome: "pass"
 tags: [summa, day/274, pars/suppl, q/33-34]
 ---
 

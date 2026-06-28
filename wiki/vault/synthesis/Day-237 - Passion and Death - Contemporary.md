@@ -17,7 +17,7 @@ evidence_strength_summary: "Mystical body as one-person-with-head = strong struc
 mind_first_reframe: "Redemption works through a real multi-scale organism — the mystical body literally 'one person' across its members — so the head's act propagates to the members as a state-change in a single individual, not as a transaction between separate parties; and death is read through the form, the soul as the organizing principle whose departure ends the organism while the person persists as its subject."
 central_theme_thread: "The mystical body is the project's loving unity made concrete: many limited perspectives reckoned as one person without ceasing to be many, the hand redeeming the foot; and the 'two-fold sin' — a race-level barrier plus personal sins — is perspective-limitation at two scales, the common and the individual, each needing its own clearing."
 tags: [synthesis, day/237, theme/corporate-body]
-last_qc_at: "2026-06-19T20:22:25"
+last_qc_at: "2026-06-27T22:26:20"
 last_qc_outcome: "pass"
 ---
 

@@ -16,7 +16,7 @@ evidence_strength_summary: "John's baptism as readiness-formation ~ prior-updati
 mind_first_reframe: "Preparation is read as the installation of readiness in limited agents — updating the priors of agents who cannot yet see what they are being readied for — and the forerunner as the agent whose perfection consists in knowing his own limitation and ceding to the one who perceives more."
 central_theme_thread: "John the Baptist is the cleanest scriptural figure of the central claim: a perspective that knows itself partial ('I am not the Christ'), computes readiness in others with the resources of his desert, and decreases so the fuller perspective can increase — guidance from those who perceive more of the whole, enacted as an office."
 tags: [synthesis, day/231, theme/preparation-as-readiness-formation]
-last_qc_at: "2026-06-19T14:26:35"
+last_qc_at: "2026-06-27T16:20:02"
 last_qc_outcome: "pass"
 ---
 

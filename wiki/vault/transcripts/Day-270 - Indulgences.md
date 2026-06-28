@@ -15,7 +15,7 @@ fetched_at: 2026-06-18
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-270 - Indulgences - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-19T02:27:27"
+last_qc_at: "2026-06-27T04:20:21"
 last_qc_outcome: "pass"
 tags: [summa, day/270, pars/supplement, q/25-26]
 ---

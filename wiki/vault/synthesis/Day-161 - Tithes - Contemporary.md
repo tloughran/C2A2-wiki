@@ -17,7 +17,7 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (FLAG/CROSS entries on collective intelligence and resource flow)"
 evidence_strength_summary: "Empirical on multi-scale resource gating (Levin) and prosocial neurobiology (Fredrickson). Formal on active-inference budget allocation (Friston). Theological on Pauline koinōnia and cosmic-body sharing (Wright, Rohr). The PRS solution itself is speculative-integrative — a proposal about what religious giving *is* under a monist ontology, not a settled finding."
 tags: [synthesis, day/161, theme/resource-flow, theme/collective-agency, pars/II-II, q/86-87]
-last_qc_at: "2026-06-19T12:22:30"
+last_qc_at: "2026-06-27T14:29:05"
 last_qc_outcome: "pass"
 ---
 

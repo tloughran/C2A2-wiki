@@ -16,7 +16,7 @@ evidence_strength_summary: "The scope of corrective authority tracking the bound
 mind_first_reframe: "Who can wield the keys, and over whom, is reframed as a fact about coupling: a collective agent's corrective power reaches exactly the members inside its Markov blanket (Friston PRS-07) — the morphogenetic field commands its own cells and no others (Levin) — so jurisdiction = the boundary of the perspective-sharing whole."
 central_theme_thread: "The reach of authority traces the reach of shared perspective: a member can be guided toward the whole only insofar as he is coupled into it; the keys bind the living subject, not the stranger or the dead."
 tags: [synthesis, day/267, theme/jurisdiction-as-the-boundary-of-the-coupled-whole]
-last_qc_at: "2026-06-19T00:21:16"
+last_qc_at: "2026-06-27T02:27:05"
 last_qc_outcome: "pass"
 ---
 
