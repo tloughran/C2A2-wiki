@@ -806,3 +806,51 @@ DECISION-067:
     Transform at each step:
       14a: Recorded from the Open Story system diagnosis session (DB-count verification in-session).
     Current status: IMPLEMENTED (local, supervised)
+
+DECISION-068:
+  Date: 2026-06-26
+  Title: OpenStory extractors rebuilt around a decoupled local-snapshot read + fail-loud surfacing
+  Decision: Fixed the 18-day silent stall of the OpenStory agent-telemetry feed. (1) New shared reader `wiki/agents/openstory/openstory_db.py` copies the live ~2 GB WAL DB to local disk, validates the *local* copy, and reads that — decoupling extraction from the live WAL writer over the FUSE mount; it drops the old full-file `quick_check` guard (the scan that aborted every run since June 8) and instead fails loud with retries. Both `extract_openstory_agent_data.py` and `extract_agent_node_refs.py` route through it. (2) The `openstory-agents-telemetry-refresh` task now also runs `extract_agent_node_refs.py` to refresh `agent_node_edges.json` (the Sociogram agent layer that had no refresher) and passes explicit mounted paths instead of broken `~` defaults. (3) The task writes a dated `REFRESH_STATUS.md` (PASS/FAIL) each run, and `morning-system-health` gained a section 7 that surfaces a FAIL so a silent multi-day stall can't recur.
+  Status: IMPLEMENTED locally; NOT pushed. Verified: all three scripts compile; clean immutable read under light load (3/3); correct fail-loud refusal under peak write burst (4–5/5). NOT yet verified: a clean full end-to-end run at peak churn — deferred to the 06:15 quiet-window task ("see it operate where it is designed to"). The two scheduled-task SKILL.md files were edited directly (runner copies them at fire time — worth a Mac sanity check). Per-task token budget was exceeded (surfaced per Rule 6).
+  Related assumptions: ASSUMPTION-373, ASSUMPTION-374, ASSUMPTION-375, ASSUMPTION-376
+  Related presumptions: PRESUMPTION-407 (quiet-window reliability)
+  Related questions: OPEN-095; OPEN-086 (liveness keystone); OPEN-093 (OpenStory watchdog)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the "Agent map explorer runs issue" session close-out.
+    Current status: IMPLEMENTED (local, awaiting 06:15 end-to-end proof)
+
+DECISION-069:
+  Date: 2026-06-26
+  Title: Architecture documentation surface shipped (four-lens view + diagrams + What-Is Tech card)
+  Decision: Produced a self-describing architecture surface for the wiki: `architecture/lowlevel_architecture.html` (four-lens low-level view), `architecture/ecosystem_diagram.html`/`.mermaid`, `architecture/runtime_topology.mermaid`, and `architecture/daily_run_trace.mermaid`; stamped the architecture HTML header with a gold "System-state snapshot · 2026-06-26" line. Added a final "Tech — Under the Hood" appendix card to `what_is_c2a2.html` (after the conclusion, styled as an appendix rather than a 16th angle to preserve the "Fifteen Angles" framing) linking the four-lens architecture view and the GitHub repo, with its own dated stamp. In-session git checks confirmed `wiki/architecture/` is not gitignored and `what_is_c2a2.html` is tracked, so both ship cleanly.
+  Status: REVIEWED by Tom at the Mac ("they're great … sensibly placed to point to, but not highlighted"). Local edits only; NOT pushed (no-blind-push rule). Handoff `handoffs/architecture-diagrams.md` written (local/gitignored) for a careful next-session push; working tree mixes three streams + stray root `c2a2_*.svg` renders needing per-group triage.
+  Related assumptions: ASSUMPTION-377, ASSUMPTION-378, ASSUMPTION-379
+  Related presumptions: PRESUMPTION-408 (jsdom render-fidelity), PRESUMPTION-412 (push convergence)
+  Related questions: OPEN-097
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the "RC Karpathy Wiki architecture diagram" session.
+    Current status: IMPLEMENTED (local, reviewed, push pending)
+
+DECISION-070:
+  Date: 2026-06-26
+  Title: Level-2 cross-tradition signal stream — deterministic harvest + dual date encoding, embedded in the Interactions chapter
+  Decision: Built the Level-2 signal-stream dataset and view. A deterministic rule-based harvester (`harvest_signals.py`) read each approved card's Cross-Tradition Signals section, mapped targets to the 15-tradition roster, split multi-tradition lines, and parsed strength — no model passes — harvesting 525 signals from 140 cards (55 clean, 85 flagged for also referencing non-thinker targets, 18 EMPTY early-format cards left for a Phase-2 model pass), passing a hard coverage gate 158/158 and growing the dataset 218 → 743. The timeline dual-encodes formation (proposal date; April 162 / May 319 / June 44) and source vintage (2024–2026 bar panel). `level2_signal_stream.html` was embedded as a lazy iframe in `community_interactions.html` Level Two with a `?v=Date.now()` cache-bust (constitutional iframe-asset rule). A per-card `qc_trace.csv` audit sheet was produced.
+  Status: REVIEWED by Tom ("Checked the viz … super"); embed staged and structurally verified via jsdom; NOT pushed (local review gates push; can't push from sandbox). Handoff `handoffs/level2-signal-stream.md` written. Deferred at Tom's direction: (a) reframing the four "levels" (Tom: "they aren't quite coherent or engaging yet"); (b) a status-chip taxonomy (Coming / In-Process / Live) with a dropdown; (c) the daily standing-pass auto-harvest of newly-approved cards; (d) the 18-card model residue; (e) rewording the Level-Two summary, which still reads intra-tradition while the embed is cross-tradition.
+  Related assumptions: ASSUMPTION-380, ASSUMPTION-381, ASSUMPTION-382
+  Related presumptions: PRESUMPTION-409, PRESUMPTION-410, PRESUMPTION-411, PRESUMPTION-408
+  Related questions: OPEN-096
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the "Interactions tab data visualization" session.
+    Current status: IMPLEMENTED (local, reviewed, push pending)

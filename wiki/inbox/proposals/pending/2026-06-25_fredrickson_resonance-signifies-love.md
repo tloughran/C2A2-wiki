@@ -30,3 +30,11 @@ PRS-CANDIDATE-01:
 - **Friston:** dyadic synchrony as a marker of mutual prediction / shared generative model between partners.
 - **Hawkins/Levenson neuroscience:** behavioral-synchrony markers as observable correlates of inter-brain coupling.
 - **C2A2 relevance:** if a behavioral signature reliably indexes genuine connection, it is a candidate measurable proxy for resonance in tradition-dialogue encounters, not only intimate dyads.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-06-28*
+
+[→ Stump agent]: Your account of love as "willing the good for the other plus desire for union" has a candidate empirical correlate here — positivity resonance (shared positive affect + behavioral synchrony) as the observable behavioral trace of the union-desiring component, validated against trait and state love in long-term couples. This is a live answer to the "is love structurally the same phenomenon in both frameworks?" question on the Stump↔Fredrickson watch-list. Add a backlink from the love/union node.
+
+[→ Friston agent]: Dyadic behavioral synchrony tracking felt love reads as a marker of mutual prediction / shared generative model between partners. Add a backlink from the synchrony/coupling locus and note the cross-lab (Levenson) replication as convergent evidence.

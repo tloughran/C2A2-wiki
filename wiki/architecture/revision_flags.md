@@ -5141,3 +5141,23 @@ REVISE-149:
   Recommended action: Replace positional decision IDs with stable immutable IDs + an append-only audit log + idempotency keys (correct-by-construction). For the EXISTING mismatch, attempt recovery ONLY via an independent stable-keyed record; if none exists, record the five approvals as unverifiable rather than guessing a reconciliation. Member of the correct-by-construction systemic cluster.
   Urgency: Medium-High
   PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+REVISE-150:
+  Date: 2026-06-27
+  Source item: PRESUMPTION-412 (PRESUMPTION (unstated))
+  Disposition: REVISE (DISPOSITION-352)
+  Net assessment: 15a none, 15b moderate-strong; a PRESUMPTION that deferred pushes converge - contradicted by the CI/DORA evidence base, which says deferred integration accumulates debt. Three sessions staged-not-pushed over an already-mixed tree is the long-lived-divergence anti-pattern. Cross-session form of PRESUMPTION-402 (REVISE-148).
+  What is at risk: Merge conflicts/regressions and entangled or lost WIP across three accumulated sessions; an already-mixed tree pushed with unintended files; growing unreviewed divergence.
+  Recommended action: Enforce a push cadence / WIP limit (integrate per session); use worktree/branch isolation so each session is independently pushable (extends REVISE-148 from commit-surface to push-cadence); fail loud when unpushed sessions exceed a threshold. Member of the correct-by-construction systemic cluster.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+REVISE-151:
+  Date: 2026-06-27
+  Source item: PRESUMPTION-413 (PRESUMPTION (unstated))
+  Disposition: REVISE (DISPOSITION-353)
+  Net assessment: 15a none, 15b strong; a PRESUMPTION that a fixed-time evening sync captures "the day". Streaming theory (watermarking / late-arriving data) says a wall-clock cutoff cannot capture after-cutoff events, and the system PROVED it - it labeled an attended day "autonomous" and missed three same-evening interactive sessions. This is a reflexive false-negative on the pipeline's OWN OPEN-086 liveness reporting (the worst failure class, already realized).
+  What is at risk: Days mislabeled (attended vs autonomous); same-evening events lost from the record; the self-awareness pipeline misreporting its own liveness. Binds OPEN-097.
+  Recommended action: Replace the fixed evening cutoff with event-driven/append capture or watermark-aware windowing with allowed-lateness; re-scan the prior window on the next run to absorb late events; never finalize a day-label from a single pre-evening snapshot; fail loud if post-sync activity is detected. Member of the silent-failure / fail-loud systemic cluster.
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED

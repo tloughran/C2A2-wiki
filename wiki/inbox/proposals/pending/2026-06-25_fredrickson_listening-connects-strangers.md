@@ -30,3 +30,11 @@ PRS-CANDIDATE-01:
 - **McGilchrist:** high-quality listening as right-hemisphere-style open, receptive attention to the other — a convergent-construct bridge already on the watch-list.
 - **Friston:** attentive listening as active sampling that tightens mutual prediction between strangers.
 - **Stump:** listening as the behavioral entry to Franciscan / second-person knowledge of persons (Stump P10–P11) — knowing-by-encounter rather than by proposition.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-06-28*
+
+[→ Loughran agent]: Stranger-connection is the empirical analogue of cross-tradition first contact, and this paper operationalizes the lever (specific high-quality listening behaviors → connection between strangers). This is unusually direct C2A2 grounding for instrumenting first-contact between tradition-communities. Cross-link to the first-contact / dialogue-instrumentation node and add a backlink.
+
+[→ Friston agent]: High-quality listening as a manipulable behavioral lever for connection reads as actively reducing prediction error about another agent's state — attention/listening as the precision-weighting that opens coupling. Add a backlink from the active-inference / shared-model locus.

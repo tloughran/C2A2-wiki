@@ -16025,3 +16025,461 @@ DISPOSITION-340:
   PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
 
 **Run tally 2026-06-26 (autonomous; Tom not present): 15 items searched by 15a+15b and dispositioned by 15c (DISPOSITION-326..340) from the 2026-06-25 cohort (tooling/deployment day - Heartbeat repair, Explorer UI ship, OpenStory rebuild). 3 INCORPORATE (PREMISE-083 snapshot-on-change dedup [canonicalize-before-compare]; PREMISE-084 signal-change-only-on-real-change [detector-accuracy-gated; aligns honesty PREMISE-078]; PREMISE-085 launchd=single-node process-liveness posture [scoped: NOT data durability, NOT HA]). 3 REVISE (REVISE-147 app-gated scheduler != adequate liveness; add dead-man's-switch; recapitulates keystone OPEN-086 [HIGH]; REVISE-148 vigilance != structural staging guard; adopt worktree/branch isolation [MED]; REVISE-149 positional decision IDs anti-pattern; ground truth may be unrecoverable; stable IDs+append-only [MED-HIGH]). 9 MONITOR (382 app-gated cadence [HIGH; binds OPEN-086]; 383 cache-vs-logic diagnosis [cheap cache-bust falsification]; 384 manual partial-staging reliability [measure slip rate; binds REVISE-148]; 385 headless/jsdom fidelity gap [add real-browser smoke test]; 386 perceived-liveness != freshness [bind cue to real state; honesty]; 387 consistency vs wayfinding [LOW; keep a per-tool cue]; 388 self-logging reflexivity [tag/de-bias meta sessions]; 389 single-node durability !-> distributed [re-derive at scale]; 390 SIGKILL integrity inference invalid - trap cannot fire on signal 9 [run integrity_check+count reconcile; fail-loud]). End-to-end flow: QUEUED-undispositioned 15 -> 0. SYSTEMIC-RISK: NEW cluster 9 (SILENT-FAILURE / FALSE-SUCCESS INFERENCE) - the system infers success/freshness from signals that cannot detect their own failure: app-gated execution (363/398), rising counts + an un-fireable SIGKILL trap (405), green headless suite blind to the live path (366/399); all recapitulate keystone OPEN-086; Risk High; remedy = uniform absence-is-the-signal/fail-loud verification (dead-man's-switch REVISE-147, integrity_check MONITOR-390, real-browser smoke test MONITOR-385). MINOR cluster 10 (CORRECT-BY-ATTENTION vs CORRECT-BY-CONSTRUCTION): manual git staging (370/402) + positional decision IDs (406); Risk Medium; remedy = structural guards (REVISE-148 worktree isolation, REVISE-149 stable IDs+append-only). Twin handling (surfaced-not-averaged): 363/398 (cadence MONITORed, liveness gap REVISEd), 366/399 (diagnosis MONITORed, test-fidelity gap MONITORed), 367/400 (honest-change-signal INCORPORATEd, perceived-liveness presumption MONITORed), 370/402 (manual-staging MONITORed, vigilance-as-guard REVISEd), 371/404 (single-node posture INCORPORATEd [scoped], distributed-transfer MONITORed). Consistency check vs validated_premises.md (PREMISE-001..082): NO contradiction among the 3 new INCORPOREs - PREMISE-084 aligns with honesty PREMISE-078; PREMISE-085 is explicitly scoped to single-node process liveness and is compatible with PREMISE-082 (no-SPOF resilience is a separate provider-layer value); PREMISE-083 is independent. Priority order for Tom: REVISE-147 (HIGH, liveness keystone; demo-critical) > REVISE-149 (MED-HIGH, decision-provenance recoverability) / REVISE-148 (MED, commit-isolation) > MONITOR-390 (verify DB integrity) / MONITOR-385 (close test-fidelity gap) / MONITOR-382 (scheduler cadence). NOTE: this run carries forward the prior run's open keystone REVISE-145 (consensus-validity) and the AWAITING-REVIEW backlog (100); these 3 new REVISEs add to that human-review queue.**
+
+### Agent 15a/15b returns — 2026-06-26 cohort (searched 2026-06-27, autonomous; Tom not present)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-374
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED  |  Strength: Moderate
+  Key source: SQLite backup API / VACUUM INTO; FUSE/network-FS locking guidance
+  Summary: Reading off local disk (not over FUSE) is SQLite-recommended; consistent-snapshot reads are feasible — but support holds only if the copy is a snapshot-API copy, and integrity_check is necessary-not-sufficient.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-374_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-374
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED  |  Strength: Moderate
+  Key source: "How To Corrupt An SQLite Database File"; PRAGMA integrity_check semantics
+  Specific risk: A torn/stale local copy passes integrity_check and is treated as ground truth (silent success).
+  Summary: A naive cp of a hot WAL DB is a corruption recipe; integrity_check validates structure not completeness, so copy+validate can return a confidently-wrong answer. Fix: backup API + count/checksum reconciliation, fail loud.
+  STEELMAN (one-line): "Correct" hides a method gap — copy method + completeness check are unspecified.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-374_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-375
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED  |  Strength: Moderate
+  Key source: WAL checkpoint contention; off-peak ETL scheduling
+  Summary: Off-peak scheduling genuinely reduces torn copies and checkpoint contention is real; but support is for "off-peak helps," not for "the cause is purely environmental."
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-375_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-375
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Moderate-Strong
+  Key source: backup-API vs naive copy; intermittent-fault attribution (Heisenbug masking)
+  Specific risk: A fixable deterministic copy-method defect is mis-booked as irreducible environment cost; recurs when load returns.
+  Summary: "Environment, not code" is likely a misdiagnosis: torn copies from a non-snapshot copy are deterministic; contention only modulates visibility. Quiet window mitigates symptoms, not cause.
+  STEELMAN (one-line): Off-peak quietness converts a fixable bug into an accepted constraint.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-375_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-376
+  Search direction: FOR (supportive)
+  Result: SUPPORTED  |  Strength: Strong
+  Key source: dead-man's-switch / heartbeat monitoring; Google SRE freshness alerting
+  Summary: Surfacing the AGE of the last PASS so absence becomes the signal is textbook silent-failure detection; recapitulates keystone OPEN-086 and aligns with PREMISE-084.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-376_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-376
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED  |  Strength: Moderate
+  Key source: stale-dashboard/perceived-liveness (MONITOR-386); monitor-of-monitor problem
+  Specific risk: A frozen "PASS" read as healthy; the report generator itself stalling unnoticed; reliance on intermittent human reading.
+  Summary: Works only if the report ALARMS ON AGE (not displays last value), has its own liveness guarantee, and is actually read; otherwise it reproduces the silent-success it should catch.
+  STEELMAN (one-line): A dated PASS is only as live as the thing writing the date.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-376_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-380
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED  |  Strength: Moderate
+  Key source: wrapper-based IE (Kushmerick); deterministic-parse reproducibility
+  Summary: Over templated input a deterministic harvest can attain complete coverage and is the Rule-5-aligned auditable choice — but 158/158 is a COVERAGE figure, not fidelity.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-380_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-380
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED  |  Strength: Moderate
+  Key source: coverage-vs-correctness; wrapper brittleness; precision/recall
+  Specific risk: Silently mis-parsed signals enter the dataset; a gate that can only read 100% gives false confidence.
+  Summary: 158/158 cannot fail on meaning by construction (one output per card); rule-based parsers mis-map silently on drift. Needs a precision/sample audit, not coverage alone.
+  STEELMAN (one-line): Completeness and correctness are orthogonal; coverage certifies presence, not recovery.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-380_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-381
+  Search direction: FOR (supportive)
+  Result: SUPPORTED  |  Strength: Strong
+  Key source: Snodgrass bitemporal modeling; SQL:2011 temporal (valid-time vs transaction-time)
+  Summary: Formation-date + source/vintage-date is exactly the standardized honest bitemporal pattern; strong support for the dual encoding itself (the choice of formation event is routed to 410).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-381_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-381
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED  |  Strength: Weak-Moderate
+  Key source: valid-time-begin event choice; bitemporal completeness
+  Specific risk: "Formation" read inconsistently downstream; distinct lifecycle events collapsed into one date.
+  Summary: The structure is sound; the SEMANTICS are contestable — naming proposal date "formation" embeds an unexamined choice; strict honesty may need >2 timestamps.
+  STEELMAN (one-line): Two timestamps are honest only if their referents are pinned down.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-381_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-382
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED  |  Strength: Moderate
+  Key source: query-string cache-busting (MDN); front-end asset versioning
+  Summary: A unique ?v= reliably forces a browser refetch on load; sound for "load a fresh copy when the iframe is created," bounded by intermediary-cache and timing pitfalls.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-382_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-382
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED  |  Strength: Moderate
+  Key source: query-string vs content-hash; SW/proxy caching; lazy-iframe load timing
+  Specific risk: Stale asset via Service Worker / query-string-ignoring proxy; lazy iframe never refreshed after first load.
+  Summary: Timestamp busting is freshness-by-load-time not by content-change; can be subverted by SW/proxies and only governs first load of a lazy iframe. Correct primitive is content-hash fingerprinting.
+  STEELMAN (one-line): ?v=Date.now() conflates "fetched recently" with "is the current version."
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-382_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-407
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED  |  Strength: Weak
+  Key source: workload diurnal periodicity; off-peak scheduling
+  Summary: Workloads often have stable troughs so 06:15 may be quiet most days — but support is for "often quiet," not "reliably and durably quiet."
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-407_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-407
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Moderate-Strong
+  Key source: workload non-stationarity; probabilistic-mitigation-as-guarantee; fail-safe design
+  Specific risk: The window silently stops being quiet; torn copies recur, unverified at peak.
+  Summary: An empirical quiet window is non-stationary and can erode without notice; a fix validated only at 06:15 is untested at peak. Robust posture: read correct under contention + monitor write activity. Binds ASSUMPTION-375.
+  STEELMAN (one-line): Pinning correctness to "06:15 is quiet" outsources safety to a drifting environmental property.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-407_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-408
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED  |  Strength: Weak
+  Key source: jsdom script/DOM capabilities; test-pyramid base layer
+  Summary: jsdom catches structural/logic regressions cheaply and a manual eyeball adds a coarse check — valid as a first layer, not as a rendering substitute.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-408_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-408
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Strong
+  Key source: jsdom documented limits (no layout/paint/CSS); recurrence of PRESUMPTION-399 / MONITOR-385
+  Specific risk: Layout/CSS/visual regressions ship behind a green structural suite; eyeball skipped on autonomous days.
+  Summary: jsdom by design cannot render, so it cannot certify visual fidelity; recurrence signals the standing real-browser smoke test (MONITOR-385) is not yet adopted.
+  STEELMAN (one-line): A DOM that never paints cannot vouch for what a user sees.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-408_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-409
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED  |  Strength: Weak
+  Key source: wrapper extraction over templated sources; deterministic reproducibility
+  Summary: On regular input presence and meaning are tightly coupled and determinism makes any validated fidelity stable — but this needs a fidelity audit; coverage alone does not imply it.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-409_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-409
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Moderate
+  Key source: coverage-vs-correctness; silent mis-parse; sample-audit methodology
+  Specific risk: Wrong-but-present signals treated as faithful; completeness gate cannot fail on meaning.
+  Summary: "Preserves meaning" is an unverified leap from 158/158, which measures presence; fidelity requires a labelled-sample precision audit. Shared vulnerability with ASSUMPTION-380.
+  STEELMAN (one-line): A harvester emitting one value per card is 158/158 whether or not any value is right.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-409_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-410
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED  |  Strength: Weak
+  Key source: creation-timestamp-as-event-time; document-lifecycle modeling
+  Summary: Proposal-authoring is a crisp, reliably recorded anchor and creation-time-as-event-time is common — a practical choice, not the uniquely correct birth instant.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-410_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-410
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED  |  Strength: Moderate
+  Key source: event-time "birth" ambiguity; selection bias; valid-time-begin definition
+  Specific risk: Mis-timed/over-counted connections; never-approved proposals dated as formed.
+  Summary: A connection is two-sided but authoring is one-sided; engagement/approval are equally plausible birth events. Semantic counterpart to ASSUMPTION-381.
+  STEELMAN (one-line): Dating "formation" to authoring can record a connection the other tradition never engaged.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-410_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-411
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED  |  Strength: Moderate
+  Key source: closed-world ontology tractability; controlled vocabularies; prior ASSUMPTION-005
+  Summary: A bounded roster gives clean membership and the tradition-as-unit premise is already validated (005) — defensible, but does not establish meta/self nodes are noise.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-411_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-411
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED  |  Strength: Moderate
+  Key source: closed-vs-open-world; self/meta node legitimacy; unit-of-analysis (005/007)
+  Specific risk: Genuine reflexive meta/self cross-tradition signal discarded as "not clean."
+  Summary: A canonical closed roster embeds a closed-world assumption; C2A2's own meta level (master/Summa) plausibly carries real signal, so auto-flagging it risks suppressing the project's most reflexive data.
+  STEELMAN (one-line): A system that studies traditions reflecting on each other should expect meta/self nodes to carry signal.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-411_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-412
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND  |  Strength: None
+  Key source: (searched) VCS deferred-integration literature
+  Summary: No literature supports that deferred pushes converge; best case is a single disciplined deferral resolving cleanly. Burden falls to 15b.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-412_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-412
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Moderate-Strong
+  Key source: CI/DORA (Accelerate); WIP-limits/batch-size; long-lived-branch "merge hell"
+  Specific risk: Merge conflicts/regressions and entangled WIP across three stacked sessions over a mixed tree.
+  Summary: Deferred integration accumulates debt, it does not converge; cross-session form of PRESUMPTION-402 (REVISE-148). Fix: push cadence/WIP limit + worktree isolation; fail loud on accumulation.
+  STEELMAN (one-line): "It'll converge later" is the precise belief that produces merge hell.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-412_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-413
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND  |  Strength: None
+  Key source: (searched) periodic batch-reporting practice
+  Summary: Fixed-schedule reporting is common and simple, but commonness is not support for completeness; a concrete counterexample (attended day mislabeled autonomous) already exists.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-413_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-413
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED  |  Strength: Strong
+  Key source: late-arriving data / watermarking (Dataflow/Beam); reporting cutoff effects; live counterexample
+  Specific risk: The pipeline misreports its OWN liveness — worst case for OPEN-086; same-evening events lost; days mislabeled.
+  Summary: A wall-clock cutoff defines "the day" by run-time not event-time; theory + a demonstrated reflexive false-negative refute it. Fix: event-driven/watermark-aware capture, re-scan late events, never finalize a day-label from a pre-evening snapshot. Binds OPEN-097.
+  STEELMAN (one-line): It called an attended day autonomous — it cannot even correctly report its own liveness.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-413_against.md
+
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-06-27
+  Affected items: ASSUMPTION-374, ASSUMPTION-375, ASSUMPTION-376, ASSUMPTION-380, PRESUMPTION-407, PRESUMPTION-408, PRESUMPTION-409, PRESUMPTION-413
+  Common vulnerability: SILENT-FAILURE / FALSE-SUCCESS INFERENCE (continuation of the 2026-06-26 cluster 9) — the system keeps inferring success/completeness/freshness from signals that cannot detect their own failure. This cohort extends the cluster across four surfaces: data-snapshot (374 copy+integrity_check passes on a torn/stale copy; 375/407 quiet-window mitigates symptom not cause), extraction-fidelity (380/409 158/158 coverage cannot fail on meaning), render-fidelity (408 jsdom cannot paint — recurrence of 399/MONITOR-385), and REFLEXIVE self-reporting (413 a fixed evening cutoff mislabeled an attended day "autonomous"). 376 is the prescribed cure (dead-man's-switch) but is itself only safe if it alarms on AGE. All recapitulate keystone OPEN-086.
+  Literature basis: SQLite "How To Corrupt"/integrity_check limits; backup API; dead-man's-switch/heartbeat (SRE); coverage-vs-correctness/precision audit; jsdom rendering limits; watermarking/late-arriving data (Dataflow/Beam).
+  Risk level: High
+  Recommendation: Apply the uniform 'absence-is-the-signal / verify-completeness / fail-loud' posture: snapshot-API copy + count/checksum reconciliation (not integrity_check alone) for 374; verify the fix at peak / monitor write-activity for 375/407; sample precision audit for 380/409; real-browser smoke test for 408 (fold into MONITOR-385); event-driven/watermark-aware capture for 413. Ensure 376's report alarms on staleness and has monitor-of-monitor. Bind cluster to OPEN-086.
+
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-06-27
+  Affected items: ASSUMPTION-381, PRESUMPTION-410, PRESUMPTION-413
+  Common vulnerability: EVENT-TIME / TEMPORAL-BOUNDARY SEMANTICS (minor, new) — three items hinge on an unexamined choice of WHEN something "happens": when a connection "forms" (381 dual encoding / 410 authoring-vs-engagement-vs-approval) and what counts as "the day" for capture (413 fixed cutoff vs event-time). The dual-encoding structure (381) is sound; the failures are in the choice of valid-time-begin (410) and the processing-time cutoff (413).
+  Literature basis: Snodgrass bitemporal modeling; SQL:2011 temporal; watermarking/allowed-lateness (Dataflow/Beam).
+  Risk level: Low-Medium
+  Recommendation: Define event semantics explicitly — document what "formation" denotes and carry engagement/approval dates where they diverge (381/410); replace the wall-clock day-cutoff with watermark-aware capture (413). 413 is the acute, demo-relevant member (also in the High cluster above).
+
+### Agent 15c dispositions (DISPOSITION-341..353) — 2026-06-27
+
+DISPOSITION-341:
+  Date: 2026-06-27
+  Item: ASSUMPTION-374
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Read-off-local-disk is correct, but the stated method is under-specified: a naive cp can tear and integrity_check validates structure not completeness, so copy+validate can pass yet be wrong. Resolvable by method change, not redesign.
+  Disposition: MONITOR  (MONITOR-391)
+  Reasoning: Stated assumption, mixed evidence, cheap structural fix available; MONITOR with a concrete verification rather than INCORPORATE (silent-success risk) or REVISE (the shape is right). Sits in the High silent-failure cluster.
+    MONITOR-391: monitoring cadence Weekly; priority Medium
+    What would change disposition: Switch to sqlite3 .backup / VACUUM INTO AND reconcile counts/checksums vs source -> INCORPORATE (correct snapshot read); if torn/stale copies persist past integrity_check -> REVISE (idempotent, fail-loud re-copy).
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-342:
+  Date: 2026-06-27
+  Item: ASSUMPTION-375
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Off-peak scheduling genuinely reduces torn copies, but "environment, not code" is likely a misdiagnosis: a non-snapshot copy is a deterministic defect whose visibility contention merely modulates. The diagnosis is cheaply falsifiable.
+  Disposition: MONITOR  (MONITOR-392)
+  Reasoning: The conclusion (quiet window helps) may hold but the causal claim does not; a peak-load test with the corrected copy method settles it. MONITOR with a falsification step; binds ASSUMPTION-374 and PRESUMPTION-407.
+    MONITOR-392: monitoring cadence Weekly; priority Medium
+    What would change disposition: Run the snapshot-API copy AT PEAK: zero torn copies -> the cause was method/code (REVISE the "environmental" framing, keep window as defense-in-depth); torn copies only at peak even with snapshot copy -> INCORPORATE the environmental diagnosis.
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-343:
+  Date: 2026-06-27
+  Item: ASSUMPTION-376
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Strong, well-grounded dead-man's-switch pattern (surface the AGE of the last PASS so absence is the signal); the only challenge is a boundary condition (must alarm on staleness, not display last value, and have monitor-of-monitor). Designer-aware, literature-backed, keystone-aligned.
+  Disposition: INCORPORATE  (PREMISE-086)
+  Reasoning: Strong support + only a scope caveat -> INCORPORATE with the caveat encoded in the premise. Directly addresses keystone OPEN-086 and complements PREMISE-084. The challenge is captured as a binding condition, not a blocker.
+    Validated premise statement: A silent multi-day pipeline stall is made visible by surfacing the AGE of the last dated PASS/FAIL in a daily health report and ALARMING on staleness (time-since-last-PASS > threshold) — absence/staleness is the signal — provided the report generator has its own independent liveness check (monitor-of-monitor).
+    Confidence: High
+    Applicable to: OpenStory/health-report monitoring; keystone OPEN-086 liveness; any scheduled pipeline (binds REVISE-147 dead-man's-switch).
+    Re-check cadence: Quarterly
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+
+DISPOSITION-344:
+  Date: 2026-06-27
+  Item: ASSUMPTION-380
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: A deterministic harvest over templated cards can achieve complete coverage (Rule-5-aligned, reproducible), but 158/158 measures presence not semantic fidelity and rule parsers mis-map silently on drift. Resolvable by a precision audit.
+  Disposition: MONITOR  (MONITOR-393)
+  Reasoning: Coverage is a completeness gate, not a correctness gate; INCORPORATE would over-claim. MONITOR with a fidelity audit; tightly paired with PRESUMPTION-409.
+    MONITOR-393: monitoring cadence Weekly; priority Medium
+    What would change disposition: Random-sample precision audit vs hand labels passes (+ drift canaries) -> INCORPORATE (faithful harvest); material mis-parse rate -> REVISE (add validators / targeted model pass on hard cases).
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-345:
+  Date: 2026-06-27
+  Item: ASSUMPTION-381
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: The dual-encoding (formation/event time + source/vintage time) is the standardized honest bitemporal pattern (Snodgrass; SQL:2011); the only challenge targets the SEMANTIC choice of which event is "formation," which is routed to PRESUMPTION-410, not a defect of the encoding.
+  Disposition: INCORPORATE  (PREMISE-087)
+  Reasoning: Strong support for the structure + a semantic caveat that is itself separately tracked (410) -> INCORPORATE the dual-encoding principle with the caveat noted. No contradiction with existing premises.
+    Validated premise statement: Representing a signal with two independent timestamps — a formation/event time and a source/vintage time (a bitemporal valid-time vs transaction-time split) — is the honest encoding, PROVIDED the event each timestamp denotes is explicitly defined (the choice of "formation" event is tracked separately under PRESUMPTION-410).
+    Confidence: High
+    Applicable to: cross-tradition signal dating; any dataset distinguishing when-it-happened from when-recorded.
+    Re-check cadence: Quarterly
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+
+DISPOSITION-346:
+  Date: 2026-06-27
+  Item: ASSUMPTION-382
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: ?v=Date.now() reliably forces a refetch when the iframe is created, but it is freshness-by-load-time not by content-change, can be ignored by Service Workers/proxies, and on a lazy iframe governs only first load. Low stakes.
+  Disposition: MONITOR  (MONITOR-394)
+  Reasoning: Works for the narrow goal but over-claims as a general freshness guarantee; cheap to verify and to upgrade to content-hash. MONITOR; kin to the ASSUMPTION-366 cache-delivery family.
+    MONITOR-394: monitoring cadence Weekly; priority Low-Medium
+    What would change disposition: Confirm intermediary caches/SW honor the bust AND that ongoing staleness is acceptable (iframe re-created on real change) -> INCORPORATE (scoped to first-load freshness); if stale assets are served -> REVISE (content-hash fingerprinting + cache-control).
+  PROVENANCE: Origin: 14a; Chain: [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-347:
+  Date: 2026-06-27
+  Item: PRESUMPTION-407
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Workloads have stable troughs so 06:15 is often quiet, but "durably quiet" is non-stationary and a fix validated only off-peak is untested at peak. Mitigated by fail-loud; the robust fix is a contention-independent read.
+  Disposition: MONITOR  (MONITOR-395)
+  Reasoning: Presumption with moderate-strong challenge but low residual risk IF the read is made correct under contention (see 374/375); MONITOR rather than REVISE because the safety lever already exists elsewhere. Binds ASSUMPTION-375.
+    MONITOR-395: monitoring cadence Weekly; priority Medium
+    What would change disposition: Make the read correct under contention (snapshot API + reconcile) -> the window's quietness stops mattering (effectively resolved); if quietness is the ONLY safeguard and write-activity in the window rises -> REVISE.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-348:
+  Date: 2026-06-27
+  Item: PRESUMPTION-408
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: jsdom cannot render (no layout/paint/CSS), so it cannot certify visual fidelity; a manual eyeball is non-systematic. This is an explicit RECURRENCE of PRESUMPTION-399 / MONITOR-385 — the prescribed real-browser smoke test is not yet adopted.
+  Disposition: MONITOR  (MONITOR-396)
+  Reasoning: Strong challenge, but the remedy is already specified under MONITOR-385; fold this in and ESCALATE on recurrence rather than open a redundant REVISE. If it recurs a third time, escalate to REVISE.
+    MONITOR-396: monitoring cadence Weekly; priority Medium (escalated from Low-Medium due to recurrence)
+    What would change disposition: Adopt a real-browser smoke test / visual-diff in the gate -> INCORPORATE (fidelity covered); a third recurrence without adoption -> REVISE (mandate real-browser verification). Folds into / reinforces MONITOR-385.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-349:
+  Date: 2026-06-27
+  Item: PRESUMPTION-409
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: "Preserves meaning" is an unverified leap from 158/158, which measures presence; completeness and correctness are orthogonal and rule parsers mis-map silently. Resolvable by a sample audit; shares the vulnerability of ASSUMPTION-380.
+  Disposition: MONITOR  (MONITOR-397)
+  Reasoning: Presumption + moderate challenge on a fidelity gap; the fix (precision audit) is cheap and identical to MONITOR-393. MONITOR and pair explicitly with 380.
+    MONITOR-397: monitoring cadence Weekly; priority Medium
+    What would change disposition: Labelled-sample precision audit confirms semantic fidelity -> INCORPORATE; material mis-parse rate -> REVISE (validators/targeted model pass). Co-resolves with MONITOR-393.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-350:
+  Date: 2026-06-27
+  Item: PRESUMPTION-410
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Proposal-authoring is a crisp practical anchor but a connection is two-sided; engagement/approval are equally plausible birth events, and authoring can mis-time or over-count (never-approved proposals). The dual encoding (381) is sound; this is the semantic-choice question.
+  Disposition: MONITOR  (MONITOR-398)
+  Reasoning: Modeling choice, low-medium stakes, resolvable by carrying alternative dates and sensitivity-checking. MONITOR; binds ASSUMPTION-381 (PREMISE-087's tracked caveat).
+    MONITOR-398: monitoring cadence Weekly; priority Low-Medium
+    What would change disposition: Carry engagement/approval dates and show analyses are robust to the formation choice -> INCORPORATE (authoring as documented convention); material divergence that skews results -> REVISE (re-anchor formation to engagement/approval).
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-351:
+  Date: 2026-06-27
+  Item: PRESUMPTION-411
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: A bounded roster is tractable and the tradition-as-unit premise is partly validated (005), but a closed-world roster can mislabel legitimate reflexive meta/self nodes (master/Summa) as "not clean," suppressing the project's most reflexive signal.
+  Disposition: MONITOR  (MONITOR-399)
+  Reasoning: Balanced evidence on a unit-of-analysis choice that re-instantiates the standing 005/007 tension; MONITOR with an audit of flagged-not-clean items rather than INCORPORATE or REVISE.
+    MONITOR-399: monitoring cadence Weekly; priority Low-Medium
+    What would change disposition: Audit shows flagged meta/self items are rarely meaningful -> INCORPORATE (roster canonical, meta/self typed-out); audit shows they often carry real cross-tradition content -> REVISE (treat meta/self as a typed category, open-world roster). Relates to ASSUMPTION-005 (INCORPORATED) / ASSUMPTION-007 (REVISE).
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-352:
+  Date: 2026-06-27
+  Item: PRESUMPTION-412
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: The CI/DORA evidence base is unambiguous that deferred integration accumulates debt rather than converging; three sessions staged-not-pushed over an already-mixed tree is exactly the long-lived-divergence anti-pattern. Cross-session form of PRESUMPTION-402 (REVISE-148).
+  Disposition: REVISE  (REVISE-150)
+  Reasoning: Presumption + strong challenge + zero support, on the same correct-by-attention pattern already flagged at single-session scale -> REVISE. A structural fix exists and partly overlaps REVISE-148.
+    REVISE-150: urgency Medium
+    What is at risk: Merge conflicts/regressions and entangled or lost WIP across three accumulated sessions; an already-mixed tree pushed with unintended files; growing unreviewed divergence.
+    Recommended action: Enforce a push cadence / WIP limit (integrate per session); use worktree/branch isolation so each session is independently pushable (extends REVISE-148 from commit-surface to push-cadence); fail loud when unpushed sessions exceed a threshold.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-353:
+  Date: 2026-06-27
+  Item: PRESUMPTION-413
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: A fixed wall-clock cutoff defines "the day" by run-time, not event-time; streaming theory (watermarking/late data) says it cannot capture after-cutoff events, and the system PROVED it by labeling an attended day "autonomous" and missing three same-evening sessions. This is a reflexive false-negative on the pipeline's OWN OPEN-086 liveness reporting.
+  Disposition: REVISE  (REVISE-151)
+  Reasoning: Presumption + strong challenge + a demonstrated reflexive failure on the keystone -> REVISE with HIGH urgency. The worst failure class (the monitor misreporting itself) is already realized, not hypothetical. Binds OPEN-097.
+    REVISE-151: urgency High
+    What is at risk: Days mislabeled (attended vs autonomous); same-evening events lost from the record; the self-awareness pipeline misreporting its own liveness — the keystone OPEN-086 failure, reflexively.
+    Recommended action: Replace the fixed evening cutoff with event-driven/append capture or watermark-aware windowing with allowed-lateness; re-scan the prior window on the next run to absorb late events; never finalize a day-label from a single pre-evening snapshot; fail loud if post-sync activity is detected. Binds OPEN-097.
+  PROVENANCE: Origin: 14b; Chain: [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+**Run tally 2026-06-27 (autonomous; Tom not present): 13 items searched by 15a+15b and dispositioned by 15c (DISPOSITION-341..353) from the 2026-06-26 cohort (6 stated assumptions + 7 unstated presumptions; the OpenStory hot-WAL-DB fix + cross-tradition signal harvest + cache/render day). 2 INCORPORATE (PREMISE-086 dated-PASS dead-man's-switch - CONDITIONAL on alarming on AGE + monitor-of-monitor; recapitulates keystone OPEN-086, complements PREMISE-084; PREMISE-087 bitemporal dual-encoding [formation/event time + source/vintage time] is honest - CONDITIONAL on defining the "formation" event, which is tracked in PRESUMPTION-410). 2 REVISE (REVISE-150 deferred pushes accumulate not converge [CI/DORA] - push cadence/WIP limit + worktree isolation; cross-session form of 402/REVISE-148 [MED]; REVISE-151 fixed-time evening sync cannot capture "the day" - it mislabeled an ATTENDED day "autonomous" and missed 3 same-evening sessions; reflexive OPEN-086 false-negative; event-driven/watermark-aware capture; binds OPEN-097 [HIGH]). 9 MONITOR (391 hot-WAL copy+integrity_check can pass on a torn/stale copy -> .backup/VACUUM INTO + count/checksum reconcile; 392 "env not code" likely misdiagnosis -> test snapshot-copy at peak; 393 deterministic harvest 158/158=coverage not fidelity -> precision/sample audit; 394 ?v=Date.now() = freshness-by-load not content [SW/proxy + first-load-only]; 395 06:15 quiet window non-stationary -> make read correct under contention [binds A-375]; 396 jsdom can't render - RECURRENCE of 399/MONITOR-385 -> real-browser smoke test [escalated]; 397 coverage!=fidelity -> labelled-sample audit [co-resolves 393]; 398 connection is two-sided -> carry engagement/approval dates [binds A-381/PREMISE-087]; 399 closed 15-tradition roster may mislabel meta/self signal -> audit flagged-not-clean [relates A-005/007]). End-to-end flow: QUEUED-undispositioned 13 -> 0. SYSTEMIC-RISK: CONTINUATION of cluster 9 (SILENT-FAILURE / FALSE-SUCCESS INFERENCE) now spanning data-snapshot (374 copy+integrity_check passes on torn/stale copy; 375/407 quiet-window mitigates symptom not cause), extraction-fidelity (380/409 158/158 coverage cannot fail on meaning), render-fidelity (408 jsdom cannot paint - recurrence of 399), and REFLEXIVE self-reporting (413 evening-cutoff mislabeled attended day autonomous); Risk High; remedy = uniform absence-is-the-signal/verify-completeness/fail-loud (PREMISE-086 dead-man's-switch [alarm on AGE], MONITOR-391 snapshot+reconcile, MONITOR-393/397 precision audit, MONITOR-396 real-browser smoke test, REVISE-151 watermark-aware capture); 376 is the prescribed cure (now INCORPORATED as PREMISE-086) but only safe if it alarms on AGE. NEW MINOR cluster 11 (EVENT-TIME / TEMPORAL-BOUNDARY SEMANTICS): 381/410 (when a connection "forms") + 413 (what counts as "the day"); Risk Low-Medium; remedy = define event semantics explicitly + watermark-aware capture; 413 is the acute, demo-relevant member (also in the High cluster). Twin/binding handling (surfaced-not-averaged): 374<->375<->407 (copy-method MONITORed 391, env-diagnosis MONITORed 392, window-durability MONITORed 395 - all resolve via snapshot-API read correct under contention); 380<->409 (coverage-vs-fidelity both MONITORed, co-resolving precision audit); 381<->410 (dual-encoding INCORPORATEd as PREMISE-087, formation-event-choice MONITORed 398); 408 binds recurrence into MONITOR-385. Consistency check vs validated_premises.md (PREMISE-001..085): NO contradiction - PREMISE-086 complements PREMISE-084 (honest-change-signal) and PREMISE-078 (register-then-look honesty) and operationalizes keystone OPEN-086; PREMISE-087 is independent (temporal-modeling), with its only caveat externalized to MONITOR-398. Priority order for Tom: REVISE-151 (HIGH, reflexive liveness false-negative on the pipeline's OWN reporting; demo-critical; joins keystone OPEN-086 family) > REVISE-150 (MED, integration-debt/push-cadence; extends REVISE-148) > MONITOR-391/392/395 (hot-WAL read correctness at peak) > MONITOR-393/397 (harvest fidelity audit) > MONITOR-396 (close recurring test-fidelity gap). NOTE: carries forward prior-run open keystones REVISE-145 (consensus-validity), REVISE-147 (scheduler dead-man's-switch - now backed by PREMISE-086), and the AWAITING-REVIEW human-review backlog; these 2 new REVISEs (150, 151) add to that queue. Running maxima after this run: PREMISE-087, MONITOR-399, REVISE-151, DISPOSITION-353.**
+
+---
+
+## Null run 2026-06-28 (c2a2-lit-search-pipeline; autonomous; Tom not present)
+
+**Status:** Queue empty — no work performed. Verification of [WIKI]/architecture/for_lit_search.md at run time (2026-06-28 04:41 UTC):
+- Item-header `Status:` lines tagged `[QUEUED]` lacking `[SEARCHED-15a]`: 0
+- Item-header `Status:` lines tagged `[QUEUED]` lacking `[SEARCHED-15b]`: 0
+- Item headers SEARCHED by both 15a and 15b but lacking `[DISPOSITIONED-15c]`: 0
+- Only one `Status:` line lacks `[DISPOSITIONED-15c]` and it is `[HELD — GROUNDED 2026-06-08] (NOT routed)` — an in-session infrastructural fact, deliberately not a literature claim. Not actionable.
+- (Bare `[QUEUED]` grep hits in the file are narrative cycle-0 routing notes, not actionable item headers; every actionable item header carries the full `[QUEUED][SEARCHED-15a][SEARCHED-15b][DISPOSITIONED-15c]` chain.)
+
+**Upstream liveness observation (FAIL-LOUD):** No 2026-06-27-EOD or 2026-06-28 cohort was queued by the self-awareness pipeline (14a/14b). for_lit_search.md unchanged since 2026-06-27 04:53 UTC; presumptions.md unchanged since 2026-06-27 03:43 UTC; assumptions.md unchanged since 2026-06-27 03:42 UTC; highest IDs remain ASSUMPTION-382 / PRESUMPTION-413. The prior run (2026-06-27, the 2026-06-26 cohort) closed end-to-end (QUEUED-undispositioned 13 -> 0; DISPOSITION-341..353). Because this pipeline is scheduled to run one hour after 14a/14b and the queue file shows no write today, the empty queue is consistent with *either* a genuine null day *or* a further silent upstream stall — the two are not distinguishable from the lit-search layer alone, which is itself the standing substance of **OPEN-086 / REVISE-129 / REVISE-130** (over-trust of unattended automation; no external liveness check on the auditor) and the freshly-raised **REVISE-151** (fixed-time evening sync cannot capture "the day"). No new searches are owed regardless of which it is.
+
+**Disposition counts:** 0 INCORPORATE / 0 MONITOR / 0 REVISE. No items processed this run.
+
+**Success-criteria check:**
+- [x] All queued items searched by both 15a and 15b — vacuously true (0 queued).
+- [x] All paired results dispositioned by 15c — vacuously true (0 pairs).
+- [x] No items left in searched-but-undispositioned state — confirmed 0.
+- [x] Provenance chains complete for all items — confirmed (no broken/partial chains).
+
+Clean null run — no 15a/15b/15c actions taken; no files modified except this audit note. Agent definitions (15a/15b/15c) and provenance_protocol.md were not deep-read this run, as no items required searching (Rule 2 / token budget); they are read on the next run that has queued work.
+
+  PROVENANCE: Origin: c2a2-lit-search-pipeline (scheduled); Chain: [queue-scan only]; Transform: null-run verification; Current status: QUEUE-EMPTY (upstream-liveness flag re-surfaced: OPEN-086 / REVISE-129)
+
+---

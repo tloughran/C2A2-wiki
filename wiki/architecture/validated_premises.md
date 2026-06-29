@@ -2094,3 +2094,29 @@ PREMISE-085:
   Re-check due: Quarterly (next 15d review)
   Status: ACTIVE
   PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-331
+
+PREMISE-086:
+  Date validated: 2026-06-27
+  Source item: ASSUMPTION-376
+  Statement: A silent multi-day pipeline stall is made visible by surfacing the AGE of the last dated PASS/FAIL in a daily health report and ALARMING on staleness (time-since-last-PASS > threshold) - absence/staleness is the signal (dead-man's-switch / heartbeat pattern). CONDITIONAL: the report must alarm on AGE rather than merely display the last-known value (else it becomes the perceived-liveness trap), and the report/monitor must have its own independent liveness check (monitor-of-monitor) so it cannot freeze unnoticed.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Dead-man's-switch / watchdog-timer & heartbeat monitoring; Google SRE Book (freshness / absence-of-signal alerting); Nagios/Prometheus staleness (time-since-last-success) checks (15a SUPPORTED/Strong)
+  Challenges noted: 15b (Moderate): a displayed-not-alarmed stale PASS hides the stall; the report generator can itself stall unnoticed; passive surfacing depends on intermittent human reading. All addressed by the conditions in the statement.
+  Confidence: High
+  Applicable to: OpenStory / health-report monitoring; keystone OPEN-086 liveness; any scheduled pipeline. Complements PREMISE-084 (signal-change-only-on-real-change) and binds REVISE-147 (scheduler dead-man's-switch). Member of the silent-failure / fail-loud cluster.
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-343
+
+PREMISE-087:
+  Date validated: 2026-06-27
+  Source item: ASSUMPTION-381
+  Statement: Representing a signal with two independent timestamps - a formation/event time and a source/vintage time (a bitemporal valid-time vs transaction-time split) - is the honest encoding, because it avoids conflating when-something-happened with when-it-was-recorded. CONDITIONAL: the event each timestamp denotes must be explicitly defined; in particular the choice of WHICH event counts as "formation" (proposal-authoring vs idea-engagement vs approval) is a separate modeling decision tracked under PRESUMPTION-410 / MONITOR-398, not settled by this premise.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Snodgrass, "Developing Time-Oriented Database Applications in SQL" (bitemporal); SQL:2011 temporal features (application-time period + system-versioned tables); data-provenance/lineage practice (15a SUPPORTED/Strong)
+  Challenges noted: 15b (Weak-Moderate): the dual structure is sound but the semantics of "formation" are contestable and a strictly honest model may need >2 timestamps; the semantic choice is routed to PRESUMPTION-410. Member of the event-time/temporal-boundary cluster.
+  Confidence: High
+  Applicable to: cross-tradition signal dating; any dataset distinguishing occurrence time from record/source time.
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-345

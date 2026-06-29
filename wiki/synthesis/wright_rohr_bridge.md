@@ -78,3 +78,12 @@ Rohr frames exile as a condition to be *healed* (return to union); but the netwo
 **Intersection page:** [[2026-06-21_rohr_way-of-the-early-church-new-way-of-living]]
 **Synthesis claim:** Salvation is a present, communal reordering of life ("the reign of God now"), not a private post-mortem transaction — Rohr supplies the contemplative-historical texture (communities of practice maturing into a self-naming tradition), Wright the second-temple-Jewish frame that constrains it (kingdom-of-God as inaugurated peoplehood).
 **Open question the wiki cannot yet answer:** Does the second-temple frame *entail* Rohr's "tradition emerges bottom-up from lived practice," or merely permit it — i.e., is the practice-first emergence of doctrine a historical accident or a structural feature of how peoplehood-salvation works?
+## Sewing Agent bridge note — 2026-06-28
+
+**Same-day Romans pair:** `inbox/proposals/pending/2026-06-28_wright_capital-conversations-women-ministry-phoebe` (PROP-2026-06-28-001) and `2026-06-28_rohr_everyone-is-chosen-called-and-sent` (PROP-2026-06-28-002) — proposed the same day, both on Romans/peoplehood, neither yet promoted.
+
+**Why they sit together:** Rohr supplies the *telos* (chosenness is irrevocable but non-merit-based, given "for the sake of experiencing mercy," and real only when communicated outward — chosen-few → chosen-all). Wright supplies the *mechanism* (interpretive and proclamatory authority distributed by call/gift/commission, not office or gender — Phoebe as first expositor of Romans, Mary Magdalene as first resurrection-herald). Election-for-universalization needs distributed-commission to actually propagate; distributed-commission needs a telos to aim at.
+
+**Synthesis claim:** In the earliest people-of-God, individuation (who is chosen, who carries and announces the word) is *for* unity: an agent is singled out precisely so it can mediate belovedness/witness to all. This is the clearest scriptural articulation yet of the Summa 2026 central theme — perspective-limited agents individuated so that loving unity is the telos.
+
+**Open question:** Is "chosenness-for-universalization" structurally identical to "commission-by-charism," or are they two different individuation operators (one elective, one functional) that only happen to coincide in the apostolic case? The wiki has no test that would separate them.

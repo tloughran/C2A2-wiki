@@ -1,5 +1,23 @@
 # RC Karpathy Wiki Project — Claude Standing Instructions
 
+## CONSTITUTIONAL RULE: Shell Code Is Pasted Inline, Paste-Safe
+
+**When Claude gives Tom shell commands to run, the default is to paste them inline in chat as copy-paste-ready blocks — NOT to hand him a `.sh` file to invoke.** Tom runs zsh and pastes blocks directly into Terminal.
+
+**Every pasted block must be paste-safe for interactive zsh:**
+
+1. **No `#` anywhere** — interactive zsh does not treat `#` as a comment by default, so a pasted `#` line throws `bad pattern` / `command not found`. Use no comments, or narrate with `echo "..."`.
+2. **ASCII only** — no em-dashes, no smart quotes, no apostrophes inside the code.
+3. **Stage long quoted paths** into a `cd "..."` on its own line, or a variable; never let a quoted path with spaces wrap across lines.
+4. **Single-quote any pathspec/regex containing `!` or `^`** (e.g. `':!hep-det'`, `'^hep-det/'`) so zsh history-expansion and globbing leave them alone.
+5. If a `.sh` file is genuinely warranted (long/reusable), tell Tom to run it as `bash "<full path>"` so the shebang handles the `#` lines — he never pastes the file body.
+
+**Durable environment fix (offer once):** `setopt interactivecomments` in `~/.zshrc` makes `#` safe to paste forever; it does not replace rules 2-4.
+
+**Rationale:** 2026-06-28 — Claude reverted to delivering `.sh` files; Tom asked to return to inline paste-ready code. The recurring `#`/quote/em-dash traps hang his zsh at `quote>` or throw `bad pattern`. Inline-and-paste-safe is the contract. (Supersedes the looser "scrub snippets to ASCII" guidance.)
+
+---
+
 ## CONSTITUTIONAL RULE: No Blind Pushes to GitHub
 
 **Before any `git push` to any GitHub repository, Claude must:**

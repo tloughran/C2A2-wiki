@@ -6710,3 +6710,183 @@ ASSUMPTION-372:
     Transform at each step:
       14a: Extracted from "Backfilled 218879 events from all files (no window filter) … sessions 1,099 → 1,332, events 224k → 256,040." [stated]
     Current status: UNTESTED
+
+ASSUMPTION-373:
+  Date identified: 2026-06-26
+  Statement: The full-file `quick_check` guard in the OpenStory extractors was the root cause that aborted every extraction run since 2026-06-08 — "It drops the old full-file `quick_check` guard (the exact scan that aborted every run since June 8)." The Agent Map / Sociogram agent-layer feed had been silently stalled for 18 days.
+  Context: "Agent map explorer runs issue" session — OpenStory telemetry refresh debugging.
+  Type: empirical
+  Related decisions: DECISION-068
+  Related items: PRESUMPTION-405 (post-SIGKILL DB consistency); OPEN-086 (pipeline silent-miss / liveness keystone); OPEN-093 (OpenStory freshness watchdog)
+  Testability: testable empirically — in-session local diagnosis (verified by the failure signature and the fix removing it); the general failure mode is the WAL-contention class captured in ASSUMPTION-374/375.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-373
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "the exact scan that aborted every run since June 8" close-out. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-374:
+  Date identified: 2026-06-26
+  Statement: Copying the live ~2 GB WAL SQLite DB to local disk, validating the *local* copy, and reading that — rather than validating/reading the live file over the FUSE mount — is the correct fix, because it decouples the long extraction from the live WAL writer. "a shared reader that copies the DB to local disk, validates the *local* copy, and reads that — decoupling the long extraction from the live WAL writer over the mount."
+  Context: "Agent map explorer runs issue" session — `openstory_db.py` design (Fix #1).
+  Type: architectural
+  Related decisions: DECISION-068
+  Related items: ASSUMPTION-373; ASSUMPTION-375; PRESUMPTION-407 (quiet-window reliability)
+  Testability: testable via literature — SQLite WAL semantics, consistent-snapshot reads, reading a hot DB over a network/FUSE mount from a second process, copy-then-validate idempotency.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-374
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the Fix #1 description of the shared reader. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-375:
+  Date identified: 2026-06-26
+  Statement: The peak-hour torn-copy failures are an environment constraint (WAL write+checkpoint contention at peak churn), not a code defect — evidenced by clean reads under light load (3/3) vs correct fail-loud refusal under the heavy write burst (4–5/5), with the production task firing at 06:15 "when OpenStory is quiet." "This is an environment constraint at peak hour, not a code defect."
+  Context: "Agent map explorer runs issue" session — verification honesty close-out.
+  Type: empirical
+  Related decisions: DECISION-068
+  Related items: PRESUMPTION-407 (is 06:15 reliably quiet?); OPEN-095
+  Testability: testable via literature — workload periodicity, scheduling against contention windows, torn reads under concurrent WAL checkpointing; partly local empirical (the 06:15 run will produce the first clean end-to-end evidence).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-375
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from "an environment constraint at peak hour, not a code defect" + the light-load/heavy-load pass counts. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-376:
+  Date identified: 2026-06-26
+  Statement: Writing a dated `REFRESH_STATUS.md` (PASS/FAIL) every run, plus a new section 7 in `morning-system-health` that reads it and headlines a FAIL, makes a silent multi-day stall visible going forward — "so a silent 18-day stall can't recur."
+  Context: "Agent map explorer runs issue" session — Fix #3 (make failure visible).
+  Type: methodological
+  Related decisions: DECISION-068
+  Related items: OPEN-086 (liveness keystone); ASSUMPTION-367 (honesty refinement); PREMISE-084 (signal change only on real change)
+  Testability: testable via literature — observability, dead-man's-switch / heartbeat monitoring, "absence is the signal" / fail-loud design, alert surfacing vs silent failure.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-376
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the Fix #3 description ("so a silent 18-day stall can't recur"). [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-377:
+  Date identified: 2026-06-26
+  Statement: Styling the new "Tech — Under the Hood" entry as an appendix card (placed after the conclusion) rather than as a 16th angle preserves the page's "Fifteen Angles" framing. "I styled the card as an appendix rather than a 16th angle so the page's 'Fifteen Angles' framing stays intact."
+  Context: "RC Karpathy Wiki architecture diagram" session — `what_is_c2a2.html` Tech card placement.
+  Type: architectural
+  Related decisions: DECISION-069
+  Related items: ASSUMPTION-368 (brand-gold header unification); ASSUMPTION-369 (Heartbeat-hero exception)
+  Testability: framework commitment (not testable) — an information-architecture/editorial framing choice, deferred to Tom (offered as a one-line change to angle 16 if preferred).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-377
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the appendix-vs-16th-angle rationale. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-378:
+  Date identified: 2026-06-26
+  Statement: The Tech card's relative link `architecture/lowlevel_architecture.html` resolves on the live site only if `wiki/architecture/` is published — and the in-session `git status`/`git ls-files` checks confirmed `wiki/architecture/` is NOT gitignored and `what_is_c2a2.html` IS tracked, "so both will ship cleanly."
+  Context: "RC Karpathy Wiki architecture diagram" session — publishability verification.
+  Type: empirical
+  Related decisions: DECISION-069
+  Related items: (memory flag: what_is_c2a2.html previously "believed-published but possibly untracked")
+  Testability: testable empirically — in-session local fact verified by git (a local diagnostic, not a literature claim).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-378
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the git ls-files / gitignore verification. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-379:
+  Date identified: 2026-06-26
+  Statement: The stray `c2a2_*.svg` files at the repo root duplicate what is already inside `lowlevel_architecture.html` (auto-saved widget renders), so the careful push will want per-group triage, not a blanket `git add -A`.
+  Context: "RC Karpathy Wiki architecture diagram" session — pre-push working-tree triage.
+  Type: methodological
+  Related decisions: DECISION-069
+  Related items: ASSUMPTION-370 (scoped commits); PRESUMPTION-402 (hand-partitioned dirty tree); REVISE-148 (staging isolation); PRESUMPTION-412
+  Testability: testable empirically — local diagnostic about file duplication; the general staging-discipline question is covered by REVISE-148 / PRESUMPTION-402.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-379
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the "per-group triage, not a blanket git add -A" close-out. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-380:
+  Date identified: 2026-06-26
+  Statement: A deterministic, rule-based harvest (read each approved card's existing Cross-Tradition Signals section, map targets to the 15-tradition roster, split multi-tradition lines, parse strength) correctly recovers the cross-tradition signal dataset with no model passes — evidenced by a hard coverage gate passing 158/158 and 525 signals harvested from 140 cards (dataset 218 → 743). "the deterministic harvest turned out cheap enough to just run the whole backlog in-session, in budget, no model passes."
+  Context: "Interactions tab data visualization" session — `harvest_signals.py`.
+  Type: methodological
+  Related decisions: DECISION-070
+  Related items: PRESUMPTION-409 (coverage ≠ semantic fidelity); PRESUMPTION-411 (15-tradition roster as canonical target space); Rule 5 (code answers when code can)
+  Testability: testable via literature — rule-based vs ML information extraction, when deterministic parsing suffices, precision/recall of pattern extraction over semi-structured text.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-380
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the deterministic-harvest description + 158/158 coverage gate. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-381:
+  Date identified: 2026-06-26
+  Statement: Dating each signal by proposal date (formation) while carrying source_date (overlay vintage) is the correct dual encoding — it "fills the May plateau, honestly, with links the agents actually authored in May," with a cumulative formation curve on proposal date plus a source-vintage bar panel spanning 2024–2026 ("old ideas, freshly engaged").
+  Context: "Interactions tab data visualization" session — timeline dual encoding.
+  Type: epistemic
+  Related decisions: DECISION-070
+  Related items: PRESUMPTION-410 (proposal-date = formation-date modeling)
+  Testability: testable via literature — bitemporal / valid-time vs transaction-time data modeling, event dating and provenance, representing formation vs vintage of an idea.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-381
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the formation-date/source-date dual-encoding rationale. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-382:
+  Date identified: 2026-06-26
+  Statement: Embedding `level2_signal_stream.html` as a lazy iframe with a JS-set `?v=Date.now()` cache-bust satisfies the constitutional iframe-asset rule (no manual version bump) and mirrors explorer.html's own pattern.
+  Context: "Interactions tab data visualization" session — Level Two embed integration.
+  Type: architectural
+  Related decisions: DECISION-070
+  Related items: ASSUMPTION-366 (cache-delivery-not-logic); PRESUMPTION-408 (jsdom render-fidelity)
+  Testability: testable via literature — HTTP cache invalidation, query-string cache-busting effectiveness and pitfalls, lazy iframe loading.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-382
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the iframe + ?v=Date.now() integration description. [stated]
+    Current status: UNTESTED

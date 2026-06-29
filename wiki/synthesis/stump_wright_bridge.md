@@ -30,3 +30,12 @@ If the church is a real corporate substance whose members retain their distinct 
 - Cross-link from `traditions/wright/wiki.md` and `traditions/stump/wiki.md` under *paradigm-bridge candidates*.
 - The membership/persistence question connects to the AI-membership thread (cf. `synthesis/carroll_kastrup_bridge.md` and the Levin–Kastrup nested-cognition disagreement) — if C2A2 is a corporate substance, its AI agents' membership status is a metaphysical and not merely a procedural question.
 - PROP-2026-05-24-001 also flags a strong Wright×Rohr paradigm-bridge (church as working model = Universal-Christ pattern at communal scale); that ecclesiology/cosmology pairing is distinct from the exile convergence already hosted in `synthesis/wright_rohr_bridge.md` and may warrant its own note if it recurs.
+## Sewing Agent bridge note — 2026-06-28
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-06-28_wright_capital-conversations-women-ministry-phoebe`.
+
+**Why it sits here:** Wright's "differentiated members commissioned within one body" (Phoebe as letter-bearer/expositor; Mary Magdalene as resurrection-witness; 1 Tim 2 read as local not universal) is a corporate-substance claim in Stump's sense — a united something-or-other whose whole is real and whose members are individuated by role rather than ranked by category. Mary Magdalene's commission is also a clean case of Stumpian second-person knowledge (knowledge by acquaintance/encounter) grounding public proclamation.
+
+**Synthesis claim:** Ministerial role is individuated by charism-and-commission, not by category (gender/office) — which is exactly what a corporate-substance ecclesiology predicts: members differentiated by function within one composite agent. Wright's exegesis and Stump's metaphysics describe the same structure from history and ontology respectively.
+
+**Open question:** If roles are individuated by commission within a real composite, what makes a commission *valid* — and is that a metaphysical fact about the composite or a historical-institutional one? Stump and Wright would likely answer differently; the wiki has not posed the question.

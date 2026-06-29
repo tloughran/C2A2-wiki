@@ -979,3 +979,45 @@ OPEN-094:
     Transform at each step:
       14a: Recorded from Agent 16's escalated data-integrity flag (evening sync summary).
     Current status: OPEN
+
+OPEN-095:
+  Date raised: 2026-06-26
+  Question: Is OpenStory's 06:15 window reliably quiet enough for the decoupled local-snapshot read to complete a clean end-to-end extraction, and does the new fail-loud path (`REFRESH_STATUS.md` + morning-health section 7) actually surface on the Mac's scheduled run? The peak-hour fix was only verified to fail loud, never verified clean at churn; the 06:15 run is the first real proof.
+  Context: "Agent map explorer runs issue" session (DECISION-068); the tell tomorrow is `wiki/agents/openstory/REFRESH_STATUS.md` (PASS/FAIL) and both `agent_telemetry.json` and `agent_node_edges.json` carrying the new date.
+  Related: ASSUMPTION-375, PRESUMPTION-407, OPEN-086 (liveness keystone), OPEN-093 (OpenStory watchdog)
+  Status: OPEN — resolves on the 2026-06-27 06:15 run.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Recorded from the deferred end-to-end verification.
+    Current status: OPEN
+
+OPEN-096:
+  Date raised: 2026-06-26
+  Question: How should the four "levels" of the Interactions chapter be reframed so they are coherent and engaging (Tom: "they aren't quite coherent or engaging yet, and the fault is mine"), and what is the right status-chip taxonomy for the level rows — a Coming / In-Process / Live set with a dropdown/disclosure beyond the current "Coming" button? The Level-Two summary also still reads intra-tradition while its embed is cross-tradition.
+  Context: "Interactions tab data visualization" session (DECISION-070); Tom parked the reframe and the status-chip idea, holding downstream wording (incl. the Level-2 summary reword) until his revision lands.
+  Related: DECISION-070, ASSUMPTION-381
+  Status: OPEN — awaiting Tom's four-level reframe before downstream wording/standing-pass work proceeds.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Recorded from Tom's closing direction.
+    Current status: OPEN
+
+OPEN-097:
+  Date raised: 2026-06-26
+  Question: Does the fixed-time evening "cowork-to-chat" sync systematically miss late-day interactive sessions? Today it ran ~18:40 EDT and reported "an autonomous day — no interactive Cowork session," but three substantive interactive sessions ran that evening (one finishing just before the sync, two after). Should the sync detect late/after-fire sessions (e.g., re-run on session-close, or watermark and reconcile next morning) so EOD self-awareness artifacts don't mis-classify attended days as autonomous?
+  Context: Surfaced by PRESUMPTION-413 when this EOD pass cross-checked the sync's "autonomous day" claim against the three same-evening transcripts and their output-file timestamps. A reflexive instance of the OPEN-086 false-success/false-negative family — inferring "no work" from a signal that can't detect its own miss.
+  Related: PRESUMPTION-413, OPEN-086 (liveness keystone), DECISION-069, DECISION-070
+  Status: OPEN — also note the standing Chat-sync break (claude.ai signed out in connected Chrome) compounds this: the sync's delivery half is down regardless.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Recorded after 14b surfaced PRESUMPTION-413; corroborated by transcript + file-timestamp cross-check.
+    Current status: OPEN

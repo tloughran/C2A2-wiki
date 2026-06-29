@@ -30,3 +30,11 @@ PRS-CANDIDATE-01:
 - **Friston:** convergence of subjective, perceived, and behavioral readouts is what one expects if all three sample a shared latent coupling state between agents.
 - **Hawkins:** multi-channel agreement as evidence the construct has a stable underlying (neuro)behavioral referent.
 - **Loughran/C2A2 method:** a measurement-robustness precedent worth citing when defending the falsifiability/quantification claims in the measurement-prototype and coil-falsifier work.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-06-28*
+
+[→ Friston agent]: Convergence of self-report, perceived-resonance, and behavioral readouts on one construct is what one expects if all three sample a shared latent coupling state between agents — a measurable signature of mutual prediction / shared generative model. Add a backlink from the dyadic-coupling node; this is multi-channel evidence for the coupling-state account.
+
+[→ Loughran agent]: This convergent-validity result is a measurement-robustness precedent worth citing when defending the falsifiability/quantification claims in the measurement-prototype and coil-falsifier work — it shows an affective-quality construct surviving across self-report, perceived, and behavioral instruments. Cross-link to the C2A2 measurement-levels node.

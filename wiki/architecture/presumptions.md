@@ -8139,3 +8139,143 @@ PRESUMPTION-406:
     Transform at each step:
       14b: Inferred from the fix-and-reconcile framing of the Agent 16 escalation, which presumes a recoverable ground truth. [inferred, medium-confidence]
     Current status: UNTESTED
+
+PRESUMPTION-407:
+  Date surfaced: 2026-06-26
+  Statement: [inferred] That OpenStory's 06:15 "quiet window" is reliably and durably quiet — settling for a fix that was never verified clean at peak churn (only verified to fail-loud) presumes the write+checkpoint churn pattern is stable and time-predictable, so a single clean run tomorrow generalizes to "this works." The decision to "see it operate where it is designed to, 6:15 tomorrow" treats the quiet window as a dependable property rather than an empirical bet about workload periodicity.
+  Evidence it was operative: the session closed by deferring the only end-to-end proof to the 06:15 run, on the stated ground that "the daily task fires at 06:15 when OpenStory is quiet" — no fallback was discussed for the case where 06:15 is itself contended.
+  Why it was unstated: too foundational to notice — the quiet-window assumption underlies the whole "environment constraint, not code defect" framing and so is treated as settled rather than as its own hypothesis.
+  Type: scaling
+  Related decisions: DECISION-068
+  Related items: ASSUMPTION-375; ASSUMPTION-376 (fail-loud now surfaces a miss, lowering the risk); OPEN-095; OPEN-086 family
+  Testability: testable via literature — workload periodicity/seasonality, scheduling jobs against contention windows, reliability of "off-peak" assumptions; partly testable empirically by the 06:15 run history.
+  Risk if wrong: Medium — if 06:15 is not reliably quiet the refresh keeps failing; mitigated because Fix #3 now makes such failure loud rather than silent (so it degrades to "visible stall," not "18-day silent stall").
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-407
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the deferral of end-to-end proof to the "designed quiet window" without a contended-window fallback. [inferred, high-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-408:
+  Date surfaced: 2026-06-26
+  Statement: [inferred] That jsdom structural verification plus "open it to eyeball" is an adequate substitute for real-browser rendering — two of today's sessions verified visual artifacts (the Level-2 signal stream; the architecture pages) via jsdom because "the browser extension can't open file://", presuming that a structurally-present DOM equals a visually-correct, interactive render. This is the same headless↔real-browser fidelity gap as PRESUMPTION-399, recurring in new sessions.
+  Evidence it was operative: "I couldn't pixel-screenshot it … so I verified via jsdom — matrix, both timeline panels, and the Friston×Levin drill all render"; the genuine visual check is offloaded to Tom ("Open it to eyeball").
+  Why it was unstated: the tooling limitation (no file:// in the extension) is treated as a logistics note, not as an epistemic gap in the verification claim.
+  Type: methodological
+  Related decisions: DECISION-070; DECISION-069
+  Related items: PRESUMPTION-399; MONITOR-385 (headless/jsdom fidelity gap — real-browser smoke test)
+  Testability: testable via literature — jsdom vs real-browser rendering fidelity, what headless DOM testing cannot catch (layout, paint, CSS, interaction); already MONITORed (385).
+  Risk if wrong: Medium — a structurally-valid page can render broken; the recurrence shows the gap is systemic, not incidental.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-408
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from repeated jsdom-only verification across two sessions; binds to the existing MONITOR-385 fidelity item. [inferred, high-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-409:
+  Date surfaced: 2026-06-26
+  Statement: [inferred] That a deterministic rule-based harvest preserves the *meaning* of each card's cross-tradition signals — the 158/158 coverage gate and the 525-signal count measure presence and completeness, not semantic fidelity. Splitting multi-tradition lines, parsing strength, and mapping targets by rule presumes the authored signal text is structurally regular enough that rule extraction never silently merges, mis-attributes, or distorts a distinct claim.
+  Evidence it was operative: success was reported in coverage/volume terms ("hard coverage gate that passed 158/158", "525 signals harvested") with the only correctness caveat being render verification — not a sample audit of whether harvested signals faithfully represent the source sentences.
+  Why it was unstated: a passing coverage gate reads as validation; the distinction between "every card produced signals" and "every signal is correct" is exactly the gap a coverage metric hides.
+  Type: epistemic
+  Related decisions: DECISION-070
+  Related items: ASSUMPTION-380; the per-card `qc_trace.csv` (presence audit, not semantic audit)
+  Testability: testable via literature — extraction precision vs recall, coverage vs correctness in information extraction, validation beyond completeness gates.
+  Risk if wrong: Medium — the headline "real formation … honestly" narrative rests on the harvested signals being faithful; a complete-but-subtly-wrong dataset would mis-shape the timeline and the matrix drill-downs.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-409
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from success being measured by coverage/volume rather than by semantic-fidelity audit. [inferred, medium-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-410:
+  Date surfaced: 2026-06-26
+  Statement: [inferred] That a cross-tradition connection "forms" on its proposal-authoring date — the timeline's main cumulative curve dates each signal by proposal date and calls that "formation," presuming the connection comes into being when the proposal was written, rather than earlier (when the underlying idea was first engaged) or later (when the proposal was approved/validated). The source-vintage panel surfaces material age but does not unseat proposal-authorship as the formation moment.
+  Evidence it was operative: "dating each signal by proposal date (formation) while carrying source_date (overlay)" — formation is operationally equated with the proposal timestamp without discussion of alternative formation events (engagement, approval, first-citation).
+  Why it was unstated: proposal date is the most readily available timestamp, so it is adopted as "formation" by convenience; the modeling choice is invisible because it is the path of least resistance.
+  Type: epistemic
+  Related decisions: DECISION-070
+  Related items: ASSUMPTION-381; PRESUMPTION-409
+  Testability: testable via literature — bitemporal modeling (valid-time vs transaction-time), defining the "birth" event of a relationship, event-time semantics.
+  Risk if wrong: Low-Medium — the April/May/June "real formation" story is sensitive to which event counts as formation; an approval-dated or engagement-dated curve could tell a materially different growth story.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-410
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the operational equation of proposal date with "formation." [inferred, medium-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-411:
+  Date surfaced: 2026-06-26
+  Statement: [inferred] That the 15-tradition roster is the canonical target space for cross-tradition signals, so that signals pointing at non-roster targets (e.g., "C2A2 master", "Summa") are "flagged" — recorded but treated as not-clean — rather than first-class. This presumes self-referential and meta targets are noise at the edge of the real (tradition-to-tradition) structure, re-instantiating the standing structural presumption that traditions are the right unit of analysis.
+  Evidence it was operative: 85 cards were "flagged only because they also reference non-thinker targets like 'C2A2 master'/'Summa'" and counted apart from the 55 "clean" cards; the roster mapping is the spine of the harvest.
+  Why it was unstated: the 15-tradition roster is the system's founding frame, so mapping to it is automatic and its boundary (what counts as a legitimate target) goes unexamined.
+  Type: structural
+  Related decisions: DECISION-070
+  Related items: ASSUMPTION-380; standing "traditions are the right unit" structural presumption (see prior structural-presumption cluster)
+  Testability: testable via literature — closed-world vs open-world target ontologies, when self-referential/meta nodes belong in a relational graph, unit-of-analysis choice in network construction.
+  Risk if wrong: Low-Medium — if meta/self targets carry real cross-tradition signal, treating them as flagged-not-clean understates the system's own reflexive connectivity.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-411
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the clean/flagged split keyed to roster membership. [inferred, medium-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-412:
+  Date surfaced: 2026-06-26
+  Statement: [inferred] That deferred pushes converge rather than accumulate — all three of today's interactive sessions closed with substantive local edits "staged and waiting on your local review before push," on top of an already-mixed working tree (this session's architecture files + other agents' lit-search/changelog/daily-sync outputs + the OpenStory fix + stray root SVGs). Each handoff presumes the next session will reconcile and push, but nothing structurally prevents the working tree from diverging across days.
+  Evidence it was operative: repeated "nothing pushed … careful push next session" close-outs; the architecture session explicitly noted the tree "mixes three different streams" requiring per-group triage; handoffs live in gitignored dirs.
+  Why it was unstated: the no-blind-push discipline is correctly honored each session, but the cumulative integration debt across sessions is nobody's single responsibility, so it is never named as a risk.
+  Type: methodological
+  Related decisions: DECISION-068; DECISION-069; DECISION-070
+  Related items: PRESUMPTION-402 (hand-partitioned dirty tree); ASSUMPTION-370 (scoped commits); ASSUMPTION-379; REVISE-148 (staging isolation)
+  Testability: testable via literature — WIP limits, batch size vs integration risk, merge/integration debt, continuous-integration cadence vs long-lived dirty trees.
+  Risk if wrong: Medium — a multi-stream uncommitted tree raises the odds of a mis-scoped or dropped push; it is the cross-session form of the single-session exposure already flagged as PRESUMPTION-402 / REVISE-148.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-412
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three consecutive defer-push close-outs over an already-mixed working tree. [inferred, high-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-413:
+  Date surfaced: 2026-06-26
+  Statement: [inferred] That a fixed-time evening "cowork-to-chat" sync captures "the day's" work — today's sync ran (~18:40 EDT / 22:40 UTC) and concluded "Today (2026-06-26) was an autonomous day — no interactive Cowork session," yet three substantive interactive sessions ran that evening (the OpenStory fix finishing minutes before the sync, the architecture-diagram and Level-2 signal-stream sessions after it). The sync presumes the day's interactive work is complete by its fire time, so a snapshot taken then is "the day."
+  Evidence it was operative: the sync's own summary asserts an autonomous day with no interactive session, while file timestamps and three transcripts show interactive work the same evening; the sync inferred "no session" from the signals available at its fire time rather than detecting late sessions.
+  Why it was unstated: the sync's fire time is treated as the end of the day; the possibility that interactive work continues afterward (or concludes just before the snapshot's data is gathered) is not modeled.
+  Type: methodological
+  Related decisions: (evening cowork-sync task); DECISION-069; DECISION-070
+  Related items: OPEN-097; OPEN-086 family (inferring state from a signal that cannot detect its own miss — the sync's "autonomous day" is a false-negative of exactly this kind, now observed about the self-awareness pipeline's own reporting)
+  Testability: testable via literature — boundary/cutoff effects in periodic reporting, late-arriving data and watermarking in stream processing, defining a "day" for event capture.
+  Risk if wrong: Medium — the daily narrative and the (currently broken) Chat handoff systematically under-report late-day interactive work; an EOD self-awareness artifact mis-classified an attended day as autonomous, a reflexive instance of the system's own liveness/observability gap.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-413
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by cross-checking the evening sync's "autonomous day" claim against three same-evening interactive transcripts and their output-file timestamps. [inferred, high-confidence]
+    Current status: UNTESTED

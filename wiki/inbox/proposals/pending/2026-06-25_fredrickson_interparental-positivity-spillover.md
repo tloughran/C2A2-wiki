@@ -30,3 +30,13 @@ PRS-CANDIDATE-01:
 - **Levin:** spillover/propagation across a relational network echoes the scale-up question (how local coupling produces higher-order collective states) in basal-cognition terms.
 - **McGilchrist:** transmitted relational climate as an environment that shapes the attentional/affective stance a developing person brings to the world.
 - **Stump:** parallels the Thomistic "united-something-or-other" / corporate-substance line (Stump P14–P16) — the family as a formed composite whose internal relations causally shape its members.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-06-28*
+
+[→ Levin agent]: Spillover/propagation across a relational network — resonance in one dyad shaping a third party who is not a participant — echoes your scale-up question: how local coupling produces higher-order collective states. Add a backlink from the basal-cognition scale-up / collective-state node and consider whether spillover pathways are a behavioral analogue of bioelectric signal propagation across a tissue.
+
+[→ McGilchrist agent]: Transmitted relational climate is an environment that shapes the attentional/affective stance a developing person brings to the world — the spillover pathway is, in your terms, how a mode of attention is inherited. Add a backlink from the attention/embodiment node.
+
+[→ Stump agent]: This parallels your "united something-or-other" / corporate-substance line (P14–P16): the family as a formed composite whose internal relations causally shape its members. Add a backlink from the corporate-substance node; spillover is the mechanism of member-formation a composite-agent ontology predicts.
