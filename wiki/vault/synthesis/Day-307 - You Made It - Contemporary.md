@@ -18,7 +18,7 @@ evidence_strength_summary: "The graded-final-states map (damned / limbo / purgat
 mind_first_reframe: "Purgatory, read mind-first, is the perspective that keeps computing past death — being progressively widened until it can bear the vision of the whole; limbo is a perspective complete in its natural good yet not united; heaven is the limit where all limitation is removed and every partial view is contained in the simple whole."
 central_theme_thread: "The whole series has been one long account of exitus and reditus — all perspectives proceeding from and returning to the one whole. The finale names the return explicitly: loving unity is reached not by erasing the limited perspective but by purifying it until it can hold the vision; 'you made it' is the completion of the computation the project has been describing all year."
 tags: [synthesis, day/307, theme/return-and-completion, series/finale]
-last_qc_at: "2026-06-26T10:25:51"
+last_qc_at: "2026-06-28T12:23:05"
 last_qc_outcome: "pass"
 ---
 

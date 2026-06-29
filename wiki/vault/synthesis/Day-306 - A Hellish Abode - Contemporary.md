@@ -17,7 +17,7 @@ evidence_strength_summary: "The fixity-of-the-damned-will is theological/specula
 mind_first_reframe: "Hell, read through mind-first monism, is not a place but a terminal perspective — a dissociative boundary that has stopped updating — so that the 'punishment' is identical with the self-maintained refusal to widen toward the whole; whether such closure can be final is precisely where the theological evidence is weakest and most contested."
 central_theme_thread: "If agents are individuated by the limits of their perspective, hell is the limit-case: a perspective that has made its own limitation permanent. The damnation question is whether the computation toward loving unity can ever be irreversibly abandoned from the inside."
 tags: [synthesis, day/306, theme/terminal-perspective]
-last_qc_at: "2026-06-26T10:25:51"
+last_qc_at: "2026-06-28T12:23:04"
 last_qc_outcome: "pass"
 ---
 
