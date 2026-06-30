@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-131 - The Order of Charity - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/131, pars/2, q/26-27]
-last_qc_at: "2026-06-21T11:33:59"
+last_qc_at: "2026-06-29T12:20:46"
 last_qc_outcome: "pass"
 ---
 

@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-129 - Charity - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/129, pars/2, q/22-23]
-last_qc_at: "2026-06-21T11:33:58"
+last_qc_at: "2026-06-29T12:20:44"
 last_qc_outcome: "pass"
 ---
 

@@ -17,7 +17,7 @@ evidence_strength_summary: "Pride-as-perspective-absolutization = conceptual/str
 mind_first_reframe: "Pride is the self-model not merely mis-calibrated but treating its own constructed vantage as the ground of value and truth — the part claiming to be the whole, the interface-icon mistaken for the real, the agent 'relying on itself in contempt of the order' that constitutes it. This is why it is the FIRST sin: it is the formal structure (self over whole) that every other vice fills in with content."
 central_theme_thread: "Pride is the exact inversion of the project's central claim. If agents are individuated by perspective-limitation and salvation is the limited agent computing toward loving unity under guidance from those who see more, pride is the limited agent refusing that guidance and absolutizing its own vantage — 'you will be like God,' deciding good and evil by oneself."
 tags: [synthesis, day/199, theme/perspective-absolutization]
-last_qc_at: "2026-06-21T11:37:10"
+last_qc_at: "2026-06-29T16:19:32"
 last_qc_outcome: "pass"
 ---
 
