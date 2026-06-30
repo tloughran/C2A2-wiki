@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prepare the pair, then read the outcome — an interaction between traditions</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --bg:#0a0a0f; --panel:#101019; --panel2:#14141f; --line:#20202c; --line2:#2e2e40;
+    --ink:#d8d8e0; --ink2:#b8b8c4; --mut:#8a8a9a;
+    --gold:#C9A84C; --build:#5A8EAF; --read:#C08B3E; --chan:#3D9E89; --warn:#C45B5B;
+  }
+  html,body{ background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; -webkit-font-smoothing:antialiased; }
+  body{ padding:0 0 80px; line-height:1.5; }
+  .wrap{ max-width:1180px; margin:0 auto; padding:0 22px; }
+
+  header.page-head{ padding:38px 0 10px; }
+  .eyebrow{ color:#6a604e; font-size:11px; letter-spacing:2px; text-transform:uppercase; margin-bottom:9px; }
+  h1{ font-family:Georgia,"Times New Roman",serif; color:var(--gold); font-size:24px; font-weight:700; margin-bottom:11px; }
+  .lede{ font-size:14.5px; color:var(--ink2); max-width:900px; }
+  .lede b{ color:var(--ink); }
+
+  .tabs{ display:flex; gap:7px; margin:18px 0 0; flex-wrap:wrap; }
+  .tab{ flex:0 0 auto; background:var(--panel); border:1px solid var(--line2); border-bottom:none;
+    border-radius:9px 9px 0 0; padding:9px 15px; cursor:pointer; color:var(--ink2);
+    font-size:13px; font-weight:600; transition:color .12s,background .12s,border-color .12s; }
+  .tab .sub{ display:block; font-size:10px; font-weight:400; color:var(--mut); margin-top:2px; }
+  .tab:hover{ color:var(--ink); }
+  .tab.active{ background:var(--panel2); color:#fff; box-shadow:inset 0 3px 0 var(--ac,var(--gold)); border-color:var(--ac,var(--gold)); }
+  .tabsep{ border-top:1px solid var(--line2); margin-bottom:2px; }
+
+  .controls{ display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+    margin:14px 0 6px; padding:10px 12px; background:var(--panel); border:1px solid var(--line); border-radius:10px; }
+  .btn{ background:var(--bg); border:1px solid var(--line2); color:var(--ink); border-radius:7px; cursor:pointer;
+    font-size:13px; padding:7px 13px; transition:color .12s,border-color .12s,background .12s; white-space:nowrap; }
+  .btn:hover{ border-color:var(--build); }
+  .btn.primary{ background:#15212c; border-color:#345; color:#cfe6f4; font-weight:600; }
+  .btn.primary:hover{ border-color:var(--build); background:#182838; }
+  .counter{ font-size:13px; color:var(--mut); margin-left:auto; }
+  .counter b{ color:var(--gold); font-variant-numeric:tabular-nums; }
+  .speed{ font-size:12px; color:var(--mut); display:flex; align-items:center; gap:6px; }
+  .speed input{ accent-color:var(--build); }
+
+  .legend{ display:flex; flex-wrap:wrap; gap:8px 16px; margin:10px 2px 0; font-size:12px; color:var(--ink2); }
+  .legend .sw{ display:inline-flex; align-items:center; gap:6px; }
+  .dot{ width:10px; height:10px; border-radius:3px; }
+
+  .stage{ position:relative; margin-top:14px; padding:6px 0 2px; }
+  .connector{ position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:5; overflow:visible; }
+  .tip{ position:absolute; z-index:6; transform:translate(-50%,-100%); pointer-events:none;
+    background:#1b1b27; border:1px solid var(--c,var(--gold)); border-radius:7px; padding:5px 10px;
+    font-size:11.5px; color:#f0f0f6; white-space:nowrap; box-shadow:0 6px 20px rgba(0,0,0,.5);
+    opacity:0; transition:opacity .15s; max-width:400px; overflow:hidden; text-overflow:ellipsis; }
+  .tip.show{ opacity:1; }
+  .tip::after{ content:""; position:absolute; left:50%; bottom:-5px; transform:translateX(-50%) rotate(45deg);
+    width:8px; height:8px; background:#1b1b27; border-right:1px solid var(--c,var(--gold)); border-bottom:1px solid var(--c,var(--gold)); }
+
+  .rowlab{ display:flex; align-items:baseline; gap:9px; margin:0 0 9px; }
+  .rowlab .big{ font-family:Georgia,serif; font-size:13.5px; font-weight:700; color:var(--ink); }
+  .rowlab .small{ font-size:12px; color:var(--mut); }
+  .timeline{ display:flex; gap:0; align-items:center; overflow-x:auto; padding:20px 2px 6px; }
+  .pnode{ position:relative; flex:0 0 auto; width:22px; height:22px; border-radius:6px;
+    background:var(--panel2); border:1px solid var(--line2); border-bottom:3px solid var(--c,#444);
+    color:var(--ink2); font-size:10.5px; font-weight:700; display:flex; align-items:center; justify-content:center;
+    cursor:pointer; transition:transform .15s, box-shadow .15s, background .15s, opacity .15s; }
+  .pnode:hover{ transform:translateY(-2px); }
+  .pgap{ flex:0 0 auto; width:7px; height:1px; background:var(--line2); opacity:.5; }
+  .pnode.on{ transform:scale(1.5); background:#1c1c28; box-shadow:0 0 0 2px var(--c), 0 0 16px -2px var(--c); color:#fff; z-index:3; }
+  .pnode.dimact{ opacity:.34; }
+  .pnode .lp{ position:absolute; top:-8px; right:-7px; font-size:10px; color:var(--gold); }
+  .actmark{ flex:0 0 auto; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:var(--mut);
+    padding:0 8px; white-space:nowrap; }
+
+  .schemwrap{ margin-top:6px; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:6px 8px 2px; }
+  svg.schem{ width:100%; height:auto; display:block; }
+  .sv-beam{ stroke:#33333f; stroke-width:3; fill:none; transition:stroke .2s; }
+  .sv-beam.on{ stroke:var(--read); stroke-width:4; }
+  .sv-gate{ fill:var(--panel2); stroke:var(--line2); stroke-width:1.5; cursor:pointer; transition:fill .2s, stroke .2s; }
+  .sv-gate.done{ stroke:var(--build); }
+  .sv-gate.on{ fill:#1a2a36; stroke:var(--build); stroke-width:2.5; }
+  .sv-gnum{ fill:var(--ink2); font-size:10px; font-weight:700; text-anchor:middle; dominant-baseline:central; pointer-events:none; }
+  .sv-lab{ fill:var(--mut); font-size:8.5px; text-anchor:middle; pointer-events:none; }
+  .sv-arm{ fill:var(--mut); font-size:11px; font-weight:600; }
+  .mma-bar{ fill:none; stroke:var(--gold); stroke-width:1.5; rx:5; opacity:.5; transition:fill .25s, opacity .25s; }
+  .mma-bar.green{ fill:rgba(61,158,137,.22); stroke:var(--chan); opacity:1; }
+  .mma-lab{ fill:var(--mut); font-size:9.5px; }
+  .mma-lab.green{ fill:var(--chan); }
+  .sv-node{ fill:var(--panel2); stroke:var(--line2); stroke-width:1.5; cursor:pointer; transition:fill .2s, stroke .2s; }
+  .sv-node.on{ fill:#1a2a36; stroke:var(--build); stroke-width:2.5; }
+  .sv-nlab{ fill:var(--ink2); font-size:9.5px; text-anchor:middle; pointer-events:none; }
+  #armB circle{ cursor:pointer; }
+  #armB.on circle{ fill:#1a2a36; stroke:var(--build); stroke-width:2.5; }
+
+  .ip{ fill:#1a1a26; stroke:#444; stroke-width:1.5; cursor:pointer; transition:fill .2s, stroke .2s; }
+  .ip.on{ fill:#3a2030; stroke:var(--warn); stroke-width:2.5; }
+  .ring{ fill:none; stroke:#33333f; stroke-width:2; cursor:pointer; transition:stroke .2s, stroke-width .2s; }
+  .ring.on{ stroke:var(--read); stroke-width:3.5; }
+  .ring-lab{ fill:var(--mut); font-size:9px; pointer-events:none; }
+  .ring-lab.on{ fill:var(--read); }
+  .wedge{ fill:#15151f; stroke:#2a2a3a; stroke-width:1.5; cursor:pointer; transition:fill .18s, stroke .18s; }
+  .wedge:hover{ fill:#1d1d29; }
+  .wedge.lit{ fill:rgba(61,158,137,.30); stroke:var(--chan); stroke-width:2.5; }
+  .wedge.certified{ fill:rgba(61,158,137,.16); stroke:var(--chan); }
+  .wlabel{ font-size:9.5px; fill:var(--ink2); pointer-events:none; }
+  .wlabel.lit{ fill:#dff0ea; font-weight:700; }
+  .qmark{ fill:var(--gold); font-size:11px; font-weight:700; text-anchor:middle; dominant-baseline:central; pointer-events:none; }
+  .qdot{ fill:#1b1b27; stroke:var(--gold); stroke-width:1.2; cursor:pointer; }
+  .outcaption{ fill:var(--mut); font-size:9px; text-anchor:middle; font-style:italic; }
+  .outcaption.on{ fill:var(--chan); font-style:normal; }
+  .certtag{ font-size:10px; font-weight:700; fill:var(--mut); text-anchor:middle; transition:fill .2s; }
+  .certtag.on{ fill:var(--chan); }
+
+  .rrow{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin:12px 0 2px; }
+  .rrow .lab{ flex:0 0 150px; font-family:Georgia,serif; font-size:12.5px; font-weight:700; color:var(--ink2); }
+  .rrow .lab .s{ display:block; font-size:10px; font-weight:400; color:var(--mut); font-family:inherit; }
+  .pill{ background:var(--panel2); border:1px solid var(--line2); border-radius:8px; padding:8px 12px;
+    font-size:12px; color:var(--ink2); transition:box-shadow .15s, background .15s, border-color .15s; cursor:default; }
+  .pill .sub{ display:block; font-size:9.5px; color:var(--mut); margin-top:2px; }
+  .pill.mma{ border-color:var(--gold); }
+  .pill.mma.green{ border-color:var(--chan); background:rgba(61,158,137,.14); color:#dff0ea; }
+  .pill.mma.green .sub{ color:var(--chan); }
+  .gate-and{ font-family:Georgia,serif; font-weight:700; color:var(--mut); border:1px dashed var(--line2);
+    border-radius:8px; padding:8px 12px; font-size:12px; transition:color .2s, border-color .2s, background .2s; }
+  .gate-and.open{ color:#11100a; background:var(--gold); border-style:solid; border-color:var(--gold); }
+
+  #card{ margin-top:16px; background:var(--panel); border:1px solid var(--line);
+    border-left:4px solid var(--c,var(--gold)); border-radius:11px; padding:16px 20px; min-height:118px; }
+  #card .top{ display:flex; align-items:center; gap:10px; margin-bottom:5px; flex-wrap:wrap; }
+  #card .stepno{ font-family:Georgia,serif; font-size:12px; letter-spacing:.5px; text-transform:uppercase; color:var(--mut); }
+  #card .badge{ font-size:10px; letter-spacing:.4px; text-transform:uppercase; padding:2px 9px; border-radius:4px; color:#11100a; font-weight:700; }
+  #card .badge.loop{ background:none; border:1px solid var(--gold); color:var(--gold); }
+  #card .badge.dual{ background:none; border:1px solid var(--chan); color:var(--chan); }
+  #card h3{ font-size:18px; color:#f0f0f6; font-weight:600; margin:2px 0 8px; }
+  #card .det{ font-size:14px; color:#c8c8d2; max-width:900px; }
+  #card .det em{ color:#e4e4ec; }
+  #card .hep{ font-size:13px; color:#9a9aa8; margin-top:9px; padding-top:9px; border-top:1px solid var(--line); max-width:900px; }
+  #card .hep b{ color:#c8b88a; }
+  #card .hep .lbl{ color:var(--mut); text-transform:uppercase; font-size:10px; letter-spacing:1px; display:block; margin-bottom:3px; }
+
+  /* outcome pop-out */
+  .po-backdrop{ position:fixed; inset:0; background:rgba(4,4,8,.55); z-index:40; display:none; }
+  .po-backdrop.show{ display:block; }
+  .popout{ position:fixed; z-index:41; left:50%; top:50%; transform:translate(-50%,-50%);
+    width:min(520px,90vw); max-height:80vh; overflow:auto; display:none;
+    background:var(--panel2); border:1px solid var(--chan); border-radius:12px; padding:20px 22px 22px;
+    box-shadow:0 18px 60px rgba(0,0,0,.6); }
+  .popout.show{ display:block; }
+  .popout .po-x{ position:absolute; top:10px; right:12px; background:none; border:none; color:var(--mut);
+    font-size:20px; line-height:1; cursor:pointer; }
+  .popout .po-x:hover{ color:var(--ink); }
+  .popout .po-kicker{ font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:var(--chan); margin-bottom:4px; }
+  .popout h4{ font-family:Georgia,serif; font-size:19px; color:#dff0ea; margin-bottom:10px; }
+  .popout .po-sec{ font-size:13.5px; color:#cdcdd6; margin:10px 0; }
+  .popout .po-sec b{ color:#e8e8ee; }
+  .popout .po-lbl{ display:block; font-size:10px; text-transform:uppercase; letter-spacing:1px; color:var(--mut); margin-bottom:3px; }
+  .popout .po-src{ margin-top:14px; padding-top:10px; border-top:1px solid var(--line); font-size:11px; color:#5a5a70; }
+
+  details.glossary{ margin-top:18px; background:var(--panel); border:1px solid var(--line); border-radius:10px; }
+  details.glossary summary{ list-style:none; cursor:pointer; padding:12px 16px; font-size:13px; font-weight:700; color:var(--gold); font-family:Georgia,serif; }
+  details.glossary summary::-webkit-details-marker{ display:none; }
+  details.glossary summary::before{ content:"\25B8  "; color:var(--mut); }
+  details.glossary[open] summary::before{ content:"\25BE  "; }
+  details.glossary .gbody{ padding:2px 18px 16px; columns:2; column-gap:30px; }
+  details.glossary p{ font-size:12.5px; color:#c8c8d2; margin:7px 0; break-inside:avoid; line-height:1.45; }
+  details.glossary p b{ color:var(--gold); }
+  details.glossary p span{ color:var(--mut); }
+  @media (max-width:640px){ details.glossary .gbody{ columns:1; } }
+
+  .foot{ margin-top:22px; font-size:11.5px; color:#5a5a70; max-width:900px; }
+  .foot code{ color:#6a6a80; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="page-head">
+    <div class="eyebrow">C2A2 · Dialectical Engagement of Traditions</div>
+    <h1>Prepare the pair, then read the outcome</h1>
+    <p class="lede">The Pilot in two acts. <b>Act 1 (steps 1&ndash;12)</b> prepares <b>two</b> traditions for
+      interaction: each assembles its <b style="color:var(--gold)">Mature Member Agreement</b> as the standard,
+      builds and aligns its tests, and forms a 2FL speaker. <b>Act 2 (steps 13&ndash;18)</b> interacts the pair once
+      and reads the result, classifying it into one of five outcome types. The measure is never the speaker &mdash; it
+      is the MMA, and a reading carries cross&#8209;tradition force only when <b style="color:var(--chan)">both</b>
+      standards concur. Click any stage to inspect it; click an outcome's <b style="color:var(--gold)">?</b> for what
+      it means. Each step's card carries an optional physics analogue.</p>
+  </header>
+
+  <div class="tabs" id="tabs"></div>
+  <div class="tabsep"></div>
+
+  <div class="controls">
+    <button class="btn primary" id="play">&#9654; Play</button>
+    <button class="btn" id="prev">&#9664; Prev</button>
+    <button class="btn" id="next">Next &#9654;</button>
+    <button class="btn" id="restart">&#8634; Restart</button>
+    <label class="speed">slow <input type="range" id="speed" min="700" max="2600" value="1500" step="100"> fast</label>
+    <span class="counter">step <b id="cnum">&mdash;</b> / 18</span>
+  </div>
+  <div class="legend">
+    <span class="sw"><span class="dot" style="background:var(--build)"></span>Act 1 &mdash; prepare the pair</span>
+    <span class="sw"><span class="dot" style="background:var(--read)"></span>Act 2 &mdash; interact &amp; read</span>
+    <span class="sw"><span class="dot" style="background:var(--gold)"></span>MMA &mdash; the standard / measure</span>
+    <span class="sw"><span class="dot" style="background:var(--chan)"></span>Dual-MMA concurrence &middot; outcome</span>
+    <span class="sw" style="color:var(--gold)">&#8634; calibration loop</span>
+  </div>
+
+  <div class="stage" id="stage">
+    <svg class="connector" id="connector">
+      <path id="cpath" fill="none" stroke-width="2.5" stroke-dasharray="6 5"></path>
+    </svg>
+    <div class="tip" id="tip"></div>
+
+    <div class="rowlab"><span class="big">The 18 Pilot steps</span><span class="small">Act 1 prepares the pair (1&ndash;12) &middot; Act 2 interacts &amp; reads the outcome (13&ndash;18) &middot; &#8634; calibration loops</span></div>
+    <div class="timeline" id="timeline"></div>
+
+    <div class="schemwrap">
+      <svg class="schem" id="schem" viewBox="0 0 1180 400" preserveAspectRatio="xMidYMid meet">
+        <!-- built by JS -->
+      </svg>
+    </div>
+
+    <div class="rrow" id="rowMMA">
+      <span class="lab">The two standards<span class="s">dual-MMA &mdash; the measure</span></span>
+      <span class="pill mma" id="pillA">MMA &middot; Tradition A<span class="sub">assembled at step 1</span></span>
+      <span class="gate-and" id="andgate">AND</span>
+      <span class="pill mma" id="pillB">MMA &middot; Tradition B<span class="sub">assembled at step 9</span></span>
+      <span style="font-size:11px;color:var(--mut);font-style:italic">both green &rarr; a reading carries cross-tradition force</span>
+    </div>
+  </div>
+
+  <div id="card"></div>
+
+  <details class="glossary">
+    <summary>Glossary</summary>
+    <div class="gbody">
+      <p><b>DET</b> &mdash; Dialectical Engagement of Traditions <span>(the algorithm dramatized here; steps 1&ndash;18 = the Pilot)</span></p>
+      <p><b>C2A2</b> &mdash; Community Context for AI Alignment</p>
+      <p><b>MMA</b> &mdash; Mature Member Agreement <span>(the virtuous mature members of a tradition, together, are its standard or <em>measure</em> &mdash; Aristotle: the good person is the measure. It endures through an interaction; a 2FL speaker's reaction is evidence read <em>against</em> it, never itself the measure)</span></p>
+      <p><b>Dual MMA</b> <span>(a 2FL speaker's reaction carries cross-tradition force only when <em>both</em> traditions' MMAs concur &mdash; bilateral certification, which overcomes the incommensurability/relativism challenge)</span></p>
+      <p><b>PRS</b> &mdash; Problem&ndash;Resource&ndash;Solution <span>(the triplet each of a tradition's claims is traced through)</span></p>
+      <p><b>CCI</b> &mdash; Community Concept Inventory <span>(a plain-language test of the fundamental concepts of maturity, after the Force Concept Inventory)</span></p>
+      <p><b>AT</b> (ATs) &mdash; Application Test <span>(deploys those concepts in wider, harder contexts)</span></p>
+      <p><b>FL / 1FL</b> &mdash; First Language <span>(a mature member <em>is</em>, by definition, a first-language speaker of their <em>home</em> tradition)</span></p>
+      <p><b>2FL</b> &mdash; Second-First-Language <span>(a 1FL speaker also formed to mature competence in a second tradition)</span></p>
+    </div>
+  </details>
+
+  <p class="foot">DET step text re-sourced from the verified <code>Four Models of Cultural Exchange</code> (ISME 2022).
+    Outcome definitions and dissemination responses are the paper's own (paras on the seventh and ninth interaction
+    steps). Physics analogues appear only in each step's card and are interpretive unless marked as the paper's own.
+    Self-contained.</p>
+
+</div>
+
+<!-- outcome pop-out -->
+<div class="po-backdrop" id="poBackdrop"></div>
+<div class="popout" id="poWin">
+  <button class="po-x" id="poX" aria-label="Close">&times;</button>
+  <div class="po-kicker">Outcome type &middot; Four Models (ISME 2022)</div>
+  <h4 id="poTitle"></h4>
+  <div class="po-sec"><span class="po-lbl">What it is</span><span id="poDef"></span></div>
+  <div class="po-sec"><span class="po-lbl">What follows (dissemination)</span><span id="poDiss"></span></div>
+  <div class="po-src">Source: Loughran, &ldquo;Four Models of Cultural Exchange: Aesthetic, Moral, Prescientific and Sapiential&rdquo; (ISME 2022).</div>
+</div>
+
+<script>
+"use strict";
+
+// ---- the five outcome types: definitions + dissemination, from the Four Models paper ----
+const OUT5=[
+  {key:"intractable", name:"Intractable disagreement", short:"Intractable",
+   def:"The interaction, though thorough, yields an intractable disagreement: no agreed resolution is reached.",
+   diss:"The certified result is promulgated to <b>awareness</b> among the rival traditions."},
+  {key:"conversion", name:"Conversion", short:"Conversion",
+   def:"An occasion of conversion of one member to their rival tradition.",
+   diss:"Promulgated to <b>cooperation</b> on efforts to repeat, further explore, and perhaps collaborate on educational efforts."},
+  {key:"complementary", name:"Complementary", short:"Complementary",
+   def:"Complementary ways of looking at the world, which both seem true and yet not the same.",
+   diss:"Promulgated to <b>articulation and explanation</b> of the relevant merits of each perspective, and a possible basis for collaboration."},
+  {key:"transformative", name:"Transformative", short:"Transformative",
+   def:"Actually or potentially transformative toward the articulation of some new tradition &mdash; one just as much a continuation from one rival tradition as the other.",
+   diss:"Promulgated to <b>collaboration</b> on further development of the integrated new perspective."},
+  {key:"incomplete", name:"Incomplete", short:"Incomplete",
+   def:"Incomplete &mdash; either an expected permanent state of affairs, or one in which further work might be specified, undertaken, and become the basis for future, more productive discussions.",
+   diss:"Promulgated to that result, or to <b>efforts to better prepare</b> the traditions for a next attempt, depending on the grounds for optimism articulated."}
+];
+
+// ---- the 18 Pilot steps: DET text re-sourced from the paper; analogue (a) is card-only ----
+const STEPS=[
+  {n:1, act:1, target:"gA1", cap:"mature members identified", t:"Identify a pool of mature members of a first tradition",
+   d:"Recruit ~half a dozen members who recognize one another as mature. That mutual recognition is the Mature Member Agreement (MMA): what they agree to <em>is</em> the tradition, for evidentiary purposes.",
+   a:"Assembling a known, gold-standard reference sample &mdash; the 'known-good' set every later measurement is judged against."},
+  {n:2, act:1, target:"gA2", cap:"PRS triplet history", t:"Prepare a problem-resource-solution (PRS) triplet history",
+   d:"Elicit the tradition's primary claims &mdash; so central that anyone rejecting them would not count as mature &mdash; and trace each as a solution to a problem using known resources.",
+   a:"Writing down the signatures you expect to see &mdash; the prediction set the apparatus must be able to register."},
+  {n:3, act:1, target:"gA3", cap:"CCI + ATs designed", t:"Design a concept inventory (CCI) and application tests (ATs)",
+   d:"A plain-language inventory of the fundamental concepts of maturity (after the Force Concept Inventory), plus tests that deploy them in wider, harder contexts.",
+   a:"Designing the measuring instruments: the paper itself calls the CCI and ATs the 'detectors.'"},
+  {n:4, act:1, target:"gA4", loop:1, t:"Align the CCI and ATs with mature member agreement",
+   cap:"align tests to MMA",
+   d:"Run known-mature members through the tests. If they don't pass, the <em>tests</em> are wrong, not the members. Reconfigure until all and only mature members pass.",
+   a:"<b>Test beam.</b> Send members of known status (mature) through the detectors (CCI and ATs); if a known-good member fails, fix the test, not the member.", ap:1},
+  {n:5, act:1, target:"gA5", cap:"reproduce known results", t:"Validate the test complex against known results",
+   d:"Apply the whole battery (MMA, CCI, ATs) to reproduce what the tradition already knows; certify it once it reliably recovers established results.",
+   a:"<b>'Rediscovering the Standard Model.'</b> A working instrument must first re-find what the tradition already knows before any new claim is trusted.", ap:1},
+  {n:6, act:1, target:"gA6", cap:"backward-design curriculum", t:"Backward-design a curriculum to produce maturity",
+   d:"Fix the observable indicators of maturity, build tests around them, then design a curriculum to produce those results &mdash; teaching to the right, mutually-validated tests.",
+   a:"Engineering the source that produces members to spec &mdash; the curriculum is the production pipeline."},
+  {n:7, act:1, target:"gA7", loop:1, t:"Test the curriculum on second-tradition students; iterate",
+   cap:"test curriculum, iterate",
+   d:"Run students through the curriculum, adjusting the MMA/CCI/AT instruments until passing rates are achieved; the first tradition's mature members then certify it.",
+   a:"Commissioning and tuning against live input &mdash; iterating until the response is stable and reliable."},
+  {n:8, act:1, target:"gA8", cap:"tradition certified", t:"Certify the tradition as measurably defined",
+   d:"The tradition is now certified as measurably defined, poised for growth, and ready to interact with its pilot rival. This completes the eight steps that prepare one tradition.",
+   a:"Commissioning sign-off &mdash; the instrument is declared ready to take data."},
+  {n:9, act:1, target:"armB", cap:"second tradition (repeat 1-8)", t:"Repeat steps 1-8 for the second pilot tradition",
+   d:"Run the whole sequence for the second tradition &mdash; early steps in series so lessons transfer, later steps in parallel with cross-talk between the teams.",
+   a:"A collider needs two beams: build and commission the second arm, transferring calibration know-how from the first."},
+  {n:10, act:1, target:"nReady", cap:"pair certified ready", t:"Certify the pair as ready to interact",
+   d:"Both traditions finish internal certification, then jointly certify that the pair is prepared to interact &mdash; compressing a 'Herculean effort' of possibly centuries to a year or two.",
+   a:"Readiness review &mdash; both arms integrated and cleared for first interaction."},
+  {n:11, act:1, target:"nDAQ", cap:"begin capture", t:"Begin capturing information for curation &amp; dissemination",
+   d:"Turn on systematic capture for every subsequent step. Something special begins: watching two quantifiably-certified traditions meet.",
+   a:"Switching on data acquisition &mdash; record every event from here on; nothing observed counts if it isn't captured."},
+  {n:12, act:1, target:"nAcc", cap:"select/train 2FL speakers", t:"Select, train &amp; introduce second-first-language speakers",
+   d:"Form members who are already first-language (mature) in their <em>home</em> tradition to 2FL competency in the rival &mdash; ending in dual certification. For perhaps the first time, two people reach maximal informed contact with both traditions.",
+   a:"Accelerate and focus the beams &mdash; bring the prepared members to the energy and focus where a real interaction can occur."},
+  {n:13, act:2, target:"ipDot", cap:"first exchange", t:"Begin exchanging perspectives",
+   d:"The mutually-informed representatives exchange perspectives in series, each articulating their own then the other's PRS triplets, iterating until they agree on the meaning of both.",
+   a:"First collisions &mdash; establish that the two actually meet, and that the interaction point can be reconstructed."},
+  {n:14, act:2, target:"ring14", cap:"advance narratives", t:"Advance the PRS narratives by mutual suggestion",
+   d:"Each narrative is advanced through the conversation, the home tradition's mature members judging what counts as advancement. The product is the best account of each tradition yet formulated.",
+   a:"Raising resolution &mdash; pushing for the clearest, most precise picture each account can currently yield."},
+  {n:15, act:2, target:"ring15", cap:"verdicts", t:"Exchange verdicts on each tradition",
+   d:"The optimally-informed pair exchange verdicts: we now agree; or no clear basis yet but it might be rectified; or no grounds for optimism; or a path toward one coherent account.",
+   a:"Reconstruction and readout &mdash; each instrument reports its verdict on what happened in the interaction."},
+  {n:16, act:2, target:"ring16", dual:1, cap:"reconcile", t:"Reconcile verdicts into thus-far-stable outcomes",
+   d:"The mature members exchange perspectives on one another's verdicts and announce them as thus-far-stable outcomes. The result holds only when <em>both</em> standards concur.",
+   a:"Cross-checking independent measurements before a result is declared &mdash; the two standards must agree (the ATLAS+CMS cross-confirmation spirit)."},
+  {n:17, act:2, target:"outRing", cap:"identify outcome type", t:"Identify the outcome type",
+   d:"Classify the interaction into exactly one of five types: intractable disagreement; conversion; complementary; transformative; or incomplete. Click any type's <b>?</b> for what it means.",
+   a:"Channel classification &mdash; sorting the event into exactly one of the catalogued outcome types."},
+  {n:18, act:2, target:"outRing", cap:"certify outcome", t:"Certify the outcome type and artifacts",
+   d:"The mature members certify their agreement on the type of outcome and on the artifacts the interaction produced.",
+   a:"Significance and review &mdash; nothing counts as a result until it clears the bar and is certified."}
+];
+const N=STEPS.length;
+let cur=-1, timer=null, period=1500, wedgeTimer=null, litWedge=-1;
+
+// ---------- SVG helpers ----------
+const SVGNS="http://www.w3.org/2000/svg";
+const schem=document.getElementById('schem');
+function mk(tag, attrs, parent){ const e=document.createElementNS(SVGNS,tag);
+  for(const k in attrs){ e.setAttribute(k, attrs[k]); }
+  if(typeof parent==='string'){ e.textContent=parent; parent=schem; }
+  (parent||schem).appendChild(e); return e; }
+function mkt(attrs, text, parent){ const e=mk('text', attrs, parent); e.textContent=text; return e; }
+function polar(cx,cy,r,deg){ const a=deg*Math.PI/180; return [cx+r*Math.cos(a), cy+r*Math.sin(a)]; }
+
+// ---------- geometry ----------
+const AY=100, BY=300, GX0=120, GDX=52, ARMEND=GX0+7*GDX+18;
+const AXY=200, MERGE_X=560, READY=620, DAQ=672, ACC=724;
+const CX=950, CY=200, RI=8, R14=36, R15=66, R16=96, ROin=112, ROout=158;
+
+// beams
+mk('path',{id:"armAline", class:"sv-beam", d:"M 70 "+AY+" H "+ARMEND});
+mk('path',{id:"armBline", class:"sv-beam", d:"M 70 "+BY+" H "+ARMEND});
+mk('path',{class:"sv-beam", d:"M "+ARMEND+" "+AY+" L "+MERGE_X+" "+AXY});
+mk('path',{class:"sv-beam", d:"M "+ARMEND+" "+BY+" L "+MERGE_X+" "+AXY});
+mk('path',{class:"sv-beam", d:"M "+MERGE_X+" "+AXY+" H "+(ACC+18)});
+mk('path',{id:"beamHot", class:"sv-beam", d:"M "+(ACC+18)+" "+AXY+" H "+(CX-ROout)});
+
+mkt({class:"sv-arm", x:30, y:AY-18},"Arm A");
+mkt({class:"sv-arm", x:30, y:BY+28},"Arm B");
+
+// MMA bars
+mk('rect',{id:"mmaA", class:"mma-bar", x:GX0-18, y:AY-46, width:7*GDX+36, height:15, rx:5});
+mkt({id:"mmaAlab", class:"mma-lab", x:GX0-14, y:AY-51},"MMA · Tradition A  —  the standard");
+mk('rect',{id:"mmaB", class:"mma-bar", x:GX0-18, y:BY+32, width:7*GDX+36, height:15, rx:5});
+mkt({id:"mmaBlab", class:"mma-lab", x:GX0-14, y:BY+59},"MMA · Tradition B  —  the standard");
+
+// arm A gates 1-8 (clickable). Short staggered labels so they don't collide.
+const gtag=["members","PRS history","CCI + ATs","align/MMA","validate","curriculum","test+iter","certify"];
+for(let k=1;k<=8;k++){ const cx=GX0+(k-1)*GDX;
+  const c=mk('circle',{id:"gA"+k, class:"sv-gate", cx:cx, cy:AY, r:11});
+  c.addEventListener('click', ()=>{ stop(); go(k-1); });
+  mkt({class:"sv-gnum", x:cx, y:AY},""+k);
+  mkt({class:"sv-lab", x:cx, y:(k%2? AY+24 : AY+37)}, gtag[k-1]);
+  if(k===4||k===7){ mkt({class:"sv-lab", x:cx+11, y:AY-12, style:"fill:var(--gold)"},"↻"); }
+}
+// arm B group (step 9)
+const armB=mk('g',{id:"armB"});
+for(let k=1;k<=8;k++){ const cx=GX0+(k-1)*GDX;
+  mk('circle',{class:"sv-gate", cx:cx, cy:BY, r:11}, armB);
+  mkt({class:"sv-gnum", x:cx, y:BY, style:"fill:var(--mut)"},"·", armB); }
+mkt({class:"sv-lab", x:GX0+3.5*GDX, y:BY-20},"9 · repeat steps 1–8 for the second tradition", armB);
+armB.addEventListener('click', ()=>{ stop(); go(8); });
+
+// prep nodes 10/11/12
+function prepNode(id,x,num,lab,stepIdx){
+  const r=mk('rect',{id:id, class:"sv-node", x:x-24, y:AXY-15, width:48, height:30, rx:7});
+  r.addEventListener('click', ()=>{ stop(); go(stepIdx); });
+  mkt({class:"sv-nlab", x:x, y:AXY-2},num);
+  mkt({class:"sv-nlab", x:x, y:AXY+10, style:"fill:var(--mut)"},lab);
+}
+prepNode("nReady",READY,"10","ready",9);
+prepNode("nDAQ",DAQ,"11","capture",10);
+prepNode("nAcc",ACC,"12","2FL",11);
+
+// onion = Act 2. center IP dot (13) + rings (14,15,16) + outer outcome ring (17)
+const ipDot=mk('circle',{id:"ipDot", class:"ip", cx:CX, cy:CY, r:RI});
+ipDot.addEventListener('click', ()=>{ stop(); go(12); });
+function ring(id,r,lab,stepIdx){
+  const c=mk('circle',{id:id, class:"ring", cx:CX, cy:CY, r:r});
+  c.addEventListener('click', ()=>{ stop(); go(stepIdx); });
+  mkt({id:id+"lab", class:"ring-lab", x:CX, y:CY-r+11, "text-anchor":"middle"}, lab);
+}
+ring("ring14",R14,"advance",13);
+ring("ring15",R15,"verdicts",14);
+ring("ring16",R16,"reconcile",15);
+mkt({class:"sv-nlab", x:CX, y:CY+2, style:"fill:var(--mut);font-size:8px"},"13");
+
+// outer outcome ring (17): annulus split into 5 wedges (disjunctive)
+const outG=mk('g',{id:"outRing"});
+const wedgeEls=[];
+for(let i=0;i<5;i++){
+  const a0=-126+i*72, a1=-54+i*72, mid=-90+i*72;
+  const [x1,y1]=polar(CX,CY,ROin,a0), [x2,y2]=polar(CX,CY,ROout,a0);
+  const [x3,y3]=polar(CX,CY,ROout,a1), [x4,y4]=polar(CX,CY,ROin,a1);
+  const d="M "+x2+" "+y2+" A "+ROout+" "+ROout+" 0 0 1 "+x3+" "+y3+
+          " L "+x4+" "+y4+" A "+ROin+" "+ROin+" 0 0 0 "+x1+" "+y1+" Z";
+  const w=mk('path',{class:"wedge", d:d, "data-i":i}, outG);
+  w.addEventListener('click', (e)=>{ e.stopPropagation(); openPopout(i); });
+  wedgeEls.push(w);
+  // label outside the wedge
+  const [lx,ly]=polar(CX,CY,ROout+16,mid);
+  const anchor = Math.cos(mid*Math.PI/180) > 0.25 ? "start" : (Math.cos(mid*Math.PI/180) < -0.25 ? "end" : "middle");
+  const wl=mk('text',{class:"wlabel", x:lx, y:ly+3, "text-anchor":anchor, "data-i":i}, outG);
+  wl.textContent=OUT5[i].short;
+  // "?" badge at mid radius
+  const [qx,qy]=polar(CX,CY,(ROin+ROout)/2,mid);
+  const qd=mk('circle',{class:"qdot", cx:qx, cy:qy, r:8, "data-i":i}, outG);
+  qd.addEventListener('click', (e)=>{ e.stopPropagation(); openPopout(i); });
+  mkt({class:"qmark", x:qx, y:qy},"?", outG);
+}
+mkt({id:"outCaption", class:"outcaption", x:CX, y:CY+ROout+30},"17 · binned into exactly one — which one is empirical, not asserted here");
+
+// ---------- ruler ----------
+const tl=document.getElementById('timeline');
+STEPS.forEach((s,i)=>{
+  if(i>0){ const g=document.createElement('div'); g.className='pgap'; tl.appendChild(g);
+    if(STEPS[i-1].act!==s.act){ const m=document.createElement('span'); m.className='actmark'; m.textContent='interact ▸'; tl.appendChild(m); } }
+  const nd=document.createElement('div');
+  nd.className='pnode'; nd.dataset.i=i;
+  nd.style.setProperty('--c', s.act===1?'var(--build)':'var(--read)');
+  nd.innerHTML=s.n+(s.loop?'<span class="lp">↻</span>':'');
+  nd.addEventListener('click', ()=>{ stop(); go(i); });
+  tl.appendChild(nd);
+});
+
+// ---------- act tabs ----------
+const tabsEl=document.getElementById('tabs');
+[{n:"Act 1 · Prepare the pair", c:"steps 1–12 · build two traditions into a ready pair", ac:"var(--build)", first:0},
+ {n:"Act 2 · Interact & read", c:"steps 13–18 · interact, reconcile, classify, certify", ac:"var(--read)", first:12}
+].forEach((a,ai)=>{
+  const t=document.createElement('div'); t.className='tab'; t.dataset.act=ai+1;
+  t.style.setProperty('--ac', a.ac);
+  t.innerHTML=a.n+'<span class="sub">'+a.c+'</span>';
+  t.addEventListener('click', ()=>{ stop(); go(a.first); });
+  tabsEl.appendChild(t);
+});
+
+// ---------- refs ----------
+const stage=document.getElementById('stage'), cpath=document.getElementById('cpath'),
+  tip=document.getElementById('tip'), card=document.getElementById('card'), cnum=document.getElementById('cnum');
+const pnodes=()=>document.querySelectorAll('.pnode');
+const byId=id=>document.getElementById(id);
+
+// ---------- pop-out ----------
+const poBackdrop=byId('poBackdrop'), poWin=byId('poWin');
+function openPopout(i){ const o=OUT5[i];
+  byId('poTitle').innerHTML=o.name;
+  byId('poDef').innerHTML=o.def;
+  byId('poDiss').innerHTML=o.diss;
+  poBackdrop.classList.add('show'); poWin.classList.add('show');
+}
+function closePopout(){ poBackdrop.classList.remove('show'); poWin.classList.remove('show'); }
+poBackdrop.addEventListener('click', closePopout);
+byId('poX').addEventListener('click', closePopout);
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closePopout(); });
+
+// ---------- wedge disjunctive animation (step 17) ----------
+function startWedgeCycle(){
+  stopWedgeCycle(); litWedge=-1;
+  const tick=()=>{
+    wedgeEls.forEach(w=>w.classList.remove('lit'));
+    outG.querySelectorAll('.wlabel').forEach(l=>l.classList.remove('lit'));
+    litWedge=(litWedge+1)%5;
+    wedgeEls[litWedge].classList.add('lit');
+    outG.querySelectorAll('.wlabel')[litWedge].classList.add('lit');
+  };
+  tick(); wedgeTimer=setInterval(tick, 900);
+}
+function stopWedgeCycle(){ if(wedgeTimer){ clearInterval(wedgeTimer); wedgeTimer=null; }
+  wedgeEls.forEach(w=>w.classList.remove('lit'));
+  outG.querySelectorAll('.wlabel').forEach(l=>l.classList.remove('lit')); }
+
+// ---------- state helpers ----------
+function clearHi(){
+  schem.querySelectorAll('.on').forEach(e=>e.classList.remove('on'));
+  byId('andgate').classList.remove('open');
+  wedgeEls.forEach(w=>w.classList.remove('certified'));
+  byId('outCaption').classList.remove('on');
+  stopWedgeCycle();
+}
+function setStandards(s){
+  const aG=s.n>=8, bG=s.n>=9;
+  byId('mmaA').classList.toggle('green', aG); byId('mmaAlab').classList.toggle('green', aG);
+  byId('mmaB').classList.toggle('green', bG); byId('mmaBlab').classList.toggle('green', bG);
+  byId('pillA').classList.toggle('green', aG); byId('pillB').classList.toggle('green', bG);
+  for(let k=1;k<=8;k++){ byId('gA'+k).classList.toggle('done', s.n>k || s.n===9); }
+}
+
+function go(i){
+  cur=i; const s=STEPS[i]; cnum.textContent=s.n;
+  clearHi();
+  document.querySelectorAll('.tab').forEach(t=> t.classList.toggle('active', +t.dataset.act===s.act));
+  pnodes().forEach((nd,k)=>{ nd.classList.toggle('on',k===i); nd.classList.toggle('dimact', STEPS[k].act!==s.act && k!==i); });
+  setStandards(s);
+
+  // light the target
+  if(s.target==='armB'){ armB.classList.add('on'); }
+  else if(s.target==='ring14'||s.target==='ring15'||s.target==='ring16'){
+    byId(s.target).classList.add('on'); byId(s.target+'lab').classList.add('on'); }
+  else if(s.target==='ipDot'){ byId('ipDot').classList.add('on'); }
+  else if(s.target==='outRing'){
+    const oc=byId('outCaption'); oc.classList.add('on');
+    if(s.n===17){ oc.textContent="17 · binned into exactly one — which one is empirical, not asserted here"; startWedgeCycle(); }
+    if(s.n===18){ oc.textContent="18 · outcome certified — agreed type + artifacts (both standards concurring)";
+      wedgeEls.forEach(w=>w.classList.add('certified')); }
+  }
+  else { const el=byId(s.target); if(el) el.classList.add('on'); }
+  if(s.n===16){ byId('andgate').classList.add('open'); byId('ring16').classList.add('on'); byId('ring16lab').classList.add('on'); }
+
+  // card
+  const acName = s.act===1 ? 'Act 1 · Prepare' : 'Act 2 · Read';
+  const acColor= s.act===1 ? 'var(--build)' : 'var(--read)';
+  const badge='<span class="badge" style="background:'+acColor+'">'+acName+'</span>';
+  const loop=s.loop?'<span class="badge loop">↻ calibration loop</span>':'';
+  const dual=s.dual?'<span class="badge dual">dual-MMA gate</span>':'';
+  card.style.setProperty('--c', acColor);
+  card.innerHTML=
+    '<div class="top"><span class="stepno">Step '+s.n+'</span>'+badge+loop+dual+'</div>'+
+    '<h3>'+s.t+'</h3>'+
+    '<div class="det">'+s.d+'</div>'+
+    '<div class="hep"><span class="lbl">Physics analogue'+(s.ap?' — the paper’s own image':'')+'</span>'+s.a+'</div>';
+  positionOverlay();
+}
+
+function targetRect(s){
+  let id=s.target;
+  const el=byId(id); if(!el) return null;
+  return el.getBoundingClientRect();
+}
+function positionOverlay(){
+  if(cur<0) return;
+  const s=STEPS[cur], sr=stage.getBoundingClientRect();
+  const node=document.querySelector('.pnode[data-i="'+cur+'"]'); if(!node) return;
+  const nr=node.getBoundingClientRect();
+  const from={x:nr.left-sr.left+nr.width/2, yBot:nr.bottom-sr.top};
+  tip.style.left=from.x+'px'; tip.style.top=(nr.top-sr.top-6)+'px';
+  tip.style.setProperty('--c', s.act===1?'var(--build)':'var(--read)');
+  tip.textContent='#'+s.n+'  '+s.t.replace(/&amp;/g,'&').replace(/<[^>]*>/g,'');
+  tip.classList.add('show');
+  const tr=targetRect(s);
+  if(!tr){ cpath.style.opacity=0; return; }
+  const t={x:tr.left-sr.left+tr.width/2, yTop:tr.top-sr.top};
+  const midY=(from.yBot+t.yTop)/2;
+  cpath.setAttribute('d','M '+from.x+' '+from.yBot+' C '+from.x+' '+midY+' '+t.x+' '+midY+' '+t.x+' '+t.yTop);
+  cpath.setAttribute('stroke', s.act===1?'#5A8EAF':'#C08B3E'); cpath.style.opacity=1;
+}
+
+function next(){ go((cur+1)%N); }
+function prev(){ go((cur-1+N)%N); }
+function play(){ if(timer) return; if(cur<0) go(0); byId('play').innerHTML='&#10073;&#10073; Pause'; timer=setInterval(next, period); }
+function stop(){ if(timer){ clearInterval(timer); timer=null; } byId('play').innerHTML='&#9654; Play'; }
+function toggle(){ timer?stop():play(); }
+
+byId('play').addEventListener('click', toggle);
+byId('next').addEventListener('click', ()=>{ stop(); next(); });
+byId('prev').addEventListener('click', ()=>{ stop(); prev(); });
+byId('restart').addEventListener('click', ()=>{ stop(); go(0); });
+byId('speed').addEventListener('input', e=>{ period=2600+700-(+e.target.value); if(timer){ stop(); play(); } });
+window.addEventListener('resize', positionOverlay);
+document.addEventListener('keydown', e=>{
+  if(e.key===' '){ e.preventDefault(); toggle(); }
+  else if(e.key==='ArrowRight'){ stop(); next(); }
+  else if(e.key==='ArrowLeft'){ stop(); prev(); }
+});
+
+go(0);
+</script>
+</body>
+</html>
