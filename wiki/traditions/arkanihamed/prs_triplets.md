@@ -149,7 +149,70 @@ PRS-10:
   Confidence: Medium
 
 ---
-*Total PRS triplets: 10*
+PRS-13:
+  Problem: Standard amplitude computation builds in spacetime locality and unitarity through Feynman diagrams, and scales explosively with particle number and loop order.
+  Resource: The curve-integral / "surfaceology" formalism — amplitudes as integrals over combinatorial surface data (u-variables) decorated by kinematics, with no diagrams.
+  Solution: Colored-theory amplitudes are computed directly from surface combinatorics, with locality and unitarity emerging as outputs rather than inputs — a second, diagram-free route to the post-spacetime claim beyond the amplituhedron.
+  Date Added: 2024 (program); coverage gap as of 2026-06-19
+  Source: Surfaceology / curve-integral formalism (All Loop Scattering For All Multiplicity; Surface; PROP-2026-06-19-002
+  Confidence: High
+
+---
+PRS-14:
+  Problem: Can the dependence of amplitudes on particle number (n) and loop order (L) be disentangled, making all-loop / all-multiplicity scattering tractable?
+  Resource: The observation that the curve integral decouples n and L, reducing higher-loop computation to L-loop "tadpole-like" curve integrals (one particle per color trace-factor).
+  Solution: All-n, L-loop amplitudes are obtained by combining tadpole-like curve integrals with the tree-level result — an all-multiplicity, all-loop counting-problem reformulation.
+  Date Added: 2024 (program); coverage gap as of 2026-06-19
+  Source: Surfaceology / curve-integral formalism (All Loop Scattering For All Multiplicity; Surface; PROP-2026-06-19-002
+  Confidence: High
+
+---
+PRS-15:
+  Problem: Single-minus helicity tree amplitudes in massless gauge theories (and analogously in gravity) have been treated as identically zero for fifteen years, foreclosing a class of structural questions about the kinematic geometry of scattering amplitudes
+  Resource: A half-collinear momentum-space slice on which single-minus amplitudes are nonzero, with a closed-form expression first conjectured by GPT-5.2 Pro and subsequently proved by Guevara, Lupsasca, Skinner, Strominger, Weil (arXiv:2602.12176, Feb 2026); a graviton extension followed (March 4, 2026) using the same kinematic structure
+  Solution: A revised picture of tree-level amplitudes in which the "vanishing" of single-minus amplitudes is a generic-kinematics fact, not a structural one — opening kinematic regions previously dismissed and adding new test data for the positive-geometry / amplituhedron program to engage
+  Date Added: 2026-02-12
+  Source: Single-minus gluon tree amplitudes are nonzero (Guevara, Lupsasca, Skinner, Strominger, We; PROP-2026-05-08-005
+  Confidence: High
+
+---
+PRS-16:
+  Problem: Pre-empirical fundamental physics has limited tools for distinguishing promising from unpromising theoretical directions — Arkani-Hamed has long appealed to "structural inevitability" (PRS-04) but the criterion is hard to operationalize; the question is whether new methodologies can complement it
+  Resource: LLM-assisted conjecture-and-proof workflow demonstrated in the gluon paper — a frontier model produces a candidate closed-form expression, the result is then proved by human collaborators using established field-theoretic methods, and it is independently checked against consistency rules
+  Solution: A working hypothesis that LLM-assisted conjecturing can serve as a *generation* mechanism in fundamental physics that is complementary to the *evaluation* mechanism of structural inevitability — addressing a long-standing weakness of pre-empirical theoretical physics, namely the scarcity of well-formed conjectures to evaluate
+  Date Added: 2026-02-12
+  Source: Single-minus gluon tree amplitudes are nonzero (Guevara, Lupsasca, Skinner, Strominger, We; PROP-2026-05-08-005
+  Confidence: Medium
+
+---
+PRS-17:
+  Problem: The Arkani-Hamed program is methodologically split between the formal/post-spacetime wing (amplituhedron, cosmohedra, kinematic flow) and the bottom-up phenomenological wing (TeV-scale flavor models, hierarchy problem) — coherence depends on both wings being able to absorb new external results that bear on amplitude structure
+  Resource: A non-Arkani-Hamed result (single-minus amplitudes nonzero) sitting exactly at the interface — it is amplitude-level data, not post-spacetime metaphysics, but it concerns the structural kinematics his program reorganizes
+  Solution: A test case for the program's coherence: if the positive-geometry reformulations can incorporate or predict the half-collinear slice's nonvanishing structure, that strengthens the program's claim to capture the *real* combinatorial backbone of amplitudes; if they cannot, that exposes a limit that frames future work
+  Date Added: 2026-02-12
+  Source: Single-minus gluon tree amplitudes are nonzero (Guevara, Lupsasca, Skinner, Strominger, We; PROP-2026-05-08-005
+  Confidence: Speculative
+
+---
+PRS-18:
+  Problem: The Standard Model fermion mass hierarchy spans ~6 orders of magnitude with no explanation; canonical mechanisms (Froggatt-Nielsen, extra dimensions, etc.) typically push flavor physics above ~100 TeV to evade flavor- and CP-violation bounds, removing it from collider reach
+  Resource: Vector-like-fermion "chains" with locality property (Arkani-Hamed, Figueiredo, Hall, Manzari 2026) — dimensional-deconstruction-style chain structures whose locality both generates hierarchical Yukawas and suppresses dangerous flavor/CP-violating operators
+  Solution: A class of TeV-scale flavor models that generate the SM mass hierarchy and remain consistent with flavor/CP bounds — bringing the origin of flavor back into reach of next-generation colliders, and reuniting the BSM and flavor-physics agendas
+  Date Added: 2026-02-19
+  Source: Generating the fermion mass hierarchy at the TeV scale; PROP-2026-05-05-015
+  Confidence: High
+
+---
+PRS-19:
+  Problem: Arkani-Hamed's program risks looking like two unrelated activities — top-down positive-geometry / post-spacetime work (amplituhedron, cosmohedra) and bottom-up phenomenology (BSM, flavor, hierarchy) — with no obvious unifying methodology
+  Resource: A combinatorial-locality principle ("chain locality") used here for flavor-hierarchy generation, structurally analogous to the locality conditions emergent from positive-geometry constructions in his earlier work
+  Solution: A working hypothesis that combinatorial locality is a methodological signature of Arkani-Hamed's program across both the formal and phenomenological wings — the same kind of thinking is being applied at both ends, suggesting his program has more methodological coherence than separate-tradition treatment would suggest
+  Date Added: 2026-02-19
+  Source: Generating the fermion mass hierarchy at the TeV scale; PROP-2026-05-05-015
+  Confidence: Speculative
+
+---
+*Total PRS triplets: 17*
 
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-10*

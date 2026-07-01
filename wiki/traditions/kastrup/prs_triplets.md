@@ -245,4 +245,76 @@ PRS-26:
   Confidence: Speculative
 
 ---
-*Total PRS triplets: 26*
+PRS-27:
+  Problem: After the Enlightenment imposed a literal/symbolic dichotomy on all discourse, religious mythology becomes either (a) literal — generating fundamentalism — or (b) "mere metaphor" — losing its emotional grip on the psyche. Both options produce a bankrupt relationship with the very layer of meaning that traditions were built to transmit.
+  Resource: Kastrup's "mildly schizophrenic" stance: a deliberate, sustained holding of myth as *intellectually known to be non-literal* and *emotionally inhabited as if literal* — explicitly framed as the cognitive posture required for myth to do its psychological work without producing fundamentalism.
+  Solution: A practitioner-facing rule for engaging tradition that is neither literal nor reductively metaphorical — and that maps cleanly onto McGilchrist's left-hemisphere (intellectual: knowing it isn't literal) / right-hemisphere (emotional: inhabiting it) division. Operationalizes the right relation between hemispheres in the specific case of religious tradition.
+  Date Added: 2026-04-14
+  Source: We need a mildly schizophrenic relationship to myth — Q&A on More Than Allegory; PROP-2026-05-05-008
+  Confidence: High
+
+---
+PRS-28:
+  Problem: Analytic idealism has a clean account of *what is real* (universal consciousness and its dissociative patterns) but a less developed account of *what archetypes are* — leaving the Jungian dimension of Kastrup's program ontologically suspended.
+  Resource: Kastrup's formulation: an archetype is a *pattern* that "always is but never was" — formless, prior to any instance, and not located in time. Concrete instances participate in the archetype but are not it. ("Christ as archetype precedes Yeshua of Nazareth.")
+  Solution: A clarified ontological status for archetypes within analytic idealism — archetypes as formal structures of the dissociative process itself, not as objects within universal consciousness but as the patterns by which dissociation occurs. Bridges Kastrup's Jungian commitments (Daimon, archetype) to his core dissociative ontology, addressing the gap left open in PRS-08.
+  Date Added: 2026-04-14
+  Source: We need a mildly schizophrenic relationship to myth — Q&A on More Than Allegory; PROP-2026-05-05-008
+  Confidence: Medium
+
+---
+PRS-29:
+  Problem: If dissociation is itself the most fundamental archetype (Ciarán's framing in the Q&A, accepted by Kastrup), then the structure of analytic idealism is recursive in a way that needs to be made explicit — the mechanism by which individual minds emerge is also an archetype that is enacted within the very minds it produces.
+  Resource: Kastrup's tentative endorsement that dissociation is the deepest archetypal pattern — meaning the dissociative-alter ontology is not just a theory *of* the structure of mind but a theory in which the structure of mind is one of the basic forms of experience available to mind.
+  Solution: A self-referential extension of analytic idealism in which the dissociative process is both ontological mechanism and lived archetype — opening a research line on what other foundational ontological mechanisms (boundary, alter, integration) might also have archetypal status in lived experience, and what therapeutic / spiritual practices follow.
+  Date Added: 2026-04-14
+  Source: We need a mildly schizophrenic relationship to myth — Q&A on More Than Allegory; PROP-2026-05-05-008
+  Confidence: Speculative
+
+---
+PRS-30:
+  Problem: Analytic idealism is frequently misread either as anti-realism (denying that anything is absolutely real) or as covertly physicalist (smuggling a substrate back in under a different name) — leaving its actual realism commitments unclear in technical debate.
+  Resource: Kastrup's explicit self-classification as **physical non-realist + ontic realist**: physical entities are relational/representational and have no absolute existence; but there is an absolute, observer-independent reality, which is mental/conscious in nature.
+  Solution: A clean two-axis position-statement that separates the realism question from the physicalism question — making analytic idealism's commitments compact, debatable, and immune to the "but you're just an anti-realist" dismissal common in physics-adjacent discussion.
+  Date Added: 2026-04-29
+  Source: Is there a moon when no one is looking? On Rovelli & Relational Quantum Mechanics — Q&A wi; PROP-2026-05-05-007
+  Confidence: High
+
+---
+PRS-31:
+  Problem: Relational Quantum Mechanics (Rovelli) is often presented as a successful physicalist account of quantum measurement — but if RQM is correct that no physical property has an absolute, observer-independent value, then the physicalist commitment to a self-sufficient material substrate is doing no explanatory work and may in fact be incoherent.
+  Resource: Kastrup's argument that RQM-without-substrate generates an infinite regress (relations all the way down with nothing doing the relating), which idealism dissolves cleanly: if the relata are *representations* on the dashboards of conscious agents, of course they are relational — and the absolute reality is the underlying field of consciousness, not a physical substrate.
+  Solution: An idealist re-housing of RQM: the empirical content of relational quantum mechanics is preserved; what is dropped is the claim that a physical substrate is the relatum. Yields the testable prediction that *as many physical worlds as there are living beings* — a falsifiable cardinality claim about the dashboard.
+  Date Added: 2026-04-29
+  Source: Is there a moon when no one is looking? On Rovelli & Relational Quantum Mechanics — Q&A wi; PROP-2026-05-05-007
+  Confidence: Medium
+
+---
+PRS-32:
+  Problem: Smolin's argument that the laws of physics evolve threatens both Platonist accounts of mathematical law and any view in which laws are timeless features of consciousness.
+  Resource: Kastrup's response: laws need not be Platonic invariants; they can be *patterns of dissociation* within universal consciousness, and patterns of dissociation can themselves change over time. This preserves the Smolin insight about evolving laws while avoiding the physicalist commitment to laws as features of an external substrate.
+  Solution: An idealist account of cosmological natural selection: rather than "different universes inherit different physical constants through black holes," the idealist reframing is that different patterns of dissociation in universal consciousness yield different stable regularities — a hypothesis that retains Smolin's insight without his physicalist commitments.
+  Date Added: 2026-04-29
+  Source: Is there a moon when no one is looking? On Rovelli & Relational Quantum Mechanics — Q&A wi; PROP-2026-05-05-007
+  Confidence: Speculative
+
+---
+PRS-33:
+  Problem: Analytic idealism's perceptual model — the "cockpit/dashboard" metaphor in which perceived qualities are dials representing mind-at-large — risks being too thin to capture the depth and "soul" of things, treating perception as instrumental read-out rather than participatory encounter.
+  Resource: Harpur's critique that poetry lets "the soul of things shine through them" (a cluster of flowers seen as a host of dancing daffodils), pressed directly against Kastrup's cockpit metaphor in live exchange, and Kastrup's defense/qualification of the metaphor.
+  Solution: A sharpened statement of what the dashboard metaphor is and is not meant to claim — instrument of *survival-relevant representation*, not a denial of depth — clarifying analytic idealism's account of perception against the charge of impoverishment.
+  Date Added: 2026-05-13
+  Source: Patrick Harpur & Bernardo Kastrup — on how even the literal is metaphor; PROP-2026-05-20-003
+  Confidence: Medium
+
+---
+PRS-34:
+  Problem: If individual minds are dissociated alters of mind-at-large, what is the ontological status of daimons and imaginal figures — are they mere subjective contents, or genuine mediating realities, and how are they distinguished from compulsions like addiction?
+  Resource: The dialogue's treatment of daimons as mediators "between the human and beyond," and the proposed criterion for discerning daimon from addiction.
+  Solution: Extends Kastrup's individuation account (cf. PRS-08, the Daimon as principle of individuation) with a discernment criterion, locating the daimonic within the dissociative-boundary framework rather than outside it.
+  Date Added: 2026-05-13
+  Source: Patrick Harpur & Bernardo Kastrup — on how even the literal is metaphor; PROP-2026-05-20-003
+  Confidence: Speculative
+
+---
+*Total PRS triplets: 34*

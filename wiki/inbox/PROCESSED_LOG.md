@@ -581,3 +581,87 @@ Phase 4: Gmail review digest draft id r-1329604865583232036; Levin PROP-2026-06-
 Phase 5: moved 2026-06-19_review.html to review/_superseded/ (>3 days); 06-20→06-23 retained.
 ⚠ Levin PROP-2026-06-22-001 = exact duplicate of approved+ingested PROP-2026-06-01-001; do not re-count; recommend DENY.
 Network unchanged: 279 PRS triplets · 90 cross-program connections · 47 findings (through FINDING-047).
+
+---
+## 2026-06-30 (Tuesday) — orchestrator run, no ingest
+Phase 0: no actionable [C2A2-review-decision] thread in today/yesterday window. Only decision thread (06-23) already fully processed/archived in the 06-27 recovery run. 3 UNREAD April-vintage hits (04-08, 04-27) have no matching pending/ files — left untouched.
+Phase 1: Phase 0 no-op; raw inbox backlog (73 files by filename-vs-log diff, 2026-04-21 to 2026-06-23) deferred per standing policy; no triplets added. WARNING: backlog growing — Mac-side batched-ingest is the highest-value attended action.
+Phase 2: Tuesday specialists Hawkins+Hoffman; Hawkins deposited 2026-06-30_hawkins_neural-computation-tbs.md, Hoffman nothing. Focused fallback on stalest traditions Stump (last 06-11) + Hoffman returned only already-captured/older material → 0 net-new. All other active traditions carry fresh pending coverage (06-24 to 06-29).
+Phase 3: review page wiki/review/2026-06-30_review.html generated (21 carried proposals). Auto-open skipped (Linux sandbox).
+Phase 4: Gmail review digest draft id r3011354692861118166.
+Phase 5: moved 2026-06-20/06-21/06-22 _review.html to review/_superseded/ (>3 days); only 06-30 retained.
+Phase 5.5: Review Log refresh — see run report.
+Phase 6: see run report (sandbox push constraints).
+Network unchanged (no ingest): 279 PRS triplets · 90 cross-program connections · 47 findings (through FINDING-047).
+
+## 2026-07-01 — Track A PRS backlog clear (attended apply_prs)
+- PROP-2026-06-19-002 arkanihamed_surfaceology → arkanihamed PRS-13..PRS-14 (+2)
+- PROP-2026-05-08-005 arkanihamed_single-minus-gluon-graviton-gpt52 → arkanihamed PRS-15..PRS-17 (+3)
+- PROP-2026-05-05-015 arkanihamed_fermion-mass-hierarchy-tev → arkanihamed PRS-18..PRS-19 (+2)
+- PROP-2026-05-05-010 stump_good-of-thomas-aquinas-agatheos → stump PRS-20..PRS-21 (+2)
+- PROP-2026-05-14-001 stump_seven-deadly-sins-thomistic-institute → stump PRS-22 (+1)
+- PROP-2026-04-09-SUPP-001 hawkins_thousand-brains-deep-read-supplement → hawkins no-net-new / duplicate / citation-upgrade (+0)
+- PROP-2026-05-24-001 wright_vision-of-ephesians → wright PRS-8..PRS-10 (+3)
+- PROP-2026-05-05-012 fredrickson_does-positivity-resonance-signify-love → fredrickson PRS-21..PRS-22 (+2)
+- PROP-2026-05-08-002 fredrickson_positively-in-sync-convergent-validity → fredrickson PRS-23..PRS-24 (+2)
+- PROP-2026-05-05-009 stump_infused-virtues-indwelling-holy-spirit → stump PRS-23..PRS-24 (+2)
+- PROP-2026-06-22-002 friston_as-one-and-many → friston PRS-22..PRS-23 (+2)
+- PROP-2026-05-05-011 fredrickson_interparental-positivity-spillover-theory → fredrickson PRS-25..PRS-26 (+2)
+- PROP-2026-05-08-001 fredrickson_positive-emotions-cornerstones-oxford-2025 → fredrickson PRS-27..PRS-28 (+2)
+- PROP-2026-05-14-003 fredrickson_social-media-posts-in-person-connections → fredrickson PRS-29..PRS-30 (+2)
+- PROP-2026-05-14-002 fredrickson_high-quality-listening-strangers-comm-psych → fredrickson PRS-31..PRS-32 (+2)
+- PROP-2026-05-05-005 hoffman_trace-institute-launch → hoffman PRS-19..PRS-20 (+2)
+- PROP-2026-05-05-016 wolfram_rulial-ensemble-biology-bulk-orchestration → wolfram PRS-24..PRS-25 (+2)
+- PROP-2026-05-10-004 rohr_2026-meditations-good-news-fractured-world → rohr PRS-8..PRS-10 (+3)
+- PROP-2026-05-18-002 levin_cognition-spaces-natural-artificial-hybrid → levin PRS-36..PRS-37 (+2)
+- PROP-2026-04-13-007 stump_seven-cardinal-virtues-holy-spirit → stump PRS-26 (+1)
+- PROP-2026-05-08-003 stump_meaning-of-suffering-human-flourishing-pine-dialogue → stump PRS-27..PRS-28 (+2)
+- PROP-2026-05-10-005 rohr_america-magazine-universal-christ-interview → rohr PRS-11..PRS-12 (+2)
+- PROP-2026-05-05-002 levin_bootstrapping-life-inspired-machine-intelligence → levin PRS-38..PRS-39 (+2)
+- PROP-2026-05-10-001 wright_gods-homecoming-book → wright PRS-11..PRS-13 (+3)
+- PROP-2026-05-05-017 wolfram_madrid-geometric-ideas-computational-frontiers → wolfram PRS-26 (+1)
+- PROP-2026-05-10-002 wright_gods-homecoming-biblical-story-essay → wright PRS-14..PRS-15 (+2)
+- PROP-2026-05-18-003 wright_dove-descending-ruach-psalms → wright PRS-16..PRS-18 (+3)
+- PROP-2026-05-04-002 carroll_mindscape-347-ferguson-data-surveillance → carroll PRS-27 (+1)
+- PROP-2026-05-04-004 wolfram_south-park-commons-fireside → wolfram PRS-27 (+1)
+- PROP-2026-05-24-004 rohr_psalms-songs-of-exile → rohr PRS-13..PRS-14 (+2)
+- PROP-2026-05-05-001 levin_cancer-to-ai-alignment-homeostasis → levin PRS-40..PRS-41 (+2)
+- PROP-2026-05-18-001 levin_clofilium-colorectal-cancer-ionoceutical → levin PRS-42 (+1)
+- PROP-2026-05-18-005 rohr_liberation-from-egos-agenda → rohr PRS-15..PRS-17 (+3)
+- PROP-2026-05-05-004 hoffman_spacetime-bounds-v2 → hoffman PRS-21..PRS-22 (+2)
+- PROP-2026-05-12-001 hoffman_edge-hoffmans-law → hoffman PRS-23..PRS-24 (+2)
+- PROP-2026-05-18-002 wright_adam-eve-hominids-april5 → wright PRS-19..PRS-21 (+3)
+- PROP-2026-05-20-001 mcgilchrist_sex-differences-hemispheres → mcgilchrist PRS-38..PRS-39 (+2)
+- PROP-2026-05-18-004 rohr_finding-a-place-to-stand → rohr PRS-18..PRS-20 (+3)
+- PROP-2026-05-05-008 kastrup_more-than-allegory-myth-archetype → kastrup PRS-27..PRS-29 (+3)
+- PROP-2026-04-21-002 carroll_singer-mindscape-351 → carroll PRS-28..PRS-30 (+3)
+- PROP-2026-05-08-004 carroll_mindscape-351-singer-utilitarianism → carroll PRS-31..PRS-33 (+3)
+- PROP-2026-05-16-001 wolfram_future-science-tech-april24-quantum → wolfram PRS-28..PRS-29 (+2)
+- PROP-2026-05-10-003 wright_collins-oxford-god-and-science → wright PRS-22..PRS-23 (+2)
+- PROP-2026-05-04-001 friston_phenotyping-agency-ai → friston PRS-24..PRS-25 (+2)
+- PROP-2026-05-24-005 rohr_for-love-of-the-earth → rohr PRS-21..PRS-22 (+2)
+- PROP-2026-05-05-013 carroll_mindscape-352-brunton-connectome → carroll PRS-34..PRS-35 (+2)
+- PROP-2026-05-05-007 kastrup_rovelli-rqm-physical-non-realism → kastrup PRS-30..PRS-32 (+3)
+- PROP-2026-05-09-002 wolfram_business-april29-paradigm-shifting-ideas → wolfram PRS-30..PRS-31 (+2)
+- PROP-2026-05-05-003 friston_online-generalised-predictive-coding → friston PRS-26..PRS-27 (+2)
+- PROP-2026-05-25-002 levin_brains-and-where-else-consciousness-embodiments → levin PRS-43..PRS-44 (+2)
+- PROP-2026-05-18-006 rohr_everything-belongs-s4-type1-bielecki → rohr PRS-23..PRS-25 (+3)
+- PROP-2026-05-09-001 wolfram_kids-167-brains-evolution-life → wolfram PRS-32..PRS-33 (+2)
+- PROP-2026-05-05-006 mcgilchrist_closer-to-truth-life-after-death → mcgilchrist PRS-40..PRS-41 (+2)
+- PROP-2026-05-20-002 mcgilchrist_good-beautiful-true-sheldonian → mcgilchrist PRS-42..PRS-43 (+2)
+- PROP-2026-05-05-014 carroll_ama-may-2026 → carroll PRS-36 (+1)
+- PROP-2026-05-24-003 wright_ask-ntw-may4-lost-tribes-exile → wright PRS-24..PRS-25 (+2)
+- PROP-2026-05-09-003 mcgilchrist_unsiloed-648-attention-modes → mcgilchrist PRS-44..PRS-45 (+2)
+- PROP-2026-05-24-002 wright_biologos-new-creation-breaking-in → wright PRS-26..PRS-27 (+2)
+- PROP-2026-05-15-001 carroll_mindscape-353-roth-moral-economics → carroll PRS-37..PRS-39 (+3)
+- PROP-2026-05-18-001 wright_ask-ntw-may11-confused-age → wright PRS-28..PRS-30 (+3)
+- PROP-2026-05-20-003 kastrup_harpur-literal-as-metaphor → kastrup PRS-33..PRS-34 (+2)
+- PROP-2026-05-23-002 wolfram_business-may13-ownerless-ai-accountability → wolfram PRS-34..PRS-35 (+2)
+- PROP-2026-05-25-001 levin_cognitive-glues-economics-collective-intelligence → levin PRS-45..PRS-46 (+2)
+- PROP-2026-05-23-001 wolfram_future-science-tech-may15-scientific-method → wolfram PRS-36..PRS-38 (+3)
+- PROP-2026-05-22-001 carroll_mindscape-354-list-free-will-levels → carroll PRS-40..PRS-42 (+3)
+- PROP-2026-06-19-001 carroll_quantum-cyclic-universe → carroll PRS-43..PRS-44 (+2)
+- PROP-2026-05-18-003 friston_precision-psychiatry-cambridge → friston PRS-28..PRS-29 (+2)
+- PROP-2026-06-23-002 hawkins_thousand-brains-neco-publication → hawkins no-net-new / duplicate / citation-upgrade (+0)
+- PROP-2026-06-23-001 hoffman_dmt-traces-of-the-other → hoffman PRS-25..PRS-26 (+2)
+- PROP-2026-06-21-001 rohr_way-of-the-early-church-new-way-of-living → rohr no-net-new / duplicate / citation-upgrade (+0)

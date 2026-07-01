@@ -325,7 +325,106 @@ PRS-35:
   Confidence: High
 
 ---
-*Total PRS triplets: 35*
+PRS-36:
+  Problem: Cognitive science still treats "cognition" as a binary attribute pegged to substrate, leaving no principled way to compare cells, brains, AI systems, and hybrid systems on a common landscape
+  Resource: A "cognition space" with organizational and informational dimensions, partitioned into three currently occupied regions — basal aneural, neural, human-AI hybrid — and characterised by quantifiable density, voids, and clusters
+  Solution: A comparative substrate-agnostic geometry in which any candidate cognitive system can be located, predicted, or engineered; turns the "diverse intelligence" thesis from a taxonomy into a research-tractable map
+  Date Added: 2026-01-19
+  Source: Cognition spaces: natural, artificial, and hybrid; PROP-2026-05-18-002
+  Confidence: High
+
+---
+PRS-37:
+  Problem: AI and synthetic-biology efforts produce hybrid systems without a framework for predicting which hybrids are reachable or productive
+  Resource: Empirical identification of the "human-AI hybrid" cognition space as the largest currently underexplored region, with the prediction that synthetic constructs (xenobots, anthrobots, neurobots) plus AI agents can be placed on the same map
+  Solution: A research agenda for engineering novel cognitive forms by deliberately targeting void regions of cognition space — moving hybrid cognition from accidental side-effect to designed object of study
+  Date Added: 2026-01-19
+  Source: Cognition spaces: natural, artificial, and hybrid; PROP-2026-05-18-002
+  Confidence: Medium-High
+
+---
+PRS-38:
+  Problem: Current AI architectures (transformer-based foundation models, RL agents) achieve high performance on narrow tasks but lack the open-ended creativity, robustness, and multi-scale autonomy characteristic of biological intelligence. Scaling alone has not produced these properties; the field lacks a constructive design philosophy for them.
+  Resource: A five-principle design framework distilled from biology — multiscale autonomy, self-assemblage growth, capability reconstruction, physical/embodied constraints, and pervasive signaling — formalized into a "bootstrapping" recipe from chemistry to cognition.
+  Solution: A constructive program for life-inspired machine intelligence that does not depend on scaling token prediction. AI systems built bottom-up from these principles inherit biology's capacity for creative problem-solving, robustness, and goal-preservation across scales — providing concrete engineering targets for the alignment-friendly properties Levin's program identifies.
+  Date Added: 2026-02-08
+  Source: Bootstrapping Life-Inspired Machine Intelligence: The Biological Route from Chemistry to C; PROP-2026-05-05-002
+  Confidence: High
+
+---
+PRS-39:
+  Problem: The relation between Levin's empirical biology and the AI architecture community has been suggestive but not constructive — biology has been used as analogy and inspiration but not as a design specification.
+  Resource: The "bootstrapping" frame — explicit translation of Levin/Pezzulo biological principles into recipes a machine-intelligence engineer could implement, with concrete targets at each level of abstraction (chemistry → cells → tissues → organisms → cognition).
+  Solution: A translation layer between Levin's empirical program and AI architecture, specifying what each principle delivers (e.g., multiscale autonomy as a guard against single-point-of-failure misalignment) and how to test for it in synthetic systems.
+  Date Added: 2026-02-08
+  Source: Bootstrapping Life-Inspired Machine Intelligence: The Biological Route from Chemistry to C; PROP-2026-05-05-002
+  Confidence: High
+
+---
+PRS-40:
+  Problem: AI alignment is typically framed in terms of value or goal alignment, but this framing is brittle — it requires specifying what humans want and verifying AI internal states. It does not naturally scale to multi-agent ecosystems and lacks a measurable homeostatic primitive.
+  Resource: Reframing alignment as externality management — defining externalities as homeostatically/allostatically relevant events outside an agent's cognitive light cone, and treating alignment as the convergence of cognitive light cones across agents at different scales.
+  Solution: A homeostatic, biology-grounded definition of alignment that admits a measurable structural criterion (do agent cognitive light cones overlap on the relevant homeostatic variables?), generalizes across substrates (cells, organisms, AI), and inherits the empirical track record of cancer biology — where cellular misalignment is well characterized and treatable.
+  Date Added: 2026-04
+  Source: From Cancer to AI Alignment: Tackling Externalities Through Homeostatic Principles; PROP-2026-05-05-001
+  Confidence: High
+
+---
+PRS-41:
+  Problem: Levin's cancer framework (cellular defection from morphogenetic community) and the AI-alignment problem (AI systems pursuing objectives at odds with human/social welfare) have been treated as separate domains, despite obvious structural parallels. No formal bridge has connected them.
+  Resource: Cognitive-light-cone framework as the shared currency between cancer and AI alignment — both are diagnosed as failures of light-cone alignment between subunit and whole, where the subunit's homeostatically-relevant horizon does not include the costs imposed on the larger collective.
+  Solution: A unified theoretical framework treating cancer, organizational dysfunction, and AI misalignment as instances of one failure mode — externality generation due to cognitive-light-cone mismatch — opening cross-domain transfer of interventions (e.g., bioelectric coherence-restoration techniques as a model for AI alignment interventions).
+  Date Added: 2026-04
+  Source: From Cancer to AI Alignment: Tackling Externalities Through Homeostatic Principles; PROP-2026-05-05-001
+  Confidence: Medium-High
+
+---
+PRS-42:
+  Problem: Colorectal cancer is treated almost exclusively through cytotoxic and targeted-genetic therapies; the bioelectric layer (ion-channel dysregulation) is rarely targeted despite its documented role in tumor proliferation, invasion, and metastatic phenotype
+  Resource: Clofilium — a Kv11.1/hERG potassium-channel blocker — identified through screening against CRC cell lines as the leading ionoceutical candidate (IC50 3.314 μM); paired with Western-blot pathway profiling and a xenograft mouse model
+  Solution: A clinically tractable ionoceutical lead for CRC that significantly reduces tumor volume without overt toxicity in xenograft, downregulates oncogenic growth pathways, and upregulates the metastasis-suppressor NDRG1 — establishing a translatable bioelectric-pharmacology pathway from screening to in vivo efficacy
+  Date Added: 2026-04
+  Source: Targeting Ion Channel Dysregulation in Colorectal Cancer: Identification of Clofilium as a; PROP-2026-05-18-001
+  Confidence: High
+
+---
+PRS-43:
+  Problem: Theories of consciousness are almost universally formulated and tested against brains, leaving it unclear whether their brain-focus reflects a genuine theoretical requirement or merely disciplinary convention — and therefore whether consciousness could in principle be attributed to non-neural or synthetic embodiments
+  Resource: A systematic mapping exercise — extracting the substrate requirements implied by each major theory of consciousness and checking them against unconventional embodiments (synthetic organisms, cell collectives, non-neural tissue)
+  Solution: Demonstration that the leading theories' functional principles are remarkably convergent and that their brain-restriction is "driven by convention and limitations of imagination rather than by any specific content of existing theories" — opening consciousness, not just cognition, to substrate-independent attribution
+  Date Added: 2026-05
+  Source: Brains and where else? Mapping theories of consciousness to unconventional embodiments; PROP-2026-05-25-002
+  Confidence: High
+
+---
+PRS-44:
+  Problem: The evolutionary origin of consciousness is typically tied to the appearance of nervous systems, leaving no account of how cognitive/conscious mechanisms could exist before brains
+  Resource: Evidence from evolutionary biology, developmental bioelectricity, and synthetic bioengineering showing that many mechanisms and algorithms found in brains have ancient pre-neural antecedents in cell-cell bioelectric communication
+  Solution: The thesis that "minds may have preceded brains" — bioelectric information-processing provides an evolutionary pathway from physiological homeostasis to cognitive agency, dissolving the assumption that consciousness requires a nervous system as a precondition
+  Date Added: 2026-05
+  Source: Brains and where else? Mapping theories of consciousness to unconventional embodiments; PROP-2026-05-25-002
+  Confidence: Medium-High
+
+---
+PRS-45:
+  Problem: Levin's program asserts that cells/tissues are bound into collective cognitive agents by "cognitive glue," but has lacked a general, substrate-independent account of what that glue *is* and how it produces coordinated goal-directedness across scales
+  Resource: The economic price system as the abstract template for all cognitive glues — a shared model of relative scarcities functioning as a coordinating affordance that lets subunits form mutually compatible plans without central control or global knowledge
+  Solution: A unifying thesis that any cognitive glue (bioelectric, neural, social) solves the same coordination-under-scarcity problem the market price system solves, in broadly the same way — promoting "cognitive glue" from a bioelectric metaphor to a formal, cross-substrate coordination principle
+  Date Added: 2026-05-14
+  Source: Cognitive glues are shared models of relative scarcities: the economics of collective inte; PROP-2026-05-25-001
+  Confidence: High
+
+---
+PRS-46:
+  Problem: Collective intelligence exhibits emergent problem-solving capacities that differ from those of its subunits, but there has been no principled measure of the *informational economy* by which a collective allocates limited resources (attention, energy, signaling bandwidth) to coordinate those capacities
+  Resource: Relative-scarcity modeling — the proposal that a collective coordinates by maintaining and sharing a model of which resources are scarce relative to others, with price-like signals communicating that scarcity structure to members
+  Solution: Reframing collective cognition as an economics problem: the intelligence of a collective is the quality of its shared scarcity model and the fidelity of the affordances (price-like signals) that distribute it — opening collective intelligence to the formal toolkit of economics
+  Date Added: 2026-05-14
+  Source: Cognitive glues are shared models of relative scarcities: the economics of collective inte; PROP-2026-05-25-001
+  Confidence: Medium-High
+
+---
+*Total PRS triplets: 46*
 
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*

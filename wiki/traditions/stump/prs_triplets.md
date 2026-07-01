@@ -168,4 +168,76 @@ PRS-19:
   Confidence: Medium
 
 ---
-*Total PRS triplets: 17 (PRS-01 and PRS-03 re-homed to Loughran, 2026-06-11)*
+PRS-20:
+  Problem: Analytic philosophy of religion has tended either to treat Aquinas as a historical curio or to extract isolated arguments from his system without committing to the metaphysical framework that makes those arguments work — leaving Thomism perpetually domesticated and therefore unable to challenge the host paradigm
+  Resource: Stump and Zoll's "Good of Thomas Aquinas" essay, which argues that the metaphysical-ethical unity of Aquinas's system is itself the contribution — not particular doctrines but the integrated framework
+  Solution: A defense of Thomism as a live, integrative research program whose value is exactly its non-extractability — the framework is the contribution, and partial appropriation always loses what was philosophically distinctive
+  Date Added: 2024-01-01
+  Source: The Good of Thomas Aquinas; PROP-2026-05-05-010
+  Confidence: High
+
+---
+PRS-21:
+  Problem: The C2A2 project's MacIntyre criterion (a tradition is alive iff it can solve its own problems and engage external challenges from within its own resources) needs first-person testimony from inside a tradition that the criterion is being met — and Thomism is the obvious test case
+  Resource: A primary-source articulation by a leading analytic Thomist of why her tradition counts as alive — providing the inside-view warrant the C2A2 framework needs
+  Solution: Use Stump-and-Zoll's argument as the canonical first-person Thomist self-statement of tradition vitality within the C2A2 wiki, paired with the MacIntyre external-criterion view
+  Date Added: 2024-01-01
+  Source: The Good of Thomas Aquinas; PROP-2026-05-05-010
+  Confidence: Medium
+
+---
+PRS-22:
+  Problem: Contemporary moral psychology lacks a structured taxonomy of failure modes for the will-intellect system; vice is treated either as character-trait deficit (virtue ethics) or as cognitive error (rationalist ethics), but neither captures the way vices recur as distinctive patterns in human moral life
+  Resource: Stump's Thomistic exposition of the seven deadly sins as a structured typology of disordered will — each sin pivoting around a specific real good (pleasure, esteem, possession, etc.) misordered in object, manner, or measure relative to the agent's final end
+  Solution: A philosophical psychology of moral failure in which the vices are not arbitrary prohibitions but predictable failure modes of an intellect-will system oriented toward goods that are themselves real — the negative-space complement to her virtue theory, completing a Thomistic dynamics of moral transformation
+  Date Added: 2024-04-21
+  Source: The Seven Deadly Sins | Prof. Eleonore Stump; PROP-2026-05-14-001
+  Confidence: Medium
+
+---
+PRS-23:
+  Problem: Analytic philosophy lacks a rigorous account of how moral transformation can be both genuinely the agent's own act AND the work of an external causal agent (grace) — without collapsing into either Pelagian self-effort or determinist passivity
+  Resource: Stump's reconstruction of Aquinas's "will-quiescence" — a state in which the will ceases to actively resist God's love without yet positively willing union; this is presented as a non-meritorious threshold condition that grace can then convert into the will of faith
+  Solution: A two-stage model: (1) quiescence as the only "act" available to the unaided will, (2) infusion as the simultaneous arrival of grace, indwelling Spirit, and all infused virtues — preserving both agency and divine priority by locating them in different causal roles rather than in a competition for the same role
+  Date Added: 2025-01-01
+  Source: Aquinas's Ethics: the Infused Virtues and the Indwelling Holy Spirit; PROP-2026-05-05-009
+  Confidence: High
+
+---
+PRS-24:
+  Problem: Contemporary virtue ethics typically treats virtues as developmentally accumulated dispositions, but this leaves no room for the phenomenology of moral discontinuity (sudden conversion, instantaneous change of heart) that biblical and clinical literature both report
+  Resource: The Thomistic distinction between acquired virtues (built up by practice) and infused virtues (received in an instant with grace), as systematized in Stump's article
+  Solution: A dual-track virtue theory in which slow developmental virtue and instantaneous infused virtue are not rivals but operate at different levels of the soul's powers — providing a philosophical framework for moral discontinuity that is neither mystical nor reductive
+  Date Added: 2025-01-01
+  Source: Aquinas's Ethics: the Infused Virtues and the Indwelling Holy Spirit; PROP-2026-05-05-009
+  Confidence: Medium
+
+---
+PRS-26:
+  Problem: How does an agent move from moral deficiency to virtue — what is the mechanism of moral transformation? Purely voluntarist accounts (just try harder) and purely externalist accounts (grace alone) both fail to explain the phenomenology of genuine change
+  Resource: Stump's Thomistic account of divine indwelling as a form of interior cooperation: the Holy Spirit perfects the soul's own powers, enabling the agent to will and act virtuously in a way that is genuinely the agent's own — Aquinas's synthesis of divine causality and human agency
+  Solution: Moral transformation as cooperative causality — the agent's natural powers are genuinely operative but are elevated and directed by grace working within them. This offers a model of transformation that preserves agency while accounting for the inadequacy of unaided will
+  Date Added: 2026-01-30
+  Source: The Seven Cardinal Virtues and the Indwelling Holy Spirit; PROP-2026-04-13-007
+  Confidence: Medium
+
+---
+PRS-27:
+  Problem: Thomistic accounts of suffering and flourishing have largely been transmitted in lecture or written-essay form; the dialogical structure that Aquinas himself privileged (objection–response) has been underused as a contemporary mode of Thomistic theological transmission.
+  Resource: A long-form Stump–Pine dialogue at the Thomistic Institute in which the audience hears the Thomistic argument unfold under a Thomist interlocutor's pressure — narrative arcs, suffering, flourishing, and personal union all developed conversationally rather than declaratively.
+  Solution: A demonstration that Thomistic doctrine is dialogically robust — that its core claims can be tested in real-time peer dialogue and survive the test, providing a working model of MacIntyrean tradition vitality from within.
+  Date Added: 2026-01-30
+  Source: The Meaning of Suffering & Human Flourishing w/ Fr. Gregory Pine, O.P. & Prof. Eleonore St; PROP-2026-05-08-003
+  Confidence: Medium
+
+---
+PRS-28:
+  Problem: The role of narrative arcs in making suffering intelligible — central to "Wandering in Darkness" and "Grains of Wheat" — has been articulated propositionally (PRS-08, PRS-11) but not yet demonstrated in the live, second-personal mode the theory itself privileges.
+  Resource: The dialogue's explicit thematization of "the role of stories in understanding the arcs of our lives" — Stump narrating in real time how stories function as cognitive instruments rather than only theorizing about them.
+  Solution: An instance of narrative cognition in action — Stump using narrative reasoning to discuss narrative reasoning, providing a meta-level case study for the Stump–Wolfe research program on knowledge-through-narrative (PRS-07, PRS-10).
+  Date Added: 2026-01-30
+  Source: The Meaning of Suffering & Human Flourishing w/ Fr. Gregory Pine, O.P. & Prof. Eleonore St; PROP-2026-05-08-003
+  Confidence: Medium
+
+---
+*Total PRS triplets: 25 (PRS-01 and PRS-03 re-homed to Loughran, 2026-06-11)*

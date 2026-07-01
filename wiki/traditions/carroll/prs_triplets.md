@@ -241,4 +241,166 @@ PRS-26:
   Confidence: Speculative
 
 ---
-*Total PRS triplets: 26*
+PRS-27:
+  Problem: As consumer devices generate dense streams of behavioral and locational data, the legal and epistemic frameworks that govern evidence have not caught up. When does data emitted by a person constitute testimony, observation, or admission — and against what warrant standards should it be admissible?
+  Resource: Ferguson's "self-surveillance" framing — data is treated not as testimony given but as a continuous low-friction emission, requiring a fresh legal-epistemic category that is neither speech nor mere observation.
+  Solution: A reframing of digital evidence as a hybrid epistemic object whose evidential weight depends on the inferential pipeline (sensor → log → query → retrieval) rather than on a discrete moment of communication. This pulls evidence theory toward a process / pipeline model that is structurally cousin to Carroll's emergence-as-pipeline thinking.
+  Date Added: 2026-03-16
+  Source: Mindscape 347 — Andrew Guthrie Ferguson on How Your Data Will Be Used Against You; PROP-2026-05-04-002
+  Confidence: Medium
+
+---
+PRS-28:
+  Problem: Can a strictly naturalist ontology ground objective moral claims without reintroducing non-natural properties?
+  Resource: Poetic-naturalism layered-ontology framing applied to welfare and suffering
+  Solution: Carroll argues moral facts are real at the level of description appropriate to agents and their wellbeing, without requiring moral facts to live at the fundamental-physics layer
+  Date Added: 2026-04-20
+  Source: Mindscape 351: Peter Singer on Maximizing Good for All Sentient Creatures; PROP-2026-04-21-002
+  Confidence: Medium
+
+---
+PRS-29:
+  Problem: How do we individuate "sentient creatures" for moral-weighting purposes when sentience appears to be a matter of degree?
+  Resource: Utilitarian welfare calculus combined with naturalist accounts of consciousness
+  Solution: The interview surfaces the unresolved tension — Singer's practical utilitarianism requires sharp enough sentience boundaries to do welfare arithmetic, while Carroll's physics-first ontology resists sharp boundaries
+  Date Added: 2026-04-20
+  Source: Mindscape 351: Peter Singer on Maximizing Good for All Sentient Creatures; PROP-2026-04-21-002
+  Confidence: Medium
+
+---
+PRS-30:
+  Problem: How should a naturalist frame end-of-life ethical decisions?
+  Resource: Utilitarian + naturalist account of personhood and continuity
+  Solution: Both agree that end-of-life ethics does not require supernatural commitments, but differ on whether total-utility maximization is the right frame
+  Date Added: 2026-04-20
+  Source: Mindscape 351: Peter Singer on Maximizing Good for All Sentient Creatures; PROP-2026-04-21-002
+  Confidence: Speculative
+
+---
+PRS-31:
+  Problem: Poetic naturalism asserts that ethical descriptions are real-but-emergent, but lacks a worked-out account of which entities are moral patients and on what grounds — leaving the framework descriptively complete but normatively underdetermined
+  Resource: Singer's sentience-based utilitarianism (developed across 50 years and refined in this conversation): moral consideration tracks the capacity to suffer or experience well-being, not species membership or rationality, with clean implications for animal ethics, end-of-life decisions, and global obligation
+  Solution: A naturalist normative framework where moral patient status is grounded in an empirically tractable property (sentience) — extending Carroll's descriptive emergence to a normative emergence that does not require non-physical value or theistic grounding, while remaining genuinely demanding
+  Date Added: 2026-04-20
+  Source: Mindscape 351 | Peter Singer on Maximizing Good for All Sentient Creatures; PROP-2026-05-08-004
+  Confidence: High
+
+---
+PRS-32:
+  Problem: A purely consequentialist ethics calibrated to maximize aggregate well-being can appear to demand impossibly heavy obligations or to permit instrumentalizing individuals — undercutting its credibility as a livable framework on Carroll's poetic-naturalist criterion (the higher-level description should be useful, not paralyzing)
+  Resource: Two-level utilitarianism / refined consequentialism (Singer's mature position) that distinguishes ground-level moral facts from action-guiding heuristics, allowing rule-of-thumb moral psychology to coexist with sentience-aggregation at the metaethical level
+  Solution: A way of holding consequentialism stable as a higher-level description (in Carroll's poetic-naturalist sense) without collapsing into the implausible demand that every action be optimized — preserves the framework's usefulness while keeping its physicalist grounding
+  Date Added: 2026-04-20
+  Source: Mindscape 351 | Peter Singer on Maximizing Good for All Sentient Creatures; PROP-2026-05-08-004
+  Confidence: Medium
+
+---
+PRS-33:
+  Problem: Decisions at the end of life (euthanasia, withdrawal of treatment, neonatal cases) are precisely where naturalist ethics is most at odds with deontological and theistic frameworks — and where Carroll's tradition has so far said little explicitly
+  Resource: Singer's longstanding analysis of end-of-life ethics through preference-satisfaction utilitarianism and personhood criteria, brought into Carroll's mainstream-physics audience for the first time at this length
+  Solution: A naturalist position on end-of-life decision-making that engages the Stump tradition's strongest counter-cases (the Christian-philosophical defense of the unconditional moral status of the impaired) directly, opening a productive disagreement rather than talking past it
+  Date Added: 2026-04-20
+  Source: Mindscape 351 | Peter Singer on Maximizing Good for All Sentient Creatures; PROP-2026-05-08-004
+  Confidence: Medium
+
+---
+PRS-34:
+  Problem: Carroll's emergence thesis needs an empirical handle — what feature of complex systems does "mind" or "agency" language actually track, beyond being a useful higher-level story?
+  Resource: Connectome-to-behavior research (Brunton et al.) — using the complete fruit-fly connectome plus high-throughput behavioral recordings to map wiring → dynamics → embodied behavior; bridging neuroscience, applied math, and data science
+  Solution: A research program where higher-level behavioral descriptions can be empirically grounded in (and partially predicted from) the physical substrate without being eliminated — the connectome supplies a "minimal sufficient physical description" against which emergent behavioral patterns can be assessed
+  Date Added: 2026-04-27
+  Source: 352 | Bing Brunton on Connecting the Connectome to the Body — Sean Carroll's Mindscape; PROP-2026-05-05-013
+  Confidence: Medium
+
+---
+PRS-35:
+  Problem: The "explanatory gap" between physical descriptions and behavioral/cognitive ones is often invoked rhetorically without concrete cases where it is being closed or resisted
+  Resource: Fruit-fly connectome as the first complete neural wiring diagram for an animal that performs rich behaviors — a working model system for testing how much of behavior can be predicted from physical description
+  Solution: A concrete test bed for Carroll's emergence-via-supervenience picture: if behavior supervenes on connectome plus dynamics, then "fly behavior" is real-but-emergent in Carroll's sense; if not, the residue is informative about what physicalism is missing
+  Date Added: 2026-04-27
+  Source: 352 | Bing Brunton on Connecting the Connectome to the Body — Sean Carroll's Mindscape; PROP-2026-05-05-013
+  Confidence: Medium
+
+---
+PRS-36:
+  Problem: Long-form interviews capture Carroll's rehearsed positions; AMAs surface his less-prepared responses to questions where his framework is being pressed — these are higher-information samples for tracking program evolution
+  Resource: Mindscape AMA May 2026 — full episode plus transcript on preposterousuniverse.com; Patreon-sourced questions covering the questioner-selected topic distribution rather than guest-driven topics
+  Solution: An ingestion target where the agent must read the full transcript before extracting PRS triplets — likely yielding observations on (a) any new MWI/observer formulations, (b) emergence/consciousness boundary cases, (c) any new methodological remarks on Bayesian theory confirmation in light of recent physics news (e.g., GPT-5.2 gluon result)
+  Date Added: 2026-05-04
+  Source: AMA | May 2026 — Sean Carroll's Mindscape; PROP-2026-05-05-014
+  Confidence: Medium (placeholder pending transcript review)
+
+---
+PRS-37:
+  Problem: Poetic naturalism asserts that value, dignity, and exploitation are real higher-level descriptions, but lacks a generative methodology for resolving cases where intuitions conflict (e.g., paid organ donation saves lives vs. commodifies the body) — leaving the framework descriptively complete but normatively under-tooled
+  Resource: Roth's market-design methodology (refined since the kidney-exchange clearinghouse and the medical-residency match): treat the transaction as a *mechanism* whose properties (stability, incentive-compatibility, fairness) can be engineered and tested, rather than morally categorized in advance
+  Solution: A naturalist normative engineering program in which contested moral categories (exploitation, dignity, consent) are operationalized as testable properties of mechanism designs — extending Carroll's emergence thesis to the design of institutions, not just the description of them
+  Date Added: 2026-05-11
+  Source: Mindscape 353 | Alvin Roth on the Economics of Morally Contested Markets; PROP-2026-05-15-001
+  Confidence: High
+
+---
+PRS-38:
+  Problem: Many "morally contested markets" debates collapse into talking past one another because they conflate three distinct questions — *should this be a market at all?*, *given this is a market, how should it be designed?*, and *what is being exchanged when it is*? — without isolating which question each side is answering
+  Resource: Roth's tripartite decomposition (implicit in his Nobel work, explicit in the *Moral Economics* framing): repugnance (the sociological fact that some societies refuse to allow a transaction), design (the engineering of mechanisms within an allowed market), and substantive ethics (the underlying values at stake) — three orthogonal axes for diagnosing where a disagreement actually lives
+  Solution: A clarifying methodology that lets rival traditions (Stump's Thomistic deontology, Singer's preference-utilitarianism, Roth's design-theoretic empiricism) specify exactly which axis they are operating on, dissolving apparent disagreements into more tractable disagreements about which axis is decisive in a given case — directly useful for C2A2's cross-tradition design
+  Date Added: 2026-05-11
+  Source: Mindscape 353 | Alvin Roth on the Economics of Morally Contested Markets; PROP-2026-05-15-001
+  Confidence: Medium
+
+---
+PRS-39:
+  Problem: Carroll's Bayesian theory-confirmation standard (PRS-03) was developed for fundamental physics but has not been extended to social-scientific or design-theoretic claims, leaving the network without a unified epistemology for the descriptive-physics ↔ normative-design boundary
+  Resource: Roth's empirical track record on real-world market designs (kidney exchange, medical residency match) as a case where a moral-engineering hypothesis was tested against tangible outcomes — lives saved, allocation fairness measured, exploitation rates moved
+  Solution: A natural extension of Carroll's confirmation criterion to *applied moral-design hypotheses*: a normative engineering proposal earns Bayesian credibility by demonstrable improvements in measurable outcomes within the contested-market domain, not by ethical-theoretical elegance alone — bridges Carroll's epistemic standard from physics into normative emergence
+  Date Added: 2026-05-11
+  Source: Mindscape 353 | Alvin Roth on the Economics of Morally Contested Markets; PROP-2026-05-15-001
+  Confidence: Medium
+
+---
+PRS-40:
+  Problem: The free-will debate is routinely framed as hinging on whether fundamental physics is deterministic — a framing Carroll calls "very backwards and very wrong," but which lacks a positive replacement that preserves genuine choice rather than merely redefining it.
+  Resource: List's level-relativity of determinism plus "emergent indeterminism" (List & Pivato): the determinism/indeterminism distinction is well-defined only relative to a specified level of description; a system can be deterministic at the micro level yet genuinely (ontically, not merely epistemically) indeterministic at the agential level.
+  Solution: A reframing in which free will requires indeterminism at the level of agency, which is fully compatible with micro-level physical determinism — dissolving the standard incompatibilist argument (van Inwagen) without watering down the common-sense notion of choice.
+  Date Added: 2026-05-18
+  Source: Mindscape 354 | Christian List on Free Will and Levels of Reality; PROP-2026-05-22-001
+  Confidence: High
+
+---
+PRS-41:
+  Problem: Poetic naturalism asserts higher-level descriptions are "real" but is often accused of being merely a permissive attitude; it needs an argued reason why supervenience on physics does not force reduction to physics.
+  Resource: List's non-reductive physicalism: the inference from supervenience physicalism ("fix all the particles and you fix Sean and Christian") to explanatory reducibility is invalid; intentional concepts (goals, beliefs, representations) are not reducible to sub-intentional vocabulary, granting higher levels genuine explanatory autonomy.
+  Solution: A principled defense of the reality and autonomy of higher-level descriptions that grounds Carroll's poetic naturalism — supervenience secures physicalism while non-reducibility secures the standing of agency, value, and meaning as real patterns.
+  Date Added: 2026-05-18
+  Source: Mindscape 354 | Christian List on Free Will and Levels of Reality; PROP-2026-05-22-001
+  Confidence: High
+
+---
+PRS-42:
+  Problem: C2A2's question of whether AI agents can be genuine members of a tradition is usually entangled with the hard problem of machine consciousness, which has no near-term resolution.
+  Resource: List's separation of agency from consciousness: free will and moral agency depend on satisfiable functional criteria (representational states, goal-directedness, capacity to act on reasons) that can in principle be met by groups and by AIs/LLMs — "a different question than whether the AI is conscious... a much easier question and maybe a more important question."
+  Solution: A framework for ascribing agency (and therefore responsibility) to non-human systems independent of solving consciousness — directly relevant to whether AI participants in C2A2 traditions count as agents in the network.
+  Date Added: 2026-05-18
+  Source: Mindscape 354 | Christian List on Free Will and Levels of Reality; PROP-2026-05-22-001
+  Confidence: Medium
+
+---
+PRS-43:
+  Problem: A unitarily evolving finite-dimensional quantum universe is recurrent, so it should spend most of its time at equilibrium and be dominated by Boltzmann-Brain observers — apparently ruling out such models phenomenologically.
+  Resource: Commensurability of energy-eigenvalue differences, which converts generic recurrence into exact periodicity of the global quantum state.
+  Solution: An exactly periodic cosmology in which a single distinguished low-entropy-to-high-entropy excursion (a candidate Big Bang) dominates over Boltzmann fluctuations, making a cyclic quantum universe phenomenologically acceptable.
+  Date Added: 2026-05-28
+  Source: Toward a Phenomenologically Acceptable Quantum Cyclic Universe; PROP-2026-06-19-001
+  Confidence: Medium
+
+---
+PRS-44:
+  Problem: How can a low-entropy past (the arrow of time) arise without an external boundary condition imposed by hand?
+  Resource: A finite-dimensional unitary state initialized at minimum thermodynamic entropy whose periodic dynamics generate an intrinsic entropy excursion.
+  Solution: The arrow of time is recovered internally as the single large downward-then-upward entropy excursion per cycle (Big Bang → Big Crunch), rather than postulated.
+  Date Added: 2026-05-28
+  Source: Toward a Phenomenologically Acceptable Quantum Cyclic Universe; PROP-2026-06-19-001
+  Confidence: Speculative
+
+---
+*Total PRS triplets: 44*

@@ -204,7 +204,79 @@ PRS-21:
   Confidence: Medium
 
 ---
-*Total PRS triplets: 21*
+PRS-22:
+  Problem: Active inference describes individual agents, but it is unclear under what conditions a group of such agents is itself a single agent rather than merely a crowd.
+  Resource: The group-level Markov blanket — a statistical boundary maintained by the collective as a whole, distinct from the blankets of its members.
+  Solution: When a collective sustains a group-level Markov blanket, it satisfies the formal conditions to be modeled as one active-inference agent; "one" and "many" descriptions become two consistent levels of the same generative model.
+  Date Added: 2025-02-12
+  Source: As One and Many: Relating Individual and Emergent Group-Level Generative Models in Active ; PROP-2026-06-22-002
+  Confidence: High
+
+---
+PRS-23:
+  Problem: C2A2 needs a principled, in-principle-measurable criterion for when a community of inquirers behaves as a unified tradition vs. a loose aggregate.
+  Resource: Nested generative models — individual member models embedded within an emergent group-level generative model under shared free-energy minimization.
+  Solution: The framework gives a candidate operationalization: a tradition is "one agent" to the degree it sustains a group-level blanket and a shared generative model; degradation of that boundary marks fragmentation. This is a measurable target for the accelerator-detector.
+  Date Added: 2025-02-12
+  Source: As One and Many: Relating Individual and Emergent Group-Level Generative Models in Active ; PROP-2026-06-22-002
+  Confidence: Medium
+
+---
+PRS-24:
+  Problem: The proliferation of agentic AI has outpaced the conceptual tools needed to characterize agency in computational systems. Existing definitions (autonomy, goal-directedness) are too coarse to distinguish degrees or kinds of agency, and don't yield operational metrics.
+  Resource: A three-criterion minimal definition of agency (intentionality, rationality, explainability) instantiated as a POMDP under expected-free-energy minimization, with empowerment (action–observation channel capacity) as the operational metric.
+  Solution: A "computational phenotyping" methodology for AI agency — agency becomes a measurable, graded property along a spectrum (zero, intermediate, high) rather than a binary or discursive label, and the same variational framework that phenotypes humans in computational psychiatry phenotypes AI systems.
+  Date Added: 2026-04-25
+  Source: Active Inference: A method for Phenotyping Agency in AI systems?; PROP-2026-05-04-001
+  Confidence: High
+
+---
+PRS-25:
+  Problem: AI systems can be trained on objectives that imitate goal-directed behavior without satisfying the structural conditions that would warrant calling them agents (i.e. without intentional-rational-explainable structure). How do we tell apart "behaviorally agent-like" systems from "structurally agent-like" systems?
+  Resource: Empowerment as a structural-rather-than-behavioral metric — it measures the capacity of the agent's action policies to causally constrain anticipated observations, regardless of whether external behavior looks goal-directed.
+  Solution: A way to dissolve the "looks like an agent" / "is an agent" ambiguity in AI systems by grounding the answer in the geometry of the agent's generative model, not in its behavioral output.
+  Date Added: 2026-04-25
+  Source: Active Inference: A method for Phenotyping Agency in AI systems?; PROP-2026-05-04-001
+  Confidence: Medium-High
+
+---
+PRS-26:
+  Problem: Active inference and generalised predictive coding offer joint inference, learning, and uncertainty estimation in principle, but the implementations available (DEM and variants) have been offline / batch — unable to assimilate streaming data while also updating parameters and noise estimates without retraining.
+  Resource: ODEM — Online Dynamic Expectation Maximisation — built by separating temporal scales: fast updates over hidden states, slow updates over parameters and precisions, all variationally consistent.
+  Solution: A biologically-inspired, theoretically-grounded online inference scheme that performs triple estimation (states, parameters, precisions) on streaming data, validated on non-linear and potentially chaotic generative models — closing the gap between FEP's theoretical claims and deployable inference.
+  Date Added: 2026-05
+  Source: Online Generalised Predictive Coding; PROP-2026-05-05-003
+  Confidence: High
+
+---
+PRS-27:
+  Problem: Engineering and neuroscience have parallel literatures on the same mathematical object (variational Kalman-Bucy filtering / generalised predictive coding / DEM), but these have not been unified under one online procedure usable across disciplines.
+  Resource: Recognition that the engineering, neuroscience, and time-series-analysis traditions describe the *same* generalised filtering scheme; ODEM as the cross-disciplinary online variant.
+  Solution: A single online algorithmic specification that engineers, neuroscientists, and statisticians can all deploy — making FEP's claim of substrate independence operational at the level of *implementation* rather than only at the level of formal proof.
+  Date Added: 2026-05
+  Source: Online Generalised Predictive Coding; PROP-2026-05-05-003
+  Confidence: Medium-High
+
+---
+PRS-28:
+  Problem: Psychiatry lacks a formal framework that connects phenomenological experience (what symptoms feel like) to mechanistic neurobiology (what neuromodulators do) — leaving treatment empirical rather than principled
+  Resource: A computational-phenomenology framework in which neuromodulation encodes precision (inverse variance of prediction error) over selected sensory channels; psychopathology becomes a case of aberrant precision-weighting on belief updates
+  Solution: A formal mapping between specific neuromodulator profiles and specific symptom phenotypes via precision dynamics — opens a route to predictive, mechanism-targeted psychiatric intervention rather than symptomatic management
+  Date Added: 2026-05-28
+  Source: Precision psychiatry — Karl J. Friston (UCL), Cambridge Neuroscience Distinguished Lecture; PROP-2026-05-18-003
+  Confidence: Medium (lecture forthcoming; abstract represents Friston's stated intent rather than published derivation)
+
+---
+PRS-29:
+  Problem: Friston's "minimal theory of consciousness" (PRS-09) and his trauma/metastability work (PRS-13) and his Bayesian-self-trapping account of symptoms (PRS-14) have not yet been integrated under a single computational-phenomenology umbrella
+  Resource: The "precision psychiatry" framing as the operational integration point — neuromodulatory precision dynamics provide the common mechanism across active-inference accounts of consciousness, trauma, and symptom-formation
+  Solution: An emerging sub-program of computational phenomenology that unifies prior Friston-program PRS triplets on consciousness, trauma, and symptoms under a single mechanistic axis (precision-weighting dynamics) — likely to become a named research stream
+  Date Added: 2026-05-28
+  Source: Precision psychiatry — Karl J. Friston (UCL), Cambridge Neuroscience Distinguished Lecture; PROP-2026-05-18-003
+  Confidence: Speculative (inferred from abstract + trajectory of recent PRS triplets in this wiki)
+
+---
+*Total PRS triplets: 29*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

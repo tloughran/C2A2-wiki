@@ -194,4 +194,112 @@ PRS-20:
 
 
 ---
-*Total PRS triplets: 20*
+PRS-21:
+  Problem: Fredrickson's theoretical claim that love-the-emotion just is positivity resonance — that constructs commonly grouped under "love" (desire, intimacy, trust, commitment) are all downstream products of accumulated positivity resonance — has been programmatically asserted but not directly empirically tested with behavioral markers
+  Resource: Lai, Otero, Chen, Wells, Levenson, & Fredrickson (2025): a multi-modal observational study of long-term married couples scoring behavioral positivity-resonance markers (synchronized affect, vocal mirroring, shared laughter) and correlating those markers with both trait and state love measures
+  Solution: Direct empirical confirmation that observable positivity-resonance markers track self-reported love at both trait and state levels — establishing positivity resonance as a measurable behavioral signature of love rather than merely a theoretically posited substrate
+  Date Added: 2025-01-01
+  Source: Does Positivity Resonance Signify Love? Markers of Positivity Resonance in Long-Term Marri; PROP-2026-05-05-012
+  Confidence: High
+
+---
+PRS-22:
+  Problem: For the C2A2 project, claims about "love" as an ontologically significant phenomenon (theological, philosophical, McGilchrist's right-hemisphere relational knowing) need an empirical handle — otherwise they remain rhetorically powerful but empirically untraceable
+  Resource: The Lai et al. behavioral coding scheme — synchronized smiles, mirrored vocal tones, shared laughter — provides a concrete empirical operationalization that any tradition can adopt as a measurement of love-the-event
+  Solution: Adopt Lai et al.'s behavioral markers as the C2A2 empirical bridge between (a) Fredrickson's measurement framework, (b) Stump's Thomistic union-as-final-cause, (c) Kastrup's idealist account of love as ontological coupling, (d) McGilchrist's RH relational knowing — providing a single measurable phenomenon that multiple traditions can interpret from within their own frameworks
+  Date Added: 2025-01-01
+  Source: Does Positivity Resonance Signify Love? Markers of Positivity Resonance in Long-Term Marri; PROP-2026-05-05-012
+  Confidence: Medium
+
+---
+PRS-23:
+  Problem: Positivity resonance has been operationalized via multiple incommensurable methods (self-report, observer-coded behavior, physiological synchrony), leaving open whether they actually index the same construct or three loosely related phenomena — a foundational concern for any claim that positivity resonance is the right measure of community connection quality.
+  Resource: A three-method convergent-validity design comparing self-report, behavioral, and physiological assessments of the same social interactions across the same participants, published in Journal of Personal and Social Relationships (2025).
+  Solution: Empirical demonstration of (or evidence about the limits of) convergent validity across the three assessment families — establishing the measurement infrastructure that lets Fredrickson's program scale across labs and contexts, and lets C2A2 deploy its preferred channel without losing comparability.
+  Date Added: 2025-01-01
+  Source: Positively in-sync: Convergent validity across three distinct assessments of the positive ; PROP-2026-05-08-002
+  Confidence: High
+
+---
+PRS-24:
+  Problem: For C2A2 to use positivity resonance as a metric of inter-tradition dialogue health, the chosen measurement instrument must be deployable in real community settings (not just paired-couple lab studies) and must agree with gold-standard physiological measures.
+  Resource: Convergent validity findings that bridge cheap, scalable measures (self-report) and expensive, mechanism-revealing measures (physiological synchrony) — clarifying which compromises in measurement are acceptable in field deployment.
+  Solution: An evidence-based decision framework for selecting positivity-resonance assessments in C2A2 community studies — enabling deployment without sacrificing construct validity.
+  Date Added: 2025-01-01
+  Source: Positively in-sync: Convergent validity across three distinct assessments of the positive ; PROP-2026-05-08-002
+  Confidence: Medium
+
+---
+PRS-25:
+  Problem: Positivity resonance theory has been developed primarily for dyadic adult interactions and weak-tie community-scale interactions, but the developmental pathway by which children acquire the capacity for positivity resonance — and the role of the parent-pair dyad as a developmental positivity field — has been theoretically underspecified
+  Resource: Don, Simpson, Fredrickson, & Algoe's Interparental Positivity Spillover Theory (IPST): a three-mechanism account of how interparental positive interactions transmit to children via (a) the child's own positive emotional experience, (b) altered perceptions of the parents, (c) emulated interpersonal behaviors
+  Solution: A developmental extension of positivity resonance theory: the parent-pair functions as a positivity field that scaffolds the child's nervous system, perception, and behavior — providing the biographical mechanism by which capacity for positivity resonance is constructed in the first place
+  Date Added: 2025-07-01
+  Source: Interparental Positivity Spillover Theory: How Parents' Positive Relational Interactions I; PROP-2026-05-05-011
+  Confidence: High
+
+---
+PRS-26:
+  Problem: For the C2A2 project, the question of how a tradition's affective signature (its lived emotional grammar — what gratitude, joy, lament, and reconciliation look like inside that tradition) is reproduced across generations has been treated implicitly but not theoretically modeled
+  Resource: IPST's spillover mechanism, when generalized beyond the parent-child dyad, suggests that any high-positivity-resonance dyad inside a tradition functions as a "spillover field" for tradition-naive observers — including children, students, AI agents, and second-tradition learners
+  Solution: Treat tradition-internal high-resonance dyads (mentor-student, master-apprentice, rabbi-disciple, lab head-postdoc) as spillover fields whose emotional grammar transmits to observers via the same three mechanisms IPST identifies — providing C2A2 with a developmental theory of tradition acquisition
+  Date Added: 2025-07-01
+  Source: Interparental Positivity Spillover Theory: How Parents' Positive Relational Interactions I; PROP-2026-05-05-011
+  Confidence: Medium
+
+---
+PRS-27:
+  Problem: A research program tracked across decades fragments into individual papers; without an author's synthesis, downstream traditions risk inheriting a collage of citations rather than the program's actual arc and load-bearing claims.
+  Resource: Fredrickson's five-section curation of fifteen flagship papers, each prefaced with the personal-and-scientific story of how the breakthrough emerged — making explicit the implicit research-program logic that ties the corpus together.
+  Solution: A primary-source canonical map of the broaden-and-build / positivity-resonance program, organized by the author's own sense of which findings are foundational and how they connect — enabling the C2A2 wiki to ground its Fredrickson tradition wiki in the author's own architecture.
+  Date Added: 2025-09-17
+  Source: Positive Emotions: Key Scientific Contributions and the Stories Behind Them (Cornerstones ; PROP-2026-05-08-001
+  Confidence: High
+
+---
+PRS-28:
+  Problem: Positivity resonance has often been cited in C2A2 as the empirical anchor of love-as-biological-coupling, but its emergence from earlier broaden-and-build work has not been narrated as a coherent paradigm shift within Fredrickson's own program.
+  Resource: The "Feeling as One: Origins of the Positivity Resonance Theory" section, which traces how positivity resonance emerged from broaden-and-build research as a distinct theoretical advance — the move from intra-individual emotion to inter-individual co-emotion.
+  Solution: A reading of positivity resonance as a within-program paradigm extension (not a departure) — the same broaden-and-build logic operating at the dyadic rather than individual level. This justifies treating positivity resonance as MacIntyre-criterion progress within the Fredrickson tradition: a new theoretical resource that solved problems the predecessor framework couldn't.
+  Date Added: 2025-09-17
+  Source: Positive Emotions: Key Scientific Contributions and the Stories Behind Them (Cornerstones ; PROP-2026-05-08-001
+  Confidence: Medium
+
+---
+PRS-29:
+  Problem: Population-scale interventions to cultivate stranger-connection require a delivery channel that reaches young adults where they actually are — and social media, while often implicated as a driver of isolation, is also where young adults spend the largest share of their discretionary attention
+  Resource: Lazard et al. (2025) experimental optimization of video social-media intervention messages — systematically varying visual framing (connected peers / lonely peers / safe spaces / control) and message framing in a between-persons online experiment with young adults
+  Solution: A demonstrated experimental design and message-optimization methodology for using social media itself as a delivery vehicle for in-person connection cues — turning the medium implicated in loneliness into the means of its mitigation. The Lazard attention-capture framework becomes a transferable design tool for any C2A2 weak-tie-cultivation campaign
+  Date Added: 2025-09-25
+  Source: Social Media Posts to Encourage In-Person Connections: Online Experiment With Young Adults; PROP-2026-05-14-003
+  Confidence: High
+
+---
+PRS-30:
+  Problem: Fredrickson's positivity-resonance framework has been criticized for offering elegant theory but few mechanisms for population deployment; conversely, public-health messaging campaigns rarely use the most rigorous available emotional-mechanism research
+  Resource: A direct collaboration between Lazard's health-communication design lab and Fredrickson's positivity-resonance lab, embedding theory-informed message content within attention-optimized delivery designs
+  Solution: A reproducible cross-disciplinary template — positivity-resonance theory × health-communication design — for translating positive-emotion mechanisms into scalable behavioral interventions, with measurable engagement and behavioral-intent outcomes
+  Date Added: 2025-09-25
+  Source: Social Media Posts to Encourage In-Person Connections: Online Experiment With Young Adults; PROP-2026-05-14-003
+  Confidence: Medium
+
+---
+PRS-31:
+  Problem: PRS-08 identified high-quality listening as a probable mechanism for positivity resonance with strangers, but the causal direction and the specific behavioral substrates of "high-quality listening" had not been established in a controlled behavioral-coding paradigm
+  Resource: West et al. (2025) controlled study in Communications Psychology in which observed listening behaviors (follow-up questions, attentive nonverbal cues) were behaviorally coded and tested as predictors and mediators of both observer-rated and self-reported markers of social connection between strangers
+  Solution: A confirmed behavioral pathway — high-quality listening behaviors → perceived safety + real-time sensory connection → positivity resonance — providing the specific behavioral observables that listening-quality interventions need to target for measurable population effects on stranger-connection
+  Date Added: 2025-11
+  Source: High-quality listening behaviors linked to social connection between strangers; PROP-2026-05-14-002
+  Confidence: High
+
+---
+PRS-32:
+  Problem: Positivity resonance theory has been criticized for being descriptively rich but operationally underspecified — what exactly are the observable behaviors that produce it, beyond the post-hoc reports of participants?
+  Resource: A behavioral coding scheme for "high-quality listening" — follow-up questions and attentive nonverbal cues — operationalized at a granularity that supports both observer rating and intervention training
+  Solution: Positivity resonance has at least one well-specified behavioral antecedent that can be coded, trained, and measured — addressing the operationalization gap and providing the first concrete behavioral target for the kinds of population-scale interventions the C2A2 framework requires
+  Date Added: 2025-11
+  Source: High-quality listening behaviors linked to social connection between strangers; PROP-2026-05-14-002
+  Confidence: High
+
+---
+*Total PRS triplets: 32*

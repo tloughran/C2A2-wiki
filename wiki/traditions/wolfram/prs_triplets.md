@@ -218,7 +218,142 @@ PRS-23:
 
 
 ---
-*Total PRS triplets: 23*
+PRS-24:
+  Problem: What distinguishes living systems from arbitrary computational systems? Wolfram's Physics Project derives universal physics from hypergraph rewriting, but life-as-computation has lacked a formal characterization that explains why some computations are alive and most are not.
+  Resource: The "rulial ensemble" — a constrained ensemble of rules within rulial space, where the constraints are those that achieve and sustain organismic purpose. Combined with "bulk orchestration": the empirical observation that molecular and cellular processes are actively organized rather than statistically random.
+  Solution: Life is a localized, history-dependent occupation of rulial space — an ensemble of rules selected, over evolutionary time, for the property that running them on each other produces a self-sustaining, self-correcting computational coherence. The rulial ensemble is to biology what a single rule is to physics.
+  Date Added: 2025-11-11
+  Source: What's Special about Life? Bulk Orchestration and the Rulial Ensemble in Biology and Beyon; PROP-2026-05-05-016
+  Confidence: Medium
+
+---
+PRS-25:
+  Problem: Computational irreducibility (PRS-04) seems to forbid prediction — yet biological organisms reliably reach developmental targets. How can adaptive, goal-directed systems exist within a universe where most computations are unpredictable?
+  Resource: Bulk orchestration as the answer: organisms do not predict computational futures, they constrain them — the rulial ensemble is precisely the set of rules whose joint operation funnels otherwise irreducible computation into reliable, organism-scale outcomes.
+  Solution: Biological reliability is not the negation of computational irreducibility but its harnessing. Selection acts on rule-ensembles whose collective behavior achieves bulk orchestration despite irreducibility at the substrate level. This reframes "agency" (PRS-04) as the local taming of irreducibility through rulial-ensemble structure.
+  Date Added: 2025-11-11
+  Source: What's Special about Life? Bulk Orchestration and the Rulial Ensemble in Biology and Beyon; PROP-2026-05-05-016
+  Confidence: Medium
+
+---
+PRS-26:
+  Problem: The Wolfram Physics Project has been received with skepticism in mainstream physics partly because it appears to bypass the mathematical scaffolding (differential geometry, fiber bundles, gauge symmetry) that makes contemporary physics work. Without an articulation of how the hypergraph picture *contains* or *generalizes* that scaffolding, the program reads as orthogonal rather than continuous with mature physics.
+  Resource: The Madrid colloquium framing — "From Geometric Ideas to Computational Frontiers" — explicitly positions geometry and computation as complementary lenses on the same complex phenomena, with the hypergraph framework as the computational counterpart to the geometric one.
+  Solution: A research-program move: Wolfram Physics is to be developed not as a replacement for geometric physics but as the substrate from which geometric physics emerges in the limit where rule-induced causal structure is dense enough to coarse-grain into a manifold. This is a programmatic commitment to interoperability with mainstream mathematical physics, not a separatist claim.
+  Date Added: 2026-02-20
+  Source: Stephen Wolfram at Universidad Complutense de Madrid — closing colloquium of 'From Geometr; PROP-2026-05-05-017
+  Confidence: Medium
+
+---
+PRS-27:
+  Problem: Wolfram's rulial-space / computational metaphysics is a framework. Translating it into practitioner-relevant claims about how to build AI systems is a separate challenge — the framework is large and abstract; the claims need to be concrete.
+  Resource: The South Park Commons fireside chat as a venue where Wolfram is forced to compress the framework into actionable founder / engineer language.
+  Solution: A practitioner-facing summary of what the rulial-space view recommends for AI system design — likely overlapping with but distinct from the Mullenweg critique. Useful for the wiki agent to track the gap between Wolfram-the-philosopher and Wolfram-the-tool-builder.
+  Date Added: 2026-03-19
+  Source: Fireside Chat at South Park Commons (March 19, 2026); PROP-2026-05-04-004
+  Confidence: Medium (depends on chat content)
+
+---
+PRS-28:
+  Problem: Quantum algorithm speedups (Shor, Grover, etc.) are well-known cases of "quantum beats traditional," but the existing theoretical accounts (complexity classes, oracle separations) describe *that* such speedups exist without explaining *where in the structure of all possible computations* the speedup actually comes from. Without such an account, quantum advantage remains a list of cases rather than a derivable feature of the computational universe.
+  Resource: Wolfram's framing in the April 24 Q&A: treat quantum algorithms as paths through the multiway/rulial graph that exploit branch-coherence (multi-thread sampling of the underlying hypergraph), and treat "classical algorithms" as observer-bounded single-thread paths. The speedup is then a structural feature of the observer-class running the algorithm — connecting directly to PRS-17 (three-parameter observer-class taxonomy: scale × temporal coherence × multiway-coherence) and PRS-18 (two-level reading of PCE).
+  Solution: A ruliological reading of quantum advantage: classical-vs-quantum is the algorithmic shadow of single-thread-vs-multiway observer dynamics. Quantum speedup is the empirical signature, in computation, of the observer-class variation Wolfram has been describing in observer theory. This converts "why is quantum faster?" from a complexity-class question to an observer-theory question.
+  Date Added: 2026-04-24
+  Source: Future of Science and Technology Q&A (April 24, 2026); PROP-2026-05-16-001
+  Confidence: Medium
+
+---
+PRS-29:
+  Problem: Quantum biology (avian magnetoreception, photosynthesis, possibly olfaction) presents experimentally suggestive evidence that biological systems exploit quantum coherence, but lacks a unifying theoretical frame. Are these isolated curiosities, or are they instances of biology systematically inhabiting parts of the computational universe that classical-physics modeling misses?
+  Resource: Wolfram's quantum-biology segment (Q&A April 24, opening ~20s): position biological systems as observers whose effective physics differs from human-scale observers along the (scale × multiway-coherence) axes of the PRS-17 taxonomy. Quantum-biological phenomena are then predicted not as exotic exceptions but as the *default* effective physics of small-scale, partially-multiway observers.
+  Solution: A bridge thesis: quantum-biological phenomena are the experimental signature of non-human-scale observer classes in Wolfram's observer-theory sense. This converts the patchwork of quantum-biology findings into a coherent prediction: *find more small-scale, multiway-coherent biological subsystems and you should find more quantum-coherence effects in them*. It also gives the Levin tradition's "cognition all the way down" thesis a physics-side argument.
+  Date Added: 2026-04-24
+  Source: Future of Science and Technology Q&A (April 24, 2026); PROP-2026-05-16-001
+  Confidence: Speculative
+
+---
+PRS-30:
+  Problem: How do paradigm-shifting ideas actually come about, and what organizational and leadership conditions favor them? Wolfram's computational-irreducibility thesis predicts that genuinely novel ideas cannot be reached by interpolation from existing positions — but does not by itself give a constructive account of where the discontinuities come from or how to host them institutionally.
+  Resource: Wolfram's "Productive leadership & paradigm-shifting ideas" segment (~30 minutes, April 29, 2026 livestream) — first-person account from a paradigm-shifting practitioner of how he structures Wolfram Research, the Physics Project, and the Wolfram Institute around the conditions he believes generate paradigm-shifting ideas.
+  Solution: A practitioner-level model of paradigm-shift generation (treating paradigm shifts as rulial-space jumps that require specific institutional scaffolding to be reachable), positioned as complementary to MacIntyre's tradition-internal mature-practitioner framework — the C2A2 tradition tracker can use this as a reference frame for what *Wolfram* takes paradigm-shifting to require, distinct from what a MacIntyrean account would prescribe.
+  Date Added: 2026-04-29
+  Source: Business, Innovation and Managing Life Q&A (April 29, 2026); PROP-2026-05-09-002
+  Confidence: Medium
+
+---
+PRS-31:
+  Problem: The Wolfram program makes strong claims about AI's relationship to human cognition (PRS-11, PRS-12, PRS-15, PRS-16) but the *societal* and *business-structural* implications of those claims have been less explicitly articulated. How does Wolfram's rulial-space view of AI translate into practical claims about AI's impact on business and society?
+  Resource: The "AI's impact on business & society" segment (April 29, 2026, t=11m44s, ~34 minutes) — Wolfram in a business-strategy register applying his computational framework to AI's role in firms and economies.
+  Solution: A bridge document (potentially) between Wolfram's metaphysical/computational claims about AI (already in the wiki) and Wolfram's *applied* claims about AI's social and economic role — closing a small but real gap in the Wolfram wiki between the foundational essays and the practical implications. Useful for the master wiki's AI cluster.
+  Date Added: 2026-04-29
+  Source: Business, Innovation and Managing Life Q&A (April 29, 2026); PROP-2026-05-09-002
+  Confidence: Speculative (depends on actual content of segment)
+
+---
+PRS-32:
+  Problem: Why does biology converge on brain-like structures specifically (rather than other possible information-integration substrates)? "Brains" as a biological category appears suspiciously load-bearing — but the Wolfram framework is supposed to be substrate-neutral. What does ruliology say about why brains, in particular, "matter in biology"?
+  Resource: Wolfram's segment "Why brains matter in biology" (Episode 167, t=18s) — applies the rulial-observer frame to the question of why centralized neural processing has the role it does in biological organisms, treating brains as a particular sampling structure within the rulial ensemble that biological evolution selects for.
+  Solution: A reading of "brains" as a class of high-coherence observer-structures within the rulial ensemble — not metaphysically privileged, but evolutionarily selected because of the kind of rulial-space sampling they enable. This converts "why brains?" from a biological mystery into a question about which observer-classes are stable attractors under evolutionary dynamics in the Ruliad.
+  Date Added: 2026-05-01
+  Source: Science & Technology Q&A for Kids (and others) [Episode 167]; PROP-2026-05-09-001
+  Confidence: Medium
+
+---
+PRS-33:
+  Problem: Standard evolutionary theory is bounded by biological substrate (DNA, cells, populations). Wolfram has begun arguing that the *form* of evolutionary process — variation, selection, lineage — is itself a substrate-independent rulial dynamic. But the C2A2 wiki has not yet captured a compact Wolfram statement of "evolution beyond biology" as a programmatic claim distinct from the November 2025 bulk-orchestration essay.
+  Resource: Wolfram's "Evolution beyond biology" segment (Episode 167, t=8m3s) — articulates evolution as a generic rulial-ensemble dynamic that biological evolution is one instance of, with implications for AI training, language change, and (by extension) MacIntyrean tradition-evolution.
+  Solution: A programmatic statement that evolution is a *rulial process class* and biological evolution is a *specialization* — opening the door to applying Wolfram's evolutionary formalism to non-biological substrates (AI systems, traditions of inquiry, scientific paradigms) as legitimate ruliological objects rather than mere metaphors.
+  Date Added: 2026-05-01
+  Source: Science & Technology Q&A for Kids (and others) [Episode 167]; PROP-2026-05-09-001
+  Confidence: Medium
+
+---
+PRS-34:
+  Problem: Who is accountable for the actions of autonomous, "ownerless" AI agents operating in the real world, when no single owner directs or can predict their behavior?
+  Resource: Wolfram's computational-irreducibility account of agency (PRS-04): an agent's trajectory is not predictable from outside its own computation, so accountability cannot rest on the predictability or transparency of the agent's internal process.
+  Solution: A reframing in which accountability attaches to the human–AI deployment-and-verification pipeline (who deploys, who verifies, who benefits) rather than to the agent's internal predictability — making "ownerless AI" a governance design problem about pipelines, not a search for a responsible internal homunculus.
+  Date Added: 2026-05-13
+  Source: Business, Innovation and Managing Life Q&A (May 13, 2026); PROP-2026-05-23-002
+  Confidence: Speculative
+
+---
+PRS-35:
+  Problem: How can AI be made practically useful without users being "fooled" by confident-but-wrong output?
+  Resource: The Computation-Augmented Generation / Foundation-Tool paradigm (PRS-11, PRS-13): symbolic computation as verifiable ground truth injected into LLM output; "computation and openness" as the missing deployment commitments.
+  Solution: Deploy AI atop a computational verification backbone plus open infrastructure, so usefulness does not depend on trusting the LLM's self-report — extending the frontier-labs critique (PRS-13) from research strategy into practical deployment guidance.
+  Date Added: 2026-05-13
+  Source: Business, Innovation and Managing Life Q&A (May 13, 2026); PROP-2026-05-23-002
+  Confidence: Medium
+
+---
+PRS-36:
+  Problem: As AI accelerates the production of scientific claims and code, what becomes of the scientific method — how is genuine understanding preserved rather than merely accumulating unverifiable output?
+  Resource: Wolfram's reframing of the scientific method under computational irreducibility plus AI: understanding as a bounded observer's compression of an irreducible computational world, with the method shifting toward computational experiment (ruliology) and formal/symbolic verification of results.
+  Solution: A scientific method in which AI generates candidate results but trust attaches to a verification layer (symbolic/computational ground truth, extending CAG / PRS-11), and "understanding" is recast as the observer extracting reducible pockets from irreducible computation.
+  Date Added: 2026-05-15
+  Source: Future of Science and Technology Q&A (May 15, 2026); PROP-2026-05-23-001
+  Confidence: Medium
+
+---
+PRS-37:
+  Problem: How does human understanding itself change over time — is there a structure to the way understanding advances, or is it open-ended and ad hoc?
+  Resource: The rulial-space-of-minds framing (PRS-03/05, PRS-15–18): understanding as movement of a computationally-bounded observer through rulial space; "evolving understanding" = traversal toward new reducible pockets of an irreducible structure.
+  Solution: A model in which the growth of human (and machine) understanding is the progressive colonization of new regions of rulial space, making "how understanding evolves" a research question about observer trajectories rather than a purely historical narrative.
+  Date Added: 2026-05-15
+  Source: Future of Science and Technology Q&A (May 15, 2026); PROP-2026-05-23-001
+  Confidence: Medium
+
+---
+PRS-38:
+  Problem: Can AI-generated code be trusted, given that LLMs cannot guarantee correctness?
+  Resource: "AI for verifying code" segment — pairing LLM generation with computational/symbolic verification as the reliability backbone.
+  Solution: Relocate trust from generation to verification: the Wolfram computational stack (or any formal verifier) checks AI output, so usefulness does not depend on the LLM's own credibility. Direct extension of PRS-11 (CAG) and PRS-13 (computation + openness).
+  Date Added: 2026-05-15
+  Source: Future of Science and Technology Q&A (May 15, 2026); PROP-2026-05-23-001
+  Confidence: Medium
+
+---
+*Total PRS triplets: 38*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

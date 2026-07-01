@@ -182,4 +182,76 @@ PRS-18:
   Confidence: High
 
 ---
-*Total PRS triplets: 18*
+PRS-19:
+  Problem: Hoffman's program has had no institutional home distinct from his UC Irvine faculty position, leaving its long-term trajectory hostage to single-career contingencies and to journal-publication cycles.
+  Resource: The TRACE Institute as a dedicated organizational vehicle co-led by Hoffman and Prakash, with explicit moonshot framing and a research staff assembled around the trace-logic / decorated-permutations / conscious-agents-network research program.
+  Solution: Hoffman's program now has organizational continuity sufficient to absorb personnel transitions, plan multi-year research arcs (especially the amplituhedron-derivation and quantum-derivation arcs), and serve as a stable counterparty for inter-tradition collaboration (e.g., joint work with Levin, with Arkani-Hamed, with the FEP community).
+  Date Added: 2025-11 to 2026 (homepage updated 2025-11-27; institutional positioning continues into 2026)
+  Source: TRACE Institute — moonshot research initiative led by Donald Hoffman and Chetan Prakash; PROP-2026-05-05-005
+  Confidence: High
+
+---
+PRS-20:
+  Problem: The C2A2 dispatch system implicitly treats each tradition as a single authorial voice, but Hoffman's recent work is increasingly co-authored with Prakash (trace logic), Prentner (Quantum Interface Theory, PRS-11/12), and Chattopadhyay (Traces of Consciousness preprint). Without an institutional anchor, deciding which co-authors carry "the tradition's view" is unprincipled.
+  Resource: The TRACE Institute's leadership structure formally elevates Prakash to co-principal status alongside Hoffman, with the institute itself serving as the canonical-voice container for the program.
+  Solution: The Hoffman tradition wiki should be re-read as the *Hoffman-Prakash / TRACE Institute* tradition — co-authored work originating from TRACE-affiliated researchers (Prakash, Prentner, Chattopadhyay, others) is in-tradition rather than commentary; non-TRACE work by Hoffman alone (e.g., the Stevens' Handbook chapter, PRS-16/17/18) remains canonical but represents the older single-author phase. This affects how the agent should weight new sources going forward.
+  Date Added: 2025-11 to 2026 (homepage updated 2025-11-27; institutional positioning continues into 2026)
+  Source: TRACE Institute — moonshot research initiative led by Donald Hoffman and Chetan Prakash; PROP-2026-05-05-005
+  Confidence: Medium
+
+---
+PRS-21:
+  Problem: v1 of "Spacetime Bounds" introduced Chord/Arpeggio but did not provide a sharp formal separation result; without that separation, the bounds risked being a continuum rather than a categorical line distinguishing candidate-conscious from non-candidate systems.
+  Resource: v2's strict-weakness theorem — a formal proof that Arpeggio ⊊ Chord, with constructive examples of architectures (limited-concurrency exchange topologies) that satisfy Arpeggio but structurally forbid Chord.
+  Solution: Conscious Realism now distinguishes two empirically-distinct classes of candidate-conscious systems with concrete architectural diagnostics. Cloud-hosted LLMs, cluster-distributed AI agents, and hub-and-spoke organizations (including potentially some ant colonies and corporations under hub exchange) fall into the Arpeggio-only class — they may host weakly-bound experiential structures but cannot host Chord-class unified subjective experience under Hoffman's framework.
+  Date Added: 2026-04 (v2 update; v1 was 2026-03-13)
+  Source: Spacetime Bounds on Consciousness [v2]; PROP-2026-05-05-004
+  Confidence: High
+
+---
+PRS-22:
+  Problem: Conscious Realism has been criticized for offering no operational way to falsify claims about which systems are conscious, leaving the framework apparently immune to empirical disconfirmation.
+  Resource: The κvθ inequality as a measurable physical constraint — signal speed v is empirically known for any candidate substrate, exchange-architecture coefficient κ is computable from the system's connectivity graph, and integration time window θ is empirically constrainable from neurophysiological or system-engineering measurements.
+  Solution: A concrete falsification protocol — measure D, v, κ, θ for any candidate conscious system; if D > κvθ the system fails the Chord condition and (under Conscious Realism's auxiliary assumptions) cannot host unified subjective experience. This makes Conscious Realism the rare consciousness-first framework with a sharp operational test.
+  Date Added: 2026-04 (v2 update; v1 was 2026-03-13)
+  Source: Spacetime Bounds on Consciousness [v2]; PROP-2026-05-05-004
+  Confidence: High
+
+---
+PRS-23:
+  Problem: Mainstream physics-side Theory-of-Everything programs (string theory, loop quantum gravity, the amplituhedron program, Wolfram physics) all proceed by trying to derive consciousness, observation, and mind from a more fundamental physical substrate. But this strategy has produced 50+ years of theoretical work without a successful derivation, and the hard problem of consciousness remains intact.
+  Resource: Hoffman's Law — the explicit thesis that "a theory of everything starts with a theory of mind," promoted from a metaphysical conjecture to a methodological principle: any candidate TOE must specify its theory of mind as the foundational layer, with physical theory recovered as derived structure.
+  Solution: A reframing of the TOE project itself. Rather than competing with physics-side TOEs as an alternative, Conscious Realism reframes them as incomplete: any physical TOE that does not specify how observers (microphysical and macrophysical) emerge from a more fundamental layer is by Hoffman's Law not a candidate TOE. This converts Hoffman from a fringe philosophical position into a methodological gatekeeper for the field.
+  Date Added: 2026-04-04
+  Source: Hoffman's Law (Edge.org response); PROP-2026-05-12-001
+  Confidence: Medium-High
+
+---
+PRS-24:
+  Problem: The Interface Theory of Perception has historically been criticized for being a perceptual-science thesis with no obvious bearing on fundamental physics — IT shows perceptions are not veridical, but says nothing about what the underlying physical reality is.
+  Resource: The Edge.org formulation unifies two previously distinct lines of evidence under a single "observer creates property" thesis: (a) quantum-measurement observer effects at microphysical scale; (b) computational-perception observer effects at macrophysical scale. These are no longer two separate phenomena — they are two manifestations of the same underlying interface dynamics.
+  Solution: A unified observer-effect ontology. The same mechanism (observation as interface rendering) operates at both microphysical and macrophysical scales. This sharpens the bridge between Hoffman's perceptual-science theorems (FBT, IOS — PRS-16, PRS-17, PRS-18) and his physics-side conjectures (amplituhedron derivation, trace logic, Spacetime Bounds) — both rest on the same observer-creates-property mechanism.
+  Date Added: 2026-04-04
+  Source: Hoffman's Law (Edge.org response); PROP-2026-05-12-001
+  Confidence: Medium
+
+---
+PRS-25:
+  Problem: Conscious realism posits a network of conscious agents most of which are imperceptible to humans, but offers no empirical handle for detecting agents outside the standard perceptual interface.
+  Resource: Interface-transformation hypothesis — DMT as a pharmacological perturbation that transiently re-tunes the fitness-shaped perceptual interface, plus the extended-state DMTx protocol that lengthens the window from minutes to hours for trained observation.
+  Solution: A proposed experimental paradigm to test whether DMT phenomenology carries information beyond internally generated cognition, converting the "are these agents real?" question into a falsifiable hypothesis.
+  Date Added: 2026-06
+  Source: Traces of the Other – Are DMT Entities Real? DMT Phenomenology in the Framework of Conscio; PROP-2026-06-23-001
+  Confidence: Medium
+
+---
+PRS-26:
+  Problem: Trace logic has so far been applied to physics derivations (spacetime, quantum) but not to the structure of altered/atypical conscious experience.
+  Resource: A new version of trace logic for conscious observers, extended to model perceptual-interface states under pharmacological transformation.
+  Solution: Demonstration that the same trace-logic formalism intended to derive physics can also generate structured, predictive descriptions of non-ordinary perceptual regimes — broadening the formalism's empirical reach.
+  Date Added: 2026-06
+  Source: Traces of the Other – Are DMT Entities Real? DMT Phenomenology in the Framework of Conscio; PROP-2026-06-23-001
+  Confidence: Speculative
+
+---
+*Total PRS triplets: 26*

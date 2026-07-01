@@ -345,4 +345,76 @@ PRS-37:
   Confidence: Speculative
 
 ---
-*Total PRS triplets: 37*
+PRS-38:
+  Problem: Hemispheric theory is popularly received through a left=male / right=female equation that, if accepted, would either falsely essentialize the theory or discredit it by association when the equation fails.
+  Resource: McGilchrist's marshalling of observations that break the sex-to-hemisphere mapping, together with his reassertion that the hemispheric difference is one of *attentional stance* toward the world, not a bundle of stereotyped traits.
+  Solution: A clean separation of the defensible claim (asymmetric modes of attention) from the indefensible one (gendered hemispheres), removing a standing objection and clarifying what the theory does and does not assert.
+  Date Added: 2026-04-12
+  Source: Why the story about sex differences and the hemispheres is not straightforward; PROP-2026-05-20-001
+  Confidence: High
+
+---
+PRS-39:
+  Problem: A tradition can be misrepresented even when its slogans are accurately repeated, because the slogans get re-anchored to the receiving culture's categories (here, sex/gender essentialism).
+  Resource: This essay as a worked instance of a tradition's author publicly correcting a high-traffic misreading and naming exactly which inference does not follow.
+  Solution: Confirms the C2A2 design pattern that each tradition's wiki must record not only its claims but the characteristic *mis*readings the tradition disowns — a "what this tradition is NOT saying" register.
+  Date Added: 2026-04-12
+  Source: Why the story about sex differences and the hemispheres is not straightforward; PROP-2026-05-20-001
+  Confidence: Medium
+
+---
+PRS-40:
+  Problem: The question of post-mortem persistence of consciousness is treated either as taboo (physicalism) or as a matter of personal faith (theology) — with no widely accepted method for making the question scientifically tractable without either dissolving it or smuggling in undefended metaphysical commitments.
+  Resource: McGilchrist's framing of life-after-death as a *consequence variable* of one's theory of consciousness — different theories (materialism/physicalism vs. consciousness-as-fundamental vs. wisdom-tradition accounts) make different post-mortem outcomes coherent or incoherent, so the question is well-posed only after the consciousness theory is named.
+  Solution: A demarcation move: discussions of survival should begin by stating which theory of consciousness is in use, which converts what looks like a metaphysical free-for-all into a structured comparison of theories — making the question productive within the science-and-religion conversation rather than excluded from it.
+  Date Added: 2026-05-03
+  Source: Iain McGilchrist — Consciousness and Life After Death?; PROP-2026-05-05-006
+  Confidence: High
+
+---
+PRS-41:
+  Problem: The hemispheric-attention program is sometimes received as a cultural/diagnostic framework with no commitments at the level of fundamental ontology — leaving open whether McGilchrist himself thinks consciousness is in any sense ontologically primary, or only psychologically and culturally consequential.
+  Resource: McGilchrist's willingness in this short-form, public-facing format to align his program with the consciousness-as-fundamental family of views — making the metaphysical commitment explicit rather than hedged.
+  Solution: A clearer position-statement on McGilchrist's metaphysics that anchors his program inside the C2A2 Consciousness Cluster (Hoffman, Kastrup, Stump, McGilchrist) on grounds of ontology, not just on grounds of attention-theory — strengthening the cluster's joint case against physicalist defaults.
+  Date Added: 2026-05-03
+  Source: Iain McGilchrist — Consciousness and Life After Death?; PROP-2026-05-05-006
+  Confidence: Medium
+
+---
+PRS-42:
+  Problem: A left-hemisphere-dominant modernity treats the Good, the Beautiful, and the True as subjective overlays on a value-neutral mechanism, leaving no account of how value could be real.
+  Resource: McGilchrist's transcendentals-as-disclosed thesis: the Good/Beautiful/True are apprehended by right-hemisphere attention to the living whole and are constitutive of reality rather than projected onto it; developed across the two-day Sheldonian lectures with interlocutors from philosophy (Hobbs), myth (Shaw), and cosmology (Currivan).
+  Solution: Positions the transcendentals as ontologically real and attention-dependent in disclosure (not in existence), giving the program an explicit value-realism that connects attentional stance to what can be known as good, beautiful, or true.
+  Date Added: 2026-05-03
+  Source: The Good, The Beautiful and The True — Dr Iain McGilchrist (Sheldonian Theatre, Oxford); PROP-2026-05-20-002
+  Confidence: Medium
+
+---
+PRS-43:
+  Problem: The crisis-of-attention diagnosis risks being heard as purely negative (what modernity destroys) without a positive account of what richer attention makes available.
+  Resource: The transcendentals as the positive content of right-hemisphere attention — what is gained, not just what is lost, when attention is rebalanced.
+  Solution: Supplies the constructive/positive pole of the hemispheric diagnosis: attention rebalanced toward the right hemisphere yields access to value (Good/Beautiful/True), reframing the program from cultural pathology toward cultural remedy.
+  Date Added: 2026-05-03
+  Source: The Good, The Beautiful and The True — Dr Iain McGilchrist (Sheldonian Theatre, Oxford); PROP-2026-05-20-002
+  Confidence: Medium
+
+---
+PRS-44:
+  Problem: McGilchrist's hemispheric thesis is routinely described in the secondary literature as a claim about *interpretation* — as if the two hemispheres take the same world and frame it differently. That framing concedes the contested ground (a single antecedent world) and reduces the thesis to a perspectivism.
+  Resource: McGilchrist's reformulation in conversation with LaBlanc — that the two modes of attention are not stylistic differences applied to a common percept but *constitutive* of what is perceived, such that broad/vigilant attention and narrow/acquisitive attention deliver different worlds rather than different views of the same world.
+  Solution: A sharpened public statement of the *attention-constitutive* reading of the hemispheric thesis, suitable for citation in interdisciplinary settings (decision science, organizational behavior) where the perspectivist softening usually creeps in. Converts hemispheric-attention from a *frame* on perception into an *operator on* perception.
+  Date Added: 2026-05-05
+  Source: Episode 648: Iain McGilchrist — unSILOed Podcast with Greg LaBlanc; PROP-2026-05-09-003
+  Confidence: High
+
+---
+PRS-45:
+  Problem: The "decision-making" literature in management and behavioral science has its own well-developed two-system frame (System 1/System 2, Kahneman). Without an active bridge, the McGilchrist hemispheric account either gets folded into System 1/2 and loses its specificity, or stays sealed in humanities discourse and never reaches that audience.
+  Resource: McGilchrist's appearance on a podcast whose explicit franchise is *cross-disciplinary translation* (LaBlanc's editorial frame), where McGilchrist is invited to articulate the hemispheric distinction *next to* the System 1/2 frame rather than instead of it.
+  Solution: Opens an explicit translation channel between hemispheric attention theory and dual-process decision science — a non-trivial extension of the C2A2-relevant claim that mature inhabitants of one tradition can speak to the cutting edge of another. Provides citation surface for any C2A2 work that wants to relate hemispheric attention to operating decision-science vocabularies without reducing one to the other.
+  Date Added: 2026-05-05
+  Source: Episode 648: Iain McGilchrist — unSILOed Podcast with Greg LaBlanc; PROP-2026-05-09-003
+  Confidence: Medium
+
+---
+*Total PRS triplets: 45*
