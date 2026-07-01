@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DET 40-Step Structure Matrix</title>
+<style>
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  body{ background:#0a0a0f; color:#e8e8ef; font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  .wrap{ max-width:1240px; margin:0 auto; padding:22px; }
+  h1{ font-size:21px; font-weight:600; color:#f3f3f8; }
+  .sub{ color:#9a9aa6; font-size:13px; margin:5px 0 2px; }
+  .thesis{ color:#cdcdd6; font-size:12.5px; margin:8px 0 0; max-width:880px; }
+  .thesis b{ color:#f0f0f6; }
+
+  .legend{ display:flex; flex-wrap:wrap; gap:7px 14px; margin:14px 0 4px; font-size:11.5px; color:#b6b6c2; align-items:center; }
+  .lg{ display:inline-flex; align-items:center; gap:5px; }
+  .sw{ width:11px; height:11px; border-radius:3px; display:inline-block; }
+  .dot{ width:10px; height:10px; border-radius:50%; background:#C45B5B; display:inline-block; box-shadow:0 0 0 2px rgba(196,91,91,.25); }
+  .doth{ width:9px; height:9px; border-radius:50%; border:1.5px solid #9a8; display:inline-block; }
+
+  .tabs{ display:flex; gap:7px; margin:16px 0 0; flex-wrap:wrap; }
+  .tab{ padding:8px 13px; background:#15151d; border:1px solid #26263200; border:1px solid #262632; border-radius:9px 9px 0 0;
+        color:#bcbcc8; cursor:pointer; font-size:12.5px; }
+  .tab.on{ background:#1d1d28; color:#fff; border-color:#3a3a4a; border-bottom-color:#1d1d28; }
+  .tab small{ color:#8a8a96; }
+
+  .panel{ background:#1d1d28; border:1px solid #3a3a4a; border-radius:0 10px 10px 10px; padding:16px 14px; }
+  .bandhead{ font-size:12.5px; color:#cdcdd6; margin:0 2px 12px; }
+  .bandhead b{ color:#f0f0f6; }
+
+  .matrix{ display:grid; gap:0; overflow-x:auto; }
+  .rowlab{ font-size:11px; color:#8a8a96; text-align:right; padding:6px 10px 6px 0; white-space:nowrap;
+           border-bottom:1px solid #24242f; display:flex; align-items:center; justify-content:flex-end; }
+  .cell{ border-left:1px solid #24242f; border-bottom:1px solid #24242f; padding:6px 5px; min-width:78px; cursor:pointer;
+         transition:background .12s; }
+  .cell:hover{ background:#23232f; }
+  .cell.sel{ background:#2a2a3a; box-shadow:inset 0 0 0 1px #4a4a5e; }
+
+  .chead{ font-weight:600; font-size:13px; color:#f0f0f6; text-align:center; }
+  .chead .let{ color:#9a9aa6; font-weight:500; font-size:11px; }
+  .clabel{ font-size:10.5px; color:#c4c4cf; line-height:1.25; text-align:center; min-height:30px; }
+  .ctype{ font-size:9.5px; text-transform:uppercase; letter-spacing:.4px; text-align:center; color:#cfcfda;
+          border-radius:4px; padding:2px 0; }
+  .cmma{ text-align:center; min-height:18px; font-size:9px; color:#b8a0a0; }
+  .amk{ display:inline-block; width:16px; height:16px; line-height:16px; text-align:center; border-radius:4px;
+        font-size:10px; font-weight:700; color:#0a0a0f; margin:0 1px; vertical-align:middle; }
+  .cai{ text-align:center; }
+  .chip{ display:inline-block; font-size:9.5px; font-weight:700; letter-spacing:.3px; color:#0a0a0f;
+         border-radius:5px; padding:2px 6px; }
+  .cai .ext{ display:block; font-size:9px; color:#9a9aa6; font-weight:400; margin-top:3px; line-height:1.2; }
+
+  .card{ margin:16px 2px 0; background:#15151d; border:1px solid #34344a; border-radius:10px; padding:15px 17px; min-height:60px; }
+  .card .tag{ display:inline-block; font-size:11px; font-weight:700; color:#0a0a0f; border-radius:5px; padding:2px 7px; margin-right:7px; }
+  .card h3{ font-size:16px; color:#f3f3f8; margin:9px 0 6px; }
+  .card .meta{ font-size:12px; color:#aaa; margin:2px 0; }
+  .card .meta b{ color:#dcdce4; }
+  .card .desc{ font-size:13px; color:#d6d6df; margin:9px 0 4px; }
+  .card .basis{ font-size:11.5px; color:#8f8f9b; font-style:italic; margin-top:6px; }
+  .empty{ color:#7a7a86; font-size:12.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>DET 40-Step Structure Matrix</h1>
+  <div class="sub">Dialectical Engagement of Traditions &mdash; the algorithm as structure (static view). Companion to the 1&ndash;18 interaction readout (dynamic view).</div>
+  <div class="thesis">Read the <b>mature-member action</b> and <b>AI</b> rows together. Mature members act in three ways: <b>model</b> (exemplar an apprentice becomes), <b>collaborate</b> (rival traditions jointly producing the best account — incl. the interaction), and <b>certify</b> (agreement as the measure). Humans are irreducible in <b>model</b> and <b>certify</b>; AI can genuinely join <b>collaborate</b> (the PROBE core). So the 40 steps aren't 40 human-paced steps: PARALLEL recursions collapse, collaboration is AI-shareable, and only modeling + certifying hold humans fast.</div>
+
+  <div class="legend" id="legend"></div>
+
+  <div class="tabs" id="tabs"></div>
+  <div class="panel">
+    <div class="bandhead" id="bandhead"></div>
+    <div class="matrix" id="matrix"></div>
+  </div>
+
+  <div class="card" id="card"><span class="empty">Click any step column for its full description, paper basis, and tags.</span></div>
+</div>
+
+<script>
+// ---- AI acceleration mode palette (bold row) ----
+var AI = {
+  PROBE:     { c:"#4FB0C6", t:"AI agents act as 2FL speakers; run the exchange at machine speed (the novel core)." },
+  PARALLEL:  { c:"#C9A84C", t:"Collapses a CALL/recursion: near-free re-invocation after the first pass." },
+  TUTOR:     { c:"#8B6DAE", t:"AI forms members at scale (the paper's named AI-guided intelligent tutoring system)." },
+  DRAFT:     { c:"#5A8EAF", t:"AI generates the artifact; the MMA certifies it." },
+  TOOL:      { c:"#6B7280", t:"Conventional capture / outreach / dissemination automation." },
+  INSTRUMENT:{ c:"#C45B5B", t:"AI assembles evidence for a human MMA gate; does NOT replace it (bounded by design)." }
+};
+// ---- type tints ----
+var TYPE = {
+  build:"#1c2a3a", read:"#1b2f2c", grow:"#1d2c20", gate:"#321c1c",
+  govern:"#322a16", recursion:"#26203a", loop:"#26203a", "read-setup":"#1b2f2c",
+  "build/read":"#1c2a3a", "build/grow":"#22281f", meta:"#23232b", "grow (loop)":"#1d2c20"
+};
+// ---- mature-member action types (three markers, unranked, multiple per cell) ----
+var ACT = {
+  M:{ c:"#3D9E89", name:"model", t:"Mature member as exemplar — the role model an apprentice imaginatively and practically grows toward. Human-essential: AI can tutor, but cannot be what the apprentice becomes." },
+  C:{ c:"#5A8EAF", name:"collaborate", t:"Mature members (and 2FL speakers) working together to produce the best account or outcome — including rival traditions collaborating in support of the interaction itself. The action AI can genuinely join." },
+  K:{ c:"#C45B5B", name:"certify", t:"Mature-member AGREEMENT (MMA) as the measure — constitute, calibrate, validate, dual-certify, approve. AI instruments it; the collective human judgment is what endures." }
+};
+// which mature-member action(s) each step performs, keyed by step id (g+sub); unlisted = none
+var MMACT = {
+  "1b":"K", "2":"CK", "4":"K", "5":"K", "7a":"M", "7c":"K", "8":"K", "9":"MK", "10":"K",
+  "12a":"M", "12b":"K", "13":"C", "14":"C", "15":"C", "16":"CK", "17":"C", "18":"K",
+  "22":"MK", "24":"MK", "25":"K", "26":"CK", "27":"CK", "28":"C", "29":"K", "32":"K", "36":"M"
+};
+function mmact(s){ return MMACT[s.g+(s.sub||"")] || ""; }
+
+// ---- the 40 steps (45 cells; 1/7/12 subdivided) ----
+var S = [
+ // band 0 : Pilot Stage 1 (1-10) BUILD
+ {b:0,g:1,sub:"a",label:"Recruit mature members",kind:"build",mma:"",ai:"TOOL",aiL:"TOOL",ait:"source + identify candidates",
+   desc:"Recruit mature members of a tradition (a pair of traditions, ~half a dozen each as primary contacts)."},
+ {b:0,g:1,sub:"b",label:"Constitute the MMA",kind:"build",mma:"CONSTITUTE",ai:"INSTRUMENT",aiL:"INSTRUMENT",ait:"surface candidates; recognition stays human",
+   desc:"Members mutually recognize one another as mature; their agreement defines the tradition for evidentiary purposes. The MMA is born here.",
+   basis:"paper: “This recognition constitutes a test… Mature Member Agreement (MMA).”"},
+ {b:0,g:2,label:"Elicit PRS history",kind:"build",mma:"CERTIFY-CLAIM",ai:"DRAFT",aiL:"DRAFT",ait:"elicit + structure the triplet history",
+   desc:"Elicit the tradition's primary claims as solutions to problems, with the resources drawn upon — the problem-resource-solution-triplet history."},
+ {b:0,g:3,label:"Design CCI + ATs",kind:"build",mma:"",ai:"DRAFT",aiL:"DRAFT",ait:"draft inventory + tests from the history",
+   desc:"Design a community concept inventory and application tests from the PRS history."},
+ {b:0,g:4,label:"Calibrate tests to MMA",kind:"build",mma:"CALIBRATE",ai:"INSTRUMENT",aiL:"INSTRUMENT",ait:"think-aloud analysis + item tuning; MMA is the reference",
+   desc:"Tune the CCI/ATs so that all-and-only mature members pass — the “test beam.” The MMA is the calibration reference.",
+   basis:"paper's own image: a test beam sending members of known status through the detectors."},
+ {b:0,g:5,label:"Validate vs known results",kind:"build",mma:"VALIDATE",ai:"DRAFT",aiL:"DRAFT",ait:"run the rediscover-known-results checks",
+   desc:"Confirm the test complex recovers a broad range of results the tradition already thinks it knows.",
+   basis:"paper: “rediscovering the standard model.”"},
+ {b:0,g:6,label:"Backward-design curriculum",kind:"build",mma:"",ai:"DRAFT",aiL:"DRAFT",ait:"draft curriculum from the validated tests",
+   desc:"Backward-design a formation curriculum aimed at the validated tests."},
+ {b:0,g:7,sub:"a",label:"Test curriculum; iterate",kind:"build/read",mma:"",ai:"TUTOR",aiL:"TUTOR",ait:"deliver + collect learner-response data",
+   desc:"Test the curriculum on second-tradition students; iterate to passing rates."},
+ {b:0,g:7,sub:"b",label:"Adjust MMA/CCI/ATs",kind:"build",mma:"",ai:"DRAFT",aiL:"DRAFT",ait:"propose item + curriculum adjustments",
+   desc:"Adjust the instruments in light of what the curriculum trials reveal."},
+ {b:0,g:7,sub:"c",label:"Certify curriculum",kind:"gate",mma:"CERTIFY-STATE",ai:"INSTRUMENT",aiL:"INSTRUMENT",ait:"assemble the dossier; MMA certifies",
+   desc:"First-tradition MMA certifies the curriculum."},
+ {b:0,g:8,label:"Certify the tradition",kind:"gate",mma:"CERTIFY-STATE",ai:"INSTRUMENT",aiL:"INSTRUMENT",ait:"assemble evidence; bounded gate",
+   desc:"Certify the tradition as measurably defined and interaction-ready."},
+ {b:0,g:9,label:"CALL(1–8): 2nd tradition",kind:"recursion",mma:"",ai:"PARALLEL",aiL:"PARALLEL",ait:"re-invoke the whole pipeline, near-free",
+   desc:"Repeat steps 1–8 for the second pilot tradition (series for 1–5, parallel for 6–8). A recursion, not new work."},
+ {b:0,g:10,label:"Certify the pair ready",kind:"gate",mma:"DUAL-CERTIFY",ai:"INSTRUMENT",aiL:"INSTRUMENT",ait:"bounded dual gate",
+   desc:"Both MMAs jointly certify the pair as ready to interact."},
+
+ // band 1 : Pilot Stage 2 (11-20) READ
+ {b:1,g:11,label:"Switch on capture",kind:"meta",mma:"",ai:"TOOL",aiL:"TOOL",ait:"capture + curate the record",
+   desc:"Begin capturing the interaction record for curation and dissemination. Meta: applies to all following steps."},
+ {b:1,g:12,sub:"a",label:"Select & train 2FL",kind:"build/grow",mma:"",ai:"PROBE",aiL:"TUTOR+PROBE",ait:"tutor the candidate; agents can BE 2FL probes",
+   desc:"Select and train second-first-language candidates: mature in the home tradition, imaginatively formed to maturity in the rival."},
+ {b:1,g:12,sub:"b",label:"Certify the candidate",kind:"gate",mma:"DUAL-CERTIFY",ai:"INSTRUMENT",aiL:"INSTRUMENT",ait:"bounded dual-certify of the probe",
+   desc:"Home MMA certifies its own member mature AND the other's candidate 2FL-competent. The probe is dual-certified before any collision."},
+ {b:1,g:12,sub:"c",label:"Introduce the pair",kind:"read-setup",mma:"",ai:"TOOL",aiL:"TOOL",ait:"schedule + setup",
+   desc:"Introduce the certified 2FL pair to one another."},
+ {b:1,g:13,label:"Exchange perspectives",kind:"read",mma:"(judges)",ai:"PROBE",aiL:"PROBE",ait:"agent-speed; surfaces agreement-on-meaning",
+   desc:"Exchange perspectives in series until both agree on the meaning of both PRS sets."},
+ {b:1,g:14,label:"Advance the narratives",kind:"read",mma:"(judges)",ai:"PROBE",aiL:"PROBE",ait:"mutual suggestion at machine speed; MMA judges",
+   desc:"Advance each PRS narrative by mutual suggestion; the home tradition's MMs judge what counts as advancement."},
+ {b:1,g:15,label:"Exchange verdicts",kind:"read",mma:"",ai:"PROBE",aiL:"PROBE",ait:"agents propose outcomes",
+   desc:"The optimally-informed pair exchange verdicts on each tradition, proposing outcomes."},
+ {b:1,g:16,label:"Reconcile to stable outcomes",kind:"read",mma:"DUAL-CERTIFY",ai:"INSTRUMENT",aiL:"PROBE+INSTRUMENT",ait:"agents propose; dual-MMA certifies",
+   desc:"Reconcile verdicts into thus-far-stable outcomes. Stability requires both MMAs concurring — the dual-MMA gate where the beam (13–15) certifies."},
+ {b:1,g:17,label:"Classify outcome type",kind:"read",mma:"(classifies)",ai:"DRAFT",aiL:"DRAFT",ait:"propose 1-of-5; MMA confirms",
+   desc:"Classify the outcome: intractable / conversion / complementary / transformative / incomplete."},
+ {b:1,g:18,label:"Certify outcome + artifacts",kind:"gate",mma:"DUAL-CERTIFY",ai:"INSTRUMENT",aiL:"INSTRUMENT",ait:"bounded gate",
+   desc:"Certify agreement on the outcome type and the artifacts of the interaction."},
+ {b:1,g:19,label:"Promulgate outcomes",kind:"grow",mma:"",ai:"TOOL",aiL:"TOOL",ait:"type-tuned dissemination",
+   desc:"Promulgate the certified outcomes, with the response tuned to the outcome type."},
+ {b:1,g:20,label:"Review & redesign pilot",kind:"meta",mma:"",ai:"DRAFT",aiL:"DRAFT",ait:"analyze the run, propose redesign",
+   desc:"Review and redesign the whole pilot; prepare for a full parallel run. Meta: acts on the process."},
+
+ // band 2 : Run 1 Stage 1 (21-29) BUILD-at-scale
+ {b:2,g:21,label:"Design & recruit support team",kind:"grow",mma:"",ai:"DRAFT",aiL:"DRAFT",ait:"draft roles; source candidates",
+   desc:"Design and recruit a support team to prepare, assist, promulgate, and shorten repeat time."},
+ {b:2,g:22,label:"Train support team (CALL 1–8)",kind:"recursion",mma:"",ai:"PARALLEL",aiL:"PARALLEL+TUTOR",ait:"reuse the pipeline tooling on the org",
+   desc:"Train the support team — the method turned on its own org: it builds its own PRS/tests/curriculum."},
+ {b:2,g:23,label:"Recruit cohort (4–6)",kind:"grow",mma:"",ai:"TOOL",aiL:"TOOL",ait:"identify + recruit at scale",
+   desc:"Recruit an initial run cohort of 4–6 traditions."},
+ {b:2,g:24,label:"CALL(1–8) cohort in parallel",kind:"recursion",mma:"",ai:"PARALLEL",aiL:"PARALLEL",ait:"N traditions at once — the big collapse",
+   desc:"Prepare all cohort traditions in parallel, as in the pilot. Steps 1–8 × N."},
+ {b:2,g:25,label:"Design & approve schedule",kind:"govern",mma:"APPROVE",ai:"DRAFT",aiL:"DRAFT",ait:"propose pairings; MMA approves",
+   desc:"Design and approve the interaction schedule (which traditions interact with which) by unanimous MMA."},
+ {b:2,g:26,label:"CALL(11–18): first pairing",kind:"recursion",mma:"",ai:"PARALLEL",aiL:"PARALLEL+PROBE",ait:"interaction re-invoked at agent speed",
+   desc:"The first pairing interacts (2–3 interactions in parallel), as in pilot stage 2."},
+ {b:2,g:27,label:"Repeat for each pairing",kind:"loop",mma:"",ai:"PARALLEL",aiL:"PARALLEL+PROBE",ait:"subsequent pairings, near-free",
+   desc:"Repeat the interaction for each subsequent pairing (2–4× in series)."},
+ {b:2,g:28,label:"Review & refine R1A artifacts",kind:"read",mma:"(multi-MMA)",ai:"DRAFT",aiL:"DRAFT",ait:"cross-cohort synthesis",
+   desc:"Review and refine all R1A artifacts and outcome judgments across the whole cohort."},
+ {b:2,g:29,label:"Certify cohort artifacts",kind:"gate",mma:"CERTIFY-STATE",ai:"INSTRUMENT",aiL:"INSTRUMENT",ait:"bounded cohort gate",
+   desc:"The R1 cohort certifies the artifacts and judgments."},
+
+ // band 3 : Run 1 Stage 2 (30-40) GROW
+ {b:3,g:30,label:"Prepare for broadcast",kind:"grow",mma:"",ai:"TOOL",aiL:"TOOL",ait:"archival + format prep",
+   desc:"Prepare R1A artifacts for public broadcast (archival + specialized preparation)."},
+ {b:3,g:31,label:"Build platforms",kind:"grow",mma:"",ai:"DRAFT",aiL:"DRAFT",ait:"scaffold the platforms",
+   desc:"Build community-curated dissemination platforms (tradition-centric, common-good-oriented)."},
+ {b:3,g:32,label:"Approve public release",kind:"govern",mma:"APPROVE",ai:"INSTRUMENT",aiL:"INSTRUMENT",ait:"bounded approve, per tradition",
+   desc:"Approve public release of platform and content, per tradition, by MMA."},
+ {b:3,g:33,label:"Accelerate via podcasting",kind:"grow",mma:"",ai:"TOOL",aiL:"TOOL",ait:"production + distribution support",
+   desc:"Accelerate dissemination via the long-form podcasting circuit."},
+ {b:3,g:34,label:"Curate podcast artifacts back",kind:"grow (loop)",mma:"",ai:"DRAFT",aiL:"DRAFT",ait:"select + fold back in",
+   desc:"Fold selected podcast artifacts back into the community-curated platforms."},
+ {b:3,g:35,label:"Recruit new members",kind:"grow",mma:"",ai:"TOOL",aiL:"TOOL",ait:"tools-driven outreach",
+   desc:"Recruit new members of the R1 communities using the accumulated tools."},
+ {b:3,g:36,label:"Form members at scale (CALL 6–7)",kind:"recursion",mma:"",ai:"TUTOR",aiL:"TUTOR",ait:"the paper's named AI-guided ITS; CALL(6–7) at scale",
+   desc:"Invite new members into maturity at scale — the formation pipeline (steps 6–7) offered with learner-response data.",
+   basis:"paper: “an AI-guided intelligent tutoring system for traditions.”"},
+ {b:3,g:37,label:"Discover off-platform venues",kind:"grow",mma:"",ai:"TOOL",aiL:"TOOL",ait:"scan + propose venues",
+   desc:"Discover or propose additional, off-platform venues for community interaction."},
+ {b:3,g:38,label:"Support off-platform",kind:"grow",mma:"",ai:"TOOL",aiL:"TOOL",ait:"market/coordinate/document",
+   desc:"Support off-platform interactions: market, coordinate, document, study reflected impact."},
+ {b:3,g:39,label:"Curate off-platform artifacts",kind:"grow (loop)",mma:"",ai:"DRAFT",aiL:"DRAFT",ait:"select + fold into the toolset",
+   desc:"Curate off-platform artifacts back into the toolset available through the platforms."},
+ {b:3,g:40,label:"Prepare next runs",kind:"meta",mma:"",ai:"DRAFT",aiL:"DRAFT",ait:"M&E + redesign, in parallel",
+   desc:"Review and prepare the maturing resource set for subsequent runs. Runs in parallel with steps 30–39 — the line is really a cycle."}
+];
+
+var BANDS = [
+  {name:"Pilot Stage 1", range:"steps 1–10", kind:"BUILD", blurb:"Prepare a tradition: persons → MMA → PRS history → calibrated tests → curriculum → certified tradition → certified pair."},
+  {name:"Pilot Stage 2", range:"steps 11–20", kind:"READ", blurb:"Interact the pair: 2FL probes certified, perspectives exchanged and advanced, verdicts reconciled at the dual-MMA gate, outcome classified and certified."},
+  {name:"Run 1 Stage 1", range:"steps 21–29", kind:"BUILD at scale", blurb:"Prepare many in parallel: a support team (self-applied), a 4–6 tradition cohort prepared and interacted by recursive CALLs, artifacts certified cohort-wide."},
+  {name:"Run 1 Stage 2", range:"steps 30–40", kind:"GROW", blurb:"Disseminate and grow: broadcast, platforms, podcasting, recruitment, formation at scale (AI-guided ITS), off-platform venues — the meta-cadence step 40 runs in parallel."}
+];
+
+var cur = 0, sel = null;
+
+function el(tag, cls, txt){ var e=document.createElement(tag); if(cls) e.className=cls; if(txt!=null) e.textContent=txt; return e; }
+
+function buildLegend(){
+  var L=document.getElementById("legend");
+  L.appendChild(el("span","lg","Mature-member action:"));
+  ["M","C","K"].forEach(function(k){
+    var s=el("span","lg"); var mk=el("span","amk",k); mk.style.background=ACT[k].c; s.appendChild(mk);
+    s.appendChild(el("span",null,ACT[k].name)); L.appendChild(s);
+  });
+  var sep=el("span","lg","·  AI acceleration:"); sep.style.marginLeft="6px"; L.appendChild(sep);
+  var order=["PROBE","PARALLEL","TUTOR","DRAFT","TOOL","INSTRUMENT"];
+  order.forEach(function(k){
+    var s=el("span","lg"); var sw=el("span","sw"); sw.style.background=AI[k].c; s.appendChild(sw);
+    s.appendChild(el("span",null,k)); L.appendChild(s);
+  });
+}
+
+function buildTabs(){
+  var T=document.getElementById("tabs");
+  BANDS.forEach(function(bd,i){
+    var t=el("div","tab"+(i===cur?" on":""));
+    t.innerHTML="<b>"+bd.name+"</b> &nbsp;<small>"+bd.range+" · "+bd.kind+"</small>";
+    t.onclick=function(){ cur=i; sel=null; render(); };
+    T.appendChild(t);
+  });
+}
+
+function render(){
+  // tabs
+  var T=document.getElementById("tabs"); T.innerHTML=""; buildTabs();
+  var bd=BANDS[cur];
+  document.getElementById("bandhead").innerHTML="<b>"+bd.name+" · "+bd.kind+"</b> &mdash; "+bd.blurb;
+
+  var cells=S.filter(function(s){ return s.b===cur; });
+  var M=document.getElementById("matrix");
+  M.innerHTML="";
+  M.style.gridTemplateColumns="150px repeat("+cells.length+", minmax(78px, 1fr))";
+  M.style.gridTemplateRows="auto auto auto auto auto";
+
+  // grid fills row-major: append each row's label then its cells, across 5 rows
+  M.appendChild(el("div","rowlab","Step"));
+  cells.forEach(function(s,ix){
+    var c=el("div","cell"); c.dataset.ix=ix; bindCell(c,s,cells);
+    var h=el("div","chead"); h.innerHTML=s.g+(s.sub?'<span class="let">'+s.sub+'</span>':'');
+    c.appendChild(h); M.appendChild(c);
+  });
+  // description row
+  M.appendChild(el("div","rowlab","Description"));
+  cells.forEach(function(s,ix){
+    var c=el("div","cell"); c.dataset.ix=ix; bindCell(c,s,cells);
+    c.appendChild(el("div","clabel",s.label)); M.appendChild(c);
+  });
+  // type row (tint)
+  M.appendChild(el("div","rowlab","Type"));
+  cells.forEach(function(s,ix){
+    var c=el("div","cell"); c.dataset.ix=ix; bindCell(c,s,cells);
+    var t=el("div","ctype",s.kind); t.style.background=TYPE[s.kind]||"#23232b"; c.appendChild(t); M.appendChild(c);
+  });
+  // Mature-member action row (up to three markers, unranked)
+  M.appendChild(el("div","rowlab","Mature-member action"));
+  cells.forEach(function(s,ix){
+    var c=el("div","cell"); c.dataset.ix=ix; bindCell(c,s,cells);
+    var m=el("div","cmma");
+    var code=mmact(s);
+    for(var i=0;i<code.length;i++){ var k=code[i]; var mk=el("span","amk",k); mk.style.background=ACT[k].c; mk.title=ACT[k].name; m.appendChild(mk); }
+    c.appendChild(m); M.appendChild(c);
+  });
+  // AI row (bold chips)
+  M.appendChild(el("div","rowlab","AI acceleration"));
+  cells.forEach(function(s,ix){
+    var c=el("div","cell"); c.dataset.ix=ix; bindCell(c,s,cells);
+    var a=el("div","cai"); var chip=el("span","chip",s.aiL); chip.style.background=AI[s.ai].c; a.appendChild(chip);
+    a.appendChild(el("span","ext",s.ait)); c.appendChild(a); M.appendChild(c);
+  });
+
+  if(sel!=null){ highlight(); }
+}
+
+function bindCell(c,s,cells){
+  c.onclick=function(){ sel=parseInt(c.dataset.ix,10); showCard(s); highlight(); };
+}
+function highlight(){
+  var all=document.querySelectorAll(".cell");
+  all.forEach(function(c){ c.classList.toggle("sel", parseInt(c.dataset.ix,10)===sel); });
+}
+
+function showCard(s){
+  var card=document.getElementById("card");
+  card.innerHTML="";
+  var tag=el("span","tag",s.ai); tag.style.background=AI[s.ai].c; card.appendChild(tag);
+  var num=el("span","meta"); num.innerHTML="<b>Step "+s.g+(s.sub?s.sub:"")+"</b> · "+BANDS[s.b].name; num.style.display="inline"; card.appendChild(num);
+  card.appendChild(el("h3",null,s.label));
+  var code=mmact(s);
+  var acts=code.split("").map(function(k){ return ACT[k].name; }).join(", ")||"—";
+  var m1=el("div","meta"); m1.innerHTML="<b>Type:</b> "+s.kind+" &nbsp;&nbsp; <b>Mature-member action:</b> "+acts+(s.mma?" <span style='color:#8f8f9b'>("+s.mma+")</span>":""); card.appendChild(m1);
+  if(code){ code.split("").forEach(function(k){ card.appendChild(el("div","meta","· "+ACT[k].name+": "+ACT[k].t)); }); }
+  var m2=el("div","meta"); m2.innerHTML="<b>AI:</b> "+s.aiL+" — "+s.ait; card.appendChild(m2);
+  var m3=el("div","meta"); m3.innerHTML="<i>"+AI[s.ai].t+"</i>"; card.appendChild(m3);
+  card.appendChild(el("div","desc",s.desc));
+  if(s.basis){ card.appendChild(el("div","basis",s.basis)); }
+}
+
+buildLegend();
+render();
+</script>
+</body>
+</html>

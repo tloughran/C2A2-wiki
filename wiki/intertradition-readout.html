@@ -324,7 +324,7 @@ const STEPS=[
   {n:11, act:1, target:"nDAQ", cap:"begin capture", t:"Begin capturing information for curation &amp; dissemination",
    d:"Turn on systematic capture for every subsequent step. Something special begins: watching two quantifiably-certified traditions meet.",
    a:"Switching on data acquisition &mdash; record every event from here on; nothing observed counts if it isn't captured."},
-  {n:12, act:1, target:"nAcc", cap:"select/train 2FL speakers", t:"Select, train &amp; introduce second-first-language speakers",
+  {n:12, act:1, target:"nAcc", dual:1, dualLab:"probe", cap:"select/train 2FL speakers", t:"Select, train &amp; introduce second-first-language speakers",
    d:"Form members who are already first-language (mature) in their <em>home</em> tradition to 2FL competency in the rival &mdash; ending in dual certification. For perhaps the first time, two people reach maximal informed contact with both traditions.",
    a:"Accelerate and focus the beams &mdash; bring the prepared members to the energy and focus where a real interaction can occur."},
   {n:13, act:2, target:"ipDot", cap:"first exchange", t:"Begin exchanging perspectives",
@@ -336,7 +336,7 @@ const STEPS=[
   {n:15, act:2, target:"ring15", cap:"verdicts", t:"Exchange verdicts on each tradition",
    d:"The optimally-informed pair exchange verdicts: we now agree; or no clear basis yet but it might be rectified; or no grounds for optimism; or a path toward one coherent account.",
    a:"Reconstruction and readout &mdash; each instrument reports its verdict on what happened in the interaction."},
-  {n:16, act:2, target:"ring16", dual:1, cap:"reconcile", t:"Reconcile verdicts into thus-far-stable outcomes",
+  {n:16, act:2, target:"ring16", dual:1, dualLab:"result", cap:"reconcile", t:"Reconcile verdicts into thus-far-stable outcomes",
    d:"The mature members exchange perspectives on one another's verdicts and announce them as thus-far-stable outcomes. The result holds only when <em>both</em> standards concur.",
    a:"Cross-checking independent measurements before a result is declared &mdash; the two standards must agree (the ATLAS+CMS cross-confirmation spirit)."},
   {n:17, act:2, target:"outRing", cap:"identify outcome type", t:"Identify the outcome type",
@@ -542,14 +542,15 @@ function go(i){
       wedgeEls.forEach(w=>w.classList.add('certified')); }
   }
   else { const el=byId(s.target); if(el) el.classList.add('on'); }
-  if(s.n===16){ byId('andgate').classList.add('open'); byId('ring16').classList.add('on'); byId('ring16lab').classList.add('on'); }
+  if(s.dual){ byId('andgate').classList.add('open'); }
+  if(s.n===16){ byId('ring16').classList.add('on'); byId('ring16lab').classList.add('on'); }
 
   // card
   const acName = s.act===1 ? 'Act 1 · Prepare' : 'Act 2 · Read';
   const acColor= s.act===1 ? 'var(--build)' : 'var(--read)';
   const badge='<span class="badge" style="background:'+acColor+'">'+acName+'</span>';
   const loop=s.loop?'<span class="badge loop">↻ calibration loop</span>':'';
-  const dual=s.dual?'<span class="badge dual">dual-MMA gate</span>':'';
+  const dual=s.dual?'<span class="badge dual">dual-MMA gate'+(s.dualLab?' &middot; '+s.dualLab:'')+'</span>':'';
   card.style.setProperty('--c', acColor);
   card.innerHTML=
     '<div class="top"><span class="stepno">Step '+s.n+'</span>'+badge+loop+dual+'</div>'+
