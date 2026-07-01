@@ -17,8 +17,8 @@ karpathy_wiki_sources:
   - "Wright canonical: Sabbath made for man (Mark 2:27), letter vs Spirit (2 Cor 3:6); Rohr canonical: law in service of love"
 evidence_strength_summary: "Hemispheric account of letter-vs-intent is empirical/interpretive (McGilchrist); laws-as-higher-level-stories is formal (Carroll); nested-self piety is formal-analogical (Levin); spirit-over-letter is theological (Wright, Rohr)."
 tags: [synthesis, day/178, theme/equity, theme/letter-and-intent, q/120, q/121]
-last_qc_at: "2026-06-22T19:59:27"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-30T14:27:03"
+last_qc_outcome: "pass"
 ---
 
 # Day 178 — Equity (Contemporary)

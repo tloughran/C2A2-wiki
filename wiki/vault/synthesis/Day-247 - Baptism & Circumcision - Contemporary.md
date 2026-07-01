@@ -16,8 +16,8 @@ length_note: "Compact-by-design: III Q.70 (baptism/circumcision continuity) rend
 mind_first_reframe: "Baptism-replacing-circumcision is reframed as a faithful structural revision of a covenant community's generative model — the deep prior (membership through faith in Christ) is conserved while the tracking sign is reconfigured — so the earlier sign is fulfilled, not falsified."
 central_theme_thread: "A tradition that revises its signs while conserving its telos is the social-temporal form of perspective-limited guidance: no generation perceives the whole, so the community computes toward loving unity across acts of an unfinished drama, each revision a better-resourced approximation."
 tags: [synthesis, day/247, theme/sign-revision-across-covenants]
-last_qc_at: "2026-06-22T04:23:24"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-30T06:25:59"
+last_qc_outcome: "pass"
 ---
 
 # Day 247 — Baptism & Circumcision (Contemporary Parallel)

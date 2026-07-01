@@ -16,8 +16,8 @@ length_note: "Compact-by-design: III Q.75 (transubstantiation) rendered in tight
 mind_first_reframe: "Transubstantiation is reframed, under interface theory (Hoffman, with Kastrup on substance-as-mental-reality), as the case where a thing's reality is wholly converted while its perceptual icon is wholly conserved — coherent precisely because the icon never resembled the reality in the first place."
 central_theme_thread: "The project's central motif at maximum intensity: the whole is made present under, and only under, the signs available to a perspective-limited perceiver; the limitation (the remaining accidents) is not lifted, yet the whole is fully given, and reception is the limited perspective's inclusion in the whole it cannot see."
 tags: [synthesis, day/250, theme/conversion-of-reality-under-stable-appearance]
-last_qc_at: "2026-06-22T04:23:26"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-30T08:20:47"
+last_qc_outcome: "pass"
 ---
 
 # Day 250 — Transubstantiation (Contemporary Parallel)

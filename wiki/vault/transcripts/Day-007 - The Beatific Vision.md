@@ -15,7 +15,7 @@ fetched_at: 2026-05-05
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-007 - The Beatific Vision - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-15T20:20:14"
+last_qc_at: "2026-06-30T20:19:53"
 last_qc_outcome: "pass"
 tags: [summa, day/007, pars/I, q/11, q/12]
 ---

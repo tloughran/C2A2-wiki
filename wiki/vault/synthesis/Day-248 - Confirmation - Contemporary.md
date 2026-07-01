@@ -16,8 +16,8 @@ length_note: "Compact-by-design: III Q.72 (confirmation as maturation) rendered 
 mind_first_reframe: "Confirmation is reframed as the developmental strengthening of an already-constituted agent — a competency-scaling (Levin) and precision-raising (Friston) on its deep commitments that licenses mature, costly witness — not a new identity but a new robustness of an existing one."
 central_theme_thread: "Confirmation raises the limited agent's capacity to compute toward loving unity under cost — the 'fear and trembling' register — enabling it to act toward the whole even when acting is risky, actively extending the unity it belongs to into a resistant world."
 tags: [synthesis, day/248, theme/maturation-of-agency]
-last_qc_at: "2026-06-22T04:23:25"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-06-30T06:25:59"
+last_qc_outcome: "pass"
 ---
 
 # Day 248 — Confirmation (Contemporary Parallel)
