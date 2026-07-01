@@ -126,6 +126,8 @@
     border-radius: 3px;
     margin-bottom: 6px;
   }
+  details.level-locked > summary.level-head { cursor: default; }
+  .lv-locktag { align-self: center; margin: 0; }
 
   /* ── CONSTRUCTION NOTE ── */
   .construction {
@@ -322,18 +324,13 @@
   <div class="section-label">Four Levels of Dialogue</div>
   <div class="levels">
 
-    <details class="level" style="--accent:#5A8EAF" open>
-      <summary class="level-head">
+    <details class="level level-locked" style="--accent:#5A8EAF">
+      <summary class="level-head" onclick="event.preventDefault()">
         <span class="lv-num">Level One</span>
         <span class="lv-title">Intrapersonal Integration</span>
-        <span class="chev">&#9656;</span>
-        <span class="lv-where">Within a single mind or agent, across its many facets and partial selves.</span>
+        <span class="coming-tag lv-locktag">Under construction</span>
+        <span class="lv-where">Aiming at peace, among aspects of yourself.</span>
       </summary>
-      <div class="level-body">
-        <div class="row"><span class="k">What it means</span><span class="v">Reconciliation of competing models, desires, and perspectives toward coherent agency.</span></div>
-        <div class="row"><span class="k">Why it matters</span><span class="v">Individual wholeness mirrors collective wholeness. Dignity emerges from recognizing the beauty and interconnectedness of one&rsquo;s own parts.</span></div>
-        <div class="row coming"><span class="coming-tag">Coming</span><span class="v">Artifacts exploring self-esteem, active inference, and the architecture of human choice.</span></div>
-      </div>
     </details>
 
     <details class="level" style="--accent:#3D9E89">
@@ -341,7 +338,7 @@
         <span class="lv-num">Level Two</span>
         <span class="lv-title">Small-Group Tradition</span>
         <span class="chev">&#9656;</span>
-        <span class="lv-where">Within a research collective &mdash; like the fifteen thinker-groups in C2A2, each with shared aims, problems, and resources.</span>
+        <span class="lv-where">&hellip;in working things out with others.</span>
       </summary>
       <div class="level-body">
         <div class="row"><span class="k">What it means</span><span class="v">A community bound by common inquiry, learning together, building shared solutions over time.</span></div>
@@ -359,7 +356,7 @@
         <span class="lv-num">Level Three</span>
         <span class="lv-title">Inter-Tradition Dialogue</span>
         <span class="chev">&#9656;</span>
-        <span class="lv-where">Between mature members of <em>different</em> research traditions, each deeply rooted in their own lineage.</span>
+        <span class="lv-where">&hellip;in richly-informed mutual exchange with others.</span>
       </summary>
       <div class="level-body">
         <div class="row"><span class="k">What it means</span><span class="v">Imaginative inhabitation of another&rsquo;s learning curve; bilingual maturity; encounter from a place of fullness rather than ignorance.</span></div>
@@ -378,7 +375,7 @@
         <span class="lv-num">Level Four</span>
         <span class="lv-title">Meta-Traditional Encounter</span>
         <span class="chev">&#9656;</span>
-        <span class="lv-where">Between entire systems of thought and practice (C2A2 and alternative traditions; conscious realism and physicalism; etc.).</span>
+        <span class="lv-where">&hellip;in pursuit of wisdom and the common good &mdash; the Dialectical Engagement of Traditions.</span>
       </summary>
       <div class="level-body">
         <div class="row"><span class="k">What it means</span><span class="v">Mapping pathways for how complete worldviews interact, compete, and potentially transform one another.</span></div>
