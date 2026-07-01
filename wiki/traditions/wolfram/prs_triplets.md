@@ -352,8 +352,26 @@ PRS-38:
   Source: Future of Science and Technology Q&A (May 15, 2026); PROP-2026-05-23-001
   Confidence: Medium
 
+PRS-39:
+  Problem: LLM outputs are fluent but computationally untrustworthy — they hallucinate, can't guarantee exact results, and don't expose traceable steps. How can a symbolic-computation system supply the rigor LLMs lack without merely being another model to scale?
+  Resource: Wolfram Agent Tools + the Version 15 MCP framework — a programmatic toolset, callable from within Wolfram Language and exposed to external AI clients (Claude, ChatGPT) via MCP, so an agent's reasoning chain can offload exact computation to deterministic Wolfram evaluation and receive traceable code/results back.
+  Solution: A shipped architecture in which LLMs and symbolic computation are complementary rather than competing: the agent navigates/plans in rulial-space-as-language while exact, verifiable computational steps are delegated to the Wolfram backbone, each answer carrying its code and provenance.
+  Date Added: 2026-07-01
+  Source: Launching Version 15 of Wolfram Language & Mathematica: Built-in (Usef; PROP-2026-06-20-001
+  Confidence: High
+  Evidence: V15 introduces "the new Wolfram Agent Tools framework, which can be used programmatically from within the Wolfram Language" and "the MCP framework enables external AI clients like Claude and ChatGPT to access Wolfram capabilities directly"; built-in AI Assistant in all notebooks; extended Computation-Augmented Generation.
+
+PRS-40:
+  Problem: Encoding structured intellectual content (e.g., PRS triplets, cross-tradition relations) for agents to read and update requires a formally articulate, computable representation rather than free text — but such a representation must also remain executable and inspectable.
+  Resource: Wolfram Language v15 as a symbolic, computable knowledge substrate now wired for agent invocation (Agent Tools + CAG + larger-than-2GB notebooks, expanded tabular/categorical data structures).
+  Solution: A candidate infrastructure path for C2A2 itself — represent and manipulate tradition knowledge as computable symbolic objects an agent can both query and verify, rather than as opaque prose.
+  Date Added: 2026-07-01
+  Source: Launching Version 15 of Wolfram Language & Mathematica: Built-in (Usef; PROP-2026-06-20-001
+  Confidence: Speculative
+  Evidence: V15's expansion of tabular/categorical/time-series data handling + Agent Tools framework positions Wolfram Language as a programmable knowledge layer; this is an inference about C2A2 applicability, not a claim Wolfram makes about C2A2.
+
 ---
-*Total PRS triplets: 38*
+*Total PRS triplets: 40*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

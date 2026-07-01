@@ -653,3 +653,38 @@ Confidence: Medium (cluster is real and recurring; individual edges need confirm
 Recommended action: Monitor — append to the Stump-as-hub synthesis note opened under FINDING-041; do not over-escalate individual analogies.
 
 [EVALUATED: 2026-06-17]
+
+---
+
+FINDING-048:
+Date evaluated: 2026-07-01
+Source candidate: Ingest 2026-07-01 — [PROP-2026-06-29-001] Levin (embedding-space remapping/navigation as a substrate-independent principle of cognition)
+Programs: Levin Agent, Friston Agent, Wolfram Agent, Hawkins Agent
+Evaluation type: Explanatory bridge (candidate paradigm-level identity)
+Finding: Hartl/Pio-Lopez/Fields/Levin's two-invariant account — cognition = remapping of an embedding space + navigation via distributed error minimization — is structurally the same operation as Friston's active inference (gradient descent on variational free energy over a representational manifold). The proposal itself flags this as a "candidate explanatory bridge": Levin's remapping principle may be a generalized restatement of FEP dynamics, now spanning morphogenesis, basal cognition, and machine learning (transformers/diffusion/NCAs) under one description. Also touches Hawkins (error-correcting reference-frame remapping) and Wolfram (computation over a representational substrate). This is the strongest new cross-tradition vector in this batch and directly serves the C2A2 substrate-independent-cognition / AI-membership question.
+Confidence: High (relevance); the identity remapping≡FEP needs a formal statement before it is more than a strong structural homology.
+Recommended action: Escalate to Master Wiki Paradigm Shift Watch List as FLAG-016 (Levin×Friston embedding-space≡FEP). Open synthesis/friston_levin_bridge.md edge; forward to Friston agent for a formal restatement test.
+
+---
+
+FINDING-049:
+Date evaluated: 2026-07-01
+Source candidate: Ingest 2026-07-01 — [PROP-2026-06-24-003/004] Kastrup ("One Free Miracle", "Dreams of Reality") vs [PROP-2026-06-26-001] Carroll (vacuum energy / cosmological constant)
+Programs: Kastrup Agent, Carroll Agent, Arkani-Hamed Agent
+Evaluation type: Paradigm-level disagreement over a shared explanandum
+Finding: Kastrup's idealist cosmology ("one free miracle" — grant consciousness as fundamental, everything else follows) and Carroll's poetic-naturalist treatment of vacuum energy / the cosmological-constant problem are two rival accounts of the same explanatory debt: what gets granted as brute at the base of the ontology. Kastrup spends the "free miracle" on mind; naturalism spends it on physical law + initial conditions (and pays the cosmological-constant fine-tuning bill). A clean exhibit for the accelerator's rival-reading protocol — same question ("what is fundamental / what may be assumed without explanation"), incommensurable first moves.
+Confidence: Medium
+Recommended action: Monitor; forward to Kastrup and Carroll agents. Candidate rival-reading exhibit for the ISME measurement work.
+
+---
+
+FINDING-050:
+Date evaluated: 2026-07-01
+Source candidate: Ingest 2026-07-01 — [PROP-2026-06-28-002/003] Rohr (chosenness→universalization; participatory hope), [PROP-2026-06-28-001] Wright (women in ministry / Phoebe), [PROP-2026-06-17-001] McGilchrist (censorship / attention)
+Programs: Rohr, Wright, McGilchrist, Fredrickson, Stump Agents
+Evaluation type: Structural homology cluster (humanities/theology axis — extends FINDING-047)
+Finding: This batch continues the FINDING-047 humanities cluster along a relational-communion thread: Rohr's election-as-role-conferral-whose-telos-is-its-own-universalization, Wright's recovery of suppressed relational agency (Phoebe), and McGilchrist's attention-to-the-other converge on individuation-in-service-of-loving-unity — the same shape as Fredrickson's positivity-resonance (the self individuated toward, not away from, the other). A recurring cross-tradition motif worth a synthesis note, not yet an explanatory edge.
+Confidence: Medium (cluster is real and recurring; individual analogies need confirmation before escalation)
+Recommended action: Monitor — append to the Stump-as-hub / FINDING-047 humanities synthesis note; do not over-escalate individual analogies.
+
+[EVALUATED: 2026-07-01 — FINDING-048..050]

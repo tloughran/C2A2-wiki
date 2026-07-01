@@ -416,5 +416,23 @@ PRS-45:
   Source: Episode 648: Iain McGilchrist — unSILOed Podcast with Greg LaBlanc; PROP-2026-05-09-003
   Confidence: Medium
 
+PRS-46:
+  Problem: When a culture fragments and trust collapses, institutions tend to respond by tightening control over words and rules — censorship, image-scanning, mandatory ID — rather than addressing the relational/trust deficit driving the fragmentation
+  Resource: McGilchrist's framing of freedom of thought as foundational, paired (by this proposal) with his hemispheric account in which control-via-words-and-rules is the characteristic left-hemisphere move, and the Harrington observation that the state "understands" only "the dimension of words, and that of rules"
+  Solution: A reading of backdoor censorship as a symptom of left-hemisphere governance — so that defending freedom of thought is not only a civil-liberties argument but an epistemic one: protecting the conditions under which right-hemisphere, relational, trust-based culture remains possible
+  Date Added: 2026-07-01
+  Source: Censorship by the front door; PROP-2026-06-17-001
+  Confidence: Speculative
+  Evidence: McGilchrist's own words in the post are the free-speech framing intro; the explicit hemispheric mapping is THIS PROPOSAL'S interpretation, not stated by McGilchrist in this post (he reposts Harrington rather than making the neuroscience argument himself). Flagged Speculative for that reason. The load-bearing primary text is the reposted Harrington line: "the only aspects of the country he understands: the dimension of words, and that of rules."
+
+PRS-47:
+  Problem: A tradition that diagnoses modern education as left-hemisphere-captured must show what its own formative community produces in a graduate — otherwise the rebalancing thesis remains critique without a demonstrated alternative.
+  Resource: McGilchrist's role as Chancellor of Ralston College and the commencement address as the genre in which an educational tradition states its telos to those it has just formed.
+  Solution: A concrete, institutionally embodied account of the educated person as the intended output of right-hemisphere-attentive formation — the curriculum-of-maturity made visible at its completion point.
+  Date Added: 2026-07-01
+  Source: Chancellor McGilchrist Commencement Address | 2026 (Ralston College); PROP-2026-06-24-002
+  Confidence: Medium
+  Evidence: "Chancellor McGilchrist Commencement Address | 2026," Channel McGilchrist, published 2026-06-21, ~8:58 running time, delivered at Ralston College.
+
 ---
-*Total PRS triplets: 45*
+*Total PRS triplets: 47*

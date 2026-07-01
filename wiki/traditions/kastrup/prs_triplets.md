@@ -316,5 +316,59 @@ PRS-34:
   Source: Patrick Harpur & Bernardo Kastrup — on how even the literal is metaphor; PROP-2026-05-20-003
   Confidence: Speculative
 
+PRS-35:
+  Problem: Does an idealist who denies machine consciousness have anything distinctive to say about how AI should be built — or is his metaphysics idle with respect to engineering and policy?
+  Resource: Kastrup's Euclyd position — that current AI runs on repurposed "video game hardware," and that a correct, non-conflated understanding of *intelligence* (information processing) vs. *consciousness* (experience) is itself a competitive design and deployment principle
+  Solution: A demonstration that the intelligence/consciousness distinction central to analytic idealism is action-guiding outside philosophy: it underwrites both a hardware thesis (design for how neural nets actually compute, not for graphics) and a values thesis ("European values need to be reflected in how we deploy AI")
+  Date Added: 2026-07-01
+  Source: A Conversation with Bernardo Kastrup on European AI Sovereignty (AI Me; PROP-2026-06-17-002
+  Confidence: Speculative
+  Evidence: Per event reporting (AI Meet-Up XL, May 21 2026; Dispatches Europe; IAI TV). Primary recording was NOT retrieved (the AI Innovation Center page would not render text to the fetcher); claims above are grounded in multiple secondary reports of Kastrup's own statements, not in the primary transcript. Flagged Speculative accordingly.
+
+PRS-36:
+  Problem: C2A2 treats "can AI agents be genuine tradition-members" as partly a consciousness question; but Kastrup's industrial work suggests a parallel, separable question — what can highly capable *non-conscious* intelligence do inside a tradition?
+  Resource: Kastrup's operative split — he builds for machine intelligence while denying machine consciousness, treating the two as cleanly separable in practice
+  Solution: A sharpening for C2A2: the AI-membership question can be decomposed into (a) a capability question (intelligence — Kastrup is bullish) and (b) a participation question (consciousness/experience — Kastrup is skeptical), letting the network reason about each independently
+  Date Added: 2026-07-01
+  Source: A Conversation with Bernardo Kastrup on European AI Sovereignty (AI Me; PROP-2026-06-17-002
+  Confidence: Medium
+  Evidence: Kastrup's long-standing public skepticism about machine consciousness combined with his active investment in machine intelligence; consistent with Kastrup PRS-22 (AI can scaffold/represent but not occupy the experiential pole).
+
+PRS-37:
+  Problem: If individual minds are dissociated alters of one consciousness, what is the status of dream content — mere noise, or access to something objectively real — and how is that adjudicated without lapsing into literalism?
+  Resource: Kastrup's layered-dissociation model of dreaming: "when content arises from deeper layers of mind... it comes from deeper layers of reality," with analogy ("the primordial language of mind") as the interpretive key and literalism named as the central error.
+  Solution: A graded epistemology of dreams — dreams as a "nested dissociation with less ego" whose deeper (archetypal) strata can yield genuine intuition, valid only when read symbolically; the same reading-for-significance is then extended to waking life via synchronicity.
+  Date Added: 2026-07-01
+  Source: Dreams of reality — How idealism reveals the significance of dreams an; PROP-2026-06-24-004
+  Confidence: High
+  Evidence: "Dreams are a dialogue between different layers of your mind... when content arises from deeper layers of mind, it is the same as saying it comes from deeper layers of reality." / "Dreams are a nested dissociation with less ego." / "The danger of taking dreams literally, not symbolically."
+
+PRS-38:
+  Problem: Modern culture has "withdrawn deep symbolic meaning from life," locating meaning in achievement rather than in being — Kastrup calls this "perhaps the greatest tragedy of our time."
+  Resource: The claim that waking life and dreaming "are different ways to experience the same reality," so the same interpretive care owed to dreams is owed to waking events (synchronicity, recurring motifs).
+  Solution: A re-enchantment prescription — "interpret your life with the same care as your dreams," living as "a metaphysical Sherlock Holmes," recovering symbolic significance as constitutive of meaning rather than meaning-as-attainment.
+  Date Added: 2026-07-01
+  Source: Dreams of reality — How idealism reveals the significance of dreams an; PROP-2026-06-24-004
+  Confidence: Medium
+  Evidence: "Waking life is as richly symbolic as dreams... it is 'perhaps the greatest tragedy of our time' that we have withdrawn this deep symbolic meaning from life. We think the meaning is what we achieve rather than the magic of what we are."
+
+PRS-39:
+  Problem: Every metaphysics must grant exactly one unexplained primitive (McKenna's "one free miracle"); physicalism locates it in an inexplicable initial physical state or set of laws, which leaves the hard problem untouched.
+  Resource: Kastrup's relocation of the single primitive: consciousness (Mind-at-Large) is the one ground that "by definition cannot be explained by another," and the physical world is its appearance.
+  Solution: An idealist parsimony argument — granting consciousness as the one miracle dissolves the hard problem and the question of why physical law is explanatorily brute, because experience is no longer a thing to be derived from non-experiential substrate.
+  Date Added: 2026-07-01
+  Source: You are the one free miracle — Why is nature this way, not that? (Q&A ; PROP-2026-06-24-003
+  Confidence: High
+  Evidence: "grant one free miracle and then we can explain all the rest... Under idealism, the miracle is not a big bang or laws of nature. The miracle is you, the consciousness from which all of nature springs."
+
+PRS-40:
+  Problem: The indexical / contingency question — why am I *this* perspective here and now, and why is nature *this* way rather than another — appears to demand an external explanation idealism cannot give.
+  Resource: Kastrup's tautology-detection method: recognising when a "why" question is true merely by repeating itself or by circular logic, applied to God's choice and to multiverse posits alike ("they are all as they are and not some other way").
+  Solution: Dissolution rather than solution — "since nothing exists outside of nature to constrain or compel its behaviour, it is how it is because it is what it is," with free will and determinism identified as one; the question disappears once the assumption of an external constrainer is dropped.
+  Date Added: 2026-07-01
+  Source: You are the one free miracle — Why is nature this way, not that? (Q&A ; PROP-2026-06-24-003
+  Confidence: Medium
+  Evidence: "could God have chosen for things to be some other way?... the choice was made based on what God is... Free will and determinism are one." Time stamps: "0:20:30 Why am I here & now, not there & then?" / "0:47:00 Why is nature the way it is?"
+
 ---
-*Total PRS triplets: 34*
+*Total PRS triplets: 40*

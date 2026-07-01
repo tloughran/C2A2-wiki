@@ -6890,3 +6890,345 @@ ASSUMPTION-382:
     Transform at each step:
       14a: Extracted from the iframe + ?v=Date.now() integration description. [stated]
     Current status: UNTESTED
+
+ASSUMPTION-383:
+  Date identified: 2026-06-28
+  Statement: "The vault is wikilink-sparse but reference-dense, and its thinker content is already well connected." The orphan population "is not a synthesis problem"; "the knowledge graph is sufficient to support meaningful thinker-agent synthesis today; the bottleneck is not connectivity." Only 9 thinker-tradition pages are under-connected.
+  Context: Autonomous one-time "C2A2 sewing-agent wiki bootstrap audit" run (Tom not present) — headline finding; the premise that justifies declining Phase 3.
+  Type: empirical
+  Related decisions: DECISION-071
+  Related items: ASSUMPTION-384 (orphan-count-as-artifact); PRESUMPTION-414 (connectivity-as-health-proxy); the live weekly sewing agent's 2026-06-23 census (2,160/608/44/2,812)
+  Testability: testable via literature — knowledge-graph health metrics, link density vs. functional connectedness, when low wikilink density does/doesn't indicate a synthesis deficit.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-383
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the sewing-bootstrap report's headline finding and vault-health assessment. [stated] (source = autonomous agent run, not an interactive human session)
+    Current status: UNTESTED
+
+ASSUMPTION-384:
+  Date identified: 2026-06-28
+  Statement: The alarming orphan count (2,337 of 3,031 pages) "is an artifact of (a) excluding shared-reference edges and (b) inbox/structural pages that should not carry backlinks — not a deficit in the substantive knowledge graph." 2,474 orphans are structural pages orphaned by design; 456 are inbox residue.
+  Context: Sewing-bootstrap audit — orphan classification (Phase 2) and vault-health assessment.
+  Type: methodological
+  Related decisions: DECISION-071
+  Related items: ASSUMPTION-383; OPEN-100 (is wikilink-backlink the right health metric?); PRESUMPTION-415 (path-heuristic classification validity)
+  Testability: testable via literature — choice of edge type in graph health metrics, co-citation/shared-reference vs explicit-link connectivity, measurement artifacts in network analysis.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-384
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the orphan-classification table and the "artifact, not deficit" framing. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-385:
+  Date identified: 2026-06-28
+  Statement: Injecting agentic-call boilerplate into all A/B/C pages (Phase 3 as written) "would have stamped boilerplate into ~480 files — 456 of them inbox process-artifacts" and "would inject noise, not synthesis hooks," evidenced by the task's own "most relevant to multiple thinkers" heuristic ranking process logs (PROCESSED_LOG.md, repair manifests) at the top precisely because they name every thinker. It therefore conflicts with the token budget (Rule 6), surgical-change (Rule 3), and is largely redundant with the live weekly sewing agent — so Phase 3 should not be executed.
+  Context: Sewing-bootstrap audit — Phase 3 disposition (NOT executed); the design rationale for the decision.
+  Type: methodological
+  Related decisions: DECISION-071
+  Related items: PRESUMPTION-416 (autonomy-overrides-instruction); PRESUMPTION-417; Rule 3, Rule 5, Rule 6, Rule 12
+  Testability: testable via literature — signal-to-noise of automated/templated link injection, template/boilerplate pollution in wikis, when bulk automated edits degrade vs improve a knowledge base.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-385
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the four-reason Phase-3-not-executed rationale. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-386:
+  Date identified: 2026-06-28
+  Statement: The bounded alternative — "wire the ~9 tradition hub pages into their neighbors (add inbound links ...)" and "triage the 456 inbox pages through the inbox pipeline in dated batches" — is the high-signal, reviewable path; and "the biggest lever on the orphan count isn't link-seeding, it's a one-time triage of the 456 un-promoted inbox pages."
+  Context: Sewing-bootstrap audit — bounded-alternative recommendation and "recommended actions for Tom."
+  Type: methodological
+  Related decisions: DECISION-071
+  Related items: ASSUMPTION-385; OPEN-099 (inbox-residue policy)
+  Testability: testable via literature — triage/backlog-batching vs broad-injection interventions for graph connectivity, hub-and-spoke wiring effects on navigability, WIP-bounded remediation.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-386
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the bounded-alternative and recommended-actions sections. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-387:
+  Date identified: 2026-06-28
+  Statement: Deterministic path/size heuristics (not the model — explicit Rule 5 application) correctly classify all 2,984 orphan+sparse pages into categories A (thinker content) / B (inbox residue) / C (synthesis potential) / D (structural) / E (stub <200B), with directory location and file size as the discriminators.
+  Context: Sewing-bootstrap audit — Phase 2 orphan classification ("model not used — Rule 5").
+  Type: methodological
+  Related decisions: DECISION-071
+  Related items: ASSUMPTION-384; PRESUMPTION-415 (directory location reliably indicates content type)
+  Testability: testable via literature — accuracy of path/metadata-based document classification vs content-based classification, when structural heuristics suffice for triage.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-387
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the Rule-5 deterministic-classification description. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-388:
+  Date identified: 2026-06-29
+  Statement: Cross-tradition signals/day is a meaningful "yield" metric worth surfacing as its own amplitude axis in the metabolism waveform view, on par with the existing PRS-triplet yield series — i.e., the daily rate at which cross-tradition signals are generated is a real signal of system productivity/health (743 signals over 47 days, Apr 3–Jun 23, peak 68 on May 5).
+  Context: "Resume explorer cleanup" session, Item 2 — adding cross-tradition signals/day as a metabolism yield series (build_metabolism_view.py, +54/−9), following the convention the PRS series already established.
+  Type: epistemic
+  Related decisions: (operational — Item 2 ship, approved-pending-push)
+  Related items: PRESUMPTION-419 (signal-volume-as-yield proxy); the standing "cross-tradition connections are good" normative presumption
+  Testability: testable via literature — validity of activity/event-rate metrics as proxies for knowledge-production or research productivity; when count-rate dashboards track real value vs volume.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-388
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the Item-2 rationale for adding signals/day as a yield axis alongside PRS. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-389:
+  Date identified: 2026-06-29
+  Statement: PRS-triplet extraction (and cross-program signal extraction) is quality-sensitive and is therefore gated to attended (human-present) sessions by standing policy — the unattended daily orchestrator deliberately does NOT auto-extract PRS triplets from the approved backlog ("raw backlog deferred per standing policy; no triplets added"), because raw PRS/cross-program extraction is the quality-sensitive step Tom reserved for attended runs.
+  Context: "Resume explorer cleanup" session, gap-#1 ingestion-stall diagnostic — root-cause finding traced through the orchestrator phase spec and PROCESSED_LOG.md.
+  Type: methodological
+  Related decisions: DECISION-068 (OpenStory proof, blocked); OPEN-101 (attended-gating policy review)
+  Related items: PRESUMPTION-420 (the attended-gating quality benefit is untested while the staleness cost is real); the ingest_backlog HIGH flag
+  Testability: testable via literature — human-in-the-loop vs automated extraction quality for structured-claim/triple extraction; when human gating materially improves output quality; cost of human-gated throughput bottlenecks.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-389
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated "deferred per standing policy / gated to attended sessions" rationale surfaced in the ingestion-stall diagnostic. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-390:
+  Date identified: 2026-06-29
+  Statement: The liveness of the OpenStory activity feed does not imply the liveness of the PRS/signals approval axes — the metabolism view's feeds are independent, so "OpenStory running through today tells you nothing about whether approvals show up." Approvals reach the view only through the PRS-yield and signals axes, which are fed by separate pipelines that were stale by 6–12 days (PRS frozen 2026-06-17; signals frozen 2026-06-23) even while OpenStory activity lanes were current through 2026-06-29.
+  Context: "Resume explorer cleanup" session, answering Tom's question "approvals from June 26 are not present in the metabolism views, though OpenStory data runs through today. Is the appropriate agent running?"
+  Type: methodological
+  Related decisions: OPEN-103 (per-axis freshness/as-of indicator)
+  Related items: ASSUMPTION-392; PRESUMPTION-421 (silent-staleness — "someone will notice" as the liveness mechanism); PRESUMPTION-422 (stale-axis-beside-fresh-axis); OPEN-086 (pipeline-liveness watchdog)
+  Testability: testable via literature — observability/freshness monitoring in multi-source dashboards; per-source staleness/SLA indicators; why composite views mislead when sources update on different cadences.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-390
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated diagnostic that feed independence means OpenStory liveness does not certify approval-axis liveness. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-391:
+  Date identified: 2026-06-29
+  Statement: `git pull --rebase --autostash` correctly and safely handles the ~20 unrelated working-tree files by auto-stashing them around the rebase, removing the manual stash → pull --rebase → push → stash-pop dance used in the prior two pushes. Adopted as the standard push pattern and folded into push-pattern memory.
+  Context: "Resume explorer cleanup" session, Item 2 push instructions and the push-pattern memory update.
+  Type: methodological
+  Related decisions: DECISION-072 (adopt --rebase --autostash as standard push pattern)
+  Related items: PRESUMPTION-424 (autostashing a chronically dirty tree every push is safe); PRESUMPTION-412 / REVISE-148 (cross-session push debt)
+  Testability: testable via literature/tooling docs — git rebase autostash semantics and failure modes; safety of stashing uncommitted changes across rebase; conflict/rollback behavior.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-391
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated switch to --rebase --autostash and its rationale (auto-stashes the other ~20 files, no manual dance). [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-392:
+  Date identified: 2026-06-29
+  Statement: Item 1 (Community Interactions layout) and Item 6 (Community Explorer search layout) share the same layout-bug family, so "the same surgical CSS-family fix just shipped for Item 1" resolves Item 6 — making Item 6 a low-risk quick win doable in-sandbox.
+  Context: "Resume explorer cleanup" session / 2026-06-29 cowork summary — framing Item 6 as the natural next quick win.
+  Type: empirical
+  Related decisions: (operational — backlog prioritization)
+  Related items: ASSUMPTION-390; PRESUMPTION-423 (add-an-agent / treat components as same-class)
+  Testability: testable empirically — whether the Item-1 width/CSS fix in fact resolves Item 6 when applied (verifiable on next pass); not literature-testable.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-392
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated "same surgical CSS-family fix" framing of Item 6. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-393:
+  Date identified: 2026-06-30
+  Statement: The PRS-triplet backlog should be cleared now via a single attended ("Track A") ingestion pass with Tom present — acting on OPEN-101 in favor of attended-gating rather than authorizing a bounded unattended ingest agent. The pass ingested 144 QC-vetted triplets across 12 traditions, breaking the freeze that had held the PRS axis at 2026-06-17.
+  Context: "PRS backlog runbook" session (2026-06-30, attended). Tom ran the Mac-side commit/push; the session drove the ingestion, QC, connectome regen, and review.
+  Type: methodological
+  Related decisions: DECISION-073 (attended Track-A backlog clear); OPEN-101 (attended-vs-unattended ingest — partially addressed)
+  Related items: ASSUMPTION-389 (extraction gated to attended sessions); PRESUMPTION-420/425; OPEN-102 (no scheduled regen agent — cadence gap remains)
+  Testability: testable via literature — human-gated batch remediation vs continuous automated ingest for quality-sensitive structured-claim extraction; also partly empirical (does the backlog re-accumulate before the next attended pass?).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-393
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated decision to clear the backlog now via an attended Track-A pass rather than an unattended agent. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-394:
+  Date identified: 2026-06-30
+  Statement: The narrative connectome (`prs_3d.html`) is the primary PRS visualization and independently confirms the ingestion — a clean 288→432 regen (exactly +144) with `node --check`, count-match, and content-population checks all green is sufficient verification that the triplets are correct, so the token-axis metabolism view can be deferred without loss of verification.
+  Context: "PRS backlog runbook" session — framing the connectome regen as "the real headline" that "independently confirms the ingestion."
+  Type: methodological
+  Related decisions: DECISION-073
+  Related items: ASSUMPTION-399 (metabolism view is the only DB-blocked piece); PRESUMPTION-426 (count-consistency read as content-correctness); PRESUMPTION-429 (connectome and token-view treated as redundant for verification)
+  Testability: framework commitment (verification-sufficiency claim) — partly testable via literature on redundant-check value.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-394
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated claim that the connectome regen independently confirms the +144 ingestion. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-395:
+  Date identified: 2026-06-30
+  Statement: `prs_yield.py` reconstructs the yield time-series from git history, so it fails loud (Rule 12) on triplets that are on disk but not yet committed — therefore the commit must PRECEDE the metrics regen, not follow it. The prior runbook's commit-after ordering was wrong and was corrected to commit → yield → connectome.
+  Context: "PRS backlog runbook" session, opening ordering discovery and runbook correction.
+  Type: methodological
+  Related decisions: DECISION-072 (autostash push pattern); DECISION-073
+  Related items: PRESUMPTION-431 (recurring stale git lock treated as benign)
+  Testability: testable empirically / via tooling docs — the script's git-history dependency is directly verifiable.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-395
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated ordering discovery (prs_yield reads git history; commit must precede regen). [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-396:
+  Date identified: 2026-06-30
+  Statement: Ingestion identity must be keyed on `proposal_id`, not inbox filename — the manifest's un-ingested gate was testing inbox filenames against a proposal-id-keyed log, which both re-staged ~15 already-ingested cards and hid real pending ones; the corrected candidate set was 70 units / 152 candidates (not the runbook's 127). Fixed at source in `build_prs_manifest.py`; a code-driven dedup pass (`qc_prs.py`) is the right gate.
+  Context: "PRS backlog runbook" session — the two-way manifest-gate bug found and fixed.
+  Type: architectural
+  Related decisions: DECISION-073
+  Related items: ASSUMPTION-397 (the 8 QC drops); PRESUMPTION-427 (one identity-bug found treated as the class eliminated); PRESUMPTION-428 (audit-vs-vault divergence)
+  Testability: testable empirically — the filename-vs-proposal_id keying error and its ~15-card effect are directly verifiable.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-396
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated manifest-gate bug (filename vs proposal_id) and its correction. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-397:
+  Date identified: 2026-06-30
+  Statement: Eight of 152 candidates are correctly excluded from ingestion: hawkins `SUPP-001` is a full re-derivation of existing PRS-10–15 (all 6 dropped), the hawkins citation-upgrade card is vacuous, and stump `PRS-25` duplicates `PRS-09`. Net 8 drops, all confirmed against source.
+  Context: "PRS backlog runbook" session — the `qc_prs.py` code-driven dedup dispositions.
+  Type: empirical
+  Related decisions: DECISION-073
+  Related items: ASSUMPTION-396
+  Testability: testable empirically — each drop is verifiable against the source cards (already git-confirmed this session).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-397
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated 8-of-152 QC drops and their source-confirmed rationale. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-398:
+  Date identified: 2026-06-30
+  Statement: The No-Blind-Push rule requires a live visual eyeball of `prs_3d.html` (Chrome review of the served page: ToC loads, a spot-checked tradition shows its new triplets, the 432 count renders) before publish, even after all programmatic validations pass — programmatic green is necessary but not sufficient to go live.
+  Context: "PRS backlog runbook" session — the No-Blind-Push review gate enforced before the push block was handed over.
+  Type: methodological
+  Related decisions: DECISION-073
+  Related items: ASSUMPTION-394; PRESUMPTION-426
+  Testability: framework commitment (standing policy) — partly testable via literature on the marginal value of human visual review after automated validation.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-398
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated enforcement of a visual pre-push review over-and-above programmatic validation. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-399:
+  Date identified: 2026-06-30
+  Statement: The OpenStory DB corruption ("Rowid out of order", 4.35 GB, live 5 MB WAL updated 20:27) is unrelated to and does not block the PRS work — the triplets, `prs_yield`, and the connectome all read the vault/git, not OpenStory; only the token-axis metabolism view depends on the DB.
+  Context: "PRS backlog runbook" session — diagnosing the `build_metabolism_view.py` quick_check abort.
+  Type: architectural
+  Related decisions: DECISION-068 (OpenStory fix, BLOCKED); OPEN-095 (end-to-end proof)
+  Related items: ASSUMPTION-400; ASSUMPTION-394
+  Testability: testable empirically — the dependency claim (PRS reads vault/git, view reads DB) is directly verifiable and was confirmed this session.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-399
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated finding that the corrupt DB blocks only the metabolism view, not the PRS pipeline. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-400:
+  Date identified: 2026-06-30
+  Statement: Recovering a 4.35 GB SQLite file while a writer is still attached (live WAL) risks compounding the corruption, so a blind `.recover` must not be run — the safe sequence requires stopping the OpenStory writer first, then checkpoint/back up → `.recover` into a fresh file (needs ~5 GB free) → swap in.
+  Context: "PRS backlog runbook" session — refusing to hand over a blind recovery block for the corrupt OpenStory DB.
+  Type: methodological
+  Related decisions: DECISION-068 (BLOCKED); OPEN-095
+  Related items: ASSUMPTION-399
+  Testability: testable via literature/tooling docs — SQLite `.recover` semantics and the risk of recovering a file with a live writer attached.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-400
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated safe-recovery sequence and the refusal to run a blind live `.recover`. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-401:
+  Date identified: 2026-06-30
+  Statement: Cross-tradition routing into `master/cross_program_index.md` is a separate attended step and can be deferred out of the first (Track A) commit without harming the triplet ingestion — `wiki/master` is intentionally left out of the first commit.
+  Context: "PRS backlog runbook" session — scoping Track A to traditions + PROCESSED_LOG + connectome, deferring master routing.
+  Type: methodological
+  Related decisions: DECISION-073
+  Related items: OPEN-084 (construct-count / index reconciliation); ASSUMPTION-393
+  Testability: framework/operational commitment — partly empirical (does deferring master routing leave the connectome/index inconsistent in the interim?).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-401
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated scoping of Track A and deferral of cross_program_index routing to a separate attended pass. [stated]
+    Current status: UNTESTED

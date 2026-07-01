@@ -275,8 +275,17 @@ PRS-29:
   Source: Precision psychiatry — Karl J. Friston (UCL), Cambridge Neuroscience Distinguished Lecture; PROP-2026-05-18-003
   Confidence: Speculative (inferred from abstract + trajectory of recent PRS triplets in this wiki)
 
+PRS-30:
+  Problem: Attractor/associative memory networks are typically engineered with hand-tuned dynamics; there is no first-principles account of why such structures should emerge in self-organizing systems.
+  Resource: Derivation of attractor dynamics (and self-orthogonalization of stored patterns) from free-energy minimization over a universal Markov-blanket partition of a random dynamical system.
+  Solution: A demonstration that self-orthogonalizing attractor networks *emerge* from the FEP, grounding a major class of neural-network architecture in the same variational principle that governs perception and action.
+  Date Added: 2026-07-01
+  Source: Self-orthogonalizing attractor neural networks emerging from the free ; PROP-2026-06-29-003
+  Confidence: High
+  Evidence: The paper formalizes how attractor networks emerge from the FEP applied to a universal partitioning of random dynamical systems, with orthogonalization arising as a consequence rather than a design choice (arXiv:2505.22749; Neurocomputing 2026).
+
 ---
-*Total PRS triplets: 29*
+*Total PRS triplets: 30*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

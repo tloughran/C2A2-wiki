@@ -402,5 +402,23 @@ PRS-44:
   Source: Toward a Phenomenologically Acceptable Quantum Cyclic Universe; PROP-2026-06-19-001
   Confidence: Speculative
 
+PRS-45:
+  Problem: Quantum field theory predicts a vacuum energy density vastly larger (~10^120) than the value inferred from cosmic acceleration, yet the universe behaves as if the cosmological constant is tiny and positive — the cosmological constant problem.
+  Resource: The history and structure of the vacuum-energy interpretation of the cosmological constant — Einstein's Λ recast as the zero-point energy of quantum fields, with cancellations that would have to be fine-tuned to ~120 decimal places.
+  Solution: A clear statement of why the smallness of Λ is a genuine naturalness crisis rather than a mere measurement, framing it as a constraint any candidate fundamental theory (or anthropic/multiverse argument) must meet rather than a solved problem.
+  Date Added: 2026-07-01
+  Source: Mindscape 358 | Solo: Vacuum Energy and the Cosmological Constant; PROP-2026-06-26-001
+  Confidence: High
+  Evidence: Episode synopsis — Carroll "talks about the origin of the idea with Einstein, how quantum physicists started to think about it and understand the 'cosmological constant problem.'"
+
+PRS-46:
+  Problem: Why do we observe the universe at the special epoch when vacuum-energy density and matter density are of comparable magnitude (the coincidence problem), given that this near-equality holds for only a small fraction of cosmic history?
+  Resource: The coincidence-problem framing as a selection/anthropic question — distinguishing "fine-tuning that demands new physics" from "observer-selection within a larger ensemble."
+  Solution: A poetic-naturalist treatment that keeps the coincidence problem honest: it is admitted as a real puzzle at the boundary of current physics, to be addressed either by a dynamical dark-energy mechanism (teased for the sequel episode) or by a principled selection argument, not waved away.
+  Date Added: 2026-07-01
+  Source: Mindscape 358 | Solo: Vacuum Energy and the Cosmological Constant; PROP-2026-06-26-001
+  Confidence: Medium
+  Evidence: Episode synopsis — its discovery "also raised the 'coincidence problem'… This is the first of two connected solo episodes; the next will be on theories of dark energy that are not the cosmological constant."
+
 ---
-*Total PRS triplets: 44*
+*Total PRS triplets: 47*

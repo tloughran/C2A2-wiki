@@ -1021,3 +1021,101 @@ OPEN-097:
     Transform at each step:
       14a: Recorded after 14b surfaced PRESUMPTION-413; corroborated by transcript + file-timestamp cross-check.
     Current status: OPEN
+
+OPEN-098:
+  Date raised: 2026-06-28
+  Question: Should the one-time "bootstrap before moving to a maintenance schedule" sewing task be retired or repurposed? It ran AFTER the maintenance pipeline was already live (the weekly `c2a2-sewing-agent-weekly` task has 7 connectivity_log.csv rows back to 2026-05-10), so its census double-counts against the weekly agent. The task's premise that connectivity_log.csv does "not yet exist" is stale.
+  Context: Autonomous sewing-bootstrap audit (DECISION-071); flagged as a "recommended action for Tom." A schema conflict was also surfaced: the task spec proposed header `date,orphan_count,sparse_count,connected_count,total_pages`, but the file already exists with `date,orphan,sparse,connected,total` — the agent appended to the existing schema (Rule 11) rather than forking.
+  Related: DECISION-071, ASSUMPTION-383
+  Status: OPEN — awaiting Tom's decision to retire/repurpose the bootstrap task so it doesn't double-count with the weekly sewing agent.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Recorded from the bootstrap-vs-maintenance reconciliation recommendation and the surfaced CSV-header conflict.
+    Current status: OPEN
+
+OPEN-099:
+  Date raised: 2026-06-28
+  Question: What is the inbox-residue policy? 456 un-promoted inbox pages (process artifacts, logs, READMEs, proposals) dominate the orphan count. A one-time pipeline triage (process / archive / delete) would shrink the orphan number far more than any link-seeding — but the disposition of un-promoted inbox pages is a pipeline decision that has not been made.
+  Context: Autonomous sewing-bootstrap audit (DECISION-071); the largest single lever on vault orphan count.
+  Related: DECISION-071, ASSUMPTION-386
+  Status: OPEN — awaiting an inbox-pipeline disposition decision (process/archive/delete) for the 456 un-promoted pages.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Recorded from the "decide inbox-residue policy" recommended action.
+    Current status: OPEN
+
+OPEN-100:
+  Date raised: 2026-06-28
+  Question: Is wikilink-backlink count the right connectivity health metric, or should shared-reference edges be included? The vault looks alarming (2,337 orphans) only because the backlink census excludes the shared-reference edges that produce the Sociogram's ~70k edges. If wikilink backlinks are not the intended health metric, the weekly maintenance agent's orphan definition may be measuring the wrong thing.
+  Context: Autonomous sewing-bootstrap audit (DECISION-071); "confirm the wikilink-vs-reference framing" recommended action. Directly underlies PRESUMPTION-414.
+  Related: DECISION-071, ASSUMPTION-384, PRESUMPTION-414
+  Status: OPEN — awaiting Tom's confirmation of which edge type defines vault connectivity health.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Recorded from the wikilink-vs-reference framing question.
+    Current status: OPEN
+
+OPEN-101:
+  Date raised: 2026-06-29
+  Question: Should PRS-triplet (and cross-program signal) extraction remain gated to attended sessions, or should a quality-bounded unattended ingest agent clear the approved backlog? The gate is the proximate cause of the metabolism approval-axis freeze: the daily orchestrator defers raw extraction "per standing policy," so ~68 genuinely un-ingested cards (inbox holds ~200 copied-in, Apr 7–Jun 29) have accumulated and PRS/signals froze 2026-06-17/06-23 while approvals kept arriving. The quality benefit of human attention is presumed but untested (PRESUMPTION-420); the staleness cost is now concrete.
+  Context: "Resume explorer cleanup" gap-#1 ingestion-stall diagnostic (ASSUMPTION-389). The HIGH-severity ingest_backlog flag (flags/ingest_backlog_2026-05-25.md, "All these belong live") records the same thing.
+  Related: ASSUMPTION-389, PRESUMPTION-420, OPEN-086 (silent-staleness family), DECISION-068 (blocked proof)
+  Status: OPEN — decision deferred to Tom (attended backlog-clear pass vs a bounded unattended ingest agent).
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the attended-gating root-cause finding of the ingestion-stall diagnostic.
+    Current status: OPEN
+
+OPEN-102:
+  Date raised: 2026-06-29
+  Question: Should there be a scheduled signal-stream regen agent? There is currently no scheduled task that runs `extract_signals.py` / `build_prototype.py` (grep of every SKILL.md found zero), so the signals axis freezes even when its source advances — and even once approvals are ingested, signals will not reach the metabolism view until someone runs that regen by hand. PRS yield is similar (`prs_yield_detail.csv` stuck at 2026-06-17 though the connectome weekly ran 06-28).
+  Context: "Resume explorer cleanup" gap-#1 diagnostic — the second of the two upstream gaps (the signals axis "has no scheduled regen agent at all").
+  Related: ASSUMPTION-390, PRESUMPTION-421, PRESUMPTION-423, OPEN-086, OPEN-101
+  Status: OPEN — whether to add a scheduled signal/PRS regen, and at what cadence, is undecided (see also OPEN-103 and PRESUMPTION-423 on consolidate-vs-add-agent).
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the "no scheduled signal-stream regen agent exists" finding.
+    Current status: OPEN
+
+OPEN-103:
+  Date raised: 2026-06-29
+  Question: Should the metabolism view carry per-axis freshness / "as-of" indicators so stale axes are not read as current? The view today renders OpenStory activity (through 06-29), PRS yield (frozen 06-17), and signals/day (frozen 06-23) on one canvas with no staleness marking, presuming the viewer attributes the correct as-of date to each. Tom's own question ("approvals from June 26 are not present … is the appropriate agent running?") is direct evidence that the unmarked composite misleads. This is a concrete instance of the OPEN-086 silent-staleness family.
+  Context: "Resume explorer cleanup" gap-#1 diagnostic (ASSUMPTION-390); the multi-cadence-feed confusion that triggered the whole investigation.
+  Related: ASSUMPTION-390, PRESUMPTION-422, OPEN-086, REVISE-147 (dead-man's-switch keystone)
+  Status: OPEN — whether/how to surface per-axis staleness in the metabolism view is undecided.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the unmarked multi-cadence composite-view finding.
+    Current status: OPEN
+
+OPEN-104:
+  Date raised: 2026-06-30
+  Question: Should the PRS-ingestion audit trail (`qc_trace` / `apply_prs.py` provenance CSVs) be made self-verifying — i.e. reconciled against vault content — so the audit record cannot silently diverge from the artifact it audits? This session found the qc_trace CSV wrong for 3 cross-tradition-shared proposal-ids (05-18-001/002/003; levin/wright/friston) while the vault content was git-confirmed correct; the response was to add a fail-loud guard to `apply_prs.py`, but the deeper issue is that a provenance record can be untrustworthy while the thing it certifies is fine. For a system whose whole value proposition is auditable provenance, an audit that can diverge from truth is a second-order integrity gap.
+  Context: "PRS backlog runbook" session (2026-06-30); the qc_trace metadata glitch and the fail-loud-guard mitigation.
+  Related: ASSUMPTION-396, PRESUMPTION-427, PRESUMPTION-428, DECISION-073
+  Status: OPEN — whether to build an audit-vs-vault reconciliation step (and whether a fail-loud guard is sufficient) is undecided.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the qc_trace audit-vs-vault divergence surfaced during the attended ingestion.
+    Current status: OPEN

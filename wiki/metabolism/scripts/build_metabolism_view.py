@@ -100,7 +100,8 @@ def compute_vault_yield(repo):
         return None
     daily = defaultdict(lambda: {"links_added": 0, "links_removed": 0,
                                  "files_added": 0, "commits": 0,
-                                 "prs_added": 0, "prs_articulated": 0})
+                                 "prs_added": 0, "prs_articulated": 0,
+                                 "signals": 0})
     for line in log:
         try:
             sha, date = line.split("|")
@@ -143,7 +144,38 @@ def compute_vault_yield(repo):
     else:
         sys.stderr.write("WARN: %s missing; PRS yield axes will be empty\n" % prs_csv)
 
+    # Cross-tradition signal yield: a signal-only day (no vault commit) gets its
+    # own daily entry via the defaultdict, so it still draws a bar.
+    for d, n in compute_signal_yield(
+            os.path.join(repo, "wiki", "level2_signal_stream.html")).items():
+        daily[d]["signals"] += n
+
     return [dict(date=k, **v) for k, v in sorted(daily.items())]
+
+
+def compute_signal_yield(sig_html):
+    """Per-day count of dated cross-tradition signals from the Interactions
+    Level-2 stream -- the SIG array inlined in level2_signal_stream.html, the
+    same dated dataset the Interactions tab shows (its upstream extract_signals.py
+    is out-of-git, so this in-repo HTML is the canonical in-tree source). Distinct
+    from the PRS-similarity connectome cross-edges, which are static/undated.
+    Returns {date: count}; warns and returns empty if the source is unreadable."""
+    out = defaultdict(int)
+    if not os.path.isfile(sig_html):
+        sys.stderr.write("WARN: %s missing; signals yield axis will be empty\n" % sig_html)
+        return out
+    try:
+        shtml = open(sig_html, encoding="utf-8").read()
+        j = shtml.index("const SIG = ") + len("const SIG = ")
+        sig_arr, _ = json.JSONDecoder().raw_decode(shtml, j)
+    except (ValueError, OSError) as e:
+        sys.stderr.write("WARN: could not parse signals from %s: %s\n" % (sig_html, e))
+        return out
+    for rec in sig_arr:
+        d = (rec.get("date") or "").strip()
+        if re.match(r"^\d{4}-\d{2}-\d{2}$", d):
+            out[d] += 1
+    return out
 
 
 def main():
@@ -364,7 +396,9 @@ def main():
                     "start like every other metric. Yield = wikilinks/files "
                     "added per day PLUS PRS-triplet "
                     "yield (first-seen and articulated series) from wiki/ git history and the "
-                    "WS2 metric CSV (DECISION-058); PRS yield is LIVE, not 'still to come'.",
+                    "WS2 metric CSV (DECISION-058); PRS yield is LIVE, not 'still to come'. "
+                    "Cross-tradition signals/day (yield_signals) are counted from the dated "
+                    "Interactions Level-2 signal stream.",
         },
         "lanes": lane_meta,
         "yield_daily": compute_vault_yield(args.repo) or [],
@@ -449,6 +483,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
       <option value="yield_links">Yield: wikilinks added/day ✦ live</option>
       <option value="yield_prs">Yield: PRS first-seen/day ✦ git</option>
       <option value="yield_prs_made">Yield: PRS articulated/day ✦ date-added</option>
+      <option value="yield_signals">Yield: cross-tradition signals/day ✦ interactions</option>
     </select>
   </div>
   <div><label>Color</label>
@@ -588,7 +623,8 @@ const METRIC_LABEL = {events:"events", out:"output tokens", total:"total tokens"
   cache_read:"cache-read tokens", thinking_blocks:"thinking steps (count)",
   thinking_tokens:"thinking tokens (audit est., Jun+)",
   dur_min:"minutes", yield_links:"wikilinks added", yield_files:"files added",
-  yield_prs:"PRS first-seen", yield_prs_made:"PRS articulated"};
+  yield_prs:"PRS first-seen", yield_prs_made:"PRS articulated",
+  yield_signals:"cross-tradition signals"};
 const YIELD = DATA.yield_daily || [];
 
 function interactiveHorizon() {
@@ -650,12 +686,15 @@ function renderWave() {
     // valleys the area chart drew through sparse git history.
     const field = metric==="yield_files" ? "files_added"
                 : metric==="yield_prs" ? "prs_added"
-                : metric==="yield_prs_made" ? "prs_articulated" : "links_added";
+                : metric==="yield_prs_made" ? "prs_articulated"
+                : metric==="yield_signals" ? "signals" : "links_added";
     const yUnit = metric==="yield_files" ? "files"
                 : metric==="yield_prs" ? "PRS first-seen"
-                : metric==="yield_prs_made" ? "PRS articulated" : "wikilinks";
+                : metric==="yield_prs_made" ? "PRS articulated"
+                : metric==="yield_signals" ? "cross-tradition signals" : "wikilinks";
     const yColor = metric==="yield_prs" ? "#4A8A7A"
-                : metric==="yield_prs_made" ? "#C47A9A" : "#C9A84C";
+                : metric==="yield_prs_made" ? "#C47A9A"
+                : metric==="yield_signals" ? "#5A8EAF" : "#C9A84C";
     const byday = new Map(YIELD.map(yy => [+day.floor(new Date(yy.date)), yy[field]||0]));
     const vals = days.map(d => ({date:d, v: byday.has(+d) ? byday.get(+d) : null}));
     const yMax = d3.max(vals, d => d.v||0) || 1;
@@ -665,9 +704,15 @@ function renderWave() {
       .attr("x", d => x(d.date)-bw/2).attr("y", d => y(d.v)).attr("width", bw)
       .attr("height", d => innerH-y(d.v)).attr("fill",yColor).attr("fill-opacity",0.72);
     axes(g, x, y, innerH, ylabel);
-    lg.innerHTML = `<span><i class="dot" style="background:${yColor}"></i>`
-      + `${yUnit} added per commit-day (vault git)`
-      + `</span><span style="margin-left:14px">a bar = a commit day · gaps = no vault commit (not zero)</span>`;
+    if (metric==="yield_signals") {
+      lg.innerHTML = `<span><i class="dot" style="background:${yColor}"></i>`
+        + `${yUnit} per day (Interactions L2 stream)`
+        + `</span><span style="margin-left:14px">a bar = a day with signals · gaps = no cross-tradition signal that day</span>`;
+    } else {
+      lg.innerHTML = `<span><i class="dot" style="background:${yColor}"></i>`
+        + `${yUnit} added per commit-day (vault git)`
+        + `</span><span style="margin-left:14px">a bar = a commit day · gaps = no vault commit (not zero)</span>`;
+    }
   } else if (logy) {
     const rows = days.map(d => ({date:d, v:0}));
     lanes.forEach(L => L.rows.forEach(r => { const i=idx.get(+day.floor(new Date(r.t))); if(i!=null) rows[i].v += (+r[metric]||0); }));

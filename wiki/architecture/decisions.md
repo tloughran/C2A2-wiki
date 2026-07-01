@@ -854,3 +854,51 @@ DECISION-070:
     Transform at each step:
       14a: Recorded from the "Interactions tab data visualization" session.
     Current status: IMPLEMENTED (local, reviewed, push pending)
+
+DECISION-071:
+  Date: 2026-06-28
+  Title: Phase-3 agentic-call boilerplate injection deferred (not executed); bounded alternative recommended
+  Decision: The autonomous one-time sewing-agent bootstrap audit deliberately did NOT execute Phase 3 (inject agentic calls into all category A/B/C orphan pages). Doing so would have stamped identical boilerplate into ~480 files (456 of them inbox process-artifacts) in one unreviewed automated pass. Four convergent reasons: (1) the task's own "most-relevant-to-multiple-thinkers" heuristic surfaces process logs (PROCESSED_LOG.md, repair manifests, READMEs) at the top because they name every thinker — so injection would add noise, not synthesis hooks; (2) ~482 actionable pages × (read + 14-way relevance judgment + write) is ~two orders of magnitude beyond the per-session token budget (surfaced, not silently overrun — Rule 6/12); (3) 456 of the 482 are inbox residue owned by the inbox pipeline, whose correct disposition is a pipeline decision, not boilerplate stamping (Rule 3); (4) the live weekly `c2a2-sewing-agent-weekly` task already owns orphan/sparse detection, and thinker content is already connected, so there is no synthesis-connectivity emergency. Bounded alternative recommended for a reviewed (non-cron) session: wire the ~9 under-connected tradition hub pages to their neighbors and triage the 456 inbox pages through the inbox pipeline in dated batches. No vault content pages were modified; append-only deliverables (census + CSV row + report); no git push.
+  Status: DECIDED & EXECUTED autonomously (Tom not present); surfaced loudly per Rule 12 rather than partially-done-and-called-complete. Awaiting Tom's review of the bounded alternative and of the bootstrap-vs-maintenance reconciliation (OPEN-098). Companion files: architecture/sewing_agent_bootstrap_2026-06-28.md, architecture/metrics/bootstrap_backlink_census_2026-06-28.md, architecture/metrics/connectivity_log.csv (+1 row).
+  Related assumptions: ASSUMPTION-383, ASSUMPTION-384, ASSUMPTION-385, ASSUMPTION-386, ASSUMPTION-387
+  Related presumptions: PRESUMPTION-414, PRESUMPTION-415, PRESUMPTION-416, PRESUMPTION-417, PRESUMPTION-418
+  Related questions: OPEN-098, OPEN-099, OPEN-100
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the autonomous "C2A2 sewing-agent wiki bootstrap audit" run and its report. (Source = autonomous agent run, not an interactive human session — designer-of-record is the agent under standing project rules.)
+    Current status: EXECUTED (autonomous; bounded alternative + reconciliation pending Tom)
+
+DECISION-072:
+  Date: 2026-06-29
+  Title: Adopt `git pull --rebase --autostash` as the standard push pattern (supersedes the manual stash/pop dance)
+  Decision: During the Item-2 push, the push workflow was switched from the prior manual "stash → pull --rebase → push → stash-pop" sequence to `git pull --rebase --autostash`, which auto-stashes the ~20 unrelated working-tree files around the rebase and restores them afterward. This was folded into the push-pattern memory as the standard form, with a recorded note that a scoped/partial stash does not work because the other ~20 files still block the rebase. The change was made and approved in an attended session (Tom: "Let push on here").
+  Status: DECIDED & ADOPTED (attended). Operational/workflow decision, not an architecture-of-the-network decision; recorded for traceability because it changes a standing procedure. Item 2 itself is code-complete and approved-pending-push at session end (see 2026-06-29 changelog).
+  Related assumptions: ASSUMPTION-391
+  Related presumptions: PRESUMPTION-424, PRESUMPTION-412 (cross-session push debt)
+  Related questions: —
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the interactive "Resume explorer cleanup" session push-pattern change and memory update.
+    Current status: ADOPTED
+
+DECISION-073:
+  Date: 2026-06-30
+  Title: Clear the PRS-triplet backlog via an attended Track-A ingestion pass (guarded tooling; commit-before-regen; No-Blind-Push review)
+  Decision: In an attended session (Tom present), the ~68-card PRS backlog was cleared by ingesting 144 QC-vetted triplets across 12 traditions, regenerating the narrative connectome 288→432 (exactly +144), and publishing after a live visual review — acting on OPEN-101 in favor of an attended batch clear rather than a bounded unattended ingest agent. Along the way: (1) a two-way manifest-gate bug was fixed at source in `build_prs_manifest.py` — the un-ingested gate was keying inbox filenames against a proposal-id log, which re-staged ~15 already-ingested cards and hid real pending ones (corrected set 70 units / 152 candidates, not the runbook's 127); (2) a code-driven dedup pass (`qc_prs.py`) dropped 8 of 152 candidates (hawkins SUPP-001 as a full re-derivation of PRS-10–15, a vacuous hawkins citation-upgrade card, and stump PRS-25 duplicating PRS-09), all source-confirmed; (3) the runbook ordering was corrected to commit → yield → connectome because `prs_yield.py` reconstructs the series from git history and fails loud on uncommitted triplets (Rule 12); (4) `apply_prs.py` gained a fail-loud guard after a qc_trace CSV metadata glitch on 3 cross-tradition-shared proposal-ids (05-18-001/002/003; levin/wright/friston) — vault content git-confirmed correct, only the audit CSV suspect; (5) publish used the DECISION-072 `pull --rebase --autostash` pattern after a No-Blind-Push Chrome review. Cross-tradition routing into `master/cross_program_index.md` and the token-axis metabolism view (blocked by the corrupt 4.35 GB OpenStory DB) were deferred to separate attended passes.
+  Status: DECIDED & EXECUTED (attended; committed and pushed to origin/main by Tom). Reusable guarded tooling (`build_prs_manifest.py` fix, `apply_prs.py`, `qc_prs.py`) established as the standard PRS-ingestion path. Partially resolves OPEN-101 (this backlog cleared, attended) but leaves the cadence question (OPEN-102) and the freshness-marking question (OPEN-103) open.
+  Related assumptions: ASSUMPTION-393, ASSUMPTION-394, ASSUMPTION-395, ASSUMPTION-396, ASSUMPTION-397, ASSUMPTION-398, ASSUMPTION-399, ASSUMPTION-400, ASSUMPTION-401
+  Related presumptions: PRESUMPTION-425, PRESUMPTION-426, PRESUMPTION-427, PRESUMPTION-428, PRESUMPTION-429, PRESUMPTION-430, PRESUMPTION-431
+  Related questions: OPEN-101 (partially addressed), OPEN-102, OPEN-103, OPEN-104 (new), OPEN-095 (OpenStory proof, still blocked)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the attended "PRS backlog runbook" session (2026-06-30). Tom ran the Mac-side commit/push; the session drove ingestion, QC, connectome regen, and the No-Blind-Push review.
+    Current status: EXECUTED (attended; live on origin/main)

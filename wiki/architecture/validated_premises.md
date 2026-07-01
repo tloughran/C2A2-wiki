@@ -2120,3 +2120,72 @@ PREMISE-087:
   Re-check due: Quarterly (next 15d review)
   Status: ACTIVE
   PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-345
+
+PREMISE-088:
+  Date validated: 2026-06-29
+  Source item: ASSUMPTION-385
+  Statement: Bulk automated ("agentic-call") boilerplate injection into many knowledge-base pages should NOT be executed unsupervised. Bulk/templated edits are a recognized quality risk and are conventionally gated behind human review or a small pilot; mass-injecting process-log-style boilerplate tends to add navigational/process noise rather than substantive synthesis hooks. CONDITIONAL: this validates "gate-or-pilot before bulk-acting," NOT an absolute "never" — a small pilot (10-20 pages) and/or a redesign of the injected content toward genuine synthesis prompts may make a targeted version worthwhile. The blanket prediction that injection would necessarily be pure noise is a forward prediction, not established.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: MediaWiki bot-edit guidance ("boilerplate changes should always be human checked"); Wikidata automation-quality concerns; knowledge-base template-pollution discussions (15a SUPPORTED/Moderate).
+  Challenges noted: 15b (Moderate): bulk templated edits are mainstream and value-adding when well-designed; the real lesson is "human-check / pilot them," not "never"; the noise outcome is untested and may reflect template design. Captured by the CONDITIONAL.
+  Confidence: Moderate
+  Applicable to: the Phase 3 orphan/connectivity remediation decision; any bulk agentic edit to vault pages. Complements PREMISE-086 (fail-loud / verify-completeness) and the surgical-change discipline.
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-356
+
+
+PREMISE-089:
+  Date validated: 2026-06-30
+  Source item: ASSUMPTION-390
+  Statement: Freshness/liveness is a per-source property; the liveness of any one feed (e.g., the OpenStory activity feed) must never be taken as evidence for the liveness of another (PRS approval axis, signals axis). Each axis requires its own freshness signal. Refinement: freshness-independence does NOT imply failure-independence — feeds sharing an upstream scheduler can freeze together, so per-source freshness tracking must coexist with shared-failure awareness.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: per-source data-freshness doctrine (Elementary Data; Sifflet "stale data looks perfectly normal"; Metaplane; "data downtime") — freshness is measured per source and cross-source liveness inference is a known anti-pattern (15a SUPPORTED/Strong).
+  Challenges noted: 15b (Weak/NO-CHALLENGE): no source disputes the claim; only refinement is that shared upstream schedulers create common-mode failure (captured in the Statement).
+  Confidence: Moderate
+  Applicable to: metabolism/heartbeat display, approval-axis dashboards, any multi-feed visualization. Complements PREMISE-086 (fail-loud / verify-completeness). Binds P-422 (per-axis as-of marking, REVISE-158) and P-421 (freshness watchdog, REVISE-157).
+  Re-check due: Monthly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-366
+
+
+PREMISE-090:
+  Date validated: 2026-07-01
+  Source item: ASSUMPTION-393
+  Statement: For a one-time, quality-sensitive backlog whose extraction errors propagate into a validated-premise register, an attended (human-in-the-loop) ingestion pass is justified over an unbounded unattended agent — because HITL measurably reduces extraction error and catches mid-pass anomalies (QC drops, keying bugs) an unattended agent would commit silently. SCOPE CAVEAT: this justifies attended passes as ONE-TIME remediation only, NOT as the standing ingestion cadence (HITL does not scale; the mature steady-state pattern is human-on-the-loop bounded automation).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: HITL extraction literature (IMS Datawise; Forage.ai — 30-40% error reduction; Docsumo; Digital Divide Data HITL-vs-automation framework); C2A2-internal (the attended pass caught the 8-of-152 QC drops and the proposal_id keying bug A-396 mid-pass). 15a SUPPORTED/Moderate-Strong.
+  Challenges noted: 15b (Moderate): HITL does not scale; attended-vs-unattended is a false dichotomy (human-on-the-loop); the one-shot pass leaves recurrence unaddressed (P-425 -> REVISE-161). Captured by the SCOPE CAVEAT.
+  Confidence: Moderate
+  Applicable to: OPEN-101 backlog clears; any one-time quality-sensitive ingestion remediation. Pairs with REVISE-161 (the cadence gap). Complements PREMISE-088 (bulk-edit human-check discipline).
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-374
+
+
+PREMISE-091:
+  Date validated: 2026-07-01
+  Source item: ASSUMPTION-398
+  Statement: A visual check of the rendered artifact is required before publish even after programmatic green, because visual/rendering defects routinely survive functional CI (defect-escape rises ~25% without a review layer adapted to that gap). For C2A2's current bespoke, low-frequency publishes a human eyeball is the appropriate gate; where publishes become frequent/templated, an automated visual-regression diff should take the primary role, with human review reserved for flagged diffs.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Visual-testing literature (Testmetry; BrowserStack; Percy/Applitools — visual regressions pass unit/e2e); Gartner 2024 defect-escape +25% without adapted review; C2A2-internal (the stale-axis mislead REVISE-158 was a programmatic-green-but-visually-wrong case). 15a SUPPORTED/Moderate-Strong.
+  Challenges noted: 15b (Weak-Moderate): "must be a live HUMAN eyeball" over-commits where automated visual regression applies; mandatory manual gates habituate into rubber-stamping. Captured by the automated-where-templated refinement.
+  Confidence: Moderate
+  Applicable to: No-Blind-Push publish gate; all human-facing visualization publishes. Complements PREMISE-089 (per-axis freshness) and REVISE-158.
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-376
+
+
+PREMISE-092:
+  Date validated: 2026-07-01
+  Source item: ASSUMPTION-400
+  Statement: Safe recovery of a large corrupt SQLite database follows this sequence: (1) stop all writers; (2) take a raw file-level copy of the corrupt DB first (belt); (3) confirm SQLite >= 3.51.3 (fixes the 2026-03 WAL-reset corruption bug present 3.7.0-3.51.2); (4) checkpoint/backup via the online backup API (which copies consistently); (5) .recover into a FRESH file; (6) PRAGMA integrity_check on the fresh file; (7) swap in and remove stale -wal/-shm files. Corruption risk concentrates at checkpoint and around leftover wal/shm paired with a swapped main file.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: sqlite.org (How To Corrupt An SQLite Database File; WAL docs; backup API; 2026-03 WAL-reset bug notice); runebook WAL recovery guide. 15a SUPPORTED/Strong.
+  Challenges noted: 15b (Weak): the backup API tolerates a live writer (so "live writer compounds corruption" slightly overstates risk); check SQLite version; raw-copy before any checkpoint. All folded into the Statement as refinements.
+  Confidence: High
+  Applicable to: OpenStory DB recovery (A-399 dependency); any large-SQLite recovery in C2A2. Complements PREMISE-086 (fail-loud / verify-completeness).
+  Re-check due: Quarterly (next 15d review)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-377

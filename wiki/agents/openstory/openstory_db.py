@@ -37,6 +37,26 @@ import time
 import urllib.parse
 
 
+# --- Cross-project exclusions (ISOLATE NOW, REMOVE LATER) -------------------
+# BOSCO is a SEPARATE project (Northern Uganda off-grid archive) whose sessions
+# leak into the live OpenStory store but must NOT be mined into C2A2 telemetry.
+# Matched by any text field (session label, project_name, scheduled-task name),
+# case-insensitive substring. Single source of truth for both agent extractors.
+# Provisional: when BOSCO sessions are purged from open-story.db, delete
+# EXCLUDED_PROJECT_SUBSTRINGS + is_excluded and the two extractor call sites.
+EXCLUDED_PROJECT_SUBSTRINGS = ("bosco",)
+
+
+def is_excluded(*fields):
+    """True if any provided text field matches an excluded cross-project
+    substring (case-insensitive). Keeps BOSCO out of every C2A2 feed from one
+    definition rather than a filter duplicated per extractor."""
+    for f in fields:
+        if f and any(sub in f.lower() for sub in EXCLUDED_PROJECT_SUBSTRINGS):
+            return True
+    return False
+
+
 def _quiet_remove(path):
     try:
         os.remove(path)

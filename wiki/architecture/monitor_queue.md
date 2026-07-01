@@ -16211,3 +16211,251 @@ MONITOR-368..399 (created 2026-06-25/06-27 by 15c; weekly cadence, no prior 15d 
 
 **Total this run (2026-06-28):** 147 weekly re-triggers; 16 stale-flag downgrades; 32 new items scheduled (MONITOR-368..399). Next weekly 15d run due: 2026-07-05. Next monthly cycle (first Sunday): 2026-07-05.
 
+
+## 2026-06-29 intake (15c; from 2026-06-28 EOD cohort) — MONITOR-400..405
+
+MONITOR-400:
+  Item: ASSUMPTION-383 (vault wikilink-sparse but reference-dense; connectivity not the synthesis bottleneck; only 9 under-connected thinker pages)
+  Disposition date: 2026-06-29 | Source: DISPOSITION-354 | Priority: Medium
+  15a/15b: PARTIALLY-SUPPORTED(Mod) / PARTIALLY-CHALLENGED(Mod)
+  What would change disposition: threshold-robust recomputation + shared-reference traversal spot-check (adequate -> INCORPORATE; not -> REVISE).
+  Cadence: Weekly | Next 15d check: 2026-07-06
+
+MONITOR-401:
+  Item: ASSUMPTION-384 (the 2,337 orphan count is an edge-type + structural/inbox-page artifact, not a real deficit)
+  Disposition date: 2026-06-29 | Source: DISPOSITION-355 | Priority: Medium
+  15a/15b: PARTIALLY-SUPPORTED(Mod) / PARTIALLY-CHALLENGED(Mod)
+  What would change disposition: actual recomputation with corrected edge set + node filter (small residual -> INCORPORATE; large -> REVISE). NOTE: re-including permissive shared-reference edges may MASK real orphans.
+  Cadence: Weekly | Next 15d check: 2026-07-06
+
+MONITOR-402:
+  Item: ASSUMPTION-386 (bounded hub-wiring + dated inbox triage is the high-signal lever; triage shrinks orphans MORE than link-seeding)
+  Disposition date: 2026-06-29 | Source: DISPOSITION-357 | Priority: Medium
+  15a/15b: PARTIALLY-SUPPORTED(Mod) / PARTIALLY-CHALLENGED(Mod)
+  What would change disposition: per-lever orphan-delta measurement (triage vs link-seeding act on different orphan populations; comparative is untested).
+  Cadence: Weekly | Next 15d check: 2026-07-06
+
+MONITOR-403:
+  Item: PRESUMPTION-414 (some connectivity measure is the right proxy for vault "health for synthesis" at all)
+  Disposition date: 2026-06-29 | Source: DISPOSITION-359 | Priority: HIGH
+  15a/15b: PARTIALLY-SUPPORTED(Weak-Mod) / CHALLENGED(Mod)
+  What would change disposition: evidence that connectivity changes track real synthesis-task performance (-> INCORPORATE) or decouple (-> REVISE). Goodhart risk; foundational to the whole audit framing. Member of STRUCTURAL-PROXY-AS-GROUND-TRUTH cluster.
+  Cadence: Weekly | Next 15d check: 2026-07-06
+
+MONITOR-404:
+  Item: PRESUMPTION-416 (autonomous agent declining a prescribed step under standing rules is correct; constitutional rules outrank operator instruction)
+  Disposition date: 2026-06-29 | Source: DISPOSITION-361 | Priority: HIGH
+  15a/15b: PARTIALLY-SUPPORTED(Mod) / PARTIALLY-CHALLENGED(Mod)
+  What would change disposition: Tom ratifies the Phase 3 refusal (-> INCORPORATE principled-override) or rejects (-> REVISE toward execute-or-escalate-with-confirmation). Partly a framework commitment; over-refusal/automation-surprise is the standing risk.
+  Cadence: Weekly | Next 15d check: 2026-07-06
+
+MONITOR-405:
+  Item: PRESUMPTION-417 (not every thinker-pair warrants a synthesis bridge; selective quality-gated coverage; 46 absent pairs "plausibly intentional")
+  Disposition date: 2026-06-29 | Source: DISPOSITION-362 | Priority: Medium
+  15a/15b: SUPPORTED(Mod) / PARTIALLY-CHALLENGED(Mod)
+  What would change disposition: per-pair review of the 46 absent pairs (confirmed low-homology -> INCORPORATE; hidden high-value cross-tradition bridges -> REVISE). Tension with C2A2's own cross-tradition-homology thesis.
+  Cadence: Weekly | Next 15d check: 2026-07-06
+
+
+## 2026-06-30 — 15c re-disposition of 15d 2026-06-28 RE-TRIGGER cohort (147 items)
+*Companion to the 15d 2026-06-28 RE-TRIGGER refresh + the 15a/15b per-file refresh blocks. 15a/15b refreshed all 147 items (no new sources); 15c re-dispositioned each as MONITOR (carry forward). No items resolved to INCORPORATE or REVISE this cycle. Trajectory stable across the cohort. 15d already advanced cycle counts and set next 15d weekly check = 2026-07-05 on its 2026-06-28 run; this 15c pass records re-confirmation only.*
+
+**Evidence trajectory (cohort-level):** Supporting=stable; Challenging=stable; New sources since last cycle=No.
+
+Per-item 15c outcomes (all: MONITOR carried forward, cadence Weekly, last-checked 2026-06-30, next 15d check 2026-07-05):
+- ASSUMPTION-077 (MONITOR-75, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-090 (MONITOR-77, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-092 (MONITOR-78, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-080 (MONITOR-80, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-082 (MONITOR-82, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-089 (MONITOR-89, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-092 (MONITOR-92, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-095 (MONITOR-95, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-097 (MONITOR-100, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-098 (MONITOR-101, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-099 (MONITOR-102, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-101 (MONITOR-104, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-106 (MONITOR-109, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-108 (MONITOR-110, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-109 (MONITOR-111, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-111 (MONITOR-113, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-112 (MONITOR-114, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-128 (MONITOR-115, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-135 (MONITOR-118, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-137 (MONITOR-119, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-159 (MONITOR-172, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-162 (MONITOR-174, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-169 (MONITOR-179, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-184 (MONITOR-181, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-186 (MONITOR-183, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-189 (MONITOR-184, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-179 (MONITOR-194, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-180 (MONITOR-195, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-187 (MONITOR-197, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-190 (MONITOR-198, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-193 (MONITOR-199, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-195 (MONITOR-200, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-196 (MONITOR-201, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-197 (MONITOR-202, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-200 (MONITOR-203, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-213 (MONITOR-204, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-214 (MONITOR-205, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-216 (MONITOR-206, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-217 (MONITOR-207, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-218 (MONITOR-208, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-219 (MONITOR-209, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-201 (MONITOR-210, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-202 (MONITOR-211, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-207 (MONITOR-213, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-224 (MONITOR-214, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-226 (MONITOR-216, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-227 (MONITOR-217, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-229 (MONITOR-218, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-230 (MONITOR-219, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-214 (MONITOR-220, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-231 (MONITOR-222, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-232 (MONITOR-223, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-234 (MONITOR-224, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-236 (MONITOR-226, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-237 (MONITOR-227, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-239 (MONITOR-228, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-220 (MONITOR-229, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-221 (MONITOR-230, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-242 (MONITOR-232, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-223 (MONITOR-233, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-224 (MONITOR-234, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-244 (MONITOR-235, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-225 (MONITOR-237, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-226 (MONITOR-238, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-227 (MONITOR-239, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-228 (MONITOR-240, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-230 (MONITOR-241, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-231 (MONITOR-242, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-233 (MONITOR-244, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-234 (MONITOR-245, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-235 (MONITOR-246, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-236 (MONITOR-247, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-249 (MONITOR-248, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-250 (MONITOR-249, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-251 (MONITOR-250, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-253 (MONITOR-251, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-254 (MONITOR-252, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-255 (MONITOR-253, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-258 (MONITOR-254, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-259 (MONITOR-255, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-237 (MONITOR-256, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-238 (MONITOR-257, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-239 (MONITOR-258, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-240 (MONITOR-259, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-241 (MONITOR-260, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-261 (MONITOR-261, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-265 (MONITOR-262, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-266 (MONITOR-263, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-243 (MONITOR-264, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-244 (MONITOR-265, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-245 (MONITOR-266, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-246 (MONITOR-267, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-247 (MONITOR-268, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-248 (MONITOR-269, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-249 (MONITOR-270, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-250 (MONITOR-271, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-251 (MONITOR-272, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-252 (MONITOR-273, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-268 (MONITOR-274, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-271 (MONITOR-275, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-276 (MONITOR-276, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-253 (MONITOR-277, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-254 (MONITOR-278, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-255 (MONITOR-279, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-257 (MONITOR-280, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-258 (MONITOR-281, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-259 (MONITOR-282, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-260 (MONITOR-283, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-261 (MONITOR-284, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-262 (MONITOR-285, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-279 (MONITOR-286, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-281 (MONITOR-287, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-263 (MONITOR-288, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-288 (MONITOR-289, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-292 (MONITOR-290, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-295 (MONITOR-291, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-296 (MONITOR-292, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-297 (MONITOR-293, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-298 (MONITOR-294, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-299 (MONITOR-295, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-270 (MONITOR-296, cycle 3, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-300 (MONITOR-297, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-301 (MONITOR-298, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-302 (MONITOR-299, cycle 3, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-318 (MONITOR-345, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-319 (MONITOR-346, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-321 (MONITOR-347, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-350 (MONITOR-348, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-352 (MONITOR-349, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-353 (MONITOR-350, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-354 (MONITOR-351, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-322 (MONITOR-352, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-324 (MONITOR-353, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-329 (MONITOR-354, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-331 (MONITOR-355, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-332 (MONITOR-356, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-361 (MONITOR-357, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-362 (MONITOR-358, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-365 (MONITOR-359, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-333 (MONITOR-360, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-334 (MONITOR-361, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-374 (MONITOR-362, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-338 (MONITOR-363, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-339 (MONITOR-364, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-343 (MONITOR-365, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- ASSUMPTION-345 (MONITOR-366, cycle 1, ASSUMPTION): MONITOR carried forward; trajectory stable
+- PRESUMPTION-383 (MONITOR-367, cycle 1, PRESUMPTION): MONITOR carried forward; trajectory stable
+
+**Total re-confirmed this run:** 147 (all MONITOR carried forward; 0 resolved).
+**Run timestamp:** 2026-06-30 (c2a2-lit-search-pipeline scheduled task; autonomous; Tom not present at run time).
+
+
+## 2026-06-30 — NEW MONITOR intake (from 2026-06-29 cohort dispositions)
+
+MONITOR-406:
+  Item: ASSUMPTION-388 (Cross-tradition signals/day is a meaningful "yield" metric, on par with PRS-triplet yield, worth surfacing as its own metabolism amplitude a...)
+  Disposition date: 2026-06-30 | Source: DISPOSITION-364 | Priority: Medium-High
+  15a/15b: PARTIALLY-SUPPORTED(Moderate) / CHALLENGED(Moderate-Strong)
+  What would change disposition: see DISPOSITION-364 in lit_search_returns.md.
+  Cadence: Weekly | Next 15d check: 2026-07-07
+
+MONITOR-407:
+  Item: ASSUMPTION-389 (PRS-triplet / cross-program extraction is quality-sensitive and gated to attended sessions by standing policy — the unattended daily orchest...)
+  Disposition date: 2026-06-30 | Source: DISPOSITION-365 | Priority: Medium
+  15a/15b: SUPPORTED(Moderate) / PARTIALLY-CHALLENGED(Moderate)
+  What would change disposition: see DISPOSITION-365 in lit_search_returns.md.
+  Cadence: Weekly | Next 15d check: 2026-07-07
+
+MONITOR-409:
+  Item: ASSUMPTION-391 (git pull --rebase --autostash safely handles ~20 unrelated working-tree files, removing the manual stash/pop dance (adopted as standard push...)
+  Disposition date: 2026-06-30 | Source: DISPOSITION-367 | Priority: Medium
+  15a/15b: PARTIALLY-SUPPORTED(Moderate) / CHALLENGED(Moderate-Strong)
+  What would change disposition: see DISPOSITION-367 in lit_search_returns.md.
+  Cadence: Weekly | Next 15d check: 2026-07-07
+
+MONITOR-408:
+  Item: PRESUMPTION-423 (That the fix for frozen approval axes is to ADD another scheduled agent rather than consolidate the three independent feeds (OpenStory/PRS/s...)
+  Disposition date: 2026-06-30 | Source: DISPOSITION-372 | Priority: Medium
+  15a/15b: PARTIALLY-SUPPORTED(Weak-Moderate) / CHALLENGED(Moderate)
+  What would change disposition: see DISPOSITION-372 in lit_search_returns.md.
+  Cadence: Weekly | Next 15d check: 2026-07-07
+
+
+MONITOR-410:
+  Item: ASSUMPTION-401 (Cross-tradition routing into master/cross_program_index.md can be deferred out of the first commit without harming ingestion)
+  Disposition date: 2026-07-01 | Source: DISPOSITION-378 | Priority: Low
+  15a/15b: PARTIALLY-SUPPORTED(Moderate) / PARTIALLY-CHALLENGED(Weak-Moderate)
+  What would change disposition: backfill forgotten + index trusted while incomplete -> REVISE; clean tracked backfill -> retire. See DISPOSITION-378 in lit_search_returns.md.
+  Cadence: Weekly | Next 15d check: 2026-07-08
+
+MONITOR-411:
+  Item: PRESUMPTION-429 (Deferring the token/metabolism view is cost-free because the connectome "already confirms" — redundant vs complementary)
+  Disposition date: 2026-07-01 | Source: DISPOSITION-383 | Priority: Medium
+  15a/15b: PARTIALLY-SUPPORTED(Weak-Moderate) / CHALLENGED(Moderate)
+  What would change disposition: metabolism view confirmed to read OpenStory DB independently -> REVISE (restore as required cross-check); confirmed a re-rendering of git/vault -> retire. See DISPOSITION-383 in lit_search_returns.md.
+  Cadence: Weekly | Next 15d check: 2026-07-08

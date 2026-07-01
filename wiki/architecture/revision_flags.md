@@ -5161,3 +5161,155 @@ REVISE-151:
   Recommended action: Replace the fixed evening cutoff with event-driven/append capture or watermark-aware windowing with allowed-lateness; re-scan the prior window on the next run to absorb late events; never finalize a day-label from a single pre-evening snapshot; fail loud if post-sync activity is detected. Member of the silent-failure / fail-loud systemic cluster.
   Urgency: High
   PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+## 2026-06-29 intake (15c; from 2026-06-28 EOD cohort) — REVISE-152..154 (for Tom's review)
+
+REVISE-152:
+  Date: 2026-06-29 | Source: DISPOSITION-358 | Item: ASSUMPTION-387 (stated) | Urgency: MEDIUM
+  Claim flagged: "Deterministic path/size heuristics correctly classify 2,984 orphan+sparse pages into A-E."
+  15a/15b: PARTIALLY-SUPPORTED(Weak-Mod) / CHALLENGED(Moderate-Strong)
+  What is at risk: downstream triage actions keyed to the A-E buckets; misclassified high-value short pages treated as disposable.
+  Why flagged: metadata-only classification is documented everywhere as an approximation needing a content backstop; file size is an especially weak proxy for content type/value; "correctly classify" is an unaudited accuracy claim over ~3,000 pages.
+  Recommended action: run a sampled CONTENT audit (50-100 random pages, hand-classify, compare to heuristic) to estimate error rate before trusting A-E; add a content-based confidence fallback for ambiguous pages; treat A-E labels as PROVISIONAL meanwhile.
+  Binds: REVISE-153 (its unstated twin); member of the STRUCTURAL-PROXY-AS-GROUND-TRUTH systemic-risk cluster.
+
+REVISE-153:
+  Date: 2026-06-29 | Source: DISPOSITION-360 | Item: PRESUMPTION-415 (unstated) | Urgency: HIGH
+  Claim flagged: "[inferred] directory path + file size reliably indicate content type and synthesis value (folder taxonomy as ground truth; no misfiled/mis-sized content)."
+  15a/15b: PARTIALLY-SUPPORTED(Weak) / CHALLENGED(Moderate-Strong)
+  What is at risk: any pipeline step that trusts folder/size as content truth without a content check.
+  Why flagged: unstated twin of ASSUMPTION-387 in stronger form (asserts RELIABILITY as ground truth). Folder taxonomies decay in growing repos; metadata mislabels when incomplete; size barely encodes content. Elevated urgency because it is a PRESUMPTION (designers were unaware they were treating taxonomy as ground truth) + strong challenge.
+  Recommended action: treat path/size as PRIORS, not ground truth; the REVISE-152 content audit doubles as the test for this presumption; flag and content-check any page whose size/location conflicts with its apparent role.
+  Binds: REVISE-152 (surfaced-not-averaged: stated assumption + unstated twin flagged together, not blended).
+
+REVISE-154:
+  Date: 2026-06-29 | Source: DISPOSITION-363 | Item: PRESUMPTION-418 (unstated) | Urgency: HIGH
+  Claim flagged: "[inferred] orphan-detection should have a single canonical owner; bootstrap-beside-weekly is wasteful 'double-counting' rather than a useful redundant cross-check."
+  15a/15b: PARTIALLY-SUPPORTED(Mod) / CHALLENGED(STRONG)
+  What is at risk: liveness/dead-man's-switch coverage for orphan detection; the project's standing defense-in-depth posture.
+  Why flagged: INTERNALLY INCONSISTENT with validated PREMISE-086 (monitor-of-monitor / dead-man's-switch / "absence is the signal"). Defense-in-depth literature treats independent overlapping detectors as a FEATURE; the deduplication/single-ownership case applies to FINDINGS, not DETECTORS. Collapsing to one detector reintroduces a single point of failure for liveness — exactly what PREMISE-086 exists to prevent. Per 15c consistency rule, a new claim contradicting an existing PREMISE is flagged for human review; PREMISE-086 is NOT overwritten.
+  Recommended action: keep bootstrap + weekly orphan-detection as INDEPENDENT detectors; deduplicate the FINDINGS (one ticket per orphan) while preserving two detectors; ALARM ON DISAGREEMENT between them. If consolidation is still desired for cost, require an explicit liveness check on the sole remaining detector.
+
+
+## 2026-06-30 — REVISE intake (from 2026-06-29 cohort dispositions)
+
+REVISE-155:
+  Date: 2026-06-30 | Source: DISPOSITION-368 | Item: PRESUMPTION-419 (presumption) | Urgency: HIGH
+  Claim flagged: "That the count rate of cross-tradition signals (signals/day) is a valid proxy for synthesis yield — more signals = more genuine production, never asking whether volume tracks insight or noise."
+  15a/15b: PARTIALLY-SUPPORTED(Weak-Moderate) / CHALLENGED(Strong)
+  Net: Weak conditional support only as a paired/non-targeted indicator (15a) against a STRONG Goodhart challenge to the unexamined volume=yield equivalence (15b). The presumption is unstated and the designers were unaware they had adopted it.
+  What is at risk: The metabolism 'amplitude' display and any curation/agent behavior that optimizes toward signal count; the project's credibility if 'productivity' is noise.
+  Recommended action: Do not display signals/day as productivity until it is paired with a homology/quality counterweight and a spot-audit confirms count tracks genuine-homology yield. (Same verify-before-trust family as PREMISE-086 / the 2026-06-29 content-audit remedy.)
+  Urgency: High
+  Why flagged: PRESUMPTION + strong challenge + membership in the active 'structural-proxy-as-ground-truth' SYSTEMIC-RISK cluster -> REVISE (HIGH). Mirrors the prior-cycle handling of P-414 (connectivity-as-proxy -> MONITOR-403 HIGH) but here the proxy is displayed as a headline 'productivity' axis, raising urgency.
+
+REVISE-156:
+  Date: 2026-06-30 | Source: DISPOSITION-369 | Item: PRESUMPTION-420 (presumption) | Urgency: MED-HIGH
+  Claim flagged: "That attended-gating of PRS extraction buys enough quality to justify its cost — the quality benefit is unmeasured while the gate freezes axes 12 days and queues ~68 cards."
+  15a/15b: PARTIALLY-SUPPORTED(Weak-Moderate) / CHALLENGED(Moderate-Strong)
+  Net: Conditional support for the trade IF the benefit were bounded (15a), but a moderate-strong challenge because the benefit is unmeasured while the cost (12-day freeze, ~68 cards) is concrete and observed (15b). Unstated presumption.
+  What is at risk: Liveness of the PRS/signals approval axes and backlog growth; the legitimacy of the gating policy (DECISION) itself.
+  Recommended action: Time-box the gate and instrument it — sample-measure the quality delta attended-vs-unattended on a handful of triplets; if the delta is small, move to confidence-routed selective gating so low-risk extraction does not freeze the axes.
+  Urgency: Medium-High
+  Why flagged: PRESUMPTION + moderate-strong challenge + a faith-based cost-benefit claim with a measured downside -> REVISE (Medium-High). The remedy is cheap relative to the stakes: measure the quality benefit or time-box/selectively-route the gate. Binds A-389 (the stated form, MONITOR-407).
+
+REVISE-157:
+  Date: 2026-06-30 | Source: DISPOSITION-370 | Item: PRESUMPTION-421 (presumption) | Urgency: HIGH
+  Claim flagged: "That a human will notice metric staleness and trigger regen by hand — "someone will look" as the liveness mechanism, no watchdog; freeze ran 06-17→06-29 undetected until a chance question."
+  15a/15b: NO-SUPPORT-FOUND(None) / CHALLENGED(Strong)
+  Net: No support and a strong challenge backed by a 12-day undetected freeze and by the system's own PREMISE-086 (monitor-of-monitor). 'Someone will notice' is the anti-pattern automated freshness monitoring exists to replace.
+  What is at risk: Liveness of every approval/metric axis; the credibility of the heartbeat/metabolism display; consistency with PREMISE-086.
+  Recommended action: Add an automated freshness watchdog — per-axis next-expected-update SLA that alarms (fail-loud) when an axis exceeds its freshness budget. This is the dead-man's-switch of PREMISE-086 / REVISE-147 applied to the dashboard feeds.
+  Urgency: High
+  Why flagged: PRESUMPTION + strong challenge + direct contradiction of validated PREMISE-086 + live operational failure -> REVISE (HIGH). Per the 15c consistency rule, a claim contradicting an existing premise is flagged for human review rather than allowed to stand. The remedy is the same dead-man's-switch pattern already validated.
+
+REVISE-158:
+  Date: 2026-06-30 | Source: DISPOSITION-371 | Item: PRESUMPTION-422 (presumption) | Urgency: HIGH
+  Claim flagged: "That a stale axis displayed beside a fresh one (no per-axis as-of marking) is acceptable — viewer presumed to attribute each axis its own freshness; the most expert viewer was in fact misled."
+  15a/15b: NO-SUPPORT-FOUND(None) / CHALLENGED(Strong)
+  Net: No support and a strong, operationally-confirmed challenge: per-axis 'data last updated' marking is documented best practice and its absence misled the most expert viewer. Directly downstream of A-390 (feeds are independent).
+  What is at risk: Trustworthiness of the metabolism/heartbeat display; any decision read off a mixed-freshness board.
+  Recommended action: Add per-axis as-of timestamps (and/or color-coded staleness) to each approval/metric axis so freshness is read at the point of use. This operationalizes PREMISE-089 and is a small UI change.
+  Urgency: High (low effort)
+  Why flagged: PRESUMPTION + strong challenge + live mislead of the actual expert user + it is the positive obligation implied by the just-INCORPORATED PREMISE-089 -> REVISE (HIGH but low-cost fix). Binds PREMISE-089 and P-421 (the watchdog).
+
+REVISE-159:
+  Date: 2026-06-30 | Source: DISPOSITION-373 | Item: PRESUMPTION-424 (presumption) | Urgency: MED
+  Claim flagged: "That auto-stashing ~20 unrelated working-tree files every push is safe and a clean win — normalizes a chronically dirty working tree instead of resolving the persistent uncommitted files (push-debt)."
+  15a/15b: PARTIALLY-SUPPORTED(Weak) / CHALLENGED(Moderate-Strong)
+  Net: Weak support for the mechanism's convenience (15a) against a moderate-strong challenge to the HABIT: normalizing a chronically dirty ~20-file tree is push-debt entrenchment, the working-tree form of REVISE-150's deferred-push accumulation (15b). Unstated presumption.
+  What is at risk: Working-tree integrity and push reliability; compounding push-debt across sessions (with REVISE-150).
+  Recommended action: Resolve the ~20 persistent uncommitted files at the source — commit the intentional ones, .gitignore the local-only artifacts, remove the strays — so the tree is clean and autostash becomes an occasional convenience, not a per-push crutch.
+  Urgency: Medium
+  Why flagged: PRESUMPTION + moderate-strong challenge + membership in the push-debt cluster (PRESUMPTION-412/REVISE-150) -> REVISE (Medium). The remedy is concrete and cheap (resolve the ~20 files: commit, .gitignore, or remove), which retires the debt rather than automating around it. Binds A-391 (the stated mechanism, MONITOR-409).
+
+
+REVISE-160:
+  Date: 2026-07-01 | Source: DISPOSITION-375 | Item: ASSUMPTION-394 (assumption) | Urgency: MED
+  Claim flagged: "A clean connectome regen (288->432, +144, node --check + count-match + content-population green) is sufficient verification of ingestion correctness."
+  15a/15b: PARTIALLY-SUPPORTED(Moderate) / CHALLENGED(Strong)
+  Net: Structural checks are necessary and standard but NOT sufficient — blind to semantic errors and to compensating errors that net to an exact count (P-426). Classic false-green.
+  What is at risk: Ingestion correctness of claim cards feeding the connectome and premise register.
+  Recommended action: Add an identity + semantic layer to the gate — verify expected proposal_id SET (not count), duplicate/near-duplicate scan, sampled content-fidelity check vs source cards. Bind REVISE-162.
+  Urgency: Medium
+  Why flagged: stated ASSUMPTION whose operative word "sufficient" is strongly contradicted; fix is additive/cheap.
+
+REVISE-161:
+  Date: 2026-07-01 | Source: DISPOSITION-379 | Item: PRESUMPTION-425 (presumption) | Urgency: HIGH
+  Claim flagged: "That a one-shot attended backlog clear keeps the PRS axis live — no cadence change, so re-accumulation is unaddressed (OPEN-102 remains)."
+  15a/15b: NO-SUPPORT-FOUND(None) / CHALLENGED(Strong)
+  Net: Lean backlog literature — a one-shot clear without cadence change re-accumulates, often bigger (symptom not cause). OPEN-102 remaining open is the tell. Unstated presumption.
+  What is at risk: The PRS approval axis silently re-freezes post-clear, reviving the 12-day-freeze failure mode (REVISE-156/157) under a false "handled" sense.
+  Recommended action: Pair the one-shot clear with a durable mechanism — standing bounded ingestion cadence (human-on-the-loop) and/or a PRS-axis freshness watchdog (bind REVISE-157). Resolve OPEN-102.
+  Urgency: High
+  Why flagged: PRESUMPTION + strong challenge + no support + revives a known keystone failure mode. Pairs with PREMISE-090's scope caveat.
+
+REVISE-162:
+  Date: 2026-07-01 | Source: DISPOSITION-380 | Item: PRESUMPTION-426 (presumption) | Urgency: MED-HIGH
+  Claim flagged: "That an exact count-match (+144) proves content correctness — presumes no compensating (drop-plus-wrong-add) errors."
+  15a/15b: NO-SUPPORT-FOUND(None) / CHALLENGED(Strong)
+  Net: Compensating/offsetting errors are a named failure class; equal counts routinely hide two errors that cancel. Downstream of A-394's "sufficient."
+  What is at risk: Wrong/misattributed cards enter the connectome undetected because the headline +144 matched.
+  Recommended action: Replace count-match with identity-set verification (expected_ids symmetric-difference present_ids == empty) + content spot-check. Bind REVISE-160.
+  Urgency: Medium-High
+  Why flagged: PRESUMPTION + strong challenge; decisive cheap fix.
+
+REVISE-163:
+  Date: 2026-07-01 | Source: DISPOSITION-381 | Item: PRESUMPTION-427 (presumption) | Urgency: HIGH
+  Claim flagged: "That fixing one identity-keying bug makes the toolchain trustworthy — a second audit-identity divergence (qc_trace) appeared same session."
+  15a/15b: NO-SUPPORT-FOUND(None) / CHALLENGED(Strong)
+  Net: Defect clustering/pesticide paradox predicts more keying bugs where one was found; the same-session qc_trace divergence empirically confirms the class was not eliminated.
+  What is at risk: Silent identity/keying mismatches elsewhere corrupt audit trails and ingestion identity while the toolchain is presumed trustworthy.
+  Recommended action: Systematic keying-identity audit across ALL joins (proposal_id, qc_trace, filename surfaces); assert one stable key, no surface-key joins remain. Bind REVISE-164.
+  Urgency: High
+  Why flagged: PRESUMPTION + strong challenge + live empirical confirmation same session.
+
+REVISE-164:
+  Date: 2026-07-01 | Source: DISPOSITION-382 | Item: PRESUMPTION-428 (presumption) | Urgency: MED-HIGH
+  Claim flagged: "That a wrong audit CSV is acceptable if vault content is correct + a guard is added — treats provenance correctness as secondary to the artifact."
+  15a/15b: PARTIALLY-SUPPORTED(Weak) / CHALLENGED(Strong)
+  Net: For an audit/provenance artifact the correctness of the trail IS the product; a known-wrong CSV voids the guarantee it exists to provide — self-referentially central to C2A2 (provenance_protocol.md). A forward guard does not repair the known-wrong record.
+  What is at risk: The audit CSV is later trusted as authoritative provenance; C2A2's chain-of-custody guarantee is silently false; future audits build on a corrupt baseline.
+  Recommended action: Regenerate the audit CSV from source-of-truth to match the vault, THEN keep the guard. Treat provenance correctness as first-class. Bind REVISE-163.
+  Urgency: Medium-High
+  Why flagged: PRESUMPTION + strong challenge + self-referential provenance stakes.
+
+REVISE-165:
+  Date: 2026-07-01 | Source: DISPOSITION-384 | Item: PRESUMPTION-430 (presumption) | Urgency: MED
+  Claim flagged: "That 'fast turn + measurably-larger connectome' is a success signal — smuggles a velocity/growth norm into a quality-gated pipeline."
+  15a/15b: NO-SUPPORT-FOUND(None) / CHALLENGED(Moderate-Strong)
+  Net: Goodhart — a growth/speed proxy treated as the success signal in a quality-gated pipeline invites optimizing size/speed at the expense of quality. Member of the standing structural-proxy / measurement-validity cluster (P-414, A-388/P-419).
+  What is at risk: The pipeline is optimized for turn-speed and node-count, eroding the quality gate; growth masks quality regressions.
+  Recommended action: Report speed/connectome-size as neutral operational stats, never as success; define run success solely by quality-gate outcomes (identity/semantic correctness, provenance integrity).
+  Urgency: Medium
+  Why flagged: PRESUMPTION + moderate-strong challenge + membership in the measurement-validity SYSTEMIC-RISK cluster.
+
+REVISE-166:
+  Date: 2026-07-01 | Source: DISPOSITION-385 | Item: PRESUMPTION-431 (presumption) | Urgency: MED
+  Claim flagged: "That the recurring stale git index.lock is benign routine noise rather than a concurrency symptom (heartbeat cron vs attended commits)."
+  15a/15b: NO-SUPPORT-FOUND(None) / CHALLENGED(Strong)
+  Net: Recurring stale index.lock is a documented concurrency symptom (heartbeat cron racing attended commits = the write-vs-write race the lock guards), with a recognized escalation path to index/ref corruption and a concrete fix.
+  What is at risk: Concurrent git writers interleave into index/ref corruption; attended commits fail or are silently blocked; the repo state the whole C2A2 pipeline reads from is corrupted.
+  Recommended action: Serialize git access (repo-level lock/queue around commits); set GIT_OPTIONAL_LOCKS=0 / --no-optional-locks for the heartbeat cron's read-only git; run git fsck for existing damage. Relates to REVISE-147 (scheduler dead-man's-switch).
+  Urgency: Medium
+  Why flagged: PRESUMPTION + strong documented challenge (incl. Claude Code issue tracker); plausibly the root of the recurring-lock family.

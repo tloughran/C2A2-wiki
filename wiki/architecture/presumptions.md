@@ -8279,3 +8279,363 @@ PRESUMPTION-413:
     Transform at each step:
       14b: Inferred by cross-checking the evening sync's "autonomous day" claim against three same-evening interactive transcripts and their output-file timestamps. [inferred, high-confidence]
     Current status: UNTESTED
+
+PRESUMPTION-414:
+  Date surfaced: 2026-06-28
+  Statement: [inferred] That some connectivity measure is the right proxy for "vault health for synthesis" at all. Even while questioning WHICH edge type to count (wikilinks vs shared-references, OPEN-100), the audit still frames the vault's readiness for thinker-agent synthesis in terms of how connected pages are. It presumes a well-connected graph is what synthesis needs — not, say, depth/quality of individual tradition pages, semantic coherence, or coverage of the right concepts independent of link topology.
+  Evidence it was operative: the entire audit is organized around a connectivity census and orphan classification; the vault-health verdict ("healthy enough for synthesis") is argued from bridge counts and backlink density, not from any content-quality measure.
+  Why it was unstated: connectivity is the sewing agent's founding remit, so "health = connectedness" is the frame it works inside and does not step outside of.
+  Type: epistemic
+  Related decisions: DECISION-071
+  Related items: ASSUMPTION-383, ASSUMPTION-384, OPEN-100
+  Testability: testable via literature — what predicts useful synthesis/retrieval in a knowledge base (link topology vs content quality vs coverage), validity of connectivity as a quality proxy.
+  Risk if wrong: Medium — if synthesis readiness depends on content depth or concept coverage rather than link density, a connectivity-clean verdict could green-light synthesis over a graph that is well-linked but thin.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-414
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the audit framing health entirely in connectivity terms even while questioning the edge type. [inferred, high-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-415:
+  Date surfaced: 2026-06-28
+  Statement: [inferred] That a page's directory path (and size) reliably indicates its content type and synthesis value — i.e., that the vault's folder taxonomy is semantically clean enough that `architecture/` and `vault/` are structural-by-design, `inbox/**` is disposable residue, `traditions/**` is thinker content, and `<200B` means stub, with negligible misfiled or mis-sized content. The A–E classification of 2,984 pages rests entirely on this.
+  Evidence it was operative: Phase 2 classified every orphan+sparse page by "deterministic path/size heuristics (model not used — Rule 5)"; 456 pages were dispositioned as ignorable inbox residue and 2,474 as orphaned-by-design purely from their directory.
+  Why it was unstated: the folder layout is treated as ground truth; that a `traditions/` page might be a stub, or an `inbox/` page might contain un-promoted real synthesis, is not checked.
+  Type: methodological
+  Related decisions: DECISION-071
+  Related items: ASSUMPTION-387, ASSUMPTION-384
+  Testability: testable via literature — accuracy of path/metadata-based vs content-based document classification, error rates of structural heuristics in document triage.
+  Risk if wrong: Medium — misclassified real content (e.g., a promotable inbox synthesis page) would be silently excluded from the connectivity remediation and from the "healthy enough" verdict.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-415
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the deterministic path/size classification standing in for content inspection. [inferred, high-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-416:
+  Date surfaced: 2026-06-28
+  Statement: [inferred] That an autonomous agent substituting its own judgment for an explicit, prescribed task step (declining to execute Phase 3) is the correct behavior — i.e., that the standing caution / surgical-change / token-budget rules outrank a specific instruction the same operator wrote into the task, and that "fail loud + recommend a bounded alternative" is preferable to executing as written. This is the deeper premise beneath ASSUMPTION-385's stated reasons.
+  Evidence it was operative: the agent did not execute its central instructed phase and instead reported why, treating the constitutional rules as dominant over the task spec; it also overrode the task's stale "file does not exist" premise.
+  Why it was unstated: the project's rule-set is internalized as constitutional, so an agent overriding an instruction in its name feels like compliance, not deviation — the tension between instruction-following and rule-following is never named as a choice.
+  Type: normative
+  Related decisions: DECISION-071
+  Related items: ASSUMPTION-385; Rule 1 (push back when simpler approach exists), Rule 3, Rule 6, Rule 12
+  Testability: testable via literature — instruction-following vs goal-directed/constitutional agency, automation surprise, when autonomous systems should refuse or revise operator instructions; partly a framework commitment.
+  Risk if wrong: High — if the operator actually wanted Phase 3 executed (e.g., to seed hooks regardless of noise), an agent that declines on its own authority silently substitutes its priorities; the same latitude that correctly avoided a 480-file blast could, mis-calibrated, skip wanted work.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-416
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the agent declining its instructed central phase under the project rule-set without flagging the instruction-vs-rule tension as a choice. [inferred, high-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-417:
+  Date surfaced: 2026-06-28
+  Statement: [inferred] That not every thinker-pair warrants a synthesis bridge — "many of the 46 absent pairs are plausibly intentional (not every pair warrants a bridge)." This embeds a selective, quality-gated norm for synthesis coverage (bridges are worth creating only where both traditions have rich mutually-referencing content) rather than a complete-graph norm (all 91 pairs should eventually be bridged).
+  Evidence it was operative: 45 of 91 pairs exist and the audit declined to auto-create the 46 missing stubs, calling mass-creation an "anti-pattern" and leaving prioritization to a judgment call; Loughran-the-integrator being fully bridged (13/13) is treated as appropriate while peripheral pairs staying unbridged is fine.
+  Why it was unstated: the value judgment about WHICH cross-tradition connections matter is folded into a technical "don't mass-create stubs" decision; the norm that synthesis should be selective rather than exhaustive is assumed, not argued.
+  Type: normative
+  Related decisions: DECISION-071
+  Related items: ASSUMPTION-386; the standing "cross-tradition connections are good" normative presumption (does more = better?)
+  Testability: testable via literature — completeness vs selectivity in concept-map / knowledge-graph construction, when exhaustive pairwise linking helps vs dilutes, curation norms for synthesis artifacts.
+  Risk if wrong: Low-Medium — if exhaustive bridging would surface unexpected cross-tradition structure, a selective norm pre-empts discoveries by deciding in advance which pairs "warrant" a bridge.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-417
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the "not every pair warrants a bridge" disposition of the 46 absent pairs. [inferred, medium-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-418:
+  Date surfaced: 2026-06-28
+  Statement: [inferred] That orphan/connectivity detection should be owned by a single canonical task — so the bootstrap running alongside the live weekly sewing agent is framed as wasteful "double-counting" to be reconciled, rather than as useful redundant cross-checking. This presumes one owner per monitoring function is the right organizational form, the opposite of the defense-in-depth / monitor-of-monitor principle the project elsewhere endorses (PREMISE-086, REVISE-147).
+  Evidence it was operative: the audit's recommended action is to "retire or repurpose" the bootstrap "so it doesn't double-count against the weekly sewing agent"; redundancy is listed as reason #4 for declining Phase 3.
+  Why it was unstated: deduplication reads as obviously good housekeeping, so the question of whether a second independent connectivity census is a valuable redundancy (it in fact corroborated the weekly agent's proportions this run) is not raised.
+  Type: structural
+  Related decisions: DECISION-071
+  Related items: OPEN-098; PREMISE-086 (monitor-of-monitor / absence-is-the-signal); REVISE-147 (dead-man's-switch); ASSUMPTION-385 (redundancy as a reason to decline)
+  Testability: testable via literature — redundancy vs single-ownership in monitoring, defense-in-depth, value of independent cross-checks vs deduplication cost.
+  Risk if wrong: Low-Medium — retiring the second census to avoid "double-counting" removes an independent cross-check that this run showed can corroborate (or would catch drift in) the weekly agent's numbers.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-418
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from "double-counting" being framed as waste-to-reconcile rather than redundancy-as-cross-check, against the project's own monitor-of-monitor principle. [inferred, medium-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-419:
+  Date surfaced: 2026-06-29
+  Statement: [inferred] That the *count rate* of cross-tradition signals (signals/day) is a valid proxy for system synthesis "yield" — that more signals per day means more genuine cross-tradition production, never asking whether signal volume tracks insight or merely activity/noise. Adding it as a yield amplitude axis (peaks become "good") embeds a more-is-better reading of a raw event count.
+  Evidence it was operative: Item 2 added signals/day as a yield series "following exactly the convention the PRS series already established," and the rendering treats the May-5 peak (68) as the headline feature — volume is presented as achievement with no denominator or quality weighting.
+  Why it was unstated: the metric was modeled on an existing accepted series (PRS yield), so its validity-as-a-proxy was inherited rather than re-examined; "yield" framing makes the more-is-better norm feel definitional.
+  Type: epistemic
+  Related decisions: (Item 2, operational)
+  Related items: ASSUMPTION-388; the standing "cross-tradition connections are good — does more = better?" normative presumption; PRESUMPTION-414 (connectivity-as-health-proxy)
+  Testability: testable via literature — validity of raw event/activity counts as productivity proxies; Goodhart effects when a count becomes a target; volume-vs-quality in research-output metrics.
+  Risk if wrong: Medium — optimizing or celebrating a signal count could reward noise generation and distort what the system is tuned to produce.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-419
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from signals/day being added as a yield axis on the PRS convention with peaks framed as achievement, no quality weighting. [inferred, medium-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-420:
+  Date surfaced: 2026-06-29
+  Statement: [inferred] That gating PRS-triplet extraction to attended sessions actually buys enough quality to justify its cost — the standing policy presumes human attention materially improves extraction quality over a bounded unattended agent, yet that benefit has never been measured even as the gate freezes the approval axes for 12 days and lets ~68 approved cards sit un-ingested. The cost (staleness, growing backlog) is incurred on the untested faith that the quality gain is real and large.
+  Evidence it was operative: PROCESSED_LOG defers the backlog "per standing policy" without re-deriving the quality justification; the orchestrator runs daily but is deliberately not trusted to extract; the HIGH ingest_backlog flag persists with Tom's note "All these belong live," yet the gate is left in place.
+  Why it was unstated: "quality-sensitive → keep a human in the loop" reads as obviously prudent, so the trade against freshness/throughput is never quantified; the gate's benefit is assumed, its cost made visible only when Tom happened to ask.
+  Type: epistemic
+  Related decisions: OPEN-101; DECISION-068 (blocked)
+  Related items: ASSUMPTION-389 (states the policy); PRESUMPTION-421 (no watchdog on the resulting staleness)
+  Testability: testable via literature — human-in-the-loop vs automated structured-extraction quality; measured quality deltas of human gating; throughput/staleness cost of attended bottlenecks.
+  Risk if wrong: High — if a bounded unattended agent would extract at adequate quality, the gate is silently degrading the live system's freshness for a benefit that may not exist, and the backlog will keep growing.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-420
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the attended-gating policy (ASSUMPTION-389) being maintained without any measurement of its quality benefit against its now-visible staleness cost. [inferred, high-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-421:
+  Date surfaced: 2026-06-29
+  Statement: [inferred] That a human will notice metric staleness and trigger the attended regen by hand — the architecture relies on "someone will look" as the liveness mechanism for the PRS/signals pipelines, with no watchdog asserting freshness. The freeze ran unnoticed from 2026-06-17 to 2026-06-29 and surfaced only because Tom happened to ask why June-26 approvals were missing; absent that question it would have continued indefinitely.
+  Evidence it was operative: there is no scheduled freshness check on PRS/signals; the freeze was discovered by chance via a user question, not by an alert; the diagnostic itself notes the pass "fired because the scheduled task fired, not because a watchdog asserted liveness."
+  Why it was unstated: manual triggering has worked often enough to feel reliable, so the dependence on a human noticing is invisible until it fails; the system infers liveness from "the job ran" rather than "the data advanced."
+  Type: methodological
+  Related decisions: OPEN-102, OPEN-103, REVISE-147
+  Related items: ASSUMPTION-389, ASSUMPTION-390, OPEN-086 (silent-staleness keystone); the OpenStory-corruption frozen-feed instance (06-28)
+  Testability: testable via literature — silent-failure/liveness monitoring, dead-man's-switch patterns, "absence is the signal," automation-surprise from staleness assumed-fresh.
+  Risk if wrong: High — chance-discovery as a monitoring strategy means the next freeze (or a more consequential one) can persist undetected; this is the recurring month-long keystone risk (OPEN-086).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-421
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the freeze going undetected for 12 days and surfacing only via a chance user question, with no watchdog on data freshness. [inferred, high-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-422:
+  Date surfaced: 2026-06-29
+  Statement: [inferred] That presenting a stale axis beside a fresh axis on one canvas is acceptable — the metabolism view shows OpenStory (through 06-29), PRS (frozen 06-17), and signals (frozen 06-23) together with no per-axis as-of marking, presuming the viewer will correctly attribute each axis its own freshness date rather than reading the whole view as current.
+  Evidence it was operative: the view renders all axes uniformly; Tom read it as "approvals through June 26 should be here," i.e. he (the most expert possible viewer) was misled by the unmarked composite — direct evidence the presumption fails in practice.
+  Why it was unstated: a single shared time axis is the default for a timeline chart, so the possibility that different series carry different trustworthy-through dates is not treated as something the UI must communicate.
+  Type: epistemic
+  Related decisions: OPEN-103
+  Related items: ASSUMPTION-390; PRESUMPTION-421; OPEN-086
+  Testability: testable via literature — data-provenance/freshness display in dashboards; how composite multi-source visualizations mislead; per-series staleness indicators and trust calibration.
+  Risk if wrong: Medium-High — an unmarked composite view systematically overstates currency and erodes trust in the whole instrument once any one axis is found stale.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-422
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three different-cadence feeds being co-plotted without staleness marking, and from Tom being misled by exactly that. [inferred, high-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-423:
+  Date surfaced: 2026-06-29
+  Statement: [inferred] That the remedy for the frozen approval axes is to ADD another scheduled agent (a signal-stream regen), rather than to consolidate the three independent feeds (OpenStory / PRS / signals) into fewer sources of truth. The fragmentation into separately-scheduled, separately-stale pipelines is taken as the fixed substrate; the proposed fixes all add coverage on top of it instead of questioning whether so many independent feeds should exist.
+  Evidence it was operative: every forward option framed the gap as "no scheduled regen agent" / "add the regen," and the diagnostic enumerated three feeds with three freshness dates as a given state to be monitored, not a structure to simplify.
+  Why it was unstated: each pipeline grew incrementally for its own reason, so the accreted multi-feed topology feels like the environment rather than a design choice; "add the missing agent" is the locally obvious move.
+  Type: structural
+  Related decisions: OPEN-102
+  Related items: ASSUMPTION-390, ASSUMPTION-392; PRESUMPTION-418 (single-owner-vs-redundancy, the inverse tension); construct-count proliferation (269/264/262/279/222)
+  Testability: testable via literature — single-source-of-truth vs federated pipelines; when adding monitors/agents increases vs reduces systemic fragility; data-pipeline consolidation tradeoffs.
+  Risk if wrong: Medium — adding agents to patch a fragmented topology compounds the coordination/staleness surface the project already struggles with, scaling the very problem it means to fix.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-423
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from all proposed remedies adding coverage onto the three-feed topology while leaving the fragmentation itself unquestioned. [inferred, medium-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-424:
+  Date surfaced: 2026-06-29
+  Statement: [inferred] That auto-stashing ~20 unrelated working-tree files around every push (`--rebase --autostash`) is safe and a clean ergonomics win — this normalizes a chronically dirty working tree as the steady state rather than treating "~20 uncommitted files persisting across sessions" as the thing to fix. The convenience improvement removes the friction that previously made the dirty tree visible.
+  Evidence it was operative: the push-pattern memory was updated to make autostash standard "so the manual stash/pop dance isn't needed," with the ~20 files referred to as a routine fact of the working tree; the underlying push-debt (PRESUMPTION-412 / REVISE-148) was not reopened by the change.
+  Why it was unstated: solving the immediate friction (rebase blocked by uncommitted files) reads as pure improvement, so the prior question of why those files are uncommitted across sessions recedes further from view.
+  Type: methodological
+  Related decisions: DECISION-072
+  Related items: ASSUMPTION-391; PRESUMPTION-412 / REVISE-148 (cross-session push debt)
+  Testability: testable via literature/tooling — git autostash failure/conflict modes; risks of habitually dirty working trees; whether smoothing friction entrenches latent debt.
+  Risk if wrong: Medium — a normalized dirty tree raises the chance that an autostash conflict, a stray file, or an unintended change rides along a push unnoticed, and keeps the real push-debt latent.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-424
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from making autostash standard while treating the ~20 persistent uncommitted files as routine rather than as debt to resolve. [inferred, medium-confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-425:
+  Date surfaced: 2026-06-30
+  Statement: [inferred] That a single large attended ingestion pass keeps the PRS axis live — clearing a 68-card backlog in one burst presumes the backlog will not simply re-accumulate before the next attended pass. The day broke the freeze but added no scheduled regen, so OPEN-101 was "acted on" by doing the attended pass, not by resolving the underlying cadence gap (OPEN-102).
+  Evidence it was operative: The session framed the backlog clear as the resolution ("that lands Track A live") without asking what prevents the axis re-freezing; no scheduled ingest/regen was created; the deferred pieces were re-queued as future attended passes.
+  Why it was unstated: too foundational to notice — "clear the backlog" reads as done, obscuring that batch remediation without a cadence change is a recurring, not a one-time, cost.
+  Type: structural
+  Related decisions: DECISION-073, OPEN-101, OPEN-102
+  Related items: ASSUMPTION-393; PRESUMPTION-420 (attended-gating cost); PRESUMPTION-421 ("someone will notice")
+  Testability: testable via literature — batch remediation vs continuous processing for backlog-prone queues; whether one-off clears without process change durably fix staleness.
+  Risk if wrong: Medium — the freeze that motivated OPEN-101/102/103 recurs on the next cycle.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-425
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an attended one-shot backlog clear treated as resolution while the cadence gap (OPEN-102) was left open. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-426:
+  Date surfaced: 2026-06-30
+  Statement: [inferred] That "288→432, exactly +144" being internally consistent proves the ingestion is content-correct — an arithmetic count-match presumes no compensating errors (e.g., a wrong triplet counted in place of a dropped one). Volume consistency is read as content correctness.
+  Evidence it was operative: The count-match was repeatedly cited as the headline confirmation ("independently confirms the ingestion"), and the live review verified the total (432) and coil counts rather than sampling triplet content beyond one spot-checked tradition.
+  Why it was unstated: culturally embedded — matching counts is a strong, cheap signal, so it stands in for the more expensive content check.
+  Type: epistemic
+  Related decisions: DECISION-073
+  Related items: ASSUMPTION-394, ASSUMPTION-398; PRESUMPTION-429
+  Testability: testable via literature — count/checksum verification vs content verification; failure modes where aggregate totals mask offsetting errors.
+  Risk if wrong: Medium — a compensating error (drop-plus-wrong-add) would pass every count-based gate used here.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-426
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from reliance on the +144 count-match as the primary correctness evidence. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-427:
+  Date surfaced: 2026-06-30
+  Statement: [inferred] That catching the manifest-gate identity bug (filename vs proposal_id) this time makes the ingestion path trustworthy — finding one identity-keying mismatch is treated as eliminating the class, presuming no other identity/keying mismatches lurk in the toolchain.
+  Evidence it was operative: After the fix the pipeline was described as ready and the tooling as "reusable, guarded"; yet the same session surfaced a second, distinct audit-identity divergence (qc_trace on 05-18-001/002/003), which was patched locally rather than treated as evidence of a class.
+  Why it was unstated: obvious-to-participants optimism — a fixed bug feels like a closed risk.
+  Type: methodological
+  Related decisions: DECISION-073, OPEN-104
+  Related items: ASSUMPTION-396; PRESUMPTION-428
+  Testability: testable empirically — audit the toolchain for other filename/positional/proposal_id keying mismatches.
+  Risk if wrong: Medium-High — the qc_trace glitch is already a live second instance; more identity mismatches would silently corrupt ingestion or provenance.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-427
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from one identity-keying fix being treated as closing the risk class while a second instance appeared the same session. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-428:
+  Date surfaced: 2026-06-30
+  Statement: [inferred] That an audit record (qc_trace CSV) being wrong is acceptable as long as the vault content is correct and a fail-loud guard is added — presuming the provenance/audit trail's own correctness is secondary to the artifact it certifies. For a system whose value proposition is auditable provenance, this treats the audit as optional metadata rather than load-bearing.
+  Evidence it was operative: The session's framing — "the vault content is correct (git-confirmed); only the CSV audit is suspect" — dispositioned the divergence as a caveat plus a guard, not as an integrity failure of the audit function itself.
+  Why it was unstated: too foundational to notice — the artifact is the felt deliverable; the audit is treated as bookkeeping.
+  Type: epistemic
+  Related decisions: DECISION-073, OPEN-104
+  Related items: ASSUMPTION-396; PRESUMPTION-427
+  Testability: testable via literature — trustworthiness requirements for audit/provenance systems; when a divergent audit trail invalidates the guarantee the system sells.
+  Risk if wrong: Medium-High — a provenance system whose provenance can silently be wrong undercuts the C2A2 auditability claim.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-428
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an audit-vs-vault divergence dispositioned as a caveat+guard rather than an audit-integrity failure. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-429:
+  Date surfaced: 2026-06-30
+  Statement: [inferred] That deferring the token-axis metabolism view because the connectome "already confirms the work" is cost-free — presuming the two visualizations are redundant for verification rather than complementary, i.e. that the token/metabolism axis carries no independent information the connectome lacks.
+  Evidence it was operative: "Since the connectome (the primary PRS visualization) is already regenerated and confirms the work, I'd leave the token-axis metabolism view for a separate session" — treats the metabolism view as a duplicate check, not a distinct signal.
+  Why it was unstated: obvious-to-participants under time pressure (corrupt DB blocked it anyway), so its independent value was never weighed.
+  Type: epistemic
+  Related decisions: DECISION-073, OPEN-095
+  Related items: ASSUMPTION-394, ASSUMPTION-399
+  Testability: testable via literature — complementary vs redundant multi-view verification; when a second visualization surfaces errors the first cannot.
+  Risk if wrong: Low-Medium — if the metabolism axis carries independent information, deferring it leaves a verification gap, not just a cosmetic one.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-429
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the connectome and metabolism view being treated as interchangeable for verification. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-430:
+  Date surfaced: 2026-06-30
+  Statement: [inferred] That "a fast turn from Karpathy's idea to a live, measurably-larger connectome" is itself a success signal — smuggling a velocity norm (idea→shipped speed is good) into a pipeline whose stated identity is quality-gated (attended extraction, code-driven QC, No-Blind-Push). Bigger-and-faster is presumed better.
+  Evidence it was operative: The closing summary foregrounds speed and the connectome growing "measurably larger" (288→432) as the headline wins, alongside "measurably-larger" as a value in itself.
+  Why it was unstated: normative smuggling — velocity and growth read as unambiguously good, so the value judgment rides inside a technical report.
+  Type: normative
+  Related decisions: DECISION-073
+  Related items: ASSUMPTION-389/393 (attended-gating for quality); PRESUMPTION-419 (signal-volume-as-yield-proxy); PRESUMPTION-425
+  Testability: testable via literature — velocity/throughput as quality proxies; when "more/faster" metrics distort quality-gated pipelines (Goodhart).
+  Risk if wrong: Low-Medium — a latent velocity norm sits in tension with the quality-gating rationale that justifies attended extraction in the first place.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-430
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from speed and connectome-size framed as intrinsic success signals in a quality-gated pipeline. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-431:
+  Date surfaced: 2026-06-30
+  Statement: [inferred] That the recurring stale `.git/index.lock` (cleared "routinely") is benign transient noise rather than a symptom — presuming a crashed/overlapping git process leaving locks is normal background, not evidence of contending writers (the heartbeat cron vs attended commits) that could someday interleave destructively.
+  Evidence it was operative: The lock was described as "the known lock you clear routinely" and removed with `rm -f`, without asking why a lock keeps appearing or what else the contending process might be doing to the index/refs.
+  Why it was unstated: culturally embedded — a routine workaround becomes invisible precisely because it works each time.
+  Type: methodological
+  Related decisions: DECISION-072, DECISION-073
+  Related items: PRESUMPTION-424 (autostash normalizes a dirty tree); PRESUMPTION-412 / REVISE-148 (push debt); ASSUMPTION-395
+  Testability: testable via literature/tooling docs — causes and risks of recurring stale git locks; index/ref corruption from concurrent git processes (cron vs interactive).
+  Risk if wrong: Medium — habitual `rm -f` of a lock that signals a live concurrent writer risks index/ref corruption during a heartbeat-cron/commit race.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-431
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a recurring stale git lock treated as routine noise rather than a concurrency symptom. [inferred]
+    Current status: UNTESTED

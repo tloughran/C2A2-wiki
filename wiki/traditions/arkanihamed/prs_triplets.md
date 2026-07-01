@@ -85,8 +85,17 @@ PRS-12:
   Confidence: Medium
 
 
+PRS-20:
+  Problem: The post-spacetime / positive-geometry program advances largely through results premiered at the annual Amplitudes conference, which reach arXiv only weeks later — leaving a monitoring gap between a new structural claim and its capture in this wiki.
+  Resource: Amplitudes 2026 (QMUL, June 29 – July 3) with Arkani-Hamed as a confirmed speaker, plus a heavily positive-geometry-weighted programme (Trnka, Spradlin, Williams, Heslop, Zhiboedov, Mizera).
+  Solution: An inbox-refresh trigger for the Arkani-Hamed agent — monitor the indico timetable (indico.global/event/16407) and the Southampton summer-school materials in early July; flag any Arkani-Hamed talk that introduces a new positive geometry, a cosmological–scattering duality, or a surfaceology / curve-integral extension, and open a follow-up PROP when slides or a recording appear.
+  Date Added: 2026-07-01
+  Source: Amplitudes 2026 — Nima Arkani-Hamed confirmed speaker (QMUL, June 29 –; PROP-2026-06-26-002
+  Confidence: Medium
+  Evidence: Conference overview page lists "Nima Arkani-Hamed" first among Confirmed Speakers; QMUL, 29 Jun – 3 Jul 2026; Jaroslav Trnka on the Scientific Advisory Board.
+
 ---
-*Total PRS triplets: 12*
+*Total PRS triplets: 23*
 
 PRS-05:
   Label: P5 (PROP-2026-04-08-001) — Positive geometry as universal language of fundamental physics
@@ -212,7 +221,7 @@ PRS-19:
   Confidence: Speculative
 
 ---
-*Total PRS triplets: 17*
+*Total PRS triplets: 23*
 
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-10*

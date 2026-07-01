@@ -30,7 +30,12 @@ import urllib.parse
 from collections import defaultdict
 from datetime import datetime
 
-from openstory_db import connect_ro, run_with_retry
+from openstory_db import (
+    connect_ro,
+    run_with_retry,
+    is_excluded,
+    EXCLUDED_PROJECT_SUBSTRINGS,
+)
 
 HOME = os.path.expanduser("~")
 DEFAULT_DB = os.path.join(HOME, "Documents/Non-Claude Projects/OpenStory/data/open-story.db")
@@ -152,25 +157,35 @@ def main():
     sid_to_task = {}
     unmatched_frags = defaultdict(int)
     ambiguous_frags = defaultdict(int)
+    discovered_frags = defaultdict(int)
     sessions = cur.execute(
-        "SELECT id, label, event_count, first_event, last_event FROM sessions"
+        "SELECT id, label, event_count, first_event, last_event, project_name FROM sessions"
     ).fetchall()
     stats = defaultdict(new_stat)
     sess_meta = {}
-    for sid, label, ecount, first, last in sessions:
-        frag = label_fragment(label)
-        if frag is None:
-            key = "(interactive)"
+    for sid, label, ecount, first, last, project_name in sessions:
+        if is_excluded(label, project_name):
+            # Cross-project session (e.g. BOSCO) — isolate, do not attribute.
+            key = "(excluded)"
         else:
-            task, reason = resolve(frag)
-            if task:
-                key = task
-            elif reason.startswith("ambiguous"):
-                ambiguous_frags[frag] += 1
-                key = "(unmatched)"
+            frag = label_fragment(label)
+            if frag is None:
+                key = "(interactive)"
             else:
-                unmatched_frags[frag] += 1
-                key = "(unmatched)"
+                task, reason = resolve(frag)
+                if task:
+                    key = task
+                elif reason.startswith("ambiguous"):
+                    ambiguous_frags[frag] += 1
+                    key = "(unmatched)"
+                else:
+                    # Clean scheduled-task name with no roster entry: attribute it
+                    # to its own name as a DISCOVERED agent rather than lumping it
+                    # into "(unmatched)". New scheduled tasks then self-attribute,
+                    # so agent_map stays an enrichment layer rather than a gate
+                    # that silently drops every task not hand-updated for.
+                    discovered_frags[frag] += 1
+                    key = frag
         sid_to_task[sid] = key
         sess_meta[sid] = (ecount or 0, first, last)
         s = stats[key]
@@ -280,8 +295,27 @@ def main():
                          "captured": False})
         agents_out[tid] = base
 
+    reserved = set(canonical) | {"(interactive)", "(unmatched)", "(excluded)"}
+    discovered_out = {}
+    for key in sorted(stats):
+        if key in reserved:
+            continue
+        d = finalize(stats[key])
+        d.update({
+            "taskId": key,
+            "category": "discovered",
+            "schedule": None,
+            "cron": None,
+            "thinkers": [],
+            "constitutions": [],
+            "captured": True,
+            "discovered": True,
+            "needs_curation": True,
+        })
+        discovered_out[key] = d
+
     buckets = {}
-    for k in ("(interactive)", "(unmatched)"):
+    for k in ("(interactive)", "(unmatched)", "(excluded)"):
         if k in stats:
             buckets[k] = finalize(stats[k])
 
@@ -295,19 +329,24 @@ def main():
             "source": "openstory-db",
             "db_path": args.db,
             "db_mtime": datetime.fromtimestamp(os.path.getmtime(args.db)).isoformat(),
-            "join": "sessions.label truncated@50 -> canonical taskId via unique prefix-match",
+            "join": "sessions.label name=\"...\" -> roster taskId (exact/unique-prefix); clean non-roster scheduled names self-attribute as discovered agents; no-name sessions -> (interactive)",
             "caveats": {
                 "avg_duration_min": "session run-span (last_event - first_event); reliable for single-run agents, inflated for long-lived/append sessions",
                 "tool_coverage": "fraction of tool_use events exposing data.tool; older (pre-tool-field) sessions read 0 and yield sparse tool maps",
             },
             "roster_size": len(canonical),
             "roster_captured": captured,
+            "discovered_count": len(discovered_out),
+            "excluded_sessions": stats["(excluded)"]["sessions"] if "(excluded)" in stats else 0,
+            "excluded_substrings": list(EXCLUDED_PROJECT_SUBSTRINGS),
             "total_sessions": total_sessions,
             "total_events": total_events,
+            "discovered_agents": dict(discovered_frags),
             "unmatched_label_fragments": dict(unmatched_frags),
             "ambiguous_label_fragments": dict(ambiguous_frags),
         },
         "agents": agents_out,
+        "discovered": discovered_out,
         "buckets": buckets,
     }
 
@@ -318,6 +357,12 @@ def main():
     print("Wrote %s" % args.out)
     print("  roster: %d/%d captured | sessions=%d events=%d"
           % (captured, len(canonical), total_sessions, total_events))
+    if discovered_out:
+        print("  discovered agents (self-attributed, need curation): %d distinct"
+              % len(discovered_out))
+    if "(excluded)" in stats:
+        print("  excluded (cross-project, e.g. BOSCO): %d sessions isolated"
+              % stats["(excluded)"]["sessions"])
     if unmatched_frags:
         print("  unmatched label fragments: %d distinct (see _meta)" % len(unmatched_frags))
     if ambiguous_frags:

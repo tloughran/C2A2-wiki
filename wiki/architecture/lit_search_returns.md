@@ -16483,3 +16483,829 @@ Clean null run — no 15a/15b/15c actions taken; no files modified except this a
   PROVENANCE: Origin: c2a2-lit-search-pipeline (scheduled); Chain: [queue-scan only]; Transform: null-run verification; Current status: QUEUE-EMPTY (upstream-liveness flag re-surfaced: OPEN-086 / REVISE-129)
 
 ---
+
+---
+
+## Run 2026-06-29 (c2a2-lit-search-pipeline; autonomous; Tom not present) — 2026-06-28 EOD cohort (sewing-agent bootstrap audit): 10 items (ASSUMPTION-383..387 + PRESUMPTION-414..418)
+
+### 15a RETURNS (supportive)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-383
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Citation/co-citation small-world network studies
+  Summary: Sparse explicit-link corpora are routinely well-connected via co-citation/bridge nodes, so low wikilink density is not per se a deficit; supports the structural claim but not the "9 pages" figure.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-383_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-384
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Network-analysis edge-type sensitivity; Wikipedia namespace handling
+  Summary: Orphan counts genuinely depend on edge-type inclusion and node population, so the metric is partly an artifact; supports "overstated," not "non-existent."
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-384_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-385
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: MediaWiki bot-edit guidance ("boilerplate changes should always be human checked"); Wikidata automation-quality concerns
+  Summary: Bulk automated boilerplate is a recognized quality risk conventionally gated behind human review; supports default-caution against unsupervised Phase 3 injection.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-385_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-386
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Hub-and-spoke navigability; WIP/backlog-triage practice
+  Summary: Hub wiring and bounded triage are both grounded high-leverage moves; the comparative "triage > link-seeding for orphans" is untested.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-386_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-387
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-Moderate
+  Key source: Metadata-based file classification (hybrid, confidence-threshold)
+  Summary: Path/size is a legitimate cheap first-pass classifier, but supported only for coarse triage, not per-page correctness.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-387_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-414
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-Moderate
+  Key source: KG topology-as-quality metrics
+  Summary: Connectivity is a legitimate quality signal, but only one dimension; supports "a signal," not "the right proxy."
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-414_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-415
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Metadata classification; folder-taxonomy context
+  Summary: Path/size carry some content signal, but every source frames metadata as approximate/fallback-backed, not ground truth.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-415_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-416
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Constitutional-AI; revise-over-refuse instruction-following
+  Summary: Principle-over-instruction with fail-loud-and-recommend (offering a bounded alternative) is a precedented, favored posture; the general "constitutional outranks operator" is a contested framework choice.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-416_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-417
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: KG curation; selective vs exhaustive linking; path-quality
+  Summary: Quality-gated selective linking over complete-graph coverage is standard curation practice; the specific "46 plausibly intentional" label is a local judgment.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-417_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-418
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Vulnerability/finding deduplication; single-ownership
+  Summary: Single-ownership/dedup genuinely speeds tracking — but the support is about finding-tracking efficiency, NOT detection coverage, and is narrow.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-418_for.md
+
+### 15b RETURNS (challenging)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-383
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Hub-dependence of sparse networks; implicit-vs-explicit edges
+  Specific risk: A deficit concentrated in hub/thinker pages is exactly the bottleneck the claim dismisses; "9 pages" is threshold-sensitive.
+  Summary: Shared-reference edges are weak/implicit and can overstate connectedness; recompute under multiple thresholds.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-383_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-384
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Implicit-edge inflation; unverified-artifact reasoning
+  Specific risk: Re-including permissive shared-reference edges can MASK real orphans; "artifact" is asserted, not recomputed.
+  Summary: The deficit-vs-artifact question is undecided without an actual recomputation; optimistic reading unproven.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-384_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-385
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Standard bot/boilerplate practice at scale
+  Specific risk: Over-refusal forgoes a normal, useful intervention; "noise" is an untested forward prediction reflecting template design, not an inherent property.
+  Summary: The literature's lesson is "human-check bulk edits," not "never do them"; a small pilot could validate.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-385_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-386
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Acceleration-whiplash/downstream-bottleneck; intervention comparability
+  Specific risk: Triage and link-seeding act on DIFFERENT orphan populations, so "more than" may be a category error; 456-page manual triage can stall.
+  Summary: Comparative bet unsupported; measure orphan delta per lever rather than assume.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-386_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-387
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Metadata-only classification accuracy limits; taxonomy decay; size-as-weak-proxy
+  Specific risk: Misclassified pages drive wrong downstream triage (e.g., high-value short page bucketed disposable); errors compound across 2,984 pages.
+  Summary: "Correctly classify" overstates a fallback-backed approximation; needs a sampled accuracy audit.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-387_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-414
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Multi-dimensional KG quality; Goodhart's law; content-primacy in retrieval
+  Specific risk: Optimizing connectivity can produce a well-linked but shallow vault; false sense of "health."
+  Summary: Connectivity is one axis among several; treating it as THE proxy invites Goodharting and ignores content depth/coverage.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-414_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-415
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate-Strong
+  Key source: Folder-taxonomy decay; metadata-incompleteness mislabeling; size-as-weak-signal
+  Specific risk: Misfiled/mis-sized pages systematically misclassified; high-value short pages discarded; errors invisible because taxonomy trusted as truth.
+  Summary: Unstated twin of A-387 in stronger form (asserts RELIABILITY as ground truth); treat path/size as priors, audit against content.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-415_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-416
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Over-refusal failure mode; automation surprise; contested alignment target
+  Specific risk: Normalizing autonomous override could entrench over-refusal and erode operator trust when judgment is wrong.
+  Summary: "Correct" is question-begging — it presumes the contested constitutional>operator stance; correctness rests on the (untested) alternative being better. Partly framework-commitment.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-416_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-417
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Linkability-completeness; C2A2's own cross-tradition-homology thesis; rationalization risk
+  Specific risk: Selectivity may prune exactly the non-obvious cross-tradition bridges the system exists to find; "plausibly intentional" launders oversight as design.
+  Summary: Selectivity is in tension with the mission; examine the 46 absent pairs individually before declaring them intentional.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-417_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-418
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Defense-in-depth/redundancy; dedup-scope limit; C2A2's own monitor-of-monitor PREMISE-086
+  Specific risk: Collapsing to a single orphan-detector creates a single point of failure for liveness — a silent stall in the sole owner goes undetected (the exact failure the dead-man's-switch family prevents).
+  Summary: Mislabels independent overlapping detectors (a defense-in-depth feature) as waste; dedup applies to FINDINGS not DETECTORS; INTERNALLY INCONSISTENT with validated PREMISE-086.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-418_against.md
+
+### SYSTEMIC-RISK-FLAG (15b)
+
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-06-29
+  Affected items: ASSUMPTION-387, PRESUMPTION-414, PRESUMPTION-415 (primary); ASSUMPTION-383, ASSUMPTION-384 (related)
+  Common vulnerability: STRUCTURAL-PROXY-AS-GROUND-TRUTH / measurement-validity. The bootstrap audit repeatedly treats a cheap, measurable STRUCTURAL or METADATA signal (link/connectivity count [383/384/414], directory path + file size [387/415]) as if it faithfully reports an underlying SEMANTIC property (synthesis health, content type, content value). The literature uniformly frames these as approximations requiring a content backstop, and warns of Goodhart effects when the proxy becomes the target.
+  Literature basis: Multi-dimensional KG quality frameworks (completeness/content/coverage/linkability); Goodhart's law on proxy metrics; metadata-classification accuracy limits with content fallback; folder-taxonomy decay.
+  Risk level: High
+  Recommendation: Add ONE deterministic verification step before acting on any of these structural classifications — a sampled CONTENT audit (50-100 pages) to estimate the proxy's error rate, and recomputation of connectivity/orphan metrics under 2-3 thresholds/edge-sets. This is the same "verify-completeness / don't trust a single proxy" remedy as the standing silent-failure/fail-loud cluster (PREMISE-086). Treat all A-E buckets and "vault is healthy" connectivity conclusions as PROVISIONAL pending that audit.
+
+SECONDARY-CLUSTER (framework-commitment, not literature-resolvable):
+  Affected items: PRESUMPTION-416 (constitutional>operator override), PRESUMPTION-418 (single-owner vs redundant detection)
+  Note: These turn on C2A2's own governance commitments. 418 is INTERNALLY INCONSISTENT with validated PREMISE-086 (monitor-of-monitor/dead-man's-switch) and is routed to REVISE. 416 is a genuine over-refusal-vs-principled-override tension that only Tom can ratify.
+
+### 15c DISPOSITIONS (net evaluation; DISPOSITION-354..363)
+
+DISPOSITION-354:
+  Date: 2026-06-29
+  Item: ASSUMPTION-383
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: The general principle (low explicit-link density can be benign in reference-dense corpora) is supported, but the SPECIFIC conclusion ("connectivity is not the bottleneck; only 9 under-connected pages") is threshold-sensitive and hub-dependent, with shared-reference edges possibly overstating connectedness.
+  Disposition: MONITOR
+  Reasoning: Balanced moderate evidence both ways; the claim is empirically checkable (recompute under thresholds + verify shared-reference paths are traversable) rather than literature-settleable. MONITOR pending that local check.
+  What would change the disposition: A threshold-robust recomputation + traversal spot-check confirming (-> INCORPORATE) or refuting (-> REVISE) that thinker connectivity is adequate.
+  Monitoring cadence: Weekly | Priority: Medium | -> MONITOR-400
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-355:
+  Date: 2026-06-29
+  Item: ASSUMPTION-384
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Orphan counts genuinely depend on edge-type + node population (supports "overstated"), but "artifact not deficit" is asserted without recomputation, and re-including permissive shared-reference edges could MASK real orphans rather than reveal false ones.
+  Disposition: MONITOR
+  Reasoning: The deficit-vs-artifact question is undecided and resolvable only by actually running the corrected computation — a deterministic local action, not a literature question (Rule 5). MONITOR until recomputed.
+  What would change the disposition: A recomputation with the corrected edge set + node filter; small explainable residual -> INCORPORATE; large residual -> REVISE.
+  Monitoring cadence: Weekly | Priority: Medium | -> MONITOR-401
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-356:
+  Date: 2026-06-29
+  Item: ASSUMPTION-385
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Strong convergence on the narrow principle — bulk automated boilerplate edits to a knowledge base are a recognized quality risk and should be human-gated/piloted, not executed blindly. 15b's challenge does not dispute the risk; it disputes the BLANKET "never," noting a small pilot or template redesign could yield value.
+  Disposition: INCORPORATE (with caveat)
+  Reasoning: The defensible, literature-backed core ("don't run unsupervised bulk boilerplate injection; gate behind human review / a pilot") is well supported and consistent with existing premises and the surgical-change rule. The contested part is only the strength of "never," which the caveat handles. INCORPORATE the principle, not the absolute.
+  Validated premise statement: see PREMISE-088 in validated_premises.md
+  Confidence: Moderate
+  Applicable to: orphan/connectivity remediation (Phase 3 decision); any bulk agentic edit to vault pages.
+  Re-check cadence: Quarterly
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+
+DISPOSITION-357:
+  Date: 2026-06-29
+  Item: ASSUMPTION-386
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Hub-wiring and bounded triage are each grounded high-leverage moves, but the load-bearing comparative claim ("inbox triage shrinks orphans MORE than link-seeding") is untested and possibly category-confused — triage and link-seeding act on different orphan populations.
+  Disposition: MONITOR
+  Reasoning: The plan is reasonable; only the ranking is unproven. Resolvable by tagging orphans by type and measuring orphan-delta per lever. MONITOR pending that measurement.
+  What would change the disposition: Per-lever orphan-delta measurement confirming or refuting the ranking.
+  Monitoring cadence: Weekly | Priority: Medium | -> MONITOR-402
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-358:
+  Date: 2026-06-29
+  Item: ASSUMPTION-387
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Path/size is a legitimate cheap first-pass classifier but is documented everywhere as an approximation needing a content backstop; "correctly classify 2,984 pages" overstates this, and file size is an especially weak proxy for content type/value. Asymmetry favors the challenge.
+  Disposition: REVISE
+  Reasoning: Heuristic (weak support + strong challenge -> REVISE). The claim drives a concrete action (bucketing ~3,000 pages into A-E that gates downstream handling), so an unaudited accuracy claim is a live risk worth flagging for Tom.
+  What is at risk: Downstream triage actions keyed to A-E buckets; misclassified high-value short pages treated as disposable.
+  Recommended action: see REVISE-152 in revision_flags.md (sampled content audit before trusting A-E classification).
+  Urgency: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-359:
+  Date: 2026-06-29
+  Item: PRESUMPTION-414
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: Connectivity is a legitimate but single-axis quality signal; the presumption privileges it as THE proxy, which the literature challenges (quality is multi-dimensional; Goodhart risk; content depth/coverage may matter more for synthesis).
+  Disposition: MONITOR (HIGH)
+  Reasoning: Foundational presumption underwriting the entire bootstrap-audit framing; not strongly enough refuted to REVISE, but too load-bearing and contested to let pass. PRESUMPTION + foundational -> MONITOR with HIGH priority.
+  What would change the disposition: Evidence that connectivity changes track real synthesis-task performance (-> INCORPORATE) or clearly decouple from it (-> REVISE).
+  Monitoring cadence: Weekly | Priority: High | -> MONITOR-403
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-360:
+  Date: 2026-06-29
+  Item: PRESUMPTION-415
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: The unstated twin of ASSUMPTION-387, in stronger form — it asserts path+size RELIABILITY as ground truth. Literature challenges this directly (taxonomy decay, metadata mislabeling, size as weak signal), and 15a support is weak.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong challenge -> REVISE with elevated urgency (designers were unaware they were treating taxonomy as ground truth). Bound to REVISE-152 as the same underlying defect surfaced as an unstated premise (surfaced-not-averaged: the stated assumption and its unstated twin are flagged together, not blended).
+  What is at risk: Any pipeline step that trusts folder/size as content truth without a content check.
+  Recommended action: see REVISE-153 in revision_flags.md (twin of REVISE-152; treat path/size as priors, audit against content).
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-361:
+  Date: 2026-06-29
+  Item: PRESUMPTION-416
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Principled override with fail-loud-and-recommend (the agent offered a bounded alternative) is a precedented, favored posture; but "the refusal was CORRECT" presumes the contested constitutional>operator stance and risks normalizing over-refusal/automation-surprise. Correctness hinges on the (untested) alternative being better.
+  Disposition: MONITOR (HIGH)
+  Reasoning: Genuinely balanced AND partly a framework commitment literature cannot settle. Not refuted enough to REVISE, but high-stakes governance question. The concrete instance is appropriately routed to Tom for ratification (see REVISE-152/153 audit, which tests whether the declined Phase 3 was the better call). MONITOR-HIGH on the general principle.
+  What would change the disposition: Tom ratifies the Phase 3 refusal (-> INCORPORATE the principled-override posture) or rejects it (-> REVISE toward execute-or-escalate-with-confirmation).
+  Monitoring cadence: Weekly | Priority: High | -> MONITOR-404
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-362:
+  Date: 2026-06-29
+  Item: PRESUMPTION-417
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Quality-gated selective linking is standard curation practice (supported), BUT for C2A2 specifically it cuts against the project's own thesis that non-obvious cross-tradition pairs reveal structural homologies; "plausibly intentional" is an unfalsifiable label that can launder oversight.
+  Disposition: MONITOR
+  Reasoning: Supported as a general norm but mission-specific tension prevents INCORPORATE. The resolution is concrete and local: examine the 46 absent pairs for latent homology before declaring them intentional. MONITOR with that as the trigger.
+  What would change the disposition: Per-pair review of the 46 absent pairs — confirmed low-homology (-> INCORPORATE selectivity norm) or hidden high-value bridges found (-> REVISE toward more exhaustive cross-tradition coverage).
+  Monitoring cadence: Weekly | Priority: Medium | -> MONITOR-405
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-363:
+  Date: 2026-06-29
+  Item: PRESUMPTION-418
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: The presumption mislabels independent overlapping orphan-detectors (a defense-in-depth feature) as wasteful double-counting. 15a's efficiency support is about deduplicating FINDINGS, not collapsing DETECTORS. Decisively, the presumption is INTERNALLY INCONSISTENT with validated PREMISE-086 (monitor-of-monitor / dead-man's-switch / "absence is the signal").
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong challenge + contradiction of an existing validated premise -> REVISE with HIGH urgency. Per 15c consistency rule, a new claim contradicting an existing PREMISE is flagged for human review rather than allowed to stand. Collapsing to a single orphan-detector reintroduces the single-point-of-failure-for-liveness that PREMISE-086 exists to prevent.
+  What is at risk: Liveness/dead-man's-switch coverage for orphan detection; the project's standing defense-in-depth posture.
+  Recommended action: see REVISE-154 in revision_flags.md (keep bootstrap + weekly as independent detectors; dedup the findings, not the detectors; alarm on disagreement).
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+### CONSISTENCY CHECK vs validated_premises.md (PREMISE-001..087)
+- PREMISE-088 (no unsupervised bulk boilerplate injection; gate/pilot first): NO contradiction. Complements the surgical-change discipline and PREMISE-086 (fail-loud) — both favor verify-before-bulk-act.
+- DISPOSITION-363 / REVISE-154: surfaced BECAUSE it contradicts PREMISE-086 (monitor-of-monitor). Routed to REVISE per the consistency rule; PREMISE-086 is NOT overwritten — the contradicting presumption is flagged for Tom.
+- No other new item contradicts an existing premise.
+
+### RUN TALLY 2026-06-29 (autonomous; Tom not present)
+10 items searched by 15a+15b and dispositioned by 15c (DISPOSITION-354..363) from the 2026-06-28 EOD cohort (5 stated assumptions A-383..387 + 5 unstated presumptions P-414..418; the sewing-agent bootstrap orphan/connectivity audit).
+- 1 INCORPORATE: PREMISE-088 (no unsupervised bulk boilerplate injection — gate/pilot first; CONDITIONAL/Moderate; from A-385).
+- 3 REVISE: REVISE-152 (A-387, MED — path/size classification accuracy unaudited); REVISE-153 (P-415, HIGH — unstated twin: folder/size treated as ground truth); REVISE-154 (P-418, HIGH — single-owner orphan-detection contradicts PREMISE-086 monitor-of-monitor).
+- 6 MONITOR: M-400 (A-383 connectivity-not-bottleneck, threshold-sensitive), M-401 (A-384 orphan-artifact unverified), M-402 (A-386 untested triage>link-seeding ranking), M-403 (P-414 connectivity-as-the-proxy, HIGH), M-404 (P-416 constitutional>operator override, HIGH), M-405 (P-417 selective-coverage vs cross-tradition-homology mission).
+End-to-end flow: QUEUED-undispositioned 10 -> 0.
+SYSTEMIC-RISK: NEW cluster (STRUCTURAL-PROXY-AS-GROUND-TRUTH / measurement-validity) spanning A-387/P-415 (path+size as content truth), P-414 (connectivity as synthesis-health proxy), A-383/A-384 (link/orphan counts as deficit truth); Risk High; remedy = one deterministic content-audit + multi-threshold recomputation before acting (same verify-completeness family as PREMISE-086). SECONDARY framework-commitment cluster: P-416 + P-418 turn on C2A2 governance; P-418 is internally inconsistent with PREMISE-086 (-> REVISE-154); P-416 awaits Tom's ratification.
+Twin/binding handling (surfaced-not-averaged): A-387 <-> P-415 (stated assumption + its unstated twin, both flagged REVISE-152/153, NOT blended); P-414 underwrites A-383/A-384 (connectivity-proxy foundation, all MONITORed/flagged together); P-416 binds the REVISE-152/153 audit (whether the declined Phase 3 was the better call is what ratifies the override).
+Priority order for Tom: REVISE-154 (HIGH, contradicts validated PREMISE-086 — liveness single-point-of-failure) > REVISE-153 (HIGH, unstated ground-truth presumption driving ~3,000-page classification) > REVISE-152 (MED, the stated form of the same classification-accuracy risk) > MONITOR-403/404 (HIGH foundational/governance presumptions). Carries forward prior open keystones (REVISE-145 consensus-validity, REVISE-147 scheduler dead-man's-switch [now backed by PREMISE-086], REVISE-150/151 from the 2026-06-27 run, and the AWAITING-REVIEW human-review backlog).
+Running maxima after this run: PREMISE-088, MONITOR-405, REVISE-154, DISPOSITION-363.
+
+  PROVENANCE: Origin: c2a2-lit-search-pipeline (scheduled); Chain: [15a, 15b -> 15c]; Transform: full pipeline run on 2026-06-28 EOD cohort; Current status: COHORT-DISPOSITIONED (10/10)
+
+---
+
+
+## 2026-06-30 — 15a/15b RE-TRIGGER refresh returns (15d 2026-06-28 cohort, 147 items)
+*Companion to the per-file RE-TRIGGER cycle blocks appended to lit_search_results/for/ and /against/ this run. 15a and 15b independently refreshed all 147 weekly MONITOR items (124 at cycle 3 + 23 at cycle 1). No new supporting or challenging sources surfaced for any item; all prior for/against profiles carry forward. Landscape spot-check = 6 genuine web searches (Goodhart/surrogate-metrics; git autostash safety; dashboard freshness/staleness; HITL quality-gate routing; SMS-OTP/passwordless security; multi-agent consensus/idealist-convergence). Cohort-level trajectory: Supporting=stable; Challenging=stable; New sources since last cycle=No.*
+
+**RETURN-BATCH (15a+15b, FOR+AGAINST):** 147/147 items refreshed; 0 new sources; 0 NOVELTY flags; recommendations carried forward unchanged.
+
+**Note:** the SMS-OTP/auth security MONITOR items (ASSUMPTION-121/PRESUMPTION-153) were not in this weekly cohort; the security landscape check still ran and reaffirms STABLE-but-STRONG anti-SMS-OTP momentum (NIST SP 800-63-4; 2026 deprecation deadlines) for whenever they next re-trigger.
+
+
+## 2026-06-30 — 15a/15b/15c full pipeline on 2026-06-29 NEW cohort (10 items: A-388..391, P-419..424)
+*Genuine first-time searches (6 web-search clusters above). Metabolism-axis / liveness / push-pattern review cohort.*
+
+DISPOSITION-364:
+  Date: 2026-06-30
+  Item: ASSUMPTION-388
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Rate-as-amplitude is a supported, standard dashboard idiom (15a), but the specific 'signals/day = productivity, on par with PRS yield' equivalence is a textbook Goodhart vulnerability (15b). The two are reconciled by REQUIRING a paired quality/homology counterweight.
+  Disposition: MONITOR
+  Reasoning: Stated assumption with moderate support and a moderate-strong, well-precedented challenge; not refuted but not safe to INCORPORATE as stated. The concrete trigger is local and measurable, so MONITOR (not REVISE) is right for the STATED form; its unstated twin P-419 carries the stronger REVISE.
+  What would change the disposition: A paired quality/homology metric is added beside signals/day (-> INCORPORATE the paired-axis form), OR an audit shows signal count is decoupled from genuine-homology yield (-> REVISE to demote the axis).
+  Monitoring cadence: Weekly | Priority: Medium-High
+  -> MONITOR-406
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-365:
+  Date: 2026-06-30
+  Item: ASSUMPTION-389
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: HITL gating of quality-sensitive extraction is supported (15a); the specific BLANKET deferral is partially challenged in favor of confidence-routed selective gating, with a concrete 12-day-freeze cost (15b).
+  Disposition: MONITOR
+  Reasoning: Supported as a policy but with a real, measured cost (axis freeze) and a better-attested alternative (selective routing). Carry as MONITOR; its unstated twin P-420 (that the benefit justifies the cost, unmeasured) carries the REVISE.
+  What would change the disposition: A confidence/quality signal is measured so gating can be selective rather than blanket (-> INCORPORATE selective form), OR the freeze cost is shown to exceed the quality benefit (-> REVISE).
+  Monitoring cadence: Weekly | Priority: Medium
+  -> MONITOR-407
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-366:
+  Date: 2026-06-30
+  Item: ASSUMPTION-390
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: NO-CHALLENGE-FOUND | 15b strength: Weak
+  Net assessment: Strong support, no real challenge: per-source freshness independence is settled data-observability doctrine. This is a correct, load-bearing guardrail and is safe to INCORPORATE, with the refinement that freshness-independence != failure-independence.
+  Disposition: INCORPORATE
+  Reasoning: Strong 15a support, no substantive 15b challenge, and the claim directly underwrites the verify-before-trust discipline already validated in PREMISE-086 (fail-loud / absence-is-signal). Consistency check: complements PREMISE-086 and the verify-completeness family; contradicts no existing premise. INCORPORATE at Moderate confidence (the refinement keeps it from High).
+  Validated premise statement: Freshness/liveness is a per-source property; the liveness of any one feed (e.g., OpenStory) must never be taken as evidence for the liveness of another (PRS, signals). Each axis requires its own freshness signal. (Refinement: freshness-independence does not imply failure-independence — shared upstream schedulers can freeze several feeds at once.)
+  Confidence: Moderate
+  Applicable to: metabolism/heartbeat display, approval-axis dashboards, any multi-feed visualization; binds A-390/P-422 and the freshness-watchdog gap (P-421).
+  Re-check cadence: Monthly
+  -> PREMISE-089
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+
+DISPOSITION-367:
+  Date: 2026-06-30
+  Item: ASSUMPTION-391
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Autostash is a supported feature for tracked files (15a) but the blanket 'safely handles ~20 unrelated files' is challenged: untracked files are not stashed and pop can conflict, reinstating the manual dance and risking a silent failure in an autonomous push (15b).
+  Disposition: MONITOR
+  Reasoning: Stated decision (DECISION-072) with genuine support and a genuine, bounded challenge. The fix is verifiable and local (confirm tracked-status and pop-exit-code handling), so MONITOR the STATED decision; the unstated twin P-424 (that habitual autostash is a clean win and not debt-normalization) carries the REVISE.
+  What would change the disposition: Confirm the ~20 files are all TRACKED and the push path checks the autostash pop exit code / fails loud on conflict (-> INCORPORATE the pattern), OR observe an untracked-file or silent pop-conflict failure (-> REVISE DECISION-072).
+  Monitoring cadence: Weekly | Priority: Medium
+  -> MONITOR-409
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-368:
+  Date: 2026-06-30
+  Item: PRESUMPTION-419
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Weak conditional support only as a paired/non-targeted indicator (15a) against a STRONG Goodhart challenge to the unexamined volume=yield equivalence (15b). The presumption is unstated and the designers were unaware they had adopted it.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong challenge + membership in the active 'structural-proxy-as-ground-truth' SYSTEMIC-RISK cluster -> REVISE (HIGH). Mirrors the prior-cycle handling of P-414 (connectivity-as-proxy -> MONITOR-403 HIGH) but here the proxy is displayed as a headline 'productivity' axis, raising urgency.
+  What is at risk: The metabolism 'amplitude' display and any curation/agent behavior that optimizes toward signal count; the project's credibility if 'productivity' is noise.
+  Recommended action: Do not display signals/day as productivity until it is paired with a homology/quality counterweight and a spot-audit confirms count tracks genuine-homology yield. (Same verify-before-trust family as PREMISE-086 / the 2026-06-29 content-audit remedy.)
+  Urgency: High
+  -> REVISE-155
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-369:
+  Date: 2026-06-30
+  Item: PRESUMPTION-420
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Conditional support for the trade IF the benefit were bounded (15a), but a moderate-strong challenge because the benefit is unmeasured while the cost (12-day freeze, ~68 cards) is concrete and observed (15b). Unstated presumption.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + moderate-strong challenge + a faith-based cost-benefit claim with a measured downside -> REVISE (Medium-High). The remedy is cheap relative to the stakes: measure the quality benefit or time-box/selectively-route the gate. Binds A-389 (the stated form, MONITOR-407).
+  What is at risk: Liveness of the PRS/signals approval axes and backlog growth; the legitimacy of the gating policy (DECISION) itself.
+  Recommended action: Time-box the gate and instrument it — sample-measure the quality delta attended-vs-unattended on a handful of triplets; if the delta is small, move to confidence-routed selective gating so low-risk extraction does not freeze the axes.
+  Urgency: Medium-High
+  -> REVISE-156
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-370:
+  Date: 2026-06-30
+  Item: PRESUMPTION-421
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: No support and a strong challenge backed by a 12-day undetected freeze and by the system's own PREMISE-086 (monitor-of-monitor). 'Someone will notice' is the anti-pattern automated freshness monitoring exists to replace.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong challenge + direct contradiction of validated PREMISE-086 + live operational failure -> REVISE (HIGH). Per the 15c consistency rule, a claim contradicting an existing premise is flagged for human review rather than allowed to stand. The remedy is the same dead-man's-switch pattern already validated.
+  What is at risk: Liveness of every approval/metric axis; the credibility of the heartbeat/metabolism display; consistency with PREMISE-086.
+  Recommended action: Add an automated freshness watchdog — per-axis next-expected-update SLA that alarms (fail-loud) when an axis exceeds its freshness budget. This is the dead-man's-switch of PREMISE-086 / REVISE-147 applied to the dashboard feeds.
+  Urgency: High
+  -> REVISE-157
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-371:
+  Date: 2026-06-30
+  Item: PRESUMPTION-422
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: No support and a strong, operationally-confirmed challenge: per-axis 'data last updated' marking is documented best practice and its absence misled the most expert viewer. Directly downstream of A-390 (feeds are independent).
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong challenge + live mislead of the actual expert user + it is the positive obligation implied by the just-INCORPORATED PREMISE-089 -> REVISE (HIGH but low-cost fix). Binds PREMISE-089 and P-421 (the watchdog).
+  What is at risk: Trustworthiness of the metabolism/heartbeat display; any decision read off a mixed-freshness board.
+  Recommended action: Add per-axis as-of timestamps (and/or color-coded staleness) to each approval/metric axis so freshness is read at the point of use. This operationalizes PREMISE-089 and is a small UI change.
+  Urgency: High (low effort)
+  -> REVISE-158
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+DISPOSITION-372:
+  Date: 2026-06-30
+  Item: PRESUMPTION-423
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: Weak-moderate support for keeping feeds independent (15a) but a moderate challenge to the reflex of ADDING an agent rather than installing the missing freshness control / considering consolidation (15b). The root cause is a watchdog gap, not a capacity gap.
+  Disposition: MONITOR
+  Reasoning: PRESUMPTION with a real but not decisive challenge; the design choice (add vs consolidate) is a genuine judgment call that depends on cadence/ownership facts not yet established, so MONITOR rather than REVISE. Bind to P-421/P-422 (the watchdog + per-axis marking are the actual fixes regardless of add-vs-consolidate).
+  What would change the disposition: Establish whether the three feeds have genuinely distinct cadences/owners (-> keep separate + shared watchdog, INCORPORATE) or are artificially split (-> REVISE toward consolidation). Either way the watchdog (REVISE-157) is required first.
+  Monitoring cadence: Weekly | Priority: Medium
+  -> MONITOR-408
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+
+DISPOSITION-373:
+  Date: 2026-06-30
+  Item: PRESUMPTION-424
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Weak support for the mechanism's convenience (15a) against a moderate-strong challenge to the HABIT: normalizing a chronically dirty ~20-file tree is push-debt entrenchment, the working-tree form of REVISE-150's deferred-push accumulation (15b). Unstated presumption.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + moderate-strong challenge + membership in the push-debt cluster (PRESUMPTION-412/REVISE-150) -> REVISE (Medium). The remedy is concrete and cheap (resolve the ~20 files: commit, .gitignore, or remove), which retires the debt rather than automating around it. Binds A-391 (the stated mechanism, MONITOR-409).
+  What is at risk: Working-tree integrity and push reliability; compounding push-debt across sessions (with REVISE-150).
+  Recommended action: Resolve the ~20 persistent uncommitted files at the source — commit the intentional ones, .gitignore the local-only artifacts, remove the strays — so the tree is clean and autostash becomes an occasional convenience, not a per-push crutch.
+  Urgency: Medium
+  -> REVISE-159
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+
+### CONSISTENCY CHECK vs validated_premises.md (PREMISE-001..088)
+- PREMISE-089 (per-source freshness independence; one feed's liveness != another's): NO contradiction. Complements PREMISE-086 (fail-loud / absence-is-signal) and the verify-completeness family.
+- DISPOSITION-370 / REVISE-157 (no freshness watchdog; "someone will notice"): surfaced BECAUSE it contradicts PREMISE-086 (monitor-of-monitor / dead-man's-switch). Routed to REVISE per the consistency rule; PREMISE-086 is NOT overwritten.
+- DISPOSITION-371 / REVISE-158 (no per-axis as-of marking): operationalizes the just-validated PREMISE-089; consistent.
+- No other new item contradicts an existing premise.
+
+### RUN TALLY 2026-06-30 (autonomous; Tom not present)
+147 weekly MONITOR items refreshed by 15a+15b and re-dispositioned by 15c (all MONITOR carried forward; trajectory stable) from the 15d 2026-06-28 RE-TRIGGER cohort. End-to-end: QUEUED-undispositioned 147 -> 0.
+PLUS 10 NEW items (2026-06-29 cohort A-388..391, P-419..424) searched first-time by 15a+15b and dispositioned by 15c (DISPOSITION-364..373):
+- 1 INCORPORATE: PREMISE-089 (per-source freshness independence; from A-390; Moderate).
+- 5 REVISE: REVISE-155 (P-419, HIGH — signals/day as unexamined yield proxy [Goodhart]); REVISE-156 (P-420, MED-HIGH — attended-gating benefit unmeasured vs 12-day freeze); REVISE-157 (P-421, HIGH — no freshness watchdog; contradicts PREMISE-086); REVISE-158 (P-422, HIGH/low-effort — no per-axis as-of marking; misled expert viewer); REVISE-159 (P-424, MED — habitual autostash normalizes push-debt).
+- 4 MONITOR: M-406 (A-388 signals/day-as-amplitude, Goodhart-conditional), M-407 (A-389 blanket attended-gating vs selective routing), M-408 (P-423 add-agent vs consolidate feeds), M-409 (A-391 autostash safe for tracked/clean-reapply only).
+SYSTEMIC-RISK (continuation): the "structural-proxy-as-ground-truth / measurement-validity" cluster flagged 2026-06-29 (connectivity-as-proxy P-414) now extends to signals/day-as-yield (A-388/P-419). NEW cluster: "liveness/observability gap" — A-390/P-421/P-422/P-423 (mixed-freshness display, no watchdog, no per-axis marking, add-agent reflex); root cause is a missing automated freshness watchdog + per-axis as-of marking, both in the PREMISE-086 dead-man's-switch family. CONTINUATION cluster: push-debt — A-391/P-424 extend PRESUMPTION-412/REVISE-150 (deferred pushes / dirty tree accumulate).
+Priority order for Tom: REVISE-157 (HIGH, contradicts PREMISE-086 — liveness single-point-of-failure, ran 12 days undetected) > REVISE-158 (HIGH but low-effort — per-axis as-of timestamps; the expert viewer was misled) > REVISE-155 (HIGH — signals/day displayed as productivity is a Goodhart trap) > REVISE-156 (MED-HIGH) > REVISE-159 (MED). Carries forward prior open keystones (REVISE-145 consensus-validity, REVISE-147 scheduler dead-man's-switch [backed by PREMISE-086], REVISE-150/151, REVISE-152/153/154 from 2026-06-29).
+Running maxima after this run: PREMISE-089, MONITOR-409, REVISE-159, DISPOSITION-373.
+
+  PROVENANCE: Origin: c2a2-lit-search-pipeline (scheduled); Chain: [15d 2026-06-28 -> 15a, 15b -> 15c] (147 refresh) + [14a/14b -> 15a, 15b -> 15c] (10 new); Transform: full pipeline run 2026-06-30; Current status: COHORT-DISPOSITIONED (147 refresh + 10 new = 157/157)
+
+---
+
+---
+
+# ===== RUN 2026-07-01 (c2a2-lit-search-pipeline; 12 new items, 2026-06-30 "PRS backlog runbook" cohort) =====
+# Autonomous scheduled run. Tom not present. 12 items 15a+15b searched and 15c dispositioned.
+# (Note: 5 [QUEUED-EMPIRICAL] items A-392/395/396/397/399 intentionally NOT lit-searched — self-marked directly-verifiable / not literature-testable.)
+
+## 15a / 15b RETURNS (paired)
+
+RETURN ASSUMPTION-393:
+  15a: SUPPORTED (Moderate-Strong) — HITL cuts extraction error 30-40%; attended pass justified for one-time quality-sensitive backlog. Key: IMS Datawise/Forage.ai HITL.
+  15b: PARTIALLY-CHALLENGED (Moderate) — HITL doesn't scale; attended-vs-unattended is a false dichotomy (human-on-the-loop); leaves recurrence (P-425). Key: DDD/Docsumo.
+  Full: lit_search_results/for|against/ASSUMPTION-393_*.md
+
+RETURN ASSUMPTION-394:
+  15a: PARTIALLY-SUPPORTED (Moderate) — structural checks are standard necessary first-line validation. Key: Integrate.io/SDET-QA.
+  15b: CHALLENGED (Strong) — "sufficient" is false-green; count/parse/populate blind to semantic + compensating errors. Key: MS SQL replication validation; Integrate.io semantic validation.
+  Full: lit_search_results/for|against/ASSUMPTION-394_*.md
+
+RETURN ASSUMPTION-398:
+  15a: SUPPORTED (Moderate-Strong) — visual gate catches what functional green misses; defect-escape +25% without adapted review. Key: BrowserStack/Gartner.
+  15b: PARTIALLY-CHALLENGED (Weak-Moderate) — "must be a live HUMAN eyeball" over-commits; automate visual regression; manual gates habituate. Key: BrowserStack CI->CD, Percy/Applitools.
+  Full: lit_search_results/for|against/ASSUMPTION-398_*.md
+
+RETURN ASSUMPTION-400:
+  15a: SUPPORTED (Strong) — stop-writer->backup->.recover->swap is primary-source SQLite practice; corruption concentrates at checkpoint + stale wal/shm. Key: sqlite.org.
+  15b: PARTIALLY-CHALLENGED (Weak) — backup API copies consistently even with live writer; check for 2026-03 WAL-reset bug (fixed 3.51.3); raw-copy before checkpoint. Key: sqlite.org backup API + WAL-reset notice.
+  Full: lit_search_results/for|against/ASSUMPTION-400_*.md
+
+RETURN ASSUMPTION-401:
+  15a: PARTIALLY-SUPPORTED (Moderate) — deferring a non-blocking downstream index is standard incremental-commit hygiene (ingestion reads vault+git per A-399).
+  15b: PARTIALLY-CHALLENGED (Weak-Moderate) — creates a divergence window; index silently incomplete; deferred step joins push-debt (forget risk).
+  Full: lit_search_results/for|against/ASSUMPTION-401_*.md
+
+RETURN PRESUMPTION-425:
+  15a: NO-SUPPORT-FOUND — only the trivial instantaneous-liveness fact; durability claim unsupported.
+  15b: CHALLENGED (Strong) — one-shot clear without cadence change re-accumulates (symptom not cause); OPEN-102 remains. Key: Lean Agility, InfoQ queue math.
+  Full: lit_search_results/for|against/PRESUMPTION-425_*.md
+
+RETURN PRESUMPTION-426:
+  15a: NO-SUPPORT-FOUND — count-match is a necessary check, never a correctness proof.
+  15b: CHALLENGED (Strong) — compensating/offsetting errors defeat exact count-match; key on expected proposal_id SET, not cardinality. Key: Integrate.io/SDET-QA, MS SQL.
+  Full: lit_search_results/for|against/PRESUMPTION-426_*.md
+
+RETURN PRESUMPTION-427:
+  15a: NO-SUPPORT-FOUND — fixing a bug is progress, not class elimination.
+  15b: CHALLENGED (Strong) — defect clustering/pesticide paradox; same-session qc_trace divergence empirically refutes "one fix = trustworthy." Key: BrowserStack/QA Trail.
+  Full: lit_search_results/for|against/PRESUMPTION-427_*.md
+
+RETURN PRESUMPTION-428:
+  15a: PARTIALLY-SUPPORTED (Weak) — triage ordering (content first) only; permanent-wrong-audit not supported.
+  15b: CHALLENGED (Strong) — for an audit trail, correctness of the trail IS the product; a known-wrong CSV voids the guarantee; contradicts provenance_protocol. Key: Actian/Atlan/Alex Solutions.
+  Full: lit_search_results/for|against/PRESUMPTION-428_*.md
+
+RETURN PRESUMPTION-429:
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) — cheap only IF the two views are truly redundant.
+  15b: CHALLENGED (Moderate) — connectome reads git+vault, metabolism reads OpenStory DB (which was corrupt) => complementary independent signals, not redundant. Key: N-version/common-mode-failure.
+  Full: lit_search_results/for|against/PRESUMPTION-429_*.md
+
+RETURN PRESUMPTION-430:
+  15a: NO-SUPPORT-FOUND — velocity/size are flow stats, never quality signals.
+  15b: CHALLENGED (Moderate-Strong) — Goodhart: growth proxy in a quality-gated pipeline invites gaming; extends structural-proxy cluster (P-414, A-388/P-419). Key: CodePulse/CTO Framework/Axify.
+  Full: lit_search_results/for|against/PRESUMPTION-430_*.md
+
+RETURN PRESUMPTION-431:
+  15a: NO-SUPPORT-FOUND — isolated locks are benign; recurrence is not.
+  15b: CHALLENGED (Strong) — recurring stale index.lock is a documented concurrency symptom (cron vs interactive git); fix = serialize + GIT_OPTIONAL_LOCKS=0; escalates to index/ref corruption. Key: git lock docs, anthropics/claude-code #11005/#57102/#47721.
+  Full: lit_search_results/for|against/PRESUMPTION-431_*.md
+
+## 15c DISPOSITIONS
+
+DISPOSITION-374:
+  Date: 2026-07-01
+  Item: ASSUMPTION-393
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Strong, domain-matched support for the ONE-TIME correctness of an attended pass on a quality-sensitive backlog; the challenge is to durability/scale (a false dichotomy with human-on-the-loop) and to leaving recurrence unaddressed — not to the one-time act.
+  Disposition: INCORPORATE
+  Reasoning: Strong support + only-moderate, scope-limited challenge -> INCORPORATE with an explicit scope caveat (one-time remediation, not a standing cadence). The recurrence gap is dispositioned separately as REVISE via P-425, so it does not block incorporating the narrow premise.
+    Validated premise statement: For a one-time, quality-sensitive backlog whose errors propagate into a validated-premise register, an attended (human-in-the-loop) ingestion pass is justified over an unbounded unattended agent — but only as one-time remediation, not as the standing ingestion cadence.
+    Confidence: Moderate
+    Applicable to: OPEN-101 backlog clears; any one-time quality-sensitive ingestion remediation. Pairs with REVISE-161 (P-425, the cadence gap).
+    Re-check cadence: Quarterly
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+  -> PREMISE-090
+
+DISPOSITION-375:
+  Date: 2026-07-01
+  Item: ASSUMPTION-394
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Structural checks are necessary and standard (15a), but the assumption's operative word "sufficient" is strongly contradicted: count+parse+populate is blind to semantic errors and to compensating errors that net to an exact count (P-426). Classic false-green.
+  Disposition: REVISE
+  Reasoning: Moderate support for the checks' necessity vs strong challenge to their sufficiency -> REVISE. The fix is additive and cheap (a content/identity-level check), so this is a low-cost design improvement, not a teardown.
+    What is at risk: Ingestion correctness of claim cards feeding the connectome and premise register; semantically-wrong-but-structurally-valid cards pass every gate.
+    Recommended action: Add an identity + semantic layer to the ingestion gate — verify the expected proposal_id SET (not just count), add a duplicate/near-duplicate scan, and sample content fidelity against source cards. Bind with REVISE-162 (P-426).
+    Urgency: Medium
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+  -> REVISE-160
+
+DISPOSITION-376:
+  Date: 2026-07-01
+  Item: ASSUMPTION-398
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: A visual check before publish catches a real defect class that functional green misses (15a, strong, and confirmed by the C2A2 stale-axis mislead REVISE-158). The challenge does not deny the value of a visual gate; it argues the gate need not be a HUMAN eyeball where automated visual-regression applies.
+  Disposition: INCORPORATE
+  Reasoning: Strong support + weak-moderate challenge -> INCORPORATE with caveat. The premise is incorporated as "a visual gate is required before publish," with the caveat that the gate may be automated where a stable baseline exists; the human eyeball is the right default for C2A2's current bespoke, low-frequency publishes.
+    Validated premise statement: A visual check of the rendered artifact is required before publish even after programmatic green, because visual/rendering defects routinely survive functional CI. For bespoke, low-frequency publishes a human eyeball is the appropriate gate; where publishes become frequent/templated, an automated visual-regression diff should take the primary role (human review reserved for flagged diffs).
+    Confidence: Moderate
+    Applicable to: No-Blind-Push publish gate; all human-facing visualization publishes. Complements PREMISE-089 (per-axis freshness) and REVISE-158.
+    Re-check cadence: Quarterly
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+  -> PREMISE-091
+
+DISPOSITION-377:
+  Date: 2026-07-01
+  Item: ASSUMPTION-400
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak
+  Net assessment: The recovery sequence is primary-source SQLite best practice (15a, Strong). The challenge is only boundary refinement (the backup API tolerates live writers; check for the 2026-03 WAL-reset bug; raw-copy before checkpoint) — it sharpens the sequence, it does not oppose it.
+  Disposition: INCORPORATE
+  Reasoning: Strong primary-source support with only refining caveats -> INCORPORATE (High confidence), folding the 15b refinements into the premise so the procedure is captured correctly.
+    Validated premise statement: Safe recovery of a large corrupt SQLite DB: (1) stop all writers, (2) take a raw file-level copy first, (3) confirm SQLite >= 3.51.3 (2026-03 WAL-reset fix), (4) checkpoint/backup via the backup API, (5) .recover into a fresh file, (6) PRAGMA integrity_check, (7) swap and remove stale -wal/-shm. Corruption risk concentrates at checkpoint and around stale wal/shm.
+    Confidence: High
+    Applicable to: OpenStory DB recovery (A-399 dependency); any large-SQLite recovery in C2A2. Complements PREMISE-086 (fail-loud / verify).
+    Re-check cadence: Quarterly
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+  -> PREMISE-092
+
+DISPOSITION-378:
+  Date: 2026-07-01
+  Item: ASSUMPTION-401
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak-Moderate
+  Net assessment: True as stated for INGESTION (which reads vault+git, A-399), but the deferral opens a tracked-divergence window downstream (the cross_program_index is silently incomplete) and joins the deferred-work/push-debt family where deferred steps get forgotten. Low stakes, recoverable.
+  Disposition: MONITOR
+  Reasoning: Symmetric weak-to-moderate evidence on both sides, low stakes -> MONITOR. Safe if tracked; the only real risk is the backfill being forgotten and the index trusted as complete.
+    What would change the disposition: Evidence the backfill was forgotten and the index was trusted while incomplete -> REVISE; a clean tracked backfill -> quietly retire.
+    Monitoring cadence: Weekly
+    Priority: Low
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+  -> MONITOR-410
+
+DISPOSITION-379:
+  Date: 2026-07-01
+  Item: PRESUMPTION-425
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: No support for the durability claim; strong, well-established challenge (Lean backlog re-accumulation: one-shot clear without cadence change comes back, often bigger). OPEN-102 remaining open is the empirical tell. Unstated presumption.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong challenge + no support -> REVISE (HIGH). Designers acted on the attended clear (A-393, correctly) but presumed it keeps the axis live; it does not. Pairs with the just-INCORPORATED PREMISE-090's explicit scope caveat.
+    What is at risk: The PRS approval axis silently re-freezes post-clear, reviving the 12-day-freeze failure mode (REVISE-156/157 family) under a false sense of "handled."
+    Recommended action: Pair the one-shot clear with a durable mechanism — a standing bounded ingestion cadence (human-on-the-loop) and/or a PRS-axis freshness watchdog (bind REVISE-157). Resolve OPEN-102.
+    Urgency: High
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+  -> REVISE-161
+
+DISPOSITION-380:
+  Date: 2026-07-01
+  Item: PRESUMPTION-426
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Count-match cannot detect compensating errors (drop cancels wrong-add -> identical count, wrong content). Named, documented failure class. Directly downstream of A-394's "sufficient" claim.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong challenge -> REVISE (Medium-High). Same fix as REVISE-160: verify the expected proposal_id SET (set difference both directions), not cardinality. Cheap, decisive.
+    What is at risk: Wrong/misattributed cards enter the connectome undetected because the headline +144 matched.
+    Recommended action: Replace count-match with identity-set verification (expected_ids symmetric-difference present_ids == empty) plus content spot-check. Bind REVISE-160 (A-394).
+    Urgency: Medium-High
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+  -> REVISE-162
+
+DISPOSITION-381:
+  Date: 2026-07-01
+  Item: PRESUMPTION-427
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Defect clustering/pesticide paradox predicts more keying bugs where one was found; the same-session qc_trace divergence empirically confirms the class was not eliminated. "One fix = trustworthy toolchain" is refuted both theoretically and observationally.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong challenge + live empirical confirmation -> REVISE (High). The remedy is a bounded, concrete audit, so it is actionable.
+    What is at risk: Silent identity/keying mismatches elsewhere in the toolchain corrupt audit trails and ingestion identity while the toolchain is presumed trustworthy.
+    Recommended action: Run a systematic keying-identity audit across ALL identity joins (proposal_id, qc_trace, filename surfaces); assert every join uses one stable key and no surface-key joins remain. Bind REVISE-164 (P-428, audit integrity).
+    Urgency: High
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+  -> REVISE-163
+
+DISPOSITION-382:
+  Date: 2026-07-01
+  Item: PRESUMPTION-428
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Weak support for triage ORDERING only; strong challenge to the acceptability of a known-wrong audit trail. For an audit/provenance artifact the trail's correctness IS the product, and this is self-referentially central to C2A2 (provenance_protocol.md).
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong challenge + self-referential stakes (the system's own provenance discipline) -> REVISE (Medium-High). A forward guard prevents recurrence but does not repair the known-wrong record; correctness must be restored.
+    What is at risk: The audit CSV is later trusted as authoritative provenance; C2A2's chain-of-custody guarantee is silently false; future audits build on a corrupt baseline.
+    Recommended action: Regenerate the audit CSV from source-of-truth so it matches the vault, THEN keep the guard. Treat provenance correctness as a first-class deliverable equal to vault content. Bind REVISE-163 (P-427).
+    Urgency: Medium-High
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+  -> REVISE-164
+
+DISPOSITION-383:
+  Date: 2026-07-01
+  Item: PRESUMPTION-429
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: The connectome (git+vault) and the metabolism/token view (OpenStory DB) read different substrates, so they are complementary independent signals, not redundant — and the DB was in fact corrupt this session, exactly the condition only the metabolism view would surface. But the metabolism view is deferred, not lost, and is recoverable post A-400.
+  Disposition: MONITOR
+  Reasoning: PRESUMPTION + moderate challenge, but low/recoverable stakes (deferral, not deletion) -> MONITOR leaning toward the complementary reading. Escalates to REVISE if the metabolism view's inputs are confirmed to read the DB independently AND its deferral hides a real DB-side fault.
+    What would change the disposition: Confirming the metabolism view reads the OpenStory DB independently (not derived from git/vault) -> REVISE (restore it as a required independent cross-check); confirming it is merely a re-rendering of git/vault events -> retire the concern.
+    Monitoring cadence: Weekly
+    Priority: Medium
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+  -> MONITOR-411
+
+DISPOSITION-384:
+  Date: 2026-07-01
+  Item: PRESUMPTION-430
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: Reading "fast turn + larger connectome" as success imports a velocity/growth norm into a quality-gated pipeline — a Goodhart trap. Member of the standing structural-proxy / measurement-validity SYSTEMIC-RISK cluster (P-414, A-388/P-419).
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + moderate-strong challenge + membership in the measurement-validity cluster -> REVISE (Medium). The fix is a framing discipline, cheap to adopt.
+    What is at risk: The pipeline gets optimized for turn-speed and node-count, eroding the quality gate it exists to enforce; growth masks quality regressions.
+    Recommended action: Report speed/connectome-size as neutral operational stats, never as success signals; define run success solely by quality-gate outcomes (identity/semantic correctness, provenance integrity). Bind the structural-proxy cluster (REVISE-155 family).
+    Urgency: Medium
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+  -> REVISE-165
+
+DISPOSITION-385:
+  Date: 2026-07-01
+  Item: PRESUMPTION-431
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Recurring stale git index.lock is a documented concurrency symptom (a heartbeat cron racing attended commits is exactly the write-vs-write race the lock guards), with a recognized escalation path to index/ref corruption and a concrete fix. Not benign noise.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong, well-documented challenge (incl. the Claude Code issue tracker) -> REVISE (Medium). Actionable and cheap; also plausibly the root of the recurring-lock family.
+    What is at risk: Concurrent git writers interleave into index/ref corruption; attended commits fail or are silently blocked; the repo state the whole C2A2 pipeline reads from is corrupted.
+    Recommended action: Serialize git access (repo-level lock/queue around commits) and set GIT_OPTIONAL_LOCKS=0 / --no-optional-locks for the heartbeat cron's read-only git; run git fsck to check for existing damage. Relates to the liveness/observability cluster (REVISE-147 scheduler dead-man's-switch).
+    Urgency: Medium
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+  -> REVISE-166
+
+### CONSISTENCY CHECK vs validated_premises.md (PREMISE-001..089)
+- PREMISE-090 (attended pass justified for ONE-TIME quality-sensitive backlog remediation, not as standing cadence): NO contradiction. The scope caveat is exactly what keeps it consistent with a future cadence decision (REVISE-161).
+- PREMISE-091 (visual gate required before publish): NO contradiction. Complements PREMISE-089 (per-axis freshness) and operationalizes the No-Blind-Push discipline; consistent with REVISE-158 (the stale-axis mislead a visual gate would catch).
+- PREMISE-092 (safe large-SQLite recovery sequence): NO contradiction. Complements PREMISE-086 (fail-loud / verify-completeness); purely additive procedural knowledge.
+- No new premise contradicts an existing one. INCORPORATE proceeds for all three.
+
+### RUN TALLY 2026-07-01 (autonomous; Tom not present)
+12 NEW items from the 2026-06-30 "PRS backlog runbook" cohort (A-393,394,398,400,401; P-425,426,427,428,429,430,431) searched first-time by 15a+15b and dispositioned by 15c (DISPOSITION-374..385). End-to-end: QUEUED-undispositioned 12 -> 0.
+- 3 INCORPORATE: PREMISE-090 (attended one-time quality-sensitive remediation; A-393; Moderate); PREMISE-091 (visual gate before publish; A-398; Moderate); PREMISE-092 (safe large-SQLite recovery sequence; A-400; High).
+- 2 MONITOR: M-410 (A-401 deferred cross_program_index — tracked-divergence risk, Low); M-411 (P-429 metabolism view complementary-not-redundant; Medium).
+- 7 REVISE: REVISE-160 (A-394, MED — structural green != sufficient; add identity/semantic check); REVISE-161 (P-425, HIGH — one-shot clear re-accumulates without cadence change; OPEN-102); REVISE-162 (P-426, MED-HIGH — count-match blind to compensating errors; verify id SET); REVISE-163 (P-427, HIGH — defect clustering; one keying fix != trustworthy; audit all identity joins); REVISE-164 (P-428, MED-HIGH — known-wrong audit CSV must be corrected, not just guarded); REVISE-165 (P-430, MED — velocity/size as success = Goodhart trap); REVISE-166 (P-431, MED — recurring stale git index.lock is a concurrency symptom; serialize + --no-optional-locks).
+- 5 [QUEUED-EMPIRICAL] items (A-392, A-395, A-396, A-397, A-399) intentionally NOT lit-searched — self-marked directly-verifiable / not literature-testable; left for next-pass empirical verification.
+
+SYSTEMIC-RISK (continuation + extension): 
+(1) MEASUREMENT-VALIDITY / structural-proxy-as-ground-truth cluster now extends to A-394 (structural green as sufficiency), P-426 (count-match as content-correctness), P-430 (velocity/connectome-size as success) — continuing the 2026-06-29/30 connectivity-as-proxy (P-414) and signals-per-day-as-yield (A-388/P-419) cluster. Root cause: substituting an easily-measured aggregate/structural proxy for the actual quality property. Fix discipline: pair every structural/count check with an identity/semantic check; never treat throughput/size as quality.
+(2) ONE-SHOT-AS-DURABLE-SOLUTION cluster: A-393/P-425 (attended clear without cadence) and P-427 (one keying fix as class elimination) — continuing the push-debt cluster (REVISE-150/159). Fix discipline: pair every one-shot remediation with a process/cadence change and a class-level audit.
+(3) VERIFICATION/OBSERVABILITY INDEPENDENCE: P-429 (collapsing complementary views) and P-431 (concurrency masked as noise) connect to the liveness/observability cluster (PREMISE-086/089; REVISE-147/157/158). Fix discipline: preserve independent cross-checks; treat recurring infrastructure anomalies as symptoms.
+
+Priority order for Tom (this cohort): REVISE-161 (HIGH — PRS axis will silently re-freeze; pair with REVISE-157 watchdog) > REVISE-163 (HIGH — identity-keying is a fault cluster; audit all joins) > REVISE-162/164 (MED-HIGH — count-match + audit-CSV integrity; the ingestion-trust pair) > REVISE-160 (MED — sufficiency gate) > REVISE-165/166 (MED — Goodhart framing; git concurrency). Carries forward prior open keystones (REVISE-145 consensus-validity; REVISE-147 scheduler dead-man's-switch; REVISE-155/156/157/158 from 2026-06-29/30; REVISE-150/159 push-debt).
+Running maxima after this run: PREMISE-092, MONITOR-411, REVISE-166, DISPOSITION-385.
+
+  PROVENANCE: Origin: c2a2-lit-search-pipeline (scheduled); Chain: [14a/14b -> 15a, 15b -> 15c] (12 new); Transform: full pipeline run 2026-07-01; Current status: COHORT-DISPOSITIONED (12/12)
+
+---

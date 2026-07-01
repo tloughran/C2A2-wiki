@@ -241,5 +241,41 @@ PRS-25:
   Source: Everything Belongs Season 4 — Type 1: Architects of the Ideal, with Tessa Bielecki (Rohr o; PROP-2026-05-18-006
   Confidence: Speculative
 
+PRS-26:
+  Problem: How can election (chosenness of a few) be reconciled with universal/egalitarian belovedness without collapsing into elitism?
+  Resource: Rohr's reading of Romans 11 — chosenness irrevocable but not merit-based, given "for the sake of experiencing mercy," and only real when communicated outward
+  Solution: Election is a relational role-conferral whose telos is its own universalization; an agent is singled out ("chosen") precisely so it can mediate chosenness to all, so individuation serves loving unity rather than separating from it — the arc runs from chosen-few to chosen-all
+  Date Added: 2026-07-01
+  Source: Called and Sent (Daily Meditation, opening Week 26 'Everyone Is Chosen; PROP-2026-06-28-002
+  Confidence: Medium
+  Evidence: "begins with chosenness for a few, but it always moves toward egalitarian chosenness for everyone"; readiness "comes from experiencing and surrendering to the chosenness"
+
+PRS-27:
+  Problem: Why does the creature's perspective-limited inability to fully reciprocate divine love matter — is it a defect to be overcome?
+  Resource: Rohr's "we cannot love back the way we are loved… keeps us in the realm of desire — always yearning… humble and honest"
+  Solution: The asymmetry between finite and infinite love is generative, not a flaw: it sustains desire, humility, and ongoing transformation. Perspective-limitation is the very condition of continued growth toward union — directly echoing the Summa thesis that perspective-limitation individuates conscious agents
+  Date Added: 2026-07-01
+  Source: Called and Sent (Daily Meditation, opening Week 26 'Everyone Is Chosen; PROP-2026-06-28-002
+  Confidence: Medium
+  Evidence: The meditation's account of inability-to-fully-reciprocate as what "keeps us moving or growing"
+
+PRS-28:
+  Problem: Is hope a forecast about outcomes (and so defeated by bad odds), or something structurally different?
+  Resource: The week's convergent claim (Rohr/Bourgeault/Batiste) that hope is "participation in the very life of God," a "pulse of truth that sends us forth," independent of circumstances
+  Solution: Decouple hope from expected-outcome estimation; reframe it as a love-grounded orientation/stance that can thrive under adverse priors — "a quality of aliveness" prior to results rather than a feeling produced by them
+  Date Added: 2026-07-01
+  Source: Hope in Hard Times: Weekly Summary (Daily Meditation, Week 25); PROP-2026-06-28-003
+  Confidence: Medium
+  Evidence: Rohr's "nothing to do with circumstances… can thrive in the midst of adversity"; Bourgeault's hope at "the beginning, not the end"
+
+PRS-29:
+  Problem: When no path to a preferred outcome is visible, the default logic yields despair (policy collapse); how is agency sustained?
+  Resource: McLaren's "different logic" — courage from "commitment to love" rather than from "the likelihood of a good outcome"
+  Solution: Love functions as a high-value/high-precision prior that re-weights action selection so conduct is motivated by the commitment itself, not by predicted success — a contemplative answer to despair-as-policy-collapse
+  Date Added: 2026-07-01
+  Source: Hope in Hard Times: Weekly Summary (Daily Meditation, Week 25); PROP-2026-06-28-003
+  Confidence: Speculative
+  Evidence: McLaren's explicit path-logic of hope vs despair, and its override "when our prime motive is love"
+
 ---
-*Total PRS triplets: 25*
+*Total PRS triplets: 29*

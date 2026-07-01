@@ -36,7 +36,7 @@ import sqlite3
 import sys
 import urllib.parse
 
-from openstory_db import connect_ro, run_with_retry
+from openstory_db import connect_ro, run_with_retry, is_excluded
 
 HOME = os.path.expanduser("~")
 DEFAULT_DB = os.path.join(HOME, "Documents/Non-Claude Projects/OpenStory/data/open-story.db")
@@ -203,7 +203,13 @@ def main():
     cap_reason = collections.Counter()
     human_sessions = 0
     unattributed_continuations = 0
-    for sid, label in c.execute("SELECT id, label FROM sessions"):
+    for sid, label, project_name in c.execute(
+        "SELECT id, label, project_name FROM sessions"
+    ):
+        if is_excluded(label, project_name):
+            # Cross-project session (e.g. BOSCO) — isolate: no node attribution.
+            cap_reason["excluded"] += 1
+            continue
         tid, reason = resolve(label_fragment(label))
         cap_reason[reason] += 1
         if tid:

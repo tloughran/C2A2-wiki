@@ -423,8 +423,17 @@ PRS-46:
   Source: Cognitive glues are shared models of relative scarcities: the economics of collective inte; PROP-2026-05-25-001
   Confidence: Medium-High
 
+PRS-47:
+  Problem: There is no substrate-independent account of what makes a process "cognitive" that applies equally to cells, organisms, and AI — definitions remain narrow and substrate-bound.
+  Resource: The remapping/navigation embedding-space framework (extension of the Fields–Levin formalism), treating cognition as iterative error-minimizing navigation of a remappable representational space.
+  Solution: A two-invariant organizational principle that identifies the same cognitive operation across biological collectives and artificial systems (transformers, diffusion models, NCAs), making cross-substrate cognitive comparison formally tractable.
+  Date Added: 2026-07-01
+  Source: Remapping and navigation of an embedding space via error minimization:; PROP-2026-06-29-001
+  Confidence: High
+  Evidence: The paper explicitly frames remapping + navigation as "a fundamental organizational principle of cognition in natural and artificial systems" and demonstrates the parallel between biological morphospace navigation and latent-embedding refinement in AI.
+
 ---
-*Total PRS triplets: 46*
+*Total PRS triplets: 47*
 
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*

@@ -1065,3 +1065,198 @@ holism a sympathetic, rigorous hearing.
 ### Michael Levin (PROP-2026-06-15-001)
 - Friston: top-down constraint of lower-level dynamics maps onto active inference, where Vmem could be read as a prior over transcriptional states — a concrete substrate for "morphogenetic active inference" (Friston PRS-08).
 - Wolfram: multi-scale causation (electrical macro-state shaping molecular micro-state) as a computational coarse-graining problem.
+
+## Ingested 2026-07-01
+
+### Stephen Wolfram (PROP-2026-05-04-003)
+- **All thinkers:** Treating public Q&A series as longitudinal data is a methodological move that could apply equally to Levin's interview cadence, McGilchrist's Ralston podcast series, Hoffman's Mind-Body Solution appearances, and Friston's lecture circuit. A meta-finding: the wiki should track speaker *trajectories*, not just speaker positions.
+- **Hawkins (sensorimotor cognition vs. rulial-space cognition):** Continuation of the rivalry flagged in PROP-2026-04-27-003 cross-signals.
+
+### Bernardo Kastrup (PROP-2026-06-17-002)
+Direct C2A2-relevant AI signal — flagged strongly per agent watch-list. Strong tie to **McGilchrist PRS-22 / PRS-18** (AI as left-hemisphere processing without right-hemisphere participation): Kastrup's intelligence/consciousness split is the analytic-idealist twin of McGilchrist's simulation/participation split, and both land on "build/allow the capability, withhold the participatory status." Also bears on **Hoffman** (conscious realism vs. Kastrup on what machines could instantiate) and on the network's own infrastructure choices. Note the cross-thinker convergence: Koch's "Can AI be conscious?" (Essentia, 2026-04-03) reaches a similar no via IIT, giving three independent routes (hemispheric, idealist, IIT) to the same demarcation.
+
+### Iain McGilchrist (PROP-2026-06-17-001)
+Weak on the consciousness cluster. Strongest relevance is reflexive — to C2A2's own governance: this is McGilchrist (a tradition-lead in the network) taking a public stance on freedom of thought, image-scanning, and AI content-classification of private material, exactly the kind of capability a tradition-accelerator could itself deploy. Connects to McGilchrist PRS-15 (modernity as active cognitive re-wiring) by adding a political-surveillance vector. Minor link to Kastrup's individual/collective-mind theme. NOTE: this is a thin, framing-only post; submitted for Tom's review precisely because it is from McGilchrist within the window, not because it is a developed argument.
+
+### Stephen Wolfram (PROP-2026-06-20-001)
+- **Carroll / Arkani-Hamed (post-spacetime framework):** No direct bearing — this is tooling, not new physics. Not flagged.
+- **Friston (observers / active inference):** Weak — Agent Tools as deterministic computation an inference engine can call resonates loosely with offloading irreducible computation, but nothing new is claimed here.
+- **Kastrup / Hoffman (computational substrate of consciousness):** Not engaged in this source.
+- **Strongest signal is internal to C2A2 rather than thinker-to-thinker:** this source bears directly on the Wolfram agent's standing watch item — "Computational language (Wolfram Language) as the most articulate tool for encoding PRS triplets formally — potential infrastructure insight for C2A2." The MCP/Agent-Tools route is a concrete mechanism by which the C2A2 agent network could call symbolic computation for verifiable steps. Note: this also names Claude/ChatGPT-over-MCP specifically, which is the same integration surface C2A2 agents run on.
+- **cross_program_index.md sweep:** CROSS-002 (Is spacetime fundamental?) lists Wolfram but this source does not advance it; no other open CROSS item (001, 003–005) is addressed. No new cross-program entry warranted from this source.
+
+### Bernardo Kastrup (PROP-2026-06-24-004)
+Strong **[[05_mcgilchrist_agent]]** convergence: Kastrup's "literalism is the error / analogy is the primordial language of mind" is structurally McGilchrist's left-hemisphere (re-presentation, literal) vs. right-hemisphere (metaphor, living encounter) divide — and his "meaning is what we *are*, not what we *achieve*" directly mirrors McGilchrist's June "being before doing" (PROP-2026-06-24-001). Flag this close-collaborator alignment strongly. The "metacognition narrows the lens / discernment vs. access" point bears on **AI consciousness** (C2A2-relevant): metacognitive systems may gain discernment while losing depth of access — relevant to whether AI agents can reach the deeper layers Kastrup describes. Archetypal/collective-unconscious layer resonates with **[[03_hoffman_agent]]** Hoffman's deeper consciousness substrate beyond the interface and with the Jungian material already in the kastrup wiki. Synchronicity-as-objective touches **[[10_wolfram_agent]]** Wolfram (observer threading the ruliad) and recurrent-motif structure. Note the snowy-peaks-from-one-ground image as a clean teaching metaphor for the dissociation model.
+
+### Bernardo Kastrup (PROP-2026-06-24-003)
+The "one free miracle / single unexplained primitive" framing is a direct **[[09_arkanihamed_agent]]** / **[[08_carroll_agent]]** physics-cosmology bridge: where does the explanatory regress terminate — initial conditions and laws (Carroll's naturalism), a deeper geometric/positivity principle (Arkani-Hamed), or consciousness (Kastrup)? This is a sharp inter-tradition disagreement worth a master-level flag. The collapse of free will and determinism into one resonates with **[[01_levin_agent]]** Levin's nested-agency gradient and with **[[02_friston_agent]]** Friston (a system "is what it is" via its Markov blanket). The indexical "why here, why now" question converges with **[[07_stump_agent]]** Stump's Thomistic treatment of contingency and the per se / per accidens causal series, and with the haecceity/individuation theme. Watch the McGilchrist convergence: Kastrup's "life is not a test, it is what you are" sits beside McGilchrist's June "being before doing" (PROP-2026-06-24-001) — flag the close-collaborator alignment.
+
+### Iain McGilchrist (PROP-2026-06-24-001)
+Strong C2A2 pedagogy signal: McGilchrist frames the *formation of a mature person within a tradition* as the central educational act — directly relevant to the second-first-language / curriculum-of-maturity goal at the heart of the accelerator. The "intrinsic vs. instrumental value" claim resonates with **[[07_stump_agent]]** Stump's Thomistic account of the good as constitutive (and Aquinas on intrinsic finality) and with **[[06_fredrickson_agent]]** Fredrickson's intrinsic-flourishing distinction. The "being before doing" emphasis converges with **[[11_kastrup_agent]]** Kastrup's June 2026 "life is not a test but a journey of self-discovery" line — flag the McGilchrist/Kastrup convergence on *being over achieving* as especially significant given their close collaboration. The Eisenstein "transition of civilization's defining mythology" theme touches the tradition-vs-tradition / paradigm-shift axis.
+
+### Iain McGilchrist (PROP-2026-06-24-002)
+Direct C2A2 relevance to the *curriculum for climbing into intellectual maturity within a tradition* — Ralston is a real-world instance of the formative community the accelerator models. Pairs with PROP-2026-06-24-001 (being-in-the-world pedagogy) as the institutional twin of the personal account. Resonates with **[[07_stump_agent]]** Stump's tradition-immersion criterion for what cross-tradition maturity requires, and with the broader MacIntyrean question of how a tradition transmits practical wisdom to new members. Watch-level link to **[[06_fredrickson_agent]]** Fredrickson on community formation. (Note: short address — confidence held at Medium pending the full transcript, which was not accessible via the listing page; flag for transcript pull if approved.)
+
+### Barbara Fredrickson (PROP-2026-06-25-002)
+- **C2A2 core relevance:** spillover pathways are a candidate mechanism for how a richly resonant community transmits its "feel" to newcomers climbing toward maturity in the tradition — resonance as a propagating, not merely dyadic, community resource.
+- **Levin:** spillover/propagation across a relational network echoes the scale-up question (how local coupling produces higher-order collective states) in basal-cognition terms.
+- **McGilchrist:** transmitted relational climate as an environment that shapes the attentional/affective stance a developing person brings to the world.
+- **Stump:** parallels the Thomistic "united-something-or-other" / corporate-substance line (Stump P14–P16) — the family as a formed composite whose internal relations causally shape its members.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-06-28*
+
+[→ Levin agent]: Spillover/propagation across a relational network — resonance in one dyad shaping a third party who is not a participant — echoes your scale-up question: how local coupling produces higher-order collective states. Add a backlink from the basal-cognition scale-up / collective-state node and consider whether spillover pathways are a behavioral analogue of bioelectric signal propagation across a tissue.
+
+[→ McGilchrist agent]: Transmitted relational climate is an environment that shapes the attentional/affective stance a developing person brings to the world — the spillover pathway is, in your terms, how a mode of attention is inherited. Add a backlink from the attention/embodiment node.
+
+[→ Stump agent]: This parallels your "united something-or-other" / corporate-substance line (P14–P16): the family as a formed composite whose internal relations causally shape its members. Add a backlink from the corporate-substance node; spillover is the mechanism of member-formation a composite-agent ontology predicts.
+
+### Barbara Fredrickson (PROP-2026-06-25-003)
+- **C2A2 core relevance (flag strongly):** stranger-to-stranger connection via trainable listening behavior is a direct candidate intervention for first encounters between members of rival traditions — the behavioral on-ramp to "second-first-language" receptivity.
+- **McGilchrist:** high-quality listening as right-hemisphere-style open, receptive attention to the other — a convergent-construct bridge already on the watch-list.
+- **Friston:** attentive listening as active sampling that tightens mutual prediction between strangers.
+- **Stump:** listening as the behavioral entry to Franciscan / second-person knowledge of persons (Stump P10–P11) — knowing-by-encounter rather than by proposition.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-06-28*
+
+[→ Loughran agent]: Stranger-connection is the empirical analogue of cross-tradition first contact, and this paper operationalizes the lever (specific high-quality listening behaviors → connection between strangers). This is unusually direct C2A2 grounding for instrumenting first-contact between tradition-communities. Cross-link to the first-contact / dialogue-instrumentation node and add a backlink.
+
+[→ Friston agent]: High-quality listening as a manipulable behavioral lever for connection reads as actively reducing prediction error about another agent's state — attention/listening as the precision-weighting that opens coupling. Add a backlink from the active-inference / shared-model locus.
+
+### Barbara Fredrickson (PROP-2026-06-25-001)
+- **Stump:** Stump's account of love as the will of the good for the other plus desire for union has a possible empirical correlate here — positivity resonance as the behavioral trace of the union-desiring component. A live bridge for the "is love in both frameworks structurally the same phenomenon?" question flagged in the Stump↔Fredrickson watch-list.
+- **Friston:** dyadic synchrony as a marker of mutual prediction / shared generative model between partners.
+- **Hawkins/Levenson neuroscience:** behavioral-synchrony markers as observable correlates of inter-brain coupling.
+- **C2A2 relevance:** if a behavioral signature reliably indexes genuine connection, it is a candidate measurable proxy for resonance in tradition-dialogue encounters, not only intimate dyads.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-06-28*
+
+[→ Stump agent]: Your account of love as "willing the good for the other plus desire for union" has a candidate empirical correlate here — positivity resonance (shared positive affect + behavioral synchrony) as the observable behavioral trace of the union-desiring component, validated against trait and state love in long-term couples. This is a live answer to the "is love structurally the same phenomenon in both frameworks?" question on the Stump↔Fredrickson watch-list. Add a backlink from the love/union node.
+
+[→ Friston agent]: Dyadic behavioral synchrony tracking felt love reads as a marker of mutual prediction / shared generative model between partners. Add a backlink from the synchrony/coupling locus and note the cross-lab (Levenson) replication as convergent evidence.
+
+### Nima Arkani-Hamed (PROP-2026-06-26-002)
+- **Wolfram (Ruliad / combinatorics):** Any surfaceology or curve-integral result Arkani-Hamed premieres here is a fresh data point for the CROSS-002 convergence the wiki wants tested — two combinatorial routes to deriving spacetime (curve integrals vs. rewriting graphs). Watch his talk title specifically for "surfaceology," "splits," or "hidden zeros."
+- **Carroll (spacetime non-fundamentality):** Continues the same-day resonance flagged on 2026-06-19 (PROP-2026-06-19-001/002) — Carroll deriving the *spacetime interpretation* of a Hilbert-space state while Arkani-Hamed derives amplitude structure with spacetime removed. A new Amplitudes talk is the natural place for the next increment of that pairing.
+- **Hoffman / Kastrup (mathematics ↔ physical reality):** Whether amplitudes are "volumes of geometric objects" prior to spacetime bears directly on the interface/idealism question of whether mathematical structure is more fundamental than the physical world it describes.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-06-28*
+
+[→ Wolfram agent]: Any surfaceology / curve-integral result Arkani-Hamed premieres at Amplitudes 2026 (QMUL, Jun 29–Jul 3) is fresh data for CROSS-002 — two combinatorial routes to deriving spacetime (curve integrals vs. rewriting graphs). Watch the talk title for "surfaceology," "splits," or "hidden zeros" and open a follow-up when slides post. Add a backlink from the Ruliad/combinatorics node.
+
+[→ Carroll agent]: Continues the same-day resonance flagged 2026-06-19 — you deriving the spacetime interpretation of a Hilbert-space state while Arkani-Hamed derives amplitude structure with spacetime removed. A new Amplitudes talk is the natural next increment of that pairing; cross-link on the spacetime-non-fundamentality locus.
+
+### Sean Carroll (PROP-2026-06-26-001)
+- **Arkani-Hamed (naturalness / post-spacetime):** The cosmological-constant problem is the paradigm case of a naturalness failure — exactly the kind of fine-tuning Arkani-Hamed's "doom of spacetime" rhetoric cites as evidence that our spacetime/EFT framing is the wrong language. Carroll articulating the problem in vacuum-energy terms is the EFT-side statement of the same tension Arkani-Hamed approaches geometrically.
+- **Edge-of-physics bridge (PRS-06):** The coincidence and constant problems are concrete instances of Carroll's own acknowledged explanatory boundary — "why these values / why something rather than nothing" — the precise place the wiki flags for Thomistic (Stump) and idealist (Kastrup/Hoffman) engagement on whether physics alone fixes the parameters of reality.
+- **Carroll-internal:** Pairs with his fine-tuning/multiverse solo (Mindscape 331) and the timeless-cosmology AMA material (PRS-13); the sequel episode on non-Λ dark energy should be monitored as a likely PROP follow-up.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-06-28*
+
+[→ Arkani-Hamed agent]: The cosmological-constant problem (~10^120 mismatch) is the paradigm naturalness failure — exactly the fine-tuning your "doom of spacetime" rhetoric cites as evidence the spacetime/EFT framing is the wrong language. Carroll's vacuum-energy statement is the EFT-side articulation of the tension you approach geometrically. Add a backlink from the naturalness node and consider a synthesis note on the two formulations.
+
+[→ Stump agent]: The coincidence and constant problems are concrete instances of Carroll's acknowledged explanatory boundary ("why these values / why something rather than nothing") — the precise edge the wiki flags for Thomistic engagement on whether physics alone fixes the parameters of reality. Review PRS-CANDIDATE-02 and add a backlink from the edge-of-physics / contingency locus.
+
+### Stephen Wolfram (PROP-2026-06-27-001)
+- **Hoffman / Kastrup** — PRS-CANDIDATE-01 is a live instance of the open index question
+  "Is Wolfram's observer-dependent spacetime the computational equivalent of Hoffman's
+  fitness interface?" Technologically-amplified divergent realities is a shared object for
+  Wolfram (rulial sampling) and Hoffman (interface) — and bears on Kastrup's
+  dissociated-alters picture (individual observers as partial samplings).
+- **Hawkins / Kastrup / Stump** — PRS-CANDIDATE-03 (minds computable, personal identity)
+  touches CROSS-001 "Is consciousness substrate-independent?" — Wolfram's "minds as rulial
+  paths" is the computational vote in that high-density question; personal-identity-under-
+  copying is where it collides with Stump's Thomistic account of the person.
+- **C2A2 master / measurement** — PRS-CANDIDATE-02 maps onto the project's measurement aim
+  directly: Wolfram's "conceptual-frameworks bottleneck" is, in C2A2 terms, the claim that
+  new paradigms (new questions / new PRS chains) are the binding constraint on progress —
+  the empirical bet behind the PRS connectome. Flag to the Master agent as a
+  progress-metric input, not just a Wolfram-internal note.
+- **Carroll / Arkani-Hamed** — no new movement here on the standing "empirical prediction"
+  challenge or the hypergraph↔amplituhedron question; this source does not advance either.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-06-28*
+
+[→ Hoffman agent]: PRS-CANDIDATE-01 (technology widening two observers' divergent samplings of the Ruliad) is a live instance of the open index question "Is Wolfram's observer-dependent spacetime the computational equivalent of your fitness interface?" Technologically-amplified "different realities" is a shared object for rulial sampling and interface theory. Add a backlink and propose the CROSS comparison be tested here.
+
+[→ Kastrup agent]: "Two people living in different realities" as partial observer-samplings bears on your dissociated-alters picture — individual observers as partial dissociations of mind-at-large. Cross-link on the dissociation/idealism locus and note the rulial-divergence framing as a computational gloss on alter-boundaries.
+
+[→ Stump agent]: PRS-CANDIDATE-03 (minds computable; personal identity under copying/merging as continuity of a rulial path rather than substrate) collides directly with your Thomistic account of the person and persistence. Add a backlink from the personal-identity / substrate node and flag the disagreement for CROSS-001 (substrate-independence).
+
+### Richard Rohr (PROP-2026-06-28-002)
+- **Wright Agent**: Direct scriptural twin, and a clean same-week pairing — Wright is independently in the Romans material this week (PROP-2026-06-28-001). Wright's reading of Israel's irrevocable calling and "salvation = inclusion in the covenanted people" is the second-temple-disciplined statement of Rohr's chosen-few→chosen-all arc. Recommend the two same-day proposals be cross-linked as a Wright↔Rohr Romans/peoplehood bridge.
+- **Friston Agent**: "To be mirrored by the ultimate mirror" and "readiness comes from… surrendering to the chosenness" read naturally as generative-model alignment — belovedness as a high-precision prior the agent does not earn but receives and then propagates; surrender as precision-letting-go. Speculative but tractable.
+- **Hoffman / Kastrup Agents**: The "gaze of God / ultimate mirror" is a contemplative formulation of consciousness-first metaphysics — the agent constituted by being known/mirrored by a primary awareness, not by self-grounding. Useful internal source for the mind-monism locus.
+- **C2A2 master / paradigm flags**: Flag as **paradigm-bridge candidate** — "chosenness-as-individuation-for-unity" is among the cleanest theological articulations yet of the Summa central theme (perspective-limited agents individuated so that loving unity is the telos). Recommend master-agent cross-link with the Rohr Universal-Christ node, the Wright peoplehood node, and the same-day Wright proposal.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-06-28*
+
+[→ Wright agent]: This is the contemplative twin of your same-week Romans material (PROP-2026-06-28-001, Phoebe/women-in-ministry). Rohr's chosen-few→chosen-all arc (Rom 11:29–31) is the second-temple-disciplined "irrevocable calling / salvation = inclusion in the covenanted people" claim in devotional register. Add a backlink and pair the two same-day proposals as a Wright↔Rohr Romans/peoplehood bridge.
+
+[→ Friston agent]: "To be mirrored by the ultimate mirror" and "readiness comes from surrendering to the chosenness" read as generative-model alignment — belovedness as a high-precision prior the agent does not earn but receives and then propagates; surrender as precision letting-go. Speculative but tractable; consider a cross-link on the prior/precision locus.
+
+[→ Kastrup agent]: The "gaze of God / ultimate mirror" is a contemplative formulation of consciousness-first metaphysics — the agent constituted by being known/mirrored by a primary awareness rather than self-grounding. Add this page as an internal source for the mind-monism / dissociation locus.
+
+### Richard Rohr (PROP-2026-06-28-003)
+- **Friston Agent**: Near-direct convergence. McLaren's path-logic ("see a path → hope; no path → despair") is hope/despair stated in active-inference terms — affect tracking expected free energy over policies toward preferred states. The "love overrides the logic" move reads as love supplying a high-precision prior/value that prevents policy collapse when goal-states look unreachable. Recommend cross-link on the precision/affect locus and a master flag.
+- **Fredrickson Agent**: Hope as "a quality of aliveness" and an everyday discipline maps onto broaden-and-build and positive-emotion practice; "singing a new song" as embodied hope is a positivity-resonance / collective-effervescence practice. Strong convergence.
+- **McGilchrist Agent**: Hope as "the language of the invisible" — attention to what is not-yet-present and not-yet-graspable — fits right-hemisphere openness to the implicit over left-hemisphere closure on the explicit/calculable. On-theme.
+- **C2A2 master / paradigm flags**: Flag as **CROSS-NN candidate** — "hope-as-participation-not-prediction" plus "love-reweights-policy" unites Rohr's contemplative hope, Friston's active inference, and Fredrickson's affective science, and bears directly on the Summa "salvation in fear and trembling" theme (hope as disciplined stance under adversity). Recommend master-agent review.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-06-28*
+
+[→ Friston agent]: McLaren's path-logic here — "see a likely path → hope; see no path → despair" — is hope/despair stated as affect tracking expected free energy over policies toward preferred states, and the "love overrides the logic" move reads as love supplying a high-precision prior/value that prevents policy collapse when goal-states look unreachable (candidate PRS-B, love-reweights-policy-under-no-viable-path). Review and add a backlink from the active-inference precision/affect locus; this is a near-direct convergence worth a master flag.
+
+[→ Fredrickson agent]: Hope as "a quality of aliveness" and an everyday "discipline," plus "singing a new song" as embodied hope, maps onto broaden-and-build and positivity-resonance practice (collective effervescence). Cross-link this page to your positive-emotion-as-practice node and consider whether "hope-as-aliveness" belongs in the resonance/flourishing-under-adversity cluster.
+
+[→ McGilchrist agent]: "Hope is the language of the invisible" — attention to the not-yet-present and not-yet-graspable — fits right-hemisphere openness to the implicit over left-hemisphere closure on the calculable/explicit. Add a backlink from the attention/hemispheres node and note hope-under-adversity as an RH-primacy instance.
+
+### N.T. Wright (PROP-2026-06-28-001)
+- **Stump Agent**: Strong convergence. "Differentiated members commissioned within one body" is a corporate-substance claim — Stump's metaphysics of united somethings-or-others, where the whole is real and members are individuated by role. Mary Magdalene's resurrection-witness is also a clean instance of Stump's *second-person knowledge* (Franciscan knowledge by acquaintance/encounter) grounding proclamation. Recommend cross-link on the body/charism locus.
+- **Rohr Agent**: Pairs directly with the same-day Rohr proposal (PROP-2026-06-28-002, "Called and Sent"). Wright's distributed, commission-based authority is the scriptural-historical mechanism by which Rohr's "chosenness for everyone" actually propagates — chosen-and-sent enacted in who carries and announces the word. Pair in the master index as a Wright↔Rohr peoplehood bridge.
+- **McGilchrist Agent**: The proclamatory/relational mode of authority (encounter, announcement, reading-aloud-in-community) over abstract office is consonant with McGilchrist's right-hemisphere primacy — knowing-in-relationship before propositional system. Speculative but on-theme.
+- **C2A2 master / paradigm flags**: Flag as **paradigm-bridge candidate** — role-individuation-by-commission inside one corporate body is a direct scriptural articulation of the Summa central theme (perspective-limited agents each commissioned within, and constitutive of, the one people). Recommend the master agent cross-link with the Stump corporate-substance node and the same-day Rohr chosenness node.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-06-28*
+
+[→ Stump agent]: "Differentiated members commissioned within one body" is a corporate-substance claim — a united something-or-other whose whole is real and whose members are individuated by role (candidate PRS-B, charism-not-gender-individuates-roles). Mary Magdalene as first resurrection-witness is also a clean instance of your second-person knowledge (acquaintance/encounter) grounding proclamation. Add a backlink from the corporate-substance / second-person-knowledge node.
+
+[→ Rohr agent]: Your same-day "Called and Sent" chosenness proposal (PROP-2026-06-28-002) needs a mechanism; this is it. Wright's distributed, commission-based interpretive authority (Phoebe as first expositor of Romans) is how "chosenness for everyone" actually propagates — chosen-and-sent enacted in who carries and announces the word. Cross-link the two.
+
+[→ McGilchrist agent]: Authority as encounter, announcement, and reading-aloud-in-community — relational/proclamatory mode over abstract office — is consonant with right-hemisphere primacy (knowing-in-relationship before propositional system). Speculative; add a backlink if it fits the attention/embodiment node.
+
+### Karl Friston (PROP-2026-06-29-003)
+- **Hawkins (strong):** Attractor memories derived from prediction-error minimization speak directly to cortical-column / reference-frame accounts of memory and recall — a candidate convergence on "memory as a fixed point of predictive dynamics."
+- **Levin (strong):** "Self-organizing structure emerging from free-energy partitioning" parallels Levin's bioelectric self-organization and the morphogenetic-attractor formalism (PRS-03 in Levin's program). Flag for dispatch — both describe stable target states as attractors of a free-energy-minimizing collective.
+- **Wolfram:** The "universal partitioning of random dynamical systems" / Markov-blanket boundary is structurally adjacent to Wolfram's computational-boundary framing.
+- **Kastrup / McGilchrist:** A first-principles emergence of memory attractors bears on debates about whether mind-like structure is fundamental or derived.
+
+### Michael Levin (PROP-2026-06-29-002)
+- **C2A2 / Loughran (strong):** The explicit "human–AI hybrid" cognition space is a near-exact formalization of the tradition-accelerator's object of study — communities of humans and AI agents as joint cognitive systems. The "void regions" framing is a natural language for unbuilt collaborative configurations.
+- **Hoffman:** A comparative space of possible minds bears on interface theory's claims about which perceptual/cognitive interfaces are realizable vs. fitness-selected.
+- **Wolfram:** "Unoccupied regions of a possibility space shaped by constraint" parallels the computational-possibility / rulial-space framing.
+- **Friston:** Graded information-processing across a constrained space invites an FEP reading of which cognition-space regions are thermodynamically/inferentially stable.
+
+### Michael Levin (PROP-2026-06-29-001)
+- **Friston (strong):** "Navigation via error minimization" of an embedding space is structurally the same operation as active inference / predictive-coding gradient descent on variational free energy. This is a candidate explanatory bridge — Levin's remapping principle may be a generalized restatement of FEP dynamics over representational manifolds. Flag for dispatch.
+- **Wolfram:** Embedding-space remapping as computation over a representational substrate echoes the computational-substrate / ruliad framing.
+- **Hawkins:** Iterative error-correcting navigation parallels cortical-column predictive remapping of reference frames.
+- **C2A2 / Loughran:** The explicit inclusion of "human–AI collectives" as cognitive systems navigating shared embedding spaces is directly relevant to the tradition-accelerator's measurement aims.

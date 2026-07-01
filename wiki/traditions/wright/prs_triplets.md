@@ -286,5 +286,23 @@ PRS-30:
   Source: Ask NT Wright Anything — Faithfulness in a Confused Age (MAGA, Christian nationalism, chro; PROP-2026-05-18-001
   Confidence: High
 
+PRS-31:
+  Problem: Within the people of God, what confers authority to carry, read, and publicly expound the foundational texts — formal hierarchy, gender, or something else?
+  Resource: Wright's historical reconstruction of Phoebe as the bearer of Romans and, by high probability, its first public expositor in Rome
+  Solution: Interpretive authority in the earliest church was distributed by function and commission, not by office or gender; the bearer-expositor role is constitutive of the people-of-God as a real interpretive community, not an honorary add-on
+  Date Added: 2026-07-01
+  Source: Capital Conversations — N.T. Wright on Women in Ministry, Faith, and S; PROP-2026-06-28-001
+  Confidence: Medium
+  Evidence: Wright's claim that Paul gave Romans to "a businesswoman from east of Corinth" who most likely read and explained it aloud to the Roman church
+
+PRS-32:
+  Problem: What individuates ministerial roles among the differentiated members of one body?
+  Resource: Mary Magdalene as first commissioned resurrection-witness + Phoebe as letter-bearer/expositor; the contextual (non-universal) reading of 1 Timothy 2
+  Solution: Roles are individuated by call, gift, and commission rather than by gender; this is what a corporate-substance ecclesiology predicts — members differentiated by function within one composite agent, not ranked by category
+  Date Added: 2026-07-01
+  Source: Capital Conversations — N.T. Wright on Women in Ministry, Faith, and S; PROP-2026-06-28-001
+  Confidence: Medium
+  Evidence: Wright's pairing of the two foundational commissions (delivery/exposition of Romans; proclamation of resurrection) entrusted to women, against the restrictive-text objection
+
 ---
-*Total PRS triplets: 30*
+*Total PRS triplets: 32*
