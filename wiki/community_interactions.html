@@ -225,9 +225,12 @@
     margin-left: 8px;
     vertical-align: middle;
   }
-  .pw-status.drafted { color: #6ea88a; border-color: #2c4538; }
-  .pw-status.pinned  { color: #c4923a; border-color: #4a3a1a; }
-  .pw-status.deferred{ color: #7a7a8a; }
+  .pw-status.drafted  { color: #6ea88a; border-color: #2c4538; background: #101b16; }
+  .pw-status.outlined { color: #7f9fd0; border-color: #2a3a55; background: #0f1420; }
+  .pw-status.pinned   { color: #c4923a; border-color: #4a3a1a; background: #1b1408; }
+  .pw-status.deferred { color: #8a8a9a; border-color: #2a2a3a; background: #131320; }
+  .pw-status.isme     { color: #C9A84C; border-color: #4a3f1f; background: #1a1608; }
+  .pw-status.extra    { color: #9a86c0; border-color: #332a48; background: #150f20; }
   .pw-desc { font-size: 13px; color: #8a8a9a; margin-top: 3px; }
   .dev-fallback { font-size: 13.5px; color: #9a9aaa; padding: 8px 0; }
   .dev-fallback code { color: #C9A84C; background: #16161f; padding: 1px 6px; border-radius: 3px; font-size: 12px; }
@@ -297,7 +300,10 @@
   #reader-body a { color:#aab8d8; }
   #reader-body hr { border:none; border-top:1px solid #20202c; margin:16px 0; }
   #reader-body strong { color:#e0e0ea; }
-  #reader-meta { font-size:11px; color:#5a5a70; margin-bottom:14px; padding-bottom:10px; border-bottom:1px solid #1c1c28; word-break: break-all; }
+  #reader-meta { display:flex; flex-wrap:wrap; align-items:center; gap:7px; margin-bottom:16px; padding-bottom:12px; border-bottom:1px solid #1c1c28; }
+  #reader-meta .pw-status { margin-left:0; }
+  #reader-meta .reader-src { flex-basis:100%; font-size:10.5px; color:#4a4a60; font-family: ui-monospace, "SF Mono", monospace; }
+  #reader-meta .reader-loading { font-size:11px; color:#5a5a70; }
   #reader-fallback { color:#9a9aaa; font-size:13.5px; }
   #reader-fallback a { color:#C9A84C; }
 
@@ -519,13 +525,13 @@
         var star = sb.isme ? ' <span class="star" title="ISME demo critical path">&#9733;</span>' : '';
         var pill = '';
         if (sb.lifecycle) { pill += '<span class="pw-status ' + sb.lifecycle + '">' + sb.lifecycle + '</span>'; }
-        sb.extras.forEach(function (e) { pill += '<span class="pw-status">' + esc(e) + '</span>'; });
+        sb.extras.forEach(function (e) { pill += '<span class="pw-status extra">' + esc(e) + '</span>'; });
         var desc = it.desc ? '<div class="pw-desc">' + esc(it.desc) + '</div>' : '';
         var hr = resolveHref(it);
         var titleHtml;
         if (hr) {
           var idx = gi++;
-          ORDER.push({ id: it.id, title: it.title, href: hr });
+          ORDER.push({ id: it.id, title: it.title, href: hr, lifecycle: sb.lifecycle, isme: sb.isme, extras: sb.extras });
           // href kept so cmd/ctrl/middle-click still opens the raw file; plain click opens the reader
           titleHtml = '<a class="pw-link" data-idx="' + idx + '" href="' + esc(hr) + '" rel="noopener">' +
                       esc(it.title) + ' <span class="ext">&#8599;</span></a>';
@@ -587,31 +593,44 @@
   }
   function mdToHtml(md) {
     md = stripFront(md);
-    var lines = md.split('\n'), out = '', inCode = false, codeBuf = [], listType = null;
+    var lines = md.split('\n'), out = '', inCode = false, codeBuf = [], listType = null, paraBuf = [];
     function closeList() { if (listType) { out += '</' + listType + '>'; listType = null; } }
+    // Consecutive plain-text lines are one paragraph: join them so hard-wrapped
+    // source no longer renders as a stack of choppy single-line paragraphs.
+    function flushPara() { if (paraBuf.length) { out += '<p>' + inlineMd(esc(paraBuf.join(' '))) + '</p>'; paraBuf = []; } }
     for (var i = 0; i < lines.length; i++) {
       var ln = lines[i];
       if (/^```/.test(ln)) {
-        if (!inCode) { closeList(); inCode = true; codeBuf = []; }
+        if (!inCode) { flushPara(); closeList(); inCode = true; codeBuf = []; }
         else { inCode = false; out += '<pre><code>' + esc(codeBuf.join('\n')) + '</code></pre>'; }
         continue;
       }
       if (inCode) { codeBuf.push(ln); continue; }
-      if (/^\s*$/.test(ln)) { closeList(); continue; }
+      if (/^\s*$/.test(ln)) { flushPara(); closeList(); continue; }
       var h = ln.match(/^(#{1,4})\s+(.*)$/);
-      if (h) { closeList(); var lv = h[1].length; out += '<h' + lv + '>' + inlineMd(esc(h[2])) + '</h' + lv + '>'; continue; }
-      if (/^(-{3,}|\*{3,}|_{3,})\s*$/.test(ln)) { closeList(); out += '<hr>'; continue; }
+      if (h) { flushPara(); closeList(); var lv = h[1].length; out += '<h' + lv + '>' + inlineMd(esc(h[2])) + '</h' + lv + '>'; continue; }
+      if (/^(-{3,}|\*{3,}|_{3,})\s*$/.test(ln)) { flushPara(); closeList(); out += '<hr>'; continue; }
       var ul = ln.match(/^\s*[-*+]\s+(.*)$/);
       var ol = ln.match(/^\s*\d+\.\s+(.*)$/);
-      if (ul) { if (listType !== 'ul') { closeList(); out += '<ul>'; listType = 'ul'; } out += '<li>' + inlineMd(esc(ul[1])) + '</li>'; continue; }
-      if (ol) { if (listType !== 'ol') { closeList(); out += '<ol>'; listType = 'ol'; } out += '<li>' + inlineMd(esc(ol[1])) + '</li>'; continue; }
+      if (ul) { flushPara(); if (listType !== 'ul') { closeList(); out += '<ul>'; listType = 'ul'; } out += '<li>' + inlineMd(esc(ul[1])) + '</li>'; continue; }
+      if (ol) { flushPara(); if (listType !== 'ol') { closeList(); out += '<ol>'; listType = 'ol'; } out += '<li>' + inlineMd(esc(ol[1])) + '</li>'; continue; }
       var bq = ln.match(/^>\s?(.*)$/);
-      if (bq) { closeList(); out += '<blockquote>' + inlineMd(esc(bq[1])) + '</blockquote>'; continue; }
-      closeList(); out += '<p>' + inlineMd(esc(ln)) + '</p>';
+      if (bq) { flushPara(); closeList(); out += '<blockquote>' + inlineMd(esc(bq[1])) + '</blockquote>'; continue; }
+      closeList(); paraBuf.push(ln);
     }
     if (inCode) { out += '<pre><code>' + esc(codeBuf.join('\n')) + '</code></pre>'; }
-    closeList();
+    flushPara(); closeList();
     return out;
+  }
+
+  function metaHtml(it, tail) {
+    var b = '';
+    if (it.lifecycle) { b += '<span class="pw-status ' + it.lifecycle + '">' + it.lifecycle + '</span>'; }
+    if (it.isme) { b += '<span class="pw-status isme">&#9733; ISME critical</span>'; }
+    (it.extras || []).forEach(function (e) { b += '<span class="pw-status extra">' + esc(e) + '</span>'; });
+    b += '<span class="reader-src">' + esc(it.href) + '</span>';
+    if (tail) { b += '<span class="reader-loading">' + tail + '</span>'; }
+    return '<div id="reader-meta">' + b + '</div>';
   }
 
   function updateNav() {
@@ -623,7 +642,7 @@
     curIdx = idx;
     var it = ORDER[idx];
     rTitle.textContent = 'Pathway ' + it.id + ' — ' + it.title;
-    rBody.innerHTML = '<div id="reader-meta">Loading…</div>';
+    rBody.innerHTML = metaHtml(it, 'Loading…');
     reader.classList.add('open');
     reader.setAttribute('aria-hidden', 'false');
     updateNav();
@@ -631,7 +650,7 @@
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
       .then(function (md) {
         if (curIdx !== idx) return; // a later Next/Prev superseded this load
-        rBody.innerHTML = '<div id="reader-meta">' + esc(it.href) + '</div>' + mdToHtml(md);
+        rBody.innerHTML = metaHtml(it) + mdToHtml(md);
         rBody.scrollTop = 0;
       })
       .catch(function () {
@@ -640,9 +659,17 @@
   }
   rPrev.addEventListener('click', function () { if (curIdx > 0) openReader(curIdx - 1); });
   rNext.addEventListener('click', function () { if (curIdx < ORDER.length - 1) openReader(curIdx + 1); });
-  rClose.addEventListener('click', function () {
+  function closeReader() {
     reader.classList.remove('open');
     reader.setAttribute('aria-hidden', 'true');
+  }
+  rClose.addEventListener('click', closeReader);
+  // Click anywhere outside the box (and not on a pathway link, which opens it) closes it.
+  document.addEventListener('click', function (e) {
+    if (!reader.classList.contains('open')) return;
+    if (e.target.closest('#reader')) return;
+    if (e.target.closest('a.pw-link')) return;
+    closeReader();
   });
   document.addEventListener('keydown', function (e) {
     if (!reader.classList.contains('open')) return;
