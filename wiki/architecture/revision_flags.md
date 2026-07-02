@@ -5313,3 +5313,43 @@ REVISE-166:
   Recommended action: Serialize git access (repo-level lock/queue around commits); set GIT_OPTIONAL_LOCKS=0 / --no-optional-locks for the heartbeat cron's read-only git; run git fsck for existing damage. Relates to REVISE-147 (scheduler dead-man's-switch).
   Urgency: Medium
   Why flagged: PRESUMPTION + strong documented challenge (incl. Claude Code issue tracker); plausibly the root of the recurring-lock family.
+
+REVISE-167:
+  Date: 2026-07-02 | Source: DISPOSITION-387 | Item: PRESUMPTION-432 (presumption) | Urgency: MED-HIGH
+  Claim flagged: "That the compute sandbox's ephemeral disk is unbounded/self-managing — no monitoring or scratch GC, so a full container disk silently halts any agent needing local writes."
+  15a/15b: NO-SUPPORT-FOUND(Weak) / CHALLENGED(Strong)
+  Net: Ephemeral disk is a bounded, exhaustible, poorly-visible resource (K8s disk-pressure eviction; poor default visibility) that must be explicitly monitored, quota'd, and GC'd. "Unbounded/self-managing" is exactly the belief that produced the silent halt.
+  What is at risk: Agents needing local writes halt/evict silently on scratch exhaustion; node-level exhaustion can affect co-located work; the halt is misattributed to downstream symptoms (P-433 / REVISE-168).
+  Recommended action: Add ephemeral-disk monitoring with a threshold alert; set scratch quotas; implement scratch GC/cleanup (within and between runs); fail loud with an explicit "disk full" error instead of halting silently. Bind the liveness/observability cluster (REVISE-147/157/158).
+  Urgency: Medium-High
+  Why flagged: PRESUMPTION + strong challenge + medium-high stakes; root cause of the 2026-07-01 incident; core member of the ABSENCE-AS-EVIDENCE / silent-infrastructure SYSTEMIC-RISK cluster.
+
+REVISE-168:
+  Date: 2026-07-02 | Source: DISPOSITION-388 | Item: PRESUMPTION-433 (presumption) | Urgency: MED
+  Claim flagged: "That the disk-full failure is isolated to the OpenStory feed, when one full compute disk produced two symptoms attributed to two separate problems."
+  15a/15b: NO-SUPPORT-FOUND(None) / CHALLENGED(Moderate-Strong)
+  Net: One exhausted resource characteristically produces multiple seemingly-independent symptoms (AWS correlated-failure library; microservice root-cause literature). Per-symptom attribution is a documented misdiagnosis pattern; the isolation reading is itself an absence-as-evidence move ("no traced common cause" => "isolated").
+  What is at risk: Fixing only the OpenStory symptom leaves the shared cause (full disk) live; the second symptom recurs and is re-triaged as another "separate" problem; root cause never retired.
+  Recommended action: On any multi-symptom day, check shared resources (disk/memory/session) FIRST; add a root-cause-aggregation step correlating co-occurring anomalies to common substrates before filing them independently. Binds REVISE-167 (the shared cause here was disk).
+  Urgency: Medium
+  Why flagged: PRESUMPTION + strong challenge; cheap diagnostic-discipline fix; member of the silent-infrastructure cluster.
+
+REVISE-169:
+  Date: 2026-07-02 | Source: DISPOSITION-389 | Item: PRESUMPTION-434 (presumption) | Urgency: MED-HIGH
+  Claim flagged: "That a 2nd-day logged-out claude.ai is transient/self-healing, not a single point of failure in the human-context loop with no fallback or escalation."
+  15a/15b: NO-SUPPORT-FOUND(Weak) / CHALLENGED(Strong)
+  Net: A recurring (2nd-day) logged-out state with no fallback or escalation is a textbook single point of failure, not self-healing (SPOF definition; heartbeat/dead-man's-switch; HITL escalation). "A human can fix it" != "it self-heals" — with no escalation the human is never prompted.
+  What is at risk: The human-context loop silently stays degraded across runs; autonomous work proceeds on stale context or stalls with no alert; one expired session halts the whole loop.
+  Recommended action: Add escalation/alerting on logout (surface to Tom); provide a fallback/degraded-mode path so a single expired session does not halt everything; track logout recurrence as a reliability metric. Pairs directly with PREMISE-093 (hard-stop-must-escalate) and REVISE-147 (dead-man's-switch).
+  Urgency: Medium-High
+  Why flagged: PRESUMPTION + strong challenge + recurrence evidence + human-context-loop stakes.
+
+REVISE-170:
+  Date: 2026-07-02 | Source: DISPOSITION-390 | Item: PRESUMPTION-435 (presumption) | Urgency: MED
+  Claim flagged: "That 'no changelog logged' means 'quiet day, nothing to track,' when automated state changes occurred and the summary's counts diverged from the registry."
+  15a/15b: NO-SUPPORT-FOUND(None) / CHALLENGED(Strong)
+  Net: The canonical absence-as-evidence fallacy (abyrint/arXiv silent-failure; watchflow cron; Databricks/DQLabs data-observability). A divergence between summary counts and the source-of-truth registry is affirmative evidence of unlogged automated activity; missing logs are a heartbeat/reconciliation prompt, not an all-clear.
+  What is at risk: Automated state changes go untracked; the changelog silently under-reports; summary/registry drift accumulates and erodes trust; post-hoc reconstruction becomes impossible once the window passes.
+  Recommended action: Reconcile the daily summary against the source-of-truth registry (counts must match or the diff is surfaced / fails loud); emit a positive heartbeat for autonomous activity so a genuinely quiet day is confirmed rather than inferred from silence. Binds PREMISE-006 (transparent-flagging) and REVISE-167 family.
+  Urgency: Medium
+  Why flagged: PRESUMPTION + strong challenge + already-observed drift (divergent counts) + trivial fix; core member of the ABSENCE-AS-EVIDENCE SYSTEMIC-RISK cluster.

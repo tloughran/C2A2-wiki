@@ -10518,3 +10518,33 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION
   Priority: MEDIUM
   Search angle: causes/risks of recurring stale git locks; index/ref corruption from concurrent git processes (cron vs interactive).
+
+[ASSUMPTION] ASSUMPTION-402: A logged-out claude.ai is a hard stop for an autonomous run; entering credentials on the user's behalf is out of scope for an unattended agent.
+  Status: [QUEUED] [QUEUED 2026-07-01] [SEARCHED-15a: 2026-07-02] [SEARCHED-15b: 2026-07-02] [DISPOSITIONED-15c: 2026-07-02]
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION
+  Priority: LOW
+  Search angle: human-in-the-loop autonomy boundaries; limits on unattended agents performing authentication / credentialed / irreversible actions.
+
+[PRESUMPTION] PRESUMPTION-432: [inferred] That the compute sandbox's ephemeral disk is unbounded/self-managing — no monitoring or scratch GC, so a full container disk silently halts any agent needing local writes.
+  Status: [QUEUED] [QUEUED 2026-07-01] [SEARCHED-15a: 2026-07-02] [SEARCHED-15b: 2026-07-02] [DISPOSITIONED-15c: 2026-07-02]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION
+  Priority: MEDIUM-HIGH
+  Search angle: ephemeral-disk / resource-exhaustion failure modes; quota + monitoring + graceful-degradation patterns for full storage.
+
+[PRESUMPTION] PRESUMPTION-433: [inferred] That the disk-full failure is isolated to the OpenStory feed, when one full compute disk produced two symptoms attributed to two separate problems.
+  Status: [QUEUED] [QUEUED 2026-07-01] [SEARCHED-15a: 2026-07-02] [SEARCHED-15b: 2026-07-02] [DISPOSITIONED-15c: 2026-07-02]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION
+  Priority: MEDIUM
+  Search angle: root-cause aggregation vs local symptom reporting; correlating independent failures to a shared exhausted resource.
+
+[PRESUMPTION] PRESUMPTION-434: [inferred] That a 2nd-day logged-out claude.ai is transient/self-healing, not a single point of failure in the human-context loop with no fallback or escalation.
+  Status: [QUEUED] [QUEUED 2026-07-01] [SEARCHED-15a: 2026-07-02] [SEARCHED-15b: 2026-07-02] [DISPOSITIONED-15c: 2026-07-02]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION
+  Priority: MEDIUM
+  Search angle: single-points-of-failure in human-in-the-loop pipelines; alerting/escalation for silently-degraded integrations.
+
+[PRESUMPTION] PRESUMPTION-435: [inferred] That "no changelog logged" means "quiet day, nothing to track," when automated state changes occurred and the summary's counts diverged from the registry.
+  Status: [QUEUED] [QUEUED 2026-07-01] [SEARCHED-15a: 2026-07-02] [SEARCHED-15b: 2026-07-02] [DISPOSITIONED-15c: 2026-07-02]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION
+  Priority: LOW-MEDIUM
+  Search angle: observability of low-touch/autonomous activity; drift between summary dashboards and source-of-truth registries.

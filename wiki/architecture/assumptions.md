@@ -7232,3 +7232,21 @@ ASSUMPTION-401:
     Transform at each step:
       14a: Extracted from the stated scoping of Track A and deferral of cross_program_index routing to a separate attended pass. [stated]
     Current status: UNTESTED
+
+ASSUMPTION-402:
+  Date identified: 2026-07-01
+  Statement: A logged-out claude.ai is a hard stop for an autonomous run, not a condition to work around — entering credentials / signing in on Tom's behalf is out of scope for an unattended agent. Stated by both sync agents today: "I did not attempt to sign in — entering credentials is out of scope for an autonomous run and is something only you should do" (morning) and "Autonomous runs can't sign in" (evening).
+  Context: Both the morning Chat→Cowork and evening Cowork→Chat sync agents hit a logged-out claude.ai in the connected Chrome and each independently declined to authenticate, degrading to file-only output rather than proceeding.
+  Type: methodological / normative
+  Related decisions: (none — operating-boundary commitment, not a minted decision)
+  Related items: PRESUMPTION-434 (logged-out state treated as transient); OPEN-086
+  Testability: framework/normative commitment. The general principle — autonomous agents should not perform authentication or other credentialed/irreversible actions unattended — is testable via literature on human-in-the-loop autonomy boundaries and agent authority limits.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-402
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from both sync agents' explicit refusal-to-authenticate statements in the 2026-07-01 morning-scrape and evening-sync transcripts. [stated]
+    Current status: UNTESTED

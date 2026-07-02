@@ -17309,3 +17309,147 @@ Running maxima after this run: PREMISE-092, MONITOR-411, REVISE-166, DISPOSITION
   PROVENANCE: Origin: c2a2-lit-search-pipeline (scheduled); Chain: [14a/14b -> 15a, 15b -> 15c] (12 new); Transform: full pipeline run 2026-07-01; Current status: COHORT-DISPOSITIONED (12/12)
 
 ---
+
+## ===== RUN 2026-07-02 (c2a2-lit-search-pipeline; autonomous, Tom not present) =====
+Cohort: the 5 items left [QUEUED] without [SEARCHED-15a]/[SEARCHED-15b] from 2026-07-01 (the disk-full / logged-out autonomous-run incident cohort): ASSUMPTION-402; PRESUMPTION-432, 433, 434, 435.
+
+### 15a RETURNS (supportive)
+
+RETURN ASSUMPTION-402:
+  15a: SUPPORTED (Strong) — agentic-IAM/HITL consensus: unattended agents must never enter/borrow a human's credentials; authentication is human-gated, delegation-only. Reaffirms validated PREMISE-015 (ASSUMPTION-079 / DECISION-022). Key: Ping Identity Agentic IAM; Elementum/Galileo HITL.
+  Full: lit_search_results/for/ASSUMPTION-402_for.md
+RETURN PRESUMPTION-432:
+  15a: NO-SUPPORT-FOUND (Weak) — only the trivial between-runs-scratch-reset reading is supportable; nothing supports "unbounded/self-managing" within a run.
+  Full: lit_search_results/for/PRESUMPTION-432_for.md
+RETURN PRESUMPTION-433:
+  15a: NO-SUPPORT-FOUND (None) — no support for treating co-occurring symptoms of one exhausted resource as isolated.
+  Full: lit_search_results/for/PRESUMPTION-433_for.md
+RETURN PRESUMPTION-434:
+  15a: NO-SUPPORT-FOUND (Weak) — a one-off expiry can be transient, but nothing supports "self-healing" for a 2nd-day recurrence with no fallback.
+  Full: lit_search_results/for/PRESUMPTION-434_for.md
+RETURN PRESUMPTION-435:
+  15a: NO-SUPPORT-FOUND (None) — no support for inferring "nothing happened" from "nothing logged," esp. with divergent registry counts.
+  Full: lit_search_results/for/PRESUMPTION-435_for.md
+
+### 15b RETURNS (challenging)
+
+RETURN ASSUMPTION-402:
+  15b: PARTIALLY-CHALLENGED (Moderate) — credential boundary uncontested; the "hard stop" clause should be "stop + escalate," else it is the silent-failure anti-pattern. Key: incident.io/OneUptime dead-man's-switch; DigitalApplied HITL escalation.
+  Full: lit_search_results/against/ASSUMPTION-402_against.md
+RETURN PRESUMPTION-432:
+  15b: CHALLENGED (Strong) — ephemeral disk is bounded/exhaustible; exhaustion causes eviction/silent write-failure; poor default visibility -> must monitor + quota + GC. Key: K8s docs/#91600, Red Hat 4367311, Last9, Portworx.
+  Full: lit_search_results/against/PRESUMPTION-432_against.md
+RETURN PRESUMPTION-433:
+  15b: CHALLENGED (Moderate-Strong) — one shared exhausted resource characteristically yields multiple seemingly-independent symptoms; per-symptom attribution is a misdiagnosis pattern. Key: AWS Builders' Library correlated failures; Baeldung; arXiv 2605.14866.
+  Full: lit_search_results/against/PRESUMPTION-433_against.md
+RETURN PRESUMPTION-434:
+  15b: CHALLENGED (Strong) — recurrence + no fallback/escalation = single point of failure, not self-healing. Key: TechTarget/Wikipedia SPOF; incident.io heartbeat; DigitalApplied HITL escalation.
+  Full: lit_search_results/against/PRESUMPTION-434_against.md
+RETURN PRESUMPTION-435:
+  15b: CHALLENGED (Strong) — absence-as-evidence fallacy; missing log is a heartbeat/reconciliation prompt, and divergent counts prove unlogged activity. Key: abyrint + arXiv 2606.14589 silent failures; watchflow cron; Databricks/DQLabs data-observability.
+  Full: lit_search_results/against/PRESUMPTION-435_against.md
+
+### SYSTEMIC-RISK-FLAG (15b)
+
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-07-02
+  Affected items: PRESUMPTION-432, 433, 434, 435 (primary); ASSUMPTION-402 (related — silent hard-stop)
+  Common vulnerability: ABSENCE-AS-EVIDENCE / SILENT-INFRASTRUCTURE-FAILURE. Each item reads the absence of a visible signal as reassurance (no disk alert=>fine; no traced 2nd cause=>isolated; no login error=>self-heals; no changelog=>quiet; logged-out=>just stop). The SRE/distributed-systems literature is unanimous: absence of a signal is not evidence of health — hence heartbeat / dead-man's-switch / reconciliation monitoring. Direct continuation of C2A2's standing liveness/observability cluster (PREMISE-086 monitor-of-monitor, PREMISE-006 transparent-flagging; REVISE-147 scheduler dead-man's-switch, REVISE-157/158).
+  Literature basis: heartbeat/dead-man's-switch (incident.io, OneUptime, AlertOps); silent-failure taxonomy (abyrint; arXiv 2606.14589); correlated-failure/resource-exhaustion (AWS Builders' Library; K8s disk-pressure eviction); data-observability drift/reconciliation (Databricks; DQLabs).
+  Risk level: High
+  Recommendation: Active-liveness discipline for the autonomous stack: (a) monitor exhaustible resources (disk/session/registry) with threshold + heartbeat alerts; (b) root-cause recurring infrastructure anomalies rather than dismissing them as noise; (c) reconcile summaries against source-of-truth registries; (d) make every blocker/hard-stop escalate with context. Neutralizes the whole cohort; extends the dead-man's-switch family.
+
+## 15c DISPOSITIONS (2026-07-02)
+
+DISPOSITION-386:
+  Date: 2026-07-02
+  Item: ASSUMPTION-402
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: The credential clause ("don't enter credentials on the user's behalf") is strongly supported externally (agentic-IAM/HITL) and internally (reaffirms validated PREMISE-015; ASSUMPTION-079 / DECISION-022). The only challenge targets the "hard stop" framing: a silent terminal stop is the silent-failure anti-pattern; the safe form is stop-the-gated-action AND escalate with context.
+  Disposition: INCORPORATE
+  Reasoning: ASSUMPTION + strong support + only a scoped, constructive challenge that is resolved by a caveat (not a refutation). Incorporate the credential boundary; attach the escalation caveat (binds PRESUMPTION-434 / REVISE-169). Consistency-checked against PREMISE-015 — reinforces, no contradiction.
+    Validated premise statement: An unattended C2A2 run must not enter or borrow the user's credentials; a logged-out / credentialed-action blocker is a legitimate hard stop for the gated action, but the stop must be paired with a context-bearing escalation to the human rather than a silent termination.
+    Confidence: Moderate-High
+    Applicable to: autonomous scheduled runs; any credential-bearing or irreversible action; the human-context loop (claude.ai session)
+    Re-check cadence: Quarterly (credential-handling policy stable; pairs with PREMISE-015 re-check)
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+  -> PREMISE-093
+
+DISPOSITION-387:
+  Date: 2026-07-02
+  Item: PRESUMPTION-432
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Ephemeral disk is a bounded, exhaustible, poorly-visible resource that must be explicitly monitored, quota'd, and GC'd; the "unbounded/self-managing" presumption is exactly what produced the silent halt. Medium-high stakes: any agent needing local writes stalls silently.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong, well-documented challenge + medium-high stakes + concrete cheap fix. Member of the ABSENCE-AS-EVIDENCE / silent-infrastructure SYSTEMIC-RISK cluster.
+    What is at risk: Agents halt/evict silently on scratch exhaustion; node-level exhaustion can affect co-located work; the halt is misattributed to downstream symptoms (P-433).
+    Recommended action: Add ephemeral-disk monitoring with threshold alert; set scratch quotas; implement scratch GC/cleanup; fail loud with an explicit "disk full" error. Bind the liveness/observability cluster (REVISE-147/157/158).
+    Urgency: Medium-High
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+  -> REVISE-167
+
+DISPOSITION-388:
+  Date: 2026-07-02
+  Item: PRESUMPTION-433
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: One exhausted resource (the full disk) characteristically produces multiple seemingly-independent symptoms; attributing the two symptoms to two separate problems is the classic per-symptom misdiagnosis the correlated-failure literature warns against.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong challenge; fix is a cheap diagnostic discipline. Member of the silent-infrastructure cluster (the isolation reading is itself an absence-as-evidence move: "no traced common cause" => "isolated").
+    What is at risk: Fixing only the OpenStory symptom leaves the shared cause live; the second symptom recurs and is re-triaged as yet another separate problem; root cause never retired.
+    Recommended action: On any multi-symptom day, check shared resources (disk/memory/session) FIRST; add a root-cause-aggregation step correlating co-occurring anomalies to common substrates before filing them independently. Binds REVISE-167 (shared cause here was the disk).
+    Urgency: Medium
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+  -> REVISE-168
+
+DISPOSITION-389:
+  Date: 2026-07-02
+  Item: PRESUMPTION-434
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: A recurring (2nd-day) logged-out state with no fallback or escalation is a textbook single point of failure, not a transient self-healing condition. "A human can fix it" is not "it self-heals" — with no escalation the human is never prompted, so the loop stays degraded.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong challenge + recurrence evidence + human-context-loop stakes. Directly pairs with the ASSUMPTION-402 escalation caveat (PREMISE-093): the hard stop must escalate.
+    What is at risk: The human-context loop silently stays degraded across runs; autonomous work proceeds on stale context or stalls with no alert; a single expired session halts the whole loop.
+    Recommended action: Add escalation/alerting on logout (surface to Tom); provide a fallback/degraded-mode path so one expired session does not halt everything; track logout recurrence as a reliability metric. Binds PREMISE-093 and the dead-man's-switch family (REVISE-147).
+    Urgency: Medium-High
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+  -> REVISE-169
+
+DISPOSITION-390:
+  Date: 2026-07-02
+  Item: PRESUMPTION-435
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: "No changelog = quiet day" is the canonical absence-as-evidence fallacy; a divergence between the summary counts and the source-of-truth registry is affirmative evidence of unlogged automated activity. Missing logs are a heartbeat/reconciliation prompt, not an all-clear.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong challenge + a concrete observed drift (counts diverged) + cheap fix. Core member of the ABSENCE-AS-EVIDENCE cluster; also touches PREMISE-006 (transparent-flagging-over-silent-reconciliation).
+    What is at risk: Automated state changes go untracked; the changelog silently under-reports; summary/registry drift accumulates and erodes trust; post-hoc reconstruction becomes impossible once the window passes.
+    Recommended action: Reconcile the daily summary against the source-of-truth registry (counts match or the diff is surfaced/fails loud); emit a positive heartbeat for autonomous activity so a truly quiet day is confirmed, not inferred from silence. Binds PREMISE-006 and REVISE-167 family.
+    Urgency: Medium (Low-Medium priority per queue, but the fix is trivial and the drift is already observed)
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+  -> REVISE-170
+
+### CONSISTENCY CHECK vs validated_premises.md (PREMISE-001..092)
+- PREMISE-093 (no-credential-entry hard-stop must escalate): NO contradiction. It reaffirms and extends PREMISE-015 (agents must not use the user's credentials; token-delegation only) and operationalizes PREMISE-006 (transparent-flagging-over-silent-reconciliation) + PREMISE-086 (monitor-of-monitor / fail-loud) for the auth blocker. The escalation caveat is consistent with the existing authority-vs-escalation separation (PREMISE around ASSUMPTION-059 / PRESUMPTION-064/069). INCORPORATE proceeds.
+- No new premise contradicts an existing one.
+
+### RUN TALLY 2026-07-02 (autonomous; Tom not present)
+5 items from the 2026-07-01 disk-full/logged-out incident cohort (A-402; P-432,433,434,435) searched first-time by 15a+15b and dispositioned by 15c (DISPOSITION-386..390). End-to-end: QUEUED-undispositioned 5 -> 0.
+- 1 INCORPORATE: PREMISE-093 (no-credential-entry; logged-out is a legitimate hard stop for the gated action BUT must escalate with context; A-402; Moderate-High).
+- 0 MONITOR.
+- 4 REVISE: REVISE-167 (P-432, MED-HIGH — ephemeral disk is bounded/exhaustible; add monitoring+quota+GC+fail-loud); REVISE-168 (P-433, MED — one exhausted resource yields multiple symptoms; check shared resources first / root-cause aggregation); REVISE-169 (P-434, MED-HIGH — recurring logout w/ no fallback = SPOF; add escalation + degraded-mode); REVISE-170 (P-435, MED — absence-of-changelog != quiet day; reconcile summary vs registry + heartbeat).
+SYSTEMIC-RISK (new, High): ABSENCE-AS-EVIDENCE / SILENT-INFRASTRUCTURE-FAILURE cluster (P-432/433/434/435 + A-402) — reading the absence of a signal as health. Continuation of the standing liveness/observability cluster (PREMISE-086/006; REVISE-147/157/158). Fix discipline: monitor exhaustible resources with heartbeats; root-cause recurring anomalies; reconcile summaries vs source-of-truth; escalate every hard-stop.
+Priority order for Tom (this cohort): REVISE-167 (MED-HIGH — silent disk exhaustion halts any local-write agent; the root cause of the incident) = REVISE-169 (MED-HIGH — logout SPOF; pair with PREMISE-093 escalation) > REVISE-168 (MED — root-cause aggregation) > REVISE-170 (MED — summary/registry reconciliation). Carries forward prior keystones (REVISE-147 scheduler dead-man's-switch; REVISE-161/163 from 2026-07-01; REVISE-155/156/157/158).
+Running maxima after this run: PREMISE-093, MONITOR-411 (unchanged), REVISE-170, DISPOSITION-390.
+
+  PROVENANCE: Origin: c2a2-lit-search-pipeline (scheduled); Chain: [14a/14b -> 15a, 15b -> 15c] (5 items); Transform: full pipeline run 2026-07-02; Current status: COHORT-DISPOSITIONED (5/5)
+
+---

@@ -2189,3 +2189,17 @@ PREMISE-092:
   Re-check due: Quarterly (next 15d review)
   Status: ACTIVE
   PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-377
+
+
+PREMISE-093:
+  Date validated: 2026-07-02
+  Source item: ASSUMPTION-402
+  Statement: An unattended C2A2 run must not enter or borrow the user's credentials; a logged-out claude.ai (or any credential-bearing / irreversible action) is a legitimate hard stop for the gated action. However, the hard stop must be paired with a context-bearing escalation to the human, not a silent termination — the safe unattended behavior is "refuse the gated action AND alert," so a human can close the loop promptly.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Ping Identity "Identity for AI: Agentic IAM" (agents must never log in with / borrow a human's credentials; scoped ephemeral-token delegation is canonical); Elementum/Galileo/TeamCopilot HITL best-practice (authentication / irreversible actions are human-gated); reaffirms C2A2 PREMISE-015 (ASSUMPTION-079 / DECISION-022 no-credential-handling). 15a SUPPORTED/Strong.
+  Challenges noted: 15b (Moderate, scoped): the "hard stop" clause, taken as a silent terminal stop, is the silent-failure anti-pattern; the endorsed posture is stop + escalate with context (incident.io/OneUptime dead-man's-switch; DigitalApplied HITL escalation). Folded into the Statement as the escalation caveat.
+  Confidence: Moderate-High
+  Applicable to: all autonomous scheduled runs; any credential-bearing or irreversible action; the human-context loop (claude.ai session). Reinforces PREMISE-015; operationalizes PREMISE-006 (transparent-flagging) and PREMISE-086 (fail-loud) for the auth blocker; pairs with REVISE-169 (logout-SPOF escalation).
+  Re-check due: Quarterly (next 15d review; pairs with PREMISE-015 re-check)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-386

@@ -1119,3 +1119,17 @@ OPEN-104:
     Transform at each step:
       14a: Raised from the qc_trace audit-vs-vault divergence surfaced during the attended ingestion.
     Current status: OPEN
+
+OPEN-105:
+  Date raised: 2026-07-01
+  Question: Should the pipeline monitor compute-sandbox resource exhaustion (disk first, and by extension memory) with a fail-loud, global alert and/or scratch garbage-collection? Today a full sandbox disk (nvme at 100% / 0 bytes) halted the OpenStory refresh at step 0 ("useradd failed: No space left on device") and independently broke the morning sync agent's shell, yet it surfaced only as one feed's failure — nothing warns before the disk fills and nothing reclaims scratch. This is adjacent to but distinct from OPEN-086 (silent-staleness watchdog): here the failure is loud per-agent but the shared root cause is invisible at the system level.
+  Context: 2026-07-01 quiet automated day; the OpenStory step-0 disk-exhaustion failure and the morning agent's concurrent shell disk failure, against a document vault with 296 GB free.
+  Related: OPEN-086 (pipeline watchdog), DECISION-068 (OpenStory fix, BLOCKED), PRESUMPTION-432, PRESUMPTION-433
+  Status: OPEN — whether to add sandbox resource monitoring / scratch GC, and at what threshold and escalation path, is undecided.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the sandbox disk-exhaustion failure that halted OpenStory at step 0 and broke the morning shell.
+    Current status: OPEN

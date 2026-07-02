@@ -8639,3 +8639,83 @@ PRESUMPTION-431:
     Transform at each step:
       14b: Inferred from a recurring stale git lock treated as routine noise rather than a concurrency symptom. [inferred]
     Current status: UNTESTED
+
+PRESUMPTION-432:
+  Date surfaced: 2026-07-01
+  Statement: [inferred] That the compute sandbox's ephemeral disk is an effectively unbounded, self-managing resource — no agent monitors sandbox free space or garbage-collects scratch, so an accreting container filesystem (now at 100% / 0 bytes available) silently halts any agent that needs container-local writes.
+  Evidence it was operative: OpenStory's ~06:15 refresh failed at step 0 with "useradd failed: No space left on device"; the morning sync agent's shell independently hit "No space left on device"; a df of the sandbox shows /dev/nvme1n1 9.8G 9.3G 0 100%. The user's document vault (FUSE mount) had 296 GB free — so the exhaustion is the compute environment's own disk, and nothing warns before it fills.
+  Why it was unstated: too foundational to notice — compute disk is invisible infrastructure until it fails, and prior OpenStory failures were attributed to DB corruption, masking the resource dimension.
+  Type: scaling / structural
+  Related decisions: DECISION-068 (OpenStory fix, BLOCKED)
+  Related items: OPEN-086 (pipeline watchdog); OPEN-105 (resource-exhaustion monitoring); PRESUMPTION-433
+  Testability: testable via literature/operational best practice — disk/resource-exhaustion failure modes, quota/monitoring patterns, and graceful degradation under full ephemeral storage.
+  Risk if wrong: High — a full sandbox disk is a cross-cutting failure that can halt or corrupt writes for every agent needing container-local scratch, yet today it surfaced only as one feed's error.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-432
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a step-0 useradd disk-exhaustion failure plus an independent shell disk failure, against an otherwise-healthy document mount. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-433:
+  Date surfaced: 2026-07-01
+  Statement: [inferred] That the disk-full failure is isolated to the OpenStory feed path ("this is the one thing that needs attention"), when a full compute disk is a shared root cause that today produced at least two distinct symptoms attributed to two separate problems.
+  Evidence it was operative: The evening summary framed the disk-full condition as the OpenStory refresh's problem and listed it as a single feed issue; the morning sync agent, separately, hit the same "No space left on device" in its shell and reported it as an aside — neither connected the two as one exhaustion event.
+  Why it was unstated: oversight born of per-agent framing — each agent reports its own failure locally, so a shared root cause reads as unrelated incidents.
+  Type: epistemic
+  Related decisions: (none)
+  Related items: PRESUMPTION-432; PRESUMPTION-427/428 (audit/attribution integrity family); OPEN-105
+  Testability: testable via literature — root-cause aggregation vs local symptom reporting; correlating failures to shared-resource exhaustion.
+  Risk if wrong: Medium-High — attributing a systemic resource failure to one feed leads to a point fix (rebuild one DB) that leaves the actual cause (full disk) live to break other agents.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-433
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two independent agents reporting the same "No space left on device" as two separate problems. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-434:
+  Date surfaced: 2026-07-01
+  Statement: [inferred] That a logged-out claude.ai is a transient, self-healing condition needing only a manual sign-in — rather than a single point of failure in the human-context loop that, on its second consecutive day of breaking both sync directions, has no fallback delivery path and no escalation beyond a file only read if Tom happens to look.
+  Evidence it was operative: Both the morning and evening syncs failed for the second day running with the same logged-out state; the only remedy noted in both is "sign in to claude.ai in Chrome"; the fallback is a file whose header note is invisible unless the file is opened.
+  Why it was unstated: obvious-to-participants framing — "just log in" feels like a trivial one-time fix, so its recurrence and the absence of any alternate channel go unexamined.
+  Type: structural / methodological
+  Related decisions: (none)
+  Related items: ASSUMPTION-402 (autonomous no-sign-in commitment); OPEN-086
+  Testability: testable via literature/operational practice — single-points-of-failure in human-in-the-loop pipelines; alerting/escalation for silently degraded integrations.
+  Risk if wrong: Medium — the morning-context and evening-delivery loop degrades silently; days of walk context can be lost with no notice to Tom.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-434
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a two-day-standing logged-out state whose only remedy is manual and whose fallback is a passively-stored file. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-435:
+  Date surfaced: 2026-07-01
+  Statement: [inferred] That "no attended session / no changelog logged" is equivalent to "a quiet day with little to record," when autonomous state changes still occurred (3 tradition-agent proposals ingested, four HTML views rebuilt, and a shift in the OpenStory failure mode from DB-corruption to disk-exhaustion) and the summarizing agent's own pipeline counts diverged from the registry.
+  Evidence it was operative: The evening summary labeled the day "quiet, mostly-automated ... no changelog entry"; separately its Pipeline Status reported presumptions 432, decisions-on-record 71, and validated premises 50, while the authoritative registries stood at PRESUMPTION-431, DECISION-073, and PREMISE-089 — a silent divergence that went unremarked because the day was framed as having nothing to track.
+  Why it was unstated: culturally embedded — "quiet" is read as "nothing happened," so the automated deltas and the count mismatch are not scrutinized.
+  Type: methodological / epistemic
+  Related decisions: (none)
+  Related items: PRESUMPTION-426/427/428 (count/audit-integrity family); OPEN-104
+  Testability: testable via literature — observability of autonomous/low-touch system activity; drift between summary dashboards and source-of-truth registries.
+  Risk if wrong: Low-Medium — treating automated days as no-ops lets state drift and reporting errors accumulate unaudited between attended sessions.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-435
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the "quiet day" framing co-occurring with unremarked automated state changes and a summary-vs-registry count divergence. [inferred]
+    Current status: UNTESTED
