@@ -120,3 +120,12 @@ wiki/heartbeat/data/.broker_device_id
 /c2a2_daily_run_execution_trace.svg
 /c2a2_module_dependency_map.svg
 /c2a2_runtime_service_topology.svg
+
+# HEP-DET bundle — staged local-only, not for publish (2026-06-28)
+hep-det/
+
+
+# Python caches & scratch test artifacts
+__pycache__/
+*.pyc
+.writetest_*
