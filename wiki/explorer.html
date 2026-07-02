@@ -341,7 +341,6 @@
       <button class="chap-btn" id="chap-education"><span class="kick">Community</span><span class="main">Education</span></button>
       <button class="chap-btn active" id="chap-tools"><span class="kick">Community</span><span class="main">Accelerator Tools</span></button>
       <button class="chap-btn" id="chap-interaction" data-src="community_interactions.html"><span class="kick">Community</span><span class="main">Interactions</span></button>
-      <button class="chap-btn" id="chap-guide" data-src="site_guide.html"><span class="kick">&nbsp;</span><span class="main">Site Guide</span></button>
     </div>
     <button id="btn-record" onclick="toggleRecord()">&#9679; Record</button>
   </div>
@@ -453,15 +452,6 @@
     if (row2) row2.style.display = 'none';
     if (row2edu) row2edu.style.display = 'none';
     setActiveChapter(chapInteraction);
-  });
-  // "Site Guide" is a single full page (the users-manual + TDR guide);
-  // loads into the iframe and hides both sub-tab rows, like the other single-page chapters.
-  var chapGuide = document.getElementById('chap-guide');
-  if (chapGuide) chapGuide.addEventListener('click', function() {
-    setFrame(chapGuide.getAttribute('data-src') + '?v=' + Date.now());
-    if (row2) row2.style.display = 'none';
-    if (row2edu) row2edu.style.display = 'none';
-    setActiveChapter(chapGuide);
   });
 
   // ── BACK-NAVIGATION RESYNC ──
