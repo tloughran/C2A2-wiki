@@ -16,7 +16,7 @@ length_ratio_to_target: 0.56
 mind_first_reframe: "The marriage bond is constituted by an act of mutual intentional adoption — two generative models electing to be one — which is why consent, not consummation, makes the marriage."
 central_theme_thread: "Marriage begins not with achieved union but with a vow to pursue it: two perspectives that cannot see the whole elect a shared whole and bind themselves to compute their lives from it together."
 tags: [synthesis, day/279, theme/consent-as-constitutive-act]
-last_qc_at: "2026-06-23T00:23:16"
+last_qc_at: "2026-07-01T02:25:21"
 last_qc_outcome: "pass"
 ---
 

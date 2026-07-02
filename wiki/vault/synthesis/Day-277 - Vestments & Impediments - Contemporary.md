@@ -16,7 +16,7 @@ length_ratio_to_target: 0.54
 mind_first_reframe: "An impediment is best understood as a coherence-condition the collective imposes on candidates for a real role, not a private moral score — which dissolves the paradox that an unworthy minister still confers a valid sacrament."
 central_theme_thread: "The validity/worthiness split is the central theme's deepest consolation: the body's capacity to mediate the whole does not wait on any member's perfection; the limited, even unworthy, agent is still drawn into a unity whose competence is not his own."
 tags: [synthesis, day/277, theme/role-versus-agent]
-last_qc_at: "2026-06-23T00:23:15"
+last_qc_at: "2026-07-01T02:25:20"
 last_qc_outcome: "pass"
 ---
 

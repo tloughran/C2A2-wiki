@@ -15,8 +15,8 @@ fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-289 - The Marriage Debt - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-23T18:30:00"
-last_qc_outcome: pass
+last_qc_at: "2026-07-01T16:20:15"
+last_qc_outcome: "pass"
 tags: [summa, day/289, pars/suppl, q/63-64]
 ---
 

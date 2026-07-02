@@ -16,7 +16,7 @@ length_ratio_to_target: 0.51
 mind_first_reframe: "A shared comprehensive framework is a genuine precondition of the deepest union — disparity at the level of ultimate ends really does impede the sacramental good — yet community-widening shows it is a barrier to be worked across, not a simple disqualification."
 central_theme_thread: "Disparity of worship is the marital test case of the project's own method: the realism that a shared framework deepens union meets the dialogical hope that divergent traditions can be bridged by patient mutual translation."
 tags: [synthesis, day/287, theme/shared-tradition-as-precondition-of-union]
-last_qc_at: "2026-06-23T16:24:12"
+last_qc_at: "2026-07-01T18:25:33"
 last_qc_outcome: "pass"
 ---
 
