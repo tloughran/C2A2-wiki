@@ -341,6 +341,7 @@
       <button class="chap-btn" id="chap-education"><span class="kick">Community</span><span class="main">Education</span></button>
       <button class="chap-btn active" id="chap-tools"><span class="kick">Community</span><span class="main">Accelerator Tools</span></button>
       <button class="chap-btn" id="chap-interaction" data-src="community_interactions.html"><span class="kick">Community</span><span class="main">Interactions</span></button>
+      <button class="chap-btn" id="chap-guide" data-src="site_guide.html"><span class="kick">&nbsp;</span><span class="main">Site Guide</span></button>
     </div>
     <button id="btn-record" onclick="toggleRecord()">&#9679; Record</button>
   </div>
@@ -353,6 +354,7 @@
     <button class="tab-btn" data-src="agents_tab.html">Agent Map</button>
     <button class="tab-btn" data-src="metabolism/metabolism_view.html">Metabolism</button>
     <button class="tab-btn" data-src="summa_explorer.html">Curriculum Tools</button>
+    <button class="tab-btn" data-src="interT_study.html">Inter-Tradition Study</button>
     <button id="btn-help" onclick="showHelp()" title="About this view">?</button>
   </div>
 
@@ -452,6 +454,15 @@
     if (row2edu) row2edu.style.display = 'none';
     setActiveChapter(chapInteraction);
   });
+  // "Site Guide" is a single full page (the users-manual + TDR guide);
+  // loads into the iframe and hides both sub-tab rows, like the other single-page chapters.
+  var chapGuide = document.getElementById('chap-guide');
+  if (chapGuide) chapGuide.addEventListener('click', function() {
+    setFrame(chapGuide.getAttribute('data-src') + '?v=' + Date.now());
+    if (row2) row2.style.display = 'none';
+    if (row2edu) row2edu.style.display = 'none';
+    setActiveChapter(chapGuide);
+  });
 
   // ── BACK-NAVIGATION RESYNC ──
   // When the browser restores this page from history, Chrome may restore the
@@ -489,6 +500,10 @@
       if (row2) row2.style.display = 'none';
       if (row2edu) row2edu.style.display = 'none';
       setActiveChapter(chapInteraction);
+    } else if (chapGuide && chapGuide.getAttribute('data-src') === path) {
+      if (row2) row2.style.display = 'none';
+      if (row2edu) row2edu.style.display = 'none';
+      setActiveChapter(chapGuide);
     }
     /* default src (wiki_narration.html) already matches the default shell state */
   }
