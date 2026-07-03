@@ -139,6 +139,13 @@ def map_signal(story: dict) -> dict:
         "tags": list(story.get("tags") or []),
         "summary": story.get("summary", ""),
         "implication": story.get("implications", ""),
+        # Two distinct dates, both carried through from the runtime events table:
+        #   published_at  = when the SOURCE released the item (RSS pubDate)
+        #   first_seen_at = when the heartbeat CAPTURED it (first ingest)
+        # Previously dropped here, so the tab could only ever show one implicit
+        # date and readers couldn't tell "released" from "captured".
+        "published_at": story.get("published_at") or "",
+        "first_seen_at": story.get("first_seen_at") or "",
     }
 
 

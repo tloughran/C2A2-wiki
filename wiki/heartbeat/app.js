@@ -210,6 +210,25 @@ function applyLens(signals, query) {
   });
 }
 
+// Format an RSS pubDate or ISO timestamp to a short date; "" if absent/unparseable.
+function fmtHbDate(v) {
+  if (!v) return "";
+  var d = new Date(v);
+  if (isNaN(d.getTime())) return "";
+  return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+}
+
+// Released (source pubDate) + Captured (heartbeat first-seen) line for a card.
+// Each half is shown only when present, so older/undated items degrade cleanly.
+function signalDatesHTML(signal) {
+  var bits = [];
+  var released = fmtHbDate(signal.published_at);
+  var captured = fmtHbDate(signal.first_seen_at);
+  if (released) bits.push('<span class="hb-date"><span class="hb-date-lbl">Released</span> ' + esc(released) + "</span>");
+  if (captured) bits.push('<span class="hb-date"><span class="hb-date-lbl">Captured</span> ' + esc(captured) + "</span>");
+  return bits.length ? '<div class="hb-signal-dates">' + bits.join("") + "</div>" : "";
+}
+
 // Build one signal card (shared by Pulse + History).
 function signalCardHTML(signal) {
   const tags = (Array.isArray(signal.tags) ? signal.tags : []).map(function (tag) {
@@ -237,6 +256,7 @@ function signalCardHTML(signal) {
   return (
     '<article class="hb-signal">' +
       "<h4>" + title + "</h4>" +
+      signalDatesHTML(signal) +
       "<p>" + esc(signal.summary) + "</p>" +
       fullSummary +
       "<p><strong>Community implication:</strong> " + esc(signal.implication) + "</p>" +

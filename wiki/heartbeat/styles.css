@@ -333,6 +333,21 @@ h3 {
   letter-spacing: 0;
 }
 
+.hb-signal-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 0 0 10px;
+  font-size: 12px;
+  color: var(--dim);
+}
+.hb-date-lbl {
+  color: #C9A84C;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-right: 5px;
+}
+
 .hb-signal p {
   margin: 0 0 10px;
   color: var(--muted);
