@@ -1599,6 +1599,27 @@ function applyEdgeFilters() {
   // Step 3: top-N where N = visibility budget (zoom-scaled)
   var budget = Math.min(visibilityBudget(), allowed.length);
   var visible = allowed.slice(0, budget);
+  // Edge opacity must follow the CURRENT lit-state of its endpoints, not a flat
+  // default. This function is re-run on every zoom/pan (via the zoom handler's
+  // rAF) and on every rebuild; painting a flat default here is what resurrected
+  // the "orphaned edges over dimmed nodes" artifact after a search/focus once
+  // the user scrolled. Nodes are NOT re-rendered on zoom, so their live opacity
+  // is the single source of truth for what's highlighted (same technique as
+  // getCurrentViewState). No search active => every node lit => every edge gets
+  // the default => behavior is unchanged.
+  var _nodeOp = {};
+  d3.selectAll('.node-circle').each(function(d) {
+    _nodeOp[d.id] = parseFloat(d3.select(this).attr('opacity'));
+  });
+  var _litT = brightness * 0.5;
+  function _edgeOpacity(d) {
+    var s = (d.source && d.source.id) ? d.source.id : d.source;
+    var t = (d.target && d.target.id) ? d.target.id : d.target;
+    var so = _nodeOp[s], to = _nodeOp[t];
+    var sl = (so === undefined) || so >= _litT;   // undefined = not a rendered
+    var tl = (to === undefined) || to >= _litT;   // circle; treat as lit (safe)
+    return (sl && tl) ? Math.min(0.5 * brightness, 1) : (brightness * 0.05);
+  }
   // Step 4: keyed join of exactly the visible subset. Endpoints were resolved
   // to node objects in rebuildGraph, so edges outside the simulation's link
   // set still draw correctly; positions are set here for the settled-sim case
@@ -1659,7 +1680,7 @@ function applyEdgeFilters() {
       .attr('stroke', function(d) { return d.layer ? (LAYER_COLOR[d.layer] || '#999') : (EDGE_COLOR[d.type || 'reference'] || '#777'); })
       .attr('stroke-width', function(d) { return d.layer ? 0.9 : 0.6; })
       .attr('stroke-dasharray', function(d) { return (!d.layer && d.bridge === 'same') ? '3,3' : null; })
-      .attr('opacity', Math.min(0.5 * brightness, 1))
+      .attr('opacity', _edgeOpacity)
       .attr('x1', function(d) { return d.source.x; })
       .attr('y1', function(d) { return d.source.y; })
       .attr('x2', function(d) { return d.target.x; })
