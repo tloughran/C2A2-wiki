@@ -11,25 +11,6 @@
   },
   "signals": [
     {
-      "title": "Anthropic launches Cowork, a Claude Desktop agent that works in your files — no coding required",
-      "source": "VentureBeat AI",
-      "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
-      "relevance": 3,
-      "tags": [
-        "capability_jump",
-        "governance_policy",
-        "market_platform"
-      ],
-      "summary": "Anthropic released Cowork on Monday, a new AI agent capability that extends the power of its wildly successful Claude Code tool to non-technical users — and according to company insiders, the team built the entire feature in approximately a week and a half, largely using Claude Code itself. The launch marks a major inflection point in the race to deliver practical AI agents to mainstream users, positioning Anthropic to compete not just with OpenAI and Google in conversational AI, but with Microsoft's Copilot in the burgeoning market for AI-powered productivity tools.",
-      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding. High relevance to C2A2 operations; include in next leadership brief.",
-      "long_summary": "Anthropic has introduced Cowork, a new AI agent that allows non-technical users to leverage the capabilities of its Claude Code tool without needing to code. Developed in about a week and a half using Claude Code itself, Cowork represents a significant advancement in making practical AI agents accessible to mainstream users. This launch positions Anthropic to compete effectively not only with OpenAI and Google in the realm of conversational AI but also with Microsoft's Copilot in the expanding market for AI-driven productivity tools. Understanding these developments is essential for the community to stay informed about accessible AI solutions and their implications for everyday tasks.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-06-26",
-        "kind": "machine-generated"
-      }
-    },
-    {
       "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
       "source": "VentureBeat AI",
       "url": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
@@ -42,6 +23,25 @@
       "summary": "Alfred Wahlforss was running out of options. His startup, Listen Labs , needed to hire over 100 engineers, but competing against Mark Zuckerberg's $100 million offers seemed impossible.",
       "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding. High relevance to C2A2 operations; include in next leadership brief.",
       "long_summary": "Listen Labs, a startup led by Alfred Wahlforss, faced significant challenges in hiring over 100 engineers against intense competition from large companies like Facebook, which was offering substantial salaries. To address this, the company employed a unique approach through a viral billboard hiring stunt, successfully raising $69 million to scale their operations focused on utilizing AI for customer interviews. This innovative strategy highlights creative recruitment methods in a competitive job market and underscores the impact of novel marketing tactics in attracting talent and funding. For a community aiming to stay informed about AI, such developments demonstrate the intersection of technology, entrepreneurship, and talent acquisition strategies in the evolving landscape.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-06-26",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Anthropic launches Cowork, a Claude Desktop agent that works in your files — no coding required",
+      "source": "VentureBeat AI",
+      "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
+      "relevance": 3,
+      "tags": [
+        "capability_jump",
+        "governance_policy",
+        "market_platform"
+      ],
+      "summary": "Anthropic released Cowork on Monday, a new AI agent capability that extends the power of its wildly successful Claude Code tool to non-technical users — and according to company insiders, the team built the entire feature in approximately a week and a half, largely using Claude Code itself. The launch marks a major inflection point in the race to deliver practical AI agents to mainstream users, positioning Anthropic to compete not just with OpenAI and Google in conversational AI, but with Microsoft's Copilot in the burgeoning market for AI-powered productivity tools.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding. High relevance to C2A2 operations; include in next leadership brief.",
+      "long_summary": "Anthropic has introduced Cowork, a new AI agent that allows non-technical users to leverage the capabilities of its Claude Code tool without needing to code. Developed in about a week and a half using Claude Code itself, Cowork represents a significant advancement in making practical AI agents accessible to mainstream users. This launch positions Anthropic to compete effectively not only with OpenAI and Google in the realm of conversational AI but also with Microsoft's Copilot in the expanding market for AI-driven productivity tools. Understanding these developments is essential for the community to stay informed about accessible AI solutions and their implications for everyday tasks.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
         "generated": "2026-06-26",

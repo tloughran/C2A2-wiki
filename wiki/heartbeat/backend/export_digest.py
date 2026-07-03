@@ -71,6 +71,64 @@ def derive_high_relevance(stories: list, summary: str, count_total: int) -> int:
     return sum(1 for s in stories if int(s.get("relevance", 0)) >= 2)
 
 
+def _story_url(story: dict) -> str:
+    return story.get("url") or story.get("source_url") or ""
+
+
+def recent_lead_urls(data_dir, days: int = 3, now=None) -> set:
+    """URLs that held the #1 lead slot in any snapshot generated within the last
+    `days`. Read from the existing snapshot archive so no new state is needed.
+    Undated legacy snapshots fall back to file mtime. Used to keep the headline
+    from freezing on the same high-relevance evergreen story day after day."""
+    now = now or datetime.now(timezone.utc)
+    cutoff = now.timestamp() - days * 86400
+    snaps = Path(data_dir) / "snapshots"
+    urls = set()
+    if not snaps.is_dir():
+        return urls
+    for f in sorted(snaps.glob("digest-*.json")):
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        ga = d.get("generated_at")
+        ts = None
+        if ga:
+            try:
+                ts = datetime.strptime(ga, "%Y-%m-%dT%H:%M:%SZ").replace(
+                    tzinfo=timezone.utc).timestamp()
+            except Exception:
+                ts = None
+        if ts is None:
+            try:
+                ts = f.stat().st_mtime
+            except OSError:
+                continue
+        if ts >= cutoff:
+            sigs = d.get("signals") or []
+            if sigs:
+                u = sigs[0].get("url") or ""
+                if u:
+                    urls.add(u)
+    return urls
+
+
+def apply_novelty_penalty(shown: list, recent_leads: set) -> list:
+    """If the top story recently held the lead, promote the highest-relevance
+    story that has NOT recently led into the #1 slot; the demoted story stays in
+    the list, just no longer as the headline. Preserves the runtime's relevance
+    order otherwise. If every shown story recently led (or there's no history),
+    leave the order untouched — never fabricate or drop a lead."""
+    if not shown or not recent_leads:
+        return shown
+    if _story_url(shown[0]) not in recent_leads:
+        return shown
+    for i, s in enumerate(shown):
+        if _story_url(s) not in recent_leads:
+            return [shown[i]] + shown[:i] + shown[i + 1:]
+    return shown
+
+
 def map_signal(story: dict) -> dict:
     url = story.get("url") or story.get("source_url") or ""
     return {
@@ -84,11 +142,14 @@ def map_signal(story: dict) -> dict:
     }
 
 
-def build_digest(report: dict, limit: int) -> dict:
+def build_digest(report: dict, limit: int, recent_leads: set = None) -> dict:
     stories = report.get("top_stories") or []
     sources = report.get("sources") or []
     summary = report.get("summary") or ""
     shown = stories[:limit]
+    # Rotate the headline: demote a story that recently led so the tab visibly
+    # refreshes ("SEEM updated"), not just its generated_at ("BE updated").
+    shown = apply_novelty_penalty(shown, recent_leads or set())
     now = datetime.now(timezone.utc)
     return {
         "seed": False,
@@ -122,7 +183,8 @@ def main(argv=None) -> int:
     if not isinstance(report, dict) or "top_stories" not in report:
         raise SystemExit("error: input does not look like an /api/digest response (no 'top_stories')")
 
-    digest = build_digest(report, args.limit)
+    recent_leads = recent_lead_urls(args.data_dir)
+    digest = build_digest(report, args.limit, recent_leads)
 
     data_dir = Path(args.data_dir)
     data_dir.mkdir(parents=True, exist_ok=True)
