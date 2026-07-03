@@ -278,8 +278,26 @@
    per Apple HIG. The Sociogram itself has its own mobile rules in the
    wiki_narration.html generator. Above 640px nothing changes. */
 @media (max-width: 640px) {
-  #tab-bar { height: 48px; }
-  #row1 { display: none; }                       /* hide brand + stub chapter tabs + Record */
+  #tab-bar { height: 96px; }                      /* two compact rows: chapters + sub-tabs */
+  /* Previously #row1 was display:none here, which stranded phone users on
+     whatever chapter loaded first with NO way to reach the others (and, when a
+     single-page chapter had hidden row2, no visible navigation at all). Keep
+     the chapter line, compacted: drop the brand wordmark and Record, and let
+     the chapter tabs scroll horizontally like row2 does. */
+  #row1 {
+    height: 48px;
+    grid-template-columns: minmax(0, 1fr);
+    column-gap: 0;
+    padding: 0 8px;
+  }
+  .brand { display: none; }
+  #btn-record { display: none; }
+  #chap-tabs {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  .chap-btn { flex-shrink: 0; min-height: 44px; }
   #row2 {
     height: 48px;
     padding: 0 8px;
@@ -304,8 +322,8 @@
     flex-shrink: 0;
   }
   #content-frame {
-    top: 48px;
-    height: calc(100% - 48px);
+    top: 96px;
+    height: calc(100% - 96px);
   }
   /* Help modal: full-width on phone, easier dismiss */
   #help-card { width: 92%; padding: 20px 18px; }
