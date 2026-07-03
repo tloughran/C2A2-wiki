@@ -16,6 +16,17 @@ def load_json(filepath):
         return json.load(f)
 
 
+def emb_json(obj):
+    """json.dumps for embedding inside an inline <script>. Escapes '</' as
+    '<\\/' so any literal '</script>' in vault content (e.g. JS-library code
+    samples ingested as node content) cannot prematurely close the tag. The
+    string VALUE is unchanged in-browser ('<\\/script>' parses to '</script>');
+    only the HTML tokenizer is prevented from bailing out. Without this, one
+    such node truncates the NODES array and the whole graph fails to render
+    ("Invalid or unexpected token"). ensure_ascii=False matches prior behavior."""
+    return json.dumps(obj, ensure_ascii=False).replace('</', '<\\/')
+
+
 COLORS = {
     'master': '#C9A84C',
     'architecture': '#5B7FA5',
@@ -330,13 +341,13 @@ def generate_html(data, nodes_json, links_json):
     tradition_summaries = data.get('tradition_summaries', {})
     timeline = data.get('timeline', [])
 
-    findings_json = json.dumps(findings, ensure_ascii=False)
-    decisions_json = json.dumps(decisions, ensure_ascii=False)
-    cross_json = json.dumps(cross_connections, ensure_ascii=False)
-    changelogs_json = json.dumps(changelogs, ensure_ascii=False)
-    cowork_json = json.dumps(cowork_summaries, ensure_ascii=False)
-    timeline_json = json.dumps(timeline, ensure_ascii=False)
-    colors_json = json.dumps(COLORS, ensure_ascii=False)
+    findings_json = emb_json(findings)
+    decisions_json = emb_json(decisions)
+    cross_json = emb_json(cross_connections)
+    changelogs_json = emb_json(changelogs)
+    cowork_json = emb_json(cowork_summaries)
+    timeline_json = emb_json(timeline)
+    colors_json = emb_json(COLORS)
 
     date_range = metadata.get('date_range', {})
     date_start = date_range.get('start', '')
@@ -364,9 +375,9 @@ def generate_html(data, nodes_json, links_json):
     # header) is not a group, so it rides along as its own injected string.
     tradition_concept = tradition_summaries.get('__tradition_concept__', '')
 
-    tradition_groups_json = json.dumps(tradition_groups, ensure_ascii=False)
-    structure_groups_json = json.dumps(structure_groups, ensure_ascii=False)
-    tradition_concept_json = json.dumps(tradition_concept, ensure_ascii=False)
+    tradition_groups_json = emb_json(tradition_groups)
+    structure_groups_json = emb_json(structure_groups)
+    tradition_concept_json = emb_json(tradition_concept)
 
     num_findings = len(findings)
     num_decisions = len(decisions)
@@ -2765,13 +2776,25 @@ function runSearch() {
     return haystack.indexOf(query) !== -1;
   });
 
-  // Highlight matching nodes
+  // Highlight matching nodes, then dim links whose endpoints aren't both lit.
+  // Mirrors the focus:/isolate paths (which set link-line opacity in parallel);
+  // omitting it here left edges at full brightness over dimmed/hidden nodes —
+  // the "orphaned edges" and "echoes of unlit nodes" artifacts on a search cut.
+  var textMatch = {};
   d3.selectAll('.node-circle')
     .interrupt()
     .attr('opacity', function(d) {
       if (!groupVisibility[d.group]) return 0;
       var haystack = (d.label + ' ' + d.id + ' ' + (d.content || '')).toLowerCase();
-      return haystack.indexOf(query) !== -1 ? brightness : brightness * 0.1;
+      var hit = haystack.indexOf(query) !== -1;
+      if (hit) textMatch[d.id] = true;
+      return hit ? brightness : brightness * 0.1;
+    });
+  d3.selectAll('.link-line')
+    .interrupt()
+    .attr('opacity', function(d) {
+      var ls = linkEndpointId(d.source), lt = linkEndpointId(d.target);
+      return (textMatch[ls] && textMatch[lt]) ? Math.min(0.5 * brightness, 1) : (brightness * 0.05);
     });
 
   // Also search findings and cross-connections
@@ -3570,8 +3593,8 @@ def main():
             sys.exit(1)
         agent_data = load_json(agent_data_path)
     nodes, links = build_graph_data(data, agent_data)
-    nodes_json = json.dumps(nodes, ensure_ascii=False)
-    links_json = json.dumps(links, ensure_ascii=False)
+    nodes_json = emb_json(nodes)
+    links_json = emb_json(links)
 
     html = generate_html(data, nodes_json, links_json)
 
