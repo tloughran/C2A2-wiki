@@ -109,18 +109,37 @@ def field_block(body, field, stops):
     return re.sub(r"\s*\n\s*", " ", m.group(1).strip()) if m else ""
 
 
+def _trim_trip_body(body):
+    """Isolate a single triplet's field block: stop at a horizontal rule or a
+    new markdown section so trailing '---'/'## Notes' don't leak into the modal."""
+    lines = []
+    for line in body.splitlines():
+        if re.match(r"^\s*---\s*$", line) or re.match(r"^##\s", line):
+            break
+        lines.append(line)
+    return "\n".join(lines).strip("\n")
+
+
 def parse_triplets_by_tradition(vault):
     out = {}
     for path in sorted(glob.glob(os.path.join(vault, "traditions", "*", "prs_triplets.md"))):
         trad = os.path.basename(os.path.dirname(path))
+        rel = os.path.relpath(path, vault)
         text = open(path, encoding="utf-8", errors="replace").read()
         parts = re.split(r"(?m)^(PRS-\d+):\s*$", text)
         items = []
         for i in range(1, len(parts), 2):
             body = re.split(r"(?m)^PRS-\d+:\s*$", parts[i + 1] if i + 1 < len(parts) else "")[0]
+            body = _trim_trip_body(body)
             lab = re.search(r"(?m)^\s*Label:\s*(.+)$", body)
             prob = re.search(r"(?m)^\s*Problem:\s*(.+)$", body)
-            items.append((parts[i], lab.group(1).strip() if lab else "", prob.group(1).strip() if prob else ""))
+            items.append({
+                "tid": parts[i],
+                "label": lab.group(1).strip() if lab else "",
+                "prob": prob.group(1).strip() if prob else "",
+                "body": body,
+                "path": rel,
+            })
         out[trad] = items
     return out
 
@@ -274,14 +293,25 @@ def main():
     trip = parse_triplets_by_tradition(vault)
     valid_keys = set(trip)
     n_triples = sum(len(v) for v in trip.values())
-    triples_html = ['<div class="ptot">%d distinct PRS triples across %d traditions</div>' % (n_triples, len(trip))]
+    triples_html = ['<div class="ptot">%d distinct PRS triples across %d traditions '
+                    '<span class="phint">— click any triple to open it in full; use Prev/Next (or ← →) to page through all %d</span></div>'
+                    % (n_triples, len(trip), n_triples)]
+    trip_data = []  # flat, in render order — index == the modal's navigation position
+    gi = 0
     for trad in sorted(trip, key=lambda k: -len(trip[k])):
-        rows = "".join('<div class="trow"><span class="pid">%s</span> %s%s</div>' %
-                       (esc(tid), esc(lab), (' <span class="tprob">— %s</span>' % esc(prob[:140])) if prob else "")
-                       for tid, lab, prob in trip[trad])
+        rows = []
+        for it in trip[trad]:
+            rows.append('<div class="trow" data-ti="%d" onclick="openTrip(%d)">'
+                        '<span class="pid">%s</span> %s%s</div>' %
+                        (gi, gi, esc(it["tid"]), esc(it["label"]),
+                         (' <span class="tprob">— %s</span>' % esc(it["prob"][:140])) if it["prob"] else ""))
+            trip_data.append({"trad": trad, "tid": it["tid"], "label": it["label"],
+                              "path": it["path"], "html": md_lite(it["body"])})
+            gi += 1
         triples_html.append('<details class="card"><summary><span class="trad t-%s">%s</span> '
                             '<span class="cnt">%d triples</span></summary><div class="body">%s</div></details>'
-                            % (esc(trad), esc(trad), len(trip[trad]), rows))
+                            % (esc(trad), esc(trad), len(trip[trad]), "".join(rows)))
+    trip_json = json.dumps(trip_data, ensure_ascii=False).replace("</", "<\\/")
 
     # ---- Bridges panel (per tradition-pair + synthesis essay) ----
     cross = parse_cross(vault, valid_keys)
@@ -406,9 +436,25 @@ main{padding:6px 26px 60px}
 .t-arkanihamed{color:#A85D3A}.t-fredrickson{color:#C47A9A}.t-stump{color:#A8923A}.t-rohr{color:#9A7A5A}
 .t-wright{color:#7e8fc0}.t-loughran{color:#4A8A7A}.t-macintyre{color:#b0a0c0}
 .ptot{padding:10px 4px;color:var(--mut);font-size:13px}
+.phint{color:var(--mut);opacity:.8}
 .card>summary .x{color:var(--mut)}
-.trow{padding:2px 0;font-size:13px;border-bottom:1px solid var(--line)}
+.trow{padding:3px 6px;font-size:13px;border-bottom:1px solid var(--line);cursor:pointer;border-radius:4px}
+.trow:hover{background:rgba(201,168,76,.10)}
 .tprob{color:var(--mut)}
+.tmodal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.62);z-index:100;align-items:flex-start;justify-content:center;padding:6vh 24px 24px}
+.tmodal.on{display:flex}
+.tbox{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:10px;max-width:760px;width:100%;max-height:86vh;display:flex;flex-direction:column;box-shadow:0 14px 44px rgba(0,0,0,.55)}
+.tx{position:absolute;top:7px;right:11px;background:none;border:none;color:var(--mut);font-size:23px;line-height:1;cursor:pointer;padding:2px 6px}
+.tx:hover{color:var(--ink)}
+.thead{padding:13px 44px 11px 18px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center;flex-wrap:nowrap}
+.mt-label{color:var(--ink);font-size:14px;font-weight:600;flex:1;min-width:40px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tnavwrap{margin-left:auto;display:flex;gap:8px;align-items:center;flex-shrink:0}
+.tbody{overflow:auto;flex:1;padding:8px 18px 14px}
+.tfoot{padding:9px 18px;border-top:1px solid var(--line);display:flex;gap:12px;align-items:center}
+.tnav{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px 11px;cursor:pointer;font-size:12px;white-space:nowrap}
+.tnav:hover{border-color:var(--accent)}
+.tpos{color:var(--mut);font-size:12px;font-family:ui-monospace,Menlo,monospace;white-space:nowrap}
+.tsrc{color:var(--mut);font-size:11px}
 .brow{padding:8px 0;border-bottom:1px solid var(--line);font-size:13px}
 .bmeta{color:var(--mut);font-size:12px;margin:2px 0}
 .bnotes{color:var(--ink);font-size:12px;margin-top:3px}
@@ -437,7 +483,59 @@ main{padding:6px 26px 60px}
 <div class="view" id="v-bridge">""" + "\n".join(bridges_html) + """</div>
 <div class="view" id="v-find">""" + "\n".join(findings_html) + """</div>
 </main>
+<div id="tmodal" class="tmodal" onclick="if(event.target===this)closeTrip()">
+  <div class="tbox">
+    <button class="tx" onclick="closeTrip()" aria-label="Close">&times;</button>
+    <div class="thead">
+      <span class="trad" id="mt-trad"></span>
+      <span class="pid" id="mt-tid"></span>
+      <span class="mt-label" id="mt-label"></span>
+      <span class="tnavwrap">
+        <button class="tnav" onclick="navTrip(-1)">&larr; Prev</button>
+        <span class="tpos" id="mt-pos"></span>
+        <button class="tnav" onclick="navTrip(1)">Next &rarr;</button>
+      </span>
+    </div>
+    <div class="tbody body" id="mt-body"></div>
+    <div class="tfoot">
+      <span class="tsrc">source: <code id="mt-src"></code></span>
+    </div>
+  </div>
+</div>
 <script>
+var TRIPS = """ + trip_json + """;
+var _ti = -1;
+function openTrip(i){
+  if(i<0||i>=TRIPS.length)return;
+  _ti=i;
+  var t=TRIPS[i];
+  document.getElementById('mt-trad').textContent=t.trad;
+  document.getElementById('mt-trad').className='trad t-'+t.trad;
+  document.getElementById('mt-tid').textContent=t.tid;
+  document.getElementById('mt-label').textContent=t.label||'';
+  document.getElementById('mt-body').innerHTML=t.html;
+  document.getElementById('mt-src').textContent=t.path;
+  document.getElementById('mt-pos').textContent=(i+1)+' / '+TRIPS.length;
+  document.getElementById('mt-body').scrollTop=0;
+  document.getElementById('tmodal').classList.add('on');
+}
+function navTrip(d){
+  if(_ti<0)return;
+  var n=_ti+d;
+  if(n<0)n=TRIPS.length-1;
+  if(n>=TRIPS.length)n=0;
+  openTrip(n);
+}
+function closeTrip(){
+  document.getElementById('tmodal').classList.remove('on');
+  _ti=-1;
+}
+document.addEventListener('keydown',function(e){
+  if(!document.getElementById('tmodal').classList.contains('on'))return;
+  if(e.key==='Escape')closeTrip();
+  else if(e.key==='ArrowRight')navTrip(1);
+  else if(e.key==='ArrowLeft')navTrip(-1);
+});
 function sw(t){
   var tabs=document.querySelectorAll('.tab');
   for(var i=0;i<tabs.length;i++){tabs[i].classList.remove('on');}
