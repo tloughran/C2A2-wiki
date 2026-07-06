@@ -5353,3 +5353,46 @@ REVISE-170:
   Recommended action: Reconcile the daily summary against the source-of-truth registry (counts must match or the diff is surfaced / fails loud); emit a positive heartbeat for autonomous activity so a genuinely quiet day is confirmed rather than inferred from silence. Binds PREMISE-006 (transparent-flagging) and REVISE-167 family.
   Urgency: Medium
   Why flagged: PRESUMPTION + strong challenge + already-observed drift (divergent counts) + trivial fix; core member of the ABSENCE-AS-EVIDENCE SYSTEMIC-RISK cluster.
+
+## 2026-07-03 intake (15c; from 2026-07-02 EOD Inter-Tradition Dialogue Study cohort) — REVISE-171..174 (for Tom's review)
+## SYSTEMIC-RISK (new, High): AI-IN-THE-LOOP EVIDENTIAL VALIDITY cluster — the study's human/philosophical conclusions chain through four unvalidated links below (agent fidelity, metric construct validity, generate/analyze independence, direction-neutral framing) feeding ASSUMPTION-408 (now MONITOR-414). Validate each link before banking any human-tradition or anti-pessimism claim.
+
+REVISE-171:
+  Date: 2026-07-03 | Source: DISPOSITION-395 | Item: PRESUMPTION-436 (presumption) | Urgency: HIGH
+  Claim flagged: "That AI tradition-agents instantiate the human traditions faithfully enough that agent-dialogue is evidence about human-tradition interaction (transfer unchecked)."
+  15a/15b: PARTIALLY-SUPPORTED(Weak, aggregate-only) / CHALLENGED(Strong)
+  Net: Silicon-persona work shows heterogeneity collapse, stereotype amplification, and fidelity that DEGRADES with persona richness (arXiv 2604.23575; 2507.02919); support is confined to aggregate distributions. C2A2's own ASSUMPTION-007 was already strong-challenged/REVISE (2026-04-13). This is the external-validity crux of the whole study.
+  What is at risk: Every "human-tradition interaction" conclusion; agent artifacts (stereotype-amplified concord/conflict) mistaken for tradition dynamics; feeds ASSUMPTION-408's bearing claim.
+  Recommended action: Add an agent-to-human fidelity validation on a subset (run the same protocol with human tradition-holders; check effect sign + rough magnitude replicate); until then scope all findings to "agent interaction, provisionally suggestive about humans." Binds ASSUMPTION-007 and the AI-in-the-loop SYSTEMIC-RISK.
+  Urgency: High
+  Why flagged: PRESUMPTION + strong challenge + whole-study external validity at stake + concrete unperformed check; primary node of the AI-in-the-loop cluster.
+
+REVISE-172:
+  Date: 2026-07-03 | Source: DISPOSITION-396 | Item: PRESUMPTION-437 (presumption) | Urgency: MED-HIGH
+  Claim flagged: "That 'understanding' is a single quantity a numeric score validly tracks — construct validity of the understanding metric is unexamined."
+  15a/15b: NO-SUPPORT-FOUND(Weak, procedural) / CHALLENGED(Strong)
+  Net: Mainstream measurement theory treats understanding/comprehension as multidimensional; single-score validity requires construct work (Cronbach-Meehl 1955; Messick 1995) the item concedes is undone. A score change could reflect one sub-dimension (e.g. lexical overlap), not "understanding."
+  What is at risk: The headline effect (A-404's +0.086), the robust/directional/null sort (P-439), and the MacIntyre bearing claim (A-408) all inherit a metric of unknown construct validity.
+  Recommended action: Construct-validate the metric — factor structure; convergent validity vs author-ratification and blind human raters; discriminant validity vs pure lexical overlap (the study's own C0 finding that the lexical limb "does no real work" is a start); report sub-scores where they diverge. Binds A-408, A-404, REVISE-171.
+  Urgency: Medium-High
+  Why flagged: PRESUMPTION + strong challenge + foundational (underlies every downstream effect); remediable but currently unvalidated.
+
+REVISE-173:
+  Date: 2026-07-03 | Source: DISPOSITION-398 | Item: PRESUMPTION-440 (presumption) | Urgency: MED-HIGH
+  Claim flagged: "That evidence FOR MacIntyre's project is the desirable outcome — an 'against pessimism' framing smuggles the sought direction into the tool."
+  15a/15b: NO-SUPPORT-FOUND(None) / CHALLENGED(Strong)
+  Net: Preferred-direction framing with subjective measures and no blinding is a documented effect-inflating channel — allegiance effect (Dragioti 2015), observer-expectancy (Rosenthal), blind-recording need (Holman 2015), confirmation bias (Nickerson). The framing is a bias channel, not a mere hope. (C2A2's adversarial 14/15 pipeline is a partial structural control, tempering urgency below High.)
+  What is at risk: The allegiance-favored headline ("against pessimism") is discounted absent controls; compounds P-437 (unvalidated metric) and P-442 (non-independence).
+  Recommended action: Restate hypotheses direction-agnostically; preregister the desired-outcome-neutral analysis (ties A-407 / MONITOR-413); blind raters/agents to framing and condition; declare the allegiance risk as a limitation. Binds A-408, P-442.
+  Urgency: Medium-High
+  Why flagged: PRESUMPTION + strong challenge + subjective measure + un-blinded direction-committed framing.
+
+REVISE-174:
+  Date: 2026-07-03 | Source: DISPOSITION-399 | Item: PRESUMPTION-442 (presumption) | Urgency: MED-HIGH
+  Claim flagged: "That co-authorship where the same model family generates the dialogue data AND analyzes/writes it up does not compromise evidential independence."
+  15a/15b: NO-SUPPORT-FOUND(None) / CHALLENGED(Strong)
+  Net: Non-independence failure — LLM self-recognition/self-preference (Panickssery et al. NeurIPS 2024; arXiv 2410.21819) and psychometric/common-method-bias theory (Podsakoff 2003) require generation and scoring to be independent operations. Where model JUDGMENT enters scoring/interpretation, the study may partly measure the model's internal consistency, not the phenomenon.
+  What is at risk: Model-graded steps (understanding scores, C0 verdicts, interpretive write-up) may reflect self-preference; compounds agent-fidelity (P-436) and allegiance (P-440) into stacked non-independence.
+  Recommended action: Use a different model family (or blind human raters) for scoring/analysis than for generation; report inter-model agreement as an independence check; separate deterministic steps from model-judgment steps in reporting; treat same-family results as a lower bound pending cross-model replication. Binds P-436, P-440.
+  Urgency: Medium-High
+  Why flagged: PRESUMPTION + strong challenge + stacks with P-436/P-440; the steelman (deterministic computations less exposed than model-graded judgments) scopes the fix, not dissolves it.

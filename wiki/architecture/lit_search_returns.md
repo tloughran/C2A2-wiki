@@ -17453,3 +17453,233 @@ Running maxima after this run: PREMISE-093, MONITOR-411 (unchanged), REVISE-170,
   PROVENANCE: Origin: c2a2-lit-search-pipeline (scheduled); Chain: [14a/14b -> 15a, 15b -> 15c] (5 items); Transform: full pipeline run 2026-07-02; Current status: COHORT-DISPOSITIONED (5/5)
 
 ---
+
+## ===== RUN 2026-07-03 (c2a2-lit-search-pipeline; autonomous, Tom not present) =====
+Cohort: the 9 plain-[QUEUED] (non-EMPIRICAL) items from the 2026-07-02 EOD "Inter-Tradition Dialogue Study" self-awareness batch (14a/14b): ASSUMPTION-403, 406, 407, 408; PRESUMPTION-436, 437, 439, 440, 442.
+Note: the co-queued [QUEUED-EMPIRICAL] items (A-404, A-405, A-409, A-410; P-438, P-441) are routed to empirical/next-pass verification, NOT to 15a/15b — left in place (as are the older 2026-06-29/30 [QUEUED-EMPIRICAL] items A-392, A-395, A-396, A-397, A-399). See RUN TALLY.
+
+### 15a RETURNS (supportive)
+
+RETURN ASSUMPTION-403:
+  15a: PARTIALLY-SUPPORTED (Moderate) — participant/author ratification is a recognized validity locus: conversational grounding (Clark & Brennan — understanding constituted by addressee uptake/acceptance) + member checking / respondent validation. Supports the weak core ("ratified, not mapped"); "sole/only" overreaches.
+  Full: lit_search_results/for/ASSUMPTION-403_for.md
+RETURN ASSUMPTION-406:
+  15a: SUPPORTED (Strong, for the unit) — the conversation is the honest replication/clustering unit (Hurlbert pseudoreplication; Cameron-Miller; nested-data guidance). Support is for the unit choice; the k=5 CI reliability is a separate matter.
+  Full: lit_search_results/for/ASSUMPTION-406_for.md
+RETURN ASSUMPTION-407:
+  15a: PARTIALLY-SUPPORTED (Moderate-Strong, for the ordering) — preregistration ties hands / reduces researcher DoF (Nosek 2018); structured/enforced formats beat voluntary ones (Bakker 2020); Registered-Reports Stage-1/2 template. A machine gate enforces the auditable prereg-before-run invariant.
+  Full: lit_search_results/for/ASSUMPTION-407_for.md
+RETURN ASSUMPTION-408:
+  15a: PARTIALLY-SUPPORTED (Moderate) — consonant with MacIntyre's OWN anti-relativism: he affirms cross-tradition rational engagement (immanent critique, empathetic imagination, solving rival's problems). Supports directional consonance, not settling the dispute.
+  Full: lit_search_results/for/ASSUMPTION-408_for.md
+RETURN PRESUMPTION-436:
+  15a: PARTIALLY-SUPPORTED (Weak, aggregate-only) — some algorithmic fidelity at the distribution level (Argyle 2023; interview-conditioned personas). Nothing supports faithful individual/tradition instantiation. Links ASSUMPTION-007 (already REVISE).
+  Full: lit_search_results/for/PRESUMPTION-436_for.md
+RETURN PRESUMPTION-437:
+  15a: NO-SUPPORT-FOUND (Weak, procedural only) — single-composite scoring is a routine practice, but nothing supports treating "understanding" as single-quantity without dimensionality work; comprehension is standardly multidimensional.
+  Full: lit_search_results/for/PRESUMPTION-437_for.md
+RETURN PRESUMPTION-439:
+  15a: PARTIALLY-SUPPORTED (Weak) — low-N methodology endorses coarse robust/directional/null hedging over binary significance (Cumming; RI for few clusters). Supports "provisional," not "stable," sorting.
+  Full: lit_search_results/for/PRESUMPTION-439_for.md
+RETURN PRESUMPTION-440:
+  15a: NO-SUPPORT-FOUND (None) — no methodological basis licenses framing a preferred result direction as "desirable"; the literature treats it as a bias to neutralize.
+  Full: lit_search_results/for/PRESUMPTION-440_for.md
+RETURN PRESUMPTION-442:
+  15a: NO-SUPPORT-FOUND (None) — no support that same-model-family generate-and-analyze preserves independence; psychometrics requires generation and scoring to be independent.
+  Full: lit_search_results/for/PRESUMPTION-442_for.md
+
+### 15b RETURNS (challenging)
+
+RETURN ASSUMPTION-403:
+  15b: PARTIALLY-CHALLENGED (Moderate) — "sole/only judge" overreaches: member-checking critiques (Thomas 2017 — not a definitive test), intentional fallacy (Wimsatt & Beardsley), and grounding's bilateral speaker+addressee constitution. Author-ratification is privileged-but-defeasible, not sole.
+  Full: lit_search_results/against/ASSUMPTION-403_against.md
+RETURN ASSUMPTION-406:
+  15b: PARTIALLY-CHALLENGED (Moderate-Strong) — right unit, wrong confidence: cluster-robust CIs are asymptotic-in-clusters and over-reject at k=5 (MacKinnon & Webb 2018); even wild-cluster bootstrap / RI strain at 5 clusters. "Clustered CIs are correct" is misleading at this k.
+  Full: lit_search_results/against/ASSUMPTION-406_against.md
+RETURN ASSUMPTION-407:
+  15b: PARTIALLY-CHALLENGED (Moderate) — enforcing timing != securing the goal: undisclosed analysis-stage deviations are the norm (Claesen 2021); gates can be gamed by vague plans (PMC7757516); mixed effect on p-hacking/HARKing; risk of false "confirmatory" assurance.
+  Full: lit_search_results/against/ASSUMPTION-407_against.md
+RETURN ASSUMPTION-408:
+  15b: PARTIALLY-CHALLENGED (Moderate-Strong) — level/category mismatch: MacIntyre's thesis is about commensurating rival justificatory STANDARDS, not a paraphrase-understanding score; is/ought gap; AI-agent instantiation weakens transfer. Weak evidence against pessimism.
+  Full: lit_search_results/against/ASSUMPTION-408_against.md
+RETURN PRESUMPTION-436:
+  15b: CHALLENGED (Strong) — silicon-persona heterogeneity collapse + stereotype amplification + minority underrepresentation; fidelity DEGRADES with persona richness (arXiv 2604.23575, 2507.02919). Plus C2A2's own ASSUMPTION-007 strong-challenge. Transfer to human traditions unestablished.
+  Full: lit_search_results/against/PRESUMPTION-436_against.md
+RETURN PRESUMPTION-437:
+  15b: CHALLENGED (Strong) — understanding/comprehension is standardly multidimensional; single-score validity requires Cronbach-Meehl / Messick construct work the item flags as undone. Effect may reflect one sub-dimension (e.g. lexical overlap), not "understanding."
+  Full: lit_search_results/against/PRESUMPTION-437_against.md
+RETURN PRESUMPTION-439:
+  15b: CHALLENGED (Moderate-Strong) — few-cluster variability + Type-S/M inflation (Gelman-Carlin) + 20%-per-conversation leave-one-out perturbation make the robust/directional/null sort unstable, not stable. Provisional/triage OK; durable NO.
+  Full: lit_search_results/against/PRESUMPTION-439_against.md
+RETURN PRESUMPTION-440:
+  15b: CHALLENGED (Strong) — allegiance effect (Dragioti 2015), observer-expectancy (Rosenthal), blind-recording need (Holman 2015), confirmation bias (Nickerson): a preferred "desirable" direction with subjective measures + no blinding is a documented effect-inflating bias.
+  Full: lit_search_results/against/PRESUMPTION-440_against.md
+RETURN PRESUMPTION-442:
+  15b: CHALLENGED (Strong) — LLM self-recognition/self-preference (Panickssery et al. NeurIPS 2024; arXiv 2410.21819) + psychometric non-independence + common-method bias (Podsakoff 2003). Same-family generate-and-analyze is the exact configuration these literatures warn against.
+  Full: lit_search_results/against/PRESUMPTION-442_against.md
+
+### SYSTEMIC-RISK-FLAG (15b)
+
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-07-03
+  Affected items: PRESUMPTION-436 (primary), ASSUMPTION-408, PRESUMPTION-437, PRESUMPTION-440, PRESUMPTION-442
+  Common vulnerability: EVIDENTIAL-VALIDITY OF AN AI-IN-THE-LOOP STUDY READ AS EVIDENCE ABOUT HUMANS / PHILOSOPHY. The Inter-Tradition Dialogue Study's headline (understanding rises under listening; evidence "against MacIntyrean pessimism") chains through four unvalidated links — AI agents faithfully instantiate human traditions (436), the understanding metric is a valid single construct (437), same-model-family generation-and-analysis is independent (442), and no preferred direction is smuggled in (440) — all feeding the philosophical bearing claim (408). If any link fails, the study measures the model, not the phenomenon. Distinct from (but adjacent to) the standing MEASUREMENT-VALIDITY / structural-proxy cluster.
+  Literature basis: silicon-sampling heterogeneity collapse (arXiv 2604.23575; 2507.02919); LLM self-preference/self-recognition (Panickssery NeurIPS 2024; arXiv 2410.21819); construct-validity multidimensionality (Cronbach-Meehl 1955; Messick 1995; comprehension-IRT literature); allegiance/expectancy bias (Dragioti 2015; Rosenthal; Holman 2015).
+  Risk level: High
+  Recommendation: Treat the study's human/philosophical conclusions as provisional pending four concrete, schedulable checks: (a) agent-to-human fidelity validation on a subset; (b) construct validation of the understanding metric (dimensionality + convergent/discriminant); (c) independence via a different model family or blind human adjudication for scoring/analysis; (d) blinded, direction-agnostic framing/preregistration. None require discarding the study; each converts a smuggled assumption into a tested one.
+
+## 15c DISPOSITIONS (2026-07-03)
+
+DISPOSITION-391:
+  Date: 2026-07-03
+  Item: ASSUMPTION-403
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: The weak core — understanding is ratified by participants' uptake, not by third-party sentence-mapping — is genuinely supported (grounding theory; respondent validation). The strong exclusive form ("only ... sole judge") is what the challenge hits: ratification is privileged-but-defeasible, and grounding is bilateral, so the author cannot be the sole arbiter.
+  Disposition: MONITOR
+  Reasoning: Symmetric partial/partial on an ASSUMPTION where the split falls cleanly on a scope word ("sole"). The defensible premise (author-ratification is high-weight evidence, cross-checked) differs from the stated one (sole judge). MONITOR rather than INCORPORATE the overclaim or REVISE the sound core.
+    What would change the disposition: Evidence that author-ratification, cross-checked against an independent semantic verdict, rarely disagrees -> INCORPORATE the "privileged but paired" form; frequent author-verdict errors -> REVISE toward mandatory dual-criterion.
+    Monitoring cadence: Weekly
+    Priority: Medium
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+  -> MONITOR-412
+
+DISPOSITION-392:
+  Date: 2026-07-03
+  Item: ASSUMPTION-406
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong (for the unit)
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate-Strong (for the k=5 CI)
+  Net assessment: The load-bearing claim — the conversation is the honest unit of replication and inference must be clustered there, not pseudoreplicated on turns — is strongly and uncontestedly supported. The challenge does not touch the unit; it targets the reliability of standard cluster-robust CIs at k=5, which the item itself already flags as underpowered.
+  Disposition: INCORPORATE
+  Reasoning: SUPPORTED (strong) + only a scoped, method-level challenge resolved by a caveat (not a refutation of the unit). Incorporate the unit-of-analysis principle; attach the explicit small-cluster caveat (use wild-cluster bootstrap / randomization inference, treat k=5 intervals as fragile). Consistency-checked against validated premises — no contradiction; complements the verification-discipline family.
+    Validated premise statement: When observations are nested within conversations, the conversation is the honest unit of replication and inference must be clustered at that level (not pseudoreplicated on turns/utterances); at small cluster counts (e.g. k=5) the unit choice remains correct but standard cluster-robust CIs are unreliable and must be replaced by small-cluster-valid procedures (wild-cluster bootstrap / randomization inference) with fragility reported.
+    Confidence: Moderate-High
+    Applicable to: all C2A2 empirical cells with nested/clustered dialogue data; the Inter-Tradition Dialogue Study inference (pairs with A-404, A-410, P-439); statistics of any conversation-level effect.
+    Re-check cadence: Quarterly
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: INCORPORATED
+  -> PREMISE-094
+
+DISPOSITION-393:
+  Date: 2026-07-03
+  Item: ASSUMPTION-407
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate-Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: A machine gate enforces the one objectively checkable part of preregistration (plan exists and is frozen before the run), which the literature endorses and which removes the most deniable abuse (retroactive "pre"registration). But enforcement of timing does not secure the goal: undisclosed analysis-stage deviations are the norm, vague plans satisfy gates, and the effect on p-hacking/HARKing is mixed — so the gate is necessary-not-sufficient and risks false "confirmatory" assurance.
+  Disposition: MONITOR
+  Reasoning: Moderate support meets moderate challenge; the gate is good practice but its sufficiency is empirically contested. MONITOR, with the clear improvement path (pair the gate with an adherence diff + specificity check) noted rather than INCORPORATED as-is.
+    What would change the disposition: Add an executed-vs-frozen-plan adherence diff (fail loud on undisclosed deviation) + plan-specificity check -> INCORPORATE the augmented gate; evidence the gate is routinely satisfied by vacuous plans -> REVISE.
+    Monitoring cadence: Weekly
+    Priority: Medium
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+  -> MONITOR-413
+
+DISPOSITION-394:
+  Date: 2026-07-03
+  Item: ASSUMPTION-408
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: The claim is consonant with MacIntyre's own anti-relativism (he affirms cross-tradition engagement is possible), so as modest illustration it has support. But "evidence AGAINST pessimism" overreaches: his thesis concerns commensurating rival justificatory standards, not a paraphrase-understanding score; inferring an anti-pessimism conclusion from a metric crosses an is/ought and construct-level gap, and AI-agent instantiation weakens the bearing further.
+  Disposition: MONITOR
+  Reasoning: The support is directional-consonance only; the challenge is a real level/category mismatch. This item's evidential value depends on P-437 (construct validity) and P-436 (agent fidelity), both flagged REVISE below — so its bearing is contingent on their resolution. MONITOR at elevated priority; do not let "evidence against pessimism" harden into a banked claim.
+    What would change the disposition: A stated bridging argument + philosopher blind-rating that measured "understanding" involves adjudicating rival standards (not mere paraphrase) -> reconsider; confirmation it is paraphrase-only -> REVISE the bearing claim.
+    Monitoring cadence: Weekly
+    Priority: Medium-High
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+  -> MONITOR-414
+
+DISPOSITION-395:
+  Date: 2026-07-03
+  Item: PRESUMPTION-436
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak (aggregate-only)
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: The unchecked transfer — AI agents instantiate human traditions faithfully enough that agent-dialogue is evidence about human-tradition interaction — is strongly challenged. Silicon-persona work shows heterogeneity collapse, stereotype amplification, and fidelity that degrades with persona richness; support is confined to aggregate distributions. C2A2's own ASSUMPTION-007 was already strong-challenged/REVISE. This is the crux link of the study's external validity.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong challenge + high stakes (whole-study external validity) + a concrete but unperformed check. Per 15c heuristic (unstated premise, strongly challenged) this leans REVISE with high urgency. Primary node of the AI-in-the-loop SYSTEMIC-RISK cluster.
+    What is at risk: Every "human-tradition interaction" conclusion; agent artifacts (stereotype-amplified concord/conflict) could be mistaken for tradition dynamics; feeds A-408's bearing claim.
+    Recommended action: Add an agent-to-human fidelity validation on a subset (same protocol with human tradition-holders; check effect sign + rough magnitude); until then, scope all findings to "agent interaction, provisionally suggestive about humans." Bind ASSUMPTION-007 (REVISE) and the SYSTEMIC-RISK-FLAG.
+    Urgency: High
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+  -> REVISE-171
+
+DISPOSITION-396:
+  Date: 2026-07-03
+  Item: PRESUMPTION-437
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak (procedural only)
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Treating "understanding" as a single quantity a numeric score validly tracks is challenged by mainstream measurement theory: comprehension/understanding is standardly multidimensional and single-score validity requires construct work (Cronbach-Meehl / Messick) the item concedes is undone. A change in the score could reflect one sub-dimension (e.g. lexical overlap) rather than understanding.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong challenge + foundational stakes (the metric underlies A-404's effect, P-439's sort, and A-408's bearing). Remediable but currently unvalidated; REVISE at medium-high urgency. Member of the AI-in-the-loop SYSTEMIC-RISK cluster.
+    What is at risk: The headline effect and every downstream claim inherit a metric of unknown construct validity.
+    Recommended action: Perform construct validation — factor structure; convergent validity vs author-ratification and blind human raters; discriminant validity vs pure lexical overlap (the study's own C0 finding that the lexical limb "does no real work" is a start); report sub-scores where they diverge. Binds A-408, A-404, REVISE-171.
+    Urgency: Medium-High
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+  -> REVISE-172
+
+DISPOSITION-397:
+  Date: 2026-07-03
+  Item: PRESUMPTION-439
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Moderate-Strong
+  Net assessment: A coarse robust/directional/null taxonomy is the right honest posture at low N (supported), but the STABILITY of that sort at k=5 is challenged: few-cluster variability and Type-S/M inflation mean a single conversation (20% of the sample) can move a result between buckets. Provisional/triage use is defensible; durable/banked use is not.
+  Disposition: MONITOR
+  Reasoning: The item is partly self-aware (concedes underpowering) and the fix is a cheap sensitivity analysis, not a redesign — so MONITOR (high) rather than REVISE. The vulnerable claim is the word "stable"; the remedy is to operationalize it as leave-one-out robustness + triage-not-conclusion.
+    What would change the disposition: Leave-one-conversation-out recomputation showing low churn -> retire toward INCORPORATE (provisional-sort premise); high churn -> REVISE (do not bank any bucket without higher k).
+    Monitoring cadence: Weekly
+    Priority: High
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: MONITORING
+  -> MONITOR-415
+
+DISPOSITION-398:
+  Date: 2026-07-03
+  Item: PRESUMPTION-440
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Framing evidence "against pessimism" as the desirable outcome is challenged as a textbook allegiance/expectancy channel: preferred-direction framing with subjective measures and no blinding inflates results in the favored direction (Dragioti 2015; Rosenthal; Holman 2015; Nickerson). No literature supports the framing being benign.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong challenge + subjective measure + un-blinded, direction-committed framing = live bias. REVISE at medium-high urgency. Note: C2A2's adversarial 14/15 pipeline (and this very 15b pass) is a partial structural control, which tempers urgency below high.
+    What is at risk: The allegiance-favored headline is discounted absent controls; compounds with P-437 (unvalidated metric) and P-442 (non-independence).
+    Recommended action: Restate hypotheses in direction-agnostic form; preregister the desired-outcome-neutral analysis (ties A-407); blind raters/agents to framing and condition; declare the allegiance risk as a limitation. Binds A-408, P-442.
+    Urgency: Medium-High
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+  -> REVISE-173
+
+DISPOSITION-399:
+  Date: 2026-07-03
+  Item: PRESUMPTION-442
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Same-model-family generation-and-analysis is challenged as a non-independence failure: LLM self-recognition/self-preference (Panickssery NeurIPS 2024) and psychometric/common-method-bias theory hold that generation and scoring must be independent operations. Where model JUDGMENT enters scoring/interpretation, the study may partly measure the model's internal consistency rather than the phenomenon.
+  Disposition: REVISE
+  Reasoning: PRESUMPTION + strong challenge + stacks with P-436 and P-440 into a compounded non-independence. REVISE at medium-high urgency. The steelman (deterministic computations are less exposed than model-graded judgments) scopes the fix rather than dissolving it.
+    What is at risk: Model-graded steps (understanding scores, C0 verdicts, interpretive write-up) may reflect self-preference; compounds agent-fidelity (P-436) and allegiance (P-440).
+    Recommended action: Use a different model family (or blind human raters) for scoring/analysis than for generation; report inter-model agreement as an independence check; separate deterministic steps from model-judgment steps in reporting; treat same-family results as a lower bound pending cross-model replication. Binds P-436, P-440, SYSTEMIC-RISK-FLAG.
+    Urgency: Medium-High
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a, 15b -> 15c]; Transform: net evaluation and disposition; Current status: REVISION-FLAGGED
+  -> REVISE-174
+
+### CONSISTENCY CHECK vs validated_premises.md (PREMISE-001..093)
+- PREMISE-094 (conversation-as-honest-replication-unit + small-cluster CI caveat): NO contradiction. It is a methodological/statistics premise with no prior counterpart; it complements the verification-discipline family (pair-every-structural-check-with-a-semantic-check) and the fail-loud/monitor cluster (PREMISE-086). It constrains, and is consistent with, A-404/A-410/P-439 inference. INCORPORATE proceeds.
+- No new premise contradicts an existing one.
+
+### RUN TALLY 2026-07-03 (autonomous; Tom not present)
+9 plain-[QUEUED] items from the 2026-07-02 EOD Inter-Tradition Dialogue Study cohort (A-403,406,407,408; P-436,437,439,440,442) searched first-time by 15a+15b and dispositioned by 15c (DISPOSITION-391..399). End-to-end: QUEUED-undispositioned 9 -> 0 for this (non-EMPIRICAL) cohort.
+- 1 INCORPORATE: PREMISE-094 (A-406 — conversation is the honest replication/clustering unit; standard clustered CIs unreliable at k=5, use small-cluster-valid procedures; Moderate-High).
+- 4 MONITOR: MONITOR-412 (A-403, MED — author-ratification is privileged-but-not-sole; pair with an independent semantic check); MONITOR-413 (A-407, MED — prereg machine gate enforces timing not adherence; add adherence diff + specificity check); MONITOR-414 (A-408, MED-HIGH — MacIntyre bearing claim overreaches metric->philosophy; contingent on P-436/P-437); MONITOR-415 (P-439, HIGH — k=5 robust/directional/null sort is provisional not stable; add leave-one-out sensitivity).
+- 4 REVISE: REVISE-171 (P-436, HIGH — AI agents may not faithfully instantiate human traditions; validate agent->human fidelity; ties ASSUMPTION-007); REVISE-172 (P-437, MED-HIGH — understanding-metric construct validity unexamined; run dimensionality + convergent/discriminant checks); REVISE-173 (P-440, MED-HIGH — "against pessimism" framing = allegiance/expectancy bias; direction-agnostic + blind + prereg); REVISE-174 (P-442, MED-HIGH — same-model-family generate-and-analyze non-independence; score with a different family / blind humans).
+SYSTEMIC-RISK (new, High): AI-IN-THE-LOOP EVIDENTIAL VALIDITY cluster (P-436/437/440/442 + A-408) — the Inter-Tradition Dialogue Study's human/philosophical claims chain through four unvalidated links (agent fidelity, metric construct validity, generate/analyze independence, direction-neutral framing). Fix discipline: validate each link (fidelity vs humans; construct validation; cross-model/human scoring; blinded direction-agnostic prereg) before banking any human-tradition or anti-pessimism conclusion.
+Deferred (NOT processed — out of 15a/15b scope): [QUEUED-EMPIRICAL] items A-404, A-405, A-409, A-410, P-438, P-441 (2026-07-02 cohort) and A-392, A-395, A-396, A-397, A-399 (2026-06-29/30 cohort) remain queued for the empirical/next-pass verification track, per their tags (e.g. A-392: "empirically testable, not literature — not 15a/15b").
+Priority order for Tom (this cohort): REVISE-171 (HIGH — external-validity crux; without agent->human fidelity the whole study may be about the model) > REVISE-172 (MED-HIGH — unvalidated understanding metric underlies every effect) > REVISE-174 (MED-HIGH — generate/analyze non-independence) = REVISE-173 (MED-HIGH — allegiance framing) > MONITOR-414 (MED-HIGH — don't bank the MacIntyre bearing claim). Carries forward prior keystones (REVISE-167/169 from 2026-07-02; REVISE-147 dead-man's-switch; ASSUMPTION-007 REVISE from 2026-04-13).
+Running maxima after this run: PREMISE-094, MONITOR-415, REVISE-174, DISPOSITION-399.
+
+  PROVENANCE: Origin: c2a2-lit-search-pipeline (scheduled); Chain: [14a/14b -> 15a, 15b -> 15c] (9 items); Transform: full pipeline run 2026-07-03; Current status: COHORT-DISPOSITIONED (9/9)
+
+---

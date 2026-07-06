@@ -7250,3 +7250,147 @@ ASSUMPTION-402:
     Transform at each step:
       14a: Extracted from both sync agents' explicit refusal-to-authenticate statements in the 2026-07-01 morning-scrape and evening-sync transcripts. [stated]
     Current status: UNTESTED
+
+ASSUMPTION-403:
+  Date identified: 2026-07-02
+  Statement: In the Inter-Tradition Dialogue Study, understanding is validly established only when the original claimant is the sole judge of whether their claim was captured — "understanding is established the only way it legitimately can be — the person who made the claim is the sole judge of whether it has been captured — never the convener, never a third-party translator." Stated as the paper's core validity standard: "Ratified by its author, not mapped between sentences."
+  Context: "The convener" session (2026-07-02) — rewriting the study's thesis away from "inhabitation-checked-by-the-inhabited" toward the author-ratification standard.
+  Type: epistemic / methodological
+  Related decisions: DECISION-074
+  Related items: PRESUMPTION-438 (the author-ratification standard under AI-agent simulation)
+  Testability: framework commitment (foundational to the study's design) — but the general claim, that mutual understanding in dialogue is better validated by author-ratification than by third-party semantic mapping, is testable via literature on dialogue, verification, and theories of understanding.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-403
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the explicitly stated rephrasing of the study's validity standard in the convener session. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-404:
+  Date identified: 2026-07-02
+  Statement: A "listening" dialogue condition produces measurably higher understanding than a "deaf" condition (hypothesis P1). Reported result this run: listen−deaf = +0.086, 95% CI [+0.072, +0.100], groups fully separated, exact rank p ≈ 0.004 ("Robust").
+  Context: "The convener" session — the §5.5 error analysis computed directly from the run transcripts.
+  Type: empirical
+  Related decisions: DECISION-074
+  Related items: ASSUMPTION-406 (conversation-clustered inference); PRESUMPTION-437 (understanding as a single measurable quantity)
+  Testability: testable empirically — was tested in this run (k=5); a strengthened, higher-powered panel would tighten the estimate.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-404
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated P1 hypothesis and its reported effect size/interval. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-405:
+  Date identified: 2026-07-02
+  Statement: The C0 gate validly discriminates a faithful restatement from a strawman on verdict discrimination — faithful 0.93 (Wilson [0.836, 0.973]) vs strawman 0.00 (Wilson [0, 0.149]), non-overlapping. The stated caveat (folded in this session): the gate's *fidelity* limb (lexical overlap, +0.043, 95% CI [−0.016, +0.102]) includes zero, so the gate "passes on the verdict discrimination alone; word-overlap is doing no real work."
+  Context: "The convener" session — the C0 gate design and its honest-correction #2.
+  Type: methodological / empirical
+  Related decisions: DECISION-074
+  Related items: ASSUMPTION-403 (author-ratification standard the gate operationalizes)
+  Testability: testable empirically — the discrimination and the fidelity-limb weakness are both measured; scope is k=5.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-405
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated C0-gate result and the stated fidelity-limb caveat. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-406:
+  Date identified: 2026-07-02
+  Statement: The honest unit of replication for the study is the conversation, not the individual event — so conversation-clustered confidence intervals (k=5) are the correct inferential unit; "with k=5 the intervals are wide by design." Stated as a methodological note built into §5.5.
+  Context: "The convener" session — defending the error analysis' inferential choices.
+  Type: methodological
+  Related decisions: DECISION-074
+  Related items: ASSUMPTION-404, ASSUMPTION-410; PRESUMPTION-439 (k=5 adequacy for a "robust/directional/null" sort)
+  Testability: testable via literature — clustered/hierarchical inference with a small number of clusters; unit-of-analysis choice in nested dialogue data.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-406
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated unit-of-replication commitment and clustered-interval reporting. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-407:
+  Date identified: 2026-07-02
+  Statement: Preregistration-before-run should be enforced as a machine gate — "preregister-before-run becomes a machine gate (that's Stage 2)" of the Appendix G runner. The invariant is carried in "from the first commit."
+  Context: "InterT study" session (2026-07-02) — staging Appendix G and naming the preregister-before-run invariant as a Stage 2 machine gate.
+  Type: methodological / normative
+  Related decisions: DECISION-075
+  Related items: ASSUMPTION-409 (spec + one-file runner)
+  Testability: testable via literature — efficacy of preregistration in reducing analytic flexibility / researcher degrees of freedom; enforceability of automated preregistration gates.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-407
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated Stage 2 invariant (preregister-before-run as a machine gate). [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-408:
+  Date identified: 2026-07-02
+  Statement: The study bears on — and its results are read as evidence against — pessimism about the fulfillment of Alasdair MacIntyre's recovery project (that rival traditions can, in principle, reach genuine mutual understanding). The corrected help-popup wording frames the tool "against pessimism in regard to the fulfillment of Alasdair MacIntyre's recovery project."
+  Context: "The convener" / "InterT study" sessions — the study's stated framing and the verified popup wording on the live Inter-Tradition Study tab.
+  Type: epistemic / empirical
+  Related decisions: DECISION-074, DECISION-075
+  Related items: PRESUMPTION-440 (optimism-toward-fulfillment as the sought outcome)
+  Testability: testable via literature (MacIntyre scholarship on tradition-constituted rationality and commensurability) and empirically (whether the convener protocol yields genuine understanding across traditions).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-408
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated study framing ("against pessimism ... MacIntyre's recovery project"). [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-409:
+  Date identified: 2026-07-02
+  Statement: A single declarative study-spec file plus a one-file runner can take a "cell" end-to-end (generate → analyze → render a paper); the stated success criterion is "a new cell runs from a single spec file." The head-start is noted: `sim_harness.py` + `sim_analyze.py` are already most of the runner, and the spec "just formalizes today's CLI flags and constants."
+  Context: "InterT study" session — defining Appendix G, Stage 1 (study spec + one-file runner) as the next session's opener.
+  Type: architectural / methodological
+  Related decisions: DECISION-075
+  Related items: ASSUMPTION-407 (preregister gate as Stage 2); PRESUMPTION-441 (one-cell → arbitrary-cell generalization)
+  Testability: testable empirically — whether a new cell in fact runs end-to-end from one spec file without per-cell code changes.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-409
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated Appendix G Stage 1 goal and success criterion. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-410:
+  Date identified: 2026-07-02
+  Statement: The thesis-bearing hypothesis P3′b (that consciousness-type claims are harder to faithfully restate than spacetime-type claims) is currently directional/underpowered, not a banked "PASS." With only 4 failures and consciousness points already 60% of faithful events, 3-of-4 consciousness failures ≈ the base-rate expectation (~0.48); the only genuinely suggestive signal is zero failures among 20 spacetime restatements (~0.18). Stated as an honest correction the error analysis forced, applied throughout (scorecard, intro, results, discussion, conclusion) and reframed as "a promissory note the strengthened panel must settle, not a banked result."
+  Context: "The convener" session — honest-correction #1 from the §5.5 error analysis.
+  Type: methodological / empirical
+  Related decisions: DECISION-075
+  Related items: ASSUMPTION-406 (k=5 inference); OPEN-106 (does P3′b survive a strengthened panel?)
+  Testability: testable empirically — the §5.3 strengthening run is precisely what would earn P3′b a quotable confidence interval.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-410
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated downgrade of P3′b to directional/underpowered. [stated]
+    Current status: UNTESTED

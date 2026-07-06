@@ -16459,3 +16459,33 @@ MONITOR-411:
   15a/15b: PARTIALLY-SUPPORTED(Weak-Moderate) / CHALLENGED(Moderate)
   What would change disposition: metabolism view confirmed to read OpenStory DB independently -> REVISE (restore as required cross-check); confirmed a re-rendering of git/vault -> retire. See DISPOSITION-383 in lit_search_returns.md.
   Cadence: Weekly | Next 15d check: 2026-07-08
+
+## 2026-07-03 cohort MONITOR (15c; from 2026-07-02 EOD Inter-Tradition Dialogue Study batch; default weekly cadence)
+
+MONITOR-412:
+  Item: ASSUMPTION-403 (Understanding validly established only when the original claimant is the sole judge of whether their claim was captured — "ratified by its author, not mapped between sentences")
+  Disposition date: 2026-07-03 | Source: DISPOSITION-391 | Priority: Medium
+  15a/15b: PARTIALLY-SUPPORTED(Moderate) / PARTIALLY-CHALLENGED(Moderate)
+  What would change disposition: author-ratification cross-checked vs an independent semantic verdict rarely disagrees -> INCORPORATE the "privileged but paired" form; frequent author-verdict errors -> REVISE toward mandatory dual-criterion. Split falls on the scope word "sole"; grounding is bilateral, member-checking is non-definitive. See DISPOSITION-391 in lit_search_returns.md.
+  Cadence: Weekly | Next 15d check: 2026-07-10
+
+MONITOR-413:
+  Item: ASSUMPTION-407 (Preregistration-before-run should be enforced as a machine gate — Appendix G Stage 2 invariant)
+  Disposition date: 2026-07-03 | Source: DISPOSITION-393 | Priority: Medium
+  15a/15b: PARTIALLY-SUPPORTED(Moderate-Strong) / PARTIALLY-CHALLENGED(Moderate)
+  What would change disposition: add an executed-vs-frozen-plan adherence diff (fail-loud on undisclosed deviation) + plan-specificity check -> INCORPORATE the augmented gate; evidence the gate is routinely satisfied by vacuous plans -> REVISE. Gate enforces timing, not adherence/honesty. See DISPOSITION-393 in lit_search_returns.md.
+  Cadence: Weekly | Next 15d check: 2026-07-10
+
+MONITOR-414:
+  Item: ASSUMPTION-408 (The study is evidence against pessimism about MacIntyre's recovery project — cross-tradition understanding is achievable)
+  Disposition date: 2026-07-03 | Source: DISPOSITION-394 | Priority: Medium-High
+  15a/15b: PARTIALLY-SUPPORTED(Moderate) / PARTIALLY-CHALLENGED(Moderate-Strong)
+  What would change disposition: a stated is/ought bridging argument + philosopher blind-rating that measured "understanding" involves adjudicating rival justificatory standards (not mere paraphrase) -> reconsider; confirmation it is paraphrase-only -> REVISE. Bearing is contingent on REVISE-171 (agent fidelity) and REVISE-172 (metric construct validity). Do not bank "evidence against pessimism." See DISPOSITION-394 in lit_search_returns.md.
+  Cadence: Weekly | Next 15d check: 2026-07-10
+
+MONITOR-415:
+  Item: PRESUMPTION-439 (k=5, though acknowledged underpowered, still supports a stable robust/directional/null sort of the results)
+  Disposition date: 2026-07-03 | Source: DISPOSITION-397 | Priority: High
+  15a/15b: PARTIALLY-SUPPORTED(Weak) / CHALLENGED(Moderate-Strong)
+  What would change disposition: leave-one-conversation-out recomputation of the sort showing low churn -> retire toward INCORPORATE (provisional-sort premise, bind PREMISE-094); high churn -> REVISE (do not bank any bucket without higher k). "Provisional/triage" defensible; "stable" is not. See DISPOSITION-397 in lit_search_returns.md.
+  Cadence: Weekly | Next 15d check: 2026-07-10

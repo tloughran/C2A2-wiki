@@ -902,3 +902,33 @@ DECISION-073:
     Transform at each step:
       14a: Recorded from the attended "PRS backlog runbook" session (2026-06-30). Tom ran the Mac-side commit/push; the session drove ingestion, QC, connectome regen, and the No-Blind-Push review.
     Current status: EXECUTED (attended; live on origin/main)
+
+DECISION-074:
+  Date: 2026-07-02 (attended — "The convener" / Inter-Tradition Dialogue Study session, Tom present)
+  Title: Adopt author-ratification as the Inter-Tradition Dialogue convener's validity standard
+  Decision: The study's standard for "understanding was achieved" is set to author-ratification — the person who made a claim is the sole judge of whether it was captured, "never the convener, never a third-party translator" ("Ratified by its author, not mapped between sentences"). This replaced the earlier "inhabitation-checked-by-the-inhabited" phrasing and is now load-bearing across the paper (intro, results, discussion, conclusion). The study operationalizes it through the C0 gate (faithful-vs-strawman verdict discrimination) and the listen/deaf contrast.
+  Status: ADOPTED (attended; ratified by Tom in the session). Methodological/meta-architecture commitment for the convener component; the study drafted around it is local (nothing published).
+  Rationale: Author-ratification is stated as the only legitimate way understanding can be established in cross-tradition dialogue; it also reinforces the paper's own finding that the C0 gate's word-overlap limb does no real work while its verdict-discrimination limb is decisive.
+  Related: ASSUMPTION-403, 404, 405, 406, 408; PRESUMPTION-437, 438, 442; OPEN-108
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the attended convener session's explicit rephrasing and ratification of the validity standard. Draft study `study_interT_dialogue_c2a2.md`; nothing published.
+    Current status: ADOPTED (attended; study local)
+
+DECISION-075:
+  Date: 2026-07-02 (attended — "InterT study" session, Tom present)
+  Title: Ship the Inter-Tradition Study tab + Appendix G live in the Explorer; park the §5.3 strengthening run and publication
+  Decision: The Inter-Tradition Study tab (with Appendix G) was merged to `main` and confirmed live in the Explorer's Accelerator Tools row, with the corrected help-popup wording, verified via cache-busted fetch (`explorer.html?cb=verify1` shows the new row; `interT_study.html?cb=verify1` renders). Two moves were explicitly parked per Tom's call: the §5.3 strengthening run (which would earn P3′b a real confidence interval) and the publish/Explorer-render-of-the-paper decision. The next session opens on Appendix G, Stage 1 — a declarative study spec + a one-file runner (generate → analyze → render), with preregister-before-run to become a Stage 2 machine gate.
+  Status: REALIZED (tab live on GitHub Pages after the real 07-02 Pages incident cleared; verified). Strengthening + publish DEFERRED. A drift risk is logged: Appendix G lives in both the source `.md` and the embedded HTML copy, so future study edits must be re-pasted; the commit SHA was not captured (read from `git log` on resume).
+  Rationale: The tab is ISME-facing and ready; the study's thesis-bearing claim (P3′b) is not yet a banked result (ASSUMPTION-410), so publication waits on the strengthening run rather than shipping an overstated result.
+  Related: ASSUMPTION-407, 409, 410; PRESUMPTION-441; OPEN-106, OPEN-107
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the attended "InterT study" session close (2026-07-02), including the live-URL verification and the handoff's parked-moves list. Git push/SHA held to Tom's Mac per the standing no-blind-push rule.
+    Current status: REALIZED (tab live; strengthening + publish deferred)

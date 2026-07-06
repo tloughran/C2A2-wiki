@@ -10548,3 +10548,105 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION
   Priority: LOW-MEDIUM
   Search angle: observability of low-touch/autonomous activity; drift between summary dashboards and source-of-truth registries.
+
+
+# ===== 2026-07-02 EOD cohort (14a/14b) — source: attended Inter-Tradition Dialogue Study ("The convener" + "InterT study") =====
+
+[ASSUMPTION] ASSUMPTION-403: Understanding is validly established only when the original claimant is the sole judge of whether their claim was captured ("ratified by its author, not mapped between sentences").
+  Status: [QUEUED] [QUEUED 2026-07-02] [SEARCHED-15a: 2026-07-03] [SEARCHED-15b: 2026-07-03] [DISPOSITIONED-15c: 2026-07-03]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (-> MONITOR-412; DISPOSITION-391)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION
+  Priority: HIGH
+  Search angle: theories of understanding in dialogue; author-ratification vs third-party semantic mapping as a validity criterion; verification-by-the-speaker in communication research.
+
+[ASSUMPTION] ASSUMPTION-404: A "listening" dialogue condition yields measurably higher understanding than a "deaf" condition (P1; observed +0.086, CI [0.072,0.100]).
+  Status: [QUEUED-EMPIRICAL] [QUEUED 2026-07-02]
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION
+  Priority: MEDIUM
+  Search angle: active-listening / uptake effects on mutual understanding; experimental manipulations of listening in dialogue.
+
+[ASSUMPTION] ASSUMPTION-405: The C0 gate validly discriminates faithful restatement from strawman on verdict (0.93 vs 0.00), while its lexical-overlap fidelity limb does no real work (CI includes 0).
+  Status: [QUEUED-EMPIRICAL] [QUEUED 2026-07-02]
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION
+  Priority: MEDIUM
+  Search angle: faithful-vs-strawman restatement detection; why lexical overlap under-measures semantic fidelity; verdict-based vs surface-based paraphrase evaluation.
+
+[ASSUMPTION] ASSUMPTION-406: The honest unit of replication is the conversation (k=5), so conversation-clustered CIs are the correct inferential unit.
+  Status: [QUEUED] [QUEUED 2026-07-02] [SEARCHED-15a: 2026-07-03] [SEARCHED-15b: 2026-07-03] [DISPOSITIONED-15c: 2026-07-03]
+  15a result: SUPPORTED (Strong, for the unit) | 15b result: PARTIALLY-CHALLENGED (Moderate-Strong, k=5 CI) | Disposition: INCORPORATE (-> PREMISE-094; DISPOSITION-392)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION
+  Priority: MEDIUM
+  Search angle: clustered/hierarchical inference with few clusters; unit-of-analysis choice in nested dialogue data.
+
+[ASSUMPTION] ASSUMPTION-407: Preregistration-before-run should be enforced as a machine gate (Appendix G Stage 2 invariant).
+  Status: [QUEUED] [QUEUED 2026-07-02] [SEARCHED-15a: 2026-07-03] [SEARCHED-15b: 2026-07-03] [DISPOSITIONED-15c: 2026-07-03]
+  15a result: PARTIALLY-SUPPORTED (Moderate-Strong) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR (-> MONITOR-413; DISPOSITION-393)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION
+  Priority: MEDIUM
+  Search angle: efficacy of preregistration in reducing researcher degrees of freedom; enforceability/limits of automated preregistration gates.
+
+[ASSUMPTION] ASSUMPTION-408: The study bears on, and its results are evidence against, pessimism about the fulfillment of MacIntyre's recovery project (cross-tradition understanding is achievable).
+  Status: [QUEUED] [QUEUED 2026-07-02] [SEARCHED-15a: 2026-07-03] [SEARCHED-15b: 2026-07-03] [DISPOSITIONED-15c: 2026-07-03]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: PARTIALLY-CHALLENGED (Moderate-Strong) | Disposition: MONITOR (-> MONITOR-414; DISPOSITION-394)
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION
+  Priority: MEDIUM-HIGH
+  Search angle: MacIntyre on tradition-constituted rationality and commensurability; empirical approaches to cross-paradigm/cross-tradition understanding.
+
+[ASSUMPTION] ASSUMPTION-409: A single declarative spec file + one-file runner can take a cell end-to-end (generate→analyze→render); success = "a new cell runs from a single spec file."
+  Status: [QUEUED-EMPIRICAL] [QUEUED 2026-07-02]
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION
+  Priority: LOW-MEDIUM
+  Search angle: declarative pipeline specs / reproducible experiment runners; spec-driven generalization across experimental instances.
+
+[ASSUMPTION] ASSUMPTION-410: P3′b (consciousness-type claims harder to restate than spacetime-type) is directional/underpowered, not a banked PASS, at k=5.
+  Status: [QUEUED-EMPIRICAL] [QUEUED 2026-07-02]
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION
+  Priority: MEDIUM
+  Search angle: base-rate vs signal in small-N failure counts; powering directional hypotheses; restatement difficulty across claim types.
+
+[PRESUMPTION] PRESUMPTION-436: [inferred] That AI tradition-agents instantiate the human traditions faithfully enough that agent-dialogue is evidence about human-tradition interaction (transfer unchecked).
+  Status: [QUEUED] [QUEUED 2026-07-02] [SEARCHED-15a: 2026-07-03] [SEARCHED-15b: 2026-07-03] [DISPOSITIONED-15c: 2026-07-03]
+  15a result: PARTIALLY-SUPPORTED (Weak, aggregate-only) | 15b result: CHALLENGED (Strong) | Disposition: REVISE (-> REVISE-171; DISPOSITION-395)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION
+  Priority: HIGH
+  Search angle: fidelity of LLM viewpoint/persona simulation; when a model's enactment of a position tracks the position's real commitments. (Links ASSUMPTION-007, strongly challenged 2026-04-13.)
+
+[PRESUMPTION] PRESUMPTION-437: [inferred] That "understanding" is a single quantity a numeric score validly tracks — construct validity of the understanding metric is unexamined.
+  Status: [QUEUED] [QUEUED 2026-07-02] [SEARCHED-15a: 2026-07-03] [SEARCHED-15b: 2026-07-03] [DISPOSITIONED-15c: 2026-07-03]
+  15a result: NO-SUPPORT-FOUND (Weak, procedural) | 15b result: CHALLENGED (Strong) | Disposition: REVISE (-> REVISE-172; DISPOSITION-396)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION
+  Priority: HIGH
+  Search angle: construct validity / operationalization of "understanding" and "mutual understanding" in dialogue and psycholinguistics.
+
+[PRESUMPTION] PRESUMPTION-438: [inferred] That the author-ratification gold standard survives when the ratifying "author" is an AI agent, not the human tradition-holder — in tension with the stated standard.
+  Status: [QUEUED-EMPIRICAL] [QUEUED 2026-07-02]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION
+  Priority: CRITICAL
+  Search angle: reliability of LLM self-evaluation/self-ratification; agent-judgment vs human-judgment agreement on "you captured my view."
+
+[PRESUMPTION] PRESUMPTION-439: [inferred] That k=5, though acknowledged underpowered, still supports a stable robust/directional/null sort of the results.
+  Status: [QUEUED] [QUEUED 2026-07-02] [SEARCHED-15a: 2026-07-03] [SEARCHED-15b: 2026-07-03] [DISPOSITIONED-15c: 2026-07-03]
+  15a result: PARTIALLY-SUPPORTED (Weak) | 15b result: CHALLENGED (Moderate-Strong) | Disposition: MONITOR (-> MONITOR-415; DISPOSITION-397)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION
+  Priority: MEDIUM
+  Search angle: stability of significance/robustness classifications under small cluster counts; effect-direction reliability at low k.
+
+[PRESUMPTION] PRESUMPTION-440: [inferred] That evidence FOR MacIntyre's project is the desirable outcome — an "against pessimism" framing smuggles the sought direction into the tool.
+  Status: [QUEUED] [QUEUED 2026-07-02] [SEARCHED-15a: 2026-07-03] [SEARCHED-15b: 2026-07-03] [DISPOSITIONED-15c: 2026-07-03]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Strong) | Disposition: REVISE (-> REVISE-173; DISPOSITION-398)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION
+  Priority: MEDIUM
+  Search angle: confirmation/desirability bias from preferred-outcome framing; mitigation via register-then-look and asymmetric verdicts.
+
+[PRESUMPTION] PRESUMPTION-441: [inferred] That a pipeline calibrated on one cell (k=5) generalizes to arbitrary cells via one spec file — gate/threshold transfer presumed.
+  Status: [QUEUED-EMPIRICAL] [QUEUED 2026-07-02]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION
+  Priority: MEDIUM
+  Search angle: cross-domain transfer of calibrated thresholds/gates; generalization failure of instance-tuned evaluation pipelines.
+
+[PRESUMPTION] PRESUMPTION-442: [inferred] That co-authorship where the same model family generates the dialogue data AND analyzes/writes it up does not compromise evidential independence.
+  Status: [QUEUED] [QUEUED 2026-07-02] [SEARCHED-15a: 2026-07-03] [SEARCHED-15b: 2026-07-03] [DISPOSITIONED-15c: 2026-07-03]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Strong) | Disposition: REVISE (-> REVISE-174; DISPOSITION-399)
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION
+  Priority: HIGH
+  Search angle: evaluator-independence and self-evaluation bias in model-as-judge setups; contamination when one model both produces and grades data.

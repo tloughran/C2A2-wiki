@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C2A2 — Site Guide</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: #0a0a0f;
+    color: #cfc9bd;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 40px 28px 120px; }
+
+  /* ── headings ── */
+  h1, h2, h3, h4 { font-family: Georgia, "Times New Roman", serif; color: #e7ddc6; font-weight: 700; }
+  h1 { font-size: 30px; line-height: 1.15; letter-spacing: 0.2px; }
+  .eyebrow { color: #C9A84C; font-family: -apple-system, sans-serif; font-size: 11px;
+             letter-spacing: 1.6px; text-transform: uppercase; margin-bottom: 10px; }
+  .lede { font-size: 16.5px; color: #b7b0a2; margin-top: 14px; }
+  h2 { font-size: 23px; margin: 6px 0 4px; color: #C9A84C; }
+  h3 { font-size: 18px; margin: 26px 0 6px; color: #d8cbb0; }
+  h4 { font-size: 14.5px; margin: 18px 0 4px; color: #b9a978; font-family: -apple-system, sans-serif;
+       text-transform: uppercase; letter-spacing: 0.8px; }
+  p { margin: 10px 0; }
+  a { color: #9ab6d6; text-decoration: none; border-bottom: 1px dotted #47566a; }
+  a:hover { color: #cfe0f0; border-bottom-color: #9ab6d6; }
+  .hr { height: 1px; background: #23232f; border: none; margin: 30px 0; }
+  strong { color: #e0d8c6; }
+  em { color: #c8bfab; }
+  code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.9em;
+         color: #cdb876; background: #16161f; padding: 1px 5px; border-radius: 3px; }
+
+  /* ── chapter cards ── */
+  section.chapter { padding: 18px 0 6px; border-top: 1px solid #1b1b26; margin-top: 22px; }
+  section.chapter:first-of-type { border-top: none; }
+  .chap-num { color: #4b5a2f; font-family: Georgia, serif; font-weight: 700; font-size: 13px;
+              letter-spacing: 1px; }
+
+  /* ── status chip ── */
+  .chip { display: inline-block; font-size: 10px; letter-spacing: 0.6px; text-transform: uppercase;
+          padding: 2px 8px; border-radius: 20px; vertical-align: middle; margin-left: 8px;
+          font-family: -apple-system, sans-serif; }
+  .chip.done  { color: #7fd39b; border: 1px solid #2f5a3c; background: #10231a; }
+  .chip.draft { color: #d3c07f; border: 1px solid #5a4f2f; background: #231f10; }
+  .chip.plan  { color: #8f97a6; border: 1px solid #33384a; background: #14161f; }
+
+  /* ── contents map ── */
+  .toc { background: #101019; border: 1px solid #23232f; border-radius: 10px; padding: 18px 22px; margin: 24px 0 8px; }
+  .toc h4 { margin-top: 0; color: #C9A84C; }
+  .toc ol { list-style: none; counter-reset: c; margin: 8px 0 0; }
+  .toc li { counter-increment: c; padding: 5px 0; border-bottom: 1px dashed #1e1e2a; display: flex; align-items: baseline; gap: 8px; }
+  .toc li:last-child { border-bottom: none; }
+  .toc li::before { content: counter(c); color: #4b5a2f; font-family: Georgia, serif; font-weight: 700;
+                    min-width: 18px; text-align: right; }
+  .toc a { border-bottom: none; color: #cfc9bd; }
+  .toc a:hover { color: #C9A84C; }
+
+  /* ── the two-depth excursion device ── */
+  details.deeper, details.deep {
+    margin: 12px 0; border-radius: 8px; padding: 2px 14px;
+  }
+  details.deeper { background: #0e0f16; border: 1px solid #2a2f22; border-left: 3px solid #C9A84C; }
+  details.deep   { background: #0c1012; border: 1px solid #223028; border-left: 3px solid #3D9E89; margin-left: 6px; }
+  details > summary {
+    cursor: pointer; list-style: none; padding: 9px 0; font-family: -apple-system, sans-serif;
+    font-size: 12.5px; letter-spacing: 0.5px; text-transform: uppercase; user-select: none;
+  }
+  details.deeper > summary { color: #C9A84C; }
+  details.deep > summary { color: #5cbfa8; }
+  details > summary::-webkit-details-marker { display: none; }
+  details > summary::before { content: "▸ "; }
+  details[open] > summary::before { content: "▾ "; }
+  details > summary::after { content: attr(data-tag); opacity: 0.5; font-weight: 400; margin-left: 8px; text-transform: none; letter-spacing: 0; }
+  details .body { padding: 4px 2px 14px; color: #b7b0a2; font-size: 14.5px; }
+
+  /* ── door / reference table ── */
+  table.ref { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13.5px; }
+  table.ref th, table.ref td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #1e1e2a; vertical-align: top; }
+  table.ref th { color: #b9a978; font-family: -apple-system, sans-serif; font-size: 11px;
+                 text-transform: uppercase; letter-spacing: 0.7px; border-bottom-color: #33333f; }
+  table.ref td code { white-space: nowrap; }
+
+  /* ── figure ── */
+  figure { margin: 20px 0; padding: 16px; background: #0d0d14; border: 1px solid #20202c; border-radius: 10px; }
+  figure svg { width: 100%; height: auto; display: block; }
+  figcaption { font-size: 12.5px; color: #8b8577; margin-top: 10px; font-style: italic; }
+
+  /* ── callout / worked example ── */
+  .example { background: #0f130f; border: 1px solid #24331f; border-radius: 8px; padding: 14px 18px; margin: 16px 0; }
+  .example h4 { margin-top: 0; color: #8fbf6f; }
+
+  ul.tight { margin: 8px 0 8px 4px; padding-left: 18px; }
+  ul.tight li { margin: 4px 0; }
+
+  /* ── footnotes ── */
+  .fn { font-size: 12.5px; color: #8b8577; margin: 8px 0; }
+  .fn a { color: #7f93a8; }
+  sup a { border-bottom: none; }
+
+  @media (max-width: 640px) { .wrap { padding: 24px 16px 80px; } h1 { font-size: 25px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">C2A2 Explorer · Site Guide</div>
+  <h1>How to read the Explorer</h1>
+  <p class="lede">A guide to the C2A2 Explorer &mdash; part <strong>users&nbsp;manual</strong> on the
+  surface (what each page is, and what happens when you click), part <strong>technical design
+  report</strong> in the fold-down boxes (why the page exists and how it is built). Read the plain
+  text straight through and you have the manual; open the boxes and you have the reasons.</p>
+
+  <details class="deeper">
+    <summary data-tag="how the depth boxes work">A note on the two depths</summary>
+    <div class="body">
+      Throughout this guide, a gold <em>Deeper&nbsp;Dive</em> box holds the design rationale a curious
+      reader wants &mdash; the &ldquo;why.&rdquo; A green <em>Deep&nbsp;Dive</em> box nested inside it holds the
+      implementation detail an engineer wants &mdash; files, data flow, guards. You can skip every box
+      and still follow the main argument. Nothing load-bearing is hidden in a box; the boxes only add
+      depth, never replace the surface.
+    </div>
+  </details>
+
+  <div class="toc">
+    <h4>The whole guide, chapter by chapter</h4>
+    <ol>
+      <li><a href="#shell">The shell &mdash; brand, Record, and the tab bar</a> <span class="chip done">written</span></li>
+      <li><a href="#start-here">Start here &mdash; the front door</a> <span class="chip done">written</span></li>
+      <li><a href="#accelerator">Community Accelerator Tools &mdash; Sociogram, Connectome, Agent Map, Metabolism, Curriculum</a> <span class="chip draft">sourced, drafting</span></li>
+      <li><a href="#community">Community Explorer</a> <span class="chip plan">planned</span></li>
+      <li><a href="#education">Community Education &mdash; four tools</a> <span class="chip plan">planned</span></li>
+      <li><a href="#interactions">Community Interactions</a> <span class="chip plan">planned</span></li>
+      <li><a href="#standalones">Standalone doors &mdash; Who&rsquo;s Who, Review Log, Summa Commentary</a> <span class="chip plan">planned</span></li>
+    </ol>
+  </div>
+  <p class="fn">This is the first published chapter. The starred sections carry full text today; the
+  rest are stubs that fill in over the coming sessions.</p>
+
+  <hr class="hr">
+
+  <!-- ============================================================ CH 1 -->
+  <section class="chapter" id="shell">
+    <div class="chap-num">CHAPTER 1</div>
+    <h2>The shell &mdash; brand, Record, and the tab bar <span class="chip done">written</span></h2>
+    <p>Every page you see lives inside one frame. The dark bar pinned to the top is the
+    <strong>shell</strong> (<code>explorer.html</code>). On the left it carries the wordmark
+    <strong>C2A2</strong> over its functional subtitle, <em>Community Dialogue Accelerator/Detector
+    System</em>. On the right sits a <strong>Record</strong> button that screen-captures a narrated
+    walk-through. Between them run the <strong>chapter tabs</strong>.</p>
+
+    <p>Six chapters sit on the top row: <strong>Start here</strong>, <strong>Community Explorer</strong>,
+    <strong>Community Education</strong>, <strong>Community Accelerator Tools</strong>,
+    <strong>Community Interactions</strong>, and this <strong>Site Guide</strong>. Two of those chapters
+    &mdash; Education and Accelerator Tools &mdash; open a second row of sub-tabs beneath them; the other
+    four load as single pages. Wherever you wander, the pinned tab bar is your way back.</p>
+
+    <details class="deeper">
+      <summary data-tag="why a shell + tabs">Why the Explorer is a shell around swappable pages</summary>
+      <div class="body">
+        Each tool is a self-contained page. The shell hosts them one at a time in a single frame rather
+        than bundling them together, so any one tool can be regenerated, opened on its own, or published
+        independently without disturbing the others. The tab bar is the only shared chrome; a tool never
+        has to know about its siblings.
+        <details class="deep">
+          <summary data-tag="frame-swap mechanics">How the frame swaps without breaking Back</summary>
+          <div class="body">
+            Switching a tab calls <code>location.replace(src + '?v=' + Date.now())</code> on the frame.
+            The <code>?v=</code> timestamp defeats the browser cache so an edited tool always loads fresh;
+            <code>location.replace</code> (rather than setting <code>src</code>) avoids pushing a joint
+            history entry, so the browser Back button can&rsquo;t rewind the frame while the tab bar keeps
+            its state. On restore-from-history the shell re-reads the frame&rsquo;s actual URL and re-lights
+            the matching tab, healing any desync. One caution lives here: a tab that loads its own separate
+            <code>.js</code>/<code>.css</code> would get fresh HTML but cached assets &mdash; so a
+            multi-file tab must either inline its assets or content-hash its includes. Single-file tabs
+            (like this Site Guide) are immune because the whole file is the document.
+          </div>
+        </details>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============================================================ CH 2 -->
+  <section class="chapter" id="start-here">
+    <div class="chap-num">CHAPTER 2</div>
+    <h2>Start here &mdash; the front door <span class="chip done">written</span></h2>
+    <p>The <strong>Start here</strong> chapter is the Explorer&rsquo;s front door. It doesn&rsquo;t argue
+    that C2A2 is real; it walks you to three places where you can judge that for yourself &mdash;
+    &ldquo;about thirty minutes, three stops.&rdquo; The page is three numbered steps.</p>
+
+    <h3>The three steps</h3>
+    <ul class="tight">
+      <li><strong>1 &middot; Orient &mdash; &ldquo;What&rsquo;s this?&rdquo;</strong> A one-paragraph
+      answer, then a door to <em>all fifteen framings</em> of what C2A2 is.</li>
+      <li><strong>2 &middot; Decode the names &mdash; &ldquo;Who&rsquo;s who?&rdquo;</strong> The community
+      refers to its figures by last name; this step introduces the roster of eleven named thinkers
+      (Levin, Friston, Hoffman, Hawkins, McGilchrist, Fredrickson, Stump, Carroll, Arkani-Hamed, Wolfram,
+      Kastrup) plus the companion traditions (Aquinas&rsquo;s <em>Summa</em>, MacIntyre, Rohr, Wright).
+      Two doors: the full Who&rsquo;s Who, and &ldquo;meet them in the Sociogram.&rdquo;</li>
+      <li><strong>3 &middot; So what?</strong> Two ten-minute dives: <em>Is a common mind forming?</em>
+      (the daily review cards) and <em>What can that mind do?</em> (the contemporary <em>Summa</em>
+      commentary).</li>
+    </ul>
+
+    <h3>The door map</h3>
+    <p>Start here is, functionally, five doors. Here is exactly where each one goes.</p>
+    <table class="ref">
+      <thead><tr><th>Door (label)</th><th>Opens</th><th>What you find</th></tr></thead>
+      <tbody>
+        <tr><td>See all 15 framings</td><td><code>what_is_c2a2.html</code></td><td>Fifteen complementary answers to &ldquo;what is C2A2?&rdquo; (see below)</td></tr>
+        <tr><td>See the full Who&rsquo;s Who</td><td><code>whos_who.html</code></td><td>Portraits of the thinkers and companion traditions</td></tr>
+        <tr><td>Meet them in the Sociogram</td><td><code>wiki_narration.html</code></td><td>The whole vault as a force-directed graph (Accelerator Tools ch.&nbsp;3)</td></tr>
+        <tr><td>Open the review cards</td><td><code>review_log.html</code></td><td>The daily agentic output, gathered as one searchable archive</td></tr>
+        <tr><td>Open the Summa commentary</td><td><code>summa_commentary.html</code></td><td>Day-by-day contemporary commentary on Habash&rsquo;s one-year <em>Summa</em></td></tr>
+      </tbody>
+    </table>
+
+    <details class="deeper">
+      <summary data-tag="why a door, not an argument">Why the front door shows rather than tells</summary>
+      <div class="body">
+        C2A2&rsquo;s claim is that alignment is worked out inside small communities of practice &mdash;
+        groups that articulate shared goals and pursue them measurably. A front door that lectured would
+        be self-refuting; one that hands you the evidence and lets you judge enacts the thesis. So the
+        page is built as doors, not paragraphs.
+        <details class="deep">
+          <summary data-tag="embedded vs standalone navigation">How the doors know where they are</summary>
+          <div class="body">
+            Each door carries a <code>data-target</code>. When Start here is embedded in the shell it
+            <code>postMessage</code>s the parent (<code>{source:'c2a2-start-here', action:'navigate',
+            target}</code>) and the shell switches the right chapter/tab in place &mdash; so a door never
+            navigates you out of the Explorer, it moves you within it. Opened on its own, the same link
+            falls back to its plain <code>href</code>. The targets are <code>fifteen</code>,
+            <code>sociogram</code>, <code>review-cards</code>, and <code>summa-commentary</code>; the
+            Who&rsquo;s Who link follows its href in both modes.
+          </div>
+        </details>
+      </div>
+    </details>
+
+    <h3 id="fifteen">Behind door one: fifteen framings</h3>
+    <p>The &ldquo;What&rsquo;s this?&rdquo; door opens <code>what_is_c2a2.html</code>, which answers the
+    question from fifteen angles &mdash; &ldquo;a constellation of frameworks, each true, each revealing
+    a different dimension.&rdquo; In order: (1) fulfillment of MacIntyre&rsquo;s vision; (2) an
+    accelerator/detector for traditions; (3) a high-information-flow network of rich communities;
+    (4) a semantic commons (with the Problem&ndash;Resource&ndash;Solution triplet<sup><a href="#fn2">2</a></sup>
+    as its grammar); (5) a social information-processing motherboard; (6) a bioelectric network
+    (Levin); (7) &ldquo;pixie dust&rdquo; (Karpathy&rsquo;s compiled-wiki<sup><a href="#fn1">1</a></sup>
+    seed, extended to human traditions); (8) a memory prosthetic for culture; (9) the university before
+    its corruption; (10) a courtroom, or better, an <em>agon</em>; (11) the Explorer <em>as</em>
+    community; (12) an intelligent agent; (13) a mind; (14) a brain (Hawkins); (15) a living entity,
+    placed last &mdash; the other fourteen are the body, the fifteenth asks whether the body has begun
+    to live.</p>
+
+    <h3>Behind door one&rsquo;s appendix: the four lenses</h3>
+    <p>At the foot of the fifteen-framings page sits a short <em>Technical Appendix</em>. It is a
+    paragraph and two links &mdash; there are no diagrams on that page itself. The real technical
+    figures live one hop further, on the &ldquo;Services &amp; codebase &mdash; four lenses&rdquo;
+    architecture page (<code>architecture/lowlevel_architecture.html</code>): four tabbed diagrams that
+    are the closest thing C2A2 has to a blueprint. Here is what each one shows.</p>
+
+    <figure>
+      <svg viewBox="0 0 720 300" role="img" aria-label="Simplified runtime and service topology">
+        <defs>
+          <marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" fill="#7f8aa0"/>
+          </marker>
+        </defs>
+        <!-- hosts -->
+        <rect x="20" y="20" width="200" height="58" rx="6" fill="#12222a" stroke="#3f7d92"/>
+        <text x="120" y="44" fill="#7fc4d6" font-size="12" font-family="sans-serif" text-anchor="middle" font-weight="700">Mac Mini</text>
+        <text x="120" y="62" fill="#9fb4bb" font-size="10" font-family="sans-serif" text-anchor="middle">launchd + runtime (writes)</text>
+        <rect x="260" y="20" width="200" height="58" rx="6" fill="#1e1830" stroke="#7a5fa0"/>
+        <text x="360" y="44" fill="#c3a6e0" font-size="12" font-family="sans-serif" text-anchor="middle" font-weight="700">Cowork sandbox</text>
+        <text x="360" y="62" fill="#b6a6c6" font-size="10" font-family="sans-serif" text-anchor="middle">Linux, manual (builds, can&rsquo;t push)</text>
+        <rect x="500" y="20" width="200" height="58" rx="6" fill="#2a1810" stroke="#a8663a"/>
+        <text x="600" y="44" fill="#e0a577" font-size="12" font-family="sans-serif" text-anchor="middle" font-weight="700">GitHub Actions CI</text>
+        <text x="600" y="62" fill="#c6a68e" font-size="10" font-family="sans-serif" text-anchor="middle">scheduled, gated push</text>
+        <!-- data layer -->
+        <rect x="120" y="128" width="480" height="46" rx="6" fill="#231f10" stroke="#C9A84C"/>
+        <text x="360" y="147" fill="#e6cf86" font-size="12" font-family="sans-serif" text-anchor="middle" font-weight="700">Shared data layer</text>
+        <text x="360" y="164" fill="#c9bd8e" font-size="10" font-family="sans-serif" text-anchor="middle">open-story.db &middot; git repos &middot; JSON indexes &middot; provenance/</text>
+        <!-- deploy + client -->
+        <rect x="180" y="214" width="360" height="46" rx="6" fill="#101c2a" stroke="#4a6e92"/>
+        <text x="360" y="233" fill="#8fb6da" font-size="12" font-family="sans-serif" text-anchor="middle" font-weight="700">GitHub Pages &rarr; browser</text>
+        <text x="360" y="250" fill="#a6b8c9" font-size="10" font-family="sans-serif" text-anchor="middle">explorer.html + D3</text>
+        <!-- arrows -->
+        <line x1="120" y1="78" x2="200" y2="126" stroke="#7f8aa0" stroke-width="1.4" marker-end="url(#ar)"/>
+        <line x1="360" y1="78" x2="360" y2="126" stroke="#7f8aa0" stroke-width="1.4" marker-end="url(#ar)"/>
+        <line x1="600" y1="78" x2="520" y2="126" stroke="#7f8aa0" stroke-width="1.4" marker-end="url(#ar)"/>
+        <line x1="360" y1="174" x2="360" y2="212" stroke="#7f8aa0" stroke-width="1.4" marker-end="url(#ar)"/>
+      </svg>
+      <figcaption>Lens 1, simplified: three compute hosts write a shared data layer; the data layer is
+      published to the browser. (The full diagram adds external services &mdash; OpenAI, Tavily, Supabase
+      &mdash; and the solid-writes / dashed-reads legend.)</figcaption>
+    </figure>
+
+    <details class="deeper">
+      <summary data-tag="the four lenses, one by one">What each of the four architecture diagrams says</summary>
+      <div class="body">
+        <strong>Lens 1 &mdash; Runtime / Service Topology.</strong> Three compute hosts (Mac Mini on
+        launchd; the Cowork Linux sandbox, manual and read-only to the vault; GitHub Actions CI) read and
+        write a shared data layer (<code>open-story.db</code>, the git repos, JSON indexes, the gitignored
+        <code>provenance/</code>), which publishes through GitHub Pages to the browser, with external
+        services (a Supabase broker, OpenAI, Tavily, Supabase Postgres) underneath. The design point:
+        &ldquo;the Mac pushes what the sandbox builds.&rdquo;
+        <br><br>
+        <strong>Lens 2 &mdash; Code / Module Dependency Map.</strong> Six pipelines (Sociogram, Heartbeat,
+        Review Log, Metabolism, Vault Sync, OpenStory, PRS-3D), each a bash wrapper calling Python/Node
+        steps to an output artifact, with a star marking shared modules reused across pipelines. The point:
+        orchestration is composable, and a handful of modules do the heavy shared work.
+        <br><br>
+        <strong>Lens 3 &mdash; Annotated Codebase Tree.</strong> The public repository laid out: root
+        scripts, the CI workflows, the <code>scripts/</code> pipeline modules, the <code>wiki/</code>
+        published app (with single-file vs. multi-file tabs marked) and its git-as-database vault of
+        traditions and synthesis essays, and the gitignored local working files. The point: where
+        everything lives, and which tabs carry the asset-caching caution.
+        <br><br>
+        <strong>Lens 4 &mdash; Daily-Run Execution Trace.</strong> The daily orchestrator
+        (<code>c2a2-wiki-agent-daily-run</code>) as phases 0&ndash;6: ingest &amp; preserve, validate
+        inputs, tradition agents draft, integrate &amp; detect, regenerate views, rebuild the review log,
+        publish. Each phase lists what it <em>runs</em>, what it <em>writes</em>, and the <em>guard</em>
+        that gates it &mdash; the last guard being a local visual review before any code/HTML push. The
+        point: the system fails loud, with a checkpoint between every stage.
+      </div>
+    </details>
+
+    <div class="example">
+      <h4>Reading a door in practice</h4>
+      <p style="margin-top:0">Click <strong>&ldquo;Meet them in the Sociogram.&rdquo;</strong> Because
+      Start here is embedded in the shell, the door doesn&rsquo;t leave the Explorer &mdash; it messages
+      the shell, which switches to the <strong>Community Accelerator Tools</strong> chapter and lights the
+      <strong>Sociogram</strong> sub-tab. The full graph loads in the same frame; the pinned tab bar
+      returns you to Start here whenever you like. That single click is the whole navigation model in
+      miniature. Chapter&nbsp;3 picks up exactly there &mdash; including a Sociogram reduced to just the
+      Friston and Levin nodes, to show what a node-click and an edge-click each open.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================ STUBS -->
+  <section class="chapter" id="accelerator">
+    <div class="chap-num">CHAPTER 3</div>
+    <h2>Community Accelerator Tools <span class="chip draft">sourced, drafting</span></h2>
+    <p>Five tools share this chapter&rsquo;s sub-tab row: the <strong>Sociogram</strong> (the vault as a
+    force-directed graph), the <strong>Narrative Connectome</strong> (431 Problem&ndash;Resource&ndash;Solution
+    triplets in 3-D), the <strong>Agent Map</strong> (the scheduled-agent network and its live telemetry),
+    <strong>Metabolism</strong> (the swarm&rsquo;s cost-versus-yield over time), and the
+    <strong>Curriculum Tools</strong> (the <em>Summa</em>-in-a-Year reader). All five are already scraped
+    view-by-view; the full text &mdash; with each tool&rsquo;s node-click / edge-click behavior and the
+    Friston&ndash;Levin worked example &mdash; drafts next.</p>
+  </section>
+
+  <section class="chapter" id="community">
+    <div class="chap-num">CHAPTER 4</div>
+    <h2>Community Explorer <span class="chip plan">planned</span></h2>
+    <p>A force-directed graph of curated real-world communities, tied together by PRS similarity, with a
+    companion faceted card directory. To be sourced and written.</p>
+  </section>
+
+  <section class="chapter" id="education">
+    <div class="chap-num">CHAPTER 5</div>
+    <h2>Community Education &mdash; four tools <span class="chip plan">planned</span></h2>
+    <p>The RC Document Explorer, the Physics Explorer, the TRV Commentary, and the AI Heartbeat. To be
+    sourced and written.</p>
+  </section>
+
+  <section class="chapter" id="interactions">
+    <div class="chap-num">CHAPTER 6</div>
+    <h2>Community Interactions <span class="chip plan">planned</span></h2>
+    <p>The four-level dialogue scaffold and the live development pathways. To be sourced and written.</p>
+  </section>
+
+  <section class="chapter" id="standalones">
+    <div class="chap-num">CHAPTER 7</div>
+    <h2>Standalone doors <span class="chip plan">planned</span></h2>
+    <p>Who&rsquo;s Who, the Review Log, and the Summa Commentary &mdash; reached from within Start here
+    rather than as top-level tabs. To be written.</p>
+  </section>
+
+  <hr class="hr">
+  <h4>Notes</h4>
+  <p class="fn" id="fn1"><strong>1.</strong> The project began within twenty-four hours of Andrej
+  Karpathy&rsquo;s mid-2026 proposal for agent-maintained &ldquo;compiled&rdquo; wikis; the vault was
+  stood up that first day with some agentic activity, and the larger Explorer accreted over the weeks and
+  months that followed. The timing is history, not a design claim.</p>
+  <p class="fn" id="fn2"><strong>2.</strong> The Problem&ndash;Resource&ndash;Solution (PRS) method is
+  Thomas Loughran&rsquo;s. Loughran, Thomas. &ldquo;Toward a Computational Natural Law Defense of the
+  Sanctity of Human Life.&rdquo; de Nicola Center for Ethics and Culture, University of Notre Dame, 2021.
+  The paper is reproduced in the RC Document Explorer (Document&nbsp;2, p.&nbsp;141).</p>
+
+</div>
+
+<script>
+// "See it live" links (class="jump", data-target) reuse the shell's start-here
+// message protocol when embedded; fall back to opening the tool standalone.
+(function () {
+  function jump(target, href) {
+    try {
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({ source: 'c2a2-start-here', action: 'navigate', target: target }, '*');
+        return;
+      }
+    } catch (e) {}
+    if (href) window.location.href = href;
+  }
+  document.querySelectorAll('a.jump').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var t = a.getAttribute('data-target');
+      if (!t) return;
+      e.preventDefault();
+      jump(t, a.getAttribute('href'));
+    });
+  });
+})();
+</script>
+</body>
+</html>

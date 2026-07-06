@@ -2203,3 +2203,16 @@ PREMISE-093:
   Re-check due: Quarterly (next 15d review; pairs with PREMISE-015 re-check)
   Status: ACTIVE
   PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-386
+
+PREMISE-094:
+  Date validated: 2026-07-03
+  Source item: ASSUMPTION-406
+  Statement: When observations are nested within conversations, the conversation is the honest unit of replication, and inference must be clustered at the conversation level rather than pseudoreplicated on turns/utterances. This unit choice is uncontested. However, at small cluster counts (e.g. k=5) the correct unit does NOT license standard cluster-robust confidence intervals: cluster-robust CIs are asymptotic in the number of clusters and over-reject badly at k≈5, so small-cluster-valid procedures (wild-cluster bootstrap or randomization/permutation inference) must be used and interval fragility reported. In short: right unit, but not "clustered CIs are automatically correct" at small k.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Hurlbert 1984 (pseudoreplication — the honest replicate is the randomized unit); Cameron & Miller 2015 and Aarts et al. 2014 (nested data must be analyzed at cluster level or with mixed models). 15a SUPPORTED/Strong for the unit.
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate-Strong), scoped to the estimator not the unit — MacKinnon & Webb 2018 and Cameron/Gelbach/Miller 2008 (cluster-robust CIs unreliable / anticonservative at few clusters; even wild-cluster bootstrap and RI strain at k≈5). Folded into the Statement as the small-cluster caveat.
+  Confidence: Moderate-High
+  Applicable to: all C2A2 empirical cells with nested/clustered dialogue data; the Inter-Tradition Dialogue Study inference (constrains A-404's +0.086 effect and A-410; pairs with MONITOR-415 / PRESUMPTION-439's stability question); any conversation-level statistic. Complements the verification-discipline family and PREMISE-086 (fail-loud/monitor).
+  Re-check due: Quarterly (next 15d review; stable methodological premise)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-392

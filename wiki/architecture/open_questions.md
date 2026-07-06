@@ -1133,3 +1133,45 @@ OPEN-105:
     Transform at each step:
       14a: Raised from the sandbox disk-exhaustion failure that halted OpenStory at step 0 and broke the morning shell.
     Current status: OPEN
+
+OPEN-106:
+  Date raised: 2026-07-02
+  Question: Does the consciousness-vs-spacetime restatement asymmetry (hypothesis P3′b) survive an adequately-powered strengthened panel? At k=5 it is directional/underpowered — with only 4 failures and consciousness points at ~60% of faithful events, 3-of-4 consciousness failures is roughly the base-rate expectation (~0.48); only the zero-in-20 spacetime restatements (~0.18) is suggestive. It is currently stated as a promissory note, not a banked result.
+  Context: "The convener" session (2026-07-02); honest-correction #1 in the §5.5 error analysis; the §5.3 strengthening run is named as the way to settle it.
+  Related: ASSUMPTION-410, ASSUMPTION-406, DECISION-075
+  Status: OPEN — awaiting the strengthening run (deferred per DECISION-075).
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the stated downgrade of P3′b to directional/underpowered and the naming of the strengthening run as its resolution.
+    Current status: OPEN
+
+OPEN-107:
+  Date raised: 2026-07-02
+  Question: Does the Appendix G design — a declarative study-spec file plus a one-file runner — actually generalize a "cell" end-to-end (generate → analyze → render) across arbitrary tradition-pairs, or do the constructs, gates (C0), and thresholds calibrated on this first cell (k=5) require per-cell recalibration? The stated success criterion is "a new cell runs from a single spec file," which presumes cross-cell transfer of the calibration.
+  Context: "InterT study" session (2026-07-02); staging Appendix G, Stage 1 as the next session's opener.
+  Related: ASSUMPTION-409, ASSUMPTION-407, PRESUMPTION-441, DECISION-075
+  Status: OPEN — testable empirically once a second cell is run from the spec.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the stated one-file-runner success criterion and the single-cell basis on which it was defined.
+    Current status: OPEN
+
+OPEN-108:
+  Date raised: 2026-07-02
+  Question: When the author-ratification validity standard (DECISION-074) is simulated — i.e. the "author" who judges whether a claim was captured is itself an AI tradition-agent rather than the human tradition-holder — is the gold standard preserved, or is the study measuring intra-model agreement dressed as cross-tradition understanding? Relatedly: does co-authorship in which the same model family both generates the dialogue data and analyzes/writes it up compromise the independence of the evidence?
+  Context: "The convener" / "InterT study" sessions (2026-07-02); surfaced against the stated author-ratification standard and the human+AI authorship note.
+  Related: ASSUMPTION-403, DECISION-074, PRESUMPTION-438, PRESUMPTION-442
+  Status: OPEN — foundational to the study's external validity; not yet examined in-session.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the tension between the author-ratification standard and its AI-agent instantiation, and from the shared-architecture authorship of data and analysis.
+    Current status: OPEN

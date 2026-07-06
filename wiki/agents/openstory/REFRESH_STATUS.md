@@ -1,3 +1,4 @@
 2026-06-30T22:37Z  FAIL  step2a extract_openstory_agent_data.py — non-zero exit (see stderr above) | DB age 2h
 2026-07-01T~06:15Z  FAIL  step0 sandbox — bash shell will not start: "useradd failed: No space left on device" (host disk exhausted). No step could run; DB freshness NOT checked, feeds NOT refreshed.
 2026-07-02T~06:15Z  FAIL  step0 sandbox — bash shell still will not start: "useradd failed: No space left on device" (host disk exhausted, 2nd consecutive day). No step could run; DB freshness NOT checked, feeds NOT refreshed.
+2026-07-03T~06:15Z  FAIL  step0 sandbox — bash shell still will not start: "useradd failed: No space left on device" (host disk exhausted, 3rd consecutive day). No step could run; DB freshness NOT checked, feeds NOT refreshed. NEEDS MANUAL INTERVENTION on the Mac.

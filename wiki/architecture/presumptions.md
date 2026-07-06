@@ -8719,3 +8719,143 @@ PRESUMPTION-435:
     Transform at each step:
       14b: Inferred from the "quiet day" framing co-occurring with unremarked automated state changes and a summary-vs-registry count divergence. [inferred]
     Current status: UNTESTED
+
+PRESUMPTION-436:
+  Date surfaced: 2026-07-02
+  Statement: [inferred] That AI tradition-agents instantiate the actual human intellectual traditions faithfully enough that a dialogue *between the agents* is evidence about how the *human traditions* would interact — the transfer from "an agent enacting a tradition" to "the tradition itself" is relied upon throughout but never checked in-session.
+  Evidence it was operative: The whole external-validity claim of the convener study (that it bears on MacIntyre's recovery project among real traditions) depends on the agent-dialogue standing in for tradition-dialogue; the session discussed effect sizes and gates but never the fidelity of the agents' tradition-enactment.
+  Why it was unstated: too foundational to notice — the accelerator's premise ("agents can meaningfully represent a research tradition") is the water the whole project swims in.
+  Type: structural
+  Related decisions: DECISION-074
+  Related items: ASSUMPTION-007 (AI agents can meaningfully instantiate research traditions — STRONGLY CHALLENGED by 15b, 2026-04-13); ASSUMPTION-408
+  Testability: testable via literature — fidelity of LLM persona/viewpoint simulation; conditions under which a model's enactment of a position tracks the position's actual commitments.
+  Risk if wrong: High — if agents do not faithfully instantiate the traditions, the study measures a property of the model, not of cross-tradition dialogue.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-436
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the study's reliance on agent-dialogue as evidence about human-tradition interaction, with no in-session check of enactment fidelity. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-437:
+  Date surfaced: 2026-07-02
+  Statement: [inferred] That "understanding" is a single quantity that a numeric score (and the listen−deaf delta) validly tracks — the operationalization of understanding into one measurable scale is treated as unproblematic, so a positive delta is read as "more understanding" rather than "more of whatever the metric happens to capture."
+  Evidence it was operative: P1 is reported as a clean understanding effect (+0.086) with no discussion of construct validity — whether the scored quantity is understanding, agreement, surface convergence, or civility.
+  Why it was unstated: culturally embedded — once a construct is instrumented, the number stands in for the thing, and the gap between them goes unexamined.
+  Type: epistemic
+  Related decisions: DECISION-074
+  Related items: ASSUMPTION-404 (P1 effect); ASSUMPTION-006 (PRS captures research progress — a sibling operationalization presumption)
+  Testability: testable via literature — construct validity / operationalization of "understanding" and "mutual understanding" in dialogue and psycholinguistics.
+  Risk if wrong: High — a mis-specified construct would make every downstream effect size (P1, P2, P3′) uninterpretable.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-437
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the treatment of the understanding score as a transparent measure of the construct. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-438:
+  Date surfaced: 2026-07-02
+  Statement: [inferred] That the author-ratification gold standard (ASSUMPTION-403 — the claimant is the sole judge of capture) is preserved when the ratifying "author" is itself an AI agent rather than the human tradition-holder. The stated standard names the human maker of the claim as sole judge, yet in the simulated study that role is played by an agent — a substitution that is in tension with the very standard it implements.
+  Evidence it was operative: The study both asserts author-ratification as the only legitimate check and runs entirely on agents; the substitution of agent-author for human-author is nowhere flagged as a threat to the standard.
+  Why it was unstated: obvious-to-participants framing — inside a simulation, "the author" is naturally read as the agent, so the swap from the standard's human author feels like no swap at all.
+  Type: methodological
+  Related decisions: DECISION-074
+  Related items: ASSUMPTION-403; OPEN-108; PRESUMPTION-436
+  Testability: testable empirically and via literature — whether an agent's self-ratification of "you captured my view" tracks a human tradition-holder's judgment; self-evaluation reliability in LLMs.
+  Risk if wrong: Critical — if agent-ratification diverges from human-ratification, the study's central validity move is unsound and its MacIntyre-relevant conclusion does not follow.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-438
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the tension between a human-author-ratification standard and its agent-author instantiation. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-439:
+  Date surfaced: 2026-07-02
+  Statement: [inferred] That k=5 conversations, although explicitly acknowledged as underpowered ("intervals are wide by design"), is nonetheless an adequate basis for the categorical sort of results into "robust," "directional," and "null" — the stability of that three-way classification at k=5 is presumed, even though it is exactly what small samples make unstable.
+  Evidence it was operative: The session sorts P1/BRIDGE-neg/C0-verdict/P3′a/P2 as robust vs P3′b directional vs P-civility null and treats the sort as a deliverable, while simultaneously conceding the intervals are wide; the sort's own sampling stability is not examined.
+  Why it was unstated: too foundational to notice — reporting a robust/directional/null verdict feels like the neutral summary of the numbers, not itself a claim that could flip at k=5.
+  Type: methodological
+  Related decisions: DECISION-075
+  Related items: ASSUMPTION-406 (conversation as unit of replication); ASSUMPTION-410 (P3′b directional); OPEN-106
+  Testability: testable via literature — reliability of significance/robustness classifications under small cluster counts; stability of effect-direction calls at low k.
+  Risk if wrong: Medium — a fragile sort could reassign "robust" results on a strengthening run, undercutting claims presented as settled.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-439
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the acknowledged-underpowered k=5 co-occurring with a categorical robust/directional/null verdict treated as stable. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-440:
+  Date surfaced: 2026-07-02
+  Statement: [inferred] That producing evidence *for* the fulfillment of MacIntyre's recovery project is the desirable outcome — the tool and study are framed "against pessimism," presuming that optimism about cross-tradition commensurability is the result to be sought. This orients design and interpretation toward confirming the hopeful thesis rather than testing it symmetrically.
+  Evidence it was operative: The stated framing is "against pessimism in regard to the fulfillment of ... MacIntyre's recovery project"; the desirable direction is baked into the tool's own description rather than held as a neutral hypothesis.
+  Why it was unstated: normative smuggling — a value (traditions *should* be able to understand each other) rides inside what presents as an empirical study.
+  Type: normative
+  Related decisions: DECISION-074, DECISION-075
+  Related items: ASSUMPTION-408; PRESUMPTION-437
+  Testability: testable via literature — confirmation/desirability bias in study framing; how a preferred-outcome framing affects design and interpretation. (The study's own preregistration + asymmetric-verdict discipline is a partial mitigation worth noting.)
+  Risk if wrong: Medium — a confirmation-oriented frame can bias construct and threshold choices toward the hoped-for result; partly offset by the register-then-look discipline.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-440
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the "against pessimism" framing that encodes the sought direction into the tool's self-description. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-441:
+  Date surfaced: 2026-07-02
+  Statement: [inferred] That a convener pipeline demonstrated on one cell (this tradition-pair set, k=5) will generalize to arbitrary cells via the Appendix G spec + one-file runner — "a new cell runs from a single spec file" presumes that the constructs, the C0 gate, and the pass/fail thresholds calibrated on this cell transfer unchanged to others, when calibration is exactly what tends not to transfer across domains.
+  Evidence it was operative: Appendix G Stage 1 is scoped as "spec + runner" with success = a new cell running from one spec; no step re-validates the gate or thresholds per cell.
+  Why it was unstated: scale blindness — a runner that works on the first cell is assumed to work on the next, the transfer conditions unspoken.
+  Type: scaling
+  Related decisions: DECISION-075
+  Related items: ASSUMPTION-409, ASSUMPTION-407; OPEN-107
+  Testability: testable empirically — run a second, different cell from the same spec and check whether gates/thresholds hold without recalibration.
+  Risk if wrong: Medium — per-cell recalibration would break the "one spec file" promise and the automation value of Appendix G.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-441
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the single-cell basis on which the "any new cell from one spec" generalization was asserted. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-442:
+  Date surfaced: 2026-07-02
+  Statement: [inferred] That co-authorship in which the same model family (Claude Opus 4.8) both *generates* the dialogue data and *analyzes and writes up* the results does not compromise the independence of the evidence — the potential circularity of the evaluator sharing architecture with the evaluated is unexamined, even though the study's whole credibility rests on the analysis being an independent check on the generation.
+  Evidence it was operative: The authorship note records Claude Opus 4.8 as co-author and the §5.5 error analysis as "computed from the actual transcripts (no model needed)," but the generation step that produced those transcripts was the same model family; the shared-architecture link between data-maker and data-judge is not flagged.
+  Why it was unstated: obvious-to-participants framing — the human+AI collaboration is treated as a byline fact, not as a threat to evidential independence.
+  Type: epistemic / methodological
+  Related decisions: DECISION-074
+  Related items: OPEN-108; PRESUMPTION-438
+  Testability: testable via literature — evaluator-independence and self-evaluation bias when the same model generates and grades; contamination in model-as-judge setups.
+  Risk if wrong: High — if generation and evaluation are not independent, favorable results may reflect shared model priors rather than genuine cross-tradition understanding.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-442
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the same-model-family generation-and-analysis pipeline presented without an independence caveat. [inferred]
+    Current status: UNTESTED
