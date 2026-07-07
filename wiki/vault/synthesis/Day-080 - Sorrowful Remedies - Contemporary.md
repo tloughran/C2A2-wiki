@@ -20,8 +20,8 @@ karpathy_wiki_sources:
   - "master/cross_program_index.md CROSS-005 (love); master/paradigm_flags.md FLAG-04 (perspective + suffering)"
 evidence_strength_summary: "Each of Aquinas's remedies (pleasure, tears, friendship, contemplation, sleep/baths) has identifiable contemporary mechanisms — vagal stimulation, emotional disclosure, social co-regulation, default-mode-network modulation, parasympathetic recovery — all empirically robust. Q.39 a.4 (greatest evil = desensitization) is a theological/ethical claim that gains support from the predictive-processing model of model-collapse but is fundamentally a normative judgment supported by the Wright/Rohr/Stump triangulation."
 tags: [synthesis, day/080, theme/remedies, theme/integration, theme/greatest-evil]
-last_qc_at: "2026-06-27T20:21:17"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-06T20:22:45"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 80 — Sorrowful Remedies (Contemporary)
@@ -55,7 +55,7 @@ The contemporary frame supplies the unifying answer: each remedy re-opens the ag
 
 **Wright and Rohr** complete the theological articulation. Wright's lament tradition (Psalms, Lamentations, Romans 8 "the whole creation groans") establishes scripturally that the path to resurrection-hope runs *through* lament — not around it. Rohr's *Falling Upward* makes the same claim in the spiritual-developmental key: the second half of life requires integration of loss into a larger meaning, and the contemplative-non-dual mode (the universal-Christ pattern) is the cultivated stable foundation that lets this integration happen without collapse.
 
-**Stump's *Wandering in Darkness*** belongs here as the Thomistic interlocutor: her contention that suffering is integrable into second-person love of God (and of other persons) coheres with everything above, but does not yet make the move into mind-monism. The synthesis cites her as the most rigorous contemporary Thomist working at this problem, and reads her as compatible with — though not yet making — the deeper monist reframe.
+**Stump's *Wandering in Darkness*** belongs here: her contention that suffering is integrable into second-person love of God (and of other persons) coheres with everything above on its own Thomistic terms. The book makes its case within a classical Thomist metaphysic rather than the monist frame explored here, and the synthesis reads the two as compatible accounts of the same phenomenon.
 
 ## Solution (proposed, speculative)
 
@@ -81,7 +81,7 @@ Q.39 a.4's "greatest evil is to be too evil to sorrow" is the central theme's ne
 - **McGilchrist right-hemispheric receptivity** — contemplative practice as cultivation of receptive mode; "frostbitten and happy"; *neurologically grounded, contested*.
 - **Kastrup analytic idealism** — Q.39 a.4 as dissociative hardening; the most-evil agent is the most-dissociated alter; *speculative metaphysical, internally coherent*.
 - **Wright lament-tradition + Rohr *Falling Upward* / *Universal Christ*** — theological articulation of integrated-sorrow path; resurrection-hope as model-widening prior; *theological, well-attested*.
-- **Stump, *Wandering in Darkness*** — Thomistic interlocutor; suffering integrable through second-person love; *philosophical/theological, rigorous within Thomism*.
+- **Stump, *Wandering in Darkness*** — suffering integrable through second-person love; *philosophical/theological, rigorous within Thomism*.
 - **CROSS-005 (master)** — love as ontological category; the same field that makes the remedies effective makes the central-theme telos possible.
 
 ## Where this leaves us

@@ -15,7 +15,7 @@ fetched_at: 2026-05-15
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com); cached at /tmp/day074_segments.json
 synthesis: "[[Day-074 - Love - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-16T16:22:27"
+last_qc_at: "2026-07-06T20:22:20"
 last_qc_outcome: "pass"
 render_pass: qc-rewrote-2026-05-15
 tags: [summa, day/074, pars/I-II, q/26, q/27, central-theme-load-bearing]

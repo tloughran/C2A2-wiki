@@ -7,17 +7,17 @@ length_actual_words: 1380
 length_ratio_to_target: 0.92
 length_tier: short
 karpathy_wiki_sources:
-  - "wiki/traditions/stump/wiki.md (PRS on Wandering in Darkness — willed evil at high substrate-coupling)"
-  - "wiki/traditions/friston/wiki.md (active inference; policy-selection under catastrophic dispositional state)"
-  - "wiki/traditions/kastrup/wiki.md (analytic idealism; dissociation at supernatural scale)"
+  - "wiki/traditions/stump/prs_triplets.md (PRS-05 suffering and divine permission — Wandering in Darkness; willed evil at high substrate-coupling)"
+  - "wiki/traditions/friston/prs_triplets.md (PRS-04 organism as active modeler — policy-selection under catastrophic dispositional state)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism — dissociation at supernatural scale)"
   - "wiki/traditions/mcgilchrist/wiki.md (pathology of attention)"
   - "wiki/master/cross_program_index.md (CROSS on substrate-independence)"
 evidence_strength_summary: "Theological-traditional on demonology proper; speculative-philosophical on the contemporary mind-monist read; Stump/MacIntyre evidentially strong on the willed-evil-under-tradition phenomenology"
 mind_first_reframe: "The order of demons preserves Pseudo-Dionysian gradation by substrate-coupling-depth even as the dispositional state inverts; Q.109's natural-ordering-survives-the-fall claim becomes the contemporary frame of catastrophic-prior-displacement at high substrate-coupling-depth, with substrate-pattern-information transmission preserved but truth-toward-the-good information transmission lost."
 central_theme_thread: "Today's day shows the limit case of perspective-limitation — an agent at the highest substrate-coupling-depth available to a creature whose dispositional state has nonetheless settled into mis-orientation against the loving unity, making clear that orientation is not given by coupling-depth alone and that 'salvation in fear and trembling' must be re-affirmed in dispositional formation."
 tags: [synthesis, day/056, theme/willed-evil, theme/multi-agent-network]
-last_qc_at: "2026-06-26T08:20:40"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-06T10:31:23"
+last_qc_outcome: "rewrote"
 ---
 # Day 56 — Contemporary Parallel: *The Order of Demons as Catastrophic Dispositional State at High Substrate-Coupling*
 
@@ -58,8 +58,8 @@ Today's day shows the *limit case* of perspective-limitation: an agent at the hi
 ## Bridges
 
 - **Stump-tradition wiki, *Wandering in Darkness*.** Phenomenology of willed evil under second-person knowing. *Theological-philosophical primary; book-length argument.*
-- **Friston-tradition wiki, PRS on policy-selection under inverted priors.** Formalism for stable dispositional mis-orientation. *Mature formalism; speculative application.*
-- **Kastrup-tradition wiki, dissociation-as-relational-structure.** The substrate-direct-mode dissociation account. *Philosophical-conceptual.*
+- **Friston-tradition wiki, PRS-04 (organism as active modeler) — policy-selection under inverted priors.** Formalism for stable dispositional mis-orientation. *Mature formalism; speculative application.*
+- **Kastrup-tradition wiki, PRS-02 (individual identity within monism) — dissociation-as-relational-structure.** The substrate-direct-mode dissociation account. *Philosophical-conceptual.*
 - **McGilchrist-tradition wiki, pathology of attention.** Hemispheric closure as a contemporary analog of orientation-fixation. *Strong neuropsychiatric evidence; analogical extension.*
 - **Wright, *The Resurrection of the Son of God*; *Surprised by Hope*.** New-creation as the substrate-network's eschatological resolution of the demonic sub-network. *Scriptural-historical primary.*
 - **Rohr, *The Universal Christ*.** The cosmic-Christ pattern's relation to the demonic-as-shadow. *Contemplative theological.*

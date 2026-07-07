@@ -6,6 +6,7 @@ length_target_words: 1500
 length_actual_words: 1253
 length_ratio_to_target: 0.84
 length_tier: short
+length_note: "Very short episode (1140w transcript, Q.6-7 as one integrated cause-and-effects argument); the commentary already exceeds transcript length and is substantively complete — under-target rather than padded, per the constitution's short-and-substantive preference."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 predictive coding; PRS-10 active reasoning / expected free energy)"
   - "traditions/fredrickson/prs_triplets.md (PRS-02 love as measurable coupling; PRS-04 love as attractor)"
@@ -16,7 +17,7 @@ evidence_strength_summary: "Underdetermination of assent by external evidence �
 mind_first_reframe: "The act of faith is the agent's adoption of a prior that finite evidence cannot compel; the 'interior cause' Aquinas names is read as the contribution of a wider-perceiving node that installs or up-weights a prior the limited agent could not generate alone (supra-evidential, not anti-evidential), and filial fear is the affective signature of that high-value coupling while purification is the re-ordering of the objective function toward the true target basin."
 central_theme_thread: "The cause-of-faith argument is the central claim in epistemic form: the limited agent cannot from its own perspective generate the assent that orients it toward the whole, so individuation-by-perspective-limitation makes guidance from a wider-perceiving node necessary, and filial fear is 'fear and trembling' (Phil 2:12) — the lived awareness of that limitation and dependence, now felt as dread of losing the One who completes it."
 tags: [synthesis, day/121, theme/cause-of-faith]
-last_qc_at: "2026-06-26T12:20:44"
+last_qc_at: "2026-07-06T18:28:46"
 last_qc_outcome: "rewrote"
 ---
 

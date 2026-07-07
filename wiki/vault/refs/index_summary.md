@@ -1,5 +1,5 @@
 ---
-generated: 2026-07-03
+generated: 2026-07-07
 ---
 
 # Summa Index — Summary

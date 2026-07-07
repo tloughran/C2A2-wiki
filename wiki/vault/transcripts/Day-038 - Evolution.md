@@ -15,8 +15,8 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-038 - Evolution - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-24T04:20:19"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-06T04:23:30"
+last_qc_outcome: "rewrote"
 render_pass: auto-catchup-2026-05-04 → qc-structural-2026-05-12
 tags: [summa, day/038, pars/I, q/73, q/74, theme/evolution, theme/sabbath, theme/trinitarian-creation, theme/humani-generis]
 ---
@@ -26,7 +26,7 @@ tags: [summa, day/038, pars/I, q/73, q/74, theme/evolution, theme/sabbath, theme
 > Series: *Summa in a Year* by Austin Habash. Day 38 of 308.
 > Summa reference: *Prima Pars*, Q.73 (three articles) + Q.74 (three articles).
 
-> Typo-cleanup applied to ASR: *Suma → Summa; ainus / aquanus / aquinas → Aquinas; habish → Habash; theologia → Theologiae; aanon → Aquinas (mishearing); to mytic → Thomistic; oper ation → operation; rot in them → wrought in them; Persians → persons*. Habash quotes Pius XII's *Humani Generis* (1950) and reads Aquinas's response on Q.74 a.3 (Trinitarian reading of Genesis 1:1–2) verbatim from the Dominican translation; both quotations are reproduced as Habash delivers them.
+> Typo-cleanup applied to ASR: *Suma → Summa; ainus / aquanus / aquinas → Aquinas; habish → Habash; theologia → Theologiae; aanon → Aquinas (mishearing); to mytic → Thomistic; oper ation → operation; rot in them → wrought in them; Persians → persons; previous experience materially → previous existence materially (ASR mishearing in the Q.73 a.1 quote, restored per the Dominican translation)*. Habash quotes Pius XII's *Humani Generis* (1950) and reads Aquinas's response on Q.74 a.3 (Trinitarian reading of Genesis 1:1–2) verbatim from the Dominican translation; both quotations are reproduced as Habash delivers them.
 
 ## Transcript
 

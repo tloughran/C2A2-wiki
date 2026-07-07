@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-015 - The Trinity - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-18T00:21:41"
+last_qc_at: "2026-07-06T00:20:04"
 last_qc_outcome: "pass"
 render_pass: structural-pass-2026-05-10  # article-block headers and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/015, pars/I, q/27, q/28, theme/trinity, theme/procession, theme/relation]

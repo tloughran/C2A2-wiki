@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-080 - Sorrowful Remedies - Contemporary]]"
 tags: [summa, day/080, pars/I-II, q/38, q/39]
 fidelity_checked: true
-last_qc_at: "2026-06-27T20:21:17"
+last_qc_at: "2026-07-06T20:22:45"
 last_qc_outcome: "pass"
 ---
 
