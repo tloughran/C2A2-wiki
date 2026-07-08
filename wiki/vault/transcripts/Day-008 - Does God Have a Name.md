@@ -15,8 +15,8 @@ fetched_at: 2026-05-05
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-008 - Does God Have a Name - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-21T13:00:50"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-07T16:22:35"
+last_qc_outcome: "pass"
 tags: [summa, day/008, pars/I, q/13, q/14]
 ---
 

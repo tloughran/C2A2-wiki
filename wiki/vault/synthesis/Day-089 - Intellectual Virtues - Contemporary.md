@@ -96,8 +96,8 @@ mind_first_reframe: "The five Aristotelian-Thomistic intellectual virtues recove
 central_theme_thread: "The intellectual virtues are the cognitive substrate of the central theme. They are the competences by which the limited agent computes well under perspective-limitation toward loving unity. *Sapientia* in particular carries the central theme's deepest cognitive claim: wisdom is receptivity to more of the whole than the agent's individuated perspective contains — the cognitive form of 'guidance from those who perceive more of the whole.' The unity-of-virtues claim about prudence is the central theme's structural insight that *moral* formation conditions *cognitive* access to the right action: the agent without good moral formation is cognitively blind to what loving unity asks here-and-now."
 evidence_strength_summary: "Fast cortical pattern-completion (Hawkins), hierarchical model-based inference (Friston), and affect-broadens-cognition (Fredrickson) are empirically robust. Right-hemispheric integration in expert judgment (McGilchrist) is clinically supported. Active-inference accounts of practical action are formally rigorous. Stump on second-personal practical-moral knowing is philosophically rigorous. Wright on Pauline phronēsis and Rohr on contemplative wisdom are theologically well-attested. Hoffman's interface theory as constraint on sapientia is speculative-formal but internally consistent."
 tags: [synthesis, day/089, theme/virtue, theme/intellectual-virtues, theme/prudence, theme/wisdom, theme/unity-of-virtues, theme/sapientia]
-last_qc_at: "2026-06-24T18:30:56"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-07T04:22:01"
+last_qc_outcome: "pass"
 
 ---
 **Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hoffman/prs_triplets|Hoffman PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-017 - Divine Notions - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-21T13:00:51"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-07T16:22:37"
+last_qc_outcome: "pass"
 render_pass: structural-pass-2026-05-10  # article-block headers and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/017, pars/I, q/31, q/32, theme/trinity, theme/notions, theme/reasons-limit]
 ---

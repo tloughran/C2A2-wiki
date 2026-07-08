@@ -16,13 +16,15 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-091 - Cardinal Virtue - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/091, pars/I-II, q/60-61, virtue, cardinal-virtues]
-last_qc_at: "2026-06-16T16:22:29"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-07T04:22:15"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 91 — Cardinal Virtue
 
 *Summa Theologiae*, Prima Secundae, Q.60 (How the moral virtues differ from one another) and Q.61 (Of the cardinal virtues).
+
+## Transcript
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa Year Podcast, where we study St. Thomas Aquinas's *Summa Theologiae* in a way simple and insightful for anyone to understand. Taking two questions of the Summa a day, we'll seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith. This is Day 91. We're covering today Question 60 and 61 of the Prima Secundae — that is, how the moral virtues differ from one another and of the cardinal virtues.
 

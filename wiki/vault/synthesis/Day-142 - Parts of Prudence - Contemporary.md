@@ -6,6 +6,7 @@ length_target_words: 1500
 length_actual_words: 1340
 length_ratio_to_target: 0.893
 length_tier: short
+length_note: "Runs ~11% under short-tier target: Q.48-49 is a single tight decomposition (eight integral parts, each mapped once); all eight parts are covered substantively and the constitution prefers short-and-substantive over padding."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 the organism as active modeler updating on evidence; PRS-16 foresight/circumspection/caution as forecasting under risk + ambiguity)"
   - "traditions/hawkins/wiki.md (the cortical model built from experience — learned priors / base rates as the substrate of practical memory)"
@@ -16,8 +17,8 @@ evidence_strength_summary: "The eight integral parts read as the component compe
 mind_first_reframe: "Q.49 disassembles prudence into eight integral parts — memory, understanding, docility, shrewdness, reason, foresight, circumspection, caution. Read as a faculty-inventory they look antique; read as the component competencies of an agent that must act well on contingent particulars, they are almost a specification. A bounded-rational agent needs learned priors (memory of 'what happens in most cases'), a way to bind its general model to the concrete case (the cogitative sense), the ability to acquire priors from others who have seen more (docility), fast search for the connecting inference (shrewdness), forward modeling toward a distant end (foresight), sensitivity to whether a means fits these circumstances (circumspection), and risk-avoidance where good and evil are mingled (caution). The reframe keeps every part and supplies the mechanism."
 central_theme_thread: "Docility is the integral part that carries the central theme. Aquinas says prudence concerns 'particular matters of infinite variety,' so that 'no one man can consider them all,' and man therefore 'stands in very great need of being taught by others, especially by old folk who have a sane understanding of the ends.' That is the central claim's 'guidance from those who perceive more of the whole than we do,' written as a component of the virtue itself: the limited perspective cannot survey the field alone, so it must receive priors from those whose longer experience has seen more of it. Memory is the accumulated cases; docility is the channel by which one perspective's hard-won model becomes another's inheritance — the tradition through which limited agents pool what none could compute alone."
 tags: [synthesis, day/142, theme/the-components-of-bounded-practical-reason]
-last_qc_at: "2026-06-24T12:20:25"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-07T02:28:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 142 — Contemporary Parallel: The Anatomy of a Practical Agent

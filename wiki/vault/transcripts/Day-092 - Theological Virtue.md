@@ -15,7 +15,7 @@ fetched_at: 2026-05-14
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-092 - Theological Virtue - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-28T16:19:32"
+last_qc_at: "2026-07-07T04:22:16"
 last_qc_outcome: "pass"
 tags: [summa, day/092, pars/I-II, q/62-63, theological-virtues, faith-hope-charity, infused-virtue]
 ---

@@ -6,6 +6,7 @@ length_target_words: 2200
 length_actual_words: 1728
 length_ratio_to_target: 0.79
 length_tier: medium
+length_note: "Q.122 is a recapitulative precepts question; the day's substantive weight falls on Q.123 alone, treated fully without padding — short-and-substantive preferred per constitution."
 mind_first_reframe: "Under mind-monism, fortitude is an agent's capacity to keep its policy anchored to a long-horizon, often other-regarding good against the fast, narrowing immediate threat-gradient of fear; endurance is its principal act because holding the distant attractor while the steep local gradient persists unrelieved is the harder computation."
 central_theme_thread: "Fear is the sharpest report of perceived resource-limitation, and fortitude is the agent continuing to compute toward loving unity through that report — remaining faithful within the limitation rather than conquering it — which is 'salvation in fear and trembling' almost word for word."
 karpathy_wiki_sources:
@@ -16,8 +17,8 @@ karpathy_wiki_sources:
   - "Wright canonical: resurrection hope as the ground of courage (Surprised by Hope; The Resurrection of the Son of God); Rohr canonical: necessary suffering, dying before you die"
 evidence_strength_summary: "Resilience and undo-effect are empirical (Fredrickson); long-horizon attractor vs immediate gradient is formal (Friston); courage-as-standing is empirical/interpretive (McGilchrist); resurrection-grounded endurance is theological (Wright, Rohr)."
 tags: [synthesis, day/179, theme/fortitude, theme/long-horizon-attractor, q/122, q/123]
-last_qc_at: "2026-06-25T00:19:03"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-07T18:28:06"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 179 — Fortitude (Contemporary)

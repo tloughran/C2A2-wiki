@@ -26,9 +26,9 @@ What Aquinas leaves at the level of perceptive description, the contemporary fra
 
 **Stump on faith and second-person knowing** (PRS-05; *Wandering in Darkness* material at PRS-11) carries the synthesis into Q.43 a.1 — love causes fear. Augustine's claim — what we fear reveals what we love — is the inverse statement of Stump's second-person account: faith is the agent's commitment to a person under the difficulty of incomplete knowledge; the loves the agent has committed to are precisely those whose loss the agent fears. Stump's analytic-Thomistic account of *Wandering in Darkness* gives the rigorous form of the diagnostic move from the inventory of fears to the inventory of loves.
 
-**Rohr on contemplative reframing of fear** (PRS-01, PRS-03) is the spirituality-ground-truth pole. The cosmic-Christ pattern — divine presence in matter from creation — provides the contemplative re-frame of Q.42 a.6's claim that the irremediable is most feared. Under non-dual contemplative awareness, the apparently irremediable is held within a larger pattern in which "everything belongs" (Rohr's phrase); the policy-space-collapse that produces the worst fear is, in contemplative practice, the very surface within which a deeper response becomes available. Rohr's *Everything Belongs* and *Falling Upward* are the canonical sources for this move; the empirical correlate is the literature on contemplative practice and reduced amygdala reactivity (Goleman & Davidson 2017 review).
+**Rohr on contemplative reframing of fear** (PRS-01, PRS-03) anchors the contemplative side. The cosmic-Christ pattern — divine presence in matter from creation — provides the contemplative re-frame of Q.42 a.6's claim that the irremediable is most feared. Under non-dual contemplative awareness, the apparently irremediable is held within a larger pattern in which "everything belongs" (Rohr's phrase); the policy-space-collapse that produces the worst fear is, in contemplative practice, the very surface within which a deeper response becomes available. Rohr's *Everything Belongs* and *Falling Upward* are the canonical sources for this move; the empirical correlate is the literature on contemplative practice and reduced amygdala reactivity (Goleman & Davidson 2017 review).
 
-**Wright on the eschatological reframe of fear** is the scriptural pole. Wright's reading of Romans 8 and 1 Corinthians 15 specifies that the Christian's most feared object — death — is not strictly irremediable under the resurrection horizon. Q.42 a.6's "abandon all hope ye who enter" applies under conditions Wright would say are *outside* the resurrection horizon (the willed self-closure against loving unity, which is the only honest reading of "hell" Wright permits). Inside the resurrection horizon, the maximum precision aversive prediction (death) is reframed without being denied.
+**Wright on the eschatological reframe of fear** anchors the scriptural side. Wright's reading of Romans 8 and 1 Corinthians 15 specifies that the Christian's most feared object — death — is not strictly irremediable under the resurrection horizon. Q.42 a.6's "abandon all hope ye who enter" applies under conditions Wright would say are *outside* the resurrection horizon (the willed self-closure against loving unity, which is the only honest reading of "hell" Wright permits). Inside the resurrection horizon, the maximum precision aversive prediction (death) is reframed without being denied.
 
 ## Solution (proposed, speculative)
 
@@ -86,8 +86,8 @@ karpathy_wiki_sources:
   - "traditions/wright/ — Romans 8; 1 Cor 15 resurrection horizon"
 evidence_strength_summary: "Predictive-processing fear/surprise, intolerance-of-uncertainty as anxiety mechanism, co-regulation reducing fear, and exposure-reduces-fear are all empirically robust. Hemispheric account is clinically supported. Hell-as-state-not-place is theological reading consistent with Wright and Rohr but not a unanimous Christian position."
 tags: [synthesis, day/082, theme/fear, theme/anxiety, theme/irascible-passions, theme/love-causes-fear]
-last_qc_at: "2026-06-24T14:26:26"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-07T00:22:46"
+last_qc_outcome: "rewrote"
 
 ---
 **Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

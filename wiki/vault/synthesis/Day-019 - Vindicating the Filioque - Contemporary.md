@@ -61,7 +61,7 @@ length_tier: medium
 length_target_words: 2200
 length_actual_words: 2623
 length_ratio_to_target: 1.192
-length_note: "Slightly over the medium-tier guideline of 2200 ±10% (came in at 2623, ratio 1.192). Note: transcript covers Q.35 + Q.36 (frontmatter says Q.35 only — covers both), so 28 articles vs. typical ~16. Per the flexible-length policy, kept the substantive treatment of the Filioque article (Q.36 a.2) and the Greek-Latin distinction at Q.35 a.2. Within ±25% bracket. QC pass should re-evaluate."
+length_note: "Slightly over the medium-tier guideline of 2200 ±10% (came in at 2623, ratio 1.192). Note: transcript covers Q.35 + Q.36 (summa_ref now reflects both), so 28 articles vs. typical ~16. Per the flexible-length policy, kept the substantive treatment of the Filioque article (Q.36 a.2) and the Greek-Latin distinction at Q.35 a.2. Within ±25% bracket. QC pass should re-evaluate."
 karpathy_wiki_sources:
   - "wiki/traditions/kastrup/wiki.md (PRS-02 individuation within monism — internal relations real-and-constitutive without substance-division)"
   - "wiki/traditions/friston/wiki.md (PRS-04 active inference — love-follows-on-knowledge as formal structural cousin of Filioque priority)"
@@ -74,7 +74,7 @@ karpathy_wiki_sources:
   - "John 14:16-17, John 15:26, John 16:13-15; Galatians 4:6; Romans 8:9-17; Wisdom 7:26; Colossians 1:13-15; Hebrews 1:3"
 mind_first_reframe: "Q.35's *Image as likeness-with-derivation* is the strict Latin-tradition criterion that distinguishes mere-resemblance from image-relation: the Son is image of the Father because the Word both shares the divine nature *and* proceeds-from. Q.36's *Holy Spirit as love-proceeding* is the substrate's second internal procession — the love-procession is structurally posterior to the knowing-procession (love follows on knowledge), and the Filioque doctrine articulates this priority as the procession-from-Father-and-Son-as-one-principle. The two processions are aspects of one substrate's act, distinguished by mode (intellect-terminating-in-likeness; will-terminating-in-toward-which). Friston's active inference gives the alter-scale formal cousin: priors-over-preferred-states are formulated with respect to the generative model — willing presupposes knowing. The Filioque names a structural priority that the active-inference framework reaches independently at the alter scale, with the substrate-scale extrapolation requiring the additional mind-monist commitment."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; the substrate's two internal processions (Word-by-intellect, Spirit-by-love) are not perspectives within the substrate but aspects of its single self-knowing-and-self-loving act. *Salvation in fear and trembling* on the second-procession register is the alter's progressive participation in *both* processions — knowing-as-the-substrate-knows and loving-as-the-substrate-loves, two aspects of the same self-emptying-toward-the-substrate's-internal-life. Wright's covenant frame (Galatians 4: the Spirit of his Son crying *Abba*, Father) places creatures within the Father-Son relation through the Spirit; Rohr's Universal Christ extends the cosmic-scope reading: creation is the substrate's love-stance extended through the Spirit's connective."
-last_qc_at: "2026-06-29T14:26:37"
+last_qc_at: "2026-07-07T16:22:38"
 last_qc_outcome: "pass"
 tags: [synthesis, day/019, theme/trinity, theme/image, theme/holy-spirit, theme/filioque, theme/love-procession, theme/internal-relations]
 

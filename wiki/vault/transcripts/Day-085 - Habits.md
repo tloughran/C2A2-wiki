@@ -16,7 +16,7 @@ fetch_path: yt-dlp (auto-captions)
 synthesis: "[[Day-085 - Habits - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/085, pars/I-II, q/48, q/49]
-last_qc_at: "2026-06-17T00:24:34"
+last_qc_at: "2026-07-07T00:22:57"
 last_qc_outcome: "pass"
 ---
 

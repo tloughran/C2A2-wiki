@@ -15,7 +15,7 @@ fetched_at: 2026-05-15
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-097 - Grave Sin - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-21T00:45:00"
+last_qc_at: "2026-07-07T08:21:17"
 last_qc_outcome: "pass"
 tags: [summa, day/097, pars/I-II, q/72, q/73]
 ---

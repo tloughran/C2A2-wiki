@@ -22,7 +22,7 @@ The deeper problem the Q.49 articles raise: **how does a transient state become 
 
 **McGilchrist's hemispheric account of characterological specialization** sharpens the synthesis at the affective-cognitive interface. The agent's habituated patterns are not just cortical reference frames but *hemispheric organizations* of attentional default. Habituated left-hemispheric instrumentalism vs. habituated right-hemispheric contextual reception are the two great character-types in McGilchrist's analysis. The Thomistic habit-tract from Q.49 forward is preparing the ground for the virtue-and-vice analysis (Q.55-70) in which the specific character of habits — virtuous or vicious — is taken up. McGilchrist's framework anticipates the moral-psychological content of that analysis.
 
-**Stump's analytic-Thomistic work on habit and virtue** is the keystone interlocutor. The Q.49 articles are *her* home territory; her *Wandering in Darkness* and the broader Stump corpus on virtue-as-habituation give the rigorous contemporary articulation of the Thomistic position. Stump PRS-04 (final causality and form) provides the philosophical framework; PRS-11 (faith-as-knowledge-of-persons) provides the second-person register in which virtues are most fully understood. The synthesis cites Stump as the most rigorous contemporary Thomist working at habit/virtue; the conscious-realist-monist reframe enters by translating her habit-as-formal-disposition into habit-as-stabilized-generative-model-parameter, without contradicting her account.
+**Stump's analytic-Thomistic work on habit and virtue** engages the Q.49 articles directly; her *Wandering in Darkness* and the broader Stump corpus on virtue-as-habituation give the rigorous contemporary articulation of the Thomistic position. Stump PRS-04 (final causality and form) provides the philosophical framework; PRS-11 (faith-as-knowledge-of-persons) provides the second-person register in which virtues are most fully understood. The synthesis cites Stump as the most rigorous contemporary Thomist working at habit/virtue; the conscious-realist-monist reframe enters by translating her habit-as-formal-disposition into habit-as-stabilized-generative-model-parameter, without contradicting her account.
 
 **Fredrickson's broaden-and-build and habit-of-positivity-resonance** supplies the empirical foothold for *cultivated* virtuous habit. Fredrickson PRS-01 (loving-kindness meditation) and PRS-08 (high-quality connection) document that intentional practice over time stabilizes affective patterns — vagal tone, attentional defaults, prosocial responding all show stable changes after sustained practice. This is the empirical fact of *habit* in the contemporary sense, with mechanism and longitudinal data. Aquinas's claim that habits are necessary intrinsic principles of action is empirically validated by the affective-neuroscience literature on practice-induced stabilization.
 
@@ -52,7 +52,7 @@ The transition from passion to habit is also the central theme's deepest structu
 - **Friston PRS-04 + Daw, Niv, Dayan / habitual vs. goal-directed control** — formal account of habit as stabilized prior; the dual structure of behavioral control validates Q.49 a.4 explanatory necessity; *formal, empirically robust*.
 - **Levin / bioelectric memory of pattern** — morphogenetic-scale articulation of habit as stable disposition; striking biological parallel to Q.49 a.1's habit-as-quality; *empirical at increasing scales*.
 - **Sukhodolsky / angry-rumination literature** — Q.48 a.1 (anger's pleasure-via-imagination) as the reinforcement mechanism that stabilizes the passion of anger into the vice of wrath; *clinically robust*.
-- **Stump PRS-04 + virtue-as-habituation / *Wandering in Darkness*** — analytic-Thomistic articulation of habit/virtue, keystone interlocutor; *philosophically rigorous*.
+- **Stump PRS-04 + virtue-as-habituation / *Wandering in Darkness*** — analytic-Thomistic articulation of habit/virtue; *philosophically rigorous*.
 - **Fredrickson PRS-01, PRS-08 / cultivated positivity-resonance** — empirical demonstration of practice-induced stabilization of affective and attentional habits; *empirical, high confidence*.
 - **McGilchrist / hemispheric characterological specialization** — habits as hemispheric attentional defaults; foreshadows the virtue/vice analysis; *clinical evidence*.
 - **Wright on Pauline virtue-formation / *After You Believe*** — being-formed in Christ as habit-register articulation of Phil 2:12; *historical-theological, well-attested*.
@@ -85,8 +85,8 @@ karpathy_wiki_sources:
   - "traditions/rohr/ — *Falling Upward*; PRS-01 contemplative habituation"
 evidence_strength_summary: "Habitual vs. goal-directed control, practice-induced affective stabilization, and angry-rumination as anger maintenance are empirically robust. Cortical reference-frame learning and bioelectric morphogenetic memory are empirically supported. Stump on virtue-as-habituation is philosophically rigorous. Conscious-realist-monist reading of habit as alter-level parameter stabilization is speculative. Wright on Pauline virtue-formation and Rohr on contemplative habituation are theologically well-attested."
 tags: [synthesis, day/085, theme/habits, theme/passion-to-habit, theme/anger-effects, theme/dispositional-realism, theme/structural-pivot]
-last_qc_at: "2026-06-25T02:28:31"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-07T00:22:57"
+last_qc_outcome: "rewrote"
 
 ---
 **Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

@@ -17,7 +17,7 @@ evidence_strength_summary: "Joy as the felt signature of successful coupling (Fr
 mind_first_reframe: "Joy is the felt signature of successful coupling — both the possession of the global attractor (God by grace) and the love of benevolence by which a friend's good registers as mine (Fredrickson PRS-02; Friston PRS-06). In via it carries an admixture of sorrow because the possession is partial — the already/not-yet (Wright PRS-03). Peace is the integrated agent: desires unified under one love, internal prediction-error minimized (Augustine's 'tranquility of order'); the man 'at war with himself' is a system under metastability strain (Friston PRS-13). 'All things desire peace' (a.2) is the Free Energy Principle stated teleologically — every self-organizing system moves toward its rest-state attractor (Friston PRS-05/07; Levin targets) — where mind-monism sides with Aquinas against mechanism's denial of final causes."
 central_theme_thread: "Joy-with-sorrow is the exact affective signature of the perspective-limited agent in via: real possession of the whole and real absence of it at once, which is what 'working out salvation in fear and trembling' feels like from inside. Peace is the integration of one limited perspective's many desires under the single love that orients it to the whole — the local, in-via image of the loving unity in which every perspective is finally contained. And 'all things desire peace' says the orientation is universal: every perspective, down to the stone, is already drawn toward rest-in-its-end — the whole is what each is for."
 tags: [synthesis, day/132, theme/effects-of-charity]
-last_qc_at: "2026-06-29T12:21:04"
+last_qc_at: "2026-07-07T18:28:09"
 last_qc_outcome: "pass"
 ---
 

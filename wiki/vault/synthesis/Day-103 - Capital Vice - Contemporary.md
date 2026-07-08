@@ -16,8 +16,8 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (CROSS-027 Kastrup × Friston Markov blanket; line 772 Levin × Friston metastability collapse)"
 evidence_strength_summary: "Empirical: broaden-and-build under positive emotion (Fredrickson, high); attention narrowing under stress and threat (well-supported across paradigms); metastability collapse as a dynamical signature of pathology (Friston PRS-13, mid). Formal: active-inference account of attractor capture under high precision on threat-priors (formal, mid). Speculative: the precise mapping of the medieval seven onto contemporary attractor basins (speculative but principled). Theological: Wright on the Pauline 'works of the flesh' (Gal 5:19-21) as the same family Aquinas inherits."
 tags: [synthesis, day/103, theme/attractor-collapse, theme/attention-narrowing]
-last_qc_at: "2026-06-26T08:20:41"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-07T12:21:09"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 103 — Capital Vice (Contemporary)
@@ -48,7 +48,7 @@ Second, **Friston's active-inference account of metastability** (PRS-13 in the F
 
 Third, **McGilchrist's hemispheric account** (PRS-01 hemispheric asymmetry; PRS-05 attention as ontological act). Left-hemispheric closure under stress narrows the field to decontextualized affordances; the perception of the *whole* (right-hemispheric, contextual, relational) falls away. Each capital vice, on McGilchrist's reading, is a characteristic left-hemispheric collapse: pride as self-as-fragment-mistaken-for-self-as-whole; envy as other-as-fragment-mistaken-for-other-as-whole; lust as object-as-fragment-mistaken-for-person; avarice as good-as-quantifiable-fragment-mistaken-for-good-as-relational. Empirical strength on within-individual hemispheric-attention narrowing under stress is high; the cultural-scale extrapolation McGilchrist also defends is mid and contested.
 
-**PRS-09 in the Stump-tradition wiki** (virtue as cooperative causality), in the Stump-tradition wiki, gives the contrastive frame — virtues are the broadening attractor states that the Holy Spirit cooperatively constitutes in the agent's natural powers. Vices and virtues are not symmetric: vices are attractor *collapses* the agent falls into; virtues are attractor *expansions* the agent cannot achieve unaided. The asymmetry matters for the central-theme thread.
+**PRS-09 in the Stump-tradition wiki** (virtue as cooperative causality) gives the contrastive frame — virtues are the broadening attractor states that the Holy Spirit cooperatively constitutes in the agent's natural powers. Vices and virtues are not symmetric: vices are attractor *collapses* the agent falls into; virtues are attractor *expansions* the agent cannot achieve unaided. The asymmetry matters for the central-theme thread.
 
 **Wright** on Galatians 5:19–21 supplies the scriptural pedigree: Paul's catalog of "works of the flesh" (porneia, eris, phthonos, methai, and the rest) is structurally the same family Aquinas inherits, and Wright's reading of the Pauline contrast (works of the flesh / fruit of the Spirit) maps directly onto the broaden-narrow polarity. **Rohr** on the *false self* supplies the contemplative diagnosis: the capital vices are the characteristic shapes the false-self constructs to maintain itself under perceived threat — pride the architecture, the others its furnishings.
 

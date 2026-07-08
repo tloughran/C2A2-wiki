@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (sandbox)
 synthesis: "[[Day-088 - Distinct Habits - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/088, pars/I-II, q/54_55]
-last_qc_at: "2026-06-24T16:20:44"
+last_qc_at: "2026-07-07T04:22:01"
 last_qc_outcome: "pass"
 ---
 

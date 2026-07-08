@@ -16,13 +16,13 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-106 - Law - Contemporary]]"
 tags: [summa, day/106, pars/I-II, q/90, q/91]
 fidelity_checked: true
-last_qc_at: "2026-06-27T00:21:27"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-07T20:21:43"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 106 — Law (Q.90-91)
 
-Aquinas opens the long Treatise on Law (I-II Q.90-108) that anchors the rest of the Prima Secundae. With the "extrinsic principles of acts" introduced — the devil inclining to evil already covered, God inclining to good now to come — we begin with law (instruction) and will continue with grace (assistance).
+Today begins a new section on law (Q.90-91 of the Prima Secundae). Habash opens with Aquinas's own introduction to the section — the "extrinsic principles of acts": the devil inclining to evil already covered, God inclining to good now to come — so we begin with law (instruction) and will continue with grace (assistance).
 
 ## Q.90 — The Essence of Law
 

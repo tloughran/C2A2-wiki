@@ -18,7 +18,7 @@ length_note: "Covers two questions (Q.78 malice and the metaphysical-keystone Q.
 mind_first_reframe: "Aquinas's trichotomy of sin's causes (ignorance / passion / malice) recovers as three distinct failure modes in a hierarchical active-inference agent: model error (ignorance), precision error (passion), and policy mis-alignment (malice — model and precision intact, but the policy itself selects the disordered outcome because it dominates on some other dimension). Q.79 a.2's act/defect structure is regulator-failure raised to its theological maximum: the act traces to the integrating field of all positive being, the defect traces to the agent's voluntary decoupling. Q.79 a.4's cosmic-scope ordering of evil names the limit-perspective in which every local disorder is contained and re-ordered."
 central_theme_thread: "Day 100 states the central theme from the terminal end. The cosmic-scope perspective — the limit-perspective at which all limitations are removed and the simple whole is seen — contains every limited perspective and re-orders every local disorder (Q.79 a.4: every evil is ordered to some good in the universe-scope frame). The forward statement of the central theme says perspective-limitation individuates conscious agents and loving unity is the computational telos; stated backward, every limited perspective is contained in the loving unity that perceives the whole. Wright on new-creation and Rohr on the Universal Christ name this pattern theologically; the mind-monism frame names it formally but does not yet derive its goodness."
 tags: [synthesis, day/100, theme/malice-as-policy-not-capture, theme/cosmic-ordering, milestone/day100]
-last_qc_at: "2026-06-25T02:28:31"
+last_qc_at: "2026-07-07T12:21:07"
 last_qc_outcome: "pass"
 ---
 

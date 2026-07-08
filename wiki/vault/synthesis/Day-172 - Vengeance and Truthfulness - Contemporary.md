@@ -6,6 +6,7 @@ length_target_words: 1500
 length_actual_words: 1148
 length_tier: short
 length_ratio_to_target: 0.77
+length_note: "Deliberately compact: Q.108 and Q.109 are two brief questions whose PRS treatment completes without padding; short-and-substantive preferred per constitution."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling; honest signaling; cooperation maintenance)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry; grasping vs relational attention)"
@@ -17,8 +18,8 @@ evidence_strength_summary: "Altruistic-punishment / cooperation-maintenance and 
 mind_first_reframe: "Vengeance and truthfulness are the two guardians of a cooperative model among limited agents: correction of defection as bounded delegation ordered to restoration, and honest self-disclosure as the signal-integrity that keeps mutual models calibrated."
 central_theme_thread: "Loving unity is computed by perspective-limited agents who must both correct defection and disclose themselves honestly; vengeance-as-passion and deception each refuse the cooperative structure and fracture the shared computation."
 tags: [synthesis, day/172, theme/correction-signals, theme/honest-signaling, q/108, q/109]
-last_qc_at: "2026-06-24T20:20:28"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-07T18:28:06"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 172 — Vengeance & Truthfulness (Contemporary)

@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (sandbox)
 synthesis: "[[Day-086 - The Subject of Habits - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/086, pars/I-II, q/50_51]
-last_qc_at: "2026-06-24T16:20:30"
+last_qc_at: "2026-07-07T00:22:58"
 last_qc_outcome: "pass"
 ---
 

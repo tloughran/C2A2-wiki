@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-104 - Punishment - Contemporary]]"
 tags: [summa, day/104, pars/I-II, q/86-87]
 fidelity_checked: true
-last_qc_at: "2026-06-18T08:23:14"
+last_qc_at: "2026-07-07T12:21:10"
 last_qc_outcome: "pass"
 ---
 # Day 104 — Punishment

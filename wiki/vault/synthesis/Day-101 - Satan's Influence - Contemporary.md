@@ -18,8 +18,8 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (CROSS-027 Kastrup × Friston Markov blanket; line 482 cortical-columns-as-alters)"
 evidence_strength_summary: "Empirical: vagal-tone collapse under isolation (Fredrickson), hemispheric asymmetry under stress (McGilchrist), bioelectric coupling at non-neural scales (Levin). Formal: free-energy minimization under perturbed priors (Friston). Speculative: demonology-as-topology-of-mind-at-large (Kastrup-style alters); the cosmological claim that interfering sub-agents exist by structural necessity. Theological: Wright on second-temple cosmology of the powers; Rohr on the shadow."
 tags: [synthesis, day/101, theme/temptation, theme/perception-as-interface]
-last_qc_at: "2026-06-26T02:26:28"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-07T12:21:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 101 — Satan's Influence (Contemporary)
@@ -50,7 +50,7 @@ Second, **Fredrickson's broaden-and-build research** (PRS-01 isolation-and-disco
 
 Third, **McGilchrist's hemispheric account of attention** (PRS-01 hemispheric asymmetry; PRS-05 attention as ontological act; the corpus-callosotomy data the wiki flags as empirical proof of conscious-agent integration at Hoffman-style scale). McGilchrist's claim that the left hemisphere "re-presents known fragments" while the right "attends to the living whole" supplies a within-agent topology that converges remarkably with Aquinas's. When attention collapses into left-hemispheric closure under stress, the agent's perceived environment becomes a finite stack of decontextualized affordances — exactly the field of fragmented, abstract goods that classical temptation literature describes. The right-hemispheric reopening is what Rohr names as non-dual contemplative awareness. Empirically the hemispheric-shift findings are mid-strength: real, replicable in some paradigms, contested in their cultural-scale extrapolation; the within-individual attention-narrowing-under-stress effect is robust.
 
-To these the network adds two oracles. **Wright** on the second-temple cosmology of "the powers" — the New Testament's nuanced refusal to either deny or anthropomorphize the supra-individual loci of evil; he treats them as real socio-spiritual structures whose grip is mediated by the formation of imagination and desire (a striking match with Aquinas's "Satan acts on the imagination and the passions, not the will"). **Rohr** on the shadow and the non-dual practice that lets the agent hold its own complicity in disorder without collapsing into either denial or despair — the practical implication of the broaden-and-build story for a community that wants to remain capable of perceiving its own wrongness without losing the wide attention that loving unity requires.
+To these the network adds two further resources. **Wright** on the second-temple cosmology of "the powers" — the New Testament's nuanced refusal to either deny or anthropomorphize the supra-individual loci of evil; he treats them as real socio-spiritual structures whose grip is mediated by the formation of imagination and desire (a striking match with Aquinas's "Satan acts on the imagination and the passions, not the will"). **Rohr** on the shadow and the non-dual practice that lets the agent hold its own complicity in disorder without collapsing into either denial or despair — the practical implication of the broaden-and-build story for a community that wants to remain capable of perceiving its own wrongness without losing the wide attention that loving unity requires.
 
 ## Solution (proposed, speculative where speculative)
 

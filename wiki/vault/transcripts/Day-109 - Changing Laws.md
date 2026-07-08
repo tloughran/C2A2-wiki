@@ -16,7 +16,7 @@ fetched_at: 2026-05-18
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-109 - Changing Laws - Contemporary]]"
 tags: [summa, day/109, pars/I-II, q/96, q/97]
-last_qc_at: "2026-06-16T20:23:11"
+last_qc_at: "2026-07-07T20:21:45"
 last_qc_outcome: "pass"
 ---
 
