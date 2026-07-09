@@ -37,3 +37,16 @@ SEARCH-AGAINST-ASSUMPTION-363:
   Search scope: Cron silent failure; heartbeat/dead-man's-switch monitoring. Comprehensive.
 
   Recommendation: CHALLENGED
+
+SEARCH-AGAINST-ASSUMPTION-363 (RE-TRIGGER cycle 1):
+  Date searched: 2026-07-08
+  Original item: ASSUMPTION-363
+  PROVENANCE:
+    Chain: [... -> 15c -> 15d -> 15b] (cycle 1, 2026-07-08)
+    Transform: 15d weekly re-trigger 2026-07-05; 15b refreshed disconfirmatory search
+    Current status: CHALLENGED
+  New sources since last cycle: Yes (OneUptime cron-monitoring 2026; Nurbak Dead Man's Switch 2026; deadmancheck GitHub)
+  Strength of challenge: Strong
+  Summary: 2026 monitoring literature is unanimous that the dangerous failure class is the SILENT one (jobs that vanish or run-but-do-nothing) and cadence is irrelevant without a dead-man's-switch/heartbeat detecting non-execution. An app-gated, local-only, no-miss-detection task is the canonical silent-stall pattern.
+  STEELMAN: A 6-hour interval is meaningless if a missed fire produces no signal; without dead-man's-switch detection the task can be dead for weeks while Heartbeat looks 'fresh.'
+  Recommendation: CHALLENGED / Hold Strong; fix is non-execution detection (heartbeat ping + last-run staleness alert), not cadence. Cadence is secondary until miss-detection exists.

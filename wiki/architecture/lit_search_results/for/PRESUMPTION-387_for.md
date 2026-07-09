@@ -28,3 +28,15 @@ SEARCH-FOR-PRESUMPTION-387:
   Search scope: LLM-as-judge human-agreement rates. Adequate.
 
   Recommendation: PARTIALLY-SUPPORTED
+
+SEARCH-FOR-PRESUMPTION-387 (RE-TRIGGER cycle 1):
+  Date searched: 2026-07-08
+  Original item: PRESUMPTION-387
+  PROVENANCE:
+    Chain: [... -> 15c -> 15d -> 15a] (cycle 1, 2026-07-08)
+    Transform: 15d weekly re-trigger 2026-07-05; 15a refreshed supportive search
+    Current status: SUPPORTED
+  New sources since last cycle: Yes (arXiv 2606.19544; labelyourdata LLM-as-judge 2026)
+  Strength of support: Moderate (conditional)
+  Summary: LLM-as-judge calibration against human labels (kappa/Spearman) is now table-stakes with published thresholds; well-calibrated judges reach high human agreement. Support is CONDITIONAL on calibration being performed — capped at Moderate. Trajectory slightly improving but contingent.
+  Recommendation: SUPPORTED / Hold Moderate; support conditional on documented judge-vs-human calibration in the actual pipeline.

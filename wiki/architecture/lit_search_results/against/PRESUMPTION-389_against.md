@@ -37,3 +37,16 @@ SEARCH-AGAINST-PRESUMPTION-389:
   Search scope: Most-likely-case selection; pilot bias; circularity. Comprehensive.
 
   Recommendation: CHALLENGED
+
+SEARCH-AGAINST-PRESUMPTION-389 (RE-TRIGGER cycle 1):
+  Date searched: 2026-07-08
+  Original item: PRESUMPTION-389
+  PROVENANCE:
+    Chain: [... -> 15c -> 15d -> 15b] (cycle 1, 2026-07-08)
+    Transform: 15d weekly re-trigger 2026-07-05; 15b refreshed disconfirmatory search
+    Current status: CHALLENGED
+  New sources since last cycle: Yes (PMC7014944 pilot generalizability-bias systematic review/meta-analysis; Frontiers hierarchical bias propagation 2026)
+  Strength of challenge: Strong
+  Summary: Pilot-generalizability literature formally names Risk of Generalizability Bias and shows pilots systematically overstate effects that fail at scale; models passing standard validation still fail OOD. A most-self-confirming Hawkins pilot is textbook selection/target-audience bias.
+  STEELMAN: A pilot chosen because it is the friendliest case is precisely the one most likely to exhibit generalizability bias; passing on Hawkins predicts little about harder thinker tracks.
+  Recommendation: CHALLENGED / Hold Strong; validate on an adversarial/least-favorable thinker before claiming transfer.

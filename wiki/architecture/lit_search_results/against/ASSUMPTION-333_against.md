@@ -74,3 +74,16 @@ SEARCH-AGAINST-ASSUMPTION-333 (RE-TRIGGER cycle 1):
   STEELMAN: Carried forward from prior cycle (no new counterargument surfaced this cycle; strongest prior challenge stands as previously recorded).
 
   Recommendation: refreshed; carry forward prior recommendation (PARTIALLY-CHALLENGED)
+
+SEARCH-AGAINST-ASSUMPTION-333 (RE-TRIGGER cycle 2):
+  Date searched: 2026-07-08
+  Original item: ASSUMPTION-333
+  PROVENANCE:
+    Chain: [... -> 15c -> 15d -> 15b] (cycle 2, 2026-07-08)
+    Transform: 15d weekly re-trigger 2026-07-05; 15b refreshed disconfirmatory search
+    Current status: PARTIALLY-CHALLENGED
+  New sources since last cycle: Yes (arXiv 2506.05794 Markov Blanket Density & FE Minimization, Jun 2025; reinforces Bruineberg 'Markov Blanket Trick')
+  Strength of challenge: Moderate (nudging Strong)
+  Summary: New work sharpens that Markov blankets act as a statistical partition, not a physical/structural boundary — the instrument-vs-boundary equivocation the identity claim relies on. Shared FEP vocabulary is cheap and non-diagnostic of a true structure-mapping.
+  STEELMAN: Both framings speaking FEP proves only that FEP is universal enough to redescribe anything; common redescription is analogy, not evidence the two are one problem.
+  Recommendation: PARTIALLY-CHALLENGED / Upgrade confidence toward Strong; downgrade the claim from identity/bridge to suggestive analogy pending explicit structure-mapping.

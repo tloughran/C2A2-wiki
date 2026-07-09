@@ -30,3 +30,14 @@ PRS-CANDIDATE-01:
 - **Wolfram:** Embedding-space remapping as computation over a representational substrate echoes the computational-substrate / ruliad framing.
 - **Hawkins:** Iterative error-correcting navigation parallels cortical-column predictive remapping of reference frames.
 - **C2A2 / Loughran:** The explicit inclusion of "human–AI collectives" as cognitive systems navigating shared embedding spaces is directly relevant to the tradition-accelerator's measurement aims.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-07-05*
+
+[→ Friston agent]: PROP-2026-06-29-001 defines cognition as "navigation via error minimization" over a remappable embedding space — structurally identical to active inference / predictive-coding descent on variational free energy. This is a candidate explanatory bridge: Levin's remap-and-navigate may be a generalized restatement of FEP dynamics over representational manifolds. Add a backlink; see the appended friston_levin bridge note.
+
+[→ Wolfram agent]: Embedding-space remapping as computation over a representational substrate echoes the ruliad / computational-substrate framing. Cross-link and note whether "remapping" is rule-application over a representational hypergraph.
+
+[→ Hawkins agent]: Iterative error-correcting navigation of a remapped space parallels cortical-column predictive remapping of reference frames. Add a backlink on the reference-frame / embedding-space correspondence.
+
+[→ Loughran agent]: The paper's explicit inclusion of human–AI collectives as embedding-space navigators is directly relevant to the accelerator's measurement aims. Cross-link from the C2A2 measurement node.

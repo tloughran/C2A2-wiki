@@ -426,3 +426,50 @@ cd "wiki/synthesis" && find . -name "*_bridge.md" -size 0 -delete
 4. **Strong same-day theological pair** (PROP-2026-06-28-001 Wright/Phoebe + -002 Rohr/chosenness) both land on the Summa central theme (individuation-for-unity). Bridged in `wright_rohr_bridge.md`; flagged for master-agent cross-link with the Rohr Universal-Christ and Stump corporate-substance nodes.
 
 *Autonomous scheduled run. Append-only; no source content deleted or overwritten. Verified: 10/10 pages have exactly one Agentic Calls section with frontmatter intact (25 calls, all PRS-specific); all 9 bridge targets non-zero post-run. CSV not double-written. One self-introduced litter file flagged for manual removal (could not unlink).*
+
+---
+
+## Sewing Agent Run — 2026-07-05 (autonomous, scheduled)
+
+**Connectivity census (wikilink basename map, node_modules/.git/.obsidian excluded):** orphans 2483 / sparse 646 / connected 55 / total 3184.
+
+**CSV row appended:** `2026-07-05,2483,646,55,3184` (confirmed no prior 2026-07-05 row existed before writing — grep count was 0).
+
+**Pages processed (10) — all 0-backlink, all in `inbox/proposals/`, append-only. Only 1 traditions/ orphan exists this run (`traditions/loughran/papers/README.md`, a manifest — correctly skipped as a system/index page). No thinker-content orphans in traditions/.**
+
+| Page | dir | backlinks before→after | calls |
+|---|---|---|---|
+| 2026-07-05_wolfram_observer-boundaries-brain-emulation | pending | 0→0* | Hawkins, Kastrup, Stump |
+| 2026-07-03_carroll_dark-energy-theories | pending | 0→0* | Arkani-Hamed, Stump |
+| 2026-07-01_mcgilchrist_thinking-class-ruin-western-world | pending | 0→0* | Rohr, Stump |
+| 2026-07-01_mcgilchrist_freedom-pact-masterclass-human-nature | pending | 0→0* | Kastrup, Hoffman, Stump |
+| 2026-07-01_kastrup_currivan-living-evolving-universe | pending | 0→0* | Levin, Wolfram, McGilchrist |
+| 2026-06-30_hawkins_neural-computation-tbs | approved | 0→0* | Friston, Levin |
+| 2026-06-29_levin_embedding-space-remapping | approved | 0→0* | Friston, Wolfram, Hawkins, Loughran |
+| 2026-06-29_levin_cognition-spaces | approved | 0→0* | Loughran, Hoffman, Wolfram, Friston |
+| 2026-06-29_friston_self-orthogonalizing-attractors | approved | 0→0* | Hawkins, Levin, Wolfram |
+| 2026-06-24_kastrup_one-free-miracle | approved | 0→0* | Stump, McGilchrist |
+
+(*Agentic calls are routing requests to named agents to add reciprocal backlinks; inbound counts do not rise until those agents act. Every call cites a specific PROP id / PRS candidate / passage — no boilerplate.)
+
+**Agentic calls injected: 28**, addressed to — Stump ×5, Wolfram ×4, Friston ×3, Hawkins ×3, Levin ×3, Hoffman ×2, Kastrup ×2, Loughran ×2, McGilchrist ×2, Arkani-Hamed ×1, Rohr ×1.
+
+**Bridge notes written: 9 across 8 EXISTING files (2 empty stubs filled, 6 appended) — no new files created (no-unlink mount policy from prior runs upheld):**
+- `stump_wolfram_bridge.md` (FILL) — mind-boundary as observer-coherence vs hylomorphic personal identity (emulation/linked-brains test case)
+- `arkanihamed_carroll_bridge.md` (APPEND) — dynamical DE vs constant Λ as naturalness→model-selection fork
+- `mcgilchrist_rohr_bridge.md` (APPEND) — left-hemisphere culture can't self-diagnose ≅ contemplation as the "outside vantage"
+- `kastrup_mcgilchrist_bridge.md` (APPEND) — freedom-pact masterclass: two non-reductive attacks (attention-mode vs metaphysics) on one physicalist target
+- `kastrup_levin_bridge.md` (APPEND) — immanent cosmic purpose vs nested goal-directedness (discrete-vs-continuous divergence test)
+- `friston_levin_bridge.md` (APPEND ×2 in one note) — (1) embedding-space remap+navigate ≅ FEP over manifolds; (2) self-orthogonalizing attractors ≅ morphogenetic attractors
+- `levin_loughran_bridge.md` (FILL) — human–AI hybrid cognition space = C2A2 accelerator's object of study; void regions = unbuilt configurations
+- `kastrup_stump_bridge.md` (APPEND) — "one free miracle": idealist facticity vs Thomistic per-se necessity (same regress shape, rival primitive)
+
+**Verification (fail-loud):** 10/10 pages have exactly one `## Agentic Calls` section with YAML frontmatter intact; 28 calls all PROP-specific; all 8 bridge files non-empty post-run (1532–8231 bytes). CSV not double-written. No source content deleted or overwritten (append-only). No new synthesis file created; no litter introduced this run (prior-run lesson applied — did not probe unlink).
+
+**Worth Tom's attention:**
+1. **Metric inflation still present** (flagged 2026-06-21/28, unchanged): the 2483 orphan count is inflated by machine dumps under `architecture/lit_search_results/` and `architecture/daily_sync/`. Recommend excluding both dirs from the connectivity metric for series comparability — still flagged only, needs sign-off before changing the census definition.
+2. **Carried-over stub litter:** ~19 zero-byte `*_bridge.md` stubs remain in `synthesis/` (this run filled 2: stump_wolfram, levin_loughran). To clear the rest: `cd "wiki/synthesis" && find . -name '*_bridge.md' -size 0 -delete`.
+3. **Prior-run self-introduced litter still present:** `synthesis/__unlinktest_maUx.md` (0 bytes, from 2026-06-28) still needs manual removal — the mount denies unlink. `rm "wiki/synthesis/__unlinktest_maUx.md"`.
+4. **Dense Levin cluster this week:** three same-window Levin/Fields papers (embedding-space remapping, cognition spaces, plus the Friston attractor paper) all point at a Levin×Friston "error-minimization over a representational manifold" convergence. Bridged (friston_levin, twice) and flagged for master-agent: this may warrant a standalone synthesis page rather than a bridge note, if Tom wants to promote it.
+
+*Autonomous scheduled run. Append-only; no deletions. All additions italic-datestamped 2026-07-05.*

@@ -16,3 +16,16 @@
 **Synthesis claim:** Carroll's cosmological-constant problem and Arkani-Hamed's naturalness-driven post-spacetime program are the EFT-side and geometry-side statements of one explanatory crisis: the local effective-field-theory language assigns the vacuum an energy it cannot then reconcile with observation, which both read (oppositely) as a signal about the right level of fundamentality.
 
 **Open question:** Does a positive-geometry / amplituhedron-style reformulation actually *dissolve* the cosmological-constant problem (make the 10^120 a category error of the EFT framing), or does it inherit it? Neither thinker's wiki node currently commits to an answer.
+
+
+---
+
+*Added by Sewing Agent on 2026-07-05*
+
+**Intersecting orphan:** `inbox/proposals/pending/2026-07-03_carroll_dark-energy-theories.md` (PROP-2026-07-03-001, Mindscape 359)
+
+**Why it sits at the intersection:** Carroll lays out the dynamical-dark-energy vs constant-Λ vs modified-gravity fork as a candidate *foundational* discovery. Arkani-Hamed's naturalness program treats the cosmological constant's smallness as the paradigm fine-tuning problem; a detected time-varying w(z) would reframe the puzzle from "why is Λ so small" to "what dynamics select the acceleration history."
+
+**Synthesis claim:** A rolling equation of state w(z)≠−1 would convert the cosmological-constant *naturalness* problem into a *model-selection* problem — shifting the fork from Arkani-Hamed's "structure demanding explanation" (why this value) toward Carroll's Bayesian "tangible explanatory gain over Λ" (which dynamical model). The two programs price the same observation differently: naturalness asks whether w(z) removes fine-tuning; poetic-naturalism asks whether it earns confirmation over the simpler constant.
+
+**Open question the wiki cannot yet answer:** Would a measured w(z)≠−1 count as *progress on naturalness* (a dynamical mechanism replacing a tuned constant) or merely trade one unexplained function for one unexplained number — and do Arkani-Hamed's geometric/surface methods and Carroll's Bayesian standard agree on which?

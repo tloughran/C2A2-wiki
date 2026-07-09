@@ -27,3 +27,12 @@ PRS-CANDIDATE-01:
 
 ## Cross-Tradition Signals
 Strong cross-tradition value: this stages McGilchrist directly against Sapolsky-style reductive materialism — the same physicalism that Kastrup's analytic idealism and Hoffman's interface theory also contest, and that Stump's Thomistic hylomorphism resists. The Greene/Sapolsky/McGilchrist tripling is itself a worked example of C2A2's single-frame, multi-tradition staging (compare the Sheldonian "Good, Beautiful, True" format). Note for the reviewer: because this is a curated compilation featuring McGilchrist rather than a McGilchrist-led work, confidence on the specific triplet is Speculative pending segment confirmation.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-07-05*
+
+[→ Kastrup agent]: PROP-2026-07-01-002 stages McGilchrist directly against Sapolsky-style hard determinism — the same reductive physicalism your analytic idealism contests. Cross-link from the against-physicalism node and consider whether McGilchrist's "determinism is a left-hemisphere artifact" and your "matter is an appearance of mind" are two attacks on one target. See the appended kastrup_mcgilchrist bridge note.
+
+[→ Hoffman agent]: The masterclass pits participatory realism against reductive neurobiology — your interface-theory ground. Add a backlink noting whether "the person is not the decomposed re-presentation" parallels "perception is an interface, not the truth of the substrate."
+
+[→ Stump agent]: Sapolsky's caused-through-and-through person is exactly what Thomistic hylomorphism resists. Review and cross-link on whether hemisphere theory and hylomorphism give compatible non-reductive accounts of agency.

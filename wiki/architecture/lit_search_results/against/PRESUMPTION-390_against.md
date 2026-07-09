@@ -37,3 +37,16 @@ SEARCH-AGAINST-PRESUMPTION-390:
   Search scope: Metaphor transfer; input-variation decorrelation. Comprehensive.
 
   Recommendation: CHALLENGED
+
+SEARCH-AGAINST-PRESUMPTION-390 (RE-TRIGGER cycle 1):
+  Date searched: 2026-07-08
+  Original item: PRESUMPTION-390
+  PROVENANCE:
+    Chain: [... -> 15c -> 15d -> 15b] (cycle 1, 2026-07-08)
+    Transform: 15d weekly re-trigger 2026-07-05; 15b refreshed disconfirmatory search
+    Current status: NO-CHALLENGE-FOUND (direct) / PARTIALLY-CHALLENGED (by extension)
+  New sources since last cycle: No direct critique (TBP corpus arXiv 2507.04494 describes frames but no correlated-redundancy objection published)
+  Strength of challenge: Weak-to-Moderate
+  Summary: The theoretical challenge stands on first principles but lacks targeted literature: TBP 'reference frame' requires genuinely different sensorimotor/informational bases; three overlapping readings of one corpus may be correlated redundancy. No external source tests this transfer condition.
+  STEELMAN: Calling three analyses of the same corpus 'different reference frames' borrows TBP prestige without meeting its transfer bar; they may just be correlated re-reads.
+  Recommendation: NO-CHALLENGE-FOUND (direct) / PARTIALLY-CHALLENGED (by extension) / Keep as live but under-evidenced challenge; burden is internal — measure inter-slice correlation/independence to earn the label. Do not rely on external literature to settle it.

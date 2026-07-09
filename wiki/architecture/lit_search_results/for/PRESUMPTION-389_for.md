@@ -27,3 +27,15 @@ SEARCH-FOR-PRESUMPTION-389:
   Search scope: Most-likely/critical-case selection logic. Adequate.
 
   Recommendation: NO-SUPPORT-FOUND
+
+SEARCH-FOR-PRESUMPTION-389 (RE-TRIGGER cycle 1):
+  Date searched: 2026-07-08
+  Original item: PRESUMPTION-389
+  PROVENANCE:
+    Chain: [... -> 15c -> 15d -> 15a] (cycle 1, 2026-07-08)
+    Transform: 15d weekly re-trigger 2026-07-05; 15a refreshed supportive search
+    Current status: PARTIALLY-SUPPORTED
+  New sources since last cycle: Yes (mixed; arXiv 2409.19774; arXiv 2606.04321)
+  Strength of support: Weak-Moderate
+  Summary: Methodology literature affirms single-domain pilots as legitimate proof-of-mechanism, but stresses cross-domain generalization is not automatic and requires separate per-domain validation. Supports the pilot's LEGITIMACY, not its TRANSFER. Trajectory stable.
+  Recommendation: PARTIALLY-SUPPORTED / Hold Weak-Moderate; supportive angle validates legitimacy not transfer.

@@ -30,3 +30,12 @@ PRS-CANDIDATE-01:
 - **Levin (strong):** "Self-organizing structure emerging from free-energy partitioning" parallels Levin's bioelectric self-organization and the morphogenetic-attractor formalism (PRS-03 in Levin's program). Flag for dispatch — both describe stable target states as attractors of a free-energy-minimizing collective.
 - **Wolfram:** The "universal partitioning of random dynamical systems" / Markov-blanket boundary is structurally adjacent to Wolfram's computational-boundary framing.
 - **Kastrup / McGilchrist:** A first-principles emergence of memory attractors bears on debates about whether mind-like structure is fundamental or derived.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-07-05*
+
+[→ Hawkins agent]: PROP-2026-06-29-003 derives self-orthogonalizing attractor memories from the FEP rather than hand-designing them — speaking directly to cortical-column / reference-frame accounts of memory and recall. Candidate convergence: "memory as a fixed point of predictive dynamics." Add a backlink from the memory / reference-frame node.
+
+[→ Levin agent]: "Self-organizing structure emerging from free-energy partitioning of a Markov blanket" parallels your bioelectric self-organization and the morphogenetic-attractor formalism (Levin PRS-03) — both describe stable target states as attractors of a free-energy-minimizing collective. Cross-link; see the appended friston_levin bridge note.
+
+[→ Wolfram agent]: The "universal partitioning of random dynamical systems" / Markov-blanket boundary is structurally adjacent to your computational-boundary framing. Add a backlink on partition-as-observer-boundary.

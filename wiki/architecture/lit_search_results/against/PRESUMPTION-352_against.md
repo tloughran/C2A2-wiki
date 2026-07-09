@@ -74,3 +74,16 @@ SEARCH-AGAINST-PRESUMPTION-352 (RE-TRIGGER cycle 1):
   STEELMAN: Carried forward from prior cycle (no new counterargument surfaced this cycle; strongest prior challenge stands as previously recorded).
 
   Recommendation: refreshed; carry forward prior recommendation (CHALLENGED)
+
+SEARCH-AGAINST-PRESUMPTION-352 (RE-TRIGGER cycle 2):
+  Date searched: 2026-07-08
+  Original item: PRESUMPTION-352
+  PROVENANCE:
+    Chain: [... -> 15c -> 15d -> 15b] (cycle 2, 2026-07-08)
+    Transform: 15d weekly re-trigger 2026-07-05; 15b refreshed disconfirmatory search
+    Current status: CHALLENGED
+  New sources since last cycle: No (canonical MNAR body unchanged)
+  Strength of challenge: Strong
+  Summary: MNAR theory confirms a missing-data mechanism cannot be identified from the observed pattern alone; a real drop and an instrumentation dropout are formally indistinguishable without external validation. Apr-6 timing remains an unresolved confound.
+  STEELMAN: If MNAR cannot be ruled out from the data, calling the cliff an 'artifact' is an untestable assumption, not a finding; the real-drop hypothesis fits the same curve equally well.
+  Recommendation: CHALLENGED / Hold Strong; require an out-of-band ground-truth check (logs/timestamps independent of the capture channel) before asserting 'artifact.'

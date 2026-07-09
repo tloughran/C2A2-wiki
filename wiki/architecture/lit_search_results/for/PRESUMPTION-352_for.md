@@ -62,3 +62,15 @@ SEARCH-FOR-PRESUMPTION-352 (RE-TRIGGER cycle 1):
   Caveats: An automated weekly refresh is bounded by the LLM's capacity to surface genuinely new external evidence; operational evidence from the C2A2 runs themselves remains the more sensitive signal for status change.
 
   Recommendation: refreshed; carry forward prior recommendation (PARTIALLY-SUPPORTED)
+
+SEARCH-FOR-PRESUMPTION-352 (RE-TRIGGER cycle 2):
+  Date searched: 2026-07-08
+  Original item: PRESUMPTION-352
+  PROVENANCE:
+    Chain: [... -> 15c -> 15d -> 15a] (cycle 2, 2026-07-08)
+    Transform: 15d weekly re-trigger 2026-07-05; 15a refreshed supportive search
+    Current status: PARTIALLY-SUPPORTED
+  New sources since last cycle: Yes (weak; PeerJ cs-3848; arXiv 2501.05596 MCAR test)
+  Strength of support: Moderate
+  Summary: 2025-26 missing-data literature reaffirms sensor/instrument failure and premature-cessation dropout as canonical missingness causes, supporting mechanism-plausibility of the artifact reading. No source links an abrupt cliff specifically to an acquisition-failure signature; support remains generic, not cliff-shape-specific. Trajectory stable.
+  Recommendation: PARTIALLY-SUPPORTED / Hold Moderate; no trajectory change.

@@ -53,3 +53,16 @@ Harpur's objection to the cockpit metaphor is, in effect, an objection to the **
 
 - Cross-link the new anchor from `traditions/kastrup/wiki.md` and `traditions/mcgilchrist/wiki.md`.
 - Route the depth-vs-instrument tension to `traditions/hoffman/wiki.md` and compare with `synthesis/carroll_hoffman_bridge.md`.
+
+
+---
+
+*Added by Sewing Agent on 2026-07-05*
+
+**Intersecting orphan:** `inbox/proposals/pending/2026-07-01_mcgilchrist_freedom-pact-masterclass-human-nature.md` (PROP-2026-07-01-002)
+
+**Why it sits at the intersection:** The masterclass stages McGilchrist's participatory right-hemisphere realism against Sapolsky's hard-determinist neuroscience in a single frame. Kastrup's analytic idealism contests the same reductive physicalism from a different flank — arguing matter is an appearance within consciousness rather than the causal ground of it.
+
+**Synthesis claim:** McGilchrist ("determinism is a category-artifact of the left-hemisphere's decomposed re-presentation of the person") and Kastrup ("the physical is an appearance of mind, not its cause") are two non-reductive attacks converging on one target: the claim that persons are caused-through-and-through by sub-personal physical mechanism. One locates the error in a *mode of attention*, the other in a *metaphysics of substance*.
+
+**Open question the wiki cannot yet answer:** Are these attacks *compatible or rival*? McGilchrist's realism keeps a mind-independent world grasped rightly; Kastrup's idealism denies mind-independence outright. The wiki lacks a statement of whether a participatory-realist and an analytic-idealist can share an anti-reductionism without one collapsing into the other.

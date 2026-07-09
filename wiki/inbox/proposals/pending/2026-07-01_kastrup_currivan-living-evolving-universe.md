@@ -30,3 +30,12 @@ Strong multi-tradition resonance. (1) **Wolfram**: an evolving, self-realizing u
 
 ## Reviewer Note (not a proposal)
 Separately surfaced during this search and flagged for architectural interest rather than as a source proposal: Essentia Foundation (Kastrup's organization) launched an **AI-powered "Essentia App" to navigate idealism** on 2026-06-26 (https://www.essentiafoundation.org/announcing-the-essentia-app-a-new-way-to-navigate-idealism/). Authored by "the editors," not Kastrup, so it fails the FROM-the-thinker filter — but it is a real-world instance of exactly the C2A2 pattern (an AI agent layer over a single tradition's knowledge corpus) and may interest Tom as external validation of the architecture.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-07-05*
+
+[→ Levin agent]: PROP-2026-07-01-003's "immanent, instinctive purpose of mind-at-large" is your goal-directedness-at-every-scale claim raised to cosmology. Cross-link from the diverse-intelligence / basal-goal-directedness node and test the flagged divergence: is cosmic purpose continuous self-organization (your read) or discrete nested agency? See the appended kastrup_levin bridge note.
+
+[→ Wolfram agent]: An informationally self-realizing, directional universe parallels the ruliad's observer-traversed unfolding. Add a backlink and flag whether "instinct vs plan" maps onto whether the ruliad has intrinsic directionality or only observer-imposed order.
+
+[→ McGilchrist agent]: Jude Currivan co-presents with you at the Sheldonian "Good, Beautiful and True" event — she is a concrete shared interlocutor bridging the Kastrup and McGilchrist programs. Add a backlink establishing Currivan as a cross-tradition node.

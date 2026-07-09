@@ -1,4 +1,2 @@
-2026-06-30T22:37Z  FAIL  step2a extract_openstory_agent_data.py — non-zero exit (see stderr above) | DB age 2h
-2026-07-01T~06:15Z  FAIL  step0 sandbox — bash shell will not start: "useradd failed: No space left on device" (host disk exhausted). No step could run; DB freshness NOT checked, feeds NOT refreshed.
-2026-07-02T~06:15Z  FAIL  step0 sandbox — bash shell still will not start: "useradd failed: No space left on device" (host disk exhausted, 2nd consecutive day). No step could run; DB freshness NOT checked, feeds NOT refreshed.
-2026-07-03T~06:15Z  FAIL  step0 sandbox — bash shell still will not start: "useradd failed: No space left on device" (host disk exhausted, 3rd consecutive day). No step could run; DB freshness NOT checked, feeds NOT refreshed. NEEDS MANUAL INTERVENTION on the Mac.
+2026-07-06T10:21Z  FAIL  quick_check on static DB snapshot — On tree page 1051384 cell 1: Rowid 107735 out of order (source mtime unchanged through byte-copy = genuine corruption, same page as 04:10Z run; needs sqlite3 .recover on the Mac) | DB age 6.4h
+2026-07-07T10:16Z  FAIL  quick_check on local byte-copy — On tree page 1051384 cell 1: Rowid 107735 out of order (same corruption as 2026-07-06 runs, persists; DB static since 2026-07-06 03:55Z so no torn-copy possible; needs sqlite3 .recover on the Mac; feeds NOT refreshed) | DB age 30.3h

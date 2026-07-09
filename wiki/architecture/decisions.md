@@ -932,3 +932,48 @@ DECISION-075:
     Transform at each step:
       14a: Recorded from the attended "InterT study" session close (2026-07-02), including the live-URL verification and the handoff's parked-moves list. Git push/SHA held to Tom's Mac per the standing no-blind-push rule.
     Current status: REALIZED (tab live; strengthening + publish deferred)
+
+DECISION-076:
+  Date: 2026-07-05 (attended — "Explorer Bugs PRS triplets review" session, Tom present)
+  Title: Ship the Review Log PRS-triple pop-up for ISME now, via a surgical two-file commit
+  Decision: Build and ship the clickable PRS-triple modal in `review_log.html` — all 447 triple rows open a full-text pop-up; Prev/Next and ← → keys cycle the whole set with wraparound; close on ×, outside-click, or Esc; nav pinned in a single-line fixed header. Tom explicitly chose (in-session question, reversing the minutes-earlier parking) to push the current build to GitHub for ISME with the known vertical-jump defect included, staging ONLY `scripts/assemble_review_log.py` and `wiki/review_log.html`. Private-first items stay unpushed by standing decision: `funding/`, `c2a2_dev_path_crowdfunding_framework.md`, `isme-talk-card-pool-2026-06-30.md`.
+  Status: ADOPTED (attended). EXECUTION UNRESOLVED at transcript end — the commit failed on `.git/index.lock`, then a fresh `.git/HEAD.lock`; the session closed awaiting process listings to identify a possible live writer (Sunday janitor / heartbeat cron). Whether the commit and push ultimately landed is NOT recorded. FAIL-LOUD: verify `git log` on the Mac before treating the modal as live for ISME.
+  Rationale: the Review Log is ISME-facing (the Start Here "Is a common mind forming" door); header-pinned nav fixes the jumping-buttons usability problem; the residual defect was judged minor relative to conference visibility.
+  Related: ASSUMPTION-411, 412, 413, 414, 415; PRESUMPTION-443, 444, 446; OPEN-109, OPEN-110, OPEN-112
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the attended session's build, the explicit push-now choice, and the blocked-execution close. [stated]
+    Current status: ADOPTED (execution unresolved — verify on Mac)
+
+DECISION-077:
+  Date: 2026-07-05 (attended — "Explorer Bugs PRS triplets review" session, Tom present)
+  Title: Park the modal vertical-jump fix and the architecture-registry drift commit until after ISME
+  Decision: The session was marked "a success with a remaining tweak"; a handoff was written to `handoffs/review-log-triplet-modal.md` (resume cue: "resume the review-log triplet modal") recording the leading next fix — a fixed `.tbox` height instead of `max-height`. Separately parked per the session close: the tracked-but-modified `wiki/architecture/*.md` files "want their own reviewed commit" after ISME.
+  Status: ADOPTED (attended).
+  Rationale: ISME preparation takes precedence; the handoff preserves clean resumability.
+  Related: ASSUMPTION-412; PRESUMPTION-443, 445; OPEN-109, OPEN-111
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from Tom's explicit parking instruction and the written handoff. [stated]
+    Current status: ADOPTED
+
+DECISION-078:
+  Date: 2026-07-05 (attended — "Explorer Bugs PRS triplets review" session, late continuation)
+  Title: Treat the git locks as stale and race the live agents to the ISME commit
+  Decision: After `ps` showed no real git process (all grep hits were Claude session command lines) and no janitor/heartbeat, all three locks (`HEAD.lock`, `index.lock`, `objects/maintenance.lock`) were removed and the commit re-run immediately — "Do it now, quickly, before one of the live wiki agents fires its own commit" — rather than pausing the two live agent sessions holding `wiki/**` write access.
+  Status: ADOPTED (attended); executed. Outcome: commit c543afa landed with the generator only ("1 file changed") — the daily agent's commit 5b7e68a had already captured the regenerated `review_log.html`. The subsequent push FAILED: remote advanced to 511b3b2 mid-session, rebase blocked by unstaged architecture drift, push rejected non-fast-forward. Transcript ends with the push unresolved.
+  Rationale: stale-lock evidence was judged sufficient; pausing the agents was named as the safer alternative only if a lock reappeared. A single-committer / coordination fix was explicitly parked for after ISME.
+  Related: DECISION-076, DECISION-077; ASSUMPTION-417, 418, 420; PRESUMPTION-448, 449; OPEN-110, OPEN-111, OPEN-113
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the lock-clearing instruction, its stated rationale, and the pasted execution results. [stated]
+    Current status: ADOPTED

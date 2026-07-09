@@ -5396,3 +5396,126 @@ REVISE-174:
   Recommended action: Use a different model family (or blind human raters) for scoring/analysis than for generation; report inter-model agreement as an independence check; separate deterministic steps from model-judgment steps in reporting; treat same-family results as a lower bound pending cross-model replication. Binds P-436, P-440.
   Urgency: Medium-High
   Why flagged: PRESUMPTION + strong challenge + stacks with P-436/P-440; the steelman (deterministic computations less exposed than model-graded judgments) scopes the fix, not dissolves it.
+
+## 2026-07-06 RUN — 15c flags (c2a2-lit-search-pipeline; DISPOSITION-401..407)
+
+REVISE-175:
+  Date: 2026-07-06 | Source: DISPOSITION-401 | Item: PRESUMPTION-444 (presumption) | Urgency: High
+  Claim flagged: "That deadline-driven gating ('ready for ISME') is the right release principle for public artifacts of an evidence-bearing system."
+  15a/15b: PARTIALLY-SUPPORTED(Moderate) / CHALLENGED(Strong)
+  Net: Release trains legitimize date-fixed delivery with SCOPE as the flexed variable; nothing endorses the calendar as the quality gate for evidence-bearing public artifacts. Kuutila et al. 2020 (102-study SLR: time pressure reduces quality) + Rogers Commission burden-of-proof inversion.
+  What is at risk: credibility of every public C2A2 artifact; the release rule itself.
+  Recommended action: rewrite the release rule as deadline-invariant criteria; scope reduction is the one sanctioned pressure valve; anything else requires a logged waiver. Retrospect the ISME release against the rule as written. Binds A-414 (MONITOR-416), P-450 (REVISE-181); SYSTEMIC-RISK #2.
+
+REVISE-176:
+  Date: 2026-07-06 | Source: DISPOSITION-402 | Item: PRESUMPTION-445 (presumption) | Urgency: Medium-High
+  Claim flagged: "That a human-mediated compile loop (agent pastes commands, human runs regen/reload) is a reliable substrate for iterative debugging."
+  15a/15b: PARTIALLY-SUPPORTED(Weak) / CHALLENGED(Strong)
+  Net: THERP/HEART per-step human error rates compound across loop iterations and multiply under pressure; silent state-drift (stale build/cache — the A-412/OPEN-109 situation) corrupts the debugging evidence itself.
+  What is at risk: validity of conclusions reached through the loop; attended-session time.
+  Recommended action: one idempotent scripted regen/reload command with an embedded build stamp the agent verifies each cycle; unverified stamp = no-data.
+
+REVISE-177:
+  Date: 2026-07-06 | Source: DISPOSITION-403 | Item: PRESUMPTION-446 (presumption; queue CRITICAL) | Urgency: High
+  Claim flagged: "That scheduled agents and attended sessions can share one git repository with no coordination protocol."
+  15a/15b: PARTIALLY-SUPPORTED(Weak) / CHALLENGED(Strong)
+  Net: Only support is git's fail-safe abort locking + low-contention OCC — and the 2026-07-05 index.lock/HEAD.lock collisions are the signature that low contention no longer holds. In-domain challenge: claude-code Issues #11005/#28823; 2026 worktree-isolation consensus; distributed mutual exclusion (Lamport 1978).
+  What is at risk: integrity of the git history — C2A2's evidentiary substrate; OPEN-110/OPEN-113.
+  Recommended action: worktree or per-writer-branch isolation for scheduled agents with defined merge path; single serialized pusher; written stale-lock procedure (owner/PID/age; never delete under uncertainty); verify/disable iCloud Documents sync on the vault path. Anchor of SYSTEMIC-RISK #1 (Critical) with REVISE-179/180.
+
+REVISE-178:
+  Date: 2026-07-06 | Source: DISPOSITION-404 | Item: PRESUMPTION-447 (presumption) | Urgency: Medium
+  Claim flagged: "That snippet-level screening establishes source novelty when the primary source is unfetchable."
+  15a/15b: PARTIALLY-SUPPORTED(Weak) / CHALLENGED(Strong)
+  Net: Title/abstract triage licenses cheap EXCLUSION, never a load-bearing novelty claim: 13–51% single-screener miss rates; median 39% abstract/full-text inconsistency; novelty is the most spun abstract element.
+  What is at risk: unverified novelty claims entering the wiki as validated (gates PROP-2026-07-05-001 / A-416, the June 12 Wolfram observer-boundary segment).
+  Recommended action: full-text confirmation required before any novelty claim is load-bearing; snippet-only findings enter as PROVISIONAL with an explicit fetch-debt tag. SYSTEMIC-RISK #3.
+
+REVISE-179:
+  Date: 2026-07-06 | Source: DISPOSITION-405 | Item: PRESUMPTION-448 (presumption) | Urgency: High
+  Claim flagged: "Racing concurrent writers is an acceptable coordination mechanism for repo operations."
+  15a/15b: PARTIALLY-SUPPORTED(Moderate) / CHALLENGED(Strong)
+  Net: OCC (Kung & Robinson 1981) requires conflict DETECTION + programmatic RETRY; bare racing plus lock-deletion-under-uncertainty is the documented corruption path (CWE-367 TOCTOU). Support endorses a different mechanism than the one presumed.
+  What is at risk: repo corruption; silent lost updates in the evidentiary record.
+  Recommended action: standard write path = fetch->rebase->push with bounded retry/backoff; forbid lock deletion without owner/PID/age evidence; log every lock event. SYSTEMIC-RISK #1.
+
+REVISE-180:
+  Date: 2026-07-06 | Source: DISPOSITION-406 | Item: PRESUMPTION-449 (presumption) | Urgency: High
+  Claim flagged: "The set of possible repo writers is fully enumerable from the local process table."
+  15a/15b: PARTIALLY-SUPPORTED(Weak) / CHALLENGED(Strong)
+  Net: Process tables show CURRENT local writers only; scheduled/future writers, remote pushers, and sync daemons are invisible. Directly applicable: claude-code Issue #47241 — iCloud fileproviderd corrupts repos under ~/Documents, which is where this vault lives. Unexplained push 511b3b2 is the predicted hidden-writer signature.
+  What is at risk: diagnosis quality for every concurrency incident; repo integrity via fileproviderd.
+  Recommended action: IMMEDIATE — check iCloud Desktop & Documents sync for the vault path (disable or relocate the repo). Build a writer inventory (scheduled tasks + cadences, remote credentials, sync daemons); identify who pushed 511b3b2. SYSTEMIC-RISK #1.
+
+REVISE-181:
+  Date: 2026-07-06 | Source: DISPOSITION-407 | Item: PRESUMPTION-450 (presumption) | Urgency: Medium
+  Claim flagged: "Marker-grep verification of an agent-rebuilt artifact can substitute for the visual sign-off the release rule requires."
+  15a/15b: PARTIALLY-SUPPORTED(Weak) / CHALLENGED(Strong)
+  Net: Content markers are necessary-not-sufficient; visual regression testing exists because content-present/render-broken failures are common. Substitution = Goodhart/surrogation + automation bias.
+  What is at risk: public artifact shipping visually broken while all markers pass.
+  Recommended action: retain marker-grep as a floor; require visual sign-off (human or headless screenshot-diff) before public release; add a render-level automated check. Binds REVISE-175; SYSTEMIC-RISK #2.
+
+## 2026-07-07 RUN — 15c flags (c2a2-lit-search-pipeline; DISPOSITION-413..416)
+
+REVISE-182:
+  Date: 2026-07-07 | Source: DISPOSITION-413 | Item: PRESUMPTION-451 (presumption) | Urgency: Medium-High
+  Claim flagged: "Scheduler task-lifecycle defects (ONE-TIME task firing 3x) are for agents to absorb, not for the scheduling layer to enforce."
+  15a/15b: PARTIALLY-SUPPORTED(Moderate) / CHALLENGED(Strong)
+  Net: Consumer idempotency is mainstream but as a designed contract ALONGSIDE delivery-layer guards (microservices.io idempotent-consumer); absorbing a known uncorrected defect as convention-only is single-layer defense + normalization of deviance (Vaughan 1996; Reason).
+  What is at risk: the first scheduled agent written without dedup logic silently triples any non-idempotent action when the 3x-fire defect recurs.
+  Recommended action: explicit idempotency contract for every scheduled agent (run-ID dedup at start); scheduling-layer guard (run registry detecting duplicate fires); report the defect upstream. Part of SYSTEMIC-RISK single-layer self-verification (2026-07-07).
+
+REVISE-183:
+  Date: 2026-07-07 | Source: DISPOSITION-414 | Item: PRESUMPTION-452 (presumption) | Urgency: Medium
+  Claim flagged: "Subset (9-page) + aggregate (<2%) resolver agreement establishes census-wide delta validity."
+  15a/15b: PARTIALLY-SUPPORTED(Weak-Moderate) / CHALLENGED(Strong)
+  Net: 9 concordant pages bound per-page agreement no better than ~70% (95% CI); aggregate concordance is the summary-statistic validation Bland & Altman (1986) rejected; Simpson's-paradox aggregation can hide stratum-level category shifts inside a stable total.
+  What is at risk: instrument-change artifacts read as connectivity findings; the OPEN-114 bootstrap-retirement decision resting on unvalidated equivalence (gates A-424).
+  Recommended action: stratified agreement sample (n>=60 pages across orphan/sparse/connected + edge-case link syntaxes) with per-stratum concordance before treating resolver deltas as real; tag all deltas by resolver meanwhile.
+
+REVISE-184:
+  Date: 2026-07-07 | Source: DISPOSITION-415 | Item: PRESUMPTION-453 (presumption) | Urgency: High
+  Claim flagged: "The orphan/sparse/connected census still measures synthesis health when 100% of growth is orphans-by-design (metric dilution unexamined)."
+  15a/15b: NO-SUPPORT-FOUND(None; PARTIALLY-NOVEL) / CHALLENGED(Strong)
+  Net: Maximal asymmetry — zero support, convergent challenge (composition effects/Bickel 1975; case-mix adjustment; Goodhart/surrogation, Choi-Hecht-Tayler 2012). With all growth entering the orphan stratum by construction, the unstratified orphan rate measures the growth policy, not synthesis health.
+  What is at risk: the system's synthesis-health instrument reporting an artifact; masked real decay among legacy pages; Goodhart-style "fixes" corrupting the orphans-by-design intent. Feeds A-423 and OPEN-114; kin to OPEN-112.
+  Recommended action: stratify the census by design-status (orphan-by-design vs organic) before the next weekly sewing run; report per-stratum rates alongside the headline; recompute the historical trend stratified. Short wiki note on the PARTIALLY-NOVEL dilution-by-design configuration worth writing.
+
+REVISE-185:
+  Date: 2026-07-07 | Source: DISPOSITION-416 | Item: PRESUMPTION-454 (presumption) | Urgency: High (outage live)
+  Claim flagged: "Single-credential, self-masking alerting (failure notes delivered through the failed channel) is adequate for the daily Chat<->Cowork sync."
+  15a/15b: NO-SUPPORT-FOUND(None) / CHALLENGED(Strong)
+  Net: Textbook common-mode-failure anti-pattern (SRE: alerting must be independent of and more reliable than the monitored path) with an OBSERVED instance — sync down since >=2026-07-03, failure notices swallowed by the failed channel; detection latency unbounded.
+  What is at risk: silent Chat/Cowork divergence compounding daily; every "no news is good news" inference about the sync unfounded. ABSENCE-AS-EVIDENCE cluster.
+  Recommended action: IMMEDIATE — restore the sync; add a dead-man's switch (heartbeat on success, independent agent or Tom's daily review alarms on staleness); alert path must share no credential/codepath with the sync. Reinforces PREMISE-025 (channel-independence corollary).
+
+---
+
+## 2026-07-08 REVISE escalations (MONITOR -> REVISE; autonomous refresh run; Tom not present)
+
+REVISE-186:
+  Date: 2026-07-08 | Source item: PRESUMPTION-352 (PRESUMPTION, unstated) | from DISPOSITION-417 (was MONITOR-349, cycle 2)
+  Statement: The post-Apr-6 token cliff / output flatline is a capture/instrumentation artifact, not a real activity change.
+  Why escalated: 15b CHALLENGED/Strong stable across 2+ cycles; 15a support flat at PARTIALLY-SUPPORTED/Moderate and generic. MNAR theory: mechanism is unidentifiable from the observed pattern; a real drop fits the same curve. The deciding probe has been outstanding 3+ cycles.
+  What is at risk: any downstream inference treating the cliff as "artifact" (activity-continuity / telemetry-maturity claims).
+  Recommended action for Tom: run probe_openstory.py (or otherwise reconstruct post-Apr-6 activity from a channel independent of the capture pipeline). Until run, label the cliff UNKNOWN-cause, never "artifact." NOTE: the A-363 heartbeat run-log (REVISE-147) would supply exactly this out-of-band check — one fix serves both.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c -> 15d -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-187:
+  Date: 2026-07-08 | Source item: PRESUMPTION-387 (PRESUMPTION, unstated) | from DISPOSITION-419 (was MONITOR-372, cycle 1)
+  Statement: The adjudicator agent is itself competent and unbiased at judging semantic agreement/entailment.
+  Why escalated: 15b CHALLENGED/Strong with new 2026 evidence (arXiv 2602.02219) that rubric-based LLM judges show measurable position bias and ~10-25% self-preference (worst within a shared model family); 15a support is explicitly CONDITIONAL on calibration, which the presumption asserts unconditionally.
+  What is at risk: every downstream agreement/dissensus call (incl. P-388) inherits the adjudicator's unmeasured error rate and any same-family self-preference. Upstream of the whole agreement pipeline; gated by OPEN-090.
+  Recommended action for Tom: make adjudicator calibration a measured gate — human-labeled agreement sample (Cohen's kappa), position-swap to cancel order bias, prefer a judge model family different from the columns; treat adjudicator error as a de-biased measured input.
+  Urgency: Medium (highest-leverage of this run — upstream dependency)
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c -> 15d -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-188:
+  Date: 2026-07-08 | Source item: PRESUMPTION-389 (PRESUMPTION, unstated) | from DISPOSITION-421 (was MONITOR-374, cycle 1)
+  Statement: A pilot validated on the Hawkins track generalizes to other thinker tracks.
+  Why escalated: 15b CHALLENGED/Strong now formally grounded (PMC7014944 Risk of Generalizability Bias; friendliest-case pilots overstate effects that fail at scale). Hawkins is the most self-confirming subject (his theory frames the columns), so a pass there is weak transfer evidence. 15a supports pilot legitimacy but NOT transfer.
+  What is at risk: the "generalize across thinker tracks" decision and anything gated on the pilot, if the mechanism is selection-bound to Hawkins.
+  Recommended action for Tom: pre-register >=1 theory-misaligned / least-favorable thinker before claiming transfer. Pass there = generalization support; pass only on Hawkins = confirmed selection-bound (REVISE the transfer claim).
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c -> 15d -> 15c]; Current status: REVISION-FLAGGED

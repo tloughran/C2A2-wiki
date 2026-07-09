@@ -64,3 +64,15 @@ SEARCH-FOR-ASSUMPTION-333 (RE-TRIGGER cycle 1):
   Caveats: An automated weekly refresh is bounded by the LLM's capacity to surface genuinely new external evidence; operational evidence from the C2A2 runs themselves remains the more sensitive signal for status change.
 
   Recommendation: refreshed; carry forward prior recommendation (SUPPORTED)
+
+SEARCH-FOR-ASSUMPTION-333 (RE-TRIGGER cycle 2):
+  Date searched: 2026-07-08
+  Original item: ASSUMPTION-333
+  PROVENANCE:
+    Chain: [... -> 15c -> 15d -> 15a] (cycle 2, 2026-07-08)
+    Transform: 15d weekly re-trigger 2026-07-05; 15a refreshed supportive search
+    Current status: SUPPORTED
+  New sources since last cycle: No
+  Strength of support: Moderate-Strong
+  Summary: Confirms mature co-authored FEP<->Levin bridge program (Kuchling/Friston/Levin 2019 Morphogenesis as Bayesian inference; Fields/Friston/Levin 2022; Pio-Lopez 2022). Real formalizable treatments substantiate 'two framings of one binding problem.' No new post-June-2026 supportive publication; strong prior base unchanged.
+  Recommendation: SUPPORTED / Hold Moderate-Strong; base literature mature.

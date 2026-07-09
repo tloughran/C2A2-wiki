@@ -1175,3 +1175,101 @@ OPEN-108:
     Transform at each step:
       14a: Raised from the tension between the author-ratification standard and its AI-agent instantiation, and from the shared-architecture authorship of data and analysis.
     Current status: OPEN
+
+OPEN-109:
+  Date raised: 2026-07-05
+  Question: What actually causes the residual vertical header jump in the PRS-triple modal? The fixed-top (6vh) fix was applied yet Tom still observed jumping — but the falsification is unconfirmed because build/cache state was never verified (the grep check was pending when the session pivoted to the handoff). Candidates: HTML not rebuilt, browser cache, or another element resizing the header. Leading next fix per the handoff: fixed `.tbox` height instead of `max-height`.
+  Context: "Explorer Bugs PRS triplets review" session (2026-07-05); parked until after ISME.
+  Related: ASSUMPTION-411, ASSUMPTION-412, DECISION-077, PRESUMPTION-445
+  Status: OPEN — testable empirically on resume.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the unresolved in-session falsification of the vertical-centering diagnosis.
+    Current status: OPEN
+
+OPEN-110:
+  Date raised: 2026-07-05
+  Question: What process created today's git locks on the Mac (`index.lock`, then a fresh `HEAD.lock` mid-attended-commit), and what coordination protocol should govern the repository's multiple writers (attended sessions, Sunday janitor, heartbeat cron, sandbox daily runs)? The standing "rm .git/index.lock" recipe is unsafe if any writer is live — "Deleting a live lock can corrupt refs."
+  Context: "Explorer Bugs PRS triplets review" session (2026-07-05) — the ISME push blocked at HEAD.lock, outcome unrecorded; the sandbox daily run independently hit its own unremovable stale lock the same day.
+  Related: ASSUMPTION-415, PRESUMPTION-443, PRESUMPTION-446, DECISION-076
+  Status: OPEN — empirically resolvable (process listings, cron/janitor schedules vs lock-event times).
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the same-day dual-side lock collisions and the unresolved live-writer question.
+    Current status: OPEN
+
+OPEN-111:
+  Date raised: 2026-07-05
+  Question: When and how does agent-produced architecture content converge to origin? At session close: 11 tracked `wiki/architecture/*.md` files modified-but-uncommitted, untracked changelogs/snapshots/lit-search results accumulating since 07-01, and the daily run's local-only commit 5b7e68a with push pending. All parked for "its own reviewed commit" after ISME — but the drift grows daily and the self-awareness registries are currently unpublished.
+  Context: "Explorer Bugs PRS triplets review" session (2026-07-05), git status review; C2A2 wiki daily run (2026-07-05).
+  Related: PRESUMPTION-443, DECISION-077, OPEN-110
+  Status: OPEN — a convergence policy decision is needed post-ISME.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the reviewed git status and the parked drift-commit note.
+    Current status: OPEN
+
+OPEN-112:
+  Date raised: 2026-07-05
+  Question: Which PRS count is authoritative? The Review Log modal pages 447 triples parsed from `traditions/*/prs_triplets.md`; the 2026-07-05 daily run reports the network at 300 PRS triplets; the same run's Review Log refresh reports cards=260. Are these deltas scope differences (candidates vs accepted vs rendered) or a parsing/counting bug?
+  Context: cross-comparison of the 2026-07-05 attended session (447), the daily-run report (300), and the Review Log refresh (260).
+  Related: DECISION-076; metrics snapshots 2026-07-02 and 2026-07-05
+  Status: OPEN — resolvable by reconciling the three counting paths.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the three mutually inconsistent PRS counts reported on the same day.
+    Current status: OPEN
+
+OPEN-113:
+  Date raised: 2026-07-05
+  Question: How does local main converge with origin/main now that the push has failed? Mid-session the remote advanced b1d0692 → 511b3b2 by a writer not identified in the process checks (no janitor, heartbeat, or git process was found locally), local main carries c543afa (+ 5b7e68a et al.) unpushed, and the rebase path is blocked by the uncommitted `wiki/architecture/*.md` drift (OPEN-111). Who pushed 511b3b2, and is stash-rebase-push safe while agents keep writing?
+  Context: final exchange of the 2026-07-05 attended session — fetch/rebase/push failed ("cannot rebase: You have unstaged changes"; "! [rejected] main -> main (non-fast-forward)"); session ends without a resolution.
+  Related: DECISION-076, DECISION-078; ASSUMPTION-420; PRESUMPTION-446, 448, 449; OPEN-110, OPEN-111
+  Status: OPEN — blocking: the ISME deliverable (modal) is committed locally but NOT live on GitHub Pages until this converges.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the failed rebase/push and the unattributed remote advance. [stated evidence, question inferred]
+    Current status: OPEN
+
+OPEN-114:
+  Date raised: 2026-07-06
+  Question: Should `c2a2-sewing-agent--c2a2-wiki-bootstrap-audit` be retired (per its own recommendation), and more generally: should one-time semantics be enforceable at the scheduler layer rather than compensated for by agent-side adaptation? The task is labeled ONE-TIME and has fired three times (06-23, 06-28, 07-06); the third run self-converted to a verification mode and recommended its own retirement, with a quarterly delta folded into the weekly agent as the alternative.
+  Context: sewing_agent_bootstrap_2026-07-06.md, "Recommended action for Tom"; autonomous run, so retirement awaits Tom.
+  Related: ASSUMPTION-421, ASSUMPTION-424; PRESUMPTION-451
+  Status: OPEN — awaiting Tom's decision (retire vs reschedule quarterly)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the verification run's retirement recommendation and the triple-fire anomaly. [stated evidence]
+    Current status: OPEN
+
+OPEN-115:
+  Date raised: 2026-07-07
+  Question: How should the 15d premise-refresh backlog (117 items, now deferred for a third consecutive pipeline run) be burned down — a dedicated backlog-burn run, a 15d cadence rethink, or triage by premise age/criticality? At what staleness does a previously validated premise stop counting as validated?
+  Context: c2a2-lit-search-pipeline run report, 2026-07-07 — fresh cohorts consistently outcompete refresh work for pipeline capacity; the deferral is surfaced each run but no mechanism converts it into scheduled work.
+  Related: ASSUMPTION-428; PRESUMPTION-456; validated_premises.md (94 premises whose ACTIVE status ages silently)
+  Status: OPEN — needs a scheduling decision (Tom or master agent)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the pipeline's third-consecutive deferral report and its explicit remedy recommendation. [stated evidence]
+    Current status: OPEN

@@ -16489,3 +16489,556 @@ MONITOR-415:
   15a/15b: PARTIALLY-SUPPORTED(Weak) / CHALLENGED(Moderate-Strong)
   What would change disposition: leave-one-conversation-out recomputation of the sort showing low churn -> retire toward INCORPORATE (provisional-sort premise, bind PREMISE-094); high churn -> REVISE (do not bank any bucket without higher k). "Provisional/triage" defensible; "stable" is not. See DISPOSITION-397 in lit_search_returns.md.
   Cadence: Weekly | Next 15d check: 2026-07-10
+
+---
+
+## 2026-07-05 RUN — 15d Periodic Monitor (weekly + monthly cycle; scheduled c2a2-periodic-monitor-weekly)
+
+**Run context:** Scheduled weekly 15d run. 2026-07-05 IS the first Sunday of July -> monthly cycle FIRES (low-priority monitor re-triggers + INCORPORATED-premise re-checks). Due cohort per the 2026-06-28 run bookkeeping (next_check 2026-07-05) plus monthly items left overdue when the 2026-06-28 run skipped the monthly cycle. Processed: 55 weekly re-triggers (23 x cycle 1->2, MONITOR-345..367; 32 x cycle 0->1, MONITOR-368..399; next_check 2026-07-12); 124 STALE-MONITOR-FLAGS (cycle 4 reached with fully stable trajectories across all cycles -> downgraded to LOW-PRIORITY-MONITOR/monthly, next_check 2026-08-02, NOT re-queued, per 2026-05-31/06-07/06-28 precedent); 62 monthly low-priority re-triggers (next_check 2026-08-02); 3 INCORPORATED-premise re-checks (PREMISE-002, PREMISE-004, PREMISE-025 -> re_check_due 2026-08-02). Event-driven items (MONITOR-003 continuous, MONITOR-041 per billing-error event, MONITOR-154 per-incident) left untouched. 15d does NOT evaluate evidence — it re-triggers 15a/15b; 15c re-dispositions afterward.
+
+**Format note (15d, autonomous choice):** per-item MONITOR REFRESH and STALE-MONITOR-FLAG blocks are recorded in compact grouped form this run — the queue file is at 885 KB and the agent brief mandates concise notes; all per-item state (cycle, cadence, next_check) is fully specified below.
+
+
+### Weekly re-triggers (55) — cycle +1; cadence Weekly; last checked 2026-07-05; next 15d check 2026-07-12; re-queued in for_lit_search.md with [RE-TRIGGER by 15d: 2026-07-05]
+
+- ASSUMPTION-318 (MONITOR-345, cycle 1 -> 2, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-319 (MONITOR-346, cycle 1 -> 2, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-321 (MONITOR-347, cycle 1 -> 2, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-350 (MONITOR-348, cycle 1 -> 2, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-352 (MONITOR-349, cycle 1 -> 2, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-353 (MONITOR-350, cycle 1 -> 2, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-354 (MONITOR-351, cycle 1 -> 2, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-322 (MONITOR-352, cycle 1 -> 2, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-324 (MONITOR-353, cycle 1 -> 2, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-329 (MONITOR-354, cycle 1 -> 2, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-331 (MONITOR-355, cycle 1 -> 2, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-332 (MONITOR-356, cycle 1 -> 2, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-361 (MONITOR-357, cycle 1 -> 2, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-362 (MONITOR-358, cycle 1 -> 2, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-365 (MONITOR-359, cycle 1 -> 2, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-333 (MONITOR-360, cycle 1 -> 2, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-334 (MONITOR-361, cycle 1 -> 2, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-374 (MONITOR-362, cycle 1 -> 2, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-338 (MONITOR-363, cycle 1 -> 2, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-339 (MONITOR-364, cycle 1 -> 2, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-343 (MONITOR-365, cycle 1 -> 2, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-345 (MONITOR-366, cycle 1 -> 2, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-383 (MONITOR-367, cycle 1 -> 2, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-349 (MONITOR-368, cycle 0 -> 1, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-354 (MONITOR-369, cycle 0 -> 1, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-356 (MONITOR-370, cycle 0 -> 1, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-385 (MONITOR-371, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-387 (MONITOR-372, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-388 (MONITOR-373, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-389 (MONITOR-374, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-390 (MONITOR-375, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-391 (MONITOR-376, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-392 (MONITOR-377, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-393 (MONITOR-378, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-395 (MONITOR-379, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-396 (MONITOR-380, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-397 (MONITOR-381, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-363 (MONITOR-382, cycle 0 -> 1, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-366 (MONITOR-383, cycle 0 -> 1, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-370 (MONITOR-384, cycle 0 -> 1, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-399 (MONITOR-385, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-400 (MONITOR-386, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-401 (MONITOR-387, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-403 (MONITOR-388, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-404 (MONITOR-389, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-405 (MONITOR-390, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-374 (MONITOR-391, cycle 0 -> 1, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-375 (MONITOR-392, cycle 0 -> 1, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-380 (MONITOR-393, cycle 0 -> 1, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- ASSUMPTION-382 (MONITOR-394, cycle 0 -> 1, ASSUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-407 (MONITOR-395, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-408 (MONITOR-396, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-409 (MONITOR-397, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-410 (MONITOR-398, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+- PRESUMPTION-411 (MONITOR-399, cycle 0 -> 1, PRESUMPTION): re-queued; trajectory carried: Supporting stable; Challenging stable; New sources last cycle: No
+
+
+### STALE-MONITOR-FLAGS (124) — grouped block
+
+STALE-MONITOR-FLAG (cohort of 124):
+  Cycles completed: 4 (cycle 3 at 2026-06-28 run; re-confirmed MONITOR by 15c 2026-06-30 with zero new sources)
+  Last disposition: MONITOR (carried forward at every cycle since entry)
+  Evidence trajectory: stable (Supporting stable; Challenging stable; no new sources across all 4 cycles)
+  Recommendation: DOWNGRADE to LOW-PRIORITY-MONITOR (applied)
+  Reasoning: Four weekly cycles with no movement in either supporting or challenging evidence; weekly re-search wastes cycles. Shift to monthly cadence; items remain open (leave only via 15c INCORPORATE/REVISE).
+  New cadence: Monthly (LOW-PRIORITY-MONITOR); Last checked: 2026-07-05; Next 15d check: 2026-08-02
+  Items:
+
+    - ASSUMPTION-077 (MONITOR-75, ASSUMPTION)
+
+    - PRESUMPTION-090 (MONITOR-77, PRESUMPTION)
+
+    - PRESUMPTION-092 (MONITOR-78, PRESUMPTION)
+
+    - ASSUMPTION-080 (MONITOR-80, ASSUMPTION)
+
+    - ASSUMPTION-082 (MONITOR-82, ASSUMPTION)
+
+    - ASSUMPTION-089 (MONITOR-89, ASSUMPTION)
+
+    - ASSUMPTION-092 (MONITOR-92, ASSUMPTION)
+
+    - ASSUMPTION-095 (MONITOR-95, ASSUMPTION)
+
+    - ASSUMPTION-097 (MONITOR-100, ASSUMPTION)
+
+    - ASSUMPTION-098 (MONITOR-101, ASSUMPTION)
+
+    - ASSUMPTION-099 (MONITOR-102, ASSUMPTION)
+
+    - ASSUMPTION-101 (MONITOR-104, ASSUMPTION)
+
+    - ASSUMPTION-106 (MONITOR-109, ASSUMPTION)
+
+    - ASSUMPTION-108 (MONITOR-110, ASSUMPTION)
+
+    - ASSUMPTION-109 (MONITOR-111, ASSUMPTION)
+
+    - ASSUMPTION-111 (MONITOR-113, ASSUMPTION)
+
+    - ASSUMPTION-112 (MONITOR-114, ASSUMPTION)
+
+    - PRESUMPTION-128 (MONITOR-115, PRESUMPTION)
+
+    - PRESUMPTION-135 (MONITOR-118, PRESUMPTION)
+
+    - PRESUMPTION-137 (MONITOR-119, PRESUMPTION)
+
+    - ASSUMPTION-159 (MONITOR-172, ASSUMPTION)
+
+    - ASSUMPTION-162 (MONITOR-174, ASSUMPTION)
+
+    - ASSUMPTION-169 (MONITOR-179, ASSUMPTION)
+
+    - PRESUMPTION-184 (MONITOR-181, PRESUMPTION)
+
+    - PRESUMPTION-186 (MONITOR-183, PRESUMPTION)
+
+    - PRESUMPTION-189 (MONITOR-184, PRESUMPTION)
+
+    - ASSUMPTION-179 (MONITOR-194, ASSUMPTION)
+
+    - ASSUMPTION-180 (MONITOR-195, ASSUMPTION)
+
+    - ASSUMPTION-187 (MONITOR-197, ASSUMPTION)
+
+    - ASSUMPTION-190 (MONITOR-198, ASSUMPTION)
+
+    - ASSUMPTION-193 (MONITOR-199, ASSUMPTION)
+
+    - ASSUMPTION-195 (MONITOR-200, ASSUMPTION)
+
+    - ASSUMPTION-196 (MONITOR-201, ASSUMPTION)
+
+    - ASSUMPTION-197 (MONITOR-202, ASSUMPTION)
+
+    - ASSUMPTION-200 (MONITOR-203, ASSUMPTION)
+
+    - PRESUMPTION-213 (MONITOR-204, PRESUMPTION)
+
+    - PRESUMPTION-214 (MONITOR-205, PRESUMPTION)
+
+    - PRESUMPTION-216 (MONITOR-206, PRESUMPTION)
+
+    - PRESUMPTION-217 (MONITOR-207, PRESUMPTION)
+
+    - PRESUMPTION-218 (MONITOR-208, PRESUMPTION)
+
+    - PRESUMPTION-219 (MONITOR-209, PRESUMPTION)
+
+    - ASSUMPTION-201 (MONITOR-210, ASSUMPTION)
+
+    - ASSUMPTION-202 (MONITOR-211, ASSUMPTION)
+
+    - ASSUMPTION-207 (MONITOR-213, ASSUMPTION)
+
+    - PRESUMPTION-224 (MONITOR-214, PRESUMPTION)
+
+    - PRESUMPTION-226 (MONITOR-216, PRESUMPTION)
+
+    - PRESUMPTION-227 (MONITOR-217, PRESUMPTION)
+
+    - PRESUMPTION-229 (MONITOR-218, PRESUMPTION)
+
+    - PRESUMPTION-230 (MONITOR-219, PRESUMPTION)
+
+    - ASSUMPTION-214 (MONITOR-220, ASSUMPTION)
+
+    - PRESUMPTION-231 (MONITOR-222, PRESUMPTION)
+
+    - PRESUMPTION-232 (MONITOR-223, PRESUMPTION)
+
+    - PRESUMPTION-234 (MONITOR-224, PRESUMPTION)
+
+    - PRESUMPTION-236 (MONITOR-226, PRESUMPTION)
+
+    - PRESUMPTION-237 (MONITOR-227, PRESUMPTION)
+
+    - PRESUMPTION-239 (MONITOR-228, PRESUMPTION)
+
+    - ASSUMPTION-220 (MONITOR-229, ASSUMPTION)
+
+    - ASSUMPTION-221 (MONITOR-230, ASSUMPTION)
+
+    - PRESUMPTION-242 (MONITOR-232, PRESUMPTION)
+
+    - ASSUMPTION-223 (MONITOR-233, ASSUMPTION)
+
+    - ASSUMPTION-224 (MONITOR-234, ASSUMPTION)
+
+    - PRESUMPTION-244 (MONITOR-235, PRESUMPTION)
+
+    - ASSUMPTION-225 (MONITOR-237, ASSUMPTION)
+
+    - ASSUMPTION-226 (MONITOR-238, ASSUMPTION)
+
+    - ASSUMPTION-227 (MONITOR-239, ASSUMPTION)
+
+    - ASSUMPTION-228 (MONITOR-240, ASSUMPTION)
+
+    - ASSUMPTION-230 (MONITOR-241, ASSUMPTION)
+
+    - ASSUMPTION-231 (MONITOR-242, ASSUMPTION)
+
+    - ASSUMPTION-233 (MONITOR-244, ASSUMPTION)
+
+    - ASSUMPTION-234 (MONITOR-245, ASSUMPTION)
+
+    - ASSUMPTION-235 (MONITOR-246, ASSUMPTION)
+
+    - ASSUMPTION-236 (MONITOR-247, ASSUMPTION)
+
+    - PRESUMPTION-249 (MONITOR-248, PRESUMPTION)
+
+    - PRESUMPTION-250 (MONITOR-249, PRESUMPTION)
+
+    - PRESUMPTION-251 (MONITOR-250, PRESUMPTION)
+
+    - PRESUMPTION-253 (MONITOR-251, PRESUMPTION)
+
+    - PRESUMPTION-254 (MONITOR-252, PRESUMPTION)
+
+    - PRESUMPTION-255 (MONITOR-253, PRESUMPTION)
+
+    - PRESUMPTION-258 (MONITOR-254, PRESUMPTION)
+
+    - PRESUMPTION-259 (MONITOR-255, PRESUMPTION)
+
+    - ASSUMPTION-237 (MONITOR-256, ASSUMPTION)
+
+    - ASSUMPTION-238 (MONITOR-257, ASSUMPTION)
+
+    - ASSUMPTION-239 (MONITOR-258, ASSUMPTION)
+
+    - ASSUMPTION-240 (MONITOR-259, ASSUMPTION)
+
+    - ASSUMPTION-241 (MONITOR-260, ASSUMPTION)
+
+    - PRESUMPTION-261 (MONITOR-261, PRESUMPTION)
+
+    - PRESUMPTION-265 (MONITOR-262, PRESUMPTION)
+
+    - PRESUMPTION-266 (MONITOR-263, PRESUMPTION)
+
+    - ASSUMPTION-243 (MONITOR-264, ASSUMPTION)
+
+    - ASSUMPTION-244 (MONITOR-265, ASSUMPTION)
+
+    - ASSUMPTION-245 (MONITOR-266, ASSUMPTION)
+
+    - ASSUMPTION-246 (MONITOR-267, ASSUMPTION)
+
+    - ASSUMPTION-247 (MONITOR-268, ASSUMPTION)
+
+    - ASSUMPTION-248 (MONITOR-269, ASSUMPTION)
+
+    - ASSUMPTION-249 (MONITOR-270, ASSUMPTION)
+
+    - ASSUMPTION-250 (MONITOR-271, ASSUMPTION)
+
+    - ASSUMPTION-251 (MONITOR-272, ASSUMPTION)
+
+    - ASSUMPTION-252 (MONITOR-273, ASSUMPTION)
+
+    - PRESUMPTION-268 (MONITOR-274, PRESUMPTION)
+
+    - PRESUMPTION-271 (MONITOR-275, PRESUMPTION)
+
+    - PRESUMPTION-276 (MONITOR-276, PRESUMPTION)
+
+    - ASSUMPTION-253 (MONITOR-277, ASSUMPTION)
+
+    - ASSUMPTION-254 (MONITOR-278, ASSUMPTION)
+
+    - ASSUMPTION-255 (MONITOR-279, ASSUMPTION)
+
+    - ASSUMPTION-257 (MONITOR-280, ASSUMPTION)
+
+    - ASSUMPTION-258 (MONITOR-281, ASSUMPTION)
+
+    - ASSUMPTION-259 (MONITOR-282, ASSUMPTION)
+
+    - ASSUMPTION-260 (MONITOR-283, ASSUMPTION)
+
+    - ASSUMPTION-261 (MONITOR-284, ASSUMPTION)
+
+    - ASSUMPTION-262 (MONITOR-285, ASSUMPTION)
+
+    - PRESUMPTION-279 (MONITOR-286, PRESUMPTION)
+
+    - PRESUMPTION-281 (MONITOR-287, PRESUMPTION)
+
+    - ASSUMPTION-263 (MONITOR-288, ASSUMPTION)
+
+    - PRESUMPTION-288 (MONITOR-289, PRESUMPTION)
+
+    - PRESUMPTION-292 (MONITOR-290, PRESUMPTION)
+
+    - PRESUMPTION-295 (MONITOR-291, PRESUMPTION)
+
+    - PRESUMPTION-296 (MONITOR-292, PRESUMPTION)
+
+    - PRESUMPTION-297 (MONITOR-293, PRESUMPTION)
+
+    - PRESUMPTION-298 (MONITOR-294, PRESUMPTION)
+
+    - PRESUMPTION-299 (MONITOR-295, PRESUMPTION)
+
+    - ASSUMPTION-270 (MONITOR-296, ASSUMPTION)
+
+    - PRESUMPTION-300 (MONITOR-297, PRESUMPTION)
+
+    - PRESUMPTION-301 (MONITOR-298, PRESUMPTION)
+
+    - PRESUMPTION-302 (MONITOR-299, PRESUMPTION)
+
+
+### Monthly low-priority re-triggers (62) — cadence Monthly; last checked 2026-07-05; next 15d check 2026-08-02; re-queued in for_lit_search.md
+
+- ASSUMPTION-003 (MONITOR-1, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-006 (MONITOR-2, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-008 (MONITOR-4, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-013 (MONITOR-5, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-001 (MONITOR-6, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-002 (MONITOR-7, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-003 (MONITOR-8, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-004 (MONITOR-9, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-005 (MONITOR-10, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-008 (MONITOR-11, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-010 (MONITOR-12, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-010 (MONITOR-14, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-011 (MONITOR-15, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-009 (MONITOR-16, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-014 (MONITOR-17, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-014 (MONITOR-18, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-015 (MONITOR-19, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-016 (MONITOR-20, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-017 (MONITOR-21, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-018 (MONITOR-22, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-019 (MONITOR-23, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-020 (MONITOR-24, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-021 (MONITOR-25, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-022 (MONITOR-26, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-023 (MONITOR-27, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-026 (MONITOR-29, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-025 (MONITOR-30, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-031 (MONITOR-36, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-033 (MONITOR-39, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-035 (MONITOR-040, monthly cycle 5, ASSUMPTION); overdue since 2026-06-28 (06-28 run skipped monthly): re-queued; trajectory carried: stable
+
+- ASSUMPTION-038 (MONITOR-43, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-044 (MONITOR-44, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-041 (MONITOR-47, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-042 (MONITOR-48, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-044 (MONITOR-49, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-051 (MONITOR-52, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-049 (MONITOR-53, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-052 (MONITOR-55, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-058 (MONITOR-57, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-055 (MONITOR-58, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-066 (MONITOR-61, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-068 (MONITOR-62, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-064 (MONITOR-63, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-065 (MONITOR-64, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-066 (MONITOR-65, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-067 (MONITOR-66, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-072 (MONITOR-67, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-073 (MONITOR-68, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-077 (MONITOR-69, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-071 (MONITOR-70, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-072 (MONITOR-71, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-073 (MONITOR-72, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-074 (MONITOR-73, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-075 (MONITOR-74, monthly cycle 5, ASSUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-086 (MONITOR-76, monthly cycle 5, PRESUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-079 (MONITOR-79, monthly cycle 3, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-081 (MONITOR-81, monthly cycle 3, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-083 (MONITOR-83, monthly cycle 3, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-084 (MONITOR-84, monthly cycle 3, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-085 (MONITOR-85, monthly cycle 3, ASSUMPTION): re-queued; trajectory carried: stable
+
+- ASSUMPTION-087 (MONITOR-86, monthly cycle 3, ASSUMPTION): re-queued; trajectory carried: stable
+
+- PRESUMPTION-103 (MONITOR-87, monthly cycle 3, PRESUMPTION): re-queued; trajectory carried: stable
+
+
+### Monthly INCORPORATED-premise re-checks (3)
+- PREMISE-002 (ASSUMPTION-009): re-queued [RE-CHECK by 15d: 2026-07-05]; re_check_due -> 2026-08-02
+- PREMISE-004 (ASSUMPTION-024): re-queued [RE-CHECK by 15d: 2026-07-05]; independence-of-findings caveat stands; re_check_due -> 2026-08-02
+- PREMISE-025 (ASSUMPTION-165): re-queued [RE-CHECK by 15d: 2026-07-05] (overdue from 2026-06-18); re_check_due -> 2026-08-02
+
+
+**Total this run (2026-07-05):** 55 weekly re-triggers; 124 stale-flag downgrades; 62 monthly re-triggers; 3 premise re-checks; 0 items resolved (15d does not disposition). Next weekly 15d run due: 2026-07-12. Next monthly cycle (first Sunday): 2026-08-02.
+
+## 2026-07-06 RUN — 15c intake (c2a2-lit-search-pipeline)
+
+MONITOR-416:
+  Item: ASSUMPTION-414 (Shipping the modal with a known minor defect is acceptable for ISME)
+  Disposition date: 2026-07-06 | Source: DISPOSITION-400 | Priority: Medium
+  15a/15b: SUPPORTED(Strong) / PARTIALLY-CHALLENGED(Moderate)
+  What would change disposition: post-ISME retrospective showing the defect was correctly classified minor and no criteria substitution occurred -> INCORPORATE (good-enough-release premise, conditioned on sound triage); evidence of severity misclassification or user-facing harm -> REVISE. Ties OPEN-109 fix verification and SYSTEMIC-RISK #2 (deadline-induced criteria substitution, 2026-07-06). See DISPOSITION-400 in lit_search_returns.md.
+  Cadence: Weekly | Next 15d check: 2026-07-12
+
+## 2026-07-07 RUN — 15c intake (c2a2-lit-search-pipeline)
+
+MONITOR-417:
+  Item: ASSUMPTION-421 (Re-running a completed baseline protocol duplicates artifacts — "structurally identical file is clutter, not measurement")
+  Disposition date: 2026-07-07 | Source: DISPOSITION-411 | Priority: Low
+  15a/15b: PARTIALLY-SUPPORTED(Moderate) / PARTIALLY-CHALLENGED(Moderate)
+  What would change disposition: adoption of diff-verify-then-log-compactly curation practice -> INCORPORATE the curation-rule version ("archive + one-line confirmation log; never discard without an actual diff"); a discarded "identical" re-run later shown to contain drift -> REVISE. Note: replication science holds the identical re-run IS the instrument-stability measurement (Simons 2014).
+  Cadence: Weekly | Next 15d check: 2026-07-12
+
+MONITOR-418:
+  Item: ASSUMPTION-422 (A second same-week data point from a slightly different resolver "would add methodological noise to the trend line")
+  Disposition date: 2026-07-07 | Source: DISPOSITION-412 | Priority: Medium
+  15a/15b: SUPPORTED(Strong) / CHALLENGED(Strong) — genuine contest; both agree on mechanism (method variance), split on prescription (exclude vs tag-and-model)
+  What would change disposition: adoption of tag-and-model dual-instrument practice -> INCORPORATE the modeling version; evidence a discarded discordant point concealed resolver drift -> REVISE. Ties REVISE-183 (P-452) and A-424/OPEN-114.
+  Cadence: Weekly | Next 15d check: 2026-07-12
+
+---
+
+## 2026-07-08 15d/15c weekly refresh — MONITOR continuations (cycle updates)
+
+- MONITOR-360 (ASSUMPTION-333, cycle 2): CONTINUED. 15a SUPPORTED/Mod-Strong (stable), 15b PARTIALLY-CHALLENGED/Moderate→Strong (new arXiv 2506.05794 sharpens the MB-as-statistical-partition objection). Still analogy-pending-structure-mapping; INCORPORATE gated on an explicit relational structure-mapping. Next 15d: 2026-07-15. Priority High. (DISPOSITION-418)
+- MONITOR-373 (PRESUMPTION-388, cycle 1): CONTINUED. 15a upgraded Moderate→Moderate-Strong (Human-Label-Variation as informative signal; arXiv 2510.12817). 15b PARTIALLY-CHALLENGED/Moderate (must rule out rubric ambiguity + ~25% judge inconsistency; arXiv 2503.05965/2601.09065). Gate now: demonstrate de-noising (rubric fix + repeated adjudication) before crediting dissensus. Coupled to P-387/REVISE-187 (same adjudicator). Next 15d: 2026-07-15. Priority High. (DISPOSITION-420)
+- MONITOR-375 (PRESUMPTION-390, cycle 1): CONTINUED. 15a upgraded None/weak→Weak-Moderate (analogical; Multi-Symmetry Ensembles + TBP). 15b no direct external critique. Burden is internal/empirical: measure per-axis inter-slice error correlation vs same-seed baseline. Next 15d: 2026-07-15. Priority High. (DISPOSITION-422)
+- MONITOR-382 (ASSUMPTION-363, cycle 1): CONTINUED. 15a SUPPORTED/Moderate on cadence value (change-rate matching). 15b CHALLENGED/Strong on the silent-stall clause (app-gated, no non-execution detection; 2026 dead-man's-switch doctrine). Reaffirms REVISE-147 (external dead-man's-switch). Cross-link: heartbeat run-log also supplies P-352/REVISE-186's out-of-band check. Next 15d: 2026-07-15. Priority High. (DISPOSITION-423)
+
+Note: MONITOR-349 (P-352) and MONITOR-372 (P-387), MONITOR-374 (P-389) were ESCALATED to REVISE this cycle (REVISE-186/187/188) and exit the monitor queue pending Tom's review.

@@ -37,3 +37,16 @@ SEARCH-AGAINST-PRESUMPTION-388:
   Search scope: Error-vs-variation separation; reliability; judge instability. Comprehensive.
 
   Recommendation: CHALLENGED
+
+SEARCH-AGAINST-PRESUMPTION-388 (RE-TRIGGER cycle 1):
+  Date searched: 2026-07-08
+  Original item: PRESUMPTION-388
+  PROVENANCE:
+    Chain: [... -> 15c -> 15d -> 15b] (cycle 1, 2026-07-08)
+    Transform: 15d weekly re-trigger 2026-07-05; 15b refreshed disconfirmatory search
+    Current status: PARTIALLY-CHALLENGED
+  New sources since last cycle: Yes (arXiv 2503.05965 Guerdan rating indeterminacy; arXiv 2601.09065 perspectivist modeling of annotator disagreement)
+  Strength of challenge: Moderate
+  Summary: New work separates disagreement sources — genuine indeterminacy vs underspecified rubric vs judge inconsistency (~25% inconsistent responses). Preserved dissensus is only meaningful once rubric-ambiguity and adjudicator noise are ruled out; formal tools now exist to do so.
+  STEELMAN: Before crediting a fork as real under-determination, show it survives a rubric fix and a re-run — otherwise it is indistinguishable from a vague axis or a flaky judge.
+  Recommendation: PARTIALLY-CHALLENGED / Actionable: add a de-noising step (rubric tightening + repeated adjudication) as a precondition for labeling dissensus 'genuine.'

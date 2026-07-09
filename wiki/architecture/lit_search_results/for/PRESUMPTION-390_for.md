@@ -28,3 +28,15 @@ SEARCH-FOR-PRESUMPTION-390:
   Search scope: Input-conditioning divergence; metaphor transfer. Preliminary.
 
   Recommendation: NO-SUPPORT-FOUND
+
+SEARCH-FOR-PRESUMPTION-390 (RE-TRIGGER cycle 1):
+  Date searched: 2026-07-08
+  Original item: PRESUMPTION-390
+  PROVENANCE:
+    Chain: [... -> 15c -> 15d -> 15a] (cycle 1, 2026-07-08)
+    Transform: 15d weekly re-trigger 2026-07-05; 15a refreshed supportive search
+    Current status: PARTIALLY-SUPPORTED
+  New sources since last cycle: Yes (arXiv 2412.18354, 2507.04494 Thousand Brains; arXiv 2303.02484 Multi-Symmetry Ensembles)
+  Strength of support: Weak-Moderate (up from None/weak)
+  Summary: Multi-symmetry/neuro-guided ensembles produce genuinely different (not merely averaged) representations; TBP papers formalize reference frames as distinct coordinate systems. Analogical support that varying view yields real representational diversity; no source tests the specific corpus-slice<->reference-frame mapping. Trajectory improved.
+  Recommendation: PARTIALLY-SUPPORTED / Upgrade candidate None/weak -> Weak-Moderate; support analogical not direct.

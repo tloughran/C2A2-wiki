@@ -39,3 +39,16 @@ This is exactly the kind of question PROP-2026-05-18-006's PRS-CANDIDATE-03 *ges
 - Cross-link this bridge note from `traditions/mcgilchrist/wiki.md` and from `traditions/rohr/wiki.md`.
 - The three Rohr proposals should be promoted out of `pending/` together as a *complementarity-pack* (the run report notes this); promoting them separately misses that they form a single articulation when taken alongside McGilchrist.
 - The bridge note is also relevant to `synthesis/kastrup_mcgilchrist_bridge.md` (already in the wiki); both bridges identify the right-hemisphere mode as the contemplative-or-non-dual mode of consciousness, but Rohr supplies a more developmentally specified articulation than Kastrup's analytic-idealist frame.
+
+
+---
+
+*Added by Sewing Agent on 2026-07-05*
+
+**Intersecting orphan:** `inbox/proposals/pending/2026-07-01_mcgilchrist_thinking-class-ruin-western-world.md` (PROP-2026-07-01-001)
+
+**Why it sits at the intersection:** McGilchrist argues a left-hemisphere culture *cannot diagnose its own pathology from within* — it lacks the right-hemisphere vantage needed to see the whole it has fragmented. Rohr's contemplative tradition holds that the analytic, dualistic mind cannot perceive the non-dual whole and requires a disciplined shift of attention (contemplation) to do so.
+
+**Synthesis claim:** Contemplative practice is a concrete candidate for the "outside vantage" McGilchrist says a left-hemisphere civilization structurally lacks — not a religious add-on but an attentional technology for re-grounding perception in the right-hemisphere mode. The West's "ruin" and the loss of contemplative discipline may be one phenomenon described in two vocabularies (neuroscience of attention / spirituality of seeing).
+
+**Open question the wiki cannot yet answer:** Is contemplation *sufficient* to restore the whole-grasping mode at civilizational scale, or only at the individual? McGilchrist's diagnosis is cultural; Rohr's remedy is personal-transformative — the wiki has no account of how an individually-cultivated right-hemisphere vantage propagates to reform a left-hemisphere *institution*.

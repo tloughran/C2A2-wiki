@@ -8730,15 +8730,17 @@ PRESUMPTION-436:
   Related items: ASSUMPTION-007 (AI agents can meaningfully instantiate research traditions — STRONGLY CHALLENGED by 15b, 2026-04-13); ASSUMPTION-408
   Testability: testable via literature — fidelity of LLM persona/viewpoint simulation; conditions under which a model's enactment of a position tracks the position's actual commitments.
   Risk if wrong: High — if agents do not faithfully instantiate the traditions, the study measures a property of the model, not of cross-tradition dialogue.
-  Status: UNTESTED
+  Status: CHALLENGED (15a: PARTIALLY-SUPPORTED (Weak, aggregate-only) | 15b: CHALLENGED (Strong) | 15c: REVISE -> REVISE-171; DISPOSITION-395, 2026-07-03)
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b -> 15a, 15b -> 15c]
     Original item: PRESUMPTION-436
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from the study's reliance on agent-dialogue as evidence about human-tradition interaction, with no in-session check of enactment fidelity. [inferred]
-    Current status: UNTESTED
+      15a/15b: Searched for supporting and challenging literature 2026-07-03 (results in lit_search_results/).
+      15c: Dispositioned 2026-07-03 -> REVISE-171 (DISPOSITION-395).
+    Current status: CHALLENGED (REVISE-171 (DISPOSITION-395))
 
 PRESUMPTION-437:
   Date surfaced: 2026-07-02
@@ -8750,15 +8752,17 @@ PRESUMPTION-437:
   Related items: ASSUMPTION-404 (P1 effect); ASSUMPTION-006 (PRS captures research progress — a sibling operationalization presumption)
   Testability: testable via literature — construct validity / operationalization of "understanding" and "mutual understanding" in dialogue and psycholinguistics.
   Risk if wrong: High — a mis-specified construct would make every downstream effect size (P1, P2, P3′) uninterpretable.
-  Status: UNTESTED
+  Status: CHALLENGED (15a: NO-SUPPORT-FOUND (Weak, procedural) | 15b: CHALLENGED (Strong) | 15c: REVISE -> REVISE-172; DISPOSITION-396, 2026-07-03)
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b -> 15a, 15b -> 15c]
     Original item: PRESUMPTION-437
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from the treatment of the understanding score as a transparent measure of the construct. [inferred]
-    Current status: UNTESTED
+      15a/15b: Searched for supporting and challenging literature 2026-07-03 (results in lit_search_results/).
+      15c: Dispositioned 2026-07-03 -> REVISE-172 (DISPOSITION-396).
+    Current status: CHALLENGED (REVISE-172 (DISPOSITION-396))
 
 PRESUMPTION-438:
   Date surfaced: 2026-07-02
@@ -8790,15 +8794,17 @@ PRESUMPTION-439:
   Related items: ASSUMPTION-406 (conversation as unit of replication); ASSUMPTION-410 (P3′b directional); OPEN-106
   Testability: testable via literature — reliability of significance/robustness classifications under small cluster counts; stability of effect-direction calls at low k.
   Risk if wrong: Medium — a fragile sort could reassign "robust" results on a strengthening run, undercutting claims presented as settled.
-  Status: UNTESTED
+  Status: CONTESTED (15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Moderate-Strong) | 15c: MONITOR -> MONITOR-415; DISPOSITION-397, 2026-07-03)
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b -> 15a, 15b -> 15c]
     Original item: PRESUMPTION-439
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from the acknowledged-underpowered k=5 co-occurring with a categorical robust/directional/null verdict treated as stable. [inferred]
-    Current status: UNTESTED
+      15a/15b: Searched for supporting and challenging literature 2026-07-03 (results in lit_search_results/).
+      15c: Dispositioned 2026-07-03 -> MONITOR-415 (DISPOSITION-397).
+    Current status: CONTESTED (MONITOR-415 (DISPOSITION-397))
 
 PRESUMPTION-440:
   Date surfaced: 2026-07-02
@@ -8810,15 +8816,17 @@ PRESUMPTION-440:
   Related items: ASSUMPTION-408; PRESUMPTION-437
   Testability: testable via literature — confirmation/desirability bias in study framing; how a preferred-outcome framing affects design and interpretation. (The study's own preregistration + asymmetric-verdict discipline is a partial mitigation worth noting.)
   Risk if wrong: Medium — a confirmation-oriented frame can bias construct and threshold choices toward the hoped-for result; partly offset by the register-then-look discipline.
-  Status: UNTESTED
+  Status: CHALLENGED (15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | 15c: REVISE -> REVISE-173; DISPOSITION-398, 2026-07-03)
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b -> 15a, 15b -> 15c]
     Original item: PRESUMPTION-440
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from the "against pessimism" framing that encodes the sought direction into the tool's self-description. [inferred]
-    Current status: UNTESTED
+      15a/15b: Searched for supporting and challenging literature 2026-07-03 (results in lit_search_results/).
+      15c: Dispositioned 2026-07-03 -> REVISE-173 (DISPOSITION-398).
+    Current status: CHALLENGED (REVISE-173 (DISPOSITION-398))
 
 PRESUMPTION-441:
   Date surfaced: 2026-07-02
@@ -8850,12 +8858,338 @@ PRESUMPTION-442:
   Related items: OPEN-108; PRESUMPTION-438
   Testability: testable via literature — evaluator-independence and self-evaluation bias when the same model generates and grades; contamination in model-as-judge setups.
   Risk if wrong: High — if generation and evaluation are not independent, favorable results may reflect shared model priors rather than genuine cross-tradition understanding.
-  Status: UNTESTED
+  Status: CHALLENGED (15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | 15c: REVISE -> REVISE-174; DISPOSITION-399, 2026-07-03)
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b -> 15a, 15b -> 15c]
     Original item: PRESUMPTION-442
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from the same-model-family generation-and-analysis pipeline presented without an independence caveat. [inferred]
+      15a/15b: Searched for supporting and challenging literature 2026-07-03 (results in lit_search_results/).
+      15c: Dispositioned 2026-07-03 -> REVISE-174 (DISPOSITION-399).
+    Current status: CHALLENGED (REVISE-174 (DISPOSITION-399))
+
+PRESUMPTION-443:
+  Date surfaced: 2026-07-05
+  Statement: [inferred] That the recurring Mac-side human convergence step — pushing sandbox commits, clearing locks, regenerating HTML, amending the master-wiki narrative — will happen reliably and promptly, despite having no owner, checklist, or deadline. Today alone three threads ended "pending on the Mac": the daily run's commit 5b7e68a (push pending), the master-wiki narrative amend (blocked by an unremovable sandbox lock), and the ISME push itself (blocked at HEAD.lock, outcome unrecorded).
+  Evidence it was operative: "the Mac pushes it, per standing pattern"; the ISME-facing artifact was treated as effectively shipped once paste-safe commands were handed to Tom.
+  Why it was unstated: obvious to participants — the pattern has hardened into infrastructure without ever being adopted as a design decision.
+  Type: structural
+  Related decisions: DECISION-075, DECISION-076
+  Related items: PRESUMPTION-446; OPEN-110, OPEN-111
+  Testability: testable empirically — measure latency and completion rate of "pending on the Mac" items (architecture content has drifted uncommitted since at least 07-01).
+  Risk if wrong: High — published state silently diverges from local state; an ISME-facing artifact can be believed live while unpushed.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-443
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three same-day threads ending in un-owned Mac-side follow-ups treated as routine. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-444:
+  Date surfaced: 2026-07-05
+  Statement: [inferred] That "ready for ISME" is the operative quality gate — a known defect ships because the conference date arrived, presuming deadline-driven gating (rather than defect-driven gating) is the right release principle for public-facing artifacts of an evidence-bearing system.
+  Evidence it was operative: the push decision reversed a minutes-earlier "let it sit till after ISME" parking of the same artifact, with the deadline the only new consideration; no cost of the defect was weighed beyond "minor."
+  Why it was unstated: culturally embedded — ship-for-the-conference is standard practice and was not examined as a choice.
+  Type: normative
+  Related decisions: DECISION-076
+  Related items: ASSUMPTION-414
+  Testability: testable via literature — release-readiness criteria and ship-with-known-bugs decision quality; deadline effects on defect triage.
+  Risk if wrong: Low-Medium for a UI polish item; the larger exposure is the pattern generalizing to evidence-bearing content (papers, results).
+  Status: CHALLENGED (15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | 15c: REVISE -> REVISE-175; DISPOSITION-401, 2026-07-06)
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-444
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the deadline-triggered reversal of the just-made parking decision. [inferred]
+    Current status: CHALLENGED (REVISE-175 (DISPOSITION-401))
+
+PRESUMPTION-445:
+  Date surfaced: 2026-07-05
+  Statement: [inferred] That a human-mediated compile loop — the agent pastes commands, Tom runs regen/serve/reload by hand — is a reliable substrate for iterative UI debugging. With the compute sandbox down, each iteration's ground truth (was the file rebuilt? is the browser serving it?) was only partially observable to the agent, and the session twice stalled on "changes not visible" ambiguity (regen vs cache).
+  Evidence it was operative: the loop was adopted without alternatives ("regeneration and local review belong on your Mac anyway"); the vertical-jump falsification (ASSUMPTION-412) remains unconfirmed precisely because loop state could not be verified before the session closed.
+  Why it was unstated: forced by the sandbox outage and normalized by the standing no-blind-push rule; treated as procedure, not as a measurement problem.
+  Type: methodological
+  Related decisions: DECISION-077
+  Related items: ASSUMPTION-412; OPEN-109
+  Testability: testable via literature (human-in-the-loop execution error rates) and empirically (emit a build stamp from the regen script that the agent can check, removing the ambiguity).
+  Risk if wrong: Medium — debugging conclusions, including today's parked defect, rest on unverified build/cache state.
+  Status: CHALLENGED (15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | 15c: REVISE -> REVISE-176; DISPOSITION-402, 2026-07-06)
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-445
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two unresolved "changes not visible" stalls in the human-mediated regen loop. [inferred]
+    Current status: CHALLENGED (REVISE-176 (DISPOSITION-402))
+
+PRESUMPTION-446:
+  Date surfaced: 2026-07-05
+  Statement: [inferred] That scheduled agents and attended human sessions can safely share one git repository without any coordination protocol — no locking discipline, no scheduling windows, no mutual awareness of concurrent writers. Today produced the strongest evidence yet: an attended commit hit `index.lock` and then a *fresh* `HEAD.lock` (candidate writers: Sunday janitor, heartbeat cron), the sandbox daily run separately hit a stale `index.lock` it could not remove, and the standing recipe ("rm .git/index.lock") institutionalizes deleting locks that may be live.
+  Evidence it was operative: lock collisions are handled as recurring weather ("matches the recurring pattern") rather than as a design gap; no session has proposed a coordination mechanism.
+  Why it was unstated: too foundational to notice — single-repo-many-writers was inherited, never chosen.
+  Type: structural / scaling
+  Related decisions: DECISION-076
+  Related items: ASSUMPTION-415; PRESUMPTION-443; OPEN-110
+  Testability: testable via literature (concurrency control for shared mutable stores; multi-agent resource coordination) and empirically (map all writers' schedules against observed lock events).
+  Risk if wrong: Critical — deleting a live lock can corrupt refs; adding agents scales the collision rate.
+  Status: CHALLENGED (15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | 15c: REVISE -> REVISE-177; DISPOSITION-403, 2026-07-06)
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-446
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from same-day lock collisions on both the Mac and sandbox sides, absorbed as routine. [inferred]
+    Current status: CHALLENGED (REVISE-177 (DISPOSITION-403))
+
+PRESUMPTION-447:
+  Date surfaced: 2026-07-05
+  Statement: [inferred] That a source's novelty and PRS-candidacy can be established from search snippets and partial fetches when the primary source is unfetchable — the Wolfram proposal was filed from secondary evidence with confidence downgraded, presuming snippet-level screening reliably identifies "substantively new" material rather than deferring the proposal until the primary source is readable.
+  Evidence it was operative: PROP-2026-07-05-001 was written despite "could not retrieve the full transcript," with the downgrade standing in for verification.
+  Why it was unstated: methodological habit — the quality filter tests the source's properties, not the quality of the evidence available *about* the source.
+  Type: epistemic / methodological
+  Related decisions: (none — proposal pending)
+  Related items: ASSUMPTION-416
+  Testability: testable via literature — reliability of abstract/snippet-only screening versus full-text screening in systematic reviews.
+  Risk if wrong: Low-Medium — worst case is reviewer time on a duplicate or misread proposal; the pending-review gate is a real mitigation.
+  Status: CHALLENGED (15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | 15c: REVISE -> REVISE-178; DISPOSITION-404, 2026-07-06)
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-447
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the proposal-despite-unfetchable-primary pattern in the Wolfram agent run. [inferred]
+    Current status: CHALLENGED (REVISE-178 (DISPOSITION-404))
+
+PRESUMPTION-448:
+  Date surfaced: 2026-07-05 (late-evening addendum)
+  Statement: [inferred] That racing concurrent writers is an acceptable coordination mechanism — "do it now, quickly, before one of the live wiki agents fires its own commit" presumes a human pasting shell commands can reliably win a timing window against scheduled agents, and that losing the race is recoverable rather than corrupting.
+  Evidence it was operative: lock removal and commit were sequenced for speed instead of pausing the two identified live sessions with wiki write access; pausing was framed only as the fallback if a lock reappeared. The race was in fact lost in one respect — the daily agent committed review_log.html first — and the outcome was salvaged by luck of convergence, not by the mechanism.
+  Why it was unstated: culturally embedded — optimistic concurrency is the default habit of solo developers; the repo's transition to a multi-writer system happened gradually and the coordination question was explicitly parked (DECISION-077, post-ISME).
+  Type: methodological / structural
+  Related decisions: DECISION-078
+  Related items: PRESUMPTION-446 (uncoordinated multi-writer repo, Critical); ASSUMPTION-417
+  Testability: testable via literature — optimistic vs pessimistic concurrency control; lock-free coordination failure modes; human-in-the-loop timing reliability.
+  Risk if wrong: High — a lost race during a ref update (not a worktree write) can corrupt refs or silently ship the wrong build; today's benign outcome does not generalize.
+  Status: CHALLENGED (15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | 15c: REVISE -> REVISE-179; DISPOSITION-405, 2026-07-06)
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-448
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the race-the-agents sequencing of DECISION-078 and the absence of any considered pause-first alternative. [inferred]
+    Current status: CHALLENGED (REVISE-179 (DISPOSITION-405))
+
+PRESUMPTION-449:
+  Date surfaced: 2026-07-05 (late-evening addendum)
+  Statement: [inferred] That the set of possible repo writers is fully enumerable from the local process table — the lock investigation checked janitor, heartbeat, git, and visible Claude sessions, and concluded from their absence that the repo was quiescent; yet origin/main advanced b1d0692 → 511b3b2 mid-session by a writer none of those checks surfaced.
+  Evidence it was operative: "safe to clear" and the push recipe both followed directly from local `ps` output; the remote advance arrived as a surprise rejection rather than an anticipated case.
+  Why it was unstated: too foundational to notice — the mental model is "my Mac is the repo"; remote-side writers (another machine, CI, a cloud session) sit outside the checked universe.
+  Type: epistemic / structural
+  Related decisions: DECISION-078
+  Related items: ASSUMPTION-420; OPEN-110, OPEN-113
+  Testability: testable empirically — audit origin/main's reflog/commit authors for 511b3b2 and enumerate actual writers; testable via literature — partial observability in distributed systems.
+  Risk if wrong: Medium-High — every future "is it safe to touch the repo?" judgment inherits the incomplete writer model; convergence plans built on it will keep failing in surprising ways.
+  Status: CHALLENGED (15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | 15c: REVISE -> REVISE-180; DISPOSITION-406, 2026-07-06)
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-449
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the gap between the local-only liveness checks and the unattributed remote advance that rejected the push. [inferred]
+    Current status: CHALLENGED (REVISE-180 (DISPOSITION-406))
+
+PRESUMPTION-450:
+  Date surfaced: 2026-07-05 (late-evening addendum)
+  Statement: [inferred] That an agent's independent regeneration of an artifact from the human's uncommitted source edit can stand in for the reviewed deliverable — the committed page was accepted as "nothing stale shipped" on the strength of two grep markers, without the browser sign-off that the session's own no-blind-push rule had made the release gate hours earlier.
+  Evidence it was operative: after 5b7e68a was discovered, verification consisted of `grep -c tnavwrap` and `grep -c "6vh 24px 24px"` on the committed file; the push was then authorized. No one asked whether the daily agent's build environment, generator version, or input data matched what Tom had visually approved on localhost:8080.
+  Why it was unstated: obvious to participants — the markers "prove" the edits are present, and deadline pressure (ISME) made the cheaper check feel equivalent; the erosion of the just-invoked verification standard went unremarked.
+  Type: normative / methodological
+  Related decisions: DECISION-076, DECISION-078
+  Related items: ASSUMPTION-419 (incl. its rationale-drift flag); PRESUMPTION-444 (deadline-driven release gating)
+  Testability: testable via literature — reproducible-builds research on when artifact identity requires build-environment identity; marker-based vs behavioral verification.
+  Risk if wrong: Medium — the page most plausibly is correct, but the precedent quietly redefines "reviewed" as "greppable," which compounds across future releases.
+  Status: CHALLENGED (15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | 15c: REVISE -> REVISE-181; DISPOSITION-407, 2026-07-06)
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-450
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the substitution of marker greps for the session's own visual sign-off standard when authorizing the push. [inferred]
+    Current status: CHALLENGED (REVISE-181 (DISPOSITION-407))
+
+PRESUMPTION-451:
+  Date surfaced: 2026-07-06
+  Statement: [inferred] That a "ONE-TIME" scheduled task firing three times is something for the *agent* to absorb by adapting its behavior at run time, rather than evidence that the scheduling layer lacks (or is not being asked to provide) task-lifecycle enforcement.
+  Evidence it was operative: the verification report opens by naming the anomaly ("This task is labeled a ONE-TIME bootstrap, but it has now fired three times") and immediately pivots to how the run will behave differently — verification, deliberate non-writes — while the retirement itself is routed to Tom as a manual recommendation. At no point does any run ask whether one-time semantics should be enforceable in the scheduler, or why a task can outlive its own completion criterion for 13 days.
+  Why it was unstated: too foundational to notice — the scheduler is treated as fixed environment, not as part of the designed system; agent-side adaptation is the only lever the agent has, so it is the only lever discussed.
+  Type: structural
+  Related decisions: pending (OPEN-114)
+  Related items: ASSUMPTION-421, ASSUMPTION-424; kin to the silent-infrastructure / ABSENCE-AS-EVIDENCE SYSTEMIC-RISK cluster (infrastructure whose misbehavior is compensated for rather than surfaced)
+  Testability: testable via literature — automation lifecycle management; "temporary" infrastructure persistence (temporary-becomes-permanent); dead-code/dead-task accumulation in scheduled systems.
+  Risk if wrong: Medium — each zombie task costs tokens and writes; compensating-agent behavior masks scheduler defects that will bite harder as the task census grows (currently ~15+ scheduled tasks).
+  Status: CHALLENGED (15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | 15c: REVISE -> REVISE-182; DISPOSITION-413, 2026-07-07; contributes to the new High SYSTEMIC-RISK: single-layer self-verification)
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-451
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the gap between the report's naming of the triple-fire anomaly and its exclusively agent-side response to it. [inferred]
+      15a/15b: independent parallel literature searches (2026-07-07); 15c: dispositioned (see Status). [searched]
+    Current status: CHALLENGED (REVISE-182)
+
+PRESUMPTION-452:
+  Date surfaced: 2026-07-06
+  Statement: [inferred] That exact agreement on the 9-page Category-A subset, plus <2% aggregate count difference against yesterday's independent-resolver row, suffices to establish that "the delta is real, not resolver drift" across the whole 3,188-page census.
+  Evidence it was operative: the methodology check validated the path-aware resolver only against the Category-A list (9 pages, the best-linked cohort) and the aggregate totals; the conclusion ("the delta is real") was then applied to all category deltas, including B (+34), C (+6), D (+123), E (−6), none of which were subset-verified.
+  Why it was unstated: obvious to participants — the checks that were run all passed, and the cost of a fuller cross-resolver audit felt disproportionate on an autonomous run.
+  Type: methodological / epistemic
+  Related decisions: none on record
+  Related items: ASSUMPTION-422 (the same resolver-difference concern, stated, in the other direction)
+  Testability: testable via literature — inter-instrument agreement methodology (does subset+aggregate agreement bound per-category disagreement?); validation-sample selection bias.
+  Risk if wrong: Low-Medium — mis-attributed category deltas would distort the orphan-trend story the weekly agent feeds on, but three roughly-agreeing resolvers cap the plausible error.
+  Status: CHALLENGED (15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Strong) | 15c: REVISE -> REVISE-183; DISPOSITION-414, 2026-07-07; gates ASSUMPTION-424 / OPEN-114)
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-452
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the scope gap between the resolver validation performed (Category A + totals) and the conclusions drawn (all categories). [inferred]
+      15a/15b: independent parallel literature searches (2026-07-07); 15c: dispositioned (see Status). [searched]
+    Current status: CHALLENGED (REVISE-183)
+
+PRESUMPTION-453:
+  Date surfaced: 2026-07-06
+  Statement: [inferred] That the orphan/sparse/connected census remains a meaningful vault-health instrument when 100% of growth is "orphaned by design" — i.e., that a headline metric now dominated by pages the pipeline never intends to link (2,494 of 3,188, with all +157 new pages orphans) still measures synthesis health rather than pipeline throughput.
+  Evidence it was operative: "sparse and connected counts did not move at all" over 8 days was reported as reassurance ("exactly the pattern the 6-28 report predicted") and fed the "bottleneck is not connectivity" conclusion. The alternative reading — that zero movement in connected pages for 8 days is *stagnation* of synthesis linking, invisible inside a metric swamped by by-design orphans — was not considered. No one asked whether the census should exclude category B/D pages to recover signal.
+  Why it was unstated: culturally embedded — the census categories were built to explain orphans away (residue, structural), which quietly converts the metric from an alarm into a confirmation.
+  Type: epistemic / normative
+  Related decisions: none on record
+  Related items: ASSUMPTION-423; PRESUMPTION-442 lineage (metric-interpretation presumptions); OPEN-112 (count-discrepancy kin)
+  Testability: testable via literature — metric dilution and denominator drift in health/quality metrics; Goodhart-adjacent literature on metrics that stop measuring what they were built to measure.
+  Risk if wrong: Medium — vault-health conclusions (and the retire-the-bootstrap recommendation resting on "the baseline stands") would be built on an instrument that can no longer detect the failure mode it was designed for.
+  Status: CHALLENGED (15a: NO-SUPPORT-FOUND (None; PARTIALLY-NOVEL — dilution-by-design configuration) | 15b: CHALLENGED (Strong) | 15c: REVISE -> REVISE-184; DISPOSITION-415, 2026-07-07 — the unstratified census measures the growth policy, not synthesis health)
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-453
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the reassurance-framing of flat sparse/connected counts and the absence of a filtered (by-design-excluded) census view. [inferred]
+      15a/15b: independent parallel literature searches (2026-07-07); 15c: dispositioned (see Status). [searched]
+    Current status: CHALLENGED (REVISE-184; partial NOVELTY flag)
+
+PRESUMPTION-454:
+  Date surfaced: 2026-07-06
+  Statement: [inferred] That routing both directions of the daily Chat↔Cowork sync through a single silent credential (Tom's claude.ai browser login) is acceptable, and that writing failure notes into vault files constitutes adequate alerting — even though the broken channel IS the channel that would carry the alert to Tom.
+  Evidence it was operative: the morning scrape failed (logged out since at least 07-03), wrote a failure note to a file, and exited; the evening sync generated its summary, failed delivery on the same logged-out session, and stamped the warning into the header of the very summary it could not deliver. Both agents behaved exactly as designed; neither design questions the self-masking structure. The outage has now consumed 3+ days of both sync directions, and the recovery instruction ("sign back in") sits in files whose whole purpose was to reach Tom through the channel that is down.
+  Why it was unstated: culturally embedded — browser sessions "usually persist," and file-fallback feels like graceful degradation from inside each task definition; the cross-task systemic view (both directions, one credential, no out-of-band alert) belongs to no single agent.
+  Type: structural
+  Related decisions: none on record
+  Related items: ASSUMPTION-425; PRESUMPTION-443 (un-owned Mac-side steps presumed reliable); core kin of the ABSENCE-AS-EVIDENCE / silent-infrastructure SYSTEMIC-RISK cluster
+  Testability: testable via literature — dead-man-switch / out-of-band alerting patterns for monitoring systems; self-masking failure modes (alerting that depends on the monitored channel).
+  Risk if wrong: Medium-High — the morning-walk Chat loop silently loses continuity for days at a time, and every day of outage degrades exactly the context-transfer the C2A2 daily cycle is built around.
+  Status: CHALLENGED (15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong) | 15c: REVISE -> REVISE-185; DISPOSITION-416, 2026-07-07 — dead-man's-switch/out-of-band alerting recommended; outage live since ≥07-03)
+  Provenance:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-454
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the two sync transcripts read directly (morning scrape, evening delivery): both failed on the same credential, both alerted only through the failed channel's fallback files. [inferred]
+      15a/15b: independent parallel literature searches (2026-07-07); 15c: dispositioned (see Status). [searched]
+    Current status: CHALLENGED (REVISE-185)
+
+PRESUMPTION-455:
+  Date surfaced: 2026-07-07
+  Statement: [inferred] That each scheduled agent should diagnose infrastructure failures independently, with no shared incident state — so the same root cause is re-discovered, re-verified, and re-reported by every agent that trips over it.
+  Evidence it was operative: openstory telemetry (10:16Z) confirmed the open-story.db rowid corruption is in the source file via a static byte-copy quick_check; the metabolism regen run, the same morning, independently re-ran quick_check, re-derived the failure, and still hedged "it may be real corruption in the live DB, or an artifact of reading it through the sandbox FUSE mount" — a hypothesis its sibling had already eliminated. Both wrote separate reports recommending the same Mac-side `.recover`. Nothing in either task definition points at a shared incident record.
+  Why it was unstated: obvious to participants — each task was authored as a self-contained unit; the incident-coordination view belongs to no single agent (same blind-spot family as PRESUMPTION-454's cross-task gap).
+  Type: structural
+  Related decisions: none on record
+  Related items: ASSUMPTION-427; PRESUMPTION-443, PRESUMPTION-454 (un-owned cross-task concerns); the 07-07 SYSTEMIC-RISK on single-layer self-verification (kin: no second layer, but also no shared first layer)
+  Testability: testable via literature — incident-management practice (single incident record, deduplicated alerting) vs redundant per-monitor diagnosis; alert-storm and diagnostic-drift costs.
+  Risk if wrong: Medium — duplicated diagnosis wastes run budget, and divergent conclusions (artifact-vs-real) can persist across agents, delaying the human fix the reports exist to trigger.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-455
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the two failure transcripts (metabolism regen, telemetry refresh) diagnosing the same corruption in parallel with no cross-reference. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-456:
+  Date surfaced: 2026-07-07
+  Statement: [inferred] That human review capacity is elastic — tradition agents may produce proposals at whatever rate the pipeline yields, with no backpressure, queue cap, or aging policy on the pending inbox.
+  Evidence it was operative: pending proposals grew 4 (07-05) -> 9 -> 12 -> 13 (07-07) while the last review pass aged past a week; the deferred-action monitor and morning handoff both *report* the growth but no agent or task treats it as a signal to slow intake, triage, or escalate differently. The Hoffman agent added today's proposal into a queue it knows is unreviewed. FLAG-016 "keeps growing" is recorded as observation, not actuator.
+  Why it was unstated: culturally embedded — more captured material feels unambiguously good, and each tradition agent's mandate is coverage of its thinker, not queue health; the intake/consumption balance belongs to no single agent.
+  Type: scaling / normative
+  Related decisions: none on record
+  Related items: ASSUMPTION-428 (surfaced-deferral kin); OPEN-115 (the same production-outruns-consumption shape in the lit pipeline); PRESUMPTION-454 (reports-as-alerts)
+  Testability: testable via literature — WIP limits and backpressure in kanban/queueing theory; review-debt dynamics; alert/queue fatigue. Testable empirically — does proposal approval rate degrade with queue depth?
+  Risk if wrong: Medium — a review queue that only grows converts the human-in-the-loop into a bottleneck-in-name-only; stale proposals decay in relevance and the approval gate silently stops governing the wiki's growth.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-456
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three runs' queue-growth observations (07-05..07-07) and the absence of any backpressure mechanism in agent definitions. [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-457:
+  Date surfaced: 2026-07-07
+  Statement: [inferred] That the model's training-data knowledge of a thinker's appearance catalog is a valid oracle for adjudicating live web-search results — when search says "new episode" and the prior says "no such episode," the prior wins.
+  Evidence it was operative: the Hoffman agent rejected the "Lex Fridman June 2026" result on the ground that "the only real Lex/Hoffman episode is #293 from June 2022" — a claim about 2026 events sourced from the model's memory, which cannot contain them. The rejection was likely correct here (the accepted StarTalk item got two confirming searches; the rejected one got none targeted at proving it real), but the asymmetry — extra verification effort spent on the item the prior favored, summary dismissal of the one it disfavored — went unexamined. A real post-cutoff Lex episode would be filtered out by exactly this rule.
+  Why it was unstated: too foundational to notice — using what the model "knows" as the baseline for plausibility is the default reasoning mode; the direction of the burden of proof was never chosen, only inherited.
+  Type: epistemic
+  Related decisions: none on record
+  Related items: ASSUMPTION-426 (the stated half of this behavior); PRESUMPTION-442 lineage (metric/evidence-interpretation presumptions)
+  Testability: testable via literature — hallucination-vs-novelty discrimination in retrieval-augmented systems; calibration of prior-vs-evidence weighting when evidence postdates training. Testable empirically — false-rejection audit of catalog-prior filtering (ASSUMPTION-426's test covers both).
+  Risk if wrong: Medium — tradition agents systematically under-capture genuinely new appearances, which is the one job the ~30-day window exists for; misses are invisible (nothing audits rejected candidates).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-457
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the asymmetric verification pattern in the Hawkins/Hoffman transcript (prior-favored item verified twice; prior-disfavored item dismissed without targeted verification). [inferred]
+    Current status: UNTESTED
+
+PRESUMPTION-458:
+  Date surfaced: 2026-07-07
+  Statement: [inferred] That "end of day" is a clean processing boundary — the EOD self-awareness run presumes the day's transcripts are complete when it fires, though scheduled sessions can still be running.
+  Evidence it was operative: at tonight's extraction time, scheduler-health-check, C282-wiki-agent-daily-run, and agentic-cost-tracker were all still RUNNING; their transcripts are necessarily absent from tonight's extraction, and no mechanism re-queues a late-finishing session for tomorrow's pass. The task definition says "today's transcripts" as if that set were closed. (Self-referential: this presumption is operative in the very run that surfaces it.)
+  Why it was unstated: obvious to participants — daily batch processing naturally assumes day-boundaries; the scheduler's actual completion distribution was never consulted when the EOD cadence was set.
+  Type: methodological
+  Related decisions: none on record
+  Related items: PRESUMPTION-451 (scheduler lifecycle gaps absorbed by agents); ASSUMPTION-425 (file persistence as continuity mechanism — late outputs at least persist to files)
+  Testability: testable empirically — log which sessions are still running at each EOD fire and whether their eventual outputs ever enter a later extraction; testable via literature — watermarking/late-arrival handling in stream and batch processing.
+  Risk if wrong: Low-Medium — assumptions arising in late-finishing runs are systematically never extracted (a quiet coverage hole in the self-awareness pipeline itself), though registry-facing file outputs are usually picked up the next day.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-458
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the session list at extraction time (3 sessions running) vs the task definition's closed-set language ("today's session transcript(s)"). [inferred]
     Current status: UNTESTED

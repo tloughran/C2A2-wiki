@@ -178,7 +178,7 @@ ASSUMPTION-009:
   Type: epistemic
   Related decisions: DECISION-011
   Testability: testable empirically (by examining whether displacement patterns cluster across traditions)
-  Status: CONTESTED
+  Status: GROUNDED (PREMISE-002 re-confirmed ACTIVE by monthly 15d re-check; 15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | 15c: RE-CONFIRM; DISPOSITION-408, 2026-07-06)
   Provenance:
     Origin: 14a
     Chain: [14a → 15a, 15b → 14a]
@@ -458,7 +458,7 @@ ASSUMPTION-024:
   Type: epistemic
   Related decisions: DECISION-017
   Testability: testable empirically (responses from Kastrup, Hoffman, and Friston will determine whether each link holds; if any single link fails, test whether the remaining two still support the conclusion independently)
-  Status: UNTESTED
+  Status: GROUNDED (PREMISE-004 re-confirmed ACTIVE, independence proviso sharpened; 15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | 15c: RE-CONFIRM; DISPOSITION-409, 2026-07-06)
   Provenance:
     Origin: 14a
     Chain: [14a]
@@ -2918,7 +2918,7 @@ ASSUMPTION-165:
   Type: operational / meta-architectural / pipeline-health
   Related decisions: ASSUMPTION-117 (residual-urgency demotion reversed), Agent 14a/14b scheduled-task design, ASSUMPTION-166 (lit-search pipeline ran), PRESUMPTION-187 (pipeline-failure-vs-rate-mismatch frame)
   Testability: testable empirically (verify whether tonight's 2026-05-17 fire produces both a changelog and a snapshot; track the next N≥7 cycles for stable on-cadence behavior; if recurrence persists, escalate from credential / scheduler-state to a pipeline-design question per PRESUMPTION-187); testable via process (audit scheduler-task logs and last-fire timestamps for both 14a/14b and other end-of-day tasks; compare to identify whether this is task-specific or scheduler-wide)
-  Status: UNTESTED
+  Status: GROUNDED (PREMISE-025 re-confirmed ACTIVE by monthly 15d re-check; 15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | 15c: RE-CONFIRM; DISPOSITION-410, 2026-07-06)
   Provenance:
     Origin: 14a
     Chain: [14a]
@@ -7259,15 +7259,17 @@ ASSUMPTION-403:
   Related decisions: DECISION-074
   Related items: PRESUMPTION-438 (the author-ratification standard under AI-agent simulation)
   Testability: framework commitment (foundational to the study's design) — but the general claim, that mutual understanding in dialogue is better validated by author-ratification than by third-party semantic mapping, is testable via literature on dialogue, verification, and theories of understanding.
-  Status: UNTESTED
+  Status: CONTESTED (15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | 15c: MONITOR -> MONITOR-412; DISPOSITION-391, 2026-07-03)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a -> 15a, 15b -> 15c]
     Original item: ASSUMPTION-403
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from the explicitly stated rephrasing of the study's validity standard in the convener session. [stated]
-    Current status: UNTESTED
+      15a/15b: Searched for supporting and challenging literature 2026-07-03 (results in lit_search_results/).
+      15c: Dispositioned 2026-07-03 -> MONITOR-412 (DISPOSITION-391).
+    Current status: CONTESTED (MONITOR-412 (DISPOSITION-391))
 
 ASSUMPTION-404:
   Date identified: 2026-07-02
@@ -7313,15 +7315,17 @@ ASSUMPTION-406:
   Related decisions: DECISION-074
   Related items: ASSUMPTION-404, ASSUMPTION-410; PRESUMPTION-439 (k=5 adequacy for a "robust/directional/null" sort)
   Testability: testable via literature — clustered/hierarchical inference with a small number of clusters; unit-of-analysis choice in nested dialogue data.
-  Status: UNTESTED
+  Status: GROUNDED (15a: SUPPORTED (Strong, for the unit) | 15b: PARTIALLY-CHALLENGED (Moderate-Strong, k=5 CI) | 15c: INCORPORATE -> PREMISE-094; DISPOSITION-392, 2026-07-03)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a -> 15a, 15b -> 15c]
     Original item: ASSUMPTION-406
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from the stated unit-of-replication commitment and clustered-interval reporting. [stated]
-    Current status: UNTESTED
+      15a/15b: Searched for supporting and challenging literature 2026-07-03 (results in lit_search_results/).
+      15c: Dispositioned 2026-07-03 -> PREMISE-094 (DISPOSITION-392).
+    Current status: GROUNDED (PREMISE-094 (DISPOSITION-392))
 
 ASSUMPTION-407:
   Date identified: 2026-07-02
@@ -7331,15 +7335,17 @@ ASSUMPTION-407:
   Related decisions: DECISION-075
   Related items: ASSUMPTION-409 (spec + one-file runner)
   Testability: testable via literature — efficacy of preregistration in reducing analytic flexibility / researcher degrees of freedom; enforceability of automated preregistration gates.
-  Status: UNTESTED
+  Status: CONTESTED (15a: PARTIALLY-SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | 15c: MONITOR -> MONITOR-413; DISPOSITION-393, 2026-07-03)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a -> 15a, 15b -> 15c]
     Original item: ASSUMPTION-407
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from the stated Stage 2 invariant (preregister-before-run as a machine gate). [stated]
-    Current status: UNTESTED
+      15a/15b: Searched for supporting and challenging literature 2026-07-03 (results in lit_search_results/).
+      15c: Dispositioned 2026-07-03 -> MONITOR-413 (DISPOSITION-393).
+    Current status: CONTESTED (MONITOR-413 (DISPOSITION-393))
 
 ASSUMPTION-408:
   Date identified: 2026-07-02
@@ -7349,15 +7355,17 @@ ASSUMPTION-408:
   Related decisions: DECISION-074, DECISION-075
   Related items: PRESUMPTION-440 (optimism-toward-fulfillment as the sought outcome)
   Testability: testable via literature (MacIntyre scholarship on tradition-constituted rationality and commensurability) and empirically (whether the convener protocol yields genuine understanding across traditions).
-  Status: UNTESTED
+  Status: CONTESTED (15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate-Strong) | 15c: MONITOR -> MONITOR-414; DISPOSITION-394, 2026-07-03)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a -> 15a, 15b -> 15c]
     Original item: ASSUMPTION-408
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from the stated study framing ("against pessimism ... MacIntyre's recovery project"). [stated]
-    Current status: UNTESTED
+      15a/15b: Searched for supporting and challenging literature 2026-07-03 (results in lit_search_results/).
+      15c: Dispositioned 2026-07-03 -> MONITOR-414 (DISPOSITION-394).
+    Current status: CONTESTED (MONITOR-414 (DISPOSITION-394))
 
 ASSUMPTION-409:
   Date identified: 2026-07-02
@@ -7393,4 +7401,330 @@ ASSUMPTION-410:
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from the stated downgrade of P3′b to directional/underpowered. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-411:
+  Date identified: 2026-07-05
+  Statement: "the footer nav shifts vertically because each triple's body is a different height, so Next lands at a different screen spot every time. Moving it into the fixed title bar keeps it put." The header is additionally locked to a single line so it never reflows.
+  Context: "Explorer Bugs PRS triplets review" session (attended) — relocating the PRS-triple modal's Prev/Next nav after Tom reported the footer buttons jumping.
+  Type: architectural / empirical
+  Related decisions: DECISION-076
+  Related items: ASSUMPTION-412; OPEN-109
+  Testability: testable empirically — the footer-level fix was verified in-session (Tom: "nav now moved to header successfully"), though a residual vertical header jump remained.
+  Status: UNTESTED (in-session evidence partially supportive; residual jump outstanding)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-411
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated causal diagnosis of the footer-nav jump. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-412:
+  Date identified: 2026-07-05
+  Statement: "That's the vertical-centering: the modal box is centered, so a shorter or taller triple makes the box a different height, and centering nudges the whole box — header included — up or down. Pinning the box to a fixed top removes it" (implemented as a constant 6vh top offset).
+  Context: "Explorer Bugs PRS triplets review" session — diagnosing the residual header jump after the nav moved to the header.
+  Type: empirical
+  Related decisions: DECISION-077
+  Related items: ASSUMPTION-411; OPEN-109; PRESUMPTION-445
+  Testability: testable empirically — the in-session prediction did NOT visibly hold ("quit, restarted, but still vert jumping"), but the falsification is unconfirmed: build/cache state was never verified before the session pivoted to the handoff. Handoff's leading next fix: fixed `.tbox` height instead of `max-height`.
+  Status: UNTESTED (in-session evidence against, unconfirmed — see OPEN-109)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-412
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated vertical-centering diagnosis and its fixed-top prediction. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-413:
+  Date identified: 2026-07-05
+  Statement: Because no per-triplet file exists on disk (each triple is a `PRS-NN:` block inside `traditions/<key>/prs_triplets.md`), "hyperlink every triplet to its associated file" is validly implemented as "open that triple's full content in place, with the source file path shown in the modal footer."
+  Context: "Explorer Bugs PRS triplets review" session — flagged explicitly by the assistant as a judgment call for Tom's review; Tom did not object in-session.
+  Type: methodological
+  Related decisions: DECISION-076
+  Related items: (none)
+  Testability: framework commitment (interpretive reading of intent; testable only against Tom's stated preference — the offer of a real deep link to the source `.md` remains open)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-413
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated interpretive judgment call about "hyperlink every triplet to its associated file". [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-414:
+  Date identified: 2026-07-05
+  Statement: Shipping the modal with the known vertical-jump defect is acceptable for ISME — "the vertical jump ships and stays a post-ISME polish item." The premise: a visible-but-minor known defect does not undermine the ISME-facing artifact's purpose.
+  Context: "Explorer Bugs PRS triplets review" session — Tom's explicit choice (in-session question) to push the current build, modal included.
+  Type: methodological / normative
+  Related decisions: DECISION-076
+  Related items: PRESUMPTION-444
+  Testability: testable via literature (release decisions with known minor defects; technical-debt triage) and empirically (whether the defect draws notice at ISME).
+  Status: CONTESTED (15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | 15c: MONITOR -> MONITOR-416; DISPOSITION-400, 2026-07-06)
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-414
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated ship-with-known-defect call. [stated]
+    Current status: CONTESTED (MONITOR-416 (DISPOSITION-400))
+
+ASSUMPTION-415:
+  Date identified: 2026-07-05
+  Statement: Git lock files that persist with no live git process are stale and safe to remove; but "a fresh HEAD.lock appearing right after you cleared index.lock suggests a git process is genuinely mid-operation ... Deleting a live lock can corrupt refs." Candidate live writers named in-session: the Sunday weekly janitor task and the heartbeat cron.
+  Context: "Explorer Bugs PRS triplets review" session — the ISME push failed on `.git/index.lock`, then a fresh `.git/HEAD.lock`; the transcript ends awaiting Tom's process listings.
+  Type: methodological / empirical
+  Related decisions: DECISION-076
+  Related items: OPEN-110; PRESUMPTION-446
+  Testability: testable empirically — identify the concurrent writer from process listings and the janitor/heartbeat schedules.
+  Status: UNTESTED (in-session outcome unrecorded)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-415
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated stale-vs-live lock reasoning during the blocked ISME push. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-416:
+  Date identified: 2026-07-05
+  Statement: The June 12, 2026 "Future of Science and Technology Q&A" contains a genuinely new observer-boundary / whole-brain-emulation segment not yet in the wiki, extending PRS-12/17 and bridging to Hawkins, Levin, Hoffman, and Kastrup — asserted at Medium/Speculative confidence because the full transcript could not be fetched, with the evidence gap explicitly noted for Tom's review.
+  Context: "C2a2 agent wolfram" scheduled run (2026-07-05) — basis of PROP-2026-07-05-001.
+  Type: empirical
+  Related decisions: (none — proposal pending review)
+  Related items: PRESUMPTION-447
+  Testability: testable empirically — obtain the full Q&A transcript and check the segment against PRS-12/17 and existing Wolfram triplets.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-416
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the Wolfram agent's stated novelty claim and confidence downgrade. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-417:
+  Date identified: 2026-07-05 (late-evening addendum)
+  Statement: The `ps aux | grep git` hits during the lock investigation were "all false positives — the grep matched the substring 'git' inside the Claude sessions' huge command lines... None is an actual git process," therefore "both locks are stale from an interrupted operation — safe to clear" (including `.git/objects/maintenance.lock`).
+  Context: DECISION-078 — clearing HEAD.lock, index.lock, and maintenance.lock to land the ISME commit ("Explorer Bugs PRS triplets review" session, late continuation).
+  Type: empirical
+  Related decisions: DECISION-076, DECISION-078
+  Related items: ASSUMPTION-415 (stale-vs-live lock reasoning, earlier same session); PRESUMPTION-448
+  Testability: testable empirically — in-session evidence FOR: after removal the commit (c543afa) completed cleanly and no lock reappeared. [stated diagnosis; in-session corroboration noted, not evaluated]
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-417
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated false-positive diagnosis preceding lock removal. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-418:
+  Date identified: 2026-07-05 (late-evening addendum)
+  Statement: Because `wiki/review_log.html` disappeared from `git status` after commit c543afa recorded only "1 file changed," the page "got committed, almost certainly by the daily wiki agent, whose pipeline re-runs `refresh_review_log.sh` and commits the result."
+  Context: diagnosing why the two-file surgical commit (DECISION-076) captured only the generator script.
+  Type: empirical
+  Related decisions: DECISION-076, DECISION-078
+  Related items: ASSUMPTION-419; PRESUMPTION-446 (uncoordinated multi-writer repo)
+  Testability: testable empirically — in-session evidence FOR: `git log -- wiki/review_log.html` shows 5b7e68a "C2A2 daily run — 2026-07-05" as the most recent commit touching the page. [stated inference with in-session corroboration]
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-418
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated attribution of the page commit to the daily agent. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-419:
+  Date identified: 2026-07-05 (late-evening addendum)
+  Statement: The committed page is the intended build: "tnavwrap = 2 (the CSS rule + the HTML span) and 6vh pin = 1. The daily-run commit 5b7e68a regenerated review_log.html from your updated generator, so the committed page has the full pop-up and the vertical pin. Nothing stale shipped."
+  Context: verifying the deliverable after the daily agent committed the page out from under the attended session.
+  Type: empirical
+  Related decisions: DECISION-076
+  Related items: ASSUMPTION-418; PRESUMPTION-450. RATIONALE DRIFT NOTE: earlier in the same session the expected `grep -c tnavwrap` count was stated as `1` ("If the count is 1 and the timestamp is fresh, the file is correct"); on observing `2` the expectation was reinterpreted post hoc as "the CSS rule + the HTML span" without flagging the change. [inferred flag on a stated claim]
+  Testability: testable empirically — render the committed page and confirm modal + pinned header visually (the session's own no-blind-push standard).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-419
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated marker-based verification of commit 5b7e68a; rationale-drift on the expected marker count flagged. [stated + inferred flag]
+    Current status: UNTESTED
+
+ASSUMPTION-420:
+  Date identified: 2026-07-05 (late-evening addendum)
+  Statement: "Rebase guards against the usual non-fast-forward from the heartbeat cron" — i.e., fetch+rebase+push is a sufficient convergence recipe for this multi-writer repo.
+  Context: the push recipe issued for DECISION-076's execution.
+  Type: methodological
+  Related decisions: DECISION-076, DECISION-078
+  Related items: PRESUMPTION-446, PRESUMPTION-449; OPEN-113
+  Testability: testable empirically — in-session evidence AGAINST: the rebase aborted ("cannot rebase: You have unstaged changes" — the uncommitted architecture drift) and the push was rejected non-fast-forward after the remote advanced to 511b3b2 mid-session. The guard fails exactly when the working tree carries the agent drift that OPEN-111 says is always present. [stated claim; in-session counter-evidence noted, not evaluated]
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-420
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated rationale for the fetch/rebase/push block; recorded the in-session failure as evidence context. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-421:
+  Date identified: 2026-07-06
+  Statement: "Re-running the full protocol would duplicate baseline artifacts and re-stamp dispositions already on record. ... a structurally identical 3,000-line file two runs later is clutter, not measurement."
+  Context: the sewing bootstrap task fired a third time (labeled ONE-TIME); the run chose verification-mode over re-execution and stated this rationale for writing no third census file.
+  Type: methodological
+  Related decisions: none on record — autonomous adaptation by a scheduled agent; retirement recommendation routed to Tom (see OPEN-114)
+  Related items: ASSUMPTION-422, PRESUMPTION-451
+  Testability: testable via literature — data-provenance and research-data-management norms on baseline duplication vs re-measurement; when is a repeated census measurement and when is it noise?
+  Status: CONTESTED (15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | 15c: MONITOR -> MONITOR-417; DISPOSITION-411, 2026-07-07)
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-421
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the sewing bootstrap verification report (sewing_agent_bootstrap_2026-07-06.md), "Why this is not a third full bootstrap" section. [stated]
+      15a/15b: independent parallel literature searches (2026-07-07); 15c: dispositioned (see Status). [searched]
+    Current status: CONTESTED (MONITOR-417)
+
+ASSUMPTION-422:
+  Date identified: 2026-07-06
+  Statement: "A second row one day later, from a slightly different resolver, would add methodological noise to the trend line."
+  Context: the sewing verification run's rationale for NOT appending to connectivity_log.csv (owned by the weekly agent, which wrote its row 2026-07-05 with an independent resolver).
+  Type: methodological
+  Related decisions: none on record
+  Related items: ASSUMPTION-421, PRESUMPTION-452
+  Testability: testable via literature — measurement invariance / instrument-change effects in longitudinal studies; mixed-instrument time series validity.
+  Status: CONTESTED (15a: SUPPORTED (Strong) | 15b: CHALLENGED (Strong) | 15c: MONITOR -> MONITOR-418; DISPOSITION-412, 2026-07-07 — genuine strong/strong contest; consensus is tag-and-model the cross-resolver row, not discard it)
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-422
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the sewing bootstrap verification report, "Deliberately NOT written on this run" list. [stated]
+      15a/15b: independent parallel literature searches (2026-07-07); 15c: dispositioned (see Status). [searched]
+    Current status: CONTESTED (MONITOR-418)
+
+ASSUMPTION-423:
+  Date identified: 2026-07-06
+  Statement: "The knowledge graph remains sufficient to support thinker-agent synthesis ... The bottleneck is not connectivity."
+  Context: the sewing verification's vault-health assessment, grounded in the census delta (all +157 new pages orphans-by-design; sparse 647 and connected 47 unchanged; tradition prs_triplets.md files hold top backlink counts).
+  Type: empirical / architectural
+  Related decisions: none on record
+  Related items: PRESUMPTION-453 (whether the orphan-dominated census can support this conclusion)
+  Testability: testable empirically — correlate connectivity measures with synthesis yield (proposals, PRS triplets, cross-connections) per tradition over time.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-423
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the sewing bootstrap verification report, "Vault health assessment" section. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-424:
+  Date identified: 2026-07-06
+  Statement: "the weekly `c2a2-sewing-agent-weekly` owns ongoing orphan/sparse tracking" — therefore the one-time bootstrap task can be retired (or folded into a quarterly delta) without loss of measurement coverage.
+  Context: the sewing verification's closing recommendation to retire/reschedule the bootstrap task.
+  Type: architectural
+  Related decisions: pending — awaits Tom's decision (OPEN-114)
+  Related items: ASSUMPTION-421, PRESUMPTION-451
+  Testability: testable empirically — diff the weekly agent's measurement scope (connectivity_log.csv fields, cadence, resolver) against the bootstrap protocol's full-census scope; identify anything only the bootstrap measures.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-424
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the sewing bootstrap verification report, "Recommended action for Tom" section. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-425:
+  Date identified: 2026-07-06
+  Statement: "The .md file is the primary deliverable — it persists even if browser delivery fails."
+  Context: the Cowork→Chat evening sync design; operative today when both sync agents hit the logged-out claude.ai session (morning scrape produced a failure note; evening summary was written but NOT delivered, warning stamped in its header).
+  Type: architectural
+  Related decisions: none on record (design stated in the scheduled-task definition)
+  Related items: PRESUMPTION-454 (whether file-fallback actually preserves continuity when the failure is in the notification channel itself)
+  Testability: testable empirically — the fallback fired twice today; the open question is whether file-only delivery reaches Tom in practice (does the morning Chat context ever recover the undelivered summaries?).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-425
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the c2a2-evening-cowork-to-chat task definition and today's run behavior (both sync transcripts read directly). [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-426:
+  Date identified: 2026-07-07
+  Statement: "The Lex Fridman 'June 2026' result is unreliable — the only real Lex/Hoffman episode is #293 from June 2022. I won't propose that." — a tradition agent can reliably reject hallucinated web-search results by cross-checking them against its own knowledge of a thinker's appearance catalog.
+  Context: the Tuesday Hawkins/Hoffman proposal run; a search surfaced a purported June 2026 Lex Fridman episode with Hoffman, which the agent rejected as spurious while accepting the StarTalk/Tyson episode (2026-06-26) after two confirming searches.
+  Type: methodological
+  Related decisions: none on record — autonomous filtering behavior by a tradition agent
+  Related items: PRESUMPTION-457 (whether model priors are a valid oracle for this rejection)
+  Testability: testable empirically — audit rejected-source decisions against ground truth over time (false-rejection rate of the catalog-prior filter); testable via literature — hallucination-detection and source-triangulation practices in automated research pipelines.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-426
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the c2a2-agent-hawkins-hoffman transcript (2026-07-07), verification reasoning before writing the Hoffman proposal. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-427:
+  Date identified: 2026-07-07
+  Statement: "Since the DB has had no writes since 2026-07-06 03:55Z, there is no live writer and a torn copy is impossible — the corruption is in the source file."
+  Context: the openstory telemetry refresh run; quick_check failed on a local byte-copy with the same page-1051384 rowid errors as 2026-07-06, and the agent concluded the corruption is real (in the source), not a copy artifact, then skipped extractor retries as deterministically futile.
+  Type: empirical
+  Related decisions: none on record
+  Related items: PRESUMPTION-455 (the metabolism agent independently re-entertained the FUSE-artifact hypothesis the same morning)
+  Testability: testable empirically — the recommended native-Mac `sqlite3 quick_check` / `.recover` will confirm or refute source-file corruption directly; testable via literature — fidelity guarantees of byte-copies over network/FUSE mounts for quiescent files.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-427
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the openstory-agents-telemetry-refresh transcript (2026-07-07), corruption-diagnosis rationale. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-428:
+  Date identified: 2026-07-07
+  Statement: "Deliberately deferred and surfaced, not silent" — deferring the 117-item 15d refresh backlog for a third consecutive run is acceptable risk management so long as the deferral is explicitly reported and a remedy (dedicated backlog-burn run or 15d-cadence rethink) is recommended.
+  Context: the lit-search pipeline run's closing report, after fully dispositioning the fresh 07-06 cohort while leaving the 15d re-check backlog untouched again.
+  Type: methodological
+  Related decisions: none on record — remedy recommendation awaits scheduling (see OPEN-115)
+  Related items: PRESUMPTION-456 (whether surfaced-in-files reliably converts to human action); ASSUMPTION-425 (file-as-deliverable kin)
+  Testability: testable empirically — track whether surfaced deferrals get acted on before they cause staleness harm (15d items are re-checks of previously validated premises; how stale can they get before a premise flips unnoticed?); testable via literature — backlog decay and alert-fatigue in maintenance queues.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-428
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the c2a2-lit-search-pipeline transcript (2026-07-07), final run report. [stated]
     Current status: UNTESTED

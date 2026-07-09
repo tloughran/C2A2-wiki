@@ -69,7 +69,7 @@ Displacement vectors in semantic space, validated by Mikolov's vector arithmetic
 - Embedding-based inference
 - Vector space comparisons
 
-**Re-check due:** 2026-07-05 (Monthly) [re-checked by 15d 2026-06-07; re-queued to for_lit_search.md; prior due 2026-05-13]
+**Re-check due:** 2026-08-02 (Monthly) [re-checked by 15d 2026-07-05; re-confirmed ACTIVE by 15c 2026-07-06, DISPOSITION-408 — new caveats: per-space similarity calibration required; control document length (embedding collapse)]
 
 **Status:** ACTIVE
 
@@ -142,7 +142,7 @@ Convergence of independent lines of evidence (triangulation/overdetermination) i
 - Design of validation protocols requiring independent evidence streams
 - Future finding evaluation criteria
 
-**Re-check due:** 2026-07-05 (Monthly — monitor whether independence of C2A2 findings can be established) [re-checked by 15d 2026-06-07; re-queued; prior due 2026-05-15]
+**Re-check due:** 2026-08-02 (Monthly — monitor independence of C2A2 findings) [re-checked by 15d 2026-07-05; re-confirmed ACTIVE by 15c 2026-07-06, DISPOSITION-409 — independence proviso sharpened: correlated LLM errors (Kim et al. ICML 2025) mean same-model-family convergence is NOT independent evidence; count same-mechanism/same-family lines as one; binds REVISE-174]
 
 **Status:** ACTIVE (with standing independence caveat)
 
@@ -970,7 +970,7 @@ c2a2-self-awareness-daily missed 2 consecutive cycles on 2026-05-15 and 2026-05-
 
 **Applicable to:** OPEN-047; pipeline-reliability audit; substrate-decomposition cluster; pipeline-fault-classification protocol
 
-**Re-check due:** 2026-06-18 (Monthly)
+**Re-check due:** 2026-08-02 (Monthly) [re-confirmed ACTIVE by 15c 2026-07-06, DISPOSITION-410 — caveats: time-box classification ahead of reversible fixes; severity-filter miss alerts (2026 alert-fatigue data)]
 
 **Status:** ACTIVE
 
@@ -2216,3 +2216,9 @@ PREMISE-094:
   Re-check due: Quarterly (next 15d review; stable methodological premise)
   Status: ACTIVE
   PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-392
+
+---
+
+## 2026-07-06 — Monthly INCORPORATED-premise re-check results (15c; c2a2-lit-search-pipeline)
+
+All three due re-checks RE-CONFIRMED (no premise re-opened): PREMISE-002 (DISPOSITION-408; embedding displacement vectors — new 2025 theory support; caveats: similarity miscalibration, length collapse), PREMISE-004 (DISPOSITION-409; triangulation — Strong new support; independence proviso sharpened: same-model-family convergence is not independent evidence, cross-ref REVISE-174 and SYSTEMIC-RISK #3 of 2026-07-06), PREMISE-025 (DISPOSITION-410; missed-cycle visibility — Strong continued support; caveats: alert-fatigue filtering, time-boxed classification). Full records in lit_search_returns.md; result files use suffix _recheck-2026-07-05 in lit_search_results/{for,against}/. Next re-check due 2026-08-02.

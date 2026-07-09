@@ -38,3 +38,16 @@ SEARCH-AGAINST-PRESUMPTION-387:
   Search scope: LLM-as-judge bias and calibration. Comprehensive.
 
   Recommendation: CHALLENGED
+
+SEARCH-AGAINST-PRESUMPTION-387 (RE-TRIGGER cycle 1):
+  Date searched: 2026-07-08
+  Original item: PRESUMPTION-387
+  PROVENANCE:
+    Chain: [... -> 15c -> 15d -> 15b] (cycle 1, 2026-07-08)
+    Transform: 15d weekly re-trigger 2026-07-05; 15b refreshed disconfirmatory search
+    Current status: CHALLENGED
+  New sources since last cycle: Yes (arXiv 2602.02219 position bias in rubric-based LLM-judge; FutureAGI bias-mitigation 2026)
+  Strength of challenge: Strong
+  Summary: 2026 literature catalogs five reproducible measurable judge biases (position, verbosity, self-preference ~10-25%, format, calibration drift); position bias demonstrated in RUBRIC-based judging, on-point for a semantic-agreement adjudicator. Self-preference is worst when judge shares a model family with generators.
+  STEELMAN: An unvalidated LLM adjudicator carries a measured double-digit self-preference and rubric-level position bias, so its agreement calls have an unknown, non-trivial default error rate.
+  Recommendation: CHALLENGED / Hold Strong; require human-calibrated error-rate estimate plus randomized position/order controls before trusting adjudications.

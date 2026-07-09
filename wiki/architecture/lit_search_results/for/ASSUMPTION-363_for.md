@@ -28,3 +28,15 @@ SEARCH-FOR-ASSUMPTION-363:
   Search scope: TTL/freshness models; periodic-poll scheduling. Adequate.
 
   Recommendation: PARTIALLY-SUPPORTED
+
+SEARCH-FOR-ASSUMPTION-363 (RE-TRIGGER cycle 1):
+  Date searched: 2026-07-08
+  Original item: ASSUMPTION-363
+  PROVENANCE:
+    Chain: [... -> 15c -> 15d -> 15a] (cycle 1, 2026-07-08)
+    Transform: 15d weekly re-trigger 2026-07-05; 15a refreshed supportive search
+    Current status: SUPPORTED
+  New sources since last cycle: Yes (HackerNoon polling tradeoffs; arXiv 2603.09738; Altss cadence glossary)
+  Strength of support: Moderate
+  Summary: Refresh-cadence literature reaffirms matching cadence to source change-rate ('slowest acceptable cadence'); a 6-hourly poll of a slowly-changing local vault sits comfortably within guidance. 'App-open/local-only' caveats are operational, not principle-violating. Trajectory stable.
+  Recommendation: SUPPORTED / Hold Moderate; cadence value well-justified by change-rate matching.

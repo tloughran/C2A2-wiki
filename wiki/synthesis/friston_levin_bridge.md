@@ -37,3 +37,28 @@ This is the cleanest empirical bridge between the two programs currently surface
 **Intersection page:** [[2026-06-15_levin_top-down-membrane-potential-transcription]] (Cervera, Levin & Mafe 2026)
 **Synthesis claim:** Resting membrane potential (Vmem) modeled as a top-down control variable over transcription is a concrete biophysical substrate for "morphogenetic active inference": Vmem functions as a prior over transcriptional states, with lower-level molecular dynamics minimizing surprise against that prior.
 **Open question the wiki cannot yet answer:** Is the Vmem→transcription feedback loop *formally* a free-energy gradient, or only analogically one — can the Cervera-Levin-Mafe model be rewritten as an active-inference scheme with an explicit generative model and prediction error?
+
+
+---
+
+*Added by Sewing Agent on 2026-07-05*
+
+**Intersecting orphan (1):** `inbox/proposals/approved/2026-06-29_levin_embedding-space-remapping.md` (PROP-2026-06-29-001)
+
+**Why it sits at the intersection:** Levin (Hartl, Pio-Lopez, Fields & Levin) reduces cognition to two coupled invariants — *remapping* an embedding space and *navigating* it via distributed error minimization. Friston's active inference casts perception-action as gradient descent on variational free energy over a generative model's latent space.
+
+**Synthesis claim:** Levin's "navigation via error minimization over a remappable embedding space" is plausibly a generalized restatement of FEP dynamics over representational manifolds — the same operation (error-minimizing traversal of a latent space) named in a substrate-agnostic vocabulary. If so, the diverse-intelligence "remap-and-refine" loop and active inference are one mechanism, and the remapping step corresponds to updating the generative model itself.
+
+**Open question the wiki cannot yet answer:** Is *remapping* (changing the embedding space) reducible to Friston's model-update, or is it a distinct operation the FEP does not natively capture — i.e., does active inference already contain the capacity to restructure its own state-space, or only to navigate a fixed one?
+
+---
+
+*Added by Sewing Agent on 2026-07-05*
+
+**Intersecting orphan (2):** `inbox/proposals/approved/2026-06-29_friston_self-orthogonalizing-attractors.md` (PROP-2026-06-29-003)
+
+**Why it sits at the intersection:** Spisak & Friston derive self-orthogonalizing attractor networks from the FEP applied to a Markov-blanket partition — attractors *emerge* rather than being engineered. Levin's morphogenetic work treats stable target morphologies as attractors of a bioelectric, error-minimizing collective (Levin PRS-03).
+
+**Synthesis claim:** Both describe stable target states as attractors of a free-energy-minimizing collective — Friston deriving memory attractors from a universal partition, Levin's cells navigating to an anatomical attractor. This is a candidate deep convergence: morphogenesis and content-addressable memory as the *same* class of FEP-derived attractor dynamics on different substrates.
+
+**Open question the wiki cannot yet answer:** Does the self-orthogonalization result predict anything about *biological* pattern memory — e.g., whether bioelectric target-morphology "memories" are orthogonalized to resist interference the way the derived neural attractors are?
