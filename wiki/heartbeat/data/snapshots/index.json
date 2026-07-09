@@ -1,7 +1,20 @@
 {
-  "generated": "2026-07-08",
-  "count": 17,
+  "generated": "2026-07-09",
+  "count": 18,
   "snapshots": [
+    {
+      "date": "2026-07-09",
+      "time": "13:41 UTC",
+      "sort_key": "20260709134120",
+      "generated_at": "2026-07-09T13:41:20Z",
+      "file": "digest-20260709-134120.json",
+      "window": "weekly",
+      "signals": 10,
+      "items_checked": 234,
+      "sources_reached": 19,
+      "high_relevance": 4,
+      "primary_themes": "Governance Policy + Market Platform"
+    },
     {
       "date": "2026-07-08",
       "time": "12:11 UTC",
