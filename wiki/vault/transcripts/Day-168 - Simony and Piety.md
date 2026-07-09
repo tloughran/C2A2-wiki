@@ -16,15 +16,17 @@ fetch_path: youtube-transcript-api (bash sandbox)
 fidelity_checked: true
 synthesis: "[[Day-168 - Simony and Piety - Contemporary]]"
 tags: [summa, day/168, pars/II-II, q/100-101]
-last_qc_at: "2026-06-24T20:20:14"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-08T04:24:26"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 168 — Simony and Piety
 
 Austin Habash's Day 168 episode of the *Summa* podcast covers Aquinas's Secunda Secundae, Q.100-101.
 
-[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa nira podcast, where we study St. Thomas Aquinas, a suma
+> Typo cleanup: Summa nira → Summa in a Year (ASR intro-name garble); Aquinas, a suma → Aquinas's Summa.
+
+[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
 Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the
 

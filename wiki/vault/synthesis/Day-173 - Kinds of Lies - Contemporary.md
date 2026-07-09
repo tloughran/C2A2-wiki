@@ -18,7 +18,7 @@ evidence_strength_summary: "Deception/honest-signaling dynamics are empirical/ga
 mind_first_reframe: "Speech is the channel through which perspective-limited agents pool what only they can see, so a lie is the deliberate corruption of that shared signaling channel — and its gravity scales with the harm that corruption does to the cooperative model."
 central_theme_thread: "If loving unity is computed by agents pooling what each can see, truthful speech is the medium of the computation and the lie its sabotage; the hypocrite is a corrupted node whose every output must be discounted and who risks losing the self-knowledge needed to receive correction."
 tags: [synthesis, day/173, theme/deception-gradient, theme/hypocrisy, q/110, q/111]
-last_qc_at: "2026-06-24T20:20:28"
+last_qc_at: "2026-07-08T06:27:53"
 last_qc_outcome: "pass"
 ---
 

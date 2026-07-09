@@ -16,7 +16,7 @@ evidence_strength_summary: "Anger-as-calibrated-signal with a non-zero optimum =
 mind_first_reframe: "Anger is a functional signal that flags injury to a valued order and mobilizes a corrective response; its virtue is calibration — fired at real injustice, sized to it, aimed at repair — so both excess (vengeance for the self) and defect (no response to real injustice) are failures. Cruelty is the corrective signal still tracking (disordered) justice but with the brake removed; savagery is harm pursued for its own reward, a different system entirely."
 central_theme_thread: "Rightly-tuned anger is one of the ways a limited perspective serves the whole: it defends the bound order against injury. The disorder is not the signal but its capture by the self — anger for one's own vanity rather than for the order that unites agents."
 tags: [synthesis, day/197, theme/calibrated-signal]
-last_qc_at: "2026-06-28T02:28:01"
+last_qc_at: "2026-07-08T14:27:04"
 last_qc_outcome: "pass"
 ---
 

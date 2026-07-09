@@ -15,8 +15,8 @@ fetched_at: 2026-05-14
 fetch_path: youtube-transcript-api (re-fetch after 2026-05-10 fetch-failed placeholder)
 synthesis: "[[Day-071 - Moral Consequences - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-22T05:48:03"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-08T08:24:42"
+last_qc_outcome: "rewrote"
 render_pass: auto-initial-2026-05-14  # auto-rendered to replace fetch-failed placeholder; structural Article-N headers + Notes section pending per Days 49–60 precedent
 tags: [summa, day/071, pars/I-II, q/20, q/21]
 ---
@@ -26,15 +26,15 @@ tags: [summa, day/071, pars/I-II, q/20, q/21]
 > Series: *Summa in a Year* by Austin Habash. Day 71 of 308.
 > Summa reference: *Prima Secundae, Q.20 + Q.21*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baanus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baanus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC sweep 2026-07-08: Su podcast -> Summa podcast; aquan suuma -> Aquinas's Summa; Summa near podcast -> Summa in a Year podcast; Prima suunde -> Prima Secundae; a Maria press -> Ave Maria Press (x2). This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Su podcast where we study St Thomas aquan suuma Theologiae in a way simple and insightful for anyone to understand the Summa near podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 71 so let's get started we're covering today questions 20 and 21 of the Prima suunde that is of goodness and Malice and external human actions and of the
+[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa in a Year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 71 so let's get started we're covering today questions 20 and 21 of the Prima Secundae that is of goodness and Malice and external human actions and of the
 
-[00:00:38] consequences of human actions by reason of their goodness and Malice the translation that I always use in these podcasts is the one generously provided to me by a Maria press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from a Maria press's site by typing in the code
+[00:00:38] consequences of human actions by reason of their goodness and Malice the translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code
 
 [00:00:58] Summa 10 and so here we go article one whether goodness or malice is first in the action of the will or in the external action when it comes to theft is the evil of that action first in the act of willing it or in the external action itself and in so far as the will is the cause of the external Act of theft it is prior to the execution of that act however in so far as that external Act was first proposed to the will by the mind which Wills what the
 

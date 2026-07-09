@@ -6,6 +6,7 @@ length_target_words: 1500
 length_actual_words: 1160
 length_ratio_to_target: 0.77
 length_tier: short
+length_note: "Under short-tier target by design — Q.116 (quarreling) and Q.117 (liberality) are short annexed articles fully and non-redundantly treated; short-and-substantive preferred over padding per the length policy."
 mind_first_reframe: "Under mind/conscious-realist monism the question becomes one about the size of the self: quarreling and liberality both answer how far an agent's circle of care extends and whether its conduct widens that circle or starves it."
 central_theme_thread: "Liberality is a plain down-payment on loving unity — acting as though the boundary between my good and yours were already thinner than fear insists — while the quarrelsome agent defends a small self against a world it meets as adversary."
 karpathy_wiki_sources:
@@ -16,8 +17,8 @@ karpathy_wiki_sources:
   - "Wright canonical: koinonia / the grace of giving (2 Cor 8-9); Rohr canonical: the non-grasping True Self (Falling Upward)"
 evidence_strength_summary: "Self-boundary scaling and bond-building are empirical/formal (Levin, Fredrickson); generosity-as-real-pattern is formal (Carroll); giving-as-grace is theological (Wright, Rohr)."
 tags: [synthesis, day/176, theme/self-boundary, theme/generosity, q/116, q/117]
-last_qc_at: "2026-06-29T18:28:20"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-08T06:27:55"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 176 — Quarreling and Liberality (Contemporary)

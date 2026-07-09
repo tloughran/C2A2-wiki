@@ -6,6 +6,7 @@ length_target_words: 1500
 length_actual_words: 614
 length_tier: short
 length_ratio_to_target: 0.41
+length_note: "Runs ~59% under the short tier (614 vs 1500): held to the PRS argument for a single narrow question (III Q.87) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (active inference as continuous free-energy reduction, not on/off)"
   - "traditions/hawkins/prs_triplets.md (PRS-06 hierarchical/heterarchical predictive memory; corrections propagate across levels)"
@@ -14,8 +15,8 @@ evidence_strength_summary: "Graded-rather-than-binary repair is formal (Friston 
 mind_first_reframe: "Remission of venial sin is graded because corrective repair is continuous free-energy reduction (Friston) with disorder unwound level by level across a layered predictive memory (Hawkins), not a binary switch."
 central_theme_thread: "A finite perspective reduces its divergence from the whole by degrees with the resources it perceives, lesser disorders dissolving continuously as the larger reordering toward loving unity proceeds."
 tags: [synthesis, day/256, theme/graded-repair]
-last_qc_at: "2026-06-25T22:27:37"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-07T22:29:27"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 256 — Remitted Venial Sin (Contemporary Parallel)

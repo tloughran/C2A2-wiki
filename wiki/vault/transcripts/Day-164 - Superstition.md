@@ -15,8 +15,8 @@ fetched_at: 2026-05-28
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-164 - Superstition - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-19T16:23:59"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-08T04:24:03"
+last_qc_outcome: "rewrote"
 tags: [summa, day/164, pars/II-II, q/92–93]
 ---
 
@@ -24,9 +24,11 @@ tags: [summa, day/164, pars/II-II, q/92–93]
 
 Austin Habash's Day 164 episode of the *Summa* podcast covers Aquinas's Secunda Secundae, Q.92–93.
 
-[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa nira podcast, where we study St. Thomas Aquinas's Summa
+> Typo cleanup: Summa nira → Summa in a Year (×2, ASR intro-name garble); Theologia → Theologiae; Habish → Habash; sukunda sukund → Secunda Secundae.
 
-Theologia in a way simple and insightful for anyone to understand. The Summa nira podcast is brought to you by Think Catholic. Taking two questions of the
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
+
+Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa Day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 164. So let's get started.
 
@@ -100,7 +102,7 @@ reckoned, excessive and superstitious. [06:17] And with that, we close another e
 
 vices opposed to religion beginning with superstition by way of excess and of superstition consisting in undue worship of the true god. My name is Austin
 
-Habish with think catholic and I cannot wait to see you tomorrow. [Music]
+Habash with Think Catholic and I cannot wait to see you tomorrow. [Music]
 
 ## Notes
 - Superstition is a vice against religion *by excess* — not in *amount* of worship, but in *direction* (worshipping what shouldn't be worshipped) or *manner* (worshipping rightly worshipped objects wrongly).

@@ -16,13 +16,14 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-192 - Gluttony and Sobriety - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/192, pars/II, q/148]
-last_qc_at: "2026-06-18T16:20:31"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-08T12:21:50"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 192 — Gluttony & Sobriety
 
 > Typo cleanup (QC sweep 2026-06-12): suma → Summa (episode intro). Verified against raw ASR refetched 2026-06-12.
+> Typo cleanup (QC sweep 2026-07-08): hell → health and raisth → raiseth (within the Sirach 31 quote Habash reads, restored per Douay-Rheims "Sober drinking is health to soul and body... Wine drunken with excess raiseth quarrels"); Sobriby → Sobriety and sobbriety → sobriety (within the Aquinas quotes, Q.149 a.1 and a.2); foresalls → forestalls and immodderate → immoderate (within the Gregory quote, Q.148 a.4); unsemly → unseemly; overeing → overeating; pole → pull (of the pleasures of the table, a.5). All verified against raw ASR refetched 2026-07-08.
 
 *Aquinas treats gluttony (Q.148), the inordinate desire for food that displaces reason, and sobriety (Q.149), the special virtue moderating drink — that which most readily clouds the mind.*
 
@@ -68,11 +69,11 @@ to the sins which gluttony causes, such as those pertaining to lust, even here, 
 
 [03:16] these other sins to which it leads one to. Article four, whether the species of gluttony are fittingly distinguished. In brief, which we can then explain,
 
-Aquinas writes, Gregory says, "The vice of gluttony tempts us in five ways. Sometimes it foresalls the hour of need. Sometimes it seeks costly meats.
+Aquinas writes, Gregory says, "The vice of gluttony tempts us in five ways. Sometimes it forestalls the hour of need. Sometimes it seeks costly meats.
 
 Sometimes it requires the food to be daintily cooked. Sometimes it exceeds the measure of refreshment by taking too much. Sometimes we sin by the very heat
 
-[03:44] of an immodderate appetite which are contained in the following words. Hastily, sumptuously, too much daintily and greedily. These are the kinds of
+[03:44] of an immoderate appetite which are contained in the following words. Hastily, sumptuously, too much daintily and greedily. These are the kinds of
 
 gluttony that are divided into vices attendant upon the activity of eating which includes hastily and greedily. Then the other kind of gluttonous vices
 
@@ -86,17 +87,17 @@ That's Aquinas's words. And because the pleasures of food and drink are quite en
 
 a capital vice. Because the pleasure attendant upon touch, and here in particular, taste can easily appear as a counterfeit beatitude. Instead of the
 
-beatitude and pleasure our heart is ultimately made for which is that which comes from the vision of God. Therefore because of the power of the pole of the
+beatitude and pleasure our heart is ultimately made for which is that which comes from the vision of God. Therefore because of the power of the pull of the
 
 [04:58] pleasures of the table which calls forth other vices in its wake or for its sake gluttony is numbered among the capital vices. Article six whether six daughters
 
 are fittingly assigned to gluttony. And it looks like from the article there are five daughter sins. four relating to the soul and one to the body. The daughter
 
-sin relating to the body is uncleanliness which stems from what we've said about the connection between gluttony and lust that overeing can then
+sin relating to the body is uncleanliness which stems from what we've said about the connection between gluttony and lust that overeating can then
 
 [05:26] cause the uncleanliness of nocturnal seminal emissions. Then when it comes to the soul overeating affects dullness of mind by burdening the body can also
 
-cause unsemly joy or a riotous random joy. That's what Aquinas says here. Because one's appetite is disordered by gluttony. Also through the vice of
+cause unseemly joy or a riotous random joy. That's what Aquinas says here. Because one's appetite is disordered by gluttony. Also through the vice of
 
 gluttony, one may be given to intemperate speech and action which is called loquaciousness. When it comes to speech and indeed in acting without due
 
@@ -108,9 +109,9 @@ the matter of sobriety. Sobriety could be said to be a virtue pertaining to drin
 
 [06:26] volatile dangerous to man and therefore needs a virtue to keep it in check and that is alcoholic drink. Even scripture bears witness to the danger of
 
-intoxicating drink. As the book of Sirach taught, sober drinking is hell to soul and body. Wine drunken with excess raisth quarrels and wrath and many
+intoxicating drink. As the book of Sirach taught, sober drinking is health to soul and body. Wine drunken with excess raiseth quarrels and wrath and many
 
-ruins. Thus, in response to article, St. Thomas writes, "Sobriby is especially concerned with drink, not any kind of drink, but that which by reason of its
+ruins. Thus, in response to article, St. Thomas writes, "Sobriety is especially concerned with drink, not any kind of drink, but that which by reason of its
 
 [06:56] volatility is liable to disturb the brain, such as wine and all intoxicants." Article two, whether sobriety is by itself a special virtue.
 
@@ -118,7 +119,7 @@ St. Thomas answers this article briefly. So simply quoting him, he writes, "It b
 
 which may hinder it. Hence, wherever we find a special hindrance to reason, there must need to be a special virtue to remove it. Now intoxicating drink is
 
-a special kind of hindrance to the use of reason. Wherefore, in order to remove this hindrance to reason, a special virtue, which is sobbriety, is
+a special kind of hindrance to the use of reason. Wherefore, in order to remove this hindrance to reason, a special virtue, which is sobriety, is
 
 [07:31] requisite." Article three, whether the use of wine is altogether unlawful. Wine is not an evil in itself. For St. Paul advised Timothy, "Do not still drink
 

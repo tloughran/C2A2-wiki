@@ -8,7 +8,7 @@ length_ratio_to_target: 0.87
 length_tier: short
 length_note: "0.87x short target — full coverage of Q.136-137 including the a.4 gift-of-perseverance keystone; complete-not-truncated (short-and-substantive)."
 karpathy_wiki_sources:
-  - "traditions/fredrickson/wiki.md + prs_triplets.md (PRS-05 broadened attention; broaden-and-build track record)"
+  - "traditions/fredrickson/wiki.md (broaden-and-build track record: attentional broadening under positive affect)"
   - "traditions/friston/wiki.md + prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence)"
   - "traditions/mcgilchrist/wiki.md (PRS-05 attention as ontological act)"
   - "traditions/stump/wiki.md (fortitude-in-suffering; Thomistic interlocutor)"
@@ -18,8 +18,8 @@ evidence_strength_summary: "Broaden-and-build = empirical (high); active inferen
 mind_first_reframe: "Patience and perseverance are one self-regulatory competence viewed along two axes — holding a far-horizon goal-prior above the narrowing pull of sorrow (affect) and across the decay of delay (time)."
 central_theme_thread: "Perseverance is the name for working out salvation in fear and trembling under temporal scarcity — a limited perspective computing toward loving unity across time it cannot compress, aware of its need for guidance from one who perceives more of the whole."
 tags: [synthesis, day/186, theme/persistence-under-time]
-last_qc_at: "2026-06-27T06:26:00"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-08T10:30:17"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 186 — Patience & Perseverance (Contemporary Parallel)
@@ -36,7 +36,7 @@ Name the inquiry-problem that shows up in both frames: **persistence under resou
 
 The emerging paradigm supplies three converging moves, and they line up almost exactly with Aquinas's two-front analysis (sorrow, then time).
 
-For the *sorrow* front, the leading resource is the broaden-and-build program recorded in the Fredrickson-tradition wiki. Its core empirical finding is that negative states narrow attentional scope and positive states broaden it — and that broadened states *build durable resources* (PRS-05 in that wiki, on broadened attention, makes the point that positive affect changes what an agent can even take in). Patience, on this reading, is not grim endurance but the regulatory capacity that prevents sorrow from collapsing the attentional field down to the immediate pain. That maps onto what the cross-program index calls the attention cluster (CROSS-003: Fredrickson, Friston, McGilchrist, Hoffman describing one phenomenon at four levels).
+For the *sorrow* front, the leading resource is the broaden-and-build program recorded in the Fredrickson-tradition wiki. Its core empirical finding is that negative states narrow attentional scope and positive states broaden it — and that broadened states *build durable resources* (the broaden-and-build track record in that wiki makes the point that positive affect changes what an agent can even take in). Patience, on this reading, is not grim endurance but the regulatory capacity that prevents sorrow from collapsing the attentional field down to the immediate pain. That maps onto what the cross-program index calls the attention cluster (CROSS-003: Fredrickson, Friston, McGilchrist, Hoffman describing one phenomenon at four levels).
 
 For the *time* front, the leading resource is active inference as recorded in the Friston-tradition wiki. An agent persists, in this framework, by holding a far-horizon prior (a "target morphology," in the morphogenetic register of PRS-03/PRS-08) and weighting it above the high-precision, near-term prediction errors that would otherwise redirect it. Perseverance is precisely deep-policy precision: keeping the distant goal-prior load-bearing when the local evidence is all cost. And McGilchrist's account — attention as an ontological act, the right hemisphere holding the living whole against the left hemisphere's fragmenting immediacy (PRS-05 in the McGilchrist-tradition wiki) — names the phenomenology of the same thing: the patient agent keeps the *whole* in view.
 
@@ -56,7 +56,7 @@ This article is one of the cleanest places the project's central claim surfaces 
 
 ## Bridges
 
-- **Broaden-and-build ↔ patience-against-sorrow** — the Fredrickson-tradition wiki, broaden-and-build track record + PRS-05. *Why:* gives an empirical mechanism for why sorrow threatens the "good of reason" (attentional narrowing) and how it is countered. Evidence: **empirical, high**.
+- **Broaden-and-build ↔ patience-against-sorrow** — the Fredrickson-tradition wiki, broaden-and-build track record. *Why:* gives an empirical mechanism for why sorrow threatens the "good of reason" (attentional narrowing) and how it is countered. Evidence: **empirical, high**.
 - **Active inference ↔ perseverance-across-time** — the Friston-tradition wiki, PRS-04/PRS-06/PRS-08. *Why:* persistence = weighting a far-horizon prior above near-term error; the formal account of holding a goal under delay. Evidence: **formal, medium**.
 - **Attention as ontological act ↔ keeping the whole in view** — the McGilchrist-tradition wiki, PRS-05; CROSS-003. *Why:* the patient agent attends to the living whole rather than the fragmenting immediate. Evidence: **empirical/phenomenological, medium**.
 - **Fortitude-in-suffering** — the Stump-tradition wiki. *Why:* keeps the synthesis honest to Aquinas's own ranking (patience is annexed, not cardinal) and to suffering as a site of union. Evidence: **theological/philosophical**.

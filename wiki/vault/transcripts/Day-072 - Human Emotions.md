@@ -15,8 +15,8 @@ fetched_at: 2026-05-14
 fetch_path: youtube-transcript-api (re-fetch after 2026-05-10 fetch-failed placeholder)
 synthesis: "[[Day-072 - Human Emotions - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-22T05:48:03"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-08T08:24:42"
+last_qc_outcome: "rewrote"
 render_pass: auto-initial-2026-05-14  # auto-rendered to replace fetch-failed placeholder; structural Article-N headers + Notes section pending per Days 49–60 precedent
 tags: [summa, day/072, pars/I-II, q/22, q/23]
 ---
@@ -26,15 +26,15 @@ tags: [summa, day/072, pars/I-II, q/22, q/23]
 > Series: *Summa in a Year* by Austin Habash. Day 72 of 308.
 > Summa reference: *Prima Secundae, Q.22 + Q.23*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC sweep 2026-07-08: Aquinas assumma -> Aquinas's Summa; Summa in your podcast -> Summa in a Year podcast; Prima suun day -> Prima Secundae; a Maria press -> Ave Maria Press (x2). This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas assumma Theologiae in a way simple and insightful for anyone to understand the Summa in your podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is Day 72 so let's get started we're covering today questions 22 and 23 of the Prima suun day that is of the subject of the Soul's passions and how
+[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa in a Year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is Day 72 so let's get started we're covering today questions 22 and 23 of the Prima Secundae that is of the subject of the Soul's passions and how
 
-[00:00:37] the passions differ from one another the translation that I always use in these podcasts is the one generously provided to me by a Maria press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from a Maria press site by typing in the code
+[00:00:37] the passions differ from one another the translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from Ave Maria Press site by typing in the code
 
 [00:00:56] Summa 10 and so here we go article one whether any passion is in the soul this
 

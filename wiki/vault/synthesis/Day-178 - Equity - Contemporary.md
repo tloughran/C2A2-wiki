@@ -17,8 +17,8 @@ karpathy_wiki_sources:
   - "Wright canonical: Sabbath made for man (Mark 2:27), letter vs Spirit (2 Cor 3:6); Rohr canonical: law in service of love"
 evidence_strength_summary: "Hemispheric account of letter-vs-intent is empirical/interpretive (McGilchrist); laws-as-higher-level-stories is formal (Carroll); nested-self piety is formal-analogical (Levin); spirit-over-letter is theological (Wright, Rohr)."
 tags: [synthesis, day/178, theme/equity, theme/letter-and-intent, q/120, q/121]
-last_qc_at: "2026-06-30T14:27:03"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-08T16:22:38"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 178 — Equity (Contemporary)
@@ -41,7 +41,7 @@ The leading move comes from **McGilchrist**. In Tom's PRS-form record of his wor
 
 For piety, **Levin's** nested-agency model supplies the resource. In Tom's PRS-form record of his work, selves are nested: cells compose tissues compose organisms, each larger agent real and owed something by its parts. Piety names the human-scale recognition of this — that the agent is constituted by larger wholes (parents, people, place) which have a genuine claim on it precisely because the agent's very capacities were grown within them. Reverence here is not sentiment but the accurate registration of one's own dependent, nested constitution.
 
-**Stump** enters as Thomistic interlocutor: *epikeia* as attention to the second-personal point of the law — the persons the law is for — so that justice is never reduced to the impersonal matching of case to clause.
+**Stump**'s work on the second-personal character of Thomistic justice keeps *epikeia* pointed at the persons the law is for, so that justice is never reduced to the impersonal matching of case to clause.
 
 **Wright** grounds the scriptural form: "the Sabbath was made for man, not man for the Sabbath" (Mark 2:27) is equity itself on Jesus's lips, and Paul's "the letter kills, but the Spirit gives life" (2 Cor 3:6) names the whole dynamic. **Rohr** gives the contemplative form: law as servant of love, never its master — the contemplative reads every rule back to the love it was meant to protect.
 

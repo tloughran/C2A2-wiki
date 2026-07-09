@@ -17,7 +17,7 @@ evidence_strength_summary: "Punishments-as-cascade-of-a-nested-control-failure =
 mind_first_reframe: "The punishments of the first sin are the systemic consequences of a hierarchically integrated system losing its top-level constraint: once the highest subordination (will to the order above it) defects, the lower subordinations — passions to reason, body to soul, environment to agent — lose their integrating constraint and disorder propagates downward; death is the terminal loss of the integration that held the body together. The temptation-order is the same hierarchy perturbed from the bottom up."
 central_theme_thread: "If union is a nested integration of perspectives under the whole, the fall is what happens when the top of that nesting absolutizes itself: integration fails downward into disorder. Yet the disorder is the beginning of a path — order-disorder-reorder — back toward a deeper union, which is why the project frames salvation as a computation worked out under guidance, in fear and trembling."
 tags: [synthesis, day/200, theme/hierarchical-cascade]
-last_qc_at: "2026-06-27T18:27:24"
+last_qc_at: "2026-07-08T20:20:27"
 last_qc_outcome: "pass"
 ---
 

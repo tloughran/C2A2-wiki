@@ -16,13 +16,15 @@ fetched_at: 2026-05-31
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-180 - Timidity - Contemporary]]"
 tags: [summa, day/180, pars/II-II, q/124-125]
-last_qc_at: "2026-06-25T00:19:04"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-08T08:24:58"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 180 — Timidity
 
 > Austin Habash, *Think Catholic* — Summa Theologiae in a Year, Secunda Secundae, Q.124-125.
+
+> Typo cleanup (QC sweep 2026-07-08): a Maria press -> Ave Maria Press (x2); Cyprien -> Cyprian; "unearly battle" -> "unearthly battle" (restored from the Dominican Fathers translation of ST II-II Q.124 a.2, verified against newadvent.org).
 
 [00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast where we study St. Thomas Aquinas Summa
 
@@ -32,9 +34,9 @@ Summa a day will seek to summarize St. Thomas's responses, discovering the brill
 
 We're covering today questions 124 125 of the Secunda Secundae that is of martyrdom and of fear cowardice. The translation that I always use in these
 
-[00:39] podcasts is the one generously provided to me a Maria press the five volume set translated by the fathers of the English Dominican province which you can now get
+[00:39] podcasts is the one generously provided to me, Ave Maria Press, the five volume set translated by the fathers of the English Dominican province which you can now get
 
-at a discounted price from a Maria Press's site by typing in the code Summa 10. And so here we go. Article one, whether martyrdom is an act of virtue.
+at a discounted price from Ave Maria Press's site by typing in the code Summa 10. And so here we go. Article one, whether martyrdom is an act of virtue.
 
 Our Lord taught, "Blessed are those who are persecuted for righteousness sake, for theirs is the kingdom of heaven." Thus, according to Christ, martyrdom is
 
@@ -48,7 +50,7 @@ and our will to affect justice. Article two whether martyrdom is an act of forti
 
 down death bravely and for the sake of justice and truth readily exposes his body to the danger of death. Hence, it is very clear that martyrdom is an act
 
-[01:51] of fortitude. As Aquinas puts it, Cyprien says in a sermon, "The crowd of onlookers wondered to see an unearly battle and Christ's servants fighting
+[01:51] of fortitude. As Aquinas puts it, Cyprian says in a sermon, "The crowd of onlookers wondered to see an unearthly battle and Christ's servants fighting
 
 erect, undaunted in speech, with souls unmoved and strength divine. Wherefore, it is evident that martyrdom is an act of fortitude." Article three. whether
 

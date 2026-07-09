@@ -6,6 +6,7 @@ length_target_words: 1500
 length_actual_words: 727
 length_tier: short
 length_ratio_to_target: 0.48
+length_note: "Runs ~52% under the short tier (727 vs 1500): held to the PRS argument for a single question (III Q.89) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-03 target morphology; pattern-completion / regenerative restoration of target form)"
   - "traditions/friston/prs_triplets.md (PRS-04 goal-directedness; history-shaped priors / path-dependence)"
@@ -15,8 +16,8 @@ evidence_strength_summary: "Restoration-as-pattern-completion is empirical-in-do
 mind_first_reframe: "Penitential restoration is regenerative return to a persisting target form (Levin pattern-completion), and because the recovered prior is history-shaped (Friston) it need not equal the lost one — it may run deeper for having corrected through error."
 central_theme_thread: "Restoration is the whole drawing a deviated, perspective-limited part back into membership and, in the drawing, deepening its share — Wright's 'salvation as inclusion' enacted as restored covenant membership, Rohr's 'falling upward' naming why the return can surpass the start."
 tags: [synthesis, day/257, theme/regenerative-restoration]
-last_qc_at: "2026-06-25T22:27:37"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-07T22:29:28"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 257 — Penitential Restoration (Contemporary Parallel)

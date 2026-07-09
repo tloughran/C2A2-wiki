@@ -16,7 +16,7 @@ karpathy_wiki_sources:
   - "Rohr canonical: the Universal Christ's abundance, grace overflowing; creation as God's magnificent work (The Universal Christ); Wright canonical: building for the kingdom, works that last into new creation (Surprised by Hope)"
 evidence_strength_summary: "Broaden-and-build and the scarcity-prior account are empirical/formal (Fredrickson, Friston); the claim that great works participate in a divine abundance and last into new creation is theological (Rohr, Wright)."
 tags: [synthesis, day/184, theme/magnificence, theme/generative-overflow, q/134, q/135]
-last_qc_at: "2026-06-25T04:20:04"
+last_qc_at: "2026-07-08T10:30:05"
 last_qc_outcome: "pass"
 ---
 

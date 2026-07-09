@@ -16,25 +16,27 @@ fetched_at: 2026-05-31
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-177 - Covetousness - Contemporary]]"
 tags: [summa, day/177, pars/II-II, q/118-119]
-last_qc_at: "2026-06-25T00:19:02"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-08T08:24:57"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 177 — Covetousness
 
 > Austin Habash, *Think Catholic* — Summa Theologiae in a Year, Secunda Secundae, Q.118-119.
 
+> Typo cleanup (QC sweep 2026-07-08): a Maria Press -> Ave Maria Press (x2); "is day 77" -> "is day 177" (ASR dropped the leading digit of the episode number).
+
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa
 
 Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the
 
-Summa a day will seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith is day 77. So let's get started.
+Summa a day will seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith is day 177. So let's get started.
 
 We're covering today questions 118 119 of the Secunda Secundae that is of covetousness and of prodigality. The translation that I always use in these
 
-[00:41] podcasts is the one generously provided to me by a Maria Press. The five volume set translated by the fathers of the English Dominican province which you can
+[00:41] podcasts is the one generously provided to me by Ave Maria Press. The five volume set translated by the fathers of the English Dominican province which you can
 
-now get at a discounted price from a Maria Press's site by typing in the code Summa 10. And so here we go. Article one, whether covetousness is a sin,
+now get at a discounted price from Ave Maria Press's site by typing in the code Summa 10. And so here we go. Article one, whether covetousness is a sin,
 
 liberality is the virtue of which we will now be looking at the deficiency and the excess vices contrary to that virtue. Covetousness is a vice opposed
 

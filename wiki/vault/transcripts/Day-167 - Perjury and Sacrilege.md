@@ -16,15 +16,17 @@ fetch_path: youtube-transcript-api (bash sandbox)
 fidelity_checked: true
 synthesis: "[[Day-167 - Perjury and Sacrilege - Contemporary]]"
 tags: [summa, day/167, pars/II-II, q/98-99]
-last_qc_at: "2026-06-12T04:29:20"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-08T04:24:17"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 167 — Perjury and Sacrilege
 
 Austin Habash's Day 167 episode of the *Summa* podcast covers Aquinas's Secunda Secundae, Q.98-99.
 
-[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa nira podcast, where we study St. Thomas Aquinas's Summa
+> Typo cleanup: Summa nira → Summa in a Year (ASR intro-name garble).
+
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
 Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the
 

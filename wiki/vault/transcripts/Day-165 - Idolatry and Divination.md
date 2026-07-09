@@ -15,8 +15,8 @@ fetched_at: 2026-05-28
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-165 - Idolatry and Divination - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-19T16:23:59"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-08T04:24:04"
+last_qc_outcome: "rewrote"
 tags: [summa, day/165, pars/II-II, q/94–95]
 ---
 
@@ -24,9 +24,11 @@ tags: [summa, day/165, pars/II-II, q/94–95]
 
 Austin Habash's Day 165 episode of the *Summa* podcast covers Aquinas's Secunda Secundae, Q.94–95.
 
-[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa nira podcast, where we study St. Thomas Aquinas's Summa
+> Typo cleanup: Summa nira → Summa in a Year (×2, ASR intro-name garble); theologia → Theologiae.
 
-theologia in a way simple and insightful for anyone to understand. The Summa nira podcast is brought to you by Think Catholic. Taking two questions of the
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
+
+Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa a day will seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith is day 165. So, let's get started.
 

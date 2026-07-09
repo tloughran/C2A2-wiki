@@ -16,19 +16,21 @@ fetch_path: youtube-transcript-api (bash sandbox)
 fidelity_checked: true
 synthesis: "[[Day-166 - Testing God - Contemporary]]"
 tags: [summa, day/166, pars/II-II, q/96-97]
-last_qc_at: "2026-06-12T00:28:49"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-08T04:24:16"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 166 — Testing God
 
 Austin Habash's Day 166 episode of the *Summa* podcast covers Aquinas's Secunda Secundae, Q.96-97.
 
-[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa nira podcast, where we study St. Thomas Aquinas, assuma
+> Typo cleanup: Summa nira → Summa in a Year (×2, ASR intro-name garble); Aquinas, assuma → Aquinas's Summa; day 66 → day 166 (ASR dropped the leading 1; episode is Day 166).
 
-Theologiae in a way simple and insightful for anyone to understand. The Summa nira podcast is brought to you by Think Catholic. Taking two questions of the
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
-Summa a day, we'll seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith. Is day 66. So let's get started.
+Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
+
+Summa a day, we'll seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith. Is day 166. So let's get started.
 
 We're covering today questions 96 and 97 [00:33] of the Secunda Secundae that is of superstition in observances and irreligion i.e. by way of deficiency of
 

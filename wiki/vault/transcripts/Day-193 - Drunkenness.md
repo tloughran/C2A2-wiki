@@ -16,13 +16,14 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-193 - Drunkenness - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/193, pars/II, q/150]
-last_qc_at: "2026-06-18T16:20:32"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-08T12:21:51"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 193 — Drunkenness
 
 > Typo cleanup (QC sweep 2026-06-12): suma → Summa (episode intro). Verified against raw ASR refetched 2026-06-12.
+> Typo cleanup (QC sweep 2026-07-08): lentiousness → licentiousness (within the works-of-the-flesh quote Habash reads, restored per RSV; note Habash attributes it to Ephesians — the list is Galatians 5:19–21 — his attribution preserved as spoken); deprivives → deprives (within the Aquinas quote, Q.150 a.2); more want to be → more wont to be (within the Aquinas quote, Q.151 a.4); elicit → illicit (sexual acts); despise → despises (his maker). All verified against raw ASR refetched 2026-07-08.
 
 *Aquinas treats drunkenness (Q.150), the sin of the voluntary loss of reason through drink, and turns to chastity (Q.151), the virtue moderating the strongest of the bodily appetites.*
 
@@ -46,19 +47,19 @@ the use of the mind by affecting the body, which in this life is required for ma
 
 God to be human, but instead willing to be likened to irrational animals, drunkenness is a sin. It transgresses both natural law and divine law, as it
 
-[01:44] is written in the letter to the Ephesians. Now the works of the flesh are plain. immorality, impurity, lentiousness, idolatry, sorcery, enmity,
+[01:44] is written in the letter to the Ephesians. Now the works of the flesh are plain. immorality, impurity, licentiousness, idolatry, sorcery, enmity,
 
 strife, jealousy, anger, selfishness, dissension, party spirit, envy, drunkenness, carousing, and the like. I warn you, as I warned you before, that
 
 those who do such things shall not inherit the kingdom of God. Article two, whether drunkenness is a mortal sin, deadly sins or mortal sins are voluntary
 
-[02:14] actions incompatible with charity or the love of God and neighbor. And by voluntarily throwing off one's humanity through drunkenness, man despise his
+[02:14] actions incompatible with charity or the love of God and neighbor. And by voluntarily throwing off one's humanity through drunkenness, man despises his
 
 maker. He despises his creator, the one who gave him such a humanity. Now, that's my personal take. Aquinas here on the other hand argues that drunkenness
 
 is a mortal sin since it implies voluntarily removing our protection and guide away from sin which is reason. As he puts it here, drunkenness is a mortal
 
-[02:46] sin because then a man willingly and knowingly deprivives himself of the use of reason whereby he performs virtuous deeds and avoids sin and thus he sins
+[02:46] sin because then a man willingly and knowingly deprives himself of the use of reason whereby he performs virtuous deeds and avoids sin and thus he sins
 
 mortally by running the risk of falling into sin. In a word, one sins mortally by discarding that which keeps him from sinning mortally, which is reason. Then
 
@@ -110,13 +111,13 @@ from abstinence. Yet both are species or kinds of temperance as we said back in 
 
 [07:04] especially to chastity as explained briefly by St. Thomas. Purity regards venereal matters properly and especially the signs thereof such as
 
-impure looks, kisses and touches. And since the latter are more want to be observed, purity regards rather these external signs, while chastity regards
+impure looks, kisses and touches. And since the latter are more wont to be observed, purity regards rather these external signs, while chastity regards
 
 rather sexual union. Therefore, purity is directed to chastity not as a virtue distinct there from but as expressing a circumstance of chastity. Nevertheless,
 
 [07:35] the one is sometimes used to designate the other. So purity which comes from the Latin word shame according to Aquinas is not really distinct from
 
-chastity which makes man ashamed of elicit sexual acts. But purity is commonly used since it is derived again from the word shame for virtue in regard
+chastity which makes man ashamed of illicit sexual acts. But purity is commonly used since it is derived again from the word shame for virtue in regard
 
 to those intimate acts preluding sexual intercourse which are more visible such as again looks, kisses, touches, etc. as Aquinas notes. And with that we come to
 
