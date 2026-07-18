@@ -16,8 +16,8 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-294 - Final Conflagration - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/294, pars/suppl, q/73-74]
-last_qc_at: "2026-06-26T00:23:52"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-12T12:21:43"
+last_qc_outcome: "pass"
 ---
 
 # Day 294 — Final Conflagration

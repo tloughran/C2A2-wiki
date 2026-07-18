@@ -16,7 +16,7 @@ evidence_strength_summary: "The 'one coupled agent shares an objective' reading 
 mind_first_reframe: "Suffrages model a community of coupled agents pooling resources toward one shared objective; transfer of merit is real along the bond of union, but a recipient's fundamental orientation (their 'state') is set by their own perspective and cannot be paid for from outside."
 central_theme_thread: "This is the project's loving unity stated almost directly: many limited perspectives bound into one body by charity, each contributing to the others' completion — yet inclusion still turns on the agent's own orientation, the 'fear and trembling' that no one else can supply for them."
 tags: [synthesis, day/293, theme/communion-as-coupled-agents-sharing-one-objective]
-last_qc_at: "2026-06-26T00:23:51"
+last_qc_at: "2026-07-12T12:21:42"
 last_qc_outcome: "pass"
 ---
 

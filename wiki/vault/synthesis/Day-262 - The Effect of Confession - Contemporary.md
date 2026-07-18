@@ -15,8 +15,8 @@ evidence_strength_summary: "Attrition-suffices as threshold-crossing is formal (
 mind_first_reframe: "Attrition suffices because a genuine minimal contrition crosses the threshold into the changed state (Friston) and entirety is complete error-representation (Friston), while the pardon is whole because grace meets the entire honest disclosure with more than its measure (Rohr) — even loosing what the penitent could not represent."
 central_theme_thread: "Paired with Day 260: the whole accepts even an imperfect, perspective-limited turn and gives a whole pardon in return, reaching even the agent's blind spots (forgotten sins loosed) — 'salvation as inclusion' gracious both at its lower bound and beyond the agent's self-knowledge."
 tags: [synthesis, day/262, theme/whole-pardon-whole-disclosure]
-last_qc_at: "2026-06-26T04:19:33"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-12T16:21:19"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 262 — The Effect of Confession (Contemporary Parallel)
@@ -50,7 +50,7 @@ The motif appears at its most reassuring, paired with Day 260. The whole accepts
 - **Friston (threshold-crossing; entirety as complete error-representation)** — *formal, well-developed.* Attrition crosses the threshold; whole disclosure conditions whole repair.
 - **Rohr (Universal Christ; whole pardon exceeding the act)** — *theological / contemplative.* Why the effect is whole and covers the unrepresented.
 - **Wright (no half-pardon; real re-inclusion)** — *scriptural, high within method.* The content of the whole forgiveness.
-- **Stump (Thomistic interlocutor)** — receives the threshold-and-completeness reframe of attrition and entirety.
+- **Stump** — the Thomistic reading of attrition and entirety, receiving the threshold-and-completeness reframe.
 
 ## Where this leaves us
 

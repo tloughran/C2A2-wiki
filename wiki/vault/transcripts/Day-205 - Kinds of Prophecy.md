@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-205 - Kinds of Prophecy - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/205, pars/II, q/174, q/175]
-last_qc_at: "2026-07-08T20:20:38"
+last_qc_at: "2026-07-17T04:19:39"
 last_qc_outcome: "pass"
 ---
 

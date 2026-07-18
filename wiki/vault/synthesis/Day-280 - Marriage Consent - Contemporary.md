@@ -15,8 +15,8 @@ length_ratio_to_target: 0.53
 mind_first_reframe: "Expressed consent is necessary because coupling between two perspectival agents can occur only across a shared interface — the union is realized at the boundary where signs are exchanged, not in two private wills that never meet."
 central_theme_thread: "Because no spouse can inhabit the other's interior, loving unity must be built on signs offered and received in trust — the central theme's epistemology made liturgical."
 tags: [synthesis, day/280, theme/expressed-consent-as-shared-boundary]
-last_qc_at: "2026-07-01T02:25:22"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-12T00:23:45"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 280 — Marriage Consent (Contemporary Parallel)
@@ -31,7 +31,7 @@ The shared inquiry-problem is the **necessity of a shared boundary for real coup
 
 ## Resource
 
-The Friston-tradition program supplies the leading move directly. Tom's PRS-form record of Friston's work (PRS-06, *multi-agent coherence via mutual modeling*; PRS-05, *distributed cognition across scales*) makes the formation of a dyadic unit depend on each agent *acting on* signs the other emits — the coupling is realized at the shared Markov blanket, the statistical boundary through which the two exchange influence. There is no coupling without traffic across the boundary; matched internal states that never meet at the blanket do not form a unit. This is an almost embarrassingly exact gloss on "consent must be expressed by word or sign." The Hoffman-tradition program sharpens what the "sign" is: PRS-03 (*perception as a fitness-tracking interface*) and PRS-10 (*trace blankets subsume Markov blankets*) treat all inter-agent contact as passing through interface symbols — neither agent accesses the other's interior, only the icons the other presents. Consent's outward sign is therefore not a regrettable concession to legal proof but the only currency in which two interfaced agents can transact at all. Rohr's PRS-04 (*embodied love as epistemology*) adds the theological note: love is known and enacted bodily, in expressed and embodied signs, not in disembodied interior assent.
+The Friston-tradition program supplies the leading move directly. Tom's PRS-form record of Friston's work (PRS-06, *multi-agent coherence via mutual modeling*; PRS-05, *distributed cognition across scales*) makes the formation of a dyadic unit depend on each agent *acting on* signs the other emits — the coupling is realized at the shared Markov blanket, the statistical boundary through which the two exchange influence. There is no coupling without traffic across the boundary; matched internal states that never meet at the blanket do not form a unit. This is an almost embarrassingly exact gloss on "consent must be expressed by word or sign." The Hoffman-tradition program sharpens what the "sign" is: PRS-03 (*perception as a fitness-tracking interface*) and PRS-10 (*trace blankets subsume Markov blankets*) treat all inter-agent contact as passing through interface symbols — neither agent accesses the other's interior, only the icons the other presents. Consent's outward sign is therefore not a regrettable concession to legal proof but the only currency in which two interfaced agents can transact at all. PRS-04 in the Rohr-tradition wiki (*embodied love as epistemology*) adds the theological note: love is known and enacted bodily, in expressed and embodied signs, not in disembodied interior assent.
 
 ## Solution (proposed, speculative)
 

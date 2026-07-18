@@ -16,7 +16,7 @@ fetched_at: 2026-04-27
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-002 - Does God Exist - Contemporary]]"
 tags: [summa, day/002, pars/I, q/1, q/2, theme/sacred-doctrine, theme/existence-of-god]
-last_qc_at: "2026-06-30T20:19:51"
+last_qc_at: "2026-07-09T00:21:31"
 last_qc_outcome: "pass"
 ---
 

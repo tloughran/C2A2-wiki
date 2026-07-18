@@ -16,7 +16,7 @@ fetched_at: 2026-05-18
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-114 - A Burden Light - Contemporary]]"
 tags: [summa, day/114, pars/I-II, q/106, q/107]
-last_qc_at: "2026-07-08T00:21:30"
+last_qc_at: "2026-07-16T12:20:36"
 last_qc_outcome: "pass"
 ---
 

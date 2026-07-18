@@ -37,3 +37,17 @@ If the transcendentals are real-in-being (Stump) but disclosed-only-through-righ
 **Intersection page:** [[2026-06-10_mcgilchrist_eisenstein-being-in-the-world]]
 **Synthesis claim:** McGilchrist's "truth as 'treu'" — epistemic truth as fidelity to oneself and loyalty to others — converges with Stump's second-person account of knowledge: both make some knowing irreducibly relational rather than propositional. Value-as-constitutive (McGilchrist) may need exactly the second-personal epistemology Stump supplies.
 **Open question the wiki cannot yet answer:** Can a second-person epistemology ground McGilchrist's *intrinsic* (non-instrumental) values without collapsing into relativism — does fidelity-to-a-relationship pick out objective value, or only relationship-relative value?
+
+
+---
+
+## 'Certainty-peddling is not a religion' -- against Thomistic certitude
+*Sewing Agent, 2026-07-12*
+
+**Orphaned page:** `inbox/proposals/pending/2026-07-08_mcgilchrist_without-religion-no-future.md` (PROP-2026-07-08-001)
+
+**Why it sits at this intersection:** McGilchrist's load-bearing move in the WCCM lecture is that religion which 'peddles certainties' is not religion at all -- religion as participative, non-certain attending. Thomistic epistemology holds that faith *is* assent to propositions, and assent with certitude: the believer's adherence to revealed truth is firmer than that produced by demonstration, not looser.
+
+**Synthesis claim:** This is a genuine conflict and the wiki is better served by naming it than by smoothing it. The resolution most available -- that McGilchrist targets *psychological* certainty (rigidity, closure, the refusal of mystery) while Aquinas means *epistemic* certitude (firmness of assent, compatible with the object exceeding comprehension) -- is real but partial, and it concedes McGilchrist's cultural point while denying his metaphysical one. Aquinas's God is beyond comprehension *and* firmly assented to; McGilchrist's account has no room for the conjunction, and that is a defect in his account rather than in Aquinas's.
+
+**Open question the wiki cannot yet answer:** If firm assent to what exceeds comprehension is the Thomistic position, is it a *right-hemisphere* state on McGilchrist's own typology -- or does his framework lack the resources to describe it, forcing every firm commitment into the left-hemisphere column? The wiki suspects the latter and cannot yet demonstrate it. This is the sharpest available test of whether the hemisphere model is a psychology or a polemic.

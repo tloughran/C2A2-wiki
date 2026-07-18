@@ -15,7 +15,7 @@ fetched_at: 2026-06-19
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-271 - Public Penance - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-19T12:22:31"
+last_qc_at: "2026-07-10T00:21:52"
 last_qc_outcome: "rewrote"
 tags: [summa, day/271, pars/suppl, q/27-28]
 ---
@@ -23,6 +23,7 @@ tags: [summa, day/271, pars/suppl, q/27-28]
 # Day 271 — Public Penance
 
 > Aquinas closes the treatise on indulgences (those whom they avail) and opens the solemn rite of public penance.
+> Typo cleanup: Habish → Habash; Sumanir → Summa in a Year; Aquinus → Aquinas; suma theologia → Summa theologia. (Audit line added by QC 2026-07-10; fixes were present but unlogged.)
 
 [00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 

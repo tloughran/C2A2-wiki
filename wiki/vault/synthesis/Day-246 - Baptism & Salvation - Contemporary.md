@@ -17,8 +17,8 @@ length_note: "Concise by design — a single-focus III Q.68-69 (necessity of bap
 mind_first_reframe: "Necessity-of-baptism is reframed as interface-rules vs. underlying reality: the ordinary rule binds limited agents at the interface, while the underlying freedom of grace can reach the genuinely-disposed where the rule's resources are unavailable."
 central_theme_thread: "Salvation is the perspective-limited agent's inclusion in loving unity computed with the resources it perceives; the exceptions to baptism's necessity are where grace meets the agent whose resources cannot reach the rite."
 tags: [synthesis, day/246, theme/necessity-and-the-limited-perspective]
-last_qc_at: "2026-06-25T18:27:13"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-11T08:22:02"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 246 — Baptism & Salvation (Contemporary Parallel)
@@ -37,7 +37,7 @@ Hoffman is the leading resource. In Tom's PRS-form record of Hoffman's program, 
 
 Friston supplies the moral-computation half. In Tom's PRS-form record of Friston's program, PRS-04 (the organism as an active modeler) frames agency as inference *under the resources and evidence available* to the agent. Culpability, on this reading, tracks the model the agent could actually have built from its perceived evidence — which naturalizes "invincible ignorance excuses": you are answerable for the computation your resources permitted, not for evidence you could never access.
 
-PRS-02 (identity within monism) in Tom's PRS-form record of Kastrup's program keeps the operative reality dispositional. Wright is theological ground truth: salvation is covenant inclusion, baptism its ordinary sign; the exceptions are still membership, not a second mechanism. Rohr's Universal Christ underwrites a wide mercy that meets the agent where its perception ends.
+PRS-02 (identity within monism) in Tom's PRS-form record of Kastrup's program keeps the operative reality dispositional. On Wright's reading, salvation is covenant inclusion, baptism its ordinary sign; the exceptions are still membership, not a second mechanism. Rohr's Universal Christ underwrites a wide mercy that meets the agent where its perception ends.
 
 ## Solution (proposed, speculative)
 

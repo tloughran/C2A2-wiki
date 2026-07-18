@@ -16,8 +16,8 @@ length_ratio_to_target: 0.61
 mind_first_reframe: "Error voids marital consent exactly when it is a referent failure — when the agent one actually couples with is not the agent one's consent addressed — while mis-valued attributes of the right referent are tolerable error."
 central_theme_thread: "Marriage is undertaken across an irreducible epistemic gap — we consent to icons, never to the person seen whole — which is the central theme's 'fear and trembling' at the scale of the marrying pair."
 tags: [synthesis, day/283, theme/identity-tracking-and-consent]
-last_qc_at: "2026-07-01T18:25:21"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-12T00:23:59"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 283 — Error & Slavery (Contemporary Parallel)
@@ -32,7 +32,7 @@ The shared inquiry-problem is **identity-tracking across an interface, and the l
 
 ## Resource
 
-The Hoffman-tradition program supplies the leading move. Tom's PRS-form record of Hoffman's work (PRS-03 in the Hoffman-tradition wiki, *perception as a fitness-tracking interface*; PRS-10, *trace blankets subsume Markov blankets*) holds that agents never access one another's reality, only interface icons — so consent is always given to an *iconic model* of the partner, never to the partner-in-themselves. This reframes Aquinas's distinction: an error of *quality* is a wrong value on an attribute of the icon (tolerable; the icon still points at the right referent), whereas an error of *person* is a referent failure — the icon pointed at the wrong agent altogether — and *that* breaks the coupling because the two never in fact addressed each other. The Kastrup-tradition program supplies the metaphysics of identity that grounds "the person": PRS-02 (*individual identity within monism*) and PRS-24 (*the indexical problem — why this individual rather than another*) locate personal identity as a real (if soft) dissociative boundary, so that "error of the person" is a failure to couple with the intended *boundary*, not merely with the intended description. Friston's PRS-06 (*mutual modeling*) explains why referent failure voids the unit: coupling requires each model the *other*; if A models B but is coupled to C, no shared blanket forms. Levin's PRS-09 (*cognitive attribution across scales*) supports the qualities-vs-person line by distinguishing an agent's identity from its current properties.
+The Hoffman-tradition program supplies the leading move. Tom's PRS-form record of Hoffman's work (PRS-03 in the Hoffman-tradition wiki, *perception as a fitness-tracking interface*; PRS-10, *trace blankets subsume Markov blankets*) holds that agents never access one another's reality, only interface icons — so consent is always given to an *iconic model* of the partner, never to the partner-in-themselves. This reframes Aquinas's distinction: an error of *quality* is a wrong value on an attribute of the icon (tolerable; the icon still points at the right referent), whereas an error of *person* is a referent failure — the icon pointed at the wrong agent altogether — and *that* breaks the coupling because the two never in fact addressed each other. The Kastrup-tradition program supplies the metaphysics of identity that grounds "the person": PRS-02 (*individual identity within monism*) and PRS-24 (*the indexical problem — why this individual rather than another*) locate personal identity as a real (if soft) dissociative boundary, so that "error of the person" is a failure to couple with the intended *boundary*, not merely with the intended description. PRS-06 in the Friston-tradition wiki (*mutual modeling*) explains why referent failure voids the unit: coupling requires each model the *other*; if A models B but is coupled to C, no shared blanket forms. PRS-09 in the Levin-tradition wiki (*cognitive attribution across scales*) supports the qualities-vs-person line by distinguishing an agent's identity from its current properties.
 
 ## Solution (proposed, speculative)
 

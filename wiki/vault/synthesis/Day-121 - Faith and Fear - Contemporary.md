@@ -17,8 +17,8 @@ evidence_strength_summary: "Underdetermination of assent by external evidence �
 mind_first_reframe: "The act of faith is the agent's adoption of a prior that finite evidence cannot compel; the 'interior cause' Aquinas names is read as the contribution of a wider-perceiving node that installs or up-weights a prior the limited agent could not generate alone (supra-evidential, not anti-evidential), and filial fear is the affective signature of that high-value coupling while purification is the re-ordering of the objective function toward the true target basin."
 central_theme_thread: "The cause-of-faith argument is the central claim in epistemic form: the limited agent cannot from its own perspective generate the assent that orients it toward the whole, so individuation-by-perspective-limitation makes guidance from a wider-perceiving node necessary, and filial fear is 'fear and trembling' (Phil 2:12) — the lived awareness of that limitation and dependence, now felt as dread of losing the One who completes it."
 tags: [synthesis, day/121, theme/cause-of-faith]
-last_qc_at: "2026-07-06T18:28:46"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-12T16:21:21"
+last_qc_outcome: "pass"
 ---
 
 # Day 121 — Contemporary Parallel: What Causes Assent, and What Assent Does

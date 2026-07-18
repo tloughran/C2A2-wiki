@@ -18,7 +18,7 @@ evidence_strength_summary: "Altruistic-punishment / cooperation-maintenance and 
 mind_first_reframe: "Vengeance and truthfulness are the two guardians of a cooperative model among limited agents: correction of defection as bounded delegation ordered to restoration, and honest self-disclosure as the signal-integrity that keeps mutual models calibrated."
 central_theme_thread: "Loving unity is computed by perspective-limited agents who must both correct defection and disclose themselves honestly; vengeance-as-passion and deception each refuse the cooperative structure and fracture the shared computation."
 tags: [synthesis, day/172, theme/correction-signals, theme/honest-signaling, q/108, q/109]
-last_qc_at: "2026-07-07T18:28:06"
+last_qc_at: "2026-07-12T06:32:10"
 last_qc_outcome: "rewrote"
 ---
 
@@ -40,7 +40,7 @@ A cooperative system of agents requires two things that are easy to get wrong. F
 
 **McGilchrist** (PRS-01 in the McGilchrist-tradition wiki) gives the phenomenological warning. The grasping, manipulative mode of attention (which he associates with an unchecked left hemisphere) turns correction into possession — the wrongdoer becomes an object to be seized and crushed; this is vengeance-as-passion. The relational mode holds the wrongdoer as a person within a whole that the correction is meant to restore; this is vengeance-as-justice. The difference is exactly Aquinas's right-intention condition. **Levin** (PRS-04/08) gives the nested-agency analog: collectives maintain themselves by error-correction signals that restore deviating components to the morphogenetic target — correction in service of the whole's integrity, not destruction of the part.
 
-**Stump** enters as Thomistic interlocutor on both questions: punishment as medicinal (ordered to the good of the one corrected and the community), and truthfulness as second-personal self-revelation — the giving of oneself-as-one-is to be known by another.
+**Stump** enters here on both questions: punishment as medicinal (ordered to the good of the one corrected and the community), and truthfulness as second-personal self-revelation — the giving of oneself-as-one-is to be known by another.
 
 **Wright** supplies the decisive scriptural reframe of vengeance. "Vengeance is mine, I will repay, says the Lord" (Rom 12:19) does not abolish justice but *reserves ultimate vengeance to God* — and on Wright's reading of the cross, God's own response to wrong is to absorb it rather than retaliate, breaking the escalation cycle in the body of the crucified. Human correction is therefore bounded delegation (cf. Day 170): legitimate authority may correct for the common good, but final vengeance is not the creature's to seize. On truthfulness, Wright reads *veritas* as covenant faithfulness — being reliably what one is before God and neighbor. **Rohr** gives the contemplative form of both: the breaking of the retributive cycle as the heart of the gospel, and truthfulness as living from the True Self rather than performing the False Self.
 

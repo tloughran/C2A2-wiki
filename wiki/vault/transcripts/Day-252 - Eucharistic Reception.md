@@ -15,16 +15,16 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-252 - Eucharistic Reception - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-30T08:20:49"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-09T20:24:37"
+last_qc_outcome: "rewrote"
 tags: [summa, day/252, pars/3, q/79]
 ---
 
 # Day 252 — Eucharistic Reception
 
-> Aquinas's *Summa Theologiae*, Tertia Pars, III Q.79-80. Verbatim ASR captured 2026-06-16; light cleanup of common transcription errors (Summa, Aquinas, Theologiae, Damascene, narrator "Austin Habash"). Episode-intro name garble ("Summa in a Year") normalized.
+> Aquinas's *Summa Theologiae*, Tertia Pars, III Q.79-80. Verbatim ASR captured 2026-06-16; light cleanup of common transcription errors (Summa, Aquinas, Theologiae, Damascene, narrator "Austin Habash"). Episode-intro name garble ("Summa in a Year") normalized. Residual intro garble fixed at QC 2026-07-09: suma → Summa.
 
-[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's suma
+[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa
 
 Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the
 

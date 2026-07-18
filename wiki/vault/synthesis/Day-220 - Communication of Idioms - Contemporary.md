@@ -15,8 +15,8 @@ evidence_strength_summary: "Christ as wayfarer AND comprehensor at once ~ the br
 mind_first_reframe: "Wayfarer-and-comprehensor is read as one mind genuinely spanning the comprehensive whole-vision and the limited road-walking perspective at once — a non-dual holding (Rohr) and a dissociation-without-fragmentation (Kastrup) — the very structure the project posits for the divine guide who perceives more yet walks with us."
 central_theme_thread: "This is the project's keystone figure stated in Aquinas's own terms: the one who already beholds the whole (comprehensor) while still inhabiting the limited, suffering perspective (wayfarer) is the divine guide of Phil 2 who 'perceives more of the whole than we do' yet works out the road 'in fear and trembling' alongside us."
 tags: [synthesis, day/220, theme/wayfarer-and-comprehensor]
-last_qc_at: "2026-06-25T12:22:55"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-12T10:31:05"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 220 — Communication of Idioms (Contemporary Parallel)
@@ -49,7 +49,7 @@ This is the day the treatise on the assumed humanity hands the project its centr
 
 ## Bridges
 
-- **Christ as wayfarer AND comprehensor at once ↔ one mind spanning the comprehensive whole-vision and the limited, located perspective without fragmenting** — Tom's PRS-form record of Kastrup, PRS-02 (dissociation-without-fragmentation, per the guardrail). *Why:* one consciousness can inhabit a bounded point of view while remaining the whole — the simultaneity's structure. Evidence: **central-theme (strongest) + speculative-formal (medium)**.
+- **Christ as wayfarer AND comprehensor at once ↔ one mind spanning the comprehensive whole-vision and the limited, located perspective without fragmenting** — Tom's PRS-form record of Kastrup, PRS-02 (dissociation-without-fragmentation). *Why:* one consciousness can inhabit a bounded point of view while remaining the whole — the simultaneity's structure. Evidence: **central-theme (strongest) + speculative-formal (medium)**.
 - **One person genuinely many-and-one ↔ conscious agents integrate into higher-order unified agents (confirmed by split-brain data)** — Tom's PRS-form record of Hoffman, PRS-03; master CROSS-013. *Why:* an agent can span modes and scales and still be one — and the claim has an empirical leg (McGilchrist). Evidence: **speculative-formal with empirical leg (medium-strong)**.
 - **The comprehensor who walks the wayfarer's road to bring the limited home ↔ the Phil 2 kenosis hymn + salvation as incorporation** — Tom's PRS-form record of Wright, PRS-05 and the Pauline corpus (Phil 2:6-12). *Why:* the guide enters the guided's condition so they can be included in the people united with God — the loving-unity telos. Evidence: **scriptural/theological (strong)**.
 - **Holding comprehensor-and-wayfarer without collapse ↔ non-dual knowing: unity-in-distinction, both/and not either/or** — Tom's PRS-form record of Rohr, PRS-01; PRS-03 (the Universal Christ). *Why:* the contemplative posture that keeps the paradox intact rather than resolving it away. Evidence: **theological/contemplative**.

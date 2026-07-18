@@ -6,6 +6,7 @@ length_target_words: 1500
 length_actual_words: 1345
 length_ratio_to_target: 0.897
 length_tier: short
+length_note: "1345 words vs the 1350 short-tier floor — five words under the -10% band. Q.86-87 are fully covered (precept, quantity/recipient determination, and the Article-3 natural-law-duty limit); the shortfall is the substance running clean, not truncation. No padding warranted."
 mind_first_reframe: "Tithes are the symbolic protocol by which a perspective-limited agent participates in the larger composite agent it is already part of. The medieval church specified precept-plus-positive-determination; multi-scale agency (Levin's bioelectric resource gating) and active-inference budget allocation (Friston) describe the same scale-coordination problem at the level of any composite agent, with Pauline koinōnia (Wright) and the Universal Christ (Rohr) supplying the theological reading of religious giving as participation rather than transaction."
 central_theme_thread: "Aquinas's Article 3 — that tithing is not lawful when it sabotages a prior natural-law duty to parents or dependents — makes the perspective-limitation principle explicit. Each limited perspective has a domain in which it sees more clearly than the levels above; loving unity is computed by giving only what one can spare without becoming derelict to what is directly entrusted. Salvation in fear and trembling requires the limited agent to judge, from inside her limits, what is hers to release and what is hers to keep."
 karpathy_wiki_sources:
@@ -17,8 +18,8 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (FLAG/CROSS entries on collective intelligence and resource flow)"
 evidence_strength_summary: "Empirical on multi-scale resource gating (Levin) and prosocial neurobiology (Fredrickson). Formal on active-inference budget allocation (Friston). Theological on Pauline koinōnia and cosmic-body sharing (Wright, Rohr). The PRS solution itself is speculative-integrative — a proposal about what religious giving *is* under a monist ontology, not a settled finding."
 tags: [synthesis, day/161, theme/resource-flow, theme/collective-agency, pars/II-II, q/86-87]
-last_qc_at: "2026-07-07T10:29:30"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-11T18:30:47"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 161 — Tithes & Oblations (Contemporary Parallel)
@@ -65,7 +66,7 @@ Notice Aquinas's Article 3: tithing is *not* lawful when it sabotages a prior na
 
 - **PRS-04 in the Levin-tradition wiki** (Tom's PRS-form record of Levin's bioelectric-prepattern work) — bioelectric resource gating as the mechanistic analogue of tithe-flow inside multi-scale agents. *Empirical, strong.*
 - **PRS-02 in the Friston-tradition wiki** — active-inference budget allocation across a hierarchical generative model. The tithe-fraction is the precision-weighting that the lower level grants to the higher. *Formal, strong.*
-- **Wright on the Pauline collection** (*Paul and the Faithfulness of God*, ch. 11–12) — *koinōnia* as the operative covenantal category, against modern individualist readings of Christian generosity. *Theological, primary on the Pauline locus.*
+- **Wright on the Pauline collection** (*Paul and the Faithfulness of God*, ch. 11–12) — *koinōnia* as the operative covenantal category, against modern individualist readings of Christian generosity. *Theological; the scriptural anchor for this locus.*
 - **Rohr, *The Universal Christ*, ch. 5–6** — the cosmic body whose cells participate in one another. *Theological-mystical, contemplative anchor.*
 - **Fredrickson positivity-resonance literature** — neurobiology of habitual prosocial action and its feedback on the giver's own flourishing. *Empirical, moderately strong, tradition-bound.*
 

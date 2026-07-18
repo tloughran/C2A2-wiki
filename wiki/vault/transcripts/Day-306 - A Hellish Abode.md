@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 fidelity_checked: true
 synthesis: "[[Day-306 - A Hellish Abode - Contemporary]]"
 tags: [summa, day/306, pars/supplement, q/97]
-last_qc_at: "2026-06-28T12:23:04"
+last_qc_at: "2026-07-10T12:18:41"
 last_qc_outcome: "pass"
 ---
 

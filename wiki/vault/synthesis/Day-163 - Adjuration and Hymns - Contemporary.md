@@ -17,8 +17,8 @@ karpathy_wiki_sources:
   - "wiki/traditions/rohr/wiki.md (contemplative reception; song as 'first form' of contemplation)"
 evidence_strength_summary: "Empirical on the neurobiology of group song and positivity resonance (Fredrickson and collaborators). Empirical/clinical on hemispheric processing of music (McGilchrist). Theological-strong on early-Christian hymnody as load-bearing christology (Wright). The integrative claim — that hymn and adjuration are two directions of a single self/other-modulation loop — is speculative-integrative."
 tags: [synthesis, day/163, theme/self-modulation, theme/agent-binding, pars/II-II, q/90-91]
-last_qc_at: "2026-07-07T10:29:31"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-11T18:30:49"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 163 — Adjuration & Hymns (Contemporary Parallel)
@@ -68,7 +68,7 @@ Notice how cleanly the adjuration/hymn pair instantiates the central theme. The 
 - **PRS-02 in the Friston-tradition wiki** (precision-weighted self-prediction; policy-content alignment via voicing) — formal core of "praise is for our sake." *Formal, accumulating empirical support.*
 - **Fredrickson positivity-resonance and group-song literature** — empirical anchor for the collective-modulation effect Aquinas attributes to communal song. *Empirical, moderately-strong, tradition-bound.*
 - **PRS-03 in the McGilchrist-tradition wiki** (right-hemispheric reception of music) — hemispheric reading of the song-stirs-devotion phenomenon. *Clinical-historical, suggestive.*
-- **Wright, *Paul and the Faithfulness of God*, ch. 9** on Phil 2:6–11 and Col 1:15–20 as primary christological hymns — the historical evidence that the earliest church did christology *by singing it*. *Theological-historical, primary on early Christian hymnody.*
+- **Wright, *Paul and the Faithfulness of God*, ch. 9** on Phil 2:6–11 and Col 1:15–20 as primary christological hymns — the historical evidence that the earliest church did christology *by singing it*. *Theological-historical; the scriptural-historical anchor for early Christian hymnody.*
 - **Kastrup, *The Idea of the World*, ch. 8** — analytic-idealist reading of resonance between dissociated alters. *Metaphysical, speculative.*
 - **Rohr, *The Universal Christ*, ch. 11–12** — contemplative tradition on song as the first form of contemplation, leading into silence. *Theological-mystical, secondary anchor.*
 

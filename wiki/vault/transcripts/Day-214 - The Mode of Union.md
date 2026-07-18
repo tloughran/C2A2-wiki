@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-214 - The Mode of Union - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/214, pars/III, q/3 q/4]
-last_qc_at: "2026-06-25T08:21:03"
+last_qc_at: "2026-07-17T08:19:35"
 last_qc_outcome: "pass"
 ---
 

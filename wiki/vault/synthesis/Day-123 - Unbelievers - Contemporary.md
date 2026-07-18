@@ -19,8 +19,8 @@ evidence_strength_summary: "Non-coercibility of assent — formal (Friston/Hoffm
 mind_first_reframe: "Assent is internally fixed by an agent's priors and interface (Friston/Hoffman), so Aquinas's 'the intellect and will cannot be determined from the outside' (Q.10 a.8) is simply true of any model-based agent; this vindicates his non-coercion principle and, on his own better argument, forces the project to overrule his death-penalty article (Q.11 a.3) as a moral error, replacing avoid-the-unbeliever with weak-tie engagement that demonstrably builds intellectual humility (Fredrickson)."
 central_theme_thread: "Non-coercibility of assent is the central theme at its hardest angle: you cannot force a perspective to see more than it sees because the limitation is constitutive of the agent, and only the removal of the limitation (the vision of the whole) necessitates assent — which no human authority can administer; so 'working out salvation in fear and trembling' must be free, the computation toward loving unity run from inside each perspective, guided by those who see more but never overridden from outside."
 tags: [synthesis, day/123, theme/unbelief-coercion-toleration]
-last_qc_at: "2026-07-06T18:29:48"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-11T14:31:04"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 123 — Contemporary Parallel: Why Belief Cannot Be Coerced (and Where Aquinas Must Be Left Behind)
@@ -39,7 +39,7 @@ A subsidiary problem is the metaphysics of the community itself. Heresy and apos
 
 ## Resource
 
-Three resources do the constructive work, and two oracles ground the departure.
+Three resources do the constructive work, and Wright and Rohr ground the departure.
 
 First, Friston and Hoffman jointly vindicate a.8. In the PRS-form record of Friston's predictive-coding work (PRS-04 in the Friston-tradition wiki), assent is fixed by the agent's priors and precision-weights, not by external input; in the Hoffman-tradition wiki, each agent constructs its own interface. Belief is internally determined. Coercion can change the input stream and the cost structure around an agent, but it cannot reach in and set the posterior. Aquinas's "cannot be determined from the outside" is, in contemporary terms, simply true of any model-based agent. Its only "proper object" that necessitates assent is truth-and-goodness *seen as it is* — which is why Aquinas reserves necessitated love for the beatific vision, where the limitation is removed.
 
@@ -47,7 +47,7 @@ Second, Levin gives the geometry behind a.5 — the Dionysius/Chesterton princip
 
 Third, Stump supplies the metaphysics of the corporate whole. Her collective-hylomorphism program (PRS-14, PRS-15, PRS-16 in the Stump-tradition wiki) argues that peoples, the body of Christ, and traditions are *real composite entities* with genuine forms, not aggregates — anchored empirically in neural coupling and developed via CROSS-068 (Stump × Levin × C2A2-core) into the claim that a tradition is a united-something-or-other whose inquiry exceeds any member's. On this account heresy and apostasy are not mere private opinions; they are, in Levin's register (PRS-02), structurally like a cell's defection from the cooperative morphogenetic community — which is exactly the analogy Aquinas's "corrupting the faith that quickens the soul" reaches for. Levin's program also names the *response*: not excision-by-death but restoration of bioelectric coherence, reintegration into the field.
 
-The two oracles ground the departure. Wright's critical realism (PRS-01 in the Wright-tradition wiki) holds that all knowing is perspectival and revisable, tested against reality from within a story — there is no view from nowhere from which one party could be entitled to exterminate another for misreading. And his account of salvation as covenant inclusion, with resurrection as new-creation (PRS-04), frames the community as constituted by invitation, not by the sword. Rohr's Universal Christ (PRS-03 in the Rohr-tradition wiki) — the divine pattern present in all of creation — converts the unbeliever from enemy-to-be-removed into a site where the pattern is already at work, warranting engagement rather than excision.
+Wright and Rohr ground the departure. Wright's critical realism (PRS-01 in the Wright-tradition wiki) holds that all knowing is perspectival and revisable, tested against reality from within a story — there is no view from nowhere from which one party could be entitled to exterminate another for misreading. And his account of salvation as covenant inclusion, with resurrection as new-creation (PRS-04), frames the community as constituted by invitation, not by the sword. Rohr's Universal Christ (PRS-03 in the Rohr-tradition wiki) — the divine pattern present in all of creation — converts the unbeliever from enemy-to-be-removed into a site where the pattern is already at work, warranting engagement rather than excision.
 
 ## Solution (proposed, speculative)
 

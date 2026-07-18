@@ -15,14 +15,15 @@ fetched_at: 2026-06-19
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-273 - Anointing Members - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-27T20:21:15"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-10T00:21:53"
+last_qc_outcome: "rewrote"
 tags: [summa, day/273, pars/suppl, q/31-32]
 ---
 
 # Day 273 — Anointing Members
 
 > Aquinas treats the minister of Extreme Unction, on whom it should be conferred, and on what parts of the body.
+> Typo cleanup: Habish → Habash; Sumanir → Summa in a Year; Aquinus → Aquinas; suma theologia → Summa theologia. (Audit line added by QC 2026-07-10; fixes were present but unlogged.)
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 

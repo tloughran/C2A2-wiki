@@ -16,7 +16,7 @@ length_ratio_to_target: 0.64
 mind_first_reframe: "Fidelity is the integrity-condition of the marital higher-individual; adultery is a defection that corrupts the trust-prior the union runs on, and the crime-impediment marks that a union built on such defection inherits a compromised foundation."
 central_theme_thread: "Loving unity is built from perspectives that stay faithful to the shared computation despite the temptation to pursue the local good against the whole; fidelity is the central theme's perseverance-condition, and the insistence on restoration refuses to let defection have the last word."
 tags: [synthesis, day/288, theme/fidelity-as-integrity-of-the-union]
-last_qc_at: "2026-07-01T16:20:14"
+last_qc_at: "2026-07-10T08:21:20"
 last_qc_outcome: "pass"
 ---
 

@@ -15,7 +15,7 @@ fetched_at: 2026-05-14
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-093 - The Virtuous Mean - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-07T08:21:14"
+last_qc_at: "2026-07-16T00:30:42"
 last_qc_outcome: "pass"
 tags: [summa, day/093, pars/I-II, q/64-65, mean-of-virtue, connection-of-virtues, charity]
 ---

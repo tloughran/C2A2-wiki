@@ -20,8 +20,8 @@ karpathy_wiki_sources:
   - "master/cross_program_index.md CROSS-005 (love); master/paradigm_flags.md FLAG-04 (perspective + suffering)"
 evidence_strength_summary: "Each of Aquinas's remedies (pleasure, tears, friendship, contemplation, sleep/baths) has identifiable contemporary mechanisms — vagal stimulation, emotional disclosure, social co-regulation, default-mode-network modulation, parasympathetic recovery — all empirically robust. Q.39 a.4 (greatest evil = desensitization) is a theological/ethical claim that gains support from the predictive-processing model of model-collapse but is fundamentally a normative judgment supported by the Wright/Rohr/Stump triangulation."
 tags: [synthesis, day/080, theme/remedies, theme/integration, theme/greatest-evil]
-last_qc_at: "2026-07-06T20:22:45"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-14T20:59:07"
+last_qc_outcome: "pass"
 ---
 
 # Day 80 — Sorrowful Remedies (Contemporary)

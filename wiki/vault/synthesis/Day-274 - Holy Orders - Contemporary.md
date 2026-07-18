@@ -16,8 +16,8 @@ evidence_strength_summary: "Role-differentiation within a collective agent is fo
 mind_first_reframe: "Order is read as durable role-differentiation within a collective agent: ordination imprints a stable functional target-state (Levin PRS-01) that gives the body of Christ differentiated members coordinating one act of inference (Friston PRS-06), structured as perichoretic gift rather than hierarchy-of-domination (Rohr PRS-07)."
 central_theme_thread: "No single limited perspective can hold the whole; differentiated, durable roles are how a community distributes the labor of perceiving and serving the whole across many partial agents."
 tags: [synthesis, day/274, theme/durable-role-differentiation]
-last_qc_at: "2026-06-27T20:21:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-12T20:23:30"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 274 — Holy Orders (Contemporary)
@@ -36,7 +36,7 @@ The emerging paradigm supplies both halves. On *durable imprint*: Tom's PRS-form
 
 On *differentiation*: Tom's PRS-form record of the Friston-tradition wiki's PRS-06 describes how individual agents become a coherent higher-order agent through mutual modeling and shared attractor basins. A collective agent works by *role-differentiation* — members specialize so that the whole can perform a single coordinated act of inference that no member could perform alone. Order, in this reading, is the durable role-differentiation that lets the body of Christ act as one agent across many members.
 
-the Rohr-tradition wiki's PRS-07 keeps the differentiation from collapsing into domination: his perichoretic Trinity makes relation basal — reality's unit is "perfect giving and perfect receiving," so differentiated roles are positions in an exchange, not rungs of a ladder. Wright's ecclesiology supplies the scriptural form directly: the body of Christ with its differentiated members (1 Cor 12), where diversity of office serves one body and no member can say to another "I have no need of you."
+The Rohr-tradition wiki's PRS-07 keeps the differentiation from collapsing into domination: his perichoretic Trinity makes relation basal — reality's unit is "perfect giving and perfect receiving," so differentiated roles are positions in an exchange, not rungs of a ladder. Wright's ecclesiology supplies the scriptural form directly: the body of Christ with its differentiated members (1 Cor 12), where diversity of office serves one body and no member can say to another "I have no need of you."
 
 ## Solution (proposed, speculative)
 

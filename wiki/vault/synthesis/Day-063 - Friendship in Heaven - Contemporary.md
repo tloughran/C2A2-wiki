@@ -16,8 +16,8 @@ length_ratio_to_target: 0.607
 length_note: "Long-tier transcript distilled to a thematic accompaniments-and-attainment register over Q.4–Q.5 (16 articles). Per the constitution (Summa.md and the length-policy memory), long-tier syntheses 'pick the two or three most generative threads from the transcript rather than mirroring every article'; the relational-flourishing and grace-enabled-attainment threads carry the load and adding length would be padding."
 mind_first_reframe: "Happiness's accompaniment-conditions (vision, delight, comprehension, rectitude, body, fellowship of friends) preserve as the constitutively relational structure of the alter's integrative act under mind-monism; grace is the substrate-source's communication of its own integration-pattern to the perspective-limited alter."
 central_theme_thread: "Loving unity is constitutively relational; the alter works out salvation 'with' the friends-becoming-aligned-together under the substrate-network's pedagogical care, not solitarily — and Q.4 a.4's rectitude-of-will is the daily-task content of dispositional formation."
-last_qc_at: "2026-07-06T14:26:31"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-12T18:31:34"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/063, theme/relational-flourishing, theme/friendship]
 ---
 # Day 63 — Contemporary Parallel: *Vision, Delight, Comprehension, and the Friends of Heaven as Constitutive Accompaniments of Loving Union*
@@ -70,14 +70,14 @@ Q.4 a.4's *rectitude of the will* is doing keystone work in today's day: the wil
 
 ## Bridges
 
-- **Fredrickson-tradition wiki, PRS on positivity resonance and Love 2.0.** Empirical relational-flourishing primary. *Strong empirical at dyadic-and-group biology.*
+- **Fredrickson-tradition wiki, PRS on positivity resonance and Love 2.0.** Empirical relational-flourishing resource. *Strong empirical at dyadic-and-group biology.*
 - **Stump-tradition wiki, PRS on union as highest good and faith-as-second-personal-knowing.** Theological-philosophical resource on the structure of integrative-act. *Book-length argument.*
 - **McGilchrist-tradition wiki, PRS on right-hemispheric receptivity.** Reception-mode anchor for vision-and-delight. *Strong neuropsychiatric evidence.*
 - **Friston-tradition wiki, PRS on terminal-prior alignment.** Active-inference frame for rectitude-of-will. *Mature formalism.*
 - **Kastrup-tradition wiki, PRS on mind-as-relational-ground.** Metaphysical anchor for relational substrate-source. *Philosophical-conceptual.*
 - **Hoffman-tradition wiki, on alter-as-interface and substrate-direct-mode access.** Why grace is needed for full integrative-act. *Philosophical-mathematical.*
 - **Wright, *Surprised by Hope*; *The Resurrection of the Son of God*; *Paul and the Faithfulness of God*.** Scriptural-historical resource on the relational-and-resurrected character of flourishing. *Strong scriptural-historical.*
-- **Rohr, *The Universal Christ*; *Immortal Diamond*.** Cosmic-Christ pattern as relational substrate-source. *Contemplative theological primary.*
+- **Rohr, *The Universal Christ*; *Immortal Diamond*.** Cosmic-Christ pattern as relational substrate-source. *Contemplative theological.*
 - **Augustine, *De Trinitate*; Aquinas's *Summa Contra Gentiles* III.**
 - **CROSS-005 on love as fundamental category; CROSS on substrate-relational-structure.**
 

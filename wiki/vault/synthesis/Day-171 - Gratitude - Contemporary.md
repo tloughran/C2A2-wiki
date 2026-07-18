@@ -19,8 +19,8 @@ evidence_strength_summary: "Gratitude's resource-building effects (Fredrickson) 
 mind_first_reframe: "Under mind-monism no agent is self-caused, so gratitude becomes the honest accounting of the agent's ontological non-self-origination — accurately modeling and rightly honoring the sources of its received goods."
 central_theme_thread: "Gratitude is the perspective-limited agent's honest recognition that the goods constituting its perspective came from beyond it; self-attribution falsifies its situation and severs it from the cooperative structure within which loving unity is computed."
 tags: [synthesis, day/171, theme/gift-and-debt, theme/non-self-origination, q/106, q/107]
-last_qc_at: "2026-07-08T06:27:52"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-12T06:32:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 171 — Gratitude (Contemporary)
@@ -43,7 +43,7 @@ The shared problem across the medieval and contemporary frames: a perspective-li
 
 **Kastrup on individuation-within-monism** (PRS-02 in the Kastrup-tradition wiki) supplies the metaphysical layer. If mind is the ontological primitive and individual agents are dissociated patterns within one mind-at-large, then no agent is self-caused; the goods that constitute any perspective are, at depth, received from beyond that perspective. Gratitude is then ontological honesty — the recognition that one's situation is not self-generated. **Levin** (PRS-04, PRS-08 in the Levin-tradition wiki) gives the empirically tractable echo: agency is nested, and every agent at every scale depends on the larger collective whose signals constitute its very field of action. The cell does not make itself; the tissue does not make itself; recognition-of-dependence is built into the structure of nested agency.
 
-**Stump** enters as Thomistic interlocutor: her account of second-personal knowledge of persons gives gratitude its relational shape. Gratitude is not bookkeeping; it is a mode of *knowing the benefactor as a person* who freely gave. Ingratitude is correspondingly a failure of second-personal recognition — a refusal to let the giver be present as giver.
+**Stump** enters here: her account of second-personal knowledge of persons gives gratitude its relational shape. Gratitude is not bookkeeping; it is a mode of *knowing the benefactor as a person* who freely gave. Ingratitude is correspondingly a failure of second-personal recognition — a refusal to let the giver be present as giver.
 
 **Wright** grounds the scriptural form. The Pauline vocabulary of *charis* (gift/grace) is, on Wright's reading, precisely a gift-economy that creates not a repayment-debt but an obligation-of-response: the gift is unearned, it cannot be repaid, and the fitting response is grateful reciprocity within the covenant community. "What do you have that you did not receive?" (1 Cor 4:7) is the scriptural form of the non-self-origination claim. **Rohr** gives the contemplative form: everything is gift; gratitude is not one virtue among many but the foundational stance of the contemplative who has seen that the self is received, moment by moment, from the ground that Rohr names the Universal Christ.
 

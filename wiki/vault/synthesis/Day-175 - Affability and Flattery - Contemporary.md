@@ -18,8 +18,8 @@ evidence_strength_summary: "Positivity resonance as a bond-building mechanism is
 mind_first_reframe: "Affability names the empirically real micro-mechanism (positivity resonance) by which honest warmth builds the bonds a cooperative community runs on; flattery is its counterfeit — warmth decoupled from regard to manipulate another's self-model."
 central_theme_thread: "Loving unity is not only computed but lived among perspective-limited agents, and the texture of that life is warmth; affability is its small daily form, while flattery counterfeits the meeting and isolates the flatterer behind a performance."
 tags: [synthesis, day/175, theme/positivity-resonance, theme/honest-warmth, q/114, q/115]
-last_qc_at: "2026-07-08T06:27:54"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-12T06:32:12"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 175 — Affability & Flattery (Contemporary)
@@ -40,7 +40,7 @@ A community of limited agents is not held together only by justice in the strict
 
 **Friston on honest social signaling** (PRS-06 in the Friston-tradition wiki) diagnoses the corruption. Genuine affability is honest warmth — a signal that indexes real regard. Flattery decouples the warm signal from the regard, deploying it to manipulate the other's self-model for the flatterer's gain. As with lying and boasting (Days 173–174), the wrong is the corruption of signal-integrity; here it is specifically the corruption of the *warmth* signal, which is doubly damaging because warmth is the very currency of bond-building. **McGilchrist** (PRS-01) gives the cognitive contrast: relational attunement (genuinely meeting the other) versus the manipulative mode that simulates attunement to extract advantage.
 
-**Stump** enters as Thomistic interlocutor: affability as a genuine, if limited, mode of second-personal regard; flattery as its instrumentalization — treating the other as a means while wearing the face of friendship.
+**Stump** enters here: affability as a genuine, if limited, mode of second-personal regard; flattery as its instrumentalization — treating the other as a means while wearing the face of friendship.
 
 **Wright** grounds the scriptural form: "Let love be genuine" (Rom 12:9) — *anhypokritos*, literally un-hypocritical love — and the recurring Pauline charge to build one another up (1 Thess 5:11). The community of the new creation is bound by sincere warmth, and flattery is its hypocritical counterfeit. **Rohr** gives the contemplative form: authentic loving-kindness flows from the True Self that has nothing to gain, while flattery is the False Self's people-pleasing — warmth deployed to secure approval rather than offered freely.
 

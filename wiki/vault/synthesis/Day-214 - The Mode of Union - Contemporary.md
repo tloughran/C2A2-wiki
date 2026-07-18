@@ -17,8 +17,8 @@ evidence_strength_summary: "Son fits because He is the eternal Word/idea by whom
 mind_first_reframe: "It befits the Son to assume because the Son is the Word — the idea by which all was made — returning to restore the form a perspective wandered from; and the Word assumes a human nature rather than a human person because the individuating boundary (personhood) is supplied by the Word itself, the one case where a limited perspective is individuated not by its own limitation but by the whole's own person — and it must be a genuinely particular nature, never 'humanity in general,' because the whole reaches the parts only by becoming an actual part."
 central_theme_thread: "Yesterday the whole took a limited perspective as its own; today we learn how — the Word (the target-form) supplies the very personhood that would otherwise individuate the human nature, so that this one perspective is individuated by the whole rather than by its limitation, and only by becoming a particular, fallen-race human does the universal reach all the others."
 tags: [synthesis, day/214, theme/personhood-supplied-by-the-whole]
-last_qc_at: "2026-06-25T08:21:03"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-17T08:19:35"
+last_qc_outcome: "pass"
 ---
 
 # Day 214 — The Mode of Union (Contemporary Parallel)

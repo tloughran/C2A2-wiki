@@ -16,8 +16,8 @@ length_note: "Compact-by-design: III Q.72 (confirmation as maturation) rendered 
 mind_first_reframe: "Confirmation is reframed as the developmental strengthening of an already-constituted agent — a competency-scaling (Levin) and precision-raising (Friston) on its deep commitments that licenses mature, costly witness — not a new identity but a new robustness of an existing one."
 central_theme_thread: "Confirmation raises the limited agent's capacity to compute toward loving unity under cost — the 'fear and trembling' register — enabling it to act toward the whole even when acting is risky, actively extending the unity it belongs to into a resistant world."
 tags: [synthesis, day/248, theme/maturation-of-agency]
-last_qc_at: "2026-06-30T06:25:59"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-11T10:31:37"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 248 — Confirmation (Contemporary Parallel)
@@ -40,7 +40,7 @@ McGilchrist adds the attentional register: maturation as a re-balancing of the m
 
 ## Solution (proposed, speculative)
 
-The contemporary-parallel response: **confirmation is the developmental strengthening of an already-constituted agent — a competency-scaling and precision-raising on its deep commitments that licenses mature, costly witness — not a new identity but a new robustness of an existing one.** This *shares* with Aquinas the maturation logic (growth, not entry) and the public-witness orientation. It *reframes* "strengthening" as competency-scaling (Levin) and precision-weighting (Friston) rather than an infusion of a quasi-substance. It *marks* that Levin's competency scaling is empirical in biology and only analogically transferred; that Friston's precision-weighting is a formal account of the *form* of bold commitment, not its supernatural content; and that the Spirit's gift is theological (Rohr/Wright ground truth).
+The contemporary-parallel response: **confirmation is the developmental strengthening of an already-constituted agent — a competency-scaling and precision-raising on its deep commitments that licenses mature, costly witness — not a new identity but a new robustness of an existing one.** This *shares* with Aquinas the maturation logic (growth, not entry) and the public-witness orientation. It *reframes* "strengthening" as competency-scaling (Levin) and precision-weighting (Friston) rather than an infusion of a quasi-substance. It *marks* that Levin's competency scaling is empirical in biology and only analogically transferred; that Friston's precision-weighting is a formal account of the *form* of bold commitment, not its supernatural content; and that the Spirit's gift is theological (Rohr, Wright).
 
 ## The central-theme thread
 
@@ -56,4 +56,4 @@ The project holds that loving unity is a computation each limited agent performs
 
 ## Where this leaves us
 
-Day 249 opens the Eucharist — the metaphysical centerpiece of the Tertia Pars, where the question "what is substance?" becomes unavoidable and the guardrail directs us to lead with Kastrup, Hoffman, and Levin. Open thread: the maturation theme will return in the penance treatise (Days 254-257) as *repair* of an agent's developed capacities.
+Day 249 opens the Eucharist — the metaphysical centerpiece of the Tertia Pars, where the question "what is substance?" becomes unavoidable and Kastrup, Hoffman, and Levin carry the metaphysical load. Open thread: the maturation theme will return in the penance treatise (Days 254-257) as *repair* of an agent's developed capacities.

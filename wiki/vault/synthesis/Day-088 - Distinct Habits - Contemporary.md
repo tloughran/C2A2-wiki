@@ -96,7 +96,7 @@ mind_first_reframe: "Habits are individuated by their objects (Q.54) — recover
 central_theme_thread: "The agent has many habits; virtues are the subset whose object is the agent's progress in the computational task of loving unity under perspective-limitation. A good habit advances this computation — aligns the alter's local dynamics with the wider mind (Kastrup), integrates left-hemispheric instrumentality under right-hemispheric receptivity (McGilchrist), cultivates positivity-resonance and other-directed attention (Fredrickson), abides in the participation that exceeds the agent's individuated capacity (Wright, Rohr). Stump's second-personal account of virtue is the philosophical keystone; the infused-virtue clause (Augustine in Q.55) is the structural-form claim that some virtuous habits are participations the agent does not generate from within."
 evidence_strength_summary: "Parallel domain-specific stabilizations (Hawkins) and policy-specific priors (Friston) are empirically robust. Cultivated positivity-resonance (Fredrickson) is empirically high-confidence. Stump on second-personal virtue is philosophically rigorous. Hemispheric-integration accounts of character (McGilchrist) are clinically supported. Wright on Pauline virtue-formation and Rohr on cosmic-Christ habituation are theologically well-attested. The conscious-realist-monist reading of good-habit as alter–mind-at-large alignment is speculative-metaphysical but internally consistent."
 tags: [synthesis, day/088, theme/habits, theme/individuation, theme/virtue, theme/distinguished-habits, theme/infused-virtue]
-last_qc_at: "2026-07-07T04:22:01"
+last_qc_at: "2026-07-15T13:07:46"
 last_qc_outcome: "pass"
 
 ---

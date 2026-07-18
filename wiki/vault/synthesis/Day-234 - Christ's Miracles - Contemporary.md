@@ -16,7 +16,7 @@ evidence_strength_summary: "Miracle-as-deeper-layer-override is a CONCEPTUAL rem
 mind_first_reframe: "If 'nature' is the default rendering of a species-specific interface rather than the bedrock of reality, a miracle is not a violation of law but an address to a deeper control layer — the whole acting in the rendered world at a level the interface normally hides."
 central_theme_thread: "Miracles on every kind of creature say that no scale of the rendered world is outside the whole's address; healing the visible body to certify invisible forgiveness is the same accommodation-to-limited-perception that runs from Day 230's manifestation through Day 233's parables."
 tags: [synthesis, day/234, theme/miracle-as-deeper-layer-address]
-last_qc_at: "2026-06-27T16:20:04"
+last_qc_at: "2026-07-17T18:26:26"
 last_qc_outcome: "pass"
 ---
 

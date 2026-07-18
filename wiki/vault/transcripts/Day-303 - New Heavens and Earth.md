@@ -15,8 +15,8 @@ fetched_at: 2026-06-25
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-303 - New Heavens and Earth - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-25T12:22:57"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-12T10:31:25"
+last_qc_outcome: "pass"
 tags: [summa, day/303, pars/supplement, q/91]
 ---
 

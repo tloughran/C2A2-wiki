@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=9QDdl6_syCs
 title: The Means of Satisfaction
 summa_ref: Supplement, Suppl. Q.15-16
 duration_seconds: 471
-word_count: 1424
+word_count: 1430
 raw_asr_word_count: 1424
 length_tier: short
 segment_count: 205
@@ -15,16 +15,16 @@ fetched_at: 2026-06-17
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-265 - The Means of Satisfaction - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-19T00:21:15"
+last_qc_at: "2026-07-11T16:23:41"
 last_qc_outcome: "rewrote"
 tags: [summa, day/265, pars/supplement, q/penance]
 ---
 
 # Day 265 — The Means of Satisfaction
 
-> Austin Habash's daily walk through the *Summa* (Supplement, Suppl. Q.15). Verbatim ASR, lightly cleaned. Continuing the Supplement's treatment of the sacrament of Penance.
+> Austin Habash's daily walk through the *Summa* (Supplement, Suppl. Q.15). Verbatim ASR, lightly cleaned (Suma → Summa, Aquinus → Aquinas, Suma Theologia → Summa Theologiae; QC sweep 2026-07-11: intro garble "Suminir" → "Summa in a Year", Habish → Habash — verified against raw ASR refetched 2026-07-11, no other edits). Continuing the Supplement's treatment of the sacrament of Penance.
 
-[00:05] Hello, my name is Austin Habish, the founder of Think Catholic, and you're listening to the Suminir podcast, where we study St. Thomas Aquinas's Summa
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
 Theologiae in a way simple and insightful for anyone to understand. The Suminir podcast is brought to you by Think Catholic. Taking two questions of the
 
@@ -124,7 +124,7 @@ virtue, they have it, although they have no cause to exercise it, having never s
 
 expedate. And with that we close another episode. We have just finished covering questions 15 and 16 of the supplement to the Summa that is of the means of making
 
-satisfaction of those who receive the sacrament of penance. My name is Austin [music] Habish with Think Catholic and I cannot wait to see you tomorrow.
+satisfaction of those who receive the sacrament of penance. My name is Austin [music] Habash with Think Catholic and I cannot wait to see you tomorrow.
 
 [07:51] [music]
 

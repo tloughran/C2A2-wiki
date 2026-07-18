@@ -15,8 +15,8 @@ fetched_at: 2026-06-18
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-267 - Minister of the Keys - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-19T00:21:16"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-11T16:23:42"
+last_qc_outcome: "pass"
 tags: [summa, day/267, pars/supplement, q/19-20]
 ---
 

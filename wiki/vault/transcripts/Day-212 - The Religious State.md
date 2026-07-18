@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-212 - The Religious State - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/212, pars/II, q/186 q/189]
-last_qc_at: "2026-06-25T08:21:02"
+last_qc_at: "2026-07-17T08:19:33"
 last_qc_outcome: "pass"
 ---
 

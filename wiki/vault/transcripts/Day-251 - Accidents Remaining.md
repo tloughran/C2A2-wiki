@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=uQ9hW2SIFIs
 title: Accidents Remaining
 summa_ref: Tertia Pars, III Q.77
 duration_seconds: 720
-word_count: 2138
+word_count: 2141
 raw_asr_word_count: 2129
 length_tier: medium
 segment_count: 313
@@ -15,18 +15,18 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-251 - Accidents Remaining - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-30T08:20:48"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-09T20:24:36"
+last_qc_outcome: "rewrote"
 tags: [summa, day/251, pars/3, q/77]
 ---
 
 # Day 251 — Accidents Remaining
 
-> Aquinas's *Summa Theologiae*, Tertia Pars, III Q.77. Verbatim ASR captured 2026-06-16; light cleanup of common transcription errors (Summa, Aquinas, Theologiae, Damascene, narrator "Austin Habash"). Episode-intro name garble ("Summa in a Year") normalized.
+> Aquinas's *Summa Theologiae*, Tertia Pars, III Q.77. Verbatim ASR captured 2026-06-16; light cleanup of common transcription errors (Summa, Aquinas, Theologiae, Damascene, narrator "Austin Habash"). Episode-intro name garble ("Summa in a Year") normalized. Residual intro garbles fixed at QC 2026-07-09: Sumeir → Summa in a Year; Theologia → Theologiae.
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa
 
-Theologia in a way simple and insightful for anyone to understand. The Sumeir podcast is brought to you by Think Catholic. Taking two questions of the
+Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 251.
 

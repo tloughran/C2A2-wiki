@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=ZQFDcqM_sEM
 title: Vicarious Satisfaction
 summa_ref: Supplement, Suppl. Q.13-14
 duration_seconds: 659
-word_count: 1989
+word_count: 1995
 raw_asr_word_count: 1989
 length_tier: short
 segment_count: 285
@@ -15,16 +15,16 @@ fetched_at: 2026-06-17
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-264 - Vicarious Satisfaction - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-19T00:21:15"
+last_qc_at: "2026-07-11T16:23:40"
 last_qc_outcome: "rewrote"
 tags: [summa, day/264, pars/supplement, q/penance]
 ---
 
 # Day 264 — Vicarious Satisfaction
 
-> Austin Habash's daily walk through the *Summa* (Supplement, Suppl. Q.13). Verbatim ASR, lightly cleaned. Continuing the Supplement's treatment of the sacrament of Penance.
+> Austin Habash's daily walk through the *Summa* (Supplement, Suppl. Q.13). Verbatim ASR, lightly cleaned (Suma → Summa, Aquinus → Aquinas, Suma Theologia → Summa Theologiae; QC sweep 2026-07-11: intro garble "Sumeir" → "Summa in a Year", Habish → Habash — verified against raw ASR refetched 2026-07-11, no other edits). Continuing the Supplement's treatment of the sacrament of Penance.
 
-[00:05] Hello, my name is Austin Habish, the founder of Think Catholic, and you're listening to the Sumeir podcast, where we study St. Thomas Aquinas's Summa
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
 Theologiae in a way simple and insightful for anyone to understand. The Sumeir podcast is brought to you by Think Catholic. Taking two questions of the
 
@@ -164,7 +164,7 @@ to diminish his guilt in hell to give the last word of our episode to St. Thomas
 
 deeds void punishment." And with that, we come to the end of another episode. We have just finished covering questions 13 and 14 of the supplement of the Summa,
 
-that is, of the possibility of satisfaction and of the quality of satisfaction. My name is Austin Habish with Think Catholic and I cannot wait to
+that is, of the possibility of satisfaction and of the quality of satisfaction. My name is Austin Habash with Think Catholic and I cannot wait to
 
 [10:59] see you tomorrow.
 

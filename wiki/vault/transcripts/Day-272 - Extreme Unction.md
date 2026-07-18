@@ -15,14 +15,15 @@ fetched_at: 2026-06-19
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-272 - Extreme Unction - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-27T20:21:04"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-10T00:21:52"
+last_qc_outcome: "rewrote"
 tags: [summa, day/272, pars/suppl, q/29-30]
 ---
 
 # Day 272 — Extreme Unction
 
 > Aquinas treats Extreme Unction as to its essence and institution, and the effect of the sacrament.
+> Typo cleanup: Habish → Habash; Sumanir → Summa in a Year; Aquinus → Aquinas; Suma Theologia → Summa Theologia. (Audit line added by QC 2026-07-10; fixes were present but unlogged.)
 
 [00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 

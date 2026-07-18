@@ -16,8 +16,8 @@ length_note: "Concise by design — bridges the close of the treatise on Christ 
 mind_first_reframe: "A sacrament is an enacted, world-changing prediction whose efficacy lies in coupling a public sign to the dispositional-and-communal state it helps constitute; judgement is the whole rendering each limited part's enacted history true."
 central_theme_thread: "Judgement is the whole rendering each perspective-limited agent's real trajectory legible, and the sacraments are how limited agents who cannot see the whole are coupled to it."
 tags: [synthesis, day/242, theme/sign-that-effects]
-last_qc_at: "2026-06-25T18:27:11"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-11T08:21:46"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 242 — Judgement & Sacrament (Contemporary Parallel)
@@ -42,7 +42,7 @@ Wright grounds the judgement half: biblical judgement is less courtroom-verdict 
 
 The contemporary-parallel response: **a sacrament is an enacted, world-changing prediction whose efficacy lies in coupling a public sign to a dispositional-and-communal state it helps constitute; judgement is the whole rendering each limited part's enacted history true.** This *shares* with Aquinas the realism about efficacy — the sign genuinely does something, it is not bare symbol. It *reframes* "instrumental causality" in the idiom of active inference and social constitution rather than Aristotelian instrumentality. It *marks honestly* that the theological surplus — grace as God's own self-gift — exceeds what active inference models, which describe the *form* of sign-efficacy, not its supernatural content.
 
-Firm vs. speculative: the active-inference account of self-fulfilling enactment is formally well-developed and empirically motivated in cognitive science. The transfer to sacramental grace is an analogy of structure, not a reduction; the theological content (judgement as Christ's, grace as divine) is Wright's and Rohr's ground truth, strong within theological method, not empirical.
+Firm vs. speculative: the active-inference account of self-fulfilling enactment is formally well-developed and empirically motivated in cognitive science. The transfer to sacramental grace is an analogy of structure, not a reduction; the theological content (judgement as Christ's, grace as divine) rests on Wright's setting-right reading of judgement and Rohr's Universal Christ, strong within theological method, not empirical.
 
 ## The central-theme thread
 
@@ -53,8 +53,8 @@ Judgement is the moment the project's central claim becomes explicit: every limi
 - **Friston PRS-04 + PRS-06 (active modeler; multi-agent coherence)** — *formal, well-developed in domain.* Sacrament as enacted prediction that helps constitute the communal state it signifies.
 - **Levin PRS-03 (morphological attractor)** — *empirical-in-domain, analogical transfer.* Signal-triggered convergence on a target state.
 - **Wright (judgement as setting-right)** — *theological, high within method.* Re-reads judiciary power as new-creation rectification.
-- **Rohr (sacramental presence; Universal Christ)** — *theological / contemplative.* Matter as already Christ-bearing; the sign is where the pattern becomes operative. Primary on sacraments per bridges file.
-- **Stump (causality in Aquinas)** — *theological-philosophical.* Interlocutor: instrumental causality reframed as enacted-sign coupling.
+- **Rohr (sacramental presence; Universal Christ)** — *theological / contemplative.* Matter as already Christ-bearing; the sign is where the pattern becomes operative.
+- **Stump (causality in Aquinas)** — *theological-philosophical.* Instrumental causality reframed as enacted-sign coupling.
 
 ## Where this leaves us
 

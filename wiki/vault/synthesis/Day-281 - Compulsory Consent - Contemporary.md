@@ -16,8 +16,8 @@ length_ratio_to_target: 0.58
 mind_first_reframe: "Coerced consent fails to constitute a marriage because a clamped state is not an act of the agent's own model; only freely selected policies couple agents into a real shared unit, so a forced configuration couples nothing."
 central_theme_thread: "The reverent self-determination of 'fear and trembling' is the opposite of coercive fear: loving unity must be chosen from within a perspective, never imposed on it from without."
 tags: [synthesis, day/281, theme/freedom-as-condition-of-union]
-last_qc_at: "2026-07-01T02:25:22"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-12T00:23:58"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 281 — Compulsory Consent (Contemporary Parallel)
@@ -32,7 +32,7 @@ The shared inquiry-problem is the **freedom-condition on a constituting act**. A
 
 ## Resource
 
-The Friston-tradition program supplies the leading move. Tom's PRS-form record of Friston's work (PRS-04 in the Friston-tradition wiki, *the organism as active modeler*; PRS-16, *expected free energy as the unified objective*) treats genuine agency as *free policy selection*: the agent chooses among possible actions by their expected free energy under its own model and preferences. A clamp — a state imposed from outside that bypasses policy selection — is precisely *not* an action of the agent; it is the agent being moved as an object. This gives Aquinas's "the will moves but does not freely determine itself" an operational reading: coerced consent is a clamped state, not a selected policy, and so cannot be the act that constitutes a union *of agents*. The Stump-tradition program enters here as Thomistic interlocutor: Stump's analyses of the will's free responsiveness to reasons, and of the difference between surrender and capitulation, articulate philosophically what active inference models formally — and the two should be triangulated, not blended. Rohr's PRS-04 (*embodied love as epistemology*) and Wright's covenant theology converge on the same point from the theological side: covenant love is *won*, never extracted; a God who coerces assent would void the very relation sought.
+The Friston-tradition program supplies the leading move. Tom's PRS-form record of Friston's work (PRS-04 in the Friston-tradition wiki, *the organism as active modeler*; PRS-16, *expected free energy as the unified objective*) treats genuine agency as *free policy selection*: the agent chooses among possible actions by their expected free energy under its own model and preferences. A clamp — a state imposed from outside that bypasses policy selection — is precisely *not* an action of the agent; it is the agent being moved as an object. This gives Aquinas's "the will moves but does not freely determine itself" an operational reading: coerced consent is a clamped state, not a selected policy, and so cannot be the act that constitutes a union *of agents*. The Stump-tradition program enters here: Stump's analyses of the will's free responsiveness to reasons, and of the difference between surrender and capitulation, articulate philosophically what active inference models formally — and the two should be triangulated, not blended. PRS-04 in the Rohr-tradition wiki (*embodied love as epistemology*) and Wright's covenant theology converge on the same point from the theological side: covenant love is *won*, never extracted; a God who coerces assent would void the very relation sought.
 
 ## Solution (proposed, speculative)
 

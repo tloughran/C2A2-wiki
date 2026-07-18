@@ -17,7 +17,7 @@ length_note: "Covers two dense Summa questions (Q.74 powers, 10 articles + Q.75 
 mind_first_reframe: "Aquinas's architecture-level question (Q.74 powers of the soul / Q.75 internal-and-external causes of sin) recovers cleanly in a hierarchical active-inference frame: mortal sin lives in the will-and-reason coupling because only top-level priors re-target the whole policy stack; morose delectation is precision-on-attention (what the agent attends to is what it becomes); the privation-with-positive-cause structure is regulator-failure (the act has full positive being while its disorder traces to the absence of the directing signal); and one sin causes another by removing the high-precision integrating prior that suppressed further failure."
 central_theme_thread: "Q.75 a.4's indirect-efficient mode — one sin causes another by removing the protective state — is the central theme's mechanism for cumulative decoupling: the protective state is the high-precision integrating prior (charity / loving unity), the prior that couples the agent's policy to the wider conscious-agent network. Once removed, further failures follow naturally because nothing now suppresses them; the agent that was one under reason / charity becomes plural under unintegrated appetites."
 tags: [synthesis, day/098, theme/will-and-faculty, theme/attention-as-action]
-last_qc_at: "2026-07-07T08:21:18"
+last_qc_at: "2026-07-16T04:19:37"
 last_qc_outcome: "pass"
 ---
 

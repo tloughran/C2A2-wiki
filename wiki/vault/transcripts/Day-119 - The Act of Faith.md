@@ -16,11 +16,13 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-119 - The Act of Faith - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/119, pars/2, q/2-3]
-last_qc_at: "2026-06-27T08:21:39"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-12T20:23:20"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 119 — The Act of Faith
+
+## Transcript
 
 [00:04] hello my name is Austin Habash the founder of Think Catholic and you're listening to the Summa year podcast where we study St Thomas Aquinas Summa
 

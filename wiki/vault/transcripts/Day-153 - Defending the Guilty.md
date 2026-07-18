@@ -16,7 +16,7 @@ length_tier: short
 fidelity_checked: true
 synthesis: "[[Day-153 - Defending the Guilty - Contemporary]]"
 tags: [summa, day/153, pars/2, q/70]
-last_qc_at: "2026-06-24T08:20:22"
+last_qc_at: "2026-07-12T04:22:06"
 last_qc_outcome: "pass"
 ---
 

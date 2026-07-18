@@ -15,7 +15,7 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-039 - The Soul - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-24T04:20:20"
+last_qc_at: "2026-07-12T02:29:15"
 last_qc_outcome: "pass"
 render_pass: auto-catchup-2026-05-04 → qc-structural-2026-05-12
 tags: [summa, day/039, pars/I, q/75, q/76, theme/soul, theme/hylomorphism, theme/subsistence, theme/incorruptibility, theme/embodiment]

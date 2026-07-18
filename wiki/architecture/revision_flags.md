@@ -5519,3 +5519,375 @@ REVISE-188:
   Recommended action for Tom: pre-register >=1 theory-misaligned / least-favorable thinker before claiming transfer. Pass there = generalization support; pass only on Hawkins = confirmed selection-bound (REVISE the transfer claim).
   Urgency: Medium
   PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c -> 15d -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+## 2026-07-09 REVISE intake (15c; fresh cohorts 07-07 + 07-08; DISPOSITION-424..438 run)
+
+REVISE-189:
+  Date: 2026-07-09 | Source item: ASSUMPTION-427 (ASSUMPTION, stated; QUEUED-EMPIRICAL) | from DISPOSITION-425
+  Statement: A byte-copy of a write-quiescent DB over the sandbox mount is faithful, so quick_check failure on the copy establishes source-file corruption.
+  Why flagged: 15b CHALLENGED/Strong with 15a concurring on the weak link — WAL-mode byte-copies without -wal/-shm sidecars fail integrity checks on HEALTHY sources (sqlite.org howtocorrupt); mount-layer torn/short reads are an independent live hypothesis. quick_check failure on the copy establishes only that (copy OR copy-process OR source) is faulty. Inference direction unsound.
+  What is at risk: the openstory recovery path — a healthy source could be declared corrupt, triggering unnecessary restore with data loss to the backup point. Interacts badly with REVISE-192 (opposite-direction alarm dismissal).
+  Recommended action for Tom: run sqlite3 quick_check NATIVELY on the Mac source (pending empirical test; the sandbox cannot run it — fail-loud). Before any future copy-based diagnosis: checkpoint (PRAGMA wal_checkpoint(TRUNCATE)) or copy sidecars, prefer .backup/VACUUM INTO, and require two independent copy paths to agree before a corruption verdict.
+  Urgency: High
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-190:
+  Date: 2026-07-09 | Source item: PRESUMPTION-456 (PRESUMPTION, unstated) | from DISPOSITION-428
+  Statement: Human review capacity is elastic — proposal intake needs no backpressure, queue cap, or aging policy.
+  Why flagged: 15a NO-SUPPORT-FOUND (domain literature uniformly prescribes the opposite); 15b CHALLENGED/Strong (Little's Law; Sadowski et al. 2018 — overloaded reviewers review WORSE, not just later). The lambda>mu signature is observed: pending 4->13 in two days, last review a week old. An unbounded queue before the approval gate silently converts "human-reviewed" into "human-backlogged."
+  What is at risk: the meaningfulness of C2A2's core human-in-the-loop control; all proposal-driven changes inherit review-under-overload quality.
+  Recommended action for Tom: WIP cap on pending proposals (cap N), aging policy (auto-expire or batch-summarize items older than X days), and agent-side backpressure (throttle emission when cap hit). Decide N and X; the mechanism is cheap.
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-191:
+  Date: 2026-07-09 | Source item: PRESUMPTION-457 (PRESUMPTION, unstated) | from DISPOSITION-429
+  Statement: Model training priors are a valid oracle over live search results when they conflict about post-cutoff events.
+  Why flagged: 15b CHALLENGED/Strong (Longpre et al. 2021 — priors systematically biased against ALL post-cutoff events; policy inverts RAG's design rationale and freezes recall at cutoff). 15a's partial support covers calibrated skepticism with verification — a different policy than prior-wins-by-default.
+  What is at risk: systematic novelty-blindness — genuinely new talks/papers/appearances rejected because the model hadn't heard of them, in exactly the monitoring tasks the tradition agents exist for.
+  Recommended action for Tom: replace prior-wins with a verification rule — on prior/retrieval conflict about a post-cutoff event, neither side is oracle; require a second independent (or primary) source before accept OR reject; log conflicts. Pairs with MONITOR-419 (A-426 catalog-check error rate).
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-192:
+  Date: 2026-07-09 | Source item: ASSUMPTION-431 (ASSUMPTION, stated; QUEUED-EMPIRICAL) | from DISPOSITION-433
+  Statement: A failing QC signal (qc_sweep "fidelity fail") can be reclassified as environmental (absent sandbox cache) without independent re-verification of content.
+  Why flagged: 15b CHALLENGED/Strong (Leveson & Turner 1993, Therac-25 — dismissing alarms as known-spurious without verification is the canonical accident precursor); 15a concurs that rationalization is sanctioned only as a documented evidence-based determination. Environmental plausibility is not evidence about content. Unvalidated-instrument cluster member.
+  What is at risk: the qc_sweep instrument's trustworthiness — one plausibility-only waiver gives every future fail a known-benign escape hatch; real corruption rides through.
+  Recommended action for Tom (cheap, decisive): regenerate /tmp/dayNNN_segments.json in-sandbox and re-run the fidelity check. Pass -> document environmental cause with evidence; fail -> real content issue. Policy: never close a QC fail on plausibility alone.
+  Urgency: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-193:
+  Date: 2026-07-09 | Source item: PRESUMPTION-460 (PRESUMPTION, unstated) | from DISPOSITION-436
+  Statement: Capture is binary and final — a source already in prs_triplets.md needs no re-examination after a lens change (e.g., paradigm-boundary lens).
+  Why flagged: 15a NO-SUPPORT-FOUND; 15b CHALLENGED/Strong (living systematic reviews, qualitative re-coding, re-indexing on ontology change all obligate re-examination when the coding frame shifts — extraction is source x lens). Prospective-only application is legitimate only as an explicit documented decision, never made here.
+  What is at risk: paradigm-boundary signal sitting unrecognized in the captured back-catalog; the scarcest signal class under-counted (compounds REVISE-194).
+  Recommended action for Tom: choose deliberately — (a) one-time re-scan of existing prs_triplets.md sources under the paradigm-boundary lens, or (b) an explicit recorded prospective-only decision with rationale. Do not default.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-194:
+  Date: 2026-07-09 | Source item: PRESUMPTION-461 (PRESUMPTION, unstated) | from DISPOSITION-437
+  Statement: A single specialist agent can reliably assign the "paradigm-shift candidate" label at intake, one pass, no adjudication.
+  Why flagged: 15b CHALLENGED/Strong (Gartlehner et al. 2020: single screener misses 13% vs 3% dual; Waffenschmidt et al. 2019); 15a's best case (~3%, experienced screeners) does not extend to rare, fuzzy, high-stakes categories — the worst case on every axis. Compounding: the adjudicator layer is itself under REVISE-187 and upstream review is a week behind (REVISE-190).
+  What is at risk: the scarcest, most-watched signal class contaminated at intake in both directions, with no second pass to catch either.
+  Recommended action for Tom: two-reader design for this label only — a second independent agent pass (different model family per REVISE-187) with adjudicated disagreements, or a periodic retrospective second pass over single-labeled items.
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-195:
+  Date: 2026-07-09 | Source item: PRESUMPTION-462 (PRESUMPTION, unstated) | from DISPOSITION-438
+  Statement: Fixed re-check cadences (7-day reviewer staleness; weekly 15d re-trigger) are right-sized — set once, never load- or change-rate-adapted.
+  Why flagged: 15b CHALLENGED/Moderate (adaptive-polling literature; own queue growth is the failure signature) and — decisive — CONSISTENCY: PREMISE-095, incorporated this run, validates that the weekly 15d cadence structurally overruns throughput. An incorporated premise contradicts this presumption; surfaced, not averaged. Both failure directions observed same-day.
+  What is at risk: the 15d refresh loop's usefulness (backlog swamps signal); staleness rules firing wrongly in both directions.
+  Recommended action for Tom: make cadence a controlled variable — key 15d re-trigger interval (or per-run re-trigger cap) to queue depth; revisit the 7-day reviewer-staleness rule against observed latency. Same decision as OPEN-115/116 — resolve together.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-196:
+  Date: 2026-07-10 | Source item: ASSUMPTION-435 (ASSUMPTION, stated; QUEUED-EMPIRICAL) | from DISPOSITION-441
+  Statement: DB write-staleness beyond threshold reliably indicates the OpenStory runtime is down, and freezing (refusing to refresh) beats serving stale feeds.
+  Why flagged: 15b CHALLENGED/Strong on both clauses — failure-detector theory (Chandra & Toueg 1996) shows staleness cannot distinguish down/slow/idle, so "reliably indicates" is unsound by construction; and graceful-degradation standards (RFC 5861 stale-if-error; AWS Well-Architected) prescribe serving LABELED stale data over refusing service for read-mostly, non-safety content. 15a's own support (heartbeat doctrine, Aguilera et al. 1997) concedes timeout detectors false-positive.
+  What is at risk: an idle-but-healthy runtime or a broken heartbeat path triggers a false freeze — the freeze becomes the availability incident; staleness verdicts also feed the openstory recovery work already under REVISE-186/189.
+  Recommended action for Tom: replace freeze with serve-stale-clearly-labeled (age banner) + an out-of-band liveness probe of the runtime itself (process/health check, not DB mtime). Converges with the REVISE-186/189 probe — one instrument now serves four flags. The queued post-.recover empirical check (did staleness actually track runtime state?) remains decisive and should run.
+  Urgency: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-197:
+  Date: 2026-07-10 | Source item: PRESUMPTION-463 (PRESUMPTION, unstated) | from DISPOSITION-443
+  Statement: Platform pause policy is stable and a synthetic query is a trustworthy activity proxy — the keep-warm loop needs no outcome verification.
+  Why flagged: 15b CHALLENGED/Strong — all three legs fail independently: free-tier policies change without notice; whether the ping path is COUNTED as activity is undocumented (Supabase clarification threads exist); and trusting action-success (cron ran) over outcome (project unpaused) is the textbook open-loop control failure. 15a found no literature endorsing unverified keep-alive — support for that clause was inferential only (15a NOVELTY-weak: the practice-vs-literature gap is itself the finding).
+  What is at risk: keep-warm reports green while the project pauses anyway — discovered only when the demo broker is dead in use.
+  Recommended action for Tom: close the loop — probe actual project status (management API or read-back check) on a schedule and alert on pause; verify once that the SELECT 1 path counts as activity. One probe also settles MONITOR-427 (A-434).
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-198:
+  Date: 2026-07-10 | Source item: PRESUMPTION-464 (PRESUMPTION, unstated) | from DISPOSITION-444
+  Statement: The daily-walk Chat is the sole canonical human-context channel and browser delivery its only transport; on failure, waiting is the only remedy.
+  Why flagged: 15b CHALLENGED/Strong — single-channel single-transport human comms is a named ops anti-pattern with a standard remedy (pre-provisioned out-of-band secondary; TrustedSec; post-CrowdStrike-2024 analyses); absence of messages is indistinguishable from absence of instruction. 15a supports one CANONICAL channel (SSOT/ChatOps consolidation) but found nothing supporting waiting-as-remedy and flagged that clause NOVELTY — unaddressed in literature because no one designs it deliberately.
+  What is at risk: the human-context loop — already severed 7 days by the Chrome login failure while a working Gmail fallback existed in-fleet. This is the live instance, not a hypothetical.
+  Recommended action for Tom: keep Chat canonical; add the Gmail transport as explicit fallback delivery for daily-walk content when browser delivery fails (the one-line task change named at intake). Canonicality and transport redundancy are compatible — SSOT says where truth lives, not how many roads reach it.
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-199:
+  Date: 2026-07-10 | Source item: PRESUMPTION-465 (PRESUMPTION, unstated) | from DISPOSITION-445
+  Statement: Appending a FAIL line to a file constitutes surfacing — fail-loud presumes a reliable listener, never verified.
+  Why flagged: 15b CHALLENGED/Strong — security (OWASP Top 10:2025 A09), IT-ops (Target 2013 unheeded alerts), and clinical alarm literature (Joint Commission SEA 50) all distinguish recording from surfacing: an alert's value is the verified probability a listener acts on it; a file-appended FAIL has no notification, no assigned responder, no acknowledgment, no escalation. The system's own record confirms: openstory down 4d, Chrome login 7d, review backlog 9d — alarms written, remediation absent. 15a's conditional support (a contractual scheduled reader makes the write BE the surfacing) names exactly the unverified condition.
+  What is at risk: the system believes it fails loud while failing silent; every fail-loud commitment in the fleet inherits the flaw.
+  Recommended action for Tom: add an acknowledgment layer — FAIL lines carry an ack field; unacked FAILs older than a threshold escalate to a verified channel. Converges with REVISE-198's fallback transport and MONITOR-420's auto-escalate — this is the missing actuator for both.
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-200:
+  Date: 2026-07-10 | Source item: PRESUMPTION-466 (PRESUMPTION, unstated; QUEUED-EMPIRICAL) | from DISPOSITION-446
+  Statement: Count discrepancy means prior figures were estimates, not that items were lost — the loss hypothesis went unvoiced.
+  Why flagged: 15b CHALLENGED/Strong — premature closure + anchoring + normalcy bias are among the best-documented causes of diagnostic error (Al Essa et al. 2026, Medical Education; AHRQ PSNet); the prescribed countermeasure is voicing and preferentially testing the harmful hypothesis BEFORE closing. 15a's base-rate support (most registry drift is benign — DeHoratius & Raman 2008; SRE triage doctrine) justifies the benign hypothesis as LEADING — not as unvoiced-and-untested. The practice error stands regardless of what the reconciliation finds.
+  What is at risk: benign-first closure becomes a triage habit; real losses absorbed into "estimation noise" narratives with no recorded trace that the alternative was considered.
+  Recommended action for Tom: (a) run the provenance-ID reconciliation now (the same test gates MONITOR-426/A-433 — one test settles both items); (b) adopt the triage rule: when counts disagree, record both hypotheses and the discriminating test before adopting either.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-201:
+  Date: 2026-07-11 | Source item: ASSUMPTION-437 (ASSUMPTION, stated; QUEUED-EMPIRICAL) | from DISPOSITION-447
+  Statement: The pipeline's tag-based queue enumeration is complete — 8 fresh + 13 held QUEUED-EMPIRICAL exhausts the July items; "nothing was missed."
+  Why flagged: 15a NO-SUPPORT-FOUND/None + 15b CHALLENGED/Strong — the cleanest verdict split available. Capture-recapture / dual-system estimation doctrine (Bird & King 2018; census DSE) holds that a single enumeration cannot measure its own undercount; audit completeness testing requires tracing from an independent source population. "Nothing was missed," asserted by the same tag query being audited, is structurally unverifiable — the P-466 error repeated at the enumeration layer.
+  What is at risk: silent orphaning of queued items (mis-tagged, untagged, or malformed entries invisible to the tag query); the integrity cluster's reconciliation inherits the blind spot.
+  Recommended action for Tom: adopt a dual-channel enumeration check — tag query vs independent ID-gap/regex sweep over for_lit_search.md and the registries — run it now as part of the MONITOR-426/REVISE-200 reconciliation (one pass settles the integrity cluster) and keep it as the standing completeness check.
+  Urgency: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-202:
+  Date: 2026-07-11 | Source item: PRESUMPTION-467 (PRESUMPTION, unstated) | from DISPOSITION-451
+  Statement: Firing-health aggregates to system health — a scheduler watchdog may say "all clear / action needed: none" while multi-day outcome-level outages stand.
+  Why flagged: Both search directions converge against the embedded belief. 15a SUPPORTED/Strong for the surfaced hazard (watermelon-SLA ITSM literature; Google SRE Ch. 4/6 — measure user-visible outcomes, not component liveness); 15b CHALLENGED/Strong (firing-health does not compose into outcome health). The system's own July record is the live instance: three multi-day outcome outages (openstory, Chrome login, review backlog) persisted through green watchdog mornings.
+  What is at risk: the morning watchdog is a systemwide sedative — its "all clear" suppresses the human check that would otherwise catch standing outages; outage duration is bounded only by happenstance.
+  Recommended action for Tom: add outcome-level SLIs to the watchdog and make "all clear" conditional on them: openstory runtime actually serving; today's expected artifacts exist and parse (per REVISE-203's manifest); human-channel transport verified (per REVISE-198). Dashboard face of the open-loop family — same fix as the 2026-07-11 SYSTEMIC-RISK recommendation.
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-203:
+  Date: 2026-07-11 | Source item: PRESUMPTION-468 (PRESUMPTION, unstated; QUEUED-EMPIRICAL) | from DISPOSITION-452
+  Statement: Fresh files in a shared output tree attribute to the task under verification — the daily run's output check is satisfied by any of a dozen writers.
+  Why flagged: 15b CHALLENGED/Strong — a check any of a dozen writers can satisfy is a verifier that cannot fail (vacuous by test-effectiveness doctrine: Inozemtseva & Holmes ICSE 2014; assertion-specificity: Zhang & Mesbah FSE 2015); 15a's Moderate support confirms the hazard from the data-observability side (lineage/attribution is a named pillar precisely because freshness-of-shared-target checks mis-attribute).
+  What is at risk: the daily run can be dead indefinitely while its output check stays green off other writers' files — the P-468 check is today unfalsifiable.
+  Recommended action for Tom: manifest convention — each scheduled task declares its expected task-specific outputs (name pattern + location); output checks match the manifest, not tree freshness. Verify attribution once via manifest diff or a deliberate no-op day. Cheap fix; feeds REVISE-202's artifact SLI.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-204:
+  Date: 2026-07-11 | Source item: PRESUMPTION-469 (PRESUMPTION, unstated; QUEUED-EMPIRICAL) | from DISPOSITION-453
+  Statement: Task-file drift is benign because each run's agent will re-derive the repair — noted fixes in run outputs reach no future run and no file owner.
+  Why flagged: 15b CHALLENGED/Strong — configuration-drift and snowflake literature (Fowler/Morris) plus SRE toil doctrine treat repeated unpersisted remediation as a compounding anti-pattern, and postmortem-completion data (<40% of even tracked action items done in 90 days) refutes "someone will fix it later" as a mechanism. 15a's PARTIALLY-SUPPORTED/Moderate is strictly conditional and the condition fails: per-run re-derivation is healthy only when repairs converge to a persisted source of truth (GitOps desired-state); ephemeral run outputs persist nothing.
+  What is at risk: task files accumulate literally-unresolvable instructions; every run pays a re-derivation toll; nondeterministic agents apply divergent repairs so task semantics vary run to run.
+  Recommended action for Tom: give task files an owner and a repair path — runs append noted defects to a task-file-fixes queue that a named owner (or the weekly sewing agent) applies to the files themselves; run the cheap one-time audit for currently-unresolvable instructions.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-205:
+  Date: 2026-07-11 | Source item: PRESUMPTION-470 (PRESUMPTION, unstated; QUEUED-EMPIRICAL) | from DISPOSITION-454
+  Statement: Registry counts are interchangeable across agents and clocks — no census protocol (timestamp + rule) governs shared figures.
+  Why flagged: Convergent from two independent literatures. 15a SUPPORTED/Strong for the hazard (Chandy & Lamport 1985: uncoordinated snapshots compose into global states that never existed; accounting cut-off doctrine: counts compare only relative to declared timestamp + rule); 15b CHALLENGED/Strong (without a census protocol, phantom discrepancies and masked real losses are indistinguishable — registry disagreements unclosable in principle). Generalizes the A-433/P-466 count cluster and P-458/OPEN-112.
+  What is at risk: every cross-agent shared figure (queue sizes, backlog tallies, registry counts) may describe a state that never existed; the MONITOR-426 reconciliation inherits the ambiguity unless the census rule comes first.
+  Recommended action for Tom: adopt a census protocol — every shared figure carries a timestamped cut-off + counting rule (which tags/statuses count, as of when). Have the A-433/P-466 reconciliation adopt its census rule from this item's one-day counting test — one convention settles three flags (MONITOR-426, REVISE-200, REVISE-205).
+  Urgency: Medium-High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-206:
+  Date: 2026-07-12 | Source item: ASSUMPTION-442 (ASSUMPTION, stated; QUEUED-EMPIRICAL) | from DISPOSITION-456
+  Statement: Form-check-only PRS-id QC (wiki unmounted) is an acceptable degraded mode provided a deferred spot-check compensates.
+  Why flagged: 15b CHALLENGED/Strong — graceful degradation is acceptable only with its constitutive safeguards, and this instance lacks them: degraded passes are indistinguishable from full passes (P-471's uniform last_qc_at), and the compensating spot-check is deferred with no owner or trigger in a system whose measured action-item completion is <40% (normalization-of-deviance entry pattern: Vaughan; JSR 2022 systematic review). Real id-drift was confirmed the same morning — the reduced checks have live misses. 15a's Moderate support is conditional on exactly the missing safeguards.
+  What is at risk: form-check-only passes accumulate under fresh full-strength QC stamps; id-drift spreads silently; on discovery the entire QC history becomes suspect.
+  Recommended action for Tom: keep the degraded mode but add its safeguards — qc_mode field on the stamp (REVISE-207's fix), the Days-239/240 spot-check scheduled with a date and owner, and a bounded lifetime (max N form-only runs before a forced full pass).
+  Urgency: Medium-High
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-207:
+  Date: 2026-07-12 | Source item: PRESUMPTION-471 (PRESUMPTION, unstated) | from DISPOSITION-460
+  Statement: A QC freshness stamp certifies uniform verification depth — degraded-mode pairs get the same last_qc_at as fully verified pairs, hiding skipped checks from all future scans.
+  Why flagged: Convergent from three literatures. 15a SUPPORTED/Strong for the hazard (SLSA v1.1: verification claims without depth metadata are untrustworthy by design — hence graded attestation; arXiv:2605.28546: "SKIP is not evidence"); 15b CHALLENGED/Strong against the embedded belief (gray failure, Huang et al. 2017: uniform-green-over-heterogeneous-state is the dominant dangerous signal class; a stamp both modes set identically is a verifier that cannot fail, per the Inozemtseva & Holmes standard). The staleness system inverts the stamp into active protection of the defect: freshest-looking pairs include the least-verified.
+  What is at risk: id-drift (confirmed 07-11) rides in pairs marked fully fresh; the degraded cohort becomes unreconstructible as run logs age out — the fix window is closing.
+  Recommended action for Tom: add qc_mode (full | form-only) beside last_qc_at; backfill the known degraded cohort from run records NOW; make staleness scans treat form-only as due-for-full. Enables REVISE-206's safeguards; sibling of REVISE-203's manifest fix.
+  Urgency: High (backfill depends on run logs that decay)
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-208:
+  Date: 2026-07-12 | Source item: PRESUMPTION-472 (PRESUMPTION, unstated; QUEUED-EMPIRICAL) | from DISPOSITION-461
+  Statement: Systematic citation mislabels are textually regular enough for batch grep — the error class is presumed string-shaped, though one observed instance is a gloss.
+  Why flagged: 15b CHALLENGED/Strong — citation-integrity literature classifies mislabels as predominantly semantic (claim-vs-source inconsistency requiring full-text comparison: arXiv:2606.08589; Sarol et al. 2024, 20–26% inaccuracy rates dominated by semantic classes), and the presumption's only inspected instance is itself a gloss — the error class was defined by the available tool, not the observed errors. 15a support is Weak and conditional on the presumed property.
+  What is at risk: OPEN-118 closes on grep exhaustion while the semantic remainder persists under a "resolved" flag; the fix cannot see its own exemplar.
+  Recommended action for Tom: define "cluster closed" as grep yield PLUS a sampled semantic read showing negligible residue; run both passes on the same day-range before closing OPEN-118. Governs MONITOR-433's closure criterion.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-209:
+  Date: 2026-07-12 | Source item: PRESUMPTION-473 (PRESUMPTION, unstated) | from DISPOSITION-462
+  Statement: System-produced completion/freshness denominators are trusted as the universe; nothing audits the denominator (30,529/30,529; 307/307 — the latter known-wrong).
+  Why flagged: Convergent. 15a SUPPORTED/Strong for the hazard (capture-recapture doctrine: a registry cannot measure its own completeness from within — IJE 1995; modern registry methods, arXiv:2211.13842); 15b CHALLENGED/Strong against the embedded belief (even multi-source corrections carry unknown dependence bias, PMC11022997; the in-house 307/307 known-wrong figure is a live counterexample of exactly the claimed shape). Terminal "complete" states make the error permanent — no remaining detection path.
+  What is at risk: every terminal completeness state may conceal silent gaps forever; cross-agent figures inherit unaudited denominators, compounding the A-433/P-466 count cluster.
+  Recommended action for Tom: convention — terminal completeness claims require one independent corroboration (provider-side count for BOSCO per MONITOR-435; dual-channel census for registries per REVISE-200/205), and denominators carry provenance (source, method, timestamp). Extends the REVISE-205 census protocol from counts to denominators; one protocol settles this flag, MONITOR-435, and strengthens three prior flags.
+  Urgency: Medium-High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-210:
+  Date: 2026-07-12 | Source item: PRESUMPTION-474 (PRESUMPTION, unstated) | from DISPOSITION-463
+  Statement: Full-cadence autonomous production remains valuable while human consumption is severed — no quiescence or backpressure rule exists for prolonged operator absence.
+  Why flagged: 15b CHALLENGED/Strong — the same decoupling literature that licenses continued artifact production REQUIRES backpressure (unbounded production into a consumer-less system is the named anti-pattern); for signal-type outputs the verdict is unambiguous: overproduction is the cardinal lean waste, alert-fatigue doctrine says unconsumed escalations degrade the channel itself, and dead-man's-switch doctrine says operator absence should trigger a designed SAFE reduced state, not default continuation. The system is living the counterexample: A-428 escalates nightly into an unread channel; 25+ REVISE flags now await an absent reviewer (this run adds 5). 15a's Moderate support covers only the durable-artifact class and is conditional on backpressure existing somewhere.
+  What is at risk: unratified authority accumulates — every REVISE flag is a decision awaiting a decision-maker; the pipeline's human-in-the-loop legitimacy at the REVISE boundary silently expires while throughput continues; return-triage cost grows superlinearly.
+  Recommended action for Tom: adopt a quiescence rule distinguishing artifact from signal production — after 7 consecutive days without operator consumption: reduce cadence, suppress per-item escalations in favor of one daily digest, and accumulate REVISE flags into a triage-ordered return-brief. (Self-referential: this run operates under the condition it flags.)
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-211:
+  Date: 2026-07-13 | Source item: ASSUMPTION-448 (ASSUMPTION, stated) | from DISPOSITION-466
+  Statement: The knowledge graph is sufficient for thinker-agent synthesis — hub backlink concentration plus an accounted-for orphan population means "the bottleneck is not connectivity."
+  Why flagged: The claim's OWN supporting literature undermines it. Adamic et al. 2001 (sublinear search in power-law graphs) REQUIRES hubs connected to the periphery; GraphRAG's Leiden partition (Edge et al. 2024) is collectively exhaustive — every node lands in a community. A ~75%-orphan vault violates the precondition of both. Meanwhile 15b: two independent 2025 benchmarks find GraphRAG "frequently underperforms vanilla RAG" and that any benefit is contingent on graph construction quality (Xiang et al., arXiv:2506.05690; Han et al., arXiv:2502.11371); KG sparsity is the named mechanism that breaks multi-hop traversal (Saxena et al., EmbedKGQA, ACL 2020); the long tail is where retrieval already fails (Mallen et al., ACL 2023). Sufficiency was DERIVED FROM GRAPH STATISTICS WITHOUT ASKING WHAT CONSUMES THE GRAPH — an invalid derivation whether or not its conclusion holds.
+  What is at risk: "The bottleneck is not connectivity" is the load-bearing conclusion of the 2026-07-12 census and will steer effort AWAY from the graph. If wrong, C2A2 spends its effort elsewhere while three quarters of its corpus stays invisible to its own synthesis agents — and the failure is SILENT: agents produce confident syntheses over the reachable quarter and never report what they could not see.
+  Recommended action for Tom: WITHDRAW the sufficiency verdict until the retrieval mode is determined — a one-hour code read that also decides ASSUMPTION-447/MONITOR-437 (see SYSTEMIC-RISK #2). Then measure: 30 held-out synthesis questions whose gold answers require content from >=2 orphan notes; compare orphan-note recall against hub-note recall. Do not let the verdict steer prioritisation before one of these is in hand.
+  Urgency: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-212:
+  Date: 2026-07-13 | Source item: ASSUMPTION-450 (ASSUMPTION, stated) | from DISPOSITION-468
+  Statement: Active inference has no fatigue term and cannot obviously derive why a well-fitted model degrades once its goal is met; if that absence holds, aging is evidence about FEP rather than an application of it.
+  Why flagged: THE FIRST CLAUSE IS FALSE AS WRITTEN. Stephan, Manjaly, Mathys et al. (2016), "Allostatic self-efficacy: a metacognitive theory of dyshomeostasis-induced fatigue and depression," Front. Hum. Neurosci. 10:550, constructs a fatigue term INSIDE active inference — a metacognitive belief about one's own regulatory competence that degrades endogenously. Cieri et al. (2021), Front. Hum. Neurosci. 15:647513, treat AGING ITSELF as an FEP application via brain entropy, precisely inverting the claim's conclusion. Precision is already a free FEP parameter and its decay in aging is documented (Chao et al. 2021, Cerebral Cortex 31(4)). 15a's support is real but narrower than the claim: FEP's CORE answers "why persist?", not "why stop?".
+  What survives (and is worth keeping): a precise, still-open, possibly publishable question — does any FEP formalism predict decay in a system with INTACT RESOURCES, NO EXOGENOUS DAMAGE, and a SATISFIED generative model? Stephan's fatigue arises from sustained FAILURE (dyshomeostasis), not from success, so it does not strictly cover the "well-fitted model that has met its goal" case.
+  What is at risk: This gates the friston_levin standalone-synthesis promotion and has been flagged two consecutive weeks. Promoting a synthesis headlined "active inference has no fatigue term" would put C2A2's name behind a claim refuted by a well-known paper in the field's flagship venue.
+  Recommended action for Tom: RESTATE the assumption in its narrow form and re-test THAT. Required reading before the friston_levin promotion: Stephan et al. 2016 IN FULL — and ask it one question: is the downward revision of allostatic self-efficacy DERIVED from free-energy minimisation in a resource-intact, model-satisfied system, or TRIGGERED by exogenous persistent prediction error? If the latter, the narrow claim stands and should be restated in those terms. Also read Cieri et al. 2021 and Kuchling, Friston, Georgiev & Levin 2020 (Physics of Life Reviews 33:88-108) — the last being the Friston-Levin collaboration this very bridge concerns.
+  Urgency: Medium-High (gates a promotion; second consecutive flag)
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-213:
+  Date: 2026-07-13 | Source item: PRESUMPTION-476 (PRESUMPTION, unstated) | from DISPOSITION-471
+  Statement: An in-run self-caught, self-fixed tool defect needs no independent confirmation — the erring run certifies its own fix and the exoneration of all prior output.
+  Why flagged: Four independent evidentiary traditions converge WITHOUT EXCEPTION — code inspection (Fagan 1976, IBM Sys J 15(3); Basili & Selby 1987, IEEE TSE SE-13(12): an INDEPENDENT reader outperforms the author's own testing), supply-chain attestation (SLSA v1.0: L1 self-attested provenance is "trivial to forge"; only L2+ requires a build platform the tenant cannot modify), metrology (ISO/IEC 17025 cl. 6.5: traceability to an INDEPENDENT reference — an instrument certifying itself has none), and regression testing (Rothermel & Harrold 1997: safety requires re-running modification-traversing tests). The presumption conflates "the fix is correct" with "prior output was unaffected"; no doctrine found licenses that inference. FIFTH member of the self-certifying family, and it sits at the TOOLING layer BENEATH the other four — it can silently invalidate the evidence they are argued from.
+  What is at risk: If the resolver defect predates the 2026-07-12 run, the entire connectivity CSV series is silently biased; three items in this cohort (A-447, A-448, P-475) inherit the bias; and the run that would have detected this instead closed the question. Terminal exoneration removes the last detection path — the REVISE-209 hazard, one layer down.
+  Recommended action for Tom: Convention — NO SELF-PRODUCED ARTIFACT MAY CERTIFY ITSELF, at the tooling layer: a self-caught, self-fixed defect is confirmed by REPLAY (re-run the corrected tool over every prior input; diff against emitted output). Empty diff -> exonerated BY RE-EXECUTION. Non-empty -> back-correct. Replay infeasible -> prior output is marked PROVISIONAL in every downstream artifact that consumes it, not clean. NEARLY-FREE FIRST STEP: read the resolver's git history and DATE the defect. Subsumes MONITOR-436; unifies with REVISE-209 (denominators) and REVISE-214 (captures) under ONE rule — see SYSTEMIC-RISK #1.
+  Urgency: Medium-High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-214:
+  Date: 2026-07-13 | Source item: PRESUMPTION-477 (PRESUMPTION, unstated) | from DISPOSITION-472
+  Statement: Agent-mediated captures are sufficient evidence to overturn a months-standing bridge classification and seed the paradigm-shift channel — no primary-text verification pass before master-agent routing.
+  Why flagged: Decisive at the THRESHOLD level. Human secondary capture already misquotes ~1 time in 4 (Jergas & Baethge 2015, PeerJ 3:e1364 — 25.4%; corroborated in history by Lehmann et al. 2023, Scientometrics — 24.27%); LLM attribution specifically is worse (Walters & Wilder 2023, Sci Rep 13 — 18-55% fabricated citations, 24-43% of the real ones carrying substantive errors); and INTRINSIC hallucination — using the source's own vocabulary while misrepresenting its claim — is invisible to any check short of reading the source (Maynez et al. 2020, ACL). Greenberg 2009 (BMJ 339:b2680) names the systemic mechanism: an unverified secondary claim, routed onward, acquires authority through REPETITION rather than evidence. 15a's support was collected on structured extractive content (RCT reports, news), which is not this task.
+  ** THE FAILURE ALREADY OCCURRED, IN THIS RUN, ON THE FLAGSHIP ITEM. ** 15b's independent primary-source pass on ASSUMPTION-449 found Kastrup explicitly affirming a "dissociative hierarchy" with sub-alters and layered internal dissociation — directly contradicting the capture-derived "incompatible mereologies" framing. Kastrup himself notes this material is "not to be found in anything I have written" (it appears in an interview, not the written corpus), which is precisely why the capture missed it. One primary-source pass caught it, on the channel's first real use. This flag is now backed by EVIDENCE, not merely doctrine.
+  What is at risk: The paradigm-shift channel is C2A2's highest-signal pathway. Feeding it unverified secondary material converts it into its highest-VARIANCE one. A capture-artifact false positive corrupts C2A2's central evidence stream, and every downstream artifact inherits it unmarked.
+  Recommended action for Tom: GATE the paradigm-shift channel behind a primary-text verification pass. (1) Every capture triggering a reclassification must carry VERBATIM quotations with locators (page/section/timestamp). (2) Label captures LEAD, not FINDING, until they pass the gate — captures remain excellent LEAD GENERATION and that use should continue unchanged. (3) Run a FActScore-style atomic decomposition (Min et al. 2023, EMNLP) against the primary text. (4) Sample-audit 10 existing captures underwriting standing bridge classifications and measure the misattribution rate; given that the FIRST such check returned a miss, set the prior high. Same rule as REVISE-213 and REVISE-209, applied at the INPUT layer — see SYSTEMIC-RISK #1.
+  Urgency: HIGH (gates the first use of the paradigm-shift channel; ASSUMPTION-449/MONITOR-438 is blocked on it)
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+
+## 2026-07-16 — REVISE flags from 15a/15b/15c pipeline run (autonomous; 07-13/07-14-backfill/07-15 batches)
+
+SYSTEMIC-RISK #4:
+  Date: 2026-07-16
+  Affected items: ASSUMPTION-454, ASSUMPTION-456, PRESUMPTION-478 (invisibility), PRESUMPTION-481, PRESUMPTION-482, PRESUMPTION-483
+  Common vulnerability: LIVENESS-AS-SUCCESS. The fleet's only failure detector (the scheduler watchdog) reads firing / a current lastRunAt as success. Consequently silent crashes that write nothing (A-456; 07-14 x4), verification checks pointed at unreachable paths (A-454), quota exhaustion on delivery paths (P-478), crashed-but-unretried runs with no started-but-unfinished signal (P-481), un-measured audit coverage (P-482), and redundant monitors that share the one lastRunAt signal (P-483) are ALL invisible to it. The redundancy is illusory: multiple green checks reduce to one correlated signal (Knight & Leveson).
+  Literature basis: liveness-vs-correctness monitoring (heartbeat != health); gray/silent-failure; survivorship bias in audit coverage; N-version / common-cause failure (Knight & Leveson 1986); crash-only design (Candea & Fox 2003).
+  Risk level: Critical
+  Recommendation: treat "the watchdog is green" as evidence of liveness only. Add an artifact-content check per output-bearing task (REVISE-215), durable start/finish markers + a started-but-unfinished alarm (REVISE-216), a quota-exhaustion alarm (REVISE-219), a coverage ratio (MONITOR-443), and a monitor->signal independence audit (MONITOR-444). NOTE: SYSTEMIC-RISK #1 (self-certification) is addressed this run by PREMISE-096 (A-452) — its proposed terminator.
+
+REVISE-215:
+  Date: 2026-07-16 | Source item: ASSUMPTION-454 + ASSUMPTION-456 (ASSUMPTION, stated; QUEUED-EMPIRICAL) | from DISPOSITION-475, DISPOSITION-480
+  Statement: FIRING-HEALTH / UNFALSIFIABLE-GREEN-CHECK. Two of the watchdog's three output checks point at unmounted paths and can never fail (A-454); and a current lastRunAt is read as a valid non-empty output, so the watchdog called 07-14 healthy while four tasks crashed and wrote nothing (A-456).
+  Why flagged: 15a Strong on both — the liveness-vs-correctness distinction is foundational, and a check wired to an unreachable target is a canonical unfalsifiable green check that inflates apparent coverage. 15b found NO defense of either practice. This is the generative defect behind SYSTEMIC-RISK #4, demonstrated in-run on 07-14.
+  What is at risk: the fleet's sole failure detector certifies crashed, empty-output runs as healthy; true coverage is ~1/3, not 3/3.
+  Recommended action for Tom: (1) verify the watchdog's sandbox mounts against its three verification paths; mount the folders in the watchdog's environment or DROP the two inert rows and report coverage honestly. (2) Add an artifact-content check (non-empty, well-formed, recent mtime) for every output-bearing task; for one day compare the lastRunAt-set against the valid-artifact-set (07-14's four crashes are a ready sample).
+  Urgency: High
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-216:
+  Date: 2026-07-16 | Source item: ASSUMPTION-458 + PRESUMPTION-481 (mixed; QUEUED-EMPIRICAL / unstated) | from DISPOSITION-482, DISPOSITION-483
+  Statement: CHECKPOINT-BEFORE-WORK / DURABILITY. "The .md persists even if delivery fails" assumes the failure lands at the delivery step, but a crash before Step 2 writes no file (A-458); and a crashed mid-run task is presumed a harmless idempotent no-op covered by tomorrow, though the four 07-14 crashes retried nothing, left no partial artifact, and raised no alarm (P-481).
+  Why flagged: 15b Strong on both, grounded in write-ahead logging / ARIES (durable write must precede the risky operation) and crash-only design / at-least-once semantics (idempotent-and-skippable requires checkpointing + retry + a started-but-unfinished marker). A-458 was FALSIFIED in-run on 07-14.
+  What is at risk: any crash before the write step loses the whole deliverable; a whole day's throughput can vanish with no record it was attempted.
+  Recommended action for Tom: write a checkpoint/skeleton .md BEFORE the long read or any crash-prone step (treat the deliverable as write-ahead, not a late artifact); add durable start + completion markers, retry-on-crash, and a "started-but-unfinished" alarm the watchdog reads.
+  Urgency: High
+  PROVENANCE: Origin 14a/14b; Chain [14a/14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-217:
+  Date: 2026-07-16 | Source item: ASSUMPTION-455 + ASSUMPTION-460 + PRESUMPTION-484 (mixed; QUEUED-EMPIRICAL / unstated) | from DISPOSITION-476, DISPOSITION-486, DISPOSITION-488
+  Statement: STALE SELF-DESCRIPTION / STALE-WATCH — EVIDENCE-FRESHNESS GATE. The master wiki has not been written since 07-09 while daily runs report success and its network-state block diverges from pattern_detector_findings.md (A-455); its un-ingested 07-10->07-14 deposits feed the FINDING-048 / FLAG-016 paradigm-shift watch, turning ingestion lag into a stalled evidence path into a live flag (A-460); and flags are presumed to self-refresh, so FINDING-048 is carried as a live watch with no staleness marker while its evidence is frozen (P-484).
+  Why flagged: 15b grounded in data-freshness SLA + stale-while-revalidate / cache-coherence doctrine — derived/authoritative state served without a freshness marker while its source is frozen is a coherence violation; consumers cannot tell live from stale. On the paradigm-shift channel (C2A2's central evidence stream) this is high-severity.
+  What is at risk: every agent reading the master wiki as current is misinformed; FINDING-048 could be confirmed or killed on evidence that stopped arriving 07-10; a stalled watch is indistinguishable from a live one downstream.
+  Recommended action for Tom: add an explicit as-of timestamp + evidence-freshness gate to the master wiki AND to every flag/watch; block confirm/kill transitions under stale ingestion; trace FINDING-048's confirm/kill condition to the un-ingested deposits and repair the ingestion; fix the daily refresh that fires but writes nothing (ties to REVISE-215). Kin to OPEN-112.
+  Urgency: High
+  PROVENANCE: Origin 14a/14b; Chain [14a/14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-218:
+  Date: 2026-07-16 | Source item: PRESUMPTION-479 + ASSUMPTION-461 + PRESUMPTION-485 (mixed; QUEUED-EMPIRICAL / unstated) | from DISPOSITION-478, DISPOSITION-487, DISPOSITION-489
+  Statement: OPEN-WORLD / MULTIPLE-CAUSE FAILURE. The sync-outage diagnosis presumed failure modes are mutually exclusive — that finding a cause is finding the cause (P-479); today's connection errors are filed as a clean "third distinct cause" after login and quota (A-461); and the cause set is presumed closed and enumerable, so each new signature is absorbed as the final one and every point-fix (REVISE-198/199) is defeated by the next unmodeled cause (P-485).
+  Why flagged: 15b Strong, grounded in resilience engineering (R.I. Cook, "How Complex Systems Fail": each contributor necessary, only jointly sufficient; "the root cause" is a blame construct) and fault-masking (a known cause hides a co-occurring one). Three new signatures in ~two weeks (login -> quota -> connection) empirically refute closure; enumerate-and-patch cannot converge.
+  What is at risk: remedy budget spent chasing a receding tail; every prior sync-outage diagnosis accepted on single-cause reasoning; the fleet stays brittle to the next unmodeled cause while each fix "works" against the cause it targeted.
+  Recommended action for Tom: shift from enumerate-and-patch to GRACEFUL DEGRADATION / defense-in-depth; make delivery paths fail soft; adopt contributing-factors analysis and score each failure DIRECTION independently (re-score MONITOR-434 per-direction); classify crash tails by error string AND surviving artifact AND co-occurring conditions; count distinct signatures since 07-01 and, for each, how many prior remedies it defeated.
+  Urgency: Medium-High
+  PROVENANCE: Origin 14b/14a; Chain [14b/14a -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+REVISE-219:
+  Date: 2026-07-16 | Source item: PRESUMPTION-478 (PRESUMPTION, unstated) | from DISPOSITION-477
+  Statement: MODEL-QUOTA ADMISSION CONTROL. Model quota is presumed an unmetered substrate — ~37 daily tasks with no budget, no back-pressure, no exhaustion alarm, no precedence; the evening delivery died on "out of usage credits" while the day's producers ran to completion and the watchdog reported all clear.
+  Why flagged: 15a found NO support for treating a finite resource as unmetered; 15b Strong — admission-control / load-shedding literature (RED, Floyd & Jacobson 1993; CoDel, Nichols & Jacobson 2012; SRE load-shedding practice) uniformly requires metering, back-pressure, and priority under exhaustion. Because producers are scheduled before delivery, the quota is systematically consumed by lower-value work — a designed-in precedence inversion, invisible to the liveness-only watchdog. PRESUMPTION + strong challenge -> REVISE, HIGH.
+  What is at risk: delivery/reconciliation (the human-facing output); every queued remedy that assumes a working channel (REVISE-198/199).
+  Recommended action for Tom: introduce a token/quota budget with back-pressure; a precedence order that protects delivery over producers (shed low-value producer work first under exhaustion); and an exhaustion alarm the watchdog can read. Plot the cost-tracker's daily series against the account ceiling to confirm and to set the budget.
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+---
+
+## 2026-07-17 — new REVISE flags from 15c (DISPOSITION-491/493/494/496)
+
+REVISE-220:
+  Date: 2026-07-17 | Source item: ASSUMPTION-463 (stated) | Disposition: DISPOSITION-491 | Urgency: HIGH
+  Problem: Git-persistence cannot self-complete from the autonomous sandbox (mount denies .git object writes; no push creds); outputs left "staged for the Mac" and unpersisted across an 11-day autonomous stretch.
+  At risk: All autonomous run outputs incl. ~470-file Summa diff; durable store unreachable without a human.
+  Recommended action (Tom): Add a credentialed, review-gated staging-ref persistence path + age-based escalation; preserves No-Blind-Push while ending indefinite non-persistence.
+  15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a,15b -> 15c]; Item type=ASSUMPTION
+
+REVISE-221:
+  Date: 2026-07-17 | Source item: PRESUMPTION-486 (unstated) | Disposition: DISPOSITION-493 | Urgency: HIGH
+  Problem: Re-syncing the narrative status line is presumed to discharge staleness; indicator reads current while FINDING-048's feeding deposits stay un-ingested (Goodhart substitution).
+  At risk: FINDING-048 (FLAG-016) paradigm-shift watch indistinguishable from live while its evidence is frozen.
+  Recommended action (Tom): Require a freshness gate binding narrative-date to evidence-age; render a staleness badge. Consolidate with REVISE-217.
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c]; Item type=PRESUMPTION
+
+REVISE-222:
+  Date: 2026-07-17 | Source item: PRESUMPTION-487 (unstated) | Disposition: DISPOSITION-494 | Urgency: HIGH
+  Problem: No-Blind-Push + "staged for the Mac" presume a human appears regularly; on an 11-day autonomous stretch the safety rule became a durability failure ("staged == never persisted").
+  At risk: Every run's durable output hinges on an absent human step.
+  Recommended action (Tom): KEEP No-Blind-Push (do not fail-open); add durable staging + age-based human-on-the-loop escalation. 15b warns fail-open would trade a durability problem for an integrity problem.
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c]; Item type=PRESUMPTION
+
+REVISE-223:
+  Date: 2026-07-17 | Source item: PRESUMPTION-489 (unstated) | Disposition: DISPOSITION-496 | Urgency: MEDIUM-HIGH
+  Problem: Agent outputs presumed cleanly separable from a shared base; a shared working tree lets one agent's incidental churn (470-file last_qc_at bumps) stall another agent's commit — no per-agent isolation.
+  At risk: Commit stalls and entangled reviews; compounds PRESUMPTION-446 (SYSTEMIC-RISK #1 Critical, shared repo / no coordination protocol).
+  Recommended action (Tom): Give each scheduled agent its own git worktree/clone (private index/HEAD); add commit retry-with-backoff.
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c]; Item type=PRESUMPTION
+
+REVISE-224:
+  Date: 2026-07-18 | Source item: ASSUMPTION-465 (stated) | Disposition: DISPOSITION-497 | Urgency: HIGH
+  Problem: Today's git-persistence blocker is framed as a stale unremovable `.git/index.lock` from a concurrent 04:40 process — a "different proximate cause" than A-463. But "Operation not permitted" on lock REMOVAL points to the mount/permission root, i.e. the SAME family as A-463.
+  At risk: Git persistence. A lock-hygiene fix could leave the mount write-permission blocker intact; compounds durability (REVISE-220/222).
+  Recommended action (Tom): Run the discriminator as the scheduled user on the mount — `touch .git/index.lock && rm .git/index.lock`. Removal denied -> mount/permission root (fix once at credential/mount layer, resolves A-463+A-465); removal succeeds -> distinct lock-hygiene (per-agent worktree/lock cleanup, see REVISE-223).
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a,15b -> 15c]; Item type=ASSUMPTION
+
+REVISE-225:
+  Date: 2026-07-18 | Source item: ASSUMPTION-466 (stated) | Disposition: DISPOSITION-498 | Urgency: MEDIUM-HIGH
+  Problem: Metabolism regen script relies on `~/`/implicit HOME, which resolves to the sandbox home under the scheduler (exit 1). But the operative staleness is the OpenStory writer freeze (db unwritten since 07-05); a path-only fix yields a false "fixed."
+  At risk: The metabolism view (recurs consecutive days).
+  Recommended action (Tom): (1) explicit mount-aware absolute paths (not `~/`); (2) verify the mount exposes the live db path; (3) unfreeze the OpenStory writer; (4) bind "refreshed" to db mtime (see MONITOR-448 / P-491). Do not close on exit-0 alone.
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a,15b -> 15c]; Item type=ASSUMPTION
+
+REVISE-226:
+  Date: 2026-07-18 | Source item: ASSUMPTION-467 (stated) | Disposition: DISPOSITION-499 | Urgency: MEDIUM
+  Problem: A maintained 300-PRS narrative figure is treated as canonical over the computed per-file sum (447); two same-day agents advanced different counts. Dual-bookkeeping guarantees drift, but neither figure is canonical without a PRS DEFINITION — auto-adopting the computed sum risks over-counting (Goodhart-by-mechanization).
+  At risk: Metric integrity; narrative-vs-evidence family; OPEN-112.
+  Recommended action (Tom): Write an explicit PRS counting rule; compute both figures under it; reconcile once; designate a single AUTOMATED canonical counter so agents cannot diverge. Treat the 300/447 gap as a definitional signal, not a defect to eliminate toward one side.
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a,15b -> 15c]; Item type=ASSUMPTION
+
+REVISE-227:
+  Date: 2026-07-18 | Source item: PRESUMPTION-492 (unstated) | Disposition: DISPOSITION-502 | Urgency: MEDIUM-HIGH
+  Problem: The lit pipeline presumes 15d RE-TRIGGER generation stays within daily drain capacity; a 129-item undrained backlog (07-05, 07-12) persists. Queueing theory confirms lambda>mu -> unbounded growth, but a two-cohort snapshot cannot distinguish rate-instability from a COVERAGE bug (the daily loop structurally skips RE-TRIGGER cohorts) — and the pipeline's own logs favor the omission hypothesis.
+  At risk: The searched corpus silently diverges from the enqueued corpus (integrity of the 15-pipeline). This is the live backlog repeatedly not drained (see BACKLOG NOTE in lit_search_returns.md).
+  Recommended action (Tom/orchestrator): MEASURE FIRST — log 15d enqueue/day vs 15abc drain/day for 1-2 weeks. enqueue<=drain but backlog persists -> omission: schedule RE-TRIGGER (and the 18 orphaned 06-29..07-06 EMPIRICAL) cohorts into the drain loop. enqueue>drain sustained -> add bounded work-queue + fan-out cap + STALE/TTL aging. Different mechanisms, different fixes.
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c]; Item type=PRESUMPTION
+
+REVISE-228:
+  Date: 2026-07-18 | Source item: PRESUMPTION-493 (unstated) | Disposition: DISPOSITION-503 | Urgency: HIGH
+  Problem: Fail-loud presumes an attending listener within bounded time; on day 12 of no attended session, loud surfacings accumulate unactioned (17-day review gap, 27 proposals, staged-not-pushed writes). Generalizes P-487 beyond No-Blind-Push. 15b narrows the true harm to PERISHABLE-referent surfacings (durable idempotent ones are deferred, not lost) and warns drastic auto-action would reintroduce blind-push risk.
+  At risk: Perishable-referent surfacings that decay while unattended — unpushed git writes (may never persist), frozen dbs, expiring credentials.
+  Recommended action (Tom): (1) ensure all surfacings are durable; (2) classify surfacings by referent durability; (3) wire ONLY perishable-referent items to a time-bounded fallback (alternate channel or a bounded, review-gated autonomous persistence step) so a lone absent listener is not a single point of failure — without opening a blind-push hole for durable items. Consolidate with REVISE-220/222.
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c]; Item type=PRESUMPTION

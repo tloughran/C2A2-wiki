@@ -18366,3 +18366,2062 @@ BACKLOG SURFACED (fail-loud): 116 of the 123 queued 15d/monthly items remain [QU
 Running maxima after this run: PREMISE-094 (unchanged), MONITOR-418 (unchanged), REVISE-188, DISPOSITION-423.
 
   PROVENANCE: Origin: c2a2-lit-search-pipeline (scheduled); Chain: [14a/14b -> 15a,15b -> 15c -> 15d -> 15c] (7 items, cycle refresh); Transform: full refresh pipeline run 2026-07-08; Current status: COHORT-DISPOSITIONED (7/7; 116 backlog items deferred, surfaced)
+
+## 2026-07-09 RUN — c2a2-lit-search-pipeline (scheduled; autonomous, Tom not present) — fresh cohorts 2026-07-07 (7 items) + 2026-07-08 (8 items)
+
+*15 fresh items processed end-to-end. 15a and 15b ran as independent parallel subagents (independence preserved — neither read the other's results). 15c dispositioned all 15 pairs. QUEUED-EMPIRICAL items (A-427/429/431/432) received the literature pass; their decisive in-house tests are named in the dispositions. The 15d re-trigger backlog (measured this run: 110 items) remains deferred (5th consecutive run) — surfaced in the tally. Full result files: lit_search_results/for|against/.*
+
+### 15a RETURNS (FOR)
+- A-426: PARTIALLY-SUPPORTED (Moderate) — Manakul et al. 2023, "SelfCheckGPT" (EMNLP) — prior-cross-checking is an established hallucination-detection family; "reliably" exceeds reported detection rates.
+- A-427: PARTIALLY-SUPPORTED (Moderate) — sqlite.org, "How To Corrupt An SQLite Database File" — quiescent-copy fidelity and quick_check validity documented; mount-layer fidelity is the unverified link (empirical, in-house).
+- A-428: SUPPORTED (Moderate) — NIST SP 800-39 risk-acceptance doctrine — documented, surfaced deferral is sanctioned practice, conditional on owner + revisit date.
+- P-455: PARTIALLY-SUPPORTED (Weak) — Avizienis 1985, N-version diversity (analogous only) — independent diagnosis is an accepted baseline layer; practice adds correlation on top.
+- P-456: NO-SUPPORT-FOUND (None) — Little 1961 / Reinertsen 2009 address the domain and uniformly prescribe backpressure; contradicted, not novel.
+- P-457: PARTIALLY-SUPPORTED (Moderate) — Xie et al. 2024 (ICLR); Pan et al. 2023 (misinformation pollution) — burden-of-proof on retrieved claims is defensible calibration; prior-as-oracle fails by construction for post-cutoff events.
+- P-458: PARTIALLY-SUPPORTED (Weak) — Akidau et al. 2015, "The Dataflow Model" (VLDB) — EOD boundaries are standard practice only WITH late-arrival handling; unconditional wall-clock completeness unattainable.
+- A-429: SUPPORTED (Strong) — Little 1961; Hopp & Spearman, Factory Physics — rho>1 implies unbounded backlog, elementary queueing; only the lambda/mu measurement remains in-house.
+- A-430: SUPPORTED (Strong) — Reinertsen 2009 (WSJF) + clinical/SOC triage doctrine — tiered partial service beats FIFO/deferral under overload, conditional on an aging/anti-starvation mechanism.
+- A-431: PARTIALLY-SUPPORTED (Weak) — ANSI/ISA-18.2 alarm rationalization — environmental reclassification is sanctioned only as a documented, evidence-based determination, not a no-reverification judgment.
+- A-432: PARTIALLY-SUPPORTED (Moderate) — idempotency-key/dedup practice — key-diff vs processed-log is canonical; date-stripping is a textbook lossy-normalization collision risk; decisive test is a collision audit.
+- P-459: PARTIALLY-SUPPORTED (Weak) — Liu & Layland 1973 — static priorities provably valid only under stationarity; practice re-scores at staleness thresholds.
+- P-460: NO-SUPPORT-FOUND (None) — Elliott et al. 2017 (living systematic reviews); Glaser & Strauss (constant comparison) — frame changes obligate re-examination in every tradition found; contradicted, not novel.
+- P-461: PARTIALLY-SUPPORTED (Weak) — Waffenschmidt et al. 2019 (BMC Med Res Methodol) — experienced single screeners miss ~3% overall, but rare high-stakes categories are the worst case (Gartlehner et al. 2020: 13% single-pass miss).
+- P-462: PARTIALLY-SUPPORTED (Moderate) — Cho & Garcia-Molina 2003 (ACM TODS) — fixed-interval polling can beat naive change-rate-proportional policies; supports "fixed until data says otherwise," not "never adapted."
+NOVELTY flags: none (all 15 addressed by literature; P-456 and P-460 contradicted rather than unaddressed).
+
+### 15b RETURNS (AGAINST)
+- A-426: CHALLENGED (Strong) — arXiv:2511.11087, "Can LLMs Detect Their Own Hallucinations?" (58.2% self-detection) — self-verification misses ~40% of fabrications; catalog incompleteness also false-rejects genuinely new events.
+- A-427: CHALLENGED (Strong) — sqlite.org howtocorrupt + WAL-copy practitioner reports — WAL-mode byte-copy without sidecars fails quick_check on a HEALTHY source; the inference direction is unsound.
+- A-428: CHALLENGED (Strong) — Vaughan 1996, The Challenger Launch Decision; J. Safety Research 2022 review — surfaced-but-waived deferrals are the classic normalization-of-deviance precursor; surfacing decays to functional silence.
+- P-455: CHALLENGED (Moderate) — AIOps alert/incident survey 2024; incident-merging doctrine — one incident record per spanning failure is mandated; per-task diagnosis yields divergent recorded verdicts of one cause.
+- P-456: CHALLENGED (Strong) — queueing analyses (Little's Law); Sadowski et al. 2018 (ICSE, code review at Google) — 4->13 pending is the lambda>mu signature; overloaded reviewers review worse, not just later.
+- P-457: CHALLENGED (Strong) — Longpre et al. 2021 (EMNLP), entity-based knowledge conflicts — priors are systematically biased against ALL post-cutoff events; the policy inverts RAG's design rationale and silently freezes recall at cutoff.
+- P-458: CHALLENGED (Strong) — Akidau et al. 2015 (VLDB) — perfect completeness watermarks are intractable; the 3 in-flight sessions are a live counterexample; late transcripts drop or misattribute absent an allowed-lateness policy.
+- A-429: PARTIALLY-CHALLENGED (Moderate) — Little's-Law scaling analyses; autoscaling backlog math — arithmetic holds but the "structural" framing is wrong: throughput is a provisioning choice (runs/day, parallelism), so the claim as worded forecloses half the remedy space.
+- A-430: CHALLENGED (Strong) — OS scheduling canon (Silberschatz; aging) — strict priority under standing overload = indefinite starvation of non-HIGH tiers by construction; acceptable only WITH aging, which the current scheme omits.
+- A-431: CHALLENGED (Strong) — Leveson & Turner 1993, Therac-25 (IEEE Computer) — reclassifying alarms as known-spurious without verification is the canonical accident precursor; environmental plausibility is not evidence about content.
+- A-432: CHALLENGED (Moderate) — exactly-once-processing analyses — date-stripping widens the collision class (recurring/same-titled items masked); crash windows break log completeness.
+- P-459: PARTIALLY-CHALLENGED (Moderate) — "Bug Priority Change" empirical study, Apache projects (arXiv:2403.05059) — priorities get revised, mostly during exactly the pre-processing window where C2A2 items age; stored tags need aging or burn-time re-scoring.
+- P-460: CHALLENGED (Strong) — AHRQ living-systematic-review guidance (NBK579073); Saldana; Glaser & Strauss 1967 — extraction is (source x lens); a lens change invalidates capture-finality unless prospective-only application is an explicit documented decision.
+- P-461: CHALLENGED (Strong) — Gartlehner et al. 2020 (J Clin Epi: single screener misses 13% vs dual 3%); Waffenschmidt et al. 2019 — single-pass single-judge labeling of a rare, fuzzy, unrecoverable category is precisely the quantified anti-pattern.
+- P-462: CHALLENGED (Moderate) — adaptive-polling literature (44-89% fewer polls); dynamic-polling practice — fixed load-blind cadences are wrong in one direction the moment rates move; this system's own queue growth is the failure signature.
+
+### SYSTEMIC-RISK-FLAG (15b; 2026-07-09) — Risk level: High
+Affected items: ASSUMPTION-428, ASSUMPTION-429, ASSUMPTION-430, PRESUMPTION-456, PRESUMPTION-459, PRESUMPTION-462.
+Common vulnerability: OPEN-LOOP BACKLOG GOVERNANCE — arrival exceeds service at two choke points (15d re-trigger queue; human review) while cadences are fixed, priorities frozen at queue time, and deferrals discharged by surfacing alone. Queueing theory, scheduling theory, and safety science jointly predict the observed symptoms (monotone queue growth, week-old reviews, 116-item deferred backlog): one control-loop deficiency expressed at six points, not six separate issues.
+Literature basis: Little's Law; starvation/aging (OS canon); normalization of deviance (Vaughan 1996; J. Safety Research 2022); adaptive vs fixed polling.
+Recommendation: close the loop centrally — instrument lambda/mu at both choke points, add aging to all priority queues, auto-escalate repeated deferrals, key cadences to queue depth. Item-by-item fixes without the shared feedback mechanism will reproduce the pattern elsewhere. (Extends the 2026-07-08 "unvalidated-instrument" cluster: that was self-trusting instruments; this is self-trusting queues.)
+
+### 15c DISPOSITIONS (DISPOSITION-424..438)
+
+DISPOSITION-424:
+  Date: 2026-07-09 | Item: ASSUMPTION-426 (ASSUMPTION, stated)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong)
+  Net assessment: Catalog cross-checking is a legitimate, literature-backed detection layer, but "reliably" is quantitatively contradicted (~58% self-detection; catalog incompleteness false-rejects real new events). C2A2's case is stronger than the pure self-verification setting (the catalog is curated ground truth), so the true error rate is unknown, not known-bad.
+  Disposition: MONITOR (-> MONITOR-419)
+  What would change the disposition: an in-situ measured error rate for the catalog cross-check (sample of accepted/rejected search results audited against ground truth) — low error -> INCORPORATE as one layer (never sole gate); high error -> REVISE. Pairs with P-457/REVISE-191 (same prior-vs-evidence axis).
+  Monitoring cadence: Weekly | Priority: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-425:
+  Date: 2026-07-09 | Item: ASSUMPTION-427 (ASSUMPTION, stated; QUEUED-EMPIRICAL)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong)
+  Net assessment: Both directions converge: the inference "quick_check fails on the mount copy => source corrupt" is unsound. WAL-mode byte-copies without -wal/-shm sidecars fail integrity checks on healthy sources; mount-layer torn/short reads are an independent live hypothesis. quick_check failure on the copy establishes only that (copy OR copy-process OR source) is faulty.
+  Disposition: REVISE (-> REVISE-189)
+  What is at risk: the openstory recovery path — a healthy source DB could be declared corrupt, triggering unnecessary restore and data loss to the backup point; interacts badly with A-431 alarm-dismissal in the opposite direction.
+  Recommended action: do NOT act on the copy verdict. Run quick_check natively on the Mac source (the already-pending empirical test, which this sandbox cannot run — fail-loud); copy -wal/-shm sidecars or checkpoint (PRAGMA wal_checkpoint(TRUNCATE)) before any byte-copy; prefer sqlite3 .backup / VACUUM INTO; require two independent copy paths to agree before declaring source corruption.
+  Urgency: High
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-426:
+  Date: 2026-07-09 | Item: ASSUMPTION-428 (ASSUMPTION, stated)
+  15a: SUPPORTED (Moderate) | 15b: CHALLENGED (Strong)
+  Net assessment: Surfaced deferral is sanctioned risk-acceptance practice, but ONLY with owner, revisit date, and escalation on repeat; without those, surfacing decays into normalization of deviance. C2A2 has now surfaced the same deferral 5 consecutive runs with no decision — the literature's decay pattern is already in progress.
+  Disposition: MONITOR (-> MONITOR-420), with explicit escalation trigger
+  What would change the disposition: a cadence/cap decision on OPEN-115/116 -> INCORPORATE the conditional version ("deferral acceptable with owner+deadline+escalation"); two further runs carrying the backlog with no decision -> auto-escalate to REVISE (the trigger IS the test of the assumption). Redundant-flag note: the structural decision itself is already in front of Tom via PREMISE-095 + OPEN-115; this MONITOR tracks the meta-claim, not the fix.
+  Monitoring cadence: Weekly | Priority: High
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-427:
+  Date: 2026-07-09 | Item: PRESUMPTION-455 (PRESUMPTION, unstated)
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Moderate)
+  Net assessment: Independent diagnosis is an accepted baseline (diversity argument), but incident-management doctrine mandates a shared incident record for spanning failures; per-task diagnosis of one cause yields divergent recorded verdicts (observed during the 07-03+ sync outage: multiple agents separately diagnosed the same infrastructure failure).
+  Disposition: MONITOR (-> MONITOR-421)
+  What would change the disposition: a second spanning failure producing materially divergent or duplicated diagnoses -> REVISE (add a lightweight shared incident file); adoption of a shared incident record -> INCORPORATE the layered version. Kin to REVISE-185 (self-masking alerting, same outage family).
+  Monitoring cadence: Weekly | Priority: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-428:
+  Date: 2026-07-09 | Item: PRESUMPTION-456 (PRESUMPTION, unstated)
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong)
+  Net assessment: Zero support; the literature that addresses the domain uniformly prescribes the opposite (WIP limits, backpressure, aging). The lambda>mu signature is already observed (pending 4->13 in two days; last review a week old), and overload degrades review QUALITY, not just latency. The approval gate is C2A2's core human-in-the-loop control — an unbounded queue in front of it silently converts "human-reviewed" into "human-backlogged."
+  Disposition: REVISE (-> REVISE-190)
+  What is at risk: the meaningfulness of the human approval gate itself; every proposal-driven change downstream inherits review-under-overload quality.
+  Recommended action: add a WIP cap + aging policy to proposal intake (e.g., cap pending at N, auto-expire or batch-summarize items older than X days, and have agents throttle proposal emission when the cap is hit — backpressure, not silent accumulation).
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-429:
+  Date: 2026-07-09 | Item: PRESUMPTION-457 (PRESUMPTION, unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong)
+  Net assessment: Calibrated skepticism toward retrieved claims is defensible (misinformation-pollution literature), but prior-AS-ORACLE fails by construction for post-cutoff events: priors are systematically biased against everything after cutoff, so the policy silently freezes recall at training time. The supported version (verify via independent retrieval) differs from the presumed one (prior wins by default).
+  Disposition: REVISE (-> REVISE-191)
+  What is at risk: any tradition-agent decision that rejected a genuinely new post-cutoff event (talk, paper, appearance) because the model had not heard of it; systematic novelty-blindness in exactly the monitoring tasks the agents exist for.
+  Recommended action: replace prior-wins with a verification rule — on prior/retrieval conflict about a post-cutoff event, neither side is oracle; require a second independent source (or primary source) before accept OR reject, and log the conflict. Pairs with A-426/MONITOR-419.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-430:
+  Date: 2026-07-09 | Item: PRESUMPTION-458 (PRESUMPTION, unstated)
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong)
+  Net assessment: EOD batch boundaries are standard practice, but only with an allowed-lateness/late-arrival mechanism; unconditional completeness at a wall-clock cut is unattainable and the 3 in-flight sessions at the 07-07 fire are a live counterexample. Whether C2A2 already has the mitigation depends on A-432: the slug-diff/PROCESSED_LOG detector would catch late transcripts on the next run IFF it is faithful.
+  Disposition: MONITOR (-> MONITOR-422), gated on the A-432 audit
+  What would change the disposition: A-432 collision/completeness audit passes AND the 3 late 07-07 transcripts demonstrably got processed on a later run -> INCORPORATE the conditional version (EOD cut + next-run sweep = allowed-lateness policy in effect); either fails -> REVISE (add explicit late-arrival sweep).
+  Monitoring cadence: Weekly | Priority: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-431:
+  Date: 2026-07-09 | Item: ASSUMPTION-429 (ASSUMPTION, stated; QUEUED-EMPIRICAL)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Elementary queueing theory (rho>1 -> unbounded backlog) plus the system's own run logs (arrival ~55/week vs observed burn 7-20/run; queue 116 and growing across 5 runs) make the core claim about as well-evidenced as items in this register get. The 15b challenge does not contest the arithmetic — it corrects the WORDING: "structurally exceeds" holds only under current provisioning; throughput is a design choice (runs/day, parallelism, batch size), so the remedy space includes provisioning increases, not only cadence/cap redesign. Folded into the premise statement.
+  Disposition: INCORPORATE (-> PREMISE-095)
+  Validated premise statement: Under current provisioning (one scheduled pipeline run/day at 7-20 items/run), the 15d weekly re-trigger arrival rate (~55/week) exceeds the service rate; the refresh queue grows without bound absent a cadence change, admission cap, or throughput/provisioning increase. "Structural" means structural-under-current-provisioning, not immutable.
+  Confidence: Moderate (precise lambda/mu instrumentation still recommended — the QUEUED-EMPIRICAL test stands)
+  Applicable to: OPEN-115/OPEN-116 (the cadence/cap decision), 15d re-trigger design, A-428/MONITOR-420, A-430/MONITOR-423, run scheduling
+  Re-check cadence: Monthly (2026-08-09)
+  Consistency check: no contradiction with existing premises; consonant with the validated human-review-capacity constraint premise. NOTE: P-462 ("fixed cadences are right-sized, never adapted") is INCONSISTENT with this premise — dispositioned REVISE (DISPOSITION-438) rather than silently coexisting.
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: INCORPORATED
+
+DISPOSITION-432:
+  Date: 2026-07-09 | Item: ASSUMPTION-430 (ASSUMPTION, stated)
+  15a: SUPPORTED (Strong) | 15b: CHALLENGED (Strong)
+  Net assessment: Genuine contest, split cleanly by clause. Tiered partial burn under overload is triage doctrine (supported); but strict priority under STANDING overload starves non-HIGH tiers indefinitely by construction, and the current scheme has no aging mechanism. Both literatures agree on the fix: partial burn is acceptable only WITH anti-starvation aging.
+  Disposition: MONITOR (-> MONITOR-423)
+  What would change the disposition: adding an aging rule (e.g., every run burns the K oldest non-HIGH items alongside the HIGH tier, or priority escalates with queue age) -> INCORPORATE the conditional version; two more runs where zero non-HIGH backlog items are burned -> REVISE (starvation confirmed in practice). Pairs with P-459/MONITOR-425.
+  Monitoring cadence: Weekly | Priority: High
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-433:
+  Date: 2026-07-09 | Item: ASSUMPTION-431 (ASSUMPTION, stated; QUEUED-EMPIRICAL)
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong)
+  Net assessment: Alarm rationalization is sanctioned practice only as a DOCUMENTED, EVIDENCE-BASED determination; reclassifying a failing QC signal as environmental on plausibility alone, without re-verifying content, is the canonical accident precursor (Therac-25 pattern). Environmental plausibility is not evidence about content. Member of the standing "unvalidated-instrument" SYSTEMIC-RISK cluster.
+  Disposition: REVISE (-> REVISE-192)
+  What is at risk: trust in the qc_sweep instrument itself — if "fidelity fail" can be waved off once without verification, every future fail inherits the known-benign escape hatch; actual content corruption would ride through.
+  Recommended action: run the cheap decisive test — regenerate /tmp/dayNNN_segments.json in-sandbox and re-run the fidelity check. Pass -> document environmental cause with evidence attached; fail -> real content issue. Never close a QC fail on plausibility alone.
+  Urgency: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-434:
+  Date: 2026-07-09 | Item: ASSUMPTION-432 (ASSUMPTION, stated; QUEUED-EMPIRICAL)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Moderate)
+  Net assessment: Key-diff against a processed-log is the canonical dedup design; both sides agree the two failure modes are exactly the ones named in the claim's own parenthetical — date-stripping widens the collision class (recurring/same-titled items masked as already-processed), and crash windows can leave the log incomplete (item processed but unlogged, or vice versa). Literature cannot settle whether THESE slugs collide; only the in-house audit can.
+  Disposition: MONITOR (-> MONITOR-424)
+  What would change the disposition: the empirical audit (crafted-collision test + log-completeness check across a crash/interrupt) passes -> INCORPORATE; a real collision or log gap found -> REVISE (add date or content-hash to the key). Load-bearing for P-458/MONITOR-422 (late-arrival sweep depends on this detector).
+  Monitoring cadence: Weekly | Priority: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-435:
+  Date: 2026-07-09 | Item: PRESUMPTION-459 (PRESUMPTION, unstated)
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Static priorities are provably valid only under stationarity, and empirical bug-tracker data shows priorities get revised precisely during pre-processing aging windows — which is where C2A2 items now sit for weeks. Neither side shows the current tags have drifted; both predict they will as the queue ages.
+  Disposition: MONITOR (-> MONITOR-425)
+  What would change the disposition: spot re-score of a sample of aged queue items at next burn — material rank churn -> REVISE (re-score at burn time); negligible churn -> INCORPORATE the cheap version (stored tags fine within a staleness window). Pairs with A-430/MONITOR-423.
+  Monitoring cadence: Weekly | Priority: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-436:
+  Date: 2026-07-09 | Item: PRESUMPTION-460 (PRESUMPTION, unstated)
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong)
+  Net assessment: Zero support; every tradition found (living systematic reviews, qualitative re-coding, re-indexing on ontology change) treats extraction as (source x lens) and obligates re-examination when the lens changes. Capture-finality after the paradigm-boundary lens shift is only legitimate as an explicit, documented prospective-only decision — which was never made (this is precisely why it surfaced as a PRESUMPTION).
+  Disposition: REVISE (-> REVISE-193)
+  What is at risk: paradigm-boundary signal already sitting unrecognized in previously captured prs_triplets sources; the scarcest signal class (see P-461) systematically under-counted in the back-catalog.
+  Recommended action: either (a) schedule a one-time re-scan of existing prs_triplets.md sources under the paradigm-boundary lens, or (b) record an explicit prospective-only decision with rationale. Choose deliberately; do not default.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-437:
+  Date: 2026-07-09 | Item: PRESUMPTION-461 (PRESUMPTION, unstated)
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong)
+  Net assessment: Single-screener designs miss ~13% overall vs ~3% dual (best-case ~3% for experienced screeners on common categories) — and "paradigm-shift candidate" is the worst case on every axis: rare, fuzzy, high-stakes, unrecoverable if missed at intake. The screening literature quantifies exactly this anti-pattern. Compounding: the adjudication layer that could backstop it is itself under REVISE-187, and upstream human review is a week behind (P-456/REVISE-190).
+  Disposition: REVISE (-> REVISE-194)
+  What is at risk: the scarcest, most-watched signal class in the system, contaminated at intake in both directions (missed real candidates; inflated false ones), with no second pass to catch either.
+  Recommended action: two-reader design for this label only — second independent agent pass (different model family if possible, per REVISE-187) over intake items, adjudicate disagreements; alternatively a periodic retrospective second pass over single-labeled items. Cheap relative to the signal's value.
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-438:
+  Date: 2026-07-09 | Item: PRESUMPTION-462 (PRESUMPTION, unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Moderate)
+  Net assessment: Fixed-interval policies are a defensible BASELINE ("fixed until data says otherwise"), but the presumption as held is "set once, never adapted" — and the data now says otherwise: the queue-growth signature is observed, and both failure directions (too-slow review staleness; too-fast re-trigger volume) occurred same-day. Decisive consistency point: PREMISE-095 (incorporated this run) validates that the weekly 15d cadence structurally overruns throughput — an incorporated premise directly contradicts this presumption. Surfaced, not averaged.
+  Disposition: REVISE (-> REVISE-195)
+  What is at risk: the 15d refresh loop's usefulness (backlog swamps signal); the reviewer-staleness rule firing on stale thresholds in both directions.
+  Recommended action: make cadence a controlled variable, not a constant — key the 15d re-trigger interval (or per-run re-trigger cap) to queue depth, and revisit the 7-day reviewer-staleness rule against observed review latency. This is the same decision as OPEN-115/116; resolve them together.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+### RUN TALLY 2026-07-09 (autonomous; Tom not present)
+15 fresh items (cohorts 07-07 + 07-08) searched independently by 15a+15b (parallel subagents) and dispositioned by 15c (DISPOSITION-424..438).
+- 1 INCORPORATE: PREMISE-095 (A-429 — 15d arrival rate structurally exceeds per-run throughput under current provisioning; the queue-growth claim is now validated system self-knowledge).
+- 7 MONITOR: MONITOR-419 (A-426, Med — measure catalog-check error rate), MONITOR-420 (A-428, High — deferral-acceptability with auto-escalate trigger after 2 more no-decision runs), MONITOR-421 (P-455, Med — shared incident record), MONITOR-422 (P-458, Med — EOD lateness, gated on A-432 audit), MONITOR-423 (A-430, High — partial burn OK only with aging; watch for starvation), MONITOR-424 (A-432, Med — slug-collision + log-completeness audit), MONITOR-425 (P-459, Med — spot re-score aged priorities).
+- 7 REVISE: REVISE-189 (A-427, HIGH — copy-verdict unsound; native quick_check + sidecars/backup-API before any corruption verdict), REVISE-190 (P-456, HIGH — WIP cap + aging + backpressure on proposal intake), REVISE-191 (P-457, Med — verification rule, prior is not oracle post-cutoff), REVISE-192 (A-431, Med — regenerate cache and re-run QC before accepting "environmental"), REVISE-193 (P-460, Med — re-scan back-catalog under new lens or document prospective-only), REVISE-194 (P-461, HIGH — two-reader design for paradigm-shift labels), REVISE-195 (P-462, Med — cadence as controlled variable; same decision as OPEN-115/116).
+- 0 NOVELTY.
+- SYSTEMIC-RISK (new, High): OPEN-LOOP BACKLOG GOVERNANCE (A-428/429/430, P-456/459/462) — one missing feedback loop expressed at six points; see flag above. Companion to the standing unvalidated-instrument cluster.
+Priority order for Tom: REVISE-190 (the human gate is the system's core control and it is saturating) > REVISE-194 (scarcest signal class, single-judged) > REVISE-189 (gates openstory recovery; do not trust the copy verdict) > REVISE-192 > REVISE-191 > REVISE-193 > REVISE-195.
+BACKLOG SURFACED (fail-loud, measured not carried-forward): 110 15d re-trigger items remain [QUEUED]-unsearched (27 cycle-1 + 21 cycle-2 + 7 cycle-3 + 55 cycle-5, all re-triggered 2026-07-05). Prior runs reported 116/123 — the measured count is 110; the discrepancy suggests earlier figures were estimates, worth a one-time reconciliation. SEPARATELY: 18 older [QUEUED-EMPIRICAL] items (A-392..424 range, cohorts 06-29..07-06) sit unsearched by convention — held for in-house empirical tests rather than lit search. NOTE a convention fork surfaced this run: the fresh cohorts' 4 QUEUED-EMPIRICAL items (A-427/429/431/432) carried explicit 'literature —' clauses and WERE lit-searched here (empirical tests preserved as pending); the 18 held items were not. Tom should confirm which convention stands: QUEUED-EMPIRICAL = never lit-search, or = lit-search the literature clause while the empirical test pends. 5th consecutive run carrying this backlog; per MONITOR-420's trigger, 2 more no-decision runs auto-escalate A-428. The structural fact is now PREMISE-095 — the cadence/cap/provisioning decision (OPEN-115/116) is squarely a Tom decision and every run without it grows the queue by ~35/week net.
+Running maxima after this run: PREMISE-095, MONITOR-425, REVISE-195, DISPOSITION-438.
+
+  PROVENANCE: Origin: c2a2-lit-search-pipeline (scheduled 2026-07-09); Chain: [14a/14b -> 15a,15b -> 15c] (15 fresh items, cycle 0); Transform: full pipeline run; Current status: COHORT-DISPOSITIONED (15/15; 116 backlog items deferred, surfaced)
+
+## 2026-07-10 RUN — c2a2-lit-search-pipeline (scheduled; autonomous, Tom not present) — fresh cohort 2026-07-09 EOD (8 items)
+
+*8 fresh items (A-433..436, P-463..466) processed end-to-end. 15a and 15b ran as independent parallel subagents (independence preserved — neither read the other's results). 15c dispositioned all 8 pairs. The 4 QUEUED-EMPIRICAL items (A-433/435/436, P-466) received the literature pass per the 2026-07-09 precedent (convention fork still awaiting Tom's ruling); their decisive in-house tests are named in the dispositions and remain pending. The 15d re-trigger backlog (110 items) remains deferred (6th consecutive run) — surfaced in the tally. Full result files: lit_search_results/for|against/.*
+
+### 15a RETURNS (FOR)
+- A-433: SUPPORTED (Strong phenomenon / Moderate no-loss clause) — DeHoratius & Raman 2008, Management Science — 50-70% of carried-forward record counts diverge from reality via benign drift; fresh count is the authoritative measurement; only the ID-level reconciliation confirms "no loss."
+- A-434: PARTIALLY-SUPPORTED (Strong pause-policy / Moderate SELECT 1) — Supabase official docs "Project Pausing" (fetched live 2026-07-10) — 7-day low-activity pause confirmed; daily trivial query validated by working community practice, hedged by "sufficient activity" language.
+- A-435: PARTIALLY-SUPPORTED (Moderate) — Aguilera, Chen & Toueg 1997 (Heartbeat failure detector) — staleness-as-down-detector is canonical doctrine and "fast + stale" is the documented dangerous quadrant; but "reliably" overstates timeout detectors and freeze-vs-stale is contested.
+- A-436: PARTIALLY-SUPPORTED (Moderate) — Dagster data-quality staging — required-ID presence is a standard first-tier validity gate; best practice adds quarantine/triage rather than silent discount.
+- P-463: PARTIALLY-SUPPORTED (Moderate proxy / Weak no-verification) — IBM synthetic monitoring — synthetic transactions are standard proxies; policy stable 2024-2026; no literature affirmatively endorses unverified keep-alive.
+- P-464: PARTIALLY-SUPPORTED (Moderate canonical-channel / None waiting-clause) — Atlassian ChatOps — SSOT/consolidation supports one canonical channel; nothing supports passive waiting as transport-failure remedy.
+- P-465: PARTIALLY-SUPPORTED (Weak-Moderate) — audit-trail practice — append-only failure records have forensic/scheduled-reader value; adequacy strictly conditional on the (unverified) listener.
+- P-466: PARTIALLY-SUPPORTED (Moderate benign-default / None unvoiced-clause) — Google SRE Book, Effective Troubleshooting — parsimony is a prioritization rule, not an elimination rule; no source endorses leaving the loss hypothesis unvoiced.
+NOVELTY flags: P-464 waiting-as-remedy clause (genuinely unaddressed — no one designs fallback-free transports deliberately); P-463 no-verification clause (weak — widespread practice, absent from published doctrine; the gap is the finding).
+
+### 15b RETURNS (AGAINST)
+- A-433: CHALLENGED (Moderate) — ECR Retail Loss (Rekik et al.); silent-corruption literature — count discrepancies are ambiguous signals requiring ID-level reconciliation; silent loss produces exactly this signature with no error.
+- A-434: PARTIALLY-CHALLENGED (Moderate) — Supabase docs + GitHub Discussion #38442 — "may pause"/"sufficient activity" hedging; counted-path ambiguity (SQL vs API); field reports of failed keep-alives; discretionary policy has changed before.
+- A-435: CHALLENGED (Strong) — Chandra & Toueg 1996 (JACM); RFC 5861 — staleness cannot distinguish down/slow/idle; graceful-degradation standards prefer labeled-stale over refusing service; false freeze becomes the incident.
+- A-436: CHALLENGED (Moderate) — pipeline silent-failure analyses — single-field presence is a weak proxy; lone outlier among 17 is the producer-bug signature; quarantine-inspect-repair over silent drop.
+- P-463: CHALLENGED (Strong) — synthetic-vs-RUM divergence; SimpleBackups on Supabase pauses despite presumed activity — all three legs fail independently; open-loop keep-alive is the textbook control failure.
+- P-464: CHALLENGED (Strong) — TrustedSec OOB comms; post-CrowdStrike-2024 analyses — single-transport human link is a named anti-pattern; absence of messages indistinguishable from absence of instruction; waiting explicitly rejected as remedy.
+- P-465: CHALLENGED (Strong) — OWASP Top 10:2025 A09; Target 2013; Joint Commission SEA 50 — recording is not surfacing; no notification, responder, acknowledgment, or escalation attaches to a FAIL line.
+- P-466: CHALLENGED (Strong) — Al Essa et al. 2026 (premature closure); AHRQ PSNet — voice and preferentially test the harmful hypothesis before closing; the cohort did not.
+
+SYSTEMIC-RISK-FLAG (15b, 2026-07-10):
+  Affected items: ASSUMPTION-433, PRESUMPTION-463, PRESUMPTION-464, PRESUMPTION-465, PRESUMPTION-466
+  Common vulnerability: OPEN-LOOP SELF-ASSURANCE — the system repeatedly verifies its own actions (ping sent, FAIL line written, count taken, benign story adopted) instead of outcomes (project unpaused, FAIL acknowledged, items reconciled, alternatives ruled out); no verified listener or feedback path anywhere in the loop.
+  Literature basis: open-loop control failure modes; OWASP A09; OOB-comms doctrine; premature-closure literature.
+  Risk level: High
+  Recommendation: one design change mitigates all five — an outcome-verification/acknowledgment layer (probe real status; require acks on FAILs; ID-level count reconciliation; secondary human channel). Companion to the 07-09 OPEN-LOOP BACKLOG GOVERNANCE flag — together they describe a single missing feedback discipline, inward-facing and outward-facing. Secondary cluster: A-434 + P-463 both trust an undocumented, mutable third-party free-tier policy as if stable.
+
+DISPOSITION-439:
+  Date: 2026-07-10 | Item: ASSUMPTION-433 (ASSUMPTION, stated; QUEUED-EMPIRICAL)
+  15a: SUPPORTED (Strong/Moderate) | 15b: CHALLENGED (Moderate)
+  Net assessment: Both sides agree on the frame and the tiebreaker: benign drift is the high-base-rate explanation and the fresh count is the better number, but "no items were lost" is exactly the clause literature cannot settle — only the queued provenance-ID reconciliation can. Declaring no-loss before running it would be the P-466 error committed twice.
+  Disposition: MONITOR (-> MONITOR-426)
+  What would change the disposition: reconciliation traces all 6 delta-items -> INCORPORATE; any real loss -> REVISE. Same test settles P-466/REVISE-200.
+  Monitoring cadence: Weekly | Priority: Medium-High
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-440:
+  Date: 2026-07-10 | Item: ASSUMPTION-434 (ASSUMPTION, stated)
+  15a: PARTIALLY-SUPPORTED (Strong/Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: The 7-day pause policy is vendor-documented (fetched live this run); the SELECT 1 clause rests on community practice against hedged vendor language and a documented counted-path ambiguity. The claim is cheap to verify by outcome rather than by documentation — so verify by outcome.
+  Disposition: MONITOR (-> MONITOR-427)
+  What would change the disposition: probe actual project status after >=7 days of pings — unpaused -> INCORPORATE (Moderate, quarterly re-check for policy drift); paused -> REVISE (ping path not counted). One probe also serves REVISE-197.
+  Monitoring cadence: Weekly | Priority: Low-Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-441:
+  Date: 2026-07-10 | Item: ASSUMPTION-435 (ASSUMPTION, stated; QUEUED-EMPIRICAL)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong)
+  Net assessment: The strong challenge lands on both clauses independently: failure-detector theory makes "reliably indicates" unsound by construction (staleness conflates down/slow/idle), and the degradation literature actively prefers labeled-stale service over freezing for read-mostly content. 15a's heartbeat doctrine concedes the false-positive problem. Moderate support + strong challenge -> lean REVISE per heuristics.
+  Disposition: REVISE (-> REVISE-196)
+  What is at risk: false freeze on an idle-but-healthy runtime — the guard becomes the outage; feeds REVISE-186/189 recovery work.
+  Recommended action: serve-stale-labeled + out-of-band runtime liveness probe; run the queued post-.recover empirical check.
+  Urgency: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-442:
+  Date: 2026-07-10 | Item: ASSUMPTION-436 (ASSUMPTION, stated; QUEUED-EMPIRICAL)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Moderate)
+  Net assessment: Presence-of-ID is a legitimate first-tier gate (15a) but a weak final verdict (15b), and the lone outlier among 17 fits the producer-bug signature. Evidence is balanced; the queued one-file inspection is trivially cheap and fully decisive — MONITOR pending that, rather than premature either way.
+  Disposition: MONITOR (-> MONITOR-428)
+  What would change the disposition: inspect the stray file — debris -> INCORPORATE (with quarantine convention documented); real-but-malformed proposal -> REVISE (repair, fix producer, dead-letter step).
+  Monitoring cadence: Weekly | Priority: Low-Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-443:
+  Date: 2026-07-10 | Item: PRESUMPTION-463 (PRESUMPTION, unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate/Weak) | 15b: CHALLENGED (Strong)
+  Net assessment: Synthetic probes are standard practice, but every leg of the presumption as held fails independently under challenge: policy stability is not guaranteed, counted-ness of the ping path is undocumented, and no-outcome-verification is the textbook open-loop failure. PRESUMPTION + strong challenge -> REVISE per heuristics; the fix is one probe.
+  Disposition: REVISE (-> REVISE-197)
+  What is at risk: dead demo broker discovered in use, keep-warm green throughout.
+  Recommended action: outcome verification (status probe + pause alert); one-time counted-path check. Pairs with MONITOR-427.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-444:
+  Date: 2026-07-10 | Item: PRESUMPTION-464 (PRESUMPTION, unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate/None) | 15b: CHALLENGED (Strong)
+  Net assessment: The evidence splits cleanly by clause: one canonical channel is well-supported (SSOT); sole-transport-with-waiting is a named anti-pattern with zero support and a NOVELTY flag (nobody designs it on purpose). The live 7-day severance with an unused in-fleet Gmail fallback removes any doubt about practical stakes. Canonicality survives; the transport monopoly does not.
+  Disposition: REVISE (-> REVISE-198)
+  What is at risk: the human-context loop — the system's connection to Tom.
+  Recommended action: Gmail as explicit fallback transport for daily-walk delivery; Chat remains canonical.
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-445:
+  Date: 2026-07-10 | Item: PRESUMPTION-465 (PRESUMPTION, unstated)
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Strong)
+  Net assessment: Three independent literatures (security, IT-ops, clinical alarms) converge: recording is not surfacing without a verified listener, and 15a's conditional support names that same condition as the open question. The system's own operational record (three multi-day unremediated alarms) is the empirical confirmation already in hand. PRESUMPTION + strong challenge + live failure -> REVISE.
+  Disposition: REVISE (-> REVISE-199)
+  What is at risk: fleet-wide false confidence in fail-loud; alarms compound silently.
+  Recommended action: acknowledgment field + escalation threshold to a verified channel; the missing actuator for MONITOR-420 and REVISE-198.
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-446:
+  Date: 2026-07-10 | Item: PRESUMPTION-466 (PRESUMPTION, unstated; QUEUED-EMPIRICAL)
+  15a: PARTIALLY-SUPPORTED (Moderate/None) | 15b: CHALLENGED (Strong)
+  Net assessment: Base rates make "estimates, not loss" the right LEADING hypothesis (15a), but the diagnostic-error literature is unambiguous that the harmful alternative must be voiced and tested before closure (15b) — and it wasn't. The practice error is established regardless of the reconciliation's outcome, so this REVISEs now rather than waiting on the test; the paired factual claim (A-433) monitors on that same test.
+  Disposition: REVISE (-> REVISE-200)
+  What is at risk: benign-first closure as habit; losses absorbed into estimation-noise narratives untraced.
+  Recommended action: run the reconciliation now; adopt the record-both-hypotheses triage rule.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+### RUN TALLY 2026-07-10 (autonomous; Tom not present)
+8 fresh items (2026-07-09 EOD cohort) searched independently by 15a+15b (parallel subagents) and dispositioned by 15c (DISPOSITION-439..446).
+- 0 INCORPORATE.
+- 3 MONITOR: MONITOR-426 (A-433, Med-High — ID-level reconciliation decides; same test as REVISE-200), MONITOR-427 (A-434, Low-Med — outcome-probe the keep-warm), MONITOR-428 (A-436, Low-Med — inspect the stray 17th file).
+- 5 REVISE: REVISE-196 (A-435, Med — staleness is not a reliable down-signal; serve-stale-labeled + real liveness probe), REVISE-197 (P-463, Med — close the keep-warm loop with outcome verification), REVISE-198 (P-464, HIGH — add Gmail fallback transport; Chat stays canonical), REVISE-199 (P-465, HIGH — FAIL lines need acknowledgment + escalation; the missing actuator), REVISE-200 (P-466, Med — voice-and-test triage rule; run the reconciliation).
+- 2 NOVELTY (both 15a): P-464 waiting-as-remedy clause; P-463 no-verification clause (weak).
+- SYSTEMIC-RISK (new, High): OPEN-LOOP SELF-ASSURANCE (A-433, P-463/464/465/466) — action-verification substituted for outcome-verification at five points; one acknowledgment/outcome-verification layer mitigates all five. Companion to 07-09's OPEN-LOOP BACKLOG GOVERNANCE flag — jointly: one missing feedback discipline.
+Priority order for Tom: REVISE-198 (human-context loop, live severance, one-line fix) > REVISE-199 (alarms without listeners — this is why 198's failure lasted 7 days) > REVISE-196 (false-freeze risk gates openstory work) > REVISE-200 > REVISE-197 > the three MONITOR probes (all cheap, all decisive).
+BACKLOG (fail-loud): 110 15d re-trigger items remain [QUEUED]-unsearched — 6th consecutive run deferring them; net queue growth ~35/week persists (PREMISE-095). Per MONITOR-420's trigger (set 07-09: 2 more no-decision runs), this is no-decision run 1 of 2 — A-428 auto-escalates NEXT RUN absent a cadence/cap/provisioning decision (OPEN-115/116). The 18 older QUEUED-EMPIRICAL items remain held; the QUEUED-EMPIRICAL convention fork (lit-search literature clauses vs never) again resolved per 07-09 precedent — Tom's ruling still wanted.
+Running maxima after this run: PREMISE-095, MONITOR-428, REVISE-200, DISPOSITION-446.
+
+  PROVENANCE: Origin: c2a2-lit-search-pipeline (scheduled 2026-07-10); Chain: [14a/14b -> 15a,15b -> 15c] (8 fresh items, cycle 0); Transform: full pipeline run; Current status: COHORT-DISPOSITIONED (8/8; 110 backlog items deferred, surfaced)
+
+## 2026-07-11 RUN — c2a2-lit-search-pipeline (scheduled; autonomous, Tom not present) — fresh cohort 2026-07-10 EOD (8 items)
+
+*8 fresh items (A-437..440, P-467..470) processed end-to-end. 15a and 15b ran as independent parallel subagents (independence preserved — neither read the other's results). 15c dispositioned all 8 pairs. The 5 QUEUED-EMPIRICAL items (A-437/439, P-468/469/470) received the literature pass per the 2026-07-09/07-10 precedent (convention fork still awaiting Tom's ruling); their decisive in-house tests are named in the dispositions and remain pending. The 15d re-trigger backlog (110 items) remains deferred (7th consecutive run) — surfaced in the tally, ownership unchanged (15d boundary). The pre-July held QUEUED-EMPIRICAL set also remains held. Full result files: lit_search_results/for|against/.*
+
+### 15a RETURNS (FOR)
+- A-437: NO-SUPPORT-FOUND (None) — DeHoratius & Raman 2008, Management Science — no literature supports assuming tag-based enumeration completeness; audit doctrine requires tracing from an independent source population; 65% record-inaccuracy base rate runs opposite.
+- A-438: PARTIALLY-SUPPORTED (Moderate) — GRADE guideline 5 (publication/time-lag bias, J Clin Epi 2011) — zero-proposals-plus-watch-item matches evidence-synthesis practice for not-yet-retrievable material; Indico posting lag is normal practice; the 30-day threshold itself is unbenchmarked.
+- A-439: PARTIALLY-SUPPORTED (Moderate) — NASA 2016 Common Cause Failures + diagnostic parsimony — temporally clustered failures in coupled components warrant common-cause as leading hypothesis; sources support the inference's PRIORITY, not its confirmation (Hickam's dictum bounds it).
+- A-440: SUPPORTED (Strong) — Nagios UNKNOWN-state model + Kubernetes liveness/readiness probes — the fired/succeeded/unverified taxonomy restates the standard layered-signal monitoring model nearly clause for clause.
+- P-467: SUPPORTED (Strong; POLARITY: supports the surfaced hazard, contradicting the embedded belief) — Google SRE Book Ch. 4/6 + watermelon-SLA ITSM literature — green-watchdog-over-standing-outcome-outage is a named, documented failure mode.
+- P-468: SUPPORTED (Moderate; hazard confirmed) — data-observability lineage literature (Databricks, Pantomath) — freshness-of-shared-target checks are known to be satisfiable by any writer; lineage exists as a pillar precisely because of this.
+- P-469: PARTIALLY-SUPPORTED (Moderate) — IEEE 2026 drift-detection/self-healing (Ansible/GitOps) — per-run re-derivation is legitimate ONLY where repairs converge to a persisted source of truth; fixes noted in ephemeral run outputs are unremediated drift.
+- P-470: SUPPORTED (Strong; hazard confirmed) — Chandy & Lamport 1985 (ACM TOCS) + accounting cut-off doctrine — counts are only comparable relative to a declared timestamp + assignment rule; unprotocoled composition can yield a global figure corresponding to no actual state.
+NOVELTY flags: none this run. Sub-gaps below threshold: no quantitative Indico posting-lag study (A-438); instruction-file drift in agent pipelines specifically unstudied though structurally covered (P-469).
+
+### 15b RETURNS (AGAINST)
+- A-437: CHALLENGED (Strong) — capture-recapture / dual-system estimation (Bird & King 2018; census DSE) — a single tag-query enumeration cannot measure its own undercount; "nothing was missed" is unverifiable by the mechanism asserting it.
+- A-438: CHALLENGED (Strong) — Bramer et al. 2017 (best single database = 85.9% recall; multi-source minimum standard) + Altman & Bland 1995 — a single-venue watch converts "we saw nothing" into "nothing exists"; gray-channel-first thinkers go systematically stale.
+- A-439: CHALLENGED (Strong) — Cook, How Complex Systems Fail + Croskerry 2003 (premature closure) — if write-stop and corruption have distinct causes, fixing the runtime closes the incident while the corruption mechanism survives and re-fires.
+- A-440: CHALLENGED (Strong) — Huang et al. 2017 (gray failure / differential observability) + Lou et al. OSDI 2022 (silent semantic violations) — fired-but-failed is a common long-lived class; "unverified, not failed" is fail-open design that lets 102-hour outages ride under green.
+- P-467: CHALLENGED (Strong) — watermelon-effect ITSM + Google SRE SLO doctrine — firing-health does not compose into outcome health; the watchdog's green acts as a systemwide sedative.
+- P-468: CHALLENGED (Strong) — Inozemtseva & Holmes ICSE 2014 + Zhang & Mesbah FSE 2015 — a freshness check a dozen writers can satisfy is a verifier that cannot fail; the verified task can be dead indefinitely under green.
+- P-469: CHALLENGED (Strong) — snowflake/config-drift literature (Fowler/Morris) + SRE toil chapter + postmortem-completion data (<40% of tracked action items done in 90 days) — unpersisted per-run re-derivation compounds drift; nondeterministic agents make task semantics vary run to run.
+- P-470: CHALLENGED (Strong) — Chandy & Lamport 1985 (uncoordinated snapshots compose into states that never existed) + accounting cut-off testing — phantom discrepancies mask real losses; registry disagreements become unclosable.
+
+SYSTEMIC-RISK-FLAG (15b, 2026-07-11):
+  Affected items: ASSUMPTION-437, ASSUMPTION-438, ASSUMPTION-440, PRESUMPTION-467, PRESUMPTION-468 (secondary: ASSUMPTION-439, PRESUMPTION-470)
+  Common vulnerability: SELF-REFERENTIAL VERIFICATION — no independent observation channel. Each case certifies an outcome using a signal produced by (or on the causal path of) the mechanism being verified: a tag query certifying tag completeness, a single watch certifying absence, lastRunAt certifying success, a firing watchdog certifying system health, a shared-tree freshness check certifying a specific task. All are green-biased proxies whose failure to detect generates no evidence of its own.
+  Literature basis: gray failure differential observability (Huang et al. 2017); IV&V independence requirements (NIST/NASA); dual-system estimation; vacuous-verifier results (Inozemtseva & Holmes 2014); watermelon-metric ITSM literature.
+  Risk level: High
+  Recommendation: one independent outcome-level verification layer sharing no mechanism with the pipeline it checks: (1) a small set of semantic end-to-end SLIs (today's artifact exists, parses, matches expected task ID); (2) dual-channel census (tag query vs regex/ID-gap sweep) with a timestamped close convention; (3) periodic mutation-testing of monitors (inject a known failure; confirm red — any monitor green under injected failure is decorative). Third member of the open-loop family: joins 07-09 OPEN-LOOP BACKLOG GOVERNANCE and 07-10 OPEN-LOOP SELF-ASSURANCE — the 2026-07 incident cluster is the predicted joint signature of this one missing discipline, not coincidences.
+
+DISPOSITION-447:
+  Date: 2026-07-11 | Item: ASSUMPTION-437 (ASSUMPTION, stated; QUEUED-EMPIRICAL)
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong)
+  Net assessment: No literature supports self-certified enumeration completeness and a strong literature says it is structurally unverifiable by the asserting mechanism (a list cannot audit itself). Even if this month's census finds nothing missed, the verification DESIGN remains self-referential — so the flaw is architectural, not situational, and the empirical test alone cannot retire it.
+  Disposition: REVISE (-> REVISE-201)
+  What is at risk: silent orphaning of queued items; the "nothing was missed" clause repeats the P-466 error at the enumeration layer.
+  Recommended action: run the dual-channel census now (tag query vs independent ID-gap/regex sweep over the queue file and registries) and adopt it as the standing enumeration check; folds into the MONITOR-426/REVISE-200 reconciliation cluster — one pass settles the integrity cluster.
+  Urgency: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-448:
+  Date: 2026-07-11 | Item: ASSUMPTION-438 (ASSUMPTION, stated)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong)
+  Net assessment: The two verdicts land on different clauses. The immediate decision (zero proposals + watch item, given genuinely absent material) matches evidence-synthesis practice for time-lag bias; the strong challenge lands on single-venue coverage (best single source ~86% recall). The instance self-resolves when materials post; the coverage design does not. Discriminating test is cheap.
+  Disposition: MONITOR (-> MONITOR-429)
+  What would change the disposition: a multi-source spot-check (arXiv, InspireHEP, institutional channels, video platforms) for the same 30-day window — nothing missed -> INCORPORATE (zero-proposal rule with multi-source caveat); missed primary material found in gray channels -> REVISE (broaden the watch beyond Indico).
+  Monitoring cadence: Weekly | Priority: Low-Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-449:
+  Date: 2026-07-11 | Item: ASSUMPTION-439 (ASSUMPTION, stated; QUEUED-EMPIRICAL)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong)
+  Net assessment: Both literatures converge on the same discipline: common-cause is the correct LEADING hypothesis for temporally clustered failures in coupled components, and premature closure is the documented error mode if it is adopted without the discriminating test. The queued Mac-side probe (launchd/process check + .recover) is decisive and already converges with the REVISE-186/189/196 out-of-band instrument.
+  Disposition: MONITOR (-> MONITOR-430)
+  What would change the disposition: the probe — single-cause confirmed (runtime down explains both) -> INCORPORATE (narrow, incident-scoped); distinct causes found -> REVISE (corruption mechanism survives runtime fix; do NOT close the corruption thread on runtime recovery).
+  Monitoring cadence: Weekly | Priority: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-450:
+  Date: 2026-07-11 | Item: ASSUMPTION-440 (ASSUMPTION, stated)
+  15a: SUPPORTED (Strong) | 15b: CHALLENGED (Strong)
+  Net assessment: Genuinely contested. The taxonomy IS standard layered-monitoring doctrine (UNKNOWN != CRITICAL; liveness != readiness), and simultaneously the gray-failure literature shows fired-but-failed is the dominant dangerous class and "unverified, not failed" is fail-open under exactly the incident pattern C2A2 just lived (102h outage under green). Strong support + strong challenge -> MONITOR per heuristics; the resolution is not more literature but the systemic-risk fix.
+  Disposition: MONITOR (-> MONITOR-431)
+  What would change the disposition: adoption of the independent outcome-verification layer (semantic SLIs + escalation on persistent UNKNOWN) -> INCORPORATE as layered-signal doctrine with a fail-closed backstop; another fired-but-failed outage riding green before that -> REVISE.
+  Monitoring cadence: Weekly | Priority: Medium-High (pairs with P-467/P-468 cluster)
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-451:
+  Date: 2026-07-11 | Item: PRESUMPTION-467 (PRESUMPTION, unstated)
+  15a: SUPPORTED (Strong; polarity — supports the surfaced hazard) | 15b: CHALLENGED (Strong)
+  Net assessment: Both search directions converge AGAINST the embedded design belief: firing-health does not compose into outcome health (watermelon effect; SRE SLO doctrine), and the system's own record is the live instance — three multi-day outcome outages persisted through green mornings. PRESUMPTION + strong challenge -> REVISE with high urgency per heuristics; this is the dashboard face of the open-loop systemic-risk family.
+  Disposition: REVISE (-> REVISE-202)
+  What is at risk: the morning watchdog functions as a systemwide sedative — outage duration bounded only by human happenstance.
+  Recommended action: add outcome-level SLIs to the watchdog (openstory runtime actually serving; today's expected artifacts exist and parse; Chat/browser transport verified) and make "all clear" conditional on them, not on scheduler firing alone.
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-452:
+  Date: 2026-07-11 | Item: PRESUMPTION-468 (PRESUMPTION, unstated; QUEUED-EMPIRICAL)
+  15a: SUPPORTED (Moderate; hazard confirmed) | 15b: CHALLENGED (Strong)
+  Net assessment: Convergent verdict: a freshness check over a shared output tree that any of a dozen writers can satisfy is a verifier that cannot fail — vacuous by the test-effectiveness literature, and the lineage pillar exists in data observability precisely because attribution does not come free. The queued manifest test is cheap and the fix is one convention.
+  Disposition: REVISE (-> REVISE-203)
+  What is at risk: the daily run can be dead indefinitely while its output check stays green off other writers' files.
+  Recommended action: manifest convention — each scheduled task declares its expected task-specific outputs (name pattern + location); the output check matches the manifest, not tree freshness. The deliberate no-op-day test (or manifest diff) verifies attribution once.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-453:
+  Date: 2026-07-11 | Item: PRESUMPTION-469 (PRESUMPTION, unstated; QUEUED-EMPIRICAL)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong)
+  Net assessment: 15a's support is strictly conditional and the condition fails here: per-run re-derivation is a documented healthy pattern only when repairs converge to a persisted source of truth (GitOps desired-state). Fixes noted in ephemeral run outputs reach no future run and no owner — that is the literature's definition of unremediated drift, compounded by nondeterministic re-derivation varying task semantics run to run. The <40% action-item completion base rate says "someone will fix it later" is not a mechanism.
+  Disposition: REVISE (-> REVISE-204)
+  What is at risk: task files accumulate literally-unresolvable instructions; every run pays the re-derivation toll; occasional divergent repairs.
+  Recommended action: give task files an owner and a repair path — when a run notes a task-file defect, it appends to a designated task-file-fixes queue that a named owner (or weekly sewing agent) applies; run the cheap audit for currently-unresolvable instructions once.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-454:
+  Date: 2026-07-11 | Item: PRESUMPTION-470 (PRESUMPTION, unstated; QUEUED-EMPIRICAL)
+  15a: SUPPORTED (Strong; hazard confirmed) | 15b: CHALLENGED (Strong)
+  Net assessment: Two independent literatures (distributed snapshots; accounting cut-off doctrine) converge on the same requirement: shared counts are meaningful only relative to a declared timestamp + assignment rule. Without a census protocol, registry disagreements are unclosable in principle — phantom discrepancies and masked real losses are indistinguishable. This is the generalization of the A-433/P-466 count-discrepancy cluster and P-458/OPEN-112.
+  Disposition: REVISE (-> REVISE-205)
+  What is at risk: every cross-agent figure (queue sizes, backlog tallies, registry counts) is potentially a state that never existed; the MONITOR-426 reconciliation inherits the ambiguity unless the census rule comes first.
+  Recommended action: adopt a census protocol — timestamped cut-off + counting rule (which statuses/tags count, as of when) declared with every shared figure; the A-433/P-466 reconciliation should adopt its census rule from this item's test, settling three flags with one convention.
+  Urgency: Medium-High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+### RUN TALLY 2026-07-11 (autonomous; Tom not present)
+- Fresh cohort processed: 8/8 (A-437..440, P-467..470) — SEARCHED-15a + SEARCHED-15b + DISPOSITIONED-15c, all 2026-07-11.
+- Dispositions: 0 INCORPORATE | 3 MONITOR (429: A-438, 430: A-439, 431: A-440) | 5 REVISE (201: A-437, 202: P-467, 203: P-468, 204: P-469, 205: P-470).
+- validated_premises.md: unchanged (no INCORPORATE this run; consistency check n/a).
+- NOVELTY flags: none. SYSTEMIC-RISK: 1 (High — self-referential verification; third member of the open-loop family with 07-09 and 07-10 flags).
+- Deferred, surfaced: 15d re-trigger backlog (110 items; 7th consecutive run deferred — 15d ownership boundary per 2026-05-16 precedent; ASSUMPTION-429 already tracks the throughput mismatch) and the pre-July held QUEUED-EMPIRICAL set (no lit pass pending Tom's convention ruling; their empirical tests pending).
+- Note: 5 of 8 items this run were QUEUED-EMPIRICAL and received the literature pass per 07-09/07-10 precedent; every one carries its decisive in-house test in the disposition. The convention fork (lit-pass vs hold for QUEUED-EMPIRICAL) still awaits Tom's ruling.
+  PROVENANCE: Origin: c2a2-lit-search-pipeline (scheduled 2026-07-11); Chain: [14a/14b -> 15a,15b -> 15c] (8 fresh items, cycle 0); Transform: full pipeline run; Current status: COHORT-DISPOSITIONED (8/8; 110 re-trigger + held-empirical backlog deferred, surfaced)
+
+---
+
+## 2026-07-12 — Pipeline run (scheduled c2a2-lit-search-pipeline; autonomous)
+
+### 15a returns (FOR)
+
+RETURN-TO-14a: ASSUMPTION-441 | FOR | PARTIALLY-SUPPORTED | Moderate
+  Key source: arXiv:2408.13855 (false negatives of static bug detectors); OWASP scope doctrine
+  Summary: Scope-blindness mechanism fully precedented — clean reports from scope-limited tools are a recognized false-negative signature. "Authoritative" for the full scan gets coverage-superiority support only.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-441_for.md
+
+RETURN-TO-14a: ASSUMPTION-442 | FOR | PARTIALLY-SUPPORTED | Moderate
+  Key source: Risknowlogy / SRE graceful-degradation doctrine
+  Summary: Degraded-with-compensation is a textbook pattern — conditional on predefined mode, distinguishable outputs, enforced compensation. All three conditions load-bearing; P-471 negates the second as implemented.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-442_for.md
+
+RETURN-TO-14a: ASSUMPTION-443 | FOR | SUPPORTED | Moderate
+  Key source: US Patent 10,387,236 (single correction template for common-cause errors); Monte Carlo data-remediation doctrine
+  Summary: Batch repair of a root-cause-clustered defect population is standard practice and beats day-by-day. Support is for batch-over-piecemeal, not grep-sufficiency (that boundary is P-472).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-443_for.md
+
+RETURN-TO-14a: ASSUMPTION-444 | FOR | PARTIALLY-SUPPORTED | Moderate
+  Key source: Azure AD refresh-token lifetime doctrine; OAuth-expiry sync-outage practitioner literature
+  Summary: Login/credential expiry is the single most common cause of exactly this failure signature and re-login is the documented fix. Supports hypothesis priority, not exclusivity.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-444_for.md
+
+RETURN-TO-14a: ASSUMPTION-445 | FOR | PARTIALLY-SUPPORTED | Moderate
+  Key source: dbSeer / Cygnet migration-validation doctrine
+  Summary: Count reconciliation is the canonical necessary first completeness layer — proves zero fetch-loop loss. Silent on whether the enumeration captured the universe.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-445_for.md
+
+RETURN-TO-14b: PRESUMPTION-471 | FOR | SUPPORTED (polarity: hazard confirmed) | Strong
+  Key source: SLSA v1.1 graded attestation; arXiv:2605.28546 ("SKIP is not evidence")
+  Summary: Three literatures converge: verification records must carry depth metadata; a stamp recording SKIPPED and PASSED identically converts non-evidence into apparent evidence.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-471_for.md
+
+RETURN-TO-14b: PRESUMPTION-472 | FOR | PARTIALLY-SUPPORTED | Weak
+  Key source: US Patent 12,222,911 (string error repair); Apex CoVantage automated citation validation
+  Summary: IF the class is string-shaped, batch pattern repair is precedented — but support is conditional on the very property presumed, and the one inspected instance (a gloss) falls outside it.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-472_for.md
+
+RETURN-TO-14b: PRESUMPTION-473 | FOR | SUPPORTED (polarity: hazard confirmed) | Strong
+  Key source: IJE 1995 capture-recapture registry-completeness literature; audit independent-count doctrine
+  Summary: A system's own enumeration cannot serve as the denominator for its completeness — missingness is invisible from inside; 307/307 known-wrong is the live in-house confirmation.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-473_for.md
+
+RETURN-TO-14b: PRESUMPTION-474 | FOR | PARTIALLY-SUPPORTED | Moderate
+  Key source: Azure Architecture Center temporal-decoupling doctrine
+  Summary: Durable-artifact production during consumer absence has genuine decoupling support — conditional on bounded buffers and eventual consumption; does not cover signal-type outputs (escalations).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-474_for.md
+
+### 15b returns (AGAINST)
+
+RETURN-TO-14a: ASSUMPTION-441 | AGAINST | PARTIALLY-CHALLENGED | Moderate
+  Key source: PLOS One 2020 (10.76% error rate in gold-standard human screening); BMC 2021 imperfect-reference-standard bias
+  Specific risk: crowning the unvalidated full scan "authoritative" imports imperfect-gold-standard bias into all future QC calibration.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-441_against.md
+
+RETURN-TO-14a: ASSUMPTION-442 | AGAINST | CHALLENGED | Strong
+  Key source: Vaughan normalization of deviance; JSR 2022 systematic review (high-risk industries)
+  Specific risk: unmarked degraded passes + unenforced deferred compensation (<40% action-item base rate) is the documented permanent-quality-erosion pattern; id-drift already confirmed same morning.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-442_against.md
+
+RETURN-TO-14a: ASSUMPTION-443 | AGAINST | PARTIALLY-CHALLENGED | Moderate
+  Key source: SWE-at-Google ch.22 (LSC discipline); ICSM 2012 refactoring/regression
+  Specific risk: grep-scoped repair defines the cluster by the tool's limits; "cluster closed" on grep exhaustion hides the semantic remainder (the one inspected instance is a gloss).
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-443_against.md
+
+RETURN-TO-14a: ASSUMPTION-444 | AGAINST | CHALLENGED | Strong
+  Key source: Cook, "How Complex Systems Fail"; Allspaw "each necessary, only jointly sufficient"
+  Specific risk: the outage had ≥2 necessary conditions (expiry + 9-day detection silence); single-cause closure fixes the trigger and leaves the amplifier, guaranteeing replay on next silent expiry.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-444_against.md
+
+RETURN-TO-14a: ASSUMPTION-445 | AGAINST | CHALLENGED | Strong
+  Key source: migration-validation layering doctrine; capture-recapture (self-ascertained denominators)
+  Specific risk: N/N against a self-produced denominator is a tautology; terminal "complete" state ends all future checking with the enumeration unaudited (307/307 precedent).
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-445_against.md
+
+RETURN-TO-14b: PRESUMPTION-471 | AGAINST | CHALLENGED | Strong
+  Key source: SLSA v1.1; Huang et al. 2017 gray failure; Inozemtseva & Holmes ICSE 2014
+  Specific risk: a verifier that cannot fail, installed where future verification decisions read — every degraded run permanently launders reduced verification into full status; backfill window closes as run logs age.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-471_against.md
+
+RETURN-TO-14b: PRESUMPTION-472 | AGAINST | CHALLENGED | Strong
+  Key source: arXiv:2606.08589 (quotation errors are a semantic detection task); Sarol et al. 2024 citation-integrity NLP
+  Specific risk: the error class was defined by the available tool, not the observed errors; the fix cannot see its own exemplar.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-472_against.md
+
+RETURN-TO-14b: PRESUMPTION-473 | AGAINST | CHALLENGED | Strong
+  Key source: IJE 1995; PMC11022997 (dependence bias even in multi-source correction)
+  Specific risk: unaudited denominators make completeness claims unfalsifiable in principle; terminal states are permanent.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-473_against.md
+
+RETURN-TO-14b: PRESUMPTION-474 | AGAINST | CHALLENGED | Strong
+  Key source: Reactive-Streams backpressure doctrine; lean overproduction; dead-man's-switch safety doctrine
+  Specific risk: unratified authority accumulates — REVISE flags and escalations are decisions awaiting an absent decision-maker; the pipeline's human-in-the-loop legitimacy expires while throughput continues.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-474_against.md
+
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-07-12
+  Affected items: ASSUMPTION-442, ASSUMPTION-445, PRESUMPTION-471, PRESUMPTION-473 (+ resonance with A-441's "authoritative by fiat" clause)
+  Common vulnerability: SELF-CERTIFYING COMPLETENESS/VERIFICATION — in each case the certifying signal is produced by, or indistinguishable from, the process it certifies (uniform QC stamp certifies its own depth; self-enumerated denominator certifies its own coverage; unvalidated scan crowned authoritative). Fourth member of the open-loop family (07-09 silent-degradation, 07-10 vacuous-verifier, 07-11 self-referential verification).
+  Literature basis: Huang et al. 2017 (gray failure / differential observability); SLSA v1.1 (attestation exists because self-claims are untrustworthy); capture-recapture doctrine (self-ascertainment cannot measure own missingness).
+  Risk level: High
+  Recommendation: one convention family closes all four — verification/completeness claims carry provenance (mode, depth, denominator source) and terminal states require one independent corroboration. Converges with REVISE-200/202/203/205's existing recommendations; a single "independent evidence" protocol would settle the whole family.
+
+### 15c dispositions (2026-07-12)
+
+DISPOSITION-455:
+  Date: 2026-07-12 | Item: ASSUMPTION-441 (ASSUMPTION, stated; QUEUED-EMPIRICAL)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: The two verdicts split the claim's clauses cleanly. Scope-blindness (qc_sweep's 0 is a false negative) is standard doctrine; "the full-vault scan is authoritative" is the imperfect-gold-standard error — broader scope earns primary-screen status, not authority. Both instruments are heuristic detectors; the disagreement set proves one wrong without saying which.
+  Disposition: MONITOR (-> MONITOR-432)
+  What would change the disposition: the queued script-fix-and-diff plus a hand-adjudicated sample (n≈20) of full-scan-only verdicts — high precision -> INCORPORATE (full scan as primary screen, "authoritative" dropped); low precision -> REVISE (both instruments need work before either anchors QC).
+  Monitoring cadence: Weekly | Priority: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-456:
+  Date: 2026-07-12 | Item: ASSUMPTION-442 (ASSUMPTION, stated; QUEUED-EMPIRICAL)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong)
+  Net assessment: Graceful-degradation support is strictly conditional on three properties — predefined mode, distinguishable outputs, enforced compensation — and the instance fails at least two: degraded passes share the full-pass stamp (P-471), and the compensating spot-check is deferred with no owner in a system whose measured action-item completion is <40%. Same-morning id-drift confirmation shows the reduced checks have live misses. This is the normalization-of-deviance entry pattern, not the safety-engineering pattern.
+  Disposition: REVISE (-> REVISE-206)
+  What is at risk: form-check-only passes accumulate indistinguishably; id-drift spreads under fresh QC stamps; on discovery, the whole QC history becomes suspect.
+  Recommended action: accept degraded mode ONLY with its safeguards — qc_mode field on the stamp (REVISE-207's fix), the spot-check scheduled with a date and owner, and a bounded lifetime (max N form-only runs before forced full pass).
+  Urgency: Medium-High
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-457:
+  Date: 2026-07-12 | Item: ASSUMPTION-443 (ASSUMPTION, stated; QUEUED-EMPIRICAL)
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Batch-over-piecemeal is well grounded and unchallenged; the contest is over the batch boundary ("writer-pass-level" — two data points, audit unrun) and the closure criterion (grep exhaustion vs semantic residue). The queued audit is the discriminating test for the first; P-472's test governs the second.
+  Disposition: MONITOR (-> MONITOR-433)
+  What would change the disposition: the full-vault audit — mislabels concentrate by writer-pass cohort AND grep enumerates them -> INCORPORATE (batch repair with semantic-residue caveat); diffuse distribution or material semantic residue -> REVISE (repair strategy needs a semantic pass).
+  Monitoring cadence: Weekly | Priority: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-458:
+  Date: 2026-07-12 | Item: ASSUMPTION-444 (ASSUMPTION, stated; QUEUED-EMPIRICAL)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong)
+  Net assessment: Same structure as DISPOSITION-449: credential expiry is the warranted LEADING hypothesis (commonest cause of exactly this signature; re-login the documented fix), while Cook's doctrine blocks "single root cause" as stated — the 9-day detection silence is a second necessary condition already tracked by the open-loop family. The test is free and decisive for the trigger clause; no literature can settle it.
+  Disposition: MONITOR (-> MONITOR-434)
+  What would change the disposition: first post-login scrape AND delivery runs observed independently with no other intervention — both clean -> INCORPORATE (narrow, trigger-scoped; detection gap remains open via REVISE-202); either dirty -> REVISE (secondary breakage confirmed; do not close on the login story).
+  Monitoring cadence: Weekly | Priority: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-459:
+  Date: 2026-07-12 | Item: ASSUMPTION-445 (ASSUMPTION, stated; QUEUED-EMPIRICAL)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong)
+  Net assessment: Count parity is real evidence of zero fetch-loop loss and standard first-layer practice; "completeness is established" fails because the denominator is self-produced (the P-473 hazard, of which this is the flagship instance — 307/307 known-wrong precedent). One independent count settles it permanently and cheaply. The convention-level fix is REVISE-209's; flagging this instance REVISE too would duplicate it.
+  Disposition: MONITOR (-> MONITOR-435)
+  What would change the disposition: the independent provider-side count — matches -> INCORPORATE (completeness established, terminal state earned); discrepancy -> REVISE (enumerate the difference set; audit the fetch enumeration).
+  Monitoring cadence: Weekly | Priority: Low-Medium (test is cheap; state is terminal so it should not wait long)
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-460:
+  Date: 2026-07-12 | Item: PRESUMPTION-471 (PRESUMPTION, unstated)
+  15a: SUPPORTED (Strong; polarity — hazard confirmed) | 15b: CHALLENGED (Strong)
+  Net assessment: Convergent verdict against the embedded belief from attestation frameworks (SLSA), gray-failure doctrine, and test-effectiveness doctrine: a depth-blind stamp is a verifier that cannot fail, and the staleness system inverts it into active protection of the defect — freshest-looking pairs include the least-verified. PRESUMPTION + strong challenge -> REVISE per heuristics; time-sensitive because backfilling the degraded cohort depends on run logs that age out.
+  Disposition: REVISE (-> REVISE-207)
+  What is at risk: id-drift rides in pairs stamped fully fresh; the degraded cohort becomes unreconstructible as logs decay; all downstream staleness logic consumes misinformation.
+  Recommended action: add qc_mode (full | form-only) beside last_qc_at; backfill the known degraded cohort from run records NOW; staleness scans treat form-only as due-for-full. Enables DISPOSITION-456's safeguards.
+  Urgency: High (backfill window closing)
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-461:
+  Date: 2026-07-12 | Item: PRESUMPTION-472 (PRESUMPTION, unstated; QUEUED-EMPIRICAL)
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong)
+  Net assessment: 15a's support is conditional on the exact property presumed (string-shape), while the citation-integrity literature classifies mislabels as predominantly semantic and the single inspected instance is a gloss — the presumption inverts its own evidence. Weak support + strong challenge on a PRESUMPTION -> REVISE. The queued two-pass test (grep yield vs sampled semantic read) is cheap and directly measures the residue.
+  Disposition: REVISE (-> REVISE-208)
+  What is at risk: OPEN-118 closes on grep exhaustion while the semantic remainder — the class the literature says is more common and more damaging — persists under a "resolved" flag.
+  Recommended action: define "cluster closed" as grep yield PLUS sampled semantic read showing negligible residue; run both passes on the same day-range before closing OPEN-118. Governs DISPOSITION-457's closure criterion.
+  Urgency: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-462:
+  Date: 2026-07-12 | Item: PRESUMPTION-473 (PRESUMPTION, unstated)
+  15a: SUPPORTED (Strong; polarity — hazard confirmed) | 15b: CHALLENGED (Strong)
+  Net assessment: Both directions converge against the embedded belief: self-ascertained denominators cannot measure their own missingness (capture-recapture doctrine), even multi-source corrections carry dependence bias, and the system holds a live known-wrong instance (307/307). Terminal "complete" states make the error permanent — no remaining detection path. Generalizes A-437's challenge; supplies the convention DISPOSITION-459 defers to; extends REVISE-205's census protocol from counts to denominators.
+  Disposition: REVISE (-> REVISE-209)
+  What is at risk: every terminal completeness state (archive, registry currency) may conceal silent gaps forever; cross-agent figures inherit unaudited denominators.
+  Recommended action: convention — terminal completeness claims require one independent corroboration (provider-side count for BOSCO; dual-channel census for registries per REVISE-200/205); denominators carry provenance (source, method, timestamp). One protocol settles this flag, MONITOR-435, and strengthens the REVISE-205 census rule.
+  Urgency: Medium-High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-463:
+  Date: 2026-07-12 | Item: PRESUMPTION-474 (PRESUMPTION, unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong)
+  Net assessment: The decoupling literature legitimizes continued DURABLE-ARTIFACT production during operator absence but conditions it on backpressure existing somewhere — and the second clause concedes none exists. For SIGNAL-type outputs (REVISE flags, escalations) the verdict is unambiguous: production without consumption is compounding harm (lean overproduction; alert fatigue in batch; dead-man's-switch doctrine), and the system is living the counterexample — A-428 escalating nightly into an unread channel, 25+ REVISE flags awaiting an absent reviewer (this run adds 5). PRESUMPTION + strong challenge + live governance drift -> REVISE, High.
+  Disposition: REVISE (-> REVISE-210)
+  What is at risk: unratified authority accumulates; the human-in-the-loop boundary at REVISE silently expires; return-triage cost grows superlinearly.
+  Recommended action: quiescence rule distinguishing artifact from signal production — after N consecutive days (suggest 7) without operator consumption: cadence reduced, per-item escalations suppressed in favor of a single daily digest, REVISE flags accumulate to a triage-ordered return-brief. Self-referentially: this run itself operates under the condition this flag describes.
+  Urgency: High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+### RUN TALLY 2026-07-12 (autonomous; Tom not present)
+- Fresh cohort processed: 9/9 (A-441..445, P-471..474; the 2026-07-11 EOD batch) — SEARCHED-15a + SEARCHED-15b + DISPOSITIONED-15c, all 2026-07-12.
+- Dispositions: 0 INCORPORATE | 4 MONITOR (432: A-441, 433: A-443, 434: A-444, 435: A-445) | 5 REVISE (206: A-442, 207: P-471, 208: P-472, 209: P-473, 210: P-474).
+- validated_premises.md: unchanged (no INCORPORATE this run; consistency check n/a).
+- NOVELTY flags: none. SYSTEMIC-RISK: 1 (High — self-certifying completeness/verification: A-442, A-445, P-471, P-473; fourth member of the open-loop family after 07-09/07-10/07-11 flags).
+- 6 of 9 items were QUEUED-EMPIRICAL and received the literature pass per 07-09..07-11 precedent; each carries its decisive in-house test in the disposition. The convention fork (lit-pass vs hold for QUEUED-EMPIRICAL) still awaits Tom's ruling.
+- Deferred, surfaced: 15d re-trigger backlog (~115 items from the 2026-07-05 15d run; 8th consecutive run deferred — 15d ownership boundary per 2026-05-16 precedent; ASSUMPTION-429 tracks the throughput mismatch) and the pre-convention held QUEUED-EMPIRICAL set (~18 items, 2026-06-29..07-06; empirical tests pending, no lit pass pending Tom's ruling).
+- Self-referential note: REVISE-210 (operator-absence quiescence) describes the conditions of this very run; its recommendation, if adopted, would change how runs like this one report.
+  PROVENANCE: Origin: c2a2-lit-search-pipeline (scheduled 2026-07-12); Chain: [14a/14b -> 15a,15b -> 15c] (9 fresh items, cycle 0); Transform: full pipeline run; Current status: COHORT-DISPOSITIONED (9/9; re-trigger + held-empirical backlogs deferred, surfaced)
+
+---
+
+## 2026-07-13 — 15a/15b RETURNS + 15c DISPOSITIONS (scheduled c2a2-lit-search-pipeline; autonomous, Tom not present)
+
+*Fresh cohort: the 2026-07-12 EOD 14a/14b batch — ASSUMPTION-446..451, PRESUMPTION-475..477 (9 items). 15d re-trigger backlog (~115 items from the 2026-07-05 run + the 2026-07-12 re-trigger cohort) DEFERRED for the 9th consecutive run per the 15d ownership boundary (2026-05-16 precedent); ASSUMPTION-429 tracks the throughput mismatch. Pre-convention held QUEUED-EMPIRICAL set (~18 items, 2026-06-29..07-06) still held pending Tom's ruling. The 3 QUEUED-EMPIRICAL items in THIS cohort received the literature pass per the 07-09..07-12 precedent; each carries its decisive in-house test in the disposition.*
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-446 | Direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: SPC chart-sensitivity doctrine (CUSUM/EWMA exist because Shewhart charts miss small sustained shifts)
+  Summary: SPC legitimises "no special-cause signal" as first-line evidence, but nothing supports the leap from a smooth aggregate series to the exoneration of prior rows.
+  Full results: lit_search_results/for/ASSUMPTION-446_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-446 | Direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: Rothermel & Harrold 1997, "A Safe, Efficient Regression Test Selection Technique," ACM TOSEM 6(2)
+  Specific risk: A proportional resolver defect produces a smooth series BY CONSTRUCTION — so "no jump" is exactly what the excluded hypothesis predicts. If the defect predates 07-12, the whole connectivity series is silently biased and the run closed the only detection path.
+  Summary: Affirming the consequent. Only re-execution over prior inputs (or the resolver's git history) settles it.
+  Full results: lit_search_results/against/ASSUMPTION-446_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-447 | Direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Moderate
+  Key source: Broder et al. 2000, "Graph structure in the web," Computer Networks 33:309-320
+  Summary: Low indegree is a structural equilibrium (preferential attachment; decoupled in/out degree exponents; Kleinberg hubs are valuable without being pointed at). NOTE: no peer-reviewed source found characterising synthesis notes as outbound-heavy — that premise is practitioner folklore.
+  Full results: lit_search_results/for/ASSUMPTION-447_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-447 | Direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: Arora, West & Gerlach 2024, "Orphan Articles: The Dark Matter of Wikipedia," ICWSM (arXiv:2306.03940)
+  Specific risk: C2A2's highest-value synthesis artifacts are its least reachable ones. De-orphanisation CAUSALLY raises discovery (measured on Wikipedia); low indegree is treated there as a maintenance defect, not a natural state.
+  Summary: "Expected" and "harmless" are different claims; only the first is supported. Hinges entirely on whether retrieval is traversal- or embedding-based.
+  Full results: lit_search_results/against/ASSUMPTION-447_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-448 | Direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Moderate (self-limiting)
+  Key source: Adamic et al. 2001, "Search in power-law networks," Phys. Rev. E 64:046135
+  Summary: Hub-and-spoke graphs ARE efficiently searchable — but Adamic requires hubs connected to the periphery, and GraphRAG's Leiden partition is collectively exhaustive. A ~75%-orphan vault violates the precondition of its own supporting evidence.
+  Full results: lit_search_results/for/ASSUMPTION-448_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-448 | Direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: Xiang et al. 2025, GraphRAG-Bench (arXiv:2506.05690); Han et al. 2025 (arXiv:2502.11371); Saxena et al. 2020 (EmbedKGQA, ACL)
+  Specific risk: "The bottleneck is not connectivity" is the load-bearing conclusion steering work prioritisation. Two 2025 benchmarks find graph structure often HURTS unless well-constructed; KG sparsity is the named mechanism that breaks multi-hop traversal; community summarisation would silently OMIT the orphan periphery from every summary.
+  Summary: Sufficiency was derived from graph statistics without asking what consumes the graph. The derivation is invalid whether or not the conclusion holds.
+  Full results: lit_search_results/against/ASSUMPTION-448_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-449 | Direction: FOR | Result: SUPPORTED | Strength: Moderate-to-Strong
+  Key source: Hoffman & Prakash 2014, "Objects of Consciousness," Front. Psychol. 5:577 (the join theorems); Kastrup 2018, "The Universe in Consciousness," JCS 25(5-6)
+  Summary: The formal record supports the reclassification AWAY from "agreement": Hoffman/Fields compose, Levin nests, Kastrup dissociates and explicitly rejects combination. Miller 2021 defends the non-equivalence of decombination and combination.
+  Full results: lit_search_results/for/ASSUMPTION-449_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-449 | Direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: Kastrup, "Are there hierarchies of dissociation?" (With Reality in Mind interview) — Kastrup affirms SUB-ALTERS, a "dissociative hierarchy," and layered internal dissociation, noting this is "not to be found in anything I have written."
+  Specific risk: Kastrup's alters DO nest. The "incompatible mereologies" framing misattributes his position. Routing the strong form to the paradigm-shift channel would seed C2A2's most visible evidence stream with a misreading — on its first real use.
+  Summary: The dispute is about ontological PRIORITY (what is fundamental), not part-whole structure. Correct label: "CONTESTED — priority dispute," not "contradiction."
+  Full results: lit_search_results/against/ASSUMPTION-449_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-450 | Direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Moderate-to-Strong (core formalism only)
+  Key source: Friston 2013, "Life as we know it," J. R. Soc. Interface 10(86); the dark-room literature
+  Summary: FEP's core answers "why do things persist?", not "why do they stop?"; stasis is its default attractor and must be argued away. The absence holds for the core formalism as stated.
+  Full results: lit_search_results/for/ASSUMPTION-450_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-450 | Direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: Stephan, Manjaly, Mathys et al. 2016, "Allostatic self-efficacy: a metacognitive theory of dyshomeostasis-induced fatigue and depression," Front. Hum. Neurosci. 10:550
+  Specific risk: The claim's first clause ("active inference has no fatigue term") is FALSE as stated — Stephan et al. is a fatigue term built inside active inference, and Cieri et al. 2021 treat aging AS an FEP application. This item gates the friston_levin promotion and has now been flagged two weeks running.
+  Summary: The broad claim is refuted; a narrow, more interesting version survives (does FEP predict decay in a system with intact resources, no exogenous damage, and a SATISFIED model?). Stephan's fatigue arises from sustained FAILURE, not from success — so it does not strictly cover the "well-fitted model that met its goal" case.
+  Full results: lit_search_results/against/ASSUMPTION-450_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-451 | Direction: FOR | Result: SUPPORTED (polarity — hazard class confirmed) | Strength: Strong (class) / None (instance)
+  Key source: Vacuity-detection literature — ~20% of specifications pass VACUOUSLY on first formal-verification runs, and a vacuous pass ALWAYS indicates a real defect somewhere
+  Summary: "A verifier that cannot fail" is a well-characterised, common, and actively harmful failure class. The literature confirms the hazard; it cannot confirm this script has it.
+  Full results: lit_search_results/for/ASSUMPTION-451_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-451 | Direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: Vacuity-detection methodology (a passing property must be interrogated with a WITNESS to distinguish vacuous from genuine)
+  Specific risk: A 0 return is consistent with BOTH "the instrument is blind" and "nothing is stale." C2A2 diagnosed the instrument from its readings rather than its mechanism — the same move it has flagged four times this month. The second clause ("manual scanning is the sole work source") is an unsupported universal.
+  Summary: Not a challenge to the defect's plausibility, but to the claim's evidential status. The fixture settles it in minutes.
+  Full results: lit_search_results/against/ASSUMPTION-451_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-475 | Direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: Bland & Altman limits-of-agreement lineage
+  Summary: Two enumerations may legitimately differ for DEFINITIONAL reasons — but every source treats the difference as something to be CHARACTERISED. Support is for coexistence-with-characterisation, which is the opposite of what the system is doing.
+  Full results: lit_search_results/for/PRESUMPTION-475_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-475 | Direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: Dual-system estimation / capture-recapture doctrine (arXiv:2505.01359; arXiv:2003.13080)
+  Specific risk: Two independent same-day censuses are not a discrepancy to tolerate — they are jointly informative about what BOTH missed, and are exactly the independent corroboration REVISE-209 (issued one day earlier by this pipeline) demands. The system is holding the cure and declining to take it. Downstream figures inherit whichever series they happened to draw from, unrecorded.
+  Summary: The literature inverts the presumption. An 80-file / 77-orphan gap either decomposes exactly (5 minutes to prove) or one series is wrong — and ASSUMPTION-446's resolver defect is the first suspect.
+  Full results: lit_search_results/against/PRESUMPTION-475_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-476 | Direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: Kudrjavets, Nagappan & Ball 2006 (assertion density lowers fault density); Kephart & Chess 2003 (MAPE-K)
+  Summary: Support covers the presumption's ANTECEDENT (in-run self-catching is real and creditable) and none of its consequent. Autonomic computing itself assumes an EXTERNAL specification against which "healthy" is judged; Arcaini et al. 2015 requires external model checking — a counterexample inside the supportive literature.
+  Full results: lit_search_results/for/PRESUMPTION-476_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-476 | Direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: Fagan 1976 (IBM Sys J 15(3)); Basili & Selby 1987 (IEEE TSE); SLSA v1.0 (L1 self-attestation "trivial to forge"); ISO/IEC 17025 cl. 6.5; Rothermel & Harrold 1997
+  Specific risk: FIFTH member of the self-certifying family, and it sits at the TOOLING layer BENEATH the other four — it can silently invalidate the evidence they are argued from.
+  Summary: Four independent traditions converge: the entity that erred cannot be the sole witness to the scope of its own error. The presumption conflates "the fix is correct" with "prior output was unaffected"; nothing licenses that inference. Only replay does.
+  Full results: lit_search_results/against/PRESUMPTION-476_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-477 | Direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Weak-to-Moderate (domain-limited)
+  Key source: Gartlehner et al. 2024, Research Synthesis Methods 15(4) (Claude 2 at 96.3% on structured data extraction); Zhang et al. 2024, TACL 12
+  Summary: LLM capture is strong on STRUCTURED, EXTRACTIVE content — which is not this task. And 96.3% still means ~1 element in 27 is wrong, which is fine for pooled synthesis and fatal when one claim carries the whole inference.
+  Full results: lit_search_results/for/PRESUMPTION-477_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-477 | Direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: Greenberg 2009, "How citation distortions create unfounded authority," BMJ 339:b2680; Jergas & Baethge 2015 (25.4% quotation error rate); Walters & Wilder 2023 (LLM citation fabrication)
+  Specific risk: **THE FAILURE ALREADY OCCURRED IN THIS RUN.** 15b's independent primary-source pass on ASSUMPTION-449 found that Kastrup explicitly affirms a "dissociative hierarchy" with sub-alters — contradicting the capture-derived "incompatible mereologies" framing. Kastrup notes this material is "not in anything I have written," which is exactly why the capture missed it. One primary-source pass caught it, on the flagship item, on the channel's first real use.
+  Summary: Human secondary capture already errs ~1 in 4; LLM attribution is worse. Captures are excellent LEAD GENERATION and insufficient as FINDINGS. Greenberg's amplification cascade is the precise systemic mechanism.
+  Full results: lit_search_results/against/PRESUMPTION-477_against.md
+
+### 15c DISPOSITIONS — 2026-07-13
+
+DISPOSITION-464:
+  Date: 2026-07-13 | Item: ASSUMPTION-446 (ASSUMPTION, stated; QUEUED-EMPIRICAL)
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong)
+  Net assessment: The conclusion may be true but the stated reason is not evidence: a proportional resolver defect produces a smooth series by construction, so "no jump" is exactly what the excluded hypothesis predicts. Regression-testing doctrine is unambiguous that a fix does not retroactively certify prior output. The convention-level fix belongs to PRESUMPTION-476's flag (this cohort), which governs the whole self-certifying-tooling class; flagging this instance REVISE too would duplicate it — the DISPOSITION-459 precedent.
+  Disposition: MONITOR (-> MONITOR-436)
+  What would change the disposition: 15b surfaced a nearly-free decisive test that 14a did not queue — READ THE RESOLVER'S GIT HISTORY. If basename-only matching predates 2026-07-12, the claim is dead immediately. Otherwise the queued dual-mode re-run against the 07-05 snapshot: earlier rows reproduce -> INCORPORATE; they do not -> REVISE and back-correct the CSV series.
+  Monitoring cadence: Weekly | Priority: Medium-High (three items in this cohort — A-447, A-448, P-475 — consume the series this claim exonerates)
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-465:
+  Date: 2026-07-13 | Item: ASSUMPTION-447 (ASSUMPTION, stated)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong)
+  Net assessment: The claim's descriptive half is well supported — low indegree IS the structural equilibrium of any preferential-attachment graph, and hubs are valuable without being pointed at. Its normative half is not: Arora et al. 2024 supply a CAUSAL result that de-orphanisation raises discovery, and Wikipedia classifies the condition as a maintenance defect. "Expected" and "harmless" are different claims and only the first survives. Both directions converge on the same unasked question — does anything RETRIEVE over this graph?
+  Disposition: MONITOR (-> MONITOR-437)
+  What would change the disposition: the retrieval-mode determination (see SYSTEMIC-RISK #2). If retrieval is embedding-based, backlink count is the wrong metric and the claim is fine (INCORPORATE, restated). If traversal-based, the 42 bridge notes are invisible at the moment of need and the claim is false (REVISE). Secondary test: BFS reachability of the 45 bridge notes from the top-20 hub set at depths 1-3.
+  Monitoring cadence: Weekly | Priority: Medium (upgraded from the item's LOW-MEDIUM: it is one of two items decided by a single one-hour code read)
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-466:
+  Date: 2026-07-13 | Item: ASSUMPTION-448 (ASSUMPTION, stated)
+  15a: PARTIALLY-SUPPORTED (Moderate, self-limiting) | 15b: CHALLENGED (Strong)
+  Net assessment: The supporting literature undermines the claim on inspection. Adamic's sublinear search REQUIRES hubs connected to the periphery; GraphRAG's Leiden partition is collectively exhaustive. A ~75%-orphan vault violates the precondition of the very results that would license it — so the claim's own evidence, read carefully, says the opposite. Meanwhile two 2025 benchmarks find graph structure frequently HURTS unless well-constructed, and KG sparsity is the named mechanism that breaks multi-hop traversal. Sufficiency was DERIVED FROM GRAPH STATISTICS WITHOUT ASKING WHAT CONSUMES THE GRAPH; that derivation is invalid regardless of whether its conclusion happens to hold. This is a stated ASSUMPTION carrying a sweeping verdict that steers prioritisation.
+  Disposition: REVISE (-> REVISE-211)
+  What is at risk: "The bottleneck is not connectivity" is the load-bearing conclusion of the 2026-07-12 census and will steer effort away from the graph. If wrong, C2A2 spends its effort elsewhere while three quarters of its corpus stays invisible to its own synthesis agents — and the failure is SILENT: agents will produce confident syntheses over the reachable quarter and never report what they could not see.
+  Recommended action: Withdraw the sufficiency verdict until the retrieval mode is determined (a one-hour code read that also decides A-447). Then run the orphan-recall vs. hub-recall measurement: 30 held-out synthesis questions whose gold answers require >=2 orphan notes. Do not let the verdict steer prioritisation before one of these is in hand.
+  Urgency: Medium
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-467:
+  Date: 2026-07-13 | Item: ASSUMPTION-449 (ASSUMPTION, stated)
+  15a: SUPPORTED (Moderate-to-Strong) | 15b: CHALLENGED (Strong)
+  Net assessment: A genuine CONTESTED result, and the most consequential of the run. Both directions AGREE the "agreement" label is wrong — that much is now well grounded from both sides. They disagree sharply on the replacement. 15a establishes that Hoffman/Fields compose and Levin nests while Kastrup dissociates and explicitly rejects combination. But 15b found Kastrup's own testimony — an interview, not the written corpus — affirming sub-alters, layered internal dissociation, and an explicit "dissociative hierarchy." KASTRUP'S ALTERS NEST. The contrast is therefore about ontological PRIORITY (what is fundamental), not about mereology, and the strong "incompatible mereologies" framing misattributes his position. Per 15c standards, a high-stakes item with strong evidence both ways is MONITOR, not INCORPORATE — and premature routing here is far costlier than delay.
+  Disposition: MONITOR (-> MONITOR-438)
+  What would change the disposition: (a) TEXTUAL — does Levin anywhere assert the FUNDAMENTALITY of lower-scale selves, or only scale-relative competency? If the latter, the conflict collapses and the correct label is "priority dispute." (b) FORMAL — does Hoffman's join operation have a well-defined inverse (a split/decomposition theorem)? If joins are invertible, composition and dissociation are duals and "incompatible mereologies" fails outright. (c) The PRESUMPTION-477 primary-text gate must be passed before ANY routing.
+  Monitoring cadence: Weekly | Priority: HIGH
+  Interim recommendation: reclassify the bridge to "CONTESTED — priority dispute, not mereological contradiction" (which BOTH searches support) rather than to "contradiction" (which only 15a supports). Do NOT route the strong form to the paradigm-shift channel. Log the hierarchies-of-dissociation interview as a key primary source, flagged as absent from Kastrup's written corpus — which is very likely why the original capture missed it.
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-468:
+  Date: 2026-07-13 | Item: ASSUMPTION-450 (ASSUMPTION, stated)
+  15a: PARTIALLY-SUPPORTED (Moderate-to-Strong, core formalism only) | 15b: CHALLENGED (Strong)
+  Net assessment: The claim's FIRST CLAUSE IS FALSE AS WRITTEN. Stephan et al. (2016), in the field's flagship venue, construct a fatigue term inside active inference — a metacognitive belief about one's own allostatic competence that degrades endogenously. Cieri et al. (2021) treat aging AS an FEP application via brain entropy, precisely inverting the claim's conclusion. Precision is already a free parameter and its decay in aging is documented (Chao et al. 2021). What 15a establishes is real but narrower than the claim: FEP's CORE answers "why persist?", not "why stop?". A precise, still-open, and genuinely interesting question survives — does FEP predict decay in a system with intact resources, no exogenous damage, and a SATISFIED model? — because Stephan's fatigue arises from sustained FAILURE, not from success. The assumption as stated must be revised; the insight beneath it may be publishable.
+  Disposition: REVISE (-> REVISE-212)
+  What is at risk: This item gates the friston_levin standalone-synthesis promotion and has been flagged two consecutive weeks. Promoting a synthesis headlined "active inference has no fatigue term" would put C2A2's name behind a claim refuted by a well-known 2016 paper. Reputational and epistemic cost, entirely avoidable.
+  Recommended action: RESTATE the assumption in its narrow form ("FEP lacks an endogenous degradation term for a model that is well-fitted, goal-satisfied, and resource-intact, absent exogenous damage") and re-test THAT. Required reading before the friston_levin promotion: Stephan et al. 2016 in full (does the downward revision of allostatic self-efficacy DERIVE from free-energy minimisation, or is it triggered by exogenous persistent prediction error?), plus Cieri et al. 2021 and Kuchling/Friston/Georgiev/Levin 2020 — the last being the Friston-Levin collaboration this very bridge concerns.
+  Urgency: Medium-High (gates a promotion; second consecutive flag)
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-469:
+  Date: 2026-07-13 | Item: ASSUMPTION-451 (ASSUMPTION, stated; QUEUED-EMPIRICAL)
+  15a: SUPPORTED (Strong; polarity — hazard class confirmed) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: The hazard is real and well-characterised — vacuity detection is a whole sub-discipline, ~20% of specs pass vacuously on first run, and a vacuous pass ALWAYS indicates a defect somewhere. But 15b's objection lands on the EVIDENCE, not the hypothesis: a 0 return is equally consistent with "the instrument is blind" and "nothing is stale," and the system diagnosed the instrument from its readings rather than its mechanism — the same move it has flagged four times this month. The discriminating procedure exists, is trivial, and has not been run. MONITOR is correct precisely because the test is minutes of work; a REVISE here would spend a human review slot on something a fixture settles.
+  Disposition: MONITOR (-> MONITOR-439)
+  What would change the disposition: the queued fixture — one fresh pair + one deliberately stale pair -> invoke the report path. Returns 0 -> blindness CONFIRMED, escalate to REVISE and fix. Returns 1 -> claim false, close. Also cite the report code path line. Note separately that the second clause ("manual scanning is the sole work source") is an unsupported universal inferred from one instrument's failure and should be dropped regardless of the fixture's outcome.
+  Monitoring cadence: Weekly | Priority: Medium (all Summa QC work-sourcing depends on it; kin to MONITOR-432)
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-470:
+  Date: 2026-07-13 | Item: PRESUMPTION-475 (PRESUMPTION, unstated; QUEUED-EMPIRICAL)
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong)
+  Net assessment: The measurement literature does not merely fail to support the presumption — it inverts it. Two independent same-day enumerations of one population are the single most valuable measurement configuration available: differencing them yields the systematic bias (Bland-Altman) AND an estimate of what NEITHER captured (dual-system estimation). The presumption discards both. The timing is damning: REVISE-209, issued by this very pipeline one day earlier, established that terminal completeness claims require independent corroboration — and here sits an independent corroboration, unexamined, because the two artifacts live in different files. Per the DISPOSITION-459 precedent I do not open a duplicate convention flag; REVISE-205 (census protocol) and REVISE-209 (denominator provenance) already own the rule. But this instance ADDS something they do not contain — the dual-system upgrade — and that is recorded as an amendment to REVISE-205's scope rather than a new flag.
+  Disposition: MONITOR (-> MONITOR-440) — with a standing escalation trigger (below)
+  What would change the disposition: the queued diff. If the 80-file / 77-orphan gap decomposes EXACTLY into named definitional exclusions plus resolver differences, the presumption is salvaged in restricted form (record the decomposition; declare a canonical series per downstream consumer) -> INCORPORATE. If ANY element of the symmetric difference is unexplained, ESCALATE IMMEDIATELY TO REVISE: one census is defective, and ASSUMPTION-446's resolver defect is the first suspect.
+  Monitoring cadence: Weekly | Priority: Medium-High (the connectivity narrative of A-447/A-448 rides on the weekly-agent series; the bootstrap audit disagrees with it by ~2.5%)
+  Amendment recorded to REVISE-205: when two independent censuses of the same vault exist, treat them as a DUAL-SYSTEM ESTIMATOR and report the estimated true vault size — information the system currently discards every week.
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: MONITORING
+
+DISPOSITION-471:
+  Date: 2026-07-13 | Item: PRESUMPTION-476 (PRESUMPTION, unstated)
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong)
+  Net assessment: Four independent evidentiary traditions — code inspection (Fagan; Basili & Selby), supply-chain attestation (SLSA L1 self-attestation is "trivial to forge"), metrology (ISO/IEC 17025 traceability to an INDEPENDENT reference), and regression testing (safe RTS) — converge without exception: the entity that erred cannot be the sole witness to the scope of its own error. 15a's support reaches only the antecedent (in-run self-catching is real, cheap, and creditable — keep it). The presumption's operative move is a clean logical gap: it conflates "the fix is correct" with "prior output was unaffected," and nothing licenses that inference. PRESUMPTION + Strong challenge -> REVISE per heuristics, with extra weight because this sits at the TOOLING layer BENEATH the other four members of the self-certifying family — it can silently invalidate the evidence they are argued from.
+  Disposition: REVISE (-> REVISE-213)
+  What is at risk: If the resolver defect predates the 2026-07-12 run, the entire connectivity CSV series is silently biased, three items in this cohort (A-447, A-448, P-475) inherit the bias, and the run that would have detected this instead closed the question. Terminal exoneration removes the last detection path — the REVISE-209 hazard, one layer down.
+  Recommended action: Convention — NO SELF-PRODUCED ARTIFACT MAY CERTIFY ITSELF, applied at the tooling layer: a self-caught, self-fixed defect is confirmed by REPLAY (re-run the corrected tool over every prior input and diff against emitted output). Empty diff -> exonerated BY RE-EXECUTION. Non-empty -> back-correct. Replay infeasible -> prior output is marked PROVISIONAL in every downstream artifact that consumes it, not clean. Nearly-free first step: read the resolver's git history and DATE the defect. This subsumes ASSUMPTION-446/MONITOR-436 and unifies with REVISE-209 (denominators) and REVISE-214 (captures) under one rule — see SYSTEMIC-RISK #1.
+  Urgency: Medium-High
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+DISPOSITION-472:
+  Date: 2026-07-13 | Item: PRESUMPTION-477 (PRESUMPTION, unstated)
+  15a: PARTIALLY-SUPPORTED (Weak-to-Moderate, domain-limited) | 15b: CHALLENGED (Strong)
+  Net assessment: Decisive at the THRESHOLD level. Human secondary capture already misquotes ~1 time in 4 (Jergas & Baethge 2015: 25.4%; Lehmann et al. 2023: 24.27%); LLM attribution specifically is worse (Walters & Wilder 2023); and intrinsic hallucination — using the source's own vocabulary while misrepresenting its claim — is invisible to any check short of reading the source (Maynez et al. 2020). 15a's support was collected on structured, extractive content (RCT reports, news), which is not this task, and even its best figure (96.3%) means ~1 element in 27 is wrong — fine for pooled synthesis, fatal when one claim carries the whole inference. Greenberg (2009) names the systemic mechanism exactly: an unverified secondary claim, routed onward, acquires authority through REPETITION rather than evidence. AND THE FAILURE ALREADY OCCURRED, IN THIS RUN, ON THE FLAGSHIP ITEM: 15b's primary-source pass on ASSUMPTION-449 found Kastrup affirming a "dissociative hierarchy" with sub-alters — contradicting the capture-derived framing — and Kastrup himself notes this material is "not in anything I have written," which is exactly why the capture missed it. PRESUMPTION + Strong challenge + HIGH stakes + a measured in-run instance -> REVISE, High.
+  Disposition: REVISE (-> REVISE-214)
+  What is at risk: The paradigm-shift channel is C2A2's highest-signal pathway and this is its first real use. Feeding it unverified secondary material converts it into its highest-VARIANCE pathway. A capture-artifact false positive here corrupts C2A2's central evidence stream, and every downstream artifact inherits it unmarked and uncorrected.
+  Recommended action: GATE the paradigm-shift channel behind a primary-text verification pass. Every capture that triggers a reclassification must carry VERBATIM quotations with locators (page/section/timestamp). Label captures LEAD, not FINDING, until they pass the gate — captures remain excellent lead generation and that use should continue unchanged. Run a FActScore-style atomic decomposition against the primary text. Sample-audit 10 existing captures that underwrite standing bridge classifications and measure the misattribution rate; given that the first such check returned a miss, set the prior high. Same rule as REVISE-213 and REVISE-209, applied at the input layer.
+  Urgency: HIGH (gates the first use of the paradigm-shift channel; A-449/MONITOR-438 is blocked on it)
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: REVISION-FLAGGED
+
+### SYSTEMIC-RISK FLAGS — 2026-07-13
+
+SYSTEMIC-RISK #1 (CRITICAL — sixth consecutive flag in the open-loop family; NOW AT THE INPUT LAYER):
+  Affected items: PRESUMPTION-476 (tooling), PRESUMPTION-475 + ASSUMPTION-446 + ASSUMPTION-451 (measurement), PRESUMPTION-477 + ASSUMPTION-449 (epistemic input). Prior members: A-442, A-445, P-471, P-473 (07-12); flags on 07-09, 07-10, 07-11.
+  Common vulnerability: C2A2 accepts SELF-PRODUCED EVIDENCE AS INDEPENDENTLY VERIFIED at every layer it operates — tooling (a run certifies its own fix), measurement (a census certifies its own denominator), and now EPISTEMIC INPUT (an agent capture certifies its own reading of a primary text). The input layer is the most consequential: a corrupted input cannot be detected by ANY downstream check, because every downstream check is computed FROM it.
+  Literature basis: Fagan 1976; Basili & Selby 1987; SLSA v1.0 / NIST SP 800-218; ISO/IEC 17025 cl. 6.5; Greenberg 2009 (BMJ 339:b2680); Jergas & Baethge 2015 (PeerJ 3:e1364); Walters & Wilder 2023 (Sci Rep 13).
+  Risk level: CRITICAL
+  Recommendation: ONE convention, three layers — NO SELF-PRODUCED ARTIFACT MAY CERTIFY ITSELF. Tooling fixes confirmed by REPLAY (REVISE-213); denominators by INDEPENDENT CORROBORATION (REVISE-209, already flagged); captures by PRIMARY-TEXT VERIFICATION (REVISE-214). Three flags, one rule. Adopt it once rather than patching three times. NOTE: the run has now demonstrated the hazard empirically rather than merely arguing it — see DISPOSITION-472.
+
+SYSTEMIC-RISK #2 (High — shared unexamined dependency):
+  Affected items: ASSUMPTION-447, ASSUMPTION-448
+  Common vulnerability: Both connectivity claims rest on an unexamined shared premise — that C2A2's agent retrieval is EMBEDDING-based rather than TRAVERSAL-based. Neither claim states this premise; neither has tested it. If retrieval is traversal-based, BOTH claims fail simultaneously and the entire 2026-07-12 connectivity verdict inverts. If it is embedding-based, both are true but for reasons unrelated to the evidence offered for them.
+  Literature basis: Broder et al. 2000 (IN/TENDRIL unreachability); Arora, West & Gerlach 2024 (causal indegree->discovery); Saxena et al. 2020 (sparsity breaks multi-hop); Xiang et al. 2025 (graph benefit contingent on construction).
+  Risk level: High
+  Recommendation: Determine the retrieval mode before ANY connectivity conclusion steers prioritisation. This is a ONE-HOUR CODE READ that decides two items at once. Handed to 14b as a presumption candidate in its own right: "we presume the link graph is what the agents retrieve over."
+
+NOVELTY FLAGS: none this run. All 9 items found relevant literature in at least one direction.
+
+### RUN TALLY 2026-07-13 (autonomous; Tom not present)
+- Fresh cohort processed: 9/9 (A-446..451, P-475..477 — the 2026-07-12 EOD batch) — SEARCHED-15a + SEARCHED-15b + DISPOSITIONED-15c, all 2026-07-13.
+- Dispositions: 0 INCORPORATE | 5 MONITOR (436: A-446, 437: A-447, 438: A-449, 439: A-451, 440: P-475) | 4 REVISE (211: A-448, 212: A-450, 213: P-476, 214: P-477).
+- validated_premises.md: unchanged (no INCORPORATE this run; consistency check n/a). Register remains at 53 premises.
+- SYSTEMIC-RISK: 2 (one CRITICAL — self-certification, now reaching the epistemic-input layer, 6th consecutive; one High — the untested traversal-vs-embedding retrieval premise shared by both connectivity items).
+- HEADLINE FINDING: the run produced a MEASURED instance of its own flagged hazard. The independent 15b primary-source pass on ASSUMPTION-449 found Kastrup affirming sub-alters and a "dissociative hierarchy" — material absent from his written corpus, and therefore absent from the agent-mediated capture that seeded the flagship paradigm-shift claim. PRESUMPTION-477 predicted this failure class; ASSUMPTION-449 exhibited it; the two arrived in the same cohort by coincidence. This is the strongest single argument yet for the primary-text gate, because it is evidence rather than doctrine.
+- 3 of 9 items were QUEUED-EMPIRICAL (A-446, A-451, P-475) and received the literature pass per the 07-09..07-12 precedent; each carries its decisive in-house test in its disposition. The convention fork (lit-pass vs. hold for QUEUED-EMPIRICAL) STILL awaits Tom's ruling.
+- 15b surfaced a decisive test 14a had not queued: READ THE RESOLVER'S GIT HISTORY (A-446). Nearly free; potentially settles the item outright.
+- Deferred, surfaced: 15d re-trigger backlog (~115 items from the 2026-07-05 run + the 2026-07-12 re-trigger cohort; 9th consecutive run deferred — 15d ownership boundary per 2026-05-16 precedent; ASSUMPTION-429 tracks the throughput mismatch) and the pre-convention held QUEUED-EMPIRICAL set (~18 items, 2026-06-29..07-06).
+- Governance note: REVISE-210 (operator-absence quiescence, flagged yesterday) remains unadopted; this run adds 4 REVISE flags to a queue now standing at ~29 awaiting an absent reviewer. The run operates under exactly the condition REVISE-210 describes, for the second consecutive day.
+  PROVENANCE: Origin: c2a2-lit-search-pipeline (scheduled 2026-07-13); Chain: [14a/14b -> 15a,15b -> 15c] (9 fresh items, cycle 0); Transform: full pipeline run; Current status: COHORT-DISPOSITIONED (9/9; re-trigger + held-empirical backlogs deferred, surfaced)
+
+
+## 2026-07-16 — 15a/15b/15c PIPELINE RUN (scheduled c2a2-lit-search-pipeline; processed the 07-13 EOD, 07-14 backfill, and 07-15 EOD batches missed by the crashed 07-14/07-15 runs — 17 items)
+Backlog note: this run scoped to the 17 genuinely-new 14a/14b intake items. The older [QUEUED-EMPIRICAL] items (from 2026-06-29..07-06) and the 15d [RE-TRIGGER] monitor backlog (2026-07-05 cycles 1/3/5 and 2026-07-12 cycle 1) remain unsearched — see run report / OPEN item. SYSTEMIC-RISK #4 flagged this run.
+
+RETURN-TO-14a [ASSUMPTION-452]:
+  Original item: ASSUMPTION-452
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: see lit_search_results/for/ASSUMPTION-452_for.md
+  Summary: 15a supported (strength Strong).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-452_for.md
+
+RETURN-TO-14a [ASSUMPTION-452]:
+  Original item: ASSUMPTION-452
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: see lit_search_results/against/ASSUMPTION-452_against.md
+  Specific risk: see disposition
+  Summary: 15b partially-challenged (strength Weak).
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-452_against.md
+
+DISPOSITION-473:
+  Date: 2026-07-16
+  Item: ASSUMPTION-452
+  Item type: ASSUMPTION (stated)
+
+  15a result: SUPPORTED
+  15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED
+  15b strength: Weak
+
+  Net assessment: Strong supportive grounding in attestation/provenance doctrine (SLSA's self-generated-vs-independent distinction); only a weak, calibration-level challenge about applying the convention uniformly regardless of stakes.
+
+  Disposition: INCORPORATE -> PREMISE-096
+
+  Reasoning: SLSA independently instantiates exactly this rule and treats self-certification as its defining weakness; the challenge is about cost-tiering, not validity. As the pipeline's proposed terminator for SYSTEMIC-RISK #1 (six consecutive flags, CRITICAL), incorporating it closes the family, with the risk-tiering caveat recorded.
+  Validated premise statement: No self-produced artifact may certify itself; each artifact class is verified by an independent source (tooling by replay, denominators by independent corroboration, captures by primary-text verification). Apply proportional to stakes (SLSA-style tiering), requiring genuine source-independence for the corroborating layer.
+  Confidence: High
+  Applicable to: Verification conventions across tooling/denominators/captures; watchdog output checks; capture pipeline; agents 15a/15b/15c; addresses SYSTEMIC-RISK #1.
+  Re-check cadence: Quarterly
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (INCORPORATE)
+    Current status: INCORPORATED
+
+RETURN-TO-14a [ASSUMPTION-453]:
+  Original item: ASSUMPTION-453
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: see lit_search_results/for/ASSUMPTION-453_for.md
+  Summary: 15a partially-supported (strength Moderate).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-453_for.md
+
+RETURN-TO-14a [ASSUMPTION-453]:
+  Original item: ASSUMPTION-453
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: see lit_search_results/against/ASSUMPTION-453_against.md
+  Specific risk: An executed BFS-reachability test + inspection of whether the stack fuses vector+graph. Pure single-mode -> settle A-447/A-448; hybrid -> re-open both separately.
+  Summary: 15b partially-challenged (strength Moderate).
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-453_against.md
+
+DISPOSITION-474:
+  Date: 2026-07-16
+  Item: ASSUMPTION-453
+  Item type: ASSUMPTION (stated)
+
+  15a result: PARTIALLY-SUPPORTED
+  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED
+  15b strength: Moderate
+
+  Net assessment: Retrieval-mode does substantially shape connectivity (supported), but modern retrieval is often hybrid/query-conditioned, so 'the mode' may not be a single settleable value.
+
+  Disposition: MONITOR -> MONITOR-441
+
+  Reasoning: This is an EMPIRICAL item whose settlement requires reading C2A2's retrieval path and running the BFS-reachability test, not literature. Both directions are moderate and partly cancel. MONITOR pending the in-house determination, which is the cheapest high-value test on the board (SYSTEMIC-RISK #2).
+  What would change the disposition: An executed BFS-reachability test + inspection of whether the stack fuses vector+graph. Pure single-mode -> settle A-447/A-448; hybrid -> re-open both separately.
+  Monitoring cadence: Weekly
+  Priority: High
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (MONITOR)
+    Current status: MONITORING
+
+RETURN-TO-14a [ASSUMPTION-454]:
+  Original item: ASSUMPTION-454
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: see lit_search_results/for/ASSUMPTION-454_for.md
+  Summary: 15a supported (strength Strong).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-454_for.md
+
+RETURN-TO-14a [ASSUMPTION-454]:
+  Original item: ASSUMPTION-454
+  Search direction: AGAINST (disconfirmatory)
+  Result: NO-CHALLENGE-FOUND
+  Strength: Weak
+  Key source: see lit_search_results/against/ASSUMPTION-454_against.md
+  Specific risk: The scheduler watchdog's coverage is really 1/3, not 3/3; silent output failures pass undetected (07-14).
+  Summary: 15b no-challenge-found (strength Weak).
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-454_against.md
+
+DISPOSITION-475:
+  Date: 2026-07-16
+  Item: ASSUMPTION-454
+  Item type: ASSUMPTION (stated)
+
+  15a result: SUPPORTED
+  15a strength: Strong
+  15b result: NO-CHALLENGE-FOUND
+  15b strength: Weak
+
+  Net assessment: Strong support that a check pointed at an unreachable target is an unfalsifiable green check; no literature defends the practice. Only caveat: the blindness may be a sandbox artifact vs. host.
+
+  Disposition: REVISE -> REVISE-215
+
+  Reasoning: Net evidence supports the defect claim: two of three watchdog checks can never fail, inflating apparent coverage on the fleet's sole failure detector. This is a concrete design fix (mount the folders or drop the rows), so it routes to human review as part of the firing-health family REVISE-215.
+  What is at risk: The scheduler watchdog's coverage is really 1/3, not 3/3; silent output failures pass undetected (07-14).
+  Recommended action: Verify the sandbox mounts against the three verification paths; then either mount the folders in the watchdog's environment or drop the two inert rows and report coverage honestly.
+  Urgency: High
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (REVISE)
+    Current status: REVISION-FLAGGED
+
+RETURN-TO-14a [ASSUMPTION-455]:
+  Original item: ASSUMPTION-455
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: see lit_search_results/for/ASSUMPTION-455_for.md
+  Summary: 15a partially-supported (strength Moderate).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-455_for.md
+
+RETURN-TO-14a [ASSUMPTION-455]:
+  Original item: ASSUMPTION-455
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: see lit_search_results/against/ASSUMPTION-455_against.md
+  Specific risk: Every agent reading the master wiki as current is misinformed; the refresh run reports success (compounds firing-health blind spot).
+  Summary: 15b partially-challenged (strength Weak).
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-455_against.md
+
+DISPOSITION-476:
+  Date: 2026-07-16
+  Item: ASSUMPTION-455
+  Item type: ASSUMPTION (stated)
+
+  15a result: PARTIALLY-SUPPORTED
+  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED
+  15b strength: Weak
+
+  Net assessment: Silent staleness of the master wiki is well-supported; the sub-claim that numbers should be averaged (not as-of) is contestable - the real defect is the missing staleness marker.
+
+  Disposition: REVISE -> REVISE-217
+
+  Reasoning: Empirically grounded (last write 07-09; block diverges from findings). Routed to REVISE-217 (stale master-wiki & stale-watch family) with A-460/P-484, because the fix is a design change: add an as-of timestamp + freshness gate and repair the fired-but-wrote-nothing daily refresh.
+  What is at risk: Every agent reading the master wiki as current is misinformed; the refresh run reports success (compounds firing-health blind spot).
+  Recommended action: Confirm mtime + block-diff; add explicit as-of timestamp and freshness gate to the master wiki; fix the daily refresh that fires but writes nothing.
+  Urgency: High
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (REVISE)
+    Current status: REVISION-FLAGGED
+
+RETURN-TO-14b [PRESUMPTION-478]:
+  Original item: PRESUMPTION-478
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: see lit_search_results/for/PRESUMPTION-478_for.md
+  Summary: 15a no-support-found (strength None).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-478_for.md
+
+RETURN-TO-14b [PRESUMPTION-478]:
+  Original item: PRESUMPTION-478
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: see lit_search_results/against/PRESUMPTION-478_against.md
+  Specific risk: Delivery/reconciliation paths (the human-facing output); every remedy that assumes a working channel.
+  Summary: 15b challenged (strength Strong).
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-478_against.md
+
+DISPOSITION-477:
+  Date: 2026-07-16
+  Item: PRESUMPTION-478
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+
+  15a result: NO-SUPPORT-FOUND
+  15a strength: None
+  15b result: CHALLENGED
+  15b strength: Strong
+
+  Net assessment: No support for treating a finite quota as unmetered; strong challenge from admission-control/load-shedding literature and an in-run counterexample (delivery died on out-of-credits while producers completed).
+
+  Disposition: REVISE -> REVISE-219
+
+  Reasoning: PRESUMPTION with strong challenge -> REVISE, HIGH urgency. Designers were unaware they were assuming an unmetered substrate; the failure is silent, lands on delivery paths, is invisible to the watchdog, and defeats queued remedies (REVISE-198/199 assume the channel can still transmit).
+  What is at risk: Delivery/reconciliation paths (the human-facing output); every remedy that assumes a working channel.
+  Recommended action: Introduce a token/quota budget with back-pressure, a precedence order protecting delivery over producers, and an exhaustion alarm the watchdog can read; plot the cost-tracker series against the ceiling.
+  Urgency: High
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (REVISE)
+    Current status: REVISION-FLAGGED
+
+RETURN-TO-14b [PRESUMPTION-479]:
+  Original item: PRESUMPTION-479
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: see lit_search_results/for/PRESUMPTION-479_for.md
+  Summary: 15a no-support-found (strength None).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-479_for.md
+
+RETURN-TO-14b [PRESUMPTION-479]:
+  Original item: PRESUMPTION-479
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: see lit_search_results/against/PRESUMPTION-479_against.md
+  Specific risk: Every prior sync-outage diagnosis accepted on single-cause reasoning; MONITOR-434's observation must be re-scored per-direction.
+  Summary: 15b challenged (strength Strong).
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-479_against.md
+
+DISPOSITION-478:
+  Date: 2026-07-16
+  Item: PRESUMPTION-479
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+
+  15a result: NO-SUPPORT-FOUND
+  15a strength: None
+  15b result: CHALLENGED
+  15b strength: Strong
+
+  Net assessment: No support for mutually-exclusive/single-cause reasoning; strong challenge from resilience engineering (Cook: each necessary, jointly sufficient) plus the two-direction/two-cause counterexample.
+
+  Disposition: REVISE -> REVISE-218
+
+  Reasoning: PRESUMPTION with strong challenge -> REVISE. Routed to REVISE-218 (open-world/multiple-cause family) with P-485 and A-461, since the corrective is a methodological change: multi-cause analysis and per-direction scoring, not another point-fix.
+  What is at risk: Every prior sync-outage diagnosis accepted on single-cause reasoning; MONITOR-434's observation must be re-scored per-direction.
+  Recommended action: Adopt contributing-factors analysis; score each failure direction independently; re-examine closed diagnoses for masked co-causes.
+  Urgency: Medium-High
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (REVISE)
+    Current status: REVISION-FLAGGED
+
+RETURN-TO-14b [PRESUMPTION-480]:
+  Original item: PRESUMPTION-480
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: see lit_search_results/for/PRESUMPTION-480_for.md
+  Summary: 15a partially-supported (strength Weak).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-480_for.md
+
+RETURN-TO-14b [PRESUMPTION-480]:
+  Original item: PRESUMPTION-480
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: see lit_search_results/against/PRESUMPTION-480_against.md
+  Specific risk: Empirical re-score of the 24 pending proposals; a high moot/superseded fraction tips to REVISE.
+  Summary: 15b partially-challenged (strength Moderate).
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-480_against.md
+
+DISPOSITION-479:
+  Date: 2026-07-16
+  Item: PRESUMPTION-480
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+
+  15a result: PARTIALLY-SUPPORTED
+  15a strength: Weak
+  15b result: PARTIALLY-CHALLENGED
+  15b strength: Moderate
+
+  Net assessment: Weak support (append-only preserves the record) but a moderate challenge (perishable-inventory + stale-issue rot: the record's value decays even if the record persists).
+
+  Disposition: MONITOR -> MONITOR-442
+
+  Reasoning: The challenge outweighs but is not decisive without the empirical re-score. MONITOR with the concrete test: re-score a sample of the 24 pending proposals against their filing-day rationale. If a large fraction are moot/superseded -> escalate to REVISE (add expiry/decay + value-based triage).
+  What would change the disposition: Empirical re-score of the 24 pending proposals; a high moot/superseded fraction tips to REVISE.
+  Monitoring cadence: Weekly
+  Priority: Medium-High
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (MONITOR)
+    Current status: MONITORING
+
+RETURN-TO-14a [ASSUMPTION-456]:
+  Original item: ASSUMPTION-456
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: see lit_search_results/for/ASSUMPTION-456_for.md
+  Summary: 15a supported (strength Strong).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-456_for.md
+
+RETURN-TO-14a [ASSUMPTION-456]:
+  Original item: ASSUMPTION-456
+  Search direction: AGAINST (disconfirmatory)
+  Result: NO-CHALLENGE-FOUND
+  Strength: Weak
+  Key source: see lit_search_results/against/ASSUMPTION-456_against.md
+  Specific risk: All output-bearing tasks; the watchdog certifies crashed empty runs as healthy.
+  Summary: 15b no-challenge-found (strength Weak).
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-456_against.md
+
+DISPOSITION-480:
+  Date: 2026-07-16
+  Item: ASSUMPTION-456
+  Item type: ASSUMPTION (stated)
+
+  15a result: SUPPORTED
+  15a strength: Strong
+  15b result: NO-CHALLENGE-FOUND
+  15b strength: Weak
+
+  Net assessment: Strong support that liveness (lastRunAt) is not correctness; the 07-14 crashes (fired, wrote nothing, watchdog healthy) are a textbook instance. No real challenge.
+
+  Disposition: REVISE -> REVISE-215
+
+  Reasoning: Net evidence supports the defect: the fleet's only detector reads firing as success. Concrete fix (artifact-content check) -> REVISE, firing-health family REVISE-215. This is the generative defect behind SYSTEMIC-RISK #4.
+  What is at risk: All output-bearing tasks; the watchdog certifies crashed empty runs as healthy.
+  Recommended action: Add an artifact-content check (non-empty, well-formed, recent) to the watchdog for every output-bearing task; compare lastRunAt-set vs valid-artifact-set for one day.
+  Urgency: High
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (REVISE)
+    Current status: REVISION-FLAGGED
+
+RETURN-TO-14a [ASSUMPTION-457]:
+  Original item: ASSUMPTION-457
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: see lit_search_results/for/ASSUMPTION-457_for.md
+  Summary: 15a supported (strength Strong).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-457_for.md
+
+RETURN-TO-14a [ASSUMPTION-457]:
+  Original item: ASSUMPTION-457
+  Search direction: AGAINST (disconfirmatory)
+  Result: NO-CHALLENGE-FOUND
+  Strength: None
+  Key source: see lit_search_results/against/ASSUMPTION-457_against.md
+  Specific risk: see disposition
+  Summary: 15b no-challenge-found (strength None).
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-457_against.md
+
+DISPOSITION-481:
+  Date: 2026-07-16
+  Item: ASSUMPTION-457
+  Item type: ASSUMPTION (stated)
+
+  15a result: SUPPORTED
+  15a strength: Strong
+  15b result: NO-CHALLENGE-FOUND
+  15b strength: None
+
+  Net assessment: Strong, uncontested support from observability-scope and survivorship-bias literature for disclosing scope gaps rather than implying coverage a report lacks.
+
+  Disposition: INCORPORATE -> PREMISE-097
+
+  Reasoning: A framework/honesty commitment with strong support and no challenge; consistent with existing verify-before-trust premises. INCORPORATE as PREMISE-097. The specific scope claim (sandbox cannot enumerate host processes) remains a one-command empirical check, noted.
+  Validated premise statement: A report drawn from a bounded observational vantage must disclose its scope gap rather than imply coverage it lacks; sandbox-visible process data is not represented as host-wide coverage.
+  Confidence: High
+  Applicable to: All monitoring/status reports drawn from a bounded vantage; scheduler watchdog; self-awareness pipeline coverage claims.
+  Re-check cadence: Quarterly
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (INCORPORATE)
+    Current status: INCORPORATED
+
+RETURN-TO-14a [ASSUMPTION-458]:
+  Original item: ASSUMPTION-458
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: see lit_search_results/for/ASSUMPTION-458_for.md
+  Summary: 15a partially-supported (strength Weak).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-458_for.md
+
+RETURN-TO-14a [ASSUMPTION-458]:
+  Original item: ASSUMPTION-458
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: see lit_search_results/against/ASSUMPTION-458_against.md
+  Specific risk: Any crash before the write step loses the whole deliverable (07-14 delivery losses).
+  Summary: 15b challenged (strength Strong).
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-458_against.md
+
+DISPOSITION-482:
+  Date: 2026-07-16
+  Item: ASSUMPTION-458
+  Item type: ASSUMPTION (stated)
+
+  15a result: PARTIALLY-SUPPORTED
+  15a strength: Weak
+  15b result: CHALLENGED
+  15b strength: Strong
+
+  Net assessment: The 'persists even if delivery fails' claim holds only if the write precedes the failure; strongly challenged (and falsified in-run 07-14) because a crash before Step 2 writes no file.
+
+  Disposition: REVISE -> REVISE-216
+
+  Reasoning: 15a weak support + 15b strong challenge -> lean REVISE. WAL/crash-only doctrine gives the fix. Routed to REVISE-216 (checkpoint-before-work) with P-481.
+  What is at risk: Any crash before the write step loses the whole deliverable (07-14 delivery losses).
+  Recommended action: Write a checkpoint/skeleton .md before the long read or any crash-prone step (treat the file as write-ahead, not a late artifact).
+  Urgency: High
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (REVISE)
+    Current status: REVISION-FLAGGED
+
+RETURN-TO-14b [PRESUMPTION-481]:
+  Original item: PRESUMPTION-481
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: see lit_search_results/for/PRESUMPTION-481_for.md
+  Summary: 15a no-support-found (strength None).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-481_for.md
+
+RETURN-TO-14b [PRESUMPTION-481]:
+  Original item: PRESUMPTION-481
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: see lit_search_results/against/PRESUMPTION-481_against.md
+  Specific risk: A whole day's lit-search throughput can vanish silently; a gap is consumed as an empty result.
+  Summary: 15b challenged (strength Strong).
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-481_against.md
+
+DISPOSITION-483:
+  Date: 2026-07-16
+  Item: PRESUMPTION-481
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+
+  15a result: NO-SUPPORT-FOUND
+  15a strength: None
+  15b result: CHALLENGED
+  15b strength: Strong
+
+  Net assessment: No support for 'crashed run = harmless idempotent no-op'; strong challenge from at-least-once/crash-only literature and the 07-14 evidence (no retry, no partial artifact, no alarm).
+
+  Disposition: REVISE -> REVISE-216
+
+  Reasoning: PRESUMPTION with strong challenge -> REVISE. Routed to REVISE-216 (checkpoint-before-work / durability) with A-458; the shared fix is durable start/finish markers + retry + a started-but-unfinished alarm.
+  What is at risk: A whole day's lit-search throughput can vanish silently; a gap is consumed as an empty result.
+  Recommended action: Add durable start + completion markers, retry-on-crash, and a 'started-but-unfinished' alarm the watchdog reads.
+  Urgency: High
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (REVISE)
+    Current status: REVISION-FLAGGED
+
+RETURN-TO-14b [PRESUMPTION-482]:
+  Original item: PRESUMPTION-482
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: see lit_search_results/for/PRESUMPTION-482_for.md
+  Summary: 15a no-support-found (strength None).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-482_for.md
+
+RETURN-TO-14b [PRESUMPTION-482]:
+  Original item: PRESUMPTION-482
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: see lit_search_results/against/PRESUMPTION-482_against.md
+  Specific risk: Compute today's coverage ratio (readable transcripts / total fired runs); persistently low or uncomputable coverage tips to REVISE.
+  Summary: 15b challenged (strength Strong).
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-482_against.md
+
+DISPOSITION-484:
+  Date: 2026-07-16
+  Item: PRESUMPTION-482
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+
+  15a result: NO-SUPPORT-FOUND
+  15a strength: None
+  15b result: CHALLENGED
+  15b strength: Strong
+
+  Net assessment: No support for presuming full observability; strong challenge from survivorship-bias/coverage literature. The remedy is a measurable coverage figure rather than a design change.
+
+  Disposition: MONITOR -> MONITOR-443
+
+  Reasoning: Strong challenge, but the corrective is additive instrumentation (compute readable/total coverage), not a redesign, so MONITOR with the empirical task and HIGH-ish priority; escalate to REVISE if coverage is chronically low or unmeasurable.
+  What would change the disposition: Compute today's coverage ratio (readable transcripts / total fired runs); persistently low or uncomputable coverage tips to REVISE.
+  Monitoring cadence: Weekly
+  Priority: Medium-High
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (MONITOR)
+    Current status: MONITORING
+
+RETURN-TO-14b [PRESUMPTION-483]:
+  Original item: PRESUMPTION-483
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: see lit_search_results/for/PRESUMPTION-483_for.md
+  Summary: 15a no-support-found (strength None).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-483_for.md
+
+RETURN-TO-14b [PRESUMPTION-483]:
+  Original item: PRESUMPTION-483
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: see lit_search_results/against/PRESUMPTION-483_against.md
+  Specific risk: Map each monitor to the signal it consumes; if multiple 'independent' green checks reduce to one signal, escalate to REVISE (require one artifact-reading monitor, weight correlated monitors as one).
+  Summary: 15b challenged (strength Strong).
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-483_against.md
+
+DISPOSITION-485:
+  Date: 2026-07-16
+  Item: PRESUMPTION-483
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+
+  15a result: NO-SUPPORT-FOUND
+  15a strength: None
+  15b result: CHALLENGED
+  15b strength: Strong
+
+  Net assessment: No support for treating same-signal monitors as independent; strong challenge from N-version/common-cause literature (shared input destroys independence).
+
+  Disposition: MONITOR -> MONITOR-444
+
+  Reasoning: Strong challenge; the fix begins with an empirical monitor->signal mapping (which monitors read lastRunAt vs. artifact content). MONITOR with that mapping task; contributes to SYSTEMIC-RISK #4. Escalate to REVISE if the mapping confirms the correlated-redundancy is load-bearing for the health verdict.
+  What would change the disposition: Map each monitor to the signal it consumes; if multiple 'independent' green checks reduce to one signal, escalate to REVISE (require one artifact-reading monitor, weight correlated monitors as one).
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (MONITOR)
+    Current status: MONITORING
+
+RETURN-TO-14a [ASSUMPTION-460]:
+  Original item: ASSUMPTION-460
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: see lit_search_results/for/ASSUMPTION-460_for.md
+  Summary: 15a partially-supported (strength Moderate).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-460_for.md
+
+RETURN-TO-14a [ASSUMPTION-460]:
+  Original item: ASSUMPTION-460
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: see lit_search_results/against/ASSUMPTION-460_against.md
+  Specific risk: FINDING-048 could be confirmed/killed on evidence frozen since 07-10; a stalled watch reads as live to downstream.
+  Summary: 15b partially-challenged (strength Weak).
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-460_against.md
+
+DISPOSITION-486:
+  Date: 2026-07-16
+  Item: ASSUMPTION-460
+  Item type: ASSUMPTION (stated)
+
+  15a result: PARTIALLY-SUPPORTED
+  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED
+  15b strength: Weak
+
+  Net assessment: A stalled ingestion path feeding a live paradigm-shift watch (FINDING-048/FLAG-016) is a high-severity freshness failure (supported); the only caveat is whether the deposits are truly on FINDING-048's evidence path.
+
+  Disposition: REVISE -> REVISE-217
+
+  Reasoning: Escalates A-455 from stale counters to a stalled evidence path into a live flag. Routed to REVISE-217 (stale master-wiki & stale-watch family) with A-455/P-484. Urgency High because it sits on the paradigm-shift channel, C2A2's central evidence stream.
+  What is at risk: FINDING-048 could be confirmed/killed on evidence frozen since 07-10; a stalled watch reads as live to downstream.
+  Recommended action: Trace FINDING-048's confirm/kill condition to the un-ingested deposits; add an evidence-freshness gate to the flag; repair ingestion.
+  Urgency: High
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (REVISE)
+    Current status: REVISION-FLAGGED
+
+RETURN-TO-14a [ASSUMPTION-461]:
+  Original item: ASSUMPTION-461
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: see lit_search_results/for/ASSUMPTION-461_for.md
+  Summary: 15a partially-supported (strength Weak).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-461_for.md
+
+RETURN-TO-14a [ASSUMPTION-461]:
+  Original item: ASSUMPTION-461
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: see lit_search_results/against/ASSUMPTION-461_against.md
+  Specific risk: Point-fixing 'connection errors' as a clean third cause while it is entangled with quota/login yields another defeated remedy.
+  Summary: 15b partially-challenged (strength Moderate).
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-461_against.md
+
+DISPOSITION-487:
+  Date: 2026-07-16
+  Item: ASSUMPTION-461
+  Item type: ASSUMPTION (stated)
+
+  15a result: PARTIALLY-SUPPORTED
+  15a strength: Weak
+  15b result: PARTIALLY-CHALLENGED
+  15b strength: Moderate
+
+  Net assessment: A third failure signature (connection errors) is a defensible taxonomy expansion (weak support), but labeling it a clean 'third distinct cause' risks repeating the mutually-exclusive-causes error (moderate challenge).
+
+  Disposition: REVISE -> REVISE-218
+
+  Reasoning: Net leans toward the challenge: the connection errors may co-occur with or be downstream of quota/login. Routed to REVISE-218 (open-world/multiple-cause family) with P-479/P-485 - classify by co-occurrence, not last-seen signature.
+  What is at risk: Point-fixing 'connection errors' as a clean third cause while it is entangled with quota/login yields another defeated remedy.
+  Recommended action: Classify each crash tail by error string AND surviving artifact AND co-occurring conditions; feed the open-world failure model, not a growing exclusive-cause list.
+  Urgency: Medium-High
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (REVISE)
+    Current status: REVISION-FLAGGED
+
+RETURN-TO-14b [PRESUMPTION-484]:
+  Original item: PRESUMPTION-484
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: see lit_search_results/for/PRESUMPTION-484_for.md
+  Summary: 15a no-support-found (strength None).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-484_for.md
+
+RETURN-TO-14b [PRESUMPTION-484]:
+  Original item: PRESUMPTION-484
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: see lit_search_results/against/PRESUMPTION-484_against.md
+  Specific risk: FINDING-048 (FLAG-016) reads as live while its evidence is frozen; confirm/kill could fire on absent evidence.
+  Summary: 15b challenged (strength Strong).
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-484_against.md
+
+DISPOSITION-488:
+  Date: 2026-07-16
+  Item: PRESUMPTION-484
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+
+  15a result: NO-SUPPORT-FOUND
+  15a strength: None
+  15b result: CHALLENGED
+  15b strength: Strong
+
+  Net assessment: No support for presuming flags self-refresh; strong challenge from cache-coherence/alert-staleness doctrine (derived state served without a freshness marker while its source is frozen is a coherence violation).
+
+  Disposition: REVISE -> REVISE-217
+
+  Reasoning: PRESUMPTION with strong challenge on the paradigm-shift channel -> REVISE. Routed to REVISE-217 (stale-watch family) with A-455/A-460; the shared fix is an evidence-freshness gate on every flag/watch.
+  What is at risk: FINDING-048 (FLAG-016) reads as live while its evidence is frozen; confirm/kill could fire on absent evidence.
+  Recommended action: Attach an evidence-freshness gate to every flag/watch; block confirm/kill transitions under stale ingestion; surface a staleness marker downstream.
+  Urgency: High
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (REVISE)
+    Current status: REVISION-FLAGGED
+
+RETURN-TO-14b [PRESUMPTION-485]:
+  Original item: PRESUMPTION-485
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: see lit_search_results/for/PRESUMPTION-485_for.md
+  Summary: 15a no-support-found (strength None).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-485_for.md
+
+RETURN-TO-14b [PRESUMPTION-485]:
+  Original item: PRESUMPTION-485
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: see lit_search_results/against/PRESUMPTION-485_against.md
+  Specific risk: Remedy budget spent chasing a receding tail (login -> quota -> connection); the fleet stays brittle to the next unmodeled cause.
+  Summary: 15b challenged (strength Strong).
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-485_against.md
+
+DISPOSITION-489:
+  Date: 2026-07-16
+  Item: PRESUMPTION-485
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+
+  15a result: NO-SUPPORT-FOUND
+  15a strength: None
+  15b result: CHALLENGED
+  15b strength: Strong
+
+  Net assessment: No support for a closed-world enumeration of failure causes; strong challenge from resilience engineering (open failure space; point-fixing the last cause cannot converge).
+
+  Disposition: REVISE -> REVISE-218
+
+  Reasoning: PRESUMPTION with strong challenge and the generalizing driver behind the sync-outage family (P-479, A-461) -> REVISE. Routed to REVISE-218; the corrective is graceful degradation / defense-in-depth over enumerate-and-patch.
+  What is at risk: Remedy budget spent chasing a receding tail (login -> quota -> connection); the fleet stays brittle to the next unmodeled cause.
+  Recommended action: Shift from enumerate-and-patch to graceful degradation / defense-in-depth; make delivery paths fail soft; count distinct signatures since 07-01 and remedies each defeated.
+  Urgency: Medium-High
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition (REVISE)
+    Current status: REVISION-FLAGGED
+
+---
+
+## 2026-07-17 — 15a/15b/15c PIPELINE RUN (processing 2026-07-16 14a/14b EOD batch)
+
+*7 new items from the 2026-07-16 EOD batch searched by 15a (FOR) and 15b (AGAINST) independently, then dispositioned by 15c. Backend: WebSearch across data-observability, fail-safe/fail-secure, health-check (liveness/readiness), split-brain, and multi-agent/monorepo isolation literatures. NOTE: 129 earlier 15d RE-TRIGGER items (110 dated 2026-07-05, 19 dated 2026-07-12) remain UNSEARCHED — see BACKLOG / SYSTEMIC-RISK flag at end. This run deliberately did NOT fake-process them.*
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-462
+  Search direction: FOR (supportive) | Result: SUPPORTED | Strength: Strong
+  Key source: Sifflet (2025), "What Is Data Freshness in Data Observability?" — orchestration-success != data-freshness
+  Summary: Data-observability literature draws exactly the process-vs-outcome (indicator-vs-referent) distinction this item names.
+  Full results: architecture/lit_search_results/for/ASSUMPTION-462_for.md
+RETURN-TO-14a:
+  Original item: ASSUMPTION-462
+  Search direction: AGAINST (disconfirmatory) | Result: PARTIALLY-CHALLENGED | Strength: Weak-Moderate
+  Key source: Elementary Data (2025), "Data Freshness Best Practices" — freshness SLAs / last-updated markers mitigate
+  Specific risk: A refreshed pointer over frozen evidence conceals the stalled FINDING-048 watch.
+  Summary: Decoupling is real but routinely disclosed via freshness metadata; defect is a missing marker, not the refresh itself.
+  Full results: architecture/lit_search_results/against/ASSUMPTION-462_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-463
+  Search direction: FOR | Result: SUPPORTED | Strength: Moderate-Strong
+  Key source: arc42 "Safety Interlocks" + Temporal "Durable Human-in-the-Loop"
+  Summary: A gate blocked on an unmet precondition is legitimate; durable commit-queue patterns are the accepted remedy.
+  Full results: architecture/lit_search_results/for/ASSUMPTION-463_for.md
+RETURN-TO-14a:
+  Original item: ASSUMPTION-463
+  Search direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: Keysight "Fail Closed/Open/Safe"; Temporal
+  Specific risk: Treating "cannot self-complete" as fixed normalizes indefinite non-persistence.
+  Summary: "Cannot" is contingent on absent credentials; a scoped staging-ref deploy key would persist durably without a blind push.
+  Full results: architecture/lit_search_results/against/ASSUMPTION-463_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-464
+  Search direction: FOR | Result: SUPPORTED | Strength: Strong
+  Key source: dev.to (Dumont 2026) "Liveness vs Readiness" — "a process can be alive and useless"
+  Summary: Liveness-vs-readiness textbook pattern precisely explains healthy-DB-probe vs down-delivery.
+  Full results: architecture/lit_search_results/for/ASSUMPTION-464_for.md
+RETURN-TO-14a:
+  Original item: ASSUMPTION-464
+  Search direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: oneuptime (2026), web-alert.io
+  Specific risk: Over-flagging normal liveness/readiness divergence could cause alert fatigue.
+  Summary: The two verdicts are correct answers to different questions; defect is the missing reconciler/labeling, not a paradox.
+  Full results: architecture/lit_search_results/against/ASSUMPTION-464_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-486
+  Search direction: FOR | Result: SUPPORTED | Strength: Strong
+  Key source: Goodhart/Campbell + Sifflet — indicator refreshed as substitute for referent is the canonical anti-pattern
+  Summary: Refreshing the narrative pointer is not refreshing the evidence; "green dashboard over stale data" confirmed.
+  Full results: architecture/lit_search_results/for/PRESUMPTION-486_for.md
+RETURN-TO-14b:
+  Original item: PRESUMPTION-486
+  Search direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Weak-Moderate
+  Key source: Elementary Data; Tacnode
+  Specific risk: Conceals a stalled paradigm-shift watch from downstream readers.
+  Summary: The gap is detectable/disclosable; presumption best read as "coupling currently missing" — a fixable defect.
+  Full results: architecture/lit_search_results/against/PRESUMPTION-486_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-487
+  Search direction: FOR | Result: SUPPORTED | Strength: Strong
+  Key source: Axis/Keysight "Fail-safe vs Fail-secure" — fail-close control causes outage; needs redundancy
+  Summary: A fail-secure gate without redundancy converts an absent consumer into an outage; durable commit queues are standard.
+  Full results: architecture/lit_search_results/for/PRESUMPTION-487_for.md
+RETURN-TO-14b:
+  Original item: PRESUMPTION-487
+  Search direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: Axis/asmag; arc42; StackAI "human-on-the-loop"
+  Specific risk: Weakening the gate to fail-open risks corrupt pushes — worse than delayed persistence.
+  Summary: Fail-secure is a correct hazard-match; the defect is the missing durable staging + escalation, not No-Blind-Push.
+  Full results: architecture/lit_search_results/against/PRESUMPTION-487_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-488
+  Search direction: FOR | Result: SUPPORTED | Strength: Strong
+  Key source: oneuptime "Liveness vs Readiness"; DZone/etcd split-brain
+  Summary: Health is vantage-relative by design; partial observability makes multi-observer reconciliation a first-class need.
+  Full results: architecture/lit_search_results/for/PRESUMPTION-488_for.md
+RETURN-TO-14b:
+  Original item: PRESUMPTION-488
+  Search direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Weak-Moderate
+  Key source: web-alert.io; freeCodeCamp distributed patterns
+  Specific risk: Real outages hide behind a truthful-from-somewhere green until a reconciler exists.
+  Summary: Vantage-relativity is well known and reconcilers are off-the-shelf; issue is a missing component, not a deep blind spot.
+  Full results: architecture/lit_search_results/against/PRESUMPTION-488_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-489
+  Search direction: FOR | Result: SUPPORTED | Strength: Strong
+  Key source: Augment Code (2026) + anthropics/claude-code #55724 — 8 of 13 parallel agents failed to commit on shared .git
+  Summary: Shared working tree / shared .git is a documented multi-agent hazard; per-agent worktrees/clones are the remedy.
+  Full results: architecture/lit_search_results/for/PRESUMPTION-489_for.md
+RETURN-TO-14b:
+  Original item: PRESUMPTION-489
+  Search direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: Atlassian monorepos; merge-pipeline research (arXiv 2508.08342)
+  Specific risk: Occasional commit stalls and entangled reviews until isolation added.
+  Summary: Hazard real but shallow: worktrees/clones/retry-backoff are cheap standard fixes; shared trees work at far larger scale.
+  Full results: architecture/lit_search_results/against/PRESUMPTION-489_against.md
+
+### 15c DISPOSITIONS (DISPOSITION-490..496)
+
+DISPOSITION-490:
+  Date: 2026-07-17 | Item: ASSUMPTION-462 (stated)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
+  Net assessment: The narrative-vs-evidence freshness decoupling is real and documented, but routinely mitigable with a freshness marker; the actionable fix is carried by PRESUMPTION-486/484.
+  Disposition: MONITOR
+  What would change disposition: A shipped freshness-gate coupling the status line to last-deposit mtime -> INCORPORATE the premise "narrative freshness must be evidence-backed"; continued concealment -> REVISE.
+  Monitoring cadence: Weekly | Priority: Medium
+  -> MONITOR-445
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a,15b -> 15c]; Transform: net evaluation; Current status: MONITORING
+
+DISPOSITION-491:
+  Date: 2026-07-17 | Item: ASSUMPTION-463 (stated)
+  15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: The durable-write blockage is real and ACTIVE (outputs unpersisted across an 11-day autonomous stretch); literature offers concrete remedies (scoped staging-ref credential, durable commit queue) that preserve No-Blind-Push.
+  Disposition: REVISE
+  What is at risk: All autonomous run outputs (incl. ~470-file Summa diff) cannot reach durable store without a human.
+  Recommended action: Tom to add a credentialed, review-gated staging-ref persistence path + age-based escalation.
+  Urgency: High
+  -> REVISE-220
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a,15b -> 15c]; Transform: net evaluation; Current status: REVISION-FLAGGED
+
+DISPOSITION-492:
+  Date: 2026-07-17 | Item: ASSUMPTION-464 (stated)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Same-day healthy/down contradiction is the expected result of layered health checks (liveness vs readiness); the missing piece is a reconciler, not knowledge of the state. Ties to SYSTEMIC-RISK #4 (liveness-as-success).
+  Disposition: MONITOR
+  What would change disposition: Recurrence without a reconciler, or a real outage masked by a green liveness signal -> REVISE.
+  Monitoring cadence: Weekly | Priority: Medium-High
+  -> MONITOR-446
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a,15b -> 15c]; Transform: net evaluation; Current status: MONITORING
+
+DISPOSITION-493:
+  Date: 2026-07-17 | Item: PRESUMPTION-486 (unstated)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
+  Net assessment: Presumption names a canonical Goodhart/observability anti-pattern (indicator refreshed as substitute for referent). Unmitigated here and it conceals a live flagged watch (FINDING-048). PRESUMPTION with strong support for a real, unaddressed gap.
+  Disposition: REVISE
+  What is at risk: FINDING-048 (FLAG-016) paradigm-shift watch is indistinguishable from live while its evidence is frozen.
+  Recommended action: Tom to require a freshness gate binding narrative-date to evidence-age; emit staleness badge (consolidate with REVISE-217).
+  Urgency: High
+  -> REVISE-221
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c]; Transform: net evaluation; Current status: REVISION-FLAGGED
+
+DISPOSITION-494:
+  Date: 2026-07-17 | Item: PRESUMPTION-487 (unstated)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Fail-secure-into-unavailability is textbook; No-Blind-Push became a durability failure on the unattended stretch. 15b correctly warns the fix must stay fail-soft (not fail-open) to preserve integrity. PRESUMPTION with strong support -> revise the escalation/persistence design, not the safety rule.
+  Disposition: REVISE
+  What is at risk: Every run's durable output hinges on an absent human step; "staged == never persisted."
+  Recommended action: Tom to keep No-Blind-Push but add durable staging + age-based human-on-the-loop escalation.
+  Urgency: High
+  -> REVISE-222
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c]; Transform: net evaluation; Current status: REVISION-FLAGGED
+
+DISPOSITION-495:
+  Date: 2026-07-17 | Item: PRESUMPTION-488 (unstated)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
+  Net assessment: Vantage-relative health is well established; the gap is a missing reconciler rather than a deep conceptual error. Real but component-level.
+  Disposition: MONITOR
+  What would change disposition: A masked real outage, or repeated unreconciled same-day disagreements -> REVISE; a shipped reconciler -> INCORPORATE "health is vantage-relative; reconcile per signal."
+  Monitoring cadence: Weekly | Priority: Medium-High
+  -> MONITOR-447
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c]; Transform: net evaluation; Current status: MONITORING
+
+DISPOSITION-496:
+  Date: 2026-07-17 | Item: PRESUMPTION-489 (unstated)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Shared-working-tree contention is documented (git worktrees, claude-code #55724) and the fix is cheap/standard (per-agent worktrees/clones, retry-backoff). Real but shallow; actionable now.
+  Disposition: REVISE
+  What is at risk: One agent's incidental churn stalls another's commit; every commit reviews unrelated changes. Compounds PRESUMPTION-446 (SYSTEMIC-RISK #1 Critical, shared repo / no coordination).
+  Recommended action: Tom to give each scheduled agent its own worktree/clone (private index/HEAD) and/or a commit retry policy.
+  Urgency: Medium-High
+  -> REVISE-223
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c]; Transform: net evaluation; Current status: REVISION-FLAGGED
+
+### SYSTEMIC-RISK-FLAG (15b, 2026-07-17)
+  Affected items: ASSUMPTION-462, ASSUMPTION-463, ASSUMPTION-464, PRESUMPTION-486, PRESUMPTION-487, PRESUMPTION-488, PRESUMPTION-489
+  Common vulnerability: On the 11-day unattended stretch, the fleet's self-reports and outputs are DECOUPLED FROM GROUND TRUTH along three axes that share one root — no signal is bound to the freshness/durability/vantage of the thing it reports: freshness (narrative-date vs evidence-age), durability (staged vs persisted), and health (liveness vs usable-service). Each is individually mitigable, but together they mean an autonomous run can look current, complete, and healthy while being none of the three.
+  Literature basis: Sifflet/IBM (freshness observability), Axis/Keysight (fail-secure availability cost), oneuptime/DZone (liveness-vs-readiness, split-brain).
+  Risk level: High
+  Recommendation: A single cross-cutting fix pattern — bind every green/"current"/"done" signal to a computed marker of the referent it claims (evidence-age, persistence-confirmation, usable-service probe) — would address all seven at once. Prioritize the durability path (REVISE-220/222): it is the only one where data is actively being lost.
+
+### BACKLOG NOTE — UNPROCESSED 15d RE-TRIGGER QUEUE (surfaced 2026-07-17, NOT processed)
+  129 items re-triggered by Agent 15d remain [QUEUED] with NO [SEARCHED-15a]/[SEARCHED-15b] tags:
+    - 110 items dated [RE-TRIGGER by 15d: 2026-07-05] (weekly cohort MONITOR-345..399 + monthly low-priority re-checks + 3 INCORPORATED re-checks)
+    - 19 items dated [RE-TRIGGER by 15d: 2026-07-12]
+  These have sat unsearched for 5-12 days: the daily 15a/15b/15c pipeline has been draining ONLY each day's fresh 14a/14b batch and NOT the 15d re-trigger cohorts. This is itself a live instance of PRESUMPTION-013 / PRESUMPTION-485 (silent backlog compounding) and SYSTEMIC-RISK autonomous-sync silent-degradation.
+  This run did NOT fake-process them (a shallow no-real-search pass would violate the 15a/15b "distinguish 'no evidence' from 'not enough searched'" standard and fail-loud honesty).
+  Recommendation for Tom / orchestrator: either (a) run a dedicated backlog-drain pass with adequate budget, or (b) have 15d cap re-trigger fan-out and mark aged re-triggers STALE rather than letting them accumulate unserviced. See SYSTEMIC-RISK-FLAG above.
+
+# ============================================================
+# 2026-07-18 lit-search pipeline run (15a/15b/15c) — 2026-07-17 EOD batch (7 items)
+# ============================================================
+
+## ----- 15a FOR returns (2026-07-18) -----
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-465
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: anthropics/claude-code Issues #11005 & #57102 (stale .git/index.lock from background/concurrent git ops, macOS)
+  Summary: Stale index.lock from a concurrent process is a documented, in-toolchain failure mode; lock-contention is a legitimately distinct proximate cause from A-463's mount/creds diagnosis.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-465_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-466
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: Cronitor "Crontab environment variables"; Baeldung "Load Environment Variables in a Cron Job"
+  Summary: Scheduled/headless contexts supply their own minimal environment; a script relying on `~/`/HOME predictably resolves to the sandbox home rather than the Mac home — the textbook cron path-resolution pitfall (exit 1). OpenStory writer-freeze is a separate compounding fault.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-466_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-467
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: Carta "General Ledger: Single Source of Truth"; arxiv 2606.08266 (KPI divergence rate); ModelThinkers "Goodhart's Law"
+  Summary: Maintaining a metric in two places (narrative 300 vs computed per-file 447) predictably diverges; discipline is a single canonical/computed source of truth + reconciliation. Which count is correct still needs a PRS definition.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-467_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-490
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: 12-Factor "Dev/Prod Parity"; Bazel "Hermeticity"
+  Summary: Cross-context behavioral identity must be engineered (hermeticity/parity), not presumed; non-hermetic execution reliably yields env/reach/lock divergence — the two same-day falsifications are canonical instances.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-490_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-491
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: Kubernetes liveness/readiness probes; oneuptime "liveness ≠ correctness"
+  Summary: "Job fired / process alive" (liveness) is a distinct signal from "intended effect occurred" (readiness/correctness); success claims must bind to artifact-level evidence (db mtime/row-delta), not scheduler firing.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-491_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-492
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: CMU Harchol-Balter "A Little Bit of Queueing Theory" (ρ≥1 instability); DZone "Queuing Theory for Software Engineers"
+  Summary: When enqueue rate (15d re-triggers) exceeds drain rate, backlog grows without bound (observed: 129 undrained items). Standard remedies: bound the queue, cap fan-out, TTL/STALE aging — exactly the missing mechanisms.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-492_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-493
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong
+  Key source: IBM/PagerDuty alert fatigue; incident.io "Escalation policy best practices"
+  Summary: "Fail loud" degrades to silence without a listener attending within bounded time; the field mandates time-bounded auto-escalation so a lone absent human isn't a single point of failure. Day-12 accumulation confirms the diagnosis; generalizes P-487.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-493_for.md
+
+## ----- 15b AGAINST returns (2026-07-18) -----
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-465
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: openai/codex #19190; GeeksforGeeks (index.lock via container/mount ownership); DevToolbox (permissions class)
+  Specific risk: Mis-attributing to an orphaned 04:40 lock may hide that the operative blocker is the SAME mount/permission root as A-463 — two tickets, one fix missed.
+  Summary: "Operation not permitted" on lock removal points to a mount/permission root, i.e. the A-463 family, challenging the "different proximate cause" framing. Test: can the scheduled user create+remove index.lock on the mount?
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-465_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-466
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak-Moderate
+  Key source: Cronitor (cron DOES set HOME); Baeldung (easy remedy)
+  Specific risk: A `~/`→absolute fix could clear exit-1 yet leave the metabolism view stale because the db is frozen since 07-05 — a false "fixed."
+  Summary: `~/` is at most the proximate exit-1 trigger; the operative staleness is the OpenStory writer freeze (item concedes this). Cron sets HOME, so the real defect is mount-reach, not an unset tilde. Bind "refreshed" to db mtime.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-466_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-467
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: "The Single Source of Truth Illusion" (Gromov); "Myth of the Single Source of Truth" (Data Dynamics)
+  Specific risk: Auto-adopting the computed 447 as canonical may entrench an over-count; the 300/447 gap is a definitional signal, not a defect to eliminate toward one side.
+  Summary: SSOT is not automatically the machine-computed number; "canonical" attaches to a DEFINITION. Define a PRS counting rule first, then designate the source — else Goodhart-by-mechanization.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-467_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-490
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak-Moderate
+  Key source: 12factor.net "Dev/prod parity" (perfect parity not always possible); IEEE-SW hermeticity study (no project fully hermetic)
+  Specific risk: Over-correcting toward full hermeticity wastes effort for diminishing returns; under-correcting lets the same four deltas recur.
+  Summary: Presumption is real but its remedy can be over-scoped; perfect parity is unattainable. Target: a startup preflight asserting the specific deltas (HOME, mount reach, creds, lock), not a hermetic rebuild.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-490_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-491
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Kubernetes #123002 (batch success = exit 0, not readiness); BullMQ / AWS REL04-BP04 (idempotency)
+  Specific risk: Over-generalizing pushes artifact-verification onto every scheduled task; targeted exit-code + freshness checks on state-mutating jobs suffice.
+  Summary: "Fired ≠ succeeded" is sound, but the batch success signal is exit-code + artifact, not a readiness probe; idempotent+retried jobs self-heal. Real defect is missing no-op→non-zero + freshness binding on THIS job.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-491_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-492
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: AWS "Avoiding insurmountable queue backlogs" (transient vs persistent); Causely (snapshots misread)
+  Specific risk: Diagnosing "unbounded" when the truth is "never scheduled" adds needless caps/TTLs while the real omission bug (RE-TRIGGER cohorts excluded from the daily drain) persists.
+  Summary: A static count on two dated cohorts doesn't establish sustained λ>μ; more likely a COVERAGE bug (daily loop skips RE-TRIGGER cohorts) than rate-instability. Measure enqueue vs drain per day before adding caps.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-492_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-493
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak-Moderate
+  Key source: Temporal/RabbitMQ (durable queues = deferred not lost); incident.io (escalation needs a target)
+  Specific risk: Treating all accumulated surfacings as lost could trigger drastic auto-action where safe deferral suffices — reintroducing the No-Blind-Push risk P-487 guards.
+  Summary: "Surfaced ≡ unaddressed" holds only for PERISHABLE referents (unpushed writes, frozen dbs, expiring tokens); durable idempotent surfacings are deferred, not lost. Escalate only the perishable subset.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-493_against.md
+
+### SYSTEMIC-RISK-FLAG (15b, 2026-07-18)
+  Affected items: PRESUMPTION-492, PRESUMPTION-493 (+ the live 129-item 15d RE-TRIGGER backlog; relates to prior PRESUMPTION-485 silent-backlog and the 2026-07-17 decoupled-from-ground-truth flag)
+  Common vulnerability: QUEUE / SURFACING WITHOUT A BOUNDED CONSUMER. Multiple mechanisms accumulate work or signals with no guarantee a consumer drains them within bounded time and no aging/backpressure: (a) 15d re-triggers accrue faster than the daily 15abc loop drains them (or are structurally skipped); (b) fail-loud surfacings accrue with no attending listener on multi-day autonomous stretches. Both share the shape "producer keeps producing; consumer availability is assumed, not enforced."
+  Literature basis: AWS "Avoiding insurmountable queue backlogs" (transient vs persistent; snapshots misread); Causely (async backlog easy to misread); Temporal/RabbitMQ (durability makes deferral safe); incident.io (escalation needs an available target).
+  Risk level: High
+  Recommendation: Instrument enqueue-vs-drain rates before assuming instability (distinguish COVERAGE-omission from rate-instability). Add three cross-cutting controls: (1) bounded work-queues with STALE/TTL aging on 15d re-triggers; (2) explicit scheduling of RE-TRIGGER cohorts into the drain loop (fixes the omission if that is the mechanism); (3) durability-classification of fail-loud surfacings, wiring only perishable-referent items (unpushed writes, frozen dbs, expiring creds) to a time-bounded fallback. Note: caps/TTL and cohort-scheduling are DIFFERENT fixes for DIFFERENT mechanisms — measure first (see PRESUMPTION-492 AGAINST).
+
+## ----- 15c DISPOSITIONS (2026-07-18) -----
+
+DISPOSITION-497:
+  Date: 2026-07-18 | Item: ASSUMPTION-465 (stated)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: The failure mode (stale index.lock) is well documented in this very toolchain, but 15b shows the UNREMOVABILITY ("Operation not permitted") points to the mount/permission root — the same family as A-463 (07-16), not a cleanly distinct proximate cause.
+  Disposition: REVISE
+  What is at risk: Git persistence (HIGH). Mis-attributing to an orphaned 04:40 lock could send the fix to lock-hygiene/worktrees while the mount write-permission blocker persists; compounds the durability path (REVISE-220/222).
+  Recommended action: Tom to run the empirical discriminator — as the scheduled user on the mount, `touch .git/index.lock && rm .git/index.lock`. If removal is denied it is the mount/permission root (fix once at the credential/mount layer, resolving A-463 + A-465 together); if it succeeds, treat as distinct lock-hygiene (per-agent worktree/lock cleanup).
+  Urgency: High
+  -> REVISE-224
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a,15b -> 15c]; Transform: net evaluation; Current status: REVISION-FLAGGED
+
+DISPOSITION-498:
+  Date: 2026-07-18 | Item: ASSUMPTION-466 (stated)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
+  Net assessment: `~/` path-resolution under the scheduler is a real, supported exit-1 cause, but 15b (and the item itself) show the operative staleness is the OpenStory writer freeze; a path-only fix risks a false "fixed."
+  Disposition: REVISE
+  What is at risk: The metabolism view (recurs consecutive days; MEDIUM-HIGH). Two coupled faults: portable-path bug + the writer freeze (db unwritten since 07-05).
+  Recommended action: Tom to (1) replace `~/`/implicit HOME with explicit mount-aware absolute paths, (2) verify the mount exposes the live db path, (3) unfreeze the OpenStory writer, and (4) bind the "refreshed" claim to db mtime (see P-491). Do not close on exit-0 alone.
+  Urgency: Medium-High
+  -> REVISE-225
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a,15b -> 15c]; Transform: net evaluation; Current status: REVISION-FLAGGED
+
+DISPOSITION-499:
+  Date: 2026-07-18 | Item: ASSUMPTION-467 (stated)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Dual-bookkeeping of the PRS count predictably diverges (300 narrative vs 447 computed), but 15b shows neither figure is canonical without a DEFINITION; auto-adopting the computed sum risks an over-count (Goodhart-by-mechanization).
+  Disposition: REVISE
+  What is at risk: Metric integrity; feeds the narrative-vs-evidence family and OPEN-112. Two same-day agents advanced different counts.
+  Recommended action: Tom to write an explicit PRS counting rule, compute both figures under it, reconcile once, then designate a single AUTOMATED canonical counter so agents cannot diverge. Treat the 300/447 gap as a definitional signal, not a defect to eliminate toward one side.
+  Urgency: Medium
+  -> REVISE-226
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a,15b -> 15c]; Transform: net evaluation; Current status: REVISION-FLAGGED
+
+DISPOSITION-500:
+  Date: 2026-07-18 | Item: PRESUMPTION-490 (unstated)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
+  Net assessment: The principle — cross-context behavioral parity must be engineered, not presumed — is strongly grounded (12-Factor parity, hermeticity literature) and twice-falsified in vivo today; 15b only refines the REMEDY scope (targeted preflight, not full hermeticity), not the premise.
+  Disposition: INCORPORATE
+  Consistency check: No contradiction with existing validated premises; complements the durability/fail-loud family. Compatible with P-491 (artifact-binding) and the 07-17 decoupled-from-ground-truth flag.
+  Validated premise statement: Scripts that run correctly interactively on the Mac must NOT be presumed to behave identically when invoked headless by the scheduler in the sandbox; each scheduled script must assert its context invariants (HOME, filesystem/mount reach, credentials, lock state) at startup and fail loud on violation. Parity is engineered, not assumed; full hermeticity is not required, a per-delta preflight is.
+  Confidence: Moderate
+  Applicable to: all scheduled/autonomous agents and regen scripts (metabolism, OpenStory writer, git-persistence, 14/15 pipelines)
+  Re-check cadence: Quarterly
+  -> PREMISE-098
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c]; Transform: net evaluation; Current status: INCORPORATED
+
+DISPOSITION-501:
+  Date: 2026-07-18 | Item: PRESUMPTION-491 (unstated)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: "Scheduler-fired ≡ succeeded" is a genuine category error (liveness ≠ correctness), but 15b shows the batch success signal is exit-code + artifact (not a readiness probe) and idempotent+retried jobs self-heal — so the fix is narrower than a fleet-wide mandate. Sits in the liveness-vs-correctness family already under MONITOR (MONITOR-446).
+  Disposition: MONITOR
+  What would change disposition: A shipped artifact-binding on state-mutating scheduled jobs (no-op → non-zero exit; status readers assert artifact freshness) -> INCORPORATE the premise "success claims bind to artifact-level evidence, not scheduler firing." Another masked dead-subsystem-reported-live incident -> REVISE.
+  Monitoring cadence: Weekly | Priority: Medium-High
+  -> MONITOR-448
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c]; Transform: net evaluation; Current status: MONITORING
+
+DISPOSITION-502:
+  Date: 2026-07-18 | Item: PRESUMPTION-492 (unstated)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: The 129-item undrained backlog is direct evidence (near-GROUNDED), and queueing theory confirms λ>μ yields unbounded growth; but 15b shows a static two-cohort snapshot cannot distinguish rate-instability from a COVERAGE bug (the daily loop structurally skips RE-TRIGGER cohorts) — and the pipeline's own logs favor the omission hypothesis.
+  Disposition: REVISE
+  What is at risk: The searched corpus silently diverges from the enqueued corpus (integrity of the whole 15-pipeline). This is the live backlog this run again did not drain (see BACKLOG NOTE below).
+  Recommended action: Tom/orchestrator to FIRST instrument 15d enqueue-count/day vs 15abc drain-count/day for 1-2 weeks. If enqueue <= drain but backlog persists -> it is an omission: explicitly schedule RE-TRIGGER cohorts into the daily drain loop. If enqueue > drain sustained -> add a bounded work-queue with fan-out cap + STALE/TTL aging. These are DIFFERENT fixes; measure before choosing.
+  Urgency: Medium-High
+  -> REVISE-227
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c]; Transform: net evaluation; Current status: REVISION-FLAGGED
+
+DISPOSITION-503:
+  Date: 2026-07-18 | Item: PRESUMPTION-493 (unstated)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
+  Net assessment: Fail-loud does degrade to silence without a listener attending in bounded time (day 12 unattended, 27 proposals, staged-not-pushed writes); 15b usefully narrows the harm to PERISHABLE-referent surfacings (durable idempotent ones are deferred, not lost) and warns that drastic auto-action would reintroduce No-Blind-Push risk (P-487).
+  Disposition: REVISE
+  What is at risk: Perishable-referent surfacings that decay while unattended — unpushed git writes (may never persist), frozen dbs, expiring credentials. Generalizes P-487; overlaps the durability path (REVISE-220/222).
+  Recommended action: Tom to (1) make all surfacings durable (already largely true in-vault), (2) classify surfacings by referent durability, and (3) wire ONLY perishable-referent items to a time-bounded fallback (alternate channel or a bounded, review-gated autonomous persistence step) so a lone absent listener is not a single point of failure — without opening a blind-push hole for durable items.
+  Urgency: High
+  -> REVISE-228
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c]; Transform: net evaluation; Current status: REVISION-FLAGGED
+
+### BACKLOG NOTE — UNPROCESSED 15d RE-TRIGGER QUEUE + ORPHANED EMPIRICAL ITEMS (surfaced 2026-07-18, NOT processed)
+  This run processed ONLY the 7-item 2026-07-17 14a/14b EOD batch (A-465..467, P-490..493), matching established daily behavior. The following remain [QUEUED] with NO [SEARCHED-15a]/[SEARCHED-15b] tags and were NOT processed:
+    - 129 items re-triggered by Agent 15d: 110 dated [RE-TRIGGER by 15d: 2026-07-05] + 19 dated [RE-TRIGGER by 15d: 2026-07-12]. Unchanged and unserviced across the 07-16, 07-17, and 07-18 runs (verified identical in the pre-15abc backups).
+    - 18 older [QUEUED-EMPIRICAL] items dated 2026-06-29..2026-07-06 that predate the current drain window and were never searched (orphaned by the "newest-batch-only" drain pattern).
+    - (1 item at ~line 8061 is [HELD — GROUNDED, NOT routed] and is correctly excluded.)
+  This is the live referent of PRESUMPTION-492 (dispositioned REVISE-227 above) and PRESUMPTION-485 (silent-backlog compounding). This run did NOT fake-process them: a no-real-search pass would violate the 15a/15b standard of distinguishing "no evidence found" from "not enough searched," and fail-loud honesty (Rule 12).
+  Recommendation for Tom / orchestrator: run a dedicated, adequately-budgeted backlog-drain pass; AND implement REVISE-227 (measure enqueue-vs-drain; then either schedule RE-TRIGGER + orphaned-EMPIRICAL cohorts into the drain loop, or add fan-out cap + STALE/TTL aging).

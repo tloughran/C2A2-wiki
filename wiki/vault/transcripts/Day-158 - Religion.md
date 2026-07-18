@@ -16,7 +16,7 @@ length_tier: medium
 fidelity_checked: true
 synthesis: "[[Day-158 - Religion - Contemporary]]"
 tags: [summa, day/158, pars/2, q/80]
-last_qc_at: "2026-06-27T00:21:44"
+last_qc_at: "2026-07-12T18:32:46"
 last_qc_outcome: "pass"
 ---
 

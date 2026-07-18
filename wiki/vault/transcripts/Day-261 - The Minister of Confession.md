@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=_Vzi99j-Eg0
 title: The Minister of Confession
 summa_ref: Supplement, Suppl. Q.7-8
 duration_seconds: 552
-word_count: 1655
+word_count: 1658
 raw_asr_word_count: 1647
 length_tier: short
 fidelity_checked: true
@@ -16,17 +16,17 @@ fetched_at: 2026-06-17
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-261 - The Minister of Confession - Contemporary]]"
 tags: [summa, day/261, pars/supplement, q/penance]
-last_qc_at: "2026-06-26T04:19:32"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-09T20:24:50"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 261 — The Minister of Confession
 
-> Austin Habash's daily walk through the *Summa* (Supplement, Suppl. Q.8). Verbatim ASR, lightly cleaned. Continuing the Supplement's treatment of the sacrament of Penance.
+> Austin Habash's daily walk through the *Summa* (Supplement, Suppl. Q.8). Verbatim ASR, lightly cleaned. Residual intro garbles fixed at QC 2026-07-09: Habish → Habash; Sumir → Summa in a Year. Continuing the Supplement's treatment of the sacrament of Penance.
 
-[00:05] Hello, my name is Austin Habish, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
-Theologiae in a way simple and insightful for anyone to understand. The Sumir podcast is brought to you by Think Catholic. Taking two questions of the
+Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 261. So let's get started.
 

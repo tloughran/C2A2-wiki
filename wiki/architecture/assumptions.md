@@ -5989,15 +5989,15 @@ ASSUMPTION-333:
   Related decisions: (none yet — pair is pending review, not adopted) ; bears on future cross-tradition bridge registration
   Related items: PRESUMPTION-371 ([inferred] twin — that "same problem in two vocabularies" warrants a formal bridge, i.e. cross-vocabulary commensurability)
   Testability: testable via literature (whether a bioelectric binding account and a variational group-Markov-blanket account are formally relatable, or only metaphorically analogous; existing FEP-readings of Levin's bioelectricity)
-  Status: UNTESTED
+  Status: CONTESTED (MONITOR-360 continued via DISPOSITION-418, cycle 2, 2026-07-08 — INCORPORATE gated on explicit relational structure-mapping)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a → 15a/15b → 15c → 14a]
     Original item: ASSUMPTION-333
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from the explicit "same problem in two vocabularies … clean Levin↔Friston bridge" claim stated in both proposals and the cowork summary. Its deeper, unstated form (cross-vocabulary "same problem" ⇒ a real homology to be bridged) is carried by 14b as PRESUMPTION-371. [stated]
-    Current status: UNTESTED
+    Current status: CONTESTED
 
 ASSUMPTION-334:
   Date identified: 2026-06-22
@@ -6539,15 +6539,15 @@ ASSUMPTION-363:
   Related decisions: DECISION-065
   Related items: PRESUMPTION-398 (app-open liveness gap); OPEN-086 (pipeline liveness/watchdog); OPEN-092
   Testability: testable via literature — scheduled-job reliability / liveness monitoring; testable empirically — does the local snapshot stay fresh given the app-open dependency?
-  Status: UNTESTED
+  Status: CONTESTED (MONITOR-382 continued via DISPOSITION-423, cycle 1, 2026-07-08 — cadence value supported; silent-stall clause strongly challenged, reaffirms REVISE-147)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a → 15a/15b → 15c → 14a]
     Original item: ASSUMPTION-363
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from "a Cowork task c2a2-heartbeat-refresh runs every 6 hours … it runs only while the Cowork app is open, and it updates local files." [stated]
-    Current status: UNTESTED
+    Current status: CONTESTED
 
 ASSUMPTION-364:
   Date identified: 2026-06-25
@@ -7683,15 +7683,15 @@ ASSUMPTION-426:
   Related decisions: none on record — autonomous filtering behavior by a tradition agent
   Related items: PRESUMPTION-457 (whether model priors are a valid oracle for this rejection)
   Testability: testable empirically — audit rejected-source decisions against ground truth over time (false-rejection rate of the catalog-prior filter); testable via literature — hallucination-detection and source-triangulation practices in automated research pipelines.
-  Status: UNTESTED
+  Status: CONTESTED (MONITOR-419 via DISPOSITION-424, 2026-07-09 — catalog-check error rate to be measured before the detector is trusted)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a → 15a/15b → 15c → 14a]
     Original item: ASSUMPTION-426
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from the c2a2-agent-hawkins-hoffman transcript (2026-07-07), verification reasoning before writing the Hoffman proposal. [stated]
-    Current status: UNTESTED
+    Current status: CONTESTED
 
 ASSUMPTION-427:
   Date identified: 2026-07-07
@@ -7701,15 +7701,15 @@ ASSUMPTION-427:
   Related decisions: none on record
   Related items: PRESUMPTION-455 (the metabolism agent independently re-entertained the FUSE-artifact hypothesis the same morning)
   Testability: testable empirically — the recommended native-Mac `sqlite3 quick_check` / `.recover` will confirm or refute source-file corruption directly; testable via literature — fidelity guarantees of byte-copies over network/FUSE mounts for quiescent files.
-  Status: UNTESTED
+  Status: CHALLENGED (REVISE-189 via DISPOSITION-425, 2026-07-09, HIGH — sandbox-copy corruption verdict unsound; native quick_check + sidecars/backup-API required before any corruption verdict)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a → 15a/15b → 15c → 14a]
     Original item: ASSUMPTION-427
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from the openstory-agents-telemetry-refresh transcript (2026-07-07), corruption-diagnosis rationale. [stated]
-    Current status: UNTESTED
+    Current status: CHALLENGED
 
 ASSUMPTION-428:
   Date identified: 2026-07-07
@@ -7719,12 +7719,696 @@ ASSUMPTION-428:
   Related decisions: none on record — remedy recommendation awaits scheduling (see OPEN-115)
   Related items: PRESUMPTION-456 (whether surfaced-in-files reliably converts to human action); ASSUMPTION-425 (file-as-deliverable kin)
   Testability: testable empirically — track whether surfaced deferrals get acted on before they cause staleness harm (15d items are re-checks of previously validated premises; how stale can they get before a premise flips unnoticed?); testable via literature — backlog decay and alert-fatigue in maintenance queues.
-  Status: UNTESTED
+  Status: CONTESTED (MONITOR-420 via DISPOSITION-426, 2026-07-09, High — deferral acceptability conditionally held; auto-escalate after 2 more no-decision runs)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a → 15a/15b → 15c → 14a]
     Original item: ASSUMPTION-428
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from the c2a2-lit-search-pipeline transcript (2026-07-07), final run report. [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-429:
+  Date identified: 2026-07-08
+  Statement: "The weekly re-trigger volume (~55/week) structurally exceeds one pipeline run's throughput, so the queue is growing monotonically." A structural capacity mismatch, not a transient, is assumed to explain the 15d backlog — hence the recommended remedy is cadence/cap redesign rather than more deferral.
+  Context: c2a2-lit-search-pipeline closing report, after burning the 7 HIGH-priority items of the 07-05 re-trigger cohort and leaving 116 of 123 queued items unsearched (fourth run carrying the backlog).
+  Type: empirical
+  Related decisions: none on record — remedy awaits scheduling (OPEN-115, OPEN-116)
+  Related items: ASSUMPTION-428 (deferred-and-surfaced); PRESUMPTION-462 (fixed cadences right-sized)
+  Testability: testable empirically — arrival rate vs per-run throughput over the run logs; queue-depth trajectory under a cadence or cap change.
+  Status: GROUNDED (INCORPORATED as PREMISE-095 via DISPOSITION-431, 2026-07-09 — 15a SUPPORTED/Strong; 15b scope caveat folded in: structural-under-current-provisioning, not immutable)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-429
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the c2a2-lit-search-pipeline transcript (2026-07-08), final run report. [stated]
+    Current status: GROUNDED
+
+ASSUMPTION-430:
+  Date identified: 2026-07-08
+  Statement: "Rather than defer a fourth time, I burned the 7 HIGH-priority weekly items" — priority-ordered partial burn is an acceptable triage response to an over-capacity queue: process the HIGH tier end-to-end, let the remaining 116 items wait, and surface the residue.
+  Context: c2a2-lit-search-pipeline run, choosing among defer-again / burn-all / burn-by-priority when the queue held no fresh items, only the 123-item re-trigger backlog.
+  Type: methodological
+  Related decisions: none on record
+  Related items: ASSUMPTION-428; PRESUMPTION-459 (queue-time priorities remain valid at burn time)
+  Testability: testable via literature — triage and WSJF-style prioritization under overload; aging/starvation of low-priority queue items.
+  Status: CONTESTED (MONITOR-423 via DISPOSITION-432, 2026-07-09, High — partial burn acceptable only with an aging mechanism; watch for starvation)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-430
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the c2a2-lit-search-pipeline transcript (2026-07-08). [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-431:
+  Date identified: 2026-07-08
+  Statement: 'the qc_sweep "fidelity fail" is only the absent /tmp/dayNNN_segments.json cache in this fresh sandbox, not a real fidelity defect' — a failing QC signal can be reclassified as environmental (missing cache artifact in a fresh sandbox) without independently re-verifying the underlying content, because `fidelity_checked: true` already stands in the transcripts.
+  Context: Summa commentary reviewer run (Days 206–211), dismissing the sweep's fidelity failure while passing all six pairs.
+  Type: methodological
+  Related decisions: none on record
+  Related items: the reaffirmed High "unvalidated-instrument" systemic risk (15c, 2026-07-08) — an instrument's failure explained away by the same system it checks; PRESUMPTION-455 (per-task diagnosis)
+  Testability: testable empirically — regenerate the segments cache in-sandbox and re-run the fidelity check; if it passes, the environmental explanation holds.
+  Status: CHALLENGED (REVISE-192 via DISPOSITION-433, 2026-07-09 — regenerate cache and re-run QC before accepting an "environmental" reclassification)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-431
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the Summa commentary reviewer transcript (2026-07-08). [stated]
+    Current status: CHALLENGED
+
+ASSUMPTION-432:
+  Date identified: 2026-07-08
+  Statement: "date-stripped slug diff vs PROCESSED_LOG shows 0 truly-unprocessed" — the inbox-clear verdict rests on the slug-diff method being a faithful detector of unprocessed items: date-stripping never collides two distinct items, and PROCESSED_LOG is complete.
+  Context: C282 wiki agent daily run, Phase 1 (Ingest), declaring the inbox clear.
+  Type: architectural
+  Related decisions: none on record
+  Related items: ASSUMPTION-426 (catalog-prior filtering — kin: registry treated as ground truth)
+  Testability: testable empirically — inject a known-unprocessed item whose date-stripped slug matches a processed one; audit PROCESSED_LOG completeness against the raw inbox archive.
+  Status: CONTESTED (MONITOR-424 via DISPOSITION-434, 2026-07-09 — slug-collision and log-completeness audit pending)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-432
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the C282-wiki-agent-daily-run transcript (2026-07-08), Phase 1 report. [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-433:
+  Date identified: 2026-07-09
+  Statement: "Prior runs reported 116/123 — the measured count is 110; the discrepancy suggests earlier figures were estimates, worth a one-time reconciliation." The pipeline assumes carried-forward backlog tallies were estimates (and the fresh count is the measurement), rather than the discrepancy indicating lost or mis-tagged items.
+  Context: c2a2-lit-search-pipeline run tally, 2026-07-09 — first run to measure the 15d backlog directly instead of carrying the prior figure forward.
+  Type: empirical
+  Related decisions: none — reconciliation recommended, not yet scheduled
+  Related items: ASSUMPTION-429 / PREMISE-095 (backlog trajectory feeds the validated queue-growth premise); PRESUMPTION-466 (the interpretive leap itself)
+  Testability: testable empirically — a one-time reconciliation pass over for_lit_search.md tags vs run-log arithmetic decides between estimate-drift and item loss.
+  Status: CONTESTED (MONITOR-426 via DISPOSITION-439, 2026-07-10, Med-High — ID-level reconciliation decides estimate-drift vs item loss; same test as REVISE-200)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-433
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the c2a2-lit-search-pipeline run tally (2026-07-09), BACKLOG SURFACED section, exact quote. [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-434:
+  Date identified: 2026-07-09
+  Statement: "Supabase free-tier projects pause after 7 days with no DB activity" and one trivial daily query ("SELECT 1") is sufficient to reset the inactivity clock — i.e., the platform's activity detector counts any successful SQL execution.
+  Context: supabase-c2a2-keep-warm scheduled task definition and successful run, 2026-07-09 — the task exists solely on this premise, protecting the Pathway-00 broker during quiet pre-ISME stretches.
+  Type: empirical
+  Related decisions: implicit scheduling decision (keep-warm task creation, pre-existing)
+  Related items: PRESUMPTION-463 (unverified proxy loop)
+  Testability: testable via literature — Supabase's published pause policy and what counts as activity; testable empirically only destructively (let it idle).
+  Status: CONTESTED (MONITOR-427 via DISPOSITION-440, 2026-07-10, Low-Med — outcome-probe the keep-warm via management API rather than inferring from ping success)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-434
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the supabase-c2a2-keep-warm task file and run transcript (2026-07-09). [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-435:
+  Date identified: 2026-07-09
+  Statement: "OpenStory DB is stale (last write 2026-07-06T03:56Z, ~78h ago); OpenStory runtime is likely down; feeds NOT refreshed." Two nested assumptions: (1) write-staleness beyond the guard threshold is a reliable indicator that the runtime is down; (2) refusing to refresh feeds from a stale DB is the correct failure mode (stale feeds are worse than frozen feeds).
+  Context: openstory-agents-telemetry-refresh run, 2026-07-09 — second consecutive freshness-guard trip; only REFRESH_STATUS.md was appended.
+  Type: methodological
+  Related decisions: none on record for the guard's threshold or its refuse-on-stale policy
+  Related items: ASSUMPTION-363 (openstory heartbeat, CONTESTED); REVISE-186 (out-of-band probe); REVISE-189 (corruption verdict unsound — the guard reads the same DB)
+  Testability: testable empirically — the pending native-Mac .recover plus a runtime restart decides whether staleness tracked runtime state; the freeze-vs-stale preference is a design judgment informed by monitoring literature.
+  Status: CHALLENGED (REVISE-196 via DISPOSITION-441, 2026-07-10, Med — staleness is not a reliable down-signal; serve-stale-labeled + real liveness probe)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-435
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the openstory-agents-telemetry-refresh transcript (2026-07-09), FAIL line quoted verbatim. [stated]
+    Current status: CHALLENGED
+
+ASSUMPTION-436:
+  Date identified: 2026-07-09
+  Statement: A file in pending/ is a valid proposal if and only if it carries `proposal_id` frontmatter — "earlier proposal count showed 17 filenames but one was a stray non-frontmatter file; 16 carry valid `proposal_id` frontmatter."
+  Context: morning-walk-cowork-handoff run, 2026-07-09 — the briefing's pending-proposal count (16) was corrected downward on this criterion; the same count then propagated to the evening summary and review page.
+  Type: methodological
+  Related decisions: none on record defining proposal validity
+  Related items: ASSUMPTION-432 (slug-diff inbox detector — sibling counting-rule assumption, CONTESTED); PRESUMPTION-456 (review backlog saturation — the count this rule produces is the load signal)
+  Testability: testable empirically — inspect the stray file: is it a malformed real proposal (undercount) or debris (correct exclusion)? Does any downstream consumer read files without frontmatter?
+  Status: CONTESTED (MONITOR-428 via DISPOSITION-442, 2026-07-10, Low-Med — inspect the stray 17th file: malformed proposal or debris)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-436
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the morning-walk-cowork-handoff transcript (2026-07-09), closing note. [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-437:
+  Date identified: 2026-07-10
+  Statement: "All 8 fresh-cohort items processed end-to-end; the 13 remaining unsearched July items are all older QUEUED-EMPIRICAL items held by convention for in-house tests — nothing was missed." The pipeline assumes its tag-based enumeration of the queue is complete — that "held by convention" and "missed" are exhaustive, mutually exclusive categories the tags reliably distinguish.
+  Context: c2a2-lit-search-pipeline run, 2026-07-10 — closing completeness claim after dispositioning the 2026-07-09 EOD cohort (DISPOSITION-439..446).
+  Type: methodological
+  Related decisions: none — the QUEUED-EMPIRICAL convention itself is undecided (OPEN-117)
+  Related items: ASSUMPTION-432 (log-completeness audit, CONTESTED); ASSUMPTION-433 (count integrity, CONTESTED — MONITOR-426); OPEN-117 (which convention governs the held items)
+  Testability: testable empirically — enumerate July-dated queue entries by provenance ID and tag; verify the 8+13 partition covers them with no untagged remainder (folds into the MONITOR-426/REVISE-200 reconciliation).
+  Status: CHALLENGED (REVISE-201 via DISPOSITION-447, 2026-07-11 — 15a no-support / 15b challenged Strong: tag-based enumeration completeness unverifiable as claimed)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-437
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the c2a2-lit-search-pipeline run report (2026-07-10), closing completeness claim, exact quote. [stated]
+    Current status: CHALLENGED
+
+ASSUMPTION-438:
+  Date identified: 2026-07-10
+  Statement: "No new primary material in past 30 days" justifies zero proposals for a tradition agent — specifically, an Indico contribution whose title "remains 'TBC' with no slides/recording posted" means the 2026-07-02 Amplitudes talk has nothing capturable yet, and a next-run watch item is the correct remedy for the gap.
+  Context: c2a2-agent-carroll-arkanihamed Friday run, 2026-07-10 — Arkani-Hamed side returned 0 proposals on this criterion while the Carroll side wrote PROP-2026-07-10-001 (Mindscape 360).
+  Type: methodological
+  Related decisions: none on record defining tradition-agent absence criteria
+  Related items: PRESUMPTION-457 (prior-as-oracle for adjudicating coverage, CHALLENGED); PRESUMPTION-467..470 cohort (public-availability lag is the unstated half — see PRESUMPTION-469 note); FLAG/watch item in the run output
+  Testability: testable empirically — when the talk materials post, measure the capture lag and whether proposal-worthy content existed during the "nothing new" window.
+  Status: CONTESTED (MONITOR-429 via DISPOSITION-448, 2026-07-11 — 15a partial / 15b challenged Strong: 30-day-window zero-proposal criterion under monitor)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-438
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the Friday tradition-agent run report (2026-07-10), Arkani-Hamed zero-proposal rationale, near-verbatim. [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-439:
+  Date identified: 2026-07-10
+  Statement: "The last DB write (Jul 6 ~03:55Z) coincides with the corruption recurrence recorded that same day — the runtime has apparently been down since." The staleness signal and the corruption event are assumed to share one cause: a dead runtime, down continuously for ~102h.
+  Context: openstory-agents-telemetry-refresh run, 2026-07-10 — third consecutive freshness-guard trip; only REFRESH_STATUS.md written (FAIL line).
+  Type: empirical
+  Related decisions: none — remediation (.recover + LaunchAgent restart) remains a recommendation
+  Related items: ASSUMPTION-435 (staleness→down inference, CHALLENGED — REVISE-196 says staleness is not a reliable down-signal, making this a live instance); ASSUMPTION-427 (copy-verdict, CHALLENGED — REVISE-189); REVISE-186 (out-of-band probe)
+  Testability: testable empirically — a Mac-side process/launchd check or the pending .recover + restart decides whether the runtime was in fact down the whole interval or writing elsewhere/failing to flush.
+  Status: CONTESTED (MONITOR-430 via DISPOSITION-449, 2026-07-11 — 15a partial / 15b challenged Strong: common-cause downtime inference; Mac-side probe decisive)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-439
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the openstory-agents-telemetry-refresh report (2026-07-10), causal-coincidence note, exact quote. [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-440:
+  Date identified: 2026-07-10
+  Statement: "lastRunAt is authoritative for whether a task *fired*. Output file dates are a secondary check for whether it *succeeded*. A missing output file is a warning, not proof the task didn't run" — plus the run's applied corollary: an unverifiable output check (vault not mounted) downgrades to "unverified, not failed."
+  Context: scheduler-health-check watchdog run, 2026-07-10 — the authority hierarchy is written in the task file and was exercised today on summa-2026-daily-batch (fired, output unverifiable) and c282-wiki-agent-daily-run (fired, output "verified" — but see PRESUMPTION-468).
+  Type: methodological
+  Related decisions: none on record — the hierarchy was adopted in the watchdog task file without a recorded decision
+  Related items: PRESUMPTION-465 (fail-loud listener, CHALLENGED); PRESUMPTION-467, PRESUMPTION-468 (today — the two gaps this hierarchy leaves open); SYSTEMIC-RISK open-loop self-assurance (2026-07-10)
+  Testability: testable via literature — liveness vs correctness signals in monitoring design; testable empirically — inject a fire-but-fail task and observe whether the hierarchy classifies it as healthy.
+  Status: CONTESTED (MONITOR-431 via DISPOSITION-450, 2026-07-11 — 15a supported Strong / 15b challenged Strong: fired-vs-succeeded hierarchy contested; see P-467/468)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-440
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the scheduler-health-check task file (quoted verbatim) and its 2026-07-10 run's application of the rule. [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-441:
+  Date identified: 2026-07-11
+  Statement: "The qc_sweep report again showed 0 needing review (307/307 'fresh'), which is the known synthesis-only blindness; a full-vault transcript scan found 81 files with last_qc_at >7 days old." Stated: the report's 0-needs-review is a reliable false negative, and the full-vault transcript scan is the authoritative staleness measure; a script-level fix is recommended.
+  Context: Summa QC sweep (evening run), 2026-07-11 — the workaround is now executed every run at the cost of one extra step.
+  Type: methodological
+  Related decisions: none — the script fix is a recommendation, queued behind decisions
+  Related items: OPEN-116 (fixed cadences); PRESUMPTION-467 (dashboard-vs-outcome, CHALLENGED); PRESUMPTION-473 (today — self-referential denominators; the report's 307/307 denominator is the known-wrong instance)
+  Testability: testable empirically — implement the script fix and compare its needs-review set against the full-vault scan over several runs.
+  Status: CONTESTED (MONITOR-432 via DISPOSITION-455, 2026-07-12 — 15a partially-supported / 15b partially-challenged: scope-blindness precedented, but "authoritative" full scan is the imperfect-gold-standard error; awaiting script fix + hand-adjudicated sample n≈20)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-441
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-11 evening Summa QC sweep transcript, exact quote. [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-442:
+  Date identified: 2026-07-11
+  Statement: "The C2A2 wiki mount was absent this run, so PRS-ids in these six syntheses were form-checked only. ... I recommended an id spot-check of 239/240 next time the wiki mounts." Stated: form-check-only is an acceptable degraded QC mode when the wiki is unmounted, provided a deferred spot-check compensates.
+  Context: Summa QC sweep (evening run), 2026-07-11 — the same morning, the commentary reviewer found real PRS-id drift (Days 160–163), which is what makes the degraded mode's adequacy a live question.
+  Type: methodological
+  Related decisions: none
+  Related items: PRESUMPTION-471 (today — the QC stamp does not record verification depth); PRESUMPTION-469 (CHALLENGED — noted fixes reach no future run; the spot-check recommendation lives only in a run output)
+  Testability: testable empirically — perform the recommended spot-check of Days 239/240 on a mounted run and measure id-drift incidence in form-check-only pairs.
+  Status: CHALLENGED (REVISE-206 via DISPOSITION-456, 2026-07-12 — graceful-degradation support strictly conditional on predefined mode / distinguishable outputs / enforced compensation; instance fails at least two (P-471 stamp, ownerless deferred spot-check); normalization-of-deviance entry pattern)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-442
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-11 evening Summa QC sweep transcript, exact quotes. [stated]
+    Current status: CHALLENGED
+
+ASSUMPTION-443:
+  Date identified: 2026-07-11
+  Statement: The PRS citation-mislabel cluster (Days 161–163 cite "Friston PRS-02" for content at PRS-04/PRS-03; Day 160 glosses Stump PRS-09 as second-personal knowing, which is PRS-11) is "same class as the Day-23 escalation — may indicate a writer-pass-level pattern worth a full-vault audit," and is therefore best repaired by a batch grep rather than day-by-day.
+  Context: Summa commentary reviewer escalation, 2026-07-11 (as carried in the evening cowork summary) — flagged as a cluster for Tom's approval.
+  Type: empirical
+  Related decisions: none yet — see OPEN-118 (today)
+  Related items: OPEN-118; PRESUMPTION-472 (today — grep-ability of the error class); the Day-23 escalation precedent
+  Testability: testable empirically — run the batch grep / full-vault audit and check whether mislabels concentrate in identifiable writer-pass cohorts.
+  Status: CONTESTED (MONITOR-433 via DISPOSITION-457, 2026-07-12 — batch-over-piecemeal supported; batch boundary and grep-exhaustion closure criterion contested; full-vault audit is the discriminating test, closure governed by REVISE-208)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-443
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the commentary-reviewer escalation as quoted in the 2026-07-11 evening cowork summary. [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-444:
+  Date identified: 2026-07-11
+  Statement: "Signing back in to claude.ai in Chrome restores both sync directions." Stated: the Chrome login is the single root cause of the 9-day sync outage; no other degradation has accumulated in either direction.
+  Context: evening cowork→chat delivery failure note, 2026-07-11 — day 9 of the outage; both directions failed again today.
+  Type: empirical
+  Related decisions: none — REVISE-198 (Gmail fallback, HIGH) and REVISE-199 (ack + escalation, HIGH) remain the formal fixes
+  Related items: PRESUMPTION-464, PRESUMPTION-465 (both CHALLENGED); REVISE-198, REVISE-199; PRESUMPTION-474 (today)
+  Testability: testable empirically — sign in and observe whether the next morning scrape and evening delivery both succeed without further intervention.
+  Status: CONTESTED (MONITOR-434 via DISPOSITION-458, 2026-07-12 — credential expiry warranted as LEADING hypothesis; "single root cause" blocked (Cook doctrine — 9-day detection silence is a second necessary condition); first post-login observation is the free decisive test)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-444
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-11 evening cowork summary delivery-failure header and What's Next, exact quote. [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-445:
+  Date identified: 2026-07-11
+  Statement: "BOSCO email archive is COMPLETE at 30,529/30,529 (enrichment backlog 28,516 remains)." Stated: archive completeness is established by fetched-count equaling the enumerated total.
+  Context: morning project status, 2026-07-11, as carried in the evening cowork summary — the long-running archive project's completion claim.
+  Type: empirical
+  Related decisions: none
+  Related items: PRESUMPTION-473 (today — the denominator is produced by the same system that satisfies it); ASSUMPTION-437 (enumeration completeness, CHALLENGED today via REVISE-201); PRESUMPTION-470 (census protocol, CHALLENGED)
+  Testability: testable empirically — independent recount of the source mailbox (or provider-side count) against the archive's 30,529.
+  Status: CONTESTED (MONITOR-435 via DISPOSITION-459, 2026-07-12 — count parity is real first-layer evidence; "completeness established" fails on the self-produced denominator (P-473 flagship instance, 307/307 precedent); one independent provider-side count settles it)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a/15b → 15c → 14a]
+    Original item: ASSUMPTION-445
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-11 morning project status via the evening cowork summary, exact quote. [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-446:
+  Date identified: 2026-07-12
+  Statement: "the numbers above use the prior census definition … they sit on the established trend (2483 → 2567 orphans) rather than jumping, which suggests prior runs resolved paths correctly and the defect was introduced this run and caught before it reached the CSV. No back-correction of earlier rows is warranted." Trend continuity is taken as sufficient evidence that a basename-only wikilink-resolution defect was born and died inside this single run.
+  Context: c2a2-sewing-agent-weekly run, 2026-07-12 — census method note (fail-loud) after the resolver was found mis-scoring path-form wikilinks and repaired in-run.
+  Type: empirical
+  Related decisions: none
+  Related items: PRESUMPTION-476 (today — the in-run fix is self-certified); PRESUMPTION-470 (census protocol, CHALLENGED); REVISE-205 (census rule)
+  Testability: testable empirically — re-run the prior runs' resolver (or the 07-05 vault snapshot) under both resolution modes and confirm earlier CSV rows reproduce; cheap and decisive.
+  Status: CONTESTED (MONITOR-436 via DISPOSITION-464, 2026-07-13 — SPC legitimises "no special-cause signal" as first-line evidence, but a proportional resolver defect produces a smooth series BY CONSTRUCTION (Rothermel & Harrold 1997); "no jump" is what the excluded hypothesis predicts. Convention fix owned by REVISE-213 (replay). Nearly-free test: date the defect from the resolver's git history.)
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a/15b -> 15c -> 14a]
+    Original item: ASSUMPTION-446
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the sewing_agent_log.md 2026-07-12 census note, exact quote. [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-447:
+  Date identified: 2026-07-12
+  Statement: "Bridge notes are near-orphans by nature — essays link out to tradition content; almost nothing links in to them. 42 of 45 having ≤2 backlinks is the expected steady state, not a connectivity failure." Synthesis pages are assumed to be structurally exempt from the connectivity metric that governs the rest of the vault.
+  Context: c2a2 bootstrap audit (4th firing), 2026-07-12 — explaining the category C delta (23 → 42) as expected rather than a regression.
+  Type: architectural
+  Related decisions: none
+  Related items: ASSUMPTION-448 (vault-health sufficiency); the metric-inflation flag (3rd consecutive, unactioned)
+  Testability: testable via literature — hypertext/personal-wiki link-topology findings on whether synthesis/essay nodes are systematically low-indegree, and whether low-indegree synthesis pages are later found or lost (discoverability vs. link-rot literature).
+  Status: CONTESTED (MONITOR-437 via DISPOSITION-465, 2026-07-13 — low indegree is a structural equilibrium (Broder et al. 2000), but "expected" and "harmless" are different claims; Wikipedia orphan work (Arora et al. 2024) treats low indegree as a maintenance defect and shows de-orphanisation causally raises discovery. Hinges on SYSTEMIC-RISK #2 (traversal vs. embedding retrieval). NOTE: no peer-reviewed source characterises synthesis notes as outbound-heavy — that premise is practitioner folklore.)
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a/15b -> 15c -> 14a]
+    Original item: ASSUMPTION-447
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from sewing_agent_bootstrap_2026-07-12.md, category C delta section, exact quote. [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-448:
+  Date identified: 2026-07-12
+  Statement: "The knowledge graph remains sufficient for thinker-agent synthesis: the 14 prs_triplets.md hubs hold the top backlink counts, and the orphan population is structural/pipeline residue. The bottleneck is not connectivity." Vault health for synthesis purposes is assumed measurable by hub backlink concentration plus an orphan-population account.
+  Context: c2a2 bootstrap audit (4th firing), 2026-07-12 — vault health assessment carried unchanged from the 06-28 baseline.
+  Type: architectural
+  Related decisions: none
+  Related items: ASSUMPTION-447; the weekly sewing agent's metric-inflation measurement (full census 3258/2567 vs 1419/728 excluding machine dumps)
+  Testability: testable empirically — correlate synthesis output quality (e.g., bridge-note substance, agentic-call specificity) against local connectivity; if quality tracks something else (capture recency, PROP density), connectivity is confirmed as non-bottleneck.
+  Status: CHALLENGED (REVISE-211 via DISPOSITION-466, 2026-07-13 — sufficiency was derived from graph statistics without asking what consumes the graph; GraphRAG-Bench 2025 and KG-sparsity results find structure can HURT multi-hop traversal, and community summarisation would silently omit the orphan periphery. The derivation is invalid whether or not the conclusion holds. SYSTEMIC-RISK #2.)
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a/15b -> 15c -> 14a]
+    Original item: ASSUMPTION-448
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from sewing_agent_bootstrap_2026-07-12.md, vault health assessment, exact quote. [stated]
+    Current status: CHALLENGED
+
+ASSUMPTION-449:
+  Date identified: 2026-07-12
+  Statement: "Both accept idealism; the mereologies are incompatible" (Kastrup vs. Levin, nested vs. dissociated subjects); and the standing Hoffman↔Kastrup idealism bridge "rests on a shared negation and hides an incompatible mereology" — Hoffman's composing conscious agents side with Levin against Kastrup on the individuation-of-subjects question.
+  Context: c2a2-sewing-agent-weekly run, 2026-07-12 — headline finding #1: two paradigm-boundary disagreements inside the idealist camp (PROP-2026-07-08-002, PROP-2026-07-07-001); recommended for routing to the master agent as a paradigm-shift candidate.
+  Type: epistemic (content-level claim about the tracked traditions themselves)
+  Related decisions: none
+  Related items: PRESUMPTION-477 (today — capture-sufficiency for the reclassification); the pending Kastrup↔Levin paradigm-shift candidate (in pending/, unadjudicated since 07-08)
+  Testability: testable via literature — primary sources: Kastrup's dissociation-based individuation (alters of mind-at-large), Hoffman's conscious-agent composition theorems, Levin's nested/multi-scale selves; do the mereologies actually contradict, or operate at different levels of description?
+  Status: CONTESTED (MONITOR-438 via DISPOSITION-467, 2026-07-13 — 15a SUPPORTED the reclassification away from "agreement" (Hoffman/Fields compose, Levin nests, Kastrup dissociates), but 15b found Kastrup affirms SUB-ALTERS and a "dissociative hierarchy": his alters DO nest. Correct label is "CONTESTED — priority dispute" (what is ontologically fundamental), not "incompatible mereologies." Paradigm-shift routing BLOCKED pending REVISE-214 primary-text verification.)
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a/15b -> 15c -> 14a]
+    Original item: ASSUMPTION-449
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from sewing_agent_log.md 2026-07-12, "Worth Tom's attention" item 1 and the kastrup_levin / hoffman_kastrup bridge-note summaries, exact quotes. [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-450:
+  Date identified: 2026-07-12
+  Statement: "active inference has no fatigue term and cannot obviously derive why a well-fitted model degrades once its goal is met (Levin's noise-free simulation does). If that holds, aging is evidence about FEP rather than an application of it."
+  Context: c2a2-sewing-agent-weekly run, 2026-07-12 — headline finding #2, the reverse-direction claim behind the recommended promotion of friston_levin_bridge.md (8.2KB, four claims) to a standalone synthesis page.
+  Type: epistemic (content-level claim about a tracked tradition's explanatory reach)
+  Related decisions: none
+  Related items: the Levin×Friston promotion recommendation (2nd consecutive week); PRS candidate "aging as precision decay"
+  Testability: testable via literature — does the FEP corpus contain resources for endogenous model degradation (precision decay, entropic drift of generative models, "wear" terms in expected free energy)? A found fatigue-analogue defeats the claim; a confirmed absence elevates it.
+  Status: CHALLENGED (REVISE-212 via DISPOSITION-468, 2026-07-13 — the absence holds for FEP's core formalism, but the first clause ("no fatigue term") is false as stated: allostatic-load/precision-decay treatments (Stephan et al. 2016) supply the analogue. The reverse-direction framing survives only in restricted form.)
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a/15b -> 15c -> 14a]
+    Original item: ASSUMPTION-450
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from sewing_agent_log.md 2026-07-12, "Worth Tom's attention" item 2, exact quote. [stated]
+    Current status: CHALLENGED
+
+ASSUMPTION-451:
+  Date identified: 2026-07-12
+  Statement: "qc_sweep.py report now returns 0 across the board (keys on newest pair timestamp) — manual staleness scan is the sole work source now." The stated diagnosis (keying on the newest pair's timestamp) and the stated consequence (the scripted staleness instrument is fully blind) are both asserted from a single day's observation.
+  Context: Summa QC sweep, 2026-07-12 — new finding reported in the evening cowork summary while the sweep serviced the 6 oldest stale pairs from the manual scan.
+  Type: empirical
+  Related decisions: none
+  Related items: ASSUMPTION-441 (instrument disagreement, CONTESTED — MONITOR-432); ASSUMPTION-442 (degraded-mode QC, CHALLENGED — REVISE-206); the queued qc_sweep script fix
+  Testability: testable empirically — read the report code path; construct a fixture with one fresh and one stale pair and confirm the report keys on the newest timestamp; distinct from (and prior to) the MONITOR-432 adjudication sample.
+  Status: CONTESTED (MONITOR-439 via DISPOSITION-469, 2026-07-13 — 15a SUPPORTED (Strong; polarity/hazard class), 15b PARTIALLY-CHALLENGED. A two-pair fixture (one fresh, one stale) settles it; kin to MONITOR-432.)
+  Provenance:
+    Origin: 14a
+    Chain: [14a -> 15a/15b -> 15c -> 14a]
+    Original item: ASSUMPTION-451
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-12 evening cowork summary's Summa QC finding, exact quote. [stated]
+    Current status: CONTESTED
+
+ASSUMPTION-452:
+  Date identified: 2026-07-13
+  Statement: "ONE convention, three layers — NO SELF-PRODUCED ARTIFACT MAY CERTIFY ITSELF. Tooling fixes confirmed by REPLAY (REVISE-213); denominators by INDEPENDENT CORROBORATION (REVISE-209, already flagged); captures by PRIMARY-TEXT VERIFICATION (REVISE-214). Three flags, one rule. Adopt it once rather than patching three times." Stated: the three flagged instances share a single generative cause, and one convention — instantiated three ways — settles the whole family.
+  Context: 15c dispositions, 2026-07-13 autonomous lit-search run (SYSTEMIC-RISK #1, CRITICAL, sixth consecutive flag in the open-loop family; now reaching the epistemic-input layer).
+  Type: methodological
+  Related decisions: none yet — this is the pipeline's own standing recommendation, awaiting Tom's adoption
+  Related items: REVISE-209, REVISE-213, REVISE-214; ASSUMPTION-442/445 (CHALLENGED/CONTESTED); PRESUMPTION-471/473/476/477 (all CHALLENGED); ASSUMPTION-446 (MONITOR-436, subsumed)
+  Testability: testable via literature — attestation/provenance doctrine (SLSA, supply-chain integrity), independent-verification efficacy across heterogeneous artifact classes; testable empirically — apply the three instantiations to the three open instances and measure whether any residue escapes the rule.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-452
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-13 15c SYSTEMIC-RISK #1 recommendation, exact quote. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-453:
+  Date identified: 2026-07-13
+  Statement: Both connectivity claims (ASSUMPTION-447, ASSUMPTION-448) "hinge entirely on whether retrieval is traversal- or embedding-based" — determining the vault's retrieval mode is stated to settle both at once. Secondary stated test: "BFS reachability of the 45 bridge notes from the top-20 hub set at depths 1-3."
+  Context: 15c dispositions, 2026-07-13 — SYSTEMIC-RISK #2 (High): a shared, unexamined dependency beneath two independently-derived claims.
+  Type: empirical
+  Related decisions: none
+  Related items: ASSUMPTION-447 (CONTESTED, MONITOR-437); ASSUMPTION-448 (CHALLENGED, REVISE-211); the 45 bridge notes from the weekly sewing agent
+  Testability: testable empirically — read the retrieval path actually consumed by the thinker agents (traversal vs. embedding vs. hybrid), then run the BFS reachability test. This is an in-house determination requiring no literature.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-453
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-13 15c SYSTEMIC-RISK #2 flag and the DISPOSITION-465 "what would change the disposition" clause, exact quotes. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-454:
+  Date identified: 2026-07-13
+  Statement: "Two of the three output-verification checks in this watchdog's spec point at paths outside the mounted folders, so they can never pass." Stated: the scheduler watchdog carries a permanent, structural blind spot (Summa 2026 vault and BOSCO-Archive are unreachable from its sandbox), and the remedy is either to mount those folders or drop the rows from the spec.
+  Context: Scheduler health check, 2026-07-13 — the watchdog reported 37/37 enabled tasks healthy while flagging that its own output-verification capability is 1-of-3.
+  Type: methodological
+  Related decisions: none
+  Related items: PRESUMPTION-~ (firing-health-aggregates-to-system-health family, already CHALLENGED); PRESUMPTION-478 (today); the c282-wiki-agent output check, which the same family shows is unfalsifiable in practice
+  Testability: testable empirically — inspect the task's sandbox mounts against the three verification paths; a one-line check settles it.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-454
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-13 scheduler health check "Action needed" paragraph, exact quote. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-455:
+  Date identified: 2026-07-13
+  Statement: "C2A2_master_wiki.md hasn't been written since 2026-07-09 despite daily 8 AM runs, and its network-state block (35 active findings, 222 PRS triplets, April-era pending list) conflicts with pattern_detector_findings.md, which now runs through FINDING-050." Stated further, as a method choice: "I reported the master's numbers in the footer but labeled them as of 07-09 rather than averaging the two sources."
+  Context: Morning walk handoff, 2026-07-13 — no walk notes in Gmail; briefing built from wiki state alone, and the two counters were found in conflict.
+  Type: empirical
+  Related decisions: none
+  Related items: OPEN-112 (PRS count discrepancy); REVISE-205 (census rule); the 50-vs-53 findings drift carried unreconciled since 07-11
+  Testability: testable empirically — mtime of C2A2_master_wiki.md plus a diff of its network-state block against pattern_detector_findings.md; the daily-run task's own logs establish whether it fired and wrote nothing.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-455
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-13 morning walk handoff report, exact quotes. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-456:
+  Date identified: 2026-07-14
+  Statement: "All 34 enabled cron tasks have a lastRunAt within 1× their expected interval. No task is missing lastRunAt." Stated as the operative health criterion, the watchdog concluded "Healthy: 37 enabled tasks, all running on schedule ... Action needed: None — all clear." The stated assumption is that a task whose lastRunAt is current is a task that ran correctly.
+  Context: Scheduler health check, 2026-07-14 — the watchdog reported 37/37 healthy on a day when four other scheduled tasks (c2a2-lit-search-pipeline, evening cowork→chat, morning walk handoff, deferred-action monitor) each fired and then crashed mid-response ("Connection closed mid-response"), producing no output. A mid-run crash still updates lastRunAt, so the criterion cannot see it.
+  Type: methodological
+  Related decisions: none
+  Related items: ASSUMPTION-454 (the watchdog's unmounted-path blind spot, 07-13); the firing-health-aggregates-to-system-health family (already CHALLENGED); ASSUMPTION-459 (the .md fallback that the same crash defeated); PRESUMPTION-481, PRESUMPTION-483 (today)
+  Testability: testable empirically — in-house, for one day compare the set of tasks with a current lastRunAt against the set that produced a valid, non-empty output artifact; today's four crashes are a ready sample where the two sets diverge.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-456
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-14 scheduler health check output, exact quotes, set against four mid-response crashes read directly in their transcripts. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-457:
+  Date identified: 2026-07-14
+  Statement: "ps inside the sandbox only sees sandbox processes, so sections 3–4 of the report describe the analysis environment, not macOS itself. The task asks for Mac process data that isn't reachable this way — I said so plainly rather than passing off sandbox processes as your Mac's." Stated: sandbox-visible process data is not a valid substitute for host process data, and the honest move is to disclose the scope gap rather than let the report imply coverage it does not have.
+  Context: Morning system health, 2026-07-14 — the agent produced its report but explicitly bracketed the process-level sections as sandbox-only, and separately noted request_cowork_directory errored on ~/Documents ("overlaps a protected host location") though the mount already existed.
+  Type: methodological
+  Related decisions: none
+  Related items: ASSUMPTION-454 and ASSUMPTION-455 (the 07-13 instrument-honesty pair — an agent disclosing the limits of its own reach); the firing-health family; the OpenStory-runtime-down-since-07-05 and metabolism-freshness failures the same report surfaced
+  Testability: framework commitment on the honesty norm; the underlying scope claim is testable empirically — whether the sandbox's process table can or cannot enumerate host processes is a one-command check.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-457
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-14 morning system-health report and run-summary, exact quotes. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-458:
+  Date identified: 2026-07-14
+  Statement: "The .md file is the primary deliverable — it persists even if browser delivery fails." Stated in the evening cowork→chat task spec as the guarantee that the day's summary always survives: even when Chrome delivery is impossible, Step 2 writes a dated summary file to disk before Step 3 attempts to send.
+  Context: Evening cowork→chat, 2026-07-14 — the run read the architecture files (Step 1) and then crashed mid-response ("Connection closed") before reaching Step 2, so no 2026-07-14 summary .md was written. The last file in daily_sync/cowork_to_chat is dated 2026-07-12; both 07-13 (quota) and 07-14 (mid-run crash) produced no file. The stated fallback presumes the failure lands at the delivery step; a crash before Step 2 defeats it.
+  Type: architectural
+  Related decisions: none
+  Related items: ASSUMPTION-444 (sync-outage single-cause, CONTESTED); PRESUMPTION-478 (quota substrate), PRESUMPTION-479 (non-exclusive causes); PRESUMPTION-481 (crash-as-silent-no-op, today); REVISE-198/199 (both assume the channel can transmit)
+  Testability: testable empirically — demonstrated CHALLENGED same day: the deliverable's persistence is contingent on execution reaching Step 2, which a mid-run crash does not guarantee; the fix (write the .md first, or checkpoint before any long-running read) is a design change, not a literature question.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-458
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the evening cowork→chat task spec's "Important Notes," set against the absent 07-14 output file. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-460:
+  Date identified: 2026-07-15
+  Statement: "the pending inbox has grown to 26 proposals, and the master wiki's last recorded run is 2026-07-09 — so the 07-10 → 07-14 deposits (a heavy Levin run) appear un-ingested. That Levin batch feeds directly into the FINDING-048 embedding-space ≡ FEP watch (FLAG-016)." Stated: the master-wiki ingestion lag now has a specific downstream epistemic consequence — five days of un-ingested deposits (including a heavy Levin batch) are exactly the evidence that would confirm or kill a live paradigm-shift watch, so the staleness is no longer only stale counters but a stalled evidence path into a flagged finding.
+  Context: Morning walk cowork handoff, 2026-07-15 — no walk notes in Gmail; briefing built from wiki state alone. Network reported steady at 300 PRS triplets / 90 connections / 50 findings, with 6 flagged/paradigm-shift-watch items surfaced. The handoff escalated ASSUMPTION-455 (master silent since 07-09) from a counter-staleness observation to a claim about corrupted/starved evidence flow into FINDING-048 / FLAG-016.
+  Type: architectural (with a methodological component: the ingestion path is a single point between deposits and every downstream reader, and its freshness is unverified)
+  Related decisions: none
+  Related items: ASSUMPTION-455 (master wiki stale since 07-09 — this is its escalation); the firing-health-aggregates-to-system-health family (a daily run that fires but writes nothing); PRESUMPTION-484 (today — flags presumed to reflect current evidence); OPEN-120 (today)
+  Testability: testable empirically — in-house: confirm whether FINDING-048's evidence base actually depends on the 07-10→07-14 Levin deposits, and whether those deposits are in fact un-ingested (master-wiki mtime + a diff of its network-state block against pattern_detector_findings.md through FINDING-050). No literature needed to settle the factual half; literature only for whether a flagged watch should carry an evidence-freshness gate.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-460
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-15 morning walk cowork handoff report and its run-summary, exact quotes; no attended Cowork session occurred on 2026-07-15. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-461:
+  Date identified: 2026-07-15
+  Statement: The evening cowork→chat run failed with "API Error: Unable to connect to API (ConnectionRefused)" (nothing produced), and the c282 wiki agent daily run separately died with "API Error: Connection closed mid-response" after generating its review page. Stated: today's delivery-and-producer failures were infrastructure-connection errors — a signature distinct from both prior named causes in the sync-outage family (the Chrome/claude.ai login-out, still live on the morning scrape, and the 07-13 "out of usage credits"). The failure family now has at least three separate causes on the record and a fourth mode (mid-response crash) recurring.
+  Context: 2026-07-15 autonomous day. Morning chat scrape: claude.ai logged out in Chrome (login outage continues). Evening cowork→chat: ConnectionRefused on the first turn. c282 wiki daily run: fired, generated a 26-proposal review page, then crashed mid-response. Morning project status nonetheless reported the fleet all-clear ("no issues to report") the same day a producer crashed — the standing self-certification pattern (ASSUMPTION-456) recurring.
+  Type: architectural
+  Related decisions: none
+  Related items: ASSUMPTION-444 (sync-outage single-cause, CONTESTED — further contested here); ASSUMPTION-456 (firing ≠ valid output); PRESUMPTION-479 (failure modes not mutually exclusive); PRESUMPTION-481 (mid-run crash as silent no-op); PRESUMPTION-485 (today — closed-failure-taxonomy presumption)
+  Testability: testable empirically — in-house: classify each of the day's crash tails by error string and by whether any artifact survived; the taxonomy is a direct read of the transcripts, not a literature question. Literature only for whether a bounded remedy set can ever close against an open failure population (see PRESUMPTION-485).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-461
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-15 evening cowork→chat, morning chat-scrape, and c282 wiki-agent transcripts, exact error strings. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-462:
+  Date identified: 2026-07-16
+  Statement: The c282 wiki agent daily run reported (Phase 5): "master narrative re-synced (flagged the 07-10→07-15 narrative gap)" and, in its readout, "review pages exist for 07-14 and 07-15, but the master wiki's 'Current status' line had not advanced past 07-09 ... My 07-16 entry re-syncs it." Stated: the master-wiki narrative pointer, silent since 07-09 (the ASSUMPTION-455/460 concern), was brought current today by prepending a 07-16 status line — the run treats the staleness as addressed at the narrative layer.
+  Context: 2026-07-16 c282 wiki agent daily run (autonomous day #11). Orchestrator-only, clean run: Phase 0 no decisions, Phase 1 inbox clear / 0 truly-unprocessed / no triplets added, Phase 2 zero proposals (correct), Phase 3 26-proposal review page, Phase 5 cleanup + master narrative re-sync, Phase 5.5 review log refreshed. Network explicitly unchanged at 300 PRS / 90 connections / 50 findings — "frozen at 300/90/50 for two weeks because nothing has been approved."
+  Type: architectural (a status-layer repair to the exact staleness A-455/A-460 flagged)
+  Related decisions: none
+  Related items: ASSUMPTION-455 (master silent since 07-09), ASSUMPTION-460 (staleness stalls FINDING-048 evidence), OPEN-120 (evidence-freshness gate); PRESUMPTION-486 (today — the re-sync advances the pointer, not the evidence)
+  Testability: testable empirically — in-house: confirm the master wiki's "Current status" line now carries a 07-16 entry, AND separately confirm whether the 07-10→07-14 deposits are now ingested into the network-state block (they are not — Phase 1 added no triplets; network still 300/90/50). The two are decoupled and independently checkable.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-462
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-16 c282 wiki-agent daily-run transcript (Phase 5 line and readout), exact quotes. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-463:
+  Date identified: 2026-07-16
+  Statement: The c282 wiki agent daily run reported (Phase 6): "NOT committed/pushed from sandbox (mount blocks .git object writes — 'Operation not permitted'; the sandbox has no push credentials); a commit here would risk corrupting the object store ... Per the constitutional No-Blind-Push rule, I'm leaving everything staged for the Mac rather than blind-committing." Stated: the git-persistence step of the daily run cannot be completed from the autonomous sandbox — by hard constraint (read-only .git mount, no credentials) and by governance rule (No-Blind-Push) — so a run's outputs are staged, not persisted, and a human on the Mac is a required terminal actor to close the loop.
+  Context: 2026-07-16 c282 wiki agent daily run. The staged set is dominated by a large pre-existing Summa vault-sync diff (470 files: 223 transcripts + 247 synthesis/refs, mostly last_qc_at timestamp bumps from a 07-10 QC pass) unrelated to this run; the community_explorer.html guard held. This is a distinct failure locus from the chat-sync family (A-444/A-461): not transmission to Chat but persistence to the durable store.
+  Type: architectural (a fourth, by-design locus in the "autonomous run cannot self-complete" family — persistence, alongside the login/quota/connection transmission causes)
+  Related decisions: none (invokes the standing constitutional No-Blind-Push rule)
+  Related items: ASSUMPTION-461 (sync-outage causes — this adds a persistence-layer sibling), ASSUMPTION-456 (firing ≠ valid/complete output); PRESUMPTION-487 (today — an absent human makes "staged for the Mac" ≡ "never persisted"); PRESUMPTION-489 (today — shared working tree contamination)
+  Testability: testable empirically — in-house: confirm the sandbox mount denies .git object writes and carries no push credentials; confirm the working tree currently holds the run's outputs plus the ~470-file Summa diff, uncommitted. No literature needed for the factual half; literature only for whether a credentialed durable-write path or a commit queue can preserve No-Blind-Push safety without a synchronous human.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-463
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-16 c282 wiki-agent daily-run Phase 6 assessment, exact quotes. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-464:
+  Date identified: 2026-07-16
+  Statement: The morning project status run reported the fleet all-clear — "all fired on schedule today ... No issues to report" — and OpenStory's "live database is healthy," while the same day's evening cowork→chat run reported "OpenStory is down an 11th day." Stated: a same-day, two-agent contradiction about one subsystem's health, with the all-clear resting on liveness ("fired on schedule") and a live DB probe, and the opposing verdict resting on the delivery/usability vantage. (Kin: BOSCO reported "100% complete, 30,529/30,529" with "a handful of attachments still pending enrichment" — a completion claim with an acknowledged residual.)
+  Context: 2026-07-16 autonomous day #11. Morning project status: BOSCO 30,529/30,529, OpenStory "no longer at the old Projects path but database healthy," daily fleet all fired, "No issues to report." Evening cowork→chat: OpenStory down 11th day; review backlog 26 / 15-day gap. This is a fresh in-vivo instance of the liveness-as-success pattern the evening run named SYSTEMIC-RISK #4 (watchdog reads "fired" as "healthy").
+  Type: architectural (instrument-health / self-certification family)
+  Related decisions: none
+  Related items: ASSUMPTION-456 (firing ≠ valid output / self-certification), SYSTEMIC-RISK #4 LIVENESS-AS-SUCCESS (evening 07-16 disposition run), PREMISE-096 (proposed self-certification terminator, INCORPORATE 07-16); PRESUMPTION-488 (today — "health" is vantage-relative, no reconciler); PRESUMPTION-483 (correlated green checks)
+  Testability: testable empirically — in-house: place the morning "OpenStory healthy" and evening "OpenStory down 11 days" verdicts side by side and identify which signal each consumed (DB liveness vs. delivery/usability); check whether any fleet component reconciles two agents' contradictory same-day verdicts on one subsystem (none does). Literature: liveness vs. correctness in monitoring; the gap between "process is up" and "service is usable."
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-464
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-16 morning project status and evening cowork→chat transcripts, exact quotes set against each other. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-465:
+  Date identified: 2026-07-17
+  Statement: The c282 wiki daily run stated a new, more specific cause for the persistence failure than was on record: "Phase 6 is blocked: a stale 0-byte `.git/index.lock` (from an earlier process at 04:40) exists and the sandbox mount cannot remove it ('Operation not permitted'), which blocks all git writes." Stated: today's commit/push blocker is lock contention left by a concurrent earlier process, not (only) the mount denying `.git` object writes / missing push credentials cited on 07-16 (ASSUMPTION-463).
+  Context: 2026-07-17 autonomous day #12. c282 daily run completed Phases 0–5.5 cleanly, then Phase 6 blocked. 791 files dirty in the working tree (this run's master-wiki + review_log.html plus pre-existing sewing/synthesis/vault-sync churn from other agents). This is a rationale-drift instance: the same standing symptom ("persistence cannot self-complete") is now attributed to a different proximate mechanism day-over-day (07-16: mount-denies-writes/no-creds → 07-17: unremovable stale index.lock from a 04:40 process). The two diagnoses imply different fixes (credentialed write path vs. lock hygiene / process serialization).
+  Type: architectural (persistence / autonomous-run-cannot-self-complete family)
+  Related decisions: none
+  Related items: ASSUMPTION-463 (07-16 persistence blocker — mount/creds), PRESUMPTION-487/489 (absent-human push; shared working tree), PRESUMPTION-490 (today — execution-context parity), OPEN-121, REVISE-220/222/223 (07-17 lit dispositions), No-Blind-Push rule
+  Testability: testable empirically — in-house: (a) confirm whether removing the stale `.git/index.lock` on the Mac clears Phase 6, isolating lock-contention from mount-permission as the operative cause today; (b) check whether the 04:40 process (which other scheduled run held the index?) can be serialized or given its own worktree so it cannot leave an orphan lock. Literature: git index.lock contention, concurrent-process file-lock orphaning, sandbox mount permission semantics.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-465
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-17 c282 wiki-agent daily-run transcript, exact quote of the Phase 6 block; compared against ASSUMPTION-463's 07-16 stated cause to record the drift. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-466:
+  Date identified: 2026-07-17
+  Statement: The metabolism regen run stated the failure cause explicitly: "The script resolves `~/` to the sandbox home, not the mounted Mac filesystem, so it cannot reach the live db from this scheduled (sandbox) context." Stated: the regen script was written on the assumption that `~/` (and thus the OpenStory db path) resolves to the Mac home directory — an assumption that holds in an attended Mac run but is false in the scheduled sandbox context, producing `ERROR: db not found: /sessions/.../OpenStory/data/open-story.db` (exit 1).
+  Context: 2026-07-17 autonomous day #12. Metabolism regen FAILED for the second consecutive day. Two stacked problems: (1) the `~/` path assumption above; (2) even if the path resolved, the live `open-story.db` has not been written since Jul 5 (~12 days stale), so the >24h freshness gate would fail regardless — the OpenStory writer freeze is the deeper root cause.
+  Type: architectural (execution-context / path-resolution)
+  Related decisions: none
+  Related items: ASSUMPTION-465 (git index.lock — sibling sandbox-context failure), PRESUMPTION-490 (today — execution-context parity, the general form), OpenStory writer-freeze (db unwritten since 07-05), the "autonomous run cannot self-complete" family, OPEN-122 (today)
+  Testability: testable empirically — in-house: (a) run `metabolism_monitor.py --regen-only` on the Mac where `~/` resolves and confirm the regen succeeds, isolating path-resolution from the writer-freeze; (b) confirm the OpenStory writer has been idle since 07-05 and locate why it stopped. Fix candidate: make the script resolve the db path from an explicit configured/absolute mount path rather than `~/`. Literature: portable path resolution, HOME/env differences across execution contexts, cron/sandbox vs. interactive environment parity.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-466
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-17 metabolism regen transcript, exact quote of the `~/`-resolution diagnosis. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-467:
+  Date identified: 2026-07-17
+  Statement: The morning walk handoff stated a canonicity choice explicitly: "I used the maintained narrative network figure (300 PRS triplets) rather than the master's current-status line (447, the known-drifting per-file sum), per the standing flag in the wiki itself, and flagged the discrepancy in the briefing footer." Stated: the maintained 300-PRS figure is treated as the authoritative network state and the master current-status per-file sum (447 today) is treated as drift to be discounted — even though the same day's c282 run advanced the master narrative's current-status line to 447.
+  Context: 2026-07-17 autonomous day #12. Network reported as 300 PRS / 90 connections / 50 findings (maintained, frozen since 07-09 with nothing approved). The c282 daily run's Phase 5 updated the master narrative header/date to 07-17 and its status line reads 447 PRS; the morning handoff used 300 and footnoted the 300-vs-447 gap. Two numbers for one network state, and two same-day agents each advanced a different one. Connects to the 07-16 narrative-freshness-vs-evidence-freshness family (ASSUMPTION-462 / PRESUMPTION-486) and the still-unreconciled OPEN-112 count discrepancy.
+  Type: methodological (metric canonicity / instrument-reading)
+  Related decisions: none
+  Related items: ASSUMPTION-462 (07-16 narrative re-sync — pointer vs. referent), PRESUMPTION-486 (freshness-of-indicator ≠ freshness-of-evidence), OPEN-112 (unreconciled count discrepancy), OPEN-120, REVISE-221 (Goodhart/masking disposition, 07-17), the 50-vs-53 findings drift
+  Testability: testable empirically — in-house: reconcile the two counts (which PRS are in the maintained 300 but not the per-file 447, and vice versa); decide and document a single canonical counter with a rule for when each is computed. Literature: metric drift, indicator/referent decoupling, Goodhart substitution, dual-bookkeeping reconciliation.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-467
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-17 morning walk cowork handoff transcript (explicit canonicity statement) cross-checked against the c282 daily-run Phase 5 narrative update. [stated]
     Current status: UNTESTED

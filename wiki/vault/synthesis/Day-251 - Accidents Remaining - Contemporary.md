@@ -3,9 +3,9 @@ day: 251
 title: Accidents Remaining (Contemporary)
 pairs_with: "[[Day-251 - Accidents Remaining]]"
 length_target_words: 2200
-length_actual_words: 902
+length_actual_words: 889
 length_tier: medium
-length_ratio_to_target: 0.41
+length_ratio_to_target: 0.4
 length_note: "Compact-by-design: III Q.77 (accidents remaining without a subject) rendered in tight, complete PRS form with Kastrup's idealism the decisive move per the guardrail; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened)."
 karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 identity within monism; substance-as-mental-reality)"
@@ -16,8 +16,8 @@ evidence_strength_summary: "Accidents-without-substrate is metaphysical/conteste
 mind_first_reframe: "The Eucharistic accidents remain without a subject because appearances were never grounded in matter — they are perceptual states in mind, so the material 'subject' the Aristotelian sought was a redundant posit that did no real work."
 central_theme_thread: "The persistence of the accidents is the persistence of the perceiver's finitude; the whole offers itself fully within, and not despite, the limited perspective that can see only the icon."
 tags: [synthesis, day/251, theme/appearance-without-substrate]
-last_qc_at: "2026-06-30T08:20:48"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-09T20:24:36"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 251 — Accidents Remaining (Contemporary Parallel)
@@ -32,7 +32,7 @@ The shared inquiry-problem: **can appearances exist with no material substrate c
 
 ## Resource
 
-The guardrail directs us to lead with Kastrup here, and this is the locus where his move is decisive. In Tom's PRS-form record of Kastrup's program, PRS-02 (identity within monism) makes the reality of any thing a configuration *in mind*, not a parcel of mind-independent matter. On that ontology, the "accidents" — what shows up to a perceiver — are perceptual states, excitations of mind-at-large as registered by a localized perspective. They never required a material substrate, because matter was never the substrate of appearance; mind was. "Accidents remaining without a subject" stops being an exception and becomes the ordinary case stated plainly: appearance is a mental state, and the material "subject" the Aristotelian sought was a posit that did no real work.
+This is the locus where Kastrup's move is decisive. In Tom's PRS-form record of Kastrup's program, PRS-02 (identity within monism) makes the reality of any thing a configuration *in mind*, not a parcel of mind-independent matter. On that ontology, the "accidents" — what shows up to a perceiver — are perceptual states, excitations of mind-at-large as registered by a localized perspective. They never required a material substrate, because matter was never the substrate of appearance; mind was. "Accidents remaining without a subject" stops being an exception and becomes the ordinary case stated plainly: appearance is a mental state, and the material "subject" the Aristotelian sought was a posit that did no real work.
 
 Hoffman supplies the parallel from the perceptual side. In Tom's PRS-form record of Hoffman's program, PRS-03 (perception is fitness-tracking, not truth-tracking) and PRS-04 (observer-dependent spacetime) give an argued evolutionary basis for the claim that the perceptual icon is systematically decoupled from whatever it tracks. The bread-icon can persist as a stable interface element while the reality it once indexed is gone or changed — exactly the structure of accidents persisting without their former substance.
 
@@ -50,7 +50,7 @@ The motif of the project surfaces precisely at the seam. A perspective-limited a
 
 ## Bridges
 
-- **Kastrup PRS-02 (substance-as-mental-reality)** — *metaphysical, contested.* Appearances are mental states; the material substrate was never required. Lead with (guardrail).
+- **Kastrup PRS-02 (substance-as-mental-reality)** — *metaphysical, contested.* Appearances are mental states; the material substrate was never required.
 - **Hoffman PRS-03 + PRS-04 (interface theory; FBT)** — *formal with an argued evolutionary basis.* The icon persists while its referent is converted.
 - **Levin PRS-03 (target morphology; form through turnover)** — *empirical-in-domain.* Pattern floats free of fixed matter.
 - **Rohr (Universal Christ in matter)** — *theological / contemplative.* The reality veiled by conserved appearance.

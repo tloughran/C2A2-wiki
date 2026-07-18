@@ -16,7 +16,7 @@ evidence_strength_summary: "Church-as-collective-agent and the keys-as-delegated
 mind_first_reframe: "The power of the keys is reframed as the real top-down causal authority a higher-order collective agent (the Church) holds over the members coupled into it — a delegated, ministerial power that opens or closes a member's standing in the whole, modeled formally as a Markov-blanketed collective (Friston PRS-06/07) and biologically as the morphogenetic field's command over its cells (Levin)."
 central_theme_thread: "A perspective-limited agent wields a power that is not its own: the minister opens the kingdom by an authority that descends from a whole perceiving more than he does — nested agency in the key of jurisdiction."
 tags: [synthesis, day/266, theme/the-keys-as-delegated-collective-agency]
-last_qc_at: "2026-06-27T02:27:04"
+last_qc_at: "2026-07-11T16:23:42"
 last_qc_outcome: "pass"
 ---
 

@@ -17,8 +17,8 @@ evidence_strength_summary: "End-directedness under free-energy (active inference
 mind_first_reframe: "To have an end is to carry a preference structure (a generative model's priors) that makes some outcomes count as success; rightly judging an agent is reading it against the true end — loving union — it actually computes toward, and fitness to judge is alignment of preference structures across a shared interface."
 central_theme_thread: "No finite agent yet holds the true end completely; each computes toward loving unity from its own limited perspective, and legible judgment is possible only between agents who share enough nature/interface to make the verdict intelligible."
 tags: [synthesis, day/302, theme/right-end-of-agency]
-last_qc_at: "2026-06-25T12:22:56"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-12T10:31:25"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 302 — General Judges (Contemporary Parallel)
@@ -62,4 +62,4 @@ Salvation, in N.T. Wright's frame (PRS-05 in the Wright-tradition wiki), is inco
 
 ## Where this leaves us
 
-If today fixes that agency is evaluated by its end and judgment requires shared nature, tomorrow (Q.91-92) turns to the *renewal of the whole world* and the direct vision of the divine essence — where the metaphysical guardrail brings Levin, Hoffman, and Kastrup to the front. Open thread: the PRS-18 demand (in the Carroll-tradition wiki) for a metaphysics of levels is the cleanest place to test whether "the true end" survives a deflationary naturalism, and is worth a dedicated bridge essay.
+If today fixes that agency is evaluated by its end and judgment requires shared nature, tomorrow (Q.91-92) turns to the *renewal of the whole world* and the direct vision of the divine essence — where Levin, Hoffman, and Kastrup come to the front. Open thread: the PRS-18 demand (in the Carroll-tradition wiki) for a metaphysics of levels is the cleanest place to test whether "the true end" survives a deflationary naturalism, and is worth a dedicated bridge essay.

@@ -16,8 +16,8 @@ length_ratio_to_target: 0.68
 mind_first_reframe: "The marriage debt is the formalization of symmetric mutual self-gift — each agent ceding sole self-authority to the other equally — and this symmetry is what makes the union a real 'we' rather than a possession of one by the other."
 central_theme_thread: "Loving unity is achieved when each limited perspective gives itself wholly to the other without being erased; the symmetric mutual self-gift of the marriage debt is that claim in its most concrete human form."
 tags: [synthesis, day/289, theme/symmetric-self-giving-as-paradigm-of-unity]
-last_qc_at: "2026-07-01T16:20:15"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-10T08:21:21"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 289 — The Marriage Debt (Contemporary Parallel)
@@ -32,7 +32,7 @@ The shared inquiry-problem is **the structure of complete mutual self-gift**. Th
 
 ## Resource
 
-The Wright-tradition program is primary here, since the locus is a Pauline text. Tom's PRS-form record of Wright's work (PRS-05, *salvation as covenant inclusion*) and Wright's scholarship on 1 Corinthians read the marriage debt within Paul's covenantal vision: belonging in a body where members are members *of one another*, the mutual self-gift of marriage as a microcosm of the covenant community in which no one any longer belongs only to themselves. The radical mutuality of 1 Cor 7:4 is, on Wright's reading, the new-creation logic breaking into the most intimate human relation. The Rohr-tradition program supplies the contemplative depth: PRS-04 (*embodied love as epistemology*) reads the debt not as a grim duty but as love enacted bodily — the body itself as the medium of mutual knowing and self-gift — and PRS-7 (*relationship ontologically prior*) grounds the whole in the claim that the spouses are constituted by the relation, so that "ceding power over one's body to the other" is not loss but the very form of their being. The Friston-tradition program supplies the formal structure: PRS-06 (*multi-agent coherence via mutual modeling*) makes the deepest, most stable dyadic unit the *symmetric* one, where each agent's policy is selected with the other's preferences as its own — the operational shape of "I do not have sole power over my own body." Levin's PRS-32 (*goal-directed cognition scaling to the organism*) gives the precedent: in a true higher individual, no part retains sole authority over itself; authority is shared into the whole.
+Since the locus is a Pauline text, the Wright-tradition program supplies the leading move. Tom's PRS-form record of Wright's work (PRS-05, *salvation as covenant inclusion*) and Wright's scholarship on 1 Corinthians read the marriage debt within Paul's covenantal vision: belonging in a body where members are members *of one another*, the mutual self-gift of marriage as a microcosm of the covenant community in which no one any longer belongs only to themselves. The radical mutuality of 1 Cor 7:4 is, on Wright's reading, the new-creation logic breaking into the most intimate human relation. The Rohr-tradition program supplies the contemplative depth: PRS-04 (*embodied love as epistemology*) reads the debt not as a grim duty but as love enacted bodily — the body itself as the medium of mutual knowing and self-gift — and PRS-7 (*relationship ontologically prior*) grounds the whole in the claim that the spouses are constituted by the relation, so that "ceding power over one's body to the other" is not loss but the very form of their being. The Friston-tradition program supplies the formal structure: PRS-06 (*multi-agent coherence via mutual modeling*) makes the deepest, most stable dyadic unit the *symmetric* one, where each agent's policy is selected with the other's preferences as its own — the operational shape of "I do not have sole power over my own body." Levin's PRS-32 (*goal-directed cognition scaling to the organism*) gives the precedent: in a true higher individual, no part retains sole authority over itself; authority is shared into the whole.
 
 ## Solution (proposed, speculative)
 
@@ -44,7 +44,7 @@ This is the article in which the central theme is least forced and most fully pr
 
 ## Bridges
 
-- **Wright PRS-05 (scriptural/theological; primary):** 1 Cor 7 within covenant theology — members *of one another*; the debt as new-creation mutuality.
+- **Wright PRS-05 (scriptural/theological; the load-bearing bridge):** 1 Cor 7 within covenant theology — members *of one another*; the debt as new-creation mutuality.
 - **Rohr PRS-04 / PRS-7 (theological):** love enacted bodily; the spouses constituted by the relation, so self-gift is the form of their being, not loss.
 - **Friston PRS-06 (formal):** symmetric coupling produces a shared-authority *we*; the operational shape of mutual self-gift.
 - **Levin PRS-32 (empirical at biological scale):** in a true higher individual no part retains sole self-authority — the precedent for ceded self-possession.

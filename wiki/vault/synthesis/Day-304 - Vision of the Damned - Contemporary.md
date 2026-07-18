@@ -17,7 +17,7 @@ evidence_strength_summary: "Degrees-of-beatitude-by-charity read as differentiat
 mind_first_reframe: "Degrees of glory are read as the persistence of individuation into the end-state — each perspective fulfilled as itself by the precise charity that formed it — while the saints' relation to the damned is the seam where the synthesis diverges from Aquinas toward inclusion, since the loss of any perspective diminishes the whole rather than sweetening it."
 central_theme_thread: "Q.93 vindicates the theme — individuation is the very texture of beatitude, not its enemy; Q.94 is its hardest test, and because loving unity is the telos that contains every limited perspective, the synthesis parts company with Aquinas's rejoicing-in-punishment, holding the inclusive wager in fear and trembling."
 tags: [synthesis, day/304, theme/individuation-persists-in-glory]
-last_qc_at: "2026-06-25T12:22:58"
+last_qc_at: "2026-07-12T10:31:26"
 last_qc_outcome: "pass"
 ---
 

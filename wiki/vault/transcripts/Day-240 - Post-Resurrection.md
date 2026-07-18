@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-240 - Post-Resurrection - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/240, pars/III, q/55 q/56]
-last_qc_at: "2026-06-19T20:22:26"
+last_qc_at: "2026-07-11T20:21:49"
 last_qc_outcome: "pass"
 ---
 

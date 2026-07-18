@@ -16,8 +16,8 @@ length_note: "Concise by design — a single-focus III Pars Q.57 (Ascension) art
 mind_first_reframe: "If perceived spacetime is a species-specific interface, the Ascension is a change of interface — a withdrawal from the shared sensory presentation — not a subtraction from Christ's real presence or universal governance."
 central_theme_thread: "The ascended Christ's recession from the shared interface is what constitutes the community as perspective-limited agents who must now compute toward loving unity through faith and one another rather than direct sight."
 tags: [synthesis, day/241, theme/presence-under-limitation]
-last_qc_at: "2026-06-25T18:27:10"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-11T08:21:45"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 241 — Ascension (Contemporary Parallel)
@@ -36,7 +36,7 @@ The leading move comes from Hoffman's interface theory of perception. In Tom's P
 
 A second resource comes from Levin. Tom's PRS-form record of Levin's work (PRS-01, morphogenetic control; PRS-03, the morphological-attractor formalism) describes how a target form governs a developing system non-locally: cells are pulled toward an anatomical set-point that is not itself a cell, not located "in" any tissue, yet decisively ordering all of them. This gives a naturalized analogy — strictly an analogy, flagged as such — for a governing center that orders a whole without occupying a position within it.
 
-The theological ground truth is Wright. His inaugurated eschatology (the decisive event has happened; its full implications are still unfolding) reframes the Ascension not as Jesus going "up and away" but as the enthronement that inaugurates a reign now being worked out within history. Rohr's Universal Christ supplies the cosmic scope: the ascended Christ is the pattern present in all reality, not a body relocated to a far compartment of the sky.
+Wright's inaugurated eschatology (the decisive event has happened; its full implications are still unfolding) reframes the Ascension not as Jesus going "up and away" but as the enthronement that inaugurates a reign now being worked out within history. Rohr's Universal Christ supplies the cosmic scope: the ascended Christ is the pattern present in all reality, not a body relocated to a far compartment of the sky.
 
 ## Solution (proposed, speculative)
 
@@ -52,9 +52,9 @@ The project's claim is that conscious agents are individuated by the limitations
 
 - **Hoffman PRS-04 (observer-dependent spacetime)** — *interface / formal-speculative.* Lets "local withdrawal" be a fact about presentation, not subtraction from being; the cleanest resource for Aquinas's spatial worry.
 - **Levin PRS-01 + PRS-03 (morphogenetic control; attractor formalism)** — *empirical-in-domain, speculative-in-transfer.* A non-local governing set-point that orders a whole without occupying it.
-- **Wright (inaugurated eschatology)** — *theological, high confidence within method.* Ascension as enthronement inaugurating a reign worked out in history; primary voice on III Q.1-59.
+- **Wright (inaugurated eschatology)** — *theological, high confidence within method.* Ascension as enthronement inaugurating a reign worked out in history; see *Surprised by Hope* on ascension-as-enthronement.
 - **Rohr (Universal Christ)** — *theological / contemplative.* Cosmic scope: the ascended Christ as pattern in all reality, not a relocated body.
-- **Stump (atonement as union)** — *theological-philosophical.* Receives the monist reframe as Thomistic interlocutor: governance-by-union rather than governance-by-location.
+- **Stump (atonement as union)** — *theological-philosophical.* Governance-by-union rather than governance-by-location, drawing on her account of atonement as union.
 
 ## Where this leaves us
 

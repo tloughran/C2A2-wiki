@@ -15,8 +15,8 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-257 - Penitential Restoration - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-17T20:23:14"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-11T12:21:40"
+last_qc_outcome: "pass"
 tags: [summa, day/257, pars/3, q/89]
 ---
 

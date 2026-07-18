@@ -16,7 +16,7 @@ evidence_strength_summary: "Soul informing matter at conception / hylomorphism =
 mind_first_reframe: "The informing of matter at conception is read as form-bearing matter — form as a real, causally efficacious organizer scaling onto matter (morphogenetics, Levin) — with the active principle, the Spirit who is Love, as the organizing coupling (guardrail: Levin/Friston/Fredrickson lead, Stump interlocutor)."
 central_theme_thread: "Form-bearing matter organized by Love places the loving-unity telos at the very origin of the Incarnation; the 'rounding out' of the modes of human origin reads as the whole completing the limited forms it contains."
 tags: [synthesis, day/228, theme/form-bearing-matter-and-love-as-active-principle]
-last_qc_at: "2026-06-26T20:19:47"
+last_qc_at: "2026-07-17T14:25:59"
 last_qc_outcome: "pass"
 ---
 

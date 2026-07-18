@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=cU202U3KcO4
 title: Continual Contrition
 summa_ref: Supplement, Suppl. Q.2-3
 duration_seconds: 548
-word_count: 1558
+word_count: 1561
 raw_asr_word_count: 1558
 length_tier: short
 fidelity_checked: true
@@ -16,17 +16,17 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-259 - Continual Contrition - Contemporary]]"
 tags: [summa, day/259, pars/suppl, q/2]
-last_qc_at: "2026-06-26T04:19:31"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-09T20:24:48"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 259 — Continual Contrition
 
-> Aquinas's *Summa Theologiae*, Supplement, Suppl. Q.2-3. Verbatim ASR captured 2026-06-16; light cleanup of common transcription errors (Summa, Aquinas, Theologiae, Damascene, narrator "Austin Habash"). Episode-intro name garble ("Summa in a Year") normalized.
+> Aquinas's *Summa Theologiae*, Supplement, Suppl. Q.2-3. Verbatim ASR captured 2026-06-16; light cleanup of common transcription errors (Summa, Aquinas, Theologiae, Damascene, narrator "Austin Habash"). Episode-intro name garble ("Summa in a Year") normalized. Residual intro garbles fixed at QC 2026-07-09: suma → Summa; Sumir → Summa in a Year.
 
-[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's suma
+[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa
 
-Theologiae in a way simple and insightful for anyone to understand. The Sumir podcast is brought to you by Think Catholic. Taking two questions of the
+Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa a day will seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith. is day 259. So let's get started.
 

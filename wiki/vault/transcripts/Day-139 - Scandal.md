@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-139 - Scandal - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/139, pars/2, q/42-43]
-last_qc_at: "2026-06-16T08:21:44"
+last_qc_at: "2026-07-11T00:22:08"
 last_qc_outcome: "pass"
 ---
 

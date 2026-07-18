@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-030 - Secret Thoughts - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-19T00:21:04"
+last_qc_at: "2026-07-11T16:23:40"
 last_qc_outcome: "pass"
 render_pass: structural-pass-2026-05-12  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/030, pars/I]
@@ -26,7 +26,7 @@ tags: [summa, day/030, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 30 of 308.
 > Summa reference: *Prima Pars, Q.57 + Q.58*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic. QC sweep 2026-07-11: Q/Article headers and `## Notes` are now present; content re-verified against raw ASR refetched 2026-07-11 (97% 4-gram overlap, no introduced content).
 
 ## Transcript
 

@@ -16,8 +16,8 @@ length_note: "Concise by design — a single-focus III Q.66 (baptism of blood/de
 mind_first_reframe: "The operative reality of baptism is the dispositional form, which can reach its saving terminus by multiple equifinal routes because what governs the outcome is the attractor/disposition, not the particular material path."
 central_theme_thread: "Baptism of desire is the limit case where the resources are unavailable yet the agent's genuine orientation toward the whole suffices — grace meeting the perspective at the limit of its resources."
 tags: [synthesis, day/245, theme/form-without-matter]
-last_qc_at: "2026-06-25T18:27:12"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-11T08:22:01"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 245 — Baptism by Blood (Contemporary Parallel)
@@ -36,7 +36,7 @@ Levin is the leading resource. In Tom's PRS-form record of Levin's program, PRS-
 
 Kastrup supplies the metaphysics of why disposition is operative. In Tom's PRS-form record of Kastrup's program, PRS-02 (individual identity within monism) makes the salient reality the *state of mind* rather than the physical token — so a disposition of will (desire, charity unto death) is not a placeholder for the "real" physical event but is itself the operative reality the rite normally signifies.
 
-Wright is theological ground truth: salvation is inclusion in the covenant people; baptism of blood/desire is membership effected where the sign is unavailable. Rohr's Universal Christ frames grace as exceeding the measure of the rite — the pattern is not confined to the water.
+On Wright's reading, salvation is inclusion in the covenant people; baptism of blood/desire is membership effected where the sign is unavailable. Rohr's Universal Christ frames grace as exceeding the measure of the rite — the pattern is not confined to the water.
 
 ## Solution (proposed, speculative)
 
@@ -52,7 +52,7 @@ This article strongly supports the project's central claim. Salvation, in the sy
 - **Kastrup PRS-02 (identity within monism)** — *metaphysical.* The operative reality is the dispositional/mental state, not the physical token.
 - **Wright (covenant inclusion)** — *theological, high within method.* Salvation as membership effected where the sign is unavailable.
 - **Rohr (Universal Christ; grace beyond the rite)** — *theological / contemplative.* The pattern not confined to the water.
-- **Stump (sacramental sufficiency)** — *theological-philosophical.* Interlocutor on how disposition completes what matter ordinarily mediates.
+- **Stump (sacramental sufficiency)** — *theological-philosophical.* On how disposition completes what matter ordinarily mediates.
 
 ## Where this leaves us
 

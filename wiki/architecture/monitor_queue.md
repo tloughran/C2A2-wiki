@@ -17042,3 +17042,292 @@ MONITOR-418:
 - MONITOR-382 (ASSUMPTION-363, cycle 1): CONTINUED. 15a SUPPORTED/Moderate on cadence value (change-rate matching). 15b CHALLENGED/Strong on the silent-stall clause (app-gated, no non-execution detection; 2026 dead-man's-switch doctrine). Reaffirms REVISE-147 (external dead-man's-switch). Cross-link: heartbeat run-log also supplies P-352/REVISE-186's out-of-band check. Next 15d: 2026-07-15. Priority High. (DISPOSITION-423)
 
 Note: MONITOR-349 (P-352) and MONITOR-372 (P-387), MONITOR-374 (P-389) were ESCALATED to REVISE this cycle (REVISE-186/187/188) and exit the monitor queue pending Tom's review.
+
+---
+
+## 2026-07-09 fresh-cohort MONITOR intake (15c; DISPOSITION-424..438 run)
+
+MONITOR-419:
+  Item: ASSUMPTION-426 (Tradition agent can reliably reject hallucinated web-search results via its thinker appearance-catalog cross-check)
+  Disposition date: 2026-07-09 | Source: DISPOSITION-424 | Priority: Medium
+  15a/15b: PARTIALLY-SUPPORTED(Moderate) / CHALLENGED(Strong) — established detection family, but "reliably" contradicted (~58% self-detection; catalog gaps false-reject real new events). C2A2's curated catalog may beat the pure self-verification setting — error rate unknown, not known-bad.
+  What would change disposition: in-situ measured error rate of the catalog check (audit sample of accepted/rejected results) — low -> INCORPORATE as one-layer-never-sole-gate; high -> REVISE. Pairs REVISE-191 (P-457).
+  Cadence: Weekly | Next 15d check: 2026-07-16
+
+MONITOR-420:
+  Item: ASSUMPTION-428 (Deferring the 15d refresh backlog is acceptable so long as surfaced + remedy recommended)
+  Disposition date: 2026-07-09 | Source: DISPOSITION-426 | Priority: High
+  15a/15b: SUPPORTED(Moderate, conditional on owner+revisit+escalation) / CHALLENGED(Strong — Vaughan normalization-of-deviance; surfacing decays to functional silence). 5 consecutive runs have surfaced the same deferral with no decision.
+  What would change disposition: OPEN-115/116 cadence/cap decision lands -> INCORPORATE conditional version. AUTO-ESCALATE TRIGGER: 2 more runs carrying the backlog with no decision -> REVISE (the recurrence is itself the disconfirming observation).
+  Cadence: Weekly | Next 15d check: 2026-07-16
+
+MONITOR-421:
+  Item: PRESUMPTION-455 (Per-task independent failure diagnosis acceptable for infrastructure failures spanning agents)
+  Disposition date: 2026-07-09 | Source: DISPOSITION-427 | Priority: Medium
+  15a/15b: PARTIALLY-SUPPORTED(Weak, analogous) / CHALLENGED(Moderate — doctrine mandates one incident record per spanning failure; divergent verdicts of one cause already observed in the 07-03+ sync outage).
+  What would change disposition: second spanning failure with divergent/duplicated diagnoses -> REVISE (add lightweight shared incident file); adoption of shared incident record -> INCORPORATE layered version. Kin REVISE-185.
+  Cadence: Weekly | Next 15d check: 2026-07-16
+
+MONITOR-422:
+  Item: PRESUMPTION-458 (EOD is a clean processing boundary; extraction sees complete day transcripts)
+  Disposition date: 2026-07-09 | Source: DISPOSITION-430 | Priority: Medium
+  15a/15b: PARTIALLY-SUPPORTED(Weak) / CHALLENGED(Strong — completeness watermarks intractable; 3 in-flight sessions at the 07-07 fire are a live counterexample).
+  What would change disposition: GATED ON A-432/MONITOR-424 — if slug-diff detector audit passes AND the 3 late 07-07 transcripts demonstrably processed on a later run -> INCORPORATE (EOD cut + next-run sweep = de facto allowed-lateness policy); either fails -> REVISE (explicit late-arrival sweep).
+  Cadence: Weekly | Next 15d check: 2026-07-16
+
+MONITOR-423:
+  Item: ASSUMPTION-430 (Priority-ordered partial burn is acceptable triage for an over-capacity queue)
+  Disposition date: 2026-07-09 | Source: DISPOSITION-432 | Priority: High
+  15a/15b: SUPPORTED(Strong — triage doctrine) / CHALLENGED(Strong — strict priority under standing overload starves non-HIGH tiers by construction; scheme has no aging). Genuine contest; both agree partial burn is acceptable only WITH anti-starvation aging.
+  What would change disposition: aging rule added (e.g., each run burns K oldest non-HIGH alongside HIGH) -> INCORPORATE conditional version; 2 more runs with zero non-HIGH backlog burned -> REVISE (starvation confirmed). Pairs MONITOR-425 (P-459).
+  Cadence: Weekly | Next 15d check: 2026-07-16
+
+MONITOR-424:
+  Item: ASSUMPTION-432 (Date-stripped slug diff vs PROCESSED_LOG faithfully detects unprocessed inbox items)
+  Disposition date: 2026-07-09 | Source: DISPOSITION-434 | Priority: Medium
+  15a/15b: PARTIALLY-SUPPORTED(Moderate — canonical dedup design) / CHALLENGED(Moderate — date-stripping widens collision class; crash windows break log completeness). Literature cannot settle whether THESE slugs collide; only the in-house audit can.
+  What would change disposition: crafted-collision test + log-completeness-across-interrupt audit pass -> INCORPORATE; real collision or log gap -> REVISE (add date/content-hash to key). Load-bearing for MONITOR-422 (P-458).
+  Cadence: Weekly | Next 15d check: 2026-07-16
+
+MONITOR-425:
+  Item: PRESUMPTION-459 (Queue-time priority labels remain valid at burn time; no re-scoring needed)
+  Disposition date: 2026-07-09 | Source: DISPOSITION-435 | Priority: Medium
+  15a/15b: PARTIALLY-SUPPORTED(Weak — valid only under stationarity) / PARTIALLY-CHALLENGED(Moderate — priorities empirically revised during pre-processing aging windows, where C2A2 items now sit for weeks).
+  What would change disposition: spot re-score of aged sample at next burn — material rank churn -> REVISE (re-score at burn); negligible -> INCORPORATE staleness-window version. Pairs MONITOR-423 (A-430).
+  Cadence: Weekly | Next 15d check: 2026-07-16
+
+MONITOR-426:
+  Item: ASSUMPTION-433 (Carried-forward backlog tallies were estimates; fresh count 110 is the measurement — no items lost)
+  Disposition date: 2026-07-10 | Source: DISPOSITION-439 | Priority: Medium-High
+  15a/15b: SUPPORTED(Strong on the drift phenomenon — 50-70% of carried-forward counts diverge benignly, DeHoratius & Raman 2008; Moderate on the no-loss clause) / CHALLENGED(Moderate — discrepancies are ambiguous absent ID-level reconciliation; silent loss produces the same signature with no error raised).
+  What would change disposition: the queued provenance-ID reconciliation across for_lit_search.md backups (subset test) — all 6 delta-items traced to estimate error -> INCORPORATE; any real loss found -> REVISE (queue-integrity incident; PREMISE-095 inputs re-audited). The same single test settles P-466/REVISE-200.
+  Cadence: Weekly | Next 15d check: 2026-07-17
+
+MONITOR-427:
+  Item: ASSUMPTION-434 (Supabase free tier pauses after 7 idle days; daily SELECT 1 resets the clock)
+  Disposition date: 2026-07-10 | Source: DISPOSITION-440 | Priority: Low-Medium
+  15a/15b: PARTIALLY-SUPPORTED(Strong on the 7-day pause policy per current official docs, fetched live 2026-07-10; Moderate on SELECT 1 sufficiency — validated community practice, not vendor guarantee) / PARTIALLY-CHALLENGED(Moderate — docs hedge with "sufficient activity"; counted-path ambiguity (direct SQL vs API) spawned clarification threads; field reports of keep-alives failing; policy is discretionary and has changed before).
+  What would change disposition: outcome verification — after >=7 days of the daily ping, probe actual project status (management API), not cron success. Unpaused -> INCORPORATE (Moderate; re-check quarterly for policy drift); paused despite pings -> REVISE (ping path not counted). Pairs with REVISE-197 (P-463) — one probe serves both.
+  Cadence: Weekly | Next 15d check: 2026-07-17
+
+MONITOR-428:
+  Item: ASSUMPTION-436 (proposal_id frontmatter presence is the correct validity criterion; 17 filenames -> 16 valid)
+  Disposition date: 2026-07-10 | Source: DISPOSITION-442 | Priority: Low-Medium
+  15a/15b: PARTIALLY-SUPPORTED(Moderate — required-ID presence is a standard first-tier validity gate in schema-on-read ingest) / CHALLENGED(Moderate — single-field presence is a weak proxy in both directions; the lone outlier among 17 is the classic producer-bug signature; best practice quarantines and inspects rather than silently drops).
+  What would change disposition: the queued one-file inspection — stray file is debris -> INCORPORATE with a documented quarantine convention; a real proposal with broken frontmatter -> REVISE (repair record, fix producer, add dead-letter step to intake). Sibling of CONTESTED A-432.
+  Cadence: Weekly | Next 15d check: 2026-07-17
+
+MONITOR-429:
+  Item: ASSUMPTION-438 ("No new public primary material in 30 days" correctly yields zero tradition-agent proposals, with a watch item as remedy)
+  Disposition date: 2026-07-11 | Source: DISPOSITION-448 | Priority: Low-Medium
+  15a/15b: PARTIALLY-SUPPORTED(Moderate — zero-proposals-plus-watch matches evidence-synthesis time-lag-bias practice, GRADE guideline 5; Indico posting lag is normal) / CHALLENGED(Strong — best single database ~85.9% recall, Bramer et al. 2017; single-venue watch converts "we saw nothing" into "nothing exists").
+  What would change disposition: multi-source spot-check of the same 30-day window (arXiv, InspireHEP, institutional channels, video) — nothing missed -> INCORPORATE (with multi-source caveat); missed primary material found -> REVISE (broaden watch beyond Indico). Instance partially self-resolves when materials post; the coverage design does not.
+  Cadence: Weekly | Next 15d check: 2026-07-18
+
+MONITOR-430:
+  Item: ASSUMPTION-439 (Jul-6 write-stop and same-day corruption recurrence share one cause — OpenStory runtime continuously down ~102h)
+  Disposition date: 2026-07-11 | Source: DISPOSITION-449 | Priority: Medium
+  15a/15b: PARTIALLY-SUPPORTED(Moderate — common-cause is the warranted LEADING hypothesis for temporally clustered failures in coupled components, NASA 2016; parsimony supports priority, not confirmation) / CHALLENGED(Strong — premature closure, Croskerry 2003; root-cause attribution critique, Cook — distinct causes would let the corruption mechanism survive the runtime fix).
+  What would change disposition: the queued Mac-side probe (launchd/process check + .recover; same instrument as REVISE-186/189/196) — single cause confirmed -> INCORPORATE (narrow, incident-scoped); distinct causes -> REVISE (do NOT close the corruption thread on runtime recovery).
+  Cadence: Weekly | Next 15d check: 2026-07-18
+
+MONITOR-431:
+  Item: ASSUMPTION-440 (lastRunAt authoritative for *fired*; output files secondary for *succeeded*; missing output a warning not proof; unverifiable checks downgrade to "unverified, not failed")
+  Disposition date: 2026-07-11 | Source: DISPOSITION-450 | Priority: Medium-High
+  15a/15b: SUPPORTED(Strong — restates standard layered-signal monitoring doctrine: Nagios UNKNOWN-state model, Kubernetes liveness/readiness) / CHALLENGED(Strong — gray failure/differential observability, Huang et al. 2017; fired-but-failed is the dominant dangerous class; "unverified, not failed" is fail-open under exactly the 102h-outage-under-green pattern just lived).
+  What would change disposition: adoption of the independent outcome-verification layer (semantic SLIs + escalation on persistent UNKNOWN) -> INCORPORATE with fail-closed backstop; another fired-but-failed outage riding green first -> REVISE. Pairs with REVISE-202 (P-467) and REVISE-203 (P-468).
+  Cadence: Weekly | Next 15d check: 2026-07-18
+
+MONITOR-432:
+  Item: ASSUMPTION-441 (qc_sweep's 0-needs-review is a reliable false negative from synthesis-only blindness; the full-vault transcript scan is the authoritative staleness measure)
+  Disposition date: 2026-07-12 | Source: DISPOSITION-455 | Priority: Medium
+  15a/15b: PARTIALLY-SUPPORTED(Moderate — scope blindness is standard false-negative doctrine: tools cannot flag defects in artifacts they do not read, arXiv:2408.13855, OWASP) / PARTIALLY-CHALLENGED(Moderate — "authoritative" is the imperfect-gold-standard error: comprehensive review itself errs at ~10.76%, PLOS One 2020; broader scope earns primary-screen status, not authority).
+  What would change disposition: the queued script-fix-and-diff plus hand-adjudication of a sample (n≈20) of full-scan-only verdicts — high precision -> INCORPORATE (full scan as primary screen, "authoritative" dropped); low precision -> REVISE (neither instrument fit to anchor QC).
+  Cadence: Weekly | Next 15d check: 2026-07-19
+
+MONITOR-433:
+  Item: ASSUMPTION-443 (PRS citation-mislabel cluster is writer-pass-level, best repaired by batch grep rather than day-by-day)
+  Disposition date: 2026-07-12 | Source: DISPOSITION-457 | Priority: Medium
+  15a/15b: SUPPORTED(Moderate — batch repair of common-cause defect clusters via correction template is standard remediation doctrine, US Patent 10,387,236) / PARTIALLY-CHALLENGED(Moderate — batch boundary rests on two data points with the concentration audit unrun, and grep-scoped closure defines the cluster by the tool's limits while the one inspected instance is semantic).
+  What would change disposition: the full-vault audit — concentration by writer-pass cohort confirmed AND grep enumerates the class -> INCORPORATE (with semantic-residue caveat per REVISE-208); diffuse distribution or material semantic residue -> REVISE. Closure criterion governed by REVISE-208 (P-472).
+  Cadence: Weekly | Next 15d check: 2026-07-19
+
+MONITOR-434:
+  Item: ASSUMPTION-444 (Chrome login is the single root cause of the 9-day sync outage; signing back in restores both directions)
+  Disposition date: 2026-07-12 | Source: DISPOSITION-458 | Priority: Medium
+  15a/15b: PARTIALLY-SUPPORTED(Moderate — credential/session expiry is the commonest single proximate cause of exactly this silent-sync-death signature and re-login the documented fix; supports hypothesis priority, not exclusivity) / CHALLENGED(Strong — Cook: multiple necessary, jointly sufficient; the 9-day detection silence is a second necessary condition; post-outage secondary state accumulation means re-auth may not restore both directions).
+  What would change disposition: first post-login scrape AND delivery runs observed independently, no other intervention — both clean -> INCORPORATE (narrow, trigger-scoped; detection gap stays open via REVISE-202); either dirty -> REVISE (secondary breakage; do not close on the login story). Structural sibling of MONITOR-430.
+  Cadence: Weekly | Next 15d check: 2026-07-19
+
+MONITOR-435:
+  Item: ASSUMPTION-445 (BOSCO archive completeness established by fetched-count = enumerated total, 30,529/30,529)
+  Disposition date: 2026-07-12 | Source: DISPOSITION-459 | Priority: Low-Medium (cheap test; terminal state — should not wait long)
+  15a/15b: PARTIALLY-SUPPORTED(Moderate — count reconciliation is the canonical necessary first completeness layer; proves zero fetch-loop loss) / CHALLENGED(Strong — the denominator is self-produced: N/N against the system's own enumeration is blind to enumeration gaps; the 307/307 known-wrong precedent is the in-house counterexample; terminal states end all future checking).
+  What would change disposition: one independent count (provider-side mailbox total) — matches -> INCORPORATE (terminal state earned); discrepancy -> REVISE (enumerate the difference set). Flagship instance of REVISE-209 (P-473); adopts its convention.
+  Cadence: Weekly | Next 15d check: 2026-07-19
+
+---
+
+## 2026-07-12 RUN — 15d Periodic Monitor (weekly cycle; scheduled c2a2-periodic-monitor-weekly)
+
+**Run context:** Scheduled weekly 15d run. 2026-07-12 is the SECOND Sunday of July -> monthly cycle SKIPPED (low-priority monthly cohort and INCORPORATED-premise re-checks stand at next_check / re_check_due 2026-08-02 from the 2026-07-05 run). 15d does NOT evaluate evidence — it re-triggers 15a/15b; 15c re-dispositions afterward.
+
+**Processed this run:**
+- **19 first re-triggers** (MONITOR-400..418, cycle 0 -> 1): intake next-check dates 2026-07-06..2026-07-12 had all passed with no prior 15d fire. Re-queued in for_lit_search.md with [RE-TRIGGER by 15d: 2026-07-12, cycle 1]. Last checked: 2026-07-12; next 15d check: 2026-07-19. Trajectory baseline carried: Supporting stable; Challenging stable; New sources since intake: No (cycle 0 -> 1; first re-trigger — intake disposition remains the most recent evidence pass).
+- **48 weekly carry-overs NOT duplicate-queued** (2026-07-05 cohort, next_check 2026-07-12): their 2026-07-05 RE-TRIGGER entries in for_lit_search.md remain [QUEUED] and unconsumed (see BACKLOG-FLAG below). The standing QUEUED blocks are the operative search requests; duplicate-queuing would pollute the queue and advancing cycle counts again without a completed search pass would inflate them. Cycle counts unchanged (set at 07-05: MONITOR-345/346/347/348/350..359/361..367 at cycle 2; MONITOR-368..371/376..381/383..399 at cycle 1). Next 15d check moved 2026-07-12 -> 2026-07-19.
+- **2026-07-08 exceptions honored:** MONITOR-360, -373, -375, -382 (CONTINUED by 15c on 2026-07-08; next 15d check 2026-07-15) untouched this run. MONITOR-349, -372, -374 ESCALATED to REVISE (REVISE-186/187/188) on 2026-07-08 and have exited the monitor queue — removed from the weekly rotation.
+- **Event-driven items untouched:** MONITOR-003 (continuous), MONITOR-041 (per billing-error event), MONITOR-154 (per-incident).
+- **Stale escalation:** none this run. No item completed a 4th weekly cycle — the 345..399 cohort's 07-05 re-trigger has not yet been searched, so no cycle completed since the last stale sweep (the 124-item cohort was already downgraded 2026-07-05).
+
+**Evidence trajectory (cohort-level):** No 15a/15b passes have occurred on any monitored item since 2026-07-08 (7 items only). For all other items: Supporting=stable; Challenging=stable; New sources since last cycle=No (no new searches — trajectory unchanged by construction, not by observation).
+
+**BACKLOG-FLAG (loud, per agent brief "fail loud" + A-428/MONITOR-420 lineage):**
+  Observation: 110 of 117 items re-queued by 15d on 2026-07-05 (48 weekly + 62 monthly) remain [QUEUED] in for_lit_search.md with no 15a/15b search 7 days later. Only the 2026-07-08 daily pipeline consumed any (7 items). The 15d re-trigger loop is firing correctly, but downstream consumption has stalled; monitored items are aging in queue rather than cycling through evidence passes.
+  Impact: cycle counts and stale-detection are frozen for the affected cohort; MONITOR-420 (A-428, HIGH) already tracks the deferral-normalization risk — this is a 6th consecutive surfacing of an unconsumed refresh backlog.
+  Recommendation: ESCALATE to Tom — either point c2a2-lit-search-pipeline at the standing 2026-07-05 RE-TRIGGER cohort (oldest-first drain) or explicitly re-scope the weekly cadence to match actual 15a/15b throughput. 15d will not silently keep pushing next_check forward.
+
+### Per-item bookkeeping (compact; per 2026-07-05 format precedent)
+
+**MONITOR-400..418 (19) — cycle 0 -> 1; Cadence Weekly; Last checked 2026-07-12; Next 15d check 2026-07-19; re-queued [RE-TRIGGER by 15d: 2026-07-12, cycle 1]:**
+- ASSUMPTION-383 (MONITOR-400, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- ASSUMPTION-384 (MONITOR-401, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- ASSUMPTION-386 (MONITOR-402, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- PRESUMPTION-414 (MONITOR-403, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- PRESUMPTION-416 (MONITOR-404, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- PRESUMPTION-417 (MONITOR-405, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- ASSUMPTION-388 (MONITOR-406, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- ASSUMPTION-389 (MONITOR-407, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- PRESUMPTION-423 (MONITOR-408, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- ASSUMPTION-391 (MONITOR-409, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- ASSUMPTION-401 (MONITOR-410, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- PRESUMPTION-429 (MONITOR-411, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- ASSUMPTION-403 (MONITOR-412, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- ASSUMPTION-407 (MONITOR-413, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- ASSUMPTION-408 (MONITOR-414, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- PRESUMPTION-439 (MONITOR-415, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- ASSUMPTION-414 (MONITOR-416, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- ASSUMPTION-421 (MONITOR-417, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+- ASSUMPTION-422 (MONITOR-418, cycle 0 -> 1): re-queued; trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No
+
+**Carry-over cohort (48) — cycle unchanged; Cadence Weekly; Next 15d check 2026-07-12 -> 2026-07-19; standing 2026-07-05 QUEUED entries remain operative (NOT duplicate-queued):**
+- Cycle 2 (21): MONITOR-345, MONITOR-346, MONITOR-347, MONITOR-348, MONITOR-350, MONITOR-351, MONITOR-352, MONITOR-353, MONITOR-354, MONITOR-355, MONITOR-356, MONITOR-357, MONITOR-358, MONITOR-359, MONITOR-361, MONITOR-362, MONITOR-363, MONITOR-364, MONITOR-365, MONITOR-366, MONITOR-367
+- Cycle 1 (27): MONITOR-368, MONITOR-369, MONITOR-370, MONITOR-371, MONITOR-376, MONITOR-377, MONITOR-378, MONITOR-379, MONITOR-380, MONITOR-381, MONITOR-383, MONITOR-384, MONITOR-385, MONITOR-386, MONITOR-387, MONITOR-388, MONITOR-389, MONITOR-390, MONITOR-391, MONITOR-392, MONITOR-393, MONITOR-394, MONITOR-395, MONITOR-396, MONITOR-397, MONITOR-398, MONITOR-399
+
+**Run summary:** 19 re-queued (first re-triggers), 48 carried with next_check advanced and backlog flagged, 0 stale flags, monthly cycle skipped (not first Sunday), 3 escalated items confirmed out of rotation, event-driven items untouched. Queue state current as of 2026-07-12.
+
+---
+
+## Intake from 15c — 2026-07-13 (5 items; fresh 2026-07-12 cohort)
+
+MONITOR-436:
+  Date: 2026-07-13 | Source item: ASSUMPTION-446 (ASSUMPTION, stated; QUEUED-EMPIRICAL) | from DISPOSITION-464
+  Statement: Census trend continuity (2483 -> 2567 orphans, no jump) establishes that the basename-only resolver defect was introduced and caught within the 2026-07-12 run; no back-correction of earlier CSV rows is warranted.
+  Why monitoring: 15a Weak / 15b Strong. A PROPORTIONAL resolver defect produces a smooth series by construction, so "no jump" is exactly what the excluded hypothesis predicts — affirming the consequent. Not REVISE only because the convention-level fix is PRESUMPTION-476's (REVISE-213), which governs the whole self-certifying-tooling class; duplicating it here would fragment the fix (DISPOSITION-459 precedent).
+  What would change the disposition: FIRST — read the resolver's git history and DATE the basename-only matching (nearly free; 15b surfaced this test, 14a had not queued it). Predates 07-12 -> claim dead, back-correct. Otherwise the queued dual-mode re-run against the 07-05 snapshot: earlier rows reproduce -> INCORPORATE; they do not -> REVISE.
+  Cadence: Weekly | Priority: Medium-High | Cycle: 0 | Next 15d check: 2026-07-20
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+MONITOR-437:
+  Date: 2026-07-13 | Source item: ASSUMPTION-447 (ASSUMPTION, stated) | from DISPOSITION-465
+  Statement: Bridge/synthesis notes are near-orphans by nature; 42 of 45 at <=2 backlinks is expected steady state, not connectivity failure.
+  Why monitoring: 15a Moderate / 15b Strong. The descriptive half holds (low indegree IS the equilibrium of a preferential-attachment graph; Kleinberg hubs are valuable unpointed-at). The normative half does not: Arora, West & Gerlach 2024 give a CAUSAL result that de-orphanisation raises discovery, and Wikipedia treats the condition as a maintenance defect. "Expected" and "harmless" are different claims.
+  What would change the disposition: the retrieval-mode determination (SYSTEMIC-RISK #2). Embedding-based -> backlink count is the wrong metric, claim fine, INCORPORATE restated. Traversal-based -> the 42 bridge notes are invisible at the moment of need, REVISE. Secondary: BFS reachability of the 45 bridge notes from the top-20 hub set at depths 1-3.
+  Cadence: Weekly | Priority: Medium (upgraded from the item's LOW-MEDIUM — one of two items decided by a single code read) | Cycle: 0 | Next 15d check: 2026-07-20
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+MONITOR-438:
+  Date: 2026-07-13 | Source item: ASSUMPTION-449 (ASSUMPTION, stated) | from DISPOSITION-467
+  Statement: The idealist camp splits on individuation of subjects — Kastrup's dissociated subjects vs. Levin's nested subjects are incompatible mereologies, and Hoffman's composing agents side with Levin, against the bridge long filed as "agreement."
+  Why monitoring: CONTESTED, and the most consequential item of the run. Both directions AGREE the "agreement" label is wrong. They disagree on the replacement. 15b found KASTRUP'S OWN TESTIMONY — an interview, absent from his written corpus — affirming sub-alters, layered internal dissociation, and an explicit "dissociative hierarchy." Kastrup's alters NEST. The dispute is about ontological PRIORITY (what is fundamental), not part-whole structure; the strong "incompatible mereologies" framing misattributes his position. High-stakes + strong evidence both ways -> MONITOR, not INCORPORATE.
+  Interim action (do this regardless): reclassify the bridge to "CONTESTED — priority dispute, not mereological contradiction" (which BOTH searches support). Do NOT route the strong form to the paradigm-shift channel. Log the hierarchies-of-dissociation interview as a key primary source, flagged as absent from the written corpus — very likely why the original capture missed it.
+  What would change the disposition: (a) TEXTUAL — does Levin anywhere assert FUNDAMENTALITY of lower-scale selves, or only scale-relative competency? Latter -> conflict collapses. (b) FORMAL — does Hoffman's join operation have a well-defined inverse (a split theorem)? Invertible -> composition and dissociation are duals and the framing fails outright. (c) BLOCKED ON REVISE-214: the primary-text gate must be passed before any routing.
+  Cadence: Weekly | Priority: HIGH | Cycle: 0 | Next 15d check: 2026-07-20
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+MONITOR-439:
+  Date: 2026-07-13 | Source item: ASSUMPTION-451 (ASSUMPTION, stated; QUEUED-EMPIRICAL) | from DISPOSITION-469
+  Statement: qc_sweep.py's report path keys on the newest pair timestamp and therefore returns 0 across the board — the scripted staleness instrument is fully blind and manual scanning is the sole work source.
+  Why monitoring: 15a Strong (hazard class — vacuity detection: ~20% of specs pass VACUOUSLY on first run, and a vacuous pass ALWAYS indicates a real defect somewhere). 15b Moderate, and it lands on the EVIDENCE not the hypothesis: a 0 return is equally consistent with "blind instrument" and "nothing stale," and the system diagnosed the instrument from its readings rather than its mechanism. MONITOR rather than REVISE precisely because the discriminating test is minutes of work — a REVISE would spend a human review slot on something a fixture settles.
+  What would change the disposition: the queued fixture — one fresh pair + one deliberately stale pair -> invoke report path. Returns 0 -> blindness CONFIRMED, escalate to REVISE and fix. Returns 1 -> claim false, close. Also cite the report code-path line. SEPARATELY: the second clause ("manual scanning is the sole work source") is an unsupported universal inferred from one instrument's failure and should be dropped regardless of the fixture's result.
+  Cadence: Weekly | Priority: Medium | Cycle: 0 | Next 15d check: 2026-07-20
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+MONITOR-440:
+  Date: 2026-07-13 | Source item: PRESUMPTION-475 (PRESUMPTION, unstated; QUEUED-EMPIRICAL) | from DISPOSITION-470
+  Statement: Two same-day censuses of the same vault (bootstrap audit 3,338/2,644/647 vs. weekly agent 3,258/2,567/644) may coexist without reconciliation — each series is presumed valid within itself.
+  Why monitoring: 15a Weak / 15b Strong — and the literature INVERTS the presumption. Two independent same-day enumerations are the most valuable measurement configuration available: differencing them yields the systematic bias (Bland-Altman) AND an estimate of what NEITHER captured (dual-system estimation). The presumption discards both. Damningly, REVISE-209 — issued by this pipeline ONE DAY EARLIER — requires independent corroboration for completeness claims, and here sits an independent corroboration, unexamined, because the two artifacts live in different files. Not a new REVISE only because REVISE-205/209 already own the convention (DISPOSITION-459 precedent).
+  STANDING ESCALATION TRIGGER: run the queued diff. Gap decomposes EXACTLY into named definitional exclusions + resolver differences -> record decomposition, declare a canonical series per downstream consumer, INCORPORATE. ANY unexplained element of the symmetric difference -> ESCALATE TO REVISE IMMEDIATELY: one census is defective and ASSUMPTION-446's resolver defect is the first suspect.
+  Cadence: Weekly | Priority: Medium-High (A-447/A-448's connectivity narrative rides on the weekly-agent series; the bootstrap audit disagrees by ~2.5%) | Cycle: 0 | Next 15d check: 2026-07-20
+  Amendment recorded to REVISE-205: when two independent censuses of the same vault exist, treat them as a DUAL-SYSTEM ESTIMATOR and report the estimated true vault size — information currently discarded every week.
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: MONITORING
+
+
+## 2026-07-16 — MONITOR intake from 15a/15b/15c pipeline run (autonomous)
+
+MONITOR-441:
+  Date: 2026-07-16 | Source item: ASSUMPTION-453 (ASSUMPTION, stated; QUEUED-EMPIRICAL) | from DISPOSITION-474
+  Statement: Both connectivity claims (A-447/A-448) hinge on whether vault retrieval is traversal-based or embedding-based; determining the mode settles both at once.
+  Why monitoring: 15a PARTIALLY-SUPPORTED/Moderate (traversal vs dense retrieval do have materially different reachability — GraphRAG/hybrid-RAG literature) but 15b PARTIALLY-CHALLENGED/Moderate — modern retrieval is frequently hybrid and query-conditioned, so "the mode" may not be a single settleable value and the "one determination discharges two flags" economy may not hold.
+  What would change the disposition: run the proposed BFS-reachability test AND read the retrieval code the thinker agents actually call. Pure single-mode -> settle A-447/A-448 and likely INCORPORATE. Fused vector+graph -> the binary is void; re-open both flags separately (lean REVISE on the "settles at once" claim). This is the cheapest high-value test on the board (SYSTEMIC-RISK #2).
+  Cadence: Weekly | Priority: High | Cycle: 0 | Next 15d check: 2026-07-23
+  PROVENANCE: Origin 14a; Chain [14a -> 15a,15b -> 15c]; Current status: MONITORING
+
+MONITOR-442:
+  Date: 2026-07-16 | Source item: PRESUMPTION-480 (PRESUMPTION, unstated) | from DISPOSITION-479
+  Statement: Captured work is presumed non-perishable — 24 proposals pending since 07-01 (+4), ~29 REVISE flags pooled, no expiry/decay/triage rule; append-only artifacts have no vocabulary for staleness.
+  Why monitoring: 15a Weak (append-only preserves the record) vs 15b Moderate — perishable-inventory / queueing-with-abandonment theory and empirical stale-issue/PR rot establish that the record's VALUE decays even when the record persists; a backlog ordered by filing date works the wrong items first. Challenge outweighs but is not decisive without the empirical re-score.
+  What would change the disposition: re-score a random sample of the 24 pending proposals against their filing-day rationale; report the moot/superseded fraction. A high fraction -> escalate to REVISE (add expiry/decay field + value-based triage).
+  Cadence: Weekly | Priority: Medium-High | Cycle: 0 | Next 15d check: 2026-07-23
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: MONITORING
+
+MONITOR-443:
+  Date: 2026-07-16 | Source item: PRESUMPTION-482 (PRESUMPTION, unstated; QUEUED-EMPIRICAL) | from DISPOSITION-484
+  Statement: The self-awareness pipeline presumes it can fully observe the day it audits; 14a/14b have no measure of their own observational completeness, so a day with four crashed, unreadable runs is described as if the readable records are the whole day.
+  Why monitoring: 15a NO-SUPPORT-FOUND vs 15b Strong (survivorship bias + observability-completeness literature — conclusions from surviving/readable records only are systematically biased). MONITOR rather than REVISE because the corrective is additive instrumentation (a coverage figure), not a redesign. Contributes to SYSTEMIC-RISK #4. Pairs with PREMISE-097 (honest-coverage disclosure).
+  What would change the disposition: compute today's coverage ratio (readable transcripts / total fired runs) and report it as a confidence bound each run. Persistently low or uncomputable coverage -> escalate to REVISE.
+  Cadence: Weekly | Priority: Medium-High | Cycle: 0 | Next 15d check: 2026-07-23
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: MONITORING
+
+MONITOR-444:
+  Date: 2026-07-16 | Source item: PRESUMPTION-483 (PRESUMPTION, unstated; QUEUED-EMPIRICAL) | from DISPOSITION-485
+  Statement: Two monitors agreeing is presumed stronger than one, but the scheduler health check and morning project status both derive "all clear" from the same lastRunAt signal — one blind spot counted twice, not two independent confirmations.
+  Why monitoring: 15a NO-SUPPORT-FOUND vs 15b Strong (Knight & Leveson: shared input destroys independence; even small correlation erases redundancy's reliability gains). The fix begins with an empirical monitor->signal mapping. Contributes to SYSTEMIC-RISK #4.
+  What would change the disposition: map each monitor to the signal it consumes; if multiple "independent" green checks reduce to one signal, escalate to REVISE (require at least one artifact-reading monitor; weight correlated monitors as one).
+  Cadence: Weekly | Priority: Medium | Cycle: 0 | Next 15d check: 2026-07-23
+  PROVENANCE: Origin 14b; Chain [14b -> 15a,15b -> 15c]; Current status: MONITORING
+
+---
+
+## 2026-07-17 — new MONITOR items from 15c (DISPOSITION-490/492/495)
+
+MONITOR-445:
+  Date added: 2026-07-17 | Source item: ASSUMPTION-462 (stated) | Disposition: DISPOSITION-490
+  Statement: The master-wiki narrative "Current status" line can be re-synced independently of the triplet network's actual freshness (frozen at 300/90/50) — staleness addressed at the narrative layer only.
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
+  What would change disposition: shipped freshness-gate -> INCORPORATE; continued concealment -> REVISE.
+  Priority: Medium | Cycle: 0 | Cadence: Weekly | Next 15d check: 2026-07-24
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a,15b -> 15c -> 15d]; Item type=ASSUMPTION
+
+MONITOR-446:
+  Date added: 2026-07-17 | Source item: ASSUMPTION-464 (stated) | Disposition: DISPOSITION-492
+  Statement: Same-day two-agent health contradiction on OpenStory (DB-probe healthy vs delivery down) — a recurring liveness-as-success instance (SYSTEMIC-RISK #4) with no reconciler.
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  What would change disposition: recurrence without reconciler, or real outage masked by green liveness -> REVISE.
+  Priority: Medium-High | Cycle: 0 | Cadence: Weekly | Next 15d check: 2026-07-24
+  PROVENANCE: Origin=14a; Chain=[14a -> 15a,15b -> 15c -> 15d]; Item type=ASSUMPTION
+
+MONITOR-447:
+  Date added: 2026-07-17 | Source item: PRESUMPTION-488 (unstated) | Disposition: DISPOSITION-495
+  Statement: "Healthy" is treated as a system property rather than vantage-relative; OpenStory certified healthy and reported down same-day with no reconciler noticing.
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
+  What would change disposition: masked real outage / repeated unreconciled disagreement -> REVISE; shipped reconciler -> INCORPORATE.
+  Priority: Medium-High | Cycle: 0 | Cadence: Weekly | Next 15d check: 2026-07-24
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c -> 15d]; Item type=PRESUMPTION
+
+MONITOR-448:
+  Date added: 2026-07-18 | Source item: PRESUMPTION-491 (unstated) | Disposition: DISPOSITION-501
+  Statement: "Scheduled job fired" is presumed to equal "intended effect occurred" ("ran on schedule" == "succeeded"); OpenStory reported "refreshed on schedule" while its db has been unwritten since 07-05. A liveness-vs-correctness instance (sibling of MONITOR-446 / SYSTEMIC-RISK #4).
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  What would change disposition: shipped artifact-binding on state-mutating jobs (no-op -> non-zero exit; status readers assert artifact freshness) -> INCORPORATE "success binds to artifact-level evidence, not scheduler firing"; another dead-subsystem-reported-live incident -> REVISE.
+  Priority: Medium-High | Cycle: 0 | Cadence: Weekly | Next 15d check: 2026-07-25
+  PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c -> 15d]; Item type=PRESUMPTION

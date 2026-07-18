@@ -16,8 +16,8 @@ length_ratio_to_target: 0.56
 mind_first_reframe: "The marriage bond is constituted by an act of mutual intentional adoption — two generative models electing to be one — which is why consent, not consummation, makes the marriage."
 central_theme_thread: "Marriage begins not with achieved union but with a vow to pursue it: two perspectives that cannot see the whole elect a shared whole and bind themselves to compute their lives from it together."
 tags: [synthesis, day/279, theme/consent-as-constitutive-act]
-last_qc_at: "2026-07-01T02:25:21"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-12T00:23:45"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 279 — Defining Marriage (Contemporary Parallel)
@@ -32,7 +32,7 @@ The shared inquiry-problem is the **constitution of a real relation by an act**.
 
 ## Resource
 
-The Friston-tradition program supplies the leading move. Tom's PRS-form record of Friston's work (PRS-06 in the Friston-tradition wiki, *multi-agent coherence via mutual modeling*) locates the birth of a dyadic unit at the moment two generative models mutually adopt one another into their predictions — when each begins to model the world *as half of a pair*. That mutual adoption is an *act of joint intention*, not a physical event, which is a strikingly exact naturalistic gloss on consent-*de-praesenti*-makes-the-marriage. The Kastrup-tradition program supplies the metaphysics of how two can be joined while remaining distinct: PRS-02 (*individual identity within monism*) and PRS-25 (*dissociative constructs that are real yet not ultimate*) hold that individuation is a real but soft boundary within one underlying mind, so that two individuals coming into a constituted unity is not the merger of two substances but the partial relaxation of a dissociative boundary. Rohr's PRS-7 (*relationship ontologically prior*) keeps the bond from being a mere add-on. Levin's PRS-32 (*cognition scaling cell→organism*) supplies the lower-scale precedent: a higher individual is constituted when components commit to a shared target, before the organism "behaves."
+The Friston-tradition program supplies the leading move. Tom's PRS-form record of Friston's work (PRS-06 in the Friston-tradition wiki, *multi-agent coherence via mutual modeling*) locates the birth of a dyadic unit at the moment two generative models mutually adopt one another into their predictions — when each begins to model the world *as half of a pair*. That mutual adoption is an *act of joint intention*, not a physical event, which is a strikingly exact naturalistic gloss on consent-*de-praesenti*-makes-the-marriage. The Kastrup-tradition program supplies the metaphysics of how two can be joined while remaining distinct: PRS-02 (*individual identity within monism*) and PRS-25 (*dissociative constructs that are real yet not ultimate*) hold that individuation is a real but soft boundary within one underlying mind, so that two individuals coming into a constituted unity is not the merger of two substances but the partial relaxation of a dissociative boundary. PRS-7 in the Rohr-tradition wiki (*relationship ontologically prior*) keeps the bond from being a mere add-on. PRS-32 in the Levin-tradition wiki (*cognition scaling cell→organism*) supplies the lower-scale precedent: a higher individual is constituted when components commit to a shared target, before the organism "behaves."
 
 ## Solution (proposed, speculative)
 

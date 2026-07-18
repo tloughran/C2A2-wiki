@@ -18,8 +18,8 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (CROSS-027 Kastrup × Friston Markov blanket; line 482 cortical-columns-as-alters)"
 evidence_strength_summary: "Empirical: vagal-tone collapse under isolation (Fredrickson), hemispheric asymmetry under stress (McGilchrist), bioelectric coupling at non-neural scales (Levin). Formal: free-energy minimization under perturbed priors (Friston). Speculative: demonology-as-topology-of-mind-at-large (Kastrup-style alters); the cosmological claim that interfering sub-agents exist by structural necessity. Theological: Wright on second-temple cosmology of the powers; Rohr on the shadow."
 tags: [synthesis, day/101, theme/temptation, theme/perception-as-interface]
-last_qc_at: "2026-07-07T12:21:08"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-16T04:19:39"
+last_qc_outcome: "pass"
 ---
 
 # Day 101 — Satan's Influence (Contemporary)

@@ -16,11 +16,13 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-120 - Who Has Faith - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/120, pars/2, q/4-5]
-last_qc_at: "2026-06-27T08:21:40"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-12T20:23:21"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 120 — Who Has Faith
+
+## Transcript
 
 [00:04] hello my name is Austin Habash the founder of Think Catholic and you're listening to the Summa podcast where we study St Thomas aquanis Summa Theologiae
 

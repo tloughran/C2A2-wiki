@@ -18,7 +18,7 @@ evidence_strength_summary: "'Whatever is received is received according to the m
 mind_first_reframe: "The risen Christ's manifestation is read through reception-by-mode: what each witness can receive is set by the generative model and interface they bring, so the same risen reality is veiled to the Emmaus pair and disclosed to the believing — perception as inference, individuated by perspective; and the resurrection's causality propagates from the nearest node outward, the new attractor realized first in the body united to the Word and through it in all."
 central_theme_thread: "Aquinas's own axiom — received according to the mode of the receiver — IS the project's central claim in the Summa's voice: conscious agents are individuated by the limitations of their perspective, and even the risen Christ is disclosed only as far as each limited mode can receive, which is why the unity must still be worked out, in fear and trembling, from within each perspective's reach."
 tags: [synthesis, day/240, theme/reception-by-mode]
-last_qc_at: "2026-06-27T22:26:28"
+last_qc_at: "2026-07-11T20:21:49"
 last_qc_outcome: "pass"
 ---
 

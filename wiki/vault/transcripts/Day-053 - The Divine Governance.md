@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-053 - The Divine Governance - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-24T08:20:19"
+last_qc_at: "2026-07-12T02:29:16"
 last_qc_outcome: "pass"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/053, pars/I]

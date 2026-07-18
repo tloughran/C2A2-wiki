@@ -16,8 +16,8 @@ evidence_strength_summary: "Nested-agency / acting-as-instrument is formal (Fris
 mind_first_reframe: "The minister acts in persona Christi as a nested, Markov-blanketed sub-agent through which a larger-scale agency acts, and ex opere operato is the robustness of a target-anchored outcome to the instrument's own defects."
 central_theme_thread: "The finite agent's act is efficacious not by its own sufficiency but by its enrollment in a larger agency, so loving unity is realized without the whole being hostage to any single limited node."
 tags: [synthesis, day/253, theme/distributed-agency-one-act]
-last_qc_at: "2026-07-07T22:29:25"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-11T10:32:48"
+last_qc_outcome: "pass"
 ---
 
 # Day 253 — Eucharistic Minister (Contemporary Parallel)

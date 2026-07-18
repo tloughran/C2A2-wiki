@@ -17,7 +17,7 @@ evidence_strength_summary: "The third temptation as defection-from-the-whole ~ L
 mind_first_reframe: "Temptation is read as the adversarial probe inviting a perspective to defect from the whole it belongs to; teaching is read as its constructive inverse — the calibrated disclosure of the whole to perspectives that can only receive it in doses."
 central_theme_thread: "Both questions are the central claim under stress-test: the devil's third offer is the refusal of perspective-limitation (seize the whole now, on the self's terms), while parables, Jews-first ordering, and the living page are limitation honored — the whole transmitted at the rate limited perspectives can compute."
 tags: [synthesis, day/233, theme/defection-and-calibrated-disclosure]
-last_qc_at: "2026-06-27T16:20:03"
+last_qc_at: "2026-07-17T18:26:25"
 last_qc_outcome: "pass"
 ---
 

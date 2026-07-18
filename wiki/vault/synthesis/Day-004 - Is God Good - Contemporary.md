@@ -80,14 +80,14 @@ karpathy_wiki_sources:
   - "wiki/traditions/fredrickson/wiki.md (positivity resonance — desirability as connective dynamics)"
   - "wiki/traditions/stump/wiki.md (PRS-04 final-causality interlocution; not metaphysical authority)"
   - "wiki/master/cross_program_index.md (CROSS-001 substrate-independence)"
-  - "wiki/master/paradigm_flags.md (FLAG-005 Stump × Levin; FLAG-003 Kastrup × Friston)"
+  - "wiki/master/C2A2_master_wiki.md (FLAG-005 Stump × Levin — explanatory bridge, highest priority; FLAG-003 Kastrup × Friston — formal-equivalence candidate)"
   - "rohr (canonical works — wiki node planned): *The Universal Christ* — divine pattern radiating into matter from creation; *Falling Upward* — the second-half map to perfection"
   - "wright (canonical works — wiki node planned): *Surprised by Hope* — the new-creation reading of attaining-the-end; covenant inclusion as the *final* step in the perfection map"
   - "Lateran IV (1215) + Benedict XVI Regensburg (2006) — *unlikeness remains infinitely greater than likeness, yet not to the point of abolishing analogy* — the precise statement of the central theme"
 mind_first_reframe: "Being-equals-goodness-equals-desirability (Q.5 a.1) translates directly: under mind-monism the ontological primitive is being-of-experiencing, and *good* is what conditioned modes of experience pull toward as their computational telos. The 'good is diffusive of itself' (Q.5 a.4) becomes Friston's expected-free-energy gradient with prior preference baked in, Levin's bioelectric field recruiting cells to the goal-morphology, and Rohr's Universal Christ radiating divine pattern into matter from creation. The Lateran IV / Regensburg analogy — unlikeness infinitely greater than likeness yet not abolishing analogy — is the precise classical formulation of the perspective-limited participation the central theme names."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; *salvation* is the step-by-step map to perfection (Q.6 a.3) — existence given, accidental perfections computed under limited resources, end attained as loving union. The anti-pantheism move (Q.6 a.4) — we are created as distinct, not as parts — is what protects mind-monism from the pantheist collapse: alters are genuinely individuated even though the substrate is one."
-last_qc_at: "2026-07-05T23:56:50"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-13T02:27:44"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/004, theme/goodness, theme/being-and-good, theme/beauty, theme/analogy-of-being, theme/anti-pantheism]
 
 ---

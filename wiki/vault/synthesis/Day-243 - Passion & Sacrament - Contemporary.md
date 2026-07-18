@@ -16,8 +16,8 @@ length_note: "Concise by design — a single-focus III Q.60-62 (sacramental powe
 mind_first_reframe: "The Passion's efficacy reaches the present as form-borne causation — a determinate saving pattern propagated through sensible instruments that limited agents can engage because the interface is their only access."
 central_theme_thread: "Sacraments meet perspective-limited agents at the limit of their perception, giving a sensible foothold for the resource-bounded computation toward loving unity."
 tags: [synthesis, day/243, theme/causality-across-time]
-last_qc_at: "2026-06-25T18:27:12"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-11T08:21:47"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 243 — Passion & Sacrament (Contemporary Parallel)
@@ -40,7 +40,7 @@ Rohr supplies the theological ontology: if the Universal Christ is already the p
 
 ## Solution (proposed, speculative)
 
-The contemporary-parallel response: **the Passion's efficacy reaches the present as form-borne causation — a determinate saving pattern propagated through sensible instruments that limited agents can engage because the interface is the only access they have.** This *shares* with Aquinas the instrumental realism (the sign truly transmits, does not merely remind). It *reframes* instrumentality as information/form-propagation rather than Aristotelian moved-mover mechanics. It *marks* the limit: Levin's form-causation is empirical in biology, and its transfer to a singular salvific event is analogical, not demonstrative; the claim that the Passion *is* such a form is theological (Wright/Rohr ground truth).
+The contemporary-parallel response: **the Passion's efficacy reaches the present as form-borne causation — a determinate saving pattern propagated through sensible instruments that limited agents can engage because the interface is the only access they have.** This *shares* with Aquinas the instrumental realism (the sign truly transmits, does not merely remind). It *reframes* instrumentality as information/form-propagation rather than Aristotelian moved-mover mechanics. It *marks* the limit: Levin's form-causation is empirical in biology, and its transfer to a singular salvific event is analogical, not demonstrative; the claim that the Passion *is* such a form is theological, carried by Wright's account of the Passion as once-for-all historical event and Rohr's Universal Christ.
 
 ## The central-theme thread
 
@@ -51,7 +51,7 @@ Why sensible signs? Because agents are individuated by perspective-limitation an
 - **Levin PRS-01 + PRS-08 (morphogenetic control; agents in morphospace)** — *empirical-in-domain, analogical transfer.* Form as real cause carried across substrate and time.
 - **Friston PRS-07 (FEP substrate-independence)** — *formal.* The operative regularities are substrate-independent, as instrumental causality requires.
 - **Hoffman PRS-03 (perception fitness-tracking)** — *formal-speculative.* Why the channel must be sensible: the interface is the only access limited agents have.
-- **Rohr (Universal Christ in matter)** — *theological / contemplative.* Matter natively able to bear the saving form. Primary on sacraments.
+- **Rohr (Universal Christ in matter)** — *theological / contemplative.* Matter natively able to bear the saving form.
 - **Wright (the Passion as historical, world-changing event)** — *theological, high within method.* Guards the realism of the once-for-all event the signs transmit.
 
 ## Where this leaves us

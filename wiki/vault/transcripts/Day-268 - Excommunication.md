@@ -15,7 +15,7 @@ fetched_at: 2026-06-18
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-268 - Excommunication - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-27T04:20:20"
+last_qc_at: "2026-07-10T00:21:43"
 last_qc_outcome: "pass"
 tags: [summa, day/268, pars/supplement, q/21-22]
 ---

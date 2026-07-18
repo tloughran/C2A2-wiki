@@ -15,8 +15,8 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-254 - The Sacrament of Penance - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-06-17T20:23:12"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-11T10:32:48"
+last_qc_outcome: "pass"
 tags: [summa, day/254, pars/3, q/84]
 ---
 

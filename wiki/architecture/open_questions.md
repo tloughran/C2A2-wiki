@@ -1273,3 +1273,86 @@ OPEN-115:
     Transform at each step:
       14a: Raised from the pipeline's third-consecutive deferral report and its explicit remedy recommendation. [stated evidence]
     Current status: OPEN
+
+OPEN-116:
+  Date raised: 2026-07-08
+  Question: Should the system's fixed re-check cadences become load- and change-rate-adaptive? On the same day, the reviewer's 7-day staleness rule produced a zero-yield re-review of six unchanged pairs while the 15d weekly re-trigger cadence overflowed pipeline capacity for a fourth consecutive run (116/123 unsearched) — two fixed cadences failing in opposite directions. Candidate mechanisms: yield-per-recheck tracking with interval widening, per-item TTLs by change-rate, or a capacity-aware cap on re-triggers per run.
+  Context: c2a2-lit-search-pipeline and Summa-commentary-reviewer runs, 2026-07-08; generalizes the cadence half of OPEN-115 beyond 15d.
+  Related: ASSUMPTION-429, ASSUMPTION-430; PRESUMPTION-459, PRESUMPTION-462; OPEN-115
+  Status: OPEN — needs a scheduling-policy decision (Tom or master agent)
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14b: Raised from the opposite-direction cadence failures observed in the same day's transcripts. [inferred]
+    Current status: OPEN
+
+OPEN-117:
+  Date raised: 2026-07-09
+  Question: Which QUEUED-EMPIRICAL convention stands? The pipeline surfaced a fork: 18 older [QUEUED-EMPIRICAL] items (A-392..424 range) are held unsearched by convention (empirical tests only), while the fresh cohorts' 4 QUEUED-EMPIRICAL items carrying explicit "literature —" clauses WERE lit-searched this run with empirical tests preserved as pending. Either convention is defensible; running both silently is not. Relatedly: the backlog count discrepancy (reported 116 vs measured 110) needs a one-time reconciliation to rule out item loss.
+  Context: c2a2-lit-search-pipeline run tally, 2026-07-09 — "Tom should confirm which convention stands: QUEUED-EMPIRICAL = never lit-search, or = lit-search the literature clause while the empirical test pends."
+  Related: ASSUMPTION-433; PRESUMPTION-466; OPEN-115 (backlog governance); the 18 held items
+  Status: OPEN — needs a convention decision (Tom or master agent)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the pipeline's explicitly surfaced convention fork and count discrepancy. [stated evidence]
+    Current status: OPEN
+
+OPEN-118:
+  Date raised: 2026-07-11
+  Question: How should the Summa PRS citation-mislabel cluster be repaired and bounded? Specifically: (a) approve the batch-grep sweep over day-by-day repair; (b) does the same-class Day-23 precedent justify a full-vault writer-pass audit; and (c) given that one instance is a gloss error a string grep may miss (Stump PRS-09 read as PRS-11 content), what counts as the cluster being closed?
+  Context: Summa commentary reviewer escalation, 2026-07-11 — Friston PRS-02 cited for PRS-04/PRS-03 content (Days 161–163), Stump PRS-09 glossed as second-personal knowing (Day 160). Flagged as a cluster for Tom's approval in the evening summary.
+  Related: ASSUMPTION-443; PRESUMPTION-472; ASSUMPTION-442 / PRESUMPTION-471 (degraded-mode QC leaves sibling days id-unverified)
+  Status: OPEN — needs Tom's approval of repair approach and audit scope
+  Update 2026-07-12: closure criterion (c) sharpened by REVISE-208 (DISPOSITION-461) — "cluster closed" = grep yield PLUS a sampled semantic read showing negligible residue, both passes on the same day-range; same-day escalation adds a related instance: Friston PRS-10 "active inference under unpayable debt" (Day 158) has no home id anywhere in the wiki.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: OPEN-QUESTION
+    Transform at each step:
+      14a: Raised from the commentary-reviewer escalation and the evening summary's explicit request for approval. [stated evidence]
+    Current status: OPEN
+
+OPEN-119:
+  Date raised: 2026-07-13
+  Question: What is the scheduled fleet's model-quota budget, who owns it, and what should be shed when it runs out? Today the evening cowork→chat delivery — the only channel that carries the day's work to Tom — died on "You're out of usage credits" after ~36 other tasks had already run. There is no budget, no back-pressure, no exhaustion alarm, and no precedence ordering: the fleet's producers outbid its one delivery path, and the watchdog reported the day healthy.
+  Raised by: 14b (PRESUMPTION-478), from the 2026-07-13 evening cowork→chat transcript
+  Why it matters: The fleet has grown to ~37 recurring tasks against a quota that has not grown with it. Exhaustion is silent, it lands on whatever runs last (the evening delivery paths), and no instrument in the system detects it. Every remedy already queued for Tom — REVISE-198's Gmail fallback, REVISE-199's ack+escalation — assumes the failing channel can still transmit; a quota failure defeats all of them.
+  What would answer it: (a) the actual daily credit draw, per task, from the agentic cost tracker's series, against the account's ceiling; (b) a decision on precedence — which tasks may be shed, and in what order, when the budget nears exhaustion; (c) an alarm path that does not itself require credits (e.g. a local write plus the morning system-health read).
+  Related items: PRESUMPTION-478; PRESUMPTION-479 (the second, independent cause of the sync outage); ASSUMPTION-444 (CONTESTED — MONITOR-434); ASSUMPTION-454 (the watchdog's own blind spot); REVISE-198, REVISE-199 (both HIGH, both unimplemented)
+  Status: OPEN — requires Tom's decision (budget ownership and shed order are policy, not engineering)
+  Provenance:
+    Origin: 14a (raised from 14b's PRESUMPTION-478)
+    Chain: [14b -> 14a]
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Recorded from the credit-exhaustion failure surfaced in today's transcripts; no prior open question covers the quota substrate. [stated event, inferred question]
+    Current status: OPEN
+
+OPEN-120:
+  Date raised: 2026-07-15
+  Question: Should a flag or paradigm-shift watch (e.g., FINDING-048 / FLAG-016) carry an evidence-freshness gate — a marker that the ingestion path feeding it is current — so a watch cannot sit "live" while the deposits that would confirm or kill it go un-ingested? Today the master wiki has been silent since 07-09 and the 07-10→07-14 Levin deposits that feed FINDING-048 appear un-ingested, yet the flag remains an active watch with no staleness signal.
+  Origin: surfaced by 14a (ASSUMPTION-460) and 14b (PRESUMPTION-484) on 2026-07-15; escalates ASSUMPTION-455.
+  Why it needs Tom: this is a design decision about whether flags/findings should self-report the freshness of their upstream evidence, and about who owns re-priming the master-wiki ingestion that has now been stalled six days.
+  Related: ASSUMPTION-455, ASSUMPTION-460, PRESUMPTION-484, FINDING-048, FLAG-016; the firing-health family.
+  Status: OPEN — awaiting Tom
+
+OPEN-121:
+  Date raised: 2026-07-16
+  Question: What closes the autonomous fleet's persistence loop when no human is at the Mac? Today the c282 wiki daily run could not commit or push (the sandbox mount denies .git object writes and holds no push credentials), and per the constitutional No-Blind-Push rule it left everything "staged for the Mac." On an 11-day autonomous stretch, "staged for the Mac" is functionally "not persisted." Should there be a credentialed durable-write path, a review-and-commit queue, or a bounded auto-commit lane that preserves No-Blind-Push safety without requiring a synchronous human — and who is accountable when staged work accumulates unattended (today: this run's outputs plus a ~470-file pre-existing Summa vault diff)?
+  Origin: surfaced by 14a (ASSUMPTION-463) and 14b (PRESUMPTION-487) on 2026-07-16.
+  Why it needs Tom: it is a governance + architecture decision about how autonomous outputs reach the durable store, and about the human bottleneck the No-Blind-Push rule silently assumes will be staffed. Distinct from OPEN-119 (quota/precedence, a transmission problem) and OPEN-120 (evidence-freshness, an ingestion problem) — this is a persistence problem.
+  Related: ASSUMPTION-463, PRESUMPTION-487, PRESUMPTION-489, No-Blind-Push constitutional rule; the "autonomous run cannot self-complete" family (login/quota/connection/persistence).
+  Status: OPEN — awaiting Tom
+
+OPEN-122:
+  Date raised: 2026-07-17
+  Question: How should the fleet guarantee execution-context parity between attended-Mac runs and scheduled-sandbox runs — for path resolution, credentials, and file locks? Today two independent scheduled agents failed for context-mismatch reasons: the metabolism regen resolved `~/` to the sandbox home rather than the Mac mount and could not find the live db (ASSUMPTION-466), and the c282 daily run's Phase 6 was blocked by a stale `.git/index.lock` the sandbox mount could not remove (ASSUMPTION-465). Both are instances of a script that behaves correctly when run by a human on the Mac and incorrectly when run headless in the sandbox. Should scripts resolve absolute/configured paths instead of `~/`, run under a credentialed environment, and serialize or isolate git access — and who owns certifying that a scheduled job's runtime context matches the context it was written for?
+  Origin: surfaced by 14a (ASSUMPTION-465, ASSUMPTION-466) and 14b (PRESUMPTION-490) on 2026-07-17.
+  Why it needs Tom: it is an infrastructure decision about how autonomous jobs are given a runtime environment equivalent to the attended one; distinct from OPEN-121 (who pushes staged work) — this is about whether the job can even produce correct work headless in the first place.
+  Related: ASSUMPTION-465, ASSUMPTION-466, PRESUMPTION-490, OPEN-121, the "autonomous run cannot self-complete" family.
+  Status: OPEN — awaiting Tom

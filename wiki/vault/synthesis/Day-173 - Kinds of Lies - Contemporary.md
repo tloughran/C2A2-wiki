@@ -18,8 +18,8 @@ evidence_strength_summary: "Deception/honest-signaling dynamics are empirical/ga
 mind_first_reframe: "Speech is the channel through which perspective-limited agents pool what only they can see, so a lie is the deliberate corruption of that shared signaling channel — and its gravity scales with the harm that corruption does to the cooperative model."
 central_theme_thread: "If loving unity is computed by agents pooling what each can see, truthful speech is the medium of the computation and the lie its sabotage; the hypocrite is a corrupted node whose every output must be discounted and who risks losing the self-knowledge needed to receive correction."
 tags: [synthesis, day/173, theme/deception-gradient, theme/hypocrisy, q/110, q/111]
-last_qc_at: "2026-07-08T06:27:53"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-12T06:32:11"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 173 — Kinds of Lies (Contemporary)
@@ -42,7 +42,7 @@ A community of limited agents can only approximate the whole by pooling perspect
 
 **Hoffman** (PRS-04 in the Hoffman-tradition wiki) gives a careful boundary. Interface theory holds that perception *normally* decouples appearance from underlying reality — fitness-tuned icons rather than truth. But the lie is a different thing: not the species-level interface doing its adaptive work, but a *deliberate* decoupling of one's own signal from one's own state, aimed at another's model. The contrast sharpens what is wrong in lying: it is the weaponizing, against a fellow agent, of the very gap between appearance and reality that the interface ordinarily manages honestly.
 
-**Stump** enters as Thomistic interlocutor: a lie is a betrayal of the second-personal relationship, a refusal to let oneself be truly known by the one addressed; hypocrisy is the counterfeit of personal presence — offering a self that is not there to be known.
+**Stump** enters here: a lie is a betrayal of the second-personal relationship, a refusal to let oneself be truly known by the one addressed; hypocrisy is the counterfeit of personal presence — offering a self that is not there to be known.
 
 **Wright** grounds the scriptural form: truth as covenant faithfulness, and Jesus' sharpest denunciations reserved precisely for hypocrisy — the "whitewashed tombs" of Matthew 23, beautiful in signal and corrupt in state. **Rohr** gives the depth reading: hypocrisy is not merely occasional but structural — the False Self, the performed identity that every agent is tempted to mistake for itself. The contemplative path is the slow exposure of that performance and the recovery of the True Self that has nothing to hide.
 

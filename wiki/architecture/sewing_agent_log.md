@@ -473,3 +473,54 @@ cd "wiki/synthesis" && find . -name "*_bridge.md" -size 0 -delete
 4. **Dense Levin cluster this week:** three same-window Levin/Fields papers (embedding-space remapping, cognition spaces, plus the Friston attractor paper) all point at a Levin×Friston "error-minimization over a representational manifold" convergence. Bridged (friston_levin, twice) and flagged for master-agent: this may warrant a standalone synthesis page rather than a bridge note, if Tom wants to promote it.
 
 *Autonomous scheduled run. Append-only; no deletions. All additions italic-datestamped 2026-07-05.*
+
+---
+
+## Run: 2026-07-12 (Sunday, automated)
+
+**CSV row appended:** `2026-07-12,2567,644,47,3258` (grep-guarded; no prior 2026-07-12 row existed).
+
+**Census note (method, fail-loud):** the link resolver was found to be resolving wikilinks by *basename only*. The vault's links are overwhelmingly path-form (`[[traditions/friston/wiki]]`), so basename-only resolution was mis-scoring every per-tradition hub page as an orphan. Resolution is now path-aware with basename fallback. The numbers above use the **prior census definition** (all dirs except `architecture/metrics/` and `review/archive/`) so the series stays comparable; they sit on the established trend (2483 → 2567 orphans) rather than jumping, which suggests prior runs resolved paths correctly and the defect was introduced this run and caught before it reached the CSV. No back-correction of earlier rows is warranted.
+
+**Pages processed (10)** — all 0-backlink, all in `inbox/proposals/pending/`, append-only. This week's fresh proposal batch (2026-07-06 → 2026-07-12). The five 07-01→07-05 proposals already carry Agentic Calls from last run and were correctly skipped.
+
+| Page | backlinks before→after | calls |
+|---|---|---|
+| 2026-07-12_rohr_beatitudes-week-one-weekly-summary | 0→0* | Friston, Fredrickson, Wright, Loughran |
+| 2026-07-12_wright_ask-ntw-everyday-work-waiting-for-return | 0→0* | Stump, Levin, Loughran |
+| 2026-07-11_wolfram_history-qa-june17-idea-uptake | 0→0* | Carroll, Arkani-Hamed, Loughran, Stump |
+| 2026-07-10_carroll_mindscape-360-berman-nature-cognition | 0→0* | McGilchrist, Fredrickson, Friston |
+| 2026-07-09_stump_infused-virtues-new-blackfriars | 0→0* | Friston, Loughran, Fredrickson |
+| 2026-07-08_kastrup_levin-conversation-nested-subjects | 0→0* | Levin, Kastrup, Hoffman |
+| 2026-07-08_mcgilchrist_without-religion-no-future | 0→0* | Kastrup, Stump, Rohr, Loughran |
+| 2026-07-07_hoffman_startalk-evolution-reality | 0→0* | Carroll, Arkani-Hamed, Kastrup |
+| 2026-07-06_friston_active-inference-artificial-reasoning | 0→0* | Levin, Loughran, Wolfram, Hawkins |
+| 2026-07-06_levin_aging-goal-directedness-bioelectricity | 0→0* | Friston, Loughran, Kastrup, McGilchrist |
+
+(*Agentic calls are routing requests asking named agents to add reciprocal backlinks; inbound counts do not rise until those agents act.)
+
+**Deferred (1):** `2026-07-06_levin_multi-scale-longevity.md` — held to respect the 10-page cap. It is the companion preprint of the aging talk (PROP-2026-07-06-001) that WAS processed, and its cross-tradition signals (Friston nested Markov blankets; Loughran pattern-persistence-through-substrate-turnover) overlap it heavily. Queue first next run; its distinct content is the Ship-of-Theseus/species-identity argument, which the aging talk does not carry.
+
+**Agentic calls injected: 35** — Loughran ×7, Friston ×4, Kastrup ×4, Fredrickson ×3, Stump ×3, Levin ×3, Carroll ×2, Arkani-Hamed ×2, McGilchrist ×2, Wright ×1, Hoffman ×1, Rohr ×1, Wolfram ×1, Hawkins ×1. Three calls initially failed the "cites a specific PROP/PRS/wikilink" check and were rewritten before close rather than shipped as boilerplate.
+
+**Bridge notes written: 24** — 6 zero-byte stubs FILLED, 7 CREATED, 11 APPENDED.
+
+- FILLED: `carroll_wolfram` (Wolfram's string-theory confirmation verdict applies symmetrically to Wolfram Physics — closes the Active question in `master/cross_program_index`), `friston_stump` (quiescence as precision withdrawal), `friston_loughran` (epistemic value over a *rival's* model = second-first-language mechanism), `friston_wolfram` (expected-free-energy gradients vs. rulial paths), `loughran_stump` (second person as the unit of formation), `loughran_wright` (building for a telos one does not complete)
+- CREATED: `carroll_mcgilchrist` (Berman's ART duality = McGilchrist's two attentional modes, reached with *no* hemispheric commitments), `carroll_fredrickson` (winter-walk result: broadening with positive affect subtracted), `carroll_friston` (compressibility as cheap prediction), `fredrickson_rohr` (the weeping mode: a *broadening* negative affect), `friston_rohr` (poverty of spirit as precision withdrawal; the Beatitudes' order as control flow), `levin_wright` (building for a goal you cannot represent: cells and vocations), `arkanihamed_hoffman` ("spacetime is doomed" — one slogan, two evidence bases, probably a homonym)
+- APPENDED: `kastrup_levin` (nested subjects vs. dissociative boundaries — the week's highest-value item), `hoffman_kastrup` (agents that compose vs. alters that dissociate — the standing "idealism bridge" rests on a shared negation and hides an incompatible mereology), `carroll_hoffman`, `arkanihamed_wolfram`, `kastrup_mcgilchrist`, `mcgilchrist_stump` (a genuine *conflict*, named rather than smoothed), `mcgilchrist_rohr`, `friston_levin` (aging as precision decay), `levin_loughran` (atavistic dissociation as a decoherence metric for traditions), `stump_wright`, `wright_rohr`
+
+**Verification (fail-loud):** 10/10 pages have exactly one `## Agentic Calls` section, intact YAML frontmatter, and the 2026-07-12 datestamp. All 35 calls cite a specific PROP id, PRS candidate, or wikilink (re-checked after the 3 rewrites). All 24 bridge files non-empty and datestamped. CSV not double-written. Append-only throughout; nothing deleted or overwritten; no probe/test files created.
+
+**Worth Tom's attention:**
+
+1. **Two genuine paradigm-boundary disagreements surfaced this week, both inside the idealist camp.** (a) Kastrup vs. Levin, on record (PROP-2026-07-08-002): are subjects *nested* or *dissociated*? Both accept idealism; the mereologies are incompatible. (b) The same week's Hoffman capture (PROP-2026-07-07-001) shows Hoffman's conscious agents *composing* — which puts him with Levin and against Kastrup, on a bridge the wiki has been filing under "agreement" for months. This is exactly the rival-but-adjacent contact C2A2 is built to detect, and it arrived unprompted. Recommend routing to the master agent as a paradigm-shift candidate on the individuation-of-subjects question.
+
+2. **Levin×Friston has outgrown a bridge note.** Third consecutive week of convergent material; this week Levin says anatomical homeostasis "is an error minimization scheme" in his own voice and proposes aging as set-point blurring — i.e. precision decay. `friston_levin_bridge.md` is now 8.2KB+ and carrying four distinct claims. Recommend promotion to a standalone synthesis page. Flagged last run too; repeating because the case is stronger, not weaker. **The reverse-direction finding is the interesting one:** active inference has no fatigue term and cannot obviously derive why a well-fitted model degrades once its goal is met (Levin's noise-free simulation does). If that holds, aging is evidence *about* FEP rather than an application of it.
+
+3. **Metric inflation — third consecutive flag, still unactioned.** The 2567 orphan count is inflated by machine dumps under `architecture/lit_search_results/` and `architecture/daily_sync/`. Measured both ways this run: full census 3258 pages / 2567 orphans; excluding those two dirs, **1419 pages / 728 orphans**. The real orphan picture is roughly a quarter of what the series reports. Still report-only — changing the census definition needs your sign-off, and the series would need a break-marker.
+
+4. **13 zero-byte `*_bridge.md` stubs remain** (down from 19; this run filled 6). Ten of the thirteen are `*_loughran_*` or `loughran_*` pairs, which suggests the stub set was scaffolded from a full pairwise matrix and never populated. To clear: `cd "wiki/synthesis" && find . -name '*_bridge.md' -size 0 -delete`
+
+5. **Prior-run litter is gone** — `synthesis/__unlinktest_maUx.md` no longer present. Thank you; nothing outstanding on that.
+
+*Autonomous scheduled run. Append-only; no deletions. All additions italic-datestamped 2026-07-12.*

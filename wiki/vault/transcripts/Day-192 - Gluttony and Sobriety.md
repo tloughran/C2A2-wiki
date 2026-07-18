@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-192 - Gluttony and Sobriety - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/192, pars/II, q/148]
-last_qc_at: "2026-07-08T12:21:50"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-16T16:19:27"
+last_qc_outcome: "pass"
 ---
 
 # Day 192 — Gluttony & Sobriety

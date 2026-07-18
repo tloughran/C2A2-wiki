@@ -16,8 +16,8 @@ length_note: "Compact-by-design: III Q.70 (baptism/circumcision continuity) rend
 mind_first_reframe: "Baptism-replacing-circumcision is reframed as a faithful structural revision of a covenant community's generative model — the deep prior (membership through faith in Christ) is conserved while the tracking sign is reconfigured — so the earlier sign is fulfilled, not falsified."
 central_theme_thread: "A tradition that revises its signs while conserving its telos is the social-temporal form of perspective-limited guidance: no generation perceives the whole, so the community computes toward loving unity across acts of an unfinished drama, each revision a better-resourced approximation."
 tags: [synthesis, day/247, theme/sign-revision-across-covenants]
-last_qc_at: "2026-06-30T06:25:59"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-11T10:31:37"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 247 — Baptism & Circumcision (Contemporary Parallel)
@@ -34,7 +34,7 @@ The shared inquiry-problem: **how can the model itself be revised — not just b
 
 Friston supplies the formal move. In Tom's PRS-form record of Friston's program, PRS-04 (the organism as an active modeler) includes revision not only of estimates within a generative model but, at the limit, *structural* revision of the model — a reconfiguration that preserves the system's deep priors (its preferred states) while changing the surface variables through which it tracks the world. Baptism-replacing-circumcision is, formally, a structural model revision that conserves the deep prior (covenant membership, faith in Christ) while changing the tracking sign.
 
-Wright is the theological ground truth and the closest fit. His five-act hermeneutic and "faithful improvisation" describe precisely a community that *extends* its founding story into new territory, acting consistently with the trajectory while responding to what the earlier authors could not anticipate. His new perspective on Paul reads the circumcision-to-baptism transition as covenant continuity, not supersession-by-rejection. Rohr's order-disorder-reorder names the same arc: a received order passes through crisis into a deeper reorder that preserves what was true.
+Wright is the closest fit. His five-act hermeneutic and "faithful improvisation" describe precisely a community that *extends* its founding story into new territory, acting consistently with the trajectory while responding to what the earlier authors could not anticipate. His new perspective on Paul reads the circumcision-to-baptism transition as covenant continuity, not supersession-by-rejection. Rohr's order-disorder-reorder names the same arc: a received order passes through crisis into a deeper reorder that preserves what was true.
 
 The *form* of this analysis — a tradition as a narrative of Problems, Resources, and Solutions that progresses rationally — is **Tom's** PRS framework, lineage Kuhn (solved problem as unit of progress) + MacIntyre (traditions as P/R/S narratives) + Levin via William James. It is cited here as Tom's re-description, not as any thinker's self-account.
 
@@ -49,7 +49,7 @@ The project holds that limited agents need guidance from those who perceive more
 ## Bridges
 
 - **Friston PRS-04 (active modeler; model revision)** — *formal.* Structural revision conserving the deep prior while changing surface signs.
-- **Wright (faithful improvisation; new perspective on Paul)** — *theological, high within method.* Covenant continuity-with-revision; primary voice here.
+- **Wright (faithful improvisation; new perspective on Paul)** — *theological, high within method.* Covenant continuity-with-revision.
 - **Tom's PRS framework (Kuhn + MacIntyre + Levin-via-James)** — *methodological lens, authored by Tom.* Tradition as rational P/R/S progress — cited by direction-of-authorship.
 - **Rohr (order-disorder-reorder)** — *theological / contemplative.* The crisis-and-reorder arc that preserves prior truth.
 - **Stump (sacraments of the old and new law)** — *theological-philosophical.* Interlocutor on efficacy across covenants.

@@ -25,3 +25,17 @@ Carroll's MWI and Hoffman's QIT make a single shared claim — that the measurem
 - The Carroll agent should ingest the Prentner paper and produce a Carroll-side response — does QIT meet the Bayesian theory-confirmation criterion? If not, what would it need to show?
 - The Hoffman agent should ingest the paper and consolidate it into the conscious-agent program PRSs as a content-significant 2026 advance (it is the most significant formal advance since *Fusions of Consciousness*, 2023).
 - The pattern detector should add this paper to the active list of "consciousness-first vs. physicalist programs in productive conflict" alongside the Carroll × Kastrup tension already tracked.
+
+
+---
+
+## ITP under physics push-back
+*Sewing Agent, 2026-07-12*
+
+**Orphaned page:** `inbox/proposals/pending/2026-07-07_hoffman_startalk-evolution-reality.md` (PROP-2026-07-07-001)
+
+**Why it sits at this intersection:** The StarTalk appearance is the wiki's first capture of Hoffman defending fitness-beats-truth and 'spacetime is not fundamental' to a working astrophysicist rather than to a sympathetic philosophy audience. The corpus holds a great deal of ITP-internal exposition and very little ITP under adversarial cross-disciplinary pressure. The novelty is the format, not the theory -- which is why the proposal rates it Medium confidence and why it is nonetheless worth ingesting.
+
+**Synthesis claim:** Fitness-beats-truth is a claim that should be assessable by Carroll's own Bayesian confirmation standard, and the standard cuts in an awkward direction: FBT is a *theorem about evolutionary game models*, and its extension to the claim that human perception is non-veridical about spacetime requires auxiliary assumptions (that the relevant fitness landscapes resemble the modeled ones) that carry most of the empirical weight and receive the least defense. The theorem is secure; the inference from it is where the priors live.
+
+**Open question the wiki cannot yet answer:** What would Hoffman accept as disconfirmation of FBT-as-applied-to-humans? Under a Bayesian standard a theory earns credence by risking it, and the wiki has no record of Hoffman naming an observation that would lower his. Tyson's push-back is the closest the corpus comes; extracting what his objections actually were, and whether the answers survived, is the outstanding task on this bridge.

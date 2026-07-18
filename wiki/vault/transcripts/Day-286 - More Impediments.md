@@ -16,8 +16,8 @@ fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-286 - More Impediments - Contemporary]]"
 tags: [summa, day/286, pars/suppl, q/57-58]
-last_qc_at: "2026-06-23T16:24:12"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-10T08:21:09"
+last_qc_outcome: "pass"
 ---
 
 # Day 286 — More Impediments

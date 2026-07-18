@@ -2222,3 +2222,64 @@ PREMISE-094:
 ## 2026-07-06 — Monthly INCORPORATED-premise re-check results (15c; c2a2-lit-search-pipeline)
 
 All three due re-checks RE-CONFIRMED (no premise re-opened): PREMISE-002 (DISPOSITION-408; embedding displacement vectors — new 2025 theory support; caveats: similarity miscalibration, length collapse), PREMISE-004 (DISPOSITION-409; triangulation — Strong new support; independence proviso sharpened: same-model-family convergence is not independent evidence, cross-ref REVISE-174 and SYSTEMIC-RISK #3 of 2026-07-06), PREMISE-025 (DISPOSITION-410; missed-cycle visibility — Strong continued support; caveats: alert-fatigue filtering, time-boxed classification). Full records in lit_search_returns.md; result files use suffix _recheck-2026-07-05 in lit_search_results/{for,against}/. Next re-check due 2026-08-02.
+
+---
+
+## 2026-07-09 — INCORPORATE from fresh-cohort run (15c; c2a2-lit-search-pipeline; autonomous)
+
+PREMISE-095:
+  Date validated: 2026-07-09
+  Source item: ASSUMPTION-429
+  Statement: Under current provisioning (one scheduled pipeline run/day at an observed 7-20 items/run), the 15d weekly re-trigger arrival rate (~55/week) exceeds the service rate; the refresh queue grows without bound absent a cadence change, admission cap, or throughput/provisioning increase. "Structural" means structural-under-current-provisioning, not immutable — throughput is itself a design choice (runs/day, parallelism, batch size), so provisioning increases are part of the remedy space alongside cadence/cap redesign.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Little (1961) L=lambda*W; Hopp & Spearman, Factory Physics (rho>1 implies unbounded backlog); empirical run logs 2026-07-05..07-09 (arrival ~55/week vs burns of 7-20/run; backlog 116 and monotone across 5 runs). 15a SUPPORTED/Strong.
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — scoped to the wording, not the arithmetic: "structural" overstates if provisioning is variable. Folded into the Statement.
+  Confidence: Moderate (QUEUED-EMPIRICAL residue: precise lambda/mu instrumentation still recommended)
+  Applicable to: OPEN-115/OPEN-116 (cadence/cap decision); 15d re-trigger design; A-428/MONITOR-420 (deferral acceptability); A-430/MONITOR-423 (triage); run scheduling. Consistency: consonant with the validated human-review-capacity-as-binding-constraint premise; CONTRADICTS P-462 as held — dispositioned REVISE-195 rather than silently coexisting.
+  Re-check due: 2026-08-09 (Monthly)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-431
+
+
+---
+
+## 2026-07-16 — INCORPORATE from 15a/15b/15c pipeline run (autonomous; 07-13/07-14-backfill/07-15 batches)
+
+PREMISE-096:
+  Date validated: 2026-07-16
+  Source item: ASSUMPTION-452
+  Statement: No self-produced artifact may certify itself. Each artifact class is verified by an independent source — tooling by replay (re-run the corrected tool over prior inputs and diff), denominators by independent corroboration, captures by primary-text verification. Apply proportional to stakes (SLSA-style level tiering), and require that the corroborating layer draw on a genuinely disjoint evidence source, or "independent" is nominal only.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: SLSA v1.1 spec/FAQ (self-generated L1 provenance carries no integrity guarantee; L2+ requires platform-generated, independently-verifiable provenance) — the framework independently instantiates this exact rule. 15a SUPPORTED/Strong.
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Weak) — cost/calibration only: a uniform mandate can impose verification cost disproportionate to risk and a perfunctory required check can masquerade as assurance (Knight & Leveson common-mode caveat). Folded in as the stakes-proportional + source-independence provisos.
+  Confidence: High
+  Applicable to: the verification-discipline family; watchdog output checks; capture pipeline; agents 15a/15b/15c; denominator/census reporting. THIS PREMISE IS THE PROPOSED TERMINATOR FOR SYSTEMIC-RISK #1 — it unifies REVISE-209 (denominators), REVISE-213 (tooling/replay), and REVISE-214 (captures/primary-text) under one rule.
+  Re-check due: 2026-10-16 (Quarterly)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-473
+
+PREMISE-097:
+  Date validated: 2026-07-16
+  Source item: ASSUMPTION-457
+  Statement: A report drawn from a bounded observational vantage must disclose its scope gap rather than imply coverage it lacks. Sandbox-visible process data is not represented as host-wide coverage; any monitoring/status report states the boundary of what it could observe.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Observability-scope / trace-coverage literature (incomplete instrumentation overstates coverage; arXiv:2604.13522) and survivorship-bias canon (Wald; concentrating on the observable subset and implying it is the whole distorts conclusions). 15a SUPPORTED/Strong.
+  Challenges noted: 15b NO-CHALLENGE-FOUND (None) — the honesty/scope-disclosure norm is uncontested.
+  Confidence: High
+  Applicable to: all monitoring/status reports from a bounded vantage; scheduler watchdog; self-awareness-pipeline coverage claims (pairs with MONITOR-443's coverage-ratio). Consistent with the verify-before-trust / fail-loud premise family. The specific scope fact (sandbox cannot enumerate host processes) remains a one-command empirical check.
+  Re-check due: 2026-10-16 (Quarterly)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-481
+
+PREMISE-098:
+  Date validated: 2026-07-18
+  Source item: PRESUMPTION-490
+  Statement: Scripts that run correctly interactively on the Mac must NOT be presumed to behave identically when invoked headless by the scheduler in the sandbox. Each scheduled/autonomous script asserts its context invariants — HOME, filesystem/mount reach, credentials, lock state — at startup and fails loud on violation. Cross-context parity is engineered, not assumed; a per-delta startup preflight is required, full hermeticity is not.
+  Item type: PRESUMPTION (unstated — surfaced by inference; extra weight: designers were unaware)
+  Supporting evidence: 12-Factor "Dev/prod parity"; Bazel "Hermeticity"; Cronitor "Crontab environment variables" (scheduler supplies its own minimal environment). Twice-falsified in vivo 2026-07-17 (metabolism `~/`, c282 index.lock). 15a SUPPORTED/Strong.
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Weak-Moderate) — perfect parity/hermeticity is unattainable (12-Factor concedes it; no studied Bazel project is fully hermetic), so the remedy is a TARGETED preflight on the named deltas, not a hermetic rebuild. Folded into the statement.
+  Confidence: Moderate
+  Applicable to: all scheduled/autonomous agents and regen scripts (metabolism, OpenStory writer, git-persistence, 14/15 pipelines). Complements the durability/fail-loud family and pairs with P-491 (artifact-binding) and the 2026-07-17 decoupled-from-ground-truth SYSTEMIC-RISK flag.
+  Re-check due: 2026-10-18 (Quarterly)
+  Status: ACTIVE
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-500

@@ -15,8 +15,8 @@ evidence_strength_summary: "Omnipotence belongs to the divine nature alone; Chri
 mind_first_reframe: "Finite power and a passible body are read as the conditions of being a located agent at all — agency under resource scarcity (Friston) — and Christ's FREE assumption of them as kenosis: the comprehensor voluntarily entering the limited, sufferable perspective rather than overriding it, joining the limited agent from within."
 central_theme_thread: "Q.13-14 enact the loving-unity computation from the side of the one who perceives more: omnipotence is not seized but set aside, the passible body freely assumed, so that the whole meets the limited perspective by entering it — the divine guide of Phil 2 descending into resource-scarcity by love, not necessity."
 tags: [synthesis, day/219, theme/kenosis-chosen-finitude]
-last_qc_at: "2026-06-25T12:22:55"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-12T10:31:04"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 219 — Christ's Passible Body (Contemporary Parallel)
@@ -52,7 +52,7 @@ The project says we work out our salvation "aware of our limitations and our nee
 - **Christ's created soul is finite, not omnipotent ↔ finite power is the condition of located agency under resource scarcity** — Tom's PRS-form record of Friston, PRS-01/PRS-04. *Why:* genuine human agency is bounded agency; non-omnipotence makes it real, not masked divinity. Evidence: **formal (strong) + theological**.
 - **The bodily defects assumed freely, for our salvation, not by necessity ↔ kenosis (Phil 2): the one in the form of God empties himself** — Tom's PRS-form record of Wright, PRS-04 and the Pauline corpus. *Why:* the limitation is *chosen* by the one who perceives the whole, the guide entering the guided's condition. Evidence: **theological (strong central-theme fit)**.
 - **The freely assumed limitation as the instrument of healing ↔ "the limitation becomes the gift" — the wound as the site of vocation** — Tom's PRS-form record of Rohr, PRS-05. *Why:* chosen finitude is not a cost around redemption but its means. Evidence: **contemplative/spiritual**.
-- **A true passible body, really capable of suffering ↔ the assumed body as a real morphological/bioelectric system** — Tom's PRS-form record of Levin (per the guardrail). *Why:* passibility is real, not docetic appearance; the body genuinely can be destroyed. Evidence: **empirical (strong)**.
+- **A true passible body, really capable of suffering ↔ the assumed body as a real morphological/bioelectric system** — Tom's PRS-form record of Levin. *Why:* passibility is real, not docetic appearance; the body genuinely can be destroyed. Evidence: **empirical (strong)**.
 
 ## Where this leaves us
 

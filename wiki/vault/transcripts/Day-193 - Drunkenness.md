@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-193 - Drunkenness - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/193, pars/II, q/150]
-last_qc_at: "2026-07-08T12:21:51"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-16T16:19:28"
+last_qc_outcome: "pass"
 ---
 
 # Day 193 — Drunkenness

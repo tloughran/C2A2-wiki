@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=v8JQbKV9he0
 title: Slight Contrition
 summa_ref: Supplement, Suppl. Q.3-5
 duration_seconds: 483
-word_count: 1432
+word_count: 1438
 raw_asr_word_count: 1424
 length_tier: short
 fidelity_checked: true
@@ -16,17 +16,17 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-260 - Slight Contrition - Contemporary]]"
 tags: [summa, day/260, pars/suppl, q/3]
-last_qc_at: "2026-06-26T04:19:32"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-09T20:24:49"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 260 — Slight Contrition
 
-> Aquinas's *Summa Theologiae*, Supplement, Suppl. Q.3-5. Verbatim ASR captured 2026-06-16; light cleanup of common transcription errors (Summa, Aquinas, Theologiae, Damascene, narrator "Austin Habash"). Episode-intro name garble ("Summa in a Year") normalized.
+> Aquinas's *Summa Theologiae*, Supplement, Suppl. Q.3-5. Verbatim ASR captured 2026-06-16; light cleanup of common transcription errors (Summa, Aquinas, Theologiae, Damascene, narrator "Austin Habash"). Episode-intro name garble ("Summa in a Year") normalized. Residual intro garbles fixed at QC 2026-07-09: Sumir/Sumeir → Summa in a Year; suma → Summa.
 
-[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Sumir podcast, where we study St. Thomas Aquinas's suma
+[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
-Theologiae in a way simple and insightful for anyone to understand. The Sumeir podcast is brought to you by Think Catholic, taking two questions of the
+Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic, taking two questions of the
 
 Summa a day, will seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith. This is day 260. So, let's get
 
