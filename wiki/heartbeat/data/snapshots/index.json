@@ -1,7 +1,20 @@
 {
-  "generated": "2026-07-18",
-  "count": 27,
+  "generated": "2026-07-19",
+  "count": 28,
   "snapshots": [
+    {
+      "date": "2026-07-19",
+      "time": "11:47 UTC",
+      "sort_key": "20260719114739",
+      "generated_at": "2026-07-19T11:47:39Z",
+      "file": "digest-20260719-114739.json",
+      "window": "weekly",
+      "signals": 10,
+      "items_checked": 156,
+      "sources_reached": 19,
+      "high_relevance": 3,
+      "primary_themes": "Market Platform + Capability Jump"
+    },
     {
       "date": "2026-07-18",
       "time": "11:42 UTC",
