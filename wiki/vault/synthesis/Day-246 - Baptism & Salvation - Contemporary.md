@@ -2,9 +2,9 @@
 day: 246
 title: Baptism & Salvation (Contemporary)
 pairs_with: "[[Day-246 - Baptism & Salvation]]"
-length_target_words: 1500
+length_target_words: 2200
 length_actual_words: 775
-length_tier: long
+length_tier: medium
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-04 observer-dependent spacetime; interface rules vs. underlying reality)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 identity within monism)"
@@ -12,12 +12,12 @@ karpathy_wiki_sources:
   - "traditions/wright/wiki.md (salvation as covenant inclusion)"
   - "traditions/rohr/wiki.md (Universal Christ; invincible ignorance)"
 evidence_strength_summary: "Interface-rules vs. underlying-freedom formal (Hoffman); resource-bounded moral computation formal (Friston); necessity-of-baptism and its exceptions theological (Wright/Rohr); central-theme claim strongly aligned."
-length_ratio_to_target: 0.52
+length_ratio_to_target: 0.35
 length_note: "Concise by design — a single-focus III Q.68-69 (necessity of baptism and its exceptions) article in complete PRS form; brevity reflects the narrow article, not dropped substance. Tier/target calibration pending reviewer escalation (see QC log 2026-06-16)."
 mind_first_reframe: "Necessity-of-baptism is reframed as interface-rules vs. underlying reality: the ordinary rule binds limited agents at the interface, while the underlying freedom of grace can reach the genuinely-disposed where the rule's resources are unavailable."
 central_theme_thread: "Salvation is the perspective-limited agent's inclusion in loving unity computed with the resources it perceives; the exceptions to baptism's necessity are where grace meets the agent whose resources cannot reach the rite."
 tags: [synthesis, day/246, theme/necessity-and-the-limited-perspective]
-last_qc_at: "2026-07-11T08:22:02"
+last_qc_at: "2026-07-19T10:26:28"
 last_qc_outcome: "rewrote"
 ---
 

@@ -10,14 +10,14 @@ length_note: "Runs ~52% under the short tier (727 vs 1500): held to the PRS argu
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-03 target morphology; pattern-completion / regenerative restoration of target form)"
   - "traditions/friston/prs_triplets.md (PRS-04 goal-directedness; history-shaped priors / path-dependence)"
-  - "traditions/wright (restored covenant membership)"
+  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation into the people among whom God comes home, not relocation of souls; PRS-13 God's Homecoming as the canonical articulation)"
   - "traditions/rohr/prs_triplets.md (PRS-05 the recovered self is transformed, not merely reset)"
 evidence_strength_summary: "Restoration-as-pattern-completion is empirical-in-domain (Levin regeneration); equal-measure question framed by path-dependence is formal (Friston); restored-membership content is scriptural (Wright)."
 mind_first_reframe: "Penitential restoration is regenerative return to a persisting target form (Levin pattern-completion), and because the recovered prior is history-shaped (Friston) it need not equal the lost one — it may run deeper for having corrected through error."
 central_theme_thread: "Restoration is the whole drawing a deviated, perspective-limited part back into membership and, in the drawing, deepening its share — Wright's 'salvation as inclusion' enacted as restored covenant membership, Rohr's 'falling upward' naming why the return can surpass the start."
 tags: [synthesis, day/257, theme/regenerative-restoration]
-last_qc_at: "2026-07-11T12:21:40"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-19T14:25:49"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 257 — Penitential Restoration (Contemporary Parallel)
@@ -51,7 +51,7 @@ The motif appears as re-inclusion after deviation. The limited agent that has st
 - **Levin PRS-03 (target morphology; regeneration / pattern-completion)** — *empirical-in-domain.* Restoration as active return to a persisting set-point; sharpest resource.
 - **Friston PRS-04 (goal-directedness; history-shaped priors)** — *formal.* The unequal measure as path-dependence.
 - **Rohr PRS-05 (transformed, not reset)** — *theological / contemplative.* Why restoration can exceed the original ("falling upward").
-- **Wright (restored covenant membership)** — *scriptural, high within method.* The content of the recovered relation.
+- **Wright PRS-05 (salvation as incorporation, not relocation) + PRS-13 (*God's Homecoming*)** — *scriptural, high within method.* The content of the recovered relation: membership re-established, not a private state reloaded.
 
 ## Where this leaves us
 

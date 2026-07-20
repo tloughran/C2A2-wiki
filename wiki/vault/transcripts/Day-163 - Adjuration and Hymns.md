@@ -15,7 +15,7 @@ fetched_at: 2026-05-28
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-163 - Adjuration and Hymns - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-11T18:30:49"
+last_qc_at: "2026-07-19T20:20:04"
 last_qc_outcome: "pass"
 tags: [summa, day/163, pars/II-II, q/90–91]
 ---

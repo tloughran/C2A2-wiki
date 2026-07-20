@@ -3,8 +3,8 @@ day: 118
 title: Volume 3 — Merit and the Opening of II-II (Contemporary)
 pairs_with: "[[Day-118 - Volume 3]]"
 length_target_words: 3000
-length_actual_words: 1942
-length_ratio_to_target: 0.65
+length_actual_words: 1987
+length_ratio_to_target: 0.662
 length_tier: long
 length_note: "Volume-transition episode pairing Q.114 (merit, 20 articles compressed) with II-II Q.1 (faith); commentary names the two load-bearing moves — collective-substance merit (Stump PRS-14/15/16); faith as relational-cognitive orientation toward First Truth — without expanding into each article. The transition shape calls for focused linkage, not article-by-article mirroring; substantively complete in this form."
 karpathy_wiki_sources:
@@ -21,8 +21,8 @@ evidence_strength_summary: "Merit as recursive divine self-gift: theological. Ch
 mind_first_reframe: "Merit is the agent-alter's contributive participation in the form of the larger composite (covenant people / body of Christ) that the embedding system is constituting through the agents; faith is the first virtue the installed wider prior makes available, the cognitive-affective state in which the alter is oriented toward the wider mind it cannot directly perceive."
 central_theme_thread: "Merit ramifies the central claim into community — loving unity is computed not just in the individual but in the form being built across individuals; faith is the entry condition; the cycle runs from installed prior through cooperative action to a real composite that includes its contributors."
 tags: [synthesis, day/118, theme/merit, theme/faith, theme/transition]
-last_qc_at: "2026-07-10T20:21:56"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-18T20:20:42"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 118 — Volume 3: Merit and the Opening of Faith (Contemporary Parallel)
@@ -50,6 +50,8 @@ Fredrickson's positivity resonance supplies the biology. Charity, which Aquinas 
 Friston's collective active inference supplies the architectural reading of how individual acts compose into a collective trajectory. Agents in active-inference alignment share attractor basins; each agent's action both reflects and reinforces the shared structure. Within such a structure, individual contribution is real (the agent is doing the work) and yet the structure is more than the sum (the agents are participating in something whose form precedes their contribution). This is the dual-level causation Aquinas needs for merit to be intelligible.
 
 Kastrup's analytic idealism re-frames the underlying ontology. The merit cycle Aquinas describes — God's gift returning to God as the agent's act of cooperation — is, under idealism, the wider mind expressing itself through an alter back toward itself. Augustine's formulation that Aquinas quotes ("when God crowns our merits, he crowns nothing else but his own gifts") becomes, on the idealist reading, a precise statement of the recursive structure: there is one ground, and what looks like merit is the ground knowing itself through the alter's exercise of the prior the ground installed.
+
+Rohr's *The Universal Christ* supplies the contemplative correction that keeps the merit cycle from collapsing back into transaction. On his reading, grace is not a commodity dispatched from outside into a creature that lacked it, but the always-already-present divine pattern in which the creature has been standing the whole time; what changes in the merit cycle is not the ground's availability but the alter's recognition of it. That reframing does real work on Q.114's hardest article — first grace is not meritable — because under it the non-meritability of first grace is not a rule imposed on the transaction but a structural description: there is no vantage outside the ground from which the alter could have bargained for entry into it. *Honest evidence calibration*: contemplative-theological, offered as interpretation rather than evidence.
 
 For faith: Hoffman's interface theory gives faith a clean reading. Faith's formal object is the First Truth — the underlying reality the interface compresses — under conditions where the interface cannot directly perceive that reality. Faith is the agent's epistemic relation to what its interface cannot deliver but which the interface's existence presupposes. Augustine's "to think with assent" captures both halves: the cognitive engagement (thinking) and the orientation-of-will (assent) that together constitute the agent's holding-onto-First-Truth across the interface gap.
 
@@ -80,6 +82,7 @@ The opening of faith ties the same thread. Faith is the *first* orientation of t
 - *Friston collective active inference* — agents in attractor alignment compose collective trajectories; individual contribution and collective form are both real. Architecture of merit. (Formal/empirical in narrow domains.)
 - *Hoffman interface theory* — faith's formal object (First Truth) is the underlying reality the interface compresses; faith is the agent's epistemic orientation toward what the interface cannot deliver but presupposes. (Formal.)
 - *Kastrup analytic idealism* — Augustine's "God crowns his own gifts" as the recursive structure of one ground knowing itself through the alter. (Speculative metaphysics.)
+- *Rohr, The Universal Christ; Falling Upward* — grace as always-already-present cosmic ground rather than dispatched commodity; the non-meritability of first grace as structural description, not imposed rule. (Contemplative-theological; interpretive.)
 - *Wright, Paul and the Faithfulness of God; Surprised by Hope* — covenant-people framing of salvation; Pauline pistis as covenant-fidelity. The central-theme phrase "salvation in fear and trembling" is Wright-derived. (Historical-theological; high.)
 
 ## Where this leaves us

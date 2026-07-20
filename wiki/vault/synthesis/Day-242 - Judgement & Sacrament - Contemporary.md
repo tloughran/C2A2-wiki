@@ -2,7 +2,7 @@
 day: 242
 title: Judgement & Sacrament (Contemporary)
 pairs_with: "[[Day-242 - Judgement & Sacrament]]"
-length_target_words: 1500
+length_target_words: 2200
 length_actual_words: 806
 length_tier: medium
 karpathy_wiki_sources:
@@ -11,12 +11,12 @@ karpathy_wiki_sources:
   - "traditions/rohr/wiki.md (sacramental presence; Universal Christ)"
   - "traditions/wright/wiki.md (judgement as setting-right; new creation)"
 evidence_strength_summary: "Judgement-as-restoration theological (Wright); sign-that-effects read formal (Friston active inference); efficient causality across signs metaphysical; central-theme claim speculative."
-length_ratio_to_target: 0.54
+length_ratio_to_target: 0.37
 length_note: "Concise by design — bridges the close of the treatise on Christ (III Q.59) and the opening of the sacraments (III Q.60) in complete PRS form; brevity reflects the focused hinge, not dropped substance. Tier/target calibration pending reviewer escalation (see QC log 2026-06-16)."
 mind_first_reframe: "A sacrament is an enacted, world-changing prediction whose efficacy lies in coupling a public sign to the dispositional-and-communal state it helps constitute; judgement is the whole rendering each limited part's enacted history true."
 central_theme_thread: "Judgement is the whole rendering each perspective-limited agent's real trajectory legible, and the sacraments are how limited agents who cannot see the whole are coupled to it."
 tags: [synthesis, day/242, theme/sign-that-effects]
-last_qc_at: "2026-07-11T08:21:46"
+last_qc_at: "2026-07-19T10:26:26"
 last_qc_outcome: "rewrote"
 ---
 

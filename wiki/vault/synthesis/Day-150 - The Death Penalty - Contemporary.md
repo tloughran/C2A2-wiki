@@ -6,6 +6,7 @@ length_target_words: 2200
 length_actual_words: 1918
 length_ratio_to_target: 0.872
 length_tier: medium
+length_note: "Slightly under tier target: the day's weight is carried by two sharply-marked departures (a.1's ranking of beings; a.2's excision-vs-re-integration) rather than by breadth across Q.64's eight articles, and the remaining articles are handled compactly where the contemporary frame confirms rather than reframes."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-09/10/12/25 diverse intelligence, continuity of goal-directedness, 'mind blindness', SUTI — agency at every scale, against the flat anthropocentric ranking of Q.64 a.1; PRS-02/11 cancer as defection AND its therapy as re-integration, not excision — pressuring the execution conclusion)"
   - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — the divine pattern in all creation; PRS-01 non-dual — refusing the friend/enemy excision logic)"
@@ -17,8 +18,8 @@ evidence_strength_summary: "SHARPEST DEPARTURE FLAGGED. Q.64 a.1's ranking (plan
 mind_first_reframe: "The vices against commutative justice begin with killing, and the governing logic is the whole-over-part principle that has run through the entire treatise: the evildoer may be excised 'as a diseased member' for the health of the body politic (a.2). Two of Aquinas's premises are exactly where mind / conscious-realist monism most reframes him. First, a.1's ranking — plants and animals exist 'for our sake,' are 'naturally enslaved,' the imperfect for the perfect — collides head-on with the program's core finding that agency and a graded cognition run all the way down (Levin's diverse intelligence; 'mind blindness' names precisely the bias that treats non-human life as mere instrument). Second, the very biology Aquinas reaches for in a.2 — the diseased member cut away — is, in Levin's actual program, a problem to be *solved by re-integration*, not excision: cancer therapy aims to restore the defecting cell to the cooperative field. The whole-part logic that licenses the death penalty, read through the contemporary biology, bends toward rehabilitation. Double effect (a.7) survives intact and gains a formal gloss; the anthropocentric ranking does not."
 central_theme_thread: "This is the treatise's hardest case for the central claim. If conscious agents are individuated by perspective-limitation and the telos is loving unity in which every perspective is contained, then ending a perspective's life is the gravest possible defection from that telos — licensed, if ever, only as the body's last defense, and always under the shadow of the cross, where the whole absorbs the violence of the part rather than excising it. Aquinas already half-sees this: he grants the state's right to execute and immediately adds our Lord's counsel to 'let the wicked live,' vengeance 'delayed to the last judgment.' The contemporary frame pushes that reservation to the front — re-integration over excision — while honoring the genuine limit case where a whole must defend its members."
 tags: [synthesis, day/150, theme/the-hardest-case-life-and-the-whole]
-last_qc_at: "2026-07-10T16:21:44"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-18T14:26:47"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 150 — Contemporary Parallel: The Whole, the Part, and the Taking of a Life

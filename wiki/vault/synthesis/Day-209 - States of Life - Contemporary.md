@@ -6,6 +6,7 @@ length_target_words: 2200
 length_actual_words: 1972
 length_ratio_to_target: 0.896
 length_tier: medium
+length_note: "Runs 8 words under the medium band (ratio 0.896, well within ±25%): Q.182-183 are covered through their three generative threads — simplicity-grounds-multitude, infusion-vs-abstraction, and charity-as-the-invariant-across-states — without padding the remaining article-by-article material. Short-and-substantive per the length policy."
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-04/PRS-13 networks of conscious agents composing higher agents; bounds on unified consciousness)"
   - "traditions/levin/prs_triplets.md (PRS-01/PRS-09 scale-free composition — many cells/agents into one body; PRS-03 morphological attractor — the beginner/proficient/perfect ascent toward a target form)"
@@ -18,8 +19,8 @@ evidence_strength_summary: "Diversity of states manifests the simple whole ~ a m
 mind_first_reframe: "One simple whole is manifested and lovable from every side only through a multitude of limited perspectives, each differently bound (its 'state') and composed by loving resonance into one body; knowing ranges from interface-mediated abstraction up to received infusion, but the one invariant measured across every state, office, and stage is the degree of loving union."
 central_theme_thread: "Perspective-limitation is given its positive role — the diversity of states is the very means by which the simple whole is displayed and re-integrated in love — yet merit tracks charity 'regardless of state,' so the measure of any limited perspective's progress toward loving unity is its charity, not its role or rank."
 tags: [synthesis, day/209, theme/the-many-and-the-one-body]
-last_qc_at: "2026-07-11T04:23:18"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-19T06:25:44"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 209 — States of Life (Contemporary Parallel)

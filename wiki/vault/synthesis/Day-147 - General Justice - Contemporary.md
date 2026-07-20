@@ -6,6 +6,7 @@ length_target_words: 2200
 length_actual_words: 1694
 length_ratio_to_target: 0.77
 length_tier: medium
+length_note: "Runs short of tier target: Q.58-59 are structurally tight — one definition, one distinction (real vs relative mean), one doubling (general/particular), one opposed vice — and the contemporary frame converges on Aquinas without correction, so the linkage work is dense rather than extended. Padding to 2200 would add recapitulation, not bridging."
 karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-01 critical realism — the 'real mean' as a mind-independent target known perspectivally)"
   - "traditions/stump/prs_triplets.md (PRS-14/15/16 hylomorphic metaphysics of corporate substance — peoples/communities as real formed wholes whose good the part is ordered to; PRS-04 final causality real)"
@@ -16,8 +17,8 @@ evidence_strength_summary: "The 'real mean' of justice — objective, fixed by t
 mind_first_reframe: "Aquinas defines justice as 'the perpetual and constant will to render to each one his right' and then makes the claim that distinguishes it from every other moral virtue: its mean is the *real mean*, not the relative mean. Temperance and courage aim at a middle 'set by taking into account the man, the situation' — an agent-relative target. But justice 'consists in a certain proportion of equality between the external thing and the external person,' and 'equality is the real mean between greater and less.' Read through mind / conscious-realist monism, this is the decisive feature: justice is the one moral virtue whose target is mind-independent — the same $10 for the same $10 item, irrespective of the agent's interior. And justice is at once *general* (legal justice orders every virtue to the common good) and *particular* — the same ordering-to-the-whole appearing at every scale, exactly the nested goal-directedness Levin's program describes from cell to community."
 central_theme_thread: "The real mean is the whole's-eye view of the right relation — the equality that holds independently of any single perspective's vantage. Each limited perspective computes toward it; injustice is the perspective absolutizing its own partial good against the whole, the moral form of the cell defecting from the body. General justice — ordering the part to the common good — is, at the social scale, the very motion the central claim names: the limited agent willing the good of the whole it belongs to, which is the practical shape of loving unity under scarce resources."
 tags: [synthesis, day/147, theme/the-real-mean-and-the-whole]
-last_qc_at: "2026-07-10T16:21:43"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-18T14:26:47"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 147 — Contemporary Parallel: The Real Mean and the Good of the Whole

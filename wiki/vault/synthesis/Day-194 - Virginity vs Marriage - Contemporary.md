@@ -17,7 +17,7 @@ evidence_strength_summary: "Virginity as resource-reallocation toward the whole 
 mind_first_reframe: "Virginity is a finite agent reallocating its scarce relational and attentional bandwidth from a divided, dyadic load toward undivided modeling of the whole; lust is the corruption of the entire perception-policy-action pipeline, terminating in self-love where loving unity should stand."
 central_theme_thread: "The central claim is exactly staged here: self-love as disordered end versus loving unity as the agent's telos. Virginity is the deliberate widening of perspective toward the whole; the daughters of lust are the step-by-step collapse of a perspective back onto itself."
 tags: [synthesis, day/194, theme/perspective-and-union]
-last_qc_at: "2026-07-11T14:31:18"
+last_qc_at: "2026-07-19T16:20:23"
 last_qc_outcome: "pass"
 ---
 

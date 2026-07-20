@@ -15,7 +15,7 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-247 - Baptism & Circumcision - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-11T10:31:37"
+last_qc_at: "2026-07-19T12:19:34"
 last_qc_outcome: "pass"
 tags: [summa, day/247, pars/3, q/70]
 ---

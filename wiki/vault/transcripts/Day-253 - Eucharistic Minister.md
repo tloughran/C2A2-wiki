@@ -15,7 +15,7 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-253 - Eucharistic Minister - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-11T10:32:48"
+last_qc_at: "2026-07-19T12:19:36"
 last_qc_outcome: "pass"
 tags: [summa, day/253, pars/3, q/82]
 ---

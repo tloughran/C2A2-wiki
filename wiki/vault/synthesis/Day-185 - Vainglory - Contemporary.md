@@ -16,7 +16,7 @@ karpathy_wiki_sources:
   - "Wright canonical: boasting only in the Lord / in the cross, Gal 6:14, 1 Cor 1 (Paul and the Faithfulness of God); Rohr canonical: vainglory as the False Self's whole economy; pusillanimity as the failure to claim the True Self's given largeness (Immortal Diamond)"
 evidence_strength_summary: "The appearance-precision and self-estimate accounts are formal/empirical (Friston, Fredrickson, social neuroscience); the claim that worth should be sourced in God's verdict rather than self-display or self-diminishment is theological (Wright, Rohr)."
 tags: [synthesis, day/185, theme/vainglory, theme/self-image, q/132, q/133]
-last_qc_at: "2026-07-11T10:32:47"
+last_qc_at: "2026-07-19T12:19:33"
 last_qc_outcome: "pass"
 ---
 

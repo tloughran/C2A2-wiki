@@ -17,15 +17,15 @@ evidence_strength_summary: "Sin-as-defection and restoration-as-re-coherence are
 mind_first_reframe: "Public penance is the collective agent visibly re-admitting a member whose generative model had defected from the shared field — reincorporation modeled as bioelectric re-coherence (Levin) achieved through mutual remodeling (Friston PRS-06)."
 central_theme_thread: "The penitent's perspective had narrowed to the self; the solemn rite re-includes that perspective in the whole through the guidance of those who perceive more of it — the institutional shape of 'working out salvation in fear and trembling.'"
 tags: [synthesis, day/271, theme/defection-and-reincorporation]
-last_qc_at: "2026-07-10T00:21:52"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-18T02:27:02"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 271 — Public Penance (Contemporary)
 
 ## Frame
 
-Aquinas ends the treatise on indulgences by asking *whom* they avail, then opens the solemn, public rite of penance — the visible discipline by which a gravely sinning member is reincorporated into the body of the Church. The medieval question is juridical and ecclesial: who has standing to receive the surplus merit of the communion of saints, and what public act re-binds the one who had cut himself off? The contemporary version of the same question, read under mind/conscious-realist monism, is this: when a member defects from a cooperative whole, what *mechanism* restores it to coherent participation — and is that restoration something the member can accomplish alone, or only through the whole acting upon the part?
+Aquinas (Suppl. Q.27-28) ends the treatise on indulgences by asking *whom* they avail (Q.27), then opens the solemn, public rite of penance (Q.28) — the visible discipline by which a gravely sinning member is reincorporated into the body of the Church. The medieval question is juridical and ecclesial: who has standing to receive the surplus merit of the communion of saints, and what public act re-binds the one who had cut himself off? The contemporary version of the same question, read under mind/conscious-realist monism, is this: when a member defects from a cooperative whole, what *mechanism* restores it to coherent participation — and is that restoration something the member can accomplish alone, or only through the whole acting upon the part?
 
 ## Problem
 
@@ -37,7 +37,7 @@ The emerging paradigm supplies an unusually precise resource here. In Tom's PRS-
 
 Friston's program gives the formal complement. Tom's PRS-form record of the Friston-tradition wiki's PRS-06 describes multi-agent coherence as mutual modeling: agents become a single higher-order agent by reducing prediction error about one another, sharing attractor basins. A member "defects" when its generative model diverges from the community's; reincorporation is the costly mutual remodeling that re-aligns them. The master wiki's FINDING-007 records that these are not two metaphors but one mathematics — Friston's substrate-independent active inference formally describes what Levin observes in bioelectric morphogenesis.
 
-Rohr supplies the developmental and theological shape. His PRS-02 (the order–disorder–reorder pattern) names penance precisely: the reorder that follows genuine disorder is *deeper* than the original order because it has been tested. And his PRS-07 insists that salvation is "conversion into the relational pattern, not an individual escape" — reincorporation, not private rescue.
+Rohr supplies the developmental and theological shape. PRS-02 in the Rohr-tradition wiki (the order–disorder–reorder pattern) names penance precisely: the reorder that follows genuine disorder is *deeper* than the original order because it has been tested. And PRS-07 there insists that salvation is "conversion into the relational pattern, not an individual escape" — reincorporation, not private rescue.
 
 ## Solution (proposed, speculative)
 

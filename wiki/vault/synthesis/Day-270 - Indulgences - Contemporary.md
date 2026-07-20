@@ -17,7 +17,7 @@ evidence_strength_summary: "The treasury-as-shared-field and one-resource-meetin
 mind_first_reframe: "An indulgence is reframed as the collective agent applying a shared, super-abundant store to a member's deficit — the communion of saints as a common field (Levin) pooled by mutual modeling (Friston PRS-06), one resource meeting many members' needs in the structure of Tom's Synergistic Coil."
 central_theme_thread: "The treasury is the surplus of those who perceived more of the whole, made available to those who perceive less — the institutional shape of the central claim's 'need for guidance from those who perceive more of the whole than we do.'"
 tags: [synthesis, day/270, theme/the-treasury-as-shared-field-and-the-synergistic-coil]
-last_qc_at: "2026-07-10T00:21:45"
+last_qc_at: "2026-07-18T02:26:55"
 last_qc_outcome: "pass"
 ---
 

@@ -2,7 +2,7 @@
 day: 244
 title: Sacramental Character (Contemporary)
 pairs_with: "[[Day-244 - Sacramental Character]]"
-length_target_words: 1500
+length_target_words: 2200
 length_actual_words: 726
 length_tier: medium
 karpathy_wiki_sources:
@@ -10,13 +10,13 @@ karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism; PRS-08 the Daimon as principle of individuation)"
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler)"
 evidence_strength_summary: "Pattern-memory as durable configuration empirical-in-domain (Levin); individuation-as-stable-boundary metaphysical (Kastrup); the soul-imprint claim theological; central-theme claim moderately supported by the individuation analogy."
-length_ratio_to_target: 0.48
+length_ratio_to_target: 0.33
 length_note: "Concise by design — a single-focus III Q.63 (sacramental character) article in complete PRS form; brevity reflects the narrow article, not dropped substance. Tier/target calibration pending reviewer escalation (see QC log 2026-06-16)."
 mind_first_reframe: "Sacramental character is a durable individuating configuration — a stable set-point fixing the agent's standing and orientation, persisting through loss of the grace it normally grounds, as a bioelectric target-pattern persists through cellular turnover."
 central_theme_thread: "Character is a theological instance of durable individuation: a permanent mark fixing which limited perspective this agent is within the whole, oriented toward loving unity regardless of its current dispositional state."
 tags: [synthesis, day/244, theme/durable-individuation]
-last_qc_at: "2026-07-11T08:22:01"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-19T10:26:26"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 244 — Sacramental Character (Contemporary Parallel)

@@ -15,8 +15,8 @@ fetched_at: 2026-05-28
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-164 - Superstition - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-08T04:24:03"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-19T08:21:30"
+last_qc_outcome: "pass"
 tags: [summa, day/164, pars/II-II, q/92–93]
 ---
 

@@ -2,7 +2,7 @@
 day: 241
 title: Ascension (Contemporary)
 pairs_with: "[[Day-241 - Ascension]]"
-length_target_words: 1500
+length_target_words: 2200
 length_actual_words: 965
 length_tier: medium
 karpathy_wiki_sources:
@@ -11,12 +11,12 @@ karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-04 observer-dependent spacetime)"
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; PRS-03 attractor formalism)"
 evidence_strength_summary: "Christology/eschatology theological (Wright, high within its method); interface read of 'place' formal-speculative (Hoffman); non-local form-influence an empirical-analogy bridge (Levin); central-theme claim speculative."
-length_ratio_to_target: 0.64
+length_ratio_to_target: 0.44
 length_note: "Concise by design — a single-focus III Pars Q.57 (Ascension) article carried in complete PRS form; brevity reflects the narrow article, not dropped substance. Tier/target calibration pending reviewer escalation (see QC log 2026-06-16)."
 mind_first_reframe: "If perceived spacetime is a species-specific interface, the Ascension is a change of interface — a withdrawal from the shared sensory presentation — not a subtraction from Christ's real presence or universal governance."
 central_theme_thread: "The ascended Christ's recession from the shared interface is what constitutes the community as perspective-limited agents who must now compute toward loving unity through faith and one another rather than direct sight."
 tags: [synthesis, day/241, theme/presence-under-limitation]
-last_qc_at: "2026-07-11T08:21:45"
+last_qc_at: "2026-07-19T10:26:18"
 last_qc_outcome: "rewrote"
 ---
 

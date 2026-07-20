@@ -2,7 +2,7 @@
 day: 245
 title: Baptism by Blood (Contemporary)
 pairs_with: "[[Day-245 - Baptism by Blood]]"
-length_target_words: 1500
+length_target_words: 2200
 length_actual_words: 713
 length_tier: medium
 karpathy_wiki_sources:
@@ -11,12 +11,12 @@ karpathy_wiki_sources:
   - "traditions/wright/wiki.md (covenant inclusion; salvation as membership)"
   - "traditions/rohr/wiki.md (Universal Christ; grace exceeding the rite)"
 evidence_strength_summary: "Equifinality empirical-in-domain (Levin); disposition-as-operative-reality metaphysical (Kastrup); baptism of blood/desire theological (Wright/Rohr); central-theme claim well-aligned, transfer speculative."
-length_ratio_to_target: 0.48
+length_ratio_to_target: 0.32
 length_note: "Concise by design — a single-focus III Q.66 (baptism of blood/desire) article in complete PRS form; brevity reflects the narrow article, not dropped substance. Tier/target calibration pending reviewer escalation (see QC log 2026-06-16)."
 mind_first_reframe: "The operative reality of baptism is the dispositional form, which can reach its saving terminus by multiple equifinal routes because what governs the outcome is the attractor/disposition, not the particular material path."
 central_theme_thread: "Baptism of desire is the limit case where the resources are unavailable yet the agent's genuine orientation toward the whole suffices — grace meeting the perspective at the limit of its resources."
 tags: [synthesis, day/245, theme/form-without-matter]
-last_qc_at: "2026-07-11T08:22:01"
+last_qc_at: "2026-07-19T10:26:27"
 last_qc_outcome: "rewrote"
 ---
 

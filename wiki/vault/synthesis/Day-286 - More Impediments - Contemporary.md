@@ -16,7 +16,7 @@ length_ratio_to_target: 0.58
 mind_first_reframe: "The further impediments are a taxonomy of failed coupling-preconditions — prior saturation (vow), freedom-failure (abduction), and trust-failure (crime) — each making a new constitutive union impossible rather than merely illicit."
 central_theme_thread: "The impediments protect the seriousness of the project's central act: loving unity can be built only from free, available, trusting perspectives freely electing union, never extracted from an unfree or already-bound agent."
 tags: [synthesis, day/286, theme/boundary-conditions-on-coupling]
-last_qc_at: "2026-07-10T08:21:09"
+last_qc_at: "2026-07-18T10:25:38"
 last_qc_outcome: "pass"
 ---
 
