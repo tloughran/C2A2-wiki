@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>HOME</key>
+		<string>/Users/tomloughran</string>
+		<key>OPENSTORY_WATCH_ROOT</key>
+		<string>/Users/tomloughran/openstory-watch</string>
+		<key>PATH</key>
+		<string>/usr/local/bin:/usr/bin:/bin:/opt/homebrew/bin:/Users/tomloughran/.cargo/bin:/Users/tomloughran/.local/bin</string>
+	</dict>
+	<key>KeepAlive</key>
+	<true/>
+	<key>Label</key>
+	<string>com.tomloughran.openstory.backend</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/openstory-backend.sh</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/Users/tomloughran/Library/Logs/openstory-backend-error.log</string>
+	<key>StandardOutPath</key>
+	<string>/Users/tomloughran/Library/Logs/openstory-backend.log</string>
+	<key>WorkingDirectory</key>
+	<string>/Users/tomloughran/Documents/Non-Claude Projects/OpenStory</string>
+</dict>
+</plist>

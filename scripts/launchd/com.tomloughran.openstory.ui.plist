@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  com.tomloughran.openstory.ui — OpenStory Vite dashboard (http://localhost:5173),
+  separately supervised. Runs the C2A2-wiki repo's scripts/openstory-ui.sh in the
+  foreground. Optional:
+  the wiki feed does not need the UI, but this keeps the dashboard auto-running.
+  Disable this agent if you only care about the data feed.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.tomloughran.openstory.ui</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/openstory-ui.sh</string>
+  </array>
+
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/tomloughran/Documents/Non-Claude Projects/OpenStory/ui</string>
+
+  <key>StandardOutPath</key>
+  <string>/Users/tomloughran/Library/Logs/openstory-ui.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/tomloughran/Library/Logs/openstory-ui-error.log</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>HOME</key>
+    <string>/Users/tomloughran</string>
+    <key>PATH</key>
+    <string>/usr/local/bin:/usr/bin:/bin:/opt/homebrew/bin:/Users/tomloughran/.cargo/bin:/Users/tomloughran/.local/bin</string>
+  </dict>
+</dict>
+</plist>

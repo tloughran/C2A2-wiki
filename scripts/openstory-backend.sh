@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# openstory-backend.sh — OpenStory capture backend, supervised by launchd
+# (com.tomloughran.openstory.backend, RunAtLoad + KeepAlive).
+#
+# Ensures local-only NATS is up (token-free, deploy/nats-local.conf), then runs the
+# Rust `serve` backend IN THE FOREGROUND via exec, so this process IS what launchd
+# watches — if the backend dies, launchd restarts it. This is the durable feed that
+# writes open-story.db (which the C2A2 wiki reads). 2026-06-25.
+set -euo pipefail
+export PATH="/opt/homebrew/bin:$HOME/.cargo/bin:$PATH"
+
+OS_ROOT="$HOME/Documents/Non-Claude Projects/OpenStory"
+cd "$OS_ROOT"
+
+# 1) Local NATS JetStream on :4222 — start only if the port is free. Disowned: if it
+#    dies, the backend below loses :4222 and exits, and launchd reruns this whole
+#    script, which restarts NATS. So NATS is self-healed without its own agent.
+if ! lsof -i :4222 >/dev/null 2>&1; then
+  echo "[backend] starting local NATS on :4222"
+  nats-server -c deploy/nats-local.conf > /tmp/nats-local.log 2>&1 &
+  disown
+  sleep 1
+else
+  echo "[backend] NATS already on :4222"
+fi
+
+# 2) Bounded backfill window (matches up-local.sh): re-reads recent events on each
+#    start; the SQLite store is idempotent (event id PK) so re-replay is harmless.
+WATCH_ROOT="${OPENSTORY_WATCH_ROOT:-$HOME/.claude/projects}"
+BACKFILL_HOURS="${OPEN_STORY_WATCH_BACKFILL_HOURS:-72}"
+echo "[backend] serve on :3002 (watch=$WATCH_ROOT, backfill=${BACKFILL_HOURS}h)"
+
+# 3) Build once, then exec the BINARY directly (NOT `cargo run`). `cargo run` leaves a
+#    cargo parent that launchd supervises while the real `open-story` runs as its
+#    child; on `launchctl bootout` cargo is signalled but open-story is ORPHANED —
+#    the cause of stranded writers (e.g. pid 79324 on 2026-06-29) and the restart bug.
+#    Exec'ing the binary makes launchd supervise open-story itself, so stop/restart is
+#    clean and KeepAlive tracks the real process.
+echo "[backend] building open-story (debug)"
+cargo build --manifest-path rs/cli/Cargo.toml --bin open-story
+BIN="$OS_ROOT/rs/target/debug/open-story"
+[ -x "$BIN" ] || { echo "[backend] FATAL: build did not produce $BIN" >&2; exit 1; }
+echo "[backend] exec $BIN serve"
+exec env OPEN_STORY_WATCH_BACKFILL_HOURS="$BACKFILL_HOURS" \
+  "$BIN" serve --watch-dir "$WATCH_ROOT"

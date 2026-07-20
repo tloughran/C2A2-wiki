@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  com.tomloughran.openstory.bridge — keeps ~/openstory-watch current.
+  Re-runs the (deterministic, idempotent) symlink script every 10 minutes and at load,
+  so new Cowork sessions under ~/Library/.../local-agent-mode-sessions get flattened
+  into ~/openstory-watch/{project}/{session}.jsonl where the backend (watching that
+  root) ingests them. No model involved — pure filesystem transform. The script exits
+  each run, so NO KeepAlive; StartInterval drives the cadence.
+  Points at the C2A2-wiki repo's scripts/openstory-bridge.sh (single source of truth).
+  It lived in the upstream OpenStory checkout until 2026-07-20, where it was untracked
+  and exposed to upstream pulls despite a comment here claiming it was version-controlled.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.tomloughran.openstory.bridge</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/openstory-bridge.sh</string>
+  </array>
+
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StartInterval</key>
+  <integer>600</integer>
+
+  <key>StandardOutPath</key>
+  <string>/Users/tomloughran/Library/Logs/openstory-bridge.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/tomloughran/Library/Logs/openstory-bridge-error.log</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>HOME</key>
+    <string>/Users/tomloughran</string>
+    <key>PATH</key>
+    <string>/usr/local/bin:/usr/bin:/bin:/opt/homebrew/bin</string>
+  </dict>
+</dict>
+</plist>
