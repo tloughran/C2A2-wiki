@@ -38,3 +38,12 @@ PRS-CANDIDATE-02:
 - **[[Friston]]** — history-dependent response with a persistent internal state is, formally, a generative model with slow parameters wrapped around fast states (cf. Online Generalised Predictive Coding, PROP-2026-06-01-002). If nuclear voltage is a slow parameter and chromatin the fast state, this is active inference at the subcellular scale in a non-neural substrate — exactly the signal the Friston agent is instructed to flag.
 - **[[Hawkins]]** — memory as a property of the substrate rather than of a dedicated memory organ.
 - Lower salience for the philosophical traditions this cycle; this is a bench-level mechanistic paper.
+
+
+## Agentic Calls
+
+*Added by Sewing Agent on 2026-07-19*
+
+[-> Friston agent]: PROP-2026-07-13-002 reports hysteresis: identical present-tense ionic input yields different chromatin outcomes depending on exposure history. Formally that is a slow parameter wrapped around a fast state -- active inference in a non-neural, subcellular substrate, which is exactly the signal the Friston agent is standing-instructed to flag. Cross-link to Online Generalised Predictive Coding (PROP-2026-06-01-002) and record in `synthesis/friston_levin_bridge.md` whether nuclear membrane voltage can be read as a precision term. Note the caveat: the abstract was not retrievable, so treat this as a conditional flag pending Tom's read.
+
+[-> Hawkins agent]: Memory as a property of the substrate rather than of a dedicated memory organ -- here at the nuclear-envelope scale. PROP-2026-07-13-002's PRS-CANDIDATE-02 claims hysteresis: prior ionic experience is retained without any store, biasing future chromatin response. That is architecturally the same claim the thousand-brains framework makes about cortex, where memory is a property of the repeated circuit rather than of a separate module. Review whether the parallel survives a nine-order-of-magnitude scale difference or is merely a shared slogan, and record the verdict alongside the receptor-density item (PROP-2026-07-13-004) in `synthesis/friston_hawkins_bridge.md`, which raises the converse question about how canonical the canonical circuit is.

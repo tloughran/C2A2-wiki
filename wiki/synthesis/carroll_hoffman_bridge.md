@@ -39,3 +39,16 @@ Carroll's MWI and Hoffman's QIT make a single shared claim — that the measurem
 **Synthesis claim:** Fitness-beats-truth is a claim that should be assessable by Carroll's own Bayesian confirmation standard, and the standard cuts in an awkward direction: FBT is a *theorem about evolutionary game models*, and its extension to the claim that human perception is non-veridical about spacetime requires auxiliary assumptions (that the relevant fitness landscapes resemble the modeled ones) that carry most of the empirical weight and receive the least defense. The theorem is secure; the inference from it is where the priors live.
 
 **Open question the wiki cannot yet answer:** What would Hoffman accept as disconfirmation of FBT-as-applied-to-humans? Under a Bayesian standard a theory earns credence by risking it, and the wiki has no record of Hoffman naming an observation that would lower his. Tyson's push-back is the closest the corpus comes; extracting what his objections actually were, and whether the answers survived, is the outstanding task on this bridge.
+
+### 2026-07-19 — Carroll asked to adjudicate "Trace", on record
+
+*Sewing Agent, 2026-07-19.* In the July 2026 Mindscape AMA (PROP-2026-07-17-001) a listener asks Carroll directly to respond to Hoffman's claim that a new Markov-chain-based mathematics ("Trace") can derive special and general relativity en route to a theory of consciousness. Both parties named; a working physicist asked to assess a specific technical claim from a consciousness-first program.
+
+**Synthesis claim.** This bridge has, until now, been an alignment of temperaments — a physicist and an interface theorist disagreeing about starting points. The Trace claim changes its character, because it is *checkable*. Either the Markov-chain construction recovers Lorentz invariance and the Einstein equations or it does not, and that question is independent of whether consciousness-first is a legitimate research strategy. The bridge should be split accordingly:
+
+- **Technical:** does the derivation go through? Not a matter of paradigm allegiance. If it does, physicists must engage regardless of what they think of the motivation; if it does not, no amount of interface-theoretic framing rescues it.
+- **Programmatic:** is deriving known physics from a consciousness-first substrate *evidence for* the substrate, or merely a consistency check? Carroll's Bayesian confirmation standard says recovering known results is weak evidence at best — the theory needs a distinguishing prediction. This is the same standard he applies to Wolfram (see `carroll_wolfram_bridge.md`), and applying it identically to both is itself a datum about how his tradition assigns status.
+
+**Action outstanding.** Carroll's actual reply has not been retrieved — only the fact that the question was asked. Do not record a verdict until the audio or transcript is consulted.
+
+**Question the wiki cannot yet answer.** Hoffman's program has now been assessed by Carroll's standard and Arkani-Hamed's slogan ("spacetime is doomed," see `arkanihamed_hoffman_bridge.md`) in the space of two weeks, from opposite directions. Does the physics community's engagement with Trace differ in kind from its engagement with Wolfram Physics — and if so, is the difference technical or sociological?

@@ -5891,3 +5891,194 @@ REVISE-228:
   Recommended action (Tom): (1) ensure all surfacings are durable; (2) classify surfacings by referent durability; (3) wire ONLY perishable-referent items to a time-bounded fallback (alternate channel or a bounded, review-gated autonomous persistence step) so a lone absent listener is not a single point of failure — without opening a blind-push hole for durable items. Consolidate with REVISE-220/222.
   15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
   PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c]; Item type=PRESUMPTION
+
+---
+
+# ===== 2026-07-19 Agent 15c dispositions — 2026-07-18 EOD batch (12 items) =====
+
+REVISE-229:
+  Date flagged: 2026-07-19
+  Source item: ASSUMPTION-468
+  Item type: ASSUMPTION (stated)
+  Net assessment: 15a and 15b agree the diagnosis is sound (a sandbox-context failure is architectural, not flaky). They diverge entirely on the proposed remedy: 15b retrieved three independently documented mechanisms by which loopback is blocked in sandboxed agent runtimes (socket-layer EPERM, browser SSRF policy, Chrome Local Network Access) plus a direct counterexample (openai/codex #24559) where the service was reachable and navigation still failed.
+  Reasoning: The item bundles a well-supported observation with an unvalidated remedy. Standing up a local HTTP server is a multi-step build whose success hypothesis has a documented failure mode and a one-line discriminating test that has not been run. Disposition targets the remedy, not the diagnosis.
+  What is at risk: The delivery leg of the review workflow; the 29-proposal backlog depends on reviewer notification actually arriving.
+  Recommended action: Before building anything, run a one-line loopback socket test from the scheduled sandbox context (bind + connect on 127.0.0.1). If it returns EPERM, the localhost fix is dead on arrival and an out-of-band delivery route (file path in the report body, or email) is the correct design. Split the item: the diagnosis half is INCORPORATE-ready once the remedy is settled.
+  Urgency: High
+  Status: OPEN — awaiting Tom's review
+  Full results: lit_search_results/for/ASSUMPTION-468_for.md ; lit_search_results/against/ASSUMPTION-468_against.md
+
+REVISE-230:
+  Date flagged: 2026-07-19
+  Source item: ASSUMPTION-470
+  Item type: ASSUMPTION (stated)
+  Net assessment: Both directions converge on the same finer distinction and it cuts against the item. The systematic-review literature (Mateen et al. 2013, PMID 23526335) validates title/abstract screening as a filter with mandatory downstream full-text re-adjudication, not as a terminal evidential basis carrying a confidence label. 15a's own supporting search returned this caveat unprompted; 15b found the same boundary independently.
+  Reasoning: Two independent searches landing on the same boundary condition is the strongest signal available here. This also resolves an existing internal contradiction in C2A2's favour: REVISE-214 already treats this evidential gap as blocking rather than downgrade-able, and the literature sides with REVISE-214. Confidence-downgrading is the wrong instrument for a kind-difference in evidence.
+  What is at risk: PRS corpus quality — every Medium-confidence candidate admitted on publisher metadata alone; and the coherence of the confidence scale itself, which currently spans both degree- and kind-differences in evidence.
+  Recommended action: Adopt REVISE-214's treatment as canonical: no confidence label is well-founded when primary text is unavailable. Introduce an explicit 'unfounded — pending retrieval' state rather than a downgrade, and re-adjudicate the affected June 3 candidates once the transcript is retrieved by a permitted route. Separately, the 30-day primary-material window relaxation returned zero supporting evidence in either direction and should be treated as an unexamined change.
+  Urgency: High
+  Status: OPEN — awaiting Tom's review
+  Full results: lit_search_results/for/ASSUMPTION-470_for.md ; lit_search_results/against/ASSUMPTION-470_against.md
+
+REVISE-231:
+  Date flagged: 2026-07-19
+  Source: Agent 15b SYSTEMIC-RISK-FLAG (High), 2026-07-19 — not tied to a single queue item
+  Affected items: ASSUMPTION-468, ASSUMPTION-469, ASSUMPTION-472, PRESUMPTION-494, PRESUMPTION-495, PRESUMPTION-498, PRESUMPTION-499 (7 of 12)
+  Pattern: remedy-jumping under single-explanation bias. In each item the observation is well evidenced but the pipeline proposes a remedy that the literature names as an anti-pattern, or that is unvalidated against the actual mechanism, while a cheap discriminating test exists and was not run.
+  Second thread: three of the proposed remedies (A-472 enable dormant checks; P-495 TTL / auto-escalation; A-469 blocking emission gate) all increase signal volume into a channel with demonstrated zero throughput. The alert-fatigue evidence predicts suppression that degrades the signals already working.
+  Recommended action: introduce a discriminating-test step between surfacing and remedy across the 14/15 pipeline — no remedy proposed without naming the cheapest test that would falsify the diagnosed mechanism. Separately, cap net new alert volume until the review channel has demonstrated non-zero throughput.
+  Urgency: High
+  Status: OPEN — awaiting Tom's review
+
+REVISE-232:
+  Date flagged: 2026-07-19
+  Source: narrow sub-claim of PRESUMPTION-496 (item dispositioned MONITOR — see MONITOR-450)
+  Note: 15a and 15b disagree strongly on P-496's general claim but agree on this narrow one, so it is broken out for independent action.
+  Finding: the No-Blind-Push rule is scoped to writes, but a read-only diagnostic (the .git/index.lock discriminator) was deferred under it. Restraint was applied beyond the rule's actual scope.
+  Recommended action: clarify No-Blind-Push to state explicitly that read-only diagnostics are always in scope for autonomous execution. Cheap, reversible, and independent of the contested general claim.
+  Urgency: Medium
+  Status: OPEN — awaiting Tom's review
+
+
+---
+
+# ===== 2026-07-20 Agent 15c dispositions — 2026-07-19 EOD batch (4 REVISE items) =====
+
+REVISE-233:
+  Date flagged: 2026-07-20
+  Source item: ASSUMPTION-477
+  Item type: ASSUMPTION (stated)
+  15a: SUPPORTED (Strong) | 15b: CHALLENGED (Strong)
+  **ADJUDICATED DIRECT CONFLICT — the two agents returned opposite verdicts at equal strength on this item. Averaging was refused; the conflict is resolved below on the evidence.**
+
+  Net assessment: The two verdicts are not verdicts on the same proposition, and separating the propositions dissolves most of the conflict and settles the remainder against the item.
+    (i) THE DATED FACT — "independence became structural on 2026-07-19; every prior disposition was produced under asserted independence." 15a explicitly declines to assess it (outside search scope, an internal-record claim). 15b explicitly states it is "not challenged." The fact is therefore UNCONTESTED by both agents and is not what either verdict is about.
+    (ii) THE NORMATIVE CORE — "asserted independence is materially weaker than enforced independence." This is what 15a graded Strong, citing arXiv:2606.29270 (LLMs share pretraining corpora and architectures, so their errors correlate and violate the Condorcet independence assumption; the correlated majority suppresses correct minority findings) and arXiv:2606.10296 (an LLM judge over correlated LLM inputs can make the aggregate WORSE than either input — a claim that bears directly on this agent). Uncontested by 15b.
+    (iii) THE IMPLIED CONSEQUENCE — that the pre-07-19 record is therefore materially contaminated and the 905 existing pairs should be discounted or re-run. This is what 15b graded Strong AGAINST, citing van Rooyen et al., JAMA 1998 (PMID 9676666): 527 consecutive BMJ manuscripts randomized, blinding "made no editorially significant difference to review quality, reviewers' recommendations, or time taken" — masked 2.82 vs unmasked 2.96. The one trial usually cited for blinding's value, McNutt 1990, is a quarter the size and reports 3.5 vs 3.1.
+
+  Adjudication and reason for deciding rather than averaging: van Rooyen is the largest randomized trial of THE SPECIFIC INTERVENTION at issue — blinding one evaluator to another's assessment — and it is null. 15a knew of it: van Rooyen appears as source 5 in 15a's own file, reported under the no-cherry-picking rule, and 15a still graded Strong. That is not a disagreement about the source; it is 15a grading proposition (ii) while 15b graded proposition (iii). Decisively, 15a's OWN strongest sources undercut the item's implied relief. 15a's caveat (c) reads: "structural file-access blocking does not address shared-pretraining correlation, which is the dominant channel in the retrieved literature. The 905-pair record may be contaminated by a mechanism the 07-19 fix does not touch. This is support for the item's concern but not for its proposed resolution." 15b's symmetric risk reads: "declaring independence 'now structural' invites the belief that the remaining sources of correlation are handled. They are not." **The two agents converge on the operative finding: the read channel is not the dominant correlation source, and 2026-07-19 removed the weakest of at least four.** The item as written claims more than either agent supports, in the direction that produces both a costly action and a false sense of security. That is a design representation to revise, not a premise to incorporate or a contest to monitor.
+
+  Reasoning: This is dispositioned REVISE rather than MONITOR because the design change has already been made and is already being represented — "independence became structural" appears in this batch's own 15a return header. An inaccurate label on a live architectural property, propagating into every disposition produced under it, is not something to watch for a week. The revision is cheap, is textual, and both agents recommend the same wording.
+
+  What is at risk: (1) The scarcest resource in the system. PREMISE-106 establishes the drain rate as the binding constraint; re-deriving 905 pairs to correct an effect whose closest empirical analogue sizes near zero would consume it entirely. (2) Every disposition produced from 2026-07-19 onward, including this one, which inherits a correlation channel it is describing. (3) The false-security failure this vault has already named in PRESUMPTION-505 / PREMISE-110 — a green signal ("independence achieved") over an unfixed condition, which is the REMEDY-INHERITS-DEFECT pattern in REVISE-236 applied to the pipeline's own architecture.
+
+  Recommended action (Tom / orchestrator):
+    1. RELABEL, do not re-run. Report the 2026-07-19 change as "READ-CHANNEL INDEPENDENCE ENFORCED," never as "independence achieved." Both agents recommend this wording independently. It is accurate and it is free.
+    2. DO NOT discount or re-derive the 905-pair record on the strength of an unmeasured contamination assumption.
+    3. If a contamination estimate is wanted, use the design that isolates the variable: take ~20 pre-07-19 items and, IN ONE SESSION with one model version, one prompt and one corpus snapshot, run each twice — once with 15a's file readable, once blocked. The paired difference in 15b challenge strength is the blinding effect, cleanly isolated. Record it with its interval and stop. The item's own proposed test (re-run pre-07-19 dispositions under blocking) varies blinding TOGETHER WITH model version, prompt revision, retrievable literature and a year of vault content, so its delta is uninterpretable as a contamination estimate — the item's test does not measure what the item claims.
+    4. ADDRESS THE DOMINANT CHANNEL. Run 15a and 15b on the same item under full blocking and measure how often they cite the SAME SOURCES. High overlap under enforced blocking means the shared corpus and shared pretraining are the real channel and the 07-19 change addressed the wrong one. This is the measurement that matters and it has never been taken.
+  Urgency: Medium (the relabel is immediate and costless; the measurement is not urgent, but the record must stop claiming what it has not established)
+  Status: OPEN — awaiting Tom's review
+  Full results: lit_search_results/for/ASSUMPTION-477_for.md ; lit_search_results/against/ASSUMPTION-477_against.md
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-477
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-19 lit-search pipeline transcript
+      15a: Searched for supporting literature; SUPPORTED (Strong) — graded on the normative core
+      15b: Searched for challenging literature; CHALLENGED (Strong) — graded on the implied consequence
+      15c: Net evaluation and disposition; conflict adjudicated by separating the three propositions and deciding on source directness; REVISE
+    Current status: REVISION-FLAGGED (CONTESTED, adjudicated)
+    Disposition record: DISPOSITION-ASSUMPTION-477 (lit_search_returns.md, 2026-07-20)
+
+REVISE-234:
+  Date flagged: 2026-07-20
+  Source item: ASSUMPTION-481
+  Item type: ASSUMPTION (stated)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: The DIAGNOSIS is uncontested and well evidenced on both sides — connector enumeration has failed four consecutive weeks, all classification is fallback, a genuinely uninstalled connector is undetectable, and the retraction of the prior week's "too charitable" explanation is behaviour both agents endorse. It is already covered in general form by PREMISE-110 (detectors invert; a fallback that manufactures plausible-shaped output is, in the retrieved phrasing, "a hallucination implemented in shell"). What is flagged here is the RESPONSE, where the two agents cite opposed literatures and 15b's is the stronger evidence. 15a cited epistemic-humility framings (arXiv:2605.23614, 2512.19466) that ASSERT abstention is correct; these are preprints and assert rather than measure, and 15a's own caveat (b) concedes "no effect sizes were found" and notes a countervailing literature it did not search. 15b cited van der Bles et al., PNAS 2020 (PMID 32205438) and Royal Society Open Science 2023 (doi 10.1098/rsos.230604), which MEASURE the effect and find it sharply format-dependent: NUMERIC uncertainty expressed as a range or interval costs little credibility and can increase it, while UNQUANTIFIED VERBAL uncertainty consistently lowers trust in the information AND in the source. Declining to state any figure is the unquantified form taken to its limit — the version the evidence disfavours.
+  Reasoning: The mechanism matters more than the effect size and it applies directly here. Uncertainty communication permits belief-consistent processing: an abstention does not deliver "we don't know," it leaves the reader holding their prior — which for a weekly connector report is the last number they saw. That number is the fallback-derived count the agent has just repudiated. **The abstention therefore republishes the disputed figure with the caveat quietly removed, while appearing to withhold it.** This is the REMEDY-INHERITS-DEFECT pattern (REVISE-236) in its cheapest form: answering "our number may be wrong" with silence leaves the consumer holding the same wrong number, uncaveated. A better-evidenced report was available and was not made.
+  What is at risk: The connector-health weekly's usefulness as a signal, and the integrity of its own series. Four weeks of fallback classification are now unlabelled and a fifth week is absent — a discontinuity in the agent's own reporting series, which is PREMISE-105's break-in-series problem appearing in a different register and with the same fix. Downstream: any artifact that cites a connector count.
+  Recommended action (Tom / orchestrator):
+    1. REPORT A DIRECTIONAL BOUND, DO NOT ABSTAIN. The correct report was available: "at least N installed; uninstalled connectors are undetectable under fallback, so the true count is N or higher." State uncertainty numerically; avoid unquantified verbal hedging.
+    2. WHERE ABSTENTION IS GENUINELY CORRECT, state explicitly what the consumer should NOT infer — that the previous number still holds — because the belief-consistency evidence says they will otherwise infer it.
+    3. RETAIN AND LABEL the four weeks of fallback classification as a known-biased series with the bias direction named. Reconciliation practice treats a known-biased source as usable once the direction is stated. Discarding it forfeits the only evidence available for sizing the error — which is exactly what the item's own in-house test proposes to recover later.
+    4. APPLY THE PREMISE-105 TREATMENT to the four-week record: it has a break and needs a marker or a re-derivation, and the same decision applies.
+    5. REPAIR ENUMERATION, then compare four weeks of fallback classification against ground truth to measure the fallback error rate. This is the item's own well-formed discriminating test and it also settles whether the floor claim the agent declined to make would have been correct.
+    6. VERIFY THE PREDICTION CHEAPLY: inspect the next artifact that cites a connector count. If the pre-abstention fallback figure reappears uncaveated, the abstention failed in exactly the predicted way and step 1 becomes mandatory rather than advisory.
+  Urgency: Medium
+  Status: OPEN — awaiting Tom's review
+  Note: the diagnosis half of this item is INCORPORATE-ready once the reporting convention is settled (precedent: REVISE-229, 2026-07-19). It is not incorporated now because the item as stated bundles the diagnosis with the endorsed abstention, and incorporating the bundle would validate the disfavoured response.
+  Full results: lit_search_results/for/ASSUMPTION-481_for.md ; lit_search_results/against/ASSUMPTION-481_against.md
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-481
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-19 connector health weekly transcript
+      15a: Searched for supporting literature; SUPPORTED (Strong)
+      15b: Searched for challenging literature; PARTIALLY-CHALLENGED (Moderate — against the response, not the diagnosis)
+      15c: Net evaluation and disposition; REVISE targeting the reporting convention; diagnosis held for incorporation once settled
+    Current status: REVISION-FLAGGED
+    Disposition record: DISPOSITION-ASSUMPTION-481 (lit_search_returns.md, 2026-07-20)
+
+REVISE-235:
+  Date flagged: 2026-07-20
+  Source item: PRESUMPTION-500
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Strong, against the evaluation; the surfacing itself is NOT challenged)
+  **Highest-stakes item in the batch. 14b's own risk note: "Critical — this is the target function of the accelerator."**
+  Net assessment: Both agents agree on the surfacing and both agree the item's implied next move is unsafe, which is an unusual and informative convergence. THE SURFACING IS UNCONTESTED: convergence is nowhere stated as a hypothesis, is built into the Rung-2 detector and every cross-connection counter, and 14b checked decisions.md and assumptions.md and found no prior statement. THE PRESUMED CRITERION IS STRONGLY CHALLENGED BY 15a's OWN SUPPORTING SEARCH — and this is the key structural point: because the item is a critique, 15a's strong support for the item IS strong evidence against the presumption. Lorenz et al. (PNAS 2011) show mild influence toward convergence lowers accuracy WHILE RAISING CONFIDENCE, which makes a convergence-scored detector not merely a poor instrument but an INVERTING one — it would report improving success exactly as collective accuracy degrades, placing this in the same class as PREMISE-110. The diversity prediction theorem makes diversity a subtracted term in collective error. Three 2025-2026 results establish that LLM populations homogenise and that long-form debate specifically flattens, so convergence is the DEFAULT DRIFT of the substrate C2A2 runs on: an unstated presumption that convergence indicates success would systematically mistake substrate homogenisation for research progress. THE IMPLIED REPLACEMENT IS STRONGLY CHALLENGED BY 15b: MacIntyre, recruited by the item against convergence scoring, in fact argues rival traditions ARE rationally adjudicable with one defeated on the other's own terms — a convergence-shaped outcome; the ensemble literature reports an interior optimum rather than a monotone preference for preserved difference; and the leading instrument for the alternative signature, the Ideological Turing Test, operationalises passing as OPPONENTS AGREEING at or above the in-group rate, with the paper's own limitations section conceding it conflates persuasiveness with understanding.
+  Reasoning: The item is dispositioned REVISE, not MONITOR, because the two halves have opposite time constants and opposite costs. The SUBSTANTIVE question — which signature is right — is genuinely contested and is monitored under MONITOR-453 (ASSUMPTION-475, the stated twin) pending a rank-correlation test. The DESIGN DEFECT — that the accelerator's target function has never been written down as a hypothesis anywhere in the record — is not contested by anyone, is the item's real contribution, is free to fix, and requires an authority this pipeline does not have. Leaving it in MONITOR would leave the target function undeclared for another week for no reason. This flag targets the declaration, and explicitly forbids the replacement.
+  What is at risk: The Rung-2 detector, every cross-connection counter, and the accelerator's target function — i.e. what the whole system is optimising for. Secondarily: the interpretation of every cross-tradition result produced to date, all of which were scored against an undeclared criterion.
+  Recommended action (Tom / orchestrator):
+    1. STATE THE PRESUMPTION AS A HYPOTHESIS, in decisions.md, in the form "we are treating convergence as the success signature of inter-tradition dialogue; the alternative signature is mutual registration with preserved local optimization; this has not been tested." Both agents recommend it, it costs nothing, and it is the item's entire uncontested content.
+    2. DO NOT REPLACE THE CRITERION. Removing convergence from Rung-2 scoring before a separable alternative exists leaves the rung unscored and, worse, UNFALSIFIABLE — two traditions talking past each other indefinitely satisfies "preserved local optimization." 15b's formulation is exact: replacing a possibly-wrong objective with an unmeasurable one converts it into no objective.
+    3. INSTRUMENT BOTH AND REPORT THE PAIR. This is the ensemble literature's own recommendation and is ASSUMPTION-475's stated in-house test.
+    4. RUN THE DISCRIMINATING TEST BEFORE CHANGING ANY DETECTOR: score existing dialogues under (a) convergence, (b) mutual registration, (c) an ITT-style measure, and compute pairwise rank correlations. Strong (b)-(a) correlation -> the dichotomy is false and the presumption is harmless. Weak correlation -> the disagreement set is the item's entire empirical content; inspect it by hand.
+    5. IF AN ITT-STYLE INSTRUMENT IS ADOPTED, PUBLISH THE AGREEMENT-RATE CORRELATION ALONGSIDE THE SCORE. Otherwise the system will believe it has switched criteria while measuring the old one — 15b names this the worst of the three available states because it is invisible.
+    6. MANDATORY PRE-DIALOGUE BASELINE (see CROSS-ITEM adjudication in REVISE-236 and in REVISE-233): C2A2's traditions are instantiated by agents drawn from a COMMON PRETRAINED MODEL, so an agent may produce a rival tradition's arguments fluently from shared pretraining rather than from registration acquired in dialogue. The ITT would then read high at baseline and be insensitive to the very thing it is meant to measure. No post-dialogue ITT score is interpretable without a pre-dialogue baseline.
+    7. CONSIDER MACINTYRE'S OWN CRITERION as an independent third measure, which both agents proposed unprompted: can tradition A restate tradition B's position in B's vocabulary AND identify B's unresolved epistemic crisis? It is testable, it is not agreement, and it is not convergence.
+  Urgency: HIGH (per the 15c spec: a PRESUMPTION whose presumed criterion is strongly challenged, at the target function of the system, where the designers did not know they were assuming it)
+  Status: OPEN — awaiting Tom's review
+  Full results: lit_search_results/for/PRESUMPTION-500_for.md ; lit_search_results/against/PRESUMPTION-500_against.md
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-500
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the 2026-07-19 sewing weekly transcript; checked against decisions.md and assumptions.md for any prior statement (none found)
+      15a: Searched for supporting literature; SUPPORTED (Strong)
+      15b: Searched for challenging literature; PARTIALLY-CHALLENGED (Strong, against the evaluation only)
+      15c: Net evaluation and disposition; REVISE on the declaration, replacement explicitly forbidden pending MONITOR-453's test
+    Current status: REVISION-FLAGGED
+    Disposition record: DISPOSITION-PRESUMPTION-500 (lit_search_returns.md, 2026-07-20)
+
+REVISE-236:
+  Date flagged: 2026-07-20
+  Source: Agent 15b SYSTEMIC-RISK-FLAG (High), 2026-07-20 — "REMEDY-INHERITS-DEFECT". Not tied to a single queue item. Evaluated, not passed through.
+  Affected items as filed by 15b: ASSUMPTION-474, ASSUMPTION-476, ASSUMPTION-481, PRESUMPTION-500, PRESUMPTION-502, PRESUMPTION-503, PRESUMPTION-505 (7 of 14).
+  Pattern: in seven of fourteen items the observation is sound and the proposed remedy reproduces, one level up, the exact property the observation was about — so running the remedy would produce a green signal over the unfixed condition, converting a VISIBLE defect into an INVISIBLE one. This is distinct from the 2026-07-19 flag (REVISE-231, remedy-jumping before a discriminating test): here the test is not merely skipped, the instrument is structurally isomorphic to the disease.
+
+  15c EVALUATION OF THE FLAG (this is the part 15b could not do): the flag is UPHELD, and it was applied item-by-item rather than recorded. In every one of the seven cases the disposition above separates the observation from the instrument. Specifically:
+    - A-474 (proxy replaced by a proxy subject to the identical Goodhart argument, and one agents can write to directly): PREMISE-105 incorporates the DIAGNOSIS and explicitly excludes connectivity as the replacement metric.
+    - A-476 (a detector whose reference is generated by the monitored process, answered with a reference that is non-monotonic and drifts, fired into a channel with no consumer): MONITOR-454 holds the remedy pending a one-line clock check and a bulk-transition count; the diagnosis is absorbed into PREMISE-110.
+    - A-481 ("our number may be wrong," answered with silence, which leaves the consumer holding the same wrong number uncaveated): REVISE-234 replaces abstention with a numeric floor and a stated error direction.
+    - P-500 / A-475 ("we are measuring agreement instead of understanding," answered with an instrument whose passing criterion is opponents' agreement): REVISE-235 forbids replacement and mandates publishing the agreement-rate correlation; MONITOR-453 holds the substantive question.
+    - P-502 ("flagging is presumed to be delivery," answered with acknowledgement receipts, under which "acknowledged" is presumed to be "acted on"): PREMISE-108 makes the instrument CONTENT-APPEARING-IN-RECIPIENT-OUTPUT load-bearing and forbids acknowledgement as a health metric.
+    - P-503 ("claims exceed evidence," answered with a coverage percentage that rises on marginal reads and reads green during the target failure): PREMISE-109 makes CLAIMS-WITHOUT-EVIDENCE load-bearing and excludes coverage.
+    - P-505 ("detectors invert," answered with a discrepancy check provably blind to common-mode inversion, in a fleet whose monitors share runtime, scheduler and permissions with their subjects): PREMISE-110 folds the common-mode scope guard into the premise and replaces the reachability audit with a live proof-test.
+  **Net effect: no defective instrument entered the validated-premises register this run.** That was the flag's purpose and it is discharged at the item level. What remains and requires Tom is the standing process change.
+
+  Residual finding 15c adds: the flag applies to THIS PIPELINE'S OWN ARCHITECTURE and 15b did not extend it there. ASSUMPTION-477 announces that 15a/15b independence "became structural," when the enforced channel is the weakest of at least four correlation sources and the dominant one (shared pretraining and shared corpus) is untouched. That is a green signal over an unfixed condition, produced by the same pipeline that raised the flag, on the same day. It is dispositioned separately as REVISE-233.
+
+  Recommended action (Tom / orchestrator):
+    1. ADOPT THE ISOMORPHISM TEST as a standing step between surfacing and remedy, alongside REVISE-231's discriminating-test step: state the property the observation identified as defective, then ask whether the proposed instrument HAS THAT SAME PROPERTY. If it does, the remedy is worse than no remedy, because the current defect is at least visible.
+    2. Note that in all seven cases the isomorphism-free alternative is CHEAPER than the remedy it replaces (a one-line clock comparison; counting claims without evidence; searching recipients' outputs; a sandbox proof-test; reporting a floor). This flag does not trade rigour against cost.
+    3. SECONDARY PATTERN, recorded by 15b and endorsed here: SAME-DAY GENERALIZATION. Four items (A-479's 7-of-12, A-480, P-504's three breaches, P-505's four detectors) generalize from cases observed and counted on a single day by the pipeline that also produced them, with no external coding rule and no base rate. This is the posture challenged in PRESUMPTION-499 on 2026-07-19 and it has not narrowed. In every instance the base rate is obtainable cheaply from the existing record; none was obtained. 15c acted on this by excluding all four counts from what was incorporated (see PREMISE-107's "Not incorporated" clause and PREMISE-110's "Scope limit" clause) — but exclusion is not a fix, and the standing recommendation is that a count produced by the pipeline that authored the items be re-coded by a different agent against a written rule before it is quoted.
+  Urgency: High
+  Status: OPEN — awaiting Tom's review
+  PROVENANCE:
+    Origin: 15b (systemic; not a 14a/14b queue item)
+    Chain: [15b -> 15c]
+    Original item: n/a — cross-item systemic flag over the 2026-07-19 EOD batch
+    Item type: SYSTEMIC-RISK-FLAG (High)
+    Transform at each step:
+      15b: Raised REMEDY-INHERITS-DEFECT across 7 of 14 items with literature basis
+      15c: Evaluated and upheld; applied item-by-item to exclude every named instrument from incorporation; extended the flag to the pipeline's own independence claim (REVISE-233); residual process change routed to Tom
+    Current status: REVISION-FLAGGED
+    Disposition record: CROSS-ITEM FLAG EVALUATIONS (lit_search_returns.md, 2026-07-20)

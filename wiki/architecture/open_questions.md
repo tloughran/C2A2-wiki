@@ -1356,3 +1356,93 @@ OPEN-122:
   Why it needs Tom: it is an infrastructure decision about how autonomous jobs are given a runtime environment equivalent to the attended one; distinct from OPEN-121 (who pushes staged work) — this is about whether the job can even produce correct work headless in the first place.
   Related: ASSUMPTION-465, ASSUMPTION-466, PRESUMPTION-490, OPEN-121, the "autonomous run cannot self-complete" family.
   Status: OPEN — awaiting Tom
+
+OPEN-123:
+  Date raised: 2026-07-18
+  Question: Should the fleet auto-escalate on an age threshold, or throttle its own output when the review queue gets deep? Stated verbatim in the 2026-07-18 evening cowork session: "Thirteen days in, should the fleet auto-escalate on an age threshold, or throttle its own output when the review queue gets deep — producing less, but nothing that rots before you see it?"
+  Why it matters: These are opposite responses to the same fact. Escalation assumes the human channel can be reached and is merely under-prompted; throttling assumes it cannot be reached and that unreviewed output is a liability rather than an asset. On day 13, with 29 undecided proposals spanning 07-01, an 18-day review gap, and chat sync down in both directions since 07-13, the escalation branch has no working transport — which is itself an argument for the throttle branch, or for making transport the prerequisite for either.
+  Depends on: OPEN-119 (quota budget and shed order — transmission), REVISE-220/222 (age-based escalation preserving No-Blind-Push), PRESUMPTION-480 (perishability), PRESUMPTION-493 (fail-loud presumes a listener), PRESUMPTION-496 (deferral presumes a decider)
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-123
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Extracted verbatim from the 2026-07-18 evening cowork→chat transcript, where it was raised explicitly as a question for Tom. [stated]
+    Current status: OPEN
+
+OPEN-124:
+  Date raised: 2026-07-18
+  Question: Which agent is the counting authority for each shared artifact, and what is the definition, scope and computation moment of each fleet counter? Generalizes OPEN-112 (PRS count discrepancy) to the whole fleet after four independent same-day count splits.
+  Why it matters: On 2026-07-18 four counters disagreed across agents on the same day — proposals pending 29 vs 27; scheduled tasks 41 vs 36; OpenStory consecutive failures 5 vs 6; PRS network 300/90/50 vs 448/52/51. The last was emitted in an outbound Gmail draft before being caught and superseded (ASSUMPTION-469), which shows the standing known-drift flag annotates but does not block. Until each counter has one owner and one definition, every metrics snapshot — including this pipeline's own — is one more competing reading rather than a measurement.
+  Depends on: OPEN-112 (unreconciled PRS count discrepancy), ASSUMPTION-467, ASSUMPTION-469, PRESUMPTION-494, REVISE-226 (define the canonical rule first), the unresolved 50-vs-53 findings drift
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-124
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from the 2026-07-18 cross-agent count disagreements documented in ASSUMPTION-469 and PRESUMPTION-494; scoped as the general form of the still-unreconciled OPEN-112. [inferred from stated discrepancies]
+    Current status: OPEN
+
+OPEN-125:
+  Date raised: 2026-07-19
+  Question: Should Rung-2 inter-tradition dialogue be scored on convergence at all — and if not, is there a measurable proxy that distinguishes a participant who has *understood* a rival position from one who has *adopted* it?
+  Why it matters: Levin's virtual-governor result, arriving through the system's own corpus, argues that forcing parts into too-complete agreement destroys the local optimization that made the collective intelligent. If it transfers, convergence is evidence that the detector is damaging what it measures, and the success signature becomes "increased mutual registration with preserved local optimization" — participants who can state a rival position accurately while continuing to argue from their own. The instrumentation half is the blocker: without a proxy separating understanding from adoption, the constraint is unenforceable and the alternative metric cannot be built. This is the target function of the whole accelerator, and it has never been written down as a decision, which is why it took an external paper to make it visible.
+  Depends on: ASSUMPTION-475 (the stated challenge), PRESUMPTION-500 (the presumed target), the Rung-2 detector design, the cross-connections counter, PRESUMPTION-390 / MONITOR-375
+  Status: OPEN — awaiting Tom (flagged by the sewing agent as the walk-worthy item)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-125
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Extracted from the 2026-07-19 sewing agent weekly transcript and cowork→chat summary, where it was raised explicitly for morning discussion. [stated]
+    Current status: OPEN
+
+OPEN-126:
+  Date raised: 2026-07-19
+  Question: Should externally observable success criteria become a standing intake requirement — with traditions that cannot supply one entering the corpus as *testimony* rather than *evidence*, tagged accordingly?
+  Why it matters: Two Rohr proposals in one week both volunteered third-party-observable criteria unprompted (DesCamp's twenty-three-hours test; the Beatitudes read as an outcome profile), which suggests the requirement is satisfiable rather than hypothetical. The recorded worry is that it may silently privilege one tradition family — those whose practices already generate behavioural signatures — and so encode a methodological preference as an evidential standard. The ruling determines what the corpus is for: a record of what traditions claim, or a body of testable material.
+  Depends on: the intake quality filter, the testimony/evidence distinction (currently unformalized), PRESUMPTION-500, OPEN-125
+  Status: OPEN — awaiting Tom (needs a ruling; the sewing agent declined to adopt it unilaterally)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-126
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Extracted from the 2026-07-19 sewing agent weekly transcript and cowork→chat summary, including the recorded worry about tradition-family bias. [stated]
+    Current status: OPEN
+
+OPEN-127:
+  Date raised: 2026-07-19
+  Question: Should the vault census exclude machine dumps (`architecture/lit_search_results/` and `architecture/daily_sync/`), and if so, what break-marker convention repairs the existing series?
+  Why it matters: Fourth consecutive week this has been flagged and not acted on. The two directories hold 1,951 .md files — roughly 70% of all counted orphans and 56% of all pages. Measured both ways the vault is 3,483 pages / 2,759 orphans, or 1,532 / 808 excluding them. The change is one line of resolver config but it redefines the census, breaks the trend line, and therefore needs a break-marker; it also requires deciding whether the historical series is re-derived or simply discontinued. Until then the only long-run health measure the vault has is measuring its own machine output volume, and the "+144 orphans per week" headline is mostly artifact. Note the excluded material is this pipeline's own output, which is why no agent that writes it has proposed excluding it on its own authority.
+  Depends on: ASSUMPTION-474, PRESUMPTION-501, OPEN-124 (counting authority), the connectivity_log.csv series and its 07-12 incomparability (3,258 weekly vs 3,338 bootstrap same day)
+  Status: OPEN — awaiting Tom (explicitly held for sign-off; flagged, not changed)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-127
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Extracted from the 2026-07-19 sewing agent weekly and wiki bootstrap audit transcripts, both of which flagged the exclusion and declined to apply it. [stated]
+    Current status: OPEN
+
+OPEN-128:
+  Date raised: 2026-07-19
+  Question: Do institutional events belong in the corpus as a first-class node type — and if so, who authors them, given that the quality filter cannot generate a proposal from commentary *about* a thinker?
+  Why it matters: Second consecutive week raised with no home. VERSES AI halted all AI R&D on 2026-06-18 and Friston resigned as CSO on 2026-06-27. C2A2 explicitly treats a research program's institutional track record as evidence about the program, so the collapse of active inference's flagship commercial instantiation is exactly the kind of evidence the design says it wants — but the intake path only accepts primary material by a tracked thinker, so the filter correctly refuses it and there is nowhere else to put it. The gap is structural, not a judgement call: the corpus has no node type for events, only for texts.
+  Depends on: the intake quality filter's authorship requirement, the primary-material rule (ASSUMPTION-470, PRESUMPTION-497, REVISE-214), the Friston tradition page
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-128
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Extracted from the 2026-07-19 cowork→chat summary, where it was raised for the second consecutive week as an item with no home. [stated]
+    Current status: OPEN

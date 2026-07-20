@@ -524,3 +524,66 @@ cd "wiki/synthesis" && find . -name "*_bridge.md" -size 0 -delete
 5. **Prior-run litter is gone** — `synthesis/__unlinktest_maUx.md` no longer present. Thank you; nothing outstanding on that.
 
 *Autonomous scheduled run. Append-only; no deletions. All additions italic-datestamped 2026-07-12.*
+
+---
+
+## Run: 2026-07-19 (Sunday weekly, autonomous)
+
+**Connectivity snapshot:** 2,759 orphan / 663 sparse / 61 connected / 3,483 total.
+Excluding `architecture/lit_search_results/` and `architecture/daily_sync/`: **808 orphan / 663 sparse / 61 connected / 1,532 total.**
+
+**CSV row appended** to `architecture/metrics/connectivity_log.csv` as `2026-07-19,2759,663,61,3483`.
+
+> **RESOLVER DISCONTINUITY — FLAGGED, NOT HIDDEN.** This row is not cleanly comparable to the ones above it. The 07-12 weekly row reports 3,258 total pages; an independent census the same day (`architecture/sewing_agent_bootstrap_2026-07-19.md`) measured 3,338 for the same vault — an 80-file gap between resolvers. This run's resolver (excluding `node_modules`, `lib`, `session-archive`, and dotfiles only) lands at 3,483, within 1 file of the bootstrap resolver's 3,482. The apparent +225 total / +192 orphan jump since 07-12 therefore mixes real growth (~+145) with ~+80 of resolver definition. **The trend line needs a break-marker at this row.** Recommend fixing one resolver definition in code and re-deriving the series, or accepting the break and annotating it.
+
+### Pages processed (10)
+
+| Page | backlinks before→after | calls |
+|---|---|---|
+| 2026-07-06_levin_multi-scale-longevity | 0→0* | Stump, Friston, Loughran, Wolfram |
+| 2026-07-13_levin_alignment-virtual-governor | 0→0* | Friston, Loughran, Wolfram, Kastrup |
+| 2026-07-13_levin_inner-nuclear-membrane-voltage-chromatin | 0→0* | Friston, Hawkins |
+| 2026-07-13_levin_diverse-intelligence-mental-health-talk | 0→0* | Friston, Kastrup, McGilchrist, Loughran |
+| 2026-07-13_friston_receptor-density-ieeg-dcm | 0→0* | Levin, Hawkins, Loughran |
+| 2026-07-14_kastrup_chandaria-ai-consciousness-awakening | 0→0* | Friston, Hoffman, McGilchrist |
+| 2026-07-14_levin_what-lives-definition-of-life-meta-analysis | 0→0* | Wolfram, Hoffman, Kastrup |
+| 2026-07-17_carroll_mindscape-ama-july-2026 | 0→0* | Hoffman, Arkani-Hamed, Stump, Kastrup |
+| 2026-07-18_wolfram_history-qa-june3-discrete-space | 0→0* | Stump, Loughran, Carroll, Arkani-Hamed |
+| 2026-07-19_rohr_practicing-just-this-weekly-summary | 0→0* | Friston, McGilchrist, Stump, Fredrickson, Loughran |
+
+(*Agentic calls are routing requests asking named agents to add reciprocal backlinks; inbound counts do not rise until those agents act.)
+
+**Queue note honoured:** `2026-07-06_levin_multi-scale-longevity` was the 07-12 run's single deferred item, flagged "queue first next run." Processed first. Its distinct content — the Ship-of-Theseus/species-identity argument — routed to Stump, which the 07-12 run did not anticipate and which is the better fit than the Friston/Loughran pairing that was predicted.
+
+**Deferred (3):**
+- `2026-07-18_levin_training-ecosystems-learning-unconventional.md` (PROP-2026-07-18-002) — held to the 10-page cap and to tradition diversity; Levin already took 5 of the 10 slots. Strong item (ecosystem-scale learning with no memory medium; 220k parameter sweep). **Queue first next run.**
+- `2026-07-19_rohr_beatitudes-week-two-weekly-summary.md` (PROP-2026-07-19-001) — the weaker of two Rohr items this week; its core move (Beatitudes as descriptive outcome-profile rather than imperative) is recorded in `synthesis/friston_rohr_bridge.md` and `synthesis/loughran_rohr_bridge.md` so the signal is not lost. Queue second.
+- `2026-07-19_wright_who-is-this-god-between-beliefs.md` (PROP-2026-07-19-003) — **deliberately NOT processed.** The proposal carries `content_verified: false`, proposes no PRS triplets, and states "DO NOT INGEST WITHOUT LISTENING FIRST." Injecting agentic calls would manufacture routing signal from four tags and a title. Correct handling is Tom's reviewer action (listen, then rewrite or deny as duplicative of the God's Homecoming proposals), not sewing.
+
+**Agentic calls injected: 36** — Loughran ×5, Friston ×5, Kastrup ×4, Stump ×4, Wolfram ×3, McGilchrist ×3, Hoffman ×3, Hawkins ×2, Arkani-Hamed ×2, Levin ×2, Carroll ×1, Fredrickson ×1. Seven calls failed the "cites a specific PROP id, PRS candidate, or file" check on first verification and were rewritten before close rather than shipped as boilerplate (Hawkins/inner-nuclear, Loughran/mental-health, McGilchrist/Chandaria, Hoffman + Kastrup/what-lives, Kastrup/Carroll-AMA, Fredrickson/Rohr).
+
+**Bridge notes written: 18** — 3 zero-byte stubs FILLED, 4 CREATED, 11 APPENDED.
+
+- **FILLED:** `loughran_wolfram` (Wolfram narrating canon-formation while seeking canonization; the materiality-of-preservation claim vs. C2A2's discursive model of tradition-persistence), `loughran_rohr` (DesCamp's twenty-three-hours criterion as a proposed standing intake requirement — externalized, third-party-observable claims), `carroll_stump` (Carroll's missing criterion for when an emergent level earns its keep, and why an information-theoretic answer scores second-personal knowledge at zero)
+- **CREATED:** `levin_stump` (Ship of Theseus at species scale; a pattern-criterion is sufficient for continuation but not individuating), `friston_kastrup` (mechanism-of-the-boundary vs. what-the-boundary-is-in; the truce holds until AI, then collapses), `friston_hawkins` (receptor-density heterogeneity vs. the canonical cortical circuit — decidable against the released atlas), `rohr_stump` (the compassionate gaze as second-personal: change effected by being regarded, which predicts solitary practice underperforms)
+- **APPENDED:** `friston_levin` (four items in one week — see below), `kastrup_levin` (the nesting/dissociation dispute acquires a clinical arena), `levin_loughran` (over-alignment as a design constraint on Rung-2), `levin_mcgilchrist` (mind-blindness: Levin describes, McGilchrist explains), `levin_wolfram` (two methods for "what counts as alive"), `carroll_hoffman` (Carroll asked to adjudicate "Trace", on record), `arkanihamed_carroll` (emergent time from two motivations; possible homonym), `carroll_wolfram` (genealogy shifts a prior, does not supply evidence), `stump_wolfram` (a practitioner constituting a tradition, live — and behaving un-MacIntyreanly), `friston_rohr` (extinction by non-reinforcement, not inhibition), `mcgilchrist_rohr` (becoming beholden to what you behold — with the axis mismatch recorded rather than smoothed)
+
+**Verification (fail-loud):** all 10 pages carry exactly one `## Agentic Calls` section, intact YAML frontmatter, and one 2026-07-19 datestamp. All 36 calls cite a specific PROP id, PRS candidate, bridge file, or cross_program_index item (re-checked after the 7 rewrites; 0 failures on re-run). All 18 bridge files non-empty and datestamped. CSV written once, not double-written. Append-only throughout; no deletions, no overwrites, no probe or test files created.
+
+### Worth Tom's attention
+
+1. **Levin×Friston should be promoted to a standalone synthesis page. Fourth consecutive flag, and this week the case is no longer arguable.** Four distinct convergent items arrived in one cycle: the virtual governor as a group-level Markov blanket (PROP-2026-07-13-001); subcellular hysteresis as slow-parameters-over-fast-states (PROP-2026-07-13-002); symptom-as-agent vs. symptom-as-attractor (PROP-2026-07-13-003); and — the interesting one — **a crossing rather than a convergence**: in the same week Friston's tradition grounds an informational quantity (precision) in a material substrate (receptor density, PROP-2026-07-13-004) while Levin's drives a material variable (nuclear membrane voltage) toward informational work. Two traditions passing through the same matter/information boundary in opposite directions. `friston_levin_bridge.md` is now carrying eight distinct claims and is well past what a bridge note should hold.
+
+2. **The nesting-vs-dissociation dispute may already have been adjudicated by clinicians who did not know they were adjudicating it.** PROP-2026-07-13-003 gives the Kastrup/Levin disagreement a setting where the two make different, observable predictions: on Levin's view a successfully treated patient still *contains* the agent that was the symptom, repurposed; on Kastrup's the dissociative boundary must dissolve. Internal Family Systems and parts-work already run something close to Levin's protocol and have outcome literature. **Concrete, cheap next step:** check whether that literature records post-treatment persistence of "parts." A metaphysical dispute between two idealist-adjacent programs might be partly settled by existing data.
+
+3. **Over-alignment is a first-principles argument against a possible C2A2 design assumption, and it is the most actionable item in the batch.** Levin's virtual-governor paper derives that forcing parts into too-complete agreement destroys the local optimization that made the collective intelligent. If it holds, Rung-2 should not be scored on convergence: the success signature is *increased mutual registration with preserved local optimization* — participants who can state a rival position accurately while continuing to argue from their own — and convergence would be evidence the detector is damaging what it measures. Open instrumentation question recorded in `synthesis/levin_loughran_bridge.md`: is there a measurable proxy distinguishing a participant who has *understood* a rival position from one who has *adopted* it? Without it the constraint is unenforceable.
+
+4. **Metric inflation — fourth consecutive flag, still unactioned, and now compounded by the resolver break above.** Measured both ways this run: full 3,483 pages / 2,759 orphans; excluding `lit_search_results/` and `daily_sync/`, **1,532 pages / 808 orphans.** The machine dumps are 56% of all pages and 71% of all orphans. Combined with the resolver discontinuity, the series is now measuring two things badly at once. This is one line of config plus a break-marker and it would make four weeks of "+150 orphans" stop being the headline of every report.
+
+5. **Zero-byte bridge stubs: 13 → 10.** Filled `loughran_wolfram`, `loughran_rohr`, `carroll_stump` this run. Remaining: `arkanihamed_loughran`, `carroll_hawkins`, `carroll_loughran`, `hawkins_loughran`, `hawkins_wolfram`, `hoffman_loughran`, `hoffman_mcgilchrist`, `kastrup_loughran`, `loughran_mcgilchrist`, `mcgilchrist_wright`. Seven of ten are `loughran_*` pairs, consistent with the standing read that the set was scaffolded from a full pairwise matrix and never populated. Filling beats deleting where real material exists; the delete command remains available if you want the noise gone: `cd "wiki/synthesis" && find . -name '*_bridge.md' -size 0 -delete`
+
+6. **Two Rohr proposals in one week both volunteered externalized, third-party-observable success criteria** (DesCamp's twenty-three-hours test; the Beatitudes-as-outcome-profile reading). That is the form every tradition's claims need in order to be admissible as evidence in the comparison design. `synthesis/loughran_rohr_bridge.md` proposes making it a standing intake criterion — traditions that cannot supply one enter the corpus as *testimony* rather than as *evidence*, tagged accordingly. **This needs your ruling**, and the open worry is recorded there: the criterion may silently privilege one tradition family.
+
+7. **Programmatic flag carried up from PROP-2026-07-13-004, needs a ruling.** VERSES AI halted all AI R&D on 2026-06-18 and Friston resigned as CSO on 2026-06-27. This is commentary *about* Friston, not material *from* him, so the standing quality filter generates no proposal — but the C2A2 framework explicitly treats a program's institutional track record as evidence about the program. The collapse of active inference's flagship commercial instantiation is exactly that kind of data point. Recommend deciding whether institutional/programmatic events become a first-class node type distinct from PRS triplets. It is the second week this has been raised without a home to put it in.
+
+*Autonomous scheduled run. Append-only; no deletions. All additions italic-datestamped 2026-07-19.*

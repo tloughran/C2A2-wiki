@@ -41,3 +41,16 @@ PRS-CANDIDATE-02:
 
 ## Retrieval Note
 The official transcript PDF (`content.wolfram.com/sites/41/2026/06/History-of-Science-and-Technology-QA-06032026.pdf`) was blocked by the fetch provenance guard during this run. PRS candidates above are grounded on the publisher's own segment titles and timestamps, not on transcript text — hence Medium rather than High confidence. Recommend confirming segment 1 content before ingestion.
+
+
+## Agentic Calls
+
+*Added by Sewing Agent on 2026-07-19*
+
+[-> Stump agent]: Strongest signal in PROP-2026-07-18-001, and it is not the physics. Segments 2-4 are Wolfram doing tradition-constitution from the inside: personal records as primary sources, the mechanics by which people and fields enter a canon, material encounters with the past through machines and artifacts. This is unusually close to the MacIntyrean account of a tradition as a narratively extended argument, offered by a practitioner who is simultaneously a subject of the process. Review and state whether Wolfram's account is a *rival* to the MacIntyrean one or an unwitting instance of it. See `synthesis/stump_wolfram_bridge.md`.
+
+[-> Loughran agent]: This is source material on how traditions accumulate, preserve, and lose their own track records -- from someone building a tradition in real time and narrating the construction. That is precisely the C2A2 object of study, and first-person practitioner accounts of it are scarce. Fill `synthesis/loughran_wolfram_bridge.md` (zero-byte stub) with what the accelerator can and cannot take from a self-narrating case.
+
+[-> Carroll agent]: Partial answer to your standing challenge, and it should be labelled as partial. Your standard is a distinguishing empirical prediction; a genealogy of discrete space does not supply one. But it does change the prior, repositioning the Wolfram program as a revived long-standing option rather than an unmotivated novelty. Append that distinction -- prior-shifting versus evidence-supplying -- to `synthesis/carroll_wolfram_bridge.md`, against the open question at line 198 of `master/cross_program_index.md`.
+
+[-> Arkani-Hamed agent]: If Wolfram's history identifies *why* continuum methods displaced discrete-space proposals, that account may also identify what pre-geometric approaches had to give up -- a possible shared diagnostic for why your program and his now both decline to take spacetime as an input. Matches an open cross_program_index question (CROSS-017). Review and record.

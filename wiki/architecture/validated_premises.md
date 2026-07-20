@@ -2283,3 +2283,243 @@ PREMISE-098:
   Re-check due: 2026-10-18 (Quarterly)
   Status: ACTIVE
   PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-500
+
+---
+
+# ===== 2026-07-19 Agent 15c dispositions — 2026-07-18 EOD batch (12 items) =====
+
+PREMISE-099:
+  Date validated: 2026-07-19
+  Source item: ASSUMPTION-469
+  Statement: A documented-discrepancy flag that annotates without gating does not prevent the discrepant value from being emitted into outbound artifacts; deferability of a known error is a property of its enforcement point, not of its documentation.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: see lit_search_results/for/ASSUMPTION-469_for.md (15a: SUPPORTED, Moderate-Strong)
+  Challenges noted: see lit_search_results/against/ASSUMPTION-469_against.md (15b: PARTIALLY-CHALLENGED, Moderate)
+  Confidence: High
+  Applicable to: Outbound artifact emission (Gmail drafts, reports, review pages); count-reporting paths; any known-error register in the system.
+  Re-check due: 2026-10-19 (Quarterly)
+  Status: ACTIVE
+
+PREMISE-100:
+  Date validated: 2026-07-19
+  Source item: ASSUMPTION-472
+  Statement: A liveness signal (lastRunAt / heartbeat) is not evidence of correctness, and a health check that cannot execute in its runtime context reports as passing rather than as absent; monitoring that conflates the two produces false-green at a rate proportional to the number of inoperable checks.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: see lit_search_results/for/ASSUMPTION-472_for.md (15a: SUPPORTED, Strong)
+  Challenges noted: see lit_search_results/against/ASSUMPTION-472_against.md (15b: PARTIALLY-CHALLENGED, Moderate)
+  Confidence: High
+  Applicable to: Scheduler watchdog; fleet health reporting; any agent self-report that renders a green state; the 36-task 'healthy' population.
+  Re-check due: 2026-10-19 (Quarterly)
+  Status: ACTIVE
+
+PREMISE-101:
+  Date validated: 2026-07-19
+  Source item: PRESUMPTION-494
+  Statement: Counts over shared artifacts are properties of a reading — a (scope, method, time) tuple — not properties of the artifact; absent a designated counting authority and a recorded method, independent agents will produce divergent counts of the same object without either being wrong.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: see lit_search_results/for/PRESUMPTION-494_for.md (15a: SUPPORTED, Strong)
+  Challenges noted: see lit_search_results/against/PRESUMPTION-494_against.md (15b: PARTIALLY-CHALLENGED, Moderate)
+  Confidence: High
+  Applicable to: Proposal counts, scheduled-task counts, PRS counts, failure counts; every agent report that states a quantity over a shared artifact; outbound communications quoting figures.
+  Re-check due: 2026-10-19 (Quarterly)
+  Status: ACTIVE
+
+PREMISE-102:
+  Date validated: 2026-07-19
+  Source item: PRESUMPTION-495
+  Statement: Fail-loud is an act of reporting, not an act of remediation. Where the notified channel has demonstrated zero throughput, repeated identical non-processing converts a one-time signal into an undecided standing policy of non-coverage; the loudness of the report is not evidence that anything is receiving it.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: see lit_search_results/for/PRESUMPTION-495_for.md (15a: SUPPORTED, Strong)
+  Challenges noted: see lit_search_results/against/PRESUMPTION-495_against.md (15b: PARTIALLY-CHALLENGED, Moderate)
+  Confidence: High
+  Applicable to: All EOD pipeline runs; the lit-search and self-awareness queues; the 29-proposal approval backlog; any agent convention of flagging in lieu of acting.
+  Re-check due: 2026-08-19 (Monthly)
+  Status: ACTIVE
+
+PREMISE-103:
+  Date validated: 2026-07-19
+  Source item: PRESUMPTION-497
+  Statement: Absence of primary text is a kind-difference in evidence, not a degree-difference: no confidence label over metadata-only material is well-founded, and downgrading confidence is not a valid substitute for an explicit 'unfounded pending retrieval' state.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: see lit_search_results/for/PRESUMPTION-497_for.md (15a: PARTIALLY-SUPPORTED, Moderate)
+  Challenges noted: see lit_search_results/against/PRESUMPTION-497_against.md (15b: NO-CHALLENGE-FOUND, None)
+  Confidence: Moderate
+  Applicable to: PRS candidate admission; all confidence labelling under blocked primary sources; REVISE-214 and ASSUMPTION-470 both depend on this premise.
+  Re-check due: 2026-10-19 (Quarterly)
+  Status: ACTIVE
+
+PREMISE-104:
+  Date validated: 2026-07-19
+  Source item: PRESUMPTION-498
+  Statement: Append-only operational and registry files have no size bound and no rotation policy anywhere in the pipeline; read cost per run grows monotonically and daily full backups make storage grow quadratically in days. No agent currently budgets read cost against context.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: see lit_search_results/for/PRESUMPTION-498_for.md (15a: SUPPORTED, Moderate-Strong)
+  Challenges noted: see lit_search_results/against/PRESUMPTION-498_against.md (15b: PARTIALLY-CHALLENGED, Moderate)
+  Confidence: Moderate
+  Applicable to: assumptions.md, presumptions.md, for_lit_search.md, lit_search_returns.md, monitor_queue.md, watch_list.md; every agent that reads a registry whole.
+  Re-check due: 2026-08-19 (Monthly)
+  Status: ACTIVE
+  Novelty note: 15a found no literature budgeting read cost for agents ingesting monolithic state files under a queryable-history constraint. Potential original contribution — carried to 15d.
+
+
+---
+
+# ===== 2026-07-20 Agent 15c dispositions — 2026-07-19 EOD batch (14 items) =====
+
+*Cohort note: 6 of 14 items INCORPORATED. In every case where 15b's SYSTEMIC-RISK-FLAG "REMEDY-INHERITS-DEFECT" (2026-07-20, High) named the item, the premise below is deliberately narrowed to the OBSERVATION and the proposed remedy is EXCLUDED and routed to REVISE-236. A premise that carried its own defective instrument would install the failure it describes.*
+
+PREMISE-105:
+  Date validated: 2026-07-20
+  Source item: ASSUMPTION-474
+  Statement: A change in the definition of what is counted makes adjacent periods of a series non-comparable — a break in the time series — and a delta spanning the change is uninterpretable until the definitional component is measured, not estimated. Separately, an artifact-volume count is not a measure of knowledge-graph health; it is a proxy subject to Goodhart's law. NARROWING (load-bearing): this premise validates the DIAGNOSIS only. It does NOT validate (i) the ~+145 / ~+80 partition, which is an estimate asserted before the frozen-snapshot dual-resolver run that would establish it and must not be quoted as a finding; (ii) the framing of break-marking and re-derivation as equal options — official-statistics practice (Eurostat backcasting) treats correction as the standard and marking as the fallback used when correction is infeasible; (iii) connectivity as the replacement metric, which is subject to the identical Goodhart argument and is directly writable by the agents being measured. The literature's own remedy is a small panel with no single member targeted.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: see lit_search_results/for/ASSUMPTION-474_for.md (15a: SUPPORTED, Strong on the break-marker and Goodhart clauses; Weak on the connectivity prescription)
+  Challenges noted: see lit_search_results/against/ASSUMPTION-474_against.md (15b: PARTIALLY-CHALLENGED, Moderate — remedy menu and the quotability of the numeric split)
+  Confidence: Moderate
+  Applicable to: The weekly vault census; any C2A2 series whose resolver or inclusion rule changes; health-metric selection for the knowledge graph; ASSUMPTION-481's four-week fallback-classification record, which has the same break problem in a different register.
+  Re-check due: 2026-10-20 (Quarterly)
+  Status: ACTIVE
+  Independence note: 15a's CROSS-ITEM-NOTE (2026-07-20) records A-474/A-480/P-501/P-503 as partly non-independent readings of the same two 2026-07-19 events. This premise is incorporated on the strength of an independent literature (official statistics / Eurostat break-and-backcast practice), not on the event count. It is not to be read as one of four confirmations.
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-474
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-19 sewing weekly and bootstrap audit transcripts
+      15a: Searched for supporting literature; SUPPORTED (Strong/Weak split by clause)
+      15b: Searched for challenging literature; PARTIALLY-CHALLENGED (Moderate)
+      15c: Net evaluation and disposition; INCORPORATE narrowed to the diagnosis, remedy excluded and routed to REVISE-236
+    Current status: INCORPORATED
+    Disposition record: DISPOSITION-ASSUMPTION-474 (lit_search_returns.md, 2026-07-20)
+
+PREMISE-106:
+  Date validated: 2026-07-20
+  Source item: ASSUMPTION-478
+  Statement: The lit-search pipeline's queue is in the unstable regime: at ~12 items serviced per run against a daily enqueue rate, arrival exceeds service and the backlog grows without bound. This is a proved queueing result, not a hypothesis, and no scheduling discipline recovers it. Two corollaries the item did not state and that are load-bearing: (i) an existing backlog drains at the SURPLUS rate (service minus arrival), not the service rate, so restoring stability marginally will not clear the standing 147 items and they need separate treatment (one-off drain pass or TTL sweep); (ii) arrival and service are BOTH decision variables — the enqueue stream is generated by C2A2's own agents and is not exogenous, so admission control is available alongside throughput increase, and classical results hold that bounding arrival is sufficient on its own.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: see lit_search_results/for/ASSUMPTION-478_for.md (15a: SUPPORTED, Strong on the stability clause)
+  Challenges noted: see lit_search_results/against/ASSUMPTION-478_against.md (15b: PARTIALLY-CHALLENGED, Moderate — the stability claim is uncontradicted; challenged is the inference that the budget is the single lever)
+  Confidence: High
+  Applicable to: c2a2-lit-search-pipeline scheduling and budget; 15d re-trigger cadence; the 147-item standing backlog and the 7th-consecutive BACKLOG-FLAG in monitor_queue.md; any future EOD batch enqueued into this queue.
+  Re-check due: 2026-08-20 (Monthly — the queue state is live and moves weekly)
+  Status: ACTIVE
+  Consistency note: This premise extends, and does not conflict with, the existing premise on the 15d weekly re-trigger queue (validated_premises.md, "structural-under-current-provisioning"). Both hold that arrival exceeds service and that the remedy space includes cadence, admission cap AND provisioning. A-478's phrasing implied the budget was the fault; that implication is explicitly NOT incorporated, per 15b.
+  Novelty note: 15a raised a NOVELTY-FLAG on the item's second clause (the 30,000-token budget is inconsistent with the specified scope by ~6x). No literature was found on sizing a token budget against a declared agent scope, or on characteristic mismatch factors. The general form — "the resource budget and the specification were set by different processes and never reconciled" — may be an original contribution. That clause is NOT incorporated here; it is carried as a novelty item and is the load-bearing input to MONITOR-457 (PRESUMPTION-504), where the calibration-versus-norm-decay question is decided.
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-478
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-19 lit-search pipeline fail-loud statements
+      15a: Searched for supporting literature; SUPPORTED (Strong clause 1) with NOVELTY-FLAG on clause 2
+      15b: Searched for challenging literature; PARTIALLY-CHALLENGED (Moderate, against the inference not the stability claim)
+      15c: Net evaluation and disposition; INCORPORATE clause 1 with both levers named, clause 2 held as novelty
+    Current status: INCORPORATED
+    Disposition record: DISPOSITION-ASSUMPTION-478 (lit_search_returns.md, 2026-07-20)
+
+PREMISE-107:
+  Date validated: 2026-07-20
+  Source item: ASSUMPTION-479
+  Statement: A remedy attached to an observation without being validated against the actual mechanism costs effort AND leaves the fault in place; where two candidate mechanisms present the same symptom, the discriminating test is the operative construct and skipping it is the defining error of fault isolation. Delivering more signal into a channel with demonstrated zero throughput is not throughput but inventory, and can degrade the disposition of signals already working. SCOPE GUARD (load-bearing): diagnose-before-repair is NOT unconditional. Maintenance evidence puts diagnosis at 60-70% of mean time to repair — it is the dominant cost term, not a free precondition — and it is most expensive precisely for unfamiliar failure classes, where identifying WHICH test discriminates is itself the hard step. The rule binds for remedies that are expensive, irreversible, or that increase load on a saturated channel. For remedies that are cheap, reversible and immediately observable, applying the remedy IS the discriminating test and is faster than designing one; requiring a separate test there converts free experiments into queued work in a queue already known not to drain (PREMISE-106).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: see lit_search_results/for/ASSUMPTION-479_for.md (15a: SUPPORTED, Strong — fault detection and isolation; predictive maintenance; Senge's "Fixes that Fail" / "Shifting the Burden"; Theory of Constraints; Braess's paradox and bufferbloat)
+  Challenges noted: see lit_search_results/against/ASSUMPTION-479_against.md (15b: PARTIALLY-CHALLENGED, Moderate — the cost of diagnosis, the boundary condition now folded in above, and the unaudited 7-of-12 self-count)
+  Confidence: High (for the principle with its scope guard)
+  Applicable to: The 14/15 self-awareness pipeline's remedy-proposal step; REVISE-231 (2026-07-19) and REVISE-236 (2026-07-20), both of which this premise grounds; every standing REVISE item carrying an unvalidated remedy; any intervention aimed at the review channel.
+  Re-check due: 2026-10-20 (Quarterly)
+  Status: ACTIVE
+  Not incorporated: the item's "7 of 12" ratio. It is a self-count by the pipeline that authored all twelve items, with no published coding rule and no external adjudication, produced on the same day it discovered that its own summarizers report on themselves inaccurately (PREMISE-109). The pattern is validated; the count is not.
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-479
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-19 lit-search pipeline REVISE-231 statement
+      15a: Searched for supporting literature; SUPPORTED (Strong)
+      15b: Searched for challenging literature; PARTIALLY-CHALLENGED (Moderate) — boundary condition supplied and folded into the statement
+      15c: Net evaluation and disposition; INCORPORATE with 15b's boundary condition made load-bearing, self-count excluded
+    Current status: INCORPORATED
+    Disposition record: DISPOSITION-ASSUMPTION-479 (lit_search_returns.md, 2026-07-20)
+
+PREMISE-108:
+  Date validated: 2026-07-20
+  Source item: PRESUMPTION-502
+  Statement: Transmission is not delivery. A finding "flagged for" a named agent does not transfer responsibility for it; the loop is closed only on evidence that the recipient received AND acted, and until then the finding is held by nobody while the record shows it discharged. That state is worse than not flagging, because it retires the sender's obligation without creating anyone else's. INSTRUMENTATION CONSTRAINT (load-bearing): the measure of delivery is the flagged content APPEARING IN THE RECIPIENT'S OUTPUT, never an acknowledgement receipt. An acknowledgement makes "acknowledged" measurable and leaves "acted on" exactly as unmeasurable as before, installing a green metric over the unchanged failure — the same defect the presumption exists to name.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: see lit_search_results/for/PRESUMPTION-502_for.md (15a: SUPPORTED, Strong — closed-loop communication and check-back; AHRQ/ACOG clinical handoff, where a handoff transfers authority and responsibility; FAA position-relief standards; responsibility diffusion)
+  Challenges noted: see lit_search_results/against/PRESUMPTION-502_against.md (15b: PARTIALLY-CHALLENGED, Moderate — AHRQ grades SBAR low-certainty; only I-PASS reaches moderate and does so via receiver read-back; the best-supported effect is conditioned on a synchronous live receiver, which asynchronous file-mediated agent flagging does not provide; n=1 with no base rate)
+  Confidence: Moderate
+  Applicable to: Every cross-agent "flagged for X" in the record; the connector-health -> morning-system-health handoff; the cost-tracker gap; 14a/14b routing to 15a/15b/15c; 15d escalations to Tom; MONITOR-420's fired auto-escalate trigger, which is an instance of a flag that was raised seven consecutive times and never received.
+  Re-check due: 2026-08-20 (Monthly)
+  Status: ACTIVE
+  Consistency note: This is the agent-to-agent generalisation of PREMISE-102 ("Fail-loud is an act of reporting, not an act of remediation") and does not conflict with it. PREMISE-102 covers the agent-to-human channel; PREMISE-108 covers agent-to-agent. Confidence is set one grade lower than PREMISE-102 because the in-house evidence is a single traced instance and the strong external evidence is from synchronous human teams, a transfer 15b showed to be unwarranted for the remedy even though the diagnosis carries.
+  Base-rate obligation: the base rate is obtainable with no protocol change — enumerate the last thirty days of cross-agent flags and search each named recipient's subsequent output for the flagged content. It has not been obtained. This premise licenses the claim that transmission is not delivery; it does NOT license any claim about how often delivery fails.
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-502
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by tracing the connector-health handoff into the same-day morning-system-health output and finding it absent
+      15a: Searched for supporting literature; SUPPORTED (Strong)
+      15b: Searched for challenging literature; PARTIALLY-CHALLENGED (Moderate, against the remedy's expected value)
+      15c: Net evaluation and disposition; INCORPORATE the delivery claim, EXCLUDE the acknowledgement remedy, bind the instrument to recipient-output
+    Current status: INCORPORATED
+    Disposition record: DISPOSITION-PRESUMPTION-502 (lit_search_returns.md, 2026-07-20)
+
+PREMISE-109:
+  Date validated: 2026-07-20
+  Source item: PRESUMPTION-503
+  Statement: A summarizing agent is a view over its own read set, not a view over the system. A summary can be individually faithful to every source it read and collectively false about the system it describes, and this is the DEFAULT property of a layered reporting stack rather than an aberration or a lapse in conduct. Therefore a health claim not bound to a named artifact with a timestamp is not evidence of health, and "no failures to report" must be legible as scoped — "no failures appear in the sources I read" — or it is unfounded. INSTRUMENTATION CONSTRAINT (load-bearing): the measure is CLAIMS-WITHOUT-EVIDENCE (per claim, is there a named artifact and timestamp that would have to hold?), never a read-set coverage percentage. Coverage rises when a summarizer reads more marginal artifacts without reading the decisive one, is unbounded over a growing vault, and would read green during exactly the failure it was built to catch.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: see lit_search_results/for/PRESUMPTION-503_for.md (15a: SUPPORTED, Strong — four-layer monitoring stack with upward propagation of weakness; component-versus-service scope mismatch; data lineage and freshness as a mature tool category; arXiv:2606.14589 on silent failures persisting for weeks in a production LLM agent runtime)
+  Challenges noted: see lit_search_results/against/PRESUMPTION-503_against.md (15b: NO-CHALLENGE-FOUND to the claim — 15b searched specifically for evidence that aggregation layers can be assumed source-coupled and every retrieved source ran the other way; PARTIALLY-CHALLENGED, Weak, to the coverage-percentage remedy only, which is excluded above)
+  Confidence: High
+  Applicable to: The morning project-status summary and every outbound status artifact; morning system health; the connector-health weekly; any agent that renders a fleet-level green; unattended stretches, where the summary layer is the primary interface.
+  Re-check due: 2026-10-20 (Quarterly)
+  Status: ACTIVE
+  Reconciliation basis: This is the only item in the batch meeting the provenance protocol's SUPPORTED + NO-CHALLENGE-FOUND row (protocol reconciliation table: SUPPORTED, High confidence). 15b's disconfirmatory search returning nothing against the claim is itself the strongest signal in the cohort.
+  Consistency note: Extends PREMISE-100 (a liveness signal is not evidence of correctness; an inoperable check reports as passing). PREMISE-100 covers the check that cannot run; PREMISE-109 covers the summary that never looked. Complementary, no conflict.
+  Independence note: ASSUMPTION-480 is this premise's EVIDENCING INSTANCE, not an independent confirmation. Per 15a's CROSS-ITEM-NOTE and 15b's own recommendation, A-480 was dispositioned MONITOR (MONITOR-455) rather than incorporated separately, so one defect receives one premise and one remediation effort. The read-set enumeration of the 2026-07-19 morning run discriminates between this mechanism (read-set non-coverage) and the component-versus-service mechanism A-480 implies, and settles both at once.
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-503
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the 2026-07-19 morning project status transcript read against four same-morning failure transcripts
+      15a: Searched for supporting literature; SUPPORTED (Strong)
+      15b: Searched for challenging literature; NO-CHALLENGE-FOUND to the claim, PARTIALLY-CHALLENGED (Weak) to the remedy
+      15c: Net evaluation and disposition; INCORPORATE the claim, EXCLUDE the coverage metric, bind the instrument to claims-without-evidence
+    Current status: INCORPORATED
+    Disposition record: DISPOSITION-PRESUMPTION-503 (lit_search_returns.md, 2026-07-20)
+
+PREMISE-110:
+  Date validated: 2026-07-20
+  Source item: PRESUMPTION-505
+  Statement: Detectors do not reliably degrade gracefully; they invert. A monitor whose failure presents as a nominal reading becomes MORE reassuring as the monitored condition worsens, and this is a catalogued fault class (stuck-at-nominal, one of five standard non-fail-stop sensor faults), not a novel or rare condition. Absence-of-complaint is therefore an unsafe polarity for a health signal: the safe form is affirmative and perishable — the monitor must be actively fed on an independent timebase, so that cessation of activity is itself the alarm. COMMON-MODE SCOPE GUARD (load-bearing): a monitor sharing runtime, scheduler, credentials and filesystem with its subject is a SINGLE CHANNEL WEARING TWO LABELS, and any discrepancy-based self-check is provably blind to a fault present in both channels with the same characteristics. Independence must be engineered before it is tested. The valid instrument is a live proof-test — deliberately break a monitored subsystem in a sandbox and confirm its monitor turns red within the expected interval — NOT the reachability audit the item proposed, which is a discrepancy check and would return a reassuring pass on precisely the inversions that matter.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: see lit_search_results/for/PRESUMPTION-505_for.md (15a: SUPPORTED, Strong — fail-safe design and the detected/undetected failure distinction; diagnostic coverage; stuck-at-nominal sensor faults and their polarity-inversion countermeasures; watchdog practice; Huang et al. 2017 gray failure supporting the generalisation step)
+  Challenges noted: see lit_search_results/against/PRESUMPTION-505_against.md (15b: Weak against the claim — 15b searched disconfirmatorily and found no evidence detectors can be assumed to degrade gracefully; Moderate against the proposed test, PMC9228164 on common-mode blindness of discrepancy analysis, now folded in above as the scope guard)
+  Confidence: High
+  Applicable to: 15d cycle-count staleness detection (ASSUMPTION-476 / MONITOR-454); the scheduler watchdog; connector enumeration (ASSUMPTION-481 / REVISE-234); the vault census (PREMISE-105); every green signal in the fleet health report; any monitor added in response to any item in this batch.
+  Re-check due: 2026-10-20 (Quarterly)
+  Status: ACTIVE
+  Consistency note: Generalises PREMISE-100 from "an inoperable check reports as passing" to "a monitor's pass state is systematically reachable while its subject is dead, and monitor/subject independence in this fleet is asserted rather than engineered." No conflict; PREMISE-110 is the stronger and more general form and PREMISE-100 remains ACTIVE as the specific case.
+  Scope limit: 15a and 15b both note that one of the item's four cited instances (the vault census) is diagnosed by ASSUMPTION-474 in this same batch as a definitional-comparability problem rather than a detector inversion, and the two readings are not obviously compatible. This premise is incorporated on the strength of the fault-class literature and the three unambiguous absence-of-complaint cases; the four-instance count is not incorporated, and a census that miscounts is not the same defect as a detector that inverts.
+  Cost caveat: polarity inversion raises the false-positive rate, which is the alert-fatigue failure named in PREMISE-102 / PRESUMPTION-495 and measured at 44% of organisations having an outage linked to suppressed or ignored alerts. Apply selectively by criticality, as SIL practice allocates diagnostic coverage. Do not convert all absence-of-complaint checks at once into a review channel with demonstrated zero throughput.
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-505
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by generalizing 15d's local statement across three further same-day cases
+      15a: Searched for supporting literature; SUPPORTED (Strong)
+      15b: Searched for challenging literature; PARTIALLY-CHALLENGED (Weak against the claim, Moderate against the test)
+      15c: Net evaluation and disposition; INCORPORATE the claim with the common-mode scope guard made load-bearing, EXCLUDE the reachability audit in favour of a live proof-test
+    Current status: INCORPORATED
+    Disposition record: DISPOSITION-PRESUMPTION-505 (lit_search_returns.md, 2026-07-20)

@@ -17331,3 +17331,291 @@ MONITOR-448:
   What would change disposition: shipped artifact-binding on state-mutating jobs (no-op -> non-zero exit; status readers assert artifact freshness) -> INCORPORATE "success binds to artifact-level evidence, not scheduler firing"; another dead-subsystem-reported-live incident -> REVISE.
   Priority: Medium-High | Cycle: 0 | Cadence: Weekly | Next 15d check: 2026-07-25
   PROVENANCE: Origin=14b; Chain=[14b -> 15a,15b -> 15c -> 15d]; Item type=PRESUMPTION
+
+---
+
+# ===== 2026-07-19 Agent 15c dispositions — 2026-07-18 EOD batch (12 items) =====
+
+MONITOR-449:
+  Date entered: 2026-07-19
+  Source item: ASSUMPTION-471
+  Item type: ASSUMPTION (stated)
+  Statement: contested — 15a SUPPORTED (Moderate-Strong) vs 15b PARTIALLY-CHALLENGED (Moderate).
+  Net assessment: The item has two separable claims. The masking claim (ambient state concealed a failed load-bearing precondition) is well supported and is the more consequential half. The permanence claim ('now fails permanently') is what 15b challenged: permission-model changes are frequently scoped, versioned, or re-grantable, and permanence has not been tested.
+  What would change the disposition: Re-run the morning-health task with the pre-existing mount removed. Failure confirms the step is load-bearing and the grant unrequestable -> INCORPORATE. Success under any alternative grant path -> the permanence clause is false and the item narrows to the masking claim alone.
+  Monitoring cadence: Weekly
+  Priority: High
+  next_check: 2026-07-26
+  Cycle: 0
+  Full results: lit_search_results/for/ASSUMPTION-471_for.md ; lit_search_results/against/ASSUMPTION-471_against.md
+
+MONITOR-450:
+  Date entered: 2026-07-19
+  Source item: ASSUMPTION-473
+  Item type: ASSUMPTION (stated)
+  Statement: contested — 15a PARTIALLY-SUPPORTED (Moderate) vs 15b PARTIALLY-CHALLENGED (Moderate).
+  Net assessment: Symmetric moderate evidence on both sides. Dekker's drift-into-failure and the unbounded-append-only-log literature support the cost-accumulation claim; 15b's retrieval establishes that restraint under absent authority is frequently correct and that the deferral being wrong does not follow from the cost having been presumed rather than computed. Neither side addressed the specific authority justification ('not mine to decide unilaterally'), which returned zero evidence in either direction.
+  What would change the disposition: Measure per-run read cost of watch_list.md and project growth at ~35 lines/day; count self-diagnosed deferrable items accumulated since 2026-07-05 against those actioned. A rising unactioned count with measurable per-run cost tips to REVISE; a flat count tips to INCORPORATE (deferral genuinely cheap).
+  Monitoring cadence: Weekly
+  Priority: Medium
+  next_check: 2026-07-26
+  Cycle: 0
+  Full results: lit_search_results/for/ASSUMPTION-473_for.md ; lit_search_results/against/ASSUMPTION-473_against.md
+
+MONITOR-451:
+  Date entered: 2026-07-19
+  Source item: PRESUMPTION-496
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: contested — 15a SUPPORTED (Strong) vs 15b CHALLENGED (Strong).
+  Net assessment: The most sharply contested item in the batch, with strong domain-matched evidence on both sides. 15a returned Feldman et al. 2021's omission-bias meta-analysis (g = 0.45) establishing that the cost ordering was presumed rather than computed. 15b returned a 14-day red-team of six autonomous agents with persistent memory and shell access — near-identical configuration and duration to C2A2's 13 days — in which every documented failure was over-action, including agents destroying their own infrastructure.
+  What would change the disposition: Classify every deferred item since 2026-07-05 as read / reversible write / irreversible write and count how many fall outside No-Blind-Push's actual scope. A large read-only population wrongly blocked tips toward the item (restraint misapplied); a population dominated by irreversible writes tips toward 15b (restraint correctly applied and the general claim is false).
+  Monitoring cadence: Weekly
+  Priority: High
+  next_check: 2026-07-26
+  Cycle: 0
+  Full results: lit_search_results/for/PRESUMPTION-496_for.md ; lit_search_results/against/PRESUMPTION-496_against.md
+
+MONITOR-452:
+  Date entered: 2026-07-19
+  Source item: PRESUMPTION-499
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: contested — 15a SUPPORTED (Strong) vs 15b CHALLENGED (Strong).
+  Net assessment: Common-mode failure analysis (NASA NTRS 20160005837; AWS correlated-failures guidance) is settled and supports the architectural half: agents diagnose locally, failures are presumed independent by construction, and the only cross-agent integrator runs once daily after the fact with no authority to act. 15b's challenge is aimed at the causal half and lands: the item asserts that five failures share one root, on the same day that root was coined, which is the single-root-cause fallacy the item itself warns against (Hollnagel, Dekker).
+  What would change the disposition: Add PREMISE-098 startup context-invariant assertions and count how many of the five 2026-07-18 failures a single check would actually have caught. Four or five confirms the common root -> INCORPORATE. Two or fewer confirms 15b -> the item narrows to the architectural claim only (no mid-run cross-agent correlator), which would then be INCORPORATE-ready on its own.
+  Monitoring cadence: Weekly
+  Priority: High
+  next_check: 2026-07-26
+  Cycle: 0
+  Full results: lit_search_results/for/PRESUMPTION-499_for.md ; lit_search_results/against/PRESUMPTION-499_against.md
+
+
+
+---
+
+## 2026-07-19 RUN — 15d Periodic Monitor (weekly cycle; scheduled c2a2-periodic-monitor-weekly)
+
+**Run context:** Scheduled weekly 15d run. 2026-07-19 is the THIRD Sunday of July -> monthly cycle SKIPPED (low-priority monthly cohort and INCORPORATED-premise re_check_due stand at 2026-08-02 from the 2026-07-05 run). 15d does NOT evaluate evidence — it re-triggers 15a/15b; 15c re-dispositions afterward.
+
+**Processed this run:**
+- **17 first re-triggers** (MONITOR-419..435, cycle 0 -> 1): the 2026-07-09/10/11/12 intake cohort. Their intake next-check dates (2026-07-16, -17, -18, -19) were all in the future at the 2026-07-12 run and have now passed. Re-queued in for_lit_search.md with [RE-TRIGGER by 15d: 2026-07-19, cycle 1]. Last checked 2026-07-19; next 15d check 2026-07-26. Trajectory baseline carried from intake disposition.
+- **4 cycle-increment re-triggers** (MONITOR-360, -373, -375, -382): the ONLY monitored items with a completed 15a/15b/15c evidence pass since the last 15d run (consumed by the 2026-07-08 daily pipeline; CONTINUED by 15c, next 15d check 2026-07-15, now 4 days overdue). Cycle counts advanced on a real completed pass. Re-queued; next 15d check 2026-07-26.
+- **67 weekly carry-overs NOT duplicate-queued** (19 x MONITOR-400..418 from the 2026-07-12 cohort + 48 from the 2026-07-05 cohort): their RE-TRIGGER blocks in for_lit_search.md remain [QUEUED] and unconsumed. Those standing blocks are the operative search requests; duplicate-queuing would pollute the queue, and advancing cycle counts without a completed search pass would inflate them (2026-07-12 precedent). Cycle counts UNCHANGED. Next 15d check moved 2026-07-19 -> 2026-07-26.
+- **Not yet due, untouched:** MONITOR-436..440 (next check 2026-07-20), MONITOR-441..444 (2026-07-23), MONITOR-445..447 (2026-07-24), MONITOR-448 (2026-07-25).
+- **Fresh intake, first next_check SET (not re-queued):** MONITOR-449, -450, -451, -452 (entered 2026-07-19, no next-check recorded at intake). Per the 2026-06-28/2026-07-05 convention, brand-new items are not re-triggered — they were freshly evaluated by 15a/15b/15c at creation. Cadence Weekly; Cycle 0; **first 15d next check: 2026-07-26.**
+- **Event-driven items untouched:** MONITOR-003 (continuous), MONITOR-041 (per billing-error event), MONITOR-154 (per-incident).
+
+**Stale sweep:** No item completed a 4th weekly cycle this run — no new STALE-MONITOR-FLAG raised. The four cycle-increment items reached cycles 3 (MONITOR-360) and 2 (MONITOR-373, -375, -382). See STALE-DETECTION-BLIND-SPOT below: this "no stale items" result is not evidence of health.
+
+### ESCALATION 1 — MONITOR-420 AUTO-ESCALATE TRIGGER HAS FIRED (route to 15c for REVISE)
+
+  Item: MONITOR-420 / ASSUMPTION-428 ("Deferring the 15d refresh backlog is acceptable so long as it is surfaced with a remedy recommended"), Priority High, from DISPOSITION-426 (2026-07-09).
+  Trigger as written by 15c: "AUTO-ESCALATE TRIGGER: 2 more runs carrying the backlog with no decision -> REVISE (the recurrence is itself the disconfirming observation)."
+  Condition observed: **MET.** Run 1 = 2026-07-12 (backlog carried, BACKLOG-FLAG raised, no decision). Run 2 = 2026-07-19 (this run; backlog carried and larger, no decision on OPEN-115/116, no Tom response recorded).
+  15d action: re-queued as part of the MONITOR-419..435 cohort AND flagged here. 15d does not disposition — **15c should treat this as a fired trigger, not an ordinary re-trigger, and issue the REVISE.** 15b's CHALLENGED/Strong (Vaughan, normalization of deviance: surfacing decays to functional silence) is now backed by an in-house observation, not just literature: this is the 7th consecutive run surfacing the same deferral.
+
+### ESCALATION 2 — BACKLOG-FLAG (loud; 7th consecutive surfacing)
+
+  Observation: **147 items stand [QUEUED] and unsearched in for_lit_search.md** (110 from the 2026-07-05 15d cohort, 19 from the 2026-07-12 15d cohort, 18 orphaned QUEUED-EMPIRICAL with no re-trigger tag). **Zero 15a/15b consumption of monitored items in the 11 days since 2026-07-08.** Last week's flag reported 110 unconsumed; the number has grown, not drained.
+  Impact: the 15d re-trigger loop is firing correctly and downstream consumption has stalled. Monitored items are aging in queue rather than cycling through evidence passes.
+  Recommendation (unchanged and now overdue): ESCALATE to Tom — either point c2a2-lit-search-pipeline at the standing RE-TRIGGER cohort oldest-first, or explicitly re-scope the weekly 15d cadence to match observed 15a/15b throughput. 15d will not silently keep pushing next_check forward, and per Escalation 1 the deferral itself is now a fired REVISE trigger.
+
+### ESCALATION 3 — MONITOR-423 starvation trigger, likely met (15c to confirm)
+
+  Item: MONITOR-423 / ASSUMPTION-430 (priority-ordered partial burn as triage), Priority High, from DISPOSITION-432.
+  Trigger as written by 15c: "2 more runs with zero non-HIGH backlog burned -> REVISE (starvation confirmed)."
+  Condition observed: no 15a/15b burn of ANY tier has occurred since 2026-07-08, so zero non-HIGH items were burned across both intervening runs. 15d flags this as **likely met** rather than asserting it: the trigger is about the daily pipeline's burn record, which 15d does not own. 15c should confirm against that record and disposition accordingly. Related: MONITOR-425 (P-459, priority labels going stale during the aging window) is directly implicated — items queued 2026-07-05 have now aged 14 days at their queue-time priority.
+
+### STALE-DETECTION-BLIND-SPOT (methodological note; recommend 15c/Tom review)
+
+  Cycle counts only advance on a COMPLETED search pass, and the 4-cycle staleness rule keys on cycle count. The 67 carry-over items therefore cannot accrue cycles while the queue is unconsumed — they have been frozen at cycles 1-2 since 2026-07-05. The consequence: **the longer downstream consumption stalls, the less able the staleness detector is to report it.** "No stale items this run" is an artifact of the stall, not a finding about the evidence. Recommend a wall-clock companion to the cycle-count rule (e.g. flag any ACTIVE item whose last COMPLETED evidence pass is more than N days old, independent of cycles). Filed here rather than acted on: changing the staleness rule is a design decision, not a 15d bookkeeping action.
+
+### Per-item bookkeeping
+
+**MONITOR-419..435 (17) — cycle 0 -> 1; Cadence Weekly; Last checked 2026-07-19; Next 15d check 2026-07-26; re-queued [RE-TRIGGER by 15d: 2026-07-19, cycle 1]. Trajectory baseline: Supporting stable; Challenging stable; New sources since intake: No (first re-trigger — intake disposition remains the most recent evidence pass):**
+- ASSUMPTION-426 (MONITOR-419, cycle 0 -> 1): re-queued
+- ASSUMPTION-428 (MONITOR-420, cycle 0 -> 1): re-queued — **AUTO-ESCALATE TRIGGER FIRED, see Escalation 1**
+- PRESUMPTION-455 (MONITOR-421, cycle 0 -> 1): re-queued
+- PRESUMPTION-458 (MONITOR-422, cycle 0 -> 1): re-queued (gated on MONITOR-424)
+- ASSUMPTION-430 (MONITOR-423, cycle 0 -> 1): re-queued — **starvation trigger likely met, see Escalation 3**
+- ASSUMPTION-432 (MONITOR-424, cycle 0 -> 1): re-queued (load-bearing for MONITOR-422)
+- PRESUMPTION-459 (MONITOR-425, cycle 0 -> 1): re-queued — aging window now 14 days, see Escalation 3
+- ASSUMPTION-433 (MONITOR-426, cycle 0 -> 1): re-queued
+- ASSUMPTION-434 (MONITOR-427, cycle 0 -> 1): re-queued
+- ASSUMPTION-436 (MONITOR-428, cycle 0 -> 1): re-queued
+- ASSUMPTION-438 (MONITOR-429, cycle 0 -> 1): re-queued
+- ASSUMPTION-439 (MONITOR-430, cycle 0 -> 1): re-queued
+- ASSUMPTION-440 (MONITOR-431, cycle 0 -> 1): re-queued
+- ASSUMPTION-441 (MONITOR-432, cycle 0 -> 1): re-queued
+- ASSUMPTION-443 (MONITOR-433, cycle 0 -> 1): re-queued
+- ASSUMPTION-444 (MONITOR-434, cycle 0 -> 1): re-queued
+- ASSUMPTION-445 (MONITOR-435, cycle 0 -> 1): re-queued
+
+**Cycle-increment cohort (4) — Cadence Weekly; Last checked 2026-07-19; Next 15d check 2026-07-26; re-queued. These are the only items with real trajectory movement this run:**
+- ASSUMPTION-333 (MONITOR-360, cycle 2 -> 3, Priority High): re-queued. Trajectory — Supporting: stable (15a SUPPORTED/Moderate-Strong, unchanged); Challenging: **growing** (15b Moderate -> Strong; arXiv 2506.05794 sharpens the Markov-blanket-as-statistical-partition objection); New sources since last cycle: Yes. Approaching the 4-cycle stale threshold — if cycle 3 returns no movement, cycle 4 warrants a STALE-MONITOR-FLAG; note however that the blocker is a structure-mapping task, not a literature gap.
+- PRESUMPTION-388 (MONITOR-373, cycle 1 -> 2, Priority High): re-queued. Trajectory — Supporting: **growing** (15a Moderate -> Moderate-Strong; Human-Label-Variation as informative signal, arXiv 2510.12817); Challenging: stable (PARTIALLY-CHALLENGED/Moderate; rubric ambiguity + ~25% judge inconsistency, arXiv 2503.05965 / 2601.09065); New sources since last cycle: Yes. Coupled to P-387/REVISE-187 (same adjudicator).
+- PRESUMPTION-390 (MONITOR-375, cycle 1 -> 2, Priority High): re-queued. Trajectory — Supporting: **growing but analogical only** (15a None/Weak -> Weak-Moderate; Multi-Symmetry Ensembles, TBP); Challenging: none found externally; New sources since last cycle: Yes. Burden is internal/empirical (per-axis inter-slice error correlation vs same-seed baseline), so further literature search is expected low-yield — candidate for empirical-only routing if cycle 2 returns nothing new.
+- ASSUMPTION-363 (MONITOR-382, cycle 1 -> 2, Priority High): re-queued. Trajectory — Supporting: stable (15a SUPPORTED/Moderate on cadence value); Challenging: **growing** (15b CHALLENGED/Strong on the silent-stall clause; app-gated, no non-execution detection; 2026 dead-man's-switch doctrine); New sources since last cycle: Yes. Reaffirms REVISE-147 (external dead-man's-switch).
+
+**Carry-over cohort (67) — cycle UNCHANGED; Cadence Weekly; Next 15d check 2026-07-19 -> 2026-07-26; standing QUEUED entries remain operative (NOT duplicate-queued). Trajectory for all: Supporting stable; Challenging stable; New sources since last cycle: No — unchanged BY CONSTRUCTION (no search ran), not by observation:**
+- From the 2026-07-12 cohort, cycle 1 (19): MONITOR-400 .. MONITOR-418
+- From the 2026-07-05 cohort, cycle 2 (21): MONITOR-345, -346, -347, -348, -350, -351, -352, -353, -354, -355, -356, -357, -358, -359, -361, -362, -363, -364, -365, -366, -367
+- From the 2026-07-05 cohort, cycle 1 (27): MONITOR-368, -369, -370, -371, -376, -377, -378, -379, -380, -381, -383, -384, -385, -386, -387, -388, -389, -390, -391, -392, -393, -394, -395, -396, -397, -398, -399
+
+**Fresh intake — first next_check set this run (not re-queued):** MONITOR-449, MONITOR-450, MONITOR-451, MONITOR-452 (entered 2026-07-19). Cadence Weekly; Cycle 0; Last checked: n/a (intake); Next 15d check 2026-07-26.
+
+### Coverage reconciliation (verification step)
+
+  452 MONITOR ids exist. Accounted for this run: 344 low-priority/monthly (MONITOR-001..344, STALE-MONITOR-FLAGGED and downgraded on 2026-07-05, next_check 2026-08-02 — not due, and the monthly cycle does not fire today) + 67 carried + 21 re-queued + 16 not-yet-due (MONITOR-436..448) + 4 fresh (MONITOR-449..452) + 3 event-driven (MONITOR-003, -041, -154, counted within 001..344) + 3 exited to REVISE on 2026-07-08 (MONITOR-349, -372, -374, counted within 345..399). No ACTIVE weekly item with an operative next_check on or before 2026-07-19 was left unprocessed.
+  Queue hygiene: the 21 new blocks are all [QUEUED] and unconsumed; no source item was duplicate-queued by this run. One PRE-EXISTING duplicate stands unresolved and is NOT from this run — ASSUMPTION-044 holds two identical unconsumed blocks, both tagged [RE-TRIGGER by 15d: 2026-07-05, cycle 5]. Flagged for 15c/queue cleanup; 15d does not delete queue entries.
+
+**Run summary:** 21 re-queued (17 first re-triggers + 4 cycle increments), 67 carried with next_check advanced and cycle counts held, 4 fresh items given first next_check, 0 new stale flags, monthly cycle skipped (not first Sunday), event-driven items untouched. **3 escalations raised: MONITOR-420's auto-escalate trigger has FIRED (15c to issue REVISE); the 147-item unconsumed backlog is surfaced for the 7th consecutive run (Tom decision needed); MONITOR-423's starvation trigger is likely met (15c to confirm).** A methodological blind spot in the cycle-count staleness rule is filed for review. Queue state current as of 2026-07-19.
+
+---
+
+---
+
+# ===== 2026-07-20 Agent 15c intake — 2026-07-19 EOD batch (5 MONITOR items) =====
+
+*Fresh intake, freshly evaluated by 15a/15b/15c at creation. Cycle 0. Per the 2026-06-28 / 2026-07-05 convention these are NOT re-triggered by 15d on entry; first 15d next check is 2026-07-27. Cadence Weekly for all five unless noted.*
+
+*Cohort note: all five were dispositioned MONITOR rather than INCORPORATE or REVISE because the evidence is genuinely two-sided and, in four of the five, a CHEAP DISCRIMINATING TEST EXISTS AND HAS NOT BEEN RUN. Per PREMISE-107 (incorporated this run) the correct action is to run the test, not to pick a side. Each entry below names the test.*
+
+MONITOR-453:
+  Date entered: 2026-07-20
+  Source item: ASSUMPTION-475
+  Item type: ASSUMPTION (stated)
+  Statement: contested — 15a SUPPORTED (Strong) vs 15b PARTIALLY-CHALLENGED (Strong). Claim: forcing parts into too-complete agreement destroys the local optimization that made the collective intelligent; Rung-2 should not be scored on convergence; the success signature is increased mutual registration with preserved local optimization.
+  Net assessment: The strongest-supported item in the batch on its negative clause and the most strongly challenged on its positive one. 15a has Lorenz et al. (PNAS 2011, mild social influence lowers accuracy while raising confidence), the diversity prediction theorem (diversity is a SUBTRACTED term in collective error), and three 2025-2026 results that LLM populations specifically homogenise — substrate-matched. 15b has Kuncheva and Whitaker (no strong diversity-accuracy correlation; unbounded diversity DEGRADES accuracy; there is an interior optimum), MacIntyre read the other way (rival traditions ARE rationally adjudicable, one defeated on the other's own terms — a convergence-shaped outcome), and the decisive instrument objection: the Ideological Turing Test, the leading candidate for measuring understanding-without-agreement, operationalises passing as opponents AGREEING at or above the in-group rate. Strong support plus strong challenge is the spec's MONITOR row, and the stakes forbid resolving it by preference.
+  What would change the disposition: Score the same set of existing dialogues under (a) a convergence measure, (b) a mutual-registration measure, and (c) an ITT-style measure, and compute pairwise rank correlations. If (b) correlates strongly with (a), the dichotomy is false, the presumption is harmless, and the item narrows to a documentation fix -> INCORPORATE the narrowed form. If (b) and (a) rank dialogues differently, the disagreement set IS the entire empirical content of the item; inspect it by hand -> INCORPORATE or REVISE on what it shows. Do NOT remove convergence from Rung-2 scoring before this runs: 15b's decisive risk is that a rule which never penalises non-convergence is unfalsifiable, since two traditions talking past each other indefinitely satisfies "preserved local optimization."
+  Monitoring cadence: Weekly
+  Priority: High
+  next_check: 2026-07-27
+  Cycle: 0
+  Coupled to: REVISE-235 (PRESUMPTION-500, the unstated twin of this item — the presumption is flagged for revision, this proposed replacement is monitored pending the test). Also REVISE-236 (this item's proposed instrument is named in the REMEDY-INHERITS-DEFECT flag).
+  Transfer condition NOT resolved: 14a flagged the Levin transfer condition for 15b and 15b landed it. A bioelectric collective shares a physical coupling medium, has no symbolic representations, no capacity to misdescribe, and no standard by which one part could be shown wrong. Levin himself states intuitions at one level are not reliable guides to other levels. The bioelectric result is a generative analogy with no transfer warrant and must not carry load.
+  Full results: lit_search_results/for/ASSUMPTION-475_for.md ; lit_search_results/against/ASSUMPTION-475_against.md
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-475
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-19 sewing agent weekly transcript
+      15a: Searched for supporting literature; SUPPORTED (Strong)
+      15b: Searched for challenging literature; PARTIALLY-CHALLENGED (Strong)
+      15c: Net evaluation and disposition; MONITOR pending the rank-correlation discriminating test
+    Current status: MONITORING (CONTESTED)
+    Disposition record: DISPOSITION-ASSUMPTION-475 (lit_search_returns.md, 2026-07-20)
+
+MONITOR-454:
+  Date entered: 2026-07-20
+  Source item: ASSUMPTION-476
+  Item type: ASSUMPTION (stated)
+  Statement: contested on the remedy — 15a PARTIALLY-SUPPORTED (Moderate) vs 15b PARTIALLY-CHALLENGED (Moderate). Claim: a staleness detector keyed to cycle count loses sensitivity exactly as consumption stalls; a wall-clock companion rule is the stated remedy, deliberately not implemented.
+  Net assessment: The DIAGNOSIS is uncontradicted by either agent and is a recognised anti-pattern (a monitor whose reference is generated by the monitored process). It is not incorporated separately because PREMISE-110 (PRESUMPTION-505, this run) already validates the general form at High confidence and this is its cleanest instance. What remains open is the REMEDY, and both agents landed on it independently. 15a graded support Moderate rather than Strong and volunteered a counter-indication unprompted (arXiv:2606.19386: wall-clock-calibrated monitors are bistable at agent cadence — below a critical band they alarm constantly, above it they are dead). 15b added that wall clock is the reference distributed-systems practice specifically warns about (Redis TTL non-monotonicity, 1-50ms generic drift), and made the sharper structural point: one signal is carrying BOTH liveness and progress, and no choice of aging axis separates them. Adding wall clock buys a second way to be wrong about the same conflation.
+  What would change the disposition: Three checks, cheapest first. (1) Log the wall-clock timestamp from the scheduled and the interactive context on the same nominal run and compare — one line, and it is the discriminating test; the 2026-07-18 scheduled-context finding makes the clock an obvious unchecked candidate. (2) Simulate the wall-clock rule offline against the existing 67-item carried record and COUNT how many items it would flip to STALE on day one; if that count is large relative to the channel's 30-day disposition throughput (currently near zero — see BACKLOG-FLAG, 7th consecutive surfacing), the rule is predicted to be suppressed on arrival and the correct order of work is to fix the consumer first. (3) Split the signal — report FIRED (the monitor ran), OBSERVED (the item was read) and DISPOSED (the item was acted on) separately. If (3) makes the failure visible without any new clock, the remedy is unnecessary -> INCORPORATE the split instead. A clean pass on (1) plus a small count on (2) -> INCORPORATE the wall-clock companion. A drifting or divergent clock, or a large bulk-transition count -> REVISE.
+  Monitoring cadence: Weekly
+  Priority: High
+  next_check: 2026-07-27
+  Cycle: 0
+  Coupled to: PREMISE-110 (the general form, incorporated this run); REVISE-236 (this item's remedy is named in the REMEDY-INHERITS-DEFECT flag); PREMISE-106 (the receiving channel's throughput is the binding constraint).
+  Note on order of operations: implementing this remedy WITHOUT running test (1) would be a same-day instance of the pattern ASSUMPTION-479 flagged and PREMISE-107 now validates. 15a said so in its own caveats. The deliberate non-implementation may have been the right call for the wrong reason.
+  Full results: lit_search_results/for/ASSUMPTION-476_for.md ; lit_search_results/against/ASSUMPTION-476_against.md
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-476
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-19 periodic monitor weekly transcript
+      15a: Searched for supporting literature; PARTIALLY-SUPPORTED (Moderate), counter-indication volunteered
+      15b: Searched for challenging literature; PARTIALLY-CHALLENGED (Moderate)
+      15c: Net evaluation and disposition; MONITOR — diagnosis absorbed into PREMISE-110, remedy held pending the one-line clock test
+    Current status: MONITORING (PARTIALLY-SUPPORTED)
+    Disposition record: DISPOSITION-ASSUMPTION-476 (lit_search_returns.md, 2026-07-20)
+
+MONITOR-455:
+  Date entered: 2026-07-20
+  Source item: ASSUMPTION-480
+  Item type: ASSUMPTION (stated)
+  Statement: 15a SUPPORTED (Strong) vs 15b PARTIALLY-CHALLENGED (Weak). Claim: a summarizing agent asserted "No failures to report" and named two failing pipelines as clean, on a morning with four concurrent failure reports, and delivered it outbound.
+  Net assessment: The EVENT is real, directly verifiable, has named artifacts on both sides, and neither agent disputes it. It is nonetheless not incorporated as a premise, for two reasons both agents supplied. First, it is n=1 with no base rate: the item establishes that this CAN happen, not how often, and the number that decides whether a provenance-binding regime is worth its cost has not been obtained. Second, and decisively, its general form is PRESUMPTION-503, which was incorporated this run as PREMISE-109 on independent literature; 15b explicitly recommends re-filing A-480 as P-503's evidencing instance rather than as a coequal claim, and 15a's CROSS-ITEM-NOTE records the two as non-independent readings of one morning. Incorporating both would produce two remediation efforts aimed at one defect, one of them at the wrong layer. This entry therefore holds the EVIDENCING INSTANCE and the unresolved mechanism question.
+  What would change the disposition: Two cheap steps. (1) MECHANISM DISCRIMINATION — enumerate the exact read set of the 2026-07-19 morning run and check whether the four failure transcripts were in it. If they were NOT, the item resolves entirely into PREMISE-109 (read-set non-coverage), no separate remedy is needed, and this monitor closes. If they WERE in the read set and the summary reported green anyway, the finding is far more serious than the item states, belongs in a different class, and routes straight to REVISE with High urgency. This single check settles A-480 and P-503 at once and costs one file listing. (2) BASE RATE — sample thirty days of outbound status summaries against the same-day failure record and count agreements and disagreements. A high disagreement rate -> REVISE; a low one -> the event is a bug already covered by PREMISE-109 and this monitor closes.
+  Monitoring cadence: Weekly
+  Priority: Medium-High
+  next_check: 2026-07-27
+  Cycle: 0
+  Coupled to: PREMISE-109 (PRESUMPTION-503, its general form, incorporated this run). Do not remediate independently of it.
+  Framing correction on the record: the item's grammar ("a summarizing agent asserted") locates the defect in an agent's conduct. The retrieved literature locates it in the architecture — a visualization layer that renders its inputs faithfully is behaving correctly, and green-over-red is the expected signature of layered aggregation. Treating "no failures to report" as a lie rather than as a correct rendering of an incomplete input would corrupt the diagnosis of every future instance. PREMISE-109 is written to the architectural framing.
+  Full results: lit_search_results/for/ASSUMPTION-480_for.md ; lit_search_results/against/ASSUMPTION-480_against.md
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-480
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-19 morning project status transcript, cross-checked against four same-morning failure transcripts
+      15a: Searched for supporting literature; SUPPORTED (Strong)
+      15b: Searched for challenging literature; PARTIALLY-CHALLENGED (Weak — attribution and absent base rate)
+      15c: Net evaluation and disposition; MONITOR as the evidencing instance of PREMISE-109, pending read-set enumeration
+    Current status: MONITORING (SUPPORTED as an event; not generalised)
+    Disposition record: DISPOSITION-ASSUMPTION-480 (lit_search_returns.md, 2026-07-20)
+
+MONITOR-456:
+  Date entered: 2026-07-20
+  Source item: PRESUMPTION-501
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: contested — 15a SUPPORTED (Moderate-Strong) vs 15b CHALLENGED (Moderate). Claim: a measurement disagreement is presumed to be a measurement problem to be de-inflated rather than a contradiction to be reconciled.
+  Net assessment: The SURFACING is sound and unchallenged — four numbers, two corrections, no designated authority, and a de-inflating reflex nobody examined. The DIRECTIONAL RECOMMENDATION is what 15b challenged and challenged well: reconciliation practice holds the opposite as the base case, count divergence between two readers of one store is USUALLY definitional (inclusion boundary, aggregation level, timing), record-count comparison is the shallowest available check and cannot separate the two cases unaided, and the magnitudes here fit the definitional profile rather than the corruption profile. Most tellingly, the pipeline supplied its own counterexample the same day: ASSUMPTION-474 attributes ~80 of a ~225 delta to a resolver definitional change, which is the system demonstrating that in at least one of these cases de-inflation was CORRECT. 15b's steelman supplies the synthesis and 15c adopts it: the defect is the AUTOMATICITY, not the direction. A reflex that happens to be right is still unexamined, and it will produce the same answer when the answer is wrong.
+  CONSISTENCY CONFLICT SURFACED (do not incorporate): this item's directional recommendation — treat count disagreements as contradictions to reconcile — would conflict with the existing PREMISE-101, which holds that counts are properties of a reading (a scope/method/time tuple) and that "independent agents will produce divergent counts of the same object WITHOUT EITHER BEING WRONG." PREMISE-101 is retained. It was validated 2026-07-19 on 15a SUPPORTED/Strong plus 15b PARTIALLY-CHALLENGED/Moderate; P-501 arrives with a WEAKER support grade and a STRONGER challenge grade, and the challenging literature 15b retrieved for P-501 is the same reconciliation literature that grounds PREMISE-101. Choosing PREMISE-101 is therefore not a preference between two equal claims but a decision on the evidence: the newer item is less well supported on the point where they diverge. P-501 is dispositioned MONITOR rather than INCORPORATE for exactly this reason, and no silent incorporation occurred.
+  What would change the disposition: For each of the four disagreeing numbers record the reader, the inclusion rule, the timestamp and the resolver version, then re-derive all four under ONE rule over ONE frozen snapshot. Whatever divergence survives that alignment is the substantive component. Zero residual across all four -> the de-inflating reflex was correct four times out of four, the item's recommendation is refuted, and it closes as a documentation fix (attach definitions to counts, per PREMISE-101). Any non-trivial residual -> the item is vindicated for that case and moves toward INCORPORATE in a narrowed form. Run this BEFORE implementing OPEN-124: a counting authority designated over unaligned definitions inherits the problem, and this vault's PRESUMPTION-494 search already found single-source-of-truth designation characterised as a coupling anti-pattern that hides divergence rather than removing it.
+  Monitoring cadence: Weekly
+  Priority: Medium-High
+  next_check: 2026-07-27
+  Cycle: 0
+  Coupled to: PREMISE-101 (retained, in tension with this item's recommendation); PREMISE-105 (ASSUMPTION-474, whose frozen-snapshot dual-resolver run is the SAME test and should be run once for both); OPEN-124.
+  Independence note: 15a's CROSS-ITEM-NOTE records A-474/A-480/P-501/P-503 as partly non-independent readings of two events, and 15a's own file flags that P-501 overlaps substantially with PRESUMPTION-494 (already SUPPORTED/Strong) and with A-474 — three items converging on one governance gap. That convergence is NOT counted here as three confirmations.
+  Full results: lit_search_results/for/PRESUMPTION-501_for.md ; lit_search_results/against/PRESUMPTION-501_against.md
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-501
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by cross-reading the two 2026-07-19 sewing transcripts and the cowork-to-chat summary against live registry maxima
+      15a: Searched for supporting literature; SUPPORTED (Moderate-Strong)
+      15b: Searched for challenging literature; CHALLENGED (Moderate)
+      15c: Net evaluation and disposition; MONITOR — surfacing accepted, directional recommendation NOT incorporated due to conflict with PREMISE-101
+    Current status: MONITORING (CHALLENGED on the recommendation; surfacing accepted)
+    Disposition record: DISPOSITION-PRESUMPTION-501 (lit_search_returns.md, 2026-07-20)
+
+MONITOR-457:
+  Date entered: 2026-07-20
+  Source item: PRESUMPTION-504
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: contested on the mechanism — 15a SUPPORTED (Strong general; Weak on the distinctive clause, flagged NOVEL) vs 15b PARTIALLY-CHALLENGED (Moderate). Claim: a stated constraint is presumed to remain a constraint after routine open violation with no consequence and no revision; the fail-loud rule has become the mechanism by which breach is normalized, because the rule is satisfied by confessing to breaking it.
+  Net assessment: The OBSERVED PATTERN is not in dispute — a stated budget exceeded repeatedly, breaches announced, nothing changed, no revision. The MECHANISM is, and 15b's objection is decisive on its own terms: Vaughan's normalization of deviance requires the deviation to become UNREMARKABLE, and here every breach was announced loudly and specifically, which is the negation of the precondition. This vault recorded the identical boundary-condition objection against PRESUMPTION-495 five days ago; the framework is now being invoked twice against its own stated conditions. 15b adds a live methodological objection — hindsight bias, precisely the posture of an EOD pipeline reviewing its own day — and a simpler equally-supported reading that sits in the same batch: PREMISE-106 (ASSUMPTION-478) holds that the budget is inconsistent with the specified scope by roughly a factor of six. A constraint violated on every execution by a system whose assigned work requires six times the allowance is a MIS-SET PARAMETER plus a MISSING REVISION AUTHORITY, not a decaying norm. On that reading the fail-loud reports are functioning exactly as designed. 15a independently reached the same branch point, noting that the literature's hard-enforcement remedy is the wrong one here and that formal revision of the standard is the applicable branch. The two agents agree on the fix and disagree on the diagnosis, which is the MONITOR case.
+  NOVELTY (High priority driver): 15a raised a NOVELTY-FLAG on the item's distinctive clause. No literature was found on rules satisfied by self-disclosure, on confession-as-compliance, or on transparency obligations discharging substantive constraints. The nearest analogue (Challenger O-ring erosion documented at every flight) differs because there the documentation was not itself the required response. The general form — "an honesty norm can launder a violated constraint, because the audit trail shows compliance with the norm rather than breach of the limit" — is a plausible and consequential failure mode for ANY self-reporting autonomous system, and C2A2 has instrumented instances of it. Per the 15c spec's NOVELTY heuristic this item is monitored at HIGH priority as a potential original contribution.
+  What would change the disposition: Two cheap checks, and they discriminate cleanly. (1) SIGNAL DECAY — plot the fail-loud announcements over 30 days and measure whether they are getting shorter, later, or absent. Vaughan's mechanism predicts DECLINING signal; steady or increasing signal falsifies it. (2) CALIBRATION — measure the token cost of one full-coverage run against the budget. Announcements decaying AND the budget correctly sized -> the presumption holds as stated -> INCORPORATE (and the novel clause becomes a contribution). Announcements steady AND the budget ~6x undersized -> this is a calibration and revision-authority gap, not norm decay -> REVISE, reframed, routed with PREMISE-106. Do NOT implement the item's proposed hard stop against a logged overrun in the interim: against a budget the same batch argues is a sixth of what the scope requires, a hard stop truncates runs mid-item and leaves the calibration untouched.
+  Reflexive risk to watch: an agent that pathologises its own repeated announcements may respond by announcing less, which removes the only signal currently working. If announcement volume drops in the next two weeks, check whether it dropped because the breaches stopped or because the reporting did.
+  Monitoring cadence: Weekly
+  Priority: High (novelty-driven; item was queued Medium)
+  next_check: 2026-07-27
+  Cycle: 0
+  Coupled to: PREMISE-106 (ASSUMPTION-478, the calibration finding, which check (2) is shared with); PREMISE-102 and PREMISE-108 (fail-loud as reporting rather than remediation); PRESUMPTION-495.
+  Self-reference noted: this pipeline breached the same budget on the run that produced the item, and the three-same-day-breaches count is an internal self-count with no external coding rule — the SAME-DAY GENERALIZATION pattern 15b recorded as a secondary flag this run.
+  Full results: lit_search_results/for/PRESUMPTION-504_for.md ; lit_search_results/against/PRESUMPTION-504_against.md
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-504
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three same-day budget breaches including this pipeline's own
+      15a: Searched for supporting literature; SUPPORTED (Strong general) with NOVELTY-FLAG on the fail-loud clause
+      15b: Searched for challenging literature; PARTIALLY-CHALLENGED (Moderate — Vaughan's precondition negated; calibration reading offered)
+      15c: Net evaluation and disposition; MONITOR at HIGH priority on the novelty flag, pending the signal-decay and calibration checks
+    Current status: MONITORING (CONTESTED mechanism; NOVEL on the distinctive clause)
+    Disposition record: DISPOSITION-PRESUMPTION-504 (lit_search_returns.md, 2026-07-20)
+
+**Intake summary (2026-07-20):** 5 items entered MONITOR (MONITOR-453..457) from the 2026-07-19 EOD batch of 14. Cadence Weekly, Cycle 0, first 15d next check 2026-07-27 for all five. Priorities: High (453, 454, 457), Medium-High (455, 456). Four of the five are blocked on a discriminating test that costs less than the remedy it would replace; MONITOR-455 and MONITOR-456 share their test with MONITOR-454's channel-throughput check and with PREMISE-105's frozen-snapshot run respectively, so the five items require three distinct tests, not five. **Standing caution:** these five enter a queue whose consumption has been near zero for eighteen days (BACKLOG-FLAG, 7th consecutive surfacing) and whose instability is now a validated premise (PREMISE-106). Entering them here is not evidence they will be re-evaluated.

@@ -36,3 +36,15 @@ Levin's alignment mechanism is *bioelectric* — cells share a low-dimensional g
 **Intersection page:** [[2026-06-15_levin_platonic-space-ingressing-minds]]
 **Synthesis claim:** Wolfram's ruliad — the space of all computationally possible patterns that physical processes sample — is a structural twin of Levin's Platonic space of pre-existing forms. Ruliad-sampling becomes a candidate mechanism for Levin's "ingression": a physical system points to and instantiates an adjacent pattern by occupying a region of rulial space.
 **Open question the wiki cannot yet answer:** Is "ingression" reducible to rulial proximity (a system ingresses the patterns nearest it in the ruliad), or does it require something the ruliad lacks — a selection/agency principle that picks which adjacent pattern is realized?
+
+### 2026-07-19 — two methods for "what counts as alive"
+
+*Sewing Agent, 2026-07-19.* PROP-2026-07-14-002 (Bender, Kofman, Agüera y Arcas & Levin, *Biological Theory*) reports a meta-analysis of how researchers actually define "life," treating the definitional disagreement itself as data. `2026-05-05_wolfram_rulial-ensemble-biology-bulk-orchestration` answers the same question from computational boundedness.
+
+**Synthesis claim.** These are not rival answers; they are an empirical measurement and a theoretical prediction that have never been compared. Wolfram's position implies that "alive" is a distinction drawn by an observer of a particular computational character, which entails that the criteria observers use should cluster in a *specific* way — around properties visible at the coarse-graining bounded observers occupy. The meta-analysis reports the actual clustering. If the observer-bounded account predicts that clustering, it is a nontrivial retrodiction from an unlikely direction. If it does not, the account is under-constrained.
+
+Levin's own use of the meta-analysis is defensive — it converts "you are wrong about life" into "you are choosing a different, defensible cut." Wolfram's framework would supply the offensive version: an account of *why* the cut is unavoidably observer-relative, which is stronger than noting that experts disagree.
+
+**Question the wiki cannot yet answer.** Does the meta-analysis report the criterion-space in enough detail to test a clustering prediction, or only the spread? This determines whether the comparison above is a research task or merely a hope. Someone should read the paper's figures with that question in hand.
+
+*Also this week:* PROP-2026-07-06-002's pattern-persistence-over-substrate framing raises a distinct Wolfram question — whether computational irreducibility bounds how much substrate can turn over before the large-scale pattern is no longer computably the same pattern. Recorded here; not developed.
