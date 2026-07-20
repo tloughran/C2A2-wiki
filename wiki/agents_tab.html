@@ -286,7 +286,10 @@ table.exp-table { width: 100%; border-collapse: collapse; font-size: 12px; }
   <!-- HEADER -->
   <div id="header">
     <div class="title">C2A2 — Agent Ecosystem</div>
-    <div class="subtitle">Weekly Schedule · 35 Agents</div>
+    <!-- Count is computed from AGENTS at load, never hardcoded: the literal said
+         "35 Agents" while the footer computed a different number. See
+         wiki/architecture/fact_inventory.md (2026-07-20 drift audit). -->
+    <div class="subtitle" id="subtitle">Weekly Schedule</div>
     <div class="spacer"></div>
     <span id="schedule-controls">
     <div id="progress-bar-wrap" title="Click or drag to seek"><div id="progress-bar"></div></div>
@@ -522,6 +525,14 @@ const AGENTS = [
     category:"infrastructure", days:[0, 1, 2, 3, 4, 5, 6], hour:6, minute:30,
     narration:"Daily Supabase keep-warm — pings the C2A2 Supabase instance to prevent cold pause.",
     multiDaily:false
+  },
+  {
+    taskId:"com.tomloughran.openstory.watchdog",
+    description:"OpenStory liveness watchdog — pings the backend's /health every 5 min and restarts it only when a restart can help. A launchd agent, not a Cowork task, so it reports no telemetry here.",
+    schedule:"every 5 min",
+    category:"infrastructure", days:[0, 1, 2, 3, 4, 5, 6], hour:0, minute:0,
+    narration:"Liveness watchdog for the OpenStory backend, added 2026-07-20 after it sat dead for two weeks while launchd still reported it as managed. launchd KeepAlive only reacts to a process exiting; it is blind to a process that is alive but hung, to a crash-loop that never reaches health, and to a missing precondition. This watchdog pings the backend's own /health endpoint every five minutes and acts only when acting helps: if the H-Drive archive volume is unmounted it refuses to restart and says so, since restarting into a dangling symlink only crash-loops; if the process is under fifteen minutes old it waits, because a cold start rebuilds, backfills seventy-two hours, and reconciles the archive. Otherwise it kickstarts the service and verifies on the next pass. After three consecutive failures it stops trying and asks for a human. Failures surface as macOS notifications rather than as lines in a log nobody reads.",
+    multiDaily:true
   },
   {
     taskId:"connector-health-weekly",
@@ -958,6 +969,10 @@ function buildLegend() {
   const manual = AGENTS.filter(a=>a.hour===null).length;
   document.getElementById('agent-summary').innerHTML =
     AGENTS.length+' agents total<br>'+sched+' scheduled<br>'+manual+' manual';
+  // Header count derives from the same array as the footer, so the two can never
+  // disagree the way the old hardcoded "35 Agents" literal did.
+  const sub = document.getElementById('subtitle');
+  if (sub) sub.textContent = 'Weekly Schedule · ' + AGENTS.length + ' Agents';
 }
 
 // ============================================================
