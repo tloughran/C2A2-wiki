@@ -25,6 +25,18 @@ LOG="$REPO/sync_vault.log"
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOG"; }
 
+# Fail LOUD, not into a logfile nobody reads. Writes a marker file AND fires a
+# macOS notification. Rationale (2026-07-20): pushes had been rejected since
+# 2026-05-11 — 24 failures — and the only signal was a line in sync_vault.log.
+# Two weeks of vault content sat unpublished because nothing surfaced it.
+FAIL_MARKER="$REPO/sync_vault.FAILED"
+fail_loud() {
+  log "SYNC FAILED — $1"
+  printf '[%s] %s\n' "$(date '+%Y-%m-%d %H:%M:%S')" "$1" > "$FAIL_MARKER"
+  osascript -e "display notification \"$1\" with title \"Summa vault sync FAILED\"" 2>/dev/null || true
+  exit 1
+}
+
 log "=== Summa vault sync started ==="
 
 # ── 1. Sync transcript and synthesis files (content-checksummed) ─────────────
@@ -60,7 +72,19 @@ cd "$REPO"
 # aborts the commit with "Unable to create index.lock: File exists" — exactly
 # the failure that silently dropped the 2026-06-18 push. Safe to remove here:
 # this script is the only scheduled writer of wiki/vault/, runs single-threaded.
-rm -f "$REPO/.git/index.lock" "$REPO/.git/refs/heads/main.lock" 2>/dev/null || true
+# HEAD.lock added 2026-07-20: a crashed daily-run left a 0-byte HEAD.lock that
+# blocked this script for ~17h with no visible error.
+rm -f "$REPO/.git/index.lock" "$REPO/.git/refs/heads/main.lock" \
+      "$REPO/.git/HEAD.lock" 2>/dev/null || true
+
+# Refuse to run unless the working tree is actually on main. This script commits
+# to the CHECKED-OUT branch but pushes `origin main` — on a feature branch that
+# silently strands vault commits where they will never publish (exactly what
+# happened 2026-07-19). Guard added 2026-07-20 alongside branch-based dev.
+BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "DETACHED")
+if [ "$BRANCH" != "main" ]; then
+  fail_loud "working tree is on '$BRANCH', not main — refusing to commit vault changes onto a non-main branch. Check out main (or use a worktree for feature work) and re-run."
+fi
 
 if git diff --quiet HEAD -- wiki/vault/ 2>/dev/null && \
    git ls-files --others --exclude-standard wiki/vault/ | grep -q .; then
@@ -89,9 +113,26 @@ git -c user.name="Tom Loughran" \
 
 log "Committed ${N} change(s). Pushing…"
 
-git push origin main >>"$LOG" 2>&1 && log "Push succeeded." || {
-  log "Push FAILED — run 'git push origin main' manually from $REPO"
-  exit 1
-}
+# Reconcile BEFORE pushing. origin/main advances independently of this Mac — the
+# heartbeat GitHub Action commits data-only straight to main — so a local-only
+# push is rejected as non-fast-forward. Without a pull that rejection was silent
+# and cost two weeks of unpublished vault content (2026-07-06 → 07-19).
+# Risk is bounded: fetch/rebase are read-then-replay, any conflict aborts cleanly
+# and leaves the local commit intact, and we NEVER force-push.
+if ! git fetch origin main >>"$LOG" 2>&1; then
+  fail_loud "git fetch failed (network or credentials) — local commit kept, nothing pushed"
+fi
+
+if ! git pull --rebase origin main >>"$LOG" 2>&1; then
+  git rebase --abort >>"$LOG" 2>&1 || true
+  fail_loud "rebase onto origin/main conflicted — local commit kept, nothing pushed. Resolve manually in $REPO"
+fi
+
+if git push origin main >>"$LOG" 2>&1; then
+  log "Push succeeded."
+  rm -f "$FAIL_MARKER"
+else
+  fail_loud "push rejected even after rebase — NOT force-pushing. Run 'git push origin main' manually from $REPO"
+fi
 
 log "=== Done ==="
