@@ -48,6 +48,14 @@ scratch/
 
 # Private — quarantined files that should never be in the public repo
 .private/
+# EXCEPTION (2026-07-20): .private/supabase/functions/cc-broker/index.ts is tracked
+# despite this rule, via `git add -f`. It is the ONLY copy of the voice guide's Edge
+# Function outside the Supabase deployment, and the deploy pipeline strips comments,
+# so the deployment cannot serve as the archive of record. Reviewed before publishing:
+# it contains no key material — every secret is read at runtime via Deno.env.get, and
+# the rate caps it exposes are already returned to any caller in the broker's own 402
+# response. Do NOT broaden this into a directory-level negation; the rest of .private/
+# is genuinely private.
 
 # Per-thread session handoff docs (local-only resume pointers; see CLAUDE.md)
 handoffs/
