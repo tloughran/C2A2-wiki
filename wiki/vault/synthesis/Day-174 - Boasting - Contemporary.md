@@ -18,7 +18,7 @@ evidence_strength_summary: "Metacognitive calibration / overconfidence effects a
 mind_first_reframe: "Truthfulness about oneself is accurate self-calibration: boasting and false self-deprecation are the two miscalibrations of self-report that corrupt a community's allocation of trust, boasting being at depth the false claim to self-completeness by a perspective-limited agent."
 central_theme_thread: "Agents are individuated by the limitation of their perspective; boasting is the agent treating its limited perspective as if it were the whole — the precise error the central theme warns against — while accurate self-assessment lets an agent know when to defer to those who see more and when to offer what only it can see."
 tags: [synthesis, day/174, theme/self-calibration, theme/perspective-limitation, q/112, q/113]
-last_qc_at: "2026-07-12T06:31:47"
+last_qc_at: "2026-07-20T08:19:46"
 last_qc_outcome: "pass"
 ---
 

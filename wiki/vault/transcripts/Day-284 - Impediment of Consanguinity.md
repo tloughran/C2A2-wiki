@@ -16,7 +16,7 @@ fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-284 - Impediment of Consanguinity - Contemporary]]"
 tags: [summa, day/284, pars/suppl, q/53-54]
-last_qc_at: "2026-07-12T02:29:13"
+last_qc_at: "2026-07-20T04:20:44"
 last_qc_outcome: "pass"
 ---
 

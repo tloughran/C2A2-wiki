@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 fidelity_checked: true
 synthesis: "[[Day-170 - Obedience - Contemporary]]"
 tags: [summa, day/170, pars/II-II, q/104-105]
-last_qc_at: "2026-07-12T06:32:07"
+last_qc_at: "2026-07-20T08:19:32"
 last_qc_outcome: "pass"
 ---
 

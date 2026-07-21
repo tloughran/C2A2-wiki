@@ -16,7 +16,7 @@ fetched_at: 2026-05-30
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-175 - Affability and Flattery - Contemporary]]"
 tags: [summa, day/175, pars/II-II, q/114-115]
-last_qc_at: "2026-07-12T06:32:12"
+last_qc_at: "2026-07-20T08:19:47"
 last_qc_outcome: "pass"
 ---
 

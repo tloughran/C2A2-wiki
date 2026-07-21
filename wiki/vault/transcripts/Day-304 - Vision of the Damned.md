@@ -15,7 +15,7 @@ fetched_at: 2026-06-25
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-304 - Vision of the Damned - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-12T10:31:26"
+last_qc_at: "2026-07-20T12:18:48"
 last_qc_outcome: "pass"
 tags: [summa, day/304, pars/supplement, q/93]
 ---

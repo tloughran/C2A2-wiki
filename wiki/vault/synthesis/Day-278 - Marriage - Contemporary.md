@@ -11,13 +11,14 @@ karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-09 cognitive attribution across scales, PRS-32 goal-directed cognition scaling cell->organism, PRS-10 continuity of goal-directedness)"
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling, PRS-05 distributed cognition)"
   - "wiki/traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology; canonical: Paul and the Faithfulness of God on Eph 5)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism, PRS-25 dissociative constructs both real and not-ultimate)"
 evidence_strength_summary: "Levin multiscale-individuality empirical at biological scales, speculative for human dyads; Friston dyadic mutual modeling formal/speculative; Rohr/Wright theological-scriptural, firm within tradition."
 length_ratio_to_target: 0.50
 mind_first_reframe: "Marriage is the covenantal, sacramental case of a higher-order individual genuinely emerging from two; the bond Aquinas calls real is real in the way that an organism is more than its cells."
 central_theme_thread: "Two radically partial perspectives undertake to form a single life in which each sees through the other what neither sees alone — union without erasure, the project's eschatological picture rendered at the scale of two."
 tags: [synthesis, day/278, theme/one-flesh-as-higher-individual]
-last_qc_at: "2026-07-12T00:23:44"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-20T02:26:58"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 278 — Marriage (Contemporary Parallel)

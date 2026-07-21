@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-219 - Christ's Passible Body - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/219, pars/III, q/13 q/14]
-last_qc_at: "2026-07-12T10:31:04"
+last_qc_at: "2026-07-20T12:18:28"
 last_qc_outcome: "pass"
 ---
 

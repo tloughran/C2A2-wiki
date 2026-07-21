@@ -16,7 +16,7 @@ karpathy_wiki_sources:
   - "Wright canonical: greatness as vocation/calling, honor referred to the One who gives it (Paul and the Faithfulness of God); Rohr canonical: the True Self's largeness, great-souled because anchored in union not ego (Immortal Diamond)"
 evidence_strength_summary: "The accurate-self-model and upward-spiral accounts are formal/empirical (Friston, Fredrickson); the claim that the highest greatness is vocational — a calling toward goods that refer beyond the self — is theological (Wright, Rohr)."
 tags: [synthesis, day/182, theme/magnanimity, theme/self-estimate, q/128, q/129]
-last_qc_at: "2026-07-12T08:20:56"
+last_qc_at: "2026-07-20T10:30:37"
 last_qc_outcome: "pass"
 ---
 

@@ -18,7 +18,7 @@ evidence_strength_summary: "Positivity resonance as a bond-building mechanism is
 mind_first_reframe: "Affability names the empirically real micro-mechanism (positivity resonance) by which honest warmth builds the bonds a cooperative community runs on; flattery is its counterfeit — warmth decoupled from regard to manipulate another's self-model."
 central_theme_thread: "Loving unity is not only computed but lived among perspective-limited agents, and the texture of that life is warmth; affability is its small daily form, while flattery counterfeits the meeting and isolates the flatterer behind a performance."
 tags: [synthesis, day/175, theme/positivity-resonance, theme/honest-warmth, q/114, q/115]
-last_qc_at: "2026-07-12T06:32:12"
+last_qc_at: "2026-07-20T08:19:47"
 last_qc_outcome: "rewrote"
 ---
 
@@ -36,7 +36,7 @@ A community of limited agents is not held together only by justice in the strict
 
 ## Resource
 
-**Fredrickson on positivity resonance** is the primary contemporary resource, and the fit is close to exact. Her program identifies the micro-moments of shared positive affect — warmth, attention, mutual care in ordinary encounter — as the empirically measurable building blocks of social connection, with downstream effects on health, resilience, and the durability of bonds. Tom's PRS-form record of Fredrickson's work names this resonance as the mechanism by which fleeting warm exchanges become enduring relational capital. Affability, in Aquinas's sense, just *is* the disposition to generate these micro-moments fittingly. The medieval "debt of pleasant conduct" and the contemporary "positivity resonance that builds social resources" describe the same thing from the normative and the empirical sides.
+**Fredrickson on positivity resonance** carries most of the contemporary weight here, and the fit is close to exact. Her program identifies the micro-moments of shared positive affect — warmth, attention, mutual care in ordinary encounter — as the empirically measurable building blocks of social connection, with downstream effects on health, resilience, and the durability of bonds. Tom's PRS-form record of Fredrickson's work names this resonance as the mechanism by which fleeting warm exchanges become enduring relational capital. Affability, in Aquinas's sense, just *is* the disposition to generate these micro-moments fittingly. The medieval "debt of pleasant conduct" and the contemporary "positivity resonance that builds social resources" describe the same thing from the normative and the empirical sides.
 
 **Friston on honest social signaling** (PRS-06 in the Friston-tradition wiki) diagnoses the corruption. Genuine affability is honest warmth — a signal that indexes real regard. Flattery decouples the warm signal from the regard, deploying it to manipulate the other's self-model for the flatterer's gain. As with lying and boasting (Days 173–174), the wrong is the corruption of signal-integrity; here it is specifically the corruption of the *warmth* signal, which is doubly damaging because warmth is the very currency of bond-building. **McGilchrist** (PRS-01) gives the cognitive contrast: relational attunement (genuinely meeting the other) versus the manipulative mode that simulates attunement to extract advantage.
 

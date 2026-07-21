@@ -16,7 +16,7 @@ length_ratio_to_target: 0.63
 mind_first_reframe: "The priestly character is the theological limit-case of durable, function-bearing form assigned to a member by the whole it serves — a real-but-immaterial role, which mind-monism accommodates more readily than physicalism."
 central_theme_thread: "An order is the institutional admission that no single member sees the whole; ordination is a confessed perspective-limitation made fruitful within a body that together perceives more than any of its members."
 tags: [synthesis, day/276, theme/order-as-form-in-a-body]
-last_qc_at: "2026-07-11T20:22:01"
+last_qc_at: "2026-07-19T22:26:24"
 last_qc_outcome: "pass"
 ---
 

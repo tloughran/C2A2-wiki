@@ -15,7 +15,7 @@ fetched_at: 2026-06-25
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-301 - General Judgement - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-12T10:31:24"
+last_qc_at: "2026-07-20T12:18:41"
 last_qc_outcome: "pass"
 tags: [summa, day/301, pars/supplement, q/87]
 ---

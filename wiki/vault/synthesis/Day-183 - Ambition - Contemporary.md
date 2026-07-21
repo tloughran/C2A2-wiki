@@ -16,7 +16,7 @@ karpathy_wiki_sources:
   - "Wright canonical: the glory that comes from God vs the glory sought from men, John 5:44 (Jesus and the Victory of God); Rohr canonical: the False Self built on titles and recognition (Immortal Diamond)"
 evidence_strength_summary: "The over-precise self-model and the social-signal accounts are formal/empirical (Friston, Fredrickson, social neuroscience); the claim that honor should be referred to God rather than sought from men is theological (Wright, Rohr)."
 tags: [synthesis, day/183, theme/ambition, theme/reputation-signal, q/130, q/131]
-last_qc_at: "2026-07-12T08:20:56"
+last_qc_at: "2026-07-20T10:30:37"
 last_qc_outcome: "pass"
 ---
 

@@ -17,7 +17,7 @@ evidence_strength_summary: "Fear as the precision-weighting on the divergence si
 mind_first_reframe: "Fear is the precision the agent places on its divergence-from-target signal — the felt valuation of how much is at stake in missing the good. Servile fear weights punishment; filial fear weights separation from the beloved whole. As charity (the goal-prior's binding to the whole) grows, the weighting migrates from outcome-to-self toward relation-to-whole: servile fear fades, filial fear deepens. 'Fear of the Lord is the beginning of wisdom' = the orienting prior that there is a target worth not missing, present before any deliberation refines it."
 central_theme_thread: "Filial fear is 'fear and trembling' precisely calibrated: not terror of punishment but the reverent, increasing valuation of the whole one is being drawn into and could fall away from. It is the affective form of perspective-limitation taken seriously — the agent that knows how much it does not yet hold, and how much there is to lose."
 tags: [synthesis, day/127, theme/fear-as-precision]
-last_qc_at: "2026-07-11T20:21:51"
+last_qc_at: "2026-07-19T22:26:15"
 last_qc_outcome: "pass"
 ---
 

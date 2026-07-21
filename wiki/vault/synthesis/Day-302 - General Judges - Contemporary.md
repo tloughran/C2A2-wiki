@@ -17,8 +17,8 @@ evidence_strength_summary: "End-directedness under free-energy (active inference
 mind_first_reframe: "To have an end is to carry a preference structure (a generative model's priors) that makes some outcomes count as success; rightly judging an agent is reading it against the true end — loving union — it actually computes toward, and fitness to judge is alignment of preference structures across a shared interface."
 central_theme_thread: "No finite agent yet holds the true end completely; each computes toward loving unity from its own limited perspective, and legible judgment is possible only between agents who share enough nature/interface to make the verdict intelligible."
 tags: [synthesis, day/302, theme/right-end-of-agency]
-last_qc_at: "2026-07-12T10:31:25"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-20T12:18:42"
+last_qc_outcome: "pass"
 ---
 
 # Day 302 — General Judges (Contemporary Parallel)
