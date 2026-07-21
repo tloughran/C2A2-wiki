@@ -922,6 +922,99 @@ def check_tab_description_coverage():
     return _tab_desc_findings(tabs, keys, exempt)
 
 
+# --- Count drift config (fact_inventory.md Family 2 / R5) --------------------
+# Some counts are asserted in prose/code AND have a definite backing data source
+# (e.g. "156 curated communities" vs len(curated_communities.json)). Those are
+# checkable: scripts/count_invariants.json registers each as {source, assertions}
+# and this check verifies the asserted number still equals the computed one.
+# Counts with NO authoritative source (the sociogram node total: six conflicting
+# asserted values, nothing to reconcile against) are deliberately excluded — per
+# R4 they must be removed from prose, not asserted-and-checked. The registry is
+# the machine-readable encoding (H1), same shape as drift_allowlist.json.
+COUNT_INVARIANTS_PATH = PROJECT_ROOT / "scripts" / "count_invariants.json"
+
+
+def _load_count_invariants() -> dict:
+    """Registry of backed count assertions. Missing/unparseable = empty (the check
+    still runs, just with nothing to verify) rather than crashing the janitor."""
+    try:
+        return json.loads(COUNT_INVARIANTS_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def _real_count(source: dict):
+    """Computed reality for one invariant's source. 'json_len' -> length of a
+    top-level list, or the list under source['array_key'] for an object. Returns an
+    int, or raises so the caller can surface an unreadable/misconfigured source."""
+    data = json.loads((PROJECT_ROOT / source["file"]).read_text(encoding="utf-8"))
+    if source.get("kind") == "json_len":
+        if isinstance(data, list):
+            return len(data)
+        key = source.get("array_key")
+        return len(data[key])  # KeyError/TypeError -> surfaced as a finding
+    raise ValueError("unknown source.kind %r" % source.get("kind"))
+
+
+def _count_assertion_findings(name, real, source_file, assertion_file, text,
+                              pattern):
+    """Pure per-assertion logic (no I/O): every occurrence of `pattern` in `text`
+    whose captured number != `real` is a `count_drift` finding; if the pattern
+    matches nothing, one `count_assertion_stale` (info) so a registered assertion
+    that moved/was removed surfaces instead of silently rotting (Rule 12)."""
+    findings = []
+    matched = False
+    for m in re.compile(pattern).finditer(text):
+        matched = True
+        asserted = int(m.group(1).replace(",", ""))
+        if asserted != real:
+            line = text.count("\n", 0, m.start()) + 1
+            findings.append(Finding(
+                "count_drift", "%s:%d" % (assertion_file, line),
+                "%s asserts %d but %s has %d" % (assertion_file, asserted,
+                                                 source_file, real), "warn",
+                note="reconcile the prose with the backing data (fact_inventory "
+                     "Family 2); if the number is intentionally approximate, use a "
+                     "phrasing the registered pattern won't match"))
+    if not matched:
+        findings.append(Finding(
+            "count_assertion_stale", "count:%s" % name,
+            "pattern %r matched nothing in %s — the assertion moved or was removed; "
+            "update scripts/count_invariants.json" % (pattern, assertion_file),
+            "info"))
+    return findings
+
+
+def check_count_drift():
+    """Asserted counts vs computed reality, for counts with a definite backing data
+    source (fact_inventory.md Family 2 / R5). Registry: count_invariants.json.
+    Read-only; no writes, no git, so idempotent and lock-safe (H6)."""
+    reg = _load_count_invariants()
+    findings = []
+    for inv in reg.get("invariants", []):
+        name = inv.get("name", "?")
+        src = inv.get("source", {})
+        try:
+            real = _real_count(src)
+        except (OSError, UnicodeDecodeError, json.JSONDecodeError, KeyError,
+                TypeError, ValueError) as e:
+            findings.append(Finding(
+                "count_source_unreadable", "count:%s" % name,
+                "backing source %r unusable: %s" % (src.get("file"), e), "warn"))
+            continue
+        for a in inv.get("assertions", []):
+            try:
+                text = (PROJECT_ROOT / a["file"]).read_text(encoding="utf-8")
+            except (OSError, UnicodeDecodeError, KeyError):
+                findings.append(Finding(
+                    "count_assertion_unreadable", "count:%s" % name,
+                    "assertion file %r unreadable" % a.get("file"), "warn"))
+                continue
+            findings.extend(_count_assertion_findings(
+                name, real, src.get("file"), a["file"], text, a["pattern"]))
+    return findings
+
+
 # --- Orchestration -----------------------------------------------------------
 
 ALL_CHECKS = [
@@ -939,6 +1032,7 @@ ALL_CHECKS = [
     ("roster_drift",            check_roster_drift,          False, False),
     ("schedule_drift",          check_schedule_drift,        False, False),
     ("tab_description_coverage", check_tab_description_coverage, False, False),
+    ("count_drift",             check_count_drift,           False, False),
 ]
 
 

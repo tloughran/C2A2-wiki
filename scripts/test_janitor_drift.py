@@ -262,6 +262,73 @@ def test_tab_integration_real_repo():
         "tab-description gaps changed: %r" % scopes
 
 
+# ---- count-drift unit tests (fact_inventory Family 2 / R5) ------------------
+
+def caf(text, pattern, real=155, name="curated", src="src.json", af="a.html"):
+    return J._count_assertion_findings(name, real, src, af, text, pattern)
+
+
+def test_count_match_is_clean():
+    assert caf("we curated 155 things", r"curated (\d+)") == []
+
+
+def test_count_drift_warns_with_line():
+    f = caf("line1\nhas 156 curated items", r"(\d[\d,]*) curated")
+    assert [x.check for x in f] == ["count_drift"]
+    assert f[0].severity == "warn" and f[0].scope == "a.html:2"
+    assert "asserts 156 but src.json has 155" in f[0].detail
+
+
+def test_count_commas_stripped():
+    # "1,006" must parse as 1006, not fail or read as 1.
+    f = caf("the 1,006 curated set", r"(\d[\d,]*) curated", real=1006)
+    assert f == [], "1,006 should equal real=1006 after comma strip"
+
+
+def test_count_multiple_assertions_each_reported():
+    f = caf("156 curated ... and 156 curated again", r"(\d[\d,]*) curated")
+    assert len(f) == 2 and all(x.check == "count_drift" for x in f)
+
+
+def test_count_stale_pattern_is_info():
+    # a registered pattern that no longer matches surfaces (never silently drops).
+    f = caf("no number here", r"(\d+) curated")
+    assert [x.check for x in f] == ["count_assertion_stale"]
+    assert f[0].severity == "info"
+
+
+def test_count_specific_pattern_ignores_unrelated_numbers():
+    # 'N curated' must not fire on '156 scanned pages' or '100 communities'.
+    txt = "156 scanned pages; 100 communities; 155 curated communities"
+    assert caf(txt, r"(\d[\d,]*) curated") == []
+
+
+def test_real_count_json_list(tmp_path=None):
+    import tempfile, os, json as _j
+    d = tempfile.mkdtemp()
+    p = os.path.join(d, "x.json")
+    open(p, "w").write(_j.dumps([1, 2, 3]))
+    # _real_count resolves relative to PROJECT_ROOT; pass an absolute-ish shim
+    rel = os.path.relpath(p, J.PROJECT_ROOT)
+    assert J._real_count({"file": rel, "kind": "json_len"}) == 3
+
+
+def test_count_integration_real_repo():
+    """Pin the current real state: the curated-community count is asserted as 156
+    in three prose sites but curated_communities.json holds 155 (fact_inventory
+    off-by-one). When reconciled — prose changed to 155, or a 156th community added
+    — this shrinks and the test must be updated consciously (Rule 9)."""
+    f = J.check_count_drift()
+    drift = [x for x in f if x.check == "count_drift"]
+    assert len(drift) == 3, "curated-community count drift changed: %r" % [
+        (x.scope, x.detail) for x in drift]
+    assert all("155" in x.detail for x in drift)
+    assert not [x for x in f if x.check in (
+        "count_source_unreadable", "count_assertion_unreadable",
+        "count_assertion_stale")], "registry has an unreadable/stale entry: %r" % [
+            (x.check, x.detail) for x in f]
+
+
 def main():
     tests = [v for k, v in sorted(globals().items())
              if k.startswith("test_") and callable(v)]

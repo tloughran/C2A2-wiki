@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "purpose": "Declarative registry of count assertions that HAVE a definite backing data source, so the weekly janitor can verify each asserted number still matches computed reality. See wiki/architecture/fact_inventory.md Family 2 and recommendation R5.",
+    "scope_rule": "ONLY counts with a real ground truth belong here. Living counts with no authoritative source -- e.g. the sociogram node total, which fact_inventory records as SIX conflicting asserted values with nothing to reconcile against -- must be REMOVED from prose per R4, NOT asserted-and-checked. Do not add them here; adding a count with no stable backing would make the detector itself a source of noise.",
+    "kinds": "source.kind 'json_len' = length of the backing JSON: a top-level list, or the list under source.array_key when the top level is an object.",
+    "assertion_rule": "Each assertion.pattern MUST capture the number in group 1 and be specific enough that it matches ONLY the count in question. Prefer a distinctive adjacent word (e.g. 'curated', 'communities articulated') over a bare 'N communities', which would collide with unrelated numbers. Commas in the captured number are stripped before comparison.",
+    "updated": "2026-07-21"
+  },
+
+  "invariants": [
+    {
+      "name": "curated_communities",
+      "source": { "file": "wiki/community/curated_communities.json", "kind": "json_len" },
+      "assertions": [
+        { "file": "wiki/explorer.html", "pattern": "(\\d[\\d,]*) curated" },
+        { "file": "wiki/community_explorer.html", "pattern": "(\\d[\\d,]*) communities articulated" }
+      ],
+      "reason": "The curated community set is exactly the array in curated_communities.json (155, mirrored by community_graph.json). Prose naming a different number (156 today) has drifted -- reconcile the prose to the data, or add the missing community, but the two must agree."
+    }
+  ]
+}
