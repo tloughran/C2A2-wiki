@@ -70,30 +70,23 @@ def check_double_braces(html: str) -> list:
         else:
             print("  [PASS] No double braces in CSS")
 
-    # Check JS (excluding JSON data assignments like `const X = {...}`)
-    js = extract_inline_scripts(html)
-    if js:
-        # Remove JSON data lines (const VAR = [...]  or const VAR = {...})
-        # These legitimately contain }}
-        js_no_data = re.sub(
-            r'const \w+ = [\[\{].*?[\]\}];',
-            '',
-            js,
-            flags=re.DOTALL
-        )
-        double_in_js = list(re.finditer(r'\$?\{\{|\}\}', js_no_data))
-        if double_in_js:
-            samples = []
-            for m in double_in_js[:3]:
-                pos = m.start()
-                ctx = js_no_data[max(0, pos-20):pos+20].replace('\n', ' ')
-                samples.append(f"  ...{ctx}...")
-            errors.append(
-                f"FAIL: JS code contains {len(double_in_js)} double-brace pattern(s) "
-                f"outside data declarations:\n" + '\n'.join(samples)
-            )
-        else:
-            print("  [PASS] No double braces in JS code")
+    # NOTE (2026-07-21): the former JS double-brace scan was removed here as
+    # unsound. It flagged any bare `}}` in output JS as a template-doubling bug,
+    # but `}}` is ordinary JavaScript -- any two blocks that close together, e.g.
+    # `...); }});` (an if inside an arrow inside a forEach). It false-failed every
+    # metabolism_view.html, and condemned the already-live published copy
+    # identically; it only surfaced once fresh data finally passed the upstream
+    # freshness guard and reached this step. Two reasons it is safe to drop:
+    #   1. Redundant. Check 1 runs `node --check` (a complete V8 parse) on the
+    #      inline JS. If that passes, the braces are balanced and correct by
+    #      definition -- brace validity is a strict subset of syntactic validity.
+    #   2. Uncheckable at this layer anyway. The single-brace rule it tried to
+    #      enforce is a property of the GENERATOR SOURCE (which uses regular
+    #      strings, never f-strings), not of the output. Doubled braces that reach
+    #      the output are either a syntax error node --check already catches, or
+    #      valid, harmless code (e.g. `if(x){{...}}`, `${{a:1}}`).
+    # The CSS check above stays: node --check does not see CSS, and `{{`/`}}`
+    # there silently drops rules rather than erroring.
 
     return errors
 
