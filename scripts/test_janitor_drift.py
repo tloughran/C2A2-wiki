@@ -209,6 +209,59 @@ def test_schedule_integration_real_repo():
         [(x.severity, x.scope, x.detail) for x in f])
 
 
+# ---- tab-description-coverage unit tests (fact_inventory Family 4 / R5) -----
+
+def tdc(tabs, keys, exempt=frozenset()):
+    return J._tab_desc_findings(tabs, keys, exempt)
+
+
+def test_tab_all_covered_is_clean():
+    tabs = [("a.html", "A"), ("b.html", "B")]
+    assert tdc(tabs, {"a.html", "b.html"}) == []
+
+
+def test_tab_missing_description_warns():
+    f = tdc([("a.html", "A"), ("gap.html", "Gap")], {"a.html"})
+    assert [x.check for x in f] == ["tab_missing_description"]
+    assert f[0].severity == "warn" and f[0].scope == "tab:gap.html"
+
+
+def test_tab_orphan_description_not_flagged():
+    # a description key with no tab button (a sub-view) is NOT a finding.
+    assert tdc([("a.html", "A")], {"a.html", "subview.html"}) == []
+
+
+def test_tab_exempt_suppresses():
+    f = tdc([("a.html", "A"), ("gap.html", "Gap")], {"a.html"}, {"gap.html"})
+    assert f == [], "allowlisted tab must be suppressed"
+
+
+def test_tab_duplicate_src_reported_once():
+    # a view reachable from two buttons must yield a single finding.
+    f = tdc([("gap.html", "Nav"), ("gap.html", "Footer")], set())
+    assert len(f) == 1
+
+
+def test_tab_exempt_never_hides_a_different_gap():
+    f = tdc([("x.html", "X"), ("y.html", "Y")], set(), {"x.html"})
+    assert [x.scope for x in f] == ["tab:y.html"]
+
+
+def test_tab_integration_real_repo():
+    """Pin the current real state: two live tabs — Start here (start_here.html) and
+    Inter-Tradition Study (interT_study.html) — have no descriptions entry, so their
+    "?" falls back to generic text. When help text is authored for them (a No-Blind-
+    Push explorer.html edit) or they are exempted, this list shrinks and the test
+    must be updated consciously (Rule 9)."""
+    f = J.check_tab_description_coverage()
+    assert all(x.check == "tab_missing_description" and x.severity == "warn"
+               for x in f), "unexpected finding shape: %r" % [
+                   (x.check, x.severity) for x in f]
+    scopes = sorted(x.scope for x in f)
+    assert scopes == ["tab:interT_study.html", "tab:start_here.html"], \
+        "tab-description gaps changed: %r" % scopes
+
+
 def main():
     tests = [v for k, v in sorted(globals().items())
              if k.startswith("test_") and callable(v)]

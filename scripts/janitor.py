@@ -836,6 +836,92 @@ def check_schedule_drift():
     return _schedule_findings(agents)
 
 
+# --- Tab-description coverage config (fact_inventory.md Family 4 / R5) --------
+# explorer.html renders a "?" help modal per tab by looking up the active tab's
+# data-src in a `descriptions` map (explorer.html: `descriptions[src]`), falling
+# back to generic text when the key is absent. A live tab with no entry therefore
+# silently ships an unhelpful "?". This check asserts the coverage direction only
+# (every tab-button data-src has a descriptions entry). The reverse — a description
+# with no button — is NOT asserted: the map legitimately documents sub-views loaded
+# inside a chapter iframe (e.g. community/index.html, the Cards sub-tab) that have
+# no top-level button, the same superset situation the roster check handles.
+EXPLORER_PATH = PROJECT_ROOT / "wiki" / "explorer.html"
+
+
+def _extract_tab_srcs(html):
+    """(data-src, label) for every tab/chapter button that loads a view. Buttons
+    with no data-src (pure chapter containers like "Education"/"Accelerator Tools")
+    are not view tabs and are correctly excluded. None if no such button is found
+    (structure changed under the extractor)."""
+    out = []
+    for m in re.finditer(r'<button\b[^>]*\bdata-src="([^"]+)"[^>]*>(.*?)</button>',
+                         html, re.DOTALL):
+        src, inner = m.group(1), m.group(2)
+        main = re.search(r'class="main">([^<]+)', inner)
+        label = main.group(1).strip() if main else re.sub(r"<[^>]+>", " ",
+                                                           inner).strip()
+        out.append((src, label or src))
+    return out or None
+
+
+def _extract_description_keys(html):
+    """Keys of explorer.html's `var descriptions = { ... }` map — the object-valued
+    keys only (matched by the trailing `: {`), so the string-valued title:/body:
+    fields inside each entry are not mistaken for keys. None if the map is absent."""
+    m = re.search(r"var descriptions\s*=\s*\{(.*?)\n  \};", html, re.DOTALL)
+    if not m:
+        return None
+    return set(re.findall(r"""\n\s+['"]([^'"]+)['"]\s*:\s*\{""", m.group(1)))
+
+
+def _tab_desc_findings(tabs, keys, exempt):
+    """Pure tab-coverage logic (no I/O). `tabs` is [(data-src, label)], `keys` the
+    descriptions-map key set, `exempt` the allowlisted data-srcs. One finding per
+    uncovered tab (deduped — a view reachable from more than one button reports
+    once)."""
+    findings, seen = [], set()
+    for src, label in tabs:
+        if src in seen:
+            continue
+        seen.add(src)
+        if src in keys or src in exempt:
+            continue
+        findings.append(Finding(
+            "tab_missing_description", "tab:%s" % src,
+            "tab %r (button \"%s\") has no entry in explorer.html's descriptions "
+            "map; its \"?\" falls back to generic help text" % (src, label), "warn",
+            note="add a {title, body} entry keyed %r to the descriptions map in "
+                 "explorer.html, or if the tab is intentionally undocumented "
+                 "declare it in scripts/drift_allowlist.json"
+                 "['tab_description_exempt']" % src))
+    return findings
+
+
+def check_tab_description_coverage():
+    """Every explorer.html tab/chapter button that loads a view (data-src) has a
+    help entry in the `descriptions` map (fact_inventory.md Family 4 / R5).
+    Read-only; no writes, no git, so idempotent and lock-safe (H6)."""
+    try:
+        html = EXPLORER_PATH.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError):
+        return [Finding("tab_description_coverage", rel(EXPLORER_PATH),
+                        "explorer.html missing/unreadable", "warn")]
+    tabs = _extract_tab_srcs(html)
+    if tabs is None:
+        return [Finding("tab_description_coverage", rel(EXPLORER_PATH),
+                        "no data-src tab buttons found — explorer.html structure "
+                        "changed", "warn",
+                        note="update _extract_tab_srcs in janitor.py")]
+    keys = _extract_description_keys(html)
+    if keys is None:
+        return [Finding("tab_description_coverage", rel(EXPLORER_PATH),
+                        "descriptions map not found — structure changed", "warn",
+                        note="update _extract_description_keys in janitor.py")]
+    allow = load_drift_allowlist()
+    exempt = {e.get("data_src") for e in allow.get("tab_description_exempt", [])}
+    return _tab_desc_findings(tabs, keys, exempt)
+
+
 # --- Orchestration -----------------------------------------------------------
 
 ALL_CHECKS = [
@@ -852,6 +938,7 @@ ALL_CHECKS = [
     ("palette_drift",           check_palette_drift,         False, False),
     ("roster_drift",            check_roster_drift,          False, False),
     ("schedule_drift",          check_schedule_drift,        False, False),
+    ("tab_description_coverage", check_tab_description_coverage, False, False),
 ]
 
 
