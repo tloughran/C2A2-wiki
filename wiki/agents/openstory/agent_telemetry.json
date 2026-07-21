@@ -54,7 +54,7 @@
     "c2a2-agent-levin-friston": {
       "taskId": "c2a2-agent-levin-friston",
       "category": "c2a2-thinker",
-      "schedule": "Mon 03:04",
+      "schedule": "Mon 03:00",
       "cron": "0 3 * * 1",
       "thinkers": [
         "Levin",
@@ -100,7 +100,7 @@
     "c2a2-agent-hawkins-hoffman": {
       "taskId": "c2a2-agent-hawkins-hoffman",
       "category": "c2a2-thinker",
-      "schedule": "Tue 03:04",
+      "schedule": "Tue 03:00",
       "cron": "0 3 * * 2",
       "thinkers": [
         "Hawkins",
@@ -146,7 +146,7 @@
     "c2a2-agent-mcgilchrist-kastrup": {
       "taskId": "c2a2-agent-mcgilchrist-kastrup",
       "category": "c2a2-thinker",
-      "schedule": "Wed 03:07",
+      "schedule": "Wed 03:00",
       "cron": "0 3 * * 3",
       "thinkers": [
         "McGilchrist",
@@ -192,7 +192,7 @@
     "c2a2-agent-stump-fredrickson": {
       "taskId": "c2a2-agent-stump-fredrickson",
       "category": "c2a2-thinker",
-      "schedule": "Thu 03:04",
+      "schedule": "Thu 03:00",
       "cron": "0 3 * * 4",
       "thinkers": [
         "Stump",
@@ -238,7 +238,7 @@
     "c2a2-agent-carroll-arkanihamed": {
       "taskId": "c2a2-agent-carroll-arkanihamed",
       "category": "c2a2-thinker",
-      "schedule": "Fri 03:07",
+      "schedule": "Fri 03:00",
       "cron": "0 3 * * 5",
       "thinkers": [
         "Carroll",
@@ -284,7 +284,7 @@
     "c2a2-agent-wolfram": {
       "taskId": "c2a2-agent-wolfram",
       "category": "c2a2-thinker",
-      "schedule": "Sat 03:07",
+      "schedule": "Sat 03:00",
       "cron": "0 3 * * 6",
       "thinkers": [
         "Wolfram"
@@ -328,7 +328,7 @@
     "c2a2-agent-wright-rohr": {
       "taskId": "c2a2-agent-wright-rohr",
       "category": "c2a2-thinker",
-      "schedule": "Sun 03:13",
+      "schedule": "Sun 03:04",
       "cron": "4 3 * * 0",
       "thinkers": [
         "Wright",
@@ -374,7 +374,7 @@
     "c2a2-self-awareness-daily": {
       "taskId": "c2a2-self-awareness-daily",
       "category": "c2a2-pipeline",
-      "schedule": "daily 23:37",
+      "schedule": "daily 23:30",
       "cron": "30 23 * * *",
       "thinkers": [],
       "constitutions": [
@@ -417,7 +417,7 @@
     "c2a2-lit-search-pipeline": {
       "taskId": "c2a2-lit-search-pipeline",
       "category": "c2a2-pipeline",
-      "schedule": "daily 00:39",
+      "schedule": "daily 00:30",
       "cron": "30 0 * * *",
       "thinkers": [],
       "constitutions": [
@@ -461,7 +461,7 @@
     "c2a2-periodic-monitor-weekly": {
       "taskId": "c2a2-periodic-monitor-weekly",
       "category": "c2a2-pipeline",
-      "schedule": "Sun 03:33",
+      "schedule": "Sun 03:30",
       "cron": "30 3 * * 0",
       "thinkers": [],
       "constitutions": [
@@ -503,7 +503,7 @@
     "c2a2-deferred-action-monitor": {
       "taskId": "c2a2-deferred-action-monitor",
       "category": "c2a2-pipeline",
-      "schedule": "daily 02:33",
+      "schedule": "daily 02:30",
       "cron": "30 2 * * *",
       "thinkers": [],
       "constitutions": [
@@ -545,7 +545,7 @@
     "c282-wiki-agent-daily-run": {
       "taskId": "c282-wiki-agent-daily-run",
       "category": "c2a2-pipeline",
-      "schedule": "daily 04:34",
+      "schedule": "daily 04:30",
       "cron": "30 4 * * *",
       "thinkers": [],
       "constitutions": [
@@ -593,7 +593,7 @@
     "c2a2-wiki-janitor-weekly": {
       "taskId": "c2a2-wiki-janitor-weekly",
       "category": "c2a2-pipeline",
-      "schedule": "Sun 05:53",
+      "schedule": "Sun 05:45",
       "cron": "45 5 * * 0",
       "thinkers": [],
       "constitutions": [],
@@ -633,7 +633,7 @@
     "c2a2-sewing-agent-weekly": {
       "taskId": "c2a2-sewing-agent-weekly",
       "category": "c2a2-pipeline",
-      "schedule": "Sun 04:38",
+      "schedule": "Sun 04:30",
       "cron": "30 4 * * 0",
       "thinkers": [],
       "constitutions": [],
@@ -673,7 +673,7 @@
     "c2a2-prs-connectome-weekly": {
       "taskId": "c2a2-prs-connectome-weekly",
       "category": "c2a2-pipeline",
-      "schedule": "Sun 07:39",
+      "schedule": "Sun 07:30",
       "cron": "30 7 * * 0",
       "thinkers": [],
       "constitutions": [],
@@ -793,7 +793,7 @@
     "summa-2026-daily-batch": {
       "taskId": "summa-2026-daily-batch",
       "category": "project",
-      "schedule": "daily 05:02",
+      "schedule": "daily 05:00",
       "cron": "0 5 * * *",
       "thinkers": [],
       "constitutions": [],
@@ -833,7 +833,7 @@
     "summa-2026-nightly-verification": {
       "taskId": "summa-2026-nightly-verification",
       "category": "project",
-      "schedule": "daily 23:06",
+      "schedule": "daily 23:00",
       "cron": "0 23 * * *",
       "thinkers": [],
       "constitutions": [],
@@ -873,7 +873,7 @@
     "morning-walk-cowork-handoff": {
       "taskId": "morning-walk-cowork-handoff",
       "category": "bridge",
-      "schedule": "Mon-Fri 09:10",
+      "schedule": "Mon-Fri 09:00",
       "cron": "0 9 * * 1-5",
       "thinkers": [],
       "constitutions": [],
@@ -913,7 +913,7 @@
     "c2a2-morning-chat-scrape": {
       "taskId": "c2a2-morning-chat-scrape",
       "category": "bridge",
-      "schedule": "daily 08:52",
+      "schedule": "daily 08:45",
       "cron": "45 8 * * *",
       "thinkers": [],
       "constitutions": [],
@@ -953,7 +953,7 @@
     "c2a2-evening-cowork-to-chat": {
       "taskId": "c2a2-evening-cowork-to-chat",
       "category": "bridge",
-      "schedule": "daily 18:38",
+      "schedule": "daily 18:30",
       "cron": "30 18 * * *",
       "thinkers": [],
       "constitutions": [],
@@ -993,7 +993,7 @@
     "morning-system-health": {
       "taskId": "morning-system-health",
       "category": "infrastructure",
-      "schedule": "daily 06:03",
+      "schedule": "daily 06:00",
       "cron": "0 6 * * *",
       "thinkers": [],
       "constitutions": [],
@@ -1043,7 +1043,7 @@
     "morning-project-status": {
       "taskId": "morning-project-status",
       "category": "infrastructure",
-      "schedule": "daily 08:09",
+      "schedule": "daily 08:00",
       "cron": "0 8 * * *",
       "thinkers": [],
       "constitutions": [],
@@ -1089,7 +1089,7 @@
     "agentic-cost-tracker": {
       "taskId": "agentic-cost-tracker",
       "category": "infrastructure",
-      "schedule": "Mon 05:35",
+      "schedule": "Mon 05:30",
       "cron": "30 5 * * 1",
       "thinkers": [],
       "constitutions": [],
@@ -1129,7 +1129,7 @@
     "openstory-version-check": {
       "taskId": "openstory-version-check",
       "category": "infrastructure",
-      "schedule": "Mon 05:37",
+      "schedule": "Mon 05:35",
       "cron": "35 5 * * 1",
       "thinkers": [],
       "constitutions": [],
@@ -1169,7 +1169,7 @@
     "reviewer-review-weekly": {
       "taskId": "reviewer-review-weekly",
       "category": "infrastructure",
-      "schedule": "Mon 06:37",
+      "schedule": "Mon 06:30",
       "cron": "30 6 * * 1",
       "thinkers": [],
       "constitutions": [],
@@ -1209,7 +1209,7 @@
     "scheduler-health-check": {
       "taskId": "scheduler-health-check",
       "category": "infrastructure",
-      "schedule": "daily 07:09",
+      "schedule": "daily 07:00",
       "cron": "0 7 * * *",
       "thinkers": [],
       "constitutions": [],
@@ -1249,7 +1249,7 @@
     "supabase-c2a2-keep-warm": {
       "taskId": "supabase-c2a2-keep-warm",
       "category": "infrastructure",
-      "schedule": "daily 06:35",
+      "schedule": "daily 06:30",
       "cron": "30 6 * * *",
       "thinkers": [],
       "constitutions": [],
@@ -1289,7 +1289,7 @@
     "weekly-agent-ecosystem-report": {
       "taskId": "weekly-agent-ecosystem-report",
       "category": "infrastructure",
-      "schedule": "Sun 22:39",
+      "schedule": "Sun 22:30",
       "cron": "30 22 * * 0",
       "thinkers": [],
       "constitutions": [],
@@ -1329,7 +1329,7 @@
     "connector-health-weekly": {
       "taskId": "connector-health-weekly",
       "category": "infrastructure",
-      "schedule": "Sun 06:19",
+      "schedule": "Sun 06:15",
       "cron": "15 6 * * 0",
       "thinkers": [],
       "constitutions": [],
@@ -1369,7 +1369,7 @@
     "weekly-claude-projects-backup": {
       "taskId": "weekly-claude-projects-backup",
       "category": "infrastructure",
-      "schedule": "Sun 23:01",
+      "schedule": "Sun 23:00",
       "cron": "0 23 * * 0",
       "thinkers": [],
       "constitutions": [],

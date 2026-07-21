@@ -198,22 +198,15 @@ def test_schedule_dow_seven_is_sunday():
 
 
 def test_schedule_integration_real_repo():
-    """Pin the current real state: the 30 known drifted schedule strings, all
-    warn, plus the 3 non-comparable agents correctly skipped. When the follow-up
-    increment canonicalizes the strings from cron, this count drops and this test
-    must be updated consciously (Rule 9) — never silence a real warn to green it."""
+    """Pin the current real state: CLEAN. The 30 formerly-drifted schedule strings
+    were canonicalized to their cron minute in agent_map.json (2026-07-21, the
+    follow-up to increment 3), so every comparable string now matches its cron and
+    the check returns []. If this fails, a schedule string drifted from cron again
+    (or a new agent landed with a stale string) — fix agent_map.json, never silence
+    a real warn to green this test (Rule 9)."""
     f = J.check_schedule_drift()
-    assert all(x.check == "schedule_string_drift" and x.severity == "warn"
-               for x in f), "unexpected finding shape: %r" % [
-                   (x.check, x.severity) for x in f]
-    ids = {x.scope for x in f}
-    assert len(f) == 30, "expected 30 known drifted schedule strings, got %d: %r" % (
-        len(f), sorted(ids))
-    for must in ("agent:c2a2-wiki-janitor-weekly", "agent:morning-system-health",
-                 "agent:c2a2-agent-levin-friston"):
-        assert must in ids, "missing known drift %s" % must
-    for skipped in ("agent:summa-qc-sweep", "agent:execution-assistant"):
-        assert skipped not in ids, "must not flag non-comparable %s" % skipped
+    assert f == [], "real schedule drift detected: %r" % (
+        [(x.severity, x.scope, x.detail) for x in f])
 
 
 def main():
