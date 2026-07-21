@@ -121,6 +121,75 @@ PALETTE_PIPELINES = [
 # agreement universe (not an allowlist case — it is categorically not a tradition).
 _PALETTE_NON_TRADITIONS = {"master"}
 
+# --- Roster drift config (fact_inventory.md Family 1 / R5) -------------------
+# Four published surfaces describe "the agents", and they measure DIFFERENT
+# universes, so raw count-equality across all four is NOT a valid invariant
+# (hazard H2 — the two-scheduling-worlds finding):
+#   * agents_tab.html AGENTS array = the full DISPLAY roster (OpenStory + launchd
+#     + Cowork agents) that the schedule animation draws.
+#   * agent_map.json = the OpenStory-only CANONICAL roster; it is the telemetry
+#     join's declared source of truth (extract_openstory_agent_data.py:13).
+#   * FRIENDLY_NAMES = a display-name lookup WITH a code fallback (fname()), so it
+#     may legitimately omit an agent.
+#   * TELEMETRY.roster_size = generated as len(agent_map) at telemetry-build time
+#     (extract_openstory_agent_data.py:337), so it shares agent_map's universe.
+# This check asserts only invariants that hold WITHIN a shared universe, and
+# treats display-only agents (launchd/Cowork, no OpenStory sessions) as
+# allowlistable via drift_allowlist.json['roster_display_only'] rather than bugs.
+AGENTS_TAB_PATH = PROJECT_ROOT / "wiki" / "agents_tab.html"
+AGENT_MAP_PATH  = PROJECT_ROOT / "wiki" / "agents" / "openstory" / "agent_map.json"
+
+# taskIds are normal kebab ids OR reverse-DNS launchd labels (dots + mixed case),
+# e.g. com.tomloughran.openstory.watchdog — the charset must admit both.
+_TASKID = r"[A-Za-z0-9._-]+"
+
+
+def _extract_agents_taskids(html):
+    """Ordered taskId list from the `const AGENTS = [ ... ];` array. Order and
+    duplicates are preserved so a duplicated entry surfaces. Returns None if the
+    array cannot be located (structure changed under the extractor)."""
+    m = re.search(r"const AGENTS\s*=\s*\[(.*?)\n\];", html, re.DOTALL)
+    if not m:
+        return None
+    return re.findall(r"taskId\s*:\s*[\"'](" + _TASKID + r")[\"']", m.group(1))
+
+
+def _extract_friendly_keys(html):
+    """Keys of the `const FRIENDLY_NAMES = { ... };` display-name map (both quote
+    styles are used in the file). None if the map cannot be located."""
+    m = re.search(r"const FRIENDLY_NAMES\s*=\s*\{(.*?)\n\};", html, re.DOTALL)
+    if not m:
+        return None
+    return re.findall(r"[\"'](" + _TASKID + r")[\"']\s*:", m.group(1))
+
+
+def _extract_telemetry_alias(html):
+    """The page's own display-taskId -> telemetry-taskId map (TELEMETRY_ALIAS),
+    which papers over the c2a2-/c282- daily-run name drift. Read from source so
+    the detector normalizes roster membership EXACTLY the way the page does,
+    rather than duplicating the mapping. Empty dict if absent."""
+    m = re.search(r"const TELEMETRY_ALIAS\s*=\s*\{(.*?)\}", html, re.DOTALL)
+    if not m:
+        return {}
+    return dict(re.findall(
+        r"[\"'](" + _TASKID + r")[\"']\s*:\s*[\"'](" + _TASKID + r")[\"']",
+        m.group(1)))
+
+
+def _extract_roster_size(html):
+    """The published TELEMETRY blob's `_meta.roster_size`. Anchored on the
+    TELEMETRY_DATA_END marker (the blob has nested braces, so a non-greedy `}`
+    match would truncate). None if absent/unparseable."""
+    m = re.search(
+        r"const TELEMETRY\s*=\s*(\{.*\});\s*\n\s*/\* TELEMETRY_DATA_END \*/",
+        html, re.DOTALL)
+    if not m:
+        return None
+    try:
+        return json.loads(m.group(1))["_meta"]["roster_size"]
+    except (json.JSONDecodeError, KeyError, TypeError):
+        return None
+
 
 # --- Utilities ---------------------------------------------------------------
 
@@ -511,6 +580,144 @@ def check_palette_drift():
     return findings
 
 
+def _roster_findings(agents, friendly, roster_size, alias, map_ids, allow):
+    """Pure roster-drift logic (no file/git I/O) so every branch is directly
+    unit-testable. See the roster-drift config block for why cross-universe
+    count-equality is deliberately NOT asserted.
+
+    agents      -- ordered list of AGENTS taskIds (duplicates preserved)
+    friendly    -- iterable of FRIENDLY_NAMES keys
+    roster_size -- published TELEMETRY roster_size (int) or None
+    alias       -- {display_id: telemetry_id} from TELEMETRY_ALIAS
+    map_ids     -- iterable of agent_map.json taskIds (OpenStory canonical roster)
+    allow       -- parsed drift_allowlist.json
+    """
+    findings = []
+    agents_set = set(agents)
+    friendly_set = set(friendly)
+    map_set = set(map_ids)
+    display_only = {e.get("taskId") for e in allow.get("roster_display_only", [])}
+
+    # 1. Duplicate taskId inside AGENTS — never intentional.
+    from collections import Counter
+    for tid, n in sorted(Counter(agents).items()):
+        if n > 1:
+            findings.append(Finding(
+                "roster_duplicate_taskid", f"agent:{tid}",
+                f"taskId appears {n}x in the AGENTS array (must be unique)",
+                "warn"))
+
+    # 2. FRIENDLY_NAMES entry for a taskId not in AGENTS — a display name for an
+    #    agent that no longer exists (stale/renamed). The reverse (an AGENT with
+    #    no friendly name) is fine: fname() falls back, so it is not flagged.
+    for tid in sorted(friendly_set - agents_set):
+        findings.append(Finding(
+            "roster_friendly_orphan", f"agent:{tid}",
+            "FRIENDLY_NAMES defines a display name for a taskId not in AGENTS "
+            "(stale entry, or the agent was renamed/removed)", "warn"))
+
+    # 3. Published roster_size vs the canonical map size. Same universe:
+    #    roster_size is generated as len(agent_map), so inequality means the
+    #    injected TELEMETRY blob predates the current agent_map.
+    if roster_size is not None and roster_size != len(map_set):
+        findings.append(Finding(
+            "roster_size_stale", "telemetry:roster_size",
+            f"TELEMETRY roster_size={roster_size} but agent_map.json has "
+            f"{len(map_set)} agents", "warn",
+            note="roster_size is generated as len(agent_map); divergence means "
+                 "agents_tab.html's injected TELEMETRY block is stale — "
+                 "regenerate it (extract_openstory_agent_data.py + "
+                 "inject_telemetry.py)"))
+
+    # Normalize between the display universe and the telemetry/map universe
+    # exactly the way the page does (TELEMETRY_ALIAS is display -> telemetry).
+    rev_alias = {v: k for k, v in alias.items()}
+    def display_id(tid):  # telemetry/map id -> the id used in AGENTS
+        return rev_alias.get(tid, tid)
+    def canon_id(tid):    # AGENTS id -> the id used in agent_map/telemetry
+        return alias.get(tid, tid)
+
+    # 4. Canonical map agent not present in the display roster (after alias
+    #    normalization) — a tracked agent invisible in the animation. Real bug;
+    #    the allowlist can never suppress this direction.
+    for tid in sorted(map_set):
+        if display_id(tid) not in agents_set:
+            findings.append(Finding(
+                "roster_map_not_displayed", f"agent:{tid}",
+                "in the canonical agent_map.json roster but absent from the "
+                "AGENTS display array (after TELEMETRY_ALIAS normalization)",
+                "warn"))
+
+    # 5. Display agent not in the OpenStory canonical map — EXPECTED for
+    #    launchd/Cowork agents (they run no OpenStory sessions), so info +
+    #    allowlistable rather than a bug. An un-allowlisted one still surfaces,
+    #    because it may instead mean agent_map is stale.
+    for tid in sorted(agents_set):
+        if canon_id(tid) in map_set or tid in display_only:
+            continue
+        findings.append(Finding(
+            "roster_display_extra", f"agent:{tid}",
+            "in the AGENTS display roster but not in agent_map.json (the "
+            "OpenStory canonical roster)", "info",
+            note="if this agent is intentionally display-only (e.g. a launchd "
+                 "job with no OpenStory sessions), declare it in "
+                 "scripts/drift_allowlist.json['roster_display_only']; "
+                 "otherwise agent_map.json may be stale"))
+    return findings
+
+
+def check_roster_drift():
+    """Agent-roster agreement across agents_tab.html (the AGENTS array,
+    FRIENDLY_NAMES, the injected TELEMETRY blob, and TELEMETRY_ALIAS) and
+    agent_map.json (fact_inventory.md Family 1). Read-only; no writes, no git, so
+    it is idempotent and lock-safe (H6).
+
+    Only WITHIN-universe invariants are asserted; cross-universe count-equality is
+    deliberately not one, because the display roster is a superset of the
+    OpenStory canonical roster (hazard H2 — the two scheduling worlds).
+    """
+    findings = []
+    try:
+        html = AGENTS_TAB_PATH.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError):
+        return [Finding(
+            "roster_drift", rel(AGENTS_TAB_PATH),
+            "agents_tab.html missing/unreadable — moved or renamed?", "warn")]
+
+    agents = _extract_agents_taskids(html)
+    friendly = _extract_friendly_keys(html)
+    if agents is None:
+        findings.append(Finding(
+            "roster_drift", rel(AGENTS_TAB_PATH),
+            "AGENTS array not found — the file's structure may have changed out "
+            "from under the extractor", "warn",
+            note="update _extract_agents_taskids in janitor.py"))
+        return findings  # nothing else is comparable without the roster
+    if friendly is None:
+        findings.append(Finding(
+            "roster_drift", rel(AGENTS_TAB_PATH),
+            "FRIENDLY_NAMES map not found — structure may have changed", "warn",
+            note="update _extract_friendly_keys in janitor.py"))
+
+    alias = _extract_telemetry_alias(html)
+    roster_size = _extract_roster_size(html)
+    try:
+        amap = json.loads(AGENT_MAP_PATH.read_text(encoding="utf-8"))
+        map_ids = [a["taskId"] for a in amap.get("agents", [])]
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError, KeyError,
+            TypeError):
+        findings.append(Finding(
+            "roster_drift", rel(AGENT_MAP_PATH),
+            "agent_map.json missing/unreadable — cannot reconcile the roster",
+            "warn", note="expected at wiki/agents/openstory/agent_map.json"))
+        return findings
+
+    allow = load_drift_allowlist()
+    findings.extend(_roster_findings(
+        agents, friendly or [], roster_size, alias, map_ids, allow))
+    return findings
+
+
 # --- Orchestration -----------------------------------------------------------
 
 ALL_CHECKS = [
@@ -525,6 +732,7 @@ ALL_CHECKS = [
     ("wikilink_case_mismatch",  check_wikilink_case_mismatch, False, True),
     ("duplicate_h1",            check_duplicate_h1,          False, False),
     ("palette_drift",           check_palette_drift,         False, False),
+    ("roster_drift",            check_roster_drift,          False, False),
 ]
 
 

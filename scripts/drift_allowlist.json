@@ -10,6 +10,24 @@
     "updated": "2026-07-21"
   },
 
+  "roster_display_only": [
+    {
+      "taskId": "com.tomloughran.openstory.watchdog",
+      "reason": "launchd job (reverse-DNS id, runs every 5 min) that watches the OpenStory backend. It produces no OpenStory *sessions*, so it is correctly absent from agent_map.json (the telemetry-join roster) while still belonging in the AGENTS display roster. Display-only by construction, not drift.",
+      "source": "wiki/agents_tab.html AGENTS entry (category:infrastructure, schedule:'every 5 min'); the two-scheduling-worlds finding in wiki/architecture/fact_inventory.md Family 1"
+    },
+    {
+      "taskId": "collaboration-history",
+      "reason": "Display-only agent (runs outside OpenStory, so it produces no sessions for the telemetry join and is correctly absent from agent_map.json) that still belongs in the AGENTS display roster. Classified display-only by Tom 2026-07-21.",
+      "source": "wiki/agents_tab.html AGENTS entry (category:project, schedule:'Every 2 days at 2:00 AM'); the two-scheduling-worlds finding in wiki/architecture/fact_inventory.md Family 1"
+    },
+    {
+      "taskId": "korbyt-tasks",
+      "reason": "Display-only agent (manual-only, runs outside OpenStory, so no sessions to join and correctly absent from agent_map.json) that still belongs in the AGENTS display roster. Classified display-only by Tom 2026-07-21.",
+      "source": "wiki/agents_tab.html AGENTS entry (category:project, schedule:'Manual only'); the two-scheduling-worlds finding in wiki/architecture/fact_inventory.md Family 1"
+    }
+  ],
+
   "palette_absence": [
     {
       "tradition": "macintyre",
