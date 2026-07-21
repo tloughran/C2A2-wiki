@@ -1056,7 +1056,8 @@ var ALL_DATES = [];                            // populated at init from NODES
 var scoreMode = 'balanced';                  // 'balanced' | 'connected' | 'cross-tradition' | 'editorial'
 var BASE_EDGE_BUDGET = 2500;                 // edges visible at 1× zoom
 var currentZoomScale = 1.0;                  // updated by the zoom handler
-var _zoomRafPending = false;                 // rAF debouncer for zoom→re-render
+var _edgeRebuildTimer = null;                // debounces the expensive edge rebuild
+var _lastEdgePass = 0, _lastEdgeTotal = 0;   // budget-figures paired with the live in-view count
 
 function computeEdgeScore(e) {
   var deg = e.score_deg || 0;
@@ -1074,6 +1075,50 @@ function visibilityBudget() {
   // Logarithmic growth: each ×2 zoom roughly doubles budget, capped at 4× base.
   var growth = Math.max(1, Math.min(4, currentZoomScale));
   return Math.floor(BASE_EDGE_BUDGET * growth);
+}
+function scheduleEdgeRebuild() {
+  // Debounce the expensive DOM edge re-join. setTimeout (unlike the old rAF+flag
+  // debouncer) fires even when the tab/iframe is hidden, so the pending state can
+  // never latch and freeze all later zooms — the bug where a fitAll() zoom during
+  // a hidden load left the edge budget stuck at its 1× value permanently.
+  if (_edgeRebuildTimer) clearTimeout(_edgeRebuildTimer);
+  _edgeRebuildTimer = setTimeout(function() {
+    _edgeRebuildTimer = null;
+    applyEdgeFilters();
+  }, 80);
+}
+function updateViewportCounts() {
+  // Single writer of both bottom readouts. Cheap (pure arithmetic over the
+  // rendered nodes/edges), so it runs synchronously on every zoom AND pan event,
+  // making the leading "in view" figure track what is actually on screen.
+  var svg = document.getElementById('graph-svg');
+  if (!svg || !activeNodes) return;
+  var t = d3.zoomTransform(svg);
+  var w = svg.clientWidth, h = svg.clientHeight;
+  var nIn = 0, i, n, sx, sy;
+  for (i = 0; i < activeNodes.length; i++) {
+    n = activeNodes[i];
+    if (n.x == null) continue;
+    sx = n.x * t.k + t.x; sy = n.y * t.k + t.y;
+    if (sx >= 0 && sx <= w && sy >= 0 && sy <= h) nIn++;
+  }
+  var eIn = 0, drawn = 0;
+  if (linkSel) linkSel.each(function(l) {
+    drawn++;
+    var s = l.source, g = l.target;
+    if (!s || !g || s.x == null || g.x == null) return;
+    var x1 = s.x*t.k+t.x, y1 = s.y*t.k+t.y, x2 = g.x*t.k+t.x, y2 = g.y*t.k+t.y;
+    // The segment touches the viewport when an endpoint is inside, or the two
+    // endpoints are not both off the same side (a cheap conservative test that
+    // over-counts only true diagonal crossers of an empty view — negligible).
+    if ((x1>=0&&x1<=w&&y1>=0&&y1<=h) || (x2>=0&&x2<=w&&y2>=0&&y2<=h)) { eIn++; return; }
+    if ((x1<0&&x2<0) || (x1>w&&x2>w) || (y1<0&&y2<0) || (y1>h&&y2>h)) return;
+    eIn++;
+  });
+  var ns = document.getElementById('graph-status');
+  if (ns) ns.textContent = nIn + ' in view · ' + activeNodes.length + ' / ' + nodeTotalForScope() + ' nodes';
+  var es = document.getElementById('edge-status');
+  if (es) es.textContent = eIn + ' in view · ' + drawn + ' shown / ' + _lastEdgePass + ' pass / ' + _lastEdgeTotal + ' total edges';
 }
 function setScoreMode(value) {
   scoreMode = value;
@@ -1691,9 +1736,14 @@ function applyEdgeFilters() {
   // passing all active cuts (uncapped) / total (whole dataset, incl. agents).
   var statusEl = document.getElementById('edge-status');
   if (statusEl) {
-    statusEl.textContent = budget + ' shown / ' + allowed.length + ' pass / ' + edgeTotalForScope() + ' total edges';
-    statusEl.title = 'Edges — shown (top-scored that fit the zoom budget; nothing else is rendered) / passing all active cuts / total addressable in this view';
+    // Remember the budget/pass/total figures so updateViewportCounts() — the
+    // single writer of this readout — can pair them with the live in-view count
+    // on every zoom/pan, not only on a full rebuild.
+    _lastEdgePass = allowed.length;
+    _lastEdgeTotal = edgeTotalForScope();
+    statusEl.title = 'Edges — in view (a segment on screen) / shown (top-scored that fit the zoom budget) / passing all active cuts / total addressable in this view';
   }
+  updateViewportCounts();
   updateBannerCounts();
 }
 
@@ -2064,16 +2114,14 @@ function initGraph() {
 
   zoomBehavior = d3.zoom().scaleExtent([0.05, 8]).on('zoom', function(event) {
     graphG.attr('transform', event.transform);
-    // Track current zoom so the adaptive-density renderer can grow the visible
-    // edge budget as the user zooms in. Debounced via rAF below.
     currentZoomScale = event.transform.k;
-    if (!_zoomRafPending) {
-      _zoomRafPending = true;
-      requestAnimationFrame(function() {
-        _zoomRafPending = false;
-        applyEdgeFilters();
-      });
-    }
+    // In-view counts are cheap → recompute on every event so both readouts track
+    // pan and zoom immediately.
+    updateViewportCounts();
+    // The edge budget grows with zoom; its DOM re-join is expensive, so debounce
+    // it. scheduleEdgeRebuild() is latch-free (setTimeout), unlike the old rAF+flag
+    // that froze if the sole rAF fired while the tab was hidden.
+    scheduleEdgeRebuild();
   });
   svg.call(zoomBehavior);
 
@@ -2163,11 +2211,10 @@ function rebuildGraph() {
     simLinks = capForSim(activeLinks.filter(edgePassesCuts));
   }
 
-  // Update status — nodes only. All edge counts live in #edge-status, written
-  // by applyEdgeFilters(); the old "edges in view" here counted DOM-loaded
-  // (capped) edges, contradicting the budgeted "shown" readout.
-  var statusEl = document.getElementById('graph-status');
-  if (statusEl) statusEl.textContent = activeNodes.length + ' / ' + nodeTotalForScope() + ' nodes';
+  // Both readouts are written by updateViewportCounts() (leading in-view figure +
+  // the rendered/pass/total context); applyEdgeFilters() calls it again once the
+  // edges are rebuilt just below, so the edge figures refresh too.
+  updateViewportCounts();
 
   // Rebuild SVG elements — clear and recreate
   linkG.selectAll('*').remove();
