@@ -1,0 +1,500 @@
+{
+  "generated_at": "2026-07-18 21:13",
+  "feature_count": 14,
+  "qa_count": 102,
+  "target_total": 100,
+  "features": [
+    {
+      "key": "start_here.html",
+      "title": "Start here",
+      "qa": [
+        {
+          "q": "What is the Start Here page?",
+          "a": "It's the front door to the C2A2 explorer. It orients newcomers and links out to the fifteen angles on what C2A2 is, the review cards, the Summa commentary, and the Sociogram."
+        },
+        {
+          "q": "Where should I begin if I'm new?",
+          "a": "Start Here. From there you can jump to any of the main tools, or read the fifteen framings of what the project is."
+        },
+        {
+          "q": "How do I get back to the beginning?",
+          "a": "Click the Start Here tab in the top bar any time — it's always there."
+        },
+        {
+          "q": "What can I do from the Start Here page?",
+          "a": "Jump straight into any main tool, or open the fifteen framings of what C2A2 is, the review cards, and the Summa commentary."
+        },
+        {
+          "q": "What are the fifteen angles?",
+          "a": "Fifteen different framings of what the project is — no single one tells the whole story, but together they describe it."
+        },
+        {
+          "q": "What are the review cards?",
+          "a": "A record of the proposals and decisions behind what's been added to the wiki — the project's paper trail."
+        },
+        {
+          "q": "Is Start Here different from the Community Explorer?",
+          "a": "Yes. Start Here is the orientation page; the Community Explorer is a separate tool that maps real-world communities."
+        }
+      ]
+    },
+    {
+      "key": "community_explorer.html",
+      "title": "Community Explorer",
+      "qa": [
+        {
+          "q": "What is the Community Explorer?",
+          "a": "A force-directed graph of 156 curated real-world communities across eight types, from contemplative to scientific-frontier. Communities working on kindred problems sit close together."
+        },
+        {
+          "q": "What do the edges mean here?",
+          "a": "They're PRS similarity — communities with related problems, resources, and solutions are linked and pulled near each other."
+        },
+        {
+          "q": "How do I explore a community?",
+          "a": "Click a node to read its Problem-Resource-Solution story, or click an edge to compare the two communities it connects. You can also filter by type or isolate the exemplary set."
+        },
+        {
+          "q": "How does this relate to the Cards view?",
+          "a": "These 156 are the quality-curated subset. The Cards sub-tab holds the full directory of over a thousand communities."
+        },
+        {
+          "q": "What are the eight community types?",
+          "a": "Tradition-Constituted Enquiry, Practice, Contemplative, Civic, Scientific Frontier, Interdisciplinary Synthesis, Local, and Professional Guilds."
+        },
+        {
+          "q": "What does isolating the exemplary set do?",
+          "a": "It filters the graph down to the highest-quality communities so you can focus on the strongest examples."
+        },
+        {
+          "q": "Why do some communities sit close together?",
+          "a": "Because they score as similar on Problem-Resource-Solution terms — they're tackling kindred problems."
+        },
+        {
+          "q": "How many communities are in the curated graph?",
+          "a": "156, hand-curated across the eight types. The larger raw directory lives in the Cards view."
+        }
+      ]
+    },
+    {
+      "key": "community_interactions.html",
+      "title": "Community Interactions",
+      "qa": [
+        {
+          "q": "What is Community Interactions?",
+          "a": "A scaffold for the four levels of dialogue C2A2 cares about: within one mind, within a small group, between traditions, and between whole systems of thought."
+        },
+        {
+          "q": "What are the four levels?",
+          "a": "Level one is intrapersonal integration, level two is small-group tradition, level three is inter-tradition dialogue, and level four is meta-traditional encounter."
+        },
+        {
+          "q": "What is the Road Ahead section?",
+          "a": "It renders the project's development pathways live from the single source, so you can see where C2A2 is heading and what's on the demo critical path."
+        },
+        {
+          "q": "What is Level One?",
+          "a": "Intrapersonal integration — dialogue within a single mind or agent."
+        },
+        {
+          "q": "What is Level Four?",
+          "a": "Meta-traditional encounter — dialogue between whole systems of thought."
+        },
+        {
+          "q": "Is Community Interactions finished?",
+          "a": "No, it's an actively developing scaffold — the shape of what's coming, not the final architecture."
+        },
+        {
+          "q": "Where does the Road Ahead come from?",
+          "a": "It renders live from the project's single-source pathways index, so it always reflects the current plan."
+        }
+      ]
+    },
+    {
+      "key": "wiki_narration.html",
+      "title": "Sociogram",
+      "qa": [
+        {
+          "q": "What is the Sociogram?",
+          "a": "A force-directed graph of the whole RC Wiki — over sixteen hundred nodes for wiki articles, connected by wikilinks, mentions, and shared references."
+        },
+        {
+          "q": "How do I read a specific article?",
+          "a": "Click any node and its article opens in the side panel. Click an edge to see both articles it connects."
+        },
+        {
+          "q": "Can I focus on one thinker?",
+          "a": "Yes — use the tradition and category filters on the left to isolate a thinker's conceptual neighborhood, or just ask me to show it."
+        },
+        {
+          "q": "What do the edge controls do?",
+          "a": "They let you show or hide link types and adjust how strongly connected nodes attract each other."
+        },
+        {
+          "q": "How many nodes are in the Sociogram?",
+          "a": "Over sixteen hundred, one for each wiki article, connected by thousands of links."
+        },
+        {
+          "q": "What do the edge types mean?",
+          "a": "They distinguish wikilinks, mentions, and shared references, and whether a link crosses categories or stays within one."
+        },
+        {
+          "q": "What is a tradition filter?",
+          "a": "A checkbox that isolates one thinker's articles — Levin, Friston, Hoffman, and so on — so you can see their neighborhood."
+        },
+        {
+          "q": "What are the structure categories?",
+          "a": "Groupings like Master, Architecture, Agents, and others that organize the wiki by role rather than by thinker."
+        },
+        {
+          "q": "Can I hold the layout still?",
+          "a": "Yes — use Hold Forces to freeze the graph, and Fit All to recenter everything in view."
+        }
+      ]
+    },
+    {
+      "key": "prs_3d.html",
+      "title": "Narrative (PRS) Connectome",
+      "qa": [
+        {
+          "q": "What is the Narrative Connectome?",
+          "a": "A 3D connectome of the C2A2 traditions. Each node is a Problem-Resource-Solution narrative — a small model of a problem, its resource, and its solution."
+        },
+        {
+          "q": "What do the edges represent?",
+          "a": "Shared resources, plus the synergistic coils that bridge one tradition to another. Read it as rival master sciences emerging."
+        },
+        {
+          "q": "How do I move around it?",
+          "a": "Rotate and zoom with your mouse to explore the structure from any angle."
+        },
+        {
+          "q": "What is a PRS narrative?",
+          "a": "A small model of a tradition's thinking: a problem it faces, the resource it brings, and the solution that follows."
+        },
+        {
+          "q": "What are synergistic coils?",
+          "a": "Links where one tradition's solution answers another tradition's problem — the bridges between master sciences."
+        },
+        {
+          "q": "Why is it shown in 3D?",
+          "a": "So you can rotate and zoom through the connections and see structure that a flat graph would flatten out."
+        },
+        {
+          "q": "What does 'rival master sciences' mean?",
+          "a": "The idea that each tradition is growing into a full account of reality, and the connectome shows them emerging side by side."
+        }
+      ]
+    },
+    {
+      "key": "agents_tab.html",
+      "title": "Agent Map",
+      "qa": [
+        {
+          "q": "What is the Agent Map?",
+          "a": "A live map of the autonomous agents running C2A2 — the daily synthesis batch, QC sweep, commentary reviewer, nightly verification, and wiki update agents."
+        },
+        {
+          "q": "What does it show for each agent?",
+          "a": "Each agent's last run time, its output status, and its task schedule."
+        },
+        {
+          "q": "How do I see what's running now?",
+          "a": "Open the Agent Map and check the last-run and status columns — that's the current state of the swarm."
+        },
+        {
+          "q": "Which agents run daily?",
+          "a": "The daily synthesis batch, a QC sweep, the commentary reviewer, nightly verification, and the wiki update agents."
+        },
+        {
+          "q": "What does the QC sweep do?",
+          "a": "It checks the day's output for quality problems before they land in the wiki."
+        },
+        {
+          "q": "How do I tell if an agent failed?",
+          "a": "Check its status and last-run time on the map — a stale run or an error status flags a problem."
+        },
+        {
+          "q": "What is the commentary reviewer?",
+          "a": "An agent that reviews annotation and commentary content for the education tools."
+        }
+      ]
+    },
+    {
+      "key": "metabolism/metabolism_view.html",
+      "title": "Agent Metabolism",
+      "qa": [
+        {
+          "q": "What is the Metabolism view?",
+          "a": "The temporal pulse of the agent swarm, built from run telemetry and the vault's git history. It treats the human-plus-AI system's metabolism as something you can measure."
+        },
+        {
+          "q": "What are its three views?",
+          "a": "A per-agent raster of runs over time, a waveform of the system's daily pulse, and a returned-versus-sent tokens chart."
+        },
+        {
+          "q": "What is the Yield axis?",
+          "a": "A live measure of useful output — wikilinks, files, and PRS triplets produced per day, drawn from the vault's git history."
+        },
+        {
+          "q": "What is the Raster view?",
+          "a": "A per-agent timeline of runs, where each mark's size reflects an amplitude you choose, like tokens or duration."
+        },
+        {
+          "q": "What is the Waveform view?",
+          "a": "The system's daily pulse, stacked by category or shown on a log axis, so you can see the rhythm of the swarm."
+        },
+        {
+          "q": "What does returned-versus-sent tokens show?",
+          "a": "How much the agents produce relative to what they consume — a rough efficiency signal."
+        },
+        {
+          "q": "What is Pathway 29?",
+          "a": "The project pathway behind this view: treating the human-plus-AI system's metabolism as something measurable."
+        }
+      ]
+    },
+    {
+      "key": "summa_explorer.html",
+      "title": "Curriculum Tools",
+      "qa": [
+        {
+          "q": "What are the Curriculum Tools?",
+          "a": "The Summa 2026 curriculum dashboard. It tracks daily synthesis progress through Austin Habash's 308-episode podcast series."
+        },
+        {
+          "q": "What does it track?",
+          "a": "Which days have been synthesized, where the coverage gaps are, and the current continuous-day high-water mark."
+        },
+        {
+          "q": "How does it connect to the wiki?",
+          "a": "Each synthesis ties a specific episode's content back to the RC Wiki thinker network."
+        },
+        {
+          "q": "Whose podcast does it track?",
+          "a": "Austin Habash's Summa 2026 series — a 308-episode run being synthesized day by day."
+        },
+        {
+          "q": "How many episodes are there?",
+          "a": "308, and the dashboard tracks how many have been synthesized so far."
+        },
+        {
+          "q": "What is the continuous-day high-water mark?",
+          "a": "The longest unbroken streak of days that have been synthesized without a gap."
+        },
+        {
+          "q": "What is a coverage gap?",
+          "a": "A day in the series that hasn't been synthesized yet — the dashboard shows where those are."
+        }
+      ]
+    },
+    {
+      "key": "interT_study.html",
+      "title": "Inter-Tradition Study",
+      "qa": [
+        {
+          "q": "What is the Inter-Tradition Study?",
+          "a": "A structured tool for comparing the thinker traditions against each other — where they converge, where they clash, and where one answers another's open question."
+        },
+        {
+          "q": "What is it for?",
+          "a": "It's the detector half of C2A2 at work: instrumenting what happens when traditions meet, rather than just hoping a good conversation occurs."
+        },
+        {
+          "q": "How do I use it?",
+          "a": "Pick the traditions you want to compare and read across their problems and solutions. Ask me and I can open it for you."
+        },
+        {
+          "q": "What questions does Inter-Tradition Study answer?",
+          "a": "Where the traditions converge, where they clash, and where one tradition resolves another's open problem."
+        },
+        {
+          "q": "How is it different from the Sociogram?",
+          "a": "The Sociogram maps the whole wiki; this tool focuses on structured comparison between traditions."
+        },
+        {
+          "q": "What does the detector half mean?",
+          "a": "It instruments what happens when traditions meet, rather than leaving it to chance — C2A2's measurement side."
+        },
+        {
+          "q": "Can it show disagreements?",
+          "a": "Yes — surfacing tension between traditions is as much the point as finding agreement."
+        }
+      ]
+    },
+    {
+      "key": "rc_document_explorer.html",
+      "title": "RC Document Explorer",
+      "qa": [
+        {
+          "q": "What is the RC Document Explorer?",
+          "a": "A pedagogical explorer for the 471-page Resurrecting Civility tome — the founding research dialogue behind the whole C2A2 thinker network."
+        },
+        {
+          "q": "What are its three views?",
+          "a": "Contents, with 679 hyperlinked sections; Thinkers, nine research programs each with a summary and its PRS triplets; and Solved, the full PRS table with cross-tradition coil detection."
+        },
+        {
+          "q": "Can I search the document?",
+          "a": "Yes — the chat pane searches by keyword, or answers semantically through the shared C2A2 broker, no key needed."
+        },
+        {
+          "q": "What is Resurrecting Civility?",
+          "a": "The 471-page pilot tome and founding research dialogue behind the whole C2A2 thinker network."
+        },
+        {
+          "q": "What is the Solved view?",
+          "a": "The full Problem-Resource-Solution table, with detection of coils where a solution answers a problem across traditions."
+        },
+        {
+          "q": "How many thinkers does it cover?",
+          "a": "Nine research programs, each with a summary and its own set of PRS triplets."
+        },
+        {
+          "q": "How do I jump to a source page?",
+          "a": "Click any problem, resource, or solution and it takes you to its page; use Return to come back."
+        }
+      ]
+    },
+    {
+      "key": "physics_explorer.html",
+      "title": "Physics Explorer",
+      "qa": [
+        {
+          "q": "What is the Physics Explorer?",
+          "a": "A teachable map of physics from Newton to today, applying the same Problem-Resource-Solution lens to a curriculum instead of a research dialogue."
+        },
+        {
+          "q": "What's inside it?",
+          "a": "75 undergraduate concepts with formulas and linked demos and simulations, six physicists each with summaries and triplets, and a progress chart of problems solved over time."
+        },
+        {
+          "q": "Can I change how much detail it shows?",
+          "a": "Yes — switch between Student and Instructor mode at the top right to change the depth on each card."
+        },
+        {
+          "q": "Does the assistant need a key?",
+          "a": "No. Ask it a physics question and it runs on the shared C2A2 pipeline, or uncheck Ask AI for plain keyword search."
+        },
+        {
+          "q": "How many physics concepts are included?",
+          "a": "75 undergraduate concepts across six topic areas, each with formulas and links to a demo and a simulation."
+        },
+        {
+          "q": "What's the difference between Student and Instructor mode?",
+          "a": "It changes how much depth each card shows — a lighter view for students, a fuller one for instructors."
+        },
+        {
+          "q": "What does the Progress view show?",
+          "a": "A count of problems solved and resources introduced at each stage — a quantified history of progress in physics."
+        },
+        {
+          "q": "How many physicists does it cover?",
+          "a": "Six, each with a short summary and two sets of triplets drawn from their work."
+        }
+      ]
+    },
+    {
+      "key": "commentary-explorer/commentary_explorer.html",
+      "title": "TRV Commentary",
+      "qa": [
+        {
+          "q": "What is the TRV Commentary?",
+          "a": "An annotated-reading explorer for MacIntyre's Three Rival Versions of Moral Enquiry — his 1988 Gifford Lectures — with 1,819 annotations across 156 scanned pages."
+        },
+        {
+          "q": "What's in the graph?",
+          "a": "The book's twelve structural divisions as chapter nodes, with satellites for Tom Loughran's marginal commentary, PRS triplets, and companion views from Eleonore Stump and N. T. Wright."
+        },
+        {
+          "q": "How do I read a chapter?",
+          "a": "Click a chapter to walk its pages in the right panel; the OCR pane highlights where each annotation anchors in the text."
+        },
+        {
+          "q": "Who wrote Three Rival Versions?",
+          "a": "Alasdair MacIntyre — it's his 1988 Gifford Lectures, published by Notre Dame Press in 1990."
+        },
+        {
+          "q": "How many annotations are there?",
+          "a": "1,819 annotations across 156 scanned pages."
+        },
+        {
+          "q": "Whose commentary is included?",
+          "a": "Tom Loughran's marginal notes and PRS triplets, plus companion perspectives from Eleonore Stump and N. T. Wright."
+        },
+        {
+          "q": "Which chapters are covered?",
+          "a": "The annotated scan runs through Chapter Eight; Chapters Nine and Ten are structural placeholders."
+        }
+      ]
+    },
+    {
+      "key": "heartbeat/index.html",
+      "title": "AI Heartbeat",
+      "qa": [
+        {
+          "q": "What is the AI Heartbeat?",
+          "a": "A Karpathy-style compiled wiki over fast-moving AI developments, reframed for community AI education. Raw sources stay immutable while runs summarize, tag, and score them."
+        },
+        {
+          "q": "What is the Pulse view?",
+          "a": "It loads a static digest snapshot of the latest developments, so the tab works on GitHub Pages with no live backend."
+        },
+        {
+          "q": "Can I tune what I see?",
+          "a": "Yes — set a preference lens, and a magic-link sign-in syncs it across your devices."
+        },
+        {
+          "q": "What does the AI Heartbeat track?",
+          "a": "Fast-moving AI developments, compiled Karpathy-style and reframed for community AI education."
+        },
+        {
+          "q": "What is a preference lens?",
+          "a": "Your chosen viewpoint that shapes how developments are framed and ranked for you."
+        },
+        {
+          "q": "How does sign-in work?",
+          "a": "A magic-link sign-in syncs your lens and preferences across your devices."
+        },
+        {
+          "q": "Is the Heartbeat live or a snapshot?",
+          "a": "The Pulse view loads a static digest snapshot, so it works on GitHub Pages with no live backend."
+        }
+      ]
+    },
+    {
+      "key": "community/index.html",
+      "title": "Community Explorer (Cards)",
+      "qa": [
+        {
+          "q": "What is the Community Cards view?",
+          "a": "A faceted directory of over a thousand real-world communities — a bulk web import plus the 156 curated ones. Each carries a Problem-Resource-Solution triplet."
+        },
+        {
+          "q": "How do I search the cards?",
+          "a": "Filter by type, subtype, country, or source, or just ask in plain language — the built-in engine answers from the dataset."
+        },
+        {
+          "q": "Is the cards data complete?",
+          "a": "It's under construction and was seeded from public web pages without the communities' express consent, so treat it as a working directory, not a finished one."
+        },
+        {
+          "q": "How many communities are in the Cards directory?",
+          "a": "Over a thousand — a bulk web import plus the 156 curated ones that carry the richer taxonomy."
+        },
+        {
+          "q": "Can I filter the cards?",
+          "a": "Yes, by type, subtype, country, or source — or just ask in plain language and the built-in engine answers from the data."
+        },
+        {
+          "q": "Where did the cards data come from?",
+          "a": "It was seeded from publicly available web pages, so treat it as a working directory under construction, not a vetted list."
+        },
+        {
+          "q": "What's on each card?",
+          "a": "A community's Problem-Resource-Solution triplet plus a short summary of its organizing principle."
+        }
+      ]
+    }
+  ]
+}

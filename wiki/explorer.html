@@ -601,6 +601,24 @@ var recordingBlob = null;
 var recordingMimeType = 'video/webm';
 var recordingStartTime = null;
 var recTimerInterval = null;
+var recMixDest = null;        // live mix destination while recording (for late-joining streams)
+var recAddedStreams = [];     // streams already wired into the mix (dedupe)
+
+// Wire an extra audio stream (e.g. the Voice Guide's WebRTC response audio)
+// into the live recording mix. Safe to call before/after the stream exists and
+// idempotent per stream. This is why the assistant's spoken replies land in the
+// recording without depending on Chrome's flaky tab-audio capture.
+function addStreamToRecMix(stream) {
+  if (!audioCtx || !recMixDest || !stream) return;
+  if (recAddedStreams.indexOf(stream) !== -1) return;
+  var tracks = stream.getAudioTracks();
+  if (!tracks.length) return;
+  try {
+    var src = audioCtx.createMediaStreamSource(new MediaStream([tracks[0]]));
+    src.connect(recMixDest);
+    recAddedStreams.push(stream);
+  } catch (e) { console.warn('could not add stream to recording mix:', e); }
+}
 
 function toggleRecord() {
   if (isRecording) {
@@ -643,6 +661,13 @@ async function startRecording() {
       var micSource = audioCtx.createMediaStreamSource(micStream);
       micSource.connect(mixDest);
     }
+
+    // Expose the live mix so an in-progress Voice Guide response is captured,
+    // and pull in its stream if the conversation is already running.
+    recMixDest = mixDest;
+    recAddedStreams = [];
+    var vgStream = (window.VoiceGuide && VoiceGuide.getRemoteStream) ? VoiceGuide.getRemoteStream() : null;
+    if (vgStream) addStreamToRecMix(vgStream);
 
     // Single video track + single mixed audio track
     var videoTrack = screenStream.getVideoTracks()[0];
@@ -718,6 +743,8 @@ function stopRecording() {
     recordingStream = null;
   }
   if (audioCtx) { audioCtx.close(); audioCtx = null; }
+  recMixDest = null;
+  recAddedStreams = [];
   if (recTimerInterval) { clearInterval(recTimerInterval); recTimerInterval = null; }
   var recInd = document.getElementById('rec-indicator');
   if (recInd) recInd.classList.remove('visible');
@@ -842,6 +869,486 @@ function showHelp() {
 function closeHelp() {
   document.getElementById('help-modal').style.display = 'none';
 }
+</script>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     REALTIME VOICE GUIDE  (added 2026-07-18)
+     Talk to the wiki: OpenAI Realtime API over WebRTC — voice-to-voice,
+     native barge-in. Lives in the SHELL (top document, not iframe-loaded),
+     so it is inlined here per the iframe-asset constitutional rule.
+     Reuses the OpenAI key the Sociogram TTS already stores in
+     localStorage['tts_api_key']. Can drive the shell's own tabs by voice
+     via the switch_tab function tool.
+     ═══════════════════════════════════════════════════════════════════ -->
+<style>
+  #vg-launch {
+    position: fixed; right: 20px; bottom: 20px; z-index: 100001;
+    display: flex; align-items: center; gap: 8px;
+    background: #12121c; border: 1px solid #C9A84C; color: #C9A84C;
+    font-family: -apple-system, sans-serif; font-size: 13px; font-weight: 600;
+    letter-spacing: 0.3px; padding: 10px 15px; border-radius: 24px;
+    cursor: pointer; box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+  }
+  #vg-launch:hover { background: #1c1c28; box-shadow: 0 8px 26px rgba(201,168,76,0.25); }
+  #vg-launch.live { background: #C45B5B; border-color: #C45B5B; color: #fff; }
+  #vg-dot { width: 9px; height: 9px; border-radius: 50%; background: #C9A84C; flex-shrink: 0; }
+  #vg-launch.live #vg-dot { background: #fff; animation: vgPulse 1s ease-in-out infinite; }
+  @keyframes vgPulse { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
+
+  #vg-panel {
+    display: none; position: fixed; right: 20px; bottom: 74px; z-index: 100001;
+    width: 340px; max-width: calc(100vw - 40px);
+    background: #12121c; border: 1px solid #2a2a3a; border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6); overflow: hidden;
+    font-family: -apple-system, sans-serif;
+  }
+  #vg-panel.open { display: block; }
+  #vg-head {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 13px 16px; border-bottom: 1px solid #2a2a3a; background: #15151f;
+    cursor: grab; user-select: none;
+  }
+  #vg-head.dragging { cursor: grabbing; }
+  #vg-head h3 { margin: 0; color: #C9A84C; font-size: 14px; font-family: Georgia, serif; font-weight: 700; }
+  #vg-close { background: transparent; border: none; color: #666; font-size: 20px; cursor: pointer; line-height: 1; padding: 0 4px; }
+  #vg-close:hover { color: #C9A84C; }
+  #vg-body { padding: 14px 16px; }
+  #vg-status { font-size: 12px; color: #9a9aa8; margin-bottom: 12px; min-height: 16px; line-height: 1.5; }
+  #vg-status.err { color: #d98a8a; }
+  #vg-status.ok { color: #6ec48a; }
+  #vg-toggle {
+    width: 100%; padding: 11px; border-radius: 8px; border: none; cursor: pointer;
+    font-size: 14px; font-weight: 700; font-family: -apple-system, sans-serif;
+    background: #C9A84C; color: #0a0a0f; transition: background 0.15s;
+  }
+  #vg-toggle:hover { background: #dcbd5c; }
+  #vg-toggle.live { background: #C45B5B; color: #fff; }
+  #vg-toggle.live:hover { background: #d16b6b; }
+  #vg-keyrow { display: none; margin-bottom: 12px; }
+  #vg-keyrow.show { display: block; }
+  #vg-keyrow label { display: block; font-size: 11px; color: #8a8a98; margin-bottom: 5px; }
+  #vg-key {
+    width: 100%; padding: 8px 10px; border-radius: 6px; border: 1px solid #2a2a3a;
+    background: #0a0a0f; color: #ddd; font-size: 12px; font-family: monospace;
+  }
+  #vg-transcript {
+    margin-top: 12px; max-height: 180px; overflow-y: auto; font-size: 12.5px;
+    line-height: 1.55; color: #c4c4d2; border-top: 1px solid #20202e; padding-top: 10px;
+    display: none;
+  }
+  #vg-transcript.show { display: block; }
+  #vg-transcript .u { color: #7fa8d8; }
+  #vg-transcript .a { color: #d8d8e0; }
+  #vg-transcript p { margin: 0 0 7px; }
+  #vg-transcript .who { font-weight: 700; opacity: 0.8; margin-right: 5px; }
+  #vg-hint { margin-top: 10px; font-size: 11px; color: #6a6a7a; line-height: 1.5; }
+</style>
+
+<button id="vg-launch" onclick="VoiceGuide.togglePanel()" title="Talk to the wiki by voice">
+  <span id="vg-dot"></span><span id="vg-label">Talk to the Wiki</span>
+</button>
+
+<div id="vg-panel">
+  <div id="vg-head">
+    <h3>&#127908; Talk to the Wiki</h3>
+    <button id="vg-close" onclick="VoiceGuide.togglePanel()">&#x00D7;</button>
+  </div>
+  <div id="vg-body">
+    <div id="vg-status">Idle. Press Start and speak &mdash; ask about C2A2, the traditions, or say &ldquo;take me to the Sociogram.&rdquo;</div>
+    <div id="vg-keyrow">
+      <label>Fallback: your own OpenAI key (only if the free voice service is busy)</label>
+      <input type="password" id="vg-key" placeholder="sk-..." name="vg-openai-key"
+             autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+             data-1p-ignore data-lpignore="true">
+    </div>
+    <button id="vg-toggle" onclick="VoiceGuide.toggle()">Start conversation</button>
+    <div id="vg-transcript"></div>
+    <div id="vg-hint">Uses the OpenAI Realtime API. Interrupt any time &mdash; just talk over it.</div>
+  </div>
+</div>
+
+<audio id="vg-audio" autoplay></audio>
+
+<script>
+// ── REALTIME VOICE GUIDE ──────────────────────────────────────────────
+var VoiceGuide = (function() {
+  var MODEL = 'gpt-realtime';           // GA realtime model; fallback: gpt-4o-realtime-preview
+  var VOICE = 'cedar';                  // valid realtime voices: alloy ash ballad coral echo sage shimmer verse marin cedar
+  var KEY_STORE = 'tts_api_key';        // shared with the Sociogram OpenAI TTS
+  // Pathway-00 broker: mints the Realtime ephemeral server-side so PUBLIC
+  // visitors need no key. Same endpoint/device-id contract as c2a2-search.js.
+  var BROKER_URL = 'https://akhcocmgfwybdovqeovd.supabase.co/functions/v1/cc-broker';
+  var DEVICE_ID_KEY = 'c2a2_device_id';
+
+  var pc = null, dc = null, micStream = null, live = false, connecting = false, remoteStream = null;
+  var faqText = '';   // first-pass FAQ authored by the weekly voice-faq agent
+
+  // Tabs the guide can drive by voice. Each maps to the shell's own buttons,
+  // so we reuse the existing click handlers rather than duplicating navigation.
+  var TABS = [
+    { key: 'start_here',           kind: 'chapter', id: 'chap-intro',       words: 'start here, home, intro' },
+    { key: 'community_explorer',   kind: 'chapter', id: 'chap-community',   words: 'community explorer, communities graph' },
+    { key: 'community_interactions', kind: 'chapter', id: 'chap-interaction', words: 'community interactions, four levels, road ahead' },
+    { key: 'sociogram',            kind: 'tools',   src: 'wiki_narration.html',      words: 'sociogram, knowledge graph, wiki graph' },
+    { key: 'narrative_connectome', kind: 'tools',   src: 'prs_3d.html',              words: 'narrative connectome, prs connectome, 3d' },
+    { key: 'agent_map',            kind: 'tools',   src: 'agents_tab.html',          words: 'agent map, agents' },
+    { key: 'metabolism',           kind: 'tools',   src: 'metabolism/metabolism_view.html', words: 'metabolism, agent pulse, telemetry' },
+    { key: 'curriculum_tools',     kind: 'tools',   src: 'summa_explorer.html',      words: 'curriculum tools, summa, curriculum dashboard' },
+    { key: 'inter_tradition_study', kind: 'tools',  src: 'interT_study.html',        words: 'inter-tradition study, intertradition' },
+    { key: 'rc_document_explorer', kind: 'edu',     src: 'rc_document_explorer.html', words: 'rc document explorer, resurrecting civility' },
+    { key: 'physics_explorer',     kind: 'edu',     src: 'physics_explorer.html',    words: 'physics explorer, physics' },
+    { key: 'trv_commentary',       kind: 'edu',     src: 'commentary-explorer/commentary_explorer.html', words: 'trv commentary, three rival versions, macintyre' },
+    { key: 'ai_heartbeat',         kind: 'edu',     src: 'heartbeat/index.html',     words: 'ai heartbeat, heartbeat, pulse' }
+  ];
+
+  function el(id) { return document.getElementById(id); }
+  function setStatus(msg, cls) {
+    var s = el('vg-status');
+    s.innerHTML = msg;
+    s.className = cls || '';
+  }
+  function addLine(who, text) {
+    var t = el('vg-transcript');
+    t.classList.add('show');
+    var p = document.createElement('p');
+    p.className = who === 'You' ? 'u' : 'a';
+    p.innerHTML = '<span class="who">' + who + ':</span>';
+    p.appendChild(document.createTextNode(text));
+    t.appendChild(p);
+    t.scrollTop = t.scrollHeight;
+  }
+
+  // Only accept real OpenAI keys. Browser password managers autofill the
+  // password field with junk (e.g. the page URL); never send or persist that,
+  // and never let it clobber the shared TTS key.
+  function looksLikeKey(s) { return /^sk-\S{20,}$/.test(s); }
+  // Stable per-browser id, shared with c2a2-search.js so broker rate-limits align.
+  function guideDeviceId() {
+    try {
+      var id = (localStorage.getItem(DEVICE_ID_KEY) || '').trim();
+      if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id)) {
+        id = (window.crypto && crypto.randomUUID) ? crypto.randomUUID()
+           : 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+               var r = (Math.random() * 16) | 0;
+               return (c === 'x' ? r : (r & 0x3) | 0x8).toString(16);
+             });
+        localStorage.setItem(DEVICE_ID_KEY, id);
+      }
+      return id;
+    } catch (e) { return '00000000-0000-4000-8000-000000000000'; }
+  }
+
+  // Keyless path: broker mints the ephemeral server-side. Throws 'broker-limit'
+  // on cap-hit, else an Error, so start() can decide whether to fall back to BYO.
+  async function mintViaBroker() {
+    var r = await fetch(BROKER_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-CC-Device': guideDeviceId() },
+      body: JSON.stringify({ action: 'realtime_session' })
+    });
+    if (r.status === 402) throw new Error('broker-limit');
+    if (!r.ok) throw new Error('broker-http-' + r.status);
+    var d = await r.json();
+    if (!d.value) throw new Error('broker returned no ephemeral');
+    return d.value;
+  }
+
+  // Power-user fallback: mint directly with the visitor's own OpenAI key.
+  async function mintViaUserKey(key) {
+    var sess = await fetch('https://api.openai.com/v1/realtime/client_secrets', {
+      method: 'POST',
+      headers: { 'Authorization': 'Bearer ' + key, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ session: { type: 'realtime', model: MODEL, audio: { output: { voice: VOICE } } } })
+    });
+    if (!sess.ok) {
+      var errTxt = await sess.text();
+      throw new Error('session mint failed (' + sess.status + '): ' + errTxt.slice(0, 160));
+    }
+    var sessData = await sess.json();
+    var ephemeral = sessData.value || (sessData.client_secret && sessData.client_secret.value);
+    if (!ephemeral) throw new Error('no ephemeral token in session response');
+    return ephemeral;
+  }
+
+  function getKey() {
+    var typed = el('vg-key').value.trim();
+    if (typed && looksLikeKey(typed)) {
+      try { localStorage.setItem(KEY_STORE, typed); } catch(e) {}
+      return typed;
+    }
+    if (typed && !looksLikeKey(typed)) {
+      setStatus('That does not look like an OpenAI key (must start with sk-). Ignored.', 'err');
+    }
+    var stored = '';
+    try { stored = (localStorage.getItem(KEY_STORE) || '').trim(); } catch(e) {}
+    return looksLikeKey(stored) ? stored : '';
+  }
+
+  // Load the agent-authored FAQ once; it becomes the guide's first-pass source.
+  async function loadFaq() {
+    if (faqText) return;
+    try {
+      var r = await fetch('voice_guide_faq.json?v=' + Date.now());
+      if (!r.ok) return;
+      var d = await r.json();
+      var parts = [];
+      (d.features || []).forEach(function(f) {
+        parts.push('## ' + f.title);
+        (f.qa || []).forEach(function(p) { parts.push('Q: ' + p.q + '\nA: ' + p.a); });
+      });
+      if (parts.length) faqText = parts.join('\n');
+    } catch (e) { /* guide still works on built-in knowledge */ }
+  }
+
+  function instructions() {
+    var base = [
+      "You are the spoken guide to C2A2, the Community Dialogue Accelerator/Detector System.",
+      "CRITICAL -- YOU CANNOT SEE THE SCREEN. You have no visual or live access to what is rendered: colors, regions, clusters, shapes, positions, which nodes are visible, what is selected, or the current filter state. If the user asks about any of that ('what is the big blue region?', 'what am I looking at?'), say plainly that you cannot see their screen yet, then offer what you DO know -- what the tab is for and what kinds of thing it shows. NEVER guess at or describe a visual you have not been given. Inventing what is on screen is the worst thing you can do here.",
+      "COLOR IS NOT A RELIABLE IDENTIFIER -- never resolve a color to a category. The Sociogram puts many categories on one color scale and several are nearly indistinguishable: Friston and Architecture are the closest pair in the whole palette, and Hoffman/Hawkins, Kastrup/Agents, Stump/Master and McGilchrist/Loughran are also near-identical. Note that Kastrup is a thinker while Agents is a structure group, so a color can even straddle two different taxonomies. If the user names a color, DO NOT say which category it is. Say which categories share that color, and ask which one they mean.",
+      "Numbers in your notes (node counts, totals) may be out of date. If a count matters, say it may have changed rather than asserting it as current fact.",
+      "C2A2 is infrastructure that lets intellectual and spiritual traditions become visible, interact, and reveal themselves to each other -- a particle accelerator for lineages of thought. It is a concrete response to Alasdair MacIntyre's Gifford-Lectures vision of a university where rival traditions of enquiry are made answerable to one another. The accelerator half brings traditions into contact; the detector half instruments what happens when they meet.",
+      "The wiki maps 14 thinker traditions: Levin, Friston, Hoffman, Kastrup, McGilchrist, Hawkins, Wolfram, Carroll, Arkani-Hamed, Fredrickson, Stump, Rohr, Wright, and Loughran. Recurring cross-program questions include whether consciousness is substrate-independent, whether spacetime is fundamental, and the role of attention in constructing reality.",
+      "The explorer has these tabs, which you can open for the user by calling switch_tab:",
+      "- Sociogram: force-directed graph of the whole wiki knowledge base (nodes = articles, edges = links and shared references).",
+      "- Narrative Connectome: 3D graph where each node is a Problem-Resource-Solution narrative and edges are shared resources bridging traditions.",
+      "- Agent Map: the autonomous agents running the system.",
+      "- Metabolism: the temporal pulse of the agent swarm from run telemetry.",
+      "- Curriculum Tools: the Summa 2026 curriculum dashboard.",
+      "- Inter-Tradition Study: structured comparison across traditions.",
+      "- Community Explorer: graph of 156 curated real-world communities.",
+      "- Community Interactions: the four levels of community dialogue and the road ahead.",
+      "- RC Document Explorer, Physics Explorer, TRV Commentary, AI Heartbeat: the education tools.",
+      "Behavior: you are speaking aloud, so keep answers short and conversational -- two or three sentences unless asked to go deeper. When the user wants to see something, call switch_tab and say briefly what you opened. Offer to show tabs proactively. If asked something outside the wiki, answer briefly and steer back. Be warm and concrete, never a lecture."
+    ].join("\n");
+    if (faqText) {
+      base += "\n\nFIRST-PASS FAQ (curated answers about each feature -- prefer these when a question matches, then add your own detail):\n" + faqText;
+    }
+    return base;
+  }
+
+  function sessionConfig() {
+    return {
+      type: 'session.update',
+      session: {
+        type: 'realtime',
+        instructions: instructions(),
+        audio: { input: { transcription: { model: 'whisper-1' } } },
+        tools: [{
+          type: 'function',
+          name: 'switch_tab',
+          description: 'Open one of the explorer tabs so the user can see it. Call this whenever the user asks to see, open, go to, or show a view.',
+          parameters: {
+            type: 'object',
+            properties: {
+              tab: { type: 'string', enum: TABS.map(function(t){ return t.key; }),
+                     description: 'Which tab to open.' }
+            },
+            required: ['tab']
+          }
+        }],
+        tool_choice: 'auto'
+      }
+    };
+  }
+
+  // Drive the shell's real tab buttons so existing chapter/row logic runs.
+  function switchTab(key) {
+    var t = null;
+    for (var i = 0; i < TABS.length; i++) { if (TABS[i].key === key) { t = TABS[i]; break; } }
+    if (!t) return { ok: false, error: 'unknown tab: ' + key };
+    try {
+      if (t.kind === 'chapter') {
+        var cb = el(t.id); if (!cb) return { ok:false, error:'chapter button missing' };
+        cb.click();
+      } else if (t.kind === 'tools') {
+        var ct = el('chap-tools'); if (ct) ct.click();
+        var btn = document.querySelector('#row2 .tab-btn[data-src="' + t.src + '"]');
+        if (!btn) return { ok:false, error:'tab button missing' };
+        btn.click();
+      } else if (t.kind === 'edu') {
+        var ce = el('chap-education'); if (ce) ce.click();
+        var eb = document.querySelector('#row2-edu .tab-btn[data-src="' + t.src + '"]');
+        if (!eb) return { ok:false, error:'edu tab button missing' };
+        eb.click();
+      }
+      return { ok: true, opened: key };
+    } catch (e) {
+      return { ok: false, error: String(e) };
+    }
+  }
+
+  function handleEvent(ev) {
+    var m;
+    try { m = JSON.parse(ev.data); } catch (e) { return; }
+    switch (m.type) {
+      case 'conversation.item.input_audio_transcription.completed':
+        if (m.transcript) addLine('You', m.transcript.trim());
+        break;
+      case 'response.audio_transcript.done':
+      case 'response.output_audio_transcript.done':
+        if (m.transcript) addLine('Guide', m.transcript.trim());
+        break;
+      case 'response.function_call_arguments.done': {
+        var args = {};
+        try { args = JSON.parse(m.arguments || '{}'); } catch (e) {}
+        var result = (m.name === 'switch_tab') ? switchTab(args.tab)
+                                               : { ok: false, error: 'unknown tool' };
+        if (result.ok && result.opened) setStatus('Opened: ' + result.opened.replace(/_/g,' '), 'ok');
+        dc.send(JSON.stringify({
+          type: 'conversation.item.create',
+          item: { type: 'function_call_output', call_id: m.call_id, output: JSON.stringify(result) }
+        }));
+        dc.send(JSON.stringify({ type: 'response.create' }));
+        break;
+      }
+      case 'error':
+        setStatus('Realtime error: ' + ((m.error && m.error.message) || 'unknown'), 'err');
+        break;
+    }
+  }
+
+  async function start() {
+    if (live || connecting) return;
+    connecting = true;
+    setBtn('Connecting...', true);
+    setStatus('Requesting microphone and connecting...');
+    await loadFaq();
+    try {
+      micStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    } catch (e) {
+      connecting = false; setBtn('Start conversation', false);
+      setStatus('Microphone permission denied. Allow mic access and try again.', 'err');
+      return;
+    }
+
+    // 1. Mint an ephemeral token. Prefer the broker (keyless for visitors);
+    //    fall back to a visitor-supplied key only if the broker is down/over-limit.
+    var ephemeral = null;
+    try {
+      ephemeral = await mintViaBroker();
+    } catch (be) {
+      var key = getKey();
+      if (!key) {
+        el('vg-keyrow').classList.add('show');
+        setStatus(be && be.message === 'broker-limit'
+          ? 'Daily free voice limit reached. Enter your own OpenAI key to continue.'
+          : 'Voice service unavailable right now. Enter your own OpenAI key, or try later.', 'err');
+        if (micStream) { micStream.getTracks().forEach(function(t){ t.stop(); }); micStream = null; }
+        connecting = false; setBtn('Start conversation', false);
+        return;
+      }
+      try {
+        ephemeral = await mintViaUserKey(key);
+      } catch (ke) {
+        stop(true);
+        setStatus('Could not connect: ' + ke.message, 'err');
+        return;
+      }
+    }
+
+    try {
+      // 2. WebRTC peer connection.
+      pc = new RTCPeerConnection();
+      pc.ontrack = function(e) {
+        el('vg-audio').srcObject = e.streams[0];
+        remoteStream = e.streams[0];
+        // If a recording is already running, capture the assistant's voice too.
+        if (window.isRecording && window.addStreamToRecMix) window.addStreamToRecMix(remoteStream);
+      };
+      pc.addTrack(micStream.getAudioTracks()[0], micStream);
+
+      dc = pc.createDataChannel('oai-events');
+      dc.onopen = function() {
+        dc.send(JSON.stringify(sessionConfig()));
+        live = true; connecting = false;
+        setBtn('End conversation', false, true);
+        el('vg-launch').classList.add('live');
+        el('vg-transcript').classList.add('show');
+        setStatus('Listening. Speak now &mdash; interrupt any time.', 'ok');
+      };
+      dc.onmessage = handleEvent;
+
+      // 3. SDP offer/answer with the realtime endpoint.
+      var offer = await pc.createOffer();
+      await pc.setLocalDescription(offer);
+      var resp = await fetch('https://api.openai.com/v1/realtime/calls', {
+        method: 'POST',
+        body: offer.sdp,
+        headers: { 'Authorization': 'Bearer ' + ephemeral, 'Content-Type': 'application/sdp' }
+      });
+      if (!resp.ok) {
+        var sdpErr = await resp.text();
+        throw new Error('SDP exchange failed (' + resp.status + '): ' + sdpErr.slice(0, 160));
+      }
+      var answer = { type: 'answer', sdp: await resp.text() };
+      await pc.setRemoteDescription(answer);
+    } catch (e) {
+      connecting = false;
+      stop(true);
+      setStatus('Could not connect: ' + e.message, 'err');
+    }
+  }
+
+  function stop(silent) {
+    live = false; connecting = false;
+    try { if (dc) dc.close(); } catch (e) {}
+    try { if (pc) pc.close(); } catch (e) {}
+    if (micStream) { micStream.getTracks().forEach(function(t){ t.stop(); }); micStream = null; }
+    dc = null; pc = null; remoteStream = null;
+    setBtn('Start conversation', false);
+    el('vg-launch').classList.remove('live');
+    if (!silent) setStatus('Ended. Press Start to talk again.');
+  }
+
+  function setBtn(text, disabled, isLive) {
+    var b = el('vg-toggle');
+    b.textContent = text;
+    b.disabled = !!disabled;
+    b.classList.toggle('live', !!isLive);
+  }
+
+  return {
+    togglePanel: function() {
+      // Keyless by default (broker mints the token). The key field is revealed
+      // only if the broker is down/over-limit — see start()'s fallback.
+      el('vg-panel').classList.toggle('open');
+    },
+    toggle: function() { if (live || connecting) stop(); else start(); },
+    getRemoteStream: function() { return remoteStream; }
+  };
+})();
+
+// ── DRAGGABLE VOICE PANEL (grab the header) ──
+(function() {
+  var panel = document.getElementById('vg-panel');
+  var head = document.getElementById('vg-head');
+  if (!panel || !head) return;
+  var dragging = false, sx = 0, sy = 0, ox = 0, oy = 0;
+  head.addEventListener('mousedown', function(e) {
+    if (e.target.id === 'vg-close') return;   // let the close button work
+    dragging = true;
+    var r = panel.getBoundingClientRect();
+    // switch from right/bottom anchoring to explicit left/top before moving
+    panel.style.left = r.left + 'px'; panel.style.top = r.top + 'px';
+    panel.style.right = 'auto'; panel.style.bottom = 'auto';
+    sx = e.clientX; sy = e.clientY; ox = r.left; oy = r.top;
+    head.classList.add('dragging');
+    e.preventDefault();
+  });
+  document.addEventListener('mousemove', function(e) {
+    if (!dragging) return;
+    var nx = ox + (e.clientX - sx), ny = oy + (e.clientY - sy);
+    var maxX = window.innerWidth - panel.offsetWidth;
+    var maxY = window.innerHeight - panel.offsetHeight;
+    panel.style.left = Math.max(0, Math.min(nx, maxX)) + 'px';
+    panel.style.top  = Math.max(0, Math.min(ny, maxY)) + 'px';
+  });
+  document.addEventListener('mouseup', function() {
+    if (dragging) { dragging = false; head.classList.remove('dragging'); }
+  });
+})();
 </script>
 
 </body>

@@ -170,6 +170,30 @@ python3 scripts/janitor.py --promote <c>   # add check to auto-fix safelist
 
 ---
 
+## Talk to the Wiki — Realtime Voice Guide + FAQ Agent
+
+**Voice guide** lives inlined in `wiki/explorer.html` (the shell, not an iframe tab, so it is exempt from the iframe-asset rule but MUST stay inline there). Floating "Talk to the Wiki" pill, bottom-right, draggable by its header. Uses the **OpenAI Realtime API over WebRTC** (voice-to-voice, native barge-in):
+- Mint ephemeral token: `POST /v1/realtime/client_secrets` (token at `.value`); SDP: `POST /v1/realtime/calls`. Model `gpt-realtime`, voice `cedar`. (The old `/v1/realtime/sessions` + `/v1/realtime?model=` preview endpoints 404 — do not revert to them.)
+- Key: reuses `localStorage['tts_api_key']` (shared with the Sociogram OpenAI TTS). `getKey()` only accepts/stores `sk-` values, so a browser-autofilled junk value can never clobber the shared key.
+- Action tool `switch_tab` drives the shell's own tab buttons by voice.
+- The **Record** button captures the guide's replies: the assistant's WebRTC stream is mixed directly into the recording graph (`addStreamToRecMix`), independent of Chrome tab-audio sharing.
+
+**FAQ agent** keeps the guide's first-pass answers current AND deepens them over time toward **100 questions** (`TARGET_TOTAL`), then adds ~1/week. Split by Rule 5:
+- **Deterministic** (`scripts/voice_faq.py`): `scan` parses every explorer tab + its help text, hashes each feature, diffs against `voice_faq/state.json` → new/changed/unchanged/removed. `status` prints total/target/deficit/phase + per-feature counts (thinnest first). `merge <qa.json>` is **ADDITIVE** — appends authored Q&A per feature, deduped by normalized question (never overwrites); validates (known keys, non-empty q/a, new features need ≥3 seed pairs); writes `wiki/voice_guide_faq.json` + `voice_faq/report.md` + updates state. Phase = `ramp` while total < 100, else `steady`.
+- **Generative**: the weekly Claude agent `c2a2-voice-faq-weekly` (Sunday ~06:15) runs `status` + `scan`, then: seeds NEW features, adds corrected pairs for CHANGED ones, and DEEPENS — in `ramp` it authors ~10–15 spread across the thinnest features (high-level → detail); in `steady` it authors exactly **one** genuinely new, more-detailed question. Report-only — **never auto-pushes** (LLM-authored data → human review, per the no-blind-push rule).
+- Seeded to **102 Q&A across 14 features** (2026-07-18), so it starts in `steady`.
+- The guide `fetch`es `wiki/voice_guide_faq.json` at session start and injects it into the Realtime instructions as its first-pass source; missing file → falls back to built-in knowledge.
+- `voice_faq/` (state + report) is gitignored like `janitor/`; `wiki/voice_guide_faq.json` IS tracked/published.
+
+### Manual regen
+```bash
+python3 scripts/voice_faq.py status
+python3 scripts/voice_faq.py scan --pretty
+python3 scripts/voice_faq.py merge /path/to/qa.json      # additive; --dry-run to preview
+```
+
+---
+
 ## Review Log (historical preservation archive)
 
 **Output:** `wiki/review_log.html` (self-contained, ~2MB) — **PUBLISHED** (2026-06-22). `assemble_review_log.py` auto-scrubs every email address from the HTML on each build (final `re.subn` pass), so the public copy is address-clean. The `provenance/` sidecar stays **gitignored/local** — it holds `decision_emails.json` with the raw addresses.
