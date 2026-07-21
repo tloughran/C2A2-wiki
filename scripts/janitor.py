@@ -718,6 +718,124 @@ def check_roster_drift():
     return findings
 
 
+# --- Schedule drift config (fact_inventory.md Family 2 / R5) -----------------
+# Each OpenStory agent in agent_map.json carries a hand-authored `schedule`
+# display string AND a machine `cron`. cron is the source of truth: sync_roster.py
+# derives the animation's days/hour/minute from it (parse_cron), and it is what the
+# scheduler actually reads. The display string is copied through verbatim and has
+# gone stale on ~30 agents (each drifted a few minutes past its cron minute; Tom
+# confirmed 2026-07-21 this is drift, not an "observed fire time"). This check is
+# within-universe by construction — the string and the cron describe the SAME
+# agent's run time — so a parseable time that disagrees with cron is always drift,
+# with none of the roster check's cross-universe trap (hazard H2).
+
+# A time-of-day at the END of the display string ("Sun 05:53", "daily 06:03",
+# "Mon-Fri 09:10", "... (offset)"). The negative lookbehind stops a fragment like
+# "4h" leaking an hour; the optional trailing "(...)" tolerates "(offset)".
+_SCHED_TIME_TAIL = re.compile(r"(?<!\d)(\d{1,2}):(\d{2})\s*(?:\([^)]*\))?\s*$")
+# The single-weekday prefix, so the weekday can ALSO be checked when both sides are
+# unambiguous. "daily" and range forms ("Mon-Fri") are compared on time only.
+_SCHED_WEEKDAY = re.compile(r"^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b")
+_DOW_NAME_TO_NUM = {"Sun": 0, "Mon": 1, "Tue": 2, "Wed": 3,
+                    "Thu": 4, "Fri": 5, "Sat": 6}
+
+
+def _cron_literal_hm(cron):
+    """(hour, minute) when a cron's minute AND hour are both single literal
+    integers, so it fires at one wall-clock time-of-day; else None. A restricted
+    day-of-week/day-of-month is fine (it does not change the time shown), but a
+    stepped/listed/`*` hour ('*/4', '2,6,10') means several times a day and a
+    single display time is not comparable — return None so the agent is skipped."""
+    parts = cron.split()
+    if len(parts) != 5:
+        return None
+    minute, hour = parts[0], parts[1]
+    if not (minute.isdigit() and hour.isdigit()):
+        return None
+    return int(hour), int(minute)
+
+
+def _cron_single_dow(cron):
+    """Day-of-week as a single int (Sunday normalized to 0, range 0..6) when the
+    cron fires on exactly one literal weekday; else None (daily `*`, ranges like
+    '1-5', or lists), matching sync_roster.parse_cron's 7->0 convention."""
+    parts = cron.split()
+    if len(parts) != 5 or not parts[4].isdigit():
+        return None
+    d = int(parts[4])
+    if d == 7:
+        return 0
+    return d if d <= 6 else None
+
+
+def _schedule_findings(agents):
+    """Pure schedule-drift logic (no I/O), so every branch is unit-testable.
+    `agents` is agent_map.json's list of entries (dicts with taskId/schedule/cron).
+
+    Asserts one within-universe invariant per agent: when the `schedule` display
+    string ends in a time-of-day and the `cron` fires at one literal time, the two
+    times must match; and when the string opens with a single weekday and the cron
+    fires on one weekday, those must match too. Strings with no comparable time
+    ('every 4h :15', 'manual') and multi-time crons are skipped, not guessed at.
+    Emits `schedule_string_drift` (warn); never allowlistable — a parseable time
+    that contradicts its own cron is always a hand-copy bug, the same rule the
+    palette check applies to hex mismatches."""
+    findings = []
+    for a in agents:
+        tid = a.get("taskId")
+        sched = a.get("schedule")
+        cron = a.get("cron")
+        if not tid or not sched or not cron:
+            continue
+        s = sched.strip()
+        hm = _cron_literal_hm(cron)
+        tail = _SCHED_TIME_TAIL.search(s)
+        if not tail or hm is None:
+            continue  # non-comparable display format or multi-time cron
+        diffs = []
+        s_hour, s_min = int(tail.group(1)), int(tail.group(2))
+        c_hour, c_min = hm
+        if (s_hour, s_min) != (c_hour, c_min):
+            diffs.append("time %02d:%02d vs cron %02d:%02d"
+                         % (s_hour, s_min, c_hour, c_min))
+        wd = _SCHED_WEEKDAY.match(s)
+        c_dow = _cron_single_dow(cron)
+        if wd and c_dow is not None and _DOW_NAME_TO_NUM[wd.group(1)] != c_dow:
+            diffs.append("weekday %s vs cron dow %d" % (wd.group(1), c_dow))
+        if diffs:
+            findings.append(Finding(
+                "schedule_string_drift", "agent:%s" % tid,
+                "display schedule %r disagrees with cron %r (%s)"
+                % (sched, cron, "; ".join(diffs)), "warn",
+                note="cron is the machine truth (sync_roster.parse_cron derives the "
+                     "animation's hour/minute from it); the schedule string is "
+                     "hand-authored in agent_map.json and has gone stale. Fix the "
+                     "string there, then re-run sync_roster.py to propagate to "
+                     "agents_tab.html (a No-Blind-Push HTML regen)."))
+    return findings
+
+
+def check_schedule_drift():
+    """Schedule-string drift: each OpenStory agent's human `schedule` display
+    string vs its own machine `cron`, read from the canonical agent_map.json
+    (fact_inventory.md Family 2 / R5). Read-only; no writes, no git, so it is
+    idempotent and lock-safe (H6)."""
+    try:
+        amap = json.loads(AGENT_MAP_PATH.read_text(encoding="utf-8"))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+        return [Finding(
+            "schedule_drift", rel(AGENT_MAP_PATH),
+            "agent_map.json missing/unreadable — cannot check schedule drift",
+            "warn", note="expected at wiki/agents/openstory/agent_map.json")]
+    agents = amap.get("agents")
+    if not isinstance(agents, list):
+        return [Finding(
+            "schedule_drift", rel(AGENT_MAP_PATH),
+            "agent_map.json has no 'agents' list — structure changed under the "
+            "extractor", "warn")]
+    return _schedule_findings(agents)
+
+
 # --- Orchestration -----------------------------------------------------------
 
 ALL_CHECKS = [
@@ -733,6 +851,7 @@ ALL_CHECKS = [
     ("duplicate_h1",            check_duplicate_h1,          False, False),
     ("palette_drift",           check_palette_drift,         False, False),
     ("roster_drift",            check_roster_drift,          False, False),
+    ("schedule_drift",          check_schedule_drift,        False, False),
 ]
 
 

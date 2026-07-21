@@ -126,6 +126,96 @@ def test_integration_real_repo_state():
         [(x.severity, x.check, x.scope, x.detail) for x in f])
 
 
+# ---- schedule-drift unit tests (fact_inventory Family 2 / R5) --------------
+# Synthetic single-agent lists exercise the pure _schedule_findings() core so
+# every parse/compare branch is covered without fixture files.
+
+def sched(**over):
+    a = dict(taskId="x", schedule="Mon 03:00", cron="0 3 * * 1")
+    a.update(over)
+    return J._schedule_findings([a])
+
+
+def test_schedule_aligned_is_clean():
+    assert sched() == [], "string time+weekday matching cron should be clean"
+
+
+def test_schedule_time_drift_warns():
+    f = sched(schedule="Mon 03:04", cron="0 3 * * 1")
+    assert [x.check for x in f] == ["schedule_string_drift"]
+    assert f[0].severity == "warn"
+    assert "03:04 vs cron 03:00" in f[0].detail
+
+
+def test_schedule_daily_string_vs_daily_cron():
+    # 'daily HH:MM' vs a daily cron is time-comparable (the broad drift class).
+    f = sched(schedule="daily 06:03", cron="0 6 * * *")
+    assert len(f) == 1 and "06:03 vs cron 06:00" in f[0].detail
+
+
+def test_schedule_weekday_drift_warns():
+    # time matches, but the string names Mon while cron fires Tue (dow 2).
+    f = sched(schedule="Mon 03:00", cron="0 3 * * 2")
+    assert len(f) == 1 and "weekday Mon vs cron dow 2" in f[0].detail
+
+
+def test_schedule_daily_string_skips_weekday_check():
+    # 'daily' names no weekday, so only time is compared (here it matches).
+    assert sched(schedule="daily 03:00", cron="0 3 * * 5") == []
+
+
+def test_schedule_multi_time_cron_skipped():
+    # '*/4' hour fires many times a day; a single display time is not comparable.
+    assert sched(schedule="every 4h :15", cron="15 */4 * * *") == []
+
+
+def test_schedule_listed_hour_cron_skipped():
+    # a comma-list hour ('2,6,10,...') is likewise multi-time -> not comparable.
+    assert sched(schedule="every 4h :15 (offset)",
+                 cron="15 2,6,10,14,18,22 * * *") == []
+
+
+def test_schedule_no_time_string_skipped():
+    assert sched(schedule="manual", cron=None) == []
+    assert sched(schedule="manual only", cron="0 3 * * 1") == []
+
+
+def test_schedule_missing_fields_skipped():
+    assert J._schedule_findings([{"taskId": "x"}]) == []
+
+
+def test_schedule_mon_fri_time_only():
+    # 'Mon-Fri' is a range: weekday isn't checked (cron dow '1-5' isn't single),
+    # but the time still drifts and must surface.
+    f = sched(schedule="Mon-Fri 09:10", cron="0 9 * * 1-5")
+    assert len(f) == 1 and "09:10 vs cron 09:00" in f[0].detail
+    assert "weekday" not in f[0].detail
+
+
+def test_schedule_dow_seven_is_sunday():
+    # cron dow 7 and 0 both mean Sunday; a 'Sun' string must reconcile with 7.
+    assert sched(schedule="Sun 03:00", cron="0 3 * * 7") == []
+
+
+def test_schedule_integration_real_repo():
+    """Pin the current real state: the 30 known drifted schedule strings, all
+    warn, plus the 3 non-comparable agents correctly skipped. When the follow-up
+    increment canonicalizes the strings from cron, this count drops and this test
+    must be updated consciously (Rule 9) — never silence a real warn to green it."""
+    f = J.check_schedule_drift()
+    assert all(x.check == "schedule_string_drift" and x.severity == "warn"
+               for x in f), "unexpected finding shape: %r" % [
+                   (x.check, x.severity) for x in f]
+    ids = {x.scope for x in f}
+    assert len(f) == 30, "expected 30 known drifted schedule strings, got %d: %r" % (
+        len(f), sorted(ids))
+    for must in ("agent:c2a2-wiki-janitor-weekly", "agent:morning-system-health",
+                 "agent:c2a2-agent-levin-friston"):
+        assert must in ids, "missing known drift %s" % must
+    for skipped in ("agent:summa-qc-sweep", "agent:execution-assistant"):
+        assert skipped not in ids, "must not flag non-comparable %s" % skipped
+
+
 def main():
     tests = [v for k, v in sorted(globals().items())
              if k.startswith("test_") and callable(v)]
