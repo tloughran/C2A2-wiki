@@ -8664,3 +8664,183 @@ ASSUMPTION-481:
     Transform at each step:
       14a: Extracted from the 2026-07-19 connector health weekly transcript, exact quotes of the retraction, the cost-tracker finding and the enumeration-scope statement. [stated]
     Current status: UNTESTED
+
+ASSUMPTION-482:
+  Date identified: 2026-07-20
+  Statement: Agent 15c stated the pipeline's binding constraint in its own words: "The pipeline's dominant constraint this run is not evidence but measurement that nobody has taken." Eleven of fourteen dispositions turn on a discriminating test that has never been run, and 15c stated those reduce to roughly six distinct measurements, five of which cost under an hour each.
+  Context: 2026-07-20, autonomous day #15. A consumption day: the 07-19 EOD batch of 14 items went 15a -> 15b -> 15c same-cycle, returning 6 INCORPORATE (PREMISE-105..110), 5 MONITOR (MONITOR-453..457), 3 REVISE plus 1 cross-item systemic REVISE (REVISE-233..236).
+  Type: methodological
+  Related decisions: none
+  Related items: ASSUMPTION-479 -> PREMISE-107 (diagnose-before-repair with scope guard), PRESUMPTION-513 (today), REVISE-233, REVISE-234, REVISE-235
+  Testability: testable empirically -- in-house, and cheaply: (1) enumerate the morning run's read set; (2) compare scheduled vs interactive wall clock; (3) re-derive four counts over one frozen snapshot; (4) search thirty days of recipients' outputs for flagged content; (5) rank-correlate three dialogue measures. Literature: measurement cost vs evidence cost in fault isolation; the diagnosis fraction of mean time to repair.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-482
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-20 lit-search pipeline (15c) disposition run, exact quote, cross-checked against the day's four REVISE flags and five MONITOR items. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-483:
+  Date identified: 2026-07-20
+  Statement: 15c stated, adjudicating ASSUMPTION-477, that "the read channel is not the dominant correlation source, and 2026-07-19 removed the weakest of at least four," and therefore that the correct response is to relabel rather than re-run: report the 07-19 change as "READ-CHANNEL INDEPENDENCE ENFORCED," never as "independence achieved," and do not discount or re-derive the 905-pair record on an unmeasured contamination assumption.
+  Context: 2026-07-20, REVISE-233. The item came back 15a SUPPORTED/Strong against 15b CHALLENGED/Strong -- a direct conflict at equal strength. 15c refused to average, separated three propositions inside the item, and decided the contested one on source directness (van Rooyen et al., JAMA 1998, PMID 9676666, n=527, null; against McNutt 1990 at a quarter the size). Notable as the first recorded adjudication of an equal-strength cross-agent conflict.
+  Type: architectural / epistemic
+  Related decisions: none
+  Related items: ASSUMPTION-477, REVISE-233, PRESUMPTION-508 (today), PREMISE-106
+  Testability: testable empirically -- in-house: run 15a and 15b on the same item under full blocking and measure how often they cite the SAME sources; high overlap means shared pretraining, not file access, is the operative channel and the 07-19 fix addressed the wrong one. Separately, a clean blinding estimate: ~20 pre-07-19 items run twice in one session, one model version, one prompt, one corpus snapshot, with 15a's file readable then blocked. Literature: arXiv:2606.29270 (correlated LLM errors violating Condorcet independence), arXiv:2606.10296 (LLM judge over correlated inputs can yield negative net gain).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-483
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-20 REVISE-233 adjudication block, exact quotes of the operative finding and the recommended relabel. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-484:
+  Date identified: 2026-07-20
+  Statement: 15c stated a mechanism for how an honest abstention fails: "The abstention therefore republishes the disputed figure with the caveat quietly removed, while appearing to withhold it." The stated remedy is to report a directional bound instead -- "at least N installed; uninstalled connectors are undetectable under fallback, so the true count is N or higher" -- on the ground that numeric uncertainty costs little credibility while unquantified verbal uncertainty lowers trust in both the information and the source.
+  Context: 2026-07-20, REVISE-234, dispositioning ASSUMPTION-481 (the connector-health weekly's refusal to state a count). The diagnosis half was judged INCORPORATE-ready pending a settled reporting convention; the endorsed abstention was not incorporated. This directly qualifies what was recorded on 07-19 as "the fleet's cleanest instance of an agent declining to infer past its instrument."
+  Type: methodological / epistemic
+  Related decisions: none
+  Related items: ASSUMPTION-481, REVISE-234, PREMISE-105 (break-in-series, same fix applied to the four-week fallback record), PREMISE-110
+  Testability: testable empirically -- in-house and immediate: inspect the next artifact that cites a connector count; if the pre-abstention fallback figure reappears uncaveated, the abstention failed in exactly the predicted way. Then repair enumeration and compare four weeks of fallback classification against ground truth to size the fallback error rate. Literature: van der Bles et al., PNAS 2020 (PMID 32205438); Royal Society Open Science 2023 (doi 10.1098/rsos.230604); belief-consistent processing of uncertainty statements.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-484
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-20 REVISE-234 block, exact quote of the republication mechanism and the recommended directional bound. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-485:
+  Date identified: 2026-07-20
+  Statement: On the accelerator's target function, 15c stated a constraint on remedies: "replacing a possibly-wrong objective with an unmeasurable one converts it into no objective." Therefore convergence must NOT be removed from Rung-2 scoring before a separable alternative exists, and the correct move is to state the criterion as a hypothesis in decisions.md while instrumenting both signatures and reporting the pair.
+  Context: 2026-07-20, REVISE-235, urgency HIGH, dispositioning PRESUMPTION-500 -- flagged by 14b as "Critical -- this is the target function of the accelerator." Both 15a and 15b independently proposed MacIntyre's own criterion (can tradition A restate B's position in B's vocabulary AND identify B's unresolved epistemic crisis?) as an independent third measure.
+  Type: methodological / architectural
+  Related decisions: none (this is the flagged gap -- the target function has never been written into decisions.md)
+  Related items: PRESUMPTION-500, ASSUMPTION-475 (the stated twin, MONITOR-453), REVISE-235, PRESUMPTION-509 (today)
+  Testability: testable empirically -- in-house: score existing dialogues under (a) convergence, (b) mutual registration, (c) an ITT-style measure, and compute pairwise rank correlations; strong (b)-(a) correlation means the dichotomy is false. Mandatory pre-dialogue ITT baseline, since C2A2's tradition agents share a pretrained model and may produce a rival's arguments from pretraining rather than from registration acquired in dialogue. Literature: Lorenz et al., PNAS 2011 (convergence lowers accuracy while raising confidence); diversity prediction theorem; 2025-2026 results on LLM population homogenisation.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-485
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-20 REVISE-235 block, exact quote of the no-objective constraint and the six-step recommended action. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-486:
+  Date identified: 2026-07-20
+  Statement: In incorporating PRESUMPTION-502 as PREMISE-108, 15c stated an instrumentation constraint as load-bearing: "the measure of delivery is the flagged content APPEARING IN THE RECIPIENT'S OUTPUT, never an acknowledgement receipt. An acknowledgement makes 'acknowledged' measurable and leaves 'acted on' exactly as unmeasurable as before, installing a green metric over the unchanged failure."
+  Context: 2026-07-20. Generalises PREMISE-102 (agent-to-human) to the agent-to-agent channel, at one confidence grade lower because the in-house evidence is a single traced instance and the strong external evidence (AHRQ/ACOG handoff, I-PASS read-back, FAA position relief) comes from synchronous human teams -- a transfer 15b showed to be unwarranted for the remedy though the diagnosis carries. The premise explicitly does NOT license any claim about how often delivery fails; the base rate has not been obtained.
+  Type: methodological
+  Related decisions: none
+  Related items: PRESUMPTION-502 -> PREMISE-108, PREMISE-102, PRESUMPTION-506 (today), MONITOR-420
+  Testability: testable empirically -- in-house, no protocol change required: enumerate the last thirty days of cross-agent flags and search each named recipient's subsequent output for the flagged content. This is one of the five measurements named in ASSUMPTION-482. Literature: closed-loop communication; responsibility diffusion in handoffs; proxy-metric substitution.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-486
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-20 PREMISE-108 instrumentation constraint, exact quote. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-487:
+  Date identified: 2026-07-20
+  Statement: The metabolism regen run stated its failure and its diagnosis without hedging: "FAILED -- do not mark this run successful," exit 1, `build_metabolism_view.py`'s `PRAGMA quick_check` failing with thousands of "Rowid ... out of order" B-tree errors. Two stated inferences: "The live db is not corruption-free -- the errors come from the point-in-time backup copy, so this is real on-disk corruption in `open-story.db`, not a mid-write artifact," and "The live db hasn't been written since 2026-07-05 23:55 -- 14.6 days stale. The OpenStory writer appears to have stopped, or is failing against the corrupt file." The same run stated a path caveat: the script resolves the db via `$HOME`, which in the sandbox is not the user's home; the failure above is from a corrected run, not a path problem.
+  Context: 2026-07-20. Same failure as 2026-07-08, now roughly 13 consecutive days unresolved. Directly contradicted, same morning, by the morning project status claim that "OpenStory is alive: its telemetry refresh ran this morning and the metabolism snapshot regenerated on schedule" -- see ASSUMPTION-488 and PRESUMPTION-506.
+  Type: empirical
+  Related decisions: none
+  Related items: ASSUMPTION-466 (07-17 sandbox $HOME resolution), PRESUMPTION-491 (schedule-fired = task-succeeded), PRESUMPTION-506 (today), PREMISE-109
+  Testability: testable empirically -- Mac-side: `sqlite3 open-story.db "PRAGMA integrity_check"` directly, check whether the OpenStory writer process is alive, and attempt a `VACUUM INTO` rebuild to recover the B-tree. Literature: SQLite B-tree corruption causes; recovery from partial-write corruption.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-487
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-20 metabolism regen daily transcript, exact quotes of the failing lines and both stated inferences. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-488:
+  Date identified: 2026-07-20
+  Statement: The morning project status run stated, as fact, that "OpenStory is alive: its telemetry refresh ran this morning and the metabolism snapshot regenerated on schedule," that "roughly thirty-four scheduled agents are active... and all of yesterday's runs completed," and that "the BOSCO archive is fully indexed -- all 30,529 emails captured," qualified with "about 28,500 of those are still snippet-only, and the heartbeat task that enriches them... is currently disabled."
+  Context: 2026-07-20, and the claim is affirmatively false in the OpenStory clause: the metabolism regen run the same day exited 1 and reported the db 14.6 days stale. This is the second consecutive occurrence of the identical contradiction (07-17 ASSUMPTION-464 family, 07-19 ASSUMPTION-480) -- and it occurred on the day PREMISE-109 was validated, which names exactly this failure. The "all of yesterday's runs completed" clause is separately contradicted by the reviewer-review weekly's finding of four months of silent cost-tracker write failure and a five-week gap in `weekly-agent-ecosystem-report`.
+  Type: epistemic (summary claim not bound to its evidence)
+  Related decisions: none
+  Related items: ASSUMPTION-480 (07-19, same agent, same failure), ASSUMPTION-487 (today, the contradicting artifact), PRESUMPTION-491, PRESUMPTION-503 -> PREMISE-109, PRESUMPTION-506 (today), OPEN-124
+  Testability: testable empirically -- in-house: enumerate the morning run's read set and check whether the metabolism regen transcript is in it; then bind each health claim to a named artifact with a freshness bound and re-run. This is measurement (1) of the five named in ASSUMPTION-482. Literature: covered by PREMISE-109; no further search needed on the general claim.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-488
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-20 morning project status transcript, exact quotes; cross-checked against the same-day metabolism regen daily and reviewer review weekly transcripts. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-489:
+  Date identified: 2026-07-20
+  Statement: The Summa 2026 nightly verification run stated that its own guardrail detector was defective and that the defect produced the violations it had reported: "The guardrail detector had a real bug. It only registered a thinker as 'cited' when PRS ids appeared in parentheses," so ten days citing a tradition file with a prose gloss and no id "looked like breaches." Of 13 first-pass metaphysical-guardrail violations, "11 were parser false positives and 2 were detector artifacts," leaving 0 genuine. A second detector defect remains open: "the locus regex is Summa-part-insensitive," firing Day 232 (III Q.39) against a Prima Pars range on one thematic word.
+  Context: 2026-07-20. 307 synthesis files verified against the live wiki with both mounts present -- a real citation check, not form-only. 0 drift items, 8 authorship violations (all in the known possessive-PRS backlog). This is a detector that inverted in the opposite direction from PREMISE-110's family: it manufactured violations rather than manufacturing health. The reviewer-review weekly independently records two further self-caught measurement errors the same week (a 65-file frontmatter-extraction defect withdrawing 16 phantom violations; QC ratios computed against a hardcoded wrong denominator).
+  Type: methodological / empirical
+  Related decisions: none
+  Related items: PRESUMPTION-505 -> PREMISE-110 (detectors invert), PRESUMPTION-511 (today), ASSUMPTION-490
+  Testability: testable empirically -- in-house: tighten the locus regex for Summa part, re-run, and diff against tonight's result; separately, audit each remaining detector for the same class of pattern-match defect before trusting any violation count. Literature: false-positive rates in static-analysis and rule-based detectors; the effect of detector precision on reviewer trust and alert fatigue.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-489
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-20 Summa 2026 nightly verification transcript, exact quotes of both detector defects. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-490:
+  Date identified: 2026-07-20
+  Statement: Three counting disagreements were stated in one day within the Summa subsystem alone. The nightly verification: "I count 20 frontmatter tier mismatches where yesterday's pass found 15; the five extra... all sit within ~80 words of a tier boundary, so this is more likely a `## Notes`-stripping difference between passes than new drift -- it needs one reconciliation to settle." The reviewer-review weekly: "QC and verification disagree about tier mismatches -- QC says 5 (now zero, corrected); verification lists 15. Likely two different metrics, but the pending tier-calibration decision rests on whichever is right." And: the declared `length_actual_words` in the bottom-frontmatter cohort are inflated (Day 011 declares 2780 against a true body of ~2200-2317, masking a 0.77x under-run behind a stated 0.927 ratio).
+  Context: 2026-07-20. This is the counting-authority problem (OPEN-112, OPEN-124, OPEN-127, PRESUMPTION-501) appearing in a subsystem where it had not previously been recorded, and the first case where a named pending decision -- tier calibration -- is explicitly stated to rest on the unresolved count. The evening sync separately flagged a possible sixth instance (mount-view disagreement on A-474..481 / P-500..505).
+  Type: empirical / methodological
+  Related decisions: none (tier calibration is pending and blocked on this)
+  Related items: ASSUMPTION-467 (07-17, 300 vs 447), PRESUMPTION-501, PREMISE-105 (break-in-series), OPEN-112, OPEN-124, OPEN-127, OPEN-130 (today)
+  Testability: testable empirically -- in-house: re-derive all three tier-mismatch counts over one frozen corpus snapshot with the `## Notes`-stripping rule stated explicitly, and repoint the writer's word-count step at the stripped body. This is measurement (3) of the five named in ASSUMPTION-482. Literature: covered by PREMISE-105; the reconciliation rule is the open item, not the diagnosis.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-490
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-20 Summa nightly verification and reviewer review weekly transcripts, exact quotes, read together. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-491:
+  Date identified: 2026-07-20
+  Statement: The reviewer-review weekly stated three findings as established rather than suspected. (1) "`agentic-cost-tracker` is genuinely broken. It ran today at 09:35, but `Reports/` still has nothing newer than `cost-report-2026-03.md`. Four months of silent write failure, now independently confirmed rather than inferred." (2) "The pending Stump PRS-09 repoint has the wrong target... Running the batch as recorded trades one wrong pointer for another. Needs your call before it executes." (3) "`weekly-agent-ecosystem-report` has produced no file for five weeks: its SKILL.md never tells it to write one. That's a one-line fix, not a broken agent."
+  Context: 2026-07-20, week 5 brief, all 10 reviewers ran with no silent failures. Finding (1) is the first case in the record of a suspected failure being upgraded to confirmed by an independent reviewer rather than by the reporting agent itself -- a working instance of what PREMISE-109 asks for. Finding (3) locates a five-week silent gap in a specification rather than in execution. Finding (2) is a case where a memory record and the wiki disagree and the memory record is wrong; it is blocked pending Tom.
+  Type: empirical / architectural
+  Related decisions: none
+  Related items: ASSUMPTION-481 (07-19, the cost-tracker finding in its inferred form), PRESUMPTION-503 -> PREMISE-109, PRESUMPTION-512 (today), ASSUMPTION-490
+  Testability: testable empirically -- in-house and cheap: apply the one-line SKILL.md fix and confirm a file appears next cycle; for the cost tracker, capture its stderr/exit status rather than its scheduler firing record; for the Stump repoint, verify the intended PRS target against the wiki before execution. Literature: silent write failure detection; specification-vs-execution attribution in agent failures.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-491
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-20 reviewer review weekly transcript, exact quotes of all three findings. [stated]
+    Current status: UNTESTED

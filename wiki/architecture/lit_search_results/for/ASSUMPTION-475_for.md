@@ -1,0 +1,33 @@
+SEARCH-FOR-ASSUMPTION-475:
+  Date searched: 2026-07-20
+  Original item: ASSUMPTION-475
+  Original statement: Forcing parts into too-complete agreement destroys the local optimization that made the collective intelligent; therefore Rung-2 should not be scored on convergence, and the success signature is increased mutual registration with preserved local optimization.
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a]
+    Original item: ASSUMPTION-475
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-19 sewing agent weekly transcript
+      15a: Searched for supporting literature
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Lorenz, J., Rauhut, H., Schweitzer, F. and Helbing, D. (2011). "How social influence can undermine the wisdom of crowd effect." PNAS 108(22) (as summarised in Wikipedia, "Collective intelligence"). — The canonical empirical result: "even mild social influence among group members can undermine the wisdom of crowds effect by reducing diversity of opinions and causing convergence on inaccurate estimates." This is ASSUMPTION-475's mechanism, demonstrated experimentally in humans, with the additional finding that confidence rises as accuracy falls — convergence is both harmful and self-reinforcing.
+    2. Page, S.E., "diversity prediction theorem," and Hong & Page's diversity-trumps-ability results (via Wikipedia, "Collective intelligence"). — Formal grounding: collective error decomposes into average individual error minus diversity. Diversity is not a tolerated cost of aggregation but a subtracted term in the accuracy identity. Scoring on convergence therefore optimises directly against the quantity that produces collective accuracy.
+    3. Chandra, K. et al. / Zhang, Y. et al. (2025). "The Price of Format: Diversity Collapse in LLMs." Findings of EMNLP 2025. — Direct machine-substrate support: "diversity collapse, characterized by the inability of LMs to generate diverse outputs, presents a significant challenge to pluralistic alignment research," with alignment procedures named as a contributing factor. Establishes that the effect reproduces in the substrate C2A2 actually runs on.
+    4. "Epistemic diversity across language models mitigates knowledge collapse" (arXiv:2512.15011); "Artificial Hivemind: The Open-Ended Homogeneity of Language Models" (arXiv:2510.22954); "Argument Collapse: LLMs Flatten Long-Form Public Debate" (arXiv:2606.01736). — Three convergent 2025-2026 results that LLM populations homogenise and that maintained epistemic diversity is protective. The last is the closest analogue to C2A2's actual task: LLMs flatten long-form debate, i.e. the failure mode is specifically loss of distinct positions in extended dialogue.
+    5. Brand, C. et al. (2025). "The Ideological Turing Test: A Behavioral Measure of Open-Mindedness and Perspective-Taking." Cognitive Science 49 (PMC12519043). — Supplies the missing instrument for the item's positive claim. Explicitly "measures the accuracy with which people represent the arguments of their ideological opponents," is behavioural rather than self-report, and cannot be faked: "if you understand arguments for the opposing position you can produce them." This is a validated operationalisation of "mutual registration with preserved local optimization."
+    6. MacIntyre, A. (1988/1990), Whose Justice? Which Rationality? and Three Rival Versions of Moral Enquiry (via Polanyi Society, Tradition and Discovery 26:2). — Philosophical grounding: rational comparison between traditions is possible but "always from within a particular historically extended community of enquiry," and traditions are evaluated "by their capacity to address their internal crises and to provide accounts of their rivals." Engagement is scored on the ability to account for the rival, not on merging with it — the item's exact success criterion, stated forty years earlier.
+    7. Levin, M. (2025). "The Multiscale Wisdom of the Body: Collective Intelligence as a Tractable Interface for Next-Generation Biomedicine." BioEssays 47. — Supports the biological half: bioelectric networks "enable the collective to know things that the parts don't know" while the parts retain their own competencies; the collective's intelligence is described as arising from multi-scale competency, not from cell-level uniformity.
+
+  Strength of support: Strong
+
+  Summary: This is the best-supported item in the batch, with independent confirmation from four literatures. The negative claim — that forced agreement destroys collective intelligence — is a quantified experimental result in humans (Lorenz et al.), a formal identity in the diversity prediction theorem, and a documented, actively-researched failure mode in LLMs specifically (diversity collapse, knowledge collapse, argument collapse). The prescription not to score Rung-2 on convergence follows directly: under the diversity decomposition, convergence is the term whose reduction increases collective error. The positive claim — that the success signature is mutual registration with preserved local optimization — is independently supported by MacIntyre, who defines rational engagement between rival traditions as the capacity to give an account of the rival from within one's own, and is operationalised by the Ideological Turing Test, a validated, unfakeable behavioural measure of comprehension that is explicitly independent of agreement. C2A2 does not need to invent this instrument.
+
+  Caveats: (a) The transfer condition 14a flagged for 15b is real and this search does not resolve it: Levin's bioelectric collectives share a substrate, a physical coupling medium, and an evolutionary history that research traditions do not. The bioelectric result is analogous support, not direct support, and should not carry the load. (b) The diversity prediction theorem applies to *estimation* tasks with a numeric ground truth; inter-tradition dialogue may have no such target, in which case the decomposition does not literally apply and the argument reduces to a qualitative analogy. (c) The Ideological Turing Test was validated on human ideological disagreement (three topics) and its transfer to agent-instantiated research traditions is untested — the agents' ability to produce a rival's arguments may reflect shared pretraining rather than genuine registration, which would make the instrument read high for the wrong reason. This is the single most important caveat for adoption. (d) Lorenz et al. found convergence harmful under *mild* influence; the item's phrasing ("too-complete agreement") implies a threshold, and the literature does not locate one.
+
+  Recommendation: SUPPORTED

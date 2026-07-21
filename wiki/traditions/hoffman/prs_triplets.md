@@ -153,7 +153,16 @@ PRS-15:
   Confidence: Medium
 
 ---
-*Total PRS triplets: 15*
+PRS-27:
+  Problem: Whether Hoffman's evolutionary-game-theory argument that natural selection hides objective reality can withstand challenge from a physics-trained interlocutor rather than a sympathetic philosophy audience.
+  Resource: The Tyson dialogue as an adversarial-format articulation of the Fitness-Beats-Truth argument, with Hoffman restating the claim in terms an astrophysicist would test against cosmology and measurement.
+  Solution: A publicly documented defense of FBT and "spacetime is not fundamental" held against physics framing, giving the wiki a citable instance of ITP-vs-physics contact rather than ITP-internal exposition.
+  Date Added: 2026-07-21
+  Source: StarTalk with Neil deGrasse Tyson — Donald Hoffman: Did evolution never give us the ability to see reality as ; PROP-2026-07-07-001
+  Confidence: Medium
+  Evidence: Episode released 2026-06-26, "Did evolution never give us the ability to see reality as it actually is?"; Tyson, Nice, O'Reilly and Hoffman "explore what neuroscience, evolutionary game theory, and consciousness suggest about the nature of reality itself."
+
+*Total PRS triplets: 16*
 PRS-16:
   Label: P16 (PROP-2026-04-28-001) — Stevens' Handbook of Experimental Psychology, ITP chapter (FBT + IOS, theorem-grade)
   Problem: ITP's two foundational mathematical results (FBT Theorem and IOS Theorem) have been dispersed across journal articles; mainstream perceptual science has been able to treat ITP as a philosophical position rather than a proven mathematical claim

@@ -1446,3 +1446,48 @@ OPEN-128:
     Transform at each step:
       14a: Extracted from the 2026-07-19 cowork→chat summary, where it was raised for the second consecutive week as an item with no home. [stated]
     Current status: OPEN
+
+OPEN-129:
+  Date raised: 2026-07-20
+  Question: What mechanism, if any, propagates a validated premise back into the agent whose behaviour it describes -- and if none exists, what is the self-awareness pipeline's output for?
+  Why it matters: PREMISE-109 was validated on 2026-07-20 and the exact failure it names recurred the same morning in the same agent that generated the evidence for it. 110 validated premises, 236 revision flags and 457 monitor items currently terminate in registry files read only by the pipeline that wrote them. No agent specification contains a step that reads validated_premises.md. This is the pipeline's own PREMISE-108 -- transmission is not delivery -- applied one level up, and it can be settled in one pass by naming, for each premise, the agent it governs and searching that agent's subsequent output for any attributable change.
+  Depends on: PRESUMPTION-506, PREMISE-108, PREMISE-109, ASSUMPTION-487, ASSUMPTION-488
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-129
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14b: Raised from PRESUMPTION-506, surfaced 2026-07-20 by reading the PREMISE-109 validation against the same-day morning project status and metabolism regen transcripts. [inferred]
+    Current status: OPEN
+
+OPEN-130:
+  Date raised: 2026-07-20
+  Question: Which subsystem is the counting authority for Summa tier mismatches -- and more generally, what rule suspends a dependent decision while a count is disputed?
+  Why it matters: Three readings of one quantity were produced within a week (QC 5, verification 15, nightly 20), and the reviewer-review weekly states that "the pending tier-calibration decision rests on whichever is right." This is the sixth standing counting-authority dispute (with PRS 300-vs-447, findings 50-vs-53, connector counts, the mount-view disagreement on A-474..481 / P-500..505, and the census orphan count), and the first in which a named pending decision is explicitly blocked on the answer. OPEN-112, OPEN-124 and OPEN-127 each raise a local instance; none proposes an arbitration rule, and dependent artifacts have continued to be produced in every case.
+  Depends on: ASSUMPTION-490, PRESUMPTION-507, PRESUMPTION-501, PREMISE-105, OPEN-112, OPEN-124, OPEN-127
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-130
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Extracted from the 2026-07-20 Summa nightly verification and reviewer review weekly transcripts, read together against the four standing count disputes. [stated in part, generalized]
+    Current status: OPEN
+
+OPEN-131:
+  Date raised: 2026-07-20
+  Question: What does a full review pass cost, in hours, at the current backlog -- and below what daily routing rate does the review channel become able to drain?
+  Why it matters: No artifact anywhere sums the open ask. Standing: 32 proposals, ~30 REVISE flags, 5 new MONITOR items due 07-27, 17 re-triggered 15d items, one blocked Stump repoint, a connector reauthorization list, and today's five-measurement recommendation. Each is individually small and correctly argued; the aggregate has never been measured. PREMISE-106 was validated on 2026-07-20 for the lit queue -- arrival exceeding service grows without bound, and admission control is an available lever -- and the review channel has an arrival rate near four per day against a measured service rate of zero across fifteen consecutive days. The same arithmetic has not been applied to it.
+  Depends on: PRESUMPTION-510, PRESUMPTION-512, PREMISE-106, PRESUMPTION-480, PRESUMPTION-487
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-131
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14b: Raised from PRESUMPTION-510 and PRESUMPTION-512, surfaced 2026-07-20 by summing the day's routed items against the standing backlog and finding no artifact that reports the aggregate. [inferred]
+    Current status: OPEN

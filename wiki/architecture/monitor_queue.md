@@ -17619,3 +17619,145 @@ MONITOR-457:
     Disposition record: DISPOSITION-PRESUMPTION-504 (lit_search_returns.md, 2026-07-20)
 
 **Intake summary (2026-07-20):** 5 items entered MONITOR (MONITOR-453..457) from the 2026-07-19 EOD batch of 14. Cadence Weekly, Cycle 0, first 15d next check 2026-07-27 for all five. Priorities: High (453, 454, 457), Medium-High (455, 456). Four of the five are blocked on a discriminating test that costs less than the remedy it would replace; MONITOR-455 and MONITOR-456 share their test with MONITOR-454's channel-throughput check and with PREMISE-105's frozen-snapshot run respectively, so the five items require three distinct tests, not five. **Standing caution:** these five enter a queue whose consumption has been near zero for eighteen days (BACKLOG-FLAG, 7th consecutive surfacing) and whose instability is now a validated premise (PREMISE-106). Entering them here is not evidence they will be re-evaluated.
+
+MONITOR-458:
+  Date entered: 2026-07-21
+  Source item: ASSUMPTION-482
+  Item type: ASSUMPTION (stated)
+  Statement: The pipeline's binding constraint is not evidence but measurement nobody has taken; 11 of 14 dispositions turn on discriminating tests reducing to ~6 measurements, 5 under an hour each. Contested against its paired item PRESUMPTION-513 (MONITOR-462), which diagnoses the same situation as an attention/authority constraint.
+  Net assessment: The observation is uncontradicted in both search directions. The inference to exclusivity is challenged from both directions and, notably, by the framework the item itself invokes: both searchers independently retrieved Theory of Constraints doctrine holding that knowledge-work constraints are usually POLICY constraints, that these are the most frequently misidentified, and that they are hard to see from inside because they present as good management. 15a's supporting evidence (Krauss 2026 on discovery tools across the full population of Nobel and major non-Nobel breakthroughs; MTTR diagnosis-dominance) comes from settings where the instrument did not exist; here it exists and costs under an hour. 15b adds two operational objections: the sub-hour estimates are inside-view self-estimates of the class that overrun ~2x (planning fallacy), and incident practice establishes whether the bottleneck is visibility or response by measuring both rather than assuming.
+  What would change the disposition: Execute ONE measurement and observe seven days. A disposition changes -> INCORPORATE 482 (the constraint was information). No execution occurs -> INCORPORATE 513 (the constraint was attention/authority). Execution with no disposition change -> REVISE both; the constraint is a third thing, most plausibly the missing effectiveness-check step (REVISE-239). Pre-register the threshold before running, per SYSTEMIC-RISK-FLAG-C.
+  Monitoring cadence: Weekly
+  Priority: Medium-High
+  next_check: 2026-07-28
+  Cycle: 0
+  Coupled to: MONITOR-462 (PRESUMPTION-513) — one experiment dispositions both, and they must not be re-evaluated separately. PREMISE-107 (discriminating tests); REVISE-239.
+  Note recorded at intake: neither item admits a third possibility that 15b names — the constraint may be a missing effectiveness-check step, which has a different and cheaper fix.
+  Full results: lit_search_results/for/ASSUMPTION-482_for.md ; lit_search_results/against/ASSUMPTION-482_against.md
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-482
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-20 15c disposition run, exact quote
+      15a: Searched for supporting literature; PARTIALLY-SUPPORTED (Moderate)
+      15b: Searched for challenging literature; PARTIALLY-CHALLENGED (Moderate)
+      15c: Net evaluation and disposition; MONITOR, paired with PRESUMPTION-513 and not collapsed
+    Current status: MONITORING (CONTESTED against its paired item)
+    Disposition record: DISPOSITION-ASSUMPTION-482 (lit_search_returns.md, 2026-07-21)
+
+MONITOR-459:
+  Date entered: 2026-07-21
+  Source item: ASSUMPTION-484
+  Item type: ASSUMPTION (stated)
+  Statement: An abstention republishes the disputed figure with the caveat quietly removed while appearing to withhold it; report a directional bound instead.
+  Net assessment: Both searchers converge on the same split from opposite assignments and on the same source. The RECOMMENDATION is well supported: van der Bles, van der Linden, Freeman & Spiegelhalter (2020), PNAS 117(14):7672-7683, PMID 32205438 — five experiments, n=5,780, including a BBC field experiment — establishes that communicating numeric uncertainty costs almost nothing in source trust while correctly lowering confidence in the figure, which removes the usual justification for withholding. Anchoring theory (Jacowitz & Kahneman 1995; insufficient adjustment) supplies a mechanism for the first clause. The MECHANISM is unevidenced: no study of the specific composite — abstention functioning as republication-minus-caveat — was retrieved by either agent. 15b supplies a correction 15a did not surface and that materially changes the remedy: the trust penalty attaches to VERBAL hedges, not numeric ranges, so a directional bound must be stated as a number or it incurs precisely the cost the numeric form avoids.
+  NOVELTY (priority driver): 15a raised a NOVELTY-FLAG. The item's distinctive clause — that withholding a figure functions as republishing it minus its caveat — has no counterpart in the retrieved literature in any reporting domain. Per the 15c spec's novelty heuristic this is monitored at HIGH priority as a potential original contribution. Priority reflects novelty, NOT stakes: 15b independently assesses the practical risk as Low and 15c agrees.
+  Adoptable now, without waiting on the mechanism question: report a directional bound, stated numerically. Uncontested by both agents.
+  What would change the disposition: Literature on abstention-as-implicit-republication in any reporting domain -> INCORPORATE or REVISE. Continued absence after two cycles WITH the in-house test run — inspect the next artifact citing a connector count for reappearance of the uncaveated fallback figure — -> the composite is a candidate original contribution.
+  Monitoring cadence: Weekly
+  Priority: High (novelty-driven; item was queued Medium)
+  next_check: 2026-07-28
+  Cycle: 0
+  Citation struck at intake: the RSOS 2023 identifier (doi 10.1098/rsos.230604) given in the item's search targets could not be verified by either searcher and is removed from the evidence base.
+  Coupled to: PREMISE-105 (definitional breaks in reported counts); REVISE-234, from which the item was extracted.
+  Full results: lit_search_results/for/ASSUMPTION-484_for.md ; lit_search_results/against/ASSUMPTION-484_against.md
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-484
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from REVISE-234
+      15a: Searched for supporting literature; PARTIALLY-SUPPORTED (Moderate recommendation / Weak mechanism) with NOVELTY-FLAG
+      15b: Searched for challenging literature; PARTIALLY-CHALLENGED (Weak)
+      15c: Net evaluation and disposition; MONITOR at HIGH priority on the novelty flag; unverified citation struck
+    Current status: MONITORING (NOVEL on the abstention mechanism)
+    Disposition record: DISPOSITION-ASSUMPTION-484 (lit_search_returns.md, 2026-07-21)
+
+MONITOR-460:
+  Date entered: 2026-07-21
+  Source item: ASSUMPTION-488
+  Item type: ASSUMPTION (stated)
+  Statement: The morning status asserted OpenStory alive and the metabolism snapshot regenerated on schedule, on a day the metabolism run exited 1 with the db 14.6 days stale. Second consecutive occurrence; occurred on the day PREMISE-109 was validated.
+  Net assessment: One of two items this run meeting the protocol's SUPPORTED + NO-CHALLENGE-FOUND row. 15b searched disconfirmatorily and found nothing against the observation: every retrieved source treats recurrence after a recorded diagnosis as a serious signal, and the CAPA literature names the exact cycle — investigation completed, effectiveness criterion never defined, failure recurs, record documents the cycle — as the most common way correction programmes fail. Audit and feedback (Ivers et al., Cochrane CD000259.pub3, PMID 22696318) yields a median 4.3% absolute improvement, on which recurrence after a correct recorded diagnosis is the EXPECTED outcome rather than an anomaly. Both agents independently flag the same evidential limit: "second consecutive occurrence" is n=2 and establishes only that the first was not a one-off; the general claim belongs to PRESUMPTION-506 (now PREMISE-116).
+  Why INCORPORATE was declined despite the SUPPORTED + NO-CHALLENGE row — stated per the fail-loud convention: (i) 15a explicitly flagged that this item's evidence base is substantially the same as PRESUMPTION-506's and warned against treating them as independent confirmations; 506 is incorporated as PREMISE-116, and incorporating 488 as well would count one finding as two premises, which is the volume-over-value failure PRESUMPTION-509 names in this same batch. (ii) The item's contribution BEYOND 506 is the zero-latency recurrence, which is the NOVELTY-FLAG and is unestablished.
+  NOVELTY (priority driver): 15a raised a NOVELTY-FLAG on zero-latency recurrence. Every retrieved framework assumes a latency window — CAPA 6-12 months, audit cycles ~60 days — and same-morning recurrence has no precedent in the retrieved literature. Recurrence LATENCY may itself discriminate a weak fix from an ABSENT fix path, which would be a new instrument rather than a new finding.
+  What would change the disposition: Convert n=2 to a rate via the item's own read-set enumeration (measurement 1 of 5, under an hour). A recurrence rate at or near 100% with zero latency across a larger sample -> INCORPORATE as distinct from PREMISE-116. A rate consistent with the pre-registered 4-8% audit-and-feedback prior written into PREMISE-116 -> the phenomenon IS 506, not a separate finding, and this item closes.
+  Monitoring cadence: Weekly
+  Priority: High (novelty-driven; item was queued HIGH)
+  next_check: 2026-07-28
+  Cycle: 0
+  Coupled to: PREMISE-116 (PRESUMPTION-506) — evidence-shared, must not be counted as independent corroboration of it. PREMISE-109, whose validation day the recurrence fell on. REVISE-239 (missing effectiveness check, the mechanism this item instantiates).
+  Full results: lit_search_results/for/ASSUMPTION-488_for.md ; lit_search_results/against/ASSUMPTION-488_against.md
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-488
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-20 morning project status transcript, cross-checked against two same-day failure transcripts
+      15a: Searched for supporting literature; SUPPORTED (Moderate-to-Strong) with NOVELTY-FLAG on zero-latency recurrence
+      15b: Searched for challenging literature; NO-CHALLENGE-FOUND (None against the claim; Weak against the n=2 inference)
+      15c: Net evaluation and disposition; INCORPORATE declined on evidence-overlap grounds with reasons stated; MONITOR at HIGH priority on the novelty flag
+    Current status: MONITORING (NOVEL on zero-latency recurrence)
+    Disposition record: DISPOSITION-ASSUMPTION-488 (lit_search_returns.md, 2026-07-21)
+
+MONITOR-461:
+  Date entered: 2026-07-21
+  Source item: PRESUMPTION-509
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: More validated premises is presumed to be better. The INCORPORATE count is treated as the pipeline's health metric on the same day PREMISE-105 validated that artifact-volume counts are Goodhart-vulnerable proxies — a premise not applied reflexively.
+  Net assessment: The reflexivity catch is fair and uncontradicted in both directions, and the supporting literature is unusually mature — not merely findings but formal declarations adopted because volume-for-value substitution had measurable consequences at scale (DORA 2012; Hicks, Wouters, Waltman, de Rijcke & Rafols 2015, "Bibliometrics: The Leiden Manifesto for research metrics," Nature 520:429-431, whose first principle is the rule the item says was violated). 15b's challenge is narrow and decisive on the INFERENCE rather than the observation: every variant of Goodhart's law requires optimisation pressure — a metric degrades when it becomes a TARGET — and whether this pipeline faces an incentive gradient on the INCORPORATE count is unestablished. Without one the count may be merely uninformative rather than corrupting, which is a different and much cheaper problem. A benign regime is formally characterised (arXiv:2505.23445), and DORA and Leiden decline to ban metrics, prescribing a small panel of proxies with an aggregation rule instead.
+  Why not REVISE: acting on this now would license removing the pipeline's only quantitative health signal and replacing it with nothing, which is the McNamara failure ASSUMPTION-485 argues against in this same batch (now PREMISE-112). 15c declines to adopt two premises that pull against each other in one run. PREMISE-112's expiry clause is the constraint that keeps 485 from licensing indefinite retention of a defective proxy; this monitor is the constraint in the other direction.
+  What would change the disposition: (1) Run the item's own test, which both agents judged sharper than anything DORA or Leiden offer and which is worth running regardless of the Goodhart question: define a bad pipeline day IN ADVANCE, then classify the last 30 days. If no day classifies as bad, the metric is non-discriminating and the item resolves without reference to Goodhart. (2) Evidence of an incentive gradient — any artifact treating a higher INCORPORATE count as better performance -> INCORPORATE. Documented absence of one -> close as benign-regime.
+  Monitoring cadence: Weekly
+  Priority: Medium (15b's point that the un-targeted case is the cheaper problem)
+  next_check: 2026-07-28
+  Cycle: 0
+  Self-reference recorded at intake, per the fail-loud convention: the run that dispositioned this item produced 11 INCORPOREs, the largest count in the register's history. 15c states its rule rather than the number — each incorporation is defended separately in the disposition record, three items a volume test would have passed were declined or held (ASSUMPTION-488 on evidence overlap, ASSUMPTION-482 and ASSUMPTION-484 on unsettled questions), and eight of the eleven premises are narrower than the item that produced them. Whether that is a rule or a rationalisation is exactly what this monitor's test would settle.
+  Coupled to: PREMISE-105 (the Goodhart finding this item says was not applied reflexively); PREMISE-112 (ASSUMPTION-485), which it constrains and is constrained by; PREMISE-119 and PREMISE-121, which 15a notes route the responsible-metrics remedy into an already-saturated channel.
+  Full results: lit_search_results/for/PRESUMPTION-509_for.md ; lit_search_results/against/PRESUMPTION-509_against.md
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-509
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the day's outbound self-characterisation read against PREMISE-105, validated in the same batch
+      15a: Searched for supporting literature; SUPPORTED (Strong)
+      15b: Searched for challenging literature; PARTIALLY-CHALLENGED (Weak-to-Moderate — Goodhart requires optimisation pressure, unestablished here)
+      15c: Net evaluation and disposition; MONITOR pending the optimisation-pressure question; REVISE declined to avoid the McNamara failure ASSUMPTION-485 names
+    Current status: MONITORING (mechanism unestablished)
+    Disposition record: DISPOSITION-PRESUMPTION-509 (lit_search_returns.md, 2026-07-21)
+
+MONITOR-462:
+  Date entered: 2026-07-21
+  Source item: PRESUMPTION-513
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: The "highest-leverage hour" recommendation presumes the obstacle is knowing which measurements to take. Fifteen days of identified, cheap, unexecuted actions is evidence the constraint is attention or authority, not enumeration. Directly contests ASSUMPTION-482 (MONITOR-458).
+  Net assessment: The presumption the item surfaces is the founding observation of an entire discipline — knowing what to do does not produce doing it — and it persists independently across health care and conservation (PMC6899530; doi:10.1186/s43058-025-00831-9; "Knowing but not doing: Quantifying the research-implementation gap in conservation paleobiology," Front. Ecol. Evol. 11:1058992). Where researchers have looked for what the gap consists of, the answer is capacity, coordination authority and usable translation, which is 513's alternative diagnosis; Theory of Constraints points the same way, and internal audit built mandatory follow-up machinery because correct recommendations do not execute themselves. Both searchers agree 513 stands on stronger ground than 482. 15b's challenge is to its OVER-COMMITMENT and is well made: "attention or authority, NOT enumeration" imposes an exclusive disjunction the implementation-science literature does not recognise — information and capacity are described as jointly necessary — the item asserts its own attention mechanism at exactly the evidentiary standard it denies 482, and it overstates its falsifier, since a single execution in fifteen days is consistent with a severe attention constraint that occasionally admits an item.
+  Why not INCORPORATE despite the literature's lean: deciding for 513 on the lean would be adopting the stronger-sounding half of a dichotomy that the same literature refuses. The exclusive disjunction is explicitly NOT carried into this entry.
+  What would change the disposition: See MONITOR-458 — one experiment, three outcomes, both items disposed. PRE-REGISTER the ratio threshold (cheap actions identified : executed, over 30 days) BEFORE running it; without a threshold stated in advance the fifteen-day record can be read either way after the fact, which is SYSTEMIC-RISK-FLAG-C in miniature.
+  Monitoring cadence: Weekly
+  Priority: Medium-High
+  next_check: 2026-07-28
+  Cycle: 0
+  Coupled to: MONITOR-458 (ASSUMPTION-482) — one experiment dispositions both; they must not be re-evaluated separately. PREMISE-107 (which the item cites via Theory of Constraints); REVISE-239.
+  Note recorded at intake: 15b names a third possibility neither item admits — the constraint may be a missing effectiveness-check step, which has a different and cheaper fix and is routed as REVISE-239.
+  Full results: lit_search_results/for/PRESUMPTION-513_for.md ; lit_search_results/against/PRESUMPTION-513_against.md
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a, 15b -> 15c]
+    Original item: PRESUMPTION-513
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the framing of the day's leverage recommendation read against the 15-day record of unexecuted cheap actions and against PREMISE-107's discriminating-test rule
+      15a: Searched for supporting literature; SUPPORTED (Moderate-to-Strong)
+      15b: Searched for challenging literature; PARTIALLY-CHALLENGED (Moderate — exclusive disjunction rejected; falsifier overstated)
+      15c: Net evaluation and disposition; MONITOR, paired with ASSUMPTION-482 and not collapsed; exclusive disjunction excluded
+    Current status: MONITORING (CONTESTED against its paired item)
+    Disposition record: DISPOSITION-PRESUMPTION-513 (lit_search_returns.md, 2026-07-21)
+
+**Intake summary (2026-07-21):** 5 items entered MONITOR (MONITOR-458..462) from the 2026-07-20 EOD batch of 18. Cadence Weekly, Cycle 0, first 15d check 2026-07-28 for all five. Priorities: High (459, 460 — both novelty-driven per the 15c spec heuristic), Medium-High (458, 462), Medium (461). MONITOR-458 and MONITOR-462 are a contested PAIR and are settled by ONE experiment, not two — 15d must not re-evaluate them separately. Of the five, three (458, 461, 462) are blocked on a test that must be PRE-REGISTERED before it is run, per SYSTEMIC-RISK-FLAG-C / REVISE-239; running them without a stated threshold produces a result readable either way. **Standing caution, 8th consecutive surfacing:** these five enter a queue whose consumption has been near zero for nineteen days, whose instability is a validated premise (PREMISE-106), and whose coupling to production is now also validated (PREMISE-119). Per PREMISE-116, validated in the same run, entering them here is not evidence they will be re-evaluated — that is the claim PREMISE-116 exists to deny.

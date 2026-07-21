@@ -1,0 +1,40 @@
+SEARCH-AGAINST-PRESUMPTION-504:
+  Date searched: 2026-07-20
+  Original item: PRESUMPTION-504
+  Original statement: [inferred] A stated constraint is presumed to remain a constraint after routine open violation with no consequence and no revision. The fail-loud rule has become the mechanism by which breach is normalized: the rule is satisfied by confessing to breaking it.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b]
+    Original item: PRESUMPTION-504
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three same-day budget breaches including this pipeline's own
+      15b: Searched for challenging literature (limits and hindsight-bias critiques of normalization of deviance, boundary conditions on Vaughan's mechanism, budget/quota design)
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. "Normalization of deviance" (Grokipedia, retrieved 2026-07-20), summarising the critical literature: organizational investigations "apply the framework broadly to procedural shortcuts, yet empirical reviews highlight its preliminary status and the need for primary data to validate such attributions, cautioning against generalized use without context-specific validation."
+    2. Same source, on hindsight bias: "post-event analyses may deem prior deviations as deviant only because outcome knowledge reframes them as foreseeably risky, obscuring the local rationality that sustained operations beforehand," and investigators "equipped with failure's clarity — may overpathologize routine practices that succeeded repeatedly under uncertainty." A direct methodological objection to the item's inference.
+    3. Banja, J., "When Doing Wrong Feels So Right: Normalization of Deviance," *Journal of Healthcare Risk Management* (PubMed 25742063). Vaughan's mechanism requires deviation becoming **unremarkable** — accepted without comment as the new normal. Here every breach was announced under the fail-loud rule, which is the negation of the mechanism's precondition. (Note: this is the same boundary-condition objection this vault recorded against PRESUMPTION-495 on 2026-07-19 — repetition-without-signalling. It recurs because the pipeline keeps invoking a mechanism whose precondition its own practices remove.)
+    4. Dekker via the same critical summary: the recommended discipline is to "zoom out from the people closest in time and place to the mishap" and resist counterfactual reasoning and judgmental language — which is an argument against the item's framing of the fail-loud rule as a device for laundering breach.
+
+  Strength of challenge: Moderate
+
+  Summary: The observed pattern is real — a stated budget was exceeded repeatedly, the breaches were announced, nothing changed, and no revision followed. What is challenged is the interpretation. Vaughan's mechanism is deviance becoming unremarkable, and its precondition is that the deviation stops being signalled; here every breach was announced loudly and specifically, which is the opposite condition, and the same objection was recorded against PRESUMPTION-495 five days earlier. The critical literature on normalization of deviance further warns that the framework is over-applied to ordinary procedural shortcuts, that empirical reviews rate its evidentiary status preliminary, and that hindsight bias leads investigators to reclassify practices as deviant only after outcome knowledge — the exact posture of an end-of-day pipeline reviewing its own day. There is a simpler and equally supported reading available: a budget that is exceeded on every run by a pipeline whose specified scope demands roughly six times that budget is an incorrectly-calibrated budget, not a decaying norm, and ASSUMPTION-478 says so explicitly in the same batch. On that reading the fail-loud reports are functioning exactly as designed — surfacing a mis-set parameter — and the failure is that no component has authority to revise the parameter, which is a governance gap rather than a normalization process.
+
+  Specific risks: Misattributing a calibration problem to norm decay directs the remedy at the wrong layer. The item's implied fix — a hard stop against a logged overrun — would terminate runs mid-item on a budget that the same batch argues is a sixth of what the scope requires, producing truncated searches and partial records while leaving the calibration untouched. The second risk is reflexive: an agent that pathologises its own repeated announcements may respond by announcing less, which removes the only signal currently working.
+
+  Mitigations available: Separate the two questions. Ask first whether the budget is correctly set (ASSUMPTION-478's measurement answers this); only if it is correctly set does repeated breach indicate norm decay. Test the mechanism's precondition directly: check whether the *announcements* have become perfunctory or have disappeared over time — declining signal is the diagnostic for Vaughan's mechanism, and steady loud signal is evidence against it. Where a rule is breached routinely and the breach is defensible, revise the rule rather than adding enforcement; an unrevised rule that everyone breaches is a documentation defect. Route the revision authority question explicitly: the pipeline cannot revise its own budget, which is the actual finding.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+STEELMAN:
+  Item: PRESUMPTION-504
+  Strongest counterargument: The item reaches for Vaughan and lands on a mechanism whose defining precondition its own evidence excludes. Normalization of deviance is the process by which a deviation stops being remarked on and becomes the unexamined new normal; every breach in this record was announced, named, and filed, which is signalling rather than silence — and this pipeline recorded the same boundary-condition objection against PRESUMPTION-495 five days ago, so the framework is now being applied twice against its own stated conditions. The critical literature adds two further cautions that fit this case unusually well: the framework is routinely over-applied to ordinary procedural shortcuts on preliminary evidence, and hindsight bias leads reviewers with outcome knowledge to reclassify as deviant the practices that local rationality sustained — which is a precise description of an end-of-day agent auditing its own day's runs. Meanwhile a plainer explanation sits in the same batch: ASSUMPTION-478 states that the budget is inconsistent with the specified scope by a factor of six. A constraint that is violated on every execution by a system whose assigned work requires six times the allowance is a mis-set parameter. Read that way, the fail-loud reports are not laundering the breach; they are correctly and repeatedly surfacing a calibration error to a layer that has no authority to fix it, and the item has converted a governance gap into a moral decay narrative. That matters because the two have opposite remedies — one revises the number, the other adds an enforcement mechanism that would truncate runs against a number already known to be wrong.
+  What would need to be true for C2A2 to be safe: The budget would have to be correctly calibrated to the specified scope. Only then does routine breach indicate a decaying norm rather than a wrong parameter. ASSUMPTION-478 asserts the opposite.
+  How to test: Two cheap checks. First, plot the fail-loud announcements over 30 days and measure whether they are getting shorter, later, or absent — Vaughan's mechanism predicts declining signal, and steady or increasing signal falsifies it. Second, measure the token cost of one full-coverage run and compare it against the budget; if the ratio is near six, the constraint is mis-set and the correct action is revision, not enforcement. Only if the announcements are decaying *and* the budget is correctly sized does the presumption hold as stated.
+
+  Search scope: Preliminary — two targeted searches. Budget/quota design for autonomous systems returned nothing directly usable; that sub-target is open.

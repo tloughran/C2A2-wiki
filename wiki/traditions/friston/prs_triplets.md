@@ -285,7 +285,61 @@ PRS-30:
   Evidence: The paper formalizes how attractor networks emerge from the FEP applied to a universal partitioning of random dynamical systems, with orthogonalization arising as a consequence rather than a design choice (arXiv:2505.22749; Neurocomputing 2026).
 
 ---
-*Total PRS triplets: 30*
+PRS-31:
+  Problem: Precision-weighting accounts of perception and psychopathology assign a central role to neuromodulatory receptor systems, but the explanatory gap between cortical microarchitecture (receptor expression) and mesoscopic electrophysiology (the signals we actually record) has been unbridged. Without that bridge, "precision" is a free parameter.
+  Resource: DCM with biophysically informed neural mass models fit to a normative intracranial EEG dataset, using PET/autoradiography-derived receptor-density maps as empirical priors on synaptic connectivity.
+  Solution: Receptor-density variation is shown to explain regional variance in cortical population dynamics, with receptor-informed priors *improving model evidence* — i.e., the microarchitecture-to-signal link is established variationally rather than assumed. Precision acquires a measurable neurochemical substrate.
+  Date Added: 2026-07-21
+  Source: Topographic Variation in Human Neurotransmitter Receptor Densities Explains Differences in Intracranial EEG Sp; PROP-2026-07-13-004
+  Confidence: High
+  Evidence: "Incorporating prior information on receptor distributions further improved model evidence, indicating that variability in receptor density explains some variance in cortical population dynamics."
+
+PRS-32:
+  Problem: DCM studies of electrophysiology have lacked a normative baseline — each study re-estimates synaptic parameters from scratch, so no one can say whether an individual patient's inferred connectivity is anomalous.
+  Resource: A cortical atlas of neurobiologically informed intracortical synaptic connectivity parameters, released as a normative resource.
+  Solution: Individual-difference and patient studies can now be scored against a normative synaptic connectome — the precondition for the "computational psychiatry as deviation from normative precision" program to be run at all.
+  Date Added: 2026-07-21
+  Source: Topographic Variation in Human Neurotransmitter Receptor Densities Explains Differences in Intracranial EEG Sp; PROP-2026-07-13-004
+  Confidence: High
+  Evidence: The paper explicitly frames its output as "a normative resource for future DCM studies of electrophysiology" and "a methodological foundation to integrate multimodal data."
+
+PRS-33:
+  Problem: "Controlled hallucination" (Seth, Clark) implies the world controls the inner model, which misdescribes the perceiver's own causal contribution.
+  Resource: Huygens' coupled clocks and generalized synchrony / synchronization of chaos.
+  Solution: Replace "control" with **entrainment** — a mutual, bidirectional synchronization in which the agent causes its own sensations by choosing what to sample. Friston: "I would replace 'control' with 'entrainment.'"
+  Date Added: 2026-07-21
+  Source: Reality is a creation of consciousness; PROP-2026-07-20-004
+  Confidence: High
+  Evidence: Direct correction offered by Friston in the interview, with the Huygens argument that entrainment is "the only free-energy-minimizing solution" for loosely coupled systems.
+
+PRS-34:
+  Problem: If every Markov-blanketed thing minimizes free energy, the principle is too permissive to distinguish a rock from an agent.
+  Resource: The observation that at intermediate scales an agent's *action* becomes a cause of its own sensations, so the generative model must infer its own actions.
+  Solution: A demarcation criterion — **planning** distinguishes true agents from mere free-energy-minimizing things. "Planning would be definitive of the kinds of things that can possibly be called true agents."
+  Date Added: 2026-07-21
+  Source: Reality is a creation of consciousness; PROP-2026-07-20-004
+  Confidence: High
+  Evidence: Friston's explicit scale argument (larger than quantum, smaller than celestial) yielding self-action-inference.
+
+PRS-35:
+  Problem: Why would natural selection tolerate spending 20–40% of life dreaming, sequestered from the world?
+  Resource: The complexity term of variational free energy — accuracy *as simply as possible*.
+  Solution: Dreaming as complexity-minimization: generating fantasy sensoria to test which model parameters are dispensable, implemented as synaptic pruning (with Tononi).
+  Date Added: 2026-07-21
+  Source: Reality is a creation of consciousness; PROP-2026-07-20-004
+  Confidence: Medium
+  Evidence: Friston's flying-elephant answer and the explicit link to synaptic regression.
+
+PRS-36:
+  Problem: Psychiatric nosology lacks a unifying mechanistic account across psychosis, dissociation, and neglect.
+  Resource: Type-1/type-2 error framing of false inference, plus precision-weighting as "action on the inside."
+  Solution: Psychopathology as a **mathematical attention disorder** — a failure to appropriately ignore uninformative prediction errors; hallucination/delusion as type-1, neglect/dissociative symptoms as type-2.
+  Date Added: 2026-07-21
+  Source: Reality is a creation of consciousness; PROP-2026-07-20-004
+  Confidence: High
+  Evidence: The newscaster delusion worked example, where the delusion is described as "completely Bayes-optimal" given unattenuated interoceptive evidence.
+
+*Total PRS triplets: 36*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

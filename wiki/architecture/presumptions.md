@@ -10138,3 +10138,163 @@ PRESUMPTION-505:
     Transform at each step:
       14b: Inferred by generalizing 15d's locally stated staleness-detector result across the same day's scheduler-watchdog, connector-enumeration and census cases; checked against 14a's ASSUMPTION-476, which records the local statement, and against ASSUMPTION-472 from 07-18 to confirm the general form had not previously been surfaced. [inferred, high confidence]
     Current status: UNTESTED
+
+PRESUMPTION-506:
+  Date surfaced: 2026-07-20
+  Statement: [inferred] The self-awareness pipeline presumes that validating a premise changes the behaviour the premise describes. Nothing in the architecture propagates a validated premise back into the agents whose conduct it governs; validation terminates in a registry file, and the registry is read by the pipeline that wrote it.
+  Evidence it was operative: PREMISE-109 was validated on 2026-07-20 -- "a summarizing agent is a view over its own read set, not a view over the system... a health claim not bound to a named artifact with a timestamp is not evidence of health." On the same day, the morning project status run asserted "OpenStory is alive: its telemetry refresh ran this morning and the metabolism snapshot regenerated on schedule" while the metabolism regen run exited 1 with the db 14.6 days stale. The premise was validated and the exact failure it names recurred within hours, in the same agent that produced the 07-19 instance from which the premise was derived. No transcript on either side references the other. The 07-19 remedy -- "no health claim without a named artifact and a freshness bound" -- was recorded as "still unimplemented, second day at the top of the list," which is the pipeline noting the gap without treating it as a defect in its own design. Six INCORPORATEs were logged as a record day on the same day. High-confidence inference.
+  Why it was unstated: too foundational to notice. The pipeline was specified as an epistemic instrument -- extract, search, adjudicate, record -- and its success criteria are stated in those terms (items dispositioned, premises validated). Whether anything downstream reads the output was never made a success criterion, so its absence produces no failing signal.
+  Type: structural / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-488 (today, the recurrence), ASSUMPTION-487 (today, the contradicting artifact), PRESUMPTION-503 -> PREMISE-109, PRESUMPTION-502 -> PREMISE-108 (transmission is not delivery -- this is that premise applied to the pipeline itself), PREMISE-107, PRESUMPTION-510 (today)
+  Testability: testable empirically -- in-house: take the 110 validated premises and, for each, name the agent whose behaviour it governs and search that agent's subsequent output for any change attributable to it. The expected answer is zero, and obtaining it costs one pass. This is the same measurement PREMISE-108 requires for cross-agent flags, applied one level up. Literature: knowledge-to-practice gap and implementation science; guideline adherence without enforcement; the distinction between a finding and an intervention in safety systems.
+  Risk if wrong: Critical -- if this presumption is false the pipeline is fine; if it is true, then 110 validated premises, 236 revision flags and 457 monitor items constitute an elaborate and well-evidenced record that has never altered a single agent's conduct, and the entire self-awareness layer is decorative. Note the asymmetry: this is the one presumption whose falsity is the good outcome, and it can be settled in an hour.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-506
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred by reading the 2026-07-20 PREMISE-109 validation against the same-day morning project status transcript and the metabolism regen failure, then checking decisions.md, assumptions.md and the 14a/14b/15a/15b/15c agent definitions for any specified propagation step and finding none. Distinguished from 14a's ASSUMPTION-488, which records the recurrence but not the architectural gap that permits it. [inferred, high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-507:
+  Date surfaced: 2026-07-20
+  Statement: [inferred] The system presumes that a counting disagreement can remain open indefinitely without invalidating the decisions that depend on it. Counting-authority conflicts are surfaced, flagged, cross-referenced and carried forward as open questions, and the dependent work continues at full rate in the interval.
+  Evidence it was operative: The reviewer-review weekly stated the dependency explicitly -- "the pending tier-calibration decision rests on whichever is right" -- and then filed the disagreement rather than blocking on it. The same day produced a third and fourth reading of the same quantity (QC 5, verification 15, tonight 20). The PRS count has stood at 300-vs-447 since 07-17 with the master narrative advanced under one and the handoff reporting the other. Connector counts are unusable in their fifth week. The evening sync flagged a possible sixth instance and stated it "did not have grounds to decide which view is authoritative." Across all six, no artifact was withdrawn, no dependent decision was suspended, and no arbitration rule was proposed. High-confidence inference.
+  Why it was unstated: culturally embedded. Surfacing a discrepancy is the pipeline's designed output and feels like the completion of a task rather than the start of one. The fail-loud rule specifies reporting and is silent on quarantine, so "flagged" is the terminal state the architecture provides.
+  Type: epistemic / methodological
+  Related decisions: none (tier calibration is pending and named as blocked)
+  Related items: ASSUMPTION-490 (today), ASSUMPTION-467, PRESUMPTION-501, PREMISE-105, OPEN-112, OPEN-124, OPEN-127, OPEN-130 (today)
+  Testability: testable empirically -- in-house: list every open count discrepancy with its date of first flag and every artifact or decision downstream of it, and measure how many downstream artifacts were produced after the flag. Literature: data-quality quarantine practice; provenance-based invalidation and lineage-driven recomputation; official-statistics practice on publishing under an unresolved definitional break.
+  Risk if wrong: High -- if this presumption is false, then the six standing count disputes have been silently propagating into every artifact built on them since first flag, and PREMISE-105's break-in-series problem applies not to one series but to the vault's whole quantitative record.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-507
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred by collecting the day's three Summa count disagreements alongside the four standing ones and asking what must be presumed for the dependent work to continue unchanged; checked against 14a's ASSUMPTION-490, which records the disagreements but not the continuation. [inferred, high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-508:
+  Date surfaced: 2026-07-20
+  Statement: [inferred] The pipeline presumes that naming a defect in an instrument licenses continued use of that instrument for the current run. 15c retrieved and recorded a source stating that an LLM judge over correlated LLM inputs can make the aggregate WORSE than either input, noted that this "bears directly on this agent," and then dispositioned fourteen items as that judge, including the item the source concerns.
+  Evidence it was operative: REVISE-233 records arXiv:2606.10296 in the adjudication of ASSUMPTION-477 and states of it "a claim that bears directly on this agent." The same block states that the adjudication "inherits a correlation channel it is describing." The disposition run continued to completion and its six INCORPORATEs were entered as validated premises with no quarantine, no confidence discount, and no re-run flag. The pattern recurs in miniature the same day: the Summa verification agent discovered its guardrail detector was defective, corrected it, and reported the corrected count without re-auditing the other detectors it had not tested. In both cases the self-knowledge was produced, recorded and then not applied to the run producing it. Moderate-to-high confidence inference -- the alternative reading, that continuing was the correct call because stopping mid-run costs more, is defensible but was never stated as a reason.
+  Why it was unstated: obvious to participants in the moment -- the run was already in progress and the alternative (halt, quarantine, re-derive) has an evident cost, so continuing needed no justification. There is also no state in the workflow for "produced under a known-defective instrument," so the output has nowhere to go except into the registry at full weight.
+  Type: methodological / epistemic
+  Related decisions: none
+  Related items: ASSUMPTION-483 (today), ASSUMPTION-489 (today), REVISE-233, REVISE-236 (REMEDY-INHERITS-DEFECT), PREMISE-107, PRESUMPTION-506 (today)
+  Testability: testable empirically -- in-house: run 15a and 15b on the same item under full read-blocking and measure source-citation overlap; high overlap sizes the correlation channel directly and tells you what the 07-20 dispositions are worth. Add a status value for items produced under a self-flagged instrument and see whether any existing item would take it. Literature: arXiv:2606.10296; LLM-as-judge reliability under correlated inputs; instrument-qualification practice in metrology (results produced on an out-of-calibration instrument are conventionally quarantined, not discounted).
+  Risk if wrong: High -- if the correlation is material, the six premises validated today and every disposition since the pipeline's start are of unknown quality, and the record's most confident-looking layer is its least examined. If the correlation is immaterial, the cost of having checked is one hour.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-508
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 15c's own REVISE-233 text read against the completeness of the 07-20 disposition run; corroborated by the parallel Summa detector case. Distinguished from 14a's ASSUMPTION-483, which records 15c's adjudication and its relabel recommendation but not the continuation question. [inferred, moderate-to-high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-509:
+  Date surfaced: 2026-07-20
+  Statement: [inferred] The pipeline presumes that more validated premises is better -- that the count of INCORPORATEs measures the health of the self-awareness layer. This is a normative commitment embedded in a metric, and it was made on the same day the pipeline validated that artifact-volume counts are Goodhart-vulnerable proxies for the thing they stand in for.
+  Evidence it was operative: The day was characterised in the outbound summary as "the pipeline's second record day in a row" and "the best one the pipeline has had," with six INCORPORATEs "matching yesterday's record" and "twelve validated premises in two days, against a prior best of six." PREMISE-105, validated in that same batch, states that "an artifact-volume count is not a measure of knowledge-graph health; it is a proxy subject to Goodhart's law," and adds that the literature's own remedy is a panel with no single member targeted. The premise was applied to the vault census and to connectivity; it was not applied to the premise count itself, which is directly writable by the agent reporting it. No transcript asks what a bad day would look like, or whether a day with zero INCORPORATEs and one correct refusal is better than six. Moderate-to-high confidence inference.
+  Why it was unstated: too foundational to notice. Production counts are the only quantity the pipeline can compute about itself, and a metric that is available tends to become the metric that is meant.
+  Type: normative
+  Related decisions: none
+  Related items: ASSUMPTION-474 -> PREMISE-105, ASSUMPTION-485 (today, the same problem at the accelerator's target function), PRESUMPTION-500, REVISE-235, PRESUMPTION-506 (today)
+  Testability: testable via literature and empirically -- in-house: define what a bad pipeline day looks like in advance, then classify the last thirty days against it; if no day classifies as bad, the metric is not discriminating. Literature: Goodhart's law and proxy substitution in evaluation regimes; volume-versus-value metrics in research assessment (DORA, Leiden Manifesto); the diversity-prediction argument applied to a single-author metric.
+  Risk if wrong: Medium -- the pipeline's output is high quality on inspection, so the metric may be tracking the right thing by accident. But if it is wrong, the layer built to detect unexamined success criteria is being steered by one.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-509
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred by reading the day's own outbound characterisation against PREMISE-105, validated in the same batch, and checking whether the Goodhart argument was applied reflexively. It was not. [inferred, moderate-to-high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-510:
+  Date surfaced: 2026-07-20
+  Statement: [inferred] The architecture presumes that production and judgment are independently schedulable -- that the registries can absorb unbounded unreviewed output without the output losing meaning. There is no admission control on the system's own production, no state for "produced and unreviewable," and no back-pressure from the review channel to the agents feeding it.
+  Evidence it was operative: Fifteen consecutive days with no decision recorded; DECISION-076/077/078 from 07-05 remain the latest. 32 proposals pending against a 20-day review gap and a last review pass of 06-30. Roughly 30 REVISE flags pooled for an absent reviewer. Today the pipeline routed four more items into the REVISE channel in the same run in which it validated PREMISE-106 -- that a queue whose arrival exceeds its service grows without bound and that admission control is an available lever. The lever was named for the lit queue and not applied to the review channel, which has an arrival rate of roughly four per day and a measured service rate of zero. Every agent continued at full rate. High-confidence inference.
+  Why it was unstated: obvious to participants, in the sense that each agent's spec defines its own output and none defines a condition under which it should produce less. Back-pressure requires a component that can see both sides, and no agent occupies that position -- the master agent indexes, it does not throttle.
+  Type: structural / scaling
+  Related decisions: DECISION-076, DECISION-077, DECISION-078 (07-05, the last recorded)
+  Related items: ASSUMPTION-478 -> PREMISE-106, PRESUMPTION-480 (perishability), PRESUMPTION-487 (absent-human push), PRESUMPTION-493, PRESUMPTION-512 (today), REVISE-236
+  Testability: testable empirically -- in-house: apply PREMISE-106's own arithmetic to the review channel, taking arrival as items routed to Tom per day and service as decisions recorded per day, and state the resulting backlog trajectory; then test whether an admission cap (e.g. one HIGH-urgency item per day, remainder held) changes the decision rate. Literature: PREMISE-106's queueing results applied to a human-in-the-loop service stage; work-in-progress limits and back-pressure in Kanban and TCP; batch-size effects on review latency and quality.
+  Risk if wrong: High -- if false, the backlog is harmless and will drain when attention returns. If true, then production at full rate is actively lowering the value of the record, because the reviewer's per-item cost is not constant (PRESUMPTION-512) and an unreviewable backlog is functionally equivalent to no output at all -- which makes fifteen days of excellent work the system's largest single loss.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-510
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred by applying PREMISE-106, validated the same day for the lit queue, to the review channel, and observing that no agent's specification contains a production-limiting condition. Checked assumptions.md and decisions.md for a prior statement of back-pressure; none found. [inferred, high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-511:
+  Date surfaced: 2026-07-20
+  Statement: [inferred] The verification layer presumes that reproducing a prior result independently confirms it. Reproduction by the same code over the same corpus confirms determinism, not correctness, and a systematic defect reproduces exactly as reliably as a correct measurement does.
+  Evidence it was operative: The Summa nightly verification reported length figures "exactly reproducing yesterday's corrected figures independently," offering the reproduction as evidence of the figures' soundness. The same run had just established that its own guardrail detector had been producing false positives consistently across passes -- a defect that had reproduced perfectly until someone inspected the detector rather than the output. The reviewer-review weekly the same week records two further defects of this kind (a 65-file frontmatter-extraction defect that withdrew 16 phantom violations, and QC ratios computed against a hardcoded wrong denominator), both found by inspection, neither by disagreement between passes. Where passes DID disagree -- 20 vs 15 tier mismatches -- the disagreement was the thing that surfaced a real question. Moderate confidence inference: the word "independently" is doing work the run did not examine, though it is possible the run meant only "without consulting yesterday's file," which would be a weaker and defensible claim.
+  Why it was unstated: culturally embedded. Reproducibility is a strong and correct norm in the empirical traditions this project draws on, and the condition under which it carries evidential weight -- independence of method, not merely of occasion -- is usually satisfied without being checked, so it drops out of the concept in use.
+  Type: epistemic / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-489 (today), ASSUMPTION-490 (today), PRESUMPTION-505 -> PREMISE-110, PRESUMPTION-503 -> PREMISE-109, PRESUMPTION-508 (today)
+  Testability: testable empirically -- in-house: for each verification figure, ask whether a second method exists that would produce it; where none does, label the figure single-method and stop calling repeat runs confirmation. Then measure how many of the corpus's standing figures are single-method. Literature: reproducibility versus replicability (NASEM 2019 definitions); method-independence as a precondition for triangulation; correlated-error arguments -- note this is the identical structural point 15c made about 15a/15b in REVISE-233, arising independently in a different subsystem.
+  Risk if wrong: Medium -- the specific figures may well be correct. The cost is that the verification layer's confidence is not calibrated to its evidence, and it is the layer the corpus relies on to catch exactly this class of error.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-511
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the 2026-07-20 Summa nightly verification's use of "independently," read against the same run's detector-bug disclosure and the week's two further self-caught measurement defects. Distinguished from 14a's ASSUMPTION-489, which records the detector bug but not the inference from reproduction. [inferred, moderate confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-512:
+  Date surfaced: 2026-07-20
+  Statement: [inferred] Every remedy routed to Tom presumes that his per-item review cost is constant and that his capacity scales with the system's production. No agent has estimated what a full review pass would now cost in hours, and the recommendations are written as though the marginal item were the only item.
+  Evidence it was operative: Today alone routed four REVISE items (one at HIGH urgency, with a seven-step recommended action), five MONITOR items due 07-27, and a "highest-leverage hour" recommendation comprising five distinct measurements. Standing: 32 proposals, ~30 REVISE flags, 17 items 15d re-triggered on 07-19, a Stump repoint blocked pending a call, and a connector reauthorization list. REVISE-235's recommended action alone runs to seven numbered steps including a mandatory pre-dialogue baseline. Each item is individually cheap and correctly argued; no artifact anywhere sums them. The outbound summary asks Tom to decide on one hour of measurement while carrying seven further items under "carried, unchanged." High-confidence inference.
+  Why it was unstated: obvious to participants in the wrong direction -- each agent sees its own queue, and per-agent the ask genuinely is small. The sum is visible only from a position no agent occupies, and the fail-loud rule requires reporting each item, which guarantees the aggregate grows while remaining unmeasured.
+  Type: scaling / structural
+  Related decisions: none
+  Related items: PRESUMPTION-510 (today), PRESUMPTION-480, PRESUMPTION-487, PRESUMPTION-493, ASSUMPTION-482 (today), ASSUMPTION-491 (today)
+  Testability: testable empirically -- in-house, and it is one query: sum the open items awaiting Tom across proposals, REVISE flags, MONITOR items, blocked executions and reauthorizations; attach a time estimate to each; report the total in hours. If the total exceeds any plausible weekly allocation, the routing convention is the defect, not the backlog. Literature: cognitive load and decision fatigue in review queues; batch-size and latency effects on reviewer throughput; alert fatigue and the precision threshold below which operators disengage.
+  Risk if wrong: High -- if false, attention will return and the queue will drain. If true, then every additional correctly-argued item lowers the probability that any item is acted on, and the pipeline's diligence is the mechanism of its own irrelevance. This is PRESUMPTION-510 seen from the human's side, and the two settle together.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-512
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred by summing the day's routed items against the standing backlog and searching the record for any artifact that reports the aggregate ask in time units; none exists. [inferred, high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-513:
+  Date surfaced: 2026-07-20
+  Statement: [inferred] The "highest-leverage hour" recommendation presumes that the obstacle to those five measurements is knowing which ones to take. Fifteen days of accumulated, correctly-identified, individually-cheap actions with none taken is evidence that the binding constraint is attention or authority, not enumeration -- and if so, identifying a sixth cheap action is not leverage.
+  Evidence it was operative: The recommendation is framed as discovery -- "15c named it explicitly," "this is the single most actionable thing in two weeks of output," "the highest-leverage hour available anywhere in the system right now." The same summary records that the 07-19 one-line rule ("no health claim without a named artifact and a freshness bound") is "still unimplemented, second day at the top of the list," and lists seven further items under "carried, unchanged," several of which are also cheap and were also once at the top of a list. The pipeline has diagnosed its own bottleneck as measurement (ASSUMPTION-482) without testing the competing hypothesis that measurement is not being blocked by ignorance. Note that PREMISE-107, validated the same day, is precisely the rule that where two mechanisms present the same symptom, the discriminating test is the operative construct -- and it was not applied here. Moderate-to-high confidence inference.
+  Why it was unstated: too foundational to notice, and structurally invisible: an agent that can identify actions but cannot take them will locate every bottleneck within the space it can act on. Enumeration is what the pipeline does, so enumeration is where its diagnoses land.
+  Type: methodological / structural
+  Related decisions: none
+  Related items: ASSUMPTION-482 (today), ASSUMPTION-479 -> PREMISE-107, PRESUMPTION-510 (today), PRESUMPTION-512 (today), PRESUMPTION-487, PRESUMPTION-493
+  Testability: testable empirically -- in-house, and the test is already running: take the count of cheap actions identified over the last thirty days and the count executed. If the ratio is near zero, enumeration is not the constraint and the pipeline should stop producing recommendations until one is taken. A single executed measurement falsifies this presumption immediately, which makes it the cheapest item in the batch to settle. Literature: the distinction between knowing-what and capacity-to-act in implementation research; recommendation fatigue; Theory of Constraints -- note that identifying a non-binding constraint is the canonical error the theory exists to prevent, and the pipeline cited Theory of Constraints in the same batch (PREMISE-107 supporting evidence).
+  Risk if wrong: Medium -- if false, the hour gets spent and eleven dispositions resolve. If true, the pipeline will continue producing high-quality diagnoses of the wrong bottleneck indefinitely, and each will look like progress.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-513
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the framing of the day's leverage recommendation read against the fifteen-day record of unexecuted cheap actions, and against PREMISE-107's discriminating-test rule which the recommendation itself does not satisfy. Distinguished from 14a's ASSUMPTION-482, which records the stated diagnosis. [inferred, moderate-to-high confidence]
+    Current status: UNTESTED

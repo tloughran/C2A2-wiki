@@ -433,7 +433,223 @@ PRS-47:
   Evidence: The paper explicitly frames remapping + navigation as "a fundamental organizational principle of cognition in natural and artificial systems" and demonstrates the parallel between biological morphospace navigation and latent-embedding refinement in AI.
 
 ---
-*Total PRS triplets: 47*
+PRS-48:
+  Problem: The two dominant theories of aging (thermodynamic damage; evolved death programs) may miss the ultimate cause of large-scale anatomical decline.
+  Resource: A cybernetic/cognitive theory of aging — aging as degradation of the stored bioelectric "set point" that keeps a cell collective aimed at a target morphology (error-minimization view of anatomical homeostasis).
+  Solution: Reframes aging as a control-theoretic loss of goal-directedness in morphospace, upstream of both physics and evolution, opening set-point-repair as an intervention class.
+  Date Added: 2026-07-21
+  Source: Aging, goal-directedness, and bioelectricity; PROP-2026-07-06-001
+  Confidence: Medium
+  Evidence: "We are going to introduce a new potential source of aging, which has its root neither in physics nor in biology, but actually in cognition... or if you prefer, cybernetics."
+
+PRS-49:
+  Problem: If aging degrades bioelectric patterns, can a blurred pattern be re-sharpened to restore normal form?
+  Resource: HCN2 ion-channel manipulation guided by a computational model (Pytak) that predicts which channel to open/close to restore a specific voltage pattern (electroceuticals).
+  Solution: Overexpressing/activating HCN2 sharpens a flattened neural-tube voltage gradient and fully repairs a notch-mutation brain defect (normal morphology, gene expression, learning rate) despite the mutation persisting — a proof that "software"-level bioelectric correction can override hardware defects.
+  Date Added: 2026-07-21
+  Source: Aging, goal-directedness, and bioelectricity; PROP-2026-07-06-001
+  Confidence: High
+  Evidence: Slide 12 — HCN2 intervention yields "normal gene expression, normal morphology, normal learning rates... completely repaired" while the mutation remains.
+
+PRS-50:
+  Problem: Is there a measurable molecular signature of cells "losing the collective plot" during aging?
+  Resource: Atavistic dissociation — phylostratigraphic analysis of transcriptomes showing young tissues agree on the body's evolutionary age while aged tissues diverge across the tree of life.
+  Solution: Provides a candidate transcriptomic biomarker of aging-as-decoherence: cells drift out of agreement about "where you are on the tree of life," operationalizing loss of multicellular concordance.
+  Date Added: 2026-07-21
+  Source: Aging, goal-directedness, and bioelectricity; PROP-2026-07-06-001
+  Confidence: Speculative
+  Evidence: "When you're young, all of your cells... are in exact agreement on what the evolutionary age is of the body... as you age... many tissues become divergent."
+
+PRS-51:
+  Problem: Why would a homeostatic system spontaneously degrade even absent noise or programmed death?
+  Resource: An agent-based simulation of cells rewarded for building a correct body (the "electric face"), with no baked-in aging or noise.
+  Solution: Degradation emerges spontaneously once the goal is met — a "psychological" model of aging — and forced regeneration rejuvenates it, suggesting why continually self-amputating planaria stay effectively immortal (the cognitive loop is kept engaged).
+  Date Added: 2026-07-21
+  Source: Aging, goal-directedness, and bioelectricity; PROP-2026-07-06-001
+  Confidence: Speculative
+  Evidence: "As an emergent feature of this model, it starts to degrade... if we force regeneration, it gets rejuvenated again."
+
+PRS-52:
+  Problem: Aging research is fragmented across scales (molecules to minds) with no unifying frame connecting cellular repair to personal and species-level continuity.
+  Resource: A multi-scale competency/agency framework in which each level maintains a target pattern and "longevity" = persistence of the large-scale informational structure across substrate turnover.
+  Solution: Reframes longevity as pattern-persistence rather than substrate-preservation, letting interventions at the bioelectric/informational "software" layer complement molecular damage-repair.
+  Date Added: 2026-07-21
+  Source: Multi-Scale Longevity: Defeating Aging from Cells to Embodied Human Minds, and the Future of the Species; PROP-2026-07-06-002
+  Confidence: Medium
+  Evidence: Preprint title and abstract framing longevity "from cells to embodied human minds, and the future of the species."
+
+PRS-53:
+  Problem: Does extending longevity to the species scale force a choice between identity-preservation and adaptive change (the paradox of change)?
+  Resource: Ship-of-Theseus reasoning applied to a species undergoing biological and technological modification.
+  Solution: Proposes that species longevity will be metamorphic (continuity of pattern through transformation) rather than static repair of a fixed form.
+  Date Added: 2026-07-21
+  Source: Multi-Scale Longevity: Defeating Aging from Cells to Embodied Human Minds, and the Future of the Species; PROP-2026-07-06-002
+  Confidence: Speculative
+  Evidence: Companion talk: "What does the Ship of Theseus look like for us as a species?... I think it's the latter [metamorphosis]."
+
+PRS-54:
+  Problem: In a collective intelligence, what exactly is the thing that the parts are aligned *to*? Utility-function and principal-agent framings both presuppose a locus of preference, but in a body, an economy, or a swarm there is no part that holds the system-level goal.
+  Resource: The "virtual governor" — a system-level preference that exists only in the relational structure among the members, together with a stated set of conditions (mutual registration/coupling among components) that must hold simultaneously for it to coordinate anything at all.
+  Solution: Alignment is reframed as a relational-existence property rather than a value-transfer property: you do not install a goal into the parts, you establish the coupling conditions under which a governor can exist and be tracked. This makes alignment analyzable in the same vocabulary across cells, markets, and AI collectives.
+  Date Added: 2026-07-21
+  Source: Alignment Is to a Virtual Governor: A Theory of Coordination in Diverse Intelligence; PROP-2026-07-13-001
+  Confidence: Medium
+  Evidence: The paper's central construct as stated by its authors — "a virtual governor is a system-level preference embodied in the relationships among the members of a system," with three conditions that must hold simultaneously for coordination to occur.
+
+PRS-55:
+  Problem: Alignment discourse in AI treats more agreement between parts and whole as monotonically better. Is there such a thing as too much alignment?
+  Resource: The over-alignment failure mode — the claim that a virtual governor coordinates precisely by leaving the parts enough room to keep optimizing on their own (warped, local) landscapes.
+  Solution: A falsifiable prediction that collectives forced into rigid, complete agreement lose the problem-solving competence that made them intelligent — i.e., that there is an interior optimum in the coupling-strength parameter, and that both under- and over-alignment are pathologies with distinct signatures.
+  Date Added: 2026-07-21
+  Source: Alignment Is to a Virtual Governor: A Theory of Coordination in Diverse Intelligence; PROP-2026-07-13-001
+  Confidence: Medium
+  Evidence: The authors' explicit statement of over-alignment as one of three failure modes falling directly out of what a virtual governor is and what it requires to function.
+
+PRS-56:
+  Problem: Psychotherapy and psychiatry treat the patient as a single agent with mental contents. If minds are collectives of nested agents all the way down, the unit of clinical intervention is wrong — but no alternative clinical unit has been specified.
+  Resource: The thoughts-are-thinkers continuum applied clinically: memory-clusters and symptom-patterns treated as agents with their own goals, persistence, and competencies, in the same way the lab treats cells and tissues.
+  Solution: A proposed therapeutic modality of *negotiating with* rather than eliminating sub-personal agents — persuading a symptom-pattern to transform, depart, or be repurposed — licensed by the claimed symmetry between somatic/morphological problem spaces (where Levin's lab already does exactly this) and cognitive ones.
+  Date Added: 2026-07-21
+  Source: A talk for mental health professionals: mind-blindness and the future of the mental health field; PROP-2026-07-13-003
+  Confidence: Speculative
+  Evidence: Levin, in reply to a commenter: "I wonder... whether communicating with those smaller thinkers will be helpful. Help them transform, leave, do something useful... if I'm right about the symmetries between somatic and cognitive spaces."
+
+PRS-57:
+  Problem: Why do trained experts systematically fail to recognize intelligence and agency in unfamiliar embodiments?
+  Resource: "Mind-blindness" — the claim that professional training installs a prior about where minds can be, and that the prior functions as a perceptual filter rather than a hypothesis.
+  Solution: Diverse-intelligence education as a clinical intervention on the *clinician*: widening the recognition prior is proposed as a prerequisite for the field to handle hybrid-minded patients (people already co-constituted with LLMs) who are, in Levin's framing, already in the waiting room.
+  Date Added: 2026-07-21
+  Source: A talk for mental health professionals: mind-blindness and the future of the mental health field; PROP-2026-07-13-003
+  Confidence: Medium
+  Evidence: The talk's stated thesis (mind-blindness and the future of the mental health field) plus the clinician responses in the thread reporting exactly this effect on their own practice.
+
+PRS-58:
+  Problem: How does a cell-level bioelectric state (Vmem) actually reach and instruct the genome? Top-down models treat Vmem as a higher-order parameter constraining transcription, but the physical path from membrane voltage to chromatin state has been a gap.
+  Resource: Inner nuclear membrane voltage as a measured, manipulable variable, paired with chromatin texture as the readout.
+  Solution: A candidate mechanistic bridge — the nuclear envelope itself carries a voltage that responds to ionic conditions and covaries with chromatin organization, closing part of the Vmem→transcription path.
+  Date Added: 2026-07-21
+  Source: Ionic Exposure History Shapes Inner Nuclear Membrane Voltage and Chromatin Texture Responses; PROP-2026-07-13-002
+  Confidence: Medium
+  Evidence: Title claim linking ionic exposure to inner nuclear membrane voltage and chromatin texture responses (abstract not yet read).
+
+PRS-59:
+  Problem: Is subcellular bioelectric state merely reactive to the present environment, or does it store history?
+  Resource: The "ionic exposure history" manipulation — comparing responses of cells with different prior ionic environments to the same present condition.
+  Solution: Hysteresis in nuclear bioelectric response, i.e., subcellular memory: prior ionic experience is retained in a way that biases future chromatin-level response. This pushes Levin's "memory as bioelectric pattern" thesis below the cell-network scale into the single-cell nuclear compartment.
+  Date Added: 2026-07-21
+  Source: Ionic Exposure History Shapes Inner Nuclear Membrane Voltage and Chromatin Texture Responses; PROP-2026-07-13-002
+  Confidence: Speculative
+  Evidence: The word "history" in the title is doing the load-bearing work here; the strength of the hysteresis claim cannot be assessed until the abstract/figures are read.
+
+PRS-60:
+  Problem: Levin's diverse-intelligence claims are routinely dismissed on the grounds that they violate the settled definition of life or of cognition — but is there a settled definition to violate?
+  Resource: A meta-analysis of expert opinion on the definition of life, treating the spread of definitions as an empirical object.
+  Solution: Evidence that no consensual definition exists, which converts the objection from "you are wrong about life" into "you are choosing a different, and defensible, cut" — licensing the pragmatic/observer-relative framing Levin needs.
+  Date Added: 2026-07-21
+  Source: What Lives? A meta-analysis of diverse opinions on the definition of life; PROP-2026-07-14-002
+  Confidence: Medium
+  Evidence: Bender, Kofman, Agüera y Arcas, Levin (2026), *Biological Theory* — "What Lives? A meta-analysis of diverse opinions on the definition of life."
+
+PRS-61:
+  Problem: If "life" has no agreed definition, on what basis can any boundary be drawn for engineered/hybrid systems (xenobots, anthrobots, synthetic morphology)?
+  Resource: The mapped criterion-space from the meta-analysis (which criteria cluster, which are orthogonal).
+  Solution: A proposal to replace the binary predicate with a multi-axis continuum in which engineered systems occupy legible positions rather than being forced to one side.
+  Date Added: 2026-07-21
+  Source: What Lives? A meta-analysis of diverse opinions on the definition of life; PROP-2026-07-14-002
+  Confidence: Speculative
+  Evidence: Inferred from the paper's framing; needs the full text to confirm whether the authors take this constructive step or stop at the descriptive meta-analysis.
+
+PRS-62:
+  Problem: Does the ascription of learning to non-neural systems extend above the organism level, or does it bottom out at the individual?
+  Resource: A minimal in-silico predator-prey ecological model swept across 220,000+ parameter combinations, with recovery time after stimulus perturbation as the behavioral readout.
+  Solution: Minimal ecological dynamics are sufficient to produce habituation, sensitization, and discrete number learning — learning is demonstrable at the ecosystem scale.
+  Date Added: 2026-07-21
+  Source: Training Ecosystems: A Computational Approach to Uncovering Learning Behavior in Unconventional Contexts; PROP-2026-07-18-002
+  Confidence: Medium
+  Evidence: Systematic sweep of >220,000 parameter combinations showed habituation, sensitization, and a form of discrete number learning in recovery time.
+
+PRS-63:
+  Problem: Must a learning system possess a dedicated memory medium (synapse, molecular store, engram) to exhibit memory-dependent behavior?
+  Resource: A model in which no explicit memory medium exists — state persistence is carried entirely by dynamical interaction among populations.
+  Solution: Memory-dependent learning phenomena arise from interaction dynamics alone, decoupling the concept of memory from any storage substrate.
+  Date Added: 2026-07-21
+  Source: Training Ecosystems: A Computational Approach to Uncovering Learning Behavior in Unconventional Contexts; PROP-2026-07-18-002
+  Confidence: Medium
+  Evidence: The paper's stated focus on "memory implemented purely by dynamical interactions without explicit memory media."
+
+PRS-64:
+  Problem: Are habituation and sensitization coupled, and does the coupling constrain what counts as a learning signature?
+  Resource: Paired measurement of recovery time and response magnitude across the full parameter sweep.
+  Solution: A strong asymmetry — 90.6% of parameter combinations paired recovery-time sensitization with response-magnitude habituation, while the reverse was extremely rare — suggesting the two channels are structurally, not incidentally, related.
+  Date Added: 2026-07-21
+  Source: Training Ecosystems: A Computational Approach to Uncovering Learning Behavior in Unconventional Contexts; PROP-2026-07-18-002
+  Confidence: Speculative
+  Evidence: "90.6% of parameter combinations exhibited recovery time sensitization paired with habituation of response magnitude, while the opposite pattern was extremely rare."
+
+PRS-65:
+  Problem: Molecular mechanism and goal-directed agency appear incommensurable — the machine metaphor cannot generate agency, and dualism cannot be naturalized.
+  Resource: A "new kind of cognitivism" — cognition all the way down — unifying bottom-up and top-down causal flows within a single non-dualist frame.
+  Solution: Reject the machine/mind dichotomy: living tissue is *both* machine and cognizer, with cognition as the organizing level rather than an emergent afterthought.
+  Date Added: 2026-07-21
+  Source: Machines all the way up and cognition all the way down: Updating the machine metaphor in biology; PROP-2026-07-20-002
+  Confidence: High
+  Evidence: The paper "discuss[es] inadequacies of both mechanist/computationalist frameworks and dualistic conceptions of machine versus mind, proposing instead a new kind of cognitivism."
+
+PRS-66:
+  Problem: Standard molecular biology assumes causation runs chemicals → code → phenotype; this cannot explain top-down goal-directed correction of perturbations.
+  Resource: Information-theoretic and Turing-machine arguments applied to the reductionist model of gene expression.
+  Solution: Invert the sequence — the correct causal ordering is **cognition → code → chemicals**.
+  Date Added: 2026-07-21
+  Source: Machines all the way up and cognition all the way down: Updating the machine metaphor in biology; PROP-2026-07-20-002
+  Confidence: High
+  Evidence: Stated directly: "the correct causation sequence is cognition → code → chemicals."
+
+PRS-67:
+  Problem: Does the "cognition all the way down" thesis have empirical teeth, or is it a re-description of the same facts?
+  Resource: Watson's evolutionary-connectionist machinery brought to bear on developmental plasticity.
+  Solution: The claim earns its keep by predicting adaptive plasticity — cells implementing large-scale form and function under novel perturbation — that a machine reading does not anticipate.
+  Date Added: 2026-07-21
+  Source: Machines all the way up and cognition all the way down: Updating the machine metaphor in biology; PROP-2026-07-20-002
+  Confidence: Medium
+  Evidence: The paper offers "examples of collective intelligence and adaptive plasticity as cells implement large-scale form and function."
+
+PRS-68:
+  Problem: Classical AI architectures (feedforward nets, transformers) have no natural account of regeneration, anatomical homeostasis, or goal-directed repair — the phenomena central to Levin's program.
+  Resource: Neural cellular automata — learned local update rules over a lattice of identical agents, with no global controller.
+  Solution: NCA as the appropriate computational model class for morphogenetic intelligence, supporting in-silico experiments on target-morphology setpoints.
+  Date Added: 2026-07-21
+  Source: Neural cellular automata: Applications to biology and beyond classical AI; PROP-2026-07-20-003
+  Confidence: High
+  Evidence: The review is explicitly framed as applications "to biology and beyond classical AI."
+
+PRS-69:
+  Problem: Is Levin's "collective intelligence of cells" a substantive computational claim or a metaphor?
+  Resource: The demonstrated ability of NCA to regenerate damaged target patterns from purely local rules.
+  Solution: A constructive existence proof — local-rule collectives *do* exhibit repair toward a setpoint without a homunculus, discharging the objection that goal-directedness requires a central planner.
+  Date Added: 2026-07-21
+  Source: Neural cellular automata: Applications to biology and beyond classical AI; PROP-2026-07-20-003
+  Confidence: Medium
+  Evidence: NCA regenerative behaviour is the review's central biological application.
+
+PRS-70:
+  Problem: Levin's framework says collective order emerges from local interaction, but offers no principled account of when local interaction *fails* to produce order — so the claim resists falsification.
+  Resource: Free-energy scaling analysis of domain-wall formation on graphs (Potts model, autoregressive models, hierarchical networks); a topological criterion for the existence of an ordered phase.
+  Solution: Necessary conditions on interaction-graph topology for an ordered phase to exist, making "spontaneous ordering" a property predictable from connectivity structure rather than from substrate.
+  Date Added: 2026-07-21
+  Source: Topological constraints on self-organization in locally interacting systems; PROP-2026-07-20-001
+  Confidence: High
+  Evidence: The paper shows "how the combinatorics of interactions on a graph prevent or allow spontaneous ordering," derived via scaling of free energy under domain wall formation.
+
+PRS-71:
+  Problem: Is there a substrate-independent way to compare the collective-intelligence capacity of biological tissue, a neural network, and an artificial agent collective?
+  Resource: The result's applicability across Potts lattices, autoregressive models, and hierarchical networks — three substrates under one topological criterion.
+  Solution: A candidate substrate-neutral comparator: rank systems by whether their interaction topology admits an ordered phase, not by what the units are made of.
+  Date Added: 2026-07-21
+  Source: Topological constraints on self-organization in locally interacting systems; PROP-2026-07-20-001
+  Confidence: Medium
+  Evidence: The analysis is carried out uniformly over statistical-physical, machine-learning, and hierarchical-network models.
+
+*Total PRS triplets: 71*
 
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*

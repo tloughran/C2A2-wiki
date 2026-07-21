@@ -371,7 +371,70 @@ PRS-40:
   Evidence: V15's expansion of tabular/categorical/time-series data handling + Agent Tools framework positions Wolfram Language as a programmable knowledge layer; this is an inference about C2A2 applicability, not a claim Wolfram makes about C2A2.
 
 ---
-*Total PRS triplets: 40*
+PRS-41:
+  Problem: Where are the boundaries of a mind? If two brains are linked (or a brain is emulated/copied), is there one observer or two — and what fixes the answer? Neuroscience frames this as connectivity; it lacks a principled criterion for observer individuation.
+  Resource: Wolfram's observer-as-computational-persistence framework (PRS-12) plus the three-parameter observer-class taxonomy (PRS-17): an observer is a single coherent thread through the multiway graph, individuated by its temporal- and multiway-coherence parameters rather than by its physical substrate.
+  Solution: Recast "one mind or two?" as a question about whether the coupled system maintains a single coherent thread of computational persistence (one observer) or two branches that fail to merge (two observers) — making mind-boundary a derivable property of observer-coherence structure rather than of neural wiring. Whole-brain emulation's "shock" is then located precisely: computability of minds is expected under the framework; the surprise is that personal identity is an observer-coherence property, not a substrate fact.
+  Date Added: 2026-07-21
+  Source: Future of Science and Technology Q&A (June 12, 2026); PROP-2026-07-05-001
+  Confidence: Medium
+  Evidence: June 12 Q&A segments posing "if whole-brain emulation succeeds, is the bigger shock that minds are computable or that personal identity is not what we thought?" and "if you linked two brains together with wires, would it be one mind or two?" (Full transcript not retrieved in this run; grounded on the published segment descriptions.)
+
+PRS-42:
+  Problem: AI systems are beginning to produce genuine mathematical advances (e.g., a recent AI-assisted result on an Erdős problem). What would make such results trustworthy, and how common will they become?
+  Resource: Wolfram's verification-over-generation stance (PRS-36/38, CAG / PRS-11): trust attaches to a computational/symbolic verification layer, not to the generating system's self-report.
+  Solution: AI-assisted mathematical results become trustworthy to the extent they are cashed out into formally/computationally checkable steps; expect them to become common precisely where a verification backbone exists. This is an incremental extension of the existing AI-verification thread into the domain of AI-assisted mathematics.
+  Date Added: 2026-07-21
+  Source: Future of Science and Technology Q&A (June 12, 2026); PROP-2026-07-05-001
+  Confidence: Speculative
+  Evidence: June 12 Q&A segment on a recent AI-assisted advance on an Erdős problem and "what will determine whether we trust those results." (Overlaps substantially with PRS-36/38 already captured; flagged as incremental, may be a duplicate rather than a new triplet.)
+
+PRS-43:
+  Problem: Why do civilizations absorb some new scientific ideas quickly and leave others "ahead of their time" dormant for decades — what sets the uptake rate of a paradigm?
+  Resource: Wolfram's historical survey of lost discoveries and idea-uptake dynamics (June 17 Q&A, segments at 0:18 and 12:10), read against his rulial-space framework: a community of observers occupies a region of rulial space, and an idea is absorbable only if a short rulial path connects it to the community's current sampling position.
+  Solution: Reframes "ahead of its time" as a measurable distance in concept-space rather than a romantic anomaly — the uptake rate of an idea is a property of the receiving community's position, not of the idea's intrinsic merit. Directly relevant to C2A2's tradition-accelerator premise: acceleration = engineering shorter paths.
+  Date Added: 2026-07-21
+  Source: History of Science and Technology Q&A (June 17, 2026); PROP-2026-07-11-001
+  Confidence: Medium
+  Evidence: Segment listing "Lost scientific discoveries and ideas ahead of their time" (t=18s) and "How quickly civilization can take in new ideas" (t=12m10s) on the June 17 livestream page; rulial reading is the agent's framing of Wolfram's stated positions.
+
+PRS-44:
+  Problem: Could science reach a "final framework," and what would finishing fundamental physics actually terminate?
+  Resource: Wolfram's June 17 discussion of a final framework (t=20m34s), grounded in computational irreducibility: even a complete rule for the universe leaves the behavior of most systems underivable except by running them.
+  Solution: A final framework would end the search for the rule, not the practice of science — irreducibility guarantees an inexhaustible frontier of consequences. Science's endpoint is thus a category error; what ends is one kind of question, not inquiry itself.
+  Date Added: 2026-07-21
+  Source: History of Science and Technology Q&A (June 17, 2026); PROP-2026-07-11-001
+  Confidence: High
+  Evidence: "What it would mean for science to reach a final framework" segment (t=20m34s), consistent with Wolfram's long-standing published position on irreducibility as the engine of open-ended science.
+
+PRS-45:
+  Problem: What is the evidential status of string theory after five decades without a distinguishing experimental confirmation?
+  Resource: Wolfram's assessment of string theory's status and experimental evidence (June 17 Q&A, t=33m44s), delivered from outside the string program by the author of a rival post-spacetime framework.
+  Solution: Positions string theory and the Wolfram Physics Project as facing the same confirmation problem — mathematical fertility without a distinguishing prediction — sharpening rather than evading the standard Carroll applies to Wolfram's own program.
+  Date Added: 2026-07-21
+  Source: History of Science and Technology Q&A (June 17, 2026); PROP-2026-07-11-001
+  Confidence: Medium
+  Evidence: "The status of string theory and its experimental evidence" segment (t=33m44s); full transcript available at the content.wolfram.com PDF linked above.
+
+PRS-46:
+  Problem: The discreteness of space is treated in the wiki as a Wolfram-originated postulate, leaving the program vulnerable to the charge that it is an idiosyncratic starting assumption rather than a live option with a genealogy.
+  Resource: Wolfram's historical reconstruction of the discrete-space idea (segment 1, t=13s) — the lineage of proposals for space as a discrete network and the reasons continuum mathematics displaced them.
+  Solution: Reframes hypergraph physics as the recovery and computational completion of a long-standing but under-tooled research option, rather than a novel postulate. Supplies the Wolfram Agent with a defensible answer to Carroll's status-assignment challenge (CROSS: "Does Wolfram Physics meet Carroll's Bayesian theory-confirmation standard?").
+  Date Added: 2026-07-21
+  Source: History of Science and Technology Q&A (June 3, 2026); PROP-2026-07-18-001
+  Confidence: Medium
+  Evidence: Published segment title and timestamp on livestreams.stephenwolfram.com; the session transcript PDF exists at content.wolfram.com but was not retrievable in this run (see Retrieval Note), so the specific lineage claims are not yet verified verbatim.
+
+PRS-47:
+  Problem: How does a research program become part of the recognized history of a field — and what determines whether an idea ahead of its time is recovered or lost?
+  Resource: Wolfram's account of historiographic method (segments 2-4): personal records as primary sources, the mechanics by which people and fields enter the canon, and material encounters with the past through machines and artifacts.
+  Solution: A first-person, practitioner's model of tradition-formation and canonization, offered by a figure who is simultaneously a subject of it. Directly usable by the C2A2 master layer as source material on how traditions accumulate, preserve, and lose their own track records.
+  Date Added: 2026-07-21
+  Source: History of Science and Technology Q&A (June 3, 2026); PROP-2026-07-18-001
+  Confidence: Medium
+  Evidence: Published segment titles and timestamps (t=44m00s, 46m05s, 1h07m30s); content not verified verbatim.
+
+*Total PRS triplets: 47*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

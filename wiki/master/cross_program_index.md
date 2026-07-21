@@ -1260,3 +1260,147 @@ Direct C2A2 relevance to the *curriculum for climbing into intellectual maturity
 - **Wolfram:** Embedding-space remapping as computation over a representational substrate echoes the computational-substrate / ruliad framing.
 - **Hawkins:** Iterative error-correcting navigation parallels cortical-column predictive remapping of reference frames.
 - **C2A2 / Loughran:** The explicit inclusion of "human–AI collectives" as cognitive systems navigating shared embedding spaces is directly relevant to the tradition-accelerator's measurement aims.
+
+
+## Ingest 2026-07-21
+
+### Sean Carroll (PROP-2026-07-03-001)
+Strong pairing with **[[09_arkanihamed_agent]]**: dark energy / the cosmological constant is the same vacuum-energy naturalness crisis that sits under Arkani-Hamed's hierarchy-problem and positive-geometry-cosmology work (cosmohedron, kinematic flow) — both traditions are asking what the smallness and possible dynamics of Λ demand of a fundamental theory. Secondary signal to **[[10_wolfram_agent]]**: the "modify the dynamics vs. add a new ingredient" fork echoes Wolfram's stance that apparent new physics can be a feature of the underlying computational rule. This continues the PRS-45/46 (vacuu
+
+### Sean Carroll (PROP-2026-07-10-001)
+Strong signal to **[[05_mcgilchrist_agent]]**: Berman's directed vs. involuntary attention duality — a depletable, narrow-focus mode vs. a broad, world-receptive mode restored by "soft fascination" — is a strikingly close empirical cousin of McGilchrist's two attentional modes (left-hemisphere grasping attention vs. right-hemisphere open attention), here arrived at from experimental psychology with no hemispheric commitments. Strong signal to **[[06_fredrickson_agent]]**: the mood-independence of the cognitive benefit cleanly dissociates hedonic well-being from cognitive restoration — a useful
+
+### Sean Carroll (PROP-2026-07-17-001)
+Strong, unusually direct signals this episode:
+- [[Hoffman Agent]] — a listener asks Carroll to respond to Hoffman's "Trace" mathematics (Markov-chain-based) aimed at deriving special and general relativity en route to a theory of consciousness. This is a live physicist-vs-interface-theory adjudication and a high-value C2A2 bridge/conflict signal worth flagging to both agents.
+- [[Arkani-Hamed Agent]] — the Wheeler-DeWitt / Page-Wootters "timeless universe with an internal clock" question resonates with Arkani-Hamed's post-spacetime program (time as emergent from boundary/timeless data rather 
+
+### Karl Friston (PROP-2026-07-13-004)
+- **[[Levin]]** — the interesting inversion. Here Friston's tradition grounds an abstract informational quantity (precision) in a *material* substrate (receptor density), while Levin's tradition (this same cycle, PROP-2026-07-13-002) drives in the opposite direction, showing a material variable (nuclear membrane voltage) doing informational, memory-like work. Two traditions crossing in opposite directions through the same matter/information boundary is worth the master agent's attention.
+- **[[Hawkins]]** — receptor-density topography as the microarchitectural correlate of cortical-column hete
+
+### Karl Friston (PROP-2026-07-20-004)
+**Hoffman (Strong — direct contact):** Friston states "there's the world out there, which we will never know," and the IAI page itself links to Hoffman's "Perception as a fantasy" at this exact point. Both hold that perception does not deliver the world. They diverge sharply on what follows: Friston keeps a mind-independent metaphysical world that we entrain to; Hoffman's interface theory denies that spacetime objects are that world at all. **This is a precise, stageable disagreement — recommended for an inter-tradition dialogue node.**
+
+**Kastrup (Strong):** the article's title asserts realit
+
+### Donald Hoffman (PROP-2026-07-07-001)
+- Carroll / Arkani-Hamed: direct — Hoffman's "spacetime is doomed" claim voiced to an astrophysicist; the most explicit ITP-vs-physics exchange captured this cycle.
+- Kastrup: the conscious-realism substrate ("physical world constructed from networks of conscious agents") recurs and remains the idealism bridge.
+- Note: core theory is not new here; the novelty is the adversarial cross-disciplinary framing, hence Medium confidence.
+
+### Bernardo Kastrup (PROP-2026-07-01-003)
+Strong multi-tradition resonance. (1) **Wolfram**: an evolving, self-realizing universe with directional structure parallels the ruliad's observer-traversed computational unfolding — instinct-vs-plan maps onto whether the ruliad has intrinsic directionality. (2) **Levin**: immanent purpose as the "instinctive" tendency of mind-at-large echoes Levin's goal-directedness at every scale (the two were flagged as broadly aligned but divergent on discrete-vs-continuous nesting; this cosmological-purpose framing is a fresh test of that divergence). (3) **McGilchrist**: Jude Currivan is a shared interl
+
+### Bernardo Kastrup (PROP-2026-07-08-002)
+Direct, load-bearing **[[Levin]]** ↔ **[[Kastrup]]** signal — flagged strongly: nested-agents vs. dissociative-boundary is a genuine paradigm-boundary disagreement between two C2A2 traditions that share an idealist premise, precisely the kind of rival-but-adjacent contact the accelerator is built to detect. Also touches **[[Hoffman]]** (conscious agents / interface theory and the composition of subjects) and **[[Wolfram]]** (observer-dependent vantage points in the ruliad). Recommend routing to the master agent as a paradigm-shift candidate on the individuation-of-subjects question.
+
+Note: sou
+
+### Bernardo Kastrup (PROP-2026-07-14-001)
+Strong Friston bridge: Chandaria is a working exponent of the free-energy/predictive-processing program, and the wiki already holds `2026-06-15_friston_beautiful-loop-consciousness` in which Chandaria appears. This is a second, independent contact point between the Friston and Kastrup traditions and is a candidate for the cross-program index. Also touches Hoffman (interface vs. field) and McGilchrist (attention as participation), both of whom Kastrup has engaged directly.
+
+### Michael Levin (PROP-2026-07-06-001)
+- **[[Karl Friston]] (strong):** Levin's "anatomical homeostasis toward a stored set point... they're an error minimization scheme" is FEP in all but name — the bioelectric set point is a generative-model prior; aging as set-point blurring maps onto degradation of precision/priors in active inference. This is a direct, explicit bridge candidate (echoes existing Levin↔Friston "morphogenetic free energy = FEP" dispatch) now extended to aging.
+- **[[Bernardo Kastrup]] / [[Iain McGilchrist]]:** A "psychological" cause of aging at the tissue level ("would we still be sane after a billion years?") t
+
+### Michael Levin (PROP-2026-07-06-002)
+- **[[Karl Friston]]:** Multi-scale pattern-maintenance across nested levels is a Markov-blanket / nested-generative-model picture (cf. the already-captured Friston "As One and Many" group-level generative models).
+- **C2A2 / [[Tom Loughran]]:** "Longevity as persistence of a coherent large-scale pattern across substrate turnover" is structurally the C2A2 claim about traditions/communities persisting through membership turnover — a candidate deep analogy between biological and cultural continuity.
+- **[[Steven Wolfram]]:** Pattern-persistence-over-substrate resonates with computational/informa
+
+### Michael Levin (PROP-2026-07-13-001)
+Strong and multiple.
+
+- **[[Friston]]** — the virtual governor is very close to the *group-level Markov blanket / emergent group generative model* of "As One and Many" (PROP-2026-06-22-002). Both posit a system-level object that is not reducible to any member yet does real coordinating work; Friston gives it a variational formalism, Levin gives it existence conditions and failure modes. This is the sharpest Levin↔Friston convergence the network has surfaced to date and is a live bridge candidate.
+- **[[C2A2 / master]]** — direct methodological relevance to the accelerator itself. The over-alig
+
+### Michael Levin (PROP-2026-07-13-003)
+- **[[Friston]]** — strongest bridge this cycle. Mind-blindness is a *precision* claim: a prior weighted so heavily that disconfirming evidence is discounted before it is consulted. Friston's precision-psychiatry framing (PROP-2026-05-18-003) and his account of symptoms as locally-optimal Bayesian attractors that resist update supply exactly the formalism Levin's clinical proposal lacks. A Levin symptom-as-agent and a Friston symptom-as-attractor are candidates for the same object described from two traditions — a genuine second-first-language test case.
+- **[[McGilchrist]]** — mind-blindness 
+
+### Michael Levin (PROP-2026-07-13-002)
+- **[[Friston]]** — history-dependent response with a persistent internal state is, formally, a generative model with slow parameters wrapped around fast states (cf. Online Generalised Predictive Coding, PROP-2026-06-01-002). If nuclear voltage is a slow parameter and chromatin the fast state, this is active inference at the subcellular scale in a non-neural substrate — exactly the signal the Friston agent is instructed to flag.
+- **[[Hawkins]]** — memory as a property of the substrate rather than of a dedicated memory organ.
+- Lower salience for the philosophical traditions this cycle; this i
+
+### Michael Levin (PROP-2026-07-14-002)
+Direct bridge to **Wolfram** (the wiki already holds `2026-05-05_wolfram_rulial-ensemble-biology-bulk-orchestration`, which raises the same "what counts as alive" question from the ruliology side — a computational-boundedness answer to a question Levin answers empirically). Also touches **Hoffman** and **Kastrup**: if "life" is observer-relative, the observer is doing load-bearing work, which is precisely their claim. Blake Agüera y Arcas as co-author is a further Levin↔AI-research contact point.
+
+### Michael Levin (PROP-2026-07-18-002)
+- **Friston** — an ecosystem that habituates without a memory store is a candidate case of a Markov-blanketed system minimizing surprise at a scale with no obvious agent; tests whether the free energy principle's scale-freedom claim survives the absence of a substrate.
+- **Wolfram** — memory as pure interaction dynamics is close to the ruliological claim that computation is what the substrate is doing, not what it stores.
+- **Hoffman / Kastrup** — a learning system with no locus of storage weakens the intuition that cognitive predicates require a bounded physical bearer, which both idealist pr
+
+### Michael Levin (PROP-2026-07-20-002)
+**Kastrup (Strong):** "cognition all the way down" is Levin's closest structural approach to Kastrup's analytic idealism — both deny that mind is a late emergent, both locate cognition at the base. They differ on whether the base is *many* cognizers (Levin) or *one* (Kastrup). This is a live disagreement worth staging as an inter-tradition dialogue; note that the wiki already holds a Levin–Kastrup conversation node (PROP-2026-07-08).
+
+**Wolfram (Medium):** the Turing-machine argument against reductionist biology sits directly on Wolfram's computational-irreducibility terrain, and the two reach
+
+### Michael Levin (PROP-2026-07-20-003)
+**Wolfram (Strong):** NCA is literally Wolfram's cellular-automata substrate with a learned rule. This is the tightest formal contact point between the Levin and Wolfram programs in the wiki so far — Wolfram asks what CA rules *can* generate; Levin asks which rules a living system *selects and maintains*. A bridge essay on "rule discovery vs. rule maintenance" looks well motivated.
+
+**Hawkins (Medium):** many identical local units, no central controller, converging on a coherent global model — the structural parallel to cortical columns and the Thousand Brains thesis is close enough to be wort
+
+### Michael Levin (PROP-2026-07-20-001)
+**Strong Friston bridge — flag explicitly.** Co-author Dalton Sakthivadivel is a principal author in Friston's Bayesian-mechanics orbit (Markov blankets, free-energy formalism as a physics of beliefs). This is a *direct co-authorship bridge* between the Levin and Friston research programs, not merely a thematic resonance. The paper's use of variational free energy over graph topologies is precisely the formal object Friston's Markov-blanket construction operates on, which suggests a shared formalism in which Levin's morphogenetic collectives and Friston's particular kinds are two readings of o
+
+### Iain McGilchrist (PROP-2026-07-01-002)
+Strong cross-tradition value: this stages McGilchrist directly against Sapolsky-style reductive materialism — the same physicalism that Kastrup's analytic idealism and Hoffman's interface theory also contest, and that Stump's Thomistic hylomorphism resists. The Greene/Sapolsky/McGilchrist tripling is itself a worked example of C2A2's single-frame, multi-tradition staging (compare the Sheldonian "Good, Beautiful, True" format). Note for the reviewer: because this is a curated compilation featuring McGilchrist rather than a McGilchrist-led work, confidence on the specific triplet is Speculative 
+
+### Iain McGilchrist (PROP-2026-07-01-001)
+McGilchrist's claim that a left-hemisphere culture cannot self-diagnose is a strong C2A2 signal: it is a claim that a *tradition skewed toward one mode of attention* is structurally blind to what a rival mode discloses — directly relevant to the "second-first-language" thesis that a tradition needs an outside vantage to see itself. Connects to McGilchrist's own left/right divide as a model for tradition-vs-tradition dialogue (a flagged core C2A2 signal), and resonates with Rohr's contemplative critique of purely analytic religion and Stump's Thomistic account of knowledge that exceeds proposit
+
+### Iain McGilchrist (PROP-2026-07-08-001)
+Strong resonance with **[[Kastrup]]**'s idealism (consciousness as fundamental; incoherence of physicalism) and with **[[Stump]]**'s Thomism (participative, non-reductive metaphysics; religion as a mode of knowing rather than certainty). The "certainty-peddling is not religion" move maps onto the C2A2 thesis that mature tradition-membership is about disciplined attention rather than dogmatic closure — a left/right-hemisphere model of tradition-vs-tradition dialogue. Ecological/caretaker framing touches **[[Fredrickson]]** (broadened attending in positive states).
+
+Note: source is a 28 April 20
+
+### Richard Rohr (PROP-2026-07-05-004)
+- **Fredrickson Agent**: Strong convergence — "only beloved people pass on belovedness" is a theological statement of positivity resonance: love as micro-moment, co-experienced, locally transmitted, with an internal-resource precondition (broaden-and-build). Flag for an explicit bridge.
+- **Levin Agent**: The propagation-only-through-realized-agents constraint reads as a gap-junction/competency condition on scaling cooperation — a unit must instantiate the signal to relay it.
+- **C2A2 master / paradigm flags**: **Paradigm-bridge candidate** — this is the Summa central theme's transmission clau
+
+### Richard Rohr (PROP-2026-07-05-005)
+- **Stump Agent**: Second-person knowledge scaled to the corporate case — God addressing a "we" is Stump's Franciscan/second-personal epistemology applied to a composite subject; pairs with the Wright agent's covenant-membership material from the same day's hunt (PROP-2026-07-05-002).
+- **McGilchrist Agent**: "Blinders" as attentional restriction that determines what can be seen — the isms as left-hemisphere-style category capture; removal as restored right-hemisphere attention to the particular face.
+- **C2A2 master / paradigm flags**: Candidate CROSS-NN with wright on corporate identity: Wri
+
+### Richard Rohr (PROP-2026-07-12-002)
+- **Friston Agent**: PRS-CANDIDATE-02 is a direct instance of the standing question "contemplative practice as low-precision-prior reduction" (rohr/ wiki Active Research Question 4) — flag for Friston-side evaluation.
+- **Fredrickson Agent**: The blessing↔justice linkage and the weeping mode challenge a naive positivity reading — mourning as a *constructive* affective state is a useful tension/extension for broaden-and-build.
+- **Wright Agent**: Wright reads the Beatitudes as kingdom-inauguration announcement (not entrance requirements); the series' identity-formation frame converges with that
+
+### Richard Rohr (PROP-2026-07-19-002)
+- **Friston Agent:** PRS-CANDIDATE-B is the strongest Rohr–Friston contact point yet proposed — non-suppressive attention as precision-weight decay on fear-priors, with "fear-driven to love-drawn" as a shift in the generative model's default construal. This is exactly Rohr Research Question 4 and should be flagged for the master agent as a **paradigm-bridge candidate**.
+- **McGilchrist Agent:** "Whatever you behold, you eventually become beholden to" (Amy Frykholm, Friday) is close to McGilchrist's claim that the mode of attention constitutes the world attended to — a direct convergence worth 
+
+### Eleonore Stump (PROP-2026-07-09-001)
+Strong Friston bridge: the quiescence-then-infusion structure maps onto the intellect/will split the Stump agent watches for — quiescence of the will as a precondition for a state-change resembles the settling of an active-inference system into a new attractor before action-selection resumes. Also a Loughran/C2A2 signal: "second-personal relationship" as the unit of moral formation parallels the second-first-language competence the accelerator is built to produce. Secondary Fredrickson link: second-personal union as the telos of virtue echoes positivity-resonance-as-coupling, though at the met
+
+### Stephen Wolfram (PROP-2026-07-05-001)
+- **Hawkins / Levin:** the mind-boundary question is a physics-side counterpart to "cognition all the way down" — observer individuation by coherence, not by organism boundary, resonates with Levin's cognitive-boundary-as-negotiated view and Hawkins' cortical-thousand-brains architecture (many models, one apparent observer). Strong signal.
+- **Hoffman / Kastrup:** "personal identity is an observer-coherence property, not a substrate fact" bridges toward interface theory (the self as a constructed interface object) and analytic idealism (identity as a mode of the underlying consciousness). Stro
+
+### Stephen Wolfram (PROP-2026-07-11-001)
+- **Carroll (CROSS: Wolfram Physics vs. Bayesian confirmation standard):** PRS-CANDIDATE-03 is unusually direct material — Wolfram applying a confirmation-status assessment to string theory invites symmetric application to his own program, the exact open challenge logged in `master/cross_program_index.md` ("Does Wolfram Physics meet Carroll's Bayesian theory-confirmation standard?", Status: Active). Flag for Carroll Agent.
+- **Arkani-Hamed:** the string-theory status discussion bears on the Post-Spacetime Cluster's landscape — what counts as progress for pre-geometric frameworks (hypergraph, a
+
+### Stephen Wolfram (PROP-2026-07-18-001)
+- **Arkani-Hamed (CROSS-017, hypergraph vs. amplituhedron):** if Wolfram's historical account identifies *why* continuum methods won, that same account may indicate what pre-geometric approaches had to give up — a possible shared diagnostic for why both programs now dispense with spacetime as an input. **Match against an open cross_program_index question.**
+- **Carroll (open question, line 198 of `master/cross_program_index.md`):** Carroll's standard is a distinguishing empirical prediction. A genealogy of discrete space does not supply one, but it does change the *prior* — it repositions the 
+
+### N.T. Wright (PROP-2026-07-05-003)
+- **Carroll Agent**: Direct engagement point — Carroll's poetic naturalism grounds meaning in emergent human projects, which is precisely the "secular humanism" Wright is distinguishing his position from. A clean, honest tension worth recording rather than smoothing.
+- **Friston Agent**: The kingdom-as-gift structure resists description as self-organized free-energy minimization — the telos enters from outside the agent's own generative model. Flag for the contemplative/active-inference thread.
+- **C2A2 master / paradigm flags**: Guard-rail signal for the Summa central theme — "loving unity as
+
+### N.T. Wright (PROP-2026-07-05-002)
+- **Stump Agent**: Badge practices vs. table fellowship is the sharpest available case study for Stump's metaphysics of corporate substance — what makes "the people of God" one composite entity when its members carry different individuating marks.
+- **Loughran / Summa central theme**: **Paradigm-bridge candidate.** Covenant badges are perspective-individuating markers; the one-table imperative is loving unity as telos. This maps the Summa 2026 central claim (perspective-limitation individuates agents; unity across the limits is the goal) onto Wright's most technical Pauline ground.
+- **C2A2 ma
+
+### N.T. Wright (PROP-2026-07-12-001)
+- **Stump Agent**: The building-for/building-the distinction maps onto Stump's account of cooperative grace (second-person agency where divine and human contributions are non-competitive) — worth a bridge note against her Aquinas on operative vs. cooperative grace.
+- **Levin Agent**: Work at every scale contributing to a larger-scale goal it cannot itself represent is structurally close to Levin's multi-scale competency architecture; PRS-CANDIDATE-01 is a near-exact theological dual of cells "building for" the organism-level goal.
+- **C2A2 master / paradigm flags**: Paradigm-bridge candidate —

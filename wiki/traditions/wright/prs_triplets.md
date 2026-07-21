@@ -305,4 +305,40 @@ PRS-32:
   Evidence: Wright's pairing of the two foundational commissions (delivery/exposition of Romans; proclamation of resurrection) entrusted to women, against the restrictive-text objection
 
 ---
-*Total PRS triplets: 32*
+PRS-33:
+  Problem: Is Christian kingdom-participation distinguishable in principle from secular humanist progress narratives, or is the difference only decorative?
+  Resource: Wright's resurrection-grounded account of hope — new creation inaugurated by God's act, participatory but not self-generated, cross-shaped rather than triumphal.
+  Solution: The two differ in source (gift vs. extrapolation), warrant (a past event vs. a trend line), and shape (cruciform vs. optimizing); conflating them evacuates both.
+  Date Added: 2026-07-21
+  Source: Kingdom of Heaven vs. Secular Humanism; How to brush up on Greek, and should we pray to the Holy Spirit?; PROP-2026-07-05-003
+  Confidence: Medium
+  Evidence: Wright's direct answer to the listener question in this episode; consistent with Surprised by Hope but stated as a contrast-class argument.
+
+PRS-34:
+  Problem: How does Paul define membership in the people of God without either legalistic merit or boundary-less abstraction?
+  Resource: "Works of the law" read as covenant badge practices (Sabbath, food laws, circumcision), evidenced from 4QMMT and Second Temple Judaism.
+  Solution: Justification is God's declaration of covenant membership; table fellowship, not badge-keeping, is the operative test of belonging — badges individuate sub-groups, the shared table enacts unity.
+  Date Added: 2026-07-21
+  Source: Have Christians Misunderstood Paul for 500 Years? Tom Wright on 'Works of the Law'; PROP-2026-07-05-002
+  Confidence: High
+  Evidence: Wright's own retelling of the Cranfield-to-Dunn-to-Wright trajectory plus the 4QMMT argument, in his own voice, in this episode.
+
+PRS-35:
+  Problem: How can finite agents' ordinary labor have durable significance if the consummation of history is God's act, not theirs — i.e., why work if God will fix everything?
+  Resource: Wright's distinction between building *the* kingdom (God's act) and building *for* the kingdom (human vocation taken up into new creation), applied here to all work including manual labor and data analysis.
+  Solution: Present faithful work is anticipatory participation: it is preserved and transfigured in new creation rather than discarded, grounding vocation without inflating human agency into the telos itself.
+  Date Added: 2026-07-21
+  Source: Still waiting… for Jesus' return? (Ask NT Wright Anything); PROP-2026-07-12-001
+  Confidence: High
+  Evidence: Episode's central segment on everyday work; consistent with Surprised by Hope ch. 13 and the 1 Cor 15:58 reading Wright has defended since 2008.
+
+PRS-36:
+  Problem: Why is full humanity AND full divinity structurally necessary to salvation rather than a credal formality?
+  Resource: Wright's temple-cosmology frame — Jesus as the person in whom heaven and earth actually overlap, so salvation is effected in the joint, not negotiated across a gap.
+  Solution: The incarnation instantiates the heaven-earth union that new creation universalizes; salvation is inclusion in that union rather than transfer between realms.
+  Date Added: 2026-07-21
+  Source: Still waiting… for Jesus' return? (Ask NT Wright Anything); PROP-2026-07-12-001
+  Confidence: Medium
+  Evidence: Episode's second question; extends the "heaven and earth meet" motif from The Vision of Ephesians and God's Homecoming.
+
+*Total PRS triplets: 36*

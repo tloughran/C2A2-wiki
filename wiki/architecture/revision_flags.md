@@ -6082,3 +6082,170 @@ REVISE-236:
       15c: Evaluated and upheld; applied item-by-item to exclude every named instrument from incorporation; extended the flag to the pipeline's own independence claim (REVISE-233); residual process change routed to Tom
     Current status: REVISION-FLAGGED
     Disposition record: CROSS-ITEM FLAG EVALUATIONS (lit_search_returns.md, 2026-07-20)
+
+REVISE-237:
+  Date flagged: 2026-07-21
+  Source item: ASSUMPTION-486
+  Item type: ASSUMPTION (stated)
+  15a: SUPPORTED (Strong) | 15b: **CHALLENGED (Moderate)**
+  **This flag also places PREMISE-108 UNDER-REVIEW. It is a consistency conflict against the validated register, not only a disposition.**
+  Net assessment: The sharpest cross-agent conflict in the batch, and it resolves by separating two propositions rather than averaging them. PROPOSITION 1 — a receipt is not acceptance — is strongly supported and uncontested. Clinical informatics encodes it as a measurement convention: an alert counts as overridden if the acknowledgement reason indicates no change, including "aware," and accepted only on a concrete order change; override rates run 49-96%, acknowledgement comprises 28% of responses, and acceptance falls to 1.4% where acknowledgement is not compelled (JMIR Medical Informatics 10(10):e40511, PMC9579928; Barenfanger et al. 2004, Joint Commission Journal on Quality and Safety 30(7)). Receipt-based counting would report near-total success against that. PROPOSITION 2 — therefore NEVER an acknowledgement receipt — is directly contradicted by the highest-stakes domain available. Read-back is the foundational mechanism of closed-loop communication (Joint Commission Journal on Quality and Safety, S1549-3741(04)30053-5), directed closed-loop communication is associated with increased task COMPLETION rather than merely receipt (PMC12597367), and I-PASS raised handoff adherence 41.6%->70.5% at MD Anderson (2019-2022) by making acknowledgement substantive rather than by abolishing it. 15b's operational objection is decisive and 15a did not have it: **output-scanning alone cannot distinguish "flag not received" from "flag received, weighed, and correctly declined," so the item's metric penalises judgement** and removes the fastest available failure detector — under it, a lost flag stays invisible until the recipient's next output cycle. 15a reached the adjacent defect from the supportive side, noting the item's own metric is closer to paraphrase than to acceptance and "inherits a weaker form of the defect it names."
+  Reasoning for REVISE rather than MONITOR: this item is not a free-standing claim. Its provenance records it as the extraction of PREMISE-108's instrumentation constraint, incorporated one day earlier on 2026-07-20. A disconfirmatory search run against that clause in isolation returns CHALLENGED on evidence better matched to it than the evidence it was validated on. Per the 15c spec, a result contradicting an existing PREMISE is flagged for human review rather than silently resolved — and 15c will not amend its own premise one day after writing it on its own authority.
+  What is at risk: PREMISE-108's instrumentation constraint ONLY. The premise's first half — transmission is not delivery; a flag "for" a named agent does not transfer responsibility; an unacknowledged flag leaves responsibility unheld while the record shows it discharged — is not challenged in either direction and is NOT under review. Also at risk: the instrumentation design for the cross-agent flag channel; MONITOR-455; any measure that would count a declined flag as a delivery failure.
+  Recommended action (Tom):
+    1. DECIDE whether PREMISE-108's instrumentation constraint is amended to the two-measure form or retained as written. 15c recommends amendment.
+    2. THE TWO-MEASURE FORM, which both searchers independently arrive at: content read-back (not a bare receipt) as the DELIVERY check; flagged content appearing in the recipient's output as the EFFECTIVENESS check. These measure different things and neither substitutes for the other.
+    3. ADD A THIRD STATE. The current scheme can represent "delivered" and "not delivered" and cannot represent "received, weighed, and declined with reason." That third state is not a failure and is currently indistinguishable from one.
+    4. CHEAP CHECK AVAILABLE MEANWHILE, and it decides the question: enumerate 30 days of cross-agent flags and classify each into the three bins. The size of the third bin settles whether the exclusivity clause is costing anything. Under an hour.
+    5. DO NOT abolish acknowledgement pending the decision. Per SYSTEMIC-RISK-FLAG-B (REVISE-241), the item's binary remedy has a documented failure mode worse than the problem it addresses.
+  Urgency: Medium (the underlying premise's first half is intact; the contested clause governs instrumentation not yet built)
+  Status: OPEN — awaiting Tom's review. PREMISE-108 marked UNDER-REVIEW pending it.
+  **Standing note per the fail-loud convention:** a premise validated on Monday and challenged on Tuesday is evidence about this pipeline's validation threshold, not only about this premise. This is the second consecutive run in which a better-matched disconfirmatory search arrived one cycle after incorporation. Whether that is acceptable latency or a threshold set too low is a question for REVISE-239's effectiveness-check regime, not for this flag.
+  Full results: lit_search_results/for/ASSUMPTION-486_for.md ; lit_search_results/against/ASSUMPTION-486_against.md
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-486
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the PREMISE-108 instrumentation constraint
+      15a: Searched for supporting literature; SUPPORTED (Strong) with a self-noted caveat that the item's metric inherits a weaker form of the defect it names
+      15b: Searched for challenging literature; CHALLENGED (Moderate)
+      15c: Net evaluation; cross-agent conflict resolved by separating two propositions, not averaged; consistency conflict with PREMISE-108 surfaced and routed to human review
+    Current status: REVISION-FLAGGED
+    Disposition record: DISPOSITION-ASSUMPTION-486 (lit_search_returns.md, 2026-07-21)
+
+REVISE-238:
+  Date flagged: 2026-07-21
+  Source item: ASSUMPTION-487
+  Item type: ASSUMPTION (stated)
+  15a: PARTIALLY-SUPPORTED (Moderate on fault class and stopped writer; **Weak** on the point-in-time-backup argument) | 15b: **CHALLENGED (Strong)**
+  **The only item in this batch whose recommended action has an irreversible failure mode. Urgency HIGH is on the REMEDY, not the diagnosis.**
+  Net assessment: Weak support plus strong challenge on the item's load-bearing inference, reached independently from both search directions. The item argues that errors observed IN a point-in-time backup rule OUT a mid-write artifact. SQLite's own corruption documentation ("How To Corrupt An SQLite Database File," sqlite.org/howtocorrupt.html) lists copying or backing up a database WHILE IT IS BEING WRITTEN as a canonical cause of "database disk image is malformed" — which makes the observation evidence FOR the artifact hypothesis, not against it. 15a reached the same conclusion from the supportive side: the exclusion holds only if the copy went through the backup API or VACUUM INTO with proper locking, and an ordinary filesystem copy of a live database is a known source of spurious malformed-image errors. 15b adds that the two halves of the claim are mutually dependent — a stopped writer would not produce mid-write artifacts — so the item cannot be half-right in the way it is written. What IS supported: reading SQLITE_CORRUPT as B-tree corruption is the documented interpretation, and 14.6 days stale with 13 consecutive failures is the canonical freshness signature of a halted producer. The diagnosis is plausible; the argument offered FOR it is inverted.
+  What is at risk: open-story.db integrity and every count derived from it. Specifically: (i) running VACUUM or VACUUM INTO on an already-corrupt file will either fail with another SQLITE_CORRUPT **or silently drop the unreadable data** — both searchers retrieved this independently — converting detected corruption into undetected data LOSS; (ii) `.recover` can resurrect previously deleted rows as live data with no marker, converting it into undetected data ADDITION; (iii) in a vault already carrying six unresolved counting disputes, either outcome would be indistinguishable from the disputes already open. Secondarily: if the "writer has stopped" half is wrong (writer running and failing at commit), the real fault survives a completed repair.
+  Recommended action (Tom):
+    1. **RUN `PRAGMA integrity_check` ON THE LIVE DATABASE, Mac-side, BEFORE ANY RECOVERY ACTION.** Minutes of work. It discriminates cleanly between a corrupt live file and a bad backup copy, and nothing downstream should proceed without it.
+    2. ESTABLISH HOW THE POINT-IN-TIME BACKUP WAS TAKEN — backup API, VACUUM INTO, or filesystem copy — before treating the backup's errors as evidence about the live file. If it was a filesystem copy of a live database, the errors are expected and say nothing about the live file's state.
+    3. **DO NOT RUN VACUUM OR VACUUM INTO on the corrupt copy.** This is the specific action the item proposes and the specific action both searchers warn against.
+    4. IF RECOVERY IS GENUINELY NEEDED, use `.recover` (SQLite CLI 3.29.0+) with row-count reconciliation against a known-good prior snapshot, and MARK any resurrected rows so they cannot silently enter the counting disputes.
+    5. SEPARATELY CONFIRM whether the writer process is stopped or running-and-failing. The freshness signature is consistent with both and the fixes differ.
+  Urgency: **HIGH**
+  Status: OPEN — awaiting Tom's review
+  Note on 15c's own limits: this is a measurement 15c could have taken and did not, because its spec does not authorise it to execute against the vault's databases. Recorded rather than excused; it is the substance of REVISE-239.
+  Full results: lit_search_results/for/ASSUMPTION-487_for.md ; lit_search_results/against/ASSUMPTION-487_against.md
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a, 15b -> 15c]
+    Original item: ASSUMPTION-487
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-20 metabolism regen daily transcript
+      15a: Searched for supporting literature; PARTIALLY-SUPPORTED, with an unprompted warning on the proposed remedy
+      15b: Searched for challenging literature; CHALLENGED (Strong) — the load-bearing inference runs backwards
+      15c: Net evaluation and disposition; remedy hazard escalated above the diagnosis; resolved in 15b's favour on source directness (SQLite's own documentation is primary and reverses the item's inference)
+    Current status: REVISION-FLAGGED
+    Disposition record: DISPOSITION-ASSUMPTION-487 (lit_search_returns.md, 2026-07-21)
+
+REVISE-239:
+  Date flagged: 2026-07-21
+  Source: SYSTEMIC-RISK-FLAG-C (Agent 15b, 2026-07-21) — evaluated by 15c, UPHELD and extended
+  Item type: CROSS-ITEM SYSTEMIC
+  Affected items as filed by 15b: ASSUMPTION-482, ASSUMPTION-490, PRESUMPTION-506, PRESUMPTION-512, PRESUMPTION-513
+  **15c extends the affected set to every disposition this agent has ever issued, including all 18 in this run.**
+  Common vulnerability: Findings are generated and closed without an effectiveness check, and success bars are implicit rather than pre-registered. 482 and 513 dispute which constraint binds with no pre-registered threshold, so the fifteen-day record can be read either way after the fact. 490 asks which reading is authoritative with no written definition. 506 infers total propagation failure with no prior for what success looks like. 512 asks for an hours total with no target. The CAPA literature identifies exactly this pattern — investigation completed, effectiveness criterion never defined, failure recurs, record documents the cycle — as the most common way correction programmes fail, and it is visible in ASSUMPTION-488's same-day recurrence.
+  15c's extension, recorded per the fail-loud convention: **no disposition record in lit_search_returns.md, in any run, carries a field stating what evidence would show the item changed behaviour, by when, or who checks.** MONITOR entries carry "what would change the disposition," which is a re-evaluation trigger, not an effectiveness check — it asks what would change 15c's mind, not what would show the system changed. REVISE entries carry recommended actions with no verification step. PREMISE entries carry a re-check date with no criterion. The gap is architectural and it is this agent's, not only the items'.
+  Literature basis: CAPA practice literature (Deltek, "The CAPA Process"; The FDA Group, "Definitive Guide to CAPA"; SimplerQMS) — effectiveness criteria must be defined at the start and met before closure, and most CAPA failures occur at follow-up rather than investigation. Ivers et al., Cochrane CD000259.pub3 (PMID 22696318) and CD000259.pub4 — the realistic effect size of feedback is 4-6% absolute, which is the prior any propagation mechanism should be judged against. ISO/IEC 17025 clauses 7.10/8.7 — verify the fix worked.
+  Risk level: **Critical**
+  What is at risk: 110 prior premises (121 after this run), 236 revision flags (241 after this run) and 457 monitors (462 after this run), none of which carries a criterion by which its effect could be established or denied. If PREMISE-116 is right, this is the mechanism. It is also the reason the 482/513 dispute cannot be settled by argument.
+  Recommended action (Tom):
+    1. **ADD A MANDATORY FIELD** to every validated premise, disposition and revision flag: *what evidence would show this changed behaviour, by when, and who checks.* No item closes until that evidence exists. 15b names this the highest-leverage recommendation in the batch and 15c concurs.
+    2. **PRE-REGISTER SUCCESS THRESHOLDS BEFORE running any of the measurements this batch proposes**, so results are interpretable rather than arguable after the fact. Three of the five new MONITOR items (458, 461, 462) are blocked on this and will produce unusable results without it.
+    3. Note the single change addresses three separate findings at once: the mechanism behind ASSUMPTION-488's recurrence, PREMISE-116's propagation gap, and the 482/513 dispute.
+    4. **This change requires an authority 15c does not have.** 15c is not authorised to add a mandatory field to the registries and has not done so. It is routed, not implemented — which is itself an instance of what PREMISE-116 describes.
+  Urgency: High
+  Status: OPEN — awaiting Tom's review
+  PROVENANCE:
+    Origin: 15b (SYSTEMIC-RISK-FLAG-C)
+    Chain: [14a, 14b -> 15b -> 15c]
+    Transform at each step:
+      15b: Cross-item pattern identified across five items in the 2026-07-20 batch; Critical
+      15c: Evaluated and upheld; extended from five items to the full disposition record of this agent, with the specific structural gap named; routed to Tom, not implemented
+    Current status: REVISION-FLAGGED
+    Disposition record: CROSS-ITEM FLAG EVALUATIONS (lit_search_returns.md, 2026-07-21)
+
+REVISE-240:
+  Date flagged: 2026-07-21
+  Source: SYSTEMIC-RISK-FLAG-A (Agent 15b, 2026-07-21) — evaluated by 15c, UPHELD, with a new in-run measurement added
+  Item type: CROSS-ITEM SYSTEMIC
+  Affected items: ASSUMPTION-483, ASSUMPTION-491, PRESUMPTION-508, PRESUMPTION-511 (and, per 15c's extension, every disposition citing cross-agent convergence)
+  Common vulnerability: Independence is asserted from the EXISTENCE of two artifacts rather than engineered and measured. Four items in one batch turn on whether a second check is genuinely independent of the first — 483 on 15a/15b, 491 on "independently confirmed," 508 on judging with a self-flagged correlated judge, 511 on reproduction as confirmation — and no house measurement of correlation exists. 15b notes the batch is internally inconsistent: ASSUMPTION-491 asserts independent confirmation on the same day PRESUMPTION-511 argues the concept does not apply to same-code re-runs.
+  **15c's addition — the first in-run measurement of the defect, which 15b could not see because it was blinded:** 15a and 15b were run as separate agents under full blocking, neither able to read the other's output, and they nonetheless retrieved THE SAME KEY SOURCES on at least five items — arXiv:2605.29800 and van Rooyen PMID 9676666 (A-483), the metrology/no-gold-standard literature (A-490 and P-507), Cochrane CD000259 (P-506), NASEM 2019 doi:10.17226/25303 (P-511), and the Danziger/ego-depletion caution (P-512). Two agents assigned OPPOSITE search directions converging on the same citations is a direct observation of the correlation channel ASSUMPTION-483 is about, and it means the apparent agreement between the two directions on those five items is worth materially less than two independent confirmations. Every disposition in this run that leans on "both agents converged" should be read with that discount. **This datum was produced as a by-product; it does not substitute for the measurement recommended below.**
+  Literature basis: NASEM (2019), "Reproducibility and Replicability in Science," doi:10.17226/25303. "Nine Judges, Two Effective Votes: Correlated Errors Undermine LLM Evaluation Panels," arXiv:2605.29800 — ~75% of nominal independence lost, 8-22pp accuracy shortfall. "How Independent are Large Language Models?", arXiv:2604.07650. "A Systematic Methodology for Evaluating Failure Independence in LLM-Generated Code," arXiv:2607.02808 — structural variation does not buy failure independence. ISO/IEC 17025 7.10/8.7 (via PREMISE-118).
+  Risk level: High
+  What is at risk: Every disposition produced by 15a/15b/15c, including the 14 from 2026-07-20 and the 18 from this run, and the 121 standing premises. Per PREMISE-118, incorporated in this run, naming this defect obliges a RETROSPECTIVE IMPACT ASSESSMENT over results already produced. **That assessment has not been performed. The defect was named on 2026-07-20 in REVISE-233; 18 further dispositions were produced on 2026-07-21 without it. The premise validated in this run is violated by this run, and it is recorded here rather than elided.**
+  Recommended action (Tom):
+    1. **ESTABLISH ONE HOUSE NUMBER.** Measure 15a/15b source-citation overlap under full blocking. The five-item overlap above is the starting datum; a proper measurement over a run gives the discount to apply.
+    2. **RECORD THE FOUR SHARED COMPONENTS** for every claimed second check: code path, corpus, model, execution context. Treat checks sharing all four as a single channel regardless of label.
+    3. **ADOPT NASEM VOCABULARY VAULT-WIDE** and forbid "independently confirmed" unless the second check obtained its own data by a different path. This is now PREMISE-120 and is stated; what is routed here is enforcement.
+    4. **PERFORM THE RETROSPECTIVE IMPACT ASSESSMENT** that PREMISE-118 requires over the 2026-07-20 and 2026-07-21 disposition sets. Per PREMISE-118 the correct response is to PRICE the defect (the measured 8-22pp shortfall gives a bound), not to disown the output and not to proceed silently.
+    5. DECIDE whether 15c should continue dispositioning while the assessment is outstanding. 15c has no authority to suspend itself and did not.
+  Urgency: High
+  Status: OPEN — awaiting Tom's review. Second consecutive run in which this condition is documented and unremedied (see REVISE-233, 2026-07-20).
+  PROVENANCE:
+    Origin: 15b (SYSTEMIC-RISK-FLAG-A)
+    Chain: [14a, 14b -> 15b -> 15c]
+    Transform at each step:
+      15b: Cross-item pattern identified across four items; High
+      15c: Evaluated and upheld; a fifth instance added from within this run (cross-direction source overlap under full blocking); PREMISE-118's retrospective-assessment obligation applied to this agent and recorded as unmet
+    Current status: REVISION-FLAGGED
+    Disposition record: CROSS-ITEM FLAG EVALUATIONS (lit_search_returns.md, 2026-07-21)
+
+REVISE-241:
+  Date flagged: 2026-07-21
+  Source: SYSTEMIC-RISK-FLAG-B (Agent 15b, 2026-07-21) — evaluated by 15c, UPHELD and applied item-by-item within this run
+  Item type: CROSS-ITEM SYSTEMIC
+  Affected items: ASSUMPTION-486, ASSUMPTION-489, PRESUMPTION-507, PRESUMPTION-510
+  Common vulnerability: Sound observation, over-corrective remedy. Each of the four pairs a defensible finding with a proposed control whose own documented failure mode is worse than the problem — abolishing acknowledgement (removes the fastest failure detector and cannot distinguish non-receipt from informed rejection), tightening a detector with no oracle (converts false positives into silent false negatives), quarantining disputed figures (stops work in a channel that cannot clear the stop), a flat admission cap (binds immediately against 67 carried items, gets raised, leaves arrival-minus-service untouched). In every case the literature's actual remedy is graded rather than binary.
+  Action already taken by 15c within this run — recorded so the flag is not double-counted as outstanding work: the graded substitution was applied to all four items at disposition. ASSUMPTION-486 -> REVISE-237, recommending content read-back as delivery check plus output appearance as effectiveness check plus a third "received and declined" state, with the abolition explicitly not recommended. ASSUMPTION-489 -> PREMISE-113, which makes a labelled corpus with precision AND recall load-bearing and excludes the local verdict. PRESUMPTION-507 -> PREMISE-117, whose statement is "the defect is silence, not continuation," with quarantine excluded and mark-and-revise substituted. PRESUMPTION-510 -> PREMISE-119, which excludes the flat cap and substitutes the requirement to establish service rate > 0 before designing any admission policy.
+  Literature basis: Joint Commission Journal on Quality and Safety S1549-3741(04)30053-5 and PMC12597367 (read-back increases task completion). Snyk, "Minimizing False Positives," and OX Security (threshold loosening suppresses detection). UK ONS Revisions and Correction of Errors Policy (mark and revise, not withdraw). arXiv:2603.13870 and arXiv:2601.22295 (value-based screening and dynamic shadow price over fixed caps); practitioner evidence that fixed WIP limits are raised on first bind.
+  Risk level: High
+  What remains outstanding and requires Tom: the STANDING RULE, which 15c cannot install. 15b proposes: before adopting any proposed control, search for its documented failure mode and state it; prefer graded controls (discount, flag, value-based triage, read-back with content) to binary ones (abolish, quarantine, cap); require every proposed detector or process change to come with a positive control demonstrating it still fires when it should.
+  15c's note on placement: this rule is the same shape as PREMISE-107's discriminating-test requirement applied to REMEDIES rather than to DIAGNOSES. PREMISE-107 already holds that a remedy attached to an observation without being validated against the actual mechanism costs effort AND leaves the fault in place. **Recommend merging this rule into PREMISE-107 as a second clause rather than filing it as a separate premise** — a separate premise would be a duplicate of an existing one, which is the volume-over-value pattern MONITOR-461 exists to watch. 15c does not amend PREMISE-107 on its own authority.
+  Urgency: High
+  Status: OPEN — awaiting Tom's review (standing rule and PREMISE-107 merge only; item-level application already complete)
+  PROVENANCE:
+    Origin: 15b (SYSTEMIC-RISK-FLAG-B)
+    Chain: [14a, 14b -> 15b -> 15c]
+    Transform at each step:
+      15b: Cross-item pattern identified across four items; High
+      15c: Evaluated and upheld; applied item-by-item at disposition with each binary control excluded and its failure mode stated; residual standing rule routed to Tom with a recommended merge into PREMISE-107 rather than a new premise
+    Current status: REVISION-FLAGGED (residual process change only)
+    Disposition record: CROSS-ITEM FLAG EVALUATIONS (lit_search_returns.md, 2026-07-21)
+
+**Intake summary (2026-07-21):** 5 flags added (REVISE-237..241) from the 2026-07-20 EOD batch of 18 — two item-level (237, 238) and three cross-item systemic (239 Critical, 240 High, 241 High), all three of 15b's SYSTEMIC-RISK flags having been evaluated and upheld rather than passed through. REVISE-238 is the only item in the batch whose recommended action carries an irreversible failure mode and is the one to read first: run `PRAGMA integrity_check` on the live open-story.db before any recovery action. REVISE-237 places PREMISE-108 UNDER-REVIEW, the first consistency conflict against the validated register since PREMISE-101/PRESUMPTION-501 on 2026-07-20. **Standing caution per PREMISE-121, validated in this run:** these five enter a channel with demonstrated near-zero throughput, and each additional correctly-argued item can lower the probability that any item is acted on. If only one is read, read REVISE-238. If a second, REVISE-239 — it is the change that would make the other four checkable.
+
+REVISE-242:
+  Date flagged: 2026-07-21
+  Source: Agent 15c register-integrity check, performed as part of the 2026-07-21 verification pass
+  Item type: REGISTER INTEGRITY — not a literature disposition
+  **Finding: 40 validated premises are referenced across the vault but are ABSENT from validated_premises.md.**
+  Detail: validated_premises.md currently contains 78 entries running PREMISE-044 to PREMISE-121, plus a single stray PREMISE-006. PREMISE-001 through PREMISE-043 are not in the register. They ARE referenced — 40 distinct IDs in that range appear across lit_search_returns.md, monitor_queue.md, revision_flags.md and for_lit_search.md. The earliest surviving backup (validated_premises.md.bak.20260525-pre-15pipeline) contains ONE entry, so the loss predates 2026-05-25 and is not attributable to this run or to any recent one.
+  Why this matters beyond bookkeeping:
+    1. **15d is scheduled to re-check premises that do not exist.** The 2026-07-05 15d section of for_lit_search.md records a monthly INCORPORATED re-check covering PREMISE-002, PREMISE-004 (due 2026-07-05) and PREMISE-025 (overdue from 2026-06-18). None of the three is in the register. Either those re-checks were performed against something other than the register, or they were recorded as performed and were not.
+    2. **Consistency checking before INCORPORATE has been running against a partial register** — including in this run. 15c is required to check each new premise against existing validated premises for contradictions. It has been checking against 78 of 118, and could not have detected a conflict with any of the 40.
+    3. This is an instance of PREMISE-109 (a view over a read set is not a view over the system) holding for the register itself, and of PREMISE-120 (reproduction is not confirmation) — every consistency check since the loss reproduced the same blind spot exactly.
+  What is at risk: the completeness of every consistency check performed since before 2026-05-25; 15d's monthly INCORPORATED re-check cycle; any claim about the total number of validated premises, including the counts this pipeline reports about itself.
+  Recommended action (Tom):
+    1. Determine whether PREMISE-001..043 were lost, archived elsewhere, or never written to this file. The disposition records in lit_search_returns.md should permit reconstruction of their statements, since each INCORPORATE disposition contains the premise text.
+    2. Until resolved, treat "78 validated premises" and "121 premises" as different numbers meaning different things, and do not report either as a count of the system's validated self-knowledge.
+    3. Re-run 15c's consistency check for the 11 premises incorporated on 2026-07-21 once the register is complete.
+  Urgency: Medium (no active decision is known to depend on the missing entries; but the defect is silent, long-standing, and invalidates a check the pipeline reports as performed)
+  Status: OPEN — awaiting Tom's review
+  15c note on its own conduct: this was found by a verification step, not by the disposition process, and it had been undetected across every prior run of this agent. Recorded per the fail-loud convention rather than corrected silently — 15c did not reconstruct the missing entries, which would have meant inventing register content from disposition text without review.
+  PROVENANCE:
+    Origin: 15c (register integrity check)
+    Chain: [15c]
+    Transform at each step:
+      15c: Cross-referenced PREMISE IDs cited across four registry files against the entries present in validated_premises.md; 40 orphan references found; backups checked to date the loss
+    Current status: REVISION-FLAGGED
+    Disposition record: RUN SUMMARY — Agent 15c, 2026-07-21 (lit_search_returns.md)

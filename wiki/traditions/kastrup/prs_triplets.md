@@ -371,4 +371,49 @@ PRS-40:
   Evidence: "could God have chosen for things to be some other way?... the choice was made based on what God is... Free will and determinism are one." Time stamps: "0:20:30 Why am I here & now, not there & then?" / "0:47:00 Why is nature the way it is?"
 
 ---
-*Total PRS triplets: 40*
+PRS-41:
+  Problem: The universe shows what looks like overwhelming evidence of purpose and directional evolution — does analytic idealism have to posit a plan (teleological design), or can it account for apparent purpose without one?
+  Resource: Kastrup's immanent-teleology move: purpose is the intrinsic, "instinctive" self-organizing tendency of universal consciousness (mind-at-large), not a goal imposed from outside; paired with Currivan's cosmology of an informationally self-realizing, evolving universe as an independent route to the same directionality.
+  Solution: Apparent cosmic purpose is reframed as the natural behavior of a conscious cosmos unfolding its own dispositions — dissolving the design-vs-blind-chance dichotomy by locating directionality inside the one universal subject rather than in an external planner.
+  Date Added: 2026-07-21
+  Source: Overwhelming evidence for purpose, but is it instinctive or planned? — Jude Currivan & Bernardo Kastrup, explo; PROP-2026-07-01-003
+  Confidence: Medium
+  Evidence: Full dialogue "Overwhelming evidence for purpose, but is it instinctive or planned? … exploring a living, evolving universe," recorded 2026-06-23 in Kastrup's With Reality in Mind series.
+
+PRS-42:
+  Problem: Can subjective perspectives be nested within one another, or does a larger perspective necessarily subsume any smaller one?
+  Resource: Kastrup's dissociation-boundary principle vs. Levin's nested-agent (cells-to-selves) hierarchy of competencies.
+  Solution: Kastrup holds that integration precludes genuinely nested inner perspectives; individuation requires a dissociative boundary, not containment — a falsifiable divergence from Levin's account.
+  Date Added: 2026-07-21
+  Source: Michael Levin and Bernardo Kastrup in conversation (With Reality in Mind); PROP-2026-07-08-002
+  Confidence: High
+  Evidence: The conversation's stated crux — "a smaller perspective can't exist within a larger one; it would get automatically subsumed into one integrated perspective."
+
+PRS-43:
+  Problem: What distinguishes a real subject (alter) from a mere functional sub-agent within a larger mind?
+  Resource: The dissociation criterion — a boundary of disconnected cognitive associations — as the marker of a genuine private inner life.
+  Solution: Individuation is grounded in dissociation rather than in integration or nesting, giving a principled test for where subjecthood begins.
+  Date Added: 2026-07-21
+  Source: Michael Levin and Bernardo Kastrup in conversation (With Reality in Mind); PROP-2026-07-08-002
+  Confidence: Medium
+  Evidence: Kastrup's consistent use of dissociation as the mechanism by which alters emerge from mind-at-large.
+
+PRS-44:
+  Problem: Under analytic idealism, what would distinguish a system that merely models mental states in language from one that is a locus of experience?
+  Resource: The dissociation/alter criterion — experience requires a genuinely dissociated boundary in the universal field, not a syntactic model of one.
+  Solution: A criterion under which linguistic competence, however complete, is not sufficient for subjecthood; the "wake up" question is reframed from a capability question to a boundary-formation question.
+  Date Added: 2026-07-21
+  Source: AI, consciousness & awakening — Shamil Chandaria in dialogue with Bernardo Kastrup; PROP-2026-07-14-001
+  Confidence: Medium
+  Evidence: The session's framing question, "In a world of words... could AI wake up?", and Kastrup's standing computation-is-description argument applied to it.
+
+PRS-45:
+  Problem: Predictive-processing accounts of awakening (Chandaria) and idealist accounts (Kastrup) both claim to explain contemplative deconstruction of the self — do they conflict?
+  Resource: Direct dialogue between a Bayesian self-model-collapse account and a de-dissociation account of the same phenomenology.
+  Solution: A candidate mapping in which the Bayesian story describes the mechanism of the alter's boundary and the idealist story describes what the boundary is a boundary in — complementary rather than rival.
+  Date Added: 2026-07-21
+  Source: AI, consciousness & awakening — Shamil Chandaria in dialogue with Bernardo Kastrup; PROP-2026-07-14-001
+  Confidence: Speculative
+  Evidence: The pairing itself; the recording is the primary evidence and should be listened to before this triplet is promoted past Speculative.
+
+*Total PRS triplets: 45*

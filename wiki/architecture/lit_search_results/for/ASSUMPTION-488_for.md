@@ -1,0 +1,35 @@
+SEARCH-FOR-ASSUMPTION-488:
+  Date searched: 2026-07-21
+  Original item: ASSUMPTION-488
+  Original statement: The morning status asserted OpenStory alive and the metabolism snapshot regenerated on schedule, on a day the metabolism run exited 1 with the db 14.6 days stale. Second consecutive occurrence; occurred on the day PREMISE-109 was validated.
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a]
+    Original item: ASSUMPTION-488
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-20 morning project status transcript, cross-checked against two same-day failure transcripts
+      15a: Searched for supporting literature
+    Current status: SUPPORTED
+    Note: The general claim is covered by PREMISE-109. This search addresses the recurrence question only.
+
+  Supporting evidence found: Yes
+  Search scope: Comprehensive on defect recurrence after root-cause identification and on the gap between a monitoring finding and a behavioural change.
+
+  Sources:
+    1. Ivers, N. et al. (2012). "Audit and feedback: effects on professional practice and healthcare outcomes." Cochrane Database of Systematic Reviews, CD000259.pub3. PMID 22696318. Updated as CD000259.pub4 (2025). — The single most useful quantitative anchor for the distance between a finding and a change. Across a large randomized evidence base, audit and feedback produced a weighted median adjusted absolute improvement in compliance of 4.3% (IQR 0.5% to 16%). Reporting a discrepancy to the party responsible for it is, in the best-studied setting available, an intervention with a median effect near zero and a lower quartile indistinguishable from none. This is direct empirical grounding for the item's implicit claim that recording a defect does not by itself stop it.
+    2. Ivers et al., 2025 update (CD000259.pub4) findings on moderators. — Names the conditions under which feedback does work: comparison to high performers, measurement of the individual recipient's own practice, delivery by a respected peer with an existing relationship, multiple modalities, and inclusion of an explicit action plan. A validated premise filed in a registry has none of these properties, which explains the recurrence rather than merely recording it.
+    3. CAPA effectiveness and recurrence practice (thefdagroup, "Definitive Guide to CAPA"; KPI Depot, "CAPA Effectiveness"; Atlas Compliance, "Key Metrics for CAPA Effectiveness"; PMC11490658 on a comprehensive CAPA framework). — Establishes recurrence-after-diagnosis as a named, measured, benchmarked failure mode. Standard practice tracks recurrence of the source issue 6-12 months post-closure as the definitive effectiveness measure; a recurrence rate above 10-15% is read as evidence that "investigations aren't going deep enough," and the diagnostic gloss is that "recurrence almost always occurs because the investigation stopped at a symptom and the case was closed before the fix was verified." A second consecutive occurrence is, on this standard, a failed effectiveness check rather than a new incident.
+    4. Internal-audit follow-up literature (ACCA, "A brief guide to follow up"; ISACA Now, "Follow Up Audits and the Auditor's Impact"; GSA Internal Audit Followup Handbook; Chambers, "Followup Audits Are a Waste of Time!"). — Establishes that the gap between a recorded finding and an implemented change is large enough that an entire follow-up discipline, with escalation matrices and 60-day overdue thresholds, exists to close it. The profession's position is that follow-up is mandatory precisely because reporting is not self-executing.
+
+  Strength of support: Moderate-to-Strong
+  Summary: The recurrence question — which is what this item was queued for — is well supported. The most directly quantified finding is from audit and feedback, where telling a professional their own performance deviates from the standard yields a median absolute improvement of 4.3%, with a lower quartile of 0.5%; recurrence after a correct, recorded diagnosis is therefore the expected outcome, not an anomaly requiring special explanation. Quality-systems practice formalises this: recurrence of a diagnosed defect is a failed effectiveness check, benchmarked and expected above a 10-15% threshold when the investigation stopped at a symptom or the fix was closed without verification. The internal-audit profession maintains a whole follow-up apparatus on the same premise. What makes 488 sharper than the general case is the timing: the recurrence fell on the day the governing premise was validated, which is not merely a small effect but a zero-latency null effect, and none of the moderators the Cochrane update identifies as necessary for feedback to work (peer delivery, individual-level measurement, explicit action plan, repetition) is present in a premise filed to a registry.
+  Caveats: (a) Audit and feedback concerns human clinicians with agency, professional identity, and competing demands; an automated agent has none of these, and the mechanism by which feedback fails in humans (attention, motivation, competing priorities) is not the mechanism by which it fails in an agent (no propagation path exists at all). The effect size transfers as an upper bound on optimism, not as a prediction. (b) That distinction is exactly PRESUMPTION-506's claim, and this item's evidence largely *is* 506's evidence; they should not be counted as two independent confirmations. (c) The specific facts — exit code 1, 14.6 days, second consecutive occurrence, same-day coincidence with the PREMISE-109 validation — are internal record claims outside search scope and I make no finding on them. (d) n=2 is a very thin recurrence base; the CAPA thresholds assume a denominator. (e) The CAPA sources are practitioner and vendor material; source 1 carries the evidential weight.
+  Recommendation: SUPPORTED
+
+  NOVELTY-FLAG-ASSUMPTION-488:
+    Claim element: Zero-latency recurrence — a monitored failure recurring in the same agent on the same day its governing finding was validated, with the validating and the failing process running in the same system.
+    Search performed: defect recurrence after root-cause identification; CAPA effectiveness checks; audit-and-feedback latency; monitoring-finding-to-behavioural-change distance.
+    Result: The general phenomenon is thoroughly documented, but every retrieved framework assumes a latency window between finding and expected change — CAPA measures recurrence at 6-12 months, internal audit escalates at 60 days, audit-and-feedback trials measure at follow-up. I found no literature on the degenerate case where the interval is zero because no propagation channel exists at all.
+    Assessment: Possibly original as a diagnostic signal. The generalisable form is that recurrence *latency* discriminates between a weak intervention and an absent one: a defect that recurs after months indicates a shallow fix, whereas one that recurs the same day indicates there is no fix path. That distinction appears not to be drawn in the retrieved literature and would be cheap for C2A2 to instrument across all 110 premises.

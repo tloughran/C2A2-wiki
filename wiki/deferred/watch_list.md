@@ -12,7 +12,84 @@ Status: WATCHING | RESOLVED | STALE | CANCELLED
 
 ## ACTIVE ITEMS
 
-*(none currently — see RESOLVED INDEX below)*
+WATCH-002:
+  Channel: review-conditional
+  Date added: 2026-07-21
+  Source: PROP-2026-07-19-003 (Wright — "N.T. Wright: Who is This God?", Between Beliefs / KSBJ, posted 2026-07-17)
+
+  Condition: The episode's actual content becomes assessable — i.e. EITHER (a) Tom listens to the audio and records a disposition, OR (b) body text / transcript / show notes appear at https://ntwrightpage.com/2026/07/17/n-t-wright-who-is-this-god/ or the episode becomes indexed in search.
+  Check method: Weekly — fetch the source URL looking for body text beyond the bare media embed; plus targeted web search for the episode title + "Between Beliefs" / KSBJ.
+  Check cadence: Weekly
+
+  Last checked: 2026-07-21
+  Check count: 1
+  Result history:
+    - 2026-07-21: Web search for the episode ("N.T. Wright 'Who is This God' Between Beliefs KSBJ 2026 podcast") returned only the generic NTWrightPage Books category page — no episode entry, no transcript, no show notes. Condition NOT met. Matches the proposal's own assessment (page is a bare media embed; `content_verified: false`).
+
+  On resolution:
+    Action: Notify Tom that the content is now assessable, and re-queue a proposal for review.
+    Destination: wiki/inbox/proposals/pending/ (proposal must first be RESTORED — see INTEGRITY FLAG below; the source file no longer exists in the vault)
+    Context to attach: The recovered summary/why-it-matters text from `review/2026-07-20_review.html` (card-PROP-2026-07-19-003), the source URL, and the original handling note: "CONTENT UNVERIFIED — DO NOT INGEST WITHOUT LISTENING FIRST."
+
+  Status: WATCHING
+
+  PROVENANCE:
+    Origin: review decision (2026-07-20 blanket-approval pass) — item present on the review page but ABSENT from the decision archive; no disposition recorded.
+    Original item: PROP-2026-07-19-003, filed 2026-07-19, `content_verified: false`, proposes no PRS triplets.
+    Chain: Wright tradition agent (2026-07-19) → pending/ → sewing agent 2026-07-19 deliberately declined to process ("Correct handling is Tom's reviewer action (listen, then rewrite or deny as duplicative of the God's Homecoming proposals), not sewing") → present as a card on the 2026-07-20 review page → not among the 34 APPROVEs in `review/archive/2026-07-20_decisions.md` → file no longer present in pending/, approved/, denied/, needs_review/, or anywhere in the vault → picked up by Agent 16 on 2026-07-21.
+
+WATCH-003:
+  Channel: review-conditional
+  Date added: 2026-07-21
+  Source: PROP-2026-07-19-001 (Rohr — "The Beatitudes: Week Two: Weekly Summary", CAC daily meditations, 2026-07-18)
+
+  Condition: Tom records an explicit disposition for this proposal (APPROVE / DENY / CHANGE), OR confirms that its omission from the 2026-07-20 approval set was deliberate and the item is closed as covered by existing synthesis notes.
+  Check method: Check `review/archive/` for a later decisions file naming PROP-2026-07-19-001 or the beatitudes-week-two slug; check whether the file reappears in any proposals/ subfolder.
+  Check cadence: Weekly
+
+  Last checked: 2026-07-21
+  Check count: 1
+  Result history:
+    - 2026-07-21: No disposition found in any decision archive file. File absent from pending/, approved/, denied/, needs_review/, inbox/, and the vault. Condition NOT met.
+
+  On resolution:
+    Action: Close the item (archive to resolved/) if Tom confirms deliberate omission; re-queue to pending/ if Tom wants it reviewed.
+    Destination: wiki/deferred/resolved/ or wiki/inbox/proposals/pending/
+    Context to attach: Recovered summary text from `review/2026-07-20_review.html` (card-PROP-2026-07-19-001); the sewing agent's note that the item's core move (Beatitudes as descriptive outcome-profile rather than imperative) is already recorded in `synthesis/friston_rohr_bridge.md` and `synthesis/loughran_rohr_bridge.md`, so the signal is not lost even if the proposal is denied.
+
+  Status: WATCHING
+
+  PROVENANCE:
+    Origin: review decision (2026-07-20 blanket-approval pass) — item present on the review page but ABSENT from the decision archive; no disposition recorded.
+    Original item: PROP-2026-07-19-001, filed 2026-07-19.
+    Chain: Rohr tradition agent (2026-07-19) → pending/ → sewing agent 2026-07-19 deferred it as "the weaker of two Rohr items this week" → present as a card on the 2026-07-20 review page → not among the 34 APPROVEs → file no longer present anywhere in the vault → picked up by Agent 16 on 2026-07-21.
+
+---
+
+### INTEGRITY FLAG — 2026-07-21 — two proposals left the pipeline with no recorded disposition
+
+Raised by Agent 16. **Not resolvable by Agent 16 — requires Tom.**
+
+The 2026-07-20 review pass recorded a blanket approval of **34** proposals. The queue at review time held **36** cards (32 pending as of the 2026-07-20 Agent 16 run, plus 4 new 2026-07-20 Levin/Friston proposals). The arithmetic gap of 2 is exactly:
+
+  1. `2026-07-19_rohr_beatitudes-week-two-weekly-summary.md` (PROP-2026-07-19-001) → WATCH-003
+  2. `2026-07-19_wright_who-is-this-god-between-beliefs.md` (PROP-2026-07-19-003) → WATCH-002
+
+Verified this run: both appear as cards in `review/2026-07-20_review.html`; neither appears in `review/archive/2026-07-20_decisions.md`; `pending/` is now empty (0 files); neither file exists in `approved/` (252), `denied/` (1), `needs_review/` (1), `inbox/`, or anywhere else in the vault (filename and content searches both negative).
+
+**Two readings, and Agent 16 cannot distinguish them from the artifacts:**
+- **Deliberate:** Tom intentionally withheld approval from exactly the two items the sewing agent had flagged on 2026-07-19 (one "DO NOT INGEST WITHOUT LISTENING FIRST", one a weaker duplicate). The correspondence is exact, which makes this the more likely reading. But the files were then removed rather than left in `pending/` or moved to `denied/`, so no record survives.
+- **Incidental loss:** the bulk `pending/ → approved/` move dropped the two items that were not on the approval list.
+
+Either way the disposition is unrecorded and the source files are gone.
+
+**Content is recoverable.** `review/2026-07-20_review.html` preserves each card's SUMMARY and WHY IT MATTERS text, and both source URLs are live:
+- https://cac.org/daily-meditations/beatitudes-week-two-weekly-summary/
+- https://ntwrightpage.com/2026/07/17/n-t-wright-who-is-this-god/
+
+**Recommended (Tom's call — Agent 16 has not acted):** confirm whether the omission was deliberate. If yes, record a retroactive DENY (or CHANGE) in the decision archive so the disposition exists and close WATCH-002/003. If no, restore both proposals from the review-page text to `pending/`.
+
+**Note this is the failure mode the standing TOOLING FLAG predicted.** `tools/generate_review_page.py` (~line 304) emits position-based decision IDs rather than stable `proposal_id`s. This run also confirms the review page's card IDs and button IDs are offset relative to each other around the 07-19 items (the DENY/CHECK/CHANGE buttons immediately preceding `card-PROP-2026-07-19-003` are wired to `PROP-2026-07-19-002`), so a decision registered against one card can be recorded against a different proposal. That is a plausible mechanism for a silent 2-item loss during a 36-item blanket pass, and it raises the priority of the fix from housekeeping to correctness.
 
 ---
 
@@ -2900,3 +2977,47 @@ Status: WATCHING | RESOLVED | STALE | CANCELLED
 ---
 
 *Run completed 2026-07-20.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-07-21
+
+**Run context:**
+- One day since last logged run (2026-07-20). **Not a steady-state run.** Tom executed a review pass on 2026-07-20 that cleared the entire pending queue; reconciling it surfaced two proposals that left the pipeline with no recorded disposition. First items added to the active watch list since WATCH-001 resolved on 2026-05-12.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`, the unchanged WATCH-001 superseded tombstone. `grep -L TRACKED-16` returned nothing: **no new untracked items.**
+- `wiki/review/archive/`: **15 files (was 14) — new: `2026-07-20_decisions.md`.** Read in full: 34 dispositions, **all APPROVE**, no DENY/CHECK/CHANGE/CONDITIONAL. So no new Channel 1 intake *by disposition*. Coverage now current through 2026-07-20.
+- **Reconciliation against that archive is where this run's finding came from:** the 07-20 pass approved 34 of the 36 proposals then in the queue. The 2 unaccounted items are now tracked as WATCH-002 and WATCH-003 under a new INTEGRITY FLAG (see ACTIVE ITEMS). Both were present as cards on the 2026-07-20 review page; neither has a disposition; neither file exists anywhere in the vault.
+- Channel 2 (agent-deferral) and Channel 3 (human-watch): `wiki/deferred/` tree confirmed — `watch_list.md` plus `resolved/2026-05-12_WATCH-001.md`. Both channels operational and empty.
+
+**Condition Checks (executed this run):**
+- **WATCH-002** (Wright, "Who is This God?"): web-searched for the episode. Only the generic NTWrightPage Books category page returned — no episode entry, transcript, or show notes. **Condition NOT met.** Next check 2026-07-28.
+- **WATCH-003** (Rohr, Beatitudes Week Two): searched all decision archives for a disposition and all proposal folders for the file. Neither found. **Condition NOT met.** Next check 2026-07-28.
+
+**Stale Item Check:**
+- Both active items are at check count 1. No STALE-WATCH-FLAGs raised.
+
+**Watch List Status:**
+- Items checked: 2
+- Items resolved: 0
+- Items still watching: 2 (WATCH-002, WATCH-003)
+- Items stale: 0
+- New items added: 2
+- Status: Active items non-empty for the first time since 2026-05-12; one resolved item indexed (WATCH-001).
+
+**Notes:**
+- **NEW — INTEGRITY FLAG (needs Tom, highest priority this run):** PROP-2026-07-19-001 (Rohr) and PROP-2026-07-19-003 (Wright) left the pipeline with no recorded disposition and no surviving file. The likeliest reading is deliberate withholding — they are exactly the two items the 2026-07-19 sewing run flagged (one carrying "DO NOT INGEST WITHOUT LISTENING FIRST", one a weaker duplicate) — but the record does not say so, and incidental loss during the bulk `pending/ → approved/` move cannot be excluded. **Content is recoverable** from `review/2026-07-20_review.html` and both live source URLs. Agent 16 has tracked but not acted: restoring proposals or recording retroactive dispositions is outside remit.
+- **TOOLING FLAG — escalated from housekeeping to correctness:** the standing `generate_review_page.py` position-ID issue (~line 304) is no longer hypothetical. Inspecting `2026-07-20_review.html` shows card IDs and decision-button IDs offset relative to each other around the 07-19 items — the DENY/CHECK/CHANGE buttons immediately preceding `card-PROP-2026-07-19-003` are wired to `PROP-2026-07-19-002`. A decision registered against one card can be recorded against a different proposal. This is a credible mechanism for a silent 2-item loss in a 36-item pass and should be fixed **before the next review pass.**
+- **PENDING-MOVEMENT NOTE:** `inbox/proposals/pending/` is now **0 items** (was 32). The 20-day backlog is cleared; `approved/` stands at 252, `denied/` at 1. 34 items were copied to `inbox/` for Phase 1 ingestion.
+- **MAINTENANCE FLAG — watch-list file growth (raised 2026-07-18, still open):** `watch_list.md` is now ~2,960 lines / ~219 KB. Recommend rolling the RUN LOG into dated archives (e.g. `wiki/deferred/run_log/2026-Q2.md`), leaving active items + resolved index + trailing ~14 days. No data lost. Tom's call; not executed unilaterally.
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- 2026-07-28 — WATCH-002 (Wright episode content availability), WATCH-003 (Rohr disposition recorded).
+
+**Agent 16 Status:** Operational. Two items now WATCHING. Decision archive coverage current through 2026-07-20; pending queue empty. **Open for Tom:** (1) NEW — resolve the two undisposed 2026-07-19 proposals (deliberate omission → record retroactive dispositions; otherwise restore from review-page text); (2) the `generate_review_page.py` position-ID fix, now escalated to correctness-critical and recommended before the next review pass; (3) the needs_review tombstone deletion; (4) the run-log archival recommendation.
+
+---
+
+*Run completed 2026-07-21.*

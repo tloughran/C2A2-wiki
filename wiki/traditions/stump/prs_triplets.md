@@ -241,3 +241,14 @@ PRS-28:
 
 ---
 *Total PRS triplets: 25 (PRS-01 and PRS-03 re-homed to Loughran, 2026-06-11)*
+
+PRS-29:
+  Problem: How does moral agency get off the ground in Aquinas if the infused virtues are given rather than acquired — does divine infusion bypass the agent's own willing?
+  Resource: Aquinas's account of the will's quiescence: a non-resisting state that is genuinely the agent's own act, into which grace is infused so that the resulting virtuous willing is both God's gift and the agent's own.
+  Solution: Reframes Aquinas's ethics as second-personal relationship rather than disposition-acquisition — cooperative causality preserves the agent's ownership of virtuous action while grounding it in the Holy Spirit's indwelling.
+  Date Added: 2026-07-21
+  Source: Aquinas's Ethics: the Infused Virtues and the Indwelling Holy Spirit; PROP-2026-07-09-001
+  Confidence: Medium
+  Evidence: "For Aquinas the moral life is first and foremost a matter of having a right second-personal relationship"; the will passes from resisting grace to quiescence, at which instant grace is infused and the Spirit indwells with all infused virtues (New Blackfriars 106.1).
+
+*Total PRS triplets: 26*

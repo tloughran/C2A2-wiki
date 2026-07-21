@@ -12777,3 +12777,178 @@ ITEM: PRESUMPTION-505 — [QUEUED] [SEARCHED-15a: 2026-07-20] [SEARCHED-15b: 202
   Search targets: silent failure and fail-safe vs fail-obvious design; self-monitoring coverage; watchdog liveness vs safety properties; sensor faults presenting as nominal readings.
   In-house test available: for each health check, ask whether its pass state is reachable when the monitored subsystem is dead; count how many current green signals survive.
   PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-505 · Item type PRESUMPTION (unstated) · Transform: inferred by generalizing 15d's local statement across three further same-day cases · Current status UNTESTED
+
+=== 2026-07-20 EOD BATCH (14a/14b) — 18 items enqueued ===
+
+ITEM: ASSUMPTION-482 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority HIGH
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  15c disposition: MONITOR -> MONITOR-458 (paired with MONITOR-462; one experiment dispositions both)
+  Item type: ASSUMPTION (stated)
+  Claim: The pipeline's binding constraint is not evidence but measurement nobody has taken; 11 of 14 dispositions turn on discriminating tests reducing to ~6 measurements, 5 under an hour each.
+  Search targets: diagnosis cost as a fraction of mean time to repair; measurement-limited vs evidence-limited inquiry; Theory of Constraints identification of a non-binding constraint.
+  In-house test available: take the five measurements and count how many dispositions resolve.
+  Note: PRESUMPTION-513 challenges this diagnosis directly; search should be read against both.
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-482 · Item type ASSUMPTION (stated) · Transform: extracted from the 2026-07-20 15c disposition run, exact quote · Current status UNTESTED
+
+ITEM: ASSUMPTION-483 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority HIGH
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  15c disposition: INCORPORATE -> PREMISE-111
+  Item type: ASSUMPTION (stated)
+  Claim: The read channel is not the dominant correlation source between 15a and 15b; the 2026-07-19 change removed the weakest of at least four. Relabel as "read-channel independence enforced"; do not re-run the 905-pair record.
+  Search targets: correlated errors in LLM ensembles and judges (arXiv:2606.29270, arXiv:2606.10296); blinding effects in peer review (van Rooyen JAMA 1998 PMID 9676666, McNutt 1990); shared-pretraining correlation channels.
+  In-house test available: run 15a/15b on one item under full blocking and measure source-citation overlap.
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-483 · Item type ASSUMPTION (stated) · Transform: extracted from REVISE-233 adjudication block · Current status UNTESTED
+
+ITEM: ASSUMPTION-484 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority Medium
+  15a: PARTIALLY-SUPPORTED (Moderate/Weak; NOVELTY-FLAG) | 15b: PARTIALLY-CHALLENGED (Weak)
+  15c disposition: MONITOR -> MONITOR-459 (Priority High, NOVELTY-driven)
+  Item type: ASSUMPTION (stated)
+  Claim: An abstention republishes the disputed figure with the caveat quietly removed while appearing to withhold it; report a directional bound instead.
+  Search targets: van der Bles PNAS 2020 (PMID 32205438); RSOS 2023 (doi 10.1098/rsos.230604); numeric vs verbal uncertainty and source credibility; belief-consistent processing.
+  In-house test available: inspect the next artifact citing a connector count for reappearance of the uncaveated fallback figure.
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-484 · Item type ASSUMPTION (stated) · Transform: extracted from REVISE-234 · Current status UNTESTED
+
+ITEM: ASSUMPTION-485 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority HIGH
+  15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  15c disposition: INCORPORATE -> PREMISE-112
+  Item type: ASSUMPTION (stated)
+  Claim: Replacing a possibly-wrong objective with an unmeasurable one converts it into no objective; do not remove convergence from Rung-2 scoring before a separable alternative exists.
+  Search targets: objective specification under measurement uncertainty; unfalsifiable success criteria; instrumenting competing objectives in parallel; MacIntyre's epistemic-crisis criterion as an operational measure.
+  In-house test available: rank-correlate convergence, mutual registration and an ITT-style score over existing dialogues, with a mandatory pre-dialogue ITT baseline.
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-485 · Item type ASSUMPTION (stated) · Transform: extracted from REVISE-235 · Current status UNTESTED
+
+ITEM: ASSUMPTION-486 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority Medium
+  15a: SUPPORTED (Strong) | 15b: CHALLENGED (Moderate)
+  15c disposition: REVISE -> REVISE-237 (Medium); PREMISE-108 -> UNDER-REVIEW
+  Item type: ASSUMPTION (stated)
+  Claim: The measure of delivery is flagged content appearing in the recipient's output, never an acknowledgement receipt; acknowledgement installs a green metric over the unchanged failure.
+  Search targets: closed-loop communication and read-back; proxy-metric substitution in handoff instrumentation; asynchronous vs synchronous handoff evidence.
+  In-house test available: enumerate 30 days of cross-agent flags and search each recipient's subsequent output.
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-486 · Item type ASSUMPTION (stated) · Transform: extracted from the PREMISE-108 instrumentation constraint · Current status UNTESTED
+
+ITEM: ASSUMPTION-487 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority Medium
+  15a: PARTIALLY-SUPPORTED (Moderate/Weak) | 15b: CHALLENGED (Strong)
+  15c disposition: REVISE -> REVISE-238 (HIGH — irreversible remedy hazard)
+  Item type: ASSUMPTION (stated)
+  Claim: open-story.db carries real on-disk B-tree corruption (not a mid-write artifact, since errors come from the point-in-time backup) and the writer has stopped; 14.6 days stale, 13 consecutive days failing.
+  Search targets: SQLite B-tree corruption causes and recovery; VACUUM INTO rebuild efficacy; detecting a stopped writer vs a failing write.
+  In-house test available: PRAGMA integrity_check on the live db Mac-side; check the writer process.
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-487 · Item type ASSUMPTION (stated) · Transform: extracted from the 2026-07-20 metabolism regen daily transcript · Current status UNTESTED
+
+ITEM: ASSUMPTION-488 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority HIGH
+  15a: SUPPORTED (Moderate-Strong; NOVELTY-FLAG) | 15b: NO-CHALLENGE-FOUND (None)
+  15c disposition: MONITOR -> MONITOR-460 (Priority High, NOVELTY-driven; INCORPORATE declined on evidence overlap with PREMISE-116)
+  Item type: ASSUMPTION (stated)
+  Claim: The morning status asserted OpenStory alive and the metabolism snapshot regenerated on schedule, on a day the metabolism run exited 1 with the db 14.6 days stale. Second consecutive occurrence; occurred on the day PREMISE-109 was validated.
+  Search targets: recurrence of a named defect after its diagnosis is recorded; distance between a monitoring finding and a behavioural change.
+  In-house test available: enumerate the morning run's read set (measurement 1 of 5).
+  Note: general claim already covered by PREMISE-109. Queued for the recurrence question, not the diagnosis.
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-488 · Item type ASSUMPTION (stated) · Transform: extracted from the 2026-07-20 morning project status transcript, cross-checked against two same-day failure transcripts · Current status UNTESTED
+
+ITEM: ASSUMPTION-489 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority Medium
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  15c disposition: INCORPORATE -> PREMISE-113
+  Item type: ASSUMPTION (stated)
+  Claim: The Summa metaphysical guardrail detector had a real parser bug; 11 of 13 reported violations were false positives and 2 were detector artifacts, leaving 0 genuine. A second defect (Summa-part-insensitive locus regex) remains open.
+  Search targets: false-positive rates in rule-based and static-analysis detectors; alert fatigue and the precision threshold for operator disengagement; detector self-audit practice.
+  In-house test available: tighten the locus regex, re-run, diff; audit remaining detectors for the same defect class.
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-489 · Item type ASSUMPTION (stated) · Transform: extracted from the 2026-07-20 Summa nightly verification transcript · Current status UNTESTED
+
+ITEM: ASSUMPTION-490 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority HIGH
+  15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  15c disposition: INCORPORATE -> PREMISE-114
+  Item type: ASSUMPTION (stated)
+  Claim: Three readings of one quantity within a week (QC 5, verification 15, nightly 20), with a named pending decision (tier calibration) stated to rest on which is right; plus inflated declared length_actual_words masking a 0.77x under-run.
+  Search targets: covered in general by PREMISE-105; search narrowly for arbitration rules — which measurement is authoritative when two instruments of a single system disagree and neither is externally calibrated.
+  In-house test available: re-derive all three counts over one frozen snapshot with the Notes-stripping rule stated (measurement 3 of 5).
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-490 · Item type ASSUMPTION (stated) · Transform: extracted from two same-day transcripts read together · Current status UNTESTED
+
+ITEM: ASSUMPTION-491 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority Medium
+  15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Weak)
+  15c disposition: INCORPORATE -> PREMISE-115
+  Item type: ASSUMPTION (stated)
+  Claim: agentic-cost-tracker confirmed broken (4 months silent write failure, independently confirmed); weekly-agent-ecosystem-report's 5-week gap is a missing SKILL.md instruction, not a broken agent; the pending Stump PRS-09 repoint has the wrong recorded target.
+  Search targets: specification-vs-execution attribution in agent failure; silent write-failure detection; independent confirmation as an upgrade path from inferred to established.
+  In-house test available: apply the one-line SKILL.md fix and confirm a file appears next cycle.
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-491 · Item type ASSUMPTION (stated) · Transform: extracted from the 2026-07-20 reviewer review weekly transcript · Current status UNTESTED
+
+ITEM: PRESUMPTION-506 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority CRITICAL
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  15c disposition: INCORPORATE -> PREMISE-116
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: [inferred] Validating a premise is presumed to change the behaviour it describes. No architectural step propagates a validated premise back to the agent it governs. PREMISE-109 was validated and the failure it names recurred the same morning in the same agent.
+  Risk if wrong: Critical — if true, 110 premises, 236 revision flags and 457 monitors have never altered an agent's conduct and the self-awareness layer is decorative.
+  Search targets: knowledge-to-practice gap and implementation science; guideline adherence without enforcement; finding-vs-intervention distinction in safety systems; closed-loop corrective action (CAPA).
+  In-house test available: for each of the 110 premises, name the governed agent and search its subsequent output for an attributable change. One pass.
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-506 · Item type PRESUMPTION (unstated) · Transform: inferred from the PREMISE-109 validation read against the same-day morning status and metabolism regen transcripts, with no propagation step found in any agent definition · Current status UNTESTED
+
+ITEM: PRESUMPTION-507 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority HIGH
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  15c disposition: INCORPORATE -> PREMISE-117
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: [inferred] A counting disagreement is presumed to remain open indefinitely without invalidating dependent decisions. Six standing disputes; no artifact withdrawn, no decision suspended, no arbitration rule proposed.
+  Risk if wrong: High — the disputes have been propagating into every downstream artifact since first flag.
+  Search targets: data-quality quarantine; provenance-based invalidation and lineage-driven recomputation; official-statistics practice on publishing under an unresolved definitional break.
+  In-house test available: list each discrepancy with its first-flag date and count downstream artifacts produced after it.
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-507 · Item type PRESUMPTION (unstated) · Transform: inferred from the day's three Summa count disagreements read alongside four standing ones · Current status UNTESTED
+
+ITEM: PRESUMPTION-508 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority HIGH
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
+  15c disposition: INCORPORATE -> PREMISE-118
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: [inferred] Naming a defect in an instrument is presumed to license continued use of it for the current run. 15c recorded that an LLM judge over correlated inputs can worsen the aggregate, noted it "bears directly on this agent," and dispositioned 14 items as that judge with no quarantine or confidence discount.
+  Risk if wrong: High — the six premises validated today and every prior disposition are of unknown quality.
+  Search targets: instrument qualification and out-of-calibration result handling in metrology; LLM-as-judge reliability under correlated inputs; self-flagged-instrument conventions in audit practice.
+  In-house test available: measure 15a/15b source-citation overlap under full blocking; add a status value for items produced under a self-flagged instrument.
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-508 · Item type PRESUMPTION (unstated) · Transform: inferred from 15c's own REVISE-233 text read against the completeness of the run; corroborated by the parallel Summa detector case · Current status UNTESTED
+
+ITEM: PRESUMPTION-509 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority Medium
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
+  15c disposition: MONITOR -> MONITOR-461
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: [inferred] More validated premises is presumed to be better. The INCORPORATE count is treated as the pipeline's health metric on the same day PREMISE-105 validated that artifact-volume counts are Goodhart-vulnerable proxies — a premise not applied reflexively.
+  Risk if wrong: Medium — the layer built to detect unexamined success criteria is steered by one.
+  Search targets: Goodhart's law and proxy substitution in evaluation regimes; volume-vs-value metrics in research assessment (DORA, Leiden Manifesto); single-author metrics and the diversity-prediction argument.
+  In-house test available: define a bad pipeline day in advance and classify the last 30 days; if none classifies as bad, the metric is not discriminating.
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-509 · Item type PRESUMPTION (unstated) · Transform: inferred from the day's outbound self-characterisation read against PREMISE-105, validated in the same batch · Current status UNTESTED
+
+ITEM: PRESUMPTION-510 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority HIGH
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  15c disposition: INCORPORATE -> PREMISE-119
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: [inferred] Production and judgment are presumed independently schedulable. No admission control on the system's own output, no state for "produced and unreviewable," no back-pressure from a review channel with arrival ~4/day and service 0/day across 15 days. PREMISE-106's admission-control lever was named for the lit queue and not applied here.
+  Risk if wrong: High — production at full rate would be actively lowering the value of the record.
+  Search targets: queueing applied to a human-in-the-loop service stage; work-in-progress limits and back-pressure (Kanban, TCP); batch-size effects on review latency and quality.
+  In-house test available: apply PREMISE-106's arithmetic to the review channel; test a one-HIGH-item-per-day admission cap against the decision rate.
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-510 · Item type PRESUMPTION (unstated) · Transform: inferred by applying PREMISE-106, validated the same day, to the review channel; no agent spec contains a production-limiting condition · Current status UNTESTED
+
+ITEM: PRESUMPTION-511 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority Medium
+  15a: SUPPORTED (Strong) | 15b: NO-CHALLENGE-FOUND (None)
+  15c disposition: INCORPORATE -> PREMISE-120 (SUPPORTED + NO-CHALLENGE-FOUND; High confidence)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: [inferred] Reproducing a prior result is presumed to confirm it. Reproduction by the same code over the same corpus confirms determinism, not correctness; a systematic defect reproduces exactly as reliably as a correct measurement.
+  Risk if wrong: Medium — the verification layer's confidence is uncalibrated to its evidence.
+  Search targets: reproducibility vs replicability (NASEM 2019); method-independence as a precondition for triangulation; correlated-error arguments — structurally identical to 15c's own point about 15a/15b in REVISE-233.
+  In-house test available: for each verification figure ask whether a second method exists; count how many standing figures are single-method.
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-511 · Item type PRESUMPTION (unstated) · Transform: inferred from the Summa run's use of "independently" read against its own detector-bug disclosure and the week's two further self-caught defects · Current status UNTESTED
+
+ITEM: PRESUMPTION-512 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority HIGH
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  15c disposition: INCORPORATE -> PREMISE-121
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: [inferred] Tom's per-item review cost is presumed constant and his capacity presumed to scale with production. No artifact anywhere sums the open ask in hours; each recommendation is written as though the marginal item were the only item.
+  Risk if wrong: High — each additional correctly-argued item would lower the probability that any item is acted on.
+  Search targets: cognitive load and decision fatigue in review queues; alert fatigue and the precision threshold for operator disengagement; batch-size and latency effects on reviewer throughput.
+  In-house test available: sum all open items awaiting Tom, attach a time estimate to each, report the total in hours. One query.
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-512 · Item type PRESUMPTION (unstated) · Transform: inferred by summing the day's routed items against the standing backlog and finding no artifact reporting the aggregate · Current status UNTESTED
+
+ITEM: PRESUMPTION-513 — [QUEUED] [SEARCHED-15a: 2026-07-21] [SEARCHED-15b: 2026-07-21] [DISPOSITIONED-15c: 2026-07-21] — Priority Medium
+  15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  15c disposition: MONITOR -> MONITOR-462 (paired with MONITOR-458)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: [inferred] The "highest-leverage hour" recommendation presumes the obstacle is knowing which measurements to take. Fifteen days of identified, cheap, unexecuted actions is evidence the constraint is attention or authority, not enumeration — in which case identifying a sixth cheap action is not leverage.
+  Risk if wrong: Medium — the pipeline would continue diagnosing the wrong bottleneck indefinitely, each diagnosis looking like progress.
+  Search targets: knowing-what vs capacity-to-act in implementation research; recommendation fatigue; Theory of Constraints on identifying a non-binding constraint (cited by the pipeline itself in PREMISE-107's supporting evidence).
+  In-house test available: ratio of cheap actions identified to executed over 30 days. A single executed measurement falsifies this immediately — the cheapest item in the batch to settle.
+  Note: directly contests ASSUMPTION-482. 15a/15b should search the pair together.
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-513 · Item type PRESUMPTION (unstated) · Transform: inferred from the framing of the day's leverage recommendation read against the 15-day record of unexecuted cheap actions and against PREMISE-107's discriminating-test rule · Current status UNTESTED

@@ -435,4 +435,40 @@ PRS-47:
   Evidence: "Chancellor McGilchrist Commencement Address | 2026," Channel McGilchrist, published 2026-06-21, ~8:58 running time, delivered at Ralston College.
 
 ---
-*Total PRS triplets: 47*
+PRS-48:
+  Problem: Is human nature best explained by reductive neurobiological determinism (behavior as caused-through-and-through) or by a participatory account in which attention and meaning are constitutive of the person?
+  Resource: The multi-thinker masterclass format juxtaposing McGilchrist's right-hemisphere participatory realism with Sapolsky's determinism and Greene's strategic instrumentalism — three incompatible construals of "human nature" placed side by side.
+  Solution: McGilchrist's move that reductive accounts describe left-hemisphere re-presentations of the person (decomposed, manipulable) while missing the right-hemisphere whole from which agency and meaning arise; determinism is a category-level artifact of the analytic mode, not a discovery about persons.
+  Date Added: 2026-07-21
+  Source: Freedom Pact — A Masterclass in Human Nature: Robert Greene, Iain McGilchrist, Robert Sapolsky & More; PROP-2026-07-01-002
+  Confidence: Speculative
+  Evidence: Compilation published 2026-06-14 (43:12) on McGilchrist's channel; McGilchrist appears as one of several named contributors, so his specific claims here are inferred from his established position rather than transcribed. Flagged for reviewer to confirm his segment's content.
+
+PRS-49:
+  Problem: Why is the West in a state of visible civilizational decline, and why do internal reform efforts fail to arrest it?
+  Resource: McGilchrist's hemisphere-as-cultural-diagnosis: left-hemisphere dominance ("ruin") is self-reinforcing because a left-hemisphere culture cannot diagnose its own pathology from within — it lacks the right-hemisphere vantage needed to see the whole it has fragmented.
+  Solution: Decline is reframed as a structural attentional condition rather than a set of separable policy failures; remedy requires re-grounding attention in the right hemisphere's mode, not left-hemisphere fixes applied to left-hemisphere problems.
+  Date Added: 2026-07-21
+  Source: Thinking Class — John Gillam and Dr Iain McGilchrist: There Is A Great Deal Of Ruin In The Western World. This; PROP-2026-07-01-001
+  Confidence: Medium
+  Evidence: Full 43:12 dialogue titled "There Is A Great Deal Of Ruin In The Western World. This Is Why," published on McGilchrist's own channel 2026-06-14.
+
+PRS-50:
+  Problem: Why do modern secular societies exhibit rising unhappiness and ecological self-destruction despite material progress?
+  Resource: The link between individualism/secularisation and a left-hemisphere world of fragments without ground; caretaker-vs-exploiter framing of the human relation to nature.
+  Solution: A religious (but non-dogmatic, non-certainty-peddling) reorientation toward participative attending is proposed as the necessary condition for a viable future.
+  Date Added: 2026-07-21
+  Source: Without Religion, No Future; PROP-2026-07-08-001
+  Confidence: Medium
+  Evidence: McGilchrist's claim that solving ecological ills follows when people see themselves as caretakers not exploiters, and that certainty-peddling "is not a religion."
+
+PRS-51:
+  Problem: Are physicalist/atheist theories of consciousness coherent?
+  Resource: McGilchrist's argument that such accounts are internally incoherent when they attempt to derive experience from matter.
+  Solution: Grounds consciousness ontologically prior to matter, aligning cultural diagnosis with a metaphysics of primary awareness.
+  Date Added: 2026-07-21
+  Source: Without Religion, No Future; PROP-2026-07-08-001
+  Confidence: Speculative
+  Evidence: Reported claim that atheist views of consciousness are "wholly incoherent."
+
+*Total PRS triplets: 51*

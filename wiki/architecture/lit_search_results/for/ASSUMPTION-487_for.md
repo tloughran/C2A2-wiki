@@ -1,0 +1,28 @@
+SEARCH-FOR-ASSUMPTION-487:
+  Date searched: 2026-07-21
+  Original item: ASSUMPTION-487
+  Original statement: open-story.db carries real on-disk B-tree corruption (not a mid-write artifact, since errors come from the point-in-time backup) and the writer has stopped; 14.6 days stale, 13 consecutive days failing.
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a]
+    Original item: ASSUMPTION-487
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-07-20 metabolism regen daily transcript
+      15a: Searched for supporting literature
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+  Search scope: Comprehensive on SQLite corruption causes and recovery paths; preliminary on distinguishing a stopped writer from a failing write — broader search recommended.
+
+  Sources:
+    1. SQLite error-code documentation and practitioner analyses (pgref.dev, "Fix SQLite SQLITE_CORRUPT (11): Database Disk Image is Malformed"; DB Pro, "database disk image is malformed"). — Establishes what the reported error licenses one to conclude. SQLITE_CORRUPT means SQLite detected structural inconsistency in the file itself — invalid B-tree pointers, mismatched page counts, or unrecognised format. The item's identification of the fault class as B-tree corruption is the standard reading of the signal, and the sources note the important qualifier that some or all of the data "may be unreadable or silently wrong."
+    2. SQLite corruption-cause literature (SysInfoTools; Nucleus; SysTools; lzxindustries, "How to Fix a Corrupted SQLite Database Without Losing Data"). — Enumerates the documented causes: file truncation, hardware or filesystem corruption, and power loss during filesystem operations. Supports the item's claim that genuine on-disk corruption is a real and common condition rather than an exotic one, though it does not by itself discriminate that condition from a copy artifact.
+    3. Recovery-path literature (same sources; SQLite CLI `.recover` introduced in 3.29.0). — Directly relevant to the item's implied remedy and it cuts *against* the naive form of it: on a corrupt database "VACUUM will either fail with another SQLITE_CORRUPT or silently drop the unreadable data, potentially losing more rows than a targeted recovery would." The documented preferred path for severe corruption is `.recover` for partial salvage; VACUUM/REINDEX is appropriate only for minor, localised inconsistency. VACUUM INTO is described as a safe *backup* mechanism via the backup API, not as a repair for an already-corrupt file.
+    4. Silent-write-failure and freshness-monitoring literature (see ASSUMPTION-491 sources; "Data Pipeline Monitoring: How to Stop Silent Failures Before They Hit Production"; Pratilipi, "Monitoring the Monitor"). — Supports the item's second, separable claim. Staleness plus a consecutive-failure streak is the standard freshness signal for a stopped producer, and this literature treats "no new records over N periods with no error raised" as diagnostic of a halted writer rather than of an intermittently failing one.
+
+  Strength of support: Moderate (fault class and writer-stopped inference); Weak (the point-in-time-backup argument specifically)
+  Summary: Two of the item's three components are well supported. SQLITE_CORRUPT is a structural-integrity signal, and reading it as B-tree corruption is the documented interpretation rather than an inference. The writer-stopped conclusion is supported independently by the shape of the evidence: 14.6 days of staleness with 13 consecutive failing runs is the canonical freshness signature of a halted producer, and pipeline-monitoring practice treats exactly this pattern as diagnostic. The third component — that the errors cannot be a mid-write artifact because they come from a point-in-time backup — is the weakest link and the literature does not support it as stated. A "point-in-time backup" only excludes mid-write artifacts if it was taken through SQLite's backup API or VACUUM INTO with proper locking; an ordinary filesystem copy of a live database is a well-known source of spurious malformed-image errors, since the copy can span a checkpoint or capture pages from inconsistent transactions. The item's own recommended test resolves this cleanly and cheaply: PRAGMA integrity_check on the *live* database Mac-side, which is the standard discriminator between file-level corruption and copy artifact. The item names that test, which is to its credit; it has not been run.
+  Caveats: (a) The retrieved SQLite sources are overwhelmingly vendor and practitioner material (data-recovery product blogs), not peer-reviewed work. They agree with each other and with SQLite's own documented semantics, but the evidential weight is that of established practice rather than of research. (b) The point-in-time-backup premise is load-bearing for the item's "not a mid-write artifact" clause and I found no source supporting the inference in its general form; whether it holds depends entirely on how the backup was taken, which is an internal fact outside search scope. (c) If VACUUM INTO is intended as the fix rather than as the diagnostic, source 3 is a direct warning: on an already-corrupt file it can silently drop rows, which would convert a detected corruption into an undetected data loss — a remedy that inherits the defect. `.recover` plus a row-count reconciliation against the last good snapshot is the better-supported sequence. (d) Corruption and a stopped writer are logically independent; the item bundles them and the evidence for each is separate, so a finding on one should not be read as confirming the other.
+  Recommendation: PARTIALLY-SUPPORTED

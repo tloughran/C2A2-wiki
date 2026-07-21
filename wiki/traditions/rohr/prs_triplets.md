@@ -278,4 +278,40 @@ PRS-29:
   Evidence: McLaren's explicit path-logic of hope vs despair, and its override "when our prime motive is love"
 
 ---
-*Total PRS triplets: 29*
+PRS-30:
+  Problem: How does universal chosenness become effective in agents who have not experienced it — what is the transmission mechanism of grace between persons?
+  Resource: Rohr's "only beloved people can pass on belovedness" + Nouwen's blessed-one-blesses dynamic (Life of the Beloved).
+  Solution: Love propagates only through agents in whom it is internally realized; negative signals (curses, accusation, blame) transmit nothing constructive. Grace's universality is ontological; its propagation is strictly local, person-to-person.
+  Date Added: 2026-07-21
+  Source: Everyone Is Chosen: Weekly Summary; PROP-2026-07-05-004
+  Confidence: Medium
+  Evidence: The Sunday and Thursday Rohr quotes anchoring the summary, plus the Nouwen practice text chosen as the week's capstone.
+
+PRS-31:
+  Problem: Is the identity of a conscious agent settled individually, or can a community be the unit that receives its identity — and if so, from where?
+  Resource: Hayes's reframe "Who do you, God, say that we are?" (No Crystal Stair), as curated into Rohr's Everyone Is Chosen week.
+  Solution: Identity is conferred by second-person divine address, and the addressee can be corporate; the "isms" are perceptual blinders whose contemplative removal lets the community see and so become what it is told it is.
+  Date Added: 2026-07-21
+  Source: Who Do You Say That We Are?; PROP-2026-07-05-005
+  Confidence: Medium
+  Evidence: The full Hayes excerpt in the meditation, including the blinders passage and the kin-dom formulation.
+
+PRS-32:
+  Problem: How can an agent register systemic suffering truthfully without partitioning the world into perpetrators and victims — the bifurcation that fuels outrage cycles and blocks cross-perspective unity?
+  Resource: Rohr's "weeping mode" (Tuesday meditation): grief as a distinct processing mode that bears the world's pain without assigning the perpetrator/victim frame.
+  Solution: Non-dual grief functions as the affective mechanism of reconciliation — it metabolizes moral information that blame-partitioning distorts, continuous with the prophetic-tears thesis of The Tears of Things (2025).
+  Date Added: 2026-07-21
+  Source: The Beatitudes: Week One: Weekly Summary (Daily Meditations, Week 27); PROP-2026-07-12-002
+  Confidence: High
+  Evidence: Direct Rohr quotation in the weekly summary; explicit continuity with the anger-to-tears arc of The Tears of Things.
+
+PRS-33:
+  Problem: What, operationally, is the "inner emptiness" the first Beatitude blesses — and why would it be the entry condition for the whole sequence?
+  Resource: Rohr's definition of poor-in-spirit as living without need for one's own righteousness or reputation-bolstering.
+  Solution: Poverty of spirit as radical down-weighting of the self-model's precision (the reputation-defending prior), which is why it must come first: the subsequent Beatitudes describe what perception and action look like once that prior is relaxed.
+  Date Added: 2026-07-21
+  Source: The Beatitudes: Week One: Weekly Summary (Daily Meditations, Week 27); PROP-2026-07-12-002
+  Confidence: Speculative
+  Evidence: Rohr's Monday formulation; the computational gloss is ours (Friston bridge), not Rohr's.
+
+*Total PRS triplets: 33*

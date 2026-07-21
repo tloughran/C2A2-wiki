@@ -1,0 +1,29 @@
+SEARCH-FOR-ASSUMPTION-486:
+  Date searched: 2026-07-21
+  Original item: ASSUMPTION-486
+  Original statement: The measure of delivery is flagged content appearing in the recipient's output, never an acknowledgement receipt; acknowledgement installs a green metric over the unchanged failure.
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a -> 15a]
+    Original item: ASSUMPTION-486
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the PREMISE-108 instrumentation constraint
+      15a: Searched for supporting literature
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+  Search scope: Comprehensive on closed-loop communication and read-back; comprehensive on alert acknowledgement vs acceptance in clinical decision support.
+
+  Sources:
+    1. Barenfanger, J. et al. (2004). "Closing the Communication Loop: Using Readback/Hearback to Support Patient Safety." Joint Commission Journal on Quality and Safety, 30(7). ScienceDirect S1549374104300535. — The canonical statement of the three-step loop: sender transmits, receiver repeats or paraphrases, sender confirms the interpretation. Establishes the design principle that transmission plus acknowledgement is the *minimum* and that confirmation of correct interpretation is a separate step. Grounds the item's distinction between a receipt and evidence of uptake.
+    2. StatPearls, "Closed Loop Communication Training in Medical Simulation." NCBI Bookshelf NBK549899. — Peer-reviewed reference source; documents the aviation Crew Resource Management origin and the finding that CRM was developed after accidents "traced to communication failures... where information was transmitted but not confirmed as received." Also records the important honest qualifier that while aviation shows evidence-based improvement, empirical evidence for CLC's benefit in healthcare is comparatively thin.
+    3. Nanji, K.C. et al. / Slight, S.P. et al. "Appropriateness of Alerts and Physicians' Responses With a Medication-Related Clinical Decision Support System: Retrospective Observational Study." JMIR Medical Informatics 10(10):e40511 (2022); PMC9579928. — The strongest direct support. The study's coding rule is exactly the item's distinction: an alert counts as *overridden* if the reason given indicates no modification to the prescription — including the reason "aware" — and counts as *accepted* only if the prescription was cancelled or concretely adjusted. Acknowledgement is explicitly classified as non-action. This is 486's claim implemented as a measurement convention in a peer-reviewed study.
+    4. Hsieh, T.C. et al. "Alert override reasons: a failure to communicate." AMIA Annu Symp Proc / PMID 18999082; and the related finding that of clinical comments received, 28% were acknowledgement of the alert rather than action. — Empirical precedent that acknowledgement is a large, distinct, and separately countable category from response, and that treating it as response misstates system performance.
+    5. Clinical decision support override literature (PMC3128393, "Factors influencing alert acceptance"; PMC4052586, "Clinical Decision Support Alert Appropriateness"). — Reports override rates of 49-96% in practice, and the striking asymmetry that where an alert did *not* require acknowledgement it was accepted in only 1.4% of cases. The magnitude establishes that a delivery metric based on receipt would report near-total success against a real acceptance rate that can be under 5%: precisely "a green metric over the unchanged failure."
+
+  Strength of support: Strong
+  Summary: The item states, as a measurement rule, a distinction that clinical informatics has already had to encode to keep its own numbers honest. In the medication-alert literature the operative definition of an override includes the acknowledgement reason "aware" — the clinician confirmed receipt and changed nothing — and only a concrete change to the order counts as acceptance. That is 486's rule, arrived at independently and for the same reason: receipt-based counting produced numbers that did not correspond to behaviour. The effect sizes make the stakes explicit: override rates of 49-96%, acknowledgement comprising 28% of responses, and an acceptance rate of 1.4% where acknowledgement was not compelled. The closed-loop communication tradition supplies the design-side complement, having concluded from aviation accident analysis that "transmitted but not confirmed" is the failure class worth engineering against, and having made confirmation-of-interpretation a step distinct from acknowledgement. The item's proposed instrumentation — enumerate thirty days of cross-agent flags and search each recipient's subsequent output — is the outcome-side measurement this literature prescribes.
+  Caveats: (a) The clinical sources measure a stronger endpoint than the item does. Appearance of flagged content in a recipient's output is closer to acknowledgement-with-paraphrase than to acceptance; an agent can restate a flag and change nothing, so 486's own metric is vulnerable to a weaker version of the defect it names. The literature would push further, toward evidence of an altered decision. (b) StatPearls records that empirical support for closed-loop communication improving outcomes in healthcare is limited, in contrast to aviation; the design principle is better evidenced than the intervention. (c) Clinician overrides are frequently appropriate — the CDS literature is emphatic that a low acceptance rate is partly a signal of bad alerts, not bad recipients. Transferring the metric without that caveat risks blaming the receiving agent for what is a precision problem in the sending one, which connects this item directly to ASSUMPTION-489. (d) The absolute figures come from medication ordering with its own base rates and should not be imported as thresholds.
+  Recommendation: SUPPORTED

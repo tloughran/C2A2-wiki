@@ -688,3 +688,49 @@ Confidence: Medium (cluster is real and recurring; individual analogies need con
 Recommended action: Monitor — append to the Stump-as-hub / FINDING-047 humanities synthesis note; do not over-escalate individual analogies.
 
 [EVALUATED: 2026-07-01 — FINDING-048..050]
+
+---
+
+FINDING-051:
+Date evaluated: 2026-07-21
+Source candidate: [PROP-2026-07-13-001] Levin "Alignment Is to a Virtual Governor" x [PROP-2026-06-22-002] Friston "As One and Many" x [PROP-2026-07-20-004] Friston IAI interview
+Programs: Levin, Friston, C2A2/Loughran
+Evaluation type: EXPLANATORY BRIDGE CANDIDATE (strongest new vector this run)
+Finding: Levin's "virtual governor" — a system-level preference embodied only in the relations among parts, with stated mutual-registration conditions for its existence — is the same object as Friston's group-level Markov blanket / emergent group generative model, approached from the opposite side. Levin supplies existence conditions and failure modes; Friston supplies the variational formalism. The decisive test is stated and tractable: is Levin's mutual-registration condition equivalent to, weaker than, or stronger than the conditional-independence structure a group-level blanket requires? Friston's own agency demarcation in the IAI interview (planning, i.e. the generative model inferring its own actions, is what separates a true agent from any free-energy-minimizing thing) supplies the missing criterion for when a virtual governor is an agent rather than a mere coordination statistic.
+Confidence: Medium-High
+Recommended action: ESCALATE — FLAG-017. Dispatch to Friston and Levin agents; verdict belongs in synthesis/friston_levin_bridge.md.
+
+---
+
+FINDING-052:
+Date evaluated: 2026-07-21
+Source candidate: [PROP-2026-07-13-001] Levin, over-alignment failure mode
+Programs: C2A2 master / Loughran (methodological, reflexive)
+Evaluation type: DETECTOR INSTRUMENTATION SIGNAL (ISME-relevant)
+Finding: The over-alignment failure mode is a first-principles argument bearing directly on C2A2's own design: a virtual governor coordinates precisely by leaving parts enough room to keep optimizing on their own local landscapes, so forcing complete agreement destroys the competence that made the collective intelligent. Applied to the accelerator, this predicts that inter-tradition dialogue driven toward consensus is a pathology, not a success condition — and that there is an interior optimum in coupling strength with distinct under- and over-alignment signatures. This is a falsifiable claim about what Rung-2 should measure, and it cuts against any metric that scores convergence as progress.
+Confidence: Medium-High
+Recommended action: ESCALATE to Tom — directly relevant to the ISME paper's measurement section and to the Rung-2 success criteria. Consider whether the listening-lift metric (Rung-1 uptake, +0.031 median) is measuring coupling rather than convergence.
+
+---
+
+FINDING-053:
+Date evaluated: 2026-07-21
+Source candidate: [PROP-2026-07-20-002] Levin & Watson "Machines all the way up and cognition all the way down" x [PROP-2026-07-08] Levin-Kastrup nested-subjects conversation
+Programs: Levin, Kastrup, Friston, Wolfram
+Evaluation type: Sharpened live disagreement (extends FLAG-011 / FLAG-014)
+Finding: Levin's causal inversion — cognition -> code -> chemicals — puts his program and Kastrup's analytic idealism on the same side against late-emergent mind, and isolates their disagreement to a single well-posed question: is the cognitive base MANY cognizers (Levin) or ONE (Kastrup)? That is the same one-vs-many axis already flagged as the AI-membership criterion (FLAG-011). The published version is materially different from the preprint the wiki indexed, so the prior Levin-Watson understanding is stale. Friston's universalization ("every Markov-blanketed thing performs inference") is coextensive in scope, leaving open whether the FEP derives what Levin asserts.
+Confidence: Medium
+Recommended action: Monitor and stage. This is the best-posed inter-tradition disagreement currently available for a Rung-2 dialogue exhibit — both sides agree on the negative thesis and differ on a single countable parameter.
+
+---
+
+FINDING-054:
+Date evaluated: 2026-07-21
+Source candidate: Ingest 2026-07-21 humanities axis — [PROP-2026-07-05-004/005] Rohr, [PROP-2026-07-05-002] Wright, [PROP-2026-07-09-001] Stump, [PROP-2026-07-01-001] McGilchrist
+Programs: Rohr, Wright, Stump, McGilchrist, Fredrickson
+Evaluation type: Structural homology cluster (extends FINDING-047 / FINDING-050)
+Finding: The humanities cluster continues to thicken along a transmission-and-vantage thread. Rohr's belovedness-transmission model ("only beloved people can pass on belovedness") states a strictly local, agent-to-agent propagation rule for a universally-held good; Hayes/Rohr's corporate-identity-by-divine-address moves the receiving unit from individual to community; McGilchrist's claim that a left-hemisphere culture cannot diagnose itself from within asserts that a tradition needs an outside vantage to see itself. Together these are three statements of the C2A2 second-first-language thesis in non-C2A2 vocabulary — universality of the good, locality of its transmission, and necessity of an external vantage.
+Confidence: Medium
+Recommended action: Monitor; append to the FINDING-047 humanities synthesis note. Note the convergence with FINDING-052 from the opposite direction: both say a whole cannot be imposed globally on its parts.
+
+[EVALUATED: 2026-07-21 — FINDING-051..054]

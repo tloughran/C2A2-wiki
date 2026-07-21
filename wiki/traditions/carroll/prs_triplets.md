@@ -421,4 +421,76 @@ PRS-46:
   Evidence: Episode synopsis — its discovery "also raised the 'coincidence problem'… This is the first of two connected solo episodes; the next will be on theories of dark energy that are not the cosmological constant."
 
 ---
-*Total PRS triplets: 47*
+PRS-47:
+  Problem: The cosmological constant fits the acceleration data but may not be the correct explanation; physics needs a way to construct and empirically distinguish a *dynamical* dark energy alternative in which the vacuum energy density evolves over cosmic time.
+  Resource: Dynamical-dark-energy model-building — light scalar fields (quintessence-type) with a slowly rolling equation of state w(z) near but not exactly -1, constrained by particle-physics naturalness and targeted by equation-of-state / expansion-history measurements.
+  Solution: A program for inventing plausible dynamical dark energy theories that make predictions distinguishable from a constant Λ, so that detecting w ≠ -1 (or its variation) would count as a foundational discovery rather than a parameter refinement.
+  Date Added: 2026-07-21
+  Source: Mindscape 359 | Solo: Theories of Dark Energy; PROP-2026-07-03-001
+  Confidence: High
+  Evidence: Episode synopsis — "what is required to invent a plausible theory of dynamical dark energy… includes considerations from particle physics, possible experimental tests."
+
+PRS-48:
+  Problem: Cosmic acceleration admits two structurally different explanations — a new source of energy in the stress-energy tensor versus a modification of gravity itself — and the two are easy to conflate without a principled criterion for telling them apart.
+  Resource: The "new energy source vs. modify-gravity" dichotomy Carroll draws explicitly, treating modified-gravity accounts as a distinct branch rather than a variant of dark energy.
+  Solution: A framing in which the acceleration puzzle becomes an empirically adjudicable fork — different observational signatures for a dark-energy field versus modified gravity — keeping poetic naturalism honest by locating meaning-of-the-data disputes in testable structure rather than interpretation.
+  Date Added: 2026-07-21
+  Source: Mindscape 359 | Solo: Theories of Dark Energy; PROP-2026-07-03-001
+  Confidence: Medium
+  Evidence: Episode synopsis — "the option that we should modify gravity rather than adding a new source of energy to the equations."
+
+PRS-49:
+  Problem: Directed (top-down) attention is a depletable cognitive resource, and modern built environments — designed for efficiency, not cognition — may systematically drain it; psychology needs a causal, objectively measured account of which environments restore it.
+  Resource: Attention Restoration Theory (Kaplan) operationalized with within-subject walk experiments and the backwards digit-span task; the directed/involuntary attention distinction mapped to Kahneman's System 2/System 1.
+  Solution: Nature exposure causally restores directed attention (~20% digit-span improvement vs. urban walks), independent of mood or enjoyment (winter-walk result), replicated including in clinical depression with induced rumination — now feeding into physician-prescribed nature walks in the UK and Canada.
+  Date Added: 2026-07-21
+  Source: Mindscape 360 | Marc Berman on the Science of Touching Grass; PROP-2026-07-10-001
+  Confidence: High
+  Evidence: Berman's within-subject studies as recounted in the episode — "the people that walked in January showed the same cognitive benefit... you don't even have to enjoy the nature walk to get these cognitive benefits."
+
+PRS-50:
+  Problem: What perceptual property of natural scenes drives cognitive restoration? Mood, leisure framing, and "liking nature" are confounds; an image-level, quantitative mechanism is missing.
+  Resource: Information-theoretic scene measures — JPEG-style compressibility, memorability, fractal self-similarity across scales — plus Carroll's on-air conjecture framing nature as a low-Shannon-entropy visual input, tied to the complexity-vs-entropy relationship in *The Big Picture* (restorative stimuli may sit at moderate complexity, not maximal entropy).
+  Solution: Nature images compress to fewer bits and are less memorable than urban images, and compressibility statistically mediates forgettability — suggesting restoration comes from processing-cheap, "softly fascinating" input; a physics-grade quantitative bridge from scene statistics to attention.
+  Date Added: 2026-07-21
+  Source: Mindscape 360 | Marc Berman on the Science of Touching Grass; PROP-2026-07-10-001
+  Confidence: Medium
+  Evidence: Berman: "more natural images tended to get compressed down into fewer bits than the urban images... part of the reason why nature images are more forgettable is because they're more compressible"; Carroll's entropy conjecture at ~40:35 in the transcript.
+
+PRS-51:
+  Problem: Human brains evolved for environments radically unlike the ones those same brains now design and inhabit; the brain–environment relation is bidirectional and fast-moving, but design practice ignores cognitive consequences.
+  Resource: Environmental neuroscience as a discipline (Berman's framing), plus mobile neuroimaging (fNIRS) enabling brain measurement during real environmental interaction rather than in the MRI bore.
+  Solution: A research program treating the built environment as a cognitive intervention surface — designing spaces for attention, working memory, and cooperation rather than only for throughput; early field evidence from green-space studies (Chicago public housing: nature views correlate with better attention and lower aggression under quasi-random assignment).
+  Date Added: 2026-07-21
+  Source: Mindscape 360 | Marc Berman on the Science of Touching Grass; PROP-2026-07-10-001
+  Confidence: Medium
+  Evidence: Berman: "our brains have been shaped by the physical environment. Now our brains are designing the physical environment, and that new environment is now also shaping our brains."
+
+PRS-52:
+  Problem: Do observers "count" ontologically, or is "observer" a mere manner of speaking with no clean physical referent (detector vs. record vs. acting system)?
+  Resource: Carroll's emergence framework — higher-level descriptions are real and useful even when not fundamental; an observer is a functional, emergent pattern realized across substrate, not a single microphysical part.
+  Solution: Reaffirms poetic-naturalist treatment of "observer" as a legitimate higher-level entity, dissolving the detector/record/agent trilemma by locating the observer at the emergent level rather than in any one component.
+  Date Added: 2026-07-21
+  Source: Mindscape AMA | July 2026; PROP-2026-07-17-001
+  Confidence: Medium
+  Evidence: Listener Mike VR asks what kind of thing an observer is at the macro (thermodynamic/biological/institutional) level; Carroll's standing position is that it is a higher-level thing "in the emergence sense."
+
+PRS-53:
+  Problem: How can the usefulness of an emergent (coarse-grained) description be measured, given that a maximally coarse "everything maps to zero" model is perfectly predictive yet useless?
+  Resource: The question of an algorithmic metric for comparing coarse-grainings (e.g., a trivial all-to-zero map vs. fluid mechanics) by predictive-plus-informative content.
+  Solution: Frames a falsifiable research question inside poetic naturalism — an explicit criterion for when an emergent level "earns its keep," connecting emergence to information/complexity measures rather than leaving it qualitative.
+  Date Added: 2026-07-21
+  Source: Mindscape AMA | July 2026; PROP-2026-07-17-001
+  Confidence: Medium
+  Evidence: Listener Ercan Serteli's question about formally measuring usefulness of an emergent description; directly extends Carroll & Parola "What Emergence Can Possibly Mean" (arXiv:2410.15468).
+
+PRS-54:
+  Problem: Does eternal de Sitter space actually produce Boltzmann brains, and how strong is the swampland-based case that long-lived de Sitter is impossible in quantum gravity?
+  Resource: The Boddy-Carroll-Pollack argument that eternal de Sitter vacuum does not support the dynamical fluctuations needed to nucleate Boltzmann brains, plus swampland-program constraints on de Sitter longevity.
+  Solution: Restates Carroll's line that the cosmological measure/Boltzmann-brain problem may dissolve if de Sitter either does not fluctuate into observers or is not eternal — a cosmology-side consistency constraint on any naturalist account of observers.
+  Date Added: 2026-07-21
+  Source: Mindscape AMA | July 2026; PROP-2026-07-17-001
+  Confidence: Medium
+  Evidence: Listener Eric Olav Chen asks specifically about the swampland evidence and the Boddy-Carroll-Pollack fluctuation argument.
+
+*Total PRS triplets: 54*

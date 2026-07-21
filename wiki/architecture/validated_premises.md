@@ -2523,3 +2523,139 @@ PREMISE-110:
       15c: Net evaluation and disposition; INCORPORATE the claim with the common-mode scope guard made load-bearing, EXCLUDE the reachability audit in favour of a live proof-test
     Current status: INCORPORATED
     Disposition record: DISPOSITION-PRESUMPTION-505 (lit_search_returns.md, 2026-07-20)
+
+PREMISE-111:
+  Date validated: 2026-07-21
+  Source item: ASSUMPTION-483
+  Statement: The read channel was not the dominant correlation source between 15a and 15b, and removing it removed the weakest of at least four. Frontier LLMs sharing no procedural channel collapse to roughly two effective votes out of nine, so the dominant channels — shared pre-training corpora, shared alignment procedures, distillation — are upstream of any coupling C2A2 can remove. The 2026-07-19 change is therefore correctly relabelled "read-channel independence enforced," and the 905-pair record is not re-run. STANDING DISCOUNT (load-bearing): the correct inference from this premise is that the record is MORE compromised than the fix addressed, not less. No downstream argument may cite 15a/15b agreement as independent confirmation; agreement between the two directions carries a residual correlation of roughly the magnitude the panel literature measures (8–22pp accuracy shortfall against the independence benchmark) and must be discounted accordingly.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: "Nine Judges, Two Effective Votes: Correlated Errors Undermine LLM Evaluation Panels," arXiv:2605.29800. van Rooyen, Godlee, Evans, Smith & Black (1998), "Effect of Blinding and Unmasking on the Quality of Peer Review: A Randomized Trial," JAMA 280(3):234-237, PMID 9676666 — blinding effect ~0.4 points on a 5-point scale, no change in publication recommendations, across 527 manuscripts. "How Independent are Large Language Models?", arXiv:2604.07650.
+  Challenges noted: 15b (Moderate) — if the read channel was the weakest of four, three stronger channels remain unaddressed; "do not re-run" is a defensible budget decision but must not be read as reassurance. Incorporated as the standing discount above.
+  Confidence: Moderate
+  Applicable to: Agents 15a, 15b, 15c; every disposition citing cross-agent convergence; REVISE-240; SYSTEMIC-RISK-FLAG-A.
+  Re-check due: 2026-08-21
+  Status: ACTIVE
+  NOTE ON THIS ENTRY'S OWN EVIDENCE: 15a and 15b independently retrieved the same two key sources for this item. That is an instance of the correlation this premise describes and is the reason confidence is Moderate rather than High.
+
+PREMISE-112:
+  Date validated: 2026-07-21
+  Source item: ASSUMPTION-485
+  Statement: Replacing a possibly-wrong objective with an unmeasurable one converts it into no objective. Removing a scored dimension before its replacement is instrumented is the third and fourth step of the McNamara fallacy — declaring the unmeasured unimportant, then absent — and the operational rule is sequencing: instrument the replacement first, run both in parallel, then retire the incumbent. EXPIRY CLAUSE (load-bearing): the rule is a sequencing requirement with a stated deadline on the parallel-instrumentation period, NOT a licence to retain a defective proxy indefinitely pending a quantitative substitute. Without the deadline the premise becomes the failure PRESUMPTION-509 names. The healthcare-evaluation answer to an unmeasurable objective is mixed assessment, not indefinite retention.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: The McNamara fallacy, Yankelovich's four-step formulation. Bächtiger et al., "Measuring Deliberation" (Ash Center, Harvard) and the Discourse Quality Index — mutual understanding is already operationalised. Goddard & Gillespie (2023), doi:10.1177/08944393231156629 — systematic review of validated text-based dialogue indicators. arXiv:2604.15647 — computable information-gain measure.
+  Challenges noted: 15b (Moderate) — the item's own proposed replacement, the Ideological Turing Test, has documented validity limits in the paper that establishes it (Brand et al. 2025, "The Ideological Turing Test," Cognitive Science, doi:10.1111/cogs.70126): no normative ground truth, imitative equivalence is not insight, prompt-sensitive, limited temporal validity. Recorded so the parallel-instrumentation period is not read as a search for one authoritative replacement.
+  Confidence: Moderate
+  Applicable to: Rung-2 scoring; the convergence metric; any proposal to retire a scored dimension; constrains and is constrained by MONITOR-461 (PRESUMPTION-509).
+  Re-check due: 2026-08-21
+  Status: ACTIVE
+
+PREMISE-113:
+  Date validated: 2026-07-21
+  Source item: ASSUMPTION-489
+  Statement: A rule-based detector's reported findings are evidence about the detector until its precision is measured. False-positive rates of 76-90%+ are inside the normal operating band for such detectors and enterprise analysers are deliberately built recall-first, so "the detector has a real bug" and "the detector is operating near its design point" are both consistent with a high false-positive count and the count alone does not discriminate them. LABELLED CORPUS (load-bearing): a post-fix reading of zero is indistinguishable from a detector that now detects nothing. Tightening a detection rule risks suppressing detection rather than improving it, converting a false-positive problem into a silent false-negative one. Therefore precision AND recall must be reported separately against a corpus containing known-genuine and known-clean cases before any post-fix result is read as evidence about the corpus rather than about the instrument. Corollary: an audit of sibling detectors for the same defect class is independent of this and is warranted regardless.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: "Reducing False Positives in Static Bug Detection with LLMs: An Empirical Study in Industry," arXiv:2601.18844. SAST precision measurements 18-36%; CodeQL and Infer >95% false-alarm rates for null-pointer dereference at Linux-kernel scale. Snyk, "Minimizing False Positives," and OX Security — threshold loosening suppresses detection.
+  Challenges noted: 15b (Moderate) — directed at the item's proposed validation, which has no oracle; incorporated above as the load-bearing clause. 15a (independently) — the reclassification was performed by the pipeline that produced the findings, whereas false-positive studies in this literature use independent triage with inter-rater agreement; see PREMISE-118.
+  Confidence: Moderate
+  Applicable to: The Summa metaphysical guardrail detector and all sibling detectors; any detector change validated by re-run; extends PREMISE-110's common-mode guard from monitors to detectors. NOT incorporated: the local verdict that 11 of 13 findings were false positives and 0 genuine — that figure was produced by the instrument under audit.
+  Re-check due: 2026-08-21
+  Status: ACTIVE
+
+PREMISE-114:
+  Date validated: 2026-07-21
+  Source item: ASSUMPTION-490
+  Statement: When two or more instruments of one system disagree and none is externally calibrated, no arbitration rule can name a winner: authority is a property of a documented chain to an external reference, and absent one the readings are formally incommensurable. Where no gold standard exists, method comparison yields limits of agreement, not a correct value, and the latent-class methods that do recover per-instrument accuracy require conditional independence, which counters sharing a codebase and corpus do not have. THE EXIT (load-bearing): where the underlying quantity is deterministic over a frozen snapshot — as a word count is — the disagreement is almost certainly DEFINITIONAL rather than instrumental. The procedure is therefore to write the counting definition first (including every exclusion rule, e.g. Notes-stripping), designate it the reference, and re-derive all readings against it; convergence is the expected outcome and arbitration is not needed. This supplies the procedure PREMISE-101 lacks for creating a designated counting authority, and the arbitration rule PRESUMPTION-507 reports as missing. EXCLUSION: a declared figure matching none of the measured values is an unsourced assertion, not an additional reading, and is struck from the comparison.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: NIST, "Metrological Traceability: FAQs and NIST Policy." Eurachem/CITAC Guide, "Metrological Traceability in Chemical Measurement" (2019). Bland-Altman method-comparison practice (MedCalc manual; PMC2244491). "Insights into latent class analysis of diagnostic test performance," Biostatistics 8(2):474.
+  Challenges noted: 15b (Moderate) — an arbitration rule chosen on grounds other than a written definition sets tier calibration against a number that was chosen rather than established. Incorporated as the exit clause above.
+  Confidence: Moderate
+  Applicable to: The three Summa word counts (QC 5, verification 15, nightly 20); tier calibration; the six standing counting disputes; extends PREMISE-101; supplies the missing rule for PREMISE-117. Where an instrument IS established out of tolerance, PREMISE-118's retrospective impact assessment applies.
+  Re-check due: 2026-08-21
+  Status: ACTIVE
+
+PREMISE-115:
+  Date validated: 2026-07-21
+  Source item: ASSUMPTION-491
+  Statement: Before an agent is called broken, check whether its specification ever instructed the behaviour. Specification and design issues are the largest single category of multi-agent system failure (41.8%, vs inter-agent misalignment 36.9% and verification 21.3%) across the only empirically grounded taxonomy, so "the instruction is missing" is the base-rate-favoured diagnosis over "the agent is broken" and has a different, cheaper fix. Silent failure is the modal profile, not the exception: 75.17% of failures emit no hard error signal, which is why a months-long write failure can pass unnoticed. EFFECTIVENESS CHECK AT CONTENT LEVEL (load-bearing): the check on such a fix must be that the expected CONTENT appears, never that a file appears — file existence is a liveness test, and the fault class this premise concerns is precisely the one liveness tests miss (see PREMISE-100, PREMISE-110). VOCABULARY: per PREMISE-120, a second check that shares code path, corpus, model and execution context is a re-run, not an independent confirmation, and must be recorded as "confirmed by a second check sharing [components]."
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Cemri et al., MAST — "Why Do Multi-Agent LLM Systems Fail?" (1,600+ annotated traces, 7 frameworks). "When Errors Become Narratives," arXiv:2606.14589. arXiv:2606.08162 and Latitude observability guidance on silent failures emitting no error codes.
+  Challenges noted: 15b (Weak) — "independently confirmed" is load-bearing in the source item and unassessed; struck above. The item's own proposed effectiveness check was a liveness test; replaced above.
+  Confidence: Moderate
+  Applicable to: agentic-cost-tracker; weekly-agent-ecosystem-report; the Stump PRS-09 repoint; failure triage across all scheduled agents. The three underlying local claims are NOT incorporated — 15c has not verified them.
+  Re-check due: 2026-08-21
+  Status: ACTIVE
+
+PREMISE-116:
+  Date validated: 2026-07-21
+  Source item: PRESUMPTION-506
+  Statement: A finding does not change the behaviour it describes. Propagation from a recorded finding to a change in the governed agent's conduct must be engineered and then confirmed; it is never a property of having recorded the finding. The best-measured analogue — audit and feedback, i.e. measuring a party's conduct and reporting the deviation back — moves behaviour by a median 4.3% absolute (IQR 0.5-16%, 140 trials), updated to a mean 6.2% (95% CI 4.1-8.2, 292 trials), and the moderators that make it work (peer delivery, individual measurement, repetition, explicit target, action plan) are all absent from a premise written to a registry. Two mature disciplines, quality systems and internal audit, maintain mandatory verification machinery built on this assumption. PRE-REGISTERED PRIOR (load-bearing): the 110-premise sweep must be run as a RATE against a stated 4-8% expectation, decided before the sweep. Without it the result is uninterpretable in both directions — a low rate would be read as confirming total failure, when it is what the literature predicts of a mechanism working normally. ASYMMETRIC RISK: judging a propagation mechanism against an implicit expectation of compliance would discard a working intervention for underperforming an unrealistic bar. INSTRUMENTATION CONSTRAINT: a propagation step that produces a "propagated: yes" field reproduces the defect exactly; the measure must be a behavioural change in the governed agent's OUTPUT.
+  Item type: PRESUMPTION (unstated — surfaced by inference; extra weight: no architectural step propagating a validated premise back to the agent it governs exists in any agent definition)
+  Supporting evidence: Ivers, Jamtvedt, Flottorp et al. (2012), "Audit and feedback: effects on professional practice and healthcare outcomes," Cochrane Database Syst Rev CD000259.pub3, PMID 22696318; 2025 update CD000259.pub4. PMC6899530, "Implementation of Implementation Science Knowledge: The Research-Practice Gap Paradox." CAPA effectiveness-check practice.
+  Challenges noted: 15b (Moderate) — "110 premises have never altered conduct" is a universal built on one instance, and a single same-day recurrence is fully consistent with a propagation mechanism existing and working at the normal effect size. The universal is explicitly NOT incorporated.
+  Confidence: High (structural claim only)
+  Applicable to: All 110 prior premises, 236 revision flags and 457 monitors; agents 15c and 15d; REVISE-239; MONITOR-460. Extends PREMISE-109 into the propagation direction; is the general form of which PREMISE-102 and PREMISE-108 are instances.
+  Re-check due: 2026-08-21
+  Status: ACTIVE
+  NOTE ON THIS ENTRY'S OWN EVIDENCE: both search directions grounded this on the same Cochrane review; per PREMISE-111 their agreement is not two independent confirmations.
+
+PREMISE-117:
+  Date validated: 2026-07-21
+  Source item: PRESUMPTION-507
+  Statement: Continuing to publish under an unresolved definitional dispute is codified professional practice, not a defect. In official statistics the standard is publish-then-revise: figures carry a revision flag, the definitional change is described, and withdrawal is reserved for statistics not fit for purpose. THE DEFECT IS SILENCE, NOT CONTINUATION (load-bearing): what an unresolved dispute obliges is a break flag on every affected figure, a documented account of the change, and a pre-committed corrections policy with prompt notification — not suspension of dependent work. Quarantine is excluded and its failure mode is stated: suspending dependent work behind an unresolved dispute, in a channel with near-zero decision throughput, resolves disputes by abandonment rather than adjudication. Impact assessment is lineage-bounded to descendants of the disputed figure, which bounds its cost. The arbitration procedure that closes such disputes is PREMISE-114.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: UK ONS Revisions Policy and Correction of Errors Policy; Office for Statistics Regulation, "Regulatory guidance — Publishing official statistics." IMF, "Revisions Policy for Official Statistics." US OMB Statistical Policy Directive No. 4 (73 FR, 2008). UN Fundamental Principles of Official Statistics implementation guidelines. arXiv:2605.06365 — invalidation as a semantic operation over dependency identities in agentic pipelines.
+  Challenges noted: 15b (Moderate) — the behaviour named as an unexamined presumption is standard practice in the discipline the item points to; the item's implied quarantine remedy is what the standards decline. Redirected the remedy above. Symmetric risk if nothing changes: figures propagate unflagged and the break is rediscovered later with no record of what was affected.
+  Confidence: Moderate-High
+  Applicable to: The six standing counting disputes; every artifact derived from a disputed figure; Summa tier calibration; extends PREMISE-105's break-marking clause. One grade below High because it transfers from official statistics to an internal vault where the notification obligation has no external addressee.
+  Re-check due: 2026-08-21
+  Status: ACTIVE
+
+PREMISE-118:
+  Date validated: 2026-07-21
+  Source item: PRESUMPTION-508
+  Statement: Naming a defect in an instrument does not license continued use of it; it triggers an obligation. Where an instrument is found out of tolerance, practice requires contain / assess impact / fix cause / verify, including a RETROSPECTIVE impact assessment over every result produced since last known-good calibration. Noting the condition and continuing is a recognised serious finding. Two clauses bound this (load-bearing). (i) The obligation is ASSESSMENT, not automatic invalidation: results may stand where impact assessment shows validity unaffected, so "continued without quarantine" and "continued without assessment" are different things and only the second is the violation. (ii) "Unknown quality" overstates the consequence where the defect is measured: an 8-22 percentage-point accuracy shortfall is a computable discount, not indeterminacy. Price the defect; do not disown the output. RECURSIVE CAVEAT: where the judgement that an instrument is defective came from the instrument, the response is external measurement — neither trusting nor discounting the self-report resolves it.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: ISO/IEC 17025 nonconforming-work practice, clauses 7.10 and 8.7. GMP out-of-tolerance handling and retrospective impact assessment (NIST GMP 11). arXiv:2605.29800 — panel accuracy 8-22pp below the independence benchmark. CARE, arXiv:2603.00039.
+  Challenges noted: 15b (Weak-to-Moderate) — the standard does not require quarantine, and the defect's magnitude is measured rather than unknown. Both incorporated as the bounding clauses above.
+  Confidence: Moderate-High
+  Applicable to: Agent 15c's own dispositions, including this run; the 2026-07-20 disposition set; all 121 premises; the Summa detectors (PREMISE-113); any measurement instrument in the vault. Extends PREMISE-110.
+  Re-check due: 2026-08-21
+  Status: ACTIVE
+  SELF-APPLICATION RECORDED AT VALIDATION: this premise is violated by the run that validated it. The 15c defect was named on 2026-07-20 (REVISE-233), no retrospective impact assessment has been performed, and 18 further dispositions were produced on 2026-07-21. Routed as REVISE-240; unremedied at time of writing.
+
+PREMISE-119:
+  Date validated: 2026-07-21
+  Source item: PRESUMPTION-510
+  Statement: Production and judgment are not independently schedulable. Where a produced item requires human judgment before it has value, the producing and reviewing stages are provably coupled: automation and human scheduling cannot be optimised separately, unbounded production imposes a congestion externality on the constrained stage, and service rate is not independent of arrival rate because reviewer acceptance falls with cumulative exposure. In distributed-systems terms backpressure is a correctness requirement, not an optimisation. SEQUENCING REQUIREMENT (load-bearing): establish that the service rate is greater than zero, and whether the consumer is SATURATED or ABSENT, before designing any admission policy. Where service is zero the steady-state relations do not hold at all and no reduction in arrivals bounds the queue — cutting 4/day to 1/day still diverges — so throttling an absent consumer directs effort at the arrival term while the term that is actually zero goes untouched, and reports a control in place. EXCLUDED: a flat per-day admission cap. Its documented failure mode is that fixed WIP limits bind immediately against an existing backlog and are raised on first bind; the better-evidenced alternatives are value-based screening and backlog-sensitive pressure. ADOPTABLE NOW: a "produced and unreviewable" state, which the current scheme cannot represent and which neither search direction contests.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: Little's law as applied in Kanban/queueing practice; Ponte, "Little's Law and Applying Back Pressure When Overloaded." arXiv:2607.06017, "Learning When to Automate: Queue Control in Human-AI Service Systems." arXiv:2603.13870, "When to Screen, When to Bypass: LLM-Judges in Resource-Scarce AI-Human Workflow." arXiv:2601.22295, "Operating Imperfect AI: Reliability Drift and Human Congestion."
+  Challenges noted: 15b (Moderate) — entirely against the remedy; three independent lines argue against a flat cap. Incorporated as the exclusion above.
+  Confidence: Moderate-High
+  Applicable to: The review channel awaiting Tom (arrival ~4/day, service 0/day across 15 days, 67 carried items); the MONITOR queue; agents 14a, 14b, 15c, 15d. Extends PREMISE-106 from the lit queue to the review channel; applies PREMISE-107's discriminating-test rule to a saturated channel.
+  Re-check due: 2026-08-21
+  Status: ACTIVE
+
+PREMISE-120:
+  Date validated: 2026-07-21
+  Source item: PRESUMPTION-511
+  Statement: Reproducing a result does not confirm it. Reproducibility — obtaining consistent results using the same input data, computational steps, methods and code — is a property of the pipeline, expected as a baseline; replicability requires independently obtained data. Replication and reproducibility do not imply correctness, and a systematic defect reproduces exactly as reliably as a correct measurement: a deterministic analyser with a >95% false-alarm rate reproduces every false alarm perfectly. BINDING VOCABULARY (load-bearing): NASEM's distinction is adopted vault-wide, and the phrase "independently confirmed" is forbidden unless the second check obtained its own data by a different path. Every claimed second check must record what it shares with the first: code path, corpus, model, execution context. Checks sharing all four are a single channel wearing two labels regardless of how they are labelled. TWO SCOPE GUARDS: (i) reproducibility is necessary and insufficient, not empty — it rules out transcription error, nondeterminism and environment drift, a real and cheap defect class; (ii) a second implementation written from the same specification SHARES the specification, and structural variation does not buy failure independence, so independence must be engineered at the definition layer or the second method reproduces the first method's trap.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: NASEM (2019), "Reproducibility and Replicability in Science," National Academies Press, doi:10.17226/25303. arXiv:2607.02808, "A Systematic Methodology for Evaluating Failure Independence in LLM-Generated Code." arXiv:2605.29800. In-house instance: ASSUMPTION-489's detector.
+  Challenges noted: NO-CHALLENGE-FOUND. 15b searched disconfirmatorily and reports that no retrieved source treats computational reproduction as evidence of correctness. Both scope guards above were volunteered by the disconfirmatory search as supportive qualifications.
+  Confidence: High (SUPPORTED + NO-CHALLENGE-FOUND row of the provenance protocol's reconciliation table)
+  Applicable to: All verification agents; the Summa nightly verification; ASSUMPTION-491's language (see PREMISE-115); agents 15a/15b (see PREMISE-111); SYSTEMIC-RISK-FLAG-A, of which this premise is the general form. The measurement the flag requires is routed as REVISE-240 — this premise states the rule, it does not perform the measurement.
+  Re-check due: 2026-08-21
+  Status: ACTIVE
+
+PREMISE-121:
+  Date validated: 2026-07-21
+  Source item: PRESUMPTION-512
+  Statement: A reviewer's per-item cost is not constant and their capacity does not scale with production. In the best-measured operational analogue, review-queue acceptance is a function of workload and cumulative exposure rather than item merit: override rates run 49-96%, acceptance falls as volume and complexity rise, and desensitisation GENERALISES — true positives are discounted alongside false ones. Therefore each additional correctly-argued item can lower the probability that ANY item is acted on, and a recommendation written as though the marginal item were the only item mis-states its own cost. VALUE-WEIGHTED TRIAGE (load-bearing): degradation tracks LOW-INFORMATION items specifically, so the obligation is to raise the information value of each item routed to a human, not merely to route fewer. EVIDENCE BASE EXPLICITLY BOUNDED: this premise is grounded on the clinical-decision-support override literature. Decision fatigue and the parole-board result are STRUCK — ego depletion failed a 23-laboratory preregistered replication (>2,000 participants), and the parole finding carries a documented case-ordering confound and a simulation critique concluding the magnitude is substantially overestimated. The conclusion does not rest on them and must not be argued from them.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: Ancker, J.S. et al. (2017), "Effects of workload, work complexity, and repeated alerts on alert fatigue in a clinical decision support system," BMC Med Inform Decis Mak, PMC5387195. Nanji et al., "Overrides of medication-related clinical decision support alerts in outpatients," PMID 24166725. Static-analysis desensitisation literature. NOT supporting evidence: Danziger et al. (2011), PNAS 108(17):6889 — struck; Hagger, Chatzisarantis et al. (2016), Perspectives on Psychological Science 11(4):546-573 — the replication that struck it.
+  Challenges noted: 15b (Moderate) — against the cited mechanism, not the conclusion; both directions independently identified the same citation problem and proposed the same substitute. Residual limits: n=1 reviewer, workflow mismatch between clinical alerting and vault review, no in-house measurement.
+  Confidence: Moderate
+  Applicable to: Every agent routing items to Tom; agents 14a, 14b, 15c, 15d; the standing review backlog; PREMISE-119's channel. Extends PREMISE-102.
+  Re-check due: 2026-08-21
+  Status: ACTIVE
+  OPEN MEASUREMENT NAMED AT VALIDATION: no artifact in this vault states the size of the open ask. Sum every open item awaiting Tom, attach a time estimate, report the total in hours — one query, named by both search directions as the most useful artifact proposed in this batch. That absence is itself an instance of what this premise describes.
