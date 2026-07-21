@@ -33,7 +33,7 @@ THINKER_COLORS = {
     "kastrup": "#8B5DAB", "mcgilchrist": "#3D9E89", "hawkins": "#B87D3E",
     "wolfram": "#4A5E6D", "carroll": "#4E8A5E", "arkanihamed": "#A85D3A",
     "fredrickson": "#C47A9A", "stump": "#A8923A", "rohr": "#9A7A5A",
-    "wright": "#5A72A8", "macintyre": "#7A6A8A", "loughran": "#4A8A7A",
+    "wright": "#5A72A8", "macintyre": "#7A6B8A", "loughran": "#4A8A7A",
     "master": "#C9A84C",
 }
 THINKER_DISPLAY = {
