@@ -73,12 +73,27 @@ if ! python3 - "$JSON" >>"$LOG" 2>&1 <<'PY'
 import json, sys
 d = json.load(open(sys.argv[1]))
 lanes = d.get("lanes") or d.get("agents") or []
-# count runs across whatever lane container exists
-runs = d.get("runs")
+# Count total runs robustly. The metabolism schema stores, per lane, an int
+# "runs" (the count) and a list "rows" (the runs themselves) -- NOT a list under
+# "runs". The prior `sum(len(l.get("runs", [])) ...)` therefore did len(int) and
+# crashed with TypeError on every real file (the live one included); it never
+# fired only because the upstream freshness guard short-circuited for weeks.
+# Prefer the authoritative _meta.total_runs; fall back to summing per lane,
+# tolerating runs-as-int, runs-as-list, or the rows list.
+def lane_runs(l):
+    r = l.get("runs")
+    if isinstance(r, int):
+        return r
+    if isinstance(r, list):
+        return len(r)
+    return len(l.get("rows", []))
+runs = (d.get("_meta") or {}).get("total_runs")
 if runs is None:
-    runs = sum(len(l.get("runs", [])) for l in lanes) if isinstance(lanes, list) else 0
+    runs = d.get("runs")
 if isinstance(runs, list):
     runs = len(runs)
+if runs is None:
+    runs = sum(lane_runs(l) for l in lanes) if isinstance(lanes, list) else 0
 assert lanes, "no lanes/agents in metabolism_data.json"
 assert int(runs) > 0, "zero runs in metabolism_data.json (blank render?)"
 print(f"  [PASS] data sanity: {len(lanes) if isinstance(lanes,list) else lanes} lanes, {runs} runs")
