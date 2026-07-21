@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "purpose": "Machine-readable allowlist of INTENTIONAL variance for the janitor's drift checks. See wiki/architecture/fact_inventory.md, recommendation R5 and hazard H1. An entry here declares that a specific difference is DELIBERATE, so the drift detector suppresses it and the intentional difference never reads as a bug.",
+    "why_this_file_exists": "H1: 'Intentional variance must be encoded as machine-readable data next to the code, never as prose in an audit. Until that encoding exists, [the drift table] is an attractive nuisance.' This file is that encoding. Prose comments (e.g. build_bundle.py's 'MacIntyre is the book's author') explain intent to humans but are invisible to the detector; this file makes the same intent executable.",
+    "rules": [
+      "Add an entry ONLY for deliberate variance that has a recorded rationale. NEVER silence a real drift bug here just to quiet the report.",
+      "Every entry needs 'reason' (why the difference is intentional) and 'source' (where the intent is authoritatively recorded in code or docs).",
+      "A hex MISMATCH -- the same tradition assigned two different colors by two pipelines -- is never allowlistable. That is always a hand-copy bug. Only ABSENCES (a tradition deliberately omitted from a pipeline) belong here."
+    ],
+    "updated": "2026-07-21"
+  },
+
+  "palette_absence": [
+    {
+      "tradition": "macintyre",
+      "absent_from": "bundle",
+      "reason": "MacIntyre is the book's AUTHOR, not a satellite tradition. commentary-explorer/build_bundle.py deliberately excludes him because he has no satellite page (the text being annotated is his); his absence from that pipeline's palette is correct, not drift.",
+      "source": "wiki/commentary-explorer/scripts/build_bundle.py (exclusion comment near the THINKERS table); wiki/architecture/fact_inventory.md hazard H1"
+    }
+  ]
+}

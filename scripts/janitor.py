@@ -78,6 +78,49 @@ SKIP_FILE_GLOBS = {"_fs_probe_test.tmp"}
 WIKILINK_RE = re.compile(r"\[\[([^\]\|#]+)(?:[#|][^\]]*)?\]\]")
 H1_RE       = re.compile(r"^\#\s+(.+)$", re.MULTILINE)
 
+# --- Drift detection config (fact_inventory.md R5) ---------------------------
+# Machine-readable allowlist of INTENTIONAL variance (hazard H1). Without it the
+# drift checks would flag deliberate differences (e.g. MacIntyre's intentional
+# exclusion) as bugs. See scripts/drift_allowlist.json.
+DRIFT_ALLOWLIST_PATH = PROJECT_ROOT / "scripts" / "drift_allowlist.json"
+
+# The three hand-maintained tradition palettes (fact_inventory.md Family 3).
+# Each pipeline stores its color map in a DIFFERENT shape, so each gets a
+# structure-scoped extractor rather than a blanket `#hex` grep — several of these
+# files embed HTML/CSS templates whose colors would otherwise be swept in.
+_HEX = r"(#[0-9A-Fa-f]{6})"
+
+def _palette_gen_viz(text):
+    # generate_visualization.py:  'traditions/<name>': '#RRGGBB',
+    return {n.lower(): h.upper() for n, h in
+            re.findall(r"'traditions/([a-z-]+)'\s*:\s*'" + _HEX + r"'", text)}
+
+def _palette_prs3d(text):
+    # extract_prs_data.py:  THINKER_COLORS = { "<name>": "#RRGGBB", ... }
+    blk = re.search(r"THINKER_COLORS\s*=\s*\{(.*?)\}", text, re.DOTALL)
+    if not blk:
+        return {}
+    return {n.lower(): h.upper() for n, h in
+            re.findall(r'"([a-z-]+)"\s*:\s*"' + _HEX + r'"', blk.group(1))}
+
+def _palette_bundle(text):
+    # build_bundle.py:  ("<name>", [...aliases...], [...], "#RRGGBB"),
+    return {n.lower(): h.upper() for n, h in
+            re.findall(r'\(\s*"([a-z-]+)"\s*,.*?"' + _HEX + r'"\s*\)', text)}
+
+# (pipeline id, path relative to PROJECT_ROOT, extractor). The id is what the
+# allowlist's `absent_from` refers to.
+PALETTE_PIPELINES = [
+    ("gen_viz", "wiki/c2a2-wiki-narration/scripts/generate_visualization.py", _palette_gen_viz),
+    ("prs3d",   "wiki/c2a2-prs-3d/scripts/extract_prs_data.py",               _palette_prs3d),
+    ("bundle",  "wiki/commentary-explorer/scripts/build_bundle.py",           _palette_bundle),
+]
+
+# 'master' is the central synthesis node, not a per-tradition tint; pipelines
+# legitimately differ on whether they carry it, so it is outside the palette
+# agreement universe (not an allowlist case — it is categorically not a tradition).
+_PALETTE_NON_TRADITIONS = {"master"}
+
 
 # --- Utilities ---------------------------------------------------------------
 
@@ -103,6 +146,16 @@ def load_state() -> dict:
 def save_state(state: dict) -> None:
     JANITOR_DIR.mkdir(parents=True, exist_ok=True)
     STATE_PATH.write_text(json.dumps(state, indent=2, sort_keys=True))
+
+
+def load_drift_allowlist() -> dict:
+    """Load the intentional-variance allowlist (H1). Missing/unparseable file is
+    treated as an empty allowlist — a drift check must still run and report, just
+    without any suppressions, rather than crash."""
+    try:
+        return json.loads(DRIFT_ALLOWLIST_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
 
 
 def walk_md(root: Path):
@@ -392,6 +445,72 @@ def check_duplicate_h1():
     return findings
 
 
+# --- Checks: drift detection (fact_inventory.md R5) --------------------------
+
+def check_palette_drift():
+    """Cross-pipeline tradition-color agreement (fact_inventory.md Family 3).
+
+    Three pipelines hand-maintain the same tradition palette. Two of them
+    assigning DIFFERENT hexes to one tradition is a real hand-copy bug (Class B
+    drift) -> `palette_hex_mismatch` (warn), never allowlistable. A tradition
+    defined in some pipelines but missing from another -> `palette_hex_absent`
+    (info), suppressed when declared intentional in
+    drift_allowlist.json['palette_absence'] (H1). Read-only; no writes, no git,
+    so it is idempotent and lock-safe (H6).
+    """
+    findings = []
+    maps = {}
+    for pid, relpath, extractor in PALETTE_PIPELINES:
+        try:
+            text = (PROJECT_ROOT / relpath).read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
+            findings.append(Finding(
+                "palette_drift", relpath,
+                "palette pipeline file missing/unreadable — moved or renamed?",
+                "warn"))
+            continue
+        m = extractor(text)
+        if not m:
+            findings.append(Finding(
+                "palette_drift", relpath,
+                "no tradition palette extracted — the file's structure may have "
+                "changed out from under the extractor", "warn",
+                note="update the matching _palette_* extractor in janitor.py"))
+        maps[pid] = m
+
+    if len(maps) < 2:
+        return findings  # need at least two pipelines to compare
+
+    allow = load_drift_allowlist()
+    absent_ok = {(e.get("tradition", "").lower(), e.get("absent_from", ""))
+                 for e in allow.get("palette_absence", [])}
+
+    traditions = set().union(*maps.values()) - _PALETTE_NON_TRADITIONS
+    for trad in sorted(traditions):
+        present = {pid: m[trad] for pid, m in maps.items() if trad in m}
+        # Mismatch: the pipelines that DO define it disagree on the hex.
+        distinct = sorted(set(present.values()))
+        if len(distinct) > 1:
+            where = ", ".join(f"{pid}={present[pid]}" for pid in sorted(present))
+            findings.append(Finding(
+                "palette_hex_mismatch", f"tradition:{trad}",
+                f"{len(distinct)} hexes for one tradition across pipelines: {where}",
+                "warn",
+                note="hand-copied palette drift (Class B) — pick the canonical hex "
+                     "and reconcile the sources (color choice is Tom's call)"))
+        # Absence: defined somewhere, missing elsewhere, unless allowlisted.
+        for pid in (p for p in maps if trad not in maps[p]):
+            if (trad, pid) in absent_ok:
+                continue
+            deftext = ", ".join(f"{p}={present[p]}" for p in sorted(present))
+            findings.append(Finding(
+                "palette_hex_absent", f"tradition:{trad}",
+                f"absent from pipeline '{pid}' but defined in: {deftext}", "info",
+                note="if deliberate, declare it in "
+                     "scripts/drift_allowlist.json['palette_absence']"))
+    return findings
+
+
 # --- Orchestration -----------------------------------------------------------
 
 ALL_CHECKS = [
@@ -405,6 +524,7 @@ ALL_CHECKS = [
     ("broken_wikilink",         check_broken_wikilinks,      False, True),
     ("wikilink_case_mismatch",  check_wikilink_case_mismatch, False, True),
     ("duplicate_h1",            check_duplicate_h1,          False, False),
+    ("palette_drift",           check_palette_drift,         False, False),
 ]
 
 
