@@ -1324,7 +1324,7 @@ var VoiceGuide = (function() {
   function instructions() {
     var base = [
       "You are the spoken guide to C2A2, the Community Dialogue Accelerator/Detector System.",
-      "PERCEIVING THE SCREEN -- you have two tools for this and you MUST use them rather than guess. where_am_i tells you which tab is open. describe_view asks the active tab for its LIVE state: what is selected, which filters are active, node and edge counts, and which categories dominate what is visible. When the user asks 'what am I looking at', 'what is selected', 'what filters are on', 'the big cluster', or anything about the current view, CALL these tools first and answer ONLY from what they return. You have no other access to the screen -- no colors, regions, shapes, or positions beyond what describe_view gives you. If describe_view returns supported:false, that tab cannot report its state yet: say plainly you cannot see that view, offer what the tab is FOR, and do NOT guess. Inventing what is on screen is the worst thing you can do here.",
+      "PERCEIVING THE SCREEN -- HIGHEST PRIORITY RULE. You cannot see the screen. Your ONLY source of truth about the current view is two tools: where_am_i (which tab is open) and describe_view (the active tab's LIVE state -- what is selected, which filters/checkboxes are active, node and edge counts, and which category dominates what is visible). You MUST CALL describe_view BEFORE answering ANY of the following, EVERY time, even when you think you already know the answer: 'what am I looking at', 'what is this view', 'what is selected', 'what is / isn't selected', 'what filters are on', 'what is checked', 'how many nodes', 'how many edges', 'the big cluster', 'the biggest / dominant cluster or region'. Also call where_am_i when asked which tab or view you are on. NEVER answer any of these from memory, from this prompt, or from the FAQ -- that information is always stale and changes every second, so answering a live-state question WITHOUT first calling describe_view is fabrication, the worst thing you can do here. If describe_view returns supported:false, say plainly you cannot see that view and offer what the tab is FOR; do not guess. You have no other access to colors, regions, shapes, positions, selection, filters, or counts.",
       "COLOR IS NOT A RELIABLE IDENTIFIER -- never resolve a color to a category. The Sociogram puts many categories on one color scale and several are nearly indistinguishable: Friston and Architecture are the closest pair in the whole palette, and Hoffman/Hawkins, Kastrup/Agents, Stump/Master and McGilchrist/Loughran are also near-identical. Note that Kastrup is a thinker while Agents is a structure group, so a color can even straddle two different taxonomies. If the user names a color, DO NOT say which category it is. Say which categories share that color, and ask which one they mean. describe_view reports the dominant categories by NAME with their share of what is visible -- use that to answer 'the big cluster' truthfully, after resolving any color ambiguity.",
       "Counts returned by describe_view are live -- you may state them as current. Any numbers in your background notes or the FAQ may be out of date: if you have not just fetched a figure with describe_view, say it may have changed rather than asserting it.",
       "C2A2 is infrastructure that lets intellectual and spiritual traditions become visible, interact, and reveal themselves to each other -- a particle accelerator for lineages of thought. It is a concrete response to Alasdair MacIntyre's Gifford-Lectures vision of a university where rival traditions of enquiry are made answerable to one another. The accelerator half brings traditions into contact; the detector half instruments what happens when they meet.",
@@ -1342,7 +1342,7 @@ var VoiceGuide = (function() {
       "Behavior: you are speaking aloud, so keep answers short and conversational -- two or three sentences unless asked to go deeper. When the user wants to see something, call switch_tab and say briefly what you opened. Offer to show tabs proactively. If asked something outside the wiki, answer briefly and steer back. Be warm and concrete, never a lecture."
     ].join("\n");
     if (faqText) {
-      base += "\n\nFIRST-PASS FAQ (curated answers about each feature -- prefer these when a question matches, then add your own detail):\n" + faqText;
+      base += "\n\nFIRST-PASS FAQ (curated answers to GENERAL / EXPLANATORY questions -- what a feature IS and how it works, e.g. 'what is the Sociogram', 'how do I filter'. These do NOT describe the current live state. For anything about what is on screen RIGHT NOW -- selection, filters, counts, the dominant cluster -- IGNORE the FAQ and call describe_view instead):\n" + faqText;
     }
     return base;
   }
@@ -1508,6 +1508,29 @@ var VoiceGuide = (function() {
       if (src) lastDescriptor[src] = assign({ supported: true }, d.payload || {});
     }
   });
+
+  // On tab change, tell the LIVE session its cached view is stale so it re-fetches.
+  // gpt-realtime reuses an earlier describe_view even across a navigation (it once
+  // reported the previous tab's node count while on a non-bus tab); the standing
+  // prompt alone does not stop it, so we invalidate on every actual tab change.
+  var _lastTabSrc = null;
+  (function() {
+    var f = document.getElementById('content-frame');
+    if (!f) return;
+    f.addEventListener('load', function() {
+      var src = activeTabSrc();
+      if (!src || src === _lastTabSrc) { _lastTabSrc = src || _lastTabSrc; return; }
+      if (live && dc && dc.readyState === 'open') {
+        dbg('tab changed -> ' + src + ': notifying guide (cached view now stale)');
+        try {
+          dc.send(JSON.stringify({ type: 'conversation.item.create',
+            item: { type: 'message', role: 'user', content: [{ type: 'input_text',
+              text: '[SYSTEM NOTE] The user just navigated to a different tab/view. Any view, selection, filter, or count you were told earlier is now STALE -- do NOT reuse it. Before answering anything about the current view, call describe_view (and where_am_i) again.' }] } }));
+        } catch (e) { dbg('view-change notify error: ' + e); }
+      }
+      _lastTabSrc = src;
+    });
+  })();
 
   // Ask the model to generate a response, but never while one is already
   // active -- defer until the in-flight response.done, then flush (see the
