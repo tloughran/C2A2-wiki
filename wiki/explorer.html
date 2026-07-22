@@ -992,7 +992,7 @@ var VoiceGuide = (function() {
   // response finishes (response.done) -- else the follow-up answer collides and
   // never generates (the guide 'freezes' on questions needing a post-tool reply,
   // e.g. describe_view; switch_tab dodged it by speaking before the call).
-  var responseActive = false, pendingCreate = false, _pendCreateTimer = null;
+  var responseActive = false, pendingCreate = false, _pendCreateTimer = null, _hangTimer = null;
 
   // Diagnostic event log for the realtime voice loop. OFF unless the URL carries
   // ?debug=1, so it is inert in normal use. Draggable / minimizable / closable
@@ -1024,7 +1024,19 @@ var VoiceGuide = (function() {
     var legend = css(document.createElement('div'), 'display:none;padding:5px 8px;color:#9c9;font:9px/1.4 ui-monospace,monospace;border-bottom:1px solid #234;background:#0f160f;');
     legend.textContent = 'TOOL call = model invoked a tool | posted/REPLY/TIMEOUT = describe_view round-trip | SENT/DEFERRED/FORCED = answer response.create | ERROR = realtime error | ev X = raw event';
     var body = css(document.createElement('div'), 'max-height:40vh;overflow:auto;padding:6px 8px;white-space:pre-wrap;color:#8f8;font:10px/1.35 ui-monospace,monospace;');
-    panel.appendChild(bar); panel.appendChild(legend); panel.appendChild(body);
+    // Test-injection footer: type a question (no speaking) -> sent to the model as
+    // a user turn over the data channel; the trace shows the tool flow.
+    var foot = css(document.createElement('div'), 'display:flex;gap:4px;padding:5px 7px;border-top:1px solid #2a5a2a;background:#0f160f;border-radius:0 0 6px 6px;');
+    var input = css(document.createElement('input'), 'flex:1;min-width:0;background:#0a0e0a;color:#cfc;border:1px solid #2a5a2a;border-radius:3px;font:10px/1.3 ui-monospace,monospace;padding:3px 5px;');
+    input.placeholder = 'type a test question, Enter to send (no mic)';
+    var bSend = mkBtn('send', 'Send this question to the model');
+    var bBat = mkBtn('battery', 'Fire a canned question battery (~7s apart)');
+    var bGrid = mkBtn('▶ grid', 'Autorun the full state x question grid');
+    var bGridDl = mkBtn('⬇', 'Download grid results (.md)');
+    var bGridCp = mkBtn('⧉', 'Copy grid results to clipboard');
+    foot.appendChild(input); foot.appendChild(bSend); foot.appendChild(bBat);
+    foot.appendChild(bGrid); foot.appendChild(bGridDl); foot.appendChild(bGridCp);
+    panel.appendChild(bar); panel.appendChild(legend); panel.appendChild(body); panel.appendChild(foot);
     document.body.appendChild(panel);
     var chip = css(document.createElement('button'), 'position:fixed;right:16px;bottom:74px;z-index:99999;display:none;background:#132013;color:#cfc;border:1px solid #2a5a2a;border-radius:4px;cursor:pointer;font:11px/1 ui-monospace,monospace;padding:5px 8px;');
     chip.textContent = '🔎 log';
@@ -1048,6 +1060,13 @@ var VoiceGuide = (function() {
       window.addEventListener('mousemove', function(e) { if (!on) return; panel.style.left = (e.clientX - ox) + 'px'; panel.style.top = (e.clientY - oy) + 'px'; });
       window.addEventListener('mouseup', function() { on = false; });
     })();
+    function doSend() { var v = input.value.trim(); if (v) { injectUserText(v); input.value = ''; } }
+    bSend.onclick = doSend;
+    input.addEventListener('keydown', function(e) { if (e.key === 'Enter') { e.preventDefault(); doSend(); } });
+    bBat.onclick = runBattery;
+    bGrid.onclick = runGrid;
+    bGridDl.onclick = downloadResults;
+    bGridCp.onclick = copyResults;
     _dbg = { body: body };
     return _dbg;
   }
@@ -1063,6 +1082,126 @@ var VoiceGuide = (function() {
     } catch (e) {}
     try { console.log('[vg] ' + msg); } catch (e) {}
   }
+
+  // Inject a typed question as a user turn -- lets us test the tool loop without
+  // speaking, reproducibly. Requires an open session (connect first).
+  function injectUserText(text) {
+    if (!text) return;
+    if (!dc || dc.readyState !== 'open') { dbg('INJECT failed: session not connected (press Start first)'); return; }
+    dbg('INJECT user: ' + text);
+    try {
+      dc.send(JSON.stringify({ type: 'conversation.item.create',
+        item: { type: 'message', role: 'user', content: [{ type: 'input_text', text: text }] } }));
+      requestResponseCreate();
+    } catch (e) { dbg('INJECT send ERROR: ' + e); }
+  }
+  var BATTERY = [
+    'What am I looking at?',
+    'What is the big cluster on screen right now?',
+    'What filters are currently on?',
+    'How many nodes are showing?',
+    'Is anything selected?'
+  ];
+  function runBattery() {
+    dbg('=== BATTERY START (' + BATTERY.length + ' questions ~7s apart) ===');
+    BATTERY.forEach(function(q, i) {
+      setTimeout(function() { dbg('--- battery ' + (i + 1) + '/' + BATTERY.length + ' ---'); injectUserText(q); }, i * 7000);
+    });
+  }
+
+  // ── AUTORUN TEST GRID ──────────────────────────────────────────────────────
+  // Push-button: drives each view state, fires each question, captures the tools
+  // the model called + its spoken answer + a ground-truth describe_view snapshot,
+  // auto-flags hangs, then offers the results as markdown (copy / download).
+  var _test = { capture: null, onAnswer: null, results: [], running: false, md: '' };
+  function _sleep(ms) { return new Promise(function(r) { setTimeout(r, ms); }); }
+  function _ifWin() { try { return document.getElementById('content-frame').contentWindow; } catch (e) { return null; } }
+  function _ifDoc() { try { return _ifWin().document; } catch (e) { return null; } }
+  function _ifClick(sel) { var d = _ifDoc(); if (!d) return false; var el = d.querySelector(sel); if (!el) return false; try { el.dispatchEvent(new MouseEvent('click', { bubbles: true })); return true; } catch (e) { try { el.click(); return true; } catch (e2) { return false; } } }
+  function _resetSociogram() {
+    var w = _ifWin(), d = _ifDoc();
+    try { if (w && w.dismissRightPanel) w.dismissRightPanel(); } catch (e) {}
+    try { var lv = d && d.getElementById('left-page-viewer'); if (lv) lv.style.display = 'none'; } catch (e) {}
+    try { var all = d && d.getElementById('chk-all'); if (all && !all.checked) all.click(); } catch (e) {}
+  }
+  async function _ensureTab(key) {
+    var want = null; for (var i = 0; i < TABS.length; i++) if (TABS[i].key === key) want = TABS[i];
+    if (!want) { dbg('  ensureTab: unknown ' + key); return; }
+    var cur = activeTabSrc().split('/').pop();
+    if (want.src && want.src.split('/').pop() === cur) return;   // already there, no reload
+    switchTab(key);
+    await _sleep(key === 'sociogram' ? 3500 : 1600);             // sociogram is ~47MB
+  }
+  var TEST_STATES = [
+    { label: 'Sociogram default', setup: async function() { await _ensureTab('sociogram'); _resetSociogram(); } },
+    { label: 'node selected',     setup: async function() { await _ensureTab('sociogram'); _resetSociogram(); var w = _ifWin(); if (w && w.openNodeByLabel) w.openNodeByLabel('traditions/levin'); else dbg('  (openNodeByLabel missing)'); } },
+    { label: 'edge selected',     setup: async function() { await _ensureTab('sociogram'); _resetSociogram(); if (!_ifClick('svg line')) dbg('  (no edge <line> to click)'); } },
+    { label: 'filtered (no structure)', setup: async function() { await _ensureTab('sociogram'); _resetSociogram(); if (!_ifClick('#chk-all-structure')) dbg('  (structure toggle not found)'); } },
+    { label: 'Agent Map (non-bus)', setup: async function() { await _ensureTab('agent_map'); } }
+  ];
+  var TEST_QS = ['What am I looking at?', 'Is anything selected, and what is it?', 'What filters are on right now?', 'What is the biggest cluster on screen?', 'How many nodes are showing?'];
+
+  function _awaitAnswer(ms) {
+    return new Promise(function(resolve) {
+      var done = false, rec = { tools: [], answer: '', hung: false };
+      _test.capture = rec;
+      _test.onAnswer = function(t) { if (done) return; done = true; rec.answer = t || ''; _test.capture = null; _test.onAnswer = null; resolve(rec); };
+      setTimeout(function() { if (done) return; done = true; rec.hung = true; _test.capture = null; _test.onAnswer = null; resolve(rec); }, ms);
+    });
+  }
+  async function _truthSnapshot() {
+    try {
+      var d = await describeView();
+      if (d.supported === false) return 'supported:false';
+      var c = d.state && d.state.counts, dom = d.state && d.state.dominant && d.state.dominant[0], sel = d.state && d.state.selected;
+      return 'nodes ' + (c && c.visibleNodes) + ' | dom ' + (dom && dom.label) + ' | sel ' + (sel ? (sel.kind === 'edge' ? 'edge' : (sel.label || sel.kind)) : 'none');
+    } catch (e) { return '(describe err: ' + e + ')'; }
+  }
+  async function runGrid() {
+    if (!dc || dc.readyState !== 'open') { dbg('Run Grid: connect first (press Start).'); return; }
+    if (_test.running) { dbg('Run Grid: already running.'); return; }
+    _test.running = true; _test.results = [];
+    dbg('═══ RUN GRID: ' + TEST_STATES.length + ' states x ' + TEST_QS.length + ' questions ═══');
+    for (var si = 0; si < TEST_STATES.length; si++) {
+      var s = TEST_STATES[si];
+      dbg('### STATE ' + (si + 1) + '/' + TEST_STATES.length + ': ' + s.label);
+      try { await s.setup(); } catch (e) { dbg('  setup error: ' + e); }
+      await _sleep(1200);
+      var truth = await _truthSnapshot();
+      dbg('  truth: ' + truth);
+      for (var qi = 0; qi < TEST_QS.length; qi++) {
+        var q = TEST_QS[qi];
+        dbg('  Q: ' + q);
+        injectUserText(q);
+        var r = await _awaitAnswer(15000);
+        _test.results.push({ state: s.label, q: q, truth: truth, tools: r.tools.join('|') || '(none)', hung: r.hung, answer: (r.answer || '').replace(/\s+/g, ' ').slice(0, 240) });
+        dbg('    ' + (r.hung ? '⚠ HUNG' : 'ok') + ' tools=[' + r.tools.join('|') + ']');
+        await _sleep(1000);
+      }
+    }
+    _test.running = false;
+    _test.md = _resultsMarkdown();
+    dbg('═══ GRID DONE: ' + _test.results.length + ' cells (see results table below; use grid⬇ / copy) ═══');
+    _test.results.forEach(function(r) { dbg('RES | ' + r.state + ' | ' + r.q + ' | truth:' + r.truth + ' | tools:' + r.tools + ' | ' + (r.hung ? 'HUNG' : 'ok') + ' | ' + r.answer); });
+  }
+  function _resultsMarkdown() {
+    var out = ['# Voice guide test grid (' + _test.results.length + ' cells)', '', '| state | question | ground truth | tools called | hung | model answer |', '|---|---|---|---|---|---|'];
+    _test.results.forEach(function(r) {
+      out.push('| ' + r.state + ' | ' + r.q + ' | ' + r.truth + ' | ' + r.tools + ' | ' + (r.hung ? '**YES**' : '') + ' | ' + (r.answer || '').replace(/\|/g, '/') + ' |');
+    });
+    return out.join('\n');
+  }
+  function downloadResults() {
+    var md = _test.md || _resultsMarkdown();
+    try {
+      var blob = new Blob([md], { type: 'text/markdown' });
+      var a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+      a.download = 'voice_grid_results.md'; document.body.appendChild(a); a.click();
+      setTimeout(function() { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
+    } catch (e) { dbg('download error: ' + e); }
+  }
+  function copyResults() { try { navigator.clipboard.writeText(_test.md || _resultsMarkdown()); dbg('results copied to clipboard'); } catch (e) { dbg('copy error: ' + e); } }
+
   var faqText = '';   // first-pass FAQ authored by the weekly voice-faq agent
 
   // Tabs the guide can drive by voice. Each maps to the shell's own buttons,
@@ -1387,8 +1526,11 @@ var VoiceGuide = (function() {
       }, 1200);
       return;
     }
-    try { dc.send(JSON.stringify({ type: 'response.create' })); dbg('response.create SENT'); }
-    catch (e) { dbg('response.create send ERROR: ' + e); }
+    try {
+      dc.send(JSON.stringify({ type: 'response.create' })); dbg('response.create SENT');
+      clearTimeout(_hangTimer);
+      _hangTimer = setTimeout(function() { dbg('⚠ HANG? response.create SENT but no response.created in 4s'); }, 4000);
+    } catch (e) { dbg('response.create send ERROR: ' + e); }
   }
 
   function handleEvent(ev) {
@@ -1403,11 +1545,13 @@ var VoiceGuide = (function() {
       case 'response.audio_transcript.done':
       case 'response.output_audio_transcript.done':
         if (m.transcript) addLine('Guide', m.transcript.trim());
+        if (_test.onAnswer && m.transcript) _test.onAnswer(m.transcript);
         break;
       case 'response.function_call_arguments.done': {
         var args = {};
         try { args = JSON.parse(m.arguments || '{}'); } catch (e) {}
         dbg('TOOL call: ' + m.name + ' ' + JSON.stringify(args));
+        if (_test.capture) _test.capture.tools.push(m.name);
         var pending;
         if (m.name === 'switch_tab')          pending = Promise.resolve(switchTab(args.tab));
         else if (m.name === 'where_am_i')     pending = Promise.resolve(whereAmI());
@@ -1429,6 +1573,7 @@ var VoiceGuide = (function() {
       }
       case 'response.created':
         responseActive = true;
+        clearTimeout(_hangTimer);
         break;
       case 'response.done':
         responseActive = false;
