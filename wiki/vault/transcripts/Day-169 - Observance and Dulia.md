@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api (bash sandbox)
 fidelity_checked: true
 synthesis: "[[Day-169 - Observance and Dulia - Contemporary]]"
 tags: [summa, day/169, pars/II-II, q/102-103]
-last_qc_at: "2026-07-08T04:24:27"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-21T20:20:22"
+last_qc_outcome: "pass"
 ---
 
 # Day 169 — Observance and Dulia
