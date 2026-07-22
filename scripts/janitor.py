@@ -1015,6 +1015,125 @@ def check_count_drift():
     return findings
 
 
+# --- Voice-guide knowledge coverage/divergence (voice_guide_state_bus.md) -----
+# The canonical source for the voice guide's per-page knowledge is
+# wiki/voice_guide/knowledge/*.md — one file per affordance-state, keyed by
+# `state_key` (finer than per-tab). explorer.html's own tab help is DERIVED from
+# each tab's `.default` knowledge file by scripts/derive_tab_help.py, so the two
+# must not drift. Report-only findings:
+#   voice_knowledge_malformed     — file missing required frontmatter
+#   voice_knowledge_orphan_tab    — file whose `tab` is not a real explorer tab
+#   voice_knowledge_help_drift    — a default file's Purpose != explorer help body
+#   voice_knowledge_uncovered_tab — (info) live tabs with no .default file yet
+# Read-only; no writes, no git, so idempotent and lock-safe (H6).
+KNOWLEDGE_DIR = PROJECT_ROOT / "wiki" / "voice_guide" / "knowledge"
+VK_REQUIRED_ALL = ("state_key", "volatile")              # every knowledge file
+VK_REQUIRED_STATE = ("affordance_state", "tab")          # non-global files only
+
+
+def _vk_parse(text):
+    """(frontmatter dict, body) for a knowledge markdown file. Simple key: value
+    scalars only — no nested YAML is used in these files."""
+    m = re.match(r"^---\n(.*?)\n---\n?(.*)$", text, re.DOTALL)
+    if not m:
+        return {}, text
+    fm = {}
+    for line in m.group(1).splitlines():
+        if ":" in line and not line.lstrip().startswith("#"):
+            k, _, v = line.partition(":")
+            fm[k.strip()] = v.split("#", 1)[0].strip()
+    return fm, m.group(2)
+
+
+def _vk_purpose(body):
+    """Whitespace-normalized text of the `## Purpose` section, or None if absent."""
+    m = re.search(r"##\s+Purpose\s*\n(.*?)(?:\n##\s|\Z)", body, re.DOTALL)
+    return re.sub(r"\s+", " ", m.group(1)).strip() if m else None
+
+
+def _extract_description_bodies(html):
+    """{data_src: normalized help body} from explorer.html's `descriptions` map.
+    None if the map is absent (structure changed)."""
+    block = re.search(r"var descriptions\s*=\s*\{(.*?)\n  \};", html, re.DOTALL)
+    if not block:
+        return None
+    out = {}
+    entry = re.compile(
+        r"""['"]([^'"]+)['"]\s*:\s*\{\s*title:\s*'(?:[^'\\]|\\.)*',\s*"""
+        r"""body:\s*'((?:[^'\\]|\\.)*)'\s*\}""", re.DOTALL)
+    for m in entry.finditer(block.group(1)):
+        body = m.group(2).replace("\\'", "'").replace("\\\\", "\\")
+        out[m.group(1)] = re.sub(r"\s+", " ", body).strip()
+    return out
+
+
+def _voice_knowledge_findings(files, tab_srcs, desc_bodies):
+    """Pure logic (no I/O). `files`=[(name, fm, body)]; `tab_srcs`=set of tab
+    data-srcs; `desc_bodies`={data_src: normalized help body} or None."""
+    findings, covered = [], set()
+    for name, fm, body in files:
+        loc = "voice_knowledge:%s" % name
+        is_global = fm.get("scope") == "global"
+        required = VK_REQUIRED_ALL + (() if is_global else VK_REQUIRED_STATE)
+        missing = [k for k in required if not fm.get(k)]
+        if missing:
+            findings.append(Finding(
+                "voice_knowledge_malformed", loc,
+                "knowledge file missing required frontmatter: %s"
+                % ", ".join(missing), "warn"))
+            continue
+        tab = fm.get("tab")
+        if not is_global:
+            if tab not in tab_srcs:
+                findings.append(Finding(
+                    "voice_knowledge_orphan_tab", loc,
+                    "knowledge `tab` %r is not an explorer tab data-src" % tab,
+                    "warn", note="fix the tab value or remove the file"))
+                continue
+        if fm.get("affordance_state") == "default" and tab:
+            covered.add(tab)
+            purpose = _vk_purpose(body)
+            help_body = desc_bodies.get(tab) if desc_bodies else None
+            if purpose and help_body and purpose != help_body:
+                findings.append(Finding(
+                    "voice_knowledge_help_drift", loc,
+                    "explorer help for tab %r has drifted from this file's "
+                    "Purpose section" % tab, "warn",
+                    note="run scripts/derive_tab_help.py to re-derive explorer "
+                         "help from knowledge/ (canonical-source rule)"))
+    uncovered = sorted(s for s in tab_srcs if s not in covered)
+    if uncovered:
+        findings.append(Finding(
+            "voice_knowledge_uncovered_tab", "voice_knowledge:coverage",
+            "%d explorer tab(s) have no default knowledge file yet: %s"
+            % (len(uncovered), ", ".join(uncovered)), "info"))
+    return findings
+
+
+def check_voice_knowledge_drift():
+    """Voice-guide knowledge coverage + explorer-help divergence
+    (voice_guide_state_bus.md canonical-source rule). Read-only; lock-safe (H6)."""
+    if not KNOWLEDGE_DIR.is_dir():
+        return []   # feature not rolled out here; nothing to check
+    try:
+        html = EXPLORER_PATH.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError):
+        return [Finding("voice_knowledge_drift", rel(EXPLORER_PATH),
+                        "explorer.html missing/unreadable", "warn")]
+    tabs = _extract_tab_srcs(html)
+    tab_srcs = {s for s, _ in tabs} if tabs else set()
+    desc_bodies = _extract_description_bodies(html)
+    files = []
+    for path in sorted(KNOWLEDGE_DIR.glob("*.md")):
+        try:
+            fm, body = _vk_parse(path.read_text(encoding="utf-8"))
+        except (OSError, UnicodeDecodeError):
+            files.append((path.name, {}, ""))
+            continue
+        files.append((path.name, fm, body))
+    return _voice_knowledge_findings(files, tab_srcs, desc_bodies)
+
+
 # --- Orchestration -----------------------------------------------------------
 
 ALL_CHECKS = [
@@ -1033,6 +1152,7 @@ ALL_CHECKS = [
     ("schedule_drift",          check_schedule_drift,        False, False),
     ("tab_description_coverage", check_tab_description_coverage, False, False),
     ("count_drift",             check_count_drift,           False, False),
+    ("voice_knowledge_drift",   check_voice_knowledge_drift, False, False),
 ]
 
 

@@ -329,6 +329,114 @@ def test_count_integration_real_repo():
             (x.check, x.detail) for x in f]
 
 
+# ── voice-guide knowledge coverage/divergence (voice_guide_state_bus.md) ──────
+# Exercise the pure _voice_knowledge_findings() core with synthetic knowledge
+# files so every branch is covered without fixtures. The integration test pins
+# that the committed worktree knowledge files are well-formed (no malformed /
+# orphan-tab), the durable invariant; help-drift + coverage are transient during
+# rollout and are asserted only in the synthetic tests.
+
+def kf(name, body="## Purpose\nX\n", **fm):
+    """Build a synthetic (name, frontmatter, body) knowledge record."""
+    return (name, fm, body)
+
+
+def vk(files, tab_srcs=("t.html",), desc_bodies=None):
+    return J._voice_knowledge_findings(list(files), set(tab_srcs),
+                                       {} if desc_bodies is None else desc_bodies)
+
+
+def test_vk_global_file_needs_no_affordance():
+    # 00_project-style global file legitimately has no affordance_state/tab.
+    f = vk([kf("00_project.md", scope="global", state_key="00_project",
+               volatile="bus")])
+    assert "voice_knowledge_malformed" not in checks(f), \
+        "a global knowledge file must not require affordance_state/tab"
+
+
+def test_vk_state_file_missing_affordance_is_malformed():
+    f = vk([kf("s.md", state_key="s", volatile="bus", tab="t.html")])
+    m = by_check(f, "voice_knowledge_malformed")
+    assert m and "affordance_state" in m[0].detail
+
+
+def test_vk_state_file_missing_tab_is_malformed():
+    f = vk([kf("s.md", state_key="s", volatile="bus", affordance_state="default")])
+    m = by_check(f, "voice_knowledge_malformed")
+    assert m and "tab" in m[0].detail
+
+
+def test_vk_orphan_tab_warns():
+    f = vk([kf("s.md", state_key="s", volatile="bus", affordance_state="default",
+               tab="ghost.html")], tab_srcs=("t.html",))
+    o = by_check(f, "voice_knowledge_orphan_tab")
+    assert o and o[0].severity == "warn"
+
+
+def test_vk_help_drift_warns_when_purpose_differs():
+    f = vk([kf("s.md", "## Purpose\nAAA\n", state_key="s", volatile="bus",
+               affordance_state="default", tab="t.html")],
+           tab_srcs=("t.html",), desc_bodies={"t.html": "BBB"})
+    d = by_check(f, "voice_knowledge_help_drift")
+    assert d and d[0].severity == "warn"
+
+
+def test_vk_no_drift_when_purpose_matches_help():
+    f = vk([kf("s.md", "## Purpose\nSAME\n", state_key="s", volatile="bus",
+               affordance_state="default", tab="t.html")],
+           tab_srcs=("t.html",), desc_bodies={"t.html": "SAME"})
+    assert "voice_knowledge_help_drift" not in checks(f)
+
+
+def test_vk_missing_purpose_section_does_not_false_drift():
+    # A default file with no ## Purpose section must not be reported as drift.
+    f = vk([kf("s.md", "## Affordances\nx\n", state_key="s", volatile="bus",
+               affordance_state="default", tab="t.html")],
+           tab_srcs=("t.html",), desc_bodies={"t.html": "anything"})
+    assert "voice_knowledge_help_drift" not in checks(f)
+
+
+def test_vk_uncovered_tab_is_info():
+    f = vk([kf("s.md", state_key="s", volatile="bus", affordance_state="default",
+               tab="t.html")], tab_srcs=("t.html", "u.html"))
+    u = by_check(f, "voice_knowledge_uncovered_tab")
+    assert u and u[0].severity == "info" and "u.html" in u[0].detail
+    assert "t.html" not in u[0].detail, "a covered tab must not appear as uncovered"
+
+
+def test_vk_all_tabs_covered_no_uncovered_finding():
+    f = vk([kf("s.md", state_key="s", volatile="bus", affordance_state="default",
+               tab="t.html")], tab_srcs=("t.html",))
+    assert "voice_knowledge_uncovered_tab" not in checks(f)
+
+
+def test_vk_integration_worktree_files_wellformed():
+    """The committed worktree knowledge files must be structurally sound: no
+    malformed frontmatter, no orphan tab. (help-drift/coverage are transient
+    during rollout and not pinned here.)"""
+    import re as _re
+    here = os.path.dirname(os.path.abspath(__file__))
+    root = os.path.dirname(here)
+    kd = os.path.join(root, "wiki", "voice_guide", "knowledge")
+    if not os.path.isdir(kd):
+        return  # feature not present in this checkout — nothing to pin
+    html = open(os.path.join(root, "wiki", "explorer.html"),
+                encoding="utf-8").read()
+    tabs = J._extract_tab_srcs(html)
+    tab_srcs = {s for s, _ in tabs} if tabs else set()
+    db = J._extract_description_bodies(html)
+    files = []
+    for n in sorted(os.listdir(kd)):
+        if n.endswith(".md"):
+            fm, body = J._vk_parse(open(os.path.join(kd, n), encoding="utf-8").read())
+            files.append((n, fm, body))
+    f = J._voice_knowledge_findings(files, tab_srcs, db)
+    bad = [x for x in f if x.check in ("voice_knowledge_malformed",
+                                       "voice_knowledge_orphan_tab")]
+    assert not bad, "committed knowledge files are malformed/orphaned: %r" % [
+        (x.scope, x.detail) for x in bad]
+
+
 def main():
     tests = [v for k, v in sorted(globals().items())
              if k.startswith("test_") and callable(v)]

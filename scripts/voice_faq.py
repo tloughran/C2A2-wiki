@@ -7,9 +7,9 @@ wiki/voice_guide_faq.json at session start and uses it as its first-pass
 resource for answering vocalized questions. This script owns the DETERMINISTIC
 half of keeping that FAQ fresh (Rule 5: if code can answer, code answers):
 
-  scan   Parse every explorer tab + its help text, hash each feature, and diff
-         against voice_faq/state.json. Prints JSON: which features are new,
-         changed, unchanged, or removed. No network, no key.
+  scan   Read every knowledge/ affordance-state file, hash each, and diff
+         against voice_faq/state.json. Prints JSON: which features (per
+         state_key) are new, changed, unchanged, or removed. No network, no key.
 
   merge  Take LLM-authored Q&A for the new/changed features, retain existing
          Q&A for unchanged features, validate the schema, and write
@@ -34,8 +34,8 @@ Usage:
     python3 voice_faq.py merge <qa.json>            # append Q&A + write FAQ + report
     python3 voice_faq.py merge <qa.json> --dry-run  # validate + preview; no writes
 
-qa.json shape (any subset of feature keys; pairs are appended, dupes skipped):
-    { "wiki_narration.html": [ {"q": "...", "a": "..."}, ... ], ... }
+qa.json shape (any subset of state_keys; pairs are appended, dupes skipped):
+    { "sociogram.graph.default": [ {"q": "...", "a": "..."}, ... ], ... }
 """
 from __future__ import annotations
 import argparse
@@ -47,7 +47,7 @@ from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-EXPLORER = ROOT / "wiki" / "explorer.html"
+KNOWLEDGE_DIR = ROOT / "wiki" / "voice_guide" / "knowledge"   # canonical source of truth
 FAQ_OUT = ROOT / "wiki" / "voice_guide_faq.json"
 STATE_DIR = ROOT / "voice_faq"                # outside wiki/ so Obsidian ignores it
 STATE_FILE = STATE_DIR / "state.json"
@@ -58,67 +58,45 @@ TARGET_TOTAL = 100            # ramp target; once reached, the agent adds ~1/wee
 
 
 # ── feature inventory ────────────────────────────────────────────────────────
-
-def _parse_tabs(html: str) -> dict[str, str]:
-    """key (data-src) -> visible label, for every tab/chapter button."""
-    tabs: dict[str, str] = {}
-    for m in re.finditer(r'data-src="([^"]+)"[^>]*>(.*?)</button>', html, re.S):
-        src = m.group(1)
-        # strip nested spans/tags, collapse whitespace
-        label = re.sub(r"<[^>]+>", " ", m.group(2))
-        label = re.sub(r"&nbsp;", " ", label)
-        label = re.sub(r"\s+", " ", label).strip()
-        if src and src not in tabs:
-            tabs[src] = label or src
-    return tabs
+# Source of truth is the canonical knowledge/ directory (voice_guide_state_bus.md
+# "canonical-source rule"), NOT the descriptions map inside explorer.html. Each
+# knowledge file is one FAQ feature keyed by its `state_key` — i.e. per
+# affordance-state (finer than per-tab). The explorer's own help text is DERIVED
+# from knowledge/ by scripts/derive_tab_help.py, so it is not a second source.
 
 
-def _parse_descriptions(html: str) -> dict[str, dict[str, str]]:
-    """Parse the `var descriptions = { 'src': {title, body}, ... }` help map.
+def _parse_frontmatter(text: str) -> tuple[dict, str]:
+    """Split a knowledge markdown file into (frontmatter dict, body).
 
-    Tolerant of escaped single quotes inside the string values."""
-    block = re.search(r"var descriptions = \{(.*?)\n  \};", html, re.S)
-    if not block:
-        return {}
-    body = block.group(1)
-    out: dict[str, dict[str, str]] = {}
-    entry = re.compile(
-        r"'([^']+\.html)':\s*\{\s*"
-        r"title:\s*'((?:[^'\\]|\\.)*)',\s*"
-        r"body:\s*'((?:[^'\\]|\\.)*)'\s*\}",
-        re.S,
-    )
-    for m in entry.finditer(body):
-        key, title, txt = m.group(1), m.group(2), m.group(3)
-        unesc = lambda s: s.replace("\\'", "'").replace("\\\\", "\\")
-        out[key] = {"title": unesc(title), "body": unesc(txt)}
-    return out
+    Frontmatter is the block between the first two `---` lines; values are simple
+    `key: value` scalars (no nested YAML needed here)."""
+    m = re.match(r"^---\n(.*?)\n---\n?(.*)$", text, re.S)
+    if not m:
+        return {}, text
+    fm: dict[str, str] = {}
+    for line in m.group(1).splitlines():
+        if ":" in line and not line.lstrip().startswith("#"):
+            k, _, v = line.partition(":")
+            fm[k.strip()] = v.split("#", 1)[0].strip()
+    return fm, m.group(2)
 
 
 def build_inventory() -> list[dict]:
-    """One record per explorer feature: key, title, body. Order = tab order."""
-    html = EXPLORER.read_text(encoding="utf-8")
-    tabs = _parse_tabs(html)
-    desc = _parse_descriptions(html)
+    """One record per knowledge affordance-state: key (state_key), title, body.
+
+    Order = sorted by filename for determinism."""
     inv: list[dict] = []
-    seen = set()
-    for src, label in tabs.items():
-        if src in seen:
-            continue
-        seen.add(src)
-        d = desc.get(src, {})
+    if not KNOWLEDGE_DIR.is_dir():
+        return inv
+    for path in sorted(KNOWLEDGE_DIR.glob("*.md")):
+        fm, body = _parse_frontmatter(path.read_text(encoding="utf-8"))
+        key = fm.get("state_key") or path.stem
         inv.append({
-            "key": src,
-            "title": d.get("title") or label,
-            "label": label,
-            "body": d.get("body", ""),
+            "key": key,
+            "title": fm.get("title") or key,
+            "label": fm.get("title") or key,
+            "body": body.strip(),
         })
-    # descriptions can cover pages that aren't in the tab bar (e.g. cards views)
-    for src, d in desc.items():
-        if src not in seen:
-            seen.add(src)
-            inv.append({"key": src, "title": d.get("title", src),
-                        "label": d.get("title", src), "body": d.get("body", "")})
     return inv
 
 
@@ -165,7 +143,7 @@ def cmd_scan(args) -> int:
     inv = build_inventory()
     diff = diff_inventory(inv, load_state())
     if args.pretty:
-        print(f"Explorer features: {len(inv)}")
+        print(f"Knowledge features: {len(inv)}")
         print(f"  new:       {len(diff['new'])}  " +
               ", ".join(r["key"] for r in diff["new"]))
         print(f"  changed:   {len(diff['changed'])}  " +

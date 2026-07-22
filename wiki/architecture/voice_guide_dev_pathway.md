@@ -179,6 +179,30 @@ Realtime loop, `switch_tab`, anti-fabrication, the contract, FAQ v1. On `voice-g
 - **Exit:** every page-state has knowledge + bus + pathways; a test suite gates regressions; live
   end-to-end demo across all tabs.
 
+### Phase 4b — Usage-grounded FAQ (parallel track; needs Tom's privacy call)
+The FAQ today is authored top-down from features. Tom's goal (2026-07-21) is a FAQ **grounded in
+real demand**: mine actual questions, cluster into use-cases, author an answer for every cluster
+seen **n≥2–3 times** (the anti-noise floor — a one-off never earns an entry). Grounded in what the
+broker actually captures:
+
+- **Text-pipeline questions** (`enrich`/`web_enrich` — the "Ask AI" boxes): the broker **already
+  receives** the question text (`body.user`); it just doesn't persist it. Capture = **one INSERT +
+  a migration** (`question_log`: device-hash, ts, action, origin, text). Cheap (~a day).
+- **Voice questions** (realtime): captured **nowhere** — the conversation is client↔OpenAI over
+  WebRTC direct; the broker only mints the token. Requires a **client-side beacon** (utterance or
+  classified intent → a logging endpoint). Larger build, most privacy-sensitive.
+- **Privacy gate (🔒 Tom's call — public site):** raw free-text from public visitors raises
+  consent/PII. Mitigations, in the broker's existing idiom: service-role, **RLS-locked** table,
+  **salted device-hash not identity**; stronger, log a **classified intent / normalized use-case**
+  rather than raw utterance. No agent decides this.
+- **Pipeline:** log → private RLS store → scheduled clustering agent → author FAQ for clusters
+  n≥2–3 → **human review before publish** (LLM-authored → never auto-push).
+- **Reality check first:** n≥2–3 only accrues with traffic; the broker's `get_usage` volume
+  (Supabase dashboard) says whether clusters fill in days or months — check before over-investing.
+
+Verdict: realistic. Text half is cheap; the voice beacon + the privacy model are the real
+decisions, so this is its own track, gated on Tom, not folded into the knowledge-repo phases.
+
 ### Cross-cutting constraints (every phase)
 - **No-Blind-Push:** local HTTP review of `explorer.html` before any push.
 - **Iframe-asset rule:** bus code is **inlined** in each tab (never a bare external `src=`).
