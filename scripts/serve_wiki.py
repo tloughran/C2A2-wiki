@@ -53,6 +53,21 @@ class WikiHandler(http.server.SimpleHTTPRequestHandler):
 
     vault_dir = DEFAULT_VAULT
 
+    def guess_type(self, path):
+        # SimpleHTTPRequestHandler serves .md with no charset, so browsers fall
+        # back to Latin-1 and mojibake every non-ASCII char (em/en dashes, arrows).
+        # .html is immune (its in-band <meta charset> wins); .md has no in-band
+        # declaration, so the header MUST carry the charset. Force it here so the
+        # fix lives in the server, not in a per-file ASCII scrub that re-breaks on
+        # the next md that uses a dash.
+        lower = path.lower()
+        if lower.endswith((".md", ".markdown")):
+            return "text/markdown; charset=utf-8"
+        ctype = super().guess_type(path)
+        if isinstance(ctype, str) and ctype.startswith("text/") and "charset" not in ctype:
+            return ctype + "; charset=utf-8"
+        return ctype
+
     def do_POST(self):
         if self.path == "/api/approve":
             try:
