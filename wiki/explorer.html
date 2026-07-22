@@ -987,6 +987,82 @@ var VoiceGuide = (function() {
   var DEVICE_ID_KEY = 'c2a2_device_id';
 
   var pc = null, dc = null, micStream = null, live = false, connecting = false, remoteStream = null;
+  // Realtime allows only ONE active response at a time. A tool call arrives
+  // DURING the model's response, so we must not response.create until that
+  // response finishes (response.done) -- else the follow-up answer collides and
+  // never generates (the guide 'freezes' on questions needing a post-tool reply,
+  // e.g. describe_view; switch_tab dodged it by speaking before the call).
+  var responseActive = false, pendingCreate = false, _pendCreateTimer = null;
+
+  // Diagnostic event log for the realtime voice loop. OFF unless the URL carries
+  // ?debug=1, so it is inert in normal use. Draggable / minimizable / closable
+  // panel with a copy button; parks over the voice pill (bottom-right) on first
+  // open. Traces tool calls, the describe_view round-trip, and the response
+  // handshake.
+  var DEBUG = /[?&]debug=1/.test(location.search);
+  var _dbg = null, _dbgN = 0;
+  function _dbgBuild() {
+    if (_dbg) return _dbg;
+    function css(el, s) { el.style.cssText = s; return el; }
+    function mkBtn(label, tip) {
+      var b = document.createElement('button');
+      b.textContent = label; b.title = tip || '';
+      css(b, 'background:#1c2e1c;color:#cfc;border:1px solid #2a5a2a;border-radius:3px;cursor:pointer;font:10px/1 ui-monospace,monospace;padding:2px 6px;');
+      return b;
+    }
+    var panel = css(document.createElement('div'), 'position:fixed;right:16px;bottom:74px;width:390px;max-width:92vw;z-index:99999;background:rgba(10,14,10,.94);border:1px solid #2a5a2a;border-radius:6px;box-shadow:0 6px 24px rgba(0,0,0,.5);');
+    panel.id = 'vg-debug';
+    var bar = css(document.createElement('div'), 'display:flex;align-items:center;gap:5px;padding:5px 7px;cursor:move;background:#132013;border-bottom:1px solid #2a5a2a;border-radius:6px 6px 0 0;user-select:none;');
+    var title = css(document.createElement('span'), 'flex:1;color:#bfb;font:600 11px/1.3 ui-monospace,monospace;');
+    title.textContent = '🔎 voice debug';
+    var bHelp = mkBtn('?', 'What the log lines mean');
+    var bCopy = mkBtn('copy', 'Copy the whole log to the clipboard');
+    var bClear = mkBtn('clr', 'Clear the log');
+    var bMin = mkBtn('–', 'Minimize / restore');
+    var bClose = mkBtn('×', 'Close (a small chip re-opens it)');
+    [title, bHelp, bCopy, bClear, bMin, bClose].forEach(function(x) { bar.appendChild(x); });
+    var legend = css(document.createElement('div'), 'display:none;padding:5px 8px;color:#9c9;font:9px/1.4 ui-monospace,monospace;border-bottom:1px solid #234;background:#0f160f;');
+    legend.textContent = 'TOOL call = model invoked a tool | posted/REPLY/TIMEOUT = describe_view round-trip | SENT/DEFERRED/FORCED = answer response.create | ERROR = realtime error | ev X = raw event';
+    var body = css(document.createElement('div'), 'max-height:40vh;overflow:auto;padding:6px 8px;white-space:pre-wrap;color:#8f8;font:10px/1.35 ui-monospace,monospace;');
+    panel.appendChild(bar); panel.appendChild(legend); panel.appendChild(body);
+    document.body.appendChild(panel);
+    var chip = css(document.createElement('button'), 'position:fixed;right:16px;bottom:74px;z-index:99999;display:none;background:#132013;color:#cfc;border:1px solid #2a5a2a;border-radius:4px;cursor:pointer;font:11px/1 ui-monospace,monospace;padding:5px 8px;');
+    chip.textContent = '🔎 log';
+    document.body.appendChild(chip);
+    bHelp.onclick = function() { legend.style.display = legend.style.display === 'none' ? '' : 'none'; };
+    bCopy.onclick = function() { try { navigator.clipboard.writeText(body.innerText); bCopy.textContent = 'copied'; setTimeout(function() { bCopy.textContent = 'copy'; }, 1000); } catch (e) {} };
+    bClear.onclick = function() { body.textContent = ''; _dbgN = 0; };
+    bMin.onclick = function() { var hidden = body.style.display === 'none'; body.style.display = hidden ? '' : 'none'; legend.style.display = 'none'; bMin.textContent = hidden ? '–' : '□'; };
+    bClose.onclick = function() { panel.style.display = 'none'; chip.style.display = ''; };
+    chip.onclick = function() { panel.style.display = ''; chip.style.display = 'none'; };
+    (function() {   // drag by the title bar
+      var on = false, ox = 0, oy = 0;
+      bar.addEventListener('mousedown', function(e) {
+        if (e.target !== bar && e.target !== title) return;   // buttons stay clickable
+        on = true; var r = panel.getBoundingClientRect();
+        ox = e.clientX - r.left; oy = e.clientY - r.top;
+        panel.style.right = 'auto'; panel.style.bottom = 'auto';
+        panel.style.left = r.left + 'px'; panel.style.top = r.top + 'px';
+        e.preventDefault();
+      });
+      window.addEventListener('mousemove', function(e) { if (!on) return; panel.style.left = (e.clientX - ox) + 'px'; panel.style.top = (e.clientY - oy) + 'px'; });
+      window.addEventListener('mouseup', function() { on = false; });
+    })();
+    _dbg = { body: body };
+    return _dbg;
+  }
+  function dbg(msg) {
+    if (!DEBUG) return;
+    try {
+      var d = _dbgBuild();
+      var line = document.createElement('div');
+      line.textContent = (++_dbgN) + ' [' + (performance.now() / 1000).toFixed(2) + 's] ' + msg;
+      d.body.appendChild(line);
+      d.body.scrollTop = d.body.scrollHeight;
+      while (d.body.childNodes.length > 400) d.body.removeChild(d.body.firstChild);
+    } catch (e) {}
+    try { console.log('[vg] ' + msg); } catch (e) {}
+  }
   var faqText = '';   // first-pass FAQ authored by the weekly voice-faq agent
 
   // Tabs the guide can drive by voice. Each maps to the shell's own buttons,
@@ -1209,6 +1285,12 @@ var VoiceGuide = (function() {
   }
   // The active tab's data-src, or '' for a single-page chapter with no sub-tab.
   function activeTabSrc() {
+    // Look these up LOCALLY: row2/row2edu live in a different <script> block's
+    // IIFE scope and are not reachable here. `row2` only resolved by DOM
+    // id-global accident; `row2-edu`'s hyphen breaks that -> bare `row2edu` threw
+    // ReferenceError, so where_am_i/describe_view threw and the guide hung.
+    var row2 = document.getElementById('row2');
+    var row2edu = document.getElementById('row2-edu');
     var btn = null;
     if (row2edu && row2edu.style.display !== 'none') btn = document.querySelector('#row2-edu .tab-btn.active');
     else if (!row2 || row2.style.display !== 'none') btn = document.querySelector('#row2 .tab-btn.active');
@@ -1245,18 +1327,20 @@ var VoiceGuide = (function() {
     var base = { tab: t ? t.key : (src || 'unknown'), title: labelForSrc(src) };
     return new Promise(function(resolve) {
       var win;
-      try { win = frame.contentWindow; } catch (e) { win = null; }
+      try { win = document.getElementById('content-frame').contentWindow; } catch (e) { win = null; }
       if (!win) { resolve(assign({ supported: false }, base)); return; }
       var id = busId();
       busPending[id] = { resolve: resolve, timer: setTimeout(function() {
         if (!busPending[id]) return;
         delete busPending[id];
         var cached = lastDescriptor[src];
+        dbg('describe_view TIMEOUT (no tab reply) -> ' + (cached ? 'cached (stale)' : 'supported:false'));
         resolve(cached ? assign(assign({}, cached), { stale: true })
                        : assign({ supported: false }, base));
       }, 700) };
       try {
         win.postMessage({ source: 'c2a2-voice', type: 'describe_view', requestId: id }, '*');
+        dbg('describe_view query posted to tab: ' + (src || '(none)'));
       } catch (e) {
         clearTimeout(busPending[id].timer); delete busPending[id];
         resolve(assign({ supported: false }, base));
@@ -1276,6 +1360,7 @@ var VoiceGuide = (function() {
       delete busPending[d.requestId];
       var payload = d.payload || {};
       if (payload.supported === undefined) payload.supported = true;
+      dbg('describe_view REPLY from tab (supported=' + payload.supported + ')');
       p.resolve(payload);
     } else if (d.type === 'view_changed') {
       // pull-on-demand: cache the latest, do NOT inject into the live session
@@ -1285,9 +1370,32 @@ var VoiceGuide = (function() {
     }
   });
 
+  // Ask the model to generate a response, but never while one is already
+  // active -- defer until the in-flight response.done, then flush (see the
+  // responseActive note above).
+  function requestResponseCreate() {
+    if (responseActive) {
+      pendingCreate = true;
+      dbg('response.create DEFERRED (a response is active)');
+      // Safety net: if response.done never arrives (deadlock risk), fire anyway.
+      clearTimeout(_pendCreateTimer);
+      _pendCreateTimer = setTimeout(function() {
+        if (!pendingCreate) return;
+        pendingCreate = false; responseActive = false;
+        dbg('deferred response.create FORCED (no response.done in 1200ms)');
+        requestResponseCreate();
+      }, 1200);
+      return;
+    }
+    try { dc.send(JSON.stringify({ type: 'response.create' })); dbg('response.create SENT'); }
+    catch (e) { dbg('response.create send ERROR: ' + e); }
+  }
+
   function handleEvent(ev) {
     var m;
     try { m = JSON.parse(ev.data); } catch (e) { return; }
+    // Trace every event except the high-frequency audio/transcript deltas.
+    if (DEBUG && m.type && m.type.indexOf('.delta') === -1) dbg('ev ' + m.type);
     switch (m.type) {
       case 'conversation.item.input_audio_transcription.completed':
         if (m.transcript) addLine('You', m.transcript.trim());
@@ -1299,22 +1407,35 @@ var VoiceGuide = (function() {
       case 'response.function_call_arguments.done': {
         var args = {};
         try { args = JSON.parse(m.arguments || '{}'); } catch (e) {}
+        dbg('TOOL call: ' + m.name + ' ' + JSON.stringify(args));
         var pending;
         if (m.name === 'switch_tab')          pending = Promise.resolve(switchTab(args.tab));
         else if (m.name === 'where_am_i')     pending = Promise.resolve(whereAmI());
         else if (m.name === 'describe_view')  pending = describeView();       // async
         else                                  pending = Promise.resolve({ ok: false, error: 'unknown tool' });
         pending.then(function(result) {
+          dbg('TOOL result ' + m.name + ': ' + JSON.stringify(result).slice(0, 140));
           if (result && result.ok && result.opened) setStatus('Opened: ' + result.opened.replace(/_/g,' '), 'ok');
-          dc.send(JSON.stringify({
-            type: 'conversation.item.create',
-            item: { type: 'function_call_output', call_id: m.call_id, output: JSON.stringify(result) }
-          }));
-          dc.send(JSON.stringify({ type: 'response.create' }));
+          try {
+            dc.send(JSON.stringify({
+              type: 'conversation.item.create',
+              item: { type: 'function_call_output', call_id: m.call_id, output: JSON.stringify(result) }
+            }));
+            dbg('sent function_call_output');
+          } catch (e) { dbg('output send ERROR: ' + e); }
+          requestResponseCreate();   // deferred until any in-flight response finishes
         });
         break;
       }
+      case 'response.created':
+        responseActive = true;
+        break;
+      case 'response.done':
+        responseActive = false;
+        if (pendingCreate) { clearTimeout(_pendCreateTimer); pendingCreate = false; dbg('flushing deferred response.create'); requestResponseCreate(); }
+        break;
       case 'error':
+        dbg('ERROR event: ' + JSON.stringify(m.error || m).slice(0, 200));
         setStatus('Realtime error: ' + ((m.error && m.error.message) || 'unknown'), 'err');
         break;
     }
@@ -1323,6 +1444,8 @@ var VoiceGuide = (function() {
   async function start() {
     if (live || connecting) return;
     connecting = true;
+    responseActive = false; pendingCreate = false;
+    dbg('start(): connecting' + (DEBUG ? ' [debug on]' : ''));
     setBtn('Connecting...', true);
     setStatus('Requesting microphone and connecting...');
     await loadFaq();
