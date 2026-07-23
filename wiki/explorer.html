@@ -1032,10 +1032,11 @@ var VoiceGuide = (function() {
     var bSend = mkBtn('send', 'Send this question to the model');
     var bBat = mkBtn('battery', 'Fire a canned question battery (~7s apart)');
     var bGrid = mkBtn('▶ grid', 'Autorun the full state x question grid');
-    var bGridDl = mkBtn('⬇', 'Download grid results (.md)');
-    var bGridCp = mkBtn('⧉', 'Copy grid results to clipboard');
+    var bStale = mkBtn('▶ stale', 'Prove within-tab staleness (item 1): ask, change a filter with NO re-nav, ask again -- the model must re-fetch, not answer from a stale cache');
+    var bGridDl = mkBtn('⬇', 'Download last results (.md)');
+    var bGridCp = mkBtn('⧉', 'Copy last results to clipboard');
     foot.appendChild(input); foot.appendChild(bSend); foot.appendChild(bBat);
-    foot.appendChild(bGrid); foot.appendChild(bGridDl); foot.appendChild(bGridCp);
+    foot.appendChild(bGrid); foot.appendChild(bStale); foot.appendChild(bGridDl); foot.appendChild(bGridCp);
     panel.appendChild(bar); panel.appendChild(legend); panel.appendChild(body); panel.appendChild(foot);
     document.body.appendChild(panel);
     var chip = css(document.createElement('button'), 'position:fixed;right:16px;bottom:74px;z-index:99999;display:none;background:#132013;color:#cfc;border:1px solid #2a5a2a;border-radius:4px;cursor:pointer;font:11px/1 ui-monospace,monospace;padding:5px 8px;');
@@ -1065,7 +1066,9 @@ var VoiceGuide = (function() {
     input.addEventListener('keydown', function(e) { if (e.key === 'Enter') { e.preventDefault(); doSend(); } });
     bBat.onclick = runBattery;
     _test.gridBtn = bGrid;
+    _test.staleBtn = bStale;
     bGrid.onclick = toggleGrid;
+    bStale.onclick = toggleStale;
     bGridDl.onclick = downloadResults;
     bGridCp.onclick = copyResults;
     _dbg = { body: body };
@@ -1114,7 +1117,7 @@ var VoiceGuide = (function() {
   // Push-button: drives each view state, fires each question, captures the tools
   // the model called + its spoken answer + a ground-truth describe_view snapshot,
   // auto-flags hangs, then offers the results as markdown (copy / download).
-  var _test = { capture: null, onAnswer: null, results: [], running: false, abort: false, md: '', gridBtn: null };
+  var _test = { capture: null, onAnswer: null, results: [], running: false, abort: false, md: '', gridBtn: null, staleBtn: null };
   function _sleep(ms) { return new Promise(function(r) { setTimeout(r, ms); }); }
   function _ifWin() { try { return document.getElementById('content-frame').contentWindow; } catch (e) { return null; } }
   function _ifDoc() { try { return _ifWin().document; } catch (e) { return null; } }
@@ -1223,6 +1226,103 @@ var VoiceGuide = (function() {
     } catch (e) { dbg('download error: ' + e); }
   }
   function copyResults() { try { navigator.clipboard.writeText(_test.md || _resultsMarkdown()); dbg('results copied to clipboard'); } catch (e) { dbg('copy error: ' + e); } }
+
+  function _staleLabel(t) { if (_test.staleBtn) _test.staleBtn.textContent = t; }
+  // The stale test toggles like the grid: press to start, press again to STOP.
+  function toggleStale() {
+    if (_test.running) { _test.abort = true; dbg('Stale test: STOP requested -- will halt at the next step.'); return; }
+    runStaleTest();
+  }
+  // ─── Item-1 proof: within-tab staleness ────────────────────────────────────
+  // The grid re-navigates per state, so it can NEVER exercise a mid-conversation
+  // view change with no re-nav -- which is the exact case item 1's tab-side
+  // view_changed push + shell [SYSTEM NOTE] injector exist for. This sequence does:
+  //   Q1  live-state Q    -> model calls describe_view, caches the view
+  //   Q1b same, no change -> CONTROL: model should REUSE the cache (tools '(none)')
+  //   toggle a filter IN-FRAME (no tab switch) -> view_changed fires -> the shell
+  //                                    injects a '[SYSTEM NOTE] ... STALE' user turn
+  //   Q2  live-state Q    -> model must RE-FETCH (describe_view), not answer stale
+  // The PASS is the CONTRAST: reuse when unchanged (Q1b), re-fetch when changed (Q2).
+  // Q2 re-fetching ALONE is weak -- a model that always re-fetches would pass too --
+  // so the Q1b control is what actually isolates item 1, and the verdict reports both.
+  async function runStaleTest() {
+    if (!dc || dc.readyState !== 'open') { dbg('Stale test: connect first (press Start).'); return; }
+    if (_test.running) { dbg('Stale test: a run is already in progress.'); return; }
+    _test.running = true; _test.abort = false;
+    _staleLabel('■ stop');
+    var steps = [], verdict = '(incomplete)';
+    function rec(step, truth, r) {
+      var fetched = !!(r && r.tools.indexOf('describe_view') >= 0);
+      steps.push({ step: step, truth: truth || '', tools: (r ? (r.tools.join('|') || '(none)') : '-'),
+        hung: !!(r && r.hung), answer: r ? (r.answer || '').replace(/\s+/g, ' ').slice(0, 200) : '', fetched: fetched });
+      return fetched;
+    }
+    try {
+      dbg('═══ WITHIN-TAB STALENESS TEST (item 1) ═══');
+      dbg('### step 0: Sociogram default (no re-nav after this point)');
+      await _ensureTab('sociogram'); _resetSociogram();
+      await _sleep(1500);
+      if (_test.abort) throw 'abort';
+      var truth0 = await _truthSnapshot(); dbg('  baseline truth: ' + truth0);
+
+      var q1 = 'How many nodes are showing right now?';
+      dbg('  Q1 (populate cache): ' + q1); injectUserText(q1);
+      var r1 = await _awaitAnswer(15000);
+      var q1Fetched = rec('Q1 first ask', truth0, r1);
+      dbg('    Q1 tools=[' + r1.tools.join('|') + ']' + (r1.hung ? ' HUNG' : '') + ' fetched=' + q1Fetched);
+      if (_test.abort) throw 'abort';
+      await _sleep(1200);
+
+      var q1b = 'And how many are showing now?';
+      dbg('  Q1b (CONTROL, no view change -- expect cache reuse): ' + q1b); injectUserText(q1b);
+      var r1b = await _awaitAnswer(15000);
+      var q1bFetched = rec('Q1b control (no change)', truth0, r1b);
+      dbg('    Q1b tools=[' + r1b.tools.join('|') + ']' + (r1b.hung ? ' HUNG' : '') + ' reused=' + (!q1bFetched));
+      if (_test.abort) throw 'abort';
+
+      dbg('### step 1: toggle structure filter IN-FRAME (NO re-nav)');
+      var toggled = _ifClick('#chk-all-structure');
+      dbg('  structure master ' + (toggled ? 'clicked' : 'NOT FOUND (setup fail)'));
+      // Let the tab-side poll notice (800ms) + the shell debounce (1.2s) + the SYSTEM
+      // NOTE inject land before the next question, with margin.
+      await _sleep(2800);
+      if (_test.abort) throw 'abort';
+      var truth1 = await _truthSnapshot(); dbg('  post-toggle truth: ' + truth1);
+      var moved = !!toggled && truth0 !== truth1;
+      dbg('  fingerprint moved: ' + moved);
+
+      var q2 = 'How many nodes are showing now?';
+      dbg('  Q2 (after view change -- model must re-fetch): ' + q2); injectUserText(q2);
+      var r2 = await _awaitAnswer(15000);
+      var q2Fetched = rec('Q2 after change', truth1, r2);
+      dbg('    Q2 tools=[' + r2.tools.join('|') + ']' + (r2.hung ? ' HUNG' : '') + ' fetched=' + q2Fetched);
+
+      if (!moved) verdict = 'INCONCLUSIVE -- the filter toggle did not change the view (setup problem, not the model). Re-run.';
+      else if (r2.hung) verdict = 'FAIL -- Q2 hung (no answer within 15s).';
+      else if (!q2Fetched) verdict = 'FAIL -- after the view changed with no re-nav, the model did NOT call describe_view on Q2; it answered from a stale cache. Item 1 is not working.';
+      else if (q1Fetched && !q1bFetched) verdict = 'STRONG PASS -- Q1b proved the model reuses its cache when the view is unchanged, and the in-frame change made it re-fetch on Q2. Item 1 demonstrably interrupts stale cache reuse.';
+      else if (q1bFetched) verdict = 'PASS (weak / not isolated) -- Q2 correctly re-fetched, but Q1b ALSO re-fetched, so this model appears to re-fetch on every live-state Q; item 1 is redundant-but-correct here, not isolated. The view was re-described correctly either way.';
+      else verdict = 'PASS -- Q2 re-fetched after the change (note: Q1 did not cache as expected, q1Fetched=' + q1Fetched + ').';
+      dbg('═══ VERDICT: ' + verdict + ' ═══');
+    } catch (e) {
+      if (e === 'abort') { verdict = 'ABORTED by stop.'; dbg('  stale test aborted.'); }
+      else { verdict = 'ERROR: ' + e; dbg('  stale test error: ' + e); }
+    } finally {
+      try { _resetSociogram(); } catch (e2) {}   // un-filter so the tab is left clean
+      _test.running = false; _test.abort = false;
+      _staleLabel('▶ stale');
+    }
+    _test.md = _staleMarkdown(steps, verdict);
+    dbg('(stale results ready -- use ⬇ / ⧉ to save)');
+  }
+  function _staleMarkdown(steps, verdict) {
+    var out = ['# Voice guide -- within-tab staleness test (item 1)', '', '**Verdict:** ' + verdict, '',
+      '| step | ground truth | tools called | describe_view? | hung | model answer |', '|---|---|---|---|---|---|'];
+    steps.forEach(function(s) {
+      out.push('| ' + s.step + ' | ' + s.truth + ' | ' + s.tools + ' | ' + (s.fetched ? 'yes' : 'no') + ' | ' + (s.hung ? '**YES**' : '') + ' | ' + (s.answer || '').replace(/\|/g, '/') + ' |');
+    });
+    return out.join('\n');
+  }
 
   var faqText = '';   // first-pass FAQ authored by the weekly voice-faq agent
 
