@@ -3725,9 +3725,11 @@ document.addEventListener('DOMContentLoaded', function() {
       capabilities: ['focus', 'isolate', 'search', 'select_node']
     };
   }
+  var _answered = false;   // has the shell guide asked (describe_view) at least once?
   window.addEventListener('message', function(e) {
     var d = e.data;
     if (!d || d.source !== 'c2a2-voice' || d.type !== 'describe_view') return;
+    _answered = true;
     var payload;
     try { payload = buildDescriptor(); }
     catch (err) { payload = { tab: 'wiki_narration.html', title: 'Sociogram', supported: false, error: String(err) }; }
@@ -3736,6 +3738,46 @@ document.addEventListener('DOMContentLoaded', function() {
         { source: 'c2a2-tab', type: 'view_descriptor', requestId: d.requestId, payload: payload }, '*');
     } catch (e2) {}
   });
+
+  // ── view_changed emitter ────────────────────────────────────────────────
+  // describe_view is pull-on-demand, but a node select or filter toggle WITHOUT
+  // a tab re-nav can leave the guide's cached view stale. We poll a cheap
+  // SEMANTIC fingerprint (selection + which filters are off + visible-node count
+  // only -- never layout, which changes every force tick) and push view_changed
+  // when it changes, so the shell can invalidate the live session. Silent until
+  // the guide has asked at least once (_answered) AND only inside the shell
+  // iframe, so voice-off costs nothing. The shell debounces + gates further.
+  (function() {
+    if (window.parent === window) return;   // only meaningful embedded in the shell
+    var last = null;
+    function fingerprint() {
+      var sel = '';
+      try {
+        if ((typeof currentLeftNode !== 'undefined') && currentLeftNode) sel += 'L:' + currentLeftNode.id + ';';
+        if ((typeof currentRightNode !== 'undefined') && currentRightNode) sel += 'R:' + currentRightNode.id + ';';
+      } catch (e) {}
+      var filt = '';
+      try {
+        if ((typeof groupVisibility !== 'undefined') && groupVisibility) {
+          var ks = Object.keys(groupVisibility).sort();
+          for (var i = 0; i < ks.length; i++) if (groupVisibility[ks[i]] === false) filt += ks[i] + ',';
+        }
+      } catch (e) {}
+      var vn = ((typeof activeNodes !== 'undefined') && activeNodes) ? activeNodes.length : -1;
+      return sel + '|' + filt + '|' + vn;
+    }
+    setInterval(function() {
+      var fp;
+      try { fp = fingerprint(); } catch (e) { return; }
+      if (fp === last) return;
+      var first = (last === null);
+      last = fp;
+      if (first || !_answered) return;   // skip the initial state and pre-ask changes
+      try {
+        window.parent.postMessage({ source: 'c2a2-tab', type: 'view_changed', payload: buildDescriptor() }, '*');
+      } catch (e) {}
+    }, 800);
+  })();
 })();
 </script>
 </body>

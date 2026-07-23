@@ -1064,7 +1064,8 @@ var VoiceGuide = (function() {
     bSend.onclick = doSend;
     input.addEventListener('keydown', function(e) { if (e.key === 'Enter') { e.preventDefault(); doSend(); } });
     bBat.onclick = runBattery;
-    bGrid.onclick = runGrid;
+    _test.gridBtn = bGrid;
+    bGrid.onclick = toggleGrid;
     bGridDl.onclick = downloadResults;
     bGridCp.onclick = copyResults;
     _dbg = { body: body };
@@ -1113,7 +1114,7 @@ var VoiceGuide = (function() {
   // Push-button: drives each view state, fires each question, captures the tools
   // the model called + its spoken answer + a ground-truth describe_view snapshot,
   // auto-flags hangs, then offers the results as markdown (copy / download).
-  var _test = { capture: null, onAnswer: null, results: [], running: false, md: '' };
+  var _test = { capture: null, onAnswer: null, results: [], running: false, abort: false, md: '', gridBtn: null };
   function _sleep(ms) { return new Promise(function(r) { setTimeout(r, ms); }); }
   function _ifWin() { try { return document.getElementById('content-frame').contentWindow; } catch (e) { return null; } }
   function _ifDoc() { try { return _ifWin().document; } catch (e) { return null; } }
@@ -1157,29 +1158,50 @@ var VoiceGuide = (function() {
       return 'nodes ' + (c && c.visibleNodes) + ' | dom ' + (dom && dom.label) + ' | sel ' + (sel ? (sel.kind === 'edge' ? 'edge' : (sel.label || sel.kind)) : 'none');
     } catch (e) { return '(describe err: ' + e + ')'; }
   }
+  function _gridLabel(t) { if (_test.gridBtn) _test.gridBtn.textContent = t; }
+  // The ▶ grid button toggles: start a run, or STOP one that is running. A stuck
+  // or unwanted run is always resettable (no more permanent "already running").
+  function toggleGrid() {
+    if (_test.running) { _test.abort = true; dbg('Run Grid: STOP requested -- will halt after the current cell.'); return; }
+    runGrid();
+  }
   async function runGrid() {
     if (!dc || dc.readyState !== 'open') { dbg('Run Grid: connect first (press Start).'); return; }
     if (_test.running) { dbg('Run Grid: already running.'); return; }
-    _test.running = true; _test.results = [];
+    _test.running = true; _test.abort = false; _test.results = [];
+    _gridLabel('■ stop');
     dbg('═══ RUN GRID: ' + TEST_STATES.length + ' states x ' + TEST_QS.length + ' questions ═══');
-    for (var si = 0; si < TEST_STATES.length; si++) {
-      var s = TEST_STATES[si];
-      dbg('### STATE ' + (si + 1) + '/' + TEST_STATES.length + ': ' + s.label);
-      try { await s.setup(); } catch (e) { dbg('  setup error: ' + e); }
-      await _sleep(1200);
-      var truth = await _truthSnapshot();
-      dbg('  truth: ' + truth);
-      for (var qi = 0; qi < TEST_QS.length; qi++) {
-        var q = TEST_QS[qi];
-        dbg('  Q: ' + q);
-        injectUserText(q);
-        var r = await _awaitAnswer(15000);
-        _test.results.push({ state: s.label, q: q, truth: truth, tools: r.tools.join('|') || '(none)', hung: r.hung, answer: (r.answer || '').replace(/\s+/g, ' ').slice(0, 240) });
-        dbg('    ' + (r.hung ? '⚠ HUNG' : 'ok') + ' tools=[' + r.tools.join('|') + ']');
-        await _sleep(1000);
+    try {
+      for (var si = 0; si < TEST_STATES.length; si++) {
+        if (_test.abort) { dbg('  aborted before state ' + (si + 1)); break; }
+        // Reconnect-aware: a mid-run disconnect must not leave the loop spinning
+        // through timeouts (it would also block a restart). Bail cleanly instead.
+        if (!dc || dc.readyState !== 'open') { dbg('  data channel closed mid-run -> aborting grid'); break; }
+        var s = TEST_STATES[si];
+        dbg('### STATE ' + (si + 1) + '/' + TEST_STATES.length + ': ' + s.label);
+        try { await s.setup(); } catch (e) { dbg('  setup error: ' + e); }
+        await _sleep(1200);
+        var truth = await _truthSnapshot();
+        dbg('  truth: ' + truth);
+        for (var qi = 0; qi < TEST_QS.length; qi++) {
+          if (_test.abort) { dbg('  aborted mid-state'); break; }
+          if (!dc || dc.readyState !== 'open') { dbg('  data channel closed mid-run -> aborting grid'); break; }
+          var q = TEST_QS[qi];
+          dbg('  Q: ' + q);
+          injectUserText(q);
+          var r = await _awaitAnswer(15000);
+          _test.results.push({ state: s.label, q: q, truth: truth, tools: r.tools.join('|') || '(none)', hung: r.hung, answer: (r.answer || '').replace(/\s+/g, ' ').slice(0, 240) });
+          dbg('    ' + (r.hung ? '⚠ HUNG' : 'ok') + ' tools=[' + r.tools.join('|') + ']');
+          await _sleep(1000);
+        }
+        if (_test.abort || !dc || dc.readyState !== 'open') break;
       }
+    } finally {
+      // Always release the latch, however the run ended (done / abort / disconnect
+      // / throw) -- the old code left `running` true on any early exit.
+      _test.running = false; _test.abort = false;
+      _gridLabel('▶ grid');
     }
-    _test.running = false;
     _test.md = _resultsMarkdown();
     dbg('═══ GRID DONE: ' + _test.results.length + ' cells (see results table below; use grid⬇ / copy) ═══');
     _test.results.forEach(function(r) { dbg('RES | ' + r.state + ' | ' + r.q + ' | truth:' + r.truth + ' | tools:' + r.tools + ' | ' + (r.hung ? 'HUNG' : 'ok') + ' | ' + r.answer); });
@@ -1339,7 +1361,7 @@ var VoiceGuide = (function() {
       "- Community Explorer: graph of 156 curated real-world communities.",
       "- Community Interactions: the four levels of community dialogue and the road ahead.",
       "- RC Document Explorer, Physics Explorer, TRV Commentary, AI Heartbeat: the education tools.",
-      "Behavior: you are speaking aloud, so keep answers short and conversational -- two or three sentences unless asked to go deeper. When the user wants to see something, call switch_tab and say briefly what you opened. Offer to show tabs proactively. If asked something outside the wiki, answer briefly and steer back. Be warm and concrete, never a lecture."
+      "Behavior: you are speaking ALOUD, so BREVITY IS A HARD RULE. Default to ONE or TWO short sentences; never exceed three, and only go that far if the user explicitly asks you to say more or go deeper. No preamble, no restating the question, no lists, no wind-up -- answer directly in the first sentence. When the user wants to see something, call switch_tab and say briefly what you opened. Offer to show tabs proactively. If asked something outside the wiki, answer in one sentence and steer back. Be warm and concrete, never a lecture."
     ].join("\n");
     if (faqText) {
       base += "\n\nFIRST-PASS FAQ (curated answers to GENERAL / EXPLANATORY questions -- what a feature IS and how it works, e.g. 'what is the Sociogram', 'how do I filter'. These do NOT describe the current live state. For anything about what is on screen RIGHT NOW -- selection, filters, counts, the dominant cluster -- IGNORE the FAQ and call describe_view instead):\n" + faqText;
@@ -1418,6 +1440,29 @@ var VoiceGuide = (function() {
   var busPending = {};      // requestId -> { resolve, timer }
   var lastDescriptor = {};  // tab data-src -> latest pushed descriptor (view_changed)
 
+  // In-tab staleness: a node select / filter toggle WITHOUT a re-nav changes the
+  // view but does not fire the tab-change notifier below. If the guide already
+  // has a describe_view result it might reuse, tell it ONCE that the view is now
+  // stale. Debounced (a burst of filter toggles -> one note) and gated on
+  // _viewFetched so a session that never asked a live-state question costs zero
+  // tokens; the flag clears after one note until the guide fetches again. This is
+  // the write-side of the "pull-on-demand, don't spam" contract in the bus doc.
+  var _viewFetched = false, _staleTimer = null;
+  function maybeInjectStaleNote() {
+    if (!(live && dc && dc.readyState === 'open') || !_viewFetched) return;
+    clearTimeout(_staleTimer);
+    _staleTimer = setTimeout(function() {
+      if (!(live && dc && dc.readyState === 'open') || !_viewFetched) return;
+      _viewFetched = false;
+      dbg('view changed in-tab -> notifying guide (cached view now stale)');
+      try {
+        dc.send(JSON.stringify({ type: 'conversation.item.create',
+          item: { type: 'message', role: 'user', content: [{ type: 'input_text',
+            text: '[SYSTEM NOTE] The current view just changed (a selection, filter, or count). Any view state you were told earlier is now STALE -- do NOT reuse it. Call describe_view again before answering anything about the current view.' }] } }));
+      } catch (e) { dbg('stale-note error: ' + e); }
+    }, 1200);
+  }
+
   function busId() {
     return (window.crypto && crypto.randomUUID) ? crypto.randomUUID()
          : 'r' + Date.now() + '-' + Math.round(Math.random() * 1e9);
@@ -1474,6 +1519,7 @@ var VoiceGuide = (function() {
         delete busPending[id];
         var cached = lastDescriptor[src];
         dbg('describe_view TIMEOUT (no tab reply) -> ' + (cached ? 'cached (stale)' : 'supported:false'));
+        _viewFetched = !!cached;   // a cached view is something the guide may reuse
         resolve(cached ? assign(assign({}, cached), { stale: true })
                        : assign({ supported: false }, base));
       }, 700) };
@@ -1500,12 +1546,14 @@ var VoiceGuide = (function() {
       var payload = d.payload || {};
       if (payload.supported === undefined) payload.supported = true;
       dbg('describe_view REPLY from tab (supported=' + payload.supported + ')');
+      _viewFetched = (payload.supported !== false);   // guide now holds a live view
       p.resolve(payload);
     } else if (d.type === 'view_changed') {
-      // pull-on-demand: cache the latest, do NOT inject into the live session
-      // (pushing would cost tokens on every change; describe_view reads fresh).
+      // pull-on-demand: cache the latest so describe_view is warm, and if the
+      // guide is holding a view it might reuse, nudge it (debounced) to re-fetch.
       var src = activeTabSrc();
       if (src) lastDescriptor[src] = assign({ supported: true }, d.payload || {});
+      maybeInjectStaleNote();
     }
   });
 
@@ -1522,6 +1570,8 @@ var VoiceGuide = (function() {
       if (!src || src === _lastTabSrc) { _lastTabSrc = src || _lastTabSrc; return; }
       if (live && dc && dc.readyState === 'open') {
         dbg('tab changed -> ' + src + ': notifying guide (cached view now stale)');
+        clearTimeout(_staleTimer);   // this nav note supersedes any pending in-tab note
+        _viewFetched = false;        // fresh tab: nothing cached to go stale until re-fetch
         try {
           dc.send(JSON.stringify({ type: 'conversation.item.create',
             item: { type: 'message', role: 'user', content: [{ type: 'input_text',
@@ -1695,6 +1745,9 @@ var VoiceGuide = (function() {
 
   function stop(silent) {
     live = false; connecting = false;
+    // If a grid run is in flight, signal it to unwind -- otherwise it spins
+    // through per-cell timeouts on a dead channel and blocks the next Start.
+    if (_test.running) _test.abort = true;
     try { if (dc) dc.close(); } catch (e) {}
     try { if (pc) pc.close(); } catch (e) {}
     if (micStream) { micStream.getTracks().forEach(function(t){ t.stop(); }); micStream = null; }
