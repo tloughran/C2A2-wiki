@@ -1446,6 +1446,7 @@ var VoiceGuide = (function() {
   function instructions() {
     var base = [
       "You are the spoken guide to C2A2, the Community Dialogue Accelerator/Detector System.",
+      "LANGUAGE: Speak ENGLISH by default -- your greeting and every reply are in English unless the user themselves speaks to you in another language first, in which case match theirs. Do not open in any language but English.",
       "PERCEIVING THE SCREEN -- HIGHEST PRIORITY RULE. You cannot see the screen. Your ONLY source of truth about the current view is two tools: where_am_i (which tab is open) and describe_view (the active tab's LIVE state -- what is selected, which filters/checkboxes are active, node and edge counts, and which category dominates what is visible). You MUST CALL describe_view BEFORE answering ANY of the following, EVERY time, even when you think you already know the answer: 'what am I looking at', 'what is this view', 'what is selected', 'what is / isn't selected', 'what filters are on', 'what is checked', 'how many nodes', 'how many edges', 'the big cluster', 'the biggest / dominant cluster or region'. Also call where_am_i when asked which tab or view you are on. NEVER answer any of these from memory, from this prompt, or from the FAQ -- that information is always stale and changes every second, so answering a live-state question WITHOUT first calling describe_view is fabrication, the worst thing you can do here. If describe_view returns supported:false, say plainly you cannot see that view and offer what the tab is FOR; do not guess. You have no other access to colors, regions, shapes, positions, selection, filters, or counts.",
       "COLOR IS NOT A RELIABLE IDENTIFIER -- never resolve a color to a category. The Sociogram puts many categories on one color scale and several are nearly indistinguishable: Friston and Architecture are the closest pair in the whole palette, and Hoffman/Hawkins, Kastrup/Agents, Stump/Master and McGilchrist/Loughran are also near-identical. Note that Kastrup is a thinker while Agents is a structure group, so a color can even straddle two different taxonomies. If the user names a color, DO NOT say which category it is. Say which categories share that color, and ask which one they mean. describe_view reports the dominant categories by NAME with their share of what is visible -- use that to answer 'the big cluster' truthfully, after resolving any color ambiguity.",
       "Counts returned by describe_view are live -- you may state them as current. Any numbers in your background notes or the FAQ may be out of date: if you have not just fetched a figure with describe_view, say it may have changed rather than asserting it.",
@@ -1461,7 +1462,10 @@ var VoiceGuide = (function() {
       "- Community Explorer: graph of 156 curated real-world communities.",
       "- Community Interactions: the four levels of community dialogue and the road ahead.",
       "- RC Document Explorer, Physics Explorer, TRV Commentary, AI Heartbeat: the education tools.",
-      "Behavior: you are speaking ALOUD, so BREVITY IS A HARD RULE. Default to ONE or TWO short sentences; never exceed three, and only go that far if the user explicitly asks you to say more or go deeper. No preamble, no restating the question, no lists, no wind-up -- answer directly in the first sentence. When the user wants to see something, call switch_tab and say briefly what you opened. Offer to show tabs proactively. If asked something outside the wiki, answer in one sentence and steer back. Be warm and concrete, never a lecture."
+      "NAVIGATION -- how to take the user somewhere. switch_tab is only for opening a whole tab by name. For anything more specific -- a particular thinker, article, finding, Summa question, or agent (there are ~4,000 and you do NOT know them from memory), or when the user asks 'how do I get to X' or 'take me to X' -- you MUST call find_destination(query) FIRST to look it up in the index, then call navigate with the exact id and kind it returns. NEVER invent a destination id and never guess a route: if find_destination returns nothing, say you could not find it; if it returns several, read the top few labels aloud and ask which one. A kind:'node' navigate opens the Sociogram and selects that article.",
+      "ACT FIRST, TALK SECOND. When the user asks you to DO something to the view -- search, filter, isolate, highlight, open, navigate, show only -- your VERY FIRST action is to call the matching tool. Do NOT describe what you are about to do, do NOT explain the graph, do NOT ask permission first. Call the tool, then confirm in ONE short sentence ('Done -- showing only Levin.'). Narrating instead of calling the tool is a failure.",
+      "CHANGING WHAT THE GRAPH SHOWS -- two tools, pick by intent. (1) For a PERSON or TOPIC -- 'show only Levin', 'find consciousness', 'highlight free energy' -- use search_sociogram(query); it is exactly the search box and is the powerful default (a name isolates that whole tradition; other text highlights every matching node). (2) For whole left-panel CATEGORIES by checkbox -- 'hide the structure groups', 'show everything again', 'turn Agents off' -- use filter_sociogram(action, categories). When unsure between them for a name/topic, use search_sociogram. If a category name does not match, the tool returns the available names -- read a few and ask; never guess. After either, re-run describe_view before stating any count or dominant cluster, since you just changed them.",
+      "Behavior: you are speaking ALOUD, so BREVITY IS A HARD RULE. Default to ONE or TWO short sentences; never exceed three, and only go that far if the user explicitly asks you to say more or go deeper. No preamble, no restating the question, no lists, no wind-up -- answer directly in the first sentence. When the user wants to see a whole view, call switch_tab; when they want a specific thing, find_destination then navigate. Say briefly what you opened. Offer to show things proactively. If asked something outside the wiki, answer in one sentence and steer back. Be warm and concrete, never a lecture."
     ].join("\n");
     if (faqText) {
       base += "\n\nFIRST-PASS FAQ (curated answers to GENERAL / EXPLANATORY questions -- what a feature IS and how it works, e.g. 'what is the Sociogram', 'how do I filter'. These do NOT describe the current live state. For anything about what is on screen RIGHT NOW -- selection, filters, counts, the dominant cluster -- IGNORE the FAQ and call describe_view instead):\n" + faqText;
@@ -1498,6 +1502,52 @@ var VoiceGuide = (function() {
           name: 'describe_view',
           description: 'Ask the currently-open tab for its LIVE state: what is selected, which filters are active, node and edge counts, and which categories dominate what is visible right now. Categories come back by NAME, never by color. Returns supported:false when the current tab cannot report its state -- then tell the user you cannot see that view and do not guess. Use for "what is selected", "what filters are on", "what is the big cluster", "how many nodes are showing".',
           parameters: { type: 'object', properties: {} }
+        }, {
+          type: 'function',
+          name: 'find_destination',
+          description: 'Search the navigation index for places you can take the user: the explorer tabs AND the ~4,000 individual Sociogram articles (thinkers, findings, Summa questions, agents). Returns ranked candidates, each with an id, a kind ("tab" or "node"), and a label. ALWAYS call this to resolve a specific place before navigating -- "take me to the Levin article", "show me the Friston material", "where is the metabolism view" -- because the article list is far too large to know from memory. If several candidates match, read the top labels aloud and ask which one.',
+          parameters: {
+            type: 'object',
+            properties: {
+              query: { type: 'string', description: 'What the user wants to reach -- a name, topic, article title, or tab (e.g. "Levin", "agent map", "spacetime finding").' }
+            },
+            required: ['query']
+          }
+        }, {
+          type: 'function',
+          name: 'navigate',
+          description: 'Go to a destination returned by find_destination. Pass its exact id and kind. kind "tab" opens that tab; kind "node" opens the Sociogram and selects that article, showing its page. Call find_destination first to get a valid id -- do not invent ids.',
+          parameters: {
+            type: 'object',
+            properties: {
+              id: { type: 'string', description: 'The destination id from find_destination.' },
+              kind: { type: 'string', enum: ['tab', 'node'], description: 'The kind from find_destination.' }
+            },
+            required: ['id']
+          }
+        }, {
+          type: 'function',
+          name: 'filter_sociogram',
+          description: 'Change what the Sociogram graph shows by driving its own left-panel filter checkboxes for the user (opens the Sociogram first if needed). Categories are the thinker traditions (Levin, Friston, Hoffman, ...) and structure groups (Architecture, Agents, ...) exactly as the panel lists them. Actions: show_only = hide everything except the named categories; show = turn the named ones on; hide = turn them off; show_all = reset to everything; isolate = keep all visible but brighten the named categories and the links between them, fading the rest. If a name does not match, the result returns the list of available category names -- read a few aloud and ask which they meant; never guess a category. Use whenever the user asks to filter, show only, hide, isolate, or highlight parts of the graph.',
+          parameters: {
+            type: 'object',
+            properties: {
+              action: { type: 'string', enum: ['show_only', 'show', 'hide', 'show_all', 'isolate'], description: 'What to do to the filters.' },
+              categories: { type: 'array', items: { type: 'string' }, description: 'Tradition or structure category names. Required for every action except show_all.' }
+            },
+            required: ['action']
+          }
+        }, {
+          type: 'function',
+          name: 'search_sociogram',
+          description: 'Do exactly what typing into the Sociogram search box and pressing Enter does -- the fastest, most powerful way to show the user a person or topic. Pass a name or word: a single thinker name (e.g. "Levin") isolates that whole tradition; any other text (e.g. "consciousness", "free energy") highlights EVERY matching node across articles, findings, agents, and proposals and fades the rest. Pass an empty string to clear the search and restore the full graph. This is the RIGHT tool for "show only Levin", "find consciousness in the graph", "highlight X" -- prefer it over filter_sociogram for a name or topic. Opens the Sociogram if needed.',
+          parameters: {
+            type: 'object',
+            properties: {
+              query: { type: 'string', description: 'Name or word to search for; empty string clears the search.' }
+            },
+            required: ['query']
+          }
         }],
         tool_choice: 'auto'
       }
@@ -1528,6 +1578,164 @@ var VoiceGuide = (function() {
     } catch (e) {
       return { ok: false, error: String(e) };
     }
+  }
+
+  // ── NAVIGATION INDEX (shell side) ─────────────────────────────────────────
+  // Phase 3 (voice_guide_dev_pathway.md): switch_tab is a WRITE path with no
+  // matching READ path -- the guide cannot answer "how do I get to X" or resolve
+  // "take me to the Levin article" among ~4,000 nodes, because that roster cannot
+  // fit in the prompt. destinations.json (built by scripts/build_destinations.py
+  // from the SAME NODES the Sociogram displays) is the index; find_destination
+  // searches it client-side and navigate drives the tab's own functions. The
+  // guide is told to find_destination THEN navigate, never to improvise a route.
+  var destIndex = null;   // { tabs:[{id,label,aka}], nodes:[{id,label,group}] }
+  async function loadDestinations() {
+    if (destIndex) return;
+    try {
+      var r = await fetch('voice_guide/destinations.json?v=' + Date.now());
+      if (!r.ok) return;
+      destIndex = await r.json();
+      dbg('destinations loaded: ' + (destIndex.counts ? destIndex.counts.nodes + ' nodes / ' + destIndex.counts.tabs + ' tabs' : '?'));
+    } catch (e) { /* navigation degrades to switch_tab only */ }
+  }
+  function _dnorm(s) { return (s || '').toLowerCase(); }
+  // Cheap client-side ranking over the whole index (4k nodes scans in a few ms).
+  // Exact > whole-query substring > per-token hits; aliases weighted like labels.
+  function findDestination(query) {
+    if (!destIndex) return { ok: false, error: 'navigation index not loaded' };
+    var q = _dnorm(query).trim();
+    if (!q) return { ok: false, error: 'empty query' };
+    var toks = q.split(/[^a-z0-9]+/).filter(Boolean);
+    function score(label, aka) {
+      var hay = _dnorm(label), s = 0;
+      if (hay === q) s += 100; else if (hay.indexOf(q) !== -1) s += 40;
+      toks.forEach(function(t) { if (hay.indexOf(t) !== -1) s += 8; });
+      (aka || []).forEach(function(a) {
+        a = _dnorm(a);
+        if (a === q) s += 60; else if (a.indexOf(q) !== -1) s += 25;
+        toks.forEach(function(t) { if (a.indexOf(t) !== -1) s += 5; });
+      });
+      return s;
+    }
+    var cands = [];
+    (destIndex.tabs || []).forEach(function(t) {
+      var s = score(t.label, (t.aka || []).concat([t.id.replace(/_/g, ' ')]));
+      if (s > 0) cands.push({ id: t.id, kind: 'tab', label: t.label, score: s });
+    });
+    (destIndex.nodes || []).forEach(function(n) {
+      var s = score(n.label, [n.id, n.group]);
+      if (s > 0) cands.push({ id: n.id, kind: 'node', label: n.label, group: n.group, score: s });
+    });
+    cands.sort(function(a, b) { return b.score - a.score; });
+    var top = cands.slice(0, 8).map(function(c) {
+      var o = { id: c.id, kind: c.kind, label: c.label };
+      if (c.group) o.group = c.group;
+      return o;
+    });
+    return { ok: true, query: query, count: cands.length, results: top };
+  }
+  // Drive to a destination. tab -> switch_tab; node -> open Sociogram (only if not
+  // already there, to avoid a needless iframe reload) then call its own
+  // openNodeByLabel, which selects the node and opens its panel.
+  async function navigate(id, kind) {
+    if (!destIndex) return { ok: false, error: 'navigation index not loaded' };
+    if (!id) return { ok: false, error: 'missing destination id' };
+    if (kind !== 'tab' && kind !== 'node') {
+      kind = (destIndex.tabs || []).some(function(t) { return t.id === id; }) ? 'tab' : 'node';
+    }
+    if (kind === 'tab') return switchTab(id);
+    var node = (destIndex.nodes || []).find(function(n) { return n.id === id; });
+    if (!node) return { ok: false, error: 'unknown destination id: ' + id };
+    if (activeTabSrc().split('/').pop() !== 'wiki_narration.html') {
+      var sw = switchTab('sociogram');
+      if (!sw.ok) return { ok: false, error: 'could not open Sociogram: ' + (sw.error || '') };
+    }
+    for (var i = 0; i < 30; i++) { var w = _ifWin(); if (w && w.openNodeByLabel) break; await _sleep(150); }
+    var win = _ifWin();
+    if (!win || !win.openNodeByLabel) return { ok: false, error: 'Sociogram not ready' };
+    try { win.openNodeByLabel(node.id); }
+    catch (e) { return { ok: false, error: 'openNodeByLabel failed: ' + e }; }
+    return { ok: true, navigated: { id: node.id, label: node.label, kind: 'node' }, opened: 'sociogram' };
+  }
+
+  // ── SOCIOGRAM FILTER CONTROL (shell side) ────────────────────────────────
+  // Phase 3 write-path: let the guide drive the Sociogram's own filter checkboxes
+  // (toggleGroup / toggleAll / isolateGroups are globals on the iframe window, same
+  // as openNodeByLabel). The category roster is read LIVE from the iframe DOM
+  // (each checkbox carries data-group + a .filter-label), so there is nothing to
+  // keep in sync -- the names the guide can act on are exactly what the panel shows.
+  function filterRoster() {
+    var d = _ifDoc();
+    if (!d) return [];
+    var out = [];
+    d.querySelectorAll('#tradition-filters [data-group], #structure-filters [data-group]').forEach(function(cb) {
+      var item = cb.closest('.filter-item');
+      var lbl = item ? (item.querySelector('.filter-label') || {}).textContent : '';
+      out.push({ key: cb.getAttribute('data-group'), label: (lbl || '').trim(),
+                 section: cb.closest('#tradition-filters') ? 'tradition' : 'structure', checked: cb.checked });
+    });
+    return out;
+  }
+  function _resolveCats(names, roster) {
+    var keys = [], unknown = [];
+    (names || []).forEach(function(n) {
+      var q = _dnorm(n).trim();
+      var hit = roster.find(function(r) { return _dnorm(r.label) === q || _dnorm(r.key) === q; })
+             || roster.find(function(r) { return _dnorm(r.label).indexOf(q) !== -1 || _dnorm(r.key).indexOf(q) !== -1; });
+      if (hit) { if (keys.indexOf(hit.key) === -1) keys.push(hit.key); }
+      else unknown.push(n);
+    });
+    return { keys: keys, unknown: unknown };
+  }
+  async function filterSociogram(action, categories) {
+    if (activeTabSrc().split('/').pop() !== 'wiki_narration.html') {
+      var sw = switchTab('sociogram');
+      if (!sw.ok) return { ok: false, error: 'could not open Sociogram: ' + (sw.error || '') };
+    }
+    for (var i = 0; i < 30; i++) { var w = _ifWin(); if (w && w.toggleGroup && w.toggleAll) break; await _sleep(150); }
+    var win = _ifWin();
+    if (!win || !win.toggleGroup || !win.toggleAll) return { ok: false, error: 'Sociogram controls not ready' };
+    function syncBox(key, on) { var cb = _ifDoc().querySelector('[data-group="' + key + '"]'); if (cb) cb.checked = on; }
+    if (action === 'show_all') { win.toggleAll(true); return { ok: true, action: action, shown: 'all' }; }
+    var roster = filterRoster();
+    var res = _resolveCats(categories, roster);
+    if (!res.keys.length) {
+      return { ok: false, error: 'no category matched', unknown: res.unknown,
+               available: roster.map(function(r) { return r.label; }) };
+    }
+    if (action === 'isolate') {
+      if (win.isolateGroups) win.isolateGroups(res.keys);
+      return { ok: true, action: action, isolated: res.keys, unresolved: res.unknown };
+    }
+    if (action === 'show_only') {
+      win.toggleAll(false);
+      res.keys.forEach(function(k) { win.toggleGroup(k, true); syncBox(k, true); });
+      return { ok: true, action: action, showing: res.keys, unresolved: res.unknown };
+    }
+    var on = (action === 'show');
+    res.keys.forEach(function(k) { win.toggleGroup(k, on); syncBox(k, on); });
+    return { ok: true, action: action, changed: res.keys, unresolved: res.unknown };
+  }
+
+  // Exactly what the user gets by typing into the Sociogram search box and hitting
+  // Enter -- the fastest, most powerful way to surface a person or topic. Driving
+  // the real box (set value + call the tab's own runSearch) means we inherit ALL of
+  // its behavior for free: a lone thinker name isolates that tradition; a group pair
+  // links across them; any other text highlights every matching node (label, id,
+  // content) across the WHOLE graph -- not just one checkbox group. Empty clears it.
+  async function searchSociogram(query) {
+    if (activeTabSrc().split('/').pop() !== 'wiki_narration.html') {
+      var sw = switchTab('sociogram');
+      if (!sw.ok) return { ok: false, error: 'could not open Sociogram: ' + (sw.error || '') };
+    }
+    for (var i = 0; i < 30; i++) { var w = _ifWin(); if (w && w.runSearch) break; await _sleep(150); }
+    var win = _ifWin(), d = _ifDoc();
+    if (!win || !win.runSearch || !d) return { ok: false, error: 'Sociogram search not ready' };
+    var inp = d.getElementById('search-input');
+    if (!inp) return { ok: false, error: 'search box not found' };
+    inp.value = (query == null ? '' : String(query));
+    try { win.runSearch(); } catch (e) { return { ok: false, error: 'runSearch failed: ' + e }; }
+    return { ok: true, searched: inp.value, opened: 'sociogram' };
   }
 
   // ── STATE BUS (shell side) ───────────────────────────────────────────────
@@ -1573,12 +1781,17 @@ var VoiceGuide = (function() {
     // IIFE scope and are not reachable here. `row2` only resolved by DOM
     // id-global accident; `row2-edu`'s hyphen breaks that -> bare `row2edu` threw
     // ReferenceError, so where_am_i/describe_view threw and the guide hung.
+    // Only read the CURRENTLY VISIBLE sub-tab row. On a single-page chapter
+    // (Start Here / Community Explorer / Interactions) BOTH rows are display:none
+    // -> there is no active sub-tab, so return ''. The old global
+    // `.tab-btn.active` fallback reached into the HIDDEN tools row and returned
+    // its still-active Sociogram button, so where_am_i/describe_view reported
+    // (and described) the Sociogram while the user was on a chapter page.
     var row2 = document.getElementById('row2');
     var row2edu = document.getElementById('row2-edu');
     var btn = null;
     if (row2edu && row2edu.style.display !== 'none') btn = document.querySelector('#row2-edu .tab-btn.active');
-    else if (!row2 || row2.style.display !== 'none') btn = document.querySelector('#row2 .tab-btn.active');
-    if (!btn) btn = document.querySelector('.tab-btn.active');
+    else if (row2 && row2.style.display !== 'none') btn = document.querySelector('#row2 .tab-btn.active');
     return btn ? btn.getAttribute('data-src') : '';
   }
   function tabForSrc(src) {
@@ -1726,10 +1939,14 @@ var VoiceGuide = (function() {
         dbg('TOOL call: ' + m.name + ' ' + JSON.stringify(args));
         if (_test.capture) _test.capture.tools.push(m.name);
         var pending;
-        if (m.name === 'switch_tab')          pending = Promise.resolve(switchTab(args.tab));
-        else if (m.name === 'where_am_i')     pending = Promise.resolve(whereAmI());
-        else if (m.name === 'describe_view')  pending = describeView();       // async
-        else                                  pending = Promise.resolve({ ok: false, error: 'unknown tool' });
+        if (m.name === 'switch_tab')             pending = Promise.resolve(switchTab(args.tab));
+        else if (m.name === 'where_am_i')        pending = Promise.resolve(whereAmI());
+        else if (m.name === 'describe_view')     pending = describeView();          // async
+        else if (m.name === 'find_destination')  pending = Promise.resolve(findDestination(args.query));
+        else if (m.name === 'navigate')          pending = navigate(args.id, args.kind);  // async
+        else if (m.name === 'filter_sociogram')  pending = filterSociogram(args.action, args.categories);  // async
+        else if (m.name === 'search_sociogram')  pending = searchSociogram(args.query);  // async
+        else                                     pending = Promise.resolve({ ok: false, error: 'unknown tool' });
         pending.then(function(result) {
           dbg('TOOL result ' + m.name + ': ' + JSON.stringify(result).slice(0, 140));
           if (result && result.ok && result.opened) setStatus('Opened: ' + result.opened.replace(/_/g,' '), 'ok');
@@ -1767,6 +1984,7 @@ var VoiceGuide = (function() {
     setBtn('Connecting...', true);
     setStatus('Requesting microphone and connecting...');
     await loadFaq();
+    await loadDestinations();
     try {
       micStream = await navigator.mediaDevices.getUserMedia({ audio: true });
     } catch (e) {
