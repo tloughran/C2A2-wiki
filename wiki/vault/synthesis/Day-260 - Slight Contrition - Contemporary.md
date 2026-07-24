@@ -15,7 +15,7 @@ evidence_strength_summary: "Threshold-crossing / minimal-sufficient-evidence is 
 mind_first_reframe: "Slight contrition suffices when a genuine minimal turn crosses the threshold into a changed disposition (Friston evidence-accumulation), and the remission exceeds the act because grace, already present (Rohr's Universal Christ), meets the smallest true turn with more than its measure."
 central_theme_thread: "The whole accepts even a maximally limited perspective's smallest true turn: loving unity is a computation under limited resources, and for a perspective with almost none the requirement is a genuine turn, not a large one — 'salvation as inclusion' shown gracious at its lower bound."
 tags: [synthesis, day/260, theme/minimal-turn-met-by-grace]
-last_qc_at: "2026-07-17T22:26:25"
+last_qc_at: "2026-07-23T18:27:47"
 last_qc_outcome: "pass"
 ---
 

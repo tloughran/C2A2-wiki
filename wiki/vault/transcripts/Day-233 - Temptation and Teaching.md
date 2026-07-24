@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-233 - Temptation and Teaching - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/233, pars/III, q/41 q/42]
-last_qc_at: "2026-07-09T16:21:46"
+last_qc_at: "2026-07-23T08:21:38"
 last_qc_outcome: "pass"
 ---
 

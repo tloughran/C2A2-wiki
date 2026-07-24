@@ -16,7 +16,7 @@ evidence_strength_summary: "A complete human nature assumed (body, soul, intelle
 mind_first_reframe: "The whole assumes a complete limited perspective — body, soul, and intellect, nothing left out — and the 'order' of assumption is not a sequence in time but a hierarchy of form in which the whole, intended first by the agent, organizes its parts: the morphological whole prior to the parts, the target-form before the material."
 central_theme_thread: "The opening movement of the Incarnation closes by insisting the assumed perspective is COMPLETE and that the whole is prior to its parts — the whole takes nothing partial and organizes what it takes from the top down, the exact shape of a project in which the simple whole contains and orders every limited perspective."
 tags: [synthesis, day/215, theme/complete-perspective-whole-before-parts]
-last_qc_at: "2026-07-17T08:19:35"
+last_qc_at: "2026-07-23T06:28:18"
 last_qc_outcome: "pass"
 ---
 

@@ -16,7 +16,7 @@ evidence_strength_summary: "The development of the Immaculate Conception dogma (
 mind_first_reframe: "The development from Aquinas's view to the defined dogma is read as a tradition-constituted inquiry perceiving more of the whole than any single perspective — faithful improvisation (Wright) and a resolved epistemological crisis / order-disorder-reorder (Rohr, MacIntyre)."
 central_theme_thread: "The project's engine in miniature: the limited perspective here is Aquinas himself, exceeded not by a greater individual but by the tradition across time — the C2A2 wager that a tradition computes toward a fuller perception of the whole than its members hold."
 tags: [synthesis, day/226, theme/tradition-as-inquiry-perceiving-more-over-time]
-last_qc_at: "2026-07-17T10:28:27"
+last_qc_at: "2026-07-23T04:21:55"
 last_qc_outcome: "pass"
 ---
 
