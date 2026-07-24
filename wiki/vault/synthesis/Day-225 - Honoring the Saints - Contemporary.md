@@ -15,7 +15,7 @@ evidence_strength_summary: "One adoration of the one person across natures (latr
 mind_first_reframe: "Honor is read as tracking the one individuated person (Daimonic individuation, Kastrup), and the Mediator as uniting the many through the limited human interface where agents integrate — limitation as the organ of mediation, not its obstacle."
 central_theme_thread: "Individuation-by-person (honor tracks the person) plus the project's reversal: the whole unites the limited not by bypassing limitation but through a perspective that inhabits the 'middle position.'"
 tags: [synthesis, day/225, theme/individuation-by-person-and-mediation]
-last_qc_at: "2026-07-17T10:28:26"
+last_qc_at: "2026-07-23T04:21:54"
 last_qc_outcome: "pass"
 ---
 

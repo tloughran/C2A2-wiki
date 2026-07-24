@@ -18,7 +18,7 @@ evidence_strength_summary: "Presence-by-effect vs presence-by-essence + whole-Ch
 mind_first_reframe: "Locality is interface-relative, so 'the whole Christ in tomb and in hell at once' reads as one agent present at multiple seats by reason of the person rather than transported as a body through space; and the descent's logic — a common, race-level barrier no individual righteousness could clear — is perspective-limitation operating at the scale of the whole, awaiting an act at that scale."
 central_theme_thread: "The limbo of the fathers is the central theme's two-scale limitation seen from below: justified persons, individually cleansed, still held by a barrier that belongs to the whole and can only be cleared by an act addressed to the whole — loving unity blocked not by personal fault but by the shared condition of the limited race."
 tags: [synthesis, day/238, theme/presence-and-the-common-barrier]
-last_qc_at: "2026-07-17T18:26:28"
+last_qc_at: "2026-07-23T10:27:37"
 last_qc_outcome: "pass"
 ---
 
