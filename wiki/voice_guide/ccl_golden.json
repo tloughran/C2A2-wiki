@@ -1,0 +1,78 @@
+{
+  "_about": "The 10 canonical utterances (voice_guide_redesign.md section 11) mapped to the terse CCL command string the guide should emit, plus the minimal expected parse. Two masters: (1) the increment-0 spike scores model English->CCL accuracy against expected_command (>=8/10 clean or grammar-fixable is the exit gate); (2) scripts/test_voice_ccl.mjs smoke-parses each expected_command and checks verb/dim/op/args. Rows with expected_command:null are deferred in v1 (the guide asks rather than inventing) and are not parse-checked. Keys beginning with _ are documentation.",
+  "version": "1",
+
+  "cases": [
+    {
+      "id": "1",
+      "utterance": "Show me only Levin and Friston",
+      "expected_command": "only levin friston",
+      "expect": { "verb": "only", "dim": "filters", "op": "set", "args": ["levin", "friston"] }
+    },
+    {
+      "id": "2a",
+      "utterance": "Undo that",
+      "expected_command": "undo",
+      "expect": { "verb": "undo", "dim": "@journal", "op": "undo", "args": [] }
+    },
+    {
+      "id": "2b",
+      "utterance": "Put it back how it was",
+      "expected_command": "restore",
+      "expect": { "verb": "restore", "dim": "@journal", "op": "restore", "args": [] }
+    },
+    {
+      "id": "3",
+      "utterance": "Open the McGilchrist node",
+      "expected_command": "open mcgilchrist",
+      "expect": { "verb": "open", "dim": "selection", "op": "set", "args": ["mcgilchrist"] }
+    },
+    {
+      "id": "4",
+      "utterance": "Hide all the architecture stuff",
+      "expected_command": "hide architecture",
+      "expect": { "verb": "hide", "dim": "filters", "op": "diff", "args": ["architecture"] }
+    },
+    {
+      "id": "5",
+      "utterance": "Go to the heartbeat tab",
+      "expected_command": "go heartbeat",
+      "expect": { "verb": "go", "dim": "tab", "op": "set", "args": ["heartbeat"] }
+    },
+    {
+      "id": "6",
+      "utterance": "Zoom out so I can see everything",
+      "expected_command": "fit",
+      "note": "Intent is fit-all, not a relative zoom-out step (section 11.6).",
+      "expect": { "verb": "fit", "dim": "camera", "op": "set", "args": ["fit"] }
+    },
+    {
+      "id": "7",
+      "utterance": "What am I looking at?",
+      "expected_command": "what",
+      "expect": { "verb": "what", "dim": "@read", "op": "what", "args": [] }
+    },
+    {
+      "id": "8",
+      "utterance": "Read me this article",
+      "expected_command": "read",
+      "note": "gated in v1 pending Tom's audio-collision call (section 10, 16.5).",
+      "expect": { "verb": "read", "dim": "playback", "op": "set", "args": ["read"] }
+    },
+    {
+      "id": "9",
+      "utterance": "No, not that one -- the other Levin",
+      "expected_command": "open michael levin",
+      "note": "Disambiguation: the previous result carried candidates; the guide re-runs open with the exact label. Representative resolved form.",
+      "disambiguation": true,
+      "expect": { "verb": "open", "dim": "selection", "op": "set", "args": ["michael levin"] }
+    },
+    {
+      "id": "10",
+      "utterance": "Turn everything off except the philosophy traditions",
+      "expected_command": null,
+      "note": "Deferred in v1: needs the Tom-owned discipline->tradition facets file (section 11.10, 16.6). Until it exists the guide asks which traditions the user means -- never invents. Example resolved form once facets land: 'only <philosophy traditions...>'.",
+      "v1_behavior": "ask"
+    }
+  ]
+}
