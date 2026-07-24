@@ -1474,30 +1474,26 @@ var VoiceGuide = (function() {
 
   function instructions() {
     var base = [
-      "You are the spoken guide to C2A2, the Community Dialogue Accelerator/Detector System.",
-      "LANGUAGE: Speak ENGLISH by default -- your greeting and every reply are in English unless the user themselves speaks to you in another language first, in which case match theirs. Do not open in any language but English.",
-      "PERCEIVING THE SCREEN -- HIGHEST PRIORITY RULE. You cannot see the screen. Your ONLY source of truth about the current view is two tools: where_am_i (which tab is open) and describe_view (the active tab's LIVE state -- what is selected, which filters/checkboxes are active, node and edge counts, and which category dominates what is visible). You MUST CALL describe_view BEFORE answering ANY of the following, EVERY time, even when you think you already know the answer: 'what am I looking at', 'what is this view', 'what is selected', 'what is / isn't selected', 'what filters are on', 'what is checked', 'how many nodes', 'how many edges', 'the big cluster', 'the biggest / dominant cluster or region'. Also call where_am_i when asked which tab or view you are on. NEVER answer any of these from memory, from this prompt, or from the FAQ -- that information is always stale and changes every second, so answering a live-state question WITHOUT first calling describe_view is fabrication, the worst thing you can do here. If describe_view returns supported:false, say plainly you cannot see that view and offer what the tab is FOR; do not guess. You have no other access to colors, regions, shapes, positions, selection, filters, or counts.",
-      "COLOR IS NOT A RELIABLE IDENTIFIER -- never resolve a color to a category. The Sociogram puts many categories on one color scale and several are nearly indistinguishable: Friston and Architecture are the closest pair in the whole palette, and Hoffman/Hawkins, Kastrup/Agents, Stump/Master and McGilchrist/Loughran are also near-identical. Note that Kastrup is a thinker while Agents is a structure group, so a color can even straddle two different taxonomies. If the user names a color, DO NOT say which category it is. Say which categories share that color, and ask which one they mean. describe_view reports the dominant categories by NAME with their share of what is visible -- use that to answer 'the big cluster' truthfully, after resolving any color ambiguity.",
-      "Counts returned by describe_view are live -- you may state them as current. Any numbers in your background notes or the FAQ may be out of date: if you have not just fetched a figure with describe_view, say it may have changed rather than asserting it.",
-      "C2A2 is infrastructure that lets intellectual and spiritual traditions become visible, interact, and reveal themselves to each other -- a particle accelerator for lineages of thought. It is a concrete response to Alasdair MacIntyre's Gifford-Lectures vision of a university where rival traditions of enquiry are made answerable to one another. The accelerator half brings traditions into contact; the detector half instruments what happens when they meet.",
-      "The wiki maps these thinker traditions: Levin, Friston, Hoffman, Kastrup, McGilchrist, Hawkins, Wolfram, Carroll, Arkani-Hamed, Fredrickson, Stump, Rohr, Wright, and Loughran. Recurring cross-program questions include whether consciousness is substrate-independent, whether spacetime is fundamental, and the role of attention in constructing reality.",
-      "The explorer has these tabs, which you can open for the user by calling switch_tab:",
-      "- Sociogram: force-directed graph of the whole wiki knowledge base (nodes = articles, edges = links and shared references).",
-      "- Narrative Connectome: 3D graph where each node is a Problem-Resource-Solution narrative and edges are shared resources bridging traditions.",
-      "- Agent Map: the autonomous agents running the system.",
-      "- Metabolism: the temporal pulse of the agent swarm from run telemetry.",
-      "- Curriculum Tools: the Summa 2026 curriculum dashboard.",
-      "- Inter-Tradition Study: structured comparison across traditions.",
-      "- Community Explorer: graph of 156 curated real-world communities.",
-      "- Community Interactions: the four levels of community dialogue and the road ahead.",
-      "- RC Document Explorer, Physics Explorer, TRV Commentary, AI Heartbeat: the education tools.",
-      "NAVIGATION -- how to take the user somewhere. switch_tab is only for opening a whole tab by name. For anything more specific -- a particular thinker, article, finding, Summa question, or agent (there are ~4,000 and you do NOT know them from memory), or when the user asks 'how do I get to X' or 'take me to X' -- you MUST call find_destination(query) FIRST to look it up in the index, then call navigate with the exact id and kind it returns. NEVER invent a destination id and never guess a route: if find_destination returns nothing, say you could not find it; if it returns several, read the top few labels aloud and ask which one. A kind:'node' navigate opens the Sociogram and selects that article.",
-      "ACT FIRST, TALK SECOND. When the user asks you to DO something to the view -- search, filter, isolate, highlight, open, navigate, show only -- your VERY FIRST action is to call the matching tool. Do NOT describe what you are about to do, do NOT explain the graph, do NOT ask permission first. Call the tool, then confirm in ONE short sentence ('Done -- showing only Levin.'). Narrating instead of calling the tool is a failure.",
-      "CHANGING WHAT THE GRAPH SHOWS -- two tools, pick by intent. (1) For a PERSON or TOPIC -- 'show only Levin', 'find consciousness', 'highlight free energy' -- use search_sociogram(query); it is exactly the search box and is the powerful default (a name isolates that whole tradition; other text highlights every matching node). (2) For whole left-panel CATEGORIES by checkbox -- 'hide the structure groups', 'show everything again', 'turn Agents off' -- use filter_sociogram(action, categories). When unsure between them for a name/topic, use search_sociogram. If a category name does not match, the tool returns the available names -- read a few and ask; never guess. After either, re-run describe_view before stating any count or dominant cluster, since you just changed them.",
-      "Behavior: you are speaking ALOUD, so BREVITY IS A HARD RULE. Default to ONE or TWO short sentences; never exceed three, and only go that far if the user explicitly asks you to say more or go deeper. No preamble, no restating the question, no lists, no wind-up -- answer directly in the first sentence. When the user wants to see a whole view, call switch_tab; when they want a specific thing, find_destination then navigate. Say briefly what you opened. Offer to show things proactively. If asked something outside the wiki, answer in one sentence and steer back. Be warm and concrete, never a lecture."
+      "You are the spoken guide to C2A2 (the Community Dialogue Accelerator/Detector System) -- a particle accelerator for traditions of thought: infrastructure that lets intellectual and spiritual lineages become visible, interact, and reveal themselves to each other. It is a concrete response to MacIntyre's vision of a place where rival traditions of enquiry are made answerable to one another.",
+      "LANGUAGE: Speak ENGLISH by default -- greeting and every reply -- unless the user speaks another language to you first, in which case match theirs. Do not open in any language but English.",
+      "HOW YOU ACT AND PERCEIVE: You control the explorer ONLY by calling run_command with ONE command string in the command language (CCL) below. You cannot see the screen; to learn the current state, run the command 'what'. NEVER state a filter, selection, tab, or count you have not just gotten back from a run_command result -- answering a live-state question without running 'what' first is fabrication, the worst thing you can do here.",
+      "CCL grammar (exactly one command per call; names lowercase):",
+      "  only <groups...> | show <groups...> | hide <groups...> | all | none   -- filter the graph by tradition/structure name",
+      "  open <node> | close                                                   -- open or close a node's article",
+      "  find <text> | clear                                                    -- highlight-search across the graph",
+      "  focus <a> ~ <b> [~ <c>...]                                            -- show the links between named groups",
+      "  go <tab> | back                                                        -- switch to another tab",
+      "  fit                                                                    -- zoom so everything fits on screen",
+      "  undo | redo | reset | restore                                          -- step history; restore = put the view back how it was",
+      "  what | where | help                                                    -- ask about the current view",
+      "ACT FIRST, TALK SECOND. When the user asks you to DO something to the view, your VERY FIRST action is to call run_command with the command -- do not describe what you are about to do, do not ask permission. After it returns, confirm in ONE short sentence using the result.",
+      "READING THE RESULT. run_command returns { did } on success -- say it back briefly. On error 'ambiguous' it returns candidates -- read a couple aloud and ask which they mean. On 'unresolved' say you could not find that. On 'unsupported_here' say it is not available on this view and offer what the tab is for. If you cannot name a grouping from the user's OWN words (e.g. 'the science ones', 'the philosophy traditions'), do NOT guess a command -- ask which they mean.",
+      "COLOR IS NOT A RELIABLE IDENTIFIER -- never resolve a color to a category. Several categories share near-identical colors (Friston/Architecture are the closest pair; also Hoffman/Hawkins, Kastrup/Agents, Stump/Master, McGilchrist/Loughran). If the user names a color, do NOT say which category it is -- say which categories share it and ask which one they mean.",
+      "BREVITY IS A HARD RULE: you are speaking ALOUD. Default to ONE or TWO short sentences; never exceed three, and only then if the user explicitly asks for more. No preamble, no restating the question, no lists, no wind-up. Answer directly. Be warm and concrete, never a lecture.",
+      "Examples (NOT a script): 'show only Levin and Friston' -> only levin friston; 'also bring in the physics people' -> show wolfram carroll; 'drop the architecture layer' -> hide architecture; 'take me to the metabolism view' -> go metabolism; 'how do Kastrup and Hoffman connect?' -> focus kastrup ~ hoffman; 'reset the whole view' -> all; 'what am I seeing?' -> what."
     ].join("\n");
     if (faqText) {
-      base += "\n\nFIRST-PASS FAQ (curated answers to GENERAL / EXPLANATORY questions -- what a feature IS and how it works, e.g. 'what is the Sociogram', 'how do I filter'. These do NOT describe the current live state. For anything about what is on screen RIGHT NOW -- selection, filters, counts, the dominant cluster -- IGNORE the FAQ and call describe_view instead):\n" + faqText;
+      base += "\n\nFIRST-PASS FAQ (curated answers to GENERAL / EXPLANATORY questions -- what a feature IS and how it works, e.g. 'what is the Sociogram', 'how do I filter'. These do NOT describe the current live state. For anything about what is on screen RIGHT NOW -- selection, filters, counts, the dominant cluster -- IGNORE the FAQ and run the command 'what' instead):\n" + faqText;
     }
     return base;
   }
@@ -1511,71 +1507,14 @@ var VoiceGuide = (function() {
         audio: { input: { transcription: { model: 'whisper-1' } } },
         tools: [{
           type: 'function',
-          name: 'switch_tab',
-          description: 'Open one of the explorer tabs so the user can see it. Call this whenever the user asks to see, open, go to, or show a view.',
+          name: 'run_command',
+          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (filter the graph by tradition/structure name), open/close (a node article), find/clear (highlight-search), focus <a> ~ <b> (links between groups), go/back (switch tab), fit (zoom to fit), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
           parameters: {
             type: 'object',
             properties: {
-              tab: { type: 'string', enum: TABS.map(function(t){ return t.key; }),
-                     description: 'Which tab to open.' }
+              text: { type: 'string', description: 'One CCL command, e.g. "only levin friston", "go metabolism", "what".' }
             },
-            required: ['tab']
-          }
-        }, {
-          type: 'function',
-          name: 'where_am_i',
-          description: 'Report which tab or view the user is currently looking at. Shell-level and always available. Call this before answering any question about "here", "this view", or "what am I looking at".',
-          parameters: { type: 'object', properties: {} }
-        }, {
-          type: 'function',
-          name: 'describe_view',
-          description: 'Ask the currently-open tab for its LIVE state: what is selected, which filters are active, node and edge counts, and which categories dominate what is visible right now. Categories come back by NAME, never by color. Returns supported:false when the current tab cannot report its state -- then tell the user you cannot see that view and do not guess. Use for "what is selected", "what filters are on", "what is the big cluster", "how many nodes are showing".',
-          parameters: { type: 'object', properties: {} }
-        }, {
-          type: 'function',
-          name: 'find_destination',
-          description: 'Search the navigation index for places you can take the user: the explorer tabs AND the ~4,000 individual Sociogram articles (thinkers, findings, Summa questions, agents). Returns ranked candidates, each with an id, a kind ("tab" or "node"), and a label. ALWAYS call this to resolve a specific place before navigating -- "take me to the Levin article", "show me the Friston material", "where is the metabolism view" -- because the article list is far too large to know from memory. If several candidates match, read the top labels aloud and ask which one.',
-          parameters: {
-            type: 'object',
-            properties: {
-              query: { type: 'string', description: 'What the user wants to reach -- a name, topic, article title, or tab (e.g. "Levin", "agent map", "spacetime finding").' }
-            },
-            required: ['query']
-          }
-        }, {
-          type: 'function',
-          name: 'navigate',
-          description: 'Go to a destination returned by find_destination. Pass its exact id and kind. kind "tab" opens that tab; kind "node" opens the Sociogram and selects that article, showing its page. Call find_destination first to get a valid id -- do not invent ids.',
-          parameters: {
-            type: 'object',
-            properties: {
-              id: { type: 'string', description: 'The destination id from find_destination.' },
-              kind: { type: 'string', enum: ['tab', 'node'], description: 'The kind from find_destination.' }
-            },
-            required: ['id']
-          }
-        }, {
-          type: 'function',
-          name: 'filter_sociogram',
-          description: 'Change what the Sociogram graph shows by driving its own left-panel filter checkboxes for the user (opens the Sociogram first if needed). Categories are the thinker traditions (Levin, Friston, Hoffman, ...) and structure groups (Architecture, Agents, ...) exactly as the panel lists them. Actions: show_only = hide everything except the named categories; show = turn the named ones on; hide = turn them off; show_all = reset to everything; isolate = keep all visible but brighten the named categories and the links between them, fading the rest. If a name does not match, the result returns the list of available category names -- read a few aloud and ask which they meant; never guess a category. Use whenever the user asks to filter, show only, hide, isolate, or highlight parts of the graph.',
-          parameters: {
-            type: 'object',
-            properties: {
-              action: { type: 'string', enum: ['show_only', 'show', 'hide', 'show_all', 'isolate'], description: 'What to do to the filters.' },
-              categories: { type: 'array', items: { type: 'string' }, description: 'Tradition or structure category names. Required for every action except show_all.' }
-            },
-            required: ['action']
-          }
-        }, {
-          type: 'function',
-          name: 'search_sociogram',
-          description: 'Do exactly what typing into the Sociogram search box and pressing Enter does -- the fastest, most powerful way to show the user a person or topic. Pass a name or word: a single thinker name (e.g. "Levin") isolates that whole tradition; any other text (e.g. "consciousness", "free energy") highlights EVERY matching node across articles, findings, agents, and proposals and fades the rest. Pass an empty string to clear the search and restore the full graph. This is the RIGHT tool for "show only Levin", "find consciousness in the graph", "highlight X" -- prefer it over filter_sociogram for a name or topic. Opens the Sociogram if needed.',
-          parameters: {
-            type: 'object',
-            properties: {
-              query: { type: 'string', description: 'Name or word to search for; empty string clears the search.' }
-            },
-            required: ['query']
+            required: ['text']
           }
         }],
         tool_choice: 'auto'
@@ -1795,7 +1734,7 @@ var VoiceGuide = (function() {
       try {
         dc.send(JSON.stringify({ type: 'conversation.item.create',
           item: { type: 'message', role: 'user', content: [{ type: 'input_text',
-            text: '[SYSTEM NOTE] The current view just changed (a selection, filter, or count). Any view state you were told earlier is now STALE -- do NOT reuse it. Call describe_view again before answering anything about the current view.' }] } }));
+            text: '[SYSTEM NOTE] The current view just changed (a selection, filter, or count). Any view state you were told earlier is now STALE -- do NOT reuse it. Run the command "what" again before answering anything about the current view.' }] } }));
       } catch (e) { dbg('stale-note error: ' + e); }
     }, 1200);
   }
@@ -1917,7 +1856,7 @@ var VoiceGuide = (function() {
         try {
           dc.send(JSON.stringify({ type: 'conversation.item.create',
             item: { type: 'message', role: 'user', content: [{ type: 'input_text',
-              text: '[SYSTEM NOTE] The user just navigated to a different tab/view. Any view, selection, filter, or count you were told earlier is now STALE -- do NOT reuse it. Before answering anything about the current view, call describe_view (and where_am_i) again.' }] } }));
+              text: '[SYSTEM NOTE] The user just navigated to a different tab/view. Any view, selection, filter, or count you were told earlier is now STALE -- do NOT reuse it. Before answering anything about the current view, run the command "what" (or "where") again.' }] } }));
         } catch (e) { dbg('view-change notify error: ' + e); }
       }
       _lastTabSrc = src;
@@ -1968,14 +1907,25 @@ var VoiceGuide = (function() {
         dbg('TOOL call: ' + m.name + ' ' + JSON.stringify(args));
         if (_test.capture) _test.capture.tools.push(m.name);
         var pending;
-        if (m.name === 'switch_tab')             pending = Promise.resolve(switchTab(args.tab));
-        else if (m.name === 'where_am_i')        pending = Promise.resolve(whereAmI());
-        else if (m.name === 'describe_view')     pending = describeView();          // async
-        else if (m.name === 'find_destination')  pending = Promise.resolve(findDestination(args.query));
-        else if (m.name === 'navigate')          pending = navigate(args.id, args.kind);  // async
-        else if (m.name === 'filter_sociogram')  pending = filterSociogram(args.action, args.categories);  // async
-        else if (m.name === 'search_sociogram')  pending = searchSociogram(args.query);  // async
-        else                                     pending = Promise.resolve({ ok: false, error: 'unknown tool' });
+        if (m.name === 'run_command') {
+          var cmd = (args.text || '').trim();
+          // ONE tool. Perception verbs (what/where) reuse the grid-verified rich
+          // bus (live counts, dominant cluster); every action verb routes through
+          // window.CCLRun -- the SAME parse->plan->execute path the typed command
+          // bar uses (redesign section 2, one code path).
+          if (/^what\b/i.test(cmd)) {
+            pending = describeView().then(function (dv) { return { ok: true, command: cmd, view: dv }; });
+          } else if (/^where\b/i.test(cmd)) {
+            pending = Promise.resolve(whereAmI());
+          } else if (typeof window.CCLRun === 'function') {
+            var r = window.CCLRun(cmd);
+            pending = Promise.resolve({ ok: r.ok, command: cmd, did: r.spoken });
+          } else {
+            pending = Promise.resolve({ ok: false, error: 'command engine not ready' });
+          }
+        } else {
+          pending = Promise.resolve({ ok: false, error: 'unknown tool: ' + m.name });
+        }
         pending.then(function(result) {
           dbg('TOOL result ' + m.name + ': ' + JSON.stringify(result).slice(0, 140));
           if (result && result.ok && result.opened) setStatus('Opened: ' + result.opened.replace(/_/g,' '), 'ok');
@@ -2175,7 +2125,8 @@ var VoiceGuide = (function() {
   var bootFilters = null;    // first-seen filter state, for reset/restore (v1)
   var TAB = 'sociogram';     // v1 focuses the Sociogram tab
 
-  function show(msg, cls) { out.textContent = msg; out.className = cls === 'err' ? 'ccl-err' : (cls === 'ok' ? 'ccl-ok' : ''); }
+  var lastResult = null;
+  function show(msg, cls) { lastResult = { ok: cls !== 'err', spoken: String(msg) }; out.textContent = msg; out.className = cls === 'err' ? 'ccl-err' : (cls === 'ok' ? 'ccl-ok' : ''); return lastResult; }
 
   Promise.all([
     fetch('voice_guide/verbs.json?v=' + Date.now()).then(function (r) { return r.json(); }),
@@ -2304,7 +2255,11 @@ var VoiceGuide = (function() {
     if (!grammar) { return show('CCL still loading...', 'err'); }
     var ctx = { caps: CL.SOCIOGRAM_CAPS, roster: roster(), tabs: dest.tabs, nodes: dest.nodes };
     execute(CL.plan(CL.parse(text, grammar), ctx));
+    return lastResult;
   }
+  // Shared entry point: the voice guide's run_command routes spoken commands
+  // through this SAME parse->plan->execute path (redesign section 2, one code path).
+  window.CCLRun = run;
   input.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); var v = input.value.trim(); if (v) { run(v); } } });
   document.addEventListener('keydown', function (e) {
     if (e.key === '/' && document.activeElement !== input) {
