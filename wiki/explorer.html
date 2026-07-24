@@ -2149,6 +2149,10 @@ var VoiceGuide = (function() {
   function roster() { var w = ifWin(); try { return w && w.groupVisibility ? Object.keys(w.groupVisibility) : []; } catch (e) { return []; } }
   function onGroups() { var gv = readDim('filters') || {}, on = []; for (var k in gv) { if (gv[k]) { on.push(k); } } return on; }
   function setSearch(v) { var d = ifDoc(), el = d && d.getElementById('search-input'); if (el) { el.value = v; } }
+  // CCL find/clear are PLAIN highlight-search: never route through the Sociogram's
+  // Ask-AI broker path (that is what the separate `ask` verb is for). Pin the
+  // Ask-AI checkbox off before runSearch so `find` can never spend a broker call.
+  function pinPlainSearch() { var d = ifDoc(), ai = d && d.getElementById('search-ai-mode'); if (ai && ai.checked) { ai.checked = false; } }
 
   // ---- dim read/write (absolute-vector journal + write-returns-read) ----
   function readDim(dim) {
@@ -2189,7 +2193,7 @@ var VoiceGuide = (function() {
       switch (p.kind) {
         case 'filters':   return execFilters(p);
         case 'selection': return execMut('selection', function () { if (p.action === 'open') { call('openNodeByLabel', p.label); } else { call('dismissRightPanel'); } }, p.action === 'open' ? ('opened ' + p.label) : 'closed panel');
-        case 'highlight': return execMut('highlight', function () { if (p.action === 'find') { setSearch(p.text); call('runSearch'); } else if (p.action === 'clear') { setSearch(''); call('runSearch'); } else { call('linkGroups', p.keys); } }, didHighlight(p));
+        case 'highlight': return execMut('highlight', function () { if (p.action === 'find') { pinPlainSearch(); setSearch(p.text); call('runSearch'); } else if (p.action === 'clear') { setSearch(''); call('runSearch'); } else { call('linkGroups', p.keys); } }, didHighlight(p));
         case 'camera':    call('fitAll'); return show('fit', 'ok');   // camera not journaled in v1
         case 'shell':     return execShell(p);
         case 'journal':   return execJournal(p);
