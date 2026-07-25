@@ -75,7 +75,9 @@ check('ask carries spend:true and routes to @broker', function () {
 check('find carries mode:find', function () {
   const op = CCL.parse('find bioelectric fields', grammar);
   assert.strictEqual(op.mode, 'find');
-  assert.deepStrictEqual(shape(op), { verb: 'find', dim: 'highlight', op: 'set', args: ['bioelectric fields'] });
+  // dim is `cut` since 2026-07-25: find WRITES the cut (its matched id set),
+  // and the query travels inside that value so undo restores both together.
+  assert.deepStrictEqual(shape(op), { verb: 'find', dim: 'cut', op: 'set', args: ['bioelectric fields'] });
 });
 check('focus carries mode:focus and is n-ary', function () {
   const op = CCL.parse('focus levin ~ friston ~ hoffman', grammar);

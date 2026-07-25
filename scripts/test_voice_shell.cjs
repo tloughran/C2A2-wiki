@@ -579,7 +579,7 @@ async function main() {
     { ok: true, spoken: /^fit$/, inView: function (v) { return v > 3900; } });
   await row(page, 'A4 what -> names the live view', 'what', { ok: true, spoken: /view: Sociogram/ });
   // ---- find/focus must CUT, not dim (interim shell-side implementation) ----
-  await row(page, 'A5 find levin -> a cut, not a haystack', 'find levin', { ok: true, spoken: /matching nodes shown/ });
+  await row(page, 'A5 find levin -> a cut, not a haystack', 'find levin', { ok: true, spoken: /\d+ nodes shown/ });
   // Measured AFTER the settle window on purpose: the first implementation
   // passed an immediate count and then let the haze re-render behind it.
   await settledInView(page);
@@ -592,6 +592,12 @@ async function main() {
     afterFind.links < Math.max(1, afterFind.linksTotal * 0.2),
     afterFind.links + ' of ' + afterFind.linksTotal + ' edges still drawn');
   const shotFind = await page.screenshot(path.join(SHOTS, 'A-find-cut.png'));
+  await row(page, 'A5c what -> reports the cut as part of the view', 'what', { ok: true, spoken: /cut to \d+ nodes matching "levin"/ });
+  await row(page, 'A5d find friston -> a different cut', 'find friston', { ok: true, spoken: /\d+ nodes shown/ });
+  await row(page, 'A5e undo -> the PREVIOUS cut comes back, query and all', 'undo',
+    { ok: true, spoken: /undid \(cut\)/ });
+  await row(page, 'A5f what -> confirms the earlier cut was restored exactly', 'what',
+    { ok: true, spoken: /cut to \d+ nodes matching "levin"/ });
   await row(page, 'A6 clear -> everything restored, nothing left hidden', 'clear', { ok: true });
   const afterClear = await drawn(page);
   record('A6a clear leaves no cut elements behind',

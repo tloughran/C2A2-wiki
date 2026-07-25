@@ -2193,7 +2193,16 @@ var VoiceGuide = (function() {
     if (!m) { return null; }
     return { shown: parseInt(m[1].replace(/,/g, ''), 10), total: parseInt(m[2].replace(/,/g, ''), 10) };
   }
-  function viewSuffix() { var n = nodesShown(); return n === null ? '' : ('  |  ' + n.shown + ' of ' + n.total + ' nodes shown'); }
+  // With a cut active the graph's own counter is blind to it -- it counts
+  // group-level filtering only -- so reporting it unqualified said "4184 of
+  // 4184 shown" while two nodes were on screen. Report what is DRAWN, and name
+  // the filter pass separately rather than letting the two numbers contradict.
+  function viewSuffix() {
+    var n = nodesShown();
+    if (n === null) { return ''; }
+    if (cutIds) { return '  |  ' + cutIds.length + ' nodes drawn (' + n.shown + ' pass the filters)'; }
+    return '  |  ' + n.shown + ' of ' + n.total + ' nodes shown';
+  }
   function setSearch(v) { var d = ifDoc(), el = d && d.getElementById('search-input'); if (el) { el.value = v; } }
   // CCL find/clear are PLAIN highlight-search: never route through the Sociogram's
   // Ask-AI broker path (that is what the separate `ask` verb is for). Pin the
@@ -2342,7 +2351,7 @@ var VoiceGuide = (function() {
     // once now (never leave the user stranded) and again once it has settled --
     // unless a newer command has taken the camera, which must always win.
     var mine = ++frameToken;
-    setTimeout(function () { if (mine === frameToken) { if (cutActive) { applyCut(); } frameNodes(); } }, RESETTLE_MS);
+    setTimeout(function () { if (mine === frameToken) { if (cutIds) { applyCut(); } frameNodes(); } }, RESETTLE_MS);
     return f.floored ? '  |  centred at minimum zoom (say "fit" to see them all)' : '  |  centred';
   }
 
@@ -2369,50 +2378,89 @@ var VoiceGuide = (function() {
     st.textContent = '.ccl-cut { display: none !important; }';
     (d.head || d.documentElement).appendChild(st);
   }
-  function cutClass(els, thrRatio) {
-    var maxOp = 0, i, op;
-    for (i = 0; i < els.length; i++) { op = parseFloat(els[i].getAttribute('opacity')); if (!isNaN(op) && op > maxOp) { maxOp = op; } }
-    if (!maxOp) { return null; }
-    var thr = maxOp * thrRatio, kept = 0;
-    for (i = 0; i < els.length; i++) {
-      op = parseFloat(els[i].getAttribute('opacity'));
-      var cut = !isNaN(op) && op < thr;
-      if (cut) { els[i].classList.add('ccl-cut'); } else { els[i].classList.remove('ccl-cut'); kept++; }
+  // ---- the CUT: one declared dimension, several writers ------------------
+  //
+  // "What is revealed" was being written by three unrelated mechanisms: group
+  // filters (groupVisibility), search (a class stamp inferred from opacities),
+  // and -- had it been added ad hoc -- a marquee. Three producers of one
+  // conceptual state is the asymmetry this design exists to prevent, and it
+  // showed up as questions with no clean answer: after cut-then-filter, what
+  // does undo reverse, what does `what` report, what does the cursor consider
+  // revealed?
+  //
+  // So the cut is a DIMENSION. Its value is the absolute set of node ids
+  // allowed to be drawn (null = no cut), journaled like every other dimension.
+  // find and focus write it today, the marquee becomes its second writer, and
+  // the increment-5 regen replaces this shell-side enforcement with a real
+  // predicate inside rebuildGraph WITHOUT changing the contract.
+  //
+  // Enforcement is re-applied while a cut is live: d3 re-creates elements on
+  // its own re-renders, and a one-shot stamp let the faded haystack quietly
+  // return a second later.
+  var cutIds = null;      // null = no cut. Otherwise the ALLOWED id set.
+  var cutQuery = '';      // the search text that produced it, restored with it
+
+  function ensureCutStyle(d) {
+    if (d.getElementById('ccl-cut-style')) { return; }
+    var st = d.createElement('style');
+    st.id = 'ccl-cut-style';
+    st.textContent = '.ccl-cut { display: none !important; }';
+    (d.head || d.documentElement).appendChild(st);
+  }
+  function datumOf(w, el) { try { return w.d3.select(el).datum(); } catch (e) { return null; } }
+  function endpointId(x) { return (x && typeof x === 'object') ? x.id : x; }
+
+  function applyCut() {
+    var d = ifDoc(), w = ifWin();
+    if (!d || !w) { return null; }
+    ensureCutStyle(d);
+    var allow = null, i;
+    if (cutIds) { allow = Object.create(null); for (i = 0; i < cutIds.length; i++) { allow[cutIds[i]] = true; } }
+    var cs = d.querySelectorAll('.node-circle'), kept = 0;
+    for (i = 0; i < cs.length; i++) {
+      var dat = datumOf(w, cs[i]);
+      var id = dat && dat.id;
+      if (allow && !(id && allow[id])) { cs[i].classList.add('ccl-cut'); }
+      else { cs[i].classList.remove('ccl-cut'); kept++; }
+    }
+    // An edge survives only if BOTH endpoints do -- that is what makes a cut a
+    // cut rather than a dimming: the edges stop being drawn at all.
+    var ls = d.querySelectorAll('.link-line');
+    for (i = 0; i < ls.length; i++) {
+      var ld = datumOf(w, ls[i]);
+      var keep = !allow || (ld && allow[endpointId(ld.source)] && allow[endpointId(ld.target)]);
+      if (keep) { ls[i].classList.remove('ccl-cut'); } else { ls[i].classList.add('ccl-cut'); }
     }
     return kept;
   }
-  // A one-shot class stamp does NOT hold: d3 re-creates elements on its own
-  // re-renders, and the new ones carry no class, so the faded haystack quietly
-  // came back a second later. The DOM counts taken immediately after the cut
-  // said 1 edge drawn while the screenshot showed thousands -- only the picture
-  // caught it. So the cut is a STATE, re-applied while it is active.
-  var cutActive = false;
-  function applyCut() {
-    var d = ifDoc();
-    if (!d) { return null; }
-    ensureCutStyle(d);
-    var kept = cutClass(d.querySelectorAll('.node-circle'), 0.5);
-    cutClass(d.querySelectorAll('.link-line'), 0.5);
-    return kept;
+  // The graph marks its own search results by OPACITY. Read that ONCE, at the
+  // moment of the search, to derive the id set -- from then on the DIMENSION is
+  // the truth, so no later behaviour depends on a threshold and a brightness
+  // change cannot silently redefine what is cut.
+  function deriveLitIds() {
+    var d = ifDoc(), w = ifWin();
+    if (!d || !w) { return null; }
+    var cs = d.querySelectorAll('.node-circle'), maxOp = 0, i, op;
+    for (i = 0; i < cs.length; i++) { op = parseFloat(cs[i].getAttribute('opacity')); if (!isNaN(op) && op > maxOp) { maxOp = op; } }
+    if (!maxOp) { return null; }
+    var thr = maxOp * 0.5, ids = [];
+    for (i = 0; i < cs.length; i++) {
+      op = parseFloat(cs[i].getAttribute('opacity'));
+      if (!isNaN(op) && op < thr) { continue; }
+      var dat = datumOf(w, cs[i]);
+      if (dat && dat.id) { ids.push(dat.id); }
+    }
+    return ids;
   }
-  function cutDimmed() {
-    var kept = applyCut();
-    if (kept === null) { return null; }
-    cutActive = true;
-    // Re-apply across the same window in which the sim and the graph's own
-    // re-renders settle, then once more well after.
-    [120, 400, RESETTLE_MS, 1800].forEach(function (ms) {
-      setTimeout(function () { if (cutActive) { applyCut(); } }, ms);
-    });
-    return kept;
+  function readCut() { return cutIds ? { ids: cutIds.slice(), query: cutQuery } : null; }
+  function writeCut(value) {
+    cutIds = (value && value.ids) ? value.ids.slice() : null;
+    cutQuery = (value && value.query) || '';
+    setSearch(cutQuery);
+    applyCut();
+    if (cutIds) { [120, 400, RESETTLE_MS, 1800].forEach(function (ms) { setTimeout(function () { if (cutIds) { applyCut(); } }, ms); }); }
   }
-  function uncut() {
-    cutActive = false;
-    var d = ifDoc();
-    if (!d) { return; }
-    var els = d.querySelectorAll('.ccl-cut');
-    for (var i = 0; i < els.length; i++) { els[i].classList.remove('ccl-cut'); }
-  }
+  function uncut() { writeCut(null); }
 
   // ---- the cursor: reaching ONE node without a mouse ---------------------
   //
@@ -2656,7 +2704,6 @@ var VoiceGuide = (function() {
     try {
       if (dim === 'filters') { return w && w.groupVisibility ? Object.assign({}, w.groupVisibility) : null; }
       if (dim === 'selection') { var n = w && w.currentRightNode; return n ? { label: n.label, id: n.id } : null; }
-      if (dim === 'highlight') { var el = d && d.getElementById('search-input'); return { q: el ? el.value : '' }; }
     } catch (e) { return null; }
     return null;
   }
@@ -2667,9 +2714,9 @@ var VoiceGuide = (function() {
       if (fam) { writeFamily(fam.state, value, fam); }
       return;
     }
+    if (dim === 'cut') { writeCut(value); return; }
     if (dim === 'filters') { var w = ifWin(); for (var k in value) { if (Object.prototype.hasOwnProperty.call(value, k)) { w.groupVisibility[k] = value[k]; } } syncFilterUI(); }
     else if (dim === 'selection') { if (!value) { call('dismissRightPanel'); } else { call('openNodeByLabel', value.label); } }
-    else if (dim === 'highlight') { setSearch((value && value.q) || ''); call('runSearch'); }
   }
   // Batch filter path (redesign section 7): mutate groupVisibility once, sync the
   // checkbox UI, one rebuildGraph -- never N sequential toggleGroup rebuilds.
@@ -2700,17 +2747,9 @@ var VoiceGuide = (function() {
       switch (p.kind) {
         case 'filters':   return execFilters(p);
         case 'selection': return execMut('selection', function () { if (p.action === 'open') { call('openNodeByLabel', p.label); } else { call('dismissRightPanel'); } }, p.action === 'open' ? ('opened ' + p.label) : 'closed panel', p.action === 'open');
-        case 'highlight': return execMut('highlight', function () {
-          if (p.action === 'find') {
-            pinPlainSearch(); setSearch(p.text); call('runSearch');
-            var k = cutDimmed();
-            return k === null ? '' : ('  |  ' + k + ' matching nodes shown');
-          }
-          if (p.action === 'clear') { setSearch(''); call('runSearch'); uncut(); return ''; }
-          call('linkGroups', p.keys);
-          var k2 = cutDimmed();
-          return k2 === null ? '' : ('  |  ' + k2 + ' nodes shown');
-        }, didHighlight(p), p.action !== 'clear');
+        // kind stays 'highlight' (the dispatcher route); the DIMENSION it
+        // writes is `cut`, which is what the journal and `what` speak of.
+        case 'highlight': return execHighlight(p);
         // Any explicit camera command must cancel a pending re-frame, or the
         // settle timer lands after `fit` and silently undoes it (caught by the
         // shell test: fit reported 891 nodes on screen instead of ~4000).
@@ -2727,6 +2766,32 @@ var VoiceGuide = (function() {
     } catch (e) { show(String(e && e.message || e), 'err'); }
   }
 
+  // find / focus / clear all write ONE dimension: the cut. The search text
+  // travels inside the journaled value, so undo restores the query and the node
+  // set together rather than leaving the box saying one thing and the graph
+  // showing another.
+  function execHighlight(p) {
+    var before = readCut();
+    if (p.action === 'clear') {
+      writeCut(null);
+      call('runSearch');
+      journal.record(TAB, { dim: 'cut', before: before, after: null });
+      return show('clear', 'ok');
+    }
+    if (p.action === 'find') { pinPlainSearch(); setSearch(p.text); call('runSearch'); }
+    else { call('linkGroups', p.keys); }
+    var ids = deriveLitIds();
+    if (!ids || !ids.length) {
+      writeCut(null);
+      journal.record(TAB, { dim: 'cut', before: before, after: null });
+      return show(didHighlight(p) + '  |  nothing matched -- nothing cut', 'err');
+    }
+    var value = { ids: ids, query: p.action === 'find' ? p.text : '' };
+    writeCut(value);
+    journal.record(TAB, { dim: 'cut', before: before, after: value });
+    return show(didHighlight(p) + '  |  ' + ids.length + ' nodes shown' + frameSuffix(), 'ok');
+  }
+
   function execMut(dim, doIt, msg, frame) {
     var before = readDim(dim);
     // doIt may return a suffix -- a match count is only knowable after the
@@ -2740,9 +2805,15 @@ var VoiceGuide = (function() {
     show(msg + (frame ? frameSuffix() : ''), 'ok');
   }
   function execFilters(p) {
-    // A filter change supersedes any search cut; d3 reuses elements on rebuild,
-    // so a stale ccl-cut class would survive and hide nodes the filter shows.
-    uncut();
+    // A filter change SUPERSEDES a cut (a stale cut would hide nodes the new
+    // filter means to show). That is a state change in its own right, so it
+    // gets its OWN journal entry: undo steps back through cut-then-filter
+    // exactly, instead of silently dropping the cut along the way.
+    var priorCut = readCut();
+    if (priorCut) {
+      writeCut(null);
+      journal.record(TAB, { dim: 'cut', before: priorCut, after: null });
+    }
     var before = readDim('filters');
     if (!before) { return show('filters are not available on this view', 'err'); }
     if (bootFilters === null) { bootFilters = before; }   // capture the boot default once
@@ -2845,7 +2916,8 @@ var VoiceGuide = (function() {
     var b = activeTabBtn(), name = b ? b.textContent.trim() : '(unknown)', on = onGroups();
     // `what` is the question "am I looking at what I asked for?" -- so it must
     // answer from the render, not from the filter state that produced it.
-    var res = show('view: ' + name + (on.length ? ('  |  filters on: ' + on.join(', ')) : '  |  (filters n/a here)') + viewSuffix(), 'ok');
+    var cutNote = cutIds ? ('  |  cut to ' + cutIds.length + ' nodes' + (cutQuery ? (' matching "' + cutQuery + '"') : '')) : '';
+    var res = show('view: ' + name + (on.length ? ('  |  filters on: ' + on.join(', ')) : '  |  (filters n/a here)') + cutNote + viewSuffix(), 'ok');
     var nv = nodesShown();
     if (nv) { res.shown = nv.shown; res.total = nv.total; }
     return res;

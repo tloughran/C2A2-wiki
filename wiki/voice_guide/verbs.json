@@ -22,10 +22,12 @@
       "fingerprint": "semantic",
       "_note": "position within the currently revealed node set; writes through to `selection`, so undo restores the node, not the index"
     },
-    "highlight": {
-      "kind": "value",
+    "cut": {
+      "kind": "set",
+      "type": "node-id[]",
       "nullable": true,
-      "fingerprint": "semantic"
+      "fingerprint": "semantic",
+      "_note": "The set of nodes allowed to be drawn. ABSOLUTE (the whole allowed set, never a delta) and nullable (null = no cut). Written today by find and focus; the marquee will be its second writer, and the increment-5 regen replaces the shell-side enforcement with a real predicate inside rebuildGraph without changing this contract. Replaces the former `highlight` dimension: the search text is part of THIS value ({ids, query}), so undo restores the query and the node set together instead of leaving the search box saying one thing while the graph shows another."
     },
     "camera": {
       "kind": "value",
@@ -116,7 +118,7 @@
     },
     {
       "verb": "find",
-      "dim": "highlight",
+      "dim": "cut",
       "op": "set",
       "args": "text",
       "kind": "value",
@@ -125,7 +127,7 @@
     },
     {
       "verb": "clear",
-      "dim": "highlight",
+      "dim": "cut",
       "op": "null",
       "args": "none",
       "kind": "value",
@@ -133,7 +135,7 @@
     },
     {
       "verb": "focus",
-      "dim": "highlight",
+      "dim": "cut",
       "op": "set",
       "args": "nary",
       "kind": "value",
