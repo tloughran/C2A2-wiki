@@ -2301,7 +2301,7 @@ var VoiceGuide = (function() {
       // Frame what is actually LIT: group-hidden nodes carry opacity 0 and
       // search-dimmed ones 0.1*brightness, and neither is something the user
       // was shown. Framing them back in would re-create the original bug.
-      if (c.style.display === 'none') { continue; }
+      if (c.style.display === 'none' || c.classList.contains('ccl-cut')) { continue; }
       var op = parseFloat(c.getAttribute('opacity'));
       if (!isNaN(op) && op <= 0.15) { continue; }
       var xy = nodeXY(w, c);
@@ -2329,8 +2329,76 @@ var VoiceGuide = (function() {
     // once now (never leave the user stranded) and again once it has settled --
     // unless a newer command has taken the camera, which must always win.
     var mine = ++frameToken;
-    setTimeout(function () { if (mine === frameToken) { frameNodes(); } }, RESETTLE_MS);
+    setTimeout(function () { if (mine === frameToken) { if (cutActive) { applyCut(); } frameNodes(); } }, RESETTLE_MS);
     return f.floored ? '  |  centred at minimum zoom (say "fit" to see them all)' : '  |  centred';
+  }
+
+  // ---- cut, don't dim (INTERIM -- see the note) ---------------------------
+  //
+  // The graph's own search DIMS: matched nodes keep full opacity, everything
+  // else drops to 0.1 and every one of the 113,765 edges stays drawn at 0.05.
+  // For a mouse user scanning the box that preserves context; for a spoken
+  // reveal it is a haystack with the needle very slightly brighter, which is
+  // what Tom saw -- "an always-faintly-visible cluster of lots of edges, when
+  // only those called for should be visible".
+  //
+  // INTERIM BY CONSTRUCTION: rebuildGraph cuts by GROUP, and the artifact
+  // exposes no per-node visibility predicate, so a true cut on an arbitrary
+  // search match needs the increment-5 regen. Until then we post-process what
+  // runSearch/linkGroups just dimmed and hide it outright. The threshold is
+  // relative to the brightest element present, so it tracks the brightness
+  // slider instead of hard-coding its value. The Sociogram's own search box is
+  // untouched -- it still dims, which is the documented asymmetry.
+  function ensureCutStyle(d) {
+    if (d.getElementById('ccl-cut-style')) { return; }
+    var st = d.createElement('style');
+    st.id = 'ccl-cut-style';
+    st.textContent = '.ccl-cut { display: none !important; }';
+    (d.head || d.documentElement).appendChild(st);
+  }
+  function cutClass(els, thrRatio) {
+    var maxOp = 0, i, op;
+    for (i = 0; i < els.length; i++) { op = parseFloat(els[i].getAttribute('opacity')); if (!isNaN(op) && op > maxOp) { maxOp = op; } }
+    if (!maxOp) { return null; }
+    var thr = maxOp * thrRatio, kept = 0;
+    for (i = 0; i < els.length; i++) {
+      op = parseFloat(els[i].getAttribute('opacity'));
+      var cut = !isNaN(op) && op < thr;
+      if (cut) { els[i].classList.add('ccl-cut'); } else { els[i].classList.remove('ccl-cut'); kept++; }
+    }
+    return kept;
+  }
+  // A one-shot class stamp does NOT hold: d3 re-creates elements on its own
+  // re-renders, and the new ones carry no class, so the faded haystack quietly
+  // came back a second later. The DOM counts taken immediately after the cut
+  // said 1 edge drawn while the screenshot showed thousands -- only the picture
+  // caught it. So the cut is a STATE, re-applied while it is active.
+  var cutActive = false;
+  function applyCut() {
+    var d = ifDoc();
+    if (!d) { return null; }
+    ensureCutStyle(d);
+    var kept = cutClass(d.querySelectorAll('.node-circle'), 0.5);
+    cutClass(d.querySelectorAll('.link-line'), 0.5);
+    return kept;
+  }
+  function cutDimmed() {
+    var kept = applyCut();
+    if (kept === null) { return null; }
+    cutActive = true;
+    // Re-apply across the same window in which the sim and the graph's own
+    // re-renders settle, then once more well after.
+    [120, 400, RESETTLE_MS, 1800].forEach(function (ms) {
+      setTimeout(function () { if (cutActive) { applyCut(); } }, ms);
+    });
+    return kept;
+  }
+  function uncut() {
+    cutActive = false;
+    var d = ifDoc();
+    if (!d) { return; }
+    var els = d.querySelectorAll('.ccl-cut');
+    for (var i = 0; i < els.length; i++) { els[i].classList.remove('ccl-cut'); }
   }
 
   // ---- section 9: the LIVE coverage audit --------------------------------
@@ -2448,7 +2516,17 @@ var VoiceGuide = (function() {
       switch (p.kind) {
         case 'filters':   return execFilters(p);
         case 'selection': return execMut('selection', function () { if (p.action === 'open') { call('openNodeByLabel', p.label); } else { call('dismissRightPanel'); } }, p.action === 'open' ? ('opened ' + p.label) : 'closed panel', p.action === 'open');
-        case 'highlight': return execMut('highlight', function () { if (p.action === 'find') { pinPlainSearch(); setSearch(p.text); call('runSearch'); } else if (p.action === 'clear') { setSearch(''); call('runSearch'); } else { call('linkGroups', p.keys); } }, didHighlight(p), p.action !== 'clear');
+        case 'highlight': return execMut('highlight', function () {
+          if (p.action === 'find') {
+            pinPlainSearch(); setSearch(p.text); call('runSearch');
+            var k = cutDimmed();
+            return k === null ? '' : ('  |  ' + k + ' matching nodes shown');
+          }
+          if (p.action === 'clear') { setSearch(''); call('runSearch'); uncut(); return ''; }
+          call('linkGroups', p.keys);
+          var k2 = cutDimmed();
+          return k2 === null ? '' : ('  |  ' + k2 + ' nodes shown');
+        }, didHighlight(p), p.action !== 'clear');
         // Any explicit camera command must cancel a pending re-frame, or the
         // settle timer lands after `fit` and silently undoes it (caught by the
         // shell test: fit reported 891 nodes on screen instead of ~4000).
@@ -2464,7 +2542,10 @@ var VoiceGuide = (function() {
 
   function execMut(dim, doIt, msg, frame) {
     var before = readDim(dim);
-    doIt();
+    // doIt may return a suffix -- a match count is only knowable after the
+    // action has run, and the message must describe the result, not the intent.
+    var suffix = doIt() || '';
+    msg = msg + suffix;
     journal.record(TAB, { dim: dim, before: before, after: readDim(dim) });
     // `frame` is explicit: opening a node or running a search REVEALS
     // something and must end centred; closing a panel or clearing a search
@@ -2472,6 +2553,9 @@ var VoiceGuide = (function() {
     show(msg + (frame ? frameSuffix() : ''), 'ok');
   }
   function execFilters(p) {
+    // A filter change supersedes any search cut; d3 reuses elements on rebuild,
+    // so a stale ccl-cut class would survive and hide nodes the filter shows.
+    uncut();
     var before = readDim('filters');
     if (!before) { return show('filters are not available on this view', 'err'); }
     if (bootFilters === null) { bootFilters = before; }   // capture the boot default once

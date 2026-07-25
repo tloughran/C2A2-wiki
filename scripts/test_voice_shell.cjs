@@ -378,6 +378,21 @@ async function derangeCamera(page) {
   );
 }
 
+
+// How much of the graph is actually drawn after a search: the point of cutting
+// rather than dimming is that the 113,765 edges STOP BEING DRAWN, not that they
+// get fainter. Counting only nodes would pass on a dim.
+function drawn(page) {
+  return page.eval(
+    IFRAME_DOC +
+    "if (!d) { return null; }" +
+    "var vis = function (sel) { var a = d.querySelectorAll(sel), n = 0;" +
+    "  for (var i = 0; i < a.length; i++) { if (!a[i].classList.contains('ccl-cut')) { n++; } } return n; };" +
+    "return { nodes: vis('.node-circle'), links: vis('.link-line')," +
+    "         nodesTotal: d.querySelectorAll('.node-circle').length, linksTotal: d.querySelectorAll('.link-line').length };"
+  );
+}
+
 function onGroupCount(page) {
   return page.eval(
     IFRAME_DOC +
@@ -563,6 +578,26 @@ async function main() {
   await row(page, 'A3 fit -> unfloored, the whole graph on screen', 'fit',
     { ok: true, spoken: /^fit$/, inView: function (v) { return v > 3900; } });
   await row(page, 'A4 what -> names the live view', 'what', { ok: true, spoken: /view: Sociogram/ });
+  // ---- find/focus must CUT, not dim (interim shell-side implementation) ----
+  await row(page, 'A5 find levin -> a cut, not a haystack', 'find levin', { ok: true, spoken: /matching nodes shown/ });
+  // Measured AFTER the settle window on purpose: the first implementation
+  // passed an immediate count and then let the haze re-render behind it.
+  await settledInView(page);
+  await sleep(600);
+  const afterFind = await drawn(page);
+  record('A5a find hides the non-matching nodes',
+    afterFind.nodes > 0 && afterFind.nodes < afterFind.nodesTotal * 0.5,
+    afterFind.nodes + ' of ' + afterFind.nodesTotal + ' nodes still drawn');
+  record('A5b find stops DRAWING the non-matching edges',
+    afterFind.links < Math.max(1, afterFind.linksTotal * 0.2),
+    afterFind.links + ' of ' + afterFind.linksTotal + ' edges still drawn');
+  const shotFind = await page.screenshot(path.join(SHOTS, 'A-find-cut.png'));
+  await row(page, 'A6 clear -> everything restored, nothing left hidden', 'clear', { ok: true });
+  const afterClear = await drawn(page);
+  record('A6a clear leaves no cut elements behind',
+    afterClear.nodes === afterClear.nodesTotal && afterClear.links === afterClear.linksTotal,
+    afterClear.nodes + '/' + afterClear.nodesTotal + ' nodes, ' + afterClear.links + '/' + afterClear.linksTotal + ' edges drawn');
+
   const shotA = await page.screenshot(path.join(SHOTS, 'A-sociogram.png'));
 
   // ---- Phase B: metabolism, the first knob tab (inc 4 step 2, unreviewed) ----
@@ -622,7 +657,7 @@ async function main() {
   process.stdout.write('page exceptions: ' + page.exceptions.length + '   console errors: ' + page.consoleErrors.length + '\n');
   page.exceptions.forEach(function (e) { process.stdout.write('  EXCEPTION  ' + e.split('\n')[0] + '\n'); });
   page.consoleErrors.forEach(function (e) { process.stdout.write('  CONSOLE    ' + e.slice(0, 200) + '\n'); });
-  process.stdout.write('screenshots:\n  ' + [shotA, shotB, shotB2, shotC].join('\n  ') + '\n');
+  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC].join('\n  ') + '\n');
 
   const clean = failed.length === 0 && page.exceptions.length === 0 && page.consoleErrors.length === 0;
   process.stdout.write(clean ? '\nSHELL TEST GREEN\n' : '\nSHELL TEST RED\n');
