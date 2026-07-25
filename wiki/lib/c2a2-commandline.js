@@ -182,6 +182,32 @@
 
   const CAND_CAP = 8;
 
+  // Guess, act, and SAY it was a guess -- rather than handing the question back.
+  //
+  // Returning `ambiguous` for every multi-match turned the guide into a machine
+  // for answering questions with questions, which is intolerable in a voice-only
+  // tool: the user cannot see the candidate list you are asking them about. So
+  // when the matches rank cleanly (one is a closer match than the rest), take
+  // the winner, mark it low-confidence, and carry the alternatives so the shell
+  // can say "taking X to mean Y". Only a genuine TIE is worth a question.
+  //
+  // The safety of this rests on two things that already hold: every command
+  // reports what actually happened (a wrong guess is visible, not hidden), and
+  // `undo` is one word away. Hedge the INTERPRETATION, never the outcome.
+  function rankOrAsk(candidates, term) {
+    const scored = candidates.slice().sort(function (a, b) {
+      const la = leaf(a).length, lb = leaf(b).length;
+      if (la !== lb) { return la - lb; }          // closer match = less left over
+      return low(a) < low(b) ? -1 : 1;            // deterministic tie-break
+    });
+    const tied = leaf(scored[0]).length === leaf(scored[1]).length;
+    if (tied) { return { ok: false, error: 'ambiguous', term: term, candidates: scored.slice(0, CAND_CAP) }; }
+    return {
+      ok: true, keys: [scored[0]], term: term,
+      confidence: 'low', alternatives: scored.slice(1, CAND_CAP)
+    };
+  }
+
   function low(s) { return String(s == null ? '' : s).toLowerCase().trim(); }
   function leaf(key) { const i = key.lastIndexOf('/'); return i === -1 ? key : key.slice(i + 1); }
 
@@ -208,11 +234,11 @@
 
     const prefix = roster.filter(function (k) { return low(leaf(k)).indexOf(t) === 0; });
     if (prefix.length === 1) { return { ok: true, keys: prefix, term: term }; }
-    if (prefix.length > 1) { return { ok: false, error: 'ambiguous', term: term, candidates: prefix.slice(0, CAND_CAP) }; }
+    if (prefix.length > 1) { return rankOrAsk(prefix, term); }
 
     const sub = roster.filter(function (k) { return low(leaf(k)).indexOf(t) !== -1; });
     if (sub.length === 1) { return { ok: true, keys: sub, term: term }; }
-    if (sub.length > 1) { return { ok: false, error: 'ambiguous', term: term, candidates: sub.slice(0, CAND_CAP) }; }
+    if (sub.length > 1) { return rankOrAsk(sub, term); }
 
     return { ok: false, error: 'unresolved', term: term };
   }
@@ -528,14 +554,18 @@
   // are reported but do not block the resolved subset.
   function resolveTerms(args, roster) {
     const keys = [];
-    const unresolved = [];
+    const unresolved = [], guesses = [];
     for (const term of args) {
       const r = resolveGroups(term, roster);
-      if (r.ok) { for (const k of r.keys) { if (keys.indexOf(k) === -1) { keys.push(k); } } }
+      if (r.ok) {
+        for (const k of r.keys) { if (keys.indexOf(k) === -1) { keys.push(k); } }
+        // A low-confidence hit rides back so the spoken answer can own it.
+        if (r.confidence === 'low') { guesses.push({ term: r.term, chose: r.keys[0], alternatives: r.alternatives || [] }); }
+      }
       else if (r.error === 'ambiguous') { return { ambiguous: r }; }
       else { unresolved.push(term); }
     }
-    return { keys: keys, unresolved: unresolved };
+    return { keys: keys, unresolved: unresolved, guesses: guesses };
   }
 
   function plan(op, ctx) {
@@ -566,7 +596,8 @@
         const res = resolveTerms(op.args, ctx.roster);
         if (res.ambiguous) { return res.ambiguous; }
         if (!res.keys.length) { return { ok: false, error: 'unresolved', term: op.args.join(' ') }; }
-        return { ok: true, kind: 'filters', action: action, keys: res.keys, unresolved: res.unresolved, journal: { dim: 'filters' } };
+        return { ok: true, kind: 'filters', action: action, keys: res.keys, unresolved: res.unresolved,
+                 guesses: res.guesses, journal: { dim: 'filters' } };
       }
       case 'all': case 'none': {
         const famAll = resolveFamily(op.args[0], ctx.families);

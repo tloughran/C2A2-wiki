@@ -230,11 +230,19 @@ check('resolveGroups: unique prefix resolves ("arch" -> architecture)', function
 check('resolveGroups: unique substring resolves ("hamed" -> arkanihamed)', function () {
   assert.deepStrictEqual(CCL.resolveGroups('hamed', ROSTER).keys, ['traditions/arkanihamed']);
 });
-check('resolveGroups: ambiguous prefix returns candidates, not a guess ("a")', function () {
+check('resolveGroups: a multi-match is RANKED and acted on, hedged ("a")', function () {
+  // Policy changed 2026-07-25: this row used to assert that any multi-match
+  // asked. In a voice-only tool a returned question costs more than a stated
+  // assumption, so a ranked winner is taken and marked. The invariant that
+  // SURVIVES -- a genuine tie still asks -- is the row below.
   const r = CCL.resolveGroups('a', ROSTER);
-  assert.strictEqual(r.ok, false);
-  assert.strictEqual(r.error, 'ambiguous');
-  assert.ok(r.candidates.length > 1);
+  if (r.ok) {
+    assert.strictEqual(r.confidence, 'low', 'a guess must be marked as one');
+    assert.ok(r.alternatives.length, 'the roads not taken must be speakable');
+  } else {
+    assert.strictEqual(r.error, 'ambiguous');
+    assert.ok(r.candidates.length > 1);
+  }
 });
 check('resolveGroups: unknown term -> unresolved (never invents)', function () {
   assert.strictEqual(CCL.resolveGroups('zzzznope', ROSTER).error, 'unresolved');
@@ -413,10 +421,14 @@ check('plan: all / none map to filters all/none, no keys', function () {
   assert.deepStrictEqual({ kind: planCmd('all').kind, action: planCmd('all').action }, { kind: 'filters', action: 'all' });
   assert.strictEqual(planCmd('none').action, 'none');
 });
-check('plan: ambiguous filter term stops execution and asks', function () {
+check('plan: a term it had to guess at still EXECUTES, carrying the assumption', function () {
   const p = planCmd('only a'); // 'a' prefix-matches several groups
-  assert.strictEqual(p.error, 'ambiguous');
-  assert.ok(p.candidates.length > 1);
+  if (p.ok) {
+    assert.ok(p.guesses && p.guesses.length, 'executed a guess without recording it -- the user would never hear that it guessed');
+  } else {
+    assert.strictEqual(p.error, 'ambiguous');
+    assert.ok(p.candidates.length > 1);
+  }
 });
 check('plan: unresolved-only filter term -> unresolved (never a silent no-op)', function () {
   assert.strictEqual(planCmd('only zzzznope').error, 'unresolved');
@@ -744,6 +756,42 @@ check('zoom: the Sociogram now declares the cap its gesture claims', function ()
   const zoomGesture = soc.gestures.filter(function (g) { return g.id === 'zoom'; })[0];
   assert.strictEqual(zoomGesture.status, 'covered');
   for (const v of zoomGesture.by) { assert.ok(soc.caps.indexOf(v) !== -1, 'gesture claims uncapped verb ' + v); }
+});
+
+// ---- guess, act, and say so (2026-07-25, Tom) ------------------------------
+//
+// Returning `ambiguous` for every multi-match made the guide answer questions
+// with questions -- unusable in a voice tool, where the user cannot see the
+// candidate list being asked about. A ranked winner is now acted on and marked
+// low-confidence. Safety rests on the outcome still being reported exactly and
+// undo being one word away.
+
+const RANK_ROSTER = ['traditions/stump', 'summa', 'traditions/summa-extra', 'sessions', 'traditions/levin'];
+
+check('guess: a ranked winner is ACTED on, not asked about', function () {
+  const r = CCL.resolveGroups('su', RANK_ROSTER);
+  assert.strictEqual(r.ok, true, 'should have acted, got ' + JSON.stringify(r));
+  assert.deepStrictEqual(r.keys, ['summa']);
+  assert.strictEqual(r.confidence, 'low');
+  assert.ok(r.alternatives.length, 'the alternatives must ride along so they can be spoken');
+});
+check('guess: a genuine tie still ASKS -- guessing is not the same as bluffing', function () {
+  const r = CCL.resolveGroups('s', RANK_ROSTER);
+  assert.strictEqual(r.ok, false);
+  assert.strictEqual(r.error, 'ambiguous');
+});
+check('guess: an unambiguous match carries NO hedge', function () {
+  const r = CCL.resolveGroups('levin', RANK_ROSTER);
+  assert.strictEqual(r.ok, true);
+  assert.strictEqual(r.confidence, undefined, 'a certain match must not be hedged -- that would train the user to ignore hedges');
+});
+check('guess: the plan carries the assumption up to the speaker', function () {
+  const ctx = { caps: CCL.SOCIOGRAM_CAPS, roster: RANK_ROSTER, tabs: [], nodes: [] };
+  const p = CCL.plan(CCL.parse('only su', grammar), ctx);
+  assert.strictEqual(p.ok, true);
+  assert.strictEqual(p.guesses.length, 1);
+  assert.strictEqual(p.guesses[0].chose, 'summa');
+  assert.strictEqual(p.guesses[0].term, 'su');
 });
 
 // ---- report -----------------------------------------------------------------
