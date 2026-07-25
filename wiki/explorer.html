@@ -2237,6 +2237,102 @@ var VoiceGuide = (function() {
     try { ev = new (w && w.Event || Event)('change', { bubbles: true }); el.dispatchEvent(ev); } catch (e) { /* older event ctor */ var e2 = d.createEvent('HTMLEvents'); e2.initEvent('change', true, false); el.dispatchEvent(e2); }
   }
 
+  // ---- auto-framing: make "revealed" mean "visible" ----------------------
+  //
+  // A filter change moved the graph's CONTENTS and left the CAMERA where it
+  // was, so a reveal could put every matching node off-screen and still report
+  // itself correctly ("2205 of 4184 shown" while the user saw nothing -- the
+  // status line's own two numbers, in-view vs shown, are exactly this gap).
+  // Framing is therefore an INVARIANT of revealing, not a verb the user has to
+  // know: every command that changes what is revealed ends centred.
+  //
+  // MIN_SCALE is a legibility floor. Node radii are 2-5px at scale 1, and the
+  // graph's own default view sits near 0.4, so fitting a large reveal shrinks
+  // nodes to sub-pixel dust. Below the floor we CENTRE rather than shrink and
+  // say so -- a partial view of legible nodes beats a complete view of nothing
+  // (Tom, 2026-07-25: "kept at a minimum size and centered ... that's what any
+  // user would want on any search result"). `fit` is the deliberate escape
+  // hatch and is never floored: it means "show everything, however small".
+  var MIN_SCALE = 1.5, MAX_SCALE = 2, FRAME_MS = 400, RESETTLE_MS = 900;
+  var frameToken = 0;
+  // A rebuilt circle has NO cx/cy yet -- the force simulation writes them on
+  // tick, so reading the DOM straight after a filter change races the sim and
+  // finds nothing (this silently defeated the first cut of auto-framing). The
+  // bound datum already carries x/y, so prefer the rendered attribute when it
+  // exists and fall back to the data when it does not.
+  function nodeXY(w, c) {
+    var x = parseFloat(c.getAttribute('cx')), y = parseFloat(c.getAttribute('cy'));
+    if (!isNaN(x) && !isNaN(y)) { return [x, y]; }
+    try {
+      var dat = w.d3.select(c).datum();
+      if (dat && typeof dat.x === 'number' && typeof dat.y === 'number') { return [dat.x, dat.y]; }
+    } catch (e) { /* not a bound selection */ }
+    return null;
+  }
+  // The settle re-frame must never fight the user. If they touch the graph in
+  // the second after a command -- wheel, drag, pinch -- the pending re-frame is
+  // cancelled and the camera stays where they put it. Without this, a manual
+  // pan right after a reveal gets yanked back a moment later, which reads as
+  // the view having a mind of its own.
+  function armCameraGuard(svgEl) {
+    if (!svgEl || svgEl.__cclCameraGuard) { return; }
+    svgEl.__cclCameraGuard = true;
+    // CAPTURE phase, deliberately: d3-zoom's own wheel/mousedown handlers call
+    // stopImmediatePropagation, so a listener registered after them (which ours
+    // always is -- d3 binds at graph init) never runs at all. Bubble-phase here
+    // meant a user's zoom was silently overridden by the settle re-frame.
+    ['wheel', 'mousedown', 'touchstart'].forEach(function (ev) {
+      svgEl.addEventListener(ev, function () { frameToken++; }, { capture: true, passive: true });
+    });
+  }
+  function frameNodes() {
+    var w = ifWin(), d = ifDoc();
+    if (!w || !d || !w.zoomBehavior || !w.d3) { return null; }
+    var svgEl = d.getElementById('graph-svg');
+    if (!svgEl) { return null; }
+    armCameraGuard(svgEl);
+    var W = svgEl.clientWidth, H = svgEl.clientHeight;
+    if (!W || !H) { return null; }
+
+    var cs = d.querySelectorAll('.node-circle');
+    var xMin = Infinity, xMax = -Infinity, yMin = Infinity, yMax = -Infinity, n = 0;
+    for (var i = 0; i < cs.length; i++) {
+      var c = cs[i];
+      // Frame what is actually LIT: group-hidden nodes carry opacity 0 and
+      // search-dimmed ones 0.1*brightness, and neither is something the user
+      // was shown. Framing them back in would re-create the original bug.
+      if (c.style.display === 'none') { continue; }
+      var op = parseFloat(c.getAttribute('opacity'));
+      if (!isNaN(op) && op <= 0.15) { continue; }
+      var xy = nodeXY(w, c);
+      if (!xy) { continue; }
+      if (xy[0] < xMin) { xMin = xy[0]; } if (xy[0] > xMax) { xMax = xy[0]; }
+      if (xy[1] < yMin) { yMin = xy[1]; } if (xy[1] > yMax) { yMax = xy[1]; }
+      n++;
+    }
+    if (!n) { return null; }
+
+    var dx = xMax - xMin + 40, dy = yMax - yMin + 40;
+    var fitScale = Math.min(W / dx, H / dy, MAX_SCALE) * 0.9;
+    var floored = fitScale < MIN_SCALE;
+    var scale = floored ? MIN_SCALE : fitScale;
+    var cx = (xMin + xMax) / 2, cy = (yMin + yMax) / 2;
+    var t = w.d3.zoomIdentity.translate(W / 2 - cx * scale, H / 2 - cy * scale).scale(scale);
+    w.d3.select(svgEl).transition().duration(FRAME_MS).call(w.zoomBehavior.transform, t);
+    return { framed: n, scale: scale, floored: floored };
+  }
+  // Every reveal path funnels through here so none can forget.
+  function frameSuffix() {
+    var f = frameNodes();
+    if (!f) { return ''; }
+    // The sim keeps moving nodes for about a second after a rebuild, so frame
+    // once now (never leave the user stranded) and again once it has settled --
+    // unless a newer command has taken the camera, which must always win.
+    var mine = ++frameToken;
+    setTimeout(function () { if (mine === frameToken) { frameNodes(); } }, RESETTLE_MS);
+    return f.floored ? '  |  centred at minimum zoom (say "fit" to see them all)' : '  |  centred';
+  }
+
   // ---- section 9: the LIVE coverage audit --------------------------------
   //
   // The north star ("anything a user would ordinarily do can be said") is only
@@ -2351,9 +2447,12 @@ var VoiceGuide = (function() {
     try {
       switch (p.kind) {
         case 'filters':   return execFilters(p);
-        case 'selection': return execMut('selection', function () { if (p.action === 'open') { call('openNodeByLabel', p.label); } else { call('dismissRightPanel'); } }, p.action === 'open' ? ('opened ' + p.label) : 'closed panel');
-        case 'highlight': return execMut('highlight', function () { if (p.action === 'find') { pinPlainSearch(); setSearch(p.text); call('runSearch'); } else if (p.action === 'clear') { setSearch(''); call('runSearch'); } else { call('linkGroups', p.keys); } }, didHighlight(p));
-        case 'camera':    call('fitAll'); return show('fit', 'ok');   // camera not journaled in v1
+        case 'selection': return execMut('selection', function () { if (p.action === 'open') { call('openNodeByLabel', p.label); } else { call('dismissRightPanel'); } }, p.action === 'open' ? ('opened ' + p.label) : 'closed panel', p.action === 'open');
+        case 'highlight': return execMut('highlight', function () { if (p.action === 'find') { pinPlainSearch(); setSearch(p.text); call('runSearch'); } else if (p.action === 'clear') { setSearch(''); call('runSearch'); } else { call('linkGroups', p.keys); } }, didHighlight(p), p.action !== 'clear');
+        // Any explicit camera command must cancel a pending re-frame, or the
+        // settle timer lands after `fit` and silently undoes it (caught by the
+        // shell test: fit reported 891 nodes on screen instead of ~4000).
+        case 'camera':    frameToken++; call('fitAll'); return show('fit', 'ok');   // camera not journaled in v1
         case 'knob':      return execKnob(p);
         case 'shell':     return execShell(p);
         case 'journal':   return execJournal(p);
@@ -2363,11 +2462,14 @@ var VoiceGuide = (function() {
     } catch (e) { show(String(e && e.message || e), 'err'); }
   }
 
-  function execMut(dim, doIt, msg) {
+  function execMut(dim, doIt, msg, frame) {
     var before = readDim(dim);
     doIt();
     journal.record(TAB, { dim: dim, before: before, after: readDim(dim) });
-    show(msg, 'ok');
+    // `frame` is explicit: opening a node or running a search REVEALS
+    // something and must end centred; closing a panel or clearing a search
+    // reveals nothing, and moving the camera then would be gratuitous.
+    show(msg + (frame ? frameSuffix() : ''), 'ok');
   }
   function execFilters(p) {
     var before = readDim('filters');
@@ -2388,7 +2490,8 @@ var VoiceGuide = (function() {
     // something, and "0 nodes in view" is the honest answer to that.
     var n = nodesShown();
     var head = (n && n.shown === 0 && p.action !== 'none') ? 'nothing matched -- 0 nodes shown. ' : '';
-    var res = show(head + p.action + ' -> ' + on.length + ' groups on: ' + on.join(', ') + viewSuffix() + extra, 'ok');
+    var framed = frameSuffix();
+    var res = show(head + p.action + ' -> ' + on.length + ' groups on: ' + on.join(', ') + viewSuffix() + framed + extra, 'ok');
     // The counts ride on the RESULT OBJECT too, not only inside the prose, so
     // the voice tool output can carry them as data the model must relay. A
     // spoken confirmation should never be able to outrun the render.
@@ -2418,10 +2521,10 @@ var VoiceGuide = (function() {
     if (p.action === 'back') { if (lastTabBtn) { lastTabBtn.click(); lastTabBtn = null; return show('back', 'ok'); } return show('nothing to go back to', 'err'); }
   }
   function execJournal(p) {
-    if (p.action === 'undo') { var u = journal.undo(TAB); if (!u) { return show('nothing to undo', 'err'); } writeDim(u.dim, u.value); return show('undid (' + u.dim + ')', 'ok'); }
-    if (p.action === 'redo') { var r = journal.redo(TAB); if (!r) { return show('nothing to redo', 'err'); } writeDim(r.dim, r.value); return show('redid (' + r.dim + ')', 'ok'); }
+    if (p.action === 'undo') { var u = journal.undo(TAB); if (!u) { return show('nothing to undo', 'err'); } writeDim(u.dim, u.value); return show('undid (' + u.dim + ')' + frameSuffix(), 'ok'); }
+    if (p.action === 'redo') { var r = journal.redo(TAB); if (!r) { return show('nothing to redo', 'err'); } writeDim(r.dim, r.value); return show('redid (' + r.dim + ')' + frameSuffix(), 'ok'); }
     if (bootFilters === null) { return show('nothing captured to ' + p.action + ' yet', 'err'); }
-    writeDim('filters', bootFilters); return show(p.action + ' -> boot filters', 'ok');   // reset/restore (v1: filters only)
+    writeDim('filters', bootFilters); return show(p.action + ' -> boot filters' + frameSuffix(), 'ok');   // reset/restore (v1: filters only)
   }
   function execRead(p) {
     if (p.action === 'help') { return show('verbs: only/show/hide/all/none, open/close, find/clear/focus, fit, go/back, undo/redo, what', 'ok'); }

@@ -331,6 +331,53 @@ function nodesShown(page) {
   );
 }
 
+
+// IN VIEW is the camera's number -- how many of the shown nodes are actually on
+// screen. Nothing ever asserted it, which is how a reveal could leave every
+// matching node off-screen and still pass. Framing animates, so reads are taken
+// until two agree.
+function inViewCount(page) {
+  return page.eval(
+    IFRAME_DOC +
+    "var el = d && d.getElementById('graph-status');" +
+    "if (!el) { return null; }" +
+    "var m = /([0-9,]+)\\s+in view/.exec(el.textContent || '');" +
+    "return m ? parseInt(m[1].replace(/,/g, ''), 10) : null;"
+  );
+}
+async function settledInView(page) {
+  // Framing animates (400ms) and then re-frames once the force sim settles
+  // (~900ms), so an early "two reads agree" can latch onto a mid-transition
+  // value -- it read 0 while the camera was still travelling through empty
+  // space. Wait out both stages before looking for stability.
+  await sleep(1600);
+  let prev = await inViewCount(page);
+  for (let i = 0; i < 20; i++) {
+    await sleep(150);
+    const now = await inViewCount(page);
+    if (now === prev) { return now; }
+    prev = now;
+  }
+  return prev;
+}
+// Shove the camera far away, so a reveal that does not reframe leaves the user
+// staring at empty space -- the exact condition that produced "you said it was
+// showing and I could see nothing".
+async function derangeCamera(page) {
+  // Let any pending settle re-frame from the previous command fire first,
+  // otherwise it lands mid-test and undoes the derangement.
+  await sleep(1400);
+  return page.eval(
+    IFRAME_DOC +
+    "var svg = d.getElementById('graph-svg');" +
+    // Dispatch a real mousedown first: this stands in for the user grabbing the
+    // graph, and asserts the contract that a manual camera move cancels any
+    // pending settle re-frame instead of being yanked back a moment later.
+    "w.d3.select(svg).call(w.zoomBehavior.transform, w.d3.zoomIdentity.translate(-9000, -9000).scale(3));" +
+    "return true;"
+  );
+}
+
 function onGroupCount(page) {
   return page.eval(
     IFRAME_DOC +
@@ -412,6 +459,10 @@ async function row(page, name, cmd, expect) {
   if (expect.shown !== undefined && !expect.shown(r.shown)) {
     problems.push('result.shown=' + r.shown + ' (the value the voice tool forwards) failed its check');
   }
+  if (expect.inView !== undefined) {
+    const iv = await settledInView(page);
+    if (!expect.inView(iv)) { problems.push('ON SCREEN nodes-in-view=' + iv + ' failed its check'); }
+  }
   if (expect.view !== undefined) {
     const v = await nodesShown(page);
     if (!expect.view(v)) { problems.push('RENDERED nodes-shown=' + v + ' failed its check'); }
@@ -457,13 +508,44 @@ async function main() {
   await assertManifest(page, 'sociogram', SOCIOGRAM_SRC);
   await auditTab(page, 'sociogram', 21, 3);
   const bootGroups = await onGroupCount(page);
-  await row(page, 'A1 only levin friston -> 2 groups AND nodes actually on screen', 'only levin friston',
-    { ok: true, spoken: /-> 2 groups on/, groups: function (n) { return n === 2; }, view: function (v) { return v > 0; } });
+  await row(page, 'A1 only levin friston -> 2 groups, shown, AND on screen', 'only levin friston',
+    { ok: true, spoken: /-> 2 groups on/, groups: function (n) { return n === 2; },
+      view: function (v) { return v > 0; }, inView: function (v) { return v === 4; } });
+  // The invariant, tested where it actually broke: move the camera into empty
+  // space first. Without auto-framing this row reads 0 nodes on screen while
+  // every other assertion in the suite still passes.
   // The 2026-07-25 regression: 'architecture' is both a group and a section
   // parent. Asserting the RENDER is the whole point -- the old code passed a
   // groups-on assertion while showing an empty graph.
   await row(page, 'A2 undo -> boot filter set restored', 'undo',
     { ok: true, spoken: /undid \(filters\)/, groups: function (n) { return n === bootGroups; } });
+  // The invariant, tested where it actually broke: shove the camera into empty
+  // space first. Without auto-framing this row reads 0 nodes on screen while
+  // every other assertion in the suite still passes.
+  await derangeCamera(page);
+  const stranded = await settledInView(page);
+  record('A2a precondition: the camera really was stranded', stranded === 0, 'in-view before the reveal was ' + stranded);
+  await row(page, 'A2a a reveal reframes a camera left in empty space', 'only levin friston',
+    { ok: true, spoken: /centred/, inView: function (v) { return v === 4; } });
+  await row(page, 'A2a2 undo again, back to boot', 'undo',
+    { ok: true, groups: function (n) { return n === bootGroups; } });
+  // The other half of the contract: a camera the USER moved must stay moved.
+  // A settle re-frame that lands after a manual zoom reads as the view having
+  // a mind of its own.
+  await row(page, 'A2a3 reveal, then the user zooms', 'only levin friston', { ok: true });
+  const afterWheel = await page.eval(
+    IFRAME_DOC +
+    "var svg = d.getElementById('graph-svg');" +
+    "svg.dispatchEvent(new WheelEvent('wheel', { deltaY: -240, bubbles: true, clientX: 400, clientY: 300 }));" +
+    "return (d.querySelector('#graph-svg g') || {}).getAttribute ? d.querySelector('#graph-svg g').getAttribute('transform') : null;"
+  );
+  await sleep(1600);
+  const afterSettle = await page.eval(
+    IFRAME_DOC + "var g = d.querySelector('#graph-svg g'); return g ? g.getAttribute('transform') : null;"
+  );
+  record('A2a3 a user zoom is not undone by the settle re-frame',
+    afterWheel !== null && afterWheel === afterSettle,
+    afterWheel === afterSettle ? 'camera held at the user position' : ('camera moved: ' + afterWheel + ' -> ' + afterSettle));
   // The 2026-07-25 regression: 'architecture' is BOTH a group and a section
   // parent. These rows assert the RENDER, which is the whole point -- the old
   // code passed a groups-on assertion while showing an empty graph.
@@ -476,7 +558,10 @@ async function main() {
     { ok: true, spoken: /0 of \d+ nodes shown/, view: function (v) { return v === 0; }, shown: function (n) { return n === 0; } });
   await row(page, 'A2e all -> the whole graph is back', 'all',
     { ok: true, view: function (v) { return v > 4000; } });
-  await row(page, 'A3 fit', 'fit', { ok: true, spoken: /^fit$/ });
+  // `fit` is the deliberate escape hatch from the legibility floor: it means
+  // "show everything, however small", so it must NOT be floored.
+  await row(page, 'A3 fit -> unfloored, the whole graph on screen', 'fit',
+    { ok: true, spoken: /^fit$/, inView: function (v) { return v > 3900; } });
   await row(page, 'A4 what -> names the live view', 'what', { ok: true, spoken: /view: Sociogram/ });
   const shotA = await page.screenshot(path.join(SHOTS, 'A-sociogram.png'));
 
