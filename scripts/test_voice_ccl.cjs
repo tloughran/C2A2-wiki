@@ -649,6 +649,45 @@ check('groups: hide is symmetric with show over the same expansion', function ()
   assert.deepStrictEqual(shown, hidden, 'show and hide must expand identically or symmetry is a lie');
 });
 
+// ---- gestures: the surface the DOM sweep cannot see -------------------------
+//
+// Zoom, pan, drag and hover have no element, so auditCoverage is blind to them
+// and reported "0 uncovered" on the Sociogram while zoom/pan were unreachable
+// (2026-07-25). Since they cannot be discovered, the gate checks the honesty of
+// the declaration -- above all, that a gesture claiming coverage names a verb
+// the tab actually has.
+
+check('gestures: a tab declaring none FAILS -- silence is not completeness', function () {
+  assert.strictEqual(CCL.auditGestures([], ['fit']).ok, false);
+  assert.strictEqual(CCL.auditGestures(undefined, ['fit']).ok, false);
+});
+check('gestures: covered must name a verb the tab ACTUALLY supports', function () {
+  const bad = CCL.auditGestures([{ id: 'zoom', status: 'covered', by: ['zoom'] }], ['fit', 'only']);
+  assert.strictEqual(bad.ok, false);
+  assert.ok(/claims verb "zoom"/.test(bad.problems[0]), bad.problems[0]);
+  assert.strictEqual(CCL.auditGestures([{ id: 'zoom', status: 'covered', by: ['fit'] }], ['fit']).ok, true);
+});
+check('gestures: covered with no verb named is a failure, not a pass', function () {
+  assert.strictEqual(CCL.auditGestures([{ id: 'zoom', status: 'covered', by: [] }], ['fit']).ok, false);
+});
+check('gestures: deferred needs an increment, excluded needs a reason', function () {
+  assert.strictEqual(CCL.auditGestures([{ id: 'pan', status: 'deferred' }], []).ok, false);
+  assert.strictEqual(CCL.auditGestures([{ id: 'pan', status: 'deferred', planned: 'inc 5' }], []).ok, true);
+  assert.strictEqual(CCL.auditGestures([{ id: 'hover', status: 'excluded' }], []).ok, false);
+  assert.strictEqual(CCL.auditGestures([{ id: 'hover', status: 'excluded', reason: 'transient' }], []).ok, true);
+});
+check('gestures: an unknown status is rejected rather than counted', function () {
+  const r = CCL.auditGestures([{ id: 'x', status: 'probably fine' }], []);
+  assert.strictEqual(r.ok, false);
+});
+check('gestures: every declared tab passes its own gate', function () {
+  for (const key of Object.keys(MANIFEST.tabs)) {
+    const t = MANIFEST.tabs[key];
+    const r = CCL.auditGestures(t.gestures, t.caps);
+    assert.strictEqual(r.ok, true, key + ' gestures: ' + r.problems.join(' | '));
+  }
+});
+
 // ---- report -----------------------------------------------------------------
 
 if (failures.length) {

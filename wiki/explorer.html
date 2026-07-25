@@ -2124,7 +2124,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=ce431c1738"></script>
+<script src="lib/c2a2-commandline.js?v=b6d2f671b4"></script>
 <script>
 (function () {
   'use strict';
@@ -2291,14 +2291,19 @@ var VoiceGuide = (function() {
       else if (matchAny(el, defrSel)) { deferred.push(key); }
     });
     var r = CL.auditCoverage(declared, liveKeys, excluded.concat(deferred));
+    // Gestures cannot be swept -- they have no element. The gate verifies the
+    // DECLARATION instead (see auditGestures): a tab that declares nothing
+    // fails, and a gesture claiming coverage by a verb the tab lacks fails.
+    var g = CL.auditGestures(m.gestures, m.caps);
     // A knob bound to a selector that no longer exists is the OTHER drift
     // direction: the manifest promises a control the tab has dropped.
     var staleBinds = binds.filter(function (sel) { return !d.querySelector(sel); });
     return {
-      ok: r.ok && staleBinds.length === 0,
+      ok: r.ok && staleBinds.length === 0 && g.ok,
       tab: am.key, total: liveKeys.length,
       covered: declared.length, excluded: excluded.length,
-      uncovered: r.unbound, deferred: deferred, staleBinds: staleBinds, live: liveKeys
+      uncovered: r.unbound, deferred: deferred, staleBinds: staleBinds, live: liveKeys,
+      gestures: g.counts, gestureProblems: g.problems
     };
   };
 
@@ -2466,9 +2471,12 @@ var VoiceGuide = (function() {
       setTimeout(function () {
         var a = window.CCLAudit();
         if (a.error) { return show('audit: ' + a.error, 'err'); }
+        var gc = a.gestures || {};
         show('audit ' + a.tab + ': ' + a.total + ' controls / ' + a.covered + ' covered / ' + a.excluded +
-             ' excluded / ' + a.deferred.length + ' deferred / ' + a.uncovered.length + ' UNCOVERED',
-             a.uncovered.length ? 'err' : 'ok');
+             ' excluded / ' + a.deferred.length + ' deferred / ' + a.uncovered.length + ' UNCOVERED' +
+             '  ||  gestures: ' + (gc.covered || 0) + ' covered / ' + (gc.deferred || 0) + ' deferred / ' +
+             (gc.excluded || 0) + ' excluded' + (a.gestureProblems.length ? ' / ' + a.gestureProblems.length + ' PROBLEMS' : ''),
+             (a.uncovered.length || a.gestureProblems.length) ? 'err' : 'ok');
         if (window.console) { console.log('[CCL audit]', a); }
       }, 1500);
     });

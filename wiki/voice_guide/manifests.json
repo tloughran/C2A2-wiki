@@ -1,5 +1,5 @@
 {
-  "_about": "Per-tab CCL manifests (voice_guide_redesign.md sections 3, 8, 9). Each tab declares its supported verbs (caps) and its knob dimensions with a DOM binding + spoken aliases. Consumed by BOTH the shell (explorer.html builds the active tab's ctx from this) and the coverage audit (every live interactive control on a tab must be a bound knob or an explicit exclusion -- unbound control => loud pre-push failure, section 9). Adding a T1 tab is ONE entry here plus a knowledge default file -- never a new tool, prompt, or session-schema change. Knob `values[].v` are the real DOM option values (NOT their display labels); `aka` are the spoken forms a user would say. A knob carries `aka` too, because the word PRINTED on a control is not always its id -- metabolism's `metric` select is labelled Amplitude on screen, so `label` must mirror the live UI text and `aka` must cover what a user would actually say. Knob names and aliases MUST be single tokens: the parser takes `set <knob> <value...>` and reads the knob as the first word, so a two-word alias is unparseable, not merely unmatched. Keys beginning with _ are documentation and ignored by consumers.",
+  "_about": "Per-tab CCL manifests (voice_guide_redesign.md sections 3, 8, 9). Each tab declares its supported verbs (caps) and its knob dimensions with a DOM binding + spoken aliases. Consumed by BOTH the shell (explorer.html builds the active tab's ctx from this) and the coverage audit (every live interactive control on a tab must be a bound knob or an explicit exclusion -- unbound control => loud pre-push failure, section 9). Adding a T1 tab is ONE entry here plus a knowledge default file -- never a new tool, prompt, or session-schema change. Knob `values[].v` are the real DOM option values (NOT their display labels); `aka` are the spoken forms a user would say. A knob carries `aka` too, because the word PRINTED on a control is not always its id -- metabolism's `metric` select is labelled Amplitude on screen, so `label` must mirror the live UI text and `aka` must cover what a user would actually say. Knob names and aliases MUST be single tokens: the parser takes `set <knob> <value...>` and reads the knob as the first word, so a two-word alias is unparseable, not merely unmatched. Keys beginning with _ are documentation and ignored by consumers. GESTURES: each tab must also declare its non-DOM interaction surface (zoom, pan, drag, click, hover) -- the runtime sweep enumerates ELEMENTS and is structurally blind to gestures, so they are declared and the gate checks the declaration is honest: `covered` must name verbs the tab actually has in caps, `deferred` must name its increment, `excluded` must give a reason, and a tab declaring nothing FAILS (silence is not a completeness claim).",
   "version": "1",
   "tabs": {
     "sociogram": {
@@ -133,7 +133,51 @@
           "planned": "increment 5"
         }
       ],
-      "_coverage_note": "Authored 2026-07-25 from the LIVE runtime sweep (window.CCLAudit), not from reading the HTML -- 84 interactive controls, of which the static file shows only a fraction (the 32 group checkboxes are innerHTML written at boot). THREE categories on purpose: dim_coverage = reachable today; controls_excluded = outside the voice surface with a reason; controls_deferred = IN scope and NOT yet reachable -- a real north-star gap, reported loudly by the audit and asserted exactly by scripts/test_voice_shell.cjs so new controls cannot quietly join the list. Deferred is not a synonym for excluded; collapsing the two is how this gate would rot."
+      "_coverage_note": "Authored 2026-07-25 from the LIVE runtime sweep (window.CCLAudit), not from reading the HTML -- 84 interactive controls, of which the static file shows only a fraction (the 32 group checkboxes are innerHTML written at boot). THREE categories on purpose: dim_coverage = reachable today; controls_excluded = outside the voice surface with a reason; controls_deferred = IN scope and NOT yet reachable -- a real north-star gap, reported loudly by the audit and asserted exactly by scripts/test_voice_shell.cjs so new controls cannot quietly join the list. Deferred is not a synonym for excluded; collapsing the two is how this gate would rot.",
+      "gestures": [
+        {
+          "id": "zoom",
+          "label": "Zoom (wheel / pinch / trackpad)",
+          "status": "deferred",
+          "planned": "increment 4b -- zoom in/out verbs over the graph's own zoomBehavior",
+          "note": "`fit` reaches the zoom-to-everything case only; there is no way to say 'zoom in'."
+        },
+        {
+          "id": "pan",
+          "label": "Pan (drag the background)",
+          "status": "deferred",
+          "planned": "increment 4b -- auto-frame on reveal removes most of the need; an explicit centre verb is the remainder",
+          "note": "Until auto-framing lands, a reveal can leave the revealed nodes off-screen entirely."
+        },
+        {
+          "id": "node_click",
+          "label": "Click a node (open its article)",
+          "status": "covered",
+          "by": [
+            "open",
+            "close"
+          ]
+        },
+        {
+          "id": "edge_click",
+          "label": "Click an edge (open both endpoints)",
+          "status": "deferred",
+          "planned": "increment 5 -- id-addressable edge open (closes F5)",
+          "note": "Edges have no addressable id in the current artifact, so voice cannot name one."
+        },
+        {
+          "id": "node_drag",
+          "label": "Drag a node",
+          "status": "excluded",
+          "reason": "nudges the force layout, which re-settles; a transient position is not view state (same tier rule as zoom/brightness in section 14.4)"
+        },
+        {
+          "id": "hover",
+          "label": "Hover a node or edge",
+          "status": "excluded",
+          "reason": "transient tooltip; leaves no state to read back, so there is nothing for write-returns-the-read to report"
+        }
+      ]
     },
     "metabolism": {
       "aka": [
@@ -372,7 +416,15 @@
         }
       ],
       "controls_excluded": [],
-      "_controls_note": "The 4 knobs above are the tab's ENTIRE interactive surface, confirmed 2026-07-25 by the live runtime sweep (window.CCLAudit: total 4, covered 4, uncovered 0) -- this replaces the earlier static read of metabolism_view.html, which was the static-HTML gate redesign section 14.8 forbids."
+      "_controls_note": "The 4 knobs above are the tab's ENTIRE interactive surface, confirmed 2026-07-25 by the live runtime sweep (window.CCLAudit: total 4, covered 4, uncovered 0) -- this replaces the earlier static read of metabolism_view.html, which was the static-HTML gate redesign section 14.8 forbids.",
+      "gestures": [
+        {
+          "id": "hover",
+          "label": "Hover a run marker",
+          "status": "excluded",
+          "reason": "transient tooltip over the raster; no persistent state"
+        }
+      ]
     }
   }
 }

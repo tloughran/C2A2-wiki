@@ -346,6 +346,50 @@
     return { ok: unbound.length === 0, unbound: unbound, missing: missing };
   }
 
+  // Gestures: the half of the surface the DOM sweep is structurally blind to.
+  //
+  // Zoom, pan, node-drag and hover are things a user DOES to the graph with no
+  // control element behind them, so auditCoverage -- which enumerates live
+  // elements -- reported "0 uncovered" on the Sociogram while an entire
+  // interaction modality was unreachable by voice (2026-07-25, Tom asked to
+  // zoom and center and there was nothing to call). Gestures cannot be
+  // discovered at runtime; they can only be DECLARED. So the gate's job is to
+  // verify the declaration is honest rather than to find them:
+  //   - every gesture carries a status (covered | deferred | excluded)
+  //   - `covered` must name verbs the tab ACTUALLY has in caps -- claiming
+  //     coverage by a verb that does not exist is the exact failure this
+  //     catches, and is invisible to any other check
+  //   - `deferred` must name the increment that closes it; `excluded` a reason
+  //   - a tab with NO declaration fails: silence is not a claim of completeness
+  const GESTURE_STATUS = ['covered', 'deferred', 'excluded'];
+
+  function auditGestures(gestures, caps) {
+    caps = caps || [];
+    const problems = [];
+    if (!gestures || !gestures.length) {
+      return { ok: false, problems: ['no gestures declared -- a tab must state its non-DOM surface, even if only to say there is none'], counts: {} };
+    }
+    const counts = { covered: 0, deferred: 0, excluded: 0 };
+    gestures.forEach(function (g) {
+      const id = (g && g.id) || '(unnamed)';
+      if (!g || GESTURE_STATUS.indexOf(g.status) === -1) {
+        problems.push(id + ': status must be one of ' + GESTURE_STATUS.join('/'));
+        return;
+      }
+      counts[g.status]++;
+      if (g.status === 'covered') {
+        const by = g.by || [];
+        if (!by.length) { problems.push(id + ': marked covered but names no verb'); }
+        by.forEach(function (v) {
+          if (caps.indexOf(v) === -1) { problems.push(id + ': claims verb "' + v + '" which this tab does not support'); }
+        });
+      }
+      if (g.status === 'deferred' && !g.planned) { problems.push(id + ': deferred with no increment named'); }
+      if (g.status === 'excluded' && !g.reason) { problems.push(id + ': excluded with no reason'); }
+    });
+    return { ok: problems.length === 0, problems: problems, counts: counts };
+  }
+
   // ---- the journal ---------------------------------------------------------
   //
   // Per-tab undo/redo over ABSOLUTE vectors {dim, before, after} (redesign
@@ -536,6 +580,7 @@
     resolveKnobValue: resolveKnobValue,
     resolveKnob: resolveKnob,
     auditCoverage: auditCoverage,
+    auditGestures: auditGestures,
     createJournal: createJournal,
     plan: plan,
     SOCIOGRAM_CAPS: SOCIOGRAM_CAPS,
