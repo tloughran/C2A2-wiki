@@ -533,6 +533,12 @@
   // v1 Sociogram support set. zoom/set/read/ask are deliberately absent -- they
   // resolve to unsupported_here (spoken plainly) until a later increment or
   // Tom's gate promotes them (section 10, 13, 16). Promote by adding here.
+  // What a view with no manifest can honestly do: move and be asked about.
+  // The shell used to fall back to SOCIOGRAM_CAPS on an unmapped page, so a
+  // chapter page advertised filtering it cannot perform -- the same class of
+  // dishonesty as reporting state the screen does not support.
+  const SHELL_CAPS = ['go', 'back', 'what', 'where', 'help'];
+
   const SOCIOGRAM_CAPS = [
     'go', 'back',
     'show', 'hide', 'only', 'all', 'none',
@@ -576,8 +582,17 @@
 
     switch (op.verb) {
       case 'go': {
+        // Ordering rides on the verb we already have. The tabs ARE arranged
+        // left-to-right on screen and a voice user cannot see that, so it has
+        // to be sayable: "go next" walks the row in its visible order.
+        const step = low(op.args[0]);
+        if (step === 'next' || step === 'previous' || step === 'first' || step === 'last') {
+          return { ok: true, kind: 'shell', action: 'stepTab', dir: step, journal: { dim: 'tab' } };
+        }
         const r = resolveTab(op.args[0], ctx.tabs);
-        if (!r.ok) { return r; }
+        // Carry the verb so the shell can answer "which tabs, then?" -- an
+        // unknown tab fails in the RESOLVER, never reaching the dispatcher.
+        if (!r.ok) { r.verb = 'go'; return r; }
         return { ok: true, kind: 'shell', action: 'switchTab', tab: r.id, label: r.label, journal: { dim: 'tab' } };
       }
       case 'back':
@@ -701,5 +716,6 @@
     createJournal: createJournal,
     plan: plan,
     SOCIOGRAM_CAPS: SOCIOGRAM_CAPS,
+    SHELL_CAPS: SHELL_CAPS,
   };
 });

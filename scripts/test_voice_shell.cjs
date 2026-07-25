@@ -754,6 +754,32 @@ async function main() {
 
   await stampGate();
 
+  // ---- Phase D: chapter pages and moving around -----------------------------
+  //
+  // Nothing had ever exercised a CHAPTER page. Two defects lived there: every
+  // chapter button was unreachable by name (its two spans concatenate to
+  // "CommunityExplorer", with no space, so the resolver's "community explorer"
+  // never matched), and an unmapped view fell back to SOCIOGRAM caps -- so a
+  // chapter page advertised filtering it cannot do.
+  process.stdout.write('\nPhase D -- chapter pages, tab order, honest caps\n');
+  await page.eval("var b = document.getElementById('chap-intro'); if (b) { b.click(); } return true;");
+  await sleep(2500);
+  await row(page, 'D1 go community explorer -> reachable BY NAME from a chapter page', 'go community explorer',
+    { ok: true, spoken: /go community explorer/i });
+  await sleep(2500);
+  await row(page, 'D2 what -> names the view and its position in the row', 'what',
+    { ok: true, spoken: /\(\d+ of \d+, left to right\)/ });
+  await row(page, 'D3 only levin -> unsupported here, NOT a Sociogram pretence', 'only levin',
+    { ok: false, spoken: /Not available on this view/ });
+  await row(page, 'D4 go banana -> names what IS reachable', 'go banana',
+    { ok: false, spoken: /no tab called "banana"\. Here: .+/ });
+  await row(page, 'D5 go first -> jump to the start of the visible row', 'go first', { ok: true, spoken: /1 of \d+/ });
+  await sleep(2000);
+  await row(page, 'D6 go next -> walk it left to right', 'go next', { ok: true, spoken: /2 of \d+/ });
+  await sleep(2000);
+  await row(page, 'D7 go previous -> and back', 'go previous', { ok: true, spoken: /1 of \d+/ });
+  const shotD = await page.screenshot(path.join(SHOTS, 'D-chapter.png'));
+
   // ---- report ----
   const failed = results.filter(function (r) { return !r.ok; });
   process.stdout.write('\n' + '-'.repeat(70) + '\n');
@@ -761,7 +787,7 @@ async function main() {
   process.stdout.write('page exceptions: ' + page.exceptions.length + '   console errors: ' + page.consoleErrors.length + '\n');
   page.exceptions.forEach(function (e) { process.stdout.write('  EXCEPTION  ' + e.split('\n')[0] + '\n'); });
   page.consoleErrors.forEach(function (e) { process.stdout.write('  CONSOLE    ' + e.slice(0, 200) + '\n'); });
-  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC].join('\n  ') + '\n');
+  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC, shotD].join('\n  ') + '\n');
 
   const clean = failed.length === 0 && page.exceptions.length === 0 && page.consoleErrors.length === 0;
   process.stdout.write(clean ? '\nSHELL TEST GREEN\n' : '\nSHELL TEST RED\n');
