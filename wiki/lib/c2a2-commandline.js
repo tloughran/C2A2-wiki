@@ -185,9 +185,17 @@
     roster = roster || [];
 
     const section = roster.filter(function (k) { return low(k).indexOf(t + '/') === 0; });
-    if (section.length) { return { ok: true, keys: section, section: true, term: term }; }
-
     const exact = roster.filter(function (k) { return low(k) === t || low(leaf(k)) === t; });
+
+    // A key can be BOTH a group and a section parent: 'architecture' holds the
+    // architecture files AND owns 'architecture/changelog'. Returning only the
+    // children silently dropped the parent, so "show architecture" turned on
+    // the changelog, reported a groups-on count that sounded like success, and
+    // rendered zero architecture nodes. A term naming both means both.
+    if (section.length) {
+      const keys = exact.concat(section.filter(function (k) { return exact.indexOf(k) === -1; }));
+      return { ok: true, keys: keys, section: true, term: term };
+    }
     if (exact.length) { return { ok: true, keys: exact, term: term }; }
 
     const prefix = roster.filter(function (k) { return low(leaf(k)).indexOf(t) === 0; });

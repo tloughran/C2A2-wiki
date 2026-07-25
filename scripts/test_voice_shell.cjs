@@ -316,6 +316,20 @@ async function assertManifest(page, expectedTab, expectedSrc) {
   record('resolver -> ' + expectedTab, problems.length === 0, problems.join(' | ') || ('caps=' + (d.caps || []).length + ' knobs=' + JSON.stringify(d.knobs)));
 }
 
+// What the graph SHOWS, read off its own status line. Asserting this instead of
+// (only) the filter state is the difference between "the command ran" and "the
+// user can see what they asked for" -- the gap that let `only architecture`
+// report success over an empty graph.
+function nodesShown(page) {
+  return page.eval(
+    IFRAME_DOC +
+    "var el = d && d.getElementById('graph-status');" +
+    "if (!el) { return null; }" +
+    "var m = /([0-9,]+)\\s*\\/\\s*([0-9,]+)\\s+nodes/.exec(el.textContent || '');" +
+    "return m ? parseInt(m[1].replace(/,/g, ''), 10) : null;"
+  );
+}
+
 function onGroupCount(page) {
   return page.eval(
     IFRAME_DOC +
@@ -382,6 +396,10 @@ async function row(page, name, cmd, expect) {
     const n = await onGroupCount(page);
     if (!expect.groups(n)) { problems.push('groups-on=' + n + ' failed its check'); }
   }
+  if (expect.view !== undefined) {
+    const v = await nodesShown(page);
+    if (!expect.view(v)) { problems.push('RENDERED nodes-shown=' + v + ' failed its check'); }
+  }
   record(name, problems.length === 0, problems.join(' | ') || (r.spoken || ''));
 }
 
@@ -423,10 +441,24 @@ async function main() {
   await assertManifest(page, 'sociogram', SOCIOGRAM_SRC);
   await auditTab(page, 'sociogram', 21);
   const bootGroups = await onGroupCount(page);
-  await row(page, 'A1 only levin friston -> exactly 2 groups', 'only levin friston',
-    { ok: true, spoken: /-> 2 groups on/, groups: function (n) { return n === 2; } });
+  await row(page, 'A1 only levin friston -> 2 groups AND nodes actually on screen', 'only levin friston',
+    { ok: true, spoken: /-> 2 groups on/, groups: function (n) { return n === 2; }, view: function (v) { return v > 0; } });
+  // The 2026-07-25 regression: 'architecture' is both a group and a section
+  // parent. Asserting the RENDER is the whole point -- the old code passed a
+  // groups-on assertion while showing an empty graph.
   await row(page, 'A2 undo -> boot filter set restored', 'undo',
     { ok: true, spoken: /undid \(filters\)/, groups: function (n) { return n === bootGroups; } });
+  // The 2026-07-25 regression: 'architecture' is BOTH a group and a section
+  // parent. These rows assert the RENDER, which is the whole point -- the old
+  // code passed a groups-on assertion while showing an empty graph.
+  await row(page, 'A2b only architecture -> parent group kept, nodes actually shown', 'only architecture',
+    { ok: true, spoken: /groups on: architecture, architecture\/changelog/, groups: function (n) { return n === 2; }, view: function (v) { return v > 0; } });
+  await row(page, 'A2c what -> the spoken answer carries the rendered count', 'what',
+    { ok: true, spoken: /nodes shown/ });
+  await row(page, 'A2d none -> an honest zero, stated plainly', 'none',
+    { ok: true, spoken: /0 of \d+ nodes shown/, view: function (v) { return v === 0; } });
+  await row(page, 'A2e all -> the whole graph is back', 'all',
+    { ok: true, view: function (v) { return v > 4000; } });
   await row(page, 'A3 fit', 'fit', { ok: true, spoken: /^fit$/ });
   await row(page, 'A4 what -> names the live view', 'what', { ok: true, spoken: /view: Sociogram/ });
   const shotA = await page.screenshot(path.join(SHOTS, 'A-sociogram.png'));

@@ -617,6 +617,38 @@ check('manifest: no alias collides across knobs on the same tab', function () {
   }
 });
 
+// ---- a key that is BOTH a group and a section parent ------------------------
+//
+// 'architecture' holds the architecture files AND owns 'architecture/changelog'.
+// The section-prefix branch used to short-circuit and return only the child, so
+// "show architecture" reported success and rendered nothing (2026-07-25, found
+// live by Tom -- not by any test, because every test asserted the filter STATE
+// the code had just written rather than what the graph showed).
+
+const PARENT_ROSTER = ['traditions/levin', 'master', 'architecture', 'architecture/changelog', 'flags'];
+
+check('groups: a parent-and-section key resolves to ITSELF plus its children', function () {
+  const r = CCL.resolveGroups('architecture', PARENT_ROSTER);
+  assert.strictEqual(r.ok, true);
+  assert.ok(r.keys.indexOf('architecture') !== -1, 'the parent group itself was dropped');
+  assert.ok(r.keys.indexOf('architecture/changelog') !== -1, 'the child section was dropped');
+});
+check('groups: the parent comes first, so the reported list reads naturally', function () {
+  assert.deepStrictEqual(CCL.resolveGroups('architecture', PARENT_ROSTER).keys,
+    ['architecture', 'architecture/changelog']);
+});
+check('groups: a pure section parent (no bare key) still expands to children only', function () {
+  assert.deepStrictEqual(CCL.resolveGroups('traditions', PARENT_ROSTER).keys, ['traditions/levin']);
+});
+check('groups: a leaf-only term is unaffected', function () {
+  assert.deepStrictEqual(CCL.resolveGroups('changelog', PARENT_ROSTER).keys, ['architecture/changelog']);
+});
+check('groups: hide is symmetric with show over the same expansion', function () {
+  const shown = CCL.resolveGroups('architecture', PARENT_ROSTER).keys;
+  const hidden = CCL.resolveGroups('architecture', PARENT_ROSTER).keys;
+  assert.deepStrictEqual(shown, hidden, 'show and hide must expand identically or symmetry is a lie');
+});
+
 // ---- report -----------------------------------------------------------------
 
 if (failures.length) {

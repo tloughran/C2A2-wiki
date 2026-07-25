@@ -2113,7 +2113,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=1a80955b2a"></script>
+<script src="lib/c2a2-commandline.js?v=ce431c1738"></script>
 <script>
 (function () {
   'use strict';
@@ -2153,6 +2153,23 @@ var VoiceGuide = (function() {
   }
   function roster() { var w = ifWin(); try { return w && w.groupVisibility ? Object.keys(w.groupVisibility) : []; } catch (e) { return []; } }
   function onGroups() { var gv = readDim('filters') || {}, on = []; for (var k in gv) { if (gv[k]) { on.push(k); } } return on; }
+  // The RENDERED truth, read back off the graph's own status line -- not the
+  // groupVisibility we just wrote. Reporting our own write is how "show
+  // architecture" could answer with a groups-on count that sounded like
+  // success while the graph showed zero nodes (2026-07-25, Tom). Filters get
+  // the same write-returns-the-READ contract the knobs already had.
+  // graph-status reads "<in view> in view . <shown> / <total> nodes". Report
+  // SHOWN, not in-view: in-view is a CAMERA count that changes with pan/zoom,
+  // so a correct filter could report a small number merely because the viewport
+  // was tight. Shown is what the filter actually produced.
+  function nodesShown() {
+    var d = ifDoc(), el = d && d.getElementById('graph-status');
+    if (!el) { return null; }
+    var m = /([\d,]+)\s*\/\s*([\d,]+)\s+nodes/.exec(el.textContent || '');
+    if (!m) { return null; }
+    return { shown: parseInt(m[1].replace(/,/g, ''), 10), total: parseInt(m[2].replace(/,/g, ''), 10) };
+  }
+  function viewSuffix() { var n = nodesShown(); return n === null ? '' : ('  |  ' + n.shown + ' of ' + n.total + ' nodes shown'); }
   function setSearch(v) { var d = ifDoc(), el = d && d.getElementById('search-input'); if (el) { el.value = v; } }
   // CCL find/clear are PLAIN highlight-search: never route through the Sociogram's
   // Ask-AI broker path (that is what the separate `ask` verb is for). Pin the
@@ -2350,7 +2367,12 @@ var VoiceGuide = (function() {
     }
     journal.record(TAB, { dim: 'filters', before: before, after: readDim('filters') });
     var on = onGroups(), extra = (p.unresolved && p.unresolved.length) ? ('  (unresolved: ' + p.unresolved.join(', ') + ')') : '';
-    show(p.action + ' -> ' + on.length + ' groups on: ' + on.join(', ') + extra, 'ok');
+    // Lead with what the graph SHOWS. An empty result is stated plainly rather
+    // than dressed as a successful filter change -- the user asked to see
+    // something, and "0 nodes in view" is the honest answer to that.
+    var n = nodesShown();
+    var head = (n && n.shown === 0 && p.action !== 'none') ? 'nothing matched -- 0 nodes shown. ' : '';
+    show(head + p.action + ' -> ' + on.length + ' groups on: ' + on.join(', ') + viewSuffix() + extra, 'ok');
   }
   // T1 knob set (fan-out, inc 4). Write-returns-read: re-read after writing so
   // the spoken answer reflects the tab's OWN interlocks (e.g. metabolism resets
@@ -2383,7 +2405,9 @@ var VoiceGuide = (function() {
   function execRead(p) {
     if (p.action === 'help') { return show('verbs: only/show/hide/all/none, open/close, find/clear/focus, fit, go/back, undo/redo, what', 'ok'); }
     var b = activeTabBtn(), name = b ? b.textContent.trim() : '(unknown)', on = onGroups();
-    show('view: ' + name + (on.length ? ('  |  filters on: ' + on.join(', ')) : '  |  (filters n/a here)'), 'ok');
+    // `what` is the question "am I looking at what I asked for?" -- so it must
+    // answer from the render, not from the filter state that produced it.
+    show('view: ' + name + (on.length ? ('  |  filters on: ' + on.join(', ')) : '  |  (filters n/a here)') + viewSuffix(), 'ok');
   }
 
   function didHighlight(p) { return p.action === 'find' ? ('find ' + p.text) : (p.action === 'focus' ? ('focus ' + p.keys.join(' ~ ')) : 'clear'); }
