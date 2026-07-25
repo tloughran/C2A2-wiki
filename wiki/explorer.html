@@ -1024,6 +1024,19 @@ var VoiceGuide = (function() {
   // never generates (the guide 'freezes' on questions needing a post-tool reply,
   // e.g. describe_view; switch_tab dodged it by speaking before the call).
   var _afterResponse = null;   // deferred page-reader start (see CCLDeferSpeak)
+  // Exposed unconditionally, NOT inside start(): the command layer must be able
+  // to call these whether or not a session is live. With no session there is no
+  // response to wait for and no mic to mute, so both degrade to no-ops.
+  window.CCLDeferSpeak = function (fn) {
+    if (!responseActive) { fn(); return; }   // nothing being said -> read now
+    _afterResponse = fn;                      // otherwise hand over on response.done
+  };
+  window.CCLSetMic = function (on) {
+    try {
+      if (!micStream || !micStream.getAudioTracks) { return; }
+      micStream.getAudioTracks().forEach(function (t) { t.enabled = !!on; });
+    } catch (e) { /* no session */ }
+  };
   var responseActive = false, pendingCreate = false, _pendCreateTimer = null, _hangTimer = null;
 
   // Diagnostic event log for the realtime voice loop. OFF unless the URL carries
@@ -2036,14 +2049,7 @@ var VoiceGuide = (function() {
       pc.addTrack(micStream.getAudioTracks()[0], micStream);
       // Let the command layer silence the mic while the PAGE is reading aloud.
       // Without this the live session hears the article and answers it.
-      window.CCLDeferSpeak = function (fn) {
-        // No live session, or nothing being said right now -> read immediately.
-        if (!responseActive) { fn(); return; }
-        _afterResponse = fn;
-      };
-      window.CCLSetMic = function (on) {
-        try { micStream.getAudioTracks().forEach(function (t) { t.enabled = !!on; }); } catch (e) { /* no session */ }
-      };
+
 
       dc = pc.createDataChannel('oai-events');
       dc.onopen = function() {
