@@ -2206,6 +2206,71 @@ var VoiceGuide = (function() {
     try { ev = new (w && w.Event || Event)('change', { bubbles: true }); el.dispatchEvent(ev); } catch (e) { /* older event ctor */ var e2 = d.createEvent('HTMLEvents'); e2.initEvent('change', true, false); el.dispatchEvent(e2); }
   }
 
+  // ---- section 9: the LIVE coverage audit --------------------------------
+  //
+  // The north star ("anything a user would ordinarily do can be said") is only
+  // a claim until something enumerates what a user can actually operate. That
+  // enumeration MUST be a runtime DOM sweep: the Sociogram's filter checkboxes
+  // exist only as innerHTML written at boot, so a static-HTML gate would report
+  // green forever -- worse than no gate (redesign section 14.8).
+  //
+  // A live control is covered when it is (a) a knob's bind, (b) matched by a
+  // declared dim_coverage selector -- how non-knob dims like `filters` cover
+  // many controls at once -- or (c) an explicit, reasoned exclusion. Anything
+  // else is UNCOVERED and fails loudly in scripts/test_voice_shell.cjs.
+  var CONTROL_SEL = 'select, input:not([type="hidden"]), textarea, button, ' +
+                    '[role="button"], [role="checkbox"], [role="switch"], [role="slider"], [contenteditable="true"]';
+  function controlKey(el) {
+    if (el.id) { return '#' + el.id; }
+    if (el.getAttribute('data-group')) { return '[data-group=' + el.getAttribute('data-group') + ']'; }
+    var label = (el.getAttribute('aria-label') || el.getAttribute('title') || el.value || el.textContent || '');
+    label = String(label).replace(/\s+/g, ' ').trim().slice(0, 28);
+    return el.tagName.toLowerCase() + (el.type ? '[' + el.type + ']' : '') + (label ? ':' + label : '');
+  }
+  function matchAny(el, sels) {
+    for (var i = 0; i < sels.length; i++) {
+      try { if (sels[i] && el.matches(sels[i])) { return sels[i]; } } catch (e) { /* bad selector -> report as unmatched */ }
+    }
+    return null;
+  }
+  window.CCLAudit = function () {
+    var am = activeManifest(), d = ifDoc();
+    if (!am) { return { ok: false, error: 'no manifest for the active tab', src: activeSrc() }; }
+    if (!d) { return { ok: false, error: 'no iframe document', tab: am.key }; }
+    var live = [].slice.call(d.querySelectorAll(CONTROL_SEL));
+    if (!live.length) { return { ok: false, error: 'no controls found -- tab not loaded?', tab: am.key }; }
+
+    var m = am.m;
+    var binds = (m.knobs || []).map(function (k) { return k.bind.select || k.bind.checkbox; });
+    var dimSel = (m.dim_coverage || []).map(function (c) { return c.match; });
+    var exclSel = (m.controls_excluded || []).map(function (c) { return typeof c === 'string' ? c : c.match; });
+    // DEFERRED is a third category, deliberately not a synonym for excluded:
+    // in scope, not yet reachable, with the increment that will fix it. It is
+    // reported loudly and asserted exactly by the shell test, so a control can
+    // never quietly join the list -- collapsing it into `excluded` is how a
+    // gate like this rots into permanent green.
+    var defrSel = (m.controls_deferred || []).map(function (c) { return typeof c === 'string' ? c : c.match; });
+
+    var liveKeys = [], declared = [], excluded = [], deferred = [];
+    live.forEach(function (el) {
+      var key = controlKey(el);
+      liveKeys.push(key);
+      if (matchAny(el, binds) || matchAny(el, dimSel)) { declared.push(key); }
+      else if (matchAny(el, exclSel)) { excluded.push(key); }
+      else if (matchAny(el, defrSel)) { deferred.push(key); }
+    });
+    var r = CL.auditCoverage(declared, liveKeys, excluded.concat(deferred));
+    // A knob bound to a selector that no longer exists is the OTHER drift
+    // direction: the manifest promises a control the tab has dropped.
+    var staleBinds = binds.filter(function (sel) { return !d.querySelector(sel); });
+    return {
+      ok: r.ok && staleBinds.length === 0,
+      tab: am.key, total: liveKeys.length,
+      covered: declared.length, excluded: excluded.length,
+      uncovered: r.unbound, deferred: deferred, staleBinds: staleBinds, live: liveKeys
+    };
+  };
+
   // ---- dim read/write (absolute-vector journal + write-returns-read) ----
   function readDim(dim) {
     var w = ifWin(), d = ifDoc();
@@ -2344,6 +2409,24 @@ var VoiceGuide = (function() {
   // Shared entry point: the voice guide's run_command routes spoken commands
   // through this SAME parse->plan->execute path (redesign section 2, one code path).
   window.CCLRun = run;
+  // `?audit=1` -- run the section-9 sweep on whatever tab is open and report it
+  // in the command bar (full detail to the console). Costs nothing: no realtime
+  // session, no broker call. The AUTHORITY is scripts/test_voice_shell.cjs,
+  // which fails a build; this is just the human-readable view of the same call,
+  // and it deliberately does NOT live in the voice debug panel -- building that
+  // panel requires a live billed session, so the check would cost money to look at.
+  if (/[?&]audit=1/.test(location.search)) {
+    document.getElementById('content-frame').addEventListener('load', function () {
+      setTimeout(function () {
+        var a = window.CCLAudit();
+        if (a.error) { return show('audit: ' + a.error, 'err'); }
+        show('audit ' + a.tab + ': ' + a.total + ' controls / ' + a.covered + ' covered / ' + a.excluded +
+             ' excluded / ' + a.deferred.length + ' deferred / ' + a.uncovered.length + ' UNCOVERED',
+             a.uncovered.length ? 'err' : 'ok');
+        if (window.console) { console.log('[CCL audit]', a); }
+      }, 1500);
+    });
+  }
   // Resolver introspection for the headless shell test (scripts/test_voice_shell.cjs):
   // which manifest the ACTIVE tab resolved to, and the caps that follow from it.
   // Read-only, no side effects -- the section-9 coverage audit consumes it too.

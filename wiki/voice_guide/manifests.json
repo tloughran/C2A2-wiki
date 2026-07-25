@@ -1,76 +1,378 @@
 {
-  "_about": "Per-tab CCL manifests (voice_guide_redesign.md sections 3, 8, 9). Each tab declares its supported verbs (caps) and its knob dimensions with a DOM binding + spoken aliases. Consumed by BOTH the shell (explorer.html builds the active tab's ctx from this) and the coverage audit (every live interactive control on a tab must be a bound knob or an explicit exclusion -- unbound control => loud pre-push failure, section 9). Adding a T1 tab is ONE entry here plus a knowledge default file -- never a new tool, prompt, or session-schema change. Knob `values[].v` are the real DOM option values (NOT their display labels); `aka` are the spoken forms a user would say. Keys beginning with _ are documentation and ignored by consumers.",
+  "_about": "Per-tab CCL manifests (voice_guide_redesign.md sections 3, 8, 9). Each tab declares its supported verbs (caps) and its knob dimensions with a DOM binding + spoken aliases. Consumed by BOTH the shell (explorer.html builds the active tab's ctx from this) and the coverage audit (every live interactive control on a tab must be a bound knob or an explicit exclusion -- unbound control => loud pre-push failure, section 9). Adding a T1 tab is ONE entry here plus a knowledge default file -- never a new tool, prompt, or session-schema change. Knob `values[].v` are the real DOM option values (NOT their display labels); `aka` are the spoken forms a user would say. A knob carries `aka` too, because the word PRINTED on a control is not always its id -- metabolism's `metric` select is labelled Amplitude on screen, so `label` must mirror the live UI text and `aka` must cover what a user would actually say. Knob names and aliases MUST be single tokens: the parser takes `set <knob> <value...>` and reads the knob as the first word, so a two-word alias is unparseable, not merely unmatched. Keys beginning with _ are documentation and ignored by consumers.",
   "version": "1",
-
   "tabs": {
     "sociogram": {
-      "aka": ["sociogram", "graph", "map", "wiki_narration"],
+      "aka": [
+        "sociogram",
+        "graph",
+        "map",
+        "wiki_narration"
+      ],
       "tier": "T3",
-      "caps": ["go", "back", "show", "hide", "only", "all", "none", "open", "close", "find", "clear", "focus", "fit", "undo", "redo", "reset", "restore", "what", "where", "help"],
+      "caps": [
+        "go",
+        "back",
+        "show",
+        "hide",
+        "only",
+        "all",
+        "none",
+        "open",
+        "close",
+        "find",
+        "clear",
+        "focus",
+        "fit",
+        "undo",
+        "redo",
+        "reset",
+        "restore",
+        "what",
+        "where",
+        "help"
+      ],
       "knobs": [],
-      "_knobs_note": "Sociogram's affordances are filters/selection/highlight/camera (their own dim kinds, not `set` knobs). It carries no `set` verb in v1. Listed here so the shell can read one uniform per-tab source; its caps mirror the engine's SOCIOGRAM_CAPS until step 2 migrates the shell to read caps from this file."
+      "_knobs_note": "Sociogram's affordances are filters/selection/highlight/camera (their own dim kinds, not `set` knobs). It carries no `set` verb in v1. Listed here so the shell can read one uniform per-tab source; its caps mirror the engine's SOCIOGRAM_CAPS until step 2 migrates the shell to read caps from this file.",
+      "dim_coverage": [
+        {
+          "dim": "filters",
+          "match": "[data-group]",
+          "note": "the 32 group checkboxes -- show/hide/only, batch-written through groupVisibility"
+        },
+        {
+          "dim": "filters",
+          "match": "#chk-all, #chk-none",
+          "note": "all / none"
+        },
+        {
+          "dim": "filters",
+          "match": "#chk-all-traditions, #chk-all-structure",
+          "note": "section toggles; CCL reaches these as section terms ('only traditions')"
+        },
+        {
+          "dim": "highlight",
+          "match": "#search-input, [onclick*='runSearch']",
+          "note": "find / clear (Clear's onclick also calls runSearch)"
+        },
+        {
+          "dim": "selection",
+          "match": "[onclick*='dismissRightPanel']",
+          "note": "close -- the node panel"
+        },
+        {
+          "dim": "camera",
+          "match": "#btn-fit-all",
+          "note": "fit"
+        }
+      ],
+      "controls_excluded": [
+        {
+          "match": "#brightness-slider, #date-slider",
+          "reason": "continuous fields; excluded from the semantic tier by design (redesign section 14.4) -- not journaled, not fingerprinted"
+        },
+        {
+          "match": "#btn-settings, #btn-edge-help, #btn-edges-help, #btn-tags-help, [onclick*='toggleEdgeHelp'], [onclick*='toggleEdgesHelp'], [onclick*='toggleTagsHelp']",
+          "reason": "help popovers and the settings gear: chrome, no view state"
+        },
+        {
+          "match": "#settings-modal button, #settings-content button, #settings-modal select, #settings-modal input, [onclick*='closeSettings']",
+          "reason": "settings dialog -- API keys, TTS voice and model choice; outside the view-state surface and never spoken by a guest"
+        },
+        {
+          "match": "#tts-provider, #tts-browser-voice, #tts-kokoro-voice, #tts-api-key, #tts-openai-voice, #ai-provider, #ai-api-key, #ai-model",
+          "reason": "same settings dialog, reached directly (they carry ids)"
+        },
+        {
+          "match": "#btn-voice, #btn-mute",
+          "reason": "the voice control surface's own chrome -- a session cannot be started or muted by voice"
+        },
+        {
+          "match": "#search-ai-mode",
+          "reason": "metered broker path; CCL find pins it OFF so it can never spend, and the separate `ask` verb owns it (v1-deferred)"
+        },
+        {
+          "match": ".popout-btn, [onclick*='popoutPage'], button.close[onclick*='window.close']",
+          "reason": "opens/closes a separate window -- navigation chrome, not view state"
+        }
+      ],
+      "controls_deferred": [
+        {
+          "match": "#chk-all-edges, #chk-edge-wikilink, #chk-edge-mention, #chk-edge-reference, #chk-edge-cross, #chk-edge-same",
+          "reason": "edge-type filters: a SECOND filter family the `filters` dim does not model (it writes groupVisibility only)",
+          "planned": "increment 5 (batched Sociogram regen) -- needs an edge-visibility dim"
+        },
+        {
+          "match": "#chk-layer-substrate, #chk-layer-projected, #chk-layer-flow, #chk-substrate-context",
+          "reason": "layer filters: same second-family problem as edge types",
+          "planned": "increment 5"
+        },
+        {
+          "match": "#chk-all-tags, #chk-tag-finding, #chk-tag-decision, #chk-tag-cross, #chk-tag-open",
+          "reason": "tag filters: same second-family problem",
+          "planned": "increment 5"
+        },
+        {
+          "match": "#layout-mode, #score-mode",
+          "reason": "enum selects that are knob-shaped (Mode, Score) but the Sociogram carries no `set` cap in v1",
+          "planned": "increment 5 -- promote to declared knobs, same shape as metabolism"
+        },
+        {
+          "match": "#chk-hold-forces, #chk-hover-names",
+          "reason": "bool toggles (Hold forces, Show hover names), knob-shaped, same v1 gap as above",
+          "planned": "increment 5"
+        },
+        {
+          "match": "[onclick*='dismissLeftPage']",
+          "reason": "the left article panel closes only by mouse; `close` covers the right node panel only",
+          "planned": "increment 3 (selection symmetry)"
+        },
+        {
+          "match": "#search-external",
+          "reason": "external-search toggle changes what find does; unmodelled in the highlight dim",
+          "planned": "increment 5"
+        }
+      ],
+      "_coverage_note": "Authored 2026-07-25 from the LIVE runtime sweep (window.CCLAudit), not from reading the HTML -- 84 interactive controls, of which the static file shows only a fraction (the 32 group checkboxes are innerHTML written at boot). THREE categories on purpose: dim_coverage = reachable today; controls_excluded = outside the voice surface with a reason; controls_deferred = IN scope and NOT yet reachable -- a real north-star gap, reported loudly by the audit and asserted exactly by scripts/test_voice_shell.cjs so new controls cannot quietly join the list. Deferred is not a synonym for excluded; collapsing the two is how this gate would rot."
     },
-
     "metabolism": {
-      "aka": ["metabolism", "pulse", "activity", "metabolism_view"],
+      "aka": [
+        "metabolism",
+        "pulse",
+        "activity",
+        "metabolism_view"
+      ],
       "tier": "T1",
-      "caps": ["go", "back", "set", "undo", "redo", "what", "where", "help"],
+      "caps": [
+        "go",
+        "back",
+        "set",
+        "undo",
+        "redo",
+        "what",
+        "where",
+        "help"
+      ],
       "_caps_note": "reset/restore are deferred to step 2b: they need a per-tab boot-captured snapshot of all knob dims (redesign section 7), whereas the v1 shell only captures Sociogram bootFilters. Until 2b they report unsupported_here on metabolism (honest, never faked). undo/redo work now via the absolute-vector journal (tab-agnostic).",
       "knobs": [
         {
           "id": "view",
           "label": "View",
+          "aka": [
+            "chart",
+            "plot",
+            "graph"
+          ],
           "kind": "enum",
-          "bind": { "select": "#view" },
+          "bind": {
+            "select": "#view"
+          },
           "values": [
-            { "v": "raster", "aka": ["raster", "per-agent", "per agent", "runs"] },
-            { "v": "wave", "aka": ["wave", "waveform", "pulse", "system pulse"] },
-            { "v": "dual", "aka": ["dual", "returned", "returned vs sent", "sent vs returned", "tokens"] }
+            {
+              "v": "raster",
+              "aka": [
+                "raster",
+                "per-agent",
+                "per agent",
+                "runs"
+              ]
+            },
+            {
+              "v": "wave",
+              "aka": [
+                "wave",
+                "waveform",
+                "pulse",
+                "system pulse"
+              ]
+            },
+            {
+              "v": "dual",
+              "aka": [
+                "dual",
+                "returned",
+                "returned vs sent",
+                "sent vs returned",
+                "tokens"
+              ]
+            }
           ]
         },
         {
           "id": "metric",
-          "label": "Metric",
+          "label": "Amplitude",
+          "aka": [
+            "amplitude",
+            "measure",
+            "size",
+            "axis"
+          ],
           "kind": "enum",
-          "bind": { "select": "#metric" },
+          "bind": {
+            "select": "#metric"
+          },
           "values": [
-            { "v": "events", "aka": ["events", "activity"] },
-            { "v": "out", "aka": ["out", "output", "output tokens", "work"] },
-            { "v": "total", "aka": ["total", "total tokens"] },
-            { "v": "cache_read", "aka": ["cache", "cache read", "cache-read", "recirculated"] },
-            { "v": "thinking_blocks", "aka": ["thinking steps", "thinking blocks", "steps"] },
-            { "v": "thinking_tokens", "aka": ["thinking tokens"] },
-            { "v": "dur_min", "aka": ["duration", "minutes", "time"] },
-            { "v": "yield_files", "aka": ["files", "yield files", "files added"] },
-            { "v": "yield_links", "aka": ["links", "wikilinks", "yield links"] },
-            { "v": "yield_prs", "aka": ["prs seen", "prs first-seen", "first seen"] },
-            { "v": "yield_prs_made", "aka": ["prs made", "prs articulated", "articulated"] },
-            { "v": "yield_signals", "aka": ["signals", "cross-tradition signals", "cross tradition"] }
+            {
+              "v": "events",
+              "aka": [
+                "events",
+                "activity"
+              ]
+            },
+            {
+              "v": "out",
+              "aka": [
+                "out",
+                "output",
+                "output tokens",
+                "work"
+              ]
+            },
+            {
+              "v": "total",
+              "aka": [
+                "total",
+                "total tokens"
+              ]
+            },
+            {
+              "v": "cache_read",
+              "aka": [
+                "cache",
+                "cache read",
+                "cache-read",
+                "recirculated"
+              ]
+            },
+            {
+              "v": "thinking_blocks",
+              "aka": [
+                "thinking steps",
+                "thinking blocks",
+                "steps"
+              ]
+            },
+            {
+              "v": "thinking_tokens",
+              "aka": [
+                "thinking tokens"
+              ]
+            },
+            {
+              "v": "dur_min",
+              "aka": [
+                "duration",
+                "minutes",
+                "time"
+              ]
+            },
+            {
+              "v": "yield_files",
+              "aka": [
+                "files",
+                "yield files",
+                "files added"
+              ]
+            },
+            {
+              "v": "yield_links",
+              "aka": [
+                "links",
+                "wikilinks",
+                "yield links"
+              ]
+            },
+            {
+              "v": "yield_prs",
+              "aka": [
+                "prs seen",
+                "prs first-seen",
+                "first seen"
+              ]
+            },
+            {
+              "v": "yield_prs_made",
+              "aka": [
+                "prs made",
+                "prs articulated",
+                "articulated"
+              ]
+            },
+            {
+              "v": "yield_signals",
+              "aka": [
+                "signals",
+                "cross-tradition signals",
+                "cross tradition"
+              ]
+            }
           ]
         },
         {
           "id": "color",
           "label": "Color",
+          "aka": [
+            "colour",
+            "coloring",
+            "colouring"
+          ],
           "kind": "enum",
-          "bind": { "select": "#color" },
+          "bind": {
+            "select": "#color"
+          },
           "values": [
-            { "v": "category", "aka": ["category", "by category"] },
-            { "v": "cache_ratio", "aka": ["cache ratio", "cache-read share", "cache share"] }
+            {
+              "v": "category",
+              "aka": [
+                "category",
+                "by category"
+              ]
+            },
+            {
+              "v": "cache_ratio",
+              "aka": [
+                "cache ratio",
+                "cache-read share",
+                "cache share"
+              ]
+            }
           ]
         },
         {
           "id": "logy",
           "label": "Log Y",
+          "aka": [
+            "log",
+            "logscale",
+            "logarithmic"
+          ],
           "kind": "bool",
-          "bind": { "checkbox": "#logy" },
+          "bind": {
+            "checkbox": "#logy"
+          },
           "values": [
-            { "v": "on", "aka": ["on", "log", "logarithmic", "yes"] },
-            { "v": "off", "aka": ["off", "linear", "no"] }
+            {
+              "v": "on",
+              "aka": [
+                "on",
+                "log",
+                "logarithmic",
+                "yes"
+              ]
+            },
+            {
+              "v": "off",
+              "aka": [
+                "off",
+                "linear",
+                "no"
+              ]
+            }
           ]
         }
       ],
       "controls_excluded": [],
-      "_controls_note": "The 4 knobs above are the controls found by static read of metabolism_view.html (selects #view/#metric/#color, checkbox #logy). Step 2 runs the LIVE runtime-DOM coverage audit in the debug panel (section 9); any interactive control it finds that is neither a bound knob nor listed in controls_excluded is a loud failure. Reconcile this list against that audit before the first metabolism No-Blind-Push."
+      "_controls_note": "The 4 knobs above are the tab's ENTIRE interactive surface, confirmed 2026-07-25 by the live runtime sweep (window.CCLAudit: total 4, covered 4, uncovered 0) -- this replaces the earlier static read of metabolism_view.html, which was the static-HTML gate redesign section 14.8 forbids."
     }
   }
 }

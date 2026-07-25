@@ -324,6 +324,29 @@ function onGroupCount(page) {
   );
 }
 
+
+// The section-9 gate. `uncovered` is the loud failure: a control a user can
+// operate that voice cannot reach and nobody has declared. `deferred` is the
+// honest middle -- in scope, not yet built -- so it is asserted as an EXACT
+// count: a newly added control cannot drift into it unnoticed, and a fixed one
+// must be removed from the manifest for this to stay green.
+async function auditTab(page, tabName, expectDeferred) {
+  let a;
+  try { a = await page.eval('return window.CCLAudit ? window.CCLAudit() : null;'); }
+  catch (e) { return record('audit ' + tabName, false, 'CCLAudit threw: ' + e.message); }
+  if (!a) { return record('audit ' + tabName, false, 'window.CCLAudit missing'); }
+  if (a.error) { return record('audit ' + tabName, false, a.error); }
+
+  const problems = [];
+  if (a.uncovered.length) { problems.push('UNCOVERED (' + a.uncovered.length + '): ' + a.uncovered.slice(0, 12).join(', ')); }
+  if (a.staleBinds.length) { problems.push('manifest binds a control the tab no longer has: ' + a.staleBinds.join(', ')); }
+  if (a.deferred.length !== expectDeferred) {
+    problems.push('deferred=' + a.deferred.length + ' expected ' + expectDeferred + ' -- update manifests.json, do not widen the expectation');
+  }
+  record('audit ' + tabName, problems.length === 0,
+    problems.join(' | ') || (a.total + ' live controls: ' + a.covered + ' covered, ' + a.excluded + ' excluded, ' + a.deferred.length + ' deferred, 0 uncovered'));
+}
+
 // ------------------------------------------------------------------- rows ----
 
 // Each row: what we send, what the bar must say, and what the tab's DOM must be.
@@ -379,6 +402,7 @@ async function main() {
   // ---- Phase A: Sociogram regression (the verified baseline must not move) ----
   process.stdout.write('\nPhase A -- Sociogram regression (inc 1/2 baseline)\n');
   await assertManifest(page, 'sociogram', SOCIOGRAM_SRC);
+  await auditTab(page, 'sociogram', 21);
   const bootGroups = await onGroupCount(page);
   await row(page, 'A1 only levin friston -> exactly 2 groups', 'only levin friston',
     { ok: true, spoken: /-> 2 groups on/, groups: function (n) { return n === 2; } });
@@ -393,10 +417,13 @@ async function main() {
   await activateTab(page, METABOLISM_SRC);
   await tabReady(page, 'metabolism');
   await assertManifest(page, 'metabolism', METABOLISM_SRC);
+  await auditTab(page, 'metabolism', 0);
 
   await row(page, 'B1 set view waveform -> alias resolves to DOM value wave', 'set view waveform',
     { ok: true, spoken: /^set view wave$/, dom: { '#view': { value: 'wave' } } });
   await row(page, 'B2 set metric output -> out', 'set metric output',
+    { ok: true, spoken: /^set metric out$/, dom: { '#metric': { value: 'out' } } });
+  await row(page, 'B2b set amplitude output -> the LABEL on the control resolves', 'set amplitude output',
     { ok: true, spoken: /^set metric out$/, dom: { '#metric': { value: 'out' } } });
   await row(page, 'B3 set logy on', 'set logy on',
     { ok: true, spoken: /^set logy on$/, dom: { '#logy': { prop: 'checked', value: 'on' } } });

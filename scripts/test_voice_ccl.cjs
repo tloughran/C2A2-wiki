@@ -552,6 +552,71 @@ check('audit: a declared-but-absent control is reported missing (stale manifest)
   assert.deepStrictEqual(CCL.auditCoverage(['view', 'gone'], ['view'], []).missing, ['gone']);
 });
 
+// ---- knob NAME resolution: what the user says vs what the id is -------------
+//
+// The control the user is looking at on metabolism says "Amplitude"; the knob
+// id is `metric`. If only the id resolved, voice could not reach a control in
+// plain sight -- and the coverage audit would still report the tab fully
+// covered, because it checks that controls are BOUND, not that they are
+// SAYABLE. These rows are that gap's regression guard.
+
+check('knob: resolves by id', function () {
+  assert.strictEqual(CCL.resolveKnob('metric', META.knobs).spec.id, 'metric');
+});
+check('knob: resolves by the label printed on the control', function () {
+  assert.strictEqual(CCL.resolveKnob('Amplitude', META.knobs).spec.id, 'metric');
+});
+check('knob: resolves by spoken alias', function () {
+  assert.strictEqual(CCL.resolveKnob('colour', META.knobs).spec.id, 'color');
+  assert.strictEqual(CCL.resolveKnob('log', META.knobs).spec.id, 'logy');
+});
+check('knob: unknown name lists what IS available (never a bare code)', function () {
+  const r = CCL.resolveKnob('banana', META.knobs);
+  assert.strictEqual(r.ok, false);
+  assert.strictEqual(r.error, 'unknown_knob');
+  assert.deepStrictEqual(r.supported, ['view', 'metric', 'color', 'logy']);
+});
+check('knob: an alias matching two knobs is ambiguous, not a coin flip', function () {
+  const knobs = [{ id: 'a', label: 'A', aka: ['size'] }, { id: 'b', label: 'B', aka: ['size'] }];
+  const r = CCL.resolveKnob('size', knobs);
+  assert.strictEqual(r.error, 'ambiguous');
+  assert.deepStrictEqual(r.candidates, ['a', 'b']);
+});
+check('knob: "set amplitude output" plans onto metric (end to end)', function () {
+  const p = planMeta('set amplitude output');
+  assert.strictEqual(p.ok, true);
+  assert.strictEqual(p.knob, 'metric');
+  assert.strictEqual(p.value, 'out');
+});
+
+// Drift guards on the manifest itself: a two-word alias would be UNPARSEABLE
+// (the parser reads the knob as the first token), and a duplicate alias across
+// knobs would make one of them permanently ambiguous. Both are authoring
+// mistakes that a fan-out to 12 tabs would otherwise repeat quietly.
+check('manifest: every knob declares a label and single-token aliases', function () {
+  for (const key of Object.keys(MANIFEST.tabs)) {
+    for (const k of (MANIFEST.tabs[key].knobs || [])) {
+      assert.ok(k.label, key + '.' + k.id + ' has no label');
+      assert.ok((k.aka || []).length, key + '.' + k.id + ' has no aka');
+      for (const a of k.aka) {
+        assert.ok(a.indexOf(' ') === -1, key + '.' + k.id + ' alias "' + a + '" is multi-word (unparseable)');
+        assert.strictEqual(a, a.toLowerCase(), key + '.' + k.id + ' alias "' + a + '" is not lowercase');
+      }
+    }
+  }
+});
+check('manifest: no alias collides across knobs on the same tab', function () {
+  for (const key of Object.keys(MANIFEST.tabs)) {
+    const seen = {};
+    for (const k of (MANIFEST.tabs[key].knobs || [])) {
+      for (const name of [k.id].concat(k.aka || [])) {
+        assert.ok(!seen[name], key + ': "' + name + '" claimed by both ' + seen[name] + ' and ' + k.id);
+        seen[name] = k.id;
+      }
+    }
+  }
+});
+
 // ---- report -----------------------------------------------------------------
 
 if (failures.length) {

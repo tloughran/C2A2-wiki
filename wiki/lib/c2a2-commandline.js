@@ -279,6 +279,43 @@
     return { ok: false, error: 'unresolved_value', term: term, knob: knobSpec && knobSpec.id, allowed: allowed };
   }
 
+  // term -> a knob SPEC, against the active tab's declared knobs. Same fuzzy
+  // contract as resolveKnobValue, and for the same reason: the user says the
+  // word printed on the control, which is not always the knob id. metabolism's
+  // metric select is labelled "Amplitude" on screen -- "set amplitude output"
+  // must work, or voice cannot reach a control the user is looking straight at.
+  // Matches id, then `label`, then `aka`, then substring.
+  //
+  // NOTE: the parser takes the knob as the FIRST TOKEN of `set <knob> <value>`,
+  // so knob names and their aliases must be single words -- a two-word alias is
+  // unparseable, not merely unmatched. verbs.json's grammar check enforces the
+  // shape; keep aliases single-token when authoring a manifest.
+  function resolveKnob(term, knobs) {
+    const t = low(term);
+    knobs = knobs || [];
+    const ids = knobs.map(function (k) { return k.id; });
+    if (!t) { return { ok: false, error: 'unknown_knob', knob: term, supported: ids }; }
+
+    const byId = knobs.filter(function (k) { return low(k.id) === t; });
+    if (byId.length === 1) { return { ok: true, spec: byId[0], term: term }; }
+
+    const byLabel = knobs.filter(function (k) { return low(k.label) === t; });
+    if (byLabel.length === 1) { return { ok: true, spec: byLabel[0], term: term }; }
+
+    const byAka = knobs.filter(function (k) { return (k.aka || []).some(function (a) { return low(a) === t; }); });
+    if (byAka.length === 1) { return { ok: true, spec: byAka[0], term: term }; }
+    if (byAka.length > 1) { return { ok: false, error: 'ambiguous', term: term, candidates: byAka.map(function (k) { return k.id; }).slice(0, CAND_CAP) }; }
+
+    const sub = knobs.filter(function (k) {
+      return low(k.id).indexOf(t) !== -1 || low(k.label).indexOf(t) !== -1 ||
+             (k.aka || []).some(function (a) { return low(a).indexOf(t) !== -1; });
+    });
+    if (sub.length === 1) { return { ok: true, spec: sub[0], term: term }; }
+    if (sub.length > 1) { return { ok: false, error: 'ambiguous', term: term, candidates: sub.map(function (k) { return k.id; }).slice(0, CAND_CAP) }; }
+
+    return { ok: false, error: 'unknown_knob', knob: term, supported: ids };
+  }
+
   // ---- the coverage audit (pure core; redesign section 9) ------------------
   //
   // The north star made checkable: every control a user can operate on a tab
@@ -458,9 +495,9 @@
         // (ctx.knobs from the per-tab manifest). T1 tabs bind a select/checkbox;
         // the shell writes `value` into `bind` (redesign sections 3, 8).
         const knobs = ctx.knobs || [];
-        let spec = null;
-        for (let i = 0; i < knobs.length; i++) { if (low(knobs[i].id) === low(op.knob)) { spec = knobs[i]; break; } }
-        if (!spec) { return { ok: false, error: 'unknown_knob', knob: op.knob, supported: knobs.map(function (k) { return k.id; }) }; }
+        const rk = resolveKnob(op.knob, knobs);
+        if (!rk.ok) { return rk; }
+        const spec = rk.spec;
         const rv = resolveKnobValue(op.args[0], spec);
         if (!rv.ok) { return rv; }
         return { ok: true, kind: 'knob', knob: spec.id, value: rv.value, bind: spec.bind, journal: { dim: 'knob:' + spec.id } };
@@ -489,6 +526,7 @@
     resolveTab: resolveTab,
     resolveNode: resolveNode,
     resolveKnobValue: resolveKnobValue,
+    resolveKnob: resolveKnob,
     auditCoverage: auditCoverage,
     createJournal: createJournal,
     plan: plan,
