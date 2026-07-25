@@ -46,7 +46,9 @@
 1. **Inline its JS/CSS** (as every single-file tab does — they are immune because the whole file is the iframe document), OR
 2. **Content-hash its `?v=` includes** via a deterministic stamp step. Never ship a bare local `src=`/`href=` include on an iframe-loaded page, and never rely on a manual `?v=N` bump (forgetting it IS the repeatable error).
 
-**Enforcement (heartbeat):** `wiki/heartbeat/backend/stamp_assets.py` rewrites each include's `?v=` to `SHA-1[:10]` of the asset; it is step 6 of `refresh_snapshot.sh` and is runnable standalone after any asset edit. Run it (or inline) before any push that touches a multi-file tab's assets.
+**Enforcement:** `wiki/heartbeat/backend/stamp_assets.py` rewrites each include's `?v=` to `SHA-1[:10]` of the asset. It takes `--target heartbeat|explorer|all`; **the default stays `heartbeat` on purpose** — `refresh_snapshot.sh` calls it with no arguments inside the heartbeat cron, whose carve-out below permits data-only pushes, so a wider default could make an unattended job commit HTML. `--check` stamps nothing and exits non-zero on a stale include; `scripts/test_voice_shell.cjs` runs `--target all --check` as its last row, so the CCL gate covers it.
+
+**Extended 2026-07-25 to `explorer.html`.** The shell is not an iframe tab, but it is a normal cacheable document loading a separate `lib/c2a2-commandline.js`, which is the same exposure. It had been carrying a hand-typed `?v=` — and that hash was already **wrong** when the stamper first checked it, exactly as rule 2 predicts.
 
 **Rationale:** 2026-06-26 — the heartbeat "What is a lens?" link was dead in-browser while jsdom tests passed, because the browser ran a cached `app.js` against fresh `index.html`. A code review confirmed heartbeat was the only multi-file tab; all others inline. Content-hash stamping makes the version a function of file content, so it is always correct with no human in the loop (Rule 5: if code can answer, code answers).
 

@@ -2108,9 +2108,12 @@ var VoiceGuide = (function() {
      the grammar + destinations index, and drives the Sociogram iframe's own
      verified globals (groupVisibility/rebuildGraph, openNodeByLabel, runSearch,
      linkGroups, fitAll, toggleAll). No dependency on the abandoned voice IIFE.
-     PRE-PUSH: the ?v= below is a manual content hash (stamp_assets.py is
-     heartbeat-scoped); wire a stamp step before shipping (redesign section 9). -->
-<script src="lib/c2a2-commandline.js?v=1f4ca92afa"></script>
+     The ?v= below is CONTENT-STAMPED, never hand-bumped -- regenerate it with
+       python3 wiki/heartbeat/backend/stamp_assets.py --target explorer
+     (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
+     runs it as its last row). A hand-bumped version is a version someone will
+     forget: this include shipped stale once already. -->
+<script src="lib/c2a2-commandline.js?v=1a80955b2a"></script>
 <script>
 (function () {
   'use strict';

@@ -385,6 +385,25 @@ async function row(page, name, cmd, expect) {
   record(name, problems.length === 0, problems.join(' | ') || (r.spoken || ''));
 }
 
+// The other half of a No-Blind-Push: the page can be perfect in this headless
+// run (fresh profile, empty cache) and still ship a stale asset to a browser
+// that has the old c2a2-commandline.js cached. Only a content hash catches
+// that, so the gate runs here rather than living in a human's memory.
+function stampGate() {
+  return new Promise(function (resolve) {
+    const p = spawn('python3', [path.join(ROOT, 'wiki/heartbeat/backend/stamp_assets.py'), '--target', 'all', '--check'],
+      { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] });
+    let out = '';
+    p.stdout.on('data', function (d) { out += d; });
+    p.stderr.on('data', function (d) { out += d; });
+    p.on('close', function (code) {
+      const stale = out.split('\n').filter(function (l) { return /STALE|ERROR/.test(l); }).join(' | ');
+      record('asset stamps current (pre-push gate)', code === 0, stale || 'heartbeat + explorer includes match their content hashes');
+      resolve();
+    });
+  });
+}
+
 // ------------------------------------------------------------------- main ----
 
 async function main() {
@@ -459,6 +478,8 @@ async function main() {
   await row(page, 'C2 set view wave -> unsupported on Sociogram', 'set view wave',
     { ok: false, spoken: /Not available on this view/ });
   const shotC = await page.screenshot(path.join(SHOTS, 'C-sociogram-return.png'));
+
+  await stampGate();
 
   // ---- report ----
   const failed = results.filter(function (r) { return !r.ok; });

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deterministically stamp heartbeat index.html asset includes with a content hash.
+"""Deterministically stamp a page's local asset includes with a content hash.
 
 Why this exists
 ---------------
@@ -11,10 +11,24 @@ dead-click bug). The fragile fix is to hand-bump `?v=N` on each edit; the robust
 fix is to make the version a function of file content, so it is always correct
 and no human has to remember.
 
-This script rewrites the `?v=` of each local asset include in index.html to the
-first 10 hex of the file's SHA-1. Idempotent: unchanged assets -> identical HTML.
+This script rewrites the `?v=` of each local asset include to the first 10 hex
+of the file's SHA-1. Idempotent: unchanged assets -> identical HTML.
+
+Targets (--target)
+------------------
+`heartbeat` (DEFAULT) -- heartbeat/index.html. The default is deliberately NARROW:
+    refresh_snapshot.sh runs this script with no arguments inside the heartbeat
+    cron, and that cron's constitutional carve-out lets it push ONLY data files.
+    If the default stamped explorer.html too, a stale stamp would make an
+    unattended job commit HTML -- exactly what the carve-out forbids.
+`explorer`  -- explorer.html's shared CCL engine include. The shell is a normal
+    cacheable document loading a SEPARATE lib file, so it has the same
+    stale-asset exposure as an iframe tab and the same fix applies.
+`all`       -- both. Use before a human-reviewed push.
 
 Run standalone after editing any asset, or let refresh_snapshot.sh run it.
+`--check` stamps nothing and exits non-zero if any include is stale -- for use
+as a loud pre-push gate rather than a silent fixer.
 """
 import argparse
 import hashlib
@@ -22,9 +36,14 @@ import re
 import sys
 from pathlib import Path
 
-# Local asset includes that must be content-stamped. (CDN/remote includes are
-# intentionally excluded — they are versioned at the source.)
-ASSETS = ("styles.css", "heartbeat-config.js", "app.js", "auth.js")
+# Local asset includes that must be content-stamped, per target. Paths are
+# relative to the page's own directory, exactly as they appear in the HTML.
+# (CDN/remote includes are intentionally excluded — they are versioned at the
+# source.)
+TARGETS = {
+    "heartbeat": ("heartbeat/index.html", ("styles.css", "heartbeat-config.js", "app.js", "auth.js")),
+    "explorer": ("explorer.html", ("lib/c2a2-commandline.js",)),
+}
 
 
 def short_hash(path: Path) -> str:
@@ -40,40 +59,68 @@ def stamp(html: str, name: str, ver: str) -> tuple[str, int]:
     return pat.subn(r'\g<1>' + name + '?v=' + ver + r'\g<2>', html)
 
 
-def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument(
-        "--root",
-        default=str(Path(__file__).resolve().parent.parent),
-        help="heartbeat dir containing index.html and the assets",
-    )
-    args = ap.parse_args()
-    root = Path(args.root)
-    index = root / "index.html"
-    if not index.is_file():
-        print(f"[stamp] ERROR: no index.html at {index}", file=sys.stderr)
+def stamp_page(wiki: Path, page_rel: str, assets: tuple[str, ...], check: bool) -> int:
+    """Stamp (or check) one page. Returns 0 ok, 1 error/stale."""
+    page = wiki / page_rel
+    if not page.is_file():
+        print(f"[stamp] ERROR: no page at {page}", file=sys.stderr)
         return 1
 
-    html = index.read_text()
+    before = page.read_text()
+    html = before
     changed = []
-    for name in ASSETS:
-        asset = root / name
+    for name in assets:
+        asset = page.parent / name
         if not asset.is_file():
             print(f"[stamp] WARN: asset missing, skipping: {name}", file=sys.stderr)
             continue
         ver = short_hash(asset)
         html, n = stamp(html, name, ver)
         if n == 0:
-            print(f"[stamp] WARN: include not found in index.html: {name}", file=sys.stderr)
+            print(f"[stamp] WARN: include not found in {page_rel}: {name}", file=sys.stderr)
         else:
             changed.append(f"{name}?v={ver}")
 
-    if html != index.read_text():
-        index.write_text(html)
-        print("[stamp] updated index.html:", ", ".join(changed))
-    else:
-        print("[stamp] OK: asset versions already current")
+    if html == before:
+        print(f"[stamp] OK: {page_rel} asset versions already current")
+        return 0
+    if check:
+        # Loud on purpose: a stale include ships fresh HTML against a cached
+        # asset, which is invisible in tests and only breaks in a real browser.
+        print(f"[stamp] STALE: {page_rel} needs {', '.join(changed)}", file=sys.stderr)
+        return 1
+    page.write_text(html)
+    print(f"[stamp] updated {page_rel}:", ", ".join(changed))
     return 0
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument(
+        "--target",
+        choices=("heartbeat", "explorer", "all"),
+        default="heartbeat",
+        help="which page(s) to stamp; default is heartbeat only (see module docstring)",
+    )
+    ap.add_argument(
+        "--wiki",
+        default=str(Path(__file__).resolve().parents[2]),
+        help="wiki dir the target paths are relative to",
+    )
+    ap.add_argument(
+        "--check",
+        action="store_true",
+        help="stamp nothing; exit non-zero if any include is stale (pre-push gate)",
+    )
+    args = ap.parse_args()
+
+    wiki = Path(args.wiki)
+    names = tuple(TARGETS) if args.target == "all" else (args.target,)
+    rc = 0
+    for name in names:
+        page_rel, assets = TARGETS[name]
+        rc |= stamp_page(wiki, page_rel, assets, args.check)
+    return rc
 
 
 if __name__ == "__main__":
