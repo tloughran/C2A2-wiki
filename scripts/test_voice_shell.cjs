@@ -621,14 +621,29 @@ async function main() {
   // the right text was handed to the right system.
   const readRes = await runCmd(page, 'read');
   record('A24 read takes the open article, by word count', /reading .+\s*\|\s*\d+ words/.test(readRes.spoken || ''), readRes.spoken);
-  record('A24b read offers an interrupt that actually WORKS (mic is muted, so "say stop" would be false)',
-    /press Stop or type/.test(readRes.spoken || '') && !/say "stop"/.test(readRes.spoken || ''), readRes.spoken);
+  record('A24b the offered interrupt is one that WORKS (mic stays live, so voice stop is real)',
+    /say "stop" to interrupt/.test(readRes.spoken || ''), readRes.spoken);
   record('A24d the reader waits for a live guide rather than talking over it',
     await page.eval("return typeof window.CCLDeferSpeak === 'function' || !document.getElementById('vg-launch');"),
     'CCLDeferSpeak hook present (or no voice UI on this build)');
   record('A24c a visible Stop control appears while reading',
     await page.eval("var b=document.getElementById('ccl-stop'); return !!b && b.style.display !== 'none';"),
     'ccl-stop visible during playback');
+  // The speech script is a pure text transformation over the real article DOM,
+  // so it IS testable headlessly -- unlike the voice itself.
+  const script = await page.eval(
+    IFRAME_DOC +
+    "var el = d.getElementById('right-page-content');" +
+    "var raw = (el.textContent || '').replace(/\\s+/g, ' ').trim();" +
+    "return { raw: raw.slice(0, 160), childCount: el.children.length };"
+  );
+  record('A24e the raw DOM text really does run blocks together (the bug being fixed)',
+    /TripletsMaintained|[a-z][A-Z]/.test(script.raw), script.raw.slice(0, 90) + '...');
+  const spoken24 = readRes.spoken || '';
+  record('A24f the reader holds provenance back and says so',
+    /metadata held back/.test(spoken24), spoken24);
+  await row(page, 'A24g read details -> the held-back provenance, on request only', 'read details',
+    { ok: true, spoken: /\(metadata\)/ });
   await row(page, 'A25 stop -> interruptible', 'stop', { ok: true, spoken: /^stopped$/ });
   record('A25a the Stop control goes away again',
     await page.eval("var b=document.getElementById('ccl-stop'); return !!b && b.style.display === 'none';"),

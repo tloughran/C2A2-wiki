@@ -220,11 +220,12 @@
       "verb": "read",
       "dim": "playback",
       "op": "set",
-      "args": "none",
+      "args": "opt",
       "kind": "value",
       "inverse": "stop",
       "const": "read",
-      "gated": true
+      "gated": true,
+      "_note": "bare = the prose; `read details` = the provenance/metadata the speech script holds back"
     },
     {
       "verb": "stop",

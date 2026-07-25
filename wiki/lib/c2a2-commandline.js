@@ -113,7 +113,10 @@
       // 0 or 1 token: `all` means every group, `all tags` every member of that
       // family. One verb, two scopes, no new vocabulary to learn.
       case 'opt': {
-        if (!rest) { return ok(spec, [], echo); }
+        if (!rest) {
+          var dflt = Object.prototype.hasOwnProperty.call(spec, 'const') ? [spec['const']] : [];
+          return ok(spec, dflt, echo);
+        }
         if (rest.indexOf(' ') !== -1) { return err('too_many_args', echo, { verb: verb }); }
         return ok(spec, [rest], echo);
       }
@@ -669,7 +672,11 @@
       // Playback drives the PAGE's own TTS, never the realtime audio channel:
       // verbatim, interruptible, cheap, and stoppable (redesign section 14.7).
       case 'read': case 'stop':
-        return { ok: true, kind: 'playback', action: op.verb, journal: { dim: 'playback' } };
+        // `read` bare reads the prose; `read details` reads the provenance the
+        // speech script holds back (see the shell's speechScript).
+        var scope = low(op.args[0]);
+        return { ok: true, kind: 'playback', action: op.verb,
+                 mode: (scope && scope !== op.verb) ? scope : 'prose', journal: { dim: 'playback' } };
 
       case 'fit':
         return { ok: true, kind: 'camera', action: 'fit', journal: { dim: 'camera' } };

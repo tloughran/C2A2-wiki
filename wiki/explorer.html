@@ -1498,7 +1498,7 @@ var VoiceGuide = (function() {
       "  ...the same five verbs take a FAMILY qualifier: hide edges mention | only edges wikilink | all tags | none layers",
       "  open <node> | close                                                   -- open or close a node's article",
       "  pick random | pick first | pick last | next | previous                 -- walk the revealed nodes one at a time",
-      "  read | stop                                                            -- read the open article aloud, or interrupt it",
+      "  read | read details | stop                                             -- read the open article aloud (provenance held back; `read details` for it), or interrupt",
       "  find <text> | clear                                                    -- highlight-search across the graph",
       "  focus <a> ~ <b> [~ <c>...]                                            -- show the links between named groups",
       "  go <tab> | go next | go previous | go first | go last | back           -- switch tabs; next/previous walk the row left to right",
@@ -1516,6 +1516,8 @@ var VoiceGuide = (function() {
       "ACT ON A REASONABLE READING RATHER THAN HANDING THE QUESTION BACK. This is a voice tool: the user cannot see a list of options, so a returned question costs them far more than a stated assumption. If you can form a defensible reading of what they meant, ISSUE THE COMMAND and say what you assumed -- 'taking the philosophy ones as McGilchrist and Kastrup -- Rohr is arguable'. Soft language belongs on the INTERPRETATION, never on the outcome: what is on screen is reported exactly. A wrong guess costs one 'undo', so guess. Ask only when the reading is a genuine coin-flip (the engine says 'ambiguous') or when acting would be irreversible -- aim for well under one question in ten replies.",
       "READING THE RESULT. run_command returns { did } on success -- say it back briefly. On error 'ambiguous' it returns candidates -- name a couple and ask which they mean. On 'unresolved' say you could not find that, and offer the nearest thing you CAN do. On 'unsupported_here' say it is not available on this view and offer what the tab is for. When the result itself carries a 'taking X as Y' assumption, pass that on -- the user should always be able to hear when you guessed.",
       "COLOR IS NOT A RELIABLE IDENTIFIER -- never resolve a color to a category. Several categories share near-identical colors (Friston/Architecture are the closest pair; also Hoffman/Hawkins, Kastrup/Agents, Stump/Master, McGilchrist/Loughran). If the user names a color, do NOT say which category it is -- say which categories share it and ask which one they mean.",
+      "WHILE THE PAGE IS READING, SAY NOTHING UNLESS ADDRESSED. Your microphone stays live so the user can always interrupt by voice -- which means you will HEAR the article being read. Do not answer it, do not comment on it, do not treat it as the user speaking. Act only on a clear instruction to you ('stop', 'skip', 'go back'), and otherwise stay silent.",
+      "THE READER HOLDS BACK PROVENANCE. These files open with maintainer, last-updated and source lines, and often a format template; none of that is read aloud. If the result says metadata was held back, mention it in a few words ONCE -- 'there is some source metadata if you want it' -- and only read it if the user asks, which is `read details`. Never read it unprompted.",
       "READING IS A HANDOVER, AND THE READER IS A DIFFERENT VOICE ON PURPOSE. On a successful `read`, say ONE short handover line and nothing more -- \'Here it is.\' or \'Reading it to you.\' -- then be silent until the user speaks again. No word count, no offer, no summary. The page begins reading the moment you stop, in its own voice: that difference is deliberate, so the user can always hear whether they are being TALKED TO or READ TO. If they remark on it, say plainly that the page is reading it back, not you.",
       "BREVITY IS A HARD RULE: you are speaking ALOUD. Default to ONE or TWO short sentences; never exceed three, and only then if the user explicitly asks for more. No preamble, no restating the question, no lists, no wind-up. Answer directly. Be warm and concrete, never a lecture.",
       "Examples (NOT a script): 'show only Levin and Friston' -> only levin friston; 'also bring in the physics people' -> show wolfram carroll; 'drop the architecture layer' -> hide architecture; 'take me to the metabolism view' -> go metabolism; 'how do Kastrup and Hoffman connect?' -> focus kastrup ~ hoffman; 'reset the whole view' -> all; 'what am I seeing?' -> what."
@@ -1987,7 +1989,13 @@ var VoiceGuide = (function() {
         // The page's reader waits for the guide to finish speaking, so the two
         // voices hand over instead of colliding. Deliberate two-voice design
         // (Tom, 2026-07-25): the guide introduces, the page reads.
-        if (_afterResponse) { var _fn = _afterResponse; _afterResponse = null; try { _fn(); } catch (e) { dbg('deferred speak error: ' + e); } }
+        if (_afterResponse) {
+          var _fn = _afterResponse; _afterResponse = null;
+          // response.done means the response is COMPLETE, not that its audio
+          // has finished playing -- the tail is still in the local buffer,
+          // which is why the two voices still clipped. Let it drain first.
+          setTimeout(function () { try { _fn(); } catch (e) { dbg('deferred speak error: ' + e); } }, 900);
+        }
         if (pendingCreate) { clearTimeout(_pendCreateTimer); pendingCreate = false; dbg('flushing deferred response.create'); requestResponseCreate(); }
         break;
       case 'error':
@@ -2158,7 +2166,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=d44f579299"></script>
+<script src="lib/c2a2-commandline.js?v=1b7e3a7731"></script>
 <script>
 (function () {
   'use strict';
@@ -2537,18 +2545,49 @@ var VoiceGuide = (function() {
   // paraphrase it (redesign section 14.7). The mic is silenced while it speaks
   // so the live guide does not hear the article and answer it; any later
   // command restores it.
-  function articleText() {
-    var d = ifDoc(), el = d && d.getElementById('right-page-content');
-    if (!el) { return null; }
-    // Visibility, not just presence: dismissRightPanel HIDES the panel and
-    // leaves its content in the DOM, so a populated node proves nothing. Read
-    // it anyway and the guide reads aloud an article the user just closed --
-    // the same "reported state that isn't on screen" bug in a new place.
+  // ---- the speech script: what is worth hearing, in an order that reads ----
+  //
+  // Feeding el.textContent to a speech engine was the single biggest cause of
+  // the reader sounding stupid: textContent concatenates BLOCK elements with no
+  // separator, so a heading runs straight into the next paragraph --
+  // "Karl Friston - PRS TripletsMaintained by the agent | Last updated..." --
+  // and every engine turns that into one run-on nonsense sentence. Blocks are
+  // now joined with real sentence endings, so the reader can breathe.
+  //
+  // These files also open with provenance -- maintainer, last-updated, source,
+  // a format template -- which nobody wants read aloud before the content. That
+  // material is HELD BACK, counted, and offered: "say read details". Skipped
+  // outright: code blocks and tables (unreadable aloud) and rule separators.
+  var META_RE = /^(maintained by|last updated|source|confidence|date added|tags?|status|authored[_ ]by|authored[_ ]at|id|path|file)\b\s*[:|]/i;
+  var RULE_RE = /^[-\u2013\u2014_*=\s]{3,}$/;
+
+  function panelVisible(d) {
     var panel = d.getElementById('right-panel');
-    if (panel && !panel.offsetParent && (panel.style.display === 'none' || getComputedStyle(panel).display === 'none')) { return null; }
-    var t = (el.textContent || '').replace(/\s+/g, ' ').trim();
-    return t || null;
+    if (!panel) { return true; }
+    // Visibility, not just presence: dismissRightPanel HIDES the panel and
+    // leaves its content in the DOM, so a populated node proves nothing.
+    return !(!panel.offsetParent && (panel.style.display === 'none' || getComputedStyle(panel).display === 'none'));
   }
+  function endPunct(t) { return /[.!?:;,]$/.test(t) ? t : t + '.'; }
+
+  function speechScript() {
+    var d = ifDoc(), el = d && d.getElementById('right-page-content');
+    if (!el || !panelVisible(d)) { return null; }
+    var nodes = el.children.length ? [].slice.call(el.children) : [el];
+    var body = [], meta = [], skipped = 0;
+    nodes.forEach(function (n) {
+      var tag = n.tagName, t = (n.textContent || '').replace(/\s+/g, ' ').trim();
+      if (!t) { return; }
+      if (tag === 'PRE' || tag === 'CODE' || tag === 'TABLE') { skipped++; return; }  // unreadable aloud
+      if (RULE_RE.test(t)) { return; }                                               // horizontal rules
+      if (META_RE.test(t)) { meta.push(endPunct(t)); return; }                        // provenance, held back
+      if (/^H[1-6]$/.test(tag)) { body.push(endPunct(t.replace(/[:.]+$/, ''))); return; }
+      body.push(endPunct(t));
+    });
+    return { body: body.join(' '), meta: meta.join(' '), metaCount: meta.length, skipped: skipped };
+  }
+  // Kept for callers that only need to know whether there is anything at all.
+  function articleText() { var sc = speechScript(); return sc && sc.body ? sc.body : null; }
   function setMic(on) { try { if (typeof window.CCLSetMic === 'function') { window.CCLSetMic(on); } } catch (e) { /* no session */ } }
   var speaking = false;
   function stopSpeaking() {
@@ -2574,24 +2613,33 @@ var VoiceGuide = (function() {
   function execPlayback(p) {
     var w = ifWin();
     if (p.action === 'stop') { stopSpeaking(); return show('stopped', 'ok'); }
-    var text = articleText();
-    if (!text) { return show('nothing is open to read -- pick a node first', 'err'); }
+    var sc = speechScript();
+    if (!sc) { return show('nothing is open to read -- pick a node first', 'err'); }
+    var wantMeta = (p.mode === 'details' || p.mode === 'metadata');
+    var text = wantMeta ? sc.meta : sc.body;
+    if (!text) { return show(wantMeta ? 'there is no metadata held back for this one' : 'nothing readable in this one', 'err'); }
     if (!w || !w.TTS || typeof w.TTS.speak !== 'function') { return show('this view has no text-to-speech', 'err'); }
     var d = ifDoc(), title = ((d.getElementById('right-page-title') || {}).textContent || 'this article').trim();
     stopSpeaking();
     speaking = true;
-    setMic(false);
+    // The mic STAYS LIVE. Muting it made the reader uninterruptible by voice,
+    // which under a voice-only criterion is the one thing that must always
+    // work -- and it is why "stop" did nothing (Tom, 2026-07-25). getUserMedia
+    // applies echo cancellation by default; if the guide starts answering the
+    // article, that is the trade we chose and it is fixable in the prompt.
     stopButton(true);
     var start = function () {
       try { w.TTS.speak(text); }
-      catch (e) { speaking = false; setMic(true); stopButton(false); show('could not start reading: ' + (e && e.message || e), 'err'); }
+      catch (e) { speaking = false; stopButton(false); show('could not start reading: ' + (e && e.message || e), 'err'); }
     };
     // Hand over rather than talk over: if the guide is mid-sentence, the reader
     // waits for it to finish. With no live session this fires immediately.
     if (typeof window.CCLDeferSpeak === 'function') { window.CCLDeferSpeak(start); } else { start(); }
     // The mic is OFF while the page reads, so telling the user to *say* stop
     // would be false. Name the interrupt that actually works.
-    return show('reading ' + title + '  |  ' + text.split(' ').length + ' words -- press Stop or type "stop"', 'ok');
+    var held = (!wantMeta && sc.metaCount) ? ('  |  ' + sc.metaCount + ' lines of metadata held back -- say "read details" for them') : '';
+    var skip = (!wantMeta && sc.skipped) ? ('  |  skipped ' + sc.skipped + ' block' + (sc.skipped > 1 ? 's' : '') + ' that do not read aloud') : '';
+    return show('reading ' + title + (wantMeta ? ' (metadata)' : '') + '  |  ' + text.split(' ').length + ' words -- say "stop" to interrupt' + held + skip, 'ok');
   }
 
   // ---- section 9: the LIVE coverage audit --------------------------------
