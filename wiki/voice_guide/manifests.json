@@ -32,7 +32,12 @@
         "restore",
         "what",
         "where",
-        "help"
+        "help",
+        "pick",
+        "next",
+        "previous",
+        "read",
+        "stop"
       ],
       "knobs": [],
       "_knobs_note": "Sociogram's affordances are filters/selection/highlight/camera (their own dim kinds, not `set` knobs). It carries no `set` verb in v1. Listed here so the shell can read one uniform per-tab source; its caps mirror the engine's SOCIOGRAM_CAPS until step 2 migrates the shell to read caps from this file.",

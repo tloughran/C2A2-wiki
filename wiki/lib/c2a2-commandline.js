@@ -513,6 +513,8 @@
     'open', 'close',
     'find', 'clear', 'focus',
     'fit', 'zoom', 'pan',
+    'pick', 'next', 'previous',
+    'read', 'stop',
     'undo', 'redo', 'reset', 'restore',
     'what', 'where', 'help',
   ];
@@ -606,6 +608,22 @@
         if (!rv.ok) { return rv; }
         return { ok: true, kind: 'knob', knob: spec.id, value: rv.value, bind: spec.bind, journal: { dim: 'knob:' + spec.id } };
       }
+
+      // The CURSOR walks the currently revealed set: pick random/first/last,
+      // then next/previous. Voice-only exploration needs a way to reach ONE
+      // node out of a reveal without a mouse, and the random pick belongs in
+      // code rather than in the model (deterministic plumbing is not a
+      // judgement call). Scope is whatever is revealed, which auto-framing
+      // already defines precisely.
+      case 'pick':
+        return { ok: true, kind: 'cursor', action: 'pick', mode: op.args[0], journal: { dim: 'selection' } };
+      case 'next': case 'previous':
+        return { ok: true, kind: 'cursor', action: 'step', dir: op.verb, journal: { dim: 'selection' } };
+
+      // Playback drives the PAGE's own TTS, never the realtime audio channel:
+      // verbatim, interruptible, cheap, and stoppable (redesign section 14.7).
+      case 'read': case 'stop':
+        return { ok: true, kind: 'playback', action: op.verb, journal: { dim: 'playback' } };
 
       case 'fit':
         return { ok: true, kind: 'camera', action: 'fit', journal: { dim: 'camera' } };

@@ -360,17 +360,34 @@ check('plan: parse errors pass straight through', function () {
   assert.strictEqual(p.error, 'unknown_verb');
 });
 check('plan: unsupported verb -> unsupported_here with derived supported list', function () {
-  // `read` (page playback) is still outside v1 Sociogram caps. This row used to
-  // use `zoom`, which moved INTO caps on 2026-07-25 when the camera dimension
-  // was made symmetric -- the assertion was encoding a decision, not a rule.
-  const p = planCmd('read');
+  // `ask` (the metered broker path) is still outside v1 Sociogram caps. This row
+  // has now been re-pointed twice -- first off `zoom`, then off `read` -- as each
+  // moved INTO caps. It was encoding decisions, not a rule; the rule is only that
+  // an uncapped verb degrades honestly.
+  const p = planCmd('ask what is c2a2');
   assert.strictEqual(p.error, 'unsupported_here');
-  assert.ok(p.supported.indexOf('fit') !== -1 && p.supported.indexOf('read') === -1);
+  assert.ok(p.supported.indexOf('fit') !== -1 && p.supported.indexOf('ask') === -1);
 });
-check('plan: set/read/ask are unsupported in v1 Sociogram', function () {
+check('plan: set and ask remain unsupported in v1 Sociogram', function () {
   assert.strictEqual(planCmd('set brightness 0.5').error, 'unsupported_here');
-  assert.strictEqual(planCmd('read').error, 'unsupported_here');
   assert.strictEqual(planCmd('ask what is c2a2').error, 'unsupported_here');
+});
+check('cursor: pick/next/previous plan against the revealed set', function () {
+  assert.strictEqual(planCmd('pick random').mode, 'random');
+  assert.strictEqual(planCmd('pick first').mode, 'first');
+  assert.strictEqual(planCmd('next').dir, 'next');
+  assert.strictEqual(planCmd('previous').dir, 'previous');
+  assert.strictEqual(CCL.parse('pick sideways', grammar).error, 'bad_enum');
+});
+check('cursor: next and previous are declared inverses of each other', function () {
+  const byVerb = grammar.byVerb;
+  assert.strictEqual(byVerb.next.inverse, 'previous');
+  assert.strictEqual(byVerb.previous.inverse, 'next');
+});
+check('playback: read/stop plan, and stop is read\'s declared inverse', function () {
+  assert.strictEqual(planCmd('read').kind, 'playback');
+  assert.strictEqual(planCmd('stop').kind, 'playback');
+  assert.strictEqual(grammar.byVerb.read.inverse, 'stop');
 });
 
 check('plan: only levin friston -> filters set with both keys', function () {
@@ -447,7 +464,9 @@ check('plan: what/where/help route to reads', function () {
 check('plan: every SOCIOGRAM_CAPS verb yields a plan, never unsupported_here', function () {
   // guards against a cap being listed but unhandled in the switch
   const samples = {
-    go: 'go sociogram', back: 'back', zoom: 'zoom in', pan: 'pan left', show: 'show levin', hide: 'hide levin', only: 'only levin',
+    go: 'go sociogram', back: 'back', zoom: 'zoom in', pan: 'pan left',
+    pick: 'pick random', next: 'next', previous: 'previous', read: 'read', stop: 'stop',
+    show: 'show levin', hide: 'hide levin', only: 'only levin',
     all: 'all', none: 'none', open: 'open ' + DEST.nodes[0].id.replace(/\.md$/, ''), close: 'close',
     find: 'find x', clear: 'clear', focus: 'focus levin ~ friston', fit: 'fit',
     undo: 'undo', redo: 'redo', reset: 'reset', restore: 'restore', what: 'what', where: 'where', help: 'help',

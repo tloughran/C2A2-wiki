@@ -1481,6 +1481,8 @@ var VoiceGuide = (function() {
       "  only <groups...> | show <groups...> | hide <groups...> | all | none   -- filter the graph by tradition/structure name",
       "  ...the same five verbs take a FAMILY qualifier: hide edges mention | only edges wikilink | all tags | none layers",
       "  open <node> | close                                                   -- open or close a node's article",
+      "  pick random | pick first | pick last | next | previous                 -- walk the revealed nodes one at a time",
+      "  read | stop                                                            -- read the open article aloud, or interrupt it",
       "  find <text> | clear                                                    -- highlight-search across the graph",
       "  focus <a> ~ <b> [~ <c>...]                                            -- show the links between named groups",
       "  go <tab> | back                                                        -- switch to another tab",
@@ -1510,7 +1512,7 @@ var VoiceGuide = (function() {
         tools: [{
           type: 'function',
           name: 'run_command',
-          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (filter the graph by tradition/structure name), open/close (a node article), find/clear (highlight-search), focus <a> ~ <b> (links between groups), go/back (switch tab), fit (zoom to fit), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
+          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (filter the graph by tradition/structure name), open/close (a node article), find/clear (highlight-search), focus <a> ~ <b> (links between groups), go/back (switch tab), pick random|first|last and next|previous (walk the revealed nodes), read|stop (read the open article aloud), fit (zoom to fit), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
           parameters: {
             type: 'object',
             properties: {
@@ -2019,6 +2021,11 @@ var VoiceGuide = (function() {
         if (window.isRecording && window.addStreamToRecMix) window.addStreamToRecMix(remoteStream);
       };
       pc.addTrack(micStream.getAudioTracks()[0], micStream);
+      // Let the command layer silence the mic while the PAGE is reading aloud.
+      // Without this the live session hears the article and answers it.
+      window.CCLSetMic = function (on) {
+        try { micStream.getAudioTracks().forEach(function (t) { t.enabled = !!on; }); } catch (e) { /* no session */ }
+      };
 
       dc = pc.createDataChannel('oai-events');
       dc.onopen = function() {
@@ -2125,7 +2132,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=7798ec6e5a"></script>
+<script src="lib/c2a2-commandline.js?v=cc6be0e1f9"></script>
 <script>
 (function () {
   'use strict';
@@ -2402,6 +2409,96 @@ var VoiceGuide = (function() {
     for (var i = 0; i < els.length; i++) { els[i].classList.remove('ccl-cut'); }
   }
 
+  // ---- the cursor: reaching ONE node without a mouse ---------------------
+  //
+  // Voice-only exploration needs to walk the revealed set. Scope is exactly
+  // what is revealed (auto-framing already defines that), order is stable so
+  // `next` means something, and the random pick happens HERE rather than in
+  // the model -- picking an index is plumbing, not judgement.
+  var cursorId = null;
+  function revealedNodes() {
+    var w = ifWin(), d = ifDoc();
+    if (!w || !d) { return []; }
+    var cs = d.querySelectorAll('.node-circle'), out = [];
+    for (var i = 0; i < cs.length; i++) {
+      var c = cs[i];
+      if (c.style.display === 'none' || c.classList.contains('ccl-cut')) { continue; }
+      var op = parseFloat(c.getAttribute('opacity'));
+      if (!isNaN(op) && op <= 0.15) { continue; }
+      var dat = null;
+      try { dat = w.d3.select(c).datum(); } catch (e) { /* unbound */ }
+      if (dat && dat.label) { out.push({ id: dat.id, label: dat.label }); }
+    }
+    out.sort(function (a, b) { return a.label < b.label ? -1 : (a.label > b.label ? 1 : 0); });
+    return out;
+  }
+  function execCursor(p) {
+    var list = revealedNodes();
+    if (!list.length) { return show('nothing is revealed to pick from', 'err'); }
+    var at = -1, i;
+    for (i = 0; i < list.length; i++) { if (list[i].id === cursorId) { at = i; break; } }
+    var idx;
+    if (p.action === 'pick') {
+      if (p.mode === 'first') { idx = 0; }
+      else if (p.mode === 'last') { idx = list.length - 1; }
+      else { idx = Math.floor(Math.random() * list.length); }
+    } else {
+      // Wraps deliberately: a voice user cannot see that they have hit the end.
+      idx = p.dir === 'next' ? (at + 1) % list.length : (at <= 0 ? list.length - 1 : at - 1);
+    }
+    var node = list[idx];
+    cursorId = node.id;
+    var before = readDim('selection');
+    call('openNodeByLabel', node.label);
+    journal.record(TAB, { dim: 'selection', before: before, after: readDim('selection') });
+    // Announcing is not decoration: with no screen, this IS the result.
+    return show(node.label + '  |  ' + (idx + 1) + ' of ' + list.length + ' revealed', 'ok');
+  }
+
+  // ---- playback: the PAGE reads, not the model ---------------------------
+  //
+  // The artifact already ships a TTS object (browser / Kokoro / OpenAI voice),
+  // so `read` speaks the open article verbatim, cheaply and interruptibly --
+  // rather than pushing the text through a metered realtime session that would
+  // paraphrase it (redesign section 14.7). The mic is silenced while it speaks
+  // so the live guide does not hear the article and answer it; any later
+  // command restores it.
+  function articleText() {
+    var d = ifDoc(), el = d && d.getElementById('right-page-content');
+    if (!el) { return null; }
+    // Visibility, not just presence: dismissRightPanel HIDES the panel and
+    // leaves its content in the DOM, so a populated node proves nothing. Read
+    // it anyway and the guide reads aloud an article the user just closed --
+    // the same "reported state that isn't on screen" bug in a new place.
+    var panel = d.getElementById('right-panel');
+    if (panel && !panel.offsetParent && (panel.style.display === 'none' || getComputedStyle(panel).display === 'none')) { return null; }
+    var t = (el.textContent || '').replace(/\s+/g, ' ').trim();
+    return t || null;
+  }
+  function setMic(on) { try { if (typeof window.CCLSetMic === 'function') { window.CCLSetMic(on); } } catch (e) { /* no session */ } }
+  var speaking = false;
+  function stopSpeaking() {
+    var w = ifWin();
+    try { if (w && w.TTS && typeof w.TTS.stop === 'function') { w.TTS.stop(); } } catch (e) { /* none */ }
+    try { if (w && w.speechSynthesis) { w.speechSynthesis.cancel(); } } catch (e) { /* none */ }
+    speaking = false;
+    setMic(true);
+  }
+  function execPlayback(p) {
+    var w = ifWin();
+    if (p.action === 'stop') { stopSpeaking(); return show('stopped', 'ok'); }
+    var text = articleText();
+    if (!text) { return show('nothing is open to read -- pick a node first', 'err'); }
+    if (!w || !w.TTS || typeof w.TTS.speak !== 'function') { return show('this view has no text-to-speech', 'err'); }
+    var d = ifDoc(), title = (d.getElementById('right-page-title') || {}).textContent || 'this article';
+    stopSpeaking();
+    speaking = true;
+    setMic(false);
+    try { w.TTS.speak(text); }
+    catch (e) { speaking = false; setMic(true); return show('could not start reading: ' + (e && e.message || e), 'err'); }
+    return show('reading ' + title.trim() + '  |  ' + text.split(' ').length + ' words (say "stop" to interrupt)', 'ok');
+  }
+
   // ---- section 9: the LIVE coverage audit --------------------------------
   //
   // The north star ("anything a user would ordinarily do can be said") is only
@@ -2613,6 +2710,8 @@ var VoiceGuide = (function() {
         // settle timer lands after `fit` and silently undoes it (caught by the
         // shell test: fit reported 891 nodes on screen instead of ~4000).
         case 'camera':    return execCamera(p);   // camera not journaled in v1
+        case 'cursor':    return execCursor(p);
+        case 'playback':  return execPlayback(p);
         case 'family':    return execFamily(p);
         case 'knob':      return execKnob(p);
         case 'shell':     return execShell(p);
@@ -2750,6 +2849,9 @@ var VoiceGuide = (function() {
   // ---- run + wire input ----
   function run(text) {
     if (!grammar) { return show('CCL still loading...', 'err'); }
+    // Any command ends playback: the user talking over the article IS the
+    // interrupt, and leaving the mic disabled would strand a live session.
+    if (speaking && !/^\s*stop\b/i.test(text)) { stopSpeaking(); }
     // Tab-aware ctx: caps + knobs come from the active tab's manifest. Off a
     // known tab (chapter page / unmapped tab) fall back to the verified
     // Sociogram behavior so nothing regresses (inc 4).

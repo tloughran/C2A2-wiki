@@ -1,52 +1,302 @@
 {
   "_about": "CCL grammar-as-data (C2A2 Command Line v1). Single source of truth for the verb set and the state dimensions each verb writes/reads. Consumed by BOTH the parser (wiki/lib/c2a2-commandline.js) and the janitor drift checks (every verb maps to a declared dimension; every dimension is reachable by >=1 verb; help == this manifest). See wiki/architecture/voice_guide_redesign.md sections 3, 4, 9. Keys beginning with _ are documentation and ignored by consumers.",
   "version": "1",
-
   "dimensions": {
-    "tab":       { "kind": "value", "fingerprint": "semantic" },
-    "filters":   { "kind": "set",   "type": "group-key[]", "fingerprint": "semantic" },
-    "selection": { "kind": "value", "nullable": true, "fingerprint": "semantic" },
-    "highlight": { "kind": "value", "nullable": true, "fingerprint": "semantic" },
-    "camera":    { "kind": "value", "fingerprint": "continuous" },
-    "playback":  { "kind": "value", "fingerprint": "semantic" },
-    "knob":      { "kind": "value", "dynamic": true, "fingerprint": "semantic" }
+    "tab": {
+      "kind": "value",
+      "fingerprint": "semantic"
+    },
+    "filters": {
+      "kind": "set",
+      "type": "group-key[]",
+      "fingerprint": "semantic"
+    },
+    "selection": {
+      "kind": "value",
+      "nullable": true,
+      "fingerprint": "semantic"
+    },
+    "cursor": {
+      "kind": "value",
+      "nullable": true,
+      "fingerprint": "semantic",
+      "_note": "position within the currently revealed node set; writes through to `selection`, so undo restores the node, not the index"
+    },
+    "highlight": {
+      "kind": "value",
+      "nullable": true,
+      "fingerprint": "semantic"
+    },
+    "camera": {
+      "kind": "value",
+      "fingerprint": "continuous"
+    },
+    "playback": {
+      "kind": "value",
+      "fingerprint": "semantic"
+    },
+    "knob": {
+      "kind": "value",
+      "dynamic": true,
+      "fingerprint": "semantic"
+    }
   },
-
   "verbs": [
-    { "verb": "go",      "dim": "tab",       "op": "set",      "args": "text",       "kind": "value", "inverse": "@journal" },
-    { "verb": "back",    "dim": "tab",       "op": "back",     "args": "none",       "kind": "value", "inverse": "@journal" },
-
-    { "verb": "show",    "dim": "filters",   "op": "union",    "args": "many",       "kind": "set",   "inverse": "hide" },
-    { "verb": "hide",    "dim": "filters",   "op": "diff",     "args": "many",       "kind": "set",   "inverse": "show" },
-    { "verb": "only",    "dim": "filters",   "op": "set",      "args": "many",       "kind": "set",   "inverse": "@journal" },
-    { "verb": "all",     "dim": "filters",   "op": "setAll",   "args": "opt",        "kind": "set",   "inverse": "@journal" },
-    { "verb": "none",    "dim": "filters",   "op": "setEmpty", "args": "opt",        "kind": "set",   "inverse": "@journal" },
-
-    { "verb": "open",    "dim": "selection", "op": "set",      "args": "text",       "kind": "value", "inverse": "close" },
-    { "verb": "close",   "dim": "selection", "op": "null",     "args": "none",       "kind": "value", "inverse": "open" },
-
-    { "verb": "find",    "dim": "highlight", "op": "set",      "args": "text",       "kind": "value", "inverse": "clear", "mode": "find" },
-    { "verb": "clear",   "dim": "highlight", "op": "null",     "args": "none",       "kind": "value", "inverse": "find" },
-    { "verb": "focus",   "dim": "highlight", "op": "set",      "args": "nary",       "kind": "value", "inverse": "clear", "mode": "focus" },
-
-    { "verb": "set",     "dim": "knob",      "op": "set",      "args": "knob-value", "kind": "value", "inverse": "@journal" },
-
-    { "verb": "fit",     "dim": "camera",    "op": "set",      "args": "none",       "kind": "value", "inverse": "@journal", "const": "fit" },
-    { "verb": "zoom",    "dim": "camera",    "op": "set",      "args": "one",        "kind": "value", "inverse": "@journal", "enum": ["in", "out"] },
-    { "verb": "pan",     "dim": "camera",    "op": "set",      "args": "one",        "kind": "value", "inverse": "@journal", "enum": ["left", "right", "up", "down"] },
-
-    { "verb": "read",    "dim": "playback",  "op": "set",      "args": "none",       "kind": "value", "inverse": "stop", "const": "read", "gated": true },
-    { "verb": "stop",    "dim": "playback",  "op": "set",      "args": "none",       "kind": "value", "inverse": "read", "const": "stop" },
-
-    { "verb": "undo",    "dim": "@journal",  "op": "undo",     "args": "none",       "kind": "meta",  "inverse": "redo" },
-    { "verb": "redo",    "dim": "@journal",  "op": "redo",     "args": "none",       "kind": "meta",  "inverse": "undo" },
-    { "verb": "reset",   "dim": "@journal",  "op": "reset",    "args": "none",       "kind": "meta",  "inverse": "@journal" },
-    { "verb": "restore", "dim": "@journal",  "op": "restore",  "args": "none",       "kind": "meta",  "inverse": "@journal" },
-
-    { "verb": "what",    "dim": "@read",     "op": "what",     "args": "none",       "kind": "read",  "inverse": null },
-    { "verb": "where",   "dim": "@read",     "op": "where",    "args": "none",       "kind": "read",  "inverse": null },
-    { "verb": "help",    "dim": "@read",     "op": "help",     "args": "none",       "kind": "read",  "inverse": null },
-
-    { "verb": "ask",     "dim": "@broker",   "op": "route",    "args": "text",       "kind": "action","inverse": null, "spend": true }
+    {
+      "verb": "go",
+      "dim": "tab",
+      "op": "set",
+      "args": "text",
+      "kind": "value",
+      "inverse": "@journal"
+    },
+    {
+      "verb": "back",
+      "dim": "tab",
+      "op": "back",
+      "args": "none",
+      "kind": "value",
+      "inverse": "@journal"
+    },
+    {
+      "verb": "show",
+      "dim": "filters",
+      "op": "union",
+      "args": "many",
+      "kind": "set",
+      "inverse": "hide"
+    },
+    {
+      "verb": "hide",
+      "dim": "filters",
+      "op": "diff",
+      "args": "many",
+      "kind": "set",
+      "inverse": "show"
+    },
+    {
+      "verb": "only",
+      "dim": "filters",
+      "op": "set",
+      "args": "many",
+      "kind": "set",
+      "inverse": "@journal"
+    },
+    {
+      "verb": "all",
+      "dim": "filters",
+      "op": "setAll",
+      "args": "opt",
+      "kind": "set",
+      "inverse": "@journal"
+    },
+    {
+      "verb": "none",
+      "dim": "filters",
+      "op": "setEmpty",
+      "args": "opt",
+      "kind": "set",
+      "inverse": "@journal"
+    },
+    {
+      "verb": "open",
+      "dim": "selection",
+      "op": "set",
+      "args": "text",
+      "kind": "value",
+      "inverse": "close"
+    },
+    {
+      "verb": "close",
+      "dim": "selection",
+      "op": "null",
+      "args": "none",
+      "kind": "value",
+      "inverse": "open"
+    },
+    {
+      "verb": "find",
+      "dim": "highlight",
+      "op": "set",
+      "args": "text",
+      "kind": "value",
+      "inverse": "clear",
+      "mode": "find"
+    },
+    {
+      "verb": "clear",
+      "dim": "highlight",
+      "op": "null",
+      "args": "none",
+      "kind": "value",
+      "inverse": "find"
+    },
+    {
+      "verb": "focus",
+      "dim": "highlight",
+      "op": "set",
+      "args": "nary",
+      "kind": "value",
+      "inverse": "clear",
+      "mode": "focus"
+    },
+    {
+      "verb": "set",
+      "dim": "knob",
+      "op": "set",
+      "args": "knob-value",
+      "kind": "value",
+      "inverse": "@journal"
+    },
+    {
+      "verb": "fit",
+      "dim": "camera",
+      "op": "set",
+      "args": "none",
+      "kind": "value",
+      "inverse": "@journal",
+      "const": "fit"
+    },
+    {
+      "verb": "zoom",
+      "dim": "camera",
+      "op": "set",
+      "args": "one",
+      "kind": "value",
+      "inverse": "@journal",
+      "enum": [
+        "in",
+        "out"
+      ]
+    },
+    {
+      "verb": "pick",
+      "dim": "cursor",
+      "op": "set",
+      "args": "one",
+      "kind": "value",
+      "inverse": "@journal",
+      "enum": [
+        "random",
+        "first",
+        "last"
+      ]
+    },
+    {
+      "verb": "next",
+      "dim": "cursor",
+      "op": "step",
+      "args": "none",
+      "kind": "value",
+      "inverse": "previous",
+      "const": "next"
+    },
+    {
+      "verb": "previous",
+      "dim": "cursor",
+      "op": "step",
+      "args": "none",
+      "kind": "value",
+      "inverse": "next",
+      "const": "previous"
+    },
+    {
+      "verb": "pan",
+      "dim": "camera",
+      "op": "set",
+      "args": "one",
+      "kind": "value",
+      "inverse": "@journal",
+      "enum": [
+        "left",
+        "right",
+        "up",
+        "down"
+      ]
+    },
+    {
+      "verb": "read",
+      "dim": "playback",
+      "op": "set",
+      "args": "none",
+      "kind": "value",
+      "inverse": "stop",
+      "const": "read",
+      "gated": true
+    },
+    {
+      "verb": "stop",
+      "dim": "playback",
+      "op": "set",
+      "args": "none",
+      "kind": "value",
+      "inverse": "read",
+      "const": "stop"
+    },
+    {
+      "verb": "undo",
+      "dim": "@journal",
+      "op": "undo",
+      "args": "none",
+      "kind": "meta",
+      "inverse": "redo"
+    },
+    {
+      "verb": "redo",
+      "dim": "@journal",
+      "op": "redo",
+      "args": "none",
+      "kind": "meta",
+      "inverse": "undo"
+    },
+    {
+      "verb": "reset",
+      "dim": "@journal",
+      "op": "reset",
+      "args": "none",
+      "kind": "meta",
+      "inverse": "@journal"
+    },
+    {
+      "verb": "restore",
+      "dim": "@journal",
+      "op": "restore",
+      "args": "none",
+      "kind": "meta",
+      "inverse": "@journal"
+    },
+    {
+      "verb": "what",
+      "dim": "@read",
+      "op": "what",
+      "args": "none",
+      "kind": "read",
+      "inverse": null
+    },
+    {
+      "verb": "where",
+      "dim": "@read",
+      "op": "where",
+      "args": "none",
+      "kind": "read",
+      "inverse": null
+    },
+    {
+      "verb": "help",
+      "dim": "@read",
+      "op": "help",
+      "args": "none",
+      "kind": "read",
+      "inverse": null
+    },
+    {
+      "verb": "ask",
+      "dim": "@broker",
+      "op": "route",
+      "args": "text",
+      "kind": "action",
+      "inverse": null,
+      "spend": true
+    }
   ]
 }

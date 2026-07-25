@@ -598,6 +598,32 @@ async function main() {
     afterClear.nodes === afterClear.nodesTotal && afterClear.links === afterClear.linksTotal,
     afterClear.nodes + '/' + afterClear.nodesTotal + ' nodes, ' + afterClear.links + '/' + afterClear.linksTotal + ' edges drawn');
 
+  // ---- cursor + read: exploring with no mouse and no screen ---------------
+  await row(page, 'A19 only levin friston (a small revealed set to walk)', 'only levin friston', { ok: true });
+  await row(page, 'A20 pick first -> names what it landed on and where', 'pick first',
+    { ok: true, spoken: /\|\s*1 of 4 revealed/ });
+  const picked1 = await page.eval(IFRAME_DOC + "return (w.currentRightNode || {}).label || null;");
+  record('A20a pick actually opens that node', !!picked1, 'right panel holds: ' + picked1);
+  await row(page, 'A21 next -> moves one along', 'next', { ok: true, spoken: /\|\s*2 of 4 revealed/ });
+  const picked2 = await page.eval(IFRAME_DOC + "return (w.currentRightNode || {}).label || null;");
+  record('A21a next lands on a DIFFERENT node', picked1 !== picked2, picked1 + ' -> ' + picked2);
+  await row(page, 'A22 previous -> and back', 'previous', { ok: true, spoken: /\|\s*1 of 4 revealed/ });
+  await row(page, 'A23 pick random -> stays inside the revealed set', 'pick random',
+    { ok: true, spoken: /of 4 revealed/ });
+  // read: the PAGE speaks. Assert it took the article text, not that audio came
+  // out -- headless Chrome has no speech engine, so the claim under test is that
+  // the right text was handed to the right system.
+  const readRes = await runCmd(page, 'read');
+  record('A24 read takes the open article, by word count', /reading .+\s*\|\s*\d+ words/.test(readRes.spoken || ''), readRes.spoken);
+  await row(page, 'A25 stop -> interruptible', 'stop', { ok: true, spoken: /^stopped$/ });
+  await row(page, 'A26 close, then read -> honest refusal, not silence', 'close', { ok: true });
+  await row(page, 'A27 read with nothing open says so', 'read',
+    { ok: false, spoken: /nothing is open to read/ });
+  await row(page, 'A28 none, then pick -> nothing revealed to pick from', 'none', { ok: true });
+  await row(page, 'A29 pick random over an empty reveal', 'pick random',
+    { ok: false, spoken: /nothing is revealed/ });
+  await row(page, 'A30 all (restore)', 'all', { ok: true });
+
   // ---- second filter families: the edges Tom could not remove --------------
   const edgesOf = function (page) {
     return page.eval(IFRAME_DOC + "var el = d && d.getElementById('edge-status');" +
