@@ -2119,21 +2119,23 @@ var VoiceGuide = (function() {
   var out = document.getElementById('ccl-result');
   if (!CL || !input || !out) { return; }
 
-  var grammar = null, dest = null;
+  var grammar = null, dest = null, manifests = null;
   var journal = CL.createJournal();
   var lastTabBtn = null;     // for `back`
   var bootFilters = null;    // first-seen filter state, for reset/restore (v1)
-  var TAB = 'sociogram';     // v1 focuses the Sociogram tab
+  var TAB = 'sociogram';     // active-tab key; set per command in run() (fan-out, inc 4)
 
   var lastResult = null;
   function show(msg, cls) { lastResult = { ok: cls !== 'err', spoken: String(msg) }; out.textContent = msg; out.className = cls === 'err' ? 'ccl-err' : (cls === 'ok' ? 'ccl-ok' : ''); return lastResult; }
 
   Promise.all([
     fetch('voice_guide/verbs.json?v=' + Date.now()).then(function (r) { return r.json(); }),
-    fetch('voice_guide/destinations.json?v=' + Date.now()).then(function (r) { return r.json(); })
+    fetch('voice_guide/destinations.json?v=' + Date.now()).then(function (r) { return r.json(); }),
+    fetch('voice_guide/manifests.json?v=' + Date.now()).then(function (r) { return r.json(); })
   ]).then(function (res) {
     grammar = CL.compileGrammar(res[0]);
     dest = res[1];
+    manifests = res[2];
     var c = dest.counts || {};
     show('CCL ready (' + (c.nodes || '?') + ' nodes, ' + (c.tabs || '?') + ' tabs). Press "/" to focus.', 'ok');
   }).catch(function (e) { show('CCL load failed: ' + (e && e.message || e), 'err'); });
@@ -2154,6 +2156,56 @@ var VoiceGuide = (function() {
   // Ask-AI checkbox off before runSearch so `find` can never spend a broker call.
   function pinPlainSearch() { var d = ifDoc(), ai = d && d.getElementById('search-ai-mode'); if (ai && ai.checked) { ai.checked = false; } }
 
+  // ---- active tab -> manifest (fan-out, inc 4) ----
+  // Self-contained: read the VISIBLE sub-tab row only (same rule as the shell's
+  // activeTabSrc bug fix -- the global .tab-btn.active reaches into the HIDDEN
+  // tools row on chapter pages). The TABS `key` IS the manifest key, so match
+  // the active data-src's filename (or the key) against each manifest entry.
+  function activeSrc() {
+    var r2e = document.getElementById('row2-edu'), r2 = document.getElementById('row2'), btn = null;
+    if (r2e && r2e.style.display !== 'none') { btn = document.querySelector('#row2-edu .tab-btn.active'); }
+    else if (r2 && r2.style.display !== 'none') { btn = document.querySelector('#row2 .tab-btn.active'); }
+    return btn ? (btn.getAttribute('data-src') || '') : '';
+  }
+  function activeManifest() {
+    var src = activeSrc(); if (!src || !manifests || !manifests.tabs) { return null; }
+    var file = src.split('/').pop().replace(/\.html$/, '');
+    var tabs = manifests.tabs;
+    for (var key in tabs) {
+      if (key === file) { return { key: key, m: tabs[key] }; }
+      var aka = tabs[key].aka || [];
+      // Match the ACTIVE tab's filename against this entry's aliases only. (An
+      // earlier `|| aka[i] === key` compared an entry's alias to its own key, so
+      // the first entry whose aka listed its key matched every tab -- the whole
+      // tab-aware path collapsed to sociogram. Caught by test_voice_shell.cjs.)
+      for (var i = 0; i < aka.length; i++) { if (aka[i] === file) { return { key: key, m: tabs[key] }; } }
+    }
+    return null;
+  }
+  // knob id -> its DOM bind, from the active tab's manifest (for undo/redo writes).
+  function knobBind(id) {
+    var am = activeManifest(); if (!am) { return null; }
+    var ks = am.m.knobs || [];
+    for (var i = 0; i < ks.length; i++) { if (ks[i].id === id) { return ks[i].bind; } }
+    return null;
+  }
+  // T1 knob read/write: a bound <select>.value or checkbox.checked in the iframe.
+  // bool knobs read/write 'on'/'off'; the write fires 'change' so the tab redraws.
+  function readKnob(bind) {
+    var d = ifDoc(); if (!d || !bind) { return null; }
+    if (bind.select)   { var s = d.querySelector(bind.select);   return s ? s.value : null; }
+    if (bind.checkbox) { var c = d.querySelector(bind.checkbox); return c ? (c.checked ? 'on' : 'off') : null; }
+    return null;
+  }
+  function writeKnob(bind, value) {
+    var d = ifDoc(), w = ifWin(); if (!d || !bind) { throw new Error('this view has no bound control'); }
+    var el, ev;
+    if (bind.select)   { el = d.querySelector(bind.select);   if (!el) { throw new Error('control not found'); } el.value = value; }
+    else if (bind.checkbox) { el = d.querySelector(bind.checkbox); if (!el) { throw new Error('control not found'); } el.checked = (value === 'on'); }
+    else { throw new Error('unbindable knob'); }
+    try { ev = new (w && w.Event || Event)('change', { bubbles: true }); el.dispatchEvent(ev); } catch (e) { /* older event ctor */ var e2 = d.createEvent('HTMLEvents'); e2.initEvent('change', true, false); el.dispatchEvent(e2); }
+  }
+
   // ---- dim read/write (absolute-vector journal + write-returns-read) ----
   function readDim(dim) {
     var w = ifWin(), d = ifDoc();
@@ -2165,6 +2217,7 @@ var VoiceGuide = (function() {
     return null;
   }
   function writeDim(dim, value) {
+    if (dim.indexOf('knob:') === 0) { var bind = knobBind(dim.slice(5)); if (bind) { writeKnob(bind, value); } return; }
     if (dim === 'filters') { var w = ifWin(); for (var k in value) { if (Object.prototype.hasOwnProperty.call(value, k)) { w.groupVisibility[k] = value[k]; } } syncFilterUI(); }
     else if (dim === 'selection') { if (!value) { call('dismissRightPanel'); } else { call('openNodeByLabel', value.label); } }
     else if (dim === 'highlight') { setSearch((value && value.q) || ''); call('runSearch'); }
@@ -2187,6 +2240,11 @@ var VoiceGuide = (function() {
       if (p.error === 'unresolved') { return show('Could not find "' + p.term + '".', 'err'); }
       if (p.error === 'unsupported_here') { return show('Not available on this view. Supported: ' + p.supported.slice(0, 10).join(', '), 'err'); }
       if (p.error === 'unknown_verb') { return show('Unknown command "' + p.verb + '".', 'err'); }
+      // Knob errors carry their own allowed-value list from plan() -- surface it
+      // rather than the bare code, so a wrong value TEACHES the vocabulary
+      // (result contract, redesign section 5). Both are v1 knob-tab paths.
+      if (p.error === 'unknown_knob') { return show('No "' + p.knob + '" control on this view. Available: ' + (p.supported || []).join(', '), 'err'); }
+      if (p.error === 'unresolved_value') { return show('"' + p.term + '" is not a ' + p.knob + ' value. Allowed: ' + (p.allowed || []).join(', '), 'err'); }
       return show(p.error + (p.verb ? ' (' + p.verb + ')' : ''), 'err');
     }
     try {
@@ -2195,6 +2253,7 @@ var VoiceGuide = (function() {
         case 'selection': return execMut('selection', function () { if (p.action === 'open') { call('openNodeByLabel', p.label); } else { call('dismissRightPanel'); } }, p.action === 'open' ? ('opened ' + p.label) : 'closed panel');
         case 'highlight': return execMut('highlight', function () { if (p.action === 'find') { pinPlainSearch(); setSearch(p.text); call('runSearch'); } else if (p.action === 'clear') { setSearch(''); call('runSearch'); } else { call('linkGroups', p.keys); } }, didHighlight(p));
         case 'camera':    call('fitAll'); return show('fit', 'ok');   // camera not journaled in v1
+        case 'knob':      return execKnob(p);
         case 'shell':     return execShell(p);
         case 'journal':   return execJournal(p);
         case 'read':      return execRead(p);
@@ -2224,6 +2283,20 @@ var VoiceGuide = (function() {
     journal.record(TAB, { dim: 'filters', before: before, after: readDim('filters') });
     var on = onGroups(), extra = (p.unresolved && p.unresolved.length) ? ('  (unresolved: ' + p.unresolved.join(', ') + ')') : '';
     show(p.action + ' -> ' + on.length + ' groups on: ' + on.join(', ') + extra, 'ok');
+  }
+  // T1 knob set (fan-out, inc 4). Write-returns-read: re-read after writing so
+  // the spoken answer reflects the tab's OWN interlocks (e.g. metabolism resets
+  // a yield metric to 'events' when you leave wave view) -- never claim the
+  // requested value if the tab clamped it. Journaled per-tab as an absolute
+  // vector under dim 'knob:<id>' so `undo` reverts it.
+  function execKnob(p) {
+    var dim = 'knob:' + p.knob;
+    var before = readKnob(p.bind);
+    writeKnob(p.bind, p.value);
+    var after = readKnob(p.bind);
+    journal.record(TAB, { dim: dim, before: before, after: after });
+    var got = (after === p.value) ? ('set ' + p.knob + ' ' + after) : ('set ' + p.knob + ' -> ' + after + ' (' + p.value + ' not held by this view)');
+    show(got, 'ok');
   }
   function execShell(p) {
     if (p.action === 'switchTab') {
@@ -2257,13 +2330,27 @@ var VoiceGuide = (function() {
   // ---- run + wire input ----
   function run(text) {
     if (!grammar) { return show('CCL still loading...', 'err'); }
-    var ctx = { caps: CL.SOCIOGRAM_CAPS, roster: roster(), tabs: dest.tabs, nodes: dest.nodes };
+    // Tab-aware ctx: caps + knobs come from the active tab's manifest. Off a
+    // known tab (chapter page / unmapped tab) fall back to the verified
+    // Sociogram behavior so nothing regresses (inc 4).
+    var am = activeManifest();
+    var caps = am ? am.m.caps : CL.SOCIOGRAM_CAPS;
+    var knobs = am ? (am.m.knobs || []) : [];
+    TAB = am ? am.key : 'sociogram';   // journal + reset are per-tab keyed
+    var ctx = { caps: caps, knobs: knobs, roster: roster(), tabs: dest.tabs, nodes: dest.nodes };
     execute(CL.plan(CL.parse(text, grammar), ctx));
     return lastResult;
   }
   // Shared entry point: the voice guide's run_command routes spoken commands
   // through this SAME parse->plan->execute path (redesign section 2, one code path).
   window.CCLRun = run;
+  // Resolver introspection for the headless shell test (scripts/test_voice_shell.cjs):
+  // which manifest the ACTIVE tab resolved to, and the caps that follow from it.
+  // Read-only, no side effects -- the section-9 coverage audit consumes it too.
+  window.CCLDebug = function () {
+    var am = activeManifest();
+    return { src: activeSrc(), tab: am && am.key, caps: am ? am.m.caps : null, knobs: am ? (am.m.knobs || []).map(function (k) { return k.id; }) : null };
+  };
   input.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); var v = input.value.trim(); if (v) { run(v); } } });
   document.addEventListener('keydown', function (e) {
     if (e.key === '/' && document.activeElement !== input) {

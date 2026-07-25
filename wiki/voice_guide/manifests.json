@@ -1,0 +1,76 @@
+{
+  "_about": "Per-tab CCL manifests (voice_guide_redesign.md sections 3, 8, 9). Each tab declares its supported verbs (caps) and its knob dimensions with a DOM binding + spoken aliases. Consumed by BOTH the shell (explorer.html builds the active tab's ctx from this) and the coverage audit (every live interactive control on a tab must be a bound knob or an explicit exclusion -- unbound control => loud pre-push failure, section 9). Adding a T1 tab is ONE entry here plus a knowledge default file -- never a new tool, prompt, or session-schema change. Knob `values[].v` are the real DOM option values (NOT their display labels); `aka` are the spoken forms a user would say. Keys beginning with _ are documentation and ignored by consumers.",
+  "version": "1",
+
+  "tabs": {
+    "sociogram": {
+      "aka": ["sociogram", "graph", "map", "wiki_narration"],
+      "tier": "T3",
+      "caps": ["go", "back", "show", "hide", "only", "all", "none", "open", "close", "find", "clear", "focus", "fit", "undo", "redo", "reset", "restore", "what", "where", "help"],
+      "knobs": [],
+      "_knobs_note": "Sociogram's affordances are filters/selection/highlight/camera (their own dim kinds, not `set` knobs). It carries no `set` verb in v1. Listed here so the shell can read one uniform per-tab source; its caps mirror the engine's SOCIOGRAM_CAPS until step 2 migrates the shell to read caps from this file."
+    },
+
+    "metabolism": {
+      "aka": ["metabolism", "pulse", "activity", "metabolism_view"],
+      "tier": "T1",
+      "caps": ["go", "back", "set", "undo", "redo", "what", "where", "help"],
+      "_caps_note": "reset/restore are deferred to step 2b: they need a per-tab boot-captured snapshot of all knob dims (redesign section 7), whereas the v1 shell only captures Sociogram bootFilters. Until 2b they report unsupported_here on metabolism (honest, never faked). undo/redo work now via the absolute-vector journal (tab-agnostic).",
+      "knobs": [
+        {
+          "id": "view",
+          "label": "View",
+          "kind": "enum",
+          "bind": { "select": "#view" },
+          "values": [
+            { "v": "raster", "aka": ["raster", "per-agent", "per agent", "runs"] },
+            { "v": "wave", "aka": ["wave", "waveform", "pulse", "system pulse"] },
+            { "v": "dual", "aka": ["dual", "returned", "returned vs sent", "sent vs returned", "tokens"] }
+          ]
+        },
+        {
+          "id": "metric",
+          "label": "Metric",
+          "kind": "enum",
+          "bind": { "select": "#metric" },
+          "values": [
+            { "v": "events", "aka": ["events", "activity"] },
+            { "v": "out", "aka": ["out", "output", "output tokens", "work"] },
+            { "v": "total", "aka": ["total", "total tokens"] },
+            { "v": "cache_read", "aka": ["cache", "cache read", "cache-read", "recirculated"] },
+            { "v": "thinking_blocks", "aka": ["thinking steps", "thinking blocks", "steps"] },
+            { "v": "thinking_tokens", "aka": ["thinking tokens"] },
+            { "v": "dur_min", "aka": ["duration", "minutes", "time"] },
+            { "v": "yield_files", "aka": ["files", "yield files", "files added"] },
+            { "v": "yield_links", "aka": ["links", "wikilinks", "yield links"] },
+            { "v": "yield_prs", "aka": ["prs seen", "prs first-seen", "first seen"] },
+            { "v": "yield_prs_made", "aka": ["prs made", "prs articulated", "articulated"] },
+            { "v": "yield_signals", "aka": ["signals", "cross-tradition signals", "cross tradition"] }
+          ]
+        },
+        {
+          "id": "color",
+          "label": "Color",
+          "kind": "enum",
+          "bind": { "select": "#color" },
+          "values": [
+            { "v": "category", "aka": ["category", "by category"] },
+            { "v": "cache_ratio", "aka": ["cache ratio", "cache-read share", "cache share"] }
+          ]
+        },
+        {
+          "id": "logy",
+          "label": "Log Y",
+          "kind": "bool",
+          "bind": { "checkbox": "#logy" },
+          "values": [
+            { "v": "on", "aka": ["on", "log", "logarithmic", "yes"] },
+            { "v": "off", "aka": ["off", "linear", "no"] }
+          ]
+        }
+      ],
+      "controls_excluded": [],
+      "_controls_note": "The 4 knobs above are the controls found by static read of metabolism_view.html (selects #view/#metric/#color, checkbox #logy). Step 2 runs the LIVE runtime-DOM coverage audit in the debug panel (section 9); any interactive control it finds that is neither a bound knob nor listed in controls_excluded is a loud failure. Reconcile this list against that audit before the first metabolism No-Blind-Push."
+    }
+  }
+}

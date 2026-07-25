@@ -251,6 +251,56 @@
     return { ok: false, error: 'unresolved', term: term };
   }
 
+  // term -> a knob's concrete option value, against a knob spec's declared
+  // values ({v, aka[]}). Fuzzy like resolveGroups because a user says the
+  // spoken label ("waveform"), not the DOM option value ("wave"). v1 knob
+  // tabs are T1 selects/checkboxes (redesign section 8); the shell writes
+  // `value` into the bound control. Same result contract as the other
+  // resolvers so ambiguity rides in the result (no model memory needed).
+  function resolveKnobValue(term, knobSpec) {
+    const t = low(term);
+    const vals = (knobSpec && knobSpec.values) || [];
+    const allowed = vals.map(function (x) { return x.v; });
+    if (!t) { return { ok: false, error: 'unresolved_value', term: term, knob: knobSpec && knobSpec.id, allowed: allowed }; }
+
+    const byV = vals.filter(function (x) { return low(x.v) === t; });
+    if (byV.length === 1) { return { ok: true, value: byV[0].v, term: term }; }
+
+    const byAka = vals.filter(function (x) { return (x.aka || []).some(function (a) { return low(a) === t; }); });
+    if (byAka.length === 1) { return { ok: true, value: byAka[0].v, term: term }; }
+    if (byAka.length > 1) { return { ok: false, error: 'ambiguous', term: term, candidates: byAka.map(function (x) { return x.v; }).slice(0, CAND_CAP) }; }
+
+    const sub = vals.filter(function (x) {
+      return low(x.v).indexOf(t) !== -1 || (x.aka || []).some(function (a) { return low(a).indexOf(t) !== -1; });
+    });
+    if (sub.length === 1) { return { ok: true, value: sub[0].v, term: term }; }
+    if (sub.length > 1) { return { ok: false, error: 'ambiguous', term: term, candidates: sub.map(function (x) { return x.v; }).slice(0, CAND_CAP) }; }
+
+    return { ok: false, error: 'unresolved_value', term: term, knob: knobSpec && knobSpec.id, allowed: allowed };
+  }
+
+  // ---- the coverage audit (pure core; redesign section 9) ------------------
+  //
+  // The north star made checkable: every control a user can operate on a tab
+  // must be a bound knob or an explicit exclusion, else voice cannot reach it.
+  // This is the PURE diff; the browser enumerates the tab's LIVE interactive
+  // element ids (the Sociogram's 29 filter checkboxes exist only as runtime
+  // innerHTML -- static HTML parsing is provably blind, so enumeration must be
+  // runtime) and feeds them in. Tests inject a static id list.
+  //   declaredBindIds  ids the manifest's knobs bind (['view','metric',...])
+  //   liveControlIds   ids of the tab's live interactive controls
+  //   excluded         ids intentionally outside the voice surface (with reason, elsewhere)
+  // Returns ok:false (loud) when a live control is neither bound nor excluded.
+  function auditCoverage(declaredBindIds, liveControlIds, excluded) {
+    declaredBindIds = declaredBindIds || [];
+    liveControlIds = liveControlIds || [];
+    excluded = excluded || [];
+    const has = function (arr, id) { return arr.indexOf(id) !== -1; };
+    const unbound = liveControlIds.filter(function (id) { return !has(declaredBindIds, id) && !has(excluded, id); });
+    const missing = declaredBindIds.filter(function (id) { return !has(liveControlIds, id); });
+    return { ok: unbound.length === 0, unbound: unbound, missing: missing };
+  }
+
   // ---- the journal ---------------------------------------------------------
   //
   // Per-tab undo/redo over ABSOLUTE vectors {dim, before, after} (redesign
@@ -403,6 +453,19 @@
         return { ok: true, kind: 'highlight', action: 'focus', keys: res.keys, unresolved: res.unresolved, journal: { dim: 'highlight' } };
       }
 
+      case 'set': {
+        // set <knob> <value> -- validate against THIS tab's declared knobs
+        // (ctx.knobs from the per-tab manifest). T1 tabs bind a select/checkbox;
+        // the shell writes `value` into `bind` (redesign sections 3, 8).
+        const knobs = ctx.knobs || [];
+        let spec = null;
+        for (let i = 0; i < knobs.length; i++) { if (low(knobs[i].id) === low(op.knob)) { spec = knobs[i]; break; } }
+        if (!spec) { return { ok: false, error: 'unknown_knob', knob: op.knob, supported: knobs.map(function (k) { return k.id; }) }; }
+        const rv = resolveKnobValue(op.args[0], spec);
+        if (!rv.ok) { return rv; }
+        return { ok: true, kind: 'knob', knob: spec.id, value: rv.value, bind: spec.bind, journal: { dim: 'knob:' + spec.id } };
+      }
+
       case 'fit':
         return { ok: true, kind: 'camera', action: 'fit', journal: { dim: 'camera' } };
 
@@ -425,6 +488,8 @@
     resolveGroups: resolveGroups,
     resolveTab: resolveTab,
     resolveNode: resolveNode,
+    resolveKnobValue: resolveKnobValue,
+    auditCoverage: auditCoverage,
     createJournal: createJournal,
     plan: plan,
     SOCIOGRAM_CAPS: SOCIOGRAM_CAPS,

@@ -456,6 +456,102 @@ check('plan: every SOCIOGRAM_CAPS verb yields a plan, never unsupported_here', f
   }
 });
 
+// ---- per-tab manifest fan-out: set/knob planning + coverage audit -----------
+// Increment 4 step 1: the pure engine gains `set` (knob) planning validated
+// against a tab's manifest, plus the coverage-audit diff. Metabolism is the
+// first knob tab (voice_guide_redesign.md sections 3, 8, 9).
+
+const MANIFEST = JSON.parse(fs.readFileSync(path.join(ROOT, 'wiki/voice_guide/manifests.json'), 'utf8'));
+const META = MANIFEST.tabs.metabolism;
+const META_CTX = { caps: META.caps, knobs: META.knobs, tabs: DEST.tabs, nodes: DEST.nodes, roster: ROSTER };
+function planMeta(str) { return CCL.plan(CCL.parse(str, grammar), META_CTX); }
+
+check('manifest: metabolism is well-formed (caps `set` + 4 bound knobs)', function () {
+  assert.ok(Array.isArray(META.caps) && META.caps.indexOf('set') !== -1, 'metabolism must cap `set`');
+  assert.strictEqual(META.knobs.length, 4);
+  for (const k of META.knobs) {
+    assert.ok(k.id && k.bind && (k.bind.select || k.bind.checkbox), 'knob ' + k.id + ' needs a DOM bind');
+    assert.ok(Array.isArray(k.values) && k.values.length >= 2, 'knob ' + k.id + ' needs >=2 values');
+  }
+});
+check('manifest: sociogram caps mirror the engine SOCIOGRAM_CAPS (one source, no drift)', function () {
+  assert.deepStrictEqual(MANIFEST.tabs.sociogram.caps.slice().sort(), CCL.SOCIOGRAM_CAPS.slice().sort());
+});
+
+check('plan set: spoken alias resolves to the DOM value (set view waveform -> wave)', function () {
+  const p = planMeta('set view waveform');
+  assert.deepStrictEqual({ ok: p.ok, kind: p.kind, knob: p.knob, value: p.value }, { ok: true, kind: 'knob', knob: 'view', value: 'wave' });
+  assert.deepStrictEqual(p.bind, { select: '#view' });
+  assert.strictEqual(p.journal.dim, 'knob:view');
+});
+check('plan set: exact DOM value resolves (set view dual)', function () {
+  assert.strictEqual(planMeta('set view dual').value, 'dual');
+});
+check('plan set: multi-word value resolves (returned vs sent -> dual)', function () {
+  assert.strictEqual(planMeta('set view returned vs sent').value, 'dual');
+});
+check('plan set: bool knob maps aliases both ways (logy on->on, linear->off)', function () {
+  assert.strictEqual(planMeta('set logy on').value, 'on');
+  assert.strictEqual(planMeta('set logy linear').value, 'off');
+});
+check('plan set: unknown knob on this tab -> unknown_knob + supported list', function () {
+  const p = planMeta('set brightness 0.5');
+  assert.strictEqual(p.error, 'unknown_knob');
+  assert.deepStrictEqual(p.supported.slice().sort(), ['color', 'logy', 'metric', 'view']);
+});
+check('plan set: bad value -> unresolved_value + allowed list (never a silent no-op)', function () {
+  const p = planMeta('set view zzzznope');
+  assert.strictEqual(p.error, 'unresolved_value');
+  assert.deepStrictEqual(p.allowed, ['raster', 'wave', 'dual']);
+});
+check('plan set: ambiguous value asks, candidates ride in the result (metric tokens)', function () {
+  const p = planMeta('set metric tokens'); // substring-hits output/total/thinking *tokens*
+  assert.strictEqual(p.error, 'ambiguous');
+  assert.ok(p.candidates.length >= 2, 'expected multiple candidates, got ' + JSON.stringify(p.candidates));
+});
+
+check('plan: Sociogram (no `set` cap) still rejects set as unsupported_here', function () {
+  assert.strictEqual(planCmd('set view wave').error, 'unsupported_here');
+});
+check('plan: metabolism honestly degrades Sociogram-only verbs (unsupported_here, never faked)', function () {
+  assert.strictEqual(planMeta('only levin').error, 'unsupported_here');
+  assert.strictEqual(planMeta('open x').error, 'unsupported_here');
+  assert.strictEqual(planMeta('fit').error, 'unsupported_here');
+});
+check('plan: shared verbs plan cross-tab (metabolism go/what/undo)', function () {
+  assert.strictEqual(planMeta('go sociogram').kind, 'shell');
+  assert.strictEqual(planMeta('what').kind, 'read');
+  assert.strictEqual(planMeta('undo').kind, 'journal');
+});
+check('plan: every metabolism cap yields a plan, never unsupported_here', function () {
+  const samples = {
+    go: 'go sociogram', back: 'back', set: 'set view wave',
+    undo: 'undo', redo: 'redo', reset: 'reset', restore: 'restore',
+    what: 'what', where: 'where', help: 'help',
+  };
+  for (const verb of META.caps) {
+    assert.ok(samples[verb], 'no sample command for metabolism cap "' + verb + '"');
+    assert.notStrictEqual(planMeta(samples[verb]).error, 'unsupported_here', 'cap "' + verb + '" planned as unsupported');
+  }
+});
+
+check('audit: a fully-bound tab passes (every live control is a knob)', function () {
+  const declared = META.knobs.map(function (k) { return (k.bind.select || k.bind.checkbox).replace('#', ''); });
+  assert.deepStrictEqual(CCL.auditCoverage(declared, ['view', 'metric', 'color', 'logy'], META.controls_excluded),
+    { ok: true, unbound: [], missing: [] });
+});
+check('audit: an unbound live control is a LOUD failure (the north-star invariant)', function () {
+  const r = CCL.auditCoverage(['view', 'metric', 'color', 'logy'], ['view', 'metric', 'color', 'logy', 'sneaky_new_toggle'], []);
+  assert.strictEqual(r.ok, false);
+  assert.deepStrictEqual(r.unbound, ['sneaky_new_toggle']);
+});
+check('audit: an explicit exclusion silences a control (in data, not prose)', function () {
+  assert.strictEqual(CCL.auditCoverage(['view'], ['view', 'legend_toggle'], ['legend_toggle']).ok, true);
+});
+check('audit: a declared-but-absent control is reported missing (stale manifest)', function () {
+  assert.deepStrictEqual(CCL.auditCoverage(['view', 'gone'], ['view'], []).missing, ['gone']);
+});
+
 // ---- report -----------------------------------------------------------------
 
 if (failures.length) {
