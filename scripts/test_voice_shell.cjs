@@ -607,15 +607,15 @@ async function main() {
   // ---- cursor + read: exploring with no mouse and no screen ---------------
   await row(page, 'A19 only levin friston (a small revealed set to walk)', 'only levin friston', { ok: true });
   await row(page, 'A20 pick first -> names what it landed on and where', 'pick first',
-    { ok: true, spoken: /\|\s*1 of 4 revealed/ });
+    { ok: true, spoken: /\|\s*1 of 4 nodes/ });
   const picked1 = await page.eval(IFRAME_DOC + "return (w.currentRightNode || {}).label || null;");
   record('A20a pick actually opens that node', !!picked1, 'right panel holds: ' + picked1);
-  await row(page, 'A21 next -> moves one along', 'next', { ok: true, spoken: /\|\s*2 of 4 revealed/ });
+  await row(page, 'A21 next -> moves one along', 'next', { ok: true, spoken: /\|\s*2 of 4 nodes/ });
   const picked2 = await page.eval(IFRAME_DOC + "return (w.currentRightNode || {}).label || null;");
   record('A21a next lands on a DIFFERENT node', picked1 !== picked2, picked1 + ' -> ' + picked2);
-  await row(page, 'A22 previous -> and back', 'previous', { ok: true, spoken: /\|\s*1 of 4 revealed/ });
+  await row(page, 'A22 previous -> and back', 'previous', { ok: true, spoken: /\|\s*1 of 4 nodes/ });
   await row(page, 'A23 pick random -> stays inside the revealed set', 'pick random',
-    { ok: true, spoken: /of 4 revealed/ });
+    { ok: true, spoken: /of 4 nodes/ });
   // read: the PAGE speaks. Assert it took the article text, not that audio came
   // out -- headless Chrome has no speech engine, so the claim under test is that
   // the right text was handed to the right system.
@@ -795,6 +795,33 @@ async function main() {
   await row(page, 'D7 go previous -> and back', 'go previous', { ok: true, spoken: /1 of \d+/ });
   const shotD = await page.screenshot(path.join(SHOTS, 'D-chapter.png'));
 
+  // ---- Phase E: the item model on a CONTENT tab ---------------------------
+  //
+  // The Sociogram was deep because it had addressable items; every other tab
+  // was a dead end for "show me the cards". Items are declared per tab now, so
+  // the same cursor and the same reader work on a page with no graph at all.
+  process.stdout.write('\nPhase E -- items on a content tab (Start Here)\n');
+  await page.eval("var b = document.getElementById('chap-intro'); if (b) { b.click(); } return true;");
+  await sleep(2500);
+  await assertManifest(page, 'start_here', 'start_here.html');
+  await row(page, 'E1 what -> counts the walkable sections', 'what',
+    { ok: true, spoken: /\d+ sections here/ });
+  await row(page, 'E2 pick first -> names the section it landed on', 'pick first',
+    { ok: true, spoken: /1 of \d+ sections/ });
+  const sel1 = await page.eval(IFRAME_DOC + "var e = d.querySelector('.ccl-current h2'); return e ? e.textContent.trim() : null;");
+  record('E2a the section is marked and scrolled to', !!sel1, 'current section: ' + sel1);
+  await row(page, 'E3 next -> walks to the following section', 'next',
+    { ok: true, spoken: /2 of \d+ sections/ });
+  const sel2 = await page.eval(IFRAME_DOC + "var e = d.querySelector('.ccl-current h2'); return e ? e.textContent.trim() : null;");
+  record('E3a it moved to a different section', !!sel2 && sel1 !== sel2, sel1 + ' -> ' + sel2);
+  const readE = await runCmd(page, 'read');
+  record('E4 read reads THE SECTION the cursor is on, and names it',
+    /reading Who's who\?/.test(readE.spoken || '') && /\d+ words/.test(readE.spoken || ''), readE.spoken);
+  await row(page, 'E5 stop', 'stop', { ok: true, spoken: /^stopped$/ });
+  await row(page, 'E6 only levin -> still honestly unsupported on a content tab', 'only levin',
+    { ok: false, spoken: /Not available on this view/ });
+  const shotE = await page.screenshot(path.join(SHOTS, 'E-items.png'));
+
   // ---- report ----
   const failed = results.filter(function (r) { return !r.ok; });
   process.stdout.write('\n' + '-'.repeat(70) + '\n');
@@ -802,7 +829,7 @@ async function main() {
   process.stdout.write('page exceptions: ' + page.exceptions.length + '   console errors: ' + page.consoleErrors.length + '\n');
   page.exceptions.forEach(function (e) { process.stdout.write('  EXCEPTION  ' + e.split('\n')[0] + '\n'); });
   page.consoleErrors.forEach(function (e) { process.stdout.write('  CONSOLE    ' + e.slice(0, 200) + '\n'); });
-  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC, shotD].join('\n  ') + '\n');
+  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC, shotD, shotE].join('\n  ') + '\n');
 
   const clean = failed.length === 0 && page.exceptions.length === 0 && page.consoleErrors.length === 0;
   process.stdout.write(clean ? '\nSHELL TEST GREEN\n' : '\nSHELL TEST RED\n');

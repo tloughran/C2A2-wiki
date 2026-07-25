@@ -348,7 +348,12 @@
             }
           ]
         }
-      ]
+      ],
+      "items": {
+        "kind": "graph",
+        "noun": "node",
+        "_note": "Items come from the force graph's bound data; selecting one opens its article in the right panel."
+      }
     },
     "metabolism": {
       "aka": [
@@ -594,6 +599,76 @@
           "label": "Hover a run marker",
           "status": "excluded",
           "reason": "transient tooltip over the raster; no persistent state"
+        }
+      ],
+      "items": {
+        "kind": "none",
+        "noun": "item",
+        "_note": "A chart has no addressable items yet; the cursor verbs are correctly absent from its caps."
+      }
+    },
+    "start_here": {
+      "aka": [
+        "start here",
+        "start_here",
+        "home",
+        "intro"
+      ],
+      "tier": "T1",
+      "caps": [
+        "go",
+        "back",
+        "what",
+        "where",
+        "help",
+        "pick",
+        "next",
+        "previous",
+        "read",
+        "stop"
+      ],
+      "_caps_note": "A content tab: no graph, so no filters/cut/camera. What it CAN do is be walked and read, which is the whole point of the item model.",
+      "knobs": [],
+      "items": {
+        "kind": "dom",
+        "select": "section.section",
+        "label": {
+          "sel": "h2"
+        },
+        "noun": "section",
+        "_note": "Three numbered sections (Orient / Decode the names / See it work). The who's-who entries inside section 2 are a candidate second roster later."
+      },
+      "controls_excluded": [
+        {
+          "match": "a, button",
+          "reason": "the page's own links and buttons are navigation into other tabs, which voice reaches by name via `go`"
+        }
+      ],
+      "gestures": [
+        {
+          "id": "scroll",
+          "label": "Scroll the page",
+          "status": "covered",
+          "by": [
+            "pick",
+            "next",
+            "previous"
+          ],
+          "note": "Walking the sections scrolls them into view, which is the voice equivalent of scrolling."
+        },
+        {
+          "id": "link_click",
+          "label": "Click a link into another tab",
+          "status": "covered",
+          "by": [
+            "go"
+          ]
+        },
+        {
+          "id": "hover",
+          "label": "Hover",
+          "status": "excluded",
+          "reason": "transient; no state"
         }
       ]
     }

@@ -2243,10 +2243,13 @@ var VoiceGuide = (function() {
   // activeTabSrc bug fix -- the global .tab-btn.active reaches into the HIDDEN
   // tools row on chapter pages). The TABS `key` IS the manifest key, so match
   // the active data-src's filename (or the key) against each manifest entry.
+  // The active view's source, whichever row the user is actually looking at.
+  // This used to read ONLY the sub-tab rows, so on a chapter page it returned
+  // '' -- no manifest, and every content tab fell back to the shell caps. That
+  // is why declaring start_here alone did nothing: the tab could never be
+  // identified. activeTabBtn already knows which row is visible; use it.
   function activeSrc() {
-    var r2e = document.getElementById('row2-edu'), r2 = document.getElementById('row2'), btn = null;
-    if (r2e && r2e.style.display !== 'none') { btn = document.querySelector('#row2-edu .tab-btn.active'); }
-    else if (r2 && r2.style.display !== 'none') { btn = document.querySelector('#row2 .tab-btn.active'); }
+    var btn = activeTabBtn();
     return btn ? (btn.getAttribute('data-src') || '') : '';
   }
   function activeManifest() {
@@ -2498,6 +2501,37 @@ var VoiceGuide = (function() {
   // `next` means something, and the random pick happens HERE rather than in
   // the model -- picking an index is plumbing, not judgement.
   var cursorId = null;
+  // ---- items: one roster contract, several kinds --------------------------
+  //
+  // The Sociogram is deep because it has four things: addressable ITEMS, a way
+  // to reveal a subset, a way to WALK them, and a way to READ one. Three of
+  // those were already generic; only the roster was hard-wired to node
+  // circles, which is why every other tab was a dead end for "show me the
+  // cards". A tab now DECLARES its items, so walking and reading work anywhere
+  // -- adding a tab is a few selectors, not a subsystem.
+  function itemSpec() { var am = activeManifest(); return (am && am.m.items) || null; }
+  function itemNoun() { var sp = itemSpec(); return (sp && sp.noun) || 'item'; }
+  function domItems(sp) {
+    var d = ifDoc();
+    if (!d || !sp.select) { return []; }
+    var els = [].slice.call(d.querySelectorAll(sp.select)), out = [];
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      if (!el.offsetParent && getComputedStyle(el).display === 'none') { continue; }   // not on screen
+      var lab = '';
+      if (sp.label && sp.label.sel) { var h = el.querySelector(sp.label.sel); lab = h ? (h.textContent || '').trim() : ''; }
+      if (!lab) { lab = (el.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 60); }
+      out.push({ id: 'item:' + i, label: lab, el: el });
+    }
+    return out;
+  }
+  // The revealed roster for the ACTIVE tab, whatever kind it is.
+  function activeItems() {
+    var sp = itemSpec();
+    if (!sp || sp.kind === 'none') { return []; }
+    if (sp.kind === 'dom') { return domItems(sp); }
+    return revealedNodes();
+  }
   function revealedNodes() {
     var w = ifWin(), d = ifDoc();
     if (!w || !d) { return []; }
@@ -2515,7 +2549,7 @@ var VoiceGuide = (function() {
     return out;
   }
   function execCursor(p) {
-    var list = revealedNodes();
+    var list = activeItems();
     if (!list.length) { return show('nothing is revealed to pick from', 'err'); }
     var at = -1, i;
     for (i = 0; i < list.length; i++) { if (list[i].id === cursorId) { at = i; break; } }
@@ -2528,13 +2562,31 @@ var VoiceGuide = (function() {
       // Wraps deliberately: a voice user cannot see that they have hit the end.
       idx = p.dir === 'next' ? (at + 1) % list.length : (at <= 0 ? list.length - 1 : at - 1);
     }
-    var node = list[idx];
-    cursorId = node.id;
+    var item = list[idx];
+    cursorId = item.id;
     var before = readDim('selection');
-    call('openNodeByLabel', node.label);
+    if (item.el) { selectDomItem(item.el, item.label); } else { currentItemEl = null; currentItemLabel = ''; call('openNodeByLabel', item.label); }
     journal.record(TAB, { dim: 'selection', before: before, after: readDim('selection') });
     // Announcing is not decoration: with no screen, this IS the result.
-    return show(node.label + '  |  ' + (idx + 1) + ' of ' + list.length + ' revealed', 'ok');
+    return show(item.label + '  |  ' + (idx + 1) + ' of ' + list.length + ' ' + itemNoun() + 's', 'ok');
+  }
+
+  var currentItemEl = null, currentItemLabel = '';
+  function selectDomItem(el, label) {
+    currentItemLabel = label || '';
+    var d = ifDoc();
+    if (!d) { return; }
+    if (!d.getElementById('ccl-current-style')) {
+      var st = d.createElement('style');
+      st.id = 'ccl-current-style';
+      st.textContent = '.ccl-current { outline: 2px solid #C9A84C; outline-offset: 6px; border-radius: 4px; }';
+      (d.head || d.documentElement).appendChild(st);
+    }
+    var prev = d.querySelectorAll('.ccl-current');
+    for (var i = 0; i < prev.length; i++) { prev[i].classList.remove('ccl-current'); }
+    el.classList.add('ccl-current');
+    currentItemEl = el;
+    try { el.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch (e) { el.scrollIntoView(); }
   }
 
   // ---- playback: the PAGE reads, not the model ---------------------------
@@ -2571,8 +2623,15 @@ var VoiceGuide = (function() {
   function endPunct(t) { return /[.!?:;,]$/.test(t) ? t : t + '.'; }
 
   function speechScript() {
-    var d = ifDoc(), el = d && d.getElementById('right-page-content');
-    if (!el || !panelVisible(d)) { return null; }
+    var d = ifDoc();
+    if (!d) { return null; }
+    // Read whatever the cursor is ON. On a content tab that is the selected
+    // section; on the graph it is the open article. Same script either way.
+    var el = currentItemEl && d.contains(currentItemEl) ? currentItemEl : null;
+    if (!el) {
+      el = d.getElementById('right-page-content');
+      if (!el || !panelVisible(d)) { return null; }
+    }
     var nodes = el.children.length ? [].slice.call(el.children) : [el];
     var body = [], meta = [], skipped = 0;
     nodes.forEach(function (n) {
@@ -2589,9 +2648,30 @@ var VoiceGuide = (function() {
   // Kept for callers that only need to know whether there is anything at all.
   function articleText() { var sc = speechScript(); return sc && sc.body ? sc.body : null; }
   function setMic(on) { try { if (typeof window.CCLSetMic === 'function') { window.CCLSetMic(on); } } catch (e) { /* no session */ } }
+
+  // ---- the reader belongs to the SHELL, not to one tab --------------------
+  //
+  // TTS lives inside wiki_narration.html, so `read` worked on the Sociogram and
+  // nowhere else -- a content tab reported "this view has no text-to-speech".
+  // Under a voice-only criterion the reader has to be available wherever the
+  // user is, so it lives here: one reader, one voice, one stop, every tab.
+  // A better engine later is a change in this one place rather than per tab.
+  var Speaker = {
+    speak: function (text) {
+      if (!window.speechSynthesis) { return false; }
+      window.speechSynthesis.cancel();
+      var u = new SpeechSynthesisUtterance(text);
+      u.rate = 1;
+      window.speechSynthesis.speak(u);
+      return true;
+    },
+    stop: function () { try { if (window.speechSynthesis) { window.speechSynthesis.cancel(); } } catch (e) { /* none */ } }
+  };
   var speaking = false;
   function stopSpeaking() {
     var w = ifWin();
+    Speaker.stop();
+    // Also silence the tab's own TTS, in case the Sociogram started something.
     try { if (w && w.TTS && typeof w.TTS.stop === 'function') { w.TTS.stop(); } } catch (e) { /* none */ }
     try { if (w && w.speechSynthesis) { w.speechSynthesis.cancel(); } } catch (e) { /* none */ }
     speaking = false;
@@ -2618,8 +2698,13 @@ var VoiceGuide = (function() {
     var wantMeta = (p.mode === 'details' || p.mode === 'metadata');
     var text = wantMeta ? sc.meta : sc.body;
     if (!text) { return show(wantMeta ? 'there is no metadata held back for this one' : 'nothing readable in this one', 'err'); }
-    if (!w || !w.TTS || typeof w.TTS.speak !== 'function') { return show('this view has no text-to-speech', 'err'); }
-    var d = ifDoc(), title = ((d.getElementById('right-page-title') || {}).textContent || 'this article').trim();
+    if (!window.speechSynthesis) { return show('this browser has no text-to-speech', 'err'); }
+    // Name what is actually being read: on a content tab that is the section
+    // the cursor is on, not a right-panel title that does not exist there.
+    var d = ifDoc();
+    var title = (currentItemEl && d.contains(currentItemEl) && currentItemLabel)
+      ? currentItemLabel
+      : ((d.getElementById('right-page-title') || {}).textContent || 'this article').trim();
     stopSpeaking();
     speaking = true;
     // The mic STAYS LIVE. Muting it made the reader uninterruptible by voice,
@@ -2629,7 +2714,7 @@ var VoiceGuide = (function() {
     // article, that is the trade we chose and it is fixable in the prompt.
     stopButton(true);
     var start = function () {
-      try { w.TTS.speak(text); }
+      try { if (!Speaker.speak(text)) { throw new Error('speech synthesis unavailable'); } }
       catch (e) { speaking = false; stopButton(false); show('could not start reading: ' + (e && e.message || e), 'err'); }
     };
     // Hand over rather than talk over: if the guide is mid-sentence, the reader
@@ -2901,6 +2986,7 @@ var VoiceGuide = (function() {
     show(msg + (frame ? frameSuffix() : ''), 'ok');
   }
   function execFilters(p) {
+    currentItemEl = null; currentItemLabel = '';
     // A filter change SUPERSEDES a cut (a stale cut would hide nodes the new
     // filter means to show). That is a state change in its own right, so it
     // gets its OWN journal entry: undo steps back through cut-then-filter
@@ -3031,8 +3117,10 @@ var VoiceGuide = (function() {
     for (var ri = 0; ri < row.length; ri++) { if (row[ri] === b) { pos = '  (' + (ri + 1) + ' of ' + row.length + ', left to right)'; } }
     // `what` is the question "am I looking at what I asked for?" -- so it must
     // answer from the render, not from the filter state that produced it.
+    var items = activeItems();
+    var itemNote = items.length ? ('  |  ' + items.length + ' ' + itemNoun() + 's here') : '';
     var cutNote = cutIds ? ('  |  cut to ' + cutIds.length + ' nodes' + (cutQuery ? (' matching "' + cutQuery + '"') : '')) : '';
-    var res = show('view: ' + name + pos + (on.length ? ('  |  filters on: ' + on.join(', ')) : '  |  (filters n/a here)') + cutNote + viewSuffix(), 'ok');
+    var res = show('view: ' + name + pos + (on.length ? ('  |  filters on: ' + on.join(', ')) : itemNote) + cutNote + viewSuffix(), 'ok');
     var nv = nodesShown();
     if (nv) { res.shown = nv.shown; res.total = nv.total; }
     return res;
