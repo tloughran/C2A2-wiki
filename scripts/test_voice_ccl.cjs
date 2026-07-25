@@ -360,9 +360,12 @@ check('plan: parse errors pass straight through', function () {
   assert.strictEqual(p.error, 'unknown_verb');
 });
 check('plan: unsupported verb -> unsupported_here with derived supported list', function () {
-  const p = planCmd('zoom in'); // zoom is out of v1 Sociogram caps
+  // `read` (page playback) is still outside v1 Sociogram caps. This row used to
+  // use `zoom`, which moved INTO caps on 2026-07-25 when the camera dimension
+  // was made symmetric -- the assertion was encoding a decision, not a rule.
+  const p = planCmd('read');
   assert.strictEqual(p.error, 'unsupported_here');
-  assert.ok(p.supported.indexOf('fit') !== -1 && p.supported.indexOf('zoom') === -1);
+  assert.ok(p.supported.indexOf('fit') !== -1 && p.supported.indexOf('read') === -1);
 });
 check('plan: set/read/ask are unsupported in v1 Sociogram', function () {
   assert.strictEqual(planCmd('set brightness 0.5').error, 'unsupported_here');
@@ -444,7 +447,7 @@ check('plan: what/where/help route to reads', function () {
 check('plan: every SOCIOGRAM_CAPS verb yields a plan, never unsupported_here', function () {
   // guards against a cap being listed but unhandled in the switch
   const samples = {
-    go: 'go sociogram', back: 'back', show: 'show levin', hide: 'hide levin', only: 'only levin',
+    go: 'go sociogram', back: 'back', zoom: 'zoom in', pan: 'pan left', show: 'show levin', hide: 'hide levin', only: 'only levin',
     all: 'all', none: 'none', open: 'open ' + DEST.nodes[0].id.replace(/\.md$/, ''), close: 'close',
     find: 'find x', clear: 'clear', focus: 'focus levin ~ friston', fit: 'fit',
     undo: 'undo', redo: 'redo', reset: 'reset', restore: 'restore', what: 'what', where: 'where', help: 'help',
@@ -525,7 +528,7 @@ check('plan: shared verbs plan cross-tab (metabolism go/what/undo)', function ()
 });
 check('plan: every metabolism cap yields a plan, never unsupported_here', function () {
   const samples = {
-    go: 'go sociogram', back: 'back', set: 'set view wave',
+    go: 'go sociogram', back: 'back', zoom: 'zoom in', pan: 'pan left', set: 'set view wave',
     undo: 'undo', redo: 'redo', reset: 'reset', restore: 'restore',
     what: 'what', where: 'where', help: 'help',
   };
@@ -686,6 +689,42 @@ check('gestures: every declared tab passes its own gate', function () {
     const r = CCL.auditGestures(t.gestures, t.caps);
     assert.strictEqual(r.ok, true, key + ' gestures: ' + r.problems.join(' | '));
   }
+});
+
+// ---- zoom: declared in the grammar from day one, never wired ---------------
+
+check('zoom: in/out plan as camera ops carrying the direction', function () {
+  for (const dir of ['in', 'out']) {
+    const p = planCmd("zoom " + dir);
+    assert.strictEqual(p.ok, true, 'zoom ' + dir + ' did not plan');
+    assert.strictEqual(p.kind, 'camera');
+    assert.strictEqual(p.dir, dir);
+  }
+});
+check('zoom: a direction that is not in/out is refused by the grammar', function () {
+  assert.strictEqual(CCL.parse('zoom sideways', grammar).error, 'bad_enum');
+});
+check('pan: all four directions plan, and only those four', function () {
+  for (const dir of ['left', 'right', 'up', 'down']) {
+    const p = planCmd('pan ' + dir);
+    assert.strictEqual(p.ok, true, 'pan ' + dir + ' did not plan');
+    assert.strictEqual(p.kind, 'camera');
+    assert.strictEqual(p.dir, dir);
+  }
+  assert.strictEqual(CCL.parse('pan sideways', grammar).error, 'bad_enum');
+});
+check('camera: the dimension is symmetric -- every move has its opposite', function () {
+  const pairs = [['zoom in', 'zoom out'], ['pan left', 'pan right'], ['pan up', 'pan down']];
+  for (const [a, b] of pairs) {
+    assert.strictEqual(planCmd(a).ok, true, a);
+    assert.strictEqual(planCmd(b).ok, true, b);
+  }
+});
+check('zoom: the Sociogram now declares the cap its gesture claims', function () {
+  const soc = MANIFEST.tabs.sociogram;
+  const zoomGesture = soc.gestures.filter(function (g) { return g.id === 'zoom'; })[0];
+  assert.strictEqual(zoomGesture.status, 'covered');
+  for (const v of zoomGesture.by) { assert.ok(soc.caps.indexOf(v) !== -1, 'gesture claims uncapped verb ' + v); }
 });
 
 // ---- report -----------------------------------------------------------------

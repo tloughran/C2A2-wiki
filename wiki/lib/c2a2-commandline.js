@@ -472,7 +472,7 @@
     'show', 'hide', 'only', 'all', 'none',
     'open', 'close',
     'find', 'clear', 'focus',
-    'fit',
+    'fit', 'zoom', 'pan',
     'undo', 'redo', 'reset', 'restore',
     'what', 'where', 'help',
   ];
@@ -557,6 +557,20 @@
 
       case 'fit':
         return { ok: true, kind: 'camera', action: 'fit', journal: { dim: 'camera' } };
+
+      // zoom in|out -- the grammar declared this verb from the start; it simply
+      // had no plan case or dispatcher, so "zoom in so I can see them" hit a
+      // model with nothing to call and it narrated instead of acting. Discrete
+      // steps only: the semantic tier holds, and camera stays out of the
+      // journal (section 14.4 bars HASHING continuous fields, not reaching them).
+      case 'zoom':
+        return { ok: true, kind: 'camera', action: 'zoom', dir: op.args[0], journal: { dim: 'camera' } };
+
+      // pan left|right|up|down -- VIEW-relative: "pan left" shows what lies to
+      // the left. Together with zoom in/out and fit the camera dimension is now
+      // symmetric, which is the bar this design sets for every dimension.
+      case 'pan':
+        return { ok: true, kind: 'camera', action: 'pan', dir: op.args[0], journal: { dim: 'camera' } };
 
       case 'undo': case 'redo': case 'reset': case 'restore':
         return { ok: true, kind: 'journal', action: op.verb };

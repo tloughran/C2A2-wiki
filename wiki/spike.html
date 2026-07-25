@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CCL Spike -- English to Command accuracy</title>
+<style>
+  body { background:#0a0a0f; color:#e6e6ee; font:13px ui-monospace,Menlo,monospace; margin:0; padding:16px; }
+  h1 { font-size:15px; color:#5B7FA5; margin:0 0 4px; }
+  .sub { color:#8a8a9a; margin:0 0 12px; }
+  #status { padding:6px 10px; border:1px solid #2a2a3a; border-radius:4px; margin-bottom:12px; }
+  table { border-collapse:collapse; width:100%; margin-top:10px; }
+  th,td { border:1px solid #2a2a3a; padding:5px 8px; text-align:left; vertical-align:top; }
+  th { color:#8a8a9a; font-weight:600; }
+  .pass { color:#4E8A5E; } .near { color:#C9A84C; } .miss { color:#C45B5B; } .defer { color:#8B6DAE; }
+  #summary { font-size:14px; margin:12px 0; padding:8px 10px; border:1px solid #2a2a3a; border-radius:4px; }
+  code { color:#b8d8ff; }
+  #log { white-space:pre-wrap; color:#6a6a7a; margin-top:14px; max-height:200px; overflow:auto; border-top:1px solid #2a2a3a; padding-top:8px; }
+</style>
+</head>
+<body>
+<h1>CCL Spike &mdash; English &rarr; Command accuracy (increment 0)</h1>
+<p class="sub">One realtime session, one <code>run_command</code> tool, the golden utterances fed as text. tool_choice: auto (honest). Text-only output (no TTS).</p>
+<div id="status">Starting&hellip;</div>
+<div id="summary"></div>
+<table id="tbl"><thead><tr><th>#</th><th>utterance</th><th>expected</th><th>emitted / narrated</th><th>verdict</th></tr></thead><tbody></tbody></table>
+<pre id="log"></pre>
+
+<script src="lib/c2a2-commandline.js?v=1f4ca92afa"></script>
+<script>
+(function () {
+  'use strict';
+  var BROKER_URL = 'https://akhcocmgfwybdovqeovd.supabase.co/functions/v1/cc-broker';
+  var CL = window.CommandLine;
+  var statusEl = document.getElementById('status');
+  var logEl = document.getElementById('log');
+  var tbody = document.querySelector('#tbl tbody');
+
+  function setStatus(s) { statusEl.innerHTML = s; }
+  function log(s) { logEl.textContent += s + '\n'; logEl.scrollTop = logEl.scrollHeight; }
+  function norm(s) { return String(s == null ? '' : s).toLowerCase().trim().replace(/\s+/g, ' '); }
+
+  // ---- INSTRUCTIONS: behavior + grammar only (no routing). Examples are
+  //      DELIBERATELY DIFFERENT from the golden utterances (no teaching to test).
+  var INSTRUCTIONS = [
+    'You drive a knowledge-graph explorer. For each user request, emit ONE command string by calling run_command. The command language (CCL):',
+    '',
+    '  only <groups...> | show <groups...> | hide <groups...> | all | none    filter the graph by tradition/structure name',
+    '  open <node> | close                                                    open or close a node article',
+    '  find <text> | clear                                                     highlight-search the graph',
+    '  focus <a> ~ <b> [~ <c>...]                                             show the links between named groups',
+    '  go <tab> | back                                                         switch to another tab',
+    '  fit                                                                     zoom so everything fits on screen',
+    '  undo | redo | reset | restore                                           step history; restore = put the view back how it was',
+    '  what | where | help                                                     ask about the current view',
+    '',
+    'Rules: exactly one command per request; names lowercase; choose the single best verb; do not explain, just call run_command with the command text.',
+    'If a request needs a category you cannot name from the user words (e.g. a vague grouping like "the science ones"), do NOT guess -- instead speak a short question asking which they mean.',
+    '',
+    'Examples (these are NOT the test):',
+    '  "highlight just Levin and Hoffman"          -> only levin hoffman',
+    '  "also bring in the physics folks"           -> show wolfram carroll',
+    '  "drop the architecture layer"               -> hide architecture',
+    '  "take me to the metabolism view"            -> go metabolism',
+    '  "how do Kastrup and Hoffman connect?"       -> focus kastrup ~ hoffman',
+    '  "reset the whole view"                      -> all',
+    '  "what am I seeing?"                         -> what'
+  ].join('\n');
+
+  var RUN_COMMAND_TOOL = {
+    type: 'function',
+    name: 'run_command',
+    description: 'Execute exactly one CCL command string against the explorer.',
+    parameters: { type: 'object', properties: { text: { type: 'string', description: 'the single CCL command' } }, required: ['text'] }
+  };
+
+  function sessionConfig() {
+    return {
+      type: 'session.update',
+      session: {
+        type: 'realtime',
+        instructions: INSTRUCTIONS,
+        output_modalities: ['text'],
+        tools: [RUN_COMMAND_TOOL],
+        tool_choice: 'auto'
+      }
+    };
+  }
+
+  var pc, dc, grammar, cases = [], idx = -1, cur = null, results = [];
+
+  async function mint() {
+    var dev = (crypto.randomUUID ? crypto.randomUUID() : 'spike-' + Math.random());
+    var r = await fetch(BROKER_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-CC-Device': dev },
+      body: JSON.stringify({ action: 'realtime_session' })
+    });
+    if (r.status === 402) throw new Error('broker daily cap hit (402)');
+    if (!r.ok) throw new Error('broker http ' + r.status);
+    var d = await r.json();
+    if (!d.value) throw new Error('broker returned no ephemeral');
+    return d.value;
+  }
+
+  // Silent audio track: satisfies the realtime /calls audio m-line WITHOUT a mic
+  // grant (no getUserMedia -> no billed-mic gotcha, no real audio sent).
+  function silentTrack() {
+    var ac = new (window.AudioContext || window.webkitAudioContext)();
+    var dst = ac.createMediaStreamDestination();
+    var osc = ac.createOscillator();
+    var g = ac.createGain(); g.gain.value = 0;
+    osc.connect(g); g.connect(dst); osc.start();
+    return { track: dst.stream.getAudioTracks()[0], stream: dst.stream };
+  }
+
+  async function connect() {
+    setStatus('Minting ephemeral via broker&hellip;');
+    var ephemeral = await mint();
+    setStatus('Connecting WebRTC&hellip;');
+    pc = new RTCPeerConnection();
+    pc.ontrack = function () {};   // ignore any remote audio
+    var s = silentTrack();
+    pc.addTrack(s.track, s.stream);
+    dc = pc.createDataChannel('oai-events');
+    dc.onopen = function () { dc.send(JSON.stringify(sessionConfig())); log('session.update sent'); setStatus('Session live. Running ' + cases.length + ' utterances&hellip;'); setTimeout(next, 400); };
+    dc.onmessage = handleEvent;
+    var offer = await pc.createOffer();
+    await pc.setLocalDescription(offer);
+    var resp = await fetch('https://api.openai.com/v1/realtime/calls', { method: 'POST', body: offer.sdp, headers: { 'Authorization': 'Bearer ' + ephemeral, 'Content-Type': 'application/sdp' } });
+    if (!resp.ok) throw new Error('SDP exchange ' + resp.status + ': ' + (await resp.text()).slice(0, 160));
+    await pc.setRemoteDescription({ type: 'answer', sdp: await resp.text() });
+  }
+
+  function next() {
+    idx++;
+    if (idx >= cases.length) { finish(); return; }
+    cur = { emitted: null, narrated: null, callId: null };
+    var u = cases[idx].utterance;
+    log('> [' + cases[idx].id + '] ' + u);
+    dc.send(JSON.stringify({ type: 'conversation.item.create', item: { type: 'message', role: 'user', content: [{ type: 'input_text', text: u }] } }));
+    dc.send(JSON.stringify({ type: 'response.create' }));
+  }
+
+  function handleEvent(ev) {
+    var m; try { m = JSON.parse(ev.data); } catch (e) { return; }
+    if (m.type === 'error') { log('ERROR: ' + JSON.stringify(m.error || m)); return; }
+    if (m.type !== 'response.done') { return; }
+    var out = (m.response && m.response.output) || [];
+    for (var i = 0; i < out.length; i++) {
+      var it = out[i];
+      if (it.type === 'function_call' && it.name === 'run_command') {
+        try { cur.emitted = JSON.parse(it.arguments).text; } catch (e) { cur.emitted = it.arguments; }
+        cur.callId = it.call_id;
+      } else if (it.type === 'message' && it.content) {
+        for (var j = 0; j < it.content.length; j++) { var c = it.content[j]; if (c.type === 'output_text' || c.type === 'text') { cur.narrated = c.text; } }
+      }
+    }
+    record();
+    if (cur.callId) { dc.send(JSON.stringify({ type: 'conversation.item.create', item: { type: 'function_call_output', call_id: cur.callId, output: '{"ok":true}' } })); }
+    next();
+  }
+
+  function record() {
+    var c = cases[idx];
+    var r = { id: c.id, utterance: c.utterance, expected: c.expected_command, emitted: cur.emitted, narrated: cur.narrated };
+    // verdict
+    if (c.expected_command === null) {
+      // deferred: correct behavior is to ASK (narrate), not emit a command
+      r.verdict = (cur.emitted == null && cur.narrated) ? 'defer-ok' : (cur.emitted ? 'defer-emitted' : 'defer-silent');
+    } else if (cur.emitted == null) {
+      r.verdict = 'miss-narrated';
+    } else {
+      var pe = CL.parse(cur.emitted, grammar);
+      r.parseOk = pe.ok;
+      if (norm(cur.emitted) === norm(c.expected_command)) { r.verdict = 'pass'; }
+      else if (pe.ok && pe.verb === CL.parse(c.expected_command, grammar).verb) { r.verdict = 'near-verb'; }
+      else { r.verdict = 'miss'; }
+    }
+    results.push(r);
+    log('  <- ' + (cur.emitted != null ? JSON.stringify(cur.emitted) : ('(narrated) ' + (cur.narrated || '').slice(0, 80))) + '  [' + r.verdict + ']');
+  }
+
+  function cls(v) { return v === 'pass' || v === 'defer-ok' ? 'pass' : (v === 'near-verb' ? 'near' : (v.indexOf('defer') === 0 ? 'defer' : 'miss')); }
+
+  function finish() {
+    setStatus('Done. Session closed.');
+    try { dc.close(); pc.close(); } catch (e) {}
+    var scored = results.filter(function (r) { return r.expected !== null; });
+    var pass = scored.filter(function (r) { return r.verdict === 'pass'; }).length;
+    var near = scored.filter(function (r) { return r.verdict === 'near-verb'; }).length;
+    var deferRow = results.find(function (r) { return r.expected === null; });
+    var html = '';
+    results.forEach(function (r) {
+      html += '<tr><td>' + r.id + '</td><td>' + esc(r.utterance) + '</td><td><code>' + esc(r.expected == null ? '(ask)' : r.expected) + '</code></td>' +
+              '<td><code>' + esc(r.emitted != null ? r.emitted : ('narrated: ' + (r.narrated || ''))) + '</code></td>' +
+              '<td class="' + cls(r.verdict) + '">' + r.verdict + (r.parseOk === false ? ' (unparseable)' : '') + '</td></tr>';
+    });
+    tbody.innerHTML = html;
+    document.getElementById('summary').innerHTML =
+      '<b>' + pass + ' / ' + scored.length + ' exact</b> (+' + near + ' right-verb-wrong-args, grammar-fixable). ' +
+      'Deferral (utterance 10): <span class="' + (deferRow ? cls(deferRow.verdict) : '') + '">' + (deferRow ? deferRow.verdict : 'n/a') + '</span>. ' +
+      'Exit gate: &ge;8/10.';
+    window.__spike = { results: results, pass: pass, near: near, total: scored.length, defer: deferRow ? deferRow.verdict : null, done: true };
+  }
+  function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+  // ---- boot ----
+  window.__spike = { done: false };
+  Promise.all([
+    fetch('voice_guide/verbs.json?v=' + Date.now()).then(function (r) { return r.json(); }),
+    fetch('voice_guide/ccl_golden.json?v=' + Date.now()).then(function (r) { return r.json(); })
+  ]).then(function (res) {
+    grammar = CL.compileGrammar(res[0]);
+    cases = res[1].cases;
+    log('loaded grammar + ' + cases.length + ' golden cases');
+    return connect();
+  }).catch(function (e) { setStatus('FAILED: ' + (e && e.message || e), 'err'); log('FATAL ' + (e && e.message || e)); window.__spike = { done: true, error: String(e && e.message || e) }; });
+})();
+</script>
+</body>
+</html>

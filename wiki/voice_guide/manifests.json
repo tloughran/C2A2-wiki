@@ -24,6 +24,8 @@
         "clear",
         "focus",
         "fit",
+        "zoom",
+        "pan",
         "undo",
         "redo",
         "reset",
@@ -138,16 +140,22 @@
         {
           "id": "zoom",
           "label": "Zoom (wheel / pinch / trackpad)",
-          "status": "deferred",
-          "planned": "increment 4b -- zoom in/out verbs over the graph's own zoomBehavior",
-          "note": "`fit` reaches the zoom-to-everything case only; there is no way to say 'zoom in'."
+          "status": "covered",
+          "note": "`zoom in`/`zoom out` step the graph's own zoomBehavior; `fit` is zoom-to-everything.",
+          "by": [
+            "zoom",
+            "fit"
+          ]
         },
         {
           "id": "pan",
           "label": "Pan (drag the background)",
-          "status": "deferred",
-          "planned": "increment 4b -- auto-frame on reveal removes most of the need; an explicit centre verb is the remainder",
-          "note": "Until auto-framing lands, a reveal can leave the revealed nodes off-screen entirely."
+          "status": "covered",
+          "note": "`pan left|right|up|down` steps the camera a quarter-viewport; auto-framing centres every reveal, so panning is for deliberate exploration rather than repair.",
+          "by": [
+            "pan",
+            "fit"
+          ]
         },
         {
           "id": "node_click",

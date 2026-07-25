@@ -521,7 +521,7 @@ async function main() {
   // ---- Phase A: Sociogram regression (the verified baseline must not move) ----
   process.stdout.write('\nPhase A -- Sociogram regression (inc 1/2 baseline)\n');
   await assertManifest(page, 'sociogram', SOCIOGRAM_SRC);
-  await auditTab(page, 'sociogram', 21, 3);
+  await auditTab(page, 'sociogram', 21, 1);
   const bootGroups = await onGroupCount(page);
   await row(page, 'A1 only levin friston -> 2 groups, shown, AND on screen', 'only levin friston',
     { ok: true, spoken: /-> 2 groups on/, groups: function (n) { return n === 2; },
@@ -597,6 +597,35 @@ async function main() {
   record('A6a clear leaves no cut elements behind',
     afterClear.nodes === afterClear.nodesTotal && afterClear.links === afterClear.linksTotal,
     afterClear.nodes + '/' + afterClear.nodesTotal + ' nodes, ' + afterClear.links + '/' + afterClear.linksTotal + ' edges drawn');
+
+  // ---- camera verbs: zoom in/out and pan, the gestures that had no verb ----
+  const camBefore = await page.eval(IFRAME_DOC + "return { k: w.currentZoomScale };");
+  await row(page, 'A7 zoom in -> the graph actually magnifies', 'zoom in', { ok: true, spoken: /^zoom in/ });
+  await sleep(600);
+  const camIn = await page.eval(IFRAME_DOC + "return { k: w.currentZoomScale };");
+  record('A7a zoom in raises the scale', camIn.k > camBefore.k, camBefore.k.toFixed(2) + ' -> ' + camIn.k.toFixed(2));
+  await row(page, 'A8 zoom out -> and back down', 'zoom out', { ok: true, spoken: /^zoom out/ });
+  await sleep(600);
+  const camOut = await page.eval(IFRAME_DOC + "return { k: w.currentZoomScale };");
+  record('A8a zoom out lowers it again (symmetric)', camOut.k < camIn.k, camIn.k.toFixed(2) + ' -> ' + camOut.k.toFixed(2));
+
+  const panBefore = await page.eval(IFRAME_DOC + "var g = d.querySelector('#graph-svg g'); return g.getAttribute('transform');");
+  await row(page, 'A9 pan left -> the view moves', 'pan left', { ok: true, spoken: /^pan left/ });
+  await sleep(600);
+  const panAfter = await page.eval(IFRAME_DOC + "var g = d.querySelector('#graph-svg g'); return g.getAttribute('transform');");
+  record('A9a pan left moves the camera', panBefore !== panAfter, panBefore + ' -> ' + panAfter);
+  await row(page, 'A10 pan right -> back the other way (symmetric)', 'pan right', { ok: true, spoken: /^pan right/ });
+  await sleep(600);
+  const panBack = await page.eval(IFRAME_DOC + "var g = d.querySelector('#graph-svg g'); return g.getAttribute('transform');");
+  // Compared with tolerance, not by string: transforms carry float noise and a
+  // transition can still be easing when the read lands. The claim under test is
+  // that the pair is symmetric, not that it is bit-identical.
+  const xy = function (t) { const m = /translate\(([-\d.]+),\s*([-\d.]+)\)/.exec(t || ''); return m ? [parseFloat(m[1]), parseFloat(m[2])] : null; };
+  const a = xy(panBefore), b = xy(panBack);
+  record('A10a pan right returns the camera to where it started',
+    !!a && !!b && Math.abs(a[0] - b[0]) < 8 && Math.abs(a[1] - b[1]) < 8,
+    'left then right: ' + (a && b ? 'dx=' + (b[0] - a[0]).toFixed(1) + ' dy=' + (b[1] - a[1]).toFixed(1) : 'unparsed'));
+  await row(page, 'A11 pan sideways -> refused by the grammar, not guessed', 'pan sideways', { ok: false });
 
   const shotA = await page.screenshot(path.join(SHOTS, 'A-sociogram.png'));
 

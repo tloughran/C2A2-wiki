@@ -1483,7 +1483,7 @@ var VoiceGuide = (function() {
       "  find <text> | clear                                                    -- highlight-search across the graph",
       "  focus <a> ~ <b> [~ <c>...]                                            -- show the links between named groups",
       "  go <tab> | back                                                        -- switch to another tab",
-      "  fit                                                                    -- zoom so everything fits on screen",
+      "  fit | zoom in | zoom out | pan left|right|up|down                      -- fit everything, step the zoom, or move the view",
       "  undo | redo | reset | restore                                          -- step history; restore = put the view back how it was",
       "  what | where | help                                                    -- ask about the current view",
       "ACT FIRST, TALK SECOND. When the user asks you to DO something to the view, your VERY FIRST action is to call run_command with the command -- do not describe what you are about to do, do not ask permission. After it returns, confirm in ONE short sentence using the result.",
@@ -1509,7 +1509,7 @@ var VoiceGuide = (function() {
         tools: [{
           type: 'function',
           name: 'run_command',
-          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (filter the graph by tradition/structure name), open/close (a node article), find/clear (highlight-search), focus <a> ~ <b> (links between groups), go/back (switch tab), fit (zoom to fit), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
+          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (filter the graph by tradition/structure name), open/close (a node article), find/clear (highlight-search), focus <a> ~ <b> (links between groups), go/back (switch tab), fit (zoom to fit), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
           parameters: {
             type: 'object',
             properties: {
@@ -2124,7 +2124,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=b6d2f671b4"></script>
+<script src="lib/c2a2-commandline.js?v=c6c5094232"></script>
 <script>
 (function () {
   'use strict';
@@ -2530,7 +2530,7 @@ var VoiceGuide = (function() {
         // Any explicit camera command must cancel a pending re-frame, or the
         // settle timer lands after `fit` and silently undoes it (caught by the
         // shell test: fit reported 891 nodes on screen instead of ~4000).
-        case 'camera':    frameToken++; call('fitAll'); return show('fit', 'ok');   // camera not journaled in v1
+        case 'camera':    return execCamera(p);   // camera not journaled in v1
         case 'knob':      return execKnob(p);
         case 'shell':     return execShell(p);
         case 'journal':   return execJournal(p);
@@ -2596,6 +2596,40 @@ var VoiceGuide = (function() {
     var got = (after === p.value) ? ('set ' + p.knob + ' ' + after) : ('set ' + p.knob + ' -> ' + after + ' (' + p.value + ' not held by this view)');
     show(got, 'ok');
   }
+  // Camera verbs cancel any pending settle re-frame -- otherwise the timer
+  // lands afterwards and silently undoes what the user just asked for.
+  function execCamera(p) {
+    frameToken++;
+    if (p.action === 'fit') { call('fitAll'); return show('fit', 'ok'); }
+    var w = ifWin(), d = ifDoc();
+    var svgEl = d && d.getElementById('graph-svg');
+    if (!w || !svgEl || !w.zoomBehavior || !w.d3) { return show('this view has no camera', 'err'); }
+    var sel = w.d3.select(svgEl);
+    if (p.action === 'pan') {
+      // A quarter of the viewport per step, converted out of screen pixels into
+      // graph units by the current scale so a step feels the same at any zoom.
+      var k0 = w.currentZoomScale || 1;
+      var stepX = (svgEl.clientWidth * 0.25) / k0, stepY = (svgEl.clientHeight * 0.25) / k0;
+      // VIEW-relative: to see what lies to the left, the content moves right.
+      var dxy = { left: [stepX, 0], right: [-stepX, 0], up: [0, stepY], down: [0, -stepY] }[p.dir];
+      sel.transition().duration(250).call(w.zoomBehavior.translateBy, dxy[0], dxy[1]);
+      return show('pan ' + p.dir, 'ok');
+    }
+    var k = p.dir === 'in' ? 1.6 : 1 / 1.6;
+    sel.transition().duration(250).call(w.zoomBehavior.scaleBy, k);
+    // Read the scale back rather than reporting the factor we asked for: the
+    // graph clamps to its own scaleExtent, so at the limit the honest answer is
+    // that nothing moved.
+    var before = w.currentZoomScale;
+    var res = show('zoom ' + p.dir, 'ok');
+    setTimeout(function () {
+      var after = w.currentZoomScale;
+      if (after === before) { show('zoom ' + p.dir + ' -- already at the limit', 'ok'); }
+      else { show('zoom ' + p.dir + '  |  scale ' + after.toFixed(2), 'ok'); }
+    }, 300);
+    return res;
+  }
+
   function execShell(p) {
     if (p.action === 'switchTab') {
       var btn = tabButton(p.label);

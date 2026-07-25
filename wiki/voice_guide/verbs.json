@@ -33,6 +33,7 @@
 
     { "verb": "fit",     "dim": "camera",    "op": "set",      "args": "none",       "kind": "value", "inverse": "@journal", "const": "fit" },
     { "verb": "zoom",    "dim": "camera",    "op": "set",      "args": "one",        "kind": "value", "inverse": "@journal", "enum": ["in", "out"] },
+    { "verb": "pan",     "dim": "camera",    "op": "set",      "args": "one",        "kind": "value", "inverse": "@journal", "enum": ["left", "right", "up", "down"] },
 
     { "verb": "read",    "dim": "playback",  "op": "set",      "args": "none",       "kind": "value", "inverse": "stop", "const": "read", "gated": true },
     { "verb": "stop",    "dim": "playback",  "op": "set",      "args": "none",       "kind": "value", "inverse": "read", "const": "stop" },
