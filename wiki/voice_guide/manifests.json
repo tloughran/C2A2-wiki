@@ -66,6 +66,21 @@
           "dim": "camera",
           "match": "#btn-fit-all",
           "note": "fit"
+        },
+        {
+          "dim": "edges",
+          "match": "#chk-all-edges, #chk-edge-wikilink, #chk-edge-mention, #chk-edge-reference, #chk-edge-cross, #chk-edge-same",
+          "note": "edge-type family; show/hide/only/all/none edges <type>"
+        },
+        {
+          "dim": "layers",
+          "match": "#chk-layer-substrate, #chk-layer-projected, #chk-layer-flow, #chk-substrate-context",
+          "note": "layer family"
+        },
+        {
+          "dim": "tags",
+          "match": "#chk-all-tags, #chk-tag-finding, #chk-tag-decision, #chk-tag-cross, #chk-tag-open",
+          "note": "content-tag family"
         }
       ],
       "controls_excluded": [
@@ -99,21 +114,6 @@
         }
       ],
       "controls_deferred": [
-        {
-          "match": "#chk-all-edges, #chk-edge-wikilink, #chk-edge-mention, #chk-edge-reference, #chk-edge-cross, #chk-edge-same",
-          "reason": "edge-type filters: a SECOND filter family the `filters` dim does not model (it writes groupVisibility only)",
-          "planned": "increment 5 (batched Sociogram regen) -- needs an edge-visibility dim"
-        },
-        {
-          "match": "#chk-layer-substrate, #chk-layer-projected, #chk-layer-flow, #chk-substrate-context",
-          "reason": "layer filters: same second-family problem as edge types",
-          "planned": "increment 5"
-        },
-        {
-          "match": "#chk-all-tags, #chk-tag-finding, #chk-tag-decision, #chk-tag-cross, #chk-tag-open",
-          "reason": "tag filters: same second-family problem",
-          "planned": "increment 5"
-        },
         {
           "match": "#layout-mode, #score-mode",
           "reason": "enum selects that are knob-shaped (Mode, Score) but the Sociogram carries no `set` cap in v1",
@@ -184,6 +184,164 @@
           "label": "Hover a node or edge",
           "status": "excluded",
           "reason": "transient tooltip; leaves no state to read back, so there is nothing for write-returns-the-read to report"
+        }
+      ],
+      "families": [
+        {
+          "id": "edges",
+          "aka": [
+            "edge",
+            "edges",
+            "link",
+            "links",
+            "connection",
+            "connections"
+          ],
+          "state": "showEdgeType",
+          "label": "Edge types",
+          "values": [
+            {
+              "v": "wikilink",
+              "aka": [
+                "wikilink",
+                "wikilinks",
+                "wiki",
+                "direct"
+              ]
+            },
+            {
+              "v": "mention",
+              "aka": [
+                "mention",
+                "mentions",
+                "named"
+              ]
+            },
+            {
+              "v": "reference",
+              "aka": [
+                "reference",
+                "references",
+                "shared",
+                "citation",
+                "citations"
+              ]
+            }
+          ],
+          "refresh": "refreshSimLinks",
+          "sync": "syncEdgesMaster"
+        },
+        {
+          "id": "layers",
+          "aka": [
+            "layer",
+            "layers"
+          ],
+          "state": "showLayer",
+          "label": "Layers",
+          "values": [
+            {
+              "v": "substrate",
+              "aka": [
+                "substrate",
+                "base"
+              ]
+            },
+            {
+              "v": "projected",
+              "aka": [
+                "projected",
+                "projection"
+              ]
+            },
+            {
+              "v": "flow",
+              "aka": [
+                "flow",
+                "flows"
+              ]
+            }
+          ],
+          "refresh": "rebuildGraph"
+        },
+        {
+          "id": "tags",
+          "aka": [
+            "tag",
+            "tags",
+            "content"
+          ],
+          "state": "showTagKind",
+          "label": "Content tags",
+          "values": [
+            {
+              "v": "finding",
+              "aka": [
+                "finding",
+                "findings"
+              ]
+            },
+            {
+              "v": "decision",
+              "aka": [
+                "decision",
+                "decisions"
+              ]
+            },
+            {
+              "v": "cross",
+              "aka": [
+                "cross",
+                "crossings",
+                "cross-tradition",
+                "bridges"
+              ]
+            },
+            {
+              "v": "open",
+              "aka": [
+                "open",
+                "open questions",
+                "questions"
+              ]
+            }
+          ],
+          "refresh": "rebuildGraph"
+        },
+        {
+          "id": "bridges",
+          "aka": [
+            "bridge",
+            "bridges",
+            "crossing",
+            "crossings",
+            "category"
+          ],
+          "state": "showEdgeBridge",
+          "label": "Edge crossings",
+          "refresh": "refreshSimLinks",
+          "sync": "syncEdgesMaster",
+          "values": [
+            {
+              "v": "cross",
+              "aka": [
+                "cross",
+                "crosses",
+                "across",
+                "cross-category",
+                "between"
+              ]
+            },
+            {
+              "v": "same",
+              "aka": [
+                "same",
+                "within",
+                "inside",
+                "same-category"
+              ]
+            }
+          ]
         }
       ]
     },

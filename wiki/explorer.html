@@ -1479,6 +1479,7 @@ var VoiceGuide = (function() {
       "HOW YOU ACT AND PERCEIVE: You control the explorer ONLY by calling run_command with ONE command string in the command language (CCL) below. You cannot see the screen; to learn the current state, run the command 'what'. NEVER state a filter, selection, tab, or count you have not just gotten back from a run_command result -- answering a live-state question without running 'what' first is fabrication, the worst thing you can do here.",
       "CCL grammar (exactly one command per call; names lowercase):",
       "  only <groups...> | show <groups...> | hide <groups...> | all | none   -- filter the graph by tradition/structure name",
+      "  ...the same five verbs take a FAMILY qualifier: hide edges mention | only edges wikilink | all tags | none layers",
       "  open <node> | close                                                   -- open or close a node's article",
       "  find <text> | clear                                                    -- highlight-search across the graph",
       "  focus <a> ~ <b> [~ <c>...]                                            -- show the links between named groups",
@@ -2124,7 +2125,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=c6c5094232"></script>
+<script src="lib/c2a2-commandline.js?v=7798ec6e5a"></script>
 <script>
 (function () {
   'use strict';
@@ -2471,6 +2472,82 @@ var VoiceGuide = (function() {
     };
   };
 
+  // ---- second filter families: edge types, layers, content tags ----------
+  //
+  // These live in the artifact's own state objects (showEdgeType, showLayer,
+  // showTagKind) and were unreachable for one reason only: the `filters` dim is
+  // defined as groupVisibility, a NODE-group map, so no command could ever name
+  // an edge. They are declared per tab in manifests.json and addressed by
+  // qualifier, so the verb set does not grow.
+  //
+  // Written as a BATCH -- mutate the state object, then ONE rebuildGraph -- for
+  // the same reason the group filters are: N toggle calls means N rebuilds of a
+  // 4k-node force graph.
+  function familyState(name) { var w = ifWin(); try { return w && w[name]; } catch (e) { return null; } }
+  function readFamily(name) { var st = familyState(name); return st ? Object.assign({}, st) : null; }
+  // The refresh/sync entry points are DECLARED per family: edge families use the
+  // graph's cheap refreshSimLinks (a full rebuild of a 4k-node force layout to
+  // drop one edge type would be absurd), and the edge master checkbox has its
+  // own sync. Keeping these in data means a new family is a manifest entry.
+  function writeFamily(name, value, fam) {
+    var w = ifWin(), st = familyState(name);
+    if (!st) { throw new Error('this view has no ' + name); }
+    for (var k in value) { if (Object.prototype.hasOwnProperty.call(value, k)) { st[k] = value[k]; } }
+    syncFamilyUI(name);
+    var refresh = (fam && fam.refresh) || 'rebuildGraph';
+    if (fam && fam.sync && typeof w[fam.sync] === 'function') { w[fam.sync](); }
+    if (typeof w[refresh] === 'function') { w[refresh](); }
+    else if (typeof w.rebuildGraph === 'function') { w.rebuildGraph(); }
+  }
+  // Keep the tab's own checkboxes truthful: a voice command that left them
+  // stale would make the panel disagree with the graph.
+  var FAMILY_CHECKBOX = { showEdgeType: 'chk-edge-', showEdgeBridge: 'chk-edge-', showLayer: 'chk-layer-', showTagKind: 'chk-tag-' };
+  function syncFamilyUI(name) {
+    var d = ifDoc(), st = familyState(name), prefix = FAMILY_CHECKBOX[name];
+    if (!d || !st || !prefix) { return; }
+    for (var k in st) {
+      var cb = d.getElementById(prefix + k);
+      if (cb) { cb.checked = !!st[k]; }
+    }
+  }
+  // "<n> in view . <shown> shown / <pass> pass / <total> total edges". PASS is
+  // the filter's result; SHOWN is capped by the renderer (4500), so reporting
+  // `shown` would have said "no change" after a filter that plainly worked --
+  // the same in-view-versus-shown trap as the nodes, one level down.
+  function edgesInfo() {
+    var d = ifDoc(), el = d && d.getElementById('edge-status');
+    if (!el) { return null; }
+    var m = /([\d,]+)\s+shown\s*\/\s*([\d,]+)\s+pass\s*\/\s*([\d,]+)\s+total/.exec(el.textContent || '');
+    if (!m) { return null; }
+    var num = function (x) { return parseInt(x.replace(/,/g, ''), 10); };
+    return { shown: num(m[1]), pass: num(m[2]), total: num(m[3]) };
+  }
+  function execFamily(p) {
+    var before = readFamily(p.state);
+    if (!before) { return show('this view has no ' + p.family, 'err'); }
+    var target = Object.assign({}, before), i;
+    if (p.action === 'all' || p.action === 'none') {
+      for (i = 0; i < p.keys.length; i++) { target[p.keys[i]] = (p.action === 'all'); }
+    } else if (p.action === 'set') {                       // `only`
+      for (var k in target) { target[k] = false; }
+      for (i = 0; i < p.keys.length; i++) { target[p.keys[i]] = true; }
+    } else {                                               // union / diff
+      for (i = 0; i < p.keys.length; i++) { target[p.keys[i]] = (p.action === 'union'); }
+    }
+    var famSpec = (activeManifest() ? (activeManifest().m.families || []) : []).filter(function (f) { return f.id === p.family; })[0];
+    writeFamily(p.state, target, famSpec);
+    // write-returns-the-read, same contract as everywhere else: report the
+    // state as it now IS, plus what the graph actually drew.
+    var after = readFamily(p.state), on = [];
+    for (var kk in after) { if (after[kk]) { on.push(kk); } }
+    var e = edgesInfo();
+    var res = show(p.family + ': ' + (on.length ? on.join(', ') : 'none') +
+      (e === null ? '' : ('  |  ' + e.pass + ' of ' + e.total + ' edges' + (e.shown < e.pass ? (', drawing ' + e.shown) : ''))) +
+      (p.unresolved && p.unresolved.length ? ('  (unresolved: ' + p.unresolved.join(', ') + ')') : ''), 'ok');
+    journal.record(TAB, { dim: 'family:' + p.family, before: before, after: after, state: p.state });
+    return res;
+  }
+
   // ---- dim read/write (absolute-vector journal + write-returns-read) ----
   function readDim(dim) {
     var w = ifWin(), d = ifDoc();
@@ -2483,6 +2560,11 @@ var VoiceGuide = (function() {
   }
   function writeDim(dim, value) {
     if (dim.indexOf('knob:') === 0) { var bind = knobBind(dim.slice(5)); if (bind) { writeKnob(bind, value); } return; }
+    if (dim.indexOf('family:') === 0) {
+      var fam = (activeManifest() ? (activeManifest().m.families || []) : []).filter(function (f) { return f.id === dim.slice(7); })[0];
+      if (fam) { writeFamily(fam.state, value, fam); }
+      return;
+    }
     if (dim === 'filters') { var w = ifWin(); for (var k in value) { if (Object.prototype.hasOwnProperty.call(value, k)) { w.groupVisibility[k] = value[k]; } } syncFilterUI(); }
     else if (dim === 'selection') { if (!value) { call('dismissRightPanel'); } else { call('openNodeByLabel', value.label); } }
     else if (dim === 'highlight') { setSearch((value && value.q) || ''); call('runSearch'); }
@@ -2531,6 +2613,7 @@ var VoiceGuide = (function() {
         // settle timer lands after `fit` and silently undoes it (caught by the
         // shell test: fit reported 891 nodes on screen instead of ~4000).
         case 'camera':    return execCamera(p);   // camera not journaled in v1
+        case 'family':    return execFamily(p);
         case 'knob':      return execKnob(p);
         case 'shell':     return execShell(p);
         case 'journal':   return execJournal(p);
@@ -2674,7 +2757,8 @@ var VoiceGuide = (function() {
     var caps = am ? am.m.caps : CL.SOCIOGRAM_CAPS;
     var knobs = am ? (am.m.knobs || []) : [];
     TAB = am ? am.key : 'sociogram';   // journal + reset are per-tab keyed
-    var ctx = { caps: caps, knobs: knobs, roster: roster(), tabs: dest.tabs, nodes: dest.nodes };
+    var families = am ? (am.m.families || []) : [];
+    var ctx = { caps: caps, knobs: knobs, families: families, roster: roster(), tabs: dest.tabs, nodes: dest.nodes };
     execute(CL.plan(CL.parse(text, grammar), ctx));
     return lastResult;
   }

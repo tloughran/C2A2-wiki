@@ -19,8 +19,8 @@
     { "verb": "show",    "dim": "filters",   "op": "union",    "args": "many",       "kind": "set",   "inverse": "hide" },
     { "verb": "hide",    "dim": "filters",   "op": "diff",     "args": "many",       "kind": "set",   "inverse": "show" },
     { "verb": "only",    "dim": "filters",   "op": "set",      "args": "many",       "kind": "set",   "inverse": "@journal" },
-    { "verb": "all",     "dim": "filters",   "op": "setAll",   "args": "none",       "kind": "set",   "inverse": "@journal" },
-    { "verb": "none",    "dim": "filters",   "op": "setEmpty", "args": "none",       "kind": "set",   "inverse": "@journal" },
+    { "verb": "all",     "dim": "filters",   "op": "setAll",   "args": "opt",        "kind": "set",   "inverse": "@journal" },
+    { "verb": "none",    "dim": "filters",   "op": "setEmpty", "args": "opt",        "kind": "set",   "inverse": "@journal" },
 
     { "verb": "open",    "dim": "selection", "op": "set",      "args": "text",       "kind": "value", "inverse": "close" },
     { "verb": "close",   "dim": "selection", "op": "null",     "args": "none",       "kind": "value", "inverse": "open" },

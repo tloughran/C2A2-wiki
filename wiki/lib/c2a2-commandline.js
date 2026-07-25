@@ -110,6 +110,14 @@
         return ok(spec, args, echo);
       }
 
+      // 0 or 1 token: `all` means every group, `all tags` every member of that
+      // family. One verb, two scopes, no new vocabulary to learn.
+      case 'opt': {
+        if (!rest) { return ok(spec, [], echo); }
+        if (rest.indexOf(' ') !== -1) { return err('too_many_args', echo, { verb: verb }); }
+        return ok(spec, [rest], echo);
+      }
+
       case 'one': {
         if (!rest) { return err('missing_arg', echo, { verb: verb }); }
         if (rest.indexOf(' ') !== -1) { return err('too_many_args', echo, { verb: verb }); }
@@ -324,6 +332,38 @@
     return { ok: false, error: 'unknown_knob', knob: term, supported: ids };
   }
 
+  // A FAMILY is a second filter dimension on the same tab: edge types, layers,
+  // content tags. They are addressed by qualifier -- "hide edges mention" --
+  // so the verb set stays fixed while the number of dimensions grows, which is
+  // the whole point of assignments-over-dimensions. Without this they were
+  // simply unreachable: `filters` is defined as groupVisibility (a NODE-group
+  // map), so nothing in the grammar could ever name an edge.
+  function resolveFamily(term, families) {
+    const t = low(term);
+    families = families || [];
+    for (let i = 0; i < families.length; i++) {
+      const f = families[i];
+      if (low(f.id) === t || (f.aka || []).some(function (a) { return low(a) === t; })) { return f; }
+    }
+    return null;
+  }
+  // Terms -> concrete member keys of one family. Same fuzzy contract as the
+  // group resolver, and unresolved terms ride back so the caller can say which
+  // words it could not place rather than silently dropping them.
+  function resolveFamilyValues(terms, family) {
+    const keys = [], unresolved = [];
+    const vals = (family && family.values) || [];
+    for (const term of terms) {
+      const t = low(term);
+      let hit = vals.filter(function (v) { return low(v.v) === t; })[0];
+      if (!hit) { hit = vals.filter(function (v) { return (v.aka || []).some(function (a) { return low(a) === t; }); })[0]; }
+      if (!hit) { hit = vals.filter(function (v) { return low(v.v).indexOf(t) !== -1; })[0]; }
+      if (hit) { if (keys.indexOf(hit.v) === -1) { keys.push(hit.v); } }
+      else { unresolved.push(term); }
+    }
+    return { keys: keys, unresolved: unresolved };
+  }
+
   // ---- the coverage audit (pure core; redesign section 9) ------------------
   //
   // The north star made checkable: every control a user can operate on a tab
@@ -513,15 +553,27 @@
 
       case 'show': case 'hide': case 'only': {
         const action = op.op; // 'union' | 'diff' | 'set'
+        const fam = resolveFamily(op.args[0], ctx.families);
+        if (fam) {
+          const rest = op.args.slice(1);
+          if (!rest.length) { return { ok: false, error: 'missing_arg', verb: op.verb, note: 'name which ' + fam.id + ' -- or say "all ' + fam.id + '"' }; }
+          const rv = resolveFamilyValues(rest, fam);
+          if (!rv.keys.length) { return { ok: false, error: 'unresolved_value', term: rest.join(' '), knob: fam.id, allowed: fam.values.map(function (v) { return v.v; }) }; }
+          return { ok: true, kind: 'family', family: fam.id, state: fam.state, action: action, keys: rv.keys, unresolved: rv.unresolved, journal: { dim: 'family:' + fam.id } };
+        }
         const res = resolveTerms(op.args, ctx.roster);
         if (res.ambiguous) { return res.ambiguous; }
         if (!res.keys.length) { return { ok: false, error: 'unresolved', term: op.args.join(' ') }; }
         return { ok: true, kind: 'filters', action: action, keys: res.keys, unresolved: res.unresolved, journal: { dim: 'filters' } };
       }
-      case 'all':
-        return { ok: true, kind: 'filters', action: 'all', journal: { dim: 'filters' } };
-      case 'none':
-        return { ok: true, kind: 'filters', action: 'none', journal: { dim: 'filters' } };
+      case 'all': case 'none': {
+        const famAll = resolveFamily(op.args[0], ctx.families);
+        if (famAll) {
+          return { ok: true, kind: 'family', family: famAll.id, state: famAll.state, action: op.verb,
+                   keys: famAll.values.map(function (v) { return v.v; }), unresolved: [], journal: { dim: 'family:' + famAll.id } };
+        }
+        return { ok: true, kind: 'filters', action: op.verb, journal: { dim: 'filters' } };
+      }
 
       case 'open': {
         const r = resolveNode(op.args[0], ctx.nodes);
@@ -593,6 +645,8 @@
     resolveNode: resolveNode,
     resolveKnobValue: resolveKnobValue,
     resolveKnob: resolveKnob,
+    resolveFamily: resolveFamily,
+    resolveFamilyValues: resolveFamilyValues,
     auditCoverage: auditCoverage,
     auditGestures: auditGestures,
     createJournal: createJournal,

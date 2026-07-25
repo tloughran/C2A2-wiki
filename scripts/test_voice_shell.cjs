@@ -521,7 +521,7 @@ async function main() {
   // ---- Phase A: Sociogram regression (the verified baseline must not move) ----
   process.stdout.write('\nPhase A -- Sociogram regression (inc 1/2 baseline)\n');
   await assertManifest(page, 'sociogram', SOCIOGRAM_SRC);
-  await auditTab(page, 'sociogram', 21, 1);
+  await auditTab(page, 'sociogram', 6, 1);
   const bootGroups = await onGroupCount(page);
   await row(page, 'A1 only levin friston -> 2 groups, shown, AND on screen', 'only levin friston',
     { ok: true, spoken: /-> 2 groups on/, groups: function (n) { return n === 2; },
@@ -597,6 +597,38 @@ async function main() {
   record('A6a clear leaves no cut elements behind',
     afterClear.nodes === afterClear.nodesTotal && afterClear.links === afterClear.linksTotal,
     afterClear.nodes + '/' + afterClear.nodesTotal + ' nodes, ' + afterClear.links + '/' + afterClear.linksTotal + ' edges drawn');
+
+  // ---- second filter families: the edges Tom could not remove --------------
+  const edgesOf = function (page) {
+    return page.eval(IFRAME_DOC + "var el = d && d.getElementById('edge-status');" +
+      "if (!el) { return null; }" +
+      "var m = /([0-9,]+)\\s+pass/.exec(el.textContent || '');" +
+      "return m ? parseInt(m[1].replace(/,/g, ''), 10) : null;");
+  };
+  const edgesBefore = await edgesOf(page);
+  await row(page, 'A12 hide edges mention -> a family the filters dim cannot name', 'hide edges mention',
+    { ok: true, spoken: /edges: wikilink, reference/ });
+  await sleep(400);
+  const edgesAfter = await edgesOf(page);
+  record('A12a hiding an edge type actually removes edges',
+    edgesAfter !== null && edgesAfter < edgesBefore, edgesBefore + ' -> ' + edgesAfter + ' edges passing');
+  await row(page, 'A13 none edges -> every edge gone', 'none edges', { ok: true, spoken: /edges: none/ });
+  await sleep(400);
+  const edgesNone = await edgesOf(page);
+  record('A13a none edges leaves no edges drawn', edgesNone === 0, edgesNone + ' edges drawn');
+  await row(page, 'A14 undo -> the edge family comes back', 'undo', { ok: true, spoken: /undid \(family:edges\)/ });
+  await sleep(400);
+  const edgesUndone = await edgesOf(page);
+  record('A14a undo restores the edge family', edgesUndone > 0, edgesNone + ' -> ' + edgesUndone + ' edges drawn');
+  await row(page, 'A15 all edges -> back to every type', 'all edges', { ok: true, spoken: /wikilink, mention, reference/ });
+  record('A15a the tab checkboxes agree with the graph',
+    await page.eval(IFRAME_DOC + "return !!(d.getElementById('chk-edge-mention') || {}).checked;"),
+    'chk-edge-mention reflects the voice command');
+  await row(page, 'A16 hide edges banana -> names the allowed members', 'hide edges banana',
+    { ok: false, spoken: /wikilink.*mention.*reference/ });
+  await row(page, 'A17 hide bridges same -> the fourth edge sub-family', 'hide bridges same',
+    { ok: true, spoken: /bridges: cross/ });
+  await row(page, 'A18 all bridges', 'all bridges', { ok: true, spoken: /bridges: cross, same/ });
 
   // ---- camera verbs: zoom in/out and pan, the gestures that had no verb ----
   const camBefore = await page.eval(IFRAME_DOC + "return { k: w.currentZoomScale };");
