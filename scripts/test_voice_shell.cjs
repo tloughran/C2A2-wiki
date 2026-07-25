@@ -623,6 +623,9 @@ async function main() {
   record('A24 read takes the open article, by word count', /reading .+\s*\|\s*\d+ words/.test(readRes.spoken || ''), readRes.spoken);
   record('A24b read offers an interrupt that actually WORKS (mic is muted, so "say stop" would be false)',
     /press Stop or type/.test(readRes.spoken || '') && !/say "stop"/.test(readRes.spoken || ''), readRes.spoken);
+  record('A24d the reader waits for a live guide rather than talking over it',
+    await page.eval("return typeof window.CCLDeferSpeak === 'function' || !document.getElementById('vg-launch');"),
+    'CCLDeferSpeak hook present (or no voice UI on this build)');
   record('A24c a visible Stop control appears while reading',
     await page.eval("var b=document.getElementById('ccl-stop'); return !!b && b.style.display !== 'none';"),
     'ccl-stop visible during playback');

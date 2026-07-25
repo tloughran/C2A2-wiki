@@ -1023,6 +1023,7 @@ var VoiceGuide = (function() {
   // response finishes (response.done) -- else the follow-up answer collides and
   // never generates (the guide 'freezes' on questions needing a post-tool reply,
   // e.g. describe_view; switch_tab dodged it by speaking before the call).
+  var _afterResponse = null;   // deferred page-reader start (see CCLDeferSpeak)
   var responseActive = false, pendingCreate = false, _pendCreateTimer = null, _hangTimer = null;
 
   // Diagnostic event log for the realtime voice loop. OFF unless the URL carries
@@ -1500,7 +1501,7 @@ var VoiceGuide = (function() {
       "ACT ON A REASONABLE READING RATHER THAN HANDING THE QUESTION BACK. This is a voice tool: the user cannot see a list of options, so a returned question costs them far more than a stated assumption. If you can form a defensible reading of what they meant, ISSUE THE COMMAND and say what you assumed -- 'taking the philosophy ones as McGilchrist and Kastrup -- Rohr is arguable'. Soft language belongs on the INTERPRETATION, never on the outcome: what is on screen is reported exactly. A wrong guess costs one 'undo', so guess. Ask only when the reading is a genuine coin-flip (the engine says 'ambiguous') or when acting would be irreversible -- aim for well under one question in ten replies.",
       "READING THE RESULT. run_command returns { did } on success -- say it back briefly. On error 'ambiguous' it returns candidates -- name a couple and ask which they mean. On 'unresolved' say you could not find that, and offer the nearest thing you CAN do. On 'unsupported_here' say it is not available on this view and offer what the tab is for. When the result itself carries a 'taking X as Y' assumption, pass that on -- the user should always be able to hear when you guessed.",
       "COLOR IS NOT A RELIABLE IDENTIFIER -- never resolve a color to a category. Several categories share near-identical colors (Friston/Architecture are the closest pair; also Hoffman/Hawkins, Kastrup/Agents, Stump/Master, McGilchrist/Loughran). If the user names a color, do NOT say which category it is -- say which categories share it and ask which one they mean.",
-      "WHEN THE PAGE IS READING, YOU ARE SILENT. A successful `read` means the article itself is now the answer -- say NOTHING after it, no confirmation, no word count, no offer. Two voices at once is the worst sound this tool can make. Speak again only when the user speaks to you.",
+      "READING IS A HANDOVER, AND THE READER IS A DIFFERENT VOICE ON PURPOSE. On a successful `read`, say ONE short handover line and nothing more -- \'Here it is.\' or \'Reading it to you.\' -- then be silent until the user speaks again. No word count, no offer, no summary. The page begins reading the moment you stop, in its own voice: that difference is deliberate, so the user can always hear whether they are being TALKED TO or READ TO. If they remark on it, say plainly that the page is reading it back, not you.",
       "BREVITY IS A HARD RULE: you are speaking ALOUD. Default to ONE or TWO short sentences; never exceed three, and only then if the user explicitly asks for more. No preamble, no restating the question, no lists, no wind-up. Answer directly. Be warm and concrete, never a lecture.",
       "Examples (NOT a script): 'show only Levin and Friston' -> only levin friston; 'also bring in the physics people' -> show wolfram carroll; 'drop the architecture layer' -> hide architecture; 'take me to the metabolism view' -> go metabolism; 'how do Kastrup and Hoffman connect?' -> focus kastrup ~ hoffman; 'reset the whole view' -> all; 'what am I seeing?' -> what."
     ].join("\n");
@@ -1968,6 +1969,10 @@ var VoiceGuide = (function() {
         break;
       case 'response.done':
         responseActive = false;
+        // The page's reader waits for the guide to finish speaking, so the two
+        // voices hand over instead of colliding. Deliberate two-voice design
+        // (Tom, 2026-07-25): the guide introduces, the page reads.
+        if (_afterResponse) { var _fn = _afterResponse; _afterResponse = null; try { _fn(); } catch (e) { dbg('deferred speak error: ' + e); } }
         if (pendingCreate) { clearTimeout(_pendCreateTimer); pendingCreate = false; dbg('flushing deferred response.create'); requestResponseCreate(); }
         break;
       case 'error':
@@ -2031,6 +2036,11 @@ var VoiceGuide = (function() {
       pc.addTrack(micStream.getAudioTracks()[0], micStream);
       // Let the command layer silence the mic while the PAGE is reading aloud.
       // Without this the live session hears the article and answers it.
+      window.CCLDeferSpeak = function (fn) {
+        // No live session, or nothing being said right now -> read immediately.
+        if (!responseActive) { fn(); return; }
+        _afterResponse = fn;
+      };
       window.CCLSetMic = function (on) {
         try { micStream.getAudioTracks().forEach(function (t) { t.enabled = !!on; }); } catch (e) { /* no session */ }
       };
@@ -2541,18 +2551,14 @@ var VoiceGuide = (function() {
     setMic(true);
     stopButton(false);
   }
-  // ONE VOICE where the page can manage it: if an OpenAI key is configured, use
-  // that provider so the reader matches the guide. With no key the page can only
-  // use the browser voice, and the user hears two different speakers -- so say
-  // so ONCE rather than letting it seem like a bug.
-  function alignVoice() {
-    var w = ifWin();
-    try {
-      if (!w || !w.TTS) { return null; }
-      if (w.TTS.provider !== 'openai' && w.TTS.apiKey) { w.TTS.provider = 'openai'; }
-      return w.TTS.provider;
-    } catch (e) { return null; }
-  }
+  // TWO VOICES, DELIBERATELY (Tom's call, 2026-07-25). The guide speaks; the
+  // PAGE reads, in its own voice, and that difference is the signal -- you can
+  // always hear whether you are being talked to or read to. So the provider is
+  // left exactly as configured and never silently switched; the guide hands
+  // over out loud and then stays quiet.
+  // LATER: Anthropic's "Airy" is the voice Tom wants for the guide. It is not
+  // reachable from this page (providers here are browser / Kokoro / OpenAI);
+  // it would need the broker to proxy TTS. Noted, not scheduled.
   function stopButton(on) {
     var b = document.getElementById('ccl-stop');
     if (b) { b.style.display = on ? '' : 'none'; }
@@ -2565,16 +2571,19 @@ var VoiceGuide = (function() {
     if (!w || !w.TTS || typeof w.TTS.speak !== 'function') { return show('this view has no text-to-speech', 'err'); }
     var d = ifDoc(), title = ((d.getElementById('right-page-title') || {}).textContent || 'this article').trim();
     stopSpeaking();
-    var provider = alignVoice();
     speaking = true;
     setMic(false);
     stopButton(true);
-    try { w.TTS.speak(text); }
-    catch (e) { speaking = false; setMic(true); stopButton(false); return show('could not start reading: ' + (e && e.message || e), 'err'); }
+    var start = function () {
+      try { w.TTS.speak(text); }
+      catch (e) { speaking = false; setMic(true); stopButton(false); show('could not start reading: ' + (e && e.message || e), 'err'); }
+    };
+    // Hand over rather than talk over: if the guide is mid-sentence, the reader
+    // waits for it to finish. With no live session this fires immediately.
+    if (typeof window.CCLDeferSpeak === 'function') { window.CCLDeferSpeak(start); } else { start(); }
     // The mic is OFF while the page reads, so telling the user to *say* stop
     // would be false. Name the interrupt that actually works.
-    var note = (provider === 'openai') ? '' : '  (browser voice -- add an OpenAI key in the graph settings to match the guide)';
-    return show('reading ' + title + '  |  ' + text.split(' ').length + ' words -- press Stop or type "stop"' + note, 'ok');
+    return show('reading ' + title + '  |  ' + text.split(' ').length + ' words -- press Stop or type "stop"', 'ok');
   }
 
   // ---- section 9: the LIVE coverage audit --------------------------------
