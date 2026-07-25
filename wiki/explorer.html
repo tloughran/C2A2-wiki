@@ -1487,6 +1487,7 @@ var VoiceGuide = (function() {
       "  undo | redo | reset | restore                                          -- step history; restore = put the view back how it was",
       "  what | where | help                                                    -- ask about the current view",
       "ACT FIRST, TALK SECOND. When the user asks you to DO something to the view, your VERY FIRST action is to call run_command with the command -- do not describe what you are about to do, do not ask permission. After it returns, confirm in ONE short sentence using the result.",
+      "NEVER CLAIM VISIBILITY THE RESULT DOES NOT STATE. `ok` means the command RAN, not that the user can see anything. If the result carries `shown`, your confirmation must be built on that number -- e.g. 'showing 2,205 of 4,184'. If `shown` is 0 or a `warning` is present, say plainly that nothing is on screen and offer the next step; do NOT say done, done for you, or that it is now visible. If the result carries no `shown`, describe only what `did` literally says.",
       "READING THE RESULT. run_command returns { did } on success -- say it back briefly. On error 'ambiguous' it returns candidates -- read a couple aloud and ask which they mean. On 'unresolved' say you could not find that. On 'unsupported_here' say it is not available on this view and offer what the tab is for. If you cannot name a grouping from the user's OWN words (e.g. 'the science ones', 'the philosophy traditions'), do NOT guess a command -- ask which they mean.",
       "COLOR IS NOT A RELIABLE IDENTIFIER -- never resolve a color to a category. Several categories share near-identical colors (Friston/Architecture are the closest pair; also Hoffman/Hawkins, Kastrup/Agents, Stump/Master, McGilchrist/Loughran). If the user names a color, do NOT say which category it is -- say which categories share it and ask which one they mean.",
       "BREVITY IS A HARD RULE: you are speaking ALOUD. Default to ONE or TWO short sentences; never exceed three, and only then if the user explicitly asks for more. No preamble, no restating the question, no lists, no wind-up. Answer directly. Be warm and concrete, never a lecture.",
@@ -1919,7 +1920,17 @@ var VoiceGuide = (function() {
             pending = Promise.resolve(whereAmI());
           } else if (typeof window.CCLRun === 'function') {
             var r = window.CCLRun(cmd);
-            pending = Promise.resolve({ ok: r.ok, command: cmd, did: r.spoken });
+            // Pass the RENDER through as data. `ok` only means the command
+            // executed -- a filter that matched nothing is not an error, so a
+            // model keying off `ok` alone would confirm success over an empty
+            // graph (2026-07-25: it did, twice, and was believed).
+            var out = { ok: r.ok, command: cmd, did: r.spoken };
+            if (typeof r.shown === 'number') {
+              out.shown = r.shown;
+              out.total = r.total;
+              if (r.shown === 0) { out.warning = 'NOTHING IS SHOWING -- the view is empty. Say so; do not report success.'; }
+            }
+            pending = Promise.resolve(out);
           } else {
             pending = Promise.resolve({ ok: false, error: 'command engine not ready' });
           }
@@ -2372,7 +2383,12 @@ var VoiceGuide = (function() {
     // something, and "0 nodes in view" is the honest answer to that.
     var n = nodesShown();
     var head = (n && n.shown === 0 && p.action !== 'none') ? 'nothing matched -- 0 nodes shown. ' : '';
-    show(head + p.action + ' -> ' + on.length + ' groups on: ' + on.join(', ') + viewSuffix() + extra, 'ok');
+    var res = show(head + p.action + ' -> ' + on.length + ' groups on: ' + on.join(', ') + viewSuffix() + extra, 'ok');
+    // The counts ride on the RESULT OBJECT too, not only inside the prose, so
+    // the voice tool output can carry them as data the model must relay. A
+    // spoken confirmation should never be able to outrun the render.
+    if (n) { res.shown = n.shown; res.total = n.total; }
+    return res;
   }
   // T1 knob set (fan-out, inc 4). Write-returns-read: re-read after writing so
   // the spoken answer reflects the tab's OWN interlocks (e.g. metabolism resets
@@ -2407,7 +2423,10 @@ var VoiceGuide = (function() {
     var b = activeTabBtn(), name = b ? b.textContent.trim() : '(unknown)', on = onGroups();
     // `what` is the question "am I looking at what I asked for?" -- so it must
     // answer from the render, not from the filter state that produced it.
-    show('view: ' + name + (on.length ? ('  |  filters on: ' + on.join(', ')) : '  |  (filters n/a here)') + viewSuffix(), 'ok');
+    var res = show('view: ' + name + (on.length ? ('  |  filters on: ' + on.join(', ')) : '  |  (filters n/a here)') + viewSuffix(), 'ok');
+    var nv = nodesShown();
+    if (nv) { res.shown = nv.shown; res.total = nv.total; }
+    return res;
   }
 
   function didHighlight(p) { return p.action === 'find' ? ('find ' + p.text) : (p.action === 'focus' ? ('focus ' + p.keys.join(' ~ ')) : 'clear'); }

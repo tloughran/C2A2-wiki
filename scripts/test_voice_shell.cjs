@@ -288,7 +288,8 @@ function runCmd(page, cmd) {
   return page.eval(
     "var r = window.CCLRun(" + JSON.stringify(cmd) + ");" +
     "var el = document.getElementById('ccl-result');" +
-    "return { spoken: (r && r.spoken) || null, ok: !!(r && r.ok), bar: el ? el.textContent : null, cls: el ? el.className : null };"
+    "return { spoken: (r && r.spoken) || null, ok: !!(r && r.ok), shown: (r && typeof r.shown === 'number') ? r.shown : null," +
+    "         total: (r && typeof r.total === 'number') ? r.total : null, bar: el ? el.textContent : null, cls: el ? el.className : null };"
   );
 }
 
@@ -396,6 +397,11 @@ async function row(page, name, cmd, expect) {
     const n = await onGroupCount(page);
     if (!expect.groups(n)) { problems.push('groups-on=' + n + ' failed its check'); }
   }
+  // The number the VOICE tool will forward. Asserting the prose alone would let
+  // the spoken layer diverge from the render again.
+  if (expect.shown !== undefined && !expect.shown(r.shown)) {
+    problems.push('result.shown=' + r.shown + ' (the value the voice tool forwards) failed its check');
+  }
   if (expect.view !== undefined) {
     const v = await nodesShown(page);
     if (!expect.view(v)) { problems.push('RENDERED nodes-shown=' + v + ' failed its check'); }
@@ -452,11 +458,12 @@ async function main() {
   // parent. These rows assert the RENDER, which is the whole point -- the old
   // code passed a groups-on assertion while showing an empty graph.
   await row(page, 'A2b only architecture -> parent group kept, nodes actually shown', 'only architecture',
-    { ok: true, spoken: /groups on: architecture, architecture\/changelog/, groups: function (n) { return n === 2; }, view: function (v) { return v > 0; } });
+    { ok: true, spoken: /groups on: architecture, architecture\/changelog/, groups: function (n) { return n === 2; },
+      view: function (v) { return v > 0; }, shown: function (n) { return n > 0; } });
   await row(page, 'A2c what -> the spoken answer carries the rendered count', 'what',
     { ok: true, spoken: /nodes shown/ });
   await row(page, 'A2d none -> an honest zero, stated plainly', 'none',
-    { ok: true, spoken: /0 of \d+ nodes shown/, view: function (v) { return v === 0; } });
+    { ok: true, spoken: /0 of \d+ nodes shown/, view: function (v) { return v === 0; }, shown: function (n) { return n === 0; } });
   await row(page, 'A2e all -> the whole graph is back', 'all',
     { ok: true, view: function (v) { return v > 4000; } });
   await row(page, 'A3 fit', 'fit', { ok: true, spoken: /^fit$/ });
